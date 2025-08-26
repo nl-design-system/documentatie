@@ -28,8 +28,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.5cfa7b5f.css" />
-  <script src="/assets/js/runtime~main.6f1c3ff5.js" defer="defer"></script>
-  <script src="/assets/js/main.82bd07bb.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.3b79e512.js" defer="defer"></script>
+  <script src="/assets/js/main.cfeb3231.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -286,6 +286,7 @@
                    <div>
                     <p>Een icon is decoratief als er een beschrijvende tekst boven, naast of onder staat. Een icon is ook decoratief als het onderdeel is van een interactief component met een eigen toegankelijke naam, zoals een <code class="utrecht-code">button</code> of een <code class="utrecht-code">link</code>.</p>
                     <p>Het is daarom niet nodig dat gebruikers die hulpsoftware gebruiken, zoals een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>, weten dat er een icon aanwezig is. Verberg decoratieve icons, bijvoorbeeld met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> op de component.</p>
+                    <p>Let op: VoiceOver in combinatie met Safari (in de <a href="/baseline/2025-07/" class="utrecht-link utrecht-link--html-a">NL Design System Baseline van juli 2025</a>) negeert Unicode-emoji&#x27;s met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> wél in voorleesmodus, maar niet wanneer de bezoeker alleen met de pijltoetsen (virtuele cursor) navigeert. Dit is een <a href="https://bugs.webkit.org/show_bug.cgi?id=161740" class="utrecht-link utrecht-link--html-a">bug in WebKit</a>. Gebruik daarom liever SVG icons.</p>
                     <p>NL Design System richtlijnen:</p>
                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                      <li><a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Decoratieve afbeeldingen</a></li>
@@ -510,6 +511,7 @@
                   <div class="new-checklist__content">
                    <div>
                     <p>Decoratieve icons kunnen verborgen worden voor hulpsoftware, doordat het <code class="utrecht-code">aria-hidden</code> attribuut gebruikt kan worden in de component.</p>
+                    <p>Let op: VoiceOver in combinatie met Safari (in de <a href="/baseline/2025-07/" class="utrecht-link utrecht-link--html-a">NL Design System Baseline van juli 2025</a>) negeert Unicode-emoji&#x27;s met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> wél in voorleesmodus, maar niet wanneer de bezoeker alleen met de pijltoetsen (virtuele cursor) navigeert. Dit is een <a href="https://bugs.webkit.org/show_bug.cgi?id=161740" class="utrecht-link utrecht-link--html-a">bug in WebKit</a>. Gebruik daarom liever SVG icons.</p>
                     <p>NL Design System richtlijnen:</p>
                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                      <li><a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Decoratieve afbeeldingen</a></li>
