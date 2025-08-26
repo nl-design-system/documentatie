@@ -1,0 +1,22 @@
+---
+title: Project
+hide_title: true
+hide_table_of_contents: true
+---
+
+{/* @license CC0-1.0 */}
+
+import { OverviewPage } from "@site/src/components/OverviewPage";
+import DocCardList from "@theme/DocCardList";
+
+<OverviewPage excludeDocIDs={["project/README", "project/global-design-system"]} />
+<DocCardList
+  items={[
+    {
+      type: "link",
+      href: "/project/global-design-system",
+      label: <span lang="en">Global Design System</span>,
+      description: <span lang="en">Links to global design systems for governments.</span>,
+    },
+  ]}
+/>
