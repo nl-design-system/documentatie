@@ -1,4 +1,4 @@
-/*! For license information please see 68ddddde.4d224bd9.js.LICENSE.txt */
+/*! For license information please see 68ddddde.73d5d191.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [5643],
  {
@@ -194,13 +194,13 @@
     let { title: n, titleId: t, ...p } = e;
     return f.createElement('svg', w({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-label': 'Een woord \\u201Clabel\\u201D met een achtergrondkleur en dikke stippellijn eromheen. Het geheel is aangeduid met het cijfer 1.', role: 'img', 'aria-labelledby': t }, p), n ? f.createElement('title', { id: t }, n) : null, r || (r = f.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), i || (i = f.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = f.createElement('path', { fill: '#FFE76B', d: 'M444 246h72v48h-72z' })), o || (o = f.createElement('path', { stroke: '#5315F6', strokeDasharray: '2 2', d: 'M443.5 245.5h73v49h-73z' })), a || (a = f.createElement('path', { stroke: '#fff', strokeWidth: 2, d: 'M443 245h74v50h-74z' })), l || (l = f.createElement('path', { stroke: '#5315F6', strokeWidth: 2, strokeDasharray: '2 2', d: 'M443 245h74v50h-74z' })), c || (c = f.createElement('path', { d: 'M463.12 263.976v9.696h4.528l-.176 1.328H461.6v-11.024h1.52Zm11.893 9.056c0 .341.058.597.176.768.117.16.293.283.528.368l-.336 1.024c-.438-.053-.79-.176-1.056-.368-.267-.192-.464-.491-.592-.896-.566.843-1.403 1.264-2.512 1.264-.832 0-1.488-.235-1.968-.704s-.72-1.083-.72-1.84c0-.896.32-1.584.96-2.064.65-.48 1.568-.72 2.752-.72h1.296v-.624c0-.597-.144-1.024-.432-1.28-.288-.256-.731-.384-1.328-.384-.619 0-1.376.149-2.272.448l-.368-1.072c1.045-.384 2.016-.576 2.912-.576.992 0 1.733.245 2.224.736.49.48.736 1.168.736 2.064v3.856Zm-3.456 1.056c.842 0 1.504-.437 1.984-1.312v-1.936h-1.104c-1.558 0-2.336.576-2.336 1.728 0 .501.122.88.368 1.136.245.256.608.384 1.088.384Zm10.335-7.712c.96 0 1.722.389 2.288 1.168.565.768.848 1.845.848 3.232 0 .875-.134 1.648-.4 2.32-.267.661-.651 1.179-1.152 1.552-.502.363-1.088.544-1.76.544-.886 0-1.632-.373-2.24-1.12l-.144.928h-1.296v-11.824l1.472-.176v4.624c.608-.832 1.402-1.248 2.384-1.248Zm-.528 7.648c.65 0 1.157-.261 1.52-.784.373-.533.56-1.355.56-2.464 0-1.141-.171-1.963-.512-2.464-.342-.512-.827-.768-1.456-.768-.747 0-1.403.437-1.968 1.312v4.032c.224.352.496.629.816.832.33.203.677.304 1.04.304Zm12.54-3.488c0 .245-.011.496-.032.752h-5.376c.064.928.298 1.611.704 2.048.405.437.928.656 1.568.656.405 0 .778-.059 1.12-.176a4.523 4.523 0 0 0 1.072-.56l.64.88c-.896.704-1.878 1.056-2.944 1.056-1.174 0-2.091-.384-2.752-1.152-.651-.768-.976-1.824-.976-3.168 0-.875.138-1.648.416-2.32.288-.683.693-1.216 1.216-1.6.533-.384 1.157-.576 1.872-.576 1.12 0 1.978.368 2.576 1.104.597.736.896 1.755.896 3.056Zm-1.456-.432c0-.832-.166-1.467-.496-1.904-.331-.437-.827-.656-1.488-.656-1.206 0-1.862.885-1.968 2.656h3.952v-.096Zm5.486 5.088c-.544 0-.976-.16-1.296-.48-.309-.331-.464-.789-.464-1.376v-10.16l1.472-.176v10.304c0 .235.038.405.112.512.086.107.224.16.416.16.203 0 .384-.032.544-.096l.384 1.024a2.398 2.398 0 0 1-1.168.288Z', fill: '#000' })), d || (d = f.createElement('rect', { x: 364, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), h || (h = f.createElement('path', { d: 'M382.502 264.368V276.5H380v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), u || (u = f.createElement('path', { d: 'M396 270h48', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
    };
-   function b(e) {
+   function x(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
     return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: "Als je de tekstafstand vergroot blijft de tekst in de component in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea's, letterafstand en ruimte tussen woorden:" }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: 'Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte.' }), '\n', (0, p.jsx)(n.li, { children: "Afstand tussen alinea's naar ten minste 2 keer de lettergrootte." }), '\n', (0, p.jsx)(n.li, { children: 'Letterafstand (spati\xebren van letters) naar ten minste 0,12 keer de lettergrootte.' }), '\n', (0, p.jsx)(n.li, { children: 'Spati\xebren van woorden naar ten minste 0,16 keer de lettergrootte.' }), '\n'] }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/regelafstand/', children: 'Zorg voor een comfortabele regelafstand' }) }), '\n'] })] });
    }
-   function x(e = {}) {
+   function b(e = {}) {
     const { wrapper: n } = { ...(0, m.a)(), ...e.components };
-    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(b, { ...e }) }) : b(e);
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(x, { ...e }) }) : x(e);
    }
    t(47913);
    var A = t(68934);
@@ -395,7 +395,7 @@
        items: [
         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, p.jsx)(C, {}), tags: ['developer'] },
         { title: 'Als je de hele webpagina inzoomt tot 400% veroorzaakt de Skip Link geen horizontale scrollbalk en blijft alle tekst op de pagina leesbaar.', sc: '1.4.10', status: '', component: (0, p.jsx)(J.ZP, {}), tags: ['developer', 'designer'] },
-        { title: 'De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot.', sc: '1.4.12', status: '', component: (0, p.jsx)(x, {}), tags: ['developer', 'designer'] },
+        { title: 'De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot.', sc: '1.4.12', status: '', component: (0, p.jsx)(b, {}), tags: ['developer', 'designer'] },
         { title: 'Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets.', sc: '2.1.1', status: '', component: (0, p.jsx)(T, {}), tags: ['developer'] },
         { title: 'Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord.', sc: '2.1.2', status: '', component: (0, p.jsx)(q.ZP, {}), tags: ['developer'] },
         { title: 'De Skip Link heeft een zichtbare focusindicator.', sc: '2.4.7', status: '', component: (0, p.jsx)(M, {}), tags: ['developer', 'designer'] },
@@ -463,7 +463,7 @@
     i = t(40139);
    function s(e) {
     const n = { p: 'p', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.' }), '\n', (0, r.jsx)(n.p, { children: 'Als een toetsenbordgebruiker niet verder kan in de pagina, zonder goede uitleg, dan zit deze in de val. Dit is een blokkade bij het navigeren van een website met het toetsenbord alleen.' })] });
+    return (0, r.jsx)(n.p, { children: 'Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.' });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -737,7 +737,7 @@
   },
   8657: (e, n, t) => {
    'use strict';
-   t.d(n, { cN: () => x, vM: () => z, W: () => A, Rv: () => C });
+   t.d(n, { cN: () => b, vM: () => z, W: () => A, Rv: () => C });
    var r = t(41115),
     i = t(4814),
     s = t(39854),
@@ -784,17 +784,17 @@
      let { checked: n, children: t, title: r, description: s, headingLevel: o = 3 } = e;
      return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, t] })] });
     };
-   var b = t(14669);
-   const x = (e) => {
+   var x = t(14669);
+   const b = (e) => {
      let { component: n, headingLevel: t } = e;
-     const s = n && n.projects.filter((e) => b.e9.includes(e.id)),
-      o = s && b.e9.map((e) => s.find((n) => n.id === e)).filter(Boolean);
+     const s = n && n.projects.filter((e) => x.e9.includes(e.id)),
+      o = s && x.e9.map((e) => s.find((n) => n.id === e)).filter(Boolean);
      return (
       n &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, b.mA)(e.title)}`),
+        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(e.title)}`),
         headingLevel: t,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -805,7 +805,7 @@
            (0, d.jsx)(w, {
             children: e.tasks.map((e) => {
              let { checked: n, name: r, id: i } = e;
-             return (0, d.jsx)(y, { headingLevel: t + 1, checked: n, title: r, description: (0, b.Q6)(i) }, i);
+             return (0, d.jsx)(y, { headingLevel: t + 1, checked: n, title: r, description: (0, x.Q6)(i) }, i);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${n.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -817,7 +817,7 @@
     },
     A = (e) => {
      let { component: n, headingLevel: t } = e;
-     const i = n && n.projects.filter((e) => !b.e9.includes(e.id));
+     const i = n && n.projects.filter((e) => !x.e9.includes(e.id));
      return n && i.length
       ? (0, d.jsx)(p.um, {
          appearance: 'large',
@@ -834,7 +834,7 @@
              return 'Naam' === n;
             }),
             i = n?.value,
-            s = (0, b.ps)(e),
+            s = (0, x.ps)(e),
             o = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${i} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
@@ -887,7 +887,7 @@
     },
     C = (e) => {
      let { component: n, headingLevel: t, description: i } = e;
-     const s = n && b.$3[n.relayStep];
+     const s = n && x.$3[n.relayStep];
      return n && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(k.V, { level: t, suffix: s && (0, d.jsx)(j.y, { state: s }), children: n.title }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
@@ -930,12 +930,12 @@
     f = t(65012),
     w = t(31795),
     y = t(37923),
-    b = t(49003),
-    x = t(75271);
-   const A = { color: g.Z, dimension: j.Z, fontFamilies: k.Z, fontSizes: v.Z, fontWeights: f.Z, lineHeights: w.Z, other: y.Z, textDecoration: b.Z },
+    x = t(49003),
+    b = t(75271);
+   const A = { color: g.Z, dimension: j.Z, fontFamilies: k.Z, fontSizes: v.Z, fontWeights: f.Z, lineHeights: w.Z, other: y.Z, textDecoration: x.Z },
     z = (e) => {
      let { type: n } = e;
-     return (0, p.jsx)(u.JO, { children: (0, x.createElement)(A[n]) });
+     return (0, p.jsx)(u.JO, { children: (0, b.createElement)(A[n]) });
     };
    function C(e) {
     let { tokens: n } = e;

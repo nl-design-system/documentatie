@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 2.1.2 Geen toetsenbordval · NL Design System" />
-  <meta data-rh="true" name="description" content="Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan." />
-  <meta data-rh="true" property="og:description" content="Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan." />
+  <meta data-rh="true" name="description" content="Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn." />
+  <meta data-rh="true" property="og:description" content="Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn." />
   <meta data-rh="true" name="keywords" content="WCAG,A,bedienbaar,toetsenbordtoegankelijk,operable,keyboard accessible,no keyboard trap" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/2.1.2/" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.5cfa7b5f.css" />
-  <script src="/assets/js/runtime~main.bb236990.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.6f1c3ff5.js" defer="defer"></script>
   <script src="/assets/js/main.82bd07bb.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -288,11 +288,41 @@
                <h1 class="nlds-inline-heading-group__heading">WCAG-succescriterium 2.1.2 Geen toetsenbordval</h1>
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau A</span></p>
               </hgroup>
+              <h2 id="in-het-kort" class="utrecht-heading-2">In het kort</h2>
+              <dl>
+               <div class="dl__item">
+                <dt class="dl__term">Doel</dt>
+                <dd class="dl__definition">Bezoekers die een toetsenbord gebruiken komen niet vast te zitten.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Wat te doen</dt>
+                <dd class="dl__definition">Zorg ervoor dat bezoekers altijd weg kunnen navigeren van onderdelen.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Waarom het belangrijk is</dt>
+                <dd class="dl__definition"><p>Mensen die leunen op toetsenbordgebruik kunnen vaak niet op een andere manier navigeren.</p></dd>
+               </div>
+              </dl>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Wanneer een gebruiker met het toetsenbord de focus verplaatst naar een deel van de pagina, dan moet deze ook weer weg kunnen gaan met het toetsenbord. De gebruiker kan daarvoor bijvoorbeeld de Tab-toets, Escape-toets of de pijltjestoetsen gebruiken. Zo niet, beschrijf dan met welke toets het wel kan.</p>
-              <p>Als een toetsenbordgebruiker niet verder kan in de pagina, zonder goede uitleg, dan zit deze in de val. Dit is een blokkade bij het navigeren van een website met het toetsenbord alleen.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <p>Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.</p>
+              <p><a href="/wcag/2.1.1/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 2.1.1 Toetsenbord</a> vereist dat alle interactieve onderdelen van een pagina, waar je acties mee uit kan voeren, te bedienen zijn met een toetsenbord. Dit succescriterium vereist dat de bezoeker een component niet alleen kan bereiken, maar ook verder of terug kan navigeren.</p>
+              <p>Als de focus niet te verplaatsen is met standaardtoetsen zoals escape-, pijltjes- of tabtoetsen, geef dan aan hoe het wel kan. Een onderdeel wat wel te bereiken is maar waar men niet meer weg kan, wordt ook toetsenbordval genoemd.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Navigeer door de pagina met het toetsenbord zoals bij <a href="/wcag/2.1.1/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 2.1.1 Toetsenbord</a></li>
+               <li>Als je niet verder kan navigeren, controleer dan of er instructies zijn hoe dit wel kan.</li>
+              </ul>
+              <p>Als je niet de hele pagina doorkan met standaardnavigatie én er zijn geen alternatieve instructies, dan faalt dit criterium.</p>
+              <h2 id="tips" class="utrecht-heading-2">Tips</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Beïnvloed zo min mogelijk de focus van de gebruiker met JavaScript, het <code class="utrecht-code">autofocus</code>-attribuut of het <code class="utrecht-code">tabindex</code>-attribuut. Door er niet aan te komen kun je het ook niet slechter maken.</li>
+              </ul>
+              <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Formulieren - Toetsenbord: <a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Zorg dat het formulier werkt met een toetsenbord</a>.</li>
+               <li>Formulieren - Toetsenbord: <a href="/richtlijnen/formulieren/toetsenbord/tabindex/" class="utrecht-link utrecht-link--html-a">Gebruik geen positieve tabindex</a>.</li>
+               <li>Formulieren - Wanneer gebruik je welk formulierelement: <a href="/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen/" class="utrecht-link utrecht-link--html-a">Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief</a>.</li>
+              </ul>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -348,8 +378,11 @@
           <div class="col col--3">
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#in-het-kort" class="table-of-contents__link toc-highlight">In het kort</a></li>
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#tips" class="table-of-contents__link toc-highlight">Tips</a></li>
+             <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
