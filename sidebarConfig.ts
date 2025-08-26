@@ -408,10 +408,8 @@ const sidebars: SidebarsConfig = {
       collapsible: false,
       className: 'sidebar__main-category',
       link: {
-        type: 'generated-index',
-        title: 'Project',
-        slug: 'project',
-        keywords: ['Project', 'overzicht'],
+        type: 'doc',
+        id: 'project/README',
       },
       items: [
         { type: 'doc', id: 'project/over-nl-design-system' },
