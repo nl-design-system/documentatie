@@ -1,5 +1,5 @@
 ---
-title: Afbeeldingen · Voor CMS leveranciers · Handboek
+title: Afbeeldingen · CMS · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Afbeeldingen
