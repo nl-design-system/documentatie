@@ -107,6 +107,9 @@ importers:
       '@nl-design-system-candidate/skip-link-tokens':
         specifier: 1.0.1
         version: 1.0.1
+      '@nl-design-system-community/ma-design-tokens':
+        specifier: 2.2.1
+        version: 2.2.1
       '@tabler/icons-react':
         specifier: 3.30.0
         version: 3.30.0(react@18.3.1)
@@ -174,6 +177,9 @@ importers:
       '@fontsource/source-sans-pro':
         specifier: 5.1.0
         version: 5.1.0
+      '@gemeente-denhaag/process-steps':
+        specifier: 4.2.0
+        version: 4.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mdx-js/react':
         specifier: 3.1.0
         version: 3.1.0(@types/react@18.3.18)(react@18.3.1)
@@ -1660,6 +1666,12 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
+  '@gemeente-denhaag/button@3.0.0':
+    resolution: {integrity: sha512-aEOIaObdzYmB3vtCjZE8UBT2IJ172kFjn/xmKsV3w6I1sUM/cXgDze6y844PFzhVOauawFWF+RFvQtc68CqGXQ==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/card-authentication@0.1.1-alpha.103':
     resolution: {integrity: sha512-OS5IVgYthbPaDZl0pxIr7kzQRYfzlfZG78zE/rxcfZVoVi4Vw34zi1/LUfTJcuCIxgzDbZQVJDNyOpLA7uW7tw==}
 
@@ -1757,6 +1769,12 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
+  '@gemeente-denhaag/icons@4.0.0':
+    resolution: {integrity: sha512-GhVfng4dzWV+ASxlho+059HCcZkfuKAee40m+s9tMo/hS933XZlfYmHkzlKGZzkUd9bekBMZdHxguh+1EA9QBg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/language-switcher@0.2.3-alpha.366':
     resolution: {integrity: sha512-5zbIgKeRYaQQi6CFHScFb5ppt/Ti12/n2PFoTGThqsviip+gi0QwpLR+oq6FYs72c5qEvH2kvYoSYiQPzPLLvg==}
     peerDependencies:
@@ -1793,6 +1811,12 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
+  '@gemeente-denhaag/process-steps@4.2.0':
+    resolution: {integrity: sha512-CM2bi7YB1SOQObND3pbJRmxeCeSfvlKMUrrcuFJHcdkTy86U4LhssB3MuV/7jfStmBstqEoO4qBteBw4NSVITA==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/radio-button@0.3.0-alpha.7':
     resolution: {integrity: sha512-ZsjbF2ETunOQpDCwLwPojf/vckIvh5Ye0yVz1aPRjEDMOIkYRUZm1cwZD55Yi0psxQJJTuL5NE0JvQgBEQU09A==}
     peerDependencies:
@@ -1816,6 +1840,12 @@ packages:
     resolution: {integrity: sha512-cfxvCKPKJFAE8TGK3YuOhlpeBPN3yQG8WwptXk/KEWy4D2C5zqX8+v0xUD4sCYAwZd/o40X2P/It1nb57vcAQw==}
     peerDependencies:
       react: ^18.0.0
+
+  '@gemeente-denhaag/step-marker@3.0.0':
+    resolution: {integrity: sha512-JWIYoRJv4tXpMf611QYPZqPycb5gZr22GvEdAEBhP2+3I6W+Z1YKP1bzEWDk/vhCm7ouOy0r9Ar81m9R+kCFgQ==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
 
   '@gemeente-denhaag/stylesprovider@0.1.1-alpha.374':
     resolution: {integrity: sha512-OqvNv8YHxCuGaIgy6dBUnjR8iZGgge95/AHYgPF0EGrJ8LjeomzdCdrwTn5Vkww+g9+a/Sec+zbALiZVoD7Elw==}
@@ -2142,6 +2172,9 @@ packages:
 
   '@nl-design-system-candidate/skip-link-tokens@1.0.1':
     resolution: {integrity: sha512-YKDg8NsNkEEi1Ql3DiijfUJRnHGL6NT2dJtBzZwLnLtUBq4MTpIEvGJV8C0djXyYBF2aNK1mMj1fg7b6c9H3dA==}
+
+  '@nl-design-system-community/ma-design-tokens@2.2.1':
+    resolution: {integrity: sha512-xeeg5Zhg2c0qqUt9nbPW4p4k6DRnws8f9kt9RI3fquIItEqqzrMt3aM+Nbpg4YFY5+u2YO6Q9FKySmx/epQlDw==}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4':
     resolution: {integrity: sha512-POlUBxviNooS6NpzyH6v3MJ+WwQEqMYj3VcJcX4oDRdRsxoYgsq4GDm3C55IhJ12nPKnd/F5DD+RBomviSkgxg==}
@@ -2796,6 +2829,9 @@ packages:
 
   '@utrecht/design-tokens@2.4.0':
     resolution: {integrity: sha512-TPLbXIgNOmoNbl6eTibBGkJ8sIH/8C77Bgot0LyLBe95/CQMCy9t172uB8C2SrtTKBsrxJwQhIUkHZ3YCGPvyA==}
+
+  '@utrecht/focus-ring-css@2.3.1':
+    resolution: {integrity: sha512-mmZeNnp2VeYVrnG0uhgkLcX2nVuMW0+oZjJ7lCI1FFODpj3ORmtTi7N5UNjhM3Pyppg5LdDwqMM6jF9clPg5Yg==}
 
   '@utrecht/web-component-library-react@3.0.2':
     resolution: {integrity: sha512-KwrE0Lt6H6mx4jXhnDh6WX3SGkqnS0pM/FFKyPnwiaQ3XmNGDPWnabpnEbW22YUkGTup/YUYrSjrzN2TvPr3bg==}
@@ -10323,6 +10359,14 @@ snapshots:
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
       react: 18.3.1
 
+  '@gemeente-denhaag/button@3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 4.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/focus-ring-css': 2.3.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/card-authentication@0.1.1-alpha.103(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
@@ -10539,6 +10583,12 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  '@gemeente-denhaag/icons@4.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/language-switcher@0.2.3-alpha.366(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
@@ -10594,6 +10644,15 @@ snapshots:
       '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
       react: 18.3.1
 
+  '@gemeente-denhaag/process-steps@4.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/icons': 4.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/step-marker': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/radio-button@0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -10618,6 +10677,13 @@ snapshots:
   '@gemeente-denhaag/step-marker@0.0.1-alpha.75(react@18.3.1)':
     dependencies:
       react: 18.3.1
+
+  '@gemeente-denhaag/step-marker@3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 4.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@gemeente-denhaag/stylesprovider@0.1.1-alpha.374(react@18.3.1)':
     dependencies:
@@ -10939,6 +11005,8 @@ snapshots:
   '@nl-design-system-candidate/skip-link-docs@1.0.1': {}
 
   '@nl-design-system-candidate/skip-link-tokens@1.0.1': {}
+
+  '@nl-design-system-community/ma-design-tokens@2.2.1': {}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4': {}
 
@@ -11636,6 +11704,8 @@ snapshots:
       clsx: 1.2.1
 
   '@utrecht/design-tokens@2.4.0': {}
+
+  '@utrecht/focus-ring-css@2.3.1': {}
 
   '@utrecht/web-component-library-react@3.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
