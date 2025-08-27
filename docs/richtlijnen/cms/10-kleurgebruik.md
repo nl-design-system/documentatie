@@ -1,5 +1,5 @@
 ---
-title: Kleurgebruik en contrast · Voor CMS leveranciers · Handboek
+title: Kleurgebruik en contrast · CMS · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Kleurgebruik en contrast

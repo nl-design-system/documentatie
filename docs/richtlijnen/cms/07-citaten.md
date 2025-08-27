@@ -1,6 +1,5 @@
 ---
-title: Citaten · Voor CMS leveranciers · Handboek
-hide_title: true
+title: Citaten · CMS · Richtlijnen
 hide_table_of_contents: false
 sidebar_label: Citaten
 pagination_label: Citaten
