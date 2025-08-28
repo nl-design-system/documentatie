@@ -40,7 +40,7 @@ Mis je functionaliteit om tekst op te maken op een manier die past bij wat je wi
 
 ## Uitzonderingen
 
-Voor een paar soorten richtlijnen gelden de eisen voor succescriterium 1.4.5 Afbeeldingen van tekst niet:
+Voor een paar soorten afbeeldingen gelden de eisen voor succescriterium 1.4.5 Afbeeldingen van tekst niet:
 
 - Logo's.
 - Afbeeldingen van tekst, waar de bezoeker zélf invloed heeft op hoe de tekst eruit ziet.
