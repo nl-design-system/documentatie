@@ -1,11 +1,11 @@
 ---
-title: Niveau 2 · Niveaus van meedoen · Organisatie · Handboek
+title: Niveau 3 · Niveaus van meedoen · Organisatie · Handboek
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Niveau 2
-sidebar_position: 3
+sidebar_label: Niveau 3
+sidebar_position: 4
 pagination_label: Meedoen
-description: Meedoen met NL Design System vanaf niveau 2
+description: Meedoen met NL Design System vanaf niveau 3
 keywords:
   - leverancier
   - waarom NL Design System
@@ -15,27 +15,28 @@ keywords:
 import { Status } from "@gemeente-denhaag/process-steps";
 import { Link, Paragraph } from "@utrecht/component-library-react";
 
-# Niveau 2 - Richtlijnen gebruiken
+# Niveau 3 - Huisstijl vastleggen als thema
 
-Gebruik de NL Design System richtlijnen als designer, developer of contentmaker om toegankelijke en gebruiksvriendelijke websites en webapplicaties te maken.
+Stel een NL Design System thema beschikbaar voor de huisstijl van de organisatie en maak snel en makkelijk gebruik van bestaande oplossingen die met NL Design System zijn gebouwd.
 
 ## Wat zijn de voordelen?
 
-De richtlijnen van NL Design System zorgen ervoor dat online dienstverlening makkelijker toegankelijk en gebruiksvriendelijk kan worden gebouwd en toegankelijkheidsproblemen tijdens in content kunnen worden voorkomen.
+- Goede basis door gebruik van het toegankelijke NL Design System Start thema
+- Centraal beheer van de online huisstijl met het eenmalig goed vastgelegde thema.
+- Eén vastgelegd thema voor veelvuldig gebruik door verschillende websites en webapplicaties.
+- Makkelijk updaten van de huisstijl over alle gekoppelde websites en webapplicaties.
 
 ## Verwachtte inzet
 
-Gebruik de expertise van NL Design System tijdens het ontwikkelen van online dienstverlening en het maken van content.
-Vraag leveranciers, developers, designers en contentmakers de [richtlijnen](/richtlijnen) mee te nemen tijdens het ontwikkelen van online dienstverlening.
+Maak de digitale huisstijl beschikbaar op basis van het NL Design System Start thema en vraag developers, designers en leveranciers om dit vastgelegde thema te gebruiken en waar nodig uit te breiden.
+Onderhoud het thema zodat deze up-to-date is voor nieuwe componenten en aanpassingen van beschikbare design tokens.
 
 ## Hoe doe je mee?
 
 <div className="ma-theme">
   <Status
     collapsible
-    expandedSteps={[
-      'niveau-2'
-    ]}
+    expandedSteps={['niveau-3']}
     steps={[
       {
         id: "niveau-1",
@@ -67,56 +68,73 @@ Vraag leveranciers, developers, designers en contentmakers de [richtlijnen](/ric
             title: <span>Sluit aan bij de <a href="/community/events/overzicht/">online bijeenkomsten</a></span>,
           },
         ],
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-1/">Niveau 1 - Online Meedoen</a>,
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-1/">Niveau 1 - Online Meedoen</a>,
       },
       {
         id: "niveau-2",
-        marker: 2,
-        status: "current",
+        marker: "2",
+        status: "checked",
         steps: [
           {
-            status: "not-checked",
+            status: "checked",
             title: <span>Gebruik <Link href="/richtlijnen/stijl/">de Stijl richtlijnen</Link> bij het bepalen van een digitale huisstijl</span>,
           },
           {
-            status: "not-checked",
+            status: "checked",
             title: <span>Gebruik <Link href="/richtlijnen/formulieren/">de Formulier richtlijnen</Link> tijdens het bouwen van webformulieren</span>,
           },
           {
-            status: "not-checked",
+            status: "checked",
             title: <span>Gebruik <Link href="/richtlijnen/content/">de Content richtlijnen</Link> tijdens het maken van content</span>,
           },
           {
-            status: "not-checked",
+            status: "checked",
             title: <span>Gebruik <Link href="/richtlijnen/content/">de WCAG richtlijnen</Link> voor hulp om WCAG 2.2 succescriteria te gebruiken</span>,
           },
-          { status: "not-checked", title: <span>Geef wanneer nodig feedback op de bruikbaarheid van de richtlijnen</span>}
         ],
-        title: "Niveau 2 - Richtlijnen gebruiken",
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-2/">Niveau 2 - Richtlijnen gebruiken</a>,
       },
       {
         id: "niveau-3",
         marker: 3,
-        status: "not-checked",
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-3/">Niveau 3 - Huisstijl vastleggen als thema</a>,
+        steps: [
+          {
+            status: "not-checked",
+            title: <span>Leer hoe NL Design System met <a href="/handboek/huisstijl/design-tokens/">Design Tokens</a> werkt</span>
+          },
+          {
+            status: "not-checked",
+            title: <span>Gebruik <a href="/handboek/huisstijl/themas/start-thema/">het Start thema</a> als basis voor een toegankelijke huisstijl</span>,
+          },
+          {
+            status: "not-checked",
+            title: <span>Volg het <a href="/handboek/designer/figma-stappenplan/">Figma Stappenplan</a> voor designers om huisstijl beslissingen als thema vast te leggen</span>,
+          },
+          {
+            status: "not-checked",
+            title: <span>Gebruik de <a href="/handboek/designer/figma-changelog/">Figma Changelog</a> om het thema te onderhouden bij nieuwe ontwikkelingen</span>,
+          },
+        ],
+        status: "current",
+        title: "Niveau 3 - Huisstijl vastleggen als thema",
       },
       {
         id: "niveau-4",
         marker: 4,
         status: "not-checked",
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-4/">Niveau 4 - Componenten gebruiken</a>,
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-4/">Niveau 4 - Componenten gebruiken</a>,
       },
       {
         id: "niveau-5",
         marker: 5,
         status: "not-checked",
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-5/">Niveau 5 - Componenten verbeteren</a>,
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-5/">Niveau 5 - Componenten verbeteren</a>,
       },
       {
         id: "niveau-6",
         marker: 6,
         status: "not-checked",
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-6/">Niveau 6 - Componenten bijdragen</a>,
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-6/">Niveau 6 - Componenten bijdragen</a>,
       },
     ]}
 

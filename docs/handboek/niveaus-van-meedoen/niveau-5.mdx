@@ -1,11 +1,11 @@
 ---
-title: Niveau 6 · Niveaus van meedoen · Organisatie · Handboek
+title: Niveau 5 · Niveaus van meedoen · Organisatie · Handboek
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Niveau 6
-sidebar_position: 7
+sidebar_label: Niveau 5
+sidebar_position: 6
 pagination_label: Meedoen
-description: Meedoen met NL Design System vanaf niveau 6
+description: Meedoen met NL Design System vanaf niveau 5
 keywords:
   - leverancier
   - waarom NL Design System
@@ -15,28 +15,27 @@ keywords:
 import { Status } from "@gemeente-denhaag/process-steps";
 import { Link, Paragraph } from "@utrecht/component-library-react";
 
-# Niveau 6 - Componenten bijdragen
+# Niveau 5 - Componenten verbeteren
 
-Ontwikkel nieuwe componenten, patronen en templates op de herbruikbare, huisstijl onafhankelijke manier van NL Design System en draag deze bij via een eigen componenten bibliotheek.
+Help bestaande componenten, patronen en templates te verbeteren door inzichten uit gebruikersonderzoek te delen en missende functionaliteit toe te voegen.
 
 ## Wat zijn de voordelen?
 
-- Gebruik de expertise, documentatie en hulpmiddelen van NL Design System bij het ontwikkelen van een eigen componenten bibliotheek.
-- Ontwikkel compleet nieuwe componenten, patronen en templates op het moment dat het actueel en er urgentie is.
-- Maak het voor teams die nieuwe applicaties ontwikkelen makkelijk om bestaande componenten en nieuwe componenten te gebruiken omdat deze op dezelfde voorspelbare manier zijn gebouwd.
+- Begin niet helemaal opnieuw wanneer componenten of templates nog niet helemaal aan de nieuwe usecase voldoen.
+- Ruimte voor innovatie door verder te bouwen op bestaande ontwikkelingen op het moment dat het actueel en urgent is.
 
 ## Verwachtte inzet
 
-Ontwikkel nieuwe componenten, patronen en templates volgens de architectuur van NL Design System. Werk hierin samen met de NL Design System community in GitHub Discussions en Figma.
+De organisatie voert verbeteringen door aan een component, patroon of template niet dat niet helemaal voldoet aan de wensen of eisen.
 
-Maak de component beschikbaar voor hergebruik door de Help Wanted en Community stappen van het Estafettemodel te volgen.
+Bouw door op bestaande ontwikkelingen, doe gebruikersonderzoeken, deel de beoogde verbeteringen via Github Discussions en werk samen met de community om tot een betere versie te komen.
 
 ## Hoe doe je mee?
 
 <div className="ma-theme">
   <Status
     collapsible
-    expandedSteps={['niveau-6']}
+    expandedSteps={['niveau-5']}
     steps={[
       {
         id: "niveau-1",
@@ -68,7 +67,7 @@ Maak de component beschikbaar voor hergebruik door de Help Wanted en Community s
             title: <span>Sluit aan bij de <a href="/community/events/overzicht/">online bijeenkomsten</a></span>,
           },
         ],
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-1/">Niveau 1 - Online Meedoen</a>,
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-1/">Niveau 1 - Online Meedoen</a>,
       },
       {
         id: "niveau-2",
@@ -92,7 +91,7 @@ Maak de component beschikbaar voor hergebruik door de Help Wanted en Community s
             title: <span>Gebruik <Link href="/richtlijnen/content/">de WCAG richtlijnen</Link> voor hulp om WCAG 2.2 succescriteria te gebruiken</span>,
           },
         ],
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-2/">Niveau 2 - Richtlijnen gebruiken</a>,
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-2/">Niveau 2 - Richtlijnen gebruiken</a>,
       },
       {
         id: "niveau-3",
@@ -116,7 +115,7 @@ Maak de component beschikbaar voor hergebruik door de Help Wanted en Community s
           },
         ],
         status: "checked",
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-3/">Niveau 3 - Huisstijl vastleggen als thema</a>,
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-3/">Niveau 3 - Huisstijl vastleggen als thema</a>,
       },
       {
         id: "niveau-4",
@@ -148,59 +147,37 @@ Maak de component beschikbaar voor hergebruik door de Help Wanted en Community s
             title: "Geef feedback over de gebruikte componenten",
           },
         ],
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-4/">Niveau 4 - Componenten gebruiken</a>,
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-4/">Niveau 4 - Componenten gebruiken</a>,
       },
       {
         id: "niveau-5",
         marker: 5,
         steps: [
           {
-            status: "checked",
+            status: "not-checked",
             title: "Ontwikkel verder op bestaande componenten en templates in Figma",
           },
           {
-            status: "checked",
+            status: "not-checked",
             title: "Doe gebruikersonderzoek en deel de inzichten",
           },
           {
-            status: "checked",
+            status: "not-checked",
             title: "Voeg de verbeteringen toe aan de GitHub Discussions",
           },
           {
-            status: "checked",
+            status: "not-checked",
             title: "Draag de verbeteringen bij aan de Community component in GitHub",
           },
         ],
-        status: "checked",
-        title: <a href="/handboek/organisatie/niveaus-van-meedoen/niveau-5/">Niveau 5 - Componenten verbeteren</a>,
+        status: "current",
+        title: "Niveau 5 - Componenten verbeteren",
       },
       {
         id: "niveau-6",
         marker: 6,
-        steps: [
-          {
-            status: "not-checked",
-            title: <span>Onderzoek of de component algemeen nut heeft door de <a href="/help-wanted-stappenplan/">Help Wanted stappen</a> te volgen</span>,
-          },
-          {
-            status: "not-checked",
-            title: <span>Maak een Figma bibliotheek en <a href="handboek/designer/zelf-componenten-maken/">voeg de component toe</a></span>
-          },
-          {
-            status: "not-checked",
-            title: <span>Bouw de component volgens de <a href="/handboek/developer/architectuur/">NL Design System architectuur</a></span>,
-          },
-          {
-            status: "not-checked",
-            title: <span>Stel de component beschikbaar voor hergebruik door anderen met het <a href="/handboek/estafettemodel/componenten/community-stappenplan/voor-organisaties/">Community stappenpaln</a></span>,
-          },
-          {
-            status: "not-checked",
-            title: "Onderhoud de bibliotheek en houd deze vers & veilig",
-          },
-        ],
-        status: "current",
-        title: "Niveau 6 - Componenten bijdragen",
+        status: "not-checked",
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-6/">Niveau 6 - Componenten bijdragen</a>,
       },
     ]}
 
