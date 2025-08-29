@@ -28,8 +28,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.5cfa7b5f.css" />
-  <script src="/assets/js/runtime~main.a9221bad.js" defer="defer"></script>
-  <script src="/assets/js/main.cfeb3231.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.7dbb2795.js" defer="defer"></script>
+  <script src="/assets/js/main.84ed7fcf.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -647,7 +647,43 @@
                <ul class="new-checklist" role="list">
                 <li class="new-checklist__item new-checklist__item--developer">
                  <details>
-                  <summary><span class="new-checklist__title" id=":R3cmhralaqh:">Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.</span></summary>
+                  <summary><span class="new-checklist__title" id=":R3cmhralaqh:">De Color Sample kan een alternatieve tekst hebben. </span></summary>
+                  <div class="new-checklist__content">
+                   <div>
+                    <p>De Color Sample kan worden voorzien van een beschrijvende alternatieve tekst, doordat <code class="utrecht-code">aria-label</code> of <code class="utrecht-code">aria-labelledby</code> in de component gebruikt kan worden.</p>
+                    <p>NL Design System richtlijnen:</p>
+                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                     <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
+                    </ul>
+                   </div>
+                   <div class="utrecht-badge-list new-checklist__badge-list">
+                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1" href="/wcag/1.1.1/"><span class="nl-data-badge">WCAG 1.1.1</span></a
+                    ><span class="nl-data-badge">Niveau A</span>
+                   </div>
+                  </div>
+                 </details>
+                </li>
+                <li class="new-checklist__item new-checklist__item--developer">
+                 <details>
+                  <summary><span class="new-checklist__title" id=":R5cmhralaqh:">De Color Sample heeft de rol van afbeelding in de accessibility tree.</span></summary>
+                  <div class="new-checklist__content">
+                   <div>
+                    <p>De Color Sample is herkenbaar als afbeelding voor gebruikers van hulpsoftware, zoals <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a>. Het <code class="utrecht-code">svg</code>-element in de Color Sample heeft de rol <code class="utrecht-code">img</code>.</p>
+                    <p>NL Design System richtlijnen:</p>
+                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                     <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
+                    </ul>
+                   </div>
+                   <div class="utrecht-badge-list new-checklist__badge-list">
+                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.3.1 Info en relaties" style="line-height: 1" href="/wcag/1.3.1/"><span class="nl-data-badge">WCAG 1.3.1</span></a
+                    ><span class="nl-data-badge">Niveau A</span>
+                   </div>
+                  </div>
+                 </details>
+                </li>
+                <li class="new-checklist__item new-checklist__item--developer">
+                 <details>
+                  <summary><span class="new-checklist__title" id=":R7cmhralaqh:">Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.</span></summary>
                   <div class="new-checklist__content">
                    <div>
                     <p>Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.</p>
@@ -668,7 +704,7 @@
                 </li>
                 <li class="new-checklist__item new-checklist__item--developer">
                  <details>
-                  <summary><span class="new-checklist__title" id=":R5cmhralaqh:">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.</span></summary>
+                  <summary><span class="new-checklist__title" id=":R9cmhralaqh:">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.</span></summary>
                   <div class="new-checklist__content">
                    <div>
                     <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden. Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier buttons voor te maken in de website zelf.</p>
@@ -682,12 +718,12 @@
                      <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
                     </ul>
                     <p>Dit is te testen met een extensie zoals Stylus of User CSS, een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
-                    <span hidden="" id=":R3bdcmhralaqh:"
+                    <span hidden="" id=":R6mpcmhralaqh:"
                      >codevoorbeeld
                      <!-- -->
                      <!-- -->
                     </span>
-                    <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R3bdcmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
+                    <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R6mpcmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body *</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">line-height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1.5</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">letter-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.12</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>

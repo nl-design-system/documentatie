@@ -1,4 +1,4 @@
-/*! For license information please see 0024c60f.9564e062.js.LICENSE.txt */
+/*! For license information please see 0024c60f.16867f5a.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [72837],
  {
@@ -72,9 +72,9 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  22044: (e, n, t) => {
+  52356: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => U, component: () => X, contentTitle: () => E, default: () => K, description: () => V, frontMatter: () => F, issueNumber: () => B, metadata: () => H, title: () => I, toc: () => $ });
+   t.r(n), t.d(n, { assets: () => B, component: () => q, contentTitle: () => $, default: () => ee, description: () => K, frontMatter: () => I, issueNumber: () => Y, metadata: () => V, title: () => J, toc: () => X });
    var r,
     o,
     s,
@@ -124,45 +124,61 @@
     return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(k, { ...e }) }) : k(e);
    }
    function x(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, h.a)(), ...e.components };
-    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(n.p, { children: ['Een gebruiker van een ', (0, d.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' kan herkennen welke kleurvlakken bij welke eigenschappen horen als de gebruiker van boven naar beneden de webpagina doorleest.\nDe connectie tussen kleurvlak en eigenschappen is niet alleen via de visuele informatie beschikbaar, maar ook in de volgorde van de HTML-code in de ', (0, d.jsx)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model', children: 'DOM' }), '.'] }), '\n', (0, d.jsx)(n.p, { children: 'NL Design System richtlijnen' }), '\n', (0, d.jsxs)(n.ul, { children: ['\n', (0, d.jsx)(n.li, { children: (0, d.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde/', children: 'Zorg voor een logische volgorde van de informatie' }) }), '\n'] })] });
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, h.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(n.p, { children: ['De Color Sample kan worden voorzien van een beschrijvende alternatieve tekst, doordat ', (0, d.jsx)(n.code, { children: 'aria-label' }), ' of ', (0, d.jsx)(n.code, { children: 'aria-labelledby' }), ' in de component gebruikt kan worden.'] }), '\n', (0, d.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(n.ul, { children: ['\n', (0, d.jsx)(n.li, { children: (0, d.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/', children: 'Informatieve afbeeldingen' }) }), '\n'] })] });
    }
    function A(e = {}) {
     const { wrapper: n } = { ...(0, h.a)(), ...e.components };
     return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(x, { ...e }) }) : x(e);
    }
-   var C = t(27794);
-   function T(e) {
+   function C(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, h.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(n.p, { children: ['De Color Sample is herkenbaar als afbeelding voor gebruikers van hulpsoftware, zoals ', (0, d.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), '. Het ', (0, d.jsx)(n.code, { children: 'svg' }), '-element in de Color Sample heeft de rol ', (0, d.jsx)(n.code, { children: 'img' }), '.'] }), '\n', (0, d.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(n.ul, { children: ['\n', (0, d.jsx)(n.li, { children: (0, d.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/', children: 'Informatieve afbeeldingen' }) }), '\n'] })] });
+   }
+   function T(e = {}) {
+    const { wrapper: n } = { ...(0, h.a)(), ...e.components };
+    return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(C, { ...e }) }) : C(e);
+   }
+   function z(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, h.a)(), ...e.components };
-    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(n.p, { children: ['Geef het kleurvlak (of een kader rond het kleurvlak) een kleurcontrast met de achtergrond van minimaal 3:1. Dit is te controleren met de ', (0, d.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, d.jsx)(n.p, { children: 'Zorg ervoor dat het vlak visueel goed te onderscheiden is als kleurvlak.' }), '\n', (0, d.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(n.ul, { children: ['\n', (0, d.jsx)(n.li, { children: (0, d.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(n.p, { children: ['Een gebruiker van een ', (0, d.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' kan herkennen welke kleurvlakken bij welke eigenschappen horen als de gebruiker van boven naar beneden de webpagina doorleest.\nDe connectie tussen kleurvlak en eigenschappen is niet alleen via de visuele informatie beschikbaar, maar ook in de volgorde van de HTML-code in de ', (0, d.jsx)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model', children: 'DOM' }), '.'] }), '\n', (0, d.jsx)(n.p, { children: 'NL Design System richtlijnen' }), '\n', (0, d.jsxs)(n.ul, { children: ['\n', (0, d.jsx)(n.li, { children: (0, d.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde/', children: 'Zorg voor een logische volgorde van de informatie' }) }), '\n'] })] });
    }
    function G(e = {}) {
     const { wrapper: n } = { ...(0, h.a)(), ...e.components };
-    return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(T, { ...e }) }) : T(e);
+    return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(z, { ...e }) }) : z(e);
    }
-   var z = t(47913),
-    S = t(50553);
-   var W = t(34354),
-    N = t(97520),
-    R = t(76233),
-    M = t(6503),
-    O = t(8657),
-    D = t(49556),
-    P = t(57716);
-   function _(e) {
+   var S = t(27794);
+   function W(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, h.a)(), ...e.components };
+    return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(n.p, { children: ['Geef het kleurvlak (of een kader rond het kleurvlak) een kleurcontrast met de achtergrond van minimaal 3:1. Dit is te controleren met de ', (0, d.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, d.jsx)(n.p, { children: 'Zorg ervoor dat het vlak visueel goed te onderscheiden is als kleurvlak.' }), '\n', (0, d.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, d.jsxs)(n.ul, { children: ['\n', (0, d.jsx)(n.li, { children: (0, d.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
+   }
+   function N(e = {}) {
+    const { wrapper: n } = { ...(0, h.a)(), ...e.components };
+    return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(W, { ...e }) }) : W(e);
+   }
+   var R = t(47913),
+    D = t(50553);
+   var M = t(34354),
+    O = t(97520),
+    L = t(76233),
+    P = t(6503),
+    _ = t(8657),
+    Z = t(49556),
+    F = t(57716);
+   function E(e) {
     const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', p: 'p', pre: 'pre', ...(0, h.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(n.h1, { id: 'gebruik-color-sample', children: 'Gebruik Color Sample' }), '\n', (0, d.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, d.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, d.jsxs)(n.p, { children: [(0, d.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-css', children: [(0, d.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fcolor-sample-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/color-sample-css'] }), '\nversie 1.'] }), '\n', (0, d.jsxs)(n.p, { children: ['Gebruik de ', (0, d.jsx)(n.code, { children: 'nl-color-sample' }), ' class name op een ', (0, d.jsx)(n.code, { children: 'svg' }), ' element:'] }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-html', children: '<svg role="img" xmlns="http://www.w3.org/2000/svg" class="nl-color-sample" style="color: deeppink;">\n  <path d="M0 0H32V32H0Z" fill="currentcolor" />\n</svg>\n' }) }), '\n', (0, d.jsxs)(n.p, { children: ['Zorg dat je een duidelijke beschrijving naast de Color Sample hebt en gebruik wanneer de Color Sample en beschrijving niet direct bij elkaar staan dat je ze goed aan elkaar linkt. Bijvoorbeeld door er een ', (0, d.jsx)(n.code, { children: 'figure' }), ' omheen te zetten:'] }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-html', children: '<h1>Huisstijlkleuren</h1>\n<figure>\n  <ColorSample value="deeppink" aria-labelledby="kleur-1" />\n  <figcaption id="kleur-1">Roze</figcaption>\n</figure>\n' }) }), '\n', (0, d.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/color-sample-css\n' }) }), '\n', (0, d.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/color-sample-css@1/dist/color-sample.css"\n/>\n' }) }), '\n', (0, d.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, d.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/color-sample-css/dist/color-sample.css" />\n' }) }), '\n', (0, d.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/color-sample-css/color-sample.css";\n' }) }), '\n', (0, d.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, d.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, d.jsxs)(n.p, { children: [(0, d.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-react', children: [(0, d.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fcolor-sample-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/color-sample-react'] }), '\nversie 1.'] }), '\n', (0, d.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/color-sample-react\n' }) }), '\n', (0, d.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-jsx', children: 'import { ColorSample } from "@nl-design-system-candidate/color-sample-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <ColorSample value="deeppink" />\n      </body>\n    </html>\n  );\n};\n' }) }), '\n', (0, d.jsxs)(n.p, { children: ['Zorg dat je een duidelijke beschrijving naast de Color Sample hebt en gebruik wanneer de Color Sample en beschrijving niet direct bij elkaar staan een ', (0, d.jsx)(n.code, { children: 'id' }), ' op de beschrijving die je met ', (0, d.jsx)(n.code, { children: 'aria-labelledby' }), ' koppelt aan de ', (0, d.jsx)(n.code, { children: 'ColorSample' }), ':'] }), '\n', (0, d.jsx)(n.pre, { children: (0, d.jsx)(n.code, { className: 'language-jsx', children: 'export const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <figure>\n          <ColorSample value="deeppink"/>\n          <figcaption>\n            Roze\n          </figcaption>\n      </body>\n    </html>\n  );\n};\n' }) }), '\n', (0, d.jsx)(n.h2, { id: 'figma', children: 'Figma' }), '\n', (0, d.jsxs)(n.p, { children: ['De Figma component staat in ', (0, d.jsx)(n.a, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-17931', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Color Sample' }), '.'] })] });
    }
-   function L(e = {}) {
+   function H(e = {}) {
     const { wrapper: n } = { ...(0, h.a)(), ...e.components };
-    return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(_, { ...e }) }) : _(e);
+    return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(E, { ...e }) }) : E(e);
    }
-   const Z = JSON.parse('{"nl":{"color-sample":{"background-color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"block-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"border-color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"border-radius":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length-percentage>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"border-width":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"inline-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"}}}}'),
-    F = { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['color', 'color code', 'color example', 'color fill', 'color hash', 'color preview', 'color sample', 'color theme', 'color visual', 'colour', 'colour code', 'colour example', 'colour fill', 'colour hash', 'colour preview', 'colour sample', 'colour theme', 'colour visual', 'image', 'kleur', 'kleurinfo', 'kleurstaal', 'kleurvoorbeeld', 'monster', 'palette', 'pantone', 'solid', 'sub', 'swatch', 'voorbeeld', 'voorbeeldkleur', 'voorvertoning'] },
-    E = void 0,
-    H = { id: 'componenten/color-sample/index', title: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', source: '@site/docs/componenten/color-sample/index.mdx', sourceDirName: 'componenten/color-sample', slug: '/color-sample', permalink: '/color-sample', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/color-sample/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['color', 'color code', 'color example', 'color fill', 'color hash', 'color preview', 'color sample', 'color theme', 'color visual', 'colour', 'colour code', 'colour example', 'colour fill', 'colour hash', 'colour preview', 'colour sample', 'colour theme', 'colour visual', 'image', 'kleur', 'kleurinfo', 'kleurstaal', 'kleurvoorbeeld', 'monster', 'palette', 'pantone', 'solid', 'sub', 'swatch', 'voorbeeld', 'voorbeeldkleur', 'voorvertoning'] }, sidebar: 'componenten', previous: { title: 'Code Block', permalink: '/code-block' }, next: { title: 'Data Badge', permalink: '/data-badge' } },
-    U = {},
-    $ = [
+   const U = JSON.parse('{"nl":{"color-sample":{"background-color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"block-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"border-color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"border-radius":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length-percentage>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"border-width":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"inline-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"}}}}'),
+    I = { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['color', 'color code', 'color example', 'color fill', 'color hash', 'color preview', 'color sample', 'color theme', 'color visual', 'colour', 'colour code', 'colour example', 'colour fill', 'colour hash', 'colour preview', 'colour sample', 'colour theme', 'colour visual', 'image', 'kleur', 'kleurinfo', 'kleurstaal', 'kleurvoorbeeld', 'monster', 'palette', 'pantone', 'solid', 'sub', 'swatch', 'voorbeeld', 'voorbeeldkleur', 'voorvertoning'] },
+    $ = void 0,
+    V = { id: 'componenten/color-sample/index', title: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', source: '@site/docs/componenten/color-sample/index.mdx', sourceDirName: 'componenten/color-sample', slug: '/color-sample', permalink: '/color-sample', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/color-sample/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Color Sample', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Color Sample', pagination_label: 'Color Sample', description: 'Toont een voorbeeld van een kleur.', slug: '/color-sample', keywords: ['color', 'color code', 'color example', 'color fill', 'color hash', 'color preview', 'color sample', 'color theme', 'color visual', 'colour', 'colour code', 'colour example', 'colour fill', 'colour hash', 'colour preview', 'colour sample', 'colour theme', 'colour visual', 'image', 'kleur', 'kleurinfo', 'kleurstaal', 'kleurvoorbeeld', 'monster', 'palette', 'pantone', 'solid', 'sub', 'swatch', 'voorbeeld', 'voorbeeldkleur', 'voorvertoning'] }, sidebar: 'componenten', previous: { title: 'Code Block', permalink: '/code-block' }, next: { title: 'Data Badge', permalink: '/data-badge' } },
+    B = {},
+    X = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Candidate component gebruiken', id: 'candidate-component-gebruiken', level: 2 },
      { value: 'Design tokens', id: 'design-tokens', level: 3 },
@@ -173,11 +189,11 @@
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    I = 'Color Sample',
-    V = 'Toont een voorbeeld van een kleur.',
-    B = 325,
-    X = u.find((e) => e.number === B);
-   function J(e) {
+    J = 'Color Sample',
+    K = 'Toont een voorbeeld van een kleur.',
+    Y = 325,
+    q = u.find((e) => e.number === Y);
+   function Q(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, h.a)(), ...e.components };
     return (0, d.jsxs)(d.Fragment, {
      children: [
@@ -187,21 +203,21 @@
       '\n',
       '\n',
       '\n',
-      (0, d.jsx)(O.Rv, { component: X, headingLevel: 1, description: V }),
+      (0, d.jsx)(_.Rv, { component: q, headingLevel: 1, description: K }),
       '\n',
-      (0, d.jsx)(N.I, { component: X }),
+      (0, d.jsx)(O.I, { component: q }),
       '\n',
       (0, d.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, d.jsx)(R.B, { component: X, illustration: g }),
+      (0, d.jsx)(L.B, { component: q, illustration: g }),
       '\n',
       (0, d.jsx)(n.h2, { id: 'candidate-component-gebruiken', children: 'Candidate component gebruiken' }),
       '\n',
       (0, d.jsx)(n.h3, { id: 'design-tokens', children: 'Design tokens' }),
       '\n',
-      (0, d.jsx)(D.W, { tokens: Z }),
+      (0, d.jsx)(Z.W, { tokens: U }),
       '\n',
-      (0, d.jsx)(P.U, { omitH1: !0, headingLevel: 3, children: (0, d.jsx)(L, {}) }),
+      (0, d.jsx)(F.U, { omitH1: !0, headingLevel: 3, children: (0, d.jsx)(H, {}) }),
       '\n',
       (0, d.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
       '\n',
@@ -211,14 +227,14 @@
       '\n',
       (0, d.jsx)(v.ZP, {}),
       '\n',
-      (0, d.jsx)(M.W, {
+      (0, d.jsx)(P.W, {
        items: [
         { title: 'De eigenschappen van de kleur in de Color Sample zijn in tekst beschreven.', sc: '1.1.1', status: '', component: (0, d.jsx)(f, {}), tags: ['contentmaker', 'designer'] },
         { title: 'Het kleurvlak en de bijbehorende eigenschappen horen semantisch bij elkaar.', sc: '1.3.1', status: '', component: (0, d.jsx)(b, {}), tags: ['contentmaker', 'designer'] },
-        { title: 'Een screenreadergebruiker kan uit de leesvolgorde herkennen welk kleurvlak bij welke eigenschappen hoort.', sc: '1.3.2', status: '', component: (0, d.jsx)(A, {}), tags: ['contentmaker', 'designer', 'developer'] },
-        { title: 'Kleur is niet de enige manier waarop de informatie over de Color Sample beschikbaar is.', sc: '1.4.1', status: '', component: (0, d.jsx)(C.ZP, {}), tags: ['contentmaker', 'designer'] },
-        { title: 'Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende.', sc: '1.4.3', status: '', component: (0, d.jsx)(W.ZP, {}), tags: ['contentmaker', 'designer'] },
-        { title: 'Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond.', sc: '1.4.11', status: '', component: (0, d.jsx)(G, {}), tags: ['contentmaker', 'designer'] },
+        { title: 'Een screenreadergebruiker kan uit de leesvolgorde herkennen welk kleurvlak bij welke eigenschappen hoort.', sc: '1.3.2', status: '', component: (0, d.jsx)(G, {}), tags: ['contentmaker', 'designer', 'developer'] },
+        { title: 'Kleur is niet de enige manier waarop de informatie over de Color Sample beschikbaar is.', sc: '1.4.1', status: '', component: (0, d.jsx)(S.ZP, {}), tags: ['contentmaker', 'designer'] },
+        { title: 'Het kleurcontrast van de tekst van de eigenschappen van de Color Sample is voldoende.', sc: '1.4.3', status: '', component: (0, d.jsx)(M.ZP, {}), tags: ['contentmaker', 'designer'] },
+        { title: 'Het kleurvlak is duidelijk te onderscheiden ten opzichte van de achtergrond.', sc: '1.4.11', status: '', component: (0, d.jsx)(N, {}), tags: ['contentmaker', 'designer'] },
        ],
       }),
       '\n',
@@ -226,30 +242,32 @@
       '\n',
       (0, d.jsx)(j.ZP, {}),
       '\n',
-      (0, d.jsx)(M.W, {
+      (0, d.jsx)(P.W, {
        items: [
-        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, d.jsx)(S.ZP, {}), tags: ['developer'] },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, d.jsx)(z.ZP, {}), tags: ['developer'] },
+        { title: 'De Color Sample kan een alternatieve tekst hebben. ', sc: '1.1.1', status: '', component: (0, d.jsx)(A, {}), tags: ['developer'] },
+        { title: 'De Color Sample heeft de rol van afbeelding in de accessibility tree.', sc: '1.3.1', status: '', component: (0, d.jsx)(T, {}), tags: ['developer'] },
+        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, d.jsx)(D.ZP, {}), tags: ['developer'] },
+        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, d.jsx)(R.ZP, {}), tags: ['developer'] },
        ],
       }),
       '\n',
       (0, d.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
       '\n',
-      (0, d.jsx)(O.W, { component: X, headingLevel: 3 }),
+      (0, d.jsx)(_.W, { component: q, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, d.jsx)(O.cN, { component: X, headingLevel: 3 }),
+      (0, d.jsx)(_.cN, { component: q, headingLevel: 3 }),
       '\n',
       (0, d.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, d.jsx)(O.vM, { component: X, headingLevel: 3 }),
+      (0, d.jsx)(_.vM, { component: q, headingLevel: 3 }),
      ],
     });
    }
-   function K(e = {}) {
+   function ee(e = {}) {
     const { wrapper: n } = { ...(0, h.a)(), ...e.components };
-    return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(J, { ...e }) }) : J(e);
+    return n ? (0, d.jsx)(n, { ...e, children: (0, d.jsx)(Q, { ...e }) }) : Q(e);
    }
   },
   27794: (e, n, t) => {
