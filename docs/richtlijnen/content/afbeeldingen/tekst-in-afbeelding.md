@@ -40,10 +40,10 @@ Mis je functionaliteit om tekst op te maken op een manier die past bij wat je wi
 
 ## Uitzonderingen
 
-Een paar soorten afbeeldingen van tekst hoeven niet te voldoen aan de toegankelijkheidsrichtlijnen, namelijk:
+Voor een paar soorten afbeeldingen gelden de eisen voor succescriterium 1.4.5 Afbeeldingen van tekst niet:
 
-- Logo's
-- Afbeeldingen van tekst, waar de bezoeker zélf invloed heeft op hoe de tekst eruit ziet
+- Logo's.
+- Afbeeldingen van tekst, waar de bezoeker zélf invloed heeft op hoe de tekst eruit ziet.
 
 In de praktijk komt het tweede eigenlijk nooit voor, dus wees altijd voorzichtig met afbeeldingen van tekst.
 
