@@ -646,7 +646,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     <li><span>Voorpagina</span> - <span>https://nldesignsystem.nl/</span></li>
     <li>
       <span>Documentatie</span> -
-      <span>https://nldesignsystem.nl/documentatie</span>
+      <span><a href="https://nldesignsystem.nl/documentatie" rel="nofollow">https://nldesignsystem.nl/documentatie</a></span>
     </li>
     <li>
       <span>Richtlijnen</span> -
@@ -704,7 +704,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     </li>
     <li>
       <span>404 pagina</span> -
-      <span>(https://nldesignsystem.nl/asdasdasd</span>
+      <span><a href="https://nldesignsystem.nl/asdasdasd" rel="nofollow">https://nldesignsystem.nl/asdasdasd</a></span>
     </li>
     <li>
       <span>Links</span> - <span>https://nldesignsystem.nl/project/links</span>
