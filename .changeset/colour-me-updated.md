@@ -1,3 +1,5 @@
-## "@nl-design-system-unstable/documentation": minor
+---
+"@nl-design-system-unstable/documentation": minor
+---
 
 Update in toegankelijkheidsacceptatiecriteria voor de Color sample pagina.
