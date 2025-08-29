@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.4 Herschalen van tekst
 pagination_label: WCAG-succescriterium 1.4.4 Herschalen van tekst
-description: De gebruiker moet tekst twee keer (200%) kunnen vergroten en nog steeds goed kunnen lezen.
+description: Tekst moet twee keer zo groot kunnen zijn.
 slug: 1.4.4
 keywords:
   - WCAG
@@ -30,13 +30,43 @@ import Summary from "./summaries/_1.4.4-summary.md";
   {"WCAG-succescriterium 1.4.4 Herschalen van tekst"}
 </WcagHeadingGroup>
 
+## In het kort
+
+<dl>
+  <div class="dl__item">
+    <dt class="dl__term">Doel</dt>
+    <dd class="dl__definition">Tekst kan vergroot worden.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Wat te doen</dt>
+    <dd class="dl__definition">Zorg ervoor dat de grootte van tekst verdubbeld kan worden.</dd>
+  </div>
+  <div class="dl__item">
+    <dt class="dl__term">Waarom het belangrijk is</dt>
+    <dd class="dl__definition">Sommige mensen kunnen tekst alleen lezen als deze groter is.</dd>
+  </div>
+</dl>
+
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Een bezoeker moet tekst groter kunnen maken, tot wel twee keer zo groot. De pagina hoeft hier niet iets voor te doen. De pagina moet alleen ruimte bieden dat de bezoeker dit zelf kan doen. Groter maken moet niet tegengehouden worden, en de inhoud en werking van de pagina moet gelijk blijven.
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Dit geldt alleen voor losse teksten en niet voor ondertitels of afbeeldingen van tekst.
+
+## Hoe te testen
+
+Volg de instructies van [WCAG succescriterium 1.4.10](/wcag/1.4.10). Als de webpagina voldoet aan 1.4.10, dan voldoet hij zeer waarschijnlijk ook aan de eisen van 1.4.4.
+
+## Tips
+
+- Als een pagina niet goed te vergroten is, dan kan dit in de HTML zijn ingesteld. In de `<head>` kan een `<meta>`-element staan met het attribuut `name="viewport"`. Dit element `geen maximum-scale` met een waarde onder de 3, of `user-scalable` met als waarde `0` of `no`.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Stijl - Typografie: [Introductie typografie](https://nldesignsystem.nl/richtlijnen/stijl/typografie/)
+- Stijl - Ruimte: [Introductie ruimte](https://nldesignsystem.nl/richtlijnen/stijl/ruimte/)
 
 ## Gebruikersonderzoek
 
