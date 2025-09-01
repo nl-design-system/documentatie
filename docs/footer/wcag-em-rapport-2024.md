@@ -659,7 +659,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     <li>
       <span>Toegankelijkheid</span> -
       <span
-        >https://nldesignsystem.nl/richtlijnen/formulieren/toegankelijk</span>
+        >https://nldesignsystem.nl/richtlijnen/formulieren</span>
     </li>
     <li>
       <span>Componenten</span> -
@@ -676,7 +676,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
       <span>https://nldesignsystem.nl/project/kernteam</span>
     </li>
     <li>
-      <span>Blog</span> - <span>https://nldesignsystem.nl/project/blog</span>
+      <span>Blog</span> - <span>https://nldesignsystem.nl/blog</span>
     </li>
     <li>
       <span>Blogpost</span> -

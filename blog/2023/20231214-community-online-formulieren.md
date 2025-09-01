@@ -33,7 +33,7 @@ Eerder deelden we de [eerste (en belangrijkste) lessen vanuit het testen met de 
 
 Vervolgens neemt Rian Rietveld het stokje over en gaat dieper in op de richtlijnen voor formulieren. Volgens Rian is het een belangrijke vuistregel om te onthouden dat jij niet je gebruiker bent. Denk dus niet dat wat voor jou duidelijk is, ook automatisch voor anderen duidelijk is. Ze vertelt dat alle geleerde lessen gedocumenteerd worden als richtlijnen voor formulieren.
 
-Op dit moment zijn er al verschillende richtlijnen te vinden. Denk aan richtlijnen voor labels, beschrijvingen, links, buttons, placeholders en op te vragen informatie. Zie: [Richtlijnen voor formulieren](https://nldesignsystem.nl/richtlijnen/formulieren/overzicht).
+Op dit moment zijn er al verschillende richtlijnen te vinden. Denk aan richtlijnen voor labels, beschrijvingen, links, buttons, placeholders en op te vragen informatie. Zie: [Richtlijnen voor formulieren](https://nldesignsystem.nl/richtlijnen/formulieren).
 
 ## Richtlijnen voor labels uitgelicht
 
@@ -46,7 +46,7 @@ Rian gaat dieper in op de richtlijnen voor labels. Een label geeft aan welke geg
 - Zet alleen tekst in het label.
 - Gebruik duidelijke labelteksten.
 
-In de [richtlijn Labels](https://nldesignsystem.nl/richtlijnen/formulieren/alle-richtlijnen/labels) vind je voorbeelden hoe het wél moet, maar ook vooral hoe het niet moet. Rian: “Houd altijd in gedachten dat een beschrijving én uitleg bij formulieren heel belangrijk is. Mensen snappen beter waarom ze iets moeten invullen als je toelicht waarom. Maar ook waarvoor het vervolgens wordt gebruikt. Zo zorg je er niet alleen voor dat het toegankelijk is, maar ook nog eens gebruiksvriendelijk.”
+In de [richtlijn Labels](https://nldesignsystem.nl/richtlijnen/formulieren/labels) vind je voorbeelden hoe het wél moet, maar ook vooral hoe het niet moet. Rian: “Houd altijd in gedachten dat een beschrijving én uitleg bij formulieren heel belangrijk is. Mensen snappen beter waarom ze iets moeten invullen als je toelicht waarom. Maar ook waarvoor het vervolgens wordt gebruikt. Zo zorg je er niet alleen voor dat het toegankelijk is, maar ook nog eens gebruiksvriendelijk.”
 
 ## Geef je feedback op onze nieuwe richtlijnen
 

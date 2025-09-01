@@ -19,7 +19,7 @@ Met een groep van 10 mensen vanuit projecten bij verschillende gemeenten, een le
 
 ## De administratie op orde
 
-Het ‘[estafettemodel](/handboek/estafettemodel)’ is dè manier waarop we bij NL Design System samenwerken aan richtlijnen, componenten en patronen. Hierin krijgen onderdelen een status, waarbij elke status een eigen checklist heeft als ‘[Definition of Done](/componenten/definition-of-done)’. Zo zorgen we in de ‘Help wanted’ stap bijvoorbeeld dat onderdelen een duidelijk doel hebben, breed gedragen worden en goed zijn onderbouwd.
+Het ‘[estafettemodel](/handboek/estafettemodel)’ is dè manier waarop we bij NL Design System samenwerken aan richtlijnen, componenten en patronen. Hierin krijgen onderdelen een status, waarbij elke status een eigen checklist heeft als ‘[Definition of Done](/handboek/estafettemodel/componenten/definition-of-done)’. Zo zorgen we in de ‘Help wanted’ stap bijvoorbeeld dat onderdelen een duidelijk doel hebben, breed gedragen worden en goed zijn onderbouwd.
 
 Er zijn al heel wat componenten aanwezig in de community (meer dan 150). Een deel wordt ook al in productie gebruikt, bij verschillende organisaties. We zien al veel hergebruik van elkaars werk. Hoewel de administratie achter loopt, voldoen deze componenten dus waarschijnlijk al aan veel checks. Maar ‘waarschijnlijk’ is niet goed genoeg, we willen zeker weten dat ze voldoen.
 

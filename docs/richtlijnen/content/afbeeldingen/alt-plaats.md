@@ -75,7 +75,7 @@ Onder de afbeelding plaats je vervolgens een tekst met daarin de informatie uit 
 
 Stel jezelf, bij elke afbeelding die je hebt geplaatst, de volgende vragen:
 
-- Heb je de alt-tekst ingevuld op de juiste plek in het CMS? Òf bewust leeg gelaten omdat het een [decoratieve afbeelding](l/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen) is?
+- Heb je de alt-tekst ingevuld op de juiste plek in het CMS? Òf bewust leeg gelaten omdat het een [decoratieve afbeelding](/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen) is?
 - Gebruik je ook een bijschrift? Vertelt het bijschrift dan iets extra’s, is het geen herhaling van de alt-tekst?
 - Bevat de afbeelding complexe informatie, zoals een grafiek of schema? Is extra uitleg toegevoegd in de omliggende tekst of onder de afbeelding?
 - Heb je in de alt-tekst verwezen naar die toelichting? Zet in de alt-tekst bijvoorbeeld: “Toelichting staat onder de afbeelding.”
