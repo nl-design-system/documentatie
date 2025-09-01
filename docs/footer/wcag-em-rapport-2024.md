@@ -680,7 +680,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     </li>
     <li>
       <span>Blogpost</span> -
-      <span>https://nldesignsystem.nl/project/blog/design-systems-week-2023-komt-eraan</span>
+      <span>https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan</span>
     </li>
     <li>
       <span>Events met Engelse content</span> -
@@ -700,7 +700,9 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     </li>
     <li>
       <span>Tijdschema (met tabel)</span> -
-      <span>https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema</span>
+      <span>
+        <a href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/" rel="nofollower">https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a>
+      </span>
     </li>
     <li>
       <span>404 pagina</span> -

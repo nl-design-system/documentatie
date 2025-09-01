@@ -188,7 +188,7 @@
 - 5849941: Uitleg bij [WCAG-succescriterium 2.4.3 Focus volgorde](https://nldesignsystem.nl/wcag/2.4.3/) uitgebreid en testinstructies toegevoegd.
 - 930aeac: Extra richtlijn speciaal over toetsenbordnavigatie toegevoegd, die was weggevallen na de reorganisatie van de richtlijn-pagina's.
   [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/toetsenbordnavigatie).
-- e3926c4: Richtlijn toegevoegd bij Voorkom fouten: [Gebruik geen invoerpatroon op een formulierveld](/formulieren/voorkom-fouten/geen-invoerpatronen).
+- e3926c4: Richtlijn toegevoegd bij Voorkom fouten: [Gebruik geen invoerpatroon op een formulierveld](/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen).
 - 46b37e3: De richtlijnen voor Stijl hebben nu dezelfde indeling als de richtlijnen voor formulieren. Dus één richtlijn per pagina.
 - adf29b4: Uitleg bij [WCAG-succescriterium 1.3.2 Betekenisvolle volgorde](https://nldesignsystem.nl/wcag/1.3.2) uitgebreid en testinstructies toegevoegd.
 - 0caad23: Samenvatting toegevoegd voor het [WCAG-succescriterium 1.2.6 Gebarentaal (vooraf opgenomen)](/wcag/1.2.6).

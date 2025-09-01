@@ -307,9 +307,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           <p>Bevindingen:</p>
           <p>
             Pagina
-            <a
-              href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/"
-              >https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a>.
+            <a href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/" rel="nofollower">https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a>.
           </p>
           <p>
             Tabellen op Tijdschema · NL Design System hakken af bij een kleiner
@@ -317,8 +315,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           </p>
           <p>
             Pagina
-            <a href="https://nldesignsystem.nl/events/design-systems-week-2022"
-              >https://nldesignsystem.nl/events/design-systems-week-2022</a>
+            <a href="https://nldesignsystem.nl/events/design-systems-week-2022">https://nldesignsystem.nl/events/design-systems-week-2022</a>
             Op Design Systems Week 2022 valt het submenu links over de tekst bij
             een kleiner beeldscherm.
           </p>
@@ -775,7 +772,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     </li>
     <li>
       <span>Blogpost</span> -
-      <span>https://nldesignsystem.nl/project/blog/design-systems-week-2023-komt-eraan</span>
+      <span>https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan</span>
     </li>
     <li>
       <span>Events met Engelse content</span> -
@@ -795,7 +792,10 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     </li>
     <li>
       <span>Tijdschema (met tabel)</span> -
-      <span>https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema</span>
+      <span><a
+              href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/"
+              rel="nofollower"
+              >https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a></span>
     </li>
     <li>
       <span>404 pagina</span> -
