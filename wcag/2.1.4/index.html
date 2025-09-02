@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 2.1.4 Enkel teken sneltoetsen · NL Design System" />
-  <meta data-rh="true" name="description" content="Maak geen extra sneltoetsen aan die bestaan uit één letter. Dit geldt voor hoofdletters en kleine letters, leestekens, cijfers of symbolen. Sneltoetsen van één letter worden bijvoorbeeld al gebruikt door screenreaders." />
-  <meta data-rh="true" property="og:description" content="Maak geen extra sneltoetsen aan die bestaan uit één letter. Dit geldt voor hoofdletters en kleine letters, leestekens, cijfers of symbolen. Sneltoetsen van één letter worden bijvoorbeeld al gebruikt door screenreaders." />
+  <meta data-rh="true" name="description" content="Bied geen sneltoetsen aan die bestaan uit één teken." />
+  <meta data-rh="true" property="og:description" content="Bied geen sneltoetsen aan die bestaan uit één teken." />
   <meta data-rh="true" name="keywords" content="WCAG,A,bedienbaar,toetsenbordtoegankelijk,operable,keyboard accessible,character key shortcuts" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/2.1.4/" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.5cfa7b5f.css" />
-  <script src="/assets/js/runtime~main.a065827c.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.d09d6820.js" defer="defer"></script>
   <script src="/assets/js/main.cae3ac79.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -288,20 +288,52 @@
                <h1 class="nlds-inline-heading-group__heading">WCAG-succescriterium 2.1.4 Enkel teken sneltoetsen</h1>
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau A</span></p>
               </hgroup>
+              <h2 id="in-het-kort" class="utrecht-heading-2">In het kort</h2>
+              <dl>
+               <div class="dl__item">
+                <dt class="dl__term">Doel</dt>
+                <dd class="dl__definition">Verminder onbedoeld gebruik van sneltoetsen.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Wat te doen</dt>
+                <dd class="dl__definition">Zorg ervoor dat sneltoetsen uitgeschakeld of aangepast kunnen worden.</dd>
+               </div>
+               <div class="dl__item">
+                <dt class="dl__term">Waarom het belangrijk is</dt>
+                <dd class="dl__definition"><p>Sneltoetsen met één teken zijn makkelijk onbedoeld te activeren, vooral met spraakbediening.</p></dd>
+               </div>
+              </dl>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Maak geen extra sneltoetsen aan die bestaan uit één letter. Dit geldt voor hoofdletters en kleine letters, leestekens, cijfers of symbolen.</p>
-              <p>Sneltoetsen van één letter worden bijvoorbeeld al gebruikt door <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a>. Met de letter H kan een screenreadergebruiker met NVDA de tekst van het volgende kopje laten voorlezen.</p>
-              <p>Wil je toch een sneltoets maken, zorg er dan voor dat de gebruiker zelf</p>
+              <p>Bied geen sneltoetsen aan die bestaan uit één teken.</p>
+              <p>Voor een sneltoets van één teken houden we rekening met hoofdletters, kleine letters, leestekens, cijfers en symbolen. Dit soort sneltoetsen zijn makkelijk onbedoeld te activeren. Denk hierbij bijvoorbeeld aan bezoekers met een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a> en spraakbediening. Bezoekers kunnen hun eigen sneltoetsen hebben die conflicteren met de sneltoetsen op de website. Invoer van spraakbediening bereikt een website vaak als losse tekens die ook deze sneltoetsen kunnen activeren.</p>
+              <p>Mochten dit soort sneltoetsen toch aanwezig zijn, dan zijn ze tenminste:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>de sneltoets kan uitzetten;</li>
-               <li>de sneltoets kan aanpassen en toewijzen aan een of meer andere tekens.</li>
+               <li>Uit te schakelen of,</li>
+               <li>Toe te wijzen aan andere tekens of toetsen of,</li>
+               <li>Alleen actief bij focus op een relevant component.</li>
               </ul>
-              <p>Een uitzondering geldt als een de sneltoets alleen werkt als een element focus heeft, zoals een button om het menu te openen alhoewel dit niet wordt aanbevolen.</p>
-              <p><strong>Let op</strong>: Deze uitzondering geldt niet voor de bediening van video&#x27;s zoals voor YouTube. Deze sneltoetsen moeten zijn uitgeschakeld.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <ol class="utrecht-ordered-list utrecht-ordered-list--html-content">
+               <li>Zorg ervoor dat niks focus heeft. Dit kan vaak door op de achtergrond te klikken.</li>
+               <li>
+                Gebruik de <a href="http://3needs.org/en/testing/code/kb-shortcuts.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Character key shortcut bookmarklet</span></a> en controleer of er niks geactiveerd wordt.
+               </li>
+              </ol>
+              <p><strong>Let op</strong>: Als er tijdens de test iets de focus krijgt, dan moet de focus eerst verwijderd worden voordat de test verder kan gaan.</p>
+              <h2 id="tips" class="utrecht-heading-2">Tips</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Dit criterium gaat meestal fout bij het gebruik van externe videospelers. Let bij het toevoegen van externe video op of dit goed gaat. Bij YouTube kan de parameter <code class="utrecht-code">disablekb=1</code> toegevoegd worden aan de URL van de video. Voor Vimeo is dit <code class="utrecht-code">keyboard=false</code>.</li>
+               <li>Een teken dat op het ene toetsenbord een losse knop is, kan op een ander toetsenbord een combinatie van knoppen zijn. Uiteindelijk gaat om het aantal tekens en niet het aantal knoppen.</li>
+               <li>Ook sneltoetsen die in een reeks gebruikt moeten worden kunnen dit succescriterium doen falen.</li>
+              </ul>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
+              <h2 id="bronnen-en-tools" class="utrecht-heading-2">Bronnen en tools</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                <a href="http://3needs.org/en/testing/code/kb-shortcuts.html" class="utrecht-link utrecht-link--html-a"><span lang="en">Character key shortcut bookmarklet</span></a>
+               </li>
+              </ul>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>
@@ -355,9 +387,12 @@
           <div class="col col--3">
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#in-het-kort" class="table-of-contents__link toc-highlight">In het kort</a></li>
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#tips" class="table-of-contents__link toc-highlight">Tips</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
+             <li><a href="#bronnen-en-tools" class="table-of-contents__link toc-highlight">Bronnen en tools</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
             </ul>
