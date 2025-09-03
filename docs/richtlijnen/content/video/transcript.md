@@ -64,7 +64,7 @@ Het is belangrijk om structuur aan te brengen in tekstbestanden om ze toegankeli
 Maak daarom ook in een transcript gebruik van [kopjes, paragrafen, leestekens en interpunctie](/richtlijnen/content/tekstopmaak). Voeg bij een lange video eventueel tijdmarkeringen toe.
 
 - Maak onderscheid tussen beschrijvingen en gesproken tekst. Plaats beschrijvingen tussen ronde haakjes te plaatsen of benoem waar de beschrijving over gaat. Bijvoorbeeld: (de kat krabt de krullen van de trap) of In beeld: De kat krabt de krullen van de trap.
-- Als de spreker een woord benadrukt, gebruik dan [tekstopmaak om tekst te benadrukken](<(/richtlijnen/content/tekstopmaak/tekst-benadrukken)>). Gebruik _schuingedrukte tekst_ voor nadruk in uitspraak en **dikgedrukte tekst** om te benadrukken dat een woord heel belangrijk is.
+- Als de spreker een woord benadrukt, gebruik dan [tekstopmaak om tekst te benadrukken](/richtlijnen/content/tekstopmaak/tekst-benadrukken). Gebruik _schuingedrukte tekst_ voor nadruk in uitspraak en **dikgedrukte tekst** om te benadrukken dat een woord heel belangrijk is.
 - Plaats de naam van de spreker met daarna een dubbele punt vóór de uitgeschreven gesproken tekst. Bijvoorbeeld: Jeffrey: "Goedemiddag allemaal, welkom bij de Heartbeat van 15 april."
 
 <Guideline appearance="do" title="Breng structuur aan in je transcript en maak onderscheid tussen gesproken dialoog en beschrijvingen">

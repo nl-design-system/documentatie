@@ -142,7 +142,7 @@ Geef gebruikers een gerichte taak. Bijvoorbeeld: "Er zit een stoeptegel los bij 
 
 Nu gaat de visueel ontwerper aan de slag en werkt het interactie-ontwerp uit tot een mooie visuele weergave van de website. Dit is de fase waar huisstijlelementen zoals kleur, typografie of fotografie worden bepaald. De look-and-feel, de uitstraling. Toegankelijke websites hoeven zeker niet lelijk en saai te zijn.
 
-Bij onze richtlijnen voor stijl zijn de onderwerpen [typografie](l/richtlijnen/stijl/typografie/), [kleuren](/richtlijnen/stijl/kleuren/), [ruimte](/richtlijnen/stijl/ruimte/) en [iconen](/richtlijnen/stijl/iconen/) uitgewerkt.
+Bij onze richtlijnen voor stijl zijn de onderwerpen [typografie](/richtlijnen/stijl/typografie/), [kleuren](/richtlijnen/stijl/kleuren/), [ruimte](/richtlijnen/stijl/ruimte/) en [iconen](/richtlijnen/stijl/iconen/) uitgewerkt.
 
 Belangrijk om in het visueel ontwerp aan WCAG te voldoen is onder andere:
 
