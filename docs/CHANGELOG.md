@@ -133,7 +133,7 @@
 - 697f7cb: Add description of page number navigation component.
 - adee307: Tekst [WCAG-pagina 1.4.10](/wcag/1.4.10) volledig afgemaakt.
 - cdb5926: Tekst [WCAG-pagina 2.5.8](/wcag/2.5.8) volledig afgemaakt.
-- cbe01ac: Tekst WCAG-pagina 3.2.0 volledig afgemaakt.
+- cbe01ac: Tekst [WCAG-pagina 3.2.6](/wcag/3.2.6) volledig afgemaakt.
 - ecbae75: Tekst [WCAG-pagina 3.3.7](/wcag/3.3.7) volledig afgemaakt.
 - 5f56822: Tekst [WCAG-pagina 3.3.8](/wcag/3.3.8) volledig afgemaakt.
 - 7a74ebd: Woordenlijst gestart

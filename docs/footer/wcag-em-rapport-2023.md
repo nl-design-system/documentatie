@@ -307,7 +307,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           <p>Bevindingen:</p>
           <p>
             Pagina
-            <a href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/" rel="nofollower">https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a>.
+            <a href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a>.
           </p>
           <p>
             Tabellen op Tijdschema · NL Design System hakken af bij een kleiner
@@ -315,7 +315,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           </p>
           <p>
             Pagina
-            <a href="https://nldesignsystem.nl/events/design-systems-week-2022">https://nldesignsystem.nl/events/design-systems-week-2022</a>
+            <a href="https://nldesignsystem.nl/events/design-systems-week-2022" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2022</a>
             Op Design Systems Week 2022 valt het submenu links over de tekst bij
             een kleiner beeldscherm.
           </p>
@@ -742,59 +742,59 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     </li>
     <li>
       <span>Richtlijnen</span> -
-      <span>https://nldesignsystem.nl/richtlijnen</span>
+      <span><a href="https://nldesignsystem.nl/richtlijnen" rel="nofollow">https://nldesignsystem.nl/richtlijnen</a></span>
     </li>
     <li>
       <span>Formulierenoverzicht</span> -
-      <span>https://nldesignsystem.nl/richtlijnen/formulieren/overzicht</span>
+      <span><a href="https://nldesignsystem.nl/richtlijnen/formulieren/overzicht" rel="nofollow">https://nldesignsystem.nl/richtlijnen/formulieren/overzicht</a></span>
     </li>
     <li>
       <span>Toegankelijkheid</span> -
       <span
-        >https://nldesignsystem.nl/richtlijnen/formulieren</span>
+        ><a href="https://nldesignsystem.nl/richtlijnen/formulieren" rel="nofollow">https://nldesignsystem.nl/richtlijnen/formulieren</a></span>
     </li>
     <li>
       <span>Componenten</span> -
-      <span>https://nldesignsystem.nl/componenten/)</span>
+      <span><a href="https://nldesignsystem.nl/componenten/" rel="nofollow">https://nldesignsystem.nl/componenten/</a>)</span>
     </li>
     <li>
-      <span>Onderzoek</span> - <span>https://nldesignsystem.nl/onderzoek/</span>
+      <span>Onderzoek</span> - <span><a href="https://nldesignsystem.nl/onderzoek/" rel="nofollow">https://nldesignsystem.nl/onderzoek/</a></span>
     </li>
     <li>
-      <span>Project</span> - <span>https://nldesignsystem.nl/project</span>
+      <span>Project</span> - <span><a href="https://nldesignsystem.nl/project" rel="nofollow">https://nldesignsystem.nl/project</a></span>
     </li>
     <li>
       <span>Kernteam</span> -
-      <span>https://nldesignsystem.nl/project/kernteam</span>
+      <span><a href="https://nldesignsystem.nl/project/kernteam" rel="nofollow">https://nldesignsystem.nl/project/kernteam</a></span>
     </li>
     <li>
-      <span>Blog</span> - <span>https://nldesignsystem.nl/blog</span>
+      <span>Blog</span> - <span><a href="https://nldesignsystem.nl/blog" rel="nofollow">https://nldesignsystem.nl/blog</a></span>
     </li>
     <li>
       <span>Blogpost</span> -
-      <span>https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan</span>
+      <span><a href="https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan" rel="nofollow">https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan</a></span>
     </li>
     <li>
       <span>Events met Engelse content</span> -
-      <span>https://nldesignsystem.nl/events/design-systems-week-2023/en/overview</span>
+      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/en/overview" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2023/en/overview</a></span>
     </li>
     <li>
       <span>Timetable met Engelse content</span> -
-      <span>https://nldesignsystem.nl/events/design-systems-week-2023/en/timetable</span>
+      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/en/timetable" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2023/en/timetable</a></span>
     </li>
     <li>
       <span>Met Video</span> -
-      <span>https://nldesignsystem.nl/events/design-systems-week-2023/programma/</span>
+      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/programma/" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2023/programma/</a></span>
     </li>
     <li>
       <span>Event Heartbeat</span> -
-      <span>(https://nldesignsystem.nl/events/heartbeat</span>
+      <span><a href="https://nldesignsystem.nl/events/heartbeat" rel="nofollow">https://nldesignsystem.nl/events/heartbeat</a></span>
     </li>
     <li>
       <span>Tijdschema (met tabel)</span> -
       <span><a
               href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/"
-              rel="nofollower"
+              rel="nofollow"
               >https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a></span>
     </li>
     <li>
@@ -802,11 +802,11 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
       <span><a href="https://nldesignsystem.nl/asdasdasd" rel="nofollow">https://nldesignsystem.nl/asdasdasd</a></span>
     </li>
     <li>
-      <span>Links</span> - <span>https://nldesignsystem.nl/project/links</span>
+      <span>Links</span> - <span><a href="https://nldesignsystem.nl/project/links" rel="nofollow">https://nldesignsystem.nl/project/links</a></span>
     </li>
     <li>
       <span>Toegankelijkheidsverklaring</span> -
-      <span>https://nldesignsystem.nl/toegankelijkheidsverklaring</span>
+      <span><a href="https://nldesignsystem.nl/toegankelijkheidsverklaring" rel="nofollow">https://nldesignsystem.nl/toegankelijkheidsverklaring</a></span>
     </li>
   </ol>
 
