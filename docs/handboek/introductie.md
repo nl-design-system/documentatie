@@ -54,4 +54,4 @@ Om elkaar niet in de weg te zitten, werken we met het “[estafettemodel](/handb
 
 Andere organisaties die dit component vervolgens ook goed kunnen gebruiken, kunnen dan helpen deze completer te krijgen. Uiteindelijk voldoet de component én is het op meerdere plekken getest en verbeterd.
 
-Met een aantal actieve organisaties werken we toe naar deze breed inzetbare componenten bibliotheek. De eisen voor componenten per fase vind je in de [Definition of Done](/componenten/definition-of-done). De organisaties en componenten die zij maken kun je vinden onder de [NL Design System organisatie op GitHub](http://github.com/nl-design-system).
+Met een aantal actieve organisaties werken we toe naar deze breed inzetbare componenten bibliotheek. De eisen voor componenten per fase vind je in de [Definition of Done](/handboek/estafettemodel/componenten/definition-of-done). De organisaties en componenten die zij maken kun je vinden onder de [NL Design System organisatie op GitHub](http://github.com/nl-design-system).
