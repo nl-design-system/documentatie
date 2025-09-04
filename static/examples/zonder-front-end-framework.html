@@ -5,13 +5,9 @@
     <title>Graffiti laten verwijderen van uw pand · Gemeente Voorbeeld</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- TODO: Gebruik je eigen hosting voor de CSS, gebruik "https://unpkg.com/" hooguit tijdens development, nooit in productie. -->
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/root-css@1/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/body-css@1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@rijkshuisstijl-community/components-css@5/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-layout-css@1/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-header-css@1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-footer-css@2/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/icon-css@2/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/skip-link-css@1/dist/skip-link.css" />
     <!-- https://nldesignsystem.nl/skip-link/ -->
@@ -24,13 +20,13 @@
     <!-- Gebruik de CSS van met CSS variables om de componenten in te stellen met de huisstijl. -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5/dist/index.css"
+      href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0/dist/theme.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/design-tokens@2/dist/index.css" />
     <style></style>
   </head>
 
-  <body class="utrecht-body" id="top">
+  <body class="voorbeeld-theme" id="top">
     <a href="#main" class="nl-skip-link nl-skip-link--visible-on-focus">Direct naar de hoofdinhoud</a>
     <div class="utrecht-page-layout">
       <header>
@@ -68,7 +64,7 @@
                   class="utrecht-textbox utrecht-textbox--html-input"
                   dir="auto"
                 />
-                <a class="utrecht-button nl-button--secondary-action" href="#">
+                <a class="utrecht-button utrecht-button--primary-action" href="#">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -148,14 +144,14 @@
               </li>
             </ul>
 
-            <a class="utrecht-button" href="#">Toestemming geven</a>
+            <a class="utrecht-button utrecht-button--primary-action" href="#">Toestemming geven</a>
 
             <h2>Dan vervuiling melden</h2>
             <p>
               Als u toestemming heeft gegeven, kunt u de vervuiling op uw pand melden met het meldingsformulier. De
               vervuiling wordt dan gratis verwijderd. Meld vervuiling met het meldingsformulier.
             </p>
-            <a class="utrecht-button nl-button--primary-action" href="#">Melding doen</a>
+            <a class="utrecht-button utrecht-button utrecht-button--primary-action" href="#">Melding doen</a>
 
             <h2>Racistische graffiti melden</h2>
             <p>
