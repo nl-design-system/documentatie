@@ -92,8 +92,8 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           <p>Bevindingen:</p>
           <p>
             Pagina:
-            <a href="https://nldesignsystem.nl/project/kernteam"
-              >https://nldesignsystem.nl/project/kernteam</a>
+            <a href="https://nldesignsystem.nl/project/kernteam" rel="nofollow"
+              >nldesignsystem.nl/project/kernteam</a>
           </p>
           <p>
             De SVG’s met de afbeeldingen van de teamleden hebben geen
@@ -124,8 +124,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           <p>Bevindingen:</p>
           <p>
             Pagina:
-            <a href="https://nldesignsystem.nl/events/heartbeat"
-              >https://nldesignsystem.nl/events/heartbeat</a>
+            <a href="https://nldesignsystem.nl/events/heartbeat" rel="nofollow">nldesignsystem.nl/events/heartbeat</a>
           </p>
           <p>Vimeo video's hebben geen ondertiteling.</p>
         </td>
@@ -143,8 +142,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           <p>Bevindingen:</p>
           <p>
             Pagina:
-            <a href="https://nldesignsystem.nl/events/heartbeat"
-              >https://nldesignsystem.nl/events/heartbeat</a>
+            <a href="https://nldesignsystem.nl/events/heartbeat" rel="nofollow">nldesignsystem.nl/events/heartbeat</a>
           </p>
           <p>Vimeo video's hebben geen ondertiteling.</p>
         </td>
@@ -307,7 +305,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           <p>Bevindingen:</p>
           <p>
             Pagina
-            <a href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a>.
+            <a href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/" rel="nofollow">nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a>.
           </p>
           <p>
             Tabellen op Tijdschema · NL Design System hakken af bij een kleiner
@@ -315,7 +313,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           </p>
           <p>
             Pagina
-            <a href="https://nldesignsystem.nl/events/design-systems-week-2022" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2022</a>
+            <a href="https://nldesignsystem.nl/events/design-systems-week-2022" rel="nofollow">nldesignsystem.nl/events/design-systems-week-2022</a>
             Op Design Systems Week 2022 valt het submenu links over de tekst bij
             een kleiner beeldscherm.
           </p>
@@ -387,8 +385,8 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           <p>Bevindingen:</p>
           <p>
             Pagina:
-            <a href="https://nldesignsystem.nl/events/heartbeat"
-              >https://nldesignsystem.nl/events/heartbeat</a>
+            <a href="https://nldesignsystem.nl/events/heartbeat" rel="nofollow"
+              >nldesignsystem.nl/events/heartbeat</a>
           </p>
           <p>
             Keyboard shortcuts zijn niet disabled voor de Vimeo player (Disable
@@ -738,75 +736,75 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     <li><span>Voorpagina</span> - <span>https://nldesignsystem.nl/</span></li>
     <li>
       <span>Documentatie</span> -
-      <span><a href="https://nldesignsystem.nl/documentatie" rel="nofollow">https://nldesignsystem.nl/documentatie</a></span>
+      <span><a href="https://nldesignsystem.nl/documentatie" rel="nofollow">nldesignsystem.nl/documentatie</a></span>
     </li>
     <li>
       <span>Richtlijnen</span> -
-      <span><a href="https://nldesignsystem.nl/richtlijnen" rel="nofollow">https://nldesignsystem.nl/richtlijnen</a></span>
+      <span><a href="https://nldesignsystem.nl/richtlijnen" rel="nofollow">nldesignsystem.nl/richtlijnen</a></span>
     </li>
     <li>
       <span>Formulierenoverzicht</span> -
-      <span><a href="https://nldesignsystem.nl/richtlijnen/formulieren/overzicht" rel="nofollow">https://nldesignsystem.nl/richtlijnen/formulieren/overzicht</a></span>
+      <span><a href="https://nldesignsystem.nl/richtlijnen/formulieren/overzicht" rel="nofollow">nldesignsystem.nl/richtlijnen/formulieren/overzicht</a></span>
     </li>
     <li>
       <span>Toegankelijkheid</span> -
       <span
-        ><a href="https://nldesignsystem.nl/richtlijnen/formulieren" rel="nofollow">https://nldesignsystem.nl/richtlijnen/formulieren</a></span>
+        ><a href="https://nldesignsystem.nl/richtlijnen/formulieren" rel="nofollow">nldesignsystem.nl/richtlijnen/formulieren</a></span>
     </li>
     <li>
       <span>Componenten</span> -
-      <span><a href="https://nldesignsystem.nl/componenten/" rel="nofollow">https://nldesignsystem.nl/componenten/</a>)</span>
+      <span><a href="https://nldesignsystem.nl/componenten/" rel="nofollow">nldesignsystem.nl/componenten/</a>)</span>
     </li>
     <li>
-      <span>Onderzoek</span> - <span><a href="https://nldesignsystem.nl/onderzoek/" rel="nofollow">https://nldesignsystem.nl/onderzoek/</a></span>
+      <span>Onderzoek</span> - <span><a href="https://nldesignsystem.nl/onderzoek/" rel="nofollow">nldesignsystem.nl/onderzoek/</a></span>
     </li>
     <li>
-      <span>Project</span> - <span><a href="https://nldesignsystem.nl/project" rel="nofollow">https://nldesignsystem.nl/project</a></span>
+      <span>Project</span> - <span><a href="https://nldesignsystem.nl/project" rel="nofollow">nldesignsystem.nl/project</a></span>
     </li>
     <li>
       <span>Kernteam</span> -
-      <span><a href="https://nldesignsystem.nl/project/kernteam" rel="nofollow">https://nldesignsystem.nl/project/kernteam</a></span>
+      <span><a href="https://nldesignsystem.nl/project/kernteam" rel="nofollow">nldesignsystem.nl/project/kernteam</a></span>
     </li>
     <li>
-      <span>Blog</span> - <span><a href="https://nldesignsystem.nl/blog" rel="nofollow">https://nldesignsystem.nl/blog</a></span>
+      <span>Blog</span> - <span><a href="https://nldesignsystem.nl/blog" rel="nofollow">nldesignsystem.nl/blog</a></span>
     </li>
     <li>
       <span>Blogpost</span> -
-      <span><a href="https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan" rel="nofollow">https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan</a></span>
+      <span><a href="https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan" rel="nofollow">nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan</a></span>
     </li>
     <li>
       <span>Events met Engelse content</span> -
-      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/en/overview" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2023/en/overview</a></span>
+      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/en/overview" rel="nofollow">nldesignsystem.nl/events/design-systems-week-2023/en/overview</a></span>
     </li>
     <li>
       <span>Timetable met Engelse content</span> -
-      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/en/timetable" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2023/en/timetable</a></span>
+      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/en/timetable" rel="nofollow">nldesignsystem.nl/events/design-systems-week-2023/en/timetable</a></span>
     </li>
     <li>
       <span>Met Video</span> -
-      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/programma/" rel="nofollow">https://nldesignsystem.nl/events/design-systems-week-2023/programma/</a></span>
+      <span><a href="https://nldesignsystem.nl/events/design-systems-week-2023/programma/" rel="nofollow">nldesignsystem.nl/events/design-systems-week-2023/programma/</a></span>
     </li>
     <li>
       <span>Event Heartbeat</span> -
-      <span><a href="https://nldesignsystem.nl/events/heartbeat" rel="nofollow">https://nldesignsystem.nl/events/heartbeat</a></span>
+      <span><a href="https://nldesignsystem.nl/events/heartbeat" rel="nofollow">nldesignsystem.nl/events/heartbeat</a></span>
     </li>
     <li>
       <span>Tijdschema (met tabel)</span> -
       <span><a
               href="https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/"
               rel="nofollow"
-              >https://nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a></span>
+              >nldesignsystem.nl/events/design-systems-week-2023/tijdschema/</a></span>
     </li>
     <li>
       <span>404 pagina</span> -
-      <span><a href="https://nldesignsystem.nl/asdasdasd" rel="nofollow">https://nldesignsystem.nl/asdasdasd</a></span>
+      <span><a href="https://nldesignsystem.nl/asdasdasd" rel="nofollow">nldesignsystem.nl/asdasdasd</a></span>
     </li>
     <li>
-      <span>Links</span> - <span><a href="https://nldesignsystem.nl/project/links" rel="nofollow">https://nldesignsystem.nl/project/links</a></span>
+      <span>Links</span> - <span><a href="https://nldesignsystem.nl/project/links" rel="nofollow">nldesignsystem.nl/project/links</a></span>
     </li>
     <li>
       <span>Toegankelijkheidsverklaring</span> -
-      <span><a href="https://nldesignsystem.nl/toegankelijkheidsverklaring" rel="nofollow">https://nldesignsystem.nl/toegankelijkheidsverklaring</a></span>
+      <span><a href="https://nldesignsystem.nl/toegankelijkheidsverklaring" rel="nofollow">nldesignsystem.nl/toegankelijkheidsverklaring</a></span>
     </li>
   </ol>
 
