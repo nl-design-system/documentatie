@@ -5,10 +5,12 @@
     <title>Graffiti laten verwijderen van uw pand · Gemeente Voorbeeld</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- TODO: Gebruik je eigen hosting voor de CSS, gebruik "https://unpkg.com/" hooguit tijdens development, nooit in productie. -->
-    <link rel="stylesheet" href="https://unpkg.com/@rijkshuisstijl-community/components-css@5/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-layout-css@1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/icon-css@2/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@rijkshuisstijl-community/components-css@5/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/index.css" />
+
     <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/skip-link-css@1/dist/skip-link.css" />
     <!-- https://nldesignsystem.nl/skip-link/ -->
     <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/heading-css@1/dist/heading.css" />
@@ -32,8 +34,7 @@
       <header>
         <div class="voorbeeld-page-header__content">
           <div class="nav-flex">
-            <img src="/svg/voorbeeld-thema-logo.svg" alt="" />
-            <span class="voorbeeld-logo__text">Voorbeeld</span>
+            <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
 
             <div>
               <a class="utrecht-link" href="#">Contact</a>
@@ -54,7 +55,7 @@
                   class="utrecht-textbox utrecht-textbox--html-input"
                   dir="auto"
                 />
-                <a class="utrecht-button utrecht-button--primary-action" href="#">
+                <a class="utrecht-button-link utrecht-button--primary-action" href="#">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -134,14 +135,14 @@
               </li>
             </ul>
 
-            <a class="utrecht-button utrecht-button--primary-action" href="#">Toestemming geven</a>
+            <a class="utrecht-button-link utrecht-button--primary-action" href="#">Toestemming geven</a>
 
             <h2>Dan vervuiling melden</h2>
             <p>
               Als u toestemming heeft gegeven, kunt u de vervuiling op uw pand melden met het meldingsformulier. De
               vervuiling wordt dan gratis verwijderd. Meld vervuiling met het meldingsformulier.
             </p>
-            <a class="utrecht-button utrecht-button utrecht-button--primary-action" href="#">Melding doen</a>
+            <a class="utrecht-button-link utrecht-button--primary-action" href="#">Melding doen</a>
 
             <h2>Racistische graffiti melden</h2>
             <p>
@@ -181,22 +182,29 @@
         </div>
       </div>
       <!-- Gebruik het HTML element `footer` om deze belangrijke "landmark region" op te maken, voor toegankelijkheid. -->
-      <footer class="utrecht-page-footer">
-        <div class="utrecht-page-footer__content">
-          <p>Voorbeeld</p>
-          <h3>Contact</h3>
-          <p>Bel 453453 (maandag tot en met vrijdag van 9:00 tot 17:00) of stuur een email naar vragen@voorbeeld.nl</p>
-          <ul>
-            <li>Over gemeente Voorbeeld</li>
-            <li>Nieuwsbrief</li>
-            <li>Social media</li>
-            <li>Werken bij de gemeente Voorbeeld</li>
+      <footer class="ams-page-footer">
+        <div class="ams-page-footer__spotlight">
+          <div class="ams-grid ams-grid--padding-vertical--x-large">
+            <div class="ams-grid__cell ams-grid__cell--span-4">
+              <img src="/svg/voorbeeld-thema-logo-white.svg" alt="Voorbeeld thema logo" />
+              <h3>Contact</h3>
+              <p>
+                Bel 453453 (maandag tot en met vrijdag van 9:00 tot 17:00) of stuur een email naar vragen@voorbeeld.nl
+              </p>
+            </div>
+          </div>
+
+          <ul class="ams-link-list">
+            <li><a class="ams-link-list__link" href="#">Over gemeente Voorbeeld</a></li>
+            <li><a href="#">Nieuwsbrief</a></li>
+            <li><a href="#">Social media</a></li>
+            <li><a href="#">Werken bij de gemeente Voorbeeld</a></li>
           </ul>
           <ul>
-            <li>Bescherming persoonsgegevens</li>
-            <li>Gebruikersvoorwaarden</li>
-            <li>Proclaimer</li>
-            <li>Toegankelijkheidsverklaring</li>
+            <li><a href="#">Bescherming persoonsgegevens</a></li>
+            <li><a href="#">Gebruikersvoorwaarden</a></li>
+            <li><a href="#">Proclaimer</a></li>
+            <li><a href="#">Toegankelijkheidsverklaring</a></li>
           </ul>
         </div>
       </footer>
