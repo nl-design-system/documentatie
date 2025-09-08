@@ -21,6 +21,8 @@ const isHttpProtocol = (url: URL) => url.protocol === 'https:' || url.protocol =
 
 const isExternalLink = (url: URL, siteURL: URL) => url.hostname !== siteURL.hostname;
 
+const isFile = (url: URL) => url.pathname.split('/').reverse()?.[0]?.includes('.');
+
 /**
  * Append a trailing slash to the pathname portion of the href.
  * This is done by first building an URL object. With the URL object, the
@@ -31,7 +33,7 @@ export function addTrailingSlash(href: string, options: { siteURL: URL; stripOri
   const url = new URL(href, options.siteURL);
 
   // Leave external links or links to other protocols untouched
-  if (isHttpProtocol(url) === false || isExternalLink(url, options.siteURL)) return href;
+  if (isHttpProtocol(url) === false || isExternalLink(url, options.siteURL) || isFile(url)) return href;
 
   // Append the slash
   if (!url.pathname.endsWith('/')) {
