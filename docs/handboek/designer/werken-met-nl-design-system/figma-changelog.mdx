@@ -30,6 +30,43 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 2.10.0
+
+8 september 2025
+
+Figma-property voor tekst op zoveel mogelijk plekken gelijkgetrokken.
+
+In Figma kun je componenten voor elkaar inwisselen via de 'Swap Instance' functionaliteit. Als de propertynaam voor tekst niet overeenkomt tussen twee componenten, springt deze terug naar de standaardtekst die meekomt vanuit de bibliotheek. Hierdoor kun je geschreven teksten in prototypes verliezen.
+
+Om dit te voorkomen willen we de naam van de property voor tekst zoveel mogelijk gelijk trekken. Hiervoor gebruiken we de term 'Text'. Zo blijven teksten netjes op hun plek bij het inwisselen van componenten. Daarnaast is er dan een eenduidige manier van naamgeving voor dit propertytype, wat eerder al is vastgelegd in de [Figma hygiene](/handboek/designer/figma-hygiene#341-volgorde-van-properties).
+
+- Open de NL Design System - Bibliotheek.
+- Pas de property naam aan naar 'Text' bij de volgende componenten:
+  - [Accordion](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1261-5040&t=18Ezmc7A328eD1BQ-4): 'Label' wordt 'Text'.
+  - [Blockquote](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1349-6557&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Button](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1140&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Code (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-2046&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Code Block (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-4532&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Data Badge (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=16178-12017&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Form Field Description](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=877-955&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Form Field Error Message](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=877-958&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Heading (Community component van Amsterdam)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=16162-20030&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Heading (alle zes Community componenten van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=838-652&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Link (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1060&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Login Link](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=15865-9915&t=18Ezmc7A328eD1BQ-4): 'Label' wordt 'Text'.
+  - [Mark (Candidate component)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=15527-33132&t=18Ezmc7A328eD1BQ-4): 'Mark' wordt 'Text'.
+  - [Mark (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13910-45039&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Number Badge (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4294&t=18Ezmc7A328eD1BQ-4): 'Value' wordt 'Text'.
+  - [Ordered List](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=825-913&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Paragraph (Community component van Utrecht. Inclusief 'Lead' en 'Small print')](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=839-688&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Pre-heading](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=17537-2847&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Skip Link (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2218-10179&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Text Input](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=926-1497&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Unordered List](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=828-935&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+- Publiceer de Bibliotheek.
+- Accepteer de aanpassingen in de ToDo Bibliotheek.
+- Publiceer de ToDo Bibliotheek.
+
 ## 2.9.0
 
 4 september 2025
