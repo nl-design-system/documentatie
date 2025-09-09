@@ -35,7 +35,12 @@ TODO: link naar boilerplate pagina zodra deze is aangemaakt.
 
 Om het effect van de componenten en hun styling goed te kunnen zien moet je de pagina vullen met content zoals tekst, plaatjes en kopteksten.
 
+Ook is het hier van belang de juiste HTML elementen te gebruiken, dus niet bijvoorbeeld een `div` als knop of navigatie-element.
+Om tijd te besparen is hier de content beschikbaar gemaakt:
+
 ### Stap 3: Zorg ervoor dat de componenten die worden ingeladen en de juiste styling hebben
+
+Dit onderdeel kan stap voor stap uitgevoerd worden.
 
 Aangezien niet elk component gestyled is volgens het ontwerp moet je wat aanpassingen maken in de css om deze wel aan te laten sluiten. Als eerste gaan we de footer een andere kleur geven:
 
@@ -50,4 +55,17 @@ Aangezien niet elk component gestyled is volgens het ontwerp moet je wat aanpass
 </head>
 ```
 
+Voor de footer gebruik ik de footer van Amsterdam.
+Om daarvan alle styling te gebruiken zijn er twee dingen nodig, zoals beschreven in de [README](https://github.com/Amsterdam/design-system/blob/develop/packages/css/README.md), namelijk design-system-css en design-system-tokens.
+
+Deze worden als volgt geïmporteerd:
+
+````
+  <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-tokens@1.0.1/dist/index.css" />
+```
+
+Let inmiddels goed op voor de volgorde waarop je de dependencies inlaad. De CSS wordt overschreven door het eerst-volgende CSS bestand. Het kan dus fouten voorkomen wanneer je de @nl-design-system-* stylesheets als laatste importeert.
+
 ## Bijzonderheden
+````
