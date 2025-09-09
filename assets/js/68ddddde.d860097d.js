@@ -1,7 +1,21 @@
-/*! For license information please see 68ddddde.1e446516.js.LICENSE.txt */
+/*! For license information please see 68ddddde.d860097d.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [5643],
  {
+  364: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => o });
+   var r = t(52676),
+    i = t(40139);
+   function s(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'De component en de afzonderlijke interactieve elementen in de component hebben de juiste rol en de juiste attributen voor het aangeven van de staat en de waarde.' });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
   94398: (e, n, t) => {
    'use strict';
    t.d(n, { ZP: () => o });
@@ -156,9 +170,9 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  73007: (e, n, t) => {
+  85375: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => pe, component: () => ve, contentTitle: () => he, default: () => we, description: () => je, frontMatter: () => de, issueNumber: () => ke, metadata: () => ue, title: () => ge, toc: () => me });
+   t.r(n), t.d(n, { assets: () => ue, component: () => ke, contentTitle: () => de, default: () => fe, description: () => ge, frontMatter: () => ce, issueNumber: () => je, metadata: () => he, title: () => me, toc: () => pe });
    var r,
     i,
     s,
@@ -290,40 +304,33 @@
     return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(V, { ...e }) }) : V(e);
    }
    t(71811);
-   function I(e) {
-    const n = { p: 'p', ...(0, m.a)(), ...e.components };
-    return (0, p.jsx)(n.p, { children: 'De component en de afzonderlijke interactieve elementen in de component hebben de juiste rol en de juiste attributen voor het aangeven van de staat en de waarde.' });
-   }
-   function X(e = {}) {
-    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
-    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(I, { ...e }) }) : I(e);
-   }
-   var J = t(18833),
-    K = t(1459),
-    q = t(4607),
-    Y = t(21511),
-    Q = t(97183),
-    ee = t(16771),
-    ne = t(97520),
-    te = t(76233),
-    re = t(8657),
-    ie = t(49556),
-    se = t(57716);
-   function oe(e) {
+   var I = t(364),
+    X = t(18833),
+    J = t(1459),
+    K = t(4607),
+    q = t(21511),
+    Y = t(97183),
+    Q = t(16771),
+    ee = t(97520),
+    ne = t(76233),
+    te = t(8657),
+    re = t(49556),
+    ie = t(57716);
+   function se(e) {
     const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', p: 'p', pre: 'pre', ...(0, m.a)(), ...e.components };
     return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.h1, { id: 'gebruik-skip-link', children: 'Gebruik Skip Link' }), '\n', (0, p.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, p.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, p.jsxs)(n.p, { children: [(0, p.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-css', children: [(0, p.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fskip-link-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/skip-link-css'] }), '\nversie 1.'] }), '\n', (0, p.jsxs)(n.p, { children: ['Gebruik de ', (0, p.jsx)(n.code, { children: 'nl-skip-link' }), ' class name op een ', (0, p.jsx)(n.code, { children: 'a' }), ' element:'] }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-html', children: '<a href="#inhoud" class="nl-skip-link nl-skip-link--visible-on-focus">Naar de inhoud</a>\n' }) }), '\n', (0, p.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/skip-link-css\n' }) }), '\n', (0, p.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/skip-link-css@1/dist/skip-link.css"\n/>\n' }) }), '\n', (0, p.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, p.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/skip-link-css/dist/skip-link.css" />\n' }) }), '\n', (0, p.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/skip-link-css/skip-link.css";\n' }) }), '\n', (0, p.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, p.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, p.jsxs)(n.p, { children: [(0, p.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-react', children: [(0, p.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fskip-link-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/skip-link-react'] }), '\nversie 1.'] }), '\n', (0, p.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/skip-link-react\n' }) }), '\n', (0, p.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-jsx', children: 'import { SkipLink } from "@nl-design-system-candidate/skip-link-react";\n\nexport const MyComponent = () => <SkipLink href="#inhoud">Direct naar de hoofdinhoud</SkipLink>;\n' }) }), '\n', (0, p.jsx)(n.h2, { id: 'figma', children: 'Figma' }), '\n', (0, p.jsxs)(n.p, { children: ['De Figma component staat in ', (0, p.jsx)(n.a, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2217-10122', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Skip Link' }), '.'] })] });
    }
-   function ae(e = {}) {
+   function oe(e = {}) {
     const { wrapper: n } = { ...(0, m.a)(), ...e.components };
-    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(oe, { ...e }) }) : oe(e);
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(se, { ...e }) }) : se(e);
    }
-   const le = JSON.parse('{"nl":{"skip-link":{"background-color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"min-block-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"min-inline-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"padding-block":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"padding-inline":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"text-decoration-thickness":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"other"},"text-underline-offset":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"other"}}}}');
-   var ce = t(6503);
-   const de = { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link', keywords: ['anchor link', 'accessibility link', 'blokken omzijlen', 'direct naar link', 'direct naar x', 'content', 'go to content', 'hidden link', 'inhoud', 'inhoud overslaan', 'jump link', 'jump to', 'jump to main content', 'keyboard', 'link', 'naar content', 'naar de inhoud', 'navigeer snel naar', 'overslaan', 'quick link', 'screen reader link', 'section', 'skip link', 'skip links', 'skiplinks', 'skipnav', 'skip to content', 'skip to main', 'skip navigation', 'skip to section', 'skip nav', 'snel naar inhoud', 'spring naar inhoud', 'springlink', 'springplank link'] },
-    he = void 0,
-    ue = { id: 'componenten/skip-link/index', title: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', source: '@site/docs/componenten/skip-link/index.mdx', sourceDirName: 'componenten/skip-link', slug: '/skip-link', permalink: '/skip-link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/skip-link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link', keywords: ['anchor link', 'accessibility link', 'blokken omzijlen', 'direct naar link', 'direct naar x', 'content', 'go to content', 'hidden link', 'inhoud', 'inhoud overslaan', 'jump link', 'jump to', 'jump to main content', 'keyboard', 'link', 'naar content', 'naar de inhoud', 'navigeer snel naar', 'overslaan', 'quick link', 'screen reader link', 'section', 'skip link', 'skip links', 'skiplinks', 'skipnav', 'skip to content', 'skip to main', 'skip navigation', 'skip to section', 'skip nav', 'snel naar inhoud', 'spring naar inhoud', 'springlink', 'springplank link'] }, sidebar: 'componenten', previous: { title: 'Side Navigation', permalink: '/side-navigation' }, next: { title: 'Spinner', permalink: '/spinner' } },
-    pe = {},
-    me = [
+   const ae = JSON.parse('{"nl":{"skip-link":{"background-color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"min-block-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"min-inline-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"padding-block":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"padding-inline":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"text-decoration-thickness":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"other"},"text-underline-offset":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"other"}}}}');
+   var le = t(6503);
+   const ce = { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link', keywords: ['anchor link', 'accessibility link', 'blokken omzijlen', 'direct naar link', 'direct naar x', 'content', 'go to content', 'hidden link', 'inhoud', 'inhoud overslaan', 'jump link', 'jump to', 'jump to main content', 'keyboard', 'link', 'naar content', 'naar de inhoud', 'navigeer snel naar', 'overslaan', 'quick link', 'screen reader link', 'section', 'skip link', 'skip links', 'skiplinks', 'skipnav', 'skip to content', 'skip to main', 'skip navigation', 'skip to section', 'skip nav', 'snel naar inhoud', 'spring naar inhoud', 'springlink', 'springplank link'] },
+    de = void 0,
+    he = { id: 'componenten/skip-link/index', title: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', source: '@site/docs/componenten/skip-link/index.mdx', sourceDirName: 'componenten/skip-link', slug: '/skip-link', permalink: '/skip-link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/skip-link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link', keywords: ['anchor link', 'accessibility link', 'blokken omzijlen', 'direct naar link', 'direct naar x', 'content', 'go to content', 'hidden link', 'inhoud', 'inhoud overslaan', 'jump link', 'jump to', 'jump to main content', 'keyboard', 'link', 'naar content', 'naar de inhoud', 'navigeer snel naar', 'overslaan', 'quick link', 'screen reader link', 'section', 'skip link', 'skip links', 'skiplinks', 'skipnav', 'skip to content', 'skip to main', 'skip navigation', 'skip to section', 'skip nav', 'snel naar inhoud', 'spring naar inhoud', 'springlink', 'springplank link'] }, sidebar: 'componenten', previous: { title: 'Side Navigation', permalink: '/side-navigation' }, next: { title: 'Spinner', permalink: '/spinner' } },
+    ue = {},
+    pe = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Candidate component gebruiken', id: 'candidate-component-gebruiken', level: 2 },
      { value: 'Design tokens', id: 'design-tokens', level: 3 },
@@ -334,11 +341,11 @@
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    ge = 'Skip Link',
-    je = 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.',
-    ke = 74,
-    ve = g.find((e) => e.number === ke);
-   function fe(e) {
+    me = 'Skip Link',
+    ge = 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.',
+    je = 74,
+    ke = g.find((e) => e.number === je);
+   function ve(e) {
     const n = { h2: 'h2', h3: 'h3', p: 'p', ...(0, m.a)(), ...e.components };
     return (0, p.jsxs)(p.Fragment, {
      children: [
@@ -348,23 +355,23 @@
       '\n',
       '\n',
       '\n',
-      (0, p.jsx)(re.Rv, { component: ve, headingLevel: 1, description: je }),
+      (0, p.jsx)(te.Rv, { component: ke, headingLevel: 1, description: ge }),
       '\n',
       (0, p.jsx)(n.p, { children: "Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkelijk contentblokken kunnen overslaan. Bijvoorbeeld navigatie die op meerdere pagina's herhaald wordt." }),
       '\n',
-      (0, p.jsx)(ne.I, { component: ve }),
+      (0, p.jsx)(ee.I, { component: ke }),
       '\n',
       (0, p.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, p.jsx)(te.B, { component: ve, illustration: y }),
+      (0, p.jsx)(ne.B, { component: ke, illustration: y }),
       '\n',
       (0, p.jsx)(n.h2, { id: 'candidate-component-gebruiken', children: 'Candidate component gebruiken' }),
       '\n',
       (0, p.jsx)(n.h3, { id: 'design-tokens', children: 'Design tokens' }),
       '\n',
-      (0, p.jsx)(ie.W, { tokens: le }),
+      (0, p.jsx)(re.W, { tokens: ae }),
       '\n',
-      (0, p.jsx)(se.U, { omitH1: !0, headingLevel: 3, children: (0, p.jsx)(ae, {}) }),
+      (0, p.jsx)(ie.U, { omitH1: !0, headingLevel: 3, children: (0, p.jsx)(oe, {}) }),
       '\n',
       (0, p.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
       '\n',
@@ -374,14 +381,14 @@
       '\n',
       (0, p.jsx)(k.ZP, {}),
       '\n',
-      (0, p.jsx)(ce.W, {
+      (0, p.jsx)(le.W, {
        items: [
         { title: 'De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur.', sc: '1.4.3', status: '', component: (0, p.jsx)(A.ZP, {}), tags: ['designer'] },
-        { title: 'Het label van de Skip Link bestaat uit tekst, niet uit een afbeelding van tekst.', sc: '1.4.5', status: '', component: (0, p.jsx)(K.ZP, {}), tags: ['developer', 'contentmaker'] },
-        { title: 'De Skip Link slaat 1 of meerdere herhalende contentblokken over.', sc: '2.4.1', status: '', component: (0, p.jsx)(Y.ZP, {}), tags: ['developer'] },
+        { title: 'Het label van de Skip Link bestaat uit tekst, niet uit een afbeelding van tekst.', sc: '1.4.5', status: '', component: (0, p.jsx)(J.ZP, {}), tags: ['developer', 'contentmaker'] },
+        { title: 'De Skip Link slaat 1 of meerdere herhalende contentblokken over.', sc: '2.4.1', status: '', component: (0, p.jsx)(q.ZP, {}), tags: ['developer'] },
         { title: 'De Skip Link staat vooraan in de focusvolgorde van een pagina en verwijst naar de eerste niet-herhalende content op de pagina.', sc: '2.4.3', status: '', component: (0, p.jsx)(N, {}), tags: ['developer'] },
         { title: 'De linktekst van de Skip Link beschrijft duidelijk het linkdoel.', sc: '2.4.4', status: '', component: (0, p.jsx)(R, {}), tags: ['developer', 'contentmaker'] },
-        { title: 'De Skip Link wordt niet bedekt door een ander element op de pagina.', sc: '2.4.11', status: '', component: (0, p.jsx)(Q.ZP, {}), tags: ['developer'] },
+        { title: 'De Skip Link wordt niet bedekt door een ander element op de pagina.', sc: '2.4.11', status: '', component: (0, p.jsx)(Y.ZP, {}), tags: ['developer'] },
         { title: 'Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: (0, p.jsx)(H.ZP, {}), tags: ['developer', 'contentmaker'] },
         { title: "Skip Links die op meerdere pagina's voorkomen staan op iedere pagina vooraan in de focusvolgorde van een pagina.", sc: '3.2.3', status: '', component: (0, p.jsx)(U, {}), tags: ['developer', 'designer'] },
        ],
@@ -391,41 +398,41 @@
       '\n',
       (0, p.jsx)(j.ZP, {}),
       '\n',
-      (0, p.jsx)(ce.W, {
+      (0, p.jsx)(le.W, {
        items: [
         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, p.jsx)(C, {}), tags: ['developer'] },
-        { title: 'Als je de hele webpagina inzoomt tot 400% veroorzaakt de Skip Link geen horizontale scrollbalk en blijft alle tekst op de pagina leesbaar.', sc: '1.4.10', status: '', component: (0, p.jsx)(J.ZP, {}), tags: ['developer', 'designer'] },
+        { title: 'Als je de hele webpagina inzoomt tot 400% veroorzaakt de Skip Link geen horizontale scrollbalk en blijft alle tekst op de pagina leesbaar.', sc: '1.4.10', status: '', component: (0, p.jsx)(X.ZP, {}), tags: ['developer', 'designer'] },
         { title: 'De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot.', sc: '1.4.12', status: '', component: (0, p.jsx)(b, {}), tags: ['developer', 'designer'] },
         { title: 'Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets.', sc: '2.1.1', status: '', component: (0, p.jsx)(T, {}), tags: ['developer'] },
-        { title: 'Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord.', sc: '2.1.2', status: '', component: (0, p.jsx)(q.ZP, {}), tags: ['developer'] },
+        { title: 'Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord.', sc: '2.1.2', status: '', component: (0, p.jsx)(K.ZP, {}), tags: ['developer'] },
         { title: 'De Skip Link heeft een zichtbare focusindicator.', sc: '2.4.7', status: '', component: (0, p.jsx)(M, {}), tags: ['developer', 'designer'] },
         { title: 'De Skip Link heeft een zichtbare focusindicator met een dikte van minimaal 2 pixels.', sc: '2.4.13', status: '', component: (0, p.jsx)(G, {}), tags: ['developer', 'designer'] },
         { title: 'De Skip Link activeren met een enkele aanwijzer kan voorkomen of geannuleerd worden.', sc: '2.5.2', status: '', component: (0, p.jsx)(P, {}), tags: ['developer'] },
         { title: 'De zichtbare naam van de Skip Link komt voor in de toegankelijke naam.', sc: '2.5.3', status: '', component: (0, p.jsx)(F.ZP, {}), tags: ['developer'] },
         { title: 'Het aanwijsgebied van de Skip Link is groot genoeg.', sc: '2.5.5', status: '', component: (0, p.jsx)(E, {}), tags: ['developer'] },
-        { title: 'Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats.', sc: '3.2.1', status: '', component: (0, p.jsx)(ee.ZP, {}), tags: ['developer'] },
+        { title: 'Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats.', sc: '3.2.1', status: '', component: (0, p.jsx)(Q.ZP, {}), tags: ['developer'] },
         { title: 'Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.', sc: '3.2.4', status: '', component: (0, p.jsx)(B, {}), tags: ['developer', 'designer'] },
-        { title: 'De Skip Link heeft een rol van link.', sc: '4.1.2', status: '', component: (0, p.jsx)(X, {}), tags: ['developer'] },
+        { title: 'De Skip Link heeft een rol van link.', sc: '4.1.2', status: '', component: (0, p.jsx)(I.ZP, {}), tags: ['developer'] },
        ],
       }),
       '\n',
       (0, p.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
       '\n',
-      (0, p.jsx)(re.W, { component: ve, headingLevel: 3 }),
+      (0, p.jsx)(te.W, { component: ke, headingLevel: 3 }),
       '\n',
       (0, p.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, p.jsx)(re.cN, { component: ve, headingLevel: 3 }),
+      (0, p.jsx)(te.cN, { component: ke, headingLevel: 3 }),
       '\n',
       (0, p.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, p.jsx)(re.vM, { component: ve, headingLevel: 3 }),
+      (0, p.jsx)(te.vM, { component: ke, headingLevel: 3 }),
      ],
     });
    }
-   function we(e = {}) {
+   function fe(e = {}) {
     const { wrapper: n } = { ...(0, m.a)(), ...e.components };
-    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(fe, { ...e }) }) : fe(e);
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(ve, { ...e }) }) : ve(e);
    }
   },
   18833: (e, n, t) => {
