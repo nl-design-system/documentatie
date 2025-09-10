@@ -2,9 +2,9 @@
 
 Met het NL Design System bouw je in een paar stappen een pagina met alleen HTML en wat CSS. In dit voorbeeld bouw je stap voor stap een ontwerp na.
 
-<div className="utrecht-root" style={{zoom: '25%', width: '100%', height: '2048px'}}>
+<div className="utrecht-root" style={{zoom: '50%', width: '100%', height: '1024px'}}>
   <div className="utrecht-body">
-    <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '2048px'}} src="/examples/zonder-front-end-framework.html"></iframe>
+    <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '1024px'}} src="/examples/zonder-front-end-framework.html"></iframe>
   </div>
 </div>
 <a href="/examples/zonder-front-end-framework.html" rel="noopener noreferrer">Bovenstaande voorbeeldpagina in volledig scherm bekijken</a>.
