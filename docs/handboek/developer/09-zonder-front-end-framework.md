@@ -2,6 +2,8 @@
 
 Met het NL Design System bouw je in een paar stappen een pagina met alleen HTML en wat CSS. In dit voorbeeld bouw je stap voor stap een ontwerp na.
 
+Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Figma](https://www.figma.com/design/taAnsV55PVP0cmw18BnMDk/NL-Design-System---Templates---Voorbeeld?node-id=5550-611&t=VX2mUDweS42iaS1D-4)
+
 <div className="utrecht-root" style={{zoom: '50%', width: '100%', height: '1024px'}}>
   <div className="utrecht-body">
     <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '1024px'}} src="/examples/zonder-front-end-framework.html"></iframe>
@@ -19,9 +21,7 @@ TODO: voorbeeldpagina HTML hier toevoegen.
 
 ## Paginaopzet
 
-Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Figma](https://www.figma.com/design/taAnsV55PVP0cmw18BnMDk/NL-Design-System---Templates---Voorbeeld?node-id=5550-611&t=VX2mUDweS42iaS1D-4)
-
-Deze pagina is opgedeeld in de volgende componenten: logo, page header, breadcrumbs, heading, paragraph, button, unordered list en footer.
+De pagina is opgedeeld in de volgende componenten: logo, page header, breadcrumbs, heading, paragraph, button, unordered list en footer.
 
 Een aantal van deze componenten is beschikbaar als [candidate component](/componenten/?status=CANDIDATE). Andere componenten kunnen van een community gebruikt worden, of zelf gemaakt worden. In dit voorbeeld wordt gekozen om de pagina zoveel mogelijk op te bouwen met Candidate componenten. Daarnaast is een aantal componenten alleen als Community component beschikbaar. In dat geval kies je degene die het beste bij het design past.
 
