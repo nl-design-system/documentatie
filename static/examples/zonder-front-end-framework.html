@@ -26,39 +26,40 @@
       href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0/dist/theme.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/design-tokens@2/dist/index.css" />
+    <style>
+      body {
+        margin: 0;
+        background-color: #fff;
+      }
+    </style>
   </head>
 
   <body class="voorbeeld-theme">
     <a href="#main" class="nl-skip-link nl-skip-link--visible-on-focus">Direct naar de hoofdinhoud</a>
     <div class="">
       <header class="ams-page-header">
-        <div class="voorbeeld-page-header__content">
-          <div class="nav-flex">
-            <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
-
-            <div>
-              <a class="utrecht-link" href="#">Contact</a>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12 4C10.3431 4 9 5.34315 9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4ZM7 7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7ZM10 16C8.34315 16 7 17.3431 7 19V21C7 21.5523 6.55228 22 6 22C5.44772 22 5 21.5523 5 21V19C5 16.2386 7.23858 14 10 14H14C16.7614 14 19 16.2386 19 19V21C19 21.5523 18.5523 22 18 22C17.4477 22 17 21.5523 17 21V19C17 17.3431 15.6569 16 14 16H10Z"
-                  fill="#00568B"
-                />
-              </svg>
+        <nav aria-labelledby="primary-navigation" class="ams-page-header__navigation">
+          <h2 class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</h2>
+          <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+          <ul class="ams-page-header__menu">
+            <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
+              <a class="nl-link" href="#">Contact</a>
+            </li>
+            <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
               <a class="nl-link" href="#">Mijn omgeving</a>
-              <div class="utrecht-form-field__input">
-                <input
-                  placeholder="Bijvoorbeeld zwembad of grofvuil"
-                  type="text"
-                  class="utrecht-textbox utrecht-textbox--html-input"
-                  dir="auto"
-                />
-                <a class="utrecht-button-link utrecht-button--primary-action" href="#">Zoeken</a>
-              </div>
-            </div>
-          </div>
-        </div>
+            </li>
+            <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed" style="display: flex">
+              <input
+                style="max-width: 65%; margin-inline-end: 0.3rem"
+                placeholder="Bijvoorbeeld zwembad of grofvuil"
+                type="text"
+                class="utrecht-textbox utrecht-textbox--html-input"
+                dir="auto"
+              />
+              <a class="utrecht-button-link utrecht-button--secondaryß-action" href="#">Zoeken</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <div class="rhc-nav-bar__container">
         <nav class="utrecht-nav-bar">
