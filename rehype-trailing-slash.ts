@@ -21,7 +21,17 @@ const isHttpProtocol = (url: URL) => url.protocol === 'https:' || url.protocol =
 
 const isExternalLink = (url: URL, siteURL: URL) => url.hostname !== siteURL.hostname;
 
-const isFile = (url: URL) => url.pathname.split('/').reverse()?.[0]?.includes('.');
+const isFile = (url: URL) => {
+  let isAFile = url.pathname.split('/').reverse()?.[0]?.includes('.');
+
+  // wcag pages have . in them, these are not files
+  const isWcagPage = /\/wcag\/\d+\.\d+\.\d+$/;
+  if (isAFile && isWcagPage.test(url.pathname)) {
+    isAFile = false;
+  }
+
+  return isAFile;
+};
 
 /**
  * Append a trailing slash to the pathname portion of the href.
