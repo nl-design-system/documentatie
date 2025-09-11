@@ -1,6 +1,21 @@
+/*! For license information please see 68ddddde.fe1d61cf.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [98634],
+ [5643],
  {
+  364: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => o });
+   var r = t(52676),
+    i = t(40139);
+   function s(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'De component en de afzonderlijke interactieve elementen in de component hebben de juiste rol en de juiste attributen voor het aangeven van de staat en de waarde.' });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
   94398: (e, n, t) => {
    'use strict';
    t.d(n, { ZP: () => o });
@@ -37,20 +52,6 @@
    function s(e) {
     const n = { p: 'p', ...(0, i.a)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Hier beschrijven we waar de component al aan voldoet en wat je zelf nog moet doen om de component toegankelijk \xe9n gebruiksvriendelijk in te zetten.' });
-   }
-   function o(e = {}) {
-    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
-  47901: (e, n, t) => {
-   'use strict';
-   t.d(n, { ZP: () => o });
-   var r = t(52676),
-    i = t(40139);
-   function s(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Als de inhoud van de link niet uit tekst bestaat, maar uit bijvoorbeeld een icoon of logo dan moet het aanklikbare gedeelte goed te onderscheiden zijn. Het contrast tussen een icoon, of kader rond een logo, en de achtergrond moet minimaal 3:1 zijn. Dit is te controleren met de ', (0, r.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -113,20 +114,6 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  77293: (e, n, t) => {
-   'use strict';
-   t.d(n, { ZP: () => o });
-   var r = t(52676),
-    i = t(40139);
-   function s(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Wanneer het element de toetsenbordfocus krijgt is de focus zichtbaar.' }), '\n', (0, r.jsxs)(n.p, { children: ['Verberg de standaard browserfocusstijl nooit met ', (0, r.jsx)(n.code, { children: 'outline:none' }), ' zonder er een goede focusstijl voor in de plaats te zetten die rekening houdt met goede zichtbaarheid.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/', children: 'Maak toetsenbordfocus goed zichtbaar' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/voorkeuren/', children: 'Let op voorkeursinstellingen voor kleur' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
-   }
-   function o(e = {}) {
-    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
   71504: (e, n, t) => {
    'use strict';
    t.d(n, { ZP: () => o });
@@ -155,20 +142,6 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  29618: (e, n, t) => {
-   'use strict';
-   t.d(n, { ZP: () => o });
-   var r = t(52676),
-    i = t(40139);
-   function s(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', strong: 'strong', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Zorg ervoor dat het element een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in ', (0, r.jsx)(n.code, { children: 'px' }), ', maar gebruik een relatieve waarde als ', (0, r.jsx)(n.code, { children: 'em' }), ' of ', (0, r.jsx)(n.code, { children: 'rem' }), '. Anders kan het element niet goed meegroeien wanneer de gebruiker inzoomt.'] }), '\n', (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.strong, { children: 'Let op' }), ': Links in zinnen en paragrafen van tekst zijn uitgezonderd. De grootte van het aanwijsgebied is hier afhankelijk van de grootte van de linktekst zelf.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/', children: 'Maak aanklikbare formuliervelden groot genoeg' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/interactieve-elementen/', children: 'Reserveer ruimte tussen interactieve elementen' }) }), '\n'] })] });
-   }
-   function o(e = {}) {
-    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
   56050: (e, n, t) => {
    'use strict';
    t.d(n, { ZP: () => o });
@@ -177,20 +150,6 @@
    function s(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een ', (0, r.jsx)(n.code, { children: 'lang' }), '-attribuut met de juiste taalcode.'] }), '\n', (0, r.jsx)(n.p, { children: 'Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.' }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/taal/', children: 'De juiste taal instellen' }) }), '\n'] })] });
-   }
-   function o(e = {}) {
-    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
-  23930: (e, n, t) => {
-   'use strict';
-   t.d(n, { ZP: () => o });
-   var r = t(52676),
-    i = t(40139);
-   function s(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Elementen met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.' }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Respecteer conventies' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -211,59 +170,167 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  34497: (e, n, t) => {
+  85375: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => M, component: () => V, contentTitle: () => Z, default: () => B, description: () => H, frontMatter: () => _, issueNumber: () => U, metadata: () => F, title: () => E, toc: () => O });
-   var r = t(52676),
-    i = t(40139),
-    s = t(52563),
-    o = t(94398),
-    a = t(25653),
-    l = t(90361),
-    c = t(90793);
-   function d(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Als het label van de link alleen uit een icoon of logo bestaat, dan heeft deze afbeelding een goed tekstalternatief, zodat de link een naam heeft die duidelijk maakt waar de link voor dient.' }), '\n', (0, r.jsxs)(n.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder het icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor de afbeelding is niet nodig als er naast de afbeelding ook tekst in de link staat die uitlegt waar de link naartoe gaat. Een ', (0, r.jsx)(n.code, { children: 'img' }), ' kan dan een leeg ', (0, r.jsx)(n.code, { children: 'alt' }), '-attribuut krijgen (', (0, r.jsx)(n.code, { children: 'alt=""' }), ').'] }), '\n', (0, r.jsx)(n.p, { children: 'Is het toch gewenst om alleen een icoon of logo te tonen, hou dan rekening met het volgende.' }), '\n', (0, r.jsxs)(n.p, { children: ['Een ', (0, r.jsx)(n.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de toegankelijke naam van de link:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<a href="url">\n  <img src="ideal.svg" alt="iDeal" />\n</a>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Maar duidelijker is:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<a href="url"> Betaal met iDeal <img src="ideal.svg" alt="" /> </a>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/', children: 'Functionele afbeeldingen' }) }), '\n'] })] });
+   t.r(n), t.d(n, { assets: () => ue, component: () => ke, contentTitle: () => de, default: () => fe, description: () => ge, frontMatter: () => ce, issueNumber: () => je, metadata: () => he, title: () => me, toc: () => pe });
+   var r,
+    i,
+    s,
+    o,
+    a,
+    l,
+    c,
+    d,
+    h,
+    u,
+    p = t(52676),
+    m = t(40139),
+    g = t(52563),
+    j = t(94398),
+    k = t(25653),
+    v = t(90361),
+    f = t(75271);
+   function y() {
+    return (
+     (y = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+         for (var n = 1; n < arguments.length; n++) {
+          var t = arguments[n];
+          for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
+         }
+         return e;
+        }),
+     y.apply(this, arguments)
+    );
    }
-   function h(e = {}) {
-    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(d, { ...e }) }) : d(e);
+   const w = (e) => {
+    let { title: n, titleId: t, ...p } = e;
+    return f.createElement('svg', y({ width: 960, height: 540, viewBox: '0 0 960 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', 'aria-label': 'Een woord \\u201Clabel\\u201D met een achtergrondkleur en dikke stippellijn eromheen. Het geheel is aangeduid met het cijfer 1.', role: 'img', 'aria-labelledby': t }, p), n ? f.createElement('title', { id: t }, n) : null, r || (r = f.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), i || (i = f.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = f.createElement('path', { fill: '#FFE76B', d: 'M444 246h72v48h-72z' })), o || (o = f.createElement('path', { stroke: '#5315F6', strokeDasharray: '2 2', d: 'M443.5 245.5h73v49h-73z' })), a || (a = f.createElement('path', { stroke: '#fff', strokeWidth: 2, d: 'M443 245h74v50h-74z' })), l || (l = f.createElement('path', { stroke: '#5315F6', strokeWidth: 2, strokeDasharray: '2 2', d: 'M443 245h74v50h-74z' })), c || (c = f.createElement('path', { d: 'M463.12 263.976v9.696h4.528l-.176 1.328H461.6v-11.024h1.52Zm11.893 9.056c0 .341.058.597.176.768.117.16.293.283.528.368l-.336 1.024c-.438-.053-.79-.176-1.056-.368-.267-.192-.464-.491-.592-.896-.566.843-1.403 1.264-2.512 1.264-.832 0-1.488-.235-1.968-.704s-.72-1.083-.72-1.84c0-.896.32-1.584.96-2.064.65-.48 1.568-.72 2.752-.72h1.296v-.624c0-.597-.144-1.024-.432-1.28-.288-.256-.731-.384-1.328-.384-.619 0-1.376.149-2.272.448l-.368-1.072c1.045-.384 2.016-.576 2.912-.576.992 0 1.733.245 2.224.736.49.48.736 1.168.736 2.064v3.856Zm-3.456 1.056c.842 0 1.504-.437 1.984-1.312v-1.936h-1.104c-1.558 0-2.336.576-2.336 1.728 0 .501.122.88.368 1.136.245.256.608.384 1.088.384Zm10.335-7.712c.96 0 1.722.389 2.288 1.168.565.768.848 1.845.848 3.232 0 .875-.134 1.648-.4 2.32-.267.661-.651 1.179-1.152 1.552-.502.363-1.088.544-1.76.544-.886 0-1.632-.373-2.24-1.12l-.144.928h-1.296v-11.824l1.472-.176v4.624c.608-.832 1.402-1.248 2.384-1.248Zm-.528 7.648c.65 0 1.157-.261 1.52-.784.373-.533.56-1.355.56-2.464 0-1.141-.171-1.963-.512-2.464-.342-.512-.827-.768-1.456-.768-.747 0-1.403.437-1.968 1.312v4.032c.224.352.496.629.816.832.33.203.677.304 1.04.304Zm12.54-3.488c0 .245-.011.496-.032.752h-5.376c.064.928.298 1.611.704 2.048.405.437.928.656 1.568.656.405 0 .778-.059 1.12-.176a4.523 4.523 0 0 0 1.072-.56l.64.88c-.896.704-1.878 1.056-2.944 1.056-1.174 0-2.091-.384-2.752-1.152-.651-.768-.976-1.824-.976-3.168 0-.875.138-1.648.416-2.32.288-.683.693-1.216 1.216-1.6.533-.384 1.157-.576 1.872-.576 1.12 0 1.978.368 2.576 1.104.597.736.896 1.755.896 3.056Zm-1.456-.432c0-.832-.166-1.467-.496-1.904-.331-.437-.827-.656-1.488-.656-1.206 0-1.862.885-1.968 2.656h3.952v-.096Zm5.486 5.088c-.544 0-.976-.16-1.296-.48-.309-.331-.464-.789-.464-1.376v-10.16l1.472-.176v10.304c0 .235.038.405.112.512.086.107.224.16.416.16.203 0 .384-.032.544-.096l.384 1.024a2.398 2.398 0 0 1-1.168.288Z', fill: '#000' })), d || (d = f.createElement('rect', { x: 364, y: 254, width: 32, height: 32, rx: 16, fill: '#DE00A4' })), h || (h = f.createElement('path', { d: 'M382.502 264.368V276.5H380v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43h2.25Z', fill: '#fff' })), u || (u = f.createElement('path', { d: 'M396 270h48', stroke: '#DE00A4', strokeWidth: 2, strokeLinecap: 'square', strokeLinejoin: 'bevel' })));
+   };
+   function x(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: "Als je de tekstafstand vergroot blijft de tekst in de component in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea's, letterafstand en ruimte tussen woorden:" }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: 'Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte.' }), '\n', (0, p.jsx)(n.li, { children: "Afstand tussen alinea's naar ten minste 2 keer de lettergrootte." }), '\n', (0, p.jsx)(n.li, { children: 'Letterafstand (spati\xebren van letters) naar ten minste 0,12 keer de lettergrootte.' }), '\n', (0, p.jsx)(n.li, { children: 'Spati\xebren van woorden naar ten minste 0,16 keer de lettergrootte.' }), '\n'] }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/regelafstand/', children: 'Zorg voor een comfortabele regelafstand' }) }), '\n'] })] });
    }
-   var u = t(47901),
-    m = t(47913),
-    g = t(68934),
-    j = t(50553),
-    p = t(96620),
-    k = t(77293),
-    w = t(71504),
-    f = t(65666),
-    v = t(29618),
-    x = t(56050),
-    b = t(23930),
-    y = (t(71811), t(1459)),
-    A = t(4607),
-    C = t(97183),
-    z = t(15953),
-    T = t(97520),
-    G = t(76233),
-    W = t(6503),
-    L = t(8657),
-    R = t(49556),
-    N = t(57716);
+   function b(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(x, { ...e }) }) : x(e);
+   }
+   t(47913);
+   var A = t(68934);
+   t(50553);
+   function z(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: 'Als je de tekst vergroot tot 200%, bijvoorbeeld via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst in de component volledig zichtbaar.' }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
+   }
+   function C(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(z, { ...e }) }) : z(e);
+   }
+   t(96620);
+   function S(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: 'Interactieve elementen in de component zijn bedienbaar met het toetsenbord.' }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/', children: 'Toetsenbordtoegankelijkheid' }) }), '\n'] })] });
+   }
+   function T(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(S, { ...e }) }) : S(e);
+   }
+   function L(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: 'Interactieve elementen in de component hebben een goed zichtbare focusindicator met een minimale dikte van 2 pixels.' }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/', children: 'Maak toetsenbordfocus goed zichtbaar' }) }), '\n'] })] });
+   }
+   function G(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(L, { ...e }) }) : L(e);
+   }
    function D(e) {
-    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', p: 'p', pre: 'pre', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h1, { id: 'gebruik-link', children: 'Gebruik Link' }), '\n', (0, r.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, r.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, r.jsxs)(n.p, { children: [(0, r.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-css', children: [(0, r.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Flink-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/link-css'] }), '\nversie 1.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik de ', (0, r.jsx)(n.code, { children: 'nl-link' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'a' }), ' element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<a href="https://example.com" class="nl-link">example.com</a>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/link-css\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/link-css@1/dist/link.css" />\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, r.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/link-css/dist/link.css" />\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/link-css/link.css";\n' }) }), '\n', (0, r.jsx)(n.h3, { id: 'link-om-een-image-of-andere-inline-box-componenten', children: 'Link om een Image of andere inline-box componenten' }), '\n', (0, r.jsxs)(n.p, { children: ['Om te zorgen dat de states van een Link component goed werken als een link om een inline-box element zoals een Image is gezet gebruik je de ', (0, r.jsx)(n.code, { children: 'nl-link' }), ' class name in combinatie met ', (0, r.jsx)(n.code, { children: 'nl-link--inline-box' }), ' class name.'] }), '\n', (0, r.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, r.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, r.jsxs)(n.p, { children: [(0, r.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-react', children: [(0, r.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Flink-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/link-react'] }), '\nversie 1.'] }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/link-react\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-jsx', children: 'import { Link } from "@nl-design-system-candidate/link-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <p>\n          <Link href="https://example.com">example.com</Link>\n        </p>\n      </body>\n    </html>\n  );\n};\n' }) }), '\n', (0, r.jsx)(n.h2, { id: 'figma', children: 'Figma' }), '\n', (0, r.jsxs)(n.p, { children: ['De Figma component staat in ', (0, r.jsx)(n.a, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13587-214136', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Link' }), '.'] })] });
+    const n = { code: 'code', p: 'p', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: 'De Skip Link naar de hoofdinhoud van de pagina is het eerste interactieve element op de pagina dat toetsenbordfocus krijgt. Overige Skip Links naar andere onderdelen van de pagina, zoals het hoofdmenu, volgen daarna.' }), '\n', (0, p.jsxs)(n.p, { children: ['De Skip Link verwijst naar de plek op de pagina waar de hoofdinhoud start. Dit is bijvoorbeeld de ', (0, p.jsx)(n.code, { children: 'main' }), ' van de pagina. Omdat dit normaal gesproken geen interactief element is, moet het element focusbaar gemaakt worden. Aangezien het niet de bedoeling is dat de ', (0, p.jsx)(n.code, { children: 'main' }), ' in de normale focusvolgorde van de pagina voorkomt, kun je hiervoor ', (0, p.jsx)(n.code, { children: 'tabindex="-1"' }), ' gebruiken. Geef het vervolgens een ', (0, p.jsx)(n.code, { children: 'id' }), ' attribuut mee, bijvoorbeeld ', (0, p.jsx)(n.code, { children: 'id="hoofdinhoud"' }), ' waar je in de Skip Link in het ', (0, p.jsx)(n.code, { children: 'href' }), ' attribuut naar verwijst. Vergeet niet ook een focusstijl in te stellen voor het element waar je naar verwijst, zodat toetsenbordgebruikers weten waar ze zich op de pagina bevinden.'] }), '\n', (0, p.jsxs)(n.p, { children: ['Let op: Bevat je ', (0, p.jsx)(n.code, { children: 'main' }), ' w\xe9l herhalende content? Gebruik dan een ander element n\xe1 de herhalende content.'] }), '\n', (0, p.jsx)(n.p, { children: 'Let op: Heeft je website een cookiemelding die altijd over een deel van de pagina staat, waardoor bezoekers de cookiemelding \xe9\xe9rst weg moeten klikken om verder te gaan? Zorg er dan voor dat de cookiemelding nog v\xf3\xf3r de Skip Links focus krijgt en weggeklikt kan worden.' })] });
    }
-   function S(e = {}) {
-    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(D, { ...e }) }) : D(e);
+   function N(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(D, { ...e }) }) : D(e);
    }
-   var P = t(27734);
-   const _ = { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link', keywords: ['a', 'a tag', 'anchor', 'anchor element', 'anchor link', 'back link', 'button as link', 'call to action link', 'cta link', 'externe link', 'external link', 'href', 'hyper link', 'hyperlink', 'inline link', 'koppeling', 'label', 'link', 'link button', 'links', 'navigatie', 'navigation', 'navlink', 'ordinal', 'standalone', 'standalone link', 'text link', 'URL', 'url', 'verwijzing', 'web address'] },
-    Z = void 0,
-    F = { id: 'componenten/link/index', title: 'Link', description: 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', source: '@site/docs/componenten/link/index.mdx', sourceDirName: 'componenten/link', slug: '/link', permalink: '/link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link', keywords: ['a', 'a tag', 'anchor', 'anchor element', 'anchor link', 'back link', 'button as link', 'call to action link', 'cta link', 'externe link', 'external link', 'href', 'hyper link', 'hyperlink', 'inline link', 'koppeling', 'label', 'link', 'link button', 'links', 'navigatie', 'navigation', 'navlink', 'ordinal', 'standalone', 'standalone link', 'text link', 'URL', 'url', 'verwijzing', 'web address'] }, sidebar: 'componenten', previous: { title: 'Language Navigation', permalink: '/language-navigation' }, next: { title: 'Link List', permalink: '/link-list' } },
-    M = {},
-    O = [
+   function W(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: 'De linktekst in de Skip Link vertelt duidelijk waar de link naar verwijst. Bijvoorbeeld: "Direct naar de inhoud" of "Hoofdinhoud".' }), '\n', (0, p.jsx)(n.p, { children: 'Je kunt er ook voor kiezen om meerdere Skip Links toe te voegen. Zorg er dan voor dat iedere link een unieke beschrijvende linktekst heeft. Een beschrijvende naam voor een Skip Link waarmee bezoekers direct naar de hoofdnavigatie kunnen, is bijvoorbeeld "Direct naar het hoofdmenu".' }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/linkteksten/', children: 'Toegankelijke linkteksten' }) }), '\n'] })] });
+   }
+   function R(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(W, { ...e }) }) : W(e);
+   }
+   function Z(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: 'Wanneer een interactief element in de component toetsenbordfocus heeft is het element en de focusindicator zichtbaar.' }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/', children: 'Maak toetsenbordfocus goed zichtbaar' }) }), '\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/voorkeuren/', children: 'Let op voorkeursinstellingen voor kleur' }) }), '\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
+   }
+   function M(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(Z, { ...e }) }) : Z(e);
+   }
+   function O(e) {
+    const n = { p: 'p', ...(0, m.a)(), ...e.components };
+    return (0, p.jsx)(n.p, { children: 'Het is mogelijk om een actie te voorkomen of ongedaan te maken als de gebruiker een interactief element in de component indrukt met een enkele aanwijzer zoals een muis of vinger.' });
+   }
+   function P(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(O, { ...e }) }) : O(e);
+   }
+   t(71504);
+   var F = t(65666);
+   function _(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: 'Het aanwijsgebied van interactieve elementen in de component is minimaal 44 bij 44 pixels.' }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/', children: 'Maak aanklikbare formuliervelden groot genoeg' }) }), '\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/interactieve-elementen/', children: 'Reserveer ruimte tussen interactieve elementen' }) }), '\n'] })] });
+   }
+   function E(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(_, { ...e }) }) : _(e);
+   }
+   var H = t(56050);
+   function $(e) {
+    const n = { li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: "Op pagina's met \xe9\xe9n of meerdere Skip Links:" }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: 'Zorg ervoor dat de Skip Link naar de hoofdinhoud van de pagina het eerste interactieve element op de pagina is.' }), '\n', (0, p.jsx)(n.li, { children: 'Zorg ervoor dat de Skip Links naar andere onderdelen van de pagina in dezelfde volgorde staan.' }), '\n'] }), '\n', (0, p.jsx)(n.p, { children: 'Let op: Heeft je website een cookiemelding die altijd over een deel van de pagina staat, waardoor bezoekers de cookiemelding \xe9\xe9rst weg moeten klikken om verder te gaan? Zorg er dan voor dat de cookiemelding nog v\xf3\xf3r de Skip Links focus krijgt en weggeklikt kan worden.' })] });
+   }
+   function U(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)($, { ...e }) }) : $(e);
+   }
+   function V(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.p, { children: 'Links die dezelfde functie hebben binnen een website, zien er hetzelfde uit en werken ook hetzelfde.' }), '\n', (0, p.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, p.jsxs)(n.ul, { children: ['\n', (0, p.jsx)(n.li, { children: (0, p.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Respecteer conventies' }) }), '\n'] })] });
+   }
+   function B(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(V, { ...e }) }) : V(e);
+   }
+   t(71811);
+   var I = t(364),
+    X = t(18833),
+    J = t(1459),
+    K = t(4607),
+    q = t(21511),
+    Y = t(97183),
+    Q = t(16771),
+    ee = t(97520),
+    ne = t(76233),
+    te = t(8657),
+    re = t(49556),
+    ie = t(57716);
+   function se(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', p: 'p', pre: 'pre', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(n.h1, { id: 'gebruik-skip-link', children: 'Gebruik Skip Link' }), '\n', (0, p.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, p.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, p.jsxs)(n.p, { children: [(0, p.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-css', children: [(0, p.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fskip-link-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/skip-link-css'] }), '\nversie 1.'] }), '\n', (0, p.jsxs)(n.p, { children: ['Gebruik de ', (0, p.jsx)(n.code, { children: 'nl-skip-link' }), ' class name op een ', (0, p.jsx)(n.code, { children: 'a' }), ' element:'] }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-html', children: '<a href="#inhoud" class="nl-skip-link nl-skip-link--visible-on-focus">Naar de inhoud</a>\n' }) }), '\n', (0, p.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/skip-link-css\n' }) }), '\n', (0, p.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/skip-link-css@1/dist/skip-link.css"\n/>\n' }) }), '\n', (0, p.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, p.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/skip-link-css/dist/skip-link.css" />\n' }) }), '\n', (0, p.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/skip-link-css/skip-link.css";\n' }) }), '\n', (0, p.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, p.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, p.jsxs)(n.p, { children: [(0, p.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-react', children: [(0, p.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fskip-link-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/skip-link-react'] }), '\nversie 1.'] }), '\n', (0, p.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/skip-link-react\n' }) }), '\n', (0, p.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, p.jsx)(n.pre, { children: (0, p.jsx)(n.code, { className: 'language-jsx', children: 'import { SkipLink } from "@nl-design-system-candidate/skip-link-react";\n\nexport const MyComponent = () => <SkipLink href="#inhoud">Direct naar de hoofdinhoud</SkipLink>;\n' }) }), '\n', (0, p.jsx)(n.h2, { id: 'figma', children: 'Figma' }), '\n', (0, p.jsxs)(n.p, { children: ['De Figma component staat in ', (0, p.jsx)(n.a, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2217-10122', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Skip Link' }), '.'] })] });
+   }
+   function oe(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(se, { ...e }) }) : se(e);
+   }
+   const ae = JSON.parse('{"nl":{"skip-link":{"background-color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"min-block-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"min-inline-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"padding-block":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"padding-inline":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":true},"$type":"dimension"},"text-decoration-thickness":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"other"},"text-underline-offset":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"other"}}}}');
+   var le = t(6503);
+   const ce = { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link', keywords: ['anchor link', 'accessibility link', 'blokken omzijlen', 'direct naar link', 'direct naar x', 'content', 'go to content', 'hidden link', 'inhoud', 'inhoud overslaan', 'jump link', 'jump to', 'jump to main content', 'keyboard', 'link', 'naar content', 'naar de inhoud', 'navigeer snel naar', 'overslaan', 'quick link', 'screen reader link', 'section', 'skip link', 'skip links', 'skiplinks', 'skipnav', 'skip to content', 'skip to main', 'skip navigation', 'skip to section', 'skip nav', 'snel naar inhoud', 'spring naar inhoud', 'springlink', 'springplank link'] },
+    de = void 0,
+    he = { id: 'componenten/skip-link/index', title: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', source: '@site/docs/componenten/skip-link/index.mdx', sourceDirName: 'componenten/skip-link', slug: '/skip-link', permalink: '/skip-link', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/skip-link/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Skip Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Skip Link', pagination_label: 'Skip Link', description: 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.', slug: '/skip-link', keywords: ['anchor link', 'accessibility link', 'blokken omzijlen', 'direct naar link', 'direct naar x', 'content', 'go to content', 'hidden link', 'inhoud', 'inhoud overslaan', 'jump link', 'jump to', 'jump to main content', 'keyboard', 'link', 'naar content', 'naar de inhoud', 'navigeer snel naar', 'overslaan', 'quick link', 'screen reader link', 'section', 'skip link', 'skip links', 'skiplinks', 'skipnav', 'skip to content', 'skip to main', 'skip navigation', 'skip to section', 'skip nav', 'snel naar inhoud', 'spring naar inhoud', 'springlink', 'springplank link'] }, sidebar: 'componenten', previous: { title: 'Side Navigation', permalink: '/side-navigation' }, next: { title: 'Spinner', permalink: '/spinner' } },
+    ue = {},
+    pe = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
      { value: 'Candidate component gebruiken', id: 'candidate-component-gebruiken', level: 2 },
      { value: 'Design tokens', id: 'design-tokens', level: 3 },
@@ -274,13 +341,13 @@
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    E = 'Link',
-    H = 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.',
-    U = 118,
-    V = s.find((e) => e.number === U);
-   function I(e) {
-    const n = { h2: 'h2', h3: 'h3', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, {
+    me = 'Skip Link',
+    ge = 'Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.',
+    je = 74,
+    ke = g.find((e) => e.number === je);
+   function ve(e) {
+    const n = { h2: 'h2', h3: 'h3', p: 'p', ...(0, m.a)(), ...e.components };
+    return (0, p.jsxs)(p.Fragment, {
      children: [
       '\n',
       '\n',
@@ -288,77 +355,98 @@
       '\n',
       '\n',
       '\n',
-      (0, r.jsx)(L.Rv, { component: V, headingLevel: 1, description: H }),
+      (0, p.jsx)(te.Rv, { component: ke, headingLevel: 1, description: ge }),
       '\n',
-      (0, r.jsx)(T.I, { component: V }),
+      (0, p.jsx)(n.p, { children: "Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkelijk contentblokken kunnen overslaan. Bijvoorbeeld navigatie die op meerdere pagina's herhaald wordt." }),
       '\n',
-      (0, r.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }),
+      (0, p.jsx)(ee.I, { component: ke }),
       '\n',
-      (0, r.jsx)(G.B, { component: V, illustration: c.Z }),
+      (0, p.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }),
       '\n',
-      (0, r.jsx)(n.h2, { id: 'candidate-component-gebruiken', children: 'Candidate component gebruiken' }),
+      (0, p.jsx)(ne.B, { component: ke, illustration: w }),
       '\n',
-      (0, r.jsx)(n.h3, { id: 'design-tokens', children: 'Design tokens' }),
+      (0, p.jsx)(n.h2, { id: 'candidate-component-gebruiken', children: 'Candidate component gebruiken' }),
       '\n',
-      (0, r.jsx)(R.W, { tokens: P }),
+      (0, p.jsx)(n.h3, { id: 'design-tokens', children: 'Design tokens' }),
       '\n',
-      (0, r.jsx)(N.U, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(S, {}) }),
+      (0, p.jsx)(re.W, { tokens: ae }),
       '\n',
-      (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
+      (0, p.jsx)(ie.U, { omitH1: !0, headingLevel: 3, children: (0, p.jsx)(oe, {}) }),
       '\n',
-      (0, r.jsx)(l.ZP, {}),
+      (0, p.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
       '\n',
-      (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
+      (0, p.jsx)(v.ZP, {}),
       '\n',
-      (0, r.jsx)(a.ZP, {}),
+      (0, p.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
       '\n',
-      (0, r.jsx)(W.W, {
+      (0, p.jsx)(k.ZP, {}),
+      '\n',
+      (0, p.jsx)(le.W, {
        items: [
-        { title: 'Als het label van de Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief.', sc: '1.1.1', status: '', component: (0, r.jsx)(h, {}), tags: ['designer', 'contentmaker'] },
-        { title: 'De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: (0, r.jsx)(g.ZP, {}), tags: ['designer', 'contentmaker'] },
-        { title: 'Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst.', sc: '1.4.5', status: '', component: (0, r.jsx)(y.ZP, {}), tags: ['designer', 'contentmaker'] },
-        { title: 'Als het zichtbare label van de Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.', sc: '1.4.11', status: '', component: (0, r.jsx)(u.ZP, {}), tags: ['designer', 'contentmaker'] },
-        { title: 'De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).', sc: '2.4.4', status: '', component: (0, r.jsx)(z.ZP, {}), tags: ['designer', 'contentmaker'] },
-        { title: 'Als de Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud', sc: '2.4.11', status: '', component: (0, r.jsx)(C.ZP, {}), tags: ['developer', 'designer'] },
-        { title: 'Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: (0, r.jsx)(x.ZP, {}), tags: ['developer', 'contentmaker'] },
-        { title: 'Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: (0, r.jsx)(b.ZP, {}), tags: ['developer', 'designer', 'contentmaker'] },
+        { title: 'De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur.', sc: '1.4.3', status: '', component: (0, p.jsx)(A.ZP, {}), tags: ['designer'] },
+        { title: 'Het label van de Skip Link bestaat uit tekst, niet uit een afbeelding van tekst.', sc: '1.4.5', status: '', component: (0, p.jsx)(J.ZP, {}), tags: ['developer', 'contentmaker'] },
+        { title: 'De Skip Link slaat 1 of meerdere herhalende contentblokken over.', sc: '2.4.1', status: '', component: (0, p.jsx)(q.ZP, {}), tags: ['developer'] },
+        { title: 'De Skip Link staat vooraan in de focusvolgorde van een pagina en verwijst naar de eerste niet-herhalende content op de pagina.', sc: '2.4.3', status: '', component: (0, p.jsx)(N, {}), tags: ['developer'] },
+        { title: 'De linktekst van de Skip Link beschrijft duidelijk het linkdoel.', sc: '2.4.4', status: '', component: (0, p.jsx)(R, {}), tags: ['developer', 'contentmaker'] },
+        { title: 'De Skip Link wordt niet bedekt door een ander element op de pagina.', sc: '2.4.11', status: '', component: (0, p.jsx)(Y.ZP, {}), tags: ['developer'] },
+        { title: 'Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: (0, p.jsx)(H.ZP, {}), tags: ['developer', 'contentmaker'] },
+        { title: "Skip Links die op meerdere pagina's voorkomen staan op iedere pagina vooraan in de focusvolgorde van een pagina.", sc: '3.2.3', status: '', component: (0, p.jsx)(U, {}), tags: ['developer', 'designer'] },
        ],
       }),
       '\n',
-      (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
+      (0, p.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
       '\n',
-      (0, r.jsx)(o.ZP, {}),
+      (0, p.jsx)(j.ZP, {}),
       '\n',
-      (0, r.jsx)(W.W, {
+      (0, p.jsx)(le.W, {
        items: [
-        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, r.jsx)(j.ZP, {}), tags: ['developer'] },
-        { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, r.jsx)(m.ZP, {}), tags: ['developer'] },
-        { title: 'Je kunt de Link focussen met de tabtoets en activeren met de entertoets.', sc: '2.1.1', status: '', component: (0, r.jsx)(p.ZP, {}), tags: ['developer'] },
-        { title: 'De functionaliteit van de Link veroorzaakt geen toetsenbordval.', sc: '2.1.2', status: '', component: (0, r.jsx)(A.ZP, {}), tags: ['developer'] },
-        { title: 'Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar.', sc: '2.4.7', status: '', component: (0, r.jsx)(k.ZP, {}), tags: ['developer', 'designer'] },
-        { title: 'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.', sc: '2.5.2', status: '', component: (0, r.jsx)(w.ZP, {}), tags: ['developer'] },
-        { title: 'De zichtbare naam van de Link komt voor in de toegankelijke naam.', sc: '2.5.3', status: '', component: (0, r.jsx)(f.ZP, {}), tags: ['developer'] },
-        { title: 'De Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels.', sc: '2.5.5', status: '', component: (0, r.jsx)(v.ZP, {}), tags: ['developer'] },
+        { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, p.jsx)(C, {}), tags: ['developer'] },
+        { title: 'Als je de hele webpagina inzoomt tot 400% veroorzaakt de Skip Link geen horizontale scrollbalk en blijft alle tekst op de pagina leesbaar.', sc: '1.4.10', status: '', component: (0, p.jsx)(X.ZP, {}), tags: ['developer', 'designer'] },
+        { title: 'De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot.', sc: '1.4.12', status: '', component: (0, p.jsx)(b, {}), tags: ['developer', 'designer'] },
+        { title: 'Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets.', sc: '2.1.1', status: '', component: (0, p.jsx)(T, {}), tags: ['developer'] },
+        { title: 'Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord.', sc: '2.1.2', status: '', component: (0, p.jsx)(K.ZP, {}), tags: ['developer'] },
+        { title: 'De Skip Link heeft een zichtbare focusindicator.', sc: '2.4.7', status: '', component: (0, p.jsx)(M, {}), tags: ['developer', 'designer'] },
+        { title: 'De Skip Link heeft een zichtbare focusindicator met een dikte van minimaal 2 pixels.', sc: '2.4.13', status: '', component: (0, p.jsx)(G, {}), tags: ['developer', 'designer'] },
+        { title: 'De Skip Link activeren met een enkele aanwijzer kan voorkomen of geannuleerd worden.', sc: '2.5.2', status: '', component: (0, p.jsx)(P, {}), tags: ['developer'] },
+        { title: 'De zichtbare naam van de Skip Link komt voor in de toegankelijke naam.', sc: '2.5.3', status: '', component: (0, p.jsx)(F.ZP, {}), tags: ['developer'] },
+        { title: 'Het aanwijsgebied van de Skip Link is groot genoeg.', sc: '2.5.5', status: '', component: (0, p.jsx)(E, {}), tags: ['developer'] },
+        { title: 'Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats.', sc: '3.2.1', status: '', component: (0, p.jsx)(Q.ZP, {}), tags: ['developer'] },
+        { title: 'Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.', sc: '3.2.4', status: '', component: (0, p.jsx)(B, {}), tags: ['developer', 'designer'] },
+        { title: 'De Skip Link heeft een rol van link.', sc: '4.1.2', status: '', component: (0, p.jsx)(I.ZP, {}), tags: ['developer'] },
        ],
       }),
       '\n',
-      (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
+      (0, p.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
       '\n',
-      (0, r.jsx)(L.W, { component: V, headingLevel: 3 }),
+      (0, p.jsx)(te.W, { component: ke, headingLevel: 3 }),
       '\n',
-      (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
+      (0, p.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, r.jsx)(L.cN, { component: V, headingLevel: 3 }),
+      (0, p.jsx)(te.cN, { component: ke, headingLevel: 3 }),
       '\n',
-      (0, r.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
+      (0, p.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, r.jsx)(L.vM, { component: V, headingLevel: 3 }),
+      (0, p.jsx)(te.vM, { component: ke, headingLevel: 3 }),
      ],
     });
    }
-   function B(e = {}) {
+   function fe(e = {}) {
+    const { wrapper: n } = { ...(0, m.a)(), ...e.components };
+    return n ? (0, p.jsx)(n, { ...e, children: (0, p.jsx)(ve, { ...e }) }) : ve(e);
+   }
+  },
+  18833: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => o });
+   var r = t(52676),
+    i = t(40139);
+   function s(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.' }), '\n', (0, r.jsx)(n.p, { children: 'Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.' }), '\n', (0, r.jsx)(n.p, { children: 'Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).' }), '\n', (0, r.jsx)(n.p, { children: "Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video's en landkaarten." }), '\n', (0, r.jsx)(n.p, { children: 'Definieer in de CSS een wijze om lange woorden af te breken en door te laten lopen op de volgende regel. Voorkom zo een horizontale scrollbar en onleesbare tekst.' })] });
+   }
+   function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(I, { ...e }) }) : I(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
   1459: (e, n, t) => {
@@ -367,8 +455,8 @@
    var r = t(52676),
     i = t(40139);
    function s(e) {
-    const n = { li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Gebruik geen afbeeldingen van tekst, wanneer je ook gewone tekst kan gebruiken met vergelijkbare visuele opmaak.' }), '\n', (0, r.jsx)(n.p, { children: 'Wanneer het technisch niet mogelijk is om een tekst er uit te laten zien zoals bedoeld, dan zijn er twee uitzondering om een afbeelding te gebruiken.' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: 'De tekst in een logo, die hoort bij het beeldmerk.' }), '\n', (0, r.jsx)(n.li, { children: 'De gebruiker kan weergave van de afbeelding wijzigen, zoals font, kleur en tekstgrootte.' }), '\n'] })] });
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Laat tekst buiten afbeeldingen.' }), '\n', (0, r.jsx)(n.p, { children: 'Als je losse tekst een vergelijkbaar uiterlijk kan geven als in een afbeelding, laat het dan losse tekst zijn. Er is een uitzondering als de tekst onderdeel is van een logo.' }), '\n', (0, r.jsx)(n.p, { children: 'Sommige mensen hebben teksten nodig met een ander uiterlijk. Dit kan bij losse tekst en niet bij afbeeldingen.' })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -389,6 +477,20 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
+  21511: (e, n, t) => {
+   'use strict';
+   t.d(n, { ZP: () => o });
+   var r = t(52676),
+    i = t(40139);
+   function s(e) {
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Geef gebruikers van hulpmiddelen de mogelijkheid om binnen een pagina snel te navigeren door onderdelen, zoals een menu, te kunnen overslaan.' }), '\n', (0, r.jsx)(n.p, { children: 'Gebruikers die de website van boven naar beneden doornemen moeten makkelijk grote stukken content kunnen overslaan om bijvoorbeeld direct naar de hoofdinhoud kunnen gaan. Het gaat hierbij om grote stukken content die op elke pagina herhaald wordt, zoals de hoofdnavigatie en een filter.' }), '\n', (0, r.jsx)(n.p, { children: 'Dan voorkom je dat een toetsenbordgebruiker eerst door een menu of filter moet tabben om bij een link in de hoofdinhoud te komen.' })] });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, i.a)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
   97183: (e, n, t) => {
    'use strict';
    t.d(n, { ZP: () => o });
@@ -403,14 +505,14 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  15953: (e, n, t) => {
+  16771: (e, n, t) => {
    'use strict';
    t.d(n, { ZP: () => o });
    var r = t(52676),
     i = t(40139);
    function s(e) {
-    const n = { p: 'p', strong: 'strong', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'De linktekst vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).' }), '\n', (0, r.jsxs)(n.p, { children: ['Wat is een ', (0, r.jsx)(n.strong, { children: 'linktekst' }), '? Het is de tekst die zichtbaar is, maar ook de tekst die aan een gebruiker van hulpsoftware wordt voorgelezen.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Wat is het ', (0, r.jsx)(n.strong, { children: 'linkdoel' }), '? De locatie waar de link naartoe gaat. Bijvoorbeeld de contactpagina, een nieuwsbericht, een andere website of een download van een document.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Wat betekent ', (0, r.jsx)(n.strong, { children: 'In context' }), '? Het doel van de link kan ook door omringende content worden aangegeven. Dit moet dan wel ook voor gebruikers van hulpmiddelen duidelijk zijn, bijvoorbeeld door aanvullende tekst of een afbeelding naast de link. Dit laatste is onderwerp van veel discussie. Het beste is om altijd goed in de linktekst zelf te vertellen want het doel is.'] })] });
+    const n = { p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Verras een gebruiker niet als die een interactief element focus geeft. Maak functionaliteit voorspelbaar en daardoor goed te begrijpen.' }), '\n', (0, r.jsx)(n.p, { children: 'Als een gebruiker een component focus geeft met het toetsenbord of door erop te klikken met de muis, zorg dan dat die actie niet automatisch een contextwijziging veroorzaakt.' }), '\n', (0, r.jsx)(n.p, { children: 'Bij een contextwijziging verandert onverwacht de indeling, informatie, toetsenbordfocus of functionaliteit. Bijvoorbeeld door het direct versturen van een formulier na het kiezen van een select-optie, waarna de gebruiker naar een andere pagina wordt doorgestuurd.' })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
@@ -466,11 +568,11 @@
    const d = (e) => {
      let { title: n, sc: t, component: d, tags: h } = e;
      const u = (0, l.useId)(),
-      m = [...h];
+      p = [...h];
      if (t) {
-      m.push(t);
+      p.push(t);
       const e = i.fg.get(t);
-      e?.conformance && m.push(`Niveau ${e.conformance}`);
+      e?.conformance && p.push(`Niveau ${e.conformance}`);
      }
      return (0, c.jsx)('li', {
       className: (0, a.Z)(
@@ -486,7 +588,7 @@
           (0, c.jsx)('div', { children: d }),
           (0, c.jsx)(s.k, {
            className: 'new-checklist__badge-list',
-           children: m.map((e, n) => {
+           children: p.map((e, n) => {
             let t = (0, c.jsx)(o.O, { children: e }, n);
             if (/^[0-9]+\.[0-9]+\.[0-9]+$/.test(e)) {
              const s = i.fg.get(e);
@@ -519,7 +621,7 @@
        let { tags: n } = e;
        return 0 === t.length || n.some((e) => t.includes(e));
       }),
-      m = n.length - u.length;
+      p = n.length - u.length;
      return (0, c.jsxs)('div', {
       children: [
        (0, c.jsxs)('div', {
@@ -554,7 +656,7 @@
             ? (0, c.jsxs)(c.Fragment, {
                children: [
                 (0, c.jsxs)('p', { role: 'status', children: ['Er wordt op ', t.length, ' onderwerpen gefilterd.'] }),
-                (0, c.jsxs)('p', { children: [m, ' van de ', n.length, ' items zijn nu niet zichtbaar.'] }),
+                (0, c.jsxs)('p', { children: [p, ' van de ', n.length, ' items zijn nu niet zichtbaar.'] }),
                 (0, c.jsx)(s.zx, {
                  appearance: 'secondary-action-button',
                  onClick: () => {
@@ -609,7 +711,7 @@
      let { component: n, illustration: d } = e;
      const { title: h } = n,
       u = (0, o.mA)(h),
-      m = s.lazy(() => t(22930)(`./${u}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
+      p = s.lazy(() => t(22930)(`./${u}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
      return (0, a.jsx)(s.Suspense, {
       fallback: null,
       children: (0, a.jsxs)('figure', {
@@ -617,7 +719,7 @@
        children: [
         d && (0, a.jsx)(d, { height: null, className: (0, i.Z)('component-anatomy__illustration') }),
         d &&
-         m &&
+         p &&
          (0, a.jsx)('figcaption', {
           children: (0, a.jsx)(r.U, {
            omitH1: !0,
@@ -632,7 +734,7 @@
              return (0, a.jsx)(c, { children: n });
             },
            },
-           children: (0, a.jsx)(m, {}),
+           children: (0, a.jsx)(p, {}),
           }),
          }),
        ],
@@ -642,7 +744,7 @@
   },
   8657: (e, n, t) => {
    'use strict';
-   t.d(n, { cN: () => y, vM: () => C, W: () => A, Rv: () => z });
+   t.d(n, { cN: () => b, vM: () => z, W: () => A, Rv: () => C });
    var r = t(41115),
     i = t(4814),
     s = t(39854),
@@ -656,11 +758,11 @@
      let { brand: n } = e;
      return (0, d.jsx)(r.JO, { children: h[n] || (0, d.jsx)(c.Z, {}) });
     };
-   var m = t(35038),
-    g = t(40598);
-   const j = (e) => {
+   var p = t(35038),
+    m = t(40598);
+   const g = (e) => {
     let { checked: n, unchecked: r } = e;
-    return (0, d.jsx)(g.Z, {
+    return (0, d.jsx)(m.Z, {
      fallback: (0, d.jsx)(d.Fragment, {}),
      children: () => {
       const e = t(79333).YE;
@@ -677,29 +779,29 @@
      },
     });
    };
-   var p = t(23355),
+   var j = t(23355),
     k = t(41757),
-    w = t(16167),
+    v = t(16167),
     f = t(55476);
-   const v = (e) => {
+   const y = (e) => {
      let { children: n } = e;
      return (0, d.jsx)('ul', { className: 'task-list', children: n });
     },
-    x = (e) => {
+    w = (e) => {
      let { checked: n, children: t, title: r, description: s, headingLevel: o = 3 } = e;
-     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(w.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, t] })] });
+     return (0, d.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, d.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', n && 'task-list-item__marker--checked'), children: [(0, d.jsx)('span', { className: 'task-list-item__marker-label', children: n ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), n && (0, d.jsx)(f.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, d.jsxs)('div', { children: [(0, d.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: o, children: r }), s, t] })] });
     };
-   var b = t(14669);
-   const y = (e) => {
+   var x = t(14669);
+   const b = (e) => {
      let { component: n, headingLevel: t } = e;
-     const s = n && n.projects.filter((e) => b.e9.includes(e.id)),
-      o = s && b.e9.map((e) => s.find((n) => n.id === e)).filter(Boolean);
+     const s = n && n.projects.filter((e) => x.e9.includes(e.id)),
+      o = s && x.e9.map((e) => s.find((n) => n.id === e)).filter(Boolean);
      return (
       n &&
       (0, d.jsx)(r.a2, {
        appearance: '',
        sections: o.map((e) => ({
-        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, b.mA)(e.title)}`),
+        className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(e.title)}`),
         headingLevel: t,
         expanded: !1,
         label: e ? `${e.title} - ${e.progress.value} van ${e.progress.max}` : '',
@@ -707,10 +809,10 @@
          e &&
          (0, d.jsxs)(d.Fragment, {
           children: [
-           (0, d.jsx)(v, {
+           (0, d.jsx)(y, {
             children: e.tasks.map((e) => {
              let { checked: n, name: r, id: i } = e;
-             return (0, d.jsx)(x, { headingLevel: t + 1, checked: n, title: r, description: (0, b.Q6)(i) }, i);
+             return (0, d.jsx)(w, { headingLevel: t + 1, checked: n, title: r, description: (0, x.Q6)(i) }, i);
             }),
            }),
            (0, d.jsx)(r.nv, { children: (0, d.jsxs)(r.rU, { href: `${e.url}?filterQuery=${n.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -722,9 +824,9 @@
     },
     A = (e) => {
      let { component: n, headingLevel: t } = e;
-     const i = n && n.projects.filter((e) => !b.e9.includes(e.id));
+     const i = n && n.projects.filter((e) => !x.e9.includes(e.id));
      return n && i.length
-      ? (0, d.jsx)(m.um, {
+      ? (0, d.jsx)(p.um, {
          appearance: 'large',
          className: 'implementation-card-group',
          children: i
@@ -739,7 +841,7 @@
              return 'Naam' === n;
             }),
             i = n?.value,
-            s = (0, b.ps)(e),
+            s = (0, x.ps)(e),
             o = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${i} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
@@ -749,13 +851,13 @@
              return o.has(n) && URL.canParse(t) && 'https:' === new URL(t).protocol;
             });
            return (0, d.jsx)(
-            m.Zb,
+            p.Zb,
             {
              className: 'implementation-card',
-             children: (0, d.jsxs)(m.aY, {
+             children: (0, d.jsxs)(p.aY, {
               children: [
                (0, d.jsx)(r.X6, { level: t, children: e.title.replace(/^Community/i, '') }),
-               (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(j, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, d.jsxs)(r.nv, { children: [(0, d.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                (a.length > 0 || s.length > 0) && (0, d.jsx)(r.X6, { level: t + 1, children: 'Snel aan de slag' }),
                a.length > 0 &&
                 (0, d.jsx)(d.Fragment, {
@@ -784,21 +886,21 @@
         })
       : (0, d.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    C = (e) => {
+    z = (e) => {
      let { component: n } = e;
      const t = n?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
      return n && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', n.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, d.jsxs)(r.QI, { children: [i ? (0, d.jsxs)(r.AS, { children: ['Vul de ', (0, d.jsx)(r.rU, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, d.jsxs)(r.AS, { children: [(0, d.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', n.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, d.jsxs)(r.AS, { children: ['Draag bij aan de voortgang van ', n.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, d.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, d.jsx)(r.rU, { href: n.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    z = (e) => {
+    C = (e) => {
      let { component: n, headingLevel: t, description: i } = e;
-     const s = n && b.$3[n.relayStep];
-     return n && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(k.V, { level: t, suffix: s && (0, d.jsx)(p.y, { state: s }), children: n.title }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
+     const s = n && x.$3[n.relayStep];
+     return n && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(k.V, { level: t, suffix: s && (0, d.jsx)(j.y, { state: s }), children: n.title }), (0, d.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   49556: (e, n, t) => {
    'use strict';
-   t.d(n, { W: () => z });
+   t.d(n, { W: () => C });
    var r = t(55410),
     i = t(70997),
     s = t(14669),
@@ -809,11 +911,11 @@
     d = t(75119),
     h = t(38548),
     u = t(41115),
-    m = t(52676);
-   function g(e) {
+    p = t(52676);
+   function m(e) {
     let { children: n, content: t, language: r } = e;
     return 'clipboard' in navigator
-     ? (0, m.jsxs)(o.zx, {
+     ? (0, p.jsxs)(o.zx, {
         type: 'button',
         appearance: 'secondary-action-button',
         onClick: async function () {
@@ -824,45 +926,45 @@
           console.error(e);
          }
         },
-        children: [n, (0, m.jsx)(u.JO, { children: (0, m.jsx)(h.Z, {}) })],
+        children: [n, (0, p.jsx)(u.JO, { children: (0, p.jsx)(h.Z, {}) })],
        })
      : null;
    }
-   var j = t(6076),
-    p = t(32463),
+   var g = t(6076),
+    j = t(32463),
     k = t(85904),
-    w = t(86384),
+    v = t(86384),
     f = t(65012),
-    v = t(31795),
-    x = t(37923),
-    b = t(49003),
-    y = t(75271);
-   const A = { color: j.Z, dimension: p.Z, fontFamilies: k.Z, fontSizes: w.Z, fontWeights: f.Z, lineHeights: v.Z, other: x.Z, textDecoration: b.Z },
-    C = (e) => {
+    y = t(31795),
+    w = t(37923),
+    x = t(49003),
+    b = t(75271);
+   const A = { color: g.Z, dimension: j.Z, fontFamilies: k.Z, fontSizes: v.Z, fontWeights: f.Z, lineHeights: y.Z, other: w.Z, textDecoration: x.Z },
+    z = (e) => {
      let { type: n } = e;
-     return (0, m.jsx)(u.JO, { children: (0, y.createElement)(A[n]) });
+     return (0, p.jsx)(u.JO, { children: (0, b.createElement)(A[n]) });
     };
-   function z(e) {
+   function C(e) {
     let { tokens: n } = e;
     const t = (0, s.s0)(n),
      a = (0, s.fO)(t),
      l = a.map((e) => (0, s.$e)(e) + ': ;').join('\n'),
      c = JSON.stringify((0, s.qU)(a));
-    return (0, m.jsxs)(m.Fragment, {
+    return (0, p.jsxs)(p.Fragment, {
      children: [
-      (0, m.jsxs)(o.iA, {
+      (0, p.jsxs)(o.iA, {
        children: [
-        (0, m.jsx)(o.xD, { children: (0, m.jsxs)(o.SC, { children: [(0, m.jsx)(o.xs, { children: 'name' }), (0, m.jsx)(o.xs, { children: 'type' })] }) }),
-        (0, m.jsx)(o.RM, {
+        (0, p.jsx)(o.xD, { children: (0, p.jsxs)(o.SC, { children: [(0, p.jsx)(o.xs, { children: 'name' }), (0, p.jsx)(o.xs, { children: 'type' })] }) }),
+        (0, p.jsx)(o.RM, {
          children: a.map((e) => {
           const t = (0, s.zP)(e),
            a = (0, s.Yr)(n, e).$type;
-          return (0, m.jsxs)(o.SC, { children: [(0, m.jsx)(o.pj, { children: (0, m.jsx)(r.E, { children: (0, m.jsx)(o.YG, { children: t }) }) }), (0, m.jsx)(o.pj, { children: (0, m.jsxs)(i.O, { children: [(0, m.jsx)(C, { type: a }), ' ', a] }) })] }, t);
+          return (0, p.jsxs)(o.SC, { children: [(0, p.jsx)(o.pj, { children: (0, p.jsx)(r.E, { children: (0, p.jsx)(o.YG, { children: t }) }) }), (0, p.jsx)(o.pj, { children: (0, p.jsxs)(i.O, { children: [(0, p.jsx)(z, { type: a }), ' ', a] }) })] }, t);
          }),
         }),
        ],
       }),
-      (0, m.jsxs)(o.hE, { children: [(0, m.jsx)(g, { content: c, language: 'json', children: 'Kopieer als JSON' }), (0, m.jsx)(g, { content: l, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, p.jsxs)(o.hE, { children: [(0, p.jsx)(m, { content: c, language: 'json', children: 'Kopieer als JSON' }), (0, p.jsx)(m, { content: l, language: 'css', children: 'Kopieer als CSS' })] }),
      ],
     });
    }
@@ -1017,7 +1119,7 @@
   },
   14669: (e, n, t) => {
    'use strict';
-   t.d(n, { $3: () => r, $e: () => p, BA: () => a, Ee: () => d, Q6: () => s, U: () => m, Yr: () => k, d: () => h, e9: () => o, fO: () => f, mA: () => i, ps: () => g, qU: () => v, s0: () => w, zP: () => j });
+   t.d(n, { $3: () => r, $e: () => j, BA: () => a, Ee: () => d, Q6: () => s, U: () => p, Yr: () => k, d: () => h, e9: () => o, fO: () => f, mA: () => i, ps: () => m, qU: () => y, s0: () => v, zP: () => g });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
@@ -1039,7 +1141,7 @@
       .flatMap((e) => u(e));
      return c(l(n));
     },
-    h = (e, n) => m(e).includes(n),
+    h = (e, n) => p(e).includes(n),
     u = (e) => {
      const n = / URL \(([^)]+)\)/;
      return c(
@@ -1056,8 +1158,8 @@
       ),
      );
     },
-    m = (e) => c(l(e.projects.flatMap((e) => u(e)))),
-    g = (e) => {
+    p = (e) => c(l(e.projects.flatMap((e) => u(e)))),
+    m = (e) => {
      const n = u(e),
       t = ((e) => {
        const n = e.tasks.find((e) => {
@@ -1081,20 +1183,20 @@
       return { frameworkName: n, tasks: r };
      });
     },
-    j = (e) => e.join('.'),
-    p = (e) => '--' + e.join('-'),
+    g = (e) => e.join('.'),
+    j = (e) => '--' + e.join('-'),
     k = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function w(e, n) {
-    return void 0 === n && (n = []), Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? w(e[t], [...n, t]) : []));
+   function v(e, n) {
+    return void 0 === n && (n = []), Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? v(e[t], [...n, t]) : []));
    }
    function f(e) {
     const n = new Map();
     function t(e) {
-     return n.has(e) || n.set(e, j(e)), n.get(e);
+     return n.has(e) || n.set(e, g(e)), n.get(e);
     }
     return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
    }
-   function v(e) {
+   function y(e) {
     const n = {};
     for (const t of e) {
      let e = n;
@@ -1130,6 +1232,224 @@
     return t.e(n[1]).then(() => t(i));
    }
    (i.keys = () => Object.keys(r)), (i.id = 22930), (e.exports = i);
+  },
+  55410: (e, n, t) => {
+   'use strict';
+   t.d(n, { E: () => h });
+   var r = t(24994),
+    i = t(58190),
+    s = t(52676),
+    o = t(4814),
+    a = t(75271),
+    l = ['children', 'className'];
+   function c(e, n) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+     var r = Object.getOwnPropertySymbols(e);
+     n &&
+      (r = r.filter(function (n) {
+       return Object.getOwnPropertyDescriptor(e, n).enumerable;
+      })),
+      t.push.apply(t, r);
+    }
+    return t;
+   }
+   function d(e) {
+    for (var n = 1; n < arguments.length; n++) {
+     var t = null != arguments[n] ? arguments[n] : {};
+     n % 2
+      ? c(Object(t), !0).forEach(function (n) {
+         (0, r.Z)(e, n, t[n]);
+        })
+      : Object.getOwnPropertyDescriptors
+        ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
+        : c(Object(t)).forEach(function (n) {
+           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n));
+          });
+    }
+    return e;
+   }
+   var h = (0, a.forwardRef)(function (e, n) {
+    var t = e.children,
+     r = e.className,
+     a = (0, i.Z)(e, l);
+    return (0, s.jsx)('code', d(d({ dir: 'ltr', translate: 'no', className: (0, o.W)('nl-code', r) }, a), {}, { ref: n, children: t }));
+   });
+   h.displayName = 'Code';
+   !(function (e, n) {
+    void 0 === n && (n = {});
+    var t = n.insertAt;
+    if ('undefined' != typeof document) {
+     var r = document.head || document.getElementsByTagName('head')[0],
+      i = document.createElement('style');
+     (i.type = 'text/css'), 'top' === t && r.firstChild ? r.insertBefore(i, r.firstChild) : r.appendChild(i), i.styleSheet ? (i.styleSheet.cssText = e) : i.appendChild(document.createTextNode(e));
+    }
+   })('.nl-code{background-color:var(--nl-code-background-color);color:var(--nl-code-color);font-family:var(--nl-code-font-family, monospace),monospace;font-size:var(--nl-code-font-size, inherit);hyphens:none;white-space:pre-wrap}\n');
+  },
+  70997: (e, n, t) => {
+   'use strict';
+   t.d(n, { O: () => p });
+   var r = t(24994),
+    i = t(58190),
+    s = t(52676),
+    o = t(4814),
+    a = t(75271),
+    l = ['children'],
+    c = ['dateTime'],
+    d = ['value'];
+   function h(e, n) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+     var r = Object.getOwnPropertySymbols(e);
+     n &&
+      (r = r.filter(function (n) {
+       return Object.getOwnPropertyDescriptor(e, n).enumerable;
+      })),
+      t.push.apply(t, r);
+    }
+    return t;
+   }
+   function u(e) {
+    for (var n = 1; n < arguments.length; n++) {
+     var t = null != arguments[n] ? arguments[n] : {};
+     n % 2
+      ? h(Object(t), !0).forEach(function (n) {
+         (0, r.Z)(e, n, t[n]);
+        })
+      : Object.getOwnPropertyDescriptors
+        ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
+        : h(Object(t)).forEach(function (n) {
+           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n));
+          });
+    }
+    return e;
+   }
+   var p = (0, a.forwardRef)(function (e, n) {
+    var t = e.children,
+     r = (0, i.Z)(e, l),
+     a = (0, o.W)('nl-data-badge', e.className);
+    if (
+     (function (e) {
+      return 'dateTime' in e;
+     })(r)
+    ) {
+     var h = r.dateTime,
+      p = (0, i.Z)(r, c);
+     return (0, s.jsx)('time', u(u({}, p), {}, { dateTime: h, className: a, ref: n, children: t }));
+    }
+    if (
+     (function (e) {
+      return 'value' in e;
+     })(r)
+    ) {
+     var m = r.value,
+      g = (0, i.Z)(r, d);
+     return (0, s.jsx)('data', u(u({}, g), {}, { value: m, className: a, ref: n, children: t }));
+    }
+    return (0, s.jsx)('span', u(u({}, r), {}, { className: a, ref: n, children: t }));
+   });
+   p.displayName = 'DataBadge';
+   !(function (e, n) {
+    void 0 === n && (n = {});
+    var t = n.insertAt;
+    if ('undefined' != typeof document) {
+     var r = document.head || document.getElementsByTagName('head')[0],
+      i = document.createElement('style');
+     (i.type = 'text/css'), 'top' === t && r.firstChild ? r.insertBefore(i, r.firstChild) : r.appendChild(i), i.styleSheet ? (i.styleSheet.cssText = e) : i.appendChild(document.createTextNode(e));
+    }
+   })('.nl-data-badge{background-color:var(--nl-data-badge-background-color);border-color:var(--nl-data-badge-border-color, currentColor);border-radius:var(--nl-data-badge-border-radius, 0);border-style:solid;border-width:var(--nl-data-badge-border-width, 1px);box-sizing:border-box;color:var(--nl-data-badge-color);display:inline-block;font-family:var(--nl-data-badge-font-family);font-size:var(--nl-data-badge-font-size);font-weight:var(--nl-data-badge-font-weight);line-height:var(--nl-data-badge-line-height);max-block-size:max-content;max-inline-size:max-content;min-block-size:var(--nl-data-badge-min-block-size);min-inline-size:var(--nl-data-badge-min-inline-size);padding-block:var(--nl-data-badge-padding-block);padding-inline:var(--nl-data-badge-padding-inline);text-decoration:none}@media screen and (forced-colors: active){.nl-data-badge{border-color:currentColor;border-width:min(var(--nl-data-badge-border-width, 1px),1px)}}\n');
+  },
+  65012: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'bold', 'IconBold', [
+    ['path', { d: 'M7 5h6a3.5 3.5 0 0 1 0 7h-6z', key: 'svg-0' }],
+    ['path', { d: 'M13 12h1a3.5 3.5 0 0 1 0 7h-7v-7', key: 'svg-1' }],
+   ]);
+  },
+  38548: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'copy', 'IconCopy', [
+    ['path', { d: 'M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z', key: 'svg-0' }],
+    ['path', { d: 'M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1', key: 'svg-1' }],
+   ]);
+  },
+  85904: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'file-typography', 'IconFileTypography', [
+    ['path', { d: 'M14 3v4a1 1 0 0 0 1 1h4', key: 'svg-0' }],
+    ['path', { d: 'M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z', key: 'svg-1' }],
+    ['path', { d: 'M11 18h2', key: 'svg-2' }],
+    ['path', { d: 'M12 18v-7', key: 'svg-3' }],
+    ['path', { d: 'M9 12v-1h6v1', key: 'svg-4' }],
+   ]);
+  },
+  37923: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'file-unknown', 'IconFileUnknown', [
+    ['path', { d: 'M14 3v4a1 1 0 0 0 1 1h4', key: 'svg-0' }],
+    ['path', { d: 'M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z', key: 'svg-1' }],
+    ['path', { d: 'M12 17v.01', key: 'svg-2' }],
+    ['path', { d: 'M12 14a1.5 1.5 0 1 0 -1.14 -2.474', key: 'svg-3' }],
+   ]);
+  },
+  31795: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'line-height', 'IconLineHeight', [
+    ['path', { d: 'M3 8l3 -3l3 3', key: 'svg-0' }],
+    ['path', { d: 'M3 16l3 3l3 -3', key: 'svg-1' }],
+    ['path', { d: 'M6 5l0 14', key: 'svg-2' }],
+    ['path', { d: 'M13 6l7 0', key: 'svg-3' }],
+    ['path', { d: 'M13 12l7 0', key: 'svg-4' }],
+    ['path', { d: 'M13 18l7 0', key: 'svg-5' }],
+   ]);
+  },
+  6076: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'palette', 'IconPalette', [
+    ['path', { d: 'M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25', key: 'svg-0' }],
+    ['path', { d: 'M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0', key: 'svg-1' }],
+    ['path', { d: 'M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0', key: 'svg-2' }],
+    ['path', { d: 'M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0', key: 'svg-3' }],
+   ]);
+  },
+  32463: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'ruler', 'IconRuler', [
+    ['path', { d: 'M5 4h14a1 1 0 0 1 1 1v5a1 1 0 0 1 -1 1h-7a1 1 0 0 0 -1 1v7a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1', key: 'svg-0' }],
+    ['path', { d: 'M4 8l2 0', key: 'svg-1' }],
+    ['path', { d: 'M4 12l3 0', key: 'svg-2' }],
+    ['path', { d: 'M4 16l2 0', key: 'svg-3' }],
+    ['path', { d: 'M8 4l0 2', key: 'svg-4' }],
+    ['path', { d: 'M12 4l0 3', key: 'svg-5' }],
+    ['path', { d: 'M16 4l0 2', key: 'svg-6' }],
+   ]);
+  },
+  86384: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'text-size', 'IconTextSize', [
+    ['path', { d: 'M3 7v-2h13v2', key: 'svg-0' }],
+    ['path', { d: 'M10 5v14', key: 'svg-1' }],
+    ['path', { d: 'M12 19h-4', key: 'svg-2' }],
+    ['path', { d: 'M15 13v-1h6v1', key: 'svg-3' }],
+    ['path', { d: 'M18 12v7', key: 'svg-4' }],
+    ['path', { d: 'M17 19h2', key: 'svg-5' }],
+   ]);
+  },
+  49003: (e, n, t) => {
+   'use strict';
+   t.d(n, { Z: () => r });
+   var r = (0, t(72315).Z)('outline', 'underline', 'IconUnderline', [
+    ['path', { d: 'M7 5v5a5 5 0 0 0 10 0v-5', key: 'svg-0' }],
+    ['path', { d: 'M5 19h14', key: 'svg-1' }],
+   ]);
   },
  },
 ]);

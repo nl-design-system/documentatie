@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 1.4.5 Afbeeldingen van tekst · NL Design System" />
-  <meta data-rh="true" name="description" content="Gebruik geen afbeeldingen van tekst, wanneer je ook gewone tekst kan gebruiken met vergelijkbare visuele opmaak." />
-  <meta data-rh="true" property="og:description" content="Gebruik geen afbeeldingen van tekst, wanneer je ook gewone tekst kan gebruiken met vergelijkbare visuele opmaak." />
+  <meta data-rh="true" name="description" content="Laat tekst buiten afbeeldingen." />
+  <meta data-rh="true" property="og:description" content="Laat tekst buiten afbeeldingen." />
   <meta data-rh="true" name="keywords" content="WCAG,AA,waarneembaar,onderscheidbaar,perceivable,distinguishable,images of text" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/1.4.5/" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.5cfa7b5f.css" />
-  <script src="/assets/js/runtime~main.b421dca5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.0ee0dad6.js" defer="defer"></script>
   <script src="/assets/js/main.fc664596.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -289,14 +289,25 @@
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau AA</span></p>
               </hgroup>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Gebruik geen afbeeldingen van tekst, wanneer je ook gewone tekst kan gebruiken met vergelijkbare visuele opmaak.</p>
-              <p>Wanneer het technisch niet mogelijk is om een tekst er uit te laten zien zoals bedoeld, dan zijn er twee uitzondering om een afbeelding te gebruiken.</p>
+              <p>Laat tekst buiten afbeeldingen.</p>
+              <p>Als je losse tekst een vergelijkbaar uiterlijk kan geven als in een afbeelding, laat het dan losse tekst zijn. Er is een uitzondering als de tekst onderdeel is van een logo.</p>
+              <p>Sommige mensen hebben teksten nodig met een ander uiterlijk. Dit kan bij losse tekst en niet bij afbeeldingen.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>De tekst in een logo, die hoort bij het beeldmerk.</li>
-               <li>De gebruiker kan weergave van de afbeelding wijzigen, zoals font, kleur en tekstgrootte.</li>
+               <li>
+                Controleer voor alle tekst dat deze niet (alleen) in een afbeelding zit. Losse tekst herken je aan:<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Vaak kan losse tekst geselecteerd worden. Tekst in afbeeldingen kun je niet selecteren. Een afbeelding kun je mogelijk wel slepen.</li>
+                 <li>Losse tekst is terug te vinden in de HTML-code. Tekst in een afbeelding is daar niet te vinden.</li>
+                 <li>Losse tekst kan aangepast worden met een vertaaltool, met eigen CSS of met instellingen van je computer of browser. Tekst in een afbeelding is niet aan te passen.</li>
+                </ul>
+               </li>
               </ul>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <h2 id="tips" class="utrecht-heading-2">Tips</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Als de tekst in een afbeelding zit maar toch aangepast kan worden hoe deze eruit ziet, dan voldoet het ook.</li>
+               <li>Dit succescriterium klinkt mogelijk strenger dan het is. Het geldt niet voor afbeeldingen waar tekst niet het hoofdonderwerp is zoals screenshots, grafieken en foto&#x27;s van objecten met tekst.</li>
+              </ul>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -353,7 +364,8 @@
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#tips" class="table-of-contents__link toc-highlight">Tips</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
