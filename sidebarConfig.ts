@@ -265,12 +265,12 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'category',
-              label: 'Mijn Services Community',
+              label: 'MijnServices Community',
               description:
-                'De Mijn Services Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de Mijn Services patronen.',
+                'De MijnServices Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de MijnServices patronen.',
               link: {
                 type: 'generated-index',
-                title: 'Mijn Services Community',
+                title: 'MijnServices Community',
                 slug: 'community/community-sprints/mijn-services-community/overzicht',
               },
               items: [
