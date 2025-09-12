@@ -16,10 +16,10 @@
   },
   {
     "term": "Audiodescriptie",
-    "slug": "Audiodescriptie",
+    "slug": "audiodescriptie",
     "definitions": [
       {
-        "paragraph": "Een hoorbare, gesproken beschrijving van belangrijke visuele informatie die niet voorkomt in de audio van de video."
+        "paragraph": "Een hoorbare, gesproken beschrijving van visuele informatie die niet voorkomt in de audio van de video."
       }
     ],
     "sources": [
@@ -99,6 +99,21 @@
       {
         "name": "Engelstalige uitleg over Accessible Name and Description Computation",
         "url": "https://www.w3.org/TR/accname/"
+      }
+    ]
+  },
+  {
+    "term": "Transcript",
+    "slug": "transcript",
+    "definitions": [
+      {
+        "paragraph": "Een geschreven beschrijving van de informatie in een audiofragment of de audio van een video."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Richtlijnen voor audiodescriptie bij een video",
+        "url": "https://nldesignsystem.nl/richtlijnen/content/video/audiodescriptie/"
       }
     ]
   },
