@@ -21,7 +21,7 @@ TODO: voorbeeldpagina HTML hier toevoegen.
 
 ## Paginaopzet
 
-De pagina is opgedeeld in de volgende componenten: logo, page header, breadcrumbs, heading, paragraph, button, unordered list en footer.
+De pagina is opgedeeld in de volgende componenten: [Logo](/logo), [Page Header](/page-header), [Page Footer](/page-footer), [Breadcrumb Navigation](/breadcrumb-navigation), [Heading](/heading), [Paragraph](/paragraph), [Button](/button), [Unordered List](/unordered-list), [Navigation Bar](/navigation-bar) en [Link](/link).
 
 Een aantal van deze componenten is beschikbaar als [candidate component](/componenten/?status=CANDIDATE). Andere componenten kunnen van een community gebruikt worden, of zelf gemaakt worden. In dit voorbeeld wordt gekozen om de pagina zoveel mogelijk op te bouwen met Candidate componenten. Daarnaast is een aantal componenten alleen als Community component beschikbaar. In dat geval kies je degene die het beste bij het design past.
 
