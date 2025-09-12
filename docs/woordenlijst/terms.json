@@ -103,6 +103,21 @@
     ]
   },
   {
+    "term": "Ondertiteling",
+    "slug": "ondertiteling",
+    "definitions": [
+      {
+        "paragraph": "Een leesbare weergave van geluid in een video."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Richtlijnen voor ondertiteling",
+        "url": "https://nldesignsystem.nl/richtlijnen/content/video/ondertiteling/"
+      }
+    ]
+  },
+  {
     "term": "Proces",
     "slug": "proces",
     "definitions": [
