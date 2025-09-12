@@ -3,7 +3,7 @@
  [94846],
  {
   77583: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => m, contentTitle: () => g, default: () => v, frontMatter: () => u, metadata: () => j, toc: () => f });
+   i.r(n), i.d(n, { assets: () => f, contentTitle: () => g, default: () => v, frontMatter: () => u, metadata: () => j, toc: () => m });
    var r = i(52676),
     s = i(40139),
     t = i(57716),
@@ -20,11 +20,11 @@
     const { wrapper: n } = { ...(0, s.a)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(h, { ...e }) }) : h(e);
    }
-   const u = { title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.3.1 Drie flitsen of beneden drempelwaarde', pagination_label: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', description: 'Maximaal drie flitsen in een seconde.', slug: '2.3.1', keywords: ['WCAG', 'A', 'bedienbaar', 'toevallen en fysieke reacties', 'operable', 'seizures and physical reactions', 'three flashes or below threshold'] },
+   const u = { title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.3.1 Drie flitsen of beneden drempelwaarde', pagination_label: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', description: 'Maximaal drie flitsen in een seconde.', slug: '2.3.1', keywords: ['WCAG', 'A', 'bedienbaar', 'toevallen en fysieke reacties', 'operable', 'seizures and physical reactions', 'three flashes or below threshold', 'non-interferentie'] },
     g = void 0,
-    j = { id: 'wcag/2.3.01', title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', description: 'Maximaal drie flitsen in een seconde.', source: '@site/docs/wcag/2.3.01.mdx', sourceDirName: 'wcag', slug: '/wcag/2.3.1', permalink: '/wcag/2.3.1', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.3.01.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.3.1 Drie flitsen of beneden drempelwaarde', pagination_label: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', description: 'Maximaal drie flitsen in een seconde.', slug: '2.3.1', keywords: ['WCAG', 'A', 'bedienbaar', 'toevallen en fysieke reacties', 'operable', 'seizures and physical reactions', 'three flashes or below threshold'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.2.6 Time-outs', permalink: '/wcag/2.2.6' }, next: { title: 'WCAG-succescriterium 2.3.2 Drie flitsen', permalink: '/wcag/2.3.2' } },
-    m = {},
-    f = [
+    j = { id: 'wcag/2.3.01', title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', description: 'Maximaal drie flitsen in een seconde.', source: '@site/docs/wcag/2.3.01.mdx', sourceDirName: 'wcag', slug: '/wcag/2.3.1', permalink: '/wcag/2.3.1', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/2.3.01.mdx', tags: [], version: 'current', frontMatter: { title: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2.3.1 Drie flitsen of beneden drempelwaarde', pagination_label: 'WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde', description: 'Maximaal drie flitsen in een seconde.', slug: '2.3.1', keywords: ['WCAG', 'A', 'bedienbaar', 'toevallen en fysieke reacties', 'operable', 'seizures and physical reactions', 'three flashes or below threshold', 'non-interferentie'] }, sidebar: 'richtlijnen', previous: { title: 'WCAG-succescriterium 2.2.6 Time-outs', permalink: '/wcag/2.2.6' }, next: { title: 'WCAG-succescriterium 2.3.2 Drie flitsen', permalink: '/wcag/2.3.2' } },
+    f = {},
+    m = [
      { value: 'Uitleg', id: 'uitleg', level: 2 },
      { value: 'Hoe te testen', id: 'hoe-te-testen', level: 2 },
      { value: 'Tips', id: 'tips', level: 2 },
