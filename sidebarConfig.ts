@@ -265,20 +265,20 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'category',
-              label: 'Overheidsbrede Portalen Community',
+              label: 'MijnServices Community',
               description:
-                'De Overheidsbrede Portalen Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de Overheidsbrede Portalen.',
+                'De MijnServices Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de MijnServices patronen.',
               link: {
                 type: 'generated-index',
-                title: 'Overheidsbrede Portalen Community',
-                slug: 'community/community-sprints/overheidsbrede-portalen-community/overzicht',
+                title: 'MijnServices Community',
+                slug: 'community/community-sprints/mijn-services-community/overzicht',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'community/community-sprints/overheidsbrede-portalen-community/overheidsbrede-portalen-community',
+                  id: 'community/community-sprints/mijn-services-community/mijn-services-community',
                 },
-                { type: 'doc', id: 'community/community-sprints/overheidsbrede-portalen-community/aanmelden' },
+                { type: 'doc', id: 'community/community-sprints/mijn-services-community/aanmelden' },
               ],
             },
             {
