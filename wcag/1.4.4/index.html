@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 1.4.4 Herschalen van tekst · NL Design System" />
-  <meta data-rh="true" name="description" content="De gebruiker moet tekst twee keer (200%) kunnen vergroten en nog steeds goed kunnen lezen." />
-  <meta data-rh="true" property="og:description" content="De gebruiker moet tekst twee keer (200%) kunnen vergroten en nog steeds goed kunnen lezen." />
+  <meta data-rh="true" name="description" content="Tekst moet twee keer zo groot kunnen zijn." />
+  <meta data-rh="true" property="og:description" content="Tekst moet twee keer zo groot kunnen zijn." />
   <meta data-rh="true" name="keywords" content="WCAG,AA,waarneembaar,onderscheidbaar,perceivable,distinguishable,resize text" />
   <link data-rh="true" rel="icon" href="/favicon.ico" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/1.4.4/" />
@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.5cfa7b5f.css" />
-  <script src="/assets/js/runtime~main.e36cf304.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.bf4cfaa5.js" defer="defer"></script>
   <script src="/assets/js/main.fc664596.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -289,12 +289,21 @@
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-badge-data nlds-inline-heading-group__badge">Niveau AA</span></p>
               </hgroup>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>De gebruiker moet tekst twee keer (200%) kunnen vergroten. Het gaat hierbij <strong>alleen om het vergroten van tekst</strong> en niet om bijvoorbeeld afbeeldingen of de layout.</p>
-              <p>Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn. Er mag geen inhoud buiten beeld vallen, verborgen zijn of maar gedeeltelijk zichtbaar zijn.</p>
-              <p>Maak indien nodig een uitzondering voor de tekstgrootte instellen van tekst in afbeeldingen en van ondertitels in video&#x27;s.</p>
-              <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Zodat er geen horizontale scrollbar ontstaat of tekst onleesbaar wordt.</p>
-              <h2 id="opgelet" class="utrecht-heading-2">Opgelet</h2>
-              <p>Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.</p>
+              <p>Tekst moet twee keer zo groot kunnen zijn.</p>
+              <p>Een bezoeker moet tekst groter kunnen maken, tot wel twee keer zo groot. De pagina hoeft deze vergroting niet voor de bezoeker uit te voeren. Er hoeven bijvoorbeeld geen knoppen te zijn om mee te vergroten of verkleinen. De pagina moet ruimte bieden dat de bezoeker dit zelf kan doen. Groter maken moet niet tegengehouden worden, en de inhoud en werking van de pagina moet gelijk blijven.</p>
+              <p>Dit geldt alleen voor losse teksten en niet voor ondertitels of afbeeldingen van tekst.</p>
+              <p>Sommige mensen kunnen tekst alleen lezen als deze groter is.</p>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Volg de instructies van <a href="/wcag/1.4.10/" class="utrecht-link utrecht-link--html-a">WCAG succescriterium 1.4.10</a>. Als de webpagina voldoet aan 1.4.10, dan voldoet hij zeer waarschijnlijk ook aan de eisen van 1.4.4.</p>
+              <h2 id="tips" class="utrecht-heading-2">Tips</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Als een pagina niet goed te vergroten is, dan kan dit in de HTML zijn ingesteld. In de <code class="utrecht-code">&lt;head&gt;</code> kan een <code class="utrecht-code">&lt;meta&gt;</code>-element staan met het attribuut <code class="utrecht-code">name=&quot;viewport&quot;</code>. Dit element mag geen <code class="utrecht-code">maximum-scale</code> met een waarde onder de 3, of <code class="utrecht-code">user-scalable</code> met als waarde <code class="utrecht-code">0</code> of <code class="utrecht-code">no</code> bevatten.</li>
+              </ul>
+              <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Stijl - Typografie: <a href="/richtlijnen/stijl/typografie/" class="utrecht-link utrecht-link--html-a">Introductie typografie</a></li>
+               <li>Stijl - Ruimte: <a href="/richtlijnen/stijl/ruimte/" class="utrecht-link utrecht-link--html-a">Introductie ruimte</a></li>
+              </ul>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
@@ -351,7 +360,9 @@
            <div class="tableOfContents_LRQk thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
-             <li><a href="#opgelet" class="table-of-contents__link toc-highlight">Opgelet</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
+             <li><a href="#tips" class="table-of-contents__link toc-highlight">Tips</a></li>
+             <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
