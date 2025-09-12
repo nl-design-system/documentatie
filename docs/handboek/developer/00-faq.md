@@ -30,6 +30,6 @@ De candidate componenten zijn het v
 
 ## Wat als de component die ik wil gebruiken nog niet bestaat?
 
-Controleer goed of de component die je in gedachten hebt nog niet bestaat of dat er niet een andere component bestaat die er zoveel op lijkt dat deze uitgebreid kan worden. Stel eventueel de vraag in de Slack community.
+Controleer goed of de component die je in gedachten hebt nog niet bestaat of dat er niet een andere component bestaat die er zoveel op lijkt dat deze uitgebreid kan worden. Stel eventueel de vraag in de [Slack community](/handboek/developer/aan-de-slag/#hoe-blijf-je-op-de-hoogte).
 
 Wanneer je zeker bent dat je een mooi nieuw component hebt ontdekt kun je [op de componenten maken pagina](/handboek/developer/componenten-maken) meer informatie vinden over hoe je een nieuw component introduceert aan NL Design System.
