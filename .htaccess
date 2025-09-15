@@ -49,6 +49,9 @@ Redirect 301 "/videos/design-system-week-2022" "/events/design-systems-week-2022
 Redirect 301 "/wcag/introduction" "/wcag"
 Redirect 301 "/handboek/design-tokens" "/handboek/huisstijl/design-tokens"
 Redirect 301 "/voorbeelden/templates" "/voorbeelden/patronen-en-templates"
+Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/overzicht/" "/community/community-sprints/mijn-services-community/overzicht/"
+Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/" "/community/community-sprints/mijn-services-community/"
+Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/aanmelden/" "/community/community-sprints/mijn-services-community/aanmelden/"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
