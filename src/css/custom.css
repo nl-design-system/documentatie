@@ -111,6 +111,8 @@ p {
 .utrecht-heading-6,
 .utrecht-paragraph {
   max-inline-size: 38rem;
+  word-break: normal;
+  hyphens: none;
 }
 
 .menu__link {
