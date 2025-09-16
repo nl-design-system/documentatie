@@ -398,6 +398,7 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+        { type: 'doc', id: 'project/slack' },
       ],
     },
   ],
