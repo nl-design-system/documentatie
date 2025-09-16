@@ -30,6 +30,75 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 3.1.0
+
+Design tokens voor 'margin' toegevoegd aan de design token documentatie in Figma
+
+Om een completer beeld te geven van de beschikbare design tokens per component, zijn er design tokens voor 'margin' toegevoegd aan de design token documentatie in Figma.
+
+- [Bekijk de video 'Changelog: Margin tokens toevoegen'](https://youtu.be/V-kI6VAJj70) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Hieronder staat een lijst van componenten waaraan design tokens voor margin zijn toegevoegd. Bij de meeste componenten zijn twee design tokens voor margin toegevoegd. Hiervoor kun je onderstaande code gebruiken:
+
+```json
+"margin-block-end": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+"margin-block-start": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+```
+
+Er zijn enkele componenten waar vier design tokens voor margin zijn toegevoegd. Achter die componenten staat tussen haakjes (4). Hiervoor kun je onderstaande code gebruiken:
+
+```json
+"margin-block-end": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+"margin-block-start": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+"margin-inline-end": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+"margin-inline-start": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+```
+
+Lijst van componenten die van margin tokens zijn voorzien. Elk component linkt naar een omgeving waar de design tokens te bekijken zijn.
+
+- [Accordion](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/css_css-component-accordion-design-tokens--docs)
+- [Action Group](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-action-group--design-tokens)
+- [Alert](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-alert--design-tokens)
+- [Blockquote](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-blockquote--design-tokens) (4)
+- [Codeblock](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-code-block--design-tokens) (4)
+- [Figure](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-figure--design-tokens)
+- [Form Field](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-form-field--design-tokens)
+- [Form Field Description](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-form-field-description--design-tokens)
+- [Form Field Error Message](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-form-field-error-message--design-tokens)
+- [Headings 1 tot 6](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-heading-1--design-tokens)
+- [Link List](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-link-list--design-tokens)
+- [Note (Spotlight Section)](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-spotlight-section--design-tokens)
+- [Page Number Navigation (Pagination)](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-pagination--design-tokens)
+- [Pre Heading](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-pre-heading--design-tokens)
+- [Radio Button](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-radio-button--design-tokens)
+- [Separator](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-separator--design-tokens)
+- [Side Navigation](https://github.com/nl-design-system/denhaag/blob/main/proprietary/tokens/src/components/denhaag/side-navigation.tokens.json) (4)
+- [Table](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-table--design-tokens)
+
 ## 3.0.0
 
 `utrecht-icon` community component toegepast binnen enkele Utrecht componenten.
