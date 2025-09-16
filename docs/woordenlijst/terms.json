@@ -16,10 +16,10 @@
   },
   {
     "term": "Audiodescriptie",
-    "slug": "Audiodescriptie",
+    "slug": "audiodescriptie",
     "definitions": [
       {
-        "paragraph": "Een hoorbare, gesproken beschrijving van belangrijke visuele informatie die niet voorkomt in de audio van de video."
+        "paragraph": "Een hoorbare, gesproken beschrijving van visuele informatie die niet voorkomt in de audio van de video."
       }
     ],
     "sources": [
@@ -107,13 +107,28 @@
     "slug": "ondertiteling",
     "definitions": [
       {
-        "paragraph": "Een leesbare weergave van geluid in een video."
+        "paragraph": "Een leesbare weergave van geluid in een video."     
       }
     ],
     "sources": [
       {
         "name": "Richtlijnen voor ondertiteling",
         "url": "https://nldesignsystem.nl/richtlijnen/content/video/ondertiteling/"
+      }
+    ]
+  },
+  {
+    "term": "Transcript",
+    "slug": "transcript",
+    "definitions": [
+      {
+        "paragraph": "Een geschreven beschrijving van de informatie in een audiofragment of de audio van een video."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Richtlijnen voor audiodescriptie bij een video",
+        "url": "https://nldesignsystem.nl/richtlijnen/content/video/audiodescriptie/"
       }
     ]
   },
