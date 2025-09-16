@@ -3,6 +3,11 @@
   --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-bg-subtle);
 }
 
+.homepage-spotlight-section--hero {
+  --utrecht-heading-2-font-size: 1.25rem;
+  --utrecht-heading-2-margin-block-start: 20px;
+}
+
 .homepage-spotlight-section--heartbeat {
   --utrecht-spotlight-section-margin-block-end: 20px;
   --utrecht-spotlight-section-margin-block-start: 40px;
