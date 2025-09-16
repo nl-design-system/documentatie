@@ -45,63 +45,64 @@ export default function Home() {
       <main>
         <SpotlightSection className="homepage-spotlight-section">
           <div className="container">
-            <Heading1>NL Design System</Heading1>
-            <Paragraph lead>
-              Samen met diverse overheidsorganisaties ontwikkelen we herbruikbare bouwblokken voor toegankelijke en
-              gebruiksvriendelijke webapplicaties en websites.
+            <Heading1>Samen bouwen aan betere digitale dienstverlening</Heading1>
+            <Paragraph appearance="lead">
+              NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te
+              ontdekken we welke componenten écht werken in de praktijk. Zo werken we toe naar een Hall of Fame van
+              gebruiksvriendelijke, toegankelijke componenten, patronen en templates.
             </Paragraph>
+            <Heading2 style={{ fontSize: '1.2rem', marginBlockStart: '20px' }}>Waarom meedoen?</Heading2>
             <UnorderedList>
               <UnorderedListItem>
-                <Strong>Actieve community</Strong> deelt regelmatig kennis, ervaring, componenten en verbeteringen
+                <Strong>Actieve community</Strong> die regelmatig kennis, ervaring en componenten deelt
               </UnorderedListItem>
               <UnorderedListItem>
-                <Strong>Componentenbibliotheek</Strong> beschikbaar voor efficiënt hergebruik
+                <Strong>Groeiende bibliotheek</Strong> gebaseerd op gebruikersonderzoek en praktijkervaring
               </UnorderedListItem>
               <UnorderedListItem>
-                <Strong>Herbruikbaar</Strong> voor iedere huisstijl. Open Source en platform-onafhankelijk
+                <Strong>Open source oplossingen</Strong> waar iedereen componenten kan gebruiken en bijdragen
               </UnorderedListItem>
               <UnorderedListItem>
-                <Strong>Goed onderbouwd</Strong> met praktijkervaring, richtlijnen en gebruikersonderzoek
+                <Strong>Deelnemen op het niveau dat past</Strong>, stap voor stap, zonder licentiekosten
               </UnorderedListItem>
             </UnorderedList>
             <ActionGroup>
-              <ButtonLink href="/handboek/introductie" appearance="primary-action-button">
-                Lees meer over NL Design System
+              <ButtonLink href="/handboek/estafettemodel/" appearance="primary-action-button">
+                Bekijk hoe het werkt
               </ButtonLink>
-              <ButtonLink href="/handboek/estafettemodel" appearance="secondary-action-button">
-                Lees meer over het Estafettemodel
+              <ButtonLink href="/community/sluit-je-aan/" appearance="secondary-action-button">
+                Doe mee
               </ButtonLink>
             </ActionGroup>
           </div>
         </SpotlightSection>
-
         <div className="container">
-          <Heading2>Doe mee</Heading2>
+          <Heading2>Waar begin je?</Heading2>
           <div className="homepage-card-group">
             <Card
-              body="Meedoen als developer? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Storybook en design tokens."
-              heading="Developers"
+              body="Meedoen met code? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Storybook en design tokens."
+              heading="Als je websites bouwt"
               headingLevel={3}
               href="/handboek/developer/overzicht"
               image={<DeveloperSVG />}
             ></Card>
             <Card
-              body="Meedoen als developer? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
-              heading="Designers"
+              body="Meedoen met Figma? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
+              heading="Als je designs maakt"
               headingLevel={3}
               href="/handboek/designer/overzicht"
               image={<DesignerSVG />}
             ></Card>
             <Card
               body="Meedoen als contentmaker? Gebruik vandaag nog onze content richtlijnen bij het maken van toegankelijke webcontent."
-              heading="Contentmakers"
+              heading="Als je content beheert"
               headingLevel={3}
               href="/richtlijnen/content"
               image={<ContentSVG />}
             ></Card>
             <Card
-              body="Meedoen als manager? In de introductie voor managers in het Handboek kun je lezen wat meedoen betekent"
-              heading="Managers"
+              body="Meedoen als manager? Herbruikbare oplossingen die tijd en budget besparen, met business cases en implementatiestrategieën"
+              heading="Als je projecten leidt"
               headingLevel={3}
               href="/handboek/manager/introductie"
               image={<ManagerSVG />}
