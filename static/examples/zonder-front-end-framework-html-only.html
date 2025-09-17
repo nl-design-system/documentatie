@@ -1,204 +1,146 @@
 <!doctype html>
-<html lang="nl" dir="ltr" class="utrecht-root utrecht-theme">
+<html lang="nl" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <title>Graffiti laten verwijderen van uw pand · Gemeente Voorbeeld</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- TODO: Gebruik je eigen hosting voor de CSS, gebruik "https://unpkg.com/" hooguit tijdens development, nooit in productie. -->
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-layout-css@1/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/icon-css@2/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@rijkshuisstijl-community/components-css@5/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-tokens@1.0.1/dist/index.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/skip-link-css@1/dist/skip-link.css" />
-    <!-- https://nldesignsystem.nl/skip-link/ -->
-    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/heading-css@1/dist/heading.css" />
-    <!-- https://nldesignsystem.nl/heading/ -->
-    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/link-css@1/dist/link.css" />
-    <!-- https://nldesignsystem.nl/link/ -->
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/button-css@2/dist/index.css" />
-    <!-- https://nldesignsystem.nl/button/ -->
-    <!-- Gebruik de CSS van met CSS variables om de componenten in te stellen met de huisstijl. -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0/dist/theme.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/design-tokens@2/dist/index.css" />
-    <style></style>
   </head>
 
-  <body class="voorbeeld-theme" id="top">
-    <a href="#main" class="nl-skip-link nl-skip-link--visible-on-focus">Direct naar de hoofdinhoud</a>
-    <div class="utrecht-page-layout">
-      <header>
-        <div class="voorbeeld-page-header__content">
-          <div class="nav-flex">
-            <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
-
-            <div>
-              <a class="utrecht-link" href="#">Contact</a>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12 4C10.3431 4 9 5.34315 9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4ZM7 7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7ZM10 16C8.34315 16 7 17.3431 7 19V21C7 21.5523 6.55228 22 6 22C5.44772 22 5 21.5523 5 21V19C5 16.2386 7.23858 14 10 14H14C16.7614 14 19 16.2386 19 19V21C19 21.5523 18.5523 22 18 22C17.4477 22 17 21.5523 17 21V19C17 17.3431 15.6569 16 14 16H10Z"
-                  fill="#00568B"
-                />
-              </svg>
-              <a class="utrecht-link" href="#">Mijn omgeving</a>
-              <div class="utrecht-form-field__input">
-                <input
-                  id="17804281-5028-44d6-b8a4-53f83f3f4bd9"
-                  placeholder="Bijvoorbeeld zwembad of grofvuil"
-                  type="text"
-                  class="utrecht-textbox utrecht-textbox--html-input"
-                  dir="auto"
-                />
-                <a class="utrecht-button-link utrecht-button--primary-action" href="#">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9056 16.3199C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10Z"
-                      fill="#5115EF"
-                    />
-                  </svg>
-                  Zoeken
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <nav class="voorbeeld-nav rhc-nav-bar">
-            <ul class="rhc-nav-bar__list">
-              <li class="rhc-nav-bar__item" id="start1">
-                <a aria-disabled="false" class="nl-link rhc-link rhc-nav-bar__link" href="/"
-                  ><span class="rhc-nav-bar__label">Home</span></a
-                >
-              </li>
-              <li class="rhc-nav-bar__item voorbeeld-link__current" id="start1">
-                <a aria-disabled="false" class="nl-link rhc-link rhc-nav-bar__link" href="/"
-                  ><span class="rhc-nav-bar__label">Meldingen</span></a
-                >
-              </li>
-              <li class="rhc-nav-bar__item" id="start7">
-                <a aria-disabled="false" class="nl-link rhc-link rhc-nav-bar__link" href="/componenten/"
-                  ><span class="rhc-nav-bar__label">Componenten</span></a
-                >
-              </li>
-              <li class="rhc-nav-bar__item" id="voorbeelden">
-                <a aria-disabled="false" class="nl-link rhc-link rhc-nav-bar__link" href="/voorbeelden/"
-                  ><span class="rhc-nav-bar__label">Voorbeelden</span></a
-                >
-              </li>
-            </ul>
-          </nav>
+  <body id="top">
+    <a href="#main">Direct naar de hoofdinhoud</a>
+    <header>
+      <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+      <div>
+        <a href="#">Contact</a>
+        <a href="#">Mijn omgeving</a>
+        <div>
+          <input
+            id="17804281-5028-44d6-b8a4-53f83f3f4bd9"
+            placeholder="Bijvoorbeeld zwembad of grofvuil"
+            type="text"
+            dir="auto"
+          />
+          <a href="#"> Zoeken </a>
         </div>
-      </header>
+        <nav>
+          <ul>
+            <li id="start1">
+              <a aria-disabled="false" href="/"><span>Home</span></a>
+            </li>
+            <li id="start1">
+              <a aria-disabled="false" href="/"><span>Meldingen</span></a>
+            </li>
+            <li id="start7">
+              <a aria-disabled="false" href="/componenten/"><span>Componenten</span></a>
+            </li>
+            <li id="voorbeelden">
+              <a aria-disabled="false" href="/voorbeelden/"><span>Voorbeelden</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <div class="utrecht-page-body">
-        <div class="utrecht-page-body__content">
-          <nav aria-labelledby="breadcrumb-heading">Home > Meldingen > Meldingen openbare ruimte</nav>
-          <main id="main">
-            <h1 class="nl-heading">Graffiti laten verwijderen van uw pand</h1>
-            <p>
-              Heeft u overlast van graffiti, posters of stickers op uw huis of pand? Meldpunt Graffiti zorgt ervoor dat
-              deze gratis worden verwijderd.
-            </p>
-            <p>
-              Als u een koopwoning heeft of een pand van een particuliere eigenaar huurt of beheert, kunt u gebruik
-              maken van de diensten van het Meldpunt Graffiti.
-            </p>
-            <p>
-              Als u een woning van een corporatie huurt, meldt u vervuiling direct aan hen. De corporatie verzorgt
-              namelijk zelf de reiniging van hun panden.
-            </p>
-            <h2>Eerst toestemming geven</h2>
-            <ul>
-              <li>
-                Graffiti of posters kunnen alleen worden verwijderd als u daarvoor toestemming geeft. U hoeft dit maar 1
-                keer te doen. Heeft u al een keer toestemming gegeven? Dan kunt u de vervuiling meteen melden.
-              </li>
-              <li>
-                Als u eigenaar, beheerder of gebruiker bent en in Gemeente Voorbeeld woont kunt u het formulier met
-                DigiD invullen. Uw inschrijving wordt dan digitaal verzonden.
-              </li>
-              <li>
-                Nutsbedrijven (bijvoorbeeld Stedin, Ziggo, KPN), openbaar vervoersbedrijven (zoals de HTM en de NS) en
-                rijksoverheidsinstellingen, zijn zelf verantwoordelijk voor het reinigen van hun objecten.
-              </li>
-              <li>
-                Woont u niet in Gemeente Voorbeeld of heeft u uw DigiD niet bij de hand? Vul het formulier dan in en
-                print het. Het ondertekende formulier stuurt u naar Meldpunt Graffiti. Dat kan als bijlage per e-mail of
-                per post.
-              </li>
-            </ul>
+    <div>
+      <div>
+        <nav aria-labelledby="breadcrumb-heading">Home > Meldingen > Meldingen openbare ruimte</nav>
+        <main id="main">
+          <h1>Graffiti laten verwijderen van uw pand</h1>
+          <p>
+            Heeft u overlast van graffiti, posters of stickers op uw huis of pand? Meldpunt Graffiti zorgt ervoor dat
+            deze gratis worden verwijderd.
+          </p>
+          <p>
+            Als u een koopwoning heeft of een pand van een particuliere eigenaar huurt of beheert, kunt u gebruik maken
+            van de diensten van het Meldpunt Graffiti.
+          </p>
+          <p>
+            Als u een woning van een corporatie huurt, meldt u vervuiling direct aan hen. De corporatie verzorgt
+            namelijk zelf de reiniging van hun panden.
+          </p>
+          <h2>Eerst toestemming geven</h2>
+          <ul>
+            <li>
+              Graffiti of posters kunnen alleen worden verwijderd als u daarvoor toestemming geeft. U hoeft dit maar 1
+              keer te doen. Heeft u al een keer toestemming gegeven? Dan kunt u de vervuiling meteen melden.
+            </li>
+            <li>
+              Als u eigenaar, beheerder of gebruiker bent en in Gemeente Voorbeeld woont kunt u het formulier met DigiD
+              invullen. Uw inschrijving wordt dan digitaal verzonden.
+            </li>
+            <li>
+              Nutsbedrijven (bijvoorbeeld Stedin, Ziggo, KPN), openbaar vervoersbedrijven (zoals de HTM en de NS) en
+              rijksoverheidsinstellingen, zijn zelf verantwoordelijk voor het reinigen van hun objecten.
+            </li>
+            <li>
+              Woont u niet in Gemeente Voorbeeld of heeft u uw DigiD niet bij de hand? Vul het formulier dan in en print
+              het. Het ondertekende formulier stuurt u naar Meldpunt Graffiti. Dat kan als bijlage per e-mail of per
+              post.
+            </li>
+          </ul>
 
-            <a class="utrecht-button-link utrecht-button--primary-action" href="#">Toestemming geven</a>
+          <a href="#">Toestemming geven</a>
 
-            <h2>Dan vervuiling melden</h2>
-            <p>
-              Als u toestemming heeft gegeven, kunt u de vervuiling op uw pand melden met het meldingsformulier. De
-              vervuiling wordt dan gratis verwijderd. Meld vervuiling met het meldingsformulier.
-            </p>
-            <a class="utrecht-button-link utrecht-button--primary-action" href="#">Melding doen</a>
+          <h2>Dan vervuiling melden</h2>
+          <p>
+            Als u toestemming heeft gegeven, kunt u de vervuiling op uw pand melden met het meldingsformulier. De
+            vervuiling wordt dan gratis verwijderd. Meld vervuiling met het meldingsformulier.
+          </p>
+          <a href="#">Melding doen</a>
 
-            <h2>Racistische graffiti melden</h2>
-            <p>
-              Graffiti met racistisch karakter wordt binnen 24 uur verwijderd. Dit soort graffiti kunt u op werkdagen
-              direct bij de gemeente melden via telefoonnummer 14070. In het weekend en op feestdagen belt u hiervoor de
-              politie via 0900 – 88 44.
-            </p>
+          <h2>Racistische graffiti melden</h2>
+          <p>
+            Graffiti met racistisch karakter wordt binnen 24 uur verwijderd. Dit soort graffiti kunt u op werkdagen
+            direct bij de gemeente melden via telefoonnummer 14070. In het weekend en op feestdagen belt u hiervoor de
+            politie via 0900 – 88 44.
+          </p>
 
-            <h2>Goed om te weten</h2>
-            <h3>Professioneel verwijderd</h3>
-            <p>
-              Het schoonmaken wordt altijd gedaan door een professioneel en gekwalificeerd schoonmaakbedrijf. Dat is
-              belangrijk, omdat graffiti- en wildplakverwijdering specialistisch werk is en uw pand niet mag worden
-              beschadigd. Naast schoonmaakspecialist zijn de schoonmakers daarom ook schilder en gevelspecialist.
-            </p>
+          <h2>Goed om te weten</h2>
+          <h3>Professioneel verwijderd</h3>
+          <p>
+            Het schoonmaken wordt altijd gedaan door een professioneel en gekwalificeerd schoonmaakbedrijf. Dat is
+            belangrijk, omdat graffiti- en wildplakverwijdering specialistisch werk is en uw pand niet mag worden
+            beschadigd. Naast schoonmaakspecialist zijn de schoonmakers daarom ook schilder en gevelspecialist.
+          </p>
 
-            <h3>Aangifte bij de politie</h3>
-            <p>Als de graffiti te lezen is doet het Meldpunt Graffiti, namens u, aangifte bij de politie.</p>
+          <h3>Aangifte bij de politie</h3>
+          <p>Als de graffiti te lezen is doet het Meldpunt Graffiti, namens u, aangifte bij de politie.</p>
 
-            <h2>Hoelang duurt het?</h2>
-            <p>
-              Graffiti, posters en stickers worden in principe binnen 5 werkdagen na melding verwijderd. Hoe snel dit
-              gebeurt hangt af van de weersomstandigheden.
-            </p>
+          <h2>Hoelang duurt het?</h2>
+          <p>
+            Graffiti, posters en stickers worden in principe binnen 5 werkdagen na melding verwijderd. Hoe snel dit
+            gebeurt hangt af van de weersomstandigheden.
+          </p>
 
-            <h2>Contact</h2>
-            <p>
-              Het Meldpunt Graffiti van de gemeente coördineert het schoonmaken van de gevels en werkt samen met
-              verschillende organisaties om de stad zoveel mogelijk vrij van graffiti te houden.
-            </p>
-          </main>
-          <!-- Plaats content die op meerdere pagina's voorkomt buiten de "main" landmark, zoals contactinformatie. -->
-          <aside>
-            <!-- Wanneer je op meerdere pagina's hulp biedt, zoals contactinformatie, zorg dan dat ze op dezelfde plek in de pagina staan. -->
-            <p>Vragen? Neem contact op met {afzender}. Dat kan op de volgende manieren: ...</p>
-          </aside>
-        </div>
+          <h2>Contact</h2>
+          <p>
+            Het Meldpunt Graffiti van de gemeente coördineert het schoonmaken van de gevels en werkt samen met
+            verschillende organisaties om de stad zoveel mogelijk vrij van graffiti te houden.
+          </p>
+        </main>
+        <!-- Plaats content die op meerdere pagina's voorkomt buiten de "main" landmark, zoals contactinformatie. -->
+        <aside>
+          <!-- Wanneer je op meerdere pagina's hulp biedt, zoals contactinformatie, zorg dan dat ze op dezelfde plek in de pagina staan. -->
+          <p>Vragen? Neem contact op met {afzender}. Dat kan op de volgende manieren: ...</p>
+        </aside>
       </div>
     </div>
     <!-- Gebruik het HTML element `footer` om deze belangrijke "landmark region" op te maken, voor toegankelijkheid. -->
-    <footer class="ams-page-footer">
-      <div class="ams-page-footer__spotlight">
-        <div class="ams-grid ams-grid--padding-vertical--x-large">
-          <div class="ams-grid__cell ams-grid__cell--span-4">
+    <footer>
+      <div>
+        <div>
+          <div>
             <img src="/svg/voorbeeld-thema-logo-white.svg" alt="Voorbeeld thema logo" />
           </div>
-          <div class="ams-grid__cell ams-grid__cell--span-4">
+          <div>
             <h3>Contact</h3>
             <p>
               Bel 453453 (maandag tot en met vrijdag van 9:00 tot 17:00) of stuur een email naar vragen@voorbeeld.nl
             </p>
           </div>
-          <div class="ams-grid__cell ams-grid__cell--span-4">
-            <ul class="ams-link-list">
-              <li><a class="ams-link-list__link" href="#">Over gemeente Voorbeeld</a></li>
+          <div>
+            <ul>
+              <li><a href="#">Over gemeente Voorbeeld</a></li>
               <li><a href="#">Nieuwsbrief</a></li>
               <li><a href="#">Social media</a></li>
               <li><a href="#">Werken bij de gemeente Voorbeeld</a></li>
@@ -206,7 +148,7 @@
           </div>
         </div>
 
-        <div class="ams-grid__cell ams-grid__cell--span-4">
+        <div>
           <ul>
             <li><a href="#">Bescherming persoonsgegevens</a></li>
             <li><a href="#">Gebruikersvoorwaarden</a></li>
