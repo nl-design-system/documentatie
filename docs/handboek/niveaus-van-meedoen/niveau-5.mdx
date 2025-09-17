@@ -1,0 +1,186 @@
+---
+title: Niveau 5 · Niveaus van meedoen · Organisatie · Handboek
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Niveau 5
+sidebar_position: 6
+pagination_label: Meedoen
+description: Meedoen met NL Design System vanaf niveau 5
+keywords:
+  - leverancier
+  - waarom NL Design System
+  - waarom een design system
+---
+
+import { Status } from "@gemeente-denhaag/process-steps";
+import { Link, Paragraph } from "@utrecht/component-library-react";
+
+# Niveau 5 - Componenten verbeteren
+
+Help bestaande componenten, patronen en templates te verbeteren door inzichten uit gebruikersonderzoek te delen en missende functionaliteit toe te voegen.
+
+## Wat zijn de voordelen?
+
+- Begin niet helemaal opnieuw wanneer componenten of templates nog niet helemaal aan de nieuwe usecase voldoen.
+- Ruimte voor innovatie door verder te bouwen op bestaande ontwikkelingen op het moment dat het actueel en urgent is.
+
+## Verwachtte inzet
+
+De organisatie voert verbeteringen door aan een component, patroon of template niet dat niet helemaal voldoet aan de wensen of eisen.
+
+Bouw door op bestaande ontwikkelingen, doe gebruikersonderzoeken, deel de beoogde verbeteringen via Github Discussions en werk samen met de community om tot een betere versie te komen.
+
+## Hoe doe je mee?
+
+<div className="ma-theme">
+  <Status
+    collapsible
+    expandedSteps={['niveau-5']}
+    steps={[
+      {
+        id: "niveau-1",
+        marker: "1",
+        status: "checked",
+        steps: [
+          {
+            status: "checked",
+            title: <span><Link href="/community/sluit-je-aan">Schrijf je in</Link> als lid van de community</span>,
+          },
+          {
+            status: "checked",
+            title: <span>Meld je aan voor de CodeForNL Slack via <Link href="https://praatmee.codefor.nl">https://praatmee.codefor.nl</Link></span>,
+          },
+          {
+            status: "checked",
+            title: <span>Deel kennis in de Slack community via het <a href="https://codefornl.slack.com/archives/C7KDQRXMZ">#nl-design-system kanaal</a></span>,
+          },
+          {
+            status: "checked",
+            title: <span>Deel inzichten in de <a href="https://github.com/orgs/nl-design-system/discussions">GitHub Discussions</a></span>,
+          },
+          {
+            status: "checked",
+            title: <span>Deel gebruikersonderzoeken op <a href="https://gebruikersonderzoeken.nl">gebruikersonderzoeken.nl</a></span>,
+          },
+          {
+            status: "checked",
+            title: <span>Sluit aan bij de <a href="/community/events/overzicht/">online bijeenkomsten</a></span>,
+          },
+        ],
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-1/">Niveau 1 - Online Meedoen</a>,
+      },
+      {
+        id: "niveau-2",
+        marker: "2",
+        status: "checked",
+        steps: [
+          {
+            status: "checked",
+            title: <span>Gebruik <Link href="/richtlijnen/stijl/">de Stijl richtlijnen</Link> bij het bepalen van een digitale huisstijl</span>,
+          },
+          {
+            status: "checked",
+            title: <span>Gebruik <Link href="/richtlijnen/formulieren/">de Formulier richtlijnen</Link> tijdens het bouwen van webformulieren</span>,
+          },
+          {
+            status: "checked",
+            title: <span>Gebruik <Link href="/richtlijnen/content/">de Content richtlijnen</Link> tijdens het maken van content</span>,
+          },
+          {
+            status: "checked",
+            title: <span>Gebruik <Link href="/richtlijnen/content/">de WCAG richtlijnen</Link> voor hulp om WCAG 2.2 succescriteria te gebruiken</span>,
+          },
+        ],
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-2/">Niveau 2 - Richtlijnen gebruiken</a>,
+      },
+      {
+        id: "niveau-3",
+        marker: 3,
+        steps: [
+          {
+            status: "checked",
+            title: <span>Leer hoe NL Design System met <a href="/handboek/huisstijl/design-tokens/">Design Tokens</a> werkt</span>
+          },
+          {
+            status: "checked",
+            title: <span>Gebruik <a href="/handboek/huisstijl/themas/start-thema/">het Start thema</a> als basis voor een toegankelijke huisstijl</span>,
+          },
+          {
+            status: "checked",
+            title: <span>Volg het <a href="/handboek/designer/figma-stappenplan/">Figma Stappenplan</a> voor designers om huisstijl beslissingen als thema vast te leggen</span>,
+          },
+          {
+            status: "checked",
+            title: <span>Gebruik de <a href="/handboek/designer/figma-changelog/">Figma Changelog</a> om het thema te onderhouden bij nieuwe ontwikkelingen</span>,
+          },
+        ],
+        status: "checked",
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-3/">Niveau 3 - Huisstijl vastleggen als thema</a>,
+      },
+      {
+        id: "niveau-4",
+        marker: 4,
+        status: "checked",
+        steps: [
+          {
+            status: "checked",
+            title: <span><a href="/handboek/designer/figma-stappenplan/#figma-bibliotheken">Gebruik Figma bibliotheken</a> tijdens de ontwikkeling van prototypes</span>,
+          },
+          {
+            status: "checked",
+            title: <span>Gebruik waar mogelijk bestaande <a href="/voorbeelden/patronen-en-templates/">patronen en templates</a></span>
+          },
+          {
+            status: "checked",
+            title: <span>Gebruik <a href="/componenten">componenten</a> tijdens de ontwikkeling van nieuwe producten</span>,
+          },
+          {
+            status: "checked",
+            title: "Neem updates van componenten mee in beheer van het ontwikkelde product",
+          },
+          {
+            status: "checked",
+            title: "Vervang bij doorontwikkeling gebruikte componenten met de hoogste versie uit het Estafettemodel",
+          },
+          {
+            status: "checked",
+            title: "Geef feedback over de gebruikte componenten",
+          },
+        ],
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-4/">Niveau 4 - Componenten gebruiken</a>,
+      },
+      {
+        id: "niveau-5",
+        marker: 5,
+        steps: [
+          {
+            status: "not-checked",
+            title: "Ontwikkel verder op bestaande componenten en templates in Figma",
+          },
+          {
+            status: "not-checked",
+            title: "Doe gebruikersonderzoek en deel de inzichten",
+          },
+          {
+            status: "not-checked",
+            title: "Voeg de verbeteringen toe aan de GitHub Discussions",
+          },
+          {
+            status: "not-checked",
+            title: "Draag de verbeteringen bij aan de Community component in GitHub",
+          },
+        ],
+        status: "current",
+        title: "Niveau 5 - Componenten verbeteren",
+      },
+      {
+        id: "niveau-6",
+        marker: 6,
+        status: "not-checked",
+        title: <a href="/handboek/niveaus-van-meedoen/niveau-6/">Niveau 6 - Componenten bijdragen</a>,
+      },
+    ]}
+
+/>
+
+</div>

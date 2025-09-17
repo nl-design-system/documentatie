@@ -30,6 +30,7 @@ Redirect 301 "/handboek/designer/breaking-changes" "/handboek/designer/nieuwe-ve
 Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/estafettemodel/componenten/hall-of-fame-stappenplan"
 Redirect 301 "/handboek/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted-stappenplan"
 Redirect 301 "/handboek/leverancier/leverancier-sessie-maart-2023" "/handboek/leverancier/introductie"
+Redirect 301 "/handboek/organisatie/meedoen" "/handboek/niveaus-van-meedoen"
 Redirect 301 "/non-modal-dialog" "/dialog"
 Redirect 301 "/onderzoek" "/voorbeelden/onderzoek"
 Redirect 301 "/pagination" "/page-number-navigation"
