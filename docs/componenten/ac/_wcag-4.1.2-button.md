@@ -18,6 +18,8 @@ ARIA is wel goed te gebruiken als je de _state_ moet aangeven. Hiervoor bestaat 
 
 Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat `aria-expanded` de waarde `false` krijgt wanneer het menu weer is ingeklapt.
 
+Zorg er daarnaast voor dat het `type`-attribuut kloppend is bij de rol van de knop, zoals `"submit"` voor een verzendknop en `"reset"` voor een resetknop.
+
 NL Design System richtlijnen:
 
 - [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam)
