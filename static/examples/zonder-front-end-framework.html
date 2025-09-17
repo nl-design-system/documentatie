@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- TODO: Gebruik je eigen hosting voor de CSS, gebruik "https://unpkg.com/" hooguit tijdens development, nooit in productie. -->
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/design-tokens@3.3.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/body-css@1.2.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0.1.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/button-css@2.3.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/button-link-css@1.3.1/dist/index.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/@rijkshuisstijl-community/components-css@7.0.0/dist/index.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/page-header/page-header.css"
@@ -22,6 +25,10 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/link-list/link-list.css" />
     <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/grid/grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/visually-hidden/visually-hidden.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-tokens@1.0.1/dist/index.css" />
 
     <!-- https://nldesignsystem.nl/skip-link/ -->
@@ -50,7 +57,7 @@
       <nav aria-labelledby="primary-navigation" class="ams-page-header__navigation">
         <h2 class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</h2>
         <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
-        <ul class="ams-page-header__menu">
+        <ul role="list" class="ams-page-header__menu">
           <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
             <a class="nl-link" href="#">Contact</a>
           </li>
@@ -72,14 +79,15 @@
               class="ams-text-input"
               dir="auto"
             />
-            <a
+            <button
               style="height: 3rem; display: flex; align-items: center"
-              class="utrecht-button-link utrecht-button--secondary-action"
+              class="utrecht-button utrecht-button--secondary-action"
               href="#"
-              ><span style="display: contents" class="ams-icon ams-icon--small"
-                ><img src="/svg/search_icon.svg" alt="" /></span
-              >Zoeken</a
             >
+              <span style="display: contents" class="ams-icon ams-icon--small"
+                ><img src="/svg/search_icon.svg" alt="" /></span
+              >Zoeken
+            </button>
           </li>
         </ul>
       </nav>
@@ -87,7 +95,7 @@
     <div class="rhc-nav-bar__container">
       <nav class="utrecht-nav-bar">
         <div class="utrecht-nav-bar__content">
-          <ul class="utrecht-nav-list">
+          <ul role="list" class="utrecht-nav-list">
             <li class="utrecht-nav-list__item">
               <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Home</a>
             </li>
@@ -107,7 +115,7 @@
     <div class="utrecht-page-body">
       <div class="utrecht-page-body__content">
         <nav class="ams-breadcrumb" style="margin-block-end: 4rem">
-          <ol class="ams-breadcrumb__list">
+          <ol role="list" class="ams-breadcrumb__list">
             <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Home</a></li>
             <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Meldingen</a></li>
             <li class="ams-breadcrumb__item">
@@ -130,7 +138,7 @@
             namelijk zelf de reiniging van hun panden.
           </p>
           <h2 class="nl-heading nl-heading--level-2">Eerst toestemming geven</h2>
-          <ul class="utrecht-unordered-list">
+          <ul role="list" class="utrecht-unordered-list">
             <li class="utrecht-unordered-list__item">
               Graffiti of posters kunnen alleen worden verwijderd als u daarvoor toestemming geeft. U hoeft dit maar 1
               keer te doen. Heeft u al een keer toestemming gegeven? Dan kunt u de vervuiling meteen melden.
@@ -207,7 +215,7 @@
             </p>
           </div>
           <div class="ams-grid__cell ams-grid__cell--span-3">
-            <ul class="ams-link-list">
+            <ul role="list" class="ams-link-list">
               <li>
                 <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
                   >Over gemeente Voorbeeld</a
@@ -232,7 +240,7 @@
           </div>
 
           <div class="ams-grid__cell ams-grid__cell--span-3">
-            <ul class="ams-link-list">
+            <ul role="list" class="ams-link-list">
               <li>
                 <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
                   >Bescherming persoonsgegevens</a
