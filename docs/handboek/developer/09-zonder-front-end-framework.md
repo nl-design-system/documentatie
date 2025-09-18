@@ -1,5 +1,7 @@
 # NL Design System gebruiken zonder front-end framework
 
+## Introductie
+
 Met het NL Design System bouw je in een paar stappen een pagina met alleen HTML en wat CSS. In dit voorbeeld bouw je stap voor stap een ontwerp na.
 
 Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Figma](https://www.figma.com/design/taAnsV55PVP0cmw18BnMDk/NL-Design-System---Templates---Voorbeeld?node-id=5550-611&t=VX2mUDweS42iaS1D-4)
@@ -13,11 +15,7 @@ Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Figma
 
 ## Stappenplan overslaan?
 
-Als je het stappenplan wilt overslaan en voor jezelf iets leuks wilt creëren, kopieer dan deze voorbeeldpagina en maak er je eigen versie van.
-
-```
-TODO: voorbeeldpagina HTML hier toevoegen.
-```
+Als je het stappenplan wilt overslaan en voor jezelf iets leuks wilt creëren, kopieer dan [deze voorbeeldpagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/main/static/examples/zonder-front-end-framework.html) en maak er je eigen versie van.
 
 ## Paginaopzet
 
@@ -27,45 +25,50 @@ Een aantal van deze componenten is beschikbaar als [candidate component](/compon
 
 ## Zelf de pagina opbouwen
 
-### Stap 1: Gebruik een boilerplate als basis voor de pagina
+### Stap 1: Basis‑skeleton
+
+Begin met een minimale, semantische opbouw:
+
+```html
+<!doctype html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Graffiti laten verwijderen van uw pand · Gemeente Voorbeeld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!-- content komt hier -->
+  </body>
+</html>
+```
+
+### Stap 2: Gebruik een boilerplate als basis voor de pagina
 
 TODO: link naar boilerplate pagina zodra deze is aangemaakt.
 
-### Stap 2: Voeg de content toe aan de pagina
+### Stap 3: Voeg de content toe aan de pagina
 
 Om het effect van de componenten en hun styling goed te kunnen zien moet je de pagina vullen met content zoals tekst, plaatjes en kopteksten.
 
 Ook is het hier van belang de juiste HTML elementen te gebruiken, dus niet bijvoorbeeld een `div` als knop of navigatie-element.
-Om tijd te besparen is hier de content beschikbaar gemaakt:
+Om tijd te besparen kun je de content uit [deze file](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/main/static/examples/zonder-front-end-framework-html-only.html) kopiëren.
 
-### Stap 3: Zorg ervoor dat de componenten die worden ingeladen en de juiste styling hebben
+### Stap 4: Componenten importeren uit NL Design System.
 
-Dit onderdeel kan stap voor stap uitgevoerd worden.
+Let goed op de volgorde waarop je de dependencies inlaad. De CSS wordt overschreven door het eerst-volgende CSS bestand. Het kan dus fouten voorkomen wanneer je de @nl-design-system-\* stylesheets als laatste importeert.
 
-Aangezien niet elk component gestyled is volgens het ontwerp moet je wat aanpassingen maken in de css om deze wel aan te laten sluiten. Als eerste gaan we de footer een andere kleur geven:
+#### Page Footer
 
-```
-<head>
-  <style>
-    .utrecht-page-footer {
-      --utrecht-page-footer-background-color: #5115EF;
-      background-image: none;
-    }
-  </style>
-</head>
-```
-
-Voor de footer gebruik ik de footer van Amsterdam.
-Om daarvan alle styling te gebruiken zijn er twee dingen nodig, zoals beschreven in de [README](https://github.com/Amsterdam/design-system/blob/develop/packages/css/README.md), namelijk design-system-css en design-system-tokens.
+Voor de Page Footer gebruik ik de footer van Amsterdam.
 
 Deze worden als volgt geïmporteerd:
 
-````
-  <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/index.css" />
-  <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-tokens@1.0.1/dist/index.css" />
+```
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/page-footer/page-footer.css" />
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-tokens@1.0.1/dist/index.css" />
 ```
 
-Let inmiddels goed op voor de volgorde waarop je de dependencies inlaad. De CSS wordt overschreven door het eerst-volgende CSS bestand. Het kan dus fouten voorkomen wanneer je de @nl-design-system-* stylesheets als laatste importeert.
+### Stap 5: Verbetering in styling ten opzichte van het ontwerp
 
-## Bijzonderheden
-````
+Gelukkig sluiten de meeste componenten al wel perfect aan, maar aangezien niet elk component gestyled is volgens het ontwerp moet je wat kleine aanpassingen maken in de css om deze wel aan te laten sluiten.
