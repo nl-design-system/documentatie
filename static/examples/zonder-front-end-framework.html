@@ -81,15 +81,17 @@
               class="ams-text-input"
               dir="auto"
             />
-            <button
-              style="height: 3rem; display: flex; align-items: center"
-              class="utrecht-button utrecht-button--secondary-action"
-              href="#"
-            >
-              <span style="display: contents" class="ams-icon ams-icon--small"
-                ><img src="/svg/search_icon.svg" alt="" /></span
-              >Zoeken
-            </button>
+            <form role="search" action="/zoeken" method="get">
+              <button
+                style="height: 3rem; display: flex; align-items: center"
+                class="utrecht-button utrecht-button--secondary-action"
+                type="submit"
+              >
+                <span style="display: contents" class="ams-icon ams-icon--small"
+                  ><img src="/svg/search_icon.svg" alt="" /></span
+                >Zoeken
+              </button>
+            </form>
           </li>
         </ul>
       </nav>
