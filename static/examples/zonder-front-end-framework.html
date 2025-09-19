@@ -74,14 +74,17 @@
             class="ams-page-header__menu-item ams-page-header__menu-item--fixed"
             style="display: flex; font-size: 1rem"
           >
-            <input
-              style="max-width: 60%; margin-inline-end: 0.3rem; font-size: 1rem; height: 3rem"
-              placeholder="Bijvoorbeeld zwembad of grofvuil"
-              type="text"
-              class="ams-text-input"
-              dir="auto"
-            />
-            <form role="search" action="/zoeken" method="get">
+            <form role="search" action="/zoeken" method="get" style="display: contents">
+              <label for="site-search" class="ams-visually-hidden">Zoeken op de site</label>
+              <input
+                id="site-search"
+                style="max-width: 60%; margin-inline-end: 0.3rem; font-size: 1rem; height: 3rem"
+                placeholder="Bijvoorbeeld zwembad of grofvuil"
+                type="search"
+                class="ams-text-input"
+                dir="auto"
+                name="q"
+              />
               <button
                 style="height: 3rem; display: flex; align-items: center"
                 class="utrecht-button utrecht-button--secondary-action"
@@ -104,7 +107,7 @@
               <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Home</a>
             </li>
             <li class="utrecht-nav-list__item">
-              <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Meldingen</a>
+              <a aria-current="page" aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Meldingen</a>
             </li>
             <li class="utrecht-nav-list__item">
               <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="/componenten/">Componenten</a>
@@ -118,13 +121,11 @@
     </div>
     <div class="utrecht-page-body">
       <div class="utrecht-page-body__content">
-        <nav class="ams-breadcrumb" style="margin-block-end: 4rem">
-          <ol role="list" class="ams-breadcrumb__list">
+        <nav class="ams-breadcrumb" aria-label="Breadcrumb">
+          <ol class="ams-breadcrumb__list">
             <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Home</a></li>
             <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Meldingen</a></li>
-            <li class="ams-breadcrumb__item">
-              <a href="#" class="nl-link">Meldingen openbare ruimte</a>
-            </li>
+            <li class="ams-breadcrumb__item" aria-current="page">Meldingen openbare ruimte</li>
           </ol>
         </nav>
         <main class="rich-text" id="main">
