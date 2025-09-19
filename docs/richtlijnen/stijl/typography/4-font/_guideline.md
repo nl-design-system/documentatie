@@ -164,8 +164,10 @@ Enkele Open Source lettertypes die voldoen aan de richtlijnen.
 
 - [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible)
 - [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
+- [iA Writer Quattro](https://github.com/iaolo/iA-Fonts)
 - [IBM Plex Serif](https://fonts.google.com/specimen/IBM+Plex+Serif)
 - [Lexend](https://fonts.google.com/specimen/Lexend)
+- [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans)
 - [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif)
 - [Roboto Serif](https://fonts.google.com/specimen/Roboto+Serif)
 - [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
