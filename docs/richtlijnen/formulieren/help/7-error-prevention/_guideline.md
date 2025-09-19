@@ -36,7 +36,7 @@ Bij een complex formulier en als er juridische, financiële of persoonlijke gege
 
 Alles op een rij in de laatste stap van het formulier, met de mogelijkheid om nog correcties te maken. Dit staat uitgebreider beschreven in de richtlijn [Bied als laatste stap een opsomming aan van alle ingevoerde gegevens](/richtlijnen/formulieren/meerdere-stappen/samenvatting).
 
-Gebruikersonderzoek voor het [Contactformulier voor WMEBV](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/wmebv/vng-online-formulieren) laat goed zien hoe belangrijk deze laatste stap is.
+Gebruikersonderzoek voor het [Contactformulier voor WMEBV](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/formulieren/vng-online-formulieren/) laat goed zien hoe belangrijk deze laatste stap is.
 
 GOV.UK beschrijft hoe gebruikers te helpen in [<span lang="en">Help users to Check answers</span>](https://design-system.service.gov.uk/patterns/check-answers/).
 

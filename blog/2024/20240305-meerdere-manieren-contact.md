@@ -42,7 +42,7 @@ Het is daarom goed om je te realiseren dat er een grote groep mensen is die niet
 
 Veel mensen vinden bellen fijn, direct contact met een mens en je kunt meteen je vraag stellen. Bied het dan ook zeker aan als contactmogelijkheid.
 
-Uit gebruikersonderzoek dat we met VNG deden rondom [WMBEV formulieren](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/wmebv/vng-online-formulieren) blijkt dat laaggeletterde bezoekers een voorkeur voor bellen hebben: “Ik probeer eerst de telefoon, als dat niet lukt, dan zou ik de website gebruiken om toch in contact te komen om daarnaar te vragen.”
+Uit gebruikersonderzoek dat we met VNG deden rondom [WMBEV formulieren](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/formulieren/vng-online-formulieren/) blijkt dat laaggeletterde bezoekers een voorkeur voor bellen hebben: “Ik probeer eerst de telefoon, als dat niet lukt, dan zou ik de website gebruiken om toch in contact te komen om daarnaar te vragen.”
 
 Dove, slechthorende, verlegen, autistische of stotterende bezoekers kunnen problemen hebben met telefoneren. Ook voor bezoekers die de Nederlandse taal niet goed beheersen is bellen lastig. En als je in een volle rumoerige trein zit, wil je ook liever geen gesprek voeren over privézaken.
 
