@@ -169,7 +169,6 @@ Enkele Open Source lettertypes die voldoen aan de richtlijnen.
 - [Lexend](https://fonts.google.com/specimen/Lexend)
 - [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans)
 - [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif)
-- [Public Sans](https://fonts.google.com/specimen/Public+Sans) (helaas geen 
 - [Roboto Serif](https://fonts.google.com/specimen/Roboto+Serif)
 - [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
 - [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)
