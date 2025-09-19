@@ -64,9 +64,29 @@ Je pagina zal er dan als volgt uitzien:
   </div>
 </div>
 
-### Stap 4: Componenten importeren uit NL Design System
+### Stap 4: Importeer NL Design System voorbeeld thema
 
-Het is mogelijk om de componenten uit de community met één import statement te importeren:
+**info:** In de komende codevoorbeelden zie je veel versienummers gebruikt worden. Het voorbeeld werkt met deze versienummers, maar mocht je die willen updaten dan kun je de nieuwste versie vinden via [npmjs.com](https://www.npmjs.com/).
+
+Zie ook [het voorbeeld thema](handboek/huisstijl/themas/voorbeeld-thema/#voorbeeld-thema).
+Voeg de onderstaande class toe aan de body van je HTML pagina:
+
+```html
+<body class="voorbeeld-theme"></body>
+```
+
+Importeer de CSS van het voorbeeld thema en de design tokens:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0/dist/theme.css"
+/>
+```
+
+### Stap 5: Componenten importeren uit NL Design System
+
+Het is mogelijk om de componenten uit de community met één import statement te importeren, als voorbeeld Amsterdam:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/index.css" />
@@ -87,21 +107,85 @@ Het logo kunnen we als volgt toevoegen:
 <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
 ```
 
+Wanneer je het logo op je lokale file system hebt opgeslagen in hetzelfde mapje als de html, dan moet je verwijzen naar `./voorbeeld-thema-logo.svg`.
+
 Om een goede alt-text te kiezen voor logo kun je het beste [hier kijken](/blog/toegankelijke-naam-link-logo-header/#optie-2-de-toegankelijke-naam-in-een-aria-label-bij-de-link) voor tips.
 
 #### Page Header en navigatie
 
-De Page Header uit de Amsterdam community lijkt als beste te passen voor het design.
+De Page Header uit de Amsterdam community lijkt als beste te passen voor het design. In de [Storybook van Amsterdam](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs) kan voorbeeldcode gevonden worden hoe je de header opbouwd met HTML en CSS. Hiervoor moet je "inspect element" van de browser gebruiken, want de voorbeeldcode van storybook maakt gebruik van React.
+
+In dit codevoorbeeld kun je de oplossing vinden:
+
+```html
+<header class="ams-page-header">
+  <nav aria-labelledby="primary-navigation" class="ams-page-header__navigation">
+    <h2 class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</h2>
+    <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+    <ul role="list" class="ams-page-header__menu">
+      <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
+        <a class="nl-link" href="#">Contact</a>
+      </li>
+      <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
+        <a class="nl-link" href="#"
+          ><span class="utrecht-icon"
+            ><img style="margin-inline-end: 0.5rem" src="/svg/person_icon.svg" alt="" />Mijn omgeving</span
+          ></a
+        >
+      </li>
+      <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed" style="display: flex; font-size: 1rem">
+        <form role="search" action="/zoeken" method="get" style="display: contents">
+          <label for="site-search" class="ams-visually-hidden">Zoeken op de site</label>
+          <input
+            id="site-search"
+            style="max-width: 60%; margin-inline-end: 0.3rem; font-size: 1rem; height: 3rem"
+            placeholder="Bijvoorbeeld zwembad of grofvuil"
+            type="search"
+            class="ams-text-input"
+            dir="auto"
+            name="q"
+          />
+          <button
+            style="height: 3rem; display: flex; align-items: center"
+            class="utrecht-button utrecht-button--secondary-action"
+            type="submit"
+          >
+            <span style="display: contents" class="ams-icon ams-icon--small"
+              ><img src="/svg/search_icon.svg" alt="" /></span
+            >Zoeken
+          </button>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</header>
+```
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/page-header/page-header.css" />
 ```
+
+##### Visually Hidden
+
+Zoals je misschien opgevallen is zie je nu een paar elementen staan die er eigenlijk niet bij horen als je geen screenreader gebruikt. "Hoofdnavigatie" en "Zoeken op de site". Deze zijn toegevoegd om de toegankelijkheid van de pagina te verbeteren.
+De Amsterdam community heeft een component om a11y elementen 'onzichtbaar' te maken. Deze importeer je door middel van:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/visually-hidden/visually-hidden.css"
+/>
+```
+
+##### Navigation Bar
 
 Voor de navigation Bar past degene uit Utrecht het beste. De styling is niet perfect, maar dat kan met custom CSS opgelost worden, of zoals in dit voorbeeld gedaan wordt wachten we tot er een beter component beschikbaar is.
 
 #### Breadcrumb Navigation
 
 De Amsterdam community heeft een Breadcrumb Navigation component dat lijkt op het design. Label de breadcrumb en markeer de huidige pagina met `aria-current="page"`.
+
+Voeg de breadcrumbs component toe:
 
 ```html
 <nav class="ams-breadcrumb" aria-label="Breadcrumb">
@@ -115,15 +199,99 @@ De Amsterdam community heeft een Breadcrumb Navigation component dat lijkt op he
 
 Het is belangrijk dat de links nog wel gestyled worden als "nl-link" met behulp van `class="nl-link"`, zodat de styling meer lijkt op het design.
 
+Om dit te laten werken moet de breadcrumb natuurlijk wel geïmporteerd worden:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/breadcrumb/breadcrumb.css" />
+```
+
 #### Heading
+
+Gebruik semantische koppen met de NL Design System heading-styles.
+
+Voorbeeld (zoals gebruikt op de pagina):
+
+```html
+<h1 class="nl-heading nl-heading--level-1">Graffiti laten verwijderen van uw pand</h1>
+<h2 class="nl-heading nl-heading--level-2">Eerst toestemming geven</h2>
+<h3 class="nl-heading nl-heading--level-3">Professioneel verwijderd</h3>
+```
+
+Benodigde CSS:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/heading-css@1.1.1/dist/heading.css" />
+```
 
 #### Paragraph
 
+Gebruik paragrafen voor lopende tekst. In het voorbeeld is Amsterdam Paragraph CSS gebruikt voor typografie, en `nl-paragraph` voor consistente spacing/typografie waar nodig.
+
+```html
+<p class="nl-paragraph">
+  Heeft u overlast van graffiti, posters of stickers op uw huis of pand? Meldpunt Graffiti zorgt ervoor dat deze gratis
+  worden verwijderd.
+</p>
+```
+
+Benodigde CSS (optioneel, typografie):
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/paragraph/paragraph.css" />
+```
+
 #### Button
+
+Navigatie-acties naar een andere pagina zijn links met button-styling. Gebruik voor call-to-action de Utrecht button link.
+
+```html
+<a class="utrecht-button-link utrecht-button--primary-action" href="#">Toestemming geven</a>
+<a class="utrecht-button-link utrecht-button--primary-action" href="#">Melding doen</a>
+```
+
+Benodigde CSS:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/button-link-css@1.3.1/dist/index.css" />
+```
 
 #### Unordered List
 
+Gebruik een ongenummerde lijst voor opsommingen. In het voorbeeld is de Utrecht-list styling toegepast.
+
+```html
+<ul class="utrecht-unordered-list">
+  <li class="utrecht-unordered-list__item">
+    Graffiti of posters kunnen alleen worden verwijderd als u daarvoor toestemming geeft. U hoeft dit maar 1 keer te
+    doen.
+  </li>
+  <li class="utrecht-unordered-list__item">
+    Als u eigenaar, beheerder of gebruiker bent en in Gemeente Voorbeeld woont, kunt u het formulier met DigiD invullen.
+  </li>
+  <li class="utrecht-unordered-list__item">
+    Nutsbedrijven en rijksoverheidsinstellingen zijn zelf verantwoordelijk voor het reinigen van hun objecten.
+  </li>
+  <li class="utrecht-unordered-list__item">
+    Woont u niet in Gemeente Voorbeeld of heeft u uw DigiD niet bij de hand? Vul dan het formulier in en print het.
+  </li>
+</ul>
+```
+
 #### Link
+
+Gebruik `a` met de NL Design System link-styling voor zichtbare, consistente links.
+
+```html
+<a href="#" class="nl-link">Contact</a>
+<a href="/componenten/" class="nl-link">Componenten</a>
+<a href="/voorbeelden/" class="nl-link">Voorbeelden</a>
+```
+
+Benodigde CSS:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/link-css@2.0.1/dist/link.css" />
+```
 
 #### Page Footer
 
@@ -210,7 +378,7 @@ Er wordt ook gebruik gemaakt van [Link List](/link-list) in deze Page Footer. Da
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/link-list/link-list.css" />
 ```
 
-### Stap 5: Verbetering in styling ten opzichte van het ontwerp
+### Stap 6: Verbetering in styling ten opzichte van het ontwerp
 
 ### Toegankelijk zoeken (aanbevolen)
 
