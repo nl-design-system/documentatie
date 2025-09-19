@@ -24,7 +24,8 @@
             <button type="submit">Zoeken</button>
           </form>
         </div>
-        <nav>
+        <nav aria-labelledby="primary-navigation">
+          <h2 id="primary-navigation" class="visually-hidden">Hoofdnavigatie</h2>
           <ul>
             <li id="start1">
               <a aria-disabled="false" href="/"><span>Home</span></a>
@@ -45,7 +46,13 @@
 
     <div>
       <div>
-        <nav aria-labelledby="breadcrumb-heading">Home > Meldingen > Meldingen openbare ruimte</nav>
+        <nav aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Meldingen</a></li>
+            <li aria-current="page">Meldingen openbare ruimte</li>
+          </ol>
+        </nav>
         <main id="main">
           <h1>Graffiti laten verwijderen van uw pand</h1>
           <p>

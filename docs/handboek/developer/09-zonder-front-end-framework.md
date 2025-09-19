@@ -66,6 +66,14 @@ Je pagina zal er dan als volgt uitzien:
 
 ### Stap 4: Componenten importeren uit NL Design System
 
+Het is mogelijk om de componenten uit de community met één import statement te importeren:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/index.css" />
+```
+
+Dit wordt niet aangeraden omdat je dan veel meer code dan nodig importeert. In plaats daarvan kiezen we in de onderstaande stappen ervoor om elk component individueel te importeren. Dat zorgt ervoor dat je alleen de CSS gebruikt die je nodig hebt.
+
 Let goed op de volgorde waarop je de dependencies inlaad. De CSS wordt overschreven door het eerst-volgende CSS bestand. Het kan dus fouten voorkomen wanneer je de @nl-design-system-\* stylesheets als laatste importeert.
 
 #### Logo
@@ -93,16 +101,14 @@ Voor de navigation Bar past degene uit Utrecht het beste. De styling is niet per
 
 #### Breadcrumb Navigation
 
-De Amsterdam community heeft een Breadcrumb Navigation component die lijkt op het design wat
+De Amsterdam community heeft een Breadcrumb Navigation component dat lijkt op het design. Label de breadcrumb en markeer de huidige pagina met `aria-current="page"`.
 
 ```html
-<nav class="ams-breadcrumb" style="margin-block-end: 4rem">
+<nav class="ams-breadcrumb" aria-label="Breadcrumb">
   <ol role="list" class="ams-breadcrumb__list">
     <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Home</a></li>
     <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Meldingen</a></li>
-    <li class="ams-breadcrumb__item">
-      <a href="#" class="nl-link">Meldingen openbare ruimte</a>
-    </li>
+    <li class="ams-breadcrumb__item" aria-current="page">Meldingen openbare ruimte</li>
   </ol>
 </nav>
 ```
@@ -121,7 +127,75 @@ Het is belangrijk dat de links nog wel gestyled worden als "nl-link" met behulp 
 
 #### Page Footer
 
-Voor de Page Footer gebruik ik de footer van Amsterdam.
+Voor de Page Footer gebruik ik de footer van Amsterdam. In de [Storybook van Amsterdam](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs) kan voorbeeldcode gevonden worden hoe je de footer opbouwd met HTML en CSS. Hiervoor moet je "inspect element" van de browser gebruiken, want de voorbeeldcode van storybook maakt gebruik van React.
+
+```html
+<!-- Gebruik het HTML element `footer` om deze belangrijke "landmark region" op te maken, voor toegankelijkheid. -->
+<footer class="ams-page-footer">
+  <div class="ams-page-footer__spotlight">
+    <div class="ams-grid ams-grid--padding-vertical--x-large">
+      <div class="ams-grid__cell ams-grid__cell--span-3">
+        <img src="/svg/voorbeeld-thema-logo-white.svg" alt="Voorbeeld thema logo" />
+      </div>
+      <div class="ams-grid__cell ams-grid__cell--span-3">
+        <h3 class="ams-heading--inverse ams-heading ams-heading--3">Contact</h3>
+        <p class="nl-paragraph ams-paragraph--inverse">
+          Bel 453453 (maandag tot en met vrijdag van 9:00 tot 17:00) of stuur een email naar vragen@voorbeeld.nl
+        </p>
+      </div>
+      <div class="ams-grid__cell ams-grid__cell--span-3">
+        <ul role="list" class="ams-link-list">
+          <li>
+            <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
+              >Over gemeente Voorbeeld</a
+            >
+          </li>
+          <li>
+            <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
+              >Nieuwsbrief</a
+            >
+          </li>
+          <li>
+            <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
+              >Social media</a
+            >
+          </li>
+          <li>
+            <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
+              >Werken bij de gemeente Voorbeeld</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="ams-grid__cell ams-grid__cell--span-3">
+        <ul role="list" class="ams-link-list">
+          <li>
+            <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
+              >Bescherming persoonsgegevens</a
+            >
+          </li>
+          <li>
+            <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
+              >Gebruikersvoorwaarden</a
+            >
+          </li>
+          <li>
+            <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
+              >Proclaimer</a
+            >
+          </li>
+          <li>
+            <a class="ams-link-list__link ams-link-list__link--inverse ams-link-list__link--small" href="#"
+              >Toegankelijkheidsverklaring</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+```
 
 Deze worden als volgt geïmporteerd:
 
@@ -130,6 +204,35 @@ Deze worden als volgt geïmporteerd:
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-tokens@1.0.1/dist/index.css" />
 ```
 
+Er wordt ook gebruik gemaakt van [Link List](/link-list) in deze Page Footer. Daarom moet je deze ook importeren:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/link-list/link-list.css" />
+```
+
 ### Stap 5: Verbetering in styling ten opzichte van het ontwerp
+
+### Toegankelijk zoeken (aanbevolen)
+
+Gebruik een zichtbaar of visueel verborgen label en een `form` met `role="search"`.
+
+```html
+<form role="search" action="/zoeken" method="get" class="site-search">
+  <label for="site-search" class="visually-hidden">Zoeken op de site</label>
+  <input id="site-search" name="q" type="search" placeholder="Bijvoorbeeld zwembad of grofvuil" />
+  <button type="submit" class="utrecht-button utrecht-button--secondary-action">Zoeken</button>
+</form>
+```
+
+### Navigatie labelen
+
+Geef je primaire navigatie een naam met een kop of `aria-label`.
+
+```html
+<nav aria-labelledby="primary-navigation">
+  <h2 id="primary-navigation" class="visually-hidden">Hoofdnavigatie</h2>
+  <!-- ... -->
+</nav>
+```
 
 Gelukkig sluiten de meeste componenten al wel perfect aan, maar aangezien niet elk component gestyled is volgens het ontwerp moet je wat kleine aanpassingen maken in de css om deze wel aan te laten sluiten.
