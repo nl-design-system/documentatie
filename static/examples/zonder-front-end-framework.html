@@ -57,7 +57,7 @@
     <a href="#main" class="nl-skip-link nl-skip-link--visible-on-focus">Direct naar de hoofdinhoud</a>
     <header class="ams-page-header">
       <nav aria-labelledby="primary-navigation" class="ams-page-header__navigation">
-        <h2 class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</h2>
+        <span class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</span>
         <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
         <ul role="list" class="ams-page-header__menu">
           <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
@@ -100,7 +100,8 @@
       </nav>
     </header>
     <div class="rhc-nav-bar__container">
-      <nav class="utrecht-nav-bar">
+      <nav aria-labelledby="secondary-navigation" class="utrecht-nav-bar">
+        <span class="ams-visually-hidden" id="secondary-navigation">Secundaire navigatie</span>
         <div class="utrecht-nav-bar__content">
           <ul role="list" class="utrecht-nav-list">
             <li class="utrecht-nav-list__item">
