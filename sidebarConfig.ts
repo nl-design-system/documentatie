@@ -398,6 +398,7 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+        { type: 'doc', id: 'community/belangenorganisaties/aanmelden' },
         { type: 'doc', id: 'project/slack' },
       ],
     },
