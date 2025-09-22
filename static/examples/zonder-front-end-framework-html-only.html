@@ -9,8 +9,9 @@
   <body>
     <a href="#main">Direct naar de hoofdinhoud</a>
     <header>
-      <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
-      <div>
+      <nav aria-labelledby="primary-navigation" class="ams-page-header__navigation">
+        <span class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</span>
+        <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
         <a href="#">Contact</a>
         <a href="#">Mijn omgeving</a>
         <div>
@@ -19,26 +20,25 @@
             <button type="submit">Zoeken</button>
           </form>
         </div>
-        <nav aria-labelledby="primary-navigation">
-          <h2 id="primary-navigation" class="visually-hidden">Hoofdnavigatie</h2>
-          <ul>
-            <li>
-              <a aria-disabled="false" href="/"><span>Home</span></a>
-            </li>
-            <li>
-              <a aria-disabled="false" href="/"><span>Meldingen</span></a>
-            </li>
-            <li>
-              <a aria-disabled="false" href="/componenten/"><span>Componenten</span></a>
-            </li>
-            <li>
-              <a aria-disabled="false" href="/voorbeelden/"><span>Voorbeelden</span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
-
+    <nav aria-labelledby="secondary-navigation">
+      <span class="ams-visually-hidden" id="secondary-navigation">Secundaire navigatie</span>
+      <ul>
+        <li>
+          <a aria-disabled="false" href="/"><span>Home</span></a>
+        </li>
+        <li>
+          <a aria-disabled="false" href="/"><span>Meldingen</span></a>
+        </li>
+        <li>
+          <a aria-disabled="false" href="/componenten/"><span>Componenten</span></a>
+        </li>
+        <li>
+          <a aria-disabled="false" href="/voorbeelden/"><span>Voorbeelden</span></a>
+        </li>
+      </ul>
+    </nav>
     <div>
       <div>
         <nav aria-label="Breadcrumb">

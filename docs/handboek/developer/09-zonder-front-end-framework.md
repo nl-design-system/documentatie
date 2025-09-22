@@ -165,9 +165,15 @@ In dit codevoorbeeld kun je de oplossing vinden:
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/page-header/page-header.css" />
 ```
 
+En om de styling van de links goed te krijgen importeer je de NL Design System Candidate Link:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/link-css@2.0.1/dist/link.css" />
+```
+
 ##### Visually Hidden
 
-Zoals je misschien opgevallen is zie je nu een paar elementen staan die er eigenlijk niet bij horen als je geen screenreader gebruikt. "Hoofdnavigatie" en "Zoeken op de site". Deze zijn toegevoegd om de toegankelijkheid van de pagina te verbeteren.
+Zoals je misschien opgevallen is zie je nu een paar elementen staan die niet zichtbaar hoeven te zijn, wanneer je geen screenreader gebruikt. Namelijk "Hoofdnavigatie", "Secundaire navigatie" en "Zoeken op de site". Deze zijn toegevoegd om de toegankelijkheid van de pagina te verbeteren.
 De Amsterdam community heeft een component om a11y elementen 'onzichtbaar' te maken. Deze importeer je door middel van:
 
 ```html
@@ -180,6 +186,37 @@ De Amsterdam community heeft een component om a11y elementen 'onzichtbaar' te ma
 ##### Navigation Bar
 
 Voor de navigation Bar past degene uit Utrecht het beste. De styling is niet perfect, maar dat kan met custom CSS opgelost worden, of zoals in dit voorbeeld gedaan wordt wachten we tot er een beter component beschikbaar is.
+
+```html
+<div class="rhc-nav-bar__container">
+  <nav aria-labelledby="secondary-navigation" class="utrecht-nav-bar">
+    <span class="ams-visually-hidden" id="secondary-navigation">Secundaire navigatie</span>
+    <div class="utrecht-nav-bar__content">
+      <ul role="list" class="utrecht-nav-list">
+        <li class="utrecht-nav-list__item">
+          <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Home</a>
+        </li>
+        <li class="utrecht-nav-list__item">
+          <a aria-current="page" aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Meldingen</a>
+        </li>
+        <li class="utrecht-nav-list__item">
+          <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="/componenten/">Componenten</a>
+        </li>
+        <li class="utrecht-nav-list__item">
+          <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="/voorbeelden/">Voorbeelden</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+```
+
+En de bijbehorende imports:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/nav-bar-css@1.4.1/dist/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/nav-list-css@1.3.1/dist/index.css" />
+```
 
 #### Breadcrumb Navigation
 
