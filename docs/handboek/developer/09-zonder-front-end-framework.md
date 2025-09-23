@@ -4,7 +4,7 @@
 
 Met het NL Design System bouw je in een paar stappen een pagina met alleen HTML en wat CSS. In dit voorbeeld bouw je stap voor stap een ontwerp na.
 
-Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Figma](https://www.figma.com/design/taAnsV55PVP0cmw18BnMDk/NL-Design-System---Templates---Voorbeeld?node-id=5550-611&t=VX2mUDweS42iaS1D-4)
+Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Het ontwerp in Figma](https://www.figma.com/design/taAnsV55PVP0cmw18BnMDk/NL-Design-System---Templates---Voorbeeld?node-id=5550-611&t=VX2mUDweS42iaS1D-4)
 
 <div className="utrecht-root" style={{zoom: '50%', width: '100%', height: '1024px'}}>
   <div className="utrecht-body">
@@ -218,6 +218,39 @@ En de bijbehorende imports:
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/nav-list-css@1.3.1/dist/index.css" />
 ```
 
+##### Zoekbalk
+
+De zoekbalk van de Page Header heeft nog niet de juiste styling.
+
+Dit is op te lossen door de [Text Input](/text-input) uit de Amsterdam community te gebruiken:
+
+```html
+<input
+  id="site-search"
+  style="max-width: 60%; margin-inline-end: 0.3rem; font-size: 1rem; height: 3rem"
+  placeholder="Bijvoorbeeld zwembad of grofvuil"
+  type="search"
+  class="ams-text-input"
+  dir="auto"
+  name="q"
+/>
+```
+
+Deze wordt als volgt geïmporteerd:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/text-input/text-input.css" />
+```
+
+##### Zoek-knop
+
+De knop om mee te "zoeken" heeft ook nog niet de juiste styling.
+Deze wordt als volgt geïmporteerd:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/button-css@2.3.1/dist/index.css" />
+```
+
 #### Breadcrumb Navigation
 
 De Amsterdam community heeft een Breadcrumb Navigation component dat lijkt op het design. Label de breadcrumb en markeer de huidige pagina met `aria-current="page"`.
@@ -241,6 +274,28 @@ Om dit te laten werken moet de breadcrumb natuurlijk wel geïmporteerd worden:
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/breadcrumb/breadcrumb.css" />
 ```
+
+#### Skip Link
+
+Zoals je kan zien is er een link op de pagina aanwezig met de tekst "Direct naar de hoofdinhoud". Deze link is bedoeld voor screenreaders om gelijk naar de hoofdinhoud te kunnen navigeren.
+
+Om de skip link te verbergen wanneer je geen screenreader gebruikt kun je de bijbehorende CSS importeren:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/skip-link-css@1.0.3/dist/skip-link.css" />
+```
+
+En moet je de bijbehorende classes erop zetten:
+
+```html
+<a href="#main" class="nl-skip-link nl-skip-link--visible-on-focus">Direct naar de hoofdinhoud</a>
+```
+
+Ook zonder screenreader kun je zien dat de Skip Link nu verborgen is, maar nog wel bruikbaar is door de pagina te herladen en direct daarna op de "Tab" toets te drukken.
+
+####
+
+De pagina begint er mooi uit te zien. Je kan echter zien dat de tekst helemaal links staat en de paragrafen de volledige breedte in te nemen. Om dat op te lossen kun je de Utrecht page body gebruiken.
 
 #### Heading
 
