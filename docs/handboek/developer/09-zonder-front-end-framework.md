@@ -293,9 +293,13 @@ En moet je de bijbehorende classes erop zetten:
 
 Ook zonder screenreader kun je zien dat de Skip Link nu verborgen is, maar nog wel bruikbaar is door de pagina te herladen en direct daarna op de "Tab" toets te drukken.
 
-####
+#### Page Body
 
 De pagina begint er mooi uit te zien. Je kan echter zien dat de tekst helemaal links staat en de paragrafen de volledige breedte in te nemen. Om dat op te lossen kun je de Utrecht page body gebruiken.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0.1.1/dist/index.css" />
+```
 
 #### Heading
 
