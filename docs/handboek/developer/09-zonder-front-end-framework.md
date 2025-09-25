@@ -319,6 +319,8 @@ Benodigde CSS:
 <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/heading-css@1.1.1/dist/heading.css" />
 ```
 
+Je kan zien dat het heeft gewerkt doordat de `h1` met een `font-size` van `32px` naar een `font-size` van `40px` is gegaan. Voor de overige headings kun je uiteraard ook de verschillen merken.
+
 #### Paragraph
 
 Gebruik paragrafen voor lopende tekst. In het voorbeeld is Amsterdam Paragraph CSS gebruikt voor typografie, en `nl-paragraph` voor consistente spacing/typografie waar nodig.
@@ -330,10 +332,10 @@ Gebruik paragrafen voor lopende tekst. In het voorbeeld is Amsterdam Paragraph C
 </p>
 ```
 
-Benodigde CSS (optioneel, typografie):
+Benodigde CSS:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/paragraph/paragraph.css" />
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/paragraph-css@2.0.1/dist/paragraph.css" />
 ```
 
 #### Button
