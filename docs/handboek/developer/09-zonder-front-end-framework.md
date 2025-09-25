@@ -520,3 +520,21 @@ Geef je primaire navigatie een naam met een kop of `aria-label`.
 Gelukkig sluiten de meeste componenten al wel perfect aan, maar aangezien niet elk component gestyled is volgens het ontwerp moet je wat kleine aanpassingen maken in de css om deze wel aan te laten sluiten.
 
 ### Rich Text
+
+Zoals je kunt zien staat de tekst nog erg dicht op elkaar. Dit is in de toekomst op te lossen met een [Rich Text Content](/rich-text-content) component. Nu deze nog niet bestaat kun je dit als volgt oplossen:
+
+Binnen `<head></head>`:
+
+```html
+<style>
+  .rich-text > * {
+    margin-block-start: 0.5rem;
+  }
+</style>
+```
+
+En vervolgens:
+
+```html
+<main class="rich-text"></main>
+```
