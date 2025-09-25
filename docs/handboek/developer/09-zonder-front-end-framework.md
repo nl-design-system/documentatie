@@ -323,7 +323,7 @@ Je kan zien dat het heeft gewerkt doordat de `h1` met een `font-size` van `32px`
 
 #### Paragraph
 
-Gebruik paragrafen voor lopende tekst. In het voorbeeld is Amsterdam Paragraph CSS gebruikt voor typografie, en `nl-paragraph` voor consistente spacing/typografie waar nodig.
+Gebruik paragrafen voor lopende tekst. Aangezien `nl-paragraph` beschikbaar is als Candidate component kun je die gebruiken. Pas deze toe op alle plekken waar een `<p>` element staat.
 
 ```html
 <p class="nl-paragraph">
@@ -338,9 +338,12 @@ Benodigde CSS:
 <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/paragraph-css@2.0.1/dist/paragraph.css" />
 ```
 
+De pagina begint nu al veel meer te lijken op het design.
+
 #### Button
 
-Navigatie-acties naar een andere pagina zijn links met button-styling. Gebruik voor call-to-action de Utrecht button link.
+Nu zijn de buttons aan de beurt om te stylen.
+Het zijn links met button-styling. Gebruik voor call-to-action de Utrecht button link, niet te verwarren met de utrecht link button.
 
 ```html
 <a class="utrecht-button-link utrecht-button--primary-action" href="#">Toestemming geven</a>
@@ -355,7 +358,7 @@ Benodigde CSS:
 
 #### Unordered List
 
-Gebruik een ongenummerde lijst voor opsommingen. In het voorbeeld is de Utrecht-list styling toegepast.
+Gebruik een Unordered List voor de opsommingen. In het voorbeeld is de Utrecht-list styling toegepast.
 
 ```html
 <ul class="utrecht-unordered-list">
@@ -375,9 +378,15 @@ Gebruik een ongenummerde lijst voor opsommingen. In het voorbeeld is de Utrecht-
 </ul>
 ```
 
+Hiervoor moet de volgende CSS geïmporteerd worden:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/unordered-list-css@1.5.1/dist/index.css" />
+```
+
 #### Link
 
-Gebruik `a` met de NL Design System link-styling voor zichtbare, consistente links.
+Gebruik `a` met de NL Design System link-styling voor zichtbare links.
 
 ```html
 <a href="#" class="nl-link">Contact</a>
@@ -390,6 +399,8 @@ Benodigde CSS:
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/link-css@2.0.1/dist/link.css" />
 ```
+
+Nu deze stap is uitgevoerd, is de pagina body van de pagina compleet gestyled met het NL Design System.
 
 #### Page Footer
 
@@ -470,10 +481,13 @@ Deze worden als volgt geïmporteerd:
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-tokens@1.0.1/dist/index.css" />
 ```
 
-Er wordt ook gebruik gemaakt van [Link List](/link-list) in deze Page Footer. Daarom moet je deze ook importeren:
+Er wordt ook gebruik gemaakt van [Link List](/link-list), Grid, Heading en Paragraph in deze Page Footer. Daarom moet je deze ook importeren:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/link-list/link-list.css" />
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/grid/grid.css" />
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/heading/heading.css" />
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/paragraph/paragraph.css" />
 ```
 
 ### Stap 6: Verbetering in styling ten opzichte van het ontwerp
@@ -501,4 +515,8 @@ Geef je primaire navigatie een naam met een kop of `aria-label`.
 </nav>
 ```
 
+## Laatste tweaks met custom CSS
+
 Gelukkig sluiten de meeste componenten al wel perfect aan, maar aangezien niet elk component gestyled is volgens het ontwerp moet je wat kleine aanpassingen maken in de css om deze wel aan te laten sluiten.
+
+### Rich Text
