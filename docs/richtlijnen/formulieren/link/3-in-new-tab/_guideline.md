@@ -14,7 +14,7 @@ Het aangeven kan op verschillende manieren: via een icoontje, via tekst en via e
 
 Zorg dat de informatie over het openen van een nieuwe tab in de linktekst zelf is opgenomen. Dan wordt deze voorgelezen zodra de link focus krijgt. Als de tekst buiten (achter) de link staat bestaat de kans dat een screenreadergebruiker deze info mist.
 
-Hiermee volg je de [WCAG-richtlijn 3.2 Voorspelbaar](https://www.w3.org/Translations/WCAG22-nl/#voorspelbaar): maak het uiterlijk en de bediening van webpagina's voorspelbaar.
+Hiermee volg je de [WCAG-richtlijn 3.2 Voorspelbaar](https://www.w3.org/Translations/WCAG22-nl/#predictable): maak het uiterlijk en de bediening van webpagina's voorspelbaar.
 
 ## Technieken voor een link openen in een nieuwe tab of venster
 
