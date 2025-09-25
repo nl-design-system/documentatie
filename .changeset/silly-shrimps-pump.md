@@ -1,5 +1,5 @@
 ---
-"@nl-design-system-unstable/documentation": minor
+"@nl-design-system-unstable/documentation": patch
 ---
 
 docs: update links
