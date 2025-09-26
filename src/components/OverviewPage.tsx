@@ -2,7 +2,7 @@ import type { PropSidebarItem } from '@docusaurus/plugin-content-docs';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
-import DocCardList from '../theme/DocCardList';
+import DocCardList from '@theme/DocCardList';
 
 interface OverviewPageProps extends HTMLAttributes<HTMLDivElement> {
   excludeDocIDs: string[];
