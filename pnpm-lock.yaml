@@ -1,7 +1,7 @@
 lockfileVersion: '9.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 importers:
@@ -13,13 +13,13 @@ importers:
         version: 3.1.0(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/preset-classic':
         specifier: 3.1.0
-        version: 3.1.0(@algolia/client-search@5.20.2)(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)(typescript@5.7.3)
+        version: 3.1.0(@algolia/client-search@5.20.2)(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/theme-common':
         specifier: 3.1.0
         version: 3.1.0(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/theme-search-algolia':
         specifier: 3.1.0
-        version: 3.1.0(@algolia/client-search@5.20.2)(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)(typescript@5.7.3)
+        version: 3.1.0(@algolia/client-search@5.20.2)(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@iframe-resizer/react':
         specifier: 5.3.3
         version: 5.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -140,7 +140,7 @@ importers:
         version: 2.27.12
       '@docsearch/react':
         specifier: 3.8.3
-        version: 3.8.3(@algolia/client-search@5.20.2)(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)
+        version: 3.8.3(@algolia/client-search@5.20.2)(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@docusaurus/module-type-aliases':
         specifier: 3.1.0
         version: 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -194,7 +194,7 @@ importers:
         version: 1.0.0(eslint@9.20.1(jiti@1.21.0))(typescript@5.7.3)
       '@persoonlijke-regelingen-assistent/components-react':
         specifier: 1.0.0-alpha.152
-        version: 1.0.0-alpha.152(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.0.0-alpha.152(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@playwright/test':
         specifier: 1.50.1
         version: 1.50.1
@@ -215,7 +215,7 @@ importers:
         version: 7.0.0
       '@utrecht/component-library-react':
         specifier: 5.0.0
-        version: 5.0.0(@babel/runtime@7.26.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 5.0.0(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/web-component-library-react':
         specifier: 3.0.2
         version: 3.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -287,7 +287,7 @@ importers:
         version: 16.14.1(typescript@5.7.3)
       stylelint-config-standard-scss:
         specifier: 14.0.0
-        version: 14.0.0(postcss@8.4.32)(stylelint@16.14.1(typescript@5.7.3))
+        version: 14.0.0(postcss@8.5.2)(stylelint@16.14.1(typescript@5.7.3))
       stylelint-order:
         specifier: 6.0.4
         version: 6.0.4(stylelint@16.14.1(typescript@5.7.3))
@@ -1917,67 +1917,79 @@ packages:
     resolution: {integrity: sha512-9B+taZ8DlyyqzZQnoeIvDVR/2F4EbMepXMc/NdVbkzsJbzkUjhXv/70GQJ7tdLA4YJgNP25zukcxpX2/SueNrA==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linux-arm@1.0.5':
     resolution: {integrity: sha512-gvcC4ACAOPRNATg/ov8/MnbxFDJqf/pDePbBnuBDcjsI8PssmjoKMAz4LtLaVi+OnSb5FK/yIOamqDwGmXW32g==}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linux-s390x@1.0.4':
     resolution: {integrity: sha512-u7Wz6ntiSSgGSGcjZ55im6uvTrOxSIS8/dgoVMoiGE9I6JAfU50yH5BoDlYA1tcuGS7g/QNtetJnxA6QEsCVTA==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linux-x64@1.0.4':
     resolution: {integrity: sha512-MmWmQ3iPFZr0Iev+BAgVMb3ZyC4KeFc3jFxnNbEPas60e1cIfevbtuyf9nDGIzOaW9PdnDciJm+wFFaTlj5xYw==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-libvips-linuxmusl-arm64@1.0.4':
     resolution: {integrity: sha512-9Ti+BbTYDcsbp4wfYib8Ctm1ilkugkA/uscUn6UXK1ldpC1JjiXbLfFZtRlBhjPZ5o1NCLiDbg8fhUPKStHoTA==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@img/sharp-libvips-linuxmusl-x64@1.0.4':
     resolution: {integrity: sha512-viYN1KX9m+/hGkJtvYYp+CCLgnJXwiQB39damAO7WMdKWlIhmYTfHjwSbQeUK/20vY154mwezd9HflVFM1wVSw==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@img/sharp-linux-arm64@0.33.5':
     resolution: {integrity: sha512-JMVv+AMRyGOHtO1RFBiJy/MBsgz0x4AWrT6QoEVVTyh1E39TrCUpTRI7mx9VksGX4awWASxqCYLCV4wBZHAYxA==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linux-arm@0.33.5':
     resolution: {integrity: sha512-JTS1eldqZbJxjvKaAkxhZmBqPRGmxgu+qFKSInv8moZ2AmT5Yib3EQ1c6gp493HvrvV8QgdOXdyaIBrhvFhBMQ==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linux-s390x@0.33.5':
     resolution: {integrity: sha512-y/5PCd+mP4CA/sPDKl2961b+C9d+vPAveS33s6Z3zfASk2j5upL6fXVPZi7ztePZ5CuH+1kW8JtvxgbuXHRa4Q==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linux-x64@0.33.5':
     resolution: {integrity: sha512-opC+Ok5pRNAzuvq1AG0ar+1owsu842/Ab+4qvU879ippJBHvyY5n2mxF1izXqkPYlGuP/M556uh53jRLJmzTWA==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@img/sharp-linuxmusl-arm64@0.33.5':
     resolution: {integrity: sha512-XrHMZwGQGvJg2V/oRSUfSAfjfPxO+4DkiRh6p2AFjLQztWUuY/o8Mq0eMQVIY7HJ1CDQUJlxGGZRw1a5bqmd1g==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@img/sharp-linuxmusl-x64@0.33.5':
     resolution: {integrity: sha512-WT+d/cgqKkkKySYmqoZ8y3pxx7lx9vVejxW/W4DOFMYVSkErR+w7mf2u8m/y4+xHe7yY9DAXQMWQhpnMuFfScw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@img/sharp-wasm32@0.33.5':
     resolution: {integrity: sha512-ykUW4LVGaMcU9lu9thv85CbRMAwfeadCJHRsg2GmeRa/cJxsVY9Rbd57JcMxBkKHag5U/x7TSBpScF4U8ElVzg==}
@@ -2195,36 +2207,42 @@ packages:
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-arm-musl@2.5.1':
     resolution: {integrity: sha512-6E+m/Mm1t1yhB8X412stiKFG3XykmgdIOqhjWj+VL8oHkKABfu/gjFj8DvLrYVHSBNC+/u5PeNrujiSQ1zwd1Q==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
+    libc: [musl]
 
   '@parcel/watcher-linux-arm64-glibc@2.5.1':
     resolution: {integrity: sha512-LrGp+f02yU3BN9A+DGuY3v3bmnFUggAITBGriZHUREfNEzZh/GO06FF5u2kx8x+GBEUYfyTGamol4j3m9ANe8w==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-musl@2.5.1':
     resolution: {integrity: sha512-cFOjABi92pMYRXS7AcQv9/M1YuKRw8SZniCDw0ssQb/noPkRzA+HBDkwmyOJYp5wXcsTrhxO0zq1U11cK9jsFg==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@parcel/watcher-linux-x64-glibc@2.5.1':
     resolution: {integrity: sha512-GcESn8NZySmfwlTsIur+49yDqSny2IhPeZfXunQi48DMugKeZ7uy1FX83pO0X22sHntJ4Ub+9k34XQCX+oHt2A==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@parcel/watcher-linux-x64-musl@2.5.1':
     resolution: {integrity: sha512-n0E2EQbatQ3bXhcH2D1XIAANAcTZkQICBPVaxMeaCVBtOpBZpWJuf7LwyWPSBDITb7In8mqQgJ7gH8CILCURXg==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@parcel/watcher-win32-arm64@2.5.1':
     resolution: {integrity: sha512-RFzklRvmc3PkjKjry3hLF9wD7ppR4AKcWNzH7kXR7GUe0Igb3Nz8fyPwtZCSquGrhU5HhUNDr/mKBqj7tqA2Vw==}
@@ -2788,11 +2806,11 @@ packages:
 
   '@utrecht/components@3.0.0':
     resolution: {integrity: sha512-TO39Ti6Af50l+I2gt4S3iacGVuVoxBK/+G/bsK9wvii53fO35NYJul7xB98/IYSBmewaN4GtmyWGphVDdFMt1A==}
-    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
+    deprecated: 'Deprecated. Replaced by a separate package for each component, following the pattern: @utrecht/*-css. For example: @utrecht/button-css.'
 
   '@utrecht/components@3.0.1-alpha.18':
     resolution: {integrity: sha512-K70QrVpP1lHGdpYNShnhy7FYM1Ce8S1BXW4ES3E+9YBbiA9WgDV+G9iAx2TI10NduOVkjt9KRy7YZ9I8/OUVug==}
-    deprecated: 'The @utrecht/components package has been deprecated. To migrate: the SCSS files are now only available in the npm package for the specific component. For example: @utrecht/button-css/src/_mixin.scss. The entire component library is now available in @utrecht/component-library-css/dist/index.css.'
+    deprecated: 'Deprecated. Replaced by a separate package for each component, following the pattern: @utrecht/*-css. For example: @utrecht/button-css.'
 
   '@utrecht/design-tokens@2.4.0':
     resolution: {integrity: sha512-TPLbXIgNOmoNbl6eTibBGkJ8sIH/8C77Bgot0LyLBe95/CQMCy9t172uB8C2SrtTKBsrxJwQhIUkHZ3YCGPvyA==}
@@ -2920,11 +2938,6 @@ packages:
 
   ajv-formats@2.1.1:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
-    peerDependencies:
-      ajv: ^8.0.0
-    peerDependenciesMeta:
-      ajv:
-        optional: true
 
   ajv-keywords@3.5.2:
     resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==}
@@ -3780,10 +3793,6 @@ packages:
   data-view-byte-offset@1.0.1:
     resolution: {integrity: sha512-BS8PfmtDGnrgYdOonGZQdLZslWIeCGFP9tpan0hi1Co2Zr2NKADsvGYA8XxuG/4UWgJ6Cjtv+YJnB6MM69QGlQ==}
     engines: {node: '>= 0.4'}
-
-  date-fns@2.30.0:
-    resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
-    engines: {node: '>=0.11'}
 
   date-fns@3.3.1:
     resolution: {integrity: sha512-y8e109LYGgoQDveiEBD3DYXKba1jWf5BA8YU1FL5Tvm0BTdEfy54WLCwnuYWZNnzzvALy/QQ4Hov+Q9RVRv+Zw==}
@@ -7170,9 +7179,6 @@ packages:
     resolution: {integrity: sha512-L0jRsrPpjdckP3oPug3/VxNKt2trR8TcabrM6FOAAlvC/9Phcmm+cuAgTlxBqdBR1WJx7Naj9WHw+aOmheSVbw==}
     engines: {node: '>= 12.13.0'}
 
-  search-insights@2.13.0:
-    resolution: {integrity: sha512-Orrsjf9trHHxFRuo9/rzm0KIWmgzE8RMlZMzuhZOJ01Rnz3D0YBAe+V6473t6/H6c7irs6Lt48brULAiRWb3Vw==}
-
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
     engines: {node: '>=4'}
@@ -8304,19 +8310,18 @@ snapshots:
 
   '@aashutoshrathi/word-wrap@1.2.6': {}
 
-  '@algolia/autocomplete-core@1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)(search-insights@2.13.0)':
+  '@algolia/autocomplete-core@1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)':
     dependencies:
-      '@algolia/autocomplete-plugin-algolia-insights': 1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)(search-insights@2.13.0)
+      '@algolia/autocomplete-plugin-algolia-insights': 1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)
       '@algolia/autocomplete-shared': 1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)
     transitivePeerDependencies:
       - '@algolia/client-search'
       - algoliasearch
       - search-insights
 
-  '@algolia/autocomplete-plugin-algolia-insights@1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)(search-insights@2.13.0)':
+  '@algolia/autocomplete-plugin-algolia-insights@1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)':
     dependencies:
       '@algolia/autocomplete-shared': 1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)
-      search-insights: 2.13.0
     transitivePeerDependencies:
       - '@algolia/client-search'
       - algoliasearch
@@ -9484,9 +9489,9 @@ snapshots:
 
   '@docsearch/css@3.8.3': {}
 
-  '@docsearch/react@3.8.3(@algolia/client-search@5.20.2)(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)':
+  '@docsearch/react@3.8.3(@algolia/client-search@5.20.2)(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@algolia/autocomplete-core': 1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)(search-insights@2.13.0)
+      '@algolia/autocomplete-core': 1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)
       '@algolia/autocomplete-preset-algolia': 1.17.9(@algolia/client-search@5.20.2)(algoliasearch@5.20.2)
       '@docsearch/css': 3.8.3
       algoliasearch: 5.20.2
@@ -9494,7 +9499,6 @@ snapshots:
       '@types/react': 18.3.18
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      search-insights: 2.13.0
     transitivePeerDependencies:
       - '@algolia/client-search'
 
@@ -9894,7 +9898,7 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/preset-classic@3.1.0(@algolia/client-search@5.20.2)(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)(typescript@5.7.3)':
+  '@docusaurus/preset-classic@3.1.0(@algolia/client-search@5.20.2)(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
       '@docusaurus/core': 3.1.0(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/plugin-content-blog': 3.1.0(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
@@ -9907,7 +9911,7 @@ snapshots:
       '@docusaurus/plugin-sitemap': 3.1.0(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/theme-classic': 3.1.0(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/theme-common': 3.1.0(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/theme-search-algolia': 3.1.0(@algolia/client-search@5.20.2)(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)(typescript@5.7.3)
+      '@docusaurus/theme-search-algolia': 3.1.0(@algolia/client-search@5.20.2)(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/types': 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -10021,9 +10025,9 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/theme-search-algolia@3.1.0(@algolia/client-search@5.20.2)(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)(typescript@5.7.3)':
+  '@docusaurus/theme-search-algolia@3.1.0(@algolia/client-search@5.20.2)(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.18)(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docsearch/react': 3.8.3(@algolia/client-search@5.20.2)(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.13.0)
+      '@docsearch/react': 3.8.3(@algolia/client-search@5.20.2)(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@docusaurus/core': 3.1.0(@docusaurus/types@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/logger': 3.1.0
       '@docusaurus/plugin-content-docs': 3.1.0(eslint@9.20.1(jiti@1.21.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
@@ -10345,9 +10349,9 @@ snapshots:
       '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
       react: 18.3.1
 
-  '@gemeente-denhaag/checkbox@0.3.0-alpha.374(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/checkbox@0.3.0-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -10356,7 +10360,7 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/components-react@0.1.1-alpha.316(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/components-react@0.1.1-alpha.316(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/accordion': 0.2.3-alpha.374
       '@gemeente-denhaag/action': 0.1.1-alpha.40(react@18.3.1)
@@ -10365,36 +10369,36 @@ snapshots:
       '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/card': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/card-group': 0.1.1-alpha.103(react@18.3.1)
-      '@gemeente-denhaag/checkbox': 0.3.0-alpha.374(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/checkbox': 0.3.0-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/contact-timeline': 0.1.1-alpha.32(react@18.3.1)
       '@gemeente-denhaag/descriptionlist': 0.1.1-alpha.274
       '@gemeente-denhaag/divider': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/file': 0.1.1-alpha.46(react@18.3.1)
-      '@gemeente-denhaag/footer': 0.1.1-alpha.233(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@gemeente-denhaag/form-field': 0.3.0-alpha.250(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@gemeente-denhaag/form-field-description': 0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/footer': 0.1.1-alpha.233(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-field': 0.3.0-alpha.250(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-field-description': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/form-field-error-message': 0.3.0-alpha.7(react@18.3.1)
-      '@gemeente-denhaag/form-fieldset': 0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@gemeente-denhaag/form-label': 0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-fieldset': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/form-label': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/form-progress': 0.1.1-alpha.249(react@18.3.1)
-      '@gemeente-denhaag/header': 0.1.1-alpha.234(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/header': 0.1.1-alpha.234(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/iconbutton': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/list': 0.2.3-alpha.374(react@18.3.1)
-      '@gemeente-denhaag/menu': 0.2.3-alpha.374(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/menu': 0.2.3-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/page': 0.1.1-alpha.234
       '@gemeente-denhaag/pagination': 0.1.1-alpha.301(react@18.3.1)
       '@gemeente-denhaag/process-steps': 0.1.0-alpha.203(react@18.3.1)
-      '@gemeente-denhaag/radio-button': 0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/radio-button': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/responsive-content': 0.1.1-alpha.234
       '@gemeente-denhaag/sheet': 0.1.0-alpha.170(react@18.3.1)
       '@gemeente-denhaag/sidenav': 0.1.0-alpha.192(react@18.3.1)
       '@gemeente-denhaag/stylesprovider': 0.1.1-alpha.374(react@18.3.1)
       '@gemeente-denhaag/tab': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/table': 0.1.1-alpha.276(react@18.3.1)
-      '@gemeente-denhaag/text-input': 0.3.0-alpha.374(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@gemeente-denhaag/textarea': 0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/text-input': 0.3.0-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/textarea': 0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
@@ -10437,7 +10441,7 @@ snapshots:
     transitivePeerDependencies:
       - react
 
-  '@gemeente-denhaag/footer@0.1.1-alpha.233(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/footer@0.1.1-alpha.233(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/button-group': 0.1.1-alpha.243
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
@@ -10446,7 +10450,7 @@ snapshots:
       '@gemeente-denhaag/list': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/responsive-content': 0.1.1-alpha.234
       '@utrecht/component-library-css': 3.0.0
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - date-fns
       - react
@@ -10454,9 +10458,9 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/form-field-description@0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/form-field-description@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -10469,9 +10473,9 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@gemeente-denhaag/form-field@0.3.0-alpha.250(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/form-field@0.3.0-alpha.250(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -10480,9 +10484,9 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/form-fieldset@0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/form-fieldset@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -10491,9 +10495,9 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/form-label@0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/form-label@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -10510,17 +10514,17 @@ snapshots:
 
   '@gemeente-denhaag/header-logo@0.1.1-alpha.234': {}
 
-  '@gemeente-denhaag/header@0.1.1-alpha.234(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/header@0.1.1-alpha.234(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/breadcrumb': 0.1.1-alpha.302(react@18.3.1)
       '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/header-logo': 0.1.1-alpha.234
       '@gemeente-denhaag/iconbutton': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
-      '@gemeente-denhaag/language-switcher': 0.2.3-alpha.366(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/language-switcher': 0.2.3-alpha.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/link-group': 0.1.3-alpha.235
-      '@gemeente-denhaag/menu': 0.2.3-alpha.374(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/menu': 0.2.3-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/responsive-content': 0.1.1-alpha.234
       '@gemeente-denhaag/sheet': 0.1.0-alpha.170(react@18.3.1)
       '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
@@ -10539,11 +10543,11 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@gemeente-denhaag/language-switcher@0.2.3-alpha.366(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/language-switcher@0.2.3-alpha.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/link': 0.2.3-alpha.374(react@18.3.1)
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
       - date-fns
@@ -10564,11 +10568,11 @@ snapshots:
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
       react: 18.3.1
 
-  '@gemeente-denhaag/menu@0.2.3-alpha.374(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/menu@0.2.3-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
-      '@gemeente-denhaag/language-switcher': 0.2.3-alpha.366(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/language-switcher': 0.2.3-alpha.366(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/sheet': 0.1.0-alpha.170(react@18.3.1)
       '@types/uuid': 9.0.8
       '@utrecht/component-library-css': 3.0.0
@@ -10594,9 +10598,9 @@ snapshots:
       '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
       react: 18.3.1
 
-  '@gemeente-denhaag/radio-button@0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/radio-button@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -10632,9 +10636,9 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@gemeente-denhaag/text-input@0.3.0-alpha.374(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/text-input@0.3.0-alpha.374(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -10643,9 +10647,9 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/textarea@0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/textarea@0.3.0-alpha.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -11031,11 +11035,11 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@persoonlijke-regelingen-assistent/components-react@1.0.0-alpha.152(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@persoonlijke-regelingen-assistent/components-react@1.0.0-alpha.152(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@gemeente-denhaag/components-react': 0.1.1-alpha.316(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/components-react': 0.1.1-alpha.316(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/component-library-css': 3.0.1-alpha.18
-      '@utrecht/component-library-react': 3.0.1-alpha.18(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/component-library-react': 3.0.1-alpha.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/components': 3.0.1-alpha.18
       '@visx/group': 3.3.0(react@18.3.1)
       '@visx/scale': 3.5.0
@@ -11599,33 +11603,27 @@ snapshots:
 
   '@utrecht/component-library-css@7.0.0': {}
 
-  '@utrecht/component-library-react@3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/component-library-react@3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       clsx: 1.2.1
       lodash.chunk: 4.2.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-    optionalDependencies:
-      date-fns: 2.30.0
 
-  '@utrecht/component-library-react@3.0.1-alpha.18(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/component-library-react@3.0.1-alpha.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       clsx: 1.2.1
       lodash.chunk: 4.2.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-    optionalDependencies:
-      date-fns: 2.30.0
 
-  '@utrecht/component-library-react@5.0.0(@babel/runtime@7.26.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/component-library-react@5.0.0(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.26.7
       clsx: 2.1.1
       lodash.chunk: 4.2.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-    optionalDependencies:
-      date-fns: 2.30.0
 
   '@utrecht/components@3.0.0':
     dependencies:
@@ -11815,8 +11813,8 @@ snapshots:
     dependencies:
       ajv: 6.12.6
 
-  ajv-formats@2.1.1(ajv@8.12.0):
-    optionalDependencies:
+  ajv-formats@2.1.1:
+    dependencies:
       ajv: 8.12.0
 
   ajv-keywords@3.5.2(ajv@6.12.6):
@@ -12847,11 +12845,6 @@ snapshots:
       call-bound: 1.0.3
       es-errors: 1.3.0
       is-data-view: 1.0.2
-
-  date-fns@2.30.0:
-    dependencies:
-      '@babel/runtime': 7.26.7
-    optional: true
 
   date-fns@3.3.1: {}
 
@@ -16291,9 +16284,9 @@ snapshots:
     dependencies:
       postcss: 8.5.2
 
-  postcss-scss@4.0.9(postcss@8.4.32):
+  postcss-scss@4.0.9(postcss@8.5.2):
     dependencies:
-      postcss: 8.4.32
+      postcss: 8.5.2
 
   postcss-selector-parser@6.1.2:
     dependencies:
@@ -16955,10 +16948,8 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
       ajv: 8.12.0
-      ajv-formats: 2.1.1(ajv@8.12.0)
+      ajv-formats: 2.1.1
       ajv-keywords: 5.1.0(ajv@8.12.0)
-
-  search-insights@2.13.0: {}
 
   section-matter@1.0.0:
     dependencies:
@@ -17504,26 +17495,26 @@ snapshots:
       postcss: 8.4.32
       postcss-selector-parser: 6.1.2
 
-  stylelint-config-recommended-scss@14.1.0(postcss@8.4.32)(stylelint@16.14.1(typescript@5.7.3)):
+  stylelint-config-recommended-scss@14.1.0(postcss@8.5.2)(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
-      postcss-scss: 4.0.9(postcss@8.4.32)
+      postcss-scss: 4.0.9(postcss@8.5.2)
       stylelint: 16.14.1(typescript@5.7.3)
       stylelint-config-recommended: 14.0.1(stylelint@16.14.1(typescript@5.7.3))
       stylelint-scss: 6.11.0(stylelint@16.14.1(typescript@5.7.3))
     optionalDependencies:
-      postcss: 8.4.32
+      postcss: 8.5.2
 
   stylelint-config-recommended@14.0.1(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
       stylelint: 16.14.1(typescript@5.7.3)
 
-  stylelint-config-standard-scss@14.0.0(postcss@8.4.32)(stylelint@16.14.1(typescript@5.7.3)):
+  stylelint-config-standard-scss@14.0.0(postcss@8.5.2)(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
       stylelint: 16.14.1(typescript@5.7.3)
-      stylelint-config-recommended-scss: 14.1.0(postcss@8.4.32)(stylelint@16.14.1(typescript@5.7.3))
+      stylelint-config-recommended-scss: 14.1.0(postcss@8.5.2)(stylelint@16.14.1(typescript@5.7.3))
       stylelint-config-standard: 36.0.1(stylelint@16.14.1(typescript@5.7.3))
     optionalDependencies:
-      postcss: 8.4.32
+      postcss: 8.5.2
 
   stylelint-config-standard@36.0.1(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
