@@ -15,13 +15,13 @@ Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Het o
 
 ## Stappenplan overslaan?
 
-Als je het stappenplan wilt overslaan en voor jezelf iets leuks wilt creëren, kopieer dan [deze voorbeeldpagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/main/static/examples/zonder-front-end-framework.html) en maak er je eigen versie van.
+Wil je liever zelf aan de slag? Kopieer dan [deze voorbeeldpagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/main/static/examples/zonder-front-end-framework.html) en maak er je eigen versie van.
 
 ## Paginaopzet
 
 De pagina is opgedeeld in de volgende componenten: [Skip Link](/skip-link), [Logo](/logo), [Page Header](/page-header), [Page Footer](/page-footer), [Breadcrumb Navigation](/breadcrumb-navigation), [Heading](/heading), [Paragraph](/paragraph), [Button](/button), [Unordered List](/unordered-list), [Navigation Bar](/navigation-bar) en [Link](/link).
 
-Een aantal van deze componenten is beschikbaar als [candidate component](/componenten/?status=CANDIDATE). Andere componenten kunnen van een community gebruikt worden, of zelf gemaakt worden. In dit voorbeeld wordt gekozen om de pagina zoveel mogelijk op te bouwen met Candidate componenten. Daarnaast is een aantal componenten alleen als Community component beschikbaar. In dat geval kies je degene die het beste bij het design past.
+Een aantal van deze componenten is beschikbaar als [candidate component](/componenten/?status=CANDIDATE), een aantal als [community component](/componenten/?status=COMMUNITY) en een paar zijn nog niet beschikbaar. In dit voorbeeld wordt gekozen om de pagina zoveel mogelijk op te bouwen met de componenten die al bestaan. Zijn er meerdere Community implementaties? Kies dan degene die het best bij het gewenste design past.
 
 ## Zelf de pagina opbouwen
 
@@ -173,7 +173,7 @@ En om de styling van de links goed te krijgen importeer je de NL Design System C
 
 ##### Visually Hidden
 
-Zoals je misschien opgevallen is zie je nu een paar elementen staan die niet zichtbaar hoeven te zijn, wanneer je geen screenreader gebruikt. Namelijk "Hoofdnavigatie", "Secundaire navigatie" en "Zoeken op de site". Deze zijn toegevoegd om de toegankelijkheid van de pagina te verbeteren.
+Amsterdam gebruikt `aria-labelled-by` met een verwijzing naar een ander element op de pagina om hulpsoftware meer informatie te geven over de landmarks op de pagina. Deze extra elementen hoeven niet zichtbaar te zijn. Daarom is het handig om de `visually-hidden` CSS van Amsterdam te importeren.
 De Amsterdam community heeft een component om a11y elementen 'onzichtbaar' te maken. Deze importeer je door middel van:
 
 ```html
@@ -295,7 +295,7 @@ Ook zonder screenreader kun je zien dat de Skip Link nu verborgen is, maar nog w
 
 #### Page Body
 
-De pagina begint er mooi uit te zien. Je kan echter zien dat de tekst helemaal links staat en de paragrafen de volledige breedte in te nemen. Om dat op te lossen kun je de Utrecht page body gebruiken.
+De pagina begint er mooi uit te zien. Je kan echter zien dat de tekst helemaal links staat en de alinea's de volledige breedte in te nemen. Om dat op te lossen kun je de Utrecht page body gebruiken.
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0.1.1/dist/index.css" />
@@ -323,7 +323,7 @@ Je kan zien dat het heeft gewerkt doordat de `h1` met een `font-size` van `32px`
 
 #### Paragraph
 
-Gebruik paragrafen voor lopende tekst. Aangezien `nl-paragraph` beschikbaar is als Candidate component kun je die gebruiken. Pas deze toe op alle plekken waar een `<p>` element staat.
+Gebruik alinea's voor lopende tekst. Aangezien `nl-paragraph` beschikbaar is als Candidate component kun je die gebruiken. Pas deze toe op alle plekken waar een `<p>` element staat.
 
 ```html
 <p class="nl-paragraph">
