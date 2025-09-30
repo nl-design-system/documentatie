@@ -25,13 +25,13 @@ BEGIN:VEVENT
 TRANSP:OPAQUE
 DTEND;TZID=Europe/Amsterdam:20250612T150000
 X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
-UID:5a300ea9-c07c-460b-8a07-918193f6a518
+UID:a6c1cf82-84af-4242-8d60-6b303b05bdce
 DTSTAMP:20240610T120000Z
 LOCATION:https://app.slack.com/huddle/T68FXPFQV/C01DAT4TRPF
-DESCRIPTION:Wees welkom bij de 'MijnServices Community Afstemming'. Deze meeting vindt plaats in het #nl-design-system-developers kanaal op de Code for NL Slack. \n\nMeer informatie over MijnServices Community: https://nldesignsystem.nl/community/community-sprints/mijn-services-community/ \n\nZit je nog niet op de Code for NL Slack? Meld je hier aan: https://praatmee.codefor.nl/
+DESCRIPTION:Wees welkom bij de 'MijnServices Community Designer Afstemming'. Deze meeting vindt plaats in het #nl-design-system-desigenrs kanaal op de Code for NL Slack. \n\nMeer informatie over MijnServices Community: https://nldesignsystem.nl/community/community-sprints/mijn-services-community/ \n\nZit je nog niet op de Code for NL Slack? Meld je hier aan: https://praatmee.codefor.nl/
 X-APPLE-CREATOR-IDENTITY:com.apple.calendar
 SEQUENCE:6
-SUMMARY:MijnServices Community Afstemming - NL Design System
+SUMMARY:MijnServices Community Designer Afstemming - NL Design System
 DTSTART;TZID=Europe/Amsterdam:20250612T140000
 LAST-MODIFIED:20240610T120000Z
 CREATED:20240610T120000Z
