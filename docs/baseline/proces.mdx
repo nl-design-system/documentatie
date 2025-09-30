@@ -1,0 +1,138 @@
+---
+title: Nieuwe baseline bepalen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Nieuwe baseline bepalen
+pagination_label: Nieuwe baseline bepalen
+description: Volg deze stappen om een nieuwe NL Design System Baseline te bepalen.
+slug: /baseline/nieuw
+keywords:
+  - Accessibility Support Baseline
+  - Baseline
+  - browser support
+  - browserversie
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import Support from "./_baseline-support.md";
+import Tip from "./_baseline-tip.md";
+
+# Nieuwe baseline bepalen
+
+<Paragraph lead>NL Design System</Paragraph>
+
+## Besturingssystemen
+
+Bepaal de belangrijkste besturingssystemen voor desktop en voor mobiele apparaten, op basis van wereldwijd marktaandeel in de [RUM Archive](https://rumarchive.com/insights/#os-marketshare). Selecteer de besturingssystemen met meer dan 10% marktaandeel.
+
+De laatst keer waren dat:
+
+- Desktop:
+  - Windows
+  - macOS
+- Mobiel:
+  - iOS
+  - Android
+
+## Browsers
+
+Bepaal de belangrijkste browsers voor desktop en mobiele apparaten, op basis van wereldwijd marktaandeel in de [RUM Archive](https://rumarchive.com/insights/#os-marketshare) en de [WebAIM Screen Reader survey](https://webaim.org/projects/screenreadersurvey10/#browsers). Gebruik de browsers met meer dan 10% marktaandeel in één of beide bronnen.
+
+De laatst keer waren dat:
+
+- Chrome
+- Edge
+- Safari
+- Firefox (meer dan 10% in de WebAIM Screen Reader survey)
+
+## Brower-versies
+
+Gebruik daarom de meest recente browserversies om mee te testen, dat zal representatief zijn voor wat gebruikers de komende tijd gebruiken. Lees voor meer informatie over deze aanpak de toelichting verderop.
+
+Bepaal de meest recente browserversies:
+
+- Voor Chrome controleer de [Chrome Releases blog voor de meest recente "Stable Channel Update for Desktop"](https://chromereleases.googleblog.com/search/label/Desktop%20Update).
+- Voor Firefox controleer [de meest recente Firefox release notes](https://www.firefox.com/en-GB/firefox/notes/).
+- Chrome 139 of Edge 139 met de [screenreader](/woordenlijst/#screenreader) [JAWS 2025](https://support.freedomscientific.com/Downloads/JAWS/JAWSWhatsNew?version=2025) op [Windows 11](https://www.microsoft.com/en-us/software-download/windows11)
+- Chrome 139 of Edge 139 met de screenreader [NVDA 2025.2](https://www.nvaccess.org/post/nvda-2025-2/) op Windows 11
+- [Chrome 139 op Android](https://chromereleases.googleblog.com/2025/08/chrome-for-android-update_01416888669.html)
+- Chrome 139 op Android met de screenreader [Talkback 16.0](https://support.google.com/accessibility/android/answer/16294093?hl=en&ref_topic=10601875&sjid=15881667813641533001-EU)
+- Chrome 139 op Windows 11 of [macOS 15.6 Sequoia](https://developer.apple.com/documentation/macos-release-notes/macos-15_6-release-notes)
+- [Firefox 142](https://www.firefox.com/en-US/firefox/142.0/releasenotes/)
+- Firefox 142 met de screenreader NVDA 2025.2 op Windows 11
+- Safari [18.6](https://developer.apple.com/documentation/safari-release-notes/safari-18_6-release-notes) op [iOS 18.6](https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-18_6-release-notes)
+- Safari 18.6 op iOS 18.6 met de screenreader VoiceOver
+- Safari 18.6 op macOS 15.6
+- Safari 18.6 op macOS 15.6 met de screenreader VoiceOver
+
+<SpotlightSection>
+  Browsers moeten continu automatisch geupdatet worden naar de nieuwste versie voor een gezond "[evergreen
+  web](https://www.w3.org/2001/tag/doc/evergreen-web/)". Uit de inzichten van de [RUM
+  Archive](https://rumarchive.com/insights/#ua-version-marketshare) blijkt dat dit ook gebeurt: de nieuwste versies van
+  Chrome, Edge, Firefox en Safari worden binnen enkele weken de meest gebruikte versie.
+</SpotlightSection>
+
+## Screenreaders voor browsers
+
+<SpotlightSection>
+  Op dit bevat de Baseline alleen screenreaders als hulpsoftware. In de toekomst kan dit proces uitgebreid worden met
+  andere hulpsoftware, zoals stembesturingssoftware.
+</SpotlightSection>
+
+### Browser-combinaties
+
+Bepaal welke screenreaders het meest gebruikt worden, en in welke combinatie tussen browser en screenreader.
+
+Werk op basis van de meest recente Screen Reader User Survey in [het overzicht van WebAIM projecten](https://webaim.org/projects/). De laatste keer was dat [Screen Reader User Survey #10](https://webaim.org/projects/screenreadersurvey10/).
+
+Kies de belangrijkste browser-screenreader-combianties op basis van de [Screen Reader / Browser Combinations in de meest recente Screen Reader User Survey](https://webaim.org/projects/screenreadersurvey10/#browsercombos).
+
+Selecteer de combinaties die door meer dan 10% van de respondenten genoemd zijn. De laatst keer waren dat:
+
+- JAWS with Chrome
+- NVDA with Chrome
+- JAWS with Edge
+- NVDA with Firefox
+
+Gebruik ook de combinaties die de default software zijn op de belangrijkste besturingssystemen, die een significant aandeel hebben. De laatst keer waren dat:
+
+- VoiceOver voor Safari voor macOS heeft 7% aandeel, dat is significant.
+- Windows Narrator voor Microsoft Edge voor Windows komt niet in de lijst voor.
+
+Gebruik voor mobiele besturingssystemen de combinaties die de standaard software zijn op de belangrijkste besturingssystemen zijn. De laatst keer waren dat:
+
+- VoiceOver voor Safari voor iOS
+- Talkback voor Chrome voor Android
+
+Op [Appt.org kun je statistieken vinden](https://appt.org/en/stats) hoe groot het percentage is van VoiceOver
+
+<SpotlightSection>
+  Op dit bevat de Baseline alleen screenreaders als hulpsoftware. In de toekomst kan dit proces uitgebreid worden met
+  andere hulpsoftware, zoals stembesturingssoftware.
+</SpotlightSection>
+
+### Screenreader-versies
+
+De laatste versies van software op 22 augustus 2025 zijn:
+
+- [Chrome 139](https://chromereleases.googleblog.com/2025/08/stable-channel-update-for-desktop_19.html) of [Edge 139](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel#version-13903405111-august-21-2025)
+- Chrome 139 of Edge 139 met de [screenreader](/woordenlijst/#screenreader) [JAWS 2025](https://support.freedomscientific.com/Downloads/JAWS/JAWSWhatsNew?version=2025) op [Windows 11](https://www.microsoft.com/en-us/software-download/windows11)
+- Chrome 139 of Edge 139 met de screenreader [NVDA 2025.2](https://www.nvaccess.org/post/nvda-2025-2/) op Windows 11
+- [Chrome 139 op Android](https://chromereleases.googleblog.com/2025/08/chrome-for-android-update_01416888669.html)
+- Chrome 139 op Android met de screenreader [Talkback 16.0](https://support.google.com/accessibility/android/answer/16294093?hl=en&ref_topic=10601875&sjid=15881667813641533001-EU)
+- Chrome 139 op Windows 11 of [macOS 15.6 Sequoia](https://developer.apple.com/documentation/macos-release-notes/macos-15_6-release-notes)
+- [Firefox 142](https://www.firefox.com/en-US/firefox/142.0/releasenotes/)
+- Firefox 142 met de screenreader NVDA 2025.2 op Windows 11
+- Safari [18.6](https://developer.apple.com/documentation/safari-release-notes/safari-18_6-release-notes) op [iOS 18.6](https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-18_6-release-notes)
+- Safari 18.6 op iOS 18.6 met de screenreader VoiceOver
+- Safari 18.6 op macOS 15.6
+- Safari 18.6 op macOS 15.6 met de screenreader VoiceOver
+
+## Oudere softwareversies
+
+<Markdown omitH1 headingLevel={3}>
+  <Support />
+</Markdown>
