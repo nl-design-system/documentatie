@@ -10,6 +10,7 @@ unlisted: true
 
 import { IconCalendarEvent } from "@tabler/icons-react";
 import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
 
 # Bedankt!
 
@@ -22,14 +23,29 @@ Handige links:
 - Bekijk onze [video's in de MijnServices Community Sprint playlist op YouTube](https://www.youtube.com/playlist?list=PLnAxFMscDU3F1VYQxlJLpmV-Z-FQ6hCU_) en abonneer je op ons kanaal.
 - Vind alle relevante linkjes en informatie op de [MijnServices Community pagina](https://nldesignsystem.nl/community/community-sprints/mijn-services-community).
 
-Elke twee weken heeft de MijnServices Community een afstemming in het #nl-design-system-developers kanaal om aan de NL Design System adoptie binnen mijn omgevingen te werken.
+Periodiek heeft de MijnServices Community een afstemming om aan de NL Design System adoptie binnen mijn omgevingen te werken.
 
-<ButtonLink
-  appearance="secondary-action"
-  href="https://nldesignsystem.nl/mijn-services-community/mijn-services-community-afstemming.ics"
-  download="https://nldesignsystem.nl/mijn-services-community/mijn-services-community-afstemming.ics"
-  aria-label="iCal bestand voor de MijnServices Community Afstemming (download)"
->
-  <IconCalendarEvent />
-  {" Download het kalenderbestand"}
-</ButtonLink>
+- Elke week op donderdag met designers in het #nl-design-system-designers kanaal.
+- In de even weken op donderdag met developers in het #nl-design-system-developers kanaal.
+
+<ActionGroup>
+  <ButtonLink
+    appearance="secondary-action"
+    href="https://nldesignsystem.nl/mijn-services-community/mijn-services-community-designer-afstemming.ics"
+    download="https://nldesignsystem.nl/mijn-services-community/mijn-services-community-designer-afstemming.ics"
+    aria-label="iCal bestand voor de MijnServices Community Designer Afstemming (download)"
+  >
+    <IconCalendarEvent />
+    {" Download het designer kalenderbestand"}
+  </ButtonLink>
+
+  <ButtonLink
+    appearance="secondary-action"
+    href="https://nldesignsystem.nl/mijn-services-community/mijn-services-community-developer-afstemming.ics"
+    download="https://nldesignsystem.nl/mijn-services-community/mijn-services-community-developer-afstemming.ics"
+    aria-label="iCal bestand voor de MijnServices Community Developer Afstemming (download)"
+  >
+    <IconCalendarEvent />
+    {" Download het developer kalenderbestand"}
+  </ButtonLink>
+</ActionGroup>

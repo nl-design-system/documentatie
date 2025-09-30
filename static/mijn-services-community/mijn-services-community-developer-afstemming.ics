@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 VERSION:2.0
-X-WR-CALNAME:MijnServices Community Afstemming - NL Design System
+X-WR-CALNAME:MijnServices Community Developer Afstemming - NL Design System
 METHOD:PUBLISH
 PRODID:-//Apple Inc.//macOS 14.1.1//EN
 BEGIN:VTIMEZONE
@@ -23,18 +23,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 TRANSP:OPAQUE
-DTEND;TZID=Europe/Amsterdam:20250612T150000
+DTEND;TZID=Europe/Amsterdam:20250918T150000
 X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
-UID:85c6d08c-32c0-43d8-a3fc-982518129989
-DTSTAMP:20240610T120000Z
+UID:687f674b-e85d-4930-8572-0b04d6b3d344
+DTSTAMP:20250918T120000Z
 LOCATION:https://app.slack.com/huddle/T68FXPFQV/C01DAT4TRPF
-DESCRIPTION:Wees welkom bij de 'MijnServices Community Developer Afstemming'. Deze meeting vindt plaats in het #nl-design-system-developers kanaal op de Code for NL Slack. \n\nMeer informatie over MijnServices Community: https://nldesignsystem.nl/community/community-sprints/mijn-services-community/ \n\nZit je nog niet op de Code for NL Slack? Meld je hier aan: https://praatmee.codefor.nl/
+DESCRIPTION:Wees welkom bij de 'MijnServices Community Developer Afstemming'. Deze meeting vindt plaats in het #nl-design-system-developers kanaal op de Code for NL Slack. \n\nMeer informatie over MijnServices Community: https://nldesignsystem.nl/community/community-sprints/mijn-services-community/. \n\nZit je nog niet op de Slack? Meld je hier aan: https://nldesignsystem.nl/slack/.
 X-APPLE-CREATOR-IDENTITY:com.apple.calendar
 SEQUENCE:6
 SUMMARY:MijnServices Community Developer Afstemming - NL Design System
-DTSTART;TZID=Europe/Amsterdam:20250612T140000
-LAST-MODIFIED:20240610T120000Z
-CREATED:20240610T120000Z
+DTSTART;TZID=Europe/Amsterdam:20250918T140000
+LAST-MODIFIED:20250918T120000Z
+CREATED:20250918T120000Z
 RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH
 END:VEVENT
 END:VCALENDAR
