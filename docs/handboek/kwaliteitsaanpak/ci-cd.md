@@ -10,7 +10,7 @@ keywords:
   - cd
 ---
 
-# Contiuous Integration en Continuous Delivery (CI/CD)
+# Continuous Integration en Continuous Delivery (CI/CD)
 
 Gebruik voor de CI/CD pipeline GitHub Actions.
 
