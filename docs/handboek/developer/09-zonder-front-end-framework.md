@@ -27,7 +27,7 @@ Een aantal van deze componenten is beschikbaar als [candidate component](/compon
 
 ### Stap 1: Basis‑skeleton
 
-Begin met een minimale, semantische opbouw:
+Maak een HTML bestand aan op je computer, bijvoorbeeld `example-page.html` en begin met een minimale, semantische opbouw:
 
 ```html
 <!doctype html>
@@ -47,14 +47,17 @@ Begin met een minimale, semantische opbouw:
 
 ### Stap 2: Gebruik een boilerplate als basis voor de pagina
 
-TODO: link naar boilerplate pagina zodra deze is aangemaakt.
+:::info[Work in progress]
+Hier komt een link naar de boilerplate pagina, zodra deze is gemaakt.
+:::
 
 ### Stap 3: Voeg de content toe aan de pagina
 
-Om het effect van de componenten en hun styling goed te kunnen zien moet je de pagina vullen met content zoals tekst, plaatjes en kopteksten.
+Eerst voeg je de content toe aan de HTML pagina.
+Om het effect van de componenten en hun styling goed te kunnen zien moet je de pagina vullen met content zoals tekst, plaatjes en kopteksten op basis van het design.
 
 Ook is het hier van belang de juiste HTML elementen te gebruiken, dus niet bijvoorbeeld een `div` als knop of navigatie-element.
-Om tijd te besparen kun je de content uit [deze file](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/main/static/examples/zonder-front-end-framework-html-only.html) kopiëren.
+Het mooiste is om zelf de content toe te voegen, maar als je wilt kun je om tijd te besparen de content uit [deze file](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/main/static/examples/zonder-front-end-framework-html-only.html) kopiëren.
 
 Je pagina zal er dan als volgt uitzien:
 
