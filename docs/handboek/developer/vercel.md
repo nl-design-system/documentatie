@@ -32,7 +32,7 @@ In de URL is `feat-vercel` terug te lezen naar de branch naam, op basis daarvan 
 ## Veelvoorkomende vragen
 
 Het komt vaak voor dat er iets fout gaat in de Github Actions pipelines, maar dat de onderliggende fout niet zichtbaar is omdat het in Vercel afspeelt.
-Wat vaak aan de hand is dat de Node versie van het project is geüpdatet naar een nieuwere versie, maar bij de Vercel configuratie nog niet. Dit kan opgelost worden door de versie te updaten via Terraform.
+Wat vaak aan de hand is dat de Node versie van het project is geüpdatet naar een nieuwere versie, maar bij de Vercel configuratie nog niet. Dit kan opgelost worden door de versie te updaten via Terraform. Hiervoor zou je zelf een PR als suggestie kunnen aanbieden via [de repostory van Terraform](https://github.com/nl-design-system/terraform/pulls), of hulp vragen via het hier beneden benoemde Slack kanaal.
 
 Andere foutmeldingen komen ook uit Vercel, maar zijn in de Github Actions output volledig te lezen. Hiervoor hoef je dus geen toegang te hebben tot de logs in Vercel.
 Kom je er toch niet uit en wil je graag inzage in de logs? Stuur dan een berichtje in [#nl-design-system-developers](https://codefornl.slack.com/archives/C01DAT4TRPF) en dan zullen de juiste kernteamleden antwoord geven.
