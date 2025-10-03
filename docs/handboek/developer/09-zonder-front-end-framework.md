@@ -69,9 +69,13 @@ Je pagina zal er dan als volgt uitzien:
 
 ### Stap 4: Importeer NL Design System voorbeeld thema
 
-**info:** In de komende codevoorbeelden zie je veel versienummers gebruikt worden. Het voorbeeld werkt met deze versienummers, maar mocht je die willen updaten dan kun je de nieuwste versie vinden via [npmjs.com](https://www.npmjs.com/).
+:::info[tips]
+Mocht je vanuit de organistatie waarvoor je werkt al een huisstijl gebruiken, dan kun je die bij deze stap ook gelijk importeren en toepassen op de `body` van de pagina. Voor meer informatie kun je terecht op de pagina [Huisstijl vastleggen](/handboek/huisstijl-vastleggen/overzicht). Wil je simpelweg een proof-of-concept bouwen, dan kun je verder gaan met het voorbeeld thema.
 
-Zie ook [het voorbeeld thema](handboek/huisstijl/themas/voorbeeld-thema/#voorbeeld-thema).
+Het is daarnaast mogelijk om een generiek versienummer neer te zetten, of helemaal geen versienummer toe te voegen zodat je altijd de laatste versie hebt. Het is belangrijk om hierin een bewuste keuze te maken en eventuele gevolgen te accepteren. In de voorbeeldcode willen we graag de werking consistent houden, dus is er gekozen om een specifiek versienummer vast te leggen.
+:::
+
+Zie ook [het voorbeeld thema](/handboek/huisstijl/themas/voorbeeld-thema#voorbeeld-thema).
 Voeg de onderstaande class toe aan de body van je HTML pagina:
 
 ```html
