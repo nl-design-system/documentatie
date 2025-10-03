@@ -1,5 +1,8 @@
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+
 # Plaatsing van een button binnen een formulier
 
 Plaats buttons aan het begin van de regel. Zo wordt een natuurlijke 'scan-lijn' gecreëerd. Hierdoor kunnen mensen hun aandacht gemakkelijk op deze lijn richten.
