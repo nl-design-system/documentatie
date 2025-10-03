@@ -12,5 +12,8 @@ Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
 - [<span lang="en">Primary & Secondary Actions in Web Forms</span>](https://www.lukew.com/ff/entry.asp?571), Luke Wroblewski
 - [<span lang="en">Where to put buttons on forms</span>](https://adamsilver.io/blog/where-to-put-buttons-on-forms/), Adam Silver
 
+Doen: button uitlijnen met formulier labels en invoervelden.
 ![Button uitgelijnd met formulier labels en invoervelden](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_buttons_placement--do.png)
+
+Niet doen: button rechts uitlijnen.
 ![Button niet uitgelijnd met formulier labels en invoervelden](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_buttons_placement--dont.png)
