@@ -23,6 +23,10 @@ Je vindt de projecten van NL Design System in [verschillende repositories op Git
 
 De [example repository](https://github.com/nl-design-system/example) is een template waarmee je een Storybook-omgeving bouwt voor je eigen communityproject. Veel bestaande projecten gebruiken dit template als basis.
 
+### Candidate
+
+De storybook repository voor Candidate components.
+
 ### Community repositories
 
 Dit zijn design systems die organisaties uit de community zelf maken en onderhouden. Ze werken hierbij volgens het [estafettemodel](/handboek/estafettemodel). Groeit een component door naar de 'Candidate'- of 'Hall of Fame'-fase? Dan kan de community dit hergebruiken zonder dat er grote aanpassingen nodig zijn.
@@ -34,6 +38,10 @@ In de [Terraform-repository](https://github.com/nl-design-system/terraform) vind
 ### Documentatie
 
 Deze website, inclusief de pagina die je nu leest, staat in de [documentatie-repository](https://github.com/nl-design-system/documentatie). Kom je een fout tegen op de website? Maak dan een Pull Request (PR) aan als je weet hoe. Je kunt je suggestie ook delen in onze [Slack-community](/slack). Bijdragen worden enorm gewaardeerd.
+
+### Gebruikersonderzoeken
+
+De gebruikersonderzoeken repository bevat de broncode voor de website gebruikersonderzoeken.nl. Op deze website vind je kwalitatief gebruikersonderzoek. De site is herschreven en gebruikt nu componenten van het NL Design System.
 
 ---
 
