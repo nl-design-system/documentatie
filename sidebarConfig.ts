@@ -374,12 +374,16 @@ const sidebars: SidebarsConfig = {
           },
           items: [
             { type: 'doc', id: 'community/events/design-systems-week/index' },
+            { type: 'doc', id: 'community/events/design-systems-week/programma' },
+            { type: 'doc', id: 'community/events/design-systems-week/tijdschema' },
             {
               type: 'category',
               label: 'English',
               link: { type: 'doc', id: 'community/events/design-systems-week/en/index' },
               items: [
                 { type: 'doc', id: 'community/events/design-systems-week/en/index' },
+                { type: 'doc', id: 'community/events/design-systems-week/en/program' },
+                { type: 'doc', id: 'community/events/design-systems-week/en/timetable' },
                 {
                   type: 'category',
                   label: 'Previous editions',
