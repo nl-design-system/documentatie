@@ -1,0 +1,69 @@
+---
+title: Program · Design Systems Week 2025
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Program
+pagination_label: Design Systems Week 2025
+sidebar_position: 2
+slug: /events/design-systems-week-2025/en/program
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png
+---
+
+import {
+  ButtonGroup as ActionGroup,
+  ButtonLink,
+  Link,
+  Paragraph,
+} from "@utrecht/component-library-react/dist/css-module";
+import { IconChevronRight } from "@tabler/icons-react";
+import sessions from "../\_2025/sessions.json";
+import speakers from "../\_2025/speakers.json";
+import { DSWSession } from "@site/src/components/DSWSession";
+
+# Design Systems Week 2025 Program
+
+<Paragraph lead>
+  Design Systems Week will feature a number of short talks about the how and why of design systems. All online. From
+  October 27th to October 30th, we will cover subjects like managing design systems, integrating accessibility, user
+  research and code.
+</Paragraph>
+
+<ActionGroup>
+  <ButtonLink href="/events/design-systems-week/en/sign-up" appearance="primary-action-button">
+    {"Sign up"}
+    <IconChevronRight />
+  </ButtonLink>
+  <ButtonLink href="/events/design-systems-week-2025/en/program" appearance="secondary-action-button">
+    {"View the timetable"}
+    <IconChevronRight />
+  </ButtonLink>
+</ActionGroup>
+
+<DSWSession allSpeakers={speakers} allSessions={sessions} headingLevel={2} sessionId="02ae9c2a-f84f-4cd1-b7c0-9afe20813acb" lang="en">
+
+<Paragraph>
+  Since 2020, extensive work has been done in Luxembourg on three testing methods for accessibility: web, mobile and
+  PDF. These practical tests make it easier to check how a website or web application meets the European Standard (EN
+  301 549) for digital accessibility. These tests are useful for anyone working with WCAG and are now being used both in
+  Luxembourg and internationally as an approach for accessibility audits. Alain will show how these testing methods work
+  in practice. He will highlight the key benefits and explain how you can use and contribute to this Open Source
+  initiative.
+</Paragraph>
+
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="e68d397b-87fe-46ab-996b-ed7339f741a4"
+  headingLevel={2}
+  lang="en"
+>
+  <Paragraph>
+    The Helsinki Design System is an award-winning open-source project, built to be accessible to everyone and available
+    in English. This session delves into what it takes to document and scale a design system in practice—covering the
+    real challenges of managing documentation workflows, and how to keep collaboration and consistency on track when the
+    latest tools aren't available. Gain insight into why process and mindset matter far more than tools, and how
+    thoughtful documentation can make or break a design system.
+  </Paragraph>
+</DSWSession>

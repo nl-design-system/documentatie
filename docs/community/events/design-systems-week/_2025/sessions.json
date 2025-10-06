@@ -1,0 +1,125 @@
+[
+  {
+    "uuid": "02ae9c2a-f84f-4cd1-b7c0-9afe20813acb",
+    "isoDateTime": "2025-10-27T14:00:00.000Z",
+    "speakers": ["AlainVagner"],
+    "subject": "Practical Tests for Assessing Accessibility",
+    "icalLink": "",
+    "language": { "abbr": "EN", "description": "English" }
+  },
+  {
+    "uuid": "4077d9c1-acd9-4ff5-9d2c-2b89a5e3bd08",
+    "isoDateTime": "2025-10-28T14:00:00.000Z",
+    "speakers": ["EgorKloos"],
+    "subject": "Design Systems en AI",
+    "icalLink": "",
+    "language": { "abbr": "NL", "description": "Nederlands" }
+  },
+  {
+    "uuid": "e1b87a0c-f57b-4607-9d97-f319642f73d0",
+    "isoDateTime": "2025-10-30T12:00:00.000Z",
+    "speakers": ["AntonOlivier"],
+    "subject": "1 digitale gebruikerservaring bij de overheid",
+    "icalLink": "",
+    "language": { "abbr": "NL", "description": "Nederlands" }
+  },
+  {
+    "uuid": "e63d563e-4684-44c9-81f6-5e28333f0ecf",
+    "isoDateTime": "2025-10-30T14:00:00.000Z",
+    "speakers": ["EvalienWiersma"],
+    "subject": "Een Design System: Bouwen aan vertrouwen",
+    "icalLink": "",
+    "language": { "abbr": "NL", "description": "Nederlands" }
+  },
+  {
+    "uuid": "e68d397b-87fe-46ab-996b-ed7339f741a4",
+    "isoDateTime": "2025-10-30T15:30:00.000Z",
+    "speakers": ["PaiviJalava", "NooraNenonen"],
+    "subject": "Helsinki Design System - Balancing Documentation Workflow in a Design System Project",
+    "icalLink": "",
+    "language": { "abbr": "EN", "description": "English" }
+  },
+  {
+    "uuid": "bae570ae-0783-4712-9ed6-654f0bb91bab",
+    "isoDateTime": "2025-10-28T10:00:00.000Z",
+    "speakers": ["RenateRoke"],
+    "subject": "Toegankelijke design system componenten",
+    "icalLink": "",
+    "language": { "abbr": "NL", "description": "Nederlands" }
+  },
+  {
+    "uuid": "f13b4bc4-517d-440a-885b-dcb2b87cb3af",
+    "isoDateTime": "2025-10-29T10:00:00.000Z",
+    "speakers": ["JeffreyLauwers"],
+    "subject": "Prototypen & NL Design System",
+    "icalLink": "",
+    "language": { "abbr": "NL", "description": "Nederlands" }
+  },
+  {
+    "uuid": "3acd15cb-076f-4cdf-af37-03bf171b1442",
+    "isoDateTime": "2025-10-29T12:00:00.000Z",
+    "speakers": ["KimberlyBrinkhuis", "TedVanDerTogt"],
+    "subject": "Gebruikersonderzoek en co-creatie",
+    "icalLink": "",
+    "language": { "abbr": "NL", "description": "Nederlands" }
+  },
+  {
+    "uuid": "e9f0d797-daa4-408f-9d2c-57ad2ee6cffd",
+    "isoDateTime": "2025-10-29T14:00:00.000Z",
+    "speakers": ["ClaudiaVermeulen", "BaukjeFaber"],
+    "subject": "Hoe maak je algoritmes begrijpelijk voor burgers? Onderzoek & beeldtaal",
+    "sessionLink": "",
+    "icalLink": "",
+    "language": { "abbr": "NL", "description": "Nederlands" }
+  },
+  {
+    "uuid": "87be08ee-d238-40c7-8102-f4487fe009ba",
+    "isoDateTime": "2025-10-29T15:00:00.000Z",
+    "speakers": ["LoesKockelmans"],
+    "subject": "Het ANWB Design System herbouwd: toegankelijk en toekomstgericht",
+    "icalLink": "",
+    "language": { "abbr": "NL", "description": "Nederlands" }
+  },
+  {
+    "uuid": "5faa9816-8348-4111-9780-eaa44d964308",
+    "isoDateTime": "",
+    "speakers": [
+      {
+        "name": "",
+        "organisation": ""
+      }
+    ],
+    "subject": "",
+    "sessionLink": "",
+    "icalLink": "",
+    "language": { "abbr": "EN", "description": "English" }
+  },
+  {
+    "uuid": "74d8600f-b404-4e3d-a41e-9f652d8f9455",
+    "isoDateTime": "",
+    "speakers": [
+      {
+        "name": "",
+        "organisation": ""
+      }
+    ],
+    "subject": "",
+    "sessionLink": "",
+    "icalLink": "",
+    "language": { "abbr": "EN", "description": "English" }
+  },
+  {
+    "uuid": "b54c2a4a-4188-4a2c-81b0-842a7a8cd22b",
+    "isoDateTime": "",
+    "speakers": [
+      {
+        "name": "",
+        "organisation": ""
+      }
+    ],
+    "subject": "",
+    "sessionLink": "",
+    "icalLink": "",
+    "language": { "abbr": "EN", "description": "English" }
+  }
+]
