@@ -79,6 +79,12 @@ Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Een duideli
 
 Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg je voor een goede volgorde en deel je de tekst overzichtelijk in.
 
+### Vergeet de h1 niet
+
+Elke pagina heeft een hoofdtitel, ook wel de h1. Dit is het begin van de pagina-opbouw en helpt gebruikers om snel te begrijpen waar de pagina over gaat. Voor gebruikers met een schermlezer is dit vaak het eerste dat ze horen.
+
+De h1 is ook de paginatitel. Zorg daarom dat deze titel binnen de hele website uniek is. Als de h1 ontbreekt, is het lastiger om te begrijpen waar de pagina over gaat. Gebruik de h1 om het onderwerp van de pagina aan te geven. Plaats deze boven alle andere koppen en gebruik hem maar één keer per pagina.
+
 ### Sla geen kopniveaus over
 
 Gebruik koppen in volgorde. Begin bijvoorbeeld met een Kop 2 onder de hoofdkop, daarna een Kop 3, dan een Kop 4. Sla geen niveaus over — zet dus geen Kop 4 direct onder een Kop 2.
