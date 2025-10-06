@@ -120,9 +120,13 @@ Om een goede alt-text te kiezen voor logo kun je het beste [hier kijken](/blog/t
 
 #### Page Header en navigatie
 
-De Page Header uit de Amsterdam community lijkt als beste te passen voor het design. In de [Storybook van Amsterdam](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs) kan voorbeeldcode gevonden worden hoe je de header opbouwd met HTML en CSS. Hiervoor moet je "inspect element" van de browser gebruiken, want de voorbeeldcode van storybook maakt gebruik van React.
+De Page Header uit de Amsterdam community lijkt als beste te passen voor het design. In de [Storybook van Amsterdam](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs) kan voorbeeldcode gevonden worden hoe je de header opbouwd met HTML en CSS. Hier voor moet je naar de "HTML" tab gaan in Storybook.
 
-In dit codevoorbeeld kun je de oplossing vinden:
+:::info[Als de Storybook geen HTML plugin gebruikt]
+Als je op een andere storybook kijkt en daar de plugin niet beschikbaar is je "inspect element" van de browser gebruiken om de HTML terug te kunnen vinden.
+:::
+
+Om het design na te bouwen, doe je nog een paar aanpassingen en kom je op het volgende resultaat:
 
 ```html
 <header class="ams-page-header">
@@ -168,6 +172,8 @@ In dit codevoorbeeld kun je de oplossing vinden:
 </header>
 ```
 
+De page header importeer je als volgt:
+
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/page-header/page-header.css" />
 ```
@@ -192,7 +198,7 @@ De Amsterdam community heeft een component om a11y elementen 'onzichtbaar' te ma
 
 ##### Navigation Bar
 
-Voor de navigation Bar past degene uit Utrecht het beste. De styling is niet perfect, maar dat kan met custom CSS opgelost worden, of zoals in dit voorbeeld gedaan wordt wachten we tot er een beter component beschikbaar is.
+Op het moment van schrijven heeft de Navigation Bar de status "Help Wanted". Na navraag in de [Slack community](/slack) blijkt echter wel dat de Utrecht community een Navigation Bar beschikbaar heeft gemaakt. De styling is niet perfect, maar dat kan met custom CSS opgelost worden, of zoals in dit voorbeeld gedaan wordt wachten we tot er een beter component beschikbaar is.
 
 ```html
 <div class="rhc-nav-bar__container">
