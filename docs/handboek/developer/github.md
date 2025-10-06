@@ -11,59 +11,68 @@ keywords:
   - Deployment
 ---
 
-# Github
+NL Design System is open source. Daarom is een open platform zoals GitHub de logische plek om samen te werken en code te delen.
 
-NL Design System maakt gebruik van [Github](https://github.com). Aangezien NL Design System Open Source is, heeft het een platform nodig om Open Source op te werken.
+---
 
 ## Repositories
 
-Er zijn [verschillende repositories](https://github.com/orgs/nl-design-system/repositories) aangemaakt om de projecten van NL Design System te hosten. Elke repository heeft zijn eigen doel, maar sommigen lijken ook op elkaar.
+Je vindt de projecten van NL Design System in [verschillende repositories op GitHub](https://github.com/orgs/nl-design-system/repositories). Elke repository heeft een eigen doel. Hieronder worden de belangrijkste toegelicht.
 
 ### Example repository
 
-De [example repository](https://github.com/nl-design-system/example) is een template voor het bouwen van een storybook omgeving voor je eigen Community project. Veel bestaande community projecten zijn op basis hiervan gegenereerd.
+De [example repository](https://github.com/nl-design-system/example) is een template waarmee je een Storybook-omgeving bouwt voor je eigen communityproject. Veel bestaande projecten gebruiken dit template als basis.
 
 ### Community repositories
 
-De community repositories zijn design systemen gemaakt en onderhouden door organisaties uit de community. Ze werken volgens [het estafettemodel](/handboek/estafettemodel) van NL Design System aan de Community fase. Wanneer één van de componenten uit de community tot Candidate of Hall-of-fame wordt uitgeroepen en doorontwikkeld dan kan de community deze gaan hergebruiken zonder dat er breaking changes ontstaan.
+Dit zijn design systems die organisaties uit de community zelf maken en onderhouden. Ze werken hierbij volgens het [estafettemodel](/handboek/estafettemodel). Groeit een component door naar de 'Candidate'- of 'Hall of Fame'-fase? Dan kan de community dit hergebruiken zonder dat er grote aanpassingen nodig zijn.
 
 ### Terraform
 
-In de [Terraform repository](https://github.com/nl-design-system/terraform) worden alle wijzigingen omtrend de infrastructuur bijgehouden. Vanuit deze repository wordt de infrastructuur opgebouwd en gewijzigd. Hier kun je terecht als iemand schrijfrechten-toegang moet krijgen of als er een versienummer van bijvoorbeeld Node.js bijgewerkt moet worden.
+In de [Terraform-repository](https://github.com/nl-design-system/terraform) vind je alles over de infrastructuur. Vanuit hier wordt de infrastructuur gebouwd en beheerd. Je kunt hier terecht als je bijvoorbeeld schrijfrechten nodig hebt of een versienummer van Node.js wilt bijwerken.
 
 ### Documentatie
 
-De [documentatie repository](https://github.com/nl-design-system/documentatie) bevat alle code voor het maken van deze website inclusief deze pagina. Mocht je ergens op de website een fout tegenkomen maak dan graag alvast een PR aan als je kan of bied het als suggestie aan in [de Slack community](/slack), NL Design system waardeert bijdragen enorm.
+Deze website, inclusief de pagina die je nu leest, staat in de [documentatie-repository](https://github.com/nl-design-system/documentatie). Kom je een fout tegen op de website? Maak dan een Pull Request (PR) aan als je weet hoe. Je kunt je suggestie ook delen in onze [Slack-community](/slack). Bijdragen worden enorm gewaardeerd.
 
-### Overige projecten
+---
 
-Er zijn nog meer projecten, hiervan staat het doel in de omschrijving of in het README.md bestand.
+## Samenwerken aan open source
 
-## Open source ontwikkeling & samenwerking
+Iedereen kan bijdragen aan de componenten, patronen en richtlijnen van NL Design System. Door deze open aanpak kunnen verschillende organisaties, ontwikkelaars en ontwerpers:
 
-NL Design System communities ontwikkelen componenten, patronen en richtlijnen in open repositories op GitHub. ￼
+- Meehelpen aan de ontwikkeling.
+- Problemen (issues) melden.
+- Verbeteringen voorstellen via Pull Requests.
 
-- Door deze open aanpak kunnen verschillende overheidsorganisaties, ontwikkelaars en ontwerpers bijdragen, issues indienen en pull requests voorstellen. ￼
-- Componentbibliotheken & theming / design tokens; er is een GitHub-repository nl-design-system/themes, bijvoorbeeld voor design tokens en theming, waarmee organisaties hun eigen stijl kunnen toepassen bovenop de standaardcomponenten. ￼
+---
 
-## Storybook integratie
+## Theming en design tokens
 
-- Via Storybook wordt de componentbibliotheek getoond en gedocumenteerd, met de code én voorbeelden. Repositories worden gekoppeld aan de Storybook-weergave. Bij de meeste repositories wordt het linkje naar storybook gedeeld. Storybook projecten worden gehost [op Vercel](/vercel).
+Organisaties kunnen hun eigen stijl toepassen bovenop de standaardcomponenten. Hiervoor is er de `nl-design-system/themes` repository, waarin bijvoorbeeld design tokens staan voor theming. Zo kunnen gemeenten als Den Haag en Rotterdam de standaardarchitectuur gebruiken, maar met hun eigen branding of specifieke componenten.
 
-Sommige repositories voor bijvoorbeeld gemeenten (zoals Den Haag en Rotterdam) gebruiken de standaardarchitectuur van NL Design System gebruiken, maar met eigen branding of specifieke componenten. ￼
+---
 
-- Deze modulaire aanpak wordt ondersteund via GitHub zodat verschillende partijen hun eigen extensies of varianten kunnen beheren in aparte repos. ￼
+## Storybook-integratie
 
-## Beheer van issues, roadmap en community backlog
+Storybook wordt gebruikt om de componentenbibliotheek te tonen en te documenteren met code en voorbeelden. De meeste repositories bevatten een link naar de bijbehorende Storybook, die wordt gehost [op Vercel](/vercel).
 
-- Op de organisatiepagina van NL Design System op GitHub is de “community backlog” zichtbaar, waar openstaande issues, feature requests en verbeteringen worden gevolgd. Zo kan de community meedenken over wat als volgende componenten of verbeteringen gebouwd moeten worden.
+---
 
-## Licentie & open toegang
+## Community backlog
 
-- De repositories geven aan dat de code is onder de EUPL-licentie (European Union Public Licence) of vergelijkbare open licenties. ￼
-- De open toegang maakt het mogelijk dat ook publieke instellingen en derden de code inspecteren, hergebruiken en bijdragen.
+Op de [organisatiepagina van NL Design System op GitHub](https://github.com/orgs/nl-design-system) vind je de community backlog. Hierin staan alle openstaande issues, verzoeken en verbeteringen. Zo kan de community meedenken over de volgende stappen.
 
-## Documentatie & richtlijnen
+---
 
-De richtlijnen, gebruiksaanwijzingen, toegankelijkheidsregels en voorbeelden worden vaak bijgehouden in de GitHub-repos (bijvoorbeeld markdown-bestanden, component documentatie, Storybook docs). ￼
-Versiebeheer via Git (GitHub) zorgt ervoor dat wijzigingen aan documentatie en componenten historisch traceerbaar zijn.
+## Licentie
+
+- De code in de repositories valt onder de EUPL-licentie (European Union Public Licence) of een vergelijkbare open licentie.
+- Dankzij de open toegang kan iedereen de code inspecteren, hergebruiken en eraan bijdragen.
+
+---
+
+## Documentatie en versiebeheer
+
+- Richtlijnen, handleidingen en voorbeelden worden bijgehouden in de GitHub-repositories zelf, bijvoorbeeld in markdown-bestanden.
+- Doordat Git en GitHub voor versiebeheer worden gebruikt, zijn alle wijzigingen in de documentatie en componenten altijd terug te vinden.
