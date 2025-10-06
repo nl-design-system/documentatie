@@ -148,8 +148,8 @@ Of koppen goed zijn gebruikt, kun je voor een groot deel beoordelen door de pagi
   Soms worden visueel opvallende teksten als ‘kop’ opgemaakt, zonder dat ze inhoud structureren. Dat is verwarrend. Gebruik koppen alleen als ze echt een nieuwe sectie inleiden.
 - Is er een duidelijke hiërarchie van kopniveaus (H1, H2, H3…)?
   De volgorde van de koppen moet logisch zijn en geen niveaus overslaan. Een H3 mag niet direct onder een H1 vallen.
-- Is er één H1 die de inhoud van de pagina beschrijft?
-  Deze H1 moet uniek zijn per pagina. Een H1 als ‘Welkom’ of ‘Nieuws’ op elke pagina helpt niemand.
+- Is er één kopniveau 1, of H1, die de inhoud van de pagina beschrijft?
+  Deze paginatitel moet uniek zijn per pagina. Een paginatitel als ‘Welkom’ of ‘Nieuws’ op elke pagina helpt niemand.
 - Zijn er geen lege of nietszeggende koppen?
   Een kop als ‘Overzicht’ of ‘Klik hier’ zegt weinig over de inhoud. Zorg dat elke kop betekenisvol is.
 - Controleer op lege koppen.
