@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="nl" dir="ltr" class="utrecht-root utrecht-theme">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alt-tekst helper · Expert Team · NL Design System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/root-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/body-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/skip-link-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-layout-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-header-css@1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-footer-css@2/dist/index.css" />
+
+    <link rel="stylesheet" href="https://esm.sh/@utrecht/radio-button-css/dist/index.css" />
+    <link rel="stylesheet" href="https://esm.sh/@utrecht/button-css/dist/index.css" />
+    <link rel="stylesheet" href="https://esm.sh/@utrecht/form-fieldset-css/dist/index.css" />
+    <link rel="stylesheet" href="https://esm.sh/@utrecht/form-label-css/dist/index.css" />
+    <link rel="stylesheet" href="https://esm.sh/@utrecht/paragraph-css/dist/index.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/design-tokens@2/dist/index.css" />
+
+    <style>
+      :root {
+        --utrecht-page-header-background-color: #74295f;
+        --utrecht-page-header-color: #fff;
+        --utrecht-page-header-content-background-color: #74295f;
+        --utrecht-page-header-content-color: #fff;
+        --utrecht-page-footer-background-image: none;
+        --utrecht-page-footer-background-color: #f2f8fb;
+        --utrecht-page-footer-color: #004152;
+        --utrecht-page-footer-content-background-color: #f2f8fb;
+        --utrecht-page-footer-content-color: #004152;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .utrecht-form-fieldset__legend.utrecht-form-fieldset__legend--html-legend {
+        font-size: 1.5rem;
+        padding-block-start: 0.83rem;
+        padding-block-end: 0.83rem;
+      }
+
+      .utrecht-form-fieldset__fieldset.utrecht-form-fieldset--html-fieldset {
+        padding-block-end: 1rem;
+      }
+
+      .utrecht-form-label {
+        display: inline-block;
+      }
+
+      .utrecht-radio-button,
+      .utrecht-form-label {
+        margin-block-start: 0.5rem;
+      }
+
+      h2 {
+        margin-block-start: 1rem;
+      }
+
+      footer {
+        background-color: #74295f;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body class="utrecht-body" id="top">
+    <a href="#main" class="utrecht-skip-link utrecht-skip-link--visible-on-focus">Direct naar de hoofdinhoud</a>
+    <div class="utrecht-page-layout">
+      <header class="utrecht-page-header">
+        <div class="utrecht-page-header__content">
+          <h1>Alt-tekst helper</h1>
+        </div>
+      </header>
+      <div class="utrecht-page-body">
+        <div class="utrecht-page-body__content">
+          <main id="main">
+            <form>
+              <fieldset role="radiogroup" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset">
+                <legend class="utrecht-form-fieldset__legend utrecht-form-fieldset__legend--html-legend">
+                  Wat is het doel van de afbeelding?
+                </legend>
+                <p class="utrecht-paragraph">Kies de optie die het beste past:</p>
+                <input
+                  id="image-type-text"
+                  name="image-type"
+                  type="radio"
+                  value="textual"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="image-type-text" class="utrecht-form-label utrecht-form-label--radio"
+                  >De afbeelding bevat zichtbare tekst</label
+                ><br />
+                <input
+                  id="image-type-functional"
+                  name="image-type"
+                  type="radio"
+                  value="functional"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="image-type-functional" class="utrecht-form-label utrecht-form-label--radio"
+                  >De afbeelding is een link of knop</label
+                ><br />
+                <input
+                  id="image-type-context"
+                  name="image-type"
+                  type="radio"
+                  value="contextual"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="image-type-context" class="utrecht-form-label utrecht-form-label--radio"
+                  >De afbeelding ondersteunt de inhoud van de pagina</label
+                ><br />
+                <input
+                  id="image-type-decorative"
+                  name="image-type"
+                  type="radio"
+                  value="decorative"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="image-type-decorative" class="utrecht-form-label utrecht-form-label--radio"
+                  >De afbeelding is alleen decoratief</label
+                >
+              </fieldset>
+
+              <fieldset
+                role="radiogroup"
+                id="image-type-text-help"
+                class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset hidden"
+              >
+                <legend class="utrecht-form-fieldset__legend utrecht-form-fieldset__legend--html-legend">
+                  Wat voor soort tekst staat er in de afbeelding?
+                </legend>
+                <p class="utrecht-paragraph">Kies de optie die het beste past:</p>
+                <input
+                  id="text-near-image"
+                  name="text-type"
+                  type="radio"
+                  value="text close to image"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="text-near-image" class="utrecht-form-label utrecht-form-label--radio"
+                  >Dezelfde tekst staat ook naast of vlak bij de afbeelding</label
+                ><br />
+                <input
+                  id="text-visual-effect"
+                  name="text-type"
+                  type="radio"
+                  value="text for visual effect"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="text-visual-effect" class="utrecht-form-label utrecht-form-label--radio"
+                  >De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis</label
+                ><br />
+                <input
+                  id="text-only-image"
+                  name="text-type"
+                  type="radio"
+                  value="text only in image"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="text-only-image" class="utrecht-form-label utrecht-form-label--radio"
+                  >De tekst staat nergens anders op de pagina</label
+                ><br />
+                <input
+                  id="text-has-function"
+                  name="text-type"
+                  type="radio"
+                  value="text has function"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="text-has-function" class="utrecht-form-label utrecht-form-label--radio"
+                  >De tekst heeft een functionele rol, zoals bij een icoon</label
+                ><br />
+                <input
+                  id="text-complex-image"
+                  name="text-type"
+                  type="radio"
+                  value="is complex image"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="text-complex-image" class="utrecht-form-label utrecht-form-label--radio"
+                  >Het gaat om een grafiek, tabel of andere complexe informatie</label
+                >
+              </fieldset>
+
+              <fieldset
+                role="radiogroup"
+                id="image-type-context-help"
+                class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset hidden"
+              >
+                <legend class="utrecht-form-fieldset__legend utrecht-form-fieldset__legend--html-legend">
+                  Wat voor soort afbeelding is het?
+                </legend>
+                <p class="utrecht-paragraph">Kies de optie die het beste past:</p>
+                <input
+                  id="context-complex-image"
+                  name="context-type"
+                  type="radio"
+                  value="is complex image"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="context-complex-image" class="utrecht-form-label utrecht-form-label--radio"
+                  >Het is een grafiek, diagram of een andere complexe afbeelding</label
+                ><br />
+                <input
+                  id="context-simple-image"
+                  name="context-type"
+                  type="radio"
+                  value="is simple image"
+                  class="utrecht-radio-button utrecht-radio-button--html-input"
+                />
+                <label for="context-simple-image" class="utrecht-form-label utrecht-form-label--radio"
+                  >Het is een foto of een eenvoudige illustratie</label
+                >
+              </fieldset>
+            </form>
+
+            <section id="image-type-functional-help" class="help-panel hidden">
+              <h2>Als de afbeelding een link of knop is</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Geef dan in de alt-tekst duidelijk aan wat er gebeurt als iemand erop klikt. Bijvoorbeeld: “Bekijk
+                productinformatie” of “Ga naar contactpagina”.
+              </p>
+            </section>
+
+            <section id="text-near-image-help" class="help-panel hidden">
+              <h2>Als dezelfde tekst al naast of vlak bij de afbeelding staat</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Laat dan het veld voor alternatieve tekst leeg. De informatie is al op een andere plek op de pagina
+                beschikbaar.
+              </p>
+            </section>
+
+            <section id="text-visual-effect-help" class="help-panel hidden">
+              <h2>Als de tekst in de afbeelding alleen voor het oog is en geen betekenis heeft op de pagina</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Dan is er geen alternatieve tekst nodig. Laat het veld voor alternatieve tekst leeg.
+              </p>
+            </section>
+
+            <section id="image-type-decorative-help" class="help-panel hidden">
+              <h2>Als de afbeelding alleen decoratief is</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Laat dan het veld voor alternatieve tekst leeg. Zo wordt de afbeelding genegeerd door screenreaders.<br />
+                <a
+                  href="https://nldesignsystem.nl/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/#overwegingen"
+                  >Belangrijke overwegingen bij het bepalen of een afbeelding decoratief is.</a
+                >
+              </p>
+            </section>
+
+            <section id="text-only-image-help" class="help-panel hidden">
+              <h2>Als de tekst in de afbeelding niet op een andere plek op de pagina voorkomt</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Schrijf dan de tekst over in het veld voor alternatieve tekst. Zo is de informatie ook beschikbaar voor
+                mensen die de afbeelding niet kunnen zien.
+              </p>
+            </section>
+
+            <section id="text-has-function-help" class="help-panel hidden">
+              <h2>Als de afbeelding een functie heeft, zoals een icoon</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Beschrijf dan in het veld voor alternatieve tekst wat de afbeelding doet of betekent.<br />
+                Bijvoorbeeld: “Download PDF” of “Let op”.
+              </p>
+            </section>
+
+            <section id="text-complex-image-help" class="help-panel hidden">
+              <h2>Als de afbeelding veel informatie bevat die niet in één korte beschrijving past</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Voeg dan een uitgebreide beschrijving toe naast of onder de afbeelding. Zet in het veld voor
+                alternatieve tekst een korte samenvatting, met een verwijzing naar de plek waar de langere beschrijving
+                staat. <br />
+                Voorbeeld: “Samenvatting van de grafiek. Uitgebreide uitleg staat onder de afbeelding.”
+              </p>
+            </section>
+
+            <section id="context-complex-image-help" class="help-panel hidden">
+              <h2>Als de afbeelding veel informatie bevat die niet in één korte beschrijving past</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Voeg dan een uitgebreide beschrijving toe naast of onder de afbeelding. Zet in het veld voor
+                alternatieve tekst een korte samenvatting, met een verwijzing naar de plek waar de langere beschrijving
+                staat. <br />
+                Voorbeeld: “Samenvatting van de grafiek. Uitgebreide uitleg staat onder de afbeelding.”
+              </p>
+            </section>
+
+            <section id="context-simple-image-help" class="help-panel hidden">
+              <h2>Als het een foto of eenvoudige illustratie is</h2>
+              <p class="utrecht-paragraph utrecht-paragraph--distanced">
+                Geef dan in het veld voor alternatieve tekst een korte beschrijving van wat er te zien is.<br />
+                Bijvoorbeeld: “Twee mensen in gesprek” of “Logo van gemeente X”.
+              </p>
+            </section>
+          </main>
+        </div>
+      </div>
+      <footer class="utrecht-page-footer">
+        <div class="utrecht-page-footer__content">
+          <p>Hier komt de Page Footer content...</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const form = document.querySelector('form');
+
+      const decisionMap = [
+        { group: 'image-type', answer: 'image-type-text', decision: 'image-type-text-help' },
+        { group: 'image-type', answer: 'image-type-functional', decision: 'image-type-functional-help' },
+        { group: 'image-type', answer: 'image-type-context', decision: 'image-type-context-help' },
+        { group: 'image-type', answer: 'image-type-decorative', decision: 'image-type-decorative-help' },
+        { group: 'text-type', answer: 'text-near-image', decision: 'text-near-image-help' },
+        { group: 'text-type', answer: 'text-visual-effect', decision: 'text-visual-effect-help' },
+        { group: 'text-type', answer: 'text-only-image', decision: 'text-only-image-help' },
+        { group: 'text-type', answer: 'text-has-function', decision: 'text-has-function-help' },
+        { group: 'text-type', answer: 'text-complex-image', decision: 'text-complex-image-help' },
+        { group: 'context-type', answer: 'context-complex-image', decision: 'context-complex-image-help' },
+        { group: 'context-type', answer: 'context-simple-image', decision: 'context-simple-image-help' },
+      ];
+
+      form.addEventListener('change', (event) => {
+        // uncheck all else if radio in first group is target
+        if (event.target.name === 'image-type') {
+          document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+            if (radio.name !== 'image-type') radio.checked = false;
+          });
+        }
+
+        //select what to show
+        decisionMap.forEach((element) => {
+          if (document.getElementById(element.answer).checked) {
+            document.getElementById(element.decision).classList.remove('hidden');
+          } else {
+            document.getElementById(element.decision).classList.add('hidden');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
