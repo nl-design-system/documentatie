@@ -91,6 +91,10 @@ Importeer de CSS van het voorbeeld thema en de design tokens:
 />
 ```
 
+:::info
+De stylesheet link zou je zelf kunnen vinden aan de hand van het [unpkg format](https://unpkg.com/) en het zoeken van de package/versienummer op [npmjs](https://npmjs.com).
+:::
+
 ### Stap 5: Componenten importeren uit NL Design System
 
 Het is mogelijk om de componenten uit de community met één import statement te importeren, als voorbeeld Amsterdam:
@@ -551,3 +555,7 @@ En vervolgens:
 ```html
 <main class="rich-text"></main>
 ```
+
+## Afsluitend
+
+Met behulp van dit stappenplan, heb je in een aantal stappen geleerd hoe je een pagina kunt opbouwen met behulp van NL Design System op basis van een design. Mocht je nog vragen hebben stel ze in de [Slack community](/slack).
