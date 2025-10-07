@@ -16,11 +16,9 @@ keywords:
 
 NL Design System is open source. Daarom is een open platform zoals GitHub de logische plek om samen te werken en code te delen.
 
----
-
 ## Repositories
 
-Je vindt de projecten van NL Design System in [verschillende repositories op GitHub](https://github.com/orgs/nl-design-system/repositories). Elke repository heeft een eigen doel. Hieronder worden de belangrijkste toegelicht.
+Je vindt de projecten van NL Design System in [verschillende repositories op GitHub](https://github.com/orgs/nl-design-system/repositories). Elke repository heeft een eigen doel. Hieronder wordt een aantal repositories toegelicht.
 
 ### Example repository
 
@@ -28,7 +26,7 @@ De [example repository](https://github.com/nl-design-system/example) is een temp
 
 ### Candidate
 
-De storybook repository voor Candidate components.
+De [candidate repository](https://github.com/nl-design-system/candidate) wordt gebruikt voor het bouwen en onderhouden van de [Candidate components](/componenten/?status=CANDIDATE).
 
 ### Community repositories
 
@@ -44,46 +42,36 @@ Deze website, inclusief de pagina die je nu leest, staat in de [documentatie-rep
 
 ### gebruikersonderzoeken.nl
 
-De gebruikersonderzoeken repository bevat de broncode voor de website gebruikersonderzoeken.nl. Op deze website vind je kwalitatief gebruikersonderzoek. De site is herschreven en gebruikt nu componenten van het NL Design System.
+De [gebruikersonderzoeken repository](https://github.com/nl-design-system/gebruikersonderzoeken) bevat de broncode voor de website [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl). Op deze website vind je gebruikersonderzoek dat binnen de overheid is uitgevoerd. De site is herschreven en gebruikt nu componenten van het NL Design System.
 
----
+### Theming en design tokens
 
-## Samenwerken aan open source
+De [`nl-design-system/themes` repository](<https://www.google.com/search?q=%5Bhttps://github.com/nl-design-system/themes%5D(https://github.com/nl-design-system/themes)>) is de centrale plek voor huisstijlen in de vorm van design tokens. Deze repository is bedoeld voor twee situaties:
 
-Iedereen kan bijdragen aan de componenten, patronen en richtlijnen van NL Design System. Door deze open aanpak kunnen verschillende organisaties, ontwikkelaars en ontwerpers:
+- **Voor organisaties die een huisstijl publiceren:** Je kunt hier de design tokens van je huisstijl publiceren zonder dat je een volledige, eigen repository hoeft te onderhouden.
+- **Voor organisaties die componenten ontwikkelen:** Je kunt hier controleren hoe jouw component eruitziet met de huisstijlen van andere organisaties.
 
-- Meehelpen aan de ontwikkeling.
-- Problemen (issues) melden.
-- Verbeteringen voorstellen via Pull Requests.
-
----
-
-## Theming en design tokens
-
-Organisaties kunnen hun eigen stijl toepassen bovenop de standaardcomponenten. Hiervoor is er de `nl-design-system/themes` repository, waarin bijvoorbeeld design tokens staan voor theming. Zo kunnen gemeenten als Den Haag en Rotterdam de standaardarchitectuur gebruiken, maar met hun eigen branding of specifieke componenten.
-
----
+Zo kunnen gemeenten als Den Haag en Rotterdam de standaardarchitectuur gebruiken, maar met hun eigen branding.
 
 ## Storybook-integratie
 
 Storybook wordt gebruikt om de componentenbibliotheek te tonen en te documenteren met code en voorbeelden. De meeste repositories bevatten een link naar de bijbehorende Storybook, die wordt gehost [op Vercel](/vercel).
-
----
-
-## Community backlog
-
-Op de [organisatiepagina van NL Design System op GitHub](https://github.com/orgs/nl-design-system) vind je de community backlog. Hierin staan alle openstaande issues, verzoeken en verbeteringen. Zo kan de community meedenken over de volgende stappen.
-
----
 
 ## Licentie
 
 - De code in de repositories valt onder de EUPL-licentie (European Union Public Licence) of een vergelijkbare open licentie.
 - Dankzij de open toegang kan iedereen de code inspecteren, hergebruiken en eraan bijdragen.
 
----
-
 ## Documentatie en versiebeheer
 
 - Richtlijnen, handleidingen en voorbeelden worden bijgehouden in de GitHub-repositories zelf, bijvoorbeeld in markdown-bestanden.
 - Doordat Git en GitHub voor versiebeheer worden gebruikt, zijn alle wijzigingen in de documentatie en componenten altijd terug te vinden.
+
+## Alternatieven, zoals Gitlab
+
+Kun je het NL Design System ook met GitLab gebruiken?
+Ja, dat kan zeker. Een project als het PRA Design System heeft dit bijvoorbeeld al gedaan.
+
+De community gebruikt momenteel vooral GitHub Actions. Hierdoor is er geen kant-en-klare implementatie beschikbaar voor GitLab CI Pipelines. Je staat er echter niet alleen voor.
+
+Wil je hierover meedenken of heb je hulp nodig? Kom dan naar de [Developer Open Hour](/events/developer-open-hour) om er verder over te praten.
