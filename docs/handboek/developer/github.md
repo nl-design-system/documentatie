@@ -12,6 +12,8 @@ keywords:
   - Deployment
 ---
 
+# GitHub
+
 NL Design System is open source. Daarom is een open platform zoals GitHub de logische plek om samen te werken en code te delen.
 
 ---
@@ -36,11 +38,11 @@ Dit zijn design systems die organisaties uit de community zelf maken en onderhou
 
 In de [Terraform-repository](https://github.com/nl-design-system/terraform) vind je alles over de infrastructuur. Vanuit hier wordt de infrastructuur gebouwd en beheerd. Je kunt hier terecht als je bijvoorbeeld schrijfrechten nodig hebt of een versienummer van Node.js wilt bijwerken.
 
-### Documentatie
+### nldesignsystem.nl
 
 Deze website, inclusief de pagina die je nu leest, staat in de [documentatie-repository](https://github.com/nl-design-system/documentatie). Kom je een fout tegen op de website? Maak dan een Pull Request (PR) aan als je weet hoe. Je kunt je suggestie ook delen in onze [Slack-community](/slack). Bijdragen worden enorm gewaardeerd.
 
-### Gebruikersonderzoeken
+### gebruikersonderzoeken.nl
 
 De gebruikersonderzoeken repository bevat de broncode voor de website gebruikersonderzoeken.nl. Op deze website vind je kwalitatief gebruikersonderzoek. De site is herschreven en gebruikt nu componenten van het NL Design System.
 
