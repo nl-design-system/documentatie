@@ -1,14 +1,19 @@
 ---
-title: Tijdschema · Design Systems Week 2025
-description: Tijdschema per dag voor de Design Systems Week 2025
+title: Timetable · Design Systems Week 2025
+description: Timetable for the Design Systems Week 2025 organised by NL Design System
 hide_table_of_contents: true
-sidebar_label: Tijdschema
-pagination_label: Tijdschema
+sidebar_label: Timetable
+pagination_label: Timetable
 sidebar_position: 3
 slug: /events/design-systems-week-2025/en/timetable
 ---
 
-import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import {
+  ButtonGroup as ActionGroup,
+  ButtonLink,
+  Link,
+  Paragraph,
+} from "@utrecht/component-library-react/dist/css-module";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../\_2025/sessions.json";
 import speakers from "../\_2025/speakers.json";
@@ -23,38 +28,38 @@ import { SessionTable } from "@site/src/components/SessionTable";
 </Paragraph>
 
 <ActionGroup>
-  <ButtonLink href="/events/design-systems-week/aanmelden" appearance="primary-action-button">
-    {"Meld je aan"}
+  <ButtonLink href="/events/design-systems-week/en/sign-up" appearance="primary-action-button">
+    {"Sign up"}
     <IconChevronRight />
   </ButtonLink>
-  <ButtonLink href="/events/design-systems-week-2025/programma" appearance="secondary-action-button">
-    {"Bekijk het programma"}
+  <ButtonLink href="/events/design-systems-week-2025/en/program" appearance="secondary-action-button">
+    {"See the program"}
     <IconChevronRight />
   </ButtonLink>
 </ActionGroup>
 
-## Maandag 27 oktober
+## Monday, October 27
 
 <SessionTable
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-27"))}
 />
 
-## Dinsdag 28 oktober
+## Tuesday, October 28
 
 <SessionTable
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-28"))}
 />
 
-## Woensdag 29 oktober
+## Wednesday, October 29
 
 <SessionTable
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-29"))}
 />
 
-## Donderdag 30 oktober
+## Thursday, October 30
 
 <SessionTable
   speakers={speakers}
@@ -63,14 +68,10 @@ import { SessionTable } from "@site/src/components/SessionTable";
 
 <hr></hr>
 
-## Organisatie
+## Organisation
 
-Design Systems Week wordt georganiseerd door het kernteam van NL Design System, vanuit Stichting ICTU, met dank aan het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
+Design Systems Week is organised by the NL Design System core team, thanks to the support of the Ministry of the Interior and Kingdom Relations (BZK) and <Link href="https://international.gebruikercentraal.nl">User Needs First</Link>. All sessions can also be found there <Link href="https://international.gebruikercentraal.nl/design-systems-week-2023/">Design Systems Week 2023</Link>
 
 ## Code of Conduct
 
-Op Design Systems Week is de [NL Design System Code of Conduct](https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.nl.md) van toepassing. Je gaat daarmee akkoord als je je aanmeldt of spreekt.
-
-## Toegankelijkheid
-
-We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).
+All participants of Design Systems Week are expected to abide by our [NL Design System Code of Conduct](https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.md). By signing up for one or more sessions you've agreed to these terms.
