@@ -55,8 +55,12 @@ export const DSWSession = ({
   const speakers = session && session.speakers.map((fullName) => allSpeakers[fullName]).filter(Boolean);
 
   return session ? (
-    <article className={clsx('dsw-session')} id={session.subject.toLowerCase().replace(/\s/gi, '-')}>
-      <Heading level={headingLevel} className="dsw-session__title">
+    <article className={clsx('dsw-session')}>
+      <Heading
+        level={headingLevel}
+        className="dsw-session__title"
+        id={session.subject.toLowerCase().replace(/\s/gi, '-')}
+      >
         {session.subject}
       </Heading>
       <Paragraph className="dsw-session__subtitle" lead>
@@ -73,26 +77,19 @@ export const DSWSession = ({
             style={{ marginBlock: '20px' }}
           />
         ))}
-      {session && session.isoDateTime && session.isoDateTime > dateNow && session.icalLink && !videoId ? (
+      {session && session.isoDateTime && session.isoDateTime > dateNow ? (
         <Paragraph>
-          <ButtonLink
-            href={session.icalLink}
-            download={session.icalLink}
-            style={{ paddingInlineStart: 0, paddingInlineEnd: 0 }}
-          >
-            <Icon>
-              <IconCalendarEvent />
-            </Icon>
-            <time dateTime={session.isoDateTime}>
-              {new Intl.DateTimeFormat(lang, {
-                dateStyle: 'full',
-                timeStyle: lang === 'nl' ? 'short' : 'full',
-                timeZone: 'Europe/Amsterdam',
-              }).format(new Date(session.isoDateTime))}
-            </time>
-          </ButtonLink>
+          <time dateTime={session.isoDateTime}>
+            {new Intl.DateTimeFormat(lang, {
+              dateStyle: 'full',
+              timeStyle: lang === 'nl' ? 'short' : 'full',
+              timeZone: 'Europe/Amsterdam',
+            }).format(new Date(session.isoDateTime))}
+          </time>
         </Paragraph>
-      ) : null}
+      ) : (
+        <></>
+      )}
       {children}
       {lang === 'nl' && speakers.find(({ language }) => language !== 'nl') && (
         <Paragraph>
@@ -118,6 +115,26 @@ export const DSWSession = ({
           </div>
         ))}
       </aside>
+      {session && session.icalLink && !videoId ? (
+        <Paragraph>
+          <ButtonLink href={session.icalLink} download={session.icalLink} appearance="primary-action-button">
+            <Icon>
+              <IconCalendarEvent />
+            </Icon>
+            <span>
+              {lang === 'nl' ? (
+                <>
+                  Zet<span className="sr-only">{session.subject}</span> in je agenda
+                </>
+              ) : (
+                <>
+                  Add<span className="sr-only">{session.subject}</span> to your calendar
+                </>
+              )}
+            </span>
+          </ButtonLink>
+        </Paragraph>
+      ) : null}
     </article>
   ) : (
     <></>

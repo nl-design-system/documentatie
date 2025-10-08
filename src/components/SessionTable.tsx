@@ -53,9 +53,9 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
       <TableHeader>
         <TableRow className="session-table__row">
           <TableHeaderCell>{lang === 'nl-NL' ? 'Tijd' : 'Time'}</TableHeaderCell>
+          <TableHeaderCell>{lang === 'nl-NL' ? 'Taal' : 'Language'}</TableHeaderCell>
           <TableHeaderCell>{lang === 'nl-NL' ? 'Spreker' : 'Speaker'}</TableHeaderCell>
           <TableHeaderCell>{lang === 'nl-NL' ? 'Onderwerp' : 'Subject'}</TableHeaderCell>
-          {lang === 'nl-NL' && <TableHeaderCell>Taal</TableHeaderCell>}
           <TableHeaderCell>{lang === 'nl-NL' ? 'Agenda' : 'Calendar'}</TableHeaderCell>
         </TableRow>
       </TableHeader>
@@ -74,6 +74,9 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
                 </time>
               </Paragraph>
             </TableCell>
+            <TableCell className="session-table__language">
+              <abbr title={language.description}>{language.abbr}</abbr>
+            </TableCell>
             <TableCell>
               <div className="session-table__speakers">
                 {Object.entries(allSpeakers)
@@ -84,25 +87,23 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
               </div>
             </TableCell>
             <TableCell className="session-table__subject">
-              <Paragraph>
+              <Paragraph lang={language.abbr}>
                 <Link
-                  href={`/events/design-systems-week-2025/${lang === 'nl-NL' ? 'programma' : '/en/program'}/#${subject.replace(/\s/g, '-')}`}
+                  href={`/events/design-systems-week-2025/${lang === 'nl-NL' ? 'programma' : language.abbr === 'EN' ? 'en/program' : 'programma'}#${subject.toLowerCase().replace(/\s/gi, '-')}`}
                 >
                   {subject}
                 </Link>
               </Paragraph>
             </TableCell>
-            {lang === 'nl-NL' && (
-              <TableCell className="session-table__language">
-                <abbr title={language.description}>{language.abbr}</abbr>
-              </TableCell>
-            )}
             <TableCell className="session-table__time">
               {icalLink && (
-                <ButtonLink href={icalLink} download={icalLink} aria-label={`iCal file for ${subject} (download)`}>
+                <ButtonLink href={icalLink} download={icalLink} aria-labelledby="ical-description">
                   <Icon>
                     <IconCalendarEvent />
                   </Icon>{' '}
+                  <span id="ical-description" className="sr-only">
+                    iCal file for <span lang={language.abbr}>{subject}</span>(download)
+                  </span>
                 </ButtonLink>
               )}
             </TableCell>
