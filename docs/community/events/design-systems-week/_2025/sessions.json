@@ -4,7 +4,7 @@
     "isoDateTime": "2025-10-27T14:00:00.000Z",
     "speakers": ["AlainVagner"],
     "subject": "Practical Tests for Assessing Accessibility",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/practical-tests-for-assessing-accessibility.ics",
     "language": { "abbr": "EN", "description": "English" }
   },
   {
@@ -12,7 +12,7 @@
     "isoDateTime": "2025-10-28T14:00:00.000Z",
     "speakers": ["EgorKloos"],
     "subject": "Design Systems en AI",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/design-systems-en-AI.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -20,7 +20,7 @@
     "isoDateTime": "2025-10-30T12:00:00.000Z",
     "speakers": ["AntonOlivier"],
     "subject": "1 digitale gebruikerservaring bij de overheid",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/1-digitale-gebruikerservaring-bij-de-overheid.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -28,15 +28,15 @@
     "isoDateTime": "2025-10-30T14:00:00.000Z",
     "speakers": ["EvalienWiersma"],
     "subject": "Een Design System: Bouwen aan vertrouwen",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/een-design-system-bouwen-aan-vertrouwen.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
     "uuid": "e68d397b-87fe-46ab-996b-ed7339f741a4",
     "isoDateTime": "2025-10-30T15:30:00.000Z",
-    "speakers": ["PaiviJalava", "NooraNenonen"],
+    "speakers": ["PaiviJalava", "JuanCubilla"],
     "subject": "Helsinki Design System - Balancing Documentation Workflow in a Design System Project",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/helsinki-design-system.ics",
     "language": { "abbr": "EN", "description": "English" }
   },
   {
@@ -44,7 +44,7 @@
     "isoDateTime": "2025-10-28T10:00:00.000Z",
     "speakers": ["RenateRoke"],
     "subject": "Toegankelijke design system componenten",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/toegankelijke-componenten-bij-nl-design-system.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -52,7 +52,7 @@
     "isoDateTime": "2025-10-29T10:00:00.000Z",
     "speakers": ["JeffreyLauwers"],
     "subject": "Prototypen & NL Design System",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/prototypen-en-nl-design-system.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -60,7 +60,7 @@
     "isoDateTime": "2025-10-29T12:00:00.000Z",
     "speakers": ["KimberlyBrinkhuis", "TedVanDerTogt"],
     "subject": "Gebruikersonderzoek en co-creatie",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/gebruikersonderzoek-en-co-creatie.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -68,8 +68,7 @@
     "isoDateTime": "2025-10-29T14:00:00.000Z",
     "speakers": ["ClaudiaVermeulen", "BaukjeFaber"],
     "subject": "Hoe maak je algoritmes begrijpelijk voor burgers? Onderzoek & beeldtaal",
-    "sessionLink": "",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/hoe-maak-je-algoritmes-begrijpelijk-voor-burgers.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
@@ -77,7 +76,7 @@
     "isoDateTime": "2025-10-29T15:00:00.000Z",
     "speakers": ["LoesKockelmans"],
     "subject": "Het ANWB Design System herbouwd: toegankelijk en toekomstgericht",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/anwb-design-system.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {

@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Renate laat zien hoe componenten in een Community-gedreven design system kunnen bijdragen aan toegankelijke websites,
+ ook wanneer toegankelijkheid sterk afhankelijk is van context. Aan de hand van de Button-component legt ze uit welke rol toegankelijkheid speelt in het proces van Community component tot Candidate component binnen NL Design System. \n\nEnglish: \nRenate demonstrates how components in a community-driven design system can contribute to accessible websites, even when accessibility is highly dependent on context. Using the Button component as an example, she explains the role accessibility plays in the
+ process from Community component to Candidate component within NL Design System. 
+UID:2acd2d26-522c-4e11-944c-62767af986e6
+SUMMARY:Toegankelijke componenten bij NL Design System - door Renate Roke
+DTSTART;TZID=Europe/Amsterdam:20251028T110000
+DTEND;TZID=Europe/Amsterdam:20251028T113000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzM5ZjlmMTYtN2JiYS00ZDYzLWJhZWMtZjk0MWYxODNhM2E0%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
