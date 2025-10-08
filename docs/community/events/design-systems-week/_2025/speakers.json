@@ -62,16 +62,16 @@
     },
     "language": "en"
   },
-  "NooraNenonen": {
-    "name": "Noora Nenonen",
+  "JuanCubilla": {
+    "name": "Juan Cubilla",
     "organisation": "City of Helsinki",
     "image": {
-      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-NooraNenonen.png",
-      "alt": "Noora Nenonen"
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-JuanCubilla.jpeg",
+      "alt": "Juan Cubilla"
     },
     "description": {
-      "en": "Noora Nenonen is a Nordic design consultant with a passion for simplicity and inclusivity. She has helped many large Finnish public sector organizations streamline their design processes, shape strategy, and deliver accessible user experiences at scale. A systems thinker at heart, Noora has been contributing to the Helsinki Design System since 2022.",
-      "nl": "Noora Nenonen is een Scandinavisch designconsultant met een passie voor eenvoud en inclusiviteit. Ze heeft veel grote Finse organisaties in de publieke sector geholpen bij het stroomlijnen van hun designprocessen, het vormgeven van hun strategie en het leveren van toegankelijke gebruikerservaringen op grote schaal. Noora is een systeemdenker in hart en nieren en levert sinds 2022 een bijdrage aan het Helsinki Design System."
+      "en": "Juan Cubilla is a senior multidisciplinary designer with 7 years of experience building flexible, multi-brand design systems across finance, tech, and media. He's passionate about connecting brand, technology, UX, design thinking, and processes to build cohesive systems that turn strategy into efficient and impactful digital experiences. Since late 2024, Juan has been contributing to the open-source Helsinki Design System.",
+      "nl": "Juan Cubilla is senior multidisciplinair designer met 7 jaar ervaring in het bouwen van flexibele, multi-brand design systems voor financiële dienstverlening, tech en media. Hij verbindt merk, technologie, UX, design thinking en processen om samenhangende systemen te bouwen die strategie omzetten in efficiënte en impactvolle digitale ervaringen. Sinds eind 2024 draagt Juan bij aan het open-source Helsinki Design System."
     },
     "language": "en"
   },
