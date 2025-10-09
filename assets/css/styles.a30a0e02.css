@@ -2394,6 +2394,7 @@ html[data-theme="dark"] {
 }
 .dsw-session__subtitle,
 .dsw-speaker,
+.session-table,
 .task-list {
  --utrecht-paragraph-margin-block-start: 0;
 }
@@ -7145,6 +7146,34 @@ code .namespace {
 .bingo-item--checked {
  color: grey;
  text-decoration: line-through;
+}
+.session-table-container {
+ max-width: 90vw;
+ overflow-x: auto;
+}
+.session-table {
+ --utrecht-icon-size: 1em;
+ --utrecht-icon-inset-block-start: 0.1em;
+ display: table;
+ table-layout: auto;
+ width: 100%;
+}
+.session-table__speakers {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+}
+.session-table__speaker {
+ --utrecht-icon-margin-inline-end: 4px;
+ padding-inline-start: calc(var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end));
+ width: max-content;
+}
+.speaker__icon {
+ margin-inline-end: var(--utrecht-icon-margin-inline-end);
+ margin-inline-start: calc((var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end)) * -1);
+}
+.speaker__organisation {
+ font-size: 16px;
 }
 .component-criteria-section__heading {
  display: inline-block;

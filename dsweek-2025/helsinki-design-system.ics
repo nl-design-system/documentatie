@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Het Helsinki Design System is een bekroond open-sourceproject dat voor iedereen toegankelijk is en beschikbaar is in het Engels.  Deze sessie gaat dieper in op wat er nodig is om een ontwerpsysteem in de praktijk te documenteren en op te schalen. Het behandelt
+ de echte uitdagingen van het beheren van documentatieworkflows en hoe je samenwerking en consistentie op koers kunt houden wanneer de meest geavanceerde tools op dat moment geen optie zijn. Krijg inzicht in waarom processen en mentaliteit veel belangrijker
+ zijn dan tools, en hoe doordachte documentatie een ontwerpsysteem kan maken of breken. \n\nEnglish: \nThe Helsinki Design System is an award-winning open-source project, built to be accessible to everyone and available in English.  This session delves into what it takes to document and scale a design system in practice— covering the real challenges of managing
+ documentation workflows, and how to keep collaboration and consistency on track when the shiniest tools aren’t an option in the moment. Get insight into why process and mindset matter far more than tools, and how thoughtful documentation can make or break
+ a design system.  
+UID:23b35855-535e-4b6c-85e7-071d595a98e1
+SUMMARY:Helsinki Design System - Balancing Documentation Workflow in a Design System Project - door Päivi Jalava en Juan Cubilla
+DTSTART;TZID=Europe/Amsterdam:20251028T163000
+DTEND;TZID=Europe/Amsterdam:20251028T170000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZWMzMTRjNjMtNTI4NC00NGRiLWE3MTEtNDMwYmE5NjM4MjFl%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

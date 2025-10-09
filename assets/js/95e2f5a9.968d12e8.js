@@ -1,65 +1,43 @@
-/*! For license information please see 95e2f5a9.13e8f1d2.js.LICENSE.txt */
+/*! For license information please see 95e2f5a9.968d12e8.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [79661],
  {
   63547: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => g, contentTitle: () => d, default: () => p, frontMatter: () => l, metadata: () => c, toc: () => h });
+   t.r(n), t.d(n, { assets: () => g, contentTitle: () => d, default: () => p, frontMatter: () => l, metadata: () => c, toc: () => m });
    var i = t(52676),
     s = t(40139),
-    a = t(98227),
+    a = t(61030),
     o = t(97247),
     r = t(28439);
    const l = { title: 'Videos \xb7 Design Systems Week 2023', description: 'Recordings of the English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2023, sidebar_position: 2, pagination_label: 'Videos 2023', slug: '/events/design-systems-week-2023/en/program' },
     d = 'Design Systems Week 2023',
     c = { id: 'community/events/design-systems-week/en/previous-editions/2023', title: 'Videos \xb7 Design Systems Week 2023', description: 'Recordings of the English talks for the Design Systems Week 2023', source: '@site/docs/community/events/design-systems-week/en/previous-editions/2023.md', sourceDirName: 'community/events/design-systems-week/en/previous-editions', slug: '/events/design-systems-week-2023/en/program', permalink: '/events/design-systems-week-2023/en/program', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/previous-editions/2023.md', tags: [], version: 'current', sidebarPosition: 2, frontMatter: { title: 'Videos \xb7 Design Systems Week 2023', description: 'Recordings of the English talks for the Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: '2023', sidebar_position: 2, pagination_label: 'Videos 2023', slug: '/events/design-systems-week-2023/en/program' }, sidebar: 'community', previous: { title: 'Videos 2024', permalink: '/events/design-systems-week-2024/en/program' }, next: { title: 'Design Systems Week 2024', permalink: '/events/design-systems-week-2024/programma' } },
     g = {},
-    h = [
+    m = [
      { value: 'Videos', id: 'videos', level: 2 },
      { value: 'Organisation', id: 'organisation', level: 2 },
      { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
     ];
-   function m(e) {
+   function h(e) {
     const n = { a: 'a', h1: 'h1', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, s.a)(), ...e.components };
-    return (0, i.jsxs)('div', { lang: 'en', children: [(0, i.jsx)(n.h1, { id: 'design-systems-week-2023', children: 'Design Systems Week 2023' }), (0, i.jsx)(r.nv, { lead: !0, children: (0, i.jsx)(n.p, { children: 'From 2 to 5 October NL Design System has organised the third edition of Design Systems Week. Speakers from various organisations have joined us for short talks about the how and why of design systems.' }) }), (0, i.jsx)(n.h2, { id: 'videos', children: 'Videos' }), (0, i.jsxs)(a.S, { title: 'The future of design decisions', speakers: [o.Hs, o.sI], organisation: 'Token Studio', lang: 'en', videoId: 'TFQbp2yNABk', children: [(0, i.jsx)(n.p, { children: 'Marco-Christian Krenn and Jan Six team up to present The future of design decisions. Delve into the transition from design tokens to dynamic design, impacting areas like accessibility, and revealing the profound implications of choices. This engaging discussion underscores the essential connection between internal decisions and the source of truth.' }), (0, i.jsx)(n.p, { children: 'You get a glimpse into the future around design tokens and learn about all the possibilities.' })] }), (0, i.jsxs)(a.S, { title: 'Design systems as public infrastructure', speakers: [o.FL], organisation: 'Public Digital Innovation Space, Cabinet Office, Taiwan', lang: 'en', videoId: '_X2zQoL5okw', children: [(0, i.jsx)(n.p, { children: 'Government digital services should be treated as public infrastructure in this day and age. Taiwan is in a rare position where there is an urgency to ensure digital resilience for all government services.' }), (0, i.jsx)(n.p, { children: 'The design system and especially the engineering of it plays a crucial part in digital resilience as modern warfare has become increasingly digital. In this talk Mu-An will share the initiative, the challenges, and the ambitions of the Taiwanese digital services, focusing on the design system aspect.' })] }), (0, i.jsxs)(a.S, { title: 'The GOV.UK Prototype Kit', speakers: [o.te], lang: 'en', organisation: 'GOV.UK', videoId: 'PuxojwJ2OEE', children: [(0, i.jsx)(n.p, { children: 'A set of components is one thing, but the true magic comes when they are put in use together. At GOV.UK they make it easier to prototype realistic digital services in HTML, with the GOV.UK Prototype Kit.\nDesigner Joe Lanman is involved in this project as a designer and tells you more about it!' }), (0, i.jsx)(n.p, { children: 'Joe Lanman is a Design Lead at the UK Government Digital Service, based in London. He\u2019s worked on projects including Register to Vote, Petition Parliament and the GOV.UK Prototype Kit \u2013 a way to rapidly prototype realistic services in HTML.' })] }), (0, i.jsxs)(a.S, { lang: 'en', title: 'Estonia Design System', speakers: [o.g], organisation: 'Nortal', children: [(0, i.jsx)(n.p, { children: "Veera is a codename for a design system employed by many Estonian governmental agencies as a common UI language for the state of Estonia. Aleksandr will be talking about his and his colleagues' experiences setting up, maintaining, and supporting a component library that makes this design system breathe." }), (0, i.jsx)(n.p, { children: 'Attend if you are interested in learning from a complex real-life case study. This is a story from a country which is proud to be called the first digital society. It is also a story about managing expectations, importance of DX, self-restraint, and naming things.' })] }), (0, i.jsxs)(a.S, { title: 'Design Systems & Web Components: what works & what doesn\u2019t', speakers: [o.x0], lang: 'en', organisation: 'Nordhealth', videoId: 'QXHLivD5Y_Q', children: [(0, i.jsx)(n.p, { children: 'Nord is the design system of Nordhealth, a company that makes software for healthcare professionals. Design system lead David Darnes will tell you about their experience with Web Components and how they enable reuse of Nord components across a wide variety of contexts and technologies.' }), (0, i.jsx)(n.p, { children: 'Ever since the first standards for Web Components were published, developers have pondered whether they are \u2018ready\u2019 to be used in production. Today they are used in real-world projects by a lot of different organisations. Design system teams even use them in tandem with rather than instead of tools like Vue, Angular, and React.' }), (0, i.jsx)(n.p, { children: 'Of course, there is lots of nuance and there are some caveats and challenges. In his talk, Dave will go into what works well and doesn\u2019t.' })] }), (0, i.jsxs)(a.S, { title: 'DesignOps: designing the API of design teams', speakers: [o.h6], lang: 'en', organisation: 'GitHub', videoId: 'GYUcd17cLJM', children: [(0, i.jsx)(n.p, { children: 'DesignOps is the glue that keeps a design org together, and the connective tissue that links design to other disciplines across the company, and beyond. Even if your company doesn\u2019t have a formal DesignOps team, this work is likely being done by someone.' }), (0, i.jsx)(n.p, { children: 'At GitHub, we\u2019re thinking about our DesignOps practice as the API that connects designers to designers, and design to the wider company. Just like when designing APIs, we\u2019ve tried things that didn\u2019t work quite well, and have had to ship several breaking changes as we move towards a more stable release.' }), (0, i.jsx)(n.p, { children: 'In this talk, you will learn:' }), (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: 'How to identify opportunities for DesignOps to be executed more intentionally' }), '\n', (0, i.jsx)(n.li, { children: 'How to see DesignOps as an opportunity to connect not just designers, but design to other disciplines, and design to the community' }), '\n', (0, i.jsx)(n.li, { children: 'Some things we\u2019ve tried at GitHub that didn\u2019t work so well \u2014 and some that did' }), '\n'] })] }), (0, i.jsx)(n.h2, { id: 'organisation', children: 'Organisation' }), (0, i.jsxs)(n.p, { children: ['Design Systems Week is organised by the NL Design System core team, thanks to the support of the Ministry of the Interior and Kingdom Relations (BZK) and ', (0, i.jsx)(r.rU, { href: 'https://international.gebruikercentraal.nl', children: 'User Needs First' }), '. All sessions can also be found there ', (0, i.jsx)(r.rU, { href: 'https://international.gebruikercentraal.nl/design-systems-week-2023/', children: 'Design Systems Week 2023' })] }), (0, i.jsx)(n.h2, { id: 'code-of-conduct', children: 'Code of Conduct' }), (0, i.jsxs)(n.p, { children: ['All participants of Design Systems Week are expected to abide by our ', (0, i.jsx)(n.a, { href: 'https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.md', children: 'NL Design System Code of Conduct' }), ". By signing up for one or more sessions you've agreed to these terms."] })] });
+    return (0, i.jsxs)('div', { lang: 'en', children: [(0, i.jsx)(n.h1, { id: 'design-systems-week-2023', children: 'Design Systems Week 2023' }), (0, i.jsx)(r.nv, { lead: !0, children: (0, i.jsx)(n.p, { children: 'From 2 to 5 October NL Design System has organised the third edition of Design Systems Week. Speakers from various organisations have joined us for short talks about the how and why of design systems.' }) }), (0, i.jsx)(n.h2, { id: 'videos', children: 'Videos' }), (0, i.jsxs)(a.d, { title: 'The future of design decisions', speakers: [o.Hs, o.sI], organisation: 'Token Studio', lang: 'en', videoId: 'TFQbp2yNABk', children: [(0, i.jsx)(n.p, { children: 'Marco-Christian Krenn and Jan Six team up to present The future of design decisions. Delve into the transition from design tokens to dynamic design, impacting areas like accessibility, and revealing the profound implications of choices. This engaging discussion underscores the essential connection between internal decisions and the source of truth.' }), (0, i.jsx)(n.p, { children: 'You get a glimpse into the future around design tokens and learn about all the possibilities.' })] }), (0, i.jsxs)(a.d, { title: 'Design systems as public infrastructure', speakers: [o.FL], organisation: 'Public Digital Innovation Space, Cabinet Office, Taiwan', lang: 'en', videoId: '_X2zQoL5okw', children: [(0, i.jsx)(n.p, { children: 'Government digital services should be treated as public infrastructure in this day and age. Taiwan is in a rare position where there is an urgency to ensure digital resilience for all government services.' }), (0, i.jsx)(n.p, { children: 'The design system and especially the engineering of it plays a crucial part in digital resilience as modern warfare has become increasingly digital. In this talk Mu-An will share the initiative, the challenges, and the ambitions of the Taiwanese digital services, focusing on the design system aspect.' })] }), (0, i.jsxs)(a.d, { title: 'The GOV.UK Prototype Kit', speakers: [o.te], lang: 'en', organisation: 'GOV.UK', videoId: 'PuxojwJ2OEE', children: [(0, i.jsx)(n.p, { children: 'A set of components is one thing, but the true magic comes when they are put in use together. At GOV.UK they make it easier to prototype realistic digital services in HTML, with the GOV.UK Prototype Kit.\nDesigner Joe Lanman is involved in this project as a designer and tells you more about it!' }), (0, i.jsx)(n.p, { children: 'Joe Lanman is a Design Lead at the UK Government Digital Service, based in London. He\u2019s worked on projects including Register to Vote, Petition Parliament and the GOV.UK Prototype Kit \u2013 a way to rapidly prototype realistic services in HTML.' })] }), (0, i.jsxs)(a.d, { lang: 'en', title: 'Estonia Design System', speakers: [o.g], organisation: 'Nortal', children: [(0, i.jsx)(n.p, { children: "Veera is a codename for a design system employed by many Estonian governmental agencies as a common UI language for the state of Estonia. Aleksandr will be talking about his and his colleagues' experiences setting up, maintaining, and supporting a component library that makes this design system breathe." }), (0, i.jsx)(n.p, { children: 'Attend if you are interested in learning from a complex real-life case study. This is a story from a country which is proud to be called the first digital society. It is also a story about managing expectations, importance of DX, self-restraint, and naming things.' })] }), (0, i.jsxs)(a.d, { title: 'Design Systems & Web Components: what works & what doesn\u2019t', speakers: [o.x0], lang: 'en', organisation: 'Nordhealth', videoId: 'QXHLivD5Y_Q', children: [(0, i.jsx)(n.p, { children: 'Nord is the design system of Nordhealth, a company that makes software for healthcare professionals. Design system lead David Darnes will tell you about their experience with Web Components and how they enable reuse of Nord components across a wide variety of contexts and technologies.' }), (0, i.jsx)(n.p, { children: 'Ever since the first standards for Web Components were published, developers have pondered whether they are \u2018ready\u2019 to be used in production. Today they are used in real-world projects by a lot of different organisations. Design system teams even use them in tandem with rather than instead of tools like Vue, Angular, and React.' }), (0, i.jsx)(n.p, { children: 'Of course, there is lots of nuance and there are some caveats and challenges. In his talk, Dave will go into what works well and doesn\u2019t.' })] }), (0, i.jsxs)(a.d, { title: 'DesignOps: designing the API of design teams', speakers: [o.h6], lang: 'en', organisation: 'GitHub', videoId: 'GYUcd17cLJM', children: [(0, i.jsx)(n.p, { children: 'DesignOps is the glue that keeps a design org together, and the connective tissue that links design to other disciplines across the company, and beyond. Even if your company doesn\u2019t have a formal DesignOps team, this work is likely being done by someone.' }), (0, i.jsx)(n.p, { children: 'At GitHub, we\u2019re thinking about our DesignOps practice as the API that connects designers to designers, and design to the wider company. Just like when designing APIs, we\u2019ve tried things that didn\u2019t work quite well, and have had to ship several breaking changes as we move towards a more stable release.' }), (0, i.jsx)(n.p, { children: 'In this talk, you will learn:' }), (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: 'How to identify opportunities for DesignOps to be executed more intentionally' }), '\n', (0, i.jsx)(n.li, { children: 'How to see DesignOps as an opportunity to connect not just designers, but design to other disciplines, and design to the community' }), '\n', (0, i.jsx)(n.li, { children: 'Some things we\u2019ve tried at GitHub that didn\u2019t work so well \u2014 and some that did' }), '\n'] })] }), (0, i.jsx)(n.h2, { id: 'organisation', children: 'Organisation' }), (0, i.jsxs)(n.p, { children: ['Design Systems Week is organised by the NL Design System core team, thanks to the support of the Ministry of the Interior and Kingdom Relations (BZK) and ', (0, i.jsx)(r.rU, { href: 'https://international.gebruikercentraal.nl', children: 'User Needs First' }), '. All sessions can also be found there ', (0, i.jsx)(r.rU, { href: 'https://international.gebruikercentraal.nl/design-systems-week-2023/', children: 'Design Systems Week 2023' })] }), (0, i.jsx)(n.h2, { id: 'code-of-conduct', children: 'Code of Conduct' }), (0, i.jsxs)(n.p, { children: ['All participants of Design Systems Week are expected to abide by our ', (0, i.jsx)(n.a, { href: 'https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.md', children: 'NL Design System Code of Conduct' }), ". By signing up for one or more sessions you've agreed to these terms."] })] });
    }
    function p(e = {}) {
     const { wrapper: n } = { ...(0, s.a)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(m, { ...e }) }) : m(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(h, { ...e }) }) : h(e);
    }
   },
-  98227: (e, n, t) => {
-   t.d(n, { S: () => g });
-   var i = t(57229),
-    s = t(86135),
-    a = t(78511),
-    o = t(28439),
-    r = t(4814),
-    l = t(97233),
-    d = t(52676);
-   const c = new Date().toISOString(),
-    g = (e) => {
-     let { lang: n = 'nl', headingLevel: t = 3, title: g, speakers: h, signupLink: m, organisation: p, videoId: u, children: w, captioned: k, captionLink: v, session: y } = e;
-     return (0, d.jsxs)('article', {
-      className: (0, r.Z)('dsw-session'),
-      id: g.toLowerCase().replace(/\s/gi, '-'),
-      children: [
-       (0, d.jsx)(o.X6, { level: t, className: 'dsw-session__title', children: g }),
-       u || y?.videoId ? (0, d.jsx)(l.Y, { id: u || y?.videoId, title: g }) : (0, d.jsxs)(o.nv, { className: 'dsw-session__subtitle', lead: !0, children: [h.map((e) => e.name).join(' & '), p ? ', ' + p : ''] }),
-       y && y.isoDateTime && y.isoDateTime > c && y.icalLink && !u ? (0, d.jsx)(o.nv, { children: (0, d.jsxs)(o.ZP, { href: y.icalLink, download: y.icalLink, style: { paddingInlineStart: 0, paddingInlineEnd: 0 }, children: [(0, d.jsx)(o.JO, { children: (0, d.jsx)(s.Z, {}) }), (0, d.jsx)('time', { dateTime: y.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(y.isoDateTime)) })] }) }) : null,
-       w,
-       'nl' === n &&
-        h.find((e) => {
-         let { language: n } = e;
-         return 'nl' !== n;
-        }) &&
-        (0, d.jsxs)(o.nv, { children: [(0, d.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-       k && (0, d.jsxs)(o.nv, { children: [(0, d.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig', v && (0, d.jsxs)(d.Fragment, { children: [' ', '(', (0, d.jsxs)('a', { href: v, children: ['tolktekst', (0, d.jsxs)('span', { className: 'sr-only', children: [' bij ', g] })] }), ')'] }), '.'] }),
-       (0, d.jsx)('aside', { className: (0, r.Z)('dsw-session__speakers'), children: h.map((e, t) => (0, d.jsxs)('div', { className: (0, r.Z)('dsw-session__speaker', 'dsw-speaker'), children: [(0, d.jsx)('img', { className: (0, r.Z)('dsw-speaker__image'), src: e.image.src, alt: e.image.alt }), (0, d.jsx)(o.nv, { className: (0, r.Z)('dsw-speaker__description'), children: e.description[n] })] }, t)) }),
-       m && (0, d.jsx)(o.nv, { className: (0, r.Z)('homepage-hero__call-to-action'), children: (0, d.jsxs)(i.r, { className: (0, r.Z)('utrecht-link', 'homepage-hero__call-to-action-link'), to: m, children: ['en' === n ? 'Sign up for' : 'Aanmelden voor', ' \u201c', g, '\u201d', (0, d.jsx)(a.Z, { className: (0, r.Z)('utrecht-icon', 'homepage-hero__call-to-action-icon'), style: { verticalAlign: 'middle' } })] }) }),
-      ],
-     });
-    };
+  61030: (e, n, t) => {
+   t.d(n, { d: () => r });
+   var i = t(28439),
+    s = t(4814),
+    a = t(97233),
+    o = t(52676);
+   const r = (e) => {
+    let { children: n, title: t, headingLevel: r, speakers: l, videoId: d } = e;
+    return (0, o.jsxs)('article', { className: (0, s.Z)('dsw-session'), id: t.toLowerCase().replace(/\s/gi, '-'), children: [(0, o.jsx)(i.X6, { level: r, className: 'dsw-session__title', children: t }), (0, o.jsx)(i.nv, { className: 'dsw-session__subtitle', lead: !0, children: l.map((e) => (e.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }), d || (d && (0, o.jsx)(a.Y, { id: d, title: t, style: { marginBlock: '20px' } })), n, (0, o.jsx)('aside', { className: (0, s.Z)('dsw-session__speakers'), children: l.map((e, n) => (0, o.jsxs)('div', { className: (0, s.Z)('dsw-session__speaker', 'dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, s.Z)('dsw-speaker__image'), src: e.image.src, alt: e.image.alt }), (0, o.jsx)(i.nv, { className: (0, s.Z)('dsw-speaker__description'), children: e.description.nl })] }, n)) })] });
+   };
   },
   97233: (e, n, t) => {
    t.d(n, { Y: () => a });
@@ -89,20 +67,6 @@
     return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(s) : e.components || s) : o(e.components)), i.createElement(a.Provider, { value: n }, e.children);
    }
   },
-  86135: (e, n, t) => {
-   t.d(n, { Z: () => i });
-   var i = (0, t(72315).Z)('outline', 'calendar-event', 'IconCalendarEvent', [
-    ['path', { d: 'M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z', key: 'svg-0' }],
-    ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
-    ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
-    ['path', { d: 'M4 11l16 0', key: 'svg-3' }],
-    ['path', { d: 'M8 15h2v2h-2z', key: 'svg-4' }],
-   ]);
-  },
-  78511: (e, n, t) => {
-   t.d(n, { Z: () => i });
-   var i = (0, t(72315).Z)('outline', 'chevron-right', 'IconChevronRight', [['path', { d: 'M9 6l6 6l-6 6', key: 'svg-0' }]]);
-  },
   84263: (e, n, t) => {
    t.d(n, { Z: () => o });
    var i = t(75271),
@@ -126,8 +90,8 @@
      d = l[0],
      c = l[1],
      g = encodeURIComponent(e.id),
-     h = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
-     m = e.title,
+     m = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
+     h = e.title,
      p = e.poster || 'hqdefault',
      u = e.announce || 'Watch',
      w = !e.alwaysLoadIframe || (e.autoplay && e.muted),
@@ -136,13 +100,13 @@
      new URLSearchParams(e.params.startsWith('&') ? e.params.slice(1) : e.params).forEach(function (e, n) {
       k.append(n, e);
      });
-    var v = e.noCookie;
-    v = e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com';
-    var y = e.playlist ? ''.concat(v, '/embed/videoseries?').concat(k.toString()) : ''.concat(v, '/embed/').concat(g, '?').concat(k.toString()),
-     b = !e.thumbnail && !e.playlist && 'maxresdefault' === p,
+    var b = e.noCookie;
+    b = e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com';
+    var y = e.playlist ? ''.concat(b, '/embed/videoseries?').concat(k.toString()) : ''.concat(b, '/embed/').concat(g, '?').concat(k.toString()),
+     v = !e.thumbnail && !e.playlist && 'maxresdefault' === p,
      f = e.webp ? 'webp' : 'jpg',
      j = e.webp ? 'vi_webp' : 'vi',
-     x = b
+     x = v
       ? (function (e, n, t, s) {
          void 0 === s && (s = 'maxresdefault');
          var o = (0, i.useState)(''),
@@ -174,24 +138,24 @@
       x ||
       'https://i.ytimg.com/'
        .concat(j, '/')
-       .concat(e.playlist ? h : g, '/')
+       .concat(e.playlist ? m : g, '/')
        .concat(p, '.')
        .concat(f),
      S = e.activatedClass || 'lyt-activated',
      L = e.adNetwork || !1,
      N = e.aspectHeight || 9,
-     I = e.aspectWidth || 16,
-     _ = e.iframeClass || '',
-     C = e.playerClass || 'lty-playbtn',
-     A = e.wrapperClass || 'yt-lite',
-     H = e.onIframeAdded || function () {},
+     C = e.aspectWidth || 16,
+     I = e.iframeClass || '',
+     _ = e.playerClass || 'lty-playbtn',
+     H = e.wrapperClass || 'yt-lite',
+     A = e.onIframeAdded || function () {},
      O = e.rel ? 'prefetch' : 'preload',
-     z = e.containerElement || 'article',
-     V = e.style || {};
+     V = e.containerElement || 'article',
+     P = e.style || {};
     return (
      i.useEffect(
       function () {
-       d && H();
+       d && A();
       },
       [d],
      ),
@@ -199,9 +163,9 @@
       i.Fragment,
       null,
       i.createElement('link', { rel: O, href: D, as: 'image' }),
-      i.createElement(i.Fragment, null, o && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: v }), i.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), L && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), i.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
+      i.createElement(i.Fragment, null, o && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: b }), i.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), L && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), i.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
       i.createElement(
-       z,
+       V,
        {
         onPointerOver: function () {
          o || r(!0);
@@ -209,12 +173,12 @@
         onClick: function () {
          d || c(!0);
         },
-        className: ''.concat(A, ' ').concat(d ? S : ''),
-        'data-title': m,
-        style: s(s({ backgroundImage: 'url('.concat(D, ')') }, { '--aspect-ratio': ''.concat((N / I) * 100, '%') }), V),
+        className: ''.concat(H, ' ').concat(d ? S : ''),
+        'data-title': h,
+        style: s(s({ backgroundImage: 'url('.concat(D, ')') }, { '--aspect-ratio': ''.concat((N / C) * 100, '%') }), P),
        },
-       i.createElement('button', { type: 'button', className: C, 'aria-label': ''.concat(u, ' ').concat(m) }),
-       d && i.createElement('iframe', { ref: n, className: _, title: m, width: '560', height: '315', frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: y }),
+       i.createElement('button', { type: 'button', className: _, 'aria-label': ''.concat(u, ' ').concat(h) }),
+       d && i.createElement('iframe', { ref: n, className: I, title: h, width: '560', height: '315', frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: y }),
       ),
      )
     );

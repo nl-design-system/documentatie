@@ -1,3 +1,4 @@
+/*! For license information please see 6875c492.aca70ff2.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [48610],
@@ -26,7 +27,7 @@
     o = t(29450),
     d = t(24574),
     u = t(83613),
-    h = t(80286),
+    h = t(35480),
     m = t(94250),
     g = t(34893),
     p = t(52676);
@@ -192,17 +193,13 @@
     return (0, l.jsx)(r.Z, { ...o, children: (0, l.jsx)('div', { className: 'container margin-vert--md', children: (0, l.jsxs)('div', { className: 'row', children: [(0, l.jsx)('div', { className: 'col col--9 col--offset-1', children: (0, l.jsx)(s.Q, { breadcrumbs: i }) }), (0, l.jsx)('main', { className: (0, n.Z)('utrecht-document', 'utrecht-html', 'col', { 'col--7': d, 'col--9 col--offset-1': !d }), itemScope: !0, itemType: 'http://schema.org/Blog', children: c }), t && (0, l.jsx)('div', { className: 'col col--2', children: t })] }) }) });
    }
   },
-  80286: (e, a, t) => {
-   t.d(a, { Z: () => h });
+  35480: (e, a, t) => {
+   t.d(a, { Z: () => u });
    var s = t(57229),
     r = t(84831),
     n = t(35038),
-    l = t(72315),
-    i = (0, l.Z)('outline', 'user', 'IconUser', [
-     ['path', { d: 'M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0', key: 'svg-0' }],
-     ['path', { d: 'M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2', key: 'svg-1' }],
-    ]),
-    c = (0, l.Z)('outline', 'calendar', 'IconCalendar', [
+    l = t(12649),
+    i = (0, t(72315).Z)('outline', 'calendar', 'IconCalendar', [
      ['path', { d: 'M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z', key: 'svg-0' }],
      ['path', { d: 'M16 3v4', key: 'svg-1' }],
      ['path', { d: 'M8 3v4', key: 'svg-2' }],
@@ -210,16 +207,16 @@
      ['path', { d: 'M11 15h1', key: 'svg-4' }],
      ['path', { d: 'M12 15v3', key: 'svg-5' }],
     ]),
-    o = t(35076),
-    d = t(4814),
-    u = t(52676);
-   function h(e) {
+    c = t(35076),
+    o = t(4814),
+    d = t(52676);
+   function u(e) {
     let { items: a } = e;
-    return (0, u.jsx)(n.um, {
+    return (0, d.jsx)(n.um, {
      appearance: 'large',
      children: a.map((e) => {
       let { content: a } = e;
-      return (0, u.jsx)(r.n, { content: a, children: (0, u.jsx)(n.Zb, { appearance: 'large', className: 'blog-card', children: (0, u.jsxs)(n.aY, { children: [(0, u.jsx)(o.XJ, { children: (0, u.jsx)(s.r, { to: a.metadata.permalink, className: (0, d.Z)('utrecht-link', 'blog-card__header-link'), children: a.metadata.title }) }), (0, u.jsx)('div', { children: a.metadata.description }), (0, u.jsxs)(o.k, { children: [a.metadata.authors.map((e) => (0, u.jsxs)(o.Ou, { className: (0, d.Z)('blog-card__badge', 'blog-card__badge--author'), children: [(0, u.jsx)(o.JO, { children: (0, u.jsx)(i, {}) }), (0, u.jsx)('span', { className: 'visually-hidden', children: 'auteur:' }), ' ', e.name] }, e.name)), (0, u.jsxs)(o.Ou, { className: (0, d.Z)('blog-card__badge', 'blog-card__badge--date'), children: [(0, u.jsx)(o.JO, { children: (0, u.jsx)(c, {}) }), (0, u.jsx)('span', { className: 'visually-hidden', children: 'publicatie datum:' }), ' ', (0, u.jsx)('time', { dateTime: a.metadata.date, children: a.metadata.formattedDate })] })] })] }) }) }, a.metadata.permalink);
+      return (0, d.jsx)(r.n, { content: a, children: (0, d.jsx)(n.Zb, { appearance: 'large', className: 'blog-card', children: (0, d.jsxs)(n.aY, { children: [(0, d.jsx)(c.XJ, { children: (0, d.jsx)(s.r, { to: a.metadata.permalink, className: (0, o.Z)('utrecht-link', 'blog-card__header-link'), children: a.metadata.title }) }), (0, d.jsx)('div', { children: a.metadata.description }), (0, d.jsxs)(c.k, { children: [a.metadata.authors.map((e) => (0, d.jsxs)(c.Ou, { className: (0, o.Z)('blog-card__badge', 'blog-card__badge--author'), children: [(0, d.jsx)(c.JO, { children: (0, d.jsx)(l.Z, {}) }), (0, d.jsx)('span', { className: 'visually-hidden', children: 'auteur:' }), ' ', e.name] }, e.name)), (0, d.jsxs)(c.Ou, { className: (0, o.Z)('blog-card__badge', 'blog-card__badge--date'), children: [(0, d.jsx)(c.JO, { children: (0, d.jsx)(i, {}) }), (0, d.jsx)('span', { className: 'visually-hidden', children: 'publicatie datum:' }), ' ', (0, d.jsx)('time', { dateTime: a.metadata.date, children: a.metadata.formattedDate })] })] })] }) }) }, a.metadata.permalink);
      }),
     });
    }
@@ -235,6 +232,13 @@
    function l() {
     return (0, r.jsx)(r.Fragment, { children: (0, r.jsx)(n, {}) });
    }
+  },
+  12649: (e, a, t) => {
+   t.d(a, { Z: () => s });
+   var s = (0, t(72315).Z)('outline', 'user', 'IconUser', [
+    ['path', { d: 'M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0', key: 'svg-0' }],
+    ['path', { d: 'M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2', key: 'svg-1' }],
+   ]);
   },
  },
 ]);

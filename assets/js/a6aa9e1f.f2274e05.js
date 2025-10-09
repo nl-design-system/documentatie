@@ -1,3 +1,4 @@
+/*! For license information please see a6aa9e1f.f2274e05.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [93089],
@@ -122,7 +123,7 @@
     r = t(52035),
     n = t(84084),
     l = t(24574),
-    i = t(80286),
+    i = t(35480),
     c = t(83613),
     d = t(35076),
     o = t(4814),
@@ -145,17 +146,13 @@
     return (0, m.jsxs)(s.FG, { className: (0, o.Z)(r.k.wrapper.blogPages, r.k.page.blogListPage), children: [(0, m.jsx)(g, { ...e }), (0, m.jsx)(u, { ...e })] });
    }
   },
-  80286: (e, a, t) => {
-   t.d(a, { Z: () => m });
+  35480: (e, a, t) => {
+   t.d(a, { Z: () => h });
    var s = t(57229),
     r = t(84831),
     n = t(35038),
-    l = t(72315),
-    i = (0, l.Z)('outline', 'user', 'IconUser', [
-     ['path', { d: 'M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0', key: 'svg-0' }],
-     ['path', { d: 'M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2', key: 'svg-1' }],
-    ]),
-    c = (0, l.Z)('outline', 'calendar', 'IconCalendar', [
+    l = t(12649),
+    i = (0, t(72315).Z)('outline', 'calendar', 'IconCalendar', [
      ['path', { d: 'M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z', key: 'svg-0' }],
      ['path', { d: 'M16 3v4', key: 'svg-1' }],
      ['path', { d: 'M8 3v4', key: 'svg-2' }],
@@ -163,19 +160,26 @@
      ['path', { d: 'M11 15h1', key: 'svg-4' }],
      ['path', { d: 'M12 15v3', key: 'svg-5' }],
     ]),
-    d = t(35076),
-    o = t(4814),
-    h = t(52676);
-   function m(e) {
+    c = t(35076),
+    d = t(4814),
+    o = t(52676);
+   function h(e) {
     let { items: a } = e;
-    return (0, h.jsx)(n.um, {
+    return (0, o.jsx)(n.um, {
      appearance: 'large',
      children: a.map((e) => {
       let { content: a } = e;
-      return (0, h.jsx)(r.n, { content: a, children: (0, h.jsx)(n.Zb, { appearance: 'large', className: 'blog-card', children: (0, h.jsxs)(n.aY, { children: [(0, h.jsx)(d.XJ, { children: (0, h.jsx)(s.r, { to: a.metadata.permalink, className: (0, o.Z)('utrecht-link', 'blog-card__header-link'), children: a.metadata.title }) }), (0, h.jsx)('div', { children: a.metadata.description }), (0, h.jsxs)(d.k, { children: [a.metadata.authors.map((e) => (0, h.jsxs)(d.Ou, { className: (0, o.Z)('blog-card__badge', 'blog-card__badge--author'), children: [(0, h.jsx)(d.JO, { children: (0, h.jsx)(i, {}) }), (0, h.jsx)('span', { className: 'visually-hidden', children: 'auteur:' }), ' ', e.name] }, e.name)), (0, h.jsxs)(d.Ou, { className: (0, o.Z)('blog-card__badge', 'blog-card__badge--date'), children: [(0, h.jsx)(d.JO, { children: (0, h.jsx)(c, {}) }), (0, h.jsx)('span', { className: 'visually-hidden', children: 'publicatie datum:' }), ' ', (0, h.jsx)('time', { dateTime: a.metadata.date, children: a.metadata.formattedDate })] })] })] }) }) }, a.metadata.permalink);
+      return (0, o.jsx)(r.n, { content: a, children: (0, o.jsx)(n.Zb, { appearance: 'large', className: 'blog-card', children: (0, o.jsxs)(n.aY, { children: [(0, o.jsx)(c.XJ, { children: (0, o.jsx)(s.r, { to: a.metadata.permalink, className: (0, d.Z)('utrecht-link', 'blog-card__header-link'), children: a.metadata.title }) }), (0, o.jsx)('div', { children: a.metadata.description }), (0, o.jsxs)(c.k, { children: [a.metadata.authors.map((e) => (0, o.jsxs)(c.Ou, { className: (0, d.Z)('blog-card__badge', 'blog-card__badge--author'), children: [(0, o.jsx)(c.JO, { children: (0, o.jsx)(l.Z, {}) }), (0, o.jsx)('span', { className: 'visually-hidden', children: 'auteur:' }), ' ', e.name] }, e.name)), (0, o.jsxs)(c.Ou, { className: (0, d.Z)('blog-card__badge', 'blog-card__badge--date'), children: [(0, o.jsx)(c.JO, { children: (0, o.jsx)(i, {}) }), (0, o.jsx)('span', { className: 'visually-hidden', children: 'publicatie datum:' }), ' ', (0, o.jsx)('time', { dateTime: a.metadata.date, children: a.metadata.formattedDate })] })] })] }) }) }, a.metadata.permalink);
      }),
     });
    }
+  },
+  12649: (e, a, t) => {
+   t.d(a, { Z: () => s });
+   var s = (0, t(72315).Z)('outline', 'user', 'IconUser', [
+    ['path', { d: 'M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0', key: 'svg-0' }],
+    ['path', { d: 'M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2', key: 'svg-1' }],
+   ]);
   },
  },
 ]);
