@@ -3045,6 +3045,13 @@ code .namespace {
 .definition__meta {
  margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }
+.announcementBarContent.content {
+ --utrecht-icon-inset-block-start: 5px;
+ font-size: 18px;
+}
+.announcementBarContent .utrecht-link:hover {
+ text-decoration-thickness: 2px !important;
+}
 @font-face {
  font-display: swap;
  font-family: Fira Sans;
@@ -8915,7 +8922,7 @@ p + .nlds-guideline {
   display: none;
  }
  .nlds-theme {
-  --docusaurus-announcement-bar-height: 80px;
+  --docusaurus-announcement-bar-height: 60px;
   --nlds-sidebar-menu-item-active-border-color: #148839;
  }
  :root {

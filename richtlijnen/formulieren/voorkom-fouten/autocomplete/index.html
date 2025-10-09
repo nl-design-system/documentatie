@@ -27,9 +27,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.a30a0e02.css" />
-  <script src="/assets/js/runtime~main.5efe52a3.js" defer="defer"></script>
-  <script src="/assets/js/main.360e76fb.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.7ce160b3.css" />
+  <script src="/assets/js/runtime~main.c7a514ad.js" defer="defer"></script>
+  <script src="/assets/js/main.55daaf22.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -52,18 +52,48 @@
    })(),
     (function () {
      try {
-      const c = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of c)
+      const a = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of a)
        if (t.startsWith('docusaurus-data-')) {
-        var a = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(a, e);
+        var n = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(n, e);
        }
      } catch (t) {}
-    })();
+    })(),
+    document.documentElement.setAttribute(
+     'data-announcement-bar-initially-dismissed',
+     (function () {
+      try {
+       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
+      } catch (t) {}
+      return !1;
+     })(),
+    );
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_W6BK" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <div class="announcementBar" style="background-color: var(--utrecht-button-primary-action-background-color); color: var(--utrecht-button-primary-action-color)" role="banner">
+     <div class="content announcementBarContent">
+      <span class="utrecht-icon"
+       ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-speakerphone">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M18 8a3 3 0 0 1 0 6" />
+        <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
+        <path d="M12 8h0l4.524 -3.77a.9 .9 0 0 1 1.476 .692v12.156a.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" /></svg
+      ></span>
+      27 tot 30 oktober is het weer Design Systems Week
+      <span class="utrecht-icon"
+       ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-hand-finger-right">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 8h8.5a1.5 1.5 0 0 1 0 3h-7.5" />
+        <path d="M13.5 11h2a1.5 1.5 0 0 1 0 3h-2.5" />
+        <path d="M14.5 14a1.5 1.5 0 0 1 0 3h-1.5" />
+        <path d="M13.5 17a1.5 1.5 0 1 1 0 3h-4.5a6 6 0 0 1 -6 -6v-2v.208a6 6 0 0 1 2.7 -5.012l.3 -.196q .718 -.468 5.728 -3.286a1.5 1.5 0 0 1 2.022 .536c.44 .734 .325 1.674 -.28 2.28l-1.47 1.47" /></svg
+      ></span>
+      <a href="/events/design-systems-week/" class="utrecht-link">Bekijk het programma</a>
+     </div>
+    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo" href="/"><b class="navbar__title navbar-logo__title">NL Design System</b></a>
@@ -98,7 +128,7 @@
            Verberg
           </button>
           <div id=":Rllaqh:" class="sidebar__content">
-           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu menuWithAnnouncementBar">
             <ul class="theme-doc-sidebar-menu menu__list">
              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
               <div class="menu__list-item-collapsible sidebar__main-category">Richtlijnen</div>
@@ -443,14 +473,43 @@
                  <div class="nlds-canvas__code-block" id=":R2gqhralaqh:" hidden="">
                   <span hidden="" id=":R1ugqhralaqh:"
                    >codevoorbeeld
-                   <!-- --></span
+                   <!-- -->“Niet doen”<!-- -->
+                   <!-- -->:
+                   <!-- -->Het autocomplete-attribuut niet gebruiken.</span
                   >
+                  <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R1ugqhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">for</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">telefoon</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Uw telefoonnummer</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">label</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">input</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">id</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">telefoon</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">type</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">tel</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+                  <div class="nlds-canvas__toolbar nlds-canvas__toolbar--copy"><button class="utrecht-button utrecht-button--subtle nlds-canvas__button nlds-canvas__copy-button" type="button">Kopieer</button></div>
                  </div>
                 </div>
                </div>
               </div>
+              <h2 id="over-deze-richtlijnen" class="utrecht-heading-2">Over deze richtlijnen</h2>
+              <p>Deze richtlijnen worden onderhouden door NL Design System en zijn op dit moment in <em class="utrecht-emphasis utrecht-emphasis--stressed">beta</em>.</p>
+              <p>We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues" class="utrecht-link utrecht-link--html-a">Open een issue op GitHub</a> en deel je mening.</p>
              </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/help/5-autocomplete/README.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_vxtL" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_b5WM"></div>
+              </div>
+             </footer>
             </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/richtlijnen/formulieren/voorkom-fouten/geldige-waardes/"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Geef geldige waardes aan een invoerveld</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen/"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Automatisch invullen</div></a
+             >
+            </nav>
            </div>
           </div>
          </div>
@@ -459,6 +518,25 @@
       </div>
      </div>
     </div>
+    <footer class="footer footer--dark footer">
+     <div class="container--wide">
+      <div class="row footer__links">
+       <div class="col footer__col">
+        <div class="footer__title"></div>
+        <ul class="footer__items clean-list">
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/blog/">Blog</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/project/kernteam/">Contact</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/privacyverklaring/">Privacyverklaring</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/colofon/">Colofon</a></li>
+         <li class="footer__item"><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">GitHub</a></li>
+         <li class="footer__item"><a class="utrecht-link utrecht-link--html-a utrecht-link" href="/slack/">Slack</a></li>
+         <li class="footer__item"><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&amp;t=t25LHoMjEkUZyEi1-1" target="_blank" rel="noopener noreferrer" class="utrecht-link utrecht-link--html-a utrecht-link">Figma</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </footer>
    </div>
   </div>
  </body>

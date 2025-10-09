@@ -28,9 +28,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.a30a0e02.css" />
-  <script src="/assets/js/runtime~main.5efe52a3.js" defer="defer"></script>
-  <script src="/assets/js/main.360e76fb.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.7ce160b3.css" />
+  <script src="/assets/js/runtime~main.c7a514ad.js" defer="defer"></script>
+  <script src="/assets/js/main.55daaf22.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -53,18 +53,48 @@
    })(),
     (function () {
      try {
-      const c = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of c)
+      const a = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of a)
        if (t.startsWith('docusaurus-data-')) {
-        var a = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(a, e);
+        var n = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(n, e);
        }
      } catch (t) {}
-    })();
+    })(),
+    document.documentElement.setAttribute(
+     'data-announcement-bar-initially-dismissed',
+     (function () {
+      try {
+       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
+      } catch (t) {}
+      return !1;
+     })(),
+    );
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_W6BK" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <div class="announcementBar" style="background-color: var(--utrecht-button-primary-action-background-color); color: var(--utrecht-button-primary-action-color)" role="banner">
+     <div class="content announcementBarContent">
+      <span class="utrecht-icon"
+       ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-speakerphone">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M18 8a3 3 0 0 1 0 6" />
+        <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
+        <path d="M12 8h0l4.524 -3.77a.9 .9 0 0 1 1.476 .692v12.156a.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" /></svg
+      ></span>
+      27 tot 30 oktober is het weer Design Systems Week
+      <span class="utrecht-icon"
+       ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-hand-finger-right">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 8h8.5a1.5 1.5 0 0 1 0 3h-7.5" />
+        <path d="M13.5 11h2a1.5 1.5 0 0 1 0 3h-2.5" />
+        <path d="M14.5 14a1.5 1.5 0 0 1 0 3h-1.5" />
+        <path d="M13.5 17a1.5 1.5 0 1 1 0 3h-4.5a6 6 0 0 1 -6 -6v-2v.208a6 6 0 0 1 2.7 -5.012l.3 -.196q .718 -.468 5.728 -3.286a1.5 1.5 0 0 1 2.022 .536c.44 .734 .325 1.674 -.28 2.28l-1.47 1.47" /></svg
+      ></span>
+      <a href="/events/design-systems-week/" class="utrecht-link">Bekijk het programma</a>
+     </div>
+    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo" href="/"><b class="navbar__title navbar-logo__title">NL Design System</b></a>
@@ -99,7 +129,7 @@
            Verberg
           </button>
           <div id=":Rllaqh:" class="sidebar__content">
-           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu menuWithAnnouncementBar">
             <ul class="theme-doc-sidebar-menu menu__list">
              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
               <div class="menu__list-item-collapsible sidebar__main-category">Community</div>
@@ -222,6 +252,41 @@
                 >Bekijk het tijdschema<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-right"><path d="M9 6l6 6l-6 6"></path></svg
                ></a>
               </p>
+              <article class="dsw-session">
+               <h2 class="utrecht-heading-2 dsw-session__title" id="tedi:-the-estonian-government&#x27;s-new-design-system">TEDI: the Estonian government&#x27;s new design system</h2>
+               <p class="utrecht-paragraph utrecht-paragraph--lead dsw-session__subtitle"><b class="utrecht-paragraph__b">Siret Tuula - Estonia Design System &amp; Kärolin Kivisikk - Estonia Design System &amp; Tõnis Tobre - Estonia Design System</b></p>
+               <p class="utrecht-paragraph"><time datetime="2025-10-27T12:00:00.000Z">maandag 27 oktober 2025 om 13:00</time></p>
+               <p class="utrecht-paragraph"></p>
+               <p>TEDI is het design system voor de Estse publieke sector. Wat twee jaar geleden begon als een interne tool groeide al snel uit tot een systeem dat landelijk wordt gebruikt. TEDI verving het vorige design system VEERA uit 2018, dat geen componenten aanbood voor developers. In deze sessie deelt het TEDI-kernteam hun ervaringen: de successen en de uitdagingen. Ze laten zien hoe het systeem technisch is opgebouwd, hoe het team samenwerkt en hoe de design library zich heeft ontwikkeld.</p>
+               <p></p>
+               <p class="utrecht-paragraph"><b>Goed te weten:</b> Deze sessie is in het Engels.</p>
+               <aside class="dsw-session__speakers">
+                <div class="dsw-session__speaker dsw-speaker">
+                 <img class="dsw-speaker__image" src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-SiretTuula.png" alt="Siret Tuula" />
+                 <p class="utrecht-paragraph dsw-speaker__description">Siret Tuula is product owner en manager van TEDI, het Estse overheids design system. Ze combineert haar rol in het beheren van het design system met haar creatieve bezigheden als muzikant en actrice. Velen zeggen dat Siret TEDI is – de drijvende kracht en grondlegger achter het project, die het heeft geleid vanaf de oprichting tot het succes dat het vandaag geniet.</p>
+                </div>
+                <div class="dsw-session__speaker dsw-speaker">
+                 <img class="dsw-speaker__image" src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-KarolinKivisikk.png" alt="Kärolin Kivisikk" />
+                 <p class="utrecht-paragraph dsw-speaker__description">Kärolin Kivisikk is lead designer van TEDI, en een van de sleutelfiguren achter de oprichting en groei ervan. Onder haar leiding is TEDI uitgegroeid tot een tool die eenheid en kwaliteit brengt in de digitale publieke diensten van Estland. Kärolin richt zich op doordacht ontwerp en betrokkenheid van stakeholders als essentiële basis voor duurzame design</p>
+                </div>
+                <div class="dsw-session__speaker dsw-speaker">
+                 <img class="dsw-speaker__image" src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-TonisTobre.png" alt="Tõnis Tobre" />
+                 <p class="utrecht-paragraph dsw-speaker__description">Tõnis Tobre is technical project manager en architect van TEDI. Zijn werk heeft TEDI geholpen groeien van een interne styleguide naar een landelijk design system. Hij combineert strategische visie met praktische technische oplossingen om ervoor te zorgen dat het design system waarde levert aan developers, designers en de digitale overheid van Estland.</p>
+                </div>
+               </aside>
+               <p class="utrecht-paragraph">
+                <a href="/dsweek-2025/estonia-design-system.ics" class="utrecht-button-link utrecht-button-link--html-a utrecht-button-link--primary-action" download="/dsweek-2025/estonia-design-system.ics"
+                 ><span aria-hidden="true" class="utrecht-icon"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-calendar-event">
+                   <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                   <path d="M16 3l0 4"></path>
+                   <path d="M8 3l0 4"></path>
+                   <path d="M4 11l16 0"></path>
+                   <path d="M8 15h2v2h-2z"></path></svg></span
+                 ><span>Zet<span class="sr-only">TEDI: the Estonian government&#x27;s new design system</span> in je agenda</span></a
+                >
+               </p>
+              </article>
               <article class="dsw-session">
                <h2 class="utrecht-heading-2 dsw-session__title" id="practical-tests-for-assessing-accessibility">Practical Tests for Assessing Accessibility</h2>
                <p class="utrecht-paragraph utrecht-paragraph--lead dsw-session__subtitle"><b class="utrecht-paragraph__b">Alain Vagner - OSAPS</b></p>
@@ -496,41 +561,6 @@
                    <path d="M4 11l16 0"></path>
                    <path d="M8 15h2v2h-2z"></path></svg></span
                  ><span>Zet<span class="sr-only">Een Design System: Bouwen aan vertrouwen</span> in je agenda</span></a
-                >
-               </p>
-              </article>
-              <article class="dsw-session">
-               <h2 class="utrecht-heading-2 dsw-session__title" id="tedi:-the-estonian-government&#x27;s-new-design-system">TEDI: the Estonian government&#x27;s new design system</h2>
-               <p class="utrecht-paragraph utrecht-paragraph--lead dsw-session__subtitle"><b class="utrecht-paragraph__b">Siret Tuula - Estonia Design System &amp; Kärolin Kivisikk - Estonia Design System &amp; Tõnis Tobre - Estonia Design System</b></p>
-               <p class="utrecht-paragraph"><time datetime="2025-10-27T12:00:00.000Z">maandag 27 oktober 2025 om 13:00</time></p>
-               <p class="utrecht-paragraph"></p>
-               <p>TEDI is het design system voor de Estse publieke sector. Wat twee jaar geleden begon als een interne tool groeide al snel uit tot een systeem dat landelijk wordt gebruikt. TEDI verving het vorige design system VEERA uit 2018, dat geen componenten aanbood voor developers. In deze sessie deelt het TEDI-kernteam hun ervaringen: de successen en de uitdagingen. Ze laten zien hoe het systeem technisch is opgebouwd, hoe het team samenwerkt en hoe de design library zich heeft ontwikkeld.</p>
-               <p></p>
-               <p class="utrecht-paragraph"><b>Goed te weten:</b> Deze sessie is in het Engels.</p>
-               <aside class="dsw-session__speakers">
-                <div class="dsw-session__speaker dsw-speaker">
-                 <img class="dsw-speaker__image" src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-SiretTuula.png" alt="Siret Tuula" />
-                 <p class="utrecht-paragraph dsw-speaker__description">Siret Tuula is product owner en manager van TEDI, het Estse overheids design system. Ze combineert haar rol in het beheren van het design system met haar creatieve bezigheden als muzikant en actrice. Velen zeggen dat Siret TEDI is – de drijvende kracht en grondlegger achter het project, die het heeft geleid vanaf de oprichting tot het succes dat het vandaag geniet.</p>
-                </div>
-                <div class="dsw-session__speaker dsw-speaker">
-                 <img class="dsw-speaker__image" src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-KarolinKivisikk.png" alt="Kärolin Kivisikk" />
-                 <p class="utrecht-paragraph dsw-speaker__description">Kärolin Kivisikk is lead designer van TEDI, en een van de sleutelfiguren achter de oprichting en groei ervan. Onder haar leiding is TEDI uitgegroeid tot een tool die eenheid en kwaliteit brengt in de digitale publieke diensten van Estland. Kärolin richt zich op doordacht ontwerp en betrokkenheid van stakeholders als essentiële basis voor duurzame design</p>
-                </div>
-                <div class="dsw-session__speaker dsw-speaker">
-                 <img class="dsw-speaker__image" src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-TonisTobre.png" alt="Tõnis Tobre" />
-                 <p class="utrecht-paragraph dsw-speaker__description">Tõnis Tobre is technical project manager en architect van TEDI. Zijn werk heeft TEDI geholpen groeien van een interne styleguide naar een landelijk design system. Hij combineert strategische visie met praktische technische oplossingen om ervoor te zorgen dat het design system waarde levert aan developers, designers en de digitale overheid van Estland.</p>
-                </div>
-               </aside>
-               <p class="utrecht-paragraph">
-                <a href="/dsweek-2025/estonia-design-system.ics" class="utrecht-button-link utrecht-button-link--html-a utrecht-button-link--primary-action" download="/dsweek-2025/estonia-design-system.ics"
-                 ><span aria-hidden="true" class="utrecht-icon"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-calendar-event">
-                   <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                   <path d="M16 3l0 4"></path>
-                   <path d="M8 3l0 4"></path>
-                   <path d="M4 11l16 0"></path>
-                   <path d="M8 15h2v2h-2z"></path></svg></span
-                 ><span>Zet<span class="sr-only">TEDI: the Estonian government&#x27;s new design system</span> in je agenda</span></a
                 >
                </p>
               </article>

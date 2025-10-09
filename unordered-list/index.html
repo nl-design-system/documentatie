@@ -26,9 +26,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.a30a0e02.css" />
-  <script src="/assets/js/runtime~main.5efe52a3.js" defer="defer"></script>
-  <script src="/assets/js/main.360e76fb.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.7ce160b3.css" />
+  <script src="/assets/js/runtime~main.c7a514ad.js" defer="defer"></script>
+  <script src="/assets/js/main.55daaf22.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -51,18 +51,48 @@
    })(),
     (function () {
      try {
-      const c = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of c)
+      const a = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of a)
        if (t.startsWith('docusaurus-data-')) {
-        var a = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(a, e);
+        var n = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(n, e);
        }
      } catch (t) {}
-    })();
+    })(),
+    document.documentElement.setAttribute(
+     'data-announcement-bar-initially-dismissed',
+     (function () {
+      try {
+       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
+      } catch (t) {}
+      return !1;
+     })(),
+    );
   </script>
   <div id="__docusaurus">
    <div class="utrecht-document nlds-theme main-layout">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_W6BK" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <div class="announcementBar" style="background-color: var(--utrecht-button-primary-action-background-color); color: var(--utrecht-button-primary-action-color)" role="banner">
+     <div class="content announcementBarContent">
+      <span class="utrecht-icon"
+       ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-speakerphone">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M18 8a3 3 0 0 1 0 6" />
+        <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
+        <path d="M12 8h0l4.524 -3.77a.9 .9 0 0 1 1.476 .692v12.156a.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" /></svg
+      ></span>
+      27 tot 30 oktober is het weer Design Systems Week
+      <span class="utrecht-icon"
+       ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-hand-finger-right">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 8h8.5a1.5 1.5 0 0 1 0 3h-7.5" />
+        <path d="M13.5 11h2a1.5 1.5 0 0 1 0 3h-2.5" />
+        <path d="M14.5 14a1.5 1.5 0 0 1 0 3h-1.5" />
+        <path d="M13.5 17a1.5 1.5 0 1 1 0 3h-4.5a6 6 0 0 1 -6 -6v-2v.208a6 6 0 0 1 2.7 -5.012l.3 -.196q .718 -.468 5.728 -3.286a1.5 1.5 0 0 1 2.022 .536c.44 .734 .325 1.674 -.28 2.28l-1.47 1.47" /></svg
+      ></span>
+      <a href="/events/design-systems-week/" class="utrecht-link">Bekijk het programma</a>
+     </div>
+    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbar--dark">
      <div class="navbar__inner">
       <button class="utrecht-button utrecht-button--subtle navbar__toggle clean-btn" type="button" aria-expanded="false">Menu</button><a class="utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a navbar__item navbar__item--show-on-mobile navbar-logo" href="/"><b class="navbar__title navbar-logo__title">NL Design System</b></a>
@@ -97,7 +127,7 @@
            Verberg
           </button>
           <div id=":Rllaqh:" class="sidebar__content">
-           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu">
+           <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu menuWithAnnouncementBar">
             <ul class="theme-doc-sidebar-menu menu__list">
              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
               <div class="menu__list-item-collapsible sidebar__main-category">Componenten</div>
