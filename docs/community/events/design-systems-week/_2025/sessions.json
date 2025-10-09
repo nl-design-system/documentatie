@@ -16,16 +16,10 @@
   {
     "uuid": "5faa9816-8348-4111-9780-eaa44d964308",
     "isoDateTime": "2025-10-27T12:00:00.000Z",
-    "speakers": [
-      {
-        "name": "",
-        "organisation": ""
-      }
-    ],
-    "subject": "",
-    "sessionLink": "",
-    "icalLink": "",
-    "language": { "abbr": "", "description": "" }
+    "speakers": ["SiretTuula", "KarolinKivisikk", "TonisTobre"],
+    "subject": "TEDI: the Estonian government's new design system",
+    "icalLink": "/dsweek-2025/estonia-design-system.ics",
+    "language": { "abbr": "EN", "description": "English" }
   },
   {
     "uuid": "02ae9c2a-f84f-4cd1-b7c0-9afe20813acb",
