@@ -158,5 +158,44 @@
       "nl": "Loes is frontend developer in het design system-team van de ANWB. Ze maakt deel uit van de accessibility-werkgroep, die zich inzet om de website van de ANWB voor iedereen toegankelijk te maken. Met haar ervaring in techniek en toegankelijkheid zoekt Loes naar de balans tussen functioneel, gebruiksvriendelijk en inclusief ontwerp."
     },
     "language": "nl"
+  },
+  "SiretTuula": {
+    "name": "Siret Tuula",
+    "organisation": "Estonia Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-SiretTuula.png",
+      "alt": "Siret Tuula"
+    },
+    "description": {
+      "nl": "Siret Tuula is product owner en manager van TEDI, het Estse overheids design system. Ze combineert haar rol in het beheren van het design system met haar creatieve bezigheden als muzikant en actrice. Velen zeggen dat Siret TEDI is – de drijvende kracht en grondlegger achter het project, die het heeft geleid vanaf de oprichting tot het succes dat het vandaag geniet.",
+      "en": "Siret Tuula is the product owner and manager of TEDI, the Estonian government design system. She balances her role managing the design system with her creative pursuits as a musician and actress. Many say Siret is TEDI – the driving force and founding mind behind the project, guiding it from its inception to the success it enjoys today."
+    },
+    "language": "en"
+  },
+  "KarolinKivisikk": {
+    "name": "Kärolin Kivisikk",
+    "organisation": "Estonia Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-KarolinKivisikk.png",
+      "alt": "Kärolin Kivisikk"
+    },
+    "description": {
+      "nl": "Kärolin Kivisikk is lead designer van TEDI, en een van de sleutelfiguren achter de oprichting en groei ervan. Onder haar leiding is TEDI uitgegroeid tot een tool die eenheid en kwaliteit brengt in de digitale publieke diensten van Estland. Kärolin richt zich op doordacht ontwerp en betrokkenheid van stakeholders als essentiële basis voor duurzame design",
+      "en": "Kärolin Kivisikk is the lead designer of the TEDI, and one of the key figures behind its creation and growth. Under her leadership, TEDI has evolved into a tool that brings unity and quality to Estonia's digital public services. Kärolin believes that well-thought-out design and the involvement of all stakeholders are essential foundations for sustainable design."
+    },
+    "language": "en"
+  },
+  "TonisTobre": {
+    "name": "Tõnis Tobre",
+    "organisation": "Estonia Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-TonisTobre.png",
+      "alt": "Tõnis Tobre"
+    },
+    "description": {
+      "nl": "Tõnis Tobre is technical project manager en architect van TEDI. Zijn werk heeft TEDI geholpen groeien van een interne styleguide naar een landelijk design system. Hij combineert strategische visie met praktische technische oplossingen om ervoor te zorgen dat het design system waarde levert aan developers, designers en de digitale overheid van Estland.",
+      "en": "Tõnis Tobre is the technical project manager and architect of TEDI. His work has helped TEDI grow from an internal style guide into a nationwide design system. He combines strategic vision with practical technical solutions to ensure the design system delivers value to developers, designers, and Estonia's entire digital government."
+    },
+    "language": "en"
   }
 }
