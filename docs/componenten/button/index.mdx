@@ -134,7 +134,7 @@ export const component = componentProgress.find((item) => item.number === issueN
     },
     {
       title:
-        "Als het zichtbare label van de button een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.",
+        "Als het zichtbare label van de button een afbeelding of icoon bevat, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.",
       sc: "1.4.11",
       status: "",
       component: <Wcag1411 />,
@@ -273,6 +273,13 @@ export const component = componentProgress.find((item) => item.number === issueN
     },
   ]}
 />
+
+### Randen van buttons
+
+Als een button tekst of een icoon met voldoende contrast bevat, is het geen WCAG-vereiste dat de rand om de button een contrastratio van 3:1 heeft.
+Maar bezoekers kunnen knoppen met een goed zichtbare rand of achtergrondkleur makkelijker onderscheiden van de achtergrond én van andere interactieve componenten zoals links.
+Geef buttons daarom een rand of achtergrondkleur met een contrastratio van minimaal 3:1 tot de achtergrond van de pagina.
+Hou er rekening mee dat tekst en iconen ook nog steeds goed zichtbaar moeten zijn op de achtergrondkleur van de knop.
 
 ## Help component verbeteren
 
