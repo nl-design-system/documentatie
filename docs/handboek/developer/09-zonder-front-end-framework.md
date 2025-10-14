@@ -556,6 +556,13 @@ En vervolgens:
 <main class="rich-text"></main>
 ```
 
-## Afsluitend
+## Heb je feedback?
 
-Met behulp van dit stappenplan, heb je in een aantal stappen geleerd hoe je een pagina kunt opbouwen met behulp van NL Design System op basis van een design. Mocht je nog vragen hebben stel ze in de [Slack community](/slack).
+Dit is een eerste versie, we willen graag van de community horen of dit stappenplan werkbaar en nuttig is.
+Heb je vragen, aanvullingen of opmerkingen? [Ga naar de GitHub Discussion](https://github.com/orgs/nl-design-system/discussions/411#discussion-9024854) en deel je mening.
+
+## Meer hulp nodig?
+
+- Sluit aan bij de volgende [Developer Open Hour](/events/developer-open-hour)
+- Stuur ons een berichtje op [Slack](/slack)
+- Stuur een mailtje naar info@nldesignsystem.nl
