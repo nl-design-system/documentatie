@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="nl" dir="ltr">
+<html lang="nl" dir="ltr" class="utrecht-root">
   <head>
     <meta charset="utf-8" />
     <title>Graffiti laten verwijderen van uw pand · Gemeente Voorbeeld</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- TODO: Gebruik je eigen hosting voor de CSS, gebruik "https://unpkg.com/" hooguit tijdens development, nooit in productie. -->
-    <link rel="stylesheet" href="https://unpkg.com/@utrecht/design-tokens@3.3.0/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/body-css@1.2.1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0.1.1/dist/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@utrecht/button-css@2.3.1/dist/index.css" />
@@ -32,8 +31,6 @@
       rel="stylesheet"
       href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/visually-hidden/visually-hidden.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-tokens@1.0.1/dist/index.css" />
-
     <!-- https://nldesignsystem.nl/skip-link/ -->
     <link
       rel="stylesheet"
@@ -54,8 +51,18 @@
       href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0/dist/theme.css"
     />
     <style>
-      .rich-text > * {
+      .example-rich-text > * {
         margin-block-start: 0.5rem;
+      }
+
+      footer p {
+        --nl-paragraph-color: white;
+      }
+
+      /* todo: add this to example theme so we don't have to manually override it here */
+      .voorbeeld-theme {
+        --ams-grid-padding-block-xl: clamp(2.25rem, 1.9375rem + 1.5625vw, 3.5rem);
+        --ams-link-list-link-inverse-color: white;
       }
     </style>
   </head>
@@ -65,7 +72,9 @@
     <header class="ams-page-header">
       <nav aria-labelledby="primary-navigation" class="ams-page-header__navigation">
         <span class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</span>
-        <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+        <figure class="utrecht-logo">
+          <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+        </figure>
         <ul role="list" class="ams-page-header__menu">
           <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
             <a class="nl-link" href="#">Contact</a>
@@ -129,14 +138,14 @@
     </div>
     <div class="utrecht-page-body">
       <div class="utrecht-page-body__content">
-        <nav class="ams-breadcrumb" aria-label="Breadcrumb">
+        <nav class="ams-breadcrumb" aria-label="kruimelpad">
           <ol class="ams-breadcrumb__list">
             <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Home</a></li>
             <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Meldingen</a></li>
             <li class="ams-breadcrumb__item" aria-current="page">Meldingen openbare ruimte</li>
           </ol>
         </nav>
-        <main class="rich-text" id="main">
+        <main class="example-rich-text" id="main">
           <h1 class="nl-heading nl-heading--level-1">Graffiti laten verwijderen van uw pand</h1>
           <p class="nl-paragraph">
             Heeft u overlast van graffiti, posters of stickers op uw huis of pand? Meldpunt Graffiti zorgt ervoor dat

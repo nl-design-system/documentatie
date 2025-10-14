@@ -31,7 +31,7 @@ Maak een HTML bestand aan op je computer, bijvoorbeeld `example-page.html` en be
 
 ```html
 <!doctype html>
-<html lang="nl" dir="ltr">
+<html lang="nl" dir="ltr" class="utrecht-root">
   <head>
     <meta charset="utf-8" />
     <title><!-- paginatitel komt hier --> · Gemeente Voorbeeld</title>
@@ -71,8 +71,6 @@ Je pagina zal er dan als volgt uitzien:
 
 :::info[tips]
 Mocht je vanuit de organistatie waarvoor je werkt al een huisstijl gebruiken, dan kun je die bij deze stap ook gelijk importeren en de class name toepassen op de `html` van de pagina. Voor meer informatie kun je terecht op de pagina [Huisstijl vastleggen](/handboek/huisstijl-vastleggen/overzicht). Wil je simpelweg een proof-of-concept bouwen, dan kun je verder gaan met `class="voorbeeld-theme"`.
-
-Het is daarnaast mogelijk om een generiek versienummer neer te zetten, of helemaal geen versienummer toe te voegen zodat je altijd de laatste versie hebt. Het is belangrijk om hierin een bewuste keuze te maken en eventuele gevolgen te accepteren. In de voorbeeldcode willen we graag de werking consistent houden, dus is er gekozen om een specifiek versienummer vast te leggen.
 :::
 
 Zie ook [het voorbeeld thema](/handboek/huisstijl/themas/voorbeeld-thema#voorbeeld-thema).
@@ -93,11 +91,15 @@ Importeer de CSS van het voorbeeld thema en de design tokens:
 
 :::info
 De stylesheet link zou je zelf kunnen vinden aan de hand van het [unpkg format](https://unpkg.com/) en het zoeken van de package/versienummer op [npmjs](https://npmjs.com).
+
+Het is mogelijk om bij de import met unpkg een generiek versienummer neer te zetten, bijvoorbeeld `@5`, of helemaal geen versienummer toe te voegen zodat je altijd de laatste versie hebt. Het is belangrijk om hierin een bewuste keuze te maken en eventuele gevolgen te accepteren. Bekijk [de SemVer pagina](/handboek/developer/changes) om meer te leren over Semantic Versioning.
+
+In de voorbeeldcode willen we graag de werking consistent houden, dus is er gekozen om een specifiek versienummer vast te leggen.
 :::
 
 ### Stap 5: Componenten importeren uit NL Design System
 
-Het is mogelijk om de componenten uit de community met één import statement te importeren, als voorbeeld Amsterdam:
+Het is vaak mogelijk alle de componenten uit een design system van de community met 1 import statement te importeren. Hier bijvoorbeeld alle componenten van Amsterdam:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/index.css" />
@@ -105,11 +107,8 @@ Het is mogelijk om de componenten uit de community met één import statement te
 
 Dit wordt niet aangeraden omdat je dan veel meer code dan nodig importeert, en je pagina onnodig langzaam wordt voor gebruikers. In plaats daarvan kiezen we in de onderstaande stappen ervoor om elk component individueel te importeren. Dat zorgt ervoor dat je alleen de CSS gebruikt die je nodig hebt.
 
-Let goed op de volgorde waarop je de dependencies inlaad. De CSS wordt overschreven door het eerst-volgende CSS bestand. Het kan dus fouten voorkomen wanneer je de @nl-design-system-\* stylesheets als laatste importeert.
-
 #### Logo
 
-Momenteel is er een Logo component beschikbaar in de Amsterdam community, maar die geeft hun eigen logo weer. Het is beter om het Logo te tonen zonder component.
 Het logo kan als svg aangeleverd worden. Je kunt er voor kiezen om een eigen logo neer te zetten of die van [het voorbeeld thema](/svg/voorbeeld-thema-logo.svg) te gebruiken.
 
 Het logo kunnen we als volgt toevoegen:
@@ -375,7 +374,7 @@ Benodigde CSS:
 
 #### Unordered List
 
-Gebruik een Unordered List voor de opsommingen. In het voorbeeld is de Utrecht-list styling toegepast.
+Gebruik een Unordered List voor de opsommingen. In het voorbeeld is de Utrecht [Unordered List](https://nl-design-system.github.io/utrecht/storybook-css/?path=/docs/css-unordered-list--docs) gebruikt.
 
 ```html
 <ul class="utrecht-unordered-list">
@@ -417,11 +416,11 @@ Benodigde CSS:
 <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/link-css@2.0.1/dist/link.css" />
 ```
 
-Nu deze stap is uitgevoerd, is de pagina body van de pagina compleet gestyled met het NL Design System.
+Nu deze stap is uitgevoerd, maakt de inhoud van de Page Body compleet gebruik van de CSS van NL Design System.
 
 #### Page Footer
 
-Voor de Page Footer gebruik ik de footer van Amsterdam. In de [Storybook van Amsterdam](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs) kan voorbeeldcode gevonden worden hoe je de footer opbouwd met HTML en CSS. Hiervoor moet je "inspect element" van de browser gebruiken, want de voorbeeldcode van storybook maakt gebruik van React.
+Voor de Page Footer gebruik ik de footer van Amsterdam. In de [Storybook van Amsterdam](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs) kan voorbeeldcode gevonden worden hoe je de footer opbouwd met HTML en CSS. Hiervoor moet je navigeren naar de "HTML" tab van de addons in Storybook.
 
 ```html
 <!-- Gebruik het HTML element `footer` om deze belangrijke "landmark region" op te maken, voor toegankelijkheid. -->
@@ -495,7 +494,6 @@ Deze worden als volgt geïmporteerd:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/page-footer/page-footer.css" />
-<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-tokens@1.0.1/dist/index.css" />
 ```
 
 Er wordt ook gebruik gemaakt van [Link List](/link-list), Grid, Heading en Paragraph in deze Page Footer. Daarom moet je deze ook importeren:
@@ -544,7 +542,7 @@ Binnen `<head></head>`:
 
 ```html
 <style>
-  .rich-text > * {
+  .example-rich-text > * {
     margin-block-start: 0.5rem;
   }
 </style>
@@ -553,7 +551,7 @@ Binnen `<head></head>`:
 En vervolgens:
 
 ```html
-<main class="rich-text"></main>
+<main class="example-rich-text"></main>
 ```
 
 ## Heb je feedback?
