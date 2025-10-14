@@ -18,11 +18,11 @@ END:VTIMEZONE
 BEGIN:VEVENT
 ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
 DESCRIPTION:Kimberly en Ted nemen je mee in universeel ontwerp: ontwerpen voor iedereen, met inclusie en toegankelijkheid in elke fase van het proces. Ze laten zien hoe je écht mét je doelgroep onderzoekt en ontwerpt, in plaats van alleen vóór hen. Naast een presentatie brengen ze drie tactiele toolkits mee die worden gebruikt in co-creatie: hulpmiddelen om gesprekken te openen, ideeën te verkennen en samen te werken aan ontwerpen die nog niet bestaan. \n\nEnglish: \nKimberly and Ted take you on a journey into universal design: designing for everyone, with inclusion and accessibility at every stage of the process. They show you how to truly research and design with your target group, rather than just for them. In addition
- to a presentation, they will bring three tactile toolkits that are used in co-creation: tools to open conversations, explore ideas, and collaborate on designs that do not yet exist. 
+ to a presentation, they will bring three tactile toolkits that are used in co-creation: tools to open conversations, explore ideas, and collaborate on designs that do not yet exist.
 UID:9c744d89-14a2-443a-8668-d97c9e7c47f2
 SUMMARY:Gebruikersonderzoek en co-creatie - door Kimberly Brinkhuis en Ted van der Togt
 DTSTART;TZID=Europe/Amsterdam:20251029T130000
-DTEND;TZID=Europe/Amsterdam:20251029T133000
+DTEND;TZID=Europe/Amsterdam:20251029T134500
 CLASS:PUBLIC
 PRIORITY:5
 DTSTAMP:20250929T104513Z
@@ -31,7 +31,6 @@ SEQUENCE:0
 LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDAyNmQ1NzgtZmUyOC00MDE0LWEyYTEtNDg3YTA3NmI4NzUz%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
-X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-CDO-IMPORTANCE:1
 X-MICROSOFT-CDO-INSTTYPE:0
 X-MICROSOFT-DONOTFORWARDMEETING:FALSE
