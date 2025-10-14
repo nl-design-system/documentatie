@@ -61,8 +61,29 @@
 
       /* todo: add this to example theme so we don't have to manually override it here */
       .voorbeeld-theme {
+        --ams-typography-hyphenate-limit-chars: 12 8 4;
+        --ams-breadcrumb-font-family: 'Amsterdam Sans', Arial, sans-serif;
+        --ams-breadcrumb-separator-background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%23000000' fill-rule='evenodd' d='m9.757 32-2.9-2.91L19.937 16 6.857 2.91 9.757 0l16 16z'/></svg>");
+        --ams-breadcrumb-separator-block-size: 1ex;
+        --ams-breadcrumb-separator-inline-size: 1ex;
+        --ams-breadcrumb-separator-margin-inline: clamp(0.2813rem, 0.2578rem + 0.1172vw, 0.375rem);
+
+        --ams-grid-wide-padding-inline: clamp(2.8125rem, 2.2031rem + 3.0469vw, 5.25rem);
+        --ams-grid-wide-column-count: 12;
         --ams-grid-padding-block-xl: clamp(2.25rem, 1.9375rem + 1.5625vw, 3.5rem);
         --ams-link-list-link-inverse-color: white;
+        --ams-link-list-link-small-font-size: clamp(0.9643rem, calc(0.9054rem + 0.2946vw), 1.2rem);
+        --ams-link-list-link-small-line-height: 1.5152;
+        --ams-link-list-link-font-family: 'Amsterdam Sans', Arial, sans-serif;
+        --ams-link-list-link-font-weight: 400;
+        --ams-link-list-link-text-decoration-line: none;
+        --ams-link-list-link-outline-offset: 0.25rem;
+        --ams-link-list-link-text-decoration-thickness: 0.125rem;
+        --ams-link-list-link-text-underline-offset: 0.3333em;
+        --ams-link-list-gap: clamp(0.5625rem, 0.5156rem + 0.2344vw, 0.75rem);
+        --ams-link-list-link-gap: clamp(0.5625rem, 0.5156rem + 0.2344vw, 0.75rem);
+        --ams-heading-3-font-size: clamp(1.5313rem, calc(1.3281rem + 1.0156vw), 2.3438rem);
+        --ams-heading-3-line-height: 1.2524;
       }
     </style>
   </head>
@@ -97,7 +118,7 @@
                 style="max-width: 60%; margin-inline-end: 0.3rem; font-size: 1rem; height: 3rem"
                 placeholder="Bijvoorbeeld zwembad of grofvuil"
                 type="search"
-                class="ams-text-input"
+                class="utrecht-textbox utrecht-textbox--html-input"
                 dir="auto"
                 name="q"
               />
