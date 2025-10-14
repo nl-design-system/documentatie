@@ -1,0 +1,80 @@
+---
+title: Tijdschema · Design Systems Week 2025
+description: Tijdschema per dag voor de Design Systems Week 2025
+hide_table_of_contents: true
+sidebar_label: Tijdschema
+pagination_label: Tijdschema
+sidebar_position: 3
+slug: /events/design-systems-week-2025/tijdschema/
+---
+
+import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { IconChevronRight } from "@tabler/icons-react";
+import sessions from "./\_2025/sessions.json";
+import speakers from "./\_2025/speakers.json";
+import { SessionTable } from "@site/src/components/SessionTable";
+
+# Tijdschema Design Systems Week 2025
+
+<Paragraph lead>
+  NL Design System organiseert in 2025 voor de 5e keer de Design Systems Week. Van **27 tot en met 30 oktober** zijn er
+  dagelijks meerdere korte sessies van diverse organisaties online te volgen over het **hoe en waarom van design
+  systems**.
+</Paragraph>
+
+<ActionGroup>
+  <ButtonLink href="/events/design-systems-week/aanmelden" appearance="primary-action-button">
+    {"Meld je aan"}
+    <IconChevronRight />
+  </ButtonLink>
+  <ButtonLink href="/events/design-systems-week-2025/programma" appearance="secondary-action-button">
+    {"Bekijk het programma"}
+    <IconChevronRight />
+  </ButtonLink>
+</ActionGroup>
+
+## Maandag 27 oktober
+
+<SessionTable
+  lang="nl-NL"
+  speakers={speakers}
+  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-27"))}
+/>
+
+## Dinsdag 28 oktober
+
+<SessionTable
+  lang="nl-NL"
+  speakers={speakers}
+  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-28"))}
+/>
+
+## Woensdag 29 oktober
+
+<SessionTable
+  lang="nl-NL"
+  speakers={speakers}
+  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-29"))}
+/>
+
+## Donderdag 30 oktober
+
+<SessionTable
+  lang="nl-NL"
+  speakers={speakers}
+  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-30"))}
+/>
+
+<hr></hr>
+
+## Organisatie
+
+Design Systems Week wordt georganiseerd door het kernteam van NL Design System, vanuit Stichting ICTU, met dank aan het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
+
+## Code of Conduct
+
+Op Design Systems Week is de [NL Design System Code of Conduct](https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.nl.md) van toepassing. Je gaat daarmee akkoord als je je aanmeldt of spreekt.
+
+## Toegankelijkheid
+
+We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).

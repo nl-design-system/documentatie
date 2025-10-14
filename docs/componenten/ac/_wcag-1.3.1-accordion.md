@@ -6,4 +6,4 @@ Wanneer de tekst in de `button` of de `summary` van de `details` en `summary` co
 
 NL Design System richtlijnen:
 
-- [Koppen](richtlijnen/content/tekstopmaak/koppen/)
+- [Koppen](/richtlijnen/content/tekstopmaak/koppen/)

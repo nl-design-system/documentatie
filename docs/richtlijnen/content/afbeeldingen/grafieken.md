@@ -73,7 +73,7 @@ Ook voor staaf- en cirkeldiagrammen geldt: denk verder dan alleen vorm en kleur.
 - Laat genoeg ruimte tussen de grafiekelementen.
 - Bied een alternatief aan, zoals een tabel.
 
-[Lees ook de richtlijnen voor kleurgebruik](/richtlijnen/content/tekstopmaak/kleurgebruik/)
+[Lees ook de richtlijnen voor kleurgebruik](/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst)
 
 ### Voorbeeld van een toegankelijk staafdiagram
 

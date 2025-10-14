@@ -13,7 +13,7 @@ Maak de inhoud van de legend kort en omschrijvend.
 In onderstaande video leest VoiceOver in Safari drie verschillende fieldsets voor, een groep met keuzerondjes (radio buttons) en een bezorg- en factuuradres. De legend wordt steeds bij het formulierveld voorgelezen.
 VoiceOver leest de legend twee keer voor bij het eerste veld van een groep, dit is een bug van VoiceOver.
 
-<VideoPlayer videoId="WMa7LToyZVc" />
+<VideoPlayer id="WMa7LToyZVc" title="Demo fieldsets met VoiceOver in Safari"/>
 
 ## Koppen in een legend
 

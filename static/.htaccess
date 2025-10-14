@@ -49,6 +49,9 @@ Redirect 301 "/videos/design-system-week-2022" "/events/design-systems-week-2022
 Redirect 301 "/wcag/introduction" "/wcag"
 Redirect 301 "/handboek/design-tokens" "/handboek/huisstijl/design-tokens"
 Redirect 301 "/voorbeelden/templates" "/voorbeelden/patronen-en-templates"
+Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/overzicht/" "/community/community-sprints/mijn-services-community/overzicht/"
+Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/" "/community/community-sprints/mijn-services-community/"
+Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/aanmelden/" "/community/community-sprints/mijn-services-community/aanmelden/"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
@@ -151,6 +154,10 @@ Redirect 301 "/3.3.9" "/wcag/3.3.9/"
 Redirect 301 "/4.1.1" "/wcag/4.1.1/"
 Redirect 301 "/4.1.2" "/wcag/4.1.2/"
 Redirect 301 "/4.1.3" "/wcag/4.1.3/"
+
+# Convenience redirect, because this URL is simple enough to share in audio tracks during presentations
+Redirect 301 "/belangenorganisaties" "/community/belangenorganisaties/aanmelden/"
+Redirect 301 "/belangenorganisatie" "/community/belangenorganisaties/aanmelden/"
 
 # Temporary redirects until we have multiple factsheets and turn /factsheets into an overview page
 RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"

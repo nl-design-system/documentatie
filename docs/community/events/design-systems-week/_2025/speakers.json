@@ -1,0 +1,201 @@
+{
+  "AlainVagner": {
+    "name": "Alain Vagner",
+    "organisation": "OSAPS",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-AlainVagner.png",
+      "alt": "Alain Vagner"
+    },
+    "description": {
+      "en": "Alain is a digital accessibility specialist. He works for the Luxembourg government at OSAPS, the national agency responsible for overseeing the accessibility of products and services. He is an active member of the joint technical body for eAccessibility, where he contributes to the development and maintenance of the European standard for the accessibility of ICT products and ICT services. He has also led the implementation and management of accessibility monitoring for websites and mobile applications in the public sector.",
+      "nl": "Alain is een specialist op het gebied van digitale toegankelijkheid. Hij werkt voor de Luxemburgse overheid bij OSAPS, het nationale agentschap dat verantwoordelijk is voor het toezicht op de toegankelijkheid van producten en diensten. Hij is actief lid van het gezamenlijk technisch orgaan voor eAccessibility, waar hij bijdraagt aan de ontwikkeling en het onderhoud van de Europese norm voor de toegankelijkheid van ICT-producten en ICT-diensten. Ook heeft hij leiding gegeven aan de implementatie en het beheer van toegankelijkheidsmonitoring voor websites en mobiele applicaties van de publieke sector."
+    },
+    "language": "en"
+  },
+  "EgorKloos": {
+    "name": "Egor Kloos",
+    "organisation": "Informaat",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-EgorKloos.png",
+      "alt": "Egor Kloos"
+    },
+    "description": {
+      "nl": "Egor is Front-end Developer bij Informaat en gespecialiseerd in design systems. Met ruime ervaring bij organisaties als ANWB, ING, Aon en NS bouwt hij herbruikbare weboplossingen met een sterke focus op toegankelijkheid, webstandaarden en gebruiksvriendelijkheid. Met zijn expertise in webtechnologieën en Web Components droeg hij onder andere bij aan het opzetten van Tractie, het Enterprise Design System van de NS."
+    },
+    "language": "nl"
+  },
+  "AntonOlivier": {
+    "name": "Anton Olivier",
+    "organisation": "Logius",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-AntonOlivier.png",
+      "alt": "Anton Olivier"
+    },
+    "description": {
+      "en": "Anton has worked for content websites, interactive television, mobile banking, logistics, museums, and the government. He has gained a wide range of experience and now tries to use it to get everyone on the same page. In other words, he talks a lot to connect people. He uses visuals and prototypes to distill problems and find solutions that everyone can agree on. He currently works as a UX strategist at Logius. He is responsible for the UX side of government notifications, messages, and personal data available on MijnOverheid.",
+      "nl": "Anton heeft gewerkt voor contentwebsites, interactieve televisie, mobiel bankieren, logistiek, musea en de overheid. Hij heeft een breed scala aan ervaringen opgedaan en probeert deze nu te gebruiken om alle neuzen dezelfde kant op te krijgen. Oftewel, hij praat veel om mensen met elkaar te verbinden. Hij gebruikt visuals en prototypes om problemen te destilleren en oplossingen te vinden waar iedereen het over eens kan zijn. Momenteel werkt hij als UX-strateeg bij Logius. Hij is verantwoordelijk voor de UX-kant van overheidsmeldingen, berichten en persoonsgegevens die beschikbaar zijn op MijnOverheid."
+    },
+    "language": "nl"
+  },
+  "EvalienWiersma": {
+    "name": "Evalien Wiersma",
+    "organisation": "DUO",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-EvalienWiersma.png",
+      "alt": "Evalien Wiersma"
+    },
+    "description": {
+      "nl": "Evalien Wiersma is UX Designer bij het Uno design system van DUO. Ze onderzoekt met plezier de behoeftes van ontwikkelaars, ontwerpers en eindgebruikers en vertaalt die naar heldere inzichten. Ze voelt zich het meest in haar element als ze mag puzzelen op componentdetails, patronen en interacties—het liefst met Excel naast zich en Figma open."
+    },
+    "language": "nl"
+  },
+  "PaiviJalava": {
+    "name": "Päivi Jalava",
+    "organisation": "City of Helsinki",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-PaiviJalava.png",
+      "alt": "Päivi Jalava"
+    },
+    "description": {
+      "en": "Päivi Jalava is a product owner and project manager at the City of Helsinki, specializing in digital service development. With a strong background in communications, she has contributed to renewing various digital services in Finland’s public sector. Driven by a keen focus on creating user-friendly digital experiences, she became the Product Owner of the Helsinki Design System in 2024.",
+      "nl": "Päivi Jalava is product owner en projectmanager bij de stad Helsinki, gespecialiseerd in de ontwikkeling van digitale diensten. Met een sterke achtergrond in communicatie heeft ze bijgedragen aan de vernieuwing van verschillende digitale diensten in de publieke sector in Finland. Gedreven door een sterke focus op het creëren van gebruiksvriendelijke digitale ervaringen, werd ze in 2024 Product Owner van het Helsinki Design System."
+    },
+    "language": "en"
+  },
+  "JuanCubilla": {
+    "name": "Juan Cubilla",
+    "organisation": "City of Helsinki",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-JuanCubilla.png",
+      "alt": "Juan Cubilla"
+    },
+    "description": {
+      "en": "Juan Cubilla is a senior multidisciplinary designer with 7 years of experience building flexible, multi-brand design systems across finance, tech, and media. He's passionate about connecting brand, technology, UX, design thinking, and processes to build cohesive systems that turn strategy into efficient and impactful digital experiences. Since late 2024, Juan has been contributing to the open-source Helsinki Design System.",
+      "nl": "Juan Cubilla is senior multidisciplinair designer met 7 jaar ervaring in het bouwen van flexibele, multi-brand design systems voor financiële dienstverlening, tech en media. Hij verbindt merk, technologie, UX, design thinking en processen om samenhangende systemen te bouwen die strategie omzetten in efficiënte en impactvolle digitale ervaringen. Sinds eind 2024 draagt Juan bij aan het open-source Helsinki Design System."
+    },
+    "language": "en"
+  },
+  "KimberlyBrinkhuis": {
+    "name": "Kimberly Brinkhuis",
+    "organisation": "Koninklijke Bibliotheek",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-KimberlyBrinkhuis.png",
+      "alt": "Kimberly Brinkhuis"
+    },
+    "description": {
+      "nl": "Kimberly is ontwerper en onderzoeker met een focus op toegankelijk, inclusief en universeel ontwerp. Als expert in multi-zintuiglijkheid en gebruikerservaring werkt ze bij de Koninklijke Bibliotheek aan digitale toegankelijkheid. Ze onderzoekt hoe ontwerp voor iedereen bruikbaar kan zijn, ongeacht beperking, kennis, energie of leeftijd. Ooit startte ze als ziende grafisch ontwerper en inmiddels zet ze als blinde onderzoeker en ontwerper haar ervaring in om toegankelijkheid en inclusiviteit in de kern van ieder ontwerp- en onderzoeksproces te verankeren. Kimberly gelooft dat mensen met een beperking volwaardig deel uitmaken van iedere doelgroep."
+    },
+    "language": "nl"
+  },
+  "TedVanDerTogt": {
+    "name": "Ted van der Togt",
+    "organisation": "Koninklijke Bibliotheek",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-TedVanDerTogt.png",
+      "alt": "Ted van der Togt"
+    },
+    "description": {
+      "nl": "Ted is senior onderzoeker digitale toegankelijkheid bij de Koninklijke Bibliotheek en werkt al meer dan 10 jaar in toegankelijkheid van e-boeken en lezen. Hij streeft naar het belang dat het niet over mensen met een beperking gaat maar samen met.  Ted zet zich in om te zorgen dat we verder kijken dan de mindset: 'dit doen we maar voor een paar mensen' en juist 'dit doen we voor iedereen en ook echt iedereen'."
+    },
+    "language": "nl"
+  },
+  "RenateRoke": {
+    "name": "Renate Roke",
+    "organisation": "NL Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-RenateRoke.png",
+      "alt": "Renate Roke"
+    },
+    "description": {
+      "nl": "Als Specialist Webtoegankelijkheid beschrijft Renate onder andere acceptatiecriteria voor componenten in het NL Design System en helpt ze de community op weg met tips over toegankelijkheid. Hiervoor gebruikt ze haar jarenlange kennis in toegankelijkheidsonderzoeken en haar passie om kennis over te dragen. Ze denkt vooral graag mee over wat er wél kan. "
+    },
+    "language": "nl"
+  },
+  "JeffreyLauwers": {
+    "name": "Jeffrey Lauwers",
+    "organisation": "NL Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-JeffreyLauwers.png",
+      "alt": "Jeffrey Lauwers"
+    },
+    "description": {
+      "nl": "Jeffrey is designer in het NL Design System kernteam. Hij heeft eerder design systems gerealiseerd voor het Ministerie van Volksgezondheid, Welzijn en Sport, Nederlandse Spoorwegen, Nationale Nederlanden en Randstad. Naast een passie voor design systems en Ajax heeft Jeffrey ook een passie voor toegankelijkheid."
+    },
+    "language": "nl"
+  },
+  "ClaudiaVermeulen": {
+    "name": "Claudia Vermeulen",
+    "organisation": "InnoValer",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-ClaudiaVermeulen.png",
+      "alt": "Claudia Vermeulen"
+    },
+    "description": {
+      "nl": "Claudia is adviseur en managing partner van InnoValor Advies. Ze heeft een achtergrond in digitale dienstverlening, innovatiemanagement en communicatie. Vanuit verschillende rollen werkt ze aan verantwoord datagebruik in de publieke sector."
+    },
+    "language": "nl"
+  },
+  "BaukjeFaber": {
+    "name": "Baukje Faber",
+    "organisation": "InnoValer",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-BaukjeFaber.png",
+      "alt": "Baukje Faber"
+    },
+    "description": {
+      "nl": "Baukje is junior adviseur bij InnoValor Advies met een achtergrond in industrial design. Ze is betrokken bij de doorontwikkeling van de Algoritmewijzer en doet onderzoek naar user-centric innovatie in Europa en gebruikersgerichte inzet van digitale identiteitswallets."
+    },
+    "language": "nl"
+  },
+  "LoesKockelmans": {
+    "name": "Loes Kockelmans",
+    "organisation": "ANWB",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-LoesKockelmans.png",
+      "alt": "Loes Kockelmans"
+    },
+    "description": {
+      "nl": "Loes is frontend developer in het design system-team van de ANWB. Ze maakt deel uit van de accessibility-werkgroep, die zich inzet om de website van de ANWB voor iedereen toegankelijk te maken. Met haar ervaring in techniek en toegankelijkheid zoekt Loes naar de balans tussen functioneel, gebruiksvriendelijk en inclusief ontwerp."
+    },
+    "language": "nl"
+  },
+  "SiretTuula": {
+    "name": "Siret Tuula",
+    "organisation": "Estonia Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-SiretTuula.png",
+      "alt": "Siret Tuula"
+    },
+    "description": {
+      "nl": "Siret Tuula is product owner en manager van TEDI, het Estse overheids design system. Ze combineert haar rol in het beheren van het design system met haar creatieve bezigheden als muzikant en actrice. Velen zeggen dat Siret TEDI is – de drijvende kracht en grondlegger achter het project, die het heeft geleid vanaf de oprichting tot het succes dat het vandaag geniet.",
+      "en": "Siret Tuula is the product owner and manager of TEDI, the Estonian government design system. She balances her role managing the design system with her creative pursuits as a musician and actress. Many say Siret is TEDI – the driving force and founding mind behind the project, guiding it from its inception to the success it enjoys today."
+    },
+    "language": "en"
+  },
+  "KarolinKivisikk": {
+    "name": "Kärolin Kivisikk",
+    "organisation": "Estonia Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-KarolinKivisikk.png",
+      "alt": "Kärolin Kivisikk"
+    },
+    "description": {
+      "nl": "Kärolin Kivisikk is lead designer van TEDI, en een van de sleutelfiguren achter de oprichting en groei ervan. Onder haar leiding is TEDI uitgegroeid tot een tool die eenheid en kwaliteit brengt in de digitale publieke diensten van Estland. Kärolin richt zich op doordacht ontwerp en betrokkenheid van stakeholders als essentiële basis voor duurzame design",
+      "en": "Kärolin Kivisikk is the lead designer of the TEDI, and one of the key figures behind its creation and growth. Under her leadership, TEDI has evolved into a tool that brings unity and quality to Estonia's digital public services. Kärolin believes that well-thought-out design and the involvement of all stakeholders are essential foundations for sustainable design."
+    },
+    "language": "en"
+  },
+  "TonisTobre": {
+    "name": "Tõnis Tobre",
+    "organisation": "Estonia Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-TonisTobre.png",
+      "alt": "Tõnis Tobre"
+    },
+    "description": {
+      "nl": "Tõnis Tobre is technical project manager en architect van TEDI. Zijn werk heeft TEDI geholpen groeien van een interne styleguide naar een landelijk design system. Hij combineert strategische visie met praktische technische oplossingen om ervoor te zorgen dat het design system waarde levert aan developers, designers en de digitale overheid van Estland.",
+      "en": "Tõnis Tobre is the technical project manager and architect of TEDI. His work has helped TEDI grow from an internal style guide into a nationwide design system. He combines strategic vision with practical technical solutions to ensure the design system delivers value to developers, designers, and Estonia's entire digital government."
+    },
+    "language": "en"
+  }
+}

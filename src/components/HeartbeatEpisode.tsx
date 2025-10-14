@@ -8,6 +8,7 @@ interface Heartbeat {
   id: number;
   date: string;
   description: string[];
+  title: string;
   youtubeId: string;
 }
 
@@ -35,7 +36,7 @@ export const HeartbeatEpisode = ({ id, headingLevel }: HeartbeatEpisodeProps) =>
         ))}
       </MDXContent>
       {episode.youtubeId ? (
-        <VideoPlayer videoId={episode.youtubeId} />
+        <VideoPlayer id={episode.youtubeId} title={episode.title} />
       ) : (
         <Paragraph>
           Deze video is op aanvraag beschikbaar. Stuur ons een mailtje{' '}

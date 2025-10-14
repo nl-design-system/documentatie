@@ -30,6 +30,488 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 4.0.0
+
+19 september 2025
+
+'Side Navigation' community component van gemeente Den Haag is, inclusief design tokens, hernoemd van `sidenav` naar `side-navigation`.
+
+- Ga naar de [Side Navigation component in Figma](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1670-10258)
+- Selecteer de Figma component en hernoem deze van 'denhaag-sidenav' naar 'denhaag-side-navigation'.
+- Open Tokens Studio.
+- Ga naar de tokenset 'side-navigation'.
+- Pas de naam van de design tokens aan. Doe dit door met de rechtermuisknop op de tekst 'sidenav' te klikken en voor 'rename' te kiezen. Doe dit bij elke design token type. Wanneer er wordt gevraagd waar deze wijziging doorgevoerd moet worden kies je voor 'Page'.
+- Klik op 'Apply to page' zodat de wijziging op de hele pagina wordt doorgevoerd.
+- Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+## 3.2.0
+
+17 september 2025
+
+Community component 'Data Summary' van gemeente Den Haag is toegevoegd aan de bibliotheek.
+
+- [Bekijk Data Summary in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=24247-302).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "denhaag": {
+    "description-list": {
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.border-subtle}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{basis.text.font-family.default}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{basis.text.font-size.md}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{basis.text.font-weight.default}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{basis.text.line-height.md}"
+      },
+      "margin-block-end": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "[code-only]"
+      },
+      "margin-block-start": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "[code-only]"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "caption": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.heading.color}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.xl}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.heading.font-family}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.xl}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.heading.font-weight}"
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.xl}"
+        }
+      },
+      "detail": {
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.sm}"
+        }
+      },
+      "title": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.bold}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.sm}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        }
+      },
+      "lg": {
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "detail": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.lg}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.lg}"
+          }
+        },
+        "title": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.lg}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.lg}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## 3.1.0
+
+Design tokens voor 'margin' toegevoegd aan de design token documentatie in Figma.
+
+Om een completer beeld te geven van de beschikbare design tokens per component, zijn er design tokens voor 'margin' toegevoegd aan de design token documentatie in Figma.
+
+- [Bekijk de video 'Changelog: Margin tokens toevoegen'](https://youtu.be/V-kI6VAJj70) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Hieronder staat een lijst van componenten waaraan design tokens voor margin zijn toegevoegd. Bij de meeste componenten zijn twee design tokens voor margin toegevoegd. Hiervoor kun je onderstaande code gebruiken:
+
+```json
+"margin-block-end": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+"margin-block-start": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+```
+
+Er zijn enkele componenten waar vier design tokens voor margin zijn toegevoegd. Achter die componenten staat tussen haakjes (4). Hiervoor kun je onderstaande code gebruiken:
+
+```json
+"margin-block-end": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+"margin-block-start": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+"margin-inline-end": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+"margin-inline-start": {
+  "$type": "dimension",
+  "$value": "0px",
+  "$description": "[code-only]"
+},
+```
+
+Lijst van componenten die van margin tokens zijn voorzien. Elk component linkt naar een omgeving waar de design tokens te bekijken zijn.
+
+- [Accordion](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/css_css-component-accordion-design-tokens--docs)
+- [Action Group](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-action-group--design-tokens)
+- [Alert](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-alert--design-tokens)
+- [Blockquote](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-blockquote--design-tokens) (4)
+- [Codeblock](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-code-block--design-tokens) (4)
+- [Figure](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-figure--design-tokens)
+- [Form Field](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-form-field--design-tokens)
+- [Form Field Description](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-form-field-description--design-tokens)
+- [Form Field Error Message](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-form-field-error-message--design-tokens)
+- [Headings 1 tot 6](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-heading-1--design-tokens)
+- [Link List](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-link-list--design-tokens)
+- [Note (Spotlight Section)](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-spotlight-section--design-tokens)
+- [Page Number Navigation (Pagination)](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-pagination--design-tokens)
+- [Pre Heading](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-pre-heading--design-tokens)
+- [Radio Button](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-radio-button--design-tokens)
+- [Separator](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-separator--design-tokens)
+- [Side Navigation](https://github.com/nl-design-system/denhaag/blob/main/proprietary/tokens/src/components/denhaag/side-navigation.tokens.json) (4)
+- [Table](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-table--design-tokens)
+
+## 3.0.0
+
+`utrecht-icon` community component toegepast binnen enkele Utrecht componenten.
+
+De Icon component is later aan de Figma bibliotheek toegevoegd en is nu met terugwerkende kracht verwerkt in de Utrecht componenten die deze in de code gebruiken.
+
+**Let op!**  
+Door deze wijziging worden ‘property overrides’ waarbij een ander icoon is gekozen, teruggezet. Heb je in een prototype de Button of Link van Utrecht gebruikt en daar een specifiek icoon aan toegevoegd? Dan moet je dit na de update opnieuw instellen. Maak daarom eerst een back-up door in Figma een versie toe te voegen aan de Version History van het bestand, voordat je de bibliotheek-update accepteert.
+
+- [Bekijk de video 'Changelog: utrecht-icon hergebruiken in Utrecht componenten'](https://youtu.be/OaPkhJo3624) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+- Publiceer de Bibliotheek.
+- Accepteer de aanpassingen in de ToDo Bibliotheek.
+- Herstel de iconen (search, chevron-down) van de Page Header als je deze gebruikt voor je prototypes.
+- Publiceer de ToDo Bibliotheek.
+
+## 2.12.0
+
+11 september 2025
+
+Design token description voor Link component omgewisseld en juist gekoppeld.
+
+Klein foutje ontdekt voor de Link component. De description `[code-only]` was aan de verkeerde design token toegevoegd. Daarnaast waren nog niet alle descriptions aan de design token documentatie lijst gekoppeld.
+
+- [Bekijk de video 'Changelog: Link design token description'](https://youtu.be/4lgzujgxDeo) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 2.11.0
+
+10 september 2025
+
+Note (Spotlight Section) border-width gelijk getrokken met code.
+
+Community component Note (Spotlight Section) van Utrecht heeft wel design tokens voor border-width en border-color. Maar deze zijn niet specifiek voor 1 zijde. In Figma was dit wel zo opgezet. Vooralsnog trekken we dit gelijk door de Figma component meer in lijn te brengen met de huidige situatie in code.
+
+- [Bekijk de video 'Changelog: Note (Spotlight Section) border-width'](https://youtu.be/SHa1iBuTfYo) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Mocht je voor jouw organisatie wel aan 1 zijde een border willen plaatsen, maak dit dan kenbaar in de [GitHub Discussion voor Note](https://github.com/orgs/nl-design-system/discussions/407). In de tussentijd kun je een design token met de prefix van jouw organisatie toevoegen. Denk daarbij aan een design tokens zoals `voorbeeld.spotlight-section.border-inline-start-width` (linkerzijde) of `voorbeeld.spotlight-section.border-block-start-width` (bovenzijde).
+
+## 2.10.0
+
+8 september 2025
+
+Figma-property voor tekst op zoveel mogelijk plekken gelijkgetrokken.
+
+In Figma kun je componenten voor elkaar inwisselen via de 'Swap Instance' functionaliteit. Als de propertynaam voor tekst niet overeenkomt tussen twee componenten, springt deze terug naar de standaardtekst die meekomt vanuit de bibliotheek. Hierdoor kun je geschreven teksten in prototypes verliezen.
+
+Om dit te voorkomen willen we de naam van de property voor tekst zoveel mogelijk gelijk trekken. Hiervoor gebruiken we de term 'Text'. Zo blijven teksten netjes op hun plek bij het inwisselen van componenten. Daarnaast is er dan een eenduidige manier van naamgeving voor dit propertytype, wat eerder al is vastgelegd in de [Figma hygiene](/handboek/designer/figma-hygiene#341-volgorde-van-properties).
+
+- Open de NL Design System - Bibliotheek.
+- Pas de property naam aan naar 'Text' bij de volgende componenten:
+  - [Accordion](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1261-5040&t=18Ezmc7A328eD1BQ-4): 'Label' wordt 'Text'.
+  - [Blockquote](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1349-6557&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Button](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1140&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Code (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-2046&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Code Block (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-4532&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Data Badge (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=16178-12017&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Form Field Description](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=877-955&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Form Field Error Message](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=877-958&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Heading (Community component van Amsterdam)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=16162-20030&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Heading (alle zes Community componenten van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=838-652&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Link (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1060&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Login Link](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=15865-9915&t=18Ezmc7A328eD1BQ-4): 'Label' wordt 'Text'.
+  - [Mark (Candidate component)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=15527-33132&t=18Ezmc7A328eD1BQ-4): 'Mark' wordt 'Text'.
+  - [Mark (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13910-45039&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Number Badge (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4294&t=18Ezmc7A328eD1BQ-4): 'Value' wordt 'Text'.
+  - [Ordered List](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=825-913&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Paragraph (Community component van Utrecht. Inclusief 'Lead' en 'Small print')](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=839-688&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Pre-heading](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=17537-2847&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Skip Link (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2218-10179&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Text Input](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=926-1497&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Unordered List](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=828-935&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+- Publiceer de Bibliotheek.
+- Accepteer de aanpassingen in de ToDo Bibliotheek.
+- Publiceer de ToDo Bibliotheek.
+
+## 2.9.0
+
+4 september 2025
+
+Community component 'Image' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Image in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=23982-72).
+- Hieronder vind je de bijbehorende design token.
+
+```json
+{
+  "ams": {
+    "image": {
+      "aspect-ratio": {
+        "$type": "other",
+        "$value": "16 / 9",
+        "$description": "[code-only]"
+      }
+    }
+  }
+}
+```
+
+- Nadat je de bibliotheek hebt gepubliceerd, open je de ToDo Bibliotheek.
+- Ga naar de [Card as Link component in Figma](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=472-1420)
+- Selecteer de afbeelding van alle 4 de varianten.
+- Gebruik de 'Swap Instance' functionaliteit om 'todo-image' in te wisselen voor 'ams-image'.
+- Verwijder de pagina 'Image' in de ToDo Bibliotheek.
+- Publiceer de ToDo Bibliotheek.
+- Informeer afnemers van je bibliotheken dat ze vanaf nu de 'ams-image' kunnen gebruiken uit de algemene bibliotheek. Mocht het nodig zijn kunnen ook zij gebruik maken van de'Swap Instance' functionaliteit.
+
+## 2.8.0
+
+3 september 2025
+
+- 'Button Group' Community component (incl. design tokens) hernoemd naar 'Action Group'.
+  - Ga naar de [Action Group component in Figma](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=4626-10492)
+  - Verwijder de notitie naast de pagina titel.
+  - Selecteer de Figma component en hernoem deze van 'utrecht-button-group' naar 'utrecht-action-group'.
+  - Open Tokens Studio.
+  - Ga naar de tokenset 'action-group'.
+  - Pas de naam van de design tokens aan. Doe dit door met de rechtermuisknop op de tekst 'button-group' te klikken en voor 'rename' te kiezen. Doe dit bij 'Color' én 'Dimension'. Wanneer er wordt gevraagd waar deze wijziging doorgevoerd moet worden kies je voor 'Page'.
+  - Klik op 'Apply to page' zodat de wijziging op de hele pagina wordt doorgevoerd.
+  - Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+## 2.7.0
+
+1 september 2025
+
+- Design token `utrecht.link-list.font-weight` hernoemd naar `utrecht.link-list.link.font-weight` in Link List component.
+  - Ga naar de [Link List component in Figma](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13587-214136).
+  - Open Tokens Studio.
+  - Ga in de 'link-list' tokenset naar `utrecht.link-list.font-weight`.
+  - Wijzig de naam naar `utrecht.link-list.link.font-weight`.
+  - Kies in Tokens Studio voor 'Apply to page', zodat deze wijziging op deze pagina in Figma wordt doorgevoerd.
+  - Plaats design token `utrecht.link-list.link.font-weight` op de juiste positie binnen de lijst aan gedocumenteerde design tokens binnen het frame 'Tokens - Link List'.
+  - Plaats design token `utrecht.link-list.link.font-weight` op de juiste positie binnen de json. Hiervoor gebruik je de [JSON View binnen Tokens Studio](https://docs.tokens.studio/manage-tokens/token-sets/json-view).
+  - Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+## 2.6.0
+
+1 september 2025
+
+- Waarde van 'focus-outline-color' en 'box-shadow-color' omgekeerd.
+  - Bekijk de [Common Tokens voor Focus](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=22081-69415&t=7BhvAIQ7gQN7WtgN-4).
+  - Open Tokens Studio.
+  - Ga in de 'common' tokenset op zoek naar de focus kleuren.
+  - Wijzig de waarde van `basis.focus.outline-color` naar `#0b0c0c` of een donkere kleur naar keuze.
+  - Wijzig de waarde van `basis.focus.inverse.outline-color` naar `#ffffff` of een lichte kleur naar keuze.
+  - Kies in Tokens Studio voor 'Apply to document', zodat deze wijziging overal in Figma wordt doorgevoerd.
+  - Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+## 2.5.0
+
+27 augustus 2025
+
+- Ontbrekende design tokens toegevoegd aan Icon (Community) component.
+  - [Bekijk de video 'Changelog: Aanvullende design tokens icon component'](https://youtu.be/8toBRuYFoA0) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+- Je kunt onderstaande tekst gebruiken voor je Pull Request.
+
+```
+De volgende tokens zijn toegevoegd aan Icon (community) component:
+
+- `utrecht.icon.color`
+- `utrecht.icon.inset-block-start`
+- `utrecht.icon.baseline.inset-block-start`
+```
+
+## 2.4.0
+
+25 augustus 2025
+
+- Pressed state toegevoegd aan community component Button.
+  - [Bekijk de video 'Figma Changelog: Pressed state voor button'](https://youtu.be/9d6h_DxVDqs) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+  - Je kunt onderstaande tekst gebruiken voor je Pull Request.
+
+```
+De volgende tokens zijn toegevoegd aan Button component:
+
+- `utrecht.button.pressed.background-color`
+- `utrecht.button.pressed.border-color`
+- `utrecht.button.pressed.color`
+- `utrecht.button.primary-action.pressed.background-color`
+- `utrecht.button.primary-action.pressed.border-color`
+- `utrecht.button.primary-action.pressed.color`
+- `utrecht.button.secondary-action.pressed.background-color`
+- `utrecht.button.secondary-action.pressed.border-color`
+- `utrecht.button.secondary-action.pressed.color`
+- `utrecht.button.subtle.pressed.background-color`
+- `utrecht.button.subtle.pressed.border-color`
+- `utrecht.button.subtle.pressed.color`
+```
+
+## 2.3.0
+
+22 augustus 2025
+
+Verschillende bugfixes doorgevoerd.
+
+- Focus state verwijderd uit Link component.
+  - Verwijder de variant voor 'Focus' state bij de [Community component van Utrecht](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1060&t=4XR57VAGXKljzCQj-4).
+  - Verwijder de documentatie over de 'Focus' state in het ['Documentatie' frame](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=907-1967&t=4XR57VAGXKljzCQj-4).
+- 'Settings' icoon in lijn gebracht met de andere iconen (is niet langer een stroke).
+  - Selecteer de 'Shape' van het [settings icoon](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=340-6948&t=4XR57VAGXKljzCQj-4).
+  - Kies via het contextuele menu voor 'Outline stroke'.
+- 'Line-height' tokens toegepast om visuele voorbeelden van 'Icon' sizing.
+  - Open Tokens Studio.
+  - Controleer de 'Text' in [de visuele voorbeelden van 'Icon' sizing](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=21502-25752&t=4XR57VAGXKljzCQj-4). Je zult zien dat hier de basis-tokens voor 'font-size' al op zijn toegepast.
+  - Pas hier ook de bijbehorende basis-tokens voor 'line-height' op toe.
+- Design token `todo.form-field-label.column-gap` toegepast op juiste layer.
+  - Open Tokens Studio.
+  - Selecteer [de todo-form-field-label component in de ToDo Bibliotheek](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=3686-22774&t=Le2B7Ti0TXGIoaKy-4).
+  - Verwijder het design token `todo.form-field-label.column-gap` van deze layer.
+  - Publish de ToDo bibliotheek en accepteer de wijziging in de algemene bibliotheek.
+  - Controleer in de algemene bibliotheek of de token daadwerkelijk van de [todo-form-field-label](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=958-1936&t=96XiuT0Ei0qO9Pn3-4) is verwijderd.
+  - Selecteer vervolgens [de hogere layer genaamd 'label'](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=19018-25014&t=4XR57VAGXKljzCQj-4).
+  - Pas hier juist design token `todo.form-field-label.column-gap` toe via het contextuele menu van Tokens Studio: kies voor 'Spacing' en vervolgens 'Gap'.
+- 'Line-height' aangepast voor Number Badge component.
+  - Ga naar [de pagina van de Number Badge](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271) en pas de line-height van de Candidate en Community component aan van 150% naar 100%. Doe dit direct in Figma zelf bij de Typography settings.
+- Toepassing van design tokens op Focus-ring component aangepast.
+  - Bij het toepassen van design tokens op de focus-ring component zijn enkele fouten gemaakt.
+  - [Bekijk de video 'Bugfix: Focus-ring](https://youtu.be/ANSezxbNbFA) waarin wordt uitgelegd hoe je dit zelf kunt nalopen en verbeteren.
+  - Start met het aanpassen van [de focus-ring component die je vindt onder 'Helpers'](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=629-666&t=96XiuT0Ei0qO9Pn3-4). Publish de wijzging en accepteer deze in de ToDo bibliotheek.
+  - Loop daarna de volgende componenten per bibliotheek na en voer de verbeteringen daar door:
+
+NL Design System - Bibliotheek
+
+- Accordion \*
+- Breadcrumb Navigation
+- Button \*
+- Checkbox \*
+- Contact Timeline
+- File
+- Link
+- Link List
+- Login Link \*
+- Page Number Navigation \*
+- Radio Button
+- Select \*
+- Side Navigation
+- Skip Link
+- Task Card
+- Task Navigation
+- Text Area \*
+- Text Input \*
+
+NL Design System - ToDo Bibliotheek
+
+- Breadcrumb Navigation
+- Card as Link \*
+- Case Card
+- Icon Only Button \*
+- Listbox
+- Main Navigation
+- Page Number Navigation \*
+- Progress List \*
+- Switch \*
+- Toolbar Button \*
+
+Bij componenten aangeduid met een \* zal ook een design token voor border-radius toegepast moeten worden.
+
 ## 2.2.0
 
 20 augustus 2025

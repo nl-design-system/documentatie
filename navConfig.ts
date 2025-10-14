@@ -46,7 +46,7 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
-      docId: 'project',
+      docId: 'project/README',
       position: 'left',
       label: 'Project',
       className: 'utrecht-link',

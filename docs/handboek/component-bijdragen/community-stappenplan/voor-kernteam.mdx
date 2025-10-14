@@ -1,7 +1,7 @@
 ---
 title: Community stappenplan voor het kernteam · Component bijdragen · Handboek
 hide_title: true
-hide_table_of_contents: true
+hide_table_of_contents: false
 sidebar_label: Kernteam
 sidebar_position: 2
 pagination_label: Kernteam
@@ -20,7 +20,7 @@ keywords:
 # Stappenplan: Community door het kernteam
 
 Het kernteam volgt dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de ['Community' status](https://github.com/orgs/nl-design-system/projects/29) van het [Estafettemodel](https://www.nldesignsystem.nl/componenten/definition-of-done).
-Organisaties die een component bij willen dragen kunnen het [Stappenplan voor organisaties](/handboek/component-bijdragen/community-stappenplan-voor-organisaties) gebruiken.
+Organisaties die een component bij willen dragen kunnen het [Stappenplan voor organisaties](/handboek/estafettemodel/componenten/community-stappenplan/voor-organisaties/) gebruiken.
 
 Onderstaande stappen zijn van toepassing op 1 implementatie uit de community. Alle checks die je uitvoert gelden dus voor deze ene implementatie.
 
@@ -187,6 +187,7 @@ Doel: iedereen kan zien dat de component nu richting Candidate wil.
 
 - Verander het label 'Help Wanted' van het backlog issue naar 'Community'.
 - Verander het label 'Help Wanted' van de GitHub Discussion naar 'Community'.
+- Selecteer bij ‘Projects’ het volgende projectenbord: Components - 3 - Candidate.
 - Filter het [Candidate bord](https://github.com/orgs/nl-design-system/projects/32) op de component door te zoeken op `{naam-component}`.
 - Kopieer de URL na het filteren.
 - Voeg onderstaande tekst toe als comment aan de GitHub Discussion.
@@ -210,6 +211,8 @@ Zet het checkpoint 'Promotie' op 'Done' vóór de promotie heeft plaatsgevonden.
 
 Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component beschikbaar.
 
+- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
+- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
 - Maak een nieuwe branch aan en gebruik de volgende naam:
 
@@ -219,8 +222,6 @@ Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component be
 build/update-component-progress-{datum-of-versienummer}
 ```
 
-- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
-- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
 - Maak een commit en gebruik hierbij het volgende bericht:
 

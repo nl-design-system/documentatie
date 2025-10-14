@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Sinds 2020 is er in Luxemburg hard gewerkt aan drie testmethodes voor toegankelijkheid: web, mobiel en pdf. Deze praktische tests zorgen dat het makkelijker is om te checken op welke manier een website of webapplicatie aan de Europese Norm (EN 301 549) voor digitale toegankelijkheid voldoet. Deze tests zijn handig voor iedereen die met WCAG bezig is en worden nu zowel in Luxemburg als internationaal gebruikt als aanpak bij toegankelijkheidsaudits. Alain zal laten zien hoe deze testmethodes in de praktijk werken. Hij zal de belangrijkste voordelen belichten en uitleggen hoe je dit Open Source initiatief kan inzetten en eraan kunt bijdragen. \n\nEnglish: \nSince 2020, Luxembourg has been working hard on three accessibility testing methods: web, mobile, and PDF. These practical tests make it easier to check how a website or web application complies with the European Standard (EN 301 549) for digital accessibility. These tests are useful for anyone working with WCAG and are now used both in Luxembourg and internationally as an approach to accessibility audits. Alain will demonstrate how these testing methods work in practice. He will highlight the main benefits and explain how you can use and contribute to this open source initiative.
+UID:b4056558-8e30-4731-b2a3-b131f5dd53d3
+SUMMARY:290 Practical Tests for Assessing Accessibility - door Alain Vagner
+DTSTART;TZID=Europe/Amsterdam:20251027T150000
+DTEND;TZID=Europe/Amsterdam:20251027T154500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzU5MGNmNTYtNDkwYi00MGIxLWI0ZGYtN2Y3ZDRmMTZlM2Zk%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

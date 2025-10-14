@@ -7,11 +7,11 @@
   ],
   "private": true,
   "license": "EUPL-1.2",
-  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
+  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a",
   "engines": {
     "//": "Update @types/node to match the highest node version here",
     "node": ">=20 <=22",
-    "pnpm": "^9"
+    "pnpm": "^10.16.0"
   },
   "repository": {
     "type": "git+ssh",
@@ -125,7 +125,7 @@
     "@nl-design-system-unstable/documentation": "workspace:*",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "3.3.4",
-    "@nl-design-system/component-progress": "1.0.1-alpha.126",
+    "@nl-design-system/component-progress": "1.0.1-alpha.136",
     "@nl-design-system/eslint-config": "1.0.0",
     "@persoonlijke-regelingen-assistent/components-react": "1.0.0-alpha.152",
     "@playwright/test": "1.50.1",
@@ -153,8 +153,8 @@
     "npm-run-all": "4.1.5",
     "prettier": "3.5.1",
     "react-hook-form": "7.54.2",
+    "react-lite-youtube-embed": "2.5.6",
     "react-markdown": "10.1.0",
-    "react-player": "2.16.0",
     "react-syntax-highlighter": "15.6.1",
     "rimraf": "6.0.1",
     "stylelint": "16.14.1",

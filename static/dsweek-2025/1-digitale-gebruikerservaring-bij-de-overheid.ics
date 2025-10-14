@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Anton neemt ons mee in de verkenning van 1 digitale gebruikerservaring voor burgers en ondernemers. Hoe belangrijk is een consistente, herkenbare en betrouwbare interface daarbij, zoals het NL Design System? Aan de hand van voorbeelden zoals MijnZaken en toekomstige scenario’s laat hij zien hoe algemene informatie gecombineerd kan worden met persoonlijk relevante context en slimme suggesties. Interessant voor overheidsorganisaties, UX’ers en beslissers die vooruit willen kijken. \n\nEnglish: \nAnton takes us on a journey to explore a single user-friendly digital experience for citizens and entrepreneurs. How important is a consistent, recognizable, and reliable interface, such as the NL Design System? Using examples such as MijnZaken and future scenarios, he shows how general information can be combined with personally relevant context and smart suggestions. This is interesting for government organizations, UX professionals, and decision-makers who want to look ahead.
+UID:964fbb52-f51a-4948-893c-624b6a2afca0
+SUMMARY:1 digitale gebruikerservaring bij de overheid - door Anton Olivier
+DTSTART;TZID=Europe/Amsterdam:20251030T130000
+DTEND;TZID=Europe/Amsterdam:20251030T134500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzhjZGJmNjktMDRjYy00OTU2LThjNzItNTViMzc2NGI4MDZl%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

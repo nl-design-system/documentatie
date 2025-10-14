@@ -114,7 +114,7 @@ Dan blijven er twee opties over: na het verlaten van het veld of na het verzende
 De volgende richtlijnen leggen uit hoe dit op te zetten:
 
 - [Controleer op het juiste moment op fouten](/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding).
-- [Schrijf een duidelijke foutmelding](richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding).
+- [Schrijf een duidelijke foutmelding](/richtlijnen/formulieren/foutmeldingen#schrijf-een-duidelijke-foutmelding).
 - [Zet een samenvatting van de foutmeldingen boven het formulier](/richtlijnen/formulieren/foutmeldingen#zet-een-samenvatting-van-de-foutmeldingen-boven-het-formulier).
 
 ## Hoe geef ik aan of een vraag niet of niet goed is ingevuld?

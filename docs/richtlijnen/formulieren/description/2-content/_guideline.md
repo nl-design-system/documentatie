@@ -14,7 +14,7 @@ Opgemaakte tekst noemen we ['rich text'](https://github.com/orgs/nl-design-syste
 
 In de demo-video kun je zien en/of horen dat VoiceOver de opsomming uit de description overslaat als een formulierveld de toetsenbordfocus krijgt. NVDA in Firefox doet hetzelfde.
 
-<VideoPlayer videoId="ejiB-JSJzPE" />
+<VideoPlayer id="ejiB-JSJzPE" title="Demo video opsomming uit de description in VoiceOver"/>
 
 ## Description-beslisboom
 
