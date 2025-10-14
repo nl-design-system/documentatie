@@ -21,11 +21,11 @@ Wil je liever zelf aan de slag? Kopieer dan [deze voorbeeldpagina](https://raw.g
 
 De pagina is opgedeeld in de volgende componenten: [Skip Link](/skip-link), [Logo](/logo), [Page Header](/page-header), [Page Footer](/page-footer), [Breadcrumb Navigation](/breadcrumb-navigation), [Heading](/heading), [Paragraph](/paragraph), [Button](/button), [Unordered List](/unordered-list), [Navigation Bar](/navigation-bar) en [Link](/link).
 
-Een aantal van deze componenten is beschikbaar als [candidate component](/componenten/?status=CANDIDATE), een aantal als [community component](/componenten/?status=COMMUNITY) en een paar zijn nog niet beschikbaar. In dit voorbeeld wordt gekozen om de pagina zoveel mogelijk op te bouwen met de componenten die al bestaan. Zijn er meerdere Community implementaties? Kies dan degene die het best bij het gewenste design past.
+Een aantal van deze componenten is beschikbaar als [Candidate component](/componenten/?status=CANDIDATE), een aantal als [Community component](/componenten/?status=COMMUNITY) en een paar zijn nog niet beschikbaar. In dit voorbeeld wordt gekozen om de pagina zoveel mogelijk op te bouwen met de componenten die al bestaan. Zijn er meerdere Community implementaties? Kies dan degene die het best bij het gewenste design past.
 
 ## Zelf de pagina opbouwen
 
-### Stap 1: Basis‑skeleton
+### Stap 1: Lege HTML-pagina
 
 Maak een HTML bestand aan op je computer, bijvoorbeeld `example-page.html` en begin met een minimale, semantische opbouw:
 
@@ -34,7 +34,7 @@ Maak een HTML bestand aan op je computer, bijvoorbeeld `example-page.html` en be
 <html lang="nl" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Graffiti laten verwijderen van uw pand · Gemeente Voorbeeld</title>
+    <title><!-- paginatitel komt hier --> · Gemeente Voorbeeld</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -43,7 +43,7 @@ Maak een HTML bestand aan op je computer, bijvoorbeeld `example-page.html` en be
 </html>
 ```
 
-**Toelichting**: `lang="nl"` is essentieel voor schermlezers en voor juiste spraak/uitspraak. `dir` is hier `ltr` (left‑to‑right).
+**Toelichting**: `lang="nl"` is essentieel voor schermlezers en voor juiste uitspraak. `dir` is hier `ltr` (left‑to‑right).
 
 ### Stap 2: Gebruik een boilerplate als basis voor de pagina
 
@@ -70,7 +70,7 @@ Je pagina zal er dan als volgt uitzien:
 ### Stap 4: Importeer NL Design System voorbeeld thema
 
 :::info[tips]
-Mocht je vanuit de organistatie waarvoor je werkt al een huisstijl gebruiken, dan kun je die bij deze stap ook gelijk importeren en toepassen op de `body` van de pagina. Voor meer informatie kun je terecht op de pagina [Huisstijl vastleggen](/handboek/huisstijl-vastleggen/overzicht). Wil je simpelweg een proof-of-concept bouwen, dan kun je verder gaan met het voorbeeld thema.
+Mocht je vanuit de organistatie waarvoor je werkt al een huisstijl gebruiken, dan kun je die bij deze stap ook gelijk importeren en de class name toepassen op de `html` van de pagina. Voor meer informatie kun je terecht op de pagina [Huisstijl vastleggen](/handboek/huisstijl-vastleggen/overzicht). Wil je simpelweg een proof-of-concept bouwen, dan kun je verder gaan met `class="voorbeeld-theme"`.
 
 Het is daarnaast mogelijk om een generiek versienummer neer te zetten, of helemaal geen versienummer toe te voegen zodat je altijd de laatste versie hebt. Het is belangrijk om hierin een bewuste keuze te maken en eventuele gevolgen te accepteren. In de voorbeeldcode willen we graag de werking consistent houden, dus is er gekozen om een specifiek versienummer vast te leggen.
 :::
@@ -103,7 +103,7 @@ Het is mogelijk om de componenten uit de community met één import statement te
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/index.css" />
 ```
 
-Dit wordt niet aangeraden omdat je dan veel meer code dan nodig importeert. In plaats daarvan kiezen we in de onderstaande stappen ervoor om elk component individueel te importeren. Dat zorgt ervoor dat je alleen de CSS gebruikt die je nodig hebt.
+Dit wordt niet aangeraden omdat je dan veel meer code dan nodig importeert, en je pagina onnodig langzaam wordt voor gebruikers. In plaats daarvan kiezen we in de onderstaande stappen ervoor om elk component individueel te importeren. Dat zorgt ervoor dat je alleen de CSS gebruikt die je nodig hebt.
 
 Let goed op de volgorde waarop je de dependencies inlaad. De CSS wordt overschreven door het eerst-volgende CSS bestand. Het kan dus fouten voorkomen wanneer je de @nl-design-system-\* stylesheets als laatste importeert.
 
@@ -176,7 +176,7 @@ Om het design na te bouwen, doe je nog een paar aanpassingen en kom je op het vo
 </header>
 ```
 
-De page header importeer je als volgt:
+De Page Header importeer je als volgt:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/page-header/page-header.css" />
@@ -190,8 +190,8 @@ En om de styling van de links goed te krijgen importeer je de NL Design System C
 
 ##### Visually Hidden
 
-Amsterdam gebruikt `aria-labelled-by` met een verwijzing naar een ander element op de pagina om hulpsoftware meer informatie te geven over de landmarks op de pagina. Deze extra elementen hoeven niet zichtbaar te zijn. Daarom is het handig om de `visually-hidden` CSS van Amsterdam te importeren.
-De Amsterdam community heeft een component om a11y elementen 'onzichtbaar' te maken. Deze importeer je door middel van:
+Amsterdam gebruikt `aria-labelledby` met een verwijzing naar een ander element op de pagina om hulpsoftware meer informatie te geven over de landmarks op de pagina. Deze extra elementen hoeven niet zichtbaar te zijn. Daarom is het handig om de `visually-hidden` CSS van Amsterdam te importeren.
+Amsterdam heeft een component om elementen 'onzichtbaar' te maken, terwijl de inhoud wel beschikbaar blijft voor screenreader-gebruikers. Deze importeer je door middel van:
 
 ```html
 <link
@@ -294,7 +294,7 @@ Om dit te laten werken moet de breadcrumb natuurlijk wel geïmporteerd worden:
 
 #### Skip Link
 
-Zoals je kan zien is er een link op de pagina aanwezig met de tekst "Direct naar de hoofdinhoud". Deze link is bedoeld voor screenreaders om gelijk naar de hoofdinhoud te kunnen navigeren.
+Zoals je kan zien is er een link op de pagina aanwezig met de tekst "Direct naar de hoofdinhoud". Deze link is bedoeld voor onder meer toetsenbordgebruikers gelijk naar de hoofdinhoud te kunnen navigeren, en [de navigatie kunnen overslaan](/wcag/2.4.1/).
 
 Om de skip link te verbergen wanneer je geen screenreader gebruikt kun je de bijbehorende CSS importeren:
 
@@ -320,7 +320,7 @@ De pagina begint er mooi uit te zien. Je kan echter zien dat de tekst helemaal l
 
 #### Heading
 
-Gebruik semantische koppen met de NL Design System heading-styles.
+Gebruik de Heading elementen van HTML (`h1` tot en met `h6`) met de NL Design System heading CSS.
 
 Voorbeeld (zoals gebruikt op de pagina):
 
@@ -360,7 +360,7 @@ De pagina begint nu al veel meer te lijken op het design.
 #### Button
 
 Nu zijn de buttons aan de beurt om te stylen.
-Het zijn links met button-styling. Gebruik voor call-to-action de Utrecht button link, niet te verwarren met de utrecht link button.
+Het zijn links met button-styling. Gebruik voor call-to-action de Utrecht button link: de component voor links die eruit zien als een button.
 
 ```html
 <a class="utrecht-button-link utrecht-button--primary-action" href="#">Toestemming geven</a>
@@ -523,7 +523,7 @@ Gebruik een zichtbaar of visueel verborgen label en een `form` met `role="search
 
 ### Navigatie labelen
 
-Geef je primaire navigatie een naam met een kop of `aria-label`.
+Geef je navigatie een naam met een kop of `aria-labelledby`, zodat het ook duidelijk is als voor screenreadergebruikers wanneer er meerdere `<nav>` elementen zijn.
 
 ```html
 <nav aria-labelledby="primary-navigation">
@@ -536,7 +536,7 @@ Geef je primaire navigatie een naam met een kop of `aria-label`.
 
 Gelukkig sluiten de meeste componenten al wel perfect aan, maar aangezien niet elk component gestyled is volgens het ontwerp moet je wat kleine aanpassingen maken in de css om deze wel aan te laten sluiten.
 
-### Rich Text
+### Witruimte in Rich Text
 
 Zoals je kunt zien staat de tekst nog erg dicht op elkaar. Dit is in de toekomst op te lossen met een [Rich Text Content](/rich-text-content) component. Nu deze nog niet bestaat kun je dit als volgt oplossen:
 
