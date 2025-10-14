@@ -6,11 +6,9 @@ Met het NL Design System bouw je in een paar stappen een pagina met alleen HTML 
 
 Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Het ontwerp in Figma](https://www.figma.com/design/taAnsV55PVP0cmw18BnMDk/NL-Design-System---Templates---Voorbeeld?node-id=5550-611&t=VX2mUDweS42iaS1D-4)
 
-<div className="nlds-canvas">
-  <div className="utrecht-root" style={{zoom: '50%', width: '100%', height: '1024px'}}>
-    <div className="utrecht-body">
-      <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '1024px'}} src="/examples/zonder-front-end-framework.html"></iframe>
-    </div>
+<div className="utrecht-root" style={{zoom: '50%', width: '100%', height: '1024px'}}>
+  <div className="utrecht-body">
+    <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '1024px'}} src="/examples/zonder-front-end-framework.html"></iframe>
   </div>
 </div>
 <a href="/examples/zonder-front-end-framework.html" rel="noopener noreferrer">Bovenstaande voorbeeldpagina in volledig scherm bekijken</a>.
@@ -63,11 +61,9 @@ Het mooiste is om zelf de content toe te voegen, maar als je wilt kun je om tijd
 
 Je pagina zal er dan als volgt uitzien:
 
-<div className="nlds-canvas">
-  <div className="utrecht-root" style={{zoom: '50%', width: '100%', height: '1024px'}}>
-    <div className="utrecht-body">
-      <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '1024px'}} src="/examples/zonder-front-end-framework-html-only.html"></iframe>
-    </div>
+<div className="utrecht-root" style={{zoom: '50%', width: '100%', height: '1024px'}}>
+  <div className="utrecht-body">
+    <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '1024px'}} src="/examples/zonder-front-end-framework-html-only.html"></iframe>
   </div>
 </div>
 
