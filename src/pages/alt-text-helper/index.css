@@ -1,0 +1,9 @@
+/**
+ * CSS files with the .css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.utrecht-spotlight-section > .utrecht-heading-2 {
+  font-size: 1.5rem;
+  margin-block-start: 10px;
+}
