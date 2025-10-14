@@ -19,11 +19,11 @@ BEGIN:VEVENT
 ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
 DESCRIPTION:Claudia en Baukje nemen je mee in de vraag hoe je begrijpelijk uitlegt wat een algoritme doet en wat dat betekent voor burgers. Veel bestaande transparantie-instrumenten zijn nog onbekend of sluiten niet aan bij wat burgers willen weten. En juist op de momenten
  dat het ertoe doet, bijvoorbeeld tijdens het invullen van een formulier, in een portal of via een app, wordt vaak niets uitgelegd. \n\nEnglish: \nEClaudia and Baukje explore the question of how to explain what an algorithm does and what that means for citizens in an understandable way. Many existing transparency tools are still unknown or do not meet citizens' needs for information. And precisely at the
- moments when it matters most, for example, when filling out a form, in a portal, or via an app, nothing is often explained.  
+ moments when it matters most, for example, when filling out a form, in a portal, or via an app, nothing is often explained.
 UID:cdfe9e6a-0595-42a0-88b7-2a00dd2a1e06
 SUMMARY:Hoe maak je algoritmes begrijpelijk voor burgers? Onderzoek & beeldtaal - door Claudia Vermeulen en Baukje Faber
 DTSTART;TZID=Europe/Amsterdam:20251029T150000
-DTEND;TZID=Europe/Amsterdam:20251029T153000
+DTEND;TZID=Europe/Amsterdam:20251029T154500
 CLASS:PUBLIC
 PRIORITY:5
 DTSTAMP:20250929T104513Z
@@ -32,7 +32,6 @@ SEQUENCE:0
 LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmU2ODU0OTQtMjQ4NC00NmU4LTkzODEtZjgwZGFhODllMDZl%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
-X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-CDO-IMPORTANCE:1
 X-MICROSOFT-CDO-INSTTYPE:0
 X-MICROSOFT-DONOTFORWARDMEETING:FALSE

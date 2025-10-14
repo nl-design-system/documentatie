@@ -18,11 +18,11 @@ END:VTIMEZONE
 BEGIN:VEVENT
 ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
 DESCRIPTION:TEDI is het ontwerpsysteem voor de Estse overheidssector. Wat twee jaar geleden begon als een intern hulpmiddel, groeide in korte tijd uit tot een landelijk gebruikt systeem. TEDI verving het eerdere ontwerpsysteem VEERA uit 2018, dat geen componenten voor
- ontwikkelaars bood. In deze sessie deelt het kernteam van TEDI hun ervaringen: de successen én de uitdagingen. Ze laten zien hoe het systeem technisch is opgebouwd, hoe het team samenwerkt en hoe de ontwerpbibliotheek zich heeft ontwikkeld. \n\nEnglish: \nTEDI is the design system for the Estonian public sector. What started two years ago as an internal tool quickly grew into a system used nationwide. TEDI replaced the previous design system VEERA from 2018, which did not offer any components for developers. In this session, the TEDI core team will share their experiences: the successes and the challenges. They will show how the system is technically structured, how the team works together, and how the design library has developed.  
+ ontwikkelaars bood. In deze sessie deelt het kernteam van TEDI hun ervaringen: de successen én de uitdagingen. Ze laten zien hoe het systeem technisch is opgebouwd, hoe het team samenwerkt en hoe de ontwerpbibliotheek zich heeft ontwikkeld. \n\nEnglish: \nTEDI is the design system for the Estonian public sector. What started two years ago as an internal tool quickly grew into a system used nationwide. TEDI replaced the previous design system VEERA from 2018, which did not offer any components for developers. In this session, the TEDI core team will share their experiences: the successes and the challenges. They will show how the system is technically structured, how the team works together, and how the design library has developed.
 UID:93d0fc4a-889e-44a1-a7eb-9c490465f5f8
 SUMMARY:TEDI: het nieuwe ontwerpsysteem van de Estse overheid - door Siret Tuula, Kärolin Kivisikk en Tönis Tobre
 DTSTART;TZID=Europe/Amsterdam:20251027T130000
-DTEND;TZID=Europe/Amsterdam:20251027T133000
+DTEND;TZID=Europe/Amsterdam:20251027T134500
 CLASS:PUBLIC
 PRIORITY:5
 DTSTAMP:20250929T104513Z
@@ -31,7 +31,6 @@ SEQUENCE:0
 LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDJjMzYzMzUtMDgwYi00NWQxLWEwZjgtYmYwYzBkNTNkZjA0%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
-X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-CDO-IMPORTANCE:1
 X-MICROSOFT-CDO-INSTTYPE:0
 X-MICROSOFT-DONOTFORWARDMEETING:FALSE
