@@ -10,6 +10,16 @@ import { addTrailingSlashPlugin } from './rehype-trailing-slash';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const config: Config = {
+  plugins: [
+    function customElementsPlugin() {
+      return {
+        name: 'custom-elements-plugin',
+        getClientModules() {
+          return ['src/web-components/react-story.mjs'];
+        },
+      };
+    },
+  ],
   title: 'NL Design System',
   titleDelimiter: '·',
   tagline: 'Eén design system voor alle huisstijlen',
@@ -126,6 +136,7 @@ const config: Config = {
       },
     },
   },
+  clientModules: [],
 };
 
 export default config;
