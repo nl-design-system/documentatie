@@ -220,11 +220,11 @@ import { ComponentNaam } from "{react-component-library-package}";
 export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   {
     // De ID die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
-    storyId: "react-{prefix-organisatie}-{naam-component}--default",
-    component: "{prefix-organisatie}-{naam-component}",
+    storyId: 'react-{prefix-organisatie}-{naam-component}--default',
+    component: '{prefix-organisatie}-{naam-component}',
     // Optioneel: Kies een van de opties van STORY_GROUPS
     group: STORY_GROUPS[],
-    name: "{Organisatie Naam} {Component Naam}",
+    name: '{Organisatie Naam} {Component Naam}',
     // De render functie om de component als story te renderen met properties en children zoals nodig als voorbeeld.
     render: () => <></>,
   },
@@ -243,10 +243,11 @@ export const ORGANISATIE_PREFIX_COMPONENT_STORIES = [
   ...{
     // De ID die gebruikt wordt in de config.json van organisaties die de component willen gebruiken
     storyId:
-      "{type component, nu alleen nog react}-{organisatie prefix}-{component naam}--{story naam, bijvoorbeel default, naam-van-de-variant of naam-van-de-state}",
-    component: "{prefix-organisatie}-{naam-component}",
-    group: "Optioneel, gebruik hier een van de opties uit STORY_GROUPS",
-    name: "{Naam van de organisatie} {Naam van de component}",
+      '{type-component, nu alleen nog react}-{prefix-organisatie}-{naam-component}--{naam-story, bijvoorbeel default, naam-van-de-variant of naam-van-de-state}',
+    component: '{prefix-organisatie}-{naam-component}',
+    // Optioneel: Kies een van de opties van STORY_GROUPS
+    group: STORY_GROUPS[],
+    name: '{Organisatie Naam} {Component Naam}',
     // De render functie om de component als story te renderen met properties en children zoals nodig als voorbeeld.
     render: () => <></>,
   },
