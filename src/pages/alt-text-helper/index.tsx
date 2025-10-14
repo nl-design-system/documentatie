@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 // import { Link } from '@site/src/components/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -8,6 +10,8 @@ import { RadioGroup } from '@utrecht/radio-group-react';
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();
+
+  const [showText, setShowText] = useState('');
 
   // const decisionMap = [
   //   { group: 'image-type', answer: 'image-type-text', decision: 'image-type-text-help' },
@@ -82,27 +86,33 @@ const Home = () => {
 
   const onOptionChange = (e) => {
     const elt = e.target;
-    console.log(elt.id, elt.defaultValue);
-    //if (e.name === 'image-type') {
-    // document.querySelectorAll('input[type="radio"]').forEach((radio) => {
-    //   if (radio.name !== 'image-type') radio.checked = false;
-    // });
-    //}
-
-    //select what to show
-    // decisionMap.forEach((element) => {
-    //   if (document.getElementById(element.answer).checked) {
-    //     document.getElementById(element.decision).classList.remove('hidden');
-    //   } else {
-    //     document.getElementById(element.decision).classList.add('hidden');
-    //   }
-    // });
+    setShowText(elt.defaultValue);
   };
+
+  function HelperTextSection() {
+    const currentHelperText = () => {
+      const obj = HelperTexts.find((o) => o.id === showText);
+
+      console.log(obj);
+
+      return obj;
+    };
+    return (
+      currentHelperText() && (
+        <SpotlightSection id={currentHelperText().id} type="info">
+          <Heading2>{currentHelperText().heading}</Heading2>
+          <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText().paragraph }}></Paragraph>
+        </SpotlightSection>
+      )
+    );
+  }
 
   return (
     <Layout title={`${siteConfig.title} - alt-tekst helper`}>
       <PageContent>
         <Heading1>Alt-tekst helper</Heading1>
+
+        <Paragraph>bla: {showText}</Paragraph>
 
         <RadioGroup
           description="Kies de optie die het beste past:"
@@ -166,6 +176,7 @@ const Home = () => {
               defaultValue: 'text-complex-image-help',
             },
           ]}
+          onChange={onOptionChange}
         />
 
         <RadioGroup
@@ -185,12 +196,10 @@ const Home = () => {
               defaultValue: 'context-simple-image-help',
             },
           ]}
+          onChange={onOptionChange}
         />
 
-        <SpotlightSection id={HelperTexts[0].id} type="info">
-          <Heading2>{HelperTexts[0].heading}</Heading2>
-          <Paragraph dangerouslySetInnerHTML={{ __html: HelperTexts[0].paragraph }}></Paragraph>
-        </SpotlightSection>
+        <HelperTextSection />
       </PageContent>
     </Layout>
   );
