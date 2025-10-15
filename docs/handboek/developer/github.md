@@ -18,7 +18,7 @@ NL Design System is open source. Daarom is een open platform zoals GitHub de log
 
 ## Repositories
 
-Je vindt de projecten van NL Design System in [verschillende repositories op GitHub](https://github.com/orgs/nl-design-system/repositories). Elke repository heeft een eigen doel. Hieronder wordt een aantal repositories toegelicht.
+Je vindt de projecten van NL Design System in [verschillende repositories op GitHub](https://github.com/orgs/nl-design-system/repositories). Elke repository heeft een eigen doel. Hieronder vind je een toelichting op een aantal repositories.
 
 ### Example repository
 
@@ -26,7 +26,7 @@ De [example repository](https://github.com/nl-design-system/example) is een temp
 
 ### Candidate
 
-De [candidate repository](https://github.com/nl-design-system/candidate) wordt gebruikt voor het bouwen en onderhouden van de [Candidate components](/componenten/?status=CANDIDATE).
+De [candidate repository](https://github.com/nl-design-system/candidate) dient voor het bouwen en onderhouden van de [Candidate components](/componenten/?status=CANDIDATE).
 
 ### Community repositories
 
@@ -38,7 +38,7 @@ In de [Terraform-repository](https://github.com/nl-design-system/terraform) vind
 
 ### nldesignsystem.nl
 
-Deze website, inclusief de pagina die je nu leest, staat in de [documentatie-repository](https://github.com/nl-design-system/documentatie). Kom je een fout tegen op de website? Maak dan een Pull Request (PR) aan als je weet hoe. Je kunt je suggestie ook delen in onze [Slack-community](/slack). Bijdragen worden enorm gewaardeerd.
+Deze website, inclusief de pagina die je nu leest, staat in de [documentatie-repository](https://github.com/nl-design-system/documentatie). Kom je een fout tegen op de website? Maak dan een Pull Request (PR) aan als je weet hoe. Elke bijdrage is zeer welkom, je kunt je suggestie ook delen op [Slack-community](/slack).
 
 ### gebruikersonderzoeken.nl
 
@@ -71,13 +71,13 @@ Dankzij het versiebeheer van Git en GitHub kun je altijd oudere versies van comp
 
 ### Back-ups
 
-Dagelijks wordt er een back-up gemaakt van de GitHub-omgeving met de tool [Rewind](https://rewind.com/products/backups/github/).
+De GitHub-omgeving krijgt dagelijks een back-up met de tool [Rewind](https://rewind.com/products/backups/github/).
 
 :::warning[uitzondering op de back-up]
 Let op: GitHub Discussions en GitHub Projects vallen buiten deze back-up.
 :::
 
-## Alternatieven, zoals Gitlab
+## Alternatieven, zoals GitLab
 
 Kun je het NL Design System ook met GitLab gebruiken?
 Ja, dat kan zeker. Een project als het PRA Design System heeft dit bijvoorbeeld al gedaan.
