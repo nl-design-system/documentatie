@@ -3,8 +3,8 @@ title: GitHub · Developer · Handboek
 hide_title: true
 slug: /github
 hide_table_of_contents: false
-sidebar_label: Github
-pagination_label: Github
+sidebar_label: GitHub
+pagination_label: GitHub
 description: Waarom en hoe gebruikt NL Design System de tool Github?
 keywords:
   - GitHub Actions
