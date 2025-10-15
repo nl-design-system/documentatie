@@ -74,11 +74,15 @@ Mocht je vanuit de organistatie waarvoor je werkt al een huisstijl gebruiken, da
 :::
 
 Zie ook [het voorbeeld thema](/handboek/huisstijl/themas/voorbeeld-thema#voorbeeld-thema).
-Voeg de onderstaande class toe aan de body van je HTML pagina:
+Zet het thema bij voorkeur op de `html` root.
 
 ```html
-<body class="voorbeeld-theme"></body>
+<html lang="nl" dir="ltr" class="utrecht-root voorbeeld-theme"></html>
 ```
+
+:::info
+Wil je het thema toch beperken tot een deel van de pagina, dan kun je het op een wrapper-element toepassen. Voor de meeste pagina’s is toepassen op `html` de beste keuze.
+:::
 
 Importeer de CSS van het voorbeeld thema en de design tokens:
 
