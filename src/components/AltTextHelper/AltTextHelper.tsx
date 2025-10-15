@@ -9,8 +9,7 @@ const AltTextHelper = () => {
   const [imageTypeContext, setImageTypeContext] = useState(false);
 
   const onOptionChange = (e) => {
-    const val = e.target.value;
-    const name = e.target.name;
+    const { value, name } = e.target;
 
     if (name === 'context-type') {
       setImageTypeText(false);
