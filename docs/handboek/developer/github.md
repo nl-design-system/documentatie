@@ -8,7 +8,7 @@ pagination_label: GitHub
 description: Waarom en hoe gebruikt NL Design System de tool Github?
 keywords:
   - GitHub Actions
-  - Github
+  - GitHub
   - Deployment
 ---
 
