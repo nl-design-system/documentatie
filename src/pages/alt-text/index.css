@@ -2,19 +2,3 @@
  * CSS files with the .css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-.utrecht-form-fieldset__fieldset > .utrecht-form-fieldset__legend {
-  font-size: 1.5rem;
-}
-
-.utrecht-form-fieldset__fieldset > .utrecht-form-field-description {
-  margin-block-end: 10px;
-}
-
-.utrecht-form-fieldset__fieldset > .utrecht-form-field {
-  display: block;
-}
-
-.utrecht-spotlight-section > .utrecht-heading-3 {
-  margin-block-start: 10px;
-}

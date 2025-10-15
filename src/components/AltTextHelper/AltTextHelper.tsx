@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { RadioGroup } from '@utrecht/radio-group-react';
-import HelperText from './helper-text';
+import HelperText from './HelperText';
+import './AltTextHelper.css';
 
 const AltTextHelper = () => {
   const [helperTextId, setHelperTextId] = useState('');
