@@ -64,7 +64,7 @@ NL Design System verzorgt zelf geen hosting voor de websites van design systems.
 
 ## Documentatie en versiebeheer
 
-Documentatie en versiehistorie
+We slaan de inhoud van websites niet op in een CMS, maar die publiceren we vanuit Git.
 Richtlijnen, handleidingen en voorbeelden staan direct in de GitHub-repositories, meestal in de vorm van markdown-bestanden.
 
 Dankzij het versiebeheer van Git en GitHub kun je altijd oudere versies van componenten, richtlijnen en documentatie terugvinden.
