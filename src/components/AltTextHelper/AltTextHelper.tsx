@@ -11,23 +11,34 @@ const AltTextHelper = () => {
   const onOptionChange = (e) => {
     const { value, name } = e.target;
 
-    if (name === 'context-type') {
-      setImageTypeText(false);
-      setHelperTextId(value);
-    } else if (name === 'text-type') {
-      setImageTypeContext(false);
-      setHelperTextId(value);
-    } else {
-      setHelperTextId('');
-      setImageTypeText(false);
-      setImageTypeContext(false);
-      if (value === 'image-type-text-help') {
-        setImageTypeText(true);
-      } else if (value === 'image-type-context-help') {
-        setImageTypeContext(true);
-      } else {
+    switch (name) {
+      case 'context-type':
+        setImageTypeText(false);
         setHelperTextId(value);
-      }
+        break;
+
+      case 'text-type':
+        setImageTypeContext(false);
+        setHelperTextId(value);
+        break;
+
+      default:
+        setHelperTextId('');
+        setImageTypeText(false);
+        setImageTypeContext(false);
+
+        switch (value) {
+          case 'image-type-text-help':
+            setImageTypeText(true);
+            break;
+
+          case 'image-type-context-help':
+            setImageTypeContext(true);
+            break;
+
+          default:
+            setHelperTextId(value);
+        }
     }
   };
 

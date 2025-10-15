@@ -65,11 +65,13 @@ const currentHelperText = (id) => {
 };
 
 export default function HelperText(helperTextId): ReactElement | null {
-  if (currentHelperText(helperTextId.id)) {
+  const id = helperTextId.id;
+
+  if (currentHelperText(id)) {
     return (
       <SpotlightSection type="info" role="alert">
-        <Heading2>{currentHelperText(helperTextId.id).heading}</Heading2>
-        <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText(helperTextId.id).paragraph }}></Paragraph>
+        <Heading2>{currentHelperText(id).heading}</Heading2>
+        <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText(id).paragraph }}></Paragraph>
       </SpotlightSection>
     );
   }
