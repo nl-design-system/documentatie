@@ -1,10 +1,10 @@
-import { Heading2, Paragraph, SpotlightSection } from '@utrecht/component-library-react/dist/css-module';
+import { Heading3, Paragraph, SpotlightSection } from '@utrecht/component-library-react/dist/css-module';
 // import { Link } from '@site/src/components/Link';
 import type { ReactElement } from 'react';
 
-export default function HelperText(step): ReactElement | null {
+export default function HelperText(helperTextId): ReactElement | null {
   const currentHelperText = () => {
-    const text = Texts.find((o) => o.id === step.id);
+    const text = Texts.find((o) => o.id === helperTextId.id);
 
     return text;
   };
@@ -66,10 +66,10 @@ export default function HelperText(step): ReactElement | null {
     },
   ];
 
-  if (Texts.find((o) => o.id === step.id)) {
+  if (currentHelperText()) {
     return (
       <SpotlightSection type="info">
-        <Heading2>{currentHelperText().heading}</Heading2>
+        <Heading3>{currentHelperText().heading}</Heading3>
         <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText().paragraph }}></Paragraph>
       </SpotlightSection>
     );
