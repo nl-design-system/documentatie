@@ -447,6 +447,23 @@ aside button[title="Zijbalk inklappen"],
   --utrecht-button-border-radius: 0;
 }
 
+.ma-theme .utrecht-link--html-a:any-link:focus {
+  background-color: transparent;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+}
+
+.ma-theme .utrecht-link--html-a:any-link:focus-visible {
+  --_utrecht-link-state-color: var(--utrecht-link-focus-color);
+  background-color: var(--utrecht-link-focus-background-color, transparent);
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+}
+
+.ma-theme .utrecht-link--html-a:any-link:focus-visible:hover {
+  color: var(--utrecht-link-focus-color);
+}
+
 /* Override Docusaurus styles */
 #__docusaurus,
 .utrecht-page-layout {
