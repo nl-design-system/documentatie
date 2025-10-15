@@ -42,7 +42,7 @@ Deze website, inclusief de pagina die je nu leest, staat in de [documentatie-rep
 
 ### gebruikersonderzoeken.nl
 
-De [gebruikersonderzoeken repository](https://github.com/nl-design-system/gebruikersonderzoeken) bevat de broncode voor de website [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl). Op deze website vind je gebruikersonderzoek dat binnen de overheid is uitgevoerd. De site is herschreven en gebruikt nu componenten van het NL Design System.
+De [gebruikersonderzoeken repository](https://github.com/nl-design-system/gebruikersonderzoeken) bevat de broncode voor de website [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl). Op deze website vind je gebruikersonderzoek dat binnen de overheid is uitgevoerd. Omdat de website is gemaakt met Astro en NL Design System componenten, is het een interessante repository voor developers om eens in de code te kijken.
 
 ### Theming en design tokens
 
