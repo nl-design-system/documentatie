@@ -55,17 +55,27 @@ Zo kunnen gemeenten als Den Haag en Rotterdam de standaardarchitectuur gebruiken
 
 ## Storybook-integratie
 
-Storybook wordt gebruikt om de componentenbibliotheek te tonen en te documenteren met code en voorbeelden. De meeste repositories bevatten een link naar de bijbehorende Storybook, die wordt gehost [op Vercel](/vercel).
+Storybook wordt gebruikt om de componentenbibliotheek te tonen en te documenteren, compleet met code en voorbeelden. De meeste repositories bevatten een link naar de bijbehorende Storybook.
 
-## Licentie
+NL Design System verzorgt zelf geen hosting voor de websites van design systems. De community lost dit in de praktijk vaak op met de volgende oplossingen:
 
-- De code in de repositories valt onder de EUPL-licentie (European Union Public Licence) of een vergelijkbare open licentie.
-- Dankzij de open toegang kan iedereen de code inspecteren, hergebruiken en eraan bijdragen.
+- Voor de productie-omgeving wordt meestal GitHub Pages gebruikt.
+- Voor de testomgeving wordt vaak gebruikgemaakt van branch deployments, die gehost worden op [Vercel](/vercel).
 
 ## Documentatie en versiebeheer
 
-- Richtlijnen, handleidingen en voorbeelden worden bijgehouden in de GitHub-repositories zelf, bijvoorbeeld in markdown-bestanden.
-- Doordat Git en GitHub voor versiebeheer worden gebruikt, zijn alle wijzigingen in de documentatie en componenten altijd terug te vinden.
+Documentatie en versiehistorie
+Richtlijnen, handleidingen en voorbeelden staan direct in de GitHub-repositories, meestal in de vorm van markdown-bestanden.
+
+Dankzij het versiebeheer van Git en GitHub kun je altijd oudere versies van componenten, richtlijnen en documentatie terugvinden.
+
+### Back-ups
+
+Dagelijks wordt er een back-up gemaakt van de GitHub-omgeving met de tool [Rewind](https://rewind.com/products/backups/github/).
+
+:::warning[uitzondering op de back-up]
+Let op: GitHub Discussions en GitHub Projects vallen buiten deze back-up.
+:::
 
 ## Alternatieven, zoals Gitlab
 
