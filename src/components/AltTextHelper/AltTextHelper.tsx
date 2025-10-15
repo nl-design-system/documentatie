@@ -13,20 +13,20 @@ const AltTextHelper = () => {
 
     if (name === 'context-type') {
       setImageTypeText(false);
-      setHelperTextId(val);
+      setHelperTextId(value);
     } else if (name === 'text-type') {
       setImageTypeContext(false);
-      setHelperTextId(val);
+      setHelperTextId(value);
     } else {
       setHelperTextId('');
       setImageTypeText(false);
       setImageTypeContext(false);
-      if (val === 'image-type-text-help') {
+      if (value === 'image-type-text-help') {
         setImageTypeText(true);
-      } else if (val === 'image-type-context-help') {
+      } else if (value === 'image-type-context-help') {
         setImageTypeContext(true);
       } else {
-        setHelperTextId(val);
+        setHelperTextId(value);
       }
     }
   };

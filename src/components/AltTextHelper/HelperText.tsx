@@ -58,18 +58,18 @@ const Texts = [
   },
 ];
 
+const currentHelperText = (id) => {
+  const text = Texts.find((o) => o.id === id);
+
+  return text;
+};
+
 export default function HelperText(helperTextId): ReactElement | null {
-  const currentHelperText = () => {
-    const text = Texts.find((o) => o.id === helperTextId.id);
-
-    return text;
-  };
-
-  if (currentHelperText()) {
+  if (currentHelperText(helperTextId.id)) {
     return (
       <SpotlightSection type="info" role="alert">
-        <Heading2>{currentHelperText().heading}</Heading2>
-        <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText().paragraph }}></Paragraph>
+        <Heading2>{currentHelperText(helperTextId.id).heading}</Heading2>
+        <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText(helperTextId.id).paragraph }}></Paragraph>
       </SpotlightSection>
     );
   }
