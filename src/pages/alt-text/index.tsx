@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import { PageContent } from '@utrecht/component-library-react/dist/css-module';
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
 import './index.css';
-import AltTextHelper from './alt-text-helper';
+import AltTextHelper from '@site/src/components/AltTextHelper';
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();

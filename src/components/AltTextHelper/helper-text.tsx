@@ -68,7 +68,7 @@ export default function HelperText(helperTextId): ReactElement | null {
 
   if (currentHelperText()) {
     return (
-      <SpotlightSection type="info">
+      <SpotlightSection type="info" role="alert">
         <Heading3>{currentHelperText().heading}</Heading3>
         <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText().paragraph }}></Paragraph>
       </SpotlightSection>

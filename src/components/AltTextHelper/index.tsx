@@ -32,7 +32,7 @@ const AltTextHelper = () => {
   };
 
   return (
-    <>
+    <form>
       <RadioGroup
         description="Kies de optie die het beste past:"
         id="image-type-group"
@@ -123,7 +123,7 @@ const AltTextHelper = () => {
       )}
 
       <HelperText id={helperTextId} />
-    </>
+    </form>
   );
 };
 
