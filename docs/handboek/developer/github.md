@@ -51,8 +51,6 @@ De [`nl-design-system/themes` repository](<https://www.google.com/search?q=%5Bht
 - **Voor organisaties die een huisstijl publiceren:** Je kunt hier de design tokens van je huisstijl publiceren zonder dat je een volledige, eigen repository hoeft te onderhouden.
 - **Voor organisaties die componenten ontwikkelen:** Je kunt hier controleren hoe jouw component eruitziet met de huisstijlen van andere organisaties.
 
-Zo kunnen gemeenten als Den Haag en Rotterdam de standaardarchitectuur gebruiken, maar met hun eigen branding.
-
 ## Storybook-integratie
 
 Storybook wordt gebruikt om de componentenbibliotheek te tonen en te documenteren, compleet met code en voorbeelden. De meeste repositories bevatten een link naar de bijbehorende Storybook.
