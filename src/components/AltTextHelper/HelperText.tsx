@@ -1,4 +1,4 @@
-import { Heading3, Paragraph, SpotlightSection } from '@utrecht/component-library-react/dist/css-module';
+import { Heading2, Paragraph, SpotlightSection } from '@utrecht/component-library-react/dist/css-module';
 // import { Link } from '@site/src/components/Link';
 import type { ReactElement } from 'react';
 
@@ -69,7 +69,7 @@ export default function HelperText(helperTextId): ReactElement | null {
   if (currentHelperText()) {
     return (
       <SpotlightSection type="info" role="alert">
-        <Heading3>{currentHelperText().heading}</Heading3>
+        <Heading2>{currentHelperText().heading}</Heading2>
         <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText().paragraph }}></Paragraph>
       </SpotlightSection>
     );
