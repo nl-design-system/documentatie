@@ -27,7 +27,6 @@ keywords:
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
-import AltTextHelper from "@site/src/pages/alt-text/alt-text-helper";
 
 # Algemene richtlijnen
 
@@ -63,10 +62,6 @@ Wanneer je die afbeelding dan vervolgens op een pagina gebruikt, krijgt de afbee
 Artificial Intelligence (AI) kan enorm behulpzaam zijn voor blinden en slechtzienden. Er zijn apps en andere hulpmiddelen die een afbeelding kunnen scannen en een feitelijke beschrijving kunnen geven van de afbeelding. Daarmee worden veel mensen een stuk zelfstandiger, omdat ze niemand nodig hebben die even meekijkt.
 
 Wees wel voorzichtig met AI. Je kunt niet zomaar vertrouwen op een tekstalternatief dat AI voor je genereert. Het kan een goed startpunt zijn, maar AI is op dit moment nog niet zo slim als je zou willen. Er kunnen daardoor fouten staan in een tekstalternatief dat door AI is gegenereerd. Of er kan nadruk komen te liggen op de verkeerde elementen in een afbeelding. En soms is de beschrijving niet relevant in de context waarvoor jij de afbeelding had gekozen. Lees de teksten daarom altijd kritisch na en pas de tekst aan waar nodig.
-
-## Alt-tekst helper
-
-<AltTextHelper />
 
 ## Hoe te testen
 
