@@ -45,6 +45,7 @@
   --ifm-breadcrumb-item-background-active: transparent;
   --ifm-breadcrumb-padding-horizontal: 0;
   --ifm-breadcrumb-separator-size: 1.1ch;
+  --ifm-breadcrumb-border-radius: 0;
 
   /* Temporary styling for custom nlds components */
   --nlds-blog-post-footer-background-color: #f2ebe4;
@@ -96,6 +97,60 @@
   --utrecht-link-text-underline-offset: 4px !important;
 
   --ifm-footer-link-horizontal-spacing: 20px;
+
+  /* docsearch tokens */
+  --ma-docsearch-button-background-color: white;
+  --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
+  --ma-docsearch-button-border-radius: var(--basis-border-radius-md);
+  --ma-docsearch-button-font-family: var(--utrecht-button-font-family);
+  --ma-docsearch-button-hover-background-color: var(--utrecht-button-secondary-action-hover-background-color);
+  --ma-docsearch-button-hover-border-color: var(--utrecht-button-secondary-action-hover-border-color);
+  --ma-docsearch-button-hover-color: var(--utrecht-button-secondary-action-hover-color);
+  --ma-docsearch-button-key-background-color: var(--basis-color-accent-1-bg-default);
+  --ma-docsearch-button-key-color: inherit;
+  --ma-docsearch-button-key-hover-background-color: var(--basis-color-action-1-inverse-bg-default);
+  --ma-docsearch-button-key-hover-color: white;
+  --ma-docsearch-button-key-active-background-color: var(--basis-color-action-1-inverse-bg-default);
+  --ma-docsearch-button-key-active-color: white;
+  --ma-docsearch-button-key-focus-visible-background-color: black;
+  --ma-docsearch-button-key-focus-visible-color: white;
+  --ma-docsearch-button-padding-block-end: var(--basis-space-block-lg);
+  --ma-docsearch-button-padding-block-start: var(--basis-space-block-lg);
+  --ma-docsearch-button-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-docsearch-button-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-docsearch-modal-searchbox-background-color: var(--basis-color-default-bg-document);
+  --ma-docsearch-modal-border-color: var(--basis-color-default-border-subtle);
+  --ma-docsearch-modal-background-color: var(--basis-color-default-bg-subtle);
+  --ma-docsearch-modal-color: var(--basis-color-default-color-document);
+  --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
+  --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
+  --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
+
+  --docsearch-key-gradient: var(--ma-docsearch-button-key-background-color);
+}
+
+.navbar__brand:focus-visible {
+  background-color: transparent !important;
+}
+
+.breadcrumbs__link:focus-visible,
+.DocSearch-Trigger .DocSearch-Button:focus-visible,
+.menu__link:focus-visible,
+.menu__caret:focus-visible,
+.footer__link-item:focus-visible,
+*[aria-label="Ga naar hoofdinhoud"] a:focus-visible,
+.navbar__brand:focus-visible {
+  --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
+  --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
+  --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
+  box-shadow: var(--_ma-focus-ring-box-shadow);
+  outline-color: var(--basis-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+  background-color: var(--basis-focus-background-color);
+  color: var(--basis-focus-color);
 }
 
 /* HACK: Hackysnacky CSS that should be solved better in the chefs-kiss website */
@@ -212,6 +267,122 @@ p {
   padding-inline-start: 48px;
 }
 
+/* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
+.DocSearch {
+  --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
+  --docsearch-muted-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-logo-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-icon-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-highlight-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-hit-highlight-color: var(--ma-docsearch-modal-hit-background-color);
+  --docsearch-modal-background: var(--ma-docsearch-modal-background-color);
+  --docsearch-searchbox-focus-background: var(--ma-docsearch-modal-searchbox-background-color);
+  --docsearch-footer-backround: var(--ma-docsearch-modal-searchbox-background-color);
+  --docsearch-text-color: var(--ma-docsearch-modal-color);
+  --docsearch-searchbox-background: var(--ma-docsearch-button-background-color);
+  --docsearch-text-color: var(--utrecht-button-secondary-action-color);
+}
+
+.DocSearch kbd {
+  font-size: 100%;
+}
+
+.DocSearch-Input {
+  margin-inline: 1rem;
+}
+
+.DocSearch-Logo path,
+.DocSearch-Logo rect {
+  fill: currentColor !important;
+}
+
+.DocSearch-Form {
+  border-block-end-color: var(--ma-docsearch-modal-border-color);
+}
+
+.DocSearch-Divider {
+  border-color: var(--ma-docsearch-modal-border-color);
+}
+
+.DocSearch-Footer {
+  border-block-start-color: var(--ma-docsearch-modal-border-color);
+}
+
+.DocSearch-Hit[aria-selected="true"] .DocSearch-Hit-title,
+.DocSearch-Hit[aria-selected="true"] .DocSearch-Hit-path {
+  color: var(--ma-docsearch-modal-hit-color);
+}
+
+.DocSearch-Hit .DocSearch-Hit-title mark {
+  font-weight: var(--ma-docsearch-modal-hit-mark-font-weight);
+  color: inherit;
+  text-decoration: none;
+}
+
+.DocSearch-Back-Icon,
+.DocSearch-Search-Icon {
+  color: var(--docsearch-highlight-color);
+  stroke-width: 1.6;
+}
+
+.DocSearch-Trigger {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.DocSearch-Trigger .DocSearch-Button {
+  border-radius: var(--ma-docsearch-button-border-radius);
+  box-sizing: border-box;
+  height: unset;
+  padding-block-end: var(--ma-docsearch-button-padding-block-end);
+  padding-block-start: var(--ma-docsearch-button-padding-block-start);
+  padding-inline-end: var(--ma-docsearch-button-padding-inline-end);
+  padding-inline-start: var(--ma-docsearch-button-padding-inline-start);
+
+  &:hover {
+    --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-hover-background-color);
+    --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-hover-color);
+
+    background-color: var(--ma-docsearch-button-hover-background-color);
+    border-color: var(--ma-docsearch-button-hover-border-color);
+    color: var(--ma-docsearch-button-hover-border-color);
+  }
+}
+
+.DocSearch-Trigger .DocSearch-Button-Key {
+  --ma-focus-indicator-color: var(--ma-docsearch-button-key-focus-visible-color);
+
+  background-color: var(--ma-docsearch-button-key-background-color);
+  border: none;
+  box-shadow: none;
+  color: var(--ma-docsearch-button-key-color);
+}
+
+.DocSearch-Button-Key {
+  align-items: center;
+  background: var(--docsearch-key-background);
+  border: 0;
+  border: 1px solid color-mix(in srgb, var(--docsearch-subtle-color) 20%, transparent);
+  border-radius: 4px;
+  box-shadow: none !important;
+  color: var(--docsearch-key-color);
+  display: flex;
+  font-size: 14px;
+  height: 24px;
+  justify-content: center;
+  position: relative;
+  transition-duration: 0.1s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 24px;
+}
+
+.DocSearch-Button-Placeholder {
+  font-family: var(--ma-docsearch-button-font-family);
+  font-weight: 700;
+}
+
 /* Hide Docusaurus items */
 aside a[href="/"],
 aside button[title="Zijbalk inklappen"],
@@ -311,20 +482,6 @@ aside button[title="Zijbalk inklappen"],
 
 .theme-doc-sidebar-container {
   margin-top: 0 !important;
-}
-
-.DocSearch {
-  --docsearch-muted-color: #757575;
-  --docsearch-modal-width: 50em;
-}
-
-.DocSearch .DocSearch-Label {
-  font-size: 0.9em;
-  line-height: 1;
-}
-
-.DocSearch ul {
-  margin: auto 0;
 }
 
 .table-of-contents {
