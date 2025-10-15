@@ -193,8 +193,17 @@ En om de styling van de links goed te krijgen importeer je de NL Design System C
 
 ##### Visually Hidden
 
-Amsterdam gebruikt `aria-labelledby` met een verwijzing naar een ander element op de pagina om hulpsoftware meer informatie te geven over de landmarks op de pagina. Deze extra elementen hoeven niet zichtbaar te zijn. Daarom is het handig om de `visually-hidden` CSS van Amsterdam te importeren.
-Amsterdam heeft een component om elementen 'onzichtbaar' te maken, terwijl de inhoud wel beschikbaar blijft voor screenreader-gebruikers. Deze importeer je door middel van:
+Soms heb je tekst nodig die alleen voor een screenreader bedoeld is.
+Voorbeeld: Een website heeft verschillende secties, zoals 'Hoofdnavigatie', 'Hoofdinhoud' en 'Footer'. Voor een screenreader-gebruiker is het heel handig als deze secties (landmarks) een duidelijke naam hebben.
+Met het aria-labelledby attribuut kun je een sectie een naam geven door te verwijzen naar een titel op de pagina. Maar wat als je die titel niet zichtbaar wilt tonen, omdat het voor ziende gebruikers al duidelijk genoeg is?
+
+De Oplossing: visually-hidden
+Dit is precies waar de visually-hidden class voor dient.
+
+- Wat het doet: Het verbergt een element visueel, zodat het op het scherm niet te zien is.
+- Wat het niet doet: Het verwijdert het element niet. De inhoud blijft gewoon bestaan in de code en is daardoor nog steeds perfect leesbaar voor screenreaders.
+
+Amsterdam heeft een component om elementen 'onzichtbaar' te maken. Deze importeer je door middel van:
 
 ```html
 <link
