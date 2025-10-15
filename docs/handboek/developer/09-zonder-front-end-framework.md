@@ -287,7 +287,7 @@ De Amsterdam community heeft een Breadcrumb Navigation component dat lijkt op he
 Voeg de breadcrumbs component toe:
 
 ```html
-<nav class="ams-breadcrumb" aria-label="Breadcrumb">
+<nav class="ams-breadcrumb" aria-label="kruimelpad">
   <ol role="list" class="ams-breadcrumb__list">
     <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Home</a></li>
     <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Meldingen</a></li>
