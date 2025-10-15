@@ -80,7 +80,7 @@ Let op: GitHub Discussions en GitHub Projects vallen buiten deze back-up.
 ## Alternatieven, zoals GitLab
 
 Kun je het NL Design System ook met GitLab gebruiken?
-Ja, dat kan zeker. Een project als het PRA Design System heeft dit bijvoorbeeld al gedaan.
+Ja, dat kan zeker. Een project als het [PRA Design System](https://gitlab.com/discipl/PRA/pra-design-system) heeft dit bijvoorbeeld al gedaan.
 
 De community gebruikt momenteel vooral GitHub Actions. Hierdoor is er geen kant-en-klare implementatie beschikbaar voor GitLab CI Pipelines. Je staat er echter niet alleen voor.
 
