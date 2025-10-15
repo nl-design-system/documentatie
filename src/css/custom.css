@@ -46,7 +46,6 @@
   --ifm-breadcrumb-padding-horizontal: 0;
   --ifm-breadcrumb-separator-size: 1.1ch;
   --ifm-breadcrumb-border-radius: 0;
-
   /* Temporary styling for custom nlds components */
   --nlds-blog-post-footer-background-color: #f2ebe4;
   --nlds-navbar-link-active-border-color: white;
@@ -139,7 +138,10 @@
 .menu__caret:focus-visible,
 .footer__link-item:focus-visible,
 *[aria-label="Ga naar hoofdinhoud"] a:focus-visible,
-.navbar__brand:focus-visible {
+.navbar__brand:focus-visible,
+.clean-btn:focus-visible,
+.navbar-sidebar__back:focus-visible {
+  --ifm-color-emphasis-600: var(--basis-focus-color);
   --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
   --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
   --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
@@ -226,6 +228,25 @@ p {
 
 .navbar-sidebar {
   --ifm-menu-color: var(--ma-navigation-bar-item-color);
+}
+
+.navbar-sidebar__brand button {
+  --ifm-color-emphasis-600: white;
+
+  border-color: white;
+  border-width: var(--utrecht-button-secondary-action-border-width);
+  border-style: solid;
+  border-radius: var(--utrecht-button-border-radius);
+  padding-block-end: var(--utrecht-button-padding-block-end);
+  padding-block-start: var(--utrecht-button-padding-block-start);
+  padding-inline-end: var(--utrecht-button-padding-inline-end);
+  padding-inline-start: var(--utrecht-button-padding-inline-start);
+}
+
+.navbar-sidebar__brand button:hover {
+  --ifm-color-emphasis-600: var(--utrecht-button-secondary-action-hover-color);
+  background-color: var(--utrecht-button-secondary-action-hover-background-color);
+  color: var(--utrecht-button-secondary-action-hover-color);
 }
 
 .navbar-sidebar__back {
