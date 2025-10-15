@@ -20,7 +20,7 @@ NL Design System is open source. Daarom is een open platform zoals GitHub de log
 
 Je vindt de projecten van NL Design System in [verschillende repositories op GitHub](https://github.com/orgs/nl-design-system/repositories). Elke repository heeft een eigen doel. Hieronder vind je een toelichting op een aantal repositories.
 
-### Example repository
+### Example: de template repository
 
 De [example repository](https://github.com/nl-design-system/example) is een template waarmee je een Storybook-omgeving bouwt voor je eigen communityproject. Veel bestaande projecten gebruiken dit template als basis.
 
