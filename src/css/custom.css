@@ -476,10 +476,12 @@ aside button[title="Zijbalk inklappen"],
 
 .footer {
   width: 100%;
+  margin-block-start: 20px;
 }
 
 .footer .container {
-  margin-inline-start: 20px;
+  margin: 0;
+  padding-inline-start: 20px;
 }
 
 .footer__link-separator {
