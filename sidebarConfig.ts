@@ -245,13 +245,8 @@ const sidebars: SidebarsConfig = {
       label: 'Community',
       collapsible: false,
       className: 'sidebar__main-category',
-      link: {
-        type: 'generated-index',
-        title: 'Community',
-        slug: 'community',
-        keywords: ['Community', 'overzicht'],
-      },
       items: [
+        { type: 'doc', id: 'community/README' },
         { type: 'doc', id: 'community/sluit-je-aan' },
         { type: 'doc', id: 'community/wie-doet-mee' },
         {

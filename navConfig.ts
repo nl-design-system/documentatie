@@ -38,7 +38,7 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
-      docId: 'community',
+      docId: 'community/README',
       position: 'left',
       label: 'Community',
       className: 'utrecht-link utrecht-link--html-a ma-navigation-bar-item',
