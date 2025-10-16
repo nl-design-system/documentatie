@@ -6,51 +6,55 @@ import './AltTextHelper.css';
 const imageTypeOptions = [
   {
     id: 'image-type-text',
-    label: 'De afbeelding bevat zichtbare tekst',
+    label:
+      'De afbeelding bestaat hoofdzakelijk uit tekst die bedoeld is om gelezen te worden, zoals bij banners, slogans of afbeeldingen van flyers.',
     value: 'image-type-text-help',
   },
   {
-    id: 'image-type-functional',
-    label: 'De afbeelding is een link of knop',
-    value: 'image-type-functional-help',
-  },
-  {
     id: 'image-type-context',
-    label: 'De afbeelding ondersteunt de inhoud van de pagina',
+    label:
+      'De afbeelding helpt om de tekst op de pagina beter te begrijpen, zoals een grafiek of een illustratie bij een stappenplan',
     value: 'image-type-context-help',
   },
   {
     id: 'image-type-decorative',
-    label: 'De afbeelding is alleen decoratief',
+    label:
+      'De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien, zoals een sfeerbeeld zonder betekenis ',
     value: 'image-type-decorative-help',
+  },
+  {
+    id: 'image-type-functional',
+    label: 'De afbeelding wordt gebruikt als een link of knop',
+    value: 'image-type-functional-help',
   },
 ];
 
 const textTypeOptions = [
+  {
+    id: 'text-complex-image',
+    label: 'Het gaat om een grafiek, tabel of andere complexe informatie',
+    value: 'text-complex-image-help',
+  },
+  {
+    id: 'text-has-function',
+    label: 'De tekst heeft een functionele rol, zoals bij een icoon dat “Download PDF” of “Let op” aanduidt',
+    value: 'text-has-function-help',
+  },
+  {
+    id: 'text-visual-effect',
+    label:
+      'De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis, zoals een watermerk of tekst in een screenshot',
+    value: 'text-visual-effect-help',
+  },
   {
     id: 'text-near-image',
     label: 'Dezelfde tekst staat ook naast of vlak bij de afbeelding',
     value: 'text-near-image-help',
   },
   {
-    id: 'text-visual-effect',
-    label: 'De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis',
-    value: 'text-visual-effect-help',
-  },
-  {
     id: 'text-only-image',
     label: 'De tekst staat nergens anders op de pagina',
     value: 'text-only-image-help',
-  },
-  {
-    id: 'text-has-function',
-    label: 'De tekst heeft een functionele rol, zoals bij een icoon',
-    value: 'text-has-function-help',
-  },
-  {
-    id: 'text-complex-image',
-    label: 'Het gaat om een grafiek, tabel of andere complexe informatie',
-    value: 'text-complex-image-help',
   },
 ];
 

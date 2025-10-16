@@ -12,8 +12,6 @@ interface HelperTextProps {
 }
 
 export default function HelperText({ helperTextId }: HelperTextProps) {
-  console.log(helperTextId);
-
   if (currentHelperText(helperTextId)) {
     return (
       <SpotlightSection type="info" role="alert">

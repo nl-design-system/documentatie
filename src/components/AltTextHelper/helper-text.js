@@ -13,7 +13,7 @@ export const Texts = [
   },
   {
     id: 'text-visual-effect-help',
-    heading: 'Als de tekst in de afbeelding alleen voor het oog is en geen betekenis heeft op de pagina',
+    heading: 'Als de tekst in de afbeelding niets toevoegt aan de boodschap',
     paragraph: `Dan is er geen alternatieve tekst nodig. Laat het veld voor alternatieve tekst leeg.`,
   },
   {
