@@ -344,6 +344,22 @@ De pagina begint er mooi uit te zien. Je kan echter zien dat de tekst helemaal l
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0.1.1/dist/index.css" />
 ```
 
+##### Waar plaats je de Page Body classnames?
+
+Zet de Page Body CSS classes op een wrapper rondom de hoofdinhoud, niet op `body` of op `<main>`. Gebruik:
+
+```html
+<div class="utrecht-page-body">
+  <div class="utrecht-page-body__content">
+    <main id="main">…</main>
+  </div>
+  <!-- optioneel: extra zij‑navigatie/aside buiten de content wrapper -->
+  <!-- <aside>…</aside> -->
+</div>
+```
+
+Waarom op deze manier? De wrapper zorgt voor consistente maximale breedte, horizontale padding en responsieve layout, terwijl `<main>` semantiek en navigatie‑landmarks levert.
+
 #### Heading
 
 Gebruik de Heading elementen van HTML (`h1` tot en met `h6`) met de NL Design System heading CSS.
