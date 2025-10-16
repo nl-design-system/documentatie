@@ -1,4 +1,4 @@
-/*! For license information please see main.f09d44c5.js.LICENSE.txt */
+/*! For license information please see main.d82fe39e.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -16743,7 +16743,7 @@
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'favicon.ico',
+    favicon: 'favicon.svg',
     trailingSlash: !0,
     organizationName: 'nl-design-system',
     projectName: 'documentatie',

@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nldesignsystem.nl/blog"/>
     <subtitle>NL Design System Blog</subtitle>
-    <icon>https://nldesignsystem.nl/favicon.ico</icon>
+    <icon>https://nldesignsystem.nl/favicon.svg</icon>
     <entry>
         <title type="html"><![CDATA[De toegankelijke naam van een link op een logo in de header]]></title>
         <id>https://nldesignsystem.nl/blog/toegankelijke-naam-link-logo-header</id>
