@@ -23,93 +23,61 @@ import { Paragraph } from "@utrecht/component-library-react";
   Het Estafettemodel is een door NL Design System ontwikkelde methodiek die samenwerken aan Open Source makkelijk maakt.
 </Paragraph>
 
-Hierbij wordt toegewerkt naar standaardisatie waar ruimte blijft voor innovatie.
+:::tip In het kort
+
+- **Doel**: samenwerken zonder elkaar te vertragen, met ruimte voor innovatie.
+- **Hoe**: componenten doorlopen fases van Community (klaar voor gebruik) naar Hall of Fame (gegarandeerde kwaliteit).
+- **Voordeel**: teams kunnen direct aan de slag zonder te hoeven wachten.
+  :::
+
+## Waarom het estafettemodel?
+
+Net als bij een estafetteloop geeft elke organisatie het stokje door. Een gemeente test een component, een provincie verbetert het, en een ministerie maakt het toegankelijker. Zo ontstaan componenten die in de praktijk werken.
+
+Zonder dit model zou elke organisatie moeten wachten tot het kernteam een component volledig ontwikkeld en goedgekeurd heeft. Dat vertraagt projecten en beperkt innovatie. Met het estafettemodel kan elke organisatie direct starten met wat beschikbaar is, en vervolgens bijdragen aan verbetering.
+
+Het estafettemodel maakt het mogelijk dat organisaties componenten ontwikkelen en delen zonder op het kernteam te hoeven wachten. In de Community fase is er alle ruimte voor innovatie en kunnen organisaties direct met elkaar samenwerken. Componenten die breed bruikbaar blijken en aan alle kwaliteitseisen voldoen, kunnen stap voor stap naar de Hall of Fame status. Daar krijgen ze garanties op toegankelijkheid, gebruiksvriendelijkheid en stabiliteit.
+
+Zo wordt toegewerkt naar standaardisatie waar ruimte blijft voor innovatie.
 
 <StatusVisual />
 
-Elke status heeft zijn eigen doelen en voor elke toevoeging aan het design system hebben we een Definition of Done die valideert of we de doelen van een status hebben gehaald. Hieronder beschrijven we deze per status.
+## Hoe componenten door het Estafettemodel gaan
 
-## Help Wanted
+Componenten hoeven niet alle fases te doorlopen. Een component kan in de Community fase blijven als het goed werkt voor de organisaties die het gebruiken. De volgende stappen zijn vrijwillig:
 
-Klaar om van de backlog opgepakt te worden door de community.
+1. **Help Wanted → Community**: Zodra een organisatie het component bouwt volgens NL Design System architectuur
+2. **Community → Candidate**: Als meerdere organisaties het component hergebruiken en het kernteam ziet dat het breed inzetbaar is
+3. **Candidate → Hall of Fame**: Na succesvolle toegankelijkheidsaudit en bewijs van hergebruik in productie bij minimaal 2 verschillende organisaties
+
+Hergebruik is essentieel! Een component kan alleen naar Candidate of Hall of Fame als het daadwerkelijk door meerdere organisaties wordt gebruikt. Dit bewijst dat het component breed bruikbaar is en niet alleen voor één specifieke situatie werkt.
+
+De community en betrokken organisaties bepalen samen met het kernteam wanneer een component klaar is voor de volgende fase. Dit gebeurt op basis van de [Definition of Done](/handboek/estafettemodel/componenten/definition-of-done) per fase.
+
+## Wat is Help Wanted?
 
 Bestaat nog niet, maar de rationale is duidelijk, elke organisatie die hem nodig heeft kan het onderdeel ontwikkelen volgens NL Design System architectuur.
 
-### Doelen
+[Bekijk alle Help Wanted componenten](/componenten/?status=HELP_WANTED) | [Lees het Help Wanted stappenplan](/handboek/component-bijdragen/help-wanted-stappenplan)
 
-- Teams aan elkaar koppelen die hetzelfde willen.
-- In een vroeg stadium acceptatiecriteria vastleggen met kennis uit de community en het kernteam.
-- Nieuwe ideeën kunnen meegenomen worden door de community wanneer zij gebruikersonderzoek doen.
-- Bewijs verzamelen dat een onderdeel door meerdere organisaties en producten gebruikt kan worden.
-- Zeker stellen dat een onderdeel aan de toegankelijkheidseisen kan voldoen en gebruiksvriendelijk kan zijn. Anders zal het als "Discouraged" aangemerkt worden.
-
-[Bekijk alle Help Wanted componenten](/componenten/?status=HELP_WANTED)
-
-## Community
-
-Door de community gebouwd volgens NL Design System richtlijnen.
+## Wat is Community?
 
 Bestaat in de community, op één of meer plekken en voldoet aan de checklist tot en met "Community".
 
-### Doelen
+**Tip**: In de Community fase hebben componenten een organisatie prefix (bijvoorbeeld `utrecht-button` of `denhaag-card`). Dit maakt duidelijk wie het component onderhoudt en maakt het makkelijk om verschillende versies naast elkaar te gebruiken. Houd deze prefix, ook als andere organisaties het component hergebruiken - dit voorkomt verwarring en maakt de herkomst traceerbaar.
 
-- Teams kunnen met vertrouwen een onderdeel van elkaar gebruiken.
-- Teams kunnen zelfstandig aan de slag, kernteam vormt geen bottleneck.
-- Teams kunnen concurrerende versies hebben van hetzelfde onderdeel.
-- Validatie dat een onderdeel door meerdere organisaties en producten gebruikt wordt.
-- Teams kunnen op elkaars onderdeel doorontwikkelen zodat de overlap duidelijk wordt voor doorontwikkeling naar "Candidate".
-- Innovatie op bestaande NL Design System "Candidate" of "Hall of Fame" mogelijk door "Community" uitbreiding op het bestaande onderdeel.
+[Bekijk alle Community componenten](/componenten/?status=COMMUNITY) | [Lees het Community stappenplan](/handboek/component-bijdragen/community-stappenplan)
 
-[Bekijk alle Community componenten](/componenten/?status=COMMUNITY)
+## Wat is Candidate?
 
-## Candidate
+Voorstel voor een Hall of Fame onderdeel, maar input en documentatie worden nog verzameld.
 
-Voorstel voor een hall-of-fame onderdeel, maar input en documentatie worden nog verzameld.
+**Tip**: Help mee om te bepalen of de component klaar is voor de Hall of Fame door de Community component te vervangen door de Candidate implementatie en het kernteam te laten weten of er nog iets mist.
 
-Voldoet aan de checklist tot en met "Candidate". Het kernteam verwacht dat het uiteindelijk een "Hall of Fame" status krijgt. We verwachten dat er nog wijzigingen kunnen zijn. Het onderdeel moet nog goed worden getest en stabiel worden gemaakt.
+[Bekijk alle Candidate componenten](/componenten/?status=CANDIDATE) | [Lees het Candidate stappenplan](/handboek/component-bijdragen/candidate-stappenplan)
 
-### Doelen
-
-- Teams kunnen met vertrouwen het onderdeel van NL Design System gebruiken.
-- Gedeeld ownership tussen kernteam en meerdere andere teams.
-- Voorstel voor een onderdeel zonder controversiële delen. Verschillende ideeën in de community teruggebracht tot één gemene deler.
-- Controversiële delen met "Community" status kunnen in de community blijven bestaan of worden aangepast naar een aanvulling op het nieuwe "Candidate" onderdeel.
-- Zichtbaarheid geven tijdens "request for comments" periode. Zo kunnen essentiële aanvullingen en aanpassingen getest worden voordat het onderdeel volledig stabiel moet zijn.
-- Bruikbaar voor meeste huisstijlen in de publieke sector.
-- Naamgeving in lijn met conventies van bestaande NL Design System "Candidate" en "Hall of Fame" onderdelen.
-- Robuust maken. Onderdeel kan in verschillende omgevingen ingezet worden en heeft een duidelijke beschrijving wanneer het van toepassing is.
-- Onderdeel is behoorlijk stabiel en we verwachten dat er vanaf nu nog weinig veranderingen nodig zijn.
-- Best effort op toegankelijkheid. Specialisten uit het kernteam hebben het onderdeel gevalideerd en eventuele documentatie en verbeteringen zijn toegevoegd.
-- Voor componenten: Samenwerking tussen developers en designers is mogelijk gemaakt.
-
-[Bekijk alle Candidate componenten](/componenten/?status=CANDIDATE)
-
-## Hall of Fame
-
-Stabiel onderdeel met garanties voor herbruikbaarheid, toegankelijkheid en stabiliteit.
+## Wat is Hall of Fame?
 
 Is bewezen door gebruik in productie bij ten minste twee verschillende organisaties. Het onderdeel is daarmee in gebruik getest, zowel door gebruikers van het design system als door eindgebruikers. Het onderdeel heeft een toegankelijkheidsaudit succesvol doorlopen. Updates worden vanaf nu voorzien van duidelijke changelogs en semantische versies die breaking changes goed communiceren.
 
-### Doelen
-
-- Teams kunnen met garanties het onderdeel van NL Design System gebruiken.
-- Goed gedocumenteerd.
-- Veilig om vaak te updaten.
-- Goede versionering.
-- Grondig getest.
-- Makkelijk in gebruik.
-- Garantie op toegankelijkheid.
-- Garantie op bruikbaarheid.
-- Voor componenten zijn automatische tests beschikbaar om regressies te voorkomen.
-- Richtlijnen zijn onderbouwd met referenties naar gebruikersonderzoek en toegankelijkheidsaudits.
-
-[Bekijk alle Hall of Fame componenten](/componenten/?status=HALL_OF_FAME)
-
-## Discouraged
-
-Op basis van gebruikersonderzoek of toegankelijkheids richtlijnen is dit onderdeel af te raden. Het zal dus niet opgenomen worden in een van de NL Design System estafette statussen. Indien mogelijk is een alternatief aangewezen.
-
-### Doelen
-
-- Voorkomen dat een onderdeel opgenomen wordt in NL Design System waarvan we al weten dat het niet bijdraagt aan inclusieve dienstverlening.
-- Documenteren om mensen te informeren en waarschuwen voor een ongebruiksvriendelijk en ontoegankelijk onderdeel.
+[Bekijk alle Hall of Fame componenten](/componenten/?status=HALL_OF_FAME) | [Lees het Hall of Fame stappenplan](/handboek/component-bijdragen/hall-of-fame-stappenplan)
