@@ -1,0 +1,344 @@
+---
+title: Selectiefase · Candidate · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Selectiefase
+sidebar_position: 3
+pagination_label: Candidate Selectiefase
+description: Gedetailleerde stappen voor de Selectiefase van Candidate componenten
+slug: /handboek/component-bijdragen/candidate/selectiefase
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - candidate
+  - selectie
+---
+
+{/* @license CC0-1.0 */}
+
+# Selectiefase
+
+Een component wordt pas door het kernteam beschikbaar gemaakt als Candidate component wanneer deze aan een aantal voorwaarden voldoet. Deze voorwaarden vormen de selectiefase van de component.
+
+## Achterliggende doelen van de selectiefase
+
+- We willen dat de community niet complex werk aan het kernteam uitbesteed, maar eerst zelf door de zure appel bijt.
+- We willen dat er waar nodig pragmatische compromissen worden gesloten door de community, zodat de lat voor het kernteam niet onrealistisch hoog komt te liggen voor de eerste versie van een community component.
+- We willen dat componenten in een "natuurlijke volgorde" zich aandienen bij het kernteam. De community zou als eerste feature request misschien wel de Date Picker component hebben, terwijl ze zelf de Date Picker lang zouden uitstellen omdat de complexiteit hoog is.
+
+:::tip Fun fact
+Een component kan ook zó belangrijk zijn voor verbetering van toegankelijkheid dat de prioriteit alleen al hierdoor enorm omhoog gaat, zónder dat alle andere selectie checks verplicht zijn. Dit noemen we de "fast track" en zorgt ervoor dat we alleen deze check uit de selectiefase nodig hebben.
+:::
+
+## Er is tenminste 1 Community implementatie
+
+**Doel**: Het kernteam gaat pas aan de slag met een component als het zijn nut bewezen heeft in de Community.
+
+**Hoe kun je dit bijvoorbeeld doen?**
+
+Kijk of de component al het Community niveau van het Estafettemodel heeft bereikt. Dit zie je doordat de component door de Help Wanted en Community stappen is gekomen en als Community component op de website van NL Design System beschikbaar is.
+
+**Besluitpunt**: We kunnen hier besluiten om componenten pas toe te voegen aan het volgende bord wanneer een component een vorige status heeft behaald. Zo kun je makkelijk zien of een component er aan toe is. We moeten dan ook even dubbelchecken of dat goed gaat met de component-progress en de website.
+
+**🚩 Checkpoint**: Community status
+
+## Component implementatie is goed instelbaar voor verschillende huisstijlen
+
+**Doel**: We selecteren een Community component die aantoonbaar geschikt is voor hergebruik in verschillende huisstijlen.
+
+### Acties
+
+#### 1. Kijk of er tenminste 1 Community implementatie is
+
+De component moet gebruikt zijn door 2 huisstijlen die qua ontwerpkeuzes van elkaar verschillen. Bijvoorbeeld een vriendelijkere huisstijl met afgeronde hoeken, een vrolijke met veel kleuren of een zakelijk met simpele kleuren en een meer hoekige uitstraling.
+
+**Hoe kun je dit bijvoorbeeld doen?**
+
+Begin in de GitHub Discussion van de component, want daar kun je een voorbeeld van huisstijlen vinden die vaak gebruikt zijn met NL Design System. Bijvoorbeeld Utrecht, Rotterdam, Amsterdam, Rijkshuisstijl en Groningen.
+
+Kijk vervolgens in de themes repository of die thema's daar met de community component getoond worden.
+
+Vergelijk de Story waarbij de huisstijl wordt gebruikt met de screenshot in de GitHub Discussion of eventueel met de huisstijl zoals deze op de hoofdwebsite van de organisatie staat (utrecht.nl, gemeente.groningen.nl).
+
+#### 2. Documenteer bevindingen in de GitHub Discussion
+
+**Is de component succesvol ingezet door 2 of meer organisaties met verschillende huisstijlen?**
+
+Zet dan de volgende tekst neer:
+
+```md
+## Candidate selectieproces: Is de component al ingesteld voor meerdere huisstijlen?
+
+Het kernteam heeft gekeken of {naam-component} van {naam-organisatie} al geschikt is om richting Hall of Fame te gaan. Hiervoor willen we dat de component succesvol in tenminste 2 verschillende huisstijlen is ingezet.
+
+We hebben gekeken naar de huisstijl {naam-organisatie-1}, {naam-organisatie-2} en {naam-organisatie-...} en we zijn tot de volgende conclusie gekomen:
+
+🎉 Jazeker! Met jullie hulp hebben we genoeg informatie verzameld om een goed instelbaar component als Candidate beschikbaar te gaan maken.
+```
+
+**Is de component nog niet in genoeg verschillende huisstijlen beschikbaar?**
+
+Zet dan deze tekst neer:
+
+```md
+## Candidate selectieproces: Is de component al ingesteld voor meerdere huisstijlen?
+
+Het kernteam heeft gekeken of {naam-component} van {naam-organisatie} al geschikt is om richting Hall of Fame te gaan. Hiervoor willen we dat de component succesvol in tenminste 2 verschillende huisstijlen is ingezet.
+
+We hebben gekeken naar de huisstijl {naam-organisatie-1}, {naam-organisatie-2} en {naam-organisatie-...} en we zijn tot de volgende conclusie gekomen:
+
+⌛️ Nog niet! We hebben jullie hulp nodig om de component voor meer huisstijlen in te zetten. Alleen dan krijgen we genoeg informatie om de component naar een volgend Estafettemodel niveau te brengen.
+
+📣 Help je mee? Laat ons in deze Discussion weten of deze component ook werkt voor jouw huisstijl. Dat kan door jouw huisstijl in te stellen voor de component met design tokens in Figma óf in code.
+```
+
+**Heeft de component nog onvoldoende design tokens om de geteste huisstijlen in te stellen?**
+
+Maak dan een GitHub issue aan bij de betreffende Community repository en documenteer dit in de GitHub Discussion:
+
+```md
+## Candidate selectieproces: Is de component al ingesteld voor meerdere huisstijlen?
+
+Het kernteam heeft gekeken of {naam-component} van {naam-organisatie} al geschikt is om richting Hall of Fame te gaan. Hiervoor willen we dat de component succesvol in tenminste 2 verschillende huisstijlen is ingezet.
+
+We hebben gekeken naar de huisstijl {naam-organisatie-1}, {naam-organisatie-2} en {naam-organisatie-...} en we zijn tot de volgende conclusie gekomen:
+
+⌛️ Nog niet! We hebben een [GitHub issue]({url naar issue}) bij {naam-organisatie} aangemaakt zodat de component voor meer huisstijlen ingezet kan worden. Alleen dan krijgen we genoeg informatie om de component naar een volgend Estafettemodel niveau te brengen.
+
+📣 Help je mee? Laat ons in deze Discussion weten of deze component ook werkt voor jouw huisstijl. Dat kan door jouw huisstijl in te stellen voor de component met design tokens in Figma óf in code.
+```
+
+**🚩 Checkpoint**: Huisstijl instelbaar
+
+## Component implementatie is goed bruikbaar in diverse projecten
+
+**Doel**: Community component is door meerdere projecten gebruikt, waarvan tenminste 1 in productie en mensen zijn er blij mee.
+
+### Acties
+
+#### 1. Onderzoek of een component goed bruikbaar is voor diverse projecten
+
+Dit kan 1 implementatie zijn die door meerdere projecten hergebruikt wordt in prototypes, projecten die nog in ontwikkeling zijn en tenminste 1 in productie. Of het kan zijn dat de component in meerdere community design systems is ontwikkeld. Waarbij de verschillende implementaties heel veel gemeen hebben en gebruikt zijn in prototypes, projecten die nog in ontwikkeling zijn tenminste 1 in productie.
+
+**Hoe kun je dit bijvoorbeeld doen?**
+
+Door de Community in Slack, tijdens Open Hours en Open Dagen te vragen of dit component door iemand wordt ingezet en of ze er blij mee zijn.
+
+Door de developer- en design-relations kernteamleden te vragen over welke componenten veel vragen worden gesteld. Bijvoorbeeld door Lux over de design tokens van een Utrecht component, of door een leverancier die een Amsterdam grid component probeert in te zetten.
+
+Door in de Community Sprints te kijken of de component wordt gebruikt in templates.
+
+#### 2. Maak screenshots van de component in het wild
+
+Maak screenshots van de component zoals je tegenkomt. Zodat we weten hoe de component in context wordt gebruikt.
+
+Stop deze screenshots in het verzamel Canvas. Deze screenshots vormen straks de basis voor de stories die we toe willen voegen als test van de component.
+
+#### 3. Documenteer de bevindingen in de GitHub Discussion
+
+**Is de component succesvol ingezet en weten we ervan?**
+
+Zet dan de volgende tekst er neer:
+
+```md
+## Candidate selectieproces: Is de component al ingezet in meerdere projecten?
+
+Omdat de {naam-component} van {naam-organisatie} geschikt is voor verschillende huisstijlen heeft het kernteam ook gekeken of hij al gebruikt wordt in productie, prototypes en templates.
+Deze informatie is nodig om de component een stap verder te brengen in het Candidate proces.
+
+We hebben hiervoor op Slack gekeken en in Open Hours gevraagd wie de component succesvol heeft ingezet en we zijn tot de volgende conclusie gekomen:
+
+🎉 De component wordt onder andere gebruikt door:
+
+- {naam-organisatie} gebruikt het in {url-project}
+- {naam-organsiatie-2} gebruikt het in {url-project-2}
+- ...
+```
+
+**Is de component naar ons beste weten nog niet genoeg ingezet?**
+
+Zet dan deze tekst neer:
+
+```md
+## Candidate selectieproces: Is de component al ingezet in meerdere projecten?
+
+Omdat de {naam-component} van {naam-organisatie} geschikt is voor verschillende huisstijlen heeft het kernteam ook gekeken of hij al gebruikt wordt in productie, prototype en templates.
+Deze informatie is nodig om de component een stap verder te brengen in het Candidate proces.
+
+We hebben hiervoor op Slack gekeken en in Open Hours gevraagd wie de component succesvol heeft ingezet en we zijn tot de volgende conclusie gekomen:
+
+⌛️ Nog niet! We hebben jullie hulp nodig om te ontdekken waar de component allemaal wordt gebruikt en wie er blij mee zijn.
+
+📣 Help je mee? Laat ons in deze Discussion weten of je de component toevallig hebt gebruikt of in het wild bent tegengekomen.
+```
+
+**🚩 Checkpoint**: Component gebruikt
+
+## Component is getest in een WCAG-EM toegankelijkheidsaudit
+
+**Doel**: We willen bij een Candidate implementatie zorgen dat bekende toegankelijkheidsproblemen worden voorkomen. Bijvoorbeeld door betere code, controle van design tokens, of door begeleidende documentatie in een Candidate versie.
+
+### Achterliggende doelen
+
+- Zorgen dat de community zelf al geconfronteerd is met tegenstrijdige wensen tussen bijvoorbeeld design en toegankelijkheid, bijvoorbeeld met de contrasteisen van de Placeholder van een Text Input.
+- Zorgen dat een component niet alleen in isolatie is getest (in bijvoorbeeld Storybook), maar ook in een context die representatief is voor de rest van de community.
+
+### Acties
+
+#### 1. Bekijk toegankelijkheidsrapporten van websites waar het component in gebruikt wordt
+
+**Vraag de community om input**
+
+Kijk in de Community Sprints, op Slack en vraag de community om input.
+
+**Hoe kun je dit bijvoorbeeld doen?**
+
+Door checkpoint 'Selectie - component gebruikt' weten we dat de component gebruikt is in productie. Kijk op de website die bij dat checkpoint wordt genoemd of er al een toegankelijkheidsverklaring op staat. Als dat zo is, mooi! Kijk dan of deze recent is, want we willen wel graag weten of dit component dan is gebruikt.
+
+**Kijk of er ook een technisch rapport beschikbaar is**
+
+Weet je of de component is gebruikt in een applicatie waarvoor een techniek audit is gedaan omdat het van een leverancier is die de techniek aan meerdere organisaties verkoopt? (Denk bijvoorbeeld aan Open Formulieren) Dan is het handig om ook de techniek audit toe te voegen in deze stap. Daarvan weten we namelijk zeker dat er veel uitgebreider is getest. Je kunt hiervoor deze website gebruiken: https://www.digitoegankelijk.nl/ondersteuning/algemene-onderzoeken-platforms-en-apps
+
+**Optioneel**: Twijfel je, wil je meer informatie, of staat hij er niet op? Vraag dan aan deze organisatie of ze je meer kunnen vertellen over de uitkomsten of plannen van een WCAG-audit.
+
+#### 2. Uitkomsten uit een WCAG-EM audit
+
+Er wordt opgeschreven welke eventuele problemen in de geteste implementaties voorkomen. Dat doen we in de GitHub Discussion, zodat extra input van de community hier later ook nog kan worden toegevoegd.
+
+**Waren er audits beschikbaar?**
+
+Zet dan dit bericht in de GitHub Discussion:
+
+```md
+## Candidate selectieproces: Is de component al meegenomen in een WCAG-EM audit?
+
+Om de {naam-component} van {naam-organisatie} als een toegankelijk Candidate component beschikbaar te maken is het handig als we weten of de Community implementaties al helemaal toegankelijk kunnen worden ingezet.
+
+We hebben hiervoor gekeken of er een toegankelijkheidsverklaring beschikbaar was voor de projecten die in productie worden gebruikt. En:
+
+🎉 Ja! We hebben de uitkomsten van de volgende WCAG-EM audit (1 of meerdere) kunnen vinden:
+
+- {naam-organisatie} gebruikt het in {url-audit}
+- ...
+
+### Notities voor toegankelijkheid
+
+📝 We hebben wat dingen gevonden die in een Candidate implementatie beter kunnen. Omdat we die niet willen vergeten hebben we hier de notities gemaakt:
+... notities
+```
+
+_(Niet verplicht, haal deze sectie weg als er geen problemen zijn gevonden)_
+
+**Geen audits beschikbaar in de community?**
+
+Overleg met de Product Manager. Wordt besloten dat we niet op de Community willen wachten, dan laten we dit component in 1 of meer productie implementaties toetsen door een Toegankelijkheidsspecialist uit het kernteam. Dat doen we dan volgens de WCAG-EM aanpak, maar zonder de hele website of pagina te testen.
+
+Plaats het volgende bericht als hij niet gevonden is, maar we hebben het zelf kunnen doen:
+
+```md
+## Candidate selectieproces: Is de component al meegenomen in een WCAG-EM audit?
+
+Om de {naam-component} van {naam-organisatie} als een toegankelijk Candidate component beschikbaar te maken is het handig als we weten of de Community implementaties al helemaal toegankelijk kunnen worden ingezet.
+
+We hebben hiervoor gekeken of er een toegankelijkheidsverklaring beschikbaar was voor de projecten die in productie worden gebruikt. En:
+
+Nee, die hebben we niet gevonden. Maar goed nieuws, we hebben hem wel zelf kunnen bekijken in productie.
+
+We hebben naar de volgende pagina's gekeken:
+
+- {naam-organisatie} gebruikt het op {url-pagina}
+- ...
+
+### Notities voor toegankelijkheid
+
+📝 We hebben wat dingen gevonden die in een Candidate implementatie beter kunnen. Omdat we die niet willen vergeten hebben we hier de notities gemaakt:
+... notities
+```
+
+_(Niet verplicht, haal deze sectie weg als er geen problemen zijn gevonden)_
+
+**Waren er geen audits beschikbaar en gaan we het zelf nu nog niet testen?**
+
+Zet dan dit andere bericht in de GitHub Discussion:
+
+```md
+## Candidate selectieproces: Is de component al meegenomen in een WCAG-EM audit?
+
+Om de {naam-component} van {naam-organisatie} als een toegankelijk Candidate component beschikbaar te maken is het handig als we weten of de Community implementaties al helemaal toegankelijk kunnen worden ingezet.
+
+We hebben hiervoor gekeken of er een toegankelijkheidsverklaring beschikbaar was voor de projecten die in productie worden gebruikt. En:
+
+⌛️ Nog niet! We hebben jullie hulp nodig om te ontdekken waar de component al in een WCAG-EM audit is meegenomen.
+
+📣 Weet jij van een audit die is gedaan voor een project die dit component gebruikt? Laat het ons dan in deze GitHub Discussion of op Slack weten.
+```
+
+**🚩 Checkpoint**: WCAG input
+
+## Fast track: Component is dringend nodig voor toegankelijkheid
+
+**Doel**: Soms wil je niet door bureaucratische hoepeltjes springen om de wereld beter te maken.
+
+### Achterliggende doelen
+
+- Sommige componenten zijn niet per se nodig voor de onderliggende implementatie, maar meer voor de begeleidende documentatie. Bijvoorbeeld: de Paragraph of de Separator component.
+- Sommige componenten zijn zo ingewikkeld, dat de community niet de tijd of specialistische kennis in huis heeft om een component te ontwikkelen die aan de eisen voldoet, terwijl er wel grote behoefte aan is. Een voorbeeld waarvoor dit het geval zou kunnen zijn: de Rich Text Editor component.
+
+### Acties
+
+Kijk of de component zulke ingewikkelde eisen aan toegankelijkheid heeft dat Community implementaties in de praktijk vaak niet lukken. En besluit of het kernteam wel een Hall of Fame versie van de component zou kunnen maken voor een significante positieve impact.
+
+**Hoe kun je dit bijvoorbeeld doen?**
+
+Vraag tijdens een weekly of dit component een fast-track verdiend:
+
+"Hey peeps, zijn jullie het eens dat dit component vaak ontoegankelijk wordt ingezet en verwachten jullie dat wij {component-naam} wél toegankelijk kunnen maken? Bijvoorbeeld door betere code, controle van design tokens, of door begeleidende documentatie in een Candidate versie?"
+
+Als het antwoord daarop 'ja' is, door tenminste 1 persoon van elke discipline én de Product Manager, dan kun je deze checken en de selectiefase afronden 💨
+
+**Let op**: Je plaatst géén berichtje op Slack om de selectie te delen!
+
+:::tip Bonus voor de OCD-ers onder ons
+Je mag ook de andere selectie checks zetten, maar kies dan de "Fast-tracked" optie voor de checks die niet gedaan zijn.
+:::
+
+**🚩 Checkpoint**: Fast track
+
+## Laat de Community weten dat de component is geselecteerd
+
+**Doel**: Zorgen dat de Community tijd neemt om ongedocumenteerde problemen vast te leggen in de Backlog.
+
+**Let op**: Voor 🔥 fast tracked componenten doe je dit niet!
+
+### Acties
+
+Doe dat in Slack met het volgende bericht:
+
+```md
+⚒️ We gaan aan de slag om {component-naam} Candidate te maken.
+Het kernteam gaat hiervoor komende tijd kijken in de [GitHub Discussion van {component-naam}]({discussion-url}), en in de Community implementaties die beschikbaar zijn.
+
+Is er iets wat we vooral niet moeten vergeten? Laat ons dan via die Discussion weten wat dat is en waarom je het zo belangrijk vindt.
+```
+
+### DM maintainers
+
+Omdat we het extra belangrijk vinden dat de maintainers van de Community implementaties dit bericht niet missen sturen we hen via DM (ja echt) een linkje naar dit bericht. Je stuurt alleen een berichtje naar maintainers van echte community implementaties. Je kan dat zien door te kijken of er een repository of respository verwijzing bij github.com/nl-design-system staat. Weet je niet wie de maintainer is? Vraag het dan aan de andere kernteam leden, die weten het vast.
+
+**🚩 Checkpoint**: Selectie gedeeld met Community
+
+---
+
+## Volgende stap
+
+Ga door naar de [Voorbereidingsfase](/handboek/component-bijdragen/candidate/voorbereidingsfase).
+
+## Vragen?
+
+Heb je een vraag over de Selectiefase?
+
+- Wil je samen werken aan componenten? Kom naar een [Estafettemodeldag](/community/events/estafettemodeldag)
+- Stel je vraag in het Slack kanaal `#nl-design-system` op [Code for NL](https://praatmee.codefor.nl/)
+- Kom naar de [Design Open Hour](/events/design-open-hour) of [Developer Open Hour](/events/developer-open-hour)
+- Neem contact op met het [kernteam](/project/kernteam)

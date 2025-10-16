@@ -13,7 +13,7 @@ keywords:
 
 # Introductie
 
-:::tip In het kort
+:::info In het kort
 
 Waar veel design systems specifiek voor 1 organisatie zijn, werkt NL Design System samen met organisaties van gemeenten tot Rijk. Deze samenwerking heeft een aantal belangrijke voordelen:
 
