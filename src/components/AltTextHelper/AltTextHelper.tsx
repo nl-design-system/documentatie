@@ -111,7 +111,7 @@ const AltTextHelper = () => {
   };
 
   return (
-    <form>
+    <form className="nlds-alt-text-helper">
       <RadioGroup
         description="Kies de optie die het beste past:"
         id="image-type-group"

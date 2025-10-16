@@ -1,16 +1,16 @@
-.utrecht-form-fieldset__fieldset > .utrecht-form-fieldset__legend {
+.nlds-alt-text-helper .utrecht-form-fieldset__fieldset > .utrecht-form-fieldset__legend {
   font-size: 1.5rem;
 }
 
-.utrecht-form-fieldset__fieldset > .utrecht-form-field-description {
+.nlds-alt-text-helper .utrecht-form-fieldset__fieldset > .utrecht-form-field-description {
   margin-block-end: 10px;
 }
 
-.utrecht-form-fieldset__fieldset > .utrecht-form-field {
+.nlds-alt-text-helper .utrecht-form-fieldset__fieldset > .utrecht-form-field {
   display: block;
 }
 
-.utrecht-spotlight-section > .utrecht-heading-2 {
+.nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-2 {
   font-size: 1.5rem;
   margin-block-start: 0;
   margin-block-end: 0;
