@@ -139,7 +139,7 @@ const AltTextHelper = () => {
         />
       )}
 
-      <HelperText id={helperTextId} />
+      <HelperText helperTextId={helperTextId} />
     </form>
   );
 };
