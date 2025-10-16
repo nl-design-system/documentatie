@@ -32,6 +32,8 @@
   --utrecht-form-field-error-message-margin-block-start: 0;
   --utrecht-form-field-error-message-margin-block-end: 1em;
   --utrecht-form-field-description-margin-block-start: 0;
+  --utrecht-form-label-radio-font-weight: 400;
+  --utrecht-form-label-checkbox-font-weight: 400;
   --ifm-container-width: 1030px;
   --ifm-container-width-xl: 1080px;
   --ifm-link-hover-color: currentColor;
