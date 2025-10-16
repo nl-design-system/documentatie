@@ -28,9 +28,12 @@ keywords:
 
 **N.B.** Voorbeeldingen ook in context.
 
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page)
+
 ## Complex
 
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen-content-afbeeldingen-grafieken-kleurgebruik.png)
+![..](https://upload.wikimedia.org/wikipedia/commons/5/57/Bar_graph_-_stock_price_statistics.jpg)
 
 ## Informatief
 
@@ -39,12 +42,15 @@ keywords:
 ## Decoratief
 
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Amersfoortse-Dierentuin.jpg)
+![..](https://upload.wikimedia.org/wikipedia/commons/a/a6/1183_Diamonds_and_Hearts.jpg)
 
 ## Met tekst
 
 ### Complex
 
-richtlijnen_content_afbeeldingen-Kaart.jpg
+![..](https://upload.wikimedia.org/wikipedia/commons/c/c0/Independent-Turkic-States.png)
+1[..](https://upload.wikimedia.org/wikipedia/commons/2/22/GLAMwiki_Toolset_username_and_user_rights_diagram.png)
+![..](https://upload.wikimedia.org/wikipedia/commons/5/57/Bar_graph_-_stock_price_statistics.jpg)
 
 ### Functioneel
 
