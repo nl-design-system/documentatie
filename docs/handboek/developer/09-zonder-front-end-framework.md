@@ -115,6 +115,19 @@ Dit wordt niet aangeraden omdat je dan veel meer code dan nodig importeert, en j
 
 Het logo kan als svg aangeleverd worden. Je kunt er voor kiezen om een eigen logo neer te zetten of die van [het voorbeeld thema](/svg/voorbeeld-thema-logo.svg) te gebruiken.
 
+:::info[SVG via `<img>` vs inline SVG]
+Gebruik bij voorkeur inline SVG voor iconen en UI‑symbolen:
+
+- Inline SVG ondersteunt theming (`currentColor`, CSS‑variabelen) en high‑contrast/forced‑colors.
+- Je hebt volledige controle over toegankelijkheid (`role`, `aria-*`, `title`/`desc`).
+- States (hover/focus/active) zijn te stylen met CSS.
+
+Wanneer `<img src="…svg">` wel kan:
+
+- Voor decoratieve, kleurvaste afbeeldingen zonder theming.
+- Als alleen een `alt`-tekst volstaat en geen verdere ARIA of styling nodig is.
+  :::
+
 Het logo kunnen we als volgt toevoegen:
 
 ```html
