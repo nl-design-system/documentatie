@@ -80,6 +80,9 @@ const sidebars: SidebarsConfig = {
           link: {
             type: 'generated-index',
             title: 'Voor organisaties',
+            description:
+              'Overweeg je NL Design System te gebruiken? Hier verzamelen we alle informatie die je als organisatie mogelijk kan helpen.',
+
             slug: '/handboek/organisatie/overzicht',
             keywords: ['organisaties', 'overzicht'],
           },

@@ -5,6 +5,7 @@ import { DataBadge } from '@nl-design-system-candidate/data-badge-react/css';
 import clsx from 'clsx';
 import { useId, useState } from 'react';
 import './Checklist.css';
+import { Checkbox, Fieldset, FormField, FormLabel, Heading } from '@utrecht/component-library-react/css-module';
 
 /**
  * ChecklistItemProps defines expected variables for the item to test.
@@ -28,6 +29,7 @@ export interface ChecklistItemProps {
  * items: the test items.
  */
 export interface ChecklistProps {
+  headingLevel: HeadingProps['level'];
   items: ChecklistItemProps[];
 }
 
@@ -97,8 +99,15 @@ export const ChecklistItem = ({ title, sc, component, tags }: ChecklistItemProps
   );
 };
 
-export const Checklist = ({ items }: ChecklistProps) => {
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+export const Checklist = ({ items, headingLevel }: ChecklistProps) => {
+  const allTags = items.reduce((set, item) => {
+    item.tags.forEach((tag) => {
+      set.add(tag);
+    });
+    return set;
+  }, new Set<string>());
+
+  const [selectedTags, setSelectedTags] = useState<string[]>(Array.from(allTags.values()));
 
   const isSelectedTag = (tag: string) => selectedTags.includes(tag);
 
@@ -110,65 +119,55 @@ export const Checklist = ({ items }: ChecklistProps) => {
     setSelectedTags(newArray);
   };
 
-  const allTags = items.reduce((set, item) => {
-    item.tags.forEach((tag) => {
-      set.add(tag);
-    });
-    return set;
-  }, new Set<string>());
+  const fieldsetLabelId = useId();
 
-  const filterRequireEvery = false;
+  const filteredItems =
+    selectedTags.length >= 1
+      ? items.filter(({ tags }) => {
+          return tags.some((tag) => selectedTags.includes(tag));
+        })
+      : items;
 
-  const badgeListLabelId = useId();
-
-  const filteredItems = items.filter(({ tags }) => {
-    if (selectedTags.length === 0) {
-      return true;
-    } else if (filterRequireEvery) {
-      return selectedTags.every((tag) => tags.includes(tag));
-    } else {
-      return tags.some((tag) => selectedTags.includes(tag));
-    }
-  });
   const hiddenItemCount = items.length - filteredItems.length;
 
   return (
     <div>
       <div className="ma-filter-block">
-        <span id={badgeListLabelId}>Ik ben: </span>
-        <BadgeList role="group" aria-labelledby={badgeListLabelId} className="ma-badge-toggle-button-group">
-          {Array.from(allTags.values()).map((tag, index) => (
-            <Button
-              onClick={() => toggleTag(tag)}
-              pressed={isSelectedTag(tag)}
-              appearance="subtle"
-              key={index}
-              className="utrecht-button--contents"
-            >
-              <DataBadge>{tag}</DataBadge>
-            </Button>
+        <Fieldset aria-describedby="filter-results" aria-labelledby={fieldsetLabelId}>
+          <Heading level={headingLevel} id={fieldsetLabelId}>
+            Filter acceptatiecriteria voor:
+          </Heading>
+          {Array.from(allTags.values()).map((tag) => (
+            <FormField key={tag} type="checkbox">
+              <Checkbox
+                defaultChecked={isSelectedTag(tag)}
+                checked={isSelectedTag(tag)}
+                id={tag}
+                onChange={() => toggleTag(tag)}
+              />
+              <FormLabel htmlFor={tag}>{tag}</FormLabel>
+            </FormField>
           ))}
-        </BadgeList>
+        </Fieldset>
         <div>
-          {selectedTags.length >= 1 ? (
-            <>
-              <p role="status">Er wordt op {selectedTags.length} onderwerpen gefilterd.</p>
-              <p>
-                {hiddenItemCount} van de {items.length} items zijn nu niet zichtbaar.
-              </p>
+          <>
+            <p role="status">
+              {items.length - hiddenItemCount} van de {items.length} items zijn nu zichtbaar.
+            </p>
+            {hiddenItemCount >= 1 ? (
               <Button
                 appearance="secondary-action-button"
                 onClick={() => {
-                  setSelectedTags([]);
+                  setSelectedTags(Array.from(allTags.values()));
                 }}
               >
                 Toon alles
               </Button>
-            </>
-          ) : (
-            'Alle onderwerpen worden getoond.'
-          )}
-        </div>{' '}
+            ) : (
+              <></>
+            )}
+          </>
+        </div>
       </div>
 
       <ul className="new-checklist" role="list">

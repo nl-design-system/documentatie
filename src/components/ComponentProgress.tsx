@@ -16,13 +16,13 @@ export const ComponentProgress = ({ checked, unchecked }: ComponentProgressProps
           arcWidth={4}
           data={[
             {
-              fill: 'var(--ma-color-groen-8)',
+              fill: 'var(--basis-color-accent-1-inverse-bg-default)',
               key: 'Done',
               value: checked,
               stroke: '2',
             },
             {
-              fill: 'var(--ma-color-groen-3)',
+              fill: 'var(--basis-color-disabled-bg-default)',
               key: 'Todo',
               value: unchecked,
               stroke: '2',

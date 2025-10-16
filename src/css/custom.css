@@ -47,6 +47,7 @@
   --ifm-breadcrumb-padding-horizontal: 0;
   --ifm-breadcrumb-separator-size: 1.1ch;
   --ifm-breadcrumb-border-radius: 0;
+  --ifm-toc-link-color: var(--basis-color-action-2-color-default);
 
   /* Temporary styling for custom nlds components */
   --nlds-blog-post-footer-background-color: #f2ebe4;
@@ -87,6 +88,13 @@
   --utrecht-button-group-margin-block-end: 20px;
   --utrecht-button-group-margin-block-start: 40px;
   --utrecht-badge-list-column-gap: var(--basis-space-inline-sm);
+  --utrecht-form-field-description-margin-block-start: 0;
+  --utrecht-form-field-margin-block-start: 8px;
+  --utrecht-form-field-margin-block-end: 8px;
+
+  --utrecht-form-fieldset-legend-font-size: var(--utrecht-form-label-font-size);
+  --utrecht-form-fieldset-legend-font-weight: var(--utrecht-form-label-font-weight);
+  --utrecht-form-fieldset-legend-line-height: var(--utrecht-form-label-line-height);
 
   /* Hackysnacky tokens */
   --utrecht-card-link-hover-background-color: var(--basis-color-action-2-bg-hover);
@@ -505,7 +513,6 @@ aside button[title="Zijbalk inklappen"],
 
 .footer {
   width: 100%;
-  margin-block-start: 20px;
 }
 
 .footer .container {
@@ -532,8 +539,13 @@ aside button[title="Zijbalk inklappen"],
   margin-top: 0 !important;
 }
 
-.table-of-contents {
-  font-size: var(--basis-text-font-size-sm);
+.table-of-contents,
+.table-of-contents ul {
+  font-size: var(--basis-text-font-size-sm) !important;
+}
+
+.table-of-contents__link {
+  padding-block: var(--basis-space-block-sm);
 }
 
 .breadcrumbs__link {
@@ -565,6 +577,14 @@ aside button[title="Zijbalk inklappen"],
 
 .containter {
   padding-block: 20px;
+}
+
+.filter-accordion {
+  --utrecht-accordion-panel-padding-block-start: 0;
+}
+
+.filter-accordion .utrecht-form-fieldset:first-child {
+  --utrecht-heading-6-margin-block-start: 0;
 }
 
 /* Add styling to code blocks  */

@@ -11,7 +11,9 @@
 .cardgroup--small {
   --cardgroup-grid-template-columns: 1fr 1fr 1fr 1fr;
   --cardgroup-padding-block-end: var(--cardgroup-small-padding-block-end, 16px);
-  --cardgroup-gap: var(--cardgroup-small-gap, 32px);
+  --cardgroup-gap: var(--cardgroup-small-gap, 20px);
+  --card-illustration-img-max-hight: 4rem;
+  padding-block: 20px;
 }
 
 .cardgroup--medium {
@@ -77,6 +79,10 @@
   margin-inline-end: var(--card-illustration-margin-inline-end);
   margin-inline-start: var(--card-illustration-margin-inline-start);
   padding-block: var(--card-illustration-padding-block, 12px);
+}
+
+.card__illustration img {
+  max-height: var(--card-illustration-img-max-hight);
 }
 
 .card__illustration--light-orange {

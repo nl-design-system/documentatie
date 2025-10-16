@@ -229,7 +229,9 @@ export const NewsletterSignUp = ({
 
       {interestsId && (
         <Fieldset>
-          <FieldsetLegend>{interestsLegend} (niet verplicht)</FieldsetLegend>
+          <Paragraph>
+            <FieldsetLegend>{interestsLegend} (niet verplicht)</FieldsetLegend>
+          </Paragraph>
           <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {interests.map((interest, index) => (
             <FormField type="checkbox" key={interest}>
