@@ -134,6 +134,10 @@
   background-color: transparent !important;
 }
 
+.menu__caret:focus-visible.menu__caret:before {
+  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="var(--basis-focus-color)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+}
+
 .breadcrumbs__link:focus-visible,
 .DocSearch-Trigger .DocSearch-Button:focus-visible,
 .menu__link:focus-visible,
@@ -481,10 +485,8 @@ aside button[title="Zijbalk inklappen"],
 }
 
 .ma-theme .utrecht-link--html-a:any-link:focus-visible {
-  --_utrecht-link-state-color: var(--utrecht-link-focus-color);
-  background-color: var(--utrecht-link-focus-background-color, transparent);
-  text-decoration-skip: none;
-  text-decoration-skip-ink: none;
+  background-color: var(--basis-focus-background-color, transparent);
+  color: var(--basis-focus-color);
 }
 
 .ma-theme .utrecht-link--html-a:any-link:focus-visible:hover {
