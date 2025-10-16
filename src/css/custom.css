@@ -17,6 +17,12 @@
   word-wrap: normal;
 }
 
+:root {
+  --docsearch-modal-background: white;
+  --docsearch-muted-color: var(--basis-color-default-color-default);
+  --docsearch-key-gradient: var(--ma-docsearch-button-key-background-color);
+}
+
 .ma-theme {
   /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
   -moz-osx-font-smoothing: auto !important;
@@ -135,8 +141,6 @@
   --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
   --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
   --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
-
-  --docsearch-key-gradient: var(--ma-docsearch-button-key-background-color);
 }
 
 .navbar__brand:focus-visible {
@@ -310,17 +314,16 @@ p {
 /* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
 .DocSearch {
   --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
-  --docsearch-muted-color: var(--utrecht-button-secondary-action-color);
-  --docsearch-logo-color: var(--utrecht-button-secondary-action-color);
-  --docsearch-icon-color: var(--utrecht-button-secondary-action-color);
-  --docsearch-highlight-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-muted-color: var(--basis-color-accent-2-color-default);
+  --docsearch-logo-color: var(--basis-color-accent-2-color-default);
+  --docsearch-icon-color: var(--basis-color-accent-2-color-default);
+  --docsearch-highlight-color: var(--basis-color-accent-2-color-default);
   --docsearch-hit-highlight-color: var(--ma-docsearch-modal-hit-background-color);
-  --docsearch-modal-background: var(--ma-docsearch-modal-background-color);
+  --docsearch-modal-background: white;
   --docsearch-searchbox-focus-background: var(--ma-docsearch-modal-searchbox-background-color);
   --docsearch-footer-backround: var(--ma-docsearch-modal-searchbox-background-color);
-  --docsearch-text-color: var(--ma-docsearch-modal-color);
   --docsearch-searchbox-background: var(--ma-docsearch-button-background-color);
-  --docsearch-text-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-text-color: var(--basis-color-accent-2-color-default);
 }
 
 .DocSearch kbd {
