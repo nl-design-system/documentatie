@@ -1,32 +1,32 @@
-/*! For license information please see 71fb168a.a5db8ab8.js.LICENSE.txt */
+/*! For license information please see 71fb168a.b81ba38d.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [76130],
  {
   63987: (e, s, n) => {
-   n.r(s), n.d(s, { assets: () => m, contentTitle: () => l, default: () => u, frontMatter: () => d, metadata: () => c, toc: () => h });
+   n.r(s), n.d(s, { assets: () => m, contentTitle: () => c, default: () => u, frontMatter: () => d, metadata: () => l, toc: () => g });
    var t = n(52676),
     i = n(40139),
     o = n(68257),
     r = n(78511),
     a = n(28439);
-   const d = { title: 'Design Systems Week', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'About Design Systems Week', pagination_label: 'About Design Systems Week', sidebar_position: 1, slug: '/events/design-systems-week/en' },
-    l = 'Design Systems Week',
-    c = { id: 'community/events/design-systems-week/en/index', title: 'Design Systems Week', description: 'NL Design System is organising the Design Systems Week for the fifth time. It will feature a number of short talks', source: '@site/docs/community/events/design-systems-week/en/index.mdx', sourceDirName: 'community/events/design-systems-week/en', slug: '/events/design-systems-week/en', permalink: '/events/design-systems-week/en', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/index.mdx', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Design Systems Week', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'About Design Systems Week', pagination_label: 'About Design Systems Week', sidebar_position: 1, slug: '/events/design-systems-week/en' }, sidebar: 'community', previous: { title: 'Tijdschema', permalink: '/events/design-systems-week-2025/tijdschema/' }, next: { title: 'About Design Systems Week', permalink: '/events/design-systems-week/en' } },
+   const d = { title: 'Design Systems Week', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'About Design Systems Week', pagination_label: 'About Design Systems Week', sidebar_position: 1, slug: '/events/design-systems-week/en', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2025.png' },
+    c = 'Design Systems Week',
+    l = { id: 'community/events/design-systems-week/en/index', title: 'Design Systems Week', description: 'NL Design System is organising the Design Systems Week for the fifth time. It will feature a number of short talks', source: '@site/docs/community/events/design-systems-week/en/index.mdx', sourceDirName: 'community/events/design-systems-week/en', slug: '/events/design-systems-week/en', permalink: '/events/design-systems-week/en', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/index.mdx', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Design Systems Week', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'About Design Systems Week', pagination_label: 'About Design Systems Week', sidebar_position: 1, slug: '/events/design-systems-week/en', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2025.png' }, sidebar: 'community', previous: { title: 'Tijdschema', permalink: '/events/design-systems-week-2025/tijdschema/' }, next: { title: 'About Design Systems Week', permalink: '/events/design-systems-week/en' } },
     m = {},
-    h = [
+    g = [
      { value: 'Previous editions', id: 'previous-editions', level: 2 },
      { value: 'Organisation', id: 'organisation', level: 2 },
      { value: 'Accessibility', id: 'accessibility', level: 2 },
      { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
     ];
-   function g(e) {
+   function h(e) {
     const s = { a: 'a', h1: 'h1', h2: 'h2', hr: 'hr', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
     return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(s.h1, { id: 'design-systems-week', children: 'Design Systems Week' }), '\n', (0, t.jsx)(a.nv, { lead: !0, children: (0, t.jsx)(s.p, { children: 'NL Design System is organising the Design Systems Week for the fifth time. It will feature a number of short talks\nabout the how and why of design systems. All online. From October 27 to October 30, we will cover subjects like\nmanaging design systems, integrating accessibility, user research and code.' }) }), '\n', (0, t.jsxs)(a.hE, { children: [(0, t.jsxs)(o.Z, { href: '/events/design-systems-week/en/sign-up', appearance: 'primary-action', children: ['Sign up', (0, t.jsx)(r.Z, {})] }), (0, t.jsxs)(o.Z, { href: '/events/design-systems-week/en/sign-up', appearance: 'secondary-action', children: ['View the Program', (0, t.jsx)(r.Z, {})] })] }), '\n', (0, t.jsx)(s.hr, {}), '\n', (0, t.jsx)(s.h2, { id: 'previous-editions', children: 'Previous editions' }), '\n', (0, t.jsx)(s.p, { children: "This is the 5th year that NL Design System is organizing Design Systems Week. Can't wait? Then check out the videos from previous years!" }), '\n', (0, t.jsxs)(s.ul, { children: ['\n', (0, t.jsx)(s.li, { children: (0, t.jsx)(s.a, { href: '/events/design-systems-week-2024/en/program/', children: 'Design Systems Week 2024' }) }), '\n', (0, t.jsx)(s.li, { children: (0, t.jsx)(s.a, { href: '/events/design-systems-week-2023/en/program/', children: 'Design Systems Week 2023' }) }), '\n'] }), '\n', (0, t.jsx)(s.h2, { id: 'organisation', children: 'Organisation' }), '\n', (0, t.jsx)(s.p, { children: 'Design Systems Week is organised by the NL Design System core team.' }), '\n', (0, t.jsx)(s.p, { children: 'At NL Design System, web professionals from across the government collaborate on building blocks for websites and applications, like code, design and guidelines. The project is managed by ICTU for the Dutch Ministry of the Interior and Kingdom Relations.' }), '\n', (0, t.jsx)(s.h2, { id: 'accessibility', children: 'Accessibility' }), '\n', (0, t.jsxs)(s.p, { children: ['We do our best to organise Design Systems Week accessibly. If you have specific questions or requests, please do reach to the NL Design System core team at i', (0, t.jsx)(s.a, { href: 'mailto:info@nldesignsystem.nl', children: 'info@nldesignsystem.nl' }), '.'] }), '\n', (0, t.jsx)(s.h2, { id: 'code-of-conduct', children: 'Code of Conduct' }), '\n', (0, t.jsxs)(s.p, { children: ['All participants of Design Systems Week are expected to abide by our ', (0, t.jsx)(s.a, { href: 'https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.md', children: 'NL Design System Code of Conduct' }), " van toepassing. By signing up for one or more sessions you've agreed to these terms."] })] });
    }
    function u(e = {}) {
     const { wrapper: s } = { ...(0, i.a)(), ...e.components };
-    return s ? (0, t.jsx)(s, { ...e, children: (0, t.jsx)(g, { ...e }) }) : g(e);
+    return s ? (0, t.jsx)(s, { ...e, children: (0, t.jsx)(h, { ...e }) }) : h(e);
    }
   },
   68257: (e, s, n) => {

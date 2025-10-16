@@ -1,4 +1,4 @@
-/*! For license information please see ab29330a.93a6a751.js.LICENSE.txt */
+/*! For license information please see ab29330a.c8554d15.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [34075],
@@ -10,9 +10,9 @@
     r = n(68257),
     o = n(78511),
     a = n(28439);
-   const d = { title: 'Design Systems Week', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Over Design Systems Week', pagination_label: 'Over Design Systems Week', sidebar_position: 1, slug: '/events/design-systems-week' },
+   const d = { title: 'Design Systems Week', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Over Design Systems Week', pagination_label: 'Over Design Systems Week', sidebar_position: 1, slug: '/events/design-systems-week', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png' },
     l = 'Design Systems Week',
-    m = { id: 'community/events/design-systems-week/index', title: 'Design Systems Week', description: 'NL Design System organiseert in 2025 voor de 5e keer de Design Systems Week. Van 27 tot en met 30 oktober zijn er', source: '@site/docs/community/events/design-systems-week/index.mdx', sourceDirName: 'community/events/design-systems-week', slug: '/events/design-systems-week', permalink: '/events/design-systems-week', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/index.mdx', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Design Systems Week', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Over Design Systems Week', pagination_label: 'Over Design Systems Week', sidebar_position: 1, slug: '/events/design-systems-week' }, sidebar: 'community', previous: { title: 'In de Design Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', permalink: '/community/events/estafettemodeldag' }, next: { title: 'Over Design Systems Week', permalink: '/events/design-systems-week' } },
+    m = { id: 'community/events/design-systems-week/index', title: 'Design Systems Week', description: 'NL Design System organiseert in 2025 voor de 5e keer de Design Systems Week. Van 27 tot en met 30 oktober zijn er', source: '@site/docs/community/events/design-systems-week/index.mdx', sourceDirName: 'community/events/design-systems-week', slug: '/events/design-systems-week', permalink: '/events/design-systems-week', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/index.mdx', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Design Systems Week', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Over Design Systems Week', pagination_label: 'Over Design Systems Week', sidebar_position: 1, slug: '/events/design-systems-week', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png' }, sidebar: 'community', previous: { title: 'In de Design Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', permalink: '/community/events/estafettemodeldag' }, next: { title: 'Over Design Systems Week', permalink: '/events/design-systems-week' } },
     c = {},
     g = [
      { value: 'Eerdere edities', id: 'eerdere-edities', level: 2 },
