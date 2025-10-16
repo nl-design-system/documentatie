@@ -1,23 +1,38 @@
-/**
- * CSS files with the .css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  overflow: hidden;
-  padding: 4rem 0;
-  position: relative;
-  text-align: center;
+.homepage-spotlight-section {
+  --utrecht-spotlight-section-border-width: 0;
+  --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-bg-subtle);
 }
 
-@media screen and (width <= 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.homepage-spotlight-section--hero {
+  --utrecht-heading-2-font-size: 1.25rem;
+  --utrecht-heading-2-margin-block-start: 20px;
 }
 
-.buttons {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.homepage-spotlight-section--heartbeat {
+  --utrecht-spotlight-section-margin-block-end: 20px;
+  --utrecht-spotlight-section-margin-block-start: 40px;
+  --utrecht-heading-2-margin-block-start: 20px;
+  --utrecht-heading-3-margin-block-start: 0;
+}
+
+.homepage-spotlight-section--footer {
+  --utrecht-spotlight-section-padding-block-end: 20px;
+  --utrecht-spotlight-section-padding-block-start: 20px;
+  --utrecht-spotlight-section-margin-block-start: 40px;
+  --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-inverse-bg-document);
+  --utrecht-heading-2-color: var(--basis-color-accent-1-inverse-color-document);
+  --utrecht-heading-2-margin-block-start: 20px;
+  --utrecht-card-background-color: var(--basis-color-action-1-inverse-bg-default);
+  --utrecht-card-link-hover-background-color: var(--basis-color-action-1-inverse-bg-hover);
+  --utrecht-card-color: var(--basis-color-action-1-inverse-color-default);
+}
+
+.homepage-card-group {
+  block-size: 100%;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22.5rem), 1fr));
+  margin-inline: auto;
+  max-inline-size: var(--ifm-container-width-xl);
+  padding-block: 20px;
 }

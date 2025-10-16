@@ -13,7 +13,9 @@ keywords:
 
 # Introductie
 
-NL Design System maakt toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijk. Op deze pagina lees je meer over wat dat technisch betekent. Voor meer informatie over het project zelf, zie [Over NL Design System](/project/over-nl-design-system).
+NL Design System helpt toegankelijke, gebruiksvriendelijk oplossingen te maken die met behulp van het Estafettemodel toewerken naar een consistente gebruikerservaring bij de hele overheid. Het bevat de basisonderdelen waarover je afspraken kunt maken, gebruikersonderzoek kunt doen en kunt hergebruiken.
+
+Het doel van NL Design System is om toegankelijk, inclusief en gebruiksvriendelijk ontwikkelen makkelijker te maken en hergebruik tussen verschillende teams te stimuleren. Op deze pagina lees je meer over wat dat technisch betekent. Voor meer informatie over het project zelf, zie [Over NL Design System](/project/over-nl-design-system).
 
 ## Meer dan alleen ontwerp
 
