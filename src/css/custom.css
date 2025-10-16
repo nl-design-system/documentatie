@@ -21,6 +21,7 @@
   --docsearch-modal-background: white;
   --docsearch-muted-color: var(--basis-color-default-color-default);
   --docsearch-key-gradient: var(--ma-docsearch-button-key-background-color);
+  hyphenate-limit-chars: 12 8 4;
 }
 
 .ma-theme {
