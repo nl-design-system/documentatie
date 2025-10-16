@@ -27,6 +27,7 @@
   /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
   -moz-osx-font-smoothing: auto !important;
   -webkit-font-smoothing: auto !important;
+  font-size-adjust: 0.5;
 
   /* You can override the default Infima variables here. */
   --ifm-container-width: 870px;
@@ -54,7 +55,7 @@
   --ifm-breadcrumb-separator-size: 1.1ch;
   --ifm-breadcrumb-border-radius: 0;
   --ifm-toc-link-color: var(--basis-color-action-2-color-default);
-  --docusaurus-announcement-bar-height: 50px;
+  --docusaurus-announcement-bar-height: auto;
 
   /* Temporary styling for custom nlds components */
   --nlds-blog-post-footer-background-color: #f2ebe4;
@@ -224,10 +225,10 @@ p {
   --utrecht-link-color: white;
   --utrecht-link-text-decoration: none;
   min-height: 100%;
-  align-content: center;
   border-block-start-width: 4px;
   border-block-start-style: solid;
   border-color: transparent;
+  align-content: center;
 }
 
 .ma-navigation-bar-item:hover {
@@ -775,7 +776,6 @@ code {
   --utrecht-link-hover-text-decoration-thickness: 2px;
   min-height: 40px;
   width: 100vw;
-  padding-block: 1rem;
-  margin-block: 1rem;
+  padding-block: 0.5rem;
   font-size: 1.125rem;
 }
