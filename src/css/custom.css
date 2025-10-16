@@ -48,6 +48,7 @@
   --ifm-breadcrumb-separator-size: 1.1ch;
   --ifm-breadcrumb-border-radius: 0;
   --ifm-toc-link-color: var(--basis-color-action-2-color-default);
+  --docusaurus-announcement-bar-height: 50px;
 
   /* Temporary styling for custom nlds components */
   --nlds-blog-post-footer-background-color: #f2ebe4;
@@ -761,4 +762,17 @@ code {
   .navbar__items--right {
     min-width: 40%;
   }
+}
+
+.announcementbar-content {
+  --utrecht-icon-color: var(--basis-color-accent-1-inverse-color-subtle);
+  --utrecht-icon-inset-block-start: 5px;
+  --utrecht-link-color: white;
+  --utrecht-link-text-decoration-color: white;
+  --utrecht-link-hover-text-decoration-thickness: 2px;
+  min-height: 40px;
+  width: 100vw;
+  padding-block: 1rem;
+  margin-block: 1rem;
+  font-size: 1.125rem;
 }

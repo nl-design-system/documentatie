@@ -111,9 +111,9 @@ const config: Config = {
     announcementBar: {
       id: 'dsweek-2025',
       content:
-        '<span class="utrecht-icon"><img src="/svg/tabler-icon_mega.svg"/></span> 27 - 30 oktober is het weer Design Systems Week <span class="utrecht-icon"><img src="/svg/tabler-icon_point-right.svg"/></span><a href="/events/design-systems-week/" class="utrecht-link">Bekijk het programma</a>',
-      backgroundColor: 'var(--utrecht-button-primary-action-background-color)',
-      textColor: 'var(--utrecht-button-primary-action-color)',
+        '<div class="announcementbar-content"><span class="utrecht-icon"><img src="/svg/tabler-icon_mega.svg"/></span> 27 - 30 oktober is het weer Design Systems Week <span class="utrecht-icon"><img src="/svg/tabler-icon_point-right.svg"/></span> <a href="/events/design-systems-week/" class="utrecht-link utrecht-link--html-a">Bekijk het programma</a></div>',
+      backgroundColor: 'var(--basis-color-accent-1-inverse-bg-subtle)',
+      textColor: 'var(--basis-color-accent-1-inverse-color-default)',
       isCloseable: false,
     },
   },
