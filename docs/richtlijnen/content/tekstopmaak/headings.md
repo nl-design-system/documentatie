@@ -79,6 +79,12 @@ Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Een duideli
 
 Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg je voor een goede volgorde en deel je de tekst overzichtelijk in.
 
+### Vergeet kopniveau 1 niet
+
+Elke pagina heeft een hoofdtitel, ook wel kopniveau 1, nodig. Dit is het begin van de pagina-opbouw en helpt gebruikers om snel te begrijpen waar de pagina over gaat. Voor gebruikers met een schermlezer is dit vaak het eerste dat ze horen.
+
+Kopniveau 1 is ook de paginatitel. Zorg daarom dat deze titel binnen de hele website uniek is. Als kopniveau 1 ontbreekt, is het lastiger om te begrijpen waar de pagina over gaat. Gebruik deze kop om het onderwerp van de pagina aan te geven. Plaats hem boven alle andere koppen en gebruik hem maar één keer per pagina.
+
 ### Sla geen kopniveaus over
 
 Gebruik koppen in volgorde. Begin bijvoorbeeld met een Kop 2 onder de hoofdkop, daarna een Kop 3, dan een Kop 4. Sla geen niveaus over — zet dus geen Kop 4 direct onder een Kop 2.
@@ -142,8 +148,8 @@ Of koppen goed zijn gebruikt, kun je voor een groot deel beoordelen door de pagi
   Soms worden visueel opvallende teksten als ‘kop’ opgemaakt, zonder dat ze inhoud structureren. Dat is verwarrend. Gebruik koppen alleen als ze echt een nieuwe sectie inleiden.
 - Is er een duidelijke hiërarchie van kopniveaus (H1, H2, H3…)?
   De volgorde van de koppen moet logisch zijn en geen niveaus overslaan. Een H3 mag niet direct onder een H1 vallen.
-- Is er één H1 die de inhoud van de pagina beschrijft?
-  Deze H1 moet uniek zijn per pagina. Een H1 als ‘Welkom’ of ‘Nieuws’ op elke pagina helpt niemand.
+- Is er één kopniveau 1, of H1, die de inhoud van de pagina beschrijft?
+  Deze paginatitel moet uniek zijn per pagina. Een paginatitel als ‘Welkom’ of ‘Nieuws’ op elke pagina helpt niemand.
 - Zijn er geen lege of nietszeggende koppen?
   Een kop als ‘Overzicht’ of ‘Klik hier’ zegt weinig over de inhoud. Zorg dat elke kop betekenisvol is.
 - Controleer op lege koppen.
