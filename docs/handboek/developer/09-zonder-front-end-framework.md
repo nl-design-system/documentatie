@@ -169,7 +169,6 @@ Om het design na te bouwen, doe je nog een paar aanpassingen en kom je op het vo
           <label for="site-search" class="ams-visually-hidden">Zoeken op de site</label>
           <input
             id="site-search"
-            style="max-width: 60%; margin-inline-end: 0.3rem; font-size: 1rem; height: 3rem"
             placeholder="Bijvoorbeeld zwembad of grofvuil"
             type="search"
             class="ams-text-input"
