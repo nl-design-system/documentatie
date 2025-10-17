@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Tijdens deze sessie delen Joel Laumans en Pim Dieks het verhaal achter het ontstaan en de groei van het Enterprise Design System. Het is een eerlijk verhaal over de uitdagingen, dilemma’s en successen die zijn opgedaan bij het bouwen aan een consistent digitaal fundament binnen een complexe organisatie.
+ \n\nEnglish: \nDuring this session, Joel Laumans and Pim Dieks will share the story behind the creation and growth of the Enterprise Design System. It's an honest account of the challenges, dilemmas, and successes encountered in building a consistent digital foundation within a complex organization.
+UID:bc96d0e7-86e3-49bf-a90e-0928cd666d2f
+SUMMARY:Schiphol Airport Operations: De kracht van een Enterprise Design System - door Joel Laumans en Pim Dieks
+DTSTART;TZID=Europe/Amsterdam:20251030T110000
+DTEND;TZID=Europe/Amsterdam:20251030T114500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZWM4OTllMzQtNGUyZC00NmQ5LWI3MWUtNmFlYmQyM2RhZDM4%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

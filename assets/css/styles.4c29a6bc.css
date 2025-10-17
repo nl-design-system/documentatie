@@ -10521,9 +10521,6 @@ svg.DocSearch-Hit-Select-Icon {
  margin: 0;
  margin-block: 1em;
 }
-.dsw-session:nth-child(2n) .dsw-speaker {
- flex-direction: row-reverse;
-}
 .dsw-speaker__image {
  height: 100%;
  margin-block-start: 0.4em;
