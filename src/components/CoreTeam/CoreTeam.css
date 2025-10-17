@@ -9,13 +9,6 @@
   width: 100%;
 }
 
-.core-team__card {
-  --cardgroup-card-box-shadow: none;
-  --cardgroup-card-border-width: 1px;
-  --cardgroup-card-large-padding-block-start: 0;
-  --cardgroup-card-large-padding-block-end: 0;
-}
-
 .core-team__content {
   padding-block-end: 36px;
   padding-block-start: 24px;
@@ -24,32 +17,10 @@
 }
 
 .core-team__heading {
-  padding-block-end: 24px;
+  padding-block-start: 1rem;
 }
 
 .core-team__heading-subtitle {
   font-size: 20px;
   padding-block-start: 8px;
-}
-.core-team__description {
-  padding-block-end: 24px;
-}
-
-.core-team__illustration {
-  --card-illustration-background-color: var(--nlds-document-inverse-background-color);
-
-  align-items: flex-end;
-  display: flex;
-}
-
-.core-team__avatar {
-  height: 150px;
-  padding-block-start: 24px;
-  padding-inline: 8px;
-}
-
-@media (width <= 768px) {
-  .core-team__card {
-    --cardgroup-card-max-width: auto;
-  }
 }

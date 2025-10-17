@@ -67,11 +67,11 @@ export default function Home() {
               </UnorderedListItem>
             </UnorderedList>
             <ActionGroup>
-              <ButtonLink href="/handboek/estafettemodel/" appearance="primary-action-button">
-                Bekijk hoe het werkt
+              <ButtonLink href="/handboek/introductie/" appearance="primary-action-button">
+                Lees de introductie
               </ButtonLink>
-              <ButtonLink href="/community/sluit-je-aan/" appearance="secondary-action-button">
-                Doe mee
+              <ButtonLink href="/community/" appearance="secondary-action-button">
+                Lees meer over de Community
               </ButtonLink>
             </ActionGroup>
           </div>

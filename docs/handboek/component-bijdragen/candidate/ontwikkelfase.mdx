@@ -1,0 +1,444 @@
+---
+title: Ontwikkelfase · Candidate · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Ontwikkelfase
+sidebar_position: 5
+pagination_label: Candidate Ontwikkelfase
+description: Gedetailleerde stappen voor de Ontwikkelfase van Candidate componenten
+slug: /handboek/component-bijdragen/candidate/ontwikkelfase
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - candidate
+  - ontwikkeling
+---
+
+{/* @license CC0-1.0 */}
+
+# Ontwikkelfase
+
+## In het kort
+
+In de ontwikkelfase bouw je de Candidate component volgens de specificaties uit de voorbereidingsfase. Je ontwikkelt de component in zowel code als design, test deze uitgebreid, en zorgt voor goede documentatie. Het resultaat is een werkende component die klaar is voor gebruik door de community.
+
+**Wat doe je in deze fase?**
+
+- Component ontwikkelen in React en CSS
+- Figma component maken
+- Stories maken voor alle testcases
+- Unit tests schrijven
+- Documentatie toevoegen
+
+---
+
+## Ontwikkel React component
+
+**Doel**: Maak een React implementatie van de component die werkt volgens de vastgestelde specificaties.
+
+**Waarom belangrijk?** Een goed gebouwde React component maakt het makkelijk voor teams die React gebruiken om de component in te zetten.
+
+### Acties
+
+1. **Maak de package structuur** in https://github.com/nl-design-system/candidate:
+
+   ```
+   packages/
+     component-library-react/
+       src/
+         {ComponentName}/
+           index.tsx
+           index.test.tsx
+   ```
+
+2. **Ontwikkel de component**:
+
+   - Gebruik de juiste HTML semantiek uit de voorbereidingsfase
+   - Implementeer alle varianten als props
+   - Gebruik de CSS classes voor styling (`nl-{component-name}`)
+   - Voeg TypeScript types toe
+   - Gebruik React.forwardRef voor ref support
+
+3. **Export de component**:
+
+   ```typescript
+   // Named exports (preferred)
+   export { ComponentName } from "./{ComponentName}";
+   export type { ComponentNameProps } from "./{ComponentName}";
+
+   // Voeg ook toe aan component-library-react/src/index.ts:
+   export * from "./{ComponentName}";
+   ```
+
+4. **Maak unit tests** met React Testing Library:
+
+   ```typescript
+   import { render, screen } from '@testing-library/react';
+   import { ComponentName } from './index';
+
+   describe('ComponentName', () => {
+     it('renders with correct HTML element', () => {
+       render(<ComponentName>Test</ComponentName>);
+       expect(screen.getByRole('...')).toBeInTheDocument();
+     });
+
+     it('has correct accessible name', () => {
+       render(<ComponentName>Label text</ComponentName>);
+       expect(screen.getByRole('...', { name: 'Label text' })).toBeInTheDocument();
+     });
+   });
+   ```
+
+   **Test voor**:
+
+   - Juiste HTML elementen
+   - ARIA roles en accessible names
+   - States in de accessibility tree
+   - Props gedrag
+   - Event handlers
+
+**🚩 Checkpoint**: React component ontwikkeld
+
+## Ontwikkel CSS component
+
+**Doel**: Maak een framework-agnostische CSS implementatie die door iedereen gebruikt kan worden.
+
+**Waarom belangrijk?** Niet iedereen gebruikt React. Een CSS implementatie zorgt ervoor dat de component ook met andere frameworks of zonder framework gebruikt kan worden.
+
+### Acties
+
+1. **Maak de package structuur**:
+
+   ```
+   packages/
+     components-css/
+       {component-name}/
+         src/
+           index.scss
+           _mixin.scss
+   ```
+
+2. **Ontwikkel de CSS volgens NL Design System conventies**:
+
+   - Gebruik BEM naamgeving (`.nl-{component-name}`, `.nl-{component-name}__element`, `.nl-{component-name}--modifier`)
+   - Gebruik design tokens voor alle styling
+   - Zorg voor fallback values (zie hieronder)
+   - Maak de component responsive
+
+3. **Maak een mixin voor herbruikbare styles** in `_mixin.scss`:
+
+   ```scss
+   @mixin nl-component-name {
+     background-color: var(--nl-component-name-background-color, transparent);
+     color: var(--nl-component-name-color, inherit);
+     font-family: var(--nl-component-name-font-family, inherit);
+
+     // Voeg alle styles toe die herbruikbaar zijn
+   }
+   ```
+
+4. **Gebruik de mixin in index.scss**:
+
+   ```scss
+   @import "mixin";
+
+   .nl-component-name {
+     @include nl-component-name;
+
+     &__element {
+       // Element styles
+     }
+
+     &--modifier {
+       // Modifier styles
+     }
+
+     &:hover {
+       background-color: var(
+         --nl-component-name-hover-background-color,
+         var(--nl-component-name-background-color, transparent)
+       );
+     }
+   }
+   ```
+
+5. **Fallback strategie**:
+
+   - Gebruik altijd fallback values in `var()`: `var(--token-name, fallback-value)`
+   - Voor kleuren: gebruik `transparent` of `inherit` als fallback
+   - Voor afmetingen: gebruik `0` of een logische default
+   - Voor fonts: gebruik `inherit` of een generieke font-family
+   - Voor complexe fallbacks: verwijs naar een andere token als fallback:
+     ```scss
+     // Hover state valt terug op normale state
+     var(--nl-button-hover-background-color, var(--nl-button-background-color))
+     ```
+
+6. **Classless export** (optioneel):
+   Maak een `_classless.scss` voor gebruik zonder class names:
+
+   ```scss
+   @import "mixin";
+
+   // Voor gebruik met custom elements of semantic HTML
+   button.nl-component-name,
+   .nl-component-name {
+     @include nl-component-name;
+   }
+   ```
+
+**🚩 Checkpoint**: CSS component ontwikkeld
+
+**Tip**: Test de CSS door alle design tokens te verwijderen en te checken of fallbacks goed werken.
+
+## Ontwikkel Figma component
+
+**Doel**: Maak een Figma component dat designers kunnen gebruiken om de component in designs te gebruiken.
+
+**Waarom belangrijk?** Designers moeten kunnen experimenteren met de component in hun designs, en zo kunnen ze helpen om problemen vroeg te ontdekken.
+
+### Acties
+
+### Stap 1: Maak het component in het Schetsboek
+
+1. **Open het Schetsboek** - "NL Design System - Schetsboek - Candidate"
+
+2. **Maak de basis component structuur**:
+
+   - Gebruik Figma Auto Layout voor flexibele sizing
+   - Gebruik de vastgestelde anatomie uit de voorbereidingsfase
+   - Geef elk onderdeel een duidelijke laagnaam
+
+3. **Configureer design tokens met Tokens Studio**:
+
+   - Installeer Tokens Studio plugin
+   - Link design tokens aan de component lagen
+   - Gebruik token references (bijvoorbeeld: `{nl.component-name.background-color}`)
+   - Test of tokens correct worden toegepast
+
+4. **Maak varianten met Figma properties**:
+
+   - Voeg Boolean properties toe voor toggles (bijvoorbeeld: `disabled`)
+   - Voeg Variant properties toe voor states (bijvoorbeeld: `state: default | hover | active`)
+   - Voeg Text properties toe voor labels
+   - Zorg dat property namen consistent zijn met andere componenten
+
+5. **Maak interactive states**:
+
+   - Hover state (vaak met opacity of kleurverandering)
+   - Active/Pressed state
+   - Focus state (focus ring)
+   - Disabled state (grijze/transparante styling)
+   - Error state (indien van toepassing)
+
+6. **Test de component in het Schetsboek**:
+   - Test alle varianten combinaties
+   - Test met verschillende content lengtes
+   - Test of alle states werken
+   - Test of de component goed schaalt
+
+### Stap 2: Voeg prototyping interacties toe
+
+1. **Configureer interactive variants**:
+
+   - Selecteer de default variant
+   - Schakel over naar Prototype tab
+   - Voeg interacties toe:
+     - "While hovering" → Change to hover variant
+     - "While pressing" → Change to active variant
+     - "On click" → (indien van toepassing)
+
+2. **Test de prototype**:
+   - Klik op Play knop (▶) rechtsboven
+   - Test of hover states werken
+   - Test of click interacties werken
+
+### Stap 3: Documenteer in Figma
+
+1. **Voeg component description toe**:
+
+   - Rechtsklik op component → "Edit component"
+   - Voeg beschrijving toe in het description veld
+   - Leg uit wanneer de component te gebruiken
+
+2. **Voeg property descriptions toe**:
+   - Klik op elke property
+   - Voeg een description toe die uitlegt wat de property doet
+
+### Stap 4: Verplaats naar de Bibliotheek
+
+1. **Open de Candidate Bibliotheek** - "NL Design System - Bibliotheek - Candidate"
+
+2. **Kopieer het component**:
+
+   - Selecteer de component in het Schetsboek
+   - Kopieer (Cmd/Ctrl + C)
+   - Ga naar de Bibliotheek
+   - Plak (Cmd/Ctrl + V)
+
+3. **Organiseer in de juiste sectie**:
+
+   - Sleep naar de juiste component pagina
+   - Zorg voor consistente naamgeving
+
+4. **Publiceer de Bibliotheek**:
+   - Klik op "Publish changes" rechtsboven
+   - Schrijf duidelijke release notes
+   - Klik op "Publish"
+
+### Stap 5: Maak voorbeelden in Voorbeeld Bibliotheek
+
+1. **Open Voorbeeld Bibliotheek** - "NL Design System - Bibliotheek - Voorbeeld"
+
+2. **Maak voorbeeld component met Voorbeeld theme**:
+
+   - Plaats een instance van de Candidate component
+   - Pas de Voorbeeld theme tokens toe
+   - Test of alles goed zichtbaar is
+
+3. **Publiceer de Voorbeeld Bibliotheek**
+
+Zie het [Figma stappenplan](/handboek/designer/werken-met-nl-design-system/figma-stappenplan) voor meer gedetailleerde instructies.
+
+**🚩 Checkpoint**: Figma component ontwikkeld
+
+## Maak Storybook stories
+
+**Doel**: Maak stories voor alle testcases uit de voorbereidingsfase, zodat de component in verschillende situaties getest kan worden.
+
+**Waarom belangrijk?** Stories maken het mogelijk om de component visueel te testen en te documenteren hoe deze gebruikt moet worden.
+
+### Acties
+
+1. **Maak stories voor alle acceptatiecriteria**:
+
+   Per acceptatiecriterium uit de voorbereidingsfase maak je een Story:
+
+   ```javascript
+   export const ComponentWithVariant: Story = {
+     name: 'Component with variant',
+     args: {
+       variant: 'primary',
+       children: 'Example text',
+     },
+     parameters: {
+       docs: {
+         description: {
+           story: 'Beschrijving van wat deze variant doet en wanneer je deze gebruikt.',
+         },
+       },
+     },
+   };
+   ```
+
+2. **Test de stories met**:
+
+   - Verschillende content (weinig, veel, rare karakters)
+   - Verschillende schermformaten
+   - Vertalingen (Fins, Japans, Arabisch voor text overflow)
+   - Forced-colors-mode
+   - Verschillende contexten
+
+3. **Voeg de stories toe** aan:
+   - `storybook` folder voor conforme stories
+   - `storybook-non-conforming` folder voor niet-conforme voorbeelden (wat niet te doen)
+   - `storybook-test` folder voor test-specifieke stories
+
+**🚩 Checkpoint**: Stories gemaakt
+
+## Schrijf documentatie
+
+**Doel**: Zorg dat gebruikers weten hoe ze de component moeten gebruiken.
+
+**Waarom belangrijk?** Goede documentatie zorgt ervoor dat mensen de component correct gebruiken en begrijpen waarom bepaalde keuzes zijn gemaakt.
+
+### Acties
+
+1. **Maak de componentpagina**:
+
+   ```
+   packages/
+     component-docs/
+       {component-name}/
+         index.mdx
+   ```
+
+2. **Voeg toe**:
+
+   - Korte beschrijving wat de component doet
+   - Wanneer je de component gebruikt (en niet gebruikt)
+   - Voorbeelden van correct gebruik
+   - Anatomie (als van toepassing)
+   - **Toegankelijkheidscriteria met WCAG referenties**:
+
+     ```md
+     ## Toegankelijkheid
+
+     ### WCAG succescriteria
+
+     - [1.3.1 Info and Relationships (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships): De component gebruikt semantische HTML
+     - [1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum): Zorg voor voldoende contrast in je thema
+     - [2.1.1 Keyboard (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/keyboard): De component is volledig te bedienen met toetsenbord
+     - [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value): De component heeft correcte ARIA attributen
+     ```
+
+   - **Inclusie overwegingen**:
+
+     ```md
+     ### Let op bij gebruik
+
+     - Gebruik duidelijke labels voor screenreader gebruikers
+     - Test met keyboard navigatie
+     - Zorg voor voldoende contrast in kleuren
+     - Gebruik niet alleen kleur om informatie over te brengen
+     ```
+
+   - Design tokens documentatie
+   - API documentatie (props, classes, etc.)
+
+3. **Code samples toevoegen**:
+
+   ```md
+   ## Code voorbeelden
+
+   ### React
+
+   \`\`\`jsx
+   import { ComponentName } from '@nl-design-system-candidate/component-name';
+
+   <ComponentName variant="primary">
+     Button text
+   </ComponentName>
+   \`\`\`
+
+   ### HTML + CSS
+
+   \`\`\`html
+   <button class="nl-component-name nl-component-name--primary">
+   Button text
+   </button>
+   \`\`\`
+   ```
+
+4. **Voeg richtlijnen toe per discipline**:
+   - **Developers**: Installatie, gebruik, customization, toegankelijkheid checklist
+   - **Designers**: Design tokens, varianten, do's and don'ts, toegankelijkheid in designs
+   - **Content editors**: Wanneer te gebruiken, content richtlijnen, schrijftips voor toegankelijkheid
+
+**🚩 Checkpoint**: Documentatie geschreven
+
+---
+
+## Volgende stap
+
+Ga door naar de [Testfase](/handboek/component-bijdragen/candidate/testfase).
+
+## Vragen?
+
+Heb je een vraag over de Ontwikkelfase?
+
+- Wil je samen werken aan componenten? Kom naar een [Estafettemodeldag](/community/events/estafettemodeldag)
+- Stel je vraag in het Slack kanaal `#nl-design-system` op [Code for NL](https://praatmee.codefor.nl/)
+- Kom naar de [Design Open Hour](/events/design-open-hour) of [Developer Open Hour](/events/developer-open-hour)
+- Neem contact op met het [kernteam](/project/kernteam)

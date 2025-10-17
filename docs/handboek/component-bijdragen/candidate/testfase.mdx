@@ -1,0 +1,664 @@
+---
+title: Testfase · Candidate · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Testfase
+sidebar_position: 6
+pagination_label: Candidate Testfase
+description: Gedetailleerde stappen voor de Testfase van Candidate componenten
+slug: /handboek/component-bijdragen/candidate/testfase
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - candidate
+  - testen
+  - toegankelijkheid
+---
+
+{/* @license CC0-1.0 */}
+
+# Testfase
+
+## In het kort
+
+In de testfase controleer je of de Candidate component aan alle kwaliteitseisen voldoet. Je test de design tokens in verschillende thema's, controleert de toegankelijkheid, test de documentatie, en zorgt voor visual regression testing. Het resultaat is een component waarvan je zeker weet dat deze betrouwbaar werkt.
+
+**Wat doe je in deze fase?**
+
+- Design tokens testen in verschillende thema's
+- Toegankelijkheid uitgebreid testen
+- Documentatie reviewen
+- Testcases uitvoeren
+- Visual regression tests opzetten
+- Internationalisatie testen
+
+---
+
+## Test design tokens in thema's
+
+**Doel**: Controleer of de component goed werkt met verschillende huisstijlen door de design tokens te testen.
+
+**Waarom belangrijk?** De component moet instelbaar zijn voor alle huisstijlen in de community. Door dit te testen voorkom je dat organisaties problemen ondervinden bij het implementeren.
+
+### Acties
+
+1. **Clone de themes repository**:
+
+   ```bash
+   git clone https://github.com/nl-design-system/themes
+   cd themes
+   pnpm install
+   ```
+
+2. **Kies 2 thema's om te testen**:
+
+   - Kies huisstijlen die visueel verschillen (bijvoorbeeld Utrecht en Rotterdam)
+   - Kies bij voorkeur thema's met actieve maintainers
+
+3. **Voeg de component toe per thema**:
+
+   Voor elk thema:
+
+   a. **Maak een nieuwe branch**:
+
+   ```bash
+   git checkout -b feat/utrecht-{component-name}-tokens
+   ```
+
+   b. **Voeg design tokens toe**:
+
+   ```
+   packages/
+     theme-utrecht/
+       src/
+         component/{component-name}.tokens.json
+   ```
+
+   c. **Vertaal Community tokens naar Candidate tokens**:
+
+   - Bekijk de bestaande community tokens
+   - Map deze 1-op-1 naar de candidate tokens
+   - Noteer tokens die missen
+
+   Voorbeeld:
+
+   ```json
+   {
+     "nl": {
+       "component-name": {
+         "background-color": { "value": "{utrecht.color.primary}" },
+         "color": { "value": "{utrecht.color.white}" },
+         "font-family": { "value": "{utrecht.typography.sans-serif.font-family}" }
+       }
+     }
+   }
+   ```
+
+   d. **Voeg component toe aan theme config**:
+
+   Update `packages/theme-utrecht/src/index.ts` (of vergelijkbaar):
+
+   ```typescript
+   import componentNameTokens from "./component/{component-name}.tokens.json";
+   ```
+
+   e. **Build en test lokaal**:
+
+   ```bash
+   pnpm run build
+   pnpm run storybook
+   ```
+
+   f. **Visuele check in Storybook**:
+
+   - Navigeer naar de component stories
+   - Selecteer het Utrecht thema in de toolbar
+   - Controleer alle varianten
+   - Controleer contrast ratios (gebruik browser DevTools)
+   - Test alle states (hover, focus, disabled)
+   - Check spacing en sizing
+
+   g. **Documenteer bevindingen**:
+
+   - Missende design tokens
+   - Tokens die niet goed werken
+   - Verbeterpunten voor de component
+
+   h. **Maak een PR** naar de themes repository:
+
+   ```
+   Title: feat(utrecht): add {component-name} tokens
+
+   Description:
+   Adds design tokens for the {component-name} Candidate component.
+
+   - ✅ All tokens mapped from community implementation
+   - ✅ Visual check passed
+   - ✅ Contrast ratios checked
+
+   Missing tokens:
+   - [ ] {token-name} (reason)
+   ```
+
+   i. **Tag de maintainer** in de PR description:
+
+   ```md
+   @maintainer-username Could you review these tokens?
+   ```
+
+   j. **Wacht op review en merge**
+
+4. **Herhaal voor het tweede thema**
+
+5. **Sla testresultaten op in story parameters**:
+
+   Voor elke story die een toegankelijkheidstest bevat:
+
+   ```typescript
+   export const AccessibleExample: Story = {
+     name: 'Accessible example',
+     args: { ... },
+     parameters: {
+       testResult: {
+         pass: true,  // Of false als de test faalt
+         tests: [
+           {
+             name: 'WCAG 1.3.1: Info and Relationships',
+             passed: true,
+           },
+           {
+             name: 'WCAG 2.1.1: Keyboard',
+             passed: true,
+           },
+           {
+             name: 'WCAG 4.1.2: Name, Role, Value',
+             passed: true,
+           },
+         ],
+       },
+     },
+   };
+   ```
+
+   Dit maakt het mogelijk om automatisch te rapporteren welke tests geslaagd zijn.
+
+6. **Documenteer in GitHub Discussion**:
+
+   ```md
+   ## Candidate testfase: Design tokens getest
+
+   We hebben de design tokens getest in:
+
+   - Utrecht: [PR link]
+   - Rotterdam: [PR link]
+
+   ### Bevindingen:
+
+   - ✅ Tokens werken goed voor beide thema's
+   - ⚠️ Missende tokens: {lijst}
+   - 💡 Verbeterpunten: {lijst}
+   ```
+
+**🚩 Checkpoint**: Design tokens getest
+
+## Test toegankelijkheid uitgebreid
+
+**Doel**: Zorg ervoor dat de component voldoet aan WCAG 2.2 niveau AA en goed werkt met hulpmiddelen.
+
+**Waarom belangrijk?** Toegankelijkheid is verplicht voor overheidsdiensten. Door dit grondig te testen voorkom je dat mensen uitgesloten worden.
+
+### Acties
+
+1. **Voer geautomatiseerde tests uit**:
+
+   - Axe accessibility tests in Storybook
+   - HTML validator
+   - Contrast checker
+
+2. **Test met hulpmiddelen**:
+
+   - **Screenreaders**: NVDA (Windows), JAWS (Windows), VoiceOver (macOS/iOS)
+   - **Toetsenbordnavigatie**: Tab, Shift+Tab, Enter, Spatie, Pijltjestoetsen
+   - **Voice control**: Testen of componenten met stembesturing gebruikt kunnen worden
+   - **Zoom**: Test tot 200% zoom
+
+3. **Test specifieke scenario's**:
+
+   - Forced-colors mode (Windows High Contrast)
+   - Verminderde beweging (prefers-reduced-motion)
+   - Donkere modus
+   - Verschillende kleurenblindheid simulaties
+
+4. **CSS Naked Day test**:
+
+   Test of de component zonder CSS nog steeds begrijpelijk en bruikbaar is:
+
+   a. **Schakel CSS uit**:
+
+   - Chrome DevTools: Settings → Preferences → Disable CSS
+   - Firefox DevTools: Style Editor → Disable all styles
+   - Of gebruik browser extensie "Web Developer"
+
+   b. **Controleer de component**:
+
+   - ✅ HTML volgorde is logisch en leesbaar
+   - ✅ Alle content is nog zichtbaar
+   - ✅ Structuur is begrijpelijk (headings, lists, etc.)
+   - ✅ Links en buttons zijn herkenbaar
+   - ✅ Form elementen hebben labels
+   - ✅ Images hebben alt text
+
+   c. **Test met screenreader**:
+
+   - Zonder CSS moet de component nog steeds logisch klinken
+   - Navigatie met Tab werkt nog steeds
+
+   d. **Documenteer bevindingen**:
+
+   ```md
+   ### CSS Naked Day test
+
+   - ✅ Volgorde is logisch
+   - ✅ Content is volledig zichtbaar
+   - ✅ Semantische structuur klopt
+
+   Issues gevonden:
+
+   - [Beschrijf eventuele problemen]
+   ```
+
+5. **Documenteer in GitHub Discussion**:
+
+   ```md
+   ## Candidate testfase: Toegankelijkheid getest
+
+   We hebben de {component-naam} getest op toegankelijkheid:
+
+   ✅ Geautomatiseerde tests geslaagd
+   ✅ Screenreader tests uitgevoerd (NVDA, JAWS, VoiceOver)
+   ✅ Toetsenbordnavigatie werkt correct
+   ✅ Forced-colors mode getest
+   ✅ CSS Naked Day test geslaagd
+
+   ### Gevonden issues:
+
+   - [Issue beschrijving en oplossing]
+
+   ### Aandachtspunten voor gebruikers:
+
+   - [Belangrijke toegankelijkheidsconsideraties]
+   ```
+
+**🚩 Checkpoint**: Toegankelijkheid getest
+
+## Review documentatie
+
+**Doel**: Controleer of de documentatie compleet, correct en begrijpelijk is voor alle doelgroepen.
+
+**Waarom belangrijk?** Goede documentatie bepaalt of mensen de component correct kunnen gebruiken en begrijpen waarom bepaalde keuzes zijn gemaakt.
+
+### Acties
+
+1. **Laat de documentatie reviewen door**:
+
+   **Developer review criteria**:
+
+   - ✅ Installatie instructies zijn compleet en kloppen
+   - ✅ Code voorbeelden werken (getest door te kopiëren/plakken)
+   - ✅ API documentatie is duidelijk (alle props/classes uitgelegd)
+   - ✅ TypeScript types zijn gedocumenteerd
+   - ✅ Toegankelijkheid checklist is aanwezig
+   - ✅ Links naar Storybook en GitHub werken
+
+   **Designer review criteria**:
+
+   - ✅ Design tokens zijn uitgelegd met voorbeelden
+   - ✅ Varianten zijn visueel getoond
+   - ✅ Do's and don'ts zijn duidelijk met visuals
+   - ✅ Figma link werkt
+   - ✅ Wanneer wel/niet te gebruiken is helder
+   - ✅ Toegankelijkheid in designs is toegelicht
+
+   **Content editor review criteria**:
+
+   - ✅ Taal is begrijpelijk (geen jargon)
+   - ✅ Gebruiksvoorbeelden zijn relevant voor echte situaties
+   - ✅ Content richtlijnen zijn praktisch
+   - ✅ Schrijftips voor toegankelijkheid zijn aanwezig
+   - ✅ Wanneer te gebruiken is duidelijk zonder technische kennis
+
+   **Toegankelijkheidsspecialist review criteria**:
+
+   - ✅ WCAG succescriteria zijn correct en compleet
+   - ✅ WCAG links verwijzen naar juiste versie (2.2)
+   - ✅ Toegankelijkheidstests zijn gedocumenteerd
+   - ✅ Bekende beperkingen zijn vermeld
+   - ✅ Gebruiksinstructies voor screenreaders zijn aanwezig
+   - ✅ Keyboard navigatie is uitgelegd
+
+2. **Controleer of de documentatie bevat**:
+
+   - Korte beschrijving (wat doet de component?)
+   - Wanneer wel/niet te gebruiken
+   - Praktische voorbeelden
+   - Anatomie (indien van toepassing)
+   - Toegankelijkheidscriteria
+   - Design tokens uitleg
+   - API documentatie
+   - Do's and don'ts
+
+3. **Test de voorbeeldcode**:
+   - Kopieer code snippets en test of ze werken
+   - Controleer of installatie instructies kloppen
+   - Test of links naar andere pagina's werken
+
+**🚩 Checkpoint**: Documentatie gereviewed
+
+## Test alle testcases in Storybook
+
+**Doel**: Controleer systematisch of alle stories correct werken en of de component in verschillende situaties goed functioneert.
+
+**Waarom belangrijk?** Door alle scenarios te testen ontdek je edge cases en onverwacht gedrag voordat gebruikers er tegenaan lopen.
+
+### Acties
+
+1. **Doorloop alle stories systematisch**:
+
+   - Controleer elke story visueel
+   - Test interactieve elementen
+   - Controleer of de beschrijving klopt met wat je ziet
+
+2. **Test met verschillende content**:
+
+   - Weinig content (enkele woorden)
+   - Veel content (lange teksten)
+   - Rare karakters en emoji's
+   - Vertalingen (Fins voor lange woorden, Arabisch voor RTL)
+
+3. **Test op verschillende schermformaten**:
+
+   - Desktop (1920px+)
+   - Tablet (768px-1024px)
+   - Mobiel (320px-767px)
+
+4. **Test in verschillende browsers**:
+
+   - Chrome/Edge (Chromium)
+   - Firefox
+   - Safari
+
+5. **Documenteer bevindingen**:
+   - Stories die niet goed werken
+   - Edge cases die missen
+   - Verbeterpunten
+
+**🚩 Checkpoint**: Testcases getest
+
+## Zet visual regression testing op
+
+**Doel**: Automatisch detecteren wanneer de visuele weergave van de component onbedoeld verandert.
+
+**Waarom belangrijk?** Visual regression testing voorkomt dat wijzigingen aan de component onverwachte visuele problemen veroorzaken.
+
+### Acties
+
+1. **Configureer Chromatic** (als dit nog niet is gebeurd):
+
+   a. **Setup in de candidate repository**:
+
+   ```bash
+   # Chromatic is meestal al geconfigureerd
+   # Check .github/workflows/chromatic.yml
+   ```
+
+   b. **Zorg dat de component stories worden meegenomen**:
+
+   - Stories in `packages/storybook/src/` worden automatisch getest
+
+2. **Maak baseline snapshots**:
+
+   a. **Run Chromatic lokaal** (optioneel voor eerste check):
+
+   ```bash
+   npx chromatic --project-token=<project-token>
+   ```
+
+   b. **Of push naar GitHub** en wacht op CI:
+
+   - Chromatic runt automatisch bij elke push
+   - Check de Chromatic build in de PR
+
+   c. **Review snapshots in Chromatic UI**:
+
+   - Open de Chromatic link in de PR
+   - Bekijk alle nieuwe snapshots
+   - **Accepteer de baselines** door op "Accept" te klikken
+
+3. **Configureer test parameters per story**:
+
+   ```typescript
+   export const Example: Story = {
+     parameters: {
+       chromatic: {
+         // Test verschillende viewports
+         viewports: [320, 768, 1200],
+
+         // Test met different themes (indien opgezet)
+         // Gebruik delay voor animaties
+         delay: 300,
+
+         // Disable voor non-deterministic content
+         // disableSnapshot: true,
+       },
+     },
+   };
+   ```
+
+   Voor forced-colors en dark mode test stories:
+
+   ```typescript
+   export const ForcedColors: Story = {
+     parameters: {
+       backgrounds: { disable: true },
+       // Forced colors wordt via CSS media query getest in de story zelf
+     },
+   };
+   ```
+
+4. **Test de Chromatic workflow**:
+
+   a. **Maak een kleine visuele wijziging**:
+
+   ```scss
+   .nl-component-name {
+     padding: 12px; // Was 10px
+   }
+   ```
+
+   b. **Push naar GitHub**:
+
+   ```bash
+   git add .
+   git commit -m "test: chromatic detection"
+   git push
+   ```
+
+   c. **Check de Chromatic build**:
+
+   - Ga naar de PR
+   - Klik op de Chromatic check
+   - Chromatic toont de visual diff
+
+   d. **Review de verschillen**:
+
+   - Bekijk welke stories zijn veranderd
+   - Controleer of de wijziging correct is gedetecteerd
+   - Accepteer of reject de changes
+
+   e. **Zet de wijziging terug** (was alleen een test):
+
+   ```bash
+   git revert HEAD
+   git push
+   ```
+
+5. **Documenteer Chromatic setup**:
+
+   ```md
+   ## Visual Regression Testing
+
+   - ✅ Chromatic opgezet en getest
+   - ✅ Baseline snapshots geaccepteerd
+   - ✅ Test parameters geconfigureerd
+   - ✅ Verschillende viewports getest
+
+   Chromatic project: [link]
+   ```
+
+**🚩 Checkpoint**: Visual regression opgezet
+
+## Test internationalisatie
+
+**Doel**: Controleer of de component goed werkt met verschillende talen en culturele contexten.
+
+**Waarom belangrijk?** Nederlandse overheidsdiensten worden gebruikt door mensen met verschillende taalachtergonden. De component moet voor iedereen goed werken.
+
+### Acties
+
+1. **Test met verschillende talen**:
+
+   Maak stories voor elke taal om te testen:
+
+   **Nederlands (standaard)**:
+
+   ```typescript
+   export const Nederlands: Story = {
+     args: {
+       children: "Knop tekst",
+     },
+   };
+   ```
+
+   **Engels (kortere zinnen)**:
+
+   ```typescript
+   export const English: Story = {
+     args: {
+       children: "Button text",
+     },
+   };
+   ```
+
+   **Fins (zeer lange woorden)**:
+
+   ```typescript
+   export const Finnish: Story = {
+     args: {
+       // Test hoe de component omgaat met lange woorden zonder breaks
+       children: "Käyttöoikeuksien hallintajärjestelmä",
+     },
+   };
+   ```
+
+   **Arabisch (RTL)**:
+
+   ```typescript
+   export const Arabic: Story = {
+     args: {
+       children: "زر الإجراء",
+     },
+     parameters: {
+       // Set direction for the story
+       direction: "rtl",
+     },
+   };
+   ```
+
+   **Japans/Chinees (verschillende karakterhoogte)**:
+
+   ```typescript
+   export const Japanese: Story = {
+     args: {
+       children: "ボタンテキスト",
+     },
+   };
+   ```
+
+   **Test acceptatiecriteria**:
+
+   - ✅ Tekst breekt correct bij lange woorden
+   - ✅ Geen overflow van de component
+   - ✅ Line-height werkt met alle karaktersets
+   - ✅ Fonts laden correct (of fallback werkt)
+
+2. **Test RTL (Right-to-Left) support**:
+
+   - Voeg `dir="rtl"` toe aan stories
+   - Controleer of layout omgedraaid wordt
+   - Test of interactieve elementen goed werken
+
+3. **Test text overflow**:
+
+   - Korte labels
+   - Zeer lange labels zonder spaties
+   - Tekst met verschillende line-heights
+
+4. **Documenteer aandachtspunten**:
+
+   ```md
+   ## Internationalisatie
+
+   De component is getest met:
+
+   - Nederlands, Engels, Fins, Arabisch, Japans
+   - RTL support getest en werkend
+   - Text overflow scenario's getest
+
+   ### Aandachtspunten:
+
+   - [Eventuele beperkingen of aandachtspunten]
+   ```
+
+**🚩 Checkpoint**: Internationalisatie getest
+
+## Controleer unit test coverage
+
+**Doel**: Zorg ervoor dat belangrijke functionaliteit getest wordt met unit tests.
+
+**Waarom belangrijk?** Unit tests geven zekerheid dat de component blijft werken wanneer er wijzigingen worden gemaakt.
+
+### Acties
+
+1. **Check unit test coverage**:
+
+   - Run `npm test -- --coverage`
+   - Streef naar minimaal 80% coverage voor belangrijke functies
+
+2. **Controleer of er tests zijn voor**:
+
+   - Alle props/varianten
+   - Accessibility tree (roles, labels)
+   - Event handlers
+   - Edge cases
+
+3. **Voeg missende tests toe** waar nodig
+
+4. **Documenteer test coverage** in de PR
+
+**🚩 Checkpoint**: Unit tests compleet
+
+---
+
+## Volgende stap
+
+Ga door naar de [Publicatiefase](/handboek/component-bijdragen/candidate/publicatiefase).
+
+## Vragen?
+
+Heb je een vraag over de Testfase?
+
+- Wil je samen werken aan componenten? Kom naar een [Estafettemodeldag](/community/events/estafettemodeldag)
+- Stel je vraag in het Slack kanaal `#nl-design-system` op [Code for NL](https://praatmee.codefor.nl/)
+- Kom naar de [Design Open Hour](/events/design-open-hour) of [Developer Open Hour](/events/developer-open-hour)
+- Neem contact op met het [kernteam](/project/kernteam)

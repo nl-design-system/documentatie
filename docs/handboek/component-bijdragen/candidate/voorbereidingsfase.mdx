@@ -1,0 +1,440 @@
+---
+title: Voorbereidingsfase · Candidate · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Voorbereidingsfase
+sidebar_position: 4
+pagination_label: Candidate Voorbereidingsfase
+description: Gedetailleerde stappen voor de Voorbereidingsfase van Candidate componenten
+slug: /handboek/component-bijdragen/candidate/voorbereidingsfase
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - candidate
+  - voorbereiding
+---
+
+{/* @license CC0-1.0 */}
+
+# Voorbereidingsfase
+
+## In het kort
+
+In de voorbereidingsfase leg je alle specificaties en beslissingen vast voordat de component wordt ontwikkeld. Je inventariseert bekende issues, bepaalt welke varianten en design tokens worden meegenomen, stelt de toegankelijkheidscriteria vast, en vertaalt alles naar testbare acceptatiecriteria. Het resultaat is een compleet plan van aanpak dat je deelt met de community voor feedback.
+
+**Wat doe je in deze fase?**
+
+- Bekende issues en problemen inventariseren
+- Varianten bepalen en eventueel splitsen
+- Anatomie, semantiek en API vastleggen
+- Design tokens en toegankelijkheidscriteria bepalen
+- Acceptatiecriteria vertalen naar testcases
+- Plan van aanpak delen met de community
+
+---
+
+## Inventariseer bekende issues
+
+**Doel**: Voorkomen dat bekende bugs en problematische API's worden overgenomen in de Candidate component. Vooraf weten welke breaking changes zijn uitgesteld.
+
+### Acties
+
+1. Verzamel input uit de Community (repositories, Open Hours)
+2. Bepaal welke features meegenomen worden (bespreek met DS Lead en Product Manager, let op consistentie met andere componenten)
+3. Leg vast welke toegankelijkheidsproblemen voorkomen moeten worden
+4. Vertaal hoe bugs voorkomen moeten worden in acceptatiecriteria
+5. Bepaal welke API wijzigingen doorgevoerd worden (risicovolle wijzigingen eerst in community testen)
+
+### Documenteer in GitHub Discussion
+
+Zijn er issues bekend?
+
+```md
+## Openstaande issues die worden meegenomen voor Candidate
+
+We hebben gekeken bij X Y en Z en de volgende issues zijn bekend voor {naam-component}.
+
+- Link naar issue 1
+- Link naar issue 2
+
+We hebben besloten om issue 1, 2, en 3 mee te nemen. Issues 4 en 5 nemen we niet mee want...
+```
+
+Geen issues bekend?
+
+```md
+## Openstaande issues die worden meegenomen voor Candidate
+
+We hebben geen openstaande issues gevonden.
+
+### Hebben we een issue gemist?
+
+Laat het in deze Discussion weten.
+```
+
+Zet uitkomsten ook in de GitHub issue:
+
+```md
+## Extra features
+
+...
+
+## Extra design tokens
+
+...
+```
+
+**🚩 Checkpoint**: Bekende issues geïnventariseerd
+
+## Versimpel of splits de component
+
+**Doel**: Versimpel of splits de component zodat er componenten over blijven met een duidelijke use case.
+
+**Waarom belangrijk?** Dit voorkomt complexe APIs en zorgt ervoor dat de documentatie helder blijft.
+
+### Acties
+
+1. **Verzamel alle varianten in een tabel** - Maak een overzichtsdocument (bijvoorbeeld in Miro of Figma), verzamel varianten uit implementaties en GitHub discussion, geef naam en beschrijving, voeg screenshots toe.
+
+   Voorbeeld voor Paragraph:
+
+   | Paragraph                            | Amsterdam | Den Haag | DUO | Open Formulieren | Open Gemeenten | Rotterdam | RVO | Utrecht |
+   | ------------------------------------ | --------- | -------- | --- | ---------------- | -------------- | --------- | --- | ------- |
+   | Lead/Big/Header paragraph/Intro-text | ✅        | ✅       | ✅  | ✅               | ✅             | ✅        | ✅  | ✅      |
+   | Small/Details Small/Small print      | ✅        | ✅       | -   | ✅               | -              | -         | ✅  | ✅      |
+   | XL                                   | -         | -        | -   | -                | -              | -         | ✅  | -       |
+
+2. **Besluit welke varianten Candidate worden** - Overleg met kernteam en Design System Lead. Schrijf beredeneringen op.
+
+3. **Documenteer besluit in GitHub Discussion**:
+
+```md
+## Candidate voorbereidingsfase: Versimpeld of gesplitst
+
+De varianten voor de Candidate component zijn bepaald op basis van alle voorbeelden in deze Discussion. Als een variant veel voorkomt, dan is het een algemeen nuttige variant!
+
+### Deze varianten nemen we mee:
+
+**{variant-groep}** - {enum / boolean / string}
+
+- {variant-naam}
+- {variant-naam}
+
+### Deze varianten nemen we niet mee:
+
+{optioneel: beschrijf waarom}
+
+### Mis je een variant?
+
+Laat het weten als er uit gebruikersonderzoek blijkt dat dit een verbetering zou zijn.
+
+**💡 Tip**
+Je kunt varianten ook als extentie toevoegen. Vraag ons er gerust naar.
+```
+
+4. Zet varianten in GitHub Backlog issue met acceptatiecriteria.
+
+**🚩 Checkpoint**: Component versimpeld of gesplitst
+
+## Bepaal de anatomie
+
+**Doel**: Besluit uit welke onderdelen de component bestaat en welke naam deze krijgen.
+
+**Waarom belangrijk?** Een heldere anatomie zorgt ervoor dat iedereen (designers, developers, contentmakers) dezelfde taal spreekt over de onderdelen van de component.
+
+### Acties
+
+Designer, Developer en Toegankelijkheidsspecialist beslissen samen welke onderdelen er zijn.
+
+**Richtlijnen**:
+
+- Property naam in het Engels
+- Omschrijving in het Nederlands
+- Formaat: `{nummering}. {property naam}: {omschrijving}`
+- Text = string, Children/Slot = gebruik Content
+
+**Let op**: Niet alle componenten hebben een anatomie nodig. Een simpele component zoals een Paragraph bestaat meestal uit één onderdeel.
+
+### Vastleggen
+
+Maak een schets (papier/foto, Figma, of code).
+
+Voeg toe aan Backlog issue:
+
+```md
+## Anatomie van {component-naam}
+
+![alt-tekst](url)
+
+De component bestaat uit:
+
+1. {onderdeel-1} voor {uitleg}
+2. {onderdeel-2} voor {uitleg}
+```
+
+Geen anatomie nodig?
+
+```md
+## Anatomie van {component-naam}
+
+Dit component heeft geen anatomie nodig omdat deze niet uit losse onderdelen bestaat.
+```
+
+Kopieer comment link naar projectbord checkpoint.
+
+**🚩 Checkpoint**: Anatomie bepaald
+
+## Bepaal toegankelijkheidscriteria
+
+**Doel**: Vaststellen op welke manier de component aan toegankelijkheidseisen voldoet.
+
+**Waarom belangrijk?** Toegankelijkheid is verplicht voor overheidsdiensten. Door dit vooraf vast te leggen, voorkom je dat toegankelijkheidsproblemen pas later worden ontdekt.
+
+### Stappen
+
+1. Bekijk welke community implementaties toegankelijke opties zijn
+2. Analyseer welke a11y problemen vaak voorkomen (check Archimate: https://architectuur-tmp.vercel.app)
+3. Stel acceptatiecriteria vast (WCAG succescriteria voor component zelf, zonder context)
+4. Verdeel contextgerelateerde criteria onder Developer/Designer/contentmaker
+5. Maak PR: Voeg criteria toe aan componentpagina
+6. Maak voorstel voor HTML semantiek-opties, stem af met Developer
+
+**🚩 Checkpoint**: Toegankelijkheidscriteria vastgesteld
+
+## Bepaal de semantiek
+
+**Doel**: Zorg ervoor dat de component goed werkt voor hulpsoftware en voldoet aan de NL Design System architectuur.
+
+**Waarom belangrijk?** Semantische HTML zorgt ervoor dat de component ook zonder CSS begrijpelijk is voor hulpsoftware zoals screenreaders. Dit is vereist voor WCAG succescriteria 1.3.1 en 4.1.2.
+
+### Acties
+
+1. Bepaal HTML elementen en attributen bij meerdere valide opties
+2. Schrijf acceptatiecriteria voor HTML elementen
+3. Schrijf acceptatiecriteria voor HTML attributen (TypeScript attributen die inherit, regels over combineren)
+4. Onderzoek microdata voor zoekmachines
+5. Stem af met Design System Lead
+6. Documenteer in GitHub issue
+
+**🚩 Checkpoint**: Semantiek vastgesteld
+
+## Bepaal de API
+
+**Doel**: Zorg ervoor dat de API gebaseerd is op gemeenschappelijke use cases, niet op organisatie-specifieke behoeften.
+
+**Waarom belangrijk?** Een consistente API maakt het makkelijker om componenten te leren gebruiken en om te wisselen tussen verschillende implementaties (React, Web Components, etc.).
+
+### Acties
+
+1. **Breng in kaart welke API's community componenten hebben** (modifiers in CSS, props in React/Angular/Vue, slots in Webcomponenten)
+
+   **Als Developer**: Maak een overzichtsdocument (bijvoorbeeld in Miro of Figma), bekijk implementaties, lijst modifiers (alles na `--`), props (inclusief children), attributen en slots.
+
+   **Als Designer**: Maak een overzichtsdocument, bekijk Figma properties en opties.
+
+2. **Vind vergelijkbare componenten** - Check of APIs consistent kunnen zijn. Overweeg groepje door Estafettemodel (bijv. Text Input + Textarea).
+
+3. **Bepaal welke API wijzigingen doorgevoerd worden**
+
+**🚩 Checkpoint**: API vastgesteld
+
+## Bepaal testcases
+
+**Doel**: Bepaal en documenteer testcases voor Storybook om de component in realistische situaties te testen.
+
+**Waarom belangrijk?** Door de component te testen met verschillende content, schermformaten en contexten, ontdek je vroeg problemen die in productie kunnen optreden.
+
+**Denk aan**:
+
+- Verschillende schermafmetingen (min/max breedte, responsive)
+- Geen, weinig, veel en vreemde content (gebruik echte voorbeelden uit screenshots en overzichtsdocumenten)
+- Vertalingen (Fins, Japans, Arabisch)
+- Forced-colors-mode (voor gebruikers met contrastinstellingen)
+- Contexten uit productie (bijv. Button in Tabel of Page Header)
+
+**🚩 Checkpoint**: Testcases vastgesteld
+
+## Bepaal design tokens
+
+**Doel**: Zorg ervoor dat de component aangepast kan worden aan diverse huisstijlen met design tokens.
+
+**Waarom belangrijk?** Design tokens zorgen ervoor dat organisaties de component kunnen aanpassen aan hun eigen huisstijl zonder de code te hoeven wijzigen.
+
+### Acties
+
+1. **Maak overzicht in tabellen** - Overzichtsdocument met tokens uit implementaties en GitHub discussion. Let op: geen value = niet gebruikt, check ook via Inspect Element (browser developer tools).
+
+   Voorbeeld Paragraph:
+
+   | Paragraph   | Amsterdam | Den Haag | DUO | Open Formulieren | Open Gemeenten | Rotterdam | RVO | Utrecht |
+   | ----------- | --------- | -------- | --- | ---------------- | -------------- | --------- | --- | ------- |
+   | font-family | ✅        | ✅       | ✅  | ✅               | ✅             | ✅        | ✅  | ✅      |
+   | font-size   | ✅        | ✅       | -   | ✅               | -              | -         | ✅  | ✅      |
+
+2. **Verzamel tokens voor states** - Aparte tabel voor interactieve elementen (bijv. Button hover/pressed).
+
+3. **Verzamel tokens voor varianten** - Aparte tabel inclusief state tokens binnen variant.
+
+4. **Bepaal welke tokens nuttig zijn** (welke snowflakes, welke voldoen niet aan richtlijnen)
+
+5. **Bespreek met Design System Lead**
+
+6. **Documenteer in GitHub Discussion**:
+
+```md
+## Candidate voorbereidingsfase: Design tokens bepaald
+
+De design tokens zijn bepaald op basis van alle designs in deze Discussion.
+Als een beslissing 2+ keer voorkomt, dan is het algemeen nuttig!
+
+### Deze design tokens nemen we mee:
+
+Beschikbare design tokens: [{component}-tokens/tokens.json]({url}).
+
+### Deze varianten nemen we niet mee:
+
+{optioneel: beschrijf waarom}
+
+### Mis je een design token?
+
+Laat het weten als er uit gebruikersonderzoek blijkt dat dit een verbetering zou zijn.
+
+**💡 Tip**
+Je kunt varianten ook als extentie toevoegen. Vraag ons er gerust naar.
+```
+
+7. Bepaal logische common tokens
+8. Leg vast in tokens.json (NPM: `@nl-design-system-candidate/{component}-tokens`)
+9. Zorg dat tokens NL Design System naming conventies volgen en geprefixed zijn met 'nl'
+
+**🚩 Checkpoint**: Design tokens vastgesteld
+
+## Bepaal zoekwoorden (aliassen)
+
+**Doel**: Zorg ervoor dat de component makkelijk te vinden is, ook als mensen andere namen gebruiken.
+
+**Waarom belangrijk?** Organisaties gebruiken vaak verschillende namen voor dezelfde component. Door aliassen toe te voegen, kunnen mensen de component vinden ongeacht welke term ze gebruiken.
+
+### Acties
+
+1. **Verzamel alternatieve namen** - Gebruik een tool zoals Mentimeter om een wordcloud te maken, haal input op bij de community, noteer hoe vaak elke naam genoemd wordt, selecteer de 0-5 meest genoemde namen.
+
+2. **Voeg toe aan candidate repository** - Bestand `aliases.md` in docs folder:
+
+```md
+<!-- @license CC0-1.0 -->
+
+# Aliassen
+
+Ook bekend als: {alias-1}, {alias-2} en {alias-3}.
+```
+
+PR met:
+
+- Commit: `docs: candidate aliases for {naam-component}`
+- Branch: `docs/candidate-aliases-for-{naam-component}`
+
+3. **Voeg toe aan documentatie repository** - In metadata bovenin `index.mdx`:
+
+```yaml
+keywords:
+  - alias-1
+  - alias-2
+  - etc
+```
+
+PR met:
+
+- Commit: `docs: candidate aliases as keywords for {naam-component}`
+- Branch: `docs/candidate-aliases-as-keywords-for-{naam-component}`
+
+**🚩 Checkpoint**: Zoekwoorden (aliassen) vastgesteld
+
+## Vertaal acceptatiecriteria naar tests
+
+**Doel**: Vertaal alle acceptatiecriteria naar testbare stories in Storybook en specs.
+
+**Waarom belangrijk?** Door acceptatiecriteria om te zetten in automatische tests, weet je zeker dat de component aan alle eisen voldoet en blijft voldoen bij toekomstige wijzigingen.
+
+### Acties
+
+1. **Verzamel alle acceptatiecriteria** - Maak een overzichtsdocument met linkjes naar criteria uit vorige stappen.
+
+2. **Beschrijf a11y tests**
+
+3. **Maak packages beschikbaar** in https://github.com/nl-design-system/candidate:
+
+   - css component
+   - react component
+   - component docs
+   - Optioneel: mapjes in storybook-test, storybook-non-conforming, storybook
+
+4. **Maak testplan voor unit tests** (juiste HTML element, role, accessible names, states in accessibility tree)
+
+5. **Vertaal acceptatiecriteria naar Stories** - Per acceptatiecriterium:
+
+   Maak lege Story:
+
+   ```javascript
+   export const ButtonWithInvisibleLabel: Story = {
+     name: 'Button with invisible label',
+     args: {},
+     parameters: {
+       docs: {
+         description: {
+           story: `Een Button met daarin een Icon, zonder bijbehorend zichtbaar label.
+   Het label wordt wel meegenomen als aria-label`,
+         },
+       },
+     },
+   };
+   ```
+
+   Of spec file:
+
+   ```
+   Describe('Button met onzichtbaar label') {
+    It('De Button heeft een onzichtbaar label, die goed leesbaar is met een screenreader')
+   }
+   ```
+
+   - Zoek community componenten die aan criteria voldoen
+   - Test community componenten in lege Stories
+   - Werk samen met Design System Lead
+
+6. **Documenteer missende functionaliteit** in overzichtsdocument
+
+**🚩 Checkpoint**: Acceptatiecriteria vertaald naar tests
+
+## Deel de voorbereidingen met de community
+
+**Doel**: Feedback krijgen op het plan van aanpak voordat je begint met ontwikkelen.
+
+**Waarom belangrijk?** De community kan nog waardevolle feedback geven die voorkomt dat je dingen moet aanpassen tijdens of na de ontwikkeling.
+
+Plaats in Slack:
+
+```md
+📣 Joehoe!! We hebben de voorbereidingen om {component-naam} Candidate te maken getroffen. Dat betekent dat we diep hebben nagedacht over de varianten, design tokens, semantiek en anatomie.
+Je kunt al onze overwegingen vinden in de [GitHub Discussion van {component-naam}]({discussion-url}).
+
+Mis je iets? Laat ons dan via die Discussion weten wat dat is en waarom je het zo belangrijk vindt.
+```
+
+**🚩 Checkpoint**: Voorbereidingen gedeeld met Community
+
+---
+
+## Volgende stap
+
+Ga door naar de [Ontwikkelfase](/handboek/component-bijdragen/candidate/ontwikkelfase).
+
+## Vragen?
+
+Heb je een vraag over de Voorbereidingsfase?
+
+- Wil je samen werken aan componenten? Kom naar een [Estafettemodeldag](/community/events/estafettemodeldag)
+- Stel je vraag in het Slack kanaal `#nl-design-system` op [Code for NL](https://praatmee.codefor.nl/)
+- Kom naar de [Design Open Hour](/events/design-open-hour) of [Developer Open Hour](/events/developer-open-hour)
+- Neem contact op met het [kernteam](/project/kernteam)
