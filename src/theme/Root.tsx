@@ -4,7 +4,6 @@ import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/custom.css';
 import '@nl-design-system-community/ma-design-tokens/dist/variables.css';
 import { PageLayout } from '@utrecht/page-layout-react/css';
-import Head from '@docusaurus/Head';
 
 import '@utrecht/root-css/dist/html/index.css';
 import '@utrecht/document-css/dist/html/index.css';
@@ -13,9 +12,6 @@ import '@utrecht/document-css/dist/html/index.css';
 function Root({ children }: PropsWithChildren<object>) {
   return (
     <>
-      <Head>
-        <html className="ma-theme" />
-      </Head>
       <PageLayout className="ma-theme">{children}</PageLayout>
     </>
   );
