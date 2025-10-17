@@ -61,6 +61,8 @@
 
       /* todo: add this to example theme so we don't have to manually override it here */
       .voorbeeld-theme {
+        --utrecht-textbox-value-max-length: 4;
+
         --ams-typography-hyphenate-limit-chars: 12 8 4;
         --ams-breadcrumb-font-family: 'Amsterdam Sans', Arial, sans-serif;
         --ams-breadcrumb-separator-background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%23000000' fill-rule='evenodd' d='m9.757 32-2.9-2.91L19.937 16 6.857 2.91 9.757 0l16 16z'/></svg>");
@@ -115,7 +117,6 @@
               <label for="site-search" class="ams-visually-hidden">Zoeken op de site</label>
               <input
                 id="site-search"
-                style="max-width: 60%; margin-inline-end: 0.3rem; font-size: 1rem; height: 3rem"
                 placeholder="Bijvoorbeeld zwembad of grofvuil"
                 type="search"
                 class="utrecht-textbox utrecht-textbox--html-input"
