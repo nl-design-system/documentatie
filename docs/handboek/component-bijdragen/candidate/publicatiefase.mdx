@@ -1,0 +1,513 @@
+---
+title: Publicatiefase · Candidate · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Publicatiefase
+sidebar_position: 7
+pagination_label: Candidate Publicatiefase
+description: Gedetailleerde stappen voor de Publicatiefase van Candidate componenten
+slug: /handboek/component-bijdragen/candidate/publicatiefase
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - candidate
+  - publicatie
+  - release
+---
+
+{/* @license CC0-1.0 */}
+
+# Publicatiefase
+
+## In het kort
+
+In de publicatiefase maak je de Candidate component beschikbaar voor de community. Je publiceert de component naar NPM, publiceert de Figma bibliotheek, update de website, en laat de community weten dat de component beschikbaar is. Het resultaat is een component die door iedereen gebruikt kan worden.
+
+**Wat doe je in deze fase?**
+
+- NPM packages publiceren
+- Figma bibliotheek publiceren
+- Component status updaten
+- Website updaten
+- Community informeren
+
+---
+
+## Publiceer naar NPM
+
+**Doel**: Maak de component beschikbaar via NPM zodat developers deze kunnen installeren en gebruiken.
+
+**Waarom belangrijk?** NPM is de standaard manier waarop JavaScript packages worden gedistribueerd. Hierdoor kunnen teams de component eenvoudig in hun projecten gebruiken.
+
+### Acties
+
+1. **Verwijder `private: true` uit package.json** (indien aanwezig):
+
+   Voor elk package dat gepubliceerd moet worden:
+
+   - React: `packages/component-library-react/package.json`
+   - CSS: `packages/components-css/{component-name}/package.json`
+   - Docs: `packages/component-docs/{component-name}/package.json`
+
+   Verwijder of zet op `false`:
+
+   ```json
+   {
+     "private": false, // Of verwijder deze regel
+     "name": "@nl-design-system-candidate/{component-name}"
+   }
+   ```
+
+   Maak een PR met deze wijziging:
+
+   ```
+   Title: feat: make {component-name} packages public
+
+   Description:
+   Prepares {component-name} packages for NPM publication.
+
+   - Removed private flag from package.json files
+   - Ready for changeset and release
+   ```
+
+   Vraag review van het kernteam en merge.
+
+2. **Maak een changeset**:
+
+   a. **Run changeset command**:
+
+   ```bash
+   npx changeset
+   ```
+
+   b. **Selecteer packages**:
+
+   - Gebruik spatiebalk om packages te selecteren
+   - Selecteer alle component packages:
+     - `@nl-design-system-candidate/component-library-react`
+     - `@nl-design-system-candidate/{component-name}-css`
+     - `@nl-design-system-candidate/{component-name}`
+
+   c. **Kies versie bump**:
+
+   - Voor nieuwe component: kies `minor` (0.x.0 → 0.x+1.0)
+   - Voor breaking changes: kies `major`
+   - Voor bugfixes: kies `patch`
+
+   d. **Schrijf changelog**:
+
+   ```md
+   Add {ComponentName} component
+
+   - Initial release of {ComponentName} as Candidate component
+   - Includes React, CSS and documentation
+   - Fully accessible and tested
+   ```
+
+   e. **Commit de changeset**:
+
+   ```bash
+   git add .changeset/
+   git commit -m "changeset: add {component-name} component"
+   git push
+   ```
+
+3. **Controleer package.json bestanden** voordat je publiceert:
+
+   Elk package moet hebben:
+
+   ```json
+   {
+     "name": "@nl-design-system-candidate/{component-name}",
+     "version": "0.1.0",
+     "license": "EUPL-1.2",
+     "keywords": [
+       "nl-design-system",
+       "candidate",
+       "{component-name}",
+       "component",
+       "react" // of "css" of "documentation"
+     ],
+     "repository": {
+       "type": "git",
+       "url": "https://github.com/nl-design-system/candidate.git",
+       "directory": "packages/{package-directory}"
+     },
+     "publishConfig": {
+       "access": "public"
+     }
+   }
+   ```
+
+4. **Wacht op de "Version Packages" PR**:
+
+   a. **Changesets bot maakt automatisch een PR**:
+
+   - Titel: "Version Packages"
+   - Bevat alle changelog updates
+   - Verhoogt versienummers
+
+   b. **Review de PR**:
+
+   - Check of versienummers correct zijn
+   - Check of changelogs kloppen
+   - Check of alle packages zijn meegenomen
+
+   c. **Merge de PR**:
+
+   - Na merge publiceert GitHub Actions automatisch naar NPM
+   - Wait for the "Publish" workflow to complete
+
+5. **Controleer of publicatie gelukt is**:
+
+   a. **Check NPM**:
+
+   - React: https://www.npmjs.com/package/@nl-design-system-candidate/component-library-react
+   - CSS: https://www.npmjs.com/package/@nl-design-system-candidate/{component-name}-css
+   - Docs: https://www.npmjs.com/package/@nl-design-system-candidate/{component-name}
+
+   b. **Test installatie**:
+
+   ```bash
+   npm install @nl-design-system-candidate/{component-name}-css
+   npm install @nl-design-system-candidate/component-library-react
+   ```
+
+   c. **Check versienummers**:
+
+   ```bash
+   npm info @nl-design-system-candidate/{component-name}-css version
+   ```
+
+**🚩 Checkpoint**: NPM packages gepubliceerd
+
+## Publiceer Figma bibliotheek
+
+**Doel**: Maak de Figma component beschikbaar voor designers in de community.
+
+**Waarom belangrijk?** Designers moeten de component kunnen gebruiken in hun designs om te testen of deze werkt voor hun organisatie.
+
+### Acties
+
+1. **Controleer het component in de Candidate Bibliotheek**:
+
+   - Alle varianten zijn beschikbaar
+   - Design tokens zijn correct toegepast
+   - Documentatie is toegevoegd in Figma
+   - States zijn beschikbaar (hover, focus, disabled, etc.)
+   - Interactive prototypes werken
+
+2. **Publiceer de bibliotheek**:
+
+   a. **Open de Candidate Bibliotheek** in Figma
+
+   b. **Klik op "Publish changes"** (rechtsboven, book icon met pijltje)
+
+   c. **Schrijf release notes**:
+
+   ```md
+   🆕 New Component: {ComponentName}
+
+   We've added the {ComponentName} component to the Candidate library.
+
+   **What's included:**
+
+   - All variants and states
+   - Interactive prototypes
+   - Design tokens configured
+   - Full documentation
+
+   **How to use:**
+   Search for "{ComponentName}" in the Assets panel and drag it onto your canvas.
+
+   **Feedback welcome!**
+   Let us know in #nl-design-system on Slack if you have any questions or suggestions.
+   ```
+
+   d. **Selecteer wat te publiceren**:
+
+   - Check dat de {ComponentName} is geselecteerd
+   - Check dat alle varianten zijn meegenomen
+
+   e. **Klik op "Publish"**
+
+   f. **Wacht op bevestiging** - Figma toont een success melding
+
+3. **Test de publicatie**:
+
+   - Open een test bestand
+   - Controleer of de nieuwe component beschikbaar is
+   - Test of updates van bestaande instanties werken
+
+4. **Documenteer in GitHub Discussion**:
+
+   ```md
+   ## 🎨 Figma component gepubliceerd
+
+   De {component-naam} is nu beschikbaar in de Candidate Bibliotheek.
+
+   **Hoe te gebruiken:**
+
+   1. Open je Figma bestand
+   2. Zoek naar "Candidate" in de bibliotheek
+   3. Zoek de {component-naam}
+   4. Sleep deze naar je canvas
+
+   **Link naar bibliotheek:** [Candidate Bibliotheek]({figma-url})
+   ```
+
+**🚩 Checkpoint**: Figma bibliotheek gepubliceerd
+
+## Update component status
+
+**Doel**: Update de status van de component in alle systemen zodat duidelijk is dat het een Candidate component is.
+
+**Waarom belangrijk?** Dit zorgt ervoor dat de component op de juiste plekken verschijnt en dat iedereen weet wat de status is.
+
+### Acties
+
+1. **Update GitHub labels**:
+
+   - Verwijder "Help Wanted" label
+   - Voeg "Candidate" label toe
+   - Update milestone indien van toepassing
+
+2. **Update project boards**:
+
+   - Verplaats component naar "Candidate" kolom
+   - Voeg checkpoints toe die nog gedaan moeten worden
+   - Link alle relevante issues en PRs
+
+3. **Update GitHub Discussion**:
+   Plaats dit bericht in de Discussion:
+
+   ```md
+   ## 🎉 Component is nu Candidate!
+
+   De {component-naam} heeft de Candidate status bereikt!
+
+   **Wat betekent dit?**
+
+   - De component is getest en voldoet aan kwaliteitseisen
+   - Je kunt de component gebruiken in je projecten
+   - We verzamelen nog feedback voor verbetering
+   - De component kan nog breaking changes krijgen
+
+   **Hoe te gebruiken:**
+
+   - **NPM**: `npm install @nl-design-system-candidate/{component-naam}`
+   - **Figma**: Beschikbaar in de Candidate Bibliotheek
+   - **Documentatie**: [Component pagina]({docs-url})
+
+   **Help mee!**
+   Gebruik je de component? Laat het ons weten! Je feedback helpt om de component naar Hall of Fame te brengen.
+   ```
+
+**🚩 Checkpoint**: Status geüpdatet
+
+## Update website
+
+**Doel**: Zorg dat de component zichtbaar is op nldesignsystem.nl met de juiste status en documentatie.
+
+**Waarom belangrijk?** De website is de centrale plek waar mensen componenten ontdekken en documentatie vinden.
+
+### Acties
+
+1. **Update component-progress.json**:
+
+   ```json
+   {
+     "id": "{component-naam}",
+     "title": "{Component naam}",
+     "aliases": ["alias-1", "alias-2"],
+     "implementations": [
+       {
+         "organisation": "nl-design-system-candidate",
+         "status": "CANDIDATE",
+         "links": {
+           "npm": "https://www.npmjs.com/package/@nl-design-system-candidate/{component-naam}",
+           "documentation": "/componenten/{component-naam}/",
+           "github": "https://github.com/nl-design-system/candidate/tree/main/packages/{component-naam}"
+         }
+       }
+     ]
+   }
+   ```
+
+2. **Voeg documentatie toe** aan de docs repository:
+
+   - Component pagina met alle documentatie
+   - Voorbeelden en code snippets
+   - Links naar Storybook
+
+3. **Test de website lokaal**:
+
+   - Controleer of de component op de juiste plek staat
+   - Test of alle links werken
+   - Controleer of de documentatie goed leesbaar is
+
+4. **Maak een PR** naar de documentatie repository
+
+5. **Na merge**: Controleer of de component zichtbaar is op de live website
+
+**🚩 Checkpoint**: Website geüpdatet
+
+## Valideer unit test coverage
+
+**Doel**: Zorg ervoor dat de component voldoende test coverage heeft voordat deze gepubliceerd wordt.
+
+**Waarom belangrijk?** Goede test coverage geeft zekerheid dat de component blijft werken bij toekomstige wijzigingen.
+
+### Acties
+
+1. **Run coverage report**:
+
+   ```bash
+   npm test -- --coverage
+   ```
+
+2. **Check coverage percentages**:
+
+   - Streef naar minimaal 80% statement coverage
+   - Streef naar minimaal 80% branch coverage
+   - Streef naar 100% coverage voor kritieke functionaliteit
+
+3. **Review coverage report**:
+
+   - Open `coverage/lcov-report/index.html` in browser
+   - Check welke lines niet gedekt zijn
+   - Bepaal of deze lines test coverage nodig hebben
+
+4. **Voeg missende tests toe** indien nodig
+
+5. **Documenteer in PR**:
+
+   ```md
+   ## Test Coverage
+
+   - Statement coverage: 85%
+   - Branch coverage: 82%
+   - Function coverage: 90%
+   - Line coverage: 85%
+   ```
+
+**🚩 Checkpoint**: Unit test coverage gevalideerd
+
+## Wacht met promoten
+
+**Doel**: Geef de community tijd om de component te ontdekken en te testen voordat je deze breed promoot.
+
+**Waarom belangrijk?** Door even te wachten kunnen early adopters de component testen en eventuele kinderziektes worden opgelost voordat veel mensen het gaan gebruiken. Dit voorkomt dat je een buggy component breed promoot, wat vertrouwen in het systeem kan schaden.
+
+### Acties
+
+1. **Zet checkpoint "Promotie" op "Done"**:
+
+   - Dit doe je **vóór** je begint met promoten
+   - Dit helpt om bij te houden wanneer de promotie plaatsvindt
+   - In het projectbord: vink de "Promotie" checkbox aan
+
+2. **Wacht 1-2 weken** na publicatie
+
+3. **Monitor tijdens deze periode**:
+
+   - GitHub issues die binnenkomen
+   - Vragen in Slack
+   - Feedback via Open Hours
+   - NPM download statistieken
+
+4. **Los eventuele issues op**:
+
+   - Kritieke bugs direct fixen (en nieuwe versie publiceren)
+   - Kleine verbeteringen doorvoeren
+   - Documentatie aanscherpen waar nodig
+   - Test met early adopters
+
+5. **Evalueer of de component klaar is voor promotie**:
+   - Zijn er kritieke bugs gevonden? → Los eerst op
+   - Is de documentatie compleet? → Verbeter indien nodig
+   - Werkt de component in verschillende contexten? → Test nog meer
+
+**🚩 Checkpoint**: Wachttijd voltooid
+
+## Deel met de community
+
+**Doel**: Laat de community weten dat er een nieuwe Candidate component beschikbaar is.
+
+**Waarom belangrijk?** Zonder promotie weten mensen niet dat de component bestaat. Door het te delen vergroot je de kans op gebruik en feedback.
+
+### Acties
+
+1. **Post in Slack** (#nl-design-system):
+
+   ```md
+   🎉 Nieuw Candidate component: {Component naam}!
+
+   We hebben de {component-naam} component ontwikkeld en getest. Deze is nu beschikbaar als Candidate component.
+
+   **Wat kan de component:**
+   [Korte beschrijving van functionaliteit]
+
+   **Hoe te gebruiken:**
+
+   - NPM: `npm install @nl-design-system-candidate/{component-naam}`
+   - Figma: Beschikbaar in de Candidate Bibliotheek
+   - Docs: https://nldesignsystem.nl/componenten/{component-naam}/
+
+   **We zoeken testers!**
+   Gebruik je de component? Laat het ons weten! Je feedback helpt om de component naar Hall of Fame status te brengen.
+
+   GitHub Discussion: {discussion-url}
+   ```
+
+2. **Optioneel: Schrijf een nieuwsbrief artikel**:
+
+   - Vertel het verhaal achter de component
+   - Deel interessante leerpunten
+   - Bedank contributors
+
+3. **Optioneel: Post op LinkedIn**:
+
+   - Tag relevante organisaties
+   - Deel visuele voorbeelden
+   - Link naar documentatie
+
+4. **Optioneel: Presenteer in Heartbeat**:
+   - Korte demo van de component
+   - Vertel over het ontwikkelproces
+   - Vraag om feedback
+
+**🚩 Checkpoint**: Community geïnformeerd
+
+## Component is gepubliceerd! 🎉
+
+De component is nu officieel een Candidate component en beschikbaar voor de hele community.
+
+**Wat nu?**
+
+- **Monitor gebruik**: Kijk of organisaties de component gebruiken
+- **Verzamel feedback**: Vraag actief om feedback via Slack en Open Hours
+- **Los issues op**: Fix bugs en maak verbeteringen op basis van feedback
+- **Werk richting Hall of Fame**: Als de component breed wordt gebruikt en alle feedback is verwerkt, kan deze naar Hall of Fame status
+
+**Wanneer is een component klaar voor Hall of Fame?**
+
+- Gebruikt in productie door minimaal 2 verschillende organisaties
+- Succesvolle toegankelijkheidsaudit in productie context
+- Geen bekende kritieke issues
+- Goede documentatie en voorbeelden
+- Stabiele API (geen breaking changes meer verwacht)
+
+Zie het [Hall of Fame stappenplan](/handboek/component-bijdragen/hall-of-fame-stappenplan) voor meer informatie.
+
+---
+
+## Vragen?
+
+Heb je een vraag over de Publicatiefase?
+
+- Wil je samen werken aan componenten? Kom naar een [Estafettemodeldag](/community/events/estafettemodeldag)
+- Stel je vraag in het Slack kanaal `#nl-design-system` op [Code for NL](https://praatmee.codefor.nl/)
+- Kom naar de [Design Open Hour](/events/design-open-hour) of [Developer Open Hour](/events/developer-open-hour)
+- Neem contact op met het [kernteam](/project/kernteam)

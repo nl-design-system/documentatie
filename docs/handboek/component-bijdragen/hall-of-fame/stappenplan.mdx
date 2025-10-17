@@ -3,18 +3,918 @@ title: Hall of Fame stappenplan · Component bijdragen · Handboek
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Stappenplan
-sidebar_position: 6
-pagination_label: Hall of Fame
-description: Stappen voor de Hall of Fame fase van Definition of Done
-slug: /handboek/estafettemodel/componenten/hall-of-fame-stappenplan
+sidebar_position: 1
+pagination_label: Hall of Fame Stappenplan
+description: Stappenplan voor het promoveren van Candidate componenten naar Hall of Fame status
+slug: /handboek/component-bijdragen/hall-of-fame/stappenplan
 keywords:
   - componenten
   - design system
   - estafettemodel
-  - definition of done
   - hall of fame
 ---
 
-# Stappenplan: Hall of Fame
+{/* @license CC0-1.0 */}
 
-Dit stappenplan is nog in ontwikkeling.
+# Hall of Fame Stappenplan
+
+Dit stappenplan is bedoeld voor het kernteam. Het proces bestaat uit twee hoofdfases: Selectie en Promotie.
+
+Een Candidate component kan Hall of Fame worden als deze bewezen heeft te werken in productie bij minimaal 2 verschillende organisaties, een toegankelijkheidsaudit succesvol heeft doorlopen, en een stabiele API heeft.
+
+---
+
+## 🎯 Selectiefase
+
+### Component gebruikt in templates
+
+**Doel**: Bevestigen dat de component werkt in realistische templates die door de community zijn gemaakt.
+
+**Waarom belangrijk?** Templates tonen hoe componenten in echte scenario's worden gecombineerd en gebruikt. Dit zijn de perfecte testomgevingen voor toegankelijkheidsaudits.
+
+#### Acties
+
+1. **Check welke templates de component gebruiken**:
+
+   - Bekijk Community Sprints
+   - Check GitHub repositories van templates
+   - Vraag in Slack welke templates de component bevatten
+
+2. **Evalueer template geschiktheid voor audit**:
+
+   - Bevat de template verschillende varianten van de component?
+   - Wordt de component in verschillende contexten gebruikt?
+   - Is de template representatief voor echt gebruik?
+
+3. **Minimaal vereist**:
+
+   - Component wordt gebruikt in minimaal 1 community template
+   - Template bevat meerdere use cases van de component
+   - Template is publiek beschikbaar
+
+4. **Documenteer template gebruik**:
+
+   ```md
+   ## Templates die {component-naam} gebruiken
+
+   - **Template naam**: {naam}
+     - Repository: {url}
+     - Gebruikt varianten: {lijst}
+     - Contexten: {beschrijving}
+   ```
+
+**🚩 Checkpoint**: Template gebruik geverifieerd
+
+### Component gebruikt in productie bij minimaal 2 organisaties
+
+**Doel**: Bevestigen dat de component breed bruikbaar is en niet alleen voor één specifieke situatie werkt.
+
+**Waarom belangrijk?** Gebruik in productie bewijst dat de component geschikt is voor echte projecten en dat organisaties er vertrouwen in hebben.
+
+#### Acties
+
+1. **Inventariseer productie gebruik**:
+
+   - Check welke organisaties de Candidate component gebruiken
+   - Vraag in Slack en Open Hours naar productie implementaties
+   - Bekijk GitHub Discussions voor meldingen van gebruik
+
+2. **Verifieer productie status**:
+
+   - Is de component live op een publieke website?
+   - Wordt de component actief door eindgebruikers gebruikt?
+   - Is de implementatie representatief (niet alleen één pagina)?
+
+3. **Documenteer productie gebruik**:
+
+   - Organisatie naam
+   - URL waar component gebruikt wordt
+   - Welke varianten worden gebruikt
+   - Hoe lang al in productie
+   - Contact persoon voor vervolgvragen
+
+4. **Check diversiteit**:
+   - Zijn het echt 2+ verschillende organisaties (niet 2 projecten van dezelfde organisatie)?
+   - Verschillen de use cases (verschillende contexten, verschillende huisstijlen)?
+
+**🚩 Checkpoint**: Productie gebruik geverifieerd
+
+### Toegankelijkheidsaudit in community templates
+
+**Doel**: Garanderen dat de component toegankelijk is in realistische templates die door de community beschikbaar zijn gesteld.
+
+**Waarom belangrijk?** Door templates te gebruiken hoeven we geen toestemming te vragen aan externe organisaties en kunnen we de component testen in verschillende realistische contexten.
+
+#### Acties
+
+1. **Selecteer template(s) voor audit**:
+
+   - Gebruik de templates uit de vorige checkpoint
+   - Kies template(s) waar component het meest divers wordt gebruikt
+   - Bij voorkeur meerdere templates om verschillende contexten te testen
+
+2. **Voer WCAG-EM audit uit op templates**:
+
+   - Volg de [WCAG-EM methodologie](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
+   - Focus op de component binnen de template context
+   - Test op WCAG 2.2 niveau AA
+   - Test in verschillende browsers en met verschillende hulpmiddelen:
+     - Screenreaders (NVDA, JAWS, VoiceOver)
+     - Toetsenbordnavigatie
+     - Zoom tot 200%
+     - Forced-colors mode
+
+3. **Documenteer audit resultaten**:
+
+   ```md
+   ## Hall of Fame toegankelijkheidsaudit
+
+   **Audit uitgevoerd door**: {naam toegankelijkheidsspecialist}
+   **Datum**: {datum}
+   **Template(s)**: {naam template(s)}
+   **URLs**: {urls van templates}
+   **WCAG versie**: 2.2 Level AA
+
+   ### Scope
+
+   - Templates: {lijst van geteste templates}
+   - Component varianten: {lijst}
+   - Browsers: {lijst}
+   - Hulpmiddelen: {lijst}
+
+   ### Resultaten
+
+   - ✅ Succescriteria die voldoen: {aantal}/XX
+   - ⚠️ Issues gevonden: {aantal}
+   - 🔧 Issues opgelost: {aantal}
+
+   ### Kritieke issues
+
+   {Beschrijving van eventuele kritieke toegankelijkheidsproblemen}
+
+   ### Aanbevelingen
+
+   {Aanbevelingen voor verbetering}
+   ```
+
+4. **Los kritieke issues op**:
+
+   - Maak GitHub issues voor gevonden problemen
+   - Fix in Candidate component
+   - Publiceer update
+   - Update templates en retest
+
+5. **Verkrijg audit certificaat/rapport**:
+   - Officieel rapport van de audit
+   - Bewijs dat component in templates aan WCAG 2.2 AA voldoet
+
+**🚩 Checkpoint**: Toegankelijkheidsaudit succesvol
+
+### Stabiele API zonder breaking changes verwacht
+
+**Doel**: Garanderen dat teams de component veilig kunnen updaten zonder onverwachte problemen.
+
+**Waarom belangrijk?** Hall of Fame componenten moeten betrouwbaar zijn. Teams moeten er op kunnen vertrouwen dat updates veilig zijn.
+
+#### Acties
+
+1. **Evalueer API stabiliteit**:
+
+   - Zijn er nog bekende problemen met de API?
+   - Zijn er feature requests die breaking changes vereisen?
+   - Zijn prop/class namen consistent met andere Hall of Fame componenten?
+
+2. **Check feedback van gebruikers**:
+
+   - Zijn er klachten over de API?
+   - Missen gebruikers essentiële features?
+   - Zijn er verwarringen over hoe de component te gebruiken?
+
+3. **Besluit over API finalisatie**:
+
+   - Moeten er nog last-minute breaking changes worden doorgevoerd?
+   - Zo ja: doe dit NU, voordat component Hall of Fame wordt
+   - Documenteer waarom de API klaar is
+
+4. **Commit aan semantic versioning**:
+   - Van nu af aan: alleen breaking changes in major releases
+   - Feature toevoegingen in minor releases
+   - Bugfixes in patch releases
+
+**🚩 Checkpoint**: API stabiel
+
+### Documentatie compleet en getest
+
+**Doel**: Garanderen dat gebruikers de component correct kunnen implementeren zonder hulp.
+
+**Waarom belangrijk?** Incomplete of onduidelijke documentatie leidt tot verkeerd gebruik en frustratie.
+
+#### Acties
+
+1. **Review documentatie volledigheid**:
+
+   - ✅ "Wanneer wel/niet gebruiken" is helder
+   - ✅ Code voorbeelden voor React, HTML/CSS
+   - ✅ Alle props/variants gedocumenteerd
+   - ✅ Toegankelijkheidscriteria met WCAG referenties
+   - ✅ Design tokens uitgelegd
+   - ✅ Do's and don'ts met visuals
+   - ✅ Praktische voorbeelden voor alle doelgroepen
+
+2. **Test documentatie met echte gebruikers**:
+
+   - Laat iemand die component niet kent hem implementeren
+   - Kunnen ze het zonder extra hulp?
+   - Welke vragen komen op?
+   - Wat mist er?
+
+3. **Verbeter op basis van feedback**:
+   - Voeg missende informatie toe
+   - Verduidelijk verwarrende secties
+   - Voeg meer voorbeelden toe waar nodig
+
+**🚩 Checkpoint**: Documentatie compleet
+
+### Community feedback verzameld
+
+**Doel**: Garanderen dat de community akkoord is met promotie naar Hall of Fame.
+
+**Waarom belangrijk?** De community is de gebruiker - hun feedback bepaalt of de component klaar is.
+
+#### Acties
+
+1. **Kondig aan dat component overwogen wordt voor Hall of Fame**:
+
+   Post in Slack:
+
+   ```md
+   📣 We overwegen {component-naam} te promoveren naar Hall of Fame!
+
+   De component wordt gebruikt door {organisatie-1} en {organisatie-2} in productie en heeft een toegankelijkheidsaudit doorlopen.
+
+   **Laatste kans voor feedback!**
+
+   - Mis je features?
+   - Heb je issues gevonden?
+   - Zou je iets anders willen zien?
+
+   Laat het ons weten in de [GitHub Discussion]({url}) vóór {deadline}.
+   ```
+
+2. **Wacht 2 weken** op feedback
+
+3. **Verwerk feedback**:
+
+   - Kritieke issues: moeten opgelost worden vóór promotie
+   - Feature requests: evalueer of dit nu moet of later kan
+   - Nice-to-haves: voeg toe aan backlog voor toekomstige releases
+
+4. **Besluit of component klaar is**:
+   - Zijn alle kritieke issues opgelost?
+   - Is de community tevreden?
+   - Zijn er geen blokkerende bezwaren?
+
+**🚩 Checkpoint**: Community feedback verwerkt
+
+### Verbeter Candidate component op basis van feedback
+
+**Doel**: Verwerk alle feedback en verbeteringen voordat de component Hall of Fame wordt.
+
+**Waarom belangrijk?** Dit is de laatste kans om breaking changes door te voeren voordat we naar versie 1.0.0 gaan. Na Hall of Fame promotie moeten breaking changes wachten tot een major release.
+
+#### Acties
+
+1. **Prioriteer feedback**:
+
+   - **Must-have**: Kritieke bugs, toegankelijkheidsproblemen, API inconsistenties
+   - **Should-have**: Belangrijke features, grote verbeteringen
+   - **Nice-to-have**: Kleine verbeteringen, optimalisaties
+
+2. **Implementeer must-have verbeteringen**:
+
+   - Fix kritieke bugs
+   - Los toegankelijkheidsproblemen op
+   - Maak API consistent met andere Hall of Fame componenten
+   - Implementeer essentiële features
+
+3. **Evalueer should-have verbeteringen**:
+
+   - Overleg met kernteam: implementeren nu of later?
+   - Als later: voeg toe aan backlog voor toekomstige minor releases
+   - Als nu: implementeer voordat je doorgaat
+
+4. **Publiceer updates als nieuwe Candidate versie**:
+
+   ```bash
+   npx changeset
+   ```
+
+   - Kies `minor` voor features, `patch` voor bugfixes
+   - Schrijf duidelijke changelog
+   - Merge Version Packages PR
+
+5. **Informeer gebruikers over updates**:
+   Post in Slack:
+
+   ```md
+   📦 {component-naam} Candidate update!
+
+   We hebben feedback verwerkt en de component verbeterd:
+
+   - ✅ [Belangrijkste verbetering 1]
+   - ✅ [Belangrijkste verbetering 2]
+   - ✅ [Belangrijkste verbetering 3]
+
+   **Breaking changes?** {Ja/Nee}
+   {Als ja: beschrijf migratiestappen}
+
+   Update: `npm install @nl-design-system-candidate/{component-name}@latest`
+
+   We gaan nu verder met de Hall of Fame promotie!
+   ```
+
+6. **Wacht op bevestiging**:
+
+   - Geef gebruikers 1 week om te testen
+   - Los eventuele nieuwe issues op
+   - Bevestig dat er geen blokkerende problemen zijn
+
+7. **Documenteer finale state**:
+
+   ```md
+   ## Candidate component verbeterd voor Hall of Fame
+
+   **Versie**: {versienummer}
+   **Datum**: {datum}
+
+   ### Verbeteringen doorgevoerd:
+
+   - {Lijst van alle wijzigingen}
+
+   ### Breaking changes:
+
+   - {Lijst, of "Geen"}
+
+   ### Bekende beperkingen:
+
+   - {Lijst, of "Geen"}
+
+   De component is nu klaar voor Hall of Fame promotie.
+   ```
+
+**🚩 Checkpoint**: Candidate component verbeterd
+
+---
+
+## 🚀 Promotiefase
+
+### Migreer van @nl-design-system-candidate naar @nl-design-system
+
+**Doel**: Verplaats packages van candidate scope naar main scope.
+
+**Waarom belangrijk?** Hall of Fame componenten horen onder de `@nl-design-system` scope, niet meer onder `@nl-design-system-candidate`. Dit moet gebeuren voordat we versie 1.0.0 publiceren.
+
+#### Acties
+
+1. **Update package.json files**:
+
+   - Wijzig package naam:
+     - Was: `@nl-design-system-candidate/{component-name}`
+     - Wordt: `@nl-design-system/{component-name}`
+   - Update in alle packages:
+     - React: `packages/component-library-react/package.json`
+     - CSS: `packages/components-css/{component-name}/package.json`
+     - Docs: `packages/component-docs/{component-name}/package.json`
+
+2. **Update cross-references**:
+
+   - Update dependencies in andere packages die dit component gebruiken
+   - Update imports in documentatie
+   - Update repository links
+
+3. **Maak migratie guide**:
+
+   ```md
+   ## Migration from Candidate to Hall of Fame
+
+   The {ComponentName} has graduated to Hall of Fame status and is now published under `@nl-design-system` scope.
+
+   ### Update your dependencies:
+
+   **Before:**
+   \`\`\`json
+   {
+   "dependencies": {
+   "@nl-design-system-candidate/component-library-react": "^0.5.0"
+   }
+   }
+   \`\`\`
+
+   **After:**
+   \`\`\`json
+   {
+   "dependencies": {
+   "@nl-design-system/component-library-react": "^1.0.0"
+   }
+   }
+   \`\`\`
+
+   ### Update your imports:
+
+   Imports remain the same - only the package name changes.
+   ```
+
+4. **Test de nieuwe package structuur**:
+   - Build lokaal
+   - Test of alle imports werken
+   - Test of Storybook nog werkt
+
+**🚩 Checkpoint**: Package scope gemigreerd
+
+### Migreer component naar nl-design-system/components repository
+
+**Doel**: Verplaats de component code van de candidate repository naar de main components repository.
+
+**Waarom belangrijk?** Hall of Fame componenten horen thuis in de hoofdrepository, niet in de candidate repository. Dit maakt duidelijk dat de component nu onder beheer van het kernteam valt.
+
+#### Acties
+
+1. **Bereid migratie voor**:
+
+   - Clone beide repositories:
+     ```bash
+     git clone https://github.com/nl-design-system/candidate
+     git clone https://github.com/nl-design-system/components
+     ```
+
+2. **Kopieer component packages**:
+
+   - Van `candidate/packages/` naar `components/packages/`:
+     - React component
+     - CSS component
+     - Documentation
+     - Design tokens
+
+3. **Update package.json in main repo**:
+
+   - Verwijder alle verwijzingen naar `@nl-design-system-candidate`
+   - Gebruik `@nl-design-system` scope (dit is al gedaan in vorige stap)
+   - Update dependencies tussen packages
+   - Update repository URLs
+
+4. **Update build configuratie**:
+
+   - Voeg component toe aan main repo builds
+   - Update Storybook configuratie
+   - Update TypeScript configuratie
+   - Test of alles build
+
+5. **Maak PR naar nl-design-system/components**:
+
+   ```
+   Title: feat: migrate {ComponentName} from candidate to Hall of Fame
+
+   Description:
+   Migrates {ComponentName} from candidate repository to main components repository for Hall of Fame status.
+
+   - ✅ All packages moved
+   - ✅ Package scope updated to @nl-design-system
+   - ✅ Build configuration updated
+   - ✅ Tests passing
+
+   Related: [link to candidate PR/issue]
+   ```
+
+6. **Review en merge**:
+
+   - Laat kernteam reviewen
+   - Test lokaal of packages builden
+   - Merge naar main
+
+7. **Verwijder uit candidate repository**:
+   - Maak PR om component te verwijderen uit candidate repo
+   - Voeg README toe die verwijst naar nieuwe locatie:
+
+     ```md
+     # {ComponentName} - Moved to Hall of Fame
+
+     This component has been promoted to Hall of Fame and moved to:
+     https://github.com/nl-design-system/components/tree/main/packages/{component-name}
+
+     **NPM**: `@nl-design-system/{component-name}`
+     ```
+
+**🚩 Checkpoint**: Component gemigreerd naar main repository
+
+### Verhoog versienummer naar 1.0.0
+
+**Doel**: Markeer de component als stabiel met semantic versioning.
+
+**Waarom belangrijk?** Versie 1.0.0 signaleert aan gebruikers dat de component productierijp en stabiel is.
+
+#### Acties
+
+1. **Maak changeset voor major release**:
+
+   ```bash
+   npx changeset
+   ```
+
+   - Selecteer alle packages
+   - Kies `major` (gaat naar 1.0.0)
+   - Schrijf changelog:
+
+   ```md
+   🎉 Hall of Fame Release!
+
+   The {ComponentName} has reached Hall of Fame status:
+
+   - ✅ Used in production by multiple organizations
+   - ✅ Passed WCAG 2.2 AA accessibility audit
+   - ✅ Stable API with semantic versioning
+   - ✅ Complete documentation
+
+   This is now a stable release with guarantees on accessibility, usability and API stability.
+   ```
+
+2. **Merge Version Packages PR**:
+
+   - Review versienummers (moet 1.0.0 zijn)
+   - Check changelogs
+   - Merge en wacht op NPM publicatie
+
+3. **Verifieer publicatie**:
+   - Check NPM: versie 1.0.0 is beschikbaar
+   - Test installatie
+
+**🚩 Checkpoint**: Versie 1.0.0 gepubliceerd
+
+### Deprecate oude @nl-design-system-candidate packages
+
+**Doel**: Zorg dat gebruikers van de oude candidate packages worden geïnformeerd over de migratie.
+
+**Waarom belangrijk?** Gebruikers die nog de oude candidate packages gebruiken moeten weten dat ze moeten migreren naar de nieuwe Hall of Fame packages.
+
+#### Acties
+
+1. **Deprecate oude packages op NPM**:
+
+   ```bash
+   npm deprecate @nl-design-system-candidate/{component-name} "Moved to @nl-design-system/{component-name}. This package is no longer maintained."
+   ```
+
+   Doe dit voor alle packages:
+
+   - React component library
+   - CSS component
+   - Documentation package
+
+2. **Update README van oude packages**:
+   Voeg toe aan de README van de candidate packages:
+
+   ```md
+   # ⚠️ Deprecated - Moved to @nl-design-system
+
+   This package has been moved to `@nl-design-system/{component-name}` and is no longer maintained.
+
+   Please update your dependencies to use the new package.
+
+   See the [migration guide](link) for instructions.
+   ```
+
+3. **Informeer gebruikers**:
+   - Post migratie guide in Slack
+   - Voeg toe aan component documentatie
+   - Vermeld in release notes
+
+**🚩 Checkpoint**: Oude packages deprecated
+
+### Update component status naar Hall of Fame
+
+**Doel**: Markeer de component als Hall of Fame in alle systemen.
+
+#### Acties
+
+1. **Update GitHub labels**:
+
+   - Verwijder "Candidate" label
+   - Voeg "Hall of Fame" label toe
+
+2. **Update project board**:
+
+   - Verplaats naar "Hall of Fame" kolom
+   - Sluit Candidate issue
+   - Maak nieuw Hall of Fame issue voor onderhoud
+
+3. **Update component-progress.json**:
+
+   ```json
+   {
+     "organisation": "nl-design-system",
+     "status": "HALL_OF_FAME",
+     "links": {
+       "npm": "https://www.npmjs.com/package/@nl-design-system/{component-name}",
+       "documentation": "/componenten/{component-name}/",
+       "github": "https://github.com/nl-design-system/components/tree/main/packages/{component-name}"
+     }
+   }
+   ```
+
+   Note: `organisation` verandert van `nl-design-system-candidate` naar `nl-design-system`
+
+4. **Update website documentatie**:
+
+   - Voeg Hall of Fame badge toe aan component pagina
+   - Update status in navigatie
+   - Vermeld garanties (toegankelijkheid, stabiliteit)
+
+5. **Update GitHub Discussion**:
+
+   ```md
+   ## 🏆 Component is Hall of Fame!
+
+   De {component-naam} heeft de Hall of Fame status bereikt!
+
+   **Wat betekent dit?**
+
+   - ✅ Bewezen in productie bij meerdere organisaties
+   - ✅ WCAG 2.2 AA toegankelijkheidsaudit gepasseerd
+   - ✅ Stabiele API met semantic versioning
+   - ✅ Garantie op ondersteuning door het kernteam
+
+   **NPM**: `npm install @nl-design-system/{component-name}`
+   **Versie**: 1.0.0
+   **Documentatie**: [Component pagina]({docs-url})
+   ```
+
+**🚩 Checkpoint**: Status geüpdatet
+
+### Migreer van @nl-design-system-candidate naar @nl-design-system
+
+**Doel**: Verplaats packages van candidate scope naar main scope.
+
+**Waarom belangrijk?** Hall of Fame componenten horen onder de `@nl-design-system` scope, niet meer onder `@nl-design-system-candidate`.
+
+#### Acties
+
+1. **Publiceer onder nieuwe scope**:
+
+   - Packages krijgen nieuwe naam:
+     - Was: `@nl-design-system-candidate/{component-name}`
+     - Wordt: `@nl-design-system/{component-name}`
+   - Publiceer versie 1.0.0 onder nieuwe naam
+
+2. **Deprecate oude packages**:
+
+   ```bash
+   npm deprecate @nl-design-system-candidate/{component-name} "Moved to @nl-design-system/{component-name}. This package is no longer maintained."
+   ```
+
+3. **Maak migratie guide**:
+
+   ```md
+   ## Migration from Candidate to Hall of Fame
+
+   The {ComponentName} has graduated to Hall of Fame status and is now published under `@nl-design-system` scope.
+
+   ### Update your dependencies:
+
+   **Before:**
+   \`\`\`json
+   {
+   "dependencies": {
+   "@nl-design-system-candidate/component-library-react": "^0.5.0"
+   }
+   }
+   \`\`\`
+
+   **After:**
+   \`\`\`json
+   {
+   "dependencies": {
+   "@nl-design-system/component-library-react": "^1.0.0"
+   }
+   }
+   \`\`\`
+
+   ### Update your imports:
+
+   Imports remain the same - only the package name changes.
+   ```
+
+4. **Informeer gebruikers**:
+   - Post migratie guide in Slack
+   - Voeg toe aan component documentatie
+   - Link vanuit deprecated package README
+
+**🚩 Checkpoint**: Package gemigreerd
+
+### Deel met de community
+
+**Doel**: Vier de mijlpaal en informeer de community over de nieuwe Hall of Fame component.
+
+#### Acties
+
+1. **Post in Slack** (#nl-design-system):
+
+   ```md
+   🏆 {ComponentName} is nu Hall of Fame!
+
+   We zijn trots om aan te kondigen dat de {component-naam} component Hall of Fame status heeft bereikt.
+
+   **Wat betekent dit?**
+
+   - Bewezen in productie door {organisatie-1} en {organisatie-2}
+   - WCAG 2.2 AA gecertificeerd
+   - Stabiele API (v1.0.0) met semantic versioning
+   - Garantie op ondersteuning door het kernteam
+
+   **NPM**: `@nl-design-system/{component-name}`
+   **Docs**: https://nldesignsystem.nl/componenten/{component-name}/
+
+   **Dank aan alle contributors!**
+   Dank aan {lijst van contributors} voor jullie bijdragen aan deze component.
+   ```
+
+2. **Schrijf blog post**:
+
+   - Vertel het verhaal van de component
+   - Van Help Wanted naar Hall of Fame
+   - Dank contributors en organisaties
+   - Deel leerpunten
+
+3. **Post op LinkedIn**:
+
+   - Tag betrokken organisaties
+   - Deel visuele voorbeelden
+   - Link naar blog post
+
+4. **Vermeld in nieuwsbrief**:
+
+   - Kondig aan in volgende NL Design System nieuwsbrief
+   - Inclusief screenshot en link
+
+5. **Presenteer in Heartbeat**:
+   - Demo van de component
+   - Verhaal van selectie tot Hall of Fame
+   - Dank contributors
+
+**🚩 Checkpoint**: Community geïnformeerd
+
+## Component is Hall of Fame! 🏆
+
+De component heeft nu de hoogste status met garanties op:
+
+- ✅ **Toegankelijkheid** - WCAG 2.2 AA gecertificeerd
+- ✅ **Gebruiksvriendelijkheid** - Bewezen in productie
+- ✅ **Stabiliteit** - Semantic versioning en changelogs
+- ✅ **Ondersteuning** - Maintained door kernteam
+- ✅ **Documentatie** - Compleet en getest
+
+**Wat nu?**
+
+- **Monitor gebruik**: Houd bij hoe vaak component wordt gebruikt
+- **Onderhoud**: Blijf bugs fixen en verbeteringen doorvoeren
+- **Support**: Help organisaties met implementatie
+- **Updates**: Plan minor/major releases voor nieuwe features
+- **Re-audit**: Plan periodieke toegankelijkheidsaudits (zie hieronder)
+
+### Periodieke re-audits plannen
+
+**Doel**: Garanderen dat Hall of Fame componenten blijven voldoen aan toegankelijkheidseisen, ook na updates.
+
+**Waarom belangrijk?** WCAG standaarden evolueren, browsers veranderen, en componenten krijgen updates. Regelmatige audits zorgen ervoor dat de Hall of Fame status betekenisvol blijft.
+
+#### Re-audit schema
+
+1. **Na elke major release** (breaking changes):
+
+   - Volledige WCAG-EM audit vereist
+   - Test alle nieuwe features en gewijzigde functionaliteit
+   - Update audit rapport
+   - Los eventuele issues op vóór publicatie
+
+2. **Na significante minor releases** (nieuwe features):
+
+   - Audit van nieuwe functionaliteit
+   - Spot check van bestaande functionaliteit
+   - Update audit rapport met bevindingen
+
+3. **Jaarlijkse re-audit** (zelfs zonder updates):
+
+   - Volledige WCAG-EM audit
+   - Test met nieuwste browser versies
+   - Test met nieuwste hulpmiddelen (screenreaders, etc.)
+   - Check of component nog voldoet aan huidige WCAG versie
+   - Update audit rapport
+
+4. **Bij WCAG versie updates**:
+   - Wanneer een nieuwe WCAG versie uitkomt (bijv. 2.2 → 2.3)
+   - Evalueer impact op component
+   - Voer audit uit volgens nieuwe versie
+   - Implementeer benodigde wijzigingen
+
+#### Re-audit proces
+
+1. **Plan de audit**:
+
+   - Voeg toe aan kernteam planning
+   - Wijs toegankelijkheidsspecialist toe
+   - Reserveer tijd voor eventuele fixes
+
+2. **Voer audit uit**:
+
+   - Gebruik zelfde templates als originele audit
+   - Test met actuele browser/hulpmiddel versies
+   - Documenteer bevindingen
+
+3. **Verwerk resultaten**:
+
+   - Maak GitHub issues voor gevonden problemen
+   - Prioriteer fixes (kritiek/belangrijk/nice-to-have)
+   - Implementeer en test fixes
+   - Update component
+
+4. **Publiceer en communiceer**:
+
+   - Publiceer nieuwe versie (patch/minor)
+   - Update audit rapport op website
+   - Informeer community via Slack:
+
+     ```md
+     ✅ {ComponentName} re-audit voltooid!
+
+     We hebben de jaarlijkse/post-release toegankelijkheidsaudit uitgevoerd.
+
+     **Resultaat**: {aantal} issues gevonden en opgelost
+     **WCAG versie**: {versie} Level AA
+     **Nieuwe versie**: {versienummer}
+
+     De component voldoet nog steeds aan alle toegankelijkheidseisen.
+
+     Update: `npm install @nl-design-system/{component-name}@latest`
+     ```
+
+5. **Documenteer in GitHub Discussion**:
+
+   ```md
+   ## Hall of Fame re-audit {jaar}
+
+   **Audit uitgevoerd door**: {naam}
+   **Datum**: {datum}
+   **WCAG versie**: {versie} Level AA
+   **Component versie**: {versie}
+
+   ### Bevindingen:
+
+   - {Lijst van issues}
+
+   ### Oplossingen:
+
+   - {Lijst van fixes}
+
+   ### Nieuwe versie:
+
+   - {versienummer} met alle fixes
+
+   De component behoudt Hall of Fame status.
+   ```
+
+#### Bij niet-slagen van re-audit
+
+Als een component de re-audit niet haalt:
+
+1. **Bepaal ernst**:
+
+   - Kritieke issues: Degradeer naar Candidate tot fixes zijn doorgevoerd
+   - Kleine issues: Behoud Hall of Fame maar documenteer known issues
+
+2. **Communiceer transparant**:
+
+   ```md
+   ⚠️ {ComponentName} re-audit: issues gevonden
+
+   Bij de jaarlijkse audit zijn {aantal} toegankelijkheidsissues gevonden.
+
+   **Status**: {Behouden Hall of Fame / Tijdelijk Candidate}
+   **Issues**: [Link naar GitHub issues]
+   **Fix deadline**: {datum}
+
+   We werken aan oplossingen en houden jullie op de hoogte.
+   ```
+
+3. **Fix en her-audit**:
+   - Los issues op met prioriteit
+   - Voer nieuwe audit uit
+   - Herstel Hall of Fame status na succesvolle audit
+
+---
+
+## Vragen?
+
+Heb je een vraag over het Hall of Fame stappenplan?
+
+- Wil je samen werken aan componenten? Kom naar een [Estafettemodeldag](/community/events/estafettemodeldag)
+- Stel je vraag in het Slack kanaal `#nl-design-system` op [Code for NL](https://praatmee.codefor.nl/)
+- Kom naar de [Design Open Hour](/events/design-open-hour) of [Developer Open Hour](/events/developer-open-hour)
+- Neem contact op met het [kernteam](/project/kernteam)
