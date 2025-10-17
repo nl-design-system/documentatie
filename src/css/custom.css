@@ -18,10 +18,35 @@
 }
 
 :root {
-  --docsearch-modal-background: white;
-  --docsearch-muted-color: var(--basis-color-default-color-default);
-  --docsearch-key-gradient: var(--ma-docsearch-button-key-background-color);
   hyphenate-limit-chars: 12 8 4;
+
+  /* docsearch tokens */
+  --ma-docsearch-button-background-color: white;
+  --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
+  --ma-docsearch-button-border-radius: var(--basis-border-radius-md);
+  --ma-docsearch-button-font-family: var(--utrecht-button-font-family);
+  --ma-docsearch-button-hover-background-color: var(--utrecht-button-secondary-action-hover-background-color);
+  --ma-docsearch-button-hover-border-color: var(--utrecht-button-secondary-action-hover-border-color);
+  --ma-docsearch-button-hover-color: var(--utrecht-button-secondary-action-hover-color);
+  --ma-docsearch-button-key-background-color: var(--basis-color-accent-1-bg-default);
+  --ma-docsearch-button-key-color: inherit;
+  --ma-docsearch-button-key-hover-background-color: var(--basis-color-action-1-inverse-bg-default);
+  --ma-docsearch-button-key-hover-color: white;
+  --ma-docsearch-button-key-active-background-color: var(--basis-color-action-1-inverse-bg-default);
+  --ma-docsearch-button-key-active-color: white;
+  --ma-docsearch-button-key-focus-visible-background-color: black;
+  --ma-docsearch-button-key-focus-visible-color: white;
+  --ma-docsearch-button-padding-block-end: var(--basis-space-block-lg);
+  --ma-docsearch-button-padding-block-start: var(--basis-space-block-lg);
+  --ma-docsearch-button-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-docsearch-button-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-docsearch-modal-searchbox-background-color: var(--basis-color-default-bg-document);
+  --ma-docsearch-modal-border-color: var(--basis-color-default-border-subtle);
+  --ma-docsearch-modal-background-color: var(--basis-color-default-bg-subtle);
+  --ma-docsearch-modal-color: var(--basis-color-default-color-document);
+  --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
+  --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
+  --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
 }
 
 .ma-theme {
@@ -115,34 +140,10 @@
   --utrecht-link-text-underline-offset: 4px !important;
 
   --ifm-footer-link-horizontal-spacing: 20px;
+}
 
-  /* docsearch tokens */
-  --ma-docsearch-button-background-color: white;
-  --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
-  --ma-docsearch-button-border-radius: var(--basis-border-radius-md);
-  --ma-docsearch-button-font-family: var(--utrecht-button-font-family);
-  --ma-docsearch-button-hover-background-color: var(--utrecht-button-secondary-action-hover-background-color);
-  --ma-docsearch-button-hover-border-color: var(--utrecht-button-secondary-action-hover-border-color);
-  --ma-docsearch-button-hover-color: var(--utrecht-button-secondary-action-hover-color);
-  --ma-docsearch-button-key-background-color: var(--basis-color-accent-1-bg-default);
-  --ma-docsearch-button-key-color: inherit;
-  --ma-docsearch-button-key-hover-background-color: var(--basis-color-action-1-inverse-bg-default);
-  --ma-docsearch-button-key-hover-color: white;
-  --ma-docsearch-button-key-active-background-color: var(--basis-color-action-1-inverse-bg-default);
-  --ma-docsearch-button-key-active-color: white;
-  --ma-docsearch-button-key-focus-visible-background-color: black;
-  --ma-docsearch-button-key-focus-visible-color: white;
-  --ma-docsearch-button-padding-block-end: var(--basis-space-block-lg);
-  --ma-docsearch-button-padding-block-start: var(--basis-space-block-lg);
-  --ma-docsearch-button-padding-inline-end: var(--basis-space-inline-xl);
-  --ma-docsearch-button-padding-inline-start: var(--basis-space-inline-xl);
-  --ma-docsearch-modal-searchbox-background-color: var(--basis-color-default-bg-document);
-  --ma-docsearch-modal-border-color: var(--basis-color-default-border-subtle);
-  --ma-docsearch-modal-background-color: var(--basis-color-default-bg-subtle);
-  --ma-docsearch-modal-color: var(--basis-color-default-color-document);
-  --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
-  --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
-  --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
+.ma-theme .navbar__logo {
+  margin-right: 0;
 }
 
 .navbar__brand:focus-visible {
@@ -230,6 +231,7 @@ p {
   border-block-start-style: solid;
   border-color: transparent;
   align-content: center;
+  line-height: 2;
 }
 
 .ma-navigation-bar-item:hover {
@@ -316,20 +318,15 @@ p {
 /* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
 .DocSearch {
   --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
-  --docsearch-muted-color: var(--basis-color-accent-2-color-default);
-  --docsearch-logo-color: var(--basis-color-accent-2-color-default);
-  --docsearch-icon-color: var(--basis-color-accent-2-color-default);
-  --docsearch-highlight-color: var(--basis-color-accent-2-color-default);
+  --docsearch-muted-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-logo-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-icon-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-highlight-color: var(--utrecht-button-secondary-action-color);
   --docsearch-hit-highlight-color: var(--ma-docsearch-modal-hit-background-color);
-  --docsearch-modal-background: white;
+  --docsearch-modal-background: var(--ma-docsearch-modal-background-color);
   --docsearch-searchbox-focus-background: var(--ma-docsearch-modal-searchbox-background-color);
   --docsearch-footer-backround: var(--ma-docsearch-modal-searchbox-background-color);
-  --docsearch-searchbox-background: var(--ma-docsearch-button-background-color);
-  --docsearch-text-color: var(--basis-color-accent-2-color-default);
-}
-
-.DocSearch kbd {
-  font-size: 100%;
+  --docsearch-text-color: var(--ma-docsearch-modal-color);
 }
 
 .DocSearch-Input {
@@ -364,12 +361,6 @@ p {
   text-decoration: none;
 }
 
-.DocSearch-Back-Icon,
-.DocSearch-Search-Icon {
-  color: var(--docsearch-highlight-color);
-  stroke-width: 1.6;
-}
-
 .DocSearch-Trigger {
   align-items: center;
   box-sizing: border-box;
@@ -393,6 +384,10 @@ p {
     border-color: var(--ma-docsearch-button-hover-border-color);
     color: var(--ma-docsearch-button-hover-border-color);
   }
+  &:focus-visible {
+    --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
+    --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
+  }
 }
 
 .DocSearch-Trigger .DocSearch-Button-Key {
@@ -400,27 +395,7 @@ p {
 
   background-color: var(--ma-docsearch-button-key-background-color);
   border: none;
-  box-shadow: none;
   color: var(--ma-docsearch-button-key-color);
-}
-
-.DocSearch-Button-Key {
-  align-items: center;
-  background: var(--docsearch-key-background);
-  border: 0;
-  border: 1px solid color-mix(in srgb, var(--docsearch-subtle-color) 20%, transparent);
-  border-radius: 4px;
-  box-shadow: none !important;
-  color: var(--docsearch-key-color);
-  display: flex;
-  font-size: 14px;
-  height: 24px;
-  justify-content: center;
-  position: relative;
-  transition-duration: 0.1s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 24px;
 }
 
 .DocSearch-Button-Placeholder {
@@ -539,6 +514,10 @@ aside button[title="Zijbalk inklappen"],
 .footer__link-item {
   text-underline-offset: var(--utrecht-link-text-underline-offset);
   text-decoration-skip-ink: auto;
+}
+
+.footer__link-item svg {
+  display: none;
 }
 
 .theme-doc-sidebar-container {
@@ -759,13 +738,31 @@ code {
   padding: 0;
 }
 
-@media screen and (max-width: 62.25rem) {
+@media screen and (max-width: 70rem) {
+  .navbar__brand {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 62rem) {
   .navbar__items:first-of-type {
     justify-content: space-between;
   }
 
   .navbar__items--right {
-    min-width: 40%;
+    min-width: 40vw;
+  }
+}
+
+@media screen and (max-width: 29rem) {
+  .navbar__items--right {
+    min-width: 30vw;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .navbar__items--right {
+    min-width: 25vw;
   }
 }
 

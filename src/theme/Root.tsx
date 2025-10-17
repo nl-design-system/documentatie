@@ -2,7 +2,7 @@ import type { PropsWithChildren } from 'react';
 import '@nl-design-system-unstable/nlds-design-tokens/src/font.mjs';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/custom.css';
-import '@nl-design-system-community/ma-design-tokens/dist/theme.css';
+import '@nl-design-system-community/ma-design-tokens/dist/variables.css';
 import { PageLayout } from '@utrecht/page-layout-react/css';
 
 import '@utrecht/root-css/dist/html/index.css';
