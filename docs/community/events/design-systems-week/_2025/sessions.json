@@ -130,7 +130,7 @@
     "isoDateTime": "2025-10-30T15:30:00.000Z",
     "speakers": ["RobbertBroersma"],
     "subject": "Live coden met Robbert",
-    "icalLink": "",
+    "icalLink": "/dsweek-2025/aan-de-slag-met-NL-design-system.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   }
 ]
