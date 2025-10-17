@@ -9,7 +9,12 @@ slug: /events/design-systems-week-2025/programma
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png
 ---
 
-import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import {
+  ButtonGroup as ActionGroup,
+  ButtonLink,
+  Paragraph,
+  Link,
+} from "@utrecht/component-library-react/dist/css-module";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "./\_2025/sessions.json";
 import speakers from "./\_2025/speakers.json";
@@ -33,6 +38,21 @@ import { DSWSession } from "@site/src/components/DSWSession";
     <IconChevronRight />
   </ButtonLink>
 </ActionGroup>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="74d8600f-b404-4e3d-a41e-9f652d8f9455"
+  headingLevel={2}
+>
+
+  <Paragraph>
+    Hoe kunnen steden hun design systems transparanter, consistenter en gebruiksvriendelijker maken voor developers? De stad Wenen vond een antwoord in het Custom Elements Manifest (CEM) — een bestandsformaat dat custom elements beschrijft en web components makkelijker documenteerbaar en bruikbaar maakt in code editors.
+  </Paragraph>
+  <Paragraph>
+    In deze sessie laat Manuel Matuzović zien hoe Wenen CEM toepast om hun pattern library te documenteren en te onderhouden. Hij demonstreert hoe deze aanpak de bruikbaarheid, toegankelijkheid en samenwerking tussen teams verbetert.  
+  </Paragraph>
+</DSWSession>
 
 <DSWSession
   allSpeakers={speakers}
@@ -69,6 +89,15 @@ import { DSWSession } from "@site/src/components/DSWSession";
   websites, ook wanneer toegankelijkheid sterk afhankelijk is van context. Aan de hand van de Button-component legt ze
   uit welke rol toegankelijkheid speelt in het proces van Community component tot Candidate component binnen NL Design
   System.
+</Paragraph>
+
+</DSWSession>
+
+<DSWSession allSpeakers={speakers} allSessions={sessions} sessionId="b4c4bb07-c796-4cfa-ae84-be172caef3e5" headingLevel={2}>
+
+<Paragraph>
+  Tijdens de NL Design System Heartbeat - Design Systems Week editie deelt de community de laatste updates. Meer lezen
+  over de Heartbeat? Dat kan! <Link href="/events/heartbeat/videos/">Bekijk de Heartbeats van de afgelopen jaren</Link>
 </Paragraph>
 
 </DSWSession>
@@ -167,6 +196,30 @@ import { DSWSession } from "@site/src/components/DSWSession";
 <DSWSession
   allSpeakers={speakers}
   allSessions={sessions}
+  sessionId="b56156e5-9490-43fb-8e5b-ef2676ec16a9"
+  headingLevel={2}
+>
+  <Paragraph>
+    Schiphol heeft de ambitie om de beste digitale luchthaven ter wereld te worden, niet alleen voor reizigers, maar ook
+    voor medewerkers. Achter de schermen werken dagelijks honderden collega’s aan een soepele werking van de luchthaven.
+    Of het nu gaat om het voorspellen van wachttijden bij de paspoortcontrole met algoritmes of het rapporteren van
+    veiligheidsincidenten via mobiele apps: design en data spelen een belangrijke rol in deze digitale oplossingen.
+  </Paragraph>
+  <Paragraph>
+    Het ontwerpen van tools voor intern gebruik vraagt om een andere aanpak dan het ontwerpen voor consumenten. Een
+    belangrijk onderdeel van die aanpak is het Enterprise Design System van Schiphol. Dit systeem zorgt voor samenhang
+    in de interne digitale producten en helpt om een hoge standaard te zetten voor productontwerp binnen de organisatie.
+  </Paragraph>
+  <Paragraph>
+    Tijdens deze sessie delen Joel Laumans en Pim Dieks het verhaal achter het ontstaan en de groei van dit design
+    system. Het is een eerlijk verhaal over de uitdagingen, dilemma’s en successen die zijn opgedaan bij het bouwen aan
+    een consistent digitaal fundament binnen een complexe organisatie.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
   sessionId="e1b87a0c-f57b-4607-9d97-f319642f73d0"
   headingLevel={2}
 >
@@ -189,5 +242,19 @@ import { DSWSession } from "@site/src/components/DSWSession";
     Evalien deelt in haar sessie de lessen die DUO de afgelopen jaren heeft geleerd. Hoe breek je vertrouwen in je
     design system onbewust af, en belangrijker: hoe bouw je het weer op? Aan de hand van praktijkvoorbeelden vertelt ze
     over de problemen die zijn ontstaan en hoe DUO werkt aan oplossingen.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="d20970a9-4fd1-423e-8c5e-2b621d704f37"
+  headingLevel={2}
+>
+  <Paragraph>
+    Robbert Broersma sluit Design Systems Week traditiegetrouw af met een live coding sessie. Hij bouwt iets nieuws met
+    componenten uit NL Design System, laat zien hoe web components werken in de praktijk, en gaat de uitdaging aan om te
+    laten zien wat er allemaal mogelijk is. Wat hij precies gaat bouwen? Dat weet hij zelf ook nog niet! Maar één ding
+    is zeker: het wordt spectaculair. De perfecte afsluiter van een week vol design systems.
   </Paragraph>
 </DSWSession>

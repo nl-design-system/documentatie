@@ -2,16 +2,10 @@
   {
     "uuid": "74d8600f-b404-4e3d-a41e-9f652d8f9455",
     "isoDateTime": "2025-10-27T10:00:00.000Z",
-    "speakers": [
-      {
-        "name": "",
-        "organisation": ""
-      }
-    ],
-    "subject": "",
-    "sessionLink": "",
-    "icalLink": "",
-    "language": { "abbr": "", "description": "" }
+    "speakers": ["ManuelMatuzovic"],
+    "subject": "Documenting Vienna’s Pattern Library",
+    "icalLink": "/dsweek-2025/documenting-viennas-pattern-library.ics",
+    "language": { "abbr": "EN", "description": "English" }
   },
   {
     "uuid": "5faa9816-8348-4111-9780-eaa44d964308",
@@ -54,16 +48,10 @@
   {
     "uuid": "b4c4bb07-c796-4cfa-ae84-be172caef3e5",
     "isoDateTime": "2025-10-28T12:00:00.000Z",
-    "speakers": [
-      {
-        "name": "",
-        "organisation": ""
-      }
-    ],
-    "subject": "",
-    "sessionLink": "",
-    "icalLink": "",
-    "language": { "abbr": "", "description": "" }
+    "speakers": [],
+    "subject": "NL Design System Heartbeat",
+    "icalLink": "/heartbeat/heartbeat.ics",
+    "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
     "uuid": "4077d9c1-acd9-4ff5-9d2c-2b89a5e3bd08",
@@ -116,16 +104,10 @@
   {
     "uuid": "b56156e5-9490-43fb-8e5b-ef2676ec16a9",
     "isoDateTime": "2025-10-30T10:00:00.000Z",
-    "speakers": [
-      {
-        "name": "",
-        "organisation": ""
-      }
-    ],
-    "subject": "",
-    "sessionLink": "",
-    "icalLink": "",
-    "language": { "abbr": "", "description": "" }
+    "speakers": ["JoelLaumans", "PimDieks"],
+    "subject": "Schiphol Airport Operations - De kracht van een Enterprise Design System",
+    "icalLink": "/dsweek-2025/schiphol-airport-operations.ics",
+    "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
     "uuid": "e1b87a0c-f57b-4607-9d97-f319642f73d0",
@@ -146,15 +128,9 @@
   {
     "uuid": "d20970a9-4fd1-423e-8c5e-2b621d704f37",
     "isoDateTime": "2025-10-30T15:30:00.000Z",
-    "speakers": [
-      {
-        "name": "",
-        "organisation": ""
-      }
-    ],
-    "subject": "",
-    "sessionLink": "",
+    "speakers": ["RobbertBroersma"],
+    "subject": "Live coden met Robbert",
     "icalLink": "",
-    "language": { "abbr": "", "description": "" }
+    "language": { "abbr": "NL", "description": "Nederlands" }
   }
 ]
