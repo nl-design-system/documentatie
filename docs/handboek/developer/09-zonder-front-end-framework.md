@@ -74,11 +74,15 @@ Mocht je vanuit de organistatie waarvoor je werkt al een huisstijl gebruiken, da
 :::
 
 Zie ook [het voorbeeld thema](/handboek/huisstijl/themas/voorbeeld-thema#voorbeeld-thema).
-Voeg de onderstaande class toe aan de body van je HTML pagina:
+Zet het thema bij voorkeur op de `html` root.
 
 ```html
-<body class="voorbeeld-theme"></body>
+<html lang="nl" dir="ltr" class="utrecht-root voorbeeld-theme"></html>
 ```
+
+:::info
+Wil je het thema toch beperken tot een deel van de pagina, dan kun je het op een wrapper-element toepassen. Voor de meeste pagina’s is toepassen op `html` de beste keuze.
+:::
 
 Importeer de CSS van het voorbeeld thema en de design tokens:
 
@@ -111,10 +115,21 @@ Dit wordt niet aangeraden omdat je dan veel meer code dan nodig importeert, en j
 
 Het logo kan als svg aangeleverd worden. Je kunt er voor kiezen om een eigen logo neer te zetten of die van [het voorbeeld thema](/svg/voorbeeld-thema-logo.svg) te gebruiken.
 
+:::info[SVG via `<img>` vs inline SVG]
+Gebruik bij voorkeur inline SVG voor iconen en UI‑symbolen:
+
+- Inline SVG ondersteunt theming (`currentColor`, CSS‑variabelen) en high‑contrast/forced‑colors.
+- States (hover/focus/active) zijn te stylen met CSS.
+
+Wanneer `<img src="…svg">` wel kan:
+
+- Voor decoratieve, kleurvaste afbeeldingen die door contentmakers worden beheerd.
+  :::
+
 Het logo kunnen we als volgt toevoegen:
 
 ```html
-<img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+<img src="/svg/voorbeeld-thema-logo.svg" alt="Logo van het Voorbeeld thema" />
 ```
 
 Wanneer je het logo op je lokale file system hebt opgeslagen in hetzelfde mapje als de html, dan moet je verwijzen naar `./voorbeeld-thema-logo.svg`.
@@ -135,7 +150,7 @@ Om het design na te bouwen, doe je nog een paar aanpassingen en kom je op het vo
 <header class="ams-page-header">
   <nav aria-labelledby="primary-navigation" class="ams-page-header__navigation">
     <h2 class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</h2>
-    <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+    <img src="/svg/voorbeeld-thema-logo.svg" alt="Logo van het Voorbeeld thema" />
     <ul role="list" class="ams-page-header__menu">
       <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
         <a class="nl-link" href="#">Contact</a>
@@ -152,7 +167,6 @@ Om het design na te bouwen, doe je nog een paar aanpassingen en kom je op het vo
           <label for="site-search" class="ams-visually-hidden">Zoeken op de site</label>
           <input
             id="site-search"
-            style="max-width: 60%; margin-inline-end: 0.3rem; font-size: 1rem; height: 3rem"
             placeholder="Bijvoorbeeld zwembad of grofvuil"
             type="search"
             class="ams-text-input"
@@ -189,8 +203,17 @@ En om de styling van de links goed te krijgen importeer je de NL Design System C
 
 ##### Visually Hidden
 
-Amsterdam gebruikt `aria-labelledby` met een verwijzing naar een ander element op de pagina om hulpsoftware meer informatie te geven over de landmarks op de pagina. Deze extra elementen hoeven niet zichtbaar te zijn. Daarom is het handig om de `visually-hidden` CSS van Amsterdam te importeren.
-Amsterdam heeft een component om elementen 'onzichtbaar' te maken, terwijl de inhoud wel beschikbaar blijft voor screenreader-gebruikers. Deze importeer je door middel van:
+Soms heb je tekst nodig die alleen voor een screenreader bedoeld is.
+Voorbeeld: Een website heeft verschillende secties, zoals 'Hoofdnavigatie', 'Hoofdinhoud' en 'Footer'. Voor een screenreader-gebruiker is het heel handig als deze secties (landmarks) een duidelijke naam hebben.
+Met het aria-labelledby attribuut kun je een sectie een naam geven door te verwijzen naar een titel op de pagina. Maar wat als je die titel niet zichtbaar wilt tonen, omdat het voor ziende gebruikers al duidelijk genoeg is?
+
+De Oplossing: visually-hidden
+Dit is precies waar de visually-hidden class voor dient.
+
+- Wat het doet: Het verbergt een element visueel, zodat het op het scherm niet te zien is.
+- Wat het niet doet: Het verwijdert het element niet. De inhoud blijft gewoon bestaan in de code en is daardoor nog steeds perfect leesbaar voor screenreaders.
+
+Amsterdam heeft een component om elementen 'onzichtbaar' te maken. Deze importeer je door middel van:
 
 ```html
 <link
@@ -274,7 +297,7 @@ De Amsterdam community heeft een Breadcrumb Navigation component dat lijkt op he
 Voeg de breadcrumbs component toe:
 
 ```html
-<nav class="ams-breadcrumb" aria-label="Breadcrumb">
+<nav class="ams-breadcrumb" aria-label="kruimelpad">
   <ol role="list" class="ams-breadcrumb__list">
     <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Home</a></li>
     <li class="ams-breadcrumb__item"><a href="#" class="nl-link">Meldingen</a></li>
@@ -309,6 +332,20 @@ En moet je de bijbehorende classes erop zetten:
 
 Ook zonder screenreader kun je zien dat de Skip Link nu verborgen is, maar nog wel bruikbaar is door de pagina te herladen en direct daarna op de "Tab" toets te drukken.
 
+Om de Skip Link te gebruiken moet je aangeven waar de hoofdinhoud is om naartoe te skippen:
+
+```html
+<main id="main"></main>
+```
+
+##### Waarom `<main id="main">` gebruiken?
+
+Het `<main>`-element markeert de hoofdinhoud van de pagina als een zogenaamde “landmark”. Dit helpt screenreader‑gebruikers om snel naar de hoofdinhoud te springen. Door `id="main"` toe te voegen, kan de skip‑link hier direct naartoe verwijzen. Richtlijnen:
+
+- Gebruik precies één `<main>` per pagina.
+- Plaats `id="main"` op `<main>` zodat de skip‑link (`href="#main"`) werkt.
+- Zet geen `main` binnen andere landmarks zoals `header`, `nav` of `footer`.
+
 #### Page Body
 
 De pagina begint er mooi uit te zien. Je kan echter zien dat de tekst helemaal links staat en de alinea's de volledige breedte in te nemen. Om dat op te lossen kun je de Utrecht page body gebruiken.
@@ -316,6 +353,22 @@ De pagina begint er mooi uit te zien. Je kan echter zien dat de tekst helemaal l
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0.1.1/dist/index.css" />
 ```
+
+##### Waar plaats je de Page Body classnames?
+
+Zet de Page Body CSS classes op een wrapper rondom de hoofdinhoud, niet op `body` of op `<main>`. Gebruik:
+
+```html
+<div class="utrecht-page-body">
+  <div class="utrecht-page-body__content">
+    <main id="main">…</main>
+  </div>
+  <!-- optioneel: extra zij‑navigatie/aside buiten de content wrapper -->
+  <!-- <aside>…</aside> -->
+</div>
+```
+
+Waarom op deze manier? De wrapper zorgt voor consistente maximale breedte, horizontale padding en responsieve layout, terwijl `<main>` semantiek en navigatie‑landmarks levert.
 
 #### Heading
 
@@ -428,11 +481,11 @@ Voor de Page Footer gebruik ik de footer van Amsterdam. In de [Storybook van Ams
   <div class="ams-page-footer__spotlight">
     <div class="ams-grid ams-grid--padding-vertical--x-large">
       <div class="ams-grid__cell ams-grid__cell--span-3">
-        <img src="/svg/voorbeeld-thema-logo-white.svg" alt="Voorbeeld thema logo" />
+        <img src="/svg/voorbeeld-thema-logo-white.svg" alt="Logo van het Voorbeeld thema" />
       </div>
       <div class="ams-grid__cell ams-grid__cell--span-3">
         <h3 class="ams-heading--inverse ams-heading ams-heading--3">Contact</h3>
-        <p class="nl-paragraph ams-paragraph--inverse">
+        <p class="nl-paragraph">
           Bel 453453 (maandag tot en met vrijdag van 9:00 tot 17:00) of stuur een email naar vragen@voorbeeld.nl
         </p>
       </div>
