@@ -48,14 +48,6 @@ html[data-theme="dark"] {
 pre {
  --nlds-code-block-background-color: #011627;
 }
-.DocSearch,
-:root {
- --docsearch-modal-background: #fff;
-}
-.DocSearch kbd,
-pre code {
- font-size: 100%;
-}
 .breadcrumbs__link,
 .footer__link-item {
  -webkit-text-decoration-skip: ink;
@@ -378,10 +370,6 @@ html {
  --ifm-tabs-color-active-border: var(--ifm-tabs-color-active);
  --ifm-tabs-padding-horizontal: 1rem;
  --ifm-tabs-padding-vertical: 1rem;
- --docusaurus-progress-bar-color: var(--ifm-color-primary);
- --docsearch-muted-color: var(--basis-color-default-color-default);
- --docsearch-key-gradient: var(--ma-docsearch-button-key-background-color);
- hyphenate-limit-chars: 12 8 4;
 }
 .badge--danger,
 .badge--info,
@@ -833,6 +821,7 @@ pre {
 pre code {
  background-color: initial;
  border: none;
+ font-size: 100%;
  line-height: inherit;
  padding: 0;
 }
@@ -2402,6 +2391,36 @@ html[data-theme="dark"] {
  position: absolute;
  width: 1px;
 }
+:root {
+ --docusaurus-progress-bar-color: var(--ifm-color-primary);
+ hyphenate-limit-chars: 12 8 4;
+ --ma-docsearch-button-background-color: #fff;
+ --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
+ --ma-docsearch-button-border-radius: var(--basis-border-radius-md);
+ --ma-docsearch-button-font-family: var(--utrecht-button-font-family);
+ --ma-docsearch-button-hover-background-color: var(--utrecht-button-secondary-action-hover-background-color);
+ --ma-docsearch-button-hover-border-color: var(--utrecht-button-secondary-action-hover-border-color);
+ --ma-docsearch-button-hover-color: var(--utrecht-button-secondary-action-hover-color);
+ --ma-docsearch-button-key-background-color: var(--basis-color-accent-1-bg-default);
+ --ma-docsearch-button-key-color: inherit;
+ --ma-docsearch-button-key-hover-background-color: var(--basis-color-action-1-inverse-bg-default);
+ --ma-docsearch-button-key-hover-color: #fff;
+ --ma-docsearch-button-key-active-background-color: var(--basis-color-action-1-inverse-bg-default);
+ --ma-docsearch-button-key-active-color: #fff;
+ --ma-docsearch-button-key-focus-visible-background-color: #000;
+ --ma-docsearch-button-key-focus-visible-color: #fff;
+ --ma-docsearch-button-padding-block-end: var(--basis-space-block-lg);
+ --ma-docsearch-button-padding-block-start: var(--basis-space-block-lg);
+ --ma-docsearch-button-padding-inline-end: var(--basis-space-inline-xl);
+ --ma-docsearch-button-padding-inline-start: var(--basis-space-inline-xl);
+ --ma-docsearch-modal-searchbox-background-color: var(--basis-color-default-bg-document);
+ --ma-docsearch-modal-border-color: var(--basis-color-default-border-subtle);
+ --ma-docsearch-modal-background-color: var(--basis-color-default-bg-subtle);
+ --ma-docsearch-modal-color: var(--basis-color-default-color-document);
+ --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
+ --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
+ --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
+}
 .ma-theme {
  --ifm-container-width: 870px;
  --ifm-container-width-xl: 960px;
@@ -2473,33 +2492,10 @@ html[data-theme="dark"] {
  --utrecht-accordion-button-background-color: #0000 !important;
  --utrecht-link-text-underline-offset: 4px !important;
  --ifm-footer-link-horizontal-spacing: 20px;
- --ma-docsearch-button-background-color: #fff;
- --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
- --ma-docsearch-button-border-radius: var(--basis-border-radius-md);
- --ma-docsearch-button-font-family: var(--utrecht-button-font-family);
- --ma-docsearch-button-hover-background-color: var(--utrecht-button-secondary-action-hover-background-color);
- --ma-docsearch-button-hover-border-color: var(--utrecht-button-secondary-action-hover-border-color);
- --ma-docsearch-button-hover-color: var(--utrecht-button-secondary-action-hover-color);
- --ma-docsearch-button-key-background-color: var(--basis-color-accent-1-bg-default);
- --ma-docsearch-button-key-color: inherit;
- --ma-docsearch-button-key-hover-background-color: var(--basis-color-action-1-inverse-bg-default);
- --ma-docsearch-button-key-hover-color: #fff;
- --ma-docsearch-button-key-active-background-color: var(--basis-color-action-1-inverse-bg-default);
- --ma-docsearch-button-key-active-color: #fff;
- --ma-docsearch-button-key-focus-visible-background-color: #000;
- --ma-docsearch-button-key-focus-visible-color: #fff;
- --ma-docsearch-button-padding-block-end: var(--basis-space-block-lg);
- --ma-docsearch-button-padding-block-start: var(--basis-space-block-lg);
- --ma-docsearch-button-padding-inline-end: var(--basis-space-inline-xl);
- --ma-docsearch-button-padding-inline-start: var(--basis-space-inline-xl);
- --ma-docsearch-modal-searchbox-background-color: var(--basis-color-default-bg-document);
- --ma-docsearch-modal-border-color: var(--basis-color-default-border-subtle);
- --ma-docsearch-modal-background-color: var(--basis-color-default-bg-subtle);
- --ma-docsearch-modal-color: var(--basis-color-default-color-document);
- --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
- --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
- --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
  font-size-adjust: 0.5;
+}
+.ma-theme .navbar__logo {
+ margin-right: 0;
 }
 .navbar__brand:focus-visible {
  background-color: initial !important;
@@ -2573,6 +2569,7 @@ html[data-theme="dark"] {
  border-block-start-style: solid;
  border-block-start-width: 4px;
  border-color: #0000;
+ line-height: 2;
  min-height: 100%;
 }
 .ma-navigation-bar-item:hover {
@@ -2637,15 +2634,15 @@ html[data-theme="dark"] {
 }
 .DocSearch {
  --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
- --docsearch-muted-color: var(--basis-color-accent-2-color-default);
- --docsearch-logo-color: var(--basis-color-accent-2-color-default);
- --docsearch-icon-color: var(--basis-color-accent-2-color-default);
- --docsearch-highlight-color: var(--basis-color-accent-2-color-default);
+ --docsearch-muted-color: var(--utrecht-button-secondary-action-color);
+ --docsearch-logo-color: var(--utrecht-button-secondary-action-color);
+ --docsearch-icon-color: var(--utrecht-button-secondary-action-color);
+ --docsearch-highlight-color: var(--utrecht-button-secondary-action-color);
  --docsearch-hit-highlight-color: var(--ma-docsearch-modal-hit-background-color);
+ --docsearch-modal-background: var(--ma-docsearch-modal-background-color);
  --docsearch-searchbox-focus-background: var(--ma-docsearch-modal-searchbox-background-color);
  --docsearch-footer-backround: var(--ma-docsearch-modal-searchbox-background-color);
- --docsearch-searchbox-background: var(--ma-docsearch-button-background-color);
- --docsearch-text-color: var(--basis-color-accent-2-color-default);
+ --docsearch-text-color: var(--ma-docsearch-modal-color);
 }
 .DocSearch-Input {
  margin-inline: 1rem;
@@ -2672,11 +2669,6 @@ html[data-theme="dark"] {
  font-weight: var(--ma-docsearch-modal-hit-mark-font-weight);
  text-decoration: none;
 }
-.DocSearch-Back-Icon,
-.DocSearch-Search-Icon {
- stroke-width: 1.6;
- color: var(--docsearch-highlight-color);
-}
 .DocSearch-Trigger {
  align-items: center;
  display: flex;
@@ -2693,15 +2685,7 @@ html[data-theme="dark"] {
  --ma-focus-indicator-color: var(--ma-docsearch-button-key-focus-visible-color);
  background-color: var(--ma-docsearch-button-key-background-color);
  border: none;
- box-shadow: none;
  color: var(--ma-docsearch-button-key-color);
-}
-.DocSearch-Button-Key {
- background: var(--docsearch-key-background);
- border: 1px solid color-mix(in srgb, var(--docsearch-subtle-color) 20%, #0000);
- box-shadow: none !important;
- color: var(--docsearch-key-color);
- font-size: 14px;
 }
 .DocSearch-Button-Placeholder {
  font-family: var(--ma-docsearch-button-font-family);
@@ -2725,6 +2709,7 @@ aside button[title="Zijbalk inklappen"] {
 #__docusaurus-base-url-issue-banner-container,
 .breadcrumbs__link[href="/"] svg,
 .docSidebarContainer_SkbQ,
+.footer__link-item svg,
 .footer__link-separator,
 .sidebarLogo_SHUK,
 .themedComponent_lZiy,
@@ -2906,8 +2891,8 @@ code {
  padding-block: 0.5rem;
  width: 100vw;
 }
-.ma-theme,
-.voorbeeld-theme {
+.voorbeeld-theme,
+:root {
  --denhaag-action-border-style: solid;
  --denhaag-sidenav-list-padding-inline-start: 0px;
  --denhaag-sidenav-list-padding-block-start: 0px;
@@ -6539,7 +6524,7 @@ code {
  --voorbeeld-typography-font-size-md: 1rem;
  --voorbeeld-typography-font-size-sm: 0.875rem;
 }
-.ma-theme {
+:root {
  --lux-login-link-hover-color: var(--basis-color-action-2-color-hover);
  --lux-login-link-hover-border-color: var(--basis-color-default-border-hover);
  --lux-login-link-hover-background-color: var(--basis-color-default-bg-hover);
@@ -8983,13 +8968,6 @@ code {
  --ma-color-black: #000;
  --ma-color-white: #fff;
  --ma-name: Mooi & Anders;
-}
-.homepage-spotlight-section--footer,
-.homepage-spotlight-section--heartbeat {
- --utrecht-spotlight-section-margin-block-start: 40px;
- --utrecht-heading-2-margin-block-start: 20px;
-}
-:root {
  background-color: var(--utrecht-root-background-color);
  block-size: 100%;
  color: var(--utrecht-root-color);
@@ -9032,6 +9010,11 @@ code {
  --docsearch-footer-height: 44px;
  --docsearch-footer-background: #fff;
  --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8, 0 -3px 6px 0 #45629b1f;
+}
+.homepage-spotlight-section--footer,
+.homepage-spotlight-section--heartbeat {
+ --utrecht-spotlight-section-margin-block-start: 40px;
+ --utrecht-heading-2-margin-block-start: 20px;
 }
 :root,
 body {
@@ -10929,22 +10912,6 @@ p + .nlds-guideline {
  -webkit-user-select: none;
  user-select: none;
 }
-@media (width < 768px) {
- .cardgroup--medium {
-  grid-auto-flow: row;
-  grid-template-columns: minmax(0, 1fr);
- }
- .cardgroup__card--large {
-  --cardgroup-card-flex-direction: column;
-  --cardgroup-card-padding-block-start: 0;
-  --component-illustration-padding-inline: 0;
- }
- .cardgroup--small {
-  --cardgroup-grid-template-columns: 1fr 1fr;
-  --cardgroup-padding-block-end: 16px;
-  --cardgroup-gap: 16px;
- }
-}
 @media (min-width: 997px) {
  .collapseSidebarButton_yIzl,
  .expandButton_dZK8 {
@@ -11088,6 +11055,11 @@ p + .nlds-guideline {
   max-width: var(--ifm-container-width-xl);
  }
 }
+@media screen and (max-width: 70rem) {
+ .navbar__brand {
+  margin-right: 8px;
+ }
+}
 @media (max-width: 996px) {
  .col {
   --ifm-col-width: 100%;
@@ -11149,12 +11121,12 @@ p + .nlds-guideline {
   padding-left: 0 !important;
  }
 }
-@media screen and (max-width: 62.25rem) {
+@media screen and (max-width: 62rem) {
  .navbar__items:first-of-type {
   justify-content: space-between;
  }
  .navbar__items--right {
-  min-width: 40%;
+  min-width: 40vw;
  }
 }
 @media (max-width: 768px) {
@@ -11240,6 +11212,32 @@ p + .nlds-guideline {
  .searchVersionColumn_ufrF {
   max-width: 100% !important;
   padding-left: var(--ifm-spacing-horizontal) !important;
+ }
+}
+@media screen and (max-width: 29rem) {
+ .navbar__items--right {
+  min-width: 30vw;
+ }
+}
+@media screen and (max-width: 20rem) {
+ .navbar__items--right {
+  min-width: 25vw;
+ }
+}
+@media (width < 768px) {
+ .cardgroup--medium {
+  grid-auto-flow: row;
+  grid-template-columns: minmax(0, 1fr);
+ }
+ .cardgroup__card--large {
+  --cardgroup-card-flex-direction: column;
+  --cardgroup-card-padding-block-start: 0;
+  --component-illustration-padding-inline: 0;
+ }
+ .cardgroup--small {
+  --cardgroup-grid-template-columns: 1fr 1fr;
+  --cardgroup-padding-block-end: 16px;
+  --cardgroup-gap: 16px;
  }
 }
 @media (width <= 768px) {
