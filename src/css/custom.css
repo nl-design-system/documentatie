@@ -516,6 +516,10 @@ aside button[title="Zijbalk inklappen"],
   text-decoration-skip-ink: auto;
 }
 
+.footer__link-item svg {
+  display: none;
+}
+
 .theme-doc-sidebar-container {
   margin-top: 0 !important;
 }
@@ -734,9 +738,9 @@ code {
   padding: 0;
 }
 
-@media screen and (max-width: 75rem) {
+@media screen and (max-width: 70rem) {
   .navbar__brand {
-    margin-right: 0;
+    margin-right: 8px;
   }
 }
 
