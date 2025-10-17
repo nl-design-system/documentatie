@@ -145,6 +145,10 @@
   --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
 }
 
+.ma-theme .navbar__logo {
+  margin-right: 0;
+}
+
 .navbar__brand:focus-visible {
   background-color: transparent !important;
 }
@@ -230,6 +234,7 @@ p {
   border-block-start-style: solid;
   border-color: transparent;
   align-content: center;
+  line-height: 2;
 }
 
 .ma-navigation-bar-item:hover {
@@ -759,13 +764,31 @@ code {
   padding: 0;
 }
 
-@media screen and (max-width: 62.25rem) {
+@media screen and (max-width: 75rem) {
+  .navbar__brand {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 62rem) {
   .navbar__items:first-of-type {
     justify-content: space-between;
   }
 
   .navbar__items--right {
-    min-width: 40%;
+    min-width: 40vw;
+  }
+}
+
+@media screen and (max-width: 29rem) {
+  .navbar__items--right {
+    min-width: 30vw;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .navbar__items--right {
+    min-width: 25vw;
   }
 }
 
