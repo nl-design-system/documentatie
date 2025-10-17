@@ -129,7 +129,7 @@ Wanneer `<img src="…svg">` wel kan:
 Het logo kunnen we als volgt toevoegen:
 
 ```html
-<img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+<img src="/svg/voorbeeld-thema-logo.svg" alt="Logo van het Voorbeeld thema" />
 ```
 
 Wanneer je het logo op je lokale file system hebt opgeslagen in hetzelfde mapje als de html, dan moet je verwijzen naar `./voorbeeld-thema-logo.svg`.
@@ -150,7 +150,7 @@ Om het design na te bouwen, doe je nog een paar aanpassingen en kom je op het vo
 <header class="ams-page-header">
   <nav aria-labelledby="primary-navigation" class="ams-page-header__navigation">
     <h2 class="ams-visually-hidden" id="primary-navigation">Hoofdnavigatie</h2>
-    <img src="/svg/voorbeeld-thema-logo.svg" alt="Voorbeeld thema logo" />
+    <img src="/svg/voorbeeld-thema-logo.svg" alt="Logo van het Voorbeeld thema" />
     <ul role="list" class="ams-page-header__menu">
       <li class="ams-page-header__menu-item ams-page-header__menu-item--fixed">
         <a class="nl-link" href="#">Contact</a>
@@ -481,7 +481,7 @@ Voor de Page Footer gebruik ik de footer van Amsterdam. In de [Storybook van Ams
   <div class="ams-page-footer__spotlight">
     <div class="ams-grid ams-grid--padding-vertical--x-large">
       <div class="ams-grid__cell ams-grid__cell--span-3">
-        <img src="/svg/voorbeeld-thema-logo-white.svg" alt="Voorbeeld thema logo" />
+        <img src="/svg/voorbeeld-thema-logo-white.svg" alt="Logo van het Voorbeeld thema" />
       </div>
       <div class="ams-grid__cell ams-grid__cell--span-3">
         <h3 class="ams-heading--inverse ams-heading ams-heading--3">Contact</h3>
