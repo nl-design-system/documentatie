@@ -42,7 +42,7 @@ export const OldSession = ({
         .map((speaker) => (speaker.organisation ? `${speaker.name} - ${speaker.organisation}` : speaker.name))
         .join(' & ')}
     </Paragraph>
-    {videoId || (videoId && <VideoPlayer id={videoId} title={title} style={{ marginBlock: '20px' }} />)}
+    {videoId ? <VideoPlayer id={videoId} title={title} style={{ marginBlock: '20px' }} /> : <></>}
     {children}
     <aside className={clsx('dsw-session__speakers')}>
       {speakers.map((speaker, index) => (
