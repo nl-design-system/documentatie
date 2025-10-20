@@ -1,4 +1,4 @@
-/*! For license information please see 0f180809.a244ab2a.js.LICENSE.txt */
+/*! For license information please see 0f180809.609986f2.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [42115],
@@ -36,7 +36,7 @@
     r = i(52676);
    const o = (e) => {
     let { children: n, title: i, headingLevel: o, speakers: d, videoId: l } = e;
-    return (0, r.jsxs)('article', { className: (0, a.Z)('dsw-session'), id: i.toLowerCase().replace(/\s/gi, '-'), children: [(0, r.jsx)(t.X6, { level: o, className: 'dsw-session__title', children: i }), (0, r.jsx)(t.nv, { className: 'dsw-session__subtitle', lead: !0, children: d.map((e) => (e.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }), l || (l && (0, r.jsx)(s.Y, { id: l, title: i, style: { marginBlock: '20px' } })), n, (0, r.jsx)('aside', { className: (0, a.Z)('dsw-session__speakers'), children: d.map((e, n) => (0, r.jsxs)('div', { className: (0, a.Z)('dsw-session__speaker', 'dsw-speaker'), children: [(0, r.jsx)('img', { className: (0, a.Z)('dsw-speaker__image'), src: e.image.src, alt: e.image.alt }), (0, r.jsx)(t.nv, { className: (0, a.Z)('dsw-speaker__description'), children: e.description.nl })] }, n)) })] });
+    return (0, r.jsxs)('article', { className: (0, a.Z)('dsw-session'), id: i.toLowerCase().replace(/\s/gi, '-'), children: [(0, r.jsx)(t.X6, { level: o, className: 'dsw-session__title', children: i }), (0, r.jsx)(t.nv, { className: 'dsw-session__subtitle', lead: !0, children: d.map((e) => (e.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }), l ? (0, r.jsx)(s.Y, { id: l, title: i, style: { marginBlock: '20px' } }) : (0, r.jsx)(r.Fragment, {}), n, (0, r.jsx)('aside', { className: (0, a.Z)('dsw-session__speakers'), children: d.map((e, n) => (0, r.jsxs)('div', { className: (0, a.Z)('dsw-session__speaker', 'dsw-speaker'), children: [(0, r.jsx)('img', { className: (0, a.Z)('dsw-speaker__image'), src: e.image.src, alt: e.image.alt }), (0, r.jsx)(t.nv, { className: (0, a.Z)('dsw-speaker__description'), children: e.description.nl })] }, n)) })] });
    };
   },
   97233: (e, n, i) => {
