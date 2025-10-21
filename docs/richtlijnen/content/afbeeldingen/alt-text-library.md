@@ -24,6 +24,10 @@ keywords:
 
 <!-- @license CC0-1.0 -->
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_footer_info.md";
+
 # Alt-tekst voorbeeldingen
 
 **N.B.** Voorbeeldingen ook in context.
@@ -69,3 +73,5 @@ keywords:
 ## Functioneel
 
 ![..](https://upload.wikimedia.org/wikipedia/commons/4/43/Minimalist_info_Icon.png)
+
+<FooterInfo />
