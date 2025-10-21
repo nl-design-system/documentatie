@@ -9,6 +9,7 @@ interface GuidelineProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
   description?: ReactNode;
   appearance: 'do' | 'dont';
   figure?: boolean;
+  status?: ReactNode;
 }
 interface CodeExampleContextType {
   title?: ReactNode;
@@ -17,7 +18,14 @@ interface CodeExampleContextType {
 
 export const CodeExampleContext = createContext<CodeExampleContextType>({});
 
-export const Guideline = ({ title, appearance, description, children, figure }: PropsWithChildren<GuidelineProps>) => {
+export const Guideline = ({
+  title,
+  appearance,
+  description,
+  children,
+  figure,
+  status,
+}: PropsWithChildren<GuidelineProps>) => {
   const guidelineLabel = {
     do: 'Doen',
     dont: 'Niet doen',
@@ -55,6 +63,7 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
           {children}
         </CodeExampleContext.Provider>
       </div>
+      <div className="nlds-guideline__status">{status}</div>
     </ContainerElement>
   );
 };

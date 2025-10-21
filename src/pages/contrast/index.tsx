@@ -297,7 +297,7 @@ const ContrastPage = () => {
                 </Paragraph>{' '}
                 <div>
                   {donts.map(({ container, content, example, positive }, index) => (
-                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content}>
+                    <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} status={<>foo</>}>
                       <Canvas
                         language="html"
                         code={null}

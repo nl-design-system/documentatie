@@ -66,6 +66,9 @@ import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";
 import tokens from "@nl-design-system-candidate/paragraph-tokens";
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
+import { Paragraph, SpotlightSection, ActionGroup, Button } from "@utrecht/component-library-react/dist/css-module";
 
 {/* Add name and description for the component */}
 export const title = "Paragraph";
@@ -77,6 +80,51 @@ export const component = componentProgress.find((item) => item.number === issueN
 <Introduction component={component} headingLevel={1} description={description} />
 
 <ComponentAliases component={component} />
+
+## Content met je content
+
+<Guideline
+  appearance={false ? "do" : "dont"}
+  title="Lege paragraph"
+  status={
+    <SpotlightSection type="error">
+      <Paragraph>Boo! Je mag geen lege paragraph hebben!!</Paragraph>
+      <ActionGroup>
+        <Button appearance="primary-action-button">✨ Fix maar dan!</Button>
+      </ActionGroup>
+    </SpotlightSection>
+  }
+>
+  <Canvas language="html" code="code" displayCode={false} container="document">
+    {() => (
+      <div contentEditable={true}>
+        <p>Paragraph 1</p>
+        <p>&nbsp;</p>
+        <p>Paragraph 3</p>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline
+  appearance={false ? "do" : "dont"}
+  title="Lege paragraph"
+  status={
+    <SpotlightSection type="ok">
+      <Paragraph>Jay! Er zijn geen problemen gevonden met deze content.</Paragraph>
+      <Paragraph>(1 van de 1 checks was succesvol.)</Paragraph>
+    </SpotlightSection>
+  }
+>
+  <Canvas language="html" code="code" displayCode={false} container="document">
+    {() => (
+      <div contentEditable={true}>
+        <p>Paragraph 1</p>
+        <p>Paragraph 3</p>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
 
 ## Anatomie
 
