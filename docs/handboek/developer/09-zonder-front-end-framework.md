@@ -132,6 +132,10 @@ Het logo kunnen we als volgt toevoegen:
 <img src="/svg/voorbeeld-thema-logo.svg" alt="Logo van het Voorbeeld thema" />
 ```
 
+:::info[Tip voor iconen en logo's]
+Je kunt voor iconen beter `fill="currentColor"` gebruiken. Dit zorgt ervoor dat de iconen automatisch de tekstkleur overnemen en beter integreren met je thema. Meer informatie hierover vind je in de [Icon documentatie](/icon).
+:::
+
 Wanneer je het logo op je lokale file system hebt opgeslagen in hetzelfde mapje als de html, dan moet je verwijzen naar `./voorbeeld-thema-logo.svg`.
 
 Om een goede alt-text te kiezen voor logo kun je het beste [hier kijken](/blog/toegankelijke-naam-link-logo-header/#optie-2-de-toegankelijke-naam-in-een-aria-label-bij-de-link) voor tips.
