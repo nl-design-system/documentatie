@@ -167,6 +167,7 @@ Om het design na te bouwen, doe je nog een paar aanpassingen en kom je op het vo
           <label for="site-search" class="ams-visually-hidden">Zoeken op de site</label>
           <input
             id="site-search"
+            style="margin-inline-end: 0.3rem;"
             placeholder="Bijvoorbeeld zwembad of grofvuil"
             type="search"
             class="ams-text-input"
@@ -174,13 +175,11 @@ Om het design na te bouwen, doe je nog een paar aanpassingen en kom je op het vo
             name="q"
           />
           <button
-            style="height: 3rem; display: flex; align-items: center"
+            style="display: flex; align-items: center; padding-inline-start: 1.5rem; padding-inline-end: 1.5rem;"
             class="utrecht-button utrecht-button--secondary-action"
             type="submit"
           >
-            <span style="display: contents" class="ams-icon ams-icon--small"
-              ><img src="/svg/search_icon.svg" alt="" /></span
-            >Zoeken
+            <span style="display: contents" class="utrecht-icon"><img src="/svg/search_icon.svg" alt="" /></span>Zoeken
           </button>
         </form>
       </li>
