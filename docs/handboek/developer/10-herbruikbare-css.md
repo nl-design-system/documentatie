@@ -46,7 +46,7 @@ De code voor je eigen huisstijl gebruik je dan als losse theme. In je thema zal 
 }
 ```
 
-Zo'n CSS-bestand met de theme kun je automatisch laten maken, door een [Design Tokens JSON bestand](https://design-tokens.github.io/community-group/format/) met [Style Dictionary](https://amzn.github.io/style-dictionary/) te vertalen naar CSS. Elke huisstijl kan zijn eigen design token JSON bestand hebben, die gebruikt wordt in meerdere projecten.
+Zo'n CSS-bestand met de theme kun je automatisch laten maken, door een [Design Tokens JSON bestand](https://design-tokens.github.io/community-group/format/) met [Style Dictionary](https://styledictionary.com) te vertalen naar CSS. Elke huisstijl kan zijn eigen design token JSON bestand hebben, die gebruikt wordt in meerdere projecten.
 
 ## Schrijf CSS die niet de stylesheet van anderen in de weg zit
 
