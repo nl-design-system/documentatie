@@ -22,31 +22,29 @@ import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/di
 # NL Design System Baseline
 
 <Paragraph lead>
-  Wij maken technologie voor gebruikers, daarom bepalen we hier welke browsers en hulpmiddelen zoveel gebruikt worden
-  dat je moet zorgen dat het er goed mee werkt.
+  Wij maken technologie voor gebruikers. We leggen vast met welke browsers en andere hulpmiddelen deze technologie goed
+  moet werken.
 </Paragraph>
 
-Met deze Baseline stellen we vast welke technologieën NL Design System ondersteunt. Het kernteam gebruikt de Baseline om mee te testen tijdens het ontwikkelen van de Candidate en Hall of Fame componenten en webpagina's.
+Het kernteam van NL Design system gebruikt deze baseline. Het is waar wij de Candidate en Hall of Fame componenten tegen testen.
 
-We raden gebruik van de Baseline voor ontwikkelingen met NL Design System aan, maar het kernteam stelt deze niet verplicht voor Community bijdragen. Organisaties kunnen kiezen deze Baseline bij opdrachten of aanbestedingen wel verplicht te maken.
-
-Als je een developer of tester bent, dan kun je de NL Design System Baseline gebruiken om vooraf te beslissen welke techonologie je gebruikt, en achteraf gebruiken om een testplan mee uit te voeren.
+De Baseline is niet verplicht voor Community bijdragen. We raden de Baseline wel aan. Organisaties kunnen de Baseline ook verplicht maken bij een opdracht of aanbesteding.
 
 ## Technologie met brede ondersteuning
 
-De populaire website [Can I Use](https://www.caniuse.com/) biedt een gebruiksvriendelijk overzicht of de browserondersteuning voldoende is. Als een feature de Data Badge heeft met "<span lang="en">Widely available across major browsers</span>", dan kun mag je de feature gebruiken.
+Voor het bepalen of we een feature ondersteunen gebruiken we twee bronnen.
 
-Features met de Data Badge "<span lang="en">Newly available across major browsers</span>" moet je alleen gebruiken als je ook een goed werkend alternatief biedt met Baseline ondersteuning.
+[Statistieken van RUM Archive ](https://rumarchive.com/insights/#ua-marketshare) geven aan welke browserversies veel gebruikt worden.
 
-We gebruiken Can I Use omdat ze een goed systeem hebben. Op basis van [statistieken in de RUM Archive](https://rumarchive.com/insights/#ua-marketshare) wordt bepaald welke browserversies wereldwijd veel gebruikt worden. Per technologie is bekend in welke browserversie de ondersteuning begint. Met de gecombineerde informatie kun je weten of browserondersteuning voldoende in browsersversies die tussen 30 maanden geleden en nu zijn gepubliceerd. Dit is wat Can I Use doet.
+[Can I Use](https://www.caniuse.com/) geeft aan welke features ondersteund worden door de verschillende browsers en versies. We gebruiken features met het label "[Widely available across major browsers](https://web-platform-dx.github.io/web-features/#how-do-features-become-part-of-baseline%3F)".
 
-Bijvoorbeeld: [CSS Grid Layout](https://caniuse.com/css-grid) wordt goed ondersteund en daarom gebruiken we `display: grid`. Maar [CSS Subgrid](https://caniuse.com/css-subgrid) is eind 2024 nog gemarkeerd als "<span lang="en">Newly available across major browsers</span>" en daarom gebruiken we CSS Subgrid nog niet.
+Bijvoorbeeld: [CSS Grid Layout](https://caniuse.com/css-grid) wordt goed ondersteund en heeft het juiste label. Daarom gebruiken we `display: grid`. [CSS Subgrid](https://caniuse.com/css-subgrid) is eind 2024 niet goed ondersteund en heeft het label niet. Daarom gebruiken we CSS Subgrid nog niet.
 
 ## Software om mee te testen
 
-De volgende combinaties van software moet je mee testen voor functionaliteit en WCAG 2.2 successcriteria. Gebruik de laatste versie van alle software. Niet elke [screenreader](/woordenlijst/#screenreader) werkt optimaal met elke browser. Het gebruik van een combinatie die niet genoemd wordt kan problemen opleveren
+Bij het testen gebruiken we de volgende combinaties van software samen met onze richtlijnen. Niet elke [screenreader](https://nldesignsystem.nl/woordenlijst/#screenreader) werkt optimaal met elke browser. De genoemde combinaties moeten geen problemen opleveren.
 
-- Chrome met de [screenreader](/woordenlijst/#screenreader) [JAWS](https://www.freedomscientific.com/products/software/jaws/) op Windows
+- Chrome met de screenreader [JAWS](https://www.freedomscientific.com/products/software/jaws/) op Windows
 - Chrome met de screenreader [NVDA](https://www.nvaccess.org) op Windows
 - Chrome op Android
 - Chrome op Android met de screenreader [Talkback](https://support.google.com/accessibility/android/answer/6007100?hl%3Den)
@@ -58,26 +56,18 @@ De volgende combinaties van software moet je mee testen voor functionaliteit en 
 - Safari op macOS
 - Safari op macOS met de screenreader [VoiceOver](https://support.apple.com/en-gb/guide/voiceover/welcome/mac)
 
-Als bepaalde functionaliteit niet blijkt te werken in oudere softwareversies die minder oud zijn dan 30 maanden, overweeg dan wel om het probleem op te lossen en te testen in specifieke oudere softwareversies.
+Soms werkt er iets niet met oudere software. Dit kan ontdekt worden door testen maar ook door reacties van gebruikers. Overweeg dan wel het probleem op te lossen en te testen in specifieke oudere softwareversies.
 
 ## Testen voor toegankelijkheid
 
-Om vast te kunnen stellen of iets toegankelijk is en voldoet volgens WCAG, mag je zelf kiezen welke technologie je ondersteunt: de [Accessibility Support Baseline](https://www.w3.org/TR/WCAG-EM/#step1c). Voor NL Design System is dat vastgelegd op deze pagina.
-
-Het toegankelijkheidsdoel van NL Design System is WCAG 2.2 Niveau AA. Daarmee voldoen we aan de wettelijke eis voor WCAG 2.1, plus enkele nieuwe successcriteria.
-
-Als je een [WCAG-EM toegankelijkheidsonderzoek doet](https://www.w3.org/TR/WCAG-EM/), test dan met elke combinatie van software in lijst.
+Een toegankelijkheidsonderzoek wordt vaak gedaan op basis van [WCAG-EM](https://www.w3.org/TR/WCAG-EM/). Bij deze aanpak ondersteunt men bepaalde technologie in de [Accessibility Support Baseline](https://www.w3.org/TR/WCAG-EM/#step1c).
+Pagina's die NL Design System gebruiken moeten kunnen voldoen aan WCAG 2.2 Niveau AA. Dat is meer dan de wettelijk vereiste WCAG 2.1 AA.
 
 Je kunt de NL Design System Baseline noemen bij je onderzoeksrapport onder "basisniveau van toegankelijkheidsondersteuning". Je kunt verwijzen naar de Baseline momentopname onder ["bij het onderzoek gebruikte browsers en softwareprogramma's"](https://www.digitoegankelijk.nl/toegankelijkheidsverklaring/controle).
 
 ## Momentopname
 
-Technologie verandert elke maand, dus de precieze betekenis van de Baseline verandert. Op de NL Design System website publiceren we periodiek een momentopname van welke softwareversies op dat moment worden bedoeld met de Baseline. De meest recente in de serie is de [Baseline september 2025](/baseline/2025-09).
-
-Maak duidelijke afspraken welke versie van de Baseline je kiest als doel. Er zijn heel veel opties denkbaar, bijvoorbeeld:
-
-- Spreek voor een toegankelijkheidsonderzoek af dat de meest recente versies van alle software wordt gebruikt.
-- Spreek bij het aanbesteden van software af dat de meest recente Baseline momentname geldt die beschikbaar is bij aanvang van de werkzaamheden.
+Technologie verandert steeds. Daarmee verandert de Baseline ook steeds. Op de NL Design System website delen we regelmatig een nieuwe Baseline. De laatste versie van de Baseline is de [Baseline september 2025](https://nldesignsystem.nl/baseline/2025-09/).
 
 <SpotlightSection appearance="info">
   
