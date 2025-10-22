@@ -1,0 +1,385 @@
+---
+title: Promotiefase · Hall of Fame · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Promotiefase
+sidebar_position: 3
+pagination_label: Hall of Fame Promotiefase
+description: Gedetailleerde stappen voor de Promotiefase van Hall of Fame componenten
+slug: /handboek/component-bijdragen/hall-of-fame/promotiefase
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - hall of fame
+  - promotie
+  - release
+---
+
+{/* @license CC0-1.0 */}
+
+# Promotiefase
+
+## In het kort
+
+In de promotiefase maak je de Candidate component officieel Hall of Fame. Je migreert de packages naar de @nl-design-system scope en main repository, publiceert versie 1.0.0, update alle systemen, en viert de mijlpaal met de community. Het resultaat is een component met garanties op toegankelijkheid, stabiliteit en ondersteuning.
+
+**Wat doe je in deze fase?**
+
+- Package scope migreren naar @nl-design-system
+- Component naar main repository verplaatsen
+- Versie 1.0.0 publiceren
+- Oude candidate packages deprecaten
+- Component status updaten
+- Community informeren
+
+---
+
+## Migreer van @nl-design-system-candidate naar @nl-design-system
+
+**Doel**: Verplaats packages van candidate scope naar main scope.
+
+**Waarom belangrijk?** Hall of Fame componenten horen onder de `@nl-design-system` scope, niet meer onder `@nl-design-system-candidate`. Dit moet gebeuren voordat we versie 1.0.0 publiceren.
+
+### Acties
+
+1. **Update package.json files**:
+
+   - Wijzig package naam:
+     - Was: `@nl-design-system-candidate/{component-name}`
+     - Wordt: `@nl-design-system/{component-name}`
+   - Update in alle packages:
+     - React: `packages/component-library-react/package.json`
+     - CSS: `packages/components-css/{component-name}/package.json`
+     - Docs: `packages/component-docs/{component-name}/package.json`
+
+2. **Update cross-references**:
+
+   - Update dependencies in andere packages die dit component gebruiken
+   - Update imports in documentatie
+   - Update repository links
+
+3. **Maak migratie guide**:
+
+   ```md
+   ## Migration from Candidate to Hall of Fame
+
+   The {ComponentName} has graduated to Hall of Fame status and is now published under `@nl-design-system` scope.
+
+   ### Update your dependencies:
+
+   **Before:**
+   \`\`\`json
+   {
+   "dependencies": {
+   "@nl-design-system-candidate/component-library-react": "^0.5.0"
+   }
+   }
+   \`\`\`
+
+   **After:**
+   \`\`\`json
+   {
+   "dependencies": {
+   "@nl-design-system/component-library-react": "^1.0.0"
+   }
+   }
+   \`\`\`
+
+   ### Update your imports:
+
+   Imports remain the same - only the package name changes.
+   ```
+
+4. **Test de nieuwe package structuur**:
+   - Build lokaal
+   - Test of alle imports werken
+   - Test of Storybook nog werkt
+
+**🚩 Checkpoint**: Package scope gemigreerd
+
+## Migreer component naar nl-design-system/components repository
+
+**Doel**: Verplaats de component code van de candidate repository naar de main components repository.
+
+**Waarom belangrijk?** Hall of Fame componenten horen thuis in de hoofdrepository, niet in de candidate repository. Dit maakt duidelijk dat de component nu onder beheer van het kernteam valt.
+
+### Acties
+
+1. **Bereid migratie voor**:
+
+   - Clone beide repositories:
+     ```bash
+     git clone https://github.com/nl-design-system/candidate
+     git clone https://github.com/nl-design-system/components
+     ```
+
+2. **Kopieer component packages**:
+
+   - Van `candidate/packages/` naar `components/packages/`:
+     - React component
+     - CSS component
+     - Documentation
+     - Design tokens
+
+3. **Update package.json in main repo**:
+
+   - Verwijder alle verwijzingen naar `@nl-design-system-candidate`
+   - Gebruik `@nl-design-system` scope (dit is al gedaan in vorige stap)
+   - Update dependencies tussen packages
+   - Update repository URLs
+
+4. **Update build configuratie**:
+
+   - Voeg component toe aan main repo builds
+   - Update Storybook configuratie
+   - Update TypeScript configuratie
+   - Test of alles build
+
+5. **Maak PR naar nl-design-system/components**:
+
+   ```
+   Title: feat: migrate {ComponentName} from candidate to Hall of Fame
+
+   Description:
+   Migrates {ComponentName} from candidate repository to main components repository for Hall of Fame status.
+
+   - ✅ All packages moved
+   - ✅ Package scope updated to @nl-design-system
+   - ✅ Build configuration updated
+   - ✅ Tests passing
+
+   Related: [link to candidate PR/issue]
+   ```
+
+6. **Review en merge**:
+
+   - Laat kernteam reviewen
+   - Test lokaal of packages builden
+   - Merge naar main
+
+7. **Verwijder uit candidate repository**:
+
+   - Maak PR om component te verwijderen uit candidate repo
+   - Voeg README toe die verwijst naar nieuwe locatie:
+
+     ```md
+     # {ComponentName} - Moved to Hall of Fame
+
+     This component has been promoted to Hall of Fame and moved to:
+     https://github.com/nl-design-system/components/tree/main/packages/{component-name}
+
+     **NPM**: `@nl-design-system/{component-name}`
+     ```
+
+**🚩 Checkpoint**: Component gemigreerd naar main repository
+
+## Verhoog versienummer naar 1.0.0
+
+**Doel**: Markeer de component als stabiel met semantic versioning.
+
+**Waarom belangrijk?** Versie 1.0.0 signaleert aan gebruikers dat de component productierijp en stabiel is.
+
+### Acties
+
+1. **Maak changeset voor major release**:
+
+   ```bash
+   npx changeset
+   ```
+
+   - Selecteer alle packages
+   - Kies `major` (gaat naar 1.0.0)
+   - Schrijf changelog:
+
+   ```md
+   🎉 Hall of Fame Release!
+
+   The {ComponentName} has reached Hall of Fame status:
+
+   - ✅ Used in production by multiple organizations
+   - ✅ Passed WCAG 2.2 AA accessibility audit
+   - ✅ Stable API with semantic versioning
+   - ✅ Complete documentation
+
+   This is now a stable release with guarantees on accessibility, usability and API stability.
+   ```
+
+2. **Merge Version Packages PR**:
+
+   - Review versienummers (moet 1.0.0 zijn)
+   - Check changelogs
+   - Merge en wacht op NPM publicatie
+
+3. **Verifieer publicatie**:
+   - Check NPM: versie 1.0.0 is beschikbaar
+   - Test installatie
+
+**🚩 Checkpoint**: Versie 1.0.0 gepubliceerd
+
+## Deprecate oude @nl-design-system-candidate packages
+
+**Doel**: Zorg dat gebruikers van de oude candidate packages worden geïnformeerd over de migratie.
+
+**Waarom belangrijk?** Gebruikers die nog de oude candidate packages gebruiken moeten weten dat ze moeten migreren naar de nieuwe Hall of Fame packages.
+
+### Acties
+
+1. **Deprecate oude packages op NPM**:
+
+   ```bash
+   npm deprecate @nl-design-system-candidate/{component-name} "Moved to @nl-design-system/{component-name}. This package is no longer maintained."
+   ```
+
+   Doe dit voor alle packages:
+
+   - React component library
+   - CSS component
+   - Documentation package
+
+2. **Update README van oude packages**:
+   Voeg toe aan de README van de candidate packages:
+
+   ```md
+   # ⚠️ Deprecated - Moved to @nl-design-system
+
+   This package has been moved to `@nl-design-system/{component-name}` and is no longer maintained.
+
+   Please update your dependencies to use the new package.
+
+   See the [migration guide](link) for instructions.
+   ```
+
+3. **Informeer gebruikers**:
+   - Post migratie guide in Slack
+   - Voeg toe aan component documentatie
+   - Vermeld in release notes
+
+**🚩 Checkpoint**: Oude packages deprecated
+
+## Update component status naar Hall of Fame
+
+**Doel**: Markeer de component als Hall of Fame in alle systemen.
+
+### Acties
+
+1. **Update GitHub labels**:
+
+   - Verwijder "Candidate" label
+   - Voeg "Hall of Fame" label toe
+
+2. **Update project board**:
+
+   - Verplaats naar "Hall of Fame" kolom
+   - Sluit Candidate issue
+   - Maak nieuw Hall of Fame issue voor onderhoud
+
+3. **Update component-progress.json**:
+
+   ```json
+   {
+     "organisation": "nl-design-system",
+     "status": "HALL_OF_FAME",
+     "links": {
+       "npm": "https://www.npmjs.com/package/@nl-design-system/{component-name}",
+       "documentation": "/componenten/{component-name}/",
+       "github": "https://github.com/nl-design-system/components/tree/main/packages/{component-name}"
+     }
+   }
+   ```
+
+   Note: `organisation` verandert van `nl-design-system-candidate` naar `nl-design-system`
+
+4. **Update website documentatie**:
+
+   - Voeg Hall of Fame badge toe aan component pagina
+   - Update status in navigatie
+   - Vermeld garanties (toegankelijkheid, stabiliteit)
+
+5. **Update GitHub Discussion**:
+
+   ```md
+   ## 🏆 Component is Hall of Fame!
+
+   De {component-naam} heeft de Hall of Fame status bereikt!
+
+   **Wat betekent dit?**
+
+   - ✅ Bewezen in productie bij meerdere organisaties
+   - ✅ WCAG 2.2 AA toegankelijkheidsaudit gepasseerd
+   - ✅ Stabiele API met semantic versioning
+   - ✅ Garantie op ondersteuning door het kernteam
+
+   **NPM**: `npm install @nl-design-system/{component-name}`
+   **Versie**: 1.0.0
+   **Documentatie**: [Component pagina]({docs-url})
+   ```
+
+**🚩 Checkpoint**: Status geüpdatet
+
+## Deel met de community
+
+**Doel**: Vier de mijlpaal en informeer de community over de nieuwe Hall of Fame component.
+
+### Acties
+
+1. **Post in Slack** (#nl-design-system):
+
+   ```md
+   🏆 {ComponentName} is nu Hall of Fame!
+
+   We zijn trots om aan te kondigen dat de {component-naam} component Hall of Fame status heeft bereikt.
+
+   **Wat betekent dit?**
+
+   - Bewezen in productie door {organisatie-1} en {organisatie-2}
+   - WCAG 2.2 AA gecertificeerd
+   - Stabiele API (v1.0.0) met semantic versioning
+   - Garantie op ondersteuning door het kernteam
+
+   **NPM**: `@nl-design-system/{component-name}`
+   **Docs**: https://nldesignsystem.nl/componenten/{component-name}/
+
+   **Dank aan alle contributors!**
+   Dank aan {lijst van contributors} voor jullie bijdragen aan deze component.
+   ```
+
+2. **Schrijf blog post**:
+
+   - Vertel het verhaal van de component
+   - Van Help Wanted naar Hall of Fame
+   - Dank contributors en organisaties
+   - Deel leerpunten
+
+3. **Post op LinkedIn**:
+
+   - Tag betrokken organisaties
+   - Deel visuele voorbeelden
+   - Link naar blog post
+
+4. **Vermeld in nieuwsbrief**:
+
+   - Kondig aan in volgende NL Design System nieuwsbrief
+   - Inclusief screenshot en link
+
+5. **Presenteer in Heartbeat**:
+   - Demo van de component
+   - Verhaal van selectie tot Hall of Fame
+   - Dank contributors
+
+**🚩 Checkpoint**: Community geïnformeerd
+
+---
+
+## Volgende stap
+
+De component is nu Hall of Fame! Lees meer over [onderhoud van Hall of Fame componenten](/handboek/component-bijdragen/hall-of-fame/onderhoud).
+
+## Vragen?
+
+Heb je een vraag over de Promotiefase?
+
+- Wil je samen werken aan componenten? Kom naar een [Estafettemodeldag](/community/events/estafettemodeldag)
+- Stel je vraag in het Slack kanaal `#nl-design-system` op [Code for NL](https://praatmee.codefor.nl/)
+- Kom naar de [Design Open Hour](/events/design-open-hour) of [Developer Open Hour](/events/developer-open-hour)
+- Neem contact op met het [kernteam](/project/kernteam)

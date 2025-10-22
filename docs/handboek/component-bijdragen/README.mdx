@@ -1,0 +1,96 @@
+---
+title: Componenten bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Introductie
+sidebar_position: 1
+pagination_label: Componenten bijdragen
+description: Hoe draag je componenten bij aan NL Design System? Deze pagina legt uit welke stappen je zelf kunt nemen en waar het kernteam bij helpt.
+keywords:
+  - componenten
+  - bijdragen
+  - estafettemodel
+  - stappenplan
+---
+
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { IconChevronRight } from "@tabler/icons-react";
+import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+
+# Componenten bijdragen
+
+:::info In het kort
+Het [estafettemodel](/handboek/estafettemodel) beschrijft de status die een component kan hebben: Help Wanted, Community, Candidate en Hall of Fame.
+
+- **Help Wanted en Community**: Als organisatie of leverancier kun je zelf componenten maken en delen in de community. Het kernteam faciliteert dit, maar je hoeft niet op hen te wachten om aan de slag te gaan.
+- **Candidate en Hall of Fame**: Hier werkt het kernteam actief mee aan standaardisatie.
+
+:::
+
+## Help Wanted: Een component voorstellen
+
+**Situatie**: Je hebt een idee voor een component dat nuttig zou zijn, maar je gaat het (nog) niet zelf bouwen. [Lees meer over Help Wanted](/handboek/component-bijdragen/help-wanted)
+
+**Wat het betekent**: Je documenteert het idee zodat anderen kunnen zien dat er behoefte aan is en mogelijk kunnen helpen met bouwen of onderzoek.
+
+👉 [Volg het Help Wanted stappenplan](/handboek/component-bijdragen/help-wanted/stappenplan).
+
+### Hoe weet je of het component al bestaat?
+
+Bekijk het [componenten overzicht](/componenten/) en filter op status. Zoek ook in de [GitHub Discussions](https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions) of iemand anders er al over heeft nagedacht.
+
+## Community: Een component bouwen
+
+**Situatie**: Je hebt een component nodig die nog niet bestaat, of er is een Help Wanted component die je wilt bouwen. [Lees meer over Community](/handboek/component-bijdragen/community)
+
+**Wat het betekent**: Je bouwt een nieuw component volgens NL Design System architectuur en maakt het beschikbaar voor hergebruik.
+
+👉 [Volg het Community stappenplan](/handboek/component-bijdragen/community/stappenplan-voor-organisaties)
+
+### Wat als mijn component heel specifiek is voor mijn organisatie?
+
+Dan is het waarschijnlijk een "snowflake component" - nuttig voor jou, maar niet voor de rest van Nederland. Die componenten horen thuis in je eigen design system repository, niet in NL Design System. Ze kunnen wel de NL Design System architectuur volgen, zodat je gemakkelijk andere componenten kunt hergebruiken.
+
+## Community: Een bestaande component verbeteren
+
+**Situatie**: Er bestaat al een Community component die je wilt gebruiken en verbeteren. [Bekijk de community componenten](/componenten/?status=COMMUNITY)
+
+**Wat het betekent**: Het component bestaat in de community bij één of meer organisaties en voldoet aan de NL Design System architectuur. Het is klaar voor hergebruik.
+
+👉 [Volg het Community stappenplan](/handboek/component-bijdragen/community/stappenplan-voor-organisaties)
+
+## Candidate: Een component voorbereiden op standaardisatie
+
+**Situatie**: Een Community component wordt door meerdere organisaties gebruikt en het kernteam ziet potentie voor standaardisatie. [Lees meer over Candidate](/handboek/component-bijdragen/candidate)
+
+**Wat het betekent**: Het component is een voorstel voor een standaard. Het kernteam onderhoudt het en kan nog niet garanderen dat API's stabiel blijven.
+
+👉 [Bekijk het Candidate stappenplan](/handboek/component-bijdragen/candidate/stappenplan)
+
+## Hall of Fame: Een component als standaard
+
+**Situatie**: Een Candidate component heeft bewezen breed bruikbaar te zijn en voldoet aan alle kwaliteitseisen.
+
+**Wat het betekent**: Het component heeft de hoogste kwaliteitsstatus met garanties op toegankelijkheid, gebruiksvriendelijkheid en stabiliteit. [Lees meer over Hall of Fame](/handboek/component-bijdragen/hall-of-fame)
+
+👉 [Bekijk het Hall of Fame stappenplan](/handboek/component-bijdragen/hall-of-fame/stappenplan)
+
+## Waar helpt het kernteam?
+
+Het kernteam werkt aan componenten die door meerdere organisaties worden gebruikt om ze naar Candidate en Hall of Fame status te brengen. Dit proces vereist toegankelijkheidsaudits, uitgebreide documentatie en coördinatie tussen organisaties.
+
+Een component kan geselecteerd worden voor Candidate of Hall of Fame wanneer:
+
+- **Meerdere organisaties** het component hergebruiken in productie
+- **Het kernteam** ziet dat het breed inzetbaar is
+- **Er budget en capaciteit** is bij het kernteam voor begeleiding
+- **Organisaties** willen investeren in toegankelijkheidsaudits
+
+Het kernteam neemt hier het initiatief in en coördineert dit proces.
+
+## Hulp nodig?
+
+- Wil je samen werken aan componenten? Kom naar een [Estafettemodeldag](/community/events/estafettemodeldag)
+- Stel je vraag in het Slack kanaal `#nl-design-system` op [Code for NL](https://praatmee.codefor.nl/)
+- Kom naar de [Design Open Hour](/events/design-open-hour) of [Developer Open Hour](/events/developer-open-hour)
+- Neem contact op met het [kernteam](/project/kernteam)
