@@ -231,6 +231,9 @@ importers:
       '@utrecht/page-layout-react':
         specifier: 1.0.6
         version: 1.0.6(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/radio-group-react':
+        specifier: 1.0.11
+        version: 1.0.11(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/root-css':
         specifier: 1.2.1
         version: 1.2.1
@@ -3000,6 +3003,13 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/fieldset-react@1.0.8':
+    resolution: {integrity: sha512-A2kOUzXFB2FX0RlUp+U+rqhDVqgHGkSgPham6Mtbe2RC5pDZ/pWYYVtgPMEtsL6FthteiHZkYK+8r03sCIOVzw==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
   '@utrecht/figure-css@1.6.0':
     resolution: {integrity: sha512-RilLivUp4KzN0UmrjOtzaIERa/Q2v+Bp/g3PcOt9/MstXDWb2oY+w0+v0VMeVhHxcTE8CstBP6vK0nJdI6LMzQ==}
 
@@ -3019,8 +3029,14 @@ packages:
   '@utrecht/form-field-css@1.5.1':
     resolution: {integrity: sha512-EILCtMcMk3LgTT5pUjna0vKA5S77Av1+fgqgfApEWU7y0wcC8UcYdD7Ujl3goJShhO02Fo7AYM3befJQgYBtuQ==}
 
+  '@utrecht/form-field-css@2.0.0':
+    resolution: {integrity: sha512-LlY6h0gDyWqm/3RbGszzIN7C8UkUf6erUE1II6qSzDbO/dWskq8pB0Knu5diVtJlwDUZurtj8XgFzsADt0cPtA==}
+
   '@utrecht/form-field-description-css@1.5.1':
     resolution: {integrity: sha512-oaLNNNl0rEKVmK3FvxAaYfAzrzhE3Ahsj2JweDCzkvihyN8lWRT0YZP4DQh04RNU5JuQ1VbNFxRp4SZh0jDPoQ==}
+
+  '@utrecht/form-field-description-css@2.0.0':
+    resolution: {integrity: sha512-pLE33w/5UpdfmvNERYbxTN55arnjNK8kXQAfKYE5ANNOllT+ByiUOz4f17zCNz/bFX9HYEiDBhzTsDRBjFmZkQ==}
 
   '@utrecht/form-field-description-react@1.0.7':
     resolution: {integrity: sha512-laLmOKJXl0vUF3w1eJT9QENUgGz72mWPwdZOebGZfsH0pKKFLcvlXUcXQ+cMnCJyKcBjEdxeUN8DA75UqbKo5g==}
@@ -3029,11 +3045,28 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/form-field-description-react@1.0.8':
+    resolution: {integrity: sha512-DteVrWF+qjjbt5CWuynZc2mDb0h9cmDIDra3H46xyfgDPDf3hYHUu6XVid7hfHOUj9KrhN0oQMzc3h2jFZ192w==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
   '@utrecht/form-field-error-message-css@1.5.1':
     resolution: {integrity: sha512-YuAaTsvxC4fWzIflFmnE1wvrDxXnDvtPbomifzy7fMUjXAHSE+I8XRfnMoibGZjRzz6NyBtitrwerai2nUTBww==}
 
+  '@utrecht/form-field-error-message-css@2.0.0':
+    resolution: {integrity: sha512-mvFqQoXMDK/r3zC2ePyPmMGJ2p+35Mrdzo7fLVJx6GvwsVQGXPJyen/bIBv/949j6q03daxX7UJxBG59cETnwg==}
+
   '@utrecht/form-field-error-message-react@1.0.7':
     resolution: {integrity: sha512-SNgHTANBkoYv72VpdGOU9Q2NJHSYNAbqWxaFjKM9sXT4EVTemKwL+vSEuc9YmEECwK10saMRTz8eq59ytzHkbQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/form-field-error-message-react@1.0.8':
+    resolution: {integrity: sha512-d+YZOBh4CeunSHPst1tM6bk0BN243wmumcI1bfW+lVIiqi2SQvifSiRsfcC4U2njva4WZXZ4yrQsv39YfO2M6g==}
     peerDependencies:
       '@babel/runtime': '*'
       react: '18'
@@ -3046,14 +3079,34 @@ packages:
       react: '18'
       react-dom: '18'
 
+  '@utrecht/form-field-react@1.0.8':
+    resolution: {integrity: sha512-KLP6o9KYp1qmVQXP5ZAD6WHt8QUiHi8LcI9u27f8i8fmK0ndIEOKZyAz6Wlfpq2zwNnpzoq1EMzxKDd8WZZ9rQ==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
   '@utrecht/form-fieldset-css@1.5.1':
     resolution: {integrity: sha512-ORVxcAXSbPLr0dLuj26XhKY+3/YSdUSjj5r7V8cTYXbh32KJwaoAOrAREFo0Jm1i8vJpwxAwsptb7o9Lmhpw8Q==}
+
+  '@utrecht/form-fieldset-css@2.0.0':
+    resolution: {integrity: sha512-hooI/QUQ7x0N8ZWJpisfIRN8xxv8LNwqeA2MQ/LNWgwRWuE8LYojizaIEV94ry0Yp1zM1J66Ry5W04r3MI4pnw==}
 
   '@utrecht/form-label-css@1.6.1':
     resolution: {integrity: sha512-h9d0FpM/VRbeVnr9zd/9Mbr+paKHa2OaJn0eP2ncCBHlLveb3Mww3rl+u6t0vw0lB8mrUAtjDWCLAjKNc8d0Gg==}
 
+  '@utrecht/form-label-css@2.0.0':
+    resolution: {integrity: sha512-MvO2CtIwtDdCWBMBqtZLjsKZFiovGGJWRROi2UzWrnSedBmhq1kzG6vhDyMtWVKYeISjROsZf/JLHLxgS8w06A==}
+
   '@utrecht/form-label-react@1.0.7':
     resolution: {integrity: sha512-rzc5tlLvtRcBFUjZkSqOAdn6C3mHdv3+IITfo/ZXL+HDN6XGzHR+/Rk6ACKfo9hDXad2jJV8bIClWEp9U/yhpg==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/form-label-react@1.0.8':
+    resolution: {integrity: sha512-rq0f67e0nIANgoxhFzqoPM9udtSdo7qWxEydtuleUNL58MrkUOEe8peB1PPwvnw+6NaNxjwEHj607P4H1Zf2Sg==}
     peerDependencies:
       '@babel/runtime': '*'
       react: '18'
@@ -3219,8 +3272,25 @@ packages:
   '@utrecht/radio-button-css@1.6.1':
     resolution: {integrity: sha512-AQVGKD100iVjBan4mIx/QOBflgZUdZpNVRxrrCE8eXwgzXCSGlg++Veqx9Z+88vH38CEl+evQynVBdssIydVAA==}
 
+  '@utrecht/radio-button-css@2.0.0':
+    resolution: {integrity: sha512-k6et7G0OrYwN0FsIlbD0XQoshWTuPniUfQnfIC/JOQRkymL8Nu9VrXPCSh7BEfQye20D7Ffulyq4prlpmyw4Cg==}
+
   '@utrecht/radio-button-react@1.0.7':
     resolution: {integrity: sha512-bvb2s5MOmc+kCX2y/hS7zbVWORwg0+D1PVWzKz8604A5/FYkAYJfKm8xronK8mx5r2OCP9zd2PMnUjh3yb9s0g==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/radio-button-react@1.0.8':
+    resolution: {integrity: sha512-H3vlcy2YylZwvjowuVa+oDg8qCTLC6kAYVQ2pRLfgfMl0hLgvv+eM0ShpY9YeCSt7mBeTQw1KoD5aHQJiWydEw==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
+  '@utrecht/radio-group-react@1.0.11':
+    resolution: {integrity: sha512-LA5pqlZ6J+z5oaJcPF7F1RrLfXOoCQX5+IjwLr0y1WvY8/1FAhVDWDrTDIOHr4LeSFVxjqVtwaFdhK+KRxcAaA==}
     peerDependencies:
       '@babel/runtime': '*'
       react: '18'
@@ -12475,6 +12545,14 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
+  '@utrecht/fieldset-react@1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-fieldset-css': 2.0.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@utrecht/figure-css@1.6.0': {}
 
   '@utrecht/focus-ring-css@2.3.1': {}
@@ -12495,7 +12573,11 @@ snapshots:
 
   '@utrecht/form-field-css@1.5.1': {}
 
+  '@utrecht/form-field-css@2.0.0': {}
+
   '@utrecht/form-field-description-css@1.5.1': {}
+
+  '@utrecht/form-field-description-css@2.0.0': {}
 
   '@utrecht/form-field-description-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -12505,12 +12587,30 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
+  '@utrecht/form-field-description-react@1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-field-description-css': 2.0.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@utrecht/form-field-error-message-css@1.5.1': {}
+
+  '@utrecht/form-field-error-message-css@2.0.0': {}
 
   '@utrecht/form-field-error-message-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.26.7
       '@utrecht/form-field-error-message-css': 1.5.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/form-field-error-message-react@1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-field-error-message-css': 2.0.0
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -12523,14 +12623,34 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
+  '@utrecht/form-field-react@1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-field-css': 2.0.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@utrecht/form-fieldset-css@1.5.1': {}
 
+  '@utrecht/form-fieldset-css@2.0.0': {}
+
   '@utrecht/form-label-css@1.6.1': {}
+
+  '@utrecht/form-label-css@2.0.0': {}
 
   '@utrecht/form-label-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.26.7
       '@utrecht/form-label-css': 1.6.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/form-label-react@1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/form-label-css': 2.0.0
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -12658,10 +12778,34 @@ snapshots:
 
   '@utrecht/radio-button-css@1.6.1': {}
 
+  '@utrecht/radio-button-css@2.0.0': {}
+
   '@utrecht/radio-button-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.26.7
       '@utrecht/radio-button-css': 1.6.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/radio-button-react@1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/radio-button-css': 2.0.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/radio-group-react@1.0.11(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.26.7
+      '@utrecht/fieldset-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-css': 2.0.0
+      '@utrecht/form-field-description-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-error-message-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-label-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/radio-button-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)

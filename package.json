@@ -139,6 +139,7 @@
     "@utrecht/component-library-react": "10.3.3",
     "@utrecht/document-css": "1.5.1",
     "@utrecht/page-layout-react": "1.0.6",
+    "@utrecht/radio-group-react": "1.0.11",
     "@utrecht/root-css": "1.2.1",
     "@utrecht/web-component-library-react": "3.0.8",
     "@utrecht/web-component-library-stencil": "3.5.1",
