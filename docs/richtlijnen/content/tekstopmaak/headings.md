@@ -81,7 +81,7 @@ Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg j
 
 ### Sla geen kopniveaus over
 
-Gebruik koppen in volgorde. Begin bijvoorbeeld met een kopniveau 2 onder de hoofdkop, daarna een kopniveau 3, dan een kopniveau 4. Sla geen niveaus over — zet dus geen kopniveau 4 direct onder een kopniveau 2.
+Gebruik koppen in volgorde. Begin bijvoorbeeld met een kopniveau 2 onder de hoofdkop, daarna een kopniveau 3, dan een kopniveau 4. Sla geen niveaus over. Zet dus geen kopniveau 4 direct onder een kopniveau 2.
 
 Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel. Het is prima om na een kopniveau 4 weer een nieuwe sectie te beginnen met een kopniveau 2.
 
@@ -91,15 +91,15 @@ Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel
       <>
           <h1>Kop met niveau 1</h1>
           <p>
-            Kopniveau 1 (`H1`) is de belangrijkste kop van de pagina en die gebruik je maar één keer. Kopniveau 1 geeft aan waar de hele pagina over gaat.
+            Kopniveau 1 is de belangrijkste kop van de pagina en die gebruik je maar één keer. Kopniveau 1 geeft aan waar de hele pagina over gaat.
           </p>
           <h2>Kop met niveau 2</h2>
           <p>
-            Daaronder komen de koppen van niveau 2 (`H2`) Dit zijn als het ware de hoofdstukken binnen je onderwerp. Elk kopniveau 2 behandelt een belangrijk onderdeel van het onderwerp. Deze koppen kun je meerdere keren op een pagina gebruiken, zolang ze maar allemaal over het hoofdonderwerp gaan.
+            Daaronder komen de koppen van niveau 2 Dit zijn als het ware de hoofdstukken binnen je onderwerp. Elk kopniveau 2 behandelt een belangrijk onderdeel van het onderwerp. Deze koppen kun je meerdere keren op een pagina gebruiken, zolang ze maar allemaal over het hoofdonderwerp gaan.
           </p>
           <h3>Kop met niveau 3</h3>
           <p>
-            Als je in een tekst onder een kopniveau 2 nog wat meer detail wilt aanbrengen, gebruik je een kopniveau 3 (`H3`). Dat is een subkop, die gaat over een onderwerp uit de vorige paragraaf.
+            Als je in een tekst onder een kopniveau 2 nog wat meer detail wilt aanbrengen, gebruik je een kopniveau 3. Dat is een subkop, die gaat over een onderwerp uit de vorige paragraaf.
           </p>
           <h4>Kop met niveau 4</h4>
           <p>
