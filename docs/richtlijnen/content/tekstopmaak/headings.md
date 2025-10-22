@@ -79,17 +79,11 @@ Koppen moeten goed beschrijven waar de tekst onder de kop over gaat. Een duideli
 
 Koppen kunnen verschillende niveaus hebben. Door de verschillende niveaus zorg je voor een goede volgorde en deel je de tekst overzichtelijk in.
 
-### Vergeet kopniveau 1 niet
-
-Elke pagina heeft een hoofdtitel, ook wel kopniveau 1, nodig. Dit is het begin van de pagina-opbouw en helpt gebruikers om snel te begrijpen waar de pagina over gaat. Voor gebruikers met een schermlezer is dit vaak het eerste dat ze horen.
-
-Kopniveau 1 is ook de paginatitel. Zorg daarom dat deze titel binnen de hele website uniek is. Als kopniveau 1 ontbreekt, is het lastiger om te begrijpen waar de pagina over gaat. Gebruik deze kop om het onderwerp van de pagina aan te geven. Plaats hem boven alle andere koppen en gebruik hem maar één keer per pagina.
-
 ### Sla geen kopniveaus over
 
-Gebruik koppen in volgorde. Begin bijvoorbeeld met een Kop 2 onder de hoofdkop, daarna een Kop 3, dan een Kop 4. Sla geen niveaus over — zet dus geen Kop 4 direct onder een Kop 2.
+Gebruik koppen in volgorde. Begin bijvoorbeeld met een kopniveau 2 onder de hoofdkop, daarna een kopniveau 3, dan een kopniveau 4. Sla geen niveaus over — zet dus geen kopniveau 4 direct onder een kopniveau 2.
 
-Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel. Het is prima om na een Kop 4 weer een nieuwe sectie te beginnen met een Kop 2.
+Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel. Het is prima om na een kopniveau 4 weer een nieuwe sectie te beginnen met een kopniveau 2.
 
 <Guideline appearance="do" title="Gebruik kopniveaus in de de goede volgorde.">
   <Canvas language="html">
@@ -97,23 +91,23 @@ Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel
       <>
           <h1>Kop met niveau 1</h1>
           <p>
-            Kopniveau 1 (`H1`) is de belangrijkste kop van de pagina en die gebruik je maar één keer. De H1 geeft aan waar de hele pagina over gaat.
+            Kopniveau 1 (`H1`) is de belangrijkste kop van de pagina en die gebruik je maar één keer. Kopniveau 1 geeft aan waar de hele pagina over gaat.
           </p>
           <h2>Kop met niveau 2</h2>
           <p>
-            Daaronder komen de koppen van niveau 2 (`H2`) Dit zijn als het ware de hoofdstukken binnen je onderwerp. Elke H2 behandelt een belangrijk onderdeel van het onderwerp. Deze koppen kun je meerdere keren op een pagina gebruiken, zolang ze maar allemaal over het hoofdonderwerp gaan.
+            Daaronder komen de koppen van niveau 2 (`H2`) Dit zijn als het ware de hoofdstukken binnen je onderwerp. Elk kopniveau 2 behandelt een belangrijk onderdeel van het onderwerp. Deze koppen kun je meerdere keren op een pagina gebruiken, zolang ze maar allemaal over het hoofdonderwerp gaan.
           </p>
           <h3>Kop met niveau 3</h3>
           <p>
-            Als je in een tekst onder een H2 nog wat meer detail wilt aanbrengen, gebruik je een kop van niveau 3 (`H3`). Dat is een subkop, die gaat over een onderwerp uit de vorige paragraaf.
+            Als je in een tekst onder een kopniveau 2 nog wat meer detail wilt aanbrengen, gebruik je een kopniveau 3 (`H3`). Dat is een subkop, die gaat over een onderwerp uit de vorige paragraaf.
           </p>
           <h4>Kop met niveau 4</h4>
           <p>
-            Er zijn koppen van niveau 4, 5 en 6 maar die zijn meestal niet nodig. Die gebruik je alleen als je echt diep in de structuur van je tekst duikt. Voor de meeste webpagina’s zijn H1, H2 en H3 genoeg.
+            Er zijn koppen van niveau 4, 5 en 6 maar die zijn meestal niet nodig. Die gebruik je alleen als je echt diep in de structuur van je tekst duikt. Voor de meeste webpagina’s zijn kopniveau 1, 2 en 3 genoeg.
           </p>
            <h2>Kop met niveau 2</h2>
           <p>
-            Als je in een tekst weer een nieuw hoofdstuk wilt beginnen dan mag je hier weer H2 gebruiken.
+            Als je in een tekst weer een nieuw hoofdstuk wilt beginnen dan mag je hier weer kopniveau 2 gebruiken.
             Terug omhoog mag je wel kopniveaus overslaan.
           </p>
       </>
@@ -127,7 +121,7 @@ Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel
       <>
           <h1>Dit is een kop met niveau 1</h1>
           <p>
-            Sla, van boven naar beneden, geen niveaus over door bijvoorbeeld een kop van niveau 3 onder een kop van niveau 1 te plaatsen. 
+            Sla, van boven naar beneden, geen niveaus over door bijvoorbeeld een kopniveau 3 onder een kopniveau 1 te plaatsen. 
           </p>
           <h3>Dit is een kop met niveau 3</h3>
           <p>
@@ -138,6 +132,14 @@ Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel
   </Canvas>
 </Guideline>
 
+### Kopniveau 1: het begin van de structuur
+
+Elke pagina begint met een kopniveau 1. Dit is het startpunt van de kopstructuur en geeft aan waar de pagina over gaat. Voor schermlezers is dit vaak het eerste wat mensen horen. Ook zoekmachines gebruiken kopniveau 1 als belangrijkste titel van de pagina.
+
+In veel CMS’en is kopniveau 1 automatisch gekoppeld aan de paginatitel. Soms zie je deze bovenaan de pagina, soms is hij alleen zichtbaar in de code. Als contentmaker heb je hier niet altijd invloed op, maar je kunt het wel controleren. Bekijk de hele pagina, inclusief de koppenstructuur, in de preview of na publicatie. Zo weet je zeker dat de structuur klopt en dat de pagina goed navigeerbaar is voor iedereen.
+
+Gebruik kopniveau 1 maar één keer per pagina. Zorg dat de tekst ervan kort, duidelijk en uniek is binnen de site.
+
 ## Hoe te testen
 
 Of koppen goed zijn gebruikt, kun je voor een groot deel beoordelen door de pagina te lezen en logisch na te denken over structuur en betekenis. Gebruik onderstaande punten als leidraad:
@@ -146,10 +148,10 @@ Of koppen goed zijn gebruikt, kun je voor een groot deel beoordelen door de pagi
   De tekst van een kop moet duidelijk maken waar het volgende stukje content over gaat.
 - Worden koppen alleen gebruikt om structuur aan te brengen?
   Soms worden visueel opvallende teksten als ‘kop’ opgemaakt, zonder dat ze inhoud structureren. Dat is verwarrend. Gebruik koppen alleen als ze echt een nieuwe sectie inleiden.
-- Is er een duidelijke hiërarchie van kopniveaus (H1, H2, H3…)?
-  De volgorde van de koppen moet logisch zijn en geen niveaus overslaan. Een H3 mag niet direct onder een H1 vallen.
-- Is er één kopniveau 1, of H1, die de inhoud van de pagina beschrijft?
-  Deze paginatitel moet uniek zijn per pagina. Een paginatitel als ‘Welkom’ of ‘Nieuws’ op elke pagina helpt niemand.
+- Is er een duidelijke hiërarchie van kopniveaus (1, 2, 3…)?
+  De volgorde van de koppen moet logisch zijn en geen niveaus overslaan. Een kopniveau 3 mag niet direct onder een kopniveau 1 vallen.
+- Is er één kopniveau 1 die de inhoud van de pagina beschrijft?
+  Deze kop moet uniek zijn per pagina. Een kop met niveau 1 als ‘Welkom’ of ‘Nieuws’ op elke pagina helpt niemand.
 - Zijn er geen lege of nietszeggende koppen?
   Een kop als ‘Overzicht’ of ‘Klik hier’ zegt weinig over de inhoud. Zorg dat elke kop betekenisvol is.
 - Controleer op lege koppen.
