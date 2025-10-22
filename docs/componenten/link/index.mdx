@@ -50,6 +50,7 @@ import LinkIllustration from "@nl-design-system-candidate/link-docs/docs/anatomy
 import Wcag111 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.1.1-link.md";
 import Wcag1411 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.11-link.md";
 import Wcag1412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12.md";
+import Wcag141 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.1-link.md";
 import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.3.md";
 import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md";
 import Wcag211 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.1.1-link.md";
@@ -112,12 +113,20 @@ export const component = componentProgress.find((item) => item.number === issueN
 <AcImplementatie />
 
 <Checklist
+  headingLevel="4"
   items={[
     {
       title: "Als het label van de Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief.",
       sc: "1.1.1",
       status: "",
       component: <Wcag111 />,
+      tags: ["designer", "contentmaker"],
+    },
+    {
+      title: "Links in een lopende tekst zijn duidelijk zichtbaar.",
+      sc: "1.4.1",
+      status: "",
+      component: <Wcag141 />,
       tags: ["designer", "contentmaker"],
     },
     {
@@ -179,6 +188,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 <AcComponent />
 
 <Checklist
+  headingLevel="4"
   items={[
     {
       title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",

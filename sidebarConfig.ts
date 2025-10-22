@@ -80,6 +80,9 @@ const sidebars: SidebarsConfig = {
           link: {
             type: 'generated-index',
             title: 'Voor organisaties',
+            description:
+              'Overweeg je NL Design System te gebruiken? Hier verzamelen we alle informatie die je als organisatie mogelijk kan helpen.',
+
             slug: '/handboek/organisatie/overzicht',
             keywords: ['organisaties', 'overzicht'],
           },
@@ -374,12 +377,16 @@ const sidebars: SidebarsConfig = {
           },
           items: [
             { type: 'doc', id: 'community/events/design-systems-week/index' },
+            { type: 'doc', id: 'community/events/design-systems-week/programma' },
+            { type: 'doc', id: 'community/events/design-systems-week/tijdschema' },
             {
               type: 'category',
               label: 'English',
               link: { type: 'doc', id: 'community/events/design-systems-week/en/index' },
               items: [
                 { type: 'doc', id: 'community/events/design-systems-week/en/index' },
+                { type: 'doc', id: 'community/events/design-systems-week/en/program' },
+                { type: 'doc', id: 'community/events/design-systems-week/en/timetable' },
                 {
                   type: 'category',
                   label: 'Previous editions',

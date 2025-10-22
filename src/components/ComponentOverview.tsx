@@ -16,7 +16,6 @@ import {
 } from '../utils';
 import { CardGroup } from './CardGroup';
 import { ComponentCard } from './ComponentCard';
-import './ComponentOverview.css';
 import { EstafetteBadge } from './EstafetteBadge';
 
 export const ComponentOverview = () => {
@@ -100,53 +99,54 @@ export const ComponentOverview = () => {
 
   return (
     <>
-      <AccordionProvider
-        sections={[
-          {
-            className: 'utrecht-accordion--nlds-subtle',
-            headingLevel: 2,
-            expanded: params.size > 0,
+      <div className="filter-accordion">
+        <AccordionProvider
+          sections={[
+            {
+              headingLevel: 2,
+              expanded: params.size > 0,
 
-            // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            label: (<span id="filter-results-label">Filter componenten</span>) as any,
-            body: (
-              <>
-                <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
-                  <h3 className="utrecht-heading-6">Status</h3>
-                  {Object.entries(selectedStatusOptions).map(([key, status]) => (
-                    <FormField key={key} type="checkbox">
-                      <Checkbox
-                        defaultChecked={showStatuses.includes(key)}
-                        id={key}
-                        onChange={(event) => toggleShowStatus(event.target.checked, key)}
-                      />
-                      <FormLabel htmlFor={key}>
-                        <EstafetteBadge state={status} />
-                      </FormLabel>
-                    </FormField>
-                  ))}
-                </Fieldset>
-                {selectedFrameworkOptions.length > 0 && (
+              // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              label: (<span id="filter-results-label">Filter componenten</span>) as any,
+              body: (
+                <>
                   <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
-                    <h3 className="utrecht-heading-6">Implementatie</h3>
-                    {selectedFrameworkOptions.map((frameworkName) => (
-                      <FormField key={frameworkName} type="checkbox">
+                    <h3 className="utrecht-heading-6">Status</h3>
+                    {Object.entries(selectedStatusOptions).map(([key, status]) => (
+                      <FormField key={key} type="checkbox">
                         <Checkbox
-                          defaultChecked={showFrameworks.includes(frameworkName)}
-                          id={frameworkName}
-                          onChange={(event) => toggleShowFramework(event.target.checked, frameworkName)}
+                          defaultChecked={showStatuses.includes(key)}
+                          id={key}
+                          onChange={(event) => toggleShowStatus(event.target.checked, key)}
                         />
-                        <FormLabel htmlFor={frameworkName}>{frameworkName}</FormLabel>
+                        <FormLabel htmlFor={key}>
+                          <EstafetteBadge state={status} />
+                        </FormLabel>
                       </FormField>
                     ))}
                   </Fieldset>
-                )}
-              </>
-            ),
-          },
-        ]}
-      ></AccordionProvider>
+                  {selectedFrameworkOptions.length > 0 && (
+                    <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
+                      <h3 className="utrecht-heading-6">Implementatie</h3>
+                      {selectedFrameworkOptions.map((frameworkName) => (
+                        <FormField key={frameworkName} type="checkbox">
+                          <Checkbox
+                            defaultChecked={showFrameworks.includes(frameworkName)}
+                            id={frameworkName}
+                            onChange={(event) => toggleShowFramework(event.target.checked, frameworkName)}
+                          />
+                          <FormLabel htmlFor={frameworkName}>{frameworkName}</FormLabel>
+                        </FormField>
+                      ))}
+                    </Fieldset>
+                  )}
+                </>
+              ),
+            },
+          ]}
+        ></AccordionProvider>
+      </div>
 
       <Paragraph role="status" id="filter-results">
         {filteredComponents.length} van {components.length} componenten zichtbaar

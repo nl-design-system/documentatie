@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Evalien deelt in haar sessie de lessen die DUO de afgelopen jaren heeft geleerd. Hoe breek je vertrouwen in je design system onbewust af, en belangrijker: hoe bouw je het weer op? Aan de hand van praktijkvoorbeelden vertelt ze over de problemen die zijn ontstaan en hoe DUO werkt aan oplossingen. \n\nEnglish: \n\In her session, Evalien shares the lessons DUO has learned in recent years. How do you unconsciously undermine trust in your design system, and more importantly, how do you rebuild it? Using practical examples, she talks about the problems that have arisen and how DUO is working on solutions.
+UID:c3b53154-1ed9-44e5-b69d-4a6a31190063
+SUMMARY:Een Design System: Bouwen aan vertrouwen - door Evalien Wiersma
+DTSTART;TZID=Europe/Amsterdam:20251030T150000
+DTEND;TZID=Europe/Amsterdam:20251030T154500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmEzYjIyMTgtNjA0ZS00YTc3LTkxYjctZjBmNzQ4MWVjM2Vj%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

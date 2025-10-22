@@ -36,8 +36,7 @@ restitutie van kosten).
 
 ## Meld ongewenst gedrag
 
-Houd iemand zich niet aan de gedragscode? Neem dan contact op met één van onze
-organisatoren, Hidde of Yolijn. Kan je ons niet direct vinden? Zoek dan een medewerker
+Houd iemand zich niet aan de gedragscode? Neem dan contact op met Yolijn. Kan je ons niet direct vinden? Zoek dan een medewerker
 van de locatie en vraag of ze direct contact met ons opnemen.
 
 We zullen elke melding serieus nemen en vertrouwelijk behandelen.
@@ -45,7 +44,5 @@ We zullen elke melding serieus nemen en vertrouwelijk behandelen.
 ## Melding maken
 
 Yolijn: 06-19991566
-
-Hidde: 06-41226294
 
 Niet urgent? Je kunt ook melding maken via [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl)

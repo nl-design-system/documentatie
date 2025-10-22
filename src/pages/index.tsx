@@ -1,22 +1,37 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+
 import {
-  ButtonGroup,
-  ButtonLink,
-  Heading1,
+  ButtonGroup as ActionGroup,
   Heading2,
-  Heading3,
   Image,
   Paragraph,
+} from '@utrecht/component-library-react/dist/css-module';
+import { Card as TempCard, CardGroup, CardIllustration } from '../components/CardGroup';
+import { Card } from '@utrecht/card-react/css';
+import { Link } from '../components/Link';
+import {
+  ButtonLink,
+  Heading1,
+  Icon,
+  SpotlightSection,
   Strong,
   UnorderedList,
   UnorderedListItem,
-} from '@utrecht/component-library-react/dist/css-module';
-import { Card, CardContent, CardGroup, CardIllustration } from '../components/CardGroup';
-import HomepageHero from '../components/HomepageHero';
-import HomepageUpdates from '../components/HomepageUpdates';
-import { Link } from '../components/Link';
+} from '@utrecht/component-library-react';
+import { IconChevronRight } from '@tabler/icons-react';
+import {
+  DeveloperSVG,
+  DesignerSVG,
+  ContentSVG,
+  ManagerSVG,
+  GuidelineSVG,
+  ComponentSVG,
+  ExamplesSVG,
+  UserResearchSVG,
+} from '@site/src/components/Icons';
 import { HeartbeatEpisode } from '../components/HeartbeatEpisode';
+import './index.css';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -28,231 +43,199 @@ export default function Home() {
       wrapperClassName="container--narrow"
     >
       <main>
-        <HomepageHero>
-          <Heading1>NL Design System</Heading1>
-          <Paragraph lead>
-            Samen met diverse overheidsorganisaties ontwikkelen we herbruikbare bouwblokken voor toegankelijke en
-            gebruiksvriendelijke webapplicaties en websites.
-          </Paragraph>
-          <UnorderedList>
-            <UnorderedListItem>
-              <Strong>Actieve community</Strong> deelt regelmatig kennis, ervaring, componenten en verbeteringen
-            </UnorderedListItem>
-            <UnorderedListItem>
-              <Strong>Componentenbibliotheek</Strong> beschikbaar voor efficiënt hergebruik
-            </UnorderedListItem>
-            <UnorderedListItem>
-              <Strong>Herbruikbaar</Strong> voor iedere huisstijl. Open Source en platform-onafhankelijk
-            </UnorderedListItem>
-            <UnorderedListItem>
-              <Strong>Goed onderbouwd</Strong> met praktijkervaring, richtlijnen en gebruikersonderzoek
-            </UnorderedListItem>
-          </UnorderedList>
-          <Link href="/handboek/introductie">Lees meer over NL Design System</Link>
-        </HomepageHero>
-        <div className="container" style={{ paddingBlockEnd: '40px' }}>
-          <Heading2>Doe mee</Heading2>
-          <CardGroup appearance="medium">
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading3>Developers</Heading3>
-                  <Paragraph>
-                    Meedoen als developer? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te
-                    gaan met de componenten, Storybook en design tokens.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/handboek/developer/overzicht">Meer informatie voor developers</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading3>Designers</Heading3>
-                  <Paragraph>
-                    Meedoen als designer? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te
-                    gaan met de componenten, Figma en design tokens.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/handboek/designer/overzicht">Meer informatie voor designers</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading3>Managers</Heading3>
-                  <Paragraph>
-                    Meedoen als manager? In de introductie voor managers in het Handboek kun je lezen wat meedoen
-                    betekent
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/handboek/manager/introductie">Meer informatie voor managers</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading3>Contentmakers</Heading3>
-                  <Paragraph>
-                    Meedoen als contentmaker? Gebruik vandaag nog onze content richtlijnen bij het maken van
-                    toegankelijke webcontent.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/richtlijnen/content">Richtlijnen voor contentmakers.</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-          </CardGroup>
+        <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--hero">
+          <div className="container">
+            <Heading1>Samen bouwen aan betere digitale dienstverlening</Heading1>
+            <Paragraph appearance="lead">
+              NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te
+              ontdekken we welke componenten écht werken in de praktijk. Zo werken we toe naar een Hall of Fame van
+              gebruiksvriendelijke, toegankelijke componenten, patronen en templates.
+            </Paragraph>
+            <Heading2>Waarom meedoen?</Heading2>
+            <UnorderedList>
+              <UnorderedListItem>
+                <Strong>Actieve community</Strong> die regelmatig kennis, ervaring en componenten deelt
+              </UnorderedListItem>
+              <UnorderedListItem>
+                <Strong>Groeiende bibliotheek</Strong> gebaseerd op gebruikersonderzoek en praktijkervaring
+              </UnorderedListItem>
+              <UnorderedListItem>
+                <Strong>Open source oplossingen</Strong> waar iedereen componenten kan gebruiken en bijdragen
+              </UnorderedListItem>
+              <UnorderedListItem>
+                <Strong>Deelnemen op het niveau dat past</Strong>, stap voor stap, zonder licentiekosten
+              </UnorderedListItem>
+            </UnorderedList>
+            <ActionGroup>
+              <ButtonLink href="/handboek/estafettemodel/" appearance="primary-action-button">
+                Bekijk hoe het werkt
+              </ButtonLink>
+              <ButtonLink href="/community/sluit-je-aan/" appearance="secondary-action-button">
+                Doe mee
+              </ButtonLink>
+            </ActionGroup>
+          </div>
+        </SpotlightSection>
+        <div className="container">
+          <Heading2>Waar begin je?</Heading2>
+          <div className="homepage-card-group">
+            <Card
+              body="Meedoen met code? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Storybook en design tokens."
+              heading="Als je websites bouwt"
+              headingLevel={3}
+              href="/handboek/developer/overzicht"
+              image={<DeveloperSVG />}
+            ></Card>
+            <Card
+              body="Meedoen met Figma? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
+              heading="Als je designs maakt"
+              headingLevel={3}
+              href="/handboek/designer/overzicht"
+              image={<DesignerSVG />}
+            ></Card>
+            <Card
+              body="Meedoen als contentmaker? Gebruik vandaag nog onze content richtlijnen bij het maken van toegankelijke webcontent."
+              heading="Als je content beheert"
+              headingLevel={3}
+              href="/richtlijnen/content"
+              image={<ContentSVG />}
+            ></Card>
+            <Card
+              body="Meedoen als manager? Herbruikbare oplossingen die tijd en budget besparen, met business cases en implementatiestrategieën"
+              heading="Als je projecten leidt"
+              headingLevel={3}
+              href="/handboek/manager/introductie"
+              image={<ManagerSVG />}
+            ></Card>
+          </div>
         </div>
-        <HomepageUpdates>
-          <Heading2>Bekijk de laatste updates</Heading2>
-          <HeartbeatEpisode headingLevel={3} />
-          <ButtonGroup>
-            <ButtonLink href="/events/heartbeat/aanmelden" appearance="primary-action-button">
-              Meld je aan voor de Heartbeat
-            </ButtonLink>
-            <ButtonLink href="/events/heartbeat/videos" appearance="secondary-action-button">
-              Bekijk alle Heartbeat videos
-            </ButtonLink>
-          </ButtonGroup>
-        </HomepageUpdates>
+        <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--heartbeat">
+          <div className="container">
+            <Heading2>Bekijk de laatste updates</Heading2>
+            <HeartbeatEpisode headingLevel={3} />
+
+            <ActionGroup>
+              <ButtonLink href="/events/heartbeat/aanmelden" appearance="primary-action-button">
+                Meld je aan voor de Heartbeat
+                <Icon>
+                  <IconChevronRight />
+                </Icon>
+              </ButtonLink>
+              <ButtonLink href="/events/heartbeat/videos" appearance="secondary-action-button">
+                Bekijk andere Heartbeats
+                <Icon>
+                  <IconChevronRight />
+                </Icon>
+              </ButtonLink>
+            </ActionGroup>
+          </div>
+        </SpotlightSection>
+
         <div className="container">
           <Heading2>Gebruik NL Design System</Heading2>
-          <CardGroup>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Richtlijnen</Heading2>
-                  <Paragraph>
-                    Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/richtlijnen">Bekijk de richtlijnen</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Componenten</Heading2>
-                  <Paragraph>
-                    Herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer. Inclusief
-                    code en documentatie.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/componenten">Bekijk de componenten</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Handboek</Heading2>
-                  <Paragraph>
-                    Algemene informatie over het Estafettemodel en bijdragen van componenten en handleidingen voor
-                    developers en designers.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/handboek">Bekijk het handboek</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading2>Voorbeelden</Heading2>
-                  <Paragraph>
-                    Patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te
-                    lossen.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link to="/voorbeelden">Bekijk de voorbeelden</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-          </CardGroup>
+          <div className="homepage-card-group">
+            <Card
+              body="Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen."
+              heading="Richtlijnen"
+              headingLevel={3}
+              href="/richtlijnen"
+              image={<GuidelineSVG />}
+              className="utrecht-card--ma-info"
+            ></Card>
+            <Card
+              body="Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer."
+              heading="Componenten"
+              headingLevel={3}
+              href="/componenten"
+              image={<ComponentSVG />}
+              className="utrecht-card--ma-info"
+            ></Card>
+            <Card
+              body="Een overzicht van patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te lossen."
+              heading="Voorbeelden"
+              headingLevel={3}
+              href="/voorbeelden"
+              image={<ExamplesSVG />}
+              className="utrecht-card--ma-info"
+            ></Card>
+            <Card
+              body="NL Design System verzamelt en publiceert gebruikersonderzoeken en faciliteert de community om samen te werken aan nieuwe onderzoeken."
+              heading="Gebruikersonderzoek"
+              headingLevel={3}
+              href="/voorbeelden/onderzoek"
+              image={<UserResearchSVG />}
+              className="utrecht-card--ma-info"
+            ></Card>
+          </div>
         </div>
-        <div className="container" style={{ paddingBlockEnd: '40px' }}>
+
+        <div className="container">
           <Heading2>Wie doen er al mee?</Heading2>
           <CardGroup appearance="small">
-            <Card appearance="small" href="https://github.com/nl-design-system/utrecht">
+            <TempCard appearance="small" href="https://github.com/nl-design-system/utrecht">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__utrecht.svg"
                   alt="Gemeente Utrecht logo, naar Gemeente Utrecht op GitHub"
                 />
               </CardIllustration>
-            </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/denhaag">
+            </TempCard>
+            <TempCard appearance="small" href="https://github.com/nl-design-system/denhaag">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg"
                   alt="Gemeente Den Haag logo, naar Gemeente Den Haag op GitHub"
                 />
               </CardIllustration>
-            </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/amsterdam">
+            </TempCard>
+            <TempCard appearance="small" href="https://github.com/nl-design-system/amsterdam">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__amsterdam.svg"
                   alt="Gemeente Amsterdam logo, naar Gemeente Amsterdam op GitHub"
                 />
               </CardIllustration>
-            </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/rotterdam">
+            </TempCard>
+            <TempCard appearance="small" href="https://github.com/nl-design-system/rotterdam">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rotterdam.svg"
                   alt="Gemeente Rotterdam logo, naar Gemeente Rotterdam op GitHub"
                 />
               </CardIllustration>
-            </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/tilburg">
+            </TempCard>
+            <TempCard appearance="small" href="https://github.com/nl-design-system/tilburg">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__tilburg.png"
                   alt="Gemeente Tilburg logo, naar Gemeente Tilburg op GitHub"
                 />
               </CardIllustration>
-            </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/rvo">
+            </TempCard>
+            <TempCard appearance="small" href="https://github.com/nl-design-system/rvo">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg"
                   alt="Rijksdienst voor Ondernemend Nederland logo, naar RVO op GitHub"
                 />
               </CardIllustration>
-            </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/lux">
+            </TempCard>
+            <TempCard appearance="small" href="https://github.com/nl-design-system/lux">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.png"
                   alt="Logius logo, naar LUX op GitHub"
                 />
               </CardIllustration>
-            </Card>
-            <Card appearance="small" href="https://github.com/nl-design-system/rijkshuisstijl-community">
+            </TempCard>
+            <TempCard appearance="small" href="https://github.com/nl-design-system/rijkshuisstijl-community">
               <CardIllustration>
                 <Image
                   src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rijkshuisstijl-community.png"
                   alt="Rijkshuisstijl Community logo, naar Rijkshuisstijl Community op GitHub"
                 />
               </CardIllustration>
-            </Card>
+            </TempCard>
           </CardGroup>
           <Paragraph className="homepage__paragraph">
             Naast de organisaties die componenten bijdragen doen{' '}
@@ -260,71 +243,37 @@ export default function Home() {
             System.
           </Paragraph>
         </div>
-        <HomepageUpdates>
-          <Heading2>Blijf op de hoogte</Heading2>
-          <CardGroup>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading3>Nieuwsbrief</Heading3>
-                  <Paragraph>
-                    Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL
-                    Design System.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link href="/project/blijf-op-de-hoogte#nieuwsbrief">Meld je aan voor de nieuwsbrief</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading3>Blog</Heading3>
-                  <Paragraph>
-                    Op ons blog schrijven we over wat er speelt in het kernteam en de community. Ook kun je er meer
-                    lezen over wat we doen en waarom.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link href="/blog">Lees het blog</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading3>Design Open Hour</Heading3>
-                  <Paragraph>
-                    Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit
-                    te wisselen.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link href="/events/design-open-hour/aanmelden">Meld je aan voor Design Open Hour</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-            <Card component="section" appearance="medium">
-              <CardContent>
-                <div>
-                  <Heading3>Developer Open Hour</Heading3>
-                  <Paragraph>
-                    Wees welkom bij de 2-wekelijkse online bijeenkomst waar developers vragen stellen en tips uit te
-                    wisselen.
-                  </Paragraph>
-                </div>
-                <Paragraph>
-                  <Link href="/events/developer-open-hour/aanmelden">Meld je aan voor Developer Open Hour</Link>
-                </Paragraph>
-              </CardContent>
-            </Card>
-          </CardGroup>
-          <Paragraph>
-            Benieuwd wat we nog meer doen?{' '}
-            <Link to="/community/events/overzicht">Bekijk het overzicht van alle bijeenkomsten</Link>
-          </Paragraph>
-        </HomepageUpdates>
+        <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--footer">
+          <div className="container">
+            <Heading2>Blijf op de hoogte</Heading2>
+            <div className="homepage-card-group">
+              <Card
+                body="Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System worden besproken."
+                heading="Heartbeat"
+                headingLevel={3}
+                href="/events/heartbeat/aanmelden"
+              ></Card>
+              <Card
+                body="Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL Design System."
+                heading="Nieuwsbrief"
+                headingLevel={3}
+                href="/project/blijf-op-de-hoogte#nieuwsbrief"
+              ></Card>
+              <Card
+                body="Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit te wisselen."
+                heading=" Design Open Hour"
+                headingLevel={3}
+                href="/events/design-open-hour/aanmelden"
+              ></Card>
+              <Card
+                body="Wees welkom bij de 2-wekelijkse online bijeenkomst waar developers vragen stellen, inzichten delen en tips uit te wisselen."
+                heading=" Developer Open Hour"
+                headingLevel={3}
+                href="/events/developer-open-hour/aanmelden"
+              ></Card>
+            </div>
+          </div>
+        </SpotlightSection>
       </main>
     </Layout>
   );
