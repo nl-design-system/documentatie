@@ -433,7 +433,7 @@ Benodigde CSS:
 Gebruik een Unordered List voor de opsommingen. In het voorbeeld is de Utrecht [Unordered List](https://nl-design-system.github.io/utrecht/storybook-css/?path=/docs/css-unordered-list--docs) gebruikt.
 
 ```html
-<ul class="utrecht-unordered-list">
+<ul role="list" class="utrecht-unordered-list">
   <li class="utrecht-unordered-list__item">
     Graffiti of posters kunnen alleen worden verwijderd als u daarvoor toestemming geeft. U hoeft dit maar 1 keer te
     doen.
