@@ -6,76 +6,82 @@ import TextTypeHelper from './TexTypeHelper';
 import ContextTypeHelper from './ContextTypeHelper';
 import './AltTextHelper.css';
 
-const maxSteps = 3;
-
 const AltTextHelper = () => {
   const [helperTextId, setHelperTextId] = useState('');
-  const [imageTypeText, setImageTypeText] = useState(false);
-  const [imageTypeContext, setImageTypeContext] = useState(false);
-  const [currentStep, setcurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState('');
+  const [previousStep, setPreviousStep] = useState('');
+  const [nextStep, setNextStep] = useState('');
 
-  const addStep = () => {
-    if (currentStep < maxSteps) setcurrentStep(currentStep + 1);
+  const next = () => {
+    setCurrentStep(nextStep);
   };
 
-  const subtractStep = () => {
-    if (currentStep > 1) setcurrentStep(currentStep - 1);
+  const prev = () => {
+    if (currentStep === 'text-type' || currentStep === 'context-type') {
+      setPreviousStep('image-type');
+      setCurrentStep('image-type');
+    } else {
+      setCurrentStep(previousStep);
+    }
   };
 
   const onOptionChange = (e) => {
     const { value, name } = e.target;
 
     switch (name) {
-      case 'context-type':
-        setImageTypeText(false);
-        setHelperTextId(value);
-        break;
-
       case 'text-type':
-        setImageTypeContext(false);
         setHelperTextId(value);
+        setPreviousStep('text-type');
+        setNextStep('helper-text');
         break;
-
-      default:
+      case 'context-type':
+        setHelperTextId(value);
+        setPreviousStep('context-type');
+        setNextStep('helper-text');
+        break;
+      case 'image-type':
         setHelperTextId('');
-        setImageTypeText(false);
-        setImageTypeContext(false);
 
         switch (value) {
           case 'image-type-text-help':
-            setImageTypeText(true);
+            setNextStep('text-type');
             break;
 
           case 'image-type-context-help':
-            setImageTypeContext(true);
+            setNextStep('context-type');
             break;
 
           default:
             setHelperTextId(value);
+            setNextStep('helper-text');
         }
     }
   };
 
   return (
     <form className="nlds-alt-text-helper">
-      <p className="utrecht-pre-heading">
-        Stap {currentStep} van {maxSteps}
-      </p>
+      {(currentStep === 'image-type' || currentStep === '') && <ImageTypeHelper onOptionChange={onOptionChange} />}
 
-      <ImageTypeHelper onOptionChange={onOptionChange} />
+      {currentStep === 'text-type' && <TextTypeHelper onOptionChange={onOptionChange} />}
 
-      {imageTypeText && <TextTypeHelper onOptionChange={onOptionChange} />}
+      {currentStep === 'context-type' && <ContextTypeHelper onOptionChange={onOptionChange} />}
 
-      {imageTypeContext && <ContextTypeHelper onOptionChange={onOptionChange} />}
-
-      <HelperText helperTextId={helperTextId} />
+      {currentStep === 'helper-text' && <HelperText helperTextId={helperTextId} />}
 
       <div className="button-bar">
-        <Button appearance="secondary-action-button" disabled={currentStep === 1 ? true : false} onClick={subtractStep}>
+        <Button
+          appearance="secondary-action-button"
+          disabled={currentStep === 'image-type' ? true : false}
+          onClick={prev}
+        >
           Vorige
         </Button>
 
-        <Button appearance="primary-action-button" disabled={currentStep === maxSteps ? true : false} onClick={addStep}>
+        <Button
+          appearance="primary-action-button"
+          disabled={currentStep === 'helper-text' || nextStep === currentStep ? true : false}
+          onClick={next}
+        >
           Volgende
         </Button>
       </div>
