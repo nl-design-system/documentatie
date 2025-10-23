@@ -8,7 +8,11 @@
 }
 
 .nlds-alt-text-helper .utrecht-form-fieldset__fieldset > .utrecht-form-field-description {
-  margin-block-end: var(--ifm-paragraph-margin-bottom * 0.5);
+  margin-block-end: var(--ifm-paragraph-margin-bottom);
+}
+
+.nlds-alt-text-helper .utrecht-spotlight-section {
+  margin-block-end: var(--ifm-paragraph-margin-bottom);
 }
 
 .nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-2 {
