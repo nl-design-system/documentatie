@@ -121,10 +121,8 @@ Gebruik bij voorkeur inline SVG voor iconen en UI‑symbolen:
 - Inline SVG ondersteunt theming (`currentColor`, CSS‑variabelen) en high‑contrast/forced‑colors.
 - States (hover/focus/active) zijn te stylen met CSS.
 
-Wanneer `<img src="…svg">` wel kan:
-
-- Voor decoratieve, kleurvaste afbeeldingen die door contentmakers worden beheerd.
-  :::
+`<img src="…svg">` kan wel voor decoratieve, kleurvaste afbeeldingen die door contentmakers worden beheerd.
+:::
 
 Het logo kunnen we als volgt toevoegen:
 
@@ -347,7 +345,7 @@ Het `<main>`-element markeert de hoofdinhoud van de pagina als een zogenaamde �
 
 - Gebruik precies één `<main>` per pagina.
 - Plaats `id="main"` op `<main>` zodat de skip‑link (`href="#main"`) werkt.
-- Zet geen `main` binnen andere landmarks zoals `header`, `nav` of `footer`.
+- Plaats andere herhalende landmarks buiten `main`, zodat gebruikers makkelijk al die onderdelen kunnen overslaan. De `nav` van de Breadcrumb Navigation moet bijvoorbeeld niet in `main` staan.
 
 #### Page Body
 
