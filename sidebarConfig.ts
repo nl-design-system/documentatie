@@ -401,6 +401,18 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'Expertteam',
+          link: {
+            type: 'doc',
+            id: 'community/expertteam/index',
+          },
+          items: [
+            { type: 'doc', id: 'community/expertteam/theme-wizard' },
+            { type: 'doc', id: 'community/expertteam/rich-text-editor' },
+          ],
+        },
         { type: 'doc', id: 'community/belangenorganisaties/aanmelden' },
         { type: 'doc', id: 'project/slack' },
       ],
