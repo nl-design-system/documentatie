@@ -48,8 +48,8 @@
   {
     "uuid": "b4c4bb07-c796-4cfa-ae84-be172caef3e5",
     "isoDateTime": "2025-10-28T12:00:00.000Z",
-    "speakers": [],
-    "subject": "NL Design System Heartbeat",
+    "speakers": ["GerbenStarink", "AlineNap", "BryanDeJong"],
+    "subject": "Heartbeat - Design Systems Week editie",
     "icalLink": "/heartbeat/heartbeat.ics",
     "language": { "abbr": "NL", "description": "Nederlands" }
   },

@@ -246,5 +246,41 @@
       "nl": "Robbert is design system lead van NL Design System. Met zijn ervaring bij andere design systems kent hij zowel de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele, toegankelijke componenten. In de rol van developer relations werkt hij graag online samen met developers van verschillende organisaties om dit community gedragen design system neer te zetten. Zijn passie voor keukengerei is daarbij niet te missen! RVS met een haakje? Dan kun je het waarschijnlijk op zijn achtergrond vinden."
     },
     "language": "nl"
+  },
+  "GerbenStarink": {
+    "name": "Gerben Starink",
+    "organisation": "Ministerie van Algemene Zaken",
+    "image": {
+      "src": "https://media.licdn.com/dms/image/v2/C4D03AQFY27BJ_LpKiw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1522156072561?e=1762992000&v=beta&t=RTJHN_1onTUuneXTS_B9q4oMxMyTUgQ6FGbqMY9YQto",
+      "alt": "Gerben Starink"
+    },
+    "description": {
+      "nl": "Gerben is adviseur Rijkshuisstijl bij Algemene Zaken en een bekend gezicht bij de Rijkshuisstijl Community."
+    },
+    "language": "nl"
+  },
+  "AlineNap": {
+    "name": "Aline Nap",
+    "organisation": "Logius",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-AlineNap.png",
+      "alt": "Aline Nap"
+    },
+    "description": {
+      "nl": "Aline is Design System Designer bij Logius en actief in de Rijkshuisstijl Community. Heb je vragen over design tokens of Figma Variables? Dan ben je bij haar aan het juiste adres."
+    },
+    "language": "nl"
+  },
+  "BryanDeJong": {
+    "name": "Bryan de Jong",
+    "organisation": "VNG Realisatie",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-BryanDeJong.png",
+      "alt": "Bryan de Jong"
+    },
+    "description": {
+      "nl": "Bryan is front-end developer bij VNG Realisatie en Frameless. Hij maakt het makkelijker voor organisaties om aan de slag te gaan met NL Design System door templates, documentatie en thema tooling beschikbaar te stellen binnen de community. Daarbij bouwt hij voort op bestaande community componenten om de stap naar implementatie zo klein mogelijk te maken."
+    },
+    "language": "nl"
   }
 }
