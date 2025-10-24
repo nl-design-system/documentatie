@@ -45,7 +45,7 @@ Alle interactieve elementen op een pagina moet je kunnen bereiken **en** bediene
   - Een knop is daarnaast ook te activeren met de <kbd>spatiebalk</kbd>.
   - Selecties binnen een onderdeel kunnen vaak met de <kbd>spatiebalk</kbd>.
   - Sommige elementen zoals sliders zijn te bedienen met pijltjestoetsen.
-  - Een formulier kan eventueel ook verzonden worden met <kbd>return/enter</kbd> in plaats van een `<button>` te gebruiken. Dit heet [<span lang="en">implicit submission</span>](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission).
+  - Een formulier kan soms ook verzonden worden met <kbd>return/enter</kbd> in plaats van een `<button>` te gebruiken. Dit heet [<span lang="en">implicit submission</span>](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission).
   - Soms zijn er nog andere manieren om het toetsenbord te gebruik. Denk hierbij aan acties annuleren met <kbd>esc</kbd> of navigeren met toetsen als <kbd>home</kbd> en <kbd>end</kbd>. Als er bij zelfgebouwde elemente twijfel is hoe die bediend moeten worden, vergelijk dan met pure HTML.
 
 Op MacOS kunnen extra instellingen nodig zijn voor bediening met het toetsenbord:
@@ -53,8 +53,8 @@ Op MacOS kunnen extra instellingen nodig zijn voor bediening met het toetsenbord
 - [<span lang="en">Keyboard navigation on MacOS</span>](https://support.apple.com/en-gb/guide/mac-help/mchlc06d1059/mac).
 - [<span lang="en">How to activate keyboard navigation on MacOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
 
-Het toetsenbord zelf is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of andere invoerapparaten gebruiken. Daarnaast zijn er tal van apparaten die zich gedragen als een toetsenbord en daarmee ook baat hebben bij dit criterium. Denk hierbij naast het toetsenbord aan een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar). Screenreaders worden vooral gebruikt door mensen met een visuele beperking, maar ook mensen met cognitieve beperkingen kunnen hier baat bij hebben. Daarnaast zijn er tal van hulpmiddelen zoals de eenfunctieschakelaar die gebruikt worden door mensen met motorische beperkingen.
-Naast mensen met beperkingen zijn er tal van andere mensen die baat hebben bij goede toetsenbordbediening. Denk hierbij aan zogenaamde _power users_ en mensen regelmatige bezoekers die sneller werken met een toetsenbord.
+Het toetsenbord zelf is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of andere invoerapparaten gebruiken. Dit criterium is ook voor tal van apparaten die werken als een toetsenbord. Denk hierbij naast het toetsenbord aan een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar). Screenreaders worden vooral gebruikt door mensen met een visuele beperking, maar ook door mensen met cognitieve beperkingen. Daarnaast zijn er tal van hulpmiddelen zoals de eenfunctieschakelaar die gebruikt worden door mensen met motorische beperkingen.
+Werkende toetsenboordbediening helpt mensen met beperkingen maar ook andere mensen. Denk hierbij aan zogenaamde _power users_ en mensen regelmatige bezoekers die sneller werken met een toetsenbord.
 
 ## Hoe te testen
 
@@ -87,7 +87,7 @@ Dit probleem is afhankelijk van code.
 
 ### Hover
 
-Uitklappende menus, tooltips en soortgelijke elementen werken soms alleen bij een hover. Deze moeten ook werken met het toetsenbord. Als iets uitklapt, moet het geactiveerd kunnen worden met het toetsenbord. Extra hints of informatie zoals die in een tooltip kan soms ook via `aria-describedby` gecommuniceerd worden.
+Uitklappende menus, tooltips en soortgelijke elementen werken soms alleen bij een hover. Deze moeten ook werken met het toetsenbord. Als iets uitklapt, moet het geactiveerd kunnen worden met het toetsenbord. Daarnaast moet de inhoud ook te bereiken zijn met het toetsenbord. Extra hints of informatie zoals die in een tooltip kan soms ook via `aria-describedby` gecommuniceerd worden.
 Dit probleem is afhankelijk van code en UX.
 
 ### Tabindex
@@ -99,6 +99,17 @@ Dit probleem is afhankelijk van code.
 
 Kaarten en visualizaties zijn vaak slecht bereikbaar voor het toetsenbord. Ze zijn lastig toegankelijk te maken. Als er geen andere oplossing mogelijk is kan er een alternatief geboden worden. Zo kan een kaart met markers en adressen aangevuld worden met een lijst met dezelfde adressen. Let wel op dat het alternatief een volwaardige oplossing is.
 Dit probleem is afhankelijk van content.
+
+### Cookiemeldingen
+
+Een cookiemelding is vaak niet of moeilijk te bereiken en bedienen met een toetsenbord. De focus staat op het achterliggende document en niet op de melding. De melding staat aan het einde van de code van een pagina, en is daarom moeilijk te bereiken.
+Idealiter is de melding _modal_ als een dialoogvenster. Zet de focus op de melding en zorg dat de content in de achtergrond niet te bereiken is.
+Dit probleem is afhankelijk van code.
+
+### Feedback- en chatknoppen
+
+Net als cookiemeldingen staan feedback- en chatknoppen vaak aan het eind van de code van een pagina. Ze zijn daarmee ook moeilijk te bereiken. Door deze knoppen in de pagina te verwerken zullen ze minder snel gemist worden. Dit kan als alternatief. De bestaande knoppen kunnen blijven bestaan.
+Dit probleem is afhankelijk van design en content.
 
 ## Gerelateerde NL Design System-richtlijnen en WCAG criteria
 
