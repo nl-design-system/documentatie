@@ -1,5 +1,55 @@
 # @nl-design-system-unstable/documentation
 
+## 1.8.0
+
+### Minor Changes
+
+- f3c672b: Baseline 2025-10
+- b9f1839: Nieuwe opzet voor Button component pagina.
+- 7b13e12: Overbodige imports verwijderd.
+- 7acf5c7: Tekst [WCAG-pagina 1.3.4](/wcag/1.3.4) volledig afgemaakt.
+- 444b1ff: Code component nieuwe pagina opzet.
+- 0b3ec51: Nieuwe opzet voor Code block component pagina.
+- 6fbcabf: Nieuwe opzet voor acceptatiecriteria voor de Color sample pagina.
+- f3404e1: Nieuwe snippets en verplaatsing van Acceptatiecriteria voor toegankelijkheid van de component naar toegankelijkheid in context, op de Color Sample pagina.
+- da75b4a: Update in toegankelijkheidsacceptatiecriteria voor de Color sample pagina.
+- 9dc74b2: Nieuwe opzet voor acceptatiecriteria voor de Data badge pagina.
+- 57bbb19: Link toegevoegd naar de richtlijnen voor afbeeldingen bij succescriterium 1.1.1.
+- 31cd045: Baseline 2025-08
+- e29b8b4: Nieuwe opzet voor Heading component pagina.
+- 76c19ca: Opmerking over VoiceOver toegevoegd aan de decoratieve icons snippets.
+- 89aa823: Verwijzingen naar richtlijnen gelijkgetrokken en content-richtlijnen toegevoegd waar relevant.
+- 109fc45: Acceptatiecriterium bij gebruik toegevoegd over links in een lopende tekst.
+- 74a2758: Nieuwe opzet voor Link component pagina.
+- 5500de3: Nieuwe opzet voor Mark component pagina.
+- 914194d: Nieuwe opzet voor acceptatiecriteria voor de Number Badge pagina.
+- 605b0a3: Nieuwe opzet voor Paragraph component pagina.
+- 5fe6a81: Aanpassing in de richtlijnen voor afbeeldingen van tekst.
+- 4d4276f: Baseline 2025-09
+- e430397: GitHub Actions documentatie is beschikbaar
+- 13d8169: Toegankelijkheidsinformatie voor de Icon component.
+- 96a010e: Nieuwe component en opzet voor toegankelijkheidsdocumentatie op de component pagina's.
+- f7be056: Tekst [WCAG-pagina 1.2.1](/wcag/1.2.1) volledig afgemaakt.
+- 4dd122f: Tekst [WCAG-pagina 1.2.2](/wcag/1.2.2) volledig afgemaakt.
+- 623c790: Tekst [WCAG-pagina 1.2.3](/wcag/1.2.3) volledig afgemaakt.
+- 6e43051: Tekst [WCAG-pagina 1.2.5](/wcag/1.2.5) volledig afgemaakt.
+- 689cf06: Tekst [WCAG-pagina 1.4.12](/wcag/1.4.12) volledig afgemaakt
+- ad264b1: Tekst [WCAG-pagina 1.4.13](/wcag/1.4.13) volledig afgemaakt.
+- 39a3a0b: Tekst [WCAG-pagina 1.4.2](/wcag/1.4.2) volledig afgemaakt.
+- 136a2d1: Tekst [WCAG-pagina 1.4.4](/wcag/1.4.4) volledig afgemaakt.
+- 7fde738: Tekst [WCAG-pagina 1.4.5](/wcag/1.4.5) volledig afgemaakt.
+- f2fda2b: Tekst [WCAG-pagina 2.1.2 volledig afgemaakt](/wcag/2.1.2) volledig afgemaakt
+- ee4c241: Tekst [WCAG-pagina 2.1.4](/wcag/2.1.4) volledig afgemaakt.
+- 32d4bb6: Tekst [WCAG-pagina 2.2.1](/wcag/2.2.1) volledig afgemaakt.
+- d0c630e: Tekst [WCAG-pagina 2.4.5](/wcag/2.4.5) volledig afgemaakt.
+- 6481fb6: Een aantal nieuwe acceptatiecriteria voor toegankelijkheid aan de button componentpagina toegevoegd.
+- 30afe5c: Baseline 2025-07
+
+### Patch Changes
+
+- e94e89f: Bugfix encoding in woordenlijst
+- 485864f: docs: update links
+
 ## 1.7.0
 
 ### Minor Changes
