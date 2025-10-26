@@ -38,6 +38,8 @@ interface Session {
   icalLink?: string;
   language: { abbr: string; description: string };
   videoId?: string;
+  captioned?: boolean;
+  captionId?: string;
 }
 
 export const DSWSession = ({
@@ -46,8 +48,6 @@ export const DSWSession = ({
   allSpeakers,
   videoId,
   children,
-  captioned,
-  captionLink,
   allSessions,
   sessionId,
 }: PropsWithChildren<DSWSessionProps>) => {
@@ -96,16 +96,37 @@ export const DSWSession = ({
           <b>Goed te weten:</b> Deze sessie is in het Engels.
         </Paragraph>
       )}
-      {captioned && (
-        <Paragraph>
-          <b>Goed te weten:</b> Bij deze sessie is een schrijftolk aanwezig
-          {captionLink && (
-            <a href={captionLink}>
-              tolktekst<span className="sr-only"> bij {session.subject}</span>
-            </a>
-          )}
-          .
-        </Paragraph>
+      {session.captioned ? (
+        session.captionId ? (
+          <>
+            <Paragraph>
+              {lang === 'nl' ? (
+                <>
+                  <b>Bij deze sessie is een schrijftolk aanwezig: </b>
+                </>
+              ) : (
+                <>
+                  <b>Live captioning is available for this session: </b>
+                </>
+              )}
+              <a href={`https://text-on-tap.live/#e=${session.captionId}`}>
+                <span className="sr-only">{session.subject} </span>
+                {lang === 'nl' ? 'in de browser' : 'in the browser'}
+              </a>
+              {lang === 'nl' ? ' of ' : ' or '}
+              <a href={`https://text-on-tap.live/openoverlay.html?e=${session.captionId}`}>
+                <span className="sr-only">{session.subject} </span>
+                {lang === 'nl' ? 'met de Overlay tool' : 'with the de Overlay tool'}
+              </a>
+            </Paragraph>
+          </>
+        ) : lang === 'nl' ? (
+          <Paragraph>Voor deze sessie hebben we nog geen schrijftolk gevonden</Paragraph>
+        ) : (
+          <></>
+        )
+      ) : (
+        <></>
       )}
       <aside className={clsx('dsw-session__speakers')}>
         {speakers.map((speaker, index) => (
