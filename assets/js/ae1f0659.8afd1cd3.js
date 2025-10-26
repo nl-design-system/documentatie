@@ -1,16 +1,16 @@
-/*! For license information please see ae1f0659.d238a0f1.js.LICENSE.txt */
+/*! For license information please see ae1f0659.8afd1cd3.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40758],
  {
-  31051: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => m, contentTitle: () => g, default: () => k, frontMatter: () => l, metadata: () => c, toc: () => h });
-   var s = i(52676),
-    t = i(40139),
-    a = i(37943),
-    r = i(39753),
-    o = i(17162),
-    d = i(98227);
+  31051: (e, n, s) => {
+   s.r(n), s.d(n, { assets: () => m, contentTitle: () => g, default: () => p, frontMatter: () => l, metadata: () => c, toc: () => h });
+   var i = s(52676),
+    t = s(40139),
+    a = s(37943),
+    r = s(39753),
+    o = s(17162),
+    d = s(98227);
    const l = { title: 'Videos \xb7 Design Systems Week 2024', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2024, pagination_label: 'Design Systems Week 2024', sidebar_position: 1, slug: '/events/design-systems-week-2024/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png' },
     g = 'Design Systems Week 2024 terugkijken',
     c = { id: 'community/events/design-systems-week/eerdere-edities/2024', title: 'Videos \xb7 Design Systems Week 2024', description: 'Tijdens Design Systems Week kon je 4 dagen lang meerdere korte talks per dag volgen. Bijvoorbeeld over het managen van', source: '@site/docs/community/events/design-systems-week/eerdere-edities/2024.mdx', sourceDirName: 'community/events/design-systems-week/eerdere-edities', slug: '/events/design-systems-week-2024/programma', permalink: '/events/design-systems-week-2024/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2024.mdx', tags: [], version: 'current', sidebarPosition: 1, frontMatter: { title: 'Videos \xb7 Design Systems Week 2024', hide_title: !0, hide_table_of_contents: !0, sidebar_label: '2024', pagination_label: 'Design Systems Week 2024', sidebar_position: 1, slug: '/events/design-systems-week-2024/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png' }, sidebar: 'community', previous: { title: 'Videos 2023', permalink: '/events/design-systems-week-2023/en/program' }, next: { title: 'Design Systems Week 2024', permalink: '/events/design-systems-week-2024/programma' } },
@@ -18,68 +18,68 @@
     h = [];
    function u(e) {
     const n = { a: 'a', em: 'em', h1: 'h1', p: 'p', ...(0, t.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h1, { id: 'design-systems-week-2024-terugkijken', children: 'Design Systems Week 2024 terugkijken' }), '\n', (0, s.jsx)(a.nv, { lead: !0, children: (0, s.jsx)(n.p, { children: "Tijdens Design Systems Week kon je 4 dagen lang meerdere korte talks per dag volgen. Bijvoorbeeld over het managen van\ndesign systems, toegankelijkheid, gebruikersonderzoek en code. Gelukkig hebben we de video's nog!" }) }), '\n', (0, s.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'FE871D75-D5C2-4842-A100-71A8A7069FAD', children: (0, s.jsx)(a.nv, { children: (0, s.jsxs)(n.p, { children: ['Amy gaat ons laten zien hoe het US Web Design System toegankelijkheidstests in duidelijke taal heeft toegevoegd bij\nindividuele componenten. In deze talk leer je hoe elk webteam \u2013 technisch of niet \u2014 deze tests kan gebruiken om een\nminimale baseline aan toegankelijkheidstests te doen, zoals tests met toetsenbord,\n', (0, s.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ', mobiele devices en vergrotingssoftware. Ze laat ook het iteratieve\nontwerp- en bouwproces zien dat haar team heeft bij het maken van deze checklists.'] }) }) }), '\n', (0, s.jsx)(d.S, { session: r, allSpeakers: o, headingLevel: 2, session: '50AFAB63-ACDE-4137-8BD5-57B5C34F8B50', children: (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Met de komst van Sass, bundlers en frontend frameworks verdween een van de hoekstenen van het web development van\nvroeger. We hebben het over die style.css van duizend regels lang. Destijds had je nog een idee wat er allemaal in je\nCSS belandde, maar nu? Ga mee op expeditie door je CSS en we bekijken welke waardevolle informatie jouw CSS onthult\nover je Design System en je CSS kennis.' }) }) }), '\n', (0, s.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '268DE453-5636-468C-8721-EAB3134D02A4', children: [(0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Journeys worden vaak gezien als h\xe9t middel voor empathie, maar dat is te kort door de bocht. Het is slechts een tool.\nHoe je het ontwerpt, wat je erin zet en wat je ermee doet, maakt het verschil. In deze presentatie laat Charlotte zien\nhoe een journey kan bijdragen aan het oplossen van complexe maatschappelijke vraagstukken, vooral binnen de overheid.' }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Projecten rond jeugdcriminaliteit focussen vaak op het delict en de gedragsverandering van jongeren. Maar hoe zit het\nmet het gedrag van de instanties waar zij mee te maken krijgen? De Raad voor de Kinderbescherming stelde zichzelf die\nvraag. Dit project focust op hoe er met jongeren wordt gecommuniceerd, wat de impact is en wat beter kan.' }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: "Na aanhouding begeleidt de Raad voor de Kinderbescherming jaarlijks zo'n 8.000 jongeren tussen 12 en 23 jaar die\nterechtkomen in een systeem van instanties als politie, justitie, reclassering. De Raad voor de Kinderbescherming is\nhun constante factor. Maar hoe ervaren jongeren dat? Voelen zij zich beschermd? Hoe help je hen het beste tijdens een\nlang, moeilijk straftraject?" }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Als researcher bij Valsplat sprak Charlotte met jongeren over hun ervaringen, de brieven die ze ontvangen en hun\ncontactmomenten. Ze hield workshops met o.a. Raadsonderzoekers en Taakstraf Co\xf6rdinatoren om ook hun perspectief te\nbegrijpen. De journey maakte de complexiteit en emotionele impact van deze communicatie zichtbaar en toonde concreet\nwaar verbetering mogelijk is.' }) })] }), '\n', (0, s.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '6024d4f3-c8fd-4bd5-a06c-36b69a687453', children: (0, s.jsx)(n.p, { children: 'Internationalisatie is meer dan alleen het vertalen van content op je website in meerdere talen. Er zijn allerlei nuances rondom hoe die content eruit ziet, die van invloed zijn op hoe een native speaker je site kan gebruiken. Er zijn CSS properties voor layout en typografie, die verder gaan dan horizontale van-boven-naar-beneden content, die we vandaag de dag het meest zien op het web.' }) }), '\n', (0, s.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '5C1C0DCD-33E3-4F57-90F8-4807A55F6200', children: (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Darice gaat ons vertellen waarom zelfs als je design systeem de conformiteitscheck doorstaat, het mogelijk nog steeds\nniet toegankelijk is. Toegankelijkheid is meer dan ARIA, kleurcontrast en een toetsenbord-toegankelijk formulier. Aan\nde hand van voorbeelden en persoonlijke verhalen laat Darice zien welke ontoegankelijkheden ze regelmatig tegenkomt.' }) }) }), '\n', (0, s.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'C0639355-E372-422F-8EC9-B069C08CDEEA', children: (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: "Het bouwen van een design system is heel interessant. Maar zodra je design system wordt ingezet voor applicaties in\nproductie, wordt het uitrollen van updates risicovoller. Testen is een essentieel onderdeel van het maken van design\nsystems en onderhoud helpt om de risico's te managen. In deze sessie legt Gert tools en methoden uit die je kunnen\nhelpen om je UI componenten en integraties te testen, zodat je design system zich kan blijven doorontwikkelen." }) }) }), '\n', (0, s.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '3A80C3A1-4657-42F8-908D-F9B7565CAF69', children: [(0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: "Kom kijken hoe Geri, een ervaren design systems verkenner met 8 jaar ervaring in design system avonturen, het\nonbekende terrein betreedt van toegankelijkheid in een grote productorganisatie. Zonder spelregels is Geri's zoektocht\neentje die we allemaal vast herkennen: we vinden het uit terwijl we bezig zijn." }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'In deze \u2018choose your own adventure\u2019 sessie, ontdek je hoe de principes van design systems het pad naar een nieuwe\nuitdaging verlichten. Ben je klaar om te lachen, leren en misschien een beetje verdwalen? Ga mee op deze zoektocht\nnaar de beste manier om teams mee te krijgen met digitale toegankelijkheid.' }) })] }), '\n', (0, s.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '0963CB03-7FBC-4EBD-AAF1-6534402F3A58', children: [(0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'In deze sessie vertellen Vincent, Warre en Gijs over de evolutie van het Vlaams Design System: hoe het evolueerde van\neen bibliotheek met web componenten naar een dienstverlening om van bij de start bouwers van e-loketten, toepassingen\nen websites te ondersteunen bij het ontwerpen en ontwikkelen. Met als focus: een herkenbare en eengemaakte\ngebruikerservaring voor burgers.' }) }), (0, s.jsx)(a.nv, { children: 'Ze vertellen ook over de de lessons learned uit deze voorbije tien jaar.' })] }), '\n', (0, s.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'F07EEF22-EA9B-4967-B326-2B721E7F2DD2', children: [(0, s.jsx)(a.nv, { children: (0, s.jsxs)(n.p, { children: ['De ', (0, s.jsx)(n.a, { href: '/events/heartbeat/', children: 'Heartbeat' }), ' is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL\nDesign System delen waar ze mee bezig zijn. In deze speciale editie van de Heartbeat horen we uit verschillende\norganisaties in de community over hun ervaringen met NL Design System.'] }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Bryan de Jong van VNG en Frameless: \u201cWe maken het makkelijker voor organisaties om aan de slag te gaan met NL Design\nSystem door het beschikbaar stellen van templates, documentatie en thema tooling binnen de community. Hiervoor\ngebruiken we community componenten en bestaande UX onderzoeken en designs.\u201d' }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Marieke Brouwer van de Gemeente Groningen: \u201cbij de gemeente zijn wij met een klein team actief bezig met het\nverbeteren van de gebruikerservaring voor onze inwoners en ondernemers. Een belangrijk onderdeel van mijn rol is de\nimplementatie van het NL Design System. We gebruiken als een van de eerste gemeentes de voorbeeldbibliotheek als basis\nvoor ons eigen design system. In mijn presentatie zal ik laten zien hoe wij de bibliotheek gebruiken (met de plugin\nvan Tokens Studio) en wat we hiervan hebben geleerd.\u201d' }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: "Lars van de Cappelle van Design System Bold: \u201cBij Bold zijn we van een Single-brand naar Multi-brand Design System\nuitgebreid waar de Belastingdienst, Toeslagen en Douane gebruik van maakt. Hiervoor zijn we overgestapt op design\ntokens om ons Design System van deze organisatiethema's te kunnen voorzien. Hierbij hebben we ook Dark Mode\nmeegenomen. Tijdens mijn demo zal ik laten zien hoe we dit hebben aangepakt in Figma en in de code.\u201d" }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Raoul Wittenberns van het LUX design system bij Logius: \u201cLogius heeft verschillende interne design systems en\ncomponent bibliotheken die we met het LUX design system willen samenbrengen tot 1 design system voor heel Logius.\nTegelijk willen we de kennis in de bestaande design systemen delen in de NL Design System Community. Vanuit onze\ngebruikers krijgen we vaak vragen over hoe ze kunnen meehelpen, of wat er aan componenten al beschikbaar is. Om onze\ngebruikers duidelijkheid te bieden wat de mogelijkheden zijn hebben we een beslisboom opgesteld. Ik zal kort vertellen\nhoe de beslisboom werkt en hoe we daar toe gekomen zijn. \u201c' }) })] }), '\n', (0, s.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'E42373CE-E7D8-4996-B087-7DAB45D5AF96', children: (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Hoe is het om te leven met een visuele beperking? Wat zijn de problemen waar je geheel verwacht of onverwachts\ntegenaan loopt? In deze sessie zal Kim Denie haar eigen verhaal vertellen en vanuit haar ervaring toelichten hoe je\nbijvoorbeeld achter het loket, op de werkvloer en online zo toegankelijk en inclusief mogelijk kan zijn.' }) }) }), '\n', (0, s.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '7A2AC63A-0D82-4156-A187-C688BAD1BE47', children: [(0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Gebruikersonderzoeken doen is leuk. Je krijgt van de mensen voor wie je het echt doet, te horen wat je goed doet, en\nwat er niet lekker gaat. Daardoor kan je verbeteringen doorvoeren die er voor je gebruikers echt toe doen.' }) }), (0, s.jsx)(a.nv, { children: 'Maar hoe begin je? Hoeveel mensen moet je spreken, en welke vragen stel je ze?' }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'In deze presentatie vertelt Jeroen je hoe je het simpel houdt voor jezelf, zodat je morgen al zou kunnen beginnen met\nonderzoeken. Of het nou een stuk tekst is of een app, het principe van gebruikersonderzoek blijft hetzelfde. Stap voor\nstap vertelt Jeroen wat je kan doen om het simpel voor jezelf te maken, zodat je onderzoek behapbaar en significant\nblijft. Aan het einde van het onderzoek kan je aan de slag met het stappenplan, de checklist en de templates die je in\ndeze presentatie hebt doorgenomen.' }) })] }), '\n', (0, s.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'A778C5D1-743F-4C8E-93AF-56F8375C29AC', children: (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Als overheidsorganisatie houdt de Belastingdienst zich al jaren bezig met het digitaal toegankelijk maken van hun\ndiensten, met als doel iedereen te kunnen bedienen, ongeacht hun beperkingen. Maar hoe bepaal je welke problemen na\neen WCAG-audit de hoogste prioriteit hebben, zodat ontwikkelteams snel de grootste impact voor gebruikers kunnen\nrealiseren? En hoe voorkom je toekomstige toegankelijkheidsproblemen voor gebruikers? In deze sessie deelt Lotte Bijl\nhoe de Belastingdienst inclusief gebruikersonderzoek heeft ingezet om deze vragen te kunnen beantwoorden en vertelt ze\nover de inzichten en de uitdagingen die zij tegenkwamen bij het organiseren van deze onderzoeken.' }) }) }), '\n', (0, s.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'CE68A449-D6B7-44C2-B114-017668D83998', children: (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Voor veel overheden is bijdragen aan open source projecten een culturele uitdagingen. Er wordt vaak samengewerkt met\nmensen in andere delen van de overheid en daarbuiten. Design systems zijn een unieke kans voor overheden om met meer\nvertrouwen bij open source te omarmen. Mike heeft bijgedragen aan verschillende design systems van overheden en is\naltijd op zoek naar best practices en aanpakken van overheden over de hele wereld.' }) }) }), '\n', (0, s.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '17A1CBCD-ACB8-4A85-87E4-A4CD258AFABA', children: (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Steve vertelt over wat hij leerde terwijl hij werkte aan het GOV.\u200cUK Design System en andere platformen van de Britse\noverheid. Hij laat zien wat we kunnen leren van de principes die het web zo fantastisch maken, om meer waarde te\ncre\xebren voor het publiek waar we het voor doen.' }) }) }), '\n', (0, s.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '6CB6A172-9F41-46FB-A24F-CA1DE023550C', children: [(0, s.jsx)(a.nv, { children: (0, s.jsxs)(n.p, { children: ['Het design system van ING wordt door bijna 2000 ', (0, s.jsx)(n.em, { children: 'consuming packages' }), ' als ', (0, s.jsx)(n.em, { children: 'dependency' }), ' gebruikt. Als een nieuwe versie\nvan het design system wordt uitgebracht, is het vaak een uitdaging om te zorgen dat alle gebruikers upgraden. Maar om\nde beste gebruikerservaring, applicatiekwaliteit, snelheid en interoperabiliteit te bereiken, is het essentieel om\npackages up to date houden.'] }) }), (0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'In zijn presentatie laat Thijs verschillende strategie\xebn zien om teams efficient up to date te krijgen met de laatste\nversie van het design system.' }) })] }), '\n', (0, s.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'A980E371-ED8E-4EA4-A22C-CA1A212150F7', children: [(0, s.jsx)(a.nv, { children: (0, s.jsx)(n.p, { children: 'Bryan de Jong liet het al even zien in de Heartbeat, er zijn bij NL Design System al een heleboel componenten\nbeschikbaar om in meerdere huisstijlen te gebruiken. Maar hoe moeilijk is het eigenlijk om een nieuw project met NL\nDesign System te beginnen? Wat als je al een bestaand project hebt, kun je dan stap-voor-stap migreren met de\ncomponenten die de community beschikbaar maakt?' }) }), (0, s.jsxs)(a.nv, { children: [(0, s.jsxs)(n.p, { children: ['In zijn presentatie laat Robbert live zien hoe je een pagina uit Figma overneemt in code, welke stappen neemt hij, hoe\nziet het er dan uit? Zelfs de', ' '] }), (0, s.jsx)(a.rU, { href: 'https://nl-design-system.github.io/onboarding/', target: '_new', children: (0, s.jsx)(n.p, { children: 'slides voor de presentatie' }) }), ' ', (0, s.jsx)(n.p, { children: 'heeft hij met NL Design System gemaakt!' })] })] })] });
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h1, { id: 'design-systems-week-2024-terugkijken', children: 'Design Systems Week 2024 terugkijken' }), '\n', (0, i.jsx)(a.nv, { lead: !0, children: (0, i.jsx)(n.p, { children: "Tijdens Design Systems Week kon je 4 dagen lang meerdere korte talks per dag volgen. Bijvoorbeeld over het managen van\ndesign systems, toegankelijkheid, gebruikersonderzoek en code. Gelukkig hebben we de video's nog!" }) }), '\n', (0, i.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'FE871D75-D5C2-4842-A100-71A8A7069FAD', children: (0, i.jsx)(a.nv, { children: (0, i.jsxs)(n.p, { children: ['Amy gaat ons laten zien hoe het US Web Design System toegankelijkheidstests in duidelijke taal heeft toegevoegd bij\nindividuele componenten. In deze talk leer je hoe elk webteam \u2013 technisch of niet \u2014 deze tests kan gebruiken om een\nminimale baseline aan toegankelijkheidstests te doen, zoals tests met toetsenbord,\n', (0, i.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ', mobiele devices en vergrotingssoftware. Ze laat ook het iteratieve\nontwerp- en bouwproces zien dat haar team heeft bij het maken van deze checklists.'] }) }) }), '\n', (0, i.jsx)(d.S, { session: r, allSpeakers: o, headingLevel: 2, session: '50AFAB63-ACDE-4137-8BD5-57B5C34F8B50', children: (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Met de komst van Sass, bundlers en frontend frameworks verdween een van de hoekstenen van het web development van\nvroeger. We hebben het over die style.css van duizend regels lang. Destijds had je nog een idee wat er allemaal in je\nCSS belandde, maar nu? Ga mee op expeditie door je CSS en we bekijken welke waardevolle informatie jouw CSS onthult\nover je Design System en je CSS kennis.' }) }) }), '\n', (0, i.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '268DE453-5636-468C-8721-EAB3134D02A4', children: [(0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Journeys worden vaak gezien als h\xe9t middel voor empathie, maar dat is te kort door de bocht. Het is slechts een tool.\nHoe je het ontwerpt, wat je erin zet en wat je ermee doet, maakt het verschil. In deze presentatie laat Charlotte zien\nhoe een journey kan bijdragen aan het oplossen van complexe maatschappelijke vraagstukken, vooral binnen de overheid.' }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Projecten rond jeugdcriminaliteit focussen vaak op het delict en de gedragsverandering van jongeren. Maar hoe zit het\nmet het gedrag van de instanties waar zij mee te maken krijgen? De Raad voor de Kinderbescherming stelde zichzelf die\nvraag. Dit project focust op hoe er met jongeren wordt gecommuniceerd, wat de impact is en wat beter kan.' }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: "Na aanhouding begeleidt de Raad voor de Kinderbescherming jaarlijks zo'n 8.000 jongeren tussen 12 en 23 jaar die\nterechtkomen in een systeem van instanties als politie, justitie, reclassering. De Raad voor de Kinderbescherming is\nhun constante factor. Maar hoe ervaren jongeren dat? Voelen zij zich beschermd? Hoe help je hen het beste tijdens een\nlang, moeilijk straftraject?" }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Als researcher bij Valsplat sprak Charlotte met jongeren over hun ervaringen, de brieven die ze ontvangen en hun\ncontactmomenten. Ze hield workshops met o.a. Raadsonderzoekers en Taakstraf Co\xf6rdinatoren om ook hun perspectief te\nbegrijpen. De journey maakte de complexiteit en emotionele impact van deze communicatie zichtbaar en toonde concreet\nwaar verbetering mogelijk is.' }) })] }), '\n', (0, i.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '6024d4f3-c8fd-4bd5-a06c-36b69a687453', children: (0, i.jsx)(n.p, { children: 'Internationalisatie is meer dan alleen het vertalen van content op je website in meerdere talen. Er zijn allerlei nuances rondom hoe die content eruit ziet, die van invloed zijn op hoe een native speaker je site kan gebruiken. Er zijn CSS properties voor layout en typografie, die verder gaan dan horizontale van-boven-naar-beneden content, die we vandaag de dag het meest zien op het web.' }) }), '\n', (0, i.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '5C1C0DCD-33E3-4F57-90F8-4807A55F6200', children: (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Darice gaat ons vertellen waarom zelfs als je design systeem de conformiteitscheck doorstaat, het mogelijk nog steeds\nniet toegankelijk is. Toegankelijkheid is meer dan ARIA, kleurcontrast en een toetsenbord-toegankelijk formulier. Aan\nde hand van voorbeelden en persoonlijke verhalen laat Darice zien welke ontoegankelijkheden ze regelmatig tegenkomt.' }) }) }), '\n', (0, i.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'C0639355-E372-422F-8EC9-B069C08CDEEA', children: (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: "Het bouwen van een design system is heel interessant. Maar zodra je design system wordt ingezet voor applicaties in\nproductie, wordt het uitrollen van updates risicovoller. Testen is een essentieel onderdeel van het maken van design\nsystems en onderhoud helpt om de risico's te managen. In deze sessie legt Gert tools en methoden uit die je kunnen\nhelpen om je UI componenten en integraties te testen, zodat je design system zich kan blijven doorontwikkelen." }) }) }), '\n', (0, i.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '3A80C3A1-4657-42F8-908D-F9B7565CAF69', children: [(0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: "Kom kijken hoe Geri, een ervaren design systems verkenner met 8 jaar ervaring in design system avonturen, het\nonbekende terrein betreedt van toegankelijkheid in een grote productorganisatie. Zonder spelregels is Geri's zoektocht\neentje die we allemaal vast herkennen: we vinden het uit terwijl we bezig zijn." }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'In deze \u2018choose your own adventure\u2019 sessie, ontdek je hoe de principes van design systems het pad naar een nieuwe\nuitdaging verlichten. Ben je klaar om te lachen, leren en misschien een beetje verdwalen? Ga mee op deze zoektocht\nnaar de beste manier om teams mee te krijgen met digitale toegankelijkheid.' }) })] }), '\n', (0, i.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '0963CB03-7FBC-4EBD-AAF1-6534402F3A58', children: [(0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'In deze sessie vertellen Vincent, Warre en Gijs over de evolutie van het Vlaams Design System: hoe het evolueerde van\neen bibliotheek met web componenten naar een dienstverlening om van bij de start bouwers van e-loketten, toepassingen\nen websites te ondersteunen bij het ontwerpen en ontwikkelen. Met als focus: een herkenbare en eengemaakte\ngebruikerservaring voor burgers.' }) }), (0, i.jsx)(a.nv, { children: 'Ze vertellen ook over de de lessons learned uit deze voorbije tien jaar.' })] }), '\n', (0, i.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'F07EEF22-EA9B-4967-B326-2B721E7F2DD2', children: [(0, i.jsx)(a.nv, { children: (0, i.jsxs)(n.p, { children: ['De ', (0, i.jsx)(n.a, { href: '/events/heartbeat/', children: 'Heartbeat' }), ' is een tweewekelijkse online bijeenkomst waarin het kernteam en de community van NL\nDesign System delen waar ze mee bezig zijn. In deze speciale editie van de Heartbeat horen we uit verschillende\norganisaties in de community over hun ervaringen met NL Design System.'] }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Bryan de Jong van VNG en Frameless: \u201cWe maken het makkelijker voor organisaties om aan de slag te gaan met NL Design\nSystem door het beschikbaar stellen van templates, documentatie en thema tooling binnen de community. Hiervoor\ngebruiken we community componenten en bestaande UX onderzoeken en designs.\u201d' }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Marieke Brouwer van de Gemeente Groningen: \u201cbij de gemeente zijn wij met een klein team actief bezig met het\nverbeteren van de gebruikerservaring voor onze inwoners en ondernemers. Een belangrijk onderdeel van mijn rol is de\nimplementatie van het NL Design System. We gebruiken als een van de eerste gemeentes de voorbeeldbibliotheek als basis\nvoor ons eigen design system. In mijn presentatie zal ik laten zien hoe wij de bibliotheek gebruiken (met de plugin\nvan Tokens Studio) en wat we hiervan hebben geleerd.\u201d' }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: "Lars van de Cappelle van Design System Bold: \u201cBij Bold zijn we van een Single-brand naar Multi-brand Design System\nuitgebreid waar de Belastingdienst, Toeslagen en Douane gebruik van maakt. Hiervoor zijn we overgestapt op design\ntokens om ons Design System van deze organisatiethema's te kunnen voorzien. Hierbij hebben we ook Dark Mode\nmeegenomen. Tijdens mijn demo zal ik laten zien hoe we dit hebben aangepakt in Figma en in de code.\u201d" }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Raoul Wittenberns van het LUX design system bij Logius: \u201cLogius heeft verschillende interne design systems en\ncomponent bibliotheken die we met het LUX design system willen samenbrengen tot 1 design system voor heel Logius.\nTegelijk willen we de kennis in de bestaande design systemen delen in de NL Design System Community. Vanuit onze\ngebruikers krijgen we vaak vragen over hoe ze kunnen meehelpen, of wat er aan componenten al beschikbaar is. Om onze\ngebruikers duidelijkheid te bieden wat de mogelijkheden zijn hebben we een beslisboom opgesteld. Ik zal kort vertellen\nhoe de beslisboom werkt en hoe we daar toe gekomen zijn. \u201c' }) })] }), '\n', (0, i.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'E42373CE-E7D8-4996-B087-7DAB45D5AF96', children: (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Hoe is het om te leven met een visuele beperking? Wat zijn de problemen waar je geheel verwacht of onverwachts\ntegenaan loopt? In deze sessie zal Kim Denie haar eigen verhaal vertellen en vanuit haar ervaring toelichten hoe je\nbijvoorbeeld achter het loket, op de werkvloer en online zo toegankelijk en inclusief mogelijk kan zijn.' }) }) }), '\n', (0, i.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '7A2AC63A-0D82-4156-A187-C688BAD1BE47', children: [(0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Gebruikersonderzoeken doen is leuk. Je krijgt van de mensen voor wie je het echt doet, te horen wat je goed doet, en\nwat er niet lekker gaat. Daardoor kan je verbeteringen doorvoeren die er voor je gebruikers echt toe doen.' }) }), (0, i.jsx)(a.nv, { children: 'Maar hoe begin je? Hoeveel mensen moet je spreken, en welke vragen stel je ze?' }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'In deze presentatie vertelt Jeroen je hoe je het simpel houdt voor jezelf, zodat je morgen al zou kunnen beginnen met\nonderzoeken. Of het nou een stuk tekst is of een app, het principe van gebruikersonderzoek blijft hetzelfde. Stap voor\nstap vertelt Jeroen wat je kan doen om het simpel voor jezelf te maken, zodat je onderzoek behapbaar en significant\nblijft. Aan het einde van het onderzoek kan je aan de slag met het stappenplan, de checklist en de templates die je in\ndeze presentatie hebt doorgenomen.' }) })] }), '\n', (0, i.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'A778C5D1-743F-4C8E-93AF-56F8375C29AC', children: (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Als overheidsorganisatie houdt de Belastingdienst zich al jaren bezig met het digitaal toegankelijk maken van hun\ndiensten, met als doel iedereen te kunnen bedienen, ongeacht hun beperkingen. Maar hoe bepaal je welke problemen na\neen WCAG-audit de hoogste prioriteit hebben, zodat ontwikkelteams snel de grootste impact voor gebruikers kunnen\nrealiseren? En hoe voorkom je toekomstige toegankelijkheidsproblemen voor gebruikers? In deze sessie deelt Lotte Bijl\nhoe de Belastingdienst inclusief gebruikersonderzoek heeft ingezet om deze vragen te kunnen beantwoorden en vertelt ze\nover de inzichten en de uitdagingen die zij tegenkwamen bij het organiseren van deze onderzoeken.' }) }) }), '\n', (0, i.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'CE68A449-D6B7-44C2-B114-017668D83998', children: (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Voor veel overheden is bijdragen aan open source projecten een culturele uitdagingen. Er wordt vaak samengewerkt met\nmensen in andere delen van de overheid en daarbuiten. Design systems zijn een unieke kans voor overheden om met meer\nvertrouwen bij open source te omarmen. Mike heeft bijgedragen aan verschillende design systems van overheden en is\naltijd op zoek naar best practices en aanpakken van overheden over de hele wereld.' }) }) }), '\n', (0, i.jsx)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '17A1CBCD-ACB8-4A85-87E4-A4CD258AFABA', children: (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Steve vertelt over wat hij leerde terwijl hij werkte aan het GOV.\u200cUK Design System en andere platformen van de Britse\noverheid. Hij laat zien wat we kunnen leren van de principes die het web zo fantastisch maken, om meer waarde te\ncre\xebren voor het publiek waar we het voor doen.' }) }) }), '\n', (0, i.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: '6CB6A172-9F41-46FB-A24F-CA1DE023550C', children: [(0, i.jsx)(a.nv, { children: (0, i.jsxs)(n.p, { children: ['Het design system van ING wordt door bijna 2000 ', (0, i.jsx)(n.em, { children: 'consuming packages' }), ' als ', (0, i.jsx)(n.em, { children: 'dependency' }), ' gebruikt. Als een nieuwe versie\nvan het design system wordt uitgebracht, is het vaak een uitdaging om te zorgen dat alle gebruikers upgraden. Maar om\nde beste gebruikerservaring, applicatiekwaliteit, snelheid en interoperabiliteit te bereiken, is het essentieel om\npackages up to date houden.'] }) }), (0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'In zijn presentatie laat Thijs verschillende strategie\xebn zien om teams efficient up to date te krijgen met de laatste\nversie van het design system.' }) })] }), '\n', (0, i.jsxs)(d.S, { allSessions: r, allSpeakers: o, headingLevel: 2, sessionId: 'A980E371-ED8E-4EA4-A22C-CA1A212150F7', children: [(0, i.jsx)(a.nv, { children: (0, i.jsx)(n.p, { children: 'Bryan de Jong liet het al even zien in de Heartbeat, er zijn bij NL Design System al een heleboel componenten\nbeschikbaar om in meerdere huisstijlen te gebruiken. Maar hoe moeilijk is het eigenlijk om een nieuw project met NL\nDesign System te beginnen? Wat als je al een bestaand project hebt, kun je dan stap-voor-stap migreren met de\ncomponenten die de community beschikbaar maakt?' }) }), (0, i.jsxs)(a.nv, { children: [(0, i.jsxs)(n.p, { children: ['In zijn presentatie laat Robbert live zien hoe je een pagina uit Figma overneemt in code, welke stappen neemt hij, hoe\nziet het er dan uit? Zelfs de', ' '] }), (0, i.jsx)(a.rU, { href: 'https://nl-design-system.github.io/onboarding/', target: '_new', children: (0, i.jsx)(n.p, { children: 'slides voor de presentatie' }) }), ' ', (0, i.jsx)(n.p, { children: 'heeft hij met NL Design System gemaakt!' })] })] })] });
    }
-   function k(e = {}) {
+   function p(e = {}) {
     const { wrapper: n } = { ...(0, t.a)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(u, { ...e }) }) : u(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(u, { ...e }) }) : u(e);
    }
   },
-  98227: (e, n, i) => {
-   i.d(n, { S: () => l });
-   var s = i(86135),
-    t = i(37943),
-    a = i(4814),
-    r = i(97233),
-    o = i(52676);
+  98227: (e, n, s) => {
+   s.d(n, { S: () => l });
+   var i = s(86135),
+    t = s(37943),
+    a = s(4814),
+    r = s(97233),
+    o = s(52676);
    const d = new Date().toISOString(),
     l = (e) => {
-     let { lang: n = 'nl', headingLevel: i = 3, allSpeakers: l, videoId: g, children: c, captioned: m, captionLink: h, allSessions: u, sessionId: k } = e;
-     const p = u?.find((e) => {
+     let { lang: n = 'nl', headingLevel: s = 3, allSpeakers: l, videoId: g, children: c, allSessions: m, sessionId: h } = e;
+     const u = m?.find((e) => {
        let { uuid: n } = e;
-       return k === n;
+       return h === n;
       }),
-      v = p && p.speakers.map((e) => l[e]).filter(Boolean);
-     return p
+      p = u && u.speakers.map((e) => l[e]).filter(Boolean);
+     return u
       ? (0, o.jsxs)('article', {
          className: (0, a.Z)('dsw-session'),
          children: [
-          (0, o.jsx)(t.X6, { level: i, className: 'dsw-session__title', id: p.subject.toLowerCase().replace(/\s/gi, '-'), children: p.subject }),
-          (0, o.jsx)(t.nv, { className: 'dsw-session__subtitle', lead: !0, children: v && v.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }),
-          g || (p?.videoId && (0, o.jsx)(r.Y, { id: g || p?.videoId, title: p.subject, style: { marginBlock: '20px' } })),
-          p && p.isoDateTime && p.isoDateTime > d ? (0, o.jsx)(t.nv, { children: (0, o.jsx)('time', { dateTime: p.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(p.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}),
+          (0, o.jsx)(t.X6, { level: s, className: 'dsw-session__title', id: u.subject.toLowerCase().replace(/\s/gi, '-'), children: u.subject }),
+          (0, o.jsx)(t.nv, { className: 'dsw-session__subtitle', lead: !0, children: p && p.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }),
+          g || (u?.videoId && (0, o.jsx)(r.Y, { id: g || u?.videoId, title: u.subject, style: { marginBlock: '20px' } })),
+          u && u.isoDateTime && u.isoDateTime > d ? (0, o.jsx)(t.nv, { children: (0, o.jsx)('time', { dateTime: u.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(u.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}),
           c,
           'nl' === n &&
-           v.find((e) => {
+           p.find((e) => {
             let { language: n } = e;
             return 'nl' !== n;
            }) &&
            (0, o.jsxs)(t.nv, { children: [(0, o.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-          m && (0, o.jsxs)(t.nv, { children: [(0, o.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig', h && (0, o.jsxs)('a', { href: h, children: ['tolktekst', (0, o.jsxs)('span', { className: 'sr-only', children: [' bij ', p.subject] })] }), '.'] }),
-          (0, o.jsx)('aside', { className: (0, a.Z)('dsw-session__speakers'), children: v.map((e, i) => (0, o.jsxs)('div', { className: (0, a.Z)('dsw-session__speaker', 'dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, a.Z)('dsw-speaker__image'), src: e.image.src, alt: e.image.alt }), (0, o.jsx)(t.nv, { className: (0, a.Z)('dsw-speaker__description'), children: e.description[n] })] }, i)) }),
-          p && p.icalLink && !g ? (0, o.jsx)(t.nv, { children: (0, o.jsxs)(t.ZP, { href: p.icalLink, download: p.icalLink, appearance: 'primary-action-button', children: [(0, o.jsx)(t.JO, { children: (0, o.jsx)(s.Z, {}) }), (0, o.jsx)('span', { children: 'nl' === n ? (0, o.jsxs)(o.Fragment, { children: ['Zet', (0, o.jsx)('span', { className: 'sr-only', children: p.subject }), ' in je agenda'] }) : (0, o.jsxs)(o.Fragment, { children: ['Add', (0, o.jsx)('span', { className: 'sr-only', children: p.subject }), ' to your calendar'] }) })] }) }) : null,
+          u.captioned ? (u.captionId ? (0, o.jsx)(o.Fragment, { children: (0, o.jsxs)(t.nv, { children: ['nl' === n ? (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Bij deze sessie is een schrijftolk aanwezig: ' }) }) : (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Live captioning is available for this session: ' }) }), (0, o.jsxs)('a', { href: `https://text-on-tap.live/#e=${u.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [u.subject, ' '] }), 'nl' === n ? 'in de browser' : 'in the browser'] }), 'nl' === n ? ' of ' : ' or ', (0, o.jsxs)('a', { href: `https://text-on-tap.live/openoverlay.html?e=${u.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [u.subject, ' '] }), 'nl' === n ? 'met de Overlay tool' : 'with the de Overlay tool'] })] }) }) : 'nl' === n ? (0, o.jsx)(t.nv, { children: 'Voor deze sessie hebben we nog geen schrijftolk gevonden' }) : (0, o.jsx)(o.Fragment, {})) : (0, o.jsx)(o.Fragment, {}),
+          (0, o.jsx)('aside', { className: (0, a.Z)('dsw-session__speakers'), children: p.map((e, s) => (0, o.jsxs)('div', { className: (0, a.Z)('dsw-session__speaker', 'dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, a.Z)('dsw-speaker__image'), src: e.image.src, alt: e.image.alt }), (0, o.jsx)(t.nv, { className: (0, a.Z)('dsw-speaker__description'), children: e.description[n] })] }, s)) }),
+          u && u.icalLink && !g ? (0, o.jsx)(t.nv, { children: (0, o.jsxs)(t.ZP, { href: u.icalLink, download: u.icalLink, appearance: 'primary-action-button', children: [(0, o.jsx)(t.JO, { children: (0, o.jsx)(i.Z, {}) }), (0, o.jsx)('span', { children: 'nl' === n ? (0, o.jsxs)(o.Fragment, { children: ['Zet', (0, o.jsx)('span', { className: 'sr-only', children: u.subject }), ' in je agenda'] }) : (0, o.jsxs)(o.Fragment, { children: ['Add', (0, o.jsx)('span', { className: 'sr-only', children: u.subject }), ' to your calendar'] }) })] }) }) : null,
          ],
         })
       : (0, o.jsx)(o.Fragment, {});
     };
   },
-  97233: (e, n, i) => {
-   i.d(n, { Y: () => a });
-   var s = i(84263),
-    t = i(52676);
+  97233: (e, n, s) => {
+   s.d(n, { Y: () => a });
+   var i = s(84263),
+    t = s(52676);
    const a = (e) => {
-    let { id: n, title: i, ...a } = e;
-    return (0, t.jsx)(s.Z, { adNetwork: !1, announce: 'Bekijk', cookie: !1, id: n, title: i, poster: 'maxresdefault', ...a });
+    let { id: n, title: s, ...a } = e;
+    return (0, t.jsx)(i.Z, { adNetwork: !1, announce: 'Bekijk', cookie: !1, id: n, title: s, poster: 'maxresdefault', ...a });
    };
   },
-  40139: (e, n, i) => {
-   i.d(n, { Z: () => o, a: () => r });
-   var s = i(75271);
+  40139: (e, n, s) => {
+   s.d(n, { Z: () => o, a: () => r });
+   var i = s(75271);
    const t = {},
-    a = s.createContext(t);
+    a = i.createContext(t);
    function r(e) {
-    const n = s.useContext(a);
-    return s.useMemo(
+    const n = i.useContext(a);
+    return i.useMemo(
      function () {
       return 'function' == typeof e ? e(n) : { ...n, ...e };
      },
@@ -88,21 +88,21 @@
    }
    function o(e) {
     let n;
-    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(t) : e.components || t) : r(e.components)), s.createElement(a.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(t) : e.components || t) : r(e.components)), i.createElement(a.Provider, { value: n }, e.children);
    }
   },
-  72315: (e, n, i) => {
-   i.d(n, { Z: () => a });
-   var s = i(75271),
+  72315: (e, n, s) => {
+   s.d(n, { Z: () => a });
+   var i = s(75271),
     t = { outline: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' }, filled: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'currentColor', stroke: 'none' } };
-   const a = (e, n, i, a) => {
-    const r = (0, s.forwardRef)(({ color: i = 'currentColor', size: r = 24, stroke: o = 2, title: d, className: l, children: g, ...c }, m) => (0, s.createElement)('svg', { ref: m, ...t[e], width: r, height: r, className: ['tabler-icon', `tabler-icon-${n}`, l].join(' '), ...('filled' === e ? { fill: i } : { strokeWidth: o, stroke: i }), ...c }, [d && (0, s.createElement)('title', { key: 'svg-title' }, d), ...a.map(([e, n]) => (0, s.createElement)(e, n)), ...(Array.isArray(g) ? g : [g])]));
-    return (r.displayName = `${i}`), r;
+   const a = (e, n, s, a) => {
+    const r = (0, i.forwardRef)(({ color: s = 'currentColor', size: r = 24, stroke: o = 2, title: d, className: l, children: g, ...c }, m) => (0, i.createElement)('svg', { ref: m, ...t[e], width: r, height: r, className: ['tabler-icon', `tabler-icon-${n}`, l].join(' '), ...('filled' === e ? { fill: s } : { strokeWidth: o, stroke: s }), ...c }, [d && (0, i.createElement)('title', { key: 'svg-title' }, d), ...a.map(([e, n]) => (0, i.createElement)(e, n)), ...(Array.isArray(g) ? g : [g])]));
+    return (r.displayName = `${s}`), r;
    };
   },
-  86135: (e, n, i) => {
-   i.d(n, { Z: () => s });
-   var s = (0, i(72315).Z)('outline', 'calendar-event', 'IconCalendarEvent', [
+  86135: (e, n, s) => {
+   s.d(n, { Z: () => i });
+   var i = (0, s(72315).Z)('outline', 'calendar-event', 'IconCalendarEvent', [
     ['path', { d: 'M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z', key: 'svg-0' }],
     ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
     ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
@@ -110,35 +110,35 @@
     ['path', { d: 'M8 15h2v2h-2z', key: 'svg-4' }],
    ]);
   },
-  84263: (e, n, i) => {
-   i.d(n, { Z: () => r });
-   var s = i(75271),
+  84263: (e, n, s) => {
+   s.d(n, { Z: () => r });
+   var i = s(75271),
     t = function () {
      return (
       (t =
        Object.assign ||
        function (e) {
-        for (var n, i = 1, s = arguments.length; i < s; i++) for (var t in (n = arguments[i])) Object.prototype.hasOwnProperty.call(n, t) && (e[t] = n[t]);
+        for (var n, s = 1, i = arguments.length; s < i; s++) for (var t in (n = arguments[s])) Object.prototype.hasOwnProperty.call(n, t) && (e[t] = n[t]);
         return e;
        }),
       t.apply(this, arguments)
      );
     },
     a = { default: 120, mqdefault: 320, hqdefault: 480, sddefault: 640, maxresdefault: 1280 };
-   var r = s.forwardRef(function (e, n) {
-    var i = s.useState(!1),
-     r = i[0],
-     o = i[1],
-     d = s.useState(e.alwaysLoadIframe || !1),
+   var r = i.forwardRef(function (e, n) {
+    var s = i.useState(!1),
+     r = s[0],
+     o = s[1],
+     d = i.useState(e.alwaysLoadIframe || !1),
      l = d[0],
      g = d[1],
      c = encodeURIComponent(e.id),
      m = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
      h = e.title,
      u = e.poster || 'hqdefault',
-     k = e.announce || 'Watch',
-     p = !e.alwaysLoadIframe || (e.autoplay && e.muted),
-     v = new URLSearchParams(t(t(t(t({}, e.muted ? { mute: '1' } : {}), p ? { autoplay: '1' } : {}), e.enableJsApi ? { enablejsapi: '1' } : {}), e.playlist ? { list: c } : {}));
+     p = e.announce || 'Watch',
+     k = !e.alwaysLoadIframe || (e.autoplay && e.muted),
+     v = new URLSearchParams(t(t(t(t({}, e.muted ? { mute: '1' } : {}), k ? { autoplay: '1' } : {}), e.enableJsApi ? { enablejsapi: '1' } : {}), e.playlist ? { list: c } : {}));
     e.params &&
      new URLSearchParams(e.params.startsWith('&') ? e.params.slice(1) : e.params).forEach(function (e, n) {
       v.append(n, e);
@@ -150,25 +150,25 @@
      y = e.webp ? 'webp' : 'jpg',
      f = e.webp ? 'vi_webp' : 'vi',
      S = w
-      ? (function (e, n, i, t) {
+      ? (function (e, n, s, t) {
          void 0 === t && (t = 'maxresdefault');
-         var r = (0, s.useState)(''),
+         var r = (0, i.useState)(''),
           o = r[0],
           d = r[1];
          return (
-          (0, s.useEffect)(
+          (0, i.useEffect)(
            function () {
-            var s = 'https://img.youtube.com/'.concat(n, '/').concat(e, '/').concat(t, '.').concat(i),
-             r = 'https://img.youtube.com/'.concat(n, '/').concat(e, '/hqdefault.').concat(i),
+            var i = 'https://img.youtube.com/'.concat(n, '/').concat(e, '/').concat(t, '.').concat(s),
+             r = 'https://img.youtube.com/'.concat(n, '/').concat(e, '/hqdefault.').concat(s),
              o = a[t],
              l = new Image();
             (l.onload = function () {
-             l.width < o ? d(r) : d(s);
+             l.width < o ? d(r) : d(i);
             }),
              (l.onerror = function () {
               return d(r);
              }),
-             (l.src = s);
+             (l.src = i);
            },
            [e],
           ),
@@ -185,30 +185,30 @@
        .concat(u, '.')
        .concat(y),
      D = e.activatedClass || 'lyt-activated',
-     C = e.adNetwork || !1,
-     x = e.aspectHeight || 9,
+     x = e.adNetwork || !1,
+     C = e.aspectHeight || 9,
      A = e.aspectWidth || 16,
      L = e.iframeClass || '',
      B = e.playerClass || 'lty-playbtn',
      E = e.wrapperClass || 'yt-lite',
      I = e.onIframeAdded || function () {},
-     N = e.rel ? 'prefetch' : 'preload',
-     F = e.containerElement || 'article',
+     F = e.rel ? 'prefetch' : 'preload',
+     N = e.containerElement || 'article',
      T = e.style || {};
     return (
-     s.useEffect(
+     i.useEffect(
       function () {
        l && I();
       },
       [l],
      ),
-     s.createElement(
-      s.Fragment,
+     i.createElement(
+      i.Fragment,
       null,
-      s.createElement('link', { rel: N, href: z, as: 'image' }),
-      s.createElement(s.Fragment, null, r && s.createElement(s.Fragment, null, s.createElement('link', { rel: 'preconnect', href: b }), s.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), C && s.createElement(s.Fragment, null, s.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), s.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
-      s.createElement(
-       F,
+      i.createElement('link', { rel: F, href: z, as: 'image' }),
+      i.createElement(i.Fragment, null, r && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: b }), i.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), x && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), i.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
+      i.createElement(
+       N,
        {
         onPointerOver: function () {
          r || o(!0);
@@ -218,10 +218,10 @@
         },
         className: ''.concat(E, ' ').concat(l ? D : ''),
         'data-title': h,
-        style: t(t({ backgroundImage: 'url('.concat(z, ')') }, { '--aspect-ratio': ''.concat((x / A) * 100, '%') }), T),
+        style: t(t({ backgroundImage: 'url('.concat(z, ')') }, { '--aspect-ratio': ''.concat((C / A) * 100, '%') }), T),
        },
-       s.createElement('button', { type: 'button', className: B, 'aria-label': ''.concat(k, ' ').concat(h) }),
-       l && s.createElement('iframe', { ref: n, className: L, title: h, width: '560', height: '315', frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: j }),
+       i.createElement('button', { type: 'button', className: B, 'aria-label': ''.concat(p, ' ').concat(h) }),
+       l && i.createElement('iframe', { ref: n, className: L, title: h, width: '560', height: '315', frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: j }),
       ),
      )
     );

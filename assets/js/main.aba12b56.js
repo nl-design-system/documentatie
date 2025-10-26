@@ -1,4 +1,4 @@
-/*! For license information please see main.5f16a144.js.LICENSE.txt */
+/*! For license information please see main.aba12b56.js.LICENSE.txt */
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [40179],
  {
@@ -16821,7 +16821,7 @@
      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
      colorMode: { disableSwitch: !0, defaultMode: 'light', respectPrefersColorScheme: !1 },
      algolia: { appId: 'HS7BGF6EOX', apiKey: 'ce625c137581b1c1f4bdd3912398834b', indexName: 'nldesignsystem', contextualSearch: !0, searchParameters: {}, searchPagePath: 'search' },
-     announcementBar: { id: 'dsweek-2025', content: '<div class="announcementbar-content"><span class="utrecht-icon"><img alt="" src="/svg/tabler-icon_mega.svg"/></span> 27 - 30 oktober is het weer Design Systems Week <span class="utrecht-icon"><img src="/svg/tabler-icon_point-right.svg" alt=""/></span> <a href="/events/design-systems-week/" class="utrecht-link utrecht-link--html-a">Bekijk het programma</a></div>', backgroundColor: 'var(--basis-color-accent-1-inverse-bg-subtle)', textColor: 'var(--basis-color-accent-1-inverse-color-default)', isCloseable: !1 },
+     announcementBar: { id: 'dsweek-2025', content: '<div class="announcementbar-content"><span class="utrecht-icon"><img alt="" src="/svg/tabler-icon_mega.svg"/></span> 27 - 30 oktober is het weer Design Systems Week <span class="utrecht-icon"><img src="/svg/tabler-icon_point-right.svg" alt=""/></span> <a href="/events/design-systems-week-2025/programma" class="utrecht-link utrecht-link--html-a">Bekijk het programma</a></div>', backgroundColor: 'var(--basis-color-accent-1-inverse-bg-subtle)', textColor: 'var(--basis-color-accent-1-inverse-color-default)', isCloseable: !1 },
      metadata: [],
     },
     i18n: { defaultLocale: 'nl', locales: ['nl'], localeConfigs: { nl: { htmlLang: 'nl-NL', direction: 'ltr' } }, path: 'i18n' },

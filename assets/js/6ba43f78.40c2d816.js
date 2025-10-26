@@ -1,4 +1,4 @@
-/*! For license information please see 6ba43f78.9254a347.js.LICENSE.txt */
+/*! For license information please see 6ba43f78.40c2d816.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [1207],
@@ -34,30 +34,30 @@
     o = s(52676);
    const l = new Date().toISOString(),
     d = (e) => {
-     let { lang: n = 'nl', headingLevel: s = 3, allSpeakers: d, videoId: c, children: g, captioned: m, captionLink: u, allSessions: h, sessionId: p } = e;
-     const k = h?.find((e) => {
+     let { lang: n = 'nl', headingLevel: s = 3, allSpeakers: d, videoId: c, children: g, allSessions: m, sessionId: u } = e;
+     const h = m?.find((e) => {
        let { uuid: n } = e;
-       return p === n;
+       return u === n;
       }),
-      b = k && k.speakers.map((e) => d[e]).filter(Boolean);
-     return k
+      p = h && h.speakers.map((e) => d[e]).filter(Boolean);
+     return h
       ? (0, o.jsxs)('article', {
          className: (0, a.Z)('dsw-session'),
          children: [
-          (0, o.jsx)(i.X6, { level: s, className: 'dsw-session__title', id: k.subject.toLowerCase().replace(/\s/gi, '-'), children: k.subject }),
-          (0, o.jsx)(i.nv, { className: 'dsw-session__subtitle', lead: !0, children: b && b.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }),
-          c || (k?.videoId && (0, o.jsx)(r.Y, { id: c || k?.videoId, title: k.subject, style: { marginBlock: '20px' } })),
-          k && k.isoDateTime && k.isoDateTime > l ? (0, o.jsx)(i.nv, { children: (0, o.jsx)('time', { dateTime: k.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(k.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}),
+          (0, o.jsx)(i.X6, { level: s, className: 'dsw-session__title', id: h.subject.toLowerCase().replace(/\s/gi, '-'), children: h.subject }),
+          (0, o.jsx)(i.nv, { className: 'dsw-session__subtitle', lead: !0, children: p && p.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }),
+          c || (h?.videoId && (0, o.jsx)(r.Y, { id: c || h?.videoId, title: h.subject, style: { marginBlock: '20px' } })),
+          h && h.isoDateTime && h.isoDateTime > l ? (0, o.jsx)(i.nv, { children: (0, o.jsx)('time', { dateTime: h.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(h.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}),
           g,
           'nl' === n &&
-           b.find((e) => {
+           p.find((e) => {
             let { language: n } = e;
             return 'nl' !== n;
            }) &&
            (0, o.jsxs)(i.nv, { children: [(0, o.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }),
-          m && (0, o.jsxs)(i.nv, { children: [(0, o.jsx)('b', { children: 'Goed te weten:' }), ' Bij deze sessie is een schrijftolk aanwezig', u && (0, o.jsxs)('a', { href: u, children: ['tolktekst', (0, o.jsxs)('span', { className: 'sr-only', children: [' bij ', k.subject] })] }), '.'] }),
-          (0, o.jsx)('aside', { className: (0, a.Z)('dsw-session__speakers'), children: b.map((e, s) => (0, o.jsxs)('div', { className: (0, a.Z)('dsw-session__speaker', 'dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, a.Z)('dsw-speaker__image'), src: e.image.src, alt: e.image.alt }), (0, o.jsx)(i.nv, { className: (0, a.Z)('dsw-speaker__description'), children: e.description[n] })] }, s)) }),
-          k && k.icalLink && !c ? (0, o.jsx)(i.nv, { children: (0, o.jsxs)(i.ZP, { href: k.icalLink, download: k.icalLink, appearance: 'primary-action-button', children: [(0, o.jsx)(i.JO, { children: (0, o.jsx)(t.Z, {}) }), (0, o.jsx)('span', { children: 'nl' === n ? (0, o.jsxs)(o.Fragment, { children: ['Zet', (0, o.jsx)('span', { className: 'sr-only', children: k.subject }), ' in je agenda'] }) : (0, o.jsxs)(o.Fragment, { children: ['Add', (0, o.jsx)('span', { className: 'sr-only', children: k.subject }), ' to your calendar'] }) })] }) }) : null,
+          h.captioned ? (h.captionId ? (0, o.jsx)(o.Fragment, { children: (0, o.jsxs)(i.nv, { children: ['nl' === n ? (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Bij deze sessie is een schrijftolk aanwezig: ' }) }) : (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Live captioning is available for this session: ' }) }), (0, o.jsxs)('a', { href: `https://text-on-tap.live/#e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === n ? 'in de browser' : 'in the browser'] }), 'nl' === n ? ' of ' : ' or ', (0, o.jsxs)('a', { href: `https://text-on-tap.live/openoverlay.html?e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === n ? 'met de Overlay tool' : 'with the de Overlay tool'] })] }) }) : 'nl' === n ? (0, o.jsx)(i.nv, { children: 'Voor deze sessie hebben we nog geen schrijftolk gevonden' }) : (0, o.jsx)(o.Fragment, {})) : (0, o.jsx)(o.Fragment, {}),
+          (0, o.jsx)('aside', { className: (0, a.Z)('dsw-session__speakers'), children: p.map((e, s) => (0, o.jsxs)('div', { className: (0, a.Z)('dsw-session__speaker', 'dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, a.Z)('dsw-speaker__image'), src: e.image.src, alt: e.image.alt }), (0, o.jsx)(i.nv, { className: (0, a.Z)('dsw-speaker__description'), children: e.description[n] })] }, s)) }),
+          h && h.icalLink && !c ? (0, o.jsx)(i.nv, { children: (0, o.jsxs)(i.ZP, { href: h.icalLink, download: h.icalLink, appearance: 'primary-action-button', children: [(0, o.jsx)(i.JO, { children: (0, o.jsx)(t.Z, {}) }), (0, o.jsx)('span', { children: 'nl' === n ? (0, o.jsxs)(o.Fragment, { children: ['Zet', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' in je agenda'] }) : (0, o.jsxs)(o.Fragment, { children: ['Add', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' to your calendar'] }) })] }) }) : null,
          ],
         })
       : (0, o.jsx)(o.Fragment, {});
@@ -138,14 +138,14 @@
      h = e.poster || 'hqdefault',
      p = e.announce || 'Watch',
      k = !e.alwaysLoadIframe || (e.autoplay && e.muted),
-     b = new URLSearchParams(i(i(i(i({}, e.muted ? { mute: '1' } : {}), k ? { autoplay: '1' } : {}), e.enableJsApi ? { enablejsapi: '1' } : {}), e.playlist ? { list: g } : {}));
+     v = new URLSearchParams(i(i(i(i({}, e.muted ? { mute: '1' } : {}), k ? { autoplay: '1' } : {}), e.enableJsApi ? { enablejsapi: '1' } : {}), e.playlist ? { list: g } : {}));
     e.params &&
      new URLSearchParams(e.params.startsWith('&') ? e.params.slice(1) : e.params).forEach(function (e, n) {
-      b.append(n, e);
+      v.append(n, e);
      });
-    var v = e.noCookie;
-    v = e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com';
-    var w = e.playlist ? ''.concat(v, '/embed/videoseries?').concat(b.toString()) : ''.concat(v, '/embed/').concat(g, '?').concat(b.toString()),
+    var b = e.noCookie;
+    b = e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com';
+    var w = e.playlist ? ''.concat(b, '/embed/videoseries?').concat(v.toString()) : ''.concat(b, '/embed/').concat(g, '?').concat(v.toString()),
      y = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
      j = e.webp ? 'webp' : 'jpg',
      f = e.webp ? 'vi_webp' : 'vi',
@@ -186,27 +186,27 @@
        .concat(j),
      S = e.activatedClass || 'lyt-activated',
      A = e.adNetwork || !1,
-     L = e.aspectHeight || 9,
-     x = e.aspectWidth || 16,
+     x = e.aspectHeight || 9,
+     L = e.aspectWidth || 16,
      B = e.iframeClass || '',
      E = e.playerClass || 'lty-playbtn',
-     N = e.wrapperClass || 'yt-lite',
-     z = e.onIframeAdded || function () {},
-     I = e.rel ? 'prefetch' : 'preload',
+     I = e.wrapperClass || 'yt-lite',
+     N = e.onIframeAdded || function () {},
+     z = e.rel ? 'prefetch' : 'preload',
      T = e.containerElement || 'article',
      F = e.style || {};
     return (
      t.useEffect(
       function () {
-       d && z();
+       d && N();
       },
       [d],
      ),
      t.createElement(
       t.Fragment,
       null,
-      t.createElement('link', { rel: I, href: D, as: 'image' }),
-      t.createElement(t.Fragment, null, r && t.createElement(t.Fragment, null, t.createElement('link', { rel: 'preconnect', href: v }), t.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), A && t.createElement(t.Fragment, null, t.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), t.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
+      t.createElement('link', { rel: z, href: D, as: 'image' }),
+      t.createElement(t.Fragment, null, r && t.createElement(t.Fragment, null, t.createElement('link', { rel: 'preconnect', href: b }), t.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), A && t.createElement(t.Fragment, null, t.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), t.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
       t.createElement(
        T,
        {
@@ -216,9 +216,9 @@
         onClick: function () {
          d || c(!0);
         },
-        className: ''.concat(N, ' ').concat(d ? S : ''),
+        className: ''.concat(I, ' ').concat(d ? S : ''),
         'data-title': u,
-        style: i(i({ backgroundImage: 'url('.concat(D, ')') }, { '--aspect-ratio': ''.concat((L / x) * 100, '%') }), F),
+        style: i(i({ backgroundImage: 'url('.concat(D, ')') }, { '--aspect-ratio': ''.concat((x / L) * 100, '%') }), F),
        },
        t.createElement('button', { type: 'button', className: E, 'aria-label': ''.concat(p, ' ').concat(u) }),
        d && t.createElement('iframe', { ref: n, className: B, title: u, width: '560', height: '315', frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: w }),
