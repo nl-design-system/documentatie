@@ -169,4 +169,7 @@ Redirect 307 "/form-field-radio-option" "/componenten"
 Redirect 307 "/form-field-checkbox-option" "/componenten"
 Redirect 307 "/tooltip" "/componenten"
 
+Redirect 307 "/miro/" "https://miro.com/app/board/uXjVLTpHyN8=/"
+Redirect 307 "/miro" "https://miro.com/app/board/uXjVLTpHyN8=/"
+
 ErrorDocument 404 /404.html
