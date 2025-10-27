@@ -15,16 +15,17 @@
     "subject": "TEDI: the Estonian government's new design system",
     "icalLink": "/dsweek-2025/estonia-design-system.ics",
     "language": { "abbr": "EN", "description": "English" },
-    "captioned": true
+    "captioned": true,
+    "captionId": "jczSoNvu74"
   },
   {
     "uuid": "02ae9c2a-f84f-4cd1-b7c0-9afe20813acb",
     "isoDateTime": "2025-10-27T14:00:00.000Z",
     "speakers": ["AlainVagner"],
     "subject": "Practical Tests for Assessing Accessibility",
-    "icalLink": "/dsweek-2025/practical-tests-for-assessing-accessibility.ics",
     "language": { "abbr": "EN", "description": "English" },
-    "captioned": true
+    "captioned": true,
+    "cancelled": true
   },
   {
     "uuid": "b54c2a4a-4188-4a2c-81b0-842a7a8cd22b",
@@ -38,7 +39,8 @@
     "subject": "",
     "sessionLink": "",
     "icalLink": "",
-    "language": { "abbr": "", "description": "" }
+    "language": { "abbr": "", "description": "" },
+    "cancelled": true
   },
   {
     "uuid": "bae570ae-0783-4712-9ed6-654f0bb91bab",
