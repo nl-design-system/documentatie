@@ -4,19 +4,19 @@
     "isoDateTime": "2025-10-27T10:00:00.000Z",
     "speakers": ["ManuelMatuzovic"],
     "subject": "Documenting Vienna’s Pattern Library",
-    "icalLink": "/dsweek-2025/documenting-viennas-pattern-library.ics",
     "language": { "abbr": "EN", "description": "English" },
-    "captioned": true
+    "captioned": true,
+    "videoId": "xObWXP3fU9w"
   },
   {
     "uuid": "5faa9816-8348-4111-9780-eaa44d964308",
     "isoDateTime": "2025-10-27T12:00:00.000Z",
     "speakers": ["SiretTuula", "KarolinKivisikk", "TonisTobre"],
     "subject": "TEDI: the Estonian government's new design system",
-    "icalLink": "/dsweek-2025/estonia-design-system.ics",
     "language": { "abbr": "EN", "description": "English" },
     "captioned": true,
-    "captionId": "jczSoNvu74"
+    "captionId": "jczSoNvu74",
+    "videoId": "qPgQ60SliZ8"
   },
   {
     "uuid": "02ae9c2a-f84f-4cd1-b7c0-9afe20813acb",
