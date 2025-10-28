@@ -19,15 +19,6 @@
     "videoId": "qPgQ60SliZ8"
   },
   {
-    "uuid": "02ae9c2a-f84f-4cd1-b7c0-9afe20813acb",
-    "isoDateTime": "2025-10-27T14:00:00.000Z",
-    "speakers": ["AlainVagner"],
-    "subject": "Practical Tests for Assessing Accessibility",
-    "language": { "abbr": "EN", "description": "English" },
-    "captioned": true,
-    "cancelled": true
-  },
-  {
     "uuid": "b54c2a4a-4188-4a2c-81b0-842a7a8cd22b",
     "isoDateTime": "2025-10-27T15:30:00.000Z",
     "speakers": [
@@ -119,6 +110,13 @@
     "language": { "abbr": "NL", "description": "Nederlands" },
     "captioned": true,
     "captionId": "uHqthE1RFT"
+  },
+  {
+    "uuid": "02ae9c2a-f84f-4cd1-b7c0-9afe20813acb",
+    "isoDateTime": "2025-10-30T09:00:00.000Z",
+    "speakers": ["AlainVagner"],
+    "subject": "Practical Tests for Assessing Accessibility",
+    "language": { "abbr": "EN", "description": "English" }
   },
   {
     "uuid": "b56156e5-9490-43fb-8e5b-ef2676ec16a9",
