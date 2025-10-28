@@ -8,9 +8,10 @@ import './AltTextHelper.css';
 
 const AltTextHelper = () => {
   const [helperTextId, setHelperTextId] = useState('');
-  const [currentStep, setCurrentStep] = useState('');
+  const [currentStep, setCurrentStep] = useState('image-type');
   const [previousStep, setPreviousStep] = useState('');
   const [nextStep, setNextStep] = useState('');
+  const [checked] = useState({ image: '', context: '', text: '' });
 
   const next = () => {
     setCurrentStep(nextStep);
@@ -25,22 +26,28 @@ const AltTextHelper = () => {
     }
   };
 
+  const initHelperText = (value) => {
+    setHelperTextId(value);
+    setNextStep('helper-text');
+    checked.text = value;
+  };
+
   const onOptionChange = (e) => {
     const { value, name } = e.target;
 
     switch (name) {
       case 'text-type':
-        setHelperTextId(value);
         setPreviousStep('text-type');
-        setNextStep('helper-text');
+        initHelperText(value);
         break;
       case 'context-type':
-        setHelperTextId(value);
         setPreviousStep('context-type');
-        setNextStep('helper-text');
+        initHelperText(value);
+        checked.context = value;
         break;
       case 'image-type':
         setHelperTextId('');
+        checked.image = value;
 
         switch (value) {
           case 'image-type-text-help':
@@ -52,19 +59,22 @@ const AltTextHelper = () => {
             break;
 
           default:
-            setHelperTextId(value);
-            setNextStep('helper-text');
+            initHelperText(value);
         }
     }
   };
 
   return (
     <form className="nlds-alt-text-helper">
-      {(currentStep === 'image-type' || currentStep === '') && <ImageTypeHelper onOptionChange={onOptionChange} />}
+      {(currentStep === 'image-type' || currentStep === '') && (
+        <ImageTypeHelper onOptionChange={onOptionChange} checked={checked.image} />
+      )}
 
-      {currentStep === 'text-type' && <TextTypeHelper onOptionChange={onOptionChange} />}
+      {currentStep === 'text-type' && <TextTypeHelper onOptionChange={onOptionChange} checked={checked.text} />}
 
-      {currentStep === 'context-type' && <ContextTypeHelper onOptionChange={onOptionChange} />}
+      {currentStep === 'context-type' && (
+        <ContextTypeHelper onOptionChange={onOptionChange} checked={checked.context} />
+      )}
 
       {currentStep === 'helper-text' && <HelperText helperTextId={helperTextId} />}
 
