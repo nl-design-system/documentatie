@@ -87,7 +87,8 @@
     "subject": "Prototypen & NL Design System",
     "icalLink": "/dsweek-2025/prototypen-en-nl-design-system.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true
+    "captioned": true,
+    "captionId": "uHqthE1RFT"
   },
   {
     "uuid": "3acd15cb-076f-4cdf-af37-03bf171b1442",
@@ -106,7 +107,8 @@
     "subject": "Hoe maak je algoritmes begrijpelijk voor burgers? Onderzoek & beeldtaal",
     "icalLink": "/dsweek-2025/hoe-maak-je-algoritmes-begrijpelijk-voor-burgers.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true
+    "captioned": true,
+    "captionId": "SillaEenmalig"
   },
   {
     "uuid": "87be08ee-d238-40c7-8102-f4487fe009ba",
