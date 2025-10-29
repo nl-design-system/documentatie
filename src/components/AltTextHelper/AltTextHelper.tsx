@@ -8,9 +8,10 @@ import './AltTextHelper.css';
 
 const AltTextHelper = () => {
   const [helperTextId, setHelperTextId] = useState('');
-  const [currentStep, setCurrentStep] = useState('image-type');
+  const [currentStep, setCurrentStep] = useState('');
   const [previousStep, setPreviousStep] = useState('');
   const [nextStep, setNextStep] = useState('');
+  //const [steps] = useState({ current: '', previous: '', next: ''});
   const [checked] = useState({ image: '', context: '', text: '' });
 
   const next = () => {
