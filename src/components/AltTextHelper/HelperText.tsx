@@ -8,15 +8,15 @@ const currentHelperText = (id) => {
 };
 
 interface HelperTextProps {
-  helperTextId: string;
+  id: string;
 }
 
-export default function HelperText({ helperTextId }: HelperTextProps) {
-  if (currentHelperText(helperTextId)) {
+export default function HelperText({ id }: HelperTextProps) {
+  if (currentHelperText(id)) {
     return (
       <SpotlightSection type="info" role="alert">
-        <Heading2>{currentHelperText(helperTextId).heading}</Heading2>
-        <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText(helperTextId).paragraph }}></Paragraph>
+        <Heading2>{currentHelperText(id).heading}</Heading2>
+        <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText(id).paragraph }}></Paragraph>
       </SpotlightSection>
     );
   }
