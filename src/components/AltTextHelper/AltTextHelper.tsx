@@ -11,11 +11,19 @@ const AltTextHelper = () => {
   const [currentStep, setCurrentStep] = useState('');
   const [previousStep, setPreviousStep] = useState('');
   const [nextStep, setNextStep] = useState('');
-  //const [steps] = useState({ current: '', previous: '', next: ''});
   const [checked] = useState({ image: '', context: '', text: '' });
+
+  const logAll = () => {
+    console.log('current:', currentStep);
+    console.log('previous:', previousStep);
+    console.log('next:', nextStep);
+    console.log('checked:', checked);
+  };
 
   const next = () => {
     setCurrentStep(nextStep);
+
+    logAll();
   };
 
   const prev = () => {
@@ -25,12 +33,13 @@ const AltTextHelper = () => {
     } else {
       setCurrentStep(previousStep);
     }
+
+    logAll();
   };
 
   const initHelperText = (value) => {
     setHelperTextId(value);
     setNextStep('helper-text');
-    checked.text = value;
   };
 
   const onOptionChange = (e) => {
@@ -40,6 +49,7 @@ const AltTextHelper = () => {
       case 'text-type':
         setPreviousStep('text-type');
         initHelperText(value);
+        checked.text = value;
         break;
       case 'context-type':
         setPreviousStep('context-type');
@@ -63,6 +73,8 @@ const AltTextHelper = () => {
             initHelperText(value);
         }
     }
+
+    logAll();
   };
 
   return (
