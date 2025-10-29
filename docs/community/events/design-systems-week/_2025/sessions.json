@@ -46,7 +46,6 @@
     "isoDateTime": "2025-10-28T12:00:00.000Z",
     "speakers": ["GerbenStarink", "AlineNap", "BryanDeJong"],
     "subject": "Heartbeat - Design Systems Week editie",
-    "icalLink": "/heartbeat/heartbeat.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
     "captioned": true,
     "captionId": "uHqthE1RFT"
@@ -72,37 +71,36 @@
     "isoDateTime": "2025-10-29T10:00:00.000Z",
     "speakers": ["JeffreyLauwers"],
     "subject": "Prototypen & NL Design System",
-    "icalLink": "/dsweek-2025/prototypen-en-nl-design-system.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
     "captioned": true,
-    "captionId": "uHqthE1RFT"
+    "captionId": "uHqthE1RFT",
+    "videoId": "CLLa8agEuDE"
   },
   {
     "uuid": "3acd15cb-076f-4cdf-af37-03bf171b1442",
     "isoDateTime": "2025-10-29T12:00:00.000Z",
     "speakers": ["KimberlyBrinkhuis", "TedVanDerTogt"],
     "subject": "Gebruikersonderzoek en co-creatie",
-    "icalLink": "/dsweek-2025/gebruikersonderzoek-en-co-creatie.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
     "captioned": true,
-    "captionId": "uHqthE1RFT"
+    "captionId": "uHqthE1RFT",
+    "videoId": "4n5CtgOTo_8"
   },
   {
     "uuid": "e9f0d797-daa4-408f-9d2c-57ad2ee6cffd",
     "isoDateTime": "2025-10-29T14:00:00.000Z",
     "speakers": ["ClaudiaVermeulen", "BaukjeFaber"],
     "subject": "Hoe maak je algoritmes begrijpelijk voor burgers? Onderzoek & beeldtaal",
-    "icalLink": "/dsweek-2025/hoe-maak-je-algoritmes-begrijpelijk-voor-burgers.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
     "captioned": true,
-    "captionId": "SillaEenmalig"
+    "captionId": "SillaEenmalig",
+    "videoId": "GKFZtHjl37c"
   },
   {
     "uuid": "87be08ee-d238-40c7-8102-f4487fe009ba",
     "isoDateTime": "2025-10-29T15:30:00.000Z",
     "speakers": ["LoesKockelmans"],
     "subject": "Het ANWB Design System herbouwd: toegankelijk en toekomstgericht",
-    "icalLink": "/dsweek-2025/anwb-design-system.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
     "captioned": true,
     "captionId": "uHqthE1RFT"
