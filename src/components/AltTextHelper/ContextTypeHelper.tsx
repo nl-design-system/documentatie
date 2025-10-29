@@ -3,7 +3,6 @@ import {
   FieldsetLegend,
   FormFieldDescription,
   FormField,
-  Paragraph,
   FormLabel,
   RadioButton,
 } from '@utrecht/component-library-react/dist/css-module';
@@ -24,32 +23,32 @@ export default function ContextTypeHelper({ onOptionChange, checked }: ContextTy
       <FieldsetLegend>Wat voor soort afbeelding is het?</FieldsetLegend>
       <FormFieldDescription id="context-type-group-description">Kies de optie die het beste past:</FormFieldDescription>
       <FormField type="radio">
-        <Paragraph className="utrecht-form-field__label utrecht-form-field__label--radio">
-          <FormLabel htmlFor="context-complex-image" type="radio">
-            <RadioButton
-              className="utrecht-form-field__input"
-              id="context-complex-image"
-              name="context-type"
-              value="context-complex-image-help"
-              checked={checked === 'context-complex-image-help'}
-            />
-            <strong>Het is een grafiek, diagram of een andere complexe afbeelding.</strong>
-          </FormLabel>
-        </Paragraph>
+        <FormLabel
+          className="utrecht-form-field__label utrecht-form-field__label--radio"
+          htmlFor="context-complex-image"
+          type="radio"
+        >
+          <RadioButton
+            className="utrecht-form-field__input"
+            id="context-complex-image"
+            name="context-type"
+            value="context-complex-image-help"
+            checked={checked === 'context-complex-image-help'}
+          />
+          <strong>Het is een grafiek, diagram of een andere complexe afbeelding.</strong>
+        </FormLabel>
       </FormField>
       <FormField type="radio">
-        <Paragraph className="utrecht-form-field__label utrecht-form-field__label--radio">
-          <FormLabel htmlFor="context-simple-image" type="radio">
-            <RadioButton
-              className="utrecht-form-field__input"
-              id="context-simple-image"
-              name="context-type"
-              value="context-simple-image-help"
-              checked={checked === 'context-simple-image-help'}
-            />
-            <strong>Het is een foto of een eenvoudige illustratie.</strong>
-          </FormLabel>
-        </Paragraph>
+        <FormLabel htmlFor="context-simple-image" type="radio">
+          <RadioButton
+            className="utrecht-form-field__input"
+            id="context-simple-image"
+            name="context-type"
+            value="context-simple-image-help"
+            checked={checked === 'context-simple-image-help'}
+          />
+          <strong>Het is een foto of een eenvoudige illustratie.</strong>
+        </FormLabel>
       </FormField>
     </Fieldset>
   );
