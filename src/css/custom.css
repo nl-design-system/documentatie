@@ -779,7 +779,7 @@ code {
 }
 
 .dl__item {
-  margin-bottom: 20px;
+  margin-block-end: var(--basis-space-block-2xl);
 }
 
 .dl__term {
@@ -787,13 +787,13 @@ code {
 }
 
 .dl__definition {
-  margin-left: 0;
+  margin-inline-start: 0;
 }
 
 .definition__meta {
-  margin-top: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
+  margin-block-start: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }
 
-.markdown li {
-  font-size: 18px;
+:root {
+  --utrecht-unordered-list-font-size: var(--utrecht-paragraph-font-size);
 }

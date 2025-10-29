@@ -50,8 +50,23 @@
     ]
   },
   {
+    "term": "Hover",
+    "slug": "hover",
+    "definitions": [
+      {
+        "paragraph": "Hover gaat over het Engelse 'to hover'. Als je met een aanwijzer over een element gaat maar het niet activeert, dan hover je. De staat waarin het element dan is heeft vaak een eigen uiterlijk."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Engelsetalige uitleg van MDN over :hover in CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:hover"
+      }
+    ]
+  },
+  {
     "term": "Gebarentaal",
-    "slug": "Gebarentaal",
+    "slug": "gebarentaal",
     "definitions": [
       {
         "paragraph": "Een gebarentaal is een taal waarbij mensen met elkaar communiceren door gebaren te maken met hun handen, lichaamshouding en gezichtsuitdrukking (mimiek)."
