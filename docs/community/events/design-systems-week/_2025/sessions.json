@@ -5,7 +5,6 @@
     "speakers": ["ManuelMatuzovic"],
     "subject": "Documenting Vienna’s Pattern Library",
     "language": { "abbr": "EN", "description": "English" },
-    "captioned": true,
     "videoId": "xObWXP3fU9w"
   },
   {
@@ -14,7 +13,6 @@
     "speakers": ["SiretTuula", "KarolinKivisikk", "TonisTobre"],
     "subject": "TEDI: the Estonian government's new design system",
     "language": { "abbr": "EN", "description": "English" },
-    "captioned": true,
     "captionId": "jczSoNvu74",
     "videoId": "qPgQ60SliZ8"
   },
@@ -38,10 +36,10 @@
     "isoDateTime": "2025-10-28T10:00:00.000Z",
     "speakers": ["RenateRoke"],
     "subject": "Toegankelijke design system componenten",
-    "icalLink": "/dsweek-2025/toegankelijke-componenten-bij-nl-design-system.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
     "captioned": true,
-    "captionId": "uHqthE1RFT"
+    "captionId": "uHqthE1RFT",
+    "videoId": "-ubYStSQ-Do"
   },
   {
     "uuid": "b4c4bb07-c796-4cfa-ae84-be172caef3e5",
@@ -58,18 +56,16 @@
     "isoDateTime": "2025-10-28T14:00:00.000Z",
     "speakers": ["EgorKloos"],
     "subject": "Design Systems en AI",
-    "icalLink": "/dsweek-2025/design-systems-en-AI.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true
+    "videoId": "L13cWVIRg1U"
   },
   {
     "uuid": "e68d397b-87fe-46ab-996b-ed7339f741a4",
     "isoDateTime": "2025-10-28T15:30:00.000Z",
     "speakers": ["PaiviJalava", "JuanCubilla"],
     "subject": "Helsinki Design System - Balancing Documentation Workflow in a Design System Project",
-    "icalLink": "/dsweek-2025/helsinki-design-system.ics",
     "language": { "abbr": "EN", "description": "English" },
-    "captioned": true
+    "videoId": "jzvn7NmVQ8U"
   },
   {
     "uuid": "f13b4bc4-517d-440a-885b-dcb2b87cb3af",
