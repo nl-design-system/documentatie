@@ -2489,6 +2489,9 @@ html[data-theme="dark"] {
  --utrecht-card-link-hover-background-color: var(--basis-color-action-2-bg-hover);
  --basis-text-font-size-md: 1.125rem !important;
  --basis-text-font-size-sm: 1rem !important;
+ --utrecht-paragraph-font-size: var(--basis-text-font-size-md);
+ --utrecht-ordered-list-font-size: var(--basis-text-font-size-md);
+ --utrecht-unordered-list-font-size: var(--basis-text-font-size-md);
  --utrecht-accordion-button-background-color: #0000 !important;
  --utrecht-link-text-underline-offset: 4px !important;
  --ifm-footer-link-horizontal-spacing: 20px;
