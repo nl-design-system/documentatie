@@ -25,3 +25,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.nlds-alt-text-helper .utrecht-form-field__label.utrecht-form-field__label--radio {
+  display: flex;
+}
+
+.nlds-alt-text-helper .utrecht-form-field__input {
+  order: 0;
+}
