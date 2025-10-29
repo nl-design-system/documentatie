@@ -7,39 +7,43 @@ import ContextTypeHelper from './ContextTypeHelper';
 import './AltTextHelper.css';
 
 const AltTextHelper = () => {
-  const [helperTextId, setHelperTextId] = useState('');
-  const [currentStep, setCurrentStep] = useState('');
-  const [previousStep, setPreviousStep] = useState('');
-  const [nextStep, setNextStep] = useState('');
-  const [checked] = useState({ image: '', context: '', text: '' });
+  const [helpStep] = useState('');
 
-  const logAll = () => {
-    console.log('current:', currentStep);
-    console.log('previous:', previousStep);
-    console.log('next:', nextStep);
-    console.log('checked:', checked);
-  };
+  const [currentChecked, setCurrentChecked] = useState({ image: '', context: '', text: '', group: '' });
+  const [currentStep] = useState('image-type');
+  const [history] = useState(['image-type']);
 
   const next = () => {
-    setCurrentStep(nextStep);
+    console.log(history);
+    // setPreviousStep(currentStep);
 
-    logAll();
+    // switch (currentChecked.active) {
+    //   case 'image-type-text-help':
+    //     setCurrentStep('text-type');
+    //     break;
+
+    //   case 'image-type-context-help':
+    //     setCurrentStep('context-type');
+    //     break;
+
+    //   default:
+    //     setCurrentStep('help-text');
+    //     setHelpStep(currentChecked.active);
+    // }
+    // setCurrentChecked({
+    //   ...currentChecked,
+    //   active: ''
+    // });
   };
 
   const prev = () => {
-    if (currentStep === 'text-type' || currentStep === 'context-type') {
-      setPreviousStep('image-type');
-      setCurrentStep('image-type');
-    } else {
-      setCurrentStep(previousStep);
-    }
+    console.log(history);
+    // if(currentStep === 'text-type' || currentStep === 'context-type') {
+    //   setCurrentStep('image-type');
+    // }
+    // else setCurrentStep(previousStep);
 
-    logAll();
-  };
-
-  const initHelperText = (value) => {
-    setHelperTextId(value);
-    setNextStep('helper-text');
+    // setHelpStep('');
   };
 
   const onOptionChange = (e) => {
@@ -47,66 +51,54 @@ const AltTextHelper = () => {
 
     switch (name) {
       case 'text-type':
-        setPreviousStep('text-type');
-        initHelperText(value);
-        checked.text = value;
+        setCurrentChecked({
+          ...currentChecked,
+          text: value,
+          group: name,
+        });
         break;
       case 'context-type':
-        setPreviousStep('context-type');
-        initHelperText(value);
-        checked.context = value;
+        setCurrentChecked({
+          ...currentChecked,
+          context: value,
+          group: name,
+        });
         break;
       case 'image-type':
-        setHelperTextId('');
-        checked.image = value;
-
-        switch (value) {
-          case 'image-type-text-help':
-            setNextStep('text-type');
-            break;
-
-          case 'image-type-context-help':
-            setNextStep('context-type');
-            break;
-
-          default:
-            initHelperText(value);
-        }
+        setCurrentChecked({
+          ...currentChecked,
+          image: value,
+          group: name,
+        });
     }
-
-    logAll();
   };
 
   return (
     <form className="nlds-alt-text-helper">
-      {(currentStep === 'image-type' || currentStep === '') && (
-        <ImageTypeHelper onOptionChange={onOptionChange} checked={checked.image} />
+      {currentStep === 'image-type' && (
+        <ImageTypeHelper onOptionChange={onOptionChange} checked={currentChecked.image} />
       )}
 
-      {currentStep === 'text-type' && <TextTypeHelper onOptionChange={onOptionChange} checked={checked.text} />}
+      {currentStep === 'text-type' && <TextTypeHelper onOptionChange={onOptionChange} checked={currentChecked.text} />}
 
       {currentStep === 'context-type' && (
-        <ContextTypeHelper onOptionChange={onOptionChange} checked={checked.context} />
+        <ContextTypeHelper onOptionChange={onOptionChange} checked={currentChecked.context} />
       )}
 
-      {currentStep === 'helper-text' && <HelperText helperTextId={helperTextId} />}
+      {helpStep !== '' && <HelperText id={helpStep} />}
 
       <div className="button-bar">
-        <Button
-          appearance="secondary-action-button"
-          disabled={currentStep === 'image-type' ? true : false}
-          onClick={prev}
-        >
-          Vorige
-        </Button>
+        {currentStep !== 'image-type' && (
+          <Button appearance="secondary-action-button" onClick={prev}>
+            Vorige
+          </Button>
+        )}
 
-        <Button
-          appearance="primary-action-button"
-          disabled={currentStep === 'helper-text' || nextStep === currentStep ? true : false}
-          onClick={next}
-        >
-          Volgende
-        </Button>
+        {currentStep !== 'help-text' && (
+          <Button appearance="primary-action-button" onClick={next}>
+            Volgende
+          </Button>
+        )}
       </div>
     </form>
   );
