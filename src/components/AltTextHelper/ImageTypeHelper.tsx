@@ -33,7 +33,7 @@ export default function ImageTypeHelper({ onOptionChange, checked }: ImageTypeHe
             id="image-type-context"
             name="image-type"
             value="image-type-context-help"
-            checked={checked === 'image-type-context-help'}
+            defaultChecked={checked === 'image-type-context-help'}
           />
           <span>
             <strong>De afbeelding helpt om de tekst op de pagina beter te begrijpen.</strong>
@@ -54,7 +54,7 @@ export default function ImageTypeHelper({ onOptionChange, checked }: ImageTypeHe
             id="image-type-decorative"
             name="image-type"
             value="image-type-decorative-help"
-            checked={checked === 'image-type-decorative-help'}
+            defaultChecked={checked === 'image-type-decorative-help'}
           />
           <span>
             <strong>De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien.</strong>
@@ -74,7 +74,7 @@ export default function ImageTypeHelper({ onOptionChange, checked }: ImageTypeHe
             id="image-type-text"
             name="image-type"
             value="image-type-text-help"
-            checked={checked === 'image-type-text-help'}
+            defaultChecked={checked === 'image-type-text-help'}
           />
           <span>
             <strong>De afbeelding bestaat hoofdzakelijk uit tekst die bedoeld is om gelezen te worden</strong>
@@ -94,7 +94,7 @@ export default function ImageTypeHelper({ onOptionChange, checked }: ImageTypeHe
             id="image-type-functional"
             name="image-type"
             value="image-type-functional-help"
-            checked={checked === 'image-type-functional-help'}
+            defaultChecked={checked === 'image-type-functional-help'}
           />
           <span>
             <strong>De afbeelding wordt gebruikt als een link of knop.</strong>
