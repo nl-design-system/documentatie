@@ -33,9 +33,11 @@ export default function TextTypeHelper({ onOptionChange, checked }: TextTypeHelp
             id="text-complex-image"
             name="text-type"
             value="text-complex-image-help"
-            checked={checked === 'text-complex-image-help'}
+            defaultChecked={checked === 'text-complex-image-help'}
           />
-          <strong>Het gaat om een grafiek, tabel of andere complexe informatie.</strong>
+          <span>
+            <strong>Het gaat om een grafiek, tabel of andere complexe informatie.</strong>
+          </span>
         </FormLabel>
       </FormField>
       <FormField type="radio">
@@ -49,11 +51,13 @@ export default function TextTypeHelper({ onOptionChange, checked }: TextTypeHelp
             id="text-has-function"
             name="text-type"
             value="text-has-function-help"
-            checked={checked === 'text-has-function-help'}
+            defaultChecked={checked === 'text-has-function-help'}
           />
-          <strong>De tekst heeft een functionele rol.</strong>
-          <br />
-          Bijvoorbeeld: een icoon met de letters PDF dat “Download PDF” of een uitroepteken dat “Let op” aanduidt.
+          <span>
+            <strong>De tekst heeft een functionele rol.</strong>
+            <br />
+            Bijvoorbeeld: een icoon met de letters PDF dat “Download PDF” of een uitroepteken dat “Let op” aanduidt.
+          </span>
         </FormLabel>
       </FormField>
       <FormField type="radio">
@@ -67,11 +71,13 @@ export default function TextTypeHelper({ onOptionChange, checked }: TextTypeHelp
             id="text-visual-effect"
             name="text-type"
             value="text-visual-effect-help"
-            checked={checked === 'text-visual-effect-help'}
+            defaultChecked={checked === 'text-visual-effect-help'}
           />
-          <strong>De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis</strong>
-          <br />
-          Bijvoorbeeld: een watermerk of tekst in een screenshot.
+          <span>
+            <strong>De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis</strong>
+            <br />
+            Bijvoorbeeld: een watermerk of tekst in een screenshot.
+          </span>
         </FormLabel>
       </FormField>
       <FormField type="radio">
@@ -85,9 +91,11 @@ export default function TextTypeHelper({ onOptionChange, checked }: TextTypeHelp
             id="text-near-image"
             name="text-type"
             value="text-near-image-help"
-            checked={checked === 'text-near-image-help'}
+            defaultChecked={checked === 'text-near-image-help'}
           />
-          <strong>Dezelfde tekst staat ook naast of vlak bij de afbeelding.</strong>
+          <span>
+            <strong>Dezelfde tekst staat ook naast of vlak bij de afbeelding.</strong>
+          </span>
         </FormLabel>
       </FormField>
       <FormField type="radio">
@@ -101,9 +109,11 @@ export default function TextTypeHelper({ onOptionChange, checked }: TextTypeHelp
             id="text-only-image"
             name="text-type"
             value="text-only-image-help"
-            checked={checked === 'text-only-image-help'}
+            defaultChecked={checked === 'text-only-image-help'}
           />
-          <strong>De tekst staat nergens anders op de pagina.</strong>
+          <span>
+            <strong>De tekst staat nergens anders op de pagina.</strong>
+          </span>
         </FormLabel>
       </FormField>
     </Fieldset>
