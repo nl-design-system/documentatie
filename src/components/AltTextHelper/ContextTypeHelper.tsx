@@ -33,21 +33,29 @@ export default function ContextTypeHelper({ onOptionChange, checked }: ContextTy
             id="context-complex-image"
             name="context-type"
             value="context-complex-image-help"
-            checked={checked === 'context-complex-image-help'}
+            defaultChecked={checked === 'context-complex-image-help'}
           />
-          <strong>Het is een grafiek, diagram of een andere complexe afbeelding.</strong>
+          <span>
+            <strong>Het is een grafiek, diagram of een andere complexe afbeelding.</strong>
+          </span>
         </FormLabel>
       </FormField>
       <FormField type="radio">
-        <FormLabel htmlFor="context-simple-image" type="radio">
+        <FormLabel
+          className="utrecht-form-field__label utrecht-form-field__label--radio"
+          htmlFor="context-simple-image"
+          type="radio"
+        >
           <RadioButton
             className="utrecht-form-field__input"
             id="context-simple-image"
             name="context-type"
             value="context-simple-image-help"
-            checked={checked === 'context-simple-image-help'}
+            defaultChecked={checked === 'context-simple-image-help'}
           />
-          <strong>Het is een foto of een eenvoudige illustratie.</strong>
+          <span>
+            <strong>Het is een foto of een eenvoudige illustratie.</strong>
+          </span>
         </FormLabel>
       </FormField>
     </Fieldset>
