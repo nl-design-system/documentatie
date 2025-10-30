@@ -13,7 +13,6 @@
     "speakers": ["SiretTuula", "KarolinKivisikk", "TonisTobre"],
     "subject": "TEDI: the Estonian government's new design system",
     "language": { "abbr": "EN", "description": "English" },
-    "captionId": "jczSoNvu74",
     "videoId": "qPgQ60SliZ8"
   },
   {
@@ -37,8 +36,6 @@
     "speakers": ["RenateRoke"],
     "subject": "Toegankelijke design system componenten",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "uHqthE1RFT",
     "videoId": "-ubYStSQ-Do"
   },
   {
@@ -46,9 +43,7 @@
     "isoDateTime": "2025-10-28T12:00:00.000Z",
     "speakers": ["GerbenStarink", "AlineNap", "BryanDeJong"],
     "subject": "Heartbeat - Design Systems Week editie",
-    "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "uHqthE1RFT"
+    "language": { "abbr": "NL", "description": "Nederlands" }
   },
   {
     "uuid": "4077d9c1-acd9-4ff5-9d2c-2b89a5e3bd08",
@@ -72,8 +67,6 @@
     "speakers": ["JeffreyLauwers"],
     "subject": "Prototypen & NL Design System",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "uHqthE1RFT",
     "videoId": "CLLa8agEuDE"
   },
   {
@@ -82,8 +75,6 @@
     "speakers": ["KimberlyBrinkhuis", "TedVanDerTogt"],
     "subject": "Gebruikersonderzoek en co-creatie",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "uHqthE1RFT",
     "videoId": "4n5CtgOTo_8"
   },
   {
@@ -92,8 +83,6 @@
     "speakers": ["ClaudiaVermeulen", "BaukjeFaber"],
     "subject": "Hoe maak je algoritmes begrijpelijk voor burgers? Onderzoek & beeldtaal",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "SillaEenmalig",
     "videoId": "GKFZtHjl37c"
   },
   {
@@ -102,46 +91,39 @@
     "speakers": ["LoesKockelmans"],
     "subject": "Het ANWB Design System herbouwd: toegankelijk en toekomstgericht",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "uHqthE1RFT"
+    "videoId": "VHxMyJdJ-SQ"
   },
   {
     "uuid": "02ae9c2a-f84f-4cd1-b7c0-9afe20813acb",
     "isoDateTime": "2025-10-30T09:00:00.000Z",
     "speakers": ["AlainVagner"],
     "subject": "Practical Tests for Assessing Accessibility",
-    "icalLink": "/dsweek-2025/practical-tests-for-assessing-accessibility.ics",
-    "language": { "abbr": "EN", "description": "English" }
+    "language": { "abbr": "EN", "description": "English" },
+    "videoId": "GCaCmbHDQOE"
   },
   {
     "uuid": "b56156e5-9490-43fb-8e5b-ef2676ec16a9",
     "isoDateTime": "2025-10-30T10:00:00.000Z",
     "speakers": ["JoelLaumans", "PimDieks"],
     "subject": "Schiphol Airport Operations - De kracht van een Enterprise Design System",
-    "icalLink": "/dsweek-2025/schiphol-airport-operations.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "uHqthE1RFT"
+    "videoId": "O0EDoC8UdGU"
   },
   {
     "uuid": "e1b87a0c-f57b-4607-9d97-f319642f73d0",
     "isoDateTime": "2025-10-30T12:00:00.000Z",
     "speakers": ["AntonOlivier"],
     "subject": "1 digitale gebruikerservaring bij de overheid",
-    "icalLink": "/dsweek-2025/1-digitale-gebruikerservaring-bij-de-overheid.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "uHqthE1RFT"
+    "videoId": "OP8b2H69gwk"
   },
   {
     "uuid": "e63d563e-4684-44c9-81f6-5e28333f0ecf",
     "isoDateTime": "2025-10-30T14:00:00.000Z",
     "speakers": ["EvalienWiersma"],
     "subject": "Een Design System: Bouwen aan vertrouwen",
-    "icalLink": "/dsweek-2025/een-design-system-bouwen-aan-vertrouwen.ics",
     "language": { "abbr": "NL", "description": "Nederlands" },
-    "captioned": true,
-    "captionId": "uHqthE1RFT"
+    "videoId": "tOXZxxb4x6M"
   },
   {
     "uuid": "d20970a9-4fd1-423e-8c5e-2b621d704f37",
