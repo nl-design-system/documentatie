@@ -10,29 +10,24 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 
 interface TextTypeHelperProps {
-  onOptionChange;
-  onGroupChange;
+  changeOption;
+  changeGroup;
   activeGroup;
 }
 
 const groupName = 'text-type';
 
-export default function TextTypeHelper({ onOptionChange, onGroupChange, activeGroup }: TextTypeHelperProps) {
+export default function TextTypeHelper({ changeOption, changeGroup, activeGroup }: TextTypeHelperProps) {
   const [selectedOption, setSelectedOption] = useState('');
 
-  const changeSelected = (e) => {
-    const { value } = e.target;
-    setSelectedOption(value);
-  };
-
   const nextStep = () => {
-    onGroupChange('');
-    onOptionChange(selectedOption);
+    changeGroup('');
+    changeOption(selectedOption);
   };
 
   const prevStep = () => {
-    onGroupChange('image-type');
-    onOptionChange('');
+    changeGroup('image-type');
+    changeOption('');
   };
 
   if (activeGroup === groupName) {
@@ -52,7 +47,9 @@ export default function TextTypeHelper({ onOptionChange, onGroupChange, activeGr
               name={groupName}
               value="text-complex-image-help"
               defaultChecked={selectedOption === 'text-complex-image-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>Het gaat om een grafiek, tabel of andere complexe informatie.</strong>
@@ -71,7 +68,9 @@ export default function TextTypeHelper({ onOptionChange, onGroupChange, activeGr
               name={groupName}
               value="text-has-function-help"
               defaultChecked={selectedOption === 'text-has-function-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>De tekst heeft een functionele rol.</strong>
@@ -92,7 +91,9 @@ export default function TextTypeHelper({ onOptionChange, onGroupChange, activeGr
               name={groupName}
               value="text-visual-effect-help"
               defaultChecked={selectedOption === 'text-visual-effect-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis</strong>
@@ -113,7 +114,9 @@ export default function TextTypeHelper({ onOptionChange, onGroupChange, activeGr
               name={groupName}
               value="text-near-image-help"
               defaultChecked={selectedOption === 'text-near-image-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>Dezelfde tekst staat ook naast of vlak bij de afbeelding.</strong>
@@ -132,7 +135,9 @@ export default function TextTypeHelper({ onOptionChange, onGroupChange, activeGr
               name={groupName}
               value="text-only-image-help"
               defaultChecked={selectedOption === 'text-only-image-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>De tekst staat nergens anders op de pagina.</strong>
