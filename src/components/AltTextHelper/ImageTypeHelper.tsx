@@ -10,28 +10,23 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 
 interface ImageTypeHelperProps {
-  onOptionChange;
-  onGroupChange;
+  changeOption;
+  changeGroup;
   activeGroup;
 }
 
 const groupName = 'image-type';
 
-export default function ImageTypeHelper({ onOptionChange, onGroupChange, activeGroup }: ImageTypeHelperProps) {
+export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup }: ImageTypeHelperProps) {
   const [selectedOption, setSelectedOption] = useState('');
-
-  const changeSelected = (e) => {
-    const { value } = e.target;
-    setSelectedOption(value);
-  };
 
   const nextStep = () => {
     if (selectedOption === 'text-type' || selectedOption === 'context-type') {
-      onOptionChange('');
-      onGroupChange(selectedOption);
+      changeOption('');
+      changeGroup(selectedOption);
     } else {
-      onGroupChange('');
-      onOptionChange(selectedOption);
+      changeGroup('');
+      changeOption(selectedOption);
     }
   };
 
@@ -52,7 +47,9 @@ export default function ImageTypeHelper({ onOptionChange, onGroupChange, activeG
               name={groupName}
               value="context-type"
               defaultChecked={selectedOption === 'context-type'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>De afbeelding helpt om de tekst op de pagina beter te begrijpen.</strong>
@@ -74,7 +71,9 @@ export default function ImageTypeHelper({ onOptionChange, onGroupChange, activeG
               name={groupName}
               value="image-type-decorative-help"
               defaultChecked={selectedOption === 'image-type-decorative-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien.</strong>
@@ -95,7 +94,9 @@ export default function ImageTypeHelper({ onOptionChange, onGroupChange, activeG
               name={groupName}
               value="text-type"
               defaultChecked={selectedOption === 'text-type'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>De afbeelding bestaat hoofdzakelijk uit tekst die bedoeld is om gelezen te worden</strong>
@@ -116,7 +117,9 @@ export default function ImageTypeHelper({ onOptionChange, onGroupChange, activeG
               name={groupName}
               value="image-type-functional-help"
               defaultChecked={selectedOption === 'image-type-functional-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>De afbeelding wordt gebruikt als een link of knop.</strong>

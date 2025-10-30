@@ -8,9 +8,16 @@ const currentHelperText = (id) => {
 
 interface HelperTextProps {
   id: string;
+  changeOption;
+  changeGroup;
 }
 
-export default function HelperText({ id }: HelperTextProps) {
+export default function HelperText({ id, changeOption, changeGroup }: HelperTextProps) {
+  const prevStep = () => {
+    changeOption('');
+    changeGroup(currentHelperText(id).group);
+  };
+
   if (currentHelperText(id)) {
     return (
       <>
@@ -20,7 +27,9 @@ export default function HelperText({ id }: HelperTextProps) {
         </SpotlightSection>
 
         <div className="button-bar">
-          <Button appearance="secondary-action-button">Vorige</Button>
+          <Button appearance="secondary-action-button" onClick={prevStep}>
+            Vorige
+          </Button>
         </div>
       </>
     );
