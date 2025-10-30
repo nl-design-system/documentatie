@@ -116,7 +116,7 @@ Dit wordt niet aangeraden omdat je dan veel meer code dan nodig importeert, en j
 Het logo kan als svg aangeleverd worden. Je kunt er voor kiezen om een eigen logo neer te zetten of die van [het voorbeeld thema](/svg/voorbeeld-thema-logo.svg) te gebruiken.
 
 :::info[SVG via `<img>` vs inline SVG]
-Gebruik bij voorkeur inline SVG voor iconen en UI‑symbolen:
+Gebruik bij voorkeur inline SVG voor iconen:
 
 - Inline SVG ondersteunt theming (`currentColor`, CSS‑variabelen) en high‑contrast/forced‑colors.
 - States (hover/focus/active) zijn te stylen met CSS.
@@ -369,7 +369,7 @@ Zet de Page Body CSS classes op een wrapper rondom de hoofdinhoud, niet op `body
 </div>
 ```
 
-Waarom op deze manier? De wrapper zorgt voor consistente maximale breedte, horizontale padding en responsieve layout, terwijl `<main>` semantiek en navigatie‑landmarks levert.
+Waarom op deze manier? De wrapper zorgt voor consistente maximale breedte, horizontale padding en responsieve layout. Als je `<main>` gebruikt voor de Page Body dan is er grote kans dat andere landmarks onbedoeld binnen de `main` landmark worden geplaatst, zoals bijvoorbeeld de Breadcrumb Navigation.
 
 #### Heading
 
