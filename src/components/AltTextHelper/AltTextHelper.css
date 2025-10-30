@@ -24,6 +24,11 @@
 .nlds-alt-text-helper .button-bar {
   display: flex;
   justify-content: space-between;
+  padding-top: var(--ifm-paragraph-margin-bottom);
+}
+
+.nlds-alt-text-helper .button-bar.flex-end {
+  justify-content: end;
 }
 
 .nlds-alt-text-helper .utrecht-form-field__label.utrecht-form-field__label--radio {
