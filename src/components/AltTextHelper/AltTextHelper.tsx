@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Button } from '@utrecht/component-library-react/dist/css-module';
 import HelperText from './HelperText';
 import ImageTypeHelper from './ImageTypeHelper';
 import TextTypeHelper from './TexTypeHelper';
@@ -7,99 +6,26 @@ import ContextTypeHelper from './ContextTypeHelper';
 import './AltTextHelper.css';
 
 const AltTextHelper = () => {
-  const [helpStep] = useState('');
+  const [activeSelection, setActiveSelection] = useState('');
+  const [activeGroup, setActiveGroup] = useState('image-type');
 
-  const [currentChecked, setCurrentChecked] = useState({ image: '', context: '', text: '', group: '' });
-  const [currentStep] = useState('image-type');
-  const [history] = useState(['image-type']);
-
-  const next = () => {
-    console.log(history);
-    // setPreviousStep(currentStep);
-
-    // switch (currentChecked.active) {
-    //   case 'image-type-text-help':
-    //     setCurrentStep('text-type');
-    //     break;
-
-    //   case 'image-type-context-help':
-    //     setCurrentStep('context-type');
-    //     break;
-
-    //   default:
-    //     setCurrentStep('help-text');
-    //     setHelpStep(currentChecked.active);
-    // }
-    // setCurrentChecked({
-    //   ...currentChecked,
-    //   active: ''
-    // });
+  const onOptionChange = (val) => {
+    setActiveSelection(val);
   };
 
-  const prev = () => {
-    console.log(history);
-    // if(currentStep === 'text-type' || currentStep === 'context-type') {
-    //   setCurrentStep('image-type');
-    // }
-    // else setCurrentStep(previousStep);
-
-    // setHelpStep('');
-  };
-
-  const onOptionChange = (e) => {
-    const { value, name } = e.target;
-
-    switch (name) {
-      case 'text-type':
-        setCurrentChecked({
-          ...currentChecked,
-          text: value,
-          group: name,
-        });
-        break;
-      case 'context-type':
-        setCurrentChecked({
-          ...currentChecked,
-          context: value,
-          group: name,
-        });
-        break;
-      case 'image-type':
-        setCurrentChecked({
-          ...currentChecked,
-          image: value,
-          group: name,
-        });
-    }
+  const onGroupChange = (val) => {
+    setActiveGroup(val);
   };
 
   return (
     <form className="nlds-alt-text-helper">
-      {currentStep === 'image-type' && (
-        <ImageTypeHelper onOptionChange={onOptionChange} checked={currentChecked.image} />
-      )}
+      <ImageTypeHelper onOptionChange={onOptionChange} onGroupChange={onGroupChange} activeGroup={activeGroup} />
 
-      {currentStep === 'text-type' && <TextTypeHelper onOptionChange={onOptionChange} checked={currentChecked.text} />}
+      <TextTypeHelper onOptionChange={onOptionChange} onGroupChange={onGroupChange} activeGroup={activeGroup} />
 
-      {currentStep === 'context-type' && (
-        <ContextTypeHelper onOptionChange={onOptionChange} checked={currentChecked.context} />
-      )}
+      <ContextTypeHelper onOptionChange={onOptionChange} onGroupChange={onGroupChange} activeGroup={activeGroup} />
 
-      {helpStep !== '' && <HelperText id={helpStep} />}
-
-      <div className="button-bar">
-        {currentStep !== 'image-type' && (
-          <Button appearance="secondary-action-button" onClick={prev}>
-            Vorige
-          </Button>
-        )}
-
-        {currentStep !== 'help-text' && (
-          <Button appearance="primary-action-button" onClick={next}>
-            Volgende
-          </Button>
-        )}
-      </div>
+      <HelperText id={activeSelection} />
     </form>
   );
 };
