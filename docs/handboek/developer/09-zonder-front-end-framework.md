@@ -121,6 +121,8 @@ Gebruik bij voorkeur inline SVG voor iconen:
 - Inline SVG ondersteunt theming (`currentColor`, CSS‑variabelen) en high‑contrast/forced‑colors.
 - States (hover/focus/active) zijn te stylen met CSS.
 
+Je kunt voor iconen beter `fill="currentColor"` gebruiken. Dit zorgt ervoor dat de iconen automatisch de tekstkleur overnemen en beter integreren met je thema. Meer informatie hierover vind je in de [Icon documentatie](/icon).
+
 `<img src="…svg">` kan wel voor decoratieve, kleurvaste afbeeldingen die door contentmakers worden beheerd.
 :::
 
@@ -129,10 +131,6 @@ Het logo kunnen we als volgt toevoegen:
 ```html
 <img src="/svg/voorbeeld-thema-logo.svg" alt="Logo van het Voorbeeld thema" />
 ```
-
-:::info[Tip voor iconen en logo's]
-Je kunt voor iconen beter `fill="currentColor"` gebruiken. Dit zorgt ervoor dat de iconen automatisch de tekstkleur overnemen en beter integreren met je thema. Meer informatie hierover vind je in de [Icon documentatie](/icon).
-:::
 
 Wanneer je het logo op je lokale file system hebt opgeslagen in hetzelfde mapje als de html, dan moet je verwijzen naar `./voorbeeld-thema-logo.svg`.
 
@@ -333,19 +331,17 @@ En moet je de bijbehorende classes erop zetten:
 
 Ook zonder screenreader kun je zien dat de Skip Link nu verborgen is, maar nog wel bruikbaar is door de pagina te herladen en direct daarna op de "Tab" toets te drukken.
 
-Om de Skip Link te gebruiken moet je aangeven waar de hoofdinhoud is om naartoe te skippen:
+Om de Skip Link te gebruiken moet je aangeven waar de hoofdinhoud is. De hoofdinhoud markeer je met het `<main>`-element, een zogenaamde “landmark”. Dit geeft screenreader‑gebruikers een extra manier om snel naar de hoofdinhoud te springen met de "landmark navigatie". Door id="main" toe te voegen, kan ook de Skip Link hier direct naartoe verwijzen.
 
 ```html
 <main id="main"></main>
 ```
 
-##### Waarom `<main id="main">` gebruiken?
-
-Het `<main>`-element markeert de hoofdinhoud van de pagina als een zogenaamde “landmark”. Dit helpt screenreader‑gebruikers om snel naar de hoofdinhoud te springen. Door `id="main"` toe te voegen, kan de skip‑link hier direct naartoe verwijzen. Richtlijnen:
+Richtlijnen:
 
 - Gebruik precies één `<main>` per pagina.
-- Plaats `id="main"` op `<main>` zodat de skip‑link (`href="#main"`) werkt.
-- Plaats andere herhalende landmarks buiten `main`, zodat gebruikers makkelijk al die onderdelen kunnen overslaan. De `nav` van de Breadcrumb Navigation moet bijvoorbeeld niet in `main` staan.
+- Plaats id="main" op `<main>` zodat de skip‑link (href="#main") werkt.
+- Plaats andere herhalende landmarks buiten main, zodat gebruikers makkelijk al die onderdelen kunnen overslaan. De nav van de Breadcrumb Navigation moet bijvoorbeeld niet in main staan.
 
 #### Page Body
 
