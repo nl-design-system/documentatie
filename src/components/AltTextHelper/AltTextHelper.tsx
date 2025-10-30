@@ -9,23 +9,23 @@ const AltTextHelper = () => {
   const [activeSelection, setActiveSelection] = useState('');
   const [activeGroup, setActiveGroup] = useState('image-type');
 
-  const onOptionChange = (val) => {
+  const changeOption = (val) => {
     setActiveSelection(val);
   };
 
-  const onGroupChange = (val) => {
+  const changeGroup = (val) => {
     setActiveGroup(val);
   };
 
   return (
     <form className="nlds-alt-text-helper">
-      <ImageTypeHelper onOptionChange={onOptionChange} onGroupChange={onGroupChange} activeGroup={activeGroup} />
+      <ImageTypeHelper changeOption={changeOption} changeGroup={changeGroup} activeGroup={activeGroup} />
 
-      <TextTypeHelper onOptionChange={onOptionChange} onGroupChange={onGroupChange} activeGroup={activeGroup} />
+      <TextTypeHelper changeOption={changeOption} changeGroup={changeGroup} activeGroup={activeGroup} />
 
-      <ContextTypeHelper onOptionChange={onOptionChange} onGroupChange={onGroupChange} activeGroup={activeGroup} />
+      <ContextTypeHelper changeOption={changeOption} changeGroup={changeGroup} activeGroup={activeGroup} />
 
-      <HelperText id={activeSelection} />
+      <HelperText id={activeSelection} changeOption={changeOption} changeGroup={changeGroup} />
     </form>
   );
 };
