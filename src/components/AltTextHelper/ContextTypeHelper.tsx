@@ -10,29 +10,24 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 
 interface ContextTypeHelperProps {
-  onOptionChange;
-  onGroupChange;
+  changeOption;
+  changeGroup;
   activeGroup;
 }
 
 const groupName = 'context-type';
 
-export default function ContextTypeHelper({ onOptionChange, onGroupChange, activeGroup }: ContextTypeHelperProps) {
+export default function ContextTypeHelper({ changeOption, changeGroup, activeGroup }: ContextTypeHelperProps) {
   const [selectedOption, setSelectedOption] = useState('');
 
-  const changeSelected = (e) => {
-    const { value } = e.target;
-    setSelectedOption(value);
-  };
-
   const nextStep = () => {
-    onGroupChange('');
-    onOptionChange(selectedOption);
+    changeGroup('');
+    changeOption(selectedOption);
   };
 
   const prevStep = () => {
-    onGroupChange('image-type');
-    onOptionChange('');
+    changeGroup('image-type');
+    changeOption('');
   };
 
   if (activeGroup === groupName) {
@@ -54,7 +49,9 @@ export default function ContextTypeHelper({ onOptionChange, onGroupChange, activ
               name={groupName}
               value="context-complex-image-help"
               defaultChecked={selectedOption === 'context-complex-image-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>Het is een grafiek, diagram of een andere complexe afbeelding.</strong>
@@ -73,7 +70,9 @@ export default function ContextTypeHelper({ onOptionChange, onGroupChange, activ
               name={groupName}
               value="context-simple-image-help"
               defaultChecked={selectedOption === 'context-simple-image-help'}
-              onChange={changeSelected}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
             />
             <span>
               <strong>Het is een foto of een eenvoudige illustratie.</strong>
