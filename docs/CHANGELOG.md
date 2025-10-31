@@ -1,5 +1,12 @@
 # @nl-design-system-unstable/documentation
 
+## 1.9.0
+
+### Minor Changes
+
+- a70d115: Uitleg over toepassing van kopniveau 1 toegevoegd aan content richtlijnen.
+- e653741: Toevoeging aan WCAG 2.5.2 en WCAG 2.4.3 advies bij Button.
+
 ## 1.8.0
 
 ### Minor Changes
