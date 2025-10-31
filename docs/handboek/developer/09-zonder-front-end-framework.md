@@ -203,7 +203,7 @@ En om de styling van de links goed te krijgen importeer je de NL Design System C
 ##### Visually Hidden
 
 Soms heb je tekst nodig die alleen voor een screenreader bedoeld is.
-Voorbeeld: Een website heeft verschillende secties, zoals 'Hoofdnavigatie', 'Hoofdinhoud' en 'Footer'. Voor een screenreader-gebruiker is het heel handig als deze secties (landmarks) een duidelijke naam hebben.
+Voorbeeld: Een website heeft verschillende secties, zoals 'Hoofdnavigatie', 'Hoofdinhoud' en 'Footer'. Voor een screenreadergebruiker is het heel handig als deze secties (landmarks) een duidelijke naam hebben.
 Met het aria-labelledby attribuut kun je een sectie een naam geven door te verwijzen naar een titel op de pagina. Maar wat als je die titel niet zichtbaar wilt tonen, omdat het voor ziende gebruikers al duidelijk genoeg is?
 
 De Oplossing: visually-hidden
@@ -331,7 +331,7 @@ En moet je de bijbehorende classes erop zetten:
 
 Ook zonder screenreader kun je zien dat de Skip Link nu verborgen is, maar nog wel bruikbaar is door de pagina te herladen en direct daarna op de "Tab" toets te drukken.
 
-Om de Skip Link te gebruiken moet je aangeven waar de hoofdinhoud is. De hoofdinhoud markeer je met het `<main>`-element, een zogenaamde “landmark”. Dit geeft screenreader‑gebruikers een extra manier om snel naar de hoofdinhoud te springen met de "landmark navigatie". Door id="main" toe te voegen, kan ook de Skip Link hier direct naartoe verwijzen.
+Om de Skip Link te gebruiken moet je aangeven waar de hoofdinhoud is. De hoofdinhoud markeer je met het `<main>`-element, een zogenaamde "landmark". Dit geeft screenreadergebruikers een extra manier om snel naar de hoofdinhoud te springen met de "landmark navigatie". Door `id="main"` toe te voegen, kan ook de Skip Link hier direct naartoe verwijzen.
 
 ```html
 <main id="main"></main>
