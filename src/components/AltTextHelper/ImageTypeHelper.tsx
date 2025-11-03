@@ -59,12 +59,12 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>De afbeelding helpt om de tekst op de pagina beter te begrijpen.</strong>
+            <div>
+              <span className="bold-text">De afbeelding helpt om de tekst op de pagina beter te begrijpen.</span>
               <br />
               Dit heet een informatieve afbeelding. Voorbeelden hiervan zijn een grafiek, een illustratie of een
               stappenplan.
-            </span>
+            </div>
           </FormLabel>
         </FormField>
         <FormField type="radio">
@@ -83,11 +83,13 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien.</strong>
+            <div>
+              <span className="bold-text">
+                De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien.
+              </span>
               <br />
               Dit heet een decoratieve afbeelding, bijvoorbeeld een sfeerbeeld zonder betekenis.
-            </span>
+            </div>
           </FormLabel>
         </FormField>
         <FormField type="radio">
@@ -106,11 +108,13 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>De afbeelding bestaat hoofdzakelijk uit tekst die bedoeld is om gelezen te worden</strong>
+            <div>
+              <span className="bold-text">
+                De afbeelding bestaat hoofdzakelijk uit tekst die bedoeld is om gelezen te worden
+              </span>
               <br />
               Bijvoorbeeld: banners, afbeeldingen van flyers of de verkoopprijs van een product.
-            </span>
+            </div>
           </FormLabel>
         </FormField>
         <FormField type="radio">
@@ -129,11 +133,11 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>De afbeelding wordt gebruikt als een link of knop.</strong>
+            <div>
+              <span className="bold-text">De afbeelding wordt gebruikt als een link of knop.</span>
               <br />
               Dit heet een functionele afbeelding.
-            </span>
+            </div>
           </FormLabel>
         </FormField>
         <div className="button-bar flex-end">
