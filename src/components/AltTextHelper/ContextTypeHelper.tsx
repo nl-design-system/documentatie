@@ -61,9 +61,9 @@ export default function ContextTypeHelper({ changeOption, changeGroup, activeGro
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>Het is een grafiek, diagram of een andere complexe afbeelding.</strong>
-            </span>
+            <div>
+              <span className="bold-text">Het is een grafiek, diagram of een andere complexe afbeelding.</span>
+            </div>
           </FormLabel>
         </FormField>
         <FormField type="radio">
@@ -82,9 +82,9 @@ export default function ContextTypeHelper({ changeOption, changeGroup, activeGro
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>Het is een foto of een eenvoudige illustratie.</strong>
-            </span>
+            <div>
+              <span className="bold-text">Het is een foto of een eenvoudige illustratie.</span>
+            </div>
           </FormLabel>
         </FormField>
 
