@@ -27,7 +27,7 @@ const AltTextHelper = () => {
             setActiveGroup('image-type');
           }}
         >
-          Start
+          Start de alt-tekst helper
         </Button>
       )}
 

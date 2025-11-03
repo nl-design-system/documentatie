@@ -90,11 +90,11 @@ export default function ContextTypeHelper({ changeOption, changeGroup, activeGro
 
         <div className="button-bar">
           <Button appearance="secondary-action-button" onClick={prevStep}>
-            Vorige
+            Terug
           </Button>
 
           <Button appearance="primary-action-button" disabled={selectedOption === '' ? true : false} onClick={nextStep}>
-            Volgende
+            Toon advies
           </Button>
         </div>
       </Fieldset>
