@@ -9,13 +9,15 @@ import {
   Button,
 } from '@utrecht/component-library-react/dist/css-module';
 
+const groupName = 'image-type';
+
+const autoFocus = (element: HTMLElement | null) => element?.focus();
+
 interface ImageTypeHelperProps {
   changeOption;
   changeGroup;
-  activeGroup;
+  activeGroup: string;
 }
-
-const groupName = 'image-type';
 
 export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup }: ImageTypeHelperProps) {
   const [selectedOption, setSelectedOption] = useState('');
@@ -32,7 +34,13 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
 
   if (activeGroup === groupName) {
     return (
-      <Fieldset id="image-type-group" aria-describedby="image-type-group-description" role="radiogroup">
+      <Fieldset
+        id="image-type-group"
+        aria-describedby="image-type-group-description"
+        role="radiogroup"
+        ref={autoFocus}
+        tabIndex={-1}
+      >
         <FieldsetLegend>Wat is het doel van de afbeelding?</FieldsetLegend>
         <FormFieldDescription id="image-type-group-description">Kies de optie die het beste past:</FormFieldDescription>
         <FormField type="radio">

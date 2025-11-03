@@ -9,13 +9,15 @@ import {
   Button,
 } from '@utrecht/component-library-react/dist/css-module';
 
+const groupName = 'text-type';
+
+const autoFocus = (element: HTMLElement | null) => element?.focus();
+
 interface TextTypeHelperProps {
   changeOption;
   changeGroup;
-  activeGroup;
+  activeGroup: string;
 }
-
-const groupName = 'text-type';
 
 export default function TextTypeHelper({ changeOption, changeGroup, activeGroup }: TextTypeHelperProps) {
   const [selectedOption, setSelectedOption] = useState('');
@@ -32,8 +34,14 @@ export default function TextTypeHelper({ changeOption, changeGroup, activeGroup 
 
   if (activeGroup === groupName) {
     return (
-      <Fieldset id="text-type-group" aria-describedby="text-type-group-description" role="radiogroup">
-        <FieldsetLegend>Wat is het doel van de afbeelding?</FieldsetLegend>
+      <Fieldset
+        id="text-type-group"
+        aria-describedby="text-type-group-description"
+        role="radiogroup"
+        ref={autoFocus}
+        tabIndex={-1}
+      >
+        <FieldsetLegend>Waarvoor is de tekst in de afbeelding bedoeld?</FieldsetLegend>
         <FormFieldDescription id="text-type-group-description">Kies de optie die het beste past:</FormFieldDescription>
         <FormField type="radio">
           <FormLabel

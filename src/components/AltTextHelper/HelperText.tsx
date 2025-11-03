@@ -6,6 +6,8 @@ const currentHelperText = (id) => {
   return text;
 };
 
+const autoFocus = (element: HTMLElement | null) => element?.focus();
+
 interface HelperTextProps {
   id: string;
   changeOption;
@@ -21,7 +23,7 @@ export default function HelperText({ id, changeOption, changeGroup }: HelperText
   if (currentHelperText(id)) {
     return (
       <>
-        <SpotlightSection type="info" role="alert">
+        <SpotlightSection type="info" role="alert" ref={autoFocus} tabIndex={-1}>
           <Heading2>{currentHelperText(id).heading}</Heading2>
           <Paragraph dangerouslySetInnerHTML={{ __html: currentHelperText(id).paragraph }}></Paragraph>
         </SpotlightSection>
