@@ -30,7 +30,7 @@ export default function HelperText({ id, changeOption, changeGroup }: HelperText
 
         <div className="button-bar">
           <Button appearance="secondary-action-button" onClick={prevStep}>
-            Vorige
+            Terug
           </Button>
         </div>
       </>
