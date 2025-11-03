@@ -59,9 +59,9 @@ export default function TextTypeHelper({ changeOption, changeGroup, activeGroup 
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>Het gaat om een grafiek, tabel of andere complexe informatie.</strong>
-            </span>
+            <div>
+              <span className="bold-text">Het gaat om een grafiek, tabel of andere complexe informatie.</span>
+            </div>
           </FormLabel>
         </FormField>
         <FormField type="radio">
@@ -80,11 +80,11 @@ export default function TextTypeHelper({ changeOption, changeGroup, activeGroup 
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>De tekst heeft een functionele rol.</strong>
+            <div>
+              <span className="bold-text">De tekst heeft een functionele rol.</span>
               <br />
               Bijvoorbeeld: een icoon met de letters PDF dat “Download PDF” of een uitroepteken dat “Let op” aanduidt.
-            </span>
+            </div>
           </FormLabel>
         </FormField>
         <FormField type="radio">
@@ -103,11 +103,13 @@ export default function TextTypeHelper({ changeOption, changeGroup, activeGroup 
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis</strong>
+            <div>
+              <span className="bold-text">
+                De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis
+              </span>
               <br />
               Bijvoorbeeld: een watermerk of tekst in een screenshot.
-            </span>
+            </div>
           </FormLabel>
         </FormField>
         <FormField type="radio">
@@ -126,9 +128,9 @@ export default function TextTypeHelper({ changeOption, changeGroup, activeGroup 
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>Dezelfde tekst staat ook naast of vlak bij de afbeelding.</strong>
-            </span>
+            <div>
+              <span className="bold-text">Dezelfde tekst staat ook naast of vlak bij de afbeelding.</span>
+            </div>
           </FormLabel>
         </FormField>
         <FormField type="radio">
@@ -147,9 +149,9 @@ export default function TextTypeHelper({ changeOption, changeGroup, activeGroup 
                 setSelectedOption(e.target.value);
               }}
             />
-            <span>
-              <strong>De tekst staat nergens anders op de pagina.</strong>
-            </span>
+            <div>
+              <span className="bold-text">De tekst staat nergens anders op de pagina.</span>
+            </div>
           </FormLabel>
         </FormField>
 
