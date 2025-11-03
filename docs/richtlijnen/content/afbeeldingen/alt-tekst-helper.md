@@ -1,11 +1,11 @@
 ---
-title: Alt-tekst helper · Afbeeldingen · Content · Richtlijnen
+title: Alt-tekst keuzehulp · Afbeeldingen · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Alt-tekst helper
-pagination_label: Alt-tekst helper
+sidebar_label: Alt-tekst keuzehulp
+pagination_label: Alt-tekst keuzehulp
 description: Hulp bij het bepalen wat je nu precies moet invullen als alternatieve tekst
-slug: /richtlijnen/content/afbeeldingen/alt-tekst-helper
+slug: /richtlijnen/content/afbeeldingen/alt-tekst-keuzehulp
 keywords:
   - afbeeldingen
   - alternatieve tekst
@@ -25,8 +25,8 @@ keywords:
 
 import AltTextHelper from "@site/src/components/AltTextHelper/AltTextHelper";
 
-# Alt-tekst helper
+# Alt-tekst keuzehulp
 
-Beantwoord maximaal twee vragen over je afbeelding. Je krijgt dan advies of je een alt-tekst nodig hebt en wat je kunt invullen. Zo maak je je content toegankelijk voor iedereen.
+Beantwoord een of twee vragen over je afbeelding en krijg direct advies. Zo weet je precies of je een alt-tekst moet toevoegen, en wat je het beste kunt schrijven. Dat helpt iedereen om je content te begrijpen.
 
 <AltTextHelper />
