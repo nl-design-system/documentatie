@@ -27,6 +27,6 @@ import AltTextHelper from "@site/src/components/AltTextHelper/AltTextHelper";
 
 # Alt-tekst helper
 
-Beantwoord een paar(maximaal 3) vragen over je afbeelding. Je krijgt dan advies of je een alt-tekst nodig hebt en wat je kunt invullen. Zo maak je je content toegankelijk voor iedereen.
+Beantwoord maximaal twee vragen over je afbeelding. Je krijgt dan advies of je een alt-tekst nodig hebt en wat je kunt invullen. Zo maak je je content toegankelijk voor iedereen.
 
 <AltTextHelper />
