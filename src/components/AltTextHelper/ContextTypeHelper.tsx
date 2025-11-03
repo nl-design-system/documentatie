@@ -9,13 +9,15 @@ import {
   Button,
 } from '@utrecht/component-library-react/dist/css-module';
 
+const groupName = 'context-type';
+
+const autoFocus = (element: HTMLElement | null) => element?.focus();
+
 interface ContextTypeHelperProps {
   changeOption;
   changeGroup;
-  activeGroup;
+  activeGroup: string;
 }
-
-const groupName = 'context-type';
 
 export default function ContextTypeHelper({ changeOption, changeGroup, activeGroup }: ContextTypeHelperProps) {
   const [selectedOption, setSelectedOption] = useState('');
@@ -32,7 +34,13 @@ export default function ContextTypeHelper({ changeOption, changeGroup, activeGro
 
   if (activeGroup === groupName) {
     return (
-      <Fieldset id="context-type-group" aria-describedby="image-type-group-description" role="radiogroup">
+      <Fieldset
+        id="context-type-group"
+        aria-describedby="image-type-group-description"
+        role="radiogroup"
+        ref={autoFocus}
+        tabIndex={-1}
+      >
         <FieldsetLegend>Wat voor soort afbeelding is het?</FieldsetLegend>
         <FormFieldDescription id="context-type-group-description">
           Kies de optie die het beste past:
