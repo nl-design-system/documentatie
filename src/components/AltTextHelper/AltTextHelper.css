@@ -24,9 +24,9 @@
 }
 
 .nlds-alt-text-helper .button-bar {
+  padding-top: var(--ifm-paragraph-margin-bottom);
   display: flex;
   justify-content: space-between;
-  padding-top: var(--ifm-paragraph-margin-bottom);
 }
 
 .nlds-alt-text-helper .button-bar.flex-end {
