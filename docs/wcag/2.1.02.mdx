@@ -33,36 +33,84 @@ import Summary from "./summaries/_2.1.2-summary.md";
 
 ## Uitleg
 
-Interactieve elementen mogen navigatie met het toetsenbord niet tegenhouden.
-
-Als de focus niet te verplaatsen is met standaardtoetsen zoals escape-, pijltjes- of tabtoetsen, geef dan aan hoe het wel kan. Een onderdeel wat wel te bereiken is maar waar men niet meer weg kan, wordt ook toetsenbordval genoemd.
+Interactieve elementen mogen navigatie met het toetsenbord niet tegenhouden. Als dit wel gebeurt zit je vast als gebruiker. Dan is de pagina verder niet bruikbaar. Dit wordt ook een toetsenbordval genoemd.
 
 ### Voordelen
 
+Het toetsenbord zelf is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of andere invoerapparaten gebruiken. Dit criterium is ook voor tal van apparaten die werken als een toetsenbord. Dit zijn bijvoorbeeld een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar). Screenreaders worden vooral gebruikt door mensen met een visuele beperking, maar ook door mensen met cognitieve beperkingen. Daarnaast zijn er tal van hulpmiddelen zoals de eenfunctieschakelaar die gebruikt worden door mensen met motorische beperkingen.
+
+Werkende toetsenbordbediening helpt mensen met beperkingen maar ook andere mensen. Dit zijn bijvoorbeeld _power users_ en mensen regelmatige bezoekers die sneller werken met een toetsenbord.
+
 ## Hoe te testen
 
-- Navigeer door de pagina met het toetsenbord zoals bij [WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1)
-- Als je niet verder kan navigeren, controleer dan of er instructies zijn hoe dit wel kan.
+Lees in de uitleg van [WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1) hoe een toetsenbord zou moeten werken.
 
-Als je niet de hele pagina doorkan met standaardnavigatie én er zijn geen alternatieve instructies, dan faalt dit criterium.
+Voor elk onderdeel dat je met het toetsenbord kan bereiken moet het volgende kloppen:
 
-      Mensen die leunen op toetsenbordgebruik kunnen vaak niet op een andere manier navigeren.
+- Na het bereiken met het toetsenbord kan de focus ook weer weggehaald worden.
+
+Gebruik standaardtoetsen zoals <kbd>tab</kbd>, <kbd>shift-tab</kbd>, <kbd>escape</kbd> en <kbd>pijltjestoetsen</kbd> om weg te navigeren. Werkt dit niet? Het mag ook met andere toetsen werken. Als andere toetsen nodig zijn, dan moet dit op de pagina staan.
 
 ## Veelgemaakte fouten
 
-- Beïnvloed zo min mogelijk de focus van de gebruiker met JavaScript, het `autofocus`-attribuut of het `tabindex`-attribuut. Door er niet aan te komen kun je het ook niet slechter maken.
+### Een openvouwend onderdeel krijgt en houdt de focus
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Een onderdeel dat openvouwt is bereikbaar met het toetsenbord. Het is vervolgens niet weer te verlaten met het toetsenbord.
+Dit kan zijn omdat het onderdeel niet te sluiten is, of omdat er niet uit te navigeren is.
+
+#### Oplossing
+
+Zorg ervoor dat een onderdeel dat opent en de focus krijgt ook weer te sluiten is met het toetsenbord. Als het onderdeel niet te sluiten is, zorg dan dat de focus weer weggehaald kan worden.
+
+### Scrollen lijkt oneindig door te gaan
+
+Dit probleem kan opgelost worden door designers.
+
+#### Probleem
+
+Een pagina scrollt oneindig door, doordat er steeds nieuwe inhoudt verschijnt. Dit staat ook wel bekend als _infinite scrolling_. Als dit gebeurt kan de bezoeker niet voorbij het scrollende deel komen met het toetsenbord.
+Dit is ook een probleem als de pagina niet oneindig scrollt maar wel die indruk geeft.
+
+#### Oplossing
+
+Zorg voor paginering of voeg een [Skip Link](/skip-link) toe voor de content die scrollt.
 
 ## Gerelateerde NL Design System-richtlijnen en WCAG criteria
+
+Binnen NL Design System is meer geschreven over dit criterium en onderwerpen die ermee te maken hebben. Met deze context kun je nog praktischer met dit criterium aan de slag. Je kan meerdere problemen tegelijk oplossen, en de gebruikerservaring breder verbeteren.
 
 ### NL Design System-richtlijnen
 
 - Formulieren - Toetsenbord: [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/).
 - Formulieren - Toetsenbord: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
+- Formulieren - Buttons: [Toetsenbordbediening van een button](/richtlijnen/formulieren/buttons/toetsenbordbediening).
+- Formulieren - Buttons: [Disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
 - Formulieren - Wanneer gebruik je welk formulierelement: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
 
 ### WCAG richtlijnen
 
+Deze WCAG richtlijnen gaan ook over het gebruik van een toetsenbord. Het kan praktisch zijn om deze tegelijk te bekijken en te beoordelen.
+
+- [WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11)
+- [WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.2)
+- [WCAG-succescriterium 2.1.3 Toetsenbord (geen uitzondering)](/wcag/2.1.3)
+- [WCAG-succescriterium 2.4.1 Blokken omzeilen](/wcag/2.4.1)
+- [WCAG-succescriterium 2.4.3 Focus volgorde](/wcag/2.4.3)
+- [WCAG-succescriterium 2.4.7 Focus zichtbaar](/wcag/2.4.7)
+- [WCAG-succescriterium 2.4.13 Focusweergave](/wcag/2.4.13)
+- [WCAG-succescriterium 3.2.1 Bij focus](/wcag/3.2.1)
+
 ## Bronnen
+
+- Smashing Magazine zet uiteen welke HTML en CSS praktisch is bij gebruik van het toetsenbord: [<span lang="en">A Guide To Keyboard Accessibility: HTML And CSS</span>](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/)
+- WebAIM (Web Accessibility In Mind) legt uit hoe `tabindex` gebruikt moet worden: [<span lang="en">Tabindex: 0 and -1 Values</span>](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one)
+- Toegankelijkheidsbureau TPGi schrijft over mogelijke problemen die bezoekers met een toetsenbord tegenkomen: [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/)
+- De W3C heeft een uitgebreid artikel over wat er allemaal nodig is voor het toetsenbord: [<span lang="en">Developing a Keyboard Interface</span>](https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/)
+- De W3C geeft aan waar op te letten bij het maken van maatwerk componenten: [<span lang="en">Custom Control Accessible Development Checklist</span>](https://www.w3.org/TR/using-aria/#checklist)
 
 ### Officiële WCAG criteria
 
