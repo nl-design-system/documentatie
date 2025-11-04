@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.2 Geen toetsenbordval
 pagination_label: WCAG-succescriterium 2.1.2 Geen toetsenbordval
-description: Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.
+description: Een element dat je kan bereiken met het toetsenbord, moet je ook weer kunnen verlaten met het toetsenbord.
 slug: 2.1.2
 keywords:
   - WCAG
@@ -20,8 +20,7 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.1.2-summary.md";
@@ -30,32 +29,15 @@ import Summary from "./summaries/_2.1.2-summary.md";
   {"WCAG-succescriterium 2.1.2 Geen toetsenbordval"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Bezoekers die een toetsenbord gebruiken komen niet vast te zitten.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Zorg ervoor dat bezoekers altijd weg kunnen navigeren van onderdelen.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Mensen die leunen op toetsenbordgebruik kunnen vaak niet op een andere manier navigeren.
-    </dd>
-  </div>
-</dl>
+<Summary />
 
 ## Uitleg
 
-<Summary />
-
-[WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1) vereist dat alle interactieve onderdelen van een pagina, waar je acties mee uit kan voeren, te bedienen zijn met een toetsenbord. Dit succescriterium vereist dat de bezoeker een component niet alleen kan bereiken, maar ook verder of terug kan navigeren.
+Interactieve elementen mogen navigatie met het toetsenbord niet tegenhouden.
 
 Als de focus niet te verplaatsen is met standaardtoetsen zoals escape-, pijltjes- of tabtoetsen, geef dan aan hoe het wel kan. Een onderdeel wat wel te bereiken is maar waar men niet meer weg kan, wordt ook toetsenbordval genoemd.
+
+### Voordelen
 
 ## Hoe te testen
 
@@ -64,35 +46,39 @@ Als de focus niet te verplaatsen is met standaardtoetsen zoals escape-, pijltjes
 
 Als je niet de hele pagina doorkan met standaardnavigatie én er zijn geen alternatieve instructies, dan faalt dit criterium.
 
-## Tips
+      Mensen die leunen op toetsenbordgebruik kunnen vaak niet op een andere manier navigeren.
+
+## Veelgemaakte fouten
 
 - Beïnvloed zo min mogelijk de focus van de gebruiker met JavaScript, het `autofocus`-attribuut of het `tabindex`-attribuut. Door er niet aan te komen kun je het ook niet slechter maken.
 
-## Gerelateerde NL Design System-richtlijnen
+## Gerelateerde NL Design System-richtlijnen en WCAG criteria
+
+### NL Design System-richtlijnen
 
 - Formulieren - Toetsenbord: [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/).
 - Formulieren - Toetsenbord: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
 - Formulieren - Wanneer gebruik je welk formulierelement: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
 
-## Gebruikersonderzoek
+### WCAG richtlijnen
 
-<CTAGebruikersonderzoek />
+## Bronnen
 
-## W3C referenties
+### Officiële WCAG criteria
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.1.2 No Keyboard Trap</span>](https://www.w3.org/TR/WCAG22/#content-on-hover-or-focus).
 - Nederlandse vertaling van het WCAG-succescriterium: [2.1.2 Geen toetsenbordval](https://www.w3.org/Translations/WCAG22-nl/#content-on-hover-or-focus).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.1.2 No Keyboard Trap</span>](https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.1.2 No Keyboard Trap</span>](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html).
 
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+## Wat is verplicht?
 
-## Help richtlijn verbeteren
+<Markdown omitH1>
+  <Disclaimer />
+</Markdown>
 
-<Markdown omitH1 headinglevel={3}>
+## Aanvullingen of opmerkingen?
+
+<Markdown omitH1>
   <WCAGFooterInfo />
 </Markdown>
