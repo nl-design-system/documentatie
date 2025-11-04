@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor dat de het doel (of de naam) en instructies bij een invoerveld beschikbaar zijn en blijven.
+Zorg ervoor dat het doel (of de naam) en instructies bij een invoerveld beschikbaar zijn en blijven.
 
 Maak daarom nooit alléén gebruik van een placeholdertekst voor de naam of instructies van een invoerveld. Plaats de instructies ook niet in een tooltip, maar boven of onder het veld en koppel het aan het invoerveld met `aria-describedby`.
 
