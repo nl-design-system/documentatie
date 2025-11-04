@@ -5,8 +5,8 @@ Zorg voor voldoende kleurcontrast tussen de kleuren van componenten die visueel 
 Kleuren die van toepassing zijn bij de Text input zijn bijvoorbeeld:
 
 - De rand van de Text input, zodat de bezoeker weet waar het veld is.
-- De kleuren van een icoon als label, zoals een vergrootglas.
-- Informatieve iconen in de Text input, zoals een vinkje om aan te geven dat de invoer geldig is.
+- De kleuren van een icon als label, zoals een vergrootglas.
+- Informatieve icons in de Text input, zoals een vinkje om aan te geven dat de invoer geldig is.
 - De focusrand om de Text input.
 
 NL Design System richtlijnen:

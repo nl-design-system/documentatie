@@ -10,6 +10,7 @@ Bijvoorbeeld:
 
 - Een icon van een slot in een inlogformulier vraagt om een wachtwoord.
 - Een icon van een vergrootglas in een zoekfunctie vraagt om een zoekterm.
+- Een icon van een telefoonhoorn in een contactformulier vraagt om een telefoonnummer.
 
 NL Design System richtlijnen:
 
