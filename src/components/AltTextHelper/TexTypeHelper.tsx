@@ -108,7 +108,8 @@ export default function TextTypeHelper({ changeOption, changeGroup, activeGroup 
                 De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis
               </span>
               <br />
-              Bijvoorbeeld: een watermerk of tekst in een screenshot.
+              Bijvoorbeeld een watermerk, tekst in een screenshot, een afbeelding van een verpakking, cd, lp of stapel
+              boeken.
             </div>
           </FormLabel>
         </FormField>
