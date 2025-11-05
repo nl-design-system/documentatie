@@ -13,13 +13,7 @@ export const Texts = [
     heading: 'Als de afbeelding alleen decoratief is',
     paragraph: `Laat dan het veld voor alternatieve tekst leeg. Zo wordt de afbeelding genegeerd door screenreaders.<br />
     <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/#overwegingen">Belangrijke overwegingen bij het bepalen of een afbeelding decoratief is</a>`,
-  },
-  {
-    id: 'image-type-description-available-help',
-    group: 'image-type',
-    heading: 'Als er al een beschrijving boven, onder of naast de afbeelding staat',
-    paragraph: `Laat dan het veld voor alternatieve tekst leeg. Zo wordt de afbeelding genegeerd door screenreaders.<br />
-    <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/#overwegingen">Belangrijke overwegingen bij het bepalen of een afbeelding decoratief is</a>`,
+    additionals: ['image-clickable'],
   },
   {
     id: 'context-complex-image-help',
@@ -36,24 +30,28 @@ export const Texts = [
     paragraph: `Geef dan in het veld voor alternatieve tekst een korte beschrijving van wat er te zien is.
       <br/>
       <span class="bold-text">Bijvoorbeeld:</span> “Twee mensen in gesprek” of “Logo van gemeente X”.`,
+    additionals: ['description-already-present', 'image-clickable'],
   },
   {
     id: 'text-near-image-help',
     group: 'text-type',
     heading: 'Als dezelfde tekst al naast of vlak bij de afbeelding staat',
     paragraph: `Laat dan het veld voor alternatieve tekst leeg. De informatie is al op een andere plek op de pagina beschikbaar.`,
+    additionals: ['image-clickable'],
   },
   {
     id: 'text-visual-effect-help',
     group: 'text-type',
     heading: 'Als de tekst in de afbeelding niets toevoegt aan de boodschap',
     paragraph: `Dan is er geen alternatieve tekst nodig. Laat het veld voor alternatieve tekst leeg.`,
+    additionals: ['image-clickable'],
   },
   {
     id: 'text-only-image-help',
     group: 'text-type',
     heading: 'Als de tekst in de afbeelding niet op een andere plek op de pagina voorkomt',
     paragraph: `Schrijf dan de tekst over in het veld voor alternatieve tekst. Zo is de informatie ook beschikbaar voor mensen die de afbeelding niet kunnen zien.`,
+    additionals: ['image-clickable'],
   },
   {
     id: 'text-has-function-help',
@@ -70,5 +68,17 @@ export const Texts = [
     paragraph: `Voeg dan een uitgebreide beschrijving toe naast of onder de afbeelding. Zet in het veld voor alternatieve tekst een korte samenvatting, met een verwijzing naar de plek waar de langere beschrijving staat.
     <br/>
     <span class="bold-text">Bijvoorbeeld:</span> “Samenvatting van de grafiek. Uitgebreide uitleg staat onder de afbeelding.”`,
+  },
+  {
+    id: 'description-already-present',
+    group: 'additional-helper',
+    heading: 'Als de beschrijving al naast, boven of onder de afbeelding staat',
+    paragraph: `Dan is een alt-tekst niet nodig. Laat het veld leeg: je herhaalt anders alleen wat al gezegd is.`,
+  },
+  {
+    id: 'image-clickable',
+    group: 'additional-helper',
+    heading: 'Als de afbeelding óók klikbaar is',
+    paragraph: `Voeg dan na de beschrijving van de afbeelding nog een korte duidelijke beschrijving toe van wat er gebeurt als iemand erop klikt.`,
   },
 ];
