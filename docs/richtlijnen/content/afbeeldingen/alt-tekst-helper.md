@@ -27,6 +27,6 @@ import AltTextHelper from "@site/src/components/AltTextHelper/AltTextHelper";
 
 # Alt-tekst keuzehulp
 
-Beantwoord een of twee vragen over je afbeelding en krijg direct advies. Zo weet je precies of je een alt-tekst moet toevoegen, en wat je het beste kunt schrijven. Dat helpt iedereen om je content te begrijpen.
+Beantwoord een paar vragen over je afbeelding en krijg direct advies. Zo weet je precies of je een alt-tekst moet toevoegen, en wat je het beste kunt schrijven. Dat helpt iedereen om je content te begrijpen.
 
 <AltTextHelper />
