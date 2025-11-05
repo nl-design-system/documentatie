@@ -62,8 +62,8 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
             <div>
               <span className="bold-text">De afbeelding helpt om de tekst op de pagina beter te begrijpen.</span>
               <br />
-              Dit heet een informatieve afbeelding. Voorbeelden hiervan zijn een grafiek, een illustratie of een
-              stappenplan.
+              Dit heet een informatieve afbeelding. Bijvoorbeeld een grafiek, een schema, een stappenplan, een
+              geografische kaart of een illustratie.
             </div>
           </FormLabel>
         </FormField>
@@ -88,7 +88,7 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
                 De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien.
               </span>
               <br />
-              Dit heet een decoratieve afbeelding, bijvoorbeeld een sfeerbeeld zonder betekenis.
+              Dit heet een decoratieve afbeelding. Bijvoorbeeld een sfeerbeeld zonder betekenis.
             </div>
           </FormLabel>
         </FormField>
@@ -113,7 +113,32 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
                 De afbeelding bestaat hoofdzakelijk uit tekst die bedoeld is om gelezen te worden
               </span>
               <br />
-              Bijvoorbeeld: banners, afbeeldingen van flyers of de verkoopprijs van een product.
+              Bijvoorbeeld banners of afbeeldingen van flyers of aanbiedingen bij een webwinkel.
+            </div>
+          </FormLabel>
+        </FormField>
+        <FormField type="radio">
+          <FormLabel
+            className="utrecht-form-field__label utrecht-form-field__label--radio"
+            htmlFor="image-type-description-available"
+            type="radio"
+          >
+            <RadioButton
+              className="utrecht-form-field__input"
+              id="image-type-description-available"
+              name={groupName}
+              value="image-type-description-available-help"
+              defaultChecked={selectedOption === 'image-type-description-available-help'}
+              onChange={(e) => {
+                setSelectedOption(e.target.value);
+              }}
+            />
+            <div>
+              <span className="bold-text">
+                De beschrijving van de afbeelding staat er al vlak boven, onder of naast.
+              </span>
+              <br />
+              Bijvoorbeeld de naam van een persoon staat al onder een portret of pasfoto.
             </div>
           </FormLabel>
         </FormField>

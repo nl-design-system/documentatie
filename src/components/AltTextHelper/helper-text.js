@@ -15,6 +15,13 @@ export const Texts = [
     <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/#overwegingen">Belangrijke overwegingen bij het bepalen of een afbeelding decoratief is</a>`,
   },
   {
+    id: 'image-type-description-available-help',
+    group: 'image-type',
+    heading: 'Als er al een beschrijving boven, onder of naast de afbeelding staat',
+    paragraph: `Laat dan het veld voor alternatieve tekst leeg. Zo wordt de afbeelding genegeerd door screenreaders.<br />
+    <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/#overwegingen">Belangrijke overwegingen bij het bepalen of een afbeelding decoratief is</a>`,
+  },
+  {
     id: 'context-complex-image-help',
     group: 'context-type',
     heading: 'Als de afbeelding veel informatie bevat die niet in één korte beschrijving past',
