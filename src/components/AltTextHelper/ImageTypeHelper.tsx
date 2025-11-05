@@ -42,7 +42,13 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
         tabIndex={-1}
       >
         <FieldsetLegend>Wat is het doel van de afbeelding?</FieldsetLegend>
-        <FormFieldDescription id="image-type-group-description">Kies de optie die het beste past:</FormFieldDescription>
+        <FormFieldDescription id="image-type-group-description">
+          Soms doet een afbeelding meer dan één ding.
+          <br />
+          Bijvoorbeeld: een kaart waarop je kunt klikken, of een illustratie die ook een link is.
+          <br />
+          Kies wat het belangrijkste is dat de afbeelding laat zien.
+        </FormFieldDescription>
         <FormField type="radio">
           <FormLabel
             className="utrecht-form-field__label utrecht-form-field__label--radio"
@@ -113,32 +119,7 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
                 De afbeelding bestaat hoofdzakelijk uit tekst die bedoeld is om gelezen te worden
               </span>
               <br />
-              Bijvoorbeeld banners of afbeeldingen van flyers of aanbiedingen bij een webwinkel.
-            </div>
-          </FormLabel>
-        </FormField>
-        <FormField type="radio">
-          <FormLabel
-            className="utrecht-form-field__label utrecht-form-field__label--radio"
-            htmlFor="image-type-description-available"
-            type="radio"
-          >
-            <RadioButton
-              className="utrecht-form-field__input"
-              id="image-type-description-available"
-              name={groupName}
-              value="image-type-description-available-help"
-              defaultChecked={selectedOption === 'image-type-description-available-help'}
-              onChange={(e) => {
-                setSelectedOption(e.target.value);
-              }}
-            />
-            <div>
-              <span className="bold-text">
-                De beschrijving van de afbeelding staat er al vlak boven, onder of naast.
-              </span>
-              <br />
-              Bijvoorbeeld de naam van een persoon staat al onder een portret of pasfoto.
+              Bijvoorbeeld banners of afbeeldingen van flyers, acties of aankondigingen.
             </div>
           </FormLabel>
         </FormField>
@@ -159,7 +140,7 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
               }}
             />
             <div>
-              <span className="bold-text">De afbeelding wordt gebruikt als een link of knop.</span>
+              <span className="bold-text">De afbeelding wordt alleen gebruikt als een link of knop.</span>
               <br />
               Dit heet een functionele afbeelding.
             </div>
