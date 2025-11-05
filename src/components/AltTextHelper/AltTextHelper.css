@@ -1,13 +1,13 @@
 .nlds-alt-text-helper .utrecht-form-fieldset__fieldset,
-.nlds-alt-text-helper .utrecht-form-fieldset__fieldset > .utrecht-form-fieldset__legend,
 .nlds-alt-text-helper .utrecht-form-fieldset__fieldset > .utrecht-form-field-description,
-.nlds-alt-text-helper .utrecht-spotlight-section {
+.nlds-alt-text-helper .utrecht-spotlight-section,
+.nlds-alt-text-helper .utrecht- {
   margin-block-end: var(--ifm-paragraph-margin-bottom);
 }
 
 .nlds-alt-text-helper .utrecht-form-fieldset__fieldset > .utrecht-form-fieldset__legend,
 .nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-2 {
-  font-size: var(--utrecht-heading-3-font-size);
+  font-size: var(--utrecht-heading-2-font-size);
 }
 
 .nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-2 {
