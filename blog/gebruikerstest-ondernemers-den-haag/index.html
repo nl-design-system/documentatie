@@ -32,7 +32,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.3cfea2aa.css" />
   <script src="/assets/js/runtime~main.b141a044.js" defer="defer"></script>
-  <script src="/assets/js/main.446e4a01.js" defer="defer"></script>
+  <script src="/assets/js/main.cff2dd22.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -55,34 +55,18 @@
    })(),
     (function () {
      try {
-      const a = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of a)
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
        if (t.startsWith('docusaurus-data-')) {
-        var n = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(n, e);
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}
-    })(),
-    document.documentElement.setAttribute(
-     'data-announcement-bar-initially-dismissed',
-     (function () {
-      try {
-       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
-      } catch (t) {}
-      return !1;
-     })(),
-    );
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-page-layout ma-theme">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_W6BK" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
-    <div class="announcementBar_Z2CV" style="background-color: var(--basis-color-accent-1-inverse-bg-subtle); color: var(--basis-color-accent-1-inverse-color-default)" role="banner">
-     <div class="content_sx25 announcementBarContent_k4U2">
-      <div class="announcementbar-content">
-       <span class="utrecht-icon"><img alt="" src="/svg/tabler-icon_mega.svg" /></span> 27 - 30 oktober is het weer Design Systems Week <span class="utrecht-icon"><img src="/svg/tabler-icon_point-right.svg" alt="" /></span> <a href="/events/design-systems-week-2025/programma" class="utrecht-link utrecht-link--html-a">Bekijk het programma</a>
-      </div>
-     </div>
-    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbarHideable_Zt5y">
      <div class="navbar__inner">
       <div class="navbar__items">
