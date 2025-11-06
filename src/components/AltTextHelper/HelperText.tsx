@@ -4,6 +4,9 @@ import {
   Paragraph,
   SpotlightSection,
   Button,
+  UnorderedList,
+  UnorderedListItem,
+  PreHeading,
 } from '@utrecht/component-library-react/dist/css-module';
 import { Texts } from './helper-text';
 
@@ -31,10 +34,19 @@ export default function HelperText({ id, changeOption, changeGroup }: HelperText
 
     return (
       <>
+        <PreHeading>Stap 3 van 3</PreHeading>
+
         <SpotlightSection type="info" role="alert" ref={autoFocus} tabIndex={-1}>
           <Heading2>{helper.heading}</Heading2>
           <Paragraph dangerouslySetInnerHTML={{ __html: helper.paragraph }}></Paragraph>
-          {helper.additionals && !!helper.additionals.length && <AdditionalHelpers helpers={helper.additionals} />}
+          {helper.additionals && !!helper.additionals.length && (
+            <>
+              <Heading3>Houd ook rekening met het volgende</Heading3>
+              <UnorderedList>
+                <AdditionalHelpers helpers={helper.additionals} />
+              </UnorderedList>
+            </>
+          )}
         </SpotlightSection>
 
         <div className="button-bar">
@@ -51,15 +63,17 @@ interface AdditionalHelpersProps {
   helpers;
 }
 
-export function AdditionalHelpers({ helpers }: AdditionalHelpersProps) {
-  return helpers.map((helper) => {
-    const item = currentHelperText(helper);
+export const AdditionalHelpers = ({ helpers }: AdditionalHelpersProps) =>
+  helpers.map((helper, i) => {
+    const text = currentHelperText(helper);
 
     return (
-      <>
-        <Heading3>{item.heading}</Heading3>
-        <Paragraph dangerouslySetInnerHTML={{ __html: item.paragraph }}></Paragraph>
-      </>
+      <UnorderedListItem key={i}>
+        <Paragraph>
+          <span className="bold-text">{text.heading}</span>
+          <br />
+          {text.paragraph}
+        </Paragraph>
+      </UnorderedListItem>
     );
   });
-}
