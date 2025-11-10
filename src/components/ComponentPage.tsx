@@ -29,14 +29,21 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
   const relayOrderedProjects =
     relayProjects && relayProjectIds.map((id) => relayProjects.find((project) => project.id === id)).filter(Boolean);
 
+  // TODO: https://github.com/nl-design-system/kernteam/issues/1601 om Candidate - New te hernoemen naar Candidate, en Candidate - oud te archiveren. Dit doen we wanneer Yolijn terug is, to be safe.
+  const getProjectTitle = (project) =>
+    ['Candidate - New', 'Candidate - Oud'].includes(project.title) ? 'Candidate' : project.title;
+
   return (
     component && (
       <AccordionProvider
         sections={relayOrderedProjects.map((project) => ({
-          className: clsx('definition-of-done', project && `definition-of-done--${toKebabCase(project.title)}`),
+          className: clsx(
+            'definition-of-done',
+            project && `definition-of-done--${toKebabCase(getProjectTitle(project))}`,
+          ),
           headingLevel: headingLevel,
           expanded: false,
-          label: project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : '',
+          label: project ? `${getProjectTitle(project)} - ${project.progress.value} van ${project.progress.max}` : '',
           body: project && (
             <>
               <TaskList>
@@ -52,7 +59,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
               </TaskList>
               <Paragraph>
                 <Link href={`${project.url}?filterQuery=${component.title}`}>
-                  {project.title} projectbord op GitHub
+                  {getProjectTitle(project)} projectbord op GitHub
                 </Link>
               </Paragraph>
             </>
