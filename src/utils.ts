@@ -48,6 +48,7 @@ export type PROJECT_ID =
   | 'AMSTERDAM'
   | 'RVO'
   | 'LOGIUS'
+  | 'RIJKSHUISSTIJL_COMMUNITY'
   | 'DEN_HAAG';
 
 export interface ProjectTask {
