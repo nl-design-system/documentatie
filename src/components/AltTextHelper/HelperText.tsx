@@ -38,7 +38,7 @@ export default function HelperText({ id, changeOption, changeGroup }: HelperText
 
         <SpotlightSection type="info" role="alert" ref={autoFocus} tabIndex={-1}>
           <Heading2>{helper.heading}</Heading2>
-          <Paragraph dangerouslySetInnerHTML={{ __html: helper.paragraph }}></Paragraph>
+          <div dangerouslySetInnerHTML={{ __html: helper.content }}></div>
           {helper.additionals && !!helper.additionals.length && (
             <>
               <Heading3>Houd ook rekening met het volgende</Heading3>
@@ -72,7 +72,7 @@ export const AdditionalHelpers = ({ helpers }: AdditionalHelpersProps) =>
         <Paragraph>
           <span className="bold-text">{text.heading}</span>
           <br />
-          {text.paragraph}
+          {text.content}
         </Paragraph>
       </UnorderedListItem>
     );
