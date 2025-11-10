@@ -1,4 +1,4 @@
-/*! For license information please see dfb098ef.16e89e80.js.LICENSE.txt */
+/*! For license information please see dfb098ef.8bb827d8.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [87780],
@@ -10,7 +10,7 @@
     i = t(97233);
    const r = { title: 'Zelf componenten maken \xb7 Designer \xb7 Handboek', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Zelf componenten maken', sidebar_position: 4, pagination_label: 'Zelf componenten maken', description: 'Informatie voor designers over hoe je zelf componenten kan maken in Figma met design tokens.', slug: '/handboek/designer/zelf-componenten-maken', keywords: ['index', 'designer', 'meedoen', 'componenten', 'figma', 'design tokens'] },
     l = 'Zelf componenten maken',
-    s = { id: 'handboek/designer/zelf-componenten-maken', title: 'Zelf componenten maken \xb7 Designer \xb7 Handboek', description: 'Informatie voor designers over hoe je zelf componenten kan maken in Figma met design tokens.', source: '@site/docs/handboek/designer/zelf-componenten-maken.mdx', sourceDirName: 'handboek/designer', slug: '/handboek/designer/zelf-componenten-maken', permalink: '/handboek/designer/zelf-componenten-maken', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/designer/zelf-componenten-maken.mdx', tags: [], version: 'current', sidebarPosition: 4, frontMatter: { title: 'Zelf componenten maken \xb7 Designer \xb7 Handboek', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Zelf componenten maken', sidebar_position: 4, pagination_label: 'Zelf componenten maken', description: 'Informatie voor designers over hoe je zelf componenten kan maken in Figma met design tokens.', slug: '/handboek/designer/zelf-componenten-maken', keywords: ['index', 'designer', 'meedoen', 'componenten', 'figma', 'design tokens'] }, sidebar: 'handboek', previous: { title: 'Zelf een thema maken', permalink: '/handboek/designer/zelf-thema-maken' }, next: { title: 'Voor developers', permalink: '/handboek/developer/overzicht' } },
+    s = { id: 'handboek/designer/zelf-componenten-maken', title: 'Zelf componenten maken \xb7 Designer \xb7 Handboek', description: 'Informatie voor designers over hoe je zelf componenten kan maken in Figma met design tokens.', source: '@site/docs/handboek/designer/zelf-componenten-maken.mdx', sourceDirName: 'handboek/designer', slug: '/handboek/designer/zelf-componenten-maken', permalink: '/handboek/designer/zelf-componenten-maken', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/designer/zelf-componenten-maken.mdx', tags: [], version: 'current', sidebarPosition: 4, frontMatter: { title: 'Zelf componenten maken \xb7 Designer \xb7 Handboek', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Zelf componenten maken', sidebar_position: 4, pagination_label: 'Zelf componenten maken', description: 'Informatie voor designers over hoe je zelf componenten kan maken in Figma met design tokens.', slug: '/handboek/designer/zelf-componenten-maken', keywords: ['index', 'designer', 'meedoen', 'componenten', 'figma', 'design tokens'] }, sidebar: 'handboek', previous: { title: 'Zelf een thema maken', permalink: '/handboek/designer/zelf-thema-maken' }, next: { title: 'Figma-bestanden overzicht', permalink: '/figma' } },
     c = {},
     d = [
      { value: 'Demo Sticker maken', id: 'demo-sticker-maken', level: 2 },
@@ -137,21 +137,21 @@
      I = e.iframeClass || '',
      S = e.playerClass || 'lty-playbtn',
      Z = e.wrapperClass || 'yt-lite',
-     H = e.onIframeAdded || function () {},
-     F = e.rel ? 'prefetch' : 'preload',
+     F = e.onIframeAdded || function () {},
+     H = e.rel ? 'prefetch' : 'preload',
      N = e.containerElement || 'article',
      P = e.style || {};
     return (
      o.useEffect(
       function () {
-       c && H();
+       c && F();
       },
       [c],
      ),
      o.createElement(
       o.Fragment,
       null,
-      o.createElement('link', { rel: F, href: z, as: 'image' }),
+      o.createElement('link', { rel: H, href: z, as: 'image' }),
       o.createElement(o.Fragment, null, r && o.createElement(o.Fragment, null, o.createElement('link', { rel: 'preconnect', href: b }), o.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), _ && o.createElement(o.Fragment, null, o.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), o.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
       o.createElement(
        N,
