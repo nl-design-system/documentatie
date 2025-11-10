@@ -190,8 +190,8 @@ importers:
         specifier: 3.3.4
         version: 3.3.4
       '@nl-design-system/component-progress':
-        specifier: 1.0.1-alpha.136
-        version: 1.0.1-alpha.136
+        specifier: 1.0.1-alpha.141
+        version: 1.0.1-alpha.141
       '@nl-design-system/eslint-config':
         specifier: 1.0.0
         version: 1.0.0(eslint@9.20.1(jiti@1.21.0))(typescript@5.7.3)
@@ -2176,8 +2176,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4':
     resolution: {integrity: sha512-POlUBxviNooS6NpzyH6v3MJ+WwQEqMYj3VcJcX4oDRdRsxoYgsq4GDm3C55IhJ12nPKnd/F5DD+RBomviSkgxg==}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.136':
-    resolution: {integrity: sha512-uW+NpaiMpZmgPhcCoKGXNsy0BRH/aFrVFTyBrfhirsFie8wY9nFN3gkw4VcleMZrKXGYSy1pSfsBGD7BxtOBMA==}
+  '@nl-design-system/component-progress@1.0.1-alpha.141':
+    resolution: {integrity: sha512-cJoELisbdDZszHtWk7jRdiO/419ZT3hWcK1gs8chFBUKkvJyr3YQhKqpnLZBUexlLqPWc1AG3Of4//uHxVBr/Q==}
 
   '@nl-design-system/eslint-config@1.0.0':
     resolution: {integrity: sha512-ypsu7zBN26tVLdnbcK2+He2l+QK33qNtHGlBY0CY5x8wWkCQULSH+10E+rUIAf+kBHKdQkgr5+W60qyj97a66Q==}
@@ -11430,7 +11430,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.3.4': {}
 
-  '@nl-design-system/component-progress@1.0.1-alpha.136': {}
+  '@nl-design-system/component-progress@1.0.1-alpha.141': {}
 
   '@nl-design-system/eslint-config@1.0.0(eslint@9.20.1(jiti@1.21.0))(typescript@5.7.3)':
     dependencies:
