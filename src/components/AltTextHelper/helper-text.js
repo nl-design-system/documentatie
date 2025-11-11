@@ -14,13 +14,15 @@ export const Texts = [
     heading: 'Als de afbeelding alleen decoratief is',
     content: `
     <p>Laat dan het veld voor alternatieve tekst leeg. Zo wordt de afbeelding genegeerd door screenreaders.</p>
-    <p>Weet je niet zeker of de afbeelding echt decoratief is? Bekijk dan de <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/#overwegingen">overwegingen bij decoratieve afbeeldingen</a>.</p>
-    <h3>Voorbeelden van decoratieve afbeeldingen</h3>
+    <p>Weet je niet zeker of de afbeelding echt decoratief is? Vragen die je jezelf kunt stellen als je een decoratieve afbeelding plaatst:</p>
     <ul>
-      <li>een afbeelding in de achtergrond van een website</li>
-      <li>een icoon naast een tekst met dezelfde informatie</li>
-      <li>een sfeerbeeld zonder betekenis</li>
-    </ul>`,
+      <li>Waarom wil ik deze afbeelding plaatsen?</li>
+      <li>Als ik de afbeelding weglaat, welke informatie gaat er dan verloren?</li>
+      <li>Als ik deze afbeelding niét zou kunnen gebruiken, zou ik dan een vervangende afbeelding zoeken?</li>
+    </ul>
+    <h3 class="utrecht-heading-3">Context is belangrijk</h3>
+    <p>De context bepaalt of een afbeelding decoratief of informatief is, en wat er precies in de alt-tekst moet staan. Bijvoorbeeld: Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven, maar informatief in een artikel over verschillende koeienrassen.</p>
+    `,
     additionals: ['image-clickable'],
   },
   {
