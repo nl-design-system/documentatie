@@ -30,17 +30,27 @@ import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/\_f
 
 # Schrijf de juiste alt-tekst bij elk type afbeelding
 
-Afbeeldingen komen in veel vormen: foto’s, iconen, grafieken, decoratie, infographics en meer. Op deze pagina zie je per type afbeelding wat een goede alt-tekst is – en wanneer je die juist weglaat.
+Afbeeldingen komen in veel vormen: foto’s, iconen, grafieken, decoraties, infographics en meer. Op deze pagina zie je voorbeelden van verschillende typen afbeeldingen, met uitleg over wanneer je wel of geen alt-tekst toevoegt.
 
-Deze uitleg sluit aan op de algemene richtlijnen over afbeeldingen en helpt je om per situatie de juiste keuze te maken. Je vindt hier voorbeelden, korte uitleg en praktische tips.
+Deze uitleg sluit aan op de algemene richtlijnen over afbeeldingen. Je leest hier per situatie wat de juiste keuze is en krijgt voorbeelden en praktische tips.
 
-**N.B.** Voorbeeldingen ook in context.
+## Context is belangrijk
 
-[Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page)
+De juiste alt-tekst hangt af van de context. Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven, maar informatief in een artikel over verschillende koeienrassen.
+
+Op een gemeentelijke website kan een foto van het gemeentehuis volstaan met “gemeentehuis van Amersfoort” als het artikel over de organisatie gaat. Gaat de tekst over duurzame verbouwingen, beschrijf dan in de alt-tekst bijvoorbeeld de zonnepanelen op het dak.
+
+De context bepaalt dus of een afbeelding decoratief of informatief is, en wat er precies in de alt-tekst moet staan.
+
+<!-- [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) -->
 
 ## Informatieve afbeelding
 
-Een informatieve afbeelding ondersteunt of verduidelijkt de inhoud van de pagina. Denk aan een illustratie bij een stappenplan, een kaartje bij een routebeschrijving of een foto die iets uitlegt.
+Een informatieve afbeelding ondersteunt of verduidelijkt de inhoud van de pagina. Dat kan een eenvoudige afbeelding zijn, zoals een foto of illustratie, of een complexe, zoals een grafiek of kaart.
+
+### Alt-tekst bij een eenvoudige informatieve afbeelding
+
+Beschrijf in de alt-tekst kort wat er te zien is en wat relevant is voor de inhoud. Laat weg wat niet belangrijk is om de boodschap te begrijpen.
 
 <Guideline appearance="do" title="Beschrijf kort wat er op de afbeelding te zien is en waarom die relevant is voor de inhoud.">
   <Canvas language="html">
@@ -53,6 +63,8 @@ Een informatieve afbeelding ondersteunt of verduidelijkt de inhoud van de pagina
     )}
   </Canvas>
 </Guideline>
+
+Wil je meer uitleg geven bij de afbeelding? Voeg dan een onderschrift toe. Zet niet te veel tekst in de alt-tekst.
 
 <Guideline appearance="do" title="Een onderschrift gebruiken voor een langere beschrijving">
   <Canvas language="html">
@@ -67,52 +79,27 @@ Een informatieve afbeelding ondersteunt of verduidelijkt de inhoud van de pagina
   </Canvas>
 </Guideline>
 
-### Complexe afbeelding (zoals een grafiek of infographic)
+### Alt-tekst bij een complexe informatieve afbeelding
 
-Deze afbeeldingen bevatten veel informatie in één beeld, zoals cijfers, verbanden of meerdere onderdelen die samen betekenis geven. Denk aan staafdiagrammen, kaartvisualisaties of stappen in een proces.
+Bevat de afbeelding veel informatie, zoals cijfers, verbanden of meerdere onderdelen die samen betekenis geven? Geef dan een korte samenvatting in de alt-tekst en zet de volledige uitleg naast of onder de afbeelding.
 
 <Guideline appearance="do" title="Schrijf een korte samenvatting in de alt-tekst. Voeg daarnaast altijd een uitgebreide beschrijving toe op de pagina zelf. Verwijs in de alt-tekst naar die beschrijving.">
   <Canvas language="html">
     {() => (
       <>
-         <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Bar_graph_-_stock_price_statistics.jpg" alt="Staafdiagram met investering, verkoop en winst van de afgelopen vier jaar. Voor een uitgebreide beschrijving zie de tekst na deze afbeelding" />
-        <table>
-          <caption>Chart Title</caption>
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th>Invest</th>
-              <th>Sales</th>
-              <th>Profit</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Year 1</th>
-              <td>4.3</td>
-              <td>2.4</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <th>Year 2</th>
-              <td>4</td>
-              <td>3.5</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <th>Year 3</th>
-              <td>3.5</td>
-              <td>2.8</td>
-              <td>3.8</td>
-            </tr>
-            <tr>
-              <th>Year 4</th>
-              <td>4.5</td>
-              <td>2.8</td>
-              <td>5</td>
-            </tr>
-          </tbody>
-        </table>
+        <figure>
+          <img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen-content-afbeeldingen-voorbeeld-toegankelijkheidsladder.png" alt="Toegankelijkheidsladder. Voor een uitgebreide beschrijving zie de tekst na deze afbeelding" />
+          <figcaption>
+            Digitale toegankelijkheidsladder
+            <ol reversed>
+              <li>Vooruitstrevend - Digitale toegankelijkheid is volledig geintegreerd in de processen van de organisatie</li>
+              <li>Proactief - Digitale toegankelijkheid heeft hoge prioriteit en wordt continu verbeterd</li>
+              <li>Berekenend - De regels voor digitale toegankelijkheid worden belangrijk gevonden</li>
+              <li>Reactief - Het verandergedrag rondom digitale toegankelijkheid is ad hoc en van korte duur</li>
+              <li>Passief - Het nut van toegankelijkheidsmaatregelen wordt niet ingezien</li>
+            </ol>
+          </figcaption>
+        </figure>
       </>
     )}
   </Canvas>
@@ -168,6 +155,10 @@ Deze afbeeldingen bevatten veel informatie in één beeld, zoals cijfers, verban
 ## Decoratieve afbeelding
 
 Een decoratieve afbeelding is alleen bedoeld voor aankleding of sfeer. De afbeelding voegt geen betekenis toe aan de inhoud van de pagina en mag daarom genegeerd worden door hulptechnologie.
+
+Of een afbeelding echt decoratief is, hangt af van de context. Een foto die op de ene pagina puur sfeer toevoegt, kan op een andere pagina juist informatie overbrengen en dan wél een alt-tekst nodig hebben.
+
+[Voorbeelden invoegen]
 
 <Guideline appearance="do" title="Laat het alt-attribuut leeg. Zo wordt de afbeelding overgeslagen door schermlezers.">
   <Canvas language="html">
