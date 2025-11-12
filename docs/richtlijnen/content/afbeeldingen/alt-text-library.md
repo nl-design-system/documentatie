@@ -34,7 +34,7 @@ Afbeeldingen komen in veel vormen: foto’s, iconen, grafieken, decoraties, info
 
 Deze uitleg sluit aan op de algemene richtlijnen over afbeeldingen. Je leest hier per situatie wat de juiste keuze is en krijgt voorbeelden en praktische tips.
 
-## Context is belangrijk
+## Context is bepalend
 
 De juiste alt-tekst hangt af van de context. Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven, maar informatief in een artikel over verschillende koeienrassen.
 
@@ -158,7 +158,7 @@ Een decoratieve afbeelding is alleen bedoeld voor aankleding of sfeer. De afbeel
 
 Of een afbeelding echt decoratief is, hangt af van de context. Een foto die op de ene pagina puur sfeer toevoegt, kan op een andere pagina juist informatie overbrengen en dan wél een alt-tekst nodig hebben.
 
-[Voorbeelden invoegen]
+[Meer voorbeelden invoegen]
 
 <Guideline appearance="do" title="Laat het alt-attribuut leeg. Zo wordt de afbeelding overgeslagen door schermlezers.">
   <Canvas language="html">
@@ -172,7 +172,9 @@ Of een afbeelding echt decoratief is, hangt af van de context. Een foto die op d
 
 ## Functionele afbeelding
 
-Een functionele afbeelding is een afbeelding waarmee je iets kunt doen, zoals op klikken of waarmee een actie wordt aangegeven. Denk aan een pictogram op een knop, een afbeelding als link of een icoon met een waarschuwing.
+Een functionele afbeelding is een afbeelding waarmee je iets kunt doen, zoals op klikken, of waarmee een actie wordt aangegeven. Denk aan een pictogram op een knop, een afbeelding als link of een icoon met een waarschuwing.
+
+[Meer voorbeelden invoegen]
 
 <Guideline appearance="do" title="Beschrijf wat de functie is van de afbeelding, niet wat je ziet. De tekst moet duidelijk maken wat er gebeurt als iemand erop klikt of wat de bedoeling is van het pictogram.">
   <Canvas language="html">
@@ -184,22 +186,68 @@ Een functionele afbeelding is een afbeelding waarmee je iets kunt doen, zoals op
   </Canvas>
 </Guideline>
 
-## Met tekst
+## Afbeeldingen met tekst
 
-### Complex
+Tekst in een afbeelding wordt niet voorgelezen door een screenreader en kan niet worden aangepast aan de behoeften van de bezoeker. Gebruik daarom liever gewone tekst in HTML en bied altijd een tekstueel alternatief aan.
+
+Soms is een afbeelding van tekst wél gerechtvaardigd, bijvoorbeeld bij een logo of als de typografie of vormgeving onderdeel is van de boodschap. In dat geval is het belangrijk om de juiste alt-tekst toe te voegen.
+
+### Alt-tekst bij een afbeelding met tekst
+
+Als de tekst in de afbeelding belangrijk is voor de inhoud, zet die tekst dan ook in de alt-tekst. Gaat het om decoratieve tekst of stijl zonder betekenis, laat de alt-tekst dan leeg.
+
+<!-- Doen
+Beschrijf alleen de betekenis van de tekst, niet hoe de tekst eruitziet.
+
+Voorbeeld
+Afbeelding: Logo van de Rijksoverheid.
+Alt-tekst: Rijksoverheid. -->
+
+### Complexe afbeeldingen met tekst
+
+Een complexe afbeelding met tekst bevat meerdere onderdelen die samen betekenis geven, zoals labels in een grafiek, een infografiek of een routekaart met tekst.
+
+Doen
+• Geef in de alt-tekst een korte samenvatting van de inhoud.
+• Zet de volledige tekst en uitleg naast of onder de afbeelding.
+• Verwijs in de alt-tekst naar die tekstuele beschrijving.
+
+Voorbeeld
+Afbeelding: Infografiek over stappen van een subsidieaanvraag.
+Alt-tekst: Stappen van een subsidieaanvraag. De volledige beschrijving staat onder de afbeelding.
 
 ![..](https://upload.wikimedia.org/wikipedia/commons/c/c0/Independent-Turkic-States.png)
 1[..](https://upload.wikimedia.org/wikipedia/commons/2/22/GLAMwiki_Toolset_username_and_user_rights_diagram.png)
 ![..](https://upload.wikimedia.org/wikipedia/commons/5/57/Bar_graph_-_stock_price_statistics.jpg)
 
-### Functioneel
+### Functionele afbeeldingen met tekst
+
+Een functionele afbeelding met tekst is een afbeelding waarmee je iets kunt doen, bijvoorbeeld een knop, link of waarschuwing met tekst erin.
+
+Doen
+• Beschrijf in de alt-tekst de functie van de afbeelding, niet de tekst zelf.
+• Gebruik liever echte tekst op de knop of link in plaats van tekst in een afbeelding.
+
+Voorbeeld
+Afbeelding: Knop met het woord “Verstuur”.
+Alt-tekst: Formulier versturen.
 
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logo-secondary.svg)
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__amsterdam.svg)
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg)
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.png)
 
-### Visueel effect
+### Tekst zonder toegevoegde waarde
+
+Soms bevat een afbeelding tekst die alleen is toegevoegd als visueel element. Bijvoorbeeld decoratieve banners of achtergronden met woorden of cijfers die geen betekenis hebben.
+
+Doen
+• Laat de alt-tekst leeg (alt=""), zodat de afbeelding wordt genegeerd door schermlezers.
+• Controleer of de informatie die eventueel in de afbeelding staat, ook elders in tekst beschikbaar is.
+
+Voorbeeld
+Afbeelding: Banner met het woord “Welkom” in sierletters.
+Alt-tekst: (leeg laten)
 
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_lettertype.png)
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_typografie_regelafstand.png)
