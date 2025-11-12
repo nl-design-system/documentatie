@@ -150,13 +150,13 @@ export default function ImageTypeHelper({ changeOption, changeGroup, activeGroup
               </div>
             </FormLabel>
           </FormField>
-          <div className="button-bar flex-end">
+          <div className="nlds-button-bar flex-end">
             <Button
               appearance="primary-action-button"
               disabled={selectedOption === '' ? true : false}
               onClick={nextStep}
             >
-              Ga verder
+              Volgende stap
             </Button>
           </div>
         </Fieldset>

@@ -91,9 +91,9 @@ export default function ContextTypeHelper({ changeOption, changeGroup, activeGro
             </FormLabel>
           </FormField>
 
-          <div className="button-bar">
+          <div className="nlds-button-bar">
             <Button appearance="secondary-action-button" onClick={prevStep}>
-              Terug
+              Vorige stap
             </Button>
 
             <Button
