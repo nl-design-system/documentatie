@@ -1,12 +1,13 @@
 ---
-title: Program · Design Systems Week 2025
+title: Videos · Design Systems Week 2025
+description: Recordings of talks that are in English for Design Systems Week 2025.
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Program
-pagination_label: Design Systems Week 2025
-sidebar_position: 2
+sidebar_label: 2025
+sidebar_position: 1
+pagination_label: Videos 2025
 slug: /events/design-systems-week-2025/en/program
-image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2025.png
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png
 ---
 
 import {
@@ -16,28 +17,21 @@ import {
   Paragraph,
 } from "@utrecht/component-library-react/dist/css-module";
 import { IconChevronRight } from "@tabler/icons-react";
-import sessions from "../\_2025/sessions.json";
-import speakers from "../\_2025/speakers.json";
+import sessions from "../../\_2025/sessions.json";
+import speakers from "../../\_2025/speakers.json";
 import { DSWSession } from "@site/src/components/DSWSession";
 
-# Design Systems Week 2025 Program
+<div lang="en">
+
+# Design Systems Week 2025
 
 <Paragraph lead>
-  NL Design System is organising the Design Systems Week for the fifth time. It will feature a number of short talks
-  about the how and why of design systems. All online. From October 27 to October 30, we will cover subjects like
-  managing design systems, integrating accessibility, user research and code.
+  During Design Systems Week, you could follow several short talks each day for four days. Topics included TEDI,
+  Estonia’s new design system, accessibility, AI, user research, and practical tests for evaluating accessibility.
+  Luckily, we still have the videos!
 </Paragraph>
 
-<ActionGroup>
-  <ButtonLink href="/events/design-systems-week-2025/en/timetable" appearance="primary-action-button">
-    {"View the timetable"}
-    <IconChevronRight />
-  </ButtonLink>
-  <ButtonLink href="https://miro.com/app/board/uXjVLTpHyN8=/" appearance="secondary-action-button">
-    {"Use Miro"}
-    <IconChevronRight />
-  </ButtonLink>
-</ActionGroup>
+## Videos
 
 <DSWSession
   allSpeakers={speakers}
@@ -100,3 +94,5 @@ import { DSWSession } from "@site/src/components/DSWSession";
 </Paragraph>
 
 </DSWSession>
+
+</div>

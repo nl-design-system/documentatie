@@ -1,43 +1,26 @@
 ---
-title: Programma · Design Systems Week 2025
+title: Videos · Design Systems Week 2025
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Programma
-pagination_label: Programma
-sidebar_position: 2
+sidebar_label: 2025
+pagination_label: Design Systems Week 2025
+sidebar_position: 1
 slug: /events/design-systems-week-2025/programma
-image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png---
 ---
 
-import {
-  ButtonGroup as ActionGroup,
-  ButtonLink,
-  Paragraph,
-  Link,
-} from "@utrecht/component-library-react/dist/css-module";
-import { IconChevronRight } from "@tabler/icons-react";
-import sessions from "./\_2025/sessions.json";
-import speakers from "./\_2025/speakers.json";
+import { Link, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import sessions from "../\_2025/sessions.json";
+import speakers from "../\_2025/speakers.json";
 import { DSWSession } from "@site/src/components/DSWSession";
 
-# Programma Design Systems Week 2025
+# Design Systems Week 2025 terugkijken
 
 <Paragraph lead>
-  NL Design System organiseert in 2025 voor de 5e keer de Design Systems Week. Van **27 tot en met 30 oktober** zijn er
-  dagelijks meerdere korte sessies van diverse organisaties online te volgen over het **hoe en waarom van design
-  systems**.
+  Tijdens Design Systems Week kon je 4 dagen lang meerdere korte talks per dag volgen. Bijvoorbeeld over het TEDI:
+  Estlands nieuwe design system, toegankelijkheid, AI, gebruikersonderzoek en praktische tests voor het beoordelen van
+  toegankelijkheid. Gelukkig hebben we de video's nog!
 </Paragraph>
-
-<ActionGroup>
-  <ButtonLink href="/events/design-systems-week-2025/tijdschema" appearance="primary-action-button">
-    {"Bekijk het tijdschema"}
-    <IconChevronRight />
-  </ButtonLink>
-  <ButtonLink href="https://miro.com/app/board/uXjVLTpHyN8=/" appearance="secondary-action-button">
-    {"Gebruik Miro"}
-    <IconChevronRight />
-  </ButtonLink>
-</ActionGroup>
 
 <DSWSession
   allSpeakers={speakers}
