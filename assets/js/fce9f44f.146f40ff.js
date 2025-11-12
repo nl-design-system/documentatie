@@ -1,17 +1,17 @@
-/*! For license information please see fce9f44f.13c41cd7.js.LICENSE.txt */
+/*! For license information please see fce9f44f.146f40ff.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [5211],
  {
   5547: (e, n, t) => {
-   t.d(n, { ZP: () => s });
+   t.d(n, { ZP: () => o });
    var i = t(52676),
     l = t(40139);
    function r(e) {
     const n = { a: 'a', em: 'em', h2: 'h2', p: 'p', ...(0, l.a)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: 'over-deze-richtlijnen', children: 'Over deze richtlijnen' }), '\n', (0, i.jsxs)(n.p, { children: ['Deze richtlijnen worden onderhouden door NL Design System en zijn op dit moment in ', (0, i.jsx)(n.em, { children: 'beta' }), '.'] }), '\n', (0, i.jsxs)(n.p, { children: ['We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen?\n', (0, i.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Open een issue op GitHub' }), ' en deel je mening.'] })] });
    }
-   function s(e = {}) {
+   function o(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
    }
@@ -21,14 +21,14 @@
    var i = t(52676),
     l = t(40139),
     r = t(5547),
-    s = t(97233);
-   function o(e) {
+    o = t(97233);
+   function s(e) {
     const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', p: 'p', pre: 'pre', ...(0, l.a)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h1, { id: 'legends-bij-een-fieldset', children: 'Legends bij een fieldset' }), '\n', (0, i.jsxs)(n.p, { children: ['Een ', (0, i.jsx)(n.code, { children: '<legend>' }), ' dient als de naam van de groep. ', (0, i.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'Screenreaders' }), ' lezen deze legend voor bij elk invoerveld in de fieldset (groep), zodat deze koppeling ook duidelijk is zonder de visuele informatie.'] }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.code, { children: '<legend>Uw adresgegevens</legend>' }) }), '\n', (0, i.jsx)(n.p, { children: 'Maak de inhoud van de legend kort en omschrijvend.' }), '\n', (0, i.jsx)(n.p, { children: 'In onderstaande video leest VoiceOver in Safari drie verschillende fieldsets voor, een groep met keuzerondjes (radio buttons) en een bezorg- en factuuradres. De legend wordt steeds bij het formulierveld voorgelezen.\nVoiceOver leest de legend twee keer voor bij het eerste veld van een groep, dit is een bug van VoiceOver.' }), '\n', (0, i.jsx)(s.Y, { id: 'WMa7LToyZVc', title: 'Demo fieldsets met VoiceOver in Safari' }), '\n', (0, i.jsx)(n.h2, { id: 'koppen-in-een-legend', children: 'Koppen in een legend' }), '\n', (0, i.jsxs)(n.p, { children: ['Een fieldset kan ook een kopje bevatten. Zorg er wel voor dat het niveau van deze kopjes klopt in de ', (0, i.jsx)('a', { href: 'https://www.a11yproject.com/posts/how-to-accessible-heading-structure/', children: 'hi\xebrarchische koppenstructuur' }), ' van de hele pagina.'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<fieldset>\n  <legend><h3>Bezorgadres<h3></legend>\n    <label for="shipping-street">Straat en huisnummer</label>\n    <input type="text" name="shipping-street" id="shipping-street" autocomplete="shipping address-line1">\n    <label for="shipping-postal-code">Postcode</label>\n    <input type="text" name="shipping-postal-code" id="shipping-postal-code" autocomplete="shipping postal-code"></div>\n    <label for="shipping-city">Stad</label>\n    <input type="text" name="shipping-city" id="shipping-city" autocomplete="shipping address-level2">\n</fieldset>\n\n<fieldset>\n  <legend><h3>Factuuradres<h3></legend>\n    <label for="billing-street">Straat en huisnummer</label>\n    <input type="text" name="shipping-street" id="billing-street" autocomplete="billing address-line1">\n    <label for="billing-postal-code">Postcode</label>\n    <input type="text" name="billing-postal-code" id="billing-postal-code" autocomplete="billing postal-code">\n    <label for="billing-city">Stad</label>\n    <input type="text" name="billing-city" id="billing-city" autocomplete=" billingaddress-level2">\n</fieldset>\n' }) })] });
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h1, { id: 'legends-bij-een-fieldset', children: 'Legends bij een fieldset' }), '\n', (0, i.jsxs)(n.p, { children: ['Een ', (0, i.jsx)(n.code, { children: '<legend>' }), ' dient als de naam van de groep. ', (0, i.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'Screenreaders' }), ' lezen deze legend voor bij elk invoerveld in de fieldset (groep), zodat deze koppeling ook duidelijk is zonder de visuele informatie.'] }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.code, { children: '<legend>Uw adresgegevens</legend>' }) }), '\n', (0, i.jsx)(n.p, { children: 'Maak de inhoud van de legend kort en omschrijvend.' }), '\n', (0, i.jsx)(n.p, { children: 'In onderstaande video leest VoiceOver in Safari drie verschillende fieldsets voor, een groep met keuzerondjes (radio buttons) en een bezorg- en factuuradres. De legend wordt steeds bij het formulierveld voorgelezen.\nVoiceOver leest de legend twee keer voor bij het eerste veld van een groep, dit is een bug van VoiceOver.' }), '\n', (0, i.jsx)(o.Y, { id: 'WMa7LToyZVc', title: 'Demo fieldsets met VoiceOver in Safari' }), '\n', (0, i.jsx)(n.h2, { id: 'koppen-in-een-legend', children: 'Koppen in een legend' }), '\n', (0, i.jsxs)(n.p, { children: ['Een legend kan ook een kopje bevatten. Zorg er wel voor dat het niveau van deze kopjes klopt in de ', (0, i.jsx)('a', { href: 'https://www.a11yproject.com/posts/how-to-accessible-heading-structure/', children: 'hi\xebrarchische koppenstructuur' }), ' van de hele pagina.'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<fieldset>\n  <legend><h3>Bezorgadres</h3></legend>\n  <label for="shipping-street">Straat en huisnummer</label>\n  <input type="text" name="shipping-street" id="shipping-street" autocomplete="shipping address-line1" />\n  <label for="shipping-postal-code">Postcode</label>\n  <input type="text" name="shipping-postal-code" id="shipping-postal-code" autocomplete="shipping postal-code" />\n  <label for="shipping-city">Stad</label>\n  <input type="text" name="shipping-city" id="shipping-city" autocomplete="shipping address-level2" />\n</fieldset>\n\n<fieldset>\n  <legend><h3>Factuuradres</h3></legend>\n  <label for="billing-street">Straat en huisnummer</label>\n  <input type="text" name="billing-street" id="billing-street" autocomplete="billing address-line1" />\n  <label for="billing-postal-code">Postcode</label>\n  <input type="text" name="billing-postal-code" id="billing-postal-code" autocomplete="billing postal-code" />\n  <label for="billing-city">Stad</label>\n  <input type="text" name="billing-city" id="billing-city" autocomplete="billing address-level2" />\n</fieldset>\n' }) })] });
    }
    function a(e = {}) {
     const { wrapper: n } = { ...(0, l.a)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(o, { ...e }) }) : o(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(s, { ...e }) }) : s(e);
    }
    const c = { title: 'Legends \xb7 Fieldsets \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Legends in een fieldset', pagination_label: 'Legends in een fieldset', description: 'Richtlijnen voor legends in een fieldset in een formulier.', slug: '/richtlijnen/formulieren/fieldsets/legends', keywords: ['labels', 'formulier', 'design', 'code'] },
     d = void 0,
@@ -53,11 +53,11 @@
    };
   },
   40139: (e, n, t) => {
-   t.d(n, { Z: () => o, a: () => s });
+   t.d(n, { Z: () => s, a: () => o });
    var i = t(75271);
    const l = {},
     r = i.createContext(l);
-   function s(e) {
+   function o(e) {
     const n = i.useContext(r);
     return i.useMemo(
      function () {
@@ -66,13 +66,13 @@
      [n, e],
     );
    }
-   function o(e) {
+   function s(e) {
     let n;
-    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(l) : e.components || l) : s(e.components)), i.createElement(r.Provider, { value: n }, e.children);
+    return (n = e.disableParentContext ? ('function' == typeof e.components ? e.components(l) : e.components || l) : o(e.components)), i.createElement(r.Provider, { value: n }, e.children);
    }
   },
   84263: (e, n, t) => {
-   t.d(n, { Z: () => s });
+   t.d(n, { Z: () => o });
    var i = t(75271),
     l = function () {
      return (
@@ -86,10 +86,10 @@
      );
     },
     r = { default: 120, mqdefault: 320, hqdefault: 480, sddefault: 640, maxresdefault: 1280 };
-   var s = i.forwardRef(function (e, n) {
+   var o = i.forwardRef(function (e, n) {
     var t = i.useState(!1),
-     s = t[0],
-     o = t[1],
+     o = t[0],
+     s = t[1],
      a = i.useState(e.alwaysLoadIframe || !1),
      c = a[0],
      d = a[1],
@@ -113,27 +113,27 @@
      k = y
       ? (function (e, n, t, l) {
          void 0 === l && (l = 'maxresdefault');
-         var s = (0, i.useState)(''),
-          o = s[0],
-          a = s[1];
+         var o = (0, i.useState)(''),
+          s = o[0],
+          a = o[1];
          return (
           (0, i.useEffect)(
            function () {
             var i = 'https://img.youtube.com/'.concat(n, '/').concat(e, '/').concat(l, '.').concat(t),
-             s = 'https://img.youtube.com/'.concat(n, '/').concat(e, '/hqdefault.').concat(t),
-             o = r[l],
+             o = 'https://img.youtube.com/'.concat(n, '/').concat(e, '/hqdefault.').concat(t),
+             s = r[l],
              c = new Image();
             (c.onload = function () {
-             c.width < o ? a(s) : a(i);
+             c.width < s ? a(o) : a(i);
             }),
              (c.onerror = function () {
-              return a(s);
+              return a(o);
              }),
              (c.src = i);
            },
            [e],
           ),
-          o
+          s
          );
         })(e.id, x, w, h)
       : null,
@@ -167,12 +167,12 @@
       i.Fragment,
       null,
       i.createElement('link', { rel: O, href: E, as: 'image' }),
-      i.createElement(i.Fragment, null, s && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: j }), i.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), z && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), i.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
+      i.createElement(i.Fragment, null, o && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: j }), i.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), z && i.createElement(i.Fragment, null, i.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), i.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
       i.createElement(
        P,
        {
         onPointerOver: function () {
-         s || o(!0);
+         o || s(!0);
         },
         onClick: function () {
          c || d(!0);
