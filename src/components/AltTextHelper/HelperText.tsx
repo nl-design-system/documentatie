@@ -2,7 +2,6 @@ import {
   Heading2,
   Heading3,
   Paragraph,
-  SpotlightSection,
   Button,
   UnorderedList,
   UnorderedListItem,
@@ -36,22 +35,22 @@ export default function HelperText({ id, changeOption, changeGroup }: HelperText
       <>
         <PreHeading>Stap 3 van 3</PreHeading>
 
-        <SpotlightSection type="info" role="alert" ref={autoFocus} tabIndex={-1}>
+        <div className="nlds-helper-text" ref={autoFocus} tabIndex={-1}>
           <Heading2>{helper.heading}</Heading2>
           <div dangerouslySetInnerHTML={{ __html: helper.content }}></div>
-          {helper.additionals && !!helper.additionals.length && (
+          {helper.additions && !!helper.additions.length && (
             <>
               <Heading3>Houd ook rekening met het volgende</Heading3>
               <UnorderedList>
-                <AdditionalHelpers helpers={helper.additionals} />
+                <AdditionalHelpers helpers={helper.additions} />
               </UnorderedList>
             </>
           )}
-        </SpotlightSection>
+        </div>
 
-        <div className="button-bar">
+        <div className="nlds-button-bar">
           <Button appearance="secondary-action-button" onClick={prevStep}>
-            Terug
+            Vorige stap
           </Button>
         </div>
       </>
@@ -72,7 +71,7 @@ export const AdditionalHelpers = ({ helpers }: AdditionalHelpersProps) =>
         <Paragraph>
           <span className="bold-text">{text.heading}</span>
           <br />
-          {text.content}
+          <div dangerouslySetInnerHTML={{ __html: text.content }}></div>
         </Paragraph>
       </UnorderedListItem>
     );
