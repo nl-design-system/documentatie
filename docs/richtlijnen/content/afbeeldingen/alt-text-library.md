@@ -188,31 +188,18 @@ Een functionele afbeelding is een afbeelding waarmee je iets kunt doen, zoals op
 
 ## Afbeeldingen met tekst
 
-Tekst in een afbeelding wordt niet voorgelezen door een screenreader en kan niet worden aangepast aan de behoeften van de bezoeker. Gebruik daarom liever gewone tekst in HTML en bied altijd een tekstueel alternatief aan.
+Sommige afbeeldingen bevatten tekst. Denk aan een logo, een knop met tekst of een infografiek. In dat geval is het belangrijk om goed na te gaan of de tekst nodig is in de afbeelding zelf, en hoe je die toegankelijk maakt.
 
-Soms is een afbeelding van tekst wél gerechtvaardigd, bijvoorbeeld bij een logo of als de typografie of vormgeving onderdeel is van de boodschap. In dat geval is het belangrijk om de juiste alt-tekst toe te voegen.
+Tekst in een afbeelding wordt niet voorgelezen door een screenreader en kan niet worden aangepast aan de behoeften van de bezoeker. Gebruik daarom liever gewone tekst in HTML.
 
-### Alt-tekst bij een afbeelding met tekst
-
-Als de tekst in de afbeelding belangrijk is voor de inhoud, zet die tekst dan ook in de alt-tekst. Gaat het om decoratieve tekst of stijl zonder betekenis, laat de alt-tekst dan leeg.
-
-<!-- Doen
-Beschrijf alleen de betekenis van de tekst, niet hoe de tekst eruitziet.
-
-Voorbeeld
-Afbeelding: Logo van de Rijksoverheid.
-Alt-tekst: Rijksoverheid. -->
+Soms is een afbeelding van tekst wél gerechtvaardigd, bijvoorbeeld bij een logo of als de typografie onderdeel is van de boodschap.
 
 ### Complexe afbeeldingen met tekst
 
-Een complexe afbeelding met tekst bevat meerdere onderdelen die samen betekenis geven, zoals labels in een grafiek, een infografiek of een routekaart met tekst.
+Bevat de afbeelding veel tekst, zoals in een infografiek of kaart? Geef dan in de alt-tekst een korte samenvatting en zet de volledige tekst naast of onder de afbeelding.
 
-Doen
-• Geef in de alt-tekst een korte samenvatting van de inhoud.
-• Zet de volledige tekst en uitleg naast of onder de afbeelding.
-• Verwijs in de alt-tekst naar die tekstuele beschrijving.
+#### Voorbeeld
 
-Voorbeeld
 Afbeelding: Infografiek over stappen van een subsidieaanvraag.
 Alt-tekst: Stappen van een subsidieaanvraag. De volledige beschrijving staat onder de afbeelding.
 
@@ -222,13 +209,12 @@ Alt-tekst: Stappen van een subsidieaanvraag. De volledige beschrijving staat ond
 
 ### Functionele afbeeldingen met tekst
 
-Een functionele afbeelding met tekst is een afbeelding waarmee je iets kunt doen, bijvoorbeeld een knop, link of waarschuwing met tekst erin.
+Een functionele afbeelding met tekst is een afbeelding waarmee je iets kunt doen, zoals een knop of link.
 
-Doen
-• Beschrijf in de alt-tekst de functie van de afbeelding, niet de tekst zelf.
-• Gebruik liever echte tekst op de knop of link in plaats van tekst in een afbeelding.
+Beschrijf in de alt-tekst de functie van de afbeelding, niet de exacte tekst. Gebruik waar mogelijk echte tekst op de knop of link.
 
-Voorbeeld
+#### Voorbeeld
+
 Afbeelding: Knop met het woord “Verstuur”.
 Alt-tekst: Formulier versturen.
 
@@ -237,15 +223,14 @@ Alt-tekst: Formulier versturen.
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg)
 ![..](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.png)
 
-### Tekst zonder toegevoegde waarde
+### Tekst als visueel element
 
-Soms bevat een afbeelding tekst die alleen is toegevoegd als visueel element. Bijvoorbeeld decoratieve banners of achtergronden met woorden of cijfers die geen betekenis hebben.
+Soms bevat een afbeelding tekst die alleen voor de vorm is gebruikt, zoals een decoratieve banner met het woord Welkom.
 
-Doen
-• Laat de alt-tekst leeg (alt=""), zodat de afbeelding wordt genegeerd door schermlezers.
-• Controleer of de informatie die eventueel in de afbeelding staat, ook elders in tekst beschikbaar is.
+Laat in dat geval de alt-tekst leeg (alt="") zodat schermlezers de afbeelding overslaan.
 
-Voorbeeld
+#### Voorbeeld
+
 Afbeelding: Banner met het woord “Welkom” in sierletters.
 Alt-tekst: (leeg laten)
 
