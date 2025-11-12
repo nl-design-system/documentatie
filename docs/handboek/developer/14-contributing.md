@@ -182,7 +182,8 @@ export const MyComponent = ({ children, ...restProps }) => (
 );
 ```
 
-Voor verschillende elementen moet je verschillende types `HTMLAttributes` importeren, maar ik denk niet dat React hierover documentatie biedt. De meest effectieve aanpak is misschien het gebruik van een IDE zoals Visual Code met een TypeScript-plugin, om erachter te komen welke interface je nodig hebt — of controleer simpelweg bestaande componenten die hetzelfde HTML-element gebruiken.
+Voor verschillende elementen moet je verschillende types `HTMLAttributes` importeren, daarvoor zou je kunnen kijken in de [veelgebruikte typings voor React](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L4100-L4282).
+Op de Mozilla Developer website (MDN) kun je voor elk HTML element terugvinden wat daarvan de DOM Interface is onder "Technical Summary". Als voorbeeld [div](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div).
 
 ## Voorkom dubbele ID's
 
