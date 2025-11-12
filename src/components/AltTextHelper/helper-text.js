@@ -20,7 +20,7 @@ export const Texts = [
       <li>Als ik de afbeelding weglaat, welke informatie gaat er dan verloren?</li>
       <li>Als ik deze afbeelding niét zou kunnen gebruiken, zou ik dan een vervangende afbeelding zoeken?</li>
     </ul>
-    <h3 class="utrecht-heading-3">Context is belangrijk</h3>
+    <h3 class="utrecht-heading-3">Context is bepalend</h3>
     <p>De context bepaalt of een afbeelding decoratief of informatief is, en wat er precies in de alt-tekst moet staan. Bijvoorbeeld: Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven, maar informatief in een artikel over verschillende koeienrassen.</p>
     `,
     additions: ['image-clickable'],
