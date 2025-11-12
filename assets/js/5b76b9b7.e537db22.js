@@ -1,4 +1,4 @@
-/*! For license information please see 5b76b9b7.0b5be5b2.js.LICENSE.txt */
+/*! For license information please see 5b76b9b7.e537db22.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [42437],
@@ -9,9 +9,9 @@
     i = t(40139),
     a = t(97233),
     r = t(37943);
-   const o = { title: 'Design Systems Week 2022', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 2022, sidebar_position: 3, pagination_label: 'Design Systems Week 2022', slug: '/events/design-systems-week-2022' },
+   const o = { title: 'Design Systems Week 2022', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 2022, sidebar_position: 4, pagination_label: 'Design Systems Week 2022', slug: '/events/design-systems-week-2022' },
     l = 'Design Systems Week 2022',
-    d = { id: 'community/events/design-systems-week/eerdere-edities/2022', title: 'Design Systems Week 2022', description: "Tijdens Design Systems Week 2022 met sprekers uit de NL Design System community. Gelukkig hebben we de video's nog!", source: '@site/docs/community/events/design-systems-week/eerdere-edities/2022.mdx', sourceDirName: 'community/events/design-systems-week/eerdere-edities', slug: '/events/design-systems-week-2022', permalink: '/events/design-systems-week-2022', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2022.mdx', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Design Systems Week 2022', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2022', sidebar_position: 3, pagination_label: 'Design Systems Week 2022', slug: '/events/design-systems-week-2022' }, sidebar: 'community', previous: { title: 'Videos 2023', permalink: '/events/design-systems-week-2023/programma' }, next: { title: 'Belangenorganisaties', permalink: '/community/belangenorganisaties/aanmelden' } },
+    d = { id: 'community/events/design-systems-week/eerdere-edities/2022', title: 'Design Systems Week 2022', description: "Tijdens Design Systems Week 2022 met sprekers uit de NL Design System community. Gelukkig hebben we de video's nog!", source: '@site/docs/community/events/design-systems-week/eerdere-edities/2022.mdx', sourceDirName: 'community/events/design-systems-week/eerdere-edities', slug: '/events/design-systems-week-2022', permalink: '/events/design-systems-week-2022', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2022.mdx', tags: [], version: 'current', sidebarPosition: 4, frontMatter: { title: 'Design Systems Week 2022', hide_title: !0, hide_table_of_contents: !1, sidebar_label: '2022', sidebar_position: 4, pagination_label: 'Design Systems Week 2022', slug: '/events/design-systems-week-2022' }, sidebar: 'community', previous: { title: 'Videos 2023', permalink: '/events/design-systems-week-2023/programma' }, next: { title: 'Belangenorganisaties', permalink: '/community/belangenorganisaties/aanmelden' } },
     m = {},
     g = [
      { value: 'Wat is NL Design System?', id: 'wat-is-nl-design-system', level: 2 },

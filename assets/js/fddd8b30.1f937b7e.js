@@ -1,90 +1,63 @@
-/*! For license information please see fddd8b30.7be7f7d9.js.LICENSE.txt */
+/*! For license information please see fddd8b30.1f937b7e.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [76471],
  {
-  24273: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => u, contentTitle: () => c, default: () => b, frontMatter: () => g, metadata: () => m, toc: () => h });
+  68517: (e, n, i) => {
+   i.r(n), i.d(n, { assets: () => p, contentTitle: () => b, default: () => y, frontMatter: () => h, metadata: () => k, toc: () => v });
    var s = i(52676),
     a = i(40139),
     t = i(37943),
     r = i(78511),
     o = i(858),
     d = i(72826),
-    l = i(33118);
-   const g = { title: 'Tijdschema \xb7 Design Systems Week 2025', description: 'Tijdschema per dag voor de Design Systems Week 2025', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2025/tijdschema/', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png' },
-    c = 'Tijdschema Design Systems Week 2025',
-    m = { id: 'community/events/design-systems-week/tijdschema', title: 'Tijdschema \xb7 Design Systems Week 2025', description: 'Tijdschema per dag voor de Design Systems Week 2025', source: '@site/docs/community/events/design-systems-week/tijdschema.mdx', sourceDirName: 'community/events/design-systems-week', slug: '/events/design-systems-week-2025/tijdschema/', permalink: '/events/design-systems-week-2025/tijdschema/', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/tijdschema.mdx', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema \xb7 Design Systems Week 2025', description: 'Tijdschema per dag voor de Design Systems Week 2025', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2025/tijdschema/', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png' }, sidebar: 'community', previous: { title: 'Programma', permalink: '/events/design-systems-week-2025/programma' }, next: { title: 'About Design Systems Week', permalink: '/events/design-systems-week/en' } },
-    u = {},
-    h = [
-     { value: 'Maandag 27 oktober', id: 'maandag-27-oktober', level: 2 },
-     { value: 'Dinsdag 28 oktober', id: 'dinsdag-28-oktober', level: 2 },
-     { value: 'Woensdag 29 oktober', id: 'woensdag-29-oktober', level: 2 },
-     { value: 'Donderdag 30 oktober', id: 'donderdag-30-oktober', level: 2 },
-     { value: 'Organisatie', id: 'organisatie', level: 2 },
-     { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
-     { value: 'Toegankelijkheid', id: 'toegankelijkheid', level: 2 },
-    ];
-   function k(e) {
-    const n = { a: 'a', h1: 'h1', h2: 'h2', p: 'p', strong: 'strong', ...(0, a.a)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h1, { id: 'tijdschema-design-systems-week-2025', children: 'Tijdschema Design Systems Week 2025' }), '\n', (0, s.jsx)(t.nv, { lead: !0, children: (0, s.jsxs)(n.p, { children: ['NL Design System organiseert in 2025 voor de 5e keer de Design Systems Week. Van ', (0, s.jsx)(n.strong, { children: '27 tot en met 30 oktober' }), ' zijn er\ndagelijks meerdere korte sessies van diverse organisaties online te volgen over het ', (0, s.jsx)(n.strong, { children: 'hoe en waarom van design\nsystems' }), '.'] }) }), '\n', (0, s.jsxs)(t.hE, { children: [(0, s.jsxs)(t.ZP, { href: '/events/design-systems-week-2025/programma', appearance: 'primary-action-button', children: ['Bekijk het programma', (0, s.jsx)(r.Z, {})] }), (0, s.jsxs)(t.ZP, { href: 'https://miro.com/app/board/uXjVLTpHyN8=/', appearance: 'secondary-action-button', children: ['Gebruik Miro', (0, s.jsx)(r.Z, {})] })] }), '\n', (0, s.jsx)(n.h2, { id: 'maandag-27-oktober', children: 'Maandag 27 oktober' }), '\n', (0, s.jsx)(l.L, { lang: 'nl-NL', speakers: d, sessions: o.filter(({ isoDateTime: e }) => e.startsWith('2025-10-27')) }), '\n', (0, s.jsx)(n.h2, { id: 'dinsdag-28-oktober', children: 'Dinsdag 28 oktober' }), '\n', (0, s.jsx)(l.L, { lang: 'nl-NL', speakers: d, sessions: o.filter(({ isoDateTime: e }) => e.startsWith('2025-10-28')) }), '\n', (0, s.jsx)(n.h2, { id: 'woensdag-29-oktober', children: 'Woensdag 29 oktober' }), '\n', (0, s.jsx)(l.L, { lang: 'nl-NL', speakers: d, sessions: o.filter(({ isoDateTime: e }) => e.startsWith('2025-10-29')) }), '\n', (0, s.jsx)(n.h2, { id: 'donderdag-30-oktober', children: 'Donderdag 30 oktober' }), '\n', (0, s.jsx)(l.L, { lang: 'nl-NL', speakers: d, sessions: o.filter(({ isoDateTime: e }) => e.startsWith('2025-10-30')) }), '\n', (0, s.jsx)('hr', {}), '\n', (0, s.jsx)(n.h2, { id: 'organisatie', children: 'Organisatie' }), '\n', (0, s.jsx)(n.p, { children: 'Design Systems Week wordt georganiseerd door het kernteam van NL Design System, vanuit Stichting ICTU, met dank aan het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.' }), '\n', (0, s.jsx)(n.h2, { id: 'code-of-conduct', children: 'Code of Conduct' }), '\n', (0, s.jsxs)(n.p, { children: ['Op Design Systems Week is de ', (0, s.jsx)(n.a, { href: 'https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.nl.md', children: 'NL Design System Code of Conduct' }), ' van toepassing. Je gaat daarmee akkoord als je je aanmeldt of spreekt.'] }), '\n', (0, s.jsx)(n.h2, { id: 'toegankelijkheid', children: 'Toegankelijkheid' }), '\n', (0, s.jsxs)(n.p, { children: ['We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op ', (0, s.jsx)(n.a, { href: 'mailto:info@nldesignsystem.nl', children: 'info@nldesignsystem.nl' }), '.'] })] });
-   }
-   function b(e = {}) {
-    const { wrapper: n } = { ...(0, a.a)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(k, { ...e }) }) : k(e);
-   }
-  },
-  33118: (e, n, i) => {
-   i.d(n, { L: () => l });
-   var s = (0, i(72315).Z)('outline', 'user', 'IconUser', [
+    l = (0, i(72315).Z)('outline', 'user', 'IconUser', [
      ['path', { d: 'M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0', key: 'svg-0' }],
      ['path', { d: 'M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2', key: 'svg-1' }],
     ]),
-    a = i(86135),
-    t = i(37943),
-    r = i(4814),
-    o = i(52676);
-   const d = (e) => {
+    g = i(86135),
+    c = i(4814);
+   const m = (e) => {
      let { name: n, organisation: i } = e;
-     return (0, o.jsxs)(t.nv, { className: (0, r.Z)('session-table__speaker', 'speaker'), children: [(0, o.jsx)(t.JO, { className: 'speaker__icon', children: (0, o.jsx)(s, {}) }), (0, o.jsx)('span', { className: 'speaker__name', children: n }), (0, o.jsx)('br', {}), (0, o.jsx)('span', { className: 'speaker__organisation', children: i })] });
+     return (0, s.jsxs)(t.nv, { className: (0, c.Z)('session-table__speaker', 'speaker'), children: [(0, s.jsx)(t.JO, { className: 'speaker__icon', children: (0, s.jsx)(l, {}) }), (0, s.jsx)('span', { className: 'speaker__name', children: n }), (0, s.jsx)('br', {}), (0, s.jsx)('span', { className: 'speaker__organisation', children: i })] });
     },
-    l = (e) => {
-     let { lang: n, sessions: i, speakers: s, className: l, ...g } = e;
-     return (0, o.jsx)('div', {
-      className: (0, r.Z)('session-table-container', l),
-      children: (0, o.jsxs)(t.iA, {
-       className: (0, r.Z)('session-table', l),
-       ...g,
+    u = (e) => {
+     let { lang: n, sessions: i, speakers: a, className: r, ...o } = e;
+     return (0, s.jsx)('div', {
+      className: (0, c.Z)('session-table-container', r),
+      children: (0, s.jsxs)(t.iA, {
+       className: (0, c.Z)('session-table', r),
+       ...o,
        children: [
-        (0, o.jsx)(t.xD, { children: (0, o.jsxs)(t.SC, { className: 'session-table__row', children: [(0, o.jsx)(t.xs, { children: 'nl-NL' === n ? 'Tijd' : 'Time' }), (0, o.jsx)(t.xs, { children: 'nl-NL' === n ? 'Taal' : 'Language' }), (0, o.jsx)(t.xs, { children: 'nl-NL' === n ? 'Spreker' : 'Speaker' }), (0, o.jsx)(t.xs, { children: 'nl-NL' === n ? 'Onderwerp' : 'Subject' }), (0, o.jsx)(t.xs, { children: 'nl-NL' === n ? 'Agenda' : 'Calendar' })] }) }),
-        (0, o.jsx)(t.RM, {
+        (0, s.jsx)(t.xD, { children: (0, s.jsxs)(t.SC, { className: 'session-table__row', children: [(0, s.jsx)(t.xs, { children: 'nl-NL' === n ? 'Tijd' : 'Time' }), (0, s.jsx)(t.xs, { children: 'nl-NL' === n ? 'Taal' : 'Language' }), (0, s.jsx)(t.xs, { children: 'nl-NL' === n ? 'Spreker' : 'Speaker' }), (0, s.jsx)(t.xs, { children: 'nl-NL' === n ? 'Onderwerp' : 'Subject' }), (0, s.jsx)(t.xs, { children: 'nl-NL' === n ? 'Agenda' : 'Calendar' })] }) }),
+        (0, s.jsx)(t.RM, {
          children: i.map((e, i) => {
-          let { isoDateTime: r, speakers: l, subject: g, icalLink: c, language: m, cancelled: u } = e;
+          let { isoDateTime: r, speakers: o, subject: d, icalLink: l, language: c, cancelled: u } = e;
           return (
            !u &&
-           (0, o.jsxs)(
+           (0, s.jsxs)(
             t.SC,
             {
              className: 'session-table__row',
              children: [
-              (0, o.jsx)(t.pj, { className: 'session-table__time', children: (0, o.jsx)(t.nv, { children: (0, o.jsx)('time', { dateTime: r, children: new Intl.DateTimeFormat(n, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== n ? 'short' : void 0 }).format(new Date(r)) }) }) }),
-              (0, o.jsx)(t.pj, { className: 'session-table__language', children: (0, o.jsx)('abbr', { title: m.description, children: m.abbr }) }),
-              (0, o.jsx)(t.pj, {
-               children: (0, o.jsx)('div', {
+              (0, s.jsx)(t.pj, { className: 'session-table__time', children: (0, s.jsx)(t.nv, { children: (0, s.jsx)('time', { dateTime: r, children: new Intl.DateTimeFormat(n, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== n ? 'short' : void 0 }).format(new Date(r)) }) }) }),
+              (0, s.jsx)(t.pj, { className: 'session-table__language', children: (0, s.jsx)('abbr', { title: c.description, children: c.abbr }) }),
+              (0, s.jsx)(t.pj, {
+               children: (0, s.jsx)('div', {
                 className: 'session-table__speakers',
-                children: Object.entries(s)
+                children: Object.entries(a)
                  .filter((e) => {
                   let [n] = e;
-                  return l.includes(n);
+                  return o.includes(n);
                  })
                  .map((e, n) => {
-                  let [i, s] = e;
-                  return (0, o.jsx)(d, { ...s }, n);
+                  let [i, a] = e;
+                  return (0, s.jsx)(m, { ...a }, n);
                  }),
                }),
               }),
-              (0, o.jsx)(t.pj, { className: 'session-table__subject', children: (0, o.jsx)(t.nv, { lang: m.abbr, children: (0, o.jsx)(t.rU, { href: `/events/design-systems-week-2025/${'nl-NL' === n ? 'programma' : 'EN' === m.abbr ? 'en/program' : 'programma'}#${g.toLowerCase().replace(/\s/gi, '-')}`, children: g }) }) }),
-              (0, o.jsx)(t.pj, { className: 'session-table__time', children: c && (0, o.jsxs)(t.ZP, { href: c, download: c, 'aria-labelledby': 'ical-description', children: [(0, o.jsx)(t.JO, { children: (0, o.jsx)(a.Z, {}) }), ' ', (0, o.jsxs)('span', { id: 'ical-description', className: 'sr-only', children: ['iCal file for ', (0, o.jsx)('span', { lang: m.abbr, children: g }), '(download)'] })] }) }),
+              (0, s.jsx)(t.pj, { className: 'session-table__subject', children: (0, s.jsx)(t.nv, { lang: c.abbr, children: (0, s.jsx)(t.rU, { href: `/events/design-systems-week-2025/${'nl-NL' === n ? 'programma' : 'EN' === c.abbr ? 'en/program' : 'programma'}#${d.toLowerCase().replace(/\s/gi, '-')}`, children: d }) }) }),
+              (0, s.jsx)(t.pj, { className: 'session-table__time', children: l && (0, s.jsxs)(t.ZP, { href: l, download: l, 'aria-labelledby': 'ical-description', children: [(0, s.jsx)(t.JO, { children: (0, s.jsx)(g.Z, {}) }), ' ', (0, s.jsxs)('span', { id: 'ical-description', className: 'sr-only', children: ['iCal file for ', (0, s.jsx)('span', { lang: c.abbr, children: d }), '(download)'] })] }) }),
              ],
             },
             i,
@@ -95,7 +68,28 @@
        ],
       }),
      });
-    };
+    },
+    h = { title: 'Tijdschema \xb7 Design Systems Week 2025', description: 'Tijdschema per dag voor de Design Systems Week 2025', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2025/tijdschema/', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png' },
+    b = 'Tijdschema Design Systems Week 2025',
+    k = { id: 'community/events/design-systems-week/tijdschema', title: 'Tijdschema \xb7 Design Systems Week 2025', description: 'Tijdschema per dag voor de Design Systems Week 2025', source: '@site/docs/community/events/design-systems-week/tijdschema.mdx', sourceDirName: 'community/events/design-systems-week', slug: '/events/design-systems-week-2025/tijdschema/', permalink: '/events/design-systems-week-2025/tijdschema/', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/tijdschema.mdx', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Tijdschema \xb7 Design Systems Week 2025', description: 'Tijdschema per dag voor de Design Systems Week 2025', hide_table_of_contents: !0, sidebar_label: 'Tijdschema', pagination_label: 'Tijdschema', sidebar_position: 3, slug: '/events/design-systems-week-2025/tijdschema/', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png' } },
+    p = {},
+    v = [
+     { value: 'Maandag 27 oktober', id: 'maandag-27-oktober', level: 2 },
+     { value: 'Dinsdag 28 oktober', id: 'dinsdag-28-oktober', level: 2 },
+     { value: 'Woensdag 29 oktober', id: 'woensdag-29-oktober', level: 2 },
+     { value: 'Donderdag 30 oktober', id: 'donderdag-30-oktober', level: 2 },
+     { value: 'Organisatie', id: 'organisatie', level: 2 },
+     { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
+     { value: 'Toegankelijkheid', id: 'toegankelijkheid', level: 2 },
+    ];
+   function j(e) {
+    const n = { a: 'a', h1: 'h1', h2: 'h2', p: 'p', strong: 'strong', ...(0, a.a)(), ...e.components };
+    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.h1, { id: 'tijdschema-design-systems-week-2025', children: 'Tijdschema Design Systems Week 2025' }), '\n', (0, s.jsx)(t.nv, { lead: !0, children: (0, s.jsxs)(n.p, { children: ['NL Design System organiseert in 2025 voor de 5e keer de Design Systems Week. Van ', (0, s.jsx)(n.strong, { children: '27 tot en met 30 oktober' }), ' zijn er\ndagelijks meerdere korte sessies van diverse organisaties online te volgen over het ', (0, s.jsx)(n.strong, { children: 'hoe en waarom van design\nsystems' }), '.'] }) }), '\n', (0, s.jsxs)(t.hE, { children: [(0, s.jsxs)(t.ZP, { href: '/events/design-systems-week-2025/programma', appearance: 'primary-action-button', children: ['Bekijk het programma', (0, s.jsx)(r.Z, {})] }), (0, s.jsxs)(t.ZP, { href: 'https://miro.com/app/board/uXjVLTpHyN8=/', appearance: 'secondary-action-button', children: ['Gebruik Miro', (0, s.jsx)(r.Z, {})] })] }), '\n', (0, s.jsx)(n.h2, { id: 'maandag-27-oktober', children: 'Maandag 27 oktober' }), '\n', (0, s.jsx)(u, { lang: 'nl-NL', speakers: d, sessions: o.filter(({ isoDateTime: e }) => e.startsWith('2025-10-27')) }), '\n', (0, s.jsx)(n.h2, { id: 'dinsdag-28-oktober', children: 'Dinsdag 28 oktober' }), '\n', (0, s.jsx)(u, { lang: 'nl-NL', speakers: d, sessions: o.filter(({ isoDateTime: e }) => e.startsWith('2025-10-28')) }), '\n', (0, s.jsx)(n.h2, { id: 'woensdag-29-oktober', children: 'Woensdag 29 oktober' }), '\n', (0, s.jsx)(u, { lang: 'nl-NL', speakers: d, sessions: o.filter(({ isoDateTime: e }) => e.startsWith('2025-10-29')) }), '\n', (0, s.jsx)(n.h2, { id: 'donderdag-30-oktober', children: 'Donderdag 30 oktober' }), '\n', (0, s.jsx)(u, { lang: 'nl-NL', speakers: d, sessions: o.filter(({ isoDateTime: e }) => e.startsWith('2025-10-30')) }), '\n', (0, s.jsx)('hr', {}), '\n', (0, s.jsx)(n.h2, { id: 'organisatie', children: 'Organisatie' }), '\n', (0, s.jsx)(n.p, { children: 'Design Systems Week wordt georganiseerd door het kernteam van NL Design System, vanuit Stichting ICTU, met dank aan het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.' }), '\n', (0, s.jsx)(n.h2, { id: 'code-of-conduct', children: 'Code of Conduct' }), '\n', (0, s.jsxs)(n.p, { children: ['Op Design Systems Week is de ', (0, s.jsx)(n.a, { href: 'https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.nl.md', children: 'NL Design System Code of Conduct' }), ' van toepassing. Je gaat daarmee akkoord als je je aanmeldt of spreekt.'] }), '\n', (0, s.jsx)(n.h2, { id: 'toegankelijkheid', children: 'Toegankelijkheid' }), '\n', (0, s.jsxs)(n.p, { children: ['We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op ', (0, s.jsx)(n.a, { href: 'mailto:info@nldesignsystem.nl', children: 'info@nldesignsystem.nl' }), '.'] })] });
+   }
+   function y(e = {}) {
+    const { wrapper: n } = { ...(0, a.a)(), ...e.components };
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(j, { ...e }) }) : j(e);
+   }
   },
   40139: (e, n, i) => {
    i.d(n, { Z: () => o, a: () => r });

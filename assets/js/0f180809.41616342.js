@@ -1,4 +1,4 @@
-/*! For license information please see 0f180809.609986f2.js.LICENSE.txt */
+/*! For license information please see 0f180809.41616342.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [42115],
@@ -10,9 +10,9 @@
     s = i(61030),
     r = i(97247),
     o = i(37943);
-   const d = { title: 'Videos \xb7 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2023, sidebar_position: 2, pagination_label: 'Videos 2023', slug: '/events/design-systems-week-2023/programma' },
+   const d = { title: 'Videos \xb7 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2023, sidebar_position: 3, pagination_label: 'Videos 2023', slug: '/events/design-systems-week-2023/programma' },
     l = 'Design Systems Week 2023 terugkijken',
-    g = { id: 'community/events/design-systems-week/eerdere-edities/2023', title: 'Videos \xb7 Design Systems Week 2023', description: 'Tijdens Design Systems Week 2023 met nationale \xe9n internationale sprekers. Vanuit verschillende perspectieven hebben', source: '@site/docs/community/events/design-systems-week/eerdere-edities/2023.mdx', sourceDirName: 'community/events/design-systems-week/eerdere-edities', slug: '/events/design-systems-week-2023/programma', permalink: '/events/design-systems-week-2023/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2023.mdx', tags: [], version: 'current', sidebarPosition: 2, frontMatter: { title: 'Videos \xb7 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: '2023', sidebar_position: 2, pagination_label: 'Videos 2023', slug: '/events/design-systems-week-2023/programma' }, sidebar: 'community', previous: { title: 'Design Systems Week 2024', permalink: '/events/design-systems-week-2024/programma' }, next: { title: 'Design Systems Week 2022', permalink: '/events/design-systems-week-2022' } },
+    g = { id: 'community/events/design-systems-week/eerdere-edities/2023', title: 'Videos \xb7 Design Systems Week 2023', description: 'Tijdens Design Systems Week 2023 met nationale \xe9n internationale sprekers. Vanuit verschillende perspectieven hebben', source: '@site/docs/community/events/design-systems-week/eerdere-edities/2023.mdx', sourceDirName: 'community/events/design-systems-week/eerdere-edities', slug: '/events/design-systems-week-2023/programma', permalink: '/events/design-systems-week-2023/programma', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2023.mdx', tags: [], version: 'current', sidebarPosition: 3, frontMatter: { title: 'Videos \xb7 Design Systems Week 2023', hide_title: !0, hide_table_of_contents: !0, sidebar_label: '2023', sidebar_position: 3, pagination_label: 'Videos 2023', slug: '/events/design-systems-week-2023/programma' }, sidebar: 'community', previous: { title: 'Design Systems Week 2024', permalink: '/events/design-systems-week-2024/programma' }, next: { title: 'Design Systems Week 2022', permalink: '/events/design-systems-week-2022' } },
     m = {},
     c = [
      { value: 'Organisatie', id: 'organisatie', level: 2 },
