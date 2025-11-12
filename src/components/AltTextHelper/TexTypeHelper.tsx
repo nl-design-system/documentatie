@@ -161,7 +161,7 @@ export default function TextTypeHelper({ changeOption, changeGroup, activeGroup 
             </FormLabel>
           </FormField>
 
-          <div className="button-bar">
+          <div className="nlds-button-bar">
             <Button appearance="secondary-action-button" onClick={prevStep}>
               Terug
             </Button>
