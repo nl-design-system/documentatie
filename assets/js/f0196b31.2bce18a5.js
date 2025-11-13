@@ -1,20 +1,20 @@
-/*! For license information please see f0196b31.a1f8d4e4.js.LICENSE.txt */
+/*! For license information please see f0196b31.2bce18a5.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [63004],
  {
   58209: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => h, contentTitle: () => u, default: () => c, frontMatter: () => l, metadata: () => d, toc: () => m });
+   i.r(n), i.d(n, { assets: () => m, contentTitle: () => d, default: () => c, frontMatter: () => l, metadata: () => u, toc: () => h });
    var s = i(52676),
     t = i(40139),
     o = i(68257),
     r = i(78511),
     a = i(37943);
    const l = { title: 'Rijkshuisstijl Community Open Hour \xb7 Bijeenkomsten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Rijkshuisstijl Community Open Hour', pagination_label: 'Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl.', description: 'Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.', slug: '/events/rijkshuisstijl-community-open-hour' },
-    u = 'Rijkshuisstijl Community Open Hour',
-    d = { id: 'community/events/rijkshuisstijl-community-open-hour', title: 'Rijkshuisstijl Community Open Hour \xb7 Bijeenkomsten', description: 'Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.', source: '@site/docs/community/events/rijkshuisstijl-community-open-hour.mdx', sourceDirName: 'community/events', slug: '/events/rijkshuisstijl-community-open-hour', permalink: '/events/rijkshuisstijl-community-open-hour', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/rijkshuisstijl-community-open-hour.mdx', tags: [], version: 'current', frontMatter: { title: 'Rijkshuisstijl Community Open Hour \xb7 Bijeenkomsten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Rijkshuisstijl Community Open Hour', pagination_label: 'Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl.', description: 'Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.', slug: '/events/rijkshuisstijl-community-open-hour' }, sidebar: 'community', previous: { title: 'In de Design Open Hour wisselen designers informatie, inzichten en tips met elkaar uit.', permalink: '/events/design-open-hour/aanmelden' }, next: { title: 'Developer Open Hour', permalink: '/events/developer-open-hour/overzicht' } },
-    h = {},
-    m = [
+    d = 'Rijkshuisstijl Community Open Hour',
+    u = { id: 'community/events/rijkshuisstijl-community-open-hour', title: 'Rijkshuisstijl Community Open Hour \xb7 Bijeenkomsten', description: 'Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.', source: '@site/docs/community/events/rijkshuisstijl-community-open-hour.mdx', sourceDirName: 'community/events', slug: '/events/rijkshuisstijl-community-open-hour', permalink: '/events/rijkshuisstijl-community-open-hour', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/rijkshuisstijl-community-open-hour.mdx', tags: [], version: 'current', frontMatter: { title: 'Rijkshuisstijl Community Open Hour \xb7 Bijeenkomsten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Rijkshuisstijl Community Open Hour', pagination_label: 'Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl.', description: 'Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.', slug: '/events/rijkshuisstijl-community-open-hour' }, sidebar: 'community', previous: { title: 'In de Developer Open Hour wisselen developers informatie, inzichten en tips met elkaar uit.', permalink: '/events/developer-open-hour/aanmelden' }, next: { title: 'Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt.', permalink: '/events/mijn-services-check-in' } },
+    m = {},
+    h = [
      { value: 'Over de Rijkshuisstijl Community Open Hour', id: 'over-de-rijkshuisstijl-community-open-hour', level: 2 },
      { value: 'Ben je erbij?', id: 'ben-je-erbij', level: 2 },
      { value: 'Over de Rijkshuisstijl Community', id: 'over-de-rijkshuisstijl-community', level: 2 },
@@ -63,7 +63,7 @@
    var s = i(75271),
     t = { outline: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' }, filled: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'currentColor', stroke: 'none' } };
    const o = (e, n, i, o) => {
-    const r = (0, s.forwardRef)(({ color: i = 'currentColor', size: r = 24, stroke: a = 2, title: l, className: u, children: d, ...h }, m) => (0, s.createElement)('svg', { ref: m, ...t[e], width: r, height: r, className: ['tabler-icon', `tabler-icon-${n}`, u].join(' '), ...('filled' === e ? { fill: i } : { strokeWidth: a, stroke: i }), ...h }, [l && (0, s.createElement)('title', { key: 'svg-title' }, l), ...o.map(([e, n]) => (0, s.createElement)(e, n)), ...(Array.isArray(d) ? d : [d])]));
+    const r = (0, s.forwardRef)(({ color: i = 'currentColor', size: r = 24, stroke: a = 2, title: l, className: d, children: u, ...m }, h) => (0, s.createElement)('svg', { ref: h, ...t[e], width: r, height: r, className: ['tabler-icon', `tabler-icon-${n}`, d].join(' '), ...('filled' === e ? { fill: i } : { strokeWidth: a, stroke: i }), ...m }, [l && (0, s.createElement)('title', { key: 'svg-title' }, l), ...o.map(([e, n]) => (0, s.createElement)(e, n)), ...(Array.isArray(u) ? u : [u])]));
     return (r.displayName = `${i}`), r;
    };
   },
