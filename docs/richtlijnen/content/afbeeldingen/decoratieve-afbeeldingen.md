@@ -39,6 +39,14 @@ Voorbeelden van decoratieve afbeeldingen zijn:
 - Iconen naast een tekst met dezelfde informatie.
 - Sfeerbeelden.
 
+## Context is bepalend
+
+De juiste alt-tekst hangt af van de context. Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven, maar informatief in een artikel over verschillende koeienrassen.
+
+Op een gemeentelijke website kan een foto van het gemeentehuis volstaan met “gemeentehuis van Amersfoort” als het artikel over de organisatie gaat. Gaat de tekst over duurzame verbouwingen, dan beschrijf je in de alt-tekst de zichtbare verduurzamingen zoals de zonnepanelen op het dak.
+
+De context bepaalt dus of een afbeelding decoratief of informatief is, en wat er precies in de alt-tekst moet staan.
+
 ## Overwegingen
 
 Vragen die je jezelf kunt stellen als je een decoratieve afbeelding plaatst:
