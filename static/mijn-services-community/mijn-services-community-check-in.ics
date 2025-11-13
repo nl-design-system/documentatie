@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 VERSION:2.0
-X-WR-CALNAME:MijnServices Community check-in - NL Design System
+X-WR-CALNAME:MijnServices Community Check-in - NL Design System
 METHOD:PUBLISH
 PRODID:-//Apple Inc.//macOS 14.1.1//EN
 BEGIN:VTIMEZONE
@@ -28,10 +28,10 @@ X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
 UID:bac97f60-8914-48ec-852a-d1a37522f23b
 DTSTAMP:20251017T120000Z
 LOCATION:https://app.slack.com/huddle/T68FXPFQV/C01D78C2E4E
-DESCRIPTION:Wees welkom bij de 'MijnServices Community check-in'. Deze meeting vindt plaats in het #nl-design-system-designers kanaal op de Code for NL Slack. \n\nMeer informatie over MijnServices Community: https://nldesignsystem.nl/community/community-sprints/mijn-services-community/. \n\nZit je nog niet op de Slack? Meld je hier aan: https://nldesignsystem.nl/slack/.
+DESCRIPTION:Wees welkom bij de 'MijnServices Community Check-in'. Deze meeting vindt plaats in het #nl-design-system-designers kanaal op de Code for NL Slack. \n\nMeer informatie over MijnServices Community: https://nldesignsystem.nl/community/community-sprints/mijn-services-community/. \n\nZit je nog niet op de Slack? Meld je hier aan: https://nldesignsystem.nl/slack/.
 X-APPLE-CREATOR-IDENTITY:com.apple.calendar
 SEQUENCE:6
-SUMMARY:MijnServices Community check-in - NL Design System
+SUMMARY:MijnServices Community Check-in - NL Design System
 DTSTART;TZID=Europe/Amsterdam:20251023T100000
 LAST-MODIFIED:20251017T120000Z
 CREATED:20251017T120000Z
