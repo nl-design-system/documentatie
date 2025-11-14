@@ -160,7 +160,9 @@ render(<MyComponent tabIndex={0} ref={ref} />);
 ref.current?.focus();
 ```
 
-Breek native HTML niet
+## Breek native HTML niet
+
+Zorg ervoor dat je in je code native HTML niet breekt. Hoe dit kan gebeuren is als je bijvoorbeeld de disabled property overschrijft, wanneer je een component bouwt. Deze property biedt native HTML functionaliteit, maar als je het overschrijft werkt die native functionaliteit niet meer.
 
 ## Intrinsieke elementattributen
 
