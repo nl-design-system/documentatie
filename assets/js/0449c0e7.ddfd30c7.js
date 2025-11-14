@@ -16,7 +16,7 @@
    }
   },
   44350: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => g, contentTitle: () => d, default: () => u, frontMatter: () => s, metadata: () => c, toc: () => b });
+   t.r(n), t.d(n, { assets: () => g, contentTitle: () => d, default: () => h, frontMatter: () => s, metadata: () => c, toc: () => b });
    var l = t(52676),
     i = t(40139),
     a = t(43599),
@@ -35,15 +35,15 @@
     ];
    function v(e) {
     const n = { a: 'a', h1: 'h1', h2: 'h2', img: 'img', li: 'li', p: 'p', ul: 'ul', ...(0, i.a)(), ...e.components };
-    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h1, { id: 'decoratieve-afbeeldingen', children: 'Decoratieve afbeeldingen' }), '\n', (0, l.jsx)(n.p, { children: 'Sommige afbeeldingen op een pagina geven je bezoeker niet m\xe9\xe9r informatie dan de informatie die ook al in de tekst staat. Dit noemen we decoratieve afbeeldingen.' }), '\n', (0, l.jsx)(n.p, { children: 'Voorbeelden van decoratieve afbeeldingen zijn:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Afbeeldingen in de achtergrond van een website.' }), '\n', (0, l.jsx)(n.li, { children: 'Iconen naast een tekst met dezelfde informatie.' }), '\n', (0, l.jsx)(n.li, { children: 'Sfeerbeelden.' }), '\n'] }), '\n', (0, l.jsx)(n.h2, { id: 'overwegingen', children: 'Overwegingen' }), '\n', (0, l.jsx)(n.p, { children: 'Vragen die je jezelf kunt stellen als je een decoratieve afbeelding plaatst:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Waarom wil ik deze afbeelding plaatsen?' }), '\n', (0, l.jsx)(n.li, { children: 'Als ik de afbeelding weglaat, welke informatie gaat er dan verloren?' }), '\n', (0, l.jsx)(n.li, { children: 'Als ik deze afbeelding ni\xe9t zou kunnen gebruiken, zou ik dan een vervangende afbeelding zoeken?' }), '\n'] }), '\n', (0, l.jsx)(n.h2, { id: 'alternatieve-teksten-verbergen-voor-hulpsoftware', children: 'Alternatieve teksten verbergen voor hulpsoftware' }), '\n', (0, l.jsxs)(n.p, { children: ['Gaat er geen informatie verloren? Dan heeft de afbeelding geen beschrijving nodig. Je kunt er dan voor kiezen om de afbeelding te verbergen voor hulpsoftware. Er is dan geen informatie meer beschikbaar over de afbeelding: niet w\xe1t er op de afbeelding staat, maar zelfs niet d\xe1t er een afbeelding staat. Bezoekers die gebruik maken van bijvoorbeeld een ', (0, l.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' hoeven dan niet onnodig naar de beschrijving te luisteren. Zorg er wel voor dat je echt zeker weet dat de afbeelding niet informatief is voordat je deze keuze maakt.'] }), '\n', (0, l.jsx)(r.X, { appearance: 'dont', title: 'Informatieve afbeeldingen verbergen voor hulpsoftware door het alt-attribuut leeg te laten.', children: (0, l.jsx)(a.X, { language: 'html', defaultExpandedCode: !0, children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg', alt: '' }) }) }) }), '\n', (0, l.jsx)(n.h2, { id: 'sfeerbeelden', children: 'Sfeerbeelden' }), '\n', (0, l.jsx)(n.p, { children: 'Je plaatst sfeerbeelden voornamelijk omdat ze passen bij de organisatie waar je voor werkt. Ze passen bijvoorbeeld bij jullie kernwaarden of de service die jullie verlenen. Sommige bezoekers die gebruikmaken van hulpsoftware willen daarom juist wel een beschrijving krijgen van decoratieve sfeerbeelden. Je kunt er dus ook voor kiezen om deze afbeeldingen wel een alternatieve tekst te geven. In dat geval beschrijf je inhoudelijk wat er op de afbeelding te zien is.' }), '\n', (0, l.jsx)(n.h2, { id: 'decoratieve-afbeeldingen-beschrijven', children: 'Decoratieve afbeeldingen beschrijven' }), '\n', (0, l.jsx)(n.p, { children: 'Het helpt om je voor te stellen dat je de afbeelding beschrijft aan iemand die hem niet kan zien, bijvoorbeeld iemand aan de telefoon. Denk na over welke kenmerken van een afbeelding belangrijk zijn om te benoemen.' }), '\n', (0, l.jsx)(n.p, { children: 'Mogelijke kenmerken:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Het precieze aantal mensen, dieren of objecten in de afbeelding.' }), '\n', (0, l.jsx)(n.li, { children: 'De gezichtsuitdrukkingen van de mensen in de afbeelding.' }), '\n', (0, l.jsx)(n.li, { children: 'Het geslacht of gender van de mensen in de afbeelding.' }), '\n', (0, l.jsx)(n.li, { children: 'De huidskleur van de mensen in de afbeelding.' }), '\n', (0, l.jsx)(n.li, { children: 'De acties die de mensen in de afbeelding uitvoeren.' }), '\n', (0, l.jsx)(n.li, { children: "Wat er op de achtergrond te zien is en of het voor ziende bezoekers duidelijk is, of moet zijn, wat er te zien is. Benoem je 'de Eiffeltoren' of 'Een hoge metalen constructie die taps toeloopt, met een antenne er op.'?" }), '\n'] }), '\n', (0, l.jsx)(n.p, { children: 'Of iets relevant is om te benoemen ligt aan de context: het doel van de pagina en bijvoorbeeld de kern- en merkwaarden van je organisatie.' }), '\n', (0, l.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, l.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/1.1.1/', children: 'Succescriterium 1.1.1 Niet-tekstuele content' }) }), '\n'] }), '\n', (0, l.jsx)(o.ZP, {})] });
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h1, { id: 'decoratieve-afbeeldingen', children: 'Decoratieve afbeeldingen' }), '\n', (0, l.jsx)(n.p, { children: 'Sommige afbeeldingen op een pagina geven je bezoeker niet m\xe9\xe9r informatie dan de informatie die ook al in de tekst staat. Dit noemen we decoratieve afbeeldingen.' }), '\n', (0, l.jsx)(n.p, { children: 'Voorbeelden van decoratieve afbeeldingen zijn:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Afbeeldingen in de achtergrond van een website.' }), '\n', (0, l.jsx)(n.li, { children: 'Iconen naast een tekst met dezelfde informatie.' }), '\n', (0, l.jsx)(n.li, { children: 'Sfeerbeelden.' }), '\n'] }), '\n', (0, l.jsx)(n.p, { children: 'Of een afbeelding decoratief is, hangt af van de context en het doel van de afbeelding. Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven en heeft dan geen beschrijving nodig. In een artikel over verschillende koeienrassen geeft dezelfde afbeelding wel informatie en hoort er w\xe9l een alternatieve tekst bij.' }), '\n', (0, l.jsx)(n.h2, { id: 'overwegingen', children: 'Overwegingen' }), '\n', (0, l.jsx)(n.p, { children: 'Vragen die je jezelf kunt stellen als je een decoratieve afbeelding plaatst:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Waarom wil ik deze afbeelding plaatsen?' }), '\n', (0, l.jsx)(n.li, { children: 'Als ik de afbeelding weglaat, welke informatie gaat er dan verloren?' }), '\n', (0, l.jsx)(n.li, { children: 'Als ik deze afbeelding ni\xe9t zou kunnen gebruiken, zou ik dan een vervangende afbeelding zoeken?' }), '\n'] }), '\n', (0, l.jsx)(n.h2, { id: 'alternatieve-teksten-verbergen-voor-hulpsoftware', children: 'Alternatieve teksten verbergen voor hulpsoftware' }), '\n', (0, l.jsxs)(n.p, { children: ['Gaat er geen informatie verloren? Dan heeft de afbeelding geen beschrijving nodig. Je kunt er dan voor kiezen om de afbeelding te verbergen voor hulpsoftware. Er is dan geen informatie meer beschikbaar over de afbeelding: niet w\xe1t er op de afbeelding staat, maar zelfs niet d\xe1t er een afbeelding staat. Bezoekers die gebruik maken van bijvoorbeeld een ', (0, l.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' hoeven dan niet onnodig naar de beschrijving te luisteren. Zorg er wel voor dat je echt zeker weet dat de afbeelding niet informatief is voordat je deze keuze maakt.'] }), '\n', (0, l.jsx)(r.X, { appearance: 'dont', title: 'Informatieve afbeeldingen verbergen voor hulpsoftware door het alt-attribuut leeg te laten.', children: (0, l.jsx)(a.X, { language: 'html', defaultExpandedCode: !0, children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg', alt: '' }) }) }) }), '\n', (0, l.jsx)(n.h2, { id: 'sfeerbeelden', children: 'Sfeerbeelden' }), '\n', (0, l.jsx)(n.p, { children: 'Je plaatst sfeerbeelden voornamelijk omdat ze passen bij de organisatie waar je voor werkt. Ze passen bijvoorbeeld bij jullie kernwaarden of de service die jullie verlenen. Sommige bezoekers die gebruikmaken van hulpsoftware willen daarom juist wel een beschrijving krijgen van decoratieve sfeerbeelden. Je kunt er dus ook voor kiezen om deze afbeeldingen wel een alternatieve tekst te geven. In dat geval beschrijf je inhoudelijk wat er op de afbeelding te zien is.' }), '\n', (0, l.jsx)(n.h2, { id: 'decoratieve-afbeeldingen-beschrijven', children: 'Decoratieve afbeeldingen beschrijven' }), '\n', (0, l.jsx)(n.p, { children: 'Het helpt om je voor te stellen dat je de afbeelding beschrijft aan iemand die hem niet kan zien, bijvoorbeeld iemand aan de telefoon. Denk na over welke kenmerken van een afbeelding belangrijk zijn om te benoemen.' }), '\n', (0, l.jsx)(n.p, { children: 'Mogelijke kenmerken:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Het precieze aantal mensen, dieren of objecten in de afbeelding.' }), '\n', (0, l.jsx)(n.li, { children: 'De gezichtsuitdrukkingen van de mensen in de afbeelding.' }), '\n', (0, l.jsx)(n.li, { children: 'Het geslacht of gender van de mensen in de afbeelding.' }), '\n', (0, l.jsx)(n.li, { children: 'De huidskleur van de mensen in de afbeelding.' }), '\n', (0, l.jsx)(n.li, { children: 'De acties die de mensen in de afbeelding uitvoeren.' }), '\n', (0, l.jsx)(n.li, { children: "Wat er op de achtergrond te zien is en of het voor ziende bezoekers duidelijk is, of moet zijn, wat er te zien is. Benoem je 'de Eiffeltoren' of 'Een hoge metalen constructie die taps toeloopt, met een antenne er op.'?" }), '\n'] }), '\n', (0, l.jsx)(n.p, { children: 'Of iets relevant is om te benoemen ligt aan de context: het doel van de pagina en bijvoorbeeld de kern- en merkwaarden van je organisatie.' }), '\n', (0, l.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, l.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/1.1.1/', children: 'Succescriterium 1.1.1 Niet-tekstuele content' }) }), '\n'] }), '\n', (0, l.jsx)(o.ZP, {})] });
    }
-   function u(e = {}) {
+   function h(e = {}) {
     const { wrapper: n } = { ...(0, i.a)(), ...e.components };
     return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(v, { ...e }) }) : v(e);
    }
   },
   43599: (e, n, t) => {
-   t.d(n, { X: () => f });
+   t.d(n, { X: () => p });
    var l = t(41179),
     i = t(37943),
     a = t(4814),
@@ -55,28 +55,28 @@
     g = t(75271),
     b = t(60027),
     v = t(52676);
-   const u = (e) => {
+   const h = (e) => {
     let { children: n } = e;
     return (0, v.jsx)(i.Tg, { className: 'nlds-canvas__example-surface', children: (0, v.jsx)(i.BB, { className: (0, a.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, v.jsx)(i.nv, { className: 'nlds-canvas__example-paragraph', children: n }) }) });
    };
-   u.displayName = 'ParagraphContainer';
-   const h = (e) => {
+   h.displayName = 'ParagraphContainer';
+   const u = (e) => {
     let { children: n } = e;
     return (0, v.jsx)(i.Tg, { className: 'nlds-canvas__example-surface', children: (0, v.jsx)(i.BB, { className: (0, a.Z)('utrecht-document--surface', 'nlds-canvas__example-document'), children: n }) });
    };
-   h.displayName = 'DocumentContainer';
-   const p = (e) => {
+   u.displayName = 'DocumentContainer';
+   const f = (e) => {
     let { children: n } = e;
     return (0, v.jsx)(i.Tg, { className: 'nlds-canvas__example-surface', children: n });
    };
-   p.displayName = 'SurfaceContainer';
-   const f = (e) => {
-    let { code: n, copy: t = !0, defaultExpandedCode: f = !1, displayCode: m = !0, children: j, container: k = 'document', language: y, designTokens: x } = e;
+   f.displayName = 'SurfaceContainer';
+   const p = (e) => {
+    let { code: n, copy: t = !0, defaultExpandedCode: p = !1, displayCode: m = !0, children: j, container: k = 'document', language: y, designTokens: x } = e;
     const _ = 'function' == typeof j ? j() : j,
      w = 'function' == typeof n ? n() : (0, g.isValidElement)(n) ? n : void 0,
      z = 'string' == typeof n ? n : b.uS(w || _),
      [N, D] = (0, g.useState)(z),
-     [C, S] = (0, g.useState)(f);
+     [C, S] = (0, g.useState)(p);
     (0, g.useEffect)(() => {
      (async () => {
       const e = await c.ZP.format(z, { parser: y, plugins: [r.Z, o.ZP, s.ZP, d.ZP], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
@@ -86,7 +86,7 @@
     const Z = (0, g.useId)();
     let P = g.Fragment;
     return (
-     'paragraph' === k ? (P = u) : 'document' === k ? (P = h) : 'surface' === k && (P = p),
+     'paragraph' === k ? (P = h) : 'document' === k ? (P = u) : 'surface' === k && (P = f),
      (0, v.jsxs)('div', {
       className: (0, a.Z)('nlds-canvas'),
       children: [
@@ -179,7 +179,7 @@
     let { lineNumber: n, syntax: t, textContent: d, trim: c } = e,
      g = d;
     const { title: b, type: v } = (0, a.useContext)(r.n),
-     u = (0, a.useId)();
+     h = (0, a.useId)();
     return (
      c && (g = g.trim()),
      (0, s.jsx)(i.y$, {
@@ -188,7 +188,7 @@
       language: t || '',
       children: (e) => {
        let { style: t, tokens: i, getLineProps: a, getTokenProps: r } = e;
-       return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)('span', { hidden: !0, id: u, children: ['codevoorbeeld ', v ? `\u201c${v}\u201d` : '', ' ', b ? ': ' : ' ', b] }), (0, s.jsx)(l.dn, { tabIndex: 0, role: b ? 'region' : void 0, 'aria-labelledby': u, style: t, children: i.map((e, t) => (0, s.jsxs)('span', { ...a({ line: e }), children: [n && (0, s.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, s.jsx)('span', { ...r({ token: e }) }, n)), '\n'] }, t)) })] });
+       return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', v ? `\u201c${v}\u201d` : '', ' ', b ? ': ' : ' ', b] }), (0, s.jsx)(l.dn, { tabIndex: 0, role: b ? 'region' : void 0, 'aria-labelledby': h, style: t, children: i.map((e, t) => (0, s.jsxs)('span', { ...a({ line: e }), children: [n && (0, s.jsx)('span', { children: t + 1 }), e.map((e, n) => (0, s.jsx)('span', { ...r({ token: e }) }, n)), '\n'] }, t)) })] });
       },
      })
     );
@@ -207,8 +207,8 @@
      let { title: n, appearance: t, description: o, children: c, figure: g } = e;
      const b = { do: 'Doen', dont: 'Niet doen' },
       v = g ? 'figure' : 'div',
-      u = g ? 'figcaption' : 'div';
-     return (0, s.jsxs)(v, { className: (0, r.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, s.jsxs)(u, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(a.nv, { className: (0, r.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, s.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: b.dont })] }), (0, s.jsx)(a.nv, { children: n })] }) : (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(a.nv, { className: (0, r.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, s.jsx)(i.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: b.do })] }), (0, s.jsx)(a.nv, { children: n })] }), o] }), (0, s.jsx)('div', { className: 'nlds-guideline__example', children: (0, s.jsx)(d.Provider, { value: { title: n, type: b[t] }, children: c }) })] });
+      h = g ? 'figcaption' : 'div';
+     return (0, s.jsxs)(v, { className: (0, r.Z)('nlds-guideline', `nlds-guideline--${t}`), id: 'string' == typeof n ? n?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, s.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === t ? (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(a.nv, { className: (0, r.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, s.jsx)(l.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: b.dont })] }), (0, s.jsx)(a.nv, { children: n })] }) : (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(a.nv, { className: (0, r.Z)('nlds-guideline__badge', `nlds-guideline__badge--${t}`), children: [(0, s.jsx)(i.Z, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: b.do })] }), (0, s.jsx)(a.nv, { children: n })] }), o] }), (0, s.jsx)('div', { className: 'nlds-guideline__example', children: (0, s.jsx)(d.Provider, { value: { title: n, type: b[t] }, children: c }) })] });
     };
   },
   40139: (e, n, t) => {
