@@ -45,7 +45,6 @@ export const MyComponent = ({ children, className }) => (
 Sta `ReactNode` content toe voor tekstparameters, zodat front-end developers toegankelijke en betekenisvolle markup kunnen gebruiken. Het gebruik van `PropsWithChildren` wordt aanbevolen voor niet-lege componenten, omdat dit `ReactNode` voor _children_ toestaat.
 
 ```jsx
-import clsx from "clsx";
 import type { PropsWithChildren } from "react";
 
 export interface MyComponentProps {
@@ -60,7 +59,6 @@ export const MyComponent = ({
 Voor andere parameters is het gebruik van `ReactNode` misschien niet zo voor de hand liggend, omdat je misschien geneigd bent te beginnen met `string`. Bijvoorbeeld:
 
 ```jsx
-import clsx from "clsx";
 import type { PropsWithChildren } from "react";
 
 export interface MyLandmarkComponentProps {
@@ -133,7 +131,6 @@ https://react.dev/blog/2024/12/05/react-19#ref-as-a-prop
 Gebruik `forwardRef` om de DOM-node beschikbaar te maken via een `ref`.
 
 ```jsx
-import clsx from "clsx";
 import type { ForwardedRef, HTMLAttributes, PropsWithChildren } from "react";
 
 export interface MyComponentProps extends HTMLAttributes<HTMLDivElement> {}
@@ -169,15 +166,12 @@ Zorg ervoor dat je in je code native HTML niet breekt. Hoe dit kan gebeuren is a
 Gebruik `restProps` om front-end developers in staat te stellen intrinsieke elementattributen en specifieke attributen aan een HTML-element toe te voegen:
 
 ```jsx
-import clsx from "clsx";
-
 export const MyComponent = ({ children, ...restProps }) => <div {...restProps}>{children}</div>;
 ```
 
 Met TypeScript moet je de interface uitbreiden met de `HTMLAttributes` van het buitenste element, en dat ziet er als volgt uit:
 
 ```jsx
-import clsx from "clsx";
 import type { HTMLAttributes, PropsWithChildren } from "react";
 
 export interface MyComponentProps extends HTMLAttributes<HTMLDivElement> {}
