@@ -71,7 +71,7 @@ export const MyLandmarkComponent = ({
   children,
   label,
 }: PropsWithChildren<MyComponentProps>) => {
-  const headingId = useId();
+  const labelId = useId();
   return (
     <div role="region" aria-labelledby={label ? labelId : undefined}>
       {label && <div id={labelId}>{label}</div>}
@@ -123,7 +123,12 @@ export interface AdvancedTextboxProps extends TextboxProps {
 export const AdvancedTextbox = ({ type }: AdvancedTextboxProps) => <input {...restProps} type={type} />;
 ```
 
-## Gebruik `forwardRef`
+## Gebruik `forwardRef` of React ref uit de props
+
+:::info
+Het onderstaande voorbeeld is nog steeds relevant, maar sinds React 19 is het mogelijk om de ref uit de props te halen.
+https://react.dev/blog/2024/12/05/react-19#ref-as-a-prop
+:::
 
 Gebruik `forwardRef` om de DOM-node beschikbaar te maken via een `ref`.
 
@@ -157,9 +162,9 @@ ref.current?.focus();
 
 Breek native HTML niet
 
-## Globale attributen
+## Intrinsieke elementattributen
 
-Gebruik `restProps` om front-end developers in staat te stellen globale attributen en specifieke attributen aan een HTML-element toe te voegen:
+Gebruik `restProps` om front-end developers in staat te stellen intrinsieke elementattributen en specifieke attributen aan een HTML-element toe te voegen:
 
 ```jsx
 import clsx from "clsx";
@@ -180,7 +185,7 @@ export const MyComponent = ({ children, ...restProps }) => (
 );
 ```
 
-Voor verschillende elementen moet je verschillende types `HTMLAttributes` importeren, daarvoor zou je kunnen kijken in de [veelgebruikte typings voor React](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L4100-L4282).
+Voor verschillende elementen moet je verschillende types `HTMLAttributes` importeren, daarvoor zou je kunnen kijken in de [veelgebruikte typings voor React](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/ff41535d2d84f62f459fa56a9c462182ed9d1ab3/types/react/index.d.ts#L4100-L4282).
 Op de Mozilla Developer website (MDN) kun je voor elk HTML element terugvinden wat daarvan de DOM Interface is onder "Technical Summary". Als voorbeeld [div](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div).
 
 ## Voorkom dubbele ID's
@@ -189,7 +194,7 @@ Genereer `id`-attributen met `useId()` van React. Gebruik geen hardgecodeerde `i
 
 ```jsx
 export const MyLandmarkComponent = ({ children, label }) => {
-  const headingId = useId();
+  const labelId = useId();
   return (
     <div role="region" aria-labelledby={label ? labelId : undefined}>
       {label && <div id={labelId}>{label}</div>}
