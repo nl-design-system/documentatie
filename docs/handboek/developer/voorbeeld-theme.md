@@ -28,7 +28,15 @@ Daarna is het fijn om de component aan te kunnen passen via het voorbeeld-thema.
 
 ## De aanpassing doorvoeren bij het voorbeeld-thema
 
+:::info
+Het is ten aller tijden handig om een issue aan te maken in de [themes repository](https://github.com/nl-design-system/themes/issues). Hierdoor is het inzichtelijk waarom je de wijziging voorstelt.
+:::
+
 Om de oplossing door te voeren moet je een aanpassing maken op de [themes repository](https://github.com/nl-design-system/themes/tree/main/packages/voorbeeld-design-tokens).
+
+In het mapje `themes/packages/voorbeeld-design-tokens/figma` vind je de file `voorbeeld.tokens.json`. Hier kun je de aanpassing maken voor de component.
+
+Vervolgens kun je een pull-request aanmaken en deze delen in het #nl-design-system-developers [Slack](/slack) kanaal.
 
 ## Meer hulp nodig?
 
