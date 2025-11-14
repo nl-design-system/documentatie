@@ -1,33 +1,33 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [68424],
+ [49619],
  {
-  91451: (e, t, n) => {
+  86837: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => u, component: () => y, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => m, metadata: () => l, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => l, component: () => m, contentTitle: () => a, default: () => g, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => u, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(40139),
     c = n(7629),
     s = n(8657);
-   const o = { title: 'Form Field Label', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Label', pagination_label: 'Form Field Label', description: 'Toont een tekstlabel dat informeert over de in te vullen informatie.', slug: '/form-field-label', keywords: ['caption', 'form', 'field label', 'form field label', 'form input', 'form label', 'formulier', 'formulierelement', 'label'] },
+   const o = { title: 'Text Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Text Input', pagination_label: 'Text Input', description: 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.', slug: '/text-input', keywords: ['editable textfield', 'form', 'form control', 'formulier', 'formulierelement', 'formfield', 'form field', 'form input', 'formulier-stap', 'input', 'input field', 'inputfield', 'invoerveld', 'invulveld', 'tekstveld', 'tekstinvoer', 'text box', 'textbox', 'text entry', 'text field', 'text input', 'textinput', 'veld'] },
     a = void 0,
-    l = { id: 'componenten/form-field-label/index', title: 'Form Field Label', description: 'Toont een tekstlabel dat informeert over de in te vullen informatie.', source: '@site/docs/componenten/form-field-label/index.mdx', sourceDirName: 'componenten/form-field-label', slug: '/form-field-label', permalink: '/form-field-label', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-label/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Form Field Label', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Label', pagination_label: 'Form Field Label', description: 'Toont een tekstlabel dat informeert over de in te vullen informatie.', slug: '/form-field-label', keywords: ['caption', 'form', 'field label', 'form field label', 'form input', 'form label', 'formulier', 'formulierelement', 'label'] }, sidebar: 'componenten', previous: { title: 'Form Field Error Message', permalink: '/form-field-error-message' }, next: { title: 'Form Navigation', permalink: '/form-navigation' } },
-    u = {},
+    u = { id: 'componenten/text-input/index', title: 'Text Input', description: 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.', source: '@site/docs/componenten/text-input/index.mdx', sourceDirName: 'componenten/text-input', slug: '/text-input', permalink: '/text-input', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/text-input/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Text Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Text Input', pagination_label: 'Text Input', description: 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.', slug: '/text-input', keywords: ['editable textfield', 'form', 'form control', 'formulier', 'formulierelement', 'formfield', 'form field', 'form input', 'formulier-stap', 'input', 'input field', 'inputfield', 'invoerveld', 'invulveld', 'tekstveld', 'tekstinvoer', 'text box', 'textbox', 'text entry', 'text field', 'text input', 'textinput', 'veld'] }, sidebar: 'componenten', previous: { title: 'Task List', permalink: '/task-list' }, next: { title: 'Text Area', permalink: '/text-area' } },
+    l = {},
     h = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Form Field Label',
-    j = 'Toont een tekstlabel dat informeert over de in te vullen informatie.',
-    m = 177,
-    y = c.find((e) => e.number === m);
-   function g(e) {
+    d = 'Text Input',
+    j = 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.',
+    y = 200,
+    m = c.find((e) => e.number === y);
+   function p(e) {
     const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: y, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: y, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(s.W, { component: y, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: y, headingLevel: 3 })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: m, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(s.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: m, headingLevel: 3 })] });
    }
-   function p(e = {}) {
+   function g(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(g, { ...e }) }) : g(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(p, { ...e }) }) : p(e);
    }
   },
   3050: (e, t, n) => {
@@ -46,7 +46,7 @@
   },
   35038: (e, t, n) => {
    'use strict';
-   n.d(t, { Zb: () => a, aY: () => o, um: () => l, wu: () => s });
+   n.d(t, { Zb: () => a, aY: () => o, um: () => u, wu: () => s });
    var r = n(37943),
     i = n(4814),
     c = n(52676);
@@ -56,12 +56,12 @@
     },
     o = (e) => (0, c.jsx)('div', { className: 'card__content', ...e }),
     a = (e) => {
-     let { href: t, appearance: n, className: s, component: o = 'div', background: a, children: l } = e;
-     const u = (e) => ('article' === o ? (0, c.jsx)('article', { ...e }) : 'section' === o ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
-      h = (0, c.jsx)(u, { className: (0, i.Z)('cardgroup__card', a && 'cardgroup__card--light-purple', `cardgroup__card--${n}`, s), children: l });
+     let { href: t, appearance: n, className: s, component: o = 'div', background: a, children: u } = e;
+     const l = (e) => ('article' === o ? (0, c.jsx)('article', { ...e }) : 'section' === o ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
+      h = (0, c.jsx)(l, { className: (0, i.Z)('cardgroup__card', a && 'cardgroup__card--light-purple', `cardgroup__card--${n}`, s), children: u });
      return t ? (0, c.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: h }) : h;
     },
-    l = (e) => {
+    u = (e) => {
      let { appearance: t = 'medium', children: n, className: r } = e;
      return (0, c.jsx)('div', { className: (0, i.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
     };
@@ -75,22 +75,22 @@
     s = n(7522),
     o = n(62559),
     a = n(79734),
-    l = n(32636),
-    u = n(52676);
-   const h = { figma: (0, u.jsx)(c.Z, {}), github: (0, u.jsx)(s.Z, {}), npm: (0, u.jsx)(o.Z, {}), storybook: (0, u.jsx)(a.Z, {}) },
+    u = n(32636),
+    l = n(52676);
+   const h = { figma: (0, l.jsx)(c.Z, {}), github: (0, l.jsx)(s.Z, {}), npm: (0, l.jsx)(o.Z, {}), storybook: (0, l.jsx)(a.Z, {}) },
     d = (e) => {
      let { brand: t } = e;
-     return (0, u.jsx)(r.JO, { children: h[t] || (0, u.jsx)(l.Z, {}) });
+     return (0, l.jsx)(r.JO, { children: h[t] || (0, l.jsx)(u.Z, {}) });
     };
    var j = n(35038),
-    m = n(28743);
-   const y = (e) => {
+    y = n(28743);
+   const m = (e) => {
     let { checked: t, unchecked: r } = e;
-    return (0, u.jsx)(m.Z, {
-     fallback: (0, u.jsx)(u.Fragment, {}),
+    return (0, l.jsx)(y.Z, {
+     fallback: (0, l.jsx)(l.Fragment, {}),
      children: () => {
       const e = n(80912).YE;
-      return (0, u.jsx)(e, {
+      return (0, l.jsx)(e, {
        radius: 20,
        arcWidth: 4,
        data: [
@@ -103,17 +103,17 @@
      },
     });
    };
-   var g = n(23355),
-    p = n(41757),
+   var p = n(23355),
+    g = n(41757),
     v = n(37943),
-    b = n(59954);
-   const f = (e) => {
+    k = n(59954);
+   const b = (e) => {
      let { children: t } = e;
-     return (0, u.jsx)('ul', { className: 'task-list', children: t });
+     return (0, l.jsx)('ul', { className: 'task-list', children: t });
     },
-    k = (e) => {
+    f = (e) => {
      let { checked: t, children: n, title: r, description: c, headingLevel: s = 3 } = e;
-     return (0, u.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, u.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, u.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, u.jsx)(b.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, u.jsxs)('div', { children: [(0, u.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
+     return (0, l.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, l.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
     };
    var x = n(14669);
    const _ = (e) => {
@@ -123,7 +123,7 @@
       o = (e) => (['Candidate - New', 'Candidate - Oud'].includes(e.title) ? 'Candidate' : e.title);
      return (
       t &&
-      (0, u.jsx)(r.a2, {
+      (0, l.jsx)(r.a2, {
        sections: s.map((e) => ({
         className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(o(e))}`),
         headingLevel: n,
@@ -131,15 +131,15 @@
         label: e ? `${o(e)} - ${e.progress.value} van ${e.progress.max}` : '',
         body:
          e &&
-         (0, u.jsxs)(u.Fragment, {
+         (0, l.jsxs)(l.Fragment, {
           children: [
-           (0, u.jsx)(f, {
+           (0, l.jsx)(b, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: i } = e;
-             return (0, u.jsx)(k, { headingLevel: n + 1, checked: t, title: r, description: (0, x.Q6)(i) }, i);
+             return (0, l.jsx)(f, { headingLevel: n + 1, checked: t, title: r, description: (0, x.Q6)(i) }, i);
             }),
            }),
-           (0, u.jsx)(r.nv, { children: (0, u.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [o(e), ' projectbord op GitHub'] }) }),
+           (0, l.jsx)(r.nv, { children: (0, l.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [o(e), ' projectbord op GitHub'] }) }),
           ],
          }),
        })),
@@ -150,7 +150,7 @@
      let { component: t, headingLevel: n } = e;
      const i = t && t.projects.filter((e) => !x.e9.includes(e.id));
      return t && i.length
-      ? (0, u.jsx)(j.um, {
+      ? (0, l.jsx)(j.um, {
          appearance: 'large',
          className: 'implementation-card-group',
          children: i
@@ -174,31 +174,31 @@
              let { name: t, value: n } = e;
              return s.has(t) && URL.canParse(n) && 'https:' === new URL(n).protocol;
             });
-           return (0, u.jsx)(
+           return (0, l.jsx)(
             j.Zb,
             {
              className: 'implementation-card',
-             children: (0, u.jsxs)(j.aY, {
+             children: (0, l.jsxs)(j.aY, {
               children: [
-               (0, u.jsx)(r.X6, { level: n, children: e.title.replace(/^Community/i, '') }),
-               (0, u.jsxs)(r.nv, { children: [(0, u.jsx)(y, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, u.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               (o.length > 0 || c.length > 0) && (0, u.jsx)(r.X6, { level: n + 1, children: 'Snel aan de slag' }),
+               (0, l.jsx)(r.X6, { level: n, children: e.title.replace(/^Community/i, '') }),
+               (0, l.jsxs)(r.nv, { children: [(0, l.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (o.length > 0 || c.length > 0) && (0, l.jsx)(r.X6, { level: n + 1, children: 'Snel aan de slag' }),
                o.length > 0 &&
-                (0, u.jsx)(u.Fragment, {
-                 children: (0, u.jsx)(r.Mc, {
+                (0, l.jsx)(l.Fragment, {
+                 children: (0, l.jsx)(r.Mc, {
                   links: o
                    .filter((e) => !!s.get(e.name))
                    .map((e) => {
                     const t = s.get(e.name);
-                    return { children: t.desciption, icon: (0, u.jsx)(d, { brand: t.brand }), href: e.value };
+                    return { children: t.desciption, icon: (0, l.jsx)(d, { brand: t.brand }), href: e.value };
                    }),
                  }),
                 }),
                c.length > 0 &&
-                (0, u.jsx)(u.Fragment, {
+                (0, l.jsx)(l.Fragment, {
                  children: c.map((e) => {
                   let { frameworkName: t, tasks: c } = e;
-                  return (0, u.jsxs)(u.Fragment, { children: [(0, u.jsxs)(r.X6, { level: n + 2, children: [i, ' in ', t] }), (0, u.jsx)(r.Mc, { links: c.map((e) => ({ children: e.description, icon: (0, u.jsx)(d, { brand: e.brand }), href: e.value })) })] });
+                  return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.X6, { level: n + 2, children: [i, ' in ', t] }), (0, l.jsx)(r.Mc, { links: c.map((e) => ({ children: e.description, icon: (0, l.jsx)(d, { brand: e.brand }), href: e.value })) })] });
                  }),
                 }),
               ],
@@ -208,18 +208,18 @@
            );
           }),
         })
-      : (0, u.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
+      : (0, l.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
     N = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
-     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, u.jsxs)(r.QI, { children: [i ? (0, u.jsxs)(r.AS, { children: ['Vul de ', (0, u.jsx)(r.rU, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, u.jsxs)(r.AS, { children: [(0, u.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, u.jsxs)(r.AS, { children: ['Draag bij aan de voortgang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, u.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, u.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
+     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.QI, { children: [i ? (0, l.jsxs)(r.AS, { children: ['Vul de ', (0, l.jsx)(r.rU, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.AS, { children: [(0, l.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.AS, { children: ['Draag bij aan de voortgang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
     A = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
      const c = t && x.$3[t.relayStep];
-     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsx)(p.V, { level: n, suffix: c && (0, u.jsx)(g.y, { state: c }), children: t.title }), (0, u.jsx)(r.nv, { lead: !0, children: i })] });
+     return t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(g.V, { level: n, suffix: c && (0, l.jsx)(p.y, { state: c }), children: t.title }), (0, l.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   23355: (e, t, n) => {
@@ -247,7 +247,7 @@
   },
   14669: (e, t, n) => {
    'use strict';
-   n.d(t, { $3: () => r, $e: () => g, BA: () => o, Ee: () => u, Q6: () => c, U: () => j, Yr: () => p, d: () => h, e9: () => s, fO: () => b, mA: () => i, ps: () => m, qU: () => f, s0: () => v, zP: () => y });
+   n.d(t, { $3: () => r, $e: () => p, BA: () => o, Ee: () => l, Q6: () => c, U: () => j, Yr: () => g, d: () => h, e9: () => s, fO: () => k, mA: () => i, ps: () => y, qU: () => b, s0: () => v, zP: () => m });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     c = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
@@ -256,23 +256,23 @@
    function a(e) {
     return Array.from(new Set(e));
    }
-   const l = (e) => {
+   const u = (e) => {
      const t = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular'];
      return [...e].sort((e, n) => t.indexOf(e) - t.indexOf(n));
     },
-    u = (e) => {
+    l = (e) => {
      const t = e
       .flatMap((e) => {
        let { projects: t } = e;
        return t;
       })
       .flatMap((e) => d(e));
-     return l(a(t));
+     return u(a(t));
     },
     h = (e, t) => j(e).includes(t),
     d = (e) => {
      const t = / URL \(([^)]+)\)/;
-     return l(
+     return u(
       a(
        e.tasks
         .filter((e) => {
@@ -286,8 +286,8 @@
       ),
      );
     },
-    j = (e) => l(a(e.projects.flatMap((e) => d(e)))),
-    m = (e) => {
+    j = (e) => u(a(e.projects.flatMap((e) => d(e)))),
+    y = (e) => {
      const t = d(e),
       n = ((e) => {
        const t = e.tasks.find((e) => {
@@ -311,20 +311,20 @@
       return { frameworkName: t, tasks: r };
      });
     },
-    y = (e) => e.join('.'),
-    g = (e) => '--' + e.join('-'),
-    p = (e, t) => t.reduce((e, t) => e?.[t], e);
+    m = (e) => e.join('.'),
+    p = (e) => '--' + e.join('-'),
+    g = (e, t) => t.reduce((e, t) => e?.[t], e);
    function v(e, t) {
     return void 0 === t && (t = []), Object.hasOwn(e, '$type') ? [t] : Object.keys(e).flatMap((n) => ('object' == typeof e[n] && null !== e[n] ? v(e[n], [...t, n]) : []));
    }
-   function b(e) {
+   function k(e) {
     const t = new Map();
     function n(e) {
-     return t.has(e) || t.set(e, y(e)), t.get(e);
+     return t.has(e) || t.set(e, m(e)), t.get(e);
     }
     return e.sort((e, t) => e.length - t.length || n(e).localeCompare(n(t)));
    }
-   function f(e) {
+   function b(e) {
     const t = {};
     for (const n of e) {
      let e = t;
