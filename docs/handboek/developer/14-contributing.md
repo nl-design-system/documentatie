@@ -108,9 +108,7 @@ export interface TextboxProps extends InputHTMLAttributes<HTMLInputElement> {
   type?: TextboxTypes;
 }
 
-export const Textbox = ({ type }: TextboxProps) => (
-  <input {...restProps} type={type} />
-);
+export const Textbox = ({ type }: TextboxProps) => <input {...restProps} type={type} />;
 ```
 
 Op deze manier kan een andere ontwikkelaar jouw component uitbreiden:
@@ -122,9 +120,7 @@ export interface AdvancedTextboxProps extends TextboxProps {
   type?: TextboxTypes | "date";
 }
 
-export const AdvancedTextbox = ({ type }: AdvancedTextboxProps) => (
-  <input {...restProps} type={type} />
-);
+export const AdvancedTextbox = ({ type }: AdvancedTextboxProps) => <input {...restProps} type={type} />;
 ```
 
 ## Gebruik `forwardRef`
@@ -153,7 +149,9 @@ Dit stelt front-end developers in staat om acties uit te voeren die toegang tot 
 
 ```jsx
 const ref = useRef < HTMLDivElement > null;
+
 render(<MyComponent tabIndex={0} ref={ref} />);
+
 ref.current?.focus();
 ```
 
