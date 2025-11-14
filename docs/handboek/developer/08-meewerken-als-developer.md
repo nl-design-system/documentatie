@@ -14,11 +14,11 @@ keywords:
 
 # Als developer meewerken aan NL Design System
 
-Wil je dat jouw componenten herbruikbaar zijn voor anderen die met NL Design System werken? Dan vragen we je te letten op de volgende punten:
+Wil je dat jouw componenten herbruikbaar zijn voor anderen die met NL Design System werken? Let dan op de volgende punten:
 
 - Deel je code als open source met de [EUPL-1.2 licentie](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12).
 - Vermijd huisstijl-specifieke code in je CSS, gebruik in plaats daarvan CSS variabelen voor design tokens NL Design System die ingevuld kunnen worden met de huisstijl van anderen.
-- Deel de styling van componenten in een `.css` bestand met alleen BEM class names, en zonder "side effects": geen code voor `body` , `p` of `:root`.
+- Deel de styling van componenten in een `.css` bestand met alleen BEM class names, en zonder "side effects": geen code voor `body`, `p` of `:root`.
 - Begin namen in je code met een prefix voor jouw organisatie, zoals in BEM class names, CSS variabelen en Custom Elements. Wij gebruiken `nl-`, jij kiest iets anders.
 - Baseer de namen in je code waar mogelijk op bestaande termen uit HTML, CSS, SVG en ARIA; deze hebben de voorkeur boven namen uit populaire frameworks en boven namen die je zelf bedenkt.
 - Publiceer een overzicht van je componenten in een Storybook website, met HTML voorbeeldcode van de componenten.
@@ -34,4 +34,4 @@ Kennis delen is maar een gedeelte van de oplossing: de kennis moet op het juiste
 
 ## Hulp nodig of gewoon even kennis maken?
 
-Dat kan! Onze gegevens kun je vinden op de [pagina over het kernteam](/project/kernteam)
+Dat kan! Onze gegevens kun je vinden op de [pagina over het kernteam](/project/kernteam) en op de [Slack](/slack) pagina kun je vinden hoe je deelneemt aan Slack.
