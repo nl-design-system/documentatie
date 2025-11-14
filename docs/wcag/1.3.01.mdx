@@ -20,8 +20,7 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.3.1-summary.md";
@@ -30,9 +29,9 @@ import Summary from "./summaries/_1.3.1-summary.md";
   {"WCAG-succescriterium 1.3.1 Info en relaties"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+## Uitleg
 
 Bijvoorbeeld:
 
@@ -44,22 +43,7 @@ Bijvoorbeeld:
 
 Geef via de juiste HTML of alternatieve teksten betekenis aan structuur, relaties, visuele informatie en opmaak, dan begrijpen gebruikers van hulpmiddelen deze informatie ook.
 
-## Gerelateerde NL Design System-richtlijnen
-
-- Formulieren: [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam).
-- Formulieren: [Geef een formulierveld toegankelijke naam met een label](/richtlijnen/formulieren/labels/toegankelijke-naam).
-- Formulieren: [Schrijf een foutmelding uit in tekst](/richtlijnen/formulieren/foutmeldingen/beschrijven).
-- Formulieren: [Maak de succesmelding toegankelijk voor alle gebruikers](/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding).
-- Content: [Koppen](/richtlijnen/content/tekstopmaak/koppen), [Tabellen](/richtlijnen/content/tekstopmaak/tabellen), [Opsommingen](/richtlijnen/content/tekstopmaak/opsommingen), [Tekst benadrukken](/richtlijnen/content/tekstopmaak/tekst-benadrukken), [Citaten](/richtlijnen/content/citaten).
-- Content: [Kantoorbestanden](/richtlijnen/content/kantoorbestanden).
-
-## Gebruikersonderzoek
-
-De rapportage van het 'Onderzoek online meldingen' geeft het belang van goede informatie voor screenreadergebruikers aan: [Blinden en slechtzienden lopen vast in het proces](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen#blinden-en-slechtzienden-lopen-vast-in-het-proces).
-
-> Het is voor de blinden niet duidelijk dat er een verplicht invulveld zit in de kaart om het adres in te vullen. Ze vullen het niet in en gaan door in het formulier. Dit, gecombineerd met een onduidelijke foutmelding zorgt er voor dat ze vast komen te zitten en uit het proces vallen.
-
-<CTAGebruikersonderzoek />
+### Voordelen
 
 ## Hoe te testen
 
@@ -77,21 +61,38 @@ Test voor formuliervelden:
 - Weet een screenreadergebruiker ook dat een veld verplicht is?
 - Worden fout- en succesmeldingen voorgelezen door een screenreader?
 
-## W3C referenties
+## Veelgemaakte fouten
+
+## Gerelateerde NL Design System-richtlijnen en WCAG criteria
+
+### NL Design System-richtlijnen
+
+- Formulieren: [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam).
+- Formulieren: [Geef een formulierveld toegankelijke naam met een label](/richtlijnen/formulieren/labels/toegankelijke-naam).
+- Formulieren: [Schrijf een foutmelding uit in tekst](/richtlijnen/formulieren/foutmeldingen/beschrijven).
+- Formulieren: [Maak de succesmelding toegankelijk voor alle gebruikers](/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding).
+- Content: [Koppen](/richtlijnen/content/tekstopmaak/koppen), [Tabellen](/richtlijnen/content/tekstopmaak/tabellen), [Opsommingen](/richtlijnen/content/tekstopmaak/opsommingen), [Tekst benadrukken](/richtlijnen/content/tekstopmaak/tekst-benadrukken), [Citaten](/richtlijnen/content/citaten).
+- Content: [Kantoorbestanden](/richtlijnen/content/kantoorbestanden).
+
+### WCAG richtlijnen
+
+## Bronnen
+
+### Officiële WCAG criteria
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.1 Info and Relationships</span>](https://www.w3.org/TR/WCAG22/#info-and-relationships).
 - Nederlandse vertaling van het WCAG-succescriterium: [1.3.1 Info en relaties](https://www.w3.org/Translations/WCAG22-nl/#info-and-relationships).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.1 Info and Relationships</span>](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.1 Info and Relationships</span>](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html).
 
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+## Wat is verplicht?
 
-## Help richtlijn verbeteren
+<Markdown omitH1>
+  <Disclaimer />
+</Markdown>
 
-<Markdown omitH1 headinglevel={3}>
+## Aanvullingen of opmerkingen?
+
+<Markdown omitH1>
   <WCAGFooterInfo />
 </Markdown>
