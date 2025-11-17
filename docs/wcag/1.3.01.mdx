@@ -34,52 +34,52 @@ import Summary from "./summaries/_1.3.1-summary.md";
 ## Uitleg
 
 Veel informatie op websites is alleen te zien. Een tekst is bijvoorbeeld groter en dikker gedrukt om over te komen als belangrijke koptekst. Als deze koptekst bij een paragraaf staat, dan is de koptekst de titel van de paragraaf.
-Tekst die in rijen of kolommen staat ziet eruit als een tabel. De woorden die onder en naast elkaar staan horen bij elkaar. Dit noemen we relaties.
-Deze relaties mogen niet alleen te zien zijn. Ze moeten ook in de code of in tekst zitten. Relaties in code of tekst kunnen ook begrepen worden met een [screenreaders](/woordenlijst/#screenreader), door een zoekmachine en Artificial Intelligence (AI).
+Tekst die in rijen of kolommen staat ziet eruit als een tabel. De woorden die onder en naast elkaar staan horen bij elkaar. Dit zijn relaties.
+Deze relaties mogen niet alleen te zien zijn. Ze moeten ook in de code of in tekst zitten. Relaties in code of tekst kunnen ook begrepen worden met een [screenreader](/woordenlijst/#screenreader), door een zoekmachine en Artificial Intelligence (AI).
 Daarnaast kan informatie in vormgeving verloren gaan. Onderdelen die op het ene scherm bij elkaar lijken te horen, kunnen op een andere resolutie die relatie kwijtraken. Informatie in code en tekst is robuster.
 
 Voor het overbrengen van relaties zijn er verschillende middelen:
 
-- Elementen van formulier kun je koppelen met een `<label>`.
-- `aria-labelledby` en `aria-describedby` voor namen en omschrijvingen. Dit is ook waardevol voor instructies en foutmeldingen bij formulieren.
-- Groepeer inhoud die visueel bij elkaar hoort ook in de code. Laat ze bijvoorbeeld onder dezelfde kopjes vallen, en plaatst lopende teksten in dezelfde paragraaf.
-- `aria-controls` geeft aan als een element controle heeft over een ander element.
-- `<nav>` kan groeperen én informatie geven over de navigatie op een pagina.
+- Elementen van formulieren koppel je met een `<label>`.
+- Gebruik `aria-labelledby` en `aria-describedby` voor namen en omschrijvingen. `aria-describedby` is ook voor foutmeldingen bij formulieren.
+- Inhoud die op het oog een groep vormt, moet in de code ook een groep zijn. Laat deze inhoud bijvoorbeeld onder dezelfde kopjes vallen, en plaatst lopende teksten in dezelfde paragraaf.
+- Geef met `aria-controls` aan als een element controle heeft over een ander element.
+- Met _landsmarks_ zoals `<nav>`, `<header>`, `<aside>`, `<main>` en `<footer>` maak je groeperingen en geef je een pagina structuur.
+- Kopteksten maak je op met heading-elementen zoals `<h1>`, `<h2>` en `<h3>`. Zo zien de teksten er uit als kopteksten, en ligt dit vast in de HTML.
 
-Voor het overbrengen van informatie zijn er veel opties in code:
+Zo heeft HTML nog meer nuttige elementen:
 
-- Maak voor lijsten gebruik van `<ol>`, `<li>` en `<dl>`. Gebruik geen leestekens als "bullets".
-- Maak HTML-headings van kopjes.
+- Gebruik een `<a>` voor navigatie naar een andere pagina.
+- Een `<button>` is het beste element voor het uitvoeren van acties.
+- Voor lijsten gebruik je `<ol>`, `<li>` en `<dl>`. Gebruik geen leestekens als "bullets".
 - Gebruik `<strong>` en `<em>` voor het benadrukken van tekst.
 - Gebruik attributen als `aria-expanded` om te communiceren als iets uitklapt.
-- Een tabel maak je op met `<table>`. Gebruik dit element niet voor andere doeleinden.
-- Een citaat kun je opmaken met `<q>` of `<blockquote>`.
+- Een tabel met data maak je op met `<table>`. Gebruik dit element niet voor andere doeleinden.
+- Een citaat maak je op met met `<q>` of `<blockquote>`.
 - Gebruik `<address>` voor een adresblok.
 
-De lijst van mogelijke HTML-elementen kan lang zijn. Dit zijn wel de meest voorkomende elementen. Bij een situatie waar je visueel iets communiceert en je geen HTML-tegenhanger kent, kan het handig zijn om na te vragen bij iemand met andere HTML-kennis. Bij gebrek aan passende HTML kan de visuele informatie in tekst uitgeschreven worden.
+Er zijn [113 HTML-elementen](https://meiert.com/indices/html-elements/). Om te voldoen aan de richtlijnen zijn de hier genoemde elementen genoeg. Als je geen geschikt HTML-element kent kan de informatie in tekst uitgeschreven worden.
 
 ### Voordelen
 
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Informatie over de structuur van content is voor iedereen beschikbaar.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Gebruik code om de relaties en informatie die je ziet over te brengen.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Mensen kunnen de weergave van een website aanpassen zonder dat de originele betekenis verandert.
-    </dd>
-  </div>
-</dl>
+Informatie die niet leunt op plaatjes of vormgeving is makkelijk aan te passen.
+
+- Mensen die een screenreader gebruiken kunnnen de informatie horen, of voelen met braille.
+- Browsers zoals Firefox en Safari hebben een stand die een leesbaardere pagina laat zien. Hiervoor is aangepaste vormgeving nodig.
+- Vertaalsoftware zoals Google Translate werkt niet met afbeeldingen maar wel met tekst en code.
+- HTML-code is leesbaarder.
+- Mensen kunnen pagina's bruikbaarder maken door zelf de vormgeving aan te passen.
+- Zoekmachines en AI werken beter met gestructureerde pagina's
 
 ## Hoe te testen
 
-Het is lastig om dit criterium zowel snel als volledig te testen. Voor een goede indruk:
+Dit criterium is lastig om zowel snel als volledig te testen. Voor een goede indruk controleer je of het uiterlijk van elementen overeenkomt met de code. Zo moet een dikgedrukte grote tekst die er uit ziet als een koptekst, ook opgemaakt zijn als een koptekst in de code. Dit geldt ook voor:
+
+- Tabellen
+- Lijsten
+- Formulieren - inclusief labels, instructies en foutmeldingen.
+- Links
+- Knoppen
 
 - Controleer of de volgende visuele elementen ook in de code kloppen:
   - Headings
