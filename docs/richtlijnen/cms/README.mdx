@@ -1,0 +1,82 @@
+---
+title: Introductie · CMS · Richtlijnen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Introductie
+sidebar_position: 0
+pagination_label: CMS
+description: Als leverancier van een content management systeem (CMS) kun je veel doen om contentmakers te helpen bij het maken van toegankelijke content.
+keywords:
+  - CMS
+  - leverancier
+  - Content Management Systeem
+  - publiceren
+  - toegankelijke content
+---
+
+{/* @license CC0-1.0 */}
+
+import { OverviewPage } from "@site/src/components/OverviewPage";
+import FooterInfo from "@nl-design-system-unstable/documentation/handboek/\_footer_info.md";
+
+# Introductie
+
+Een CMS bepaalt in hoge mate hoe contentmakers content invoeren, opmaken en publiceren. Door te bouwen met toegankelijke componenten uit het NL Design System kun je ervoor zorgen dat contentmakers automatisch werken met toegankelijke oplossingen, zonder dat ze daar zelf specialistische kennis voor nodig hebben.
+
+Gebruik dit overzicht om na te gaan of jouw CMS:
+
+- toegankelijk gedrag ondersteunt;
+- fouten voorkomt;
+- werkt met toegankelijke standaardcomponenten.
+
+## Toegankelijkheid van het CMS zelf
+
+In deze sectie ligt de focus op hoe je als CMS leverancier toegankelijk publiceren ondersteunt. Maar het is minstens zo belangrijk dat het CMS zelf toegankelijk is. Contentmakers moeten het systeem bijvoorbeeld óók kunnen gebruiken met hulptechnologie zoals een [screenreader](/woordenlijst/#screenreader), toetsenbord of vergrotingssoftware.
+
+De internationale standaard [ATAG 2.0 (Authoring Tool Accessibility Guidelines)](https://www.w3.org/WAI/standards-guidelines/atag/) van het W3C maakt dit onderscheid expliciet:
+
+- [**Deel A**](https://www.w3.org/TR/ATAG20/#part_a) gaat over de toegankelijkheid van het CMS zelf
+- [**Deel B**](https://www.w3.org/TR/ATAG20/#part_b) gaat over ondersteuning bij toegankelijk publiceren
+
+Veel van de richtlijnen in dit deel van het handboek sluiten aan bij de uitgangspunten van ATAG. We volgen die standaard niet letterlijk, maar vertalen de belangrijkste principes naar een praktische aanpak. De inhoud is niet volledig of af, maar wordt stap voor stap aangevuld op basis van praktijkervaring.
+
+## Algemene principes
+
+Zorg dat je CMS:
+
+- werkt met toegankelijke standaardcomponenten, zoals koppen, lijsten en tabellen (bijvoorbeeld de [componenten van het NL Design System](/componenten/));
+- alt-teksten, transcripties en andere alternatieven ondersteunt, bijvoorbeeld via velden en validatie bij het uploaden van media;
+- taalinstellingen per pagina én per tekstblok ondersteunt;
+- semantisch juiste opmaak afdwingt, bijvoorbeeld door nep-opsommingen of visuele tabellen voor layout te ontmoedigen;
+- feedback geeft bij foutgevoelige keuzes, zoals het overslaan van kopniveaus, het gebruik van onderstreping of lage contrastwaarden;
+- ondersteunt in elke fase van het publicatieproces, van invoer tot validatie en publicatie.
+
+## Toegankelijke componenten
+
+Toegankelijke content begint bij de juiste bouwstenen. Door te werken met componenten die al voldoen aan de toegankelijkheidseisen, maak je het voor contentmakers makkelijker om direct de juiste keuzes te maken.
+
+Het NL Design System biedt herbruikbare, toegankelijke componenten die zijn ontworpen volgens de WCAG-richtlijnen, gebruikersonderzoek en UX best practices. Deze componenten zijn beschikbaar in HTML/CSS en in verschillende frameworks, zoals React.
+
+Als CMS-ontwikkelaar kun je deze componenten integreren in je CMS, zodat contentmakers direct gebruikmaken van toegankelijke opmaak en structuur. In de [sectie voor developers van dit handboek van het NL Design System](/handboek/developer/overzicht) lees je hoe je deze componenten kunt hergebruiken in je eigen project.
+
+Bekijk het [componenten overzicht](/componenten/) om te zien wat er al beschikbaar is.
+
+## CMS-ondersteuning voor toegankelijke content
+
+Als CMS-bouwer kun je veel doen om toegankelijke content makkelijker te maken. In het hierna volgende overzicht zie je per contentonderdeel:
+
+- waar contentmakers ondersteuning bij nodig hebben;
+- hoe je het CMS daarop kunt inrichten;
+- welke componenten uit het NL Design System je kunt inzetten.
+
+Bekijk ook de [richtlijnen voor contentmakers](/richtlijnen/content), zodat je weet waar zij ondersteuning bij nodig hebben.
+
+Hierna vind je per onderdeel richtlijnen om toegankelijk publiceren eenvoudiger te maken.
+
+**Let op:** Dit overzicht is een vertrekpunt, geen complete handleiding. Hij wordt aangevuld op basis van ervaringen uit de praktijk.
+
+<OverviewPage excludeDocIDs={["richtlijnen/cms/README"]} />
+
+---
+
+<FooterInfo />
