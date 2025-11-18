@@ -81,18 +81,59 @@ Dit criterium is lastig om zowel snel als volledig te testen. Voor een goede ind
 - Links
 - Knoppen
 
-- Controleer of de volgende visuele elementen ook in de code kloppen:
-  - Headings
-  - Tabellen
-  - Lijsten
-  - Formulieren - inclusief labels, instructies en foutmelding.
-
-Voor een volledige en/of verdere test is een [screenreaders](/woordenlijst/#screenreader) heel erg praktisch. Vergelijk dan de ervaring van de pagina zien, met die van de pagina niet zien.
+Voor een volledige en verdere test is een screenreaders heel erg praktisch. De pagina die je hoort mag niet minder informatie geven dan de pagina die je ziet.
 
 ## Veelgemaakte fouten
 
-- Gebruik zoveel mogelijk HTML-elementen. Bouw niet zelf wat al in HTML bestaat. Hiermee worden veel fouten voorkomen.
-- Als een leesteken ingezet wordt om iets vorm te geven, dan leidt dit vaak tot problemen.
+### HTML-elementen `<em>` en `<strong>` worden gebruikt voor vormgeving.
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+De HTML-elementen `<em>` en `<strong>` geven betekenis aan tekst. `<em>` geeft een stuk tekst nadruk en wordt gebruikt voor namen en termen. `<strong>` geeft een stuk tekst urgentie en benadrukt hoe belangrijk deze is.
+Beide HTML-elementen veranderen ook hoe de tekst er uit ziet. `<em>` maakt tekst schuin. `<strong>` maakt tekst dik. Als deze elementen puur voor vormgeving gebruikt worden klopt de boodschap niet meer.
+
+#### Oplossing
+
+Verwijder `<em>` en `<strong>`. Pas de vormgeving aan met CSS.
+
+### Een tekst ziet er uit als een koptekst maar is in de code geen koptekst.
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Een tekst is groot en dikgedrukt door CSS of de HTML-elementen `<em>` en `<strong>`. Deze manier van vormgeven bepaalt alleen het uiterlijk. Als het uiterlijk aangepast wordt of niet gezien wordt, dan is het niet duidelijk dat het een koptekst is.
+
+#### Oplossing
+
+Markeer de kopteksten met heading-elementen zoals `<h1>`, `<h2>` en `<h3>`. Verwijder eventuele elementen zoals `<em>` en `<strong>` omdat deze een andere betekenis hebben.
+
+### Een tekst ziet er uit als een label maar is niet zo opgemaakt.
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Een tekst staat bij een invoerveld en ziet er uit alsof deze het label is van het invoerveld. Deze tekst moet ook in de code gemarkeerd worden als `<label>` en de relatie met het invoerveld moet vastgelegd zijn. Zonder deze relatie heeft het invoerveld geen toegankelijke naam.
+
+#### Oplossing
+
+Pas het HTML-element `<label>` toe en gebruik het `for`-attribuut om het te verbinden met het invoerveld.
+
+### Informatie ziet er uit als een tabel maar is niet zo opgemaakt
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Een tabel is een goede manier om data te presenteren. De rijen en kolommen geven de relaties binnen de informatie weer. Deze relaties moeten niet alleen niet zien zijn, maar ook in de code zitten.
+Als het uiterlijk aangepast wordt of niet gezien wordt, dan gaan deze relaties verloren.
+
+#### Oplossing
+
+Markeer de tabel met `<table>` en gebruik `<th>` voor kopteksten.
 
 ## Gerelateerde NL Design System-richtlijnen en WCAG criteria
 
@@ -109,11 +150,9 @@ Voor een volledige en/of verdere test is een [screenreaders](/woordenlijst/#scre
 
 ## Bronnen
 
-- Browserextensie [<span lang="en">Headingsmap</span>](https://github.com/dzc34/headingsMap)
-
-De rapportage van het 'Onderzoek online meldingen' geeft het belang van goede informatie voor screenreadergebruikers aan: [Blinden en slechtzienden lopen vast in het proces](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen#blinden-en-slechtzienden-lopen-vast-in-het-proces).
-
-> Het is voor de blinden niet duidelijk dat er een verplicht invulveld zit in de kaart om het adres in te vullen. Ze vullen het niet in en gaan door in het formulier. Dit, gecombineerd met een onduidelijke foutmelding zorgt er voor dat ze vast komen te zitten en uit het proces vallen.
+- Browserextensie [<span lang="en">Headingsmap</span>](https://github.com/dzc34/headingsMap) geeft de structuur van kopteksten weer.
+- Browserextensie [<span lang="en">Landmarks</span>](https://matatk.agrip.org.uk/landmarks/) geeft de structuur van landmarks weer.
+- Het onderzoek [Blinden en slechtzienden lopen vast in het proces](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen#blinden-en-slechtzienden-lopen-vast-in-het-proces) op gebruikersonderzoeken.nl. In dit onderzoek hadden gebruikers problemen met onduidelijk gemarkeerde code.
 
 ## Officiële WCAG criteria
 
