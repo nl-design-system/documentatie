@@ -17,7 +17,9 @@ Op deze pagina vindt je tips om componenten te testen op de juiste aspecten.
 
 ## Testen op uitbreidbaarheid
 
-## Class namen
+Zoals op de [bijdragen pagina](/handboek/developer/bijdragen) is beschreven, is uitbreidbaarheid erg belangrijk. Daarom is het van belang om uitbreidbaarheid te testen.
+
+### Class namen
 
 Front-end developers vertrouwen op de BEM-klassnamen om hun eigen CSS toe te voegen. Wanneer het component een class naam hernoemt of verwijdert, is er sprake van een 'breaking change'. Unit tests moeten elke class naam controleren, zodat het betrouwbare API's zijn. Je zult veel tests zoals deze tegenkomen:
 
@@ -31,7 +33,8 @@ it("renders a design system BEM class name: my-component", () => {
 });
 ```
 
-HTML-content in componenten
+## HTML-content in componenten
+
 Tekst in componenten kan soms worden verbeterd met markup: taalmetadata, code, nadruk of afbeeldingen. Elke property die in de HTML terechtkomt, moet worden getest op uitbreidbaarheid met rich text-content.
 
 ```javascript
@@ -64,8 +67,9 @@ it('renders rich text content', () => {
 });
 ```
 
-Maak native HTML niet kapot
-Globale attributen
+## Maak native HTML niet kapot
+
+### Globale attributen
 
 Globale attributen kunnen op alle HTML-elementen worden gebruikt, dus componenten die HTML renderen moeten deze ook ondersteunen. In React is dit eenvoudig te ondersteunen met ...restProps. De volgende codevoorbeelden gebruiken globale attributen:
 
@@ -80,7 +84,7 @@ Globale attributen kunnen op alle HTML-elementen worden gebruikt, dus componente
 <MyComponent role="group" />
 ```
 
-Het hidden attribuut
+### Het hidden attribuut
 
 De CSS voor een component breekt vaak het hidden attribuut, omdat code zoals display: flex de standaardstijlen overschrijft. Test of het hidden attribuut het [element] nog steeds onzichtbaar maakt.
 
@@ -94,7 +98,7 @@ it("can be hidden", () => {
 });
 ```
 
-De className property
+## De className property
 
 Componenten renderen BEM-klassnamen, maar front-end developers moeten ook hun eigen klassnamen kunnen gebruiken. Extra klassnamen moeten de klassenlijst uitbreiden, niet de klassnamen van het component overschrijven.
 
@@ -109,8 +113,9 @@ it("can have a additional class name", () => {
 });
 ```
 
-Test de accessibility tree
-Landmarks
+## Test de accessibility tree
+
+### Landmarks
 
 ```javascript
 it("renders an complementary role element", () => {
@@ -122,7 +127,7 @@ it("renders an complementary role element", () => {
 });
 ```
 
-Label voor landmarks
+### Label voor landmarks
 
 Sommige componenten hebben een API om het label te configureren:
 
@@ -152,18 +157,16 @@ it('renders an complementary role element with a name', () => {
 });
 ```
 
-States
+## States
+
 Voor WCAG 4.1.2 is het belangrijk dat de state (toestand) van componenten beschikbaar is in de accessibility tree. Testing Library heeft API's om de informatie uit de accessibility tree op te vragen, in plaats van via de DOM.
 
 Voorbeelden van state zijn:
 
-Een checkbox die checked (aangevinkt) is.
-
-Een textbox die disabled (uitgeschakeld) is.
-
-Een textarea die required (vereist) is.
-
-Een button die expanded (uitgeklapt) is.
+- Een checkbox die checked (aangevinkt) is.
+- Een textbox die disabled (uitgeschakeld) is.
+- Een textarea die required (vereist) is.
+- Een button die expanded (uitgeklapt) is.
 
 ```javascript
 describe("checked variant", () => {
