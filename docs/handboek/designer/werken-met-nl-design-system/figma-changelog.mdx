@@ -30,6 +30,252 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 5.0.0
+
+19 november 2025
+
+ToDo component Case Card bijgewerkt.
+
+- Verschillende design tokens toegevoegd.
+- Naamgeving in het property panel aangepast.
+- Teksten in het documenatie frame bijgewerkt.
+
+Het is met deze aanpassingen gemakkelijker om de oude Case Card te verwijderen en in te wisselen voor de aangepaste versie uit de Figma Bibliotheek.
+
+- [Bekijk Case Card in de NL Design System - ToDo Bibliotheek](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=3677-5184).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "todo": {
+    "case-card": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.action-2.bg-default}"
+      },
+      "border-radius": {
+        "$type": "dimension",
+        "$value": "{basis.border-radius.sm}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "192px"
+      },
+      "min-inline-size": {
+        "$type": "dimension",
+        "$value": "328px"
+      },
+      "padding-block": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.2xl}"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.3xl}"
+      },
+      "row-gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.row.lg}"
+      },
+      "description": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        }
+      },
+      "heading": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.heading.color}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.heading.font-family}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.xl}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.heading.font-weight}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.xl}"
+        }
+      },
+      "metadata": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        }
+      },
+      "icon": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "size": {
+          "$type": "dimension",
+          "$value": "{basis.size.icon.md}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.bg-active}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.focus.background-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.focus.color}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.bg-hover}"
+        }
+      },
+      "decoration": {
+        "folder": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.bg-active}"
+          },
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.action-2.bg-active}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.action-2.bg-active}"
+            }
+          },
+          "focus": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.focus.background-color}"
+            }
+          }
+        },
+        "paper": {
+          "background-color": {
+            "$type": "color",
+            "$value": "#ffffff"
+          }
+        }
+      },
+      "archived": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-default}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "description": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-document}"
+          }
+        },
+        "heading": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.heading.color}"
+          }
+        },
+        "metadata": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-document}"
+          }
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-active}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-hover}"
+          }
+        },
+        "decoration": {
+          "folder": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-active}"
+            },
+            "active": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{basis.color.default.bg-active}"
+              }
+            },
+            "hover": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{basis.color.default.bg-active}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 4.2.1
 
 14 november 2025
