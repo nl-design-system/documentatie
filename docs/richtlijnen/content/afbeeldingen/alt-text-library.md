@@ -1,11 +1,11 @@
 ---
-title: Alt-tekst voorbeelden · Afbeeldingen · Content · Richtlijnen
+title: Alt-tekst bieb · Afbeeldingen · Content · Richtlijnen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Alt-tekst voorbeelden
-pagination_label: Alt-tekst voorbeelden
+sidebar_label: Alt-tekst bieb
+pagination_label: Alt-tekst bieb
 description: Bibliotheek met voorbeelden van verschillende type alt-teksten.
-slug: /richtlijnen/content/afbeeldingen/alt-tekst-voorbeelden
+slug: /richtlijnen/content/afbeeldingen/alt-tekst-bieb
 keywords:
   - afbeeldingen
   - alternatieve tekst
