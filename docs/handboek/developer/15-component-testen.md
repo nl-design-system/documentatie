@@ -19,9 +19,9 @@ Op deze pagina vindt je tips om componenten te testen op de juiste aspecten.
 
 Zoals op de [bijdragen pagina](/handboek/developer/bijdragen) is beschreven, is uitbreidbaarheid erg belangrijk. Daarom is het van belang om uitbreidbaarheid te testen.
 
-### Class namen
+### Class-namen
 
-Front-end developers vertrouwen op de BEM-klassnamen om hun eigen CSS toe te voegen. Wanneer het component een class naam hernoemt of verwijdert, is er sprake van een 'breaking change'. Unit tests moeten elke class naam controleren, zodat het betrouwbare API's zijn. Je zult veel tests zoals deze tegenkomen:
+Front-end developers vertrouwen op de BEM class-namen om hun eigen CSS toe te voegen. Wanneer het component een class-naam hernoemt of verwijdert, is er sprake van een 'breaking change'. Unit tests moeten elke class-naam controleren, zodat het betrouwbare API's zijn. Je zult veel tests zoals deze tegenkomen:
 
 ```javascript
 it("renders a design system BEM class name: my-component", () => {
@@ -86,7 +86,7 @@ Globale attributen kunnen op alle HTML-elementen worden gebruikt, dus componente
 
 ### Het hidden attribuut
 
-De CSS voor een component breekt vaak het hidden attribuut, omdat code zoals display: flex de standaardstijlen overschrijft. Test of het hidden attribuut het [element] nog steeds onzichtbaar maakt.
+De CSS voor een component breekt vaak het `hidden`-attribuut, omdat code zoals `display: flex` de standaardstijlen overschrijft. Test of het `hidden`-attribuut het [element] nog steeds onzichtbaar maakt.
 
 ```javascript
 it("can be hidden", () => {
