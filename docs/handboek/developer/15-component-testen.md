@@ -100,7 +100,7 @@ it("can be hidden", () => {
 
 ## De className property
 
-Componenten renderen BEM-class-namen, maar front-end developers moeten ook hun eigen class-namen kunnen gebruiken. Extra class-namen moeten de lijst van class-namen uitbreiden, niet de class-namen van de component overschrijven.
+Componenten renderen BEM class-namen, maar front-end developers moeten ook hun eigen class-namen kunnen gebruiken. Extra class-namen moeten de lijst van class-namen uitbreiden, niet de class-namen van de component overschrijven.
 
 ```javascript
 it("can have a additional class name", () => {
