@@ -21,8 +21,8 @@
   "scripts": {
     "prepare": "husky",
     "docusaurus": "docusaurus",
-    "start": "npm-run-all --sequential start:docusaurus",
-    "start:docusaurus": "docusaurus start",
+    "start": "pnpm run dev",
+    "dev": "docusaurus start",
     "build": "npm-run-all --sequential build:workspaces build:docusaurus build:optimize-view-source",
     "build:component-pages": "docusaurus build",
     "build:docusaurus": "docusaurus build",
