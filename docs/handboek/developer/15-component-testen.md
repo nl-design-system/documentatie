@@ -21,7 +21,7 @@ Zoals op de [bijdragen pagina](/handboek/developer/bijdragen) is beschreven, is 
 
 ### Class-namen
 
-Front-end developers vertrouwen op de BEM class-namen om hun eigen CSS toe te voegen. Wanneer het component een class-naam hernoemt of verwijdert, is er sprake van een 'breaking change'. Unit tests moeten elke class-naam controleren, zodat het betrouwbare API's zijn. Je zult veel tests zoals deze tegenkomen:
+Front-end developers vertrouwen op de BEM class-namen om hun eigen CSS toe te voegen. Wanneer de component een class-naam hernoemt of verwijdert, is er sprake van een 'breaking change'. Unit tests moeten elke class-naam controleren, zodat het betrouwbare API's zijn. Je zult veel tests zoals deze tegenkomen:
 
 ```javascript
 it("renders a design system BEM class name: my-component", () => {
@@ -100,7 +100,7 @@ it("can be hidden", () => {
 
 ## De className property
 
-Componenten renderen BEM-klassnamen, maar front-end developers moeten ook hun eigen klassnamen kunnen gebruiken. Extra klassnamen moeten de klassenlijst uitbreiden, niet de klassnamen van het component overschrijven.
+Componenten renderen BEM-class-namen, maar front-end developers moeten ook hun eigen class-namen kunnen gebruiken. Extra class-namen moeten de lijst van class-namen uitbreiden, niet de class-namen van de component overschrijven.
 
 ```javascript
 it("can have a additional class name", () => {
