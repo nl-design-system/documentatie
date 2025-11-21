@@ -151,10 +151,6 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
   const frameworkNames = getProjectFrameworkNames(project);
   const alias = getComponentAlias(project);
 
-  // TODO: https://github.com/nl-design-system/kernteam/issues/1601 om Candidate - New te hernoemen naar Candidate, en Candidate - oud te archiveren. Dit doen we wanneer Yolijn terug is, to be safe.
-  const getProjectTitle = (project) =>
-    ['Candidate - New', 'Candidate - Oud'].includes(project.title) ? 'Candidate' : project.title;
-
   // Then group the tasks for each framework
   // { brand:'github', name: 'GitHub URL (CSS)', id: '...', value: '...', description: '...' }
   return frameworkNames.map((frameworkName) => {
@@ -164,7 +160,7 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
         const brand = /^(.+) URL/.exec(name)[1];
         const description =
           brand === 'Storybook'
-            ? `${alias} (${frameworkName}) in Storybook van ${getProjectTitle(project)}`
+            ? `${alias} (${frameworkName}) in Storybook van ${project.title}}`
             : `${alias} (${frameworkName}) op ${brand}`;
         return {
           brand: brand.toLowerCase(),
