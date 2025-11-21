@@ -38,6 +38,7 @@ interface Session {
   icalLink?: string;
   language: { abbr: string; description: string };
   videoId?: string;
+  videoIds?: string[];
   captioned?: boolean;
   captionId?: string;
 }
@@ -53,6 +54,7 @@ export const DSWSession = ({
 }: PropsWithChildren<DSWSessionProps>) => {
   const session = allSessions?.find(({ uuid }) => sessionId === uuid);
   const speakers = session && session.speakers.map((fullName) => allSpeakers[fullName]).filter(Boolean);
+  const videoIds = [videoId, session?.videoId, ...(session?.videoIds ?? [])].filter(Boolean);
 
   return session ? (
     <article className={clsx('dsw-session')}>
@@ -69,13 +71,9 @@ export const DSWSession = ({
             .map((speaker) => (speaker?.organisation ? `${speaker.name} - ${speaker.organisation}` : speaker.name))
             .join(' & ')}
       </Paragraph>
-      {videoId ||
-        (session?.videoId && (
-          <VideoPlayer
-            id={videoId ? videoId : session?.videoId}
-            title={session.subject}
-            style={{ marginBlock: '20px' }}
-          />
+      {videoIds.length > 0 &&
+        videoIds.map((vidId) => (
+          <VideoPlayer key={vidId} id={vidId} title={session.subject} style={{ marginBlock: '20px' }} />
         ))}
       {session && session.isoDateTime && session.isoDateTime > dateNow ? (
         <Paragraph>
