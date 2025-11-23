@@ -11,7 +11,7 @@ import {
 
 const groupName = 'image-type';
 
-//const autoFocus = (element: HTMLElement | null) => element?.focus();
+const autoFocus = (element: HTMLElement | null) => element?.focus();
 
 interface ImageTypeHelperProps {
   onChangeOption;
@@ -29,8 +29,8 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
           id="image-type-group"
           aria-describedby="image-type-group-description"
           role="radiogroup"
-          // ref={autoFocus}
-          // tabIndex={-1}
+          ref={autoFocus}
+          tabIndex={-1}
         >
           <FieldsetLegend>Wat is het doel van de afbeelding?</FieldsetLegend>
           <FormFieldDescription id="image-type-group-description">

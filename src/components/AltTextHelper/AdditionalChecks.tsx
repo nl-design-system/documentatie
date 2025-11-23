@@ -9,7 +9,7 @@ import {
 
 const groupName = 'extra-checks';
 
-// const autoFocus = (element: HTMLElement | null) => element?.focus();
+const autoFocus = (element: HTMLElement | null) => element?.focus();
 
 interface ImageTypeHelperProps {
   onChangeOption;
@@ -39,8 +39,8 @@ export default function AdditionalChecks({ onChangeOption, onPrevStep, onNextSte
           id="additional-checks-group"
           aria-describedby="additional-checks-group-description"
           role="radiogroup"
-          // ref={autoFocus}
-          // tabIndex={-1}
+          ref={autoFocus}
+          tabIndex={-1}
         >
           <FieldsetLegend>Welke kenmerken zijn van toepassing op de afbeelding?</FieldsetLegend>
           <FormFieldDescription id="additional-checks-group-description">
