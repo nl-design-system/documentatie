@@ -11,7 +11,7 @@ import {
 
 const groupName = 'context-type';
 
-// const autoFocus = (element: HTMLElement | null) => element?.focus();
+const autoFocus = (element: HTMLElement | null) => element?.focus();
 
 interface ImageTypeHelperProps {
   onChangeOption;
@@ -30,8 +30,8 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
           id="context-type-group"
           aria-describedby="image-type-group-description"
           role="radiogroup"
-          // ref={autoFocus}
-          // tabIndex={-1}
+          ref={autoFocus}
+          tabIndex={-1}
         >
           <FieldsetLegend>Wat voor soort afbeelding is het?</FieldsetLegend>
           <FormFieldDescription id="context-type-group-description">
