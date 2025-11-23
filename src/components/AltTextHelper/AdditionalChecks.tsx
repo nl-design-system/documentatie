@@ -4,15 +4,21 @@ import {
   FieldsetLegend,
   FormFieldDescription,
   FormFieldCheckbox,
+  Button,
 } from '@utrecht/component-library-react/dist/css-module';
+
+const groupName = 'extra-checks';
 
 // const autoFocus = (element: HTMLElement | null) => element?.focus();
 
 interface ImageTypeHelperProps {
   onChangeOption;
+  onPrevStep;
+  onNextStep;
+  active;
 }
 
-export default function AdditionalChecks({ onChangeOption }: ImageTypeHelperProps) {
+export default function AdditionalChecks({ onChangeOption, onPrevStep, onNextStep, active }: ImageTypeHelperProps) {
   const [checkedOptions, setCheckedOptions] = useState({
     text: false,
     clickable: false,
@@ -26,48 +32,46 @@ export default function AdditionalChecks({ onChangeOption }: ImageTypeHelperProp
     onChangeOption(name, checkedOptions[name]);
   };
 
-  return (
-    <>
-      <Fieldset
-        id="additional-checks-group"
-        aria-describedby="additional-checks-group-description"
-        role="radiogroup"
-        // ref={autoFocus}
-        // tabIndex={-1}
-      >
-        <FieldsetLegend>Welke kenmerken zijn van toepassing op de afbeelding?</FieldsetLegend>
-        <FormFieldDescription id="additional-checks-group-description">
-          Vink de toepasselijke opties aan:
-        </FormFieldDescription>
-        <FormFieldCheckbox
-          id="image-contains-text"
-          label="De afbeelding bevat zichtbare tekt"
-          name="text"
-          defaultChecked={!!checkedOptions.text}
-          onChange={handleChange}
-        />
-        <FormFieldCheckbox
-          id="image-is-clickable"
-          label="De afbeelding is een link of knop"
-          name="clickable"
-          defaultChecked={!!checkedOptions.clickable}
-          onChange={handleChange}
-        />
+  if (active === groupName) {
+    return (
+      <>
+        <Fieldset
+          id="additional-checks-group"
+          aria-describedby="additional-checks-group-description"
+          role="radiogroup"
+          // ref={autoFocus}
+          // tabIndex={-1}
+        >
+          <FieldsetLegend>Welke kenmerken zijn van toepassing op de afbeelding?</FieldsetLegend>
+          <FormFieldDescription id="additional-checks-group-description">
+            Vink de toepasselijke opties aan:
+          </FormFieldDescription>
+          <FormFieldCheckbox
+            id="image-contains-text"
+            label="De afbeelding bevat zichtbare tekt"
+            name="text"
+            defaultChecked={!!checkedOptions.text}
+            onChange={handleChange}
+          />
+          <FormFieldCheckbox
+            id="image-is-clickable"
+            label="De afbeelding is een link of knop"
+            name="clickable"
+            defaultChecked={!!checkedOptions.clickable}
+            onChange={handleChange}
+          />
 
-        {/* <div className="nlds-button-bar">
-          <Button appearance="secondary-action-button" onClick={prevStep}>
-            Terug
-          </Button>
+          <div className="nlds-button-bar">
+            <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
+              Terug
+            </Button>
 
-          <Button
-            appearance="primary-action-button"
-            disabled={selectedOption === '' ? true : false}
-            onClick={nextStep}
-          >
-            Toon advies
-          </Button>
-        </div> */}
-      </Fieldset>
-    </>
-  );
+            <Button appearance="primary-action-button" onClick={() => onNextStep(groupName)}>
+              Volgende stap
+            </Button>
+          </div>
+        </Fieldset>
+      </>
+    );
+  }
 }
