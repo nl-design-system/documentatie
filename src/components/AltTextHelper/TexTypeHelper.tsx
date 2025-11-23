@@ -11,7 +11,7 @@ import {
 
 const groupName = 'text-type';
 
-// const autoFocus = (element: HTMLElement | null) => element?.focus();
+const autoFocus = (element: HTMLElement | null) => element?.focus();
 
 interface ImageTypeHelperProps {
   onChangeOption;
@@ -30,8 +30,8 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
           id="text-type-group"
           aria-describedby="text-type-group-description"
           role="radiogroup"
-          // ref={autoFocus}
-          // tabIndex={-1}
+          ref={autoFocus}
+          tabIndex={-1}
         >
           <FieldsetLegend>Waarvoor is de tekst in de afbeelding bedoeld?</FieldsetLegend>
           <FormFieldDescription id="text-type-group-description">
@@ -121,10 +121,10 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 id="text-only-image"
                 name={groupName}
                 value="text-only-image-help"
-                // defaultChecked={selectedOption === 'text-only-image-help'}
-                // onChange={(e) => {
-                //   setSelectedOption(e.target.value);
-                // }}
+                defaultChecked={selectedOption === 'text-only-image-help'}
+                onChange={(e) => {
+                  setSelectedOption(e.target.value);
+                }}
               />
               <div>
                 <span className="bold-text">De tekst staat nergens anders op de pagina.</span>
