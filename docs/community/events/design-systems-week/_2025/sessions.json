@@ -43,7 +43,8 @@
     "isoDateTime": "2025-10-28T12:00:00.000Z",
     "speakers": ["GerbenStarink", "AlineNap", "BryanDeJong"],
     "subject": "Heartbeat - Design Systems Week editie",
-    "language": { "abbr": "NL", "description": "Nederlands" }
+    "language": { "abbr": "NL", "description": "Nederlands" },
+    "videoIds": ["744wIDdZ7N4", "G5t2s_-dAfo"]
   },
   {
     "uuid": "4077d9c1-acd9-4ff5-9d2c-2b89a5e3bd08",
