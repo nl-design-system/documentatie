@@ -11,8 +11,7 @@ const groupName = 'start';
 
 const AltTextHelper = () => {
   const [image, setImage] = useState({
-    decorative: false,
-    complex: false,
+    type: '',
     text: false,
     clickable: false,
     content: '',
@@ -35,7 +34,6 @@ const AltTextHelper = () => {
       current: setCurrentStep(prev),
       previous: prev,
     });
-    console.log(image);
   };
 
   const setCurrentStep = (prev) => {
@@ -43,7 +41,7 @@ const AltTextHelper = () => {
 
     switch (prev) {
       case 'image-type':
-        current = image.decorative ? 'extra-checks' : 'context-type';
+        current = image.type === 'decorative' ? 'extra-checks' : 'context-type';
         break;
       case 'context-type':
         current = 'extra-checks';
@@ -57,11 +55,11 @@ const AltTextHelper = () => {
       default:
         current = 'image-type';
     }
-
     return current;
   };
 
   const stepBack = (current) => {
+    console.log(current, steps.previous);
     setSteps({
       current: steps.previous,
       previous: setPreviousStep(current),
@@ -77,7 +75,7 @@ const AltTextHelper = () => {
         break;
       case 'helper-text':
         if (image.text) previous = 'text-type';
-        else if (!image.decorative) previous = 'context-type';
+        else if (image.type !== 'decorative') previous = 'context-type';
         else previous = 'image-type';
         break;
       default:
