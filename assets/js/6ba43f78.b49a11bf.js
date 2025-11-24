@@ -1,4 +1,4 @@
-/*! For license information please see 6ba43f78.ce1c4000.js.LICENSE.txt */
+/*! For license information please see 6ba43f78.b49a11bf.js.LICENSE.txt */
 'use strict';
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
  [1207],
@@ -39,14 +39,15 @@
        let { uuid: n } = e;
        return u === n;
       }),
-      p = h && h.speakers.map((e) => d[e]).filter(Boolean);
+      p = h && h.speakers.map((e) => d[e]).filter(Boolean),
+      k = [c, h?.videoId, ...(h?.videoIds ?? [])].filter(Boolean);
      return h
       ? (0, o.jsxs)('article', {
          className: (0, a.Z)('dsw-session'),
          children: [
           (0, o.jsx)(i.X6, { level: s, className: 'dsw-session__title', id: h.subject.toLowerCase().replace(/\s/gi, '-'), children: h.subject }),
           (0, o.jsx)(i.nv, { className: 'dsw-session__subtitle', lead: !0, children: p && p.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }),
-          c || (h?.videoId && (0, o.jsx)(r.Y, { id: c || h?.videoId, title: h.subject, style: { marginBlock: '20px' } })),
+          k.length > 0 && k.map((e) => (0, o.jsx)(r.Y, { id: e, title: h.subject, style: { marginBlock: '20px' } }, e)),
           h && h.isoDateTime && h.isoDateTime > l ? (0, o.jsx)(i.nv, { children: (0, o.jsx)('time', { dateTime: h.isoDateTime, children: new Intl.DateTimeFormat(n, { dateStyle: 'full', timeStyle: 'nl' === n ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(h.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}),
           g,
           'nl' === n &&
