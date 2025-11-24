@@ -30,6 +30,270 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 5.2.0
+
+24 november 2025
+
+Community componenten ‘Tabs’ van gemeente Amsterdam en Den Haag zijn toegevoegd aan de bibliotheek.
+
+- [Bekijk Tabs in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=25983-100533).
+- Hieronder vind je de bijbehorende design tokens.
+- Let op dat je per organisatie een aparte tokenset aanmaakt. Voor Amsterdam 'components/tabs/amsterdam' en voor Den Haag 'components/tabs/den-haag'. We hanteren hierbij een alfabetische volgorde.
+
+Amsterdam:
+
+```json
+{
+  "ams": {
+    "tabs": {
+      "gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.row.3xl}"
+      },
+      "button": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "cursor": {
+          "$type": "other",
+          "$value": "pointer",
+          "$description": "[code-only]"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "0px",
+          "$description": "[code-only]"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "-{basis.border-width.lg}",
+              "blur": "0",
+              "spread": "0",
+              "color": "{ams.tabs.button.color}",
+              "type": "innerShadow"
+            }
+          }
+        },
+        "disabled": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.disabled.color-subtle}"
+          },
+          "cursor": {
+            "$type": "other",
+            "$value": "not-allowed",
+            "$description": "[code-only]"
+          }
+        },
+        "selected": {
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "-{basis.border-width.lg}",
+              "blur": "0",
+              "spread": "0",
+              "color": "{ams.tabs.button.color}",
+              "type": "innerShadow"
+            }
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          }
+        }
+      },
+      "list": {
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "-{basis.border-width.sm}",
+            "blur": "0",
+            "spread": "0",
+            "color": "{basis.color.default.border-subtle}",
+            "type": "innerShadow"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+Den Haag:
+
+```json
+{
+  "denhaag": {
+    "tabs": {
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.border-subtle}"
+      },
+      "border-width": {
+        "$type": "borderWidth",
+        "$value": "{basis.border-width.sm}"
+      },
+      "border-style": {
+        "$type": "other",
+        "$value": "solid",
+        "$description": "[code-only]"
+      },
+      "width": {
+        "$type": "dimension",
+        "$value": "100%",
+        "$description": "[code-only]"
+      },
+      "tab": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "cursor": {
+          "$type": "other",
+          "$value": "pointer",
+          "$description": "[code-only]"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "outline": {
+          "$type": "other",
+          "$value": "0px",
+          "$description": "[code-only]"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          }
+        },
+        "focus": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.focus.color}"
+          }
+        },
+        "selected": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-document}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          }
+        }
+      },
+      "tab-indicator": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.border-active}"
+        },
+        "border-width": {
+          "$type": "borderWidth",
+          "$value": "{basis.border-width.lg}"
+        },
+        "bottom": {
+          "$type": "other",
+          "$value": "0px",
+          "$description": "[code-only]"
+        }
+      },
+      "tab-panel": {
+        "outline": {
+          "$type": "other",
+          "$value": "0px",
+          "$description": "[code-only]"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.3xl}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.3xl}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "0px"
+        }
+      }
+    }
+  }
+}
+```
+
 ## 5.0.1
 
 21 november 2025
