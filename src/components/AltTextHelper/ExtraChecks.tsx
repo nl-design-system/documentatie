@@ -18,7 +18,7 @@ interface ImageTypeHelperProps {
   active;
 }
 
-export default function AdditionalChecks({ onChangeOption, onPrevStep, onNextStep, active }: ImageTypeHelperProps) {
+export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, active }: ImageTypeHelperProps) {
   const [checkedOptions, setCheckedOptions] = useState({
     text: false,
     clickable: false,
@@ -28,8 +28,9 @@ export default function AdditionalChecks({ onChangeOption, onPrevStep, onNextSte
     const target = e.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
+    console.log(name, value);
     setCheckedOptions((values) => ({ ...values, [name]: value }));
-    onChangeOption(name, checkedOptions[name]);
+    onChangeOption(name, value);
   };
 
   if (active === groupName) {
