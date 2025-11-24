@@ -105,7 +105,7 @@ const AltTextHelper = () => {
       <ContextTypeHelper {...helperProps} onPrevStep={stepBack} />
       <ExtraChecks {...helperProps} onPrevStep={stepBack} />
       <TextTypeHelper {...helperProps} onPrevStep={stepBack} />
-      <HelperText onPrevStep={stepBack} active={steps.current} />
+      <HelperText onPrevStep={stepBack} active={steps.current} image={image} />
     </form>
   );
 };
