@@ -110,7 +110,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
               </div>
             </FormLabel>
           </FormField>
-          <FormField type="radio">
+          {/* <FormField type="radio">
             <FormLabel
               className="utrecht-form-field__label utrecht-form-field__label--radio"
               htmlFor="text-only-image"
@@ -130,7 +130,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 <span className="bold-text">De tekst staat nergens anders op de pagina.</span>
               </div>
             </FormLabel>
-          </FormField>
+          </FormField> */}
 
           <div className="nlds-button-bar">
             <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>

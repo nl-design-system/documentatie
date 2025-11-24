@@ -2,9 +2,10 @@ import { useState } from 'react';
 import ImageTypeHelper from './ImageTypeHelper';
 import ContextTypeHelper from './ContextTypeHelper';
 import TextTypeHelper from './TexTypeHelper';
-import AdditionalChecks from './AdditionalChecks';
+import ExtraChecks from './ExtraChecks';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import './AltTextHelper.css';
+import HelperText from './HelperText';
 
 const groupName = 'start';
 
@@ -18,7 +19,6 @@ const AltTextHelper = () => {
   });
 
   const changeProperty = (name, val) => {
-    console.log(name, val);
     setImage({
       ...image,
       [name]: val,
@@ -35,12 +35,11 @@ const AltTextHelper = () => {
       current: setCurrentStep(prev),
       previous: prev,
     });
+    console.log(image);
   };
 
   const setCurrentStep = (prev) => {
     let current = '';
-
-    console.log(prev, image);
 
     switch (prev) {
       case 'image-type':
@@ -50,7 +49,10 @@ const AltTextHelper = () => {
         current = 'extra-checks';
         break;
       case 'extra-checks':
-        current = image.text ? 'text-type' : groupName;
+        current = image.text ? 'text-type' : 'helper-text';
+        break;
+      case 'text-type':
+        current = 'helper-text';
         break;
       default:
         current = 'image-type';
@@ -62,8 +64,27 @@ const AltTextHelper = () => {
   const stepBack = (current) => {
     setSteps({
       current: steps.previous,
-      previous: current === 'text-type' ? 'extra-checks' : 'image-type',
+      previous: setPreviousStep(current),
     });
+  };
+
+  const setPreviousStep = (current) => {
+    let previous = '';
+
+    switch (current) {
+      case 'text-type':
+        previous = 'extra-checks';
+        break;
+      case 'helper-text':
+        if (image.text) previous = 'text-type';
+        else if (!image.decorative) previous = 'context-type';
+        else previous = 'image-type';
+        break;
+      default:
+        previous = 'image-type';
+    }
+
+    return previous;
   };
 
   const helperProps = { onChangeOption: changeProperty, onNextStep: stepForward, active: steps.current };
@@ -82,8 +103,9 @@ const AltTextHelper = () => {
       )}
       <ImageTypeHelper {...helperProps} />
       <ContextTypeHelper {...helperProps} onPrevStep={stepBack} />
-      <AdditionalChecks {...helperProps} onPrevStep={stepBack} />
+      <ExtraChecks {...helperProps} onPrevStep={stepBack} />
       <TextTypeHelper {...helperProps} onPrevStep={stepBack} />
+      <HelperText onPrevStep={stepBack} active={steps.current} />
     </form>
   );
 };
