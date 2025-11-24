@@ -28,7 +28,6 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
     const target = e.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
-    console.log(name, value);
     setCheckedOptions((values) => ({ ...values, [name]: value }));
     onChangeOption(name, value);
   };
@@ -64,7 +63,7 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
 
           <div className="nlds-button-bar">
             <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
-              Terug
+              Vorige stap
             </Button>
 
             <Button appearance="primary-action-button" onClick={() => onNextStep(groupName)}>
