@@ -7,8 +7,13 @@
   margin-block-end: var(--ifm-paragraph-margin-bottom);
 }
 
+.nlds-alt-text-helper .utrecht-spotlight-section {
+  margin-block-start: var(--ifm-paragraph-margin-bottom);
+}
+
 .nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-2,
-.nlds-alt-text-helper .nlds-helper-text > .utrecht-heading-2 {
+.nlds-alt-text-helper .nlds-helper-text > .utrecht-heading-2,
+.nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-3 {
   margin-block-start: 0;
 }
 
