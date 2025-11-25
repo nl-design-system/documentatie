@@ -10,6 +10,7 @@ import {
   Heading3,
   Heading4,
   Paragraph,
+  PreHeading,
 } from '@utrecht/component-library-react/dist/css-module';
 import { SpotlightSection } from '@utrecht/component-library-react';
 
@@ -30,6 +31,7 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
   if (active === groupName) {
     return (
       <>
+        <PreHeading>Stap 2 van 5</PreHeading>
         <Fieldset
           id="context-type-group"
           aria-describedby="image-type-group-description"
