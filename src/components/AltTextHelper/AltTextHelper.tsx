@@ -19,7 +19,6 @@ const AltTextHelper = () => {
   });
 
   const changeProperty = (name, val) => {
-    console.log(name, val);
     setImage({
       ...image,
       [name]: val,
@@ -61,11 +60,10 @@ const AltTextHelper = () => {
     return current;
   };
 
-  const stepBack = (current) => {
-    console.log(current, steps.previous);
+  const stepBack = () => {
     setSteps({
       current: steps.previous,
-      previous: setPreviousStep(current),
+      previous: setPreviousStep(steps.previous),
     });
   };
 

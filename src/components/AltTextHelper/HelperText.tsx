@@ -16,16 +16,22 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
       <>
         <div className="nlds-helper-text" ref={autoFocus} tabIndex={-1}>
           <PreHeading>Stap 5 van 5</PreHeading>
-          <Heading2>Volgorde van beschrijven</Heading2>
+          <Heading2>Hoe je de alt-tekst opbouwt</Heading2>
           <Paragraph>
             Niet elke afbeelding bevat dezelfde onderdelen. Gebruik deze volgorde om de alt-tekst op te bouwen met wat
             er wél aanwezig is:
           </Paragraph>
-          <Heading3>1. Beschrijf de tekst in de afbeelding </Heading3>
+          <ol>
+            <li>Beschrijf ten eerste de tekst in de afbeelding</li>
+            <li>Beschrijf vervolgens de afbeelding zelf</li>
+            <li>Beschrijf tot slot het doel van de afbeelding als deze klikbaar is</li>
+          </ol>
+          <Paragraph>
+            Hieronder lees je per stap wat je wel en niet beschrijft, afhankelijk van wat jouw afbeelding bevat.
+          </Paragraph>
           <ImageTextHelperText image={image} />
-          <Heading3>2. Beschrijf de afbeelding zelf</Heading3>
+          <Heading3>Beschrijving van de afbeelding</Heading3>
           <ImageTypeHelperText image={image} />
-          <Heading3>3. Beschrijf het doel van de klikbare afbeelding</Heading3>
           <ImageClickableHelperText image={image} />
         </div>
         <div className="nlds-button-bar">
@@ -116,8 +122,7 @@ export function ImageTypeDecorativeHelperText() {
   return (
     <>
       <Paragraph>
-        Omdat de afbeelding alleen decoratief is hoeft de afbeelding zelf niet te worden beschreven. Maar als de
-        afbeelding klikbaar is of tekst bevat dan kan het zijn dat de alt-tekst toch niet leeg gelaten mag worden.
+        Omdat de afbeelding alleen decoratief is hoeft de afbeelding zelf niet te worden beschreven.
       </Paragraph>
     </>
   );
@@ -158,10 +163,22 @@ interface ImageTextHelperTextProps {
 export function ImageTextHelperText({ image }: ImageTextHelperTextProps) {
   if (image.text && image.content !== '') {
     const helper = currentHelperText(image.content);
-
-    return <Paragraph>{helper.content}</Paragraph>;
-  } else {
-    return <Paragraph>Niet van toepassing, omdat deze afbeelding geen tekst bevat.</Paragraph>;
+    return (
+      <>
+        <Heading3>Beschrijving van de tekst</Heading3>
+        <Paragraph>{helper.content}</Paragraph>
+      </>
+    );
+  } else if (image.type === 'complex') {
+    return (
+      <>
+        <Heading3>Beschrijving van de tekst</Heading3>
+        <Paragraph>
+          Dit is een complexe afbeelding. Als de afbeelding tekst bevat, beschrijf deze dan in de uitgebreide
+          beschrijving van de afbeelding zelf.
+        </Paragraph>
+      </>
+    );
   }
 }
 
@@ -173,6 +190,7 @@ export function ImageClickableHelperText({ image }: ImageClickableHelperTextProp
   if (image.clickable || image.type === 'functional') {
     return (
       <>
+        <Heading3>Beschrijving van het doel van de klikbare afbeelding </Heading3>
         <Paragraph>
           Omdat de afbeelding een link of knop is moet in de alt-tekst duidelijk worden aangegeven wat er gebeurt als
           iemand erop klikt. Bijvoorbeeld:“Bekijk productinformatie” of “Ga naar contactpagina”
@@ -186,7 +204,5 @@ export function ImageClickableHelperText({ image }: ImageClickableHelperTextProp
         </Paragraph>
       </>
     );
-  } else {
-    return <Paragraph>Niet van toepassing, omdat deze afbeelding geen link of knop is.</Paragraph>;
   }
 }

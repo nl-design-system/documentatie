@@ -101,7 +101,7 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
           </SpotlightSection>
 
           <div className="nlds-button-bar">
-            <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
+            <Button appearance="secondary-action-button" onClick={onPrevStep}>
               Vorige stap
             </Button>
 
