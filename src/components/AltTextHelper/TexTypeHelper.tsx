@@ -133,7 +133,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
           </SpotlightSection>
 
           <div className="nlds-button-bar">
-            <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
+            <Button appearance="secondary-action-button" onClick={onPrevStep}>
               Vorige stap
             </Button>
 

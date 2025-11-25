@@ -50,13 +50,15 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
           <FormFieldDescription id="additional-checks-group-description">
             Vink de toepasselijke opties aan:
           </FormFieldDescription>
-          <FormFieldCheckbox
-            id="image-contains-text"
-            label="De afbeelding bevat zichtbare tekt"
-            name="text"
-            defaultChecked={!!checkedOptions.text}
-            onChange={handleChange}
-          />
+          {image.type !== 'complex' && (
+            <FormFieldCheckbox
+              id="image-contains-text"
+              label="De afbeelding bevat zichtbare tekt"
+              name="text"
+              defaultChecked={!!checkedOptions.text}
+              onChange={handleChange}
+            />
+          )}
           {image.type !== 'functional' && (
             <FormFieldCheckbox
               id="image-is-clickable"
@@ -78,7 +80,7 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
           )}
 
           <div className="nlds-button-bar">
-            <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
+            <Button appearance="secondary-action-button" onClick={onPrevStep}>
               Vorige stap
             </Button>
 
