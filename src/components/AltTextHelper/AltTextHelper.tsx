@@ -12,12 +12,14 @@ const groupName = 'start';
 const AltTextHelper = () => {
   const [image, setImage] = useState({
     type: '',
-    text: false,
     clickable: false,
+    descripted: false,
+    text: false,
     content: '',
   });
 
   const changeProperty = (name, val) => {
+    console.log(name, val);
     setImage({
       ...image,
       [name]: val,
@@ -41,7 +43,8 @@ const AltTextHelper = () => {
 
     switch (prev) {
       case 'image-type':
-        current = image.type === 'decorative' ? 'extra-checks' : 'context-type';
+        if (image.type === 'decorative' || image.type === 'functional') current = 'extra-checks';
+        else current = 'context-type';
         break;
       case 'context-type':
         current = 'extra-checks';
@@ -101,7 +104,7 @@ const AltTextHelper = () => {
       )}
       <ImageTypeHelper {...helperProps} />
       <ContextTypeHelper {...helperProps} onPrevStep={stepBack} />
-      <ExtraChecks {...helperProps} onPrevStep={stepBack} />
+      <ExtraChecks {...helperProps} onPrevStep={stepBack} image={image} />
       <TextTypeHelper {...helperProps} onPrevStep={stepBack} />
       <HelperText onPrevStep={stepBack} active={steps.current} image={image} />
     </form>
