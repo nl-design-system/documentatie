@@ -16,12 +16,14 @@ interface ImageTypeHelperProps {
   onPrevStep;
   onNextStep;
   active;
+  image;
 }
 
-export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, active }: ImageTypeHelperProps) {
+export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, active, image }: ImageTypeHelperProps) {
   const [checkedOptions, setCheckedOptions] = useState({
     text: false,
     clickable: false,
+    descripted: false,
   });
 
   const handleChange = (e) => {
@@ -53,13 +55,25 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
             defaultChecked={!!checkedOptions.text}
             onChange={handleChange}
           />
-          <FormFieldCheckbox
-            id="image-is-clickable"
-            label="De afbeelding is een link of knop"
-            name="clickable"
-            defaultChecked={!!checkedOptions.clickable}
-            onChange={handleChange}
-          />
+          {image.type !== 'functional' && (
+            <FormFieldCheckbox
+              id="image-is-clickable"
+              label="De afbeelding is óók een link of knop"
+              name="clickable"
+              defaultChecked={!!checkedOptions.clickable}
+              onChange={handleChange}
+            />
+          )}
+
+          {image.type === 'simple' && (
+            <FormFieldCheckbox
+              id="image-description-nearby"
+              label="De beschrijving van de afbeelding staat al naast, boven of onder de afbeelding"
+              name="descripted"
+              defaultChecked={!!checkedOptions.descripted}
+              onChange={handleChange}
+            />
+          )}
 
           <div className="nlds-button-bar">
             <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
