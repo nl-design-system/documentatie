@@ -5,6 +5,7 @@ import {
   FormFieldDescription,
   FormFieldCheckbox,
   Button,
+  PreHeading,
 } from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'extra-checks';
@@ -37,6 +38,7 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
   if (active === groupName) {
     return (
       <>
+        <PreHeading>Stap 3 van 5</PreHeading>
         <Fieldset
           id="additional-checks-group"
           aria-describedby="additional-checks-group-description"

@@ -1,4 +1,4 @@
-import { Heading2, Heading3, Button, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Heading2, Heading3, Button, Paragraph, PreHeading } from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'helper-text';
 
@@ -15,16 +15,17 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
     return (
       <>
         <div className="nlds-helper-text" ref={autoFocus} tabIndex={-1}>
+          <PreHeading>Stap 5 van 5</PreHeading>
           <Heading2>Volgorde van beschrijven</Heading2>
           <Paragraph>
-            Niet elke afbeelding bevat dezelfde onderdelen. Gebruik daarom deze volgorde om de alt-tekst op te bouwen
-            met wat er wél aanwezig is:
+            Niet elke afbeelding bevat dezelfde onderdelen. Gebruik deze volgorde om de alt-tekst op te bouwen met wat
+            er wél aanwezig is:
           </Paragraph>
-          <Heading3>1. Tekst in de afbeelding </Heading3>
+          <Heading3>1. Beschrijf de tekst in de afbeelding </Heading3>
           <ImageTextHelperText image={image} />
-          <Heading3>2. Beschrijving van de afbeelding zelf</Heading3>
+          <Heading3>2. Beschrijf de afbeelding zelf</Heading3>
           <ImageTypeHelperText image={image} />
-          <Heading3>3. Doel van de afbeelding</Heading3>
+          <Heading3>3. Beschrijf het doel van de klikbare afbeelding</Heading3>
           <ImageClickableHelperText image={image} />
         </div>
         <div className="nlds-button-bar">
@@ -49,6 +50,13 @@ export function ImageTypeHelperText({ image }: ImageTypeHelperTextProps) {
       return <ImageTypeComplexHelperText />;
     case 'decorative':
       return <ImageTypeDecorativeHelperText />;
+    case 'functional':
+      return (
+        <Paragraph>
+          De afbeelding is klikbaar is. Beschrijf alleen kort wat er te zien is als de inhoud iets toevoegt naast de
+          functie.
+        </Paragraph>
+      );
   }
 }
 
@@ -151,11 +159,9 @@ export function ImageTextHelperText({ image }: ImageTextHelperTextProps) {
   if (image.text && image.content !== '') {
     const helper = currentHelperText(image.content);
 
-    return (
-      <>
-        <Paragraph>{helper.content}</Paragraph>
-      </>
-    );
+    return <Paragraph>{helper.content}</Paragraph>;
+  } else {
+    return <Paragraph>Niet van toepassing, omdat deze afbeelding geen tekst bevat.</Paragraph>;
   }
 }
 
@@ -164,7 +170,7 @@ interface ImageClickableHelperTextProps {
 }
 
 export function ImageClickableHelperText({ image }: ImageClickableHelperTextProps) {
-  if (image.clickable) {
+  if (image.clickable || image.type === 'functional') {
     return (
       <>
         <Paragraph>
@@ -180,5 +186,7 @@ export function ImageClickableHelperText({ image }: ImageClickableHelperTextProp
         </Paragraph>
       </>
     );
+  } else {
+    return <Paragraph>Niet van toepassing, omdat deze afbeelding geen link of knop is.</Paragraph>;
   }
 }
