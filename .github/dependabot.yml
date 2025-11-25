@@ -10,6 +10,21 @@ updates:
     schedule:
       interval: "monthly"
     groups:
+      docusaurus:
+        applies-to: "version-updates"
+        patterns:
+          - "@docusaurus/*"
+        update-types:
+          - "patch"
+          - "minor"
+      storybook:
+        applies-to: "version-updates"
+        patterns:
+          - "@storybook/*"
+          - "storybook"
+        update-types:
+          - "patch"
+          - "minor"
       patch-and-minor-dependencies:
         applies-to: "version-updates"
         update-types:
