@@ -10,6 +10,7 @@ import {
   Heading3,
   Paragraph,
   SpotlightSection,
+  PreHeading,
 } from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'text-type';
@@ -29,6 +30,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
   if (active === groupName) {
     return (
       <>
+        <PreHeading>Stap 4 van 5</PreHeading>
         <Fieldset
           id="text-type-group"
           aria-describedby="text-type-group-description"
