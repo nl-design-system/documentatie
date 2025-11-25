@@ -38,7 +38,8 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
         >
           <FieldsetLegend>Wat is het doel van de afbeelding?</FieldsetLegend>
           <FormFieldDescription id="image-type-group-description">
-            Kies de optie die het beste past:
+            Soms doet een afbeelding meer dan één ding. Bijvoorbeeld: een kaart waarop je kunt klikken, of een
+            illustratie die ook een link is. Kies het belangrijkste doel van de afbeelding:
           </FormFieldDescription>
           <FormField type="radio">
             <FormLabel
@@ -92,9 +93,35 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
               </div>
             </FormLabel>
           </FormField>
+          <FormField type="radio">
+            <FormLabel
+              className="utrecht-form-field__label utrecht-form-field__label--radio"
+              htmlFor="image-type-functional"
+              type="radio"
+            >
+              <RadioButton
+                className="utrecht-form-field__input"
+                id="image-type-functional"
+                name={groupName}
+                value="image-type-functional-help"
+                defaultChecked={selectedOption === 'image-type-functional-help'}
+                onChange={(e) => {
+                  setSelectedOption(e.target.value);
+                  onChangeOption('type', 'functional');
+                }}
+              />
+              <div>
+                <span className="bold-text">
+                  De afbeelding wordt <em>alléén</em> gebruikt als een link of knop.
+                </span>
+                <br />
+                Dit heet een functionele afbeelding.
+              </div>
+            </FormLabel>
+          </FormField>
 
           <SpotlightSection>
-            <Heading3>Bepalen of een afbeelding decoratief is</Heading3>
+            <Heading3>Decoratieve afbeelding</Heading3>
             <Paragraph>
               Weet je niet zeker of de afbeelding echt decoratief is? Dit zijn vragen die je jezelf hierbij kunt
               stellen:
