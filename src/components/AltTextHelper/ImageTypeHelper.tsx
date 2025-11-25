@@ -11,6 +11,7 @@ import {
   Heading3,
   Heading4,
   Paragraph,
+  PreHeading,
 } from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'image-type';
@@ -29,6 +30,7 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
   if (active === groupName) {
     return (
       <>
+        <PreHeading>Stap 1 van 5</PreHeading>
         <Fieldset
           id="image-type-group"
           aria-describedby="image-type-group-description"
