@@ -1,0 +1,43 @@
+---
+title: Security audit voor npm
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Security audit voor npm
+pagination_label: Security audit voor npm
+description: Hoe voorkom je dat je security vulnerabilities installeert?
+keywords:
+  - GitHub Actions
+  - Continuous Integration
+  - npm
+slug: /pnpm-audit
+---
+
+# Security audit voor npm
+
+Om te voorkomen dat hackers controle kunnen krijgen over de software releases van NL Design System, doen we altijd eerst een security scan met `pnpm audit` voordat `pnpm install` wordt uitgevoerd. In GitHub Actions doen we dat zo:
+
+```yaml
+- name: Audit dependencies
+  run: pnpm audit --audit-level critical
+
+- name: Install dependencies
+  run: pnpm install --frozen-lockfile
+```
+
+Op deze manier stopt de GitHub Action wanneer in de dependencies een npm package is gevonden, waarvan inmiddels bekend is dat het onveilig kan zijn.
+
+## Snel ingrijpen
+
+Wanneer een security vulnerability bekend wordt, zoals [SHA1-Hulud](https://snyk.io/blog/sha1-hulud-npm-supply-chain-incident/), wil je snel kunnen ingrijpen en voorkomen dat de kwaadaardige npm package wordt geïnstalleerd op een plek waar gevoelig "environmen secrets" uit kunnen lekken.
+
+Omdat het in de praktijk zou het niet mogelijk zijn om snel genoeg alle branches van alle repositories te controleren, gebruiken we deze aanpak om automatisch elke `pnpm install` te voorkomen. Wanneer veiligheidsonderzoekers op een centrale plek een melding doen van een critical vulnerability, dan grijpt `pnpm audit` vanaf dat moment automatisch in.
+
+## Andere versie installeren
+
+De beste oplossing is vaak om de versie met het veiligheidsprobleem te vervangen door een andere versie. Soms is het probleem opgelost in een nieuwe versie, en dan is de oplossing om een update te installeren.
+
+Het kan ook zijn dat beheerders van die software nog bezig zijn het probleem op te lossen, en ze nog niet zeker weten of ze veilig een nieuwe versie kunnen uitbrengen. In dat geval kun je downgraden naar een oudere versie die nog wel veilig was.
+
+## Risico accepteren
+
+Wanneer je GitHub Action niet meer werkt door een security vulnerability, er geen alternatieve versies beschikbaar zijn om op over te stappen, en je zeker weet dat de security vulnerability niet op jouw project van toepassing is, dan kun je het risco accepteren en de melding negeren. Lees hiervoor de documentatie over de [`overrides` van `pnpm audit`](https://pnpm.io/settings#overrides).
