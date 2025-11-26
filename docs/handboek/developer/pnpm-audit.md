@@ -32,11 +32,26 @@ Wanneer een security vulnerability bekend wordt, zoals [SHA1-Hulud](https://snyk
 
 Omdat het in de praktijk niet mogelijk is om snel genoeg alle branches van alle repositories te controleren, gebruiken we deze aanpak om automatisch elke `pnpm install` te voorkomen. Wanneer veiligheidsonderzoekers op een centrale plek een melding doen van een critical vulnerability, dan grijpt `pnpm audit` vanaf dat moment automatisch in.
 
-## Andere versie installeren
+## Betere versies installeren
 
-De beste oplossing is vaak om de versie met het veiligheidsprobleem te vervangen door een andere versie. Soms is het probleem opgelost in een nieuwe versie, en dan is de oplossing om een update te installeren.
+Vaak is het probleem al opgelost in een nieuwe versie, en dan is de oplossing om een update te installeren. De makkelijkste manier is om met de command-line de volgende commando's uit te voeren.
 
-Het kan ook zijn dat beheerders van die software nog bezig zijn het probleem op te lossen, en ze nog niet zeker weten of ze veilig een nieuwe versie kunnen uitbrengen. In dat geval kun je downgraden naar een oudere versie die nog wel veilig was.
+```shell
+pnpm audit --fix
+pnpm install --ignore-scripts
+```
+
+Het eerste commando past de configuratie van pnpm aan, om alleen bepaalde veiligere versies te gebruiken. Het tweede commando installeert de aangepaste dependencies, en past de "lockfile" aan.
+
+Controleer of met deze wijzigingen de belangrijkste security vulnerabilities zijn opgelost:
+
+```shell
+pnpm audit --audit-level critical
+```
+
+Commit de wijzigingen aan `pnpm-lock.yaml` en `pnpm-workspace.yaml` en maak een Pull Request met je wijzigingen.
+
+**Let op:** test goed of je project nog goed werkt na het installeren van de updates, op de voor jou gebruikelijke manier. De updates bevatten meestal niet alleen veiligheidsverbeteringen, maar ook algemene verbeteringen die zijn gedaan sinds je voor het laatst alle updates installeerde.
 
 ## Risico accepteren
 
