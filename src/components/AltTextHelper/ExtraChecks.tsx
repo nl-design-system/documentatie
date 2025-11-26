@@ -46,9 +46,9 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
           ref={autoFocus}
           tabIndex={-1}
         >
-          <FieldsetLegend>Welke kenmerken zijn van toepassing op de afbeelding?</FieldsetLegend>
+          <FieldsetLegend>Welke aanvullende kenmerken gelden voor deze afbeelding?</FieldsetLegend>
           <FormFieldDescription id="additional-checks-group-description">
-            Vink de toepasselijke opties aan:
+            Selecteer wat van toepassing is:
           </FormFieldDescription>
           {image.type !== 'complex' && (
             <FormFieldCheckbox

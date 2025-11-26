@@ -7,11 +7,12 @@ import {
   FormLabel,
   RadioButton,
   Button,
-  SpotlightSection,
   Heading3,
   Heading4,
   Paragraph,
   PreHeading,
+  UnorderedList,
+  UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'image-type';
@@ -121,25 +122,23 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
               </div>
             </FormLabel>
           </FormField>
-
-          <SpotlightSection>
-            <Heading3>Decoratieve afbeelding</Heading3>
-            <Paragraph>
-              Weet je niet zeker of de afbeelding echt decoratief is? Dit zijn vragen die je jezelf hierbij kunt
-              stellen:
-            </Paragraph>
-            <ul>
-              <li>Waarom wil ik deze afbeelding plaatsen?</li>
-              <li>Als ik de afbeelding weglaat, welke informatie gaat er dan verloren?</li>
-              <li>Als ik deze afbeelding niét zou kunnen gebruiken, zou ik dan een vervangende afbeelding zoeken?</li>
-            </ul>
-            <Heading4>Context is bepalend</Heading4>
-            <Paragraph>
-              De context bepaalt of een afbeelding decoratief of informatief is, en wat er precies in de alt-tekst moet
-              staan. Bijvoorbeeld: Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven,
-              maar informatief in een artikel over verschillende koeienrassen.
-            </Paragraph>
-          </SpotlightSection>
+          <Heading3>Decoratieve afbeelding</Heading3>
+          <Paragraph>
+            Weet je niet zeker of de afbeelding echt decoratief is? Dit zijn vragen die je jezelf hierbij kunt stellen:
+          </Paragraph>
+          <UnorderedList>
+            <UnorderedListItem>Waarom wil ik deze afbeelding plaatsen?</UnorderedListItem>
+            <UnorderedListItem>Als ik de afbeelding weglaat, welke informatie gaat er dan verloren?</UnorderedListItem>
+            <UnorderedListItem>
+              Als ik deze afbeelding niét zou kunnen gebruiken, zou ik dan een vervangende afbeelding zoeken?
+            </UnorderedListItem>
+          </UnorderedList>
+          <Heading4>Context is bepalend</Heading4>
+          <Paragraph>
+            De context bepaalt of een afbeelding decoratief of informatief is, en wat er precies in de alt-tekst moet
+            staan. Bijvoorbeeld: Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven,
+            maar informatief in een artikel over verschillende koeienrassen.
+          </Paragraph>
           <div className="nlds-button-bar flex-end">
             <Button
               appearance="primary-action-button"

@@ -1,4 +1,12 @@
-import { Heading2, Heading3, Button, Paragraph, PreHeading } from '@utrecht/component-library-react/dist/css-module';
+import {
+  Heading2,
+  Heading3,
+  Button,
+  Paragraph,
+  PreHeading,
+  OrderedList,
+  OrderedListItem,
+} from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'helper-text';
 
@@ -21,14 +29,12 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
             Niet elke afbeelding bevat dezelfde onderdelen. Gebruik deze volgorde om de alt-tekst op te bouwen met wat
             er wél aanwezig is:
           </Paragraph>
-          <ol>
-            <li>Beschrijf ten eerste de tekst in de afbeelding</li>
-            <li>Beschrijf vervolgens de afbeelding zelf</li>
-            <li>Beschrijf tot slot het doel van de afbeelding als deze klikbaar is</li>
-          </ol>
-          <Paragraph>
-            Hieronder lees je per stap wat je wel en niet beschrijft, afhankelijk van wat jouw afbeelding bevat.
-          </Paragraph>
+          <OrderedList>
+            <OrderedListItem>Beschrijf ten eerste de tekst in de afbeelding</OrderedListItem>
+            <OrderedListItem>Beschrijf vervolgens de afbeelding zelf</OrderedListItem>
+            <OrderedListItem>Beschrijf tot slot het doel van de afbeelding als deze klikbaar is</OrderedListItem>
+          </OrderedList>
+          <Paragraph>Hieronder vind je de uitleg die past bij jouw gekozen situatie.</Paragraph>
           <ImageTextHelperText image={image} />
           <Heading3>Beschrijving van de afbeelding</Heading3>
           <ImageTypeHelperText image={image} />
@@ -59,7 +65,7 @@ export function ImageTypeHelperText({ image }: ImageTypeHelperTextProps) {
     case 'functional':
       return (
         <Paragraph>
-          De afbeelding is klikbaar is. Beschrijf alleen kort wat er te zien is als de inhoud iets toevoegt naast de
+          De afbeelding is klikbaar. Beschrijf alleen kort wat er te zien is als de inhoud iets toevoegt naast de
           functie.
         </Paragraph>
       );
