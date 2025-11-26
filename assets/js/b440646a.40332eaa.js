@@ -3,14 +3,14 @@
  [3694],
  {
   65786: (e, n, i) => {
-   i.r(n), i.d(n, { assets: () => l, contentTitle: () => r, default: () => c, frontMatter: () => s, metadata: () => d, toc: () => a });
+   i.r(n), i.d(n, { assets: () => a, contentTitle: () => r, default: () => c, frontMatter: () => s, metadata: () => d, toc: () => l });
    var t = i(52676),
     o = i(40139);
    const s = { title: 'GitHub \xb7 Developer \xb7 Handboek', hide_title: !0, slug: '/github', hide_table_of_contents: !1, sidebar_label: 'GitHub', pagination_label: 'GitHub', description: 'Waarom en hoe gebruikt NL Design System de tool Github?', keywords: ['GitHub Actions', 'GitHub', 'Deployment'] },
     r = 'GitHub',
-    d = { id: 'handboek/developer/github', title: 'GitHub \xb7 Developer \xb7 Handboek', description: 'Waarom en hoe gebruikt NL Design System de tool Github?', source: '@site/docs/handboek/developer/github.md', sourceDirName: 'handboek/developer', slug: '/github', permalink: '/github', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/github.md', tags: [], version: 'current', frontMatter: { title: 'GitHub \xb7 Developer \xb7 Handboek', hide_title: !0, slug: '/github', hide_table_of_contents: !1, sidebar_label: 'GitHub', pagination_label: 'GitHub', description: 'Waarom en hoe gebruikt NL Design System de tool Github?', keywords: ['GitHub Actions', 'GitHub', 'Deployment'] }, sidebar: 'handboek', previous: { title: 'GitHub Actions', permalink: '/handboek/developer/github-actions' }, next: { title: 'Vercel', permalink: '/vercel' } },
-    l = {},
-    a = [
+    d = { id: 'handboek/developer/github', title: 'GitHub \xb7 Developer \xb7 Handboek', description: 'Waarom en hoe gebruikt NL Design System de tool Github?', source: '@site/docs/handboek/developer/github.md', sourceDirName: 'handboek/developer', slug: '/github', permalink: '/github', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/github.md', tags: [], version: 'current', frontMatter: { title: 'GitHub \xb7 Developer \xb7 Handboek', hide_title: !0, slug: '/github', hide_table_of_contents: !1, sidebar_label: 'GitHub', pagination_label: 'GitHub', description: 'Waarom en hoe gebruikt NL Design System de tool Github?', keywords: ['GitHub Actions', 'GitHub', 'Deployment'] }, sidebar: 'handboek', previous: { title: 'GitHub Actions', permalink: '/handboek/developer/github-actions' }, next: { title: 'Security audit voor npm', permalink: '/pnpm-audit' } },
+    a = {},
+    l = [
      { value: 'Repositories', id: 'repositories', level: 2 },
      { value: 'Example: de template repository', id: 'example-de-template-repository', level: 3 },
      { value: 'Candidate', id: 'candidate', level: 3 },
