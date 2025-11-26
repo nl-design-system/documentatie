@@ -9,19 +9,21 @@ keywords:
   - developer
   - bijdragen
   - componenten testen
+  - css component testen
+  - react.js component testen
 ---
 
 # Componenten testen
 
-Op deze pagina vindt je tips om componenten te testen op de juiste aspecten.
+Op deze pagina vind je tips om componenten te testen op de juiste aspecten. De meeste voorbeelden zijn uitgewerkt voor React.js met React Testing Library, maar kunnen soms op andere frameworks toegepast worden.
 
 ## Testen op uitbreidbaarheid
 
-Zoals op de [bijdragen pagina](/handboek/developer/bijdragen) is beschreven, is uitbreidbaarheid erg belangrijk. Daarom is het van belang om uitbreidbaarheid te testen.
+Zoals op de [bijdragen pagina](/handboek/developer/bijdragen) is beschreven, is uitbreidbaarheid erg belangrijk. Daarom is het van belang om dit te testen.
 
-### Class-namen
+### Classes
 
-Front-end developers vertrouwen op de BEM class-namen om hun eigen CSS toe te voegen. Wanneer de component een class-naam hernoemt of verwijdert, is er sprake van een 'breaking change'. Unit tests moeten elke class-naam controleren, zodat het betrouwbare API's zijn. Je zult veel tests zoals deze tegenkomen:
+Front-end developers vertrouwen op de BEM classnames om hun eigen CSS toe te voegen. Wanneer de component een classname hernoemt of verwijdert, is er sprake van een 'breaking change'. Unit tests moeten elke classname controleren, zodat het betrouwbare API's zijn. Je zult veel tests zoals deze tegenkomen:
 
 ```javascript
 it("renders a design system BEM class name: my-component", () => {
@@ -41,7 +43,7 @@ Tekst in componenten kan soms worden verbeterd met markup: taalmetadata, code, n
 it("renders rich text content", () => {
   const { container } = render(
     <Heading1 {...defaultProps}>
-      The French national motto: <span lang="fr">Liberté, égalité, fraternité</span>
+      Wat Nederlandse tekst: <span lang="nl">aap, noot, mies</span>
     </Heading1>,
   );
 
@@ -57,7 +59,7 @@ Het testen van properties is misschien nog wel belangrijker, omdat children mees
 it('renders rich text content', () => {
   const { container } = render(
     <FormFieldTextbox label={
-      <EmailIcon/> E-mail address
+      <EmailIcon/> E-mailadres
     }></FormFieldTextbox>,
   );
 
@@ -84,7 +86,7 @@ Globale attributen kunnen op alle HTML-elementen worden gebruikt, dus componente
 <MyComponent role="group" />
 ```
 
-### Het hidden attribuut
+### Het `hidden` attribuut
 
 De CSS voor een component breekt vaak het `hidden`-attribuut, omdat code zoals `display: flex` de standaardstijlen overschrijft. Test of het `hidden`-attribuut het HTML-element nog steeds onzichtbaar maakt.
 
