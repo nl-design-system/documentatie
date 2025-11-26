@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f39fce95.css" />
-  <script src="/assets/js/runtime~main.611e9e40.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.512f80fa.js" defer="defer"></script>
   <script src="/assets/js/main.01a04ddb.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -225,8 +225,10 @@
               <p>Commit de wijzigingen aan <code class="utrecht-code">pnpm-lock.yaml</code> en <code class="utrecht-code">pnpm-workspace.yaml</code> en maak een Pull Request met je wijzigingen.</p>
               <p><strong>Let op:</strong> test goed of je project nog goed werkt na het installeren van de updates, op de voor jou gebruikelijke manier. De updates bevatten meestal niet alleen veiligheidsverbeteringen, maar ook algemene verbeteringen die zijn gedaan sinds je voor het laatst alle updates installeerde.</p>
               <h2 id="risico-accepteren" class="utrecht-heading-2">Risico accepteren</h2>
+              <p>Wanneer je GitHub Action niet meer werkt door een critical security vulnerability dan kan het zijn dat je werk geblokkeerd wordt, als er nog geen betere versie beschikbaar is.</p>
               <p>
-               Wanneer je GitHub Action niet meer werkt door een security vulnerability, er geen alternatieve versies beschikbaar zijn om op over te stappen, en je zeker weet dat de security vulnerability niet op jouw project van toepassing is, dan kun je het risco accepteren en de melding negeren. Lees hiervoor de documentatie over de <a href="https://pnpm.io/settings#overrides" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">overrides</code> van <code class="utrecht-code">pnpm audit</code></a
+               Als je zeker weet dat de security vulnerability niet op jouw project van toepassing is, dan kun je het risco accepteren en een specifieke security vulnerability (een zogenaamde &quot;<a href="https://www.cve.org/About/Overview" class="utrecht-link utrecht-link--html-a"><span lang="en">CVE</span></a
+               >&quot;) negeren. Lees hiervoor de documentatie over de <a href="https://pnpm.io/settings#auditconfigignorecves" class="utrecht-link utrecht-link--html-a">ignore CVE ID&#x27;s van <code class="utrecht-code">pnpm</code></a
                >.
               </p>
              </div>
