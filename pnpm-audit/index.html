@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f39fce95.css" />
-  <script src="/assets/js/runtime~main.2a511e52.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.611e9e40.js" defer="defer"></script>
   <script src="/assets/js/main.01a04ddb.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -203,9 +203,27 @@
               <h2 id="snel-ingrijpen" class="utrecht-heading-2">Snel ingrijpen</h2>
               <p>Wanneer een security vulnerability bekend wordt, zoals <a href="https://snyk.io/blog/sha1-hulud-npm-supply-chain-incident/" class="utrecht-link utrecht-link--html-a">SHA1-Hulud</a>, wil je snel kunnen ingrijpen en voorkomen dat de kwaadaardige npm package wordt geïnstalleerd op een plek waar gevoelige &quot;environment secrets&quot; uit kunnen lekken.</p>
               <p>Omdat het in de praktijk niet mogelijk is om snel genoeg alle branches van alle repositories te controleren, gebruiken we deze aanpak om automatisch elke <code class="utrecht-code">pnpm install</code> te voorkomen. Wanneer veiligheidsonderzoekers op een centrale plek een melding doen van een critical vulnerability, dan grijpt <code class="utrecht-code">pnpm audit</code> vanaf dat moment automatisch in.</p>
-              <h2 id="andere-versie-installeren" class="utrecht-heading-2">Andere versie installeren</h2>
-              <p>De beste oplossing is vaak om de versie met het veiligheidsprobleem te vervangen door een andere versie. Soms is het probleem opgelost in een nieuwe versie, en dan is de oplossing om een update te installeren.</p>
-              <p>Het kan ook zijn dat beheerders van die software nog bezig zijn het probleem op te lossen, en ze nog niet zeker weten of ze veilig een nieuwe versie kunnen uitbrengen. In dat geval kun je downgraden naar een oudere versie die nog wel veilig was.</p>
+              <h2 id="betere-versies-installeren" class="utrecht-heading-2">Betere versies installeren</h2>
+              <p>Vaak is het probleem al opgelost in een nieuwe versie, en dan is de oplossing om een update te installeren. De makkelijkste manier is om met de command-line de volgende commando&#x27;s uit te voeren.</p>
+              <span hidden="" id=":R2ehralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R2ehralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm audit --fix</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm install --ignore-scripts</span>
+</span></code></pre>
+              <p>Het eerste commando past de configuratie van pnpm aan, om alleen bepaalde veiligere versies te gebruiken. Het tweede commando installeert de aangepaste dependencies, en past de &quot;lockfile&quot; aan.</p>
+              <p>Controleer of met deze wijzigingen de belangrijkste security vulnerabilities zijn opgelost:</p>
+              <span hidden="" id=":R36hralaqh:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R36hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm audit --audit-level critical</span>
+</span></code></pre>
+              <p>Commit de wijzigingen aan <code class="utrecht-code">pnpm-lock.yaml</code> en <code class="utrecht-code">pnpm-workspace.yaml</code> en maak een Pull Request met je wijzigingen.</p>
+              <p><strong>Let op:</strong> test goed of je project nog goed werkt na het installeren van de updates, op de voor jou gebruikelijke manier. De updates bevatten meestal niet alleen veiligheidsverbeteringen, maar ook algemene verbeteringen die zijn gedaan sinds je voor het laatst alle updates installeerde.</p>
               <h2 id="risico-accepteren" class="utrecht-heading-2">Risico accepteren</h2>
               <p>
                Wanneer je GitHub Action niet meer werkt door een security vulnerability, er geen alternatieve versies beschikbaar zijn om op over te stappen, en je zeker weet dat de security vulnerability niet op jouw project van toepassing is, dan kun je het risco accepteren en de melding negeren. Lees hiervoor de documentatie over de <a href="https://pnpm.io/settings#overrides" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">overrides</code> van <code class="utrecht-code">pnpm audit</code></a
@@ -240,7 +258,7 @@
            <div class="tableOfContents_B1zO thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#snel-ingrijpen" class="table-of-contents__link toc-highlight">Snel ingrijpen</a></li>
-             <li><a href="#andere-versie-installeren" class="table-of-contents__link toc-highlight">Andere versie installeren</a></li>
+             <li><a href="#betere-versies-installeren" class="table-of-contents__link toc-highlight">Betere versies installeren</a></li>
              <li><a href="#risico-accepteren" class="table-of-contents__link toc-highlight">Risico accepteren</a></li>
             </ul>
            </div>
