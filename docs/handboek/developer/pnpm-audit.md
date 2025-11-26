@@ -55,4 +55,6 @@ Commit de wijzigingen aan `pnpm-lock.yaml` en `pnpm-workspace.yaml` en maak een 
 
 ## Risico accepteren
 
-Wanneer je GitHub Action niet meer werkt door een security vulnerability, er geen alternatieve versies beschikbaar zijn om op over te stappen, en je zeker weet dat de security vulnerability niet op jouw project van toepassing is, dan kun je het risco accepteren en de melding negeren. Lees hiervoor de documentatie over de [`overrides` van `pnpm audit`](https://pnpm.io/settings#overrides).
+Wanneer je GitHub Action niet meer werkt door een critical security vulnerability dan kan het zijn dat je werk geblokkeerd wordt, als er nog geen betere versie beschikbaar is.
+
+Als je zeker weet dat de security vulnerability niet op jouw project van toepassing is, dan kun je het risco accepteren en een specifieke security vulnerability (een zogenaamde "[<span lang="en">CVE</span>](https://www.cve.org/About/Overview)") negeren. Lees hiervoor de documentatie over de [ignore CVE ID's van `pnpm`](https://pnpm.io/settings#auditconfigignorecves).
