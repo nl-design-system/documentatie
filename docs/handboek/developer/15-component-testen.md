@@ -86,7 +86,7 @@ Globale attributen kunnen op alle HTML-elementen worden gebruikt, dus componente
 
 ### Het hidden attribuut
 
-De CSS voor een component breekt vaak het `hidden`-attribuut, omdat code zoals `display: flex` de standaardstijlen overschrijft. Test of het `hidden`-attribuut het [element] nog steeds onzichtbaar maakt.
+De CSS voor een component breekt vaak het `hidden`-attribuut, omdat code zoals `display: flex` de standaardstijlen overschrijft. Test of het `hidden`-attribuut het HTML-element nog steeds onzichtbaar maakt.
 
 ```javascript
 it("can be hidden", () => {
@@ -100,7 +100,7 @@ it("can be hidden", () => {
 
 ## De className property
 
-Componenten renderen BEM class-namen, maar front-end developers moeten ook hun eigen class-namen kunnen gebruiken. Extra class-namen moeten de lijst van class-namen uitbreiden, niet de class-namen van de component overschrijven.
+Componenten renderen BEM classnames, maar front-end developers moeten ook hun eigen classnames kunnen toevoegen. Extra classnames moeten de lijst van classnames uitbreiden, niet de classnames van de component overschrijven.
 
 ```javascript
 it("can have a additional class name", () => {
@@ -132,7 +132,7 @@ it("renders an complementary role element", () => {
 Sommige componenten hebben een API om het label te configureren:
 
 ```javascript
-it("renders an complementary role element with a name", () => {
+it("renders a complementary role element with a name", () => {
   render(<BreadcrumbNav label="Breadcrumbs" />);
 
   const nav = screen.getByRole("navigation", { name: "Breadcrumbs" });
@@ -144,7 +144,7 @@ it("renders an complementary role element with a name", () => {
 Andere componenten moeten vertrouwen op aria-labelledby of aria-label.
 
 ```javascript
-it('renders an complementary role element with a name', () => {
+it('renders a complementary role element with a name', () => {
   render(
     <Aside aria-labelledby="heading">
       <h2 id="heading">See also</h1>
@@ -159,7 +159,7 @@ it('renders an complementary role element with a name', () => {
 
 ## States
 
-Voor WCAG 4.1.2 is het belangrijk dat de state (toestand) van componenten beschikbaar is in de accessibility tree. Testing Library heeft API's om de informatie uit de accessibility tree op te vragen, in plaats van via de DOM.
+Voor [WCAG 4.1.2](https://nldesignsystem.nl/wcag/4.1.2/) is het belangrijk dat de state (toestand) van componenten beschikbaar is in de accessibility tree. Testing Library heeft API's om de informatie uit de accessibility tree op te vragen, in plaats van via de DOM.
 
 Voorbeelden van state zijn:
 
@@ -197,7 +197,7 @@ describe("checked variant", () => {
 });
 ```
 
-Helaas ondersteunt Testing Library nog niet elke state in de accessibility tree. Maak alvast wel de test, maar sla de test over (todo). Gebruik de DOM om de test op een alternatieve manier te doen.
+Helaas ondersteunt Testing Library nog niet elke state in de accessibility tree. Maak alvast wel de test, maar sla de test over middels een `todo`. Gebruik de DOM om de test op een alternatieve manier te doen.
 
 ```javascript
 // `aria-disabled` is somehow not recognized as disabled state on a listbox by Testing Library
