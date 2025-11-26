@@ -27,6 +27,11 @@ interface ImageTypeHelperProps {
 export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep, active }: ImageTypeHelperProps) {
   const [selectedOption, setSelectedOption] = useState('');
 
+  const selectRadio = (val) => {
+    setSelectedOption(val);
+    onChangeOption('content', val);
+  };
+
   if (active === groupName) {
     return (
       <>
@@ -38,7 +43,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
           ref={autoFocus}
           tabIndex={-1}
         >
-          <FieldsetLegend>Waarvoor is de tekst in de afbeelding bedoeld?</FieldsetLegend>
+          <FieldsetLegend>Welke beschrijving past bij de tekst in de afbeelding?</FieldsetLegend>
           <FormFieldDescription id="text-type-group-description">
             Kies de optie die het beste past:
           </FormFieldDescription>
@@ -55,8 +60,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 value="text-has-function"
                 defaultChecked={selectedOption === 'text-has-function'}
                 onChange={(e) => {
-                  setSelectedOption(e.target.value);
-                  onChangeOption('content', e.target.value);
+                  selectRadio(e.target.value);
                 }}
               />
               <div>
@@ -79,8 +83,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 value="text-visual-effect"
                 defaultChecked={selectedOption === 'text-visual-effect'}
                 onChange={(e) => {
-                  setSelectedOption(e.target.value);
-                  onChangeOption('content', e.target.value);
+                  selectRadio(e.target.value);
                 }}
               />
               <div>
@@ -90,6 +93,27 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 <br />
                 Bijvoorbeeld een watermerk, tekst in een screenshot, een afbeelding van een verpakking of een stapel
                 boeken.
+              </div>
+            </FormLabel>
+          </FormField>
+          <FormField type="radio">
+            <FormLabel
+              className="utrecht-form-field__label utrecht-form-field__label--radio"
+              htmlFor="text-only-image"
+              type="radio"
+            >
+              <RadioButton
+                className="utrecht-form-field__input"
+                id="text-only-image"
+                name={groupName}
+                value="text-only-image"
+                defaultChecked={selectedOption === 'text-only-image'}
+                onChange={(e) => {
+                  selectRadio(e.target.value);
+                }}
+              />
+              <div>
+                <span className="bold-text">De tekst bevat informatie die nergens anders op de pagina staat.</span>
               </div>
             </FormLabel>
           </FormField>
@@ -106,8 +130,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 value="text-near-image"
                 defaultChecked={selectedOption === 'text-near-image'}
                 onChange={(e) => {
-                  setSelectedOption(e.target.value);
-                  onChangeOption('content', e.target.value);
+                  selectRadio(e.target.value);
                 }}
               />
               <div>

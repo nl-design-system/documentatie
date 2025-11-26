@@ -11,8 +11,9 @@ import {
   Heading4,
   Paragraph,
   PreHeading,
+  UnorderedList,
+  UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
-import { SpotlightSection } from '@utrecht/component-library-react';
 
 const groupName = 'context-type';
 
@@ -88,17 +89,15 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
             </FormLabel>
           </FormField>
 
-          <SpotlightSection>
-            <Heading3>Complexe afbeelding</Heading3>
-            <Paragraph>Een afbeelding met veel informatie wordt ook wel een complexe afbeelding genoemd.</Paragraph>
-            <Heading4>Voorbeelden van complexe afbeeldingen</Heading4>
-            <ul>
-              <li>Grafiek</li>
-              <li>Geografische kaart</li>
-              <li>Schema</li>
-              <li>Stappenplan</li>
-            </ul>
-          </SpotlightSection>
+          <Heading3>Complexe afbeelding</Heading3>
+          <Paragraph>Een afbeelding met veel informatie wordt ook wel een complexe afbeelding genoemd.</Paragraph>
+          <Heading4>Voorbeelden van complexe afbeeldingen</Heading4>
+          <UnorderedList>
+            <UnorderedListItem>Grafiek</UnorderedListItem>
+            <UnorderedListItem>Geografische kaart</UnorderedListItem>
+            <UnorderedListItem>Schema</UnorderedListItem>
+            <UnorderedListItem>Stappenplan</UnorderedListItem>
+          </UnorderedList>
 
           <div className="nlds-button-bar">
             <Button appearance="secondary-action-button" onClick={onPrevStep}>
