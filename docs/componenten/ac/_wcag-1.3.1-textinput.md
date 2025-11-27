@@ -3,8 +3,8 @@
 Als de Text input een tekstueel label heeft, maak dan gebruik van een `label`-element en koppel het met de attributen `for` en `id` aan de Text input.
 
 ```html
-<label for="voorbeeld"
-  >Ik ben een Text input
+<label for="voorbeeld">
+  Ik ben een Text input
   <input type="text" id="voorbeeld" />
 </label>
 ```
