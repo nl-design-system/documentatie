@@ -35,6 +35,26 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
     onChangeOption(name, value);
   };
 
+  // TODO: zorgen dat deze waarden worden aangepast direct voor 'submit'
+  const onBeforeNext = () => {
+    if (image.type === 'complex') {
+      setCheckedOptions((values) => ({ ...values, ['text']: false }));
+      onChangeOption('text', false);
+    }
+    if (image.type === 'functional') {
+      setCheckedOptions((values) => ({ ...values, ['clickable']: false }));
+      onChangeOption('clickable', false);
+    }
+    if (image.type !== 'simple') {
+      setCheckedOptions((values) => ({ ...values, ['descripted']: false }));
+      onChangeOption('descripted', false);
+    }
+    console.log(image);
+    // for (const [option, value] of Object.entries(checkedOptions)) {
+    //   console.log(`${option}: ${value}`);
+    // }
+  };
+
   if (active === groupName) {
     return (
       <>
@@ -84,7 +104,11 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
               Vorige stap
             </Button>
 
-            <Button appearance="primary-action-button" onClick={() => onNextStep(groupName)}>
+            <Button
+              appearance="primary-action-button"
+              onMouseDown={() => onBeforeNext()}
+              onClick={() => onNextStep(groupName)}
+            >
               Volgende stap
             </Button>
           </div>

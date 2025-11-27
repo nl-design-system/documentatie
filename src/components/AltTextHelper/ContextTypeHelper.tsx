@@ -54,11 +54,10 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
                 className="utrecht-form-field__input"
                 id="image-complex"
                 name={groupName}
-                value="image-complex"
-                defaultChecked={selectedOption === 'image-complex'}
+                value="complex"
+                defaultChecked={selectedOption === 'complex'}
                 onChange={(e) => {
                   setSelectedOption(e.target.value);
-                  onChangeOption('type', 'complex');
                 }}
               />
               <div>
@@ -76,11 +75,10 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
                 className="utrecht-form-field__input"
                 id="image-simple"
                 name={groupName}
-                value="image-simple"
-                defaultChecked={selectedOption === 'image-simple'}
+                value="simple"
+                defaultChecked={selectedOption === 'simple'}
                 onChange={(e) => {
                   setSelectedOption(e.target.value);
-                  onChangeOption('type', 'simple');
                 }}
               />
               <div>
@@ -107,6 +105,7 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
             <Button
               appearance="primary-action-button"
               disabled={selectedOption === '' ? true : false}
+              onMouseDown={() => onChangeOption('type', selectedOption)}
               onClick={() => onNextStep(groupName)}
             >
               Volgende stap

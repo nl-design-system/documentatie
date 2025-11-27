@@ -54,11 +54,10 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
                 className="utrecht-form-field__input"
                 id="image-type-contextual"
                 name={groupName}
-                value="image-type-contextual"
-                defaultChecked={selectedOption === 'image-type-contextual'}
+                value="context"
+                defaultChecked={selectedOption === 'context'}
                 onChange={(e) => {
                   setSelectedOption(e.target.value);
-                  onChangeOption('type', '');
                 }}
               />
               <div>
@@ -79,11 +78,10 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
                 className="utrecht-form-field__input"
                 id="image-type-decorative"
                 name={groupName}
-                value="image-type-decorative"
-                defaultChecked={selectedOption === 'image-type-decorative'}
+                value="decorative"
+                defaultChecked={selectedOption === 'decorative'}
                 onChange={(e) => {
                   setSelectedOption(e.target.value);
-                  onChangeOption('type', 'decorative');
                 }}
               />
               <div>
@@ -106,11 +104,10 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
                 className="utrecht-form-field__input"
                 id="image-type-functional"
                 name={groupName}
-                value="image-type-functional-help"
-                defaultChecked={selectedOption === 'image-type-functional-help'}
+                value="functional"
+                defaultChecked={selectedOption === 'functional'}
                 onChange={(e) => {
                   setSelectedOption(e.target.value);
-                  onChangeOption('type', 'functional');
                 }}
               />
               <div>
@@ -143,6 +140,7 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
             <Button
               appearance="primary-action-button"
               disabled={selectedOption === '' ? true : false}
+              onMouseDown={() => onChangeOption('type', selectedOption)}
               onClick={() => onNextStep(groupName)}
             >
               Volgende stap

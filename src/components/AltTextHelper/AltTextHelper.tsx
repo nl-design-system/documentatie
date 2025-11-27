@@ -57,6 +57,7 @@ const AltTextHelper = () => {
       default:
         current = 'image-type';
     }
+
     return current;
   };
 
