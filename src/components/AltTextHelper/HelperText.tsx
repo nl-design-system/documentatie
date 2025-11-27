@@ -6,6 +6,8 @@ import {
   PreHeading,
   OrderedList,
   OrderedListItem,
+  UnorderedList,
+  UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'helper-text';
@@ -18,23 +20,76 @@ interface HelperTextProps {
   image;
 }
 
+const translateType = (type) => {
+  let translation = '';
+  switch (type) {
+    case 'simple':
+      translation = 'eenvoudige';
+      break;
+    case 'complex':
+      translation = 'complexe';
+      break;
+    case 'decorative':
+      translation = 'decoratieve';
+      break;
+    case 'functional':
+      translation = 'functionele';
+      break;
+  }
+  return translation;
+};
+
+const translateTextContent = (content) => {
+  let text = '';
+  switch (content) {
+    case 'text-near-image':
+      text = 'al naast of vlak bij de afbeelding staat';
+      break;
+    case 'text-visual-effect':
+      text = 'niets toevoegt aan de boodschap';
+      break;
+    case 'text-has-function':
+      text = 'een functie heeft';
+      break;
+    case 'text-only-image':
+      text = 'nergens anders op de pagina staat';
+      break;
+  }
+  return text;
+};
+
 export default function HelperText({ onPrevStep, active, image }: HelperTextProps) {
   if (active === groupName) {
     return (
       <>
         <div className="nlds-helper-text" ref={autoFocus} tabIndex={-1}>
           <PreHeading>Stap 5 van 5</PreHeading>
-          <Heading2>Hoe je de alt-tekst opbouwt</Heading2>
-          <Paragraph>
-            Niet elke afbeelding bevat dezelfde onderdelen. Gebruik deze volgorde om de alt-tekst op te bouwen met wat
-            er wél aanwezig is:
-          </Paragraph>
+          <Heading2>Advies algemeen</Heading2>
+          Bouw de alt-tekst altijd als volgt op:
           <OrderedList>
-            <OrderedListItem>Beschrijf ten eerste de tekst in de afbeelding</OrderedListItem>
-            <OrderedListItem>Beschrijf vervolgens de afbeelding zelf</OrderedListItem>
-            <OrderedListItem>Beschrijf tot slot het doel van de afbeelding als deze klikbaar is</OrderedListItem>
+            <OrderedListItem>
+              Als de afbeelding tekst bevat, die nergens anders op de pagina staat, beschrijf deze dan als eerste
+            </OrderedListItem>
+            <OrderedListItem>Beschrijf vervolgens de afbeelding</OrderedListItem>
+            <OrderedListItem>Als de afbeelding klikbaar is beschrijf dan tot slot de functie.</OrderedListItem>
           </OrderedList>
-          <Paragraph>Hieronder vind je de uitleg die past bij jouw gekozen situatie.</Paragraph>
+          <Heading2>Advies specifiek voor jouw afbeelding</Heading2>
+          <Paragraph>
+            Je heb aangegeven dat het een <strong>{translateType(image.type)}</strong> afbeelding is.
+          </Paragraph>
+          {(image.clickable || image.descripted || image.text) && (
+            <UnorderedList>
+              {image.text && (
+                <UnorderedListItem>
+                  De afbeelding bevat tekst die {translateTextContent(image.content)}.
+                </UnorderedListItem>
+              )}
+              {image.descripted && (
+                <UnorderedListItem>De beschrijving staat al in de buurt van de afbeelding.</UnorderedListItem>
+              )}
+              {image.clickable && <UnorderedListItem>De afbeelding is klikbaar.</UnorderedListItem>}
+            </UnorderedList>
+          )}
           <ImageTextHelperText image={image} />
           <Heading3>Beschrijving van de afbeelding</Heading3>
           <ImageTypeHelperText image={image} />
