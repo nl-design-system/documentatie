@@ -163,7 +163,6 @@ Redirect 301 "/belangenorganisatie" "/community/belangenorganisaties/aanmelden/"
 RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
 
 # Temporary redirects until the component is part of help-wanted board
-Redirect 307 "/calendar" "/componenten"
 Redirect 307 "/character-count" "/componenten"
 Redirect 307 "/form-field-radio-option" "/componenten"
 Redirect 307 "/form-field-checkbox-option" "/componenten"
