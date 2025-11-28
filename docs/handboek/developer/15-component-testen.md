@@ -123,7 +123,11 @@ Componenten renderen BEM classnames, maar front-end developers moeten ook hun ei
 Bijvoorbeeld:
 
 ```javascript
-<MyComponent className="large" />
+import clsx from "clsx";
+
+const MyComponent = ({ className, children }) => {
+  return <div className={clsx("my-component", className)}>{children}</div>;
+};
 ```
 
 Dit rendert:
