@@ -75,8 +75,6 @@ it('renders rich text content', () => {
 
 Zoals aangegeven in [de API conventie voor componenten voor HTML](https://nldesignsystem.nl/handboek/developer/api-conventie/#componenten-voor-html) moeten [Globale HTML-attributen](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) hun normale gedrag behouden. In React kun je alle overige, niet-gespecificeerde properties opvangen met de zogenaamde rest-operator (meestal door `..restProps` te spreaden):
 
-> Willen we hier linken naar https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters of doen we dat niet?
-
 ```jsx
 ({ someProp, ...restProps });
 ```
