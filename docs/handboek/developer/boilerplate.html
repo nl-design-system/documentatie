@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="nl" dir="ltr" class="utrecht-root voorbeeld-theme">
+  <head>
+    <meta charset="utf-8" />
+    <title>Graffiti laten verwijderen van uw pand · Gemeente Voorbeeld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- TODO: Gebruik je eigen hosting voor de CSS, gebruik "https://unpkg.com/" hooguit tijdens development, nooit in productie. -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/body-css@1.2.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-body-css@0.1.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/button-css@2.3.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/button-link-css@1.3.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/nav-bar-css@1.4.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/nav-list-css@1.3.1/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/textbox-css@3.0.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/page-layout-css@2.0.1/dist/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@amsterdam/design-system-css@2.0.1/dist/page-header/page-header.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/heading/heading.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/paragraph/paragraph.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/breadcrumb/breadcrumb.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/page-footer/page-footer.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/link-list/link-list.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/grid/grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@amsterdam/design-system-css@1.0.1/dist/visually-hidden/visually-hidden.css"
+    />
+    <!-- https://nldesignsystem.nl/skip-link/ -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@nl-design-system-candidate/skip-link-css@1.0.3/dist/skip-link.css"
+    />
+    <!-- https://nldesignsystem.nl/heading/ -->
+    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/heading-css@1.1.1/dist/heading.css" />
+    <!-- https://nldesignsystem.nl/link/ -->
+    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/link-css@2.0.1/dist/link.css" />
+    <!-- https://nldesignsystem.nl/paragraph -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@nl-design-system-candidate/paragraph-css@2.0.1/dist/paragraph.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0/dist/theme.css"
+    />
+    <style>
+      .ams-page-header,
+      .ams-page-footer {
+        inline-size: 100%;
+      }
+    </style>
+  </head>
+
+  <body class="utrecht-body">
+    <a href="#main" class="nl-skip-link nl-skip-link--visible-on-focus">Direct naar de hoofdinhoud</a>
+    <div class="utrecht-page-layout">
+      <header class="utrecht-page-header">
+        <div class="utrecht-page-header__content">Header</div>
+      </header>
+      <div class="utrecht-page-body">
+        <div class="utrecht-page-body__content">
+          <main id="main">
+            <h1 class="nl-heading nl-heading--level-1">Dialogs, dialogs, dialogs!</h1>
+            <h2>Dialog die direct opent wanneer de pagina opent</h2>
+            <p>...</p>
+            <h2>De inhoud van een alert dialog</h2>
+            <p>...</p>
+            <h2>Heading levels in een dialog</h2>
+            <p class="nl-paragraph">Heeft u een dialog nodig, dan bent u hier aan goede adres!</p>
+            <h2>Positie van de <code>&lt;dialog></code> in de DOM</h2>
+            <ul>
+              <li>De impact van positie in de DOM op de koppenstructuur</li>
+              <li>De impact van positie in de DOM op de focusvolgorde</li>
+            </ul>
+            <p class="nl-paragraph">Heeft u een dialog nodig, dan bent u hier aan goede adres!</p>
+            <p>
+              <button type="button" onclick="document.getElementById('you-are-logged-out').showModal()">
+                Trigger logged out dialog with <code>showModal()</code>
+              </button>
+              <button type="button" popovertarget="you-are-logged-out">
+                Trigger logged out dialog with <code>popovertarget</code>
+              </button>
+            </p>
+            <dialog id="you-are-logged-out" popover>
+              <h2>Je bent uitgelogd</h2>
+              <p>Je was even iets anders aan het doen, daarom ben je uitgelogd.</p>
+              <p><button type="submit">OK</button></p>
+            </dialog>
+            <h2>Voorbeeld: Dialog met live region</h2>
+            <ul>
+              <li>Hoe ga je om met de veranderende inhoud?</li>
+              <li>Werkt dit met <code>role="alertdialog"</code>?</li>
+            </ul>
+            <p>
+              <button type="button" onclick="document.getElementById('session-countdown').showModal()">
+                Trigger "Session countdown" dialog with <code>showModal()</code>
+              </button>
+              <button type="button" popovertarget="session-countdown">
+                Trigger "Session countdown" dialog with <code>popovertarget</code>
+              </button>
+            </p>
+            <dialog id="session-countdown" popover>
+              <h2>Ga nu verder, wanneer je niet opnieuw wil inloggen</h2>
+              <p>
+                Je wordt uitgelogd over <strong><live-countdown seconds="900">15 minuten</live-countdown></strong
+                >.
+              </p>
+              <p><button type="submit">OK</button></p>
+            </dialog>
+            <h2>Voorbeeld: Dialog met 1 Text Input</h2>
+            <p>
+              <button type="button" onclick="document.getElementById('confirm-destroy').showModal()">
+                Trigger "Confirm destroy" dialog with <code>showModal()</code>
+              </button>
+              <button type="button" popovertarget="confirm-destroy">
+                Trigger "Confirm destroy" dialog with <code>popovertarget</code>
+              </button>
+            </p>
+            <dialog id="confirm-destroy" popover>
+              <h2>Bevestig dat je deze repository wilt verwijderen</h2>
+              <p>Typ hier <strong>nl-design-system/hall-of-fame</strong> als je deze repository wilt verwijderen:</p>
+              <p><input type="text" /></p>
+              <p><button type="submit">OK</button></p>
+            </dialog>
+            <h2>Voorbeeld: Dialog bij <code>onbeforeunload</code> event</h2>
+            <ul>
+              <li>
+                Deze dialog kan niet daadwerkelijk getriggered worden door de beforeunload event, omdat die alleen een
+                native browser dialog kan tonen.
+              </li>
+              <li>
+                Zo'n dialog zou getriggered moeten worden door een actie van een gebruiker, waarvan duidelijk is dat het
+                effect zal zijn dat de pagina verlaten wordt. Bijvoorbeeld, door het klikken op een link.
+              </li>
+            </ul>
+            <p>
+              <button
+                type="button"
+                onclick="window.addEventListener('beforeunload', (evt) => {
+                evt.preventDefault();
+                document.getElement('confirm-leave-page').showModal();
+              });"
+              >
+                Trigger "Confirm leaving this page" dialog after <code>onbeforeunload</code>
+              </button>
+            </p>
+            <p>
+              <a href="https://example.com">Ga naar example.com</a> om de pagina te verlaten (en trigger beforeunload).
+            </p>
+            <p>
+              <a href="https://example.com" class="prevent-leave-page" data-dialog="confirm-leave-page"
+                ><span>Ga naar example.com</span></a
+              >
+              om de pagina te verlaten, en doe <code>clickEvent.preventDefault()</code> (<code>a</code> met
+              <code>span</code>).
+            </p>
+            <p>
+              <a href="https://example.com" class="prevent-leave-page" data-dialog="confirm-leave-page"
+                >Ga naar example.com</a
+              >
+              om de pagina te verlaten, en doe <code>clickEvent.preventDefault()</code>.
+            </p>
+            <script>
+              document.addEventListener(
+                'click',
+                (evt) => {
+                  const link = evt.target.closest('.prevent-leave-page:any-link');
+                  if (link) {
+                    evt.preventDefault();
+                    const dialog = link.dataset.dialog && link.ownerDocument.getElementById(link.dataset.dialog);
+                    if (dialog && 'showModal' in dialog) {
+                      dialog.showModal();
+                    }
+                  }
+                },
+                true,
+              );
+            </script>
+            <dialog id="confirm-leave-page" popover>
+              <h2>Bevestig dat je deze pagina wilt verlaten</h2>
+              <p><button type="submit">OK</button> <button type="submit">Cancel</button></p>
+            </dialog>
+          </main>
+        </div>
+      </div>
+      <footer class="utrecht-page-footer">
+        <div class="utrecht-page-footer__content">Footer</div>
+      </footer>
+      <script>
+        customElements.define(
+          'live-countdown',
+          class LiveCountdownElement extends HTMLElement {
+            start = 0;
+            end = 0;
+            delta = 0;
+            progress = 0;
+            constructor() {
+              super();
+              this.start = Date.now();
+              // Convert `seconds` to milliseconds
+              this.duration = Number.parseInt(this.getAttribute('seconds'), 10) * 1000;
+              setInterval(() => {
+                this.tick();
+                this.render();
+              }, 1000);
+            }
+            tick() {
+              this.now = Date.now();
+              this.delta = this.now - this.start;
+              this.progress = Math.min(this.delta, this.duration);
+              this.countdown = this.duration - this.progress;
+            }
+            render() {
+              this.innerHTML = `${Math.round(this.countdown / 1000)} seconden`;
+            }
+          },
+        );
+      </script>
+    </div>
+  </body>
+</html>
