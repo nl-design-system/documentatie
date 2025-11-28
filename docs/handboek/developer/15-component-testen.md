@@ -73,7 +73,25 @@ it('renders rich text content', () => {
 
 ### Globale attributen
 
-Globale attributen kunnen op alle HTML-elementen worden gebruikt, dus componenten die HTML renderen moeten deze ook ondersteunen. In React is dit eenvoudig te ondersteunen met ...restProps. De volgende codevoorbeelden gebruiken globale attributen:
+Zoals aangegeven in [de API conventie voor componenten voor HTML](https://nldesignsystem.nl/handboek/developer/api-conventie/#componenten-voor-html) moeten [Globale HTML-attributen](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) hun normale gedrag behouden. In React kun je alle overige, niet-gespecificeerde properties opvangen met de zogenaamde rest-operator (meestal door `..restProps` te spreaden):
+
+> Willen we hier linken naar https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters of doen we dat niet?
+
+```jsx
+({ someProp, ...restProps });
+```
+
+De `someProp` wordt expliciet uit het object gehaald, terwijl `restProps` een object bevat met alle overige properties die aan het component zijn doorgegeven.
+
+Daardoor kun je bijvoorbeeld alle globale HTML-attributen automatisch doorgeven aan het onderliggende HTML-element:
+
+```jsx
+const MyComponent = ({ someProp, ...restProps }) => {
+  return <div {...restProps}>{someProp}</div>;
+};
+```
+
+Zo worden alle HTML-attributen (zoals `id`, `className`, `data-*`, `aria-*`, etc.) die je op `<MyComponent>` zet automatisch op de `<div>` toegepast.
 
 ```XML
 <MyComponent id="main" />
@@ -103,6 +121,20 @@ it("can be hidden", () => {
 ## De className property
 
 Componenten renderen BEM classnames, maar front-end developers moeten ook hun eigen classnames kunnen toevoegen. Extra classnames moeten de lijst van classnames uitbreiden, niet de classnames van de component overschrijven.
+
+Bijvoorbeeld:
+
+```javascript
+<MyComponent className="large" />
+```
+
+Dit rendert:
+
+```html
+<div class="my-component large"
+```
+
+De class "my-component" wordt dus niet overschreven, maar uitgebreid. Vervolgens kun je valideren in een automatische test of dit klopt:
 
 ```javascript
 it("can have a additional class name", () => {
