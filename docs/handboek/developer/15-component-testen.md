@@ -151,6 +151,8 @@ it("can have a additional class name", () => {
 
 ## Test de accessibility tree
 
+Om te valideren of de accessibilty `role`s goed ingesteld staan kun je automatische tests schrijven.
+
 ### Landmarks
 
 ```javascript
