@@ -19,7 +19,7 @@ Op deze pagina vind je tips om componenten te testen op de juiste aspecten. De m
 
 ## Testen op uitbreidbaarheid
 
-Zoals op de [bijdragen pagina](/handboek/developer/bijdragen) is beschreven, is uitbreidbaarheid erg belangrijk. Daarom is het van belang om dit te testen.
+Zoals op de [bijdragen pagina](/handboek/developer/bijdragen) staat, is uitbreidbaarheid belangrijk. Hieronder lees je hoe je dit test.
 
 ### Classes
 
