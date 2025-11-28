@@ -50,6 +50,48 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
           <FormField type="radio">
             <FormLabel
               className="utrecht-form-field__label utrecht-form-field__label--radio"
+              htmlFor="text-only-image"
+              type="radio"
+            >
+              <RadioButton
+                className="utrecht-form-field__input"
+                id="text-only-image"
+                name={groupName}
+                value="text-only-image"
+                defaultChecked={selectedOption === 'text-only-image'}
+                onChange={(e) => {
+                  selectRadio(e.target.value);
+                }}
+              />
+              <div>
+                <span className="bold-text">De tekst bevat informatie die nergens anders op de pagina staat.</span>
+              </div>
+            </FormLabel>
+          </FormField>
+          <FormField type="radio">
+            <FormLabel
+              className="utrecht-form-field__label utrecht-form-field__label--radio"
+              htmlFor="text-near-image"
+              type="radio"
+            >
+              <RadioButton
+                className="utrecht-form-field__input"
+                id="text-near-image"
+                name={groupName}
+                value="text-near-image"
+                defaultChecked={selectedOption === 'text-near-image'}
+                onChange={(e) => {
+                  selectRadio(e.target.value);
+                }}
+              />
+              <div>
+                <span className="bold-text">Dezelfde tekst staat ook naast of vlak bij de afbeelding.</span>
+              </div>
+            </FormLabel>
+          </FormField>
+          <FormField type="radio">
+            <FormLabel
+              className="utrecht-form-field__label utrecht-form-field__label--radio"
               htmlFor="text-has-function"
               type="radio"
             >
@@ -93,48 +135,6 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 <br />
                 Bijvoorbeeld een watermerk, tekst in een screenshot, een afbeelding van een verpakking of een stapel
                 boeken.
-              </div>
-            </FormLabel>
-          </FormField>
-          <FormField type="radio">
-            <FormLabel
-              className="utrecht-form-field__label utrecht-form-field__label--radio"
-              htmlFor="text-only-image"
-              type="radio"
-            >
-              <RadioButton
-                className="utrecht-form-field__input"
-                id="text-only-image"
-                name={groupName}
-                value="text-only-image"
-                defaultChecked={selectedOption === 'text-only-image'}
-                onChange={(e) => {
-                  selectRadio(e.target.value);
-                }}
-              />
-              <div>
-                <span className="bold-text">De tekst bevat informatie die nergens anders op de pagina staat.</span>
-              </div>
-            </FormLabel>
-          </FormField>
-          <FormField type="radio">
-            <FormLabel
-              className="utrecht-form-field__label utrecht-form-field__label--radio"
-              htmlFor="text-near-image"
-              type="radio"
-            >
-              <RadioButton
-                className="utrecht-form-field__input"
-                id="text-near-image"
-                name={groupName}
-                value="text-near-image"
-                defaultChecked={selectedOption === 'text-near-image'}
-                onChange={(e) => {
-                  selectRadio(e.target.value);
-                }}
-              />
-              <div>
-                <span className="bold-text">Dezelfde tekst staat ook naast of vlak bij de afbeelding.</span>
               </div>
             </FormLabel>
           </FormField>
