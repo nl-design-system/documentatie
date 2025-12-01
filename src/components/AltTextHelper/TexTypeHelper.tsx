@@ -9,7 +9,6 @@ import {
   Button,
   Heading3,
   Paragraph,
-  SpotlightSection,
   PreHeading,
 } from '@utrecht/component-library-react/dist/css-module';
 
@@ -139,21 +138,19 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
             </FormLabel>
           </FormField>
 
-          <SpotlightSection>
-            <Heading3>Wees voorzichtig met tekst in afbeeldingen</Heading3>
-            <Paragraph>
-              Tekst in een afbeelding wordt niet voorgelezen door een screenreader en kan niet worden aangepast aan de
-              behoeften van de bezoeker. Bied daarom altijd een alternatief aan in gewone tekst.
-            </Paragraph>
-            <Paragraph>
-              Soms is een afbeelding van tekst wél gerechtvaardigd, bijvoorbeeld bij een logo of wanneer de typografie
-              onderdeel is van de boodschap.
-            </Paragraph>
-            <Paragraph>
-              Lees meer over hoe je omgaat met tekst in afbeeldingen op de pagina{' '}
-              <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/">Tekst in een afbeelding</a>.
-            </Paragraph>
-          </SpotlightSection>
+          <Heading3>Wees voorzichtig met tekst in afbeeldingen</Heading3>
+          <Paragraph>
+            Tekst in een afbeelding wordt niet voorgelezen door een screenreader en kan niet worden aangepast aan de
+            behoeften van de bezoeker. Bied daarom altijd een alternatief aan in gewone tekst.
+          </Paragraph>
+          <Paragraph>
+            Soms is een afbeelding van tekst wél gerechtvaardigd, bijvoorbeeld bij een logo of wanneer de typografie
+            onderdeel is van de boodschap.
+          </Paragraph>
+          <Paragraph>
+            Lees meer over hoe je omgaat met tekst in afbeeldingen op de pagina{' '}
+            <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/">Tekst in een afbeelding</a>.
+          </Paragraph>
 
           <div className="nlds-button-bar">
             <Button appearance="secondary-action-button" onClick={onPrevStep}>

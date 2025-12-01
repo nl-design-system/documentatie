@@ -8,6 +8,7 @@ import {
   OrderedListItem,
   UnorderedList,
   UnorderedListItem,
+  SpotlightSection,
 } from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'helper-text';
@@ -73,27 +74,29 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
             <OrderedListItem>Beschrijf vervolgens de afbeelding</OrderedListItem>
             <OrderedListItem>Als de afbeelding klikbaar is beschrijf dan tot slot de functie.</OrderedListItem>
           </OrderedList>
-          <Heading2>Advies specifiek voor jouw afbeelding</Heading2>
-          <Paragraph>
-            Je heb aangegeven dat het een <strong>{translateType(image.type)}</strong> afbeelding is.
-          </Paragraph>
-          {(image.clickable || image.descripted || image.text) && (
-            <UnorderedList>
-              {image.text && (
-                <UnorderedListItem>
-                  De afbeelding bevat tekst die {translateTextContent(image.content)}.
-                </UnorderedListItem>
-              )}
-              {image.descripted && (
-                <UnorderedListItem>De beschrijving staat al in de buurt van de afbeelding.</UnorderedListItem>
-              )}
-              {image.clickable && <UnorderedListItem>De afbeelding is klikbaar.</UnorderedListItem>}
-            </UnorderedList>
-          )}
-          <ImageTextHelperText image={image} />
-          <Heading3>Beschrijving van de afbeelding</Heading3>
-          <ImageTypeHelperText image={image} />
-          <ImageClickableHelperText image={image} />
+          <SpotlightSection>
+            <Heading2>Advies specifiek voor jouw afbeelding</Heading2>
+            <Paragraph>
+              Je heb aangegeven dat het een <strong>{translateType(image.type)}</strong> afbeelding is.
+            </Paragraph>
+            {(image.clickable || image.descripted || image.text) && (
+              <UnorderedList>
+                {image.text && (
+                  <UnorderedListItem>
+                    De afbeelding bevat tekst die {translateTextContent(image.content)}.
+                  </UnorderedListItem>
+                )}
+                {image.descripted && (
+                  <UnorderedListItem>De beschrijving staat al in de buurt van de afbeelding.</UnorderedListItem>
+                )}
+                {image.clickable && <UnorderedListItem>De afbeelding is klikbaar.</UnorderedListItem>}
+              </UnorderedList>
+            )}
+            <ImageTextHelperText image={image} />
+            <Heading3>Beschrijving van de afbeelding</Heading3>
+            <ImageTypeHelperText image={image} />
+            <ImageClickableHelperText image={image} />
+          </SpotlightSection>
         </div>
         <div className="nlds-button-bar">
           <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
