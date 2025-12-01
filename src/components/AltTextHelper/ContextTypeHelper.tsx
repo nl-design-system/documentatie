@@ -105,12 +105,10 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
             <Button
               appearance="primary-action-button"
               disabled={selectedOption === '' ? true : false}
-              //onMouseDown={() => onChangeOption('type', selectedOption)}
-              onMouseDown={() => {
+              onClick={() => {
                 onChangeOption('type', selectedOption);
-                if (selectedOption === 'complex') onChangeOption('text', false);
+                onNextStep(groupName);
               }}
-              onClick={() => onNextStep(groupName)}
             >
               Volgende stap
             </Button>
