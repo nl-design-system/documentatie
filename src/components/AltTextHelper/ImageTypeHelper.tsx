@@ -140,8 +140,10 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
             <Button
               appearance="primary-action-button"
               disabled={selectedOption === '' ? true : false}
-              onMouseDown={() => onChangeOption('type', selectedOption)}
-              onClick={() => onNextStep(groupName)}
+              onClick={() => {
+                onChangeOption('type', selectedOption);
+                onNextStep(groupName);
+              }}
             >
               Volgende stap
             </Button>
