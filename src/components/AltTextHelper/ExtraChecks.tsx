@@ -35,7 +35,6 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
     onChangeOption(name, value);
   };
 
-  // TODO: BUGFIXEN, klikbaar blijft aan staan, ook als de checkbox niet is gecheckt???
   const onBeforeNext = () => {
     if (image.type === 'complex') {
       setCheckedOptions((values) => ({ ...values, ['text']: false }));
@@ -49,10 +48,6 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
       setCheckedOptions((values) => ({ ...values, ['descripted']: false }));
       onChangeOption('descripted', false);
     }
-    //console.log(image);
-    // for (const [option, value] of Object.entries(checkedOptions)) {
-    //   console.log(`${option}: ${value}`);
-    // }
   };
 
   if (active === groupName) {
@@ -106,8 +101,8 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
 
             <Button
               appearance="primary-action-button"
-              onMouseDown={() => onBeforeNext()}
               onClick={() => {
+                onBeforeNext();
                 onNextStep(groupName);
               }}
             >

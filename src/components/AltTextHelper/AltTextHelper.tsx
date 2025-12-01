@@ -19,10 +19,9 @@ const AltTextHelper = () => {
   });
 
   const changeProperty = (name, val) => {
-    setImage({
-      ...image,
-      [name]: val,
-    });
+    const current = image;
+    current[name] = val;
+    setImage(current);
   };
 
   const [steps, setSteps] = useState({
@@ -39,6 +38,8 @@ const AltTextHelper = () => {
 
   const setCurrentStep = (prev) => {
     let current = '';
+
+    console.log('forward', image);
 
     switch (prev) {
       case 'image-type':
