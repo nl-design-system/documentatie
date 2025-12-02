@@ -69,10 +69,11 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
           Bouw de alt-tekst altijd als volgt op:
           <OrderedList>
             <OrderedListItem>
-              Als de afbeelding tekst bevat, die nergens anders op de pagina staat, beschrijf deze dan als eerste
+              Beschrijf als eerste de tekst in de afbeelding, als deze tekst bevat die nergens anders op de pagina
+              staat.
             </OrderedListItem>
             <OrderedListItem>Beschrijf vervolgens de afbeelding</OrderedListItem>
-            <OrderedListItem>Als de afbeelding klikbaar is beschrijf dan tot slot de functie.</OrderedListItem>
+            <OrderedListItem>Beschrijf tot slot de functie, als de afbeelding klikbaar is.</OrderedListItem>
           </OrderedList>
           <SpotlightSection>
             <Heading2>Advies specifiek voor jouw afbeelding</Heading2>
