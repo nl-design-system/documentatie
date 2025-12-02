@@ -65,7 +65,7 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
       <>
         <div className="nlds-helper-text" ref={autoFocus} tabIndex={-1}>
           <PreHeading>Stap 5 van 5</PreHeading>
-          <Heading2>Advies algemeen</Heading2>
+          <Heading2>Algemeen advies</Heading2>
           Bouw de alt-tekst altijd als volgt op:
           <OrderedList>
             <OrderedListItem>
@@ -76,7 +76,7 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
             <OrderedListItem>Beschrijf tot slot de functie, als de afbeelding klikbaar is.</OrderedListItem>
           </OrderedList>
           <SpotlightSection>
-            <Heading2>Advies specifiek voor jouw afbeelding</Heading2>
+            <Heading2>Specifiek advies voor jouw afbeelding</Heading2>
             <Paragraph>
               Je heb aangegeven dat het een <strong>{translateType(image.type)}</strong> afbeelding is.
             </Paragraph>
@@ -176,7 +176,7 @@ export function ImageTypeComplexHelperText() {
         van de grafiek. Uitgebreide uitleg staat onder de afbeelding.”
       </Paragraph>
       <Paragraph>
-        Meer over hoe je alt-tekst combineert met een uitgebreide beschrijving vind je op{' '}
+        Meer over hoe je alt-tekst combineert met een uitgebreide beschrijving vind je op
         <a href="/richtlijnen/content/afbeeldingen/alt-plaats/">Waar moet een alternatieve tekst staan?</a>.
       </Paragraph>
     </>
@@ -187,7 +187,14 @@ export function ImageTypeDecorativeHelperText() {
   return (
     <>
       <Paragraph>
-        Omdat de afbeelding alleen decoratief is hoeft de afbeelding zelf niet te worden beschreven.
+        Omdat de afbeelding alleen decoratief is hoeft de afbeelding zelf niet te worden beschreven. Sommige bezoekers
+        die gebruikmaken van hulpsoftware willen juist wel een beschrijving krijgen van een decoratieve afbeelding. Je
+        kunt er dus ook voor kiezen om jouw afbeelding wel een alternatieve tekst te geven. Meer over het beschrijven
+        van sfeerbeelden vind je bij{' '}
+        <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
+          de richtlijnen voor decoratieve afbeeldingen
+        </a>
+        .
       </Paragraph>
     </>
   );
