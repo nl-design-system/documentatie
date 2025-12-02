@@ -43,6 +43,13 @@ Vragen die je jezelf kunt stellen als je een functionele afbeelding plaatst:
 
 Hier beschrijf je niet wat op de afbeelding staat, maar wat de bezoeker ermee kan doen. De bezoeker weet anders niet wat er gaat gebeuren na het klikken op de link of knop.
 
+Bijvoorbeeld:
+
+- Een vergrootglas in een knop naast een zoekfunctie heeft als alternatieve tekst 'Zoeken', in plaats van 'Vergrootglas'.
+- Een prullenbak in een knop naast een geüpload bestand heeft als alternatieve tekst 'Bestand overzicht.pdf verwijderen', in plaats van 'Rode prullenbak'.
+- Een icoon in een link dat aangeeft dat een link naar een externe pagina gaat heeft als alternatieve tekst '(gaat naar externe pagina)', in plaats van 'Vierkant met daarin een pijl die naar rechtsboven wijst'.
+- Een huis in een link in het broodkruimelpad waarmee je naar de homepage kunt navigeren heeft als alternatieve tekst 'Terug naar de homepage', in plaats van 'Blauw huisje'.
+
 ## Logo als link naar de homepage
 
 Veel websites hebben een logo dat ook een link is naar de homepage. Dit logo staat dan bovenaan iedere pagina, meestal naast het navigatiemenu. Hier is het belangrijk om zowel te benoemen dat het een logo is, als waar de link naar de naartoe gaat. In die zin is een logo zowel een informatieve als een functionele afbeelding.
