@@ -135,15 +135,15 @@ export function ImageDescriptionNearbyHelperText() {
   return (
     <>
       <Paragraph>
-        Omdat de tekst die de afbeelding beschrijft al boven, onder of naast de afbeelding staat, hoeft die informatie
-        niet opnieuw te worden beschreven in de alt-tekst. Je mag wel een aanvullende beschrijving toevoegen als die
-        echt iets toevoegt.
+        Omdat de tekst die de afbeelding beschrijft al in de buurt van de afbeelding staat, hoeft die informatie niet
+        opnieuw te worden beschreven in de alt-tekst. Je mag wel een aanvullende beschrijving toevoegen als die echt
+        iets toevoegt.
         <br />
         Voorbeeld: Staat de naam van een persoon onder de foto, dan hoeft die niet in de alt-tekst. Je kunt wel kort
         beschrijven hoe de persoon eruitziet, zodat iedereen een beeld krijgt.
       </Paragraph>
       <Paragraph>
-        Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk{' '}
+        Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk
         <a href="/richtlijnen/content/afbeeldingen/algemene-richtlijnen/">Algemene richtlijnen voor alt-tekst</a>.
       </Paragraph>
     </>
@@ -159,7 +159,7 @@ export function ImageTypeSimpleHelperText() {
         X”.
       </Paragraph>
       <Paragraph>
-        Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk{' '}
+        Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk
         <a href="/richtlijnen/content/afbeeldingen/algemene-richtlijnen/">Algemene richtlijnen voor alt-tekst</a>.
       </Paragraph>
     </>
@@ -190,7 +190,7 @@ export function ImageTypeDecorativeHelperText() {
         Omdat de afbeelding alleen decoratief is hoeft de afbeelding zelf niet te worden beschreven. Sommige bezoekers
         die gebruikmaken van hulpsoftware willen juist wel een beschrijving krijgen van een decoratieve afbeelding. Je
         kunt er dus ook voor kiezen om jouw afbeelding wel een alternatieve tekst te geven. Meer over het beschrijven
-        van sfeerbeelden vind je bij{' '}
+        van sfeerbeelden vind je bij
         <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
           de richtlijnen voor decoratieve afbeeldingen
         </a>
