@@ -1,15 +1,15 @@
 ---
-title: Component ontbreekt in voorbeeld-thema · Developer · Handboek
+title: Component ontbreekt in thema · Developer · Handboek
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Component ontbreekt in voorbeeld-thema
-pagination_label: Component ontbreekt in voorbeeld-thema
+sidebar_label: Component ontbreekt in thema
+pagination_label: Component ontbreekt in thema
 description: NL Design System - Component ontbreekt in voorbeeld-thema
 ---
 
-# Help mijn component zit niet in het voorbeeld-thema
+# Het component die ik wil gebruiken zit niet in het thema dat ik gebruik
 
-Wat gaaf, je hebt een component gevonden die nog niet in het voorbeeld-thema verwerkt is!
+Wat gaaf, je hebt een component gevonden die nog niet in het thema verwerkt is!
 Er zijn meerdere stappen mogelijk om dit op te lossen.
 
 ## 1. Tijdelijke oplossing: tokens lokaal overschrijven
