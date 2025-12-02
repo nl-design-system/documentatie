@@ -79,8 +79,8 @@
   row-gap: var(--basis-space-block-md);
   padding-inline: var(--basis-space-inline-lg);
   padding-block: var(--basis-space-block-lg);
-  background-color: #eee;
-  border-color: 1px solid #ccc;
+  background-color: var(--basis-color-accent-1-bg-default);
+  border-color: var(--basis-color-accent-1-border-subtle);
   border-style: solid;
   border-width: 1px;
   margin-block-end: var(--basis-space-row-xl);

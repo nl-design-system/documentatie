@@ -185,10 +185,11 @@ Door deze 'Component stickers' op screenshots te plakken, kunnen we geïnteresse
 
 Doel: iedereen kan zien dat de component nu richting Candidate wil.
 
+- Verander de Status van het backlog issue naar in het projectenbord Components - 2 - Community naar 'Community'.
 - Verander het label 'Help Wanted' van het backlog issue naar 'Community'.
 - Verander het label 'Help Wanted' van de GitHub Discussion naar 'Community'.
 - Selecteer bij ‘Projects’ het volgende projectenbord: Components - 3 - Candidate.
-- Filter het [Candidate bord](https://github.com/orgs/nl-design-system/projects/32) op de component door te zoeken op `{naam-component}`.
+- Filter het [Candidate bord](https://github.com/orgs/nl-design-system/projects/80) op de component door te zoeken op `{naam-component}`.
 - Kopieer de URL na het filteren.
 - Voeg onderstaande tekst toe als comment aan de GitHub Discussion.
 
@@ -203,7 +204,7 @@ Help je mee hem door de Candidate stappen te krijgen?
 
 ## Over promotie
 
-Zet het checkpoint 'Promotie' op 'Done' vóór de promotie heeft plaatsgevonden. Dit doen we omdat de status 'Community' pas zichtbaar wordt nadat alle checkpoint zijn behaald.
+Zet het checkpoint 'Promotie' op 'Done' of 'Scheduled' vóór de promotie heeft plaatsgevonden. Dit doen we omdat de status 'Community' pas zichtbaar wordt nadat alle checkpoint zijn behaald.
 
 **🚩 Checkpoint**: Promotie
 
@@ -214,6 +215,7 @@ Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component be
 - Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
 - Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
+- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
 - Maak een nieuwe branch aan en gebruik de volgende naam:
 
 **Branch**
@@ -222,7 +224,6 @@ Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component be
 build/update-component-progress-{datum-of-versienummer}
 ```
 
-- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
 - Maak een commit en gebruik hierbij het volgende bericht:
 
 **Commit Message**
@@ -256,7 +257,6 @@ This PR will update the component progress to version {versienummer}.
 Doel: Credits geven aan mensen die hebben bijgedragen vanuit de community. De rest van community informeren en enthousiasmeren om ook naar Community, Candidate en Hall of Fame toe te werken.
 
 - Voeg het label '📣 Promotion' toe aan het backlog issue.
-- Selecteer bij ‘Projects’ het project 'Communicatie & PR'.
 
 ### Communityleden selecteren voor credits
 

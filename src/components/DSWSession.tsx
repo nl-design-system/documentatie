@@ -38,6 +38,9 @@ interface Session {
   icalLink?: string;
   language: { abbr: string; description: string };
   videoId?: string;
+  videoIds?: string[];
+  captioned?: boolean;
+  captionId?: string;
 }
 
 export const DSWSession = ({
@@ -46,13 +49,12 @@ export const DSWSession = ({
   allSpeakers,
   videoId,
   children,
-  captioned,
-  captionLink,
   allSessions,
   sessionId,
 }: PropsWithChildren<DSWSessionProps>) => {
   const session = allSessions?.find(({ uuid }) => sessionId === uuid);
   const speakers = session && session.speakers.map((fullName) => allSpeakers[fullName]).filter(Boolean);
+  const videoIds = [videoId, session?.videoId, ...(session?.videoIds ?? [])].filter(Boolean);
 
   return session ? (
     <article className={clsx('dsw-session')}>
@@ -69,13 +71,9 @@ export const DSWSession = ({
             .map((speaker) => (speaker?.organisation ? `${speaker.name} - ${speaker.organisation}` : speaker.name))
             .join(' & ')}
       </Paragraph>
-      {videoId ||
-        (session?.videoId && (
-          <VideoPlayer
-            id={videoId ? videoId : session?.videoId}
-            title={session.subject}
-            style={{ marginBlock: '20px' }}
-          />
+      {videoIds.length > 0 &&
+        videoIds.map((vidId) => (
+          <VideoPlayer key={vidId} id={vidId} title={session.subject} style={{ marginBlock: '20px' }} />
         ))}
       {session && session.isoDateTime && session.isoDateTime > dateNow ? (
         <Paragraph>
@@ -96,16 +94,37 @@ export const DSWSession = ({
           <b>Goed te weten:</b> Deze sessie is in het Engels.
         </Paragraph>
       )}
-      {captioned && (
-        <Paragraph>
-          <b>Goed te weten:</b> Bij deze sessie is een schrijftolk aanwezig
-          {captionLink && (
-            <a href={captionLink}>
-              tolktekst<span className="sr-only"> bij {session.subject}</span>
-            </a>
-          )}
-          .
-        </Paragraph>
+      {session.captioned ? (
+        session.captionId ? (
+          <>
+            <Paragraph>
+              {lang === 'nl' ? (
+                <>
+                  <b>Bij deze sessie is een schrijftolk aanwezig: </b>
+                </>
+              ) : (
+                <>
+                  <b>Live captioning is available for this session: </b>
+                </>
+              )}
+              <a href={`https://text-on-tap.live/#e=${session.captionId}`}>
+                <span className="sr-only">{session.subject} </span>
+                {lang === 'nl' ? 'in de browser' : 'in the browser'}
+              </a>
+              {lang === 'nl' ? ' of ' : ' or '}
+              <a href={`https://text-on-tap.live/openoverlay.html?e=${session.captionId}`}>
+                <span className="sr-only">{session.subject} </span>
+                {lang === 'nl' ? 'met de Overlay tool' : 'with the de Overlay tool'}
+              </a>
+            </Paragraph>
+          </>
+        ) : lang === 'nl' ? (
+          <Paragraph>Voor deze sessie hebben we nog geen schrijftolk gevonden</Paragraph>
+        ) : (
+          <></>
+        )
+      ) : (
+        <></>
       )}
       <aside className={clsx('dsw-session__speakers')}>
         {speakers.map((speaker, index) => (

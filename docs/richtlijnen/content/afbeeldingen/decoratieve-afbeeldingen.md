@@ -39,6 +39,8 @@ Voorbeelden van decoratieve afbeeldingen zijn:
 - Iconen naast een tekst met dezelfde informatie.
 - Sfeerbeelden.
 
+Of een afbeelding decoratief is, hangt af van de context en het doel van de afbeelding. Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven en heeft dan geen beschrijving nodig. In een artikel over verschillende koeienrassen geeft dezelfde afbeelding wel informatie en hoort er wél een alternatieve tekst bij.
+
 ## Overwegingen
 
 Vragen die je jezelf kunt stellen als je een decoratieve afbeelding plaatst:

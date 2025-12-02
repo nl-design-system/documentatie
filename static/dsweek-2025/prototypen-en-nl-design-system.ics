@@ -18,11 +18,11 @@ END:VTIMEZONE
 BEGIN:VEVENT
 ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
 DESCRIPTION:Jeffrey neemt je mee in de rol van prototyping bij het ontwikkelen van digitale producten en
- diensten. Hij laat zien hoe je met low- en high-fidelity prototypes ideeën tastbaar maakt, test met gebruikers en waardevolle inzichten verzamelt voordat iets wordt gebouwd. Ook toont hij hoe componenten, patronen en templates in Figma daarbij helpen en hoe teams met verschillende doelen toch samen tot gedeelde inzichten komen. Deze sessie is interessant voor iedereen die meer wil leren over het gebruik van prototypen in combinatie met het NL Design System. \n\nEnglish: \nJeffrey takes you through the role of prototyping in the development of digital products and services. He shows how you can use low- and high-fidelity prototypes to make ideas tangible, test them with users, and gather valuable insights before anything is built. He also shows how components, patterns, and templates in Figma help with this and how teams with different goals can still come to shared insights together. This session is interesting for anyone who wants to learn more about using prototypes in combination with the NL Design System. 
+ diensten. Hij laat zien hoe je met low- en high-fidelity prototypes ideeën tastbaar maakt, test met gebruikers en waardevolle inzichten verzamelt voordat iets wordt gebouwd. Ook toont hij hoe componenten, patronen en templates in Figma daarbij helpen en hoe teams met verschillende doelen toch samen tot gedeelde inzichten komen. Deze sessie is interessant voor iedereen die meer wil leren over het gebruik van prototypen in combinatie met het NL Design System. \n\nEnglish: \nJeffrey takes you through the role of prototyping in the development of digital products and services. He shows how you can use low- and high-fidelity prototypes to make ideas tangible, test them with users, and gather valuable insights before anything is built. He also shows how components, patterns, and templates in Figma help with this and how teams with different goals can still come to shared insights together. This session is interesting for anyone who wants to learn more about using prototypes in combination with the NL Design System.
 UID:d0e216e2-0dfe-4232-865f-91e8d10c7d1a
 SUMMARY:Prototypen & NL Design System - door Jeffrey Lauwers
 DTSTART;TZID=Europe/Amsterdam:20251029T110000
-DTEND;TZID=Europe/Amsterdam:20251029T113000
+DTEND;TZID=Europe/Amsterdam:20251029T114500
 CLASS:PUBLIC
 PRIORITY:5
 DTSTAMP:20250929T104513Z
@@ -31,7 +31,6 @@ SEQUENCE:0
 LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzRmNjI2YjItMmZiYi00ODhlLWIyNWMtZmM5N2UwMDRmZmFm%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
-X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
 X-MICROSOFT-CDO-IMPORTANCE:1
 X-MICROSOFT-CDO-INSTTYPE:0
 X-MICROSOFT-DONOTFORWARDMEETING:FALSE

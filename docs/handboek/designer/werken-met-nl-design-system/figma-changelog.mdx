@@ -1,7 +1,7 @@
 ---
 title: Figma changelog · Designer · Handboek
 hide_title: true
-hide_table_of_contents: true
+hide_table_of_contents: false
 sidebar_label: Figma changelog
 sidebar_position: 6
 pagination_label: Figma changelog
@@ -29,6 +29,683 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
+
+## 5.2.2
+
+1 december 2025
+
+Bugfix: De waarde van design tokens `utrecht.data-badge.padding-block` en `nl.data-badge.padding-block` is aangepast van 'None' naar '0px'.
+
+- [Ga naar de pagina van Data Badge](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-18012).
+- Open Tokens Studio.
+- Ga naar de tokenset 'data-badge/utrecht'.
+- Wijzig de waarde van `utrecht.data-badge.padding-block` van `None` naar `0px`.
+- Ga naar de tokenset 'data-badge/nl'.
+- Wijzig de waarde van `nl.data-badge.padding-block` van `None` naar `0px`
+- Klik op 'Apply to page' zodat de wijziging op de hele pagina wordt doorgevoerd.
+- Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+## 5.2.1
+
+1 december 2025
+
+Bugfix: Juiste font-weight token gekoppeld aan Candidate component Heading level 4.
+
+- [Ga naar de pagina van Heading](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1039).
+- Selecteer het frame 'nl-heading'.
+- Open Tokens Studio.
+- Ga naar de tab 'Inspect'.
+- Activeer 'Deep inspect'.
+- Vervang `utrecht.heading-4.font-weight` door `nl.heading.level-4.font-weight`.
+
+## 5.2.0
+
+24 november 2025
+
+Community componenten ‘Tabs’ van gemeente Amsterdam en Den Haag zijn toegevoegd aan de bibliotheek.
+
+- [Bekijk Tabs in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=25983-100533).
+- Hieronder vind je de bijbehorende design tokens.
+- Let op dat je per organisatie een aparte tokenset aanmaakt. Voor Amsterdam 'components/tabs/amsterdam' en voor Den Haag 'components/tabs/den-haag'. We hanteren hierbij een alfabetische volgorde.
+
+Amsterdam:
+
+```json
+{
+  "ams": {
+    "tabs": {
+      "gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.row.3xl}"
+      },
+      "button": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "cursor": {
+          "$type": "other",
+          "$value": "pointer",
+          "$description": "[code-only]"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "0px",
+          "$description": "[code-only]"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "-{basis.border-width.lg}",
+              "blur": "0",
+              "spread": "0",
+              "color": "{ams.tabs.button.color}",
+              "type": "innerShadow"
+            }
+          }
+        },
+        "disabled": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.disabled.color-subtle}"
+          },
+          "cursor": {
+            "$type": "other",
+            "$value": "not-allowed",
+            "$description": "[code-only]"
+          }
+        },
+        "selected": {
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "-{basis.border-width.lg}",
+              "blur": "0",
+              "spread": "0",
+              "color": "{ams.tabs.button.color}",
+              "type": "innerShadow"
+            }
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          }
+        }
+      },
+      "list": {
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "-{basis.border-width.sm}",
+            "blur": "0",
+            "spread": "0",
+            "color": "{basis.color.default.border-subtle}",
+            "type": "innerShadow"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+Den Haag:
+
+```json
+{
+  "denhaag": {
+    "tabs": {
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.border-subtle}"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.border-width.sm}"
+      },
+      "border-style": {
+        "$type": "other",
+        "$value": "solid",
+        "$description": "[code-only]"
+      },
+      "width": {
+        "$type": "dimension",
+        "$value": "100%",
+        "$description": "[code-only]"
+      },
+      "tab": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "cursor": {
+          "$type": "other",
+          "$value": "pointer",
+          "$description": "[code-only]"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "outline": {
+          "$type": "other",
+          "$value": "0px",
+          "$description": "[code-only]"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          }
+        },
+        "focus": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.focus.color}"
+          }
+        },
+        "selected": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-document}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          }
+        }
+      },
+      "tab-indicator": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.border-active}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.lg}"
+        },
+        "bottom": {
+          "$type": "other",
+          "$value": "0px",
+          "$description": "[code-only]"
+        }
+      },
+      "tab-panel": {
+        "outline": {
+          "$type": "other",
+          "$value": "0px",
+          "$description": "[code-only]"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.3xl}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.3xl}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "0px"
+        }
+      }
+    }
+  }
+}
+```
+
+## 5.0.1
+
+21 november 2025
+
+Bugfix: 'curly-braces' toegevoegd aan de waarde van design token `utrecht.pagination.relative-link.disabled.color`.
+
+- [Ga naar de pagina van Page Number Navigation](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1691-11779).
+- Open Tokens Studio.
+- Ga naar de tokenset 'page-number-navigation/utrecht'.
+- Wijzig de waarde van de design token `utrecht.pagination.relative-link.disabled.color` van `basis.color.disabled.color-subtle` naar `{basis.color.disabled.color-subtle}`. Wanneer er wordt gevraagd waar deze wijziging doorgevoerd moet worden kies je voor 'Page'.
+- Klik op 'Apply to page' zodat de wijziging op de hele pagina wordt doorgevoerd.
+- Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+## 5.0.0
+
+19 november 2025
+
+ToDo component Case Card bijgewerkt.
+
+- Verschillende design tokens toegevoegd.
+- Naamgeving in het property panel aangepast.
+- Teksten in het documentatie-frame bijgewerkt.
+
+Met deze aanpassingen is het gemakkelijker om de oude Case Card te verwijderen en in te wisselen voor de aangepaste versie uit de Figma bibliotheek.
+
+- [Bekijk Case Card in de NL Design System - ToDo Bibliotheek](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=3677-5184).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "todo": {
+    "case-card": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.action-2.bg-default}"
+      },
+      "border-radius": {
+        "$type": "dimension",
+        "$value": "{basis.border-radius.sm}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "192px"
+      },
+      "min-inline-size": {
+        "$type": "dimension",
+        "$value": "328px"
+      },
+      "padding-block": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.2xl}"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.3xl}"
+      },
+      "row-gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.row.lg}"
+      },
+      "description": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        }
+      },
+      "heading": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.heading.color}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.heading.font-family}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.xl}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.heading.font-weight}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.xl}"
+        }
+      },
+      "metadata": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        }
+      },
+      "icon": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "size": {
+          "$type": "dimension",
+          "$value": "{basis.size.icon.md}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.bg-active}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.focus.background-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.focus.color}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.bg-hover}"
+        }
+      },
+      "decoration": {
+        "folder": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.bg-active}"
+          },
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.action-2.bg-active}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.action-2.bg-active}"
+            }
+          },
+          "focus": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.focus.background-color}"
+            }
+          }
+        },
+        "paper": {
+          "background-color": {
+            "$type": "color",
+            "$value": "#ffffff"
+          }
+        }
+      },
+      "archived": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-default}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "description": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-document}"
+          }
+        },
+        "heading": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.heading.color}"
+          }
+        },
+        "metadata": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-document}"
+          }
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-active}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-hover}"
+          }
+        },
+        "decoration": {
+          "folder": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-active}"
+            },
+            "active": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{basis.color.default.bg-active}"
+              }
+            },
+            "hover": {
+              "background-color": {
+                "$type": "color",
+                "$value": "{basis.color.default.bg-active}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## 4.2.1
+
+14 november 2025
+
+Layernaam herstellen naar orginele naam.
+
+Eerder maakten we gebruik van een script om de documentatie van de design tokens te automatiseren. Dit script paste ook de namen van de layers aan. Het script is niet langer beschikbaar. Daarnaast zijn er verkeerde layernamen bij componenten terechtgekomen... oeps.
+We hebben alle layernamen voor de documentatie van de design tokens (links van de componenten) hersteld naar de originele naam: Design Token Documentation Item.
+
+- Selecteer de layers van de design token documentatie.
+- Kies in het Figma property-panel voor 'Reset specific changes'.
+- Kies voor 'Reset name'.
+
+[Bekijk de video 'Changelog: Lagen hernoemen'](https://youtu.be/-grG31TAwkY) waarin we laten zien hoe je dit zelf kunt doen.
+
+## 4.2.0
+
+3 november 2025
+
+Community component 'Image' van gemeente Utrecht is toegevoegd aan de bibliotheek.
+
+- [Bekijk de video 'Changelog: utrecht-image toevoegen'](https://youtu.be/5G-1HtuPdwE) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 4.1.1
+
+31 oktober 2025
+
+Verouderde Figma Style uit Todo Bibliotheek weggewerkt.
+
+Avatar
+
+- [Ga naar het documentatie frame](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=3677-5114&t=i5QLiN5SHYA4gJv3-4).
+- Selecteer de link 'https://www.nldesignsystem.nl/avatar'.
+- Kies voor 'Reset instance'.
+- Herstel de tekst en de link.
+
+Form Field Label
+
+- [Ga naar het documentatie frame](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=3686-22776&t=i5QLiN5SHYA4gJv3-4).
+- Selecteer de link 'https://www.nldesignsystem.nl/form-field-label'.
+- Kies voor 'Reset instance'.
+- Herstel de tekst en de link.
+
+Page Footer
+
+- [Ga naar de component](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=4-742&t=i5QLiN5SHYA4gJv3-4).
+- Wissel onder 'Selection colors' Figma Style `nl/colors/link` in voor `link`.
+
+## 4.1.0
+
+14 oktober 2025
+
+Community component ‘Card as Link’ van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Card as Link in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=24933-2520&p=f&t=KALXOY7Eoqfkv6LB-11).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "ams": {
+    "card": {
+      "outline-offset": {
+        "$type": "other",
+        "$value": "auto",
+        "$description": "[code-only]"
+      },
+      "heading": {
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$description": "[code-only]"
+        }
+      },
+      "heading-group": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.sm}"
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$description": "[code-only]"
+        }
+      },
+      "image": {
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$description": "[code-only]"
+        }
+      },
+      "link": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "None"
+        },
+        "text-decoration-thickness": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
+        }
+      }
+    }
+  }
+}
+```
 
 ## 4.0.0
 
@@ -190,6 +867,8 @@ Community component 'Data Summary' van gemeente Den Haag is toegevoegd aan de bi
 
 ## 3.1.0
 
+16 september 2025
+
 Design tokens voor 'margin' toegevoegd aan de design token documentatie in Figma.
 
 Om een completer beeld te geven van de beschikbare design tokens per component, zijn er design tokens voor 'margin' toegevoegd aan de design token documentatie in Figma.
@@ -258,6 +937,8 @@ Lijst van componenten die van margin tokens zijn voorzien. Elk component linkt n
 - [Table](https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-table--design-tokens)
 
 ## 3.0.0
+
+15 september 2025
 
 `utrecht-icon` community component toegepast binnen enkele Utrecht componenten.
 
@@ -801,3 +1482,5 @@ Community component 'Page Footer' van gemeente Amsterdam is toegevoegd aan de bi
 - Design tokens gedocumenteerd met nieuw ‘Design Token Documentation Item’.
 - 25 nieuwe toptaak iconen vanuit OpenGemeenten.
 - Met deze release komen ook het ‘Start-thema’ en de ‘basis-tokens’ mee.
+
+Zoals je ziet is er zoveel veranderd dat een verse installatie sneller is dan alles aan jouw kant stap voor stap aanpassen. We hebben een [Figma migratie-stappenplan](https://github.com/nl-design-system/documentatie/blob/main/docs/handboek/designer/werken-met-nl-design-system/figma-migratie-stappenplan.mdx) geschreven waarmee we je helpen om stap voor stap te migreren.

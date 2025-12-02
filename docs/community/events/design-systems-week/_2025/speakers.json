@@ -64,7 +64,7 @@
   },
   "JuanCubilla": {
     "name": "Juan Cubilla",
-    "organisation": "City of Helsinki",
+    "organisation": "Gofore",
     "image": {
       "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-JuanCubilla.png",
       "alt": "Juan Cubilla"
@@ -125,7 +125,7 @@
   },
   "ClaudiaVermeulen": {
     "name": "Claudia Vermeulen",
-    "organisation": "InnoValer",
+    "organisation": "InnoValor",
     "image": {
       "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-ClaudiaVermeulen.png",
       "alt": "Claudia Vermeulen"
@@ -137,7 +137,7 @@
   },
   "BaukjeFaber": {
     "name": "Baukje Faber",
-    "organisation": "InnoValer",
+    "organisation": "InnoValor",
     "image": {
       "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-BaukjeFaber.png",
       "alt": "Baukje Faber"
@@ -197,5 +197,90 @@
       "en": "Tõnis Tobre is the technical project manager and architect of TEDI. His work has helped TEDI grow from an internal style guide into a nationwide design system. He combines strategic vision with practical technical solutions to ensure the design system delivers value to developers, designers, and Estonia's entire digital government."
     },
     "language": "en"
+  },
+  "ManuelMatuzovic": {
+    "name": "Manuel Matuzović",
+    "organisation": "Freelance",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-ManuelMatuzovic.png",
+      "alt": "Manuel Matuzović"
+    },
+    "description": {
+      "nl": "Manuel Matuzović is freelance front-end developer, accessibility auditor, docent, auteur en consultant. Hij schrijft regelmatig over toegankelijkheid, HTML en CSS op zijn blog matuzo.at",
+      "en": "Manuel Matuzović is a freelance front-end developer, accessibility auditor, teacher, author, and consultant who is passionate about the web. He regularly writes about accessibility, HTML, and CSS on his blog matuzo.at"
+    },
+    "language": "en"
+  },
+  "JoelLaumans": {
+    "name": "Joel Laumans",
+    "organisation": "Schiphol Airport Operations",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-JoelLaumans.png",
+      "alt": "Joel Laumans"
+    },
+    "description": {
+      "nl": "Joel Laumans is Design Lead bij Schiphol Operations. Hij ondersteunt ontwerpers en productteams bij het ontwikkelen van oplossingen die het werk op de luchthaven verbeteren met behulp van design en technologie."
+    },
+    "language": "nl"
+  },
+  "PimDieks": {
+    "name": "Pim Dieks",
+    "organisation": "Schiphol Airport Operations",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-PimDieks.png",
+      "alt": "Pim Dieks"
+    },
+    "description": {
+      "nl": "Pim Dieks is Senior UX-designer bij Schiphol Operations. Hij werkt aan Iris, de tool voor capaciteitsplanning die helpt knelpunten op de luchthaven te signaleren en te voorkomen. Naast zijn werk als ontwerper is Pim een actieve bijdrager aan het Enterprise Design System en een groot liefhebber van Figma."
+    },
+    "language": "nl"
+  },
+  "RobbertBroersma": {
+    "name": "Robbert Broersma",
+    "organisation": "NL Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-robbert-broersma.png",
+      "alt": "Robbert Broersma"
+    },
+    "description": {
+      "nl": "Robbert is design system lead van NL Design System. Met zijn ervaring bij andere design systems kent hij zowel de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele, toegankelijke componenten. In de rol van developer relations werkt hij graag online samen met developers van verschillende organisaties om dit community gedragen design system neer te zetten. Zijn passie voor keukengerei is daarbij niet te missen! RVS met een haakje? Dan kun je het waarschijnlijk op zijn achtergrond vinden."
+    },
+    "language": "nl"
+  },
+  "GerbenStarink": {
+    "name": "Gerben Starink",
+    "organisation": "Ministerie van Algemene Zaken",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-GerbenStarink.png",
+      "alt": "Gerben Starink"
+    },
+    "description": {
+      "nl": "Gerben is adviseur Rijkshuisstijl bij Algemene Zaken en een bekend gezicht bij de Rijkshuisstijl Community."
+    },
+    "language": "nl"
+  },
+  "AlineNap": {
+    "name": "Aline Nap",
+    "organisation": "Logius",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-AlineNap.png",
+      "alt": "Aline Nap"
+    },
+    "description": {
+      "nl": "Aline is Design System Designer bij Logius en actief in de Rijkshuisstijl Community. Heb je vragen over design tokens of Figma Variables? Dan ben je bij haar aan het juiste adres."
+    },
+    "language": "nl"
+  },
+  "BryanDeJong": {
+    "name": "Bryan de Jong",
+    "organisation": "VNG Realisatie",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2025-BryanDeJong.png",
+      "alt": "Bryan de Jong"
+    },
+    "description": {
+      "nl": "Bryan is front-end developer bij VNG Realisatie en Frameless. Hij maakt het makkelijker voor organisaties om aan de slag te gaan met NL Design System door templates, documentatie en thema tooling beschikbaar te stellen binnen de community. Daarbij bouwt hij voort op bestaande community componenten om de stap naar implementatie zo klein mogelijk te maken."
+    },
+    "language": "nl"
   }
 }

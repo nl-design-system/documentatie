@@ -28,6 +28,7 @@ export interface Session {
   icalLink?: string;
   language: { abbr: string; description: string };
   videoId?: string;
+  cancelled?: boolean;
 }
 
 interface SessionTableProps extends HTMLAttributes<HTMLTableElement> {
@@ -60,55 +61,58 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
         </TableRow>
       </TableHeader>
       <TableBody>
-        {sessions.map(({ isoDateTime, speakers, subject, icalLink, language }, index) => (
-          <TableRow className="session-table__row" key={index}>
-            <TableCell className="session-table__time">
-              <Paragraph>
-                <time dateTime={isoDateTime}>
-                  {new Intl.DateTimeFormat(lang, {
-                    hour: 'numeric',
-                    minute: 'numeric',
-                    timeZone: 'Europe/Amsterdam',
-                    timeZoneName: lang !== 'nl-NL' ? 'short' : undefined,
-                  }).format(new Date(isoDateTime))}
-                </time>
-              </Paragraph>
-            </TableCell>
-            <TableCell className="session-table__language">
-              <abbr title={language.description}>{language.abbr}</abbr>
-            </TableCell>
-            <TableCell>
-              <div className="session-table__speakers">
-                {Object.entries(allSpeakers)
-                  .filter(([fullName]) => speakers.includes(fullName))
-                  .map(([_, speaker], index) => (
-                    <SpeakerData key={index} {...speaker} />
-                  ))}
-              </div>
-            </TableCell>
-            <TableCell className="session-table__subject">
-              <Paragraph lang={language.abbr}>
-                <Link
-                  href={`/events/design-systems-week-2025/${lang === 'nl-NL' ? 'programma' : language.abbr === 'EN' ? 'en/program' : 'programma'}#${subject.toLowerCase().replace(/\s/gi, '-')}`}
-                >
-                  {subject}
-                </Link>
-              </Paragraph>
-            </TableCell>
-            <TableCell className="session-table__time">
-              {icalLink && (
-                <ButtonLink href={icalLink} download={icalLink} aria-labelledby="ical-description">
-                  <Icon>
-                    <IconCalendarEvent />
-                  </Icon>{' '}
-                  <span id="ical-description" className="sr-only">
-                    iCal file for <span lang={language.abbr}>{subject}</span>(download)
-                  </span>
-                </ButtonLink>
-              )}
-            </TableCell>
-          </TableRow>
-        ))}
+        {sessions.map(
+          ({ isoDateTime, speakers, subject, icalLink, language, cancelled }, index) =>
+            !cancelled && (
+              <TableRow className="session-table__row" key={index}>
+                <TableCell className="session-table__time">
+                  <Paragraph>
+                    <time dateTime={isoDateTime}>
+                      {new Intl.DateTimeFormat(lang, {
+                        hour: 'numeric',
+                        minute: 'numeric',
+                        timeZone: 'Europe/Amsterdam',
+                        timeZoneName: lang !== 'nl-NL' ? 'short' : undefined,
+                      }).format(new Date(isoDateTime))}
+                    </time>
+                  </Paragraph>
+                </TableCell>
+                <TableCell className="session-table__language">
+                  <abbr title={language.description}>{language.abbr}</abbr>
+                </TableCell>
+                <TableCell>
+                  <div className="session-table__speakers">
+                    {Object.entries(allSpeakers)
+                      .filter(([fullName]) => speakers.includes(fullName))
+                      .map(([_, speaker], index) => (
+                        <SpeakerData key={index} {...speaker} />
+                      ))}
+                  </div>
+                </TableCell>
+                <TableCell className="session-table__subject">
+                  <Paragraph lang={language.abbr}>
+                    <Link
+                      href={`/events/design-systems-week-2025/${lang === 'nl-NL' ? 'programma' : language.abbr === 'EN' ? 'en/program' : 'programma'}#${subject.toLowerCase().replace(/\s/gi, '-')}`}
+                    >
+                      {subject}
+                    </Link>
+                  </Paragraph>
+                </TableCell>
+                <TableCell className="session-table__time">
+                  {icalLink && (
+                    <ButtonLink href={icalLink} download={icalLink} aria-labelledby="ical-description">
+                      <Icon>
+                        <IconCalendarEvent />
+                      </Icon>{' '}
+                      <span id="ical-description" className="sr-only">
+                        iCal file for <span lang={language.abbr}>{subject}</span>(download)
+                      </span>
+                    </ButtonLink>
+                  )}
+                </TableCell>
+              </TableRow>
+            ),
+        )}
       </TableBody>
     </Table>
   </div>

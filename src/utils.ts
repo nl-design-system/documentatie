@@ -48,6 +48,7 @@ export type PROJECT_ID =
   | 'AMSTERDAM'
   | 'RVO'
   | 'LOGIUS'
+  | 'RIJKSHUISSTIJL_COMMUNITY'
   | 'DEN_HAAG';
 
 export interface ProjectTask {
@@ -159,7 +160,7 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
         const brand = /^(.+) URL/.exec(name)[1];
         const description =
           brand === 'Storybook'
-            ? `${alias} (${frameworkName}) in Storybook van ${project.title}`
+            ? `${alias} (${frameworkName}) in Storybook van ${project.title}}`
             : `${alias} (${frameworkName}) op ${brand}`;
         return {
           brand: brand.toLowerCase(),

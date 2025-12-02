@@ -1,5 +1,56 @@
 [
   {
+    "id": 114,
+    "date": "2025-11-25",
+    "description": [
+      "Yolijn vertelt over de resultaten van de evaluatie van de Rijkshuisstijl Community enquête, welke verbeteringen al worden uitgevoerd en welke nog verwacht worden. Ook deelt ze enkele conclusies die uit de uitkomsten kunnen worden getrokken. Daarnaast legt ze uit hoe je kunt meedoen aan de Rijkshuisstijl Community, de estafettemodeldagen, de Design Open Dag en de Heartbeat."
+    ],
+    "title": "Heartbeat van 25 november 2025.",
+    "youtubeId": "JyV8q_64f0E"
+  },
+  {
+    "id": 113,
+    "date": "2025-11-11",
+    "description": [
+      "Fionn van KOOP vertelt over de laatste verbeteringen in de Rijkshuisstijl Community repository.",
+      "Charlotte van het kernteam blikt met ons terug op de estafettemodeldagen van 10 oktober en 7 november."
+    ],
+    "title": "Heartbeat van 11 november 2025.",
+    "youtubeId": "vyA7l5xGhMM"
+  },
+  {
+    "id": 112,
+    "date": "2025-10-28",
+    "description": [
+      "Bryan deelt zijn ervaring met het opzetten van de MijnServices Community binnen NL Design System. Sinds 2024 werkt hij met UX-designers en developers aan ontwerpen, gebruikersonderzoek en templates voor het implementeren van toegankelijke overheidsportalen. Hij laat zien wat de winst is van deze community-samenwerking."
+    ],
+    "title": "Heartbeat van 28 oktober 2025 - MyServices Community.",
+    "youtubeId": "G5t2s_-dAfo"
+  },
+  {
+    "id": 111,
+    "date": "2025-10-28",
+    "description": [
+      "Gerben neemt ons mee in het proces van Rijkshuisstijl naar een online rijksidentiteit. Een inspirerend, strategisch verhaal dat laat zien hoe de Rijkshuisstijl Community bijdraagt aan een herkenbare, betrouwbare en inclusieve overheid door visuele communicatie te verbinden met strategie, samenwerking en technologie.",
+      "Aline deelt haar ervaring als actief lid van de Rijkshuisstijl Community. Samen met andere designers en developers brengt ze de gemoderniseerde Rijkshuisstijl tot leven in design én code, met behulp van design tokens en componenten uit de community. Ze laat zien hoe die samenwerking in de praktijk werkt, wat het oplevert en waarom het zo waardevol is om als overheid samen te bouwen aan één gezamenlijk design system."
+    ],
+    "title": "Heartbeat van 28 oktober 2025 - Rijkshuisstijl Community.",
+    "youtubeId": "744wIDdZ7N4"
+  },
+  {
+    "id": 110,
+    "date": "2025-10-14",
+    "description": [
+      "Nieuw kernteamlid Richard stelt zicht voor.",
+      "Roy laat het nieuwe stappenplan om NL Design System gebruiken zonder front-end framework zien.",
+      "Tim en Jurgen vertellen over het nieuwe deelproject Expertteam Digitale toegankelijkheid",
+      "Yolijn vertelt over het programma van de Design Systems Week",
+      "Jeffrey deelt onze experimenten met Connected Projects en de nieuwe Flowcharts die het proces om componenten te gebruiken hopelijk duidelijker maakt."
+    ],
+    "title": "Heartbeat van 14 oktober 2025.",
+    "youtubeId": "CdS2m-B8m-M"
+  },
+  {
     "id": 109,
     "date": "2025-09-30",
     "description": [

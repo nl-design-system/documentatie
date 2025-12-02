@@ -10,7 +10,7 @@
     "paths": {
       "@docs/*": ["./docs/*"],
       "@site/*": ["./*"],
-      "@theme/*": ["./src/theme/*"]
+      "@theme/*": ["src/theme/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "*.ts"],
