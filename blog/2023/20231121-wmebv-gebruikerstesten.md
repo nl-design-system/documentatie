@@ -13,6 +13,8 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/po
 
 In de afgelopen maanden werkte het NL Design System kernteam samen met VNG aan generieke formulieren. Vorige week testten we ze met gebruikers bij Stichting Accessibility in Utrecht.
 
+<!-- truncate -->
+
 ## Waarom Wmebv-formulieren?
 
 Om wat context te geven: we maakten deze formulieren specifiek vanwege de [Wet modernisering elektronisch bestuurlijk verkeer](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/wetgeving/wet-modernisering-elektronisch-bestuurlijk-verkeer/) (Wembv). Deze wet treedt volgend jaar in werking en geeft burgers en bedrijven het recht overheidszaken digitaal te regelen. Veel organisaties zijn hierdoor met hun formulieren bezig. Inclusief organisaties in de NL Design System community.
