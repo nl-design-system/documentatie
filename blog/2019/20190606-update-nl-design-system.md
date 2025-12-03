@@ -1,10 +1,7 @@
 ---
 title: Update - NL Design System
 slug: update-nl-design-system
-authors:
-  - name: Edo Plantinga
-    title: Freelance projectleider en communitymanager
-    url: https://www.linkedin.com/in/edoplantinga
+authors: Edo Plantinga
 tags: [update, NL Design System]
 image: https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2019/01/rijkshuisstijl-knoppen-e1548707321947.png
 hide_table_of_contents: false

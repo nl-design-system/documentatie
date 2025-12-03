@@ -1,10 +1,7 @@
 ---
 title: Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers
 slug: gebruikerstest-ondernemers-den-haag
-authors:
-  - name: Renate Bruinenberg
-    title: Communicatieadviseur NL Design System
-    url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
+authors: Renate Bruinenberg
 tags: [meta, NL Design System]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/lessen-gebruikerstest.png
 hide_table_of_contents: false

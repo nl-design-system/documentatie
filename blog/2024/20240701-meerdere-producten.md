@@ -1,10 +1,7 @@
 ---
 title: "Design systems bij Logius: hoe één design system meerdere producten ondersteunt"
 slug: een-design-system-meerdere-producten
-authors:
-  - name: Renate Bruinenberg
-    title: Communicatieadviseur NL Design System
-    url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
+authors: Renate Bruinenberg
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_een-product.png
 tags: [logius, NL Design System, componenten, gebruikersonderzoeken]
 hide_table_of_contents: false

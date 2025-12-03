@@ -2,9 +2,8 @@
 title: Ik wil je wat vragen, maar ik heb geen WhatsApp!
 slug: meerdere-manieren-contact
 authors:
-  - name: Rian Rietveld
+  - key: Rian Rietveld
     title: Toegankelijkheidsspecialist NL Design System
-    url: https://www.linkedin.com/in/rianrietveld/
 tags: [toegankelijkheid, NL Design System]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/meerdere-manieren.png
 hide_table_of_contents: false
