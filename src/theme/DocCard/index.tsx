@@ -1,6 +1,6 @@
 import { Link } from '@site/src/components/Link';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
-import { useDocById } from '@docusaurus/theme-common/internal';
+import { useDocById } from '@docusaurus/plugin-content-docs/client';
 import type { Props } from '@theme/DocCard';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import clsx from 'clsx';
