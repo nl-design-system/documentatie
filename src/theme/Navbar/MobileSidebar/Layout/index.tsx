@@ -1,9 +1,14 @@
 import { useNavbarMobileSidebar, useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal';
-import type { Props } from '@theme/Navbar/MobileSidebar/Layout';
 import clsx from 'clsx';
 import { useEffect, useRef } from 'react';
 import type { ReactElement } from 'react';
 import './Layout.css';
+
+interface Props {
+  header: ReactElement;
+  primaryMenu: ReactElement;
+  secondaryMenu: ReactElement;
+}
 
 export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }: Props): ReactElement {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu();
