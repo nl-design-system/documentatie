@@ -16,7 +16,6 @@ const config: Config = {
   url: siteUrl,
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'favicon.svg',
   trailingSlash: true,
   organizationName: 'nl-design-system', // Usually your GitHub org/user name.
