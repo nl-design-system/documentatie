@@ -1,4 +1,4 @@
-import Admonition from '@theme/Admonition';
+import Admonition from '@theme-original/Admonition';
 import MDXA from '@theme/MDXComponents/A';
 import MDXCode from '@theme/MDXComponents/Code';
 import MDXDetails from '@theme/MDXComponents/Details';
