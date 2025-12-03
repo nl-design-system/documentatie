@@ -2,7 +2,6 @@ import { MDXProvider } from '@mdx-js/react';
 import Admonition from '@theme-original/Admonition';
 import MDXDetails from '@theme/MDXComponents/Details';
 import MDXPre from '@theme/MDXComponents/Pre';
-import type { Props } from '@theme/MDXContent';
 import {
   Code,
   Emphasis,
@@ -17,7 +16,11 @@ import {
   OrderedList,
   UnorderedList,
 } from '@utrecht/component-library-react/dist/css-module';
-import type { ReactElement } from 'react';
+import type { ReactElement, ReactNode } from 'react';
+
+interface Props {
+  children: ReactNode;
+}
 
 export default function MDXContent({ children }: Props): ReactElement {
   return (
