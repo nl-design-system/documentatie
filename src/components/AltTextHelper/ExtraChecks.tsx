@@ -87,7 +87,7 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
           {image.type === 'simple' && (
             <FormFieldCheckbox
               id="image-description-nearby"
-              label="De beschrijving van de afbeelding staat al naast, boven of onder de afbeelding"
+              label="De beschrijving van de afbeelding staat al in de buurt van de afbeelding"
               name="descripted"
               defaultChecked={!!checkedOptions.descripted}
               onChange={handleChange}

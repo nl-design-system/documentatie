@@ -8,8 +8,9 @@ import {
   RadioButton,
   Button,
   Heading3,
-  Paragraph,
   PreHeading,
+  UnorderedList,
+  UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 
 const groupName = 'text-type';
@@ -138,19 +139,20 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
             </FormLabel>
           </FormField>
 
-          <Heading3>Wees voorzichtig met tekst in afbeeldingen</Heading3>
-          <Paragraph>
-            Tekst in een afbeelding wordt niet voorgelezen door een screenreader en kan niet worden aangepast aan de
-            behoeften van de bezoeker. Bied daarom altijd een alternatief aan in gewone tekst.
-          </Paragraph>
-          <Paragraph>
-            Soms is een afbeelding van tekst wél gerechtvaardigd, bijvoorbeeld bij een logo of wanneer de typografie
-            onderdeel is van de boodschap.
-          </Paragraph>
-          <Paragraph>
-            Lees meer over hoe je omgaat met tekst in afbeeldingen op de pagina{' '}
-            <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/">Tekst in een afbeelding</a>.
-          </Paragraph>
+          <Heading3>Meer informatie over het gebruik van tekst in afbeeldingen</Heading3>
+          <UnorderedList>
+            <UnorderedListItem>
+              <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/">
+                Wees voorzichtig met tekst in afbeeldingen
+              </a>
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/#op-een-toegankelijke-manier-tekst-in-een-afbeelding-gebruiken">
+                Op een toegankelijke manier tekst in een afbeelding gebruiken
+              </a>
+              .
+            </UnorderedListItem>
+          </UnorderedList>
 
           <div className="nlds-button-bar">
             <Button appearance="secondary-action-button" onClick={onPrevStep}>
