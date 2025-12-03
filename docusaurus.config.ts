@@ -58,6 +58,7 @@ const config: Config = {
           postsPerPage: 'ALL',
           blogSidebarCount: 0,
           showReadingTime: false,
+          tags: 'tags.yml',
         },
         theme: {
           customCss: [
