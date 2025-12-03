@@ -26,39 +26,33 @@ const TestPage = () => {
         </Paragraph>
         <OrderedList>
           <OrderedListItem>
-            <Link href="https://www.onbekend-talent.nl/leer-werk-traject-bij-mas-zone-3-in-amsterdam">Voorbeeld 0</Link>{' '}
+            <Link href="https://www.onbekend-talent.nl/leer-werk-traject-bij-mas-zone-3-in-amsterdam">Voorbeeld 1</Link>{' '}
             (Opwarmertje)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.denhaag.nl/nl/">Voorbeeld 1</Link> (Zoek)
+            <Link href="https://www.denhaag.nl/nl/">Voorbeeld 2</Link> (Zoek)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.7poort.nl/">Voorbeeld 2</Link>(Tekst in header))
+            <Link href="https://www.rijksoverheid.nl/">Voorbeeld 3</Link>(Banners onderaan))
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.7poort.nl/">Voorbeeld 3a</Link>(Kaart)
-          </OrderedListItem>
-          <OrderedListItem>
-            <Link href="https://activiteiten.amsterdam.nl/activiteiten/2025/10/stem-plannen-west-begroot!/">
-              Voorbeeld 3b
+            <Link href="https://ammatch.nl/artikelen/we-werken-graag-met-partners-die-mensen-verder-helpen/">
+              Voorbeeld 4
             </Link>{' '}
-            (Afbeelding)
-          </OrderedListItem>
-          <OrderedListItem>
-            <Link href="https://8rhk.nl/ruimtelijk-perspectief-achterhoek/">Voorbeeld 3c</Link> (Meerdere afbeeldingen)
-          </OrderedListItem>
-          <OrderedListItem>
-            <Link href="https://ammatch.nl/artikelen/we-werken-graag-met-partners-die-mensen-verder-helpen/"></Link>{' '}
             (Afbeelding)
           </OrderedListItem>
           <OrderedListItem>
             <Link href="https://www.snn.nl/valorisatie-2025">Voorbeeld 5</Link>(Stappen)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.spna.nl/nieuws/aanmelden-rassenproeven-2026-granen-en-koolzaad/">Voorbeeld 7</Link>{' '}
+            <Link href="https://www.spna.nl/nieuws/aanmelden-rassenproeven-2026-granen-en-koolzaad/">Voorbeeld 6</Link>{' '}
             (Afbeelding onderin)
           </OrderedListItem>
-          <OrderedListItem>Decoratief en klikbaar</OrderedListItem>
+          <OrderedListItem>
+            <Link href="https://www.kennisvandeoverheid.nl/actueel/nieuws/2025/11/19/terugblik-webinar-innovatie-barometer-overheid-samen-investeren-in-de-innovatiekracht-van-de-overheid-van-morgen">
+              Voorbeeld 7
+            </Link>
+          </OrderedListItem>
           <OrderedListItem>
             <Link href="https://www.denhaag.nl/nl/">Voorbeeld 8</Link> (Logo)
           </OrderedListItem>
@@ -76,9 +70,20 @@ const TestPage = () => {
             (Afbeelding)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.nlvoorelkaar.nl/">
-              Voorbeeld 12 (Afbeeldingen bij Talenten en Vrijwilligerswerk)
-            </Link>
+            <Link href="https://www.nlvoorelkaar.nl/">Voorbeeld 12</Link> (Afbeeldingen bij Talenten en
+            Vrijwilligerswerk)
+          </OrderedListItem>
+          <OrderedListItem>
+            <Link href="https://www.7poort.nl/">Voorbeeld 13</Link>(Kaart)
+          </OrderedListItem>
+          <OrderedListItem>
+            <Link href="https://activiteiten.amsterdam.nl/activiteiten/2025/10/stem-plannen-west-begroot!/">
+              Voorbeeld 14
+            </Link>{' '}
+            (Afbeelding)
+          </OrderedListItem>
+          <OrderedListItem>
+            <Link href="https://8rhk.nl/ruimtelijk-perspectief-achterhoek/">Voorbeeld 15</Link> (Meerdere afbeeldingen)
           </OrderedListItem>
         </OrderedList>
       </PageContent>
