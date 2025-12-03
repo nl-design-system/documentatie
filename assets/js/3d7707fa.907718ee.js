@@ -3,7 +3,7 @@
  {
   76026: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => u, component: () => m, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => l, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => u, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => l, title: () => d, toc: () => h });
    var r = n(52676),
     i = n(40139),
     c = n(40999),
@@ -20,14 +20,14 @@
     d = 'Alert',
     j = 'Belangrijk bericht dat informeert over de huidige activiteit van de gebruiker.',
     y = 9,
-    m = c.find((e) => e.number === y);
-   function g(e) {
-    const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: m, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(s.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: m, headingLevel: 3 })] });
+    g = c.find((e) => e.number === y);
+   function m(e) {
+    const t = { h2: 'h2', p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)('p', { children: (0, r.jsxs)(t.p, { children: ['Gerelateerde componenten: ', (0, r.jsx)('a', { href: '/alert-dialog/', children: 'Alert Dialog' }), ',', ' ', '\n', (0, r.jsx)('a', { href: '/notification-banner/', children: 'Notification Banner' }), ', ', (0, r.jsx)('a', { href: '/note/', children: 'Note' }), '.'] }) }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(s.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: g, headingLevel: 3 })] });
    }
    function p(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(g, { ...e }) }) : g(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
    }
   },
   3050: (e, t, n) => {
@@ -84,7 +84,7 @@
     };
    var j = n(35038),
     y = n(28743);
-   const m = (e) => {
+   const g = (e) => {
     let { checked: t, unchecked: r } = e;
     return (0, u.jsx)(y.Z, {
      fallback: (0, u.jsx)(u.Fragment, {}),
@@ -103,7 +103,7 @@
      },
     });
    };
-   var g = n(23355),
+   var m = n(23355),
     p = n(41757),
     v = n(37943),
     b = n(59954);
@@ -180,7 +180,7 @@
              children: (0, u.jsxs)(j.aY, {
               children: [
                (0, u.jsx)(r.X6, { level: n, children: e.title.replace(/^Community/i, '') }),
-               (0, u.jsxs)(r.nv, { children: [(0, u.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, u.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (0, u.jsxs)(r.nv, { children: [(0, u.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, u.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
                (o.length > 0 || c.length > 0) && (0, u.jsx)(r.X6, { level: n + 1, children: 'Snel aan de slag' }),
                o.length > 0 &&
                 (0, u.jsx)(u.Fragment, {
@@ -218,7 +218,7 @@
     N = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
      const c = t && x.$3[t.relayStep];
-     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsx)(p.V, { level: n, suffix: c && (0, u.jsx)(g.y, { state: c }), children: t.title }), (0, u.jsx)(r.nv, { lead: !0, children: i })] });
+     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsx)(p.V, { level: n, suffix: c && (0, u.jsx)(m.y, { state: c }), children: t.title }), (0, u.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   23355: (e, t, n) => {
@@ -246,7 +246,7 @@
   },
   14669: (e, t, n) => {
    'use strict';
-   n.d(t, { $3: () => r, $e: () => g, BA: () => o, Ee: () => u, Q6: () => c, U: () => j, Yr: () => p, d: () => h, e9: () => s, fO: () => b, mA: () => i, ps: () => y, qU: () => k, s0: () => v, zP: () => m });
+   n.d(t, { $3: () => r, $e: () => m, BA: () => o, Ee: () => u, Q6: () => c, U: () => j, Yr: () => p, d: () => h, e9: () => s, fO: () => b, mA: () => i, ps: () => y, qU: () => k, s0: () => v, zP: () => g });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     c = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
@@ -310,8 +310,8 @@
       return { frameworkName: t, tasks: r };
      });
     },
-    m = (e) => e.join('.'),
-    g = (e) => '--' + e.join('-'),
+    g = (e) => e.join('.'),
+    m = (e) => '--' + e.join('-'),
     p = (e, t) => t.reduce((e, t) => e?.[t], e);
    function v(e, t) {
     return void 0 === t && (t = []), Object.hasOwn(e, '$type') ? [t] : Object.keys(e).flatMap((n) => ('object' == typeof e[n] && null !== e[n] ? v(e[n], [...t, n]) : []));
@@ -319,7 +319,7 @@
    function b(e) {
     const t = new Map();
     function n(e) {
-     return t.has(e) || t.set(e, m(e)), t.get(e);
+     return t.has(e) || t.set(e, g(e)), t.get(e);
     }
     return e.sort((e, t) => e.length - t.length || n(e).localeCompare(n(t)));
    }

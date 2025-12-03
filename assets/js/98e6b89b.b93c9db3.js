@@ -22,8 +22,8 @@
     y = 181,
     g = c.find((e) => e.number === y);
    function m(e) {
-    const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(o.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(o.vM, { component: g, headingLevel: 3 })] });
+    const t = { h2: 'h2', p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)('p', { children: (0, r.jsxs)(t.p, { children: ['Gerelateerde componenten: ', (0, r.jsx)('a', { href: '/alert-dialog/', children: 'Alert Dialog' }), ', ', (0, r.jsx)('a', { href: '/drawer/', children: 'Drawer' }), ',', ' ', '\n', (0, r.jsx)('a', { href: '/modal-dialog/', children: 'Modal Dialog' }), '.'] }) }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(o.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(o.vM, { component: g, headingLevel: 3 })] });
    }
    function p(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
@@ -68,7 +68,7 @@
   },
   8657: (e, t, n) => {
    'use strict';
-   n.d(t, { cN: () => w, vM: () => N, W: () => _, Rv: () => A });
+   n.d(t, { cN: () => w, vM: () => D, W: () => _, Rv: () => N });
    var r = n(74824),
     i = n(4814),
     c = n(39854),
@@ -209,13 +209,13 @@
         })
       : (0, u.jsx)(r.nv, { children: 'Er zijn nog geen implementaties' });
     },
-    N = (e) => {
+    D = (e) => {
      let { component: t } = e;
      const n = t?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
      return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsxs)(r.nv, { children: ['We vinden het belangrijk dat de component ', t.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, u.jsxs)(r.QI, { children: [i ? (0, u.jsxs)(r.AS, { children: ['Vul de ', (0, u.jsx)(r.rU, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, u.jsxs)(r.AS, { children: [(0, u.jsxs)(r.rU, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', t.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, u.jsxs)(r.AS, { children: ['Draag bij aan de voortgang van ', t.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, u.jsx)(r.rU, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, u.jsx)(r.rU, { href: t.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    A = (e) => {
+    N = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
      const c = t && x.$3[t.relayStep];
      return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsx)(p.V, { level: n, suffix: c && (0, u.jsx)(m.y, { state: c }), children: t.title }), (0, u.jsx)(r.nv, { lead: !0, children: i })] });

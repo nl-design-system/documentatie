@@ -1,33 +1,33 @@
 (self.webpackChunk_nl_design_system_website = self.webpackChunk_nl_design_system_website || []).push([
- [48239],
+ [46536],
  {
-  66928: (e, t, n) => {
+  34673: (e, t, n) => {
    'use strict';
-   n.r(t), n.d(t, { assets: () => u, component: () => m, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => o, issueNumber: () => y, metadata: () => l, title: () => d, toc: () => h });
+   n.r(t), n.d(t, { assets: () => u, component: () => g, contentTitle: () => a, default: () => p, description: () => j, frontMatter: () => s, issueNumber: () => y, metadata: () => l, title: () => h, toc: () => d });
    var r = n(52676),
     i = n(40139),
-    c = n(40999),
-    s = n(8657);
-   const o = { title: 'Notification Banner', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Notification Banner', pagination_label: 'Notification Banner', description: 'Toont een informerend bericht dat niet direct is gerelateerd aan de inhoud van een pagina.', slug: '/notification-banner', keywords: ['alert', 'banner', 'banner alert', 'call alert', 'callout', 'feedback', 'highlighter', 'inline alert', 'inline message', 'message', 'message bar', 'note', 'notificatie', 'notificatiebanner', 'notification', 'notification banner', 'page alert', 'panel', 'top of page alert', 'waarschuwing', 'warning'] },
+    o = n(40999),
+    c = n(8657);
+   const s = { title: 'Modal Dialog', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Modal Dialog', pagination_label: 'Modal Dialog', description: 'Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina wordt geblokkeerd.', slug: '/modal-dialog', keywords: ['dialog', 'dialoogvenster', 'floating window', 'modaal venster', 'modale dialoog', 'modale popup', 'modale venster', 'modal', 'modal dialog', 'modal popup', 'modal window', 'overlay', 'popup', 'popup dialog', 'popup window', 'venster', 'window'] },
     a = void 0,
-    l = { id: 'componenten/notification-banner/index', title: 'Notification Banner', description: 'Toont een informerend bericht dat niet direct is gerelateerd aan de inhoud van een pagina.', source: '@site/docs/componenten/notification-banner/index.mdx', sourceDirName: 'componenten/notification-banner', slug: '/notification-banner', permalink: '/notification-banner', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/notification-banner/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Notification Banner', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Notification Banner', pagination_label: 'Notification Banner', description: 'Toont een informerend bericht dat niet direct is gerelateerd aan de inhoud van een pagina.', slug: '/notification-banner', keywords: ['alert', 'banner', 'banner alert', 'call alert', 'callout', 'feedback', 'highlighter', 'inline alert', 'inline message', 'message', 'message bar', 'note', 'notificatie', 'notificatiebanner', 'notification', 'notification banner', 'page alert', 'panel', 'top of page alert', 'waarschuwing', 'warning'] }, sidebar: 'componenten', previous: { title: 'Note', permalink: '/note' }, next: { title: 'Number Badge', permalink: '/number-badge' } },
+    l = { id: 'componenten/modal-dialog/index', title: 'Modal Dialog', description: 'Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina wordt geblokkeerd.', source: '@site/docs/componenten/modal-dialog/index.mdx', sourceDirName: 'componenten/modal-dialog', slug: '/modal-dialog', permalink: '/modal-dialog', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/modal-dialog/index.mdx', tags: [], version: 'current', frontMatter: { title: 'Modal Dialog', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Modal Dialog', pagination_label: 'Modal Dialog', description: 'Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina wordt geblokkeerd.', slug: '/modal-dialog', keywords: ['dialog', 'dialoogvenster', 'floating window', 'modaal venster', 'modale dialoog', 'modale popup', 'modale venster', 'modal', 'modal dialog', 'modal popup', 'modal window', 'overlay', 'popup', 'popup dialog', 'popup window', 'venster', 'window'] }, sidebar: 'componenten', previous: { title: 'Mark', permalink: '/mark' }, next: { title: 'Navigation Bar', permalink: '/navigation-bar' } },
     u = {},
-    h = [
+    d = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
      { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ],
-    d = 'Notification Banner',
-    j = 'Toont een informerend bericht dat niet direct is gerelateerd aan de inhoud van een pagina.',
-    y = 169,
-    m = c.find((e) => e.number === y);
-   function g(e) {
-    const t = { h2: 'h2', ...(0, i.a)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(s.Rv, { component: m, headingLevel: 1, description: j }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(s.cN, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(s.W, { component: m, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(s.vM, { component: m, headingLevel: 3 })] });
+    h = 'Modal Dialog',
+    j = 'Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina wordt geblokkeerd.',
+    y = 66,
+    g = o.find((e) => e.number === y);
+   function m(e) {
+    const t = { h2: 'h2', p: 'p', ...(0, i.a)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(c.Rv, { component: g, headingLevel: 1, description: j }), '\n', (0, r.jsx)('p', { children: (0, r.jsxs)(t.p, { children: ['Gerelateerde componenten: ', (0, r.jsx)('a', { href: '/alert-dialog/', children: 'Alert Dialog' }), ', ', (0, r.jsx)('a', { href: '/drawer/', children: 'Drawer' }), ',', ' ', '\n', (0, r.jsx)('a', { href: '/dialog/', children: 'Dialog' }), '.'] }) }), '\n', (0, r.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(c.cN, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(c.W, { component: g, headingLevel: 3 }), '\n', (0, r.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, r.jsx)(c.vM, { component: g, headingLevel: 3 })] });
    }
    function p(e = {}) {
     const { wrapper: t } = { ...(0, i.a)(), ...e.components };
-    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(g, { ...e }) }) : g(e);
+    return t ? (0, r.jsx)(t, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
    }
   },
   3050: (e, t, n) => {
@@ -46,24 +46,24 @@
   },
   35038: (e, t, n) => {
    'use strict';
-   n.d(t, { Zb: () => a, aY: () => o, um: () => l, wu: () => s });
+   n.d(t, { Zb: () => a, aY: () => s, um: () => l, wu: () => c });
    var r = n(37943),
     i = n(4814),
-    c = n(52676);
-   const s = (e) => {
-     let { background: t, children: n, className: r, ...s } = e;
-     return (0, c.jsx)('div', { className: (0, i.Z)('card__illustration', t && `card__illustration--${t}`, r), ...s, children: n });
+    o = n(52676);
+   const c = (e) => {
+     let { background: t, children: n, className: r, ...c } = e;
+     return (0, o.jsx)('div', { className: (0, i.Z)('card__illustration', t && `card__illustration--${t}`, r), ...c, children: n });
     },
-    o = (e) => (0, c.jsx)('div', { className: 'card__content', ...e }),
+    s = (e) => (0, o.jsx)('div', { className: 'card__content', ...e }),
     a = (e) => {
-     let { href: t, appearance: n, className: s, component: o = 'div', background: a, children: l } = e;
-     const u = (e) => ('article' === o ? (0, c.jsx)('article', { ...e }) : 'section' === o ? (0, c.jsx)('section', { ...e }) : (0, c.jsx)('div', { ...e })),
-      h = (0, c.jsx)(u, { className: (0, i.Z)('cardgroup__card', a && 'cardgroup__card--light-purple', `cardgroup__card--${n}`, s), children: l });
-     return t ? (0, c.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: h }) : h;
+     let { href: t, appearance: n, className: c, component: s = 'div', background: a, children: l } = e;
+     const u = (e) => ('article' === s ? (0, o.jsx)('article', { ...e }) : 'section' === s ? (0, o.jsx)('section', { ...e }) : (0, o.jsx)('div', { ...e })),
+      d = (0, o.jsx)(u, { className: (0, i.Z)('cardgroup__card', a && 'cardgroup__card--light-purple', `cardgroup__card--${n}`, c), children: l });
+     return t ? (0, o.jsx)(r.rU, { href: t, boxContent: !0, className: 'cardgroup__link', children: d }) : d;
     },
     l = (e) => {
      let { appearance: t = 'medium', children: n, className: r } = e;
-     return (0, c.jsx)('div', { className: (0, i.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
+     return (0, o.jsx)('div', { className: (0, i.Z)('cardgroup', `cardgroup--${t}`, r), children: n });
     };
   },
   8657: (e, t, n) => {
@@ -71,20 +71,20 @@
    n.d(t, { cN: () => w, vM: () => N, W: () => _, Rv: () => A });
    var r = n(74824),
     i = n(4814),
-    c = n(39854),
-    s = n(7522),
-    o = n(62559),
+    o = n(39854),
+    c = n(7522),
+    s = n(62559),
     a = n(79734),
     l = n(32636),
     u = n(52676);
-   const h = { figma: (0, u.jsx)(c.Z, {}), github: (0, u.jsx)(s.Z, {}), npm: (0, u.jsx)(o.Z, {}), storybook: (0, u.jsx)(a.Z, {}) },
-    d = (e) => {
+   const d = { figma: (0, u.jsx)(o.Z, {}), github: (0, u.jsx)(c.Z, {}), npm: (0, u.jsx)(s.Z, {}), storybook: (0, u.jsx)(a.Z, {}) },
+    h = (e) => {
      let { brand: t } = e;
-     return (0, u.jsx)(r.JO, { children: h[t] || (0, u.jsx)(l.Z, {}) });
+     return (0, u.jsx)(r.JO, { children: d[t] || (0, u.jsx)(l.Z, {}) });
     };
    var j = n(35038),
     y = n(28743);
-   const m = (e) => {
+   const g = (e) => {
     let { checked: t, unchecked: r } = e;
     return (0, u.jsx)(y.Z, {
      fallback: (0, u.jsx)(u.Fragment, {}),
@@ -103,27 +103,27 @@
      },
     });
    };
-   var g = n(23355),
+   var m = n(23355),
     p = n(41757),
-    b = n(37943),
-    v = n(59954);
-   const f = (e) => {
+    v = n(37943),
+    k = n(59954);
+   const b = (e) => {
      let { children: t } = e;
      return (0, u.jsx)('ul', { className: 'task-list', children: t });
     },
-    k = (e) => {
-     let { checked: t, children: n, title: r, description: c, headingLevel: s = 3 } = e;
-     return (0, u.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, u.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, u.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, u.jsx)(v.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, u.jsxs)('div', { children: [(0, u.jsx)(b.X6, { appearance: 'utrecht-heading-3', level: s, children: r }), c, n] })] });
+    f = (e) => {
+     let { checked: t, children: n, title: r, description: o, headingLevel: c = 3 } = e;
+     return (0, u.jsxs)('li', { className: (0, i.Z)('task-list-item'), children: [(0, u.jsxs)('div', { className: (0, i.Z)('task-list-item__marker', t && 'task-list-item__marker--checked'), children: [(0, u.jsx)('span', { className: 'task-list-item__marker-label', children: t ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), t && (0, u.jsx)(k.NgG, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, u.jsxs)('div', { children: [(0, u.jsx)(v.X6, { appearance: 'utrecht-heading-3', level: c, children: r }), o, n] })] });
     };
    var x = n(14669);
    const w = (e) => {
      let { component: t, headingLevel: n } = e;
-     const c = t && t.projects.filter((e) => x.e9.includes(e.id)),
-      s = c && x.e9.map((e) => c.find((t) => t.id === e)).filter(Boolean);
+     const o = t && t.projects.filter((e) => x.e9.includes(e.id)),
+      c = o && x.e9.map((e) => o.find((t) => t.id === e)).filter(Boolean);
      return (
       t &&
       (0, u.jsx)(r.a2, {
-       sections: s.map((e) => ({
+       sections: c.map((e) => ({
         className: (0, i.Z)('definition-of-done', e && `definition-of-done--${(0, x.mA)(e.title)}`),
         headingLevel: n,
         expanded: !1,
@@ -132,10 +132,10 @@
          e &&
          (0, u.jsxs)(u.Fragment, {
           children: [
-           (0, u.jsx)(f, {
+           (0, u.jsx)(b, {
             children: e.tasks.map((e) => {
              let { checked: t, name: r, id: i } = e;
-             return (0, u.jsx)(k, { headingLevel: n + 1, checked: t, title: r, description: (0, x.Q6)(i) }, i);
+             return (0, u.jsx)(f, { headingLevel: n + 1, checked: t, title: r, description: (0, x.Q6)(i) }, i);
             }),
            }),
            (0, u.jsx)(r.nv, { children: (0, u.jsxs)(r.rU, { href: `${e.url}?filterQuery=${t.title}`, children: [e.title, ' projectbord op GitHub'] }) }),
@@ -164,14 +164,14 @@
              return 'Naam' === t;
             }),
             i = t?.value,
-            c = (0, x.ps)(e),
-            s = new Map([
+            o = (0, x.ps)(e),
+            c = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${i} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
             ]),
-            o = e.tasks.filter((e) => {
+            s = e.tasks.filter((e) => {
              let { name: t, value: n } = e;
-             return s.has(t) && URL.canParse(n) && 'https:' === new URL(n).protocol;
+             return c.has(t) && URL.canParse(n) && 'https:' === new URL(n).protocol;
             });
            return (0, u.jsx)(
             j.Zb,
@@ -180,24 +180,24 @@
              children: (0, u.jsxs)(j.aY, {
               children: [
                (0, u.jsx)(r.X6, { level: n, children: e.title.replace(/^Community/i, '') }),
-               (0, u.jsxs)(r.nv, { children: [(0, u.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, u.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               (o.length > 0 || c.length > 0) && (0, u.jsx)(r.X6, { level: n + 1, children: 'Snel aan de slag' }),
-               o.length > 0 &&
+               (0, u.jsxs)(r.nv, { children: [(0, u.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, u.jsxs)(r.rU, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (s.length > 0 || o.length > 0) && (0, u.jsx)(r.X6, { level: n + 1, children: 'Snel aan de slag' }),
+               s.length > 0 &&
                 (0, u.jsx)(u.Fragment, {
                  children: (0, u.jsx)(r.Mc, {
-                  links: o
-                   .filter((e) => !!s.get(e.name))
+                  links: s
+                   .filter((e) => !!c.get(e.name))
                    .map((e) => {
-                    const t = s.get(e.name);
-                    return { children: t.desciption, icon: (0, u.jsx)(d, { brand: t.brand }), href: e.value };
+                    const t = c.get(e.name);
+                    return { children: t.desciption, icon: (0, u.jsx)(h, { brand: t.brand }), href: e.value };
                    }),
                  }),
                 }),
-               c.length > 0 &&
+               o.length > 0 &&
                 (0, u.jsx)(u.Fragment, {
-                 children: c.map((e) => {
-                  let { frameworkName: t, tasks: c } = e;
-                  return (0, u.jsxs)(u.Fragment, { children: [(0, u.jsxs)(r.X6, { level: n + 2, children: [i, ' in ', t] }), (0, u.jsx)(r.Mc, { links: c.map((e) => ({ children: e.description, icon: (0, u.jsx)(d, { brand: e.brand }), href: e.value })) })] });
+                 children: o.map((e) => {
+                  let { frameworkName: t, tasks: o } = e;
+                  return (0, u.jsxs)(u.Fragment, { children: [(0, u.jsxs)(r.X6, { level: n + 2, children: [i, ' in ', t] }), (0, u.jsx)(r.Mc, { links: o.map((e) => ({ children: e.description, icon: (0, u.jsx)(h, { brand: e.brand }), href: e.value })) })] });
                  }),
                 }),
               ],
@@ -217,41 +217,41 @@
     },
     A = (e) => {
      let { component: t, headingLevel: n, description: i } = e;
-     const c = t && x.$3[t.relayStep];
-     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsx)(p.V, { level: n, suffix: c && (0, u.jsx)(g.y, { state: c }), children: t.title }), (0, u.jsx)(r.nv, { lead: !0, children: i })] });
+     const o = t && x.$3[t.relayStep];
+     return t && (0, u.jsxs)(u.Fragment, { children: [(0, u.jsx)(p.V, { level: n, suffix: o && (0, u.jsx)(m.y, { state: o }), children: t.title }), (0, u.jsx)(r.nv, { lead: !0, children: i })] });
     };
   },
   23355: (e, t, n) => {
    'use strict';
-   n.d(t, { y: () => o });
+   n.d(t, { y: () => s });
    var r = n(37943),
     i = n(4814),
-    c = n(14669),
-    s = n(52676);
-   const o = (e) => {
+    o = n(14669),
+    c = n(52676);
+   const s = (e) => {
     let { state: t } = e;
-    const n = (0, c.mA)(t);
-    return (0, s.jsx)(r.Ou, { className: (0, i.Z)('estafette-badge', n && `estafette-badge--${n}`), children: t });
+    const n = (0, o.mA)(t);
+    return (0, c.jsx)(r.Ou, { className: (0, i.Z)('estafette-badge', n && `estafette-badge--${n}`), children: t });
    };
   },
   41757: (e, t, n) => {
    'use strict';
-   n.d(t, { V: () => c });
+   n.d(t, { V: () => o });
    var r = n(4814),
     i = n(52676);
-   const c = (e) => {
-    let { children: t, className: n, level: c = 1, suffix: s, ...o } = e;
-    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${c}`, n), ...o, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: t }), s && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [s ? ' ' : '', s] })] });
+   const o = (e) => {
+    let { children: t, className: n, level: o = 1, suffix: c, ...s } = e;
+    return (0, i.jsxs)('hgroup', { className: (0, r.Z)('nlds-inline-heading-group', `utrecht-heading-${o}`, n), ...s, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: t }), c && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [c ? ' ' : '', c] })] });
    };
   },
   14669: (e, t, n) => {
    'use strict';
-   n.d(t, { $3: () => r, $e: () => g, BA: () => o, Ee: () => u, Q6: () => c, U: () => j, Yr: () => p, d: () => h, e9: () => s, fO: () => v, mA: () => i, ps: () => y, qU: () => f, s0: () => b, zP: () => m });
+   n.d(t, { $3: () => r, $e: () => m, BA: () => s, Ee: () => u, Q6: () => o, U: () => j, Yr: () => p, d: () => d, e9: () => c, fO: () => k, mA: () => i, ps: () => y, qU: () => b, s0: () => v, zP: () => g });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
-    c = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
-    s = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    o = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
+    o = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
+    c = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    s = (e) => e.toLowerCase().replace(/(\s|-)+/, '');
    function a(e) {
     return Array.from(new Set(e));
    }
@@ -265,11 +265,11 @@
        let { projects: t } = e;
        return t;
       })
-      .flatMap((e) => d(e));
+      .flatMap((e) => h(e));
      return l(a(t));
     },
-    h = (e, t) => j(e).includes(t),
-    d = (e) => {
+    d = (e, t) => j(e).includes(t),
+    h = (e) => {
      const t = / URL \(([^)]+)\)/;
      return l(
       a(
@@ -285,9 +285,9 @@
       ),
      );
     },
-    j = (e) => l(a(e.projects.flatMap((e) => d(e)))),
+    j = (e) => l(a(e.projects.flatMap((e) => h(e)))),
     y = (e) => {
-     const t = d(e),
+     const t = h(e),
       n = ((e) => {
        const t = e.tasks.find((e) => {
         let { name: t } = e;
@@ -302,28 +302,28 @@
         return '' !== r && n.includes(t);
        })
        .map((r) => {
-        let { name: i, id: c, value: s } = r;
-        const o = /^(.+) URL/.exec(i)[1],
-         a = 'Storybook' === o ? `${n} (${t}) in Storybook van ${e.title}}` : `${n} (${t}) op ${o}`;
-        return { brand: o.toLowerCase(), name: i, id: c, value: s, description: a };
+        let { name: i, id: o, value: c } = r;
+        const s = /^(.+) URL/.exec(i)[1],
+         a = 'Storybook' === s ? `${n} (${t}) in Storybook van ${e.title}}` : `${n} (${t}) op ${s}`;
+        return { brand: s.toLowerCase(), name: i, id: o, value: c, description: a };
        });
       return { frameworkName: t, tasks: r };
      });
     },
-    m = (e) => e.join('.'),
-    g = (e) => '--' + e.join('-'),
+    g = (e) => e.join('.'),
+    m = (e) => '--' + e.join('-'),
     p = (e, t) => t.reduce((e, t) => e?.[t], e);
-   function b(e, t) {
-    return void 0 === t && (t = []), Object.hasOwn(e, '$type') ? [t] : Object.keys(e).flatMap((n) => ('object' == typeof e[n] && null !== e[n] ? b(e[n], [...t, n]) : []));
+   function v(e, t) {
+    return void 0 === t && (t = []), Object.hasOwn(e, '$type') ? [t] : Object.keys(e).flatMap((n) => ('object' == typeof e[n] && null !== e[n] ? v(e[n], [...t, n]) : []));
    }
-   function v(e) {
+   function k(e) {
     const t = new Map();
     function n(e) {
-     return t.has(e) || t.set(e, m(e)), t.get(e);
+     return t.has(e) || t.set(e, g(e)), t.get(e);
     }
     return e.sort((e, t) => e.length - t.length || n(e).localeCompare(n(t)));
    }
-   function f(e) {
+   function b(e) {
     const t = {};
     for (const n of e) {
      let e = t;
