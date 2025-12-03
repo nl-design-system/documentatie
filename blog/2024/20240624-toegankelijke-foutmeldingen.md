@@ -15,6 +15,8 @@ Hoe geef je een gebruiker nuttige informatie over wat er niet goed gaat bij het 
 
 In dit artikel ga ik stap voor stap in op het voorkomen, aanduiden en het geven van hulp bij foutmeldingen in een formulier voor verschillende soorten gebruikers.
 
+<!-- truncate -->
+
 Stel jezelf de volgende vragen:
 
 - Wat wil ik echt weten?

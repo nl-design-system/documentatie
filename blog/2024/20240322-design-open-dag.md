@@ -13,6 +13,8 @@ date: 2024-03-22
 
 Gisteren was er weer een samenwerkdag met ontwerpers uit de NL Design System community. De ochtend stond in het thema van het [estafettemodel](/handboek/estafettemodel), waarin we een eerste component hebben gecheckt op onze aangescherpte ‘definition of done’.
 
+<!-- truncate -->
+
 Met een groep van 10 mensen vanuit projecten bij verschillende gemeenten, een leverancier en een ministerie, kwamen we bij elkaar. De locatie was wederom het stadskantoor van de Gemeente Utrecht, dank voor hun gastvrijheid. We werkten samen aan een flow voor het uploaden van bijlagen, notificaties en een themamaker. En dus het estafettemodel.
 
 <img src="https://github.com/nl-design-system/documentatie/blob/assets/samenwerkdag-agenda.jpg?raw=true" alt="whiteboard met daarop de agenda, het eerste item, estafette paragrafa is afgevinkt, met toevoeging HW community, eronder staan nog meer items, namelijk cool uncool, thema maker feedback, vraag Nico, file upload" /> _We begonnen met het estafettemodel…_
