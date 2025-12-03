@@ -8,8 +8,6 @@ import {
   RadioButton,
   Button,
   Heading3,
-  Heading4,
-  Paragraph,
   PreHeading,
   UnorderedList,
   UnorderedListItem,
@@ -39,7 +37,7 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
           ref={autoFocus}
           tabIndex={-1}
         >
-          <FieldsetLegend>Wat is het doel van de afbeelding?</FieldsetLegend>
+          <FieldsetLegend>Wat voor type afbeelding is het?</FieldsetLegend>
           <FormFieldDescription id="image-type-group-description">
             Soms doet een afbeelding meer dan één ding. Bijvoorbeeld: een kaart waarop je kunt klikken, of een
             illustratie die ook een link is. Kies het belangrijkste doel van de afbeelding:
@@ -63,8 +61,8 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
               <div>
                 <span className="bold-text">De afbeelding helpt om de tekst op de pagina beter te begrijpen.</span>
                 <br />
-                Dit heet een informatieve afbeelding. Bijvoorbeeld een grafiek, een schema, een stappenplan, een
-                geografische kaart of een illustratie.
+                Bijvoorbeeld een grafiek, een schema, een stappenplan, een geografische kaart of een illustratie. Dit
+                heet een informatieve afbeelding.
               </div>
             </FormLabel>
           </FormField>
@@ -89,8 +87,8 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
                   De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien.
                 </span>
                 <br />
-                Dit heet een decoratieve afbeelding. Bijvoorbeeld een afbeelding in de achtergrond van een website, een
-                icoon naast een tekst met dezelfde informatie of een sfeerbeeld zonder betekenis.
+                Bijvoorbeeld een afbeelding in de achtergrond van een website, een icoon naast een tekst met dezelfde
+                informatie of een sfeerbeeld zonder betekenis. Dit heet een decoratieve afbeelding.
               </div>
             </FormLabel>
           </FormField>
@@ -119,23 +117,31 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
               </div>
             </FormLabel>
           </FormField>
-          <Heading3>Decoratieve afbeelding</Heading3>
-          <Paragraph>
-            Weet je niet zeker of de afbeelding echt decoratief is? Dit zijn vragen die je jezelf hierbij kunt stellen:
-          </Paragraph>
+          <Heading3>Meer informatie over verschillende type afbeeldingen</Heading3>
           <UnorderedList>
-            <UnorderedListItem>Waarom wil ik deze afbeelding plaatsen?</UnorderedListItem>
-            <UnorderedListItem>Als ik de afbeelding weglaat, welke informatie gaat er dan verloren?</UnorderedListItem>
             <UnorderedListItem>
-              Als ik deze afbeelding niét zou kunnen gebruiken, zou ik dan een vervangende afbeelding zoeken?
+              <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
+                Meer voorbeelden van informatieve afbeeldingen
+              </a>
+              .
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
+                Wanneer is een afbeelding decoratief?
+              </a>
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/#logo-als-link-naar-de-homepage">
+                Voorbeelden van functionele afbeeldingen
+              </a>
+              .
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/#logo-als-link-naar-de-homepage">
+                Hoe om te gaan met logo's die verwijzen naar de homepage?
+              </a>
             </UnorderedListItem>
           </UnorderedList>
-          <Heading4>Context is bepalend</Heading4>
-          <Paragraph>
-            De context bepaalt of een afbeelding decoratief of informatief is, en wat er precies in de alt-tekst moet
-            staan. Bijvoorbeeld: Een afbeelding van een koe kan decoratief zijn bij een verhaal over het boerenleven,
-            maar informatief in een artikel over verschillende koeienrassen.
-          </Paragraph>
           <div className="nlds-button-bar flex-end">
             <Button
               appearance="primary-action-button"

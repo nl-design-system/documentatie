@@ -8,8 +8,6 @@ import {
   RadioButton,
   Button,
   Heading3,
-  Heading4,
-  Paragraph,
   PreHeading,
   UnorderedList,
   UnorderedListItem,
@@ -61,7 +59,9 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
                 }}
               />
               <div>
-                <span className="bold-text">Het is een grafiek, diagram of een andere complexe afbeelding.</span>
+                <span className="bold-text">
+                  Het is een grafiek, diagram, stappenplan of een andere complexe afbeelding.
+                </span>
               </div>
             </FormLabel>
           </FormField>
@@ -87,14 +87,24 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
             </FormLabel>
           </FormField>
 
-          <Heading3>Complexe afbeelding</Heading3>
-          <Paragraph>Een afbeelding met veel informatie wordt ook wel een complexe afbeelding genoemd.</Paragraph>
-          <Heading4>Voorbeelden van complexe afbeeldingen</Heading4>
+          <Heading3>Meer informatie over afbeeldingen die helpen om de tekst op de pagina beter te begrijpen</Heading3>
           <UnorderedList>
-            <UnorderedListItem>Grafiek</UnorderedListItem>
-            <UnorderedListItem>Geografische kaart</UnorderedListItem>
-            <UnorderedListItem>Schema</UnorderedListItem>
-            <UnorderedListItem>Stappenplan</UnorderedListItem>
+            <UnorderedListItem>
+              <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
+                Uitgebreide uitleg over informatieve afbeeldingen
+              </a>
+              .
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <a href="/richtlijnen/content/afbeeldingen/alt-plaats/#een-tekst-in-de-buurt-van-de-afbeelding">
+                Hoe beschrijf je een complexe afbeelding?
+              </a>
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/#logo-als-link-naar-de-homepage">
+                Hoe maak je een grafieken toegankelijker?
+              </a>
+            </UnorderedListItem>
           </UnorderedList>
 
           <div className="nlds-button-bar">
