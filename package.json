@@ -64,6 +64,7 @@
     "test:rehype-plugin": "tsx rehype-trailing-slash.test.ts"
   },
   "dependencies": {
+    "@babel/runtime": "7.28.4",
     "@docusaurus/core": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
     "@docusaurus/theme-common": "3.9.2",

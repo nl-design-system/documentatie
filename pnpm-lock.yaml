@@ -11,6 +11,9 @@ importers:
 
   .:
     dependencies:
+      '@babel/runtime':
+        specifier: 7.28.4
+        version: 7.28.4
       '@docusaurus/core':
         specifier: 3.9.2
         version: 3.9.2(@mdx-js/react@3.1.0(@types/react@18.3.18)(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
@@ -37,7 +40,7 @@ importers:
         version: 1.0.1
       '@nl-design-system-candidate/code-react':
         specifier: 1.2.3
-        version: 1.2.3(@babel/runtime@7.26.7)(react@18.3.1)
+        version: 1.2.3(@babel/runtime@7.28.4)(react@18.3.1)
       '@nl-design-system-candidate/code-tokens':
         specifier: 2.0.1
         version: 2.0.1
@@ -52,7 +55,7 @@ importers:
         version: 1.0.1
       '@nl-design-system-candidate/data-badge-react':
         specifier: 1.1.3
-        version: 1.1.3(@babel/runtime@7.26.7)(react@18.3.1)
+        version: 1.1.3(@babel/runtime@7.28.4)(react@18.3.1)
       '@nl-design-system-candidate/data-badge-tokens':
         specifier: 2.0.0
         version: 2.0.0
@@ -218,19 +221,19 @@ importers:
         version: 3.0.3
       '@utrecht/card-react':
         specifier: 0.0.1
-        version: 0.0.1(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 0.0.1(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/component-library-css':
         specifier: 8.1.0
         version: 8.1.0
       '@utrecht/component-library-react':
         specifier: 10.3.3
-        version: 10.3.3(@babel/runtime@7.26.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 10.3.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/document-css':
         specifier: 1.5.1
         version: 1.5.1
       '@utrecht/page-layout-react':
         specifier: 1.0.6
-        version: 1.0.6(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.0.6(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/root-css':
         specifier: 1.2.1
         version: 1.2.1
@@ -1093,12 +1096,8 @@ packages:
     resolution: {integrity: sha512-h7iEYiW4HebClDEhtvFObtPmIvrd1SSfpI9EhOeKk4CtIK/ngBWFpuhCzhdmRKtg71ylcue+9I6dv54XYO1epQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/runtime@7.26.0':
-    resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/runtime@7.26.7':
-    resolution: {integrity: sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==}
+  '@babel/runtime@7.28.4':
+    resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -7913,9 +7912,6 @@ packages:
   regenerate@1.4.2:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
 
-  regenerator-runtime@0.14.0:
-    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
-
   regexp.prototype.flags@1.5.1:
     resolution: {integrity: sha512-sy6TXMN+hnP/wMy+ISxg3krXx7BAtWVO4UouuCN/ziM9UEne0euamVNafDfvC83bRNr95y0V5iijeDQFUNpvrg==}
     engines: {node: '>= 0.4'}
@@ -10263,13 +10259,7 @@ snapshots:
     dependencies:
       core-js-pure: 3.47.0
 
-  '@babel/runtime@7.26.0':
-    dependencies:
-      regenerator-runtime: 0.14.0
-
-  '@babel/runtime@7.26.7':
-    dependencies:
-      regenerator-runtime: 0.14.0
+  '@babel/runtime@7.28.4': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -10783,7 +10773,7 @@ snapshots:
       '@babel/preset-env': 7.28.5(@babel/core@7.28.5)
       '@babel/preset-react': 7.28.5(@babel/core@7.28.5)
       '@babel/preset-typescript': 7.28.5(@babel/core@7.28.5)
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@babel/runtime-corejs3': 7.28.4
       '@babel/traverse': 7.28.5
       '@docusaurus/logger': 3.9.2
@@ -12078,7 +12068,7 @@ snapshots:
 
   '@iframe-resizer/react@5.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@iframe-resizer/core': 5.3.3
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -12261,14 +12251,14 @@ snapshots:
 
   '@manypkg/find-root@1.1.0':
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.28.4
       '@types/node': 12.20.55
       find-up: 4.1.0
       fs-extra: 8.1.0
 
   '@manypkg/get-packages@1.1.3':
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.28.4
       '@changesets/types': 4.1.0
       '@manypkg/find-root': 1.1.0
       fs-extra: 8.1.0
@@ -12315,9 +12305,9 @@ snapshots:
 
   '@nl-design-system-candidate/code-docs@1.0.1': {}
 
-  '@nl-design-system-candidate/code-react@1.2.3(@babel/runtime@7.26.7)(react@18.3.1)':
+  '@nl-design-system-candidate/code-react@1.2.3(@babel/runtime@7.28.4)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       clsx: 2.1.1
       react: 18.3.1
 
@@ -12329,9 +12319,9 @@ snapshots:
 
   '@nl-design-system-candidate/data-badge-docs@1.0.1': {}
 
-  '@nl-design-system-candidate/data-badge-react@1.1.3(@babel/runtime@7.26.7)(react@18.3.1)':
+  '@nl-design-system-candidate/data-badge-react@1.1.3(@babel/runtime@7.28.4)(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       clsx: 2.1.1
       react: 18.3.1
 
@@ -12519,7 +12509,7 @@ snapshots:
 
   '@slorber/react-helmet-async@1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       invariant: 2.2.4
       prop-types: 15.8.1
       react: 18.3.1
@@ -13038,9 +13028,9 @@ snapshots:
 
   '@utrecht/action-group-css@2.0.0': {}
 
-  '@utrecht/action-group-react@1.1.1(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/action-group-react@1.1.1(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/action-group-css': 2.0.0
       clsx: 2.1.1
       react: 18.3.1
@@ -13072,9 +13062,9 @@ snapshots:
 
   '@utrecht/button-group-css@1.5.0': {}
 
-  '@utrecht/button-group-react@1.1.0(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/button-group-react@1.1.0(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/button-group-css': 1.5.0
       clsx: 2.1.1
       react: 18.3.1
@@ -13082,9 +13072,9 @@ snapshots:
 
   '@utrecht/button-link-css@1.3.1': {}
 
-  '@utrecht/button-react@2.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/button-react@2.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/button-css': 2.3.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13092,10 +13082,10 @@ snapshots:
 
   '@utrecht/calendar-css@1.4.1': {}
 
-  '@utrecht/calendar-react@1.0.11(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/calendar-react@1.0.11(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
-      '@utrecht/button-react': 2.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@babel/runtime': 7.28.4
+      '@utrecht/button-react': 2.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/calendar-css': 1.4.1
       clsx: 2.1.1
       date-fns: 2.30.0
@@ -13107,20 +13097,20 @@ snapshots:
     dependencies:
       '@utrecht/img-css': 1.3.1
 
-  '@utrecht/card-react@0.0.1(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/card-react@0.0.1(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/card-css': 0.1.0
-      '@utrecht/link-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/link-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
   '@utrecht/checkbox-css@1.6.1': {}
 
-  '@utrecht/checkbox-react@1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/checkbox-react@1.0.8(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/checkbox-css': 1.6.1
       '@utrecht/custom-checkbox-css': 1.3.2
       clsx: 2.1.1
@@ -13137,9 +13127,9 @@ snapshots:
 
   '@utrecht/combobox-css@1.4.1': {}
 
-  '@utrecht/combobox-react@0.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/combobox-react@0.0.8(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/combobox-css': 1.4.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13251,11 +13241,11 @@ snapshots:
       '@utrecht/url-data-css': 1.3.1
       '@utrecht/youtube-video-css': 1.0.0
 
-  '@utrecht/component-library-react@10.3.3(@babel/runtime@7.26.7)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/component-library-react@10.3.3(@babel/runtime@7.28.4)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/accordion-css': 2.0.0
-      '@utrecht/action-group-react': 1.1.1(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/action-group-react': 1.1.1(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/alert-css': 2.4.0
       '@utrecht/alert-dialog-css': 1.4.2
       '@utrecht/alternate-lang-nav-css': 1.3.1
@@ -13266,36 +13256,36 @@ snapshots:
       '@utrecht/badge-status-css': 1.4.1
       '@utrecht/blockquote-css': 1.6.1
       '@utrecht/breadcrumb-nav-css': 1.5.1
-      '@utrecht/button-group-react': 1.1.0(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/button-group-react': 1.1.0(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/button-link-css': 1.3.1
-      '@utrecht/button-react': 2.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/calendar-react': 1.0.11(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/button-react': 2.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/calendar-react': 1.0.11(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/card-css': 0.1.0
-      '@utrecht/card-react': 0.0.1(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/checkbox-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/card-react': 0.0.1(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/checkbox-react': 1.0.8(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/code-block-css': 1.5.1
       '@utrecht/code-css': 1.5.1
       '@utrecht/color-sample-css': 1.4.1
       '@utrecht/column-layout-css': 1.5.1
-      '@utrecht/combobox-react': 0.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/combobox-react': 0.0.8(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/currency-data-css': 1.3.1
       '@utrecht/custom-checkbox-css': 1.3.2
       '@utrecht/data-badge-css': 1.0.1
-      '@utrecht/data-badge-react': 1.0.4(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/data-badge-react': 1.0.4(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/data-list-css': 1.4.1
       '@utrecht/data-placeholder-css': 1.4.1
       '@utrecht/digid-button-css': 1.4.1
       '@utrecht/document-css': 1.5.1
       '@utrecht/drawer-css': 1.4.1
       '@utrecht/emphasis-css': 1.5.1
-      '@utrecht/fieldset-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/fieldset-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/figure-css': 1.6.0
       '@utrecht/focus-ring-css': 2.3.1
-      '@utrecht/form-field-checkbox-react': 1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-description-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-error-message-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-label-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-checkbox-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-description-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-error-message-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-label-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/form-toggle-css': 1.5.1
       '@utrecht/heading-1-css': 1.5.1
       '@utrecht/heading-2-css': 1.5.1
@@ -13311,10 +13301,10 @@ snapshots:
       '@utrecht/index-char-nav-css': 1.4.1
       '@utrecht/link-button-css': 1.4.1
       '@utrecht/link-list-css': 2.3.1
-      '@utrecht/link-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/link-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/link-social-css': 1.4.1
       '@utrecht/list-social-css': 1.4.1
-      '@utrecht/listbox-react': 1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/listbox-react': 1.0.10(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/logo-button-css': 1.4.1
       '@utrecht/logo-css': 1.4.1
       '@utrecht/logo-image-css': 1.4.1
@@ -13327,7 +13317,7 @@ snapshots:
       '@utrecht/number-badge-css': 2.3.1
       '@utrecht/number-data-css': 1.4.1
       '@utrecht/open-forms-container-css': 1.0.2
-      '@utrecht/open-forms-container-react': 1.0.2(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/open-forms-container-react': 1.0.2(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/ordered-list-css': 2.0.0
       '@utrecht/page-content-css': 1.4.1
       '@utrecht/page-css': 1.4.1
@@ -13337,7 +13327,7 @@ snapshots:
       '@utrecht/paragraph-css': 2.3.1
       '@utrecht/pre-heading-css': 1.4.1
       '@utrecht/preserve-data-css': 1.3.1
-      '@utrecht/radio-button-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/radio-button-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/rich-text-css': 1.4.0
       '@utrecht/search-bar-css': 2.2.1
       '@utrecht/select-css': 1.8.1
@@ -13350,7 +13340,7 @@ snapshots:
       '@utrecht/table-css': 1.6.1
       '@utrecht/table-of-contents-css': 0.3.1
       '@utrecht/textarea-css': 2.3.2
-      '@utrecht/textbox-react': 1.0.9(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/textbox-react': 1.0.9(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/top-task-link-css': 1.4.1
       '@utrecht/top-task-nav-css': 1.3.1
       '@utrecht/unordered-list-css': 1.5.1
@@ -13395,9 +13385,9 @@ snapshots:
 
   '@utrecht/data-badge-css@1.0.1': {}
 
-  '@utrecht/data-badge-react@1.0.4(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/data-badge-react@1.0.4(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/data-badge-css': 1.0.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13417,9 +13407,9 @@ snapshots:
 
   '@utrecht/emphasis-css@1.5.1': {}
 
-  '@utrecht/fieldset-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/fieldset-react@1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/form-fieldset-css': 1.5.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13431,14 +13421,14 @@ snapshots:
 
   '@utrecht/form-css@1.5.1': {}
 
-  '@utrecht/form-field-checkbox-react@1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-field-checkbox-react@1.0.10(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
-      '@utrecht/checkbox-react': 1.0.8(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-description-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-error-message-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-field-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/form-label-react': 1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@babel/runtime': 7.28.4
+      '@utrecht/checkbox-react': 1.0.8(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-description-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-error-message-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-field-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/form-label-react': 1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -13447,9 +13437,9 @@ snapshots:
 
   '@utrecht/form-field-description-css@1.5.1': {}
 
-  '@utrecht/form-field-description-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-field-description-react@1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/form-field-description-css': 1.5.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13457,17 +13447,17 @@ snapshots:
 
   '@utrecht/form-field-error-message-css@1.5.1': {}
 
-  '@utrecht/form-field-error-message-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-field-error-message-react@1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/form-field-error-message-css': 1.5.1
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@utrecht/form-field-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-field-react@1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/form-field-css': 1.5.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13477,9 +13467,9 @@ snapshots:
 
   '@utrecht/form-label-css@1.6.1': {}
 
-  '@utrecht/form-label-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/form-label-react@1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/form-label-css': 1.6.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13517,9 +13507,9 @@ snapshots:
 
   '@utrecht/link-list-css@2.3.1': {}
 
-  '@utrecht/link-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/link-react@1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/link-css': 1.6.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13531,9 +13521,9 @@ snapshots:
 
   '@utrecht/listbox-css@1.5.2': {}
 
-  '@utrecht/listbox-react@1.0.10(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/listbox-react@1.0.10(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/listbox-css': 1.5.2
       clsx: 2.1.1
       react: 18.3.1
@@ -13568,9 +13558,9 @@ snapshots:
       '@utrecht/focus-ring-css': 2.3.1
       '@utrecht/textbox-css': 2.0.0
 
-  '@utrecht/open-forms-container-react@1.0.2(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/open-forms-container-react@1.0.2(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/open-forms-container-css': 1.0.2
       clsx: 2.1.1
       react: 18.3.1
@@ -13590,9 +13580,9 @@ snapshots:
 
   '@utrecht/page-layout-css@1.1.1': {}
 
-  '@utrecht/page-layout-react@1.0.6(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/page-layout-react@1.0.6(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/page-layout-css': 1.1.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13608,9 +13598,9 @@ snapshots:
 
   '@utrecht/radio-button-css@1.6.1': {}
 
-  '@utrecht/radio-button-react@1.0.7(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/radio-button-react@1.0.7(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/radio-button-css': 1.6.1
       clsx: 2.1.1
       react: 18.3.1
@@ -13644,9 +13634,9 @@ snapshots:
 
   '@utrecht/textbox-css@2.0.0': {}
 
-  '@utrecht/textbox-react@1.0.9(@babel/runtime@7.26.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/textbox-react@1.0.9(@babel/runtime@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       '@utrecht/textbox-css': 2.0.0
       clsx: 2.1.1
       react: 18.3.1
@@ -14917,7 +14907,7 @@ snapshots:
 
   date-fns@2.30.0:
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
 
   date-fns@3.3.1: {}
 
@@ -16199,7 +16189,7 @@ snapshots:
 
   history@4.10.1:
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       loose-envify: 1.4.0
       resolve-pathname: 3.0.0
       tiny-invariant: 1.3.1
@@ -18721,7 +18711,7 @@ snapshots:
 
   react-loadable-ssr-addon-v5-slorber@1.0.1(@docusaurus/react-loadable@6.0.0(react@18.3.1))(webpack@5.103.0):
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       react-loadable: '@docusaurus/react-loadable@6.0.0(react@18.3.1)'
       webpack: 5.103.0
 
@@ -18747,13 +18737,13 @@ snapshots:
 
   react-router-config@5.1.1(react-router@5.3.4(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       react: 18.3.1
       react-router: 5.3.4(react@18.3.1)
 
   react-router-dom@5.3.4(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       history: 4.10.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -18764,7 +18754,7 @@ snapshots:
 
   react-router@5.3.4(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.26.7
+      '@babel/runtime': 7.28.4
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -18777,7 +18767,7 @@ snapshots:
 
   react-syntax-highlighter@15.6.1(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.28.4
       highlight.js: 10.7.3
       highlightjs-vue: 1.0.0
       lowlight: 1.20.0
@@ -18864,8 +18854,6 @@ snapshots:
       regenerate: 1.4.2
 
   regenerate@1.4.2: {}
-
-  regenerator-runtime@0.14.0: {}
 
   regexp.prototype.flags@1.5.1:
     dependencies:
