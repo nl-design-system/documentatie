@@ -2,9 +2,8 @@
 title: "Spacing tokens als systeem voor verticale ruimte"
 slug: spacing-tokens
 authors:
-  - name: Hidde de Vries
+  - key: Hidde de Vries
     title: Public relations & Toegankelijkheidsspecialist NL Design System
-    url: https://www.linkedin.com/in/hiddedevries/
 tags: [NL Design System, design tokens]
 hide_table_of_contents: false
 date: 2023-11-09

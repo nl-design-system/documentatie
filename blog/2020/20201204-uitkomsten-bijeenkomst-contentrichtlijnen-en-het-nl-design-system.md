@@ -1,10 +1,7 @@
 ---
 title: Uitkomsten bijeenkomst contentrichtlijnen en het NL Design System
 slug: uitkomsten-bijeenkomst-contentrichtlijnen-en-het-nl-design-system
-authors:
-  - name: Jessica Straetemans
-    title: Coördinator Communicatie bij Gebruiker Centraal
-    url: https://www.linkedin.com/in/jessicastraetemans/
+authors: Jessica Straetemans
 tags: [contentrichtlijnen, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2020/06/gc-nlds-beeldmerk.png
 hide_table_of_contents: false

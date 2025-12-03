@@ -1,10 +1,7 @@
 ---
 title: Jouw project inrichten op de NL Design System-architectuur
 slug: jouw-project-inrichten-op-de-nl-design-system-architectuur
-authors:
-  - name: Robbert Broersma
-    title: Design System Lead NL Design System
-    url: http://robbertbroersma.nl
+authors: Robbert Broersma
 tags: [architectuur, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2021/05/MicrosoftTeams-image.png
 hide_table_of_contents: false

@@ -1,10 +1,7 @@
 ---
 title: Van eigen componenten naar open source “blocks” voor WordPress
 slug: community-blocks
-authors:
-  - name: Renate Bruinenberg
-    title: Communicatieadviseur NL Design System
-    url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
+authors: Renate Bruinenberg
 tags: [WordPress, developers, NL Design System]
 hide_table_of_contents: false
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/community-blocks.png

@@ -1,10 +1,7 @@
 ---
 title: Samen aan de slag met het esta­fette­­mo­del
 slug: design-open-dag
-authors:
-  - name: Hidde de Vries
-    title: Public relations lead & Toegankelijkheidsspecialist NL Design System
-    url: https://www.linkedin.com/in/hiddedevries/
+authors: Hidde de Vries
 tags: [meta, estafettemodel, designers, NL Design System]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/samen-aan-de-slag.png
 hide_table_of_contents: false
