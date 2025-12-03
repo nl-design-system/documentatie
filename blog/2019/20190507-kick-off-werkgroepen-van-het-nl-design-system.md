@@ -1,10 +1,7 @@
 ---
 title: Kick-off werkgroepen van het NL Design System
 slug: kick-off-werkgroepen-van-het-nl-design-system
-authors:
-  - name: Edo Plantinga
-    title: Freelance projectleider en communitymanager
-    url: https://www.linkedin.com/in/edoplantinga
+authors: Edo Plantinga
 tags: [werkgroepen, NL Design System]
 image: https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2019/05/binary-2450188_1920-1200x675.jpg
 hide_table_of_contents: false
