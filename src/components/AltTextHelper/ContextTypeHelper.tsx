@@ -7,11 +7,13 @@ import {
   FormLabel,
   RadioButton,
   Button,
-  Heading3,
+  Heading2,
   PreHeading,
   UnorderedList,
   UnorderedListItem,
+  Link,
 } from '@utrecht/component-library-react/dist/css-module';
+import { UtrechtIconChevronLeft } from '@utrecht/web-component-library-react';
 
 const groupName = 'context-type';
 
@@ -30,6 +32,18 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
   if (active === groupName) {
     return (
       <>
+        <div className="nlds-button-previous">
+          <UtrechtIconChevronLeft className="nlds-link-back" />
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              onPrevStep();
+            }}
+          >
+            Vorige stap
+          </Link>
+        </div>
         <PreHeading>Stap 2 van 5</PreHeading>
         <Fieldset
           id="context-type-group"
@@ -86,44 +100,40 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
               </div>
             </FormLabel>
           </FormField>
-
-          <Heading3>Meer informatie over afbeeldingen die helpen om de tekst op de pagina beter te begrijpen</Heading3>
-          <UnorderedList>
-            <UnorderedListItem>
-              <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
-                Uitgebreide uitleg over informatieve afbeeldingen
-              </a>
-              .
-            </UnorderedListItem>
-            <UnorderedListItem>
-              <a href="/richtlijnen/content/afbeeldingen/alt-plaats/#een-tekst-in-de-buurt-van-de-afbeelding">
-                Hoe beschrijf je een complexe afbeelding?
-              </a>
-            </UnorderedListItem>
-            <UnorderedListItem>
-              <a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/#logo-als-link-naar-de-homepage">
-                Hoe maak je een grafieken toegankelijker?
-              </a>
-            </UnorderedListItem>
-          </UnorderedList>
-
-          <div className="nlds-button-bar">
-            <Button appearance="secondary-action-button" onClick={onPrevStep}>
-              Vorige stap
-            </Button>
-
-            <Button
-              appearance="primary-action-button"
-              disabled={selectedOption === '' ? true : false}
-              onClick={() => {
-                onChangeOption('type', selectedOption);
-                onNextStep(groupName);
-              }}
-            >
-              Volgende stap
-            </Button>
-          </div>
         </Fieldset>
+
+        <div className="nlds-button-next">
+          <Button
+            appearance="primary-action-button"
+            disabled={selectedOption === '' ? true : false}
+            onClick={() => {
+              onChangeOption('type', selectedOption);
+              onNextStep(groupName);
+            }}
+          >
+            Volgende stap
+          </Button>
+        </div>
+
+        <Heading2>Meer informatie over afbeeldingen die helpen om de tekst op de pagina beter te begrijpen</Heading2>
+        <UnorderedList>
+          <UnorderedListItem>
+            <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
+              Uitgebreide uitleg over informatieve afbeeldingen
+            </a>
+            .
+          </UnorderedListItem>
+          <UnorderedListItem>
+            <a href="/richtlijnen/content/afbeeldingen/alt-plaats/#een-tekst-in-de-buurt-van-de-afbeelding">
+              Hoe beschrijf je een complexe afbeelding?
+            </a>
+          </UnorderedListItem>
+          <UnorderedListItem>
+            <a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/#logo-als-link-naar-de-homepage">
+              Hoe maak je een grafieken toegankelijker?
+            </a>
+          </UnorderedListItem>
+        </UnorderedList>
       </>
     );
   }
