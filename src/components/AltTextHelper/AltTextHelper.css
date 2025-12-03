@@ -3,7 +3,9 @@
 .nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-2,
 .nlds-alt-text-helper .nlds-helper-text > .utrecht-heading-2,
 .nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-3,
-.nlds-alt-text-helper .nlds-helper-text > .utrecht-heading-3 {
+.nlds-alt-text-helper .nlds-helper-text > .utrecht-heading-3,
+.nlds-alt-text-helper .utrecht-spotlight-section,
+.nlds-alt-text-helper .utrecht-unordered-list {
   margin-block-end: var(--ifm-paragraph-margin-bottom);
 }
 

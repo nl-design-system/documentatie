@@ -25,16 +25,18 @@ const translateType = (type) => {
   let translation = '';
   switch (type) {
     case 'simple':
-      translation = 'eenvoudige';
+      translation =
+        'Het is een foto of een eenvoudige illustratie die helpt om de tekst op de pagina beter te begrijpen';
       break;
     case 'complex':
-      translation = 'complexe';
+      translation =
+        'Het is een grafiek, diagram of een andere complexe afbeelding die helpt om de tekst op de pagina beter te begrijpen';
       break;
     case 'decorative':
-      translation = 'decoratieve';
+      translation = 'De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien';
       break;
     case 'functional':
-      translation = 'functionele';
+      translation = 'De afbeelding wordt als link of knop gebruikt';
       break;
   }
   return translation;
@@ -44,16 +46,16 @@ const translateTextContent = (content) => {
   let text = '';
   switch (content) {
     case 'text-near-image':
-      text = 'al naast of vlak bij de afbeelding staat';
+      text = 'ook al naast of vlakbij de afbeelding staat';
       break;
     case 'text-visual-effect':
-      text = 'niets toevoegt aan de boodschap';
+      text = 'alleen bedoeld is voor het visuele effect en geen inhoudelijke betekenis heeft';
       break;
     case 'text-has-function':
-      text = 'een functie heeft';
+      text = 'een functionele rol heeft';
       break;
     case 'text-only-image':
-      text = 'nergens anders op de pagina staat';
+      text = 'nergens anders op de pagina staat beschreven';
       break;
   }
   return text;
@@ -65,7 +67,31 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
       <>
         <div className="nlds-helper-text" ref={autoFocus} tabIndex={-1}>
           <PreHeading>Stap 5 van 5</PreHeading>
-          <Heading2>Algemeen advies</Heading2>
+          <SpotlightSection>
+            <Heading2>Advies voor jouw afbeelding</Heading2>
+            <ImageTextHelperText image={image} />
+            <ImageTypeHelperText image={image} />
+            <ImageClickableHelperText image={image} />
+          </SpotlightSection>
+          <Heading2>Samenvatting van jouw keuzes</Heading2>
+          <Paragraph>Jij hebt het volgende aangegeven over jouw afbeelding</Paragraph>
+          <UnorderedList>
+            <UnorderedListItem>{translateType(image.type)}</UnorderedListItem>
+            {(image.clickable || image.descripted || image.text) && (
+              <>
+                {image.text && (
+                  <UnorderedListItem>
+                    De afbeelding bevat tekst die {translateTextContent(image.content)}.
+                  </UnorderedListItem>
+                )}
+                {image.descripted && (
+                  <UnorderedListItem>De afbeelding staat al beschreven in de buurt.</UnorderedListItem>
+                )}
+                {image.clickable && <UnorderedListItem>Het is óók een link of knop</UnorderedListItem>}
+              </>
+            )}
+          </UnorderedList>
+          <Heading2>Algemene richtlijnen voor de beschrijving van alternatieve tekst</Heading2>
           Bouw de alt-tekst altijd als volgt op:
           <OrderedList>
             <OrderedListItem>
@@ -75,29 +101,6 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
             <OrderedListItem>Beschrijf vervolgens de afbeelding</OrderedListItem>
             <OrderedListItem>Beschrijf tot slot de functie, als de afbeelding klikbaar is.</OrderedListItem>
           </OrderedList>
-          <SpotlightSection>
-            <Heading2>Specifiek advies voor jouw afbeelding</Heading2>
-            <Paragraph>
-              Je heb aangegeven dat het een <strong>{translateType(image.type)}</strong> afbeelding is.
-            </Paragraph>
-            {(image.clickable || image.descripted || image.text) && (
-              <UnorderedList>
-                {image.text && (
-                  <UnorderedListItem>
-                    De afbeelding bevat tekst die {translateTextContent(image.content)}.
-                  </UnorderedListItem>
-                )}
-                {image.descripted && (
-                  <UnorderedListItem>De beschrijving staat al in de buurt van de afbeelding.</UnorderedListItem>
-                )}
-                {image.clickable && <UnorderedListItem>De afbeelding is klikbaar.</UnorderedListItem>}
-              </UnorderedList>
-            )}
-            <ImageTextHelperText image={image} />
-            <Heading3>Beschrijving van de afbeelding</Heading3>
-            <ImageTypeHelperText image={image} />
-            <ImageClickableHelperText image={image} />
-          </SpotlightSection>
         </div>
         <div className="nlds-button-bar">
           <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
@@ -123,10 +126,13 @@ export function ImageTypeHelperText({ image }: ImageTypeHelperTextProps) {
       return <ImageTypeDecorativeHelperText />;
     case 'functional':
       return (
-        <Paragraph>
-          De afbeelding is klikbaar. Beschrijf alleen kort wat er te zien is als de inhoud iets toevoegt naast de
-          functie.
-        </Paragraph>
+        <>
+          <Heading3>Beschrijf de afbeelding alleen als de inhoud iets toevoegt</Heading3>
+          <Paragraph>
+            De afbeelding is klikbaar. Beschrijf alleen kort wat er te zien is als de inhoud iets toevoegt naast de
+            functie.
+          </Paragraph>
+        </>
       );
   }
 }
@@ -134,6 +140,7 @@ export function ImageTypeHelperText({ image }: ImageTypeHelperTextProps) {
 export function ImageDescriptionNearbyHelperText() {
   return (
     <>
+      <Heading3>De afbeelding hoeft niet te worden beschreven</Heading3>
       <Paragraph>
         Omdat de tekst die de afbeelding beschrijft al in de buurt van de afbeelding staat, hoeft die informatie niet
         opnieuw te worden beschreven in de alt-tekst. Je mag wel een aanvullende beschrijving toevoegen als die echt
@@ -153,6 +160,7 @@ export function ImageDescriptionNearbyHelperText() {
 export function ImageTypeSimpleHelperText() {
   return (
     <>
+      <Heading3>Beschrijf de afbeelding</Heading3>
       <Paragraph>
         Omdat dit een het een foto of eenvoudige illustratie is moet in het veld voor alternatieve tekst een korte
         beschrijving van wat er te zien is worden gegeven. Bijvoorbeeld: “Twee mensen in gesprek” of “Logo van gemeente
@@ -169,6 +177,7 @@ export function ImageTypeSimpleHelperText() {
 export function ImageTypeComplexHelperText() {
   return (
     <>
+      <Heading3>Beschrijf de afbeelding uitgebreid</Heading3>
       <Paragraph>
         Omdat de afbeelding veel informatie bevat die niet in één korte beschrijving past moet een uitgebreide
         beschrijving worden toegevoegd naast of onder de afbeelding. Zet in het veld voor alternatieve tekst een korte
@@ -186,6 +195,7 @@ export function ImageTypeComplexHelperText() {
 export function ImageTypeDecorativeHelperText() {
   return (
     <>
+      <Heading3>De afbeelding hoeft niet te worden beschreven</Heading3>
       <Paragraph>
         Omdat de afbeelding alleen decoratief is hoeft de afbeelding zelf niet te worden beschreven. Sommige bezoekers
         die gebruikmaken van hulpsoftware willen juist wel een beschrijving krijgen van een decoratieve afbeelding. Je
@@ -203,21 +213,25 @@ export function ImageTypeDecorativeHelperText() {
 const Texts = [
   {
     id: 'text-near-image',
+    header: 'De tekst in de afbeelding hoeft niet te worden beschreven',
     content:
       'Omdat dezelfde tekst al naast of vlak bij de afbeelding staat hoeft deze tekst niet te worden beschreven in de alternatieve tekst. Omdat de informatie al op een andere plek op de pagina beschikbaar is.',
   },
   {
     id: 'text-visual-effect',
+    header: 'De tekst in de afbeelding hoeft niet te worden beschreven',
     content:
       'Omdat de tekst in de afbeelding niets toevoegt aan de boodschap hoeft deze tekst niet te worden beschreven in de alternatieve tekst.',
   },
   {
     id: 'text-has-function',
+    header: 'Beschrijf de functie van de tekst in de afbeelding',
     content:
       'Omdat de afbeelding een functie heeft, zoals een icoon, moet in het veld voor alternatieve tekst worden beschreven wat de afbeelding doet of betekent. Bijvoorbeeld: “Download PDF” of “Let op”.',
   },
   {
     id: 'text-only-image',
+    header: 'Beschrijf de tekst in de afbeelding',
     content:
       'Omdat de tekst in de afbeelding niet op een andere plek op de pagina voorkomt moet de tekst in het veld voor alternatieve tekst worden beschreven. Zo is de informatie ook beschikbaar voor mensen die de afbeelding niet kunnen zien.',
   },
@@ -237,14 +251,14 @@ export function ImageTextHelperText({ image }: ImageTextHelperTextProps) {
     const helper = currentHelperText(image.content);
     return (
       <>
-        <Heading3>Beschrijving van de tekst</Heading3>
+        <Heading3>{helper.header}</Heading3>
         <Paragraph>{helper.content}</Paragraph>
       </>
     );
   } else if (image.type === 'complex') {
     return (
       <>
-        <Heading3>Beschrijving van de tekst</Heading3>
+        <Heading3>Beschrijf de tekst in de afbeelding</Heading3>
         <Paragraph>
           Dit is een complexe afbeelding. Als de afbeelding tekst bevat, beschrijf deze dan in de uitgebreide
           beschrijving van de afbeelding zelf.
@@ -262,7 +276,7 @@ export function ImageClickableHelperText({ image }: ImageClickableHelperTextProp
   if (image.clickable || image.type === 'functional') {
     return (
       <>
-        <Heading3>Beschrijving van het doel van de klikbare afbeelding </Heading3>
+        <Heading3>Beschrijf wat er gebeurt als iemand op de afbeelding klikt</Heading3>
         <Paragraph>
           Omdat de afbeelding een link of knop is moet in de alt-tekst duidelijk worden aangegeven wat er gebeurt als
           iemand erop klikt. Bijvoorbeeld:“Bekijk productinformatie” of “Ga naar contactpagina”
