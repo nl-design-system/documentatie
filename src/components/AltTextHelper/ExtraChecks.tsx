@@ -6,7 +6,9 @@ import {
   FormFieldCheckbox,
   Button,
   PreHeading,
+  Link,
 } from '@utrecht/component-library-react/dist/css-module';
+import { UtrechtIconChevronLeft } from '@utrecht/web-component-library-react';
 
 const groupName = 'extra-checks';
 
@@ -53,6 +55,19 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
   if (active === groupName) {
     return (
       <>
+        <div className="nlds-button-previous">
+          <UtrechtIconChevronLeft className="nlds-link-back" />
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              onPrevStep();
+            }}
+          >
+            Vorige stap
+          </Link>
+        </div>
+
         <PreHeading>Stap 3 van 5</PreHeading>
         <Fieldset
           id="additional-checks-group"
@@ -93,23 +108,19 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
               onChange={handleChange}
             />
           )}
-
-          <div className="nlds-button-bar">
-            <Button appearance="secondary-action-button" onClick={onPrevStep}>
-              Vorige stap
-            </Button>
-
-            <Button
-              appearance="primary-action-button"
-              onClick={() => {
-                onBeforeNext();
-                onNextStep(groupName);
-              }}
-            >
-              Volgende stap
-            </Button>
-          </div>
         </Fieldset>
+
+        <div className="nlds-button-next">
+          <Button
+            appearance="primary-action-button"
+            onClick={() => {
+              onBeforeNext();
+              onNextStep(groupName);
+            }}
+          >
+            Volgende stap
+          </Button>
+        </div>
       </>
     );
   }

@@ -1,3 +1,8 @@
+.nlds-alt-text-helper {
+  margin-block-start: calc(var(--ifm-paragraph-margin-bottom) * 2);
+  margin-block-end: calc(var(--ifm-paragraph-margin-bottom) * 2);
+}
+
 .nlds-alt-text-helper .utrecht-form-fieldset__fieldset,
 .nlds-alt-text-helper .utrecht-form-fieldset__legend,
 .nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-2,
@@ -19,6 +24,13 @@
   margin-block-start: 0;
 }
 
+.nlds-alt-text-helper .utrecht-breadcrumb-nav,
+.nlds-alt-text-helper .utrecht-form-field-description,
+.nlds-alt-text-helper .utrecht-form-field__label,
+.nlds-alt-text-helper .utrecht-form-label {
+  font-size: var(--basis-text-font-size-md);
+}
+
 .nlds-alt-text-helper .utrecht-form-fieldset__fieldset > .utrecht-form-fieldset__legend,
 .nlds-alt-text-helper .utrecht-spotlight-section > .utrecht-heading-2 {
   font-size: var(--utrecht-heading-2-font-size);
@@ -32,11 +44,33 @@
   order: 0;
 }
 
-.nlds-alt-text-helper .nlds-button-bar {
-  padding-top: var(--ifm-paragraph-margin-bottom);
-  display: flex;
-  justify-content: space-between;
+.nlds-alt-text-helper .nlds-button-next {
+  margin-block-start: calc(var(--ifm-paragraph-margin-bottom) * 2);
+  margin-block-end: calc(var(--ifm-paragraph-margin-bottom) * 2);
 }
+
+.nlds-alt-text-helper .nlds-button-previous {
+  margin-block-start: 0;
+  margin-block-end: calc(var(--ifm-paragraph-margin-bottom) * 2.75);
+}
+
+.nlds-alt-text-helper .nlds-button-previous > .nlds-link-back {
+  block-size: calc(var(--utrecht-icon-size) * 0.6);
+  color: var(--_utrecht-link-state-text-decoration-color, var(--utrecht-link-text-decoration-color, currentColor));
+  inline-size: calc(var(--utrecht-icon-size) * 0.6);
+  margin-right: 0.2em;
+}
+
+/* .nlds-alt-text-helper .nlds-button-previous:before {
+    content: '';
+    background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
+    filter: var(--ifm-menu-link-sublist-icon-filter);
+    height: 1rem;
+    transform: rotate(270deg);
+    width: 1.5rem;
+    display:inline-block;
+    color: red;
+} */
 
 .nlds-alt-text-helper .nlds-button-bar.flex-end {
   justify-content: end;

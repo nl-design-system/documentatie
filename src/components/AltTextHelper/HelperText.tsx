@@ -2,14 +2,15 @@ import { SpotlightSection } from '@utrecht/component-library-react';
 import {
   Heading2,
   Heading3,
-  Button,
   Paragraph,
   PreHeading,
   OrderedList,
   OrderedListItem,
   UnorderedList,
   UnorderedListItem,
+  Link,
 } from '@utrecht/component-library-react/dist/css-module';
+import { UtrechtIconChevronLeft } from '@utrecht/web-component-library-react';
 
 const groupName = 'helper-text';
 
@@ -65,15 +66,28 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
   if (active === groupName) {
     return (
       <>
+        <div className="nlds-button-previous">
+          <UtrechtIconChevronLeft className="nlds-link-back" />
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              onPrevStep(groupName);
+            }}
+          >
+            Vorige stap
+          </Link>
+        </div>
+
         <div className="nlds-helper-text" ref={autoFocus} tabIndex={-1}>
           <PreHeading>Stap 5 van 5</PreHeading>
           <SpotlightSection>
-            <Heading2>Advies voor jouw afbeelding</Heading2>
+            <Heading2>Advies over jouw afbeelding</Heading2>
             <ImageTextHelperText image={image} />
             <ImageTypeHelperText image={image} />
             <ImageClickableHelperText image={image} />
           </SpotlightSection>
-          <Heading2>Samenvatting van jouw keuzes</Heading2>
+          <Heading2>Jouw keuzes</Heading2>
           <Paragraph>Jij hebt het volgende aangegeven over jouw afbeelding</Paragraph>
           <UnorderedList>
             <UnorderedListItem>{translateType(image.type)}</UnorderedListItem>
@@ -91,7 +105,7 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
               </>
             )}
           </UnorderedList>
-          <Heading2>Algemene richtlijnen voor de beschrijving van alternatieve tekst</Heading2>
+          <Heading2>Algemene richtlijnen</Heading2>
           Bouw de alt-tekst altijd als volgt op:
           <OrderedList>
             <OrderedListItem>
@@ -101,11 +115,6 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
             <OrderedListItem>Beschrijf vervolgens de afbeelding</OrderedListItem>
             <OrderedListItem>Beschrijf tot slot de functie, als de afbeelding klikbaar is.</OrderedListItem>
           </OrderedList>
-        </div>
-        <div className="nlds-button-bar">
-          <Button appearance="secondary-action-button" onClick={() => onPrevStep(groupName)}>
-            Vorige stap
-          </Button>
         </div>
       </>
     );
@@ -140,7 +149,7 @@ export function ImageTypeHelperText({ image }: ImageTypeHelperTextProps) {
 export function ImageDescriptionNearbyHelperText() {
   return (
     <>
-      <Heading3>De afbeelding hoeft niet te worden beschreven</Heading3>
+      <Heading3>De afbeelding hoeft zelf niet te worden beschreven</Heading3>
       <Paragraph>
         Omdat de tekst die de afbeelding beschrijft al in de buurt van de afbeelding staat, hoeft die informatie niet
         opnieuw te worden beschreven in de alt-tekst. Je mag wel een aanvullende beschrijving toevoegen als die echt
@@ -150,8 +159,8 @@ export function ImageDescriptionNearbyHelperText() {
         beschrijven hoe de persoon eruitziet, zodat iedereen een beeld krijgt.
       </Paragraph>
       <Paragraph>
-        Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk
-        <a href="/richtlijnen/content/afbeeldingen/algemene-richtlijnen/">Algemene richtlijnen voor alt-tekst</a>.
+        Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk{' '}
+        <a href="/richtlijnen/content/afbeeldingen/algemene-richtlijnen/">de algemene richtlijnen voor alt-tekst</a>.
       </Paragraph>
     </>
   );
@@ -168,7 +177,7 @@ export function ImageTypeSimpleHelperText() {
       </Paragraph>
       <Paragraph>
         Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk{' '}
-        <a href="/richtlijnen/content/afbeeldingen/algemene-richtlijnen/">Algemene richtlijnen voor alt-tekst</a>.
+        <a href="/richtlijnen/content/afbeeldingen/algemene-richtlijnen/">de algemene richtlijnen voor alt-tekst</a>.
       </Paragraph>
     </>
   );
@@ -177,7 +186,7 @@ export function ImageTypeSimpleHelperText() {
 export function ImageTypeComplexHelperText() {
   return (
     <>
-      <Heading3>Beschrijf de afbeelding uitgebreid</Heading3>
+      <Heading3>Beschrijf de afbeelding uitgebreid naast of onder de afbeelding</Heading3>
       <Paragraph>
         Omdat de afbeelding veel informatie bevat die niet in één korte beschrijving past moet een uitgebreide
         beschrijving worden toegevoegd naast of onder de afbeelding. Zet in het veld voor alternatieve tekst een korte
@@ -185,8 +194,8 @@ export function ImageTypeComplexHelperText() {
         van de grafiek. Uitgebreide uitleg staat onder de afbeelding.”
       </Paragraph>
       <Paragraph>
-        Meer over hoe je alt-tekst combineert met een uitgebreide beschrijving vind je op{' '}
-        <a href="/richtlijnen/content/afbeeldingen/alt-plaats/">Waar moet een alternatieve tekst staan?</a>.
+        Hoe je een alt-tekst combineert met een uitgebreide beschrijving vind je op{' '}
+        <a href="/richtlijnen/content/afbeeldingen/alt-plaats/">waar moet een alternatieve tekst staan?</a>.
       </Paragraph>
     </>
   );
@@ -195,7 +204,7 @@ export function ImageTypeComplexHelperText() {
 export function ImageTypeDecorativeHelperText() {
   return (
     <>
-      <Heading3>De afbeelding hoeft niet te worden beschreven</Heading3>
+      <Heading3>De afbeelding hoeft zelf niet te worden beschreven</Heading3>
       <Paragraph>
         Omdat de afbeelding alleen decoratief is hoeft de afbeelding zelf niet te worden beschreven. Sommige bezoekers
         die gebruikmaken van hulpsoftware willen juist wel een beschrijving krijgen van een decoratieve afbeelding. Je
@@ -253,6 +262,11 @@ export function ImageTextHelperText({ image }: ImageTextHelperTextProps) {
       <>
         <Heading3>{helper.header}</Heading3>
         <Paragraph>{helper.content} </Paragraph>
+        <Paragraph>
+          <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/">
+            Meer informatie over tekst in een afbeelding
+          </a>
+        </Paragraph>
       </>
     );
   } else if (image.type === 'complex') {

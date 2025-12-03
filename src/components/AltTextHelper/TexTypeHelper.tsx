@@ -7,11 +7,13 @@ import {
   FormLabel,
   RadioButton,
   Button,
-  Heading3,
+  Heading2,
   PreHeading,
   UnorderedList,
   UnorderedListItem,
+  Link,
 } from '@utrecht/component-library-react/dist/css-module';
+import { UtrechtIconChevronLeft } from '@utrecht/web-component-library-react';
 
 const groupName = 'text-type';
 
@@ -35,6 +37,19 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
   if (active === groupName) {
     return (
       <>
+        <div className="nlds-button-previous">
+          <UtrechtIconChevronLeft className="nlds-link-back" />
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              onPrevStep();
+            }}
+          >
+            Vorige stap
+          </Link>
+        </div>
+
         <PreHeading>Stap 4 van 5</PreHeading>
         <Fieldset
           id="text-type-group"
@@ -138,36 +153,32 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
               </div>
             </FormLabel>
           </FormField>
-
-          <Heading3>Meer informatie over het gebruik van tekst in afbeeldingen</Heading3>
-          <UnorderedList>
-            <UnorderedListItem>
-              <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/">
-                Wees voorzichtig met tekst in afbeeldingen
-              </a>
-            </UnorderedListItem>
-            <UnorderedListItem>
-              <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/#op-een-toegankelijke-manier-tekst-in-een-afbeelding-gebruiken">
-                Op een toegankelijke manier tekst in een afbeelding gebruiken
-              </a>
-              .
-            </UnorderedListItem>
-          </UnorderedList>
-
-          <div className="nlds-button-bar">
-            <Button appearance="secondary-action-button" onClick={onPrevStep}>
-              Vorige stap
-            </Button>
-
-            <Button
-              appearance="primary-action-button"
-              disabled={selectedOption === '' ? true : false}
-              onClick={() => onNextStep(groupName)}
-            >
-              Toon advies
-            </Button>
-          </div>
         </Fieldset>
+
+        <div className="nlds-button-next">
+          <Button
+            appearance="primary-action-button"
+            disabled={selectedOption === '' ? true : false}
+            onClick={() => onNextStep(groupName)}
+          >
+            Toon advies
+          </Button>
+        </div>
+
+        <Heading2>Meer informatie over het gebruik van tekst in afbeeldingen</Heading2>
+        <UnorderedList>
+          <UnorderedListItem>
+            <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/">
+              Wees voorzichtig met tekst in afbeeldingen
+            </a>
+          </UnorderedListItem>
+          <UnorderedListItem>
+            <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/#op-een-toegankelijke-manier-tekst-in-een-afbeelding-gebruiken">
+              Op een toegankelijke manier tekst in een afbeelding gebruiken
+            </a>
+            .
+          </UnorderedListItem>
+        </UnorderedList>
       </>
     );
   }
