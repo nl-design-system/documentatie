@@ -3,7 +3,6 @@ import Admonition from '@theme/Admonition';
 import MDXDetails from '@theme/MDXComponents/Details';
 import MDXPre from '@theme/MDXComponents/Pre';
 import type { Props } from '@theme/MDXContent';
-import Mermaid from '@theme/Mermaid';
 import {
   Code,
   Emphasis,
@@ -43,7 +42,6 @@ export default function MDXContent({ children }: Props): ReactElement {
         h5: Heading5,
         h6: Heading6,
         admonition: Admonition,
-        mermaid: Mermaid,
       }}
     >
       {children}
