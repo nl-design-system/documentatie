@@ -1,4 +1,4 @@
-import type { PropSidebarItem, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
+import type { PropSidebarItem, PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import { useDocById } from '@docusaurus/plugin-content-docs/client';
@@ -22,7 +22,7 @@ export const ComponentOverview = () => {
   const SEARCH_PARAM_FRAMEWORK = 'framework';
   const SEARCH_PARAM_STATUS = 'status';
 
-  const category = useCurrentSidebarCategory();
+  const category = useCurrentSidebarCategory() as PropSidebarItemCategory;
   const { location, replace } = useHistory();
 
   const params = new URLSearchParams(location.search);

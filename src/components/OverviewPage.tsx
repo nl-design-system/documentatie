@@ -1,4 +1,4 @@
-import type { PropSidebarItem } from '@docusaurus/plugin-content-docs';
+import type { PropSidebarItem, PropSidebarItemCategory } from '@docusaurus/plugin-content-docs';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
@@ -24,7 +24,7 @@ const excludeRecusively = (items: PropSidebarItem[], excludeDocIDs: string[]) =>
   }, []);
 
 export const OverviewPage = ({ excludeDocIDs = [], className, ...restProps }: OverviewPageProps) => {
-  const category = useCurrentSidebarCategory();
+  const category = useCurrentSidebarCategory() as PropSidebarItemCategory;
 
   return (
     <div {...restProps} className={clsx('margin-top--lg', className)}>
