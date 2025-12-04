@@ -27,7 +27,7 @@ const TestPage = () => {
         <OrderedList>
           <OrderedListItem>
             <Link href="https://www.onbekend-talent.nl/leer-werk-traject-bij-mas-zone-3-in-amsterdam">Voorbeeld 1</Link>{' '}
-            (Opwarmertje)
+            (Afbeelding)
           </OrderedListItem>
           <OrderedListItem>
             <Link href="https://www.denhaag.nl/nl/">Voorbeeld 2</Link> (Zoek)
@@ -42,16 +42,17 @@ const TestPage = () => {
             (Afbeelding)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.snn.nl/valorisatie-2025">Voorbeeld 5</Link>(Stappen)
+            <Link href="https://8rhk.nl/ruimtelijk-perspectief-achterhoek/">Voorbeeld 5</Link> (Stappenplan)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.spna.nl/nieuws/aanmelden-rassenproeven-2026-granen-en-koolzaad/">Voorbeeld 6</Link>{' '}
+            <Link href="https://www.spna.nl/nieuws/aanmelden-rassenproeven-2026-granen-en-koolzaad/">Voorbeeld 6</Link>
             (Afbeelding onderin)
           </OrderedListItem>
           <OrderedListItem>
             <Link href="https://www.kennisvandeoverheid.nl/actueel/nieuws/2025/11/19/terugblik-webinar-innovatie-barometer-overheid-samen-investeren-in-de-innovatiekracht-van-de-overheid-van-morgen">
               Voorbeeld 7
-            </Link>
+            </Link>{' '}
+            (Afbeelding)
           </OrderedListItem>
           <OrderedListItem>
             <Link href="https://www.denhaag.nl/nl/">Voorbeeld 8</Link> (Logo)
@@ -75,15 +76,6 @@ const TestPage = () => {
           </OrderedListItem>
           <OrderedListItem>
             <Link href="https://www.7poort.nl/">Voorbeeld 13</Link>(Kaart)
-          </OrderedListItem>
-          <OrderedListItem>
-            <Link href="https://activiteiten.amsterdam.nl/activiteiten/2025/10/stem-plannen-west-begroot!/">
-              Voorbeeld 14
-            </Link>{' '}
-            (Afbeelding)
-          </OrderedListItem>
-          <OrderedListItem>
-            <Link href="https://8rhk.nl/ruimtelijk-perspectief-achterhoek/">Voorbeeld 15</Link> (Meerdere afbeeldingen)
           </OrderedListItem>
         </OrderedList>
       </PageContent>
