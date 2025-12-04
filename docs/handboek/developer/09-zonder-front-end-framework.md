@@ -602,6 +602,77 @@ En vervolgens:
 <main class="example-rich-text"></main>
 ```
 
+## Je eigen thema en custom font installeren
+
+Dit is een vervolg op het stappenplan voor het maken van een eigen thema. Als je een eigen thema gebruikt, wil je waarschijnlijk ook je eigen huisstijl lettertypes (fonts) gebruiken.
+
+### Waar installeer je het font?
+
+Het is technisch mogelijk om fonts in te laden via een CDN, zoals Google Fonts. Dit heeft echter enkele nadelen:
+
+- **Privacy**: Er wordt een verbinding gemaakt met een server van derden (bijv. Google), wat privacy-implicaties kan hebben (GDPR).
+- **Performance**: Je bent afhankelijk van de beschikbaarheid en snelheid van de externe server.
+- **Stabiliteit**: Als de externe dienst wijzigt of stopt, kan je font kapot gaan.
+
+Daarom is het beter om fonts lokaal te hosten of via een NPM package te installeren, mits je NPM gebruikt.
+
+Soms worden fonts bijgewerkt, daar moet je ook op voorbereid zijn.
+
+#### Import met NPM package (@fontsource)
+
+Een populaire en makkelijke manier om open source fonts te gebruiken is via het [Fontsource](https://fontsource.org/) project. Fontsource maakt NPM packages van Google Fonts (en andere open source fonts).
+
+**Voordelen:**
+
+- Fonts worden self-hosted (geen externe requests).
+- Versiebeheer via `package.json`.
+- Makkelijke updates (`npm update`).
+
+**Voorbeeld: Fira Sans**
+
+Stel je wilt het font "Fira Sans" gebruiken.
+
+1.  Installeer de package:
+
+    ```bash
+    npm install @fontsource/fira-sans
+    ```
+
+2.  Importeer het font in je JavaScript of CSS bestand (afhankelijk van je build setup):
+
+    ```javascript
+    import "@fontsource/fira-sans"; // Defaults to weight 400
+    import "@fontsource/fira-sans/400.css"; // Weight 400
+    import "@fontsource/fira-sans/400-italic.css"; // Italic
+    import "@fontsource/fira-sans/700.css"; // Bold
+    ```
+
+3.  Gebruik het font in je CSS variabelen (in je thema configuratie):
+    ```css
+    :root {
+      --font-family-base: "Fira Sans", sans-serif;
+    }
+    ```
+
+### Best Practices
+
+Bij het kiezen en implementeren van fonts zijn er een aantal richtlijnen uit de Stijlrichtlijnen waar je rekening mee moet houden. Zie ook de [typografie richtlijnen](/richtlijnen/stijl/typografie/lettertype/#eigen-font-family-naam-voor-bold-of-italic-variant).
+
+#### Vermijd 'Faux' styles
+
+Gebruik geen `font-weight: bold` of `font-style: italic` als je niet de daadwerkelijke vette of cursieve variant van het font hebt ingeladen. Browsers proberen dit soms na te bootsen (faux bold/italic), maar dit ziet er vaak lelijk en onprofessioneel uit.
+
+Zorg ervoor dat je de specifieke font-bestanden (of imports) voor de gewichten en stijlen die je gebruikt ook daadwerkelijk inlaadt (bijv. 400, 400italic, 700).
+
+#### @font-face definities
+
+Bespaar niet op het includen van volledige `@font-face` definities. Moderne browsers zijn slim genoeg om fonts pas te downloaden wanneer ze daadwerkelijk op de pagina gebruikt worden.
+
+Dit is ook belangrijk voor:
+
+- **Google Translate**: Als een gebruiker de pagina vertaalt, kunnen er karakters nodig zijn die niet in je standaard subset zitten.
+- **Internationale tekens**: Voor talen als Japans worden karakters vaak pas geladen als ze nodig zijn. Door de juiste definities te hebben, zorg je voor een goede weergave in alle scenario's.
+
 ## Heb je feedback?
 
 Dit is een eerste versie, we willen graag van de community horen of dit stappenplan werkbaar en nuttig is.
