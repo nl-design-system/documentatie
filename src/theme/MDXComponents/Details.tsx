@@ -1,6 +1,9 @@
-import Details from '@theme/Details';
-import type { Props } from '@theme/MDXComponents/Details';
+import Details from '@theme-original/Details';
 import React, { type ComponentProps, type ReactElement } from 'react';
+
+interface Props extends ComponentProps<typeof Details> {
+  children: ReactElement;
+}
 
 export default function MDXDetails(props: Props): ReactElement {
   const items = React.Children.toArray(props.children);

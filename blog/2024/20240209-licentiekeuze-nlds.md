@@ -1,10 +1,7 @@
 ---
 title: Over de licentiekeuze van NL Design System
 slug: licentiekeuze-nl-design-system
-authors:
-  - name: Renate Bruinenberg
-    title: Communicatieadviseur NL Design System
-    url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
+authors: Renate Bruinenberg
 tags: [meta, NL Design System]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blogpost-licentiekeuze-nl-design-system.png
 hide_table_of_contents: false

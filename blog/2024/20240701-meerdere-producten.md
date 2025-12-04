@@ -1,10 +1,7 @@
 ---
 title: "Design systems bij Logius: hoe één design system meerdere producten ondersteunt"
 slug: een-design-system-meerdere-producten
-authors:
-  - name: Renate Bruinenberg
-    title: Communicatieadviseur NL Design System
-    url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
+authors: Renate Bruinenberg
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_een-product.png
 tags: [logius, NL Design System, componenten, gebruikersonderzoeken]
 hide_table_of_contents: false
@@ -12,6 +9,8 @@ date: 2024-07-01
 ---
 
 Vorig jaar ging het design system team van Logius, de organisatie die achter onder andere DigiD en MijnOverheid zit, samenwerken met de NL Design System community. We spraken met Aline Nap en Raoul Wittenberns over hun ervaringen.
+
+<!-- truncate -->
 
 “Kijken hoe verschillende producten bij elkaar gebracht kunnen worden, daar was ik eigenlijk altijd wel mee bezig. Denk aan het samenbrengen van design, zodat alles meer in 1 lijn is”, zegt Aline Nap. Als UX-designer werkt zij samen met haar collega’s aan een eigen design system voor Logius: LUX (afkorting van Logius User eXperience). Raoul Wittenberns is als architect betrokken bij de opzet van LUX en richt zich voornamelijk op het goed laten landen van het nieuwe design system binnen Logius. De inspiratie voor het ontwikkelen van LUX halen ze onder andere uit de community van NL Design System. Aline en Raoul vertellen over de ontwikkeling en plannen met LUX én blikken voorzichtig vooruit.
 

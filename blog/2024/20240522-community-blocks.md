@@ -1,10 +1,7 @@
 ---
 title: Van eigen componenten naar open source “blocks” voor WordPress
 slug: community-blocks
-authors:
-  - name: Renate Bruinenberg
-    title: Communicatieadviseur NL Design System
-    url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
+authors: Renate Bruinenberg
 tags: [WordPress, developers, NL Design System]
 hide_table_of_contents: false
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/community-blocks.png
@@ -12,6 +9,8 @@ date: 2024-05-22
 ---
 
 Met [NL Design System community blocks](https://github.com/nl-design-system/nlds-community-blocks) wordt het nog makkelijker om NL Design System-componenten te gebruiken in WordPress. De grote aanjager van deze plug-in is de gemeente Den Haag, die hier met hun leverancier Acato aan werkten. We spraken Tom Dekker van Acato over het proces.
+
+<!-- truncate -->
 
 Terwijl de gemeente Den Haag met hun leveranciers werkte aan de nieuwe DenHaag.nl, ontstond al snel de behoefte herbruikbare onderdelen open source beschikbaar te maken. Met deze vraag gingen zij naar hun leveranciers. Dat resulteerde in zogenaamde ‘community blocks'. Het team wilde graag terugleveren aan de maatschappij, en slim omgaan met design en code. Dat maakte de keuze voor het NL Design System eenvoudig.
 

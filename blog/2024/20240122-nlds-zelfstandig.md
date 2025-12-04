@@ -2,12 +2,8 @@
 title: NL Design System nu als zelfstandig project verder
 slug: nl-design-system-zelfstandig-verder
 authors:
-  - name: Renate Bruinenberg
-    title: Communicatieadviseur NL Design System
-    url: https://www.linkedin.com/in/renate-bruinenberg-886019163/
-  - name: Hidde de Vries
-    title: Public relations lead & Toegankelijkheidsspecialist NL Design System
-    url: https://www.linkedin.com/in/hiddedevries/
+  - Renate Bruinenberg
+  - Hidde de Vries
 tags: [meta, NL Design System]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blogpost-nlds-zelfstandig.png
 hide_table_of_contents: false
