@@ -76,7 +76,7 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
           ref={autoFocus}
           tabIndex={-1}
         >
-          <FieldsetLegend>Welke aanvullende kenmerken gelden voor deze afbeelding?</FieldsetLegend>
+          <FieldsetLegend>Welke kenmerken gelden voor deze afbeelding?</FieldsetLegend>
           <FormFieldDescription id="additional-checks-group-description">
             Selecteer wat van toepassing is:
           </FormFieldDescription>
@@ -102,7 +102,7 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
           {image.type === 'simple' && (
             <FormFieldCheckbox
               id="image-description-nearby"
-              label="De beschrijving van de afbeelding staat al in de buurt van de afbeelding"
+              label="De afbeelding wordt al beschreven in de tekst ernaast"
               name="descripted"
               defaultChecked={!!checkedOptions.descripted}
               onChange={handleChange}

@@ -58,7 +58,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
           ref={autoFocus}
           tabIndex={-1}
         >
-          <FieldsetLegend>Welke beschrijving past bij de tekst in de afbeelding?</FieldsetLegend>
+          <FieldsetLegend>Wat is de rol van de tekst in de afbeelding?</FieldsetLegend>
           <FormFieldDescription id="text-type-group-description">
             Kies de optie die het beste past:
           </FormFieldDescription>
@@ -79,7 +79,12 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 }}
               />
               <div>
-                <span className="bold-text">De tekst bevat informatie die nergens anders op de pagina staat.</span>
+                <span className="bold-text">
+                  De tekst geeft informatie die belangrijk is voor de inhoud en staat nergens anders op de pagina.
+                </span>
+                <br />
+                Bijvoorbeeld een afbeelding met een aanbieding, een zichtbare prijs bij een product, of een aankondiging
+                van een evenement.
               </div>
             </FormLabel>
           </FormField>
@@ -100,7 +105,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 }}
               />
               <div>
-                <span className="bold-text">Dezelfde tekst staat ook naast of vlak bij de afbeelding.</span>
+                <span className="bold-text">Exact dezelfde tekst staat al in de buurt van de afbeelding.</span>
               </div>
             </FormLabel>
           </FormField>
@@ -123,7 +128,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
               <div>
                 <span className="bold-text">De tekst heeft een functionele rol.</span>
                 <br />
-                Bijvoorbeeld: een icoon met de letters PDF dat “Download PDF” of een uitroepteken dat “Let op” aanduidt.
+                Bijvoorbeeld een PDF-icoon (Download PDF), een i-icoon (Meer informatie) of een uitroepteken (Let op).
               </div>
             </FormLabel>
           </FormField>
@@ -145,11 +150,10 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
               />
               <div>
                 <span className="bold-text">
-                  De tekst is alleen voor het visuele effect en heeft geen inhoudelijke betekenis
+                  De tekst is alleen bedoeld als visueel element en voegt geen belangrijke informatie toe.
                 </span>
                 <br />
-                Bijvoorbeeld een watermerk, tekst in een screenshot, een afbeelding van een verpakking of een stapel
-                boeken.
+                Bijvoorbeeld tekst in een screenshot of op een afbeelding van een verpakking of stapel boeken.
               </div>
             </FormLabel>
           </FormField>
