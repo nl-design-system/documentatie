@@ -52,10 +52,8 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
           ref={autoFocus}
           tabIndex={-1}
         >
-          <FieldsetLegend>Wat voor soort afbeelding is het?</FieldsetLegend>
-          <FormFieldDescription id="context-type-group-description">
-            Kies de optie die het beste past:
-          </FormFieldDescription>
+          <FieldsetLegend>Hoe ziet de afbeelding eruit?</FieldsetLegend>
+          <FormFieldDescription id="context-type-group-description">Kies wat het beste past:</FormFieldDescription>
           <FormField type="radio">
             <FormLabel
               className="utrecht-form-field__label utrecht-form-field__label--radio"
@@ -73,9 +71,9 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
                 }}
               />
               <div>
-                <span className="bold-text">
-                  Het is een grafiek, diagram, stappenplan of een andere complexe afbeelding.
-                </span>
+                <span className="bold-text">Het is een complexe afbeelding</span>
+                <br />
+                Bijvoorbeeld een grafiek, diagram, stappenplan, kaart, tijdlijn of infographic.
               </div>
             </FormLabel>
           </FormField>
@@ -96,7 +94,9 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
                 }}
               />
               <div>
-                <span className="bold-text">Het is een foto of een eenvoudige illustratie.</span>
+                <span className="bold-text">Het is een foto of eenvoudige illustratie</span>
+                <br />
+                Bijvoorbeeld een portretfoto, sfeerbeeld, logo of een simpele tekening.
               </div>
             </FormLabel>
           </FormField>

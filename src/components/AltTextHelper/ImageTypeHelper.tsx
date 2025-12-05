@@ -38,9 +38,9 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
           ref={autoFocus}
           tabIndex={-1}
         >
-          <FieldsetLegend>Wat voor type afbeelding is het?</FieldsetLegend>
+          <FieldsetLegend>Wat is het doel van de afbeelding?</FieldsetLegend>
           <FormFieldDescription id="image-type-group-description">
-            Kies het belangrijkste doel van de afbeelding:
+            Kies de optie die het beste past:
           </FormFieldDescription>
           <FormField type="radio">
             <FormLabel
@@ -115,14 +115,14 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
                   De afbeelding wordt <em>alléén</em> gebruikt als een link of knop.
                 </span>
                 <br />
-                Bijvoorbeeld een icoon om iets te downloaden, te vergroten of open te klappen. Dit heet een functionele
-                afbeelding.
+                Bijvoorbeeld een afbeelding met een icoon dat aangeeft dat je iets kunt downloaden, vergroten of
+                openklappen. Dit heet een functionele afbeelding.
               </div>
             </FormLabel>
           </FormField>
           <Paragraph>
-            Soms doet een afbeelding meer dan één ding. Bijvoorbeeld: een kaart waarop je kunt klikken, of een
-            illustratie die ook een link is. Kies dan het belangrijkste doel van de afbeelding.
+            Soms heeft een afbeelding meer dan één functie, zoals een kaart waarop je kunt klikken, een logo dat linkt
+            naar de homepage of een afbeelding die je kunt vergroten. Kies dan het belangrijkste doel van de afbeelding.
           </Paragraph>
         </Fieldset>
 
