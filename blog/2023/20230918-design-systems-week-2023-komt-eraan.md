@@ -2,9 +2,8 @@
 title: Design Systems Week 2023 komt eraan!
 slug: design-systems-week-2023-komt-eraan
 authors:
-  - name: Hidde de Vries
+  - key: Hidde de Vries
     title: Public relations & Toegankelijkheidsspecialist NL Design System
-    url: https://www.linkedin.com/in/hiddedevries/
 tags: [NL Design System, design systems week]
 hide_table_of_contents: false
 date: 2023-09-18

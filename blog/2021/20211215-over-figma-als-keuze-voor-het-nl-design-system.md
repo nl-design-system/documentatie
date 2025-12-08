@@ -1,10 +1,7 @@
 ---
 title: Over Figma als keuze voor het NL Design System
 slug: over-figma-als-keuze-voor-het-nl-design-system
-authors:
-  - name: Rogier Barendregt
-    title: Designer kernteam NL Design System
-    url: https://www.linkedin.com/in/rogierdesign/
+authors: Rogier Barendregt
 tags: [Figma, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2021/07/Rogier.png
 hide_table_of_contents: false

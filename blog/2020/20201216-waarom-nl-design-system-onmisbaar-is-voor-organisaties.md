@@ -1,10 +1,7 @@
 ---
 title: Waarom NL Design System onmisbaar is voor organisaties
 slug: waarom-nl-design-system-onmisbaar-is-voor-organisaties
-authors:
-  - name: Jessica Straetemans
-    title: Coördinator Communicatie bij Gebruiker Centraal
-    url: https://www.linkedin.com/in/jessicastraetemans/
+authors: Jessica Straetemans
 tags: [contentrichtlijnen, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2020/06/gc-nlds-beeldmerk.png
 hide_table_of_contents: false

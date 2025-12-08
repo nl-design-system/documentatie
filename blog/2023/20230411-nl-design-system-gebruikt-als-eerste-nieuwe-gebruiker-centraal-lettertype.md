@@ -1,10 +1,7 @@
 ---
 title: NL Design System gebruikt als eerste nieuwe Gebruiker Centraal-lettertype
 slug: nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype
-authors:
-  - name: Jeroen Schalk
-    title: Webredacteur en communicatieadviseur
-    url: https://linkedin.com/in/ietsvanjeroen/
+authors: Jeroen Schalk
 tags: [lettertype, NL Design System, Gebruiker Centraal]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2023/05/0412_Uitgelichte-afbeeldingen_NLDS-1024x576.jpg
 hide_table_of_contents: false

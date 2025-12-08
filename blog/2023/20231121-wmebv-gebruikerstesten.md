@@ -1,10 +1,7 @@
 ---
 title: "Testen met Wmebv-formulieren: eerste lessen"
 slug: wmebv-gebruikerstesten
-authors:
-  - name: Hidde de Vries
-    title: Public relations lead & Toegankelijkheidsspecialist NL Design System
-    url: https://www.linkedin.com/in/hiddedevries/
+authors: Hidde de Vries
 tags: [NL Design System, gebruikerstesten, formulieren]
 hide_table_of_contents: false
 date: 2023-11-21
@@ -12,6 +9,8 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/po
 ---
 
 In de afgelopen maanden werkte het NL Design System kernteam samen met VNG aan generieke formulieren. Vorige week testten we ze met gebruikers bij Stichting Accessibility in Utrecht.
+
+<!-- truncate -->
 
 ## Waarom Wmebv-formulieren?
 
