@@ -45,30 +45,30 @@ const TestPage = () => {
             <Link href="https://8rhk.nl/ruimtelijk-perspectief-achterhoek/">Voorbeeld 5</Link> (Stappenplan)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.spna.nl/nieuws/aanmelden-rassenproeven-2026-granen-en-koolzaad/">Voorbeeld 6</Link>
-            (Afbeelding onderin)
-          </OrderedListItem>
-          <OrderedListItem>
             <Link href="https://www.kennisvandeoverheid.nl/actueel/nieuws/2025/11/19/terugblik-webinar-innovatie-barometer-overheid-samen-investeren-in-de-innovatiekracht-van-de-overheid-van-morgen">
-              Voorbeeld 7
+              Voorbeeld 6
             </Link>{' '}
             (Afbeelding)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.denhaag.nl/nl/">Voorbeeld 8</Link> (Logo)
+            <Link href="https://www.denhaag.nl/nl/">Voorbeeld 7</Link> (Logo)
           </OrderedListItem>
           <OrderedListItem>
             <Link href="https://authn.denhaag.nl/realms/zgw-publiek/protocol/openid-connect/auth?client_id=klantportaal&redirect_uri=https%3A%2F%2Fklantportaal.denhaag.nl%2Foidc%2Fcallback&response_type=code&scope=openid&state=1946df6bf91c4312881930dfcf9d51fa&code_challenge=JcTk51oW_0yvU_0_nrP8j1yznAy9snBlH97PQqEgVhw&code_challenge_method=S256">
-              Voorbeeld 9
+              Voorbeeld 8
             </Link>{' '}
             (DigId)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.stichtingerfgoedgennep.nl/">Voorbeeld 10</Link> (Nieuwsgierig?)
+            <Link href="https://www.stichtingerfgoedgennep.nl/">Voorbeeld 9</Link> (Nieuwsgierig?)
           </OrderedListItem>
           <OrderedListItem>
-            <Link href="https://www.snn.nl/kennisbank/publiciteitseisen-just-transition-fund-jtf">Voorbeeld 11</Link>
+            <Link href="https://www.snn.nl/kennisbank/publiciteitseisen-just-transition-fund-jtf">Voorbeeld 10</Link>
             (Afbeelding)
+          </OrderedListItem>
+          <OrderedListItem>
+            <Link href="https://www.spna.nl/nieuws/aanmelden-rassenproeven-2026-granen-en-koolzaad/">Voorbeeld 11</Link>
+            (Afbeelding onderin)
           </OrderedListItem>
           <OrderedListItem>
             <Link href="https://www.nlvoorelkaar.nl/">Voorbeeld 12</Link> (Afbeeldingen bij Talenten en
