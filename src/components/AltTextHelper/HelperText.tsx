@@ -90,10 +90,11 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
             <ImageTextHelperText image={image} />
             <ImageTypeHelperText image={image} />
             <ImageClickableHelperText image={image} />
-            <Heading3>Tip</Heading3>
+            <Heading3>Bouw de alt-tekst in een vaste volgorde op</Heading3>
             <Paragraph>
               Moeten er meerdere onderdelen in de alt-tekst staan? Zet ze dan in een logische volgorde: eerst de tekst
-              in de afbeelding, dan wat er te zien is, daarna wat er gebeurt als iemand erop klikt.
+              in de afbeelding, dan de niet-tekstuele inhoud die te zien is, daarna wat er gebeurt als iemand erop
+              klikt.
             </Paragraph>
           </SpotlightSection>
           {/* <Heading2>Jouw keuzes</Heading2>
@@ -201,7 +202,7 @@ export function ImageTypeDecorativeHelperText() {
     <>
       <Heading3>Laat decoratieve beeldinhoud weg, tenzij het iets toevoegt</Heading3>
       <Paragraph>
-        Omdat de afbeelding alleen decoratief is, hoef je deze niet te beschrijven. Sommige mensen die hulpsoftware
+        Als de afbeelding alleen decoratief is, hoef je deze niet te beschrijven. Sommige mensen die hulpsoftware
         gebruiken vinden het juist prettig om wel een beschrijving te krijgen. Je kunt er daarom voor kiezen om toch een
         alt-tekst toe te voegen. Meer over het beschrijven van sfeerbeelden vind je bij{' '}
         <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
