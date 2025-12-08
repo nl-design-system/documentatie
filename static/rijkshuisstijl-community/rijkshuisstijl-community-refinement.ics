@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 VERSION:2.0
-X-WR-CALNAME:Rijkshuisstijl Community Sprint planning - NL Design System
+X-WR-CALNAME:Rijkshuisstijl Community Refinement - NL Design System
 METHOD:PUBLISH
 PRODID:-//Apple Inc.//macOS 14.1.1//EN
 BEGIN:VTIMEZONE
@@ -23,18 +23,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 TRANSP:OPAQUE
-DTEND;TZID=Europe/Amsterdam:20250703T160000
+DTEND;TZID=Europe/Amsterdam:20250703T144500
 X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
-UID:be43b623-013f-48a3-88ba-03a3d43ba88b
-DTSTAMP:20240610T120000Z
+UID:510a78cb-5d4e-4df5-a461-3dda6d2a6ac7
+DTSTAMP:20251204T140000Z
 LOCATION:https://app.slack.com/huddle/T68FXPFQV/C05AQK9R41G
-DESCRIPTION:Geen zorgen als je er niet bij kan zijn, dit is een optionele community meeting! \n\nJoin als je kunt en als je deze sprint betrokken wilt zijn 😃 \n\nWe doen het in de Slack huddle van #rijkshuisstijl-community. \n\nBekijk het community sprint bord: https://github.com/orgs/nl-design-system/projects/59
+DESCRIPTION:Geen zorgen als je er niet bij kan zijn, dit is een optionele community meeting! \n\nJoin als je kunt en samen issues wilt refinen 😃 \n\nWe doen het in de Slack huddle van #rijkshuisstijl-community.
 X-APPLE-CREATOR-IDENTITY:com.apple.calendar
 SEQUENCE:6
-SUMMARY:Rijkshuisstijl Community Sprint planning - NL Design System
-DTSTART;TZID=Europe/Amsterdam:20250703T150000
+SUMMARY:Rijkshuisstijl Community Refinement - NL Design System
+DTSTART;TZID=Europe/Amsterdam:20251204T140000
 LAST-MODIFIED:20251204T140000Z
-CREATED:20240610T120000Z
+CREATED:20251204T140000Z
 RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH
 END:VEVENT
 END:VCALENDAR
