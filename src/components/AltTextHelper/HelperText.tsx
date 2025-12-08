@@ -1,15 +1,6 @@
 import { SpotlightSection } from '@utrecht/component-library-react';
-import {
-  Heading2,
-  Heading3,
-  Paragraph,
-  PreHeading,
-  // OrderedList,
-  // OrderedListItem,
-  // UnorderedList,
-  // UnorderedListItem,
-  Link,
-} from '@utrecht/component-library-react/dist/css-module';
+import { Heading2, Heading3, Paragraph, PreHeading, Link } from '@utrecht/component-library-react/dist/css-module';
+import { IconFileDescription, IconPhoto, IconSortDescending, IconTarget } from '@tabler/icons-react';
 import { UtrechtIconChevronLeft } from '@utrecht/web-component-library-react';
 
 const groupName = 'helper-text';
@@ -21,46 +12,6 @@ interface HelperTextProps {
   active;
   image;
 }
-
-// const translateType = (type) => {
-//   let translation = '';
-//   switch (type) {
-//     case 'simple':
-//       translation =
-//         'Het is een foto of een eenvoudige illustratie die helpt om de tekst op de pagina beter te begrijpen';
-//       break;
-//     case 'complex':
-//       translation =
-//         'Het is een grafiek, diagram of een andere complexe afbeelding die helpt om de tekst op de pagina beter te begrijpen';
-//       break;
-//     case 'decorative':
-//       translation = 'De afbeelding is alleen toegevoegd om de pagina er mooier uit te laten zien';
-//       break;
-//     case 'functional':
-//       translation = 'De afbeelding wordt als link of knop gebruikt';
-//       break;
-//   }
-//   return translation;
-// };
-
-// const translateTextContent = (content) => {
-//   let text = '';
-//   switch (content) {
-//     case 'text-near-image':
-//       text = 'ook al naast of vlakbij de afbeelding staat';
-//       break;
-//     case 'text-visual-effect':
-//       text = 'alleen bedoeld is voor het visuele effect en geen inhoudelijke betekenis heeft';
-//       break;
-//     case 'text-has-function':
-//       text = 'een functionele rol heeft';
-//       break;
-//     case 'text-only-image':
-//       text = 'nergens anders op de pagina staat beschreven';
-//       break;
-//   }
-//   return text;
-// };
 
 export default function HelperText({ onPrevStep, active, image }: HelperTextProps) {
   if (active === groupName) {
@@ -84,46 +35,14 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
           <SpotlightSection>
             <Heading2>Advies over jouw afbeelding</Heading2>
             <Paragraph>
-              <strong>Let op:</strong> dit advies helpt je op weg, maar deze keuzehulp kan niet alle situaties
-              beoordelen. Controleer daarom altijd zelf of de alt-tekst klopt voor jouw pagina.
+              <strong>Belangrijk:</strong> dit advies is geen verplichting en vervangt geen
+              toegankelijkheidsrichtlijnen. Deze keuzehulp geeft advies over wat je kunt opnemen in een alt-tekst.
             </Paragraph>
             <ImageTextHelperText image={image} />
             <ImageTypeHelperText image={image} />
             <ImageClickableHelperText image={image} />
-            <Heading3>Bouw de alt-tekst in een vaste volgorde op</Heading3>
-            <Paragraph>
-              Moeten er meerdere onderdelen in de alt-tekst staan? Zet ze dan in een logische volgorde: eerst de tekst
-              in de afbeelding, dan de niet-tekstuele inhoud die te zien is, daarna wat er gebeurt als iemand erop
-              klikt.
-            </Paragraph>
+            <AltTextOrderHelperText image={image} />
           </SpotlightSection>
-          {/* <Heading2>Jouw keuzes</Heading2>
-          <Paragraph>Jij hebt het volgende aangegeven over jouw afbeelding</Paragraph>
-          <UnorderedList>
-            <UnorderedListItem>{translateType(image.type)}</UnorderedListItem>
-            {(image.clickable || image.descripted || image.text) && (
-              <>
-                {image.text && (
-                  <UnorderedListItem>
-                    De afbeelding bevat tekst die {translateTextContent(image.content)}.
-                  </UnorderedListItem>
-                )}
-                {image.descripted && (
-                  <UnorderedListItem>De afbeelding staat al beschreven in de buurt.</UnorderedListItem>
-                )}
-                {image.clickable && <UnorderedListItem>Het is óók een link of knop</UnorderedListItem>}
-              </>
-            )}
-          </UnorderedList> */}
-          {/* <Heading3>Algemene richtlijnen voor alt-teksten</Heading3>
-          Het advies hierboven geldt voor jouw afbeelding. De richtlijnen hieronder gelden voor alle alt-teksten.
-          <OrderedList>
-            <OrderedListItem>
-              Beschrijf eerst de tekst in de afbeelding, als die nergens anders op de pagina staat.
-            </OrderedListItem>
-            <OrderedListItem>Beschrijf daarna de afbeelding</OrderedListItem>
-            <OrderedListItem>Beschrijf tot slot de functie, als de afbeelding klikbaar is.</OrderedListItem>
-          </OrderedList> */}
         </div>
       </>
     );
@@ -148,7 +67,12 @@ export function ImageTypeHelperText({ image }: ImageTypeHelperTextProps) {
 export function ImageDescriptionNearbyHelperText() {
   return (
     <>
-      <Heading3>Herhaal geen informatie die al in de buurt staat</Heading3>
+      <Heading3 className="nlds-alt-text-helper-heading-with-icon">
+        <span className="nlds-alt-text-helper-icon" aria-hidden="true">
+          <IconPhoto />
+        </span>
+        Herhaal geen informatie die al in de buurt staat
+      </Heading3>
       <Paragraph>
         Omdat de tekst die de afbeelding uitlegt al bij de afbeelding staat, hoeft die informatie niet opnieuw in de
         alt-tekst. Je kunt wel iets extra's toevoegen als dat echt helpt. Voorbeeld: staat de naam van een persoon onder
@@ -166,7 +90,12 @@ export function ImageDescriptionNearbyHelperText() {
 export function ImageTypeSimpleHelperText() {
   return (
     <>
-      <Heading3>Beschrijf wat er te zien is</Heading3>
+      <Heading3 className="nlds-alt-text-helper-heading-with-icon">
+        <span className="nlds-alt-text-helper-icon" aria-hidden="true">
+          <IconPhoto />
+        </span>
+        Beschrijf wat er te zien is
+      </Heading3>
       <Paragraph>
         Omdat dit een foto of eenvoudige illustratie is moet in het veld voor alternatieve tekst een korte beschrijving
         worden gegeven van wat er te zien is. Bijvoorbeeld: “Twee mensen in gesprek” of “Logo van gemeente X”.
@@ -182,7 +111,12 @@ export function ImageTypeSimpleHelperText() {
 export function ImageTypeComplexHelperText() {
   return (
     <>
-      <Heading3>Plaats een uitgebreide beschrijving in de buurt van de afbeelding</Heading3>
+      <Heading3 className="nlds-alt-text-helper-heading-with-icon">
+        <span className="nlds-alt-text-helper-icon" aria-hidden="true">
+          <IconPhoto />
+        </span>
+        Plaats een uitgebreide beschrijving in de buurt van de afbeelding
+      </Heading3>
       <Paragraph>
         Omdat de afbeelding veel informatie bevat die niet in één korte beschrijving past moet een uitgebreide
         beschrijving worden toegevoegd naast of onder de afbeelding. Zet in het veld voor alternatieve tekst een korte
@@ -200,7 +134,12 @@ export function ImageTypeComplexHelperText() {
 export function ImageTypeDecorativeHelperText() {
   return (
     <>
-      <Heading3>Laat decoratieve beeldinhoud weg, tenzij het iets toevoegt</Heading3>
+      <Heading3 className="nlds-alt-text-helper-heading-with-icon">
+        <span className="nlds-alt-text-helper-icon" aria-hidden="true">
+          <IconPhoto />
+        </span>
+        Laat decoratieve beeldinhoud weg, tenzij het iets toevoegt
+      </Heading3>
       <Paragraph>
         Als de afbeelding alleen decoratief is, hoef je deze niet te beschrijven. Sommige mensen die hulpsoftware
         gebruiken vinden het juist prettig om wel een beschrijving te krijgen. Je kunt er daarom voor kiezen om toch een
@@ -255,7 +194,12 @@ export function ImageTextHelperText({ image }: ImageTextHelperTextProps) {
     const helper = currentHelperText(image.content);
     return (
       <>
-        <Heading3>{helper.header}</Heading3>
+        <Heading3 className="nlds-alt-text-helper-heading-with-icon">
+          <span className="nlds-alt-text-helper-icon" aria-hidden="true">
+            <IconFileDescription />
+          </span>
+          {helper.header}
+        </Heading3>
         <Paragraph>{helper.content} </Paragraph>
         <Paragraph>
           <a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/">
@@ -275,7 +219,12 @@ export function ImageClickableHelperText({ image }: ImageClickableHelperTextProp
   if (image.clickable || image.type === 'functional') {
     return (
       <>
-        <Heading3>Beschrijf wat er gebeurt als iemand op de afbeelding klikt</Heading3>
+        <Heading3 className="nlds-alt-text-helper-heading-with-icon">
+          <span className="nlds-alt-text-helper-icon" aria-hidden="true">
+            <IconTarget />
+          </span>
+          Beschrijf wat er gebeurt als iemand op de afbeelding klikt
+        </Heading3>
         <Paragraph>
           Omdat de afbeelding een link of knop is moet in de alt-tekst duidelijk worden aangegeven wat er gebeurt als
           iemand erop klikt. Bijvoorbeeld:“Bekijk productinformatie” of “Ga naar de contactpagina”.
@@ -286,6 +235,29 @@ export function ImageClickableHelperText({ image }: ImageClickableHelperTextProp
             overwegingen bij functionele afbeeldingen
           </a>
           .
+        </Paragraph>
+      </>
+    );
+  }
+}
+
+interface AltTextOrderHelperTextProps {
+  image;
+}
+
+export function AltTextOrderHelperText({ image }: AltTextOrderHelperTextProps) {
+  if (image.text || image.descripted || image.clickable) {
+    return (
+      <>
+        <Heading3 className="nlds-alt-text-helper-heading-with-icon">
+          <span className="nlds-alt-text-helper-icon" aria-hidden="true">
+            <IconSortDescending />
+          </span>
+          Bouw de alt-tekst in een vaste volgorde op
+        </Heading3>
+        <Paragraph>
+          Moeten er meerdere onderdelen in de alt-tekst staan? Zet ze dan in een logische volgorde: eerst de tekst in de
+          afbeelding, dan de niet-tekstuele inhoud die te zien is, daarna wat er gebeurt als iemand erop klikt.
         </Paragraph>
       </>
     );
