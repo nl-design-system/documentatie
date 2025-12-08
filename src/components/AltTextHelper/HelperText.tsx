@@ -35,8 +35,9 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
           <SpotlightSection>
             <Heading2>Advies over jouw afbeelding</Heading2>
             <Paragraph>
-              <strong>Belangrijk:</strong> dit advies is geen verplichting en vervangt geen
-              toegankelijkheidsrichtlijnen. Deze keuzehulp geeft advies over wat je kunt opnemen in een alt-tekst.
+              <strong>Belangrijk:</strong> dit advies is geen wettelijke verplichting en geen vervanging voor de{' '}
+              <a href="https://www.w3.org/TR/WCAG21/">wettelijk geldende WCAG 2.1 specificatie</a>. Deze keuzehulp is
+              een praktisch hulpmiddel bij het opstellen van een alt-tekst.
             </Paragraph>
             <ImageTextHelperText image={image} />
             <ImageTypeHelperText image={image} />
@@ -143,7 +144,10 @@ export function ImageTypeDecorativeHelperText() {
       <Paragraph>
         Als de afbeelding alleen decoratief is, hoef je deze niet te beschrijven. Sommige mensen die hulpsoftware
         gebruiken vinden het juist prettig om wel een beschrijving te krijgen. Je kunt er daarom voor kiezen om toch een
-        alt-tekst toe te voegen. Meer over het beschrijven van sfeerbeelden vind je bij{' '}
+        alt-tekst toe te voegen.
+      </Paragraph>
+      <Paragraph>
+        Meer over het beschrijven van sfeerbeelden vind je bij{' '}
         <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
           de richtlijnen voor decoratieve afbeeldingen
         </a>
@@ -230,7 +234,7 @@ export function ImageClickableHelperText({ image }: ImageClickableHelperTextProp
           iemand erop klikt. Bijvoorbeeld:“Bekijk productinformatie” of “Ga naar de contactpagina”.
         </Paragraph>
         <Paragraph>
-          Weet je niet precies wat je moet beschrijven? Bekijk dan de{' '}
+          Weet je niet precies wat je moet aangeven als doel? Bekijk dan de{' '}
           <a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/#overwegingen">
             overwegingen bij functionele afbeeldingen
           </a>
