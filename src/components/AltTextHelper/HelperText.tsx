@@ -90,6 +90,11 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
             <ImageTextHelperText image={image} />
             <ImageTypeHelperText image={image} />
             <ImageClickableHelperText image={image} />
+            <Heading3>Tip</Heading3>
+            <Paragraph>
+              Moeten er meerdere onderdelen in de alt-tekst staan? Zet ze dan in een logische volgorde: eerst de tekst
+              in de afbeelding, dan wat er te zien is, daarna wat er gebeurt als iemand erop klikt.
+            </Paragraph>
           </SpotlightSection>
           {/* <Heading2>Jouw keuzes</Heading2>
           <Paragraph>Jij hebt het volgende aangegeven over jouw afbeelding</Paragraph>
@@ -142,12 +147,12 @@ export function ImageTypeHelperText({ image }: ImageTypeHelperTextProps) {
 export function ImageDescriptionNearbyHelperText() {
   return (
     <>
-      <Heading3>De afbeelding hoeft niet te worden beschreven</Heading3>
+      <Heading3>Herhaal geen informatie die al in de buurt staat</Heading3>
       <Paragraph>
-        Omdat de tekst die de afbeelding beschrijft al in de buurt van de afbeelding staat, hoeft die informatie niet
-        opnieuw te worden beschreven in de alt-tekst. Je mag wel een aanvullende beschrijving toevoegen als die echt
-        iets toevoegt. Bijvoorbeeld: Staat de naam van een persoon onder de foto, dan hoeft die niet in de alt-tekst. Je
-        kunt wel kort beschrijven hoe de persoon eruitziet, zodat iedereen een beeld krijgt.
+        Omdat de tekst die de afbeelding uitlegt al bij de afbeelding staat, hoeft die informatie niet opnieuw in de
+        alt-tekst. Je kunt wel iets extra's toevoegen als dat echt helpt. Voorbeeld: staat de naam van een persoon onder
+        de foto, dan hoeft die niet in de alt-tekst. Je kunt wel kort beschrijven hoe de persoon eruitziet, zodat
+        iedereen een beeld krijgt.
       </Paragraph>
       <Paragraph>
         Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk{' '}
@@ -160,7 +165,7 @@ export function ImageDescriptionNearbyHelperText() {
 export function ImageTypeSimpleHelperText() {
   return (
     <>
-      <Heading3>Beschrijf de afbeelding</Heading3>
+      <Heading3>Beschrijf wat er te zien is</Heading3>
       <Paragraph>
         Omdat dit een foto of eenvoudige illustratie is moet in het veld voor alternatieve tekst een korte beschrijving
         worden gegeven van wat er te zien is. Bijvoorbeeld: “Twee mensen in gesprek” of “Logo van gemeente X”.
@@ -194,12 +199,11 @@ export function ImageTypeComplexHelperText() {
 export function ImageTypeDecorativeHelperText() {
   return (
     <>
-      <Heading3>De afbeelding hoeft niet te worden beschreven</Heading3>
+      <Heading3>Laat decoratieve beeldinhoud weg, tenzij het iets toevoegt</Heading3>
       <Paragraph>
-        Omdat de afbeelding alleen decoratief is hoeft de afbeelding zelf niet te worden beschreven. Sommige bezoekers
-        die gebruikmaken van hulpsoftware willen juist wel een beschrijving krijgen van een decoratieve afbeelding. Je
-        kunt er dus ook voor kiezen om jouw afbeelding wel een alternatieve tekst te geven. Meer over het beschrijven
-        van sfeerbeelden vind je bij{' '}
+        Omdat de afbeelding alleen decoratief is, hoef je deze niet te beschrijven. Sommige mensen die hulpsoftware
+        gebruiken vinden het juist prettig om wel een beschrijving te krijgen. Je kunt er daarom voor kiezen om toch een
+        alt-tekst toe te voegen. Meer over het beschrijven van sfeerbeelden vind je bij{' '}
         <a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/">
           de richtlijnen voor decoratieve afbeeldingen
         </a>
