@@ -30,6 +30,125 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 6.1.0
+
+8 december 2025
+
+Community component ‘Dot Badge’ van de Rijkshuisstijl Community is toegevoegd aan de bibliotheek.
+
+- [Bekijk Dot Badge in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=26446-751&p=f&t=F0dOHDfj3p44238U-11).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "rhc": {
+    "dot-badge": {
+      "block-size": {
+        "$type": "dimension",
+        "$value": "{basis.size.3xs}"
+      },
+      "border-radius": {
+        "$type": "dimension",
+        "$value": "{basis.border-radius.round}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.accent-1-inverse.bg-default}"
+      },
+      "inline-size": {
+        "$type": "dimension",
+        "$value": "{basis.size.3xs}"
+      }
+    }
+  }
+}
+```
+
+## 6.0.0
+
+8 december 2025
+
+Community component ‘Avatar’ van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+Daarnaast is de todo-avatar verwijderd uit de ToDo Bibliotheek, inclusief alle bijbehorende design tokens.
+
+Wat moet je doen?
+
+- Ga naar de pagina 'Avatar' in de ToDo Bibliotheek.
+- Verwijder de volledige pagina.
+- Publiceer de ToDo Bibliotheek.
+- Ga naar de algemene Bibliotheek.
+- Open Tokens Studio.
+- Ga naar de tokenset `avatar`.
+- Vervang de todo tokens door de onderstaande design tokens van Amsterdam.
+- Voeg de [Avatar component van Amsterdam](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=26430-26780&p=f&t=lTgQH4BYbg5NeEV2-11) toe aan de bibliotheek van jouw organisatie.
+- Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+```json
+{
+  "ams": {
+    "avatar": {
+      "aspect-ratio": {
+        "$type": "other",
+        "$value": "1 / 1",
+        "$description": "[code-only]"
+      },
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.accent-1-inverse.bg-default}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.transparent}"
+      },
+      "border-style": {
+        "$type": "other",
+        "$value": "solid",
+        "$description": "[code-only]"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.border-width.sm}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.accent-1-inverse.color-default}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{basis.text.font-family.default}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{basis.text.font-size.md}"
+      },
+      "inline-size": {
+        "$type": "dimension",
+        "$value": "{basis.pointer-target.min-inline-size}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{basis.text.line-height.md}"
+      },
+      "padding-block": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "has-image": {
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-inline-size}"
+        }
+      }
+    }
+  }
+}
+```
+
 ## 5.2.2
 
 1 december 2025
@@ -1006,7 +1125,7 @@ Om dit te voorkomen willen we de naam van de property voor tekst zoveel mogelijk
   - [Paragraph (Community component van Utrecht. Inclusief 'Lead' en 'Small print')](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=839-688&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
   - [Pre-heading](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=17537-2847&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
   - [Skip Link (Community component van Utrecht)](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2218-10179&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
-  - [Text Input](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=926-1497&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
+  - [Text Input](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=926-1497&t=18Ezmc7A328eD1BQ-4): 'Value' wordt 'Text'.
   - [Unordered List](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=828-935&t=18Ezmc7A328eD1BQ-4): 'Children' wordt 'Text'.
 - Publiceer de Bibliotheek.
 - Accepteer de aanpassingen in de ToDo Bibliotheek.
