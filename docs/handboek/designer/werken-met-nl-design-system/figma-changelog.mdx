@@ -30,6 +30,91 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 6.0.0
+
+8 december 2025
+
+Community component ‘Avatar’ van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+Daarnaast is de todo-avatar verwijderd uit de ToDo Bibliotheek, inclusief alle bijbehorende design tokens.
+
+Wat moet je doen?
+
+- Ga naar de pagina 'Avatar' in de ToDo Bibliotheek.
+- Verwijder de volledige pagina.
+- Publiceer de ToDo Bibliotheek.
+- Ga naar de algemene Bibliotheek.
+- Open Tokens Studio.
+- Ga naar de tokenset `avatar`.
+- Vervang de todo tokens door de onderstaande design tokens van Amsterdam.
+- Voeg de [Avatar component van Amsterdam](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=26430-26780&p=f&t=lTgQH4BYbg5NeEV2-11) toe aan de bibliotheek van jouw organisatie.
+- Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+```json
+{
+  "ams": {
+    "avatar": {
+      "aspect-ratio": {
+        "$type": "other",
+        "$value": "1 / 1",
+        "$description": "[code-only]"
+      },
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.accent-1-inverse.bg-default}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.transparent}"
+      },
+      "border-style": {
+        "$type": "other",
+        "$value": "solid",
+        "$description": "[code-only]"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.border-width.sm}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.accent-1-inverse.color-default}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{basis.text.font-family.default}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{basis.text.font-size.md}"
+      },
+      "inline-size": {
+        "$type": "dimension",
+        "$value": "{basis.pointer-target.min-inline-size}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{basis.text.line-height.md}"
+      },
+      "padding-block": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "has-image": {
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-inline-size}"
+        }
+      }
+    }
+  }
+}
+```
+
 ## 5.2.2
 
 1 december 2025
