@@ -75,10 +75,10 @@ export function ImageDescriptionNearbyHelperText() {
         Herhaal geen informatie die al in de buurt staat
       </Heading3>
       <Paragraph>
-        Omdat de tekst die de afbeelding uitlegt al bij de afbeelding staat, hoeft die informatie niet opnieuw in de
-        alt-tekst. Je kunt wel iets extra's toevoegen als dat echt helpt. Voorbeeld: staat de naam van een persoon onder
-        de foto, dan hoeft die niet in de alt-tekst. Je kunt wel kort beschrijven hoe de persoon eruitziet, zodat
-        iedereen een beeld krijgt.
+        Omdat er al een tekst die uitlegt wat er te zien is in de buurt van de afbeelding staat, hoeft die informatie
+        niet opnieuw in de alt-tekst. Je kunt wel iets extra's toevoegen als dat echt helpt. Voorbeeld: staat de naam
+        van een persoon onder de foto, dan hoeft die niet in de alt-tekst. Je kunt wel kort beschrijven hoe de persoon
+        eruitziet, zodat iedereen een beeld krijgt.
       </Paragraph>
       <Paragraph>
         Wil je weten hoe je een goede alt-tekst schrijft en controleert? Bekijk{' '}
