@@ -28,8 +28,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f39fce95.css" />
-  <script src="/assets/js/runtime~main.05876bf6.js" defer="defer"></script>
-  <script src="/assets/js/main.3b067d73.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.d166e73a.js" defer="defer"></script>
+  <script src="/assets/js/main.16880981.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -52,18 +52,34 @@
    })(),
     (function () {
      try {
-      const c = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of c)
+      const a = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of a)
        if (t.startsWith('docusaurus-data-')) {
-        var a = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(a, e);
+        var n = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(n, e);
        }
      } catch (t) {}
-    })();
+    })(),
+    document.documentElement.setAttribute(
+     'data-announcement-bar-initially-dismissed',
+     (function () {
+      try {
+       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
+      } catch (t) {}
+      return !1;
+     })(),
+    );
   </script>
   <div id="__docusaurus">
    <div class="utrecht-page-layout ma-theme">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_W6BK" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <div class="announcementBar_Z2CV" style="background-color: var(--basis-color-accent-1-inverse-bg-subtle); color: var(--basis-color-accent-1-inverse-color-default)" role="banner">
+     <div class="content_sx25 announcementBarContent_k4U2">
+      <div class="announcementbar-content">
+       <span class="utrecht-icon"><img alt="" src="/svg/tabler-icon_mega.svg" /></span> Help jij NL Design System in 2026 nog beter te maken? <a href="/enquete-2025" class="utrecht-link utrecht-link--html-a">Vul dan voor 30 december deze enquête in</a>
+      </div>
+     </div>
+    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbarHideable_Zt5y">
      <div class="navbar__inner">
       <div class="navbar__items">
@@ -94,7 +110,7 @@
         <div class="sidebarViewport_UixC">
          <div class="sidebar_tRXa sidebarWithHideableNavbar_T0kH">
           <a tabindex="-1" class="sidebarLogo_SHUK" href="/"><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_lZiy themedComponent--light_RvSh" /><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_lZiy themedComponent--dark_lYYl" /><b></b></a>
-          <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_AEhb">
+          <nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_AEhb menuWithAnnouncementBar_hzD8">
            <ul class="theme-doc-sidebar-menu menu__list">
             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item sidebar__main-category">
              <div class="menu__list-item-collapsible"><a class="menu__link menu__link--active">Componenten</a></div>
@@ -492,14 +508,602 @@
                   </li>
                   <li class="task-list-item">
                    <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3"></h4></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ CSS component</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ Figma component</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ Voorbeeld thema</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ Documentatie</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Design Tokens getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🧪 A11y getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Testcases gebruik getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Thema&#x27;s getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Internationalisatie getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Documentatie getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🚀 NPM - React</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🚀 NPM - CSS</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🚀 NPM - Docs</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🚀 NPM - Design Tokens</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🚀 Figma - Start Bibliotheek</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🚀 Figma - Voorbeeld Bibliotheek</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🚀 nldesignsystem.nl</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">🚀 Themes repository</h4></div>
+                  </li>
+                 </ul>
+                 <p class="utrecht-paragraph">
+                  <a href="https://github.com/orgs/nl-design-system/projects/80?filterQuery=Login Link" class="utrecht-link utrecht-link--html-a"
+                   >Candidate<!-- -->
+                   projectbord op GitHub</a
+                  >
+                 </p>
+                </div>
+               </div>
+              </div>
+              <h2 id="community-implementaties" class="utrecht-heading-2">Community implementaties</h2>
+              <div class="cardgroup cardgroup--large implementation-card-group">
+               <div class="cardgroup__card cardgroup__card--undefined implementation-card">
+                <div class="card__content">
+                 <h3 class="utrecht-heading-3">Logius</h3>
+                 <p class="utrecht-paragraph">
+                  11<!-- -->
+                  van
+                  <!-- -->11<!-- -->
+                  stappen gedocumenteerd op het<!-- -->
+                  <a href="https://github.com/orgs/nl-design-system/projects/53" class="utrecht-link utrecht-link--html-a"
+                   >Community Logius<!-- -->
+                   projectbord</a
+                  >
+                 </p>
+                 <h4 class="utrecht-heading-4">Snel aan de slag</h4>
+                 <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
+                  <li class="utrecht-link-list__item">
+                   <a href="https://www.figma.com/design/515tboh6xpSNziwQu6WyAy/LUX---UI-kit?node-id=1125-2&amp;node-type=canvas&amp;t=0cLdeQMnLROFWXIO-11" class="utrecht-link utrecht-link--html-a utrecht-link-list__link"
+                    ><span class="utrecht-icon" role="presentation" aria-hidden="true"
+                     ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-figma" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <circle cx="15" cy="12" r="3"></circle>
+                      <rect x="6" y="3" width="12" height="6" rx="3"></rect>
+                      <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15"></path></svg></span
+                    ><span class="utrecht-link-list__link-text">lux-login-link in Figma</span></a
+                   >
+                  </li>
+                  <li class="utrecht-link-list__item">
+                   <a href="https://nl-design-system.github.io/themes/?path=/story/lux-login-link--lux-theme" class="utrecht-link utrecht-link--html-a utrecht-link-list__link"
+                    ><span class="utrecht-icon" role="presentation" aria-hidden="true"
+                     ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-storybook" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 4l.5 16.5l13.5 .5v-18z"></path>
+                      <path d="M9 15c.6 1.5 1.639 2 3.283 2h-.283c1.8 0 3 -.974 3 -2.435c0 -1.194 -.831 -1.799 -2.147 -2.333l-1.975 -.802c-1.15 -.467 -1.878 -1.422 -1.878 -2.467c0 -.97 .899 -1.786 2.087 -1.893l.613 -.055c1.528 -.138 2.999 .762 3.3 1.985"></path>
+                      <path d="M16 3.5v1"></path></svg></span
+                    ><span class="utrecht-link-list__link-text">lux-login-link voor visuele regressie tests</span></a
+                   >
+                  </li>
+                 </ul>
+                 <h5 class="utrecht-heading-5">
+                  lux-login-link<!-- -->
+                  in
+                  <!-- -->CSS
+                 </h5>
+                 <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
+                  <li class="utrecht-link-list__item">
+                   <a href="https://www.npmjs.com/package/@lux-design-system/design-tokens" class="utrecht-link utrecht-link--html-a utrecht-link-list__link"
+                    ><span class="utrecht-icon" role="presentation" aria-hidden="true"
+                     ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-npm" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M1 8h22v7h-12v2h-4v-2h-6z"></path>
+                      <path d="M7 8v7"></path>
+                      <path d="M14 8v7"></path>
+                      <path d="M17 11v4"></path>
+                      <path d="M4 11v4"></path>
+                      <path d="M11 11v1"></path>
+                      <path d="M20 11v4"></path></svg></span
+                    ><span class="utrecht-link-list__link-text">lux-login-link (CSS) op NPM</span></a
+                   >
+                  </li>
+                  <li class="utrecht-link-list__item">
+                   <a href="https://github.com/nl-design-system/lux/blob/main/packages/web-components-stencil/src/components/login-link/login-link.scss" class="utrecht-link utrecht-link--html-a utrecht-link-list__link"
+                    ><span class="utrecht-icon" role="presentation" aria-hidden="true"
+                     ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></span
+                    ><span class="utrecht-link-list__link-text">lux-login-link (CSS) op GitHub</span></a
+                   >
+                  </li>
+                  <li class="utrecht-link-list__item">
+                   <a href="https://nl-design-system.github.io/lux/?path=/docs/web-components-login-link--docs" class="utrecht-link utrecht-link--html-a utrecht-link-list__link"
+                    ><span class="utrecht-icon" role="presentation" aria-hidden="true"
+                     ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-storybook" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 4l.5 16.5l13.5 .5v-18z"></path>
+                      <path d="M9 15c.6 1.5 1.639 2 3.283 2h-.283c1.8 0 3 -.974 3 -2.435c0 -1.194 -.831 -1.799 -2.147 -2.333l-1.975 -.802c-1.15 -.467 -1.878 -1.422 -1.878 -2.467c0 -.97 .899 -1.786 2.087 -1.893l.613 -.055c1.528 -.138 2.999 .762 3.3 1.985"></path>
+                      <path d="M16 3.5v1"></path></svg></span
+                    ><span class="utrecht-link-list__link-text">lux-login-link (CSS) in Storybook van Community Logius}</span></a
+                   >
                   </li>
                  </ul>
                 </div>
                </div>
+               <div class="cardgroup__card cardgroup__card--undefined implementation-card">
+                <div class="card__content">
+                 <h3 class="utrecht-heading-3">Den Haag</h3>
+                 <p class="utrecht-paragraph">
+                  1<!-- -->
+                  van
+                  <!-- -->11<!-- -->
+                  stappen gedocumenteerd op het<!-- -->
+                  <a href="https://github.com/orgs/nl-design-system/projects/55" class="utrecht-link utrecht-link--html-a"
+                   >Community Den Haag<!-- -->
+                   projectbord</a
+                  >
+                 </p>
+                </div>
+               </div>
               </div>
+              <h2 id="acceptatiecriteria" class="utrecht-heading-2">Acceptatiecriteria</h2>
+              <p>Gebruik jij één van de implementaties van deze component of heb je je eigen component gemaakt? In beide gevallen geldt: met onderstaande acceptatiecriteria kun je nagaan of jouw gebruik van deze component klopt met NL Design System.</p>
+              <p>Als je implementatie voldoet aan de acceptatiecriteria voor deze component, kun je er vanuit gaan dat je gebruik van deze component voldoet aan WCAG, niveau A en AA.</p>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object],[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3amhralaqh:-panel" id="utrecht-accordion:R3amhralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid algemeen</span></span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:R3amhralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.5/" class="utrecht-link utrecht-link--html-a">1.4.5 Afbeeldingen van tekst</a></dd>
+                  </dl>
+                  <p>Laat tekst buiten afbeeldingen.</p>
+                  <p>Als je losse tekst een vergelijkbaar uiterlijk kan geven als in een afbeelding, laat het dan losse tekst zijn. Er is een uitzondering als de tekst onderdeel is van een logo.</p>
+                  <p>Sommige mensen hebben teksten nodig met een ander uiterlijk. Dit kan bij losse tekst en niet bij afbeeldingen.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.4/" class="utrecht-link utrecht-link--html-a">2.4.4 Linkdoel (in context)</a></dd>
+                  </dl>
+                  <p>De linktekst vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).</p>
+                  <p>Wat is een <strong>linktekst</strong>? Het is de tekst die zichtbaar is, maar ook de tekst die aan een gebruiker van hulpsoftware wordt voorgelezen.</p>
+                  <p>Wat is het <strong>linkdoel</strong>? De locatie waar de link naartoe gaat. Bijvoorbeeld de contactpagina, een nieuwsbericht, een andere website of een download van een document.</p>
+                  <p>Wat betekent <strong>In context</strong>? Het doel van de link kan ook door omringende content worden aangegeven. Dit moet dan wel ook voor gebruikers van hulpmiddelen duidelijk zijn, bijvoorbeeld door aanvullende tekst of een afbeelding naast de link. Dit laatste is onderwerp van veel discussie. Het beste is om altijd goed in de linktekst zelf te vertellen want het doel is.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.2/" class="utrecht-link utrecht-link--html-a">2.5.2 Aanwijzerannulering</a></dd>
+                  </dl>
+                  <p>Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.</p>
+                  <p>Gebruik hiervoor het <code class="utrecht-code">click</code>-event. Dit is een apparaatonafhankelijke methode. Zo activeert de actie niet als de bezoeker de aanwijzer indrukt, maar pas als de bezoeker de aanwijzer weer loslaat. De bezoeker kan de aanwijzer nog verplaatsen naar buiten het element om de actie weer ongedaan te maken.</p>
+                  <p>Voor knoppen waarbij het essentieel is dat ze activeren bij het indrukken (<code class="utrecht-code">keydown</code>) geldt een uitzondering. Dit geldt bijvoorbeeld voor knoppen in een <a href="https://en.wikipedia.org/wiki/Virtual_keyboard" class="utrecht-link utrecht-link--html-a">schermtoetsenbord</a> en pianotoetsen.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De zichtbare naam van de Login Link komt voor in de toegankelijke naam</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.3/" class="utrecht-link utrecht-link--html-a">2.5.3 Label in naam</a></dd>
+                  </dl>
+                  <p>De zichtbare naam van de link is gelijk aan, of begint met de <a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name" class="utrecht-link utrecht-link--html-a">toegankelijke naam</a>.</p>
+                  <p>Dit is het eenvoudigst te realiseren door een <code class="utrecht-code">a</code>-element te gebruiken met daarin tekst.</p>
+                  <p>Pas op met het gebruik van <code class="utrecht-code">aria-label</code> om een naam te geven aan een link. Een <code class="utrecht-code">aria-label</code> overschrijft de tekstinhoud van een link. Zodoende kan een link een toegankelijke naam krijgen die anders is dan de zichtbare naam, waardoor mensen die hulpsoftware gebruiken moeilijkheden kunnen krijgen met het bedienen van de link. Als je echt een <code class="utrecht-code">aria-label</code> nodig hebt, zorg dan dat de waarde van het <code class="utrecht-code">aria-label</code> begint met de exacte tekst die zichtbaar is in de link.</p>
+                  <p>Dus niet:</p>
+                  <span hidden="" id=":R9snamhralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9snamhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!-- Foute code, niet gebruiken --&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">login-url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">Klik hier om in te loggen</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Log in met DigiD</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                  <p>Maar:</p>
+                  <span hidden="" id=":Rdsnamhralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdsnamhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">login-url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Log in met DigiD</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/labels/zichtbare-naam/" class="utrecht-link utrecht-link--html-a">De zichtbare naam moet overeenkomen met de toegankelijke naam</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als de tekst van de Login Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/3.1.2/" class="utrecht-link utrecht-link--html-a">3.1.2 Taal van onderdelen</a></dd>
+                  </dl>
+                  <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
+                  <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/content/tekstopmaak/taal/" class="utrecht-link utrecht-link--html-a">De juiste taal instellen</a></li>
+                  </ul>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3auhralaqh:-panel" id="utrecht-accordion:R3auhralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid visueel ontwerp</span></span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:R3auhralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De contrastverhouding van de tekstkleur in Login Link met de achtergrondkleur is hoog genoeg.</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.3/" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></dd>
+                  </dl>
+                  <p>De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li>4,5:1 contrast voor normale tekst.</li>
+                   <li>3:1 contrast voor grotere letters (vanaf 24 pixels).</li>
+                   <li>3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
+                  </ul>
+                  <p>Hogere verhoudingen mogen natuurlijk altijd. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/kleuren/contrast-tekst/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond</a></li>
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Geef tekst voldoende kleurcontrast</a></li>
+                   <li><a href="/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/" class="utrecht-link utrecht-link--html-a">Gebruik van kleur in tekst</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als het zichtbare label van de Login Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.11/" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a></dd>
+                  </dl>
+                  <p>Als de inhoud van de link niet uit tekst bestaat, maar uit bijvoorbeeld een icoon of logo dan moet het aanklikbare gedeelte goed te onderscheiden zijn. Het contrast tussen een icoon, of kader rond een logo, en de achtergrond moet minimaal 3:1 zijn. Dit is te controleren met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a>.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Login Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.5.5/" class="utrecht-link utrecht-link--html-a">2.5.5 Grootte van het aanwijsgebied (uitgebreid)</a></dd>
+                  </dl>
+                  <p>Zorg ervoor dat het element een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>. Anders kan het element niet goed meegroeien wanneer de gebruiker inzoomt.</p>
+                  <p><strong>Let op</strong>: Links in zinnen en paragrafen van tekst zijn uitgezonderd. De grootte van het aanwijsgebied is hier afhankelijk van de grootte van de linktekst zelf.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/" class="utrecht-link utrecht-link--html-a">Maak aanklikbare formuliervelden groot genoeg</a></li>
+                   <li><a href="/richtlijnen/stijl/ruimte/interactieve-elementen/" class="utrecht-link utrecht-link--html-a">Reserveer ruimte tussen interactieve elementen</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Login Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/3.2.4/" class="utrecht-link utrecht-link--html-a">3.2.4 Consistente identificatie</a></dd>
+                  </dl>
+                  <p>Login Links die dezelfde functie hebben binnen een website, zien er hetzelfde uit en werken ook hetzelfde.</p>
+                  <p>Logius geeft voor het inloggen met DigiD, eHerkenning en European login &quot;Opmaakrichtlijnen voor inlogmiddelknoppen&quot; in de <a href="https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang" class="utrecht-link utrecht-link--html-a">Stijlhandleiding aansluiten Toegang</a>.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/iconen/respecteer-conventies/" class="utrecht-link utrecht-link--html-a">Respecteer conventies</a></li>
+                  </ul>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3b6hralaqh:-panel" id="utrecht-accordion:R3b6hralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid zoom en herschalen</span></span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:R3b6hralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.4/" class="utrecht-link utrecht-link--html-a">1.4.4 Herschalen van tekst</a></dd>
+                  </dl>
+                  <p>Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.</p>
+                  <p>Zorg ervoor dat het component meegroeit met de tekst. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>.</p>
+                  <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">word-break: break-word; hyphens: auto;</code> in combinatie met <code class="utrecht-code">text-wrap-style: pretty</code> of <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur niet alleen op de specifieke styling van het element of component, maar op globaal (<code class="utrecht-code">:root</code>) niveau.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur/" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/lettergrootte/" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.4.12/" class="utrecht-link utrecht-link--html-a">1.4.12 Tekstafstand</a></dd>
+                  </dl>
+                  <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden. Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier buttons voor te maken in de website zelf.</p>
+                  <p>Zorg ervoor dat de component mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                  <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">word-break: break-word; hyphens: auto;</code> in combinatie met <code class="utrecht-code">text-wrap-style: pretty</code> of <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur niet alleen op de specifieke styling van het element of component, maar op globaal (<code class="utrecht-code">:root</code>) niveau.</p>
+                  <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte.</li>
+                   <li>Afstand tussen alinea&#x27;s naar ten minste 2 keer de lettergrootte.</li>
+                   <li>Letterafstand (spatiëren van letters) naar ten minste 0,12 keer de lettergrootte.</li>
+                   <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
+                  </ul>
+                  <p>Dit is te testen met een extensie zoals Stylus of User CSS, een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
+                  <span hidden="" id=":R6unb6hralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R6unb6hralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body *</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">line-height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1.5</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">letter-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.12</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">word-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.16</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body p</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">margin-bottom</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">2</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">&lt;/style&gt;</span>
+</span></code></pre>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur/" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/lettergrootte/" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/regelafstand/" class="utrecht-link utrecht-link--html-a">Zorg voor een comfortabele regelafstand</a></li>
+                  </ul>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object],[object Object],[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3behralaqh:-panel" id="utrecht-accordion:R3behralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid toetsenbord</span></span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:R3behralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Je kunt de Login Link focussen met de tabtoets en activeren met de entertoets</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.1.1/" class="utrecht-link utrecht-link--html-a">2.1.1 Toetsenbord</a></dd>
+                  </dl>
+                  <p>Je kunt de link focussen met de tabtoets (en in omgekeerde richting met shift + tabtoets) en activeren met de entertoets. Als je gebruik maakt van het <code class="utrecht-code">a</code>-element hoef je hier niets aan aan te passen.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De functionaliteit van de Login Link veroorzaakt geen toetsenbordval</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.1.2/" class="utrecht-link utrecht-link--html-a">2.1.2 Geen toetsenbordval</a></dd>
+                  </dl>
+                  <p>Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.</p>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.7/" class="utrecht-link utrecht-link--html-a">2.4.7 Focus zichtbaar</a></dd>
+                  </dl>
+                  <p>Wanneer het element de toetsenbordfocus krijgt is de focus zichtbaar.</p>
+                  <p>Verberg de standaard browserfocusstijl nooit met <code class="utrecht-code">outline:none</code> zonder er een goede focusstijl voor in de plaats te zetten die rekening houdt met goede zichtbaarheid.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Maak toetsenbordfocus goed zichtbaar</a></li>
+                   <li><a href="/richtlijnen/stijl/kleuren/voorkeuren/" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor kleur</a></li>
+                   <li><a href="/richtlijnen/stijl/typografie/voorkeur/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor niet-tekstuele content</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als de Login Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/2.4.11/" class="utrecht-link utrecht-link--html-a">2.4.11 Focus niet bedekt (minimum)</a></dd>
+                  </dl>
+                  <p>Een onderdeel dat toetsenbordfocus heeft mag niet volledig bedekt zijn.</p>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section utrecht-accordion--nlds-subtle" body="[object Object],[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R3bmhralaqh:-panel" id="utrecht-accordion:R3bmhralaqh:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label"><span>Toegankelijkheid screenreader</span></span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:R3bmhralaqh:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">Als het label van de Login Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a">1.1.1 Niet-tekstuele content</a></dd>
+                  </dl>
+                  <p>Als het label van de link alleen uit een icoon of logo bestaat, dan heeft deze afbeelding een goed tekstalternatief, zodat de link een naam heeft die duidelijk maakt waar de link voor dient.</p>
+                  <p>Het beste is om altijd visueel een tekst te tonen naast of onder het icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor de afbeelding is niet nodig als er naast de afbeelding ook tekst in de link staat die uitlegt waar de link naartoe gaat. Een <code class="utrecht-code">img</code> kan dan een leeg <code class="utrecht-code">alt</code>-attribuut krijgen (<code class="utrecht-code">alt=&quot;&quot;</code>).</p>
+                  <p>Is het toch gewenst om alleen een icoon of logo te tonen, hou dan rekening met het volgende.</p>
+                  <p>Een <code class="utrecht-code">img</code> met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de toegankelijke naam van de link:</p>
+                  <span hidden="" id=":R4tnbmhralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R4tnbmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">img</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">src</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">ideal.svg</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">alt</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">iDeal</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                  <p>Maar duidelijker is:</p>
+                  <span hidden="" id=":R6tnbmhralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R6tnbmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"> Betaal met iDeal </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">img</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">src</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">ideal.svg</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">alt</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token plain"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                  <p>Logius geeft voor het inloggen met DigiD, eHerkenning en European login &quot;Opmaakrichtlijnen voor inlogmiddelknoppen&quot; in de <a href="https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang" class="utrecht-link utrecht-link--html-a">Stijlhandleiding aansluiten Toegang</a>.</p>
+                  <p>NL Design System richtlijnen:</p>
+                  <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                   <li><a href="/richtlijnen/stijl/iconen/gebruik-svg/" class="utrecht-link utrecht-link--html-a">Gebruik SVG voor iconen en geen font</a></li>
+                   <li><a href="/richtlijnen/stijl/iconen/gebruik-svg/#toepassen-van-een-svg-in-code" class="utrecht-link utrecht-link--html-a">Toepassen van een SVG in code</a></li>
+                   <li><a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Functionele afbeeldingen</a></li>
+                  </ul>
+                 </div>
+                 <div class="component-criteria-section">
+                  <h4 class="utrecht-heading-4 component-criteria-section__heading">De Login Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Login Link voor dient</h4>
+                  <dl class="component-criteria-section__dl">
+                   <dt class="component-criteria-section__dt">WCAG</dt>
+                   <dd class="component-criteria-section__dd"><a href="/wcag/4.1.2/" class="utrecht-link utrecht-link--html-a">4.1.2 Naam, rol, waarde</a></dd>
+                  </dl>
+                  <p>De link heeft een rol van <code class="utrecht-code">link</code> en een <a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name" class="utrecht-link utrecht-link--html-a">toegankelijke naam</a> die duidelijk maakt waar de link voor dient.</p>
+                  <p>HTML-elementen hebben een impliciete rol. Maak daar gebruik van. Kies daarom een <code class="utrecht-code">a</code>-element met het <code class="utrecht-code">href</code> attribuut als je een link nodig hebt:</p>
+                  <span hidden="" id=":R2unbmhralaqh:"
+                   >codevoorbeeld
+                   <!-- -->
+                   <!-- -->
+                  </span>
+                  <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R2unbmhralaqh:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Contact</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+                  <p>Het is mogelijk om met ARIA een <code class="utrecht-code">role=&quot;link&quot;</code> toe te voegen aan een ander element dan een <code class="utrecht-code">a</code>, maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc. Let erop dat je hiervoor JavaScript nodig hebt.</p>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <h2 id="help-component-verbeteren" class="utrecht-heading-2">Help component verbeteren</h2>
+              <p class="utrecht-paragraph">
+               We vinden het belangrijk dat de component
+               <!-- -->Login Link<!-- -->
+               goed te gebruiken is door iedereen. Help je mee?
+              </p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Vul de <a href="https://github.com/orgs/nl-design-system/discussions/240" class="utrecht-link utrecht-link--html-a">GitHub Discussion</a> aan met de eisen en wensen voor jouw project of organisatie.</li>
+               <li class="utrecht-unordered-list__item">
+                Draag bij aan de voortgang van
+                <!-- -->Login Link<!-- -->
+                door te zorgen dat deze aan meer checkpoints van de<!-- -->
+                <a href="#definition-of-done" class="utrecht-link utrecht-link--html-a">Definition of Done</a> voldoet. Deze houden we bij in de projectborden bij de <a href="https://github.com/nl-design-system/backlog/issues/268#issue-2359596572" class="utrecht-link utrecht-link--html-a">publieke GitHub Backlog</a>.<!-- -->
+               </li>
+              </ul>
              </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="theme-doc-footer-edit-meta-row row">
+               <div class="col">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/login-link/index.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_vxtL" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_b5WM"></div>
+              </div>
+             </footer>
             </article>
+            <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/link-list/"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Link List</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/logo/"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Logo</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_B1zO thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#definition-of-done" class="table-of-contents__link toc-highlight">Definition of Done</a></li>
+             <li><a href="#community-implementaties" class="table-of-contents__link toc-highlight">Community implementaties</a></li>
+             <li><a href="#acceptatiecriteria" class="table-of-contents__link toc-highlight">Acceptatiecriteria</a></li>
+             <li><a href="#help-component-verbeteren" class="table-of-contents__link toc-highlight">Help component verbeteren</a></li>
+            </ul>
            </div>
           </div>
          </div>
@@ -508,6 +1112,21 @@
       </div>
      </div>
     </div>
+    <footer class="footer">
+     <div class="container container-fluid">
+      <div class="footer__links text--center">
+       <div class="footer__links">
+        <a class="footer__link-item" href="/blog/">Blog</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/project/kernteam/">Contact</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/privacyverklaring/">Privacyverklaring</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/colofon/">Colofon</a><span class="footer__link-separator">·</span
+        ><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="footer__link-item"
+         >GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_mH8H"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a
+        ><span class="footer__link-separator">·</span><a class="footer__link-item" href="/slack/">Slack</a><span class="footer__link-separator">·</span
+        ><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&amp;t=t25LHoMjEkUZyEi1-1" target="_blank" rel="noopener noreferrer" class="footer__link-item"
+         >Figma<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_mH8H"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg
+        ></a>
+       </div>
+      </div>
+     </div>
+    </footer>
    </div>
   </div>
  </body>

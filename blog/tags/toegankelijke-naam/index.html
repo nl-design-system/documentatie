@@ -23,8 +23,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f39fce95.css" />
-  <script src="/assets/js/runtime~main.05876bf6.js" defer="defer"></script>
-  <script src="/assets/js/main.3b067d73.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.d166e73a.js" defer="defer"></script>
+  <script src="/assets/js/main.16880981.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -47,18 +47,34 @@
    })(),
     (function () {
      try {
-      const c = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of c)
+      const a = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of a)
        if (t.startsWith('docusaurus-data-')) {
-        var a = t.replace('docusaurus-data-', 'data-');
-        document.documentElement.setAttribute(a, e);
+        var n = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(n, e);
        }
      } catch (t) {}
-    })();
+    })(),
+    document.documentElement.setAttribute(
+     'data-announcement-bar-initially-dismissed',
+     (function () {
+      try {
+       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
+      } catch (t) {}
+      return !1;
+     })(),
+    );
   </script>
   <div id="__docusaurus">
    <div class="utrecht-page-layout ma-theme">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_W6BK" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <div class="announcementBar_Z2CV" style="background-color: var(--basis-color-accent-1-inverse-bg-subtle); color: var(--basis-color-accent-1-inverse-color-default)" role="banner">
+     <div class="content_sx25 announcementBarContent_k4U2">
+      <div class="announcementbar-content">
+       <span class="utrecht-icon"><img alt="" src="/svg/tabler-icon_mega.svg" /></span> Help jij NL Design System in 2026 nog beter te maken? <a href="/enquete-2025" class="utrecht-link utrecht-link--html-a">Vul dan voor 30 december deze enquête in</a>
+      </div>
+     </div>
+    </div>
     <nav aria-label="Main" class="navbar navbar--fixed-top navbarHideable_Zt5y">
      <div class="navbar__inner">
       <div class="navbar__items">
@@ -132,15 +148,7 @@
     <footer class="footer">
      <div class="container container-fluid">
       <div class="footer__links text--center">
-       <div class="footer__links">
-        <a class="footer__link-item" href="/blog/">Blog</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/project/kernteam/">Contact</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/privacyverklaring/">Privacyverklaring</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/colofon/">Colofon</a><span class="footer__link-separator">·</span
-        ><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="footer__link-item"
-         >GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_mH8H"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a
-        ><span class="footer__link-separator">·</span><a class="footer__link-item" href="/slack/">Slack</a><span class="footer__link-separator">·</span
-        ><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&amp;t=t25LHoMjEkUZyEi1-1" target="_blank" rel="noopener noreferrer" class="footer__link-item"
-         >Figma<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_mH8H"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg
-        ></a>
-       </div>
+       <div class="footer__links"><a class="footer__link-item" href="/blog/">Blog</a><span class="footer__link-separator"></span></div>
       </div>
      </div>
     </footer>
