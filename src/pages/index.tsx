@@ -48,7 +48,7 @@ export default function Home() {
             <Heading1>Samen bouwen aan betere digitale dienstverlening</Heading1>
             <Paragraph appearance="lead">
               NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te
-              ontdekken we welke componenten écht werken in de praktijk. Zo werken we toe naar een Hall of Fame van
+              ontdekken welke componenten écht werken in de praktijk. Zo werken we toe naar een Hall of Fame van
               gebruiksvriendelijke, toegankelijke componenten, patronen en templates.
             </Paragraph>
             <Heading2>Waarom meedoen?</Heading2>
