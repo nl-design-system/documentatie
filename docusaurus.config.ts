@@ -108,6 +108,14 @@ const config: Config = {
       searchPagePath: 'search',
       //... other Algolia params
     },
+    announcementBar: {
+      id: 'dsweek-2025',
+      content:
+        '<div class="announcementbar-content"><span class="utrecht-icon"><img alt="" src="/svg/tabler-icon_mega.svg"/></span> Help jij NL Design System in 2026 nog beter te maken? <a href="/enquete-2025" class="utrecht-link utrecht-link--html-a">Vul dan voor 30 december deze enquête in</a></div>',
+      backgroundColor: 'var(--basis-color-accent-1-inverse-bg-subtle)',
+      textColor: 'var(--basis-color-accent-1-inverse-color-default)',
+      isCloseable: false,
+    },
   },
   i18n: {
     defaultLocale: 'nl',
