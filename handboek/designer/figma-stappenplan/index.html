@@ -28,7 +28,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f39fce95.css" />
-  <script src="/assets/js/runtime~main.d166e73a.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.c9f2331c.js" defer="defer"></script>
   <script src="/assets/js/main.16880981.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -340,7 +340,7 @@
               <p>Afhankelijk van de situatie van jouw organisatie zal worden bepaald waar het JSON bestand moet komen staan.</p>
               <p>
                <strong>Situatie A</strong><br />
-               <!-- -->Jouw organisatie heeft al een map met design tokens binnen de <a href="https://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">NL Design System &#x27;themes repository&#x27;</a>.
+               <!-- -->Jouw organisatie heeft al een map met design tokens binnen de <a href="https://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">NL Design System &#x27;themes&#x27; repository</a>.
               </p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Controleer wanneer de laatste wijziging op de design tokens heeft plaatsgevonden.</li>
@@ -350,7 +350,7 @@
               <p>Zijn de wijzigingen recent? En ken je de persoon die ze heeft gedaan? Stem dan even met elkaar af. Kom je er niet uit? Stel je vraag gerust in Slack.</p>
               <p>
                <strong>Situatie B</strong><br />
-               <!-- -->Jouw organisatie heeft nog géén map binnen de <a href="https://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">NL Design System &#x27;themes repository&#x27;</a>. En dat wil je wel.
+               <!-- -->Jouw organisatie heeft nog géén map binnen de <a href="https://github.com/nl-design-system/themes" class="utrecht-link utrecht-link--html-a">NL Design System &#x27;themes&#x27; repository</a>. En dat wil je wel.
               </p>
               <p><a href="/project/kernteam/" class="utrecht-link utrecht-link--html-a">Neem contact op met het kernteam</a>.</p>
               <p>
@@ -388,7 +388,7 @@
               <p>Voor <strong>situatie C</strong> is dit een developer van je eigen organisatie.</p>
               <h3 id="personal-access-token-aanmaken" class="utrecht-heading-3">Personal access token aanmaken</h3>
               <p>Ondanks de naam heeft een personal access token niets met design tokens te maken. Je hebt een personal access token nodig met de benodigde rechten om via Tokens Studio design tokens te kunnen importeren, bewerken én exporteren.</p>
-              <p>🎥 <a href="https://youtu.be/Fz0Hzs6QEao" class="utrecht-link utrecht-link--html-a">Video: Personal access token aanmaken</a></p>
+              <p>🎥 <a href="https://youtu.be/dLB7UONA5-o" class="utrecht-link utrecht-link--html-a">Video: Personal access token aanmaken</a></p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Ga naar <a href="https://github.com/settings/personal-access-tokens" class="utrecht-link utrecht-link--html-a">github.com/settings/tokens</a>.</li>
                <li>Klik op &#x27;Generate new token&#x27;.</li>
@@ -396,12 +396,13 @@
               <p><strong>Vul de gegevens in</strong></p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Token name: Deze wordt enkel gebruikt voor GitHub zelf. Hier mag je van maken wat je wilt. Bijvoorbeeld: <code class="utrecht-code">Tokens van {naam-organisatie}</code>.</li>
-               <li>Resource owner: Staan je tokens in de NL Design System &#x27;themes repository&#x27;? Kies dan voor &#x27;nl-design-system&#x27;. Staan de tokens in de GitHub omgeving van jouw organisatie? Selecteer deze dan als resource owner.</li>
+               <li>Resource owner: Staan je tokens in de NL Design System &#x27;themes&#x27; repository? Kies dan voor &#x27;nl-design-system&#x27;. Staan de tokens in de GitHub omgeving van jouw organisatie? Selecteer deze dan als resource owner.</li>
                <li>Expiration: Bepaal wanneer je personal access token zou moeten verlopen. Bijvoorbeeld na een half jaar. Je krijgt vanzelf een email wanneer deze datum in zicht komt.</li>
                <li>Kies bij &#x27;Repository access&#x27; voor &#x27;Only select repositories&#x27;.</li>
-               <li>Selecteer de repository waar de tokens van jouw organisatie staan.</li>
-               <li>Klik onder &#x27;Permissions&#x27; op &#x27;Repository permissions&#x27;.</li>
-               <li>Kies bij &#x27;Contents&#x27; voor &#x27;Access: Read and write&#x27;.</li>
+               <li>Selecteer de repository waar de tokens van jouw organisatie staan. Staan je tokens in de NL Design System &#x27;themes&#x27; repository? Kies dan voor &#x27;themes&#x27;.</li>
+               <li>Klik bij &#x27;Permissions&#x27; op &#x27;Add permissions&#x27;.</li>
+               <li>Selecteer &#x27;Contents&#x27; uit de lijst aan opties.</li>
+               <li>Pas de access van Contents aan naar &#x27;Read and write&#x27;.</li>
               </ul>
               <p><strong>Genereren en noteren</strong></p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
