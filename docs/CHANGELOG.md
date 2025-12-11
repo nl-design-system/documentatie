@@ -1,5 +1,15 @@
 # @nl-design-system-unstable/documentation
 
+## 1.9.0
+
+### Minor Changes
+
+- a70d115: Uitleg over toepassing van kopniveau 1 toegevoegd aan content richtlijnen.
+- 4cb7afb: Toelichting over context toegevoegd aan pagina 'Decoratieve afbeelidngen' in content richtlijnen.
+- 744a29a: Baseline 2025-11
+- c87f8b4: Voorbeelden voor de richtlijnen voor functionele afbeeldingen.
+- e653741: Toevoeging aan WCAG 2.5.2 en WCAG 2.4.3 advies bij Button.
+
 ## 1.8.0
 
 ### Minor Changes
