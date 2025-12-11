@@ -39,8 +39,6 @@ const AltTextHelper = () => {
   const setCurrentStep = (prev) => {
     let current = '';
 
-    console.log('forward', image);
-
     switch (prev) {
       case 'image-type':
         if (image.type === 'decorative' || image.type === 'functional') current = 'extra-checks';

@@ -5,7 +5,6 @@ import {
   FormFieldDescription,
   FormFieldCheckbox,
   Button,
-  PreHeading,
   Link,
 } from '@utrecht/component-library-react/dist/css-module';
 import { UtrechtIconChevronLeft } from '@utrecht/web-component-library-react';
@@ -68,7 +67,6 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
           </Link>
         </div>
 
-        <PreHeading>Stap 3 van 5</PreHeading>
         <Fieldset
           id="additional-checks-group"
           aria-describedby="additional-checks-group-description"
@@ -78,7 +76,7 @@ export default function ExtraChecks({ onChangeOption, onPrevStep, onNextStep, ac
         >
           <FieldsetLegend>Welke kenmerken gelden voor deze afbeelding?</FieldsetLegend>
           <FormFieldDescription id="additional-checks-group-description">
-            Selecteer wat van toepassing is:
+            Selecteer alle kenmerken die van toepassing zijn:
           </FormFieldDescription>
           {image.type !== 'complex' && (
             <FormFieldCheckbox

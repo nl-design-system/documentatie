@@ -8,7 +8,6 @@ import {
   RadioButton,
   Button,
   Heading2,
-  PreHeading,
   UnorderedList,
   UnorderedListItem,
   Link,
@@ -50,7 +49,6 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
           </Link>
         </div>
 
-        <PreHeading>Stap 4 van 5</PreHeading>
         <Fieldset
           id="text-type-group"
           aria-describedby="text-type-group-description"
@@ -126,7 +124,7 @@ export default function TextTypeHelper({ onChangeOption, onPrevStep, onNextStep,
                 }}
               />
               <div>
-                <span className="bold-text">De tekst heeft een functionele rol.</span>
+                <span className="bold-text">De tekst heeft een symbolische functie en geeft een korte aanwijzing.</span>
                 <br />
                 Bijvoorbeeld een PDF-icoon (Download PDF), een i-icoon (Meer informatie) of een uitroepteken (Let op).
               </div>

@@ -8,7 +8,6 @@ import {
   RadioButton,
   Button,
   Heading2,
-  PreHeading,
   UnorderedList,
   UnorderedListItem,
   Paragraph,
@@ -30,7 +29,6 @@ export default function ImageTypeHelper({ onChangeOption, onNextStep, active }: 
   if (active === groupName) {
     return (
       <>
-        <PreHeading>Stap 1 van 5</PreHeading>
         <Fieldset
           id="image-type-group"
           aria-describedby="image-type-group-description"

@@ -8,7 +8,6 @@ import {
   RadioButton,
   Button,
   Heading2,
-  PreHeading,
   UnorderedList,
   UnorderedListItem,
   Link,
@@ -44,7 +43,6 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
             Vorige stap
           </Link>
         </div>
-        <PreHeading>Stap 2 van 5</PreHeading>
         <Fieldset
           id="context-type-group"
           aria-describedby="image-type-group-description"
@@ -53,7 +51,9 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
           tabIndex={-1}
         >
           <FieldsetLegend>Hoe ziet de afbeelding eruit?</FieldsetLegend>
-          <FormFieldDescription id="context-type-group-description">Kies wat het beste past:</FormFieldDescription>
+          <FormFieldDescription id="context-type-group-description">
+            Kies de optie die het beste past:
+          </FormFieldDescription>
           <FormField type="radio">
             <FormLabel
               className="utrecht-form-field__label utrecht-form-field__label--radio"

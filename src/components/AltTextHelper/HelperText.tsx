@@ -1,6 +1,6 @@
 import { SpotlightSection } from '@utrecht/component-library-react';
-import { Heading2, Heading3, Paragraph, PreHeading, Link } from '@utrecht/component-library-react/dist/css-module';
-import { IconFileDescription, IconPhoto, IconSortDescending, IconTarget } from '@tabler/icons-react';
+import { Heading2, Heading3, Paragraph, Link } from '@utrecht/component-library-react/dist/css-module';
+import { IconFileDescription, IconPhoto, IconInfoTriangle, IconTarget } from '@tabler/icons-react';
 import { UtrechtIconChevronLeft } from '@utrecht/web-component-library-react';
 
 const groupName = 'helper-text';
@@ -31,19 +31,18 @@ export default function HelperText({ onPrevStep, active, image }: HelperTextProp
         </div>
 
         <div className="nlds-helper-text" ref={autoFocus} tabIndex={-1}>
-          <PreHeading>Stap 5 van 5</PreHeading>
           <SpotlightSection>
             <Heading2>Advies over jouw afbeelding</Heading2>
-            <Paragraph>
-              <strong>Belangrijk:</strong> dit advies is geen wettelijke verplichting en geen vervanging voor de{' '}
-              <a href="https://www.w3.org/TR/WCAG21/">wettelijk geldende WCAG 2.1 specificatie</a>. Deze keuzehulp is
-              een praktisch hulpmiddel bij het opstellen van een alt-tekst.
-            </Paragraph>
             <ImageTextHelperText image={image} />
             <ImageTypeHelperText image={image} />
             <ImageClickableHelperText image={image} />
             <AltTextOrderHelperText image={image} />
           </SpotlightSection>
+          <Paragraph>
+            Dit advies is geen wettelijke verplichting en geen vervanging voor de{' '}
+            <a href="https://www.w3.org/TR/WCAG21/">wettelijk geldende WCAG 2.1 specificatie</a>. Deze keuzehulp is een
+            praktisch hulpmiddel bij het opstellen van een alt-tekst.
+          </Paragraph>
         </div>
       </>
     );
@@ -172,9 +171,9 @@ const Texts = [
   },
   {
     id: 'text-has-function',
-    header: 'Beschrijf de functie van de tekst in de afbeelding',
+    header: 'Beschrijf de betekenis van de tekst.',
     content:
-      'Omdat de tekst een functie heeft moet in het veld voor alternatieve tekst worden beschreven wat de afbeelding doet of betekent. Bijvoorbeeld: “Download PDF” voor een icoon met de letters PDF, "Meer informatie over..." voor een icoon met de letter I of “Let op” voor een uitroepteken.',
+      'Omdat de tekst een symbolische functie heeft, neem je in de alt-tekst de betekenis ervan op. Bijvoorbeeld: “Download PDF” voor een icoon met de letters PDF, "Meer informatie over..." voor een icoon met de letter I of “Let op” voor een uitroepteken.',
   },
   {
     id: 'text-only-image',
@@ -255,12 +254,12 @@ export function AltTextOrderHelperText({ image }: AltTextOrderHelperTextProps) {
       <>
         <Heading3 className="nlds-alt-text-helper-heading-with-icon">
           <span className="nlds-alt-text-helper-icon" aria-hidden="true">
-            <IconSortDescending />
+            <IconInfoTriangle />
           </span>
-          Bouw de alt-tekst in een vaste volgorde op
+          Let op! Bouw de alt-tekst in een vaste volgorde op
         </Heading3>
         <Paragraph>
-          Moeten er meerdere onderdelen in de alt-tekst staan? Zet ze dan in een logische volgorde: eerst de tekst in de
+          Moeten er meerdere onderdelen in de alt-tekst staan? Zet ze dan in de volgende volgorde: eerst de tekst in de
           afbeelding, dan de niet-tekstuele inhoud die te zien is, daarna wat er gebeurt als iemand erop klikt.
         </Paragraph>
       </>
