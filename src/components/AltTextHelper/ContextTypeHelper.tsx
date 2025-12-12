@@ -73,7 +73,8 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
               <div>
                 <span className="bold-text">Het is een complexe afbeelding</span>
                 <br />
-                Bijvoorbeeld een grafiek, diagram, stappenplan, kaart, tijdlijn of infographic.
+                Bijvoorbeeld een grafiek, diagram, stappenplan, kaart, tijdlijn, infographic of een afbeelding met veel
+                tekst.
               </div>
             </FormLabel>
           </FormField>
@@ -96,7 +97,8 @@ export default function ContextTypeHelper({ onChangeOption, onPrevStep, onNextSt
               <div>
                 <span className="bold-text">Het is een foto of eenvoudige illustratie</span>
                 <br />
-                Bijvoorbeeld een portretfoto, sfeerbeeld, logo of een simpele tekening.
+                Bijvoorbeeld een portretfoto, sfeerbeeld, logo, simpele tekening of een afbeelding van een kleine
+                hoeveelheid tekst.
               </div>
             </FormLabel>
           </FormField>
