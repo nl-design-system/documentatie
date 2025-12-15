@@ -3,12 +3,12 @@
  [58688],
  {
   49136: (e, t, n) => {
-   n.r(t), n.d(t, { assets: () => l, contentTitle: () => r, default: () => m, frontMatter: () => a, metadata: () => s, toc: () => d });
+   n.r(t), n.d(t, { assets: () => l, contentTitle: () => s, default: () => m, frontMatter: () => a, metadata: () => r, toc: () => d });
    var o = n(52676),
     i = n(40139);
    const a = { title: 'Voorbeeld-thema \xb7 Huisstijl vastleggen \xb7 Handboek', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Voorbeeld-thema', sidebar_position: 2, pagination_label: 'Voorbeeld-thema', description: 'Informatie over het Voorbeeld-thema.', slug: '/handboek/huisstijl/themas/voorbeeld-thema', keywords: ['componenten', 'design system', 'design tokens', "thema's", 'voorbeeld-thema'] },
-    r = 'Voorbeeld-thema',
-    s = { id: 'handboek/huisstijl-vastleggen/themas/voorbeeld-thema', title: 'Voorbeeld-thema \xb7 Huisstijl vastleggen \xb7 Handboek', description: 'Informatie over het Voorbeeld-thema.', source: '@site/docs/handboek/huisstijl-vastleggen/themas/voorbeeld-thema.mdx', sourceDirName: 'handboek/huisstijl-vastleggen/themas', slug: '/handboek/huisstijl/themas/voorbeeld-thema', permalink: '/handboek/huisstijl/themas/voorbeeld-thema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/huisstijl-vastleggen/themas/voorbeeld-thema.mdx', tags: [], version: 'current', sidebarPosition: 2, frontMatter: { title: 'Voorbeeld-thema \xb7 Huisstijl vastleggen \xb7 Handboek', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Voorbeeld-thema', sidebar_position: 2, pagination_label: 'Voorbeeld-thema', description: 'Informatie over het Voorbeeld-thema.', slug: '/handboek/huisstijl/themas/voorbeeld-thema', keywords: ['componenten', 'design system', 'design tokens', "thema's", 'voorbeeld-thema'] }, sidebar: 'handboek', previous: { title: 'Start-thema', permalink: '/handboek/huisstijl/themas/start-thema' }, next: { title: 'Componenten bijdragen', permalink: '/handboek/component-bijdragen/overzicht' } },
+    s = 'Voorbeeld-thema',
+    r = { id: 'handboek/huisstijl-vastleggen/themas/voorbeeld-thema', title: 'Voorbeeld-thema \xb7 Huisstijl vastleggen \xb7 Handboek', description: 'Informatie over het Voorbeeld-thema.', source: '@site/docs/handboek/huisstijl-vastleggen/themas/voorbeeld-thema.mdx', sourceDirName: 'handboek/huisstijl-vastleggen/themas', slug: '/handboek/huisstijl/themas/voorbeeld-thema', permalink: '/handboek/huisstijl/themas/voorbeeld-thema', draft: !1, unlisted: !1, editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/huisstijl-vastleggen/themas/voorbeeld-thema.mdx', tags: [], version: 'current', sidebarPosition: 2, frontMatter: { title: 'Voorbeeld-thema \xb7 Huisstijl vastleggen \xb7 Handboek', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Voorbeeld-thema', sidebar_position: 2, pagination_label: 'Voorbeeld-thema', description: 'Informatie over het Voorbeeld-thema.', slug: '/handboek/huisstijl/themas/voorbeeld-thema', keywords: ['componenten', 'design system', 'design tokens', "thema's", 'voorbeeld-thema'] }, sidebar: 'handboek', previous: { title: 'Start-thema', permalink: '/handboek/huisstijl/themas/start-thema' }, next: { title: 'Voor designers', permalink: '/handboek/designer/overzicht' } },
     l = {},
     d = [
      { value: 'Doel van het Voorbeeld-thema', id: 'doel-van-het-voorbeeld-thema', level: 2 },
@@ -30,11 +30,11 @@
    }
   },
   40139: (e, t, n) => {
-   n.d(t, { Z: () => s, a: () => r });
+   n.d(t, { Z: () => r, a: () => s });
    var o = n(75271);
    const i = {},
     a = o.createContext(i);
-   function r(e) {
+   function s(e) {
     const t = o.useContext(a);
     return o.useMemo(
      function () {
@@ -43,9 +43,9 @@
      [t, e],
     );
    }
-   function s(e) {
+   function r(e) {
     let t;
-    return (t = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : r(e.components)), o.createElement(a.Provider, { value: t }, e.children);
+    return (t = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : s(e.components)), o.createElement(a.Provider, { value: t }, e.children);
    }
   },
  },
