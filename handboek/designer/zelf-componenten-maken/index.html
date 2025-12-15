@@ -15,8 +15,8 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="Zelf componenten maken · Designer · Handboek · NL Design System" />
-  <meta data-rh="true" name="description" content="Informatie voor designers over hoe je zelf componenten kan maken in Figma met design tokens." />
-  <meta data-rh="true" property="og:description" content="Informatie voor designers over hoe je zelf componenten kan maken in Figma met design tokens." />
+  <meta data-rh="true" name="description" content="Informatie voor designers over hoe je zelf componenten kunt maken in Figma met design tokens." />
+  <meta data-rh="true" property="og:description" content="Informatie voor designers over hoe je zelf componenten kunt maken in Figma met design tokens." />
   <meta data-rh="true" name="keywords" content="index,designer,meedoen,componenten,figma,design tokens" />
   <link data-rh="true" rel="icon" href="/favicon.svg" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/handboek/designer/zelf-componenten-maken/" />
@@ -28,8 +28,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.f39fce95.css" />
-  <script src="/assets/js/runtime~main.e67f8166.js" defer="defer"></script>
-  <script src="/assets/js/main.f30c08b5.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.bedb6339.js" defer="defer"></script>
+  <script src="/assets/js/main.b21b48c4.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <script>
@@ -132,6 +132,7 @@
                  <div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/handboek/designer/werken-met-nl-design-system/">Werken met NL Design System</a><button aria-label="Expand sidebar category &#x27;Werken met NL Design System&#x27;" type="button" class="clean-btn menu__caret"></button></div>
                 </li>
                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/handboek/designer/zelf-thema-maken/">Zelf een thema maken</a></li>
+                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/handboek/designer/zelf-componenten-uitbreiden/">Zelf componenten uitbreiden</a></li>
                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/handboek/designer/zelf-componenten-maken/">Zelf componenten maken</a></li>
                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/figma/">Figma-bestanden overzicht</a></li>
                </ul>
@@ -189,22 +190,22 @@
              </nav>
              <div class="theme-doc-markdown markdown">
               <h1 id="zelf-componenten-maken" class="utrecht-heading-1">Zelf componenten maken</h1>
-              <p>De Figma bibliotheken van NL Design System bevatten veel componenten en worden regelmatig aangevuld. Toch zijn er situaties waarin je zelf componenten moet maken. Dat kan in de volgende gevallen:</p>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li><strong>Community-component ontbreekt:</strong> De community-component die jij nu juist nodig hebt ontbreekt nog. Je hebt dit doorgegeven aan het kernteam, maar er is (nog) geen tijd om dit op te pakken. In dat geval kun je de component zelf maken.</li>
-               <li><strong>Community-component verbeteren:</strong> Er is wel een community-component, maar die sluit niet goed aan bij de behoeften van jouw organisatie. Gebruik dan het bestaande ontwerp (of de code) als basis om daar verder op door te ontwikkelen. Neem daarbij zoveel mogelijk elementen uit de bestaande component over. Het is helemaal super om hierbij samen te werken met de organisatie die de oorspronkelijke component heeft ontwikkeld, zodat verbeteringen gezamenlijk kunnen worden doorgevoerd.</li>
-               <li><strong>Eigen community-component bijdragen:</strong> Je wilt als organisatie een nieuwe component ontwikkelen en delen met de community.</li>
-              </ul>
-              <p>Hoe dan ook, het is fijn om dit altijd te doen volgens de afspraken van NL Design System: open source, met design tokens en de juiste naamgeving. Zo blijven componenten onderling uitwisselbaar.</p>
-              <p>Om te laten zien hoe dit werkt, laten we met twee fictieve lokale componenten (Demo Sticker en Demo Card) zien hoe je zelf componenten kunt ontwikkelen.</p>
-              <h2 id="demo-sticker-maken" class="utrecht-heading-2">Demo Sticker maken</h2>
+              <p>De Figma bibliotheken van NL Design System bevatten veel componenten en worden regelmatig aangevuld. Toch zijn er situaties waarin je zelf componenten moet maken.</p>
+              <h2 id="community-component-ontbreekt" class="utrecht-heading-2">Community component ontbreekt</h2>
+              <p>De Community component die jij nu juist nodig hebt ontbreekt nog. Je hebt dit doorgegeven aan het kernteam, maar er is (nog) geen tijd om dit op te pakken. In dat geval kun je de component zelf maken.</p>
+              <h2 id="eigen-community-component-bijdragen" class="utrecht-heading-2">Eigen Community component bijdragen</h2>
+              <p>Je wilt als organisatie een nieuwe component ontwikkelen en delen met de community.</p>
+              <h2 id="demos" class="utrecht-heading-2">Demo&#x27;s</h2>
+              <p>Het is fijn om componenten te ontwikkelen volgens de afspraken van NL Design System: open source, met design tokens en de juiste naamgeving. Zo blijven componenten onderling uitwisselbaar.</p>
+              <p>We hebben twee fictieve componenten uitgewerkt om te laten zien hoe je als designer zelf een component kunt maken.</p>
+              <h3 id="component-demo-sticker-maken" class="utrecht-heading-3">Component &#x27;Demo Sticker&#x27; maken</h3>
               <p>In deze video laten we zien hoe de component &#x27;Demo Sticker&#x27; wordt ontwikkeld in Figma.</p>
               <link rel="preload" href="https://i.ytimg.com/vi/dbTcHS01IGQ/maxresdefault.jpg" as="image" />
-              <article class="yt-lite" data-title="Demo Sticker maken" style="background-image: url(https://i.ytimg.com/vi/dbTcHS01IGQ/maxresdefault.jpg); --aspect-ratio: 56.25%"><button type="button" class="lty-playbtn" aria-label="Bekijk Demo Sticker maken"></button></article>
-              <h2 id="demo-card-maken" class="utrecht-heading-2">Demo Card maken</h2>
+              <article class="yt-lite" data-title="Zelf componenten maken - Demo Sticker" style="background-image: url(https://i.ytimg.com/vi/dbTcHS01IGQ/maxresdefault.jpg); --aspect-ratio: 56.25%"><button type="button" class="lty-playbtn" aria-label="Bekijk Zelf componenten maken - Demo Sticker"></button></article>
+              <h3 id="component-demo-card-maken" class="utrecht-heading-3">Component &#x27;Demo Card&#x27; maken</h3>
               <p>In deze video laten we zien hoe de component &#x27;Demo Card&#x27; wordt ontwikkeld in Figma.</p>
               <link rel="preload" href="https://i.ytimg.com/vi/vsJjs6ehGZ0/maxresdefault.jpg" as="image" />
-              <article class="yt-lite" data-title="Demo Card maken" style="background-image: url(https://i.ytimg.com/vi/vsJjs6ehGZ0/maxresdefault.jpg); --aspect-ratio: 56.25%"><button type="button" class="lty-playbtn" aria-label="Bekijk Demo Card maken"></button></article>
+              <article class="yt-lite" data-title="Zelf componenten maken - Demo Card" style="background-image: url(https://i.ytimg.com/vi/vsJjs6ehGZ0/maxresdefault.jpg); --aspect-ratio: 56.25%"><button type="button" class="lty-playbtn" aria-label="Bekijk Zelf componenten maken - Demo Card"></button></article>
               <h2 id="handige-links" class="utrecht-heading-2">Handige links</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>
@@ -214,6 +215,7 @@
                  <li><a href="/handboek/estafettemodel/componenten/community-stappenplan/voor-organisaties/" class="utrecht-link utrecht-link--html-a">Community stappenplan voor organisaties</a></li>
                 </ul>
                </li>
+               <li><a href="/handboek/componenten-gebruiken/" class="utrecht-link utrecht-link--html-a">Componenten gebruiken</a></li>
                <li><a href="/handboek/huisstijl/design-tokens/" class="utrecht-link utrecht-link--html-a">Design tokens</a></li>
                <li><a href="/handboek/designer/figma-hygiene/" class="utrecht-link utrecht-link--html-a">Figma hygiëne</a></li>
                <li><a href="https://help.figma.com/" class="utrecht-link utrecht-link--html-a">help.figma.com</a></li>
@@ -240,9 +242,9 @@
              </footer>
             </article>
             <nav class="pagination-nav docusaurus-mt-lg" aria-label="Documentatie pagina">
-             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/designer/zelf-thema-maken/"
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/designer/zelf-componenten-uitbreiden/"
               ><div class="pagination-nav__sublabel">Vorige</div>
-              <div class="pagination-nav__label">Zelf een thema maken</div></a
+              <div class="pagination-nav__label">Zelf componenten uitbreiden</div></a
              ><a class="pagination-nav__link pagination-nav__link--next" href="/figma/"
               ><div class="pagination-nav__sublabel">Volgende</div>
               <div class="pagination-nav__label">Figma-bestanden overzicht</div></a
