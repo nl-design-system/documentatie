@@ -99,6 +99,7 @@
     "@nl-design-system-candidate/skip-link-tokens": "1.0.1",
     "@tabler/icons-react": "3.30.0",
     "@utrecht/design-tokens": "2.4.0",
+    "@utrecht/radio-group-react": "1.0.13",
     "clsx": "2.1.1",
     "html-react-parser": "5.2.2",
     "prism-react-renderer": "2.4.1",
