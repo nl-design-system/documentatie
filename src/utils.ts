@@ -37,6 +37,7 @@ export const previousRelayStep = {
 export const relayProjectIds = Object.keys(previousRelayStep);
 
 export const normalizeName = (name: string) => name.toLowerCase().replace(/(\s|-)+/, '');
+const FRAMEWORK_NAME_SORT_ORDER = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
 
 export type RELAY_STEP = 'HELP_WANTED' | 'COMMUNITY' | 'CANDIDATE' | 'HALL_OF_FAME' | 'UNKNOWN';
 export type PROJECT_ID =
@@ -102,11 +103,8 @@ export function removeDuplicates<T>(items: T[]): T[] {
   return Array.from(new Set<T>(items));
 }
 
-const sortFrameworkNames = (frameworkNames: string[]): string[] => {
-  // Frameworks will be returned in this order
-  const order = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
-  return [...frameworkNames].sort((a, b) => order.indexOf(a) - order.indexOf(b));
-};
+const sortFrameworkNames = (frameworkNames: string[]): string[] =>
+  [...frameworkNames].sort((a, b) => FRAMEWORK_NAME_SORT_ORDER.indexOf(a) - FRAMEWORK_NAME_SORT_ORDER.indexOf(b));
 
 export const getAllFrameworkNames = (components: Component[]): string[] => {
   const allProjects = components.flatMap(({ projects }) => projects);
