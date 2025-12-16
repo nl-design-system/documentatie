@@ -104,7 +104,7 @@ export function removeDuplicates<T>(items: T[]): T[] {
 
 const sortFrameworkNames = (frameworkNames: string[]): string[] => {
   // Frameworks will be returned in this order
-  const order = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular'];
+  const order = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
   return [...frameworkNames].sort((a, b) => order.indexOf(a) - order.indexOf(b));
 };
 
