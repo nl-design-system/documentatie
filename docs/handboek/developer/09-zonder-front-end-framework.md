@@ -604,9 +604,30 @@ En vervolgens:
 
 ## Je eigen thema en custom font installeren
 
-Dit is een vervolg op het stappenplan voor het maken van een eigen thema. Als je een eigen thema gebruikt, wil je waarschijnlijk ook je eigen huisstijl lettertypes (fonts) gebruiken.
+In dit hoofdstuk leer je hoe je een eigen thema toepast op de NLDS componenten die je hebt toegevoegd.
 
-### Waar installeer je het font?
+### Eigen thema installeren
+
+De voorbeeldcode gebruikt de designs tokens van het voorbeeld-thema. Deze is al uitgewerkt. Deze kun je vervangen door deze regels te verwijderen:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0/dist/theme.css"
+/>
+```
+
+Hiervoor in de plaats voeg je jouw eigen design tokens toe:
+
+```html
+<link rel="stylesheet" href="<jouw-thema>.css" />
+```
+
+Mocht je nog geen eigen thema hebben, dan kun je een thema maken op basis van het [start-thema](https://nldesignsystem.nl/handboek/huisstijl/themas/start-thema/). Het [voorbeeld-thema](https://nldesignsystem.nl/handboek/huisstijl/themas/voorbeeld-thema/#voorbeeld-thema) is hierop gebaseerd en dient als voorbeeld hoe je dit ook zou kunnen bereiken met je eigen thema.
+
+Als je een eigen thema gebruikt, wil je waarschijnlijk ook je eigen huisstijl lettertypes (fonts) gebruiken.
+
+### Manieren van fonts hosten en installeren
 
 Het is technisch mogelijk om fonts in te laden via een CDN, zoals Google Fonts. Dit heeft echter enkele nadelen:
 
