@@ -138,7 +138,7 @@ export function ImageTypeDecorativeHelperText() {
         <span className="nlds-alt-text-helper-icon" aria-hidden="true">
           <IconPhoto />
         </span>
-        Laat decoratieve beeldinhoud weg, tenzij het iets toevoegt
+        Beschrijf decoratieve beeldinhoud niet, tenzij het iets toevoegt
       </Heading3>
       <Paragraph>
         Als de afbeelding alleen decoratief is, hoef je deze niet te beschrijven. Sommige mensen die hulpsoftware
@@ -173,7 +173,7 @@ const Texts = [
     id: 'text-has-function',
     header: 'Beschrijf de betekenis van de tekst.',
     content:
-      'Omdat de tekst een symbolische functie heeft, neem je in de alt-tekst de betekenis ervan op. Bijvoorbeeld: “Download PDF” voor een icoon met de letters PDF, "Meer informatie over..." voor een icoon met de letter I of “Let op” voor een uitroepteken.',
+      'Omdat de tekst een symbolische functie heeft, beschrijf je in de alt-tekst de betekenis ervan. Bijvoorbeeld: “Download PDF” voor een icoon met de letters PDF, "Meer informatie over..." voor een icoon met de letter I of “Let op” voor een uitroepteken.',
   },
   {
     id: 'text-only-image',
