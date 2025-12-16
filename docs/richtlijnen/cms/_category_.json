@@ -1,0 +1,10 @@
+{
+  "label": "CMS",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/cms/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
