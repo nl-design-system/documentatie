@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://nldesignsystem.nl/blog</id>
+    <id>https://nldesignsystem.nl/blog/</id>
     <title>NL Design System Blog</title>
     <updated>2025-02-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://nldesignsystem.nl/blog"/>
+    <link rel="alternate" href="https://nldesignsystem.nl/blog/"/>
     <subtitle>NL Design System Blog</subtitle>
     <icon>https://nldesignsystem.nl/favicon.svg</icon>
     <entry>
         <title type="html"><![CDATA[De toegankelijke naam van een link op een logo in de header]]></title>
-        <id>https://nldesignsystem.nl/blog/toegankelijke-naam-link-logo-header</id>
-        <link href="https://nldesignsystem.nl/blog/toegankelijke-naam-link-logo-header"/>
+        <id>https://nldesignsystem.nl/blog/toegankelijke-naam-link-logo-header/</id>
+        <link href="https://nldesignsystem.nl/blog/toegankelijke-naam-link-logo-header/"/>
         <updated>2025-02-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het alt-attribuut van een afbeelding of via een aria-label op de link. Welke optie je kiest is afhankelijk van het framework, CMS, of Design System dat je gebruikt.]]></summary>
         <content type="html"><![CDATA[<p>Hoe geef je een link op een logo in de header een goede toegankelijke naam? We geven twee opties voor het toevoegen van de toegankelijke naam: via het <strong>alt-attribuut</strong> van een afbeelding of via een <strong>aria-label</strong> op de link. Welke optie je kiest is afhankelijk van het framework, CMS, of Design System dat je gebruikt.</p>
@@ -28,7 +28,7 @@ Je kunt er ook voor kiezen 'homepage' te wijzigen in 'voorpagina'.</p>
 <p>Gebruik je een afbeelding zoals een .gif, .png, .jpg of .svg, dan kun je het alt-attribuut gebruiken om de link een toegankelijke naam te geven. De inhoud van het alt-attribuut, de alt-tekst van een afbeelding binnen een link, wordt dan toegevoegd aan de linktekst.</p>
 <p>Laten we NL Design System als voorbeeld nemen.</p>
 <p>In de code (vereenvoudigd):</p>
-<span hidden="" id=":R5t5bah:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R5t5bah:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">https://nldesignsystem.nl/</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+<span hidden="" id=":R2uldeh:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R2uldeh:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">https://nldesignsystem.nl/</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">img</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">alt</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">NL Design System logo, naar de homepage</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">src</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">logo-nlds.svg</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
@@ -45,7 +45,7 @@ Je kunt er ook voor kiezen 'homepage' te wijzigen in 'voorpagina'.</p>
 <h3 id="bij-een-afbeelding" class="utrecht-heading-3">Bij een afbeelding</h3>
 <p>Wanneer de toegankelijke naam met een <code class="utrecht-code">aria-label</code> in het <code class="utrecht-code">&lt;a&gt;</code>-element staat, overschrijft dit alle inhoud binnen de link, dus de inhoud van het alt-attribuut van de afbeelding wordt ook niet voorgelezen. Geef de afbeelding zelf wel een goede alt-tekst mee, zeker als je de afbeelding vaak hergebruikt op de website.</p>
 <p>In de code (vereenvoudigd):</p>
-<span hidden="" id=":Rbd5bah:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rbd5bah:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">NL Design System logo, naar de homepage</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">https://nldesignsystem.nl/</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+<span hidden="" id=":R5mldeh:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R5mldeh:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">NL Design System logo, naar de homepage</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">https://nldesignsystem.nl/</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">img</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">alt</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">NL Design System logo</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">src</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">logo-nlds.svg</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
@@ -53,7 +53,7 @@ Je kunt er ook voor kiezen 'homepage' te wijzigen in 'voorpagina'.</p>
 <p>Het voordeel van een <code class="utrecht-code">aria-label</code> bij de SVG gebruiken in plaats van <a href="https://www.tpgi.com/using-aria-enhance-svg-accessibility/" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">&lt;title&gt;</code> en <code class="utrecht-code">aria-labelledby</code></a>, is dat er geen tooltip verschijnt als je over het logo hovert met de muis.</p>
 <p>Ook hier: logo moet op zichzelf kunnen staan als het herbruikbaar is en krijgt daarom een <code class="utrecht-code">role="img"</code> mee en <code class="utrecht-code">aria-label="NL Design System logo"</code> als toegankelijke naam. Begin hier weer met de zichtbare tekst.</p>
 <p>In de code (vereenvoudigd):</p>
-<span hidden="" id=":Rdt5bah:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdt5bah:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">NL Design System logo, naar de homepage</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">https://nldesignsystem.nl/</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+<span hidden="" id=":R6uldeh:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R6uldeh:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">NL Design System logo, naar de homepage</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">https://nldesignsystem.nl/</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">svg</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">aria-label</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">NL Design System logo</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">role</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">img</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">[...]</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">svg</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
@@ -74,7 +74,7 @@ Je kunt er ook voor kiezen 'homepage' te wijzigen in 'voorpagina'.</p>
 <p>Het <a href="https://nldesignsystem.nl/wcag/2.5.3/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 2.5.3 Label in naam</a> stelt: Voor bedieningselementen met een zichtbaar label, moet de zichtbare labeltekst aanwezig zijn in of overeenkomen met de toegankelijke naam.</p>
 <p>Dus nee, deze constructie is geen overtreding. De zichtbare naam staat in de alt-tekst of in het aria-label, die de toegankelijke naam van de link wordt. Het toevoegen van extra context aan de link is gebruikelijk.</p>
 <p>Vergelijk dit met de beruchte "Lees meer"-link. Een veelvoorkomend patroon is om een sr-only CSS-class (of gelijkwaardig) te gebruiken met extra tekst:</p>
-<span hidden="" id=":Rld5bah:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rld5bah:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+<span hidden="" id=":Ramldeh:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Ramldeh:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">url</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  Lees meer</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">sr-only</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">"</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"> over de eikenprocessierups</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">span</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">a</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">.</span>
@@ -95,14 +95,14 @@ Deze blogpost bevat een groot deel van de inhoud van het Engelstalige artikel <a
             <name>Rian Rietveld</name>
             <uri>https://www.linkedin.com/in/rianrietveld/</uri>
         </author>
-        <category label="link" term="link"/>
-        <category label="logo" term="logo"/>
-        <category label="toegankelijke naam" term="toegankelijke naam"/>
+        <category label="Link" term="Link"/>
+        <category label="Logo" term="Logo"/>
+        <category label="Toegankelijke naam" term="Toegankelijke naam"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Tips om in 9 stappen je A-status te halen]]></title>
-        <id>https://nldesignsystem.nl/blog/tips-9-stappen-A-status-website</id>
-        <link href="https://nldesignsystem.nl/blog/tips-9-stappen-A-status-website"/>
+        <id>https://nldesignsystem.nl/blog/tips-9-stappen-A-status-website/</id>
+        <link href="https://nldesignsystem.nl/blog/tips-9-stappen-A-status-website/"/>
         <updated>2025-02-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Stappenplan voor de ontwikkeling van een toegankelijk webproject met het NL Design System. We nemen je aan de hand mee in het hele proces van begin tot eind, en vertellen je hoe het NL Design System in combinatie met de richtlijnen voor toegankelijkheid je hierbij kan helpen.]]></summary>
         <content type="html"><![CDATA[<p>Stappenplan voor de ontwikkeling van een toegankelijk webproject met het NL Design System. We nemen je aan de hand mee in het hele proces van begin tot eind, en vertellen je hoe het NL Design System in combinatie met de richtlijnen voor toegankelijkheid je hierbij kan helpen.</p>
@@ -264,13 +264,13 @@ Laat dan een officiële <a href="https://www.digitoegankelijk.nl/toegankelijkhei
             <uri>https://www.linkedin.com/in/rianrietveld/</uri>
         </author>
         <category label="A status" term="A status"/>
-        <category label="toegankelijkheid" term="toegankelijkheid"/>
-        <category label="toegankelijkheidsverklaring" term="toegankelijkheidsverklaring"/>
+        <category label="Toegankelijkheid" term="Toegankelijkheid"/>
+        <category label="Toegankelijkheidsverklaring" term="Toegankelijkheidsverklaring"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Design systems bij Logius: hoe één design system meerdere producten ondersteunt]]></title>
-        <id>https://nldesignsystem.nl/blog/een-design-system-meerdere-producten</id>
-        <link href="https://nldesignsystem.nl/blog/een-design-system-meerdere-producten"/>
+        <id>https://nldesignsystem.nl/blog/een-design-system-meerdere-producten/</id>
+        <link href="https://nldesignsystem.nl/blog/een-design-system-meerdere-producten/"/>
         <updated>2024-07-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Vorig jaar ging het design system team van Logius, de organisatie die achter onder andere DigiD en MijnOverheid zit, samenwerken met de NL Design System community. We spraken met Aline Nap en Raoul Wittenberns over hun ervaringen.]]></summary>
         <content type="html"><![CDATA[<p>Vorig jaar ging het design system team van Logius, de organisatie die achter onder andere DigiD en MijnOverheid zit, samenwerken met de NL Design System community. We spraken met Aline Nap en Raoul Wittenberns over hun ervaringen.</p>
@@ -300,15 +300,15 @@ Laat dan een officiële <a href="https://www.digitoegankelijk.nl/toegankelijkhei
             <name>Renate Bruinenberg</name>
             <uri>https://www.linkedin.com/in/renate-bruinenberg-886019163/</uri>
         </author>
-        <category label="logius" term="logius"/>
+        <category label="Logius" term="Logius"/>
         <category label="NL Design System" term="NL Design System"/>
-        <category label="componenten" term="componenten"/>
-        <category label="gebruikersonderzoeken" term="gebruikersonderzoeken"/>
+        <category label="Componenten" term="Componenten"/>
+        <category label="Gebruikersonderzoeken" term="Gebruikersonderzoeken"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Toegankelijke foutmeldingen in formulieren]]></title>
-        <id>https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren</id>
-        <link href="https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren"/>
+        <id>https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren/</id>
+        <link href="https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren/"/>
         <updated>2024-06-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hoe geef je een gebruiker nuttige informatie over wat er niet goed gaat bij het invullen van een formulier? Wanneer je zorg besteedt aan het voorkomen en aangeven van fouten, is de kans dat een gebruiker het formulier verzendt veel groter.]]></summary>
         <content type="html"><![CDATA[<p>Hoe geef je een gebruiker nuttige informatie over wat er niet goed gaat bij het invullen van een formulier? Wanneer je zorg besteedt aan het voorkomen en aangeven van fouten, is de kans dat een gebruiker het formulier verzendt veel groter.</p>
@@ -401,15 +401,15 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <name>Rian Rietveld</name>
             <uri>https://www.linkedin.com/in/rianrietveld/</uri>
         </author>
-        <category label="formulieren" term="formulieren"/>
-        <category label="toegankelijkheid" term="toegankelijkheid"/>
-        <category label="richtlijnen" term="richtlijnen"/>
+        <category label="Formulieren" term="Formulieren"/>
+        <category label="Toegankelijkheid" term="Toegankelijkheid"/>
+        <category label="Richtlijnen" term="Richtlijnen"/>
         <category label="NL Design System" term="NL Design System"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Van eigen componenten naar open source “blocks” voor WordPress]]></title>
-        <id>https://nldesignsystem.nl/blog/community-blocks</id>
-        <link href="https://nldesignsystem.nl/blog/community-blocks"/>
+        <id>https://nldesignsystem.nl/blog/community-blocks/</id>
+        <link href="https://nldesignsystem.nl/blog/community-blocks/"/>
         <updated>2024-05-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Met NL Design System community blocks wordt het nog makkelijker om NL Design System-componenten te gebruiken in WordPress. De grote aanjager van deze plug-in is de gemeente Den Haag, die hier met hun leverancier Acato aan werkten. We spraken Tom Dekker van Acato over het proces.]]></summary>
         <content type="html"><![CDATA[<p>Met <a href="https://github.com/nl-design-system/nlds-community-blocks" class="utrecht-link utrecht-link--html-a">NL Design System community blocks</a> wordt het nog makkelijker om NL Design System-componenten te gebruiken in WordPress. De grote aanjager van deze plug-in is de gemeente Den Haag, die hier met hun leverancier Acato aan werkten. We spraken Tom Dekker van Acato over het proces.</p>
@@ -431,13 +431,13 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <uri>https://www.linkedin.com/in/renate-bruinenberg-886019163/</uri>
         </author>
         <category label="WordPress" term="WordPress"/>
-        <category label="developers" term="developers"/>
+        <category label="Developers" term="Developers"/>
         <category label="NL Design System" term="NL Design System"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Samen aan de slag met het esta­fette­­mo­del]]></title>
-        <id>https://nldesignsystem.nl/blog/design-open-dag</id>
-        <link href="https://nldesignsystem.nl/blog/design-open-dag"/>
+        <id>https://nldesignsystem.nl/blog/design-open-dag/</id>
+        <link href="https://nldesignsystem.nl/blog/design-open-dag/"/>
         <updated>2024-03-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Gisteren was er weer een samenwerkdag met ontwerpers uit de NL Design System community. De ochtend stond in het thema van het estafettemodel, waarin we een eerste component hebben gecheckt op onze aangescherpte ‘definition of done’.]]></summary>
         <content type="html"><![CDATA[<p>Gisteren was er weer een samenwerkdag met ontwerpers uit de NL Design System community. De ochtend stond in het thema van het <a href="https://nldesignsystem.nl/handboek/estafettemodel/" class="utrecht-link utrecht-link--html-a">estafettemodel</a>, waarin we een eerste component hebben gecheckt op onze aangescherpte ‘definition of done’.</p>
@@ -459,15 +459,15 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <name>Hidde de Vries</name>
             <uri>https://www.linkedin.com/in/hiddedevries/</uri>
         </author>
-        <category label="meta" term="meta"/>
-        <category label="estafettemodel" term="estafettemodel"/>
-        <category label="designers" term="designers"/>
+        <category label="Meta" term="Meta"/>
+        <category label="Estafettemodel" term="Estafettemodel"/>
+        <category label="Designers" term="Designers"/>
         <category label="NL Design System" term="NL Design System"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Lessen vanuit de gebruikerstest formulieren met Haagse ondernemers]]></title>
-        <id>https://nldesignsystem.nl/blog/gebruikerstest-ondernemers-den-haag</id>
-        <link href="https://nldesignsystem.nl/blog/gebruikerstest-ondernemers-den-haag"/>
+        <id>https://nldesignsystem.nl/blog/gebruikerstest-ondernemers-den-haag/</id>
+        <link href="https://nldesignsystem.nl/blog/gebruikerstest-ondernemers-den-haag/"/>
         <updated>2024-03-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Veel online aanvragen verlopen niet direct soepel. Denk hierbij aan foutmeldingen, onvolledig ingevulde vergunningsaanvragen en ontbrekende bijlagen. Dit is niet alleen vervelend voor de aanvrager, maar ook voor degene die de aanvraag moet behandelen. Daarom deed de gemeente Den Haag onderzoek naar een nieuw ontwerp voor de vergunningsaanvraag voor ondernemers. Onderzoeker Margo Welling en UX-designer Ananta Mulyono vertellen over het onderzoek en delen hun belangrijkste inzichten.]]></summary>
         <content type="html"><![CDATA[<p>Veel online aanvragen verlopen niet direct soepel. Denk hierbij aan foutmeldingen, onvolledig ingevulde vergunningsaanvragen en ontbrekende bijlagen. Dit is niet alleen vervelend voor de aanvrager, maar ook voor degene die de aanvraag moet behandelen. Daarom deed de gemeente Den Haag onderzoek naar een nieuw ontwerp voor de vergunningsaanvraag voor ondernemers. Onderzoeker Margo Welling en UX-designer Ananta Mulyono vertellen over het onderzoek en delen hun belangrijkste inzichten.</p>
@@ -496,13 +496,13 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <name>Renate Bruinenberg</name>
             <uri>https://www.linkedin.com/in/renate-bruinenberg-886019163/</uri>
         </author>
-        <category label="meta" term="meta"/>
+        <category label="Meta" term="Meta"/>
         <category label="NL Design System" term="NL Design System"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Ik wil je wat vragen, maar ik heb geen WhatsApp!]]></title>
-        <id>https://nldesignsystem.nl/blog/meerdere-manieren-contact</id>
-        <link href="https://nldesignsystem.nl/blog/meerdere-manieren-contact"/>
+        <id>https://nldesignsystem.nl/blog/meerdere-manieren-contact/</id>
+        <link href="https://nldesignsystem.nl/blog/meerdere-manieren-contact/"/>
         <updated>2024-03-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Je ziet het steeds vaker staan op overheidswebsites: ‘Stuur ons een WhatsApp-bericht’. Maar contact opnemen met een gemeente of bedrijf is meer dan een appje sturen. Niet iedereen kan namelijk bellen, WhatsAppen of langskomen op het stadskantoor. Als er dan geen alternatief is, laat je je bezoek in de steek. Daarom is het beter om meerdere contactmanieren aan te bieden, zodat mensen een keuze hebben. Ga uit van je bezoeker in plaats van je eigen werkwijze of gemak.]]></summary>
         <content type="html"><![CDATA[<p>Je ziet het steeds vaker staan op overheidswebsites: ‘Stuur ons een WhatsApp-bericht’. Maar contact opnemen met een gemeente of bedrijf is meer dan een appje sturen. Niet iedereen kan namelijk bellen, WhatsAppen of langskomen op het stadskantoor. Als er dan geen alternatief is, laat je je bezoek in de steek. Daarom is het beter om meerdere contactmanieren aan te bieden, zodat mensen een keuze hebben. Ga uit van je bezoeker in plaats van je eigen werkwijze of gemak.</p>
@@ -557,13 +557,13 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <name>Rian Rietveld</name>
             <uri>https://www.linkedin.com/in/rianrietveld/</uri>
         </author>
-        <category label="toegankelijkheid" term="toegankelijkheid"/>
+        <category label="Toegankelijkheid" term="Toegankelijkheid"/>
         <category label="NL Design System" term="NL Design System"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Over de licentiekeuze van NL Design System]]></title>
-        <id>https://nldesignsystem.nl/blog/licentiekeuze-nl-design-system</id>
-        <link href="https://nldesignsystem.nl/blog/licentiekeuze-nl-design-system"/>
+        <id>https://nldesignsystem.nl/blog/licentiekeuze-nl-design-system/</id>
+        <link href="https://nldesignsystem.nl/blog/licentiekeuze-nl-design-system/"/>
         <updated>2024-02-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bij NL Design System hebben we er heel bewust voor gekozen om alles open source beschikbaar maken. Zo kunnen we niet alleen makkelijker samenwerken, het maakt ook onze code echt herbruikbaar. De manier waarop we dat doen: licenties!]]></summary>
         <content type="html"><![CDATA[<p>Bij NL Design System hebben we er heel bewust voor gekozen om alles open source beschikbaar maken. Zo kunnen we niet alleen makkelijker samenwerken, het maakt ook onze code echt herbruikbaar. De manier waarop we dat doen: licenties!</p>
@@ -582,13 +582,13 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <name>Renate Bruinenberg</name>
             <uri>https://www.linkedin.com/in/renate-bruinenberg-886019163/</uri>
         </author>
-        <category label="meta" term="meta"/>
+        <category label="Meta" term="Meta"/>
         <category label="NL Design System" term="NL Design System"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[NL Design System nu als zelfstandig project verder]]></title>
-        <id>https://nldesignsystem.nl/blog/nl-design-system-zelfstandig-verder</id>
-        <link href="https://nldesignsystem.nl/blog/nl-design-system-zelfstandig-verder"/>
+        <id>https://nldesignsystem.nl/blog/nl-design-system-zelfstandig-verder/</id>
+        <link href="https://nldesignsystem.nl/blog/nl-design-system-zelfstandig-verder/"/>
         <updated>2024-01-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Vanaf 2024 gaat NL Design System verder als zelfstandig project. We spreken Victor Zuydweg (initiatiefnemer Gebruiker Centraal) en Peter Berrevoets (projectleider NL Design System) over toen en nu.]]></summary>
         <content type="html"><![CDATA[<p>Vanaf 2024 gaat NL Design System verder als zelfstandig project. We spreken Victor Zuydweg (initiatiefnemer Gebruiker Centraal) en Peter Berrevoets (projectleider NL Design System) over toen en nu.</p>
@@ -620,13 +620,13 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <name>Hidde de Vries</name>
             <uri>https://www.linkedin.com/in/hiddedevries/</uri>
         </author>
-        <category label="meta" term="meta"/>
+        <category label="Meta" term="Meta"/>
         <category label="NL Design System" term="NL Design System"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Rian en Francesca aanwezig bij Community Online Formulieren ]]></title>
-        <id>https://nldesignsystem.nl/blog/community-online-formulieren</id>
-        <link href="https://nldesignsystem.nl/blog/community-online-formulieren"/>
+        <id>https://nldesignsystem.nl/blog/community-online-formulieren/</id>
+        <link href="https://nldesignsystem.nl/blog/community-online-formulieren/"/>
         <updated>2023-12-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Op donderdag 7 december kwam de Community Online Formulieren van Gebruiker Centraal bij elkaar. Francesca Vonk en Rian Rietveld waren uitgenodigd om meer te vertellen over de richtlijnen voor formulieren én over het testen met gebruikers.]]></summary>
         <content type="html"><![CDATA[<p>Op donderdag 7 december kwam de <a href="https://www.gebruikercentraal.nl/community-online-formulieren/" class="utrecht-link utrecht-link--html-a">Community Online Formulieren</a> van Gebruiker Centraal bij elkaar. Francesca Vonk en Rian Rietveld waren uitgenodigd om meer te vertellen over de richtlijnen voor formulieren én over het testen met gebruikers.</p>
@@ -662,12 +662,12 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <uri>https://www.linkedin.com/in/renate-bruinenberg-886019163/</uri>
         </author>
         <category label="NL Design System" term="NL Design System"/>
-        <category label="formulieren" term="formulieren"/>
+        <category label="Formulieren" term="Formulieren"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Testen met Wmebv-formulieren: eerste lessen]]></title>
-        <id>https://nldesignsystem.nl/blog/wmebv-gebruikerstesten</id>
-        <link href="https://nldesignsystem.nl/blog/wmebv-gebruikerstesten"/>
+        <id>https://nldesignsystem.nl/blog/wmebv-gebruikerstesten/</id>
+        <link href="https://nldesignsystem.nl/blog/wmebv-gebruikerstesten/"/>
         <updated>2023-11-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In de afgelopen maanden werkte het NL Design System kernteam samen met VNG aan generieke formulieren. Vorige week testten we ze met gebruikers bij Stichting Accessibility in Utrecht.]]></summary>
         <content type="html"><![CDATA[<p>In de afgelopen maanden werkte het NL Design System kernteam samen met VNG aan generieke formulieren. Vorige week testten we ze met gebruikers bij Stichting Accessibility in Utrecht.</p>
@@ -699,13 +699,13 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <uri>https://www.linkedin.com/in/hiddedevries/</uri>
         </author>
         <category label="NL Design System" term="NL Design System"/>
-        <category label="gebruikerstesten" term="gebruikerstesten"/>
-        <category label="formulieren" term="formulieren"/>
+        <category label="Gebruikerstesten" term="Gebruikerstesten"/>
+        <category label="Formulieren" term="Formulieren"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Spacing tokens als systeem voor verticale ruimte]]></title>
-        <id>https://nldesignsystem.nl/blog/spacing-tokens</id>
-        <link href="https://nldesignsystem.nl/blog/spacing-tokens"/>
+        <id>https://nldesignsystem.nl/blog/spacing-tokens/</id>
+        <link href="https://nldesignsystem.nl/blog/spacing-tokens/"/>
         <updated>2023-11-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in de Design Open Hour.]]></summary>
         <content type="html"><![CDATA[<p>Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGemeenten bij elkaar om te spreken over design tokens voor spacing: de ruimte tussen de verschillende componenten. Designer Jeroen du Chatinier van de Gemeente Utrecht vertelde erover in de Design Open Hour.</p>
@@ -717,7 +717,7 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 </ul>
 <h2 id="relaties-versus-afstanden" class="utrecht-heading-2">Relaties versus afstanden</h2>
 <p>Tijdens de workshop werden verschillende relaties tussen componenten bedacht: “vrienden” staan dicht bij elkaar, “besties” heel dicht en “kennissen” nemen wat meer afstand. Elk van deze relaties krijgt een bepaalde waarde, bijvoorbeeld:</p>
-<span hidden="" id=":R3d5bah:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R3d5bah:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">onbekenden</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 32px</span>
+<span hidden="" id=":R1mldeh:">codevoorbeeld <!-- --> <!-- --> </span><pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R1mldeh:" style="color:var(--nlds-code-block-color);background-color:var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">onbekenden</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 32px</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">kennissen</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 24px</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">vrienden</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 16px</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">besties</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> 8px</span>
@@ -743,12 +743,12 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <uri>https://www.linkedin.com/in/hiddedevries/</uri>
         </author>
         <category label="NL Design System" term="NL Design System"/>
-        <category label="design tokens" term="design tokens"/>
+        <category label="Design Tokens" term="Design Tokens"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Design Systems Week 2023 komt eraan!]]></title>
-        <id>https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan</id>
-        <link href="https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan"/>
+        <id>https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan/</id>
+        <link href="https://nldesignsystem.nl/blog/design-systems-week-2023-komt-eraan/"/>
         <updated>2023-09-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In zo’n 20-25 minuten leren over design systems van experts van bijvoorbeeld GOV.UK, GitHub en Kamer van Koophandel? Net als vorig jaar organiseert het NL Design System-kernteam een Design Systems Week.]]></summary>
         <content type="html"><![CDATA[<p>In zo’n 20-25 minuten leren over design systems van experts van bijvoorbeeld GOV.UK, GitHub en Kamer van Koophandel? Net als vorig jaar organiseert het NL Design System-kernteam een Design Systems Week.</p>
@@ -775,12 +775,12 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <uri>https://www.linkedin.com/in/hiddedevries/</uri>
         </author>
         <category label="NL Design System" term="NL Design System"/>
-        <category label="design systems week" term="design systems week"/>
+        <category label="Design Systems Week" term="Design Systems Week"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[NL Design System gebruikt als eerste nieuwe Gebruiker Centraal-lettertype]]></title>
-        <id>https://nldesignsystem.nl/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype</id>
-        <link href="https://nldesignsystem.nl/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype"/>
+        <id>https://nldesignsystem.nl/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype/</id>
+        <link href="https://nldesignsystem.nl/blog/nl-design-system-gebruikt-als-eerste-nieuwe-gebruiker-centraal-lettertype/"/>
         <updated>2023-04-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Al vanaf het begin gebruikt Gebruiker Centraal de lettertypes Montserrat en League Gothic. Dat gaat veranderen, te beginnen bij NL Design System. We leggen je graag uit waarom.]]></summary>
         <content type="html"><![CDATA[<p>Al vanaf het begin gebruikt Gebruiker Centraal de lettertypes Montserrat en League Gothic. Dat gaat veranderen, te beginnen bij NL Design System. We leggen je graag uit waarom.</p>
@@ -791,14 +791,14 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <name>Jeroen Schalk</name>
             <uri>https://linkedin.com/in/ietsvanjeroen/</uri>
         </author>
-        <category label="lettertype" term="lettertype"/>
+        <category label="Lettertype" term="Lettertype"/>
         <category label="NL Design System" term="NL Design System"/>
         <category label="Gebruiker Centraal" term="Gebruiker Centraal"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[De mijlpalen van 2022]]></title>
-        <id>https://nldesignsystem.nl/blog/de-mijlpalen-van-2022</id>
-        <link href="https://nldesignsystem.nl/blog/de-mijlpalen-van-2022"/>
+        <id>https://nldesignsystem.nl/blog/de-mijlpalen-van-2022/</id>
+        <link href="https://nldesignsystem.nl/blog/de-mijlpalen-van-2022/"/>
         <updated>2022-12-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Eind vorig jaar hebben we samen met de community stilgestaan bij de plannen en werkzaamheden voor 2022. Nu het jaar er bijna op zit, is het dan ook tijd om terug te blikken en te kijken naar wat er allemaal gedaan is. Eén ding is zeker; 2022 was een druk jaar.]]></summary>
         <content type="html"><![CDATA[<p>Eind vorig jaar hebben we samen met de community stilgestaan bij de plannen en werkzaamheden voor 2022. Nu het jaar er bijna op zit, is het dan ook tijd om terug te blikken en te kijken naar wat er allemaal gedaan is. Eén ding is zeker; 2022 was een druk jaar.</p>
@@ -817,13 +817,13 @@ De drukbezochte Design Systems Week. Gemist? Geen nood: <a href="https://nldesig
             <name>Laura van Swigchum</name>
             <uri>https://www.linkedin.com/in/lauravanswigchum/</uri>
         </author>
-        <category label="mijlpalen" term="mijlpalen"/>
+        <category label="Mijlpalen" term="Mijlpalen"/>
         <category label="NL Design System" term="NL Design System"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Een dag uit het leven van een ontwerper bij het NL Design System]]></title>
-        <id>https://nldesignsystem.nl/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system</id>
-        <link href="https://nldesignsystem.nl/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system"/>
+        <id>https://nldesignsystem.nl/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system/</id>
+        <link href="https://nldesignsystem.nl/blog/een-dag-uit-het-leven-van-een-ontwerper-bij-het-nl-design-system/"/>
         <updated>2022-07-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Een dag als ontwerper bij het NL Design System ziet er heel anders uit dan bij andere design systems. Dit komt mede doordat het NL Design System geen ‘traditioneel’ design system is met slechts een enkele huisstijl. In dit artikel leg ik als ontwerper uit hoe de werkzaamheden bij het NL Design System eruit zien.]]></summary>
         <content type="html"><![CDATA[<p>Een dag als ontwerper bij het NL Design System ziet er heel anders uit dan bij andere design systems. Dit komt mede doordat het NL Design System geen ‘traditioneel’ design system is met slechts een enkele huisstijl. In dit artikel leg ik als ontwerper uit hoe de werkzaamheden bij het NL Design System eruit zien.</p>
@@ -853,8 +853,8 @@ De drukbezochte Design Systems Week. Gemist? Geen nood: <a href="https://nldesig
     </entry>
     <entry>
         <title type="html"><![CDATA[Bryan de Jong vertelt over zijn ervaring met het NL Design System]]></title>
-        <id>https://nldesignsystem.nl/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system</id>
-        <link href="https://nldesignsystem.nl/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system"/>
+        <id>https://nldesignsystem.nl/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system/</id>
+        <link href="https://nldesignsystem.nl/blog/bryan-de-jong-vertelt-over-zijn-ervaring-met-het-nl-design-system/"/>
         <updated>2022-06-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Front-end developer Bryan de Jong werkte mee aan het ontwikkelen van een nieuw design system voor de gemeente Den Haag, met behulp van het NL Design System. Inmiddels gaat hij zijn vleugels uitspreiden in het buitenland en blikt terug op de samenwerking met het team van het NL Design System.]]></summary>
         <content type="html"><![CDATA[<p>Front-end developer Bryan de Jong werkte mee aan het ontwikkelen van een nieuw design system voor de gemeente Den Haag, met behulp van het NL Design System. Inmiddels gaat hij zijn vleugels uitspreiden in het buitenland en blikt terug op de samenwerking met het team van het NL Design System.</p>
@@ -878,8 +878,8 @@ De drukbezochte Design Systems Week. Gemist? Geen nood: <a href="https://nldesig
     </entry>
     <entry>
         <title type="html"><![CDATA[NL Design System in 2021]]></title>
-        <id>https://nldesignsystem.nl/blog/nl-design-system-in-2021</id>
-        <link href="https://nldesignsystem.nl/blog/nl-design-system-in-2021"/>
+        <id>https://nldesignsystem.nl/blog/nl-design-system-in-2021/</id>
+        <link href="https://nldesignsystem.nl/blog/nl-design-system-in-2021/"/>
         <updated>2021-12-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Het was weer een bijzonder jaar. Zeker ook voor NL Design System. En we zijn blij dat we zoveel hebben kunnen bereiken en trots op de mooie resultaten die we hebben geboekt. We blikken graag terug op het afgelopen jaar.]]></summary>
         <content type="html"><![CDATA[<p>Het was weer een bijzonder jaar. Zeker ook voor NL Design System. En we zijn blij dat we zoveel hebben kunnen bereiken en trots op de mooie resultaten die we hebben geboekt. We blikken graag terug op het afgelopen jaar.</p>
@@ -945,8 +945,8 @@ Angela, Robbert, Yolijn &amp; Rogier</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Over Figma als keuze voor het NL Design System]]></title>
-        <id>https://nldesignsystem.nl/blog/over-figma-als-keuze-voor-het-nl-design-system</id>
-        <link href="https://nldesignsystem.nl/blog/over-figma-als-keuze-voor-het-nl-design-system"/>
+        <id>https://nldesignsystem.nl/blog/over-figma-als-keuze-voor-het-nl-design-system/</id>
+        <link href="https://nldesignsystem.nl/blog/over-figma-als-keuze-voor-het-nl-design-system/"/>
         <updated>2021-12-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Alles over Figma, de tool voor het ontwerpen van de componenten en patronen, en waarom we dat bij NL Design System gebruiken.]]></summary>
         <content type="html"><![CDATA[<p>Alles over Figma, de tool voor het ontwerpen van de componenten en patronen, en waarom we dat bij NL Design System gebruiken.</p>
