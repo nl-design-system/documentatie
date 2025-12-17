@@ -42,6 +42,8 @@ We gebruiken `nvm` om te voorkomen dat developers met verschillende Node.js-vers
 De Node.js-versie staat op meerdere plekken:
 
 - `.nvmrc`
-- GitHub Actions: via `actions/setup-node` gebruiken GitHub Action workflows meestal de versie uit `.nvmrc`. Sommige actions hanteren een eigen versie; lees hiervoor de documentatie van de action.
+- GitHub Actions: via `actions/setup-node` gebruiken GitHub Action workflows de versie uit `.nvmrc`. Sommige actions hanteren een eigen versie; lees hiervoor de documentatie van de action.
 - `package.json`: in het `engines.node`-veld specificeer je de ondersteunde versie-range. Met `engine-script=true` in `.npmrc` dwing je dit af.
 - `Dockerfile`s: als je project Docker gebruikt, is de base image meestal gebaseerd op een specifieke Node.js-versie.
+
+Het is een goede praktijk om de Node.js-versie op zo min mogelijk plekken vast te leggen, zodat de kans klein is dat versies uit elkaar lopen en upgraden makkelijker wordt gemaakt.
