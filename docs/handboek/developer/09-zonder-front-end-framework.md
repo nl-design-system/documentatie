@@ -625,6 +625,21 @@ Hiervoor in de plaats voeg je jouw eigen design tokens toe:
 
 Mocht je nog geen eigen thema hebben, dan kun je een thema maken op basis van het [start-thema](https://nldesignsystem.nl/handboek/huisstijl/themas/start-thema/). Het [voorbeeld-thema](https://nldesignsystem.nl/handboek/huisstijl/themas/voorbeeld-thema/#voorbeeld-thema) is hierop gebaseerd en dient als voorbeeld hoe je dit ook zou kunnen bereiken met je eigen thema.
 
+Bij het maken van een eigen thema bepaal je hoe de NL Design System-componenten eruitzien binnen jouw huisstijl. Dat doe je door het definiëren van **design tokens**: herbruikbare variabelen voor onder andere kleuren, typografie, spacing, borders en states (hover, focus, disabled).
+
+Een eigen thema geeft je de vrijheid om:
+
+- de kleuren aan te passen aan je huisstijl (bijvoorbeeld primaire, secundaire en accentkleuren);
+- typografie te bepalen, zoals lettertypes, lettergroottes en regelhoogtes;
+- consistente marges, padding en afrondingen te gebruiken;
+- visuele details zoals schaduwen en focus-stijlen vast te leggen.
+
+Het start-thema biedt hiervoor een minimale, overzichtelijke basis. Je vult dit thema stap voor stap aan met je eigen tokens, waarbij je alleen hoeft te definiëren wat afwijkt van de standaard. Het voorbeeld-thema laat zien hoe zo’n volledige uitwerking eruit kan zien en kan dienen als inspiratie of referentie.
+
+Wanneer je een eigen thema gebruikt, is het gebruikelijk om ook je **eigen huisstijl-lettertypes** toe te voegen. Dit kan door fonts zelf te hosten of via een externe bron, en deze vervolgens via design tokens te koppelen aan de typografie-instellingen van het thema. Let daarbij op performance, licenties en fallback-fonts.
+
+Het is aan te raden om je thema iteratief op te bouwen en regelmatig te testen met verschillende componenten. Zo zie je snel of alle tokens goed zijn ingevuld en blijft je ontwerp consistent, toegankelijk en onderhoudbaar.
+
 Als je een eigen thema gebruikt, wil je waarschijnlijk ook je eigen huisstijl lettertypes (fonts) gebruiken.
 
 ### Manieren van fonts hosten en installeren
