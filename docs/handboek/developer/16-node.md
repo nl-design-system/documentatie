@@ -14,6 +14,15 @@ keywords:
   - versies
 ---
 
+<!--
+De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd:
+- Als developer wil ik weten welke Node.js versie ik moet gebruiken, zodat mijn code compatible is met NL Design System
+- Als Developer Relations engineer wil ik een link naar documentatie kunnen sturen, zodat mensen de juiste Node.js versie gebruiken
+- Als Developer Relations engineer wil ik voorkomen dat men Node.js update voordat Vercel het ondersteunt
+- Als Vers & Veilig Engineer wil ik dat de community de Node.js versie in hun hele codebase in sync houdt, en dit zoveel mogelijk zelf kan doen
+- Als Vers & Veilig Engineer wil ik dat de community de Node.js versie op zo min mogelijk plekken vastlegt zodat upgrades weinig werk zijn
+-->
+
 # Werken met Node.js
 
 Node.js is de JavaScript-runtime voor alles rondom NL Design System: build tooling, component libraries en scripts. Hiermee voer je JavaScript uit buiten de browser. Het vormt de basis van de meeste frontend-ecosystemen.
