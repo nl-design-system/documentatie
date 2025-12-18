@@ -31,7 +31,7 @@ Node.js is de JavaScript-runtime voor alles rondom NL Design System: build tooli
 
 Voor stabiliteit, veiligheid en voorspelbaarheid gebruikt NL Design System LTS-versies (long-term support) van Node.js. Deze versies ontvangen langere tijd security- en bugfix-updates en hebben betere ondersteuning van tooling en dependencies.
 
-Op de [website van Node.js](https://nodejs.org/) vind je de meest recente LTS-versie en de [ondersteuningsduur](https://nodejs.org/en/about/previous-releases). Ondersteunen platforms als GitHub of [Vercel](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions) een nieuwe versie nog niet? We raden dan aan te wachten met upgraden. De example-repository toont welke Node.js-versie NL Design System aanbeveelt.
+Op de [website van Node.js](https://nodejs.org/) vind je de meest recente LTS-versie en de [ondersteuningsduur](https://nodejs.org/en/about/previous-releases). Ondersteunen platforms als GitHub of [Vercel](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions) een nieuwe versie nog niet? We raden dan aan te wachten met upgraden. De [example-repository toont welke Node.js-versie](https://github.com/nl-design-system/example/blob/main/.nvmrc) NL Design System aanbeveelt.
 
 ## De juiste Node.js-versie installeren en gebruiken
 
