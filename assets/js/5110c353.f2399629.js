@@ -684,7 +684,7 @@
   },
   95068: (e, n, t) => {
    'use strict';
-   t.r(n), t.d(n, { assets: () => $, component: () => K, contentTitle: () => I, default: () => Q, description: () => U, frontMatter: () => H, issueNumber: () => X, metadata: () => r, title: () => Z, toc: () => J });
+   t.r(n), t.d(n, { assets: () => $, component: () => K, contentTitle: () => I, default: () => Q, description: () => U, frontMatter: () => V, issueNumber: () => X, metadata: () => r, title: () => Z, toc: () => J });
    const r = JSON.parse('{"id":"componenten/button/index","title":"Button","description":"Biedt de mogelijkheid om een actie uit te voeren.","source":"@site/docs/componenten/button/index.mdx","sourceDirName":"componenten/button","slug":"/button","permalink":"/button","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/button/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Button","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Button","pagination_label":"Button","description":"Biedt de mogelijkheid om een actie uit te voeren.","slug":"/button","keywords":["actie","action","action button","activate","aria-expanded","aria-haspopup","aria-pressed","bezig","btn","busy","button","buttons","call to action","click","cta","disabled","icon button","indrukken","klikken","knoop","knop","knopje","knoppen","navigatie knop","press","pressed","send","submit","toggle","toggle button","uitgeschakeld","versturen","verzenden"]},"sidebar":"componenten","previous":{"title":"Breadcrumb Navigation","permalink":"/breadcrumb-navigation"},"next":{"title":"Calendar","permalink":"/calendar"}}');
    var i = t(86070),
     o = t(85248),
@@ -731,8 +731,8 @@
     x = t(25872),
     y = t(75978);
    function A(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'De focusvolgorde op de pagina en na het activeren van een Button moet logisch zijn. Zorg dat het voorspelbaar is waar de toetsenbordfocus heen gaat na het activeren van een knop.' }), '\n', (0, i.jsx)(n.p, { children: "Over het algemeen geldt: wanneer een button nieuwe content opent, zoals een dialoogvenster of een menu, verplaats je de toetsenbordfocus naar een logische plek in de nieuwe content. Bijvoorbeeld: Na het openen van een 'Menu' button verplaatst de toetsenbordfocus naar het eerste menu-item. Nadat de bezoeker de nieuwe content weer heeft gesloten verplaatst de toetsenbordfocus zich weer terug naar de 'Menu' button." }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toetsenbordbediening/', children: 'Toetsenbordbediening van een button' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/disabled-submitbuttons/', children: 'Disabled submitbuttons' }) }), '\n'] })] });
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'De focusvolgorde op de pagina en na het activeren van een Button moet logisch zijn. Zorg dat het voorspelbaar is waar de toetsenbordfocus heen gaat na het activeren van een knop.' }), '\n', (0, i.jsx)(n.p, { children: "Over het algemeen geldt: wanneer een button nieuwe content opent, zoals een dialoogvenster of een menu, verplaats je de toetsenbordfocus naar een logische plek in de nieuwe content. Bijvoorbeeld: Na het openen van een 'Menu' button verplaatst de toetsenbordfocus naar het eerste menu-item. Nadat de bezoeker de nieuwe content weer heeft gesloten verplaatst de toetsenbordfocus zich weer terug naar de 'Menu' button." }), '\n', (0, i.jsxs)(n.p, { children: ['Plaats interactieve elementen op een logische plek in de DOM en vermijd het gebruik van ', (0, i.jsx)(n.code, { children: 'tabindex="1"' }), ' en hoger. Hiermee pas je de natuurlijke focusvolgorde op de pagina aan, waardoor fouten in de focusvolgorde kunnen ontstaan.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toetsenbordbediening/', children: 'Toetsenbordbediening van een button' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/disabled-submitbuttons/', children: 'Disabled submitbuttons' }) }), '\n'] })] });
    }
    function z(e = {}) {
     const { wrapper: n } = { ...(0, o.R)(), ...e.components };
@@ -772,8 +772,8 @@
     P = t(31820),
     B = t(8584),
     E = t(918),
-    V = t(50341);
-   const H = { title: 'Button', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Button', pagination_label: 'Button', description: 'Biedt de mogelijkheid om een actie uit te voeren.', slug: '/button', keywords: ['actie', 'action', 'action button', 'activate', 'aria-expanded', 'aria-haspopup', 'aria-pressed', 'bezig', 'btn', 'busy', 'button', 'buttons', 'call to action', 'click', 'cta', 'disabled', 'icon button', 'indrukken', 'klikken', 'knoop', 'knop', 'knopje', 'knoppen', 'navigatie knop', 'press', 'pressed', 'send', 'submit', 'toggle', 'toggle button', 'uitgeschakeld', 'versturen', 'verzenden'] },
+    H = t(50341);
+   const V = { title: 'Button', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Button', pagination_label: 'Button', description: 'Biedt de mogelijkheid om een actie uit te voeren.', slug: '/button', keywords: ['actie', 'action', 'action button', 'activate', 'aria-expanded', 'aria-haspopup', 'aria-pressed', 'bezig', 'btn', 'busy', 'button', 'buttons', 'call to action', 'click', 'cta', 'disabled', 'icon button', 'indrukken', 'klikken', 'knoop', 'knop', 'knopje', 'knoppen', 'navigatie knop', 'press', 'pressed', 'send', 'submit', 'toggle', 'toggle button', 'uitgeschakeld', 'versturen', 'verzenden'] },
     I = void 0,
     $ = {},
     Z = 'Button',
@@ -790,15 +790,15 @@
       '\n',
       '\n',
       '\n',
-      (0, i.jsx)(V.Fc, { component: K, headingLevel: 1, description: U }),
+      (0, i.jsx)(H.Fc, { component: K, headingLevel: 1, description: U }),
       '\n',
       (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
-      (0, i.jsx)(V.VK, { component: K, headingLevel: 3 }),
+      (0, i.jsx)(H.VK, { component: K, headingLevel: 3 }),
       '\n',
       (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
       '\n',
-      (0, i.jsx)(V.mu, { component: K, headingLevel: 3 }),
+      (0, i.jsx)(H.mu, { component: K, headingLevel: 3 }),
       '\n',
       (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
       '\n',
@@ -849,7 +849,7 @@
       '\n',
       (0, i.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
-      (0, i.jsx)(V.$9, { component: K, headingLevel: 3 }),
+      (0, i.jsx)(H.$9, { component: K, headingLevel: 3 }),
      ],
     });
    }

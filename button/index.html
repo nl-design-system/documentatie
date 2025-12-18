@@ -31,7 +31,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.492964ba.css" />
-  <script src="/assets/js/runtime~main.1040c869.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.e5f38616.js" defer="defer"></script>
   <script src="/assets/js/main.72a68603.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -1496,6 +1496,7 @@
                    <div>
                     <p>De focusvolgorde op de pagina en na het activeren van een Button moet logisch zijn. Zorg dat het voorspelbaar is waar de toetsenbordfocus heen gaat na het activeren van een knop.</p>
                     <p>Over het algemeen geldt: wanneer een button nieuwe content opent, zoals een dialoogvenster of een menu, verplaats je de toetsenbordfocus naar een logische plek in de nieuwe content. Bijvoorbeeld: Na het openen van een &#x27;Menu&#x27; button verplaatst de toetsenbordfocus naar het eerste menu-item. Nadat de bezoeker de nieuwe content weer heeft gesloten verplaatst de toetsenbordfocus zich weer terug naar de &#x27;Menu&#x27; button.</p>
+                    <p>Plaats interactieve elementen op een logische plek in de DOM en vermijd het gebruik van <code class="utrecht-code">tabindex=&quot;1&quot;</code> en hoger. Hiermee pas je de natuurlijke focusvolgorde op de pagina aan, waardoor fouten in de focusvolgorde kunnen ontstaan.</p>
                     <p>NL Design System richtlijnen:</p>
                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                      <li><a href="/richtlijnen/formulieren/buttons/toetsenbordbediening/" class="utrecht-link utrecht-link--html-a">Toetsenbordbediening van een button</a></li>
