@@ -39,11 +39,10 @@ We gebruiken nvm (Node Version Manager) om te voorkomen dat developers met versc
 
 ## Upgraden naar een nieuwe versie
 
-De Node.js-versie staat op meerdere plekken:
+De Node.js-versie staat ingesteld op de meerdere plekken in de code. We proberen de instellingen zo veel mogelijk centraal vast te leggen om upgrades makkelijk te maken. Pas de volgende bestanden aan om de Node.js versie te upgraden:
 
 - `.nvmrc`
 - GitHub Actions: via `actions/setup-node` gebruiken GitHub Action workflows de versie uit `.nvmrc`. Sommige actions hanteren een eigen versie; lees hiervoor de documentatie van de action.
 - `package.json`: in het `engines.node`-veld specificeer je de ondersteunde versie-range. Met `engine-script=true` in `.npmrc` dwing je dit af.
-- `Dockerfile`s: als je project Docker gebruikt, is de base image meestal gebaseerd op een specifieke Node.js-versie.
-
-Het is een goede praktijk om de Node.js-versie op zo min mogelijk plekken vast te leggen, zodat de kans klein is dat versies uit elkaar lopen en upgraden makkelijker wordt gemaakt.
+- De `@types/node` dependency is afgestemd op de Node.js middels de major versie. Bijvoorbeeld: voor Node.js 24 heeft `@types/node` ook versie `24.x`. (Om te voorkomen dat deze automatisch worden geüpgradet, worden [dependabot](https://github.com/nl-design-system/example/blob/main/.github/dependabot.yml) en [npm-check-updates](https://github.com/nl-design-system/example/blob/main/.ncurc.major.cjs) geconfigureerd deze dependency te negeren.)
+- `Dockerfile`s: als je project Docker gebruikt, wordt in de Dockerfile gespecificeerd welke Node.js-versie wordt gebruikt aan de hand van de tag van de base image. Kies een tag die overeenkomt, bijvoorbeeld `node:24` of `node:24-alpine`.
