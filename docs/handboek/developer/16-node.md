@@ -35,7 +35,7 @@ Op de [website van Node.js](https://nodejs.org/) vind je de meest recente LTS-ve
 
 ## De juiste Node.js-versie installeren en gebruiken
 
-We gebruiken NVM om te voorkomen dat developers met verschillende Node.js-versies werken. Met NVM gebruik je per project een specifieke versie. Sla de gewenste versie op in `.nvmrc` en voer `nvm use` uit. Op de [website van NVM](https://www.nvmnode.com/) lees je hoe je dit installeert en gebruikt.
+We gebruiken nvm (Node Version Manager) om te voorkomen dat developers met verschillende Node.js-versies werken. Met nvm gebruik je per project een specifieke versie. Sla de gewenste versie op in `.nvmrc` en voer `nvm use` uit. Op de [website van nvm](https://www.nvmnode.com/) lees je hoe je dit installeert en gebruikt.
 
 ## Upgraden naar een nieuwe versie
 
