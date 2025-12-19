@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.1 Toetsenbord
 pagination_label: WCAG-succescriterium 2.1.1 Toetsenbord
-description: Elke actie is uit te voeren met een toetsenbord.
+description: Alle functionaliteit is te gebruiken met een toetsenbord.
 slug: 2.1.1
 keywords:
   - WCAG
@@ -20,8 +20,7 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.1.1-summary.md";
@@ -30,92 +29,183 @@ import Summary from "./summaries/_2.1.1-summary.md";
   {"WCAG-succescriterium 2.1.1 Toetsenbord"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Elke actie is uit te voeren met een toetsenbord.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">
-      Acties die je kunt uitvoeren met een [aanwijzer](/woordenlijst/#aanwijzer) kunnen ook met een toetsenbord.
-    </dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Veel mensen zijn afhankelijk van bediening met het toetsenbord, onder andere mensen die blind zijn of een beperkte
-      mobiliteit hebben.
-    </dd>
-  </div>
-</dl>
+<Summary />
 
 ## Uitleg
 
-<Summary />
+Alle interactieve elementen op een pagina moet je kunnen bereiken **en** bedienen met het toetsenbord. Dit zijn bijvoorbeeld buttons, links, en invoervelden. In HTML zijn dit `<button>`, `<a>` en `<input>`.
 
-Het toetsenbord is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of een ander apparaat met aanwijzer gebruiken. Dit criterium is voor tal van hulpmiddelen die zich gedragen als een toetsenbord. Denk hierbij naast het toetsenbord aan een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar).
-
-### Hoe het hoort te werken
-
-Het is relatief laagdrempelig om verbeteringen te vinden voor dit criterium; een computer met toetsenbord volstaat. Dit zorgt ervoor dat velen een bijdrage kunnen leveren aan het voldoen aan dit criterium.
-
-- De interactieve onderdelen op een pagina moet je kunnen bereiken met <kbd>tab</kbd> en de combinatie <kbd>shift+tab</kbd>. <kbd>tab</kbd> navigeert je van het ene naar het andere interactieve element in een logische volgorde ([WCAG-successcriterium 2.4.3 Focus volgorde](/wcag/2.4.3)). <kbd>shift+tab</kbd> doet hetzelfde maar in omgekeerde volgorde.
-- Binnen een onderdeel zijn soms de pijltjestoetsen nodig. Denk hierbij aan groeperingen zoals radio-buttons, tabbladen en kalenders. Een groepering zoals een kalender is bereikbaar met <kbd>tab</kbd>. Losse dagen zijn daarna bereikbaar met pijltjestoetsen.
+- Je bereikt interactieve onderdelen op een pagina met <kbd>tab</kbd> en de combinatie <kbd>shift+tab</kbd>. <kbd>tab</kbd> navigeert je van het ene naar het andere interactieve onderdeel in een logische volgorde ([WCAG-successcriterium 2.4.3 Focus volgorde](/wcag/2.4.3)). <kbd>shift+tab</kbd> doet hetzelfde, maar in omgekeerde volgorde.
+- Bij onderdelen met eigen subonderdeel zijn pijltjestoetsen nodig. Voorbeelden zijn radio-buttons, sliders, tabbladen en kalenders. Een groepering zoals een kalender is bereikbaar met <kbd>tab</kbd>. Losse dagen zijn daarna bereikbaar met pijltjestoetsen.
 - Het activeren of bedienen van elementen moet ook met het toetsenbord kunnen.
-  - Een link is te activeren met <kbd>return/enter</kbd>.
-  - Een knop is daarnaast te activeren met de <kbd>spatiebalk</kbd>.
-  - Selecties binnen een onderdeel kunnen vaak met de <kbd>spatiebalk</kbd>.
-  - Sommige elementen zoals sliders zijn te bedienen met pijltjestoetsen.
-  - Een formulier kan verzonden worden met <kbd>return/enter</kbd> in plaats van een `<button>` te gebruiken. Dit heet [<span lang="en">implicit submission</span>](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission).
-  - Soms zijn er nog andere manieren om het toetsenbord te gebruik. Denk hierbij aan acties annuleren met <kbd>esc</kbd> of navigeren met toetsen als <kbd>home</kbd> en <kbd>end</kbd>. Als er twijfel is bij zelfgebouwde elementen, vergelijk dan met pure HTML.
+  - Een link is te activeren met <kbd>enter</kbd>.
+  - Een button is te activeren met <kbd>enter</kbd> en de <kbd>spatiebalk</kbd>.
+  - Selecties binnen een onderdeel maakt men met de <kbd>spatiebalk</kbd>.
+  - Er zijn andere manieren om het toetsenbord te gebruiken. Acties kun je annuleren met <kbd>esc</kbd> en je kan navigeren met toetsen als <kbd>home</kbd> en <kbd>end</kbd>. Als er bij zelfgebouwde elemente twijfel is hoe die bediend moeten worden, vergelijk dan met pure HTML.
 
-Op MacOS kunnen extra instellingen nodig zijn:
+### Voordelen
 
-- [<span lang="en">Keyboard navigation on MacOS</span>](https://support.apple.com/en-gb/guide/mac-help/mchlc06d1059/mac).
-- [<span lang="en">How to activate keyboard navigation on MacOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
+Het toetsenbord zelf is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of andere invoerapparaten gebruiken. Dit criterium is ook voor tal van apparaten die werken als een toetsenbord. Dit zijn bijvoorbeeld een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar). Screenreaders worden vooral gebruikt door mensen met een visuele beperking, maar ook door mensen met cognitieve beperkingen. Daarnaast zijn er tal van hulpmiddelen zoals de eenfunctieschakelaar die gebruikt worden door mensen met motorische beperkingen.
+
+Werkende toetsenbordbediening helpt mensen met beperkingen maar ook andere mensen. Dit zijn bijvoorbeeld _power users_ en mensen regelmatige bezoekers die sneller werken met een toetsenbord.
 
 ## Hoe te testen
 
-1. Vind alle plekken op een website waar je iets kan doen.
-2. Controleer of je het met een toetsenbord kan doen.
+Lees in de uitleg hoe een toetsenbord zou moeten werken.
+
+Voor elk onderdeel waarmee je iets kan bedienen moet het volgende kloppen:
+
+- Je kan het onderdeel bereiken met je toetsenbord.
+- Je kan het onderdeel bedienen met je toetsenbord.
 
 Deze tests moeten ook slagen als de website ingezoomd is. Er kunnen dan andere interactieve elementen aanwezig zijn.
 
-## Tips
+Als je op MacOS test en het werkt niet zoals verwacht, dan kan het zijn dat instellingen niet goed staan. Er zijn instellingen op zowel system- als browserniveau die goed moeten staan. Lees hoe dit moet op de Engelstalige pagina [<span lang="en">How to activate keyboard navigation on MacOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
 
-<dl>
-  <dt class="dl__term">Semantische HTML</dt>
-  <dd class="dl__definition">Gebruik zo veel mogelijk HTML-elementen in plaats van zelfgebouwde onderdelen. Zelfgebouwde onderdelen houden vaak geen rekening met bediening door een toetsenbord terwijl HTML standaard goed werkt met een toetsenbord. Een niet-interactief element dat klikbaar is gemaakt met JavaScript zal standaard niet werken met een toetsenbord. Een element dat van zichzelf interactief is (`<button>`, `<link>`, etc) werkt wel.</dd>
-  <dt class="dl__term">Gerelateerde successcriteria</dt>
-  <dd class="dl__definition">
-    Als je test voor bediening met het toetsenbord, test dan meteen gerelateerde successcriteria zoals:
-    <ul>
-      <li><a href="/wcag/1.4.11">WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content</a> voor de focusweergave</li>
-      <li><a href="/wcag/2.1.2">WCAG-succescriterium 2.1.2 Geen toetsenbordval</a></li>
-      <li><a href="/wcag/2.1.3">WCAG-succescriterium 2.1.3 Toetsenbord (geen uitzondering)</a></li>
-      <li><a href="/wcag/2.4.1">WCAG-succescriterium 2.4.1 Blokken omzeilen</a></li>
-      <li><a href="/wcag/2.4.3">WCAG-succescriterium 2.4.3 Focus volgorde</a></li>
-      <li><a href="/wcag/2.4.7">WCAG-succescriterium 2.4.7 Focus zichtbaar</a></li>
-      <li><a href="/wcag/2.4.13">WCAG-succescriterium 2.4.13 Focusweergave</a></li>
-      <li><a href="/wcag/3.2.1">WCAG-succescriterium 3.2.1 Bij focus</a></li>
-    </ul>
-  </dd>
-  <dt class="dl__term">Volgorde in de code</dt>
-  <dd class="dl__definition">Een uitklappend menu en andere overlappende onderdelen zoals chatvensters en cookiemeldingen zijn lastig voor het toetsenbord. Visueel worden ze vaak onderaan een pagina geplaatst. Voor een toetsenbord is het einde van de pagina vaak erg onhandig. De code van een uitklappend menu plaats je het liefst direct na de knop die het opent. Zo zit het voor de navigatie volgorde op een logische plek. De gebruiker opent iets, en met een opvolgende `tab` is het gefocust.</dd>
-  <dt class="dl__term">Dialoogvensters</dt>
-  <dd class="dl__definition">Bij het openen van een dialoogvenster moet de focus hierop geplaatst worden. Welk onderdeel de focus krijgt hangt af van de inhoud van het venster. Dit wordt uitgelegd op de Engelstalige pagina <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboard_interaction"><span lang="en">Dialog (Modal) Pattern</span></a> van de ARIA Authoring Practices Guide (APG). Als een dialoogvenster sluit moet de focus weer terug naar het element dat het opende.</dd>
-  <dt class="dl__term">Hover</dt>
-  <dd class="dl__definition">Elementen die reageren op een hover moeten ook werken met het toetsenbord. Denk hierbij bijvoorbeeld aan tooltips en uitklappende menus.</dd>
-  <dt class="dl__term">Tabindex</dt>
-  <dd class="dl__definition"><a href="/richtlijnen/formulieren/toetsenbord/tabindex">Gebruik geen positieve tabindex</a>. Voeg ook geen `tabindex="0"` toe aan elementen die niet interactief zijn. Als een element wel interactief moet zijn, voeg ook een naam toe voor <a href="/wcag/4.1.2">WCAG-succescriterium 4.1.2 Naam, rol, waarde</a>.</dd>
-  <dt class="dl__term">Ingewikkelde onderdelen</dt>
-  <dd class="dl__definition">Kaarten en visualizaties zijn soms erg lastig toegankelijk te maken voor een toetsenbord. Als er geen andere oplossing mogelijk is kan er een alternatief geboden worden. Zo kan een kaart met markers en adressen aangevuld worden met een lijst met dezelfde adressen. Let wel op dat het alternatief een volwaardige oplossing is.</dd>
-</dl>
+Een formulier kan heeft niet altijd een knop nodig om verzonden te worden. Soms kan verzenden met <kbd>enter</kbd> in plaats van met een `<button>`. Dit heet [<span lang="en">implicit submission</span>](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission).
 
-## Gerelateerde NL Design System-richtlijnen
+## Veelgemaakte fouten
+
+### Custom components zijn niet gebouwd voor het toetsenbord
+
+Dit probleem kan opgelost worden door developers en designers.
+
+#### Probleem
+
+Onderdelen worden zelf gebouwd. Dit zijn ongewone en creatieve onderdelen die bestaande componenten combineren, maar ook simpelere elementen zoals een `<button>` die HTML al biedt. Bij zelfbouw wordt toegankelijkheid niet altijd goed getest wordt.
+
+Een element met een `role` is niet meteen bruikbaar. Een `<div>` met `role="button"` geeft aan dat dit element zich wil gedragen als een button. Dit maakt het element nog niet bruikbaar. Het mist de functionaliteit van een button.
+
+#### Oplossing
+
+De makkelijkste oplossing is als er _native HTML_ gebruikt kan worden. Dit werkt in de basis goed, en is makkelijker te gebruiken, bouwen en onderhouden dan zelfbouw.
+
+Als dit geen mogelijkheid is kan er een maatwerk component gebouwd worden. Doe dit alleen als er uitvoerig getest kan worden. Let bij het bouwen op het volgende:
+
+- Het element is te bereiken met het toetsenbord. Dit kan met `tabindex="0"`.
+- Het element is te bedienen met het toetsenbord. Hier is JavaScript bij nodig. Een `click`-event werkt onder andere met muis, aanraking en toetsenbord.
+- Het element heeft een `role` voor [WCAG-succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2).
+- Het element heeft een [toegankelijke naam](/woordenlijst#toegankelijke-naam) voor [WCAG-succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2).
+- Het element heeft passende _states_ en _properties_ voor [WCAG-succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2).
+- Het is zichtbaar wanneer het element focus heeft. Dit valt onder [WCAG-succescriterium 2.4.7 Focus Zichtbaar](/wcag/2.4.7).
+
+### De volgorde in de code komt niet overeen met wat er te zien is
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Uitklappende menus en andere overlappende onderdelen zoals chatvensters zijn lastig voor het toetsenbord. Op het oog worden ze bij een ander onderdeel geplaatst. Bijvoorbeeld bij een button. In de code staan ze ergens anders. Voor een toetsenbord is het uitklappende onderdeel dan lastig te vinden en bereiken.
+
+#### Oplossing
+
+De code van een uitklappend onderdeel plaats je direct na de button die het opent. Zo zit het voor de navigatie volgorde op een logische plek. De gebruiker opent iets, en met een opvolgende <kbd>tab</kbd> is het gefocust.
+
+### Dialoogvensters krijgen geen focus
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Bij het openen van een [dialoogvenster](https://nldesignsystem.nl/modal-dialog/) wordt de focus hier niet naar verplaatst. Dit moet wel om het venster te kunnen bedienen.
+
+#### Oplossing
+
+Welk onderdeel de focus krijgt hangt af van de inhoud van het venster. Dit wordt uitgelegd op de Engelstalige pagina <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboard_interaction"><span lang="en">Dialog (Modal) Pattern</span></a> van de ARIA Authoring Practices Guide (APG).
+Als een dialoogvenster sluit moet de focus weer terug naar het element dat het opende.
+
+### Functies werken alleen met hover
+
+Dit probleem kan opgelost worden door developers en designers.
+
+#### Probleem
+
+Uitklappende menus, tooltips en soortgelijke elementen werken soms alleen bij een [hover](/woordenlijst/#hover). Deze moeten ook werken met het toetsenbord.
+
+#### Oplossing
+
+Als iets uitklapt, moet het geactiveerd kunnen worden met het toetsenbord. Daarnaast moet de inhoud ook te bereiken zijn met het toetsenbord. Extra hints of informatie zoals die in een tooltip kan soms ook via `aria-describedby` gecommuniceerd worden.
+
+### Tabindex wordt verkeerd toegepast
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Het attribuut `tabindex` geeft vaak problemen. Een `tabindex` met een waarde van '-1' maakt een element onfocusbaar. Een `tabindex` met de waarde '0' maakt een element focusbaar. Een `tabindex` met een positieve waarde van 1 of meer verandert de focusvolgorde en is slecht te onderhouden.
+
+#### Oplossing
+
+Voeg geen `tabindex="0"` toe aan elementen die niet interactief zijn, zoals paragrafen. Deze hoeven niet met het toetsenbord bereikt te worden. [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
+
+### Kaarten en andere datavisualisaties zijn niet te bedienen
+
+Dit probleem kan opgelost worden door developers of contentmakers.
+
+#### Probleem
+
+Kaarten en andere datavisualisaties zijn vaak slecht bereikbaar voor het toetsenbord. Deze ingewikkelde onderdelen zijn lastig toegankelijk te maken.
+
+#### Oplossing
+
+Probeer de oplossingen die bij [custom components](#custom-components-zijn-niet-gebouwd-voor-het-toetsenbord) gegeven worden. Als deze oplossingen niet kunnen, dan kan er ook een alternatief geboden worden. Zo kan een kaart met markers en adressen aangevuld worden met een lijst met dezelfde adressen. Let wel op dat het alternatief een volwaardige oplossing is.
+
+### Cookiemeldingen krijgen geen focus
+
+Dit probleem kan opgelost worden door developers
+
+#### Probleem
+
+Een cookiemelding is niet of moeilijk te bereiken en bedienen met een toetsenbord. De focus staat op het achterliggende document en niet op de melding. De melding staat aan het einde van de code van een pagina, en is daarom moeilijk te bereiken. Door de grote afstand in de code moet de gebruiker onpraktisch vaak <kbd>tab</kbd> gebruiken. Daarnaast kan een gebruiker niet doorhebben dat de melding er uberhaupt is, of bereikbaar is.
+
+#### Oplossing
+
+Idealiter is de melding _modal_ als een [dialoogvenster](https://nldesignsystem.nl/modal-dialog/). De gebruiker kan buiten de melding niks doen op de pagina. Zet de focus op de melding en zorg dat de content in de achtergrond niet te bereiken is.
+
+### Feedback- en chatbuttons zijn onbereikbaar
+
+Dit probleem kan opgelost worden door developers, designers of contentmakers
+
+#### Probleem
+
+Een feedback- of chatbutton is niet of moeilijk te bereiken en bedienen met een toetsenbord. De button staat aan het eind van de code van een pagina. Door de grote afstand in de code moet de gebruiker onpraktisch vaak <kbd>tab</kbd> gebruiken. Daarnaast kan een gebruiker niet doorhebben dat de melding er uberhaupt is, of bereikbaar is.
+
+#### Oplossing
+
+Geef een feedback- of chatbutton een andere plek op de pagina. Plaats ze op een plek waar feedback of ondersteuning gewenst is. Hier zullen ze minder snel gemist worden. De bestaande button kunnen blijven.
+
+### Op het oog uitgeschakelde elementen zijn niet uitgeschakeld
+
+Dit probleem kan opgelost worden door developers en designers.
+
+#### Probleem
+
+Een element kan op het oog uitgeschakeld zijn, maar met het toetsenbord nog werken. Het element ziet er bijvoorbeeld anders uit en/of de bediening door muis en aanraking is uitgeschakeld. Als het niet voor iedereen uitgeschakeld is, kan dit zorgen voor onverwacht gedrag en foutmeldingen.
+
+#### Oplossing
+
+Gebruik het native HTML attribuut <span lang="en">[`disabled`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#enabling-and-disabling-form-controls:-the-disabled-attribute)</span> om een element als een `<button>` uit te schakelen:
+
+```HTML
+<button type="submit" disabled>Verstuur</button>
+```
+
+De vormgeving in CSS kan inhaken op deze code:
+
+```CSS
+button:disabled {
+  /* voeg hier je styling toe */
+}
+```
+
+Let op. Dit attribuut werkt niet op alle interactieve elementen. Een `<a>` kan niet op deze manier uitgeschakeld worden. Voor uitgeschakelde links moet men geen `<a>` gebruiken.
+Het attribuut werkt soms ook op niet-interactieve elementen. De inhoud van een `<fieldset>` of `<optgroep>` kan uitgeschakeld worden door `disabled` hier op toe te passen.
+
+## Gerelateerde NL Design System-richtlijnen en WCAG criteria
+
+Binnen NL Design System is meer geschreven over dit criterium en onderwerpen die ermee te maken hebben. Met deze context kun je nog praktischer met dit criterium aan de slag. Je kan meerdere problemen tegelijk oplossen, en de gebruikerservaring breder verbeteren.
+
+### NL Design System-richtlijnen
 
 - Formulieren - Toetsenbord: [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/).
 - Formulieren - Toetsenbord: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
@@ -123,31 +213,42 @@ Deze tests moeten ook slagen als de website ingezoomd is. Er kunnen dan andere i
 - Formulieren - Buttons: [Disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
 - Formulieren - Wanneer gebruik je welk formulierelement: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
 
-## Gebruikersonderzoek
+### WCAG richtlijnen
 
-<CTAGebruikersonderzoek />
+Deze WCAG richtlijnen gaan ook over het gebruik van een toetsenbord. Het kan praktisch zijn om deze tegelijk te bekijken en te beoordelen.
+
+- [WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11)
+- [WCAG-succescriterium 2.1.2 Geen toetsenbordval](/wcag/2.1.2)
+- [WCAG-succescriterium 2.1.3 Toetsenbord (geen uitzondering)](/wcag/2.1.3)
+- [WCAG-succescriterium 2.4.1 Blokken omzeilen](/wcag/2.4.1)
+- [WCAG-succescriterium 2.4.3 Focus volgorde](/wcag/2.4.3)
+- [WCAG-succescriterium 2.4.7 Focus zichtbaar](/wcag/2.4.7)
+- [WCAG-succescriterium 2.4.13 Focusweergave](/wcag/2.4.13)
+- [WCAG-succescriterium 3.2.1 Bij focus](/wcag/3.2.1)
 
 ## Bronnen
 
-- [<span lang="en">A Guide To Keyboard Accessibility: HTML And CSS</span>](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/) by Cristian Díaz in Smashing Magazine.
-- [<span lang="en">Tabindex: 0 and -1 Values</span>](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one) van WebAIM.
-- [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
+- Smashing Magazine zet uiteen welke HTML en CSS praktisch is bij gebruik van het toetsenbord: [<span lang="en">A Guide To Keyboard Accessibility: HTML And CSS</span>](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/)
+- WebAIM (Web Accessibility In Mind) legt uit hoe `tabindex` gebruikt moet worden: [<span lang="en">Tabindex: 0 and -1 Values</span>](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one)
+- Toegankelijkheidsbureau TPGi schrijft over mogelijke problemen die bezoekers met een toetsenbord tegenkomen: [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/)
+- De W3C heeft een uitgebreid artikel over wat er allemaal nodig is voor het toetsenbord: [<span lang="en">Developing a Keyboard Interface</span>](https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/)
+- De W3C geeft aan waar op te letten bij het maken van maatwerk componenten: [<span lang="en">Custom Control Accessible Development Checklist</span>](https://www.w3.org/TR/using-aria/#checklist)
 
-## W3C referenties
+### Officiële WCAG criteria
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.1.1 Keyboard</span>](https://www.w3.org/TR/WCAG22/#keyboard).
 - Nederlandse vertaling van het WCAG-succescriterium: [2.1.1 Toetsenbord](https://www.w3.org/Translations/WCAG22-nl/#keyboard).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.1.1 Keyboard</span>](https://www.w3.org/WAI/WCAG22/quickref/#keyboard).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.1.1 Keyboard</span>](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html).
 
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+## Wat is verplicht?
 
-## Help richtlijn verbeteren
+<Markdown omitH1>
+  <Disclaimer />
+</Markdown>
 
-<Markdown omitH1 headinglevel={3}>
+## Aanvullingen of opmerkingen?
+
+<Markdown omitH1>
   <WCAGFooterInfo />
 </Markdown>
