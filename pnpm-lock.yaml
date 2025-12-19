@@ -186,6 +186,12 @@ importers:
       '@mdx-js/react':
         specifier: 3.1.0
         version: 3.1.0(@types/react@18.3.18)(react@18.3.1)
+      '@nl-design-system-candidate/button-docs':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@nl-design-system-candidate/button-tokens':
+        specifier: 1.0.0
+        version: 1.0.0
       '@nl-design-system-community/ma-design-tokens':
         specifier: 2.2.0
         version: 2.2.0
@@ -3055,6 +3061,12 @@ packages:
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
+
+  '@nl-design-system-candidate/button-docs@1.0.0':
+    resolution: {integrity: sha512-SC2ytQJt2l9l2UFYvVeXcAUeQmOb8/JV3UUlOPlmmveoRAnQaPAwyO9TYnQBw+h3SMHz8/6HnLReYwgN+UxGYA==}
+
+  '@nl-design-system-candidate/button-tokens@1.0.0':
+    resolution: {integrity: sha512-2uxqqVUW9kyib/rPn1rvWI09auUVOkA5IUC+rBlYxUz9DVVn4UcXPeOe9KVgh0a1WuM2dzX3k/bpWRBINtKACw==}
 
   '@nl-design-system-candidate/code-block-docs@1.0.1':
     resolution: {integrity: sha512-IrcmL9IypRATsWiYJnq1W9K4RizLtwm+2pQ8ssC3YEb9Palz3YnANgpL/aFrI2FJ+0vkirWxW9wnO7+A4y2osQ==}
@@ -14031,6 +14043,10 @@ snapshots:
       '@types/mdx': 2.0.10
       '@types/react': 18.3.18
       react: 18.3.1
+
+  '@nl-design-system-candidate/button-docs@1.0.0': {}
+
+  '@nl-design-system-candidate/button-tokens@1.0.0': {}
 
   '@nl-design-system-candidate/code-block-docs@1.0.1': {}
 
