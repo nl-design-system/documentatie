@@ -52,6 +52,7 @@ Redirect 301 "/voorbeelden/templates" "/voorbeelden/patronen-en-templates"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/overzicht/" "/community/community-sprints/mijn-services-community/overzicht/"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/" "/community/community-sprints/mijn-services-community/"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/aanmelden/" "/community/community-sprints/mijn-services-community/aanmelden/"
+Redirect 301 "/handboek/developer/aan-de-slag/" "/handboek/developer/introductie/"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
