@@ -80,6 +80,9 @@ importers:
       '@nl-design-system-candidate/heading-docs':
         specifier: 1.0.1
         version: 1.0.1
+      '@nl-design-system-candidate/heading-react':
+        specifier: 1.1.6
+        version: 1.1.6(@babel/runtime@7.28.4)(react@18.3.1)
       '@nl-design-system-candidate/heading-tokens':
         specifier: 1.1.0
         version: 1.1.0
@@ -3109,6 +3112,12 @@ packages:
 
   '@nl-design-system-candidate/heading-docs@1.0.1':
     resolution: {integrity: sha512-1qOmwko7gbNSiNjsxQBumJe0Ixj8o5o68P3vi3RDZa1Qlrqv9oMYTtQHXcdR1QgAqMRfefx375cC+4j/2GTE/w==}
+
+  '@nl-design-system-candidate/heading-react@1.1.6':
+    resolution: {integrity: sha512-1FXimo26i3qlYZo7JOtQ+StS88ReaeaRLpqlhFcdEf2IKuuuh5I3zpisjkDW3mw0YraVVSrC1kE3tcLAfUw9Qg==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-candidate/heading-tokens@1.1.0':
     resolution: {integrity: sha512-MKYZzbwVQ1MR7RO7Bosu5ofHmzfjYAJt9zBzA3zBwXkg63YdIpQqGrLUq7mmxe3dFycqDxY7RhOqlXPZB677Fg==}
@@ -14064,6 +14073,11 @@ snapshots:
   '@nl-design-system-candidate/heading-6-docs@1.0.2': {}
 
   '@nl-design-system-candidate/heading-docs@1.0.1': {}
+
+  '@nl-design-system-candidate/heading-react@1.1.6(@babel/runtime@7.28.4)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      react: 18.3.1
 
   '@nl-design-system-candidate/heading-tokens@1.1.0': {}
 
