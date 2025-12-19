@@ -46,7 +46,7 @@ De [gebruikersonderzoeken repository](https://github.com/nl-design-system/gebrui
 
 ### Theming en design tokens
 
-De [`nl-design-system/themes` repository](<https://www.google.com/search?q=%5Bhttps://github.com/nl-design-system/themes%5D(https://github.com/nl-design-system/themes)>) is de centrale plek voor huisstijlen in de vorm van design tokens. Deze repository is bedoeld voor twee situaties:
+De [`nl-design-system/themes` repository](https://github.com/nl-design-system/themes) is de centrale plek voor huisstijlen in de vorm van design tokens. Deze repository is bedoeld voor twee situaties:
 
 - **Voor organisaties die een huisstijl publiceren:** Je kunt hier de design tokens van je huisstijl publiceren zonder dat je een volledige, eigen repository hoeft te onderhouden.
 - **Voor organisaties die componenten ontwikkelen:** Je kunt hier controleren hoe jouw component eruitziet met de huisstijlen van andere organisaties.
