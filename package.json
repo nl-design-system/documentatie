@@ -10,7 +10,7 @@
   "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a",
   "engines": {
     "//": "Update @types/node to match the highest node version here",
-    "node": ">=20 <=24",
+    "node": ">=24 <=25",
     "pnpm": "^10.16.0"
   },
   "repository": {
@@ -131,7 +131,7 @@
     "@nl-design-system/eslint-config": "1.0.0",
     "@persoonlijke-regelingen-assistent/components-react": "1.0.0-alpha.152",
     "@playwright/test": "1.50.1",
-    "@types/node": "22.13.4",
+    "@types/node": "24.10.4",
     "@types/react": "18.3.18",
     "@types/react-dom": "18.3.5",
     "@types/unist": "3.0.3",
