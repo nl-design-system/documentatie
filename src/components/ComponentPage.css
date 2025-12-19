@@ -37,4 +37,9 @@
   --component-progress-background-color--unchecked: var(--nlds-status-community-color);
   --utrecht-link-list-link-column-gap: 0.25em;
   --utrecht-link-list-icon-inset-block-start: 0.25em;
+  --nl-heading-level-4-margin-block-start: 1.25rem;
+}
+
+.implementation-card .nl-heading--level-4:first-of-type {
+  --nl-heading-level-4-margin-block-start: 0;
 }
