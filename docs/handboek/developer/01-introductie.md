@@ -14,7 +14,7 @@ keywords:
 
 ## Welkom developer 👋
 
-Wanneer je aan de slag wilt met NL Design System om een nieuw project te bouwen, of een bestaande site of applicatie te renoveren, dan kun je aan de slag met de volgende stappen.
+Leuk dat je er bent! Of je nu mee wilt bijdragen aan NL Design System of simpelweg even wilt rondneuzen, als developer is dit een goed startpunt.
 
 ## Wat is NL Design System?
 
