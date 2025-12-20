@@ -37,7 +37,7 @@ Op de [website van Node.js](https://nodejs.org/) vind je de meest recente LTS-ve
 
 In plaats van Node.js rechtstreeks op jouw machine te installeren, raden we aan om `nvm` (Node Version Manager) te gebruiken. Dit stelt je in staat om makkelijk per project een specifieke versie te gebruiken.
 
-Sla de gewenste versie op in `.nvmrc` en voer `nvm use` uit. Op de [website van nvm](https://www.nvmnode.com/) lees je hoe je dit installeert en gebruikt.
+Sla de gewenste versie op in `.nvmrc` en voer `nvm use` uit. Op de [website van nvm](https://nvm.sh/) lees je hoe je dit installeert en gebruikt.
 
 De ondersteunde versierange staat in `package.json` onder `engines.node`. Doordat we `engine-strict=true` in `.npmrc` hebben geconfigureerd, krijg je een foutmelding als je een andere versie gebruikt. Dit doen we om te voorkomen dat een oudere Node.js-versie wordt gebruikt waarmee niet wordt getest en mogelijk problemen zijn. De versierange staat meestal één nieuwere versie van Node.js toe, om mogelijk te maken dat developers op eigen risico een recentere versie van Node.js gebruiken.
 
