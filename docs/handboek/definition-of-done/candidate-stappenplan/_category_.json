@@ -1,0 +1,11 @@
+{
+  "position": 4,
+  "label": "Candidate",
+  "link": {
+    "type": "doc",
+    "id": "handboek/definition-of-done/candidate-stappenplan/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}

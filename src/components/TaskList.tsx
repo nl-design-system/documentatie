@@ -28,9 +28,11 @@ export const TaskListItem = ({
         {checked && <UtrechtIconCheckmark aria-hidden={true} className={'utrecht-icon'} />}
       </div>
       <div>
-        <Heading appearance="utrecht-heading-3" level={headingLevel}>
-          {title}
-        </Heading>
+        {title ? (
+          <Heading appearance="utrecht-heading-3" level={headingLevel}>
+            {title}
+          </Heading>
+        ) : null}
         {description}
         {children}
       </div>

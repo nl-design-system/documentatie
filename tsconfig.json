@@ -13,6 +13,13 @@
       "@theme/*": ["src/theme/*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.mdx", "*.ts"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mdx",
+    "*.ts",
+    "docs/handboek/definition-of-done/candidate-stappenplan/selectiefase.md",
+    "docs/handboek/definition-of-done/candidate-stappenplan/voorbereidingsfase.md"
+  ],
   "exclude": ["**/node_modules/*"]
 }
