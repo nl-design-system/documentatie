@@ -22,14 +22,14 @@
    }
   },
   90441: (e, n, t) => {
-   t.r(n), t.d(n, { assets: () => c, contentTitle: () => i, default: () => h, frontMatter: () => r, metadata: () => o, toc: () => d });
-   const o = JSON.parse('{"id":"handboek/developer/component-testen","title":"Componenten testen \xb7 Developer \xb7 Handboek","description":"Eigen componenten testen","source":"@site/docs/handboek/developer/15-component-testen.md","sourceDirName":"handboek/developer","slug":"/handboek/developer/component-testen","permalink":"/handboek/developer/component-testen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/15-component-testen.md","tags":[],"version":"current","sidebarPosition":15,"frontMatter":{"title":"Componenten testen \xb7 Developer \xb7 Handboek","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Componenten testen","pagination_label":"Componenten testen","description":"Eigen componenten testen","keywords":["developer","bijdragen","componenten testen","css component testen","react.js component testen"]},"sidebar":"handboek","previous":{"title":"Tips voor het bijdragen aan componenten","permalink":"/handboek/developer/bijdragen"},"next":{"title":"API conventie","permalink":"/handboek/developer/api-conventie"}}');
+   t.r(n), t.d(n, { assets: () => d, contentTitle: () => i, default: () => h, frontMatter: () => r, metadata: () => o, toc: () => c });
+   const o = JSON.parse('{"id":"handboek/developer/component-testen","title":"Componenten testen \xb7 Developer \xb7 Handboek","description":"Eigen componenten testen","source":"@site/docs/handboek/developer/15-component-testen.md","sourceDirName":"handboek/developer","slug":"/handboek/developer/component-testen","permalink":"/handboek/developer/component-testen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/15-component-testen.md","tags":[],"version":"current","sidebarPosition":15,"frontMatter":{"title":"Componenten testen \xb7 Developer \xb7 Handboek","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Componenten testen","pagination_label":"Componenten testen","description":"Eigen componenten testen","keywords":["developer","bijdragen","componenten testen","css component testen","react.js component testen"]},"sidebar":"handboek","previous":{"title":"Tips voor het bijdragen aan componenten","permalink":"/handboek/developer/bijdragen"},"next":{"title":"Werken met Node.js","permalink":"/handboek/developer/node"}}');
    var a = t(86070),
     s = t(85248);
    const r = { title: 'Componenten testen \xb7 Developer \xb7 Handboek', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Componenten testen', pagination_label: 'Componenten testen', description: 'Eigen componenten testen', keywords: ['developer', 'bijdragen', 'componenten testen', 'css component testen', 'react.js component testen'] },
     i = 'Componenten testen',
-    c = {},
-    d = [
+    d = {},
+    c = [
      { value: 'Testen op uitbreidbaarheid', id: 'testen-op-uitbreidbaarheid', level: 2 },
      { value: 'Classes', id: 'classes', level: 3 },
      { value: 'HTML-content in componenten', id: 'html-content-in-componenten', level: 2 },
