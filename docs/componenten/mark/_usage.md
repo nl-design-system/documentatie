@@ -63,7 +63,3 @@ export const MyComponent = () => {
   );
 };
 ```
-
-## Figma
-
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Mark](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13787-19085).

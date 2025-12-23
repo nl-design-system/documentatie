@@ -68,7 +68,3 @@ export const MyPage = () => {
   );
 };
 ```
-
-## Figma
-
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Data Badge](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-18012).

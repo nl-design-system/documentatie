@@ -60,7 +60,3 @@ import { SkipLink } from "@nl-design-system-candidate/skip-link-react";
 
 export const MyComponent = () => <SkipLink href="#inhoud">Direct naar de hoofdinhoud</SkipLink>;
 ```
-
-## Figma
-
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Skip Link](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2217-10122).
