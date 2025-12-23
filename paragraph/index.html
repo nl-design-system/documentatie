@@ -31,7 +31,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.d6f08df6.css" />
-  <script src="/assets/js/runtime~main.a652bb9f.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.db003b16.js" defer="defer"></script>
   <script src="/assets/js/main.1f84e034.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -433,10 +433,9 @@
               </hgroup>
               <p class="utrecht-paragraph utrecht-paragraph--lead"><b class="utrecht-paragraph__b">De paragraph gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.</b></p>
               <!--$--><!--/$-->
-              <h2 id="candidate-gebruiken" class="utrecht-heading-2">Candidate gebruiken</h2>
               <div class="cardgroup__card cardgroup__card--undefined implementation-card">
                <div class="card__content">
-                <h3 class="nl-heading nl-heading--level-4">Figma</h3>
+                <h2 class="nl-heading nl-heading--level-4">Figma</h2>
                 <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
                  <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=150-734" class="utrecht-link utrecht-link--html-a"
                   ><span class="utrecht-icon" role="presentation" aria-hidden="true"
@@ -456,7 +455,7 @@
                   >Figma - Voorbeeld bibliotheek</a
                  >
                 </ul>
-                <h3 class="nl-heading nl-heading--level-4">Storybook</h3>
+                <h2 class="nl-heading nl-heading--level-4">Storybook</h2>
                 <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
                  <a href="https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie" class="utrecht-link utrecht-link--html-a"
                   ><span class="utrecht-icon" role="presentation" aria-hidden="true"
@@ -476,7 +475,7 @@
                   >Storybook - React</a
                  >
                 </ul>
-                <h3 class="nl-heading nl-heading--level-4">NPM</h3>
+                <h2 class="nl-heading nl-heading--level-4">npm</h2>
                 <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
                  <a href="https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css" class="utrecht-link utrecht-link--html-a"
                   ><span class="utrecht-icon" role="presentation" aria-hidden="true"
@@ -521,6 +520,298 @@
                 </ul>
                </div>
               </div>
+              <h2 id="checklist-voor-toegankelijkheid" class="utrecht-heading-2">Checklist voor toegankelijkheid</h2>
+              <p>Hier beschrijven we waar de component al aan voldoet en wat je zelf nog moet doen om de component toegankelijk én gebruiksvriendelijk in te zetten.</p>
+              <h3 id="acceptatiecriteria-bij-gebruik" class="utrecht-heading-3">Acceptatiecriteria bij gebruik</h3>
+              <p>Een component gebruik je in de context van een pagina, website of applicatie. Hoe toegankelijk en gebruiksvriendelijk een component is, hangt daarom voor een groot deel af van context. We hebben onderstaande criteria verdeeld op rol: de developer, de designer en de contentmaker. Vanuit iedere rol kun je je steentje bijdragen om een toegankelijke en gebruiksvriendelijke ervaring te bieden aan je gebruikers.</p>
+              <div>
+               <div class="ma-filter-block">
+                <div class="utrecht-form-fieldset">
+                 <fieldset aria-describedby="filter-results" aria-labelledby=":Raa7dalbah:" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset">
+                  <h1 class="utrecht-heading-4" id=":Raa7dalbah:">Filter acceptatiecriteria voor:</h1>
+                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="designer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="designer" class="utrecht-form-label">designer</label></div>
+                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="contentmaker" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="contentmaker" class="utrecht-form-label">contentmaker</label></div>
+                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="developer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="developer" class="utrecht-form-label">developer</label></div>
+                 </fieldset>
+                </div>
+                <div>
+                 <p role="status">
+                  3<!-- -->
+                  van de
+                  <!-- -->3<!-- -->
+                  items zijn nu zichtbaar.
+                 </p>
+                </div>
+               </div>
+               <ul class="new-checklist" role="list">
+                <li class="new-checklist__item new-checklist__item--designer new-checklist__item--contentmaker">
+                 <details>
+                  <summary><span class="new-checklist__title" id=":Rdaa7dalbah:">De contrastverhouding van de tekstkleur van de paragraaf met de achtergrondkleur is hoog genoeg.</span></summary>
+                  <div class="new-checklist__content">
+                   <div>
+                    <p>De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
+                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                     <li>4,5:1 contrast voor normale tekst.</li>
+                     <li>3:1 contrast voor grotere letters (vanaf 24 pixels).</li>
+                     <li>3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
+                    </ul>
+                    <p>Hogere verhoudingen mogen natuurlijk altijd. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.</p>
+                    <p>NL Design System richtlijnen:</p>
+                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                     <li><a href="/richtlijnen/stijl/kleuren/contrast-tekst/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond</a></li>
+                     <li><a href="/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Geef tekst voldoende kleurcontrast</a></li>
+                     <li><a href="/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/" class="utrecht-link utrecht-link--html-a">Gebruik van kleur in tekst</a></li>
+                    </ul>
+                   </div>
+                   <div class="utrecht-badge-list new-checklist__badge-list">
+                    <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.3 Contrast (minimum)" style="line-height: 1" href="/wcag/1.4.3/"><span class="nl-data-badge">WCAG 1.4.3</span></a
+                    ><span class="nl-data-badge">Niveau AA</span>
+                   </div>
+                  </div>
+                 </details>
+                </li>
+                <li class="new-checklist__item new-checklist__item--developer new-checklist__item--contentmaker">
+                 <details>
+                  <summary><span class="new-checklist__title" id=":Rlaa7dalbah:">Als een paragraaftekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.</span></summary>
+                  <div class="new-checklist__content">
+                   <div>
+                    <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
+                    <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
+                    <p>NL Design System richtlijnen:</p>
+                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                     <li><a href="/richtlijnen/content/tekstopmaak/taal/" class="utrecht-link utrecht-link--html-a">De juiste taal instellen</a></li>
+                    </ul>
+                   </div>
+                   <div class="utrecht-badge-list new-checklist__badge-list">
+                    <span class="nl-data-badge">developer</span><span class="nl-data-badge">contentmaker</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 3.1.2 Taal van onderdelen" style="line-height: 1" href="/wcag/3.1.2/"><span class="nl-data-badge">WCAG 3.1.2</span></a
+                    ><span class="nl-data-badge">Niveau AA</span>
+                   </div>
+                  </div>
+                 </details>
+                </li>
+                <li class="new-checklist__item new-checklist__item--developer">
+                 <details>
+                  <summary><span class="new-checklist__title" id=":Rtaa7dalbah:">Als je de hele webpagina inzoomt tot 400% blijft de paragraaftekst leesbaar.</span></summary>
+                  <div class="new-checklist__content">
+                   <div>
+                    <p>De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.</p>
+                    <p>Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.</p>
+                    <p>Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).</p>
+                    <p>Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video&#x27;s en landkaarten.</p>
+                    <p>Definieer in de CSS een wijze om lange woorden af te breken en door te laten lopen op de volgende regel. Voorkom zo een horizontale scrollbar en onleesbare tekst.</p>
+                   </div>
+                   <div class="utrecht-badge-list new-checklist__badge-list">
+                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.10 Reflow" style="line-height: 1" href="/wcag/1.4.10/"><span class="nl-data-badge">WCAG 1.4.10</span></a
+                    ><span class="nl-data-badge">Niveau AA</span>
+                   </div>
+                  </div>
+                 </details>
+                </li>
+               </ul>
+              </div>
+              <h3 id="acceptatiecriteria-van-de-component" class="utrecht-heading-3">Acceptatiecriteria van de component</h3>
+              <p>Als je de NL Design System component gebruikt kun je er vanuit gaan dat onderstaande checks zijn gedaan. Maar door keuzes in de website of applicaties kan het natuurlijk zijn dat ze toch niet helemaal werken. Voor de zekerheid is het dus goed om ook op onderstaande punten te letten.</p>
+              <div>
+               <div class="ma-filter-block">
+                <div class="utrecht-form-fieldset">
+                 <fieldset aria-describedby="filter-results" aria-labelledby=":Rda7dalbah:" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset">
+                  <h1 class="utrecht-heading-4" id=":Rda7dalbah:">Filter acceptatiecriteria voor:</h1>
+                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="developer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="developer" class="utrecht-form-label">developer</label></div>
+                 </fieldset>
+                </div>
+                <div>
+                 <p role="status">
+                  3<!-- -->
+                  van de
+                  <!-- -->3<!-- -->
+                  items zijn nu zichtbaar.
+                 </p>
+                </div>
+               </div>
+               <ul class="new-checklist" role="list">
+                <li class="new-checklist__item new-checklist__item--developer">
+                 <details>
+                  <summary><span class="new-checklist__title" id=":Rdda7dalbah:">Gebruik het p-element voor paragraaftekst.</span></summary>
+                  <div class="new-checklist__content">
+                   <div>
+                    <p>Zorg dat een alinea in een paragraaf-element staat. Gebruik geen <code class="utrecht-code">&lt;div&gt;</code> of <code class="utrecht-code">&lt;span&gt;</code> voor op zichzelf staande teksten. Zelfs als geen CSS geladen kan worden, blijft de tekst dan duidelijk weergegeven.</p>
+                   </div>
+                   <div class="utrecht-badge-list new-checklist__badge-list">
+                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.3.1 Info en relaties" style="line-height: 1" href="/wcag/1.3.1/"><span class="nl-data-badge">WCAG 1.3.1</span></a
+                    ><span class="nl-data-badge">Niveau A</span>
+                   </div>
+                  </div>
+                 </details>
+                </li>
+                <li class="new-checklist__item new-checklist__item--developer">
+                 <details>
+                  <summary><span class="new-checklist__title" id=":Rlda7dalbah:">Als je de paragraaftekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.</span></summary>
+                  <div class="new-checklist__content">
+                   <div>
+                    <p>Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.</p>
+                    <p>Zorg ervoor dat het component meegroeit met de tekst. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>.</p>
+                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">word-break: break-word; hyphens: auto;</code> in combinatie met <code class="utrecht-code">text-wrap-style: pretty</code> of <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur niet alleen op de specifieke styling van het element of component, maar op globaal (<code class="utrecht-code">:root</code>) niveau.</p>
+                    <p>NL Design System richtlijnen:</p>
+                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                     <li><a href="/richtlijnen/stijl/typografie/voorkeur/" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                     <li><a href="/richtlijnen/stijl/typografie/lettergrootte/" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                    </ul>
+                   </div>
+                   <div class="utrecht-badge-list new-checklist__badge-list">
+                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.4 Herschalen van tekst" style="line-height: 1" href="/wcag/1.4.4/"><span class="nl-data-badge">WCAG 1.4.4</span></a
+                    ><span class="nl-data-badge">Niveau AA</span>
+                   </div>
+                  </div>
+                 </details>
+                </li>
+                <li class="new-checklist__item new-checklist__item--developer">
+                 <details>
+                  <summary><span class="new-checklist__title" id=":Rtda7dalbah:">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.</span></summary>
+                  <div class="new-checklist__content">
+                   <div>
+                    <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden. Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier buttons voor te maken in de website zelf.</p>
+                    <p>Zorg ervoor dat de component mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
+                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">word-break: break-word; hyphens: auto;</code> in combinatie met <code class="utrecht-code">text-wrap-style: pretty</code> of <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur niet alleen op de specifieke styling van het element of component, maar op globaal (<code class="utrecht-code">:root</code>) niveau.</p>
+                    <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
+                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                     <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte.</li>
+                     <li>Afstand tussen alinea&#x27;s naar ten minste 2 keer de lettergrootte.</li>
+                     <li>Letterafstand (spatiëren van letters) naar ten minste 0,12 keer de lettergrootte.</li>
+                     <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
+                    </ul>
+                    <p>Dit is te testen met een extensie zoals Stylus of User CSS, een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
+                    <span hidden="" id=":Rddtda7dalbah:"
+                     >codevoorbeeld
+                     <!-- -->
+                     <!-- -->
+                    </span>
+                    <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rddtda7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body *</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">line-height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1.5</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">letter-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.12</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">word-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.16</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body p</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">margin-bottom</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">2</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">&lt;/style&gt;</span>
+</span></code></pre>
+                    <p>NL Design System richtlijnen:</p>
+                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                     <li><a href="/richtlijnen/stijl/typografie/voorkeur/" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
+                     <li><a href="/richtlijnen/stijl/typografie/lettergrootte/" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
+                     <li><a href="/richtlijnen/stijl/typografie/regelafstand/" class="utrecht-link utrecht-link--html-a">Zorg voor een comfortabele regelafstand</a></li>
+                    </ul>
+                   </div>
+                   <div class="utrecht-badge-list new-checklist__badge-list">
+                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.12 Tekstafstand" style="line-height: 1" href="/wcag/1.4.12/"><span class="nl-data-badge">WCAG 1.4.12</span></a
+                    ><span class="nl-data-badge">Niveau AA</span>
+                   </div>
+                  </div>
+                 </details>
+                </li>
+               </ul>
+              </div>
+              <header></header>
+              <h2 id="css" class="utrecht-heading-2">CSS</h2>
+              <p>De CSS van deze component is gepubliceerd in een npm package:</p>
+              <p>
+               <a href="https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css" class="utrecht-link utrecht-link--html-a"><img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fparagraph-css.svg" alt="" style="vertical-align: middle" /> @nl-design-system-candidate/paragraph-css</a> versie 2.
+              </p>
+              <p>Gebruik de <code class="utrecht-code">nl-paragraph</code> class name op een <code class="utrecht-code">p</code> element:</p>
+              <span hidden="" id=":Rbea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rbea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-paragraph</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+              <p>Voor de Lead Paragraph gebruik je de extra class name <code class="utrecht-code">nl-paragraph--lead</code>:</p>
+              <span hidden="" id=":Rfea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rfea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-paragraph nl-paragraph--lead</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  Op brute wĳze ving de schooljuf de quasi-kalme lynx. Je gelooft nooit wat er toen gebeurde!</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+              <p>Je kunt de CSS zo in je project installeren:</p>
+              <span hidden="" id=":Rjea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rjea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">npm install --save-dev @nl-design-system-candidate/paragraph-css</span>
+</span></code></pre>
+              <p>Als je een CDN gebruikt, dan kun je de CSS zo importeren:</p>
+              <span hidden="" id=":Rnea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rnea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">link</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag" style="color:var(--nlds-code-block-tag-color)">  </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">rel</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">stylesheet</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag" style="color:var(--nlds-code-block-tag-color)">  </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/paragraph-css@2/dist/paragraph.css</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+              <p>Gebruik je geen CDN, dan kun je de CSS uit <code class="utrecht-code">node_modules/</code> importeren:</p>
+              <span hidden="" id=":Rrea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rrea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">link</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">rel</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">stylesheet</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">node_modules/@nl-design-system-candidate/paragraph-css/dist/paragraph.css</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
+</span></code></pre>
+              <p>Als je CSS imports gebruikt vanuit JavaScript:</p>
+              <span hidden="" id=":Rvea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rvea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword module" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@nl-design-system-candidate/paragraph-css/paragraph.css&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span>
+</span></code></pre>
+              <h2 id="react" class="utrecht-heading-2">React</h2>
+              <p>De React component is gepubliceerd in een npm package:</p>
+              <p>
+               <a href="https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react" class="utrecht-link utrecht-link--html-a"><img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fparagraph-react.svg" alt="" style="vertical-align: middle" /> @nl-design-system-candidate/paragraph-react</a> versie 2.
+              </p>
+              <p>Je kunt de npm package zo installeren:</p>
+              <span hidden="" id=":R19ea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R19ea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">npm install --save-dev @nl-design-system-candidate/paragraph-react</span>
+</span></code></pre>
+              <p>Je kunt de React component zo gebruiken:</p>
+              <span hidden="" id=":R1dea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R1dea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword module" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token imports"> </span><span class="token imports maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">Paragraph</span><span class="token imports"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"> </span><span class="token keyword module" style="color:var(--nlds-code-block-keyword-color)">from</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@nl-design-system-candidate/paragraph-react&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword module" style="color:var(--nlds-code-block-keyword-color)">export</span><span class="token plain"> </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">const</span><span class="token plain"> </span><span class="token function-variable function maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">MyPage</span><span class="token plain"> </span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:var(--nlds-code-block-operator-color)">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword control-flow" style="color:var(--nlds-code-block-keyword-color)">return</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">html</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">body</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain-text">        </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag class-name" style="color:var(--nlds-code-block-class-name-color)">Paragraph</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag class-name" style="color:var(--nlds-code-block-class-name-color)">Paragraph</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">body</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain-text">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">html</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span>
+</span></code></pre>
+              <p>De Lead Paragraph werkt zo:</p>
+              <p>Je kunt de React component zo gebruiken:</p>
+              <span hidden="" id=":R1jea7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R1jea7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag class-name" style="color:var(--nlds-code-block-class-name-color)">Paragraph</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">purpose</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lead</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag class-name" style="color:var(--nlds-code-block-class-name-color)">Paragraph</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
               <h2 id="design-tokens" class="utrecht-heading-2">Design tokens</h2>
               <table class="utrecht-table">
                <thead class="utrecht-table__header">
@@ -754,300 +1045,454 @@
                </tbody>
               </table>
               <p role="group" class="utrecht-button-group"></p>
-              <header></header>
-              <h3 id="css" class="utrecht-heading-3">CSS</h3>
-              <p>De CSS van deze component is gepubliceerd in een npm package:</p>
-              <p>
-               <a href="https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css" class="utrecht-link utrecht-link--html-a"><img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fparagraph-css.svg" alt="" style="vertical-align: middle" /> @nl-design-system-candidate/paragraph-css</a> versie 2.
-              </p>
-              <p>Gebruik de <code class="utrecht-code">nl-paragraph</code> class name op een <code class="utrecht-code">p</code> element:</p>
-              <span hidden="" id=":Rb9a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rb9a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-paragraph</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <p>Voor de Lead Paragraph gebruik je de extra class name <code class="utrecht-code">nl-paragraph--lead</code>:</p>
-              <span hidden="" id=":Rf9a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rf9a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-paragraph nl-paragraph--lead</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  Op brute wĳze ving de schooljuf de quasi-kalme lynx. Je gelooft nooit wat er toen gebeurde!</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <p>Je kunt de CSS zo in je project installeren:</p>
-              <span hidden="" id=":Rj9a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rj9a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">npm install --save-dev @nl-design-system-candidate/paragraph-css</span>
-</span></code></pre>
-              <p>Als je een CDN gebruikt, dan kun je de CSS zo importeren:</p>
-              <span hidden="" id=":Rn9a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rn9a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">link</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag" style="color:var(--nlds-code-block-tag-color)">  </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">rel</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">stylesheet</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag" style="color:var(--nlds-code-block-tag-color)">  </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/paragraph-css@2/dist/paragraph.css</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag" style="color:var(--nlds-code-block-tag-color)"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
-</span></code></pre>
-              <p>Gebruik je geen CDN, dan kun je de CSS uit <code class="utrecht-code">node_modules/</code> importeren:</p>
-              <span hidden="" id=":Rr9a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rr9a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">link</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">rel</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">stylesheet</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">href</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">node_modules/@nl-design-system-candidate/paragraph-css/dist/paragraph.css</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">/&gt;</span>
-</span></code></pre>
-              <p>Als je CSS imports gebruikt vanuit JavaScript:</p>
-              <span hidden="" id=":Rv9a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rv9a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword module" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@nl-design-system-candidate/paragraph-css/paragraph.css&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span>
-</span></code></pre>
-              <h3 id="react" class="utrecht-heading-3">React</h3>
-              <p>De React component is gepubliceerd in een npm package:</p>
-              <p>
-               <a href="https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react" class="utrecht-link utrecht-link--html-a"><img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fparagraph-react.svg" alt="" style="vertical-align: middle" /> @nl-design-system-candidate/paragraph-react</a> versie 2.
-              </p>
-              <p>Je kunt de npm package zo installeren:</p>
-              <span hidden="" id=":R199a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R199a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">npm install --save-dev @nl-design-system-candidate/paragraph-react</span>
-</span></code></pre>
-              <p>Je kunt de React component zo gebruiken:</p>
-              <span hidden="" id=":R1d9a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R1d9a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword module" style="color:var(--nlds-code-block-keyword-color)">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token imports"> </span><span class="token imports maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">Paragraph</span><span class="token imports"> </span><span class="token imports punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"> </span><span class="token keyword module" style="color:var(--nlds-code-block-keyword-color)">from</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@nl-design-system-candidate/paragraph-react&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
-</span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword module" style="color:var(--nlds-code-block-keyword-color)">export</span><span class="token plain"> </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">const</span><span class="token plain"> </span><span class="token function-variable function maybe-class-name" style="color:var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))">MyPage</span><span class="token plain"> </span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:var(--nlds-code-block-operator-color)">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword control-flow" style="color:var(--nlds-code-block-keyword-color)">return</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">html</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">body</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain-text">        </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag class-name" style="color:var(--nlds-code-block-class-name-color)">Paragraph</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag class-name" style="color:var(--nlds-code-block-class-name-color)">Paragraph</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">body</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain-text">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">html</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span>
-</span></code></pre>
-              <p>De Lead Paragraph werkt zo:</p>
-              <p>Je kunt de React component zo gebruiken:</p>
-              <span hidden="" id=":R1j9a7dalbah:"
-               >codevoorbeeld
-               <!-- -->
-               <!-- -->
-              </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R1j9a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag class-name" style="color:var(--nlds-code-block-class-name-color)">Paragraph</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">purpose</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">lead</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain-text">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag class-name" style="color:var(--nlds-code-block-class-name-color)">Paragraph</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
-</span></code></pre>
-              <h3 id="figma" class="utrecht-heading-3">Figma</h3>
-              <p>De Figma component staat in <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=150-734" class="utrecht-link utrecht-link--html-a">NL Design System Voorbeeld Bibliotheek — Paragraph</a>.</p>
-              <h2 id="checklist-voor-toegankelijkheid" class="utrecht-heading-2">Checklist voor toegankelijkheid</h2>
-              <p>Hier beschrijven we waar de component al aan voldoet en wat je zelf nog moet doen om de component toegankelijk én gebruiksvriendelijk in te zetten.</p>
-              <h3 id="acceptatiecriteria-bij-gebruik" class="utrecht-heading-3">Acceptatiecriteria bij gebruik</h3>
-              <p>Een component gebruik je in de context van een pagina, website of applicatie. Hoe toegankelijk en gebruiksvriendelijk een component is, hangt daarom voor een groot deel af van context. We hebben onderstaande criteria verdeeld op rol: de developer, de designer en de contentmaker. Vanuit iedere rol kun je je steentje bijdragen om een toegankelijke en gebruiksvriendelijke ervaring te bieden aan je gebruikers.</p>
-              <div>
-               <div class="ma-filter-block">
-                <div class="utrecht-form-fieldset">
-                 <fieldset aria-describedby="filter-results" aria-labelledby=":Rea7dalbah:" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset">
-                  <h1 class="utrecht-heading-4" id=":Rea7dalbah:">Filter acceptatiecriteria voor:</h1>
-                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="designer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="designer" class="utrecht-form-label">designer</label></div>
-                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="contentmaker" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="contentmaker" class="utrecht-form-label">contentmaker</label></div>
-                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="developer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="developer" class="utrecht-form-label">developer</label></div>
-                 </fieldset>
-                </div>
-                <div>
-                 <p role="status">
-                  3<!-- -->
-                  van de
-                  <!-- -->3<!-- -->
-                  items zijn nu zichtbaar.
+              <h2 id="definition-of-done" class="utrecht-heading-2">Definition of Done</h2>
+              <div class="utrecht-accordion">
+               <div class="utrecht-accordion__section definition-of-done definition-of-done--help-wanted" body="[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:Rdia7dalbah:-panel" id="utrecht-accordion:Rdia7dalbah:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label">Help Wanted - 11 van 11</span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:Rdia7dalbah:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <ul class="task-list">
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Naam</h4>
+                    Naam bepaald op basis van NL Design System naamgeving.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Beschrijving</h4>
+                    Doel van component is in één zin beschreven.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Afbeelding</h4>
+                    Afbeelding gemaakt om de component visueel duidelijk te maken.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Discussion URL</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Backlog</h4>
+                    Staat in de publieke backlog van NL Design System.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Bruikbaar</h4>
+                    Bewijs verzameld dat de component algemeen bruikbaar is.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Link</h4>
+                    Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Varianten</h4>
+                    Naam en doel van benodigde varianten beschreven.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Onderzoek</h4>
+                    Nut van component is onderbouwd door gebruikersonderzoek.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">Kernteam</h4>
+                    Kernteam verwacht dat dit component tot Hall of Fame kan komen.
+                   </div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div>
+                    <h4 class="utrecht-heading-3">nldesignsystem.nl</h4>
+                    Vindbaar op de NL Design System website.
+                   </div>
+                  </li>
+                 </ul>
+                 <p class="utrecht-paragraph">
+                  <a href="https://github.com/orgs/nl-design-system/projects/27?filterQuery=Paragraph" class="utrecht-link utrecht-link--html-a"
+                   >Help Wanted<!-- -->
+                   projectbord op GitHub</a
+                  >
                  </p>
                 </div>
                </div>
-               <ul class="new-checklist" role="list">
-                <li class="new-checklist__item new-checklist__item--designer new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="new-checklist__title" id=":Rdea7dalbah:">De contrastverhouding van de tekstkleur van de paragraaf met de achtergrondkleur is hoog genoeg.</span></summary>
-                  <div class="new-checklist__content">
-                   <div>
-                    <p>De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg. Minimale contrastverhoudingen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li>4,5:1 contrast voor normale tekst.</li>
-                     <li>3:1 contrast voor grotere letters (vanaf 24 pixels).</li>
-                     <li>3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).</li>
-                    </ul>
-                    <p>Hogere verhoudingen mogen natuurlijk altijd. Met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a> kun je controleren of je gekozen kleuren voldoen. Denk erom dat dit moet gelden voor alle achtergrondkleuren waarop de tekst geplaatst kan worden. Het kan dus zijn dat je meerdere checks moet doen.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/stijl/kleuren/contrast-tekst/" class="utrecht-link utrecht-link--html-a">Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond</a></li>
-                     <li><a href="/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/" class="utrecht-link utrecht-link--html-a">Geef tekst voldoende kleurcontrast</a></li>
-                     <li><a href="/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/" class="utrecht-link utrecht-link--html-a">Gebruik van kleur in tekst</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list new-checklist__badge-list">
-                    <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.3 Contrast (minimum)" style="line-height: 1" href="/wcag/1.4.3/"><span class="nl-data-badge">WCAG 1.4.3</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="new-checklist__item new-checklist__item--developer new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="new-checklist__title" id=":Rlea7dalbah:">Als een paragraaftekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.</span></summary>
-                  <div class="new-checklist__content">
-                   <div>
-                    <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
-                    <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/content/tekstopmaak/taal/" class="utrecht-link utrecht-link--html-a">De juiste taal instellen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><span class="nl-data-badge">contentmaker</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 3.1.2 Taal van onderdelen" style="line-height: 1" href="/wcag/3.1.2/"><span class="nl-data-badge">WCAG 3.1.2</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="new-checklist__item new-checklist__item--developer">
-                 <details>
-                  <summary><span class="new-checklist__title" id=":Rtea7dalbah:">Als je de hele webpagina inzoomt tot 400% blijft de paragraaftekst leesbaar.</span></summary>
-                  <div class="new-checklist__content">
-                   <div>
-                    <p>De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.</p>
-                    <p>Alle functies, zoals het menu, moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.</p>
-                    <p>Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).</p>
-                    <p>Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video&#x27;s en landkaarten.</p>
-                    <p>Definieer in de CSS een wijze om lange woorden af te breken en door te laten lopen op de volgende regel. Voorkom zo een horizontale scrollbar en onleesbare tekst.</p>
-                   </div>
-                   <div class="utrecht-badge-list new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.10 Reflow" style="line-height: 1" href="/wcag/1.4.10/"><span class="nl-data-badge">WCAG 1.4.10</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-               </ul>
-              </div>
-              <h3 id="acceptatiecriteria-van-de-component" class="utrecht-heading-3">Acceptatiecriteria van de component</h3>
-              <p>Als je de NL Design System component gebruikt kun je er vanuit gaan dat onderstaande checks zijn gedaan. Maar door keuzes in de website of applicaties kan het natuurlijk zijn dat ze toch niet helemaal werken. Voor de zekerheid is het dus goed om ook op onderstaande punten te letten.</p>
-              <div>
-               <div class="ma-filter-block">
-                <div class="utrecht-form-fieldset">
-                 <fieldset aria-describedby="filter-results" aria-labelledby=":Rha7dalbah:" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset">
-                  <h1 class="utrecht-heading-4" id=":Rha7dalbah:">Filter acceptatiecriteria voor:</h1>
-                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="developer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="developer" class="utrecht-form-label">developer</label></div>
-                 </fieldset>
-                </div>
-                <div>
-                 <p role="status">
-                  3<!-- -->
-                  van de
-                  <!-- -->3<!-- -->
-                  items zijn nu zichtbaar.
+               <div class="utrecht-accordion__section definition-of-done definition-of-done--community" body="[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:Rlia7dalbah:-panel" id="utrecht-accordion:Rlia7dalbah:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label">Community - 15 van 15</span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:Rlia7dalbah:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <ul class="task-list">
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Welk bord</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">GitHub (CSS)</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Storybook (CSS)</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Implementatie voldoet</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Minimale design tokens</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Prefix</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Naamgeving design tokens</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Licentie component</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Licentie documentatie</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Storybook thema&#x27;s</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Visuele regressietest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Figma URL</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">nldesignsystem.nl</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Component assessment</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Promotie</h4></div>
+                  </li>
+                 </ul>
+                 <p class="utrecht-paragraph">
+                  <a href="https://github.com/orgs/nl-design-system/projects/29?filterQuery=Paragraph" class="utrecht-link utrecht-link--html-a"
+                   >Community<!-- -->
+                   projectbord op GitHub</a
+                  >
                  </p>
                 </div>
                </div>
-               <ul class="new-checklist" role="list">
-                <li class="new-checklist__item new-checklist__item--developer">
-                 <details>
-                  <summary><span class="new-checklist__title" id=":Rdha7dalbah:">Gebruik het p-element voor paragraaftekst.</span></summary>
-                  <div class="new-checklist__content">
-                   <div>
-                    <p>Zorg dat een alinea in een paragraaf-element staat. Gebruik geen <code class="utrecht-code">&lt;div&gt;</code> of <code class="utrecht-code">&lt;span&gt;</code> voor op zichzelf staande teksten. Zelfs als geen CSS geladen kan worden, blijft de tekst dan duidelijk weergegeven.</p>
-                   </div>
-                   <div class="utrecht-badge-list new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.3.1 Info en relaties" style="line-height: 1" href="/wcag/1.3.1/"><span class="nl-data-badge">WCAG 1.3.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="new-checklist__item new-checklist__item--developer">
-                 <details>
-                  <summary><span class="new-checklist__title" id=":Rlha7dalbah:">Als je de paragraaftekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.</span></summary>
-                  <div class="new-checklist__content">
-                   <div>
-                    <p>Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.</p>
-                    <p>Zorg ervoor dat het component meegroeit met de tekst. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>.</p>
-                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">word-break: break-word; hyphens: auto;</code> in combinatie met <code class="utrecht-code">text-wrap-style: pretty</code> of <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur niet alleen op de specifieke styling van het element of component, maar op globaal (<code class="utrecht-code">:root</code>) niveau.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/stijl/typografie/voorkeur/" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
-                     <li><a href="/richtlijnen/stijl/typografie/lettergrootte/" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.4 Herschalen van tekst" style="line-height: 1" href="/wcag/1.4.4/"><span class="nl-data-badge">WCAG 1.4.4</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="new-checklist__item new-checklist__item--developer">
-                 <details>
-                  <summary><span class="new-checklist__title" id=":Rtha7dalbah:">Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.</span></summary>
-                  <div class="new-checklist__content">
-                   <div>
-                    <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden. Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier buttons voor te maken in de website zelf.</p>
-                    <p>Zorg ervoor dat de component mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
-                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">word-break: break-word; hyphens: auto;</code> in combinatie met <code class="utrecht-code">text-wrap-style: pretty</code> of <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur niet alleen op de specifieke styling van het element of component, maar op globaal (<code class="utrecht-code">:root</code>) niveau.</p>
-                    <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte.</li>
-                     <li>Afstand tussen alinea&#x27;s naar ten minste 2 keer de lettergrootte.</li>
-                     <li>Letterafstand (spatiëren van letters) naar ten minste 0,12 keer de lettergrootte.</li>
-                     <li>Spatiëren van woorden naar ten minste 0,16 keer de lettergrootte.</li>
-                    </ul>
-                    <p>Dit is te testen met een extensie zoals Stylus of User CSS, een <a href="https://html5accessibility.com/tests/tsbookmarklet.html" class="utrecht-link utrecht-link--html-a">bookmarklet</a> of door in de inspector van de browser de volgende code toe te voegen aan de <code class="utrecht-code">head</code> van de pagina:</p>
-                    <span hidden="" id=":Rddtha7dalbah:"
-                     >codevoorbeeld
-                     <!-- -->
-                     <!-- -->
-                    </span>
-                    <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rddtha7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">&lt;style</span><span class="token selector combinator" style="color:var(--nlds-code-block-selector-color);font-style:italic">&gt;</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body *</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">line-height</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">1.5</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">letter-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.12</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">word-spacing</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0.16</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">body p</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">margin-bottom</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">2</span><span class="token unit">em</span><span class="token plain"> </span><span class="token important" style="color:var(--nlds-code-block-important-color);font-weight:bold">!important</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
-</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">&lt;/style&gt;</span>
-</span></code></pre>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/stijl/typografie/voorkeur/" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
-                     <li><a href="/richtlijnen/stijl/typografie/lettergrootte/" class="utrecht-link utrecht-link--html-a">Zorg ervoor dat letters groot genoeg zijn</a></li>
-                     <li><a href="/richtlijnen/stijl/typografie/regelafstand/" class="utrecht-link utrecht-link--html-a">Zorg voor een comfortabele regelafstand</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.12 Tekstafstand" style="line-height: 1" href="/wcag/1.4.12/"><span class="nl-data-badge">WCAG 1.4.12</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-               </ul>
+               <div class="utrecht-accordion__section definition-of-done definition-of-done--candidate" body="[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:Rtia7dalbah:-panel" id="utrecht-accordion:Rtia7dalbah:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label">Candidate - 31 van 31</span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:Rtia7dalbah:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <ul class="task-list">
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🎉 Huisstijl instelbaar</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🎉 Component gebruikt</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🎉 WCAG input</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Issues bekend</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Versimpeld of gesplitst</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Anatomie</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Acceptatiecriteria a11y</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Semantiek</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 API</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Testcases voor gebruik</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Design tokens</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Zoekwoorden</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">📝 Stories en specs</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ React component</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ CSS component</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ Figma component</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ Voorbeeld thema</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🛠️ Documentatie</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Design Tokens getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🧪 A11y getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Testcases gebruik getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Internationalisatie getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🧪 Documentatie getest</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🚀 NPM - React</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🚀 NPM - CSS</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🚀 NPM - Docs</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🚀 NPM - Design Tokens</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🚀 Figma - Start Bibliotheek</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🚀 Figma - Voorbeeld Bibliotheek</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🚀 nldesignsystem.nl</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">🚀 Themes repository</h4></div>
+                  </li>
+                 </ul>
+                 <p class="utrecht-paragraph">
+                  <a href="https://github.com/orgs/nl-design-system/projects/80?filterQuery=Paragraph" class="utrecht-link utrecht-link--html-a"
+                   >Candidate<!-- -->
+                   projectbord op GitHub</a
+                  >
+                 </p>
+                </div>
+               </div>
+               <div class="utrecht-accordion__section definition-of-done definition-of-done--hall-of-fame" body="[object Object]">
+                <h3 class="utrecht-accordion__header">
+                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R15ia7dalbah:-panel" id="utrecht-accordion:R15ia7dalbah:-button">
+                  <span class="utrecht-accordion__button-icon"
+                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
+                    <defs>
+                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
+                  ><span class="utrecht-accordion__button-label">Hall of Fame - 6 van 20</span>
+                 </button>
+                </h3>
+                <div id="utrecht-accordion:R15ia7dalbah:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
+                 <ul class="task-list">
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Do and don&#x27;t voorbeelden</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">HTML/CSS</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Gebruikersonderzoek</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Webcomponent</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">React</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">API unit tests</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">A11y audit</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">NPM</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Semver</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Figma geversioneerd</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Figma changelog</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Code changelog</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Richtlijnen design tokens</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Richtlijnen redacteuren</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Beveiliging</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
+                   <div><h4 class="utrecht-heading-3">Privacy</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Getest met designers</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Getest met developers</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">Getest met redacteuren</h4></div>
+                  </li>
+                  <li class="task-list-item">
+                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
+                   <div><h4 class="utrecht-heading-3">≥2 organisaties geswitcht</h4></div>
+                  </li>
+                 </ul>
+                 <p class="utrecht-paragraph">
+                  <a href="https://github.com/orgs/nl-design-system/projects/30?filterQuery=Paragraph" class="utrecht-link utrecht-link--html-a"
+                   >Hall of Fame<!-- -->
+                   projectbord op GitHub</a
+                  >
+                 </p>
+                </div>
+               </div>
               </div>
+              <h2 id="help-component-verbeteren" class="utrecht-heading-2">Help component verbeteren</h2>
+              <p class="utrecht-paragraph">
+               We vinden het belangrijk dat de component
+               <!-- -->Paragraph<!-- -->
+               goed te gebruiken is door iedereen. Help je mee?
+              </p>
+              <ul role="list" class="utrecht-unordered-list">
+               <li class="utrecht-unordered-list__item">Vul de <a href="https://github.com/orgs/nl-design-system/discussions/212" class="utrecht-link utrecht-link--html-a">GitHub Discussion</a> aan met de eisen en wensen voor jouw project of organisatie.</li>
+               <li class="utrecht-unordered-list__item">
+                Draag bij aan de voortgang van
+                <!-- -->Paragraph<!-- -->
+                door te zorgen dat deze aan meer checkpoints van de<!-- -->
+                <a href="#definition-of-done" class="utrecht-link utrecht-link--html-a">Definition of Done</a> voldoet. Deze houden we bij in de projectborden bij de <a href="https://github.com/nl-design-system/backlog/issues/115#issue-864679682" class="utrecht-link utrecht-link--html-a">publieke GitHub Backlog</a>.<!-- -->
+               </li>
+              </ul>
               <h2 id="community-implementaties" class="utrecht-heading-2">Community implementaties</h2>
               <div class="cardgroup cardgroup--large implementation-card-group">
                <div class="cardgroup__card cardgroup__card--undefined implementation-card">
@@ -1470,454 +1915,6 @@
                 </div>
                </div>
               </div>
-              <h2 id="definition-of-done" class="utrecht-heading-2">Definition of Done</h2>
-              <div class="utrecht-accordion">
-               <div class="utrecht-accordion__section definition-of-done definition-of-done--help-wanted" body="[object Object]">
-                <h3 class="utrecht-accordion__header">
-                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:Rdla7dalbah:-panel" id="utrecht-accordion:Rdla7dalbah:-button">
-                  <span class="utrecht-accordion__button-icon"
-                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
-                    <defs>
-                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
-                    </defs>
-                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
-                  ><span class="utrecht-accordion__button-label">Help Wanted - 11 van 11</span>
-                 </button>
-                </h3>
-                <div id="utrecht-accordion:Rdla7dalbah:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
-                 <ul class="task-list">
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Naam</h4>
-                    Naam bepaald op basis van NL Design System naamgeving.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Beschrijving</h4>
-                    Doel van component is in één zin beschreven.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Afbeelding</h4>
-                    Afbeelding gemaakt om de component visueel duidelijk te maken.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Discussion URL</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Backlog</h4>
-                    Staat in de publieke backlog van NL Design System.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Bruikbaar</h4>
-                    Bewijs verzameld dat de component algemeen bruikbaar is.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Link</h4>
-                    Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Varianten</h4>
-                    Naam en doel van benodigde varianten beschreven.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Onderzoek</h4>
-                    Nut van component is onderbouwd door gebruikersonderzoek.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">Kernteam</h4>
-                    Kernteam verwacht dat dit component tot Hall of Fame kan komen.
-                   </div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div>
-                    <h4 class="utrecht-heading-3">nldesignsystem.nl</h4>
-                    Vindbaar op de NL Design System website.
-                   </div>
-                  </li>
-                 </ul>
-                 <p class="utrecht-paragraph">
-                  <a href="https://github.com/orgs/nl-design-system/projects/27?filterQuery=Paragraph" class="utrecht-link utrecht-link--html-a"
-                   >Help Wanted<!-- -->
-                   projectbord op GitHub</a
-                  >
-                 </p>
-                </div>
-               </div>
-               <div class="utrecht-accordion__section definition-of-done definition-of-done--community" body="[object Object]">
-                <h3 class="utrecht-accordion__header">
-                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:Rlla7dalbah:-panel" id="utrecht-accordion:Rlla7dalbah:-button">
-                  <span class="utrecht-accordion__button-icon"
-                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
-                    <defs>
-                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
-                    </defs>
-                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
-                  ><span class="utrecht-accordion__button-label">Community - 15 van 15</span>
-                 </button>
-                </h3>
-                <div id="utrecht-accordion:Rlla7dalbah:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
-                 <ul class="task-list">
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Welk bord</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">GitHub (CSS)</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Storybook (CSS)</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Implementatie voldoet</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Minimale design tokens</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Prefix</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Naamgeving design tokens</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Licentie component</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Licentie documentatie</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Storybook thema&#x27;s</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Visuele regressietest</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Figma URL</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">nldesignsystem.nl</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Component assessment</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Promotie</h4></div>
-                  </li>
-                 </ul>
-                 <p class="utrecht-paragraph">
-                  <a href="https://github.com/orgs/nl-design-system/projects/29?filterQuery=Paragraph" class="utrecht-link utrecht-link--html-a"
-                   >Community<!-- -->
-                   projectbord op GitHub</a
-                  >
-                 </p>
-                </div>
-               </div>
-               <div class="utrecht-accordion__section definition-of-done definition-of-done--candidate" body="[object Object]">
-                <h3 class="utrecht-accordion__header">
-                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:Rtla7dalbah:-panel" id="utrecht-accordion:Rtla7dalbah:-button">
-                  <span class="utrecht-accordion__button-icon"
-                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
-                    <defs>
-                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
-                    </defs>
-                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
-                  ><span class="utrecht-accordion__button-label">Candidate - 31 van 31</span>
-                 </button>
-                </h3>
-                <div id="utrecht-accordion:Rtla7dalbah:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
-                 <ul class="task-list">
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🎉 Huisstijl instelbaar</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🎉 Component gebruikt</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🎉 WCAG input</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Issues bekend</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Versimpeld of gesplitst</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Anatomie</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Acceptatiecriteria a11y</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Semantiek</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 API</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Testcases voor gebruik</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Design tokens</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Zoekwoorden</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">📝 Stories en specs</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🛠️ React component</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🛠️ CSS component</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🛠️ Figma component</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🛠️ Voorbeeld thema</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🛠️ Documentatie</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🧪 Design Tokens getest</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🧪 A11y getest</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🧪 Testcases gebruik getest</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🧪 Internationalisatie getest</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🧪 Documentatie getest</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🚀 NPM - React</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🚀 NPM - CSS</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🚀 NPM - Docs</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🚀 NPM - Design Tokens</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🚀 Figma - Start Bibliotheek</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🚀 Figma - Voorbeeld Bibliotheek</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🚀 nldesignsystem.nl</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">🚀 Themes repository</h4></div>
-                  </li>
-                 </ul>
-                 <p class="utrecht-paragraph">
-                  <a href="https://github.com/orgs/nl-design-system/projects/80?filterQuery=Paragraph" class="utrecht-link utrecht-link--html-a"
-                   >Candidate<!-- -->
-                   projectbord op GitHub</a
-                  >
-                 </p>
-                </div>
-               </div>
-               <div class="utrecht-accordion__section definition-of-done definition-of-done--hall-of-fame" body="[object Object]">
-                <h3 class="utrecht-accordion__header">
-                 <button class="utrecht-button utrecht-button--subtle utrecht-accordion__button" type="button" aria-expanded="false" aria-controls="utrecht-accordion:R15la7dalbah:-panel" id="utrecht-accordion:R15la7dalbah:-button">
-                  <span class="utrecht-accordion__button-icon"
-                   ><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="currentColor">
-                    <defs>
-                     <clipPath id="clippath"><rect width="14" height="8" style="fill: none; stroke-width: 0px"></rect></clipPath>
-                    </defs>
-                    <g style="clip-path: url(#clippath)"><path d="m7,8c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l5.29,5.29L12.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-6,6c-.2.2-.45.29-.71.29Z" style="stroke-width: 0px"></path></g></svg></span
-                  ><span class="utrecht-accordion__button-label">Hall of Fame - 6 van 20</span>
-                 </button>
-                </h3>
-                <div id="utrecht-accordion:R15la7dalbah:-panel" class="utrecht-accordion__panel" hidden="" aria-hidden="true">
-                 <ul class="task-list">
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Do and don&#x27;t voorbeelden</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">HTML/CSS</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Gebruikersonderzoek</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Webcomponent</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">React</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">API unit tests</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">A11y audit</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">NPM</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Semver</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Figma geversioneerd</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Figma changelog</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Code changelog</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Richtlijnen design tokens</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Richtlijnen redacteuren</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Beveiliging</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker task-list-item__marker--checked"><span class="task-list-item__marker-label">Afgevinkt. </span><utrecht-icon-checkmark aria-hidden="true"></utrecht-icon-checkmark></div>
-                   <div><h4 class="utrecht-heading-3">Privacy</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Getest met designers</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Getest met developers</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">Getest met redacteuren</h4></div>
-                  </li>
-                  <li class="task-list-item">
-                   <div class="task-list-item__marker"><span class="task-list-item__marker-label">Niet afgevinkt. </span></div>
-                   <div><h4 class="utrecht-heading-3">≥2 organisaties geswitcht</h4></div>
-                  </li>
-                 </ul>
-                 <p class="utrecht-paragraph">
-                  <a href="https://github.com/orgs/nl-design-system/projects/30?filterQuery=Paragraph" class="utrecht-link utrecht-link--html-a"
-                   >Hall of Fame<!-- -->
-                   projectbord op GitHub</a
-                  >
-                 </p>
-                </div>
-               </div>
-              </div>
-              <h2 id="help-component-verbeteren" class="utrecht-heading-2">Help component verbeteren</h2>
-              <p class="utrecht-paragraph">
-               We vinden het belangrijk dat de component
-               <!-- -->Paragraph<!-- -->
-               goed te gebruiken is door iedereen. Help je mee?
-              </p>
-              <ul role="list" class="utrecht-unordered-list">
-               <li class="utrecht-unordered-list__item">Vul de <a href="https://github.com/orgs/nl-design-system/discussions/212" class="utrecht-link utrecht-link--html-a">GitHub Discussion</a> aan met de eisen en wensen voor jouw project of organisatie.</li>
-               <li class="utrecht-unordered-list__item">
-                Draag bij aan de voortgang van
-                <!-- -->Paragraph<!-- -->
-                door te zorgen dat deze aan meer checkpoints van de<!-- -->
-                <a href="#definition-of-done" class="utrecht-link utrecht-link--html-a">Definition of Done</a> voldoet. Deze houden we bij in de projectborden bij de <a href="https://github.com/nl-design-system/backlog/issues/115#issue-864679682" class="utrecht-link utrecht-link--html-a">publieke GitHub Backlog</a>.<!-- -->
-               </li>
-              </ul>
              </div>
              <footer class="theme-doc-footer docusaurus-mt-lg">
               <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
@@ -1946,15 +1943,13 @@
           <div class="col col--3">
            <div class="tableOfContents_Sh0M thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
-             <li><a href="#candidate-gebruiken" class="table-of-contents__link toc-highlight">Candidate gebruiken</a></li>
-             <li><a href="#design-tokens" class="table-of-contents__link toc-highlight">Design tokens</a></li>
+             <li><a href="#checklist-voor-toegankelijkheid" class="table-of-contents__link toc-highlight">Checklist voor toegankelijkheid</a></li>
              <li><a href="#css" class="table-of-contents__link toc-highlight">CSS</a></li>
              <li><a href="#react" class="table-of-contents__link toc-highlight">React</a></li>
-             <li><a href="#figma" class="table-of-contents__link toc-highlight">Figma</a></li>
-             <li><a href="#checklist-voor-toegankelijkheid" class="table-of-contents__link toc-highlight">Checklist voor toegankelijkheid</a></li>
-             <li><a href="#community-implementaties" class="table-of-contents__link toc-highlight">Community implementaties</a></li>
+             <li><a href="#design-tokens" class="table-of-contents__link toc-highlight">Design tokens</a></li>
              <li><a href="#definition-of-done" class="table-of-contents__link toc-highlight">Definition of Done</a></li>
              <li><a href="#help-component-verbeteren" class="table-of-contents__link toc-highlight">Help component verbeteren</a></li>
+             <li><a href="#community-implementaties" class="table-of-contents__link toc-highlight">Community implementaties</a></li>
             </ul>
            </div>
           </div>

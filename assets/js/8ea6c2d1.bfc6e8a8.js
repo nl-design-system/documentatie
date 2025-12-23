@@ -16,7 +16,7 @@
   },
   4398(e, n, t) {
    'use strict';
-   t.d(n, { B2: () => h, B_: () => b, GT: () => f, KF: () => u, Pc: () => a, Pv: () => p, Rc: () => k, bo: () => r, eQ: () => w, f4: () => o, fX: () => s, kD: () => y, mJ: () => g, o_: () => j, qZ: () => i });
+   t.d(n, { B2: () => h, B_: () => b, GT: () => f, KF: () => u, Pc: () => a, Pv: () => p, Rc: () => k, bo: () => r, eQ: () => y, f4: () => o, fX: () => s, kD: () => w, mJ: () => g, o_: () => j, qZ: () => i });
    const r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     s = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     i = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
@@ -56,9 +56,9 @@
     },
     j = (e) => e.join('.'),
     b = (e) => '--' + e.join('-'),
-    w = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function y(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? y(e[t], [...n, t]) : []));
+    y = (e, n) => n.reduce((e, n) => e?.[n], e);
+   function w(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? w(e[t], [...n, t]) : []));
    }
    function f(e) {
     const n = new Map();
@@ -150,13 +150,13 @@
    var p = t(30696),
     j = t(73769),
     b = t(51450),
-    w = t(38985),
-    y = t(64730),
+    y = t(38985),
+    w = t(64730),
     f = t(44132),
     k = t(1941),
     v = t(43825),
     A = t(30758);
-   const x = { color: p.A, dimension: j.A, fontFamilies: b.A, fontSizes: w.A, fontWeights: y.A, lineHeights: f.A, other: k.A, textDecoration: v.A },
+   const x = { color: p.A, dimension: j.A, fontFamilies: b.A, fontSizes: y.A, fontWeights: w.A, lineHeights: f.A, other: k.A, textDecoration: v.A },
     T = ({ type: e }) => (0, m.jsx)(h.In, { children: (0, A.createElement)(x[e]) });
    function C({ tokens: e }) {
     const n = (0, i.kD)(e),
@@ -613,8 +613,8 @@
     p = t(66706),
     j = t(24838),
     b = t(90495),
-    w = t(68873),
-    y = t(25218),
+    y = t(68873),
+    w = t(25218),
     f = t(1292),
     k = t(72401),
     v = (t(84068), t(59840)),
@@ -623,7 +623,7 @@
     T = t(12013);
    function C(e) {
     const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', p: 'p', pre: 'pre', ...(0, i.R)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.header, { children: (0, s.jsx)(n.h1, { id: 'gebruik-number-badge', children: 'Gebruik Number Badge' }) }), '\n', (0, s.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, s.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, s.jsxs)(n.p, { children: [(0, s.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: [(0, s.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fnumber-badge-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/number-badge-css'] }), '\nversie 1.'] }), '\n', (0, s.jsxs)(n.p, { children: ['Gebruik de ', (0, s.jsx)(n.code, { children: 'nl-number-badge' }), ' class name op een ', (0, s.jsx)(n.code, { children: 'span' }), ' element:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<span class="nl-number-badge">42</span>\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/number-badge-css\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/number-badge-css@1/dist/number-badge.css"\n/>\n' }) }), '\n', (0, s.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, s.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/number-badge-css/dist/number-badge.css" />\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/number-badge-css/number-badge.css";\n' }) }), '\n', (0, s.jsx)(n.h3, { id: 'number-badge-als-data-component', children: 'Number badge als data component' }), '\n', (0, s.jsxs)(n.p, { children: ['Je kunt er ook voor kiezen om number badge op een ', (0, s.jsx)(n.code, { children: 'data' }), ' element te gebruiken:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<data class="nl-number-badge" value="42">42</data>\n' }) }), '\n', (0, s.jsx)(n.h3, { id: 'number-badge-met-een-toegankelijk-label', children: 'Number badge met een toegankelijk label' }), '\n', (0, s.jsx)(n.p, { children: 'Om te zorgen dat de betekenis van een number badge duidelijk is wanneer de pagina wordt voorgelezeg kun je ook een onzichtbaar label toevoegen:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<data value="42" class="nl-number-badge">\n  <span hidden aria-hidden="true" class="nl-number-badge__visible-label">42</span>\n  <span class="nl-number-badge__hidden-label">42 ongelezen berichten</span>\n</data>\n' }) }), '\n', (0, s.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, s.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, s.jsxs)(n.p, { children: [(0, s.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: [(0, s.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fnumber-badge-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/number-badge-react'] }), '\nversie 1.'] }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/number-badge-react\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-jsx', children: 'import { NumberBadge } from "@nl-design-system-candidate/number-badge-react";\n\nexport const MyComponent = () => <NumberBadge value="42" />;\n' }) }), '\n', (0, s.jsx)(n.h2, { id: 'figma', children: 'Figma' }), '\n', (0, s.jsxs)(n.p, { children: ['De Figma component staat in ', (0, s.jsx)(n.a, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271', children: 'NL Design System Voorbeeld Bibliotheek \u2014 Number Badge' }), '.'] })] });
+    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.header, { children: (0, s.jsx)(n.h1, { id: 'gebruik-number-badge', children: 'Gebruik Number Badge' }) }), '\n', (0, s.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, s.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, s.jsxs)(n.p, { children: [(0, s.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: [(0, s.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fnumber-badge-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/number-badge-css'] }), '\nversie 1.'] }), '\n', (0, s.jsxs)(n.p, { children: ['Gebruik de ', (0, s.jsx)(n.code, { children: 'nl-number-badge' }), ' class name op een ', (0, s.jsx)(n.code, { children: 'span' }), ' element:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<span class="nl-number-badge">42</span>\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/number-badge-css\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/number-badge-css@1/dist/number-badge.css"\n/>\n' }) }), '\n', (0, s.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, s.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/number-badge-css/dist/number-badge.css" />\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/number-badge-css/number-badge.css";\n' }) }), '\n', (0, s.jsx)(n.h3, { id: 'number-badge-als-data-component', children: 'Number badge als data component' }), '\n', (0, s.jsxs)(n.p, { children: ['Je kunt er ook voor kiezen om number badge op een ', (0, s.jsx)(n.code, { children: 'data' }), ' element te gebruiken:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<data class="nl-number-badge" value="42">42</data>\n' }) }), '\n', (0, s.jsx)(n.h3, { id: 'number-badge-met-een-toegankelijk-label', children: 'Number badge met een toegankelijk label' }), '\n', (0, s.jsx)(n.p, { children: 'Om te zorgen dat de betekenis van een number badge duidelijk is wanneer de pagina wordt voorgelezeg kun je ook een onzichtbaar label toevoegen:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<data value="42" class="nl-number-badge">\n  <span hidden aria-hidden="true" class="nl-number-badge__visible-label">42</span>\n  <span class="nl-number-badge__hidden-label">42 ongelezen berichten</span>\n</data>\n' }) }), '\n', (0, s.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, s.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, s.jsxs)(n.p, { children: [(0, s.jsxs)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: [(0, s.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fnumber-badge-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/number-badge-react'] }), '\nversie 1.'] }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/number-badge-react\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-jsx', children: 'import { NumberBadge } from "@nl-design-system-candidate/number-badge-react";\n\nexport const MyComponent = () => <NumberBadge value="42" />;\n' }) })] });
    }
    function N(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
@@ -637,7 +637,7 @@
     S = 'Toont een klein label dat de aandacht trekt en informeert over een aantal.',
     D = 7,
     L = o.find((e) => e.number === D),
-    F = [{ value: 'Candidate gebruiken', id: 'candidate-gebruiken', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 3 }, { value: 'CSS', id: 'css', level: 2 }, { value: 'Number badge als data component', id: 'number-badge-als-data-component', level: 3 }, { value: 'Number badge met een toegankelijk label', id: 'number-badge-met-een-toegankelijk-label', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Figma', id: 'figma', level: 2 }, { value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...c.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 }];
+    F = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...c.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'Number badge als data component', id: 'number-badge-als-data-component', level: 3 }, { value: 'Number badge met een toegankelijk label', id: 'number-badge-met-een-toegankelijk-label', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
    function M(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, i.R)(), ...e.components };
     return (0, s.jsxs)(s.Fragment, {
@@ -651,15 +651,7 @@
       '\n',
       (0, s.jsx)(k.e, { component: L }),
       '\n',
-      (0, s.jsx)(n.h2, { id: 'candidate-gebruiken', children: 'Candidate gebruiken' }),
-      '\n',
-      (0, s.jsx)(b.Zp, { className: 'implementation-card', children: (0, s.jsxs)(b.Wu, { children: [(0, s.jsx)(y.D, { level: 3, appearance: 'level-4', children: 'Figma' }), (0, s.jsxs)(w.dk, { children: [(0, s.jsxs)(w.N_, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271', children: [(0, s.jsx)(f.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, s.jsxs)(w.N_, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=1233-4271', children: [(0, s.jsx)(f.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, s.jsx)(y.D, { level: 3, appearance: 'level-4', children: 'Storybook' }), (0, s.jsxs)(w.dk, { children: [(0, s.jsxs)(w.N_, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-number-badge--documentatie', children: [(0, s.jsx)(f.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, s.jsxs)(w.N_, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/number-badge--documentatie', children: [(0, s.jsx)(f.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, s.jsx)(y.D, { level: 3, appearance: 'level-4', children: 'NPM' }), (0, s.jsxs)(w.dk, { children: [(0, s.jsxs)(w.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: [(0, s.jsx)(f.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-css'] }), (0, s.jsxs)(w.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: [(0, s.jsx)(f.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-react'] }), (0, s.jsxs)(w.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-tokens', children: [(0, s.jsx)(f.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-tokens'] })] })] }) }),
-      '\n',
-      (0, s.jsx)(n.h3, { id: 'design-tokens', children: 'Design tokens' }),
-      '\n',
-      (0, s.jsx)(x.B, { tokens: R }),
-      '\n',
-      (0, s.jsx)(T.o, { omitH1: !0, headingLevel: 3, children: (0, s.jsx)(N, {}) }),
+      (0, s.jsx)(b.Zp, { className: 'implementation-card', children: (0, s.jsxs)(b.Wu, { children: [(0, s.jsx)(w.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271', children: [(0, s.jsx)(f.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, s.jsxs)(y.N_, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=1233-4271', children: [(0, s.jsx)(f.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, s.jsx)(w.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-number-badge--documentatie', children: [(0, s.jsx)(f.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, s.jsxs)(y.N_, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/number-badge--documentatie', children: [(0, s.jsx)(f.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, s.jsx)(w.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: [(0, s.jsx)(f.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-css'] }), (0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: [(0, s.jsx)(f.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-react'] }), (0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-tokens', children: [(0, s.jsx)(f.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-tokens'] })] })] }) }),
       '\n',
       (0, s.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
       '\n',
@@ -691,9 +683,11 @@
        ],
       }),
       '\n',
-      (0, s.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
+      (0, s.jsx)(T.o, { omitH1: !0, headingLevel: 3, children: (0, s.jsx)(N, {}) }),
       '\n',
-      (0, s.jsx)(A.mu, { component: L, headingLevel: 3 }),
+      (0, s.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }),
+      '\n',
+      (0, s.jsx)(x.B, { tokens: R }),
       '\n',
       (0, s.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
       '\n',
@@ -702,6 +696,10 @@
       (0, s.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
       (0, s.jsx)(A.$9, { component: L, headingLevel: 3 }),
+      '\n',
+      (0, s.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
+      '\n',
+      (0, s.jsx)(A.mu, { component: L, headingLevel: 3 }),
      ],
     });
    }
@@ -727,7 +725,7 @@
   },
   99630(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => b, $9: () => y, mu: () => w, Fc: () => f });
+   t.d(n, { VK: () => b, $9: () => w, mu: () => y, Fc: () => f });
    var r = t(14537),
     s = t(13526),
     i = t(1292),
@@ -763,7 +761,7 @@
       i = t && j.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
      return e && (0, c.jsx)(r.If, { sections: i.map((t) => ({ className: (0, s.A)('definition-of-done', t && `definition-of-done--${(0, j.fX)(t.title)}`), headingLevel: n, expanded: !1, label: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', body: t && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(g, { children: t.tasks.map(({ checked: e, name: t, id: r }) => (0, c.jsx)(p, { headingLevel: n + 1, checked: e, title: t, description: (0, j.qZ)(r) }, r)) }), (0, c.jsx)(r.fz, { children: (0, c.jsxs)(r.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) })) });
     },
-    w = ({ component: e, headingLevel: n }) => {
+    y = ({ component: e, headingLevel: n }) => {
      const t = e && e.projects.filter((e) => !j.f4.includes(e.id));
      return e && t.length
       ? (0, c.jsx)(o.AC, {
@@ -814,7 +812,7 @@
         })
       : (0, c.jsx)(r.fz, { children: 'Er zijn nog geen implementaties' });
     },
-    y = ({ component: e }) => {
+    w = ({ component: e }) => {
      const n = e?.projects.find((e) => 'HELP_WANTED' === e.id),
       t = n?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
      return e && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(r.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, c.jsxs)(r.Xy, { children: [t ? (0, c.jsxs)(r.Er, { children: ['Vul de ', (0, c.jsx)(r.N_, { href: t, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, c.jsxs)(r.Er, { children: [(0, c.jsxs)(r.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, c.jsxs)(r.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, c.jsx)(r.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, c.jsx)(r.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
