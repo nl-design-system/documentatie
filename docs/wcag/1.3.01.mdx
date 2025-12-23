@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.3.1 Info en relaties
 pagination_label: WCAG-succescriterium 1.3.1 Info en relaties
-description: Alle gebruikers moeten over dezelfde informatie kunnen beschikken.
+description: Zichtbare informatie staat ook in tekst of code.
 slug: 1.3.1
 keywords:
   - WCAG
@@ -20,8 +20,7 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.3.1-summary.md";
@@ -30,21 +29,117 @@ import Summary from "./summaries/_1.3.1-summary.md";
   {"WCAG-succescriterium 1.3.1 Info en relaties"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-Bijvoorbeeld:
+## Uitleg
 
-- Als tekst er uitziet als een kopje, moet dit ook in de HTML een kopje (heading) zijn en geen vet gemaakte tekst. Het kopjesniveau wordt voorgelezen door [screenreaders](/woordenlijst/#screenreader).
-- Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor screenreadersgebruikers, door het gebruik van table headings (th’s). De table heading wordt voorgelezen bij de waarde van een bijbehorende table cell.
-- In een formulier moeten invoervelden en labels aan elkaar gekoppeld zijn met een [for/id-relatie](/richtlijnen/formulieren/labels/toegankelijke-naam). Dan wordt het label voorgelezen als het invoerveld de focus krijgt.
-- Staan gegevens in een lijst, gebruik dan ook in de HTML een lijst (ul) en niet alleen streepjes voor de items. Een screenreader leest dan voor dat het een lijst is, hoeveel items er zijn in de lijst en bij welk item de lezer zich op dat moment bevindt.
-- Gebruik je een afbeelding om informatie te geven, zorg er dan voor dat de alternatieve tekst van de afbeelding de juiste informatie bevat, of voeg de informatie vlakbij de afbeelding in tekst toe.
+Veel informatie op websites is alleen te zien. Een tekst is bijvoorbeeld groter en dikker gedrukt om over te komen als belangrijke koptekst. Als deze koptekst bij een paragraaf staat, dan is de koptekst de titel van de paragraaf.
+Tekst die in rijen of kolommen staat ziet eruit als een tabel. De woorden die onder en naast elkaar staan horen bij elkaar. Dit zijn relaties.
+Deze relaties mogen niet alleen te zien zijn. Ze moeten ook in de code of in tekst zitten. Relaties in code of tekst kunnen ook begrepen worden met een [screenreader](/woordenlijst/#screenreader), door een zoekmachine en Artificial Intelligence (AI).
+Daarnaast kan informatie in vormgeving verloren gaan. Onderdelen die op het ene scherm bij elkaar lijken te horen, kunnen op een andere resolutie die relatie kwijtraken. Informatie in code en tekst is robuster.
 
-Geef via de juiste HTML of alternatieve teksten betekenis aan structuur, relaties, visuele informatie en opmaak, dan begrijpen gebruikers van hulpmiddelen deze informatie ook.
+Voor het overbrengen van relaties zijn er verschillende middelen:
 
-## Gerelateerde NL Design System-richtlijnen
+- Elementen van formulieren koppel je met een `<label>`.
+- Gebruik `aria-labelledby` en `aria-describedby` voor namen en omschrijvingen. `aria-describedby` is ook voor foutmeldingen bij formulieren.
+- Inhoud die op het oog een groep vormt, moet in de code ook een groep zijn. Laat deze inhoud bijvoorbeeld onder dezelfde kopjes vallen, en plaatst lopende teksten in dezelfde paragraaf.
+- Geef met `aria-controls` aan als een element controle heeft over een ander element.
+- Met _landsmarks_ zoals `<nav>`, `<header>`, `<aside>`, `<main>` en `<footer>` maak je groeperingen en geef je een pagina structuur.
+- Kopteksten maak je op met heading-elementen zoals `<h1>`, `<h2>` en `<h3>`. Zo zien de teksten er uit als kopteksten, en ligt dit vast in de HTML.
+
+Zo heeft HTML nog meer nuttige elementen:
+
+- Gebruik een `<a>` voor navigatie naar een andere pagina.
+- Een `<button>` is het beste element voor het uitvoeren van acties.
+- Voor lijsten gebruik je `<ol>`, `<li>` en `<dl>`. Gebruik geen leestekens als "bullets".
+- Gebruik `<strong>` en `<em>` voor het benadrukken van tekst.
+- Gebruik attributen als `aria-expanded` om te communiceren als iets uitklapt.
+- Een tabel met data maak je op met `<table>`. Gebruik dit element niet voor andere doeleinden.
+- Een citaat maak je op met met `<q>` of `<blockquote>`.
+- Gebruik `<address>` voor een adresblok.
+
+Er zijn [113 HTML-elementen](https://meiert.com/indices/html-elements/). Om te voldoen aan de richtlijnen zijn de hier genoemde elementen genoeg. Als je geen geschikt HTML-element kent kan de informatie in tekst uitgeschreven worden.
+
+### Voordelen
+
+Informatie die niet leunt op plaatjes of vormgeving is makkelijk aan te passen.
+
+- Mensen die een screenreader gebruiken kunnnen de informatie horen, of voelen met braille.
+- Browsers zoals Firefox en Safari hebben een stand die een leesbaardere pagina laat zien. Hiervoor is aangepaste vormgeving nodig.
+- Vertaalsoftware zoals Google Translate werkt niet met afbeeldingen maar wel met tekst en code.
+- HTML-code is leesbaarder.
+- Mensen kunnen pagina's bruikbaarder maken door zelf de vormgeving aan te passen.
+- Zoekmachines en AI werken beter met gestructureerde pagina's
+
+## Hoe te testen
+
+Dit criterium is lastig om zowel snel als volledig te testen. Voor een goede indruk controleer je of het uiterlijk van elementen overeenkomt met de code. Zo moet een dikgedrukte grote tekst die er uit ziet als een koptekst, ook opgemaakt zijn als een koptekst in de code. Dit geldt ook voor:
+
+- Tabellen
+- Lijsten
+- Formulieren - inclusief labels, instructies en foutmeldingen.
+- Links
+- Knoppen
+
+Voor een volledige en verdere test is een screenreader heel erg praktisch. De pagina die je hoort mag niet minder informatie geven dan de pagina die je ziet.
+
+## Veelgemaakte fouten
+
+### HTML-elementen `<em>` en `<strong>` worden gebruikt voor vormgeving.
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+De HTML-elementen `<em>` en `<strong>` geven betekenis aan tekst. `<em>` geeft een stuk tekst nadruk en wordt gebruikt voor namen en termen. `<strong>` geeft een stuk tekst urgentie en benadrukt hoe belangrijk deze is.
+Beide HTML-elementen veranderen ook hoe de tekst er uit ziet. `<em>` maakt tekst schuin. `<strong>` maakt tekst dik. Als deze elementen puur voor vormgeving gebruikt worden klopt de boodschap niet meer.
+
+#### Oplossing
+
+Verwijder `<em>` en `<strong>`. Pas de vormgeving aan met CSS.
+
+### Een tekst ziet er uit als een koptekst maar is in de code geen koptekst.
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Een tekst is groot en dikgedrukt door CSS of de HTML-elementen `<em>` en `<strong>`. Deze manier van vormgeven bepaalt alleen het uiterlijk. Als het uiterlijk aangepast wordt of niet gezien wordt, dan is het niet duidelijk dat het een koptekst is.
+
+#### Oplossing
+
+Markeer de kopteksten met heading-elementen zoals `<h1>`, `<h2>` en `<h3>`. Verwijder eventuele elementen zoals `<em>` en `<strong>` omdat deze een andere betekenis hebben.
+
+### Een tekst ziet er uit als een label maar is niet zo opgemaakt.
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Een tekst staat bij een invoerveld en ziet er uit alsof deze het label is van het invoerveld. Deze tekst moet ook in de code gemarkeerd worden als `<label>` en de relatie met het invoerveld moet vastgelegd zijn. Zonder deze relatie heeft het invoerveld geen toegankelijke naam.
+
+#### Oplossing
+
+Pas het HTML-element `<label>` toe en gebruik het `for`-attribuut om het te verbinden met het invoerveld.
+
+### Informatie ziet er uit als een tabel maar is niet zo opgemaakt
+
+Dit probleem kan opgelost worden door developers.
+
+#### Probleem
+
+Een tabel is een goede manier om data te presenteren. De rijen en kolommen geven de relaties binnen de informatie weer. Deze relaties moeten niet alleen niet zien zijn, maar ook in de code zitten.
+Als het uiterlijk aangepast wordt of niet gezien wordt, dan gaan deze relaties verloren.
+
+#### Oplossing
+
+Markeer de tabel met `<table>` en gebruik `<th>` voor kopteksten.
+
+## Gerelateerde NL Design System-richtlijnen en WCAG criteria
+
+### NL Design System-richtlijnen
+
+Formulieren hebben veel onderdelen die staan of vallen met goede opmaak. De richtlijnen van NL Design System geven zowel algemene tips, als tips speciaal voor formulieren.
 
 - Formulieren: [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam).
 - Formulieren: [Geef een formulierveld toegankelijke naam met een label](/richtlijnen/formulieren/labels/toegankelijke-naam).
@@ -53,45 +148,39 @@ Geef via de juiste HTML of alternatieve teksten betekenis aan structuur, relatie
 - Content: [Koppen](/richtlijnen/content/tekstopmaak/koppen), [Tabellen](/richtlijnen/content/tekstopmaak/tabellen), [Opsommingen](/richtlijnen/content/tekstopmaak/opsommingen), [Tekst benadrukken](/richtlijnen/content/tekstopmaak/tekst-benadrukken), [Citaten](/richtlijnen/content/citaten).
 - Content: [Kantoorbestanden](/richtlijnen/content/kantoorbestanden).
 
-## Gebruikersonderzoek
+### WCAG richtlijnen
 
-De rapportage van het 'Onderzoek online meldingen' geeft het belang van goede informatie voor screenreadergebruikers aan: [Blinden en slechtzienden lopen vast in het proces](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen#blinden-en-slechtzienden-lopen-vast-in-het-proces).
+Juiste opmaak is ook erg belangrijk voor andere WCAG richtlijnen. Dit geldt onder andere voor:
 
-> Het is voor de blinden niet duidelijk dat er een verplicht invulveld zit in de kaart om het adres in te vullen. Ze vullen het niet in en gaan door in het formulier. Dit, gecombineerd met een onduidelijke foutmelding zorgt er voor dat ze vast komen te zitten en uit het proces vallen.
+- [WCAG-succescriterium 1.3.5 Identificeer het doel van de input](/wcag/1.3.5)
+- [WCAG-succescriterium 1.4.1 Gebruik van kleur](/wcag/1.4.1)
+- [WCAG-succescriterium 1.4.10 Reflow](/wcag/1.4.10)
+- [WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1)
+- [WCAG-succescriterium 2.4.1 Blokken omzeilen](/wcag/2.4.1)
+- [WCAG-succescriterium 2.4.6 Koppen en labels](/wcag/2.4.6)
+- [WCAG-successcriterium 4.1.2 Naam, rol, waarde](wcag/4.1.2)
 
-<CTAGebruikersonderzoek />
+## Bronnen
 
-## Hoe te testen
+- Browserextensie [<span lang="en">Headingsmap</span>](https://github.com/dzc34/headingsMap) geeft de structuur van kopteksten weer.
+- Browserextensie [<span lang="en">Landmarks</span>](https://matatk.agrip.org.uk/landmarks/) geeft de structuur van landmarks weer.
+- Het onderzoek [Blinden en slechtzienden lopen vast in het proces](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen#blinden-en-slechtzienden-lopen-vast-in-het-proces) op gebruikersonderzoeken.nl. In dit onderzoek hadden gebruikers problemen met onduidelijk gemarkeerde code.
 
-De pagina doorlezen met een screenreader is een goede manier om dit succescriterium te testen. Wordt de informatie die je ziet ook goed voorgelezen.
-
-Controleer of de HTML semantisch is opgemaakt, zoals bijvoorbeeld:
-
-- **Kopjes** (headings): ziet tekst eruit als een kopje, is deze opgemaakt als HTML-kopje (h1, h2, h3 etc)? En andersom: worden kopjes niet gebruikt om tekst alleen groot te maken?
-- **Lijsten**: is tekst opgemaakt als een genummerde of ongenummerde lijst, is deze in de HTML dan ook opgemaakt als een genummerde (`<ol>`) of ongenummerde lijst (`<ul>`)?
-- **Tabellen** voor het weergeven van data: is het duidelijk welke data precies wordt weergegeven? Bijvoorbeeld door het gebruik van table headings (th’s) en scope.
-
-Test voor formuliervelden:
-
-- Is het label en de description gekoppeld aan het invoerveld?
-- Weet een screenreadergebruiker ook dat een veld verplicht is?
-- Worden fout- en succesmeldingen voorgelezen door een screenreader?
-
-## W3C referenties
+## Officiële WCAG criteria
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.1 Info and Relationships</span>](https://www.w3.org/TR/WCAG22/#info-and-relationships).
 - Nederlandse vertaling van het WCAG-succescriterium: [1.3.1 Info en relaties](https://www.w3.org/Translations/WCAG22-nl/#info-and-relationships).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.1 Info and Relationships</span>](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.1 Info and Relationships</span>](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html).
 
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+## Wat is verplicht?
 
-## Help richtlijn verbeteren
+<Markdown omitH1>
+  <Disclaimer />
+</Markdown>
 
-<Markdown omitH1 headinglevel={3}>
+## Aanvullingen of opmerkingen?
+
+<Markdown omitH1>
   <WCAGFooterInfo />
 </Markdown>
