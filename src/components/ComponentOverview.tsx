@@ -1,7 +1,7 @@
-import type { PropSidebarItem, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
+import type { PropSidebarItem, PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
-import { useDocById } from '@docusaurus/theme-common/internal';
+import { useDocById } from '@docusaurus/plugin-content-docs/client';
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
 import { AccordionProvider, Fieldset, Paragraph, PrimaryActionButton } from '@utrecht/component-library-react';
 import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react/dist/css-module';
@@ -22,7 +22,7 @@ export const ComponentOverview = () => {
   const SEARCH_PARAM_FRAMEWORK = 'framework';
   const SEARCH_PARAM_STATUS = 'status';
 
-  const category = useCurrentSidebarCategory();
+  const category = useCurrentSidebarCategory() as PropSidebarItemCategory;
   const { location, replace } = useHistory();
 
   const params = new URLSearchParams(location.search);

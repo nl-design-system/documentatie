@@ -30,6 +30,480 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 6.6.1
+
+19 december 2025
+
+Schaduw bij Table component hersteld
+
+- [Bekijk Table in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=26701-285).
+- Ga binnen het frame 'Documentatie - Table' naar de sectie 'Responsive gedrag'.
+- In de voorbeelden vind je de fixed layers 'utrecht-table-container-shadow-right' en 'utrecht-table-container-shadow-left'.
+- Selecteer layer 'utrecht-table-container-shadow-right' en hernoem deze naar 'table-container-box-shadow-inline-end'.
+- Zet in de Figma properties 'Clip content' uit.
+- Selecteer layer 'utrecht-table-container-shadow-left' en hernoem deze naar 'table-container-box-shadow-inline-start'.
+- Zet in de Figma properties 'Clip content' uit.
+- Ga naar het frame 'Demo - Table'.
+- Selecteer layer 'utrecht-table-container-shadow-right' en hernoem deze naar 'table-container-box-shadow-inline-end'.
+- Zet in de Figma properties 'Clip content' uit.
+
+## 6.6.0
+
+18 december 2025
+
+Community component ‘Status Badge’ van Utrecht is toegevoegd aan de bibliotheek.
+
+- [Bekijk Status Badge in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=26701-285).
+- Open Tokens Studio.
+- Ga naar de tokenset `status-badge`.
+- Hernoem deze tokenset naar `components/status-badge/todo`
+- Dupliceer de tokenset die nu 'todo' als naam heeft en geef deze de naam `components/status-badge/utrecht`.
+- Positioneer de 'utrecht' tokenset boven de 'todo' tokenset.
+- Vervang de design tokens in de 'utrecht' tokenset voor onderstaande design tokens.
+
+```json
+{
+  "utrecht": {
+    "status-badge": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.bg-default}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.transparent}"
+      },
+      "border-radius": {
+        "$type": "dimension",
+        "$value": "{basis.border-radius.sm}"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.border-width.sm}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-default}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{basis.text.font-family.default}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{basis.text.font-size.md}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{basis.text.font-weight.bold}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{basis.text.line-height.md}"
+      },
+      "letter-spacing": {
+        "$type": "letterSpacing",
+        "$value": "0px"
+      },
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "{basis.size.xs}"
+      },
+      "min-inline-size": {
+        "$type": "dimension",
+        "$value": "{basis.size.sm}"
+      },
+      "padding-block": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.sm}"
+      },
+      "text-transform": {
+        "$type": "textCase",
+        "$value": "None"
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.positive.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.positive.color-default}"
+        }
+      },
+      "danger": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.negative.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.negative.color-default}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.negative.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.negative.color-default}"
+        }
+      },
+      "inactive": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-default}"
+        }
+      },
+      "invalid": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.negative.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.negative.color-default}"
+        }
+      },
+      "neutral": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.info.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.info.color-default}"
+        }
+      },
+      "safe": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.positive.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.positive.color-default}"
+        }
+      },
+      "success": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.positive.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.positive.color-default}"
+        }
+      },
+      "valid": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.positive.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.positive.color-default}"
+        }
+      },
+      "warning": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.warning.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.warning.color-default}"
+        }
+      }
+    }
+  }
+}
+```
+
+## 6.5.0
+
+17 december 2025
+
+Community component ‘Breadcrumb Navigation’ van Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Breadcrumb Navigation in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1862-9575).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "ams": {
+    "breadcrumb": {
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{basis.text.font-family.default}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{basis.text.font-size.md}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{basis.text.font-weight.default}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{basis.text.line-height.md}"
+      },
+      "separator": {
+        "background-image": {
+          "$type": "other",
+          "$value": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%23000000' fill-rule='evenodd' d='m9.757 32-2.9-2.91L19.937 16 6.857 2.91 9.757 0l16 16z'/></svg>\")",
+          "$description": "[code-only]"
+        },
+        "block-size": {
+          "$type": "dimension",
+          "$value": "0.750rem"
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "0.750rem"
+        },
+        "margin-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.lg}"
+        }
+      },
+      "link": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "outline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-decoration-line": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        },
+        "text-underline-offset": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "text-decoration-thickness": {
+          "$type": "other",
+          "$value": "auto",
+          "$description": "[code-only]"
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          },
+          "text-decoration-line": {
+            "$type": "textDecoration",
+            "$value": "None"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## 6.4.0
+
+16 december 2025
+
+Community component ‘Navigation List’ van RHC is toegevoegd aan de bibliotheek.
+
+- [Bekijk Navigation List in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=26632-656).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "rhc": {
+    "navigation-list": {
+      "item": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.border-subtle}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        },
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.xl}"
+        },
+        "min-height": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-block-size}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-active}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-hover}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          }
+        },
+        "content": {
+          "column-gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.column.md}",
+            "$description": "[code-only]"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.row.sm}",
+            "$description": "[code-only]"
+          }
+        },
+        "description": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-subtle}"
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{basis.text.font-size.md}"
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "{basis.text.line-height.md}"
+          }
+        },
+        "icon-end": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-default}"
+          }
+        },
+        "icon-start": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1-inverse.bg-default}"
+          },
+          "border-radius": {
+            "$type": "dimension",
+            "$value": "{basis.border-radius.round}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1-inverse.color-default}"
+          },
+          "padding-block": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.md}"
+          },
+          "padding-inline": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.md}"
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{basis.size.icon.md}"
+          }
+        },
+        "label": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.heading.color}"
+          },
+          "font-family": {
+            "$type": "fontFamilies",
+            "$value": "{basis.text.font-family.default}"
+          },
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{basis.text.font-size.md}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "{basis.text.line-height.md}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 6.3.0
 
 8 december 2025

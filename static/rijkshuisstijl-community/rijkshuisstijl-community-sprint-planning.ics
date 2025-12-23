@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 VERSION:2.0
-X-WR-CALNAME:Rijkshuisstijl Community sprint planning - NL Design System
+X-WR-CALNAME:Rijkshuisstijl Community Sprint planning - NL Design System
 METHOD:PUBLISH
 PRODID:-//Apple Inc.//macOS 14.1.1//EN
 BEGIN:VTIMEZONE
@@ -31,9 +31,9 @@ LOCATION:https://app.slack.com/huddle/T68FXPFQV/C05AQK9R41G
 DESCRIPTION:Geen zorgen als je er niet bij kan zijn, dit is een optionele community meeting! \n\nJoin als je kunt en als je deze sprint betrokken wilt zijn 😃 \n\nWe doen het in de Slack huddle van #rijkshuisstijl-community. \n\nBekijk het community sprint bord: https://github.com/orgs/nl-design-system/projects/59
 X-APPLE-CREATOR-IDENTITY:com.apple.calendar
 SEQUENCE:6
-SUMMARY:Rijkshuisstijl Community sprint planning - NL Design System
+SUMMARY:Rijkshuisstijl Community Sprint planning - NL Design System
 DTSTART;TZID=Europe/Amsterdam:20250703T150000
-LAST-MODIFIED:20240610T120000Z
+LAST-MODIFIED:20251204T140000Z
 CREATED:20240610T120000Z
 RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TH
 END:VEVENT

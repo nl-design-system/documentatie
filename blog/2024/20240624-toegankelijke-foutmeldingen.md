@@ -1,10 +1,7 @@
 ---
 title: Toegankelijke foutmeldingen in formulieren
 slug: toegankelijke-foutmeldingen-formulieren
-authors:
-  - name: Rian Rietveld
-    title: Specialist webtoegankelijkheid NL Design System
-    url: https://www.linkedin.com/in/rianrietveld/
+authors: Rian Rietveld
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog_toegankelijker-foutmeldingen.png
 tags: [formulieren, toegankelijkheid, richtlijnen, NL Design System]
 hide_table_of_contents: false
@@ -14,6 +11,8 @@ date: 2024-06-24
 Hoe geef je een gebruiker nuttige informatie over wat er niet goed gaat bij het invullen van een formulier? Wanneer je zorg besteedt aan het voorkomen en aangeven van fouten, is de kans dat een gebruiker het formulier verzendt veel groter.
 
 In dit artikel ga ik stap voor stap in op het voorkomen, aanduiden en het geven van hulp bij foutmeldingen in een formulier voor verschillende soorten gebruikers.
+
+<!-- truncate -->
 
 Stel jezelf de volgende vragen:
 

@@ -1,7 +1,7 @@
 import type { PropSidebarItem } from '@docusaurus/plugin-content-docs';
 import { NavbarSecondaryMenuFiller, ThemeClassNames } from '@docusaurus/theme-common';
 import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
-import DocSidebarItems from '@theme/DocSidebarItems';
+import DocSidebarItems from '@theme-original/DocSidebarItems';
 import clsx from 'clsx';
 import { memo } from 'react';
 

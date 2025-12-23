@@ -2,9 +2,8 @@
 title: De toegankelijke naam van een link op een logo in de header
 slug: toegankelijke-naam-link-logo-header
 authors:
-  - name: Rian Rietveld
+  - key: Rian Rietveld
     title: Specialist webtoegankelijkheid
-    url: https://www.linkedin.com/in/rianrietveld/
 tags: [link, logo, toegankelijke naam]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/blog-toegankelijke-naam-link-logo.png
 hide_table_of_contents: false

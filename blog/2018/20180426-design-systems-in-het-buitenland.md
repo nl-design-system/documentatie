@@ -1,10 +1,7 @@
 ---
 title: Design systems in het buitenland - 6 lessen
 slug: design-systems-in-het-buitenland-6-lessen
-authors:
-  - name: Edo Plantinga
-    title: Freelance projectleider en communitymanager
-    url: https://www.linkedin.com/in/edoplantinga
+authors: Edo Plantinga
 tags: [buitenland, design systems]
 image: https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2018/04/RAL_DESIGN_System_D2_Farbfächer-1200x675.jpg
 hide_table_of_contents: false

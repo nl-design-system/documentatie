@@ -1,9 +1,10 @@
 import { CodeBlockSyntaxHighlighting } from '@site/src/components/CodeBlockSyntaxHighlighting';
-import type { Props as MDXPreProps } from '@theme/MDXComponents/Pre';
 import { isValidElement } from 'react';
-import type { ReactElement } from 'react';
+import type { ComponentProps, ReactElement } from 'react';
 
-export default function MDXPre(props: MDXPreProps): ReactElement {
+type Props = ComponentProps<typeof CodeBlockSyntaxHighlighting>;
+
+export default function MDXPre(props: Props): ReactElement {
   let syntax;
   let textContent = '';
 

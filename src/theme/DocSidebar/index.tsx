@@ -1,6 +1,6 @@
 import { useWindowSize } from '@docusaurus/theme-common';
-import DocSidebarDesktop from '@theme/DocSidebar/Desktop';
-import DocSidebarMobile from '@theme/DocSidebar/Mobile';
+import DocSidebarDesktop from '@theme-original/DocSidebar/Desktop';
+import DocSidebarMobile from '@theme-original/DocSidebar/Mobile';
 
 export default function DocSidebar(props) {
   const windowSize = useWindowSize();

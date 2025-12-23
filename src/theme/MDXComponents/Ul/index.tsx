@@ -1,6 +1,5 @@
-import type { Props } from '@theme/MDXComponents/Ul';
 import clsx from 'clsx';
-import type { ReactElement } from 'react';
+import type { HTMLAttributes, ReactElement } from 'react';
 import './styles.css';
 
 function transformUlClassName(className?: string): string {
@@ -12,6 +11,8 @@ function transformUlClassName(className?: string): string {
     className?.includes('contains-task-list') && 'containsTaskList',
   );
 }
+
+type Props = HTMLAttributes<HTMLUListElement>;
 
 export default function MDXUl(props: Props): ReactElement {
   return <ul {...props} className={transformUlClassName(props.className)} />;

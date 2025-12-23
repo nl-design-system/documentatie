@@ -1,10 +1,7 @@
 ---
 title: NL Design System in 2021
 slug: nl-design-system-in-2021
-authors:
-  - name: Jessica Straetemans
-    title: Coördinator Communicatie bij Gebruiker Centraal
-    url: https://www.linkedin.com/in/jessicastraetemans/
+authors: Jessica Straetemans
 tags: [Figma, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2021/12/2021.jpeg
 hide_table_of_contents: false

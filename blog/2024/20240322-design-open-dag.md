@@ -1,10 +1,7 @@
 ---
 title: Samen aan de slag met het esta­fette­­mo­del
 slug: design-open-dag
-authors:
-  - name: Hidde de Vries
-    title: Public relations lead & Toegankelijkheidsspecialist NL Design System
-    url: https://www.linkedin.com/in/hiddedevries/
+authors: Hidde de Vries
 tags: [meta, estafettemodel, designers, NL Design System]
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/samen-aan-de-slag.png
 hide_table_of_contents: false
@@ -12,6 +9,8 @@ date: 2024-03-22
 ---
 
 Gisteren was er weer een samenwerkdag met ontwerpers uit de NL Design System community. De ochtend stond in het thema van het [estafettemodel](/handboek/estafettemodel), waarin we een eerste component hebben gecheckt op onze aangescherpte ‘definition of done’.
+
+<!-- truncate -->
 
 Met een groep van 10 mensen vanuit projecten bij verschillende gemeenten, een leverancier en een ministerie, kwamen we bij elkaar. De locatie was wederom het stadskantoor van de Gemeente Utrecht, dank voor hun gastvrijheid. We werkten samen aan een flow voor het uploaden van bijlagen, notificaties en een themamaker. En dus het estafettemodel.
 

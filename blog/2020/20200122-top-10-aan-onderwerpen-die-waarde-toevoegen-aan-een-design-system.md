@@ -1,10 +1,7 @@
 ---
 title: De top-10 aan onderwerpen die waarde toevoegen aan een design systeem
 slug: top-10-aan-onderwerpen-die-waarde-toevoegen-aan-een-design-system
-authors:
-  - name: Angela Imhof
-    title: Projectmanager
-    url: https://www.linkedin.com/in/angelaimhof
+authors: Angela Imhof
 tags: [update, NL Design System]
 image: https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2020/08/drie-mannen-design-system.jpg
 hide_table_of_contents: false
