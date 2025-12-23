@@ -71,7 +71,3 @@ export const MyPage = () => {
 ```
 
 Bekijk alle variaties bij [de React Button in Storybook](https://nl-design-system.github.io/candidate/?path=/docs/button--documentatie)
-
-## Figma
-
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Button](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1138).
