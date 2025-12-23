@@ -79,7 +79,3 @@ import { NumberBadge } from "@nl-design-system-candidate/number-badge-react";
 
 export const MyComponent = () => <NumberBadge value="42" />;
 ```
-
-## Figma
-
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Number Badge](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271).

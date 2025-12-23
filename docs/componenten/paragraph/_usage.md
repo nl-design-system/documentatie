@@ -84,7 +84,3 @@ Je kunt de React component zo gebruiken:
 ```jsx
 <Paragraph purpose="lead">Op brute wĳze ving de schooljuf de quasi-kalme lynx.</Paragraph>
 ```
-
-## Figma
-
-De Figma component staat in [NL Design System Voorbeeld Bibliotheek — Paragraph](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=150-734).
