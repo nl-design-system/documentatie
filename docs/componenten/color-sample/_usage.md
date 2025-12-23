@@ -20,7 +20,9 @@ Zorg dat je een duidelijke beschrijving naast de Color Sample hebt en gebruik wa
 ```html
 <h1>Huisstijlkleuren</h1>
 <figure>
-  <ColorSample value="deeppink" aria-labelledby="kleur-1" />
+  <svg role="img" xmlns="http://www.w3.org/2000/svg" class="nl-color-sample" style="color: deeppink;">
+    <path d="M0 0H32V32H0Z" fill="currentcolor" />
+  </svg>
   <figcaption id="kleur-1">Roze</figcaption>
 </figure>
 ```
@@ -89,10 +91,9 @@ export const MyPage = () => {
     <html>
       <body>
         <figure>
-          <ColorSample value="deeppink"/>
-          <figcaption>
-            Roze
-          </figcaption>
+          <ColorSample value="deeppink" />
+          <figcaption>Roze</figcaption>
+        </figure>
       </body>
     </html>
   );
