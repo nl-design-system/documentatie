@@ -82,23 +82,21 @@ export const component = componentProgress.find((item) => item.number === issueN
 Gebruik de [Code](/code) component als de code in een regel met andere tekst staat.
 :::
 
-## Candidate gebruiken
-
 <Card className="implementation-card">
   <CardContent>
-    <Heading level={3} appearance="level-4">Figma</Heading>
+    <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
       <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
       <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
     </LinkList>
 
-    <Heading level={3} appearance="level-4">Storybook</Heading>
+    <Heading level={2} appearance="level-4">Storybook</Heading>
     <LinkList>
       <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-code-block--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
       <Link href="https://nl-design-system.github.io/candidate/?path=/docs/code-block--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
     </LinkList>
 
-    <Heading level={3} appearance="level-4">NPM</Heading>
+    <Heading level={2} appearance="level-4">npm</Heading>
     <LinkList>
       <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-css</Link>
       <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-react</Link>
@@ -107,14 +105,6 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
 
   </CardContent>
 </Card>
-
-### Design tokens
-
-<DesignTokens tokens={tokens} />
-
-<Markdown omitH1 headingLevel={3}>
-  <Usage />
-</Markdown>
 
 ## Checklist voor toegankelijkheid
 
@@ -183,9 +173,13 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
   ]}
 />
 
-## Community implementaties
+<Markdown omitH1 headingLevel={2}>
+  <Usage />
+</Markdown>
 
-<Implementations component={component} headingLevel={3} />
+## Design tokens
+
+<DesignTokens tokens={tokens} />
 
 ## Definition of Done
 
@@ -194,3 +188,7 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
 ## Help component verbeteren
 
 <HelpImproveComponent component={component} headingLevel={3} />
+
+## Community implementaties
+
+<Implementations component={component} headingLevel={3} />
