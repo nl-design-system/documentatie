@@ -15,6 +15,567 @@ keywords:
   - candidate
 ---
 
-# Stappenplan: Candidate
+{/* @license CC0-1.0 */}
 
-Dit stappenplan is nog in ontwikkeling.
+import { TaskList, TaskListItem } from "@site/src/components/TaskList";
+import { Link } from "@site/src/components/Link";
+
+# Candidate stappenplan
+
+<TaskList>
+  <TaskListItem checked>🧪 Testfase - Design Tokens getest</TaskListItem>
+  <TaskListItem checked>🧪 Testfase - A11y getest</TaskListItem>
+  <TaskListItem checked>🧪 Testfase - Testcases gebruik getest</TaskListItem>
+  <TaskListItem checked>🧪 Testfase - Thema's getest</TaskListItem>
+  <TaskListItem checked>🧪 Testfase - Internationalisatie getest</TaskListItem>
+  <TaskListItem checked>🧪 Testfase - Documentatie getest</TaskListItem>
+  <TaskListItem checked>🎉 Rond de testfase af</TaskListItem>
+  <TaskListItem checked>🚀 Publicatiefase - NPM - React</TaskListItem>
+  <TaskListItem checked>🚀 Publicatiefase - NPM - CSS</TaskListItem>
+  <TaskListItem checked>🚀 Publicatiefase - NPM - Docs</TaskListItem>
+  <TaskListItem checked>🚀 Publicatiefase - NPM - Design Tokens</TaskListItem>
+  <TaskListItem checked>🚀 Publicatiefase - Figma - Start Bibliotheek</TaskListItem>
+  <TaskListItem checked>🚀 Publicatiefase - Figma - Voorbeeld Bibliotheek</TaskListItem>
+  <TaskListItem checked>🚀 Publicatiefase - nldesignsystem.nl</TaskListItem>
+  <TaskListItem checked>🚀 Publicatiefase - Themes repository</TaskListItem>
+  <TaskListItem checked>🎉 Rond de publicatiefase af</TaskListItem>
+</TaskList>
+
+## 🔍 Selectiefase
+
+Een component wordt pas door het kernteam opgepakt voor de Candidate fase wanneer deze aan een aantal voorwaarden voldoet. Deze voorwaarden vormen de selectiefase van de component.
+
+Omdat sommige componenten met urgentie toegevoegd moeten worden aan het design system kan bij uitzondering ook gebruik worden gemaakt van de zogenaamde de [Fast Track](#selectie-fast-track).
+
+![Een overzicht van de stappen in de Selectiefase. Deze Selectiefase kan op 2 manieren. De normale manier, hier in grijs aangegeven, waarbij er tenminste 1 community implementatie is, deze goed instelbaar is voor verschillende huisstijlen, de community inplementatie goed bruikbaar is in diverse projecten en is getest met een WCAG-EM toegankelijkheidsaudit. Alternatief is er de Fast-track, hier in groen aangegeven, waar besloten wordt of de component dringend nodig is voor toegankelijkheid.](https://github.com/nl-design-system/documentatie/blob/assets/candidate-stappenplan-selectiefase.png?raw=true)
+
+<TaskList>
+  <TaskListItem checked>🔍 [Selectiefase - Huisstijl instelbaar](#selectie-huisstijl)</TaskListItem>
+  <TaskListItem checked>🔍 [Selectiefase - Component gebruikt](#selectie-gebruikt)</TaskListItem>
+  <TaskListItem checked>🔍 [Selectiefase - WCAG input](#selectie-wcag)</TaskListItem>
+  <TaskListItem checked>🎉 [Rond de selectiefase af](#selectie-afronden)</TaskListItem>
+</TaskList>
+
+### 🔍 Huisstijl instelbaar {#selectie-huisstijl}
+
+Omdat een Candidate component gebouwd wordt op basis van een Community implementatie, maar eventueel onnodige complexiteit eruit haalt, is het belangrijk dat deze voldoende gebruikt is in verschillende huisstijlen voordat het kernteam deze selecteert voor Candidate.
+
+#### Doel
+
+De Candidate component werkt voorspelbaar bij het instellen van een thema, heeft genoeg opties hebben om de meeste huisstijlen mee in te stellen, maar heeft geen design tokens die niemand gebruikt.
+
+#### Uitkomst
+
+Er is voldoende informatie om te zorgen dat de Candidate component geschikt wordt voor gebruik in verschillende huisstijlen.
+
+#### Kan de community helpen?
+
+Dat kan door je huisstijl in te stellen voor 1 of meer Community implementaties en met het kernteam te delen hoe dat was. Bijvoorbeeld door het gewenste resultaat te delen in de GitHub Discussion van de component en eventuele tekortkomingen te delen in de GitHub issues van de Community implementatie.
+
+### 🔍 Component gebruikt {#selectie-gebruikt}
+
+Omdat de Hall of Fame uit componenten bestaat die bewezen nodig zijn voor meerdere projecten, is het belangrijk dat een Community component in meer dan 1 project gebruikt is. Ook moet de component goed kunnen werken in productie.
+
+Het kernteam selecteert dus alleen componenten die aantoonbaar nodig zijn voor verschillende projecten en daarmee een permanente plek verdienen in het design system.
+
+#### Doel
+
+De Candidate component kan worden gebruikt in meerdere projecten en kan goed werken voor eindgebruikers in een productie omgeving.
+
+#### Uitkomst
+
+Er is voldoende informatie om te zorgen dat de Candidate de juiste functionaliteiten en varianten krijgt die noodzakelijk zijn om de component succesvol te gebruiken in verschillende projecten.
+
+#### Kan de community helpen?
+
+Dat kan door de beschikbare Community componenten te gebruiken in je projecten, in plaats van deze opnieuw te bouwen. Eventuele verbeteringen in samenwerking met de Community in die implementatie op te nemen en de resultaten te delen in de GitHub Discussion van de component. Zijn er nog issues? Deel deze dan ook in de GitHub issues van de Community implementatie.
+
+### 🔍 WCAG input {#selectie-wcag}
+
+Wanneer een Community component gebruikt is in project waarvoor een toegankelijkheidsrapport is gemaakt, dan weet het kernteam of er problemen met toegankelijkheid zijn waar rekening mee moet worden houden.
+
+Het kernteam selecteert dus alleen componenten die getest zijn in tenminste 1 WCAG-EM toegankelijkheidsaudit, zodat voldoende informatie beschikbaar is of deze succesvol gebruikt kan worden in productie.
+
+#### Doel
+
+De Candidate component biedt voldoende opties, voorbeelden van goede code en begeleidende documentatie om deze toegankelijk in te zetten in verschillende projecten.
+
+#### Uitkomst
+
+Er is voldoende informatie welke functionaliteit, tests en documentatie de component nodig heeft om toegankelijk ingezet te kunnen worden.
+
+#### Kan de community helpen?
+
+Dat kan door het kernteam te laten weten dat de component gebruikt is op een pagina die meegenomen is in een WCAG-EM audit, of een WCAG test in het algemeen. Dat kan in de GitHub Discussion van de component, in Open Hours of eventueel in Slack.
+
+### 🔍 Fast Track {#selectie-fast-track}
+
+Een component kan ook zó belangrijk zijn voor verbetering van toegankelijkheid dat de prioriteit alleen al hierdoor enorm omhoog gaat, waardoor het waardevol is om zónder de andere selectie checks de component op te pakken als kernteam.
+
+#### Doel
+
+Belangrijke componenten blijven niet liggen omdat er niet voldoende tijd of specialistische kennis beschikbaar is in de community.
+
+#### Uitkomst
+
+Het kernteam kan bij uitzondering componenten oppakken voor het Candidate proces die nog niet voldoende beschikbaar of bruikbaar zijn als Community implementatie.
+
+#### Hoe kan de community helpen?
+
+Dat kan door WCAG-audits te delen waarin de component ontoegankelijk gebruikt blijkt te worden en door op Slack en in de Open Hours hulp te vragen voor het toegankelijker maken van de component. Hiermee wordt de prioriteit van de component hoger, waardoor de kans op een fast track toeneemt.
+
+### 🎉 Rond de selectiefase af {#selectie-afronden}
+
+Het kernteam laat de community weten dat de component is geselecteerd voor het Candidate proces.
+
+#### Doel
+
+De Candidate component heeft zo veel mogelijk draagvlak in de community, doordat niet per ongeluk onbekende issues met de bestaande componenten opnieuw in de Candidate component zitten.
+
+#### Uitkomst
+
+De community weet dat het kernteam de component heeft geselecteerd voor het Candidate proces zodat ze ongedocumenteerde problemen nog vast kunnen te leggen in de Backlog voor gebruik in de voorbereidingsfase.
+
+## 📝 Voorbereidingsfase
+
+Candidate componenten worden beschikbaar gemaakt en getest op basis van acceptatiecriteria. Om te bepalen welke dat zijn kijkt het kernteam naar de Community implementatie (1 of meerdere), de thema's die daarvoor gemaakt zijn, de openstaande issues en de toegankelijkheidsrapporten die beschikbaar zijn.
+
+In de Voorbereidingsfase wordt vastgelegd welke varianten de component moet krijgen, wat de beste semantiek is, welke events beschikbaar moeten worden gesteld, welke Stories nodig zijn, welke automatische tests en welke design tokens.
+
+![Een overzicht van de stappen in de Voorbereidingsfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme die hierbij betrokken is: Developer relations en design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://github.com/nl-design-system/documentatie/blob/assets/candidate-stappenplan-voorbereidingsfase.png?raw=true)
+
+De stappen en substappen in de voorbereidingsfase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat ongeveer de volgende stappen zien:
+
+1. Issues bekend
+   1. Input verzameld door relations
+   2. Besloten welke issues meegenomen worden in Candidate door leads
+   3. Besluit vastgelegd door relations
+2. Versimpeld of opgesplitst
+   1. Input verzameld door relations
+   2. Besloten welke varianten candidate worden door leads
+   3. Besluit vastgelegd door relations
+3. Criteria voor toegankelijkheid bepaald en vastgelegd door toegankelijkheidsspecialist
+4. Zoekwoorden vastgesteld
+   1. Alternatieve namen verzameld door relations
+   2. Besloten welke zoekwoorden keywords zijn en welke aliassen worden door leads
+   3. Keywords en aliassen vastgelegd door relations
+5. Anatomie bepaald en vastgelegd door toegankelijkheidsspecialist, developer, designer en leads
+6. Semantiek bepaald en vastgelegd door toegankelijkheidsspecialist, developer, designer en leads
+7. API bepaald
+   1. Input verzameld door relations
+   2. Besloten welke API's Candidate worden door leads
+   3. Besluit vastgelegd door relations
+8. Design tokens bepaald
+   1. Input verzameld door relations
+   2. Besloten welke design tokens Candidate worden door leads
+   3. Besluit vastgelegd door developer
+9. Acceptatiecriteria vertaald naar stories en specs door relations, toegankelijkheidsspecialist en developer
+10. Testcases voor gebruik van de component bepaald en vastgelegd door developer, designer en leads
+11. Community bijgepraat door relations
+
+<TaskList>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Issues bekend](#voorbereiding-issues)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Versimpeld of opgesplitst](#voorbereiding-versimpeld)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Anatomie](#voorbereiding-anatomie)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Acceptatiecriteria a11y](#voorbereiding-a11y)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Semantiek](#voorbereiding-semantiek)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - API](#voorbereiding-api)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Testcases voor gebruik](#voorbereiding-test-gebruik)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Design tokens](#voorbereiding-design-tokens)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Zoekwoorden](#voorbereiding-zoekwoorden)</TaskListItem>
+  <TaskListItem checked>📝 [Voorbereidingsfase - Stories en specs](#voorbereiding-stories-specs)</TaskListItem>
+  <TaskListItem checked>🎉 [Rond de voorbereidingsfase af](#voorbereiding-afronden)</TaskListItem>
+</TaskList>
+
+:::tip[Hoe kan de community helpen?]
+Door zo veel mogelijk informatie beschikbaar te maken in de GitHub Discussion kan deze fase sneller verlopen.
+
+Draag je dit component ook bij in een Community implementatie, of heb je tijd om te helpen deze te verbeteren? Dan kun je helpen door zoveel mogelijk openstaande issues al te verwerken en zelf testcases toe te voegen voor alle situaties die in de GitHub Discussions door de community zijn gedeeld.
+:::
+
+### 📝 Issues bekend {#voorbereiding-issues}
+
+Wanneer gekeken is naar de issues die voor de component zijn aangemaakt in de verschillende repositories van NL Design System, kan het kernteam bepalen welke issues moeten worden opgelost in de Candidate implementatie en welke issues eigenlijk feature requests zijn die nog moeten worden proefgedraaid in de community. Ook kan er kan een afweging worden gemaakt over breaking changes die in de Community component zijn uitgesteld vanwege het ongemak bij gebruikers.
+
+#### Doel
+
+De Candidate implementatie neemt geen bekende bugs of problematische API's over uit de Community implementaties en hoeft niet direct breaking changes uit te voeren die door de Community waren uitgesteld.
+
+#### Uitkomst
+
+Het kernteam heeft genoeg input verzameld voor de volgende stappen uit de voorbereidingsfase:
+
+- Versimpeld of opgesplitst
+- Anatomie is bepaald
+- Toegankelijkheid criteria bepaald
+- Semantiek is bepaald
+- API bepaald
+- Design Tokens bepaald
+
+### 📝 Versimpeld of opgesplitst {#voorbereiding-versimpeld}
+
+Component zoals deze nu in de community bestaat is, waar nodig, versimpeld of opgesplitst. Zodat de componenten die in het design system staan allemaal een duidelijke use case en overzichtelijke documentatie hebben. Zodra blijkt dat de documentatie zinnen nodig zou hebben als "Voor X is de property Y verplicht, tenzij het variant Z is." wordt de component opgesplitst.
+
+#### Doel
+
+De Candidate component heeft geen complexe APIs die moeilijk uit te leggen zijn, of die verschillende uitkomsten hebben in verschillende combinaties.
+
+#### Uitkomst
+
+De variaties en het gedrag van de component zijn bepaald en nieuwe componenten zijn aangemaakt voor functionaliteit die wordt opgesplitst.
+
+### 📝 Anatomie bepaald {#voorbereiding-anatomie}
+
+Op basis van de input uit "Component gebruikt", "WCAG-input", "Issues bekend" en "Versimpeld of opgesplitst" wordt besloten uit welke onderdelen de component kan bestaan en hoe deze onderdelen worden genoemd.
+
+#### Doel
+
+De Candidate component heeft duidelijke namen voor de onderdelen die consistent gebruikt kunnen worden in Code, Storybook, Figma, desig tokens en documentatie.
+
+#### Uitkomst
+
+De onderdelen van de component zijn bepaald, de naamgeving is gekozen op basis van de NL Design System naming convention en vastgelegd.
+
+### 📝 Acceptatiecriteria voor accessibility {#voorbereiding-a11y}
+
+Op basis van de uitkomsten uit de "WCAG input" stap, bekende issues uit de community en de expertise uit het kernteam is duidelijk aan welke eisen de component implementatie moet voldoen. Hierbij word rekening gehouden met bekende toegankelijkheidsproblemen, maar ook toegankelijkheidseisen die de community in hun implementatie nog niet had bedacht.
+
+#### Doel
+
+De Candidate component heeft voldoende acceptatiecriteria zodat bekende toegankelijkheidsproblemen kunnen worden voorkomen met gebruik van de component en bijbehorende documentatie.
+
+#### Uitkomst
+
+Het is duidelijk met welke WCAG succescriteria rekening is gehouden. Daarbij wordt onderscheid gemaakt tussen de criteria die in de component zelf worden opgelost en de criteria die in context van een pagina gelden.
+
+### 📝 Semantiek bepaald {#voorbereiding-semantiek}
+
+Goede semantiek is belangrijk voor toegankelijkheid en robuustheid van websites en webapplicaties. Daarom wordt er goed gekeken op basis van de "Anatomie" en "Acceptatiecriteria voor toegankelijkheid" welke semantiek het best bij de component past.
+
+#### Doel
+
+De onderdelen waaruit de component bestaat werken goed voor verschillende hulpsoftware en voldoen aan de NL Design System architectuur.
+
+#### Uitkomst
+
+De component wordt ontwikkeld met de HTML elementen die semantisch het best passen, voldoet hiermee aan [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1) en [WCAG-succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2) en is goed te gebruiken met langzame internetverbindingen als de CSS niet geladen kan worden.
+
+### 📝 API bepaald {#voorbereiding-api}
+
+De component in CSS, React en andere technieken classnames, attributen, properties en slots die bij het inzetten van de component gebruikt kunnen worden. Voor de developer en designers die de component gebruiken is het belangrijk dat deze voorspelbaar is in combinatie met de rest van het design system. Voor onderhoudbaarheid is het goed om niet meer APIs beschikbaar te maken dan noodzakelijk zijn en voor iedereen is het belangrijk dat de beschikbare APIs documentatie makkelijk gevonden worden.
+
+#### Doel
+
+Alle API's van de component zijn gebaseerd op een gemeenschappelijke use case en zijn voorspelbaar in combinatie met de andere Candidate en Hall of Fame componenten in het design system.
+
+#### Uitkomst
+
+- Bepaald welke API beschikbaar wordt in de Candidate component en welke API wijzigingen eerst in de Community moeten worden uitgetest
+- De APIs voor de Candidate component zijn in lijn met de API conventies van NL Design System
+- De APIs zijn goed te implementeren in meerdere technieken.
+
+### 📝 Testcases voor gebruik {#voorbereiding-test-gebruik}
+
+Goede testcases zijn belangrijk om de component robuust te maken. Zo kan deze goed gebruikt worden in productie. De component wordt dan zelden handmatig neergezet, maar komt op een pagina door content die via CMS-en wordt gemaakt of op basis van data uit API's. Ook hoe de component getoont wordt kan enorm verschillen door de manier waarop een gebruiker deze bekijkt. Het is dan ook belangrijk dat hij goed werkt met diverse soorten data, op verschillende schermformaten en met vertaalplugins en andere gebruikersinstellingen.
+
+#### Doel
+
+De Candidate component is goed getest voordat deze gepubliceerd wordt, niet alleen voor de standaard situaties, maar ook voor situaties die je anders pas in productie tegen komt.
+
+#### Uitkomst
+
+Er zijn voldoende testcases beschikbaar om een robuust component te maken die goed om kan gaan met diverse soorten data en gebruikersvoorkeuren zodat de Candidate component grondig getest kan worden met Storybook en unit tests.
+
+### 📝 Design tokens bepaald {#voorbereiding-design-tokens}
+
+Genoeg design tokens zijn belangrijk om NL Design System in diverse huisstijlen te laten werken, maar voor onderhoudbaarheid is het goed om geen design tokens beschikbaar te maken die door niemand gebruikt worden. Bij het maken van de Candidate component wordt gekekenwelke design tokens nodig zijn, welke naamgeving past bij de rest van het design system en welke basis-tokens voor de meeste huisstijlen een voorspelbaar resultaat hebben.
+
+#### Doel
+
+Alle design tokens van de component zijn gebaseerd op een gemeenschappelijke use case en zijn voorspelbaar in combinatie met de andere Candidate en Hall of Fame componenten in het design system.
+
+#### Uitkomst
+
+Er is besloten welke design tokens worden meegenomen en de common basis-tokens zijn, deze tokens volgen de naming-convention van NL Design System.
+
+### 📝 Zoekwoorden vastgesteld {#voorbereiding-zoekwoorden}
+
+#### Doel
+
+De component kan makkelijk gevonden worden door verschillende gebruikers die een net andere namen voor de component gebruiken.
+
+#### Uitkomst
+
+Aliassen en keywords van alternatieve namen voor de component zijn vastgelegd in documentatie.
+
+### 📝 Acceptatiecriteria vertaald naar Stories en Specs {#voorbereiding-stories-specs}
+
+Door te weten op welke manier de Community componenten al voldoen aan onze acceptatiecriteria weet het kernteam welke onderdelen ze 1-op-1 kunnen overnemen en welke in de Candidate component aangepast moeten worden. De Stories en specs die hiervoor klaar worden gezet kunnen vervolgens ook gebruikt worden om tijdens het maken en onderhouden van de Candidate component de kwaliteit te kunnen blijven verzekeren.
+
+#### Doel
+
+Een robuuste Candidate component die goed en consistent te testen is.
+
+#### Uitkomst
+
+De Candidate kan gebouwd worden op basis van de juiste Community component onderdelen en er is een testplan beschikbaar om te zorgen dat de Candidate component is gemaakt op basis van alle acceptatiecriteria.
+
+- Alle acceptatiecriteria die in eerdere stappen zijn opgesteld — voor anatomie, semantiek, varianten en design tokens — zijn opgenomen als stories in de test Storybook
+- Voor alle niet testbare acceptatiecriteria zijn unit tests met `describe it` aangemaakt
+
+### 📣 Laat de Community weten dat de voorbereidingen voor de Candidate component zijn afgerond. {#voorbereiding-afronden}
+
+Het kernteam laat de community weten dat de voorbereidingen in het Candidate proces afgerond zijn en de component klaar is om gebouwd te worden.
+
+#### Doel
+
+De Candidate component heeft zo veel mogelijk draagvlak in de community en developers en designers kijken uit om het Candidate component te gebruiken doordat duidelijk is met hoeveel dingen rekening is gehouden.
+
+#### Uitkomst
+
+De community weet dat de voorbereidingen getroffen zijn en hebben nog een kans om toch nog input te geven op de gemaakte keuzes. Ook ziet de community dat de Community componenten als basis zijn gebruik zodat ze zich gewaardeerd en empowered voelen om ook Community componenten geschikt te helpen maken voor Candidate
+
+## 🛠️ Ontwikkelfase
+
+<TaskList>
+  <TaskListItem checked>🛠️ [Ontwikkelfase - React component](#ontwikkel-react)</TaskListItem>
+  <TaskListItem checked>🛠️ [Ontwikkelfase - CSS component](#ontwikkel-css)</TaskListItem>
+  <TaskListItem checked>🛠️ [Ontwikkelfase - Figma component](#ontwikkel-figma)</TaskListItem>
+  <TaskListItem checked>🛠️ [Ontwikkelfase - Voorbeeld thema](#ontwikkel-voorbeeld-thema)</TaskListItem>
+  <TaskListItem checked>🛠️ [Ontwikkelfase - Documentatie](#️-ontwikkel-documentatie)</TaskListItem>
+  <TaskListItem checked>🎉 [Rond de ontwikkelfase af](#ontwikkel-afronden)</TaskListItem>
+</TaskList>
+
+### 🛠️ React component {#ontwikkel-react}
+
+#### Doel
+
+De Candidate component is aantoonbaar te gebruiken in tenminste 1 veelgebruikt frontend framework, kan makkelijk gedocumenteerd worden in Storybook en werkt goed op onze eigen websites.
+
+#### Uitkomst
+
+React component is ontwikkeld, maakt gebruik van de CSS component en wordt gebruikt in de Storybook en testbestanden.
+
+### 🛠️ CSS component {#ontwikkel-css}
+
+#### Doel
+
+De Candidate component kan makkelijk beschikbaar worden gemaakt in elk framework naar keuze en heeft hierbij dezelfde gedeelde stylesheet. Bij componenten met een native equivalent is er een HTML variant te gebruiken, zodat deze ook kan worden gebruik voor output uit CMSen en APIs waar geen classnames kunnen worden toegepast op de HTML.
+
+#### Uitkomst
+
+- De component is beschikbaar in mixins die goed kunnen worden ingezet in systemen waar geen controle is over de HTML, maar wel een losse stylesheet kan worden ingeladen.
+- De CSS is herbruikbaar opgezet zodat deze als 1 bron van waarheid gebruikt kan worden tussen verschillende framework implementaties.
+
+### 🛠️ Figma component {#ontwikkel-figma}
+
+#### Doel
+
+De Candidate component kan makkelijk ingezet worden door designers en is snel in te stellen op een eigen huisstijl.
+
+#### Uitkomst
+
+- De component is beschikbaar in Figma en heeft dezelfde API's en states zoals deze in code zijn vastgelegd zodat hij goed overdraagbaar is naar development
+- De component is ingesteld in het start-thema met gebruik van basis-tokens
+
+### 🛠️ Voorbeeld thema {#ontwikkel-voorbeeld-thema}
+
+#### Doel
+
+De Candidate component is goed in te zetten voor prototyping zonder eerst een eigen huisstijl in te stellen.
+
+#### Uitkomst
+
+De component is beschikbaar in de Voorbeeld bibliotheek in Figma en is goed in te zetten voor prototyping
+
+### 🛠️ Documentatie {#ontwikkel-documentatie}
+
+#### Doel
+
+De Candidate component en varianten zijn makkelijk te gebruiken voor developers en designers zodat we snel feedback krijgen.
+
+#### Uitkomst
+
+De component documentatie van de beschikbare varianten en APIs is te vinden op de website, op npm en in Storybook voor developers en in Figma voor designers.
+
+### 🎉 Rond de ontwikkelfase af {#ontwikkel-afronden}
+
+#### Doel
+
+De Candidate component is cosistent in code, figma en documentatie.
+
+#### Uitkomst
+
+De ontwikkelfase kan starten en kan parallel uitgevoerd worden. De Candidate component wordt pas gemaakt wanneer alle beslissingen over semantiek, API, varianten en design tokens zijn gemaakt.
+
+<!--
+
+🧪 Testfase
+
+Design Tokens getest :nerd_face: :art:
+
+- We hebben getest of bestaande thema’s voor Community implementaties makkelijk over kunnen op de Candidate component.
+  - Maak een lijst van de thema’s die een Community implementatie van de component hebben geconfigureerd. Bijvoorbeeld door de StoryID die voor de betreffende component als default Story is gebruikt op te zoeken in GitHub. https://github.com/search?q=repo%3Anl-design-system%2Fthemes%20%22react-utrecht-paragraph--default%22&type=code
+  - Selecteer in samenspraak met de Product Manager welke thema’s getest worden voor dit component
+  - Vertaal de Community Design Tokens naar de Candidate Design Tokens. Bijvoorbeeld door naar de paragraph tokens toe te gaan in de tokens JSON. https://github.com/nl-design-system/themes/blob/a453207fc78e83323d8f8d0eacce236af7bc6d1a/proprietary/haarlemmermeer-design-tokens/src/component/utrecht/paragraph.tokens.json.
+    Hier kun je zien dat utrecht-paragraph-font-size , utrecht-paragraph-line-height , utrecht-paragraph-margin-block-end en utrecht-paragraph-lead-font-size zijn gezet. In de candidate tokens https://github.com/nl-design-system/candidate/blob/main/packages/tokens/paragraph-tokens/tokens.json zien we dat nl-paragraph-font-size nl-paragraph-line-height nl-paragraph-margin-block-end én nl-paragraph-lead-font-size tokens beschikbaar zijn. Haarlemmermeer kan dus 1-op-1 de instellingen voor de Community component gebruiken in de Candidate component
+  - Als de configuratie voor de Candidate component minder opties heeft dan de Community component en de opties worden voor een thema wel gebruikt, maken we hiervan een notitie. Aan het eind kunnen we de notities voor alle bekeken thema’s bespreken en een van deze opties kiezen per token:
+    - Opnemen in de Design Tokens van de component.
+    - Opnemen als extra Story die laat zien dat je op een andere manier hetzelfde resultaat kan bereiken met de Candidate component.
+    - Opnemen in de GitHub Discussion van de component.
+    - Voeg de design tokens voor candidate toe, op dezelfde manier als de organisatie de tokens nu beheert.
+    - Voeg de Candidate component toe aan de config van de organisatie in de thema repository
+    - Kijk in Storybook of de Candidate implementatie er hetzelfde uitziet als de Community implementatie
+    - Maak een pull-request toe voor elk thema dat je hebt gechecked en vraag de maintainer van het thema om een review.
+
+Documentatie getest :nerd_face: / :art: / :mechanical_arm:
+
+- Laat frontend Developers de documentatie reviewen:
+  - Test of de technische documentatie begrijpelijk is
+  - Controleer of codevoorbeelden correct en volledig zijn
+  - Verzamel feedback over bruikbaarheid
+- Laat Designers de documentatie reviewen:
+  - Verifieer dat design tokens correct zijn gedocumenteerd
+  - Beoordeel of visuele voorbeelden duidelijk zijn
+- Laat contentmakers de documentatie reviewen:
+  - Beoordeel leesbaarheid en structuur
+  - Controleer consistentie in terminologie
+  - Verifieer dat best practices duidelijk zijn beschreven
+- Laat Toegankelijkheidsspecialisten de documentatie reviewen:
+  - Beoordeel leesbaarheid en structuur
+  - Controleer consistentie in terminologie
+  - Verifieer dat best practices duidelijk zijn beschreven
+- Verwerk feedback en werk documentatie bij:
+  - Verzamel alle feedback
+  - Voer verbeteringen door
+  - Laat aanpassingen opnieuw valideren
+
+A11y getest :mechanical_arm:
+
+Test de acceptatiecriteria voor toegankelijkheid
+
+1. Test de stories die gemaakt zijn om op de acceptatiecriteria voor toegankelijkheid te testen
+2. Testresultaten opslaan in story bij story.parameters.testResult.pass (of feedback geven aan Developer tot het slaagt)
+3. Testen of de component werkt zonder CSS. De simpele manier: handmatige test, bijvoorbeeld door in Developer tools CSS uit te zetten, of in Firefox "View ➝ Page Style ➝ No Style". (In een ideale wereld is de component zonder CSS ook een Story, maar dat is makkelijker gezegd dan gedaan .disable-css \* { all: revert !important })
+
+Testcases getest :nerd_face: / :art:
+
+1. Resultaten van de Candidate repository in Chromatic beoordelen en goedkeuren als baseline (of feedback geven)
+   1. Zijn alle testcases gedekt?
+   2. Hebben alle design tokens hetzelfde effect in Figma en Code?
+
+i18n getest :nerd_face:
+
+- Test de stories die gemaakt zijn om op de acceptatiecriteria voor internationalisatie te testen.
+
+Publicatiefase
+
+Gepubliceerd op NPM :nerd_face:
+
+Achterliggende doelen:
+
+- 🆕 Teams kunnen makkelijk de Candidate component installeren en testen in een branch deployment, of zelfs in productie
+- 🆕 Wijzigingen in de Candidate component zijn goed te volgen voor afnemers, doordat semantic versioning gebruikt wordt
+- 🆕 We komen achter problemen met de npm package vóórdat de component Hall of Fame wordt, zoals bugs in "exports" .
+- 🆕 Het is makkelijk voor teams om te herkennen dat candidate componenten gebruikt zijn in hun code (door de @nl-design-system-candidate/ organisation prefix)
+
+Taak:
+
+- Maak een pull-request aan om de NPM package publiek te maken (verwijder private: true uit package.json van het package).
+- Maak een changeset met major om de package te bumpen van..
+- Vraag het kernteam om een review zodat die gemerged wordt
+- package.json#description Nederlandstalig
+
+🚩 Checkpoint
+
+🚀 NPM
+
+Gepubliceerd in Figma :art:
+
+- Component van NL Design System - Schetsboek overzetten naar:
+  - NL Design System - Bibliotheek
+  - NL Design System - Bibliotheek - Voorbeeld
+- Figma Release uitvoeren.
+
+🚩 Checkpoint
+
+🚀 Figma
+
+Visuele regressietests beschikbaar voor de Community :nerd_face:
+
+In voorgaande stappen is al opgenomen dat er Stories worden gemaakt. Deze stap is om te zorgen dat we geen Stories zijn vergeten.
+Achterliggende doelen:
+
+- 🆕 Testautomatisering voor de volledige Design Tokens API
+- 🆕 Zorgen dat alle front-end states in één oogopslag te beoordelen zijn, zonder interactie zoals "hover"
+- 🆕 CSS testen die niet goed te controleren is via unit test
+- 🆕 Situaties uit WCAG succescriteria testen op regressies, zoals
+  - text zoom: simuleren met grotere font size op parent element
+  - kleine viewport: simuleren met 320x240 iframe
+- 🆕 Situaties testen met forced-colors kleurenpalet
+
+Acties
+
+Alle acceptatiecriteria met een visueel element zijn testbaar met Stories
+Alle acceptatiecriteria die visueel gecontroleerd moeten worden, zijn onderdeel van testautomatisering.
+Sommige acceptatiecriteria kunnen het best visueel gecontroleerd worden, bijvoorbeeld: is alle tekst zichtbaar, is de uitlijning van onderdelen zoals gewenst, wordt woordafbreking goed toegepast, is de icon de goede kleur?
+We gebruiken Chromatic voor visuele regressietests, waarbij die persoon de screenshot van de situatie kan goedkeuren.
+
+Hoe kun je dit bijvoorbeeld doen?
+
+- in Storybook maak je voldoende stories om de visuele eigenschappen te kunnen controleren
+- de stories moeten gemaakt worden op een manier dat niet eerst interactie met de component nodig is. Bijvoorbeeld: de hover state moet zonder interactie zichtbaar zijn.
+- elke story beschrijft het gewenste resultaat, die ook in de toekomst gebruikt kan worden om te beoordelen of het resultaat voldoende is
+- Chromatic wordt gebruikt om van elke story een screenshot te maken
+- een persoon beoordeelt de screenshots aan de hand van de beschrijving, en keurt de screenshots goed of af
+- alle goedkeurde screenshots zijn de nieuwe baseline
+- als een voorgestelde wijziging aan de component de visuele weergave aanpast, dan wijzigt de screenshot ten opzichte van de baseline, en dan moet een persoon de nieuwe screenshot beoordelen
+- alleen als de visuele wijziging akkoord is, mag de wijziging doorgevoerd worden in de component
+
+Alle design tokens van de component zijn zichtbaar in de Stories van de themes Storybook
+Organisaties die een huisstijl instellen als thema en beschikbaar maken in de themes Storybook willen dat hun ingestelde beslissingen worden gevalideerd in Chromatic. Daarvoor hebben we de theme’s storybook.
+Alle varianten en states van de component zijn dus opgenomen als stories die kunnen worden gebruikt op de thema compilatie pagina’s van de verschillende organisaties.
+
+Hoe kun je dit bijvoorbeeld doen?
+
+- Beschikbaar in de NL Design System themes Storybook onder de sectie “Components” met het start-thema en het voorbeeld-thema
+
+Uitkomst:
+
+...
+
+Checkpoint
+
+🚀 Themes repository
+We gaan voor test coverage above and beyond. Daarom is het belangrijk om te valideren of de unit tests die al bestaan voldoende zijn, of dat er nog meer getest kan worden om te zorgen dat iedereen een perfect component zou kunnen maken door gebruik van deze unit tests.
+
+- Controleer welke coverage de unit tests bij de React component mist.
+- Maak waar nodig extra unit tests voor de React component.
+
+Status bijgewerkt naar naar Candidate :nerd_face: / :art: / :mechanical_arm:
+
+Doel: iedereen kan zien dat de component nu richting Hall of Fame wil.
+
+- Verander het label 'Community' van het backlog issue naar 'Candidate'.
+- Verander het label 'Community' van de GitHub Discussion naar 'Candidate'.
+- Filter het Hall of Fame bord (wordt nog aangemaakt) op de component door te zoeken op {naam-component}.
+- Kopieer de URL na het filteren.
+- Voeg onderstaande tekst toe als comment aan de GitHub Discussion.
+
+## ✨ Dit component is nu Candidate ✨
+
+Gebruik dit component vooral en laat in deze Discussion weten hoe dit voor jouw organisatie uitpakt.
+Zo kun jij helpen om dit component richting Hall of Fame te krijgen.
+
+Gepubliceerd op nldesignsystem.nl :nerd_face: / :art: / :mechanical_arm:
+
+- Candidate documentatie is beschikbaar op nldesignsystem.nl/{component}
+- Candidate component wordt gerendered op nldesignsystem.nl/{component}
+- Design tokens van de component worden getoond op nldesignsystem.nl/{component}
+- Status van component op nldesignsystem.nl/componenten is bijgewerkt naar Candidate.
+
+🚩 Checkpoint
+
+🚀 nldesignsystem.nl
+
+Gedeeld met Community :nerd_face: / :art: / :mechanical_arm: -->
