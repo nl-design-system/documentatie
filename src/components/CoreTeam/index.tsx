@@ -5,7 +5,6 @@ import Jeffrey from './Jeffrey';
 import Robbert from './Robbert';
 import Rozerin from './Rozerin';
 import Yolijn from './Yolijn';
-import Erik from './Erik';
 import Renate from './Renate';
 import Peter from './Peter';
 import Roy from './Roy';
@@ -14,7 +13,7 @@ import Richard from './Richard';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Erik, Renate, Peter, Roy, Sandra, Richard];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Renate, Peter, Roy, Sandra, Richard];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
