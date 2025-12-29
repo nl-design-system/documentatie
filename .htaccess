@@ -26,6 +26,9 @@ Redirect 301 "/handboek/component-bijdragen/community-stappenplan/voor-organisat
 Redirect 301 "/handboek/component-bijdragen/definition-of-done" "/handboek/estafettemodel/componenten/definition-of-done"
 Redirect 301 "/handboek/component-bijdragen/hall-of-fame-stappenplan" "/handboek/estafettemodel/componenten/hall-of-fame-stappenplan"
 Redirect 301 "/handboek/component-bijdragen/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted-stappenplan"
+Redirect 301 "/handboek/componenten-gebruiken" "/handboek/componenten-kiezen"
+Redirect 301 "/handboek/estafettemodel/componenten/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted"
+Redirect 301 "/handboek/estafettemodel/componenten/hall-of-fame-stappenplan" "/handboek/estafettemodel/componenten/hall-of-fame"
 Redirect 301 "/handboek/designer/breaking-changes" "/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens"
 Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/estafettemodel/componenten/hall-of-fame-stappenplan"
 Redirect 301 "/handboek/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted-stappenplan"
@@ -66,6 +69,9 @@ RedirectMatch 301 "^/project/events(.\*)$" "/community/events$1"
 RedirectMatch 301 "^/richtlijnen/formulieren/alle-richtlijnen/(.\*)$" "/richtlijnen/formulieren/$1"
 RedirectMatch 301 "^/videos(.\*)$" "/project/events$1"
 RedirectMatch 301 "^/voorbeelden/patronen/formulieren(?:/.*)?$" "/voorbeelden/patronen-en-templates/formulieren"
+
+RedirectMatch 301 "^/handboek/estafettemodel/componenten/community-stappenplan(.*)$" "/handboek/estafettemodel/componenten/community$1"
+RedirectMatch 301 "^/handboek/estafettemodel/componenten/candidate-stappenplan(.*)$" "/handboek/estafettemodel/componenten/candidate$1"
 
 # Convenience redirects for every WCAG success criterium
 Redirect 301 "/1.1.1" "/wcag/1.1.1/"
