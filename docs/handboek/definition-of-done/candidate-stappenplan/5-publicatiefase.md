@@ -19,6 +19,18 @@ keywords:
 
 # Publicatiefase voor Candidate componenten
 
+![Een overzicht van de stappen in de Publicatiefase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme die hierbij betrokken is: Developer relations en design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-publicatiefase.png)
+
+[Bekijk de illustratie voor de publicatiefase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-publicatiefase.png)
+
+De stappen en substappen in de publicatiefase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat de volgende stappen zien:
+
+- Component gepubliceerd op NPM door developer
+- Component gepubliceerd in Figma door designer
+- Visuele regressietests beschikbaar gemaakt voor de Community door de Developer relations & design relations nadat de component gepubliceerd is
+- Status bijgewerkt naar Candidate en component gepubliceerd op nldesignsystem.nl door Developer relations & design relations
+- Candidate component gedeeld met de community door DS Lead & Product Manager
+
 ## Gepubliceerd op NPM
 
 ### Doel
