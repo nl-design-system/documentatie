@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: 4. Testfase
 sidebar_position: 4
 pagination_label: 4. Testfase
-description: Stappen voor de Testfase fase van de Definition of Done voor Candiate
+description: Stappen voor de Testfase van de Definition of Done voor Candidate
 slug: /handboek/estafettemodel/componenten/candidate/testfase
 keywords:
   - componenten

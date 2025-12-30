@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: 5. Publicatiefase
 sidebar_position: 5
 pagination_label: 5. Publicatiefase
-description: Stappen voor de Publicatiefase fase van de Definition of Done voor Candiate
+description: Stappen voor de Publicatiefase van de Definition of Done voor Candidate
 slug: /handboek/estafettemodel/componenten/candidate/publicatiefase
 keywords:
   - componenten
@@ -73,7 +73,7 @@ De Candidate component kan makkelijk worden gevonden worden via nldesignsystem.n
 
 ### Uitkomst
 
-De component-pagina op nldesignsystem.nl bevat de documentatie die beschikbaar is gemaakt in de Candidate fase, kan makkelijk gevonden worden op npm en in Figma, en heeft zichtbaar de Candidate status.
+De component-pagina op nldesignsystem.nl bevat de documentatie die beschikbaar is gemaakt voor de Candidate implementatie, kan makkelijk gevonden worden op npm en in Figma, en heeft zichtbaar de Candidate status.
 
 ## Publicatiefase afgerond
 

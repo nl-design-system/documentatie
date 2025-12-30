@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: 3. Ontwikkelfase
 sidebar_position: 3
 pagination_label: 3. Ontwikkelfase
-description: Stappen voor de Ontwikkelfase fase van de Definition of Done voor Candiate
+description: Stappen voor de Ontwikkelfase van de Definition of Done voor Candidate
 slug: /handboek/estafettemodel/componenten/candidate/ontwikkelfase
 keywords:
   - componenten
