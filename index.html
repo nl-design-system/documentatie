@@ -39,7 +39,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.cca7479e.css" />
   <script src="/assets/js/runtime~main.4828e58c.js" defer="defer"></script>
-  <script src="/assets/js/main.1048a1e7.js" defer="defer"></script>
+  <script src="/assets/js/main.1b61323a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -52,34 +52,18 @@
     document.documentElement.setAttribute('data-theme-choice', 'light'),
     (function () {
      try {
-      const n = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of n)
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
        if (t.startsWith('docusaurus-data-')) {
         var a = t.replace('docusaurus-data-', 'data-');
         document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}
-    })(),
-    document.documentElement.setAttribute(
-     'data-announcement-bar-initially-dismissed',
-     (function () {
-      try {
-       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
-      } catch (t) {}
-      return !1;
-     })(),
-    );
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-page-layout ma-theme">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_QCLT" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
-    <div class="theme-announcement-bar announcementBar_ADAH" style="background-color: var(--basis-color-accent-1-inverse-bg-subtle); color: var(--basis-color-accent-1-inverse-color-default)" role="banner">
-     <div class="content_mLqc announcementBarContent_mgL0">
-      <div class="announcementbar-content">
-       <span class="utrecht-icon"><img alt="" src="/svg/tabler-icon_mega.svg" /></span> Help jij NL Design System in 2026 nog beter te maken? <a href="/enquete-2025" class="utrecht-link utrecht-link--html-a">Vul dan voor 30 december deze enquête in</a>
-      </div>
-     </div>
-    </div>
     <nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top navbarHideable_BrxU">
      <div class="navbar__inner">
       <div class="theme-layout-navbar-left navbar__items">

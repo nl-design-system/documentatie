@@ -40,7 +40,7 @@
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.cca7479e.css" />
   <script src="/assets/js/runtime~main.4828e58c.js" defer="defer"></script>
-  <script src="/assets/js/main.1048a1e7.js" defer="defer"></script>
+  <script src="/assets/js/main.1b61323a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -53,34 +53,18 @@
     document.documentElement.setAttribute('data-theme-choice', 'light'),
     (function () {
      try {
-      const n = new URLSearchParams(window.location.search).entries();
-      for (var [t, e] of n)
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
        if (t.startsWith('docusaurus-data-')) {
         var a = t.replace('docusaurus-data-', 'data-');
         document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}
-    })(),
-    document.documentElement.setAttribute(
-     'data-announcement-bar-initially-dismissed',
-     (function () {
-      try {
-       return 'true' === localStorage.getItem('docusaurus.announcement.dismiss');
-      } catch (t) {}
-      return !1;
-     })(),
-    );
+    })();
   </script>
   <div id="__docusaurus">
    <div class="utrecht-page-layout ma-theme">
     <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_QCLT" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
-    <div class="theme-announcement-bar announcementBar_ADAH" style="background-color: var(--basis-color-accent-1-inverse-bg-subtle); color: var(--basis-color-accent-1-inverse-color-default)" role="banner">
-     <div class="content_mLqc announcementBarContent_mgL0">
-      <div class="announcementbar-content">
-       <span class="utrecht-icon"><img alt="" src="/svg/tabler-icon_mega.svg" /></span> Help jij NL Design System in 2026 nog beter te maken? <a href="/enquete-2025" class="utrecht-link utrecht-link--html-a">Vul dan voor 30 december deze enquête in</a>
-      </div>
-     </div>
-    </div>
     <nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top navbarHideable_BrxU">
      <div class="navbar__inner">
       <div class="theme-layout-navbar-left navbar__items">
@@ -114,7 +98,7 @@
         <div class="sidebarViewport_YeBd">
          <div class="sidebar_QIcW sidebarWithHideableNavbar_PxjH">
           <a tabindex="-1" class="sidebarLogo_AKP7" href="/"><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_AcRh themedComponent--light_hePk" /><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_AcRh themedComponent--dark_lkSR" /><b></b></a>
-          <nav aria-label="Docs zijbalk" class="menu thin-scrollbar menu_gnum menuWithAnnouncementBar_XTgt">
+          <nav aria-label="Docs zijbalk" class="menu thin-scrollbar menu_gnum">
            <ul class="theme-doc-sidebar-menu menu__list">
             <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item sidebar__main-category">
              <div class="menu__list-item-collapsible">
@@ -412,71 +396,10 @@
                <p class="utrecht-paragraph utrecht-paragraph--lead dsw-session__subtitle"><b class="utrecht-paragraph__b">Inayaili León - GitHub</b></p>
                <link rel="preload" href="https://i.ytimg.com/vi/GYUcd17cLJM/maxresdefault.jpg" as="image" />
                <article class="yt-lite" data-title="DesignOps: designing the API of design teams" style="background-image: url(https://i.ytimg.com/vi/GYUcd17cLJM/maxresdefault.jpg); --aspect-ratio: 56.25%; margin-block: 20px"><button type="button" class="lty-playbtn" aria-label="Bekijk DesignOps: designing the API of design teams"></button></article>
-               <p>DesignOps (design operations) is het bindmiddel dat een designteam bij elkaar houdt. Daarnaast verbindt het design met andere disciplines binnen én buiten de eigen organisatie. Zelfs als je organisatie geen formeel DesignOps-team heeft, wordt design operations waarschijnlijk wel al door iemand bij jullie gedaan.</p>
-               <p>Bij GitHub is DesignOps de ‘API’ tussen designers onderling, en tussen designers en de rest van de organisatie. Net als bij het ontwerpen van echte API’s, probeerden ze bij GitHub voor betere DesignOps, dingen die niet zo goed werkten. En waren er een aantal grote veranderingen nodig om richting een meer stabiele ‘release’ te gaan.</p>
-               <p>Het resultaat: DesignOps waarmee GitHub verder kan. Reden genoeg dus om de geleerde lessen van GitHub met je te delen.</p>
-               <aside class="dsw-session__speakers">
-                <div class="dsw-session__speaker dsw-speaker">
-                 <img class="dsw-speaker__image" src="https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/08/inayaili-leon-e1691492604349-150x150.jpeg" alt="Inayaili León" />
-                 <p class="utrecht-paragraph dsw-speaker__description">Inayaili León is Staff Design Program Manager bij GitHub. Hier houdt ze zich bezig met DesignOps. Daarvoor was ze Senior Designer bij Microsoft. Daar werkte ze aan design systems en DesignOps. Ook leidde Inayaili het team dat het Vanilla design system van Canonical ontwikkelde.</p>
-                </div>
-               </aside>
+               <p>DesignOps (design operations) is het bindmiddel dat een designteam bij elkaar houdt. Daarnaast verbindt het design met andere disciplines binnen</p>
               </article>
-              <article class="dsw-session" id="management-panel:-ervaringen-met-nl-design-system-uit-de-praktijk">
-               <h1 class="utrecht-heading-1 dsw-session__title">Management-panel: ervaringen met NL Design System uit de praktijk</h1>
-               <p class="utrecht-paragraph utrecht-paragraph--lead dsw-session__subtitle"><b class="utrecht-paragraph__b">Jeffrey Klardie - Gemeente Amsterdam &amp; Roel Derksen - RIVM &amp; Vincent van Beek - Gemeente Den Haag &amp; Peter Berrevoets - NL Design System</b></p>
-               <link rel="preload" href="https://i.ytimg.com/vi/AfDlY1g2OTo/maxresdefault.jpg" as="image" />
-               <article class="yt-lite" data-title="Management-panel: ervaringen met NL Design System uit de praktijk" style="background-image: url(https://i.ytimg.com/vi/AfDlY1g2OTo/maxresdefault.jpg); --aspect-ratio: 56.25%; margin-block: 20px"><button type="button" class="lty-playbtn" aria-label="Bekijk Management-panel: ervaringen met NL Design System uit de praktijk"></button></article>
-               <p>Er is tussen overheidsorganisaties enorm veel overlap in de online diensten die we bouwen. Van formulieren (van eenvoudig tot complex) tot zaaksystemen tot digitale processen voor burgers en ambtenaren. Al dit soort websites en apps willen we natuurlijk toegankelijk, inclusief en gebruiksvriendelijk opleveren.</p>
-               <p>Daar is specialistische kennis voor nodig. Bij NL Design System bundelen we die kennis. We werken samen, wisselen onderzoek uit en besparen tijd door elkaars goed geteste werk op meerdere plekken in te zetten. Al meerdere organisaties ervaren dit in de praktijk, waardoor ze sneller meer toegankelijke, inclusieve digitale dienstverlening kunnen bieden aan burgers en leveranciers. In deze sessie delen ze graag hun ervaring!</p>
-               <aside class="dsw-session__speakers">
-                <div class="dsw-session__speaker dsw-speaker">
-                 <img class="dsw-speaker__image" src="https://media.licdn.com/dms/image/C4D03AQGre1V5ipaP2w/profile-displayphoto-shrink_400_400/0/1662580345994?e=1700092800&amp;v=beta&amp;t=LBuMfPSDzVTgCrQxY9zuaAjM4hQhrO2Si6rRqdQZ_0w" alt="Jeffrey Klardie" />
-                 <p class="utrecht-paragraph dsw-speaker__description">Jeffrey Klardie is tech lead Vakgroep Software Ontwikkeling bij de gemeente Amsterdam</p>
-                </div>
-                <div class="dsw-session__speaker dsw-speaker">
-                 <img class="dsw-speaker__image" src="https://media.licdn.com/dms/image/C4E03AQE966BerwDdKQ/profile-displayphoto-shrink_800_800/0/1574854722636?e=1700092800&amp;v=beta&amp;t=lugdDNZdQGbfRL9UjQJq-0JJIGxZuT4jNY_vorZ1utg" alt="Roel Derksen" />
-                 <p class="utrecht-paragraph dsw-speaker__description">Roel Derksen is afdelingshoofd Ontwikkeling bij het Rijksinstituut voor Volksgezondheid en Milieu (RIVM)</p>
-                </div>
-                <div class="dsw-session__speaker dsw-speaker">
-                 <img class="dsw-speaker__image" src="https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2021/07/Vincent-van-Beek-Den-Haag-150x150.png" alt="Vincent van Beek" />
-                 <p class="utrecht-paragraph dsw-speaker__description">Vincent van Beek is chief product owner Online bij de gemeente Den Haag</p>
-                </div>
-                <div class="dsw-session__speaker dsw-speaker">
-                 <img class="dsw-speaker__image" src="https://www.gebruikercentraal.nl/wp-content/uploads/sites/4/2023/09/peter-berrevoets-edited-300x300.jpeg" alt="Peter Berrevoets" />
-                 <p class="utrecht-paragraph dsw-speaker__description">Peter werkt als projectleider bij ICTU. Voorheen heeft hij tal van projecten binnen de overheid geleid. Op dit moment werkt hij als projectleider nauw samen met het kernteam van NL Design System.</p>
-                </div>
-               </aside>
-              </article>
-              <h2 id="organisatie" class="utrecht-heading-2">Organisatie</h2>
-              <p>Design Systems Week wordt georganiseerd door het kernteam van NL Design System, met dank aan het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties en <a href="https://www.gebruikercentraal.nl" class="utrecht-link utrecht-link--html-a">Gebruiker Centraal</a>. Alle sessies zijn ook via Gebruiker Centraal bereikbaar <a href="https://www.gebruikercentraal.nl/design-systems-week/" class="utrecht-link utrecht-link--html-a">Design Systems Week 2023</a></p>
-              <h2 id="code-of-conduct" class="utrecht-heading-2">Code of Conduct</h2>
-              <p>Op Design Systems Week is de <a href="https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.nl.md" class="utrecht-link utrecht-link--html-a">NL Design System Code of Conduct</a> van toepassing. Je gaat daarmee akkoord als je je aanmeldt of spreekt.</p>
-              <h2 id="toegankelijkheid" class="utrecht-heading-2">Toegankelijkheid</h2>
-              <p>We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op <a href="mailto:info@nldesignsystem.nl" class="utrecht-link utrecht-link--html-a">info@nldesignsystem.nl</a>.</p>
              </div>
-             <footer class="theme-doc-footer docusaurus-mt-lg">
-              <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
-               <div class="col noPrint_rT2f">
-                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2023.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
-                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_AU1i" aria-hidden="true">
-                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
-                 >Bewerk deze pagina</a
-                >
-               </div>
-               <div class="col lastUpdated_pVQo"></div>
-              </div>
-             </footer>
             </article>
-            <nav class="docusaurus-mt-lg pagination-nav" aria-label="Documentatie pagina">
-             <a class="pagination-nav__link pagination-nav__link--prev" href="/events/design-systems-week-2024/programma/"
-              ><div class="pagination-nav__sublabel">Vorige</div>
-              <div class="pagination-nav__label">Design Systems Week 2024</div></a
-             ><a class="pagination-nav__link pagination-nav__link--next" href="/events/design-systems-week-2022/"
-              ><div class="pagination-nav__sublabel">Volgende</div>
-              <div class="pagination-nav__label">Design Systems Week 2022</div></a
-             >
-            </nav>
            </div>
           </div>
          </div>
@@ -485,21 +408,6 @@
       </div>
      </div>
     </div>
-    <footer class="theme-layout-footer footer">
-     <div class="container container-fluid">
-      <div class="footer__links text--center">
-       <div class="footer__links">
-        <a class="footer__link-item" href="/blog/">Blog</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/project/kernteam/">Contact</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/privacyverklaring/">Privacyverklaring</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/colofon/">Colofon</a><span class="footer__link-separator">·</span
-        ><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="footer__link-item"
-         >GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_EAWg"><use href="#theme-svg-external-link"></use></svg></a
-        ><span class="footer__link-separator">·</span><a class="footer__link-item" href="/slack/">Slack</a><span class="footer__link-separator">·</span
-        ><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&amp;t=t25LHoMjEkUZyEi1-1" target="_blank" rel="noopener noreferrer" class="footer__link-item"
-         >Figma<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_EAWg"><use href="#theme-svg-external-link"></use></svg
-        ></a>
-       </div>
-      </div>
-     </div>
-    </footer>
    </div>
   </div>
  </body>
