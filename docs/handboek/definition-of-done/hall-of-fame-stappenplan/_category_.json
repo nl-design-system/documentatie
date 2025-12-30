@@ -1,0 +1,11 @@
+{
+  "position": 5,
+  "label": "Hall of Fame",
+  "link": {
+    "type": "doc",
+    "id": "handboek/definition-of-done/hall-of-fame-stappenplan/README"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
