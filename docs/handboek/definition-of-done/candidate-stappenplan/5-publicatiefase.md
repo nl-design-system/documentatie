@@ -25,13 +25,13 @@ keywords:
 
 De stappen en substappen in de publicatiefase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat de volgende stappen zien:
 
-- Component gepubliceerd op NPM door developer
+- Component gepubliceerd op npm door developer
 - Component gepubliceerd in Figma door designer
 - Visuele regressietests beschikbaar gemaakt voor de Community door de Developer relations & design relations nadat de component gepubliceerd is
 - Status bijgewerkt naar Candidate en component gepubliceerd op nldesignsystem.nl door Developer relations & design relations
 - Candidate component gedeeld met de community door DS Lead & Product Manager
 
-## Gepubliceerd op NPM
+## Gepubliceerd op npm
 
 ### Doel
 
