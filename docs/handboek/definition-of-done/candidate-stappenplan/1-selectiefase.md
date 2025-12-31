@@ -29,11 +29,11 @@ Omdat sommige componenten met urgentie toegevoegd moeten worden aan het design s
 
 ## Huisstijl input {#huisstijl}
 
-We hebben input nodig uit de community om een goede Candidate component te bouwen die te gebruiken is in alle huisstijlen. Het is daarom belangrijk dat tenminste 1 Community implementatie succesvol ingezet wordt in meerdere verschillende huisstijlen.
+Het kernteam heeft input nodig uit de community om een goede Candidate component te bouwen die te gebruiken is in alle huisstijlen. Het is daarom belangrijk dat tenminste 1 Community implementatie succesvol ingezet wordt in meerdere verschillende huisstijlen.
 
 ### Doel
 
-Het kernteam kan gebruik maken van de kennis en kunde uit de community om te bepalen welke design tokens goed werken en hoeft dit niet zonder praktijk ervaring te besluiten.
+Er is genoeg kennis en kunde beschikbaar uit de community om te bepalen welke design tokens goed werken. Het kernteam hoeft niet zonder praktijkervaring te besluiten welke design tokens nodig zijn om de component voor meerdere huisstijlen goed te laten werken.
 
 ### Uitkomst
 
@@ -51,11 +51,11 @@ Dat kan door je huisstijl in te stellen voor 1 of meer Community implementaties 
 
 ## Productie input {#productie}
 
-We hebben input nodig uit de community om een Candidate component te bouwen die goed te gebruiken is in meerdere projecten in productie. Het is daarom belangrijk dat een Community component in meer dan 1 project gebruikt is èn in tenminste 1 project ook succesvol in productie is genomen.
+Het kernteam heeft input nodig uit de community om een Candidate component te bouwen die goed te gebruiken is in meerdere projecten in productie. Het is daarom belangrijk dat een Community component in meer dan 1 project gebruikt is èn in tenminste 1 project ook succesvol in productie is genomen.
 
 ### Doel
 
-Het kernteam kan gebruik maken van de kennis en kunde uit de community om te bepalen op welke manier een Candidate component goed kan werken voor eindgebruikers. Het kernteam hoeft niet zonder praktijkervaring te besluiten wat ervoor nodig is om dit voor meerdere projecten succesvol te doen.
+Er is genoeg kennis en kunde beschikbaar uit de community om te bepalen op welke manier een Candidate component goed kan werken voor eindgebruikers. Het kernteam hoeft niet zonder praktijkervaring te besluiten wat ervoor nodig is om dit voor meerdere projecten succesvol te doen.
 
 ### Uitkomst
 
@@ -77,11 +77,11 @@ Dat kan door de beschikbare Community componenten te gebruiken in je projecten, 
 
 ## WCAG input {#wcag}
 
-We hebben input nodig uit de community om een Candidate component te bouwen die toegankelijk is en succesvol door WCAG-EM audits heen komt. Wanneer een Community component gebruikt is in project waarvoor een toegankelijkheidsrapport is gemaakt, dan weet het kernteam of er problemen met toegankelijkheid zijn waar rekening mee moet worden houden.
+Het kernteam heeft input nodig uit de community om een Candidate component te bouwen die toegankelijk is en succesvol door WCAG-EM audits heen komt. Wanneer een Community component gebruikt is in project waarvoor een toegankelijkheidsrapport is gemaakt, dan weet het kernteam of er problemen met toegankelijkheid zijn waar rekening mee moet worden houden.
 
 ### Doel
 
-Het kernteam kan gebruik maken van de kennis en kunde uit de community om te bepalen op welke manier een Candidate component toegankelijk kan worden ingezet èn succesvol door WCAG-EM audits heen komt. Het kernteam hoeft niet zonder praktijkervaring te besluiten wat ervoor nodig is om dit succesvol te doen.
+Er is voldoende inzicht uit de community om te bepalen op welke manier een Candidate component toegankelijk kan worden ingezet èn succesvol door WCAG-EM audits heen komt. Het kernteam hoeft niet zonder praktijkervaring te besluiten wat ervoor nodig is om een component toegankelijk in productie in te zetten.
 
 ### Uitkomst
 
