@@ -1,1 +1,3 @@
-De Hall of Fame component heeft voldoende documentatie en hulpmiddelen zodat redacteuren en contentmakers de component goed en toegankelijk kunnen inzetten, zonder daar diepgaande technische kennis voor nodig te hebben.
+Contentmakers hebben duidelijke instructies en herkenbare voorbeelden om de component toegankelijk in te zetten.
+
+Contentmakers hebben hulpmiddelen en interactieve voorbeelden, die specifieke instructies geven die relevant zijn voor hun situatie. Contentmakers kunnen hiermee leren hoe je de component toegankelijk kan inzetten, zonder eerst alle richtlijnen volledig te begrijpen.
