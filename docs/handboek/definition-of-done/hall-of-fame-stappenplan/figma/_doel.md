@@ -1,1 +1,3 @@
-De Hall of Fame component is beschikbaar voor designers in Figma, zodat deze de meest recente en stabiele versie kunnen gebruiken in hun designs.
+Designers kunnen in Figma ontwerpen maken met componenten die stabiel zijn, en zeker weten dat ze geen experimentele functionaliteit gebruiken.
+
+Designers kunnen ontwerpen maken voor developers die alleen willen ontwikkelen met stabiele componenten.

@@ -15,7 +15,15 @@ keywords:
   - candidate
 ---
 
-<!-- @license CC0-1.0 -->
+import ReactImplementationDoel from "./react-implementation/_doel.md";
+import CssImplementationDoel from "./css-implementatie/_doel.md";
+import ScssImplementationDoel from "./scss-implementatie/_doel.md";
+import FigmaCandidateDevelopmentDoel from "./figma-candidate/_doel.md";
+import VoorbeeldThemaDoel from "./voorbeeld-thema/_doel.md";
+import DocumentatieDoel from "./documentatie/_doel.md";
+import ConsistentieDoel from "./consistentie/_doel.md";
+
+{/* @license CC0-1.0 */}
 
 # Ontwikkelfase voor Candidate componenten
 
@@ -47,7 +55,7 @@ De stappen en substappen in de Ontwikkelfase kunnen soms parallel worden opgepak
 
 ### Doel
 
-De Candidate component is aantoonbaar te gebruiken in ten minste 1 veelgebruikt frontend framework, kan makkelijk gedocumenteerd worden in Storybook en werkt goed op onze eigen websites.
+<ReactImplementationDoel />
 
 ### Uitkomst
 
@@ -57,19 +65,28 @@ De React component is ontwikkeld, maakt gebruik van de CSS component en wordt ge
 
 ### Doel
 
-De Candidate component kan makkelijk beschikbaar worden gemaakt in elk framework naar keuze en heeft hierbij dezelfde gedeelde stylesheet. Bij componenten met een native equivalent is er een HTML variant te gebruiken, zodat deze ook kan worden gebruikt voor output uit CMS'en en API's waar geen classnames kunnen worden toegepast op de HTML.
+<CssImplementationDoel />
 
 ### Uitkomst
 
-- De component is beschikbaar in mixins die goed kunnen worden ingezet in systemen waar geen controle is over de HTML, maar wel een losse stylesheet kan worden ingeladen.
-- De CSS is herbruikbaar opgezet zodat deze als één bron van waarheid gebruikt kan worden tussen verschillende framework implementaties, in situaties waar geen controle is over de HTML of in de Shadow DOM van een web component.
-- De component heeft mogelijkheden om alle variaties en states te testen in visuele regressietests.
+- De CSS is herbruikbaar opgezet zodat deze als 1 bron van waarheid gebruikt kan worden tussen verschillende framework implementaties, in situaties waar geen controle is over de HTML of in de shadow dom van een web component.
+- De component heeft mogelijkheden om alle variaties en states te testen in visuele regressietests
+
+## SCSS component {#css}
+
+### Doel
+
+<ScssImplementationDoel />
+
+### Uitkomst
+
+De component is beschikbaar in mixins die goed kunnen worden ingezet in systemen waar geen controle is over de HTML, maar wel een losse stylesheet kan worden ingeladen.
 
 ## Figma component {#figma}
 
 ### Doel
 
-De Candidate component kan makkelijk ingezet worden door designers en is snel in te stellen op een eigen huisstijl.
+<FigmaCandidateDevelopmentDoel />
 
 ### Uitkomst
 
@@ -80,7 +97,7 @@ De Candidate component kan makkelijk ingezet worden door designers en is snel in
 
 ### Doel
 
-De Candidate component is goed in te zetten voor prototyping zonder eerst een eigen huisstijl in te stellen.
+<VoorbeeldThemaDoel />
 
 ### Uitkomst
 
@@ -90,7 +107,7 @@ De component is beschikbaar in de Voorbeeld-bibliotheek in Figma en is goed in t
 
 ### Doel
 
-De Candidate component en varianten zijn makkelijk te gebruiken voor developers en designers zodat het laagdrempelig is om de component te gebruiken, en het kernteam daardoor voldoende feedback krijgt om de component te selecteren voor de Hall of Fame stappen.
+<DocumentatieDoel />
 
 ### Uitkomst
 
@@ -100,7 +117,7 @@ De component documentatie van de beschikbare varianten en API's is beschikbaar i
 
 ### Doel
 
-De Candidate component is consistent in code, Figma en documentatie.
+<ConsistentieDoel />
 
 ### Uitkomst
 

@@ -1,1 +1,3 @@
-Hall of Fame componenten kunnen gemakkelijk worden geïnstalleerd en up-to-date gehouden worden in projecten. Developers kunnen Hall of Fame componenten herkennen aan `@nl-design-system/` in de naam, en vertrouwen op de kwaliteit en stabiliteit van de component.
+Componenten kunnen gemakkelijk geïnstalleerd worden en up-to-date gehouden worden in projecten.
+
+Developers kunnen aan `@nl-design-system/` herkennen dat de component stabiel is en dat deze is ontwikkeld door het NL Design System kernteam.
