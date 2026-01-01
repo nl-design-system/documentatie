@@ -1,0 +1,1 @@
+De Hall of Fame component helpt veelgemaakte toegankelijkheidsfouten bij het gebruik van de component te voorkomen. Gebruikers kunnen proactief toegankelijkheidsproblemen voorkomen in plaats van deze achteraf te moeten oplossen.

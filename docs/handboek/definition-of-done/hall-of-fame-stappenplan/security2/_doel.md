@@ -1,0 +1,1 @@
+De Hall of Fame component kan werken in een veilige omgeving, bijvoorbeeld wanneer de website DigiD-gecertificeerd is. Er is voldoende documentatie zodat gebruikers van de component zich bewust zijn van security-aspecten en een aanpak kiezen om de component zo veilig mogelijk toe te passen.

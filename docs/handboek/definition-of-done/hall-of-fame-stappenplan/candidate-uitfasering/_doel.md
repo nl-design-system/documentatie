@@ -1,0 +1,1 @@
+Gebruikers van de NL Design System component gebruiken zoveel mogelijk de nieuwste en beste versie. Het is duidelijk welke implementatie van een component jet het best kan gebruiken. Er gaat geen tijd en aandacht meer naar de oude component.
