@@ -1,1 +1,1 @@
-De nieuw geschreven richtlijnen voor redacteuren, designers en developers zijn duidelijk, compleet en praktisch bruikbaar. De richtlijnen helpen gebruikers om sneller, beter of nauwkeuriger te werken.
+De nieuw geschreven richtlijnen voor redacteuren, designers en developers zijn duidelijk, compleet en praktisch bruikbaar. Uit gebruikersonderzoek blijkt dat de richtlijnen helpen om sneller, beter of nauwkeuriger te werken.
