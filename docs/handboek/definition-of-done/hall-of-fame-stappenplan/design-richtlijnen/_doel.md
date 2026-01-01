@@ -1,0 +1,1 @@
+De Hall of Fame component heeft voldoende documentatie en hulpmiddelen om gebruikers zelfstandig de design tokens van de component op een voorspelbare en toegankelijke manier te laten invullen voor hun eigen huisstijl.
