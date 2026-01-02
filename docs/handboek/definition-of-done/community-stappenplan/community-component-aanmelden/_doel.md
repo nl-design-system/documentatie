@@ -1,0 +1,1 @@
+Als organisatie wil je dit component graag beschikbaar maken voor hergebruik door andere teams. Door de status van de component en de bijbehorende documentatie beschikbaar te stellen, kunnen andere organisaties de component vinden op nldesignsystem.nl. Het kernteam kan de component dan de 'Community' status geven.

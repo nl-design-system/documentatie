@@ -15,6 +15,23 @@ keywords:
   - help wanted
 ---
 
+import LosseCssImplementationDoel from "./losse-css-implementatie/_doel.md";
+import StorybookDoel from "./storybook/_doel.md";
+import EersteCommunityComponentDoel from "./eerste-community-component/_doel.md";
+import CommunityComponentKloptDoel from "./community-component-klopt/_doel.md";
+import EssentialDesignTokensDoel from "./essential-design-tokens/_doel.md";
+import ApiPrefixDoel from "./api-prefix/_doel.md";
+import DesignTokensConventie from "./design-tokens-conventie/_doel.md";
+import CodeLicentie from "./code-licentie/_doel.md";
+import DocumentatieLicentieDoel from "./documentatie-licentie/_doel.md";
+import ThemesStorybookDoel from "./themes-storybook/_doel.md";
+import CommunityVisueleRegressieTestsDoel from "./community-visuele-regressie-tests/_doel.md";
+import FigmaCommunityDoel from "./figma-community/_doel.md";
+import ComponentAssesmentDoel from "./component-assessment/_doel.md";
+import CommunityStatusDoel from "./community-status/_doel.md";
+import CommunityComponentWebsiteDoel from "./community-component-website/_doel.md";
+import CommunityComponentPromotieDoel from "./community-component-promotie/_doel.md";
+
 {/* @license CC0-1.0 */}
 
 # Stappenplan: Community door het kernteam
@@ -29,7 +46,11 @@ Voordat je begint kies je het [Community Componenten bord op GitHub](https://git
 
 ## Welke organisatie
 
-Doel: Het wordt duidelijk naar welk community component is gekeken.
+### Doel
+
+<EersteCommunityComponentDoel />
+
+### Actie
 
 Selecteer naar welk organisatiebord je hebt gekeken voor de Definition of Done van 'Community' status.
 
@@ -37,7 +58,11 @@ Selecteer naar welk organisatiebord je hebt gekeken voor de Definition of Done v
 
 ## Beschikbaar in CSS
 
-Doel: De component kan ingezet worden in een framework naar keuze.
+### Doel
+
+<LosseCssImplementationDoel />
+
+### Actie
 
 De component moet beschikbaar zijn in code. Minimaal als HTML/CSS.
 
@@ -49,7 +74,11 @@ De GitHub omgeving moet te bekijken zijn zonder dat je moet inloggen.
 
 ## Publiek beschikbaar in Storybook
 
-Doel: Men kan de component vinden, bekijken, gebruiken, forken en verbeteren.
+### Doel
+
+<StorybookDoel />
+
+### Actie
 
 De component moet publiek beschikbaar zijn in Storybook.
 
@@ -61,7 +90,11 @@ De Storybook omgeving moet te bekijken zijn zonder te hoeven inloggen.
 
 ## Implementatie voldoet aan naam en beschrijving uit de GitHub Discussion
 
-Doel: De component is de component dat we als kernteam verwachten.
+### Doel
+
+<CommunityComponentKloptDoel />
+
+### Actie
 
 In de GitHub Discussion van de component staan de naam en de beschrijving genoteerd. Check of de implementatie van de gekozen organisatie hieraan voldoet. Dit doe je door de component te bekijken via de 'Storybook URL (CSS)' die in het Communitybord is ingevuld.
 
@@ -76,7 +109,11 @@ Vervolgens heb je twee opties:
 
 ## Implementatie heeft minimaal kleur en typografie beslissingen met design tokens geïmplementeerd
 
-Doel: Meerdere organisaties kunnen de component naar hun huisstijl omzetten.
+### Doel
+
+<EssentialDesignTokensDoel />
+
+### Actie
 
 Door met [design tokens](/handboek/huisstijl/design-tokens/) te werken zorgen we ervoor dat meerdere organisaties de component van een eigen huisstijl kunnen voorzien. Minimaal zouden er design tokens beschikbaar moeten zijn om kleur en typografie beslissingen door te voeren.
 
@@ -90,7 +127,11 @@ Check of de implementatie van de gekozen organisatie hieraan voldoet. Dit doe je
 
 ## API's zoals design tokens hebben een prefix van de verantwoordelijke organisatie
 
-Doel: Organisaties kunnen componenten naast elkaar gebruiken zonder dat deze met elkaar conflicteren. Developers en designers kunnen zien waar de component vandaan komt.
+### Doel
+
+<ApiPrefixDoel />
+
+### Actie
 
 Om componenten van elkaar te kunnen gebruiken is het toevoegen van een prefix zoals bijvoorbeeld `utrecht-` of `ams-` verplicht.
 
@@ -104,7 +145,11 @@ Check of de prefix van de gekozen organisatie is toegevoegd aan de onderstaande 
 
 ## Gebruikte design tokens voldoen aan naamgeving conventie van NL Design System
 
-Doel: Een voorspelbare naamgeving van design tokens.
+### Doel
+
+<DesignTokensConventie />
+
+### Actie
 
 Voor NL Design System zijn er afspraken gemaakt voor duidelijke en voorspelbare namen. De beschikbare design tokens van een component moeten voldoen aan [de naamgeving conventie van NL Design System](https://www.nldesignsystem.nl/handboek/huisstijl/design-tokens/#naamgeving). Zo is een component herbruikbaar voor alle verschillende thema's.
 
@@ -114,7 +159,11 @@ Check of de implementatie van de gekozen organisatie hieraan voldoet.
 
 ## EUPL-1.2 licentie toegepast
 
-Doel: De component mag door andere organisaties gebruikt worden. Producten die ermee gemaakt worden hoeven niet per se open source te zijn.
+### Doel
+
+<CodeLicentie />
+
+### Actie
 
 Binnen het NL Design System werken we voor componenten met de [Openbare Licentie van de Europese Unie (EUPL-1.2)](https://nldesignsystem.nl/open-source/eupl/).
 
@@ -129,7 +178,11 @@ Check of de gekozen organisatie naar de EUPL-1.2 licentie verwijst op de onderst
 
 ## Documentatie heeft de Creative Commons 0 licentie (CC0)
 
-Doel: De documentatie van een component mag door andere organisaties hergebruikt of gecombineerd worden zonder enige bronvermelding.
+### Doel
+
+<DocumentatieLicentieDoel />
+
+### Actie
 
 Binnen het NL Design System werken we voor de documentatie met de [Creative Commons 0 licentie (CC0)](https://nldesignsystem.nl/open-source/cc0).
 
@@ -141,7 +194,11 @@ Check of de gekozen organisatie de CC0 licentie benoemt in het README.md bestand
 
 ## Beschikbaar in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/)
 
-Doel: De component wordt beter vindbaar voor andere organisaties en kan makkelijk worden voorzien van een eigen thema.
+### Doel
+
+<ThemesStorybookDoel />
+
+### Actie
 
 Als kernteam maken we de component beschikbaar in de ['Themes' repository](https://github.com/nl-design-system/themes), zodat deze terug te vinden is in de [Storybook met alle NL Design System thema's](https://nl-design-system.github.io/themes/). Andere organisaties kunnen de component vervolgens gebruiken.
 
@@ -149,7 +206,11 @@ Als kernteam maken we de component beschikbaar in de ['Themes' repository](https
 
 ## Visuele regressietests zijn beschikbaar in de Thema Storybook
 
-Doel: De component wordt voorzien van het Start-thema, en organisaties worden geïnformeerd wanneer aanpassingen in de component gevolgen hebben voor hun thema.
+### Doel
+
+<CommunityVisueleRegressieTestsDoel />
+
+### Actie
 
 - Component wordt voorzien van het Start-thema.
 - Communiceren dat men de component kan gaan gebruiken en dat daar automatisch visuele regressietests op zullen plaatsvinden.
@@ -158,7 +219,11 @@ Doel: De component wordt voorzien van het Start-thema, en organisaties worden ge
 
 ## Beschikbaar in de NL Design System Figma bibliotheek
 
-Doel: De component wordt beschikbaar in de [NL Design System Figma bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&t=t25LHoMjEkUZyEi1-1). Designers van andere organisaties kunnen de component overnemen en gaan gebruiken.
+### Doel
+
+<FigmaCommunityDoel />
+
+### Actie
 
 - Als kernteam nemen we de component over uit de Figma omgeving van de gekozen organisatie, inclusief de bijbehorende design tokens. We plaatsen de component in de NL Design System Figma bibliotheek en voorzien deze van het Start-thema.
 - Heeft de gekozen organisatie geen Figma component? Dan ontwikkelen we deze als kernteam zelf.
@@ -173,7 +238,11 @@ Organisaties die de NL Design System Figma bibliotheek vanaf dat moment duplicer
 
 ## Beschikbaar in de NL Design System Component assessment (Figma)
 
-Doel: Organisaties worden bij een onboarding snel naar de juiste component verwezen.
+### Doel
+
+<ComponentAssesmentDoel />
+
+### Actie
 
 Het kernteam voegt een 'Component sticker' toe aan het Figma bestand '[NL Design System Component assessment](https://www.figma.com/design/NLbNbckFo9manEihRFeJmR/NL-Design-System---Component-Assessment?m=auto&t=J0gWvRWoyCJhSqot-6)'. Deze sticker linkt naar de documentatiepagina van de component op nldesignsystem.nl.
 
@@ -183,7 +252,11 @@ Door deze 'Component stickers' op screenshots te plakken, kunnen we geïnteresse
 
 ## Status bijgewerkt naar Community
 
-Doel: iedereen kan zien dat de component nu richting Candidate wil.
+### Doel
+
+<CommunityStatusDoel />
+
+### Actie
 
 - Verander de Status van het backlog issue naar in het projectenbord Components - 2 - Community naar 'Community'.
 - Verander het label 'Help Wanted' van het backlog issue naar 'Community'.
@@ -210,7 +283,11 @@ Zet het checkpoint 'Promotie' op 'Done' of 'Scheduled' vóór de promotie heeft 
 
 ## Informatie van de component bijgewerkt op nldesignsystem.nl
 
-Doel: Op nldesignsystem.nl wordt de meest recente informatie van de component beschikbaar.
+### Doel
+
+<CommunityComponentWebsiteDoel />
+
+### Actie
 
 - Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
 - Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
@@ -254,7 +331,11 @@ This PR will update the component progress to version {versienummer}.
 
 ## Gebruik van component uit de community gepromoot
 
-Doel: Credits geven aan mensen die hebben bijgedragen vanuit de community. De rest van community informeren en enthousiasmeren om ook naar Community, Candidate en Hall of Fame toe te werken.
+### Doel
+
+<CommunityComponentPromotieDoel />
+
+### Actie
 
 - Voeg het label '📣 Promotion' toe aan het backlog issue.
 

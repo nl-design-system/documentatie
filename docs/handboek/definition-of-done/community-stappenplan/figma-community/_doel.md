@@ -1,0 +1,1 @@
+De component wordt beschikbaar in de [NL Design System Figma bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&t=t25LHoMjEkUZyEi1-1). Designers van andere organisaties kunnen de component overnemen en gaan gebruiken.

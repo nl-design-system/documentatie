@@ -1,0 +1,1 @@
+Bij implementaties van de component op nldesignsystem.nl/componenten willen we de naam van de component in de component bibliotheek laten zien zodat developers en designers hem makkelijk kunnen vinden.
