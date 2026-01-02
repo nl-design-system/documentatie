@@ -27,7 +27,7 @@ DTEND;TZID=Europe/Amsterdam:20260106T134500
 X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
 UID:e5a95495-7e7a-49e5-bf83-9f8dae57371d
 DTSTAMP:20240710T075509Z
-LOCATION:http://nldesignsystem.nl/heartbeat/deelnemen
+LOCATION:http://nldesignsystem.nl/events/heartbeat/deelnemen
 DESCRIPTION:In de Heartbeat vertelt het kernteam van NL Design System el
  ke twee weken wat de laatste stand van zaken is. Daarnaast laten we orga
  nisaties aan het woord die met/aan het NL Design System werken.\n\nDe ve
@@ -36,7 +36,7 @@ DESCRIPTION:In de Heartbeat vertelt het kernteam van NL Design System el
  sessie dezelfde\, vaste\, vergaderlink:\n_______________________________
  _________________________________________________\nMicrosoft Teams-verga
  dering\nNeem deel via uw computer of mobiele app\nKlik hier om aan de ve
- rgadering deel te nemen http://nldesignsystem.nl/heartbeat/deelnemen
+ rgadering deel te nemen http://nldesignsystem.nl/events/heartbeat/deelnemen
 SEQUENCE:5
 SUMMARY:Heartbeat - NL Design System
 DTSTART;TZID=Europe/Amsterdam:20260106T130000
