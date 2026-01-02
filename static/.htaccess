@@ -178,6 +178,8 @@ Redirect 307 "/tooltip" "/componenten"
 Redirect 307 "/miro/" "https://miro.com/app/board/uXjVLTpHyN8=/"
 Redirect 307 "/miro" "https://miro.com/app/board/uXjVLTpHyN8=/"
 
+Redirect 307 "/heartbeat/deelnemen" https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTU0ZjUxNGEtMDI3ZS00NDMxLThkMTYtZjU4ZjlmZGY1MzUw%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%229493e425-23f4-4706-87c1-c988531258b7%22%7d
+
 Redirect 307 "/enquete-2025/" "https://forms.office.com/Pages/ResponsePage.aspx?id=oj0da1E3PU6zyeZ4TIutcO-qDj4A3l9NqEOUBB9i7MlUNlg5Szk4T1UxWFo0RUJQNTM3T0lBVU1ZUS4u"
 Redirect 307 "/enquete-2025" "https://forms.office.com/Pages/ResponsePage.aspx?id=oj0da1E3PU6zyeZ4TIutcO-qDj4A3l9NqEOUBB9i7MlUNlg5Szk4T1UxWFo0RUJQNTM3T0lBVU1ZUS4u"
 
