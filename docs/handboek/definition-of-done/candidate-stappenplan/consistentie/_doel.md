@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-De Candidate component is cosistent in code, figma en documentatie.
+De component is consistent in alle onderdelen van de implementatie: code, Figma en documentatie.

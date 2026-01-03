@@ -1,3 +1,7 @@
 <!-- @license CC0-1.0 -->
 
-Het kernteam heeft input nodig uit de community om een Candidate component te bouwen die toegankelijk is en succesvol door WCAG-EM audits heen komt. Wanneer een Community component gebruikt is in project waarvoor een toegankelijkheidsrapport is gemaakt, dan weet het kernteam of er problemen met toegankelijkheid zijn waar rekening mee moet worden houden.
+Componenten die op in productie gebruikt worden op websites waarvoor een toegankelijkheidsverklaring verplicht is, krijgen prioriteit.
+
+Bestaand onderzoek naar toegankelijkheid van de component is bekend voordat de ontwikkeling begint, zodat die informatie kan worden gebruikt bij de ontwikkeling van de component.
+
+Een component-implementatie die significante toegankelijkheidsproblemen blijkt te hebben, wordt eerst verbeterd voordat anderen er aandacht aan besteden.

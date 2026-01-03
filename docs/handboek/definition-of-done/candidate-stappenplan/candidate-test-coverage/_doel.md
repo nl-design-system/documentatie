@@ -1,3 +1,5 @@
 <!-- @license CC0-1.0 -->
 
-De Candidate component kan goed onderhouden worden en makkelijk worden uitgebreid doordat alle bestaande functionaliteit gedekt is in de tests.
+De component kan nog veilig uitgebreid en verbeterd worden, zonder dat het veel tijd kost om vertrouwen te krijgen in de kwaliteit van de nieuwe release.
+
+Bestaande gebruikers krijgen geen problemen bij het installeren van updates, doordat alle bestaande functionaliteit automatisch wordt getest.
