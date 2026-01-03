@@ -1,4 +1,4 @@
-De community voelt dat hun inzet om de component te maken wordt gewaardeerd.
+De community weet dat hun inzet om de component te maken wordt gewaardeerd.
 
 Bekendheid geven aan een component die een nieuwe implementatie heeft.
 

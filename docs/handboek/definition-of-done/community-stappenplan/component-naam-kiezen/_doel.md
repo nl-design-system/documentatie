@@ -1,1 +1,1 @@
-Bij implementaties van de component op nldesignsystem.nl/componenten willen we de naam van de component in de component bibliotheek laten zien zodat developers en designers hem makkelijk kunnen vinden.
+Wanneer een component-implementatie een andere naam heeft gebruikt dan de naam die is gekozen in NL Design System, dan kunnen gebruikers vertrouwen dat de implementatie klopt bij de beschrijving van de component, en dat de implemenatie niet fout is gelinkt.

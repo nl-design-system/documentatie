@@ -1,1 +1,3 @@
-Om een component de status Community te geven is het belangrijk dat API's zoals design tokens de prefix van de verantwoordelijke organisatie hebben. Deze kolom is dus voor iedere component van de organisatie hetzelfde.
+Developers en designers kunnen aan de API prefix zien uit welk design system de component komt.
+
+Andere developers vinden het acceptabel om deze API prefix in hun code te gebruiken.
