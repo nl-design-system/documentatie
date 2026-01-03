@@ -1,1 +1,5 @@
-Een voorspelbare naamgeving van design tokens.
+Gebruikers die het design van een component willen instellen, kunnen voorspellen wat de naam is van de design tokens die ze moeten instellen.
+
+Gebruikers kunnen het design van de component instellen, zonder common tokens of brand tokens in te stellen.
+
+Gebruikers kunnen white-label componenten uit verschillende design systems combineren, zonder de common tokens van meerdere design systems in te moeten stellen.
