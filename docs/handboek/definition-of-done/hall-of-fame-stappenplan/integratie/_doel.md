@@ -1,1 +1,1 @@
-De Hall of Fame component is volledig is geïntegreerd in het bredere NL Design System ecosysteem, zodat gebruikers de component kunnen gebruiken in combinatie met alle andere componenten, patronen, templates, prototypes en hulmiddelen.
+De component is volledig is geïntegreerd in het bredere ecosysteem van het design system, zodat gebruikers de component kunnen gebruiken in combinatie met alle andere componenten, patronen, templates, prototypes en hulpmiddelen.
