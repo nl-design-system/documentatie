@@ -1,1 +1,1 @@
-Het wordt duidelijk naar welk community component is gekeken.
+Het kernteam controleert één component tegelijk op de Definition of Done voor Community-componenten.

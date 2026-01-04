@@ -1,1 +1,1 @@
-Alle teams kunnen nu zien dat de component beschikbaar is voor hergebruik door andere organsaties.
+Design systems in de community kunnen zelf aangeven of hun component bedoeld is om te delen met anderen via de NL Design System website.

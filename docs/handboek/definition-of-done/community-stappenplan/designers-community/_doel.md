@@ -1,1 +1,1 @@
-Designers van andere organisaties kunnen de component overnemen en gaan gebruiken. De URL wordt zichtbaar op nldesignsystem.nl bij de documentatie van de component.
+Designers kunnen vanaf de NL Design System website met één klik de Figma-component openen, zonder door het Figma bestand te zoeken.
