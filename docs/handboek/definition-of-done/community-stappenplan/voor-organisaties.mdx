@@ -29,12 +29,13 @@ import CommunityInzichtDoel from "./community-inzicht/_doel.md";
 import AndereHuisstijlDoel from "./andere-huisstijl/_doel.md";
 import PublicRepoDoel from "./public-repo/_doel.md";
 import AvailableStatus from "./available-status/_doel.md";
+import ComponentVisueleRegressieTestsDoel from "./component-visuele-regressie-tests/_doel.md";
 
 {/* @license CC0-1.0 */}
 
 # Stappenplan: Community voor organisaties
 
-Als je als organisatie een component wilt bijdragen aan NL Design System kun je dit stappenplan volgen. Heb je nog geen eigen [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten)? Vraag dan aan het kernteam om er een aan te maken.
+Als je als organisatie een component wilt bijdragen aan NL Design System kun je dit stappenplan volgen.
 
 ## Voeg de component toe aan de componenten bord
 
@@ -43,6 +44,8 @@ Als je als organisatie een component wilt bijdragen aan NL Design System kun je 
 <CommunityComponentAanmeldenDoel />
 
 ### Acties
+
+Heb je nog geen eigen [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten)? Vraag dan aan het kernteam om er een aan te maken.
 
 1. Open het Communitybord via [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten).
 2. Klik op de + icoon links onderaan de pagina om een component toe te voegen.
@@ -184,11 +187,25 @@ Is er alleen een React Storybook? Zorg dan dat een codevoorbeeld van CSS beschik
 
 **🚩 Checkpoint**: Storybook URL (CSS)
 
+## Component heeft visuele regressietests
+
+### Doel
+
+<ComponentVisueleRegressieTestsDoel />
+
+### Acties
+
+Als de component wordt ontwikkeld met de NL Design System infrastructuur op [github.com/nl-design-system](github.com/nl-design-system), dan heb je automatisch toegang tot visuele regressietest met Chromatic.
+
+Controleer dan dat "Storybook Publish" en "UI Tests" bij de Pull Request checks staan.
+
 ## Component beschikbaar voor visuele regressietests
 
 ### Doel
 
 <CommunityInzichtDoel />
+
+### Acties
 
 1. Clone de http://github.com/nl-design-system/themes repository.
 2. Zorg dat je [pnpm](https://pnpm.io) hebt geinstalleerd.
