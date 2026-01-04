@@ -31,6 +31,9 @@ import ComponentAssesmentDoel from "./component-assessment/_doel.md";
 import CommunityStatusDoel from "./community-status/_doel.md";
 import CommunityComponentWebsiteDoel from "./community-component-website/_doel.md";
 import CommunityComponentPromotieDoel from "./community-component-promotie/_doel.md";
+import CodeBackupDoel from "./code-backup/_doel.md";
+import ExternalContributionsDoel from "./external-contributions/_doel.md";
+import PublicRepoDoel from "./public-repo/_doel.md";
 
 {/* @license CC0-1.0 */}
 
@@ -204,6 +207,35 @@ Als kernteam maken we de component beschikbaar in de ['Themes' repository](https
 
 **🚩 Checkpoint**: Storybook thema's
 
+## Git repository kan gebruikt worden voor doorontwikkeling
+
+### Doel
+
+<PublicRepoDoel />
+
+### Actie
+
+- Maak een clone van de Git repository.
+- Volg de instructies in de `README.md`.
+- Controleer dat je alle dependencies kunt installeren.
+- Controleer dat je de component kunt builden, indien er een buildproces is.
+- Controleer dat je de documentatie kan opstarten, indien aanwezig.
+- Controleer dat je de testautomatisering kunt gebruiken, indien aanwezig.
+- Controleer dat al bekende bugs publiek worden bijgehouden.
+
+## Externe developers kunnen bijdragen
+
+### Doel
+
+<ExternalContributionsDoel />
+
+### Actie
+
+- Controleer dat een [Code of Conduct](/coc) wordt gebruikt die een veilige omgeving biedt.
+- Controleer dat er een `CONTRIBUTING.md` is.
+- Controleer dat je een Pull Request kan maken.
+- Controleer dat er issues gemeld kunnen worden in een publieke issue tracker.
+
 ## Visuele regressietests zijn beschikbaar in de Thema Storybook
 
 ### Doel
@@ -249,6 +281,18 @@ Het kernteam voegt een 'Component sticker' toe aan het Figma bestand '[NL Design
 Door deze 'Component stickers' op screenshots te plakken, kunnen we geïnteresseerde organisaties inzicht bieden welke componenten beschikbaar zijn om hun website of applicatie mee op te bouwen.
 
 **🚩 Checkpoint**: Component assessment
+
+## Backup van de code
+
+### Doel
+
+<CodeBackupDoel />
+
+### Actie
+
+Als de component wordt ontwikkeld met de NL Design System infrastructuur op [github.com/nl-design-system](github.com/nl-design-system), dan wordt al automatisch een backup gemaakt van de code met Rewind.
+
+Als code van de component in eigen infrastructuur wordt ontwikkeld, dan moet handmatig een automatische backup ingesteld worden. Neem contact op met het kernteam, en vraag om een automatisch dagelijks een mirror te maken van jouw Git repository naar een repository bij NL Design System. De backup-repository zal private zijn, zodat geen verwarring ontstaat wat de originele repository is, en voorkom je dat de backup-repository hoger kan eindigen in zoekresultaten.
 
 ## Status bijgewerkt naar Community
 
