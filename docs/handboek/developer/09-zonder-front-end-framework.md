@@ -6,9 +6,11 @@ Met het NL Design System bouw je in een paar stappen een pagina met alleen HTML 
 
 Dit is het ontwerp dat in dit voorbeeld zo goed mogelijk wordt nagebouwd: [Het ontwerp in Figma](https://www.figma.com/design/taAnsV55PVP0cmw18BnMDk/NL-Design-System---Templates---Voorbeeld?node-id=5550-611&t=VX2mUDweS42iaS1D-4)
 
+<a href="#stappenplan-overslaan" class="nl-skip-link nl-skip-link--visible-on-focus">Voorbeeld overslaan</a>
+
 <div className="utrecht-root" style={{zoom: '50%', width: '100%', height: '1024px'}}>
   <div className="utrecht-body">
-    <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '1024px'}} src="/examples/zonder-front-end-framework.html"></iframe>
+    <iframe title="Voorbeeld HTML pagina" style={{width: '100%', height: '1024px', border: '2px solid #000000'}} src="/examples/zonder-front-end-framework.html"></iframe>
   </div>
 </div>
 <a href="/examples/zonder-front-end-framework.html" rel="noopener noreferrer">Bovenstaande voorbeeldpagina in volledig scherm bekijken</a>.
