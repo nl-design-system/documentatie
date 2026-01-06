@@ -486,6 +486,12 @@ aside button[title="Zijbalk inklappen"],
 }
 
 /* Override Docusaurus styles */
+
+.utrecht-button-link {
+  --ifm-link-hover-color: var(--_utrecht-button-hover-color);
+  /* --ifm-link-hover-decoration: none; */
+}
+
 #__docusaurus,
 .utrecht-page-layout {
   flex-grow: 1;
