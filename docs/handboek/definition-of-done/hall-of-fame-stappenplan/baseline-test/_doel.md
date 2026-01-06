@@ -1,6 +1,6 @@
 <!-- De baseline is niet het doel op zich. Voor dit doel is de baseline ontwikkeld -->
 
-Er is aangetoond dat de component goed werkt in de browsers en hulpmiddelen die de doelgroep op dit moment gebruikt, zoals die zijn vastgelegd in de [NL Design System Baseline](/baseline).
+Er is aangetoond dat de component goed werkt in de browsers en hulpmiddelen die eindgebruikers op dit moment gebruiken, zoals die zijn vastgelegd in de [NL Design System Baseline](/baseline).
 
 De component is getest in meer browsers en met meer hulpmiddelen dan gebruikelijk is voor kleinere projecten.
 

@@ -1,7 +1,7 @@
 <!-- @license CC0-1.0 -->
 
-Componenten die op in productie gebruikt worden op websites waarvoor een toegankelijkheidsverklaring verplicht is, krijgen prioriteit.
+Component-implementaties die op in productie gebruikt worden op websites waarvoor een toegankelijkheidsverklaring gemaakt is, krijgen prioriteit bij het toewerken naar een stabiele versie.
 
-Bestaand onderzoek naar toegankelijkheid van de component is bekend voordat de ontwikkeling begint, zodat die informatie kan worden gebruikt bij de ontwikkeling van de component.
+Component-implementaties die geen significante toegankelijkheidsproblemen blijken te hebben, krijgen prioriteit bij het toewerken naar een stabiele versie.
 
-Een component-implementatie die significante toegankelijkheidsproblemen blijkt te hebben, wordt eerst verbeterd voordat anderen er aandacht aan besteden.
+Bestaand onderzoek naar toegankelijkheid van de component is bekend voordat het toewerken naar een stabiele versie begint, zodat die informatie kan worden gebruikt bij de doorontwikkeling van de component.

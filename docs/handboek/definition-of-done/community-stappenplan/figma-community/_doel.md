@@ -3,3 +3,7 @@ Designers kunnen alle componenten direct gebruiken in hun Figma ontwerpen door t
 Developers kunnen ontwerpen in Figma gebruiken om te vinden welke component-implementaties ze kunnen gebruiken in code, doordat het ontwerp is voorzien van links naar alle relevante informatie.
 
 Er worden vaker toegankelijke componenten uit het design system gebruikt, doordat designers dit aanbevelen aan developers voordat de ontwikkeling van een website begint.
+
+Gebruikers van de [Basis-tokens](/handboek/huisstijl/themas/start-thema/#basis-tokens) kunnen gebruik maken van de nieuwe component door de component design tokens over te nemen van het Start-thema.
+
+De component kan met het Voorbeeld-thema gebruikt worden in voorbeelden, templates en patronen.
