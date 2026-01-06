@@ -2804,6 +2804,9 @@ aside button[title="Zijbalk inklappen"] {
 .ma-theme .utrecht-link--html-a:any-link:focus-visible:hover {
  color: var(--utrecht-link-focus-color);
 }
+.utrecht-button-link {
+ --ifm-link-hover-color: var(--_utrecht-button-hover-color);
+}
 .footer .container {
  margin: 0;
  padding-inline-start: 20px;
