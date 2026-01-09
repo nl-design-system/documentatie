@@ -64,10 +64,3 @@ Deze optie heeft niet de voorkeur omdat er geen visuele tekst bij het icoontje s
 ```
 
 Voor het toekennen van toegankelijke namen aan SVG's bestaan ook andere technieken, Carie Fisher beschrijft ze in [<span lang="en">Accessible SVGs: Perfect Patterns For Screen Reader Users</span>](https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/).
-
-## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
-
-Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
-
-- [Succescriterium 1.3.1 Info en relaties](/wcag/1.3.1)
-- [Succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2/)

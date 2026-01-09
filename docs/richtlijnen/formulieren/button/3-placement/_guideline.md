@@ -17,10 +17,3 @@ Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
 
 **Niet doen:** Button rechts uitlijnen.
 ![Button niet uitgelijnd met formulier labels en invoervelden](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_buttons_placement--dont.png)
-
-## Meer lezen over gerelateerde WCAG-succescriteria op NL Design System
-
-Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
-
-- [Succescriterium 1.4.4 Herschalen van tekst](/wcag/1.4.4/)
-- [Succescriterium 1.4.10 Reflow](/wcag/1.4.10/)
