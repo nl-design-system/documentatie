@@ -15,6 +15,53 @@ keywords:
   - start-thema
 ---
 
+import BasisColorActionIntro from "./_basis-color-action-intro.md";
+import BasisColorAction1Intro from "./_basis-color-action-1-intro.md";
+import BasisColorAction2Intro from "./_basis-color-action-2-intro.md";
+import BasisColorDisabledIntro from "./_basis-color-disabled-intro.md";
+
+import BasisColorAccent1Intro from "./_basis-color-accent-1-intro.md";
+import BasisColorAccent2Intro from "./_basis-color-accent-2-intro.md";
+import BasisColorAccent3Intro from "./_basis-color-accent-3-intro.md";
+import BasisColorDefaultIntro from "./_basis-color-default-intro.md";
+import BasisColorHighlightIntro from "./_basis-color-highlight-intro.md";
+import BasisColorNegativeIntro from "./_basis-color-negative-intro.md";
+import BasisColorInfoIntro from "./_basis-color-info-intro.md";
+import BasisColorPositiveIntro from "./_basis-color-positive-intro.md";
+import BasisColorSelectedIntro from "./_basis-color-selected-intro.md";
+import BasisColorWarningIntro from "./_basis-color-warning-intro.md";
+
+import BasisSpaceBlockIntro from "./_basis-space-block-intro.md";
+import BasisSpaceInlineIntro from "./_basis-space-inline-intro.md";
+import BasisSpaceRowIntro from "./_basis-space-row-intro.md";
+import BasisSpaceColumnIntro from "./_basis-space-column-intro.md";
+import BasisSpaceTextIntro from "./_basis-space-text-intro.md";
+
+import BasisTextFontFamilyIntro from "./_basis-text-font-family-intro.md";
+import BasisTextFontSizeIntro from "./_basis-text-font-size-intro.md";
+import BasisTextLineHeightIntro from "./_basis-text-line-height-intro.md";
+import BasisHeadingIntro from "./_basis-heading-intro.md";
+import BasisBoxShadowIntro from "./_basis-box-shadow-intro.md";
+import BasisBorderRadiusIntro from "./_basis-border-radius-intro.md";
+import BasisBorderWidthIntro from "./_basis-border-width-intro.md";
+import BasisFocusIntro from "./_basis-focus-intro.md";
+import BasisFormControlIntro from "./_basis-form-control-intro.md";
+
+import BgDocumentIntro from "./_bg-document-intro.md";
+import BgSubtleIntro from "./_bg-subtle-intro.md";
+import BgDefaultIntro from "./_bg-default-intro.md";
+import BgHoverIntro from "./_bg-hover-intro.md";
+import BgActiveIntro from "./_bg-active-intro.md";
+import BorderSubtleIntro from "./_border-subtle-intro.md";
+import BorderDefaultIntro from "./_border-default-intro.md";
+import BorderHoverIntro from "./_border-hover-intro.md";
+import BorderActiveIntro from "./_border-active-intro.md";
+import ColorDefaultIntro from "./_color-default-intro.md";
+import ColorHoverIntro from "./_color-hover-intro.md";
+import ColorActiveIntro from "./_color-active-intro.md";
+import ColorSubtleIntro from "./_color-subtle-intro.md";
+import ColorDocumentIntro from "./_color-document-intro.md";
+
 # Start-thema en basis-tokens
 
 Vanuit NL Design System bieden we het 'Start-thema' aan. De stijl van dit Start-thema hebben we vastgelegd in een set aan 'basis-tokens'. Deze basis-tokens leven op het ['Common' niveau](/handboek/huisstijl/design-tokens#common-tokens).
@@ -157,15 +204,6 @@ Zijn er meerdere huisstijlkleuren? Dan kun je `accent-2` en `accent-3` individue
 
 Binnen de basis-tokens zijn enkele speciale groepen aangewezen. Deze hebben extra aandacht gekregen omdat hiervoor specifieke richtlijnen zijn of omdat wijzigingen hierin snel grote invloed hebben op de huisstijl.
 
-`basis.heading.*`
-: Stijl van alle koppen.
-
-`basis.form-control.*`
-: Stijl van alle formulier-elementen zoals Text Input en Text Area. Maar ook Checkbox en Radio Button.
-
-`basis.focus.*`
-: Stijl van de focus state.
-
 :::tip[Tip]
 
 Het asterisk-symbool `(*)` betekent dat dit geldt voor alle tokens die met deze termen beginnen. `basis.heading.*` dekt dus `basis.heading.font-family`, `basis.heading.font-weight` etcetera.
@@ -178,6 +216,18 @@ De naamgeving van deze speciale groepen wijkt bewust af van de algemene structuu
 
 :::
 
+##### `basis.heading.*` {#basis-heading}
+
+<BasisHeadingIntro />
+
+##### `basis.form-control.*` {#basis-form-control}
+
+<BasisFormControlIntro />
+
+##### `basis.focus.*` {#basis-focus}
+
+<BasisFocusIntro />
+
 ### Basis-tokens voor typografie
 
 Voor typografie zijn er basis-tokens beschikbaar voor het instellen van:
@@ -187,7 +237,7 @@ Voor typografie zijn er basis-tokens beschikbaar voor het instellen van:
 - Lettergrootte (`font-size`)
 - Regelhoogte (`line-height`)
 
-#### Lettertype
+#### Lettertype {#basis-text-font-family}
 
 `basis.text.font-family.default`
 : Standaard lettertype voor tekst.
@@ -195,7 +245,7 @@ Voor typografie zijn er basis-tokens beschikbaar voor het instellen van:
 `basis.text.font-family.monospace`
 : Voor tekst die als code wordt weergegeven.
 
-#### Lettergewicht
+#### Lettergewicht {#basis-text-font-weight}
 
 `basis.text.font-weight.default`
 : Standaard gewicht voor reguliere tekst.
@@ -203,9 +253,9 @@ Voor typografie zijn er basis-tokens beschikbaar voor het instellen van:
 `basis.text.font-weight.bold`
 : Gewicht voor vetgedrukte tekst.
 
-#### Lettergrootte
+#### Lettergrootte {#basis-text-font-size}
 
-Er zijn zeven basis-tokens beschikbaar om lettergrootte te bepalen:
+<BasisTextFontSizeIntro />
 
 - `basis.text.font-size.sm`
 - `basis.text.font-size.md`
@@ -217,9 +267,9 @@ Er zijn zeven basis-tokens beschikbaar om lettergrootte te bepalen:
 
 De waarden van deze tokens zijn in `rem` genoteerd zodat tekst automatisch schaalt als men behoefte heeft aan grotere of kleinere letters.
 
-#### Regelhoogte
+#### Regelhoogte {#basis-text-line-height}
 
-Voor elke lettergrootte is er een corresponderende basis-token voor regelhoogte beschikbaar:
+<BasisTextLineHeightIntro />
 
 - `basis.text.line-height.sm`
 - `basis.text.line-height.md`
@@ -231,7 +281,7 @@ Voor elke lettergrootte is er een corresponderende basis-token voor regelhoogte 
 
 De waarden zijn 'unitless' (zonder eenheid) genoteerd, zodat de regelhoogte automatisch meebeweegt met de gekozen lettergrootte.
 
-### Basis-tokens voor kleur
+### Basis-tokens voor kleur {#basis-color}
 
 Voor kleur (`color`) is een uitgebreide set basis-tokens beschikbaar, geïnspireerd op [Radix](https://www.radix-ui.com/colors). De kleuren zijn volledig aanpasbaar naar wens van jouw organisatie.
 
@@ -276,9 +326,11 @@ Voor deze doelen gebruiken we de volgende termen:
 
 ![De afbeelding toont as 1, enkele termen verticaal uitgelijnd. Horizontaal zijn de termen van as 2 niet goed zichtbaar.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-as-1.png)
 
-##### Default
+##### Default {#basis-color-default}
 
-Gebruik `default` als je kleuren inzet voor structuur, bijvoorbeeld bij componenten zoals [Paragraph](/paragraph), [Heading](/heading) of [Table](/table).
+<BasisColorDefaultIntro />
+
+Bijvoorbeeld bij componenten zoals [Paragraph](/paragraph), [Heading](/heading) of [Table](/table).
 
 ![De afbeelding toont de componenten Heading, Paragraph, Divider en Tabel allen met eenvoudige grijze tot donkergrijze kleuren.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-default.png)
 
@@ -292,12 +344,26 @@ Heeft jouw organisatie meerdere huisstijlkleuren? Dan kun je `accent-2` en `acce
 
 ![De afbeelding toont de componenten Page Header en Page Footer op basis van een violet kleur.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-accent-alt.png)
 
+###### `accent-1` {#accent-1}
+
+<BasisColorAccent1Intro />
+
+###### `accent-2` {#accent-2}
+
+<BasisColorAccent2Intro />
+
+###### `accent-3` {#accent-3}
+
+<BasisColorAccent3Intro />
+
 ##### Action-1 en action-2
 
-Gebruik `action` om kleuren toe te wijzen aan interactieve elementen. Bijvoorbeeld bij componenten zoals [Button](/button), [Link](/link), [Breadcrumb Navigation](/breadcrumb-navigation) of [Page Number Navigation](/page-number-navigation).
+<BasisColorActionIntro />
 
-- `action-1` is standaard bedoeld voor knoppen.
-- `action-2` verwijst standaard naar `action-1` en wordt gebruikt voor andere interactieve componenten.
+Bijvoorbeeld bij componenten zoals [Button](/button), [Link](/link), [Breadcrumb Navigation](/breadcrumb-navigation) of [Page Number Navigation](/page-number-navigation).
+
+- <BasisColorAction1Intro />
+- <BasisColorAction2Intro />
 
 ![De afbeelding toont de componenten Button, Link, Breadcrumb Navigation en Page Number Navigation op basis van een blauwe kleur.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-action-start.png)
 
@@ -305,31 +371,49 @@ Gebruik je meerdere interactiekleuren? Dan kun je `action-2` apart instellen.
 
 ![De afbeelding toont de componenten Button, Link, Breadcrumb Navigation en Page Number Navigation. De knoppen zijn groen. Alle andere interactieve componenten zijn blauw.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-action-voorbeeld.png)
 
-##### Disabled
+##### Disabled {#basis-color-disabled}
 
-Gebruik `disabled` om inactieve elementen visueel aan te duiden. Bijvoorbeeld bij componenten zoals [Breadcrumb Navigation](/breadcrumb-navigation), [Page Number Navigation](/page-number-navigation) en [Progress List](/progress-list). Voor elementen die disabled zijn, worden vaak lichtere kleuren gebruikt. Let erop dat de tekst- en achtergrondkleur nog wel [genoeg contrast](/wcag/1.4.3/) hebben.
+<BasisColorDisabledIntro />
+
+Bijvoorbeeld bij componenten zoals [Breadcrumb Navigation](/breadcrumb-navigation), [Page Number Navigation](/page-number-navigation) en [Progress List](/progress-list). Voor elementen die disabled zijn, worden vaak lichtere kleuren gebruikt. Let erop dat de tekst- en achtergrondkleur nog wel [genoeg contrast](/wcag/1.4.3/) hebben.
 
 ![De afbeelding toont de componenten Breadcrumb Navigation, Page Number Navigation en Progress List met grijze kleuren.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-disabled.png)
 
-##### Info, Negative, Warning, Positive
+##### De 4 signaalkleuren
 
-Gebruik deze basis-tokens voor signalen of feedback:
-
-- `info`: Informatief signaal of neutraal.
-- `negative`: Negatief signaal, foutmelding of kritieke situatie.
-- `warning`: Waarschuwend signaal of risico.
-- `positive`: Positief signaal, bevestiging of geslaagde actie.
+Gebruik deze basis-tokens voor signalen of feedback.
 
 Denk hierbij aan componenten zoals [Alert](/alert), [Progress List](/progress-list) of [Status Badge](/status-badge).
 
 ![De afbeelding toont de componenten Alert, Progress List en Status Badge met rode, groene, oranje en blauwe signaalkleuren.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-signal.png)
 
-##### Highlight & Selected
+###### Info {#basis-color-info}
 
-- `highlight`: Gebruik dit om iets te markeren of uit te lichten, bijvoorbeeld met de [Mark](/mark) component.
-- `selected`: Gebruik dit voor actieve selecties, bijvoorbeeld in een Combobox of Table.
+<BasisColorInfoIntro />
 
-#### As 2: Toepassing
+###### Warning {#basis-color-warning}
+
+<BasisColorWarningIntro />
+
+###### Negative {#basis-color-negative}
+
+<BasisColorNegativeIntro />
+
+###### Positive {#basis-color-positive}
+
+<BasisColorPositiveIntro />
+
+##### Highlight {#basis-color-highlight}
+
+<BasisColorHighlightIntro />
+
+Bijvoorbeeld met de [Mark](/mark) component.
+
+##### Selected {#basis-color-selected}
+
+<BasisColorSelectedIntro />
+
+#### As 2: Toepassing {#basis-color-suffix}
 
 Naast het doel gebruik je kleuren ook afhankelijk van de toepassing. Denk aan:
 
@@ -361,61 +445,61 @@ Voor deze toepassingen gebruiken we de volgende termen, waarin ook status en hi�
 
 Hieronder lees je per toepassing wat het betekent, inclusief richtlijnen die zorgen voor voldoende kleurcontrast.
 
-##### `bg-document`
+##### `bg-document` {#bg-document}
 
-Algemene achtergrondkleur.
+<BgDocumentIntro />
 
-##### `bg-subtle`
+##### `bg-subtle` {#bg-subtle}
 
-Alternatieve achtergrondkleur ten opzichte van `bg-document`, meestal iets donkerder.
+<BgSubtleIntro />
 
-##### `bg-default`
+##### `bg-default` {#bg-default}
 
-Standaard achtergrondkleur voor getinte componenten in standaardstatus.
+<BgDefaultIntro />
 
-##### `bg-hover`
+##### `bg-hover` {#bg-hover}
 
-Achtergrondkleur bij 'hover' status van getinte of transparante componenten.
+<BgHoverIntro />
 
-##### `bg-active`
+##### `bg-active` {#bg-active}
 
-Achtergrondkleur bij 'active' of 'selected' status van getinte of transparante componenten.
+<BgActiveIntro />
 
-##### `border-subtle`
+##### `border-subtle` {#bg-subtle}
 
-Subtiele lijnkleur, inzetbaar als er geen contrastverhouding van 3:1 vereist is.
+<BorderSubtleIntro />
 
-##### `border-default`
+##### `border-default` {#border-default}
 
-Standaard lijnkleur. Moet een contrastverhouding van 3:1 of meer hebben met `bg-default`.
+<BorderDefaultIntro />
 
-##### `border-hover`
+##### `border-hover` {#border-hover}
 
-Lijnkleur bij 'hover' status. Moet een contrastverhouding van 3:1 of meer hebben met `bg-hover`.
+<BorderHoverIntro />
 
-##### `border-active`
+##### `border-active` {#border-active}
 
-Lijnkleur voor 'active' of 'selected' status. Moet een contrastverhouding van 3:1 of meer hebben met `bg-active`.
+<BorderActiveIntro />
 
-##### `color-default`
+##### `color-default` {#color-default}
 
-Standaard tekstkleur. Moet een contrastverhouding van 4.5:1 of meer hebben met `bg-default`.
+<ColorDefaultIntro />
 
-##### `color-hover`
+##### `color-hover` {#color-hover}
 
-Tekstkleur bij 'hover' status. Moet een contrastverhouding van 4.5:1 of meer hebben met `bg-hover`.
+<ColorHoverIntro />
 
-##### `color-active`
+##### `color-active` {#color-active}
 
-Tekstkleur bij 'active' of 'selected' status. Moet een contrastverhouding van 4.5:1 of meer hebben met `bg-active`.
+<ColorActiveIntro />
 
-##### `color-subtle`
+##### `color-subtle` {#color-subtle}
 
-Alternatieve, subtielere voorgrondkleur ten opzichte van `color-document`. Moet een contrastverhouding van 4.5:1 of meer hebben met `bg-subtle`.
+<ColorSubtleIntro />
 
-##### `color-document`
+##### `color-document` {#color-document}
 
-Algemene voorgrondkleur. Moet een contastverhouding van 4.5:1 of meer hebben met `bg-subtle`.
+<ColorDocumentIntro />
 
 #### Combinatie van As 1 en As 2
 
@@ -436,7 +520,7 @@ Door termen van As 1 (doel) en As 2 (toepassing) te combineren, resulteert dat i
 - `basis.color.accent-1.color-subtle`
 - `basis.color.accent-1.color-document`
 
-#### Inverse set
+#### Inverse set {#basis-color-inverse}
 
 Als we het hierbij zouden laten, zouden alle componenten subtiel getint blijven. Maar soms wil je juist componenten 'stevig' neerzetten. Denk aan een primaire knop die echt de aandacht moet trekken, of een [Page Footer](/page-footer) die je visueel duidelijk wilt scheiden van de content erboven.
 
@@ -474,7 +558,7 @@ Onderstaande afbeelding laat zien hoe de basis-tokens voor kleur binnen een inte
 
 ![Visueel voorbeeld van de uitleg die voorafgaand aan de afbeelding wordt beschreven.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_color-toepassing.png)
 
-#### Transparant
+#### Transparant {#basis-color-transparent}
 
 Er is een specifieke basis-token beschikbaar voor transparantie: `basis.color.transparent`. Deze token zorgt ervoor dat transparantie eenduidig wordt vertaald naar verschillende outputformaten, zoals CSS of design tools.
 
@@ -486,7 +570,7 @@ Deze kleurwaarden zijn bewust 'hard-coded', zodat de focus status altijd afwijkt
 
 Bij formulieren vermijden we een gele achtergrond om verwarring met auto-complete te voorkomen.
 
-### Basis-tokens voor ruimte
+### Basis-tokens voor ruimte {#basis-space}
 
 Voor ruimtelijke indeling (`space`) binnen en tussen componenten zijn basis-tokens beschikbaar. Deze tokens zijn gebaseerd op het ['spacing concept' dat we bij NL Design System aanhouden](/richtlijnen/stijl/ruimte/spacing-concepten).
 
@@ -509,13 +593,33 @@ Dit zorgt voor tokens met termen zoals `inline`, `block`, `text`, `column` en `r
 - `basis.space.row.lg`
 - etcetera
 
+#### `basis.space.block` {#basis-space-block}
+
+<BasisSpaceBlockIntro />
+
+#### `basis.space.inline` {#basis-space-inline}
+
+<BasisSpaceInlineIntro />
+
+#### `basis.space.row` {#basis-space-row}
+
+<BasisSpaceRowIntro />
+
+#### `basis.space.column` {#basis-space-column}
+
+<BasisSpaceColumnIntro />
+
+#### `basis.space.text` {#basis-space-text}
+
+<BasisSpaceTextIntro />
+
 :::tip[Tip]
 
 Er zijn ook tokens voor ruimte beschikbaar met de termen `min` en `max`. Hiermee bereiden we ons voor op de mogelijkheid om ruimte vloeiend te laten groeien afhankelijk van de grootte van een scherm. Vooralsnog worden deze tokens niet gebruikt.
 
 :::
 
-### Basis-tokens voor afmeting
+### Basis-tokens voor afmeting {#basis-size}
 
 Wil je componenten een specifieke afmeting (`size`) geven? Ook daar zijn basis-tokens voor beschikbaar. En ook hier wordt gebruikgemaakt van t-shirt sizing.
 
@@ -524,7 +628,7 @@ Wil je componenten een specifieke afmeting (`size`) geven? Ook daar zijn basis-t
 - `basis.size.lg`
 - etcetera
 
-#### Afmeting van iconen
+#### Afmeting van iconen {#basis-size-icon}
 
 Voor het formaat van iconen is er een specifieke set aan basis-tokens beschikbaar:
 
@@ -543,7 +647,7 @@ De waarde is vastgelegd in `rem`. Hierdoor schaalt een icoon mee wanneer men beh
 
 :::
 
-#### Afmeting van interactieve componenten
+#### Afmeting van interactieve componenten {#basis-pointer-target}
 
 Interactieve elementen zoals knoppen en links hebben baat bij een minimale afmeting. Dit maakt ze beter bruikbaar, vooral voor mensen met motorische beperkingen of bij gebruik van touchscreens.
 
@@ -558,26 +662,26 @@ De minimale afmeting die WCAG voorschrijft is 24×24 CSS-pixels, maar als best p
 
 :::
 
-### Basis-tokens voor afgeronde hoeken
+### Basis-tokens voor afgeronde hoeken {#basis-border-radius}
 
-Voor afgeronde hoeken (`border-radius`) zijn de volgende basis-tokens beschikbaar:
+<BasisBorderRadiusIntro />
 
 - `basis.border-radius.sm`
 - `basis.border-radius.md`
 - `basis.border-radius.lg`
 - `basis.border-radius.round`
 
-### Basis-tokens voor kader- of lijndikte
+### Basis-tokens voor kader- of lijndikte {#basis-border-width}
 
-Voor kader- of lijndikte (`border-width`) zijn de volgende basis-tokens beschikbaar:
+<BasisBorderWidthIntro />
 
 - `basis.border-width.sm`
 - `basis.border-width.md`
 - `basis.border-width.lg`
 
-### Basis-tokens voor schaduw
+### Basis-tokens voor schaduw {#basis-box-shadow}
 
-Voor schaduw (`box-shadow`) zijn de volgende basis-tokens beschikbaar:
+<BasisBoxShadowIntro />
 
 - `basis.box-shadow.sm`
 - `basis.box-shadow.md`
