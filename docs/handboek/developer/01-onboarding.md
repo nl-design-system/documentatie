@@ -43,7 +43,7 @@ De onderstaande afbeelding geeft schematisch weer hoe een organisatie NL Design 
 
 ![Schematische uitleg hoe organisaties samen kunnen werken](/handboek/samenwerking-organisaties.png)
 
-Zoom hier in op Organisatie A. Zij hebben een webpagina gebouwd op basis van componenten uit meerdere stappen in het Estafettemodel (community, candidate en hall-of-fame).
+Zoom hier in op Organisatie A. Zij hebben een webpagina gebouwd op basis van componenten uit meerdere stappen in het estafettemodel (community, candidate en hall-of-fame).
 
 Op basis van het [Start-thema](/huisstijl/themas/start-thema) hebben zij Thema A gemaakt. Doordat zij hun designkeuzes hebben vastgelegd in Thema A, kan de huisstijl van Organisatie A worden toegepast op alle componenten die zij gebruiken, óók op de communitycomponent van Organisatie B.
 
@@ -54,13 +54,13 @@ Componenten zijn in de basis gebaseerd op HTML, CSS en JavaScript, maar kunnen d
 Componenten worden ontwikkeld in verschillende stappen aan de hand van het [estafettemodel](/handboek/estafettemodel).  
 Je kunt de componenten terugvinden op de [componentenpagina](/componenten).
 
-Tijdens elke stap van het estafettemodel kunnen componenten worden gebruikt. Je hoeft dus niet te wachten tot een component hall-of-fame is voordat je deze kunt gebruiken. Ook is het mogelijk om componenten [uit te breiden](/handboek/developer/component-uitbreiden).
+Tijdens elke stap van het estafettemodel kunnen componenten worden gebruikt. Je hoeft dus niet te wachten tot een component hall-of-fame status heeft bereikt, voordat je deze kunt gebruiken. Ook is het mogelijk om componenten [uit te breiden](/handboek/developer/component-uitbreiden).
 
-Bij het gebruiken van een communitycomponent is de naam van de organisatie in de component verwerkt.
+Bij het gebruiken van een community component is de naam van de organisatie in de component verwerkt.
 
 ### Updates doorvoeren
 
-Het is niet verplicht om een communitycomponent direct te updaten naar de nieuwste versie of deze te vervangen door een candidate- of hall-of-famecomponent. Belangrijke wijzigingen kunnen worden toegepast op alle versies waarin een component zich bevindt.
+Het is niet verplicht om een community component direct te updaten naar de nieuwste versie of deze te vervangen door een candidate component of hall-of-fame component. Belangrijke wijzigingen kunnen worden toegepast op alle versies waarin een component zich bevindt.
 
 Als ontwikkelaar houd je zelf de regie over wanneer je updates uitvoert en kun je de keuzes maken die het beste bij jouw project passen.
 
@@ -84,9 +84,9 @@ Wil je een nieuw thema introduceren? Ga dan verder op de pagina [thema maken](/h
 
 ## Zelf een pagina bouwen met NL Design System
 
-Als je zelf een pagina wilt bouwen met NL Design System, kun je experimenteren met de beschikbare [componenten](/componenten) in je favoriete webframework. Als een component niet is geïmplementeerd in het framework dat je gebruikt, kun je altijd de HTML- en CSS-implementatie gebruiken.
+Als je zelf een pagina wilt bouwen met NL Design System, kun je experimenteren met de beschikbare [componenten](/componenten) in je favoriete front-end framework. Als een component niet is geïmplementeerd in het framework dat je gebruikt, kun je altijd de HTML- en CSS-implementatie gebruiken.
 
-Als je snel iets wilt uitproberen zonder een specifiek framework te gebruiken, kun je het beste kijken naar [NL Design System gebruiken zonder front-end framework](/handboek/developer/zonder-front-end-framework).
+Als je snel iets wilt uitproberen zonder een specifiek front-endframework te gebruiken, kun je het beste kijken naar [NL Design System gebruiken zonder front-end framework](/handboek/developer/zonder-front-end-framework).
 
 ## GitHub
 
