@@ -15,15 +15,37 @@ keywords:
   - help wanted
 ---
 
+import CommunityComponentAanmeldenDoel from "./community-component-aanmelden/_doel.md";
+import ApiPrefixKiezenDoel from "./api-prefix-kiezen/_doel.md";
+import CommunityComponentNaamKiezen from "./component-naam-kiezen/_doel.md";
+import WhiteLabelDoel from "./white-label-component/_doel.md";
+import DesignTokensConventieDoel from "./design-tokens-conventie/_doel.md";
+import CodeLicentieDoel from "./code-licentie/_doel.md";
+import DocumentatieLicentieDoel from "./documentatie-licentie/_doel.md";
+import DesignsCommunityComponentDoel from "./designers-community/_doel.md";
+import DevelopersCommunityComponentDoel from "./developers-community-component/_doel.md";
+import DevelopersDocumentatieCommunityComponentDoel from "./developers-documentatie-community-component/_doel.md";
+import CommunityVisueleRegressieTestsDoel from "./community-visuele-regressie-tests/_doel.md";
+import AndereHuisstijlDoel from "./andere-huisstijl/_doel.md";
+import PublicRepoDoel from "./public-repo/_doel.md";
+import AvailableStatus from "./available-status/_doel.md";
+import ComponentVisueleRegressieTestsDoel from "./component-visuele-regressie-tests/_doel.md";
+
 {/* @license CC0-1.0 */}
 
 # Stappenplan: Community voor organisaties
 
-Als je als organisatie een component wilt bijdragen aan NL Design System kun je dit stappenplan volgen. Heb je nog geen eigen [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten)? Vraag dan aan het kernteam om er een aan te maken.
+Als je als organisatie een component wilt bijdragen aan NL Design System kun je dit stappenplan volgen.
 
 ## Voeg de component toe aan de componenten bord
 
-Doel: als organisatie wil je dit component graag beschikbaar maken voor hergebruik door andere teams. Door de status van de component en de bijbehorende documentatie beschikbaar te stellen, kunnen andere organisaties de component vinden op nldesignsystem.nl. Het kernteam kan de component dan de 'Community' status geven.
+### Doel
+
+<CommunityComponentAanmeldenDoel />
+
+### Acties
+
+Heb je nog geen eigen [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten)? Vraag dan aan het kernteam om er een aan te maken.
 
 1. Open het Communitybord via [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten).
 2. Klik op de + icoon links onderaan de pagina om een component toe te voegen.
@@ -36,7 +58,11 @@ Doel: als organisatie wil je dit component graag beschikbaar maken voor hergebru
 
 ## Prefix van de verantwoordelijke organisatie
 
-Doel: Om een component de status Community te geven is het belangrijk dat API's zoals design tokens de prefix van de verantwoordelijke organisatie hebben. Deze kolom is dus voor iedere component van de organisatie hetzelfde.
+### Doel
+
+<ApiPrefixKiezenDoel />
+
+### Acties
 
 Vul de prefix van de organisatie in, bijvoorbeeld `utrecht` of `ams`.
 
@@ -44,7 +70,11 @@ Vul de prefix van de organisatie in, bijvoorbeeld `utrecht` of `ams`.
 
 ## Naam van de component
 
-Doel: Bij implementaties van de component op nldesignsystem.nl/componenten willen we de naam van de component in de component bibliotheek laten zien zodat developers en designers hem makkelijk kunnen vinden.
+### Doel
+
+<CommunityComponentNaamKiezen />
+
+### Acties
 
 Vul de naam van het CSS component in, bijvoorbeeld `{prefix-organisatie}-{naam-component}`.
 
@@ -52,7 +82,11 @@ Vul de naam van het CSS component in, bijvoorbeeld `{prefix-organisatie}-{naam-c
 
 ## Implementatie heeft minimaal kleur en typografie beslissingen met design tokens geïmplementeerd
 
-Doel: Meerdere organisaties kunnen de component naar hun huisstijl omzetten.
+### Doel
+
+<WhiteLabelDoel />
+
+### Acties
 
 Door met [design tokens](/handboek/huisstijl/design-tokens/) te werken zorgen we ervoor dat meerdere organisaties de component van een eigen huisstijl kunnen voorzien. Minimaal zouden er design tokens beschikbaar moeten zijn om kleur en typografie beslissingen door te voeren.
 
@@ -66,7 +100,11 @@ Zorg ervoor dat de component gebruik maakt van de minimale design tokens.
 
 ## Gebruikte design tokens voldoen aan naamgeving conventie van NL Design System
 
-Doel: Een voorspelbare naamgeving van design tokens.
+### Doel
+
+<DesignTokensConventieDoel />
+
+### Acties
 
 Voor NL Design System zijn er afspraken gemaakt voor duidelijke en voorspelbare namen. De beschikbare design tokens van een component moeten voldoen aan [de naamgeving conventie van NL Design System](https://www.nldesignsystem.nl/handboek/huisstijl/design-tokens/#naamgeving). Zo is een component herbruikbaar voor alle verschillende thema's.
 
@@ -76,7 +114,11 @@ Zorg ervoor dat de design tokens voldoen aan de naamgevingsconventie.
 
 ## EUPL-1.2 licentie toegepast
 
-Doel: De component mag door andere organisaties gebruikt worden. Producten die ermee gemaakt worden hoeven niet per se open source te zijn.
+### Doel
+
+<CodeLicentieDoel />
+
+### Acties
 
 Binnen het NL Design System werken we voor componenten met de [Openbare Licentie van de Europese Unie (EUPL-1.2)](https://nldesignsystem.nl/open-source/eupl/).
 
@@ -91,7 +133,11 @@ Zorg ervoor dat de organisatie naar de EUPL-1.2 licentie verwijst op de ondersta
 
 ## Documentatie heeft de Creative Commons 0 licentie (CC0)
 
-Doel: De documentatie van een component mag door andere organisaties hergebruikt of gecombineerd worden zonder enige bronvermelding.
+### Doel
+
+<DocumentatieLicentieDoel />
+
+### Acties
 
 Binnen het NL Design System werken we voor de documentatie met de [Creative Commons 0 licentie (CC0)](https://nldesignsystem.nl/open-source/cc0).
 
@@ -103,7 +149,11 @@ Zorg ervoor dat de organisatie de CC0 licentie benoemt in het README.md bestand 
 
 ## Component te gebruiken door designers
 
-Doel: Designers van andere organisaties kunnen de component overnemen en gaan gebruiken. De URL wordt zichtbaar op nldesignsystem.nl bij de documentatie van de component.
+### Doel
+
+<DesignsCommunityComponentDoel />
+
+### Acties
 
 Kopieer de URL van de componentpagina door in Figma met de rechtermuisknop op de component in de sidebar te klikken en 'Copy link to page' te selecteren.
 
@@ -111,7 +161,11 @@ Kopieer de URL van de componentpagina door in Figma met de rechtermuisknop op de
 
 ## Component te installeren door developers
 
-Doel: Developers kunnen de component installeren. De URL wordt zichtbaar op nldesignsystem.nl bij de documentatie van de component.
+### Doel
+
+<DevelopersCommunityComponentDoel />
+
+### Acties
 
 Vul de https://www.npmjs.com URL van het css component in. Is er geen losse package voor de component en is deze onderdeel van een css bibliotheek? Vul dan de url van de bibliotheek in.
 
@@ -121,7 +175,11 @@ Vul de https://www.npmjs.com URL van het css component in. Is er geen losse pack
 
 ## Component documentatie beschikbaar voor developers
 
-Doel: Developers kunnen de component makkelijk gebruiken doordat variaties en code voorbeelden beschikbaar zijn.
+### Doel
+
+<DevelopersDocumentatieCommunityComponentDoel />
+
+### Acties
 
 Vul de storybook URL in van de default story in de CSS Storybook.
 
@@ -129,9 +187,25 @@ Is er alleen een React Storybook? Zorg dan dat een codevoorbeeld van CSS beschik
 
 **🚩 Checkpoint**: Storybook URL (CSS)
 
+## Component heeft visuele regressietests
+
+### Doel
+
+<ComponentVisueleRegressieTestsDoel />
+
+### Acties
+
+Als de component wordt ontwikkeld met de NL Design System infrastructuur op [github.com/nl-design-system](github.com/nl-design-system), dan heb je automatisch toegang tot visuele regressietest met Chromatic.
+
+Controleer dan dat "Storybook Publish" en "UI Tests" bij de Pull Request checks staan.
+
 ## Component beschikbaar voor visuele regressietests
 
-Doel: Organisaties die de component gebruiken kunnen zien of de huisstijl uit een eigen thema goed wordt toegepast. Nu, maar ook bij nieuwe versies van de component bibliotheek.
+### Doel
+
+<CommunityVisueleRegressieTestsDoel />
+
+### Acties
 
 1. Clone de http://github.com/nl-design-system/themes repository.
 2. Zorg dat je [pnpm](https://pnpm.io) hebt geinstalleerd.
@@ -140,6 +214,8 @@ Doel: Organisaties die de component gebruiken kunnen zien of de huisstijl uit ee
 5. Draai Storybook met: `pnpm run storybook`.
 
 ### Voeg de story toe aan de `Components` sectie in Storybook
+
+### Doel
 
 Doel: makkelijk maken voor developers om de component te vinden in de themes Storybook en eventueel te vergelijken met andere component implementaties.
 
@@ -205,7 +281,9 @@ export const OrganisatieNaamTheme: Story = {
 
 ### Voeg de component toe voor visuele regressietests van andere thema's
 
-Doel: makkelijk maken voor organisaties die de component hergebruiken om huisstijl keuzes te zien en automatisch op visuele regressies te testen bij nieuwe versies van de componenten bibliotheek.
+#### Doel
+
+<AndereHuisstijlDoel />
 
 #### Voeg organisatie toe aan de theme-toolkit
 
@@ -262,7 +340,11 @@ Zorg dat de component beschikbaar komt met een Pull Request op GitHub en vraag h
 
 ## GitHub URL
 
-Doel: Developers kunnen de code zien en suggesties doen voor verbeteringen. Dit helpt het samenwerken aan toegankelijke en gebruiksvriendelijke componenten die voor iedereen bruikbaar zijn.
+### Doel
+
+<PublicRepoDoel />
+
+### Acties
 
 - Ga in GitHub naar de CSS van de component toe en kopieer de URL.
 - Plak deze URL in het juiste veld.
@@ -271,7 +353,11 @@ Doel: Developers kunnen de code zien en suggesties doen voor verbeteringen. Dit 
 
 ## Status bijgewerkt naar Available
 
-Doel: alle teams kunnen nu zien dat de component beschikbaar is voor hergebruik door andere organsaties.
+### Doel
+
+<AvailableStatus />
+
+### Acties
 
 Zet checkpoint 'Status' op 'Available'.
 

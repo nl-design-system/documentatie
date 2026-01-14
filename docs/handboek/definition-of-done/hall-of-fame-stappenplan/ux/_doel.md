@@ -1,0 +1,1 @@
+Gebruikers zetten de component niet op een gebruiksonvriendelijke manier in, doordat veelvoorkomende fouten van te voren zijn bepaald en in de Ontwikkelfase kunnen worden gedocumenteerd met concrete do's en don'ts.
