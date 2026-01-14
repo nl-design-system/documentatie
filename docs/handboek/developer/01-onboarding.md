@@ -18,7 +18,7 @@ Leuk dat je er bent! Of je nu mee wilt bijdragen aan NL Design System of simpelw
 
 Op deze pagina leer je:
 
-- Dat NL Design System uit componenten en thema’s bestaat.
+- Wat NL Design System is en hoe organisaties samen componenten en thema’s ontwikkelen.
 - Hoe je componenten en thema’s kunt gebruiken en (door)ontwikkelen in je eigen project.
 
 ## Wat is NL Design System?
@@ -37,7 +37,7 @@ Het estafettemodel van NL Design System is een aanpak om samen de beste en meest
 
 ## Samenwerking tussen organisaties
 
-Op de [architectuur](/handboek/developer/architectuur)pagina staat beschreven wat de aanleiding is geweest om NL Design System in het leven te roepen en hoe het een oplossing biedt voor meerdere problemen die ontstaan bij het samenwerken van organisaties.
+Op de [architectuurpagina](/handboek/developer/architectuur) staat beschreven wat de aanleiding is geweest om NL Design System in het leven te roepen en hoe het een oplossing biedt voor meerdere problemen die ontstaan bij het samenwerken van organisaties.
 
 De onderstaande afbeelding geeft schematisch weer hoe een organisatie NL Design System kan gebruiken voor het bouwen van webpagina’s en tegelijkertijd kan samenwerken met andere organisaties.
 
@@ -45,18 +45,20 @@ De onderstaande afbeelding geeft schematisch weer hoe een organisatie NL Design 
 
 Zoom hier in op Organisatie A. Zij hebben een webpagina gebouwd op basis van componenten uit meerdere stappen in het estafettemodel (community, candidate en hall-of-fame).
 
-Op basis van het [Start-thema](/huisstijl/themas/start-thema) hebben zij Thema A gemaakt. Doordat zij hun designkeuzes hebben vastgelegd in Thema A, kan de huisstijl van Organisatie A worden toegepast op alle componenten die zij gebruiken, óók op de communitycomponent van Organisatie B.
+Op basis van het [Start-thema](/huisstijl/themas/start-thema) hebben zij Thema A gemaakt. Doordat zij hun designkeuzes hebben vastgelegd in Thema A, kan de huisstijl van Organisatie A worden toegepast op alle componenten die zij gebruiken, óók op de community component van Organisatie B.
 
 ## Componenten
 
-Componenten zijn in de basis gebaseerd op HTML, CSS en JavaScript, maar kunnen daarnaast ook worden gebouwd met populaire front-end frameworks en door middel van web components.
+Componenten zijn in de basis gebaseerd op HTML, CSS en JavaScript, maar kunnen daarnaast ook worden gebouwd met populaire front-end frameworks en met web components.
 
 Componenten worden ontwikkeld in verschillende stappen aan de hand van het [estafettemodel](/handboek/estafettemodel).  
 Je kunt de componenten terugvinden op de [componentenpagina](/componenten).
 
-Tijdens elke stap van het estafettemodel kunnen componenten worden gebruikt. Je hoeft dus niet te wachten tot een component hall-of-fame status heeft bereikt, voordat je deze kunt gebruiken. Ook is het mogelijk om componenten [uit te breiden](/handboek/developer/component-uitbreiden).
+Tijdens elke stap van het estafettemodel zijn componenten bruikbaar. Je hoeft dus niet te wachten tot een component hall-of-fame status heeft bereikt, voordat je deze kunt gebruiken. Ook is het mogelijk om componenten [uit te breiden](/handboek/developer/component-uitbreiden).
 
-Bij het gebruiken van een community component is de naam van de organisatie in de component verwerkt.
+:::info
+Bij community componenten is de naam van de organisatie in de component verwerkt.
+:::
 
 ### Updates doorvoeren
 
@@ -78,7 +80,9 @@ Een thema zorgt ervoor dat dezelfde componenten op een pagina er voor jouw organ
 
 ### Design tokens
 
-- [Design-tokenconventie](/handboek/developer/design-token-conventie/)
+Design keuzes worden vastgelegd in design tokens. Voor developers is het belangrijk om de design tokens te begrijpen en om conventies aan te houden.
+
+- [Design token conventie](/handboek/developer/design-token-conventie/)
 
 Wil je een nieuw thema introduceren? Ga dan verder op de pagina [thema maken](/handboek/developer/thema-maken).
 
