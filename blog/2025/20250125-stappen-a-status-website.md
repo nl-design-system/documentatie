@@ -248,3 +248,5 @@ Laat regelmatig, bijvoorbeeld één keer per jaar, een controle uitvoeren door e
 Iedereen van het team is verantwoordelijk voor de kwaliteit van het project. Voor de snelheid, veiligheid, leesbaarheid, gebruiksvriendelijkheid en ook voor de toegankelijkheid.
 
 We maken een website niet voor onszelf maar voor de gebruiker. Als iedereen goed met je website overweg kan, dan pas is je doel bereikt.
+
+
