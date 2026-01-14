@@ -1,0 +1,1 @@
+De Hall of Fame component kan werken volgens AVG richtlijnen. Er is voldoende documentatie zodat gebruikers van de component zich bewust zijn van privacy-risico's en weten hoe ze deze kunnen voorkomen.
