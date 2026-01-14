@@ -19,7 +19,7 @@ Leuk dat je er bent! Of je nu mee wilt bijdragen aan NL Design System of simpelw
 Op deze pagina leer je:
 
 - Dat NL Design System uit componenten en thema’s bestaat.
-- Hoe je componenten en thema’s kan gebruiken en (door)ontwikkelen.
+- Hoe je componenten en thema’s kunt gebruiken en (door)ontwikkelen in je eigen project.
 
 ## Wat is NL Design System?
 
@@ -50,14 +50,17 @@ Doordat ze hun design keuzes vastgelegd hebben in Thema A kan de huisstijl van O
 
 ## Componenten
 
-Componenten worden ontwikkeld in verschillende stappen aan de hand van het [estafettemodel](/handboek/estafettemodel).
-
-Tijdens elke stap van het estafettemodel kunnen componenten gebruikt worden. Je hoeft dus niet te wachten tot een component hall-of-fame is voordat je het kan gebruiken. Ook is het mogelijk om componenten [uit te breiden](/handboek/developer/component-uitbreiden).
-Bij het gebruiken van een community component is het wel het geval dat de naam van de organisatie in de component verwerkt is.
-
 De componenten zijn in de basis gebaseerd op HTML, CSS en Javascript, maar kunnen daarnaast ook gebouwd worden met populaire front-end frameworks en door middel van web components.
 
+Componenten worden ontwikkeld in verschillende stappen aan de hand van het [estafettemodel](/handboek/estafettemodel).
 Je kunt de componenten terugvinden op de [componenten pagina](/componenten)
+
+Tijdens elke stap van het estafettemodel kunnen componenten gebruikt worden. Je hoeft dus niet te wachten tot een component hall-of-fame is voordat je het kan gebruiken. Ook is het mogelijk om componenten [uit te breiden](/handboek/developer/component-uitbreiden).
+Bij het gebruiken van een community component is de naam van de organisatie in de component verwerkt.
+
+### Updates doorvoeren
+
+Het is niet verplicht om van een community component gelijk te updaten naar de nieuwste versie, of deze te vervangen door een candidate of hall-of-fame component. Belangrijke wijzigingen kunnen nog toegepast worden op alle versies waarin een component zich bevindt. Als ontwikkelaar blijf je de regie houden over wanneer je updates uitvoert en kun je de keuzes maken die het beste bij jouw project passen.
 
 Als je overweegt om een component te gebruiken voor jouw project kun je refereren naar [componenten kiezen](/handboek/componenten-kiezen)
 
@@ -67,12 +70,13 @@ Uiteraard is het mogelijk om zelf [een component te maken](/handboek/developer/c
 
 Componenten worden gevoed door de design tokens die in een thema gedefinieerd worden. Je kan een thema zien als de huisstijl van de organisatie waar je voor werkt. Dit wordt goed geïllustreerd op de [zelf een thema maken](/handboek/designer/zelf-thema-maken) pagina voor designers met de volgende afbeelding:
 ![Drie dezelfde interfaces. Eén zonder stijling. Twee met een eigen huisstijl](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_no-style-and-style.png)
+Een thema zorgt ervoor dat dezelfde componenten op een pagina er voor jouw organisatie herkenbaar uit gaan zien.
 
 ### Design tokens
 
 - [design token conventie](/handboek/developer/design-token-conventie/)
 
-Wil je een nieuw thema introduceren? Ga dan verder op de pagina [thema maken](/handboek/developer/thema-maken)
+Wil je een nieuw thema introduceren? Ga dan verder op de pagina [thema maken](/handboek/developer/thema-maken).
 
 ## Zelf een pagina bouwen met NL Design System
 
@@ -82,9 +86,11 @@ Als je snel iets wilt uitproberen zonder een specifiek framework te gebruiken ku
 
 ## Github
 
-Toegang tot Github is nodig om te werken aan bestaande repositories binnen `nl-design-system`. Neem hiervoor contact op met het kernteam. Het is mogelijk om jezelf alvast toe te voegen door een pullrequest aan te maken op basis van de [instructies](https://github.com/nl-design-system/terraform/blob/main/docs/adding-users.md).
+Toegang tot Github is nodig om te werken aan bestaande repositories binnen `nl-design-system`. Neem hiervoor contact op met het kernteam. Het is mogelijk om alvast een pull-request aan te maken op basis van de [instructies](https://github.com/nl-design-system/terraform/blob/main/docs/adding-users.md). Deze moet daarna goedgekeurd worden.
 
-[Github](/github)
+[hoe en waarom NL Design System Github gebruikt](/github)
+
+Voor kleinere bijdragen, zoals documentatie of kleine verbeteringen, is het meestal voldoende om direct een pull request te openen d.m.v. een fork.
 
 ## Contactmogelijkheden
 
