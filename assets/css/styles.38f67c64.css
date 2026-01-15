@@ -2773,6 +2773,7 @@ aside button[title="Zijbalk inklappen"] {
  padding-inline-start: var(--utrecht-card-padding-inline-start);
 }
 .card__content,
+.homepage-section .utrecht-heading-3:first-of-type,
 .homepage-spotlight-section--heartbeat,
 .task-list {
  --utrecht-heading-3-margin-block-start: 0;
@@ -11708,6 +11709,7 @@ p + .nlds-guideline {
  --utrecht-heading-2-margin-block-start: 20px;
 }
 .homepage-spotlight-section--heartbeat {
+ --utrecht-heading-4-margin-block-start: 0;
  --utrecht-spotlight-section-margin-block-end: 20px;
 }
 .homepage-spotlight-section--footer {
