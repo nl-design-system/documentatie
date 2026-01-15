@@ -1,3 +1,7 @@
+.homepage-section .utrecht-heading-3:first-of-type {
+  --utrecht-heading-3-margin-block-start: 0;
+}
+
 .homepage-spotlight-section {
   --utrecht-spotlight-section-border-width: 0;
   --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-bg-subtle);
@@ -9,10 +13,11 @@
 }
 
 .homepage-spotlight-section--heartbeat {
-  --utrecht-spotlight-section-margin-block-end: 20px;
-  --utrecht-spotlight-section-margin-block-start: 40px;
   --utrecht-heading-2-margin-block-start: 20px;
   --utrecht-heading-3-margin-block-start: 0;
+  --utrecht-heading-4-margin-block-start: 0;
+  --utrecht-spotlight-section-margin-block-end: 20px;
+  --utrecht-spotlight-section-margin-block-start: 40px;
 }
 
 .homepage-spotlight-section--footer {
