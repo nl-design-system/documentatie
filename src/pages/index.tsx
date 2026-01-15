@@ -1,18 +1,13 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
-import {
-  ButtonGroup as ActionGroup,
-  Heading2,
-  Image,
-  Paragraph,
-} from '@utrecht/component-library-react/dist/css-module';
+import { ButtonGroup as ActionGroup, Image, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import { Card as TempCard, CardGroup, CardIllustration } from '../components/CardGroup';
 import { Card } from '@utrecht/card-react/css';
 import { Link } from '../components/Link';
 import {
   ButtonLink,
-  Heading1,
+  Heading,
   Icon,
   SpotlightSection,
   Strong,
@@ -33,6 +28,7 @@ import {
 import { HeartbeatEpisode } from '../components/HeartbeatEpisode';
 import './index.css';
 import Head from '@docusaurus/Head';
+import { VideoPlayer } from '@site/src/components/VideoPlayer';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -50,13 +46,13 @@ export default function Home() {
         <main>
           <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--hero">
             <div className="container">
-              <Heading1>Samen bouwen aan betere digitale dienstverlening</Heading1>
+              <Heading level={1}>Samen bouwen aan betere digitale dienstverlening</Heading>
               <Paragraph appearance="lead">
                 NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te
                 ontdekken welke componenten écht werken in de praktijk. Zo werken we toe naar een Hall of Fame van
                 gebruiksvriendelijke, toegankelijke componenten, patronen en templates.
               </Paragraph>
-              <Heading2>Waarom meedoen?</Heading2>
+              <Heading level={2}>Waarom meedoen?</Heading>
               <UnorderedList>
                 <UnorderedListItem>
                   <Strong>Actieve community</Strong> die regelmatig kennis, ervaring en componenten deelt
@@ -81,34 +77,41 @@ export default function Home() {
               </ActionGroup>
             </div>
           </SpotlightSection>
-          <div className="container">
-            <Heading2>Waar begin je?</Heading2>
+          <div className="container homepage-section">
+            <Heading level={2}>Waar begin je?</Heading>
+            <Heading level={3}>Bekijk de onboarding sessie</Heading>
+            <VideoPlayer id="Yh4NqpphJQ4" title="Onboarding sessie voor NL Design System" />
+            <Paragraph>
+              In de onboarding sessie legt het kernteam uit op welke manieren je mee kan doen met NL Design System, hoe
+              je een huisstijl vast kan leggen als thema en hoe je de componenten kunt gebruiken in code.
+            </Paragraph>
+            <Heading level={3}>Lees de documentatie</Heading>
             <div className="homepage-card-group">
               <Card
                 body="Meedoen met code? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Storybook en design tokens."
                 heading="Als je websites bouwt"
-                headingLevel={3}
+                headingLevel={4}
                 href="/handboek/developer/overzicht"
                 image={<DeveloperSVG />}
               ></Card>
               <Card
                 body="Meedoen met Figma? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
                 heading="Als je designs maakt"
-                headingLevel={3}
+                headingLevel={4}
                 href="/handboek/designer/overzicht"
                 image={<DesignerSVG />}
               ></Card>
               <Card
                 body="Meedoen als contentmaker? Gebruik vandaag nog onze content richtlijnen bij het maken van toegankelijke webcontent."
                 heading="Als je content beheert"
-                headingLevel={3}
+                headingLevel={4}
                 href="/richtlijnen/content"
                 image={<ContentSVG />}
               ></Card>
               <Card
                 body="Meedoen als manager? Herbruikbare oplossingen die tijd en budget besparen, met business cases en implementatiestrategieën"
                 heading="Als je projecten leidt"
-                headingLevel={3}
+                headingLevel={4}
                 href="/handboek/manager/introductie"
                 image={<ManagerSVG />}
               ></Card>
@@ -116,7 +119,7 @@ export default function Home() {
           </div>
           <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--heartbeat">
             <div className="container">
-              <Heading2>Bekijk de laatste updates</Heading2>
+              <Heading level={2}>Bekijk de laatste updates</Heading>
               <HeartbeatEpisode headingLevel={3} />
 
               <ActionGroup>
@@ -135,9 +138,8 @@ export default function Home() {
               </ActionGroup>
             </div>
           </SpotlightSection>
-
-          <div className="container">
-            <Heading2>Gebruik NL Design System</Heading2>
+          <div className="container homepage-section">
+            <Heading level={2}>Gebruik NL Design System</Heading>
             <div className="homepage-card-group">
               <Card
                 body="Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen."
@@ -173,9 +175,8 @@ export default function Home() {
               ></Card>
             </div>
           </div>
-
-          <div className="container">
-            <Heading2>Wie doen er al mee?</Heading2>
+          <div className="container homepage-section">
+            <Heading level={2}>Wie doen er al mee?</Heading>
             <CardGroup appearance="small">
               <TempCard appearance="small" href="https://github.com/nl-design-system/utrecht">
                 <CardIllustration>
@@ -250,7 +251,7 @@ export default function Home() {
           </div>
           <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--footer">
             <div className="container">
-              <Heading2>Blijf op de hoogte</Heading2>
+              <Heading level={2}>Blijf op de hoogte</Heading>
               <div className="homepage-card-group">
                 <Card
                   body="Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System worden besproken."
