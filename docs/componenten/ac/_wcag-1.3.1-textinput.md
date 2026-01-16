@@ -21,4 +21,4 @@ NL Design System richtlijnen:
 
 - [Toegankelijke naam label](/richtlijnen/formulieren/labels/toegankelijke-naam/)
 - [Toegankelijke formulieren](/richtlijnen/formulieren/)
-- [Plaatsing en koppeling van foutmeldingen](/richtlijnen/formulieren/foutmeldingen/plaatsing/)
+- [Toegankelijke foutmeldingen](/richtlijnen/formulieren/foutmeldingen/)
