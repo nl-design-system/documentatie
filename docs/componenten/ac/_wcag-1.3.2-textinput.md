@@ -4,7 +4,7 @@ Zorg ervoor dat instructies die nodig zijn om te begrijpen wat er van de bezoeke
 
 De meest gebruiksvriendelijke plek voor instructies is tussen het label en het invoerveld. Als instructies ónder het veld staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.
 
-Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna instructies tússen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Het is daarom het meest gebruiksvriendelijk om instructies ook programmatisch aan het formulierveld te koppelen met `aria-describedby`. Op die manier wordt de beschrijving voorgelezen wanneer de toetsenbordfocus op het formulierveld staat.
+Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna instructies tússen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Het is daarom het meest gebruiksvriendelijk om instructies ook aan het formulierveld te koppelen met `aria-describedby`. Op die manier wordt de beschrijving voorgelezen wanneer de toetsenbordfocus op het formulierveld staat.
 
 Voorbeeld:
 
