@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor dat de Text input een toegankelijke naam en een kloppende rol heeft.
+Zorg ervoor dat de Text Input een toegankelijke naam en een kloppende rol heeft.
 
 Dit doe je door het juiste type aan te geven met het `type`-attribuut.
 

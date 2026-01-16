@@ -1,17 +1,17 @@
 <!-- @license CC0-1.0 -->
 
-Als de Text input een tekstueel label heeft, maak dan gebruik van een `label`-element en koppel het met de attributen `for` en `id` aan de Text input.
+Als de Text Input een tekstueel label heeft, maak dan gebruik van een `label`-element en koppel het met de attributen `for` en `id` aan de Text Input.
 
 ```html
 <label for="voorbeeld">
-  Ik ben een Text input
+  Ik ben een Text Input
   <input type="text" id="voorbeeld" />
 </label>
 ```
 
-Op die manier is het label expliciet gekoppeld met de Text input, ook als het invoerveld niet binnen een `label`-element genest is.
+Op die manier is het label expliciet gekoppeld met de Text Input, ook als het invoerveld niet binnen een `label`-element genest is.
 
-Koppel instructies daarnaast bij voorkeur ook aan de Text input met het `aria-describedby` attribuut:
+Koppel instructies daarnaast bij voorkeur ook aan de Text Input met het `aria-describedby` attribuut:
 
 ```html
 <label for="name">Naam</label>
