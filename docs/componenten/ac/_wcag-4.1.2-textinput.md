@@ -7,7 +7,7 @@ Zorg dat de Text Input een kloppende rol heeft, door het HTML-element `input` te
 - De types `text`, `email`, `tel` en `url` geven de rol `textbox`.
 - Het type `search` geeft de rol `searchbox`.
 
-Daarnaast moeten eigenschappen (zoals `required`) en de ingevulde waarde beschikbaar zijn voor hulpsoftware.
+Daarnaast moeten de staat en eigenschappen waar bezoekers zelf invloed op hebben (zoals in- of uitgeklapt, of `checked`) en de ingevulde waarde beschikbaar zijn voor hulpsoftware.
 
 NL Design System richtlijnen:
 
