@@ -7,7 +7,7 @@ Voorbeeld:
 ```html
 <label for="name">Naam</label>
 <p id="description-name">Vul je voornaam en achternaam in.</p>
-<input id="name" aria-describedby="description-name" autocomplete="name" />
+<input id="name" aria-describedby="description-name" autocomplete="name" type="text" />
 ```
 
 In de HTML specificatie vind je een [lijst van mogelijke autocomplete-waarden](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute.)
