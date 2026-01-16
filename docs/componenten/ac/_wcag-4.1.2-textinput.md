@@ -2,9 +2,7 @@
 
 Zorg ervoor dat de Text Input een toegankelijke naam en een kloppende rol heeft.
 
-Dit doe je door het juiste type aan te geven met het `type`-attribuut.
-
-Bijvoorbeeld:
+Zorg dat de Text Input een kloppende rol heeft, door het HTML-element `input` te gebruiken met het relevante `type` attribuut. Dit zijn de opties:
 
 - De types `text`, `email`, `tel` en `url` geven de rol `textbox`.
 - Het type `search` geeft de rol `searchbox`.
