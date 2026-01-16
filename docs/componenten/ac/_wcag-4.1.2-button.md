@@ -22,7 +22,7 @@ Zorg er daarnaast voor dat het `type`-attribuut kloppend is bij de rol van de kn
 
 Vermijd het gebruik van `aria-busy` op interactieve elementen zoals knoppen, bijvoorbeeld om aan te geven dat een formulier bezig is met verzenden. Dit attribuut geeft aan hulpsoftware aan dat veranderingen, zoals in een live-region of tijdens het laden van een pagina, niet moeten worden voorgelezen totdat de waarde weer op `false` staat. Hierdoor worden updates voorgelezen als het proces voltooid is, zodat er geen onvolledige informatie wordt gegeven. Je gebruikt het `aria-busy` attribuut dan ook op de container waarin de updates worden getoond, niet op de knop om de actie mee uit voeren.
 
-Gebruik in plaats daarvan `aria-disabled` met `tabindex="0"` op de knop en pas de visuele en toegankelijke naam aan, bijvoorbeeld naar 'Aan het verzenden'. Gebruik vervolgens een live-region om statusupdates over het succes of falen van het verzenden van het formulier aan te geven.
+Gebruik in plaats daarvan `aria-disabled` met `tabindex="0"` op de knop en pas de visuele en toegankelijke naam aan, bijvoorbeeld naar 'Bezig met verzenden'. Gebruik vervolgens een live-region om statusupdates over het succes of falen van het verzenden van het formulier aan te geven.
 
 NL Design System richtlijnen:
 
