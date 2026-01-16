@@ -17,8 +17,11 @@ Koppel instructies en foutmeldingen ook aan de Text Input met het `aria-describe
 <input id="name" aria-describedby="description-name error" autocomplete="name" />
 ```
 
+Geef zowel in tekst als in code aan of een veld verplicht ingevuld moet worden. In code doe je dit doe je met het `required` attribuut of met het `aria-required` attribuut.
+
 NL Design System richtlijnen:
 
 - [Toegankelijke naam label](/richtlijnen/formulieren/labels/toegankelijke-naam/)
 - [Toegankelijke formulieren](/richtlijnen/formulieren/)
 - [Toegankelijke foutmeldingen](/richtlijnen/formulieren/foutmeldingen/)
+- [Toegankelijke verplichte velden](/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/)
