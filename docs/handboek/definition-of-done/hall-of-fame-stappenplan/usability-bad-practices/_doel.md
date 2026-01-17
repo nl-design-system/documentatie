@@ -1,0 +1,1 @@
+De Hall of Fame component helpt veelgemaakte UX-fouten te voorkomen, zodat de component niet onbedoeld zorgt voor een slechte gebruikerservaring. Gebruikers kunnen zelf gebruiksvriendelijkheidsproblemen voorkomen en hoeven niet zelf door gebruikersfeedback te ontdekken wat wel en niet werkt.

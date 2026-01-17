@@ -1,0 +1,1 @@
+De Hall of Fame component heeft voldoende documentatie en hulpmiddelen zodat redacteuren en contentmakers de component goed en toegankelijk kunnen inzetten, zonder daar diepgaande technische kennis voor nodig te hebben.
