@@ -2,6 +2,7 @@ import { expect, test } from '@playwright/test';
 import * as cheerio from 'cheerio';
 import * as fs from 'fs';
 import AxeBuilder from '@axe-core/playwright';
+import { writeFile } from 'fs/promises';
 
 // Constants
 const siteUrl = 'http://localhost:3000';
@@ -28,8 +29,10 @@ const waitForDocusaurusHydration = () => {
   return document.documentElement.dataset.hasHydrated === 'true';
 };
 
+const allErrors = [];
+
 const screenshotPathname = (pathname: string) => {
-  test(`pathname ${pathname}`, async ({ page }) => {
+  test(`${pathname}`, async ({ page }) => {
     const url = siteUrl + pathname;
     await page.goto(url);
     await page.waitForFunction(waitForDocusaurusHydration);
@@ -38,13 +41,24 @@ const screenshotPathname = (pathname: string) => {
 
     test.skip(noVisualRegressionTest, 'Skipped because of <meta name="axe" content="false">');
 
-    const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
+    const accessibilityScanResults = await new AxeBuilder({ page })
+      .options({ resultTypes: ['violations'] })
+      .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+      .analyze();
+
+    allErrors.push(accessibilityScanResults);
 
     expect(accessibilityScanResults.violations).toEqual([]);
   });
 };
 
-test.describe('Docusaurus site screenshots', () => {
+test.afterAll(async () => {
+  const resultJSON = './tmp/axe.json';
+  console.log(`Write ${resultJSON}`);
+  await writeFile(resultJSON, JSON.stringify(allErrors, null, 2));
+});
+
+test.describe('AxE: ', () => {
   const pathnames = extractSitemapPathnames(sitemapPath);
   pathnames.forEach(screenshotPathname);
 });
