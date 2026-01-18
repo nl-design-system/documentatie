@@ -322,7 +322,7 @@ p {
 /* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
 .DocSearch {
   --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
-  --docsearch-muted-color: var(--utrecht-button-secondary-action-color);
+  --docsearch-muted-color: var(--utrecht-button-secondary-action-hover-color);
   --docsearch-logo-color: var(--utrecht-button-secondary-action-color);
   --docsearch-icon-color: var(--utrecht-button-secondary-action-color);
   --docsearch-highlight-color: var(--utrecht-button-secondary-action-color);
@@ -404,6 +404,7 @@ p {
 }
 
 .DocSearch-Button-Placeholder {
+  color: var(--utrecht-button-secondary-action-hover-color) !important;
   font-family: var(--ma-docsearch-button-font-family);
   font-weight: 700;
 }
