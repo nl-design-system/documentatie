@@ -87,6 +87,10 @@ jobs:
       - name: "Continuous Integration: end-to-end tests"
         run: pnpm run --if-present test-e2e
 
+      - name: "Continuous Integration: axe"
+        if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'ci/a11y')) }}
+        run: pnpm run --if-present test-visual
+
       - name: "Continuous Integration: make screenshots"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
         run: pnpm run --if-present test-visual
