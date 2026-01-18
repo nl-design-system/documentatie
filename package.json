@@ -58,6 +58,7 @@
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
     "update-major": "npm-check-updates --configFileName .ncurc.major.cjs",
     "install-test-browsers": "playwright install",
+    "test-a11y": "playwright test test/a11y/",
     "test-e2e": "playwright test test/e2e/",
     "test-visual": "playwright test test/visual/",
     "publish:argos": "argos upload ./tmp/screenshots",
@@ -113,6 +114,7 @@
   "devDependencies": {
     "@argos-ci/cli": "2.5.10",
     "@argos-ci/playwright": "4.3.0",
+    "@axe-core/playwright": "4.11.0",
     "@changesets/cli": "2.29.8",
     "@docsearch/react": "3.9.0",
     "@docusaurus/module-type-aliases": "3.9.2",
