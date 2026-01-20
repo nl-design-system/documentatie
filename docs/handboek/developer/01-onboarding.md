@@ -90,7 +90,7 @@ Wil je een nieuw thema introduceren? Ga dan verder op de pagina [thema maken](/h
 
 Als je zelf een pagina wilt bouwen met NL Design System, kun je experimenteren met de beschikbare [componenten](/componenten) in je favoriete front-end framework. Als een component niet is geïmplementeerd in het framework dat je gebruikt, kun je altijd de HTML- en CSS-implementatie gebruiken.
 
-Als je snel iets wilt uitproberen zonder een specifiek front-endframework te gebruiken, kun je het beste kijken naar [NL Design System gebruiken zonder front-end framework](/handboek/developer/zonder-front-end-framework).
+Als je snel iets wilt uitproberen zonder een specifiek front-end framework te gebruiken, kun je het beste kijken naar [NL Design System gebruiken zonder front-end framework](/handboek/developer/zonder-front-end-framework).
 
 ## GitHub
 
