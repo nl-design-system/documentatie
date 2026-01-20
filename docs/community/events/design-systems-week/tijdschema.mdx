@@ -1,72 +1,31 @@
 ---
-title: Tijdschema · Design Systems Week 2025
-description: Tijdschema per dag voor de Design Systems Week 2025
+title: Tijdschema · Design Systems Week 2026
+description: Tijdschema per dag voor de Design Systems Week 2026
 hide_table_of_contents: true
 sidebar_label: Tijdschema
 pagination_label: Tijdschema
 sidebar_position: 3
-slug: /events/design-systems-week-2025/tijdschema/
-image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png
+slug: /events/design-systems-week-2026/tijdschema/
 ---
 
 import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
 import { IconChevronRight } from "@tabler/icons-react";
-import sessions from "./\_2025/sessions.json";
-import speakers from "./\_2025/speakers.json";
 import { SessionTable } from "@site/src/components/SessionTable";
 
-# Tijdschema Design Systems Week 2025
+# Tijdschema Design Systems Week 2026
 
 <Paragraph lead>
-  NL Design System organiseert in 2025 voor de 5e keer de Design Systems Week. Van **27 tot en met 30 oktober** zijn er
+  NL Design System organiseert in 2026 voor de 6e keer de Design Systems Week. Van **26 tot en met 29 oktober** zijn er
   dagelijks meerdere korte sessies van diverse organisaties online te volgen over het **hoe en waarom van design
   systems**.
 </Paragraph>
 
 <ActionGroup>
-  <ButtonLink href="/events/design-systems-week-2025/programma" appearance="primary-action-button">
-    {"Bekijk het programma"}
-    <IconChevronRight />
-  </ButtonLink>
-  <ButtonLink href="https://miro.com/app/board/uXjVLTpHyN8=/" appearance="secondary-action-button">
-    {"Gebruik Miro"}
+  <ButtonLink href="/events/design-systems-week" appearance="primary-action-button">
+    {"Over design systems week"}
     <IconChevronRight />
   </ButtonLink>
 </ActionGroup>
-
-## Maandag 27 oktober
-
-<SessionTable
-  lang="nl-NL"
-  speakers={speakers}
-  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-27"))}
-/>
-
-## Dinsdag 28 oktober
-
-<SessionTable
-  lang="nl-NL"
-  speakers={speakers}
-  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-28"))}
-/>
-
-## Woensdag 29 oktober
-
-<SessionTable
-  lang="nl-NL"
-  speakers={speakers}
-  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-29"))}
-/>
-
-## Donderdag 30 oktober
-
-<SessionTable
-  lang="nl-NL"
-  speakers={speakers}
-  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith("2025-10-30"))}
-/>
-
-<hr></hr>
 
 ## Organisatie
 
