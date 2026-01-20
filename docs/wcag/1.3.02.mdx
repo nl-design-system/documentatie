@@ -100,6 +100,9 @@ Dit kan gebeuren bij svg-elementen die tekst bevatten. Dan worden bijvoorbeeld e
 ### Fout: content die verschijnt door interactie met een webpagina moet op het juiste moment en in een logische volgorde worden voorgelezen. 
 Bijvoorbeeld: een bezoeker opent een sectie waarin  gerelateerde content kan worden getoond en verborgen, de zogenoemde 'accordion'. De nieuwe content moet als eerste worden voorgelezen. Dit kan ook misgaan bij tabs. Als een dialoogvenster wordt geopend, moet de schermlezer de inhoud van bovenaf lezen. Dit punt lijkt sterk op succescriterium 2.4.3 Focusvolgorde. Het verschil is dat focusvolgorde gaat over interactieve elementen en leesvolgorde niet.
 
+### Fout: na het sluiten van een dialoogvenster keert een schermlezer niet terug naar het element dat het venster opende, maar leest de inhoud verder vanaf een onlogische plek. 
+Er kan een verschil zijn tussen de toetsenbordfocus (SC 2.4.3) en de volgorde waarin een schermlezer de inhoud van een pagina leest (SC 1.3.2). Daarom moet alle content die dynamisch verschijnt worden getest met een schermlezer. 
+
 ## W3C referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.2 Meaningful Sequence</span>](https://www.w3.org/TR/WCAG22/#meaningful-sequence).
