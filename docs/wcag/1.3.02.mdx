@@ -97,6 +97,9 @@ Een schermlezer leest dan: 'vorige', 'volgende', inhoud van slide 1, inhoud van 
 ### Fout: de leesvolgorde in diagrammen en grafieken kan onlogisch zijn. 
 Dit kan gebeuren bij svg-elementen die tekst bevatten. Dan worden bijvoorbeeld eerst de waarden van de X-as en daarna de waarden van de Y-as als losse getallen voorgelezen. De uitleg van wat deze assen betekenen kan dan op een verkeerd moment komen. Ook canvas- en object-elementen kunnen met een verkeerde leesvolgorde worden voorgelezen.
 
+### Fout: content die verschijnt door interactie met een webpagina moet op het juiste moment en in een logische volgorde worden voorgelezen. 
+Bijvoorbeeld: een bezoeker opent een sectie waarin  gerelateerde content kan worden getoond en verborgen, de zogenoemde 'accordion'. De nieuwe content moet als eerste worden voorgelezen. Dit kan ook misgaan bij tabs. Als een dialoogvenster wordt geopend, moet de schermlezer de inhoud van bovenaf lezen. Dit punt lijkt sterk op succescriterium 2.4.3 Focusvolgorde. Het verschil is dat focusvolgorde gaat over interactieve elementen en leesvolgorde niet.
+
 ## W3C referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.2 Meaningful Sequence</span>](https://www.w3.org/TR/WCAG22/#meaningful-sequence).
