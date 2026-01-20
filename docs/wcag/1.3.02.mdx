@@ -94,6 +94,9 @@ Stel dat een tabel op een pagina de openingstijden toont. In de eerste kolom sta
 ### Fout: de leesvolgorde in een carrousel met bladerknoppen is niet logisch, omdat de knoppen boven de slides staan. 
 Een schermlezer leest dan: 'vorige', 'volgende', inhoud van slide 1, inhoud van slide 2. Een logische leesvolgorde is: eerst de inhoud van de slides en daarna de knoppen. Dan is pas duidelijk of verder bladeren gewenst is.
 
+### Fout: de leesvolgorde in diagrammen en grafieken kan onlogisch zijn. 
+Dit kan gebeuren bij svg-elementen die tekst bevatten. Dan worden bijvoorbeeld eerst de waarden van de X-as en daarna de waarden van de Y-as als losse getallen voorgelezen. De uitleg van wat deze assen betekenen kan dan op een verkeerd moment komen. Ook canvas- en object-elementen kunnen met een verkeerde leesvolgorde worden voorgelezen.
+
 ## W3C referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.2 Meaningful Sequence</span>](https://www.w3.org/TR/WCAG22/#meaningful-sequence).
