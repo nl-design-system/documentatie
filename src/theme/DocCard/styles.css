@@ -38,3 +38,24 @@
   inset-inline-start: 0;
   position: absolute;
 }
+
+li.check::before,
+li.almost-check::before {
+  float: inline-start;
+  padding-inline-end: 0.33em;
+}
+
+li.check::before {
+  content: "✅";
+}
+li.almost-check::before {
+  content: "☑️";
+}
+/*
+li.check {
+  display: none;
+} */
+
+/* li:not(.check) {
+  display: none;
+} */

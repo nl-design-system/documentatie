@@ -1,0 +1,1 @@
+De component krijgt pas de Hall of Fame status wanneer deze is gebruikt in verschillende productieomgevingen, zodat de stabiliteit en bruikbaarheid getest zijn in de praktijk en eventuele problemen in de Candidate fase zijn gevonden en opgelost.

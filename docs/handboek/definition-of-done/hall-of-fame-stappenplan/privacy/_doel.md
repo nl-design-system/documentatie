@@ -1,0 +1,1 @@
+Bekende privacy-risico's bij het gebruik van de component zijn geïdentificeerd en gedocumenteerd, zodat developers en designers weten wat ze moeten doen om de component in te zetten zonder onbedoeld AVG privacywetgeving te overtreden.
