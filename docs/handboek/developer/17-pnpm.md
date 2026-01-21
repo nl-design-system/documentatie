@@ -23,6 +23,10 @@ pnpm is een snelle, efficiënte package manager voor Node.js.
 Het is een alternatief voor npm en yarn en staat bekend om zijn zuinige gebruik van schijfruimte en hoge performance.
 Daarnaast biedt pnpm een aantal beveiligingsfeatures waar we gebruik van maken.
 
+Ben je npm gewend?
+De meeste commando's zijn hetzelfde: je gebruikt bijvoorbeeld `pnpm install` in plaats van `npm install`.
+Bekijk de documentatie op de website van [pnpm](https://pnpm.io/pnpm-cli) voor uitgebreide informatie.
+
 ## De juiste pnpm-versie installeren en gebruiken
 
 Tegenwoordig hoef je de package manager niet meer los te installeren, maar gebruik je [Corepack](https://github.com/nodejs/corepack).
