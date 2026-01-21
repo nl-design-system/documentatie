@@ -30,6 +30,239 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 8.3.0
+
+21 januari 2026
+
+Community component ‘Calendar’ van Utrecht is toegevoegd aan de bibliotheek.
+
+- [Bekijk Calendar in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=27669-5317).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "utrecht": {
+    "calendar": {
+      "background-color": {
+        "value": "{basis.color.default.bg-document}",
+        "type": "color"
+      },
+      "width": {
+        "value": "fit-content",
+        "type": "dimension",
+        "description": "[code-only]"
+      },
+      "icon": {
+        "size": {
+          "value": "{basis.size.icon.md}",
+          "type": "dimension"
+        }
+      },
+      "navigation": {
+        "background-color": {
+          "value": "{basis.color.transparent}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{basis.color.action-1.color-default}",
+          "type": "color"
+        },
+        "padding-block-end": {
+          "value": "0px",
+          "type": "dimension"
+        },
+        "padding-block-start": {
+          "value": "{basis.space.block.lg}",
+          "type": "dimension"
+        },
+        "label": {
+          "color": {
+            "value": "{basis.color.default.color-document}",
+            "type": "color"
+          },
+          "font-size": {
+            "value": "{basis.text.font-size.md}",
+            "type": "fontSizes"
+          }
+        }
+      },
+      "table": {
+        "padding-block-end": {
+          "value": "{basis.space.block.lg}",
+          "type": "dimension"
+        },
+        "padding-block-start": {
+          "value": "{basis.space.block.lg}",
+          "type": "dimension"
+        },
+        "days-item-day": {
+          "border-color": {
+            "value": "{basis.color.transparent}",
+            "type": "color"
+          },
+          "border-width": {
+            "value": "{basis.border-width.sm}",
+            "type": "dimension"
+          },
+          "color": {
+            "value": "{basis.color.action-1.color-default}",
+            "type": "color"
+          },
+          "size": {
+            "value": "{basis.pointer-target.min-inline-size}",
+            "type": "dimension"
+          },
+          "active": {
+            "background-color": {
+              "value": "{basis.color.action-1.bg-active}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "color": {
+              "value": "{basis.color.action-1.color-active}",
+              "type": "color"
+            }
+          },
+          "disabled": {
+            "background-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "color": {
+              "value": "{basis.color.disabled.color-default}",
+              "type": "color"
+            }
+          },
+          "emphasis": {
+            "background-color": {
+              "value": "{basis.color.highlight.bg-default}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "color": {
+              "value": "{basis.color.highlight.color-default}",
+              "type": "color"
+            },
+            "font-weight": {
+              "value": "{basis.text.font-weight.bold}",
+              "type": "fontWeights"
+            }
+          },
+          "focus": {
+            "background-color": {
+              "value": "{basis.focus.background-color}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "color": {
+              "value": "{basis.focus.color}",
+              "type": "color"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "value": "{basis.color.action-1.bg-hover}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "color": {
+              "value": "{basis.color.action-1.color-hover}",
+              "type": "color"
+            }
+          },
+          "is-today": {
+            "background-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{basis.color.action-1.border-default}",
+              "type": "color"
+            },
+            "color": {
+              "value": "{basis.color.action-1.color-default}",
+              "type": "color"
+            },
+            "font-weight": {
+              "value": "{basis.text.font-weight.bold}",
+              "type": "fontWeights"
+            }
+          },
+          "out-of-the-month": {
+            "background-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "color": {
+              "value": "{basis.color.disabled.color-subtle}",
+              "type": "color"
+            }
+          },
+          "selected": {
+            "background-color": {
+              "value": "{basis.color.action-1-inverse.bg-default}",
+              "type": "color"
+            },
+            "border-color": {
+              "value": "{basis.color.transparent}",
+              "type": "color"
+            },
+            "color": {
+              "value": "{basis.color.action-1-inverse.color-default}",
+              "type": "color"
+            },
+            "font-weight": {
+              "value": "{basis.text.font-weight.bold}",
+              "type": "fontWeights"
+            }
+          }
+        },
+        "weeks-item": {
+          "width": {
+            "value": "{basis.pointer-target.min-inline-size}",
+            "type": "dimension"
+          }
+        }
+      }
+    }
+  },
+  "todo": {
+    "calendar": {
+      "table": {
+        "days-item-day": {
+          "disabled": {
+            "font-weight": {
+              "value": "{basis.text.font-weight.default}",
+              "type": "fontWeights"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 8.2.0
 
 21 januari 2026
