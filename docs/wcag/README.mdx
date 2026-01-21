@@ -21,12 +21,6 @@ import { successCriteria } from "@site/src/components/wcag22";
 
 # Introductie WCAG-pagina's
 
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={2}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
-
 ## Opzet
 
 Elk WCAG-succescriterium heeft een eigen pagina waarin is opgenomen:
@@ -70,6 +64,12 @@ Sommige succescriteria bevatten nu alleen nog links en een uitleg. Het doel is o
       .map((wcag) => `wcag/${wcag}`),
   ]}
 />
+
+## Wat is verplicht?
+
+<Markdown omitH1>
+  <Disclaimer />
+</Markdown>
 
 ## Help richtlijnen verbeteren
 
