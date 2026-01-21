@@ -30,6 +30,151 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 8.2.0
+
+21 januari 2026
+
+Community component ‘Date Input’ van Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Date Input in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=27654-33780&p=f&t=PuyeH14Xwh5fWs7C-11).
+- Hieronder vind je de bijbehorende design tokens.
+
+:::info[Goed om te weten]
+
+Voor de tokens `ams.date-input.padding-block` en `ams.date-input.padding-inline` is gekozen voor een waarde uit de speciale groep 'form-control'. Het gaat om de waarden `basis.form-control.padding-block-start` en `basis.form-control.padding-inline-start`. Uiteraard mag je hier zelf een keuze in maken.
+
+:::
+
+```json
+{
+  "ams": {
+    "date-input": {
+      "background-color": {
+        "type": "color",
+        "value": "{basis.form-control.background-color}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{basis.form-control.border-color}"
+      },
+      "border-style": {
+        "description": "[code-only]",
+        "type": "other",
+        "value": "solid"
+      },
+      "border-width": {
+        "type": "dimension",
+        "value": "{basis.form-control.border-width}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{basis.form-control.color}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{basis.form-control.font-size}"
+      },
+      "font-family": {
+        "type": "fontFamilies",
+        "value": "{basis.form-control.font-family}"
+      },
+      "font-weight": {
+        "type": "fontWeights",
+        "value": "{basis.form-control.font-weight}"
+      },
+      "line-height": {
+        "type": "lineHeights",
+        "value": "{basis.form-control.line-height}"
+      },
+      "min-block-size": {
+        "type": "dimension",
+        "value": "{basis.pointer-target.min-block-size}"
+      },
+      "min-inline-size": {
+        "type": "dimension",
+        "value": "10rem"
+      },
+      "outline-offset": {
+        "description": "[code-only]",
+        "type": "other",
+        "value": "auto"
+      },
+      "padding-block": {
+        "type": "dimension",
+        "value": "{basis.form-control.padding-block-start}"
+      },
+      "padding-inline": {
+        "type": "dimension",
+        "value": "{basis.form-control.padding-inline-start}"
+      },
+      "calendar-picker-indicator": {
+        "background-image": {
+          "type": "other",
+          "value": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' fill='%23004699'><path d='M28 6V2h-4v4H12V2H8v4H2v28h32V6zm2 24H6V14h24z'/><path d='M10 17h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-12 6h4v4h-4zm6 0h4v4h-4z'/></svg>\")",
+          "description": "[code-only]"
+        },
+        "cursor": {
+          "description": "[code-only]",
+          "type": "other",
+          "value": "default"
+        }
+      },
+      "disabled": {
+        "border-color": {
+          "type": "color",
+          "value": "{basis.form-control.disabled.border-color}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{basis.form-control.disabled.color}"
+        },
+        "cursor": {
+          "description": "[code-only]",
+          "type": "other",
+          "value": "disabled"
+        },
+        "calendar-picker-indicator": {
+          "background-image": {
+            "type": "other",
+            "value": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' fill='%23767676'><path d='M28 6V2h-4v4H12V2H8v4H2v28h32V6zm2 24H6V14h24z'/><path d='M10 17h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-12 6h4v4h-4zm6 0h4v4h-4z'/></svg>\")",
+            "description": "[code-only]"
+          }
+        }
+      },
+      "hover": {
+        "box-shadow": {
+          "type": "boxShadow",
+          "value": "None"
+        },
+        "calendar-picker-indicator": {
+          "background-image": {
+            "type": "other",
+            "value": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' fill='%23003677'><path d='M28 6V2h-4v4H12V2H8v4H2v28h32V6zm2 24H6V14h24z'/><path d='M10 17h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-12 6h4v4h-4zm6 0h4v4h-4z'/></svg>\")",
+            "description": "[code-only]"
+          }
+        }
+      },
+      "invalid": {
+        "border-color": {
+          "type": "color",
+          "value": "{basis.form-control.invalid.border-color}"
+        },
+        "hover": {
+          "border-color": {
+            "type": "color",
+            "value": "{basis.color.negative.border-hover}"
+          },
+          "box-shadow": {
+            "type": "boxShadow",
+            "value": "None"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 8.1.0
 
 16 januari 2026
