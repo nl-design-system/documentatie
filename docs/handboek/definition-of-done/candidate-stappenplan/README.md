@@ -62,7 +62,7 @@ Meer weten? [Bekijk de stappen van de Ontwikkelfase](/handboek/estafettemodel/co
 
 <!-- ### Doel -->
 
-Het kernteam wil met de testfase zorgen dat alle problemen die met de acceptatiecriteria konden worden voorkomen opgelost worden voordat de component gepubliceerd wordt, zodat de community de component met vertrouwen kan inzetten en vooral feedback hoeft te geven over eventueel missende functionaliteit.
+Het kernteam wil met de testfase zorgen dat alle problemen die met de acceptatiecriteria konden worden voorkomen, worden opgelost voordat de component wordt gepubliceerd. Zo kan de community de component met vertrouwen inzetten en vooral feedback geven over eventueel missende functionaliteit.
 
 <!-- ### Uitkomst -->
 
