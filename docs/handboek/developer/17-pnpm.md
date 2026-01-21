@@ -43,7 +43,9 @@ Deze versie bevat een aantal veiligheidsfeatures met betrekking tot [minimum rel
 
 ## pnpm upgraden
 
-Ook voor upgraden gebruik je Corepack:
+Ook voor upgraden gebruik je Corepack.
+Gebruik altijd de `corepack` CLI om de versie in `package.json` te upgraden zodat de hash wordt toegevoegd aan de versie.
+Dit is een beveiligingsmaatregel om te verifiëren dat exact dezelfde pnpm-binary wordt gebruikt op elke machine.
 
 ```sh
 # upgraden naar laatste versie in major range
@@ -52,6 +54,3 @@ corepack up
 # of: upgraden naar specifieke versie
 corepack use pnpm@10
 ```
-
-Gebruik altijd de `corepack` CLI om de versie in `package.json` te upgraden zodat de hash wordt toegevoegd aan de versie.
-Dit is een beveiligingsmaatregel om te verifiëren dat exact dezelfde pnpm-binary wordt gebruikt op elke machine.
