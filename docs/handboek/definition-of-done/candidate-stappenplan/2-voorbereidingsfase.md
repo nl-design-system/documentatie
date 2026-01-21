@@ -5,8 +5,8 @@ hide_table_of_contents: false
 sidebar_label: 2. Voorbereidingsfase
 sidebar_position: 2
 pagination_label: 2. Voorbereidingsfase
-description: Stappen voor de Voorbereidingsfase van de Definition of Done voor Candiate
-slug: /handboek/estafettemodel/componenten/candidate/voorbereidingsfase
+description: Stappen voor de Voorbereidingsfase van de Definition of Done voor Candidate
+slug: /handboek/estafettemodel/componenten/candidate/Voorbereidingsfase
 keywords:
   - componenten
   - design system
@@ -19,54 +19,54 @@ keywords:
 
 # Voorbereidingsfase voor Candidate componenten
 
-De voorbereidingsfase start wanneer de selectiefase is afgerond. Dan is alle input beschikbaar voor het vaststellen van de acceptatiecriteria en benodigde testcases.
+De Voorbereidingsfase start wanneer de Selectiefase is afgerond. Dan is alle input beschikbaar voor het vaststellen van de acceptatiecriteria en benodigde testcases.
 
-In de Voorbereidingsfase wordt vastgelegd welke varianten de component moet krijgen, wat de beste semantiek is, welke events beschikbaar moeten worden gesteld, welke Stories nodig zijn, welke automatische tests en welke design tokens.
+In de Voorbereidingsfase wordt vastgelegd welke varianten de component moet krijgen, wat de beste semantiek is, welke events beschikbaar moeten worden gesteld, welke Stories, automatische tests en design tokens nodig zijn.
 
-![Een overzicht van de stappen in de Voorbereidingsfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme die hierbij betrokken is: Developer relations en design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-voorbereidingsfase.png)
+![Een overzicht van de stappen in de Voorbereidingsfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme dat hierbij betrokken is: Developer relations en Design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-Voorbereidingsfase.png)
 
-[Bekijk de illustratie voor de voorbereidingsfase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-voorbereidingsfase.png)
+[Bekijk de illustratie voor de Voorbereidingsfase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-Voorbereidingsfase.png)
 
-De stappen en substappen in de voorbereidingsfase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat de volgende stappen zien:
+De stappen en substappen in de Voorbereidingsfase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat de volgende stappen zien:
 
 - Openstaande issues bekend
-  1.  Input verzameld door Developer Relations & Design Relations
-  2.  Besloten welke issues meegenomen worden in Candidate door DS Lead & Product Manager
-  3.  Besluit vastgelegd door Developer Relations & Design Relations
+  1.  Input verzameld door Developer relations & Design relations.
+  2.  Besloten welke issues meegenomen worden in Candidate door Design System Lead & Product Manager.
+  3.  Besluit vastgelegd door Developer relations & Design relations.
 - Versimpeld of opgesplitst
-  1.  Input verzameld door Developer Relations & Design Relations
-  2.  Besloten welke issues meegenomen worden in Candidate door DS Lead & Product Manager
-  3.  Besluit vastgelegd door Developer Relations & Design Relations
-- Criteria voor toegankelijkheid bepaald en vastgelegd door toegankelijkheidsspecialist
+  1.  Input verzameld door Developer relations & Design relations.
+  2.  Besloten welke issues meegenomen worden in Candidate door Design System Lead & Product Manager.
+  3.  Besluit vastgelegd door Developer relations & Design relations.
+- Criteria voor toegankelijkheid bepaald en vastgelegd door toegankelijkheidsspecialist.
 - Zoekwoorden vastgesteld
-  1.  Alternatieve namen verzameld door Developer Relations & Design Relations
-  2.  Besloten welke zoekwoorden Keywords en welke Aliassen zijn door DS Lead & Product Manager
-  3.  Keywords en Aliassen vastgelegd door Developer Relations & Design Relations
-- Anatomie bepaald en vastgelegd door toegankelijkheidsspecialist, developer, designer, DS Lead en Product Manager
-- Semantiek bepaald en vastgelegd door toegankelijkheidsspecialist, developer, designer, DS Lead en Product Manager
+  1.  Alternatieve namen verzameld door Developer relations & Design relations.
+  2.  Besloten welke zoekwoorden Keywords en welke Aliassen zijn door Design System Lead & Product Manager.
+  3.  Keywords en Aliassen vastgelegd door Developer relations & Design relations.
+- Anatomie bepaald en vastgelegd door toegankelijkheidsspecialist, developer, designer, Design System Lead en Product Manager.
+- Semantiek bepaald en vastgelegd door toegankelijkheidsspecialist, developer, designer, Design System Lead en Product Manager.
 - API bepaald
-  1. Input verzameld door Developer Relations & Design Relations
-  2. Besloten welke API's Candidate worden door DS Lead & Product Manager
-  3. Besluit vastgelegd door Developer Relations & Design Relations
+  1. Input verzameld door Developer relations & Design relations.
+  2. Besloten welke API's Candidate worden door Design System Lead & Product Manager.
+  3. Besluit vastgelegd door Developer relations & Design relations.
 - Design Tokens bepaald
-  1. Input verzameld door Developer Relations & Design Relations
-  2. Besloten welke Design Tokens Candidate worden door DS Lead & Product Manager
-  3. Besluit vastgelegd door Developer Relations & Design Relations
-- Acceptatiecriteria vertaald naar Stories en Specs door relations, toegankelijkheidsspecialist en developer
-- Testcases voor gebruik van de component bepaald en vastgelegd door developer, designer en leads
-- Community bijgepraat door relations
+  1. Input verzameld door Developer relations & Design relations.
+  2. Besloten welke Design Tokens Candidate worden door Design System Lead & Product Manager.
+  3. Besluit vastgelegd door Developer relations & Design relations.
+- Acceptatiecriteria vertaald naar Stories en Specs door relations, toegankelijkheidsspecialist en developer.
+- Testcases voor gebruik van de component bepaald en vastgelegd door developer, designer en leads.
+- Community bijgepraat door relations.
 
 :::tip[Hoe kan de community helpen?]
-Door zo veel mogelijk informatie beschikbaar te maken in de GitHub Discussion kan deze fase sneller verlopen.
+Door zoveel mogelijk informatie beschikbaar te maken in de GitHub Discussion kan deze fase sneller verlopen.
 
 Draag je dit component ook bij in een Community implementatie, of heb je tijd om te helpen deze te verbeteren? Dan kun je helpen door zoveel mogelijk openstaande issues al te verwerken en zelf testcases toe te voegen voor alle situaties die in de GitHub Discussions door de community zijn gedeeld.
 :::
 
 ## Issues bekend {#issues}
 
-Wanneer gekeken is naar de issues die voor de component zijn aangemaakt in de verschillende repositories van NL Design System, kan het kernteam bepalen welke issues moeten worden opgelost in de Candidate implementatie en welke aanpassingen nog moeten worden proefgedraaid in de community. Ook kan er kan een afweging worden gemaakt over breaking changes die in de Community component zijn uitgesteld vanwege het ongemak bij gebruikers.
+Wanneer er is gekeken naar de issues die voor de component zijn aangemaakt in de verschillende repositories van NL Design System, kan het kernteam bepalen welke issues moeten worden opgelost in de Candidate implementatie en welke aanpassingen nog moeten worden proefgedraaid in de community. Ook kan er een afweging worden gemaakt over breaking changes die in de Community component zijn uitgesteld vanwege het ongemak bij gebruikers.
 
-Deze issues, feature requests en geplande breaking changes zijn een aanvulling op de input uit de selectiefase waar alleen wordt meegenomen welke dingen al succesvol in de component zitten. Met deze stap om naar de GitHub issues te kijken halen we ook de input op van alles wat nog niet is meegenomen, maar wel gewenst is.
+Deze issues, feature requests en geplande breaking changes zijn een aanvulling op de input uit de Selectiefase waar alleen wordt meegenomen welke dingen al succesvol in de component zitten. Met deze stap om naar de GitHub issues te kijken halen we ook de input op van alles wat nog niet is meegenomen, maar wel gewenst is.
 
 ### Doel
 
@@ -74,7 +74,7 @@ De Candidate implementatie neemt geen bekende bugs of problematische API's over 
 
 ### Uitkomst
 
-Het kernteam heeft samen met de input uit de selectiefase nu alle input uit de community verzameld voor de volgende stappen uit de voorbereidingsfase:
+Het kernteam heeft samen met de input uit de Selectiefase nu alle input uit de community verzameld voor de volgende stappen uit de Voorbereidingsfase:
 
 - Varianten bepaald
 - Anatomie is bepaald
@@ -91,7 +91,7 @@ Wanneer bijvoorbeeld blijkt dat de documentatie onnodig complex wordt door zinne
 
 ### Doel
 
-De Candidate component heeft duidelijke APIs die goed uit te leggen zijn.
+De Candidate component heeft duidelijke API's die goed uit te leggen zijn.
 
 De variaties kunnen gebruiksvriendelijk en toegankelijk ingezet worden door verschillende organisaties.
 
@@ -99,9 +99,9 @@ De variaties kunnen gebruiksvriendelijk en toegankelijk ingezet worden door vers
 
 De variaties en het gedrag van de component zijn bepaald en er zijn GitHub Discussions voor de nieuwe componenten aangemaakt voor de voorgestelde losse component of variaties die niet worden meegenomen.
 
-## Acceptatiecriteria voor accessibility bepaald {#a11y}
+## Acceptatiecriteria voor toegankelijkheid bepaald {#a11y}
 
-Op basis van de uitkomsten uit de "WCAG input" stap, bekende issues uit de community en de expertise uit het kernteam is duidelijk aan welke eisen de component implementatie moet voldoen. Hierbij word rekening gehouden met bekende toegankelijkheidsproblemen, maar ook toegankelijkheidseisen die de community in hun implementatie nog niet had bedacht.
+Op basis van de uitkomsten uit de 'WCAG input' stap, bekende issues uit de community en de expertise uit het kernteam is duidelijk aan welke eisen de component implementatie moet voldoen. Hierbij wordt rekening gehouden met bekende toegankelijkheidsproblemen, maar ook toegankelijkheidseisen die de community in hun implementatie nog niet had bedacht.
 
 ### Doel
 
@@ -123,11 +123,11 @@ Aliassen en keywords van alternatieve namen voor de component zijn vastgelegd in
 
 ## Anatomie bepaald {#anatomie}
 
-Op basis van de input uit "Component gebruikt", "WCAG-input", "Issues bekend" en "Versimpeld of opgesplitst" wordt besloten uit welke onderdelen de component kan bestaan en hoe deze onderdelen worden genoemd.
+Op basis van de input uit 'Component gebruikt', 'WCAG-input', 'Issues bekend' en 'Versimpeld of opgesplitst' wordt besloten uit welke onderdelen de component kan bestaan en hoe deze onderdelen worden genoemd.
 
 ### Doel
 
-De Candidate component heeft duidelijke namen voor de onderdelen die consistent gebruikt kunnen worden in Code, Storybook, Figma, design tokens en documentatie.
+De Candidate component heeft duidelijke namen voor de onderdelen die consistent gebruikt kunnen worden in code, Storybook, Figma, design tokens en documentatie.
 
 ### Uitkomst
 
@@ -135,7 +135,7 @@ De onderdelen van de component zijn bepaald, de naamgeving is gekozen op basis v
 
 ## HTML bepaald {#html}
 
-Goede semantiek is belangrijk voor toegankelijkheid en robuustheid van websites en webapplicaties. Daarom wordt er goed gekeken op basis van de "Anatomie" en "Acceptatiecriteria voor toegankelijkheid" welke semantiek het best bij de component past.
+Goede semantiek is belangrijk voor toegankelijkheid en robuustheid van websites en webapplicaties. Daarom wordt er goed gekeken op basis van de 'Anatomie' en 'Acceptatiecriteria voor toegankelijkheid' welke semantiek het best bij de component past.
 
 ### Doel
 
@@ -145,11 +145,11 @@ De onderdelen waaruit de component bestaat werken goed voor verschillende hulpso
 
 De component wordt ontwikkeld met de HTML elementen die semantisch het best passen, voldoet hiermee aan [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1) en [WCAG-succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2) en is goed te gebruiken met langzame internetverbindingen als de CSS niet geladen kan worden.
 
-Er is bepaald of er een HTML implementatie van de component mogelijk is, zodat deze ook ingezet kan worden in situaties waarde HTML aanpassen geen optie is en er geen voorspelbare class names zijn gebruikt.
+Er is bepaald of er een HTML implementatie van de component mogelijk is, zodat deze ook ingezet kan worden in situaties waar HTML aanpassen geen optie is en er geen voorspelbare class names zijn gebruikt.
 
 ## API bepaald {#api}
 
-De component in CSS, React en andere technieken classnames, attributen, properties en slots die bij het inzetten van de component gebruikt kunnen worden. Voor de developer en designers die de component gebruiken is het belangrijk dat deze voorspelbaar is in combinatie met de rest van het design system. Voor onderhoudbaarheid is het goed om niet meer APIs beschikbaar te maken dan noodzakelijk zijn en voor iedereen is het belangrijk dat de beschikbare APIs documentatie makkelijk gevonden worden.
+De component heeft in CSS, React en andere technieken classnames, attributen, properties en slots die bij het inzetten van de component gebruikt kunnen worden. Voor de developer en designers die de component gebruiken is het belangrijk dat deze voorspelbaar is in combinatie met de rest van het design system. Voor onderhoudbaarheid is het goed om niet meer API's beschikbaar te maken dan noodzakelijk zijn en voor iedereen is het belangrijk dat de beschikbare API-documentatie makkelijk gevonden worden.
 
 ### Doel
 
@@ -157,9 +157,9 @@ Alle API's van de component zijn gebaseerd op een gemeenschappelijke use case en
 
 ### Uitkomst
 
-- Bepaald welke API beschikbaar wordt in de Candidate component en welke API wijzigingen eerst in de Community moeten worden uitgetest
-- De APIs voor de Candidate component zijn in lijn met de API conventies van NL Design System
-- De APIs zijn goed te implementeren in meerdere technieken.
+- Bepaald welke API beschikbaar wordt in de Candidate component en welke API wijzigingen eerst in de Community moeten worden uitgetest.
+- De API's voor de Candidate component zijn in lijn met de API conventies van NL Design System.
+- De API's zijn goed te implementeren in meerdere technieken.
 
 ## Design tokens bepaald {#design-tokens}
 
@@ -185,8 +185,8 @@ Een robuuste Candidate component die goed en consistent te testen is.
 
 De Candidate kan gebouwd worden op basis van de juiste Community component onderdelen en er is een testplan beschikbaar om te zorgen dat de Candidate component is gemaakt op basis van alle acceptatiecriteria.
 
-- Alle acceptatiecriteria die in eerdere stappen zijn opgesteld — voor anatomie, semantiek, varianten en design tokens — zijn opgenomen als stories in de test Storybook
-- Voor alle niet visuele acceptatiecriteria zijn unit tests met `describe it` aangemaakt
+- Alle acceptatiecriteria die in eerdere stappen zijn opgesteld — voor anatomie, semantiek, varianten en design tokens — zijn opgenomen als stories in de test Storybook.
+- Voor alle niet visuele acceptatiecriteria zijn unit tests met `describe it` aangemaakt.
 
 ## Testcases voor gebruik {#test-gebruik}
 
@@ -194,7 +194,7 @@ Goede testcases zijn belangrijk om de component robuust te maken. De component w
 
 Ook is de manier waarop eindgebruikers de component zien afhankelijk van bijvoorbeeld hun schermformaat, internetconnectie, met vertaalplugins en gebruiksinstellingen zoals bijvoorbeeld lettergrootte, forced-colors mode of prefer reduced motion.
 
-Daarom is het belangrijk dat het kernteam zo veel mogelijk testcases klaarzet die zorgen dat de component zich in al deze situaties voorspelbaar gedraagt.
+Daarom is het belangrijk dat het kernteam zoveel mogelijk testcases klaarzet die zorgen dat de component zich in al deze situaties voorspelbaar gedraagt.
 
 ### Doel
 
@@ -204,14 +204,14 @@ De Candidate component is goed getest voordat deze gepubliceerd wordt, niet alle
 
 Er zijn voldoende testcases beschikbaar om een robuust component te maken die goed om kan gaan met diverse soorten data en gebruikersvoorkeuren zodat de Candidate component grondig getest kan worden met Storybook en unit tests.
 
-## Rond de voorbereidingsfase af {#afronden}
+## Rond de Voorbereidingsfase af {#afronden}
 
 Het kernteam laat de community weten dat de voorbereidingen in het Candidate proces afgerond zijn en de component klaar is om gebouwd te worden.
 
 ### Doel
 
-De Candidate component heeft zo veel mogelijk draagvlak in de community en developers en designers kijken uit om het Candidate component te gebruiken doordat duidelijk is met hoeveel dingen rekening is gehouden.
+De Candidate component heeft zoveel mogelijk draagvlak in de community en developers en designers kijken uit om het Candidate component te gebruiken doordat duidelijk is met hoeveel dingen rekening is gehouden.
 
 ### Uitkomst
 
-De community weet dat de voorbereidingen getroffen zijn en hebben nog een kans om toch nog input te geven op de gemaakte keuzes. Ook ziet de community dat de Community componenten als basis zijn gebruik zodat ze zich gewaardeerd en empowered voelen om ook Community componenten geschikt te helpen maken voor Candidate
+De community weet dat de voorbereidingen getroffen zijn en hebben nog een kans om toch nog input te geven op de gemaakte keuzes. Ook ziet de community dat de Community componenten als basis zijn gebruikt zodat ze zich gewaardeerd en gesterkt voelen om ook Community componenten geschikt te helpen maken voor Candidate.
