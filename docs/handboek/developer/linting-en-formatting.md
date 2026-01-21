@@ -75,7 +75,8 @@ markdownlint wordt gebruikt om Markdown-bestanden te controleren, bijvoorbeeld o
 
 ### npm-package-json-lint
 
-Met npm-package-json-lint wordt de `package.json` gecontroleerd, bijvoorbeeld op het bestaan van een author en licentie.
+Met npm-package-json-lint wordt de `package.json` gecontroleerd, bijvoorbeeld op het bestaan van een author.
+Voor NL Design System wordt o.a. bijgehouden dat de licentie op [EUPL](https://nldesignsystem.nl/blog/licentiekeuze-nl-design-system/) staat.
 
 - Geconfigureerd in `npmpackagejsonlint.config.cjs` ([voorbeeld](https://github.com/nl-design-system/example/blob/main/npmpackagejsonlint.config.cjs))
 - Uitvoeren met `pnpm lint:package-json`
