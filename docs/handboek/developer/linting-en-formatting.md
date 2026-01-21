@@ -1,17 +1,18 @@
 ---
-title: Linting en formatting van code · Developer · Handboek
+title: Linting en code formatting · Developer · Handboek
 hide_title: true
-slug: /linting-en-formatting
+slug: /linting-en-code-formatting
 hide_table_of_contents: false
-sidebar_label: Linting en formatting
-pagination_label: Linting en formatting
+sidebar_label: Linting en code formatting
+pagination_label: Linting en code formatting
 description: Linting en formatting van code
 keywords:
   - lint
   - eslint
-  - formatteren
   - formatting
   - prettier
+  - husky
+  - lint-staged
 ---
 
 <!--
@@ -20,9 +21,9 @@ De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd:
 - Als DevOps Engineer wil ik toelichting binnen configuratie centraliseren zodat ik kan verwijzen naar een link i.p.v. code duplication
 -->
 
-# Linten en formatteren van code
+# Linting en code formatting
 
-In ons design system gebruiken we _linting_ en _formatting_ om consistente en leesbare code te garanderen.
+In ons design system gebruiken we _linting_ en _code formatting_ om consistente en leesbare code te garanderen.
 Dit helpt om:
 
 - kwaliteitsproblemen vroeg te signaleren;
