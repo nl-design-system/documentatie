@@ -38,7 +38,7 @@ pnpm -v
 ```
 
 Daarnaast staat de minimumversie van pnpm in `package.json` onder `engines.pnpm`.
-Op dit moment is de minimumversie van pnpm 10.17.0.
+Op dit moment is de minimumversie van pnpm **10.17.0**.
 Deze versie bevat een aantal veiligheidsfeatures met betrekking tot [minimum release age](https://pnpm.io/settings#minimumreleaseage).
 
 ## pnpm upgraden
