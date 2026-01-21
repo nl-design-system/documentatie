@@ -14,6 +14,12 @@ keywords:
   - prettier
 ---
 
+<!--
+De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd:
+- Als developer wil ik weten welke tooling wordt gebruikt voor linting en formatting, zodat ik hierop kan aansluiten
+- Als DevOps Engineer wil ik toelichting binnen configuratie centraliseren zodat ik kan verwijzen naar een link i.p.v. code duplication
+-->
+
 # Linten en formatteren van code
 
 In ons design system gebruiken we _linting_ en _formatting_ om consistente en leesbare code te garanderen.
