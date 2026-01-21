@@ -93,6 +93,13 @@ Het voordeel hiervan is dat je niet hoeft te herinneren om de check te runnen, j
 
 Daar waar mogelijk, wordt gebruik gemaakt van functionaliteit om automatisch problemen op te lossen.
 
+:::info[Goed om te weten]
+
+Om veiligheidsredenen worden dependencies in de NL Design System repositories geïnstalleerd met `--ignore-scripts`, waardoor Husky niet compleet wordt geïnstalleerd.
+Dit is snel opgelost: voer éénmalig `pnpm prepare` uit.
+
+:::
+
 ### IDE-instellingen
 
 Voor een optimale developerervaring:
