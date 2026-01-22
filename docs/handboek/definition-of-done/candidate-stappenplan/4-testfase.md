@@ -25,29 +25,29 @@ In de Testfase wordt de component getest volgens de acceptatiecriteria en testca
 
 Door te valideren of er voldoende testcases zijn en een baseline vast te stellen kunnen regressies makkelijk voorkomen worden wanneer de Candidate component wordt doorontwikkeld na feedback uit de community.
 
-![Een overzicht van de stappen in de Testfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme die hierbij betrokken is: Developer relations en design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-testfase.png)
+![Een overzicht van de stappen in de Testfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme dat hierbij betrokken is: Developer relations en Design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-testfase.png)
 
-[Bekijk de illustratie voor de testfase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-testfase.png)
+[Bekijk de illustratie voor de Testfase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-testfase.png)
 
-De stappen en substappen in de testfase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat de volgende stappen zien:
+De stappen en substappen in de Testfase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat de volgende stappen zien:
 
 - Design tokens getest
-  1.  Getest in Chromatic en baseline vastgesteld door Developer Relations & Design Relations
-  2.  Gevonden problemen opgelost door developer
-  3.  Opnieuw getest door Developer Relations & Design Relations
+  1.  Getest in Chromatic en baseline vastgesteld door Developer relations & Design relations.
+  2.  Gevonden problemen opgelost door developer.
+  3.  Opnieuw getest door Developer relations & Design relations.
 - Accessibility getest
-  1.  Getest volgens acceptatiecriteria voor toegankelijkheid door toegankelijkheidsspecialist
-  2.  Gevonden problemen opgelost door developer
-  3.  Opnieuw getest door toegankelijkheidsspecialist
+  1.  Getest volgens acceptatiecriteria voor toegankelijkheid door toegankelijkheidsspecialist.
+  2.  Gevonden problemen opgelost door developer.
+  3.  Opnieuw getest door toegankelijkheidsspecialist.
 - Test coverage getest
-  1.  Missende tests opgesteld door DS Lead & Product Manager
-  2.  Gevonden probelemen opgelost door developer
+  1.  Missende tests opgesteld door Design System Lead & Product Manager.
+  2.  Gevonden problemen opgelost door developer.
 - NL Design System architectuur
-  1.  Opleveringen in code en Figma getoetst aan architectuur door DS Lead & Product Manager
-  2.  Gevonden problemen opgelost door developer en designer
-  3.  Opnieuw getest door DS Lead & Product Manager
-- Documentatie getest en gevonden problemen opgelost door relations
-- Testcases getest en gevonden problemen opgelost door developer en designer
+  1.  Opleveringen in code en Figma getoetst aan architectuur door Design System Lead & Product Manager.
+  2.  Gevonden problemen opgelost door developer en designer.
+  3.  Opnieuw getest door Design System Lead & Product Manager.
+- Documentatie getest en gevonden problemen opgelost door relations.
+- Testcases getest en gevonden problemen opgelost door developer en designer.
 
 ## Design Tokens getest
 
@@ -67,7 +67,7 @@ De Candidate component kan toegankelijk worden ingezet door de verschillende org
 
 ### Uitkomst
 
-De Candidate component voldoet aan de acceptatiecriteria voor toegankelijkheid. Alle stories in de algemene Storybook en test Storybook zijn voorzien van de uitkomsten van de toegankelijkheidstest. Missende Stories en unit tests zijn toegevoegd. Gevonden problemen zijn opgelost.
+De Candidate component voldoet aan de acceptatiecriteria voor toegankelijkheid. Alle stories in de algemene Storybook en test-Storybook zijn voorzien van de uitkomsten van de toegankelijkheidstest. Missende Stories en unit tests zijn toegevoegd. Gevonden problemen zijn opgelost.
 
 ## Testcases getest
 
@@ -87,7 +87,7 @@ De Candidate component kan goed onderhouden worden en makkelijk worden uitgebrei
 
 ### Uitkomst
 
-Alle acceptatiecriteria voor de component zijn beschreven in unit tests of Stories. Waar nodig zijn extra testcases toegevoegd voor functionaliteit die nog niet is gedekt, of manieren waarop de component kan gebruikt die nu niet zijn opgenomen.
+Alle acceptatiecriteria voor de component zijn beschreven in unit tests of Stories. Waar nodig zijn extra testcases toegevoegd voor functionaliteit die nog niet is gedekt, of manieren waarop de component kan worden gebruikt die nu niet zijn opgenomen.
 
 ## Documentatie getest
 
@@ -97,16 +97,16 @@ De Candidate component kan makkelijk worden ingezet door developers en designers
 
 ### Uitkomst
 
-De Candidate component documentatie staat klaar om in de publicatiefase beschikbaar te hebben. Er is documentatie voor gebruik van de component in React, CSS en Figma.
+De Candidate component documentatie staat klaar om in de Publicatiefase beschikbaar te hebben. Er is documentatie voor gebruik van de component in React, CSS en Figma.
 
-## Rond de testfase af {#afronden}
+## Rond de Testfase af {#afronden}
 
 ### Doel
 
-De Candidate component voldoet aan de acceptatiecriteria die hiervoor in de voorbereidingsfase zijn opgesteld.
+De Candidate component voldoet aan de acceptatiecriteria die hiervoor in de Voorbereidingsfase zijn opgesteld.
 
 ### Uitkomst
 
 Er is nog een keer goed gekeken of er in de voorbereidingsfase testcases zijn vergeten die het kernteam voor een robuust component toch noodzakelijk vindt.
 
-De publicatiefase kan starten nu de Candidate component klaar is voor gebruik en input uit de community.
+De Publicatiefase kan starten nu de Candidate component klaar is voor gebruik en input uit de community.
