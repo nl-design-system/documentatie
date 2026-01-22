@@ -23,7 +23,7 @@ De Voorbereidingsfase start wanneer de Selectiefase is afgerond. Dan is alle inp
 
 In de Voorbereidingsfase wordt vastgelegd welke varianten de component moet krijgen, wat de beste semantiek is, welke events beschikbaar moeten worden gesteld, welke Stories, automatische tests en design tokens nodig zijn.
 
-![Een overzicht van de stappen in de Voorbereidingsfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme dat hierbij betrokken is: Developer relations en Design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-Voorbereidingsfase.png)
+![Een overzicht van de stappen in de Voorbereidingsfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme dat hierbij betrokken is: Developer relations en Design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-voorbereidingsfase.png)
 
 [Bekijk de illustratie voor de Voorbereidingsfase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-Voorbereidingsfase.png)
 
