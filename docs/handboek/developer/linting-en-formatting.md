@@ -23,19 +23,17 @@ De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd:
 
 # Linting en code formatting
 
-In ons design system gebruiken we _linting_ en _code formatting_ om consistente en leesbare code te garanderen.
-Dit helpt om:
+In ons design system gebruiken we tools voor _linting_ en _code formatting_ om consistente en leesbare code te garanderen.
+Dit helpt bij samenwerken om:
 
 - kwaliteitsproblemen vroeg te signaleren;
 - code reviews te versnellen (geen discussie over spaties en tabs);
-- verschillen tussen ontwikkelaars en IDE's te minimaliseren.
+- verschillen tussen persoonlijke voorkeuren van ontwikkelaars en IDE-instellingen te minimaliseren.
 
-Wat is het verschil?
+De tools vullen elkaar aan:
 
-- **Linting** controleert code op mogelijke fouten, anti‑patterns en overtredingen van afgesproken regels (bijv. ongebruikte variabelen, incorrecte afhankelijkheden)
-- **Formatting** zorgt uitsluitend voor consistente opmaak (bijv. inspringen, quotes, regeleindes), zonder inhoudelijke logica te beoordelen
-
-Beide vullen elkaar aan: linting bewaakt kwaliteit, formatting bewaakt consistentie.
+- **Linting bewaakt kwaliteit.** Deze tools controleren code op mogelijke fouten, anti‑patterns en overtredingen van afgesproken regels. Bijvoorbeeld: ongebruikte variabelen, incorrecte afhankelijkheden.
+- **Formatting is voor consistentie.** Code wordt automatisch opgemaakt, zonder de code inhoudelijk te beoordelen. Bijvoorbeeld: voorspelbare inspringing, quotes en regellengte.
 
 ## Gebruikte tooling
 
@@ -46,8 +44,6 @@ Hier sommen we op welke tooling we gebruiken en hoe het wordt gebruikt.
 ESLint wordt gebruikt voor het linten van JavaScript/TypeScript code.
 Het detecteert fouten en ongewenste patronen.
 Het kan framework-specifieke (bijvoorbeeld React) regels toepassen.
-
-**Configuratie en uitvoeren**
 
 - Geconfigureerd in `eslint.config.mjs` ([voorbeeld](https://github.com/nl-design-system/example/blob/main/eslint.config.mjs))
 - Uitvoeren met `pnpm lint:js`
@@ -76,8 +72,8 @@ markdownlint wordt gebruikt om Markdown-bestanden te controleren, bijvoorbeeld o
 
 ### npm-package-json-lint
 
-Met npm-package-json-lint wordt de `package.json` gecontroleerd, bijvoorbeeld op het bestaan van een author.
-Voor NL Design System wordt o.a. bijgehouden dat de licentie op [EUPL](https://nldesignsystem.nl/blog/licentiekeuze-nl-design-system/) staat.
+Met [npm-package-json-lint](https://npmpackagejsonlint.org/) wordt de `package.json` gecontroleerd, bijvoorbeeld op het bestaan van een author.
+Voor NL Design System wordt onder andere bijgehouden dat de licentie op [EUPL](https://nldesignsystem.nl/blog/licentiekeuze-nl-design-system/) staat.
 
 - Geconfigureerd in `npmpackagejsonlint.config.cjs` ([voorbeeld](https://github.com/nl-design-system/example/blob/main/npmpackagejsonlint.config.cjs))
 - Uitvoeren met `pnpm lint:package-json`
@@ -89,9 +85,9 @@ Voor NL Design System wordt o.a. bijgehouden dat de licentie op [EUPL](https://n
 We gebruiken **husky** in combinatie met **lint‑staged** om deze checks uit te voeren vóórdat code wordt gecommit.
 
 - **Husky** beheert Git hooks, waarmee je een commando kunt uitvoeren vóór committen
-- **lint‑staged** is dat commando en runt linting en formatting alleen op gewijzigde bestanden
+- **lint‑staged** is dat commando en voert linting en code formatting alleen uit op gewijzigde bestanden
 
-Het voordeel hiervan is dat je niet hoeft te herinneren om de check te runnen, je snelle feedback krijgt (in plaats van pas in CI), en dat er geen checks op ongewijzigde code worden gedaan.
+Het voordeel hiervan is dat je niet hoeft te herinneren om de check uit te voeren, je snelle feedback krijgt (in plaats van pas in CI), en dat er geen checks op ongewijzigde code worden gedaan.
 
 Daar waar mogelijk, wordt gebruik gemaakt van functionaliteit om automatisch problemen op te lossen.
 
