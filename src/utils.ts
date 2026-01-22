@@ -1,3 +1,5 @@
+import packageJson from '../package.json';
+
 export const COMPONENT_STATES = {
   UNKNOWN: 'Todo',
   HELP_WANTED: 'Help Wanted',
@@ -216,3 +218,23 @@ export function tokenPathsToEmptyTokenTree(tokenPaths: TokenPath[]): TokenNode {
   }
   return root;
 }
+
+export const getMinimumPnpmVersion = () => {
+  const version = packageJson.engines?.pnpm;
+
+  if (!version) {
+    throw new Error('No pnpm version found in package.json#engines.pnpm');
+  }
+
+  return version.replace(/^[\^~>=<]+/, '');
+};
+
+export const getMinimumNodeVersion = () => {
+  const version = packageJson.engines?.node;
+
+  if (!version) {
+    throw new Error('No node version found in package.json#engines.node');
+  }
+
+  return version.replace(/^[\^~>=<]+/, '');
+};
