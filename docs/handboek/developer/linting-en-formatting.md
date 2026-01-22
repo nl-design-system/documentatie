@@ -41,7 +41,7 @@ Hier sommen we op welke tooling we gebruiken en hoe het wordt gebruikt.
 
 ### ESLint
 
-ESLint wordt gebruikt voor het linten van JavaScript/TypeScript code.
+[ESLint](https://eslint.org/) wordt gebruikt voor het linten van JavaScript/TypeScript code.
 Het detecteert fouten en ongewenste patronen.
 Het kan framework-specifieke (bijvoorbeeld React) regels toepassen.
 
@@ -50,14 +50,14 @@ Het kan framework-specifieke (bijvoorbeeld React) regels toepassen.
 
 ### Stylelint
 
-Stylelint wordt gebruikt voor het linten van CSS en Sass (SCSS).
+[Stylelint](https://stylelint.io/) wordt gebruikt voor het linten van CSS en Sass (SCSS).
 
 - Geconfigureerd in `.stylelintrc.json` ([voorbeeld](https://github.com/nl-design-system/example/blob/main/.stylelintrc.json))
 - Uitvoeren met `pnpm lint:css`
 
 ### Prettier
 
-Prettier wordt gebruikt voor het formatteren van code.
+[Prettier](https://prettier.io/) wordt gebruikt voor het formatteren van code.
 Het wordt niet alleen toegepast op JavaScript en TypeScript, maar ook YAML en Markdown.
 
 - Geconfigureerd in `prettier.config.mjs` ([voorbeeld](https://github.com/nl-design-system/example/blob/main/prettier.config.mjs))
@@ -65,7 +65,7 @@ Het wordt niet alleen toegepast op JavaScript en TypeScript, maar ook YAML en Ma
 
 ### markdownlint
 
-markdownlint wordt gebruikt om Markdown-bestanden te controleren, bijvoorbeeld op headings, witruimte of het ontbreken van alt-teksten op plaatjes.
+[markdownlint](https://github.com/DavidAnson/markdownlint) wordt gebruikt om Markdown-bestanden te controleren, bijvoorbeeld op headings, witruimte of het ontbreken van alt-teksten op plaatjes.
 
 - Geconfigureerd in `.markdownlint.json` ([voorbeeld](https://github.com/nl-design-system/example/blob/main/.markdownlint.json))
 - Uitvoeren met `pnpm lint:md`
