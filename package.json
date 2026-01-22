@@ -11,7 +11,7 @@
   "engines": {
     "//": "Update @types/node to match the highest node version here",
     "node": ">=24 <=25",
-    "pnpm": "^10.16.0"
+    "pnpm": "^10.17.0"
   },
   "repository": {
     "type": "git+ssh",
