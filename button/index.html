@@ -31,7 +31,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.38f67c64.css" />
-  <script src="/assets/js/runtime~main.71ac68fe.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.dece91e9.js" defer="defer"></script>
   <script src="/assets/js/main.8a6bf484.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -883,9 +883,13 @@
 </span></code></pre>
                     <p>Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat <code class="utrecht-code">aria-expanded</code> de waarde <code class="utrecht-code">false</code> krijgt wanneer het menu weer is ingeklapt.</p>
                     <p>Zorg er daarnaast voor dat het <code class="utrecht-code">type</code>-attribuut kloppend is bij de rol van de knop, zoals <code class="utrecht-code">&quot;submit&quot;</code> voor een verzendknop en <code class="utrecht-code">&quot;reset&quot;</code> voor een resetknop.</p>
+                    <p>Vermijd het gebruik van <code class="utrecht-code">aria-busy</code> op interactieve elementen zoals knoppen, bijvoorbeeld om aan te geven dat een formulier bezig is met verzenden. Dit attribuut geeft aan hulpsoftware aan dat veranderingen, zoals in een live-region of tijdens het laden van een pagina, niet moeten worden voorgelezen totdat de waarde weer op <code class="utrecht-code">false</code> staat. Hierdoor worden updates voorgelezen als het proces voltooid is, zodat er geen onvolledige informatie wordt gegeven. Je gebruikt het <code class="utrecht-code">aria-busy</code> attribuut wel op de container waarin de updates worden getoond, niet op de knop om de actie mee uit voeren.</p>
+                    <p>Gebruik in plaats daarvan <code class="utrecht-code">aria-disabled</code> met <code class="utrecht-code">tabindex=&quot;0&quot;</code> op de knop en pas de visuele en toegankelijke naam aan, bijvoorbeeld naar &#x27;Bezig met verzenden&#x27;. Gebruik vervolgens <code class="utrecht-code">role=&quot;status&quot;</code> of <code class="utrecht-code">role=&quot;alert&quot;</code> op de container om statusmeldingen over het resultaat van het verzenden van het formulier aan te geven.</p>
                     <p>NL Design System richtlijnen:</p>
                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                      <li><a href="/richtlijnen/formulieren/buttons/toegankelijke-naam/" class="utrecht-link utrecht-link--html-a">De toegankelijke naam van een button</a></li>
+                     <li><a href="/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding/" class="utrecht-link utrecht-link--html-a">Toegankelijke succesmeldingen in een formulier</a></li>
+                     <li><a href="/richtlijnen/formulieren/bevestigingspagina/succesmelding/" class="utrecht-link utrecht-link--html-a">Duidelijke succesmeldingen in een formulier</a></li>
                     </ul>
                    </div>
                    <div class="utrecht-badge-list new-checklist__badge-list">
