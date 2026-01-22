@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: 1. Selectiefase
 sidebar_position: 1
 pagination_label: 1. Selectiefase
-description: Stappen voor de Selectiefase fase van de Definition of Done voor Candiate
+description: Stappen voor de Selectiefase van de Definition of Done voor Candidate
 slug: /handboek/estafettemodel/componenten/candidate/selectiefase
 keywords:
   - componenten
@@ -19,17 +19,17 @@ keywords:
 
 # Selectiefase voor Candidate componenten
 
-Een component wordt pas door het kernteam opgepakt voor de Candidate fase wanneer deze aan een aantal voorwaarden voldoet. Deze voorwaarden vormen de selectiefase van de component.
+Een component wordt pas door het kernteam opgepakt voor de Candidatefase wanneer deze aan een aantal voorwaarden voldoet. Deze voorwaarden vormen de Selectiefase van de component.
 
-![Een overzicht van de stappen in de Selectiefase. Deze Selectiefase kan op 2 manieren. De normale manier, hier in grijs aangegeven, waarbij er tenminste 1 community implementatie is, deze goed instelbaar is voor verschillende huisstijlen, de community inplementatie goed bruikbaar is in diverse projecten en is getest met een WCAG-EM toegankelijkheidsaudit. Alternatief is er de Fast-track, hier in groen aangegeven, waar besloten wordt of de component dringend nodig is voor toegankelijkheid.](https://github.com/nl-design-system/documentatie/blob/assets/candidate-stappenplan-selectiefase.png?raw=true)
+![Een overzicht van de stappen in de Selectiefase. Deze Selectiefase kan op 2 manieren. De normale manier, hier in grijs aangegeven, waarbij er ten minste 1 Community implementatie is, deze goed instelbaar is voor verschillende huisstijlen, de Community inplementatie goed bruikbaar is in diverse projecten en is getest met een WCAG-EM toegankelijkheidsaudit. Alternatief is er de Fast-track, hier in groen aangegeven, waar besloten wordt of de component dringend nodig is voor toegankelijkheid.](https://github.com/nl-design-system/documentatie/blob/assets/candidate-stappenplan-selectiefase.png?raw=true)
 
-Selectiefase kan op 2 manieren verlopen. Normaal kijkt het kernteam of er tenminste 1 Community implementatie bestaat, die goed bruikbaar is voor verschillende huisstijlen, goed bruikbaar is in diverse projecten en getest is met tenminste 1 WCAG-EM toegankelijkheidsaudit.
+De Selectiefase kan op 2 manieren verlopen. Normaal kijkt het kernteam of er ten minste 1 Community implementatie bestaat, die goed bruikbaar is voor verschillende huisstijlen, goed bruikbaar is in diverse projecten en getest is met ten minste 1 WCAG-EM toegankelijkheidsaudit.
 
-Omdat sommige componenten met urgentie toegevoegd moeten worden aan het design system kan bij uitzondering ook gebruik worden gemaakt van de zogenaamde de Fast Track, deze vervangt dan de andere stappen uit de selectiefase.
+Omdat sommige componenten met urgentie toegevoegd moeten worden aan het design system kan bij uitzondering ook gebruik worden gemaakt van de zogenaamde 'Fast Track', deze vervangt dan de andere stappen uit de Selectiefase.
 
 ## Huisstijl input {#huisstijl}
 
-Het kernteam heeft input nodig uit de community om een goede Candidate component te bouwen die te gebruiken is in alle huisstijlen. Het is daarom belangrijk dat tenminste 1 Community implementatie succesvol ingezet wordt in meerdere verschillende huisstijlen.
+Het kernteam heeft input nodig uit de community om een goede Candidate component te bouwen die te gebruiken is in alle huisstijlen. Het is daarom belangrijk dat ten minste 1 Community implementatie succesvol ingezet wordt in meerdere verschillende huisstijlen.
 
 ### Doel
 
@@ -37,9 +37,9 @@ Er is genoeg kennis en kunde beschikbaar uit de community om te bepalen welke de
 
 ### Uitkomst
 
-De community heeft genoeg praktijk input gegegeven welke design tokens noodzakelijk zijn, zodat de Candidate component goed aansluit bij de behoefte uit de community.
+De community heeft genoeg praktijk-input gegeven welke design tokens noodzakelijk zijn, zodat de Candidate component goed aansluit bij de behoefte uit de community.
 
-Het kernteam pakt geen componenten op die in de Community fase nog niet voldoende bruikbaar zijn gebleken voor verschillende huisstijlen.
+Het kernteam pakt geen componenten op die in de Communityfase nog niet voldoende bruikbaar zijn gebleken voor verschillende huisstijlen.
 
 ### Kan de community helpen?
 
@@ -51,7 +51,7 @@ Dat kan door je huisstijl in te stellen voor 1 of meer Community implementaties 
 
 ## Productie input {#productie}
 
-Het kernteam heeft input nodig uit de community om een Candidate component te bouwen die goed te gebruiken is in meerdere projecten in productie. Het is daarom belangrijk dat een Community component in meer dan 1 project gebruikt is èn in tenminste 1 project ook succesvol in productie is genomen.
+Het kernteam heeft input nodig uit de community om een Candidate component te bouwen die goed te gebruiken is in meerdere projecten in productie. Het is daarom belangrijk dat een Community component in meer dan 1 project gebruikt is én in ten minste 1 project ook succesvol in productie is genomen.
 
 ### Doel
 
@@ -59,7 +59,7 @@ Er is genoeg kennis en kunde beschikbaar uit de community om te bepalen op welke
 
 ### Uitkomst
 
-Er is voldoende informatie om te zorgen dat de Candidate de juiste functionaliteiten en varianten krijgt die noodzakelijk zijn om de component succesvol te gebruiken in verschillende projecten.
+Er is voldoende informatie om te zorgen dat de Candidate component de juiste functionaliteiten en varianten krijgt die noodzakelijk zijn om de component succesvol te gebruiken in verschillende projecten.
 
 Doordat de component gebruikt is in meerdere producten kan worden aangenomen dat hij niet alleen aan functionele eisen voldoet, maar ook aan de niet-functionele eisen die door verschillende organisaties zijn gesteld.
 
@@ -72,12 +72,12 @@ Het kernteam selecteert alleen componenten die aantoonbaar nodig zijn en goed we
 Dat kan door de beschikbare Community componenten te gebruiken in je projecten, in plaats van deze opnieuw te bouwen.
 
 - Deel waar de component is gebruikt in de Heartbeat of in de GitHub Discussion van de component.
-- Maak issues aan voor eventuele verbeteringen in de Community Implementatie.
+- Maak issues aan voor eventuele verbeteringen in de Community implementatie.
 - Werk samen met de community om verbeteringen op de component door te voeren en deel de resultaten hiervan in de Heartbeat of in de GitHub Discussion van de component.
 
 ## WCAG input {#wcag}
 
-Het kernteam heeft input nodig uit de community om een Candidate component te bouwen die toegankelijk is en succesvol door WCAG-EM audits heen komt. Wanneer een Community component gebruikt is in project waarvoor een toegankelijkheidsrapport is gemaakt, dan weet het kernteam of er problemen met toegankelijkheid zijn waar rekening mee moet worden houden.
+Het kernteam heeft input nodig uit de community om een Candidate component te bouwen die toegankelijk is en succesvol door WCAG-EM audits heen komt. Wanneer een Community component gebruikt is in een project waarvoor een toegankelijkheidsrapport is gemaakt, dan weet het kernteam of er problemen met toegankelijkheid zijn waar rekening mee moet worden gehouden.
 
 ### Doel
 
@@ -87,7 +87,7 @@ Er is voldoende inzicht uit de community om te bepalen op welke manier een Candi
 
 Er is voldoende informatie welke functionaliteit, acceptatiecriteria, tests en documentatie de component nodig heeft om toegankelijk ingezet te kunnen worden.
 
-Het kernteam selecteert alleen componenten die getest zijn in tenminste 1 WCAG-EM toegankelijkheidsaudit, zodat voldoende informatie beschikbaar is of deze succesvol gebruikt kan worden in productie.
+Het kernteam selecteert alleen componenten die getest zijn in ten minste 1 WCAG-EM toegankelijkheidsaudit, zodat voldoende informatie beschikbaar is of deze succesvol gebruikt kan worden in productie.
 
 ### Kan de community helpen?
 
@@ -101,7 +101,7 @@ Dat kan door het kernteam te laten weten dat de component gebruikt is op een pag
 
 ## Fast Track? {#fast-track}
 
-Een component kan ook zó belangrijk zijn voor verbetering van toegankelijkheid dat de prioriteit alleen al hierdoor enorm omhoog gaat, waardoor het waardevol is om zónder de andere selectie checks de component op te pakken als kernteam.
+Een component kan ook zó belangrijk zijn voor verbetering van toegankelijkheid dat de prioriteit alleen al hierdoor enorm omhoog gaat, waardoor het waardevol is om zónder de andere selectie-checks de component op te pakken als kernteam.
 
 ### Doel
 
@@ -113,9 +113,9 @@ Componenten die belangrijk zijn voor toegankelijke websites en webapplicaties va
 
 ### Hoe kan de community helpen?
 
-Dat kan door WCAG-audits te delen waarin de component ontoegankelijk gebruikt blijkt te worden en door op Slack, in de Developer Open Hour of Design Open Hour hulp te vragen voor het toegankelijker maken van de component. Hiermee wordt de prioriteit van de component hoger, waardoor de kans op een fast track toeneemt.
+Dat kan door WCAG-audits te delen waarin de component ontoegankelijk gebruikt blijkt te worden en door op Slack, in de Developer Open Hour of Design Open Hour hulp te vragen voor het toegankelijker maken van de component. Hiermee wordt de prioriteit van de component hoger, waardoor de kans op een Fast Track toeneemt.
 
-## Rond de selectiefase af {#afronden}
+## Rond de Selectiefase af {#afronden}
 
 Het kernteam laat de community weten dat de component is geselecteerd voor het Candidate proces.
 
@@ -125,4 +125,4 @@ De Candidate component heeft zo veel mogelijk draagvlak in de community, doordat
 
 ### Uitkomst
 
-De community weet dat het kernteam de component heeft geselecteerd voor het Candidate proces zodat ze ongedocumenteerde problemen nog vast kunnen te leggen in de Backlog voor gebruik in de voorbereidingsfase.
+De community weet dat het kernteam de component heeft geselecteerd voor het Candidate proces zodat ze ongedocumenteerde problemen nog kunnen vastleggen in de Backlog voor gebruik in de Voorbereidingsfase.
