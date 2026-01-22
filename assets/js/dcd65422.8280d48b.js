@@ -1,4 +1,4 @@
-/*! For license information please see dcd65422.6ec2ddf5.js.LICENSE.txt */
+/*! For license information please see dcd65422.8280d48b.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [18429],
@@ -11,7 +11,7 @@
   },
   79692(e, t, n) {
    n.r(t), n.d(t, { assets: () => s, contentTitle: () => l, default: () => m, frontMatter: () => i, metadata: () => o, toc: () => d });
-   const o = JSON.parse('{"id":"handboek/developer/component-inzetten","title":"Component inzetten \xb7 Developer \xb7 Handboek","description":"Bestaand component inzetten","source":"@site/docs/handboek/developer/05-component-inzetten.mdx","sourceDirName":"handboek/developer","slug":"/handboek/developer/component-inzetten","permalink":"/handboek/developer/component-inzetten","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/05-component-inzetten.mdx","tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"title":"Component inzetten \xb7 Developer \xb7 Handboek","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Component inzetten","pagination_label":"Component inzetten","description":"Bestaand component inzetten","keywords":["developer","bijdragen","component gebruiken"]},"sidebar":"handboek","previous":{"title":"Component kiezen","permalink":"/handboek/developer/samenwerken-aan-componenten"},"next":{"title":"Component uitbreiden","permalink":"/handboek/developer/component-uitbreiden"}}');
+   const o = JSON.parse('{"id":"handboek/developer/component-inzetten","title":"Component inzetten \xb7 Developer \xb7 Handboek","description":"Bestaand component inzetten","source":"@site/docs/handboek/developer/05-component-inzetten.mdx","sourceDirName":"handboek/developer","slug":"/handboek/developer/component-inzetten","permalink":"/handboek/developer/component-inzetten","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/05-component-inzetten.mdx","tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"title":"Component inzetten \xb7 Developer \xb7 Handboek","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Component inzetten","pagination_label":"Component inzetten","description":"Bestaand component inzetten","keywords":["developer","bijdragen","component gebruiken"]},"sidebar":"handboek","previous":{"title":"Thema maken","permalink":"/handboek/developer/thema-maken"},"next":{"title":"Component uitbreiden","permalink":"/handboek/developer/component-uitbreiden"}}');
    var a = n(86070),
     r = n(85248),
     c = n(4258);
@@ -83,10 +83,10 @@
     var g = e.noCookie;
     g = e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com';
     var v = e.playlist ? ''.concat(g, '/embed/videoseries?').concat(k.toString()) : ''.concat(g, '/embed/').concat(p, '?').concat(k.toString()),
-     w = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
-     y = e.webp ? 'webp' : 'jpg',
+     y = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
+     w = e.webp ? 'webp' : 'jpg',
      C = e.webp ? 'vi_webp' : 'vi',
-     _ = w
+     _ = y
       ? (function (e, t, n, a) {
          void 0 === a && (a = 'maxresdefault');
          var c = (0, o.useState)(''),
@@ -111,17 +111,17 @@
           ),
           i
          );
-        })(e.id, C, y, h)
+        })(e.id, C, w, h)
       : null,
-     z =
+     x =
       e.thumbnail ||
       _ ||
       'https://i.ytimg.com/'
        .concat(C, '/')
        .concat(e.playlist ? m : p, '/')
        .concat(h, '.')
-       .concat(y),
-     x = e.activatedClass || 'lyt-activated',
+       .concat(w),
+     z = e.activatedClass || 'lyt-activated',
      E = e.adNetwork || !1,
      j = e.aspectHeight || 9,
      I = e.aspectWidth || 16,
@@ -142,7 +142,7 @@
      o.createElement(
       o.Fragment,
       null,
-      o.createElement('link', { rel: N, href: z, as: 'image' }),
+      o.createElement('link', { rel: N, href: x, as: 'image' }),
       o.createElement(o.Fragment, null, c && o.createElement(o.Fragment, null, o.createElement('link', { rel: 'preconnect', href: g }), o.createElement('link', { rel: 'preconnect', href: 'https://www.google.com' }), E && o.createElement(o.Fragment, null, o.createElement('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), o.createElement('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })))),
       o.createElement(
        F,
@@ -153,9 +153,9 @@
         onClick: function () {
          s || d(!0);
         },
-        className: ''.concat(P, ' ').concat(s ? x : ''),
+        className: ''.concat(P, ' ').concat(s ? z : ''),
         'data-title': u,
-        style: a(a({ backgroundImage: 'url('.concat(z, ')') }, { '--aspect-ratio': ''.concat((j / I) * 100, '%') }), L),
+        style: a(a({ backgroundImage: 'url('.concat(x, ')') }, { '--aspect-ratio': ''.concat((j / I) * 100, '%') }), L),
        },
        o.createElement('button', { type: 'button', className: B, 'aria-label': ''.concat(b, ' ').concat(u) }),
        s && o.createElement('iframe', { ref: t, className: S, title: u, width: '560', height: '315', frameBorder: '0', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: v }),
