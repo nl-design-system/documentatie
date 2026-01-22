@@ -236,5 +236,12 @@ export const getMinimumNodeVersion = () => {
     throw new Error('No node version found in package.json#engines.node');
   }
 
+  // Handle ranges like ">24 <=25" by extracting the minimum version
+  const rangeMatch = version.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
+  if (rangeMatch) {
+    return rangeMatch[1];
+  }
+
+  // Handle simple prefixes like "^18.0.0", "~18.0.0", ">=18.0.0"
   return version.replace(/^[\^~>=<]+/, '');
 };

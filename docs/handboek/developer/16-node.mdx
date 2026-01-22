@@ -14,6 +14,8 @@ keywords:
   - versies
 ---
 
+import { getMinimumNodeVersion } from "@site/src/utils";
+
 <!--
 De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd:
 - Als developer wil ik weten welke Node.js versie ik moet gebruiken, zodat mijn code compatible is met NL Design System
@@ -27,7 +29,7 @@ De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd:
 
 Node.js is de JavaScript-runtime voor alles rondom NL Design System: build tooling, component libraries en scripts. Hiermee voer je JavaScript uit buiten de browser. Het vormt de basis van de meeste frontend-ecosystemen.
 
-## Huidige versie: Node.js 24 {#huidige-versie}
+## Huidige versie: Node.js {getMinimumNodeVersion()} {#huidige-versie}
 
 Voor stabiliteit, veiligheid en voorspelbaarheid gebruikt NL Design System LTS-versies (long-term support) van Node.js. Deze versies ontvangen langere tijd security- en bugfix-updates en hebben betere ondersteuning van tooling en dependencies.
 
