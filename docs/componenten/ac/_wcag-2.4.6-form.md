@@ -2,7 +2,7 @@
 
 Het label van een invoerveld maakt kort en bondig duidelijk welke invoer van de bezoeker gevraagd wordt. Een tekstueel label kan een tekst zijn, of een icoon waar de alternatieve tekst het doel van het invoerveld beschrijft.
 
-Bijvoorbeeld: de alternatieve tekst van een vergrootglas bij een zoekveld is 'Zoeken' en niet 'Vergrootglas'.
+Bijvoorbeeld: de alternatieve tekst van een vergrootglas icoon is 'Zoeken' en niet 'Vergrootglas'.
 
 Let op: Gebruik je een asterisk (`*`) om aan te geven dat een veld verplicht is? Zorg er dan voor dat je bovenaan het formulier uitlegt wat de betekenis van de asterisk is. Bijvoorbeeld: 'Velden met een `*` zijn verplicht'.
 
