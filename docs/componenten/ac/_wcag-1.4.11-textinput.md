@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Zorg voor voldoende kleurcontrast tussen de kleuren van componenten die visueel betekenis hebben en hun directe omgeving. Zorg ervoor dat dit minimaal 3:1, maar het liefst hoger.
+Zorg voor voldoende kleurcontrast tussen de kleuren van componenten die visueel betekenis hebben en hun directe omgeving. Zorg ervoor dat dit minimaal 3:1 is, maar het liefst hoger.
 
 Kleuren die van toepassing zijn bij de Text Input zijn bijvoorbeeld:
 
