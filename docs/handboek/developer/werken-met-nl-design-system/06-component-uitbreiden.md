@@ -11,3 +11,5 @@ keywords:
 ---
 
 # Hoe kun je een bestaande component uitbreiden
+
+<!-- deze pagina wordt uitgewerkt in https://github.com/nl-design-system/documentatie/issues/3470 -->
