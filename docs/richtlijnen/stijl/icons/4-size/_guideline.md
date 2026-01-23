@@ -11,4 +11,4 @@ Functionele iconen worden vaak ontworpen en toegepast op een formaat van 16×16,
 Voor de grootte van functionele iconen kun je een common token zoals `basis.size.icon.md` inzetten. Op die manier kun je in 1 keer alle functionele iconen op component niveau in formaat aanpassen. Voor [Toptaak iconen](/richtlijnen/stijl/iconen/toptaak-iconen) zou dit een common token zoals `basis.size.icon.3xl` kunnen zijn.
 
 - [Meer informatie over design tokens](/handboek/huisstijl/design-tokens)
-- [Meer informatie over basis tokens](/handboek/huisstijl/themas/start-thema#basis-tokens)
+- [Meer informatie over basis-tokens](/handboek/huisstijl/themas/start-thema#basis-tokens)
