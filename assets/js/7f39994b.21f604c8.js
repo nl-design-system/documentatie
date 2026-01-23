@@ -3,7 +3,7 @@
  [18628],
  {
   31527(e, n, t) {
-   t.r(n), t.d(n, { assets: () => g, contentTitle: () => p, default: () => u, frontMatter: () => j, metadata: () => o, toc: () => m });
+   t.r(n), t.d(n, { assets: () => p, contentTitle: () => h, default: () => u, frontMatter: () => j, metadata: () => o, toc: () => g });
    const o = JSON.parse('{"id":"richtlijnen/stijl/icons/size/README","title":"Stem de grootte van je iconen af op je lettergrootte \xb7 Iconen \xb7 Richtlijnen","description":"Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om de grootte van iconen af te stemmen met je lettergrootte.","source":"@site/docs/richtlijnen/stijl/icons/4-size/README.mdx","sourceDirName":"richtlijnen/stijl/icons/4-size","slug":"/richtlijnen/stijl/iconen/grootte-iconen","permalink":"/richtlijnen/stijl/iconen/grootte-iconen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/stijl/icons/4-size/README.mdx","tags":[],"version":"current","frontMatter":{"title":"Stem de grootte van je iconen af op je lettergrootte \xb7 Iconen \xb7 Richtlijnen","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Stem de grootte van je iconen af op je lettergrootte","pagination_label":"Stem de grootte van je iconen af op je lettergrootte","description":"Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om de grootte van iconen af te stemmen met je lettergrootte.","slug":"/richtlijnen/stijl/iconen/grootte-iconen","keywords":["iconen"]},"sidebar":"richtlijnen","previous":{"title":"Positioneer iconen binnen een vierkant grid","permalink":"/richtlijnen/stijl/iconen/positionering-iconen"},"next":{"title":"Laat de lijndikte meeschalen","permalink":"/richtlijnen/stijl/iconen/lijndikte-iconen"}}');
    var i = t(86070),
     r = t(85248),
@@ -11,29 +11,29 @@
    function a(e) {
     return (0, i.jsx)(i.Fragment, {});
    }
-   function c(e = {}) {
+   function l(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(a, { ...e }) }) : a();
    }
-   function l(e) {
-    const n = { a: 'a', code: 'code', img: 'img', p: 'p', strong: 'strong', ...(0, r.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om de grootte van iconen af te stemmen met je lettergrootte.' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grootte.png', alt: 'Een lijstje van 3 labels met voor elk label een kalender icoon. De labels worden groter en het kalender icoon schaalt mee.' }) }), '\n', (0, i.jsx)(n.p, { children: 'Functionele iconen worden vaak ontworpen en toegepast op een formaat van 16\xd716, 24\xd724 of 32\xd732. Deze formaten sluiten mooi aan bij het veelal toegepaste 8pt grid voor ruimte en de standaard browser lettergroote van 16px. Een evenwichtige balans van icoon en lettergrootte zou dan kunnen zijn lettergrootte 16px met een icoon van 24px. Of een lettergrootte 26px met een icoon van 32px.' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.strong, { children: 'Grootte als design token' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Voor de grootte van functionele iconen kun je een common token zoals ', (0, i.jsx)(n.code, { children: 'voorbeeldprefix.icon.functional.size' }), ' inzetten. Op die manier kun je in 1 keer alle functionele iconen op component niveau in formaat aanpassen. Voor ', (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/toptaak-iconen/', children: 'Toptaak iconen' }), ' zou dit een common token zoals ', (0, i.jsx)(n.code, { children: 'voorbeeldprefix.icon.toptask.size' }), ' kunnen zijn.'] })] });
+   function c(e) {
+    const n = { a: 'a', code: 'code', img: 'img', li: 'li', p: 'p', strong: 'strong', ul: 'ul', ...(0, r.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om de grootte van iconen af te stemmen met je lettergrootte.' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grootte.png', alt: 'Een lijstje van 3 labels met voor elk label een kalender icoon. De labels worden groter en het kalender icoon schaalt mee.' }) }), '\n', (0, i.jsx)(n.p, { children: 'Functionele iconen worden vaak ontworpen en toegepast op een formaat van 16\xd716, 24\xd724 of 32\xd732. Deze formaten sluiten mooi aan bij het veelal toegepaste 8pt grid voor ruimte en de standaard browser lettergroote van 16px. Een evenwichtige balans van icoon en lettergrootte zou dan kunnen zijn lettergrootte 16px met een icoon van 24px. Of een lettergrootte 26px met een icoon van 32px.' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.strong, { children: 'Grootte als design token' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Voor de grootte van functionele iconen kun je een common token zoals ', (0, i.jsx)(n.code, { children: 'basis.size.icon.md' }), ' inzetten. Op die manier kun je in 1 keer alle functionele iconen op component niveau in formaat aanpassen. Voor ', (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/toptaak-iconen/', children: 'Toptaak iconen' }), ' zou dit een common token zoals ', (0, i.jsx)(n.code, { children: 'basis.size.icon.3xl' }), ' kunnen zijn.'] }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/handboek/huisstijl/design-tokens/', children: 'Meer informatie over design tokens' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/handboek/huisstijl/themas/start-thema/#basis-tokens', children: 'Meer informatie over basis-tokens' }) }), '\n'] })] });
    }
    function d(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(l, { ...e }) }) : l(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(c, { ...e }) }) : c(e);
    }
    const j = { title: 'Stem de grootte van je iconen af op je lettergrootte \xb7 Iconen \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Stem de grootte van je iconen af op je lettergrootte', pagination_label: 'Stem de grootte van je iconen af op je lettergrootte', description: 'Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op verschillende groottes worden toegepast. Daarbij is het verstandig om de grootte van iconen af te stemmen met je lettergrootte.', slug: '/richtlijnen/stijl/iconen/grootte-iconen', keywords: ['iconen'] },
-    p = 'Stem de grootte van je iconen af op je lettergrootte',
-    g = {},
-    m = [...s.RM];
-   function h(e) {
+    h = 'Stem de grootte van je iconen af op je lettergrootte',
+    p = {},
+    g = [...s.RM];
+   function m(e) {
     const n = { h1: 'h1', header: 'header', ...(0, r.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', (0, i.jsx)(n.header, { children: (0, i.jsx)(n.h1, { id: 'stem-de-grootte-van-je-iconen-af-op-je-lettergrootte', children: 'Stem de grootte van je iconen af op je lettergrootte' }) }), '\n', (0, i.jsx)(d, {}), '\n', (0, i.jsx)(c, {}), '\n', (0, i.jsx)(s.Ay, {})] });
+    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', (0, i.jsx)(n.header, { children: (0, i.jsx)(n.h1, { id: 'stem-de-grootte-van-je-iconen-af-op-je-lettergrootte', children: 'Stem de grootte van je iconen af op je lettergrootte' }) }), '\n', (0, i.jsx)(d, {}), '\n', (0, i.jsx)(l, {}), '\n', (0, i.jsx)(s.Ay, {})] });
    }
    function u(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(h, { ...e }) }) : h(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(m, { ...e }) }) : m(e);
    }
   },
   78734(e, n, t) {
