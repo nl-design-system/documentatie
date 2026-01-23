@@ -4,7 +4,7 @@ Het label van een invoerveld maakt kort en bondig duidelijk welke invoer van de 
 
 Bijvoorbeeld: de alternatieve tekst van een vergrootglas icoon is 'Zoeken' en niet 'Vergrootglas'.
 
-Let op: Gebruik je een asterisk (`*`) om aan te geven dat een veld verplicht is? Zorg er dan voor dat je bovenaan het formulier uitlegt wat de betekenis van de asterisk is. Bijvoorbeeld: 'Velden met een `*` zijn verplicht'.
+Let op: Gebruik je een asterisk (`*`) om aan te geven dat een veld verplicht is? Zorg dan dat je vóór de eerste asterisk uitlegt wat de betekenis is. Plaats bijvoorbeeld bovenaan het formulier de tekst: 'Velden met een `*` zijn verplicht'.
 
 NL Design System richtlijnen:
 
