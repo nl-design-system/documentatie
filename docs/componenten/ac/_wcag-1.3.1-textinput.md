@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Als de Text Input een tekstueel label heeft, maak dan gebruik van een `label`-element en koppel het met de attributen `for` en `id` aan de Text Input.
+Als de Text Input een tekstueel label heeft, gebruik dan een `label`-element en koppel het met de attributen `for` en `id` aan de Text Input.
 
 ```html
 <label for="voorbeeld">Ik ben een Text Input</label> <input type="text" id="voorbeeld" />
