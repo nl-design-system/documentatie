@@ -152,7 +152,7 @@
     Q = 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.',
     Y = 200,
     ee = s.find((e) => e.number === Y),
-    ne = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...c.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...l.RM, { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 }];
+    ne = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...c.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...l.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
    function te(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, {
@@ -163,14 +163,6 @@
       '\n',
       '\n',
       (0, i.jsx)(U.Fc, { component: ee, headingLevel: 1, description: Q }),
-      '\n',
-      (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-      '\n',
-      (0, i.jsx)(U.VK, { component: ee, headingLevel: 3 }),
-      '\n',
-      (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-      '\n',
-      (0, i.jsx)(U.mu, { component: ee, headingLevel: 3 }),
       '\n',
       (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
       '\n',
@@ -183,7 +175,7 @@
       (0, i.jsx)($.b, {
        headingLevel: '4',
        items: [
-        { title: 'Het label van de Text Input is programmatisch gekoppeld aan de Text Input en het is of de Text Input verplicht ingevuld moet worden.', sc: '1.3.1', status: '', component: (0, i.jsx)(u, {}), tags: ['developer'] },
+        { title: 'Het label van de Text Input is gekoppeld aan de Text Input en het is duidelijk of de Text Input verplicht ingevuld moet worden.', sc: '1.3.1', status: '', component: (0, i.jsx)(u, {}), tags: ['developer'] },
         { title: 'Instructies bij de Text Input staan op een logische plek', sc: '1.3.2', status: '', component: (0, i.jsx)(p, {}), tags: ['developer', 'designer', 'contentmaker'] },
         { title: 'Een Text Input die om persoonlijke gegevens vraagt heeft het juiste autocomplete-attribuut.', sc: '1.3.5', status: '', component: (0, i.jsx)(m, {}), tags: ['developer'] },
         { title: 'Kleur is niet de enige manier om informatie over een Text Input weer te geven.', sc: '1.4.1', status: '', component: (0, i.jsx)(O.Ay, {}), tags: ['designer'] },
@@ -222,9 +214,17 @@
        ],
       }),
       '\n',
+      (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
+      '\n',
+      (0, i.jsx)(U.VK, { component: ee, headingLevel: 3 }),
+      '\n',
       (0, i.jsx)(n.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }),
       '\n',
       (0, i.jsx)(U.$9, { component: ee, headingLevel: 3 }),
+      '\n',
+      (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
+      '\n',
+      (0, i.jsx)(U.mu, { component: ee, headingLevel: 3 }),
      ],
     });
    }
