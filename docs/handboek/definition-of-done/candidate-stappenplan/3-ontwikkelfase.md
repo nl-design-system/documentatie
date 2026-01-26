@@ -38,7 +38,7 @@ De stappen en substappen in de Ontwikkelfase kunnen soms parallel worden opgepak
 - Figma Component
   1. Gemaakt door de designer.
   2. Gereviewed door de Design System Lead & Product Manager.
-- Voorbeeld thema ingesteld door relations.
+- Voorbeeld-thema ingesteld door relations.
 - Documentatie
   1. Geschreven door de toegankelijkheidsspecialist, developer, designer.
   2. Gereviewed door de Design System Lead & Product Manager.
@@ -94,7 +94,7 @@ De Candidate component en varianten zijn makkelijk te gebruiken voor developers 
 
 ### Uitkomst
 
-De component documentatie van de beschikbare varianten en API's is beschikbaar in een herbruikbaar Markdown -bestand, op npm en in Storybook voor developers en in Figma voor designers.
+De component documentatie van de beschikbare varianten en API's is beschikbaar in een herbruikbaar Markdown-bestand, op npm en in Storybook voor developers en in Figma voor designers.
 
 ## Rond de Ontwikkelfase af {#afronden}
 
@@ -104,4 +104,4 @@ De Candidate component is consistent in code, Figma en documentatie.
 
 ### Uitkomst
 
-De Testfase kan starten en kan parallel uitgevoerd worden. De Candidate component wordt pas getest wanneer alle onderdelen klaar staan.
+De Testfase kan starten en parallel uitgevoerd worden. De Candidate component wordt pas getest wanneer alle onderdelen klaar staan.
