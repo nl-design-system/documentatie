@@ -167,7 +167,7 @@ Genoeg design tokens zijn belangrijk om NL Design System in diverse huisstijlen 
 
 ### Doel
 
-De Candidate component is voor veel organisaties te gebruiken, en zij kunnen deze  migreren zonder een ander visueel ontwerp te hoeven toepassen.
+De Candidate component is voor veel organisaties te gebruiken, en zij kunnen deze migreren zonder een ander visueel ontwerp te hoeven toepassen.
 
 ### Uitkomst
 
