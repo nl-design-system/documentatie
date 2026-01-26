@@ -30,6 +30,79 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 8.4.0
+
+26 januari 2026
+
+Community component ‘Navigation Bar’ van Utrecht is aangepast.
+
+De volgende tokens zijn toegevoegd:
+
+- `utrecht.nav-bar.content.background-color`
+- `utrecht.nav-bar.content.color`
+
+De waarden van de volgende tokens zijn gewijzigd:
+
+- Waarde van token `utrecht.nav-bar.content.max-inline-size` is gewijzigd van `1184px` naar `{basis.page.max-inline-size}`.
+- Waarde van token `utrecht.nav-bar.link.padding-block-end` is gewijzigd van `{basis.space.block.md}` naar `{basis.space.block.lg}`.
+- Waarde van token `utrecht.nav-bar.link.padding-block-start` is gewijzigd van `{basis.space.block.md}` naar `{basis.space.block.lg}`.
+
+Daarnaast is de opzet van de Figma component aangepast en uitgebreid. Daarom adviseren we om de component over te nemen alsof het een nieuw component betreft.
+
+Controleer hierbij wel of de wijzigingen van design token waarden ook wenselijk zijn voor het thema van jouw organisatie. Zo niet, dan kun je hier je huidige waarden invullen.
+
+- [Bekijk Navigation Bar in de NL Design System - Bibliotheek](https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=19413-100902).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "utrecht": {
+    "nav-bar": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.bg-subtle}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "content": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-subtle}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.page.max-inline-size}"
+        }
+      },
+      "link": {
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        }
+      }
+    }
+  }
+}
+```
+
 ## 8.3.1
 
 22 januari 2026
