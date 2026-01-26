@@ -57,6 +57,10 @@ er alternatieve CAPTCHA-vormen aanwezig zijn die andere zintuigen gebruiken. Bij
 ### Inhoud om een bepaald gevoel of sfeer op te roepen
 Bij deze inhoud is de beleving  belangrijker is dan de details. Dit geldt bijvoorbeeld voor een sfeervideo zonder belangrijke gesproken informatie, een decoratieve animatie, achtergrondmuziek of een kunstzinnige afbeelding. In het tekstalternatief staat kort wat het is, bijvoorbeeld: “een sfeervideo”. Als deze inhoud decoratief is, mag deze verborgen worden voor schermlezers.
 
+### Decoratie, opmaak of onzichtbare inhoud
+Decoratieve elementen moeten worden verborgen voor hulpsoftware. Dit kan op verschillende manieren. Bij afbeeldingen in een img-element blijft het alt-attribuut leeg. Ook kunnen CSS-technieken worden gebruikt, zoals CSS-clip of visually:hidden. Daarnaast bestaan er ARIA-technieken, zoals aria-hidden=”true”.
+De decoratie blijft zichtbaar op de pagina, maar wordt niet voorgelezen door hulpsoftware. Test dit altijd met een schermlezer of controleer de Accessibility Tree. 
+
 
 ## Gerelateerde NL Design System-richtlijnen
 
