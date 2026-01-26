@@ -73,11 +73,11 @@ De Candidate component voldoet aan de acceptatiecriteria voor toegankelijkheid. 
 
 ### Doel
 
-De Candidate component kan goed worden ingezet in productie. De component kan omgaan met verschillende soorten data, met verschillende schermformaten, met verschillende zoom levels, met forced colors mode, en andere gebruikersinstellingen.
+De Candidate component kan goed worden ingezet in productie. De component kan omgaan met verschillende soorten data, schermformaten, zoom levels, forced-colors mode en andere gebruikersinstellingen.
 
 ### Uitkomst
 
-De Candidate component voldoet aan de acceptatiecriteria en testcases voor gebruik. Alle geautomatiseerde tests slagen. De tests die niet automatisch te testen zijn te herkennen aan `describe.todo` en `it.todo` en zijn succesvol handmatig getest.
+De Candidate component voldoet aan de acceptatiecriteria en testcases voor gebruik. Alle geautomatiseerde tests slagen. De tests die niet automatisch te testen zijn, zijn te herkennen aan `describe.todo` en `it.todo` en zijn succesvol handmatig getest.
 
 ## Test coverage getest
 
@@ -97,7 +97,7 @@ De Candidate component kan makkelijk worden ingezet door developers en designers
 
 ### Uitkomst
 
-De Candidate component documentatie staat klaar om in de Publicatiefase beschikbaar te hebben. Er is documentatie voor gebruik van de component in React, CSS en Figma.
+De Candidate component documentatie staat klaar om in de Publicatiefase beschikbaar te worden gesteld. Er is documentatie voor het gebruik van de component in React, CSS en Figma.
 
 ## Rond de Testfase af {#afronden}
 
