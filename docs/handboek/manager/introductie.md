@@ -1,17 +1,17 @@
 ---
-title: Voor managers · Handboek
+title: Introductie · Voor managers · Handboek
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Voor managers
+sidebar_label: Introductie
 sidebar_position: 2
-pagination_label: Voor managers
+pagination_label: Introductie
 description: Waarom zou je als manager investeren in NL Design System?
   - manager
   - waarom NL Design System
   - waarom een design system
 ---
 
-# Voor managers
+# Introductie voor managers
 
 _Verbeter je online dienstverlening met NL Design System_
 
