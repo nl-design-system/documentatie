@@ -4,13 +4,15 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.1.1 Niet-tekstuele content
 pagination_label: WCAG-succescriterium 1.1.1 Niet-tekstuele content
-description: Zorg bij niet-tekstuele content voor een tekstalternatief.
+description: Zorg bij niet-tekstuele informatieve content voor een tekstalternatief.
 slug: 1.1.1
 keywords:
   - WCAG
-  - A
-  - waarneembaar
-  - tekstalternatieven
+  - Niveau A
+  - WCAG richtlijn waarneembaar
+  - WCAG toegankelijkheid afbeeldingen
+  - tekstalternatieven WCAG
+  - alt-tekst afbeeldingen
   - perceivable
   - text alternatives
   - non-text content
@@ -33,6 +35,32 @@ import Summary from "./summaries/_1.1.1-summary.md";
 ## Uitleg
 
 <Summary />
+
+Grafische inhoud zonder  tekst die een boodschap heeft, moet een tekstalternatief hebben dat deze informatie beschrijft. Bijvoorbeeld: er staat een foto van een kantoorgebouw op een webpagina om te  laten zien hoe dit gebouw verschilt van andere gebouwen. In het tekstalternatief staat dan: “Ons pand heeft een blauwe poort en staat tussen twee wolkenkrabbers.” 
+
+In de volgende situaties beschrijft het tekstalternatief niet de inhoud, maar iets anders. Lees per situatie wat nodig is. 
+
+### Klikbare elementen en invoervelden
+Alle interactieve elementen moeten een toegankelijke naam hebben die de functie van het element beschrijft. Deze functie moet terugkomen in de toegankelijke naam. Die naam kan op verschillende manieren worden gegeven. Bij een element met een afbeelding erop kan het tekstalternatief worden gebruikt. In het tekstalternatief beschrijf niet wat je ziet, maar wat de functie is van het element. Bijvoorbeeld: een zoekknop met een vergrootglas-icoon. Het tekstalternatief beschrijft de functie van de knop: “Zoek”. Lees meer over toegankelijke namen bij SC 4.1.2.
+
+### Video of audio (tijdsafhankelijke media)
+Bij multimedia die in de tijd moet worden gevolgd, moet het tekstalternatief aangeven  wat het is. Bijvoorbeeld: ‘een video over pinguins’. Dit tekstalternatief kan op verschillende manieren worden gegeven, bijvoorbeeld als kop op de pagina of als beschrijving van het iframe waarin de video staat.
+
+### Test of oefening
+Bij een test of een oefening die is ingesloten op een webpagina moet een tekstalternatief beschrijven wat het is. Bijvoorbeeld: ‘een interactieve test om het taalniveau te beoordelen’. Het is niet nodig om de volledige inhoud van de test te beschrijven. 
+
+### CAPTCHA
+CAPTCHA  is een beveiligingsmiddel dat controleert of een gebruiker een mens is en geen computerprogramma. Bij CAPTCHA is het belangrijk dat:
+een tekstalternatief aangeeft wat het is: “een CAPTCHA”, en
+er alternatieve CAPTCHA-vormen aanwezig zijn die andere zintuigen gebruiken. Bijvoorbeeld: een geluidstest naast een visuele test. 
+
+### Inhoud om een bepaald gevoel of sfeer op te roepen
+Bij deze inhoud is de beleving  belangrijker is dan de details. Dit geldt bijvoorbeeld voor een sfeervideo zonder belangrijke gesproken informatie, een decoratieve animatie, achtergrondmuziek of een kunstzinnige afbeelding. In het tekstalternatief staat kort wat het is, bijvoorbeeld: “een sfeervideo”. Als deze inhoud decoratief is, mag deze verborgen worden voor schermlezers.
+
+### Decoratie, opmaak of onzichtbare inhoud
+Decoratieve elementen moeten worden verborgen voor hulpsoftware. Dit kan op verschillende manieren. Bij afbeeldingen in een img-element blijft het alt-attribuut leeg. Ook kunnen CSS-technieken worden gebruikt, zoals CSS-clip of visually:hidden. Daarnaast bestaan er ARIA-technieken, zoals aria-hidden=”true”.
+De decoratie blijft zichtbaar op de pagina, maar wordt niet voorgelezen door hulpsoftware. Test dit altijd met een schermlezer of controleer de Accessibility Tree. 
+
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -93,10 +121,40 @@ Niet doen:
   <img src="iDEAL.svg" alt="" />
 </a>
 ```
+## Veelgemaakte fouten
 
-### Benoem waar een video of audio over gaat
+### Fout: er ontbreekt een alt-attribuut bij een img-element
+Zonder alt-attribuut wordt de bestandsnaam voorgelezen. Dit zorgt voor een ontoegankelijke en onprettige ervaring.
 
-Geef tekstalternatief voor een video of audio zodat de bezoeker weet waar deze over gaat. Dan kan de bezoeker al dan niet besluiten de video of audio af te spelen. Dit door bijvoorbeeld een `title`-attribuut te geven aan de iframe-embed. Of door het onderwerp te beschrijven in de begeleidende tekst of een kopje erboven.
+### Fout: het tekstalternatief bevat onleesbare tekens
+In een tekstalterantief staan tekens die de leesbaarheid verminderen. Bijvoorbeeld een onderliggend streepje waardoor meerdere woorden als één woord worden voorgelezen. 
+
+### Fout: het tekstalterantief is in een andere taal
+Bij anderstalige pagina’s moeten tekstalternatieven in dezelfde taal staan. Als dat niet gebeurt, worden deze teksten met verkeerde uitspraakregels voorgelezen.
+
+### Fout: het tekstalternatief ontbreekt of geeft niet dezelfde informatie
+Er staat bijvoorbeeld een gevarendriehoek bij een waarschuwing, maar deze afbeelding heeft geen tekst alternatief. De waarschuwing wordt dan niet correct  voorgelezen. Een ander voorbeeld is een PDF-icoon bij een link naar een document zonder passend tekstalternatief. 
+
+### Fout: complexe afbeeldingen hebben geen of onvoldoende tekstalterantief
+Een infographic of een schema heeft geen tekstalternatief waarin de belangrijke informatie uit de afbeelding staat. Een bezoeker die de afbeelding niet kan zien, heeft geen toegang tot deze informatie.
+
+### Fout: informatieve of interactieve afbeelding is verborgen voor hulpsoftware
+Een afbeelding die door hulpsoftware moet worden voorgelezen, is verborgen. Bijvoorbeeld een icoon dat aangeeft dat een link in een nieuw tabblad opent. 
+
+### Fout: de afbeelding verandert, maar het tekstalternatief niet
+Een menuknop toont eerst drie lijntjes met het tekstalternatief ‘open menu’. Na openen verandert het icoon in een kruisje, maar het tekstalternatief blijft hetzelfde. 
+
+### Fout: het tekstalterantief mist zichtbare tekst 
+Een tekstalternatief van een klickbaar logo bevat niet alle tekst die op het logo is te zien. Daardoor is de link niet goed met spraak te bedienen.
+
+### Fout: het tekstalternatief beschrijft niet de functie
+Een knop met een icoon van een oog heeft als tekstalternatief ‘een oog’ in plaats van ‘toon of verberg wachtwoord’. 
+
+### Fout: een interactief element met alleen  een afbeelding heeft geen tekstalternatief
+Een zoekknop heeft een icoon van een vergrootglas heeft geen tekstalternatief en geen andere toegankelijke naam. Een schermlezer kan de functie van de knop niet voorlezen.
+
+### Fout: een decoratieve afbeelding wordt toch voorgelezen
+Bij de nieuwsberichten staan afbeeldingen zonder informatieve waarde. De tekstalternatieven bevatten nietszeggende teksten of herhaalt de kop van het artikel.  
 
 ## W3C referenties
 
