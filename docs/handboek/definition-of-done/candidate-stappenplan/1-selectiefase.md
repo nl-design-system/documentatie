@@ -63,7 +63,7 @@ Er is voldoende informatie om te zorgen dat de Candidate component de juiste fun
 
 Doordat de component gebruikt is in meerdere producten kan worden aangenomen dat hij niet alleen aan functionele eisen voldoet, maar ook aan de niet-functionele eisen die door verschillende organisaties zijn gesteld.
 
-Eindgebruikers hebben de kans gehad om problemen te melden. Issues die ontdekt worden door componenten in productie te gebruiken zijn gevonden en al zoveel mogelijk opgelost.
+Eindgebruikers hebben de kans gehad om problemen te melden. Issues die ontdekt worden door componenten in productie te gebruiken, zijn gevonden en al zoveel mogelijk opgelost.
 
 Het kernteam selecteert alleen componenten die aantoonbaar nodig zijn en goed werken voor verschillende projecten en daarmee een permanente plek verdienen in het design system.
 
@@ -81,7 +81,7 @@ Het kernteam heeft input nodig uit de community om een Candidate component te bo
 
 ### Doel
 
-Er is voldoende inzicht uit de community om te bepalen op welke manier een Candidate component toegankelijk kan worden ingezet èn succesvol door WCAG-EM audits heen komt. Het kernteam hoeft niet zonder praktijkervaring te besluiten wat ervoor nodig is om een component toegankelijk in productie in te zetten.
+Er is voldoende inzicht uit de community om te bepalen op welke manier een Candidate component toegankelijk kan worden ingezet én succesvol door WCAG-EM audits heen komt. Het kernteam hoeft niet zonder praktijkervaring te besluiten wat ervoor nodig is om een component toegankelijk in productie in te zetten.
 
 ### Uitkomst
 
@@ -109,7 +109,7 @@ Het kernteam kan bij uitzondering componenten oppakken die nog niet voldoende be
 
 ### Uitkomst
 
-Componenten die belangrijk zijn voor toegankelijke websites en webapplicaties van de overheid kunnen beschikbaar worden gemaakt voor de community. Ook als er niet voldoende tijd of specialistische kennis beschikbaar is om hier een Community implementatie beschikbaar voor te maken die voldoet aan alle eisen van de selectiefase.
+Componenten die belangrijk zijn voor toegankelijke websites en webapplicaties van de overheid kunnen beschikbaar worden gemaakt voor de community. Ook als er onvoldoende tijd of specialistische kennis beschikbaar is om hiervoor een Community implementatie beschikbaar te maken die voldoet aan alle eisen van de selectiefase.
 
 ### Hoe kan de community helpen?
 
