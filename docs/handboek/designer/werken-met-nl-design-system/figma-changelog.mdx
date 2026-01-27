@@ -30,6 +30,246 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 9.0.0
+
+27 januari 2026
+
+Community componenten ‘Task Card’ (Action Multiple) en 'Task List' (Action Single) van Den Haag zijn aangepast.
+
+De volgende tokens zijn toegevoegd:
+
+- `denhaag.action.context.gap`
+- `denhaag.action.context.lg.gap`
+- `denhaag.action.actions.gap`
+
+Token `denhaag.action.border-style` is aangevuld met description `[code-only]`.
+
+De volgende tokens zijn hernoemd:
+
+- `denhaag.action.link.icon.color` naar `denhaag.action.link-icon.color`
+- `denhaag.action.link.icon.width` naar `denhaag.action.link-icon.width`
+- `denhaag.action.warning.icon.color` naar `denhaag.action.warning-icon.color`
+- `denhaag.action.warning.icon.width` naar `denhaag.action.warning-icon.width`
+
+De volgende tokens zijn verwijderd:
+
+- `denhaag.action.font-familiy`
+- `denhaag.action.font-size`
+- `denhaag.action.font-weight`
+- `denhaag.action.line-height`
+
+De waarde van de volgende tokens zijn gewijzigd:
+
+- Waarde van token `denhaag.action.date.gap` is gewijzigd van `{basis.space.row.md}` naar `{basis.space.column.md}`.
+- Waarde van token `denhaag.action.date.warning.gap` is gewijzigd van `{basis.space.row.md}` naar `{basis.space.column.md}`.
+- Waarde van token `denhaag.action.single.details.gap` is gewijzigd van `{basis.space.row.md}` naar `{basis.space.column.md}`.
+- Waarde van token `denhaag.action.single.details.lg.gap` is gewijzigd van `{basis.space.row.md}` naar `{basis.space.column.xl}`.
+
+Daarnaast is de opzet van deze Figma componenten aangepast en uitgebreid. Daarom adviseren we om deze componenten over te nemen alsof het nieuwe componenten zijn.
+
+Controleer hierbij wel of de wijzigingen van design token waarden ook wenselijk zijn voor het thema van jouw organisatie. Zo niet, dan kun je hier je huidige waarden invullen.
+
+- [Bekijk Task Card in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=19413-83910).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "denhaag": {
+    "action": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.transparent}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.border-subtle}"
+      },
+      "border-style": {
+        "$type": "other",
+        "$value": "solid",
+        "$description": "[code-only]"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.border-width.sm}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.row.md}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.xl}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.xl}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.xl}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.xl}"
+      },
+      "lg": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.xl}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        }
+      },
+      "actions": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        }
+      },
+      "content": {
+        "bold": {
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          }
+        }
+      },
+      "context": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        },
+        "lg": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.column.xl}"
+          }
+        }
+      },
+      "date": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "warning": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.negative.color-default}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          },
+          "gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.column.md}"
+          }
+        }
+      },
+      "details": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        },
+        "lg": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.column.xl}"
+          }
+        }
+      },
+      "link-icon": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": "{basis.size.icon.md}"
+        }
+      },
+      "warning-icon": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.negative.color-default}"
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": "{basis.size.icon.md}"
+        }
+      }
+    }
+  }
+}
+```
+
+- [Bekijk Task Navigation in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=22233-401951).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "denhaag": {
+    "action": {
+      "single": {
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-hover}"
+          }
+        },
+        "details": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.column.md}"
+          },
+          "lg": {
+            "gap": {
+              "$type": "dimension",
+              "$value": "{basis.space.column.xl}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 8.4.0
 
 26 januari 2026
