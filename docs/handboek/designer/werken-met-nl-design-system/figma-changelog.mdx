@@ -30,6 +30,127 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 9.1.0
+
+27 januari 2026
+
+Community component ‘Password Input’ van Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Password Input in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=28059-35343&p=f&t=uBnA3sqof2WhiOOB-11).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "ams": {
+    "password-input": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.background-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.border-color}"
+      },
+      "border-style": {
+        "$type": "other",
+        "$value": "solid",
+        "$description": "[code-only]"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.form-control.border-width}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.form-control.color}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{basis.form-control.font-family}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{basis.form-control.font-size}"
+      },
+      "font-weight": {
+        "$type": "fontWeights",
+        "$value": "{basis.form-control.font-weight}"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{basis.form-control.line-height}"
+      },
+      "outline-offset": {
+        "$type": "other",
+        "$value": "auto",
+        "$description": "[code-only]"
+      },
+      "padding-block": {
+        "$type": "dimension",
+        "$value": "{basis.form-control.padding-block-start}"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.form-control.padding-inline-start}"
+      },
+      "placeholder": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.form-control.placeholder.color}"
+        }
+      },
+      "disabled": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.color}"
+        },
+        "cursor": {
+          "$type": "other",
+          "$value": "disabled",
+          "$description": "[code-only]"
+        }
+      },
+      "hover": {
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "color": "{basis.form-control.hover.border-color}",
+            "spread": "{basis.form-control.hover.border-width}",
+            "type": "innerShadow"
+          }
+        }
+      },
+      "invalid": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.border-color}"
+        },
+        "hover": {
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.negative.border-hover}"
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "color": "{basis.color.negative.border-hover}",
+              "spread": "{basis.form-control.hover.border-width}",
+              "type": "innerShadow"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 9.0.0
 
 27 januari 2026
@@ -68,6 +189,12 @@ De waarde van de volgende tokens zijn gewijzigd:
 Daarnaast is de opzet van deze Figma componenten aangepast en uitgebreid. Daarom adviseren we om deze componenten over te nemen alsof het nieuwe componenten zijn.
 
 Controleer hierbij wel of de wijzigingen van design token waarden ook wenselijk zijn voor het thema van jouw organisatie. Zo niet, dan kun je hier je huidige waarden invullen.
+
+:::warning[Let op!]
+
+Heb je de 'oude' versie van deze componenten gebruikt in een prototype? Plaats de nieuwe versie ernaast en neem tekstuele 'overrides' over. Vervolgens kun je de 'oude' versie verwijderen uit je prototype.
+
+:::
 
 - [Bekijk Task Card in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=19413-83910).
 - Hieronder vind je de bijbehorende design tokens.
