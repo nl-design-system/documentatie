@@ -56,35 +56,34 @@ Als een hoogcontrastknop wordt toegevoegd aan de website om onvoldoende contrast
 - [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/).
 
 ## Hoe te testen
-
+Test altijd in minimaal twee browsers en wijzig in één browser het thema naar ‘donker’.
 Bepaal het kleurcontrast van tekst ten opzichte van de achtergrond. Hoe je test is afhankelijk van het moment van testen.
 
-Neem ook afbeeldingen waar tekst in staat mee, als deze tekst onderdeel is van de content. Hier is de [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/) handig, omdat je daarmee een pipetje kan gebruiken als je de kleurcodes niet weet.
+Neem ook afbeeldingen waar tekst in staat mee, als deze tekst onderdeel is van de content. 
 
-**Let op:** Deze eis geldt niet voor tekst op een afbeelding van een logo of van een merknaam, of tekst op een afbeelding die alleen ter decoratie dient en geen deel uitmaakt van de inhoud.
-
-Het NL Design System biedt een makkelijke tool voor het bepalen van kleurcontrast aan. Door het invoeren van de hexadecimale code van de tekstkleur en achtergrondkleur kun je controleren of de tekst voldoet aan WCAG op: [Contrast van kleuren](https://nldesignsystem.nl/contrast/).
-
-Voor ontwerpers is er voor Figma een aantal goede tools: [Figma contrast accessibility plugin tools](https://www.figma.com/community/accessibility/contrast).
-
-Voor developers: axe DevTools berekent het kleurcontrast ten opzichte van de tekst in de browser: [axe DevTools browser add-on](https://www.deque.com/axe/browser-extensions/).
-
-**Let op:** Controleer het kleurcontrast altijd in de gegenereerde webpagina in een browser en niet alleen in de code zelf. Linters kunnen helpen om laaghangend fruit te ondervangen, maar de eindtest voor kleurcontrast moet gebeuren op de webpagina zelf als alle componenten worden samengevoegd tot één geheel.
-
-Ben je geen designer of developer en test je het kleurcontrast in de browser, dan is WAVE handig: [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/).
+### Tools om contrast te testen:
+- Voor wedredactie: [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/)
+- Voor ontwerpers: [Figma contrast accessibility plugin tools](https://www.figma.com/community/accessibility/contrast)
+- Voor developers: [axe DevTools browser add-on](https://www.deque.com/axe/browser-extensions/)
+- Voor iedereen: [Contrast van kleuren](https://nldesignsystem.nl/contrast/) - het NL Design System biedt een makkelijke tool voor het bepalen van kleurcontrast aan. 
+- Kun je geen tool installeren? Gebruik deze tool in een browser: (Contrast checker)[https://webaim.org/resources/contrastchecker/]
+- Nog een tool: [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/)
 
 Verder staan er tools bij de bronnen op [Richtlijnen NL Design System voor kleuren](/richtlijnen/stijl/kleuren/) en als je zoekt op "Contrast Checker" in de zoekmachines vind je vele andere, kies degene die het beste bij jouw manier van werken past.
 
-Controleer in de volgende situaties of het kleurcontrast van de tekst voldoende blijft:
+### Wat moet je testen:
 
-- Verschillende gebruikelijke schermgroottes inclusief mobiele weergave.
-- Verschillend oriëntaties: 'portrait' en 'landscape'.
-- Vergroot de tekst alleen tot 200%.
-- Zoom in tot 400% vanaf schermbreedte van 1280 pixels (of zet de schermbreedte op 320 pixels).
-- Is er een dark mode aanwezig? Test ook hier het kleurcontrast van de tekst.
-- Controleer het kleurcontrast van placeholders.
-- Controleer de verschillende weergave van buttons en de links zoals: met toetsenbordfocus, als je er overheen hovert met de muis, ingedrukt, al eerder bezocht.
-- Vergeet ook de skiplinks niet.
+Tekst op de pagina: de meest betrouwbare manier is het controleren  van kleurcodes in de Inspector. Als dat niet mogelijk is,  kan een tool worden gebruikt.
+
+Tekst op een kleurverloop: maak gebruik van een tool. Gebruik de slechtste pixel van de achtergrond en de tekst. 
+
+Tekst op een afbeelding: maak gebruik van een tool. Test alle tekst in grafieken en diagrammen en alle tekst die via canvas- en svg-elementen wordt weergegeven
+
+Wat wel moet worden getest: alle tekst, inclusief tekst op knoppen en links. Test ook situaties waarin de tekst verandert, bijvoorbeeld als de muis over de tekst beweegt, een knop is ingedrukt of juist nog niet is geselecteerd, of als een link is bezocht.
+
+Controleeer de placeholderteksten in de invoervelden en vergeet de skiplinks niet.
+Wat niet hoeft te worden getest: logo’s, kunstobjecten met tekst, decoratieve tekst en tekst op uitgeschakelde elementen.
+
 
 ## Gebruikersonderzoek
 
