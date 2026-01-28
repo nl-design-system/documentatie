@@ -90,11 +90,11 @@
     w = n(51450),
     y = n(38985),
     f = n(64730),
-    v = n(44132),
-    k = n(1941),
+    k = n(44132),
+    v = n(1941),
     A = n(43825),
     x = n(30758);
-   const b = { color: p.A, dimension: j.A, fontFamilies: w.A, fontSizes: y.A, fontWeights: f.A, lineHeights: v.A, other: k.A, textDecoration: A.A },
+   const b = { color: p.A, dimension: j.A, fontFamilies: w.A, fontSizes: y.A, fontWeights: f.A, lineHeights: k.A, other: v.A, textDecoration: A.A },
     C = ({ type: e }) => (0, m.jsx)(u.In, { children: (0, x.createElement)(b[e]) });
    function T({ tokens: e }) {
     const t = (0, o.kD)(e),
@@ -137,7 +137,7 @@
   },
   33062(e, t, n) {
    'use strict';
-   n.d(t, { bo: () => s, KF: () => u, mJ: () => p, VZ: () => b, cR: () => x, Pv: () => j, qZ: () => i, kD: () => v, B2: () => m, Pc: () => a, f4: () => c, GT: () => k, fX: () => o, eQ: () => f, B_: () => y, o_: () => w, Rc: () => A });
+   n.d(t, { bo: () => s, KF: () => u, mJ: () => p, VZ: () => b, cR: () => x, Pv: () => j, qZ: () => i, kD: () => k, B2: () => m, Pc: () => a, f4: () => c, GT: () => v, fX: () => o, eQ: () => f, B_: () => y, o_: () => w, Rc: () => A });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     s = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -179,10 +179,10 @@
     w = (e) => e.join('.'),
     y = (e) => '--' + e.join('-'),
     f = (e, t) => t.reduce((e, t) => e?.[t], e);
-   function v(e, t = []) {
-    return Object.hasOwn(e, '$type') ? [t] : Object.keys(e).flatMap((n) => ('object' == typeof e[n] && null !== e[n] ? v(e[n], [...t, n]) : []));
+   function k(e, t = []) {
+    return Object.hasOwn(e, '$type') ? [t] : Object.keys(e).flatMap((n) => ('object' == typeof e[n] && null !== e[n] ? k(e[n], [...t, n]) : []));
    }
-   function k(e) {
+   function v(e) {
     const t = new Map();
     function n(e) {
      return t.has(e) || t.set(e, w(e)), t.get(e);
@@ -555,15 +555,15 @@
     w = n(90495),
     y = n(68873),
     f = n(25218),
-    v = n(1292),
-    k = n(72401),
+    k = n(1292),
+    v = n(72401),
     A = n(59840),
     x = n(99630),
     b = n(17889),
     C = n(12013);
    function T(e) {
     const t = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', p: 'p', pre: 'pre', ...(0, o.R)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(t.header, { children: (0, s.jsx)(t.h1, { id: 'gebruik-code', children: 'Gebruik Code' }) }), '\n', (0, s.jsx)(t.h2, { id: 'css', children: 'CSS' }), '\n', (0, s.jsx)(t.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, s.jsxs)(t.p, { children: [(0, s.jsxs)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-css', children: [(0, s.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-css.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/code-css'] }), '\nversie 1.'] }), '\n', (0, s.jsxs)(t.p, { children: ['Gebruik de ', (0, s.jsx)(t.code, { children: 'nl-code' }), ' class name op een ', (0, s.jsx)(t.code, { children: 'code' }), ' element:'] }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-html', children: '<code dir="ltr" translate="no" class="nl-code"> import { Code } from \'@nl-design-system-candidate/code-react\'; </code>\n' }) }), '\n', (0, s.jsx)(t.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-css\n' }) }), '\n', (0, s.jsx)(t.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-css/dist/code.css" />\n' }) }), '\n', (0, s.jsxs)(t.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, s.jsx)(t.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-css/dist/code.css" />\n' }) }), '\n', (0, s.jsx)(t.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/code-css/code.css";\n' }) }), '\n', (0, s.jsx)(t.h2, { id: 'react', children: 'React' }), '\n', (0, s.jsx)(t.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, s.jsxs)(t.p, { children: [(0, s.jsxs)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-react', children: [(0, s.jsx)('img', { src: 'https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-react.svg', alt: '', style: { verticalAlign: 'middle' } }), ' @nl-design-system-candidate/code-react'] }), '\nversie 1.'] }), '\n', (0, s.jsx)(t.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-react\n' }) }), '\n', (0, s.jsx)(t.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-jsx', children: 'import { Code } from "@nl-design-system-candidate/code-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <Code>import {Code} from \'@nl-design-system-candidate/code-react\';</Code>\n      </body>\n    </html>\n  );\n};\n' }) })] });
+    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(t.header, { children: (0, s.jsx)(t.h1, { id: 'gebruik-code', children: 'Gebruik Code' }) }), '\n', (0, s.jsx)(t.h2, { id: 'css', children: 'CSS' }), '\n', (0, s.jsx)(t.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, s.jsx)(t.p, { children: (0, s.jsx)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-css', children: '@nl-design-system-candidate/code-css' }) }), '\n', (0, s.jsxs)(t.p, { children: ['Gebruik de ', (0, s.jsx)(t.code, { children: 'nl-code' }), ' class name op een ', (0, s.jsx)(t.code, { children: 'code' }), ' element:'] }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-html', children: '<code dir="ltr" translate="no" class="nl-code"> import { Code } from \'@nl-design-system-candidate/code-react\'; </code>\n' }) }), '\n', (0, s.jsx)(t.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-css\n' }) }), '\n', (0, s.jsx)(t.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-css/dist/code.css" />\n' }) }), '\n', (0, s.jsxs)(t.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, s.jsx)(t.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-css/dist/code.css" />\n' }) }), '\n', (0, s.jsx)(t.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/code-css/code.css";\n' }) }), '\n', (0, s.jsx)(t.h2, { id: 'react', children: 'React' }), '\n', (0, s.jsx)(t.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, s.jsx)(t.p, { children: (0, s.jsx)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-react', children: '@nl-design-system-candidate/code-react' }) }), '\n', (0, s.jsx)(t.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-react\n' }) }), '\n', (0, s.jsx)(t.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, s.jsx)(t.pre, { children: (0, s.jsx)(t.code, { className: 'language-jsx', children: 'import { Code } from "@nl-design-system-candidate/code-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <Code>import {Code} from \'@nl-design-system-candidate/code-react\';</Code>\n      </body>\n    </html>\n  );\n};\n' }) })] });
    }
    function R(e = {}) {
     const { wrapper: t } = { ...(0, o.R)(), ...e.components };
@@ -589,11 +589,11 @@
       '\n',
       (0, s.jsx)(x.Fc, { component: L, headingLevel: 1, description: S }),
       '\n',
-      (0, s.jsx)(k.e, { component: L }),
+      (0, s.jsx)(v.e, { component: L }),
       '\n',
       (0, s.jsx)(t.admonition, { title: 'Tip', type: 'tip', children: (0, s.jsxs)(t.p, { children: ['Gebruik de ', (0, s.jsx)(t.a, { href: '/code-block/', children: 'Code Block' }), ' component als de code meerdere regels beslaat.'] }) }),
       '\n',
-      (0, s.jsx)(w.Zp, { className: 'implementation-card', children: (0, s.jsxs)(w.Wu, { children: [(0, s.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-1279', children: [(0, s.jsx)(v.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, s.jsxs)(y.N_, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-1279', children: [(0, s.jsx)(v.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, s.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-code--documentatie', children: [(0, s.jsx)(v.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, s.jsxs)(y.N_, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/code--documentatie', children: [(0, s.jsx)(v.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, s.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-css', children: [(0, s.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-css'] }), (0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-react', children: [(0, s.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-react'] }), (0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-tokens', children: [(0, s.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-tokens'] })] })] }) }),
+      (0, s.jsx)(w.Zp, { className: 'implementation-card', children: (0, s.jsxs)(w.Wu, { children: [(0, s.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-1279', children: [(0, s.jsx)(k.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, s.jsxs)(y.N_, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-1279', children: [(0, s.jsx)(k.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, s.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-code--documentatie', children: [(0, s.jsx)(k.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, s.jsxs)(y.N_, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/code--documentatie', children: [(0, s.jsx)(k.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, s.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-css', children: [(0, s.jsx)(k.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-css'] }), (0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-react', children: [(0, s.jsx)(k.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-react'] }), (0, s.jsxs)(y.N_, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-tokens', children: [(0, s.jsx)(k.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-tokens'] })] })] }) }),
       '\n',
       (0, s.jsx)(t.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
       '\n',
@@ -709,7 +709,7 @@
   },
   99630(e, t, n) {
    'use strict';
-   n.d(t, { VK: () => w, $9: () => f, mu: () => y, Fc: () => v });
+   n.d(t, { VK: () => w, $9: () => f, mu: () => y, Fc: () => k });
    var r = n(14537),
     s = n(13526),
     o = n(1292),
@@ -801,7 +801,7 @@
       n = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id).value;
      return e && (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)(r.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, a.jsxs)(r.Xy, { children: [n ? (0, a.jsxs)(r.Er, { children: ['Vul de ', (0, a.jsx)(r.N_, { href: n, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, a.jsxs)(r.Er, { children: [(0, a.jsxs)(r.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, a.jsxs)(r.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, a.jsx)(r.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, a.jsx)(r.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    v = ({ component: e, headingLevel: t, description: n }) => {
+    k = ({ component: e, headingLevel: t, description: n }) => {
      const s = e && j.bo[e.relayStep];
      return e && (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(h.p, { level: t, suffix: s && (0, a.jsx)(d.D, { state: s }), children: e.title }), (0, a.jsx)(r.fz, { lead: !0, children: n })] });
     };
