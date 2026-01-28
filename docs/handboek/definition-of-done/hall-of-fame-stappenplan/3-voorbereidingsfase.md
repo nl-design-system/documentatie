@@ -19,7 +19,7 @@ keywords:
 
 # Voorbereidingsfase voor Hall of Fame componenten
 
-## Security risico's
+## Security-risico's
 
 ### Doel
 
@@ -27,13 +27,13 @@ Bekende security-risico's bij het gebruik van de component zijn geïdentificeerd
 
 ### Uitkomst
 
-Alle relevante security-risico's die specifiek zijn voor deze component zijn in kaart gebracht. Voor elk risico is bepaald of het in de component zelf kan worden aangepakt of dat het door de implementerende organisatie moet worden opgelost. Eventuele extra acceptatiecriteria voor security zijn vastgelegd en er is documentatie beschikbaar om develoeprs en designers te waarschuwen voor situaties waarin extra oplettendheid nodig is.
+Alle relevante security-risico's die specifiek zijn voor deze component zijn in kaart gebracht. Voor elk risico is bepaald of het in de component zelf kan worden aangepakt of dat het door de implementerende organisatie moet worden opgelost. Eventuele extra acceptatiecriteria voor security zijn vastgelegd en er is documentatie beschikbaar om developers en designers te waarschuwen voor situaties waarin extra oplettendheid nodig is.
 
-## Privacy risico's
+## Privacy-risico's
 
 ### Doel
 
-Bekende privacy-risico's bij het gebruik van de component zijn geïdentificeerd en gedocumenteerd, zodat developers en designers weten wat ze moeten doen om de component in te zetten zonder onbedoeld AVG privacywetgeving te overtreden.
+Bekende privacy-risico's bij het gebruik van de component zijn geïdentificeerd en gedocumenteerd, zodat developers en designers weten wat ze moeten doen om de component in te zetten zonder onbedoeld AVG-wetgeving te overtreden.
 
 ### Uitkomst
 
@@ -43,21 +43,21 @@ Alle relevante privacy-risico's die specifiek zijn voor deze component zijn in k
 
 ### Doel
 
-Gebruikers zetten de component niet op een gebruiksonvriendelijke manier in, doordat veelvoorkomende fouten van te voren zijn bepaald en in de Ontwikkelfase kunnen worden gedocumenteerd met concrete do's en don'ts.
+Gebruikers zetten de component niet op een gebruiksonvriendelijke manier in, doordat veelvoorkomende fouten van tevoren zijn bepaald en in de Ontwikkelfase kunnen worden gedocumenteerd met concrete do's en don'ts.
 
 ### Uitkomst
 
-Veelvoorkomende manieren waarop de component verkeerd wordt gebruikt zijn geïdentificeerd door feedback uit de community en gebruikersonderzoek. Voor elk verkeerd gebruikspatroon is de goede manier bepaald en zijn do's en don'ts vastgesteld die in de Documentatiefase kunnen worden opgenomen.
+Veelvoorkomende manieren waarop de component verkeerd wordt gebruikt zijn geïdentificeerd door feedback uit de community en gebruikersonderzoek. Voor elk verkeerd gebruikspatroon is de goede manier bepaald en zijn do's en don'ts vastgesteld die in de Ontwikkelfase kunnen worden opgenomen.
 
-## Screenreader gedrag
+## Screenreader-gedrag
 
 ### Doel
 
-Bij beheer van de component kan makkelijk gevalideerd worden of de component nog werkt zoals verwacht voor gebruikers van hulpsoftware, doordat Het het verwachte screenreader gedrag is vastgelegd.
+Bij beheer van de component kan makkelijk gevalideerd worden of de component nog werkt zoals verwacht voor gebruikers van hulpsoftware, doordat het verwachte screenreader-gedrag is vastgelegd.
 
 ### Uitkomst
 
-Het verwachte screenreader gedrag voor alle varianten en states van de component is bepaald en vastgelegd. Er zijn duidelijke acceptatiecriteria opgesteld voor hoe de component moet worden aangekondigd door verschillende screenreaders. Het kernteam weet nu precies wat er getest moeten worden en wat het verwachte gedrag is bij screenreaders zoals NVDA, JAWS en VoiceOver.
+Het verwachte screenreader-gedrag voor alle varianten en states van de component is bepaald en vastgelegd. Er zijn duidelijke acceptatiecriteria opgesteld voor hoe de component moet worden aangekondigd door verschillende screenreaders. Het kernteam weet nu precies wat er getest moet worden en wat het verwachte gedrag is bij screenreaders zoals NVDA, JAWS en VoiceOver.
 
 ## Component combinaties
 
