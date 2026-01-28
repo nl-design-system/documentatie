@@ -11,6 +11,10 @@ keywords:
   - componenten maken
 ---
 
+<!--
+Wordt verder uitgewerkt in https://github.com/nl-design-system/documentatie/issues/3473#issue-3825110477
+-->
+
 # Eigen componenten maken voor NL Design System
 
 Als eerste is het een goed idee om te valideren dat de component die je in gedachten hebt nog niet bestaat binnen NL Design System.
