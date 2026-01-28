@@ -21,11 +21,11 @@ keywords:
 
 De Voorbereidingsfase start wanneer de Selectiefase is afgerond. Dan is alle input beschikbaar voor het vaststellen van de acceptatiecriteria en benodigde testcases.
 
-In de Voorbereidingsfase wordt vastgelegd welke varianten de component moet krijgen, wat de beste semantiek is, welke events beschikbaar moeten worden gesteld, welke Stories, automatische tests en design tokens nodig zijn.
+In de Voorbereidingsfase wordt vastgelegd welke varianten de component moet krijgen, wat de beste semantiek is, welke events beschikbaar moeten worden gesteld en welke Stories, automatische tests en design tokens nodig zijn.
 
 ![Een overzicht van de stappen in de Voorbereidingsfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme dat hierbij betrokken is: Developer relations en Design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-voorbereidingsfase.png)
 
-[Bekijk de illustratie voor de Voorbereidingsfase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-Voorbereidingsfase.png)
+[Bekijk de illustratie voor de Voorbereidingsfase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-voorbereidingsfase.png)
 
 De stappen en substappen in de Voorbereidingsfase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat de volgende stappen zien:
 
@@ -66,7 +66,7 @@ Draag je dit component ook bij in een Community implementatie, of heb je tijd om
 
 Wanneer er is gekeken naar de issues die voor de component zijn aangemaakt in de verschillende repositories van NL Design System, kan het kernteam bepalen welke issues moeten worden opgelost in de Candidate implementatie en welke aanpassingen nog moeten worden proefgedraaid in de community. Ook kan er een afweging worden gemaakt over breaking changes die in de Community component zijn uitgesteld vanwege het ongemak bij gebruikers.
 
-Deze issues, feature requests en geplande breaking changes zijn een aanvulling op de input uit de Selectiefase waar alleen wordt meegenomen welke dingen al succesvol in de component zitten. Met deze stap om naar de GitHub issues te kijken halen we ook de input op van alles wat nog niet is meegenomen, maar wel gewenst is.
+Deze issues, feature requests en geplande breaking changes zijn een aanvulling op de input uit de Selectiefase waar alleen wordt meegenomen welke dingen al succesvol in de component zitten. Met deze stap, waarin we naar de GitHub issues kijken, halen we ook de input op van alles wat nog niet is meegenomen, maar wel gewenst is.
 
 ### Doel
 
@@ -85,7 +85,7 @@ Het kernteam heeft samen met de input uit de Selectiefase nu alle input uit de c
 
 ## Varianten bepaald {#varianten}
 
-De component zoals deze nu in de community bestaat is, waar nodig, versimpeld of opgesplitst. Zodat de componenten die in het design system staan allemaal een duidelijke use case en overzichtelijke documentatie hebben.
+De component zoals deze nu in de community bestaat is, waar nodig, versimpeld of opgesplitst, zodat de componenten die in het design system staan allemaal een duidelijke use case en overzichtelijke documentatie hebben.
 
 Wanneer bijvoorbeeld blijkt dat de documentatie onnodig complex wordt door zinnen zoals "Voor X is de property Y verplicht, tenzij het variant Z is." kan het kernteam besluiten om de component op te splitsen.
 
@@ -97,7 +97,7 @@ De variaties kunnen gebruiksvriendelijk en toegankelijk ingezet worden door vers
 
 ### Uitkomst
 
-De variaties en het gedrag van de component zijn bepaald en er zijn GitHub Discussions voor de nieuwe componenten aangemaakt voor de voorgestelde losse component of variaties die niet worden meegenomen.
+De variaties en het gedrag van de component zijn bepaald en er zijn GitHub Discussions voor de nieuwe componenten aangemaakt en voor de voorgestelde losse component of variaties die niet worden meegenomen.
 
 ## Acceptatiecriteria voor toegankelijkheid bepaald {#a11y}
 
@@ -115,7 +115,7 @@ Het is duidelijk met welke WCAG succescriteria rekening is gehouden. Daarbij wor
 
 ### Doel
 
-De component kan makkelijk gevonden worden door verschillende gebruikers die een net andere namen voor de component gebruiken.
+De component kan makkelijk gevonden worden door verschillende gebruikers die net andere namen voor de component gebruiken.
 
 ### Uitkomst
 
@@ -131,7 +131,7 @@ De Candidate component heeft duidelijke namen voor de onderdelen die consistent 
 
 ### Uitkomst
 
-De onderdelen van de component zijn bepaald, de naamgeving is gekozen op basis van de NL Design System naming convention en vastgelegd.
+De onderdelen van de component zijn bepaald en de naamgeving is gekozen op basis van de NL Design System naming convention en vastgelegd.
 
 ## HTML bepaald {#html}
 
@@ -139,7 +139,7 @@ Goede semantiek is belangrijk voor toegankelijkheid en robuustheid van websites 
 
 ### Doel
 
-De onderdelen waaruit de component bestaat werken goed voor verschillende hulpsoftware en voldoen aan de NL Design System architectuur.
+De onderdelen waaruit de component bestaat, werken goed voor verschillende hulpsoftware en voldoen aan de NL Design System architectuur.
 
 ### Uitkomst
 
@@ -167,7 +167,7 @@ Genoeg design tokens zijn belangrijk om NL Design System in diverse huisstijlen 
 
 ### Doel
 
-De Candidate component is voor veel organisaties te gebruiken en deze kunnen migreren zonder een ander visueel ontwerp te doen.
+De Candidate component is voor veel organisaties te gebruiken, en zij kunnen deze migreren zonder een ander visueel ontwerp te hoeven toepassen.
 
 ### Uitkomst
 
@@ -175,7 +175,7 @@ Alle design tokens van de component zijn gebaseerd op een gemeenschappelijke use
 
 ## Stories en Specs vastgelegd {#stories-specs}
 
-Door te weten op welke manier de Community componenten al voldoen aan onze acceptatiecriteria weet het kernteam welke onderdelen ze 1-op-1 kunnen overnemen en welke in de Candidate component aangepast moeten worden. De Stories en specs die hiervoor klaar worden gezet kunnen vervolgens ook gebruikt worden om tijdens het maken en onderhouden van de Candidate component de kwaliteit te kunnen blijven verzekeren.
+Door te weten op welke manier de Community componenten al voldoen aan onze acceptatiecriteria, weet het kernteam welke onderdelen ze 1-op-1 kunnen overnemen en welke in de Candidate component aangepast moeten worden. De Stories en specs die hiervoor klaar worden gezet kunnen vervolgens ook gebruikt worden om tijdens het maken en onderhouden van de Candidate component de kwaliteit te kunnen blijven verzekeren.
 
 ### Doel
 
@@ -192,13 +192,13 @@ De Candidate kan gebouwd worden op basis van de juiste Community component onder
 
 Goede testcases zijn belangrijk om de component robuust te maken. De component wordt vaak op een pagina getoond met content die via CMS-en wordt gemaakt of op basis van data uit API's. Daarom moet de component om kunnen gaan met geen, weinig of juist veel content en in combinatie met Rich Text elementen.
 
-Ook is de manier waarop eindgebruikers de component zien afhankelijk van bijvoorbeeld hun schermformaat, internetconnectie, met vertaalplugins en gebruiksinstellingen zoals bijvoorbeeld lettergrootte, forced-colors mode of prefer reduced motion.
+Ook is de manier waarop eindgebruikers de component zien afhankelijk van bijvoorbeeld hun schermformaat, internetconnectie, vertaalplugins en gebruiksinstellingen zoals bijvoorbeeld lettergrootte, forced-colors mode of prefers-reduced-motion.
 
 Daarom is het belangrijk dat het kernteam zoveel mogelijk testcases klaarzet die zorgen dat de component zich in al deze situaties voorspelbaar gedraagt.
 
 ### Doel
 
-De Candidate component is goed getest voordat deze gepubliceerd wordt, niet alleen voor de standaard situaties, maar ook voor situaties die je anders pas in productie tegen komt.
+De Candidate component is goed getest voordat deze gepubliceerd wordt, niet alleen voor de standaard situaties, maar ook voor situaties die je anders pas in productie tegenkomt.
 
 ### Uitkomst
 

@@ -27,7 +27,7 @@ De stappen en substappen in de Publicatiefase kunnen soms parallel worden opgepa
 
 - Component gepubliceerd op npm door developer.
 - Component gepubliceerd in Figma door designer.
-- Visuele regressietests beschikbaar gemaakt voor de Community door de Developer relations & design relations nadat de component gepubliceerd is.
+- Visuele regressietests beschikbaar gemaakt voor de community door de Developer relations & design relations nadat de component gepubliceerd is.
 - Status bijgewerkt naar Candidate en component gepubliceerd op nldesignsystem.nl door Developer relations & design relations.
 - Candidate component gedeeld met de community door Design System Lead & Product Manager.
 
@@ -39,9 +39,9 @@ De Candidate component kan makkelijk worden gebruikt in diverse projecten zodat 
 
 ### Uitkomst
 
-De Candidate component in code is op dezelfde manier beschikbaar als de Community component waardoor teams in de community makkelijk kunnen wisselen.
+De Candidate component in code is op dezelfde manier beschikbaar als de Community component waardoor teams in de community deze makkelijk kunnen wisselen.
 
-Releases van Candidate component in code werken met versionering en changelogs zodat updaten naar nieuwe versies makkelijk en voorspelbaar werkt.
+Releases van de Candidate component in code werken met versionering en changelogs, zodat updaten naar nieuwe versies makkelijk en voorspelbaar werkt.
 
 ## Gepubliceerd in Figma
 
@@ -53,13 +53,13 @@ De Candidate component kan makkelijk worden gebruikt voor prototypes en designs 
 
 De Candidate component in Figma is op dezelfde manier beschikbaar als de Community component waardoor teams in de community makkelijk kunnen wisselen.
 
-Releases van Candidate component in Figma werken met versionering en changelogs zodat updaten naar nieuwe versies makkelijk en voorspelbaar werkt.
+Releases van de Candidate component in Figma werken met versionering en changelogs zodat updaten naar nieuwe versies makkelijk en voorspelbaar werkt.
 
-## Visuele regressietests beschikbaar voor de Community
+## Visuele regressietests beschikbaar voor de community
 
 ### Doel
 
-De Candidate component kan gebruikt worden in de visuele regressietests voor organisaties die hun huisstijl vastleggen bij een NL Design System.
+De Candidate component kan gebruikt worden in de visuele regressietests voor organisaties die hun huisstijl vastleggen bij NL Design System.
 
 ### Uitkomst
 
@@ -69,7 +69,7 @@ De Candidate component is op dezelfde manier beschikbaar in de Themes repository
 
 ### Doel
 
-De Candidate component kan makkelijk gevonden worden via nldesignsystem.nl
+De Candidate component kan makkelijk gevonden worden via nldesignsystem.nl.
 
 ### Uitkomst
 
@@ -83,4 +83,4 @@ De community weet dat er nu een Candidate versie van de component beschikbaar is
 
 ### Uitkomst
 
-De Candidate component is gedeeld met de Community en er kan worden gestart aan de Feedbackfase voor Hall of Fame.
+De Candidate component is gedeeld met de community en er kan worden gestart aan de Feedbackfase voor Hall of Fame.
