@@ -23,11 +23,11 @@ keywords:
 
 ### Doel
 
-De component krijgt pas de Hall of Fame status wanneer deze is gebruikt in verschillende productieomgevingen, zodat de stabiliteit en bruikbaarheid getest zijn in de praktijk en eventuele problemen in de Candidate fase zijn gevonden en opgelost.
+De component krijgt pas de Hall of Fame status wanneer deze is gebruikt in verschillende productieomgevingen, zodat de stabiliteit en bruikbaarheid getest zijn in de praktijk en eventuele problemen in de Candidatefase zijn gevonden en opgelost.
 
 ### Uitkomst
 
-Het kernteam weet dat Candidate component in productie is gebruikt in een diversiteit aan projecten. Er is aangetoond dat de component stabiel genoeg is voor kritische toepassingen. Er worden geen grote bugs of ontwerpfouten meer verwacht. Problemen die door eindgebruikers zijn gemeld zijn door het kernteam in de Candidate component opgelost, en de nieuwe versie is getest in productie.
+Het kernteam weet dat de Candidate component in productie is gebruikt in een diversiteit aan projecten. Er is aangetoond dat de component stabiel genoeg is voor kritische toepassingen. Er worden geen grote bugs of ontwerpfouten meer verwacht. Problemen die door eindgebruikers zijn gemeld worden door het kernteam in de Candidate component opgelost, en de nieuwe versie is getest in productie.
 
 ## Huisstijl input
 
@@ -37,7 +37,7 @@ De design tokens van de Candidate component werken goed voor verschillende organ
 
 ### Uitkomst
 
-De Candidate component is succesvol ingesteld voor tenminste 2 verschillende organisaties met verschillende huisstijlen. De design tokens zijn voldoende flexibel en de naamgeving is duidelijk genoeg voor verschillende gebruikers. Eventuele bugs, onduidelijkheden of missende design tokens zijn opgelost.
+De Candidate component is succesvol ingesteld voor ten minste 2 verschillende organisaties met verschillende huisstijlen. De design tokens zijn voldoende flexibel en de naamgeving is duidelijk genoeg voor verschillende gebruikers. Eventuele bugs, onduidelijkheden of missende design tokens zijn opgelost.
 
 ## Gerelateerde componenten input
 
@@ -57,16 +57,16 @@ De Candidate component kan aantoonbaar goed toegankelijk worden gebruikt in vers
 
 ### Uitkomst
 
-De Candidate component is succesvol door tenminste 2 WCAG-EM audits gekomen zonder dat er toegankelijkheidsproblemen met de component zelf zijn gevonden. Hiermee is aangetoond dat de component en de bijbehorende documentatie goed genoeg zijn om toegankelijk te worden ingezet. Eventueel context-afhankelijke problemen die gevonden zijn zijn opgenomen in de checklist voor toegankelijkheid van de component.
+De Candidate component is succesvol door ten minste 2 WCAG-EM audits gekomen zonder dat er toegankelijkheidsproblemen met de component zelf zijn gevonden. Hiermee is aangetoond dat de component en de bijbehorende documentatie goed genoeg zijn om toegankelijk te worden ingezet. Eventueel context-afhankelijke problemen die gevonden zijn opgenomen in de checklist voor toegankelijkheid van de component.
 
 ## Gebruikersonderzoek input
 
-Er is tenminste 1 gebruikersonderzoek beschikbaar waarin dit component voorkwam waarvan de inzichten beschikbaar zijn gemaakt.
+Er is ten minste 1 gebruikersonderzoek beschikbaar waarin dit component voorkwam waarvan de inzichten beschikbaar zijn gemaakt.
 
 ### Doel
 
-Feedback van eindgebruikers is meegenomen in de Candidate component, zodat de Hall of Fame component niet alleen technisch goed werkt, maar ook bewezen gebruiksvriendelijk is voor de mensen die er mee moeten werken.
+Feedback van eindgebruikers is meegenomen in de Candidate component, zodat de Hall of Fame component niet alleen technisch goed werkt, maar ook bewezen gebruiksvriendelijk is voor de mensen die ermee moeten werken.
 
 ### Uitkomst
 
-Er is tenminste 1 gebruikersonderzoek beschikbaar waarin de Candidate component is meegenomen. De inzichten uit dit onderzoek zijn geanalyseerd en waar nodig verwerkt in verbeteringen aan de component of de documentatie. Eventuele onduidelijkheden zijn gedocumenteerd op gebruikersonderzoeken.nl als aandachtspunten voor vervolgonderzoek. Er is besloten of de gevonden probelemen blokkerend zijn voor de Hall of Fame.
+Er is ten minste 1 gebruikersonderzoek beschikbaar waarin de Candidate component is meegenomen. De inzichten uit dit onderzoek zijn geanalyseerd en waar nodig verwerkt in verbeteringen aan de component of de documentatie. Eventuele onduidelijkheden zijn gedocumenteerd op gebruikersonderzoeken.nl als aandachtspunten voor vervolgonderzoek. Er is besloten of de gevonden problemen blokkerend zijn voor de Hall of Fame.
