@@ -7,6 +7,14 @@ pagination_label: Architectuur
 description: NL Design System architectuur
 ---
 
+<!--
+De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd:
+- Als developer wil ik weten hoe ik mijn project kan inrichten volgens de architectuur van het NL Design System, zodat ik kan samenwerken met andere NL Design System implementaties.
+- Als developer wil ik begrijpen hoe design tokens zijn gestructureerd en toegepast, zodat ik mijn project correct kan uitbreiden, thematiseren en onderhouden op basis van deze tokens.
+- Als developer wil ik inzicht hebben in de backlog en de bijbehorende eisen, zodat ik weet welke functionaliteit beschikbaar is, wat gepland staat en waar ik aan kan bijdragen.
+- Als Developer Relations engineer wil ik een link naar documentatie kunnen sturen, zodat de andere developers de architectuur leren kennen.
+-->
+
 # Jouw project inrichten op de NL Design System architectuur
 
 Twee teams bij verschillende organisaties werken deze periode voor hun eigen doeleinden aan NL Design System componenten. De ontwikkelingen zijn ver genoeg gevorderd dat ze de komende twee weken gebruik gaan maken van elkaars componenten. Binnenkort sluiten meer teams aan. Daarna komen de componenten één voor één beschikbaar voor Rijkshuisstijl en voor projecten voor Gemeente Amsterdam. Hoe kunnen ze zo succesvol samenwerken, terwijl ze technisch andere eisen hebben? Hoe kunnen projecten samenwerken en ook een helemaal eigen visueel ontwerp realiseren?
