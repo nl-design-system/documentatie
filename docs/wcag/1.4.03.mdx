@@ -84,6 +84,25 @@ Wat wel moet worden getest: alle tekst, inclusief tekst op knoppen en links. Tes
 Controleeer de placeholderteksten in de invoervelden en vergeet de skiplinks niet.
 Wat niet hoeft te worden getest: logo’s, kunstobjecten met tekst, decoratieve tekst en tekst op uitgeschakelde elementen.
 
+## Veelvoorkomende fouten
+
+Fout: tekst kleiner dan 19px en niet vetgedrukt heeft een contrastratio onder 4,5:1. 
+Tekst met een contrastratio lager dan 4,5:1 is niet voor iedereen leesbaar.
+
+Fout: linktest heeft onvoldoende kleurcontrast als een muis over het element beweegt of als een link is bezocht.
+Als een link van kleur verandert, mag het contrast van de linktekst niet lager worden dan 4,5:1. Anders is de link niet leesbaar voor bezoekers met een milde visuele beperking. 
+
+Fout: tekst op de knop heeft onvoldoende kleurcontrast bij focus.
+Tekst op een knop mag nooit minder contrast hebben dan 4,5:1. De enige uitzondering is als een knop die niet actief is (‘disabled’ in de HTML).
+
+Fout: cijfers van een geordende lijst zijn toegevoegd via CSS en de contrastratio is onder 4,5:1. Opsommingstekens zijn decoratief, maar cijfers niet. Omdat cijfers als tekst gelden, moeten ze voldoen aan de contrasteisen. 
+
+Fout: placeholdertekst in een invoerveld heeft een contrastratio onder 4,5:1.
+Deze eis geldt alleen voor placeholdertekst die werkt als label voor het invoerveld of een belangrijke instructie. Staat deze informatie ook als tekst op de pagina, dan is de placeholdertekst decoratief en hoeft niet te voldoen aan de minimale contrasteisen. 
+
+Fout: bij het vergroten van de tekst tot 200% kan de tekst uit het kader lopen en kan een contrastratio lager worden dan 4,5:1. 
+Het kan zijn dat de tekst dan onleesbaar wordt omdat de achtergrondkleur anders is dan die van het kader.
+
 
 ## Gebruikersonderzoek
 
