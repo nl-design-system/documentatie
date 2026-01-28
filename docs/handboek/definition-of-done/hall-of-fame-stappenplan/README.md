@@ -24,7 +24,7 @@ Het Hall of Fame stappenplan bestaat uit 6 fases. Elke fase wordt afgerond voord
 
 <!-- ### Doel -->
 
-Het kernteam zorgt met de feedback dat de community voldoende tijd heeft om de Candidate component uit te proberen in projecten en in verschillende huisstijlen. De Hall of Fame component kan zo stabiel worden opgeleverd met weinig kans op breaking changes omdat deze in de feedbackfase al zijn verwerkt.
+Het kernteam zorgt er met de Feedbackfase voor dat dat de community voldoende tijd heeft om de Candidate component uit te proberen in projecten en in verschillende huisstijlen. Zo kan de Hall of Fame component stabiel worden opgeleverd, met weinig kans op breaking changes, omdat deze in de Feedbackfase al zijn verwerkt.
 
 <!-- ### Uitkomst -->
 
@@ -36,11 +36,11 @@ Meer weten? [Bekijk de stappen van de Feedbackfase](/handboek/estafettemodel/com
 
 <!-- ### Doel -->
 
-Het kernteam wil met de selectiefase zorgen dat er genoeg feedback gegeven is door de community om een succesvolle Hall of Fame component te maken die voldoet aan de eisen en wensen van de organisaties die deze gaan gebruiken.
+Het kernteam wil met de Selectiefase zorgen dat er genoeg feedback gegeven is door de community om een succesvolle Hall of Fame component te maken die voldoet aan de eisen en wensen van de organisaties die deze gaan gebruiken.
 
 <!-- ### Uitkomst -->
 
-Alleen een component die voldoende is gebruikt wordt geselecteerd voor het Hall of Fame proces. Zo heeft het kernteam voldoende feedback om een stabiele Hall of Fame component te maken waar geen breaking changes meer worden verwacht.
+Alleen een component die voldoende is gebruikt, wordt geselecteerd voor het Hall of Fame proces. Zo heeft het kernteam voldoende feedback om een stabiele Hall of Fame component te maken waarvoor geen breaking changes meer worden verwacht.
 
 Meer weten? [Bekijk de stappen van de Selectiefase](/handboek/estafettemodel/componenten/hall-of-fame/selectiefase)
 
@@ -48,11 +48,11 @@ Meer weten? [Bekijk de stappen van de Selectiefase](/handboek/estafettemodel/com
 
 <!-- ### Doel -->
 
-Het kernteam wil met de voorbereidingfase zorgen dat beslissingen genomen zijn voordat de ontwikkelfase van start gaat zodat de documentatie, stories en de component zoveel mogelijk parallel kunnen worden gemaakt.
+Het kernteam wil met de Voorbereidingfase zorgen dat beslissingen genomen zijn voordat de Ontwikkelfase van start gaat zodat de documentatie, stories en de component zoveel mogelijk parallel kunnen worden gemaakt.
 
 <!-- ### Uitkomst -->
 
-Er is voldoende informatie over security, privacy, screenreader gedrag en gerelateerde componenten om consistente documentatie en stories beschikbaar te maken in de Ontwikkelfase.
+Er is voldoende informatie over security, privacy, screenreader-gedrag en gerelateerde componenten om consistente documentatie en stories beschikbaar te maken in de Ontwikkelfase.
 
 Meer weten? [Bekijk de stappen van de Voorbereidingsfase](/handboek/estafettemodel/componenten/hall-of-fame/voorbereidingsfase)
 
@@ -60,11 +60,11 @@ Meer weten? [Bekijk de stappen van de Voorbereidingsfase](/handboek/estafettemod
 
 <!-- ### Doel -->
 
-Het kernteam wil met de ontwikkelfase zorgen dat er gefocust kan worden op een goed gedocumenteerd, voorspelbaar component waar developers en designers alle informatie hebben om deze toegankelijk en gebruiksvriendelijk in te zetten.
+Het kernteam wil met de Ontwikkelfase zorgen dat er gefocust kan worden op een goed gedocumenteerde en voorspelbare component waar developers en designers alle informatie hebben om deze toegankelijk en gebruiksvriendelijk in te zetten.
 
 <!-- ### Uitkomst -->
 
-De Hall of Fame component is gebouwd op basis van de Candidate component en heeft een web component implementatie zodat deze framework onafhankelijk kan worden ingezet.
+De Hall of Fame component is gebouwd op basis van de Candidate component en heeft een webcomponent-implementatie zodat deze framework-onafhankelijk kan worden ingezet.
 
 Er is documentatie beschikbaar zodat veelgemaakte fouten kunnen worden voorkomen en er zijn voorbeelden beschikbaar om deze fouten eenvoudig op te kunnen lossen.
 
@@ -74,13 +74,13 @@ Meer weten? [Bekijk de stappen van de Ontwikkelfase](/handboek/estafettemodel/co
 
 <!-- ### Doel -->
 
-Het kernteam wil met de testfase zorgen dat de component voldoet aan de [NL Design System Baseline](/baseline) zodat de community de component met vertrouwen kan inzetten. Bugs en breaking changes worden zo voorkomen.
+Het kernteam wil met de Testfase zorgen dat de component voldoet aan de [NL Design System Baseline](/baseline), zodat de community de component met vertrouwen kan inzetten. Bugs en breaking changes worden zo voorkomen.
 
 De documentatie is goed te begrijpen door developers, designers en contentmakers zodat de component toegankelijk en gebruiksvriendelijk wordt ingezet.
 
 <!-- ### Uitkomst -->
 
-Alle problemen die bij het testen naar voren komen zijn gelijk opgelost en extra testcases zijn toegevoegd om deze fouten in de toekomst waar mogelijk automatisch te vinden.
+Alle problemen die tijdens het testen naar voren komen, zijn direct opgelost. Daarnaast zijn extra testcases toegevoegd om deze fouten in de toekomst waar mogelijk automatisch te detecteren.
 
 Meer weten? [Bekijk de stappen van de Testfase](/handboek/estafettemodel/componenten/hall-of-fame/testfase)
 
@@ -88,24 +88,24 @@ Meer weten? [Bekijk de stappen van de Testfase](/handboek/estafettemodel/compone
 
 <!-- ### Doel -->
 
-Het kernteam zorgt met de publicatiefase dat de component kan worden ingezet door organisaties die nu de Candidate component gebruiken, organisaties die een Candidate extentie hebben bijgedragen èn door nieuwe organisaties.
+Het kernteam zorgt met de Publicatiefase dat de component kan worden ingezet door organisaties die nu de Candidate component gebruiken, organisaties die een Candidate extensie hebben bijgedragen èn door nieuwe organisaties.
 
 <!-- ### Uitkomst -->
 
-De Hall of Fame component is beschikbaar op npm, in Figma op [nldesignsystem.nl](https://nldesignsystem.nl) en in alle prototypes en hulpmiddelen die het kernteam onderhoudt.
+De Hall of Fame component is beschikbaar op npm, in Figma, op [nldesignsystem.nl](https://nldesignsystem.nl) en in alle prototypes en hulpmiddelen die het kernteam onderhoudt.
 
 Meer weten? [Bekijk de stappen van de Publicatiefase](/handboek/estafettemodel/componenten/hall-of-fame/publicatiefase)
 
 ## Voortgang bekijken
 
-Op de component pagina van componenten die tenminste de Candidate status hebben bereikt is de voorgang van het Hall of Fame proces te volgen onder het kopje Definition of Done. Zie bijvoorbeeld [de Button pagina](/button#definition-of-done).
+Op de componentpagina's van componenten die ten minste de Candidate status hebben bereikt is de voortgang van het Hall of Fame proces te volgen onder het kopje Definition of Done. Zie bijvoorbeeld [de Button pagina](/button#definition-of-done).
 
-De stappen worden bijgehouden in het GitHub projectbord [Components - 4 - Hall of Fame](https://github.com/orgs/nl-design-system/projects/30) en regelmatig geupdatet op de website.
+De stappen worden bijgehouden in het GitHub projectbord [Components - 4 - Hall of Fame](https://github.com/orgs/nl-design-system/projects/30) en regelmatig geüpdatet op de website.
 
 :::info[Emojis]
-Om goed overzicht te houden in het bord met veel kolommen gebruikt het kernteam Emojis in de titel van elke kolom om de fase waar een stap bij hoort aan te duiden. De volgende Emojis worden voor de verschillende fases gebruikt:
+Om goed overzicht te houden in het bord met veel kolommen gebruikt het kernteam emoji’s in de titel van elke kolom om de fase waar een stap bij hoort aan te duiden. De volgende emoji’s worden voor de verschillende fases gebruikt:
 
-1. 💬: Feedbackfase. Spreekballon wordt hier gebruikt omdat in deze fase met de community word gesproken en samengewerkt om feedback op te halen over de Candidate component.
+1. 💬: Feedbackfase. Spreekballon wordt hier gebruikt omdat in deze fase met de community wordt gesproken en samengewerkt om feedback op te halen over de Candidate component.
 2. 🔍: Selectiefase. Vergrootglas wordt hier gebruikt omdat in deze fase gespeurd wordt of er voldoende community input beschikbaar is om aan de rest van het Hall of Fame proces te beginnen.
 3. 📝: Voorbereidingsfase. Notitieblok met potlood wordt hier gebruikt omdat in deze fase de acceptatiecriteria en testcases worden vastgesteld.
 4. 🛠️: Ontwikkelfase. Hamer met moersleutel wordt hier gebruikt omdat in deze fase dingen gemaakt worden.
