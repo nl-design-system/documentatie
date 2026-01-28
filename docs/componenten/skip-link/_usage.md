@@ -4,8 +4,7 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fskip-link-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/skip-link-css](https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-css)
-versie 1.
+[@nl-design-system-candidate/skip-link-css](https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-css)
 
 Gebruik de `nl-skip-link` class name op een `a` element:
 
@@ -44,8 +43,7 @@ import "@nl-design-system-candidate/skip-link-css/skip-link.css";
 
 De React component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fskip-link-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/skip-link-react](https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-react)
-versie 1.
+[@nl-design-system-candidate/skip-link-react](https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-react)
 
 Je kunt de npm package zo installeren:
 
