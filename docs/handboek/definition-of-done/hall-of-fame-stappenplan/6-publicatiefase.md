@@ -63,7 +63,7 @@ De component-pagina op nldesignsystem.nl is bijgewerkt naar Hall of Fame status.
 
 ### Doel
 
-Gebruikers van de NL Design System component gebruiken zoveel mogelijk de nieuwste en beste versie. Het is duidelijk welke implementatie van een component je het best kan gebruiken. Er gaat geen tijd en aandacht meer naar de oude component.
+Gebruikers van de NL Design System component gebruiken zoveel mogelijk de nieuwste en beste versie. Het is duidelijk welke implementatie van een component men het best kan gebruiken. Er gaat geen tijd en aandacht meer naar de oude component.
 
 ### Uitkomst
 
