@@ -602,6 +602,113 @@ En vervolgens:
 <main class="example-rich-text"></main>
 ```
 
+## Je eigen thema en custom font installeren
+
+In dit hoofdstuk leer je hoe je een eigen thema toepast op de NLDS componenten die je hebt toegevoegd.
+
+### Eigen thema installeren
+
+De voorbeeldcode gebruikt de designs tokens van het voorbeeld-thema. Deze is al uitgewerkt. Deze kun je vervangen door deze regels te verwijderen:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0/dist/theme.css"
+/>
+```
+
+Hiervoor in de plaats voeg je jouw eigen design tokens toe:
+
+```html
+<link rel="stylesheet" href="<jouw-thema>.css" />
+```
+
+Mocht je nog geen eigen thema hebben, dan kun je een thema maken op basis van het [start-thema](https://nldesignsystem.nl/handboek/huisstijl/themas/start-thema/). Het [voorbeeld-thema](https://nldesignsystem.nl/handboek/huisstijl/themas/voorbeeld-thema/#voorbeeld-thema) is hierop gebaseerd en dient als voorbeeld hoe je dit ook zou kunnen bereiken met je eigen thema.
+
+Bij het maken van een eigen thema bepaal je hoe de NL Design System-componenten eruitzien binnen jouw huisstijl. Dat doe je door het definiëren van **design tokens**: herbruikbare variabelen voor onder andere kleuren, typografie, spacing, borders en states (hover, focus, disabled).
+
+Een eigen thema geeft je de vrijheid om:
+
+- de kleuren aan te passen aan je huisstijl (bijvoorbeeld primaire, secundaire en accentkleuren);
+- typografie te bepalen, zoals lettertypes, lettergroottes en regelhoogtes;
+- consistente marges, padding en afrondingen te gebruiken;
+- visuele details zoals schaduwen en focus-stijlen vast te leggen.
+
+Het start-thema biedt hiervoor een minimale, overzichtelijke basis. Je vult dit thema stap voor stap aan met je eigen tokens, waarbij je alleen hoeft te definiëren wat afwijkt van de standaard. Het voorbeeld-thema laat zien hoe zo’n volledige uitwerking eruit kan zien en kan dienen als inspiratie of referentie.
+
+Wanneer je een eigen thema gebruikt, is het gebruikelijk om ook je **eigen huisstijl-lettertypes** toe te voegen. Dit kan door fonts zelf te hosten of via een externe bron, en deze vervolgens via design tokens te koppelen aan de typografie-instellingen van het thema. Let daarbij op performance, licenties en fallback-fonts.
+
+Het is aan te raden om je thema iteratief op te bouwen en regelmatig te testen met verschillende componenten. Zo zie je snel of alle tokens goed zijn ingevuld en blijft je ontwerp consistent, toegankelijk en onderhoudbaar.
+
+Als je een eigen thema gebruikt, wil je waarschijnlijk ook je eigen huisstijl lettertypes (fonts) gebruiken.
+
+### Manieren van fonts hosten en installeren
+
+Het is technisch mogelijk om fonts in te laden via een CDN, zoals Google Fonts. Dit heeft echter enkele nadelen:
+
+- **Privacy**: Er wordt een verbinding gemaakt met een server van derden (bijv. Google), wat privacy-implicaties kan hebben (GDPR).
+- **Performance**: Je bent afhankelijk van de beschikbaarheid en snelheid van de externe server.
+- **Stabiliteit**: Als de externe dienst wijzigt of stopt, kan je font kapot gaan.
+
+Daarom is het beter om fonts lokaal te hosten of via een NPM package te installeren, mits je NPM gebruikt.
+
+Soms worden fonts bijgewerkt, daar moet je ook op voorbereid zijn.
+
+#### Import met NPM package (@fontsource)
+
+Een populaire en makkelijke manier om open source fonts te gebruiken is via het [Fontsource](https://fontsource.org/) project. Fontsource maakt NPM packages van Google Fonts (en andere open source fonts).
+
+**Voordelen:**
+
+- Fonts worden self-hosted (geen externe requests).
+- Versiebeheer via `package.json`.
+- Makkelijke updates (`npm update`).
+
+**Voorbeeld: Fira Sans**
+
+Stel je wilt het font "Fira Sans" gebruiken.
+
+1.  Installeer de package:
+
+    ```bash
+    npm install @fontsource/fira-sans
+    ```
+
+2.  Importeer het font in je JavaScript of CSS bestand (afhankelijk van je build setup):
+
+    ```javascript
+    import "@fontsource/fira-sans"; // Defaults to weight 400
+    import "@fontsource/fira-sans/400.css"; // Weight 400
+    import "@fontsource/fira-sans/400-italic.css"; // Italic
+    import "@fontsource/fira-sans/700.css"; // Bold
+    ```
+
+3.  Gebruik het font in je CSS variabelen (in je thema configuratie):
+    ```css
+    :root {
+      --font-family-base: "Fira Sans", sans-serif;
+    }
+    ```
+
+### Best Practices
+
+Bij het kiezen en implementeren van fonts zijn er een aantal richtlijnen uit de Stijlrichtlijnen waar je rekening mee moet houden. Zie ook de [typografie richtlijnen](/richtlijnen/stijl/typografie/lettertype/#eigen-font-family-naam-voor-bold-of-italic-variant).
+
+#### Vermijd 'Faux' styles
+
+Gebruik geen `font-weight: bold` of `font-style: italic` als je niet de daadwerkelijke vette of cursieve variant van het font hebt ingeladen. Browsers proberen dit soms na te bootsen (faux bold/italic), maar dit ziet er vaak lelijk en onprofessioneel uit.
+
+Zorg ervoor dat je de specifieke font-bestanden (of imports) voor de gewichten en stijlen die je gebruikt ook daadwerkelijk inlaadt (bijv. 400, 400italic, 700).
+
+#### @font-face definities
+
+Bespaar niet op het includen van volledige `@font-face` definities. Moderne browsers zijn slim genoeg om fonts pas te downloaden wanneer ze daadwerkelijk op de pagina gebruikt worden.
+
+Dit is ook belangrijk voor:
+
+- **Google Translate**: Als een gebruiker de pagina vertaalt, kunnen er karakters nodig zijn die niet in je standaard subset zitten.
+- **Internationale tekens**: Voor talen als Japans worden karakters vaak pas geladen als ze nodig zijn. Door de juiste definities te hebben, zorg je voor een goede weergave in alle scenario's.
+
 ## Heb je feedback?
 
 Dit is een eerste versie, we willen graag van de community horen of dit stappenplan werkbaar en nuttig is.
