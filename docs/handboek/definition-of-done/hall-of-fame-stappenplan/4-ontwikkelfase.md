@@ -31,9 +31,9 @@ Er zijn duidelijke richtlijnen beschikbaar voor het invullen van alle design tok
 
 De kleurcombinaties waarmee de component voldoende contrast heeft zijn vastgelegd in JSON zodat hulpmiddelen automatisch waarschuwingen kunnen tonen voor combinaties die toegankelijkheidsproblemen kunnen veroorzaken (zoals onvoldoende kleurcontrast).
 
-Voor de situaties die van toepassing zijn op een component, zijn voorbeelden beschikbaar in de Evil Storybook.
+Voor de situaties die van toepassing zijn op een component, zijn voorbeelden beschikbaar in de 'Evil Storybook'.
 
-Voor de situaties herkennen zijn unit tests voor elke component, liefst op basis van de stories van Evil Storybook, met bijvoorbeeld Playwright.
+Om deze situaties te herkennen zijn er unit tests voor elk component, liefst op basis van de stories van Evil Storybook, met bijvoorbeeld Playwright.
 
 ## Richtlijnen voor redacteuren
 
@@ -45,7 +45,7 @@ De Hall of Fame component heeft voldoende documentatie en hulpmiddelen zodat red
 
 Er zijn duidelijke richtlijnen beschikbaar voor redacteuren over hoe de component moet worden gebruikt in een CMS of andere contentmanagement tools. Deze richtlijnen bevatten concrete voorbeelden van goede en slechte content, uitleg over toegankelijkheidseisen (zoals alt-teksten of labelverplichtingen) en best practices voor gebruiksvriendelijkheid.
 
-De contentrichtlijnen die van toepassing zijn op de component zijn vastgelegd in een JSON. De validatieregels zijn vastgelegd op component-niveau en element-niveau, zodat automatisch de link gelegd kan worden naar relevante documentatie, en hulpmiddelen automatisch waarschuwingen kunnen tonen.
+De contentrichtlijnen die van toepassing zijn op de component zijn vastgelegd in een JSON-bestand. De validatieregels zijn vastgelegd op component-niveau en element-niveau, zodat automatisch de link gelegd kan worden naar relevante documentatie, en hulpmiddelen automatisch waarschuwingen kunnen tonen.
 
 ## Risico's met betrekking tot security gedocumenteerd
 
@@ -53,19 +53,19 @@ De contentrichtlijnen die van toepassing zijn op de component zijn vastgelegd in
 
 De Hall of Fame component kan werken in een veilige omgeving, bijvoorbeeld wanneer de website DigiD-gecertificeerd is. Er is voldoende documentatie zodat gebruikers van de component zich bewust zijn van security-aspecten en een aanpak kiezen om de component zo veilig mogelijk toe te passen.
 
-## Uitkomst
+### Uitkomst
 
-Relevante security-aspecten uit de voorbereidingsfase zijn opgenomen in de component documentatie. Er is uitleg wat het risico is, in welke situaties het relevant is en welke maatregelen je kan nemen. Het kopje in de documentatie van de component overgeslagen wanneer security niet relevant is voor het component.
+Relevante security-aspecten uit de voorbereidingsfase zijn opgenomen in de component documentatie. Er is uitleg wat het risico is, in welke situaties het relevant is en welke maatregelen je kan nemen. Deze documentatie wordt overgeslagen wanneer security niet relevant is voor het component.
 
 ## Risico's met betrekking tot privacy gedocumenteerd
 
 ### Doel
 
-De Hall of Fame component kan werken volgens AVG richtlijnen. Er is voldoende documentatie zodat gebruikers van de component zich bewust zijn van privacy-risico's en weten hoe ze deze kunnen voorkomen.
+De Hall of Fame component kan werken volgens AVG-richtlijnen. Er is voldoende documentatie zodat gebruikers van de component zich bewust zijn van privacy-risico's en weten hoe ze deze kunnen voorkomen.
 
 ### Uitkomst
 
-Alle geïdentificeerde privacy-risico's uit de voorbereidingsfase zijn opgenomen in de component documentatie. Voor elk risico is uitgelegd wat het risico is, welke AVG-verplichtingen spelen en welke maatregelen genomen kunnen worden. Als er geen privacy aspecten zijn is het kopje in de documentatie van de component overgeslagen.
+Alle geïdentificeerde privacy-risico's uit de voorbereidingsfase zijn opgenomen in de component documentatie. Voor elk risico is uitgelegd wat het risico is, welke AVG-verplichtingen spelen en welke maatregelen genomen kunnen worden. Als er geen privacy aspecten zijn wordt deze documentatie overgeslagen.
 
 ## Doel van de component vastgelegd
 
@@ -85,7 +85,7 @@ De Hall of Fame component helpt veelgemaakte toegankelijkheidsfouten bij het geb
 
 ### Uitkomst
 
-Veelgemaakte toegankelijkheidsfouten bij het gebruik van de component zijn gedocumenteerd door voorbeelden van verkeerd gebruik te laten zien met concrete voorbeelden van een toegankelijk alternatief. Er zijn do's en don'ts die duidelijk maken hoe de component goed toegankelijk kanw orden ingezet. Deze documentatie bevat concrete voorbeelden en uitleg waarom bepaalde patronen toegankelijkheidsproblemen veroorzaken.
+Veelgemaakte toegankelijkheidsfouten bij het gebruik van de component zijn gedocumenteerd door voorbeelden van verkeerd gebruik te laten zien met concrete voorbeelden van een toegankelijk alternatief. Er zijn do's en don'ts die duidelijk maken hoe de component goed toegankelijk kan worden ingezet. Deze documentatie bevat concrete voorbeelden en uitleg waarom bepaalde patronen toegankelijkheidsproblemen veroorzaken.
 
 ## Don'ts voor gebruiksvriendelijkheid gedocumenteerd
 
@@ -113,7 +113,7 @@ Gebruikers kunnen nu makkelijk achtergrond-informatie en context vinden zonder z
 
 ### Doel
 
-De Hall of Fame component gebruikt de Candidate component als solide basis, zodat alle inzichten uit validatie, gemaakte verbeteringen en testautomatisering behouden blijft.
+De Hall of Fame component gebruikt de Candidate component als solide basis, zodat alle inzichten uit validatie, gemaakte verbeteringen en testautomatisering behouden blijven.
 
 ### Uitkomst
 
