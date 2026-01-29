@@ -39,11 +39,11 @@ De Hall of Fame component is beschikbaar voor designers in Figma, zodat deze de 
 
 De Candidate component in Figma is vervangen door de Hall of Fame versie in de officiële NL Design System bibliotheek. De component is beschikbaar met alle documentatie, voorbeelden en richtlijnen die in eerdere fases zijn ontwikkeld. Designers kunnen nu de definitieve versie van de component gebruiken.
 
-## Geintegreerd in NL Design System
+## Geïntegreerd in NL Design System
 
 ### Doel
 
-De Hall of Fame component is volledig is geïntegreerd in het bredere NL Design System ecosysteem, zodat gebruikers de component kunnen gebruiken in combinatie met alle andere componenten, patronen, templates, prototypes en hulmiddelen.
+De Hall of Fame component is volledig geïntegreerd in het bredere NL Design System ecosysteem, zodat gebruikers de component kunnen gebruiken in combinatie met alle andere componenten, patronen, templates, prototypes en hulpmiddelen.
 
 ### Uitkomst
 
@@ -63,7 +63,7 @@ De component-pagina op nldesignsystem.nl is bijgewerkt naar Hall of Fame status.
 
 ### Doel
 
-Gebruikers van de NL Design System component gebruiken zoveel mogelijk de nieuwste en beste versie. Het is duidelijk welke implementatie van een component jet het best kan gebruiken. Er gaat geen tijd en aandacht meer naar de oude component.
+Gebruikers van de NL Design System component gebruiken zoveel mogelijk de nieuwste en beste versie. Het is duidelijk welke implementatie van een component je het best kan gebruiken. Er gaat geen tijd en aandacht meer naar de oude component.
 
 ### Uitkomst
 
