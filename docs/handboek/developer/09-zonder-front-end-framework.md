@@ -609,6 +609,6 @@ Heb je vragen, aanvullingen of opmerkingen? [Ga naar de GitHub Discussion](https
 
 ## Meer hulp nodig?
 
-- Sluit aan bij de volgende [Developer Open Hour](/events/developer-open-hour)
-- Stuur ons een berichtje op [Slack](/slack)
-- Stuur een mailtje naar info@nldesignsystem.nl
+- Sluit aan bij de volgende [Developer Open Hour](/events/developer-open-hour).
+- Neem contact op via [Slack](/slack).
+- Stuur een e-mail naar [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl)
