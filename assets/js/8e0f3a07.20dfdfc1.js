@@ -1,0 +1,229 @@
+'use strict';
+(globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
+ [65235],
+ {
+  10685(e, n, r) {
+   (r.r(n), r.d(n, { assets: () => b, contentTitle: () => j, default: () => g, frontMatter: () => v, metadata: () => o, toc: () => y }));
+   const o = JSON.parse('{"id":"richtlijnen/formulieren/description/associated/README","title":"Koppel een description aan het formulierveld \xb7 Descriptions in een formulier \xb7 Richtlijnen","description":"Richtlijnen voor koppelen van een description aan een formulierveld.","source":"@site/docs/richtlijnen/formulieren/description/1-associated/README.mdx","sourceDirName":"richtlijnen/formulieren/description/1-associated","slug":"/richtlijnen/formulieren/descriptions/koppelen","permalink":"/richtlijnen/formulieren/descriptions/koppelen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/description/1-associated/README.mdx","tags":[],"version":"current","frontMatter":{"title":"Koppel een description aan het formulierveld \xb7 Descriptions in een formulier \xb7 Richtlijnen","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Koppel description","pagination_label":"Koppel description","description":"Richtlijnen voor koppelen van een description aan een formulierveld.","slug":"/richtlijnen/formulieren/descriptions/koppelen","keywords":["labels","formulier","design","code"]},"sidebar":"richtlijnen","previous":{"title":"Descriptions in een formulier","permalink":"/richtlijnen/formulieren/descriptions/"},"next":{"title":"Inhoud description","permalink":"/richtlijnen/formulieren/descriptions/inhoud"}}');
+   var l = r(86070),
+    s = r(18439),
+    i = r(78734),
+    t = r(58639),
+    c = r(15638);
+   function a(e) {
+    const n = { h2: 'h2', input: 'input', label: 'label', p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: ['\n', '\n', (0, l.jsx)(n.h2, { id: 'voorbeelden', children: 'Voorbeelden' }), '\n', (0, l.jsx)(c.$, { appearance: 'do', title: 'Koppel een description aan het formulierveld, met aria-describedby.', children: (0, l.jsx)(t.H, { language: 'html', children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.label, { htmlFor: 'wachtwoord', children: 'Nieuw wachtwoord' }), (0, l.jsx)(n.p, { id: 'description-wachtwoord', children: 'Kies een wachtwoord van minimaal 8 karakters lang.' }), (0, l.jsx)(n.input, { id: 'wachtwoord', type: 'password', name: 'nieuw-wachtwoord', 'aria-describedby': 'description-wachtwoord' })] }) }) }), '\n', (0, l.jsx)(c.$, { appearance: 'dont', title: 'Koppeling weglaten.', children: (0, l.jsx)(t.H, { language: 'html', children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.label, { htmlFor: 'wachtwoord0', children: 'Nieuw wachtwoord' }), (0, l.jsx)(n.p, { children: 'Kies een wachtwoord van minimaal 8 karakters lang.' }), (0, l.jsx)(n.input, { id: 'wachtwoord0', type: 'password', name: 'nieuw-wachtwoord' })] }) }) })] });
+   }
+   function d(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(a, { ...e }) }) : a(e);
+   }
+   function p(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', header: 'header', li: 'li', p: 'p', pre: 'pre', strong: 'strong', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.header, { children: (0, l.jsx)(n.h1, { id: 'koppel-een-description-aan-het-formulierveld', children: 'Koppel een description aan het formulierveld' }) }), '\n', (0, l.jsxs)(n.p, { children: ['Voor gebruikers van ', (0, l.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), ' is het belangrijk dat de description samen wordt voorgelezen met het formulierveld.'] }), '\n', (0, l.jsxs)(n.p, { children: ['Waarom? Screenreaders, zoals JAWS, schakelen over naar de \u201cformulierenmodus\u201d wanneer ze inhoud binnen een ', (0, l.jsx)(n.code, { children: '<form>' }), ' element verwerken. In deze modus lezen screenreaders alleen de formuliervelden voor, inclusief de daaraan gekoppelde informatie (met bijvoorbeeld ', (0, l.jsx)(n.code, { children: 'aria-describedby' }), '). De niet-gekoppelde informatie wordt dan niet voorgelezen, tenzij de gebruiker er zelf naar zoekt.'] }), '\n', (0, l.jsx)(n.p, { children: 'Meer informatie over de formulierenmodus:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsxs)(n.li, { children: [(0, l.jsx)(n.a, { href: 'https://www.w3.org/WAI/tutorials/forms/instructions/', children: 'Form Instructions' }), ', Web Accessibility Initiative.'] }), '\n', (0, l.jsxs)(n.li, { children: [(0, l.jsx)(n.a, { href: 'https://www.accessibility-developer-guide.com/knowledge/screen-readers/desktop/browse-focus-modes', children: 'Browse and focus modes' }), ', Accessibility Developer Guide.'] }), '\n'] }), '\n', (0, l.jsx)(n.p, { children: "Door de description aan het formulierveld te koppelen via 'aria'-describedby', wordt het label en de description samen voorgelezen wanneer een screenreadergebruiker het formulierveld focus geeft." }), '\n', (0, l.jsxs)(n.p, { children: [(0, l.jsx)(n.strong, { children: 'Let op:' }), ' De gebruikte ID\u2019s moeten uniek zijn voor de pagina, anders worden de verkeerde descriptions bij de velden voorgelezen.'] }), '\n', (0, l.jsx)(n.p, { children: 'Opzet in de HTML:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsxs)(n.li, { children: ['Geef description een ID: ', (0, l.jsx)(n.code, { children: 'id="description-name"' }), '.'] }), '\n', (0, l.jsxs)(n.li, { children: ['Verwijs in het formulierveld naar dat ID: ', (0, l.jsx)(n.code, { children: 'aria-describedby="description-name"' }), '.'] }), '\n'] }), '\n', (0, l.jsx)(n.pre, { children: (0, l.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, l.jsxs)(n.p, { children: ['Lees ook: ', (0, l.jsx)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby', children: 'MDN over aria-describedby' }), '.'] })] });
+   }
+   function u(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(p, { ...e }) }) : p(e);
+   }
+   function h(e) {
+    const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, l.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/1.3.1/', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/1.3.2/', children: 'Succescriterium 1.3.2 Betekenisvolle volgorde' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/2.4.3/', children: 'Succescriterium 2.4.3 Focus volgorde' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/2.4.6/', children: 'Succescriterium 2.4.6 Koppen en labels' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/3.3.2/', children: 'Succescriterium 3.3.2 Labels of instructies' }) }), '\n'] })] });
+   }
+   function m(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(h, { ...e }) }) : h(e);
+   }
+   const v = { title: 'Koppel een description aan het formulierveld \xb7 Descriptions in een formulier \xb7 Richtlijnen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Koppel description', pagination_label: 'Koppel description', description: 'Richtlijnen voor koppelen van een description aan een formulierveld.', slug: '/richtlijnen/formulieren/descriptions/koppelen', keywords: ['labels', 'formulier', 'design', 'code'] },
+    j = void 0,
+    b = {},
+    y = [{ value: 'Voorbeelden', id: 'voorbeelden', level: 2 }, { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...i.RM];
+   function x(e) {
+    return (0, l.jsxs)(l.Fragment, { children: ['\n', '\n', (0, l.jsx)(u, {}), '\n', (0, l.jsx)(d, {}), '\n', (0, l.jsx)(m, {}), '\n', (0, l.jsx)(i.Ay, {})] });
+   }
+   function g(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(x, { ...e }) }) : x();
+   }
+  },
+  15638(e, n, r) {
+   r.d(n, { $: () => d, x: () => a });
+   var o = r(4077),
+    l = r(58315),
+    s = r(46447),
+    i = r(13526),
+    t = r(30758),
+    c = r(86070);
+   const a = (0, t.createContext)({}),
+    d = ({ title: e, appearance: n, description: r, children: t, figure: d }) => {
+     const p = { do: 'Doen', dont: 'Niet doen' },
+      u = d ? 'figure' : 'div',
+      h = d ? 'figcaption' : 'div';
+     return (0, c.jsxs)(u, { className: (0, i.A)('nlds-guideline', `nlds-guideline--${n}`), id: 'string' == typeof e ? e?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === n ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(s.fz, { className: (0, i.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(l.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: p.dont })] }), (0, c.jsx)(s.fz, { children: e })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(s.fz, { className: (0, i.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(o.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: p.do })] }), (0, c.jsx)(s.fz, { children: e })] }), r] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(a.Provider, { value: { title: e, type: p[n] }, children: t }) })] });
+    };
+  },
+  18439(e, n, r) {
+   r.d(n, { R: () => i, x: () => t });
+   var o = r(30758);
+   const l = {},
+    s = o.createContext(l);
+   function i(e) {
+    const n = o.useContext(s);
+    return o.useMemo(
+     function () {
+      return 'function' == typeof e ? e(n) : { ...n, ...e };
+     },
+     [n, e],
+    );
+   }
+   function t(e) {
+    let n;
+    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(l) : e.components || l) : i(e.components)), o.createElement(s.Provider, { value: n }, e.children));
+   }
+  },
+  58639(e, n, r) {
+   r.d(n, { H: () => b });
+   var o = r(69284),
+    l = r(46447),
+    s = r(13526),
+    i = r(68148),
+    t = r(9016),
+    c = r(69303),
+    a = r(91635),
+    d = r(30734),
+    p = r(30758),
+    u = r(31186),
+    h = r(86070);
+   const m = ({ children: e }) => (0, h.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: (0, h.jsx)(l.yo, { className: (0, s.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, h.jsx)(l.fz, { className: 'nlds-canvas__example-paragraph', children: e }) }) });
+   m.displayName = 'ParagraphContainer';
+   const v = ({ children: e }) => (0, h.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: (0, h.jsx)(l.yo, { className: (0, s.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: e }) });
+   v.displayName = 'DocumentContainer';
+   const j = ({ children: e }) => (0, h.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: e });
+   j.displayName = 'SurfaceContainer';
+   const b = ({ code: e, copy: n = !0, defaultExpandedCode: r = !1, displayCode: b = !0, children: y, container: x = 'document', language: g, designTokens: f }) => {
+    const k = 'function' == typeof y ? y() : y,
+     w = 'function' == typeof e ? e() : (0, p.isValidElement)(e) ? e : void 0,
+     _ = 'string' == typeof e ? e : u.qV(w || k),
+     [N, A] = (0, p.useState)(_),
+     [z, S] = (0, p.useState)(r);
+    (0, p.useEffect)(() => {
+     (async () => {
+      const e = await d.Ay.format(_, { parser: g, plugins: [i.A, t.Ay, c.Ay, a.Ay], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
+      A(e);
+     })();
+    }, [_]);
+    const C = (0, p.useId)();
+    let D = p.Fragment;
+    return (
+     'paragraph' === x ? (D = m) : 'document' === x ? (D = v) : 'surface' === x && (D = j),
+     (0, h.jsxs)('div', {
+      className: (0, s.A)('nlds-canvas'),
+      children: [
+       k && (0, h.jsx)('div', { className: (0, s.A)('nlds-canvas__example'), children: (0, h.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, h.jsx)(D, { children: (0, h.jsx)(l.v$, { children: k }) }) }) }),
+       b &&
+        (0, h.jsx)('div', {
+         className: (0, s.A)('nlds-canvas__toolbar'),
+         children: (0, h.jsx)(l.$n, {
+          className: (0, s.A)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
+          appearance: 'subtle-button',
+          onClick: () => {
+           S(!z);
+          },
+          'aria-expanded': z,
+          'aria-controls': C,
+          children: z ? 'Verberg code' : 'Bekijk code',
+         }),
+        }),
+       b &&
+        (0, h.jsxs)('div', {
+         className: (0, s.A)('nlds-canvas__code-block', !n && 'nlds-canvas__code-block--user-select-none'),
+         id: C,
+         hidden: !z,
+         children: [
+          (0, h.jsx)(o.M, { codeBlockLabel: 'Codevoorbeeld', syntax: g, textContent: N, trim: !0 }),
+          n &&
+           (0, h.jsx)('div', {
+            className: (0, s.A)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
+            children: (0, h.jsx)(l.$n, {
+             className: (0, s.A)('nlds-canvas__button', 'nlds-canvas__copy-button'),
+             appearance: 'subtle-button',
+             onClick: () => {
+              navigator.clipboard.writeText(N).catch((e) => console.error('Copy code failed', e));
+             },
+             children: 'Kopieer',
+            }),
+           }),
+         ],
+        }),
+      ],
+     })
+    );
+   };
+  },
+  69284(e, n, r) {
+   r.d(n, { M: () => a });
+   var o = r(46447),
+    l = r(16194),
+    s = r(30758),
+    i = r(15638);
+   const t = {
+    plain: { color: 'var(--nlds-code-block-color)', backgroundColor: 'var(--nlds-code-block-background-color)' },
+    styles: [
+     { types: ['maybe-class-name'], style: { color: 'var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))' } },
+     { types: ['comment'], style: { color: 'var(--nlds-code-block-comment-color)', fontStyle: 'italic' } },
+     { types: ['prolog'], style: { color: 'var(--nlds-code-block-prolog-color)', fontStyle: 'italic' } },
+     { types: ['cdata'], style: { color: 'var(--nlds-code-block-cdata-color)', fontStyle: 'italic' } },
+     { types: ['punctuation'], style: { color: 'var(--nlds-code-block-punctuation-color)' } },
+     { types: ['deleted'], style: { color: 'var(--nlds-code-block-deleted-color)', fontStyle: 'italic' } },
+     { types: ['symbol'], style: { color: 'var(--nlds-code-block-symbol-color)' } },
+     { types: ['property'], style: { color: 'var(--nlds-code-block-property-color)' } },
+     { types: ['tag'], style: { color: 'var(--nlds-code-block-tag-color)' } },
+     { types: ['operator'], style: { color: 'var(--nlds-code-block-operator-color)' } },
+     { types: ['keyword'], style: { color: 'var(--nlds-code-block-keyword-color)' } },
+     { types: ['boolean'], style: { color: 'var(--nlds-code-block-boolean-color)' } },
+     { types: ['number'], style: { color: 'var(--nlds-code-block-number-color)' } },
+     { types: ['constant'], style: { color: 'var(--nlds-code-block-constant-color)' } },
+     { types: ['function'], style: { color: 'var(--nlds-code-block-function-color)' } },
+     { types: ['builtin'], style: { color: 'var(--nlds-code-block-builtin-color)' } },
+     { types: ['char'], style: { color: 'var(--nlds-code-block-char-color)' } },
+     { types: ['selector'], style: { color: 'var(--nlds-code-block-selector-color)', fontStyle: 'italic' } },
+     { types: ['doctype'], style: { color: 'var(--nlds-code-block-doctype-color)', fontStyle: 'italic' } },
+     { types: ['attr-name'], style: { color: 'var(--nlds-code-block-attr-name-color)', fontStyle: 'italic' } },
+     { types: ['inserted'], style: { color: 'var(--nlds-code-block-inserted-color)', fontStyle: 'italic' } },
+     { types: ['string'], style: { color: 'var(--nlds-code-block-string-color)' } },
+     { types: ['url'], style: { color: 'var(--nlds-code-block-url-color)' } },
+     { types: ['entity'], style: { color: 'var(--nlds-code-block-entity-color)' } },
+     { types: ['class-name'], style: { color: 'var(--nlds-code-block-class-name-color)' } },
+     { types: ['atrule'], style: { color: 'var(--nlds-code-block-atrule-color)' } },
+     { types: ['attr-value'], style: { color: 'var(--nlds-code-block-attr-value-color)' } },
+     { types: ['regex'], style: { color: 'var(--nlds-code-block-regex-color)' } },
+     { types: ['important'], style: { color: 'var(--nlds-code-block-important-color)', fontWeight: 'bold' } },
+     { types: ['variable'], style: { color: 'var(--nlds-code-block-variable-color)' } },
+     { types: ['bold'], style: { fontWeight: 'bold' } },
+     { types: ['italic'], style: { fontStyle: 'italic' } },
+    ],
+   };
+   var c = r(86070);
+   function a({ lineNumber: e, syntax: n, textContent: r, trim: a }) {
+    let d = r;
+    const { title: p, type: u } = (0, s.useContext)(i.x),
+     h = (0, s.useId)();
+    return (a && (d = d.trim()), (0, c.jsx)(l.f4, { theme: t, code: d, language: n || '', children: ({ style: n, tokens: r, getLineProps: l, getTokenProps: s }) => (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', u ? `\u201c${u}\u201d` : '', ' ', p ? ': ' : ' ', p] }), (0, c.jsx)(o.NG, { tabIndex: 0, role: p ? 'region' : void 0, 'aria-labelledby': h, style: n, children: r.map((n, r) => (0, c.jsxs)('span', { ...l({ line: n }), children: [e && (0, c.jsx)('span', { children: r + 1 }), n.map((e, n) => (0, c.jsx)('span', { ...s({ token: e }) }, n)), '\n'] }, r)) })] }) }));
+   }
+  },
+  78734(e, n, r) {
+   r.d(n, { Ay: () => t, RM: () => s });
+   var o = r(86070),
+    l = r(18439);
+   const s = [{ value: 'Over deze richtlijnen', id: 'over-deze-richtlijnen', level: 2 }];
+   function i(e) {
+    const n = { a: 'a', em: 'em', h2: 'h2', p: 'p', ...(0, l.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { id: 'over-deze-richtlijnen', children: 'Over deze richtlijnen' }), '\n', (0, o.jsxs)(n.p, { children: ['Deze richtlijnen worden onderhouden door NL Design System en zijn op dit moment in ', (0, o.jsx)(n.em, { children: 'beta' }), '.'] }), '\n', (0, o.jsxs)(n.p, { children: ['We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen?\n', (0, o.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Open een issue op GitHub' }), ' en deel je mening.'] })] });
+   }
+   function t(e = {}) {
+    const { wrapper: n } = { ...(0, l.R)(), ...e.components };
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(i, { ...e }) }) : i(e);
+   }
+  },
+ },
+]);
