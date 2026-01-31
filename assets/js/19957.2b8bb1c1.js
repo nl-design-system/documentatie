@@ -1,0 +1,286 @@
+/*! For license information please see 19957.2b8bb1c1.js.LICENSE.txt */
+'use strict';
+(globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
+ [19957],
+ {
+  1375(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'line-height', 'LineHeight', [
+    ['path', { d: 'M3 8l3 -3l3 3', key: 'svg-0' }],
+    ['path', { d: 'M3 16l3 3l3 -3', key: 'svg-1' }],
+    ['path', { d: 'M6 5l0 14', key: 'svg-2' }],
+    ['path', { d: 'M13 6l7 0', key: 'svg-3' }],
+    ['path', { d: 'M13 12l7 0', key: 'svg-4' }],
+    ['path', { d: 'M13 18l7 0', key: 'svg-5' }],
+   ]);
+  },
+  4603(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'copy', 'Copy', [
+    ['path', { d: 'M7 9.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667l0 -8.666', key: 'svg-0' }],
+    ['path', { d: 'M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1', key: 'svg-1' }],
+   ]);
+  },
+  13088(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'ruler', 'Ruler', [
+    ['path', { d: 'M5 4h14a1 1 0 0 1 1 1v5a1 1 0 0 1 -1 1h-7a1 1 0 0 0 -1 1v7a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1', key: 'svg-0' }],
+    ['path', { d: 'M4 8l2 0', key: 'svg-1' }],
+    ['path', { d: 'M4 12l3 0', key: 'svg-2' }],
+    ['path', { d: 'M4 16l2 0', key: 'svg-3' }],
+    ['path', { d: 'M8 4l0 2', key: 'svg-4' }],
+    ['path', { d: 'M12 4l0 3', key: 'svg-5' }],
+    ['path', { d: 'M16 4l0 2', key: 'svg-6' }],
+   ]);
+  },
+  23436(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'file-unknown', 'FileUnknown', [
+    ['path', { d: 'M14 3v4a1 1 0 0 0 1 1h4', key: 'svg-0' }],
+    ['path', { d: 'M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2', key: 'svg-1' }],
+    ['path', { d: 'M12 17v.01', key: 'svg-2' }],
+    ['path', { d: 'M12 14a1.5 1.5 0 1 0 -1.14 -2.474', key: 'svg-3' }],
+   ]);
+  },
+  24214(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'text-size', 'TextSize', [
+    ['path', { d: 'M3 7v-2h13v2', key: 'svg-0' }],
+    ['path', { d: 'M10 5v14', key: 'svg-1' }],
+    ['path', { d: 'M12 19h-4', key: 'svg-2' }],
+    ['path', { d: 'M15 13v-1h6v1', key: 'svg-3' }],
+    ['path', { d: 'M18 12v7', key: 'svg-4' }],
+    ['path', { d: 'M17 19h2', key: 'svg-5' }],
+   ]);
+  },
+  35193(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'palette', 'Palette', [
+    ['path', { d: 'M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25', key: 'svg-0' }],
+    ['path', { d: 'M7.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0', key: 'svg-1' }],
+    ['path', { d: 'M11.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0', key: 'svg-2' }],
+    ['path', { d: 'M15.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0', key: 'svg-3' }],
+   ]);
+  },
+  64164(e, n, t) {
+   t(30758);
+  },
+  65947(e, n, t) {
+   t.d(n, { D: () => g });
+   var l = t(78677),
+    s = t(69967),
+    i = t(30758),
+    a = ['level', 'appearance', 'children', 'className'];
+   function r(e, n) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+     var l = Object.getOwnPropertySymbols(e);
+     (n &&
+      (l = l.filter(function (n) {
+       return Object.getOwnPropertyDescriptor(e, n).enumerable;
+      })),
+      t.push.apply(t, l));
+    }
+    return t;
+   }
+   var o = function () {
+     for (var e = arguments.length, n = new Array(e), t = 0; t < e; t++) n[t] = arguments[t];
+     return n.filter(Boolean).join(' ');
+    },
+    g = (0, i.forwardRef)(function (e, n) {
+     var t = e.level,
+      g = e.appearance,
+      d = void 0 === g ? 'level-'.concat(t) : g,
+      m = e.children,
+      y = e.className,
+      p = (0, s.A)(e, a),
+      c = 'h'.concat(t);
+     return (0, i.createElement)(
+      c,
+      (function (e) {
+       for (var n = 1; n < arguments.length; n++) {
+        var t = null != arguments[n] ? arguments[n] : {};
+        n % 2
+         ? r(Object(t), !0).forEach(function (n) {
+            (0, l.A)(e, n, t[n]);
+           })
+         : Object.getOwnPropertyDescriptors
+           ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
+           : r(Object(t)).forEach(function (n) {
+              Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n));
+             });
+       }
+       return e;
+      })({ className: o('nl-heading', 'nl-heading--'.concat(d), y), ref: n }, p),
+      m,
+     );
+    });
+   g.displayName = 'Heading';
+   !(function (e, n) {
+    void 0 === n && (n = {});
+    var t = n.insertAt;
+    if ('undefined' != typeof document) {
+     var l = document.head || document.getElementsByTagName('head')[0],
+      s = document.createElement('style');
+     ((s.type = 'text/css'), 'top' === t && l.firstChild ? l.insertBefore(s, l.firstChild) : l.appendChild(s), s.styleSheet ? (s.styleSheet.cssText = e) : s.appendChild(document.createTextNode(e)));
+    }
+   })('.nl-heading{break-after:avoid;break-inside:avoid}.nl-heading--level-1{color:var(--nl-heading-level-1-color, inherit);font-family:var(--nl-heading-level-1-font-family);font-size:var(--nl-heading-level-1-font-size, revert);font-weight:var(--nl-heading-level-1-font-weight, bold);line-height:var(--nl-heading-level-1-line-height);margin-block-end:var(--nl-heading-level-1-margin-block-end, revert);margin-block-start:var(--nl-heading-level-1-margin-block-start, revert)}.nl-heading--level-2{color:var(--nl-heading-level-2-color, inherit);font-family:var(--nl-heading-level-2-font-family);font-size:var(--nl-heading-level-2-font-size, revert);font-weight:var(--nl-heading-level-2-font-weight, bold);line-height:var(--nl-heading-level-2-line-height);margin-block-end:var(--nl-heading-level-2-margin-block-end, revert);margin-block-start:var(--nl-heading-level-2-margin-block-start, revert)}.nl-heading--level-3{color:var(--nl-heading-level-3-color, inherit);font-family:var(--nl-heading-level-3-font-family);font-size:var(--nl-heading-level-3-font-size, revert);font-weight:var(--nl-heading-level-3-font-weight, bold);line-height:var(--nl-heading-level-3-line-height);margin-block-end:var(--nl-heading-level-3-margin-block-end, revert);margin-block-start:var(--nl-heading-level-3-margin-block-start, revert)}.nl-heading--level-4{color:var(--nl-heading-level-4-color, inherit);font-family:var(--nl-heading-level-4-font-family);font-size:var(--nl-heading-level-4-font-size, revert);font-weight:var(--nl-heading-level-4-font-weight, bold);line-height:var(--nl-heading-level-4-line-height);margin-block-end:var(--nl-heading-level-4-margin-block-end, revert);margin-block-start:var(--nl-heading-level-4-margin-block-start, revert)}.nl-heading--level-5{color:var(--nl-heading-level-5-color, inherit);font-family:var(--nl-heading-level-5-font-family);font-size:var(--nl-heading-level-5-font-size, revert);font-weight:var(--nl-heading-level-5-font-weight, bold);line-height:var(--nl-heading-level-5-line-height);margin-block-end:var(--nl-heading-level-5-margin-block-end, revert);margin-block-start:var(--nl-heading-level-5-margin-block-start, revert)}.nl-heading--level-6{color:var(--nl-heading-level-6-color, inherit);font-family:var(--nl-heading-level-6-font-family);font-size:var(--nl-heading-level-6-font-size, revert);font-weight:var(--nl-heading-level-6-font-weight, bold);line-height:var(--nl-heading-level-6-line-height);margin-block-end:var(--nl-heading-level-6-margin-block-end, revert);margin-block-start:var(--nl-heading-level-6-margin-block-start, revert)}\n');
+  },
+  79532(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'underline', 'Underline', [
+    ['path', { d: 'M7 5v5a5 5 0 0 0 10 0v-5', key: 'svg-0' }],
+    ['path', { d: 'M5 19h14', key: 'svg-1' }],
+   ]);
+  },
+  79889(e, n, t) {
+   t.d(n, { K: () => y });
+   var l = t(78677),
+    s = t(69967),
+    i = t(86070),
+    a = t(30758),
+    r = ['children'],
+    o = ['dateTime'],
+    g = ['value'];
+   function d(e, n) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+     var l = Object.getOwnPropertySymbols(e);
+     (n &&
+      (l = l.filter(function (n) {
+       return Object.getOwnPropertyDescriptor(e, n).enumerable;
+      })),
+      t.push.apply(t, l));
+    }
+    return t;
+   }
+   function m(e) {
+    for (var n = 1; n < arguments.length; n++) {
+     var t = null != arguments[n] ? arguments[n] : {};
+     n % 2
+      ? d(Object(t), !0).forEach(function (n) {
+         (0, l.A)(e, n, t[n]);
+        })
+      : Object.getOwnPropertyDescriptors
+        ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
+        : d(Object(t)).forEach(function (n) {
+           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n));
+          });
+    }
+    return e;
+   }
+   var y = (0, a.forwardRef)(function (e, n) {
+    var t = e.children,
+     l = (0, s.A)(e, r),
+     a = (function () {
+      for (var e = arguments.length, n = new Array(e), t = 0; t < e; t++) n[t] = arguments[t];
+      return n.filter(Boolean).join(' ');
+     })('nl-data-badge', e.className);
+    if (
+     (function (e) {
+      return 'dateTime' in e;
+     })(l)
+    ) {
+     var d = l.dateTime,
+      y = (0, s.A)(l, o);
+     return (0, i.jsx)('time', m(m({}, y), {}, { dateTime: d, className: a, ref: n, children: t }));
+    }
+    if (
+     (function (e) {
+      return 'value' in e;
+     })(l)
+    ) {
+     var p = l.value,
+      c = (0, s.A)(l, g);
+     return (0, i.jsx)('data', m(m({}, c), {}, { value: p, className: a, ref: n, children: t }));
+    }
+    return (0, i.jsx)('span', m(m({}, l), {}, { className: a, ref: n, children: t }));
+   });
+   y.displayName = 'DataBadge';
+   !(function (e, n) {
+    void 0 === n && (n = {});
+    var t = n.insertAt;
+    if ('undefined' != typeof document) {
+     var l = document.head || document.getElementsByTagName('head')[0],
+      s = document.createElement('style');
+     ((s.type = 'text/css'), 'top' === t && l.firstChild ? l.insertBefore(s, l.firstChild) : l.appendChild(s), s.styleSheet ? (s.styleSheet.cssText = e) : s.appendChild(document.createTextNode(e)));
+    }
+   })('.nl-data-badge{background-color:var(--nl-data-badge-background-color);border-color:var(--nl-data-badge-border-color, currentColor);border-radius:var(--nl-data-badge-border-radius, 0);border-style:solid;border-width:var(--nl-data-badge-border-width, 1px);box-sizing:border-box;color:var(--nl-data-badge-color);display:inline-block;font-family:var(--nl-data-badge-font-family);font-size:var(--nl-data-badge-font-size);font-weight:var(--nl-data-badge-font-weight);line-height:var(--nl-data-badge-line-height);max-block-size:max-content;max-inline-size:max-content;min-block-size:var(--nl-data-badge-min-block-size);min-inline-size:var(--nl-data-badge-min-inline-size);padding-block:var(--nl-data-badge-padding-block);padding-inline:var(--nl-data-badge-padding-inline);text-decoration:none}@media screen and (forced-colors: active){.nl-data-badge{border-color:currentColor;border-width:min(var(--nl-data-badge-border-width, 1px),1px)}}\n');
+  },
+  83766(e) {
+   e.exports = JSON.parse('{"nl":{"heading":{"level-1":{"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-family":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<family-name>","<generic-name>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontFamilies"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"font-weight":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<number>","nl.nldesignsystem.figma-implementation":true},"$type":"fontWeights"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"margin-block-end":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"},"margin-block-start":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"}},"level-2":{"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-family":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<family-name>","<generic-name>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontFamilies"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"font-weight":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<number>","nl.nldesignsystem.figma-implementation":true},"$type":"fontWeights"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"margin-block-end":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"},"margin-block-start":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"}},"level-3":{"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-family":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<family-name>","<generic-name>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontFamilies"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"font-weight":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<number>","nl.nldesignsystem.figma-implementation":true},"$type":"fontWeights"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"margin-block-end":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"},"margin-block-start":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"}},"level-4":{"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-family":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<family-name>","<generic-name>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontFamilies"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"font-weight":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<number>","nl.nldesignsystem.figma-implementation":true},"$type":"fontWeights"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"margin-block-end":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"},"margin-block-start":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"}},"level-5":{"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-family":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<family-name>","<generic-name>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontFamilies"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"font-weight":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<number>","nl.nldesignsystem.figma-implementation":true},"$type":"fontWeights"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"margin-block-end":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"},"margin-block-start":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"}},"level-6":{"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-family":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<family-name>","<generic-name>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontFamilies"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"font-weight":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<number>","nl.nldesignsystem.figma-implementation":true},"$type":"fontWeights"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"margin-block-end":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"},"margin-block-start":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"}}}}}');
+  },
+  91525(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'file-typography', 'FileTypography', [
+    ['path', { d: 'M14 3v4a1 1 0 0 0 1 1h4', key: 'svg-0' }],
+    ['path', { d: 'M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2', key: 'svg-1' }],
+    ['path', { d: 'M11 18h2', key: 'svg-2' }],
+    ['path', { d: 'M12 18v-7', key: 'svg-3' }],
+    ['path', { d: 'M9 12v-1h6v1', key: 'svg-4' }],
+   ]);
+  },
+  92081(e, n, t) {
+   t.d(n, { A: () => l });
+   const l = (0, t(18652).A)('outline', 'bold', 'Bold', [
+    ['path', { d: 'M7 5h6a3.5 3.5 0 0 1 0 7h-6l0 -7', key: 'svg-0' }],
+    ['path', { d: 'M13 12h1a3.5 3.5 0 0 1 0 7h-7v-7', key: 'svg-1' }],
+   ]);
+  },
+  96547(e, n, t) {
+   t.d(n, { C: () => m });
+   var l = t(78677),
+    s = t(69967),
+    i = t(86070),
+    a = t(30758),
+    r = ['children', 'className'];
+   function o(e, n) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+     var l = Object.getOwnPropertySymbols(e);
+     (n &&
+      (l = l.filter(function (n) {
+       return Object.getOwnPropertyDescriptor(e, n).enumerable;
+      })),
+      t.push.apply(t, l));
+    }
+    return t;
+   }
+   function g(e) {
+    for (var n = 1; n < arguments.length; n++) {
+     var t = null != arguments[n] ? arguments[n] : {};
+     n % 2
+      ? o(Object(t), !0).forEach(function (n) {
+         (0, l.A)(e, n, t[n]);
+        })
+      : Object.getOwnPropertyDescriptors
+        ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
+        : o(Object(t)).forEach(function (n) {
+           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n));
+          });
+    }
+    return e;
+   }
+   var d = function () {
+     for (var e = arguments.length, n = new Array(e), t = 0; t < e; t++) n[t] = arguments[t];
+     return n.filter(Boolean).join(' ');
+    },
+    m = (0, a.forwardRef)(function (e, n) {
+     var t = e.children,
+      l = e.className,
+      a = (0, s.A)(e, r);
+     return (0, i.jsx)('code', g(g({ dir: 'ltr', translate: 'no', className: d('nl-code', l) }, a), {}, { ref: n, children: t }));
+    });
+   m.displayName = 'Code';
+   !(function (e, n) {
+    void 0 === n && (n = {});
+    var t = n.insertAt;
+    if ('undefined' != typeof document) {
+     var l = document.head || document.getElementsByTagName('head')[0],
+      s = document.createElement('style');
+     ((s.type = 'text/css'), 'top' === t && l.firstChild ? l.insertBefore(s, l.firstChild) : l.appendChild(s), s.styleSheet ? (s.styleSheet.cssText = e) : s.appendChild(document.createTextNode(e)));
+    }
+   })('.nl-code{background-color:var(--nl-code-background-color);color:var(--nl-code-color);font-family:var(--nl-code-font-family, monospace),monospace;font-size:var(--nl-code-font-size, inherit);hyphens:none;white-space:pre-wrap}\n');
+  },
+ },
+]);

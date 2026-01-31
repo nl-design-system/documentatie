@@ -23,7 +23,7 @@
    function insertBanner() {
     var n = document.createElement('div');
     n.id = '__docusaurus-base-url-issue-banner-container';
-    (n.innerHTML = '\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/</span>  (default value)</p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n'), document.body.prepend(n);
+    ((n.innerHTML = '\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/</span>  (default value)</p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n'), document.body.prepend(n));
     var e = document.getElementById('__docusaurus-base-url-issue-banner-suggestion-container'),
      s = window.location.pathname,
      o = '/' === s.substr(-1) ? s : s + '/';
@@ -37,9 +37,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.38f67c64.css" />
-  <script src="/assets/js/runtime~main.9c1c725a.js" defer="defer"></script>
-  <script src="/assets/js/main.b0f0ff5f.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.80031e27.css" />
+  <script src="/assets/js/runtime~main.d3d1cafe.js" defer="defer"></script>
+  <script src="/assets/js/main.692a91da.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -48,7 +48,7 @@
    </defs>
   </svg>
   <script>
-   document.documentElement.setAttribute('data-theme', 'light'),
+   (document.documentElement.setAttribute('data-theme', 'light'),
     document.documentElement.setAttribute('data-theme-choice', 'light'),
     (function () {
      try {
@@ -59,28 +59,25 @@
         document.documentElement.setAttribute(a, e);
        }
      } catch (t) {}
-    })();
+    })());
   </script>
   <div id="__docusaurus">
    <div class="utrecht-page-layout ma-theme">
-    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_QCLT" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
-    <nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top navbarHideable_BrxU">
+    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_cAw_" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top navbarHideable_pA0f">
      <div class="navbar__inner">
       <div class="theme-layout-navbar-left navbar__items">
        <a class="navbar__brand" href="/"
-        ><div class="navbar__logo"><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_AcRh themedComponent--light_hePk" /><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_AcRh themedComponent--dark_lkSR" /></div>
+        ><div class="navbar__logo"><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--light_LkwR" /><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--dark_tUww" /></div>
         <b class="navbar__title text--truncate"></b></a
        ><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/handboek/">Handboek</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/richtlijnen/">Richtlijnen</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/componenten/">Componenten</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/voorbeelden/">Voorbeelden</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/community/">Community</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/project/">Project</a>
       </div>
       <div class="theme-layout-navbar-right navbar__items navbar__items--right">
-       <div class="navbarSearchContainer_NIa4">
+       <div class="navbarSearchContainer_f6Ff">
         <div class="DocSearch-Trigger">
-         <button type="button" class="DocSearch DocSearch-Button" aria-label="Zoeken (Meta+k)" aria-keyshortcuts="Meta+k">
+         <button type="button" class="DocSearch DocSearch-Button" aria-label="Zoeken (Command+K)">
           <span class="DocSearch-Button-Container"
-           ><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle>
-            <path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg
-           ><span class="DocSearch-Button-Placeholder">Zoeken</span></span
+           ><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Zoeken</span></span
           ><span class="DocSearch-Button-Keys"></span>
          </button>
         </div>
@@ -89,7 +86,7 @@
      </div>
      <div role="presentation" class="navbar-sidebar__backdrop"></div>
     </nav>
-    <div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_e6W3">
+    <div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper__Za8">
      <main>
       <section class="utrecht-spotlight-section homepage-spotlight-section homepage-spotlight-section--hero">
        <div class="container">
@@ -108,8 +105,12 @@
       <div class="container homepage-section">
        <h2 class="utrecht-heading-2">Waar begin je?</h2>
        <h3 class="utrecht-heading-3">Bekijk de onboarding sessie</h3>
-       <link rel="preload" href="https://i.ytimg.com/vi/Yh4NqpphJQ4/maxresdefault.jpg" as="image" />
-       <article class="yt-lite" data-title="Onboarding sessie voor NL Design System" style="background-image: url(https://i.ytimg.com/vi/Yh4NqpphJQ4/maxresdefault.jpg); --aspect-ratio: 56.25%"><button type="button" class="lty-playbtn" aria-label="Bekijk Onboarding sessie voor NL Design System"></button></article>
+       <link rel="preload" href="https://i.ytimg.com/vi/Yh4NqpphJQ4/maxresdefault.jpg" as="image" /><noscript
+        ><a href="https://www.youtube.com/watch?v=Yh4NqpphJQ4" aria-label="Watch Onboarding sessie voor NL Design System on YouTube">Watch &quot;<!-- -->Onboarding sessie voor NL Design System<!-- -->&quot; on YouTube</a></noscript
+       >
+       <article class="yt-lite" data-title="Onboarding sessie voor NL Design System" role="img" aria-label="Onboarding sessie voor NL Design System - YouTube video preview" style="background-image: url(https://i.ytimg.com/vi/Yh4NqpphJQ4/maxresdefault.jpg); --aspect-ratio: 56.25%">
+        <button type="button" class="lty-playbtn" aria-label="Bekijk Onboarding sessie voor NL Design System" tabindex="0"><span class="lty-visually-hidden">Bekijk</span></button>
+       </article>
        <p class="utrecht-paragraph">In de onboarding sessie legt het kernteam uit op welke manieren je mee kan doen met NL Design System, hoe je een huisstijl vast kan leggen als thema en hoe je de componenten kunt gebruiken in code.</p>
        <h3 class="utrecht-heading-3">Lees de documentatie</h3>
        <div class="homepage-card-group">
@@ -184,8 +185,12 @@
         </h3>
         <p>Fionn van Logius in de Rijkshuisstijl Community vertelt over de nieuwe Language Navigation component, welke het Compound Component patroon introduceert in de Rijkshuisstijl Community.</p>
         <p>Bart van het Expertteam Digitale Toegankelijkheid geeft een sneak preview van de Theme Wizard.</p>
-        <link rel="preload" href="https://i.ytimg.com/vi/aeEefAWFEpE/maxresdefault.jpg" as="image" />
-        <article class="yt-lite" data-title="Heartbeat van 20 januari 2026." style="background-image: url(https://i.ytimg.com/vi/aeEefAWFEpE/maxresdefault.jpg); --aspect-ratio: 56.25%"><button type="button" class="lty-playbtn" aria-label="Bekijk Heartbeat van 20 januari 2026."></button></article>
+        <link rel="preload" href="https://i.ytimg.com/vi/aeEefAWFEpE/maxresdefault.jpg" as="image" /><noscript
+         ><a href="https://www.youtube.com/watch?v=aeEefAWFEpE" aria-label="Watch Heartbeat van 20 januari 2026. on YouTube">Watch &quot;<!-- -->Heartbeat van 20 januari 2026.<!-- -->&quot; on YouTube</a></noscript
+        >
+        <article class="yt-lite" data-title="Heartbeat van 20 januari 2026." role="img" aria-label="Heartbeat van 20 januari 2026. - YouTube video preview" style="background-image: url(https://i.ytimg.com/vi/aeEefAWFEpE/maxresdefault.jpg); --aspect-ratio: 56.25%">
+         <button type="button" class="lty-playbtn" aria-label="Bekijk Heartbeat van 20 januari 2026." tabindex="0"><span class="lty-visually-hidden">Bekijk</span></button>
+        </article>
         <p role="group" class="utrecht-button-group">
          <a href="/events/heartbeat/aanmelden" class="utrecht-button-link utrecht-button-link--html-a utrecht-button-link--primary-action"
           >Meld je aan voor de Heartbeat<span class="utrecht-icon" role="presentation" aria-hidden="true"
@@ -366,10 +371,10 @@
        <div class="footer__links">
         <a class="footer__link-item" href="/blog/">Blog</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/project/kernteam/">Contact</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/privacyverklaring/">Privacyverklaring</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/colofon/">Colofon</a><span class="footer__link-separator">·</span
         ><a href="https://github.com/nl-design-system/backlog" target="_blank" rel="noopener noreferrer" class="footer__link-item"
-         >GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_EAWg"><use href="#theme-svg-external-link"></use></svg></a
+         >GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_ES_1"><use href="#theme-svg-external-link"></use></svg></a
         ><span class="footer__link-separator">·</span><a class="footer__link-item" href="/slack/">Slack</a><span class="footer__link-separator">·</span
         ><a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&amp;t=t25LHoMjEkUZyEi1-1" target="_blank" rel="noopener noreferrer" class="footer__link-item"
-         >Figma<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_EAWg"><use href="#theme-svg-external-link"></use></svg
+         >Figma<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_ES_1"><use href="#theme-svg-external-link"></use></svg
         ></a>
        </div>
       </div>
