@@ -102,7 +102,7 @@
     "@tabler/icons-react": "3.36.1",
     "@utrecht/design-tokens": "2.5.1",
     "clsx": "2.1.1",
-    "html-react-parser": "5.2.13",
+    "html-react-parser": "5.2.15",
     "prism-react-renderer": "2.4.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
@@ -133,7 +133,7 @@
     "@nl-design-system/component-progress": "1.0.1-alpha.161",
     "@nl-design-system/eslint-config": "1.0.0",
     "@persoonlijke-regelingen-assistent/components-react": "1.0.0-alpha.152",
-    "@playwright/test": "1.58.0",
+    "@playwright/test": "1.58.1",
     "@types/node": "24.10.9",
     "@types/react": "18.3.27",
     "@types/react-dom": "18.3.7",
