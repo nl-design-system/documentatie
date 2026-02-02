@@ -21,6 +21,10 @@ Op deze pagina leer je:
 - Wat NL Design System is en hoe organisaties samen componenten en thema’s ontwikkelen.
 - Hoe je componenten en thema’s kunt gebruiken en (door)ontwikkelen in je eigen project.
 
+Het is handig om vooraf de onboarding video te bekijken, in zijn geheel of vanaf de informatie voor developers:
+
+[Onboarding sessie voor NL Design System (46:57)](https://youtu.be/Yh4NqpphJQ4?si=scGXIiWZPJqBno5A&t=2813)
+
 ## Wat is NL Design System?
 
 NL Design System werkt met organisaties verspreid over de hele overheid: van gemeenten tot de Rijksoverheid. Het is een vanuit de community opgebouwd design system, gebaseerd op design tokens. Componenten worden gebouwd met goede ondersteuning voor a11y en browser support.
@@ -100,7 +104,7 @@ Design keuzes worden vastgelegd in design tokens. Voor developers is het belangr
 
 - [Design token conventie](/handboek/developer/design-token-conventie/)
 
-Wil je een nieuw thema introduceren? Ga dan verder op de pagina [thema maken](/handboek/developer/thema-maken).
+Wil je een nieuw thema introduceren? Ga dan verder op de pagina [thema maken](/handboek/developer/werken-met-nl-design-system/thema-maken).
 
 ## Zelf een pagina bouwen met NL Design System
 
