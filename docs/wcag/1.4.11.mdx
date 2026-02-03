@@ -69,6 +69,30 @@ Wanneer alleen kleur wordt gebruikt om informatie in een grafiek of een kaart te
 Fout: een screenshot waarin een cirkel is getekend om aandacht te trekken, heeft onvoldoende contrast.
 Veelgebruikte kleuren voor dergelijke cirkels zijn  geel of rood. Deze kleuren hebben in veel situaties een contrast dat lager is dan 3:1. 
 
+## Hoe te testen
+Gebruik een contrast tool.
+- Tool om te installeren: [Color Contrast Analyzer](https://vispero.com/color-contrast-checker/)
+- Tool in de browser: [Contrast checker van WebAim](https://webaim.org/resources/contrastchecker/)
+- Inspector in de browser
+
+Bij informatieve iconen wordt het contrast tussen het icoon en de achtergrond beoordeeld. Heeft het icoon een rand? Dan hoeft deze niet te worden getest. Het icoon is in dit geval informatief, niet de rand. 
+
+Bij invoervelden zonder placeholdertekst of met placeholdertekst met onvoldoende contrast (lager dan 4,5:1), wordt het contrast van de rand van het invoerveld getest. 
+
+Controleer eerst of het element actief is. Een actief element reageert op interactie van een bezoeker. In de HTML hebben de niet-actieve elementen een attribuut ‘disabled’. 
+
+### Welke scenario’s moet je testen?
+- Verschillende gangbare schermgroottes, inclusief mobiele weergave. Je zoomt in met (Control / Command +)
+- Verschillende oriëntaties: portrait en landscape
+- Een aanwezige dark mode, waarbij ook het kleurcontrast van de componenten wordt getest
+
+### Wat test je niet?
+- Het contrast van uitgeschakelde elementen (disabled in de HTML)
+- Het contrast van decoratieve elementen, zoals een scheidingslijn tussen secties
+- Iconen die naast tekst op een knop, link of als een label bij een invoerveld staan en alleen een aanvulling zijn op de tekst
+- De rand van een invoerveld wanneer de tekst in het veld een contrastratio hoger dan 4,5:1 heeft 
+- UI-elementen die door de browser zelf worden toegevoegd, zoals een kruisje in een invoerveld van het type “search” 
+
 
 ## Gerelateerde NL Design System-richtlijnen
 
