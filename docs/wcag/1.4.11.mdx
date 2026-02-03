@@ -40,6 +40,19 @@ import Summary from "./summaries/_1.4.11-summary.md";
 
 <Summary />
 
+## Uitzonderingen
+Als een component van de gebruikersinterface een tekst bevat, dan moet deze tekst voldoen aan (WCAG-succescriterium 1.4.3 Contrast (minimum)) In dat geval hoeft het grafische element zelf niet te voldoen aan de contrasteisen. 
+
+Bijvoorbeeld: een knop met een vergrootglasicoon naast het woord “Zoeken”. Omdat deze knop tekst bevat, wordt het contrast van de tekst gemeten. Het icoon is in dit geval decoratief en hoeft niet te voldoen aan succescritierium 1.4.11.
+
+Nog een voorbeeld: een invoerveld met placeholdertekst. Als deze placeholdertekst voldoende contrast heeft (meer dan 4,5:1), hoeft de rand van het invoerveld niet te worden gemeten. 
+
+Staat er alleen een grafisch element zonder tekst? Dan moet je het contrast van dit element met de achtergrond worden gemeten. Bijvoorbeeld: een zoekknop met alleen een vergrootglas-icoon. Hier wordt alleen het contrast tussen het icoon en de achtergrond gemeten, niet de rand van de knop. Nog een voorbeeld: een zoekveld zonder placeholdertekst. In dit geval wordt het contrast van de rand van het invoerveld gemeten.	
+
+Wanneer het voor een webdeveloper niet mogelijk is om de manier waarop een browser het element toont aan te passen, hoeft dit element niet te worden getest op contrast. 
+
+
+
 ## Gerelateerde NL Design System-richtlijnen
 
 - Stijl: [Kleuren](/richtlijnen/stijl/iconen).
@@ -56,27 +69,6 @@ import Summary from "./summaries/_1.4.11-summary.md";
 - [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/).
 - [Contrast van kleuren - NL Design System](https://nldesignsystem.nl/contrast/).
 
-## Hoe te testen
-
-Naast tekst ([WCAG-succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3)) moet ook andere essentiele content goed zichtbaar zijn.
-
-Dit kan bijvoorbeeld gaan om grafische objecten, zoals iconen en delen van complexe diagrammen. Het contrast van het (deel van het) icoon dat nodig is voor begrip, moet een contrast van 3:1 hebben met de directe omgeving.
-
-Het kan ook gaan om een component van de gebruikersinterface, zoals een link, een knop of een formulier element. Dan moet de visuele informatie die nodig is om het component (of de status ervan) te identificeren een contrast van 3:1 hebben met de directe omgeving.
-
-**Let op:** Als een component van de gebruikersinterface een tekst bevat, dan moet deze tekst ([WCAG-succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3)) voldoen aan de contrasteisen van tekst, en mag de knop onopvallend zijn. Als deze een afbeelding bevat, dan is successcriterium 1.4.11 van toepassing op de afbeelding. Bevat het component niks dat het component identificeert? Dan moet het component zelf contrastrijk genoeg zijn.
-
-**Let op:** Controleer het kleurcontrast altijd in de gegenereerde webpagina in een browser en niet alleen in de code zelf. Linters kunnen helpen om laaghangend fruit te ondervangen, maar de eindtest voor kleurcontrast moet gebeuren op de webpagina zelf als alle componenten worden samengevoegd tot één geheel.
-
-Controleer in de volgende situaties of het kleurcontrast van de componenten voldoende blijft:
-
-- Verschillende gebruikelijke schermgroottes inclusief mobiele weergave.
-- Verschillend oriëntaties: _portrait_ en _landscape_.
-- Vergroot de tekst alleen tot 200%.
-- Zoom in tot 400% vanaf schermbreedte van 1280px (of zet de schermbreedte op 320px).
-- Is er een dark mode aanwezig? Test ook hier het kleurcontrast van de componenten.
-- Controleer de verschillende weergaves en statussen van buttons, menus en de links zoals: met toetsenbordfocus, als je er overheen hovert met de muis, ingedrukt, en al eerder bezocht.
-- Vergeet ook de skiplinks niet.
 
 ## Gebruikersonderzoek
 
