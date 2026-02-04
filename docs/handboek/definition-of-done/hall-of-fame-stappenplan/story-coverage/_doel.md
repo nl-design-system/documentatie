@@ -1,0 +1,1 @@
+De Hall of Fame component werkt met veelvoorkomende patronen die uit meerdere Hall of Fame en Candidate componenten bestaan. Gebruikers kunnen nu in de documentatie herkennen dat complexe patronen werken zoals verwacht, voordat ze deze implementeren.

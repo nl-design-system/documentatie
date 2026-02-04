@@ -1,0 +1,124 @@
+---
+title: 3. Ontwikkelfase · Candidate stappenplan · Component bijdragen · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 3. Ontwikkelfase
+sidebar_position: 3
+pagination_label: 3. Ontwikkelfase
+description: Stappen voor de Ontwikkelfase van de Definition of Done voor Candidate
+slug: /handboek/estafettemodel/componenten/candidate/ontwikkelfase
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - definition of done
+  - candidate
+---
+
+import ReactImplementationDoel from "./react-implementation/_doel.md";
+import CssImplementationDoel from "./css-implementatie/_doel.md";
+import ScssImplementationDoel from "./scss-implementatie/_doel.md";
+import FigmaCandidateDevelopmentDoel from "./figma-candidate/_doel.md";
+import VoorbeeldThemaDoel from "./voorbeeld-thema/_doel.md";
+import DocumentatieDoel from "./documentatie/_doel.md";
+import ConsistentieDoel from "./consistentie/_doel.md";
+
+{/* @license CC0-1.0 */}
+
+# Ontwikkelfase voor Candidate componenten
+
+De Ontwikkelfase start wanneer de Voorbereidingsfase is afgerond. Dan zijn alle acceptatiecriteria en benodigde testcases bepaald.
+
+In de Ontwikkelfase wordt de component in CSS, React en Figma beschikbaar gemaakt en wordt documentatie geschreven waarmee de community de component kan gebruiken.
+
+![Een overzicht van de stappen in de Ontwikkelfase, van links naar rechts op volgorde en van boven naar beneden gegroepeerd per specialisme dat hierbij betrokken is: Developer relations en Design relations (samen relations), toegankelijkheidsspecialist, developer, designer en design system lead met productmanager (samen lead).](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-ontwikkelfase.png)
+
+[Bekijk de illustratie voor de Ontwikkelfase op een losse pagina](https://raw.githubusercontent.com/nl-design-system/documentatie/refs/heads/assets/candidate-stappenplan-ontwikkelfase.png)
+
+De stappen en substappen in de Ontwikkelfase kunnen soms parallel worden opgepakt, maar hebben hierin wel relatie tot elkaar. Bovenstaande visualisatie laat de volgende stappen zien:
+
+- React Component
+  1. Gemaakt door de developer.
+  2. Gereviewed door de Design System Lead & Product Manager.
+- CSS Component
+  1. Gemaakt door de developer.
+  2. Gereviewed door de Design System Lead & Product Manager.
+- Figma Component
+  1. Gemaakt door de designer.
+  2. Gereviewed door de Design System Lead & Product Manager.
+- Voorbeeld-thema ingesteld door relations.
+- Documentatie
+  1. Geschreven door de toegankelijkheidsspecialist, developer, designer.
+  2. Gereviewed door de Design System Lead & Product Manager.
+
+## React component {#react}
+
+### Doel
+
+<ReactImplementationDoel />
+
+### Uitkomst
+
+De React component is ontwikkeld, maakt gebruik van de CSS component en wordt gebruikt in de Storybook en testbestanden.
+
+## CSS component {#css}
+
+### Doel
+
+<CssImplementationDoel />
+
+### Uitkomst
+
+- De CSS is herbruikbaar opgezet zodat deze als 1 bron van waarheid gebruikt kan worden tussen verschillende framework implementaties, in situaties waar geen controle is over de HTML of in de shadow dom van een web component.
+- De component heeft mogelijkheden om alle variaties en states te testen in visuele regressietests
+
+## SCSS component {#css}
+
+### Doel
+
+<ScssImplementationDoel />
+
+### Uitkomst
+
+De component is beschikbaar in mixins die goed kunnen worden ingezet in systemen waar geen controle is over de HTML, maar wel een losse stylesheet kan worden ingeladen.
+
+## Figma component {#figma}
+
+### Doel
+
+<FigmaCandidateDevelopmentDoel />
+
+### Uitkomst
+
+- De component is beschikbaar in Figma en heeft dezelfde API's en states zoals deze in code zijn vastgelegd zodat hij goed overdraagbaar is naar development.
+- De component is ingesteld in het Start-thema met gebruik van basis-tokens.
+
+## Voorbeeld-thema {#voorbeeld-thema}
+
+### Doel
+
+<VoorbeeldThemaDoel />
+
+### Uitkomst
+
+De component is beschikbaar in de Voorbeeld-bibliotheek in Figma en is goed in te zetten voor prototyping. Er is een voorbeeld-huisstijl die gebruikt kan worden in de documentatie van de component.
+
+## Documentatie {#documentatie}
+
+### Doel
+
+<DocumentatieDoel />
+
+### Uitkomst
+
+De component documentatie van de beschikbare varianten en API's is beschikbaar in een herbruikbaar Markdown-bestand, op npm en in Storybook voor developers en in Figma voor designers.
+
+## Rond de Ontwikkelfase af {#afronden}
+
+### Doel
+
+<ConsistentieDoel />
+
+### Uitkomst
+
+De Testfase kan starten en parallel uitgevoerd worden. De Candidate component wordt pas getest wanneer alle onderdelen klaar staan.
