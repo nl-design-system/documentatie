@@ -39,9 +39,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.969e26ee.css" />
-  <script src="/assets/js/runtime~main.44d98b0d.js" defer="defer"></script>
-  <script src="/assets/js/main.f1d25b18.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.bbd70f56.css" />
+  <script src="/assets/js/runtime~main.5e5a85fc.js" defer="defer"></script>
+  <script src="/assets/js/main.54bc318a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -329,8 +329,7 @@
               <p>De component zoals deze nu in de community bestaat is, waar nodig, versimpeld of opgesplitst, zodat de componenten die in het design system staan allemaal een duidelijke use case en overzichtelijke documentatie hebben.</p>
               <p>Wanneer bijvoorbeeld blijkt dat de documentatie onnodig complex wordt door zinnen zoals &quot;Voor X is de property Y verplicht, tenzij het variant Z is.&quot; kan het kernteam besluiten om de component op te splitsen.</p>
               <h3 id="doel-1" class="utrecht-heading-3">Doel</h3>
-              <p>De Candidate component heeft duidelijke API&#x27;s die goed uit te leggen zijn.</p>
-              <p>De variaties kunnen gebruiksvriendelijk en toegankelijk ingezet worden door verschillende organisaties.</p>
+              <p>De Candidate implementatie neemt geen bekende bugs of problematische API&#x27;s over uit de Community implementaties, maar kan wel gelijk de changes meenemen die als breaking change in de Community implementatie zijn uitgesteld.</p>
               <h3 id="uitkomst-1" class="utrecht-heading-3">Uitkomst</h3>
               <p>De variaties en het gedrag van de component zijn bepaald en er zijn GitHub Discussions voor de nieuwe componenten aangemaakt en voor de voorgestelde losse component of variaties die niet worden meegenomen.</p>
               <h2 id="a11y" class="utrecht-heading-2">Acceptatiecriteria voor toegankelijkheid bepaald</h2>
@@ -341,19 +340,20 @@
               <p>Het is duidelijk met welke WCAG succescriteria rekening is gehouden. Daarbij wordt onderscheid gemaakt tussen de criteria die in de component zelf worden opgelost en de criteria die in context van een pagina gelden.</p>
               <h2 id="keywords" class="utrecht-heading-2">Keywords en aliassen bepaald</h2>
               <h3 id="doel-3" class="utrecht-heading-3">Doel</h3>
-              <p>De component kan makkelijk gevonden worden door verschillende gebruikers die net andere namen voor de component gebruiken.</p>
+              <p>De component kan ook gemakkelijk gevonden worden door gebruikers die andere namen voor de component gebruiken.</p>
               <h3 id="uitkomst-3" class="utrecht-heading-3">Uitkomst</h3>
               <p>Aliassen en keywords van alternatieve namen voor de component zijn vastgelegd in documentatie.</p>
               <h2 id="anatomie" class="utrecht-heading-2">Anatomie bepaald</h2>
               <p>Op basis van de input uit &#x27;Component gebruikt&#x27;, &#x27;WCAG-input&#x27;, &#x27;Issues bekend&#x27; en &#x27;Versimpeld of opgesplitst&#x27; wordt besloten uit welke onderdelen de component kan bestaan en hoe deze onderdelen worden genoemd.</p>
               <h3 id="doel-4" class="utrecht-heading-3">Doel</h3>
-              <p>De Candidate component heeft duidelijke namen voor de onderdelen die consistent gebruikt kunnen worden in code, Storybook, Figma, design tokens en documentatie.</p>
+              <p>Er is een goede keuze gemaakt voor de naamgeving van alle onderdelen van een component, zodat de kans klein is dat er veel werk gedaan moet worden voor het hernoemen van onderdelen.</p>
+              <p>Voordat de ontwikkeling van de component begint is de naamgeving alle onderdelen bekend, zodat parallel gewerkt kan worden aan een consistent resultaat in Figma, code, Storybook, tests, documentatie en design tokens.</p>
               <h3 id="uitkomst-4" class="utrecht-heading-3">Uitkomst</h3>
               <p>De onderdelen van de component zijn bepaald en de naamgeving is gekozen op basis van de NL Design System naming convention en vastgelegd.</p>
               <h2 id="html" class="utrecht-heading-2">HTML bepaald</h2>
               <p>Goede semantiek is belangrijk voor toegankelijkheid en robuustheid van websites en webapplicaties. Daarom wordt er goed gekeken op basis van de &#x27;Anatomie&#x27; en &#x27;Acceptatiecriteria voor toegankelijkheid&#x27; welke semantiek het best bij de component past.</p>
               <h3 id="doel-5" class="utrecht-heading-3">Doel</h3>
-              <p>De onderdelen waaruit de component bestaat, werken goed voor verschillende hulpsoftware en voldoen aan de NL Design System architectuur.</p>
+              <p>De onderdelen van de component werken goed in ondersteunde hulpsoftware en voldoen aan de NL Design System architectuur.</p>
               <h3 id="uitkomst-5" class="utrecht-heading-3">Uitkomst</h3>
               <p>De component wordt ontwikkeld met de HTML elementen die semantisch het best passen, voldoet hiermee aan <a href="/wcag/1.3.1/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.3.1 Info en relaties</a> en <a href="/wcag/4.1.2/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 4.1.2 Naam, rol, waarde</a> en is goed te gebruiken met langzame internetverbindingen als de CSS niet geladen kan worden.</p>
               <p>Er is bepaald of er een HTML implementatie van de component mogelijk is, zodat deze ook ingezet kan worden in situaties waar HTML aanpassen geen optie is en er geen voorspelbare class names zijn gebruikt.</p>
@@ -394,14 +394,14 @@
               <h2 id="afronden" class="utrecht-heading-2">Rond de Voorbereidingsfase af</h2>
               <p>Het kernteam laat de community weten dat de voorbereidingen in het Candidate proces afgerond zijn en de component klaar is om gebouwd te worden.</p>
               <h3 id="doel-10" class="utrecht-heading-3">Doel</h3>
-              <p>De Candidate component heeft zoveel mogelijk draagvlak in de community en developers en designers kijken uit om het Candidate component te gebruiken doordat duidelijk is met hoeveel dingen rekening is gehouden.</p>
+              <p>De Candidate component heeft zo veel mogelijk draagvlak in de community en developers en designers kijken uit om het Candidate component te gebruiken doordat duidelijk is met hoeveel dingen rekening is gehouden.</p>
               <h3 id="uitkomst-10" class="utrecht-heading-3">Uitkomst</h3>
               <p>De community weet dat de voorbereidingen getroffen zijn en hebben nog een kans om toch nog input te geven op de gemaakte keuzes. Ook ziet de community dat de Community componenten als basis zijn gebruikt zodat ze zich gewaardeerd en gesterkt voelen om ook Community componenten geschikt te helpen maken voor Candidate.</p>
              </div>
              <footer class="theme-doc-footer docusaurus-mt-lg">
               <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
                <div class="col noPrint_BL5k">
-                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/candidate-stappenplan/2-voorbereidingsfase.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/candidate-stappenplan/2-voorbereidingsfase.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
                  ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit__SPV" aria-hidden="true">
                   <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
                  >Bewerk deze pagina</a

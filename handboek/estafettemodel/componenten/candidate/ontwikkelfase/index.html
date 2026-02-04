@@ -39,9 +39,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.969e26ee.css" />
-  <script src="/assets/js/runtime~main.44d98b0d.js" defer="defer"></script>
-  <script src="/assets/js/main.f1d25b18.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.bbd70f56.css" />
+  <script src="/assets/js/runtime~main.5e5a85fc.js" defer="defer"></script>
+  <script src="/assets/js/main.54bc318a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -284,46 +284,55 @@
               </ul>
               <h2 id="react" class="utrecht-heading-2">React component</h2>
               <h3 id="doel" class="utrecht-heading-3">Doel</h3>
-              <p>De Candidate component is aantoonbaar te gebruiken in ten minste 1 veelgebruikt frontend framework, kan makkelijk gedocumenteerd worden in Storybook en werkt goed op onze eigen websites.</p>
+              <p>De Candidate component is aantoonbaar te gebruiken in tenminste 1 veelgebruikt frontend framework, kan makkelijk gedocumenteerd worden in Storybook en werkt goed op onze eigen websites.</p>
               <h3 id="uitkomst" class="utrecht-heading-3">Uitkomst</h3>
               <p>De React component is ontwikkeld, maakt gebruik van de CSS component en wordt gebruikt in de Storybook en testbestanden.</p>
               <h2 id="css" class="utrecht-heading-2">CSS component</h2>
               <h3 id="doel-1" class="utrecht-heading-3">Doel</h3>
-              <p>De Candidate component kan makkelijk beschikbaar worden gemaakt in elk framework naar keuze en heeft hierbij dezelfde gedeelde stylesheet. Bij componenten met een native equivalent is er een HTML variant te gebruiken, zodat deze ook kan worden gebruikt voor output uit CMS&#x27;en en API&#x27;s waar geen classnames kunnen worden toegepast op de HTML.</p>
+              <p>De Candidate component kan makkelijk beschikbaar worden gemaakt in elk framework naar keuze en heeft hierbij dezelfde gedeelde stylesheet. Bij componenten met een native equivalent is er een HTML variant te gebruiken, zodat deze ook kan worden gebruik voor output uit CMSen en APIs waar geen classnames kunnen worden toegepast op de HTML.</p>
               <h3 id="uitkomst-1" class="utrecht-heading-3">Uitkomst</h3>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>De component is beschikbaar in mixins die goed kunnen worden ingezet in systemen waar geen controle is over de HTML, maar wel een losse stylesheet kan worden ingeladen.</li>
-               <li>De CSS is herbruikbaar opgezet zodat deze als één bron van waarheid gebruikt kan worden tussen verschillende framework implementaties, in situaties waar geen controle is over de HTML of in de Shadow DOM van een web component.</li>
-               <li>De component heeft mogelijkheden om alle variaties en states te testen in visuele regressietests.</li>
+               <li>De CSS is herbruikbaar opgezet zodat deze als 1 bron van waarheid gebruikt kan worden tussen verschillende framework implementaties, in situaties waar geen controle is over de HTML of in de shadow dom van een web component.</li>
+               <li>De component heeft mogelijkheden om alle variaties en states te testen in visuele regressietests</li>
               </ul>
-              <h2 id="figma" class="utrecht-heading-2">Figma component</h2>
+              <h2 id="css" class="utrecht-heading-2">SCSS component</h2>
               <h3 id="doel-2" class="utrecht-heading-3">Doel</h3>
-              <p>De Candidate component kan makkelijk ingezet worden door designers en is snel in te stellen op een eigen huisstijl.</p>
+              <p>Developers kunnen de CSS-implementatie gebruiken voor eigen CSS selectors.</p>
+              <p>De CSS-implementatie kan gebruikt worden in de Shadow DOM van een Web Component.</p>
+              <p>De CSS-implementatie kan gebruikt worden op de <code class="utrecht-code">:host</code> element van een Web Component.</p>
+              <p>De CSS-implementatie kan gebruikt worden in code waar geen API prefixes van anderen gebruikt moeten worden.</p>
+              <p>De CSS-implementatie kan gebruikt worden voor HTML elementen zonder class names.</p>
               <h3 id="uitkomst-2" class="utrecht-heading-3">Uitkomst</h3>
+              <p>De component is beschikbaar in mixins die goed kunnen worden ingezet in systemen waar geen controle is over de HTML, maar wel een losse stylesheet kan worden ingeladen.</p>
+              <h2 id="figma" class="utrecht-heading-2">Figma component</h2>
+              <h3 id="doel-3" class="utrecht-heading-3">Doel</h3>
+              <p>De Candidate component kan makkelijk worden gebruikt voor prototypes en designs in Figma zodat er genoeg feedback wordt gegeven door designers om er uiteindelijk een Hall of Fame component van te maken.</p>
+              <h3 id="uitkomst-3" class="utrecht-heading-3">Uitkomst</h3>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>De component is beschikbaar in Figma en heeft dezelfde API&#x27;s en states zoals deze in code zijn vastgelegd zodat hij goed overdraagbaar is naar development.</li>
                <li>De component is ingesteld in het Start-thema met gebruik van basis-tokens.</li>
               </ul>
               <h2 id="voorbeeld-thema" class="utrecht-heading-2">Voorbeeld-thema</h2>
-              <h3 id="doel-3" class="utrecht-heading-3">Doel</h3>
+              <h3 id="doel-4" class="utrecht-heading-3">Doel</h3>
               <p>De Candidate component is goed in te zetten voor prototyping zonder eerst een eigen huisstijl in te stellen.</p>
-              <h3 id="uitkomst-3" class="utrecht-heading-3">Uitkomst</h3>
+              <h3 id="uitkomst-4" class="utrecht-heading-3">Uitkomst</h3>
               <p>De component is beschikbaar in de Voorbeeld-bibliotheek in Figma en is goed in te zetten voor prototyping. Er is een voorbeeld-huisstijl die gebruikt kan worden in de documentatie van de component.</p>
               <h2 id="documentatie" class="utrecht-heading-2">Documentatie</h2>
-              <h3 id="doel-4" class="utrecht-heading-3">Doel</h3>
-              <p>De Candidate component en varianten zijn makkelijk te gebruiken voor developers en designers zodat het laagdrempelig is om de component te gebruiken, en het kernteam daardoor voldoende feedback krijgt om de component te selecteren voor de Hall of Fame stappen.</p>
-              <h3 id="uitkomst-4" class="utrecht-heading-3">Uitkomst</h3>
+              <h3 id="doel-5" class="utrecht-heading-3">Doel</h3>
+              <p>De Candidate component en varianten zijn makkelijk te gebruiken voor developers en designers.</p>
+              <p>Doordat de component veel gebruikt wordt krijgt het kernteam voldoende feedback om de component te selecteren voor de Hall of Fame stappen.</p>
+              <h3 id="uitkomst-5" class="utrecht-heading-3">Uitkomst</h3>
               <p>De component documentatie van de beschikbare varianten en API&#x27;s is beschikbaar in een herbruikbaar Markdown-bestand, op npm en in Storybook voor developers en in Figma voor designers.</p>
               <h2 id="afronden" class="utrecht-heading-2">Rond de Ontwikkelfase af</h2>
-              <h3 id="doel-5" class="utrecht-heading-3">Doel</h3>
-              <p>De Candidate component is consistent in code, Figma en documentatie.</p>
-              <h3 id="uitkomst-5" class="utrecht-heading-3">Uitkomst</h3>
+              <h3 id="doel-6" class="utrecht-heading-3">Doel</h3>
+              <p>De component is consistent in alle onderdelen van de implementatie: code, Figma en documentatie.</p>
+              <h3 id="uitkomst-6" class="utrecht-heading-3">Uitkomst</h3>
               <p>De Testfase kan starten en parallel uitgevoerd worden. De Candidate component wordt pas getest wanneer alle onderdelen klaar staan.</p>
              </div>
              <footer class="theme-doc-footer docusaurus-mt-lg">
               <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
                <div class="col noPrint_BL5k">
-                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/candidate-stappenplan/3-ontwikkelfase.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/candidate-stappenplan/3-ontwikkelfase.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
                  ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit__SPV" aria-hidden="true">
                   <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
                  >Bewerk deze pagina</a
@@ -349,6 +358,7 @@
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#react" class="table-of-contents__link toc-highlight">React component</a></li>
              <li><a href="#css" class="table-of-contents__link toc-highlight">CSS component</a></li>
+             <li><a href="#css" class="table-of-contents__link toc-highlight">SCSS component</a></li>
              <li><a href="#figma" class="table-of-contents__link toc-highlight">Figma component</a></li>
              <li><a href="#voorbeeld-thema" class="table-of-contents__link toc-highlight">Voorbeeld-thema</a></li>
              <li><a href="#documentatie" class="table-of-contents__link toc-highlight">Documentatie</a></li>

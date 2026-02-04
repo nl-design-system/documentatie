@@ -39,9 +39,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.969e26ee.css" />
-  <script src="/assets/js/runtime~main.44d98b0d.js" defer="defer"></script>
-  <script src="/assets/js/main.f1d25b18.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.bbd70f56.css" />
+  <script src="/assets/js/runtime~main.5e5a85fc.js" defer="defer"></script>
+  <script src="/assets/js/main.54bc318a.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -251,7 +251,8 @@
               <header><h1 id="ontwikkelfase-voor-hall-of-fame-componenten" class="utrecht-heading-1">Ontwikkelfase voor Hall of Fame componenten</h1></header>
               <h2 id="richtlijnen-voor-invulling-design-tokens" class="utrecht-heading-2">Richtlijnen voor invulling design tokens</h2>
               <h3 id="doel" class="utrecht-heading-3">Doel</h3>
-              <p>De Hall of Fame component heeft voldoende documentatie en hulpmiddelen om gebruikers zelfstandig de design tokens van de component op een voorspelbare en toegankelijke manier te laten invullen voor hun eigen huisstijl.</p>
+              <p>Gebruikers kunnen aan de hand van documentatie zelfstandig de design tokens van de component invullen, en keuzes maken voor hun eigen huisstijl.</p>
+              <p>Door interactieve hulpmiddelen in de documentatie is het mogelijk voor developers, designers en gebruikers zonder technische kennis om een huisstijl in te stellen voor componenten, en het vertrouwen te hebben dat het resultaat toegankelijk is.</p>
               <h3 id="uitkomst" class="utrecht-heading-3">Uitkomst</h3>
               <p>Er zijn duidelijke richtlijnen beschikbaar voor het invullen van alle design tokens van de component.</p>
               <p>De kleurcombinaties waarmee de component voldoende contrast heeft zijn vastgelegd in JSON zodat hulpmiddelen automatisch waarschuwingen kunnen tonen voor combinaties die toegankelijkheidsproblemen kunnen veroorzaken (zoals onvoldoende kleurcontrast).</p>
@@ -259,18 +260,20 @@
               <p>Om deze situaties te herkennen zijn er unit tests voor elk component, liefst op basis van de stories van Evil Storybook, met bijvoorbeeld Playwright.</p>
               <h2 id="richtlijnen-voor-redacteuren" class="utrecht-heading-2">Richtlijnen voor redacteuren</h2>
               <h3 id="doel-1" class="utrecht-heading-3">Doel</h3>
-              <p>De Hall of Fame component heeft voldoende documentatie en hulpmiddelen zodat redacteuren en contentmakers de component goed en toegankelijk kunnen inzetten, zonder daar diepgaande technische kennis voor nodig te hebben.</p>
+              <p>Contentmakers hebben duidelijke instructies en herkenbare voorbeelden om de component toegankelijk in te zetten.</p>
+              <p>Contentmakers hebben hulpmiddelen en interactieve voorbeelden, die specifieke instructies geven die relevant zijn voor hun situatie. Contentmakers kunnen hiermee leren hoe je de component toegankelijk kan inzetten, zonder eerst alle richtlijnen volledig te begrijpen.</p>
               <h3 id="uitkomst-1" class="utrecht-heading-3">Uitkomst</h3>
               <p>Er zijn duidelijke richtlijnen beschikbaar voor redacteuren over hoe de component moet worden gebruikt in een CMS of andere contentmanagement tools. Deze richtlijnen bevatten concrete voorbeelden van goede en slechte content, uitleg over toegankelijkheidseisen (zoals alt-teksten of labelverplichtingen) en best practices voor gebruiksvriendelijkheid.</p>
               <p>De contentrichtlijnen die van toepassing zijn op de component zijn vastgelegd in een JSON-bestand. De validatieregels zijn vastgelegd op component-niveau en element-niveau, zodat automatisch de link gelegd kan worden naar relevante documentatie, en hulpmiddelen automatisch waarschuwingen kunnen tonen.</p>
               <h2 id="risicos-met-betrekking-tot-security-gedocumenteerd" class="utrecht-heading-2">Risico&#x27;s met betrekking tot security gedocumenteerd</h2>
               <h3 id="doel-2" class="utrecht-heading-3">Doel</h3>
-              <p>De Hall of Fame component kan werken in een veilige omgeving, bijvoorbeeld wanneer de website DigiD-gecertificeerd is. Er is voldoende documentatie zodat gebruikers van de component zich bewust zijn van security-aspecten en een aanpak kiezen om de component zo veilig mogelijk toe te passen.</p>
+              <p>De component werkt ook goed in een website met stricte beveiliging, bijvoorbeeld voor het beschermen van gevoelige persoonlijke of financiële gegevens. Extra stappen die nodig zijn om de component te gebruiken zijn goed gedocumenteerd.</p>
+              <p>Er is voldoende documentatie zodat gebruikers van de component zich bewust zijn van security-aspecten en een aanpak kiezen om de component zo veilig mogelijk toe te passen.</p>
               <h3 id="uitkomst-2" class="utrecht-heading-3">Uitkomst</h3>
               <p>Relevante security-aspecten uit de voorbereidingsfase zijn opgenomen in de component documentatie. Er is uitleg wat het risico is, in welke situaties het relevant is en welke maatregelen je kan nemen. Deze documentatie wordt overgeslagen wanneer security niet relevant is voor het component.</p>
               <h2 id="risicos-met-betrekking-tot-privacy-gedocumenteerd" class="utrecht-heading-2">Risico&#x27;s met betrekking tot privacy gedocumenteerd</h2>
               <h3 id="doel-3" class="utrecht-heading-3">Doel</h3>
-              <p>De Hall of Fame component kan werken volgens AVG-richtlijnen. Er is voldoende documentatie zodat gebruikers van de component zich bewust zijn van privacy-risico&#x27;s en weten hoe ze deze kunnen voorkomen.</p>
+              <p>Wanneer een component invloed heeft op de privacy van eindgebruikers, dan is er documentatie voor gebruikers van de component die helpt om de beste keuzes voor privacy te maken.</p>
               <h3 id="uitkomst-3" class="utrecht-heading-3">Uitkomst</h3>
               <p>Alle geïdentificeerde privacy-risico&#x27;s uit de voorbereidingsfase zijn opgenomen in de component documentatie. Voor elk risico is uitgelegd wat het risico is, welke AVG-verplichtingen spelen en welke maatregelen genomen kunnen worden. Als er geen privacy aspecten zijn wordt deze documentatie overgeslagen.</p>
               <h2 id="doel-van-de-component-vastgelegd" class="utrecht-heading-2">Doel van de component vastgelegd</h2>
@@ -280,12 +283,15 @@
               <p>Het doel en situaties waarin de component wordt gebruikt is vastgelegd in de documentatie van de component. Er is uitleg beschikbaar over wanneer deze component de juiste keuze is en in welke situaties een gerelateerde component een betere oplossing biedt.</p>
               <h2 id="donts-voor-toegankelijkheid-gedocumenteerd" class="utrecht-heading-2">Don&#x27;ts voor toegankelijkheid gedocumenteerd</h2>
               <h3 id="doel-5" class="utrecht-heading-3">Doel</h3>
-              <p>De Hall of Fame component helpt veelgemaakte toegankelijkheidsfouten bij het gebruik van de component te voorkomen. Gebruikers kunnen proactief toegankelijkheidsproblemen voorkomen in plaats van deze achteraf te moeten oplossen.</p>
+              <p>Voorkomen dat de component fout wordt toegepast, doordat gebruikers niet weten dat wat veelvoorkomende anti-patronen zijn voor toegankelijkheid.</p>
+              <p>Wanneer gebruikers een component vaak op een foute of ongewenste manier toepassen, dan moet het niet veel moeite zijn daarover uitleg te geven.</p>
+              <p>Je kunt gebruikers die anti-patronen gebruiken, ondersteunen door een linkje te delen naar de documentatie.</p>
               <h3 id="uitkomst-5" class="utrecht-heading-3">Uitkomst</h3>
               <p>Veelgemaakte toegankelijkheidsfouten bij het gebruik van de component zijn gedocumenteerd door voorbeelden van verkeerd gebruik te laten zien met concrete voorbeelden van een toegankelijk alternatief. Er zijn do&#x27;s en don&#x27;ts die duidelijk maken hoe de component goed toegankelijk kan worden ingezet. Deze documentatie bevat concrete voorbeelden en uitleg waarom bepaalde patronen toegankelijkheidsproblemen veroorzaken.</p>
               <h2 id="donts-voor-gebruiksvriendelijkheid-gedocumenteerd" class="utrecht-heading-2">Don&#x27;ts voor gebruiksvriendelijkheid gedocumenteerd</h2>
               <h3 id="doel-6" class="utrecht-heading-3">Doel</h3>
-              <p>De Hall of Fame component helpt veelgemaakte UX-fouten te voorkomen, zodat de component niet onbedoeld zorgt voor een slechte gebruikerservaring. Gebruikers kunnen zelf gebruiksvriendelijkheidsproblemen voorkomen en hoeven niet zelf door gebruikersfeedback te ontdekken wat wel en niet werkt.</p>
+              <p>Voorkomen dat de component fout wordt toegepast, doordat gebruikers niet weten dat wat veelvoorkomende anti-patronen zijn voor gebruiksvriendelijkheid.</p>
+              <p>Gebruikers kunnen ontdekken welke UX-ontwerpen al zijn getest met gebruikers, en die niet positief worden beoordeeld.</p>
               <h3 id="uitkomst-6" class="utrecht-heading-3">Uitkomst</h3>
               <p>Veelgemaakte gebruiksvriendelijkheidsfouten bij het gebruik van de component zijn gedocumenteerd als &quot;Don&#x27;ts&quot;, elk met een duidelijke &quot;Do&quot; die laat zien wat wel de juiste manier is. Deze documentatie bevat concrete voorbeelden en uitleg waarom bepaalde patronen gebruiksonvriendelijk zijn.</p>
               <h2 id="richtlijnen-gelinkt" class="utrecht-heading-2">Richtlijnen gelinkt</h2>
@@ -296,12 +302,13 @@
               <p>Gebruikers kunnen nu makkelijk achtergrond-informatie en context vinden zonder zelf te moeten zoeken naar de juiste richtlijnen.</p>
               <h2 id="candidate-component-overgenomen-in-hall-of-fame-repository" class="utrecht-heading-2">Candidate component overgenomen in Hall of Fame repository</h2>
               <h3 id="doel-8" class="utrecht-heading-3">Doel</h3>
-              <p>De Hall of Fame component gebruikt de Candidate component als solide basis, zodat alle inzichten uit validatie, gemaakte verbeteringen en testautomatisering behouden blijven.</p>
+              <p>Voorkom dat een component niet voldoet aan de wensen van gebruikers, maar dat de benodigde verbeteringen niet gedaan kunnen worden omdat is afgesproken dat de API langere tijd stabiel blijft.</p>
+              <p>Wanneer een component-implementatie wordt uitgekozen om langere tijd aan te bieden met een stabiele API, dan wordt die gebaseerd op een bestaande implementatie waarvan de API aantoonbaar voldoet voor diverse groepen gebruikers, voor diverse doeleinden, in diverse technieken.</p>
               <h3 id="uitkomst-8" class="utrecht-heading-3">Uitkomst</h3>
               <p>De volledige Candidate component (inclusief code, tests, stories en documentatie) is overgezet naar de Hall of Fame repository als startpunt voor verdere ontwikkeling. Alle acceptatiecriteria waar de Candidate component aan voldoet worden meegenomen in de Hall of Fame versie.</p>
               <h2 id="hall-of-fame-component-als-web-component-beschikbaar" class="utrecht-heading-2">Hall of Fame component als Web Component beschikbaar</h2>
               <h3 id="doel-9" class="utrecht-heading-3">Doel</h3>
-              <p>Gebruikers kunnen de Hall of Fame component inzetten ongeacht hun technische keuzes en kunnen makkelijker migreren tussen frameworks zonder de component opnieuw te moeten implementeren.</p>
+              <p>Gebruikers kunnen de component gebruiken met een front-end framework dat ze zelf kiezen, en ze kunnen migreren tussen frameworks zonder de component opnieuw te moeten implementeren.</p>
               <h3 id="uitkomst-9" class="utrecht-heading-3">Uitkomst</h3>
               <p>De Hall of Fame component is beschikbaar als Web Component en kan worden gebruikt in elke moderne browser en in combinatie met elk frontend framework. De Web Component gebruikt dezelfde design tokens als de andere implementaties en heeft dezelfde API&#x27;s.</p>
               <h2 id="stories-uitgebreid" class="utrecht-heading-2">Stories uitgebreid</h2>
@@ -311,14 +318,14 @@
               <p>Alle belangrijke combinaties van de component met andere Hall of Fame en Candidate componenten zijn getest en gedocumenteerd. Alle parent/child combinaties die beschikbaar zijn als Hall of Fame of Candidate component zijn opgenomen als Stories in Storybook. Ook zijn combinaties met verschillende states (zoals focus-visible, hover, disabled) gedocumenteerd, zodat developers kunnen verifiëren dat bijvoorbeeld een focus ring nog steeds zichtbaar is in een geneste situatie.</p>
               <h2 id="testautomatisering-op-hoogste-niveau" class="utrecht-heading-2">Testautomatisering op hoogste niveau</h2>
               <h3 id="doel-11" class="utrecht-heading-3">Doel</h3>
-              <p>Voorkomen dat een kleine wijziging in de Hall of Fame onbedoelde gevolgen heeft bij een grote groep gebruikers.</p>
+              <p>Zeer uitgebreide test coverage voorkomt dat een kleine wijziging in de component onbedoelde gevolgen heeft bij een grote groep gebruikers.</p>
               <h3 id="uitkomst-11" class="utrecht-heading-3">Uitkomst</h3>
               <p>De testautomatisering van de Candidate component is uitgebreid zodat een hoger percentage van de code automatisch wordt getest, bijvoorbeeld 100% <em class="utrecht-emphasis utrecht-emphasis--stressed">branch coverage</em> van JavaScript en 100% van de CSS.</p>
              </div>
              <footer class="theme-doc-footer docusaurus-mt-lg">
               <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
                <div class="col noPrint_BL5k">
-                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/hall-of-fame-stappenplan/4-ontwikkelfase.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/hall-of-fame-stappenplan/4-ontwikkelfase.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
                  ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit__SPV" aria-hidden="true">
                   <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
                  >Bewerk deze pagina</a
