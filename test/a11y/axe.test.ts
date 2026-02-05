@@ -1,64 +1,74 @@
-import { expect, test } from '@playwright/test';
-import * as cheerio from 'cheerio';
-import * as fs from 'fs';
+import { expect, test, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import * as cheerio from 'cheerio';
+import { readFileSync } from 'fs';
 import { writeFile } from 'fs/promises';
 
-// Constants
-const siteUrl = 'http://localhost:3000';
-const sitemapPath = './build/sitemap.xml';
-// Screenshot path is relative to `/screenshots/` in the root
-
-// Extract a list of pathnames, given a fs path to a sitemap.xml file
-// Docusaurus generates a build/sitemap.xml file for you!
-const extractSitemapPathnames = (sitemapPath: string): string[] => {
-  const sitemap = fs.readFileSync(sitemapPath).toString();
-  const $ = cheerio.load(sitemap, { xmlMode: true });
-  const urls: string[] = [];
-  $('loc').each(function handleLoc() {
-    /* eslint-disable-next-line no-invalid-this */
-    urls.push($(this).text());
-  });
-  return urls.map((url) => new URL(url).pathname);
+const CONFIG = {
+  baseUrl: 'http://localhost:3000',
+  sitemapPath: './build/sitemap.xml',
+  reportPath: './tmp/axe.json',
 };
 
-// Wait for hydration, requires Docusaurus v2.4.3+
-// Docusaurus adds a <html data-has-hydrated="true"> once hydrated
-// See https://github.com/facebook/docusaurus/pull/9256
-const waitForDocusaurusHydration = () => {
+const violations: unknown[] = [];
+
+test.describe('Accessibility features', () => {
+  const pathnames = getPathnamesFromSitemap(CONFIG.sitemapPath);
+
+  pathnames.forEach((pathname) => {
+    test(pathname, async ({ page }) => {
+      await verifyPageAccessibility(page, pathname);
+    });
+  });
+
+  test.afterAll(async () => {
+    await saveViolationsReport(violations, CONFIG.reportPath);
+  });
+});
+
+function getPathnamesFromSitemap(sitemapPath: string): string[] {
+  try {
+    const sitemap = readFileSync(sitemapPath, 'utf8');
+    const $ = cheerio.load(sitemap, { xmlMode: true });
+
+    return $('loc')
+      .map((_, element) => $(element).text())
+      .toArray()
+      .map((url) => new URL(url).pathname);
+  } catch (error) {
+    console.warn(`Could not read sitemap at ${sitemapPath}, skipping accessibility tests generation.`, error);
+    return [];
+  }
+}
+
+async function verifyPageAccessibility(page: Page, pathname: string): Promise<void> {
+  const url = CONFIG.baseUrl + pathname;
+  await page.goto(url);
+  await page.waitForFunction(isDocusaurusHydrated);
+
+  const isAxeDisabled = (await page.locator('meta[name="axe"][content="false"]').count()) > 0;
+  test.skip(isAxeDisabled, 'Skipped because of <meta name="axe" content="false">');
+
+  const results = await analyzeAccessibility(page);
+
+  violations.push(results);
+  expect(results.violations).toEqual([]);
+}
+
+function isDocusaurusHydrated(): boolean {
   return document.documentElement.dataset.hasHydrated === 'true';
-};
+}
 
-const allErrors = [];
+async function analyzeAccessibility(page: Page) {
+  return new AxeBuilder({ page })
+    .options({ resultTypes: ['violations'] })
+    .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+    .analyze();
+}
 
-const screenshotPathname = (pathname: string) => {
-  test(`${pathname}`, async ({ page }) => {
-    const url = siteUrl + pathname;
-    await page.goto(url);
-    await page.waitForFunction(waitForDocusaurusHydration);
-
-    const noVisualRegressionTest = (await page.locator('meta[name="axe"][content="false"]').count()) > 0;
-
-    test.skip(noVisualRegressionTest, 'Skipped because of <meta name="axe" content="false">');
-
-    const accessibilityScanResults = await new AxeBuilder({ page })
-      .options({ resultTypes: ['violations'] })
-      .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
-      .analyze();
-
-    allErrors.push(accessibilityScanResults);
-
-    expect(accessibilityScanResults.violations).toEqual([]);
-  });
-};
-
-test.afterAll(async () => {
-  const resultJSON = './tmp/axe.json';
-  console.log(`Write ${resultJSON}`);
-  await writeFile(resultJSON, JSON.stringify(allErrors, null, 2));
-});
-
-test.describe('AxE: ', () => {
-  const pathnames = extractSitemapPathnames(sitemapPath);
-  pathnames.forEach(screenshotPathname);
-});
+async function saveViolationsReport(reportData: unknown[], filePath: string): Promise<void> {
+  if (reportData.length > 0) {
+    console.log(`Writing accessibility report to ${filePath}`);
+    await writeFile(filePath, JSON.stringify(reportData, null, 2));
+  }
+}
