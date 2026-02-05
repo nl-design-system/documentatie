@@ -194,8 +194,7 @@
     "mini-create-react-context": {
       "react": "^16 || ^17 || ^18",
       "react-dom": "^16 || ^17 || ^18"
-    },
-    "@isaacs/brace-expansion": "^5.0.1"
+    }
   },
   "browserslist": {
     "production": [
