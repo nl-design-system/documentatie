@@ -4,6 +4,7 @@ const siteUrl = 'https://nldesignsystem.nl';
 
 // https://astro.build/config
 export default defineConfig({
+  publicDir: '../../static',
   build: {
     inlineStylesheets: 'never',
   },
