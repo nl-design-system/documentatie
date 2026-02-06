@@ -45,7 +45,7 @@ Als ook nieuwe inzichten en gebruikersonderzoek gedeeld worden, kunnen we daar m
 
 Dat we samenwerken, betekent niet dat alles wat met NL Design System gemaakt wordt er hetzelfde uit ziet. Dat kan ook niet, want in Nederland hebben de meeste overheidsorganisaties een eigen identiteit, en de Rijkhuisstijl kan alleen worden gebruikt door de Rijksoverheid.
 
-Door [thema's te maken](/handboek/developer/thema-maken) met beschikbare [design tokens](/handboek/huisstijl/design-tokens/) kunnen applicaties gebruikmaken van dezelfde componenten, zélfs als deze door een andere organisatie gebouwd zijn. Deze thema's kunnen dan weer goed getest worden op toegankelijkheid en gebruiksvriendelijkheid. En ze kunnen voor de verschillende applicaties van één organisatie hergebruikt worden, zelfs als deze door verschillende leveranciers zijn gebouwd.
+Door [thema's te maken](/handboek/developer/werken-met-nl-design-system/thema-maken) met beschikbare [design tokens](/handboek/huisstijl/design-tokens/) kunnen applicaties gebruikmaken van dezelfde componenten, zélfs als deze door een andere organisatie gebouwd zijn. Deze thema's kunnen dan weer goed getest worden op toegankelijkheid en gebruiksvriendelijkheid. En ze kunnen voor de verschillende applicaties van één organisatie hergebruikt worden, zelfs als deze door verschillende leveranciers zijn gebouwd.
 
 ### Samenwerken aan een herbruikbare componentenbibliotheek
 

@@ -1,0 +1,114 @@
+---
+title: Component inzetten · Developer · Handboek
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Component inzetten
+pagination_label: Component inzetten
+description: Bestaand component inzetten
+keywords:
+  - developer
+  - bijdragen
+  - component gebruiken
+---
+
+<!-- wordt uitgebreid in https://github.com/nl-design-system/documentatie/issues/2514 -->
+
+# Bestaand component inzetten
+
+Op deze pagina staan meerdere stappenplannen die uitleggen hoe je een NL Design System component in kunt zetten.
+
+## Hoe gebruik je NL Design System met React.js en Candidate componenten?
+
+Op deze pagina lees je hoe je de Candidate componenten van NL Design System inzet binnen een React applicatie.
+
+Aan de hand van dit stappenplan leer je:
+
+- Hoe je een candidate component inzet in een React.js project.
+- Hoe je het voorbeeld thema gebruikt om de component(en) te stylen.
+- Hoe je kunt overstappen naar een eigen thema.
+
+### Aan de slag
+
+Met behulp van dit voorbeeld bouw je een React.js applicatie. Als voorbeeld component wordt gebruik gemaakt van de `nl-button` component. Deze is in de Candidate fase van het [estafettemodel](/handboek/estafettemodel).
+
+Binnen React bestaan verschillende frameworks, bijvoorbeeld voor Server-side rendering. Alle frameworks binnen React kun je gebruiken in combinatie met NL Design System.
+
+### Stap 1 – React project opzetten
+
+Maak een nieuw React project aan met het volgende commando:
+
+```bash
+npx create-react-router@latest
+```
+
+:::info[React.js informatie]
+Dit codevoorbeeld komt van [de website van React.js](https://react.dev/learn/creating-a-react-app). Op het moment van schrijven was de versie 7.12.0.
+:::
+
+### Stap 2 – Design tokens toepassen
+
+Alle componenten binnen NL Design System zijn gebaseerd op tokens, zonder de tokens heeft de component geen styling. Je moet daarom altijd zelf een design-token package toevoegen.
+
+In dit voorbeeld installeer je het voorbeeld-thema:
+
+```bash
+pnpm i @nl-design-system-unstable/voorbeeld-design-tokens
+```
+
+Importeer vervolgens de tokens in je index.tsx of main.tsx:
+
+```javascript
+import "@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css";
+```
+
+En pas het voorbeeld thema toe op de `body` van de HTML door een className toe te voegen:
+
+```jsx
+<body className="voorbeeld-theme">
+```
+
+### Stap 3 – Candidate component installeren
+
+Op [de button component-pagina](/button) kun je de onderstaande code terugvinden.
+
+Installeer de Candidate Button component:
+
+```bash
+pnpm i @nl-design-system-candidate/button-react
+pnpm i @nl-design-system-candidate/button-css
+```
+
+:::info[Bestaande React.js code]
+Met het genereren van het React project is ook veel voorbeeldcode toegevoegd, deze kun je weghalen.
+:::
+
+Gebruik de component in je code:
+
+```jsx
+import "@nl-design-system-candidate/button-css/button.css";
+import { Button } from "@nl-design-system-candidate/button-react";
+
+export function Welcome() {
+  return (
+    <>
+      <Button>Klik mij!</Button>
+    </>
+  );
+}
+```
+
+Om het resultaat te kunnen zien, moet je de dev server starten:
+
+```bash
+pnpm run dev
+```
+
+Ga naar de localhost URL en je ziet de component met styling terug.
+
+:::info[Meer candidate componenten toevoegen]
+Wil je meer candidate componenten toevoegen aan de pagina? Die vind je met behulp van een filter op de [componenten pagina](/componenten/?status=CANDIDATE).
+:::
+
+### Stap 4 - voeg je eigen thema toe (optioneel)
+
+Nu ziet de button eruit alsof het onderdeel is van voorbeeld-thema. Als je een eigen thema wilt toepassen, kijk dan op de pagina [thema maken](/handboek/developer/werken-met-nl-design-system/thema-maken).
