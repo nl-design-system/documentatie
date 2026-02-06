@@ -241,26 +241,28 @@ Amsterdam heeft een component om elementen 'onzichtbaar' te maken. Deze importee
 Op het moment van schrijven heeft de Navigation Bar de status "Help Wanted". Na navraag in de [Slack community](/slack) blijkt echter wel dat de Utrecht community een Navigation Bar beschikbaar heeft gemaakt. De styling is niet perfect, maar dat kan met custom CSS opgelost worden, of zoals in dit voorbeeld gedaan wordt wachten we tot er een beter component beschikbaar is.
 
 ```html
-<div class="rhc-nav-bar__container">
-  <nav aria-labelledby="secondary-navigation" class="utrecht-nav-bar">
-    <span class="ams-visually-hidden" id="secondary-navigation">Secundaire navigatie</span>
-    <div class="utrecht-nav-bar__content">
-      <ul role="list" class="utrecht-nav-list">
-        <li class="utrecht-nav-list__item">
-          <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Home</a>
-        </li>
-        <li class="utrecht-nav-list__item">
-          <a aria-current="page" aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Meldingen</a>
-        </li>
-        <li class="utrecht-nav-list__item">
-          <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="/componenten/">Componenten</a>
-        </li>
-        <li class="utrecht-nav-list__item">
-          <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="/voorbeelden/">Voorbeelden</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<div class="rhc-nav-bar">
+  <div class="rhc-nav-bar__container">
+    <nav aria-labelledby="secondary-navigation" class="utrecht-nav-bar">
+      <span class="ams-visually-hidden" id="secondary-navigation">Secundaire navigatie</span>
+      <div class="utrecht-nav-bar__content">
+        <ul role="list" class="utrecht-nav-list">
+          <li class="utrecht-nav-list__item">
+            <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Home</a>
+          </li>
+          <li class="utrecht-nav-list__item">
+            <a aria-current="page" aria-disabled="false" class="nl-link utrecht-nav-list__link" href="#">Meldingen</a>
+          </li>
+          <li class="utrecht-nav-list__item">
+            <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="/componenten/">Componenten</a>
+          </li>
+          <li class="utrecht-nav-list__item">
+            <a aria-disabled="false" class="nl-link utrecht-nav-list__link" href="/voorbeelden/">Voorbeelden</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>
 ```
 
