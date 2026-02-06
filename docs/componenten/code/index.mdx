@@ -48,7 +48,7 @@ import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md";
 import Wcag141 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, Link } from "@utrecht/component-library-react/dist/css-module";
+import { LinkList, Link, UnorderedList, UnorderedListItem } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
@@ -82,23 +82,37 @@ Gebruik de [Code Block](/code-block) component als de code meerdere regels besla
 <Card className="implementation-card">
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
-    <LinkList>
-      <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-1279"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
-      <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-1279"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
-    </LinkList>
+    <UnorderedList>
+      <UnorderedListItem>
+        <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-1279"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
+      </UnorderedListItem>
+      <UnorderedListItem>
+        <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-1279"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
+      </UnorderedListItem>
+    </UnorderedList>
 
     <Heading level={2} appearance="level-4">Storybook</Heading>
-    <LinkList>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-code--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/code--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
-    </LinkList>
+    <UnorderedList>
+      <UnorderedListItem>
+        <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-code--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
+      </UnorderedListItem>
+      <UnorderedListItem>
+        <Link href="https://nl-design-system.github.io/candidate/?path=/docs/code--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
+      </UnorderedListItem>
+    </UnorderedList>
 
     <Heading level={2} appearance="level-4">npm</Heading>
-    <LinkList>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-css</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-react</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-tokens</Link>
-    </LinkList>
+    <UnorderedList>
+      <UnorderedListItem>
+        <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-css</Link>
+      </UnorderedListItem>
+      <UnorderedListItem>
+        <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-react</Link>
+      </UnorderedListItem>
+      <UnorderedListItem>
+        <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-tokens</Link>
+      </UnorderedListItem>
+    </UnorderedList>
 
   </CardContent>
 </Card>

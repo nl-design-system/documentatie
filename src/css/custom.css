@@ -169,8 +169,7 @@
   --ifm-color-emphasis-600: var(--basis-focus-color);
   --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
   --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
-  --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
-    var(--utrecht-focus-inverse-outline-color, transparent);
+  --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0) var(--utrecht-focus-inverse-outline-color, transparent);
   box-shadow: var(--_ma-focus-ring-box-shadow);
   outline-color: var(--basis-focus-outline-color, revert);
   outline-offset: var(--utrecht-focus-outline-offset, revert);
@@ -412,7 +411,7 @@ p {
 /* Hide Docusaurus items */
 aside a[href="/"],
 aside button[title="Zijbalk inklappen"],
-.sidebar__main-category > div,
+.sidebar__main-category>div,
 .theme-doc-footer,
 .pagination-nav {
   display: none !important;
@@ -634,12 +633,12 @@ pre[class*="language-"] {
 }
 
 /* avoid double spacing */
-pre > code {
+pre>code {
   padding: 0 !important;
 }
 
-ul + div[class*="language-"],
-ul + .nlds-guideline_src-components-Guideline-module {
+ul+div[class*="language-"],
+ul+.nlds-guideline_src-components-Guideline-module {
   margin-block-start: var(--nlds-code-block-margin-inline-start, 1.5em);
 }
 
@@ -688,11 +687,11 @@ pre {
   --nlds-code-block-margin-inline-end: 0;
   --nlds-code-block-background-color: #011627;
   --nlds-code-block-selected-background-color: rgb(29 59 83 / 99%);
-  --nlds-code-block-comment-color: rgb(99 119 119);
+  --nlds-code-block-comment-color: rgb(128 149 149);
   --nlds-code-block-comment-font-style: italic;
-  --nlds-code-block-prolog-color: rgb(99 119 119);
+  --nlds-code-block-prolog-color: rgb(128 149 149);
   --nlds-code-block-prolog-font-style: italic;
-  --nlds-code-block-cdata-color: rgb(99 119 119);
+  --nlds-code-block-cdata-color: rgb(128 149 149);
   --nlds-code-block-cdata-font-style: italic;
   --nlds-code-block-punctuation-color: rgb(199 146 234);
   --nlds-code-block-namespace-color: rgb(178 204 214);
@@ -798,4 +797,10 @@ ams-page-footer {
 
 .nl-skip-link {
   z-index: 10000;
+}
+
+/* Fix contrast in success alerts */
+.alert--success .utrecht-link {
+  color: #005090;
+  text-decoration: underline;
 }
