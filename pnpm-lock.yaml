@@ -114,6 +114,9 @@ importers:
       '@nl-design-system-candidate/skip-link-docs':
         specifier: 1.2.1
         version: 1.2.1
+      '@nl-design-system-candidate/skip-link-react':
+        specifier: 1.1.7
+        version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/skip-link-tokens':
         specifier: 1.0.4
         version: 1.0.4
@@ -3415,6 +3418,12 @@ packages:
 
   '@nl-design-system-candidate/skip-link-docs@1.2.1':
     resolution: {integrity: sha512-kNGtfmwI7iQVF0Bebpftjn/R/wHRaOFxNVOgoLlAQeRCimIu5t8zYJUGnJGguMgx2gwDFSRcOhn4/cwRI2LVNg==}
+
+  '@nl-design-system-candidate/skip-link-react@1.1.7':
+    resolution: {integrity: sha512-ighFoR2uniRpR/Cd0sj6ppxZ1OeHZ2sNOD6lxFvfgPVJInC3fd2Qi/4qHZDUhte5PIlej2HcFzqzTgieK3OBwQ==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
 
   '@nl-design-system-candidate/skip-link-tokens@1.0.4':
     resolution: {integrity: sha512-MD1+m55nRqkj2eATcBNOLE8N5jWfvjJg2ax+POX8zXm49wJcBGTS6B/kK4kzIPbMuivYnxVtNlmA+Cz/upFBZA==}
@@ -15327,6 +15336,12 @@ snapshots:
   '@nl-design-system-candidate/paragraph-tokens@1.1.3': {}
 
   '@nl-design-system-candidate/skip-link-docs@1.2.1': {}
+
+  '@nl-design-system-candidate/skip-link-react@1.1.7(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/skip-link-tokens@1.0.4': {}
 
