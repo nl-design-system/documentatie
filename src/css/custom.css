@@ -300,6 +300,7 @@ p {
   border-inline-start-color: var(--basis-color-accent-1-inverse-border-active);
   color: var(--basis-color-accent-1-inverse-color-active);
 }
+
 .navbar-sidebar .menu__link:hover,
 .navbar-sidebar .menu__list-item-collapsible:hover,
 .navbar-sidebar .menu__caret:hover {
@@ -387,6 +388,7 @@ p {
     border-color: var(--ma-docsearch-button-hover-border-color);
     color: var(--ma-docsearch-button-hover-border-color);
   }
+
   &:focus-visible {
     --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
     --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
@@ -686,11 +688,11 @@ pre {
   --nlds-code-block-margin-inline-end: 0;
   --nlds-code-block-background-color: #011627;
   --nlds-code-block-selected-background-color: rgb(29 59 83 / 99%);
-  --nlds-code-block-comment-color: rgb(99 119 119);
+  --nlds-code-block-comment-color: rgb(128 149 149);
   --nlds-code-block-comment-font-style: italic;
-  --nlds-code-block-prolog-color: rgb(99 119 119);
+  --nlds-code-block-prolog-color: rgb(128 149 149);
   --nlds-code-block-prolog-font-style: italic;
-  --nlds-code-block-cdata-color: rgb(99 119 119);
+  --nlds-code-block-cdata-color: rgb(128 149 149);
   --nlds-code-block-cdata-font-style: italic;
   --nlds-code-block-punctuation-color: rgb(199 146 234);
   --nlds-code-block-namespace-color: rgb(178 204 214);
@@ -740,6 +742,7 @@ pre {
   font-size: 16px;
   vertical-align: 1%;
 }
+
 code {
   background-color: transparent !important;
   border-inline-end: 0;
@@ -786,4 +789,10 @@ code {
   width: 100vw;
   padding-block: 0.5rem;
   font-size: 1.125rem;
+}
+
+/* Fix contrast in success alerts */
+.alert--success .utrecht-link {
+  color: #005090;
+  text-decoration: underline;
 }

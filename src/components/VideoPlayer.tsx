@@ -9,6 +9,9 @@ export const VideoPlayer = ({ id, title, ...restProps }: LiteYouTubeProps) => (
     id={id}
     title={title}
     poster="maxresdefault"
+    aria-label={title}
+    // @ts-expect-error: role is valid for the container but missing in types
+    role="group"
     {...restProps}
   />
 );
