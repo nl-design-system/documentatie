@@ -8,7 +8,7 @@ description: Zorg bij niet-tekstuele content voor een tekstalternatief.
 slug: 1.1.1
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - tekstalternatieven
   - perceivable
@@ -34,6 +34,127 @@ import Summary from "./summaries/_1.1.1-summary.md";
 
 <Summary />
 
+### Klikbare elementen en invoervelden
+
+Alle interactieve elementen moeten een toegankelijke naam hebben die de functie van het element beschrijft. Deze functie moet terugkomen in de toegankelijke naam. Die naam kan op verschillende manieren worden gegeven. Bij een element met een afbeelding erop kan het tekstalternatief worden gebruikt. In het tekstalternatief beschrijf niet wat je ziet, maar wat de functie is van het element. Bijvoorbeeld: een zoekknop met een vergrootglas-icoon. Het tekstalternatief beschrijft de functie van de knop: “Zoek”. Lees meer over toegankelijke namen bij [SC 4.1.2](https://nldesignsystem.nl/wcag/4.1.2/).
+
+### Video of audio (tijdsafhankelijke media)
+
+Bij multimedia die in de tijd moet worden gevolgd, moet het tekstalternatief aangeven wat het is. Bijvoorbeeld: ‘een video over pinguins’. Dit tekstalternatief kan op verschillende manieren worden gegeven, bijvoorbeeld als kop op de pagina of als beschrijving van het iframe waarin de video staat.
+
+### Test of oefening
+
+Bij een test of een oefening die is ingesloten op een webpagina moet een tekstalternatief beschrijven wat het is. Bijvoorbeeld: ‘een interactieve test om het taalniveau te beoordelen’. Het is niet nodig om de volledige inhoud van de test te beschrijven.
+
+### CAPTCHA
+
+CAPTCHA is een beveiligingsmiddel dat controleert of een gebruiker een mens is en geen computerprogramma. Bij CAPTCHA is het belangrijk dat:
+een tekstalternatief aangeeft wat het is: “een CAPTCHA”, en er alternatieve CAPTCHA-vormen aanwezig zijn die andere zintuigen gebruiken. Bijvoorbeeld: een geluidstest naast een visuele test.
+
+### Inhoud om een bepaald gevoel of sfeer op te roepen
+
+Bij deze inhoud is de beleving belangrijker is dan de details. Dit geldt bijvoorbeeld voor een sfeervideo zonder belangrijke gesproken informatie, een decoratieve animatie, achtergrondmuziek of een kunstzinnige afbeelding. In het tekstalternatief staat kort wat het is, bijvoorbeeld: “een sfeervideo”. Als deze inhoud decoratief is, mag deze verborgen worden voor schermlezers.
+
+### Decoratie, opmaak of onzichtbare inhoud
+
+Decoratieve elementen moeten worden verborgen voor hulpsoftware. Dit kan op verschillende manieren. Bij afbeeldingen in een img-element blijft het alt-attribuut leeg. Ook kunnen CSS-technieken worden gebruikt, zoals CSS-clip of `visually:hidden`. Daarnaast bestaan er ARIA-technieken, zoals `aria-hidden=”true”`.
+De decoratie blijft zichtbaar op de pagina, maar wordt niet voorgelezen door hulpsoftware. Test dit altijd met een schermlezer of controleer de Accessibility Tree.
+
+## Veelgemaakte fouten
+
+### Fout: er ontbreekt een alt-attribuut bij een img-element
+
+Zonder alt-attribuut wordt de bestandsnaam voorgelezen. Dit zorgt voor een ontoegankelijke en onprettige ervaring.
+
+### Fout: het tekstalternatief bevat onleesbare tekens
+
+In een tekstalterantief staan tekens die de leesbaarheid verminderen. Bijvoorbeeld een onderliggend streepje waardoor meerdere woorden als één woord worden voorgelezen.
+
+### Fout: het tekstalterantief is in een andere taal
+
+Bij anderstalige pagina’s moeten tekstalternatieven in dezelfde taal staan. Als dat niet gebeurt, worden deze teksten met verkeerde uitspraakregels voorgelezen.
+
+## Informatieve afbeeldingen
+
+### Fout: een video of audio heeft geen tekstalternatief
+
+Zonder een tekstuele introductie weet een bezoeker die een schermlezer gebruikt niet waar deze over gaat. Dan kan de bezoeker al dan niet besluiten de video of audio af te spelen.
+
+### Fout: het tekstalternatief ontbreekt of geeft niet dezelfde informatie
+
+Er staat bijvoorbeeld een gevarendriehoek bij een waarschuwing, maar deze afbeelding heeft geen tekst alternatief. De waarschuwing wordt dan niet correct voorgelezen. Een ander voorbeeld is een PDF-icoon bij een link naar een document zonder passend tekstalternatief.
+
+### Fout: complexe afbeeldingen hebben geen of onvoldoende tekstalterantief
+
+Een infographic of een schema heeft geen tekstalternatief waarin de belangrijke informatie uit de afbeelding staat. Een bezoeker die de afbeelding niet kan zien, heeft geen toegang tot deze informatie.
+
+### Fout: informatieve of interactieve afbeelding is verborgen voor hulpsoftware
+
+Een afbeelding die door hulpsoftware moet worden voorgelezen, is verborgen. Bijvoorbeeld een icoon dat aangeeft dat een link in een nieuw tabblad opent.
+
+## Interactieve afbeeldingen
+
+### Fout: de afbeelding verandert, maar het tekstalternatief niet
+
+Een menuknop toont eerst drie lijntjes met het tekstalternatief ‘open menu’. Na openen verandert het icoon in een kruisje, maar het tekstalternatief blijft hetzelfde.
+
+### Fout: het tekstalterantief mist zichtbare tekst
+
+Een tekstalternatief van een klickbaar logo bevat niet alle tekst die op het logo is te zien. Daardoor is de link niet goed met spraak te bedienen.
+
+### Fout: het tekstalternatief beschrijft niet de functie
+
+Een knop met een icoon van een oog heeft als tekstalternatief ‘een oog’ in plaats van ‘toon of verberg wachtwoord’.
+
+### Fout: een interactief element met alleen een afbeelding heeft geen tekstalternatief
+
+Een zoekknop heeft een icoon van een vergrootglas heeft geen tekstalternatief en geen andere toegankelijke naam. Een schermlezer kan de functie van de knop niet voorlezen.
+
+### Fout: een decoratieve afbeelding wordt toch voorgelezen
+
+Bij de nieuwsberichten staan afbeeldingen zonder informatieve waarde. De tekstalternatieven bevatten nietszeggende teksten of herhaalt de kop van het artikel.
+
+## Hoe te testen
+
+Inspecteer in de gegenereerde HTML-code van de webpagina de `<img>`-elementen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
+
+Het `alt`-attribuut bij een `<img>` element moet altijd aanwezig zijn.
+Bij decoratieve afbeeldingen laat je het leeg:
+
+```html
+<img src="stockimg.png" alt="" />
+```
+
+Nog een voorbeeld van een decoratieve afbeelidng:
+
+```html
+<a href="url">
+  Meer informatie over de intocht van Sinterklaas
+  <img src="pijltje-rechts.svg" alt="" />
+</a>
+```
+
+Bij informatieve afbeeldingen beschrijf de informatie:
+
+```html
+<img src="kantoor.png" alt="Ons kantoor" />
+```
+
+Bij functionele afbeeldingen beschrijf de functie:
+
+```html
+<button><img src="vergrootglas.png" alt="Zoeken" /></button>
+```
+
+Niet doen:
+
+```html
+<!-- Foute code, niet gebruiken -->
+<a href="url">
+  <img src="iDEAL.svg" alt="" />
+</a>
+```
+
 ## Gerelateerde NL Design System-richtlijnen
 
 - Stijl: [Iconen](/richtlijnen/stijl/iconen).
@@ -49,54 +170,6 @@ import Summary from "./summaries/_1.1.1-summary.md";
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-### Alternatieve teksten op afbeeldingen
-
-Inspecteer in de gegenereerde HTML-code van de webpagina de `<img>`-elementen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
-
-Check voor afbeeldingen:
-
-- het `alt`-attribuut moet altijd aanwezig zijn, het kan zonder waarde (leeg) zijn:
-  ```html
-  <img src="img-url" alt="" />
-  ```
-  of met een alt-tekst
-  ```html
-  <img src="img-url" alt="wit konijn" />
-  ```
-- als een afbeelding betekenisvol is, moet de alt-tekst het doel ervan beschrijven.
-- als een afbeelding decoratief is, kan het alt-attribuut leeg zijn: `alt=""`. Een alt-tekst toevoegen voor een afbeelding die decoratief is leidt niet tot afkeuring, een afbeelding kan naast tekst ook emotie overdragen. Lees hierover, de post van [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-emotion-rich-images/) van Léonie Watson en het bericht van [Eric Eggert op Mastodon](https://yatil.social/@yatil/111974572979919177).
-- het alt-attribuut kan leeg zijn als de betekenis van de afbeelding vlak bij de afbeelding in tekst staat.
-- bevat een afbeelding tekst, die informatie toevoegt aan de content, dan moet deze tekst opgenomen zijn in de alt-tekst.
-
-Controleer voor afbeeldingen in links en buttons:
-
-- de alt-tekst van een afbeelding in een link moet het **doel van de link** beschrijven.
-- de alt-tekst van een afbeelding in een button moet **de actie** beschrijven.
-- als zowel de inhoud van de afbeelding als het doel of de actie even belangrijk zijn, moet de alternatieve tekst **beide** beschrijven. Bijvoorbeeld bij een link op een logo.
-- als een afbeelding decoratief is, kan het alt-attribuut leeg zijn: `alt=""`, maar de toegankelijke naam van een link of button moet volledig betekenisvol zijn. Bijvoorbeeld:
-
-```html
-<a href="url">
-  Meer informatie over de intocht van Sinterklaas
-  <img src="pijltje-rechts.svg" alt="" />
-</a>
-```
-
-Niet doen:
-
-```html
-<!-- Foute code, niet gebruiken -->
-<a href="url">
-  <img src="iDEAL.svg" alt="" />
-</a>
-```
-
-### Benoem waar een video of audio over gaat
-
-Geef tekstalternatief voor een video of audio zodat de bezoeker weet waar deze over gaat. Dan kan de bezoeker al dan niet besluiten de video of audio af te spelen. Dit door bijvoorbeeld een `title`-attribuut te geven aan de iframe-embed. Of door het onderwerp te beschrijven in de begeleidende tekst of een kopje erboven.
 
 ## W3C referenties
 
