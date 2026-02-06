@@ -1,4 +1,4 @@
-## Belangrijk: De richtlijnen van NL Design System zijn geen wettelijke verplichting
+<h2 id="belangrijk-de-richtlijnen-van-nl-design-system-zijn-geen-wettelijke-verplichting">Belangrijk: De richtlijnen van NL Design System zijn geen wettelijke verplichting</h2>
 
 De richtlijnen van NL Design System zijn niet wettelijk verplicht en zijn geen vervanging voor de [wettelijk geldende WCAG 2.1 specificatie](https://www.w3.org/TR/WCAG21/).
 
