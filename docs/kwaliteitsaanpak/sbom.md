@@ -11,6 +11,6 @@ keywords:
 
 # Software Bill of Materials (SBoM)
 
-NL Design System publiceert nog geen Software Bill of Materials, omdat er voor pnpm nog geen ondersteuning is bij CycloneDX.
+NL Design System publiceert nog geen Software Bill of Materials, omdat CycloneDX nog geen ondersteuning heeft voor pnpm.
 
 NL Design System gebruikt voornamelijk pnpm als package manager.
