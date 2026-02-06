@@ -1,4 +1,4 @@
-import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+// import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import type { HTMLAttributes } from 'react';
 import './TermsList.css';
 
@@ -29,7 +29,7 @@ interface TermsListProps extends HTMLAttributes<HTMLTableElement> {
 
 const Synonym = ({ term }: SynonymProps) => <dt>{term}</dt>;
 
-const Definition = ({ paragraph }: DefinitionProps) => <Paragraph>{paragraph}</Paragraph>;
+const Definition = ({ paragraph }: DefinitionProps) => <p>{paragraph}</p>;
 
 const Source = ({ name, url }: SourceProps) => (
   <li>
