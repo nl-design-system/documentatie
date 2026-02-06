@@ -1,4 +1,4 @@
-/*! For license information please see 25ab1beb.c698a354.js.LICENSE.txt */
+/*! For license information please see 25ab1beb.9861261c.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [40721],
@@ -33,7 +33,7 @@
    var s = i(30758),
     t = { outline: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' }, filled: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'currentColor', stroke: 'none' } };
    const r = (e, n, i, r) => {
-    const o = (0, s.forwardRef)(({ color: i = 'currentColor', size: o = 24, stroke: l = 2, title: a, className: d, children: u, ...m }, c) => (0, s.createElement)('svg', { ref: c, ...t[e], width: o, height: o, className: ['tabler-icon', `tabler-icon-${n}`, d].join(' '), ...('filled' === e ? { fill: i } : { strokeWidth: l, stroke: i }), ...m }, [a && (0, s.createElement)('title', { key: 'svg-title' }, a), ...r.map(([e, n]) => (0, s.createElement)(e, n)), ...(Array.isArray(u) ? u : [u])]));
+    const o = (0, s.forwardRef)(({ color: i = 'currentColor', size: o = 24, stroke: l = 2, title: a, className: d, children: m, ...u }, c) => (0, s.createElement)('svg', { ref: c, ...t[e], width: o, height: o, className: ['tabler-icon', `tabler-icon-${n}`, d].join(' '), ...('filled' === e ? { fill: i } : { strokeWidth: l, stroke: i }), ...u }, [a && (0, s.createElement)('title', { key: 'svg-title' }, a), ...r.map(([e, n]) => (0, s.createElement)(e, n)), ...(Array.isArray(m) ? m : [m])]));
     return ((o.displayName = `${i}`), o);
    };
   },
@@ -42,16 +42,16 @@
    const s = (0, i(18652).A)('outline', 'chevron-right', 'ChevronRight', [['path', { d: 'M9 6l6 6l-6 6', key: 'svg-0' }]]);
   },
   76222(e, n, i) {
-   (i.r(n), i.d(n, { assets: () => c, contentTitle: () => m, default: () => p, frontMatter: () => u, metadata: () => s, toc: () => h }));
-   const s = JSON.parse('{"id":"community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community","title":"Rijkshuisstijl Community \xb7 Community Sprints \xb7 Community","description":"Lees meer over de NL Design System Rijkshuisstijl Community Sprint.","source":"@site/docs/community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community.mdx","sourceDirName":"community/community-sprints/rijkshuisstijl-community","slug":"/community/community-sprints/rijkshuisstijl-community/","permalink":"/community/community-sprints/rijkshuisstijl-community/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community.mdx","tags":[],"version":"current","frontMatter":{"title":"Rijkshuisstijl Community \xb7 Community Sprints \xb7 Community","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Rijkshuisstijl Community","pagination_label":"Rijkshuisstijl Community","description":"Lees meer over de NL Design System Rijkshuisstijl Community Sprint.","keywords":["nl design system","community sprints","rijkshuisstijl community"]},"sidebar":"community","previous":{"title":"Rijkshuisstijl Community","permalink":"/community/community-sprints/rijkshuisstijl-community/overzicht"},"next":{"title":"Aanmelden","permalink":"/community/community-sprints/rijkshuisstijl-community/aanmelden"}}');
+   (i.r(n), i.d(n, { assets: () => c, contentTitle: () => u, default: () => p, frontMatter: () => m, metadata: () => s, toc: () => h }));
+   const s = JSON.parse('{"id":"community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community","title":"Rijkshuisstijl Community \xb7 Community Sprints \xb7 Community","description":"Lees meer over de NL Design System Rijkshuisstijl Community Sprint.","source":"@site/docs/community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community.mdx","sourceDirName":"community/community-sprints/rijkshuisstijl-community","slug":"/community/community-sprints/rijkshuisstijl-community/","permalink":"/community/community-sprints/rijkshuisstijl-community/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community.mdx","tags":[],"version":"current","frontMatter":{"title":"Rijkshuisstijl Community \xb7 Community Sprints \xb7 Community","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Over Rijkshuisstijl Community","pagination_label":"Over Rijkshuisstijl Community","description":"Lees meer over de NL Design System Rijkshuisstijl Community Sprint.","slug":"/community/community-sprints/rijkshuisstijl-community/","keywords":["nl design system","community sprints","rijkshuisstijl community"]},"sidebar":"community","previous":{"title":"Aanmelden","permalink":"/community/community-sprints/mijn-services-community/aanmelden"},"next":{"title":"Over Rijkshuisstijl Community","permalink":"/community/community-sprints/rijkshuisstijl-community/"}}');
    var t = i(86070),
     r = i(18439),
     o = i(4258),
     l = i(88666),
     a = i(64249),
     d = i(46447);
-   const u = { title: 'Rijkshuisstijl Community \xb7 Community Sprints \xb7 Community', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Rijkshuisstijl Community', pagination_label: 'Rijkshuisstijl Community', description: 'Lees meer over de NL Design System Rijkshuisstijl Community Sprint.', keywords: ['nl design system', 'community sprints', 'rijkshuisstijl community'] },
-    m = 'Community Sprint: Rijkshuisstijl Community',
+   const m = { title: 'Rijkshuisstijl Community \xb7 Community Sprints \xb7 Community', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Over Rijkshuisstijl Community', pagination_label: 'Over Rijkshuisstijl Community', description: 'Lees meer over de NL Design System Rijkshuisstijl Community Sprint.', slug: '/community/community-sprints/rijkshuisstijl-community/', keywords: ['nl design system', 'community sprints', 'rijkshuisstijl community'] },
+    u = 'Community Sprint: Rijkshuisstijl Community',
     c = {},
     h = [
      { value: 'Waar gaat deze sprint over?', id: 'waar-gaat-deze-sprint-over', level: 2 },
@@ -94,14 +94,14 @@
    const l = t.forwardRef(function (e, n) {
     const [i, l] = t.useState(!1),
      [a, d] = t.useState(e.alwaysLoadIframe || !1),
-     u = encodeURIComponent(e.id),
-     m = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
+     m = encodeURIComponent(e.id),
+     u = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
      c = e.title,
      h = e.poster || 'hqdefault',
      j = e.announce || 'Watch',
      p = !e.alwaysLoadIframe || (e.autoplay && e.muted),
      k = t.useMemo(() => {
-      const n = new URLSearchParams({ ...(e.muted ? { mute: '1' } : {}), ...(p ? { autoplay: '1' } : {}), ...(e.enableJsApi ? { enablejsapi: '1' } : {}), ...(e.playlist ? { list: u } : {}) });
+      const n = new URLSearchParams({ ...(e.muted ? { mute: '1' } : {}), ...(p ? { autoplay: '1' } : {}), ...(e.enableJsApi ? { enablejsapi: '1' } : {}), ...(e.playlist ? { list: m } : {}) });
       return (
        e.params &&
         new URLSearchParams(e.params.startsWith('&') ? e.params.slice(1) : e.params).forEach((e, i) => {
@@ -109,9 +109,9 @@
         }),
        n
       );
-     }, [e.muted, p, e.enableJsApi, e.playlist, u, e.params]),
+     }, [e.muted, p, e.enableJsApi, e.playlist, m, e.params]),
      g = t.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
-     v = t.useMemo(() => (e.playlist ? `${g}/embed/videoseries?${k.toString()}` : `${g}/embed/${u}?${k.toString()}`), [e.playlist, g, u, k]),
+     v = t.useMemo(() => (e.playlist ? `${g}/embed/videoseries?${k.toString()}` : `${g}/embed/${m}?${k.toString()}`), [e.playlist, g, m, k]),
      y = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
      b = e.webp ? 'webp' : 'jpg',
      f = e.webp ? 'vi_webp' : 'vi',
@@ -134,7 +134,7 @@
          );
         })(e.id, f, b, h)
       : null,
-     w = t.useMemo(() => e.thumbnail || x || `https://i.ytimg.com/${f}/${e.playlist ? m : u}/${h}.${b}`, [e.thumbnail, x, f, e.playlist, m, u, h, b]),
+     w = t.useMemo(() => e.thumbnail || x || `https://i.ytimg.com/${f}/${e.playlist ? u : m}/${h}.${b}`, [e.thumbnail, x, f, e.playlist, u, m, h, b]),
      C = e.activatedClass || 'lyt-activated',
      R = e.adNetwork || !1,
      z = e.aspectHeight || 9,
@@ -143,20 +143,20 @@
      H = e.playerClass || 'lty-playbtn',
      L = e.wrapperClass || 'yt-lite',
      $ = t.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
-     N = e.rel ? 'prefetch' : 'preload',
-     I = e.containerElement || 'article',
-     O = !1 !== e.noscriptFallback;
+     O = e.rel ? 'prefetch' : 'preload',
+     N = e.containerElement || 'article',
+     I = !1 !== e.noscriptFallback;
     return (
      t.useEffect(() => {
       a && ($(), e.focusOnLoad && 'object' == typeof n && null != n && n.current && n.current.focus());
      }, [a, $, e.focusOnLoad, n]),
      (0, s.jsxs)(s.Fragment, {
       children: [
-       !e.lazyLoad && (0, s.jsx)('link', { rel: N, href: w, as: 'image' }),
+       !e.lazyLoad && (0, s.jsx)('link', { rel: O, href: w, as: 'image' }),
        (0, s.jsx)(s.Fragment, { children: i && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)('link', { rel: 'preconnect', href: g }), (0, s.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), R && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, s.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
        e.seo && !e.playlist && (0, s.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: o(e.id, c, w, g, e.seo) } }),
-       O && !e.playlist && (0, s.jsx)('noscript', { children: (0, s.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${c} on YouTube`, children: ['Watch "', c, '" on YouTube'] }) }),
-       (0, s.jsxs)(I, {
+       I && !e.playlist && (0, s.jsx)('noscript', { children: (0, s.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${c} on YouTube`, children: ['Watch "', c, '" on YouTube'] }) }),
+       (0, s.jsxs)(N, {
         onPointerOver: () => {
          i || l(!0);
         },

@@ -1,4 +1,4 @@
-/*! For license information please see f0a5e32a.fd7746fd.js.LICENSE.txt */
+/*! For license information please see f0a5e32a.d5edd704.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [29004],
@@ -43,14 +43,14 @@
   },
   76641(e, n, i) {
    (i.r(n), i.d(n, { assets: () => u, contentTitle: () => c, default: () => j, frontMatter: () => m, metadata: () => t, toc: () => h }));
-   const t = JSON.parse('{"id":"community/community-sprints/mijn-services-community/mijn-services-community","title":"MijnServices Community \xb7 Community Sprints \xb7 Community","description":"Informatie over de NL Design System MijnServices Community Sprint","source":"@site/docs/community/community-sprints/mijn-services-community/mijn-services-community.mdx","sourceDirName":"community/community-sprints/mijn-services-community","slug":"/community/community-sprints/mijn-services-community/","permalink":"/community/community-sprints/mijn-services-community/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/community-sprints/mijn-services-community/mijn-services-community.mdx","tags":[],"version":"current","frontMatter":{"title":"MijnServices Community \xb7 Community Sprints \xb7 Community","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"MijnServices Community","pagination_label":"MijnServices Community","description":"Informatie over de NL Design System MijnServices Community Sprint","keywords":["nl design system","community sprints","mijn services community","mijnservices community","mijn services community afstemming","mijn services community check-in","overheidsbrede portalen community"]},"sidebar":"community","previous":{"title":"MijnServices Community","permalink":"/community/community-sprints/mijn-services-community/overzicht"},"next":{"title":"Aanmelden","permalink":"/community/community-sprints/mijn-services-community/aanmelden"}}');
+   const t = JSON.parse('{"id":"community/community-sprints/mijn-services-community/mijn-services-community","title":"MijnServices Community \xb7 Community Sprints \xb7 Community","description":"Informatie over de NL Design System MijnServices Community Sprint","source":"@site/docs/community/community-sprints/mijn-services-community/mijn-services-community.mdx","sourceDirName":"community/community-sprints/mijn-services-community","slug":"/community/community-sprints/mijn-services-community/","permalink":"/community/community-sprints/mijn-services-community/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/community-sprints/mijn-services-community/mijn-services-community.mdx","tags":[],"version":"current","frontMatter":{"title":"MijnServices Community \xb7 Community Sprints \xb7 Community","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Over MijnServices Community","pagination_label":"Over MijnServices Community","description":"Informatie over de NL Design System MijnServices Community Sprint","slug":"/community/community-sprints/mijn-services-community/","keywords":["nl design system","community sprints","mijn services community","mijnservices community","mijn services community afstemming","mijn services community check-in","overheidsbrede portalen community"]},"sidebar":"community","previous":{"title":"Community Sprints","permalink":"/community/community-sprints/"},"next":{"title":"Over MijnServices Community","permalink":"/community/community-sprints/mijn-services-community/"}}');
    var s = i(86070),
     r = i(18439),
     a = i(4258),
     o = i(88666),
     l = i(64249),
     d = i(46447);
-   const m = { title: 'MijnServices Community \xb7 Community Sprints \xb7 Community', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'MijnServices Community', pagination_label: 'MijnServices Community', description: 'Informatie over de NL Design System MijnServices Community Sprint', keywords: ['nl design system', 'community sprints', 'mijn services community', 'mijnservices community', 'mijn services community afstemming', 'mijn services community check-in', 'overheidsbrede portalen community'] },
+   const m = { title: 'MijnServices Community \xb7 Community Sprints \xb7 Community', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Over MijnServices Community', pagination_label: 'Over MijnServices Community', description: 'Informatie over de NL Design System MijnServices Community Sprint', slug: '/community/community-sprints/mijn-services-community/', keywords: ['nl design system', 'community sprints', 'mijn services community', 'mijnservices community', 'mijn services community afstemming', 'mijn services community check-in', 'overheidsbrede portalen community'] },
     c = 'Community Sprint: MijnServices Community',
     u = {},
     h = [
@@ -105,11 +105,11 @@
       );
      }, [e.muted, j, e.enableJsApi, e.playlist, m, e.params]),
      g = s.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
-     k = s.useMemo(() => (e.playlist ? `${g}/embed/videoseries?${v.toString()}` : `${g}/embed/${m}?${v.toString()}`), [e.playlist, g, m, v]),
-     y = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
+     y = s.useMemo(() => (e.playlist ? `${g}/embed/videoseries?${v.toString()}` : `${g}/embed/${m}?${v.toString()}`), [e.playlist, g, m, v]),
+     k = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
      b = e.webp ? 'webp' : 'jpg',
      f = e.webp ? 'vi_webp' : 'vi',
-     w = y
+     w = k
       ? ((e, n, i, t = 'maxresdefault') => {
          const [a, o] = (0, s.useState)('');
          return (
@@ -137,8 +137,8 @@
      $ = e.playerClass || 'lty-playbtn',
      L = e.wrapperClass || 'yt-lite',
      N = s.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
-     _ = e.rel ? 'prefetch' : 'preload',
-     O = e.containerElement || 'article',
+     O = e.rel ? 'prefetch' : 'preload',
+     _ = e.containerElement || 'article',
      B = !1 !== e.noscriptFallback;
     return (
      s.useEffect(() => {
@@ -146,11 +146,11 @@
      }, [l, N, e.focusOnLoad, n]),
      (0, t.jsxs)(t.Fragment, {
       children: [
-       !e.lazyLoad && (0, t.jsx)('link', { rel: _, href: x, as: 'image' }),
+       !e.lazyLoad && (0, t.jsx)('link', { rel: O, href: x, as: 'image' }),
        (0, t.jsx)(t.Fragment, { children: i && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: g }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), C && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
        e.seo && !e.playlist && (0, t.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: a(e.id, u, x, g, e.seo) } }),
        B && !e.playlist && (0, t.jsx)('noscript', { children: (0, t.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${u} on YouTube`, children: ['Watch "', u, '" on YouTube'] }) }),
-       (0, t.jsxs)(O, {
+       (0, t.jsxs)(_, {
         onPointerOver: () => {
          i || o(!0);
         },
@@ -162,7 +162,7 @@
         role: l ? void 0 : 'img',
         'aria-label': l ? void 0 : `${u} - YouTube video preview`,
         style: { ...(!e.lazyLoad && { backgroundImage: `url(${x})` }), '--aspect-ratio': (M / z) * 100 + '%', ...(e.style || {}) },
-        children: [e.lazyLoad && !l && (0, t.jsx)('img', { src: x, alt: `${u} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), (0, t.jsx)('button', { type: 'button', className: $, 'aria-label': `${p} ${u}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: p }) }), l && (0, t.jsx)('iframe', { ref: n, className: D, title: u, width: '560', height: '315', style: { border: 0 }, allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: k, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+        children: [e.lazyLoad && !l && (0, t.jsx)('img', { src: x, alt: `${u} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), (0, t.jsx)('button', { type: 'button', className: $, 'aria-label': `${p} ${u}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: p }) }), l && (0, t.jsx)('iframe', { ref: n, className: D, title: u, width: '560', height: '315', style: { border: 0 }, allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: y, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
        }),
       ],
      })
