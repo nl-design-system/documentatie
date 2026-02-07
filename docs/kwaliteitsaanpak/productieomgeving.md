@@ -3,6 +3,7 @@ title: Productieomgeving
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Productieomgeving
+sidebar_position: 31
 pagination_label: Productieomgeving
 description: Uitleg over de versiebeheer van code in NL Design System
 keywords:

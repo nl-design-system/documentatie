@@ -3,6 +3,7 @@ title: CI/CD
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: CI/CD
+sidebar_position: 20
 pagination_label: CI/CD
 description: Uitleg over de CI/CD pipelines van NL Design System
 keywords:

@@ -3,6 +3,7 @@ title: Open Source
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Open Source
+sidebar_position: 12
 pagination_label: Open Source
 description: Uitleg over hoe NL Design System open source werkt.
 keywords:
@@ -15,12 +16,12 @@ NL Design System zoekt actief de samenwerking op, zodat het aantal stakeholders 
 
 ## Code
 
-Publiceer alle code onder de EUPL-1.2 licentie.
+Publiceer alle code onder de [EUPL-1.2 licentie](/open-source/eupl/).
 
 Publiceer de Engelstalige licentie in `LICENSE.md`, een gebruikelijke bestandsnaam. De licentie wordt op deze manier automatisch getoond in de user interface van bijvoorbeeld GitHub en npm. Publiceer de Nederlandstalige licentie in `LICENSE.nl.md`.
 
 ## Documentatie
 
-Publiceer alle documentatie onder de [Creative Commons 0 licentie (CC0)](https://nldesignsystem.nl/open-source/cc0).
+Publiceer alle documentatie onder de [Creative Commons 0 licentie (CC0)](/open-source/cc0).
 
-Op deze manier ben je nooit tijd kwijt bijhouden van een potentieel lange lijst van copyrighthouders. Je kunt zo ook makkelijk documentatie-teksten opsplitsen, samenvoegen, herschrijven. Je kan delen van de documentatie oo hergebruiken in situaties waar een copyrightvermelding niet handig is.
+Op deze manier ben je nooit tijd kwijt bijhouden van een potentieel lange lijst van copyrighthouders. Je kunt zo ook makkelijk documentatie-teksten opsplitsen, samenvoegen, herschrijven. Je kan delen van de documentatie hergebruiken in situaties waar een copyrightvermelding niet handig is.

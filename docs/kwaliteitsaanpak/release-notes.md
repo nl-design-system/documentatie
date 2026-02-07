@@ -3,6 +3,7 @@ title: Release notes
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Release notes
+sidebar_position: 30
 pagination_label: Release notes
 description: Dit is hoe we release notes bijhouden voor NL Design System.
 keywords:

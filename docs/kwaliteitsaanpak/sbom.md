@@ -3,6 +3,7 @@ title: Software Bill of Materials (SBoM)
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Software Bill of Materials
+sidebar_position: 32
 pagination_label: Software Bill of Materials
 description: Dit is wat de plannen zijn van NL Design System voor het publiceren van een Software Bill of Materials.
 keywords:
