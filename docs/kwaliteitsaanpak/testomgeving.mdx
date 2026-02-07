@@ -1,0 +1,31 @@
+---
+title: Testomgeving
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Testomgeving
+sidebar_position: 11
+pagination_label: Testomgeving
+description: Branch deployments van GitHub Pull Requests zijn de testomgevingen.
+keywords:
+  - dtap
+  - otap
+  - test
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Testomgeving
+
+<Paragraph lead>
+  Biedt een testomgeving aan voor elke wijziging, zodat het laagdrempelig is om een review te doen van een wijziging.
+  Laat ook weten waar in testomgeving je moet zijn, en hoe je de wijzigingen kan testen. Zo maak je samen een beter
+  product.
+</Paragraph>
+
+De aanbevolen manier is "branch deployments" als testomgeving. Wanneer iemand een Pull Request maakt, wordt automatisch een testomgeving aangemaakt. Een automatische comment laat weten op welke URL je de testomgeving kan vinden.
+
+NL Design System biedt deze infrastructuur aan zodat de community automatisch een testomgeving krijgt voor Pull Requests. Wanneer je een Pull Request maakt, dan ontvang je na enkele minuten automatisch een linkje naar de testomgeving.
+
+## Beheer van testomgevingen
+
+Gebruik de bestaande [Vercel infrastructuur voor NL Design System](/vercel) voor het maken van branch deployments voor GitHub Pull Requests, voor projecten waarvan de build een statische website is. Gebruik waar mogelijk infrastructure-as-code om Vercel te configureren, via de [vercel terraform provider](https://registry.terraform.io/providers/vercel/vercel/latest/docs) in de [nl-design-system/terraform repository](http://github.com/nl-design-system/terraform).

@@ -3,6 +3,7 @@ title: Versiebeheer
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Versiebeheer
+sidebar_position: 10
 pagination_label: Versiebeheer
 description: Uitleg over de versiebeheer van code in NL Design System
 keywords:

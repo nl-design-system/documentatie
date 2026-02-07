@@ -3,6 +3,7 @@ title: Software supply chain
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Software supply chain
+sidebar_position: 14
 pagination_label: Software supply chain
 description: Uitleg over de kwaliteitsaanpak voor de software supply chain van NL Design System.
 keywords:

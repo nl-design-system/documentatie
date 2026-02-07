@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Agile sprint
 
 Gebruik GitHub Issues voor het vastleggen van de sprint backlog. De software wordt gerealiseerd in meerdere repositories, daarom zijn de GitHub Issues van de sprint backlog ook verspreid over meerdere repositories.

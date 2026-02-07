@@ -3,6 +3,7 @@ title: Toegankelijkheid
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Toegankelijkheid
+sidebar_position: 13
 pagination_label: Toegankelijkheid
 description: Uitleg over de kwaliteitsaanpak voor toegankelijkheid van NL Design System.
 keywords:
