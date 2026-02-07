@@ -1,0 +1,80 @@
+---
+title: Versiebeheer
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Versiebeheer
+sidebar_position: 10
+pagination_label: Versiebeheer
+description: Uitleg over de versiebeheer van code in NL Design System
+keywords:
+  - git
+  - github
+  - version control
+  - versiebeheer
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Versiebeheer
+
+<Paragraph lead>
+  Gebruik Git om code te delen met anderen, samen te werken aan code, vorige implementaties te vinden, de evolutie van
+  de code te begrijpen, nieuwe releases uit te brengen en open source samenwerkingen aan te gaan.
+</Paragraph>
+
+Werk je in opdracht van NL en GitHub, in de [nl-design-system organisatie](http://github.com/nl-design-system). Push je work-in-progress regelmatig naar GitHub, tenminste elke dag.
+
+We gebruiken GitHub voor versiebeheer, in plaats van GitLab of Azure DevOps, omdat het een open source project is dat community-gedreven door personen en teams die voornamelijk op GitHub werken. Naar verwachting is zal de open source community beter groeien wanneer de NL Design System past bij de bestaande workflow van mensen en teams in de community.
+
+Gebruik terraform om nieuwe repositories aan te maken in GitHub.
+
+## Kwaliteit van de main branch {#default-branch}
+
+De `main` branch van de Git repositories moet alleen gewijzigd worden via branches die een positieve review hebben gehad door een tweede persoon. Vereis daarom pull requests voor wijzigingen aan de `main` branch via GitHub Rulesets.
+
+Gebruik terraform om rulesets in te stellen voor de `main` branch.
+
+## Tags voor releases {#tags}
+
+Maak Git tags aan met het versienummer van releases. De bestaande infrastructuur voor changesets doet dat automatisch. Voor monorepositories kunnen zo duizenden tags ontstaan, dat is niet erg.
+
+Gebruikers willen kunnen vertrouwen dat tags nooit achter gewijzigd worden.
+
+Gebruik Terraform om tag protections in te stellen voor alle repositories waar releases worden gepubliceerd.
+
+## `.gitignore` {#gitignore}
+
+Gebruik een voldoende uitgebreide `.gitignore` configuratie, en voorkom dat ongewenste bestanden in Git gepubliceerd worden. Zo blijft het project veilig, en kan de codebase snel gedowload worden.
+
+Bestanden die ongewenst zijn in Git:
+
+- Dependencies die met een package manager geïnstalleerd kunnen worden, zoals `node_modules/`.
+- Bestanden met geheime of vertouwelijke informatie, zoals `.env`.
+- Archieven, zoals `.zip`-bestanden.
+- Persoonlijke bestanden voor de configuratie van een eigen computer of editor, zoals `.DS_Store` of `.idea/`.
+- Tijdelijke bestanden, zoals logbestanden en cache.
+- Build artifacts, zoals bestanden in `dist/`.
+
+Vermijd grote bestanden, zoals afbeeldingen, audio en video. Voeg ze alleen toe aan Git wanneer ze essentiëel zijn.
+
+Gebruik de [`.gitignore` uit de example repository](https://github.com/nl-design-system/example/blob/main/.gitignore) als basis. Maak het makkelijk om nieuwe versies van het voorbeeld als basis te gebruiken, door eigen uitbreidingen aan het eind te plaatsen. Doe geen onnodige optimalisatie door het weghalen van regels die niet nodig zijn.
+
+Gebruik zoveel mogelijk de `.gitignore` in de root van de repository, en voorkom dat gebruikers lang moeten zoeken waarom `git add` niet werkt zoals ze verwachten.
+
+Vermijd uitbreidingen aan de `.gitignore` wanneer het logisch is om de bestanden te plaatsen in directories die al in de `.gitignore` staan, zoals `dist/`, `tmp/` en `vendor/`.
+
+Lees meer over conventies voor bestanden en directories in het handboek.
+
+## Beheer van gebruikers
+
+Beheer GitHub gebruikers en toegang tot repositories bij voorkeur via terraform, zodat wijzigingen door een tweede persoon gecontroleerd kunnen worden.
+
+## Branches
+
+Er is geen voorgeschreven conventie voor de namen van branches. Wanneer een specifieke repository wel een conventie gebruikt, dan is dat beschreven in `CONTRIBUTING.md`.
+
+## Backups
+
+Er wordt dagelijks een backup gemaakt van alle code van de nl-design-system organisatie met [Rewind voor GitHub](https://rewind.com/products/backups/github/). De zekerheid van backups maakt het ook extra belangrijk om in deze organisatie te werken, in plaats van in een fork.
