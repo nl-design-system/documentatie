@@ -30,6 +30,160 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 10.0.0
+
+9 februari 2026
+
+Verschillende formulier componenten zijn toegevoegd en opgeschoond.
+
+Er zijn meerdere formuliergerelateerde componenten en tokens opgeschoond en op elkaar afgestemd. Wat begon bij de toevoeging van de Checkbox Group component, heeft geleid tot meerdere verbeteringen in verschillende componenten. Omdat er veel samenhangende wijzigingen zijn gedaan, lichten we deze release toe in een video.
+
+[Bekijk de video ‘Changelog: Update verschillende formulier componenten’](https://youtu.be/1k1d22P-SHE) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Hieronder vind je een overzicht van alle componenten en de bijbehorende design tokens die je nodig hebt om deze wijzigingen correct over te nemen.
+
+ToDo component 'Form Field Label Suffix' is gewijzigd in de ToDo bibliotheek.
+
+- [Bekijk Form Field Label Suffix in de NL Design System - ToDo Bibliotheek](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=3677-7661).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+ "todo": {
+  "form-field-label-suffix": {
+   "color": {
+    "$type": "color",
+    "$value": "{basis.color.default.color-document}"
+   },
+   "font-family": {
+    "$type": "fontFamilies",
+    "$value": "{basis.text.font-family.default}"
+   },
+   "font-size": {
+    "$type": "fontSizes",
+    "$value": "{basis.text.font-size.md}"
+   },
+   "font-weight": {
+    "$type": "fontWeights",
+    "$value": "{basis.text.font-weight.default}"
+   },
+   "line-height": {
+    "$type": "lineHeights",
+    "$value": "{basis.text.line-height.md}"
+   },
+   "margin-inline-start": {
+    "$type": "dimension",
+    "$value": "{basis.space.inline.sm}"
+   }
+  }
+ }
+}
+```
+
+De volgende tokens zijn toegevoegd:
+
+- Token `utrecht.form-field-label.margin-block-end` is toegevoegd aan Form Field Label component.
+- Token `utrecht.checkbox.margin-inline-end` is toegevoegd aan Checkbox component.
+- Token `utrecht.radio-button.margin-inline-end` is toegevoegd aan Radio Button component.
+
+De waarde van de volgende tokens zijn gewijzigd:
+
+- Waarde van token `utrecht.form-field-description.margin-block-end` is gewijzigd van `0px` naar common token `basis.space.block.lg`.
+- Waarde van token `utrecht.form-field-error-message.margin-block-end` is gewijzigd van `0px` naar common token `basis.space.block.lg`.
+
+Controleer of deze wijzigingen ook wenselijk zijn voor het thema van jouw organisatie. Zo niet, dan hoef je deze niet over te nemen.
+
+Bij de volgende tokens is de description `[code-only]` verwijderd:
+
+- `utrecht.form-field-description.margin-block-end`
+- `utrecht.form-field-description.margin-block-start`
+- `utrecht.form-field-error-message.margin-block-end`
+- `utrecht.form-field-error-message.margin-block-start`
+
+Community component 'Fieldset' van Utrecht is toegevoegd aan de bibliotheek.
+
+- [Bekijk Fieldset in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=28416-4423).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+ "utrecht": {
+  "form-fieldset": {
+   "margin-block-end": {
+    "$type": "dimension",
+    "$value": "0px",
+    "$description": "[code-only]"
+   },
+   "margin-block-start": {
+    "$type": "dimension",
+    "$value": "0px",
+    "$description": "[code-only]"
+   },
+   "invalid": {
+    "border-inline-start-color": {
+     "$type": "color",
+     "$value": "{basis.color.negative.border-default}"
+    },
+    "border-inline-start-width": {
+     "$type": "dimension",
+     "$value": "{basis.border-width.md}"
+    },
+    "padding-inline-start": {
+     "$type": "dimension",
+     "$value": "{basis.space.inline.xl}"
+    }
+   },
+   "legend": {
+    "color": {
+     "$type": "color",
+     "$value": "{basis.color.default.color-document}"
+    },
+    "font-family": {
+     "$type": "fontFamilies",
+     "$value": "{basis.text.font-family.default}"
+    },
+    "font-size": {
+     "$type": "fontSizes",
+     "$value": "{basis.text.font-size.md}"
+    },
+    "font-weight": {
+     "$type": "fontWeights",
+     "$value": "{basis.text.font-weight.bold}"
+    },
+    "line-height": {
+     "$type": "lineHeights",
+     "$value": "{basis.text.line-height.md}"
+    },
+    "margin-block-end": {
+     "$type": "dimension",
+     "$value": "{basis.space.block.lg}"
+    },
+    "margin-block-start": {
+     "$type": "dimension",
+     "$value": "0px"
+    },
+    "disabled": {
+     "color": {
+      "$type": "color",
+      "$value": "{basis.color.disabled.color-subtle}"
+     }
+    }
+   },
+   "section": {
+    "background-color": {
+     "$type": "color",
+     "$value": "{basis.color.transparent}"
+    },
+    "color": {
+     "$type": "color",
+     "$value": "{basis.color.default.color-document}"
+    }
+   }
+  }
+ }
+}
+```
+
 ## 9.1.0
 
 27 januari 2026
