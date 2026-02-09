@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import { toCleanRoute } from '../../utils/to-clean-route';
+import { render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('baseline').then(pages =>
+    pages.map(page => ({
+      ...page,
+      id: toCleanRoute(page.id).replace('/baseline', '')
+    }))
+  )
+
+  return pages.map((page) => ({
+    params: { path: page.id },
+    props: { page }
+  }))
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page)
+---
+
+<Content />
