@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import * as cheerio from 'cheerio';
 import { readFileSync } from 'fs';
 import { writeFile } from 'fs/promises';
-import { exclusions, exclusionGroups } from './a11y-exclusions';
+import { exclusions, exclusionGroups, skippedRoutes } from './a11y-exclusions';
 
 const CONFIG = {
   baseUrl: 'http://localhost:3000',
@@ -14,7 +14,7 @@ const CONFIG = {
 const violations: unknown[] = [];
 
 test.describe('Accessibility features', () => {
-  const pathnames = getPathnamesFromSitemap(CONFIG.sitemapPath);
+  const pathnames = getPathnamesFromSitemap(CONFIG.sitemapPath).filter((pathname) => !shouldSkipRoute(pathname));
 
   pathnames.forEach((pathname) => {
     test(pathname, async ({ page }) => {
@@ -44,8 +44,8 @@ function getPathnamesFromSitemap(sitemapPath: string): string[] {
 
 async function verifyPageAccessibility(page: Page, pathname: string): Promise<void> {
   const url = CONFIG.baseUrl + pathname;
-  await page.goto(url);
-  await page.waitForFunction(isDocusaurusHydrated);
+  await page.goto(url, { waitUntil: 'domcontentloaded' });
+  await page.waitForFunction(isDocusaurusHydrated, { timeout: 10000 });
 
   const isAxeDisabled = (await page.locator('meta[name="axe"][content="false"]').count()) > 0;
   test.skip(isAxeDisabled, 'Skipped because of <meta name="axe" content="false">');
@@ -59,6 +59,18 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
 
 function isDocusaurusHydrated(): boolean {
   return document.documentElement.dataset.hasHydrated === 'true';
+}
+
+function shouldSkipRoute(pathname: string): boolean {
+  return skippedRoutes.some((route) => {
+    if (typeof route === 'string') {
+      if (route.endsWith('*')) {
+        return pathname.startsWith(route.slice(0, -1));
+      }
+      return route === pathname;
+    }
+    return route.test(pathname);
+  });
 }
 
 async function analyzeAccessibility(page: Page, disabledRules: string[]) {

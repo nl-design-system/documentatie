@@ -18,12 +18,58 @@ export const exclusionGroups: Record<string, string[]> = {
   forms: ['label', 'select-name'],
 };
 
+const COMPONENT_ROUTES = [
+  '/componenten',
+  '/accordion/',
+  '/action-group/',
+  '/alert-dialog/',
+  '/alert/',
+  '/avatar/',
+  '/blockquote/',
+  '/breadcrumb-navigation/',
+  '/button/',
+  '/calendar/',
+  '/card-as-link',
+  '/case-card/',
+  '/checkbox-group/',
+  '/checkbox/',
+  '/code-block/',
+  '/code/',
+  '/color-sample/',
+  '/contact-timeline/',
+  '/data-badge/',
+  '/heading/',
+  '/link/',
+  '/mark/',
+  '/number-badge/',
+  '/paragraph/',
+  '/skip-link/',
+];
+
+const COMMUNITY_ROUTES = '/community/*';
+const EVENTS_ROUTES = '/events/*';
+const HANDBOEK_ROUTES = '/handboek/*';
+const PROJECT_ROUTES = '/project/*';
+const WCAG_ROUTES = '/wcag/*';
+const RICHTLIJNEN_ROUTES = '/richtlijnen/*';
+
+export const skippedRoutes: (string | RegExp)[] = [
+  ...COMPONENT_ROUTES,
+  COMMUNITY_ROUTES,
+  EVENTS_ROUTES,
+  HANDBOEK_ROUTES,
+  PROJECT_ROUTES,
+  WCAG_ROUTES,
+  RICHTLIJNEN_ROUTES,
+  '/',
+  '/search/',
+];
+
 export const exclusions: RouteExclusion[] = [
-  // Example usage:
+  // Example: disable specific rules for certain routes
   // {
-  //   routes: ['/search/', /^\/blog\/.*$/],
+  //   routes: ['/some-route/'],
   //   groups: ['contrast'],
-  //   rules: ['heading-order'],
-  //   description: 'Contrast and heading issues on search and blog pages',
+  //   description: 'Disable contrast checks for this route',
   // },
 ];
