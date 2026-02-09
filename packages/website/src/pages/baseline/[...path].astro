@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
-import { toCleanRoute } from '../../utils/to-clean-route';
+import { toCleanRoute } from '@utils/to-clean-route';
 import { render } from 'astro:content';
+import Document from '@layouts/document.astro';
 
 export async function getStaticPaths() {
   const pages = await getCollection('baseline').then(pages =>
@@ -21,4 +22,6 @@ const { page } = Astro.props;
 const { Content } = await render(page)
 ---
 
-<Content />
+<Document>
+  <Content />
+</Document>
