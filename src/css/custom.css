@@ -789,6 +789,7 @@ code {
   padding-block: 0.5rem;
   font-size: 1.125rem;
 }
+<<<<<<< HEAD
 
 ams-page-header,
 ams-page-footer {
@@ -804,3 +805,5 @@ ams-page-footer {
   color: #005090;
   text-decoration: underline;
 }
+=======
+>>>>>>> 1e585cb6b96 (revert: undo VideoPlayer and custom.css changes (moved to separate branch))
