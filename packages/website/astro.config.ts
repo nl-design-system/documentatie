@@ -4,6 +4,8 @@ import mdx from '@astrojs/mdx';
 
 import react from '@astrojs/react';
 
+import sitemap from '@astrojs/sitemap';
+
 const siteUrl = 'https://nldesignsystem.nl';
 
 // https://astro.build/config
@@ -27,5 +29,12 @@ export default defineConfig({
     },
   },
 
-  integrations: [mdx(), react()],
+  integrations: [
+    mdx(),
+    react(),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.5,
+    }),
+  ],
 });
