@@ -1,4 +1,4 @@
-/*! For license information please see 235c86a2.af58d28e.js.LICENSE.txt */
+/*! For license information please see 235c86a2.27d3f44b.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [21057],
@@ -33,7 +33,7 @@
   },
   30522(e, n, t) {
    t.d(n, { A: () => a });
-   const a = t.p + 'assets/files/heartbeat-387ac0fd6590b7f1103ee392d87831d1.ics';
+   const a = t.p + 'assets/files/heartbeat-dfc3f6a16749638d019e231117d9bead.ics';
   },
   45282(e, n, t) {
    t.d(n, { N: () => s });
