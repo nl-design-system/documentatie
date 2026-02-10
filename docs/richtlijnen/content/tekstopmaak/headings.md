@@ -64,7 +64,7 @@ Een koptekst moet opgemaakt zijn als echte kop. Gebruik daarvoor de opties die h
             Dit is geen kop
           </strong>
           <p>
-            Een [screenreader](/woordenlijst/#screenreader) herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
+            Een screenreader herkent deze tekst niet als een kop. Hierdoor verschijnt de tekst ook niet in het overzicht met koppen en kunnen bezoekers geen sneltoetsen gebruiken om tussen de koppen te navigeren.
           </p>
       </>
     )}
