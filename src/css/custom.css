@@ -300,6 +300,7 @@ p {
   border-inline-start-color: var(--basis-color-accent-1-inverse-border-active);
   color: var(--basis-color-accent-1-inverse-color-active);
 }
+
 .navbar-sidebar .menu__link:hover,
 .navbar-sidebar .menu__list-item-collapsible:hover,
 .navbar-sidebar .menu__caret:hover {
@@ -321,7 +322,7 @@ p {
 /* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
 .DocSearch {
   --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
-  --docsearch-muted-color: var(--utrecht-button-secondary-action-hover-color);
+  --docsearch-muted-color: var(--utrecht-button-secondary-action-color);
   --docsearch-logo-color: var(--utrecht-button-secondary-action-color);
   --docsearch-icon-color: var(--utrecht-button-secondary-action-color);
   --docsearch-highlight-color: var(--utrecht-button-secondary-action-color);
@@ -387,6 +388,7 @@ p {
     border-color: var(--ma-docsearch-button-hover-border-color);
     color: var(--ma-docsearch-button-hover-border-color);
   }
+
   &:focus-visible {
     --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
     --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
@@ -402,7 +404,6 @@ p {
 }
 
 .DocSearch-Button-Placeholder {
-  color: var(--utrecht-button-secondary-action-hover-color) !important;
   font-family: var(--ma-docsearch-button-font-family);
   font-weight: 700;
 }
@@ -740,6 +741,7 @@ pre {
   font-size: 16px;
   vertical-align: 1%;
 }
+
 code {
   background-color: transparent !important;
   border-inline-end: 0;
@@ -786,4 +788,13 @@ code {
   width: 100vw;
   padding-block: 0.5rem;
   font-size: 1.125rem;
+}
+
+ams-page-header,
+ams-page-footer {
+  inline-size: 100%;
+}
+
+.nl-skip-link {
+  z-index: 10000;
 }
