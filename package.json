@@ -58,7 +58,7 @@
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
     "update-major": "npm-check-updates --configFileName .ncurc.major.cjs",
     "install-test-browsers": "playwright install",
-    "test-a11y": "playwright test test/a11y/",
+    "test-a11y": "playwright test test/a11y/ --workers=8",
     "test-e2e": "playwright test test/e2e/",
     "test-visual": "playwright test test/visual/",
     "publish:argos": "argos upload ./tmp/screenshots",
