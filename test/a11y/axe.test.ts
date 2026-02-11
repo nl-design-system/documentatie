@@ -52,7 +52,9 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
   test.skip(isAxeDisabled, 'Skipped because of <meta name="axe" content="false">');
 
   const disabledRules = getDisabledRules(pathname);
-  const results = await analyzeAccessibility(page, disabledRules);
+  const excludedViolationIds = getExcludedViolationIds(pathname);
+
+  const results = await analyzeAccessibility(page, disabledRules, excludedViolationIds);
 
   violations.push(results);
   expect(results.violations).toEqual([]);
@@ -74,12 +76,23 @@ function shouldSkipRoute(pathname: string): boolean {
   });
 }
 
-async function analyzeAccessibility(page: Page, disabledRules: string[]) {
-  return new AxeBuilder({ page })
+async function analyzeAccessibility(page: Page, disabledRules: string[], excludedViolationIds: (string | RegExp)[]) {
+  const results = await new AxeBuilder({ page })
     .options({ resultTypes: ['violations'] })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
     .disableRules(disabledRules)
     .analyze();
+
+  results.violations = results.violations.filter((violation) => {
+    return !excludedViolationIds.some((excluded) => {
+      if (typeof excluded === 'string') {
+        return violation.id === excluded;
+      }
+      return excluded.test(violation.id);
+    });
+  });
+
+  return results;
 }
 
 async function saveViolationsReport(reportData: unknown[], filePath: string): Promise<void> {
@@ -116,4 +129,24 @@ function getDisabledRules(pathname: string): string[] {
   }
 
   return Array.from(disabledRules);
+}
+
+function getExcludedViolationIds(pathname: string): (string | RegExp)[] {
+  const excluded: (string | RegExp)[] = [];
+
+  for (const exclusion of exclusions) {
+    const isMatch = exclusion.routes.some((route) => {
+      if (typeof route === 'string') {
+        if (route === '*') return true;
+        return route === pathname;
+      }
+      return route.test(pathname);
+    });
+
+    if (isMatch && exclusion.excludeIds) {
+      excluded.push(...exclusion.excludeIds);
+    }
+  }
+
+  return excluded;
 }
