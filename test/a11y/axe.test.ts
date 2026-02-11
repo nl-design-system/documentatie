@@ -1,6 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import * as cheerio from 'cheerio';
+import { AxeResults } from 'axe-core';
 import { readFileSync } from 'fs';
 import { writeFile } from 'fs/promises';
 import { exclusions, exclusionGroups, skippedRoutes } from './a11y-exclusions';
@@ -11,7 +12,7 @@ const CONFIG = {
   reportPath: './tmp/axe.json',
 };
 
-const violations: unknown[] = [];
+const violations: AxeResults[] = [];
 
 test.describe('Accessibility features', () => {
   const pathnames = getPathnamesFromSitemap(CONFIG.sitemapPath).filter((pathname) => !shouldSkipRoute(pathname));
@@ -82,10 +83,8 @@ async function analyzeAccessibility(page: Page, disabledRules: string[]) {
 }
 
 async function saveViolationsReport(reportData: unknown[], filePath: string): Promise<void> {
-  if (reportData.length > 0) {
-    console.log(`Writing accessibility report to ${filePath}`);
-    await writeFile(filePath, JSON.stringify(reportData, null, 2));
-  }
+  console.log(`Writing accessibility report to ${filePath}`);
+  await writeFile(filePath, JSON.stringify(reportData, null, 2));
 }
 
 function getDisabledRules(pathname: string): string[] {
