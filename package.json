@@ -116,7 +116,7 @@
     "@argos-ci/playwright": "4.3.0",
     "@axe-core/playwright": "4.11.0",
     "@changesets/cli": "2.29.8",
-    "@docsearch/react": "3.9.0",
+    "@docsearch/react": "4.5.4",
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/plugin-content-blog": "3.9.2",
     "@docusaurus/plugin-content-docs": "3.9.2",
