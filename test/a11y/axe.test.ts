@@ -52,7 +52,9 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
   test.skip(isAxeDisabled, 'Skipped because of <meta name="axe" content="false">');
 
   const disabledRules = getDisabledRules(pathname);
-  const results = await analyzeAccessibility(page, disabledRules);
+  const excludedViolationIds = getExcludedViolationIds(pathname);
+
+  const results = await analyzeAccessibility(page, disabledRules, excludedViolationIds);
 
   violations.push(results);
   const criticalViolations = results.violations.filter((v) => v.impact === 'critical');
@@ -61,4 +63,91 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
 
 function isDocusaurusHydrated(): boolean {
   return document.documentElement.dataset.hasHydrated === 'true';
+}
+
+function shouldSkipRoute(pathname: string): boolean {
+  return skippedRoutes.some((route) => {
+    if (typeof route === 'string') {
+      if (route.endsWith('*')) {
+        return pathname.startsWith(route.slice(0, -1));
+      }
+      return route === pathname;
+    }
+    return route.test(pathname);
+  });
+}
+
+async function analyzeAccessibility(page: Page, disabledRules: string[], excludedViolationIds: (string | RegExp)[]) {
+  const results = await new AxeBuilder({ page })
+    .options({ resultTypes: ['violations'] })
+    .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+    .disableRules(disabledRules)
+    .analyze();
+
+  results.violations = results.violations.filter((violation) => {
+    return !excludedViolationIds.some((excluded) => {
+      if (typeof excluded === 'string') {
+        return violation.id === excluded;
+      }
+      return excluded.test(violation.id);
+    });
+  });
+
+  return results;
+}
+
+async function saveViolationsReport(reportData: unknown[], filePath: string): Promise<void> {
+  console.log(`Writing accessibility report to ${filePath}`);
+  await writeFile(filePath, JSON.stringify(reportData, null, 2));
+}
+
+function getDisabledRules(pathname: string): string[] {
+  const disabledRules = new Set<string>();
+
+  for (const exclusion of exclusions) {
+    const isMatch = exclusion.routes.some((route) => {
+      if (typeof route === 'string') {
+        return route === pathname;
+      }
+      return route.test(pathname);
+    });
+
+    if (isMatch) {
+      if (exclusion.rules) {
+        exclusion.rules.forEach((rule) => disabledRules.add(rule));
+      }
+      if (exclusion.groups) {
+        exclusion.groups.forEach((groupName) => {
+          const groupRules = exclusionGroups[groupName];
+          if (groupRules) {
+            groupRules.forEach((rule) => disabledRules.add(rule));
+          } else {
+            console.warn(`Warning: Exclusion group '${groupName}' not found in configuration.`);
+          }
+        });
+      }
+    }
+  }
+
+  return Array.from(disabledRules);
+}
+
+function getExcludedViolationIds(pathname: string): (string | RegExp)[] {
+  const excluded: (string | RegExp)[] = [];
+
+  for (const exclusion of exclusions) {
+    const isMatch = exclusion.routes.some((route) => {
+      if (typeof route === 'string') {
+        if (route === '*') return true;
+        return route === pathname;
+      }
+      return route.test(pathname);
+    });
+
+    if (isMatch && exclusion.excludeIds) {
+      excluded.push(...exclusion.excludeIds);
+    }
+  }
+
+  return excluded;
 }
