@@ -87,6 +87,17 @@ jobs:
       - name: "Continuous Integration: end-to-end tests"
         run: pnpm run --if-present test-e2e
 
+      - name: "Continuous Integration: a11y"
+        if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'ci/a11y')) }}
+        run: pnpm run --if-present test-a11y
+
+      - name: "Upload test artifact: a11y"
+        if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'ci/a11y')) }}
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: a11y
+          path: tmp/axe.json
+
       - name: "Continuous Integration: make screenshots"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}
         run: pnpm run --if-present test-visual
