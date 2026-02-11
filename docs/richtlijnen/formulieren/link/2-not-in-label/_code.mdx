@@ -13,8 +13,10 @@ import { Guideline } from "@site/src/components/Guideline";
           <a href="#">Privacybeleid gemeente Voorbeeld</a>
           {"."}
         </p>
-        <input id="pb" type="checkbox" name="privacybeleid" />
-        <label htmlFor="pb">Ik ga akkoord met het privacybeleid</label>
+        <p>
+          <input id="pb" type="checkbox" name="privacybeleid" />
+          <label htmlFor="pb">Ik ga akkoord met het privacybeleid</label>
+        </p>
       </>
     )}
   </Canvas>
@@ -37,8 +39,10 @@ import { Guideline } from "@site/src/components/Guideline";
           </a>
           {"."}
         </p>
-        <input type="checkbox" aria-describedby="desc" id="pvs" />
-        <label htmlFor="pvs">Ik ga akkoord met het privacybeleid</label>
+        <p>
+          <input type="checkbox" aria-describedby="desc" id="pvs" />
+          <label htmlFor="pvs">Ik ga akkoord met het privacybeleid</label>
+        </p>
       </fieldset>
     )}
   </Canvas>
@@ -48,11 +52,13 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <input id="privacybeleid" type="checkbox" name="privacybeleid" />{" "}
-        <label htmlFor="privacybeleid">
-          {"Ik ga akkoord met het "}
-          <a href="#">privacybeleid</a>
-        </label>
+        <p>
+          <input id="privacybeleid" type="checkbox" name="privacybeleid" />{" "}
+          <label htmlFor="privacybeleid">
+            {"Ik ga akkoord met het "}
+            <a href="#">privacybeleid</a>
+          </label>
+        </p>
       </>
     )}
   </Canvas>
@@ -61,10 +67,12 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="dont" title="Link samen met het invoerveld in een impliciet label plaatsen.">
   <Canvas language="html">
     {() => (
-      <label htmlFor="tac">
-        <input id="tac" type="checkbox" name="terms-and-conditions" />
-        Ik ga akkoord met het <a href="#">privacybeleid</a>
-      </label>
+      <p>
+        <label htmlFor="tac">
+          <input id="tac" type="checkbox" name="terms-and-conditions" />
+          Ik ga akkoord met het <a href="#">privacybeleid</a>
+        </label>
+      </p>
     )}
   </Canvas>
 </Guideline>
