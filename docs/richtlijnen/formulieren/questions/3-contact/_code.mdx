@@ -9,10 +9,18 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="telefoon1">Uw telefoonnummer</label>
-        <input id="telefoon1" type="tel" name="telefoon" autoComplete="tel" />
-        <label htmlFor="email1">Uw e-mailadres</label>
-        <input id="email1" type="email" name="email" autoComplete="email" />
+        <p>
+          <label htmlFor="telefoon1">Uw telefoonnummer</label>
+        </p>
+        <p>
+          <input id="telefoon1" type="tel" name="telefoon" autoComplete="tel" />
+        </p>
+        <p>
+          <label htmlFor="email1">Uw e-mailadres</label>
+        </p>
+        <p>
+          <input id="email1" type="email" name="email" autoComplete="email" />
+        </p>
       </>
     )}
   </Canvas>
@@ -22,8 +30,12 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="telefoon2">Uw telefoonnummer (verplicht)</label>
-        <input id="telefoon2" type="tel" name="telefoon" autoComplete="tel" aria-required="true" />
+        <p>
+          <label htmlFor="telefoon2">Uw telefoonnummer (verplicht)</label>
+        </p>
+        <p>
+          <input id="telefoon2" type="tel" name="telefoon" autoComplete="tel" aria-required="true" />
+        </p>
       </>
     )}
   </Canvas>
