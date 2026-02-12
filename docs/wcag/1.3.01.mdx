@@ -8,12 +8,14 @@ description: Alle gebruikers moeten over dezelfde informatie kunnen beschikken.
 slug: 1.3.1
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - aanpasbaar
   - perceivable
   - adaptable
   - info and relationships
+  - WCAG koppen
+  - toegankelijke semantische elementen
 ---
 
 {/* @license CC0-1.0 */}
@@ -34,15 +36,224 @@ import Summary from "./summaries/_1.3.1-summary.md";
 
 <Summary />
 
-Bijvoorbeeld:
+### Waarom is dit belangrijk?
 
-- Als tekst er uitziet als een kopje, moet dit ook in de HTML een kopje (heading) zijn en geen vet gemaakte tekst. Het kopjesniveau wordt voorgelezen door [screenreaders](/woordenlijst/#screenreader).
-- Als informatie in een tabel staat, moet de informatie begrijpbaar zijn voor screenreadersgebruikers, door het gebruik van table headings (th’s). De table heading wordt voorgelezen bij de waarde van een bijbehorende table cell.
-- In een formulier moeten invoervelden en labels aan elkaar gekoppeld zijn met een [for/id-relatie](/richtlijnen/formulieren/labels/toegankelijke-naam). Dan wordt het label voorgelezen als het invoerveld de focus krijgt.
-- Staan gegevens in een lijst, gebruik dan ook in de HTML een lijst (ul) en niet alleen streepjes voor de items. Een screenreader leest dan voor dat het een lijst is, hoeveel items er zijn in de lijst en bij welk item de lezer zich op dat moment bevindt.
-- Gebruik je een afbeelding om informatie te geven, zorg er dan voor dat de alternatieve tekst van de afbeelding de juiste informatie bevat, of voeg de informatie vlakbij de afbeelding in tekst toe.
+Wanneer content op een bepaalde manier wordt opgemaakt of gestructureerd, moet de betekenis daarvan ook duidelijk zijn voor hulpsoftware. Dit helpt mensen die de pagina niet kunnen zien om de inhoud toch goed te begrijpen. Als de visuele opmaak om welke reden dan ook wegvalt, moet de informatie nog steeds aanwezig zijn in HTML. Denk bijvoorbeeld aan het laden van een andere stylesheet.
 
-Geef via de juiste HTML of alternatieve teksten betekenis aan structuur, relaties, visuele informatie en opmaak, dan begrijpen gebruikers van hulpmiddelen deze informatie ook.
+Voorbeelden voor contentmakers:
+
+- Koppen zien er anders uit dan gewone tekst.
+- Lijsten zijn herkenbaar aan bullets.
+- Tabellen hebben een koprij die er anders uitziet.
+- Alinea's zijn gescheiden door witruimte.
+- Citaten staan cursief.
+
+Voorbeelden voor webontwikkelaars:
+
+- Een label staat dicht bij het bijbehorende invoerveld.
+- De actieve link in het menu heeft een ander uiterlijk.
+- De relatie tussen links in een menu is duidelijk.
+
+Dit succescriterium omvat zes thema's.
+
+## Semantiek: gebruik HTML-elementen volgens hun betekenis
+
+Een webpagina bestaat uit HTML-elementen. Sommige elementen hebben een semantische betekenis. Ze geven aan welke rol de inhoud heeft op de pagina.
+
+Voorbeelden van semantische elementen:
+
+- `<h1>` t/m `<h6>` voor koppen
+- `<ul>` en `<ol>` voor lijsten
+- `<strong>` en `<em>` voor nadruk
+- `<table>` voor tabellen
+- `<blockquote>` en `<q>` voor citaten
+
+Gebruik deze elementen alleen waarvoor ze bedoeld zijn.
+
+### Veelgemaakte fouten bij semantische elementen
+
+#### Fout: semantische rol is overgeschreven door een ander element
+
+Als een kop in een accordion in een button-element staat, verdwijnt de rol van kop en klopt de informatiestructuur niet meer. Houd er rekening mee dat sommige elementen de rollen van onderliggende elementen kunnen overschrijven.
+
+#### Fout: semantische rol is verdwenen
+
+De semantische rol van een element kan verdwijnen door verkeerd gebruik van ARIA. Als `role="presentation"` of `role="none"` aan een element wordt toegevoegd, verdwijnt de standaardrol van dat element. Een kop met deze rol wordt bijvoorbeeld gewone tekst. Een lijst (ul) met `role="navigation"` verliest de rol van lijst, waardoor de li-elementen geen correcte container meer hebben.
+
+#### Fout: semantisch element is niet correct gebruikt
+
+Een `<strong>` of een `<em>` element wordt soms gebruikt voor opmaak om tekst opvallend te maken. Deze elementen zijn daar niet voor bedoeld.
+
+## Koppen: markeer ze correct in de code
+
+Tekst die er anders uitziet dan de rest en iets vertelt over de inhoud eronder, is meestal een kop. Markeer deze tekst als kop in de HTML.
+
+Voor webontwikkelaars: controleer de koppen in megamenu's, zijkolommen, dialoogvensters, de footer en widgets. Inspecteer de Accessibility Tree. Een kop moet de rol "heading" hebben met het juiste niveau.
+
+Voor webredactie: lees meer over koppen op [Koppen op NLDS](https://documentatie-git-132summary-nl-design-system.vercel.app/richtlijnen/content/tekstopmaak/koppen/).
+
+Zie onze [Heading-component](https://nldesignsystem.nl/heading/).
+
+### Veelgemaakte fouten bij koppen
+
+#### Fout: het niveau van koppen klopt niet
+
+Het niveau van koppen in headers, footers, sidebars of andere vaste onderdelen is niet logisch of betekenisvol geprogrammeerd. De relatie tussen contentonderdelen wordt daardoor onjuist voorgelezen.
+
+#### Fout: kop mist de juiste markering
+
+Tekst die inhoudelijk een kop is, is niet als kop gemarkeerd in de code. Dit maakt de structuur van de tekst onlogisch en maakt het navigeren van kop naar kop onmogelijk.
+
+#### Fout: kop-element onjuist gebruikt
+
+Tekst die geen kop is, zoals een call-to-action aan het einde van een pagina, is toch gemarkeerd als een kop. Als er geen inhoud onder staat, mag geen kop-element worden gebruikt.
+
+### Lijsten: markeer ze als lijst in de code
+
+Staan gegevens in een lijst? Gebruik dan ook in de HTML een lijstelement (ul of ol) en niet alleen streepjes of sterretjes voor de items. Hulpsoftware kan dan aangeven dat het om een lijst gaat, hoeveel items de lijst heeft en bij welk item de gebruiker zich bevindt.
+Lees meer over [Lijsten op NLDS](https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/opsommingen/#lijst-elementen).
+
+#### Veelgemaakte fouten bij lijsten
+
+#### Fout: lijst mist de juiste markering
+
+Content die visueel als lijst wordt getoond, mist de juiste HTML-markering (ul/ol en li-elementen). Een schermlezer kan niet voorlezen dat het om een lijst gaat en uit hoeveel items deze bestaat. Een dl-lijst (definitielijst) is niet correct opgebouwd in de code. Let wel op dat dit element niet goed wordt ondersteund door schermlezers.
+
+#### Fout: geneste lijst mist de juiste markering
+
+Een lijst binnen een lijst heeft geen correcte HTML-structuur. Een schermlezer kan de relatie tussen de geneste lijst en de hoofdlijst niet correct voorlezen.
+
+#### Fout: lijst bevat inhoud die niet is toegestaan
+
+Een lijstelement bevat onderliggende elementen die niet zijn toegestaan. Een schermlezer kondigt alleen het aantal li-elementen aan. Andere elementen worden wel voorgelezen, wat verwarrend is.
+
+#### Fout: content die inhoudelijk geen lijst is, is toch als lijst gemarkeerd
+
+Bijvoorbeeld: platte tekst wordt in een kolom weergegeven en daarom in een ul-element geplaatst. Deze tekst wordt dan onterecht als een lijst voorgelezen.
+
+#### Fout: heading-elementen zijn geplaatst binnen een lijst (ul of li-elementen)
+
+Dit botst met de semantische rollen van deze elementen en maakt de structuur van informatie onduidelijk.
+
+### Datatabellen: maak de structuur en relaties duidelijk
+
+Bij datatabellen moet hulpsoftware kunnen begrijpen hoe de tabel is opgebouwd en welke relatie de cellen met elkaar hebben.
+
+Zie onze [Tabel-component](https://nldesignsystem.nl/table/).
+
+### Veelgemaakte fouten bij (data)tabellen
+
+#### Fout: datatabellen zijn niet gemarkeerd als tabel in de HTML
+
+Inhoud die in tabelvorm wordt getoond om relaties duidelijk te maken, mist daardoor de juiste markering.
+
+#### Fout: kolomkoppen zijn niet gemarkeerd met de juiste th-elementen
+
+De relatie tussen koppen en onderliggende cellen is visueel duidelijk, maar ontbreekt in de HTML. Soms worden th-elementen gebruikt waar td-elementen nodig zijn.
+
+#### Fout: tabellen zijn gemaakt met CSS, witruimte of br-elementen om tekst in kolommen te zetten
+
+Als CSS wordt uitgeschakeld of de lay-out verandert, verdwijnt de relatie tussen de cellen.
+
+#### Fout: meerdere datatabellen op één pagina hebben geen toegankelijke naam
+
+Gebruikers van een schermlezer kunnen tussen tabellen navigeren, maar zonder een toegankelijke naam is het lastig om het verschil te herkennen. Mogelijke oplossingen zijn: caption, aria-label, aria-labelledby.
+
+#### Fout: tabellen zijn te complex
+
+Tabellen met zowel kolom- als rijkoppen, samengevoegde cellen en tussenkopjes zijn niet toegankelijk te maken. Extra code,zoals scope- en id-attributen, kan helpen om de relatie tussen cellen duidelijker te maken, maar wordt niet door alle browsers goed ondersteund.
+
+Richtlijnen en voorbeelden over [tabellen](https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/tabellen/#tabellen).
+
+### Labels
+
+Elk invoerveld heeft een label nodig dat aangeeft wat moet worden ingevuld of aangevinkt. Het label moet in de code zijn gekoppeld aan het invoerveld, zodat hulpsoftware deze relatie kan begrijpen. Een bijkomend voordeel: het klikgebied wordt groter, wat helpt bij kleine klikdoelen.
+
+### Veelgemaakte fouten bij labels
+
+#### Fout: het label-element is niet gekoppeld aan het bijbehorende input-, select- of textarea-element
+
+De relatie tussen het label en het inputveld ontbreekt in de HTML. Het label wordt niet voorgelezen als het invoerveld focus krijgt.
+
+#### Fout: meerdere labels zijn gekoppeld met één invoerveld
+
+Daardoor wordt verkeerde informatie voorgelezen.
+
+#### Fout: vragen zijn niet gekoppeld aan antwoordopties
+
+Een schermlezer moet de relatie tussen een meerkeuzevraag en de radiobuttons of checkboxes met antwoordopties correct kunnen voorlezen. De vraag werkt als een groepslabel. Dit geldt voor alle groepen radiobuttons of checkboxes.
+
+#### Fout: groepslabels zijn niet gekoppeld aan de groep
+
+Op een webpagina staat een formulier met meerdere secties. Elke sectie heeft een groepslabel, maar deze tekst is in de HTML niet herkenbaar als kop of groepslabel.
+
+De beste oplossing voor groepslabels is een [fieldset en legend](https://nldesignsystem.nl/fieldset/).
+
+### Visuele presentatie
+
+Alle informatie die op een webpagina wordt getoond, moet ook in de HTML aanwezig zijn en niet alleen visueel worden gepresenteerd.
+
+### Veelgemaakte fouten bij visuele presentatie
+
+#### Fout: een voortgangsbalk toont alleen visueel aan bezoekers de voortgang in een proces.
+
+Wanneer deze informatie alleen via CSS wordt weergegeven, ontbreekt deze in de HTML en is de voortgang niet beschikbaar voor schermlezers.
+
+#### Fout: de actieve link in een menu is vaak alleen visueel gemarkeerd, bijvoorbeeld met onderstreping of kleur
+
+Wanneer CSS wordt uitgeschakeld, verdwijnt deze belangrijke navigatie-informatie. Dit geldt ook voor de huidige pagina in een paginering die alleen visueel wordt onderscheiden.
+
+#### Fout: een tabelcel heeft een andere achtergrondkleur om een categorie aan te geven
+
+Deze visuele groepering is niet toegankelijk voor gebruikers van een schermlezer.
+
+#### Fout: in een tag cloud zijn populaire woorden groter weergegeven
+
+Zonder HTML-markup weten schermlezers niet welke woorden vaker voorkomen.
+
+#### Fout: in chatinterfaces is alleen aan de positie van een avatar te zien wie de afzender is
+
+Zonder deze informatie in de HTML is dat niet duidelijk voor schermlezers.
+
+#### Fout: de relatie tussen navigatie-elementen,zoals opties in een combobox of links in een menu, is alleen visueel zichtbaar
+
+Ald deze relatie ontbreekt in de HTML, kan een schermlezer ze niet voorlezen.
+
+#### Fout: een oude prijs en een nieuwe prijs worden op dezelfde manier voorgelezen
+
+Als twee prijzen worden getoond waarbij de oude prijs is doorgestreept, moet dit ook in de HTML staan. Anders is het verschil niet duidelijk voor gebruikers van een schermlezer.
+
+#### Fout: er staan meerdere nav-elementen op de pagina zonder toegankelijke namen
+
+Bijvoorbeeld: op een krantenwebsite staan in de header drie menu’s. Gebruikers van een schermlezer weten niet wat het verschil is tussen deze navigaties.
+
+#### Fout: foutmeldingen in formulieren zijn niet gekoppeld aan de bijbehorende invoervelden
+
+Ze worden daardoor niet op het juiste moment voorgelezen.
+
+#### Fout: instructies zijn niet gekoppeld aan de invoervelden die ze beschrijven
+
+Ze worden niet voorgelezen voordat het veld wordt ingevuld.
+
+## Hoe te testen
+
+Deze toegankelijkheidsproblemen kunnen worden getest door de Accessibility Tree te lezen. Kennis van de Accessibility Tree is belangrijk om toegankelijke websites te bouwen of leren bouwen.
+
+In de Accessibility Tree is te zien welke rol elk element heeft. Zo kan worden gecontroleerd of de rollen van elementen koppen en veelvoorkomende fouten op deze pagina ook in de eigen code voorkomen. Of een label is gekoppeld aan een invoerveld kan worden getest door op het label te klikken. Reageert het invoerveld, dan zijn ze met elkaar verbonden.
+
+De pagina doorlezen met een screenreader is een goede manier om dit succescriterium te testen.
+
+Controleer of de HTML semantisch is opgemaakt, zoals bijvoorbeeld:
+
+- **Kopjes** (headings): ziet tekst eruit als een kopje, is deze opgemaakt als HTML-kopje (h1, h2, h3 etc)? En andersom: worden kopjes niet gebruikt om tekst alleen groot te maken?
+- **Lijsten**: is tekst opgemaakt als een genummerde of ongenummerde lijst, is deze in de HTML dan ook opgemaakt als een genummerde (`<ol>`) of ongenummerde lijst (`<ul>`)?
+- **Tabellen** voor het weergeven van data: is het duidelijk welke data precies wordt weergegeven? Bijvoorbeeld door het gebruik van table headings (th’s) en scope.
+
+Test voor formuliervelden:
+
+- Is het label en de description gekoppeld aan het invoerveld?
+- Weet een screenreadergebruiker ook dat een veld verplicht is?
+- Worden fout- en succesmeldingen voorgelezen door een screenreader?
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -60,22 +271,6 @@ De rapportage van het 'Onderzoek online meldingen' geeft het belang van goede in
 > Het is voor de blinden niet duidelijk dat er een verplicht invulveld zit in de kaart om het adres in te vullen. Ze vullen het niet in en gaan door in het formulier. Dit, gecombineerd met een onduidelijke foutmelding zorgt er voor dat ze vast komen te zitten en uit het proces vallen.
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-De pagina doorlezen met een screenreader is een goede manier om dit succescriterium te testen. Wordt de informatie die je ziet ook goed voorgelezen.
-
-Controleer of de HTML semantisch is opgemaakt, zoals bijvoorbeeld:
-
-- **Kopjes** (headings): ziet tekst eruit als een kopje, is deze opgemaakt als HTML-kopje (h1, h2, h3 etc)? En andersom: worden kopjes niet gebruikt om tekst alleen groot te maken?
-- **Lijsten**: is tekst opgemaakt als een genummerde of ongenummerde lijst, is deze in de HTML dan ook opgemaakt als een genummerde (`<ol>`) of ongenummerde lijst (`<ul>`)?
-- **Tabellen** voor het weergeven van data: is het duidelijk welke data precies wordt weergegeven? Bijvoorbeeld door het gebruik van table headings (th’s) en scope.
-
-Test voor formuliervelden:
-
-- Is het label en de description gekoppeld aan het invoerveld?
-- Weet een screenreadergebruiker ook dat een veld verplicht is?
-- Worden fout- en succesmeldingen voorgelezen door een screenreader?
 
 ## W3C referenties
 
