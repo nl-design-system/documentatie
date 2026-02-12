@@ -3,7 +3,7 @@
 Gebruik deze 2 templates om changelogs voor designers op een consistente manier te schrijven:
 
 - Template voor het publiceren van een nieuwe versie op de changelogpagina
-- Template voor het schrijven van kopjes en changelogregels per type wijziging
+- Template voor het schrijven van changelog kopjes en changeset regels per type wijziging
 
 Pas je iets aan in de code? Dan moet je een changeset schrijven. Gebruik hiervoor de sjablonen in de [.changeset/README.md](https://github.com/nl-design-system/themes/blob/main/.changeset/README.md).
 
@@ -25,7 +25,7 @@ Pas je iets aan in de code? Dan moet je een changeset schrijven. Gebruik hiervoo
 
 Bekijk een volledig uitgewerkt voorbeeld op de [actuele changelogpagina](https://nldesignsystem.nl/handboek/designer/figma-changelog/).
 
-## Template voor het schrijven van kopjes en changelogregels
+## Template voor het schrijven van kopjes en regels
 
 ### Tekstwijziging
 
@@ -33,19 +33,19 @@ Soort wijziging: `patch`
 
 #### Tekst binnen component is gewijzigd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Tekst aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Tekst aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Tekst aangepast van Community component 'Button' van Utrecht
+### Tekst aangepast van Community component 'Button' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Tekst '{oude-tekst}' is gewijzigd naar '{nieuwe-tekst}' in {naam-component} component.
@@ -59,19 +59,19 @@ Tekst 'Label' is gewijzigd naar 'Text' in Button component.
 
 #### Tekst van property name is gewijzigd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Property name aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Property name aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Property name aangepast van Community component 'Alert' van Utrecht
+### Property name aangepast van Community component 'Alert' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Property name is gewijzigd van '{oude-naam-property}' naar '{nieuwe-naam-property}' in {naam-component} component.
@@ -85,19 +85,19 @@ Property name is gewijzigd van 'Content' naar 'Children' in Alert component.
 
 #### Tekst van property value is gewijzigd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Property value van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Property value van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Property value aangepast van Community component 'Alert' van Utrecht
+### Property value aangepast van Community component 'Alert' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Property value is gewijzigd van '{oude-waarde-property}' naar '{nieuwe-waarde-property}' in {naam-component} component.
@@ -111,19 +111,19 @@ Property value is gewijzigd van 'OK' naar 'Positive' in Alert component.
 
 #### Tekst in frame is gewijzigd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Tekst in {frame} aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Tekst in {frame} aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Tekst in Documentatie frame aangepast van Community component 'Text Input' van Utrecht
+### Tekst in Documentatie frame aangepast van Community component 'Text Input' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Tekst '{oude-tekst} is gewijzigd naar '{nieuwe-tekst}' in {frame} frame.
@@ -141,19 +141,19 @@ Soort wijziging: `major`
 
 #### 1 token hernoemd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Design token hernoemd van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Design token hernoemd van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Design token hernoemd van Community component 'Accordion' van Utrecht
+### Design token hernoemd van Community component 'Accordion' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Token `{oude-token}` is hernoemd naar `{nieuwe-token}` in {naam-component} component.
@@ -167,19 +167,19 @@ Token `.accordion.button.icon.margin-inline` is hernoemd naar `.accordion.button
 
 #### Meer dan 1 token hernoemd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Design tokens hernoemd van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Design tokens hernoemd van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Design tokens hernoemd van Community component 'Accordion' van Utrecht
+### Design tokens hernoemd van Community component 'Accordion' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 De volgende tokens zijn hernoemd in {naam-component} component:
@@ -203,19 +203,19 @@ Soort wijziging: `minor`
 
 #### 1 token toegevoegd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Design token toegevoegd aan {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Design token toegevoegd aan {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Design tokens toegevoegd aan Community component 'Accordion' van Utrecht
+### Design tokens toegevoegd aan Community component 'Accordion' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Token `{token}` is toegevoegd aan {naam-component} component.
@@ -229,19 +229,19 @@ Token `accordion.row-gap` is toegevoegd aan Accordion component.
 
 #### Meer dan 1 token toegevoegd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Design tokens toegevoegd aan {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Design tokens toegevoegd aan {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Design tokens toegevoegd aan Candidate component 'Heading'
+### Design tokens toegevoegd aan Candidate component 'Heading'
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 De volgende tokens zijn toegevoegd aan {naam-component} component:
@@ -265,19 +265,19 @@ Soort wijziging: `major`
 
 #### 1 token verwijderd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Design token verwijderd uit {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Design token verwijderd uit {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Design token verwijderd uit Community component 'Blockquote' van Utrecht
+### Design token verwijderd uit Community component 'Blockquote' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Token `{token}` is verwijderd uit {naam-component} component.
@@ -291,19 +291,19 @@ Token `utrecht.blockquote.attribution.font-family` is verwijderd uit Blockquote 
 
 #### Meer dan 1 token verwijderd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Design tokens verwijderd uit {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Design tokens verwijderd uit {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Design tokens verwijderd uit Candidate component 'Heading'
+### Design tokens verwijderd uit Candidate component 'Heading'
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 De volgende tokens zijn verwijderd uit {naam-component} component:
@@ -329,19 +329,19 @@ De wijziging kan `major`, `minor` of `patch` zijn. Ga na wat de impact zou kunne
 
 Bepaald zelf of het een bugfix is of niet.
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Bugfix: waarde van design token aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Bugfix: waarde van design token aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Bugfix: waarde van design token aangepast van Community component 'Ordered List' van Utrecht
+### Bugfix: waarde van design token aangepast van Community component 'Ordered List' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Waarde van token `{token}` is gewijzigd van `{oude-waarde}` naar `{nieuwe-waarde}`.
@@ -359,19 +359,19 @@ Controleer of deze wijziging ook wenselijk is voor het thema van jouw organisati
 
 #### Meer dan 1 tokenwaarde gewijzigd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Bugfix: waarde van design tokens aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Bugfix: waarde van design tokens aangepast van {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Bugfix: waarde van design tokens aangepast van Community component 'Ordered List' van Utrecht
+### Bugfix: waarde van design tokens aangepast van Community component 'Ordered List' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 De waarde van de volgende tokens zijn gewijzigd:
@@ -399,19 +399,19 @@ Soort wijziging: `patch`
 
 #### Component hernoemd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-{status-estafettemodel} component '{naam-oude-component}' van {naam-organisatie} hernoemd
+### {status-estafettemodel} component '{naam-oude-component}' van {naam-organisatie} hernoemd
 ```
 
 Voorbeeld:
 
 ```md
-Community component 'Badge Counter' van Utrecht hernoemd
+### Community component 'Badge Counter' van Utrecht hernoemd
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Component '{naam-oude-component}' is hernoemd naar '{naam-nieuwe-component}'.
@@ -425,19 +425,19 @@ Component 'utrecht-badge-counter' is hernoemd naar 'utrecht-number-badge'.
 
 #### Subcomponent hernoemd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-Subcomponent hernoemd binnen {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### Subcomponent hernoemd binnen {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeeld:
 
 ```md
-Subcomponent hernoemd binnen Community component 'Accordion' van Utrecht
+### Subcomponent hernoemd binnen Community component 'Accordion' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 Subcomponent '{naam-oude-subcomponent}' is hernoemd naar '{naam-nieuwe-subcomponent}' binnen {naam-component} component.
@@ -453,16 +453,16 @@ Subcomponent 'utrecht-accordion-button' is hernoemd naar '\_\_button' binnen Acc
 
 Soort wijziging: `minor`
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-{status-estafettemodel} component '{naam-component}' van {naam-organisatie} toegevoegd
+### {status-estafettemodel} component '{naam-component}' van {naam-organisatie} toegevoegd
 ```
 
 Voorbeeld:
 
 ```md
-Community component 'Code Block' van Utrecht toegevoegd
+### Community component 'Code Block' van Utrecht toegevoegd
 ```
 
 #### Changelogregel changeset
@@ -481,19 +481,19 @@ Community component 'Code Block' van gemeente Utrecht is toegevoegd aan de bibli
 
 Soort wijziging: `major`
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-{status-estafettemodel} component '{naam-component}' van {naam-organisatie} verwijderd
+### {status-estafettemodel} component '{naam-component}' van {naam-organisatie} verwijderd
 ```
 
 Voorbeeld:
 
 ```md
-Help Wanted component 'Badge Data' van Utrecht verwijderd
+### Help Wanted component 'Badge Data' van Utrecht verwijderd
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 {status-estafettemodel} component '{naam-component}' is verwijderd uit de bibliotheek.
@@ -511,20 +511,20 @@ Soort wijziging: `minor`
 
 #### Iets uit component is verwijderd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-{iets} verwijderd uit {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
+### {iets} verwijderd uit {status-estafettemodel} component '{naam-component}' van {naam-organisatie}
 ```
 
 Voorbeelden:
 
 ```md
-- State verwijderd uit Community component 'Button' van Utrecht
-- Property verwijderd uit Community component 'Alert' van Utrecht
+- ### State verwijderd uit Community component 'Button' van Utrecht
+- ### Property verwijderd uit Community component 'Alert' van Utrecht
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 {iets} is verwijderd uit {naam-component} component.
@@ -539,19 +539,19 @@ Voorbeelden:
 
 #### Iets in component is gewijzigd
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-{status-estafettemodel} component '{naam-component}' van {naam-organisatie} aangepast
+### {status-estafettemodel} component '{naam-component}' van {naam-organisatie} aangepast
 ```
 
 Voorbeeld:
 
 ```md
-Community component 'Ordered List' van Utrecht aangepast
+### Community component 'Ordered List' van Utrecht aangepast
 ```
 
-##### Changelogregel changeset
+##### Changeset regel
 
 ```md
 {iets} in {naam-component} is gewijzigd {reden}.
@@ -567,20 +567,20 @@ Positie van de Marker in Ordered List component is gewijzigd, door deze buiten h
 
 Soort wijziging: `patch`
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-{Kan verschillen. Schrijf in de voltooid deelwoordsvorm (bijv. toegevoegd, aangepast, verplaatst) en begin de zin zonder lidwoord.}
+### {Kan verschillen. Schrijf in de voltooid deelwoordsvorm (bijv. toegevoegd, aangepast, verplaatst) en begin de zin zonder lidwoord.}
 ```
 
 Voorbeelden:
 
 ```md
-- Afstand tussen frames aangepast
-- Page dividers toegevoegd
-- Component collage pagina verplaatst
-- Figma property gelijkgetrokken voor tekst
-- Helper componenten hernoemd
+- ### Afstand tussen frames aangepast
+- ### Page dividers toegevoegd
+- ### Component collage pagina verplaatst
+- ### Figma property gelijkgetrokken voor tekst
+- ### Helper componenten hernoemd
 ```
 
 #### Changelogregel changeset
@@ -601,19 +601,19 @@ Voorbeelden:
 
 Soort wijziging: `patch`
 
-##### Kopje Figma changelog
+##### Changelog kopje
 
 ```md
-{Kan verschillen. Schrijf in de voltooid deelwoordsvorm (bijv. toegevoegd, aangepast, verplaatst) en begin de zin zonder lidwoord.}
+### {Kan verschillen. Schrijf in de voltooid deelwoordsvorm (bijv. toegevoegd, aangepast, verplaatst) en begin de zin zonder lidwoord.}
 ```
 
 Voorbeelden:
 
 ```md
-- Waardes omgezet in Tokens Studio
-- Bugfix: design tokens juist gekoppeld bij Community component 'Link' van Utrecht
-- Verschillende bugfixes doorgevoerd
-- Bugfix: waarde van design tokens omgeruild
+- ### Waardes omgezet in Tokens Studio
+- ### Bugfix: design tokens juist gekoppeld bij Community component 'Link' van Utrecht
+- ### Verschillende bugfixes doorgevoerd
+- ### Bugfix: waarde van design tokens omgeruild
 ```
 
 #### Changelogregel changeset
