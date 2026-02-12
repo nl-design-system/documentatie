@@ -1,5 +1,5 @@
-import BrowserOnly from '@docusaurus/BrowserOnly';
 import { lazy, Suspense } from 'react';
+import { BrowserOnly } from './BrowserOnly';
 
 const Editor = lazy(() =>
   import('@nl-design-system-community/editor-react').then(({ ClippyEditor }) => ({
