@@ -85,20 +85,16 @@ import { Guideline } from "@site/src/components/Guideline";
             </p>
           </div>
           <div>
-            <p>
-              <label htmlFor="year2">Jaar</label>
-            </p>
-            <p id="description-year2">Bijvoorbeeld 1970.</p>
-            <p>
-              <input
-                id="c2"
-                type="text"
-                inputMode="numeric"
-                aria-describedby="description-year2"
-                autoComplete="bday-year"
-                maxLength="4"
-              />
-            </p>
+            <label htmlFor="year2">Jaar</label>
+            <div id="description-year2">Bijvoorbeeld 1970.</div>
+            <input
+              id="year2"
+              type="text"
+              inputMode="numeric"
+              aria-describedby="description-year2"
+              autoComplete="bday-year"
+              maxLength="4"
+            />
           </div>
         </fieldset>
       </>
