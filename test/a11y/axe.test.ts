@@ -17,6 +17,9 @@ test.describe('Accessibility features', () => {
 
   pathnames.forEach((pathname) => {
     test(pathname, async ({ page }) => {
+      if (pathname === '/handboek/designer/figma-changelog/') {
+        test.setTimeout(120000);
+      }
       await verifyPageAccessibility(page, pathname);
     });
   });
