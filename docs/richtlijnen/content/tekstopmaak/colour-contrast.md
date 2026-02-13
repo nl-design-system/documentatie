@@ -65,7 +65,7 @@ Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebr
   <Canvas language="html">
     {() => (
       <>
-        Je kunt op eigen gelegenheid oversteken. <span style={{ color: 'red' }}>Pas op!</span> Dit is <span style={{ color: 'red' }}>erg gevaarlijk</span>
+        Je kunt op eigen gelegenheid oversteken. <span style={{ color: '#d00000' }}>Pas op!</span> Dit is <span style={{ color: '#d00000' }}>erg gevaarlijk</span>
       </>
     )}
   </Canvas>
