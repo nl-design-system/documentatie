@@ -319,6 +319,10 @@ p {
   padding-inline-start: 48px;
 }
 
+.theme-unlisted-banner {
+  display: none;
+}
+
 /* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
 .DocSearch {
   --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
