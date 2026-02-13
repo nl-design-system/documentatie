@@ -2108,6 +2108,13 @@ html[data-theme="dark"] {
  padding: var(--ifm-tabs-padding-vertical) var(--ifm-tabs-padding-horizontal);
  transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
+.breadcrumbs__link[href="/"] svg,
+.footer__link-item svg,
+.footer__link-separator,
+.theme-unlisted-banner,
+.utrecht-accordion__button:after {
+ display: none;
+}
 .tabs__item--active {
  border-bottom-color: var(--ifm-tabs-color-active-border);
  border-bottom-left-radius: 0;
@@ -2747,12 +2754,6 @@ aside button[title="Zijbalk inklappen"] {
  inline-size: auto !important;
  padding-inline-end: 1ch;
  vertical-align: middle;
-}
-.breadcrumbs__link[href="/"] svg,
-.footer__link-item svg,
-.footer__link-separator,
-.utrecht-accordion__button:after {
- display: none;
 }
 :root,
 ams-page-footer,
