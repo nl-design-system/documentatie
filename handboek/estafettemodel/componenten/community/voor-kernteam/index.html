@@ -40,7 +40,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.0a5dbe90.css" />
-  <script src="/assets/js/runtime~main.90d8d215.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.cf6de58f.js" defer="defer"></script>
   <script src="/assets/js/main.2fbef96b.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -448,8 +448,10 @@
               <p>Op nldesignsystem.nl is de meest recente informatie van de component beschikbaar, op het moment dat de component wordt gepromoot door het kernteam.</p>
               <h3 id="actie-17" class="utrecht-heading-3">Actie</h3>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Publiceer een nieuwe versie van het <code class="utrecht-code">component-progress</code> package door op <code class="utrecht-code">Run Workflow</code> te klikken in <a href="https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml" class="utrecht-link utrecht-link--html-a">GitHub Actions van de Index repository</a>. Kies hierbij voor de <code class="utrecht-code">main</code> branch.</li>
-               <li>Wacht tot <a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="utrecht-link utrecht-link--html-a">component-progress op npm</a> is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij <code class="utrecht-code">Last publish</code>.</li>
+               <li>Publiceer een nieuwe versie van het <code class="utrecht-code">component-progress</code> package: ga naar de <a href="https://github.com/nl-design-system/index/pulls" class="utrecht-link utrecht-link--html-a">pull requests van de Index repository</a> en zoek naar de pull request genaamd <code class="utrecht-code">docs(release): design system packages</code>. Approve en merge de pull request. Deze pull request word automatisch aangemaakt elke keer wanneer de vorige is gemerged.</li>
+               <li>
+                Wacht tot <a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">@nl-design-system/component-progress</code> op npm</a> is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij <code class="utrecht-code">Last publish</code>.
+               </li>
                <li>Open de <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">documentatie repository</a> in Visual Studio Code.</li>
                <li>Update <code class="utrecht-code">@nl-design-system/component-progress</code> in de documentatie repository. Dat doe je door lokaal in de branch <code class="utrecht-code">pnpm install @nl-design-system/component-progress@latest --save-dev -w</code> te draaien. Dit update de devDependency en de lockfile.</li>
                <li>Maak een nieuwe branch aan en gebruik de volgende naam:</li>
