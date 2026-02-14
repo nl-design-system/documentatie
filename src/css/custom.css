@@ -691,7 +691,7 @@ pre {
   --nlds-code-block-margin-inline-end: 0;
   --nlds-code-block-background-color: #011627;
   --nlds-code-block-selected-background-color: rgb(29 59 83 / 99%);
-  --nlds-code-block-comment-color: rgb(99 119 119);
+  --nlds-code-block-comment-color: rgb(130 155 155);
   --nlds-code-block-comment-font-style: italic;
   --nlds-code-block-prolog-color: rgb(99 119 119);
   --nlds-code-block-prolog-font-style: italic;
@@ -801,4 +801,10 @@ ams-page-footer {
 
 .nl-skip-link {
   z-index: 10000;
+}
+
+/* Fix contrast for links in success alerts (Tips) */
+.alert--success a {
+  color: #285f8f !important;
+  /* Satisfies AA contrast on #e6f6e6 */
 }

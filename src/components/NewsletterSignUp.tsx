@@ -350,6 +350,7 @@ export const NewsletterSignUp = ({
         placeholder="Your e-mail here"
         className="sr-only"
         aria-hidden="true"
+        tabIndex={-1}
       />
     </form>
   );

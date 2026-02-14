@@ -40,16 +40,14 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
   }
 >
   <Canvas
-    language="html"
-    designTokens={{
-      "--utrecht-form-label-color": "#999999",
-    }}
+    code={`<label htmlFor="naam2">Uw naam</label>
+<input type="text" id="naam2" autoComplete="name" />`}
   >
     {() => (
-      <>
+      <div aria-hidden="true">
         <label htmlFor="naam2">Uw naam</label>
-        <input type="text" id="naam2" autoComplete="name" />
-      </>
+        <input type="text" id="naam2" autoComplete="name" tabIndex={-1} disabled />
+      </div>
     )}
   </Canvas>
 </Guideline>
