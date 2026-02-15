@@ -43,3 +43,10 @@ Wanneer je dependencies installeert, is het handig om zo min mogelijk rechten en
 - package locks
 - fixed version dependencies
 - security vulnerabilities in github
+
+## Geen runtime dependencies
+
+Bijvoorbeeld:
+
+- Gebruik `pnpm install` alleen in de buid pipeline, niet tijdens het uitvoeren van de software.
+- Installeer dependencies via npm, in plaats van bestanden inladen via een CDN.
