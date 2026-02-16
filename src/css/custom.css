@@ -802,3 +802,10 @@ ams-page-footer {
 .nl-skip-link {
   z-index: 10000;
 }
+
+.nlds-icon-ext {
+  background-image: url("../icons/external-link.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}
