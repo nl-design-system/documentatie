@@ -11,17 +11,22 @@ keywords:
   - release notes
 ---
 
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
 {/* @license CC0-1.0 */}
 
 # Release notes
 
-Publiceer alle wijzigingen in softwarereleases vast in een `CHANGELOG.md` bestand. Deze filename volgt de conventie, waardoor de release notes op diverse manieren gebruiksvriendelijk beschikbaar worden gemaakt, bijvoorbeeld met in Pull Requests van Dependabot, of in de GitHub user interface.
+<Paragraph lead>
+  Publiceer documentatie over de wijzigingen in softwarereleases in een `CHANGELOG.md` bestand, zodat gebruikers weten
+  wat ze kunnen verwachten en hoe ze kunnen migreren naar de nieuwe versie.
+</Paragraph>
 
-## Continuous delivery
-
-{/* ... */}
+Volg de `CHANGELOG.md` filename-conventie, zodat de release notes op diverse manieren gebruiksvriendelijk beschikbaar worden gemaakt, bijvoorbeeld met in Pull Requests van Dependabot, of in de GitHub user interface.
 
 ## Automatiseer de release notes
+
+Voorkom dat iedereen de `CHANGELOG.md` file direct moet wijzigen via Git, en daardoor doorlopend merge conflicts ontstaan en de release notes bijhouden een tijdrovend en frustrerend proces is.
 
 Gebruik de [changesets](https://github.com/changesets/changesets) workflow voor het vastleggen van wijzigingen in `.changeset/*.md`-bestanden.
 
