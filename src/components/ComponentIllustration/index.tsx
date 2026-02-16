@@ -45,7 +45,9 @@ export const ComponentIllustration = ({ name, relayStep, description }: Componen
           <rect width="960" height="2" transform="translate(0 392)" />
           <rect width="960" height="2" transform="translate(0 474)" />
         </g>
-        <use href={`/svg/componenten_overzicht_${toKebabCase(name)}.svg#component-illustration`} />
+        <use
+          href={`/svg/componenten_overzicht_${toKebabCase(name.replace(/^Heading [1-6]$/, 'Heading'))}.svg#component-illustration`}
+        />
       </svg>
       <FigureCaption className="component-illustration__caption">{description}</FigureCaption>
     </Figure>
