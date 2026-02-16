@@ -24,11 +24,11 @@ import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
   de code te begrijpen, nieuwe releases uit te brengen en open source samenwerkingen aan te gaan.
 </Paragraph>
 
-Werk je in opdracht van NL en GitHub, in de [nl-design-system organisatie](http://github.com/nl-design-system). Push je work-in-progress regelmatig naar GitHub, tenminste elke dag.
+Werk in de [nl-design-system organisatie op GitHub](http://github.com/nl-design-system). Push je work-in-progress regelmatig naar GitHub, tenminste elke dag.
 
 We gebruiken GitHub voor versiebeheer, in plaats van GitLab of Azure DevOps, omdat het een open source project is dat community-gedreven door personen en teams die voornamelijk op GitHub werken. Naar verwachting is zal de open source community beter groeien wanneer de NL Design System past bij de bestaande workflow van mensen en teams in de community.
 
-Gebruik terraform om nieuwe repositories aan te maken in GitHub.
+Gebruik terraform om nieuwe repositories aan te maken in GitHub, en om de instellingen van de repository te beheren. Dat kan via GitOps in de [nl-design-system/terraform repository](http://github.com/nl-design-system/terraform).
 
 ## Kwaliteit van de main branch {#default-branch}
 
@@ -65,15 +65,19 @@ Gebruik zoveel mogelijk de `.gitignore` in de root van de repository, en voorkom
 
 Vermijd uitbreidingen aan de `.gitignore` wanneer het logisch is om de bestanden te plaatsen in directories die al in de `.gitignore` staan, zoals `dist/`, `tmp/` en `vendor/`.
 
-Lees meer over conventies voor bestanden en directories in het handboek.
+{/* TODO: Lees meer over conventies voor bestanden en directories in het handboek. */}
 
 ## Beheer van gebruikers
 
-Beheer GitHub gebruikers en toegang tot repositories bij voorkeur via terraform, zodat wijzigingen door een tweede persoon gecontroleerd kunnen worden.
+Beheer GitHub gebruikers en toegang tot repositories bij voorkeur met GitOps via terraform, zodat wijzigingen door een tweede persoon gecontroleerd kunnen worden.
+
+Lees meer in de terraform repository over [het proces van GitHub gebruikers toevoegen](https://github.com/nl-design-system/terraform/blob/main/docs/adding-users.md).
 
 ## Branches
 
-Er is geen voorgeschreven conventie voor de namen van branches. Wanneer een specifieke repository wel een conventie gebruikt, dan is dat beschreven in `CONTRIBUTING.md`.
+Er is geen voorgeschreven conventie voor de namen van branches.
+
+Wanneer een specifieke repository wel een conventie gebruikt voor branch-naamgeving, dan is de bedoeling dat je dit kan vinden in `CONTRIBUTING.md`.
 
 ## Backups
 
