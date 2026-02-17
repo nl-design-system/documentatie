@@ -36,11 +36,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Set up Node.js that is compatible with OIDC
-        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
-        with:
-          node-version: 24
-
       - name: Publish to the npm Registry
         uses: changesets/action@c48e67d110a68bc90ccf1098e9646092baacaa87 # v1.6.0
         env:
