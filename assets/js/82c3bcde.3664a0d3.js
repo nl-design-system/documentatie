@@ -245,11 +245,10 @@
     m = [
      { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
      { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
-     { value: 'Help component verbeteren', id: 'help-component-verbeteren', level: 2 },
     ];
    function p(e) {
     const t = { h2: 'h2', ...(0, c.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(o.Fc, { component: y, headingLevel: 1, description: d }), '\n', (0, i.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(o.VK, { component: y, headingLevel: 3 }), '\n', (0, i.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(o.mu, { component: y, headingLevel: 3 }), '\n', (0, i.jsx)(t.h2, { id: 'help-component-verbeteren', children: 'Help component verbeteren' }), '\n', (0, i.jsx)(o.$9, { component: y, headingLevel: 2 })] });
+    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(o.Fc, { component: y, headingLevel: 1, description: d }), '\n', (0, i.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(o.VK, { component: y, headingLevel: 3 }), '\n', (0, i.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(o.mu, { component: y, headingLevel: 3 }), '\n', (0, i.jsx)(o.$9, { component: y, headingLevel: 2 })] });
    }
    function g(e = {}) {
     const { wrapper: t } = { ...(0, c.R)(), ...e.components };
