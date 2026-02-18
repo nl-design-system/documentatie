@@ -1,0 +1,34 @@
+---
+title: Continuous Deployment
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Continuous Deployment
+sidebar_position: 22
+pagination_label: Continuous Deployment
+description: Uitleg over de CI/CD pipelines van NL Design System
+keywords:
+  - ci
+  - cd
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Continuous Deployment
+
+<Paragraph lead>
+  Gebruik continous deployment voor websites, zodat wijzigingen die goedgekeurd zijn direct beschikbaar worden. Door
+  continuous integration zijn de wijzigingen aan de website altijd van voldoende kwaliteit om direct een release te
+  doen.
+</Paragraph>
+
+Gebruik de [`actions/deploy-pages` GitHub Action](http://github.com/actions/deploy-pages) voor de Continuous Deployment pipeline, wanneer je in de [github.com/nl-design-system](https://github.com/nl-design-system) organisatie werkt.
+
+Gebruik de [continuous deployment workflows in `publish.yml` in de example repository](https://github.com/nl-design-system/example/tree/main/.github/workflows) als voorbeeld.
+
+:::tip[bestaande infrastructuur]
+
+[Koppel de GitHub repository aan een WebHook](https://docs.github.com/en/webhooks/using-webhooks/creating-webhooks#creating-a-repository-webhook) van de Plesk-omgeving van ICTU, voor automatische deployments naar de productieomgeving van `nldesignsystem.nl` en `gebruikersonderzoeken.nl`.
+
+:::

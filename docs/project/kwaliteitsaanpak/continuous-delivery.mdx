@@ -1,0 +1,52 @@
+---
+title: Continuous Delivery
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Continuous Delivery
+sidebar_position: 22
+pagination_label: Continuous Delivery
+description: Uitleg over de CI/CD pipelines van NL Design System
+keywords:
+  - ci
+  - cd
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Continuous Delivery
+
+<Paragraph lead>
+  Zorg dat op elk moment een software release gedaan kan worden van de laatste versie in de `main` branch, zodat
+  verbeteringen snel beschikbaar worden voor gebruikers. Gebruik semantic versioning tools om automatisch het volgende
+  versienummer te bepalen.
+</Paragraph>
+
+De kwaliteit van de code in de `main` branch is in principe al voldoende om een software release te doen wanneer je code reviews doet en [continuous integration](./continuous-integration.mdx) gebruikt.
+
+## Release notes bij elke wijzigingen
+
+Schrijf release notes voor elke wijziging die noemenswaardige impact heeft op gebruikers van de software of de website. of `changeset` VoegGebruik `changeset` om bij elke wijziging gelijk de release notes
+
+GitHub Actions past goed bij de open source samenwerking op basis van de meestgebruikte clouddiensten. GitHub Actions past hier beter bij dan Azure DevOps, omdat het gebruikers beter in staat zijn alle functionaliteit over te nemen wanneer ze een fork maken.
+
+Elke repository met software builds heeft de pipelines vastgelegd in de `.github/workflows/` directory.
+
+Gebruik een GitHub Action voor changeset voor continuous delivery. Lees meer op de NL Design System website: [Versionering: Hoe beheer je pakketversies?](https://nldesignsystem.nl/handboek/developer/changesets/)
+
+Elke release moet een changelog hebben, en een nieuw versienummer. Voeg deze informatie toe in changeset bestanden, als onderdeel van de pull request met wijzigingen.
+
+Voeg een changeset-bestand toe bij elke pull request, die een changelog-entry bevat voor de nieuwe release. Gebruik een GitHub Action om te controleren dat elke Pull Request een changeset bevat. Zie bijvoorbeeld [`changeset-status.yml`](https://github.com/nl-design-system/candidate/blob/main/.github/workflows/changeset-status.yml).
+
+Gebruik een GitHub Action om een pull request te maken die een release aanmaakt.
+
+Gebruik een GitHub Action om met changeset de stappen voor de release uit te voeren:
+
+- bepaal nieuwe versienummers voor alle packages die een nieuwe release krijgen, op basis van de semantic versioning instellingen in de changesets.
+- Maak een entry in elke changelog, met de wijzigingen die zijn beschreven in de changeset bestanden.
+- maak Git tags aan met de versienummer
+- publiceer npm packages in de npm registry
+- maak GitHub Releases aan
+
+Gebruik de [continuous delivery workflows in `publish.yml` in de example repository](https://github.com/nl-design-system/example/tree/main/.github/workflows) als voorbeeld. Samen met de `.changeset/` directory en de `@changesets/cli` scripts in `package.json` is dit alles dat je nodig hebt om continuous delivery in te stellen.

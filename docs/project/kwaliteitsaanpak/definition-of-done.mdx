@@ -1,0 +1,44 @@
+---
+title: Definition of Done
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Definition of Done
+sidebar_position: 14
+pagination_label: Definition of Done
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Definition of Done
+
+<Paragraph lead>
+  Controleer met Definition of Done of het werk klaar is om te presenteren aan de product owner, voor de laatste check.
+</Paragraph>
+
+{/* - TODO: Documentatie voldoet aan de schrijfwijzer. */}
+
+- Het resultaat voldoet aan de acceptatiecriteria uit de [backlog](./product-backlog.mdx).
+- Het resultaat getest in de [testomgeving](./testomgeving.mdx).
+- De [broncodekwaliteit](./broncodekwaliteit.mdx) voldoet aan de eisen.
+- De [continuous integration](./continuous-integration.mdx) checks slagen, en die controleren in elk geval de broncodekwaliteit, testautomatisering en de build.
+- Testautomatisering voldoet aan het niveau dat is afgesproken voor de repository.
+- De [dependencies](./supply-chain.mdx) zijn up-to-date, hebben geen kritieke kwetsbaarheden, en hebben een open source licentie die compatible is.
+- Het resultaat is gepubliceerd onder de juiste [open source](./open-source.mdx) licentie.
+- Het werkt in de browsers en hulpsoftware uit de [NL Design System Baseline](/baseline/).
+- Het resultaat voldoet aan de toegankelijkseisen van de [NL Design System Baseline](/baseline/).
+- De oplossing is zoveel mogelijk gemaakt met NL Design System componenten en volgens instructies in het handboek en de richtlijnen.
+- De [code review](./code-review.mdx) is klaar en goedgekeurd.
+- Er zijn [release notes](./release-notes.mdx) voor de wijzigingen, en die zijn per package vastgelegd met semantic versioning.
+- De code en documentatie zijn [opgeleverd in Git](./versiebeheer.mdx) en gemerged naar de `main` branch.
+- Technical debt is vastgelegd in de backlog, en de product owner is geïnformeerd dat de technical debt is gekoppeld aan dit item op de backlog.
+- De software is [klaar voor een release](./continuous-deployment.mdx), of de release is al gepubliceerd.
+- De product owner accepteert de oplevering bij de [sprint review](./sprint-review), en is akkoord met de technical debt.
+
+Voor de volgende onderwerpen is een specifieke Definition of Done:
+
+- [Definition of Done voor Candidate componenten](/handboek/estafettemodel/componenten/candidate/)
+- [Definition of Done voor Hall of Fame componenten](/handboek/estafettemodel/componenten/hall-of-fame/)
+
+Sommige repositories hebben een eigen Definition of Done, die kun je vinden via `CONTRIBUTING.md`.

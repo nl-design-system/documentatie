@@ -1,0 +1,33 @@
+---
+title: Release notes
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Release notes
+sidebar_position: 30
+pagination_label: Release notes
+description: Dit is hoe we release notes bijhouden voor NL Design System.
+keywords:
+  - changelog
+  - release notes
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Release notes
+
+<Paragraph lead>
+  Publiceer documentatie over de wijzigingen in softwarereleases in een `CHANGELOG.md` bestand, zodat gebruikers weten
+  wat ze kunnen verwachten en hoe ze kunnen migreren naar de nieuwe versie.
+</Paragraph>
+
+Volg de `CHANGELOG.md` filename-conventie, zodat de release notes op diverse manieren gebruiksvriendelijk beschikbaar worden gemaakt, bijvoorbeeld met in Pull Requests van Dependabot, of in de GitHub user interface.
+
+## Automatiseer de release notes
+
+Voorkom dat iedereen de `CHANGELOG.md` file direct moet wijzigen via Git, en daardoor doorlopend merge conflicts ontstaan en de release notes bijhouden een tijdrovend en frustrerend proces is.
+
+Gebruik de [changesets](https://github.com/changesets/changesets) workflow voor het vastleggen van wijzigingen in `.changeset/*.md`-bestanden.
+
+Gebruik de `changeset` tool om bij releases de release notes automatisch toe te voegen aan alle relevante `CHANGELOG.md` bestanden. Door automatisch in één keer de changelog samen te stellen, heeft niemand last van merge conflicts doordat meerdere mensen tegelijk `CHANGELOG.md` willen wijzigen.

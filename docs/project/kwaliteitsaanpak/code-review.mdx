@@ -1,0 +1,88 @@
+---
+title: Code reviews
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Code reviews
+pagination_label: Code reviews
+sidebar_position: 11
+description: Dit is hoe we de code reviews doen
+slug: /kwaliteitsaanpak/code-review/
+keywords:
+  - pr review
+  - review
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Code reviews
+
+<Paragraph lead>
+  Werk samen met anderen om jouw wijzigingen te controleren, en gebruik de feedback om het afgesproken kwaliteitsniveau
+  te bereiken.
+</Paragraph>
+
+## Belangrijke perspectieven
+
+Gebruik andere perspectieven om de begrijpelijkheid, duurzaamheid en kwaliteit te verbeteren.
+
+Wie heeft de meest relevante ervaring voor een code review? Wie kan het best beoordelen of de code past bij toekomstige ontwikkelingen? Wie kan beoordelen of de wijziging volledig is?
+
+Besteed voldoende tijd en aandacht aan code reviews, wanneer je de aanpak voor toekomstige ontwikkelingen. Komen er in de toekomst nog veel meer van dit soort wijzigingen? Dan is het een goed moment om een aandachtige review te doen, en om consensus te bereiken over de aanpak. Hiermee voorkom je veel rework achteraf.
+
+## Aandachtspunten
+
+### Volledigheid
+
+De inhoud van de wijziging kan er goed uit zien, maar de moeilijke taak is vaak om te beoordelen: is de wijziging volledig?
+
+Maak het makkelijk voor anderen om de volledigheid te beoordelen, door de Pull Request te koppelen aan de Issue met acceptatiecriteria.
+
+### Toegankelijkheid
+
+Wijzigigen in dependencies, design, functionaliteit en content kunnen allemaal effect hebben op toegankelijkheid. Een groot gedeelte van toegankelijkheid kan nog niet automatisch getest worden.
+
+Gebruik ervaring met digitale toegankelijkheid om te weten wat de impact is en te bepalen welke tests gedaan moeten om de toegankelijkheid te controleren. Toegankelijkheid testen tijdens code reviews is extra belangrijk wanneer door [continuous delivery](./continuous-delivery.mdx) en [continuous deployment](./continuous-deployment.mdx) de nieuwe release snel bij eindgebruikers komen.
+
+### Begrijpelijkheid
+
+Maak een inschatting of de code ook in de toekomst duidelijk genoeg zal zijn voor doorontwikkeling.
+
+Samenwerken aan code reviews geeft vaak inspiratie voor het toevoegen van effectieve documentatie en code comments, doordat uit vragen en onbegrip blijkt wat niet voldoende duidelijk is voor reviewers.
+
+Gebruik de feedback uit samenwerking voor vebeteren van de begrijpelijkheid. Bijvoorbeeld:
+
+- Voeg documentatie en code comments toe op de plekken waar het een verschil maakt.
+- Maak code minder complex zodat meer mensen de code kunnen onderhouden.
+- Gebruik een aanpak die consistent is met de rest van de codebase.
+
+### Veiligheid
+
+Let op: wijzigingen aan dependencies kunnen kwetsbaarheden toevoegen aan je repository, controleer die wijzigingen extra goed. Lees meer bij [software supply chain](./supply-chain.mdx) over het beheren van dependencies.
+
+Kies bij voorkeur iemand met relevante ervaring als verantwoordelijke voor het reviewen van dependencies.
+
+## Etiquette
+
+Gebruik de [Code of Conduct](./code-of-conduct.mdx) voor respectvolle communicatie bij het samenwerken aan code reviews.
+
+### Draft Pull Request
+
+Maak een Draft Pull Request om anderen te laten zien in welke code je wijzigingen wilt doen, om code reviews in een vroeg stadium mogelijk te maken.
+
+Wanneer jij zelf vind dat de branch klaar is om te mergen, en je bent klaar met de beschrijving van de Pull Request, dan maak een Pull Request zonder "draft" status. Ga op deze manier effectief en respectvol om met de tijd en aandacht van anderen.
+
+### Leer van feedback
+
+Controleer of feedback ook van toepassing is op andere delen van je wijziging, zodat reviewers niet bij elk detail een comment hoeven te plaatsen.
+
+## Verplichte reviews
+
+Maak minimaal 1 review verplicht.
+
+Maak iemand verantwoordelijk voor het controleren van wijzigingen aan risicovolle bestanden, en stel een review van hun verplicht via `CODEOWNERS.md`. Bijvoorbeeld: stel voor het wijzigen van dependencies een code owner in voor lockfiles zoals `package-lock.json`, `pnpm-lock.yaml` en `yarn.lock`.
+
+## Backlog voor doorontwikkeling
+
+Leg plannen voor verbetering vast in de [product backlog](./product-backlog.mdx), wanneer je bepaalde feedback uit een code review direct op een later moment wil doorvoeren. Bijvoorbeeld voor het verminderen van technical debt door toevoegen van testautomatisering, het doen van refactorings of het oplossen van bugs.
