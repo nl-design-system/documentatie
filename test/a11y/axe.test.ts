@@ -80,7 +80,7 @@ function shouldSkipRoute(pathname: string): boolean {
   });
 }
 
-async function analyzeAccessibility(page: Page, disabledRules: string[], excludedViolationIds: (string | RegExp)[]) {
+async function analyzeAccessibility(page: Page, disabledRules: string[], excludedViolationIds: RegExp[]) {
   const results = await new AxeBuilder({ page })
     .options({ resultTypes: ['violations'] })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
@@ -88,12 +88,7 @@ async function analyzeAccessibility(page: Page, disabledRules: string[], exclude
     .analyze();
 
   results.violations = results.violations.filter((violation) => {
-    return !excludedViolationIds.some((excluded) => {
-      if (typeof excluded === 'string') {
-        return violation.id === excluded;
-      }
-      return excluded.test(violation.id);
-    });
+    return !excludedViolationIds.some((excluded) => excluded.test(violation.id));
   });
 
   return results;
@@ -110,6 +105,7 @@ function getDisabledRules(pathname: string): string[] {
   for (const exclusion of exclusions) {
     const isMatch = exclusion.routes.some((route) => {
       if (typeof route === 'string') {
+        if (route === '*') return true;
         return route === pathname;
       }
       return route.test(pathname);
@@ -129,14 +125,21 @@ function getDisabledRules(pathname: string): string[] {
           }
         });
       }
+      if (exclusion.excludeIds) {
+        exclusion.excludeIds.forEach((id) => {
+          if (typeof id === 'string') {
+            disabledRules.add(id);
+          }
+        });
+      }
     }
   }
 
   return Array.from(disabledRules);
 }
 
-function getExcludedViolationIds(pathname: string): (string | RegExp)[] {
-  const excluded: (string | RegExp)[] = [];
+function getExcludedViolationIds(pathname: string): RegExp[] {
+  const excluded: RegExp[] = [];
 
   for (const exclusion of exclusions) {
     const isMatch = exclusion.routes.some((route) => {
@@ -148,7 +151,11 @@ function getExcludedViolationIds(pathname: string): (string | RegExp)[] {
     });
 
     if (isMatch && exclusion.excludeIds) {
-      excluded.push(...exclusion.excludeIds);
+      exclusion.excludeIds.forEach((id) => {
+        if (typeof id !== 'string') {
+          excluded.push(id);
+        }
+      });
     }
   }
 
