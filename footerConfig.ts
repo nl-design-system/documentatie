@@ -25,7 +25,7 @@ const footer: Footer = {
     },
     {
       label: 'GitHub',
-      href: 'https://github.com/nl-design-system/backlog',
+      href: '/github',
     },
     {
       label: 'Slack',
