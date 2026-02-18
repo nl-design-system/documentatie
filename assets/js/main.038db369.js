@@ -1,4 +1,4 @@
-/*! For license information please see main.eed2947d.js.LICENSE.txt */
+/*! For license information please see main.038db369.js.LICENSE.txt */
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [38792],
  {
@@ -335,7 +335,7 @@
        { label: 'Toegankelijkheid', to: '/toegankelijkheidsverklaring' },
        { label: 'Privacyverklaring', to: '/privacyverklaring' },
        { label: 'Colofon', to: '/colofon' },
-       { label: 'GitHub', href: 'https://github.com/nl-design-system/backlog' },
+       { label: 'GitHub', href: '/github' },
        { label: 'Slack', href: '/slack/' },
        { label: 'Figma', href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&t=t25LHoMjEkUZyEi1-1' },
       ],
