@@ -62,17 +62,49 @@ De decoratie blijft zichtbaar op de pagina, maar wordt niet voorgelezen door hul
 
 ## Veelgemaakte fouten
 
-### Fout: er ontbreekt een alt-attribuut bij een img-element
+### Fout: afbeelding zonder alt-attribuut
 
-Zonder alt-attribuut wordt de bestandsnaam voorgelezen. Dit zorgt voor een ontoegankelijke en onprettige ervaring.
+Als een `<img>` geen `alt`-attribuut heeft, leest een screenreader vaak de bestandsnaam voor. Dat levert onbegrijpelijke resultaten op zoals "DSC_0042.jpg" of "header-banner-v3-final.png". Je bezoeker heeft geen idee wat er op de afbeelding staat.
+
+```html
+<!-- Fout -->
+<img src="team-foto.jpg" />
+
+<!-- Goed -->
+<img src="team-foto.jpg" alt="Het ontwikkelteam tijdens de hackathon van 2024" />
+```
 
 ### Fout: het tekstalternatief bevat onleesbare tekens
 
 In een tekstalterantief staan tekens die de leesbaarheid verminderen. Bijvoorbeeld een onderliggend streepje waardoor meerdere woorden als één woord worden voorgelezen.
 
+```html
+<!-- Fout -->
+<img src="foto.jpg" alt="vergader_zaal_kantoor_amsterdam" />
+
+<!-- Goed -->
+<img src="foto.jpg" alt="Vergaderzaal in het kantoor te Amsterdam" />
+```
+
 ### Fout: het tekstalterantief is in een andere taal
 
 Bij anderstalige pagina’s moeten tekstalternatieven in dezelfde taal staan. Als dat niet gebeurt, worden deze teksten met verkeerde uitspraakregels voorgelezen.
+
+```html
+<!-- Fout -->
+<html lang="nl">
+  <body>
+    <img src="stadhuis.jpg" alt="City hall of The Hague on a sunny day" />
+  </body>
+</html>
+
+<!-- Goed -->
+<html lang="nl">
+  <body>
+    <img src="stadhuis.jpg" alt="Het stadhuis van Den Haag op een zonnige dag" />
+  </body>
+</html>
+```
 
 ## Informatieve afbeeldingen
 
@@ -80,17 +112,80 @@ Bij anderstalige pagina’s moeten tekstalternatieven in dezelfde taal staan. Al
 
 Zonder een tekstuele introductie weet een bezoeker die een schermlezer gebruikt niet waar deze over gaat. Dan kan de bezoeker al dan niet besluiten de video of audio af te spelen.
 
+```html
+<!-- Fout -->
+<video src="instructie.mp4" controls></video>
+
+<!-- Goed -->
+<p>In deze video legt een medewerker uit hoe je een aanvraag indient bij de gemeente.</p>
+<video src="instructie.mp4" controls aria-label="Instructievideo: een aanvraag indienen bij de gemeente"></video>
+```
+
 ### Fout: het tekstalternatief ontbreekt of geeft niet dezelfde informatie
 
 Er staat bijvoorbeeld een gevarendriehoek bij een waarschuwing, maar deze afbeelding heeft geen tekst alternatief. De waarschuwing wordt dan niet correct voorgelezen. Een ander voorbeeld is een PDF-icoon bij een link naar een document zonder passend tekstalternatief.
+
+```html
+<!-- Fout: gevarendriehoek zonder alt -->
+<div class="waarschuwing">
+  <img src="gevarendriehoek.svg" alt="" />
+  <p>Deze weg is afgesloten van 1 tot 15 maart.</p>
+</div>
+
+<!-- Goed -->
+<div class="waarschuwing">
+  <img src="gevarendriehoek.svg" alt="Waarschuwing" />
+  <p>Deze weg is afgesloten van 1 tot 15 maart.</p>
+</div>
+
+<!-- Fout: PDF-icoon zonder passend alt -->
+<a href="jaarverslag.pdf">
+  Jaarverslag 2025
+  <img src="pdf-icoon.svg" alt="" />
+</a>
+
+<!-- Goed -->
+<a href="jaarverslag.pdf">
+  Jaarverslag 2025
+  <img src="pdf-icoon.svg" alt="(PDF)" />
+</a>
+```
 
 ### Fout: complexe afbeeldingen hebben geen of onvoldoende tekstalterantief
 
 Een infographic of een schema heeft geen tekstalternatief waarin de belangrijke informatie uit de afbeelding staat. Een bezoeker die de afbeelding niet kan zien, heeft geen toegang tot deze informatie.
 
+```html
+<!-- Fout -->
+<img src="organogram.png" alt="Organogram" />
+
+<!-- Goed -->
+<figure>
+  <img src="organogram.png" alt="Organogram van de gemeentelijke organisatie, zie beschrijving hieronder" />
+  <figcaption>
+    De gemeentesecretaris stuurt drie directeuren aan: Ruimtelijke Ontwikkeling, Sociaal Domein en Bedrijfsvoering. Elke
+    directeur heeft drie tot vier afdelingshoofden onder zich.
+  </figcaption>
+</figure>
+```
+
 ### Fout: informatieve of interactieve afbeelding is verborgen voor hulpsoftware
 
 Een afbeelding die door hulpsoftware moet worden voorgelezen, is verborgen. Bijvoorbeeld een icoon dat aangeeft dat een link in een nieuw tabblad opent.
+
+```html
+<!-- Fout -->
+<a href="https://example.com" target="_blank">
+  Meer informatie
+  <img src="nieuw-tabblad.svg" aria-hidden="true" alt="Opent in nieuw tabblad" />
+</a>
+
+<!-- Goed -->
+<a href="https://example.com" target="_blank">
+  Meer informatie
+  <img src="nieuw-tabblad.svg" alt=" (opent in nieuw tabblad)" />
+</a>
+```
 
 ## Interactieve afbeeldingen
 
@@ -98,62 +193,98 @@ Een afbeelding die door hulpsoftware moet worden voorgelezen, is verborgen. Bijv
 
 Een menuknop toont eerst drie lijntjes met het tekstalternatief ‘open menu’. Na openen verandert het icoon in een kruisje, maar het tekstalternatief blijft hetzelfde.
 
+```html
+<!-- Fout: alt-tekst verandert niet mee -->
+<button>
+  <img src="menu-icoon.svg" alt="Open menu" />
+</button>
+
+<!-- Goed: aria-label wordt dynamisch bijgewerkt -->
+<button aria-expanded="false" aria-label="Menu openen">
+  <img src="menu-icoon.svg" alt="" aria-hidden="true" />
+</button>
+
+<script>
+  const menuButton = document.querySelector("button");
+  menuButton.addEventListener("click", () => {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", !isOpen);
+    menuButton.setAttribute("aria-label", isOpen ? "Menu openen" : "Menu sluiten");
+  });
+</script>
+```
+
 ### Fout: het tekstalterantief mist zichtbare tekst
 
 Een tekstalternatief van een klickbaar logo bevat niet alle tekst die op het logo is te zien. Daardoor is de link niet goed met spraak te bedienen.
+
+```html
+<!-- Fout -->
+<a href="/">
+  <img src="logo.png" alt="Home" />
+</a>
+
+<!-- Goed -->
+<a href="/">
+  <img src="logo.png" alt="Gemeente Utrecht — Home" />
+</a>
+```
 
 ### Fout: het tekstalternatief beschrijft niet de functie
 
 Een knop met een icoon van een oog heeft als tekstalternatief ‘een oog’ in plaats van ‘toon of verberg wachtwoord’.
 
+```html
+<!-- Fout -->
+<button>
+  <img src="oog-icoon.svg" alt="Een oog" />
+</button>
+
+<!-- Goed -->
+<button>
+  <img src="oog-icoon.svg" alt="Toon wachtwoord" />
+</button>
+```
+
 ### Fout: een interactief element met alleen een afbeelding heeft geen tekstalternatief
 
 Een zoekknop heeft een icoon van een vergrootglas heeft geen tekstalternatief en geen andere toegankelijke naam. Een schermlezer kan de functie van de knop niet voorlezen.
+
+```html
+<!-- Fout -->
+<button>
+  <img src="vergrootglas.svg" alt="" />
+</button>
+
+<!-- Goed -->
+<button aria-label="Zoeken">
+  <img src="vergrootglas.svg" alt="" aria-hidden="true" />
+</button>
+```
 
 ### Fout: een decoratieve afbeelding wordt toch voorgelezen
 
 Bij de nieuwsberichten staan afbeeldingen zonder informatieve waarde. De tekstalternatieven bevatten nietszeggende teksten of herhaalt de kop van het artikel.
 
+```html
+<!-- Fout: alt herhaalt de kop -->
+<article>
+  <img src="nieuwsfoto.jpg" alt="Opening nieuw stadskantoor" />
+  <h2>Opening nieuw stadskantoor</h2>
+  <p>Op 1 maart opent het nieuwe stadskantoor haar deuren.</p>
+</article>
+
+<!-- Goed: decoratieve afbeelding met lege alt -->
+<article>
+  <img src="nieuwsfoto.jpg" alt="" />
+  <h2>Opening nieuw stadskantoor</h2>
+  <p>Op 1 maart opent het nieuwe stadskantoor haar deuren.</p>
+</article>
+```
+
 ## Hoe te testen
 
 Inspecteer in de gegenereerde HTML-code van de webpagina de `<img>`-elementen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
-
-Het `alt`-attribuut bij een `<img>` element moet altijd aanwezig zijn.
-Bij decoratieve afbeeldingen laat je het leeg:
-
-```html
-<img src="stockimg.png" alt="" />
-```
-
-Nog een voorbeeld van een decoratieve afbeelidng:
-
-```html
-<a href="url">
-  Meer informatie over de intocht van Sinterklaas
-  <img src="pijltje-rechts.svg" alt="" />
-</a>
-```
-
-Bij informatieve afbeeldingen beschrijf de informatie:
-
-```html
-<img src="kantoor.png" alt="Ons kantoor" />
-```
-
-Bij functionele afbeeldingen beschrijf de functie:
-
-```html
-<button><img src="vergrootglas.png" alt="Zoeken" /></button>
-```
-
-Niet doen:
-
-```html
-<!-- Foute code, niet gebruiken -->
-<a href="url">
-  <img src="iDEAL.svg" alt="" />
-</a>
-```
 
 ## Gerelateerde NL Design System-richtlijnen
 
