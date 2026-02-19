@@ -1,4 +1,3 @@
-import { useLocation } from '@docusaurus/router';
 import {
   Button,
   ButtonGroup,
@@ -16,6 +15,7 @@ import {
 import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
+import { useIsBrowser } from '../hooks/use-is-browser';
 
 interface NewsletterSignUpProps {
   listId: string;
@@ -92,7 +92,8 @@ export const NewsletterSignUp = ({
   } = useForm<{ [key: string]: string }>();
   const form = useRef(null);
   const IS_ENGLISH = language?.value === '2';
-  const { search } = useLocation();
+  const isBrowser = useIsBrowser();
+  const search = isBrowser ? window.location.search : '';
   const params = new URLSearchParams(search);
   const prefillEmail = params.get('prefillEmail');
   const prefillName = params.get('prefillName');
