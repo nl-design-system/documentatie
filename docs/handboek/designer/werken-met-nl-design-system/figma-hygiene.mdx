@@ -16,7 +16,7 @@ keywords:
 
 # Figma hygiëne
 
-Deze Figma hygiëne beschrijft richtlijnen voor het opzetten, structureren en onderhouden van Figma-bestanden binnen NL Design System.  
+Deze Figma hygiëne beschrijft richtlijnen voor het opzetten, structureren en onderhouden van Figma-bestanden binnen NL Design System.
 
 De richtlijnen zijn bedoeld als uitgangspunt, niet als strikte regels. Door deze hygiëne zoveel mogelijk te volgen, worden componenten, patronen en templates beter uitwisselbaar tussen teams en organisaties, en blijft de Figma omgeving overzichtelijk en voorspelbaar.
 
@@ -77,14 +77,11 @@ Bestand met complete templates, opgebouwd uit componenten uit de 2 Figma bibliot
 
 :::tip[Tip: houd bibliotheken en bestanden overzichtelijk]
 
-Gebruik comments om vragen te stellen of aantekeningen versiebeheer vast te leggen. Houd verder de bibliotheken en template bestanden vrij van schetsen of losse ideeën en plaats verkenningen, kladjes en experimenten in een apart Schetsboek. Zo blijven bestanden overzichtelijk en wordt de werkwijze voorspelbaar voor iedereen.
-
 Gebruik comments voor aantekeningen en vragen. Het voordeel is dat je op elkaar kunt reageren, naar een specifieke comment kunt linken en deze als opgelost kunt markeren. Comments die als opgelost zijn gemarkeerd, kun je altijd eenvoudig terugvinden.
 
+Maak gebruik van [versiebeheer](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history). Op deze manier kun je eerdere versies bekijken of herstellen. Figma slaat automatisch versies op, maar het is aan te raden om af en toe zelf een versie aan te maken en deze een duidelijke naam te geven.
 
-- Versiebeheer
-- Schetsboek
-- Archief
+Plaats schetsen, losse ideeën, kladjes en experimenten op een aparte pagina of in een apart Figma bestand, zoals een 'Schetsboek'.
 
 :::
 
@@ -346,15 +343,40 @@ Omdat de Figma bibliotheken en de documentatie website in ontwikkeling zijn, kan
 
 ### 3.8 Annotaties
 
-Annotatie stickers kunnen in templates worden gebruikt om aanvullende informatie te geven aan developers. Denk aan teksten die visueel verborgen zijn, maar wel in de code aanwezig moeten zijn. 
+Annotatie stickers kunnen in templates worden gebruikt om aanvullende informatie te geven aan developers. Denk aan teksten die visueel verborgen zijn, maar wel in de code aanwezig moeten zijn.
 
-## 4. Templates
+### 3.9 Zelf componenten maken
 
-De volgende punten gelden specifiek voor een template bestand.
+Soms ontbreekt de component die je nodig hebt in de bibliotheken. Ontwikkel deze in dat geval volgens de NL Design System architectuur.
 
-### 4.1 Schrijfwijze
+[Bekijk hoe je als designer een component kunt maken in Figma](/handboek/designer/zelf-componenten-maken/)
 
-#### 4.1.1 Frames
+## 4. Templates en prototypes
+
+De volgende punten gelden voor templates of bestanden waar je prototypes in maakt.
+
+### 4.1 Bestand indeling
+
+De volgende indeling wordt gehanteerd voor bestanden waarin templates en prototypes staan:
+
+```
+Cover
+Read me
+---
+# Sectie A
+Sub-sectie A-1
+Sub-sectie A-2
+Sub-sectie A-3
+---
+# Sectie B
+Sub-sectie B-1
+Sub-sectie B-2
+Sub-sectie B-3
+```
+
+### 4.2 Schrijfwijze
+
+#### 4.2.1 Frames
 
 Voor frames wordt de volgende structuur gehanteerd voor de schrijfwijze: `Viewport_Naam-van-pagina_Aanvulling--state`. 'SV' staat voor 'Small Viewport' en 'LV' staat voor 'Large Viewport'. Bijvoorbeeld:
 
@@ -373,17 +395,11 @@ Door de grote variatie aan devices, resoluties en scherminstellingen is niet vas
 
 :::
 
-:::tip[Tip: ontwerp mobile-first]
+### 4.3 Structuur en positionering
 
-Begin bij het ontwerpen van templates, componenten en patronen vanuit het mobile-first principe. Dit zorgt ervoor dat je direct duidelijke keuzes maakt in volgorde en prioriteit, omdat de ruimte is beperkt.
+#### 4.3.1 Pages
 
-:::
-
-### 4.2 Structuur en positionering
-
-#### 4.2.1 Pages
-
-Per patroon of template wordt er een aparte Page aangemaakt. Denk hierbij aan:
+Per patroon, template of prototype wordt er een aparte 'Page' aangemaakt. Denk hierbij aan:
 
 - Homepage
 - Detailpagina
@@ -391,7 +407,7 @@ Per patroon of template wordt er een aparte Page aangemaakt. Denk hierbij aan:
 - Meerstappenformulier
 - Mijn omgeving
 
-#### 4.2.2 Positionering en witruimte
+#### 4.3.2 Positionering en witruimte
 
 **Buiten sections**
 
@@ -403,16 +419,39 @@ Per patroon of template wordt er een aparte Page aangemaakt. Denk hierbij aan:
 
 - In de section staat de 'Section Heading' gepositioneerd op X:800 en Y:400.
 - De 'Page Title' annotatie staat 80px onder de Section Heading.
-- De template staat 80px onder de Page Title.
-- Tussen de Small Viewport en Large Viewport van één template zit 80px.
-- Tussen verschillende templates zit horizontaal 800px.
+- Het eerste scherm staat 80px onder de Page Title.
+- Tussen de Small Viewport en Large Viewport van één scherm zit 80px.
+- Tussen verschillende schermen zit horizontaal 800px.
 
 :::info[Sections in templates]
 
-Gebruik 'Sections', ook wanneer er slechts 1 template is. Sections zorgen voor een consistente opbouw van de pagina, een opgeruimd overzicht en betere leesbaarheid bij het uitzoomen.
+Gebruik 'Sections', ook wanneer er slechts 1 scherm is. Sections zorgen voor een consistente opbouw van de pagina, een opgeruimd overzicht en betere leesbaarheid bij het uitzoomen.
 
 :::
 
-#### 4.2.3 Annotaties
+### 4.4 Annotaties
 
-Annotatie stickers kunnen in templates worden gebruikt om aanvullende informatie te geven aan developers. Denk aan een voorstel voor de titel van een pagina.
+Annotatie stickers kunnen in schermen worden gebruikt om aanvullende informatie te geven aan developers. Denk aan een voorstel voor de titel van een pagina.
+
+### 4.5 Breedte van frames
+
+:::tip[Tip: ontwerp mobile-first]
+
+Begin bij het ontwerpen van schermen, templates en componenten vanuit het mobile-first principe. Dit zorgt ervoor dat je direct duidelijke keuzes maakt in volgorde en prioriteit, omdat de ruimte is beperkt.
+
+:::
+
+Het kernteam gebruikt de volgende breedte van frames:
+
+- Small Viewport: 360px
+- Large Viewport: 1440px
+
+---
+
+## Help deze documentatie te verbeteren
+
+Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via [Github](https://github.com/nl-design-system/documentatie).
+
+## Vragen
+
+Heb je een vraag? Twijfel niet en [neem contact op met het kernteam](/project/kernteam).
