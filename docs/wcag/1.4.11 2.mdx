@@ -1,0 +1,135 @@
+---
+title: SC 1.4.11 Contrast van niet-tekstuele content - NL Design System
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 1.4.11 Contrast van niet-tekstuele content
+pagination_label: WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content
+description: Wat betekent WCAG 1.4.11 niet-tekst contrast? Lees uitleg, uitzonderingen, veelgemaakte fouten en hoe je contrast test volgens WCAG en NL Design System.
+slug: 1.4.11
+keywords:
+  - WCAG
+  - Niveau AA
+  - waarneembaar
+  - onderscheidbaar
+  - perceivable
+  - distinguishable
+  - non-text contrast
+  - contrast niet-tekstuele elementen
+  - toegankelijkheid webdesign
+---
+
+{/* @license CC0-1.0 */}
+
+import { Markdown } from "@site/src/components/Markdown";
+import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_1.4.11-summary.md";
+
+<WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
+  {"WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content"}
+</WcagHeadingGroup>
+
+## Uitleg
+
+<Summary />
+
+## Uitzonderingen
+
+Als een component van de gebruikersinterface een tekst bevat, dan moet deze tekst voldoen aan (WCAG-succescriterium 1.4.3 Contrast (minimum)) In dat geval hoeft het grafische element zelf niet te voldoen aan de contrasteisen.
+
+Bijvoorbeeld: een knop met een vergrootglasicoon naast het woord “Zoeken”. Omdat deze knop tekst bevat, wordt het contrast van de tekst gemeten. Het icoon is in dit geval decoratief en hoeft niet te voldoen aan succescritierium 1.4.11.
+
+Nog een voorbeeld: een invoerveld met placeholdertekst. Als deze placeholdertekst voldoende contrast heeft (meer dan 4,5:1), hoeft de rand van het invoerveld niet te worden gemeten.
+
+Staat er alleen een grafisch element zonder tekst? Dan moet je het contrast van dit element met de achtergrond worden gemeten. Bijvoorbeeld: een zoekknop met alleen een vergrootglas-icoon. Hier wordt alleen het contrast tussen het icoon en de achtergrond gemeten, niet de rand van de knop. Nog een voorbeeld: een zoekveld zonder placeholdertekst. In dit geval wordt het contrast van de rand van het invoerveld gemeten.
+
+Wanneer het voor een webdeveloper niet mogelijk is om de manier waarop een browser het element toont aan te passen, hoeft dit element niet te worden getest op contrast.
+
+## Veelvoorkomende fouten
+
+Fout: een informatief icoon (bijvoorbeeld een hamburger icoon of een avatar icoon) heeft onvoldoende kleurcontrast met de achtergrond waar het op staat. Let op: de achtergrond en de kleur van het icoon kan veranderen wanneer de lay-out van de pagina verandert.
+
+Fout: een invoerveld heeft onvoldoende contrast met de achtergrond.
+Wanneer er geen placeholdertekst aanwezig is met voldoende contrast, dan is het voor sommige bezoekers niet zichtbaar waar ze gegevens moeten invoeren.
+
+Fout: de actieve link in het menu heeft een onderstreping met onvoldoende contrast en er wordt geen andere methode gebruikt om aan te geven dat het om een actieve link gaat.
+De onderstreping moet duidelijk zichtbaar zijn. Een alternatief is bijvoorbeeld een vetgedrukte tekst kunnen of een icoon naast de link.
+
+Fout: onvoldoende contrastratio van een zelfgemaakte focusindicator.
+Wanneer de standaard browserfocus wordt vervangen door een eigen focusindicator, moet het contrast op alle achtergronden van de website voldoende zijn. De standaard browserfocus hoeft niet te worden getest.
+
+Fout: het contrast tussen de balken of lijnen in een grafiek of gebieden op een kaart is lager dan 3:1.
+Wanneer alleen kleur wordt gebruikt om informatie in een grafiek of een kaart te tonen en het contrast onvoldoende is, is deze informatie niet voor iedereen zichtbaar.
+
+Fout: een screenshot waarin een cirkel is getekend om aandacht te trekken, heeft onvoldoende contrast.
+Veelgebruikte kleuren voor dergelijke cirkels zijn geel of rood. Deze kleuren hebben in veel situaties een contrast dat lager is dan 3:1.
+
+## Hoe te testen
+
+Gebruik een contrast tool.
+
+- Tool om te installeren: [Color Contrast Analyzer](https://vispero.com/color-contrast-checker/)
+- Tool in de browser: [Contrast checker van WebAim](https://webaim.org/resources/contrastchecker/)
+- Inspector in de browser
+
+Bij informatieve iconen wordt het contrast tussen het icoon en de achtergrond beoordeeld. Heeft het icoon een rand? Dan hoeft deze niet te worden getest. Het icoon is in dit geval informatief, niet de rand.
+
+Bij invoervelden zonder placeholdertekst of met placeholdertekst met onvoldoende contrast (lager dan 4,5:1), wordt het contrast van de rand van het invoerveld getest.
+
+Controleer eerst of het element actief is. Een actief element reageert op interactie van een bezoeker. In de HTML hebben de niet-actieve elementen een attribuut ‘disabled’.
+
+### Welke scenario’s moet je testen?
+
+- Verschillende gangbare schermgroottes, inclusief mobiele weergave. Je zoomt in met (Control / Command +)
+- Verschillende oriëntaties: portrait en landscape
+- Een aanwezige dark mode, waarbij ook het kleurcontrast van de componenten wordt getest
+
+### Wat test je niet?
+
+- Het contrast van uitgeschakelde elementen (disabled in de HTML)
+- Het contrast van decoratieve elementen, zoals een scheidingslijn tussen secties
+- Iconen die naast tekst op een knop, link of als een label bij een invoerveld staan en alleen een aanvulling zijn op de tekst
+- De rand van een invoerveld wanneer de tekst in het veld een contrastratio hoger dan 4,5:1 heeft
+- UI-elementen die door de browser zelf worden toegevoegd, zoals een kruisje in een invoerveld van het type “search”
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Stijl: [Kleuren](/richtlijnen/stijl/iconen).
+- Formulieren: [Visueel ontwerp](/richtlijnen/formulieren/visueel-ontwerp).
+- Content: [Afbeeldingen](/richtlijnen/content/afbeeldingen).
+- Content: [Kleurgebruik in tekst](/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst).
+
+## Bronnen en tools
+
+- Een overzicht van goede bronnen en tools voor kleurcontrast staat bij [Richtlijnen NL Design System voor kleuren](/richtlijnen/stijl/kleuren/).
+- [Figma contrast accessibility plugin tools](https://www.figma.com/community/accessibility/contrast).
+- [axe DevTools browser add-on](https://www.deque.com/axe/browser-extensions/).
+- [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/).
+- [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/).
+- [Contrast van kleuren - NL Design System](https://nldesignsystem.nl/contrast/).
+
+## Gebruikersonderzoek
+
+<CTAGebruikersonderzoek />
+
+## W3C referenties
+
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.4.11 Non-text Contrast</span>](https://www.w3.org/TR/WCAG22/#non-text-contrast).
+- Nederlandse vertaling van het WCAG-succescriterium: [1.4.11 Contrast van niet-tekstuele content](https://www.w3.org/Translations/WCAG22-nl/#non-text-contrast).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.11 Non-text Contrast</span>](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.11 Non-text Contrast</span>](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html).
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={3}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Help richtlijn verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>
