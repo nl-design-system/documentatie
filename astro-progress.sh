@@ -6,6 +6,13 @@
 
 # Make sure to run `pnpm run build` first
 
+if [ -z "$1" ]
+  then
+    FILTER="/"
+  else
+    FILTER=$1
+fi
+
 # Directory that holds the sitemap files – change if needed
 SITEMAP_DIR_ASTTRO="./packages/website/dist"
 
@@ -26,18 +33,18 @@ sort $OUTPUT_DOCU > /tmp/null
 
 
 echo "Missing pages:"
-diff -u $OUTPUT_DOCU $OUTPUT_ASTRO | grep '^-https'
+diff -u $OUTPUT_DOCU $OUTPUT_ASTRO | grep '^-https' | grep "${FILTER}"
 
 echo ""
 echo "Extra pages:"
-diff -u $OUTPUT_DOCU $OUTPUT_ASTRO | grep '^+https'
+diff -u $OUTPUT_DOCU $OUTPUT_ASTRO | grep '^+https' | grep "${FILTER}"
 
 echo ""
 echo "Total missing pages:"
-diff -u $OUTPUT_DOCU $OUTPUT_ASTRO | grep '^-https' | wc -l
+diff -u $OUTPUT_DOCU $OUTPUT_ASTRO | grep '^-https' | grep "${FILTER}" | wc -l
 
 echo ""
 echo "Total extra pages:"
-diff -u $OUTPUT_DOCU $OUTPUT_ASTRO | grep '^+https' | wc -l
+diff -u $OUTPUT_DOCU $OUTPUT_ASTRO | grep '^+https' | grep "${FILTER}" | wc -l
 
 rm $OUTPUT_ASTRO $OUTPUT_DOCU
