@@ -30,8 +30,8 @@ Tijdens Developer Open Hour kan iedereen laagdrempelig vragen over development i
 - [ ] Developer Open Hour is aangekondigd op [Code for NL Slack](http://praatmee.codefor.nl/) in #nl-design-system-developers. Deze word gebruikt als thread.
 - [ ] Host notuleert in samenwerking met een kernteamlid in [het "Developer Open Hour Samenvatting - kladblok" Slack Canvas](https://codefornl.slack.com/docs/T68FXPFQV/F0A7F67EXPY) 1) "samenvatting" en 2) "interne notities".
 - [ ] Developer Open Hour huddle heeft plaatsgevonden, in de thread.
-- [ ] Developer Open Hour samenvatting is gedeeld met de community, in de thread. Hier word gebruik gemaakt van de "samenvatting" notulen.
 - [ ] TLDR in issue is geupdate met de samenvatting van deze Developer Open Hour. Hier word gebruik gemaakt van de "samenvatting" notulen.
+- [ ] De link naar de samenvatting in de issue is gedeeld met de community in de thread en verzonden naar het #nl-design-system-developers kanaal.
 - [ ] Interne notities, indien aanwezig, worden geplaatst als comment in [Developer Open Hour in 2026](https://github.com/nl-design-system/kernteam/issues/1822). Hier word gebruik gemaakt van de "interne notities" notulen.
 
 ## Acceptatiecriteria
