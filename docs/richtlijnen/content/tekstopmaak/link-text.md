@@ -37,9 +37,9 @@ Hieronder zie je voorbeelden van wat wel werkt en wat je beter kunt laten.
     {() => (
       <>
           <ul>
-            <li>Meer informatie staat op de pagina <a href="https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/linkteksten/">Rechten van mensen met een beperking</a></li>
-            <li><a href="https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/linkteksten/">Download de rapportage digitale toegankelijkheid 2023 (pdf 400 kB)</a></li>
-            <li>Stuur een mail naar <a href="https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/linkteksten/">test@test.nl</a></li>
+            <li>Meer informatie staat op de pagina <a href="https://example.com/">Rechten van mensen met een beperking</a></li>
+            <li><a href="https://example.com/">Download de rapportage digitale toegankelijkheid 2023 (pdf 400 kB)</a></li>
+            <li>Stuur een mail naar <a href="https://example.com/">test@test.nl</a></li>
           </ul>
       </>
     )}
@@ -51,8 +51,8 @@ Hieronder zie je voorbeelden van wat wel werkt en wat je beter kunt laten.
     {() => (
       <>
           <ul>
-            <li><a href="https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/linkteksten/">Klik hier</a> voor meer informatie over de rechten van mensen met een beperking</li>
-            <li><a href="https://nldesignsystem.nl/richtlijnen/content/tekstopmaak/linkteksten/">Lees meer</a> over  digitale toegankelijkheid</li>
+            <li><a href="https://example.com/">Klik hier</a> voor meer informatie over de rechten van mensen met een beperking</li>
+            <li><a href="https://example.com/">Lees meer</a> over digitale toegankelijkheid</li>
           </ul>
       </>
     )}
