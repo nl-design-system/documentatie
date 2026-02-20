@@ -30,7 +30,7 @@ Heb je een document dat je wil bijdragen, stuur ons dan een linkje naar die gist
 ## Lokaal draaien van de website
 
 We gebruiken `pnpm` om afhankelijkheden te installeren en de website met Docusaurus te draaien. Zorg dat je dat eerst installeert, dat kan bijvoorbeeld met `npm`.
-Als je hier hulp bij nodig hebt kun je ons op [Slack](https://praatmee.codefor.nl) vinden of even een e-mail sturen
+Als je hier hulp bij nodig hebt kun je ons op [Slack](https://nldesignsystem.nl/slack) vinden of even een e-mail sturen naar [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).
 
 1. Zorg dat je de repository op je computer hebt staan door de geforkte documentatie repository te clonen.
 2. Open de Terminal en zorg dat je in het mapje zit waar de clone is belandt

@@ -14,7 +14,7 @@ Eind vorig jaar hebben we samen met de community stilgestaan bij de plannen en w
 
 We kijken er vanuit het kernteam met een grote glimlach op terug! Er zijn namelijk weer meer teams aangesloten en meer mensen enthousiast over het NL Design System.
 
-[Op Slack](https://praatmee.codefor.nl) heeft Yolijn beschreven wat we hebben gedaan met de doelen die we hadden gesteld voor 2022.
+[Op Slack](/slack) heeft Yolijn beschreven wat we hebben gedaan met de doelen die we hadden gesteld voor 2022.
 
 Een aantal hoogtepunten:
 
