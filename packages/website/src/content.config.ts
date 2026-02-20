@@ -10,7 +10,7 @@ const docs = defineCollection({
       'community/**/!(_)(*).{md,mdx}',
       // 'componenten/**/!(_)(*).{md,mdx}',
       'footer/**/!(_)(*).{md,mdx}',
-      // 'handboek/**/!(_)(*).{md,mdx}',
+      'handboek/**/!(_)(*).{md,mdx}',
       'open-source/**/!(_)(*).{md,mdx}',
       'private/**/!(_)(*).{md,mdx}',
       // 'project/**/!(_)(*).{md,mdx}',
@@ -21,7 +21,7 @@ const docs = defineCollection({
     ],
   }),
   schema: z.object({
-    title: z.string(),
+    title: z.string().optional(),
     slug: z.string().optional(),
     unlisted: z.boolean().optional(),
   }),
