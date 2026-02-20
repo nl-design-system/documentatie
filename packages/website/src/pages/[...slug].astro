@@ -5,15 +5,19 @@ import { render } from 'astro:content';
 import Document from '@layouts/document.astro';
 
 export async function getStaticPaths() {
-  const pages = await getCollection('baseline').then(pages =>
+  const docs = await getCollection('docs').then(pages =>
     pages.map(page => ({
       ...page,
-      id: toCleanRoute(page.id).replace('/baseline', '')
+      id: toCleanRoute(page.id)
     }))
   )
 
-  return pages.map((page) => ({
-    params: { path: page.id },
+  return docs
+  .filter(page => {
+  return page.data?.unlisted !== true
+  })
+  .map((page) => ({
+    params: { slug: page.data?.slug || page.id },
     props: { page }
   }))
 }
