@@ -180,9 +180,10 @@
   color: var(--basis-focus-color);
 }
 
-/* HACK: Hackysnacky CSS that should be solved better in the chefs-kiss website */
+/* HACK: Hackysnacky CSS that should be solved better in the chefs-kiss website
+Modified: because it causes problems https://github.com/nl-design-system/documentatie/issues/2298 */
 p {
-  max-inline-size: 80ch;
+  max-inline-size: unset;
 }
 
 .utrecht-heading-1,
