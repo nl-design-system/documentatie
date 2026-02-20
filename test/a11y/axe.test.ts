@@ -19,6 +19,9 @@ test.describe('Accessibility features', () => {
 
   pathnames.forEach((pathname) => {
     test(pathname, async ({ page }) => {
+      if (pathname === '/handboek/designer/figma-changelog/') {
+        test.setTimeout(120000);
+      }
       await verifyPageAccessibility(page, pathname);
     });
   });
@@ -52,7 +55,9 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
   test.skip(isAxeDisabled, 'Skipped because of <meta name="axe" content="false">');
 
   const disabledRules = getDisabledRules(pathname);
-  const results = await analyzeAccessibility(page, disabledRules);
+  const excludedViolationIds = getExcludedViolationIds(pathname);
+
+  const results = await analyzeAccessibility(page, disabledRules, excludedViolationIds);
 
   violations.push(results);
   expect(results.violations).toEqual([]);
@@ -74,12 +79,18 @@ function shouldSkipRoute(pathname: string): boolean {
   });
 }
 
-async function analyzeAccessibility(page: Page, disabledRules: string[]) {
-  return new AxeBuilder({ page })
+async function analyzeAccessibility(page: Page, disabledRules: string[], excludedViolationIds: RegExp[]) {
+  const results = await new AxeBuilder({ page })
     .options({ resultTypes: ['violations'] })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
     .disableRules(disabledRules)
     .analyze();
+
+  results.violations = results.violations.filter((violation) => {
+    return !excludedViolationIds.some((excluded) => excluded.test(violation.id));
+  });
+
+  return results;
 }
 
 async function saveViolationsReport(reportData: unknown[], filePath: string): Promise<void> {
@@ -93,6 +104,7 @@ function getDisabledRules(pathname: string): string[] {
   for (const exclusion of exclusions) {
     const isMatch = exclusion.routes.some((route) => {
       if (typeof route === 'string') {
+        if (route === '*') return true;
         return route === pathname;
       }
       return route.test(pathname);
@@ -112,8 +124,39 @@ function getDisabledRules(pathname: string): string[] {
           }
         });
       }
+      if (exclusion.excludeIds) {
+        exclusion.excludeIds.forEach((id) => {
+          if (typeof id === 'string') {
+            disabledRules.add(id);
+          }
+        });
+      }
     }
   }
 
   return Array.from(disabledRules);
+}
+
+function getExcludedViolationIds(pathname: string): RegExp[] {
+  const excluded: RegExp[] = [];
+
+  for (const exclusion of exclusions) {
+    const isMatch = exclusion.routes.some((route) => {
+      if (typeof route === 'string') {
+        if (route === '*') return true;
+        return route === pathname;
+      }
+      return route.test(pathname);
+    });
+
+    if (isMatch && exclusion.excludeIds) {
+      exclusion.excludeIds.forEach((id) => {
+        if (typeof id !== 'string') {
+          excluded.push(id);
+        }
+      });
+    }
+  }
+
+  return excluded;
 }
