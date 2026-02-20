@@ -34,7 +34,7 @@ Parallel aan de bouwsessies starten we ook met sessies voor het gebruik en de in
 
 Benieuwd naar de [huidige versie](https://designsystem.gebruikercentraal.nl/) van het NL Design System? Kijk op onze website. Laat ons weten wat je ervan vindt. We kunnen je hulp goed gebruiken voor zowel de doorontwikkeling als de UX-sessies!
 
-Je kunt ons ook vinden op Slack. Meld je aan bij onze [Slackgroep ‘NL Design System (praatmee.codefor.nl)’](https://praatmee.codefor.nl/) en blijf op de hoogte van de laatste ontwikkelingen.
+Je kunt ons ook vinden op Slack. Meld je aan bij onze [Slackgroep ‘NL Design System (praatmee.codefor.nl)’](/slack) en blijf op de hoogte van de laatste ontwikkelingen.
 
 ## Links
 

@@ -80,5 +80,5 @@ De doelstelling van NL Design System is om de kwaliteit van online dienstverleni
 
 ## Hoe blijf je op de hoogte?
 
-- Praat mee op de Slack van Code for NL in onze kanalen, zoals bijvoorbeeld `#nl-design-system`. Je kunt jezelf uitnodigen via [praatmee.codefor.nl](https://praatmee.codefor.nl), kijk op [deze pagina](/slack) voor meer informatie over Slack.
-- Elke twee weken presenteren we updates uit de community en voortgang van het kernteam in een publieke on-line Teams meeting: de [NL Design System Heartbeat](/events/heartbeat/overzicht). Dit is de ideale manier om op de hoogte te blijven en gelijk vragen te kunnen stellen. Stuur ons een mailtje of een DM op Slack, dan sturen we je een uitnodiging.
+- Praat mee op de Slack](/slack) in onze kanalen, zoals bijvoorbeeld `#nl-design-system`.
+- Elke twee weken presenteren we updates uit de community en voortgang van het kernteam in een publieke on-line Teams meeting: de [NL Design System Heartbeat](/events/heartbeat/overzicht). Dit is de ideale manier om op de hoogte te blijven en gelijk vragen te kunnen stellen. Op deze pagina lees je instructies voor hoe je jezelf kunt aanmelden.

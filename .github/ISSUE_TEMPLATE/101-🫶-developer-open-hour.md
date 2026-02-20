@@ -27,7 +27,7 @@ Tijdens Developer Open Hour kan iedereen laagdrempelig vragen over development i
 <!-- De actiepunten vormen een handig lijstje voor de verantwoordelijke om aan de acceptatiecriteria te kunnen voldoen. Dit lijstje kan per persoon verschillen, terwijl de acceptatiecriteria voor iedereen gelijk blijven. -->
 
 - [ ] Community in de gaten voor onderwerpen.
-- [ ] Developer Open Hour is aangekondigd op [Code for NL Slack](http://praatmee.codefor.nl/) in #nl-design-system-developers. Deze word gebruikt als thread.
+- [ ] Developer Open Hour is aangekondigd op [Slack](/slack) in [#nl-design-system-developers](https://codefornl.slack.com/archives/C01DAT4TRPF). Het aankondigingsbericht word gebruikt als thread.
 - [ ] Host regelt dat een kernteamlid deel kan nemen aan de Developer Open Hour om het gezellig te houden.
 - [ ] Host notuleert in samenwerking met dit kernteamlid in [het "Developer Open Hour Samenvatting - kladblok" Slack Canvas](https://codefornl.slack.com/docs/T68FXPFQV/F0A7F67EXPY) 1) "samenvatting" en 2) "interne notities".
 - [ ] Developer Open Hour huddle heeft plaatsgevonden, in de thread.

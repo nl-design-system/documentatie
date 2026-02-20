@@ -107,7 +107,7 @@ Afgelopen jaar hebben zijn er honderden ‘pull requests’ voorbij gekomen zijn
 
 ## Vragen of suggesties?
 
-Wil je meer informatie over het NL Design System of graag meedoen? Of heb je ideeën voor volgend jaar? Neem contact met ons op via ons [Slackkanaal](https://praatmee.codefor.nl).
+Wil je meer informatie over het NL Design System of graag meedoen? Of heb je ideeën voor volgend jaar? Neem contact met ons op via [Slack](/slack).
 
 Fijne feestdagen!
 Dan rest ons niets dan je hele fijne feestdagen te wensen. We kijken uit naar samenwerking in 2022!

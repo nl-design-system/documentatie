@@ -36,4 +36,4 @@ Tom vertelt dat de ambitie er is om NL Design System, Open Webconcept én WordPr
 
 Ben je benieuwd naar de gehele presentatie mét demo die Tom onlangs gaf tijdens de Heartbeat van het NL Design System? Kijk de [opname](https://www.youtube.com/watch?v=-obWqUeocYM&t=531s) dan terug via ons YouTube-kanaal. Tip: abonneer je om op de hoogte te blijven van alle updates vanuit het NL Design System!
 
-De community van het NL Design System is op zoek naar organisaties die hierover willen meedenken. Vind jij het leuk om jouw feedback te geven? [Maak een issue aan](https://github.com/nl-design-system/nlds-community-blocks/issues) op GitHub, of stel je vraag in het #nl-design-system-developers kanaal in de Code for NL Slack.
+De community van het NL Design System is op zoek naar organisaties die hierover willen meedenken. Vind jij het leuk om jouw feedback te geven? [Maak een issue aan](https://github.com/nl-design-system/nlds-community-blocks/issues) op GitHub, of stel je vraag in het [#nl-design-system-developers](https://codefornl.slack.com/archives/C01DAT4TRPF) kanaal op [Slack](/slack).
