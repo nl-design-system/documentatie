@@ -1,0 +1,89 @@
+---
+title: Migreer van een CDN naar pnpm
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Migreer van een CDN naar pnpm
+pagination_label: Migreer van een CDN naar pnpm
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Migreer van een CDN naar pnpm
+
+<Paragraph lead>
+  De dependencies op de aanbevolen manier installeren via pnpm is één van de eerste stappen wanneer je het prototype gaat doorontwikkelen.
+
+</Paragraph>
+
+Vind alle plekken waar de [CDN in je prototype](./cdn.mdx) wordt gebruikt. Een handige manier is om te kijken welke andere servers voorkomen in de Network tab van de Developer Tools, wanneer je het prototype bekijkt in de browser. Je kunt ook in de code zoeken naar de URL van de CDN, wanneer je die weet.
+
+De aanpassingen van de code van je prototype die nodig zijn, zijn heel erg afhankelijk van welke build tools je gaat gebruiken. De volgende voorbeelden laten zien hoe je naar [Vite](https://vite.dev) kan migreren.
+
+### Dependencies installeren
+
+Vind alle npm packages die in de code van je prototype worden genoemd om vanaf een CDN te laden. In de Network tab van de Developer Tools staan vaak meer npm pacakges dan nodig zijn voor deze stap, omdat je indirecte dependencies niet zelf moet installeren, dus beperk je tot de npm packages in de code.
+
+Installeer elke npm dependency met `pnpm add`, en noem hetzelfde versienummer als die bekend is. Bijvoorbeeld, wanneer de volgende code in je prototype staat:
+
+```html
+<script
+  src="https://unpkg.com/@utrecht/web-component-library-stencil@4.1.0/dist/utrecht/utrecht.esm.js"
+  type="module"
+></script>
+```
+
+Dan installeer je de dependency zo via pnpm, met hetzelfde versienummer:
+
+```shell
+pnpm add @utrecht/web-component-library-stencil@4.1.0
+```
+
+Wanneer er geen versienummer bekend is, dan kun je de laatste versie installeren:
+
+```shell
+pnpm add @utrecht/web-component-library-stencil
+```
+
+Wanneer het prototype geen versienummer noemt, dan kan het zijn dat het prototype niet meer werkt met de laatste versie van de dependency. Probeer dan de versie van de dependency te vinden die wel werkt, door uit te zoeken wanneer het prototype gemaakt is en welke versie toen de laatste versie was.
+
+### Web Fonts installeren
+
+De meeste open source lettertypes kun je vinden via Fontsource. Bijvoorbeeld: [Roboto van Google Fonts](https://fonts.google.com/specimen/Roboto) kun je vervangen door [de npm package voor Roboto van Fontsource](https://fontsource.org/fonts/roboto/install).
+
+```shell
+pnpm add @fontsource-variable/roboto
+```
+
+### CSS en Web Fonts migreren
+
+De CSS en Web Fonts worden meestal vanaf de CDN ingeladen met een `<link>` element.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@fontsource/roboto/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/button-css@1.1.0/dist/button.css" />
+```
+
+De CSS wordt in Vite ingeladen vanuit JavaScript in plaats van via HTML, omdat daar de verwijzingen naar npm packages werken:
+
+```html
+<script>
+  import "@fontsource/roboto/index.css";
+  import "@nl-design-system-candidate/button-css/button.css";
+</script>
+```
+
+### JavaScript migreren
+
+Uit bestaande imports in code moeten de URL van de CDN en het versienummer verwijderd worden. Het versienummer is al vastgelegd door `pnpm add`.
+
+Bijvoorbeeld, deze code die een CDN gebruikt:
+
+```js
+import { Button } from "https://unpkg.com/@nl-design-system-candidate/button-react@1.1.0";
+```
+
+De aangepaste code zonder CDN en versienummer:
+
+```js
+import { Button } from "@nl-design-system-candidate/button-react";
+```
