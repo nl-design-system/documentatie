@@ -1,25 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
-import { toCleanRoute } from '@utils/to-clean-route';
 import { render } from 'astro:content';
 import Document from '@layouts/document.astro';
 
 export async function getStaticPaths() {
-  const docs = await getCollection('docs').then(pages =>
-    pages.map(page => ({
-      ...page,
-      id: toCleanRoute(page.id)
-    }))
-  )
+  const docs = await getCollection('docs')
 
   return docs
-  .filter(page => {
-  return page.data?.unlisted !== true
-  })
-  .map((page) => ({
-    params: { slug: page.data?.slug || page.id },
-    props: { page }
-  }))
+    .filter(page => page.data?.unlisted !== true)
+    .map((page) => ({
+      params: { slug: page.id },
+      props: { page }
+    }))
 }
 
 const { page } = Astro.props;
