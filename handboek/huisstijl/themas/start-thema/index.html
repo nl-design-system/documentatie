@@ -40,8 +40,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.d61daaeb.css" />
-  <script src="/assets/js/runtime~main.2b4cfa4b.js" defer="defer"></script>
-  <script src="/assets/js/main.452856ad.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.a0758d0e.js" defer="defer"></script>
+  <script src="/assets/js/main.1b0e92df.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -313,9 +313,6 @@
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_voorbeeld-b.png" alt="De afbeelding toont 2 voorbeelden. Links worden basis-tokens &#x27;accent-2&#x27; en &#x27;accent-3&#x27; gevuld door &#x27;accent-1&#x27;. Rechts hebben basis-tokens &#x27;accent-1&#x27;, &#x27;accent-2&#x27; en &#x27;accent-3&#x27; verschillende kleuren." class="utrecht-img" /></p>
               <h4 id="speciale-groepen" class="utrecht-heading-4">Speciale groepen</h4>
               <p>Binnen de basis-tokens zijn enkele speciale groepen aangewezen. Deze hebben extra aandacht gekregen omdat hiervoor specifieke richtlijnen zijn of omdat wijzigingen hierin snel grote invloed hebben op de huisstijl.</p>
-              <p><code class="utrecht-code">basis.heading.*</code> : Stijl van alle koppen.</p>
-              <p><code class="utrecht-code">basis.form-control.*</code> : Stijl van alle formulier-elementen zoals Text Input en Text Area. Maar ook Checkbox en Radio Button.</p>
-              <p><code class="utrecht-code">basis.focus.*</code> : Stijl van de focus state.</p>
               <div class="theme-admonition theme-admonition-tip admonition_raOx alert alert--success">
                <div class="admonitionHeading_LcOG">
                 <span class="admonitionIcon_RjEs"
@@ -336,6 +333,12 @@
                 <p>De naamgeving van deze speciale groepen wijkt bewust af van de algemene structuur. Ze sluiten aan op de naamgeving van de <a href="/handboek/huisstijl/design-tokens/#component-tokens" class="utrecht-link utrecht-link--html-a">Component tokens</a>, zodat ze beter herkenbaar zijn.</p>
                </div>
               </div>
+              <h5 id="basisheading" class="utrecht-heading-5"><code class="utrecht-code">basis.heading.*</code></h5>
+              <p>Stijl van alle koppen.</p>
+              <h5 id="basisform-control" class="utrecht-heading-5"><code class="utrecht-code">basis.form-control.*</code></h5>
+              <p>Stijl van alle formulier-elementen zoals Text Input en Text Area. Maar ook Checkbox en Radio Button.</p>
+              <h5 id="basisfocus" class="utrecht-heading-5"><code class="utrecht-code">basis.focus.*</code></h5>
+              <p>Stijl van de focus state.</p>
               <h3 id="basis-tokens-voor-typografie" class="utrecht-heading-3">Basis-tokens voor typografie</h3>
               <p>Voor typografie zijn er basis-tokens beschikbaar voor het instellen van:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
@@ -345,13 +348,15 @@
                <li>Regelhoogte (<code class="utrecht-code">line-height</code>)</li>
               </ul>
               <h4 id="lettertype" class="utrecht-heading-4">Lettertype</h4>
+              <p>Er zijn twee basis-tokens beschikbaar voor lettertype: het standaard-lettertype en een lettertype waarmee code goed leesbaar is.</p>
               <p><code class="utrecht-code">basis.text.font-family.default</code> : Standaard lettertype voor tekst.</p>
               <p><code class="utrecht-code">basis.text.font-family.monospace</code> : Voor tekst die als code wordt weergegeven.</p>
               <h4 id="lettergewicht" class="utrecht-heading-4">Lettergewicht</h4>
+              <p>Er zijn twee basis-tokens beschikbaar om lettergewicht te bepalen: het standaard gewicht en een gewicht om tekst vetgedrukt te maken.</p>
               <p><code class="utrecht-code">basis.text.font-weight.default</code> : Standaard gewicht voor reguliere tekst.</p>
               <p><code class="utrecht-code">basis.text.font-weight.bold</code> : Gewicht voor vetgedrukte tekst.</p>
               <h4 id="lettergrootte" class="utrecht-heading-4">Lettergrootte</h4>
-              <p>Er zijn zeven basis-tokens beschikbaar om lettergrootte te bepalen:</p>
+              <p>Er zijn zeven basis-tokens beschikbaar om lettergrootte te bepalen.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">basis.text.font-size.sm</code></li>
                <li><code class="utrecht-code">basis.text.font-size.md</code></li>
@@ -363,7 +368,7 @@
               </ul>
               <p>De waarden van deze tokens zijn in <code class="utrecht-code">rem</code> genoteerd zodat tekst automatisch schaalt als men behoefte heeft aan grotere of kleinere letters.</p>
               <h4 id="regelhoogte" class="utrecht-heading-4">Regelhoogte</h4>
-              <p>Voor elke lettergrootte is er een corresponderende basis-token voor regelhoogte beschikbaar:</p>
+              <p>Voor elke lettergrootte is er een corresponderende basis-token voor regelhoogte beschikbaar.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">basis.text.line-height.sm</code></li>
                <li><code class="utrecht-code">basis.text.line-height.md</code></li>
@@ -417,40 +422,56 @@
               </ul>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-as-1.png" alt="De afbeelding toont as 1, enkele termen verticaal uitgelijnd. Horizontaal zijn de termen van as 2 niet goed zichtbaar." class="utrecht-img" /></p>
               <h5 id="default" class="utrecht-heading-5">Default</h5>
-              <p>Gebruik <code class="utrecht-code">default</code> als je kleuren inzet voor structuur, bijvoorbeeld bij componenten zoals <a href="/paragraph/" class="utrecht-link utrecht-link--html-a">Paragraph</a>, <a href="/heading/" class="utrecht-link utrecht-link--html-a">Heading</a> of <a href="/table/" class="utrecht-link utrecht-link--html-a">Table</a>.</p>
+              <p>Gebruik <code class="utrecht-code">default</code> als je kleuren inzet voor structuur.</p>
+              <p>Bijvoorbeeld bij componenten zoals <a href="/paragraph/" class="utrecht-link utrecht-link--html-a">Paragraph</a>, <a href="/heading/" class="utrecht-link utrecht-link--html-a">Heading</a> of <a href="/table/" class="utrecht-link utrecht-link--html-a">Table</a>.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-default.png" alt="De afbeelding toont de componenten Heading, Paragraph, Divider en Tabel allen met eenvoudige grijze tot donkergrijze kleuren." class="utrecht-img" /></p>
               <h5 id="accent-1-accent-2-en-accent-3" class="utrecht-heading-5">Accent-1, accent-2 en accent-3</h5>
               <p>Gebruik <code class="utrecht-code">accent</code> als je vanuit de huisstijl kleur wilt inzetten. Bijvoorbeeld bij componenten zoals <a href="/page-header/" class="utrecht-link utrecht-link--html-a">Page Header</a> of <a href="/page-footer/" class="utrecht-link utrecht-link--html-a">Page Footer</a>. Standaard verwijzen <code class="utrecht-code">accent-2</code> en <code class="utrecht-code">accent-3</code> naar <code class="utrecht-code">accent-1</code>.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-accent-start.png" alt="De afbeelding toont de componenten Page Header en Page Footer op basis van een blauwe kleur." class="utrecht-img" /></p>
               <p>Heeft jouw organisatie meerdere huisstijlkleuren? Dan kun je <code class="utrecht-code">accent-2</code> en <code class="utrecht-code">accent-3</code> los van elkaar instellen.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-accent-alt.png" alt="De afbeelding toont de componenten Page Header en Page Footer op basis van een violet kleur." class="utrecht-img" /></p>
+              <h6 id="accent-1" class="utrecht-heading-6"><code class="utrecht-code">accent-1</code></h6>
+              <p>De meest belangrijke huisstijlkleur van de organisatie.</p>
+              <h6 id="accent-2" class="utrecht-heading-6"><code class="utrecht-code">accent-2</code></h6>
+              <p>De tweede huisstijlkleur als de organisatie deze heeft.</p>
+              <h6 id="accent-3" class="utrecht-heading-6"><code class="utrecht-code">accent-3</code></h6>
+              <p>De derde huisstijlkleur als de organisatie deze heeft.</p>
               <h5 id="action-1-en-action-2" class="utrecht-heading-5">Action-1 en action-2</h5>
-              <p>Gebruik <code class="utrecht-code">action</code> om kleuren toe te wijzen aan interactieve elementen. Bijvoorbeeld bij componenten zoals <a href="/button/" class="utrecht-link utrecht-link--html-a">Button</a>, <a href="/link/" class="utrecht-link utrecht-link--html-a">Link</a>, <a href="/breadcrumb-navigation/" class="utrecht-link utrecht-link--html-a">Breadcrumb Navigation</a> of <a href="/page-number-navigation/" class="utrecht-link utrecht-link--html-a">Page Number Navigation</a>.</p>
+              <p>Gebruik <code class="utrecht-code">action</code> om kleuren toe te wijzen aan interactieve elementen.</p>
+              <p>Bijvoorbeeld bij componenten zoals <a href="/button/" class="utrecht-link utrecht-link--html-a">Button</a>, <a href="/link/" class="utrecht-link utrecht-link--html-a">Link</a>, <a href="/breadcrumb-navigation/" class="utrecht-link utrecht-link--html-a">Breadcrumb Navigation</a> of <a href="/page-number-navigation/" class="utrecht-link utrecht-link--html-a">Page Number Navigation</a>.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li><code class="utrecht-code">action-1</code> is standaard bedoeld voor knoppen.</li>
-               <li><code class="utrecht-code">action-2</code> verwijst standaard naar <code class="utrecht-code">action-1</code> en wordt gebruikt voor andere interactieve componenten.</li>
+               <li>
+                <p><code class="utrecht-code">action-1</code> is standaard bedoeld voor knoppen.</p>
+               </li>
+               <li>
+                <p><code class="utrecht-code">action-2</code> verwijst standaard naar <code class="utrecht-code">action-1</code> en wordt gebruikt voor andere interactieve componenten.</p>
+               </li>
               </ul>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-action-start.png" alt="De afbeelding toont de componenten Button, Link, Breadcrumb Navigation en Page Number Navigation op basis van een blauwe kleur." class="utrecht-img" /></p>
               <p>Gebruik je meerdere interactiekleuren? Dan kun je <code class="utrecht-code">action-2</code> apart instellen.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-action-voorbeeld.png" alt="De afbeelding toont de componenten Button, Link, Breadcrumb Navigation en Page Number Navigation. De knoppen zijn groen. Alle andere interactieve componenten zijn blauw." class="utrecht-img" /></p>
               <h5 id="disabled" class="utrecht-heading-5">Disabled</h5>
-              <p>Gebruik <code class="utrecht-code">disabled</code> om inactieve elementen visueel aan te duiden. Bijvoorbeeld bij componenten zoals <a href="/breadcrumb-navigation/" class="utrecht-link utrecht-link--html-a">Breadcrumb Navigation</a>, <a href="/page-number-navigation/" class="utrecht-link utrecht-link--html-a">Page Number Navigation</a> en <a href="/progress-list/" class="utrecht-link utrecht-link--html-a">Progress List</a>. Voor elementen die disabled zijn, worden vaak lichtere kleuren gebruikt. Let erop dat de tekst- en achtergrondkleur nog wel <a href="/wcag/1.4.3/" class="utrecht-link utrecht-link--html-a">genoeg contrast</a> hebben.</p>
+              <p>Gebruik <code class="utrecht-code">disabled</code> om inactieve elementen visueel aan te duiden.</p>
+              <p>Bijvoorbeeld bij componenten zoals <a href="/breadcrumb-navigation/" class="utrecht-link utrecht-link--html-a">Breadcrumb Navigation</a>, <a href="/page-number-navigation/" class="utrecht-link utrecht-link--html-a">Page Number Navigation</a> en <a href="/progress-list/" class="utrecht-link utrecht-link--html-a">Progress List</a>. Voor elementen die disabled zijn, worden vaak lichtere kleuren gebruikt. Let erop dat de tekst- en achtergrondkleur nog wel <a href="/wcag/1.4.3/" class="utrecht-link utrecht-link--html-a">genoeg contrast</a> hebben.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-disabled.png" alt="De afbeelding toont de componenten Breadcrumb Navigation, Page Number Navigation en Progress List met grijze kleuren." class="utrecht-img" /></p>
-              <h5 id="info-negative-warning-positive" class="utrecht-heading-5">Info, Negative, Warning, Positive</h5>
-              <p>Gebruik deze basis-tokens voor signalen of feedback:</p>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li><code class="utrecht-code">info</code>: Informatief signaal of neutraal.</li>
-               <li><code class="utrecht-code">negative</code>: Negatief signaal, foutmelding of kritieke situatie.</li>
-               <li><code class="utrecht-code">warning</code>: Waarschuwend signaal of risico.</li>
-               <li><code class="utrecht-code">positive</code>: Positief signaal, bevestiging of geslaagde actie.</li>
-              </ul>
+              <h5 id="signaalkleuren" class="utrecht-heading-5">Signaalkleuren</h5>
+              <p>Gebruik deze basis-tokens voor signalen of feedback.</p>
               <p>Denk hierbij aan componenten zoals <a href="/alert/" class="utrecht-link utrecht-link--html-a">Alert</a>, <a href="/progress-list/" class="utrecht-link utrecht-link--html-a">Progress List</a> of <a href="/status-badge/" class="utrecht-link utrecht-link--html-a">Status Badge</a>.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-signal.png" alt="De afbeelding toont de componenten Alert, Progress List en Status Badge met rode, groene, oranje en blauwe signaalkleuren." class="utrecht-img" /></p>
-              <h5 id="highlight--selected" class="utrecht-heading-5">Highlight &amp; Selected</h5>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li><code class="utrecht-code">highlight</code>: Gebruik dit om iets te markeren of uit te lichten, bijvoorbeeld met de <a href="/mark/" class="utrecht-link utrecht-link--html-a">Mark</a> component.</li>
-               <li><code class="utrecht-code">selected</code>: Gebruik dit voor actieve selecties, bijvoorbeeld in een Combobox of Table.</li>
-              </ul>
+              <h6 id="info" class="utrecht-heading-6">Info</h6>
+              <p>Kleuren voor een informatief of neutraal signaal.</p>
+              <h6 id="warning" class="utrecht-heading-6">Warning</h6>
+              <p>Kleuren voor een waarschuwend signaal of risico.</p>
+              <h6 id="negative" class="utrecht-heading-6">Negative</h6>
+              <p>Kleuren voor een negatief signaal, foutmelding of kritieke situatie.</p>
+              <h6 id="positive" class="utrecht-heading-6">Positive</h6>
+              <p>Kleuren voor een positief signaal, bevestiging of geslaagde actie.</p>
+              <h5 id="highlight" class="utrecht-heading-5">Highlight</h5>
+              <p>Kleuren om iets te markeren of uit te lichten.</p>
+              <p>Bijvoorbeeld met de <a href="/mark/" class="utrecht-link utrecht-link--html-a">Mark</a> component.</p>
+              <h5 id="selected" class="utrecht-heading-5">Selected</h5>
+              <p>Kleuren voor actieve selecties.</p>
+              <p>Bijvoorbeeld in een Combobox of <a href="/table/" class="utrecht-link utrecht-link--html-a">Table</a>.</p>
               <h4 id="as-2-toepassing" class="utrecht-heading-4">As 2: Toepassing</h4>
               <p>Naast het doel gebruik je kleuren ook afhankelijk van de toepassing. Denk aan:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
@@ -513,7 +534,7 @@
               <h5 id="color-default" class="utrecht-heading-5"><code class="utrecht-code">color-default</code></h5>
               <p>Standaard tekstkleur. Moet een contrastverhouding van 4.5:1 of meer hebben met <code class="utrecht-code">bg-default</code>.</p>
               <h5 id="color-hover" class="utrecht-heading-5"><code class="utrecht-code">color-hover</code></h5>
-              <p>Tekstkleur bij &#x27;hover&#x27; status. Moet een contrastverhouding van 4.5:1 of meer hebben met <code class="utrecht-code">bg-hover</code>.</p>
+              <p>Tekstkleur bij &#x27;hover&#x27; status. Moet een contrastverhouding van 4.5:1 of meer hebben met bg-hover.</p>
               <h5 id="color-active" class="utrecht-heading-5"><code class="utrecht-code">color-active</code></h5>
               <p>Tekstkleur bij &#x27;active&#x27; of &#x27;selected&#x27; status. Moet een contrastverhouding van 4.5:1 of meer hebben met <code class="utrecht-code">bg-active</code>.</p>
               <h5 id="color-subtle" class="utrecht-heading-5"><code class="utrecht-code">color-subtle</code></h5>
@@ -602,6 +623,16 @@
                <li><code class="utrecht-code">basis.space.row.lg</code></li>
                <li>etcetera</li>
               </ul>
+              <h4 id="basisspaceblock" class="utrecht-heading-4"><code class="utrecht-code">basis.space.block</code></h4>
+              <p>De ruimte binnen componenten, boven of onder tekst.</p>
+              <h4 id="basisspaceinline" class="utrecht-heading-4"><code class="utrecht-code">basis.space.inline</code></h4>
+              <p>De ruimte binnen componenten, voor of na tekst.</p>
+              <h4 id="basisspacerow" class="utrecht-heading-4"><code class="utrecht-code">basis.space.row</code></h4>
+              <p>De verticale ruimte tussen componenten.</p>
+              <h4 id="basisspacecolumn" class="utrecht-heading-4"><code class="utrecht-code">basis.space.column</code></h4>
+              <p>De horizontale ruimte tussen componenten.</p>
+              <h4 id="basisspacetext" class="utrecht-heading-4"><code class="utrecht-code">basis.space.text</code></h4>
+              <p>De ruimte binnen componenten, tussen tekst en iconen.</p>
               <div class="theme-admonition theme-admonition-tip admonition_raOx alert alert--success">
                <div class="admonitionHeading_LcOG">
                 <span class="admonitionIcon_RjEs"
@@ -656,7 +687,7 @@
                <div class="admonitionContent_HpCY"><p>De minimale afmeting die WCAG voorschrijft is 24×24 CSS-pixels, maar als best practice wordt een afmeting van 44×44 pixels aangeraden. Voor het Start-thema gaan we nog een stapje verder en gebruiken we een waarde van 48px.</p></div>
               </div>
               <h3 id="basis-tokens-voor-afgeronde-hoeken" class="utrecht-heading-3">Basis-tokens voor afgeronde hoeken</h3>
-              <p>Voor afgeronde hoeken (<code class="utrecht-code">border-radius</code>) zijn de volgende basis-tokens beschikbaar:</p>
+              <p>Voor afgeronde hoeken zijn 4 basis-tokens beschikbaar.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">basis.border-radius.sm</code></li>
                <li><code class="utrecht-code">basis.border-radius.md</code></li>
@@ -664,14 +695,14 @@
                <li><code class="utrecht-code">basis.border-radius.round</code></li>
               </ul>
               <h3 id="basis-tokens-voor-kader--of-lijndikte" class="utrecht-heading-3">Basis-tokens voor kader- of lijndikte</h3>
-              <p>Voor kader- of lijndikte (<code class="utrecht-code">border-width</code>) zijn de volgende basis-tokens beschikbaar:</p>
+              <p>Voor kader- of lijndikte zijn 3 basis-tokens beschikbaar.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">basis.border-width.sm</code></li>
                <li><code class="utrecht-code">basis.border-width.md</code></li>
                <li><code class="utrecht-code">basis.border-width.lg</code></li>
               </ul>
               <h3 id="basis-tokens-voor-schaduw" class="utrecht-heading-3">Basis-tokens voor schaduw</h3>
-              <p>Voor schaduw (<code class="utrecht-code">box-shadow</code>) zijn de volgende basis-tokens beschikbaar:</p>
+              <p>Voor schaduw van componenten zijn 3 basis-tokens beschikbaar: voor kleine, gemiddelde en grote schaduw.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">basis.box-shadow.sm</code></li>
                <li><code class="utrecht-code">basis.box-shadow.md</code></li>
