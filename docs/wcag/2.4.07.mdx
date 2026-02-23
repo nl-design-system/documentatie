@@ -8,12 +8,15 @@ description: Zorg dat het goed zichtbaar is welk element de toetsenbordfocus hee
 slug: 2.4.7
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - bedienbaar
   - navigeerbaar
   - operable
   - navigable
   - focus visible
+  - focus zichtbaarheid
+  - focus toegankelijk
+  - focus WCAG
 ---
 
 {/* @license CC0-1.0 */}
@@ -34,6 +37,187 @@ import Summary from "./summaries/_2.4.7-summary.md";
 
 <Summary />
 
+Dit is essentieel voor iedereen die het toetsenbord gebruikt om te navigeren: mensen met een motorische beperking, mensen die een screenreader gebruiken in combinatie met een beeldscherm, en mensen die simpelweg de voorkeur geven aan toetsenbordnavigatie. Ook voor mensen met cognitieve beperkingen is het belangrijk om te kunnen zien waar de focus zich bevindt.
+
+Het gaat om de focusindicator die verschijnt wanneer je met een toetsenbord navigeert, niet bij de focus die door een script is gestuurd, bijvoorbeeld door een element dat focus kreeg na het klikken op een skiplink.
+Browsers geven standaard een focusindicator weer — vaak een blauwe, gele of zwarte omlijning. Dit SC vereist niet dat je een eigen indicator ontwerpt, maar wel dat je de indicator niet verwijdert of onzichtbaar maakt. Als je de standaard vervangt door een eigen stijl, moet die minstens even goed zichtbaar zijn. In WCAG 2.2 is een nieuw succescriterium bijgekomen, [SC 2.4.11](https://nldesignsystem.nl/wcag/2.4.11/), dat ook over focuszichtbaarheid gaat.
+
+Wat is een zichtbare focus?
+
+- een knipperend verticaal streepje in een invoerveld
+- een focusrand om een invoerveld. Het hoeft niet aan vier kanten te zijn
+- de achtergrond van het element verandert
+- een icoon is toegevoegd
+- een dikke border onder een element
+- tekst wordt vetgedrukt of onderstreept
+
+## Veelgemaakte fouten
+
+Voor alle onderstaande voorbeelden geldt: als je `outline` een eigen kleur geeft, moet je deze kleur met ALLE kleuren testen die als achtergrond op je website worden gebruikt. Het contrast tussen de kleur van de outline en de achtergrond moet minimaal 3:1 zijn om goed zichtbaar te zijn.
+
+### Fout: outline verwijderen zonder alternatief
+
+De meest voorkomende en schadelijkste fout. Sommige designers vinden de standaard focus-outline lelijk en verwijderen die globaal met CSS. Hierdoor is voor toetsenbordgebruikers niet meer te zien welk element de focus heeft.
+
+```css
+/* Fout: alle focus-outlines verwijderd */
+*:focus {
+  outline: none;
+}
+
+/* Goed: outline alleen verwijderen als je een duidelijk alternatief biedt */
+*:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+```
+
+Let op het verschil: `:focus-visible` toont de indicator alleen wanneer de browser detecteert dat de gebruiker via het toetsenbord navigeert. Zo voorkom je de outline bij muisklikken maar behoud je hem voor toetsenbordgebruikers.
+
+### Fout: focusindicator die opgaat in de achtergrond
+
+Een focusindicator die er technisch gezien is, maar die dezelfde kleur heeft als de achtergrond of te subtiel is om op te merken, voldoet niet. De indicator moet zichtbaar genoeg zijn om op te vallen.
+
+```css
+/* Fout: lichtgrijze outline op witte achtergrond */
+button:focus-visible {
+  outline: 1px solid #e0e0e0;
+}
+
+/* Goed: contrastrijke outline */
+button:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+```
+
+### Fout: achtergrondkleur of afbeelding die de outline bedekt
+
+Als een element een achtergrondkleur heeft die even groot is als het element zelf, of als `outline-offset` op een negatieve waarde staat, kan de focusindicator verborgen raken achter het element of de achtergrond.
+
+```css
+/* Fout: negatieve offset duwt de outline onder het element */
+a:focus-visible {
+  outline: 2px solid black;
+  outline-offset: -4px;
+  background-color: black;
+  color: white;
+}
+
+/* Goed: positieve offset houdt de outline zichtbaar */
+a:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+```
+
+### Fout: overflow hidden op een parent-element dat de outline afsnijdt
+
+Als een parent-element `overflow: hidden` heeft, kan de focusindicator van een child-element worden afgesneden en onzichtbaar worden. Dit is een subtiele fout die vaak over het hoofd wordt gezien.
+
+```css
+/* Fout: overflow hidden snijdt focus-outline af */
+.kaart {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Goed: overflow visible of voldoende padding */
+.kaart {
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 4px; /* ruimte voor de outline */
+}
+
+/* Of: outline vervangen door een inset box-shadow */
+.kaart a:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #0066cc;
+}
+```
+
+### Fout: focusindicator verwijderd via JavaScript
+
+Scripts die focus actief verwijderen van elementen (blur aanroepen) of de outline dynamisch uitzetten, maken het onmogelijk om de focus te volgen.
+
+```javascript
+// Fout: focus weghalen zodra een element het ontvangt
+element.addEventListener("focus", function () {
+  this.blur();
+});
+
+// Fout: outline dynamisch verwijderen
+element.addEventListener("focus", function () {
+  this.style.outline = "none";
+});
+```
+
+Er is geen reden om focus programmatisch te verwijderen van een interactief element. Verwijder dit soort code.
+
+### Fout: custom component zonder focusstijl
+
+Bij het bouwen van custom componenten — tabs, accordions, dropdowns — wordt de focusstijl vaak vergeten. De standaard browseroutline wordt soms onbedoeld overschreven door de CSS van het component zonder dat er een alternatief voor terugkomt.
+
+```css
+/* Fout: component-CSS die de outline onbedoeld overschrijft */
+.tab {
+  border: none;
+  outline: none; /* verwijderd om het ontwerp "schoon" te houden */
+  background: transparent;
+  padding: 8px 16px;
+}
+
+/* Goed: eigen focusstijl die past bij het ontwerp */
+.tab {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+}
+
+.tab:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+```
+
+### Fout: alleen kleurverandering als focusindicator
+
+Als de focusindicator uitsluitend bestaat uit een kleurverandering (bijvoorbeeld de tekst wordt blauw), is dat niet genoeg voor mensen die kleuren niet kunnen onderscheiden. Combineer kleurveranderingen altijd met een vormverandering zoals een outline, onderstreping of achtergrondmarkering.
+
+```css
+/* Fout: alleen kleurverandering */
+a:focus-visible {
+  outline: none;
+  color: blue;
+}
+
+/* Goed: kleurverandering in combinatie met outline */
+a:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  color: #0066cc;
+}
+```
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Zet de cursor in de adresbalk van de browser en navigeer met **Tab** door de pagina.
+2. Kun je bij elk interactief element (link, knop, formulierveld) duidelijk zien dat het de focus heeft?
+3. Is de focusindicator goed zichtbaar? Valt hij op tegen de achtergrond?
+4. Verdwijnt de focusindicator op geen enkel moment terwijl je door de pagina tabt?
+5. Controleer ook elementen in modalen, dropdowns en andere interactieve onderdelen die pas na een actie zichtbaar worden.
+6. Controleer ook als de outline (of het alternatief) goed zichtbaar is in dark- en in light-mode van de browser.
+
+### Voor developers
+
+1. Zoek in je CSS naar `outline: none` en `outline: 0`. Elke keer dat je de outline verwijdert, moet er een zichtbaar alternatief zijn (via `:focus-visible`).
+2. Inspecteer elementen met de browser DevTools: tab naar een element, open de Styles-tab en controleer welke focusstijlen actief zijn. Let op of er regels zijn die de outline overschrijven.
+3. Zoek in JavaScript naar `.blur()` en `outline = 'none'` om te controleren of focus niet programmatisch wordt verwijderd of verborgen.
+4. Test in meerdere browsers: de standaard focusstijl verschilt per browser (Chrome gebruikt een blauwe outline, Firefox een gestippelde lijn, Safari een blauwe gloed). Zorg dat je custom stijlen in alle browsers werken.
+
 ## Gerelateerde NL Design System-richtlijn
 
 Formulieren: [Maak de toetsenbordfocus goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar).
@@ -45,17 +229,6 @@ Formulieren: [Maak de toetsenbordfocus goed zichtbaar](/richtlijnen/formulieren/
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt. Gebruik de tab-toets om te controleren of links, buttons, invoervelden en checkboxes duidelijk zichtbaar de focus aangeven. Controleer de focus van radiobuttons en tabs met de pijltjestoetsen.
-
-Als in de CSS de outline is verwijderd (`outline: none;`), moet er een alternatief zijn die de toetsenbordfocus visueel aangeeft, bijvoorbeeld door het toevoegen een CSS-border.
-
-Additionele testen:
-
-- de [skip link](/wcag/2.4.1) wordt zichtbaar als deze toetsenbord krijgt.
-- de outline (of het alternatief) is goed zichtbaar in dark- en in light-mode, als deze optie aangeboden wordt op de webpagina.
 
 ## W3C referenties
 
