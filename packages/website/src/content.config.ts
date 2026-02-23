@@ -26,8 +26,14 @@ const docs = defineCollection({
       id = id.replace(/.mdx$/, '');
       id = id.replace(/.md$/, '');
 
-      // fix readme
+      // Make readme's the overview page
       id = id.replace(/\/readme/i, '');
+
+      // remove leading ordering number in file segment
+      id = id
+        .split('/')
+        .map((segment) => segment.replace(/^\d+-/, ''))
+        .join('/');
 
       return id;
     },
