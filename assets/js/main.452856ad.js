@@ -1,4 +1,4 @@
-/*! For license information please see main.b709ce06.js.LICENSE.txt */
+/*! For license information please see main.452856ad.js.LICENSE.txt */
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [38792],
  {
@@ -312,7 +312,7 @@
     trailingSlash: !0,
     organizationName: 'nl-design-system',
     projectName: 'documentatie',
-    presets: [['classic', { pages: { path: 'src/pages', routeBasePath: '/' }, docs: { beforeDefaultRehypePlugins: [[null, { siteUrl: 'https://nldesignsystem.nl', stripOrigin: !0 }]], routeBasePath: '/', editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/', sidebarPath: '/home/runner/work/documentatie/documentatie/sidebarConfig.ts' }, blog: { beforeDefaultRehypePlugins: [[null, { siteUrl: 'https://nldesignsystem.nl', stripOrigin: !0 }]], postsPerPage: 'ALL', blogSidebarCount: 0, showReadingTime: !1, tags: 'tags.yml' }, theme: { customCss: ['/home/runner/work/documentatie/documentatie/packages/nlds-design-tokens/dist/root.css', '/home/runner/work/documentatie/documentatie/src/css/custom.css'] } }]],
+    presets: [['classic', { pages: { path: 'src/pages', routeBasePath: '/' }, docs: { remarkPlugins: [null], beforeDefaultRehypePlugins: [[null, { siteUrl: 'https://nldesignsystem.nl', stripOrigin: !0 }]], routeBasePath: '/', editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/', sidebarPath: '/home/runner/work/documentatie/documentatie/sidebarConfig.ts' }, blog: { beforeDefaultRehypePlugins: [[null, { siteUrl: 'https://nldesignsystem.nl', stripOrigin: !0 }]], postsPerPage: 'ALL', blogSidebarCount: 0, showReadingTime: !1, tags: 'tags.yml' }, theme: { customCss: ['/home/runner/work/documentatie/documentatie/packages/nlds-design-tokens/dist/root.css', '/home/runner/work/documentatie/documentatie/src/css/custom.css'] } }]],
     themeConfig: {
      navbar: {
       title: '',

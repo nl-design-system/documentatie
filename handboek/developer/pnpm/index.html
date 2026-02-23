@@ -39,8 +39,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.d61daaeb.css" />
-  <script src="/assets/js/runtime~main.7a717fa9.js" defer="defer"></script>
-  <script src="/assets/js/main.b709ce06.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.2b4cfa4b.js" defer="defer"></script>
+  <script src="/assets/js/main.452856ad.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -266,17 +266,20 @@
              </nav>
              <div class="tocCollapsible_RuM8 theme-doc-toc-mobile tocMobile_zSi9"><button type="button" class="clean-btn tocCollapsibleButton_XjgU">Op deze pagina</button></div>
              <div class="theme-doc-markdown markdown">
+              <!-- -->
+              <!-- -->
+              <!-- -->
               <header><h1 id="werken-met-pnpm" class="utrecht-heading-1">Werken met pnpm</h1></header>
               <p>pnpm is een snelle, efficiënte package manager voor Node.js. Het is een alternatief voor npm en yarn en staat bekend om zijn zuinige gebruik van schijfruimte en hoge performance. Daarnaast biedt pnpm een aantal beveiligingsfeatures waar we gebruik van maken.</p>
               <p>Ben je npm gewend? De meeste commando&#x27;s zijn hetzelfde: je gebruikt bijvoorbeeld <code class="utrecht-code">pnpm install</code> in plaats van <code class="utrecht-code">npm install</code>. Bekijk de documentatie op de website van <a href="https://pnpm.io/pnpm-cli" class="utrecht-link utrecht-link--html-a">pnpm</a> voor uitgebreide informatie.</p>
               <h2 id="de-juiste-pnpm-versie-installeren-en-gebruiken" class="utrecht-heading-2">De juiste pnpm-versie installeren en gebruiken</h2>
               <p>Tegenwoordig hoef je de package manager niet meer los te installeren, maar gebruik je <a href="https://github.com/nodejs/corepack" class="utrecht-link utrecht-link--html-a">Corepack</a>. Dit is in recente versies van <a href="/developer/node/" class="utrecht-link utrecht-link--html-a">Node.js</a> inbegrepen. Corepack gebruikt automatisch de versie van pnpm die in <code class="utrecht-code">package.json</code> staat, zodat teams en CI dezelfde versie gebruiken.</p>
-              <span hidden="" id=":R5q7dalbah:"
+              <span hidden="" id=":R7q7dalbah:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R5q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"># activeer Corepack</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R7q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"># activeer Corepack</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">corepack enable</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
@@ -289,12 +292,12 @@
               </p>
               <h2 id="pnpm-upgraden" class="utrecht-heading-2">pnpm upgraden</h2>
               <p>Ook voor upgraden gebruik je Corepack. Gebruik altijd de <code class="utrecht-code">corepack</code> CLI om de versie in <code class="utrecht-code">package.json</code> te upgraden zodat de hash wordt toegevoegd aan de versie. Dit is een beveiligingsmaatregel om te verifiëren dat exact dezelfde pnpm-binary wordt gebruikt op elke machine.</p>
-              <span hidden="" id=":R9q7dalbah:"
+              <span hidden="" id=":Rbq7dalbah:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"># upgraden naar laatste versie in major range</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rbq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"># upgraden naar laatste versie in major range</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">corepack up</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
 </span>
