@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Tweede decoratieve kleur, als de huisstijl die heeft.
+De tweede huisstijlkleur als de organisatie deze heeft.

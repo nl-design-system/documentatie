@@ -39,6 +39,7 @@ import BasisSpaceTextIntro from "./_basis-space-text-intro.md";
 
 import BasisTextFontFamilyIntro from "./_basis-text-font-family-intro.md";
 import BasisTextFontSizeIntro from "./_basis-text-font-size-intro.md";
+import BasisTextFontWeightIntro from "./_basis-text-font-weight-intro.md";
 import BasisTextLineHeightIntro from "./_basis-text-line-height-intro.md";
 import BasisHeadingIntro from "./_basis-heading-intro.md";
 import BasisBoxShadowIntro from "./_basis-box-shadow-intro.md";
@@ -239,6 +240,8 @@ Voor typografie zijn er basis-tokens beschikbaar voor het instellen van:
 
 #### Lettertype {#basis-text-font-family}
 
+<BasisTextFontFamilyIntro />
+
 `basis.text.font-family.default`
 : Standaard lettertype voor tekst.
 
@@ -246,6 +249,8 @@ Voor typografie zijn er basis-tokens beschikbaar voor het instellen van:
 : Voor tekst die als code wordt weergegeven.
 
 #### Lettergewicht {#basis-text-font-weight}
+
+<BasisTextFontSizeIntro />
 
 `basis.text.font-weight.default`
 : Standaard gewicht voor reguliere tekst.
@@ -379,7 +384,7 @@ Bijvoorbeeld bij componenten zoals [Breadcrumb Navigation](/breadcrumb-navigatio
 
 ![De afbeelding toont de componenten Breadcrumb Navigation, Page Number Navigation en Progress List met grijze kleuren.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_start-thema_basis-tokens_kleur-disabled.png)
 
-##### De 4 signaalkleuren
+##### Signaalkleuren
 
 Gebruik deze basis-tokens voor signalen of feedback.
 
@@ -412,6 +417,8 @@ Bijvoorbeeld met de [Mark](/mark) component.
 ##### Selected {#basis-color-selected}
 
 <BasisColorSelectedIntro />
+
+Bijvoorbeeld in een Combobox of [Table](/table).
 
 #### As 2: Toepassing {#basis-color-suffix}
 
@@ -562,7 +569,7 @@ Onderstaande afbeelding laat zien hoe de basis-tokens voor kleur binnen een inte
 
 Er is een specifieke basis-token beschikbaar voor transparantie: `basis.color.transparent`. Deze token zorgt ervoor dat transparantie eenduidig wordt vertaald naar verschillende outputformaten, zoals CSS of design tools.
 
-#### Focus
+#### Focus {#basis-color-focus}
 
 De focusstatus in het Start-thema is visueel krachtig: felgeel gecombineerd met zwart en een zwart-wit gestreepte rand.
 
