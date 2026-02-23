@@ -19,6 +19,18 @@ const docs = defineCollection({
       // 'wcag/**/!(_)(*).{md,mdx}',
       'woordenlijst/**/!(_)(*).{md,mdx}',
     ],
+    generateId: (options) => {
+      let id = options.entry;
+
+      // remove file extensions
+      id = id.replace(/.mdx$/, '');
+      id = id.replace(/.md$/, '');
+
+      // fix readme
+      id = id.replace(/\/readme/i, '');
+
+      return id;
+    },
   }),
   schema: z.object({
     title: z.string().optional(),
