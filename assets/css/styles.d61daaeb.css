@@ -10891,6 +10891,35 @@ html:not([data-theme]) .themedComponent--light_LkwR {
  color: var(--docsearch-hit-color);
  padding: 0.09em 0;
 }
+.homepage-spotlight-section {
+ --utrecht-spotlight-section-border-width: 0;
+}
+.homepage-spotlight-section--hero {
+ --utrecht-heading-2-font-size: 1.25rem;
+ --utrecht-heading-2-margin-block-start: 20px;
+}
+.homepage-spotlight-section--heartbeat {
+ --utrecht-heading-4-margin-block-start: 0;
+ --utrecht-spotlight-section-margin-block-end: 20px;
+}
+.homepage-spotlight-section--footer {
+ --utrecht-spotlight-section-padding-block-end: 20px;
+ --utrecht-spotlight-section-padding-block-start: 20px;
+ --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-inverse-bg-document);
+ --utrecht-heading-2-color: var(--basis-color-accent-1-inverse-color-document);
+ --utrecht-card-background-color: var(--basis-color-action-1-inverse-bg-default);
+ --utrecht-card-link-hover-background-color: var(--basis-color-action-1-inverse-bg-hover);
+ --utrecht-card-color: var(--basis-color-action-1-inverse-color-default);
+}
+.homepage-card-group {
+ block-size: 100%;
+ display: grid;
+ gap: 1.5rem;
+ grid-template-columns: repeat(auto-fit, minmax(min(100%, 22.5rem), 1fr));
+ margin-inline: auto;
+ max-inline-size: var(--ifm-container-width-xl);
+ padding-block: 20px;
+}
 [data-theme="dark"] .blueskySvg_P2g2,
 [data-theme="dark"] .githubSvg_Vq1m,
 [data-theme="dark"] .instagramSvg_q9__,
@@ -11281,35 +11310,6 @@ p + .nlds-guideline {
 .title_JsK5 {
  --ifm-h1-font-size: 3rem;
  margin-bottom: calc(var(--ifm-leading) * 1.25);
-}
-.homepage-spotlight-section {
- --utrecht-spotlight-section-border-width: 0;
-}
-.homepage-spotlight-section--hero {
- --utrecht-heading-2-font-size: 1.25rem;
- --utrecht-heading-2-margin-block-start: 20px;
-}
-.homepage-spotlight-section--heartbeat {
- --utrecht-heading-4-margin-block-start: 0;
- --utrecht-spotlight-section-margin-block-end: 20px;
-}
-.homepage-spotlight-section--footer {
- --utrecht-spotlight-section-padding-block-end: 20px;
- --utrecht-spotlight-section-padding-block-start: 20px;
- --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-inverse-bg-document);
- --utrecht-heading-2-color: var(--basis-color-accent-1-inverse-color-document);
- --utrecht-card-background-color: var(--basis-color-action-1-inverse-bg-default);
- --utrecht-card-link-hover-background-color: var(--basis-color-action-1-inverse-bg-hover);
- --utrecht-card-color: var(--basis-color-action-1-inverse-color-default);
-}
-.homepage-card-group {
- block-size: 100%;
- display: grid;
- gap: 1.5rem;
- grid-template-columns: repeat(auto-fit, minmax(min(100%, 22.5rem), 1fr));
- margin-inline: auto;
- max-inline-size: var(--ifm-container-width-xl);
- padding-block: 20px;
 }
 .contrast-ratio {
  inline-size: 100%;
