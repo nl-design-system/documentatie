@@ -74,7 +74,7 @@ Door zoveel mogelijk informatie beschikbaar te maken in de GitHub Discussion kan
 Draag je dit component ook bij in een Community implementatie, of heb je tijd om te helpen deze te verbeteren? Dan kun je helpen door zoveel mogelijk openstaande issues al te verwerken en zelf testcases toe te voegen voor alle situaties die in de GitHub Discussions door de community zijn gedeeld.
 :::
 
-## Issues bekend {#issues}
+## Issues bekend \{#issues\}
 
 Wanneer er is gekeken naar de issues die voor de component zijn aangemaakt in de verschillende repositories van NL Design System, kan het kernteam bepalen welke issues moeten worden opgelost in de Candidate implementatie en welke aanpassingen nog moeten worden proefgedraaid in de community. Ook kan er een afweging worden gemaakt over breaking changes die in de Community component zijn uitgesteld vanwege het ongemak bij gebruikers.
 
@@ -95,7 +95,7 @@ Het kernteam heeft samen met de input uit de Selectiefase nu alle input uit de c
 - API bepaald
 - Design Tokens bepaald
 
-## Varianten bepaald {#varianten}
+## Varianten bepaald \{#varianten\}
 
 De component zoals deze nu in de community bestaat is, waar nodig, versimpeld of opgesplitst, zodat de componenten die in het design system staan allemaal een duidelijke use case en overzichtelijke documentatie hebben.
 
@@ -109,7 +109,7 @@ Wanneer bijvoorbeeld blijkt dat de documentatie onnodig complex wordt door zinne
 
 De variaties en het gedrag van de component zijn bepaald en er zijn GitHub Discussions voor de nieuwe componenten aangemaakt en voor de voorgestelde losse component of variaties die niet worden meegenomen.
 
-## Acceptatiecriteria voor toegankelijkheid bepaald {#a11y}
+## Acceptatiecriteria voor toegankelijkheid bepaald \{#a11y\}
 
 Op basis van de uitkomsten uit de 'WCAG input' stap, bekende issues uit de community en de expertise uit het kernteam is duidelijk aan welke eisen de component implementatie moet voldoen. Hierbij wordt rekening gehouden met bekende toegankelijkheidsproblemen, maar ook toegankelijkheidseisen die de community in hun implementatie nog niet had bedacht.
 
@@ -121,7 +121,7 @@ Op basis van de uitkomsten uit de 'WCAG input' stap, bekende issues uit de commu
 
 Het is duidelijk met welke WCAG succescriteria rekening is gehouden. Daarbij wordt onderscheid gemaakt tussen de criteria die in de component zelf worden opgelost en de criteria die in context van een pagina gelden.
 
-## Keywords en aliassen bepaald {#keywords}
+## Keywords en aliassen bepaald \{#keywords\}
 
 ### Doel
 
@@ -131,7 +131,7 @@ Het is duidelijk met welke WCAG succescriteria rekening is gehouden. Daarbij wor
 
 Aliassen en keywords van alternatieve namen voor de component zijn vastgelegd in documentatie.
 
-## Anatomie bepaald {#anatomie}
+## Anatomie bepaald \{#anatomie\}
 
 Op basis van de input uit 'Component gebruikt', 'WCAG-input', 'Issues bekend' en 'Versimpeld of opgesplitst' wordt besloten uit welke onderdelen de component kan bestaan en hoe deze onderdelen worden genoemd.
 
@@ -143,7 +143,7 @@ Op basis van de input uit 'Component gebruikt', 'WCAG-input', 'Issues bekend' en
 
 De onderdelen van de component zijn bepaald en de naamgeving is gekozen op basis van de NL Design System naming convention en vastgelegd.
 
-## HTML bepaald {#html}
+## HTML bepaald \{#html\}
 
 Goede semantiek is belangrijk voor toegankelijkheid en robuustheid van websites en webapplicaties. Daarom wordt er goed gekeken op basis van de 'Anatomie' en 'Acceptatiecriteria voor toegankelijkheid' welke semantiek het best bij de component past.
 
@@ -157,7 +157,7 @@ De component wordt ontwikkeld met de HTML elementen die semantisch het best pass
 
 Er is bepaald of er een HTML implementatie van de component mogelijk is, zodat deze ook ingezet kan worden in situaties waar HTML aanpassen geen optie is en er geen voorspelbare class names zijn gebruikt.
 
-## API bepaald {#api}
+## API bepaald \{#api\}
 
 De component heeft in CSS, React en andere technieken classnames, attributen, properties en slots die bij het inzetten van de component gebruikt kunnen worden. Voor de developer en designers die de component gebruiken is het belangrijk dat deze voorspelbaar is in combinatie met de rest van het design system. Voor onderhoudbaarheid is het goed om niet meer API's beschikbaar te maken dan noodzakelijk zijn en voor iedereen is het belangrijk dat de beschikbare API-documentatie makkelijk gevonden worden.
 
@@ -171,7 +171,7 @@ De component heeft in CSS, React en andere technieken classnames, attributen, pr
 - De API's voor de Candidate component zijn in lijn met de API conventies van NL Design System.
 - De API's zijn goed te implementeren in meerdere technieken.
 
-## Design tokens bepaald {#design-tokens}
+## Design tokens bepaald \{#design-tokens\}
 
 Genoeg design tokens zijn belangrijk om NL Design System in diverse huisstijlen te laten werken, maar voor onderhoudbaarheid is het goed om geen design tokens beschikbaar te maken die door niemand gebruikt worden. Bij het maken van de Candidate component wordt gekeken welke design tokens nodig zijn, welke naamgeving past bij de rest van het design system en welke basis-tokens voor de meeste huisstijlen een voorspelbaar resultaat hebben.
 
@@ -183,7 +183,7 @@ Genoeg design tokens zijn belangrijk om NL Design System in diverse huisstijlen 
 
 Alle design tokens van de component zijn gebaseerd op een gemeenschappelijke use case en zijn voorspelbaar in combinatie met de andere Candidate en Hall of Fame componenten in het design system.
 
-## Stories en Specs vastgelegd {#stories-specs}
+## Stories en Specs vastgelegd \{#stories-specs\}
 
 Door te weten op welke manier de Community componenten al voldoen aan onze acceptatiecriteria, weet het kernteam welke onderdelen ze 1-op-1 kunnen overnemen en welke in de Candidate component aangepast moeten worden. De Stories en specs die hiervoor klaar worden gezet kunnen vervolgens ook gebruikt worden om tijdens het maken en onderhouden van de Candidate component de kwaliteit te kunnen blijven verzekeren.
 
@@ -198,7 +198,7 @@ De Candidate kan gebouwd worden op basis van de juiste Community component onder
 - Alle acceptatiecriteria die in eerdere stappen zijn opgesteld — voor anatomie, semantiek, varianten en design tokens — zijn opgenomen als stories in de test Storybook.
 - Voor alle niet visuele acceptatiecriteria zijn unit tests met `describe it` aangemaakt.
 
-## Testcases voor gebruik {#test-gebruik}
+## Testcases voor gebruik \{#test-gebruik\}
 
 Goede testcases zijn belangrijk om de component robuust te maken. De component wordt vaak op een pagina getoond met content die via CMS-en wordt gemaakt of op basis van data uit API's. Daarom moet de component om kunnen gaan met geen, weinig of juist veel content en in combinatie met Rich Text elementen.
 
@@ -214,7 +214,7 @@ Daarom is het belangrijk dat het kernteam zoveel mogelijk testcases klaarzet die
 
 Er zijn voldoende testcases beschikbaar om een robuust component te maken die goed om kan gaan met diverse soorten data en gebruikersvoorkeuren zodat de Candidate component grondig getest kan worden met Storybook en unit tests.
 
-## Rond de Voorbereidingsfase af {#afronden}
+## Rond de Voorbereidingsfase af \{#afronden\}
 
 Het kernteam laat de community weten dat de voorbereidingen in het Candidate proces afgerond zijn en de component klaar is om gebouwd te worden.
 
