@@ -3,6 +3,8 @@ import { defineCollection } from 'astro/content/config';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+type GlobOptions = Parameters<typeof glob>[0];
+
 const hasUnderscoredSegment = (path: string) => path.split('/').some((segment) => segment.startsWith('_'));
 
 /**
@@ -28,6 +30,28 @@ export function globIgnoringUnderscores(options: GlobOptions): Loader {
   };
 }
 
+/**
+ * Get the slug from the frontmatter.
+ */
+function getSlug(options): string | null {
+  // Return early when the path contains an underscore prefixed segment. These
+  // files should be ignored
+  if (hasUnderscoredSegment(options.entry)) return null;
+
+  if (options.data.slug) {
+    return options.data.slug.startsWith('/')
+      ? options.data.slug // if the slug starts with a `/` use it as is
+      : options.entry // else replace the last segment of the path with the slug
+          .split('/')
+          .reverse()
+          .toSpliced(0, 1, options.data.slug)
+          .reverse()
+          .join('/');
+  }
+
+  return null;
+}
+
 const docs = defineCollection({
   loader: globIgnoringUnderscores({
     base: './../../docs',
@@ -46,22 +70,22 @@ const docs = defineCollection({
       'woordenlijst/**/*.{md,mdx}',
     ],
     generateId: (options) => {
-      let id = options.entry;
+      let filename = options.entry;
 
       // remove file extensions
-      id = id.replace(/.mdx$/, '');
-      id = id.replace(/.md$/, '');
+      filename = filename.replace(/.mdx$/, '');
+      filename = filename.replace(/.md$/, '');
 
       // Make readme's the overview page
-      id = id.replace(/\/readme/i, '');
+      filename = filename.replace(/\/readme/i, '');
 
       // remove leading ordering number in file segment
-      id = id
+      filename = filename
         .split('/')
         .map((segment) => segment.replace(/^\d+-/, ''))
         .join('/');
 
-      return id;
+      return getSlug(options) || filename;
     },
   }),
   schema: z.object({
