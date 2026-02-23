@@ -66,7 +66,7 @@ const docs = defineCollection({
       // 'project/**/*.{md,mdx}',
       // 'richtlijnen/**/*.{md,mdx}',
       'voorbeelden/**/*.{md,mdx}',
-      // 'wcag/**/*.{md,mdx}',
+      'wcag/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
     ],
     generateId: (options) => {
