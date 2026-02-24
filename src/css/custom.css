@@ -300,6 +300,7 @@ p {
   border-inline-start-color: var(--basis-color-accent-1-inverse-border-active);
   color: var(--basis-color-accent-1-inverse-color-active);
 }
+
 .navbar-sidebar .menu__link:hover,
 .navbar-sidebar .menu__list-item-collapsible:hover,
 .navbar-sidebar .menu__caret:hover {
@@ -316,6 +317,10 @@ p {
 .theme-doc-sidebar-item-link-level-4 .menu__link,
 .theme-doc-sidebar-item-category-level-4 .menu__link {
   padding-inline-start: 48px;
+}
+
+.theme-unlisted-banner {
+  display: none;
 }
 
 /* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
@@ -387,6 +392,7 @@ p {
     border-color: var(--ma-docsearch-button-hover-border-color);
     color: var(--ma-docsearch-button-hover-border-color);
   }
+
   &:focus-visible {
     --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
     --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
@@ -739,6 +745,7 @@ pre {
   font-size: 16px;
   vertical-align: 1%;
 }
+
 code {
   background-color: transparent !important;
   border-inline-end: 0;
@@ -785,4 +792,13 @@ code {
   width: 100vw;
   padding-block: 0.5rem;
   font-size: 1.125rem;
+}
+
+ams-page-header,
+ams-page-footer {
+  inline-size: 100%;
+}
+
+.nl-skip-link {
+  z-index: 10000;
 }

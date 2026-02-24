@@ -4,8 +4,7 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-block-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/code-block-css](https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css)
-versie 1.
+[@nl-design-system-candidate/code-block-css](https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css)
 
 Gebruik de `nl-code-block` class name op een `pre` element met de `nl-code-block__code` class name op een `code` element:
 
@@ -48,8 +47,7 @@ import "@nl-design-system-candidate/code-block-css/code-block.css";
 
 De React component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fcode-block-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/code-block-react](https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react)
-versie 1.
+[@nl-design-system-candidate/code-block-react](https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react)
 
 Je kunt de npm package zo installeren:
 

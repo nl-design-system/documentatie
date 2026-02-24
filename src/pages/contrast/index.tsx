@@ -1,4 +1,3 @@
-import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Canvas } from '@site/src/components/Canvas/Canvas';
 import type { CanvasContainerType } from '@site/src/components/Canvas/Canvas';
@@ -20,6 +19,7 @@ import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import './index.css';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import { useIsBrowser } from '@site/src/hooks/use-is-browser';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>
@@ -105,8 +105,9 @@ const LargeTextExample = (): ReactNode => (
 
 const ContrastPage = () => {
   const { siteConfig } = useDocusaurusContext();
-  const { search } = useLocation();
+  const isBrowser = useIsBrowser();
 
+  const search = isBrowser ? window.location.search : '';
   const params = new URLSearchParams(search);
   let backgroundColor = params.get('background-color');
   let color = params.get('color');
