@@ -8,15 +8,19 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="wachtwoord2">Nieuw wachtwoord</label>
+        <p>
+          <label htmlFor="wachtwoord2">Nieuw wachtwoord</label>
+        </p>
         <p id="description-wachtwoord2">Kies een wachtwoord van minimaal 8 karakters lang.</p>
         <p id="error-wachtwoord2">Invoerfout: Je gekozen wachtwoord is te kort.</p>
-        <input
-          id="wachtwoord2"
-          type="password"
-          name="nieuw-wachtwoord"
-          aria-describedby="description-wachtwoord2 error-wachtwoord2"
-        />
+        <p>
+          <input
+            id="wachtwoord2"
+            type="password"
+            name="nieuw-wachtwoord"
+            aria-describedby="description-wachtwoord2 error-wachtwoord2"
+          />
+        </p>
       </>
     )}
   </Canvas>
@@ -26,14 +30,18 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="wachtwoord4">Nieuw wachtwoord</label>
+        <p>
+          <label htmlFor="wachtwoord4">Nieuw wachtwoord</label>
+        </p>
         <p id="description-wachtwoord4">Kies een wachtwoord van minimaal 8 karakters lang.</p>
-        <input
-          id="wachtwoord4"
-          type="password"
-          name="nieuw-wachtwoord"
-          aria-describedby="description-wachtwoord4 error-wachtwoord4"
-        />
+        <p>
+          <input
+            id="wachtwoord4"
+            type="password"
+            name="nieuw-wachtwoord"
+            aria-describedby="description-wachtwoord4 error-wachtwoord4"
+          />
+        </p>
         <p id="error-wachtwoord4">Invoerfout: Je gekozen wachtwoord is te kort.</p>
       </>
     )}

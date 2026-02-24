@@ -4,8 +4,7 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fcolor-sample-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/color-sample-css](https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-css)
-versie 1.
+[@nl-design-system-candidate/color-sample-css](https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-css)
 
 Gebruik de `nl-color-sample` class name op een `svg` element:
 
@@ -58,8 +57,7 @@ import "@nl-design-system-candidate/color-sample-css/color-sample.css";
 
 De React component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fcolor-sample-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/color-sample-react](https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-react)
-versie 1.
+[@nl-design-system-candidate/color-sample-react](https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-react)
 
 Je kunt de npm package zo installeren:
 

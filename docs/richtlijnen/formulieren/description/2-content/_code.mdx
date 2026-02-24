@@ -9,22 +9,26 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="wachtwoord">Nieuw wachtwoord</label>
+        <p>
+          <label htmlFor="wachtwoord">Nieuw wachtwoord</label>
+        </p>
         <div id="description-wachtwoord">
-          Je wachtwoord moet de volgende elementen bevatten:
+          <p>Je wachtwoord moet de volgende elementen bevatten:</p>
           <ul>
             <li>Minimaal 9 karakters.</li>
             <li>Een hoofdletter.</li>
             <li>Een cijfer.</li>
           </ul>
         </div>
-        <input
-          id="wachtwoord"
-          type="password"
-          name="nieuw-wachtwoord"
-          autocomplete="new-password"
-          aria-describedby="description-wachtwoord"
-        />
+        <p>
+          <input
+            id="wachtwoord"
+            type="password"
+            name="nieuw-wachtwoord"
+            autocomplete="new-password"
+            aria-describedby="description-wachtwoord"
+          />
+        </p>
       </>
     )}
   </Canvas>
@@ -34,17 +38,21 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="wachtwoord">Nieuw wachtwoord</label>
+        <p>
+          <label htmlFor="wachtwoord">Nieuw wachtwoord</label>
+        </p>
         <p id="description-wachtwoord">
           Je wachtwoord moet de volgende elementen bevatten: minimaal 9 karakters, een hoofdletter en een cijfer.
         </p>
-        <input
-          id="wachtwoord"
-          type="password"
-          name="nieuw-wachtwoord"
-          autocomplete="new-password"
-          aria-describedby="description-wachtwoord"
-        />
+        <p>
+          <input
+            id="wachtwoord"
+            type="password"
+            name="nieuw-wachtwoord"
+            autocomplete="new-password"
+            aria-describedby="description-wachtwoord"
+          />
+        </p>
       </>
     )}
   </Canvas>
@@ -55,20 +63,15 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <h3>Open een spaarrekening</h3>
-        <p>
-          Om een spaarrekening te openen hebben we de volgende gegevens nodig:</p>
-          <ul>
-            <li>Het nummer van je paspoort of identiteitskaart.</li>
-            <li>Je Burgerservicenummer (BSN), dit kun je vinden op je paspoort of identiteitskaart.</li>
-            <li>Je adresgegevens.</li>
-            <li>Je e-mailadres.</li>
-          </ul>
-
-        <form>
-          [het formulier]
-        </form>
+        <p>Om een spaarrekening te openen hebben we de volgende gegevens nodig:</p>
+        <ul>
+          <li>Het nummer van je paspoort of identiteitskaart.</li>
+          <li>Je Burgerservicenummer (BSN), dit kun je vinden op je paspoort of identiteitskaart.</li>
+          <li>Je adresgegevens.</li>
+          <li>Je e-mailadres.</li>
+        </ul>
+        <form>[het formulier]</form>
       </>
     )}
-
   </Canvas>
 </Guideline>

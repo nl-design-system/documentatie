@@ -1,0 +1,50 @@
+---
+title: Expertteam · Project
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Toegankelijke content
+pagination_label: Toegankelijke content
+description: Contact met NL Design System Expertteam
+slug: /project/expertteam-digitale-toegankelijkheid/cms-en
+keywords:
+  - Expertteam
+  - Rich text editor
+  - toegankelijkheid door contentmakers met CMS-en
+  - nl design system
+---
+
+import { RichTextEditor } from "@site/src/components/RichTextEditor";
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { IconChevronRight } from "@tabler/icons-react";
+import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+
+# Toegankelijkheid door c met CMS-en
+
+Momenteel is de Clippy Rich Text Editor volop in ontwikkeling door het NL Design System Expertteam. De editor is een toegankelijke, framework-onafhankelijke teksteditor gebouwd met web components en TipTap voor het Nederlandse digitale overheidslandschap, welke zal voldoen aan ATAG en WCAG 2.2 Level AA-normen.
+
+<ActionGroup>
+  <ButtonLink href="https://editor.nl-design-system-community.nl/" appearance="primary-action">
+    {"Documentatie en demo"}
+    <IconChevronRight />
+  </ButtonLink>
+  <ButtonLink href="https://github.com/nl-design-system/editor" appearance="secondary-action">
+    {"Editor op GitHub"}
+    <IconChevronRight />
+  </ButtonLink>
+</ActionGroup>
+
+## Web Component (Lit)
+
+De Clippy Rich Text Editor is beschikbaar als web component. Importeer de dependency en gebruik `<clippy-editor>Voorbeeld tekst</clippy-editor>` in je HTML om de editor te integreren.
+
+[<img src="https://badge.fury.io/js/@nl-design-system-community%2Feditor.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-community/editor](https://www.npmjs.com/package/@nl-design-system-community/editor)
+
+## React
+
+De Clippy Rich Text Editor is tevens beschikbaar als React component. Importeer `ClippyEditor` in je React component.
+
+[<img src="https://badge.fury.io/js/@nl-design-system-community%2Feditor-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-community/editor-react](https://www.npmjs.com/package/@nl-design-system-community/editor-react)
+
+## Demo
+
+<RichTextEditor />

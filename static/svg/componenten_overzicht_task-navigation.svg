@@ -1,0 +1,44 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="component-illustration">
+<g clip-path="url(#clip0_1866_2999)">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+<g clip-path="url(#clip1_1866_2999)">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+<rect width="2" height="540" transform="translate(69)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(151)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(233)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(315)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(397)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(479)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(561)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(643)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(725)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(807)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(889)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 64)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 146)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 228)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 310)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 392)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 474)" fill="var(--component-illustration-grid-color, #EEE)"/>
+</g>
+<mask id="path-1-inside-1_1866_2999" fill="var(--component-illustration-background-color, white)">
+<path d="M151 203H809V337H151V203Z"/>
+</mask>
+<path d="M809 337V333H151V337V341H809V337Z" fill="var(--component-illustration-color, #666)" mask="url(#path-1-inside-1_1866_2999)"/>
+<rect x="175" y="230" width="385" height="24" rx="12" fill="var(--component-illustration-color, #666)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M193.739 269.012C194.799 267.113 196.803 265.936 198.978 265.936C201.154 265.936 203.158 267.113 204.218 269.012L218.409 293.496C218.456 293.577 218.497 293.662 218.532 293.749C219.278 295.592 219.062 297.684 217.957 299.336C216.852 300.988 215 301.985 213.012 301.999L212.998 301.999H184.998C184.962 301.999 184.926 301.998 184.889 301.996C184.819 302 184.748 302 184.675 301.996C182.736 301.896 180.965 300.864 179.922 299.226C178.88 297.587 178.695 295.546 179.425 293.746C179.46 293.66 179.501 293.577 179.548 293.496L193.739 269.012ZM184.888 298.002C184.925 298 184.961 297.999 184.998 297.999H212.99C213.651 297.992 214.265 297.66 214.633 297.111C214.979 296.593 215.063 295.945 214.865 295.359L200.748 271.002L200.728 270.967C200.376 270.331 199.706 269.936 198.978 269.936C198.251 269.936 197.581 270.331 197.228 270.967L197.209 271.002L183.091 295.36C182.896 295.932 182.97 296.565 183.297 297.078C183.645 297.624 184.235 297.968 184.881 298.002C184.884 298.002 184.886 298.002 184.888 298.002ZM198.998 277.999C200.103 277.999 200.998 278.894 200.998 279.999V283.999C200.998 285.104 200.103 285.999 198.998 285.999C197.894 285.999 196.998 285.104 196.998 283.999V279.999C196.998 278.894 197.894 277.999 198.998 277.999ZM196.998 291.999C196.998 290.894 197.894 289.999 198.998 289.999H199.018C200.123 289.999 201.018 290.894 201.018 291.999C201.018 293.104 200.123 293.999 199.018 293.999H198.998C197.894 293.999 196.998 293.104 196.998 291.999Z" fill="var(--component-illustration-color, #666)"/>
+<rect x="231" y="278" width="168" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M745.586 273.586C746.367 272.805 747.633 272.805 748.414 273.586L760.414 285.586C761.195 286.367 761.195 287.633 760.414 288.414L748.414 300.414C747.633 301.195 746.367 301.195 745.586 300.414C744.805 299.633 744.805 298.367 745.586 297.586L754.172 289H731C729.895 289 729 288.105 729 287C729 285.895 729.895 285 731 285H754.172L745.586 276.414C744.805 275.633 744.805 274.367 745.586 273.586Z" fill="var(--component-illustration-color, #666)"/>
+</g>
+<defs>
+<clipPath id="clip0_1866_2999">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+</clipPath>
+<clipPath id="clip1_1866_2999">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+</clipPath>
+</defs>
+</symbol>
+<use href="#component-illustration"/>
+</svg>
