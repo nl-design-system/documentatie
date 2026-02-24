@@ -9,3 +9,5 @@ Versturen na bijvoorbeeld het kiezen van een optie kan de gebruiker verrassen: w
 Let wel: het gaat hier om het daadwerkelijk versturen van het formulier. Dus als de **context** verandert. Bijvoorbeeld: je gaat naar een bevestigingspagina.
 
 Het updaten van bijvoorbeeld zoekresultaten waarbij alleen de **content** verandert valt hier niet onder. Bijvoorbeeld: alleen het aantal zoekresultaten verandert, maar je blijft op dezelfde pagina.
+
+Een formulier niet onverwacht versturen is nodig om te voldoen aan het [WCAG-succescriterium 3.2.2 Bij Input](/wcag/3.2.2/) (niveau A).

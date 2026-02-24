@@ -1,5 +1,5 @@
+import DocusaurusLink from '@docusaurus/Link';
 import type { Props } from '@docusaurus/Link';
-import { BareLink } from '@site/src/components/Link';
 import { clsx } from 'clsx';
 
 import type { PropsWithChildren } from 'react';
@@ -9,5 +9,5 @@ export interface ButtonLinkProps extends Props {
 }
 
 export const ButtonLink = ({ appearance, ...props }: PropsWithChildren<ButtonLinkProps>) => (
-  <BareLink className={clsx('utrecht-button-link', `utrecht-button-link--${appearance}`)} {...props} />
+  <DocusaurusLink className={clsx('utrecht-button-link', `utrecht-button-link--${appearance}`)} {...props} />
 );

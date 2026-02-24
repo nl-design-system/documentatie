@@ -79,7 +79,7 @@ Zoals aangegeven in [de API conventie voor componenten voor HTML](https://nldesi
 ({ someProp, ...restProps });
 ```
 
-De `someProp` wordt expliciet uit het object gehaald, terwijl `restProps` een object bevat met alle overige properties die aan de component zijn doorgegeven.
+De `someProp` wordt expliciet uit het object gehaald, terwijl `restProps` een object bevat met alle overige properties die aan het component zijn doorgegeven.
 
 Daardoor kun je bijvoorbeeld alle globale HTML-attributen automatisch doorgeven aan het onderliggende HTML-element:
 

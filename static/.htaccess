@@ -167,9 +167,6 @@ Redirect 301 "/4.1.3" "/wcag/4.1.3/"
 Redirect 301 "/belangenorganisaties" "/community/belangenorganisaties/aanmelden/"
 Redirect 301 "/belangenorganisatie" "/community/belangenorganisaties/aanmelden/"
 
-# Convenience redirects for use in code
-Redirect 301 "/lint-staged" "/linting-en-code-formatting#lint-staged"
-
 # Temporary redirects until we have multiple factsheets and turn /factsheets into an overview page
 RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
 

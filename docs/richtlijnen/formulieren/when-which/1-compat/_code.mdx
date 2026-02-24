@@ -9,13 +9,9 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <label htmlFor="date0">Geboortedatum</label>
-        </p>
+        <label htmlFor="date0">Geboortedatum</label>
         <p id="description-date0">Bijvoorbeeld 31 december 1970.</p>
-        <p>
-          <input id="date0" type="text" autoComplete="bday" aria-describedby="description-date0" />
-        </p>
+        <input id="date0" type="text" autoComplete="bday" aria-describedby="description-date0" />
       </>
     )}
   </Canvas>
@@ -29,13 +25,9 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <label htmlFor="date1">Geboortedatum</label>
-        </p>
+        <label htmlFor="date1">Geboortedatum</label>
         <p id="description-date1">Bijvoorbeeld 31/12/1970.</p>
-        <p>
-          <input id="date1" type="date" aria-describedby="description-date1" autoComplete="bday" />
-        </p>
+        <input id="date1" type="date" aria-describedby="description-date1" autoComplete="bday" />
       </>
     )}
   </Canvas>
@@ -53,52 +45,40 @@ import { Guideline } from "@site/src/components/Guideline";
         <fieldset>
           <legend>Geboortedatum</legend>
           <div>
-            <p>
-              <label htmlFor="day2">Dag</label>
-            </p>
-            <p id="description-day2">Bijvoorbeeld 31.</p>
-            <p>
-              <input
-                id="day2"
-                type="text"
-                inputMode="numeric"
-                aria-describedby="description-day2"
-                autoComplete="bday-day"
-                maxLength="2"
-              />
-            </p>
+            <label htmlFor="day2">Dag</label>
+            <div id="description-day2">Bijvoorbeeld 31.</div>
+            <input
+              id="day2"
+              type="text"
+              inputMode="numeric"
+              aria-describedby="description-day2"
+              autoComplete="bday-day"
+              maxLength="2"
+            />
           </div>
           <div>
-            <p>
-              <label htmlFor="month2">Maand</label>
-            </p>
-            <p id="description-month2">Bijvoorbeeld 12 voor december.</p>
-            <p>
-              <input
-                id="month2"
-                type="text"
-                inputMode="numeric"
-                aria-describedby="description-month2"
-                autoComplete="bday-month"
-                maxLength="2"
-              />
-            </p>
+            <label htmlFor="month2">Maand</label>
+            <div id="description-month2">Bijvoorbeeld 12 voor december.</div>
+            <input
+              id="month2"
+              type="text"
+              inputMode="numeric"
+              aria-describedby="description-month2"
+              autoComplete="bday-month"
+              maxLength="2"
+            />
           </div>
           <div>
-            <p>
-              <label htmlFor="year2">Jaar</label>
-            </p>
-            <p id="description-year2">Bijvoorbeeld 1970.</p>
-            <p>
-              <input
-                id="c2"
-                type="text"
-                inputMode="numeric"
-                aria-describedby="description-year2"
-                autoComplete="bday-year"
-                maxLength="4"
-              />
-            </p>
+            <label htmlFor="year2">Jaar</label>
+            <div id="description-year2">Bijvoorbeeld 1970.</div>
+            <input
+              id="c2"
+              type="text"
+              inputMode="numeric"
+              aria-describedby="description-year2"
+              autoComplete="bday-year"
+              maxLength="4"
+            />
           </div>
         </fieldset>
       </>
@@ -118,45 +98,33 @@ import { Guideline } from "@site/src/components/Guideline";
         <fieldset>
           <legend>Geboortedatum</legend>
           <div>
-            <p>
-              <label htmlFor="day3">Dag</label>
-            </p>
-            <p id="description-day3">Bijvoorbeeld 31.</p>
-            <p>
-              <input
-                id="day3"
-                type="number"
-                aria-describedby="description-day3"
-                autoComplete="bday-day"
-                min="1"
-                max="31"
-              />
-            </p>
+            <label htmlFor="day3">Dag</label>
+            <div id="description-day3">Bijvoorbeeld 31.</div>
+            <input
+              id="day3"
+              type="number"
+              aria-describedby="description-day3"
+              autoComplete="bday-day"
+              min="1"
+              max="31"
+            />
           </div>
           <div>
-            <p>
-              <label htmlFor="month3">Maand</label>
-            </p>
-            <p id="description-month3">Bijvoorbeeld 12 voor december.</p>
-            <p>
-              <input
-                id="month3"
-                type="number"
-                aria-describedby="description-month3"
-                autoComplete="bday-month"
-                min="1"
-                max="12"
-              />
-            </p>
+            <label htmlFor="month3">Maand</label>
+            <div id="description-month3">Bijvoorbeeld 12 voor december.</div>
+            <input
+              id="month3"
+              type="number"
+              aria-describedby="description-month3"
+              autoComplete="bday-month"
+              min="1"
+              max="12"
+            />
           </div>
           <div>
-            <p>
-              <label htmlFor="year3">Jaar</label>
-            </p>
-            <p id="description-year3">Bijvoorbeeld 1970.</p>
-            <p>
-              <input id="year3" type="number" aria-describedby="description-year3" autoComplete="bday-year" />
-            </p>
+            <label htmlFor="year3">Jaar</label>
+            <div id="description-year3">Bijvoorbeeld 1970.</div>
+            <input id="year3" type="number" aria-describedby="description-year3" autoComplete="bday-year" />
           </div>
         </fieldset>
       </>

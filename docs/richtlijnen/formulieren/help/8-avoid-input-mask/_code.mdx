@@ -9,19 +9,15 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <label htmlFor="bevestigingcode">Je bevestigingcode</label>
-        </p>
+        <label htmlFor="bevestigingcode">Je bevestigingcode</label>
         <p id="description-bevestigingcode">Vul een nummer van 8 cijfers in.</p>
-        <p>
-          <input
-            type="text"
-            inputMode="numeric"
-            id="bevestigingcode"
-            name="bevestigingcode"
-            aria-describedby="description-bevestigingcode"
-          />
-        </p>
+        <input
+          type="text"
+          inputMode="numeric"
+          id="bevestigingcode"
+          name="bevestigingcode"
+          aria-describedby="description-bevestigingcode"
+        />
       </>
     )}
   </Canvas>
@@ -35,19 +31,15 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <label htmlFor="postcode2">Je postcode</label>
-        </p>
-        <p>
-          <input
-            type="text"
-            placeholder="____ __"
-            id="postcode2"
-            name="postcode"
-            pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"
-            autoComplete="postal-code"
-          />
-        </p>
+        <label htmlFor="postcode2">Je postcode</label>
+        <input
+          type="text"
+          placeholder="____ __"
+          id="postcode2"
+          name="postcode"
+          pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"
+          autoComplete="postal-code"
+        />
       </>
     )}
   </Canvas>

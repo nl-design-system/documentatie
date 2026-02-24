@@ -4,7 +4,8 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[@nl-design-system-candidate/mark-css](https://www.npmjs.com/package/@nl-design-system-candidate/mark-css)
+[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fmark-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/mark-css](https://www.npmjs.com/package/@nl-design-system-candidate/mark-css)
+versie 1.
 
 Gebruik de `nl-mark` class name op een `mark` element:
 
@@ -40,7 +41,8 @@ import "@nl-design-system-candidate/mark-css/mark.css";
 
 De React component is gepubliceerd in een npm package:
 
-[@nl-design-system-candidate/mark-react](https://www.npmjs.com/package/@nl-design-system-candidate/mark-react)
+[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fmark-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/mark-react](https://www.npmjs.com/package/@nl-design-system-candidate/mark-react)
+versie 1.
 
 Je kunt de npm package zo installeren:
 

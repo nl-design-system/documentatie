@@ -7,20 +7,16 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <label htmlFor="passport-validity">Geldig tot</label>
-        </p>
+        <label htmlFor="passport-validity">Geldig tot</label>
         <p id="description-passport-validity">
           Invoerfout: De geldigheidsdatum van uw paspoort moet in de toekomst liggen.
         </p>
-        <p>
-          <input
-            id="passport-validity"
-            type="text"
-            name="passport-validity"
-            aria-describedby="description-passport-validity"
-          />
-        </p>
+        <input
+          id="passport-validity"
+          type="text"
+          name="passport-validity"
+          aria-describedby="description-passport-validity"
+        />
       </>
     )}
   </Canvas>
@@ -30,13 +26,9 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <label htmlFor="email">E-mail</label>
-        </p>
+        <label htmlFor="email">E-mail</label>
         <p id="description-email">Invoerfout: Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.</p>
-        <p>
-          <input id="email" type="email" name="email" aria-describedby="description-email" />
-        </p>
+        <input id="email" type="email" name="email" aria-describedby="description-email" />
       </>
     )}
   </Canvas>
@@ -49,19 +41,15 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <label htmlFor="passport-validity-2">Geldig tot</label>
-        </p>
+        <label htmlFor="passport-validity-2">Geldig tot</label>
         <p id="description-passport-validity-2">Invoerfout: Dit veld is verplicht.</p>
-        <p>
-          <input
-            id="passport-validity-2"
-            aria-invalid="false"
-            type="text"
-            name="passport-validity-2"
-            aria-describedby="description-passport-validity-2"
-          />
-        </p>
+        <input
+          id="passport-validity-2"
+          aria-invalid="false"
+          type="text"
+          name="passport-validity-2"
+          aria-describedby="description-passport-validity-2"
+        />
       </>
     )}
   </Canvas>

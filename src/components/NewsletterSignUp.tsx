@@ -1,3 +1,4 @@
+import { useLocation } from '@docusaurus/router';
 import {
   Button,
   ButtonGroup,
@@ -15,7 +16,6 @@ import {
 import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import { useIsBrowser } from '../hooks/use-is-browser';
 
 interface NewsletterSignUpProps {
   listId: string;
@@ -26,7 +26,6 @@ interface NewsletterSignUpProps {
   interestsId: string;
   interestsLegend?: string;
   interests: string[];
-  interestsRequired?: boolean;
   disallowedInterestValues: number[];
   thanksPage: string;
   workAreasId: string;
@@ -35,10 +34,6 @@ interface NewsletterSignUpProps {
   submitText: string;
   talkTitleId: string;
   talkDescriptionId: string;
-  roleId: string;
-  roleLegend?: string;
-  roles: string[];
-  roleRequired?: boolean;
 }
 
 /**
@@ -72,7 +67,6 @@ export const NewsletterSignUp = ({
   interestsId = '',
   interestsLegend = 'Waar wil je NL Design System voor gebruiken?',
   interests = [],
-  interestsRequired = false,
   disallowedInterestValues = [],
   workAreasId = '',
   privacyPolicyId = '',
@@ -80,10 +74,6 @@ export const NewsletterSignUp = ({
   submitText = '',
   talkTitleId = '',
   talkDescriptionId = '',
-  roleId = '',
-  roleLegend = 'Wat is jouw rol?',
-  roles = [],
-  roleRequired = false,
 }: PropsWithChildren<NewsletterSignUpProps>) => {
   const {
     register,
@@ -92,8 +82,7 @@ export const NewsletterSignUp = ({
   } = useForm<{ [key: string]: string }>();
   const form = useRef(null);
   const IS_ENGLISH = language?.value === '2';
-  const isBrowser = useIsBrowser();
-  const search = isBrowser ? window.location.search : '';
+  const { search } = useLocation();
   const params = new URLSearchParams(search);
   const prefillEmail = params.get('prefillEmail');
   const prefillName = params.get('prefillName');
@@ -241,10 +230,7 @@ export const NewsletterSignUp = ({
       {interestsId && (
         <Fieldset>
           <Paragraph>
-            <FieldsetLegend>
-              {interestsLegend}
-              {!interestsRequired && ' (niet verplicht)'}
-            </FieldsetLegend>
+            <FieldsetLegend>{interestsLegend} (niet verplicht)</FieldsetLegend>
           </Paragraph>
           <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {interests.map((interest, index) => (
@@ -255,24 +241,6 @@ export const NewsletterSignUp = ({
                 id={`${interestsId}-${interestsValues[index]}`}
               />
               <FormLabel htmlFor={`${interestsId}-${interestsValues[index]}`}>{interest}</FormLabel>
-            </FormField>
-          ))}
-        </Fieldset>
-      )}
-
-      {roleId && (
-        <Fieldset>
-          <Paragraph>
-            <FieldsetLegend>
-              {roleLegend}
-              {!roleRequired && ' (niet verplicht)'}
-            </FieldsetLegend>
-          </Paragraph>
-          <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
-          {roles.map((role, index) => (
-            <FormField type="checkbox" key={role}>
-              <Checkbox name={`${roleId}[]`} id={`${roleId}-${index}`} />
-              <FormLabel htmlFor={`${roleId}-${index}`}>{role}</FormLabel>
             </FormField>
           ))}
         </Fieldset>

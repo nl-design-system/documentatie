@@ -252,59 +252,55 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', id: 'community/sluit-je-aan' },
         { type: 'doc', id: 'community/wie-doet-mee' },
         {
-          type: 'doc',
-          id: 'community/community-sprints/index',
-        },
-        {
           type: 'category',
-          label: 'MijnServices Community',
-          description:
-            'De MijnServices Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de MijnServices patronen.',
+          label: 'Community Sprints',
           link: {
             type: 'doc',
-            id: 'community/community-sprints/mijn-services-community/mijn-services-community',
+            id: 'community/community-sprints/index',
           },
           items: [
             {
               type: 'doc',
-              id: 'community/community-sprints/mijn-services-community/mijn-services-community',
+              id: 'community/community-sprints/index',
             },
-            { type: 'doc', id: 'community/community-sprints/mijn-services-community/aanmelden' },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Rijkshuisstijl Community',
-          description:
-            'De Rijkshuisstijl Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de Rijkshuisstijl.',
-          link: {
-            type: 'doc',
-            id: 'community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community',
-          },
-          items: [
             {
-              type: 'doc',
-              id: 'community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community',
+              type: 'category',
+              label: 'MijnServices Community',
+              description:
+                'De MijnServices Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de MijnServices patronen.',
+              link: {
+                type: 'generated-index',
+                title: 'MijnServices Community',
+                slug: 'community/community-sprints/mijn-services-community/overzicht',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'community/community-sprints/mijn-services-community/mijn-services-community',
+                },
+                { type: 'doc', id: 'community/community-sprints/mijn-services-community/aanmelden' },
+              ],
             },
-            { type: 'doc', id: 'community/community-sprints/rijkshuisstijl-community/aanmelden' },
+            {
+              type: 'category',
+              label: 'Rijkshuisstijl Community',
+              description:
+                'De Rijkshuisstijl Community Sprint maakt deel uit van een samenwerkingsverband om NL Design System-componenten te ontwikkelen voor projecten die moeten voldoen aan de Rijkshuisstijl.',
+              link: {
+                type: 'generated-index',
+                title: 'Rijkshuisstijl Community',
+                slug: 'community/community-sprints/rijkshuisstijl-community/overzicht',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'community/community-sprints/rijkshuisstijl-community/rijkshuisstijl-community',
+                },
+                { type: 'doc', id: 'community/community-sprints/rijkshuisstijl-community/aanmelden' },
+              ],
+            },
           ],
         },
-        {
-          type: 'doc',
-          id: 'community/expertteam-digitale-toegankelijkheid/index',
-        },
-        // {
-        //   type: 'category',
-        //   label: 'Expertteam Digitale Toegankelijkheid',
-        //   link: {
-        //     type: 'doc',
-        //     id: 'community/expertteam-digitale-toegankelijkheid/index',
-        //   },
-        //   items: [
-        //     { type: 'doc', id: 'community/expertteam-digitale-toegankelijkheid/index' },
-        //     { type: 'doc', id: 'community/expertteam-digitale-toegankelijkheid/meedenken-meld-je-aan' },
-        //   ],
-        // },
         {
           type: 'category',
           label: 'Bijeenkomsten',

@@ -8,6 +8,14 @@ Op [HTML5 Accessibility](https://html5accessibility.com/) houdt Steve Faulkner d
 
 De ontwikkeling van browsers gaat snel en het gebruik van HTML geeft niet altijd garantie voor toegankelijkheid. Test daarom altijd een formulier met toetsenbord, screenreader of stembesturing.
 
+Ervoor zorgen dat iedereen een formulierelement kan bedienen en begrijpen is nodig om te voldoen aan de volgende WCAG-succescriteria:
+
+- [1.3.2 Betekenisvolle volgorde](/wcag/1.3.2) (niveau A).
+- [2.1.1 Toetsenbord](/wcag/2.1.1) (niveau A).
+- [2.4.6 Koppen en labels](/wcag/2.4.6) (niveau AA).
+- [3.3.2 Labels of Instructies](/wcag/3.3.2) (niveau A).
+- [4.1.2 Naam, rol, waarde](/wcag/4.1.2) (niveau A).
+
 ## Multiselect
 
 Het multiselect formulierelement `<select multiple>` is ingewikkeld te bedienen met toetsenbord. In Safari werkt multiselect (nog) niet met een toetsenbord en daarom ook niet met de screenreader VoiceOver.

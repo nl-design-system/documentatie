@@ -8,12 +8,12 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="do" title="Alle informatie als zichtbare tekst in de link plaatsen.">
   <Canvas language="html">
     {() => (
-      <p>
+      <>
         <a href="#" target="_blank">
           Lees het privacybeleid (opent in een nieuwe tab)
         </a>
         .
-      </p>
+      </>
     )}
   </Canvas>
 </Guideline>
@@ -21,13 +21,13 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="do" title="Zichtbaar icoontje plus onzichtbare, maar uitgesproken tekst voor screenreaders.">
   <Canvas language="html">
     {() => (
-      <p>
+      <>
         <a href="#" target="_blank" className="nlds-icon-ext">
           Lees het privacybeleid
           <span className="sr-only">, opent in een nieuwe tab</span>
         </a>
         .
-      </p>
+      </>
     )}
   </Canvas>
 </Guideline>
@@ -35,7 +35,7 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="do" title="Zichtbaar icoontje plus een aria-label voor screenreaders.">
   <Canvas language="html">
     {() => (
-      <p>
+      <>
         <a
           href="#"
           target="_blank"
@@ -44,7 +44,7 @@ import { Guideline } from "@site/src/components/Guideline";
         >
           Lees het privacybeleid
         </a>
-      </p>
+      </>
     )}
   </Canvas>
 </Guideline>
@@ -55,12 +55,12 @@ import { Guideline } from "@site/src/components/Guideline";
 >
   <Canvas language="html">
     {() => (
-      <p>
+      <>
         <a href="#" target="_blank" aria-label="Lees het privacybeleid (opent in een nieuwe tab)">
           Lees het privacybeleid
         </a>
         .
-      </p>
+      </>
     )}
   </Canvas>
 </Guideline>
@@ -68,12 +68,12 @@ import { Guideline } from "@site/src/components/Guideline";
 <Guideline appearance="dont" title="Informatie over het openen in een nieuwe tab voor iedereen weglaten.">
   <Canvas language="html">
     {() => (
-      <p>
+      <>
         <a href="#" target="_blank">
           Lees het privacybeleid
         </a>
         .
-      </p>
+      </>
     )}
   </Canvas>
 </Guideline>

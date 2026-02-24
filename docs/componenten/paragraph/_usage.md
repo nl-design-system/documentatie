@@ -4,7 +4,8 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[@nl-design-system-candidate/paragraph-css](https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css)
+[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fparagraph-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/paragraph-css](https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css)
+versie 2.
 
 Gebruik de `nl-paragraph` class name op een `p` element:
 
@@ -51,7 +52,8 @@ import "@nl-design-system-candidate/paragraph-css/paragraph.css";
 
 De React component is gepubliceerd in een npm package:
 
-[@nl-design-system-candidate/paragraph-react](https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react)
+[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fparagraph-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/paragraph-react](https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react)
+versie 2.
 
 Je kunt de npm package zo installeren:
 
