@@ -17,6 +17,7 @@ import {
   UnorderedList,
 } from '@utrecht/component-library-react/dist/css-module';
 import type { ReactElement, ReactNode } from 'react';
+import { OverviewPage } from '@site/src/components/OverviewPage';
 
 interface Props {
   children: ReactNode;
@@ -45,6 +46,8 @@ export default function MDXContent({ children }: Props): ReactElement {
         h5: Heading5,
         h6: Heading6,
         admonition: Admonition,
+
+        OverviewPage,
       }}
     >
       {children}
