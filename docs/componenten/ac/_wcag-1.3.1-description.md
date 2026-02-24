@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Koppel de Form Field Description met `aria-describedby` aan het bijbehorende input-element:
+Koppel de Form Field Description met `aria-describedby` aan het bijbehorende element voor formulierinvoer:
 
 ```html
 <label for="name">Naam</label>
