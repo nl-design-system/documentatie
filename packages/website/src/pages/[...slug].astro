@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import Document from '@layouts/document.astro';
+import OverviewPage from '@components/docusaurus-mocks/OverviewPage.astro';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs')
@@ -19,5 +20,9 @@ const { Content } = await render(page)
 ---
 
 <Document>
-  <Content />
+  <Content
+    components={{
+      OverviewPage
+    }}
+  />
 </Document>
