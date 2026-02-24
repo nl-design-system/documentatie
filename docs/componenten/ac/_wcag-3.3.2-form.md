@@ -2,7 +2,7 @@
 
 Zorg ervoor dat het doel (of de naam) en instructies bij een invoerveld beschikbaar zijn en blijven.
 
-Maak daarom nooit alléén gebruik van een placeholdertekst voor de naam of instructies van een invoerveld. Plaats de instructies ook niet in een tooltip, maar boven of onder het veld en koppel het aan het invoerveld met `aria-describedby`.
+Maak daarom nooit alléén gebruik van een placeholdertekst voor de naam of instructies van een invoerveld. Plaats de instructies ook niet in een tooltip, maar boven of onder het veld en koppel het aan het element voor formulierinvoer met `aria-describedby`.
 
 Als een icon een alternatief is voor een tekstueel label bij een invoerveld, moet het duidelijk zijn wat de gebruiker moet doen of moet invullen.
 

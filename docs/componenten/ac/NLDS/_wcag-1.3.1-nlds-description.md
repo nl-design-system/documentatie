@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-De Form Field Description kan met `aria-describedby` aan het bijbehorende input-element worden gekoppeld.
+De Form Field Description kan met `aria-describedby` aan het bijbehorende element voor formulierinvoer worden gekoppeld.
 
 ```html
 <label for="name">Naam</label>

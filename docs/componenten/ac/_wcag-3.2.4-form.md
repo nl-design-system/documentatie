@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor dat invoervelden die op meerdere pagina's voorkomen en die dezelfde functie hebben, er op die pagina's hetzelfde uitzien en dezelfde visuele en toegankelijke naam hebben.
+Zorg ervoor dat componenten of elementen voor formulierinvoer die op meerdere pagina's voorkomen en die dezelfde functie hebben, er op die pagina's hetzelfde uitzien en dezelfde visuele en toegankelijke naam hebben.
 
 Bijvoorbeeld:
 
@@ -9,7 +9,7 @@ Bijvoorbeeld:
 
 Dit geldt ook voor het gebruik van icons.
 
-Als een component op verschillende plekken andere functies hebben hoeven die uiteraard niet hetzelfde visuele label te hebben. Bijvoorbeeld:
+Als dezelfde componenten of elementen op verschillende plekken andere functies hebben hoeven die uiteraard niet hetzelfde visuele label te hebben. Bijvoorbeeld:
 
 - Een algemene zoekfunctie genaamd 'Zoeken' in de header van iedere pagina.
 - Een specifieke zoekfunctie genaamd 'Zoek in de database'.
