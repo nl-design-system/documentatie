@@ -18,6 +18,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import type { ReactElement, ReactNode } from 'react';
 import { OverviewPage } from '@site/src/components/OverviewPage';
+import DocCardList from '@theme/DocCardList';
 
 interface Props {
   children: ReactNode;
@@ -48,6 +49,7 @@ export default function MDXContent({ children }: Props): ReactElement {
         admonition: Admonition,
 
         OverviewPage,
+        DocCardList,
       }}
     >
       {children}
