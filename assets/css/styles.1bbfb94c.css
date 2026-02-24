@@ -9393,6 +9393,12 @@ li.almost-check:before {
 .status-visual__description {
  margin-inline-start: 0;
 }
+.nlds-icon-ext {
+ background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSIgYXJpYS1oaWRkZW49InRydWUiIHZpZXdCb3g9IjAgMCAyMiAyMiI+PHBhdGggc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTEwIDVIOC4yYy0xLjEyIDAtMS42OCAwLTIuMTA4LjIxOGEyIDIgMCAwIDAtLjg3NC44NzRDNSA2LjUyIDUgNy4wOCA1IDguMnY3LjZjMCAxLjEyIDAgMS42OC4yMTggMi4xMDhhMiAyIDAgMCAwIC44NzQuODc0Yy40MjcuMjE4Ljk4Ny4yMTggMi4xMDUuMjE4aDcuNjA2YzEuMTE4IDAgMS42NzcgMCAyLjEwNC0uMjE4LjM3Ny0uMTkyLjY4My0uNDk4Ljg3NS0uODc0LjIxOC0uNDI4LjIxOC0uOTg3LjIxOC0yLjEwNVYxNG0xLTVWNG0wIDBoLTVtNSAwLTcgNyIvPjwvc3ZnPg==);
+ background-position: 100%;
+ background-repeat: no-repeat;
+ padding-right: 24px;
+}
 .component-criteria-section {
  border: 1px solid #ccc;
  margin-bottom: 1em;
