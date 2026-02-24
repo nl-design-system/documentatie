@@ -4,7 +4,8 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[@nl-design-system-candidate/heading-css](https://www.npmjs.com/package/@nl-design-system-candidate/heading-css)
+[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fheading-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/heading-css](https://www.npmjs.com/package/@nl-design-system-candidate/heading-css)
+versie 1.
 
 Je kunt de CSS zo in je project installeren:
 
@@ -94,7 +95,8 @@ Gebruik voor een koptekst die semantisch op het ene level staat, maar visueel de
 
 De React component is gepubliceerd in een npm package:
 
-[@nl-design-system-candidate/heading-react](https://www.npmjs.com/package/@nl-design-system-candidate/heading-react)
+[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fheading-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/heading-react](https://www.npmjs.com/package/@nl-design-system-candidate/heading-react)
+versie 1.
 
 Je kunt de npm package zo installeren:
 

@@ -61,6 +61,8 @@ Voorbeelden van dit soort functionaliteit:
 - [drupal.accounce](https://www.drupal.org/node/1973218) voor Drupal.
 - [live-announcer](https://www.npmjs.com/package/@react-aria/live-announcer) voor react-aria.
 
+Het informeren van alle gebruikers over een statusbericht is verplicht om te voldoen aan het WCAG-succescriterium [4.1.3 Statusberichten](https://nldesignsystem.nl/wcag/4.1.3) (niveau AA).
+
 Bronnen:
 
 - [<span lang="en">Defining toast messages</span>](https://adrianroselli.com/2020/01/defining-toast-messages.html) van Adrian Roselli.

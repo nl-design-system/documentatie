@@ -64,3 +64,8 @@ Het aangeven van invoerpatronen in de placeholder of in het value-attribute kan 
 Is een exacte invoer nodig, bijvoorbeeld bij een geboortedatum, biedt dan een optie aan die iedereen makkelijk kan invullen. De richtlijn [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](https://nldesignsystem.nl/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen) gaat hier uitgebreid op in.
 
 Daarnaast zijn een goede description en duidelijke foutmeldingen belangrijk. Help de gebruiker en laat deze niet puzzelen over hoe precies een veld in te vullen en wat er nu weer fout gaat.
+
+Het geven van goede feedback over het juist invoeren van gegevens in formuliervelden is nodig om te voldoen aan de WCAG-succescriteria:
+
+- [3.3.1 Foutidentificatie](https://nldesignsystem.nl/wcag/3.3.1) (niveau A).
+- [3.3.3 Foutsuggestie](https://nldesignsystem.nl/wcag/3.3.3) (niveau AA).

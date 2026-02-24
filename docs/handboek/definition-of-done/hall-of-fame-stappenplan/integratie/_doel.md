@@ -1,1 +1,0 @@
-De component is volledig is geïntegreerd in het bredere ecosysteem van het design system, zodat gebruikers de component kunnen gebruiken in combinatie met alle andere componenten, patronen, templates, prototypes en hulpmiddelen.

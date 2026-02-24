@@ -1,5 +1,6 @@
 import HeartbeatJSON from '../../docs/community/events/heartbeat/heartbeat.json';
 import { VideoPlayer } from '@site/src/components/VideoPlayer';
+import MDXContent from '@theme/MDXContent';
 import { Heading, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import Markdown from 'react-markdown';
 
@@ -27,9 +28,11 @@ export const HeartbeatEpisode = ({ id, headingLevel }: HeartbeatEpisodeProps) =>
           {new Date(episode.date).toLocaleDateString('NL-nl', { year: 'numeric', month: 'long', day: 'numeric' })}
         </Heading>
       )}
-      {episode.description.map((description) => (
-        <Markdown key={description}>{description}</Markdown>
-      ))}
+      <MDXContent>
+        {episode.description.map((description) => (
+          <Markdown key={description}>{description}</Markdown>
+        ))}
+      </MDXContent>
       {episode.youtubeId ? (
         <VideoPlayer id={episode.youtubeId} title={episode.title} />
       ) : (

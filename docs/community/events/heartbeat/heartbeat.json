@@ -1,26 +1,5 @@
 [
   {
-    "id": 119,
-    "date": "2026-02-17",
-    "description": [
-      "Sergei is tech lead bij Open Formulieren en vertelt hoe de nieuwe rendering het makkelijker maakt om nog meer aan te sluiten op NL Design System.",
-      "Kees is developer en heeft voor Rotterdam Design System Apache Wicket componenten gemaakt op basis van NL Design System.",
-      "Jeffrey en Rozerin vertellen over de Community componenten die zij hebben toegevoegd aan de Figma bibliotheek, zoals Description List, Date Input, Calendar, Checkbox Group en Radio Group."
-    ],
-    "title": "Heartbeat van 17 februari 2026.",
-    "youtubeId": "55KlsLNkiDI"
-  },
-  {
-    "id": 118,
-    "date": "2026-02-03",
-    "description": [
-      "Rene is systeemontwerper. Hij heeft een project afgerond waarbij hij geëxperimenteerd heeft met het toepassen van NL Design System op een beheerapplicatie. Nu neemt hij ons mee in de aanpak en lessen.",
-      "Michelle is als front-end developer onderdeel van het Expertteam Digitale Toegankelijkheid. Door dit team is gewerkt aan een Cookie Consent Drawer die onder andere ingezet wordt bij de Theme Wizard."
-    ],
-    "title": "Heartbeat van 3 februari 2026.",
-    "youtubeId": "6OaIz4dgaSg"
-  },
-  {
     "id": 117,
     "date": "2026-01-20",
     "description": [
@@ -117,7 +96,7 @@
     "id": 108,
     "date": "2025-09-16",
     "description": [
-      "Renate geeft uitleg over de nieuwe verdeling in toegankelijkheid acceptatiecriteria: wat is er ín de component geregeld en waar moet je rekening mee houden in het gebruik?",
+      "Renate geeft uitleg over de nieuwe verdeling in toegankelijkheid acceptatiecriteria: wat is er ín het component geregeld en waar moet je rekening mee houden in het gebruik?",
       "Peter laat zien hoe ver hij is met gebruikersonderzoeken.nl op basis van NL Design System en Astro."
     ],
     "title": "Heartbeat van 16 september 2025.",
@@ -368,7 +347,7 @@
     "id": 83,
     "date": "2024-07-09",
     "description": [
-      "Vandaag laat Yolijn zien hoe de componentenpagina's een mooie update hebben gekregen: bij elk component is nu te zien welke checks zijn gedaan, en welke organisaties de component hebben geclaimd. Dit alles op basis van GitHub-borden, die organisaties voor hun eigen componenten ook kunnen bijhouden."
+      "Vandaag laat Yolijn zien hoe de componentenpagina's een mooie update hebben gekregen: bij elk component is nu te zien welke checks zijn gedaan, en welke organisaties het component hebben geclaimd. Dit alles op basis van GitHub-borden, die organisaties voor hun eigen componenten ook kunnen bijhouden."
     ],
     "title": "Heartbeat van 9 juli 2024",
     "youtubeId": "cP18eTpyB0g"

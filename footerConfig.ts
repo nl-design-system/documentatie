@@ -25,7 +25,7 @@ const footer: Footer = {
     },
     {
       label: 'GitHub',
-      href: '/github/',
+      href: 'https://github.com/nl-design-system/backlog',
     },
     {
       label: 'Slack',
@@ -33,7 +33,7 @@ const footer: Footer = {
     },
     {
       label: 'Figma',
-      href: '/figma/',
+      href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&t=t25LHoMjEkUZyEi1-1',
     },
   ],
 };

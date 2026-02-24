@@ -9,12 +9,8 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <label htmlFor="dier1">Wat is je lievelingsdier?</label>
-        </p>
-        <p>
-          <input type="text" id="dier1" name="lievelingsdier" placeholder="Bijvoorbeeld cavia" />
-        </p>
+        <label htmlFor="dier1">Wat is je lievelingsdier?</label>
+        <input type="text" id="dier1" name="lievelingsdier" placeholder="Bijvoorbeeld cavia" />
       </>
     )}
   </Canvas>
@@ -24,15 +20,10 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          <input
-            type="text"
-            id="dier2"
-            name="lievelingsdier"
-            placeholder="Wat is je lievelingsdier?"
-            aria-label="Wat is je lievelingsdier?"
-          />
-        </p>
+        <label htmlFor="dier2" className="visually-hidden">
+          Wat is je lievelingsdier?
+        </label>
+        <input type="text" id="dier2" name="lievelingsdier" placeholder="Wat is je lievelingsdier?" />
       </>
     )}
   </Canvas>

@@ -76,18 +76,6 @@ Voeg het label `visual regression test` toe aan je pull request om Argos CI aan 
 
 [![Covered by Argos Visual Testing](https://argos-ci.com/badge-large.svg)](https://app.argos-ci.com/nl-design-system-ci/nldesignsystem.nl/reference)
 
-## Browsers installeren
-
-Installeer de browsers die nodig zijn voor het testen:
-
-`pnpm install-test-browsers`
-
-## Toegankelijkheidstests
-
-Draai de toegankelijkheidstests:
-
-`pnpm test-a11y`
-
 ## Documentatie toevoegen
 
 We schrijven documentatie waar mogelijk in herbruikbare Markdown-bestanden (`.md`). Voor pagina's waar we meerdere Markdown-bestanden samenvoegen of afwisselend tekst en HTML nodig hebben, gebruiken we MDX. [MDX](https://mdxjs.com) is een combinatie tussen JavaScript met React-componenten en Markdown. Een heel beperkt aantal pagina's maken we met TypeScript en React, als ze complex zijn en niet herbruikbaar hoeven te zijn.

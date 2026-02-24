@@ -147,15 +147,14 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
   );
 };
 
-export const HelpImproveComponent = ({ component, headingLevel }: ComponentPageSectionProps) => {
+export const HelpImproveComponent = ({ component }: ComponentPageSectionProps) => {
   const DISCUSSION_URL_COLUMN_ID = 'PVTF_lADOBGdlVM4AdX8lzgcig7o';
   const project = component?.projects.find((project) => project.id === 'HELP_WANTED');
-  const DiscussionUrl = project?.tasks.find((task) => task.id === DISCUSSION_URL_COLUMN_ID)?.value;
+  const DiscussionUrl = project?.tasks.find((task) => task.id === DISCUSSION_URL_COLUMN_ID).value;
 
   return (
     component && (
       <>
-        <Heading level={headingLevel}>Help om deze component te verbeteren</Heading>
         <Paragraph>
           We vinden het belangrijk dat de component {component.title} goed te gebruiken is door iedereen. Help je mee?
         </Paragraph>

@@ -6,3 +6,8 @@ Net zoals bij de foutmeldingen is het belangrijk dat de gebruiker de succesmeldi
 
 - Feedback van [screenreaders](/woordenlijst/#screenreader) en focusmanagement na submit.
 - Update van de `<title>` in het `<head>`-element.
+
+De succesmelding toegankelijk te maken voor alle gebruikers is nodig om te voldoen aan de WCAG-succescriteria:
+
+- [1.3.1 Info en relaties](/wcag/1.3.1) (niveau A).
+- [2.4.2 Paginatitel](/wcag/2.4.2) (niveau A).
