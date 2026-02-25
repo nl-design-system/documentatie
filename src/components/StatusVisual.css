@@ -33,7 +33,7 @@
 .status-visual__title {
   display: flex;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: var(--basis-typography-font-size-lg);
   margin: 0;
   padding: 1rem;
 }
