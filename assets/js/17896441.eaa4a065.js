@@ -3,7 +3,7 @@
  [18401],
  {
   3227(e, n, t) {
-   t.d(n, { A: () => v });
+   t.d(n, { A: () => p });
    var s = t(60316),
     l = t(45282),
     o = t(2264),
@@ -32,9 +32,9 @@
    }
    function h({ className: e }) {
     const n = (0, s.$S)();
-    return (0, a.jsx)(v, { items: n.items, className: e });
+    return (0, a.jsx)(p, { items: n.items, className: e });
    }
-   function v(e) {
+   function p(e) {
     const { items: n, className: t } = e;
     if (!n) return (0, a.jsx)(h, { ...e });
     const l = (0, s.d1)(n);
@@ -66,10 +66,47 @@
     m = ({ title: e, appearance: n, description: t, children: a, figure: m }) => {
      const u = { do: 'Doen', dont: 'Niet doen' },
       h = m ? 'figure' : 'div',
-      v = m ? 'figcaption' : 'div',
-      p = 'string' == typeof t ? (0, c.jsx)(i.oz, { children: t }) : t;
-     return (0, c.jsxs)(h, { className: (0, r.A)('nlds-guideline', `nlds-guideline--${n}`), id: 'string' == typeof e ? e?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(v, { className: 'nlds-guideline__description', children: ['dont' === n ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.fz, { className: (0, r.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(l.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, c.jsx)(o.fz, { children: e })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.fz, { className: (0, r.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(s.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, c.jsx)(o.fz, { children: e })] }), p] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(d.Provider, { value: { title: e, type: u[n] }, children: a }) })] });
+      p = m ? 'figcaption' : 'div',
+      v = 'string' == typeof t ? (0, c.jsx)(i.oz, { children: t }) : t;
+     return (0, c.jsxs)(h, { className: (0, r.A)('nlds-guideline', `nlds-guideline--${n}`), id: 'string' == typeof e ? e?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(p, { className: 'nlds-guideline__description', children: ['dont' === n ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.fz, { className: (0, r.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(l.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, c.jsx)(o.fz, { children: e })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.fz, { className: (0, r.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(s.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, c.jsx)(o.fz, { children: e })] }), v] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(d.Provider, { value: { title: e, type: u[n] }, children: a }) })] });
     };
+  },
+  29452(e, n, t) {
+   t.d(n, { A: () => b });
+   var s = t(18439),
+    l = t(76713),
+    o = t(5784),
+    r = t(30758),
+    i = t(86070);
+   function a(e) {
+    const n = r.Children.toArray(e.children),
+     t = n.find((e) => r.isValidElement(e) && 'summary' === e.props?.mdxType),
+     s = (0, i.jsx)(i.Fragment, { children: n.filter((e) => e !== t) });
+    return (0, i.jsx)(o.A, { ...e, summary: t, children: s });
+   }
+   var c = t(69284);
+   function d(e) {
+    let n,
+     t = '';
+    if ((0, r.isValidElement)(e.children)) {
+     const s = e.children.props,
+      l = 'string' == typeof s.className ? s.className.match(/(?:^|.*\s)(?:language-)([^\s]+)(?:\s+|$)/) : null;
+     (l && (n = l[1]), 'string' == typeof s.children && (t = s.children));
+    }
+    return (0, i.jsx)(c.M, { syntax: n, textContent: t, trim: !0 });
+   }
+   var m = t(46447),
+    u = t(60316),
+    h = t(13526),
+    p = t(3227);
+   const v = (e, n) => e.reduce((e, t) => ('link' === t.type ? (n.includes(t.docId) ? e : [...e, t]) : 'category' === t.type ? [...e, { ...t, items: v(t.items, n) }] : e), []),
+    x = ({ excludeDocIDs: e = [], className: n, ...t }) => {
+     const s = (0, u.$S)();
+     return (0, i.jsx)('div', { ...t, className: (0, h.A)('margin-top--lg', n), children: (0, i.jsx)(p.A, { items: v(s.items, e) }) });
+    };
+   function b({ children: e }) {
+    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: l.A, OverviewPage: x, DocCardList: p.A }, children: e });
+   }
   },
   45282(e, n, t) {
    t.d(n, { F: () => o, N: () => r });
@@ -150,7 +187,7 @@
    }
   },
   78361(e, n, t) {
-   (t.r(n), t.d(n, { default: () => D }));
+   (t.r(n), t.d(n, { default: () => R }));
    var s = t(30758),
     l = t(86332),
     o = t(90076),
@@ -174,11 +211,11 @@
    var m = t(13526),
     u = t(14149),
     h = t(7619);
-   function v() {
+   function p() {
     const { metadata: e } = c();
     return (0, r.jsx)(h.A, { className: 'docusaurus-mt-lg', previous: e.previous, next: e.next });
    }
-   var p = t(92410),
+   var v = t(92410),
     x = t(88519),
     b = t(71639),
     f = t(97068),
@@ -216,19 +253,19 @@
     return (0, r.jsx)(B.A, { toc: e, minHeadingLevel: n.toc_min_heading_level, maxHeadingLevel: n.toc_max_heading_level, className: b.G.docs.docTocDesktop });
    }
    var I = t(39470),
-    V = t(85963);
-   function F({ children: e }) {
+    V = t(29452);
+   function $({ children: e }) {
     const n = (function () {
      const { metadata: e, frontMatter: n, contentTitle: t } = c();
      return n.hide_title || void 0 !== t ? null : e.title;
     })();
     return (0, r.jsxs)('div', { className: (0, m.A)(b.G.docs.docMarkdown, 'markdown'), children: [n && (0, r.jsx)('header', { children: (0, r.jsx)(I.A, { as: 'h1', children: n }) }), (0, r.jsx)(V.A, { children: e })] });
    }
-   var $ = t(87836),
-    O = t(82826);
+   var O = t(87836),
+    F = t(82826);
    const U = 'docItemContainer_aQSU',
-    G = 'docItemCol_pMYj';
-   function R({ children: e }) {
+    D = 'docItemCol_pMYj';
+   function G({ children: e }) {
     const n = (function () {
       const { frontMatter: e, toc: n } = c(),
        t = (0, u.l)(),
@@ -237,12 +274,12 @@
       return { hidden: s, mobile: l ? (0, r.jsx)(S, {}) : void 0, desktop: !l || ('desktop' !== t && 'ssr' !== t) ? void 0 : (0, r.jsx)(E, {}) };
      })(),
      { metadata: t } = c();
-    return (0, r.jsxs)('div', { className: 'row', children: [(0, r.jsxs)('div', { className: (0, m.A)('col', !n.hidden && G), children: [(0, r.jsx)(O.A, { metadata: t }), (0, r.jsx)(p.A, {}), (0, r.jsxs)('div', { className: U, children: [(0, r.jsxs)('article', { children: [(0, r.jsx)($.A, {}), (0, r.jsx)(x.A, {}), n.mobile, (0, r.jsx)(F, { children: e }), (0, r.jsx)(j, {})] }), (0, r.jsx)(v, {})] })] }), n.desktop && (0, r.jsx)('div', { className: 'col col--3', children: n.desktop })] });
+    return (0, r.jsxs)('div', { className: 'row', children: [(0, r.jsxs)('div', { className: (0, m.A)('col', !n.hidden && D), children: [(0, r.jsx)(F.A, { metadata: t }), (0, r.jsx)(v.A, {}), (0, r.jsxs)('div', { className: U, children: [(0, r.jsxs)('article', { children: [(0, r.jsx)(O.A, {}), (0, r.jsx)(x.A, {}), n.mobile, (0, r.jsx)($, { children: e }), (0, r.jsx)(j, {})] }), (0, r.jsx)(p, {})] })] }), n.desktop && (0, r.jsx)('div', { className: 'col col--3', children: n.desktop })] });
    }
-   function D(e) {
+   function R(e) {
     const n = `docs-doc-id-${e.content.metadata.id}`,
      t = e.content;
-    return (0, r.jsx)(a, { content: e.content, children: (0, r.jsxs)(l.e3, { className: n, children: [(0, r.jsx)(d, {}), (0, r.jsx)(R, { children: (0, r.jsx)(t, {}) })] }) });
+    return (0, r.jsx)(a, { content: e.content, children: (0, r.jsxs)(l.e3, { className: n, children: [(0, r.jsx)(d, {}), (0, r.jsx)(G, { children: (0, r.jsx)(t, {}) })] }) });
    }
   },
   78690(e, n, t) {
@@ -296,7 +333,7 @@
    }
   },
   85412(e, n, t) {
-   t.d(n, { A: () => p });
+   t.d(n, { A: () => v });
    var s = t(30758),
     l = t(87014);
    function o(e) {
@@ -397,52 +434,22 @@
    function h({ toc: e, className: n, linkClassName: t, isChild: s }) {
     return e.length ? (0, u.jsx)('ul', { className: s ? void 0 : n, children: e.map((e) => (0, u.jsxs)('li', { children: [(0, u.jsx)(m.A, { to: `#${e.id}`, className: t ?? void 0, dangerouslySetInnerHTML: { __html: e.value } }), (0, u.jsx)(h, { isChild: !0, toc: e.children, className: n, linkClassName: t })] }, e.id)) }) : null;
    }
-   const v = s.memo(h);
-   function p({ toc: e, className: n = 'table-of-contents table-of-contents__left-border', linkClassName: t = 'table-of-contents__link', linkActiveClassName: i, minHeadingLevel: a, maxHeadingLevel: c, ...m }) {
+   const p = s.memo(h);
+   function v({ toc: e, className: n = 'table-of-contents table-of-contents__left-border', linkClassName: t = 'table-of-contents__link', linkActiveClassName: i, minHeadingLevel: a, maxHeadingLevel: c, ...m }) {
     const h = (0, l.p)(),
-     p = a ?? h.tableOfContents.minHeadingLevel,
+     v = a ?? h.tableOfContents.minHeadingLevel,
      x = c ?? h.tableOfContents.maxHeadingLevel,
      b = (function ({ toc: e, minHeadingLevel: n, maxHeadingLevel: t }) {
       return (0, s.useMemo)(() => r({ toc: o(e), minHeadingLevel: n, maxHeadingLevel: t }), [e, n, t]);
-     })({ toc: e, minHeadingLevel: p, maxHeadingLevel: x });
+     })({ toc: e, minHeadingLevel: v, maxHeadingLevel: x });
     return (
      d(
       (0, s.useMemo)(() => {
-       if (t && i) return { linkClassName: t, linkActiveClassName: i, minHeadingLevel: p, maxHeadingLevel: x };
-      }, [t, i, p, x]),
+       if (t && i) return { linkClassName: t, linkActiveClassName: i, minHeadingLevel: v, maxHeadingLevel: x };
+      }, [t, i, v, x]),
      ),
-     (0, u.jsx)(v, { toc: b, className: n, linkClassName: t, ...m })
+     (0, u.jsx)(p, { toc: b, className: n, linkClassName: t, ...m })
     );
-   }
-  },
-  85963(e, n, t) {
-   t.d(n, { A: () => h });
-   var s = t(18439),
-    l = t(76713),
-    o = t(5784),
-    r = t(30758),
-    i = t(86070);
-   function a(e) {
-    const n = r.Children.toArray(e.children),
-     t = n.find((e) => r.isValidElement(e) && 'summary' === e.props?.mdxType),
-     s = (0, i.jsx)(i.Fragment, { children: n.filter((e) => e !== t) });
-    return (0, i.jsx)(o.A, { ...e, summary: t, children: s });
-   }
-   var c = t(69284);
-   function d(e) {
-    let n,
-     t = '';
-    if ((0, r.isValidElement)(e.children)) {
-     const s = e.children.props,
-      l = 'string' == typeof s.className ? s.className.match(/(?:^|.*\s)(?:language-)([^\s]+)(?:\s+|$)/) : null;
-     (l && (n = l[1]), 'string' == typeof s.children && (t = s.children));
-    }
-    return (0, i.jsx)(c.M, { syntax: n, textContent: t, trim: !0 });
-   }
-   var m = t(46447),
-    u = t(89874);
-   function h({ children: e }) {
-    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: l.A, OverviewPage: u.F }, children: e });
    }
   },
   87836(e, n, t) {
@@ -464,14 +471,14 @@
     const e = (0, c.Ay)('/');
     return (0, d.jsx)('li', { className: 'breadcrumbs__item', children: (0, d.jsx)(i.A, { 'aria-label': (0, a.T)({ id: 'theme.docs.breadcrumbs.home', message: 'Home page', description: 'The ARIA label for the home page in the breadcrumbs' }), className: 'breadcrumbs__link', href: e, children: (0, d.jsx)(m, { className: u }) }) });
    }
-   var v = t(70241),
-    p = t(74147);
+   var p = t(70241),
+    v = t(74147);
    function x(e) {
     const n = (function ({ breadcrumbs: e }) {
-     const { siteConfig: n } = (0, p.A)();
+     const { siteConfig: n } = (0, v.A)();
      return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: e.filter((e) => e.href).map((e, t) => ({ '@type': 'ListItem', position: t + 1, name: e.label, item: `${n.url}${e.href}` })) };
     })({ breadcrumbs: e.breadcrumbs });
-    return (0, d.jsx)(v.A, { children: (0, d.jsx)('script', { type: 'application/ld+json', children: JSON.stringify(n) }) });
+    return (0, d.jsx)(p.A, { children: (0, d.jsx)('script', { type: 'application/ld+json', children: JSON.stringify(n) }) });
    }
    const b = 'breadcrumbsContainer_Bqeg';
    function f({ children: e, href: n, isLast: t }) {
@@ -521,18 +528,6 @@
     return n.badge ? (0, i.jsx)('span', { className: (0, s.A)(e, o.G.docs.docVersionBadge, 'badge badge--secondary'), children: (0, i.jsx)(l.A, { id: 'theme.docs.versionBadge.label', values: { versionLabel: n.label }, children: 'Version: {versionLabel}' }) }) : null;
    }
   },
-  89874(e, n, t) {
-   t.d(n, { F: () => a });
-   var s = t(60316),
-    l = t(13526),
-    o = t(3227),
-    r = t(86070);
-   const i = (e, n) => e.reduce((e, t) => ('link' === t.type ? (n.includes(t.docId) ? e : [...e, t]) : 'category' === t.type ? [...e, { ...t, items: i(t.items, n) }] : e), []),
-    a = ({ excludeDocIDs: e = [], className: n, ...t }) => {
-     const a = (0, s.$S)();
-     return (0, r.jsx)('div', { ...t, className: (0, l.A)('margin-top--lg', n), children: (0, r.jsx)(o.A, { items: i(a.items, e) }) });
-    };
-  },
   92410(e, n, t) {
    t.d(n, { A: () => x });
    t(30758);
@@ -557,23 +552,23 @@
     const n = u[e.versionMetadata.banner];
     return (0, m.jsx)(n, { ...e });
    }
-   function v({ versionLabel: e, to: n, onClick: t }) {
+   function p({ versionLabel: e, to: n, onClick: t }) {
     return (0, m.jsx)(r.A, { id: 'theme.docs.versions.latestVersionSuggestionLabel', description: 'The label used to tell the user to check the latest version', values: { versionLabel: e, latestVersionLink: (0, m.jsx)('b', { children: (0, m.jsx)(o.A, { to: n, onClick: t, children: (0, m.jsx)(r.A, { id: 'theme.docs.versions.latestVersionLinkLabel', description: 'The label used for the latest version suggestion link label', children: 'latest version' }) }) }) }, children: 'For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).' });
    }
-   function p({ className: e, versionMetadata: n }) {
+   function v({ className: e, versionMetadata: n }) {
     const {
       siteConfig: { title: t },
      } = (0, l.A)(),
      { pluginId: o } = (0, i.vT)({ failfast: !0 }),
      { savePreferredVersionName: r } = (0, c.g1)(o),
      { latestDocSuggestion: d, latestVersionSuggestion: u } = (0, i.HW)(o),
-     p = d ?? (x = u).docs.find((e) => e.id === x.mainDocId);
+     v = d ?? (x = u).docs.find((e) => e.id === x.mainDocId);
     var x;
-    return (0, m.jsxs)('div', { className: (0, s.A)(e, a.G.docs.docVersionBanner, 'alert alert--warning margin-bottom--md'), role: 'alert', children: [(0, m.jsx)('div', { children: (0, m.jsx)(h, { siteTitle: t, versionMetadata: n }) }), (0, m.jsx)('div', { className: 'margin-top--md', children: (0, m.jsx)(v, { versionLabel: u.label, to: p.path, onClick: () => r(u.name) }) })] });
+    return (0, m.jsxs)('div', { className: (0, s.A)(e, a.G.docs.docVersionBanner, 'alert alert--warning margin-bottom--md'), role: 'alert', children: [(0, m.jsx)('div', { children: (0, m.jsx)(h, { siteTitle: t, versionMetadata: n }) }), (0, m.jsx)('div', { className: 'margin-top--md', children: (0, m.jsx)(p, { versionLabel: u.label, to: v.path, onClick: () => r(u.name) }) })] });
    }
    function x({ className: e }) {
     const n = (0, d.r)();
-    return n.banner ? (0, m.jsx)(p, { className: e, versionMetadata: n }) : null;
+    return n.banner ? (0, m.jsx)(v, { className: e, versionMetadata: n }) : null;
    }
   },
  },

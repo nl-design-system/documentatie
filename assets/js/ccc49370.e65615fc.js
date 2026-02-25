@@ -103,7 +103,7 @@
     return (0, r.jsxs)('header', { children: [(0, r.jsx)(c, {}), (0, r.jsx)(f, {}), (0, r.jsx)(N, {})] });
    }
    var k = n(99939),
-    _ = n(85963);
+    _ = n(29452);
    function L({ children: e, className: t }) {
     const { isBlogPostPage: n } = (0, l.e7)();
     return (0, r.jsx)('div', { id: n ? k.LU : void 0, className: (0, s.A)('markdown', t), children: (0, r.jsx)(_.A, { children: e }) });
@@ -213,6 +213,43 @@
    function v(e) {
     const t = e.content;
     return (0, m.jsx)(o.in, { content: e.content, isBlogPostPage: !0, children: (0, m.jsxs)(l.e3, { className: (0, s.A)(r.G.wrapper.blogPages, r.G.page.blogPostPage), children: [(0, m.jsx)(h, {}), (0, m.jsx)(g, {}), (0, m.jsx)(y, { sidebar: e.sidebar, children: (0, m.jsx)(t, {}) })] }) });
+   }
+  },
+  29452(e, t, n) {
+   n.d(t, { A: () => f });
+   var s = n(18439),
+    l = n(76713),
+    r = n(5784),
+    o = n(30758),
+    a = n(86070);
+   function i(e) {
+    const t = o.Children.toArray(e.children),
+     n = t.find((e) => o.isValidElement(e) && 'summary' === e.props?.mdxType),
+     s = (0, a.jsx)(a.Fragment, { children: t.filter((e) => e !== n) });
+    return (0, a.jsx)(r.A, { ...e, summary: n, children: s });
+   }
+   var c = n(69284);
+   function d(e) {
+    let t,
+     n = '';
+    if ((0, o.isValidElement)(e.children)) {
+     const s = e.children.props,
+      l = 'string' == typeof s.className ? s.className.match(/(?:^|.*\s)(?:language-)([^\s]+)(?:\s+|$)/) : null;
+     (l && (t = l[1]), 'string' == typeof s.children && (n = s.children));
+    }
+    return (0, a.jsx)(c.M, { syntax: t, textContent: n, trim: !0 });
+   }
+   var m = n(46447),
+    u = n(60316),
+    h = n(13526),
+    p = n(3227);
+   const g = (e, t) => e.reduce((e, n) => ('link' === n.type ? (t.includes(n.docId) ? e : [...e, n]) : 'category' === n.type ? [...e, { ...n, items: g(n.items, t) }] : e), []),
+    x = ({ excludeDocIDs: e = [], className: t, ...n }) => {
+     const s = (0, u.$S)();
+     return (0, a.jsx)('div', { ...n, className: (0, h.A)('margin-top--lg', t), children: (0, a.jsx)(p.A, { items: g(s.items, e) }) });
+    };
+   function f({ children: e }) {
+    return (0, a.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: i, ul: ({ children: e }) => (0, a.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, a.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: l.A, OverviewPage: x, DocCardList: p.A }, children: e });
    }
   },
   45282(e, t, n) {
@@ -462,48 +499,6 @@
      (0, u.jsx)(p, { toc: f, className: t, linkClassName: n, ...m })
     );
    }
-  },
-  85963(e, t, n) {
-   n.d(t, { A: () => h });
-   var s = n(18439),
-    l = n(76713),
-    r = n(5784),
-    o = n(30758),
-    a = n(86070);
-   function i(e) {
-    const t = o.Children.toArray(e.children),
-     n = t.find((e) => o.isValidElement(e) && 'summary' === e.props?.mdxType),
-     s = (0, a.jsx)(a.Fragment, { children: t.filter((e) => e !== n) });
-    return (0, a.jsx)(r.A, { ...e, summary: n, children: s });
-   }
-   var c = n(69284);
-   function d(e) {
-    let t,
-     n = '';
-    if ((0, o.isValidElement)(e.children)) {
-     const s = e.children.props,
-      l = 'string' == typeof s.className ? s.className.match(/(?:^|.*\s)(?:language-)([^\s]+)(?:\s+|$)/) : null;
-     (l && (t = l[1]), 'string' == typeof s.children && (n = s.children));
-    }
-    return (0, a.jsx)(c.M, { syntax: t, textContent: n, trim: !0 });
-   }
-   var m = n(46447),
-    u = n(89874);
-   function h({ children: e }) {
-    return (0, a.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: i, ul: ({ children: e }) => (0, a.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, a.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: l.A, OverviewPage: u.F }, children: e });
-   }
-  },
-  89874(e, t, n) {
-   n.d(t, { F: () => i });
-   var s = n(60316),
-    l = n(13526),
-    r = n(3227),
-    o = n(86070);
-   const a = (e, t) => e.reduce((e, n) => ('link' === n.type ? (t.includes(n.docId) ? e : [...e, n]) : 'category' === n.type ? [...e, { ...n, items: a(n.items, t) }] : e), []),
-    i = ({ excludeDocIDs: e = [], className: t, ...n }) => {
-     const i = (0, s.$S)();
-     return (0, o.jsx)('div', { ...n, className: (0, l.A)('margin-top--lg', t), children: (0, o.jsx)(r.A, { items: a(i.items, e) }) });
-    };
   },
  },
 ]);

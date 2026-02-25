@@ -131,7 +131,7 @@
     return (0, r.jsxs)('header', { children: [(0, r.jsx)(c, {}), (0, r.jsx)(y, {}), (0, r.jsx)(A, {})] });
    }
    var N = s(99939),
-    T = s(85963);
+    T = s(29452);
    function _({ children: e, className: t }) {
     const { isBlogPostPage: s } = (0, l.e7)();
     return (0, r.jsx)('div', { id: s ? N.LU : void 0, className: (0, n.A)('markdown', t), children: (0, r.jsx)(T.A, { children: e }) });
@@ -139,14 +139,14 @@
    var w = s(71639),
     P = s(29307),
     U = s(97068);
-   function F() {
+   function C() {
     return (0, r.jsx)('b', { children: (0, r.jsx)(d.A, { id: 'theme.blog.post.readMore', description: 'The label used in blog post item excerpts to link to full blog posts', children: 'Read more' }) });
    }
    function B(e) {
     const { blogPostTitle: t, ...s } = e;
-    return (0, r.jsx)(a.A, { 'aria-label': (0, d.T)({ message: 'Read more about {title}', id: 'theme.blog.post.readMoreLabel', description: 'The ARIA label for the link to full blog posts from excerpts' }, { title: t }), ...s, children: (0, r.jsx)(F, {}) });
+    return (0, r.jsx)(a.A, { 'aria-label': (0, d.T)({ message: 'Read more about {title}', id: 'theme.blog.post.readMoreLabel', description: 'The ARIA label for the link to full blog posts from excerpts' }, { title: t }), ...s, children: (0, r.jsx)(C, {}) });
    }
-   function C() {
+   function F() {
     const { metadata: e, isBlogPostPage: t } = (0, l.e7)(),
      { tags: s, title: o, editUrl: a, hasTruncateMarker: i, lastUpdatedBy: c, lastUpdatedAt: d } = e,
      m = !t && i,
@@ -163,7 +163,7 @@
      const { isBlogPostPage: e } = (0, l.e7)();
      return e ? void 0 : 'margin-bottom--xl';
     })();
-    return (0, r.jsxs)(o, { className: (0, n.A)(s, t), children: [(0, r.jsx)(k, {}), (0, r.jsx)(_, { children: e }), (0, r.jsx)(C, {})] });
+    return (0, r.jsxs)(o, { className: (0, n.A)(s, t), children: [(0, r.jsx)(k, {}), (0, r.jsx)(_, { children: e }), (0, r.jsx)(F, {})] });
    }
   },
   15638(e, t, s) {
@@ -194,6 +194,43 @@
     const { metadata: t } = e,
      { previousPage: s, nextPage: o } = t;
     return (0, r.jsxs)('nav', { className: 'pagination-nav', 'aria-label': (0, n.T)({ id: 'theme.blog.paginator.navAriaLabel', message: 'Blog list page navigation', description: 'The ARIA label for the blog pagination' }), children: [s && (0, r.jsx)(l.A, { permalink: s, title: (0, r.jsx)(n.A, { id: 'theme.blog.paginator.newerEntries', description: 'The label used to navigate to the newer blog posts page (previous page)', children: 'Newer entries' }) }), o && (0, r.jsx)(l.A, { permalink: o, title: (0, r.jsx)(n.A, { id: 'theme.blog.paginator.olderEntries', description: 'The label used to navigate to the older blog posts page (next page)', children: 'Older entries' }), isNext: !0 })] });
+   }
+  },
+  29452(e, t, s) {
+   s.d(t, { A: () => y });
+   var n = s(18439),
+    l = s(76713),
+    r = s(5784),
+    o = s(30758),
+    a = s(86070);
+   function i(e) {
+    const t = o.Children.toArray(e.children),
+     s = t.find((e) => o.isValidElement(e) && 'summary' === e.props?.mdxType),
+     n = (0, a.jsx)(a.Fragment, { children: t.filter((e) => e !== s) });
+    return (0, a.jsx)(r.A, { ...e, summary: s, children: n });
+   }
+   var c = s(69284);
+   function d(e) {
+    let t,
+     s = '';
+    if ((0, o.isValidElement)(e.children)) {
+     const n = e.children.props,
+      l = 'string' == typeof n.className ? n.className.match(/(?:^|.*\s)(?:language-)([^\s]+)(?:\s+|$)/) : null;
+     (l && (t = l[1]), 'string' == typeof n.children && (s = n.children));
+    }
+    return (0, a.jsx)(c.M, { syntax: t, textContent: s, trim: !0 });
+   }
+   var m = s(46447),
+    h = s(60316),
+    u = s(13526),
+    g = s(3227);
+   const p = (e, t) => e.reduce((e, s) => ('link' === s.type ? (t.includes(s.docId) ? e : [...e, s]) : 'category' === s.type ? [...e, { ...s, items: p(s.items, t) }] : e), []),
+    x = ({ excludeDocIDs: e = [], className: t, ...s }) => {
+     const n = (0, h.$S)();
+     return (0, a.jsx)('div', { ...s, className: (0, u.A)('margin-top--lg', t), children: (0, a.jsx)(g.A, { items: p(n.items, e) }) });
+    };
+   function y({ children: e }) {
+    return (0, a.jsx)(n.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: i, ul: ({ children: e }) => (0, a.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, a.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: l.A, OverviewPage: x, DocCardList: g.A }, children: e });
    }
   },
   45282(e, t, s) {
@@ -311,48 +348,6 @@
    function d() {
     return (0, r.jsx)(n.A, { id: 'theme.contentVisibility.draftBanner.message', description: 'The draft content banner message', children: 'This page is a draft. It will only be visible in dev and be excluded from the production build.' });
    }
-  },
-  85963(e, t, s) {
-   s.d(t, { A: () => u });
-   var n = s(18439),
-    l = s(76713),
-    r = s(5784),
-    o = s(30758),
-    a = s(86070);
-   function i(e) {
-    const t = o.Children.toArray(e.children),
-     s = t.find((e) => o.isValidElement(e) && 'summary' === e.props?.mdxType),
-     n = (0, a.jsx)(a.Fragment, { children: t.filter((e) => e !== s) });
-    return (0, a.jsx)(r.A, { ...e, summary: s, children: n });
-   }
-   var c = s(69284);
-   function d(e) {
-    let t,
-     s = '';
-    if ((0, o.isValidElement)(e.children)) {
-     const n = e.children.props,
-      l = 'string' == typeof n.className ? n.className.match(/(?:^|.*\s)(?:language-)([^\s]+)(?:\s+|$)/) : null;
-     (l && (t = l[1]), 'string' == typeof n.children && (s = n.children));
-    }
-    return (0, a.jsx)(c.M, { syntax: t, textContent: s, trim: !0 });
-   }
-   var m = s(46447),
-    h = s(89874);
-   function u({ children: e }) {
-    return (0, a.jsx)(n.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: i, ul: ({ children: e }) => (0, a.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, a.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: l.A, OverviewPage: h.F }, children: e });
-   }
-  },
-  89874(e, t, s) {
-   s.d(t, { F: () => i });
-   var n = s(60316),
-    l = s(13526),
-    r = s(3227),
-    o = s(86070);
-   const a = (e, t) => e.reduce((e, s) => ('link' === s.type ? (t.includes(s.docId) ? e : [...e, s]) : 'category' === s.type ? [...e, { ...s, items: a(s.items, t) }] : e), []),
-    i = ({ excludeDocIDs: e = [], className: t, ...s }) => {
-     const i = (0, n.$S)();
-     return (0, o.jsx)('div', { ...s, className: (0, l.A)('margin-top--lg', t), children: (0, o.jsx)(r.A, { items: a(i.items, e) }) });
-    };
   },
   99816(e, t, s) {
    s.d(t, { A: () => o });
