@@ -44,7 +44,7 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <div aria-hidden="true">
         <div htmlFor="kleur5">Wat is je lievelingskleur?</div>
-        <input type="text" id="kleur5" name="lievelingskleur" tabIndex={-1} disabled />
+        <input type="text" id="kleur5" name="lievelingskleur" />
       </div>
     )}
   </Canvas>
@@ -66,7 +66,7 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <div aria-hidden="true">
         <label>Wat is je lievelingskleur?</label>
-        <select name="lievelingskleur" tabIndex={-1} disabled>
+        <select name="lievelingskleur">
           <option>Rood</option>
           <option>Blauw</option>
           <option>Wit</option>
