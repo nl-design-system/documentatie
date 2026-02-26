@@ -21,6 +21,7 @@ import { OverviewPage } from '@site/src/components/OverviewPage';
 import DocCardList from '@theme/DocCardList';
 import { ComponentOverview } from '@site/src/components/ComponentOverview';
 import { Checklist } from '@site/src/components/Checklist';
+import { ComponentAnatomy } from '@site/src/components/ComponentAnatomy';
 import { CriteriaList } from '@site/src/components/ComponentCriteriaList';
 
 interface Props {
@@ -55,6 +56,7 @@ export default function MDXContent({ children }: Props): ReactElement {
         DocCardList,
         ComponentOverview,
         Checklist,
+        ComponentAnatomy,
         CriteriaList,
       }}
     >
