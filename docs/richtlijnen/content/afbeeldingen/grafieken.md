@@ -1,5 +1,5 @@
 ---
-title: Grafieken · Afbeeldingen · Content · Richtlijnen
+title: Grafieken
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Grafieken

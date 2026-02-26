@@ -1,5 +1,5 @@
 ---
-title: Vercel · Developer · Handboek
+title: Vercel
 slug: /vercel
 hide_table_of_contents: false
 sidebar_label: Vercel

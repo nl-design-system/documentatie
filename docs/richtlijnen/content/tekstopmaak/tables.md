@@ -1,5 +1,5 @@
 ---
-title: Tabellen · Tekstopmaak · Content · Richtlijnen
+title: Tabellen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tabellen

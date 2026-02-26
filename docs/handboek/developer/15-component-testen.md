@@ -1,5 +1,5 @@
 ---
-title: Componenten testen · Developer · Handboek
+title: Componenten testen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Componenten testen

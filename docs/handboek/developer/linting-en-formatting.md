@@ -1,5 +1,5 @@
 ---
-title: Linting en code formatting · Developer · Handboek
+title: Linting en code formatting
 hide_title: true
 slug: /linting-en-code-formatting
 hide_table_of_contents: false
