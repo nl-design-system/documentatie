@@ -1,0 +1,73 @@
+'use strict';
+(globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
+ [87827],
+ {
+  18439(e, n, i) {
+   i.d(n, { R: () => a, x: () => o });
+   var r = i(30758);
+   const t = {},
+    l = r.createContext(t);
+   function a(e) {
+    const n = r.useContext(l);
+    return r.useMemo(
+     function () {
+      return 'function' == typeof e ? e(n) : { ...n, ...e };
+     },
+     [n, e],
+    );
+   }
+   function o(e) {
+    let n;
+    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(t) : e.components || t) : a(e.components)), r.createElement(l.Provider, { value: n }, e.children));
+   }
+  },
+  77799(e, n, i) {
+   (i.r(n), i.d(n, { assets: () => m, contentTitle: () => h, default: () => f, frontMatter: () => u, metadata: () => r, toc: () => v }));
+   const r = JSON.parse('{"id":"richtlijnen/formulieren/error/no-native-validation/README","title":"Gebruik geen HTML-formuliervalidatie","description":"Richtlijnen voor gebruik van HTML-formuliervalidatie in een formulier.","source":"@site/docs/richtlijnen/formulieren/error/5-no-native-validation/README.mdx","sourceDirName":"richtlijnen/formulieren/error/5-no-native-validation","slug":"/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie","permalink":"/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/error/5-no-native-validation/README.mdx","tags":[],"version":"current","frontMatter":{"title":"Gebruik geen HTML-formuliervalidatie","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"HTML-formuliervalidatie","pagination_label":"HTML-formuliervalidatie","description":"Richtlijnen voor gebruik van HTML-formuliervalidatie in een formulier.","slug":"/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie","keywords":["labels","formulier","design","code"]},"sidebar":"richtlijnen","previous":{"title":"Plaatsing foutmelding","permalink":"/richtlijnen/formulieren/foutmeldingen/plaatsing"},"next":{"title":"Samenvatting fouten","permalink":"/richtlijnen/formulieren/foutmeldingen/samenvatting"}}');
+   var t = i(86070),
+    l = i(18439),
+    a = i(78734);
+   function o(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', h3: 'h3', header: 'header', img: 'img', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, l.R)(), ...e.components };
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.header, { children: (0, t.jsx)(n.h1, { id: 'gebruik-geen-html-formuliervalidatie', children: 'Gebruik geen HTML-formuliervalidatie' }) }), '\n', (0, t.jsxs)(n.p, { children: [(0, t.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_formulier_html_validatie.png', alt: 'Voorbeeld van HTML-validatie, een ballonnetje boven het formulierveld met de tekst: vul dit veld in' }), '.'] }), '\n', (0, t.jsxs)(n.p, { children: ['De meeste browsers kunnen zelf controleren of een veld is ingevuld. Dit gebeurt als het HTML-attribuut ', (0, t.jsx)(n.code, { children: 'required' }), ' in het formulierveld staat.'] }), '\n', (0, t.jsx)(n.pre, { children: (0, t.jsx)(n.code, { className: 'language-html', children: '<input type="text" id="voorbeeld" name="voorbeeld" required />\n' }) }), '\n', (0, t.jsxs)(n.p, { children: ['Dit type foutafhandeling geeft onvoldoende informatie. In veel browsers wordt niet aan alle gebruikers overgebracht dat het veld verplicht is, en mist uitleg wanneer niet wordt voldaan aan een opgegeven ', (0, t.jsx)(n.code, { children: 'pattern' }), '. Zie ook: ', (0, t.jsx)(n.a, { href: 'https://adrianroselli.com/2019/02/avoid-default-field-validation.html', children: (0, t.jsx)('span', { lang: 'en', children: 'Avoid default field validation' }) }), ' van Adrian Roselli.'] }), '\n', (0, t.jsx)(n.p, { children: 'Wanneer er voldoende tijd en kennis is, heeft het de voorkeur om zelf client-side validatie toe te voegen.' }), '\n', (0, t.jsxs)(n.p, { children: ['Om specifiek aan hulptechnologie\xebn te communiceren dat een veld verplicht is, kan ', (0, t.jsx)(n.code, { children: 'aria-required' }), ' worden gebruikt. Als je alleen ', (0, t.jsx)(n.code, { children: 'aria-required' }), ' gebruikt, zal de browser niet zelf valideren of feedback geven.'] }), '\n', (0, t.jsxs)(n.p, { children: ['Het toegankelijk maken van foutmeldingen is nodig om te voldoen aan het ', (0, t.jsx)(n.a, { href: '/wcag/3.3.1/', children: 'WCAG-succescriterium 3.3.1 Foutidentificatie' }), ' (niveau A).'] }), '\n', (0, t.jsx)(n.h3, { id: 'progressive-enhancement', children: 'Progressive enhancement' }), '\n', (0, t.jsx)(n.p, { children: 'Alhoewel we HTML-formuliervalidatie afraden en niet als eindoplossing zien, kan het nuttig zijn om te gebruiken als fallback bij een slechte internetverbinding als er nog geen JavaScript beschikbaar is.' }), '\n', (0, t.jsx)(n.p, { children: 'Deze optie geldt alleen voor formulieren waarbij de foutmeldingen worden afgehandeld door JavaScript.' }), '\n', (0, t.jsx)(n.p, { children: 'De opzet is dan als volgt:' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsxs)(n.li, { children: ['Bij de formuliervelden wordt het attribuut ', (0, t.jsx)(n.code, { children: 'required' }), " gebruikt in plaats van 'aria-required`."] }), '\n', (0, t.jsxs)(n.li, { children: ['Zodra de JavaScript wordt ingeladen wordt meteen het attribuut ', (0, t.jsx)(n.code, { children: 'novalidate' }), ' toegevoegd aan het ', (0, t.jsx)(n.code, { children: '<form>' }), ' element om de HTML-validatie uit te schakelen.'] }), '\n'] }), '\n', (0, t.jsx)(n.p, { children: 'Dan voorkom je dat gebruikers met een slechte internetverbinding niet op tijd worden ge\xefnformeerd over fouten in het formulier.' }), '\n', (0, t.jsx)(n.p, { children: 'Dit is een optie en geen vereiste. Uiteindelijk is een op maat gemaakte server side eind-validatie van de formuliervelden het meest betrouwbaar en toegankelijk en daardoor de richtlijn.' })] });
+   }
+   function s(e = {}) {
+    const { wrapper: n } = { ...(0, l.R)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(o, { ...e }) }) : o(e);
+   }
+   function d(e) {
+    const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, l.R)(), ...e.components };
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, t.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/wcag/1.3.1/', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/wcag/3.3.1/', children: 'Succescriterium 3.3.1 Foutidentificatie' }) }), '\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/wcag/4.1.2/', children: 'Succescriterium 4.1.2 Naam, rol, waarde' }) }), '\n'] })] });
+   }
+   function c(e = {}) {
+    const { wrapper: n } = { ...(0, l.R)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(d, { ...e }) }) : d(e);
+   }
+   const u = { title: 'Gebruik geen HTML-formuliervalidatie', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'HTML-formuliervalidatie', pagination_label: 'HTML-formuliervalidatie', description: 'Richtlijnen voor gebruik van HTML-formuliervalidatie in een formulier.', slug: '/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie', keywords: ['labels', 'formulier', 'design', 'code'] },
+    h = void 0,
+    m = {},
+    v = [{ value: 'Progressive enhancement', id: 'progressive-enhancement', level: 3 }, { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...a.RM];
+   function g(e) {
+    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', (0, t.jsx)(s, {}), '\n', (0, t.jsx)(c, {}), '\n', (0, t.jsx)(a.Ay, {})] });
+   }
+   function f(e = {}) {
+    const { wrapper: n } = { ...(0, l.R)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(g, { ...e }) }) : g();
+   }
+  },
+  78734(e, n, i) {
+   i.d(n, { Ay: () => o, RM: () => l });
+   var r = i(86070),
+    t = i(18439);
+   const l = [{ value: 'Over deze richtlijnen', id: 'over-deze-richtlijnen', level: 2 }];
+   function a(e) {
+    const n = { a: 'a', em: 'em', h2: 'h2', p: 'p', ...(0, t.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.h2, { id: 'over-deze-richtlijnen', children: 'Over deze richtlijnen' }), '\n', (0, r.jsxs)(n.p, { children: ['Deze richtlijnen worden onderhouden door NL Design System en zijn op dit moment in ', (0, r.jsx)(n.em, { children: 'beta' }), '.'] }), '\n', (0, r.jsxs)(n.p, { children: ['We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen?\n', (0, r.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Open een issue op GitHub' }), ' en deel je mening.'] })] });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, t.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(a, { ...e }) }) : a(e);
+   }
+  },
+ },
+]);
