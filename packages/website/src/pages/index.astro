@@ -1,6 +1,36 @@
 ---
+import { getCollection } from 'astro:content';
 import Document from '@layouts/document.astro'
+
+const docs = await getCollection('docs')
+
+const sections: Record<string, {title: string, id: string}[]> = {}
+
+docs
+  .forEach(doc => {
+    if (!doc.filePath) return
+    const relativeFilePath = doc.filePath.replace('../../docs/', '')
+    const section = relativeFilePath.split('/').at(0) || ''
+    if (!sections[section]) {
+      sections[section] = []
+    }
+    sections[section].push({title: doc.data.title || doc.id, id: doc.id})
+  })
+
 ---
 <Document>
   <h1>NL Design System gerenderd met Astro</h1>
+
+  {Object.entries(sections).map(([section, list]) =>
+    <details open>
+      <summary>{section}</summary>
+      <ul>
+        {list.map(item =>
+          <li>
+            <a href={item.id}>{item.title}</a>
+          </li>
+        )}
+      </ul>
+    </details>
+  )}
 </Document>
