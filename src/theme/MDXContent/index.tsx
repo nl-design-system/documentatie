@@ -19,6 +19,7 @@ import {
 import type { ReactElement, ReactNode } from 'react';
 import { OverviewPage } from '@site/src/components/OverviewPage';
 import DocCardList from '@theme/DocCardList';
+import { ComponentOverview } from '@site/src/components/ComponentOverview';
 
 interface Props {
   children: ReactNode;
@@ -50,6 +51,7 @@ export default function MDXContent({ children }: Props): ReactElement {
 
         OverviewPage,
         DocCardList,
+        ComponentOverview,
       }}
     >
       {children}
