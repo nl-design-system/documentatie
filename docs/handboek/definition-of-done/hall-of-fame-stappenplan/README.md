@@ -1,5 +1,5 @@
 ---
-title: Overzicht · Hall of Fame Stappenplan · Definition of Done · Handboek
+title: Overzicht
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Overzicht

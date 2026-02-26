@@ -1,5 +1,5 @@
 ---
-title: GitHub · Developer · Handboek
+title: GitHub
 hide_title: true
 slug: /github
 hide_table_of_contents: false

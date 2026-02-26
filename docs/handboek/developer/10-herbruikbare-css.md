@@ -1,5 +1,5 @@
 ---
-title: Herbruikbare CSS schrijven · Developer · Handboek
+title: Herbruikbare CSS schrijven
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Herbruikbare CSS schrijven

@@ -1,5 +1,5 @@
 ---
-title: Koppen · Tekstopmaak · Content · Richtlijnen
+title: Koppen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Koppen

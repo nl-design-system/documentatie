@@ -1,5 +1,5 @@
 ---
-title: Algemene richtlijnen · Afbeeldingen · Content · Richtlijnen
+title: Algemene richtlijnen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Algemene richtlijnen

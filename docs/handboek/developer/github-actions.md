@@ -1,5 +1,5 @@
 ---
-title: GitHub Actions · Developer · Handboek
+title: GitHub Actions
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: GitHub Actions
