@@ -428,6 +428,7 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', id: 'project/links' },
         { type: 'doc', id: 'project/klachten' },
         { type: 'doc', id: 'project/global-design-system' },
+        { type: 'doc', id: 'project/schrijfwijzer' },
       ],
     },
   ],
