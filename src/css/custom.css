@@ -111,6 +111,8 @@
   --utrecht-heading-2-line-height: 1.3;
   --utrecht-heading-3-line-height: 1.3;
   --utrecht-heading-4-line-height: 1.4;
+  --nl-code-font-size: 1em;
+  --utrecht-code-font-size: 1em;
 
   /* TODO add to ma-design-tokens */
   --utrecht-card-background-color: var(--basis-color-action-2-bg-default);

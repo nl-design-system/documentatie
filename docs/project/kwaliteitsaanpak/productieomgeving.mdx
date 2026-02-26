@@ -1,0 +1,44 @@
+---
+title: Productieomgeving
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Productieomgeving
+sidebar_position: 31
+pagination_label: Productieomgeving
+description: Uitleg over de versiebeheer van code in NL Design System
+keywords:
+  - prod
+  - production
+  - productie
+---
+
+{/* @license CC0-1.0 */}
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Productieomgeving
+
+<Paragraph lead>
+  Begin nieuwe website-projecten met een minimum viable product in productie krijgen, bij voorkeur al in de eerste
+  sprint. Gebruik daarna continuous deployment om vaak en snel deployments te doen naar productie-omgeving.
+</Paragraph>
+
+Doe [continuous deployment](./continuous-deployment.mdx) op basis van de laatste versie in de `main` branch: wanneer de wijziging akkoord is met de reviewers die verplicht zijn voor de `main` branch, dan kan daarna automatisch een deployment gestart worden.
+
+Gebruik de [`.github/workflows/publish.yml` in de example repository](https://github.com/nl-design-system/example/blob/main/.github/workflows/publish.yml) als voorbeeld van continuous deployment.
+
+## Veiligheid
+
+De website moet op [internet.nl](https://internet.nl/) een 100% score halen.
+
+## Performance
+
+Voor webpagina's is het het doel voor [first contentful paint (FCP)](https://web.dev/articles/fcp) performance is 1.8 seconde of sneller.
+
+:::tip[bestaande infrastructuur]
+
+Gebruik GitHub Pages voor de productieomgeving van developer-documentatie van teams in de community (zoals Storybook of Docusaurus), tenzij de teams een eigen productieomgeving hebben.
+
+Gebruik Plesk hosting van ICTU voor de productieomgeving van websites zoals `nldesignsystem.nl` en `gebruikersonderzoeken.nl`, zodat ze voldoen aan de veiligheidseisen.
+
+:::

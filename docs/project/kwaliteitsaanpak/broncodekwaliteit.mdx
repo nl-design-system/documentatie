@@ -1,0 +1,110 @@
+---
+title: Broncodekwaliteit
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Broncodekwaliteit
+pagination_label: Broncodekwaliteit
+sidebar_position: 10
+description: Dit is hoe we de broncodekwaliteit
+keywords:
+  - lint
+  - editorconfig
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Broncodekwaliteit
+
+<Paragraph lead>
+  Broncodekwaliteit moet zoveel mogelijk automatisch gecontroleerd en verbeterd worden. Continuous integration checks
+  garanderen de kwaliteit van code die wordt gemerged in de main branch. Effectieve integratie in de workflow van
+  developers verhoogt de snelheid van werken en zorgt voor draagvlak van rigide kwaliteitseisen.
+</Paragraph>
+
+De conventie is dat alle repositories hiervoor
+scripts hebben:
+`pnpm run lint` en `pnpm run lint-fix`.
+
+Om de kwaliteit van de broncode te meten wordt in de `/package.json` van de repository een `lint` script gemaakt. Alle nodige stappen om de code van onvoldoende kwaliteit te herkennen worden via het `pnpm run lint` script uitgevoerd.
+
+Controleer en verbeter de broncodekwaliteit zo vroeg mogelijk in het proces:
+
+1. Geef feedback tijdens het schrijven van code in de editor.
+1. Maak de opmaak van code consistent bij het opslaan van een bestand.
+1. Geef feedback over de code in een commit, bij het doen van commits.
+1. Verbeter waar mogelijk fouten automatisch bij het doen van commits.
+1. Geef feedback over de code in een branch, bij het maken van een Pull Request.
+
+Gebruik GitHub Actions om `pnpm run --if-present lint` uit te voeren.
+
+Configureer de lint-tools om geen warnings te geven, maar alleen fouten. Maak het via een GitHub Action verplicht in continuous integration dat alleen Pull Requests met 0 fouten gemerged mogen worden. Dat heeft meerdere voordelen:
+
+- de monitoring is per definitie ingebouwd: de main branch heeft 0 fouten
+- je wordt niet geconfronteerd met warnings in onderdelen van de code waar je geen ervaring mee hebt
+- het is altijd duidelijk wie de verantwoordelijkheid heeft om de fout op te lossen
+
+## Automatische opmaak van code
+
+Gebruik waarm mogelijk tools om code automatisch op te maken, zoals Prettier en EditorConfig.
+
+Gebruik waar mogelijk UTF-8 als encoding.
+
+Gebruik consistent regeleinden. Configureer Git om de juiste regeleinden te gebruiken via `.gitattributes`. Je vind een voorbeeld van [`.gitattributes` in de example repository](https://github.com/nl-design-system/utrecht/blob/main/.gitattributes).
+
+## Aanbevolen tools {#tools}
+
+Gebruik waar mogelijk de aanbevolen tools:
+
+- Gebruik een [EditorConfig](https://editorconfig.org) configuratie in `.editorconfig` voor basis-instellingen voor code-opmaak.
+- Gebruik [Prettier](https://prettier.io) voor talen en file extensions waar we goede ervaringen mee hebben:
+  - Markdown in `*.md` en `*.mdx` bestanden
+  - ECMAScript in `*.mjs` bestanden
+  - CommonJS in `*.cjs` bestanden
+  - JavaScript in `*.js` bestanden
+  - HTML in `*.html` bestanden
+  - CSS in `*.css` bestanden
+  - Java in `*.java` bestanden, met [`prettier-plugin-java`](http://npmjs.com/package/prettier-plugin-java)
+  - PHP met [`wp-prettier`](https://www.npmjs.com/package/wp-prettier)
+- Gebruik [`stylelint`](https://stylelint.io/) voor Continuous Integration om CSS en SCSS te controleren.
+- Gebruik [`eslint`](https://eslint.org/) voor Continuous Integration om JavaScript te controleren.
+- Gebruik de [TypeScript compiler met `tsc --noEmit`](https://www.typescriptlang.org/docs/handbook/compiler-options.html) voor Continuous Integration om TypeScript projecten te controleren.
+- Gebruik [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint) om `package.json` bestanden op consistentie te controleren.
+
+Gebruik de configuratie voor de standaard-tools uit de [nl-design-system/example](http://github.com/nl-design-system/example) als basis.
+
+{/* TODO: ## Tools voor code editors */}
+
+## Git pre-commit hook {#pre-commit}
+
+Je kunt Git instellen om elke keer dat je een commit doet automatisch de code controleren. Hiermee krijg je snel feedback binnen je workflow, zonder dat je moet wachten op de resultaten in GitHub.
+
+Installeer de pre-commit hook met `pnpm run prepare`, nadat je `pnpm install` hebt gedaan. Hierna zul je zien dat `git commit` extra controles uitvoert voordat de commit wordt opgeslagen.
+
+Wanneer je geen tijd hebt om de fouten op te lossen, dan kun je met `git commit --no-verify` de commit doen zonder checks, zodat je in elk geval een backup hebt van je code.
+
+Pre-commit hooks helpen ook te garanderen dat de code van elke atomic commit klopt, en niet alleen de code van de laatste commit in de branch. Hiermee wordt het makkelijker om met `git cherry-pick` alvast enkele commits te mergen naar de main branch, voordat de volledige branch klaar is.
+
+### Beheer van de pre-commit hook
+
+Gebruik [Husky](https://typicode.github.io/husky/) om je repository in te stellen dat `git commit` automatisch checks doet, en stopt wanneer er nog fouten zijn.
+
+De simpelste pre-commit hook is om met `pnpm run lint` de volledige repository te controleren. Dat proces kan in sommige repositories enkele minuten duren, terwijl een pre-commit hook het prettigst werkt als het mogelijk blijft om snel meerdere commits achter elkaar te doen.
+
+Gebruik [`lint-staged`](https://www.npmjs.com/package/lint-staged) om alleen de relevante files van de commit te controleren. Een goede configuratie van lint-staged biedt een goede balans tussen snelheid en de meeste issues vinden. Gebruik de [`lint-staged.config.mjs` in example repository](https://github.com/nl-design-system/example/blob/main/lint-staged.config.mjs) als voorbeeld van een goede configuratie.
+
+De pre-commit hook gebaseerd op `lint-staged` is ook extra gebruiksvriendelijk, omdat `git commit` gelijk slaagt als alle gevonden fouten automatisch herstelbaar zijn.
+
+## Continuous integration {#continuous-integration}
+
+Gebruik `pnpm run --if-present lint` als verplichte check in je continuous integration pipeline, zoals in GitHub Actions om Pull Requests te controleren. Lees meer in het artikel over [continuous integration](./ci-cd.md).
+
+- Gebruik `prettier --check` voor Continuous Integration, om te garanderen dat alle code consistente opmaak heeft.
+- Gebruik `stylelint --allow-empty-input '**/*.{css,scss}'` om CSS en SCSS te controleren.
+- Gebruik `eslint --ext '.js,.json,.jsx,.mdx,.ts,.tsx,.vue' --report-unused-disable-directives .` om JavaScript en gerelateerde files te controleren.
+- Gebruik `npmPkgJsonLint .` om alle `package.json` files te controleren.
+
+{/* TODO: Er zijn nog meer linting tools die we gebruiken. */}
+
+Lees meer in het handboek voor developers: linting en formatting](/linting-en-code-formatting/).

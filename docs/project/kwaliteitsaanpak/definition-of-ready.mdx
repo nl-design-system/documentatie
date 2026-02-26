@@ -1,0 +1,68 @@
+---
+title: Definition of Ready
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Definition of Ready
+sidebar_position: 6
+pagination_label: Definition of Ready
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Definition of Ready
+
+{/* De Definition of Ready bevat de onderdelen uit de "INVEST" method: Independent, Negotiable, Valuable, Estimable, Small, Testable */}
+
+<Paragraph lead>
+  Controleer met Definition of Ready of het werk klaar is om aan te werken in een agile sprint.
+</Paragraph>
+
+De checklist:
+
+{/* - TODO: De user story is duidelijk en voldoet aan de eisen. */}
+
+- De acceptatiecriteria in de [backlog](./product-backlog.mdx) zijn duidelijk voor de product owner en de personen die het werk uitvoeren.
+- Het doel is duidelijk voor de user story.
+- De product owner is akkoord met de prioriteit. {/* Valuable */}
+- Er is duidelijk hoe getest moet worden of het werk klaar is.
+- Alle afhankelijkheden zijn gekoppeld via "Blocked by", en daarvan is de status "Done". {/* Independent */}
+- Het is mogelijk een inschatting te geven hoeveel werk het is, relatief ten opzichte van andere issues. {/* Estimable */}
+- Als er een mogelijke oplossing is, dan staat die in "Beschrijving" en niet in de User Story of de acceptatiecriteria. {/* Negotiable */}
+- Wanneer de tijdsinschatting XL of XXL is, dan is geprobeerd om de issue op te splitsen in meerdere kleine issues.
+
+## Acceptatiecriteria
+
+Let op de volgende punten voor het maken van effectieve acceptatiecriteria:
+
+- Voeg de gewenste uitkomst toe, op een manier die duidelijk genoeg is om te testen. {/* Testable */}
+- Voeg "software release is gepubliceerd" toe aan de acceptatiecriteria, wanneer dit de bedoeling is.
+- Wat al in de Definition of Done staat, moet niet opnieuw genoemd worden in de acceptatiecriteria.
+
+## Tijdsinschatting
+
+Gebruik t-shirt sizes uit het volgende overzicht voor het maken van een tijdsinschatting. Maak samen met de relevante teamleden de inschatting voor de optelsom van tijd die nodig is van iedereen om te voldoen aan de Definition of Done. Rond naar boven af.
+
+| T-shirt size | Tijdsinschatting |
+| ------------ | ---------------- |
+| XS           | 2 uur            |
+| S            | 4 uur            |
+| M            | 1 dag            |
+| L            | 2 dagen          |
+| XL           | 4 dagen          |
+| XXL          | 8 dagen          |
+
+## Backlog organisatie
+
+De product owner beheert in het GitHub projectboard de Status van de issue. Voor de definition of ready zijn de volgende statussen relevant:
+
+- **Refinement needed:** de user story, beschrijving en acceptatiecriteria bevatten voldoende informatie voor een refinement.
+- **Ready:** de issue voldoet aan de Definition of Ready.
+
+De product owner beheert in het GitHub projectboard de status van de acceptatiecriteria, om voor backlog grooming, refinement, en sprint planning snel de relevante issues te kunnen vinden.
+
+- **To do:** er zijn nog geen acceptatiecriteria.
+- **In progress:** er is een concept voor de acceptatiecriteria.
+- **Ready for refinement:** wanneer de acceptatiecriteria klaar zijn om met het team te bespreken.
+- **Ready:** wanneer de acceptatiecriteria zijn gedeeld met de relevante personen, en die vinden het duidelijk.
