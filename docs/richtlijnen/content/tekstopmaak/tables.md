@@ -171,7 +171,7 @@ Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je name
       <>
         <table>
           <tr>
-            <td style={{inlineSize:'50%'}}><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png"/></td>
+            <td style={{inlineSize:'50%'}}><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png" alt="Screenshot van de Koppen tab in VoiceOver van macOS"/></td>
             <td>De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS</td>
           </tr>
         </table>
