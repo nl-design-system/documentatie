@@ -141,173 +141,173 @@ Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkel
 
 <AcImplementatie />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur.",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-      tags: ["designer"],
-    },
-    {
-      title: "Het label van de Skip Link bestaat uit tekst, niet uit een afbeelding van tekst.",
-      sc: "1.4.5",
-      status: "",
-      component: <Wcag145 />,
-      tags: ["developer", "contentmaker"],
-    },
-    {
-      title: "De Skip Link slaat 1 of meerdere herhalende contentblokken over.",
-      sc: "2.4.1",
-      status: "",
-      component: <Wcag241 />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "De Skip Link staat vooraan in de focusvolgorde van een pagina en verwijst naar de eerste niet-herhalende content op de pagina.",
-      sc: "2.4.3",
-      status: "",
-      component: <Wcag243 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De linktekst van de Skip Link beschrijft duidelijk het linkdoel.",
-      sc: "2.4.4",
-      status: "",
-      component: <Wcag244 />,
-      tags: ["developer", "contentmaker"],
-    },
-    {
-      title: "De Skip Link wordt niet bedekt door een ander element op de pagina.",
-      sc: "2.4.11",
-      status: "",
-      component: <Wcag2411 />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.",
-      sc: "3.1.2",
-      status: "",
-      component: <Wcag312 />,
-      tags: ["developer", "contentmaker"],
-    },
-    {
-      title:
-        "Skip Links die op meerdere pagina's voorkomen staan op iedere pagina vooraan in de focusvolgorde van een pagina.",
-      sc: "3.2.3",
-      status: "",
-      component: <Wcag323 />,
-      tags: ["developer", "designer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  <ChecklistItem
+    title="De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur."
+    sc="1.4.3"
+    status=""
+    tags={["designer"]}
+  >
+    <Wcag143 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Het label van de Skip Link bestaat uit tekst, niet uit een afbeelding van tekst."
+    sc="1.4.5"
+    status=""
+    tags={["developer", "contentmaker"]}
+  >
+    <Wcag145 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Skip Link slaat 1 of meerdere herhalende contentblokken over."
+    sc="2.4.1"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag241 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Skip Link staat vooraan in de focusvolgorde van een pagina en verwijst naar de eerste niet-herhalende content op de pagina."
+    sc="2.4.3"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag243 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De linktekst van de Skip Link beschrijft duidelijk het linkdoel."
+    sc="2.4.4"
+    status=""
+    tags={["developer", "contentmaker"]}
+  >
+    <Wcag244 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Skip Link wordt niet bedekt door een ander element op de pagina."
+    sc="2.4.11"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag2411 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode."
+    sc="3.1.2"
+    status=""
+    tags={["developer", "contentmaker"]}
+  >
+    <Wcag312 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Skip Links die op meerdere pagina's voorkomen staan op iedere pagina vooraan in de focusvolgorde van een pagina."
+    sc="3.2.3"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag323 />
+  </ChecklistItem>
+</Checklist>
 
 ### Acceptatiecriteria van de component
 
 <AcComponent />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "Als je de hele webpagina inzoomt tot 400% veroorzaakt de Skip Link geen horizontale scrollbalk en blijft alle tekst op de pagina leesbaar.",
-      sc: "1.4.10",
-      status: "",
-      component: <Wcag1410 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot.",
-      sc: "1.4.12",
-      status: "",
-      component: <Wcag1412NLDS />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets.",
-      sc: "2.1.1",
-      status: "",
-      component: <Wcag211NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord.",
-      sc: "2.1.2",
-      status: "",
-      component: <Wcag212 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De Skip Link heeft een zichtbare focusindicator.",
-      sc: "2.4.7",
-      status: "",
-      component: <Wcag247NLDS />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De Skip Link heeft een zichtbare focusindicator met een dikte van minimaal 2 pixels.",
-      sc: "2.4.13",
-      status: "",
-      component: <Wcag2413NLDS />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De Skip Link activeren met een enkele aanwijzer kan voorkomen of geannuleerd worden.",
-      sc: "2.5.2",
-      status: "",
-      component: <Wcag252NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title: "De zichtbare naam van de Skip Link komt voor in de toegankelijke naam.",
-      sc: "2.5.3",
-      status: "",
-      component: <Wcag253 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Het aanwijsgebied van de Skip Link is groot genoeg.",
-      sc: "2.5.5",
-      status: "",
-      component: <Wcag255NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats.",
-      sc: "3.2.1",
-      status: "",
-      component: <Wcag321 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.",
-      sc: "3.2.4",
-      status: "",
-      component: <Wcag324 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De Skip Link heeft een rol van link.",
-      sc: "4.1.2",
-      status: "",
-      component: <Wcag412NLDS />,
-      tags: ["developer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  <ChecklistItem
+    title="Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar."
+    sc="1.4.4"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag144NLDS />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als je de hele webpagina inzoomt tot 400% veroorzaakt de Skip Link geen horizontale scrollbalk en blijft alle tekst op de pagina leesbaar."
+    sc="1.4.10"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag1410 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot."
+    sc="1.4.12"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag1412NLDS />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets."
+    sc="2.1.1"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag211NLDS />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord."
+    sc="2.1.2"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag212 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Skip Link heeft een zichtbare focusindicator."
+    sc="2.4.7"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag247NLDS />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Skip Link heeft een zichtbare focusindicator met een dikte van minimaal 2 pixels."
+    sc="2.4.13"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag2413NLDS />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Skip Link activeren met een enkele aanwijzer kan voorkomen of geannuleerd worden."
+    sc="2.5.2"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag252NLDS />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De zichtbare naam van de Skip Link komt voor in de toegankelijke naam."
+    sc="2.5.3"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag253 />
+  </ChecklistItem>
+  <ChecklistItem title="Het aanwijsgebied van de Skip Link is groot genoeg." sc="2.5.5" status="" tags={["developer"]}>
+    <Wcag255NLDS />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats."
+    sc="3.2.1"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag321 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label."
+    sc="3.2.4"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag324 />
+  </ChecklistItem>
+  <ChecklistItem title="De Skip Link heeft een rol van link." sc="4.1.2" status="" tags={["developer"]}>
+    <Wcag412NLDS />
+  </ChecklistItem>
+</Checklist>
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
