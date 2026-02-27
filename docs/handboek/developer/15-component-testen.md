@@ -37,7 +37,7 @@ it("renders a design system BEM class name: my-component", () => {
 
 ## HTML-content in componenten
 
-Tekst in componenten kan soms worden verbeterd met markup: taalmetadata, code, nadruk of afbeeldingen. Elke property die in de HTML terechtkomt, moet worden getest op uitbreidbaarheid met rich text-content.
+Verbeter tekst in componenten met markup. Denk aan taalmetadata, code, nadruk of afbeeldingen. Test elke property in de HTML op rich text-content. Zo blijft de tekst goed uitbreidbaar.
 
 ```javascript
 it("renders rich text content", () => {
@@ -53,7 +53,7 @@ it("renders rich text content", () => {
 });
 ```
 
-Het testen van properties is misschien nog wel belangrijker, omdat children meestal al HTML-content toestaat:
+Het testen van properties is belangrijker, omdat children meestal al HTML-content toestaat:
 
 ```javascript
 it('renders rich text content', () => {

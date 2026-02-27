@@ -13,7 +13,7 @@ Vorige week kwamen designers van Gemeente Utrecht, Gemeente Den Haag en OpenGeme
 
 <!-- truncate -->
 
-De belangrijkste reden voor deze samenkomst: op dit moment zijn er nog geen afspraken over de verticale ruimte tussen componenten. Dat zit gebruikersvriendelijkheid in de weg, doordat er onvoldoende relatie en hiërarchie tussen componenten bestaat.
+De belangrijkste reden voor deze samenkomst: de actieve community mist gezamenlijke afspraken over verticale ruimte tussen componenten. Dit belemmert de gebruiksvriendelijkheid sterk. Er ontbreekt nu een strakke relatie en logische hiërarchie tussen componenten.
 
 De designers + enkele leden uit het kernteam (Rozerin, René, Martijn, Jeroen, Jeffrey, Yolijn en Robbert) kwamen bij elkaar om samen te werken aan twee doelen:
 
@@ -33,7 +33,7 @@ besties: 8px
 
 Natuurlijk hoeven de waarden niet in pixels te worden uitgedrukt. Het kunnen bijvoorbeeld ook relatieve waarden zijn, en die kunnen ook nog eens per viewport verschillen.
 
-Het idee is dat de waarden instelbaar zijn met design tokens. Design systems kunnen hierin dus zelf een keuze maken. Of meerdere keuzes. Misschien is de afstand tussen “vrienden” bijvoorbeeld net anders in een Mijn Zaken-systeem dan in een contentwebsite. Het ene scherm is “information-dense”, met bijvoorbeeld veel tabellen, terwijl bij het andere leesbaarheid van tekst belangrijk is. Waarden van de design tokens kunnen per geval anders worden ingesteld.
+Pas de waarden effectief in via design tokens. Design systems maken hun eigen specifieke afwegingen. De afstand tussen gegroepeerde elementen verschilt bijvoorbeeld in een Mijn omgeving versus contentwebsites. Je optimaliseert de waarden in de design tokens gericht per toepassing.
 
 ## Open vragen
 

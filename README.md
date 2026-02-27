@@ -1,18 +1,18 @@
 # Documentatie NL Design System
 
-Hier kun je informatie vinden over algemene richtlijnen, gebruikersonderzoek, patronen etc.
+Hier vind je informatie over algemene richtlijnen, gebruikersonderzoek, patronen en meer.
 
-We zijn nog druk bezig deze informatie aan te vullen en te verbeteren. Heb je nog documentatie of gebruikersonderzoek die we misschien kunnen gebruiken? Laat het ons dan weten.
+We werken de documentatie continu bij. Heb je zelf nuttige documentatie of onderzoek dat we kunnen toevoegen? Laat het ons weten.
 
 ## Help ons de documentatie te verbeteren
 
-Voor de documentatie gebruiken we [Markdown](https://www.markdownguide.org/basic-syntax/) bestanden die we met in [GitHub](https://github.com/nl-design-system/documentatie) opslaan. Hierdoor hebben we een bestandsformaat dat door vele verschillende producten ondersteund wordt en een plek waar we met versionering en reviews samen kunnen werken.
-Om met al deze documentatie een website te maken gebruiken we [Docusaurus](https://docusaurus.io).
+We gebruiken [Markdown](https://www.markdownguide.org/basic-syntax/) bestanden die we opslaan in [GitHub](https://github.com/nl-design-system/documentatie). Dit formaat wordt door veel verschillende producten ondersteund en maakt samenwerken met versiebeheer en reviews eenvoudig.
+Voor de website gebruiken we [Docusaurus](https://docusaurus.io).
 
 Fijn als je hier toevoegingen of verbeteringen aan bij wil dragen. Als je dat in Markdown kan doen is dat voor ons het allerhandigst.
 Hieronder een aantal manieren waarop bijdragen voorgesteld kunnen worden.
 
-_Note_: We zijn blij met iedere bijdrage, dat betekent niet dat alle bijdrages 1-op-1 worden overgenomen in het NL Design System. Soms hebben wij een andere visie, of moet de reden waarom de richtlijn wordt voorgesteld nog beter verscherpt of verduidelijkt worden voordat het als richtlijn in NL Design System opgenomen wordt.
+_Let op_: Elke bijdrage is zeer waardevol. Het kernteam neemt bijdrages niet automatisch letterlijk over in NL Design System. Het team vraagt vaak om extra verduidelijking. Daarna voegt de community de voorgestelde richtlijn toe aan NL Design System.
 
 ### Maak een Gist en stuur hem ons op
 
@@ -51,7 +51,7 @@ Als je de website structuur hebt aangepast dan is het nodig de website eerst te 
 
 ## Lokaal de build draaien met de Apache HTTP server
 
-Apache HTTP server wordt momenteel gebruikt voor hosting van nldesignsystem.nl. Als je [Docker](https://docs.docker.com/desktop/) en [`docker-compose`](https://docs.docker.com/compose/install/) geïnstalleerd hebt, dan kun je de website starten met Apache, zodat je lokale testomgeving nauwkeuriger lijkt op productie.
+Apache HTTP server draait de hosting van nldesignsystem.nl. Installeer [Docker](https://docs.docker.com/desktop/) en [`docker-compose`](https://docs.docker.com/compose/install/). Start de website daarna rustig met Apache. Je lokale testomgeving lijkt zo meer op productie.
 
 Het belangrijkste voordeel is dat je HTTP redirects kunt testen die in `static/.htaccess` zijn ingesteld.
 

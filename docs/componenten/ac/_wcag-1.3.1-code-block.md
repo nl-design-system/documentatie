@@ -32,4 +32,4 @@ Maar zo:
 </pre>
 ```
 
-**Let op**: Het element `<code>` wordt op het moment van schrijven (2025) nog niet ondersteund door alle hulpsoftware. Dat betekent niet dat bezoekers die bijvoorbeeld een [screenreader](/woordenlijst/#screenreader) gebruiken de inhoud van het element niet horen, alleen dat er op dit moment niet wordt aangegeven dat het om een `code` element gaat.
+**Let op**: Hulpsoftware faalt nog geregeld bij brede en actieve ondersteuning op het HTML element `<code>` (2025). Screenreaders informeren je actieve gebruikers uiteraard uitstekend qua letterlijke teksten. Het element passeert echter zonder het sturen van formele informatie omtrent het type object aan een [screenreader](/woordenlijst/#screenreader).
