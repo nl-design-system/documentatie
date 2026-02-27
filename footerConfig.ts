@@ -35,6 +35,10 @@ const footer: Footer = {
       label: 'Figma',
       href: '/figma/',
     },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/company/nl-design-system/',
+    },
   ],
 };
 
