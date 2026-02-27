@@ -81,4 +81,4 @@ De doelstelling van NL Design System is om de kwaliteit van online dienstverleni
 ## Hoe blijf je op de hoogte?
 
 - Praat mee op de [Slack](/slack) in onze kanalen, zoals bijvoorbeeld `#nl-design-system`.
-- Elke twee weken presenteren we updates uit de community en voortgang van het kernteam in een publieke on-line Teams meeting: de [NL Design System Heartbeat](/events/heartbeat/overzicht). Dit is de ideale manier om op de hoogte te blijven en gelijk vragen te kunnen stellen. Op deze pagina lees je instructies voor hoe je jezelf kunt aanmelden.
+- Elke twee weken presenteren we updates uit de community en voortgang van het kernteam in een publieke on-line Teams meeting: de [NL Design System Heartbeat](/events/heartbeat/overzicht). Zo blijf je op de hoogte en stel je direct vragen. Lees op deze pagina hoe je je aanmeldt.
