@@ -1,7 +1,4 @@
-211 NLDS
-
 ---
-
 title: WCAG-succescriterium 2.1.1 Toetsenbord
 hide_title: true
 hide_table_of_contents: false
@@ -10,17 +7,19 @@ pagination_label: WCAG-succescriterium 2.1.1 Toetsenbord
 description: Elke actie is uit te voeren met een toetsenbord.
 slug: 2.1.1
 keywords:
-
-- WCAG
-- Nievau A
-- bedienbaar
-- toetsenbordtoegankelijk
-- operable
-- keyboard accessible
-- keyboard
-- toetsenbord WCAG
-- website bedienen zonder muis
-
+  - WCAG
+  - Nievau A
+  - bedienbaar
+  - toetsenbordtoegankelijk
+  - operable
+  - keyboard accessible
+  - keyboard
+  - toetsenbordtoegankelijkheid
+  - focusbaar
+  - interactief
+  - WCAG 2.1.1
+  - toetsenbord WCAG
+  - website bedienen zonder muis
 ---
 
 {/* @license CC0-1.0 */}
@@ -41,15 +40,15 @@ import Summary from "./summaries/_2.1.1-summary.md";
 
 <Summary />
 
-De enige uitzondering geldt voor functionaliteit die afhankelijk is van het pad dat de gebruiker met de muis aflegt, niet alleen het begin- en eindpunt. Denk aan vrij tekenen of een handtekening zetten. Maar let op: slepen en neerzetten (drag-and-drop) valt hier meestal niet onder, want het eindpunt is wat telt, niet het pad ernaartoe. Drag-and-drop moet dus ook met het toetsenbord werken.
+De enige uitzondering geldt voor functionaliteit die afhankelijk is van het pad dat je met de muis aflegt, niet alleen het begin- en eindpunt. Denk aan vrij tekenen of een handtekening zetten. Let op: <span lang="en">drag-and-drop</span> valt hier meestal niet onder. Het eindpunt is wat telt, niet het pad ernaartoe. <span lang="en">Drag-and-drop</span> moet dus ook met het toetsenbord werken.
 
 Er mag geen specifieke timing vereist zijn voor toetsaanslagen. Je moet op eigen tempo kunnen navigeren en activeren.
 
 ## Veelgemaakte fouten
 
-### Fout: klikbare `div` of `span` in plaats van een `button` of link
+### Fout: klikbare div of span in plaats van een button of link
 
-Een `<div>` of `<span>` met een `onclick`-handler is niet bereikbaar met het toetsenbord. Toetsenbordgebruikers kunnen er niet naartoe tabben en het niet activeren met Enter of Spatie. Gebruik altijd een `<button>` voor acties en een `<a>` voor navigatie.
+Een `<div>` of `<span>` met een `onclick`-handler is niet bereikbaar met het toetsenbord. Toetsenbordgebruikers kunnen er niet naartoe tabben en het niet activeren met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>. Gebruik altijd een `<button>` voor acties en een `<a>` voor navigatie.
 
 ```html
 <!-- Fout -->
@@ -74,9 +73,9 @@ element.addEventListener("mouseout", verbergTooltip);
 element.addEventListener("blur", verbergTooltip);
 ```
 
-### Fout: custom dropdown die niet met toetsen bediend kan worden
+### Fout: custom dropdown die niet met toetsen te bedienen is
 
-Veel op maat gemaakte dropdowns en selectiemenu's zijn volledig met de muis gebouwd. Ze openen niet met Enter of Spatie, je kunt niet door de opties navigeren met pijltjestoetsen, en Escape sluit ze niet. Gebruik het `<select>`-element, of bouw een custom component dat het ARIA-combobox- of listbox-patroon volgt.
+Veel op maat gemaakte dropdowns en selectiemenu's zijn volledig met de muis gebouwd. Ze openen niet met <kbd>Enter</kbd> of <kbd>Spatie</kbd>. Je kunt niet door de opties navigeren met <kbd>pijltjestoetsen</kbd>. <kbd>Escape</kbd> sluit ze niet. Gebruik het `<select>`-element, of bouw een <span lang="en">custom component</span> dat het ARIA-combobox- of listbox-patroon volgt.
 
 ```html
 <!-- Fout: custom dropdown zonder toetsenbordondersteuning -->
@@ -96,9 +95,9 @@ Veel op maat gemaakte dropdowns en selectiemenu's zijn volledig met de muis gebo
 </select>
 ```
 
-### Fout: drag-and-drop zonder toetsenbordalternatief
+### Fout: <span lang="en">drag-and-drop</span> zonder toetsenbordalternatief
 
-Een interface waar je items kunt slepen en neerzetten om ze te sorteren, maar waar geen toetsenbordalternatief is (bijvoorbeeld knoppen om omhoog/omlaag te verplaatsen), sluit toetsenbordgebruikers volledig uit.
+Een interface waar je items kunt slepen en neerzetten om ze te sorteren, maar waar geen toetsenbordalternatief is, sluit toetsenbordgebruikers volledig uit. Voeg knoppen toe om items omhoog en omlaag te verplaatsen.
 
 ```html
 <!-- Fout: alleen drag-and-drop -->
@@ -122,9 +121,9 @@ Een interface waar je items kunt slepen en neerzetten om ze te sorteren, maar wa
 </ul>
 ```
 
-### Fout: hover-content die niet met toetsenbord bereikbaar is
+### Fout: <span lang="en">hover</span>-content die niet met toetsenbord bereikbaar is
 
-Informatie die alleen verschijnt als je erover hovert met de muis — tooltips, uitklapmenu's, extra details — is onbereikbaar met een toetsenbord als er geen focus-equivalent is.
+Informatie die alleen verschijnt als je erover hovert met de muis is onbereikbaar met een toetsenbord als er geen focus-equivalent is. Denk aan <span lang="en">tooltips</span>, uitklapmenu's en extra details.
 
 ```css
 /* Fout: alleen hover */
@@ -148,7 +147,7 @@ Informatie die alleen verschijnt als je erover hovert met de muis — tooltips, 
 
 ### Fout: carrousel of slider zonder toetsenbordbediening
 
-Carrousels die alleen via swipe of klikken op pijltjes werken, zonder dat je met pijltjestoetsen door de slides kunt navigeren of de navigatieknoppen focusbaar zijn, sluiten toetsenbordgebruikers uit.
+Carrousels die alleen via <span lang="en">swipe</span> of klikken op pijltjes werken, zonder dat je met <kbd>pijltjestoetsen</kbd> door de slides kunt navigeren of de navigatieknoppen focusbaar zijn, sluiten toetsenbordgebruikers uit.
 
 ```html
 <!-- Fout: pijltjes als niet-focusbare elementen -->
@@ -160,9 +159,9 @@ Carrousels die alleen via swipe of klikken op pijltjes werken, zonder dat je met
 <button aria-label="Volgende slide" onclick="volgendeSlide()">&#8250;</button>
 ```
 
-### Fout: infinite scroll zonder alternatieve navigatie
+### Fout: <span lang="en">infinite scroll</span> zonder alternatieve navigatie
 
-Bij infinite scroll verdwijnt de footer en worden steeds nieuwe elementen geladen als je naar beneden scrollt. Met een toetsenbord raak je vast in een eindeloze lijst en kom je nooit voorbij de content bij de footer, navigatie of andere pagina-onderdelen.
+Bij <span lang="en">infinite scroll</span> verdwijnt de <span lang="en">footer</span> en worden steeds nieuwe elementen geladen als je naar beneden scrollt. Met een toetsenbord raak je vast in een eindeloze lijst en kom je nooit voorbij de content bij de <span lang="en">footer</span>, navigatie of andere pagina-onderdelen.
 
 ```html
 <!-- Fout: alleen infinite scroll -->
@@ -179,7 +178,8 @@ Bij infinite scroll verdwijnt de footer en worden steeds nieuwe elementen gelade
 
 ### Fout: video- of audiospeler met onbereikbare bedieningsknoppen
 
-Custom mediaspelers waarvan de knoppen (afspelen, pauzeren, volume, volledig scherm) niet focusbaar of activeerbaar zijn met het toetsenbord. Zonder muis kun je de video of audio dan gewoon niet bedienen.
+<span lang="en">Custom</span> mediaspelers waarvan de knoppen niet focusbaar of activeerbaar zijn met het toetsenbord.
+Denk aan afspelen, pauzeren, volume en volledig scherm. Zonder muis kun je de video of audio dan niet bedienen.
 
 ```html
 <!-- Fout: divs als knoppen -->
@@ -191,9 +191,15 @@ Custom mediaspelers waarvan de knoppen (afspelen, pauzeren, volume, volledig sch
 <button aria-label="Volume aanpassen" onclick="volume()">&#128266;</button>
 ```
 
-### Fout: CAPTCHA is niet met het toetsenbord te bedienen
+### Fout: <span lang="en">CAPTCHA</span> is niet met het toetsenbord te bedienen
 
-Als de CAPTCHA-test niet met het toetsenbord kan worden voltooid, worden deze bezoekers uitgesloten van het invullen van het formulier.
+Als de <span lang="en">CAPTCHA</span>-test niet met het toetsenbord kan worden voltooid, sluit je deze bezoekers uit van het invullen van het formulier.
+
+## Gerelateerde succescriteria
+
+- [**SC 2.1.2**](https://nldesignsystem.nl/wcag/2.1.2/) — Geen toetsenbordval: je mag nergens "vast" komen te zitten.
+- [**SC 2.4.3**](https://nldesignsystem.nl/wcag/2.4.3/) — Focusvolgorde: de tabvolgorde moet logisch zijn.
+- [**SC 2.4.7**](https://nldesignsystem.nl/wcag/2.4.7/) — Focus zichtbaar: je moet kunnen zien welk element de focus heeft.
 
 ### Hoe het hoort te werken
 
@@ -211,57 +217,6 @@ Op MacOS kunnen extra instellingen nodig zijn:
 
 - [<span lang="en">Keyboard navigation on MacOS</span>](https://support.apple.com/en-gb/guide/mac-help/mchlc06d1059/mac).
 - [<span lang="en">How to activate keyboard navigation on MacOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
-
-## Hoe te testen
-
-1. Leg je muis aan de kant. Gebruik alleen je toetsenbord om door de pagina te navigeren.
-2. Druk op **Tab** om vooruit te gaan en op **Shift+Tab** om terug te gaan. Kun je bij elk interactief element komen (links, knoppen, formuliervelden)?
-3. Druk op **Enter** om links te volgen en knoppen te activeren. Druk op **Spatie** om checkboxen aan te vinken en knoppen te activeren.
-4. Gebruik **pijltjestoetsen** om door menu's, tabbladen en radio buttons te navigeren.
-5. Druk op **Escape** om modalen, popups en dropdown-menu's te sluiten.
-6. Let op of je kunt zien welk element op dat moment de focus heeft. Als je niet kunt zien waar je bent, is er ook een probleem (maar dat valt onder een ander SC).
-7. Let op of je ergens "vast" komt te zitten — een element waar je niet meer uit kunt tabben.
-
-### Voor developers
-
-1. Navigeer door de pagina met het toetsenbord en let op elementen die niet bereikbaar zijn. Open DevTools en inspecteer die elementen: zijn het `<div>`s of `<span>`s met click-handlers in plaats van `<button>` of `<a>`?
-2. Zoek in de codebase naar `onclick` zonder bijbehorende `onkeydown` of `onkeypress`. Zoek ook naar `onmouseover` zonder `onfocus`.
-3. Zoek naar `tabindex` met positieve waarden: `tabindex="1"`, `tabindex="2"`, etc. Die moeten bijna altijd verwijderd worden.
-4. Controleer custom componenten (dropdowns, datepickers, modalen, carrousels). Test of ze de juiste toetsenbordpatronen volgen volgens de WAI-ARIA Authoring Practices.
-5. Test focus management bij modalen: gaat de focus naar het modaal bij openen? Blijft de focus binnen het modaal? Gaat de focus terug naar het trigger-element bij sluiten?
-6. Gebruik axe DevTools of Lighthouse voor een eerste scan — deze vinden elementen zonder focusbaarheid en onjuiste ARIA-rollen. Maar de meeste toetsenbordproblemen vind je alleen door handmatig te testen.
-7. Test in meerdere browsers. Toetsenbordnavigatie kan subtiel verschillen, met name in Safari (waar je standaard Tab-navigatie moet inschakelen in de instellingen).
-
-Deze tests moeten ook slagen als de website ingezoomd is. Er kunnen dan andere interactieve elementen aanwezig zijn.
-
-### Gerelateerde successcriteria
-
-<ul>
-  <li>
-    <a href="/wcag/1.4.11">WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content</a> voor de focusweergave
-  </li>
-  <li>
-    <a href="/wcag/2.1.2">WCAG-succescriterium 2.1.2 Geen toetsenbordval</a>
-  </li>
-  <li>
-    <a href="/wcag/2.1.3">WCAG-succescriterium 2.1.3 Toetsenbord (geen uitzondering)</a>
-  </li>
-  <li>
-    <a href="/wcag/2.4.1">WCAG-succescriterium 2.4.1 Blokken omzeilen</a>
-  </li>
-  <li>
-    <a href="/wcag/2.4.3">WCAG-succescriterium 2.4.3 Focus volgorde</a>
-  </li>
-  <li>
-    <a href="/wcag/2.4.7">WCAG-succescriterium 2.4.7 Focus zichtbaar</a>
-  </li>
-  <li>
-    <a href="/wcag/2.4.13">WCAG-succescriterium 2.4.13 Focusweergave</a>
-  </li>
-  <li>
-    <a href="/wcag/3.2.1">WCAG-succescriterium 3.2.1 Bij focus</a>
-  </li>
-</ul>
 
 ## Gerelateerde NL Design System-richtlijnen
 
