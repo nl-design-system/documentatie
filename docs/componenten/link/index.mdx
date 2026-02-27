@@ -66,11 +66,11 @@ import Wcag212 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.
 import Wcag2411 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.11-summary.md";
 import Wcag244 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.4-summary.md";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, Link } from "@utrecht/component-library-react/dist/css-module";
+import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
-import { Checklist } from "@site/src/components/Checklist";
+
 import {
   DefinitionOfDone,
   HelpImproveComponent,
@@ -97,21 +97,21 @@ export const component = componentProgress.find((item) => item.number === issueN
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
-      <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1056"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
-      <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1056"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
+      <LinkListLink href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1056"><BrandIcon brand='figma' />Figma - Start bibliotheek</LinkListLink>
+      <LinkListLink href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1056"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">Storybook</Heading>
     <LinkList>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-link--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/link--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/css-link--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</LinkListLink>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/link--documentatie"><BrandIcon brand='storybook' />Storybook - React</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">npm</Heading>
     <LinkList>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/link-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-css</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/link-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-react</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/link-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-tokens</Link>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/link-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-css</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/link-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-react</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/link-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-tokens</LinkListLink>
     </LinkList>
 
   </CardContent>

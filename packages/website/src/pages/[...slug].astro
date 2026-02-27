@@ -4,6 +4,10 @@ import { render } from 'astro:content';
 import Document from '@layouts/document.astro';
 import OverviewPage from '@components/docusaurus-mocks/OverviewPage.astro';
 import DocCardList from '@components/docusaurus-mocks/DocCardList.astro';
+import ComponentOverview from '@components/docusaurus-mocks/ComponentOverview.astro';
+import ComponentAnatomy from '@components/docusaurus-mocks/ComponentAnatomy.astro';
+import Checklist from '@components/docusaurus-mocks/Checklist.astro';
+import CriteriaList from '@components/docusaurus-mocks/CriteriaList.astro';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
@@ -23,6 +27,10 @@ const { Content } = await render(page);
 <Document>
   <Content
     components={{
+      Checklist,
+      ComponentOverview,
+      ComponentAnatomy,
+      CriteriaList,
       OverviewPage,
       DocCardList,
     }}

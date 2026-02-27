@@ -51,11 +51,11 @@ import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md";
 import Wcag141 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, Link } from "@utrecht/component-library-react/dist/css-module";
+import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
-import { Checklist } from "@site/src/components/Checklist";
+
 import {
   DefinitionOfDone,
   HelpImproveComponent,
@@ -86,21 +86,21 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
-      <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
-      <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
+      <LinkListLink href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Start bibliotheek</LinkListLink>
+      <LinkListLink href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">Storybook</Heading>
     <LinkList>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-code-block--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/code-block--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/css-code-block--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</LinkListLink>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/code-block--documentatie"><BrandIcon brand='storybook' />Storybook - React</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">npm</Heading>
     <LinkList>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-css</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-react</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-tokens</Link>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-css</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-react</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-tokens</LinkListLink>
     </LinkList>
 
   </CardContent>
