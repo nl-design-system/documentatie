@@ -52,6 +52,25 @@ function getSlug(options): string | null {
   return null;
 }
 
+function generateId(options) {
+  let filename = options.entry;
+
+  // remove file extensions
+  filename = filename.replace(/.mdx$/, '');
+  filename = filename.replace(/.md$/, '');
+
+  // Make readme's the overview page
+  filename = filename.replace(/\/readme/i, '');
+
+  // remove leading ordering number in file segment
+  filename = filename
+    .split('/')
+    .map((segment) => segment.replace(/^\d+-/, ''))
+    .join('/');
+
+  return getSlug(options) || filename;
+}
+
 const docs = defineCollection({
   loader: globIgnoringUnderscores({
     base: './../../docs',
@@ -69,24 +88,7 @@ const docs = defineCollection({
       'wcag/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
     ],
-    generateId: (options) => {
-      let filename = options.entry;
-
-      // remove file extensions
-      filename = filename.replace(/.mdx$/, '');
-      filename = filename.replace(/.md$/, '');
-
-      // Make readme's the overview page
-      filename = filename.replace(/\/readme/i, '');
-
-      // remove leading ordering number in file segment
-      filename = filename
-        .split('/')
-        .map((segment) => segment.replace(/^\d+-/, ''))
-        .join('/');
-
-      return getSlug(options) || filename;
-    },
+    generateId,
   }),
   schema: z.object({
     title: z.string().optional(),
@@ -95,4 +97,21 @@ const docs = defineCollection({
   }),
 });
 
-export const collections = { docs };
+const blog = defineCollection({
+  loader: globIgnoringUnderscores({
+    base: './../../blog',
+    pattern: ['**/*.{md,mdx}'],
+    generateId: (...args) => {
+      const result = generateId(...args).replace(/^\d+\//, 'blog/');
+      return result;
+    },
+  }),
+  schema: z.object({
+    title: z.string().optional(),
+    slug: z.string().optional(),
+    unlisted: z.boolean().optional(),
+    tags: z.array(z.string()).optional(),
+  }),
+});
+
+export const collections = { docs, blog };

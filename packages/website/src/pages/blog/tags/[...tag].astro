@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import Document from '@layouts/document.astro';
+
+export async function getStaticPaths() {
+  const blog = await getCollection('blog')
+  const tags = new Set<string>()
+
+  blog
+    .map(page => page.data.tags)
+    .flat()
+    .filter(x => typeof x === 'string')
+    .map((tag:string) => tag
+      .replaceAll(/([A-Z])([a-z])/g, '-$1$2')
+      .replace(/^-/, '')
+      .replaceAll(' ', '-')
+      .replaceAll('--', '-')
+      .toLowerCase()
+    )
+    .forEach((tag:string) => tags.add(tag.toLowerCase()))
+
+
+  return [...tags.values()].map((tag) => ({
+    params: {tag}
+  }))
+}
+
+const { tag } = Astro.params;
+---
+
+<Document>
+  <h1>TAG: {tag}</h1>
+</Document>

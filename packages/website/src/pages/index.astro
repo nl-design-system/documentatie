@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Document from '@layouts/document.astro'
 
 const docs = await getCollection('docs')
+const blog = await getCollection('blog')
 
 const sections: Record<string, {title: string, id: string}[]> = {}
 
@@ -25,10 +26,10 @@ const getDuplicateTitles = (docs: DocsArray) => {
   return Object.values(titles).filter(x => x.length > 1)
 };
 
-docs
+;[...blog, ...docs]
   .forEach(doc => {
     if (!doc.filePath) return
-    const relativeFilePath = doc.filePath.replace('../../docs/', '')
+    const relativeFilePath = doc.filePath.replace('../../docs/', '').replace('../../blog/', 'blog/')
     const section = relativeFilePath.split('/').at(0) || ''
     if (!sections[section]) {
       sections[section] = []

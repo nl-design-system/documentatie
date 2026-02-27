@@ -7,8 +7,9 @@ import DocCardList from '@components/docusaurus-mocks/DocCardList.astro'
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs')
+  const blog = await getCollection('blog')
 
-  return docs
+  return [...docs, ...blog]
     .filter(page => page.data?.unlisted !== true)
     .map((page) => ({
       params: { slug: page.id },
