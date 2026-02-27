@@ -3,21 +3,21 @@ import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import Document from '@layouts/document.astro';
 import OverviewPage from '@components/docusaurus-mocks/OverviewPage.astro';
-import DocCardList from '@components/docusaurus-mocks/DocCardList.astro'
+import DocCardList from '@components/docusaurus-mocks/DocCardList.astro';
 
 export async function getStaticPaths() {
-  const docs = await getCollection('docs')
+  const docs = await getCollection('docs');
 
   return docs
-    .filter(page => page.data?.unlisted !== true)
+    .filter((page) => page.data?.unlisted !== true)
     .map((page) => ({
       params: { slug: page.id },
-      props: { page }
-    }))
+      props: { page },
+    }));
 }
 
 const { page } = Astro.props;
-const { Content } = await render(page)
+const { Content } = await render(page);
 ---
 
 <Document>

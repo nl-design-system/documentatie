@@ -26,9 +26,9 @@ module.exports = {
     {
       files: '*.astro',
       options: {
-        parser: 'astro'
-      }
-    }
+        parser: 'astro',
+      },
+    },
   ],
-  plugins: ['prettier-plugin-astro']
+  plugins: ['prettier-plugin-astro'],
 };
