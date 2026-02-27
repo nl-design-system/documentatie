@@ -2,12 +2,12 @@
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [37365],
  {
-  6616(e, s, n) {
-   (n.r(s), n.d(s, { assets: () => l, contentTitle: () => a, default: () => h, frontMatter: () => t, metadata: () => i, toc: () => d }));
-   const i = JSON.parse('{"id":"baseline/Archief/2025-05","title":"Baseline mei 2025","description":"De softwareversies waarmee we in mei 2025 voor NL Design System testen voor Baseline support.","source":"@site/docs/baseline/Archief/2025-05.mdx","sourceDirName":"baseline/Archief","slug":"/baseline/2025-05","permalink":"/baseline/2025-05","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/baseline/Archief/2025-05.mdx","tags":[],"version":"current","frontMatter":{"title":"Baseline mei 2025","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Baseline mei 2025","pagination_label":"Baseline mei 2025","description":"De softwareversies waarmee we in mei 2025 voor NL Design System testen voor Baseline support.","slug":"/baseline/2025-05","keywords":["Accessibility Support Baseline","Baseline","browser support","browserversie"]},"sidebar":"handboek","previous":{"title":"Baseline april 2025","permalink":"/baseline/2025-04"},"next":{"title":"Baseline juni 2025","permalink":"/baseline/2025-06"}}');
-   var r = n(86070),
-    o = n(18439);
-   const t = { title: 'Baseline mei 2025', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Baseline mei 2025', pagination_label: 'Baseline mei 2025', description: 'De softwareversies waarmee we in mei 2025 voor NL Design System testen voor Baseline support.', slug: '/baseline/2025-05', keywords: ['Accessibility Support Baseline', 'Baseline', 'browser support', 'browserversie'] },
+  6616(e, s, i) {
+   (i.r(s), i.d(s, { assets: () => l, contentTitle: () => a, default: () => h, frontMatter: () => t, metadata: () => n, toc: () => d }));
+   const n = JSON.parse('{"id":"baseline/Archief/2025-05","title":"Baseline mei 2025","description":"De softwareversies waarmee we in mei 2025 voor NL Design System testen voor Baseline support.","source":"@site/docs/baseline/Archief/2025-05.mdx","sourceDirName":"baseline/Archief","slug":"/baseline/2025-05","permalink":"/baseline/2025-05","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/baseline/Archief/2025-05.mdx","tags":[],"version":"current","sidebarPosition":-202505,"frontMatter":{"title":"Baseline mei 2025","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Baseline mei 2025","sidebar_position":-202505,"pagination_label":"Baseline mei 2025","description":"De softwareversies waarmee we in mei 2025 voor NL Design System testen voor Baseline support.","slug":"/baseline/2025-05","keywords":["Accessibility Support Baseline","Baseline","browser support","browserversie"]},"sidebar":"handboek","previous":{"title":"Baseline juni 2025","permalink":"/baseline/2025-06"},"next":{"title":"Baseline april 2025","permalink":"/baseline/2025-04"}}');
+   var r = i(86070),
+    o = i(18439);
+   const t = { title: 'Baseline mei 2025', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Baseline mei 2025', sidebar_position: -202505, pagination_label: 'Baseline mei 2025', description: 'De softwareversies waarmee we in mei 2025 voor NL Design System testen voor Baseline support.', slug: '/baseline/2025-05', keywords: ['Accessibility Support Baseline', 'Baseline', 'browser support', 'browserversie'] },
     a = 'NL Design System Baseline: mei 2025',
     l = {},
     d = [{ value: 'Software om mee te testen', id: 'software-om-mee-te-testen', level: 2 }];
@@ -20,14 +20,14 @@
     return s ? (0, r.jsx)(s, { ...e, children: (0, r.jsx)(c, { ...e }) }) : c(e);
    }
   },
-  18439(e, s, n) {
-   n.d(s, { R: () => t, x: () => a });
-   var i = n(30758);
+  18439(e, s, i) {
+   i.d(s, { R: () => t, x: () => a });
+   var n = i(30758);
    const r = {},
-    o = i.createContext(r);
+    o = n.createContext(r);
    function t(e) {
-    const s = i.useContext(o);
-    return i.useMemo(
+    const s = n.useContext(o);
+    return n.useMemo(
      function () {
       return 'function' == typeof e ? e(s) : { ...s, ...e };
      },
@@ -36,7 +36,7 @@
    }
    function a(e) {
     let s;
-    return ((s = e.disableParentContext ? ('function' == typeof e.components ? e.components(r) : e.components || r) : t(e.components)), i.createElement(o.Provider, { value: s }, e.children));
+    return ((s = e.disableParentContext ? ('function' == typeof e.components ? e.components(r) : e.components || r) : t(e.components)), n.createElement(o.Provider, { value: s }, e.children));
    }
   },
  },
