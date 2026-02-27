@@ -1,4 +1,4 @@
-/*! For license information please see main.cce1f50d.js.LICENSE.txt */
+/*! For license information please see main.36afb52a.js.LICENSE.txt */
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [38792],
  {
@@ -338,6 +338,7 @@
        { label: 'GitHub', href: '/github/' },
        { label: 'Slack', href: '/slack/' },
        { label: 'Figma', href: '/figma/' },
+       { label: 'LinkedIn', href: 'https://www.linkedin.com/company/nl-design-system/' },
       ],
      },
      prism: {
