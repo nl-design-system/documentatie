@@ -6,9 +6,8 @@ import OverviewPage from '@components/docusaurus-mocks/OverviewPage.astro';
 import DocCardList from '@components/docusaurus-mocks/DocCardList.astro';
 import ComponentOverview from '@components/docusaurus-mocks/ComponentOverview.astro';
 import ComponentAnatomy from '@components/docusaurus-mocks/ComponentAnatomy.astro';
-import Checklist from '@components/docusaurus-mocks/Checklist.astro';
-import ChecklistItem from '@components/docusaurus-mocks/ChecklistItem.astro';
 import CriteriaList from '@components/docusaurus-mocks/CriteriaList.astro';
+import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
