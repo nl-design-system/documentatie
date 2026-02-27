@@ -405,6 +405,8 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+        { type: 'doc', id: 'community/design-systems' },
+        { type: 'doc', id: 'community/global-design-system' },
         { type: 'doc', id: 'community/belangenorganisaties/aanmelden' },
         { type: 'doc', id: 'project/slack' },
       ],
@@ -425,9 +427,7 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', id: 'project/faq' },
         { type: 'doc', id: 'project/kernteam' },
         { type: 'doc', id: 'project/blijf-op-de-hoogte' },
-        { type: 'doc', id: 'project/links' },
         { type: 'doc', id: 'project/klachten' },
-        { type: 'doc', id: 'project/global-design-system' },
         {
           type: 'category',
           label: 'Schrijfwijzer',
