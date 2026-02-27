@@ -1,70 +1,82 @@
 ---
 import { getCollection } from 'astro:content';
-import Document from '@layouts/document.astro'
+import Document from '@layouts/document.astro';
 
-const docs = await getCollection('docs')
+const docs = await getCollection('docs');
 
-const sections: Record<string, {title: string, id: string}[]> = {}
+const sections: Record<string, { title: string; id: string }[]> = {};
 
 type DocsArray = typeof docs;
 
 const getDuplicateTitles = (docs: DocsArray) => {
-  type CountMap = { [index:string]: any[] };
+  type CountMap = { [index: string]: any[] };
   const titles: CountMap = {};
   docs.reduce((map, doc) => {
-    const title = doc.data.title ??'';
+    const title = doc.data.title ?? '';
     if (Object.hasOwn(map, title)) {
-      map[title].push(doc)
-    }
-    else {
-      map[title] =[doc];
+      map[title].push(doc);
+    } else {
+      map[title] = [doc];
     }
     return map;
   }, titles);
 
-  return Object.values(titles).filter(x => x.length > 1)
+  return Object.values(titles).filter((x) => x.length > 1);
 };
 
-docs
-  .forEach(doc => {
-    if (!doc.filePath) return
-    const relativeFilePath = doc.filePath.replace('../../docs/', '')
-    const section = relativeFilePath.split('/').at(0) || ''
-    if (!sections[section]) {
-      sections[section] = []
-    }
-    sections[section].push({title: doc.data.title || doc.id, id: doc.id})
-  })
+docs.forEach((doc) => {
+  if (!doc.filePath) return;
+  const relativeFilePath = doc.filePath.replace('../../docs/', '');
+  const section = relativeFilePath.split('/').at(0) || '';
+  if (!sections[section]) {
+    sections[section] = [];
+  }
+  sections[section].push({ title: doc.data.title || doc.id, id: doc.id });
+});
 
 const duplicates = getDuplicateTitles(docs);
 const placeholderTitle = '(geen paginatitel)';
-
 ---
+
 <Document>
   <h1>NL Design System gerenderd met Astro</h1>
-  {Object.entries(sections).map(([section, list]) =>
-    <details open>
-      <summary>{section}</summary>
-      <ul>
-        {list.map(item =>
-          <li>
-            <a href={item.id}>{item.title ?? placeholderTitle}</a>
-          </li>
-        )}
-      </ul>
-    </details>
-  )}
-  {duplicates.length > 1 ? <aside>
-    <h2>Waarschuwing: paginatitels moeten uniek zijn</h2>
-    <p>Er zijn paginatitels die voor meerdere pagina's worden gebruikt. Pas de paginatitels aan zodat ze uniek zijn binnen deze website.</p>
-    <ul>
-      {duplicates.map((group) => (
-        <li>{group[0].data.title ?? placeholderTitle}
-          <ul>
-            {group.map((doc) => (<li><a href={doc.id}>{doc.data.title ?? placeholderTitle}</a></li>))}
-          </ul>
-        </li>
-      ))}
-    </ul>
-  </aside> : null}
+  {
+    Object.entries(sections).map(([section, list]) => (
+      <details open>
+        <summary>{section}</summary>
+        <ul>
+          {list.map((item) => (
+            <li>
+              <a href={item.id}>{item.title ?? placeholderTitle}</a>
+            </li>
+          ))}
+        </ul>
+      </details>
+    ))
+  }
+  {
+    duplicates.length > 1 ? (
+      <aside>
+        <h2>Waarschuwing: paginatitels moeten uniek zijn</h2>
+        <p>
+          Er zijn paginatitels die voor meerdere pagina's worden gebruikt. Pas de paginatitels aan zodat ze uniek zijn
+          binnen deze website.
+        </p>
+        <ul>
+          {duplicates.map((group) => (
+            <li>
+              {group[0].data.title ?? placeholderTitle}
+              <ul>
+                {group.map((doc) => (
+                  <li>
+                    <a href={doc.id}>{doc.data.title ?? placeholderTitle}</a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    ) : null
+  }
 </Document>
