@@ -410,7 +410,7 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <p>Tom vertelt dat de ambitie er is om NL Design System, Open Webconcept én WordPress verder samen te brengen en met elkaar te verweven. “Voor dat zover is, willen we de plug-in eerst verder toetsen met andere partijen. Waar lopen zij tegenaan en vooral: wat zijn de wensen van andere organisaties? Daarom zijn die samenwerkdagen ook zo belangrijk. Op die manier komt er feedback vanuit de community en dus ook automatisch vanuit andere organisaties.”</p>
 <h2 id="meer-weten" class="utrecht-heading-2">Meer weten?</h2>
 <p>Ben je benieuwd naar de gehele presentatie mét demo die Tom onlangs gaf tijdens de Heartbeat van het NL Design System? Kijk de <a href="https://www.youtube.com/watch?v=-obWqUeocYM&amp;t=531s" class="utrecht-link utrecht-link--html-a">opname</a> dan terug via ons YouTube-kanaal. Tip: abonneer je om op de hoogte te blijven van alle updates vanuit het NL Design System!</p>
-<p>De community van het NL Design System is op zoek naar organisaties die hierover willen meedenken. Vind jij het leuk om jouw feedback te geven? <a href="https://github.com/nl-design-system/nlds-community-blocks/issues" class="utrecht-link utrecht-link--html-a">Maak een issue aan</a> op GitHub, of stel je vraag in het #nl-design-system-developers kanaal in de Code for NL Slack.</p>]]></content:encoded>
+<p>De community van het NL Design System is op zoek naar organisaties die hierover willen meedenken. Vind jij het leuk om jouw feedback te geven? <a href="https://github.com/nl-design-system/nlds-community-blocks/issues" class="utrecht-link utrecht-link--html-a">Maak een issue aan</a> op GitHub, of stel je vraag op <a href="https://nldesignsystem.nl/slack/" class="utrecht-link utrecht-link--html-a">Slack</a> in het kanaal <code class="utrecht-code">#nl-design-system-developers</code>.</p>]]></content:encoded>
             <category>WordPress</category>
             <category>Developers</category>
             <category>NL Design System</category>
@@ -683,10 +683,10 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
 <li>Er zijn allerlei componenten waar de waarden op elkaar lijken, zoals buttons en links; kunnen we hier een groepering in aanbrengen?</li>
 <li>Hoe zou je deze spacing als designer willen toepassen in een ontwerptool als Figma? Als “spacer-blokje”? Met behulp van variabele? Wil je dit überhaupt wel allemaal in Figma doorvoeren?</li>
 </ul>
-<p>Nog een hoop om over na te denken! Mocht je dit lezen en voor je eigen design system ook bezig zijn met spacing tokens, laat het ons weten! Bijvoorbeeld in het <code class="utrecht-code">#nl-design-system-designers</code>-kanaal in de <a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Code for NL Slack community</a>.</p>
+<p>Nog een hoop om over na te denken! Mocht je dit lezen en voor je eigen design system ook bezig zijn met spacing tokens, laat het ons weten! Bijvoorbeeld in het <code class="utrecht-code">#nl-design-system-designers</code>-kanaal op <a href="https://nldesignsystem.nl/slack/" class="utrecht-link utrecht-link--html-a">Slack</a>.</p>
 <h2 id="vervolg" class="utrecht-heading-2">Vervolg</h2>
 <p>We zijn bovenstaand systeem aan het uittesten in Figma, om te kijken hoe het in de praktijk werkt. Dat willen we ook gaan doen voor bijvoorbeeld formulier- en contentpagina's: <em class="utrecht-emphasis utrecht-emphasis--stressed">the proof of the pudding is in the eating</em>.</p>
-<p>Ook gaan we verder met bijvoorbeeld bovenstaande vragen. Heb je vragen of ideeën, de designers zitten op <a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Slack</a> (kanaal: <code class="utrecht-code">#nl-design-system-designers</code>), daar kun je je ook melden voor de tweewekelijkse Design Open Hour, voor ontwerpers bij de overheid.</p>]]></content:encoded>
+<p>Ook gaan we verder met bijvoorbeeld bovenstaande vragen. Heb je vragen of ideeën, de designers zitten op <a href="https://nldesignsystem.nl/slack/" class="utrecht-link utrecht-link--html-a">Slack</a> (kanaal: <code class="utrecht-code">#nl-design-system-designers</code>), daar kun je je ook melden voor de tweewekelijkse Design Open Hour, voor ontwerpers bij de overheid.</p>]]></content:encoded>
             <category>NL Design System</category>
             <category>Design Tokens</category>
         </item>
@@ -740,7 +740,7 @@ Gebruik je toch een asterisk, leg dan boven het formulier de betekenis uit.</p>
             <description><![CDATA[Eind vorig jaar hebben we samen met de community stilgestaan bij de plannen en werkzaamheden voor 2022. Nu het jaar er bijna op zit, is het dan ook tijd om terug te blikken en te kijken naar wat er allemaal gedaan is. Eén ding is zeker; 2022 was een druk jaar.]]></description>
             <content:encoded><![CDATA[<p>Eind vorig jaar hebben we samen met de community stilgestaan bij de plannen en werkzaamheden voor 2022. Nu het jaar er bijna op zit, is het dan ook tijd om terug te blikken en te kijken naar wat er allemaal gedaan is. Eén ding is zeker; 2022 was een druk jaar.</p>
 <p>We kijken er vanuit het kernteam met een grote glimlach op terug! Er zijn namelijk weer meer teams aangesloten en meer mensen enthousiast over het NL Design System.</p>
-<p><a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Op Slack</a> heeft Yolijn beschreven wat we hebben gedaan met de doelen die we hadden gesteld voor 2022.</p>
+<p><a href="https://nldesignsystem.nl/slack/" class="utrecht-link utrecht-link--html-a">Op Slack</a> heeft Yolijn beschreven wat we hebben gedaan met de doelen die we hadden gesteld voor 2022.</p>
 <p>Een aantal hoogtepunten:</p>
 <p>RVO die NL Design System voor een groter publiek bij de Rijksoverheid beschikbaar heeft gemaakt;
 Onze nieuwe documentatie-website;
@@ -856,7 +856,7 @@ Op dinsdag 22 juni vond het webinar plaats over toegankelijkheid en het NL Desig
 <h2 id="documentatie-en-code-schrijven" class="utrecht-heading-2">Documentatie en code schrijven</h2>
 <p>Afgelopen jaar hebben zijn er honderden ‘pull requests’ voorbij gekomen zijn er meer dan 2.000 ‘commits’ gedaan bij NL Design System repositories.</p>
 <h2 id="vragen-of-suggesties" class="utrecht-heading-2">Vragen of suggesties?</h2>
-<p>Wil je meer informatie over het NL Design System of graag meedoen? Of heb je ideeën voor volgend jaar? Neem contact met ons op via ons <a href="https://praatmee.codefor.nl/" class="utrecht-link utrecht-link--html-a">Slackkanaal</a>.</p>
+<p>Wil je meer informatie over het NL Design System of graag meedoen? Of heb je ideeën voor volgend jaar? Neem contact met ons op via <a href="https://nldesignsystem.nl/slack/" class="utrecht-link utrecht-link--html-a">Slack</a>.</p>
 <p>Fijne feestdagen!
 Dan rest ons niets dan je hele fijne feestdagen te wensen. We kijken uit naar samenwerking in 2022!</p>
 <p>Het kernteam,
