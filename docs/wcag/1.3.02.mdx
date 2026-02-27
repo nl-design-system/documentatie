@@ -35,61 +35,199 @@ import Summary from "./summaries/_1.3.2-summary.md";
 
 <Summary />
 
+Een screenreader leest de pagina van boven naar beneden in de DOM-volgorde. Als die volgorde afwijkt van wat je ziet, kan de betekenis verloren gaan. Een datum die visueel bij een evenement hoort maar in de code erboven staat, wordt voorgelezen als onderdeel van het vorige evenement. Een navigatieknop die visueel na de content staat maar in de code ervoor, wordt voorgelezen voordat de bezoeker weet wat de content is.
+
+De leesvolgorde mag afwijken van de visuele volgorde, maar de betekenis moet hetzelfde blijven.
+
 ## Veelgemaakte fouten
 
 ### Fout: onduidelijk bij welk artikel de gegevens horen
 
-Koppen geven een pagina of een document structuur aan en laten zien wat bij elkaar hoort. Alle inhoud die onder een kop staat, hoort bij die kop. Gebruikers van schermlezers kunnen een lijst met koppen openen en naar een kop navigeren. Als informatie die bij een artikel hoort boven een kop staat, mist de bezoeker die informatie of lijkt het alsof die bij het vorige artikel hoort. Dit speelt alleen op pagina's met meerdere berichten.
+Koppen geven een pagina structuur en laten zien wat bij elkaar hoort. Alle inhoud die onder een kop staat, hoort bij die kop. Als informatie die bij een artikel hoort boven de kop staat in de HTML, mist een screenreadergebruiker die informatie of denkt dat die bij het vorige artikel hoort.
 
-### Fout: in een lijst met evenementen staan de categorie en de datum van het evenement boven het kopje
+```html
+<!-- Fout: datum en categorie staan boven de kop -->
+<article>
+  <span class="datum">15 maart 2026</span>
+  <span class="categorie">Workshops</span>
+  <h3>Toegankelijkheid voor developers</h3>
+  <p>Leer hoe je toegankelijke componenten bouwt.</p>
+</article>
 
-Alleen een visueel kader rond de gegevens van het evenement maakt duidelijk wat bij elkaar hoort. Als een gebruiker van een schermlezer naar een kop navigeert en vanaf daar leest, mist die gebruiker de juiste categorie en datum bij dat evenement. Dit wordt gedemonstreerd met de schermlezer VoiceOver in de onderstaande video.
+<!-- Goed: kop staat bovenaan, gevolgd door metadata -->
+<article>
+  <h3>Toegankelijkheid voor developers</h3>
+  <span class="datum">15 maart 2026</span>
+  <span class="categorie">Workshops</span>
+  <p>Leer hoe je toegankelijke componenten bouwt.</p>
+</article>
+```
 
-### Fout: tekst in kolommen
+### Fout: tekst in kolommen met verkeerde DOM-volgorde
 
-Als een pagina twee kolommen heeft met in elke kolom een afbeelding en een beschrijving, mag het niet zo zijn dat eerst de alt-tekst van de afbeeldingen wordt voorgelezen en daarna pas de beschrijvingen. Dan begrijpt een bezoeker die naar een schermlezer luistert niet bij welke afbeelding de beschrijving hoort.
+Als een pagina twee kolommen heeft met elk een afbeelding en beschrijving, mag de code niet eerst beide afbeeldingen bevatten en daarna beide beschrijvingen. Dan begrijpt een screenreadergebruiker niet welke beschrijving bij welke afbeelding hoort.
+
+```html
+<!-- Fout: alle afbeeldingen eerst, dan alle beschrijvingen -->
+<div class="kolommen">
+  <img src="project-a.jpg" alt="Screenshot van Project A" />
+  <img src="project-b.jpg" alt="Screenshot van Project B" />
+  <p>Project A is een webapplicatie voor gemeenten.</p>
+  <p>Project B is een designsysteem voor de overheid.</p>
+</div>
+
+<!-- Goed: afbeelding en beschrijving bij elkaar -->
+<div class="kolommen">
+  <div class="kolom">
+    <img src="project-a.jpg" alt="Screenshot van Project A" />
+    <p>Project A is een webapplicatie voor gemeenten.</p>
+  </div>
+  <div class="kolom">
+    <img src="project-b.jpg" alt="Screenshot van Project B" />
+    <p>Project B is een designsysteem voor de overheid.</p>
+  </div>
+</div>
+```
+
+### Fout: CSS verandert de visuele volgorde maar niet de DOM-volgorde
+
+Met CSS Grid en Flexbox kun je elementen visueel herschikken zonder de HTML aan te passen. Dat is handig voor de lay-out, maar gevaarlijk voor de leesvolgorde. Een screenreader volgt de DOM, niet de CSS.
+
+```html
+<!-- De HTML-volgorde is: stap 1, stap 2, stap 3 -->
+<div class="stappen">
+  <div style="order: 2;">Stap 2: Kies een template</div>
+  <div style="order: 3;">Stap 3: Publiceer</div>
+  <div style="order: 1;">Stap 1: Maak een account</div>
+</div>
+```
+
+Een screenreader leest hier: "Stap 2", "Stap 3", "Stap 1". Dat is verwarrend. Pas de HTML-volgorde aan in plaats van CSS `order` te gebruiken als de volgorde betekenis heeft.
 
 ### Fout: de leesvolgorde in een tabel
 
-Stel dat een tabel op een pagina de openingstijden toont. In de eerste kolom staan de dagen van de week en in de tweede kolom de openingstijden. Een verkeerde leesvolgorde zou zijn: maandag, dinsdag, woensdag en daarna 9 - 15, 9 - 13, 9 - 20.
+Stel dat een tabel openingstijden toont met dagen in de eerste kolom en tijden in de tweede. Een verkeerde opbouw kan ertoe leiden dat een screenreader eerst alle dagen voorleest en daarna pas alle tijden. Dan is de koppeling zoek.
 
-### Fout: de leesvolgorde in een carrousel met bladerknoppen
+```html
+<!-- Goed: een correcte tabel behoudt de koppeling -->
+<table>
+  <tr>
+    <th>Dag</th>
+    <th>Openingstijden</th>
+  </tr>
+  <tr>
+    <td>Maandag</td>
+    <td>09:00 - 17:00</td>
+  </tr>
+  <tr>
+    <td>Dinsdag</td>
+    <td>09:00 - 17:00</td>
+  </tr>
+</table>
+```
 
-Als de knoppen boven de slides staan, dan leest een schermlezer de knoppen eerst.
-Een schermlezer leest dan: 'vorige', 'volgende', inhoud van slide 1, inhoud van slide 2. Een logische leesvolgorde is: eerst de inhoud van de slides en daarna de knoppen. Dan is pas duidelijk of verder bladeren gewenst is.
+Gebruik een echte `<table>` met `<tr>`, `<th>` en `<td>`. Bouw tabellen niet na met `<div>`-elementen en CSS, tenzij je de juiste ARIA-rollen toevoegt.
+
+### Fout: bladerknoppen in een carrousel staan voor de content
+
+Als de vorige- en volgende-knoppen boven de slides staan in de DOM, leest een screenreader eerst "vorige", "volgende" en daarna pas de inhoud van de slides. De bezoeker weet dan nog niet wat de slides bevatten.
+
+```html
+<!-- Fout: knoppen voor de content -->
+<div class="carrousel">
+  <button>Vorige</button>
+  <button>Volgende</button>
+  <div class="slide">Slide 1: Onze diensten</div>
+</div>
+
+<!-- Goed: content eerst, dan de knoppen -->
+<div class="carrousel">
+  <div class="slide">Slide 1: Onze diensten</div>
+  <button>Vorige</button>
+  <button>Volgende</button>
+</div>
+```
 
 ### Fout: de leesvolgorde in diagrammen en grafieken
 
-Dit kan gebeuren bij svg-elementen die tekst bevatten. Dan worden bijvoorbeeld eerst de waarden van de X-as en daarna de waarden van de Y-as als losse getallen voorgelezen. De uitleg van wat deze assen betekenen kan dan op een verkeerd moment komen. Ook canvas- en object-elementen kunnen met een verkeerde leesvolgorde worden voorgelezen.
+SVG-elementen die tekst bevatten kunnen in een onlogische volgorde worden voorgelezen. Eerst de waarden van de X-as, dan de Y-as als losse getallen, en pas daarna de uitleg van wat de assen betekenen. Ook `<canvas>` en `<object>` elementen zijn hier gevoelig voor.
 
-### Fout: content die verschijnt door interactie met een webpagina
+Bied bij complexe grafieken een tekstueel alternatief aan, zoals een tabel met dezelfde data.
 
-Deze content moet op het juiste moment en in een logische volgorde worden voorgelezen.
-Bijvoorbeeld: een bezoeker opent een sectie waarin gerelateerde content kan worden getoond en verborgen, de zogenoemde [accordion](https://nldesignsystem.nl/accordion/). De nieuwe content moet als eerste worden voorgelezen. Dit kan ook misgaan bij [tabs](https://nldesignsystem.nl/tabs/). Als een dialoogvenster wordt geopend, moet de schermlezer de inhoud van bovenaf lezen. Dit punt lijkt sterk op [succescriterium 2.4.3 Focusvolgorde](https://nldesignsystem.nl/wcag/2.4.3/). Het verschil is dat focusvolgorde gaat over interactieve elementen en leesvolgorde niet.
+### Fout: dynamische content verschijnt op de verkeerde plek
 
-### Fout: de leesvolgorde na het sluiten van een dialoogvensters
+Content die verschijnt na interactie moet op het juiste moment en op de juiste plek in de leesvolgorde staan. Bij een [accordion](https://nldesignsystem.nl/accordion/) moet de nieuwe content direct na het geopende paneel worden voorgelezen. Bij [tabs](https://nldesignsystem.nl/tabs/) moet de inhoud van het actieve tabpaneel direct na de tablijst staan.
 
-Na het sluiten van [een dialoogvenster](https://nldesignsystem.nl/dialog/) keert een schermlezer niet terug naar het element dat het venster opende, maar leest de inhoud verder vanaf een onlogische plek.
-Er kan een verschil zijn tussen de toetsenbordfocus [(SC 2.4.3)](https://nldesignsystem.nl/wcag/2.4.3/) en de volgorde waarin een schermlezer de inhoud van een pagina leest (dit SC 1.3.2). Daarom moet alle content die dynamisch verschijnt worden getest met een schermlezer.
+```html
+<!-- Goed: accordion met content direct na de knop -->
+<div class="accordion">
+  <h3>
+    <button aria-expanded="true" aria-controls="paneel-1">Veelgestelde vragen</button>
+  </h3>
+  <div id="paneel-1">
+    <p>Hier staat het antwoord dat direct na de knop wordt voorgelezen.</p>
+  </div>
+</div>
+```
 
-### Fout: de leesvolgorde terwijl een menu of een dialoog open zijn
+### Fout: dialoogvenster beheert de leesvolgorde niet
 
-Een schermlezer kan de inhoud van de pagina voorlezen terwijl dat niet de bedoeling is.
-Bijvoorbeeld: een mobiel menu dat niet zichtbaar is, of de inhoud van de pagina terwijl een dialoogvenster nog open is.
+Als een dialoogvenster opent, moet de screenreader de inhoud van het dialoogvenster voorlezen en niet de achterliggende pagina. Sluit het venster, dan moet de focus terugkeren naar het element dat het venster opende.
+
+```html
+<!-- Goed: dialog met aria-modal voorkomt dat de achtergrond wordt gelezen -->
+<dialog aria-modal="true" aria-label="Bevestig verwijdering">
+  <h2>Weet je het zeker?</h2>
+  <p>Dit item wordt permanent verwijderd.</p>
+  <button>Annuleren</button>
+  <button>Verwijderen</button>
+</dialog>
+```
+
+Gebruik het `<dialog>`-element met `aria-modal="true"`, of beheer de focus handmatig en gebruik `aria-hidden="true"` op de achterliggende content.
+
+### Fout: onzichtbare content wordt toch voorgelezen
+
+Een mobiel menu dat visueel verborgen is maar niet uit de DOM is gehaald of verborgen met `aria-hidden`, wordt wel door een screenreader gevonden. Hetzelfde geldt voor pagina-inhoud die nog voorgelezen wordt terwijl een dialoogvenster open is.
+
+```html
+<!-- Fout: menu visueel verborgen maar leesbaar voor screenreaders -->
+<nav class="mobiel-menu" style="visibility: hidden;">
+  <!-- ... -->
+</nav>
+
+<!-- Goed: display: none en visibility: hidden verbergen het correct.
+     Gebruik NIET alleen opacity: 0 of een negatieve positie. -->
+```
 
 ### Demo lees- en focusvolgorde in de screenreader VoiceOver
 
 <VideoPlayer id="OEe1wkRK2jg" title="Demo betekenisvolle volgorde in de screenreader VoiceOver" />
 
+## Gerelateerde succescriteria
+
+- [**SC 1.3.1**](https://nldesignsystem.nl/wcag/1.3.1/) — Info en relaties: de structuur van de content.
+- [**SC 2.4.3**](https://nldesignsystem.nl/wcag/2.4.3/) — Focusvolgorde: de volgorde van interactieve elementen bij toetsenbordnavigatie.
+- [**SC 4.1.2**](https://nldesignsystem.nl/wcag/4.1.2/) — Naam, rol, waarde van interactieve elementen.
+
 ## Hoe te testen
 
-Let bij het testen op de volgorde van elementen in de DOM en de visuele volgorde. Is de volgorde waarin de inhoud van boven naar beneden wordt voorgelezen begrijpelijk als je de pagina niet ziet?
+### Voor iedereen
 
-- Controleer de HTML-structuur met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
-- Lees de Accessibility Tree
-- Zet CSS uit. Met CSS kan de leesvolgorde worden aangepast, bijvoorbeeld met [CSS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout) en [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts). CSS uitschakelen gaat het gemakkelijkst in Firefox. Kies in het menu 'View' > 'Page style' > 'No style'. Of gebruik Web Developer tool, tab CSS > Disable all styles.
-- Tabellen kunnen worden gelineariseerd met de Web Developer tool, tab ‘Miscellaneous’ > optie ‘Linearize Page’. Deze optie werkt niet op alle pagina’s.
-- Gebruik schermlezer om te testen of de leesvolgorde van de dynamisch geïnjecteerde content klopt.
+1. Lees de pagina van boven naar beneden zonder naar de lay-out te kijken. Is de volgorde van de informatie logisch? Begrijp je bij welk onderdeel elke tekst hoort?
+2. Let op pagina's met meerdere kolommen, kaarten of lijsten. Zou de informatie nog kloppen als je alles onder elkaar zet?
+3. Open een accordion, tabpaneel of dialoogvenster. Wordt de nieuwe content op een logische plek getoond?
+4. Verklein het browservenster of draai je telefoon. Verandert de volgorde van de content? Is die nog steeds begrijpelijk?
+
+### Voor developers
+
+1. Controleer de DOM-volgorde met de browser DevTools. Open de <span lang="en">Elements</span>-tab en lees de HTML van boven naar beneden. Is die volgorde logisch?
+2. Schakel CSS uit. In Firefox: kies in het menu 'View' > 'Page style' > 'No style'. Bekijk of de content in een begrijpelijke volgorde staat.
+3. Bekijk de <span lang="en">Accessibility Tree</span> in de DevTools. Controleer of de volgorde overeenkomt met de visuele volgorde.
+4. Zoek in je CSS naar `order`, `flex-direction: row-reverse`, `flex-direction: column-reverse` en `grid-row`/`grid-column` die de visuele volgorde veranderen. Controleer of de DOM-volgorde nog steeds logisch is.
+5. Lineariseer tabellen met de <span lang="en">Web Developer</span>-extensie, tab 'Miscellaneous' > 'Linearize Page'. Controleer of de informatie nog klopt.
+6. Test dynamische content met een screenreader. Open een accordion, tab of dialoogvenster en controleer of de content in de juiste volgorde wordt voorgelezen.
+7. Test in verschillende responsieve weergaves en zoom tot 400%. Controleer of de leesvolgorde intact blijft.
 
 Nuttige links voor het testen met screenreaders:
 
@@ -97,10 +235,6 @@ Nuttige links voor het testen met screenreaders:
 - [Zelf testen met screenreaders - NVDA (Windows)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-nvda-windows) op Toegankelijk Online.
 - [<span lang="en">Screenreader testing</span>](https://accessibility-manual.dwp.gov.uk/best-practice/screen-reader-testing) op GOV.UK.
 - [<span lang="en">Screen Reader Keyboard Shortcuts and Gestures</span>](https://dequeuniversity.com/screenreaders/) op Deque University.
-
-Test de volgorde van de inhoud ook in verschillende responsieve weergaves en oriëntaties. Zoom ook in tot 400%. Verandert de volgorde van de inhoud? Is de voorgelezen inhoud nog steeds logisch en betekenisvol?
-
-Dit succescriterium gaat alleen over de leesvolgorde. De volgorde van de toetsenbordfocus valt onder het [WCAG-succescriterium 2.4.3 Focus volgorde](https://nldesignsystem.nl/wcag/2.4.3/).
 
 ## Gerelateerde NL Design System-richtlijnen
 
