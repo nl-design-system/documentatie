@@ -23,7 +23,7 @@ Organisaties en hun leveranciers kunnen op verschillende niveaus meedoen met NL 
 - personen zijn af en toe aanwezig bij de [NL Design System Heartbeat](/events/heartbeat).
 - designers zijn af en toe aanwezig bij de [Design Open Hour](/events/design-open-hour).
 - developers zijn af en toe aanwezig bij de Developer Open Hour.
-- developers en designers zijn aanwezig in Slack (kanaal `#nl-design-system` in de [CodeForNL Slack](https://praatmee.codefor.nl/)).
+- developers en designers zijn aanwezig op [Slack](/slack) in het kanaal `nl-design-system`.
 - vragen worden gesteld in publieke chatkanalen of in GitHub.
 - werkzaamheden en plannen zijn publiek gedeeld in de NL Design System community.
 
