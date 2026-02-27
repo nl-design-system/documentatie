@@ -114,64 +114,58 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
 
 <AcImplementatie />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "De code is niet alleen herkenbaar aan een andere achtergrondkleur.",
-      sc: "1.4.1",
-      status: "",
-      component: <Wcag141 />,
-      tags: ["designer", "contentmaker", "developer"],
-    },
-    {
-      title: "De code heeft voldoende contrast met de achtergrondkleur",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title:
-        "Wanneer de achtergrondkleur van het Code Block anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.",
-      sc: "1.4.11",
-      status: "",
-      component: <Wcag1411 />,
-      tags: ["designer", "contentmaker"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  <ChecklistItem
+    title="De code is niet alleen herkenbaar aan een andere achtergrondkleur."
+    sc="1.4.1"
+    status=""
+    tags={["designer", "contentmaker", "developer"]}
+  >
+    <Wcag141 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De code heeft voldoende contrast met de achtergrondkleur"
+    sc="1.4.3"
+    status=""
+    tags={["designer", "contentmaker"]}
+  >
+    <Wcag143 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Wanneer de achtergrondkleur van het Code Block anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina."
+    sc="1.4.11"
+    status=""
+    tags={["designer", "contentmaker"]}
+  >
+    <Wcag1411 />
+  </ChecklistItem>
+</Checklist>
 
 ### Acceptatiecriteria van de component
 
 <AcComponent />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "De juiste HTML-elementen voor de Code Block component zijn toegepast.",
-      sc: "1.3.1",
-      status: "",
-      component: <Wcag131 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als je inzoomt naar 200% blijft alle tekst leesbaar.",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.",
-      sc: "1.4.12",
-      status: "",
-      component: <Wcag1412 />,
-      tags: ["developer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  <ChecklistItem
+    title="De juiste HTML-elementen voor de Code Block component zijn toegepast."
+    sc="1.3.1"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag131 />
+  </ChecklistItem>
+  <ChecklistItem title="Als je inzoomt naar 200% blijft alle tekst leesbaar." sc="1.4.4" status="" tags={["developer"]}>
+    <Wcag144 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar."
+    sc="1.4.12"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag1412 />
+  </ChecklistItem>
+</Checklist>
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />

@@ -92,208 +92,218 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <AcImplementatie />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title:
-        "Het label van de Text Input is gekoppeld aan de Text Input en het is duidelijk of de Text Input verplicht ingevuld moet worden.",
-      sc: "1.3.1",
-      status: "",
-      component: <Wcag131 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Instructies bij de Text Input staan op een logische plek",
-      sc: "1.3.2",
-      status: "",
-      component: <Wcag132 />,
-      tags: ["developer", "designer", "contentmaker"],
-    },
-    {
-      title: "Een Text Input die om persoonlijke gegevens vraagt heeft het juiste autocomplete-attribuut.",
-      sc: "1.3.5",
-      status: "",
-      component: <Wcag135 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Kleur is niet de enige manier om informatie over een Text Input weer te geven.",
-      sc: "1.4.1",
-      status: "",
-      component: <Wcag141 />,
-      tags: ["designer"],
-    },
-    {
-      title: "Placeholderteksten hebben een contrastratio van minimaal 4,5:1 met de achtergrond. ",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-      tags: ["designer"],
-    },
-    {
-      title: "De bezoeker kan de Text Input tot 400% vergroten zonder verlies van functionaliteit of informatie.",
-      sc: "1.4.10",
-      status: "",
-      component: <Wcag1410 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Niet-tekstuele informatie heeft een contrastratio van minimaal 3:1 met de achtergrond.",
-      sc: "1.4.11",
-      status: "",
-      component: <Wcag1411 />,
-      tags: ["designer"],
-    },
-    {
-      title: "De Text Input veroorzaakt geen toetsenbordval.",
-      sc: "2.1.2",
-      status: "",
-      component: <Wcag212 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De Text Input staat op een logische plek in de focusvolgorde.",
-      sc: "2.4.3",
-      status: "",
-      component: <Wcag243 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De Text Input heeft een beschrijvend label en toegankelijke naam.",
-      sc: "2.4.6",
-      status: "",
-      component: <Wcag246 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title: "Als de Text Input de toetsenbordfocus krijgt, is het niet volledig bedekt door andere inhoud.",
-      sc: "2.4.11",
-      status: "",
-      component: <Wcag2411 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De zichtbare naam van de Text Input is gelijk aan de toegankelijke naam.",
-      sc: "2.5.3",
-      status: "",
-      component: <Wcag253 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De Text Input heeft een minimale grootte van 24 bij 24 pixels.",
-      sc: "2.5.8",
-      status: "",
-      component: <Wcag258 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title:
-        "Als de placeholdertekst en invoertekst in een andere taal is dan de taal van de pagina, dan heeft het `input`-element een lang-attribuut met de juiste taalcode.",
-      sc: "3.1.2",
-      status: "",
-      component: <Wcag312 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als de Text Input focus krijgt, gebeurt er niets onverwachts.",
-      sc: "3.2.1",
-      status: "",
-      component: <Wcag321 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Bij het invullen van de Text Input gebeurt er niets onverwachts.",
-      sc: "3.2.2",
-      status: "",
-      component: <Wcag322 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "Text Inputs met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.",
-      sc: "3.2.4",
-      status: "",
-      component: <Wcag324 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De naam en instructies over het invullen van de Text Input staan niet alleen in de placeholder",
-      sc: "3.3.2",
-      status: "",
-      component: <Wcag332 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title:
-        "Gebruikers hoeven dezelfde gegevens niet opnieuw in te voeren als deze al eerder in hetzelfde proces zijn ingevuld of beschikbaar zijn in het systeem.",
-      sc: "3.3.7",
-      status: "",
-      component: <Wcag337 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title:
-        "De Text Input heeft een toegankelijke naam en rol, en de eigenschappen en waarde zijn beschikbaar voor hulpsoftware. ",
-      sc: "4.1.2",
-      status: "",
-      component: <Wcag412 />,
-      tags: ["designer", "contentmaker"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  <ChecklistItem
+    title="Het label van de Text Input is gekoppeld aan de Text Input en het is duidelijk of de Text Input verplicht ingevuld moet worden."
+    sc="1.3.1"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag131 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Instructies bij de Text Input staan op een logische plek"
+    sc="1.3.2"
+    status=""
+    tags={["developer", "designer", "contentmaker"]}
+  >
+    <Wcag132 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Een Text Input die om persoonlijke gegevens vraagt heeft het juiste autocomplete-attribuut."
+    sc="1.3.5"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag135 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Kleur is niet de enige manier om informatie over een Text Input weer te geven."
+    sc="1.4.1"
+    status=""
+    tags={["designer"]}
+  >
+    <Wcag141 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Placeholderteksten hebben een contrastratio van minimaal 4,5:1 met de achtergrond. "
+    sc="1.4.3"
+    status=""
+    tags={["designer"]}
+  >
+    <Wcag143 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De bezoeker kan de Text Input tot 400% vergroten zonder verlies van functionaliteit of informatie."
+    sc="1.4.10"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag1410 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Niet-tekstuele informatie heeft een contrastratio van minimaal 3:1 met de achtergrond."
+    sc="1.4.11"
+    status=""
+    tags={["designer"]}
+  >
+    <Wcag1411 />
+  </ChecklistItem>
+  <ChecklistItem title="De Text Input veroorzaakt geen toetsenbordval." sc="2.1.2" status="" tags={["developer"]}>
+    <Wcag212 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Text Input staat op een logische plek in de focusvolgorde."
+    sc="2.4.3"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag243 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Text Input heeft een beschrijvend label en toegankelijke naam."
+    sc="2.4.6"
+    status=""
+    tags={["designer", "contentmaker"]}
+  >
+    <Wcag246 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als de Text Input de toetsenbordfocus krijgt, is het niet volledig bedekt door andere inhoud."
+    sc="2.4.11"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag2411 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De zichtbare naam van de Text Input is gelijk aan de toegankelijke naam."
+    sc="2.5.3"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag253 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Text Input heeft een minimale grootte van 24 bij 24 pixels."
+    sc="2.5.8"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag258 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als de placeholdertekst en invoertekst in een andere taal is dan de taal van de pagina, dan heeft het `input`-element een lang-attribuut met de juiste taalcode."
+    sc="3.1.2"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag312 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als de Text Input focus krijgt, gebeurt er niets onverwachts."
+    sc="3.2.1"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag321 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Bij het invullen van de Text Input gebeurt er niets onverwachts."
+    sc="3.2.2"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag322 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Text Inputs met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label."
+    sc="3.2.4"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag324 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De naam en instructies over het invullen van de Text Input staan niet alleen in de placeholder"
+    sc="3.3.2"
+    status=""
+    tags={["developer", "designer"]}
+  >
+    <Wcag332 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Gebruikers hoeven dezelfde gegevens niet opnieuw in te voeren als deze al eerder in hetzelfde proces zijn ingevuld of beschikbaar zijn in het systeem."
+    sc="3.3.7"
+    status=""
+    tags={["designer", "contentmaker"]}
+  >
+    <Wcag337 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="De Text Input heeft een toegankelijke naam en rol, en de eigenschappen en waarde zijn beschikbaar voor hulpsoftware. "
+    sc="4.1.2"
+    status=""
+    tags={["designer", "contentmaker"]}
+  >
+    <Wcag412 />
+  </ChecklistItem>
+</Checklist>
 
 ### Acceptatiecriteria van de component
 
 <AcComponent />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "Het is mogelijk om autocomplete in te stellen bij de Text Input.",
-      sc: "1.3.5",
-      status: "",
-      component: <Wcag135 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Placeholderteksten blijven leesbaar wanneer de tekstafstand vergroot wordt.",
-      sc: "1.4.12",
-      status: "",
-      component: <Wcag1412 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als je de tekst van placeholders vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Je kunt de Text Input bereiken en bedienen met het toetsenbord.",
-      sc: "2.1.1",
-      status: "",
-      component: <Wcag211 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als de Text Input de toetsenbordfocus krijgt is de focus zichtbaar.",
-      sc: "2.4.7",
-      status: "",
-      component: <Wcag247 />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "Het is mogelijk de Text Input een toegankelijke naam en de juiste rol te geven en het `value`-attribuut is aanwezig en instelbaar.",
-      sc: "4.1.2",
-      status: "",
-      component: <Wcag412NLDS />,
-      tags: ["developer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  <ChecklistItem
+    title="Het is mogelijk om autocomplete in te stellen bij de Text Input."
+    sc="1.3.5"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag135 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Placeholderteksten blijven leesbaar wanneer de tekstafstand vergroot wordt."
+    sc="1.4.12"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag1412 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als je de tekst van placeholders vergroot tot 200% blijft deze in zijn geheel zichtbaar."
+    sc="1.4.4"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag144 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Je kunt de Text Input bereiken en bedienen met het toetsenbord."
+    sc="2.1.1"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag211 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Als de Text Input de toetsenbordfocus krijgt is de focus zichtbaar."
+    sc="2.4.7"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag247 />
+  </ChecklistItem>
+  <ChecklistItem
+    title="Het is mogelijk de Text Input een toegankelijke naam en de juiste rol te geven en het `value`-attribuut is aanwezig en instelbaar."
+    sc="4.1.2"
+    status=""
+    tags={["developer"]}
+  >
+    <Wcag412NLDS />
+  </ChecklistItem>
+</Checklist>
 
 ## Definition of Done
 
