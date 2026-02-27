@@ -278,7 +278,7 @@ export default function Home() {
                   href="/events/developer-open-hour/aanmelden"
                 ></Card>
                 <Card
-                  body="Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl community."
+                  body="Tijdens de Rijkshuisstijl Community Open Hour gaan organisaties informatie, inzichten en tips uitwisselen."
                   heading="Rijkshuisstijl Community Open Hour"
                   headingLevel={3}
                   href="/events/rijkshuisstijl-community-open-hour/"
