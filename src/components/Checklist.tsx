@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { Link } from '@site/src/components/Link';
 import { successCriteriaMap } from '@site/src/components/wcag22';
 import { BadgeList, Button, type HeadingProps } from '@utrecht/component-library-react';
@@ -30,7 +31,6 @@ export interface ChecklistItemProps {
  */
 export interface ChecklistProps {
   headingLevel: HeadingProps['level'];
-  items: ChecklistItemProps[];
 }
 
 /**
@@ -39,7 +39,7 @@ export interface ChecklistProps {
  * sc is optional.
  *
  */
-export const ChecklistItem = ({ title, sc, component, tags }: ChecklistItemProps) => {
+export const ChecklistItem = ({ title, sc, children, tags }: ChecklistItemProps) => {
   const labelId = useId();
 
   const badgeTags = [...tags];
@@ -68,7 +68,7 @@ export const ChecklistItem = ({ title, sc, component, tags }: ChecklistItemProps
           </span>
         </summary>
         <div className="new-checklist__content">
-          <div>{component}</div>
+          {children && <div>{children}</div>}
           <BadgeList className="new-checklist__badge-list">
             {badgeTags.map((tag, index) => {
               let badge = <DataBadge key={index}>{tag}</DataBadge>;
@@ -99,13 +99,12 @@ export const ChecklistItem = ({ title, sc, component, tags }: ChecklistItemProps
   );
 };
 
-export const Checklist = ({ items, headingLevel }: ChecklistProps) => {
-  const allTags = items.reduce((set, item) => {
-    item.tags.forEach((tag) => {
-      set.add(tag);
-    });
-    return set;
-  }, new Set<string>());
+export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
+  const allTags = new Set<string>();
+  React.Children.forEach(children, (child) => {
+    (child?.props?.tags || []).forEach((tag) => allTags.add(tag));
+  });
+  const childrenLength = React.Children.count(children);
 
   const [selectedTags, setSelectedTags] = useState<string[]>(Array.from(allTags.values()));
 
@@ -121,14 +120,14 @@ export const Checklist = ({ items, headingLevel }: ChecklistProps) => {
 
   const fieldsetLabelId = useId();
 
-  const filteredItems =
+  const filteredChildren =
     selectedTags.length >= 1
-      ? items.filter(({ tags }) => {
-          return tags.some((tag) => selectedTags.includes(tag));
-        })
-      : items;
+      ? React.Children.map(children, (child) => {
+          return child.props.tags.some((tag) => selectedTags.includes(tag)) ? child : null;
+        }).filter((x) => x)
+      : [children];
 
-  const hiddenItemCount = items.length - filteredItems.length;
+  const hiddenItemCount = childrenLength - filteredChildren.length;
 
   return (
     <div>
@@ -152,7 +151,7 @@ export const Checklist = ({ items, headingLevel }: ChecklistProps) => {
         <div>
           <>
             <p role="status">
-              {items.length - hiddenItemCount} van de {items.length} items zijn nu zichtbaar.
+              {childrenLength - hiddenItemCount} van de {childrenLength} items zijn nu zichtbaar.
             </p>
             {hiddenItemCount >= 1 ? (
               <Button
@@ -171,9 +170,7 @@ export const Checklist = ({ items, headingLevel }: ChecklistProps) => {
       </div>
 
       <ul className="new-checklist" role="list">
-        {filteredItems.map((args, index) => (
-          <ChecklistItem key={index} {...args} />
-        ))}
+        {filteredChildren}
       </ul>
     </div>
   );
