@@ -38,7 +38,10 @@ Er zijn een paar uitzonderingen. Decoratieve afbeeldingen hoeven geen tekstalter
 
 Bij formulierelementen en knoppen die een afbeelding of icoon bevatten, moet het tekstalternatief het doel beschrijven. Schrijf dus niet "afbeelding van een vergrootglas", maar "Zoeken".
 
-<span lang="en">CAPTCHA's</span> zijn een apart verhaal. Het tekstalternatief moet uitleggen wat het doel is van de <span lang="en">CAPTCHA</span>. Daarnaast moet er een alternatieve vorm zijn voor mensen die de primaire <span lang="en">CAPTCHA</span> niet kunnen gebruiken. Denk aan een audio-alternatief naast een visuele <span lang="en">CAPTCHA</span>.
+<span lang="en">CAPTCHA's</span> zijn een apart verhaal. Het tekstalternatief moet uitleggen wat het doel is van de
+<span lang="en">CAPTCHA</span>. Daarnaast moet er een alternatieve vorm zijn voor mensen die de primaire
+<span lang="en">CAPTCHA</span> niet kunnen gebruiken. Denk aan een audio-alternatief naast een visuele
+<span lang="en">CAPTCHA</span>.
 
 ## Veelgemaakte fouten
 
@@ -48,10 +51,10 @@ Als een `<img>` geen `alt`-attribuut heeft, leest een screenreader vaak de besta
 
 ```html
 <!-- Fout -->
-<img src="team-foto.jpg">
+<img src="team-foto.jpg" />
 
 <!-- Goed -->
-<img src="team-foto.jpg" alt="Het ontwikkelteam tijdens de hackathon van 2024">
+<img src="team-foto.jpg" alt="Het ontwikkelteam tijdens de hackathon van 2024" />
 ```
 
 ### Fout: alt-tekst die de afbeelding niet beschrijft
@@ -60,10 +63,10 @@ Een alt-tekst als "afbeelding" of "foto" is niet zinvol. De screenreader meldt a
 
 ```html
 <!-- Fout -->
-<img src="grafiek-omzet.png" alt="afbeelding">
+<img src="grafiek-omzet.png" alt="afbeelding" />
 
 <!-- Goed -->
-<img src="grafiek-omzet.png" alt="Staafdiagram van de kwartaalomzet 2024: Q1 €2,1M, Q2 €2,4M, Q3 €1,9M, Q4 €3,0M">
+<img src="grafiek-omzet.png" alt="Staafdiagram van de kwartaalomzet 2024: Q1 €2,1M, Q2 €2,4M, Q3 €1,9M, Q4 €3,0M" />
 ```
 
 ### Fout: decoratieve afbeelding met een beschrijvende alt-tekst
@@ -72,10 +75,10 @@ Sfeerbeelden en decoratieve elementen die geen informatie toevoegen, moeten een 
 
 ```html
 <!-- Fout: decoratieve scheidingslijn met beschrijving -->
-<img src="scheidingslijn.svg" alt="decoratieve lijn">
+<img src="scheidingslijn.svg" alt="decoratieve lijn" />
 
 <!-- Goed -->
-<img src="scheidingslijn.svg" alt="">
+<img src="scheidingslijn.svg" alt="" />
 ```
 
 ### Fout: icoonknop zonder toegankelijke naam
@@ -85,12 +88,12 @@ Een knop die alleen een icoon bevat, heeft geen zichtbare tekst. Denk aan een ha
 ```html
 <!-- Fout -->
 <button>
-  <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+  <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
 </button>
 
 <!-- Goed: met aria-label -->
 <button aria-label="Menu openen">
-  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
 </button>
 ```
 
@@ -101,12 +104,12 @@ Een knop die alleen een icoon bevat, heeft geen zichtbare tekst. Denk aan een ha
 ```html
 <!-- Fout -->
 <svg viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="40" fill="green"/>
+  <circle cx="50" cy="50" r="40" fill="green" />
 </svg>
 
 <!-- Goed -->
 <svg viewBox="0 0 100 100" role="img" aria-label="Status: actief">
-  <circle cx="50" cy="50" r="40" fill="green"/>
+  <circle cx="50" cy="50" r="40" fill="green" />
 </svg>
 ```
 
@@ -130,10 +133,10 @@ Als tekst als afbeelding wordt weergegeven, moet de volledige tekst in het alt-a
 
 ```html
 <!-- Fout -->
-<img src="aanbieding.jpg" alt="aanbieding">
+<img src="aanbieding.jpg" alt="aanbieding" />
 
 <!-- Goed -->
-<img src="aanbieding.jpg" alt="Weekaanbieding: 20% korting op alle winterjassen, geldig t/m 31 januari">
+<img src="aanbieding.jpg" alt="Weekaanbieding: 20% korting op alle winterjassen, geldig t/m 31 januari" />
 ```
 
 ### Fout: complexe grafiek met alleen een korte alt-tekst
@@ -142,18 +145,32 @@ Een grafiek, diagram of infographic bevat vaak te veel informatie voor een kort 
 
 ```html
 <!-- Onvolledig -->
-<img src="resultaten.png" alt="Grafiek met onderzoeksresultaten">
+<img src="resultaten.png" alt="Grafiek met onderzoeksresultaten" />
 
 <!-- Beter: korte alt + uitgebreide beschrijving -->
 <figure>
-  <img src="resultaten.png" alt="Staafdiagram: tevredenheidsscores per afdeling, zie tabel hieronder">
+  <img src="resultaten.png" alt="Staafdiagram: tevredenheidsscores per afdeling, zie tabel hieronder" />
   <figcaption>
     <table>
-      <caption>Tevredenheidsscores per afdeling</caption>
-      <tr><th>Afdeling</th><th>Score</th></tr>
-      <tr><td>Verkoop</td><td>8,2</td></tr>
-      <tr><td>Ontwikkeling</td><td>7,6</td></tr>
-      <tr><td>Support</td><td>6,9</td></tr>
+      <caption>
+        Tevredenheidsscores per afdeling
+      </caption>
+      <tr>
+        <th>Afdeling</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>Verkoop</td>
+        <td>8,2</td>
+      </tr>
+      <tr>
+        <td>Ontwikkeling</td>
+        <td>7,6</td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td>6,9</td>
+      </tr>
     </table>
   </figcaption>
 </figure>
@@ -166,18 +183,20 @@ Als een afbeelding het enige element in een link is, moet de alt-tekst beschrijv
 ```html
 <!-- Fout -->
 <a href="/producten/schoenen">
-  <img src="sneakers.jpg" alt="Foto van witte sneakers">
+  <img src="sneakers.jpg" alt="Foto van witte sneakers" />
 </a>
 
 <!-- Goed -->
 <a href="/producten/schoenen">
-  <img src="sneakers.jpg" alt="Bekijk onze schoenen">
+  <img src="sneakers.jpg" alt="Bekijk onze schoenen" />
 </a>
 ```
 
 ### Fout: video of audio zonder beschrijving van het doel
 
-<span lang="en">Embedded</span> video- en audiospelers zonder enige beschrijving zijn een zwart gat voor iemand met een screenreader. Het tekstalternatief hoeft niet de volledige inhoud te beschrijven. Dat valt onder andere succescriteria. Het moet wel aangeven wat de media bevat.
+<span lang="en">Embedded</span> video- en audiospelers zonder enige beschrijving zijn een zwart gat voor iemand met een
+screenreader. Het tekstalternatief hoeft niet de volledige inhoud te beschrijven. Dat valt onder andere succescriteria.
+Het moet wel aangeven wat de media bevat.
 
 ```html
 <!-- Fout -->
@@ -194,12 +213,12 @@ Bij interactieve iconen moet de tekstalterantief de functie beschrijven, niet he
 ```html
 <!-- Fout -->
 <button>
-  <img src="kruis.svg" alt="Rood kruisje">
+  <img src="kruis.svg" alt="Rood kruisje" />
 </button>
 
 <!-- Goed -->
 <button>
-  <img src="kruis.svg" alt="Sluiten">
+  <img src="kruis.svg" alt="Sluiten" />
 </button>
 ```
 
