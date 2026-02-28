@@ -43,7 +43,7 @@ Start-thema kun je gebruiken met `<html class="thema-theme">`:
 
 Wanneer een lettertype beschikbaar is op Fontsource, gebruik dan een CDN voor npm packages om het lettertype toe te voegen door te verwijzen naar het CSS-bestand met de `@font-face` code.
 
-Op de "Install" pagina van Fontsource vind je de naam van de CSS package. Klik op de link naar "NPM" om naar de documentatie van de npm package te gaan. Bij de [npm package van Noto Sans](https://www.npmjs.com/package/@fontsource/noto-serif) staat bijvoorbeeld:
+Klik op de link naar "NPM" om naar de documentatie van de npm package te gaan. Bij de [npm package van Noto Sans](https://www.npmjs.com/package/@fontsource/noto-serif) staat bijvoorbeeld:
 
 ```js
 import "@fontsource/noto-serif"; // Defaults to weight 400
@@ -59,7 +59,7 @@ Gebruik deze informatie over de bestandsnamen om een `<link>` element te maken v
 
 ### Lettertypes zonder open source licentie
 
-Sommige organisaties gebruiken een lettertype met betaalde licentie. Dit soort lettertypes zijn vaak niet beschikbaar via een gratis CDN, en mogen vaak niet gebruikt worden voor prototypes met de bestaande licentie. Bekijk de documentatie van die huisstijl voor verdere instructies of contactgegevens voor hulp.
+Sommige organisaties gebruiken een lettertype met een betaalde licentie. Lettertype met een betaalde licentie staan vaak niet op een gratis CDN. Ook mag je ze meestal niet gebruiken voor prototypes.
 
 Gebruik als oplossing een alternatief lettertype voor je prototype. Vaak is er een open source lettertype dat er op lijkt. Stel het open source lettertype in als fallback.
 
@@ -154,7 +154,7 @@ Web Fonts:
 
 Let op dat de versienummers verouderd kunnen zijn, wanneer je later verder werkt aan een prototype.
 
-Upgrade je prototype eerst naar de laatste versies van dependencies, wanneer je gebruik wilt maken van de nieuwste mogelijkheden. Let op dat door breaking changes het prototype kapot kan gaan, wanneer het versienummer voor de punt hoger wordt!
+Upgrade je prototype eerst naar de laatste versies van dependencies, wanneer je gebruik wilt maken van de nieuwste mogelijkheden. Let op dat door [breaking changes](/handboek/developer/changes/) het prototype kapot kan gaan, wanneer het versienummer voor de punt hoger wordt!
 
 ## Migreer van een CDN naar pnpm
 
