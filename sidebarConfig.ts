@@ -408,7 +408,7 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', id: 'community/design-systems' },
         { type: 'doc', id: 'community/global-design-system' },
         { type: 'doc', id: 'community/belangenorganisaties/aanmelden' },
-        { type: 'doc', id: 'project/slack' },
+        { type: 'doc', id: 'community/slack' },
       ],
     },
   ],
