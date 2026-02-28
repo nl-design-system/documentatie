@@ -30,9 +30,21 @@ importers:
       '@iframe-resizer/react':
         specifier: 5.5.8
         version: 5.5.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nl-design-system-candidate/button-docs':
+        specifier: 1.0.2
+        version: 1.0.2
+      '@nl-design-system-candidate/button-react':
+        specifier: 1.1.0
+        version: 1.1.0(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/button-tokens':
+        specifier: 1.0.0
+        version: 1.0.0
       '@nl-design-system-candidate/code-block-docs':
         specifier: 1.2.1
         version: 1.2.1
+      '@nl-design-system-candidate/code-block-react':
+        specifier: 1.3.7
+        version: 1.3.7(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/code-block-tokens':
         specifier: 2.0.3
         version: 2.0.3
@@ -90,24 +102,36 @@ importers:
       '@nl-design-system-candidate/link-docs':
         specifier: 1.2.1
         version: 1.2.1
+      '@nl-design-system-candidate/link-react':
+        specifier: 1.1.8
+        version: 1.1.8(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/link-tokens':
         specifier: 3.0.3
         version: 3.0.3
       '@nl-design-system-candidate/mark-docs':
         specifier: 1.2.1
         version: 1.2.1
+      '@nl-design-system-candidate/mark-react':
+        specifier: 1.1.7
+        version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/mark-tokens':
         specifier: 2.0.3
         version: 2.0.3
       '@nl-design-system-candidate/number-badge-docs':
         specifier: 1.2.1
         version: 1.2.1
+      '@nl-design-system-candidate/number-badge-react':
+        specifier: 1.3.2
+        version: 1.3.2(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/number-badge-tokens':
         specifier: 2.0.3
         version: 2.0.3
       '@nl-design-system-candidate/paragraph-docs':
         specifier: 1.2.1
         version: 1.2.1
+      '@nl-design-system-candidate/paragraph-react':
+        specifier: 2.2.2
+        version: 2.2.2(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/paragraph-tokens':
         specifier: 1.1.3
         version: 1.1.3
@@ -202,12 +226,9 @@ importers:
       '@mdx-js/react':
         specifier: 3.1.1
         version: 3.1.1(@types/react@18.3.27)(react@18.3.1)
-      '@nl-design-system-candidate/button-docs':
-        specifier: 1.0.2
-        version: 1.0.2
-      '@nl-design-system-candidate/button-tokens':
-        specifier: 1.0.0
-        version: 1.0.0
+      '@nl-design-system-candidate/color-sample-react':
+        specifier: 1.2.2
+        version: 1.2.2(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-community/editor-react':
         specifier: 1.2.0
         version: 1.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -221,8 +242,8 @@ importers:
         specifier: workspace:*
         version: link:packages/nlds-design-tokens
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 3.4.0
-        version: 3.4.0
+        specifier: 9.0.0
+        version: 9.0.0
       '@nl-design-system/component-progress':
         specifier: 1.0.7
         version: 1.0.7
@@ -3375,11 +3396,23 @@ packages:
   '@nl-design-system-candidate/button-docs@1.0.2':
     resolution: {integrity: sha512-G+UO66sr49bg1yMMV4Z2QAKKSCigFrECkejq46GNjgCCoKuSxgJcFHw89MhgXRxgMQuDGJSQhWpTKk/VOK1cAg==}
 
+  '@nl-design-system-candidate/button-react@1.1.0':
+    resolution: {integrity: sha512-Zi2QGpAq6/AWkL0hf9BNcNp8AQUV5yyDcKw7WDBuZ3W0ci/EF46ZfvntTbbBpHX09lYqS6F4Vf7hPGh1BdGxTg==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
+
   '@nl-design-system-candidate/button-tokens@1.0.0':
     resolution: {integrity: sha512-2uxqqVUW9kyib/rPn1rvWI09auUVOkA5IUC+rBlYxUz9DVVn4UcXPeOe9KVgh0a1WuM2dzX3k/bpWRBINtKACw==}
 
   '@nl-design-system-candidate/code-block-docs@1.2.1':
     resolution: {integrity: sha512-VmIKS1J0EwQrMyTrDbua4dR1nK2CuppqokyYCSdeD1/zHTst6zy6Y9H29mxhRVdHptULGyb+IOMNaZ8Akr1Yuw==}
+
+  '@nl-design-system-candidate/code-block-react@1.3.7':
+    resolution: {integrity: sha512-gpQySDLShzowkObZAf1WkTrKhT9KYas+ntq023IwT+86qdvIEc2BQQ38MBD6LZFdMCLE6WuVdh8R4BoWq5qNfA==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
 
   '@nl-design-system-candidate/code-block-tokens@2.0.3':
     resolution: {integrity: sha512-cMaLJRxJFbgbxG18E+Dky8mABMCJR/KwugqlfF8ERK7S4K06m4dwHQk3Al18adISuRReApfueJ2CiMTSJL40GQ==}
@@ -3398,6 +3431,12 @@ packages:
 
   '@nl-design-system-candidate/color-sample-docs@1.2.2':
     resolution: {integrity: sha512-x0iLLaB8RQKXbBi+2/HA49+DGZx0cznofKr9GTB6OQ1lO4CD8AaSNzs1su+VscdRma1OFE9Zp5JRyLICVNWpQg==}
+
+  '@nl-design-system-candidate/color-sample-react@1.2.2':
+    resolution: {integrity: sha512-s4TUicUpaCtoIx7FQ/23AneQ6+23Lr2tUZWxtjTxXuGkSwQmta+S3/ED+dDaBGIH/NRqYre0jGc/p5mhiPZj2Q==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
 
   '@nl-design-system-candidate/color-sample-tokens@2.0.3':
     resolution: {integrity: sha512-B3hIdU+bX70W5XbRpPjXrpi3F1JiNoMhNbsP0PauO0jhK2386uSFgBEqb4iDN0wruqX0qAiBhOcJuepy7vding==}
@@ -3447,11 +3486,23 @@ packages:
   '@nl-design-system-candidate/link-docs@1.2.1':
     resolution: {integrity: sha512-sCLgimS46bOt1gEgRElnVVETrv80YD3MnxY0NNrC2A0mg3ubnZR+C/dQ/NmDfGXmE2qXLlexzd5csk1qiRsapw==}
 
+  '@nl-design-system-candidate/link-react@1.1.8':
+    resolution: {integrity: sha512-qPogZEn88qFXI5hEC43FMwrVC13amrmpbBf2iUK1f6huqHflUKG1xGSIapYOS6L0a8iePN5py7/8+VEmqHy/gw==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
+
   '@nl-design-system-candidate/link-tokens@3.0.3':
     resolution: {integrity: sha512-4CS7pyfBpCwCY9u2C1QbQg/sYBLcruB7ZHCprUCJR11NyjcdXGYVnxxnOU+uko/G7UZ6Vuy66bALIbro7Iy+aw==}
 
   '@nl-design-system-candidate/mark-docs@1.2.1':
     resolution: {integrity: sha512-Zk5rUbmEHrGlSTKTIJjXzQdfCNfDdeA0pGD7Vk8ixOeBom3IM4h6yiGNEV5bhuQostFIL6gHOXZ+OMc3L4nMvQ==}
+
+  '@nl-design-system-candidate/mark-react@1.1.7':
+    resolution: {integrity: sha512-sT9usI1k2Z5+BLaWqYz8zvJIvu2w3lbYI6KcUksaUlYpoJLZ79KzTrKmQNTq5fihCVZPvG0Me7itbD7A+L0thQ==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
 
   '@nl-design-system-candidate/mark-tokens@2.0.3':
     resolution: {integrity: sha512-eA0Poy1qyoGSOAwJUirRHOm4nSzsL33fz1D585FKIucmQTV8EDrBLgLlysRDAdLriWAXPINsETaAkSQ9/EFq0A==}
@@ -3462,11 +3513,23 @@ packages:
   '@nl-design-system-candidate/number-badge-docs@1.2.1':
     resolution: {integrity: sha512-qv7zQEYfL1A1bc2CERvY23GRuSUdbiFoCFYUm85Sn7qsAIBtWbLJVK0aU5bzcTRd7N/PDj52RFcttS5CNrPXFw==}
 
+  '@nl-design-system-candidate/number-badge-react@1.3.2':
+    resolution: {integrity: sha512-inGt+cWeM3THcE+tTjzTazo/bwfTxf2F3/16yyEUCwxY/We7rL0KNW9nyZ3pYZuIxebRKSsRtCh7Z4fELKMJYA==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
+
   '@nl-design-system-candidate/number-badge-tokens@2.0.3':
     resolution: {integrity: sha512-LfJVX9ha486SMJ7laHy/yRy31mDdJHS5r8bczsuR4afll5F6xiwvhyxeJlzGv4z/Gsdoub3SWiz3apVObYJErg==}
 
   '@nl-design-system-candidate/paragraph-docs@1.2.1':
     resolution: {integrity: sha512-IXpd7MJp8f4d52u3xOB7qDAVGX+Zwx8sWAxuxoTLQiQY6yyyY7ahPMLFShGsnZpjn7KoQ6UExbTV2sihBODkyg==}
+
+  '@nl-design-system-candidate/paragraph-react@2.2.2':
+    resolution: {integrity: sha512-naW+drAzlq7HPaZmhdYdgFbR06dyuB63KGg83CRDqjbCVJ40uJzLh/56hgyYzUoRrQe9m5aXZ744uFojJYngug==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.3':
     resolution: {integrity: sha512-EtFFQagTwkJYL5k9+h8xDQDh9GKzgo4CJnFrSuxWNzM3A3Hi+vAd6bIBAj4ECBZfW5IJBtsONAduSoCiPo5CbA==}
@@ -3495,8 +3558,8 @@ packages:
   '@nl-design-system-community/ma-design-tokens@2.5.0':
     resolution: {integrity: sha512-3TYzzbo0C5br42SiS6jISScUL7u4hxgDvU2DZVBv6gJ40jBZPpXIgLI1T/JESQj79+nY2AddGm6l8xg2o2WLFA==}
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0':
-    resolution: {integrity: sha512-Ax1JW5KSUJUnfkFVDwzPHvpD61HMirn6Kp2Gu5QkHIEqwLjkD6P3/dtwKMJZq8dUGzoP/9XwMNcugLhB7Z0Qlg==}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@9.0.0':
+    resolution: {integrity: sha512-2sEhQg6nsAo5pGQq/HZ4Qj2O1gVyB5zt9y9r9SMDuWaN5FyesElQUJF/NbUBEuXg+8C4sgex2bgYwBJ+Sl3Kqw==}
 
   '@nl-design-system/component-progress@1.0.7':
     resolution: {integrity: sha512-yhJVnQPcrEJcOWTq06eSVx7AsimvJj6OilVfC9mQXKH8X31MuWzIg5cyQBlTZ6u8f4QtXu2jKGeb738nNE+kEw==}
@@ -15465,9 +15528,21 @@ snapshots:
 
   '@nl-design-system-candidate/button-docs@1.0.2': {}
 
+  '@nl-design-system-candidate/button-react@1.1.0(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      clsx: 2.1.1
+      react: 18.3.1
+
   '@nl-design-system-candidate/button-tokens@1.0.0': {}
 
   '@nl-design-system-candidate/code-block-docs@1.2.1': {}
+
+  '@nl-design-system-candidate/code-block-react@1.3.7(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/code-block-tokens@2.0.3': {}
 
@@ -15481,6 +15556,11 @@ snapshots:
   '@nl-design-system-candidate/code-tokens@2.0.4': {}
 
   '@nl-design-system-candidate/color-sample-docs@1.2.2': {}
+
+  '@nl-design-system-candidate/color-sample-react@1.2.2(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      react: 18.3.1
 
   '@nl-design-system-candidate/color-sample-tokens@2.0.3': {}
 
@@ -15516,9 +15596,20 @@ snapshots:
 
   '@nl-design-system-candidate/link-docs@1.2.1': {}
 
+  '@nl-design-system-candidate/link-react@1.1.8(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      clsx: 2.1.1
+      react: 18.3.1
+
   '@nl-design-system-candidate/link-tokens@3.0.3': {}
 
   '@nl-design-system-candidate/mark-docs@1.2.1': {}
+
+  '@nl-design-system-candidate/mark-react@1.1.7(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      react: 18.3.1
 
   '@nl-design-system-candidate/mark-tokens@2.0.3': {}
 
@@ -15526,9 +15617,20 @@ snapshots:
 
   '@nl-design-system-candidate/number-badge-docs@1.2.1': {}
 
+  '@nl-design-system-candidate/number-badge-react@1.3.2(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      react: 18.3.1
+
   '@nl-design-system-candidate/number-badge-tokens@2.0.3': {}
 
   '@nl-design-system-candidate/paragraph-docs@1.2.1': {}
+
+  '@nl-design-system-candidate/paragraph-react@2.2.2(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.3': {}
 
@@ -15571,7 +15673,7 @@ snapshots:
 
   '@nl-design-system-community/ma-design-tokens@2.5.0': {}
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0': {}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@9.0.0': {}
 
   '@nl-design-system/component-progress@1.0.7': {}
 

@@ -52,6 +52,7 @@ import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/cs
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import { ComponentStory } from "@site/src/components/ComponentStory";
 
 import {
   DefinitionOfDone,
@@ -63,6 +64,7 @@ import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";
 import tokens from "@nl-design-system-candidate/code-tokens";
+import { Code as CandidateCode } from "@nl-design-system-candidate/code-react/css";
 
 {/* Add name and description for the component */}
 export const title = "Code";
@@ -72,6 +74,17 @@ export const issueNumber = 326;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentStory
+  label="Voorbeeld van een stukje HTML-code in een lopende zin."
+  render={() => (
+    <div>
+      {"Gebruik "}
+      <CandidateCode>{'<code class="nl-code">'}</CandidateCode>
+      {" om code in lopende tekst te plaatsen."}
+    </div>
+  )}
+/>
 
 <ComponentAliases component={component} />
 

@@ -61,6 +61,8 @@ import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";
 import tokens from "@nl-design-system-candidate/mark-tokens";
+import { ComponentStory } from "@site/src/components/ComponentStory";
+import { Mark as CandidateMark } from "@nl-design-system-candidate/mark-react/css";
 
 export const title = "Mark";
 export const description =
@@ -70,6 +72,17 @@ export const issueNumber = 333;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentStory
+  label='Voorbeeld van  Mark in een zin waar "quasi-kalme lynx" gemarkeerd is.'
+  render={() => (
+    <div>
+      {"Op brute wĳze ving de schooljuf de "}
+      <CandidateMark>quasi-kalme lynx</CandidateMark>
+      {"."}
+    </div>
+  )}
+/>
 
 <ComponentAliases component={component} />
 
