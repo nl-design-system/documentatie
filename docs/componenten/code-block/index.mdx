@@ -55,6 +55,8 @@ import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/cs
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import { ComponentStory } from "@site/src/components/ComponentStory";
+import { CodeBlock as CandidateCodeBlock } from "@nl-design-system-candidate/code-block-react/css";
 
 import {
   DefinitionOfDone,
@@ -75,6 +77,17 @@ export const issueNumber = 329;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentStory
+  label="Voorbeeld van een Code Block met de eerste regels van een HTML-bestand"
+  render={() => (
+    <CandidateCodeBlock>{`<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <title>NL Design System</title>
+    ...`}</CandidateCodeBlock>
+  )}
+/>
 
 <ComponentAliases component={component} />
 

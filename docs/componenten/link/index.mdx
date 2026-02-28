@@ -70,6 +70,7 @@ import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/cs
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import { ComponentStory } from "@site/src/components/ComponentStory";
 
 import {
   DefinitionOfDone,
@@ -81,6 +82,7 @@ import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";
 import tokens from "@nl-design-system-candidate/link-tokens";
+import { Link as CandidateLink } from "@nl-design-system-candidate/link-react/css";
 
 {/* Add name and description for the component */}
 export const title = "Link";
@@ -90,6 +92,11 @@ export const issueNumber = 118;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentStory
+  label="Voorbeeld van een Link"
+  render={() => <CandidateLink href="https://example.com/">Voorbeeldwebsite</CandidateLink>}
+/>
 
 <ComponentAliases component={component} />
 
