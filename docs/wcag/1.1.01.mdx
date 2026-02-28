@@ -8,7 +8,7 @@ description: Zorg bij niet-tekstuele content voor een tekstalternatief.
 slug: 1.1.1
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - tekstalternatieven
   - perceivable
@@ -34,6 +34,217 @@ import Summary from "./summaries/_1.1.1-summary.md";
 
 <Summary />
 
+Er zijn een paar uitzonderingen. Decoratieve afbeeldingen hoeven geen tekstalternatief te hebben. Denk aan sierlijnen, achtergrondpatronen of sfeerbeelden die geen informatie toevoegen. Markeer ze wel zo dat hulptechnologie ze negeert. Een lege `alt=""` is daarvoor genoeg.
+
+Bij formulierelementen en knoppen die een afbeelding of icoon bevatten, moet het tekstalternatief het doel beschrijven. Schrijf dus niet "afbeelding van een vergrootglas", maar "Zoeken".
+
+<span lang="en">CAPTCHA's</span> zijn een apart verhaal. Het tekstalternatief moet uitleggen wat het doel is van de
+<span lang="en">CAPTCHA</span>. Daarnaast moet er een alternatieve vorm zijn voor mensen die de primaire
+<span lang="en">CAPTCHA</span> niet kunnen gebruiken. Denk aan een audio-alternatief naast een visuele
+<span lang="en">CAPTCHA</span>.
+
+## Veelgemaakte fouten
+
+### Fout: afbeelding zonder alt-attribuut
+
+Als een `<img>` geen `alt`-attribuut heeft, leest een screenreader vaak de bestandsnaam voor. Dat levert onbegrijpelijke resultaten op zoals "DSC_0042.jpg" of "header-banner-v3-final.png". Je bezoeker heeft dan geen idee wat er op de afbeelding staat.
+
+```html
+<!-- Fout -->
+<img src="team-foto.jpg" />
+
+<!-- Goed -->
+<img src="team-foto.jpg" alt="Het ontwikkelteam tijdens de hackathon van 2024" />
+```
+
+### Fout: alt-tekst die de afbeelding niet beschrijft
+
+Een alt-tekst als "afbeelding" of "foto" is niet zinvol. De screenreader meldt al dat het een afbeelding is. De alt-tekst moet beschrijven wat er op de afbeelding te zien is, of welk doel de afbeelding dient in de context van de pagina.
+
+```html
+<!-- Fout -->
+<img src="grafiek-omzet.png" alt="afbeelding" />
+
+<!-- Goed -->
+<img src="grafiek-omzet.png" alt="Staafdiagram van de kwartaalomzet 2024: Q1 €2,1M, Q2 €2,4M, Q3 €1,9M, Q4 €3,0M" />
+```
+
+### Fout: decoratieve afbeelding met een beschrijvende alt-tekst
+
+Sfeerbeelden en decoratieve elementen die geen informatie toevoegen, moeten een lege alt-tekst krijgen met `alt=""`. Als je er een beschrijving aan geeft, leest de screenreader die voor en leidt dat af van de eigenlijke inhoud.
+
+```html
+<!-- Fout: decoratieve scheidingslijn met beschrijving -->
+<img src="scheidingslijn.svg" alt="decoratieve lijn" />
+
+<!-- Goed -->
+<img src="scheidingslijn.svg" alt="" />
+```
+
+### Fout: icoonknop zonder toegankelijke naam
+
+Een knop die alleen een icoon bevat, heeft geen zichtbare tekst. Denk aan een hamburgermenu, een kruisje om te sluiten of een prullenbak om te verwijderen. Zonder een toegankelijke naam weet iemand met een screenreader niet wat de knop doet.
+
+```html
+<!-- Fout -->
+<button>
+  <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+</button>
+
+<!-- Goed: met aria-label -->
+<button aria-label="Menu openen">
+  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+</button>
+```
+
+### Fout: informatieve SVG zonder tekstalternatief
+
+<span lang="en">Inline</span> SVG's die informatie overbrengen worden standaard niet door screenreaders beschreven. Denk aan diagrammen, iconen met betekenis en illustraties. Zonder `role="img"` en een `aria-label` of `<title>` is de SVG onzichtbaar.
+
+```html
+<!-- Fout -->
+<svg viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="40" fill="green" />
+</svg>
+
+<!-- Goed -->
+<svg viewBox="0 0 100 100" role="img" aria-label="Status: actief">
+  <circle cx="50" cy="50" r="40" fill="green" />
+</svg>
+```
+
+### Fout: CSS-achtergrondafbeelding met informatie
+
+Afbeeldingen die via CSS `background-image` worden ingeladen, zijn volledig onzichtbaar voor screenreaders. Als zo'n afbeelding informatie overbrengt, mist een deel van je gebruikers die informatie. Denk aan een logo, een kaart of een infographic.
+
+```html
+<!-- Fout: logo als achtergrondafbeelding zonder alternatief -->
+<div class="logo" style="background-image: url('logo.png');"></div>
+
+<!-- Goed: visueel verborgen tekst toevoegen -->
+<div class="logo" style="background-image: url('logo.png');">
+  <span class="sr-only">Bedrijfsnaam</span>
+</div>
+```
+
+### Fout: afbeelding van tekst zonder volledige alt-tekst
+
+Als tekst als afbeelding wordt weergegeven, moet de volledige tekst in het alt-attribuut staan. Denk aan een flyer, een menu of een screenshot met tekst. Iemand met een screenreader kan de tekst in de afbeelding niet lezen.
+
+```html
+<!-- Fout -->
+<img src="aanbieding.jpg" alt="aanbieding" />
+
+<!-- Goed -->
+<img src="aanbieding.jpg" alt="Weekaanbieding: 20% korting op alle winterjassen, geldig t/m 31 januari" />
+```
+
+### Fout: complexe grafiek met alleen een korte alt-tekst
+
+Een grafiek, diagram of infographic bevat vaak te veel informatie voor een kort alt-attribuut. Een korte beschrijving als alt-tekst is een begin. De volledige data moet ook beschikbaar zijn, bijvoorbeeld in een tabel direct na de grafiek.
+
+```html
+<!-- Onvolledig -->
+<img src="resultaten.png" alt="Grafiek met onderzoeksresultaten" />
+
+<!-- Beter: korte alt + uitgebreide beschrijving -->
+<figure>
+  <img src="resultaten.png" alt="Staafdiagram: tevredenheidsscores per afdeling, zie tabel hieronder" />
+  <figcaption>
+    <table>
+      <caption>
+        Tevredenheidsscores per afdeling
+      </caption>
+      <tr>
+        <th>Afdeling</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>Verkoop</td>
+        <td>8,2</td>
+      </tr>
+      <tr>
+        <td>Ontwikkeling</td>
+        <td>7,6</td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td>6,9</td>
+      </tr>
+    </table>
+  </figcaption>
+</figure>
+```
+
+### Fout: gelinkte afbeelding met een alt die de afbeelding beschrijft in plaats van de bestemming
+
+Als een afbeelding het enige element in een link is, moet de alt-tekst beschrijven waar de link naartoe gaat. Beschrijf niet wat er op de afbeelding staat. De afbeelding is hier een interactief element, geen informatief element.
+
+```html
+<!-- Fout -->
+<a href="/producten/schoenen">
+  <img src="sneakers.jpg" alt="Foto van witte sneakers" />
+</a>
+
+<!-- Goed -->
+<a href="/producten/schoenen">
+  <img src="sneakers.jpg" alt="Bekijk onze schoenen" />
+</a>
+```
+
+### Fout: video of audio zonder beschrijving van het doel
+
+<span lang="en">Embedded</span> video- en audiospelers zonder enige beschrijving zijn een zwart gat voor iemand met een
+screenreader. Het tekstalternatief hoeft niet de volledige inhoud te beschrijven. Dat valt onder andere succescriteria.
+Het moet wel aangeven wat de media bevat.
+
+```html
+<!-- Fout -->
+<video src="introductie.mp4"></video>
+
+<!-- Goed -->
+<video src="introductie.mp4" aria-label="Introductievideo: rondleiding door de applicatie"></video>
+```
+
+### Fout: Klikbaar icoon met een alt-tekst die het icoon beschrijft in plaats van de functie
+
+Bij interactieve iconen moet de tekstalterantief de functie beschrijven, niet het uiterlijk. Je wilt weten wat er gebeurt als je erop klikt, niet hoe het icoon eruitziet.
+
+```html
+<!-- Fout -->
+<button>
+  <img src="kruis.svg" alt="Rood kruisje" />
+</button>
+
+<!-- Goed -->
+<button>
+  <img src="kruis.svg" alt="Sluiten" />
+</button>
+```
+
+## Gerelateerde succescriteria
+
+- [**SC 1.4.5**](https://nldesignsystem.nl/wcag/1.4.5/) — Afbeeldingen van tekst.
+- [**SC 4.1.2**](https://nldesignsystem.nl/wcag/4.1.2/) — Naam, rol, waarde van interactieve elementen.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Ga met je muis over afbeeldingen op de pagina. Als er een tooltip verschijnt, is er waarschijnlijk een alt-tekst aanwezig. Dat is nog geen garantie dat die goed is.
+2. Schakel het laden van afbeeldingen uit in je browser of gebruik een trage verbinding. Bekijk of je nog steeds begrijpt waar de pagina over gaat. De alt-teksten die verschijnen moeten voldoende context geven.
+3. Probeer de pagina te begrijpen zonder naar afbeeldingen te kijken. Lees alleen de tekst. Mis je belangrijke informatie? Dan ontbreken er waarschijnlijk goede alt-teksten.
+4. Let op knoppen en links die alleen een icoon tonen. Weet je zonder het icoon te zien wat ze doen?
+
+### Voor developers
+
+1. Open de browser DevTools en inspecteer alle `<img>`-elementen. Controleer of elk element een `alt`-attribuut heeft. Let op het verschil: `alt=""` is decoratief en bewust leeg. Een ontbrekend `alt`-attribuut is een fout.
+2. Inspecteer inline SVG's. Controleer of informatieve SVG's een `role="img"` en een `aria-label` of `<title>` hebben. Decoratieve SVG's moeten `aria-hidden="true"` hebben.
+3. Zoek naar `background-image` in je CSS. Controleer of afbeeldingen die via CSS worden ingeladen geen informatie overbrengen. Als ze dat wel doen, moet er een tekstalternatief beschikbaar zijn in de HTML.
+4. Controleer icoonknoppen en icoonlinks. Open de <span lang="en">Accessibility</span>-tab in DevTools en controleer of elk interactief element een toegankelijke naam heeft.
+5. Gebruik een geautomatiseerde tool zoals <span lang="en">axe DevTools</span>, <span lang="en">WAVE</span> of <span lang="en">Lighthouse</span>. Deze vinden ontbrekende alt-attributen. Of de alt-tekst inhoudelijk klopt, moet je handmatig controleren.
+6. Test met een screenreader. Gebruik <span lang="en">VoiceOver</span> op macOS of <span lang="en">NVDA</span> op Windows. Navigeer door de pagina en luister of afbeeldingen en iconen zinvol worden beschreven.
+
 ## Gerelateerde NL Design System-richtlijnen
 
 - Stijl: [Iconen](/richtlijnen/stijl/iconen).
@@ -49,54 +260,6 @@ import Summary from "./summaries/_1.1.1-summary.md";
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-### Alternatieve teksten op afbeeldingen
-
-Inspecteer in de gegenereerde HTML-code van de webpagina de `<img>`-elementen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
-
-Check voor afbeeldingen:
-
-- het `alt`-attribuut moet altijd aanwezig zijn, het kan zonder waarde (leeg) zijn:
-  ```html
-  <img src="img-url" alt="" />
-  ```
-  of met een alt-tekst
-  ```html
-  <img src="img-url" alt="wit konijn" />
-  ```
-- als een afbeelding betekenisvol is, moet de alt-tekst het doel ervan beschrijven.
-- als een afbeelding decoratief is, kan het alt-attribuut leeg zijn: `alt=""`. Een alt-tekst toevoegen voor een afbeelding die decoratief is leidt niet tot afkeuring, een afbeelding kan naast tekst ook emotie overdragen. Lees hierover, de post van [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-emotion-rich-images/) van Léonie Watson en het bericht van [Eric Eggert op Mastodon](https://yatil.social/@yatil/111974572979919177).
-- het alt-attribuut kan leeg zijn als de betekenis van de afbeelding vlak bij de afbeelding in tekst staat.
-- bevat een afbeelding tekst, die informatie toevoegt aan de content, dan moet deze tekst opgenomen zijn in de alt-tekst.
-
-Controleer voor afbeeldingen in links en buttons:
-
-- de alt-tekst van een afbeelding in een link moet het **doel van de link** beschrijven.
-- de alt-tekst van een afbeelding in een button moet **de actie** beschrijven.
-- als zowel de inhoud van de afbeelding als het doel of de actie even belangrijk zijn, moet de alternatieve tekst **beide** beschrijven. Bijvoorbeeld bij een link op een logo.
-- als een afbeelding decoratief is, kan het alt-attribuut leeg zijn: `alt=""`, maar de toegankelijke naam van een link of button moet volledig betekenisvol zijn. Bijvoorbeeld:
-
-```html
-<a href="url">
-  Meer informatie over de intocht van Sinterklaas
-  <img src="pijltje-rechts.svg" alt="" />
-</a>
-```
-
-Niet doen:
-
-```html
-<!-- Foute code, niet gebruiken -->
-<a href="url">
-  <img src="iDEAL.svg" alt="" />
-</a>
-```
-
-### Benoem waar een video of audio over gaat
-
-Geef tekstalternatief voor een video of audio zodat de bezoeker weet waar deze over gaat. Dan kan de bezoeker al dan niet besluiten de video of audio af te spelen. Dit door bijvoorbeeld een `title`-attribuut te geven aan de iframe-embed. Of door het onderwerp te beschrijven in de begeleidende tekst of een kopje erboven.
 
 ## W3C referenties
 
