@@ -15,13 +15,13 @@ import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
 </Paragraph>
 
-Vind alle plekken waar de [CDN in je prototype](./cdn.mdx) wordt gebruikt. Een handige manier is om te kijken welke andere servers voorkomen in de Network tab van de Developer Tools, wanneer je het prototype bekijkt in de browser. Je kunt ook in de code zoeken naar de URL van de CDN, wanneer je die weet.
+Zoek alle plekken waar je de [CDN in je prototype](./cdn.mdx) gebruikt. Bekijk hiervoor de Network-tab in de Developer Tools van je browser. Zoek welke andere servers daar voorkomen. Ken je de URL van de CDN? Zoek deze dan direct op in de code.
 
 De aanpassingen van de code van je prototype die nodig zijn, zijn heel erg afhankelijk van welke build tools je gaat gebruiken. De volgende voorbeelden laten zien hoe je naar [Vite](https://vite.dev) kan migreren.
 
 ### Dependencies installeren
 
-Vind alle npm packages die in de code van je prototype worden genoemd om vanaf een CDN te laden. In de Network tab van de Developer Tools staan vaak meer npm pacakges dan nodig zijn voor deze stap, omdat je indirecte dependencies niet zelf moet installeren, dus beperk je tot de npm packages in de code.
+Zoek in de code naar npm-packages die je via een CDN laadt. In de Network-tab staan vaak te veel packages. Dit komt door indirecte dependencies. Die hoef je niet zelf te installeren. Beperk je daarom alleen tot de npm-packages in de code.
 
 Installeer elke npm dependency met `pnpm add`, en noem hetzelfde versienummer als die bekend is. Bijvoorbeeld, wanneer de volgende code in je prototype staat:
 
@@ -63,7 +63,7 @@ De CSS en Web Fonts worden meestal vanaf de CDN ingeladen met een `<link>` eleme
 <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/button-css@1.1.0/dist/button.css" />
 ```
 
-De CSS wordt in Vite ingeladen vanuit JavaScript in plaats van via HTML, omdat daar de verwijzingen naar npm packages werken:
+Bij Vite wordt de CSS ingeladen vanuit JavaScript in plaats van via HTML:
 
 ```html
 <script>
