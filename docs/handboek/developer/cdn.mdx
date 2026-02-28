@@ -1,0 +1,161 @@
+---
+title: CDN gebruiken
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: CDN gebruiken
+pagination_label: CDN gebruiken
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Content-Delivery Network (CDN) gebruiken
+
+<Paragraph lead>
+  Voor een prototype is snel een idee verspreiden en laagdrempelig samenwerken vaak belangrijker dan betrouwbaarheid en
+  veiligheid. Frameworks, libraries en fonts worden vaak geladen vanaf een gratis CDN zodat 1 bestand voldoende is voor
+  het hele prototype.
+</Paragraph>
+
+Zelf dependencies hosten is aanbevolen, maar developers kiezen in sommige situaties voor een CDN. Je kunt NL Design System ook gebruiken via een CDN, wanneer de situatie daar geschikt voor is.
+
+- [Bekijk een voorbeeld met CSS componenten en het Voorbeeld-thema](/css-component-prototype.html)
+- [Bekijk een voorbeeld met HTML componenten en het Voorbeeld-thema](/html-component-prototype.html)
+
+## CSS voor huisstijl
+
+Wanneer je componenten van NL Design System gebruikt, moet je ook altijd een thema laden voor het visueel ontwerp. Gebruik het [Start-thema](/handboek/huisstijl/themas/start-thema) of het [Voorbeeld-thema](/handboek/huisstijl/themas/voorbeeld-thema) wanneer je een open source huisstijl wilt gebruiken:
+
+Voorbeeld-thema kun je gebruiken met `<html class="voorbeeld-theme">`:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css" />
+```
+
+Start-thema kun je gebruiken met `<html class="thema-theme">`:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-unstable/start-design-tokens/dist/theme.css" />
+```
+
+{/* Meerdere Nederlandse overheidsorganisaties hebben al een thema voor hun huisstijl. [Bekijk het overzicht van thema's](/community/thema/) om de organisatie te vinden waarvoor je werkt. */}
+
+## Web Fonts
+
+Wanneer een lettertype beschikbaar is op Fontsource, gebruik dan een CDN voor npm packages om het lettertype toe te voegen door te verwijzen naar het CSS-bestand met de `@font-face` code.
+
+Klik op de link naar "NPM" om naar de documentatie van de npm package te gaan. Bij de [npm package van Noto Sans](https://www.npmjs.com/package/@fontsource/noto-serif) staat bijvoorbeeld:
+
+```js
+import "@fontsource/noto-serif"; // Defaults to weight 400
+import "@fontsource/noto-serif/400.css"; // Specify weight
+import "@fontsource/noto-serif/400-italic.css"; // Specify weight and style
+```
+
+Gebruik deze informatie over de bestandsnamen om een `<link>` element te maken voor dit lettertype. Bijvoorbeeld, voor een dikgedrukte Noto Serif met `font-weight: 700`:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@fontsource/noto-serif/700.css" />
+```
+
+### Lettertypes zonder open source licentie
+
+Sommige organisaties gebruiken een lettertype met een betaalde licentie. Lettertype met een betaalde licentie staan vaak niet op een gratis CDN. Ook mag je ze meestal niet gebruiken voor prototypes.
+
+Gebruik als oplossing een alternatief lettertype voor je prototype. Vaak is er een open source lettertype dat er op lijkt. Stel het open source lettertype in als fallback.
+
+Bijvoorbeeld, gebruik op deze manier `"Open Sans"` als open source alternatief voor `"Proprietary Sans"`:
+
+```css
+.example-theme {
+  --basis-text-font-family-default: "Proprietary Sans", "Open Sans", sans-serif;
+}
+```
+
+## CSS componenten
+
+[Bekijk het overzicht van CSS componenten](/componenten/?framework=CSS) en vind de npm package voor elke component die je nodig hebt.
+
+Voeg een `<link>` element toe voor elke CSS component. Bijvoorbeeld voor de NL Design System Candidate Button en de Accordion van Amsterdam. In de documentatie van elke component vind je de bestandsnaam van het CSS-bestand.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/button-css/dist/button.css" />
+<link rel="stylesheet" href="https://unpkg.com/@amsterdam/design-system-css/dist/accordion/accordion.css" />
+```
+
+### Alles-in-1
+
+Sommige design systems hebben een CSS component library package, waarmee je alle CSS componenten in 1 keer kunt laden. CSS component libraries zijn voor developers erg gemakkelijk, maar de performance is slecht wanneer veel ongebruikte componenten worden geladen.
+
+Bijvoorbeeld, Utrecht heeft `@utrecht/component-library-css`:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/component-library-css/dist/index.css" />
+```
+
+Er is nog geen alles-in-1 package met de NL Design System Candidate en Hall of Fame componenten.
+
+## HTML componenten
+
+[Bekijk het overzicht van HTML componenten](/componenten/?framework=HTML) en vind de npm package voor elke component die je nodig hebt.
+
+Voeg een `<link>` element toe voor elke HTML component. Bijvoorbeeld voor de NL Design System Candidate Button en de Table van Utrecht. In de documentatie van elke component vind je de bestandsnaam van het CSS-bestand.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@nl-design-system-candidate/button-css/dist/html/button.css" />
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/table-css/dist/html/index.css" />
+```
+
+### Alles-in-1
+
+Utrecht Design System heeft ook voor HTML componenten een alles-in-1 CSS-bestand in `@utrecht/component-library-css`:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@utrecht/component-library-css/dist/html.css" />
+```
+
+## Privacy
+
+Wanneer bestanden van een CDN geladen worden, dan worden persoonlijke gegevens zoals het IP-adres van de bezoeker gedeeld met een derde partij. Houdt er rekening mee dat dit niet toegestaan kan zijn volgens de [Algemene verordening gegevensbescherming (AVG)](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg) of volgens de privacyverklaring van je website.
+
+## Veiligheid
+
+Houdt er rekening mee dat een server van derden gebruikt kan worden door hackers om kwaadaardige code uit te voeren in jouw website.
+
+Gebruik een Content-Security-Policy (CSP) en [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity) om de risico's te beperken. Ook voor een prototype kun je een CSP gebruiken, via het `<meta>` element. Met een CSP kun je bijvoorbeeld voorkomen dat een CDN voor lettertypes gebruikt kan worden voor code, of dat kwaadaardige code verbinding kan maken met andere servers om gegevens te lekken. Blokkeer automatisch bestanden die in de tussentijd zijn aangepast door Subresource Integrity in te stellen.
+
+## Overige nadelen
+
+- **Beschikbaarheid**: Je prototype gaat kapot wanneer de gratis dienst niet beschikbaar is.
+- **Niet sneller**: vroeger was een lettertype van een CDN sneller om te laden, maar dat is niet meer zo. Browsers geven nu voor de veiligheid [elke website een eigen cache](https://developer.mozilla.org/en-US/docs/Web/Privacy/Guides/State_Partitioning).
+
+## Performance verbeteren
+
+Wanneer je prototype klaar is om te delen, kun je nog wat verbeteringen doen voor de performance:
+
+- Gebruik een URL met een exacte versienummer, zodat er geen vertraging is door het controleren op updates en het bestand langer in de cache blijft.
+- Kopieer de CSS voor Web Fonts naar je prototype.
+- Vervang een alles-in-1 component library door alleen de componenten die je gebruikt.
+- Verwijder dependencies die je niet meer gebruikt.
+
+## Veelgebruikte CDN's
+
+npm packages:
+
+- [esm.sh](https://esm.sh)
+- [unpkg.com](https://unpkg.com)
+- [jsdelivr.net](https://jsdelivr.net)
+
+Web Fonts:
+
+- [Font source via jsdeliver.net](https://fontsource.org/docs/getting-started/cdn)
+- [Google Fonts](https://fonts.google.com/)
+
+## Updates gebruiken
+
+Let op dat de versienummers verouderd kunnen zijn, wanneer je later verder werkt aan een prototype.
+
+Upgrade je prototype eerst naar de laatste versies van dependencies, wanneer je gebruik wilt maken van de nieuwste mogelijkheden. Let op dat door [breaking changes](/handboek/developer/changes/) het prototype kapot kan gaan, wanneer het versienummer voor de punt hoger wordt!
+
+## Migreer van een CDN naar pnpm
+
+De dependencies op de aanbevolen manier installeren via pnpm is één van de eerste stappen wanneer je het prototype gaat doorontwikkelen voor productie. Lees verder hoe van een [CDN naar naar pnpm migreren](./cdn-migratie.mdx) werkt.
