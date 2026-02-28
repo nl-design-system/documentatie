@@ -1,5 +1,29 @@
 # @nl-design-system-unstable/documentation
 
+## 1.9.0
+
+### Minor Changes
+
+- a70d115: Uitleg over toepassing van kopniveau 1 toegevoegd aan content richtlijnen.
+- 97d334b: Toelichting over aria-busy in 4.1.2 Button.
+- 4cb7afb: Toelichting over context toegevoegd aan pagina 'Decoratieve afbeelidngen' in content richtlijnen.
+- 72ce540: Toegankelijkheidsacceptatiecriteria voor Form Field Description.
+- 6f43281: Wijziging van externe link naar interne link in richtlijnen Tekstopmaak.
+- eef7db9: Baseline februari 2026 en archief functie toegevoegd.
+- 34c05fd: Toevoegen en gelijktrekken van interne WCAG-richtlijnen bij bestaande formulierrichtlijnen.
+- 744a29a: Baseline 2025-11
+- fa4cfa3: Toegankelijkheidsacceptatiecriteria voor Text Input.
+- b4d86ab: Toegankelijkheidsacceptatiecriteria voor Form Field Label.
+- c063367: Link naar recente baseline op overzichtspagina verwijderd en spelfout opgelost.
+- c87f8b4: Voorbeelden voor de richtlijnen voor functionele afbeeldingen.
+- 133a61b: Toevoeging over tabindex in 2.4.3 voor button.
+- d2e1800: Paginavolgorde van Icon aangepast in overeenstemming met andere (pre)Candidate componenten.
+- c59cdca: Baseline 2025-12
+- 5cb5f62: Criterium 2.4.12 toegevoegd aan Button.
+- 91a8d42: Opsplitsen van documentatie over basis-tokens in herbruikbare Markdown partials
+- e653741: Toevoeging aan WCAG 2.5.2 en WCAG 2.4.3 advies bij Button.
+- e54cc8d: Kleine fix voor 1.3.1 bij Text Input en volgorde van de pagina aangepast naar Candidate volgorde.
+
 ## 1.8.0
 
 ### Minor Changes
@@ -120,7 +144,6 @@
 
 - be94459: De Rijkshuisstijl Community Open Hour pagina toegevoegd.
 - fe712bc: Toevoegingen aan richtlijnenpagina's over tekstopmaak:
-
   - Oplossingen en voorbeelden veel gemaakte toegankelijkheidsfouten.
   - Introductiepagina gewijzigd, checklist voor contentmakers.
   - Secties ‘hoe te testen’.
@@ -277,7 +300,6 @@
 ### Minor Changes
 
 - 533d8a5: Samenvatting toegevoegd voor de volgende WCAG-richtlijnen:
-
   - [1.2.1 Louter-geluid en louter-videobeeld (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.1)
   - [1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.2)
   - [1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.3)
