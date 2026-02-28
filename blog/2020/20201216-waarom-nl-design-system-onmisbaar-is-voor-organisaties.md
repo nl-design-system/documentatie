@@ -71,8 +71,8 @@ Dat het NL Design System de toekomst heeft, is duidelijk volgens Carina en Sjef.
 
 ![Schermafdrukken van Overheid Me, een van de experimentele prototypes door Wigo4it gemaakt met de NL Design System](https://designsystem.gebruikercentraal.nl/wp-content/uploads/sites/26/2020/12/OverheidME.png)
 
-Momenteel helpt Wigo4it met het realiseren van een aantal prototypen voor de gemeente Utrecht binnen Common Ground, samen met ICTU en VNG/GBI waarbij zij gebruik maken van het NL Design System: Overheid ME. In een aanzienlijk korte tijd werd dit project opgezet, omdat er al een opzet is vanuit het designsysteem.
-Tegen organisaties die twijfelen of meedoen aan het NL Design System nuttig is, wil Carina zeggen: “. Het is een open source initiatief en voelt nu misschien nog optioneel. Toch is het juist deze fase waar organisaties veel profijt van hebben. Daarom denk ik dat dit het beste moment is om in te stappen.
+Wigo4it realiseert diverse prototypen voor de gemeente Utrecht binnen het thema Common Ground. Ze doen dit met ICTU en VNG/GBI. Ze gebruiken structureel NL Design System: Overheid ME. Het team bouwde dit project snel op dankzij de solide opzet van het designsysteem.
+Voor twijfelende organisaties heeft Carina een tip: “Vergeet niet dat het open source is. Instappen in deze vroege bouwfase geeft organisaties simpelweg veel profijt. Pak de kans en stap direct in dit traject.”
 
 Sjef voegt toe: “Hoe mooi is het om door ‘kruisbestuiving’ van elkaar te leren? Zo’n designsysteem wordt veel meer verrijkt door verschillende partijen dan door slechts één team. In de community zie je steeds meer eenheid ontstaan. In mijn ogen heb je dit nodig om je eigen core business uit te diepen. De mogelijkheden binnen de dienstverlening zijn nagenoeg eindeloos herbruikbaar. Dit is echt wel de toekomst van het ontwikkelen!”
 

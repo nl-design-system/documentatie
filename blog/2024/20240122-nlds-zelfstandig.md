@@ -34,7 +34,7 @@ Het NL Design System is geen standaard design system, zoals je wellicht in ander
 
 Projectleider Angela Imhof stond samen met [het kernteam](https://nldesignsystem.nl/project/kernteam), bestaande uit Yolijn van der Kolk en Robbert Broersma, al vanaf de start van het NL Design System project aan het roer. Fast forward naar 2023: Angela droeg het stokje over aan Peter Berrevoets, die haar rol als projectleider overnam.
 
-Toen Peter begin 2023 aansloot, was hij gelijk enthousiast. “De naam van het programma 'Gebruiker Centraal' sprak me erg aan. Want dáár draait het natuurlijk om: we doen het voor de gebruiker, voor de inwoner, de burger. De mate waarin NL Design System bijdraagt aan de toegankelijkheidsopgave van veel overheidsorganisaties misschien nog wel meer! Dus ik stapte maar wat graag aan boord en het voelde gelijk goed om hier iets aan te mogen bijdragen.”
+Peter sloot in begin 2023 aan met enthousiasme. “De titel 'Gebruiker Centraal' voelt enorm treffend. Het team bouwt het eindelijk echt voor de gebruiker. NL Design System verbetert direct de toegankelijkheid stevig en doelgericht. Ik werk hieraan mee met veel overtuiging.”
 
 ## NL Design System gaat ‘op kamers’
 
@@ -46,7 +46,7 @@ Volgens zowel Peter als Victor is het dan ook de bedoeling dat de relatie tussen
 
 Peter heeft veel zin om zelfstandig door te gaan met het NL Design System en heeft dan ook mooie plannen. Maar, zegt hij, er zijn ook uitdagingen: “Eén van die uitdagingen zit voor mij in het gecontroleerd laten groeien van het project. Steeds meer grote organisaties willen meedoen (zie: [Wie doet er mee?](https://nldesignsystem.nl/project/wie-doet-mee/), red.). Ook op het gebied van kennis delen op evenementen bijvoorbeeld. Ons team kan nou eenmaal niet overal tegelijk zijn. Wanneer je de balans tussen vraag en aanbod niet bewaakt, gaat dat ten koste van de kwaliteit van advies, begeleiding en regie vanuit het kernteam op de werking van de community, en daarmee op de kwaliteit van de bouwblokken.”
 
-Peter heeft nog wel een tip voor organisaties die het NL Design System willen gebruiken: “Het is belangrijk dat organisaties niet alleen mee willen doen, maar er ook de middelen voor willen vrijmaken. Vooral dat stelt ontwerpers en ontwikkelaars in staat om deel te nemen in de NL Design System-community en de aandacht aan de implementatie te geven die nodig is. We willen het NL Design System aan iedere overheidsorganisatie aanbieden, maar op dit moment kost dit nog veel werk én tijd. We werken er ook hard aan om de ingebruikneming ervan ‘simpeler’ te maken. Daarom is het des te belangrijker om het echt als community te doen, zodat we kennis delen en van elkaar leren.”
+Peter adviseert specifiek instappende organisaties: “Maak de juiste middelen ruim op tijd beschikbaar. Stel ontwerpers intern in de gelegenheid actief de NL Design System-community te versterken. Vereenvoudig de ingebruikneming constructief met ons. Leer doelgericht elkaars kennis en visies in deze communitys.”
 
 In de ‘ideale wereld’ zou Victor graag zien dat de hele overheid automatisch gebruikt maakt van het NL Design System: “Leren van elkaars kennis en ervaring is zo belangrijk. Elke keer weer hetzelfde knopje maken en neerzetten kost zoveel tijd. Ik zou echt niet weten waarom niet iedereen ermee zou werken. Idealiter zou het implementeren van het NL Design System net zo makkelijk moeten gaan als het installeren van een standaard WordPress-website. Zover zijn we natuurlijk nog lang niet, maar ik heb goede hoop!”
 

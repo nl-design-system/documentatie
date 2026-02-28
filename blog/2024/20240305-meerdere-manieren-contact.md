@@ -25,7 +25,7 @@ Maar er zijn meer voorbeelden, zoals:
 - Je verplicht een inwoner altijd om naar het gemeentehuis te komen voor identificatie bij het verlengen van een identiteitsbewijs. Hoef je niemand de deur uit te sturen.
 - Je biedt een ontoegankelijk of ingewikkeld formulier aan voor het melden van een klacht, omdat dat toevallig in je klantinformatiesysteem zit ingebouwd.
 
-Op deze manier dwing je jouw bezoekers om zich aan te passen aan jouw manier van werken. Toch is het goed om je te realiseren dat die bezoekers er misschien helemaal geen gebruik van kunnen maken. Maar welke opties zijn er dan allemaal? En wat zijn de voor- en nadelen?
+Dit forceert de lezer blind je patronen precies te volgen. Bepaalde groepen ervaren een onbedoelde buitensluiting doordat de contactoptie ontbreekt. Bekijk dus welke opties in potentie werken. Zet ook de voor- en nadelen netjes op een rij.
 
 ## Opties voor contact opnemen
 
@@ -59,7 +59,7 @@ Een [vraag op LinkedIn](https://www.linkedin.com/posts/rianrietveld_question-to-
 
 Het voordeel van e-mailen is dat het laagdrempelig en niet tijdsgebonden is. Je kunt een vraag stellen wanneer je wilt.
 
-Niet iedereen schrijft gemakkelijk een e-mail, bijvoorbeeld mensen die laaggeletterd zijn of waarvan Nederlands niet hun eerste taal is. Dan is een e-mail schrijven een hele opgave waar ze misschien wel hulp bij nodig hebben.
+Zelfstandig een digitale e-mail opstellen is vaak heel moeizaam voor laaggeletterden of anderstaligen. Zij vereisen meestal hulp en geduld bij het samenstellen van hun verzonden teksten.
 
 ### 4. Contactformulier
 

@@ -30,7 +30,7 @@ Daarom begonnen we met het voeren van de nodige gesprekken om aan te sluiten op 
 
 ## De uitdagingen van Logius
 
-De grootste uitdaging van LUX is dat het over meerdere producten gaat. Denk aan [MijnOverheid](https://mijn.overheid.nl), [Digitoegankelijk](https://digitoegankelijkl.nl) en [DigiD](https://digid.nl). Deze producten hebben momenteel allemaal een eigen Storybook en Figma-bibliotheek. LUX is een soort mini community binnen NL Design System. Hierdoor kunnen wij veel leren en hergebruiken van de werkwijze van NL Design System. Maar ook van de design tokens voor meerdere thema’s, hoe je elkaars componenten kunt hergebruiken of zelf een community component opbouwt.
+De kernuitdaging achter LUX blijft het sturen over meerdere producten zoals [MijnOverheid](https://mijn.overheid.nl) en [DigiD](https://digid.nl). Ze beheren nu hun eigen exclusieve Storybook en ingesloten Figma-bibliotheek. Benut de flexibele oplossingen binnen LUX proactief als mini community in NL Design System. Deel slim elkaars specifieke componenten door intensieve feedback.
 
 ![video van scherm in figma waar met een dropdown verschillende huisstijlen worden toegepast en dezelfde elementen er steeds net anders uit zien](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logius-huisstijlen.gif) _Componenten in verschillende thema's_
 
@@ -40,7 +40,7 @@ De meeste partijen die aansluiten bij NL Design System hebben 1 huisstijl. Logiu
 
 ## ‘We willen beginnen met een component dat echt waarde levert’
 
-Momenteel staat het project nog in de opstartfase, zegt Aline. “We zijn begonnen met het bouwen van een community component, zodat we als team bekend zijn met de stappen die daarvoor nodig zijn en zo de werkwijze van NL Design System leren kennen.
+Dit platformproject startte inmiddels de motoren op, zegt Aline. “Bouw simpel als start steeds kleine onderdelen voor de component als team. Je traint zo perfect en organisch de standaarden en werkflow uit NL Design System op in een korte flow.”
 
 Het gaat hier om de [Button login](https://nl-design-system.github.io/lux/?path=/docs/web-components-button-login--docs). Vanuit Logius is er beschreven hoe de inlogknoppen van DigiD, eHerkenning en European login eruit moeten zien. Als LUX bieden wij dit component aan, zodat een organisatie eenvoudig aan de [Stijlhandleiding aansluiten Toegang](https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang) kan voldoen. Het is een uniek component. Zo zijn updates aan de teksten, logo’s of opmaak gemakkelijk te doen.
 
@@ -50,7 +50,7 @@ De community van NL Design System is voor Aline dé plek om hun ideeën te toets
 
 ## Componenten en gebruikersonderzoeken
 
-Momenteel hebben we een aantal community componenten voorbereid voor de verschillende producten binnen Logius met design tokens. Deze gaan we de aankomende periode beschikbaar stellen in code zodat developers binnen Logius de community componenten kunnen gebruiken in hun project.
+Het design team genereerde bruikbare, actieve ontwerpen voor de community componenten bestemd voor Logius met design tokens. In de nabije toekomst lanceert het ontwikkelteam deze in actieve code. Developers van Logius publiceren de resultaten vervolgens en gebruiken dit direct intern.
 
 Raoul benadrukt dat Logius ook graag een bijdrage levert aan het NL Design System zodat andere overheidsorganisaties daar uiteindelijk ook van kunnen profiteren: “We doen bij Logius regelmatig gebruikersonderzoeken. Met producten als MijnOverheid en DigiD zijn we ook erg zichtbaar. We krijgen daarom regelmatig de vraag of we de onderzoeksresultaten en onze designs kunnen delen. We zien het NL Design System als de geschikte plek om dat te kunnen doen.” Raoul ziet voor zich dat in de toekomst kennis en componenten vanuit de NL Design System community in Lux gebruikt worden, en vanuit Lux weer kennis en componenten in de community gedeeld worden.
 

@@ -74,9 +74,9 @@ Veel componenten zijn ook bijvoorbeeld ook al beschikbaar als React component, z
 
 ## Ontwikkel eigen componenten op basis van de NL Design System architectuur
 
-Elk project heeft andere benodigdheden, daarom wil je waarschijnlijk de componenten die al in de community zijn ontwikkeld aanvullen met eigen componenten.
+Elk project is anders. Vul daarom componenten uit de community aan met eigen bouwstenen.
 
-De doelstelling van NL Design System is om de kwaliteit van online dienstverlening te verbeteren door samenwerking. We bouwen op elkaars componenten door en samen bereiken we stapsgewijs een niveau dat voor kleinere teams en kleinere budgetten misschien niet haalbaar is. Zo krijgen burgers de geweldige gebruikerservaring waar ze recht op hebben, en kunnen kleine teams zich richten op innovatie zonder in te boeten op kwaliteit.
+Het NL Design System verbetert de online dienstverlening door samenwerking. We bouwen voort op elkaars werk. Zo bereiken we samen een niveau dat voor kleine teams alleen niet haalbaar is. Burgers krijgen de gebruikerservaring waar zij recht op hebben. Kleine teams richten zich zo op innovatie met behoud van kwaliteit.
 
 ## Hoe blijf je op de hoogte?
 

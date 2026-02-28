@@ -18,7 +18,7 @@ We geven je persoonlijke gegevens niet aan derden door, tenzij we hiertoe wettel
 
 ## Wat doen we met de bezoekersgegevens?
 
-Op dit moment analyseren wij geen bezoekersgegevens.
+NL Design System sluit verwerking en analyseerstromen betreffende reguliere bezoekersgegevens pertinent en transparant uit in de actieve communicatie.
 
 ## Nieuwsbrief
 

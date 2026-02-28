@@ -40,7 +40,7 @@ Margo: “Het viel ons op dat de meerderheid van de deelnemers (na het zien van 
 
 Volgens Ananta is het uiteindelijk de bedoeling dat alle formulieren voor vergunningen worden omgezet naar het nieuwe ontwerp: “De eerste stap is om de verantwoordelijkheid hiervan over te dragen aan de betreffende afdelingen. Vervolgens moeten de afdelingen de realisatie hiervan afstemmen met onze afdeling Online, zodat zij de formulieren daadwerkelijk gaan aanpassen én begrijpen wat er precies moet gebeuren. Daarnaast is het ook handig om te kijken naar wat er nog meer geoptimaliseerd kan worden in de toekomst. We willen uiteindelijk meer met gebruikersdata doen, zoals het meten van de website. Dit kunnen we dan weer vergelijken met de inzichten uit gebruikersonderzoeken. Denk aan informatie als wanneer klikken mensen weg?”
 
-Ananta vertelt: “Bij het nieuwe ontwerp willen we de ‘waarschuwingsfunctie’ (alert) gebruiken uit de NL Design System-community. Bij het gedeelte waar mensen formulieren moeten toevoegen zie je momenteel de optie om alle formulieren in 1 keer te uploaden. Deze splitsen we nu uit in individuele documenten en het is de bedoeling dat de waarschuwingsfunctie naar voren komt als de aanvrager niet alle benodigde documenten upload.”
+Ananta deelt zijn overwegingen: “Het team integreert het alert component van NL Design System in dit ontwerp. Bied de bestanden nu afzonderlijk met structuur aan voor een succesvol resultaat. Toon de gerichte waarschuwingsfunctie exclusief bij ontbrekende documentverzoeken.”
 
 ## Benieuwd naar deze gebruikerstest?
 

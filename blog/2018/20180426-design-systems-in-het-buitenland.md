@@ -12,7 +12,7 @@ De mensen achter [GOV.UK](https://www.gov.uk/) zijn in 2017 gestart met een inte
 
 <!-- truncate -->
 
-Komt mooi uit, want ook in Nederland gebeurt er veel bij diverse overheden veel op dit vlak. Momenteel verkennen we samen met [Code for NL](https://www.codefor.nl/) en het programma Mens Centraal of we kunnen toewerken naar een overheidsbrede, gezamenlijke interactiebibliotheek. Dit zijn de belangrijkste dingen die we geleerd hebben: [https://youtu.be/DCeslUdkTKo](https://youtu.be/DCeslUdkTKo).
+Veel overheden werken al aan eigen oplossingen. Samen met [Code for NL](https://www.codefor.nl/) en Mens Centraal verkent het team een gedeelde bibliotheek voor interacties. Bekijk de belangrijkste lessen in deze [video over het GOV.UK Design System](https://youtu.be/DCeslUdkTKo).
 
 ## Australisch design system
 

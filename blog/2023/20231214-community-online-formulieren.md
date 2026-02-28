@@ -30,7 +30,7 @@ Eerder deelden we de [eerste (en belangrijkste) lessen vanuit het testen met de 
 
 Vervolgens neemt Rian Rietveld het stokje over en gaat dieper in op de richtlijnen voor formulieren. Volgens Rian is het een belangrijke vuistregel om te onthouden dat jij niet je gebruiker bent. Denk dus niet dat wat voor jou duidelijk is, ook automatisch voor anderen duidelijk is. Ze vertelt dat alle geleerde lessen gedocumenteerd worden als richtlijnen voor formulieren.
 
-Op dit moment zijn er al verschillende richtlijnen te vinden. Denk aan richtlijnen voor labels, beschrijvingen, links, buttons, placeholders en op te vragen informatie. Zie: [Richtlijnen voor formulieren](/richtlijnen/formulieren).
+Verschillende publicaties bevatten al richtlijnen. Gebruik de adviezen voor labels, beschrijvingen, links, buttons, placeholders en op te vragen informatie. Lees simpelweg de [Richtlijnen voor formulieren](/richtlijnen/formulieren).
 
 ## Richtlijnen voor labels uitgelicht
 

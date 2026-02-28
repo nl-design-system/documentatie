@@ -58,7 +58,7 @@ Wanneer je die afbeelding dan vervolgens op een pagina gebruikt, krijgt de afbee
 
 Artificial Intelligence (AI) kan enorm behulpzaam zijn voor blinden en slechtzienden. Er zijn apps en andere hulpmiddelen die een afbeelding kunnen scannen en een feitelijke beschrijving kunnen geven van de afbeelding. Daarmee worden veel mensen een stuk zelfstandiger, omdat ze niemand nodig hebben die even meekijkt.
 
-Wees wel voorzichtig met AI. Je kunt niet zomaar vertrouwen op een tekstalternatief dat AI voor je genereert. Het kan een goed startpunt zijn, maar AI is op dit moment nog niet zo slim als je zou willen. Er kunnen daardoor fouten staan in een tekstalternatief dat door AI is gegenereerd. Of er kan nadruk komen te liggen op de verkeerde elementen in een afbeelding. En soms is de beschrijving niet relevant in de context waarvoor jij de afbeelding had gekozen. Lees de teksten daarom altijd kritisch na en pas de tekst aan waar nodig.
+Wees voorzichtig met AI. Vertrouw niet zomaar op een tekstalternatief van een AI. Een AI-tekst is een goed begin, maar maakt soms fouten. Soms legt de AI nadruk op de verkeerde details in een afbeelding. De beschrijving past niet altijd bij jouw context. Lees de teksten daarom altijd kritisch na en pas de tekst aan waar nodig.
 
 ## Hoe te testen
 

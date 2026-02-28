@@ -29,13 +29,13 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 
 ## Breaking changes in design tokens
 
-1. Je hebt een design token verwijderd.
-1. Je hebt een design token van naam veranderd. Dit is hetzelfde als het verwijderen van een design token gevolgd door het toevoegen van een nieuw design token. Dat maakt het een breaking change.
-1. Je hebt een spelfout in een design token gecorrigeerd. Dit lijkt omdat het zo'n kleine wijziging is misschien een patch versie ophoging. Ook dit is hetzelfde als het verwijderen van een design token gevolgd door het toevoegen van een nieuw design token. Dat maakt ook dit een breaking change.
+1. Je verwijdert een design token.
+1. Je hernoemt een design token. Dit telt als het verwijderen en toevoegen van een token. Dit is een breaking change.
+1. Je verbetert een spelfout in een design token. Dit lijkt een kleine patch, maar het blijft een breaking change. Je verwijdert namelijk de oude naam en voegt een nieuwe toe.
 
 ## Minor changes in design tokens
 
-1. Je hebt een design token toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
+1. Je voegt een design token toe. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
 
 ## Patch changes in design tokens
 
@@ -44,15 +44,15 @@ We willen dat versie nummers vertrouwd kunnen worden en het is belangrijk om dat
 
 ## Breaking changes in CSS
 
-1. Je hebt een class name verwijderd.
-1. Je hebt een class name of mixin van naam veranderd. Dit is hetzelfde als het verwijderen van de class name of mixin gevolgd door het toevoegen van een nieuwe. Dat maakt dit een breaking change.
-1. Je hebt een spelfout in een class name of mixin gecorrigeerd. Dit lijkt misschien op een patch versie ophoging, maar het is hetzelfde als het verwijderen van de oude name gevolgd door het toevoegen van een nieuwe name. Het is een breaking change omdat de oude name niet meer bestaat.
-1. Je hebt de waarde van een CSS property toegevoegd. Bijvoorbeeld `color: blue` is aangepast naar `color: var(--example-link-color, blue)`.
-1. Je hebt de spelling van een CSS property gecorrigeerd. Bijvoorbeeld `colour` is aangepast naar `color`.
+1. Je verwijdert een class name of mixin.
+1. Je hernoemt een class name of mixin. Dit telt als het verwijderen en toevoegen van een class name of mixin. Dit is een breaking change.
+1. Je verbetert een spelfout in een class name of mixin. Dit lijkt een kleine patch, maar het blijft een breaking change. Je verwijdert namelijk de oude naam en voegt een nieuwe toe. Het is een breaking change omdat de oude name niet meer bestaat.
+1. Je voegt een waarde toe aan een CSS property. Bijvoorbeeld `color: blue` wordt `color: var(--example-link-color, blue)`.
+1. Je corrigeert een spelfout in een CSS property. Bijvoorbeeld `colour` wordt `color`.
 
 ## Minor changes in CSS
 
-1. Je hebt een class name of mixin toegevoegd. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
+1. Je voegt een class name of mixin toe. Voor gebruikers van het package met dit nieuwe design token is dit backwards-compatibel.
 
 ## Patch changers in CSS
 
@@ -60,9 +60,9 @@ In een design system dat door meerdere organisaties wordt gebruikt, kunnen zelfs
 
 ## Breaking changes in JavaScript/TypeScript
 
-1. Je hebt een export weggehaald.
-1. Je hebt de naam van een export veranderd. Dit is hetzelfde als het verwijderen van de export en het toevoegen van een nieuwe. Dat maakt dit een breaking change.
-1. Je hebt een type signature veranderd naar een kleinere signature waardoor er functionaliteit verdwenen is.
+1. Je verwijdert een export.
+1. Je hernoemt een export. Dit telt als het verwijderen en toevoegen van een export. Dit is een breaking change.
+1. Je wijzigt een type signature naar een kleinere signature waardoor er functionaliteit verdwenen is.
 
 ## Minor changes in JavaScript/TypeScript
 

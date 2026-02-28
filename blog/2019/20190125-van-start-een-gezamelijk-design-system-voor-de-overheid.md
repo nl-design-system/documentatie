@@ -45,7 +45,7 @@ In de eerste fase zullen we toewerken naar een _proof of concept_, ofwel een een
 
 In de volgende fase gaan we dit proof of concept doorontwikkelen (indien het voldoende is gebleken voor opschaling), met een wisselend team vanuit de organisaties die gebruik maken van het design system. Na deze fase wordt het design systeem overgebracht naar de definitieve beheerorganisatie.
 
-Een project als dit kent altijd risico’s. Op dit moment is de grootste onzekerheid die we voorzien in onze aanpak of er in de praktijk voldoende bereidwilligheid en behoefte is om van een gezamenlijk design system gebruik te maken. Uiteraard hangt dit samen met de kwaliteit van de eerste versie die we lanceren. Daarnaast zal de eerste ondersteuning van vragen over het proof of concept een uitdaging vormen. Ook voorzien we uitdagingen om het team voor de doorontwikkelfase bijeen te krijgen.
+Dit project kent risico’s. De daadwerkelijke behoefte aan een gezamenlijk design system is afhankelijk van een stevige inschatting. Dit hangt sterk af van de kwaliteit van de eerste gelanceerde versie. De eerste vragenronde rondom het proof of concept vormt een duidelijke uitdaging. Het formeren van het team in de doorontwikkelfase is ook lastig.
 
 Mocht je tot in meer detail willen meedenken over de risico’s, kansen en projectaanpak, dan delen we graag het projectplan met je. Vraag het projectplan aan via [info@gebruikercentraal.nl](mailto:info@gebruikercentraal.nl).
 

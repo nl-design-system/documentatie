@@ -88,7 +88,7 @@ ul.example-nav {
 }
 ```
 
-Als jouw project een [`reset.css` variant](https://meyerweb.com/eric/tools/css/reset/) gebruikt dan heb jij die padding reset misschien niet nodig, maar gebruik dan toch wel die CSS zodat het ook werkt voor anderen zonder jouw `reset.css`.
+Ontwikkelaars gaan er soms vanuit dat een [`reset.css`](https://meyerweb.com/eric/tools/css/reset/) al aanwezig is. Zorg er echter voor dat je componenten zelf alle nodige stijlen bevatten, zoals het resetten van padding. Hierdoor werkt je code ook goed in projecten die geen standaard reset gebruiken.
 
 Dus _niet_ zo:
 

@@ -527,7 +527,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
           <p>Bevindingen:</p>
           <p>In het menu op alle pagina’s.</p>
           <p>
-            Wanneer navigatie kleine schermen “open” staat is focus soms
+            Wanneer navigatie kleine schermen “open” staat vervalt heldere focus wegens overlappende delen en
             onzichtbaar (want mogelijk om buiten navigatie te tabben).
           </p>
         </td>

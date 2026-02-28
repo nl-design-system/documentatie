@@ -34,7 +34,7 @@ Niemand vult een formulier graag in en alle hulp is nuttig, hou dat doel voor og
 
 ## Wat wil ik echt weten?
 
-Een goede foutafhandeling begint eigenlijk al bij de vragen die je wilt stellen. Sommige vragen zijn lastig te beantwoorden. Is het echt belangrijk of je weet of iemand man of vrouw is? Wil je alleen contact opnemen via de telefoon? Misschien wil de gebruiker wat anders invullen, kan geen keuze maken en stopt met invullen.
+Werk direct aan een foutloze verwerking dankzij heldere startvragen. Leg geen vragen voor over optionele labels als over geslacht of vast contact per telefoon. Onbrekende of rigide opties in een veld leiden gebruikers vaak in een impas waarna men afhaakt.
 
 Vraag alleen uit wat je echt nodig hebt om de gegevens goed te verwerken. Hoe minder je vraagt, hoe lager de drempel is om een formulier in te vullen.
 
