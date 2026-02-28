@@ -137,7 +137,7 @@
     "@nl-design-system-candidate/button-docs": "1.0.2",
     "@nl-design-system-candidate/button-tokens": "1.0.0",
     "@nl-design-system-community/editor-react": "1.2.0",
-    "@nl-design-system-community/ma-design-tokens": "2.5.0",
+    "@nl-design-system-community/ma-design-tokens": "3.0.0",
     "@nl-design-system-unstable/documentation": "workspace:*",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "3.4.0",
