@@ -8,12 +8,15 @@ description: Webpagina's hebben titels die het onderwerp of doel beschrijven.
 slug: 2.4.2
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - bedienbaar
   - navigeerbaar
   - operable
   - navigable
   - page titled
+  - WCAG paginatitel
+  - HTML title element
+  - toegankelijke paginatitel
 ---
 
 {/* @license CC0-1.0 */}
@@ -34,19 +37,56 @@ import Summary from "./summaries/_2.4.2-summary.md";
 
 <Summary />
 
-Deze titels staan in de `<head>` sectie van de HTML-code, in het element `<title>`.
+De titel staat in het `<title>`-element binnen de `<head>`-sectie van de HTML-code.
 
-Maak deze tekst eenduidig en beschrijvend, zodat je weet welke pagina van welke website je bezoekt. Ook informatie over foutmeldingen en zoekresultaten hoort in de titel thuis.
+De paginatitel moet ook buiten de context van de pagina duidelijk en beschrijvend zijn. De titel verschijnt namelijk ook:
 
-Deze tekst staat in de browser-tab, waardoor je makkelijk kunt herkennen welke website er onder welke tab staat. Begin daarom niet met de sitenaam, maar met het onderwerp. Anders lijken alle titels op elkaar wanneer je maar een deel van de tekst ziet in de tab.
+- in de sitemaps;
+- in de zoekresultaten;
+- als naam bij het opslaan van een bladwijzer.
 
-Voorbeelden van goede titels:
+Daarom moet de titel altijd informatie bevatten die helpt te begrijpen waar de pagina over gaat.
+
+Voorbeelden van goede paginatitels:
 
 - 'Gemeente Voorbeeld', voor de voorpagina.
 - 'Contact - Gemeente Voorbeeld', voor de contactpagina.
 - '12 zoekresultaten voor rijbewijs - Gemeente Voorbeeld', voor de zoekpagina.
-- 'Stap 2 van 3: Uw gegevens - Rijbewijs verlengen - Gemeente Voorbeeld', voor een meerstappenformulier.
+- 'Stap 2 van 3: Rijbewijs verlengen - Gemeente Voorbeeld', voor een meerstappenformulier.
 - '2 foutmeldingen - Uw vraag - Gemeente Voorbeeld', voor een formulier met foutmeldingen.
+
+## Veelgemaakte fouten
+
+### Fout: meerdere webpagina’s binnen een website hebben dezelfde paginatitel
+
+Wanneer meerdere pagina’s dezelfde paginatitel hebben, kan dit verwarrend zijn voor bezoekers. De navigatie tussen pagina’s wordt daardoor lastiger.
+
+### Fout: de pagina verandert dynamisch, maar de paginatitel niet
+
+Als de inhoud van een pagina dynamisch verandert terwijl de URL hetzelfde blijft, moet de tekst in het title-element ook worden aangepast.
+
+### Fout: de paginatitel is in een andere taal
+
+De tekst in het `<title>`-element wordt voorgelezen met de uitspraakregels van de taal die is ingesteld op het `<html>` element. Het is fout om de paginatitel in een andere taal te schrijven.
+
+### Fout: de paginatitel is te cryptisch
+
+Een paginatitel die alleen woorden bevat zoals “404” of “404-pagina” is niet duidelijk voor een bezoeker die deze termen niet kent.
+
+### Fout: de paginatitel beschrijft de inhoud van de pagina niet voldoende
+
+Als de paginatitel de inhoud van de pagina niet duidelijk beschrijft, is het niet duidelijk waar de pagina over gaat. Bijvoorbeeld: “Nieuwsbericht - gemeente X”. Uit deze titel is niet duidelijk om welk nieuwsbericht het gaat.
+
+### Fout: er is geen `<title>` element of het element is leeg
+
+Als het `<title>`-element ontbreekt of geen tekst bevat, wordt de URL van de pagina als een paginatitel voorgelezen. Dit is ontoegankelijk en onprettig om naar te luisteren.
+
+## Hoe te testen
+
+- Controleer of er een `<title>`-element aanwezig is in de `<head>` en of dit element tekst bevat.
+- Controleer of de tekst in het `<title>` element duidelijk en beschrijvend is.
+
+De titel van de eerste pagina van een proces mag in alle stappen van het proces gelijk blijven. Het is echter gebruiksvriendelijker om elke stap van een proces een eigen, unieke paginatitel te geven.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -58,23 +98,6 @@ Voorbeelden van goede titels:
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-- Controleer of er een `title`-element in de `head` aanwezig is en deze tekst bevat.
-- Controleer de taal van de titel, is deze hetzelfde als die van de pagina?
-- Controleer of de titel de pagina beschrijft, met eenduidige liefst unieke tekst binnen de website.
-- Zijn er iframes op de pagina? Controleer of deze ook een goede titel bevatten.
-
-## Veelgemaakte fouten
-
-### Fout: de titels van alle pagina's zijn hetzelfde
-
-Als alle `title`-elementen op een website dezelfde tekst bevatten (bijvoorbeeld de sitenaam) geeft dit geen goede informatie over op welke pagina je je bevindt.
-
-### Fout: de tekst van een titel wordt niet vertaald door een plugin
-
-Als de titel wordt gegenereerd door een plugin, kan het voorkomen dat de plugin de taal van de website niet volledig ondersteund. Of het kan zijn dat de taal niet goed is ingesteld. Controleer altijd de settings van een plugin en ook de uitvoer: zijn alle gegenereerde teksten, dus ook de titel, in de taal van de website.
 
 ## W3C referenties
 
