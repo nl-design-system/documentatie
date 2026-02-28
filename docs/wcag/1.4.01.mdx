@@ -8,12 +8,16 @@ description: Zorg ervoor dat kleur niet het enige visuele middel is om informati
 slug: 1.4.1
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - onderscheidbaar
   - perceivable
   - distinguishable
   - use of color
+  - WCAG kleur contrast betekenis
+  - WCAG gebruik van kleur
+  - digitale toegankelijkheid kleur
+  - kleurgebruik toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
@@ -34,65 +38,91 @@ import Summary from "./summaries/_1.4.1-summary.md";
 
 <Summary />
 
+Er zijn meerdere successcriteria die betrekking hebben op kleurgebruik:
+
+- Er mag niet naar kleur worden verwezen, bijvoorbeeld: “in een rood kader ..”. Dit valt onder [SC 1.3.3](https://nldesignsystem.nl/wcag/1.3.3/).
+- Informatie die via visuele presentatie met kleur wordt gegeven, moet ook toegankelijk zijn voor blinde bezoekers ([SC 1.3.1](https://nldesignsystem.nl/wcag/1.3.1/)).
+- Als de status van een interactief element met kleur wordt aangegeven, moet deze informatie ook beschikbaar zijn voor gebruikers van een schermlezer ([SC 4.1.2](https://nldesignsystem.nl/wcag/4.1.2/)).
+
+## Contrast versus kleur
+
+Er is sprake van gebruik van kleur als het verschil tussen twee kleuren een contrastverhouding heeft van minder dan 3,0:1.
+
+Als de contrastratio groter is dan 3,0:1, is er sprake van contrast. Contrast wordt gezien als een andere manier om informatie over te brengen.
+
+Bijvoorbeeld: het verschil tussen de ‘aan’- en ‘uit’-stand van een toggleknop heeft een contrastratio van 2,5:1. Dit is gebruik van kleur. Als de contrastratio 3:0 of hoger is, dan is er sprake van voldoende contrast en is succescritarium 1.4.1 niet van toepassing.
+
+## Veelgemaakte fouten
+
+### Fout: gekleurde achtergrond of tekstkleur wordt gebruikt om informatie te geven
+
+Bijvoorbeeld: sommige cellen in een tabel of teksten in een lijst hebben een andere achtergrond- of tekstkleur om ze in categorieën te verdelen.
+
+### Fout: links in lopende tekst zijn alleen door kleur te onderscheiden
+
+Links die niet zijn onderstreept of een andere letterdikte hebben en alleen door kleur verschillen van de statische tekst, zijn niet toegankelijk.
+
+### Fout: huidige link in het menu in een andere kleur
+
+De actieve link in een menu die uitsluitend een andere tekstkleur heeft, is niet voor iedereen herkenbaar als een actieve link. Een broodkruimelpad of een duidelijke paginatitel kan als alternatief dienen.
+
+### Fout: actieve knop in een carrousel alleen in kleur aangegeven
+
+In een carrousel met ronde navigatieknoppen die de slides aangeven,mag de actieve knop niet uitsluitend door kleur verschillen van de overige knoppen. Een andere vorm of een dikkere rand kan dit oplossen.
+
+### Fout: focusrand is alleen in kleur aangegeven
+
+Wanneer de zelfgeschreven focusrand minder dan 3,0:1 contrast heeft met de achtergrond, wordt alleen kleur gebruikt om de focuspositie aan te geven. Voor bezoekers met een visuele beperking of kleurenblindheid is dit onvoldoende. Ook alleen een wijziging in tekstkleur bij focus is niet toegestaan.
+
+### Fout: formuliervelden kleuren rood bij foutmelding zonder tekstuele toeliching
+
+Wanneer bij een fout in een invoerveld de rand rood wordt, moet ook een tekstuele foutmelding aanwezig zijn die aangeeft waar en welke fout is ontstaan.
+
+### Fout: data in een grafiek wordt alleen door kleur onderscheiden
+
+Een veelgemaakte fout is het weergeven van data in een grafiek met alleen een verschil in kleur. Gebruikers van een schermlezer kunnen dan niet herkennen welke data bij elkaar hoort. Een alternatief voor een grafiek is een toegankelijke tabel.
+
+In de onderstaande afbeelding staan twee grafieken. De eerste grafiek laat de gegevens zien in gekleurde lijntjes. De tweede grafiek is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.
+
+![Twee verschillende weergaven van een grafiek, een fout voorbeeld](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-fout.png)
+
+Hoe moet het dan wel? Gebruik naast kleur ook een andere manier om de data te onderscheiden. Bijvoorbeeld met vorm: stippeltjes of streepjes.
+
+In onderstaande afbeelding worden de lijntjes weergegeven zodat ze in grijstinten ook goed onderscheidbaar zijn.
+![Twee verschillende weergaven van een grafiek, een good voorbeeld.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-goed.png)
+
+De data browsergebruik komt van [statcounter.com](https://gs.statcounter.com/browser-market-share#monthly-200901-202412).
+
+### Fout: legenda bij een kaart gebruikt alleen kleur
+
+Het is niet toegestaan om in een legenda uitsluitend kleur te gebruiken om gebieden op een kaart te onderscheiden. Een praktische controle is het bekijken van de kaart in zwart-wit. Blijft het onderscheid dan duidelijk?
+
+## Hoe te testen
+
+- Controleer alle content en alle bedieningselementen.
+- Doorloop alle stappen in een proces, indien aanwezig.
+- Controleer of kleur wordt gebruikt om informatie over te brengen of om interactieve elementen van elkaar te onderscheiden.
+- Controleer of dezelfde informatie ook op een andere manier beschikbaar is (bijvoorbeeld via tekst, afbeelding, contrast of een andere visuele aanduiding).
+
+Het kan helpen om de pagina met een grijsfilter te bekijken, zodat alle kleur verdwijnt. Is de inhoud dan nog steeds te begrijpen?
+
+Grijsfilters:
+
+- [Grayscale bookmarklet](https://pauljadam.com/bookmarklets/) van Paul J. Adams
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/), app voor iOS en Mac
+- [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter), website voor het testen van een URL
+
+Ook via de browser kan kleur worden uitgeschakeld:
+
+- Firefox: open de inspector, kies de tab "Accessibility" en selecteer bij Simulate de optie Achromatopsia.
+- Chrome: open de inspector, selecteer de console, klik op de drie puntjes linksboven, kies Rendering en selecteer onder Emulate vision deficiencies de optie "Achromatopsia".
+
 <h2>Gerelateerde NL Design System-richtlijnen</h2>
 
 - Stijl: [Vertrouw niet alleen op kleur](/richtlijnen/stijl/kleuren/niet-kleur-alleen)
 - Formulieren: [Schrijf een duidelijke foutmelding](/richtlijnen/formulieren/foutmeldingen/duidelijk/)
 - Formulieren: [Geef fouten weer met meer dan alleen kleur](/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur)
 - Content: [Kleurgebruik in tekst](/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst).
-
-## Hoe te testen
-
-Bekijk de pagina en controleer of er betekenis aan kleur is gegeven.
-
-Let bijvoorbeeld op:
-
-- het aangeven van foutmeldingen bij formulieren, alleen een rood randje is niet voldoende;
-- de weergave van data in grafieken;
-- de weergave van links in de tekst, deze moet liefst onderstreept zijn;
-- het aangeven van een status (succes, waarschuwing, fout) in een statusmelding, alleen een groene, gele of rode achtergrond is onvoldoende, er moet ook in tekst staan wat de status is;
-- verwijzingen naar kleur in de tekst, bijvoorbeeld 'druk op de groene knop om door te gaan' is voor blinde en kleurenblinde bezoekers een probleem.
-
-Het is voldoende als de informatie ergens anders op de pagina makkelijk vindbaar is en goed wordt uitgelegd, of als de betekenis volgt uit het gebruik of plek van een element. Een link in een menu hoeft bijvoorbeeld niet onderstreept te zijn.
-
-Het kan helpen met testen om de pagina met een grijsfilter te bekijken, zodat alle kleur verdwijnt. Is de inhoud dan nog steeds te begrijpen?
-
-Grijsfilters:
-
-- [Grayscale bookmarklet](https://pauljadam.com/bookmarklets/) van Paul J. Adams
-- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/), app voor iOS en Mac
-- [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter), website waar je door het invoeren van een url de pagina kunt testen.
-
-Ook via de browser kun je de kleur uit een pagina verwijderen:
-
-- Voor Firefox: Open de inspector, kies de "Accessibility"-tab en selecteer bij Simulate Achromatopsia.
-- Voor Chrome: Open de inspector, selecteer de console, klik op de drie puntjes aan de linkerkant, kies Rendering en selecteer helemaal onderaan bij Emulate vision deficiencies "Achromatopsia".
-
-## Veelgemaakte fouten
-
-### Aangeven van een fout met alleen een rood randje
-
-Een rood randje rondom een formulierveld dat verplicht is, maar niet is ingevuld, geeft onvoldoende informatie.
-Gebruikers die kleurenblind zijn kunnen deze informatie missen.
-Schrijf daarom ook altijd een duidelijke foutmelding uit in tekst bij een formulierveld.
-
-Meer informatie over foutmeldingen aangeven in onze blogpost over Toegankelijke foutmeldingen in formulieren [Hoe geef ik aan of een vraag niet of niet goed is ingevuld](/blog/toegankelijke-foutmeldingen-formulieren/#hoe-geef-ik-aan-of-een-vraag-niet-of-niet-goed-is-ingevuld).
-
-### Weergeven van data in een grafiek door alleen een verschil in kleur te gebruiken
-
-Een veelgemaakte fout is het weergeven van data in een grafiek door alleen een verschil in kleur te gebruiken.
-Iemand die slechtziend is of kleurenblind, weet dan niet welk lijntje bij welke data hoort.
-
-In de onderstaande afbeelding staan twee grafieken over de populariteit van browsers zien. De eerste grafiek laat de gegevens van de verschillende browsers zien in gekleurde lijntjes. De tweede grafiek is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.
-
-![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-fout.png)
-
-Hoe moet het dan wel? Gebruik naast kleur ook een andere manier om de data te onderscheiden. Bijvoorbeeld stippeltjes of streepjes.
-
-In onderstaande afbeelding worden de lijntjes weergegeven zodat ze in grijstinten ook goed onderscheidbaar zijn.
-![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde maar verschillend gestreepte lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-goed.png)
-
-De data browsergebruik komt van [statcounter.com](https://gs.statcounter.com/browser-market-share#monthly-200901-202412).
 
 ## Gebruikersonderzoek
 
