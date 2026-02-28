@@ -8,12 +8,16 @@ description: De zichtbare naam van een onderdeel moet terugkomen in de toegankel
 slug: 2.5.3
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - bedienbaar
   - input modaliteiten
   - operable
   - input modalities
   - label in name
+  - zichtbare tekst WCAG
+  - stemgestuurde hulpsoftware
+  - tekst op de knop WCAG
+  - tekst op interactieve elementen
 ---
 
 {/* @license CC0-1.0 */}
@@ -30,32 +34,126 @@ import Summary from "./summaries/_2.5.3-summary.md";
   {"WCAG-succescriterium 2.5.3 Label in Naam"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">De zichtbare naam kan gebruikt worden voor spraakbediening.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Laat de zichtbare naam overeenkomen met de toegankelijke naam.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Mensen met spraakbediening gebruiken de zichtbare naam voor bediening.</dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-De zichtbare naam is wat veel gebruikers zien als ze een website gebruiken. Denk hierbij aan labels bij invoervelden, linkteksten of de inhoud van een knop.
+Dit is vooral belangrijk voor mensen die spraakbesturing gebruiken. Zij activeren knoppen en links door te zeggen wat ze op het scherm zien: "Klik op Versturen". Als de toegankelijke naam van de knop afwijkt van de zichtbare tekst — bijvoorbeeld door een `aria-label` dat iets anders zegt — werkt het spraakcommando niet.
 
-Iemand die spraakbediening gebruikt zal deze naam gebruiken bij het uitspreken van commando's. "Klik contact" zorgt ervoor dat het onderdeel dat "contact" heet geactiveerd wordt.
-De software voor spraakbediening gebruikt hiervoor de [toegankelijke naam](/woordenlijst/#toegankelijke-naam). Als die niet overeenkomt met de zichtbare naam, dan kan de software het commando niet uitvoeren.
-Ook als veel onderdelen op de pagina hetzelfde heten kan dit een probleem zijn. Denk hierbij aan linkteksten als "lees meer" of "hier".
+Dit SC vereist niet dat elk element een zichtbaar label heeft. Maar waar een zichtbaar label er is, moet het terugkomen in de toegankelijke naam. Het beste is om de zichtbare tekst aan het begin van de toegankelijke naam te zetten.
+
+Let op: met "tekst" wordt hier een [reeks karakters](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html#dfn-text) bedoeld die iets uitdrukken in menselijke taal. Een enkele letter — zoals een "A" als tekst vergroten — valt hier niet onder en hoeft dus niet terug te komen in de toegankelijke naam.
+
+## Veelgemaakte fouten
+
+### Fout: aria-label dat niet overeenkomt met de zichtbare tekst
+
+De meest voorkomende fout. Een knop toont "Zoeken" op het scherm, maar het `aria-label` zegt iets anders. Iemand met spraakbesturing zegt "Klik op Zoeken" en er gebeurt niets.
+
+```html
+<!-- Fout: zichtbare tekst is "Zoeken", aria-label is anders -->
+<button aria-label="Doorzoek de volledige website">Zoeken</button>
+
+<!-- Goed: aria-label bevat de zichtbare tekst -->
+<button aria-label="Zoeken op de website">Zoeken</button>
+
+<!-- Beste: geen aria-label nodig als de zichtbare tekst voldoende is -->
+<button>Zoeken</button>
+```
+
+### Fout: aria-labelledby dat verwijst naar een ander element dan het zichtbare label
+
+Als `aria-labelledby` verwijst naar een element dat andere tekst bevat dan wat er zichtbaar bij het formulierveld staat, ontstaat er een mismatch.
+
+```html
+<!-- Fout: zichtbaar staat "E-mailadres", maar aria-labelledby verwijst naar andere tekst -->
+<span id="verborgen-label">Voer uw elektronische postadres in</span>
+<label>E-mailadres</label>
+<input type="email" aria-labelledby="verborgen-label" />
+
+<!-- Goed: label en toegankelijke naam komen overeen -->
+<label for="email">E-mailadres</label>
+<input type="email" id="email" />
+```
+
+### Fout: knop met een icoon en tekst, maar aria-label vervangt de tekst
+
+Als een knop zowel een icoon als tekst bevat, maar een `aria-label` de zichtbare tekst vervangt door een langere omschrijving, is de zichtbare tekst niet meer onderdeel van de toegankelijke naam.
+
+```html
+<!-- Fout: "Opslaan" is zichtbaar, maar aria-label vervangt het -->
+<button aria-label="Sla het huidige document op naar de server">
+  <svg aria-hidden="true"><!-- icoon --></svg>
+  Opslaan
+</button>
+
+<!-- Goed: geen aria-label nodig, zichtbare tekst is voldoende -->
+<button>
+  <svg aria-hidden="true"><!-- icoon --></svg>
+  Opslaan
+</button>
+```
+
+### Fout: afbeeldingsknop met alt-tekst die afwijkt van de zichtbare tekst
+
+Knoppen met een afbeelding waar tekst in staat (bijvoorbeeld een gestylde knop als plaatje) moeten een alt-tekst hebben die overeenkomt met de tekst in de afbeelding.
+
+```html
+<!-- Fout: de afbeelding toont "Inschrijven", alt zegt iets anders -->
+<input type="image" src="inschrijven-knop.png" alt="Registreer voor de nieuwsbrief" />
+
+<!-- Goed -->
+<input type="image" src="inschrijven-knop.png" alt="Inschrijven" />
+```
+
+### Fout: zichtbare tekst in een andere taal dan de toegankelijke naam
+
+Als de zichtbare knoptekst "Submit" is (Engels) maar het `aria-label` is "Verzenden" (Nederlands), komt de zichtbare tekst niet terug in de toegankelijke naam. Iemand met spraakbesturing die "Klik op Submit" zegt, krijgt geen match.
+
+```html
+<!-- Fout: zichtbaar "Submit", aria-label "Verzenden" -->
+<button aria-label="Verzenden">Submit</button>
+
+<!-- Goed: zorg dat de talen overeenkomen -->
+<button>Verzenden</button>
+<!-- Of als het Engels moet blijven: -->
+<button aria-label="Submit form">Submit</button>
+```
+
+### Fout: CSS-gegenereerde content die het zichtbare label aanpast
+
+Als de zichtbare tekst van een element deels uit CSS `::before` of `::after` content komt, wordt die niet altijd meegenomen in de berekening van de toegankelijke naam. Dit kan een mismatch veroorzaken.
+
+```css
+/* Problematisch: CSS voegt tekst toe die een gebruiker wel ziet */
+.knop-verwijderen::after {
+  content: " definitief";
+}
+```
+
+```html
+<!-- De gebruiker ziet "Verwijderen definitief", maar de toegankelijke naam is alleen "Verwijderen" -->
+<button class="knop-verwijderen">Verwijderen</button>
+
+<!-- Beter: alle tekst in de HTML -->
+<button>Verwijderen definitief</button>
+```
+
+### Fout: component uit een framework met een vertaald label
+
+Als je een UI-framework gebruikt, wordt de toegankelijke naam soms automatisch ingesteld door het framework (bijvoorbeeld in het Engels), terwijl de zichtbare tekst in jouw interface vertaald is naar het Nederlands. De twee komen dan niet overeen.
+
+```html
+<!-- Fout: React-component met Engels aria-label, Nederlandse zichtbare tekst -->
+<DatePicker aria-label="Select date" label="Kies een datum" />
+
+<!-- Goed: dezelfde taal en tekst -->
+<DatePicker aria-label="Kies een datum" label="Kies een datum" />
+```
+
+## Hoe te testen
+
+Open de Accessibility-tab in DevTools en inspecteer de toegankelijke naam (onder "Computed Properties") van interactieve elementen. Vergelijk die met de zichtbare tekst. De zichtbare tekst moet in de toegankelijke naam voorkomen.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -65,33 +163,6 @@ Ook als veel onderdelen op de pagina hetzelfde heten kan dit een probleem zijn. 
 ## Bronnen en tools
 
 - [Chrome Accessibility Pane](https://developer.chrome.com/docs/devtools/accessibility/reference)
-
-## Hoe te testen
-
-- Controleer voor elk interactief onderdeel wat de zichtbare naam is.
-- Gebruik een tool zoals de "accessibility pane" in Chrome of een screenreader om de toegankelijke naam te vinden.
-- Zorg dat de zichtbare naam onderdeel is van de toegankelijke naam.
-
-## Tips
-
-- Gebruik geen `placeholder`-attributen. Deze kunnen een toegankelijk naam geven, maar verdwijnen zodra de gebruiker ze het meest nodig heeft. Daarnaast zijn ze een bron van problemen met contrast en zorgen ze voor verwarring.
-- Gebruik zo weinig mogelijk `title`-attributen. Dit attribuut is een soort laatste redmiddel om iets een toegankelijke naam te geven. Het is de laatste in een rij met opties en geeft vaak verkeerde en onverwachte resultaten. Frames een naam geven is de uitzondering op deze regel.
-- Wees spaarzaam met het gebruik van `aria-labelledby` en `aria-label`. De eerste regel van ARIA-gebruik stuurt op zo min mogelijk ARIA-gebruik. HTML wordt beter ondersteund dan ARIA. Deze attributen zijn ook verreweg de makkelijkste manier om te falen voor dit succescriterium. Daarnaast worden deze attributen vaak slecht meegenomen bij veranderingen van code en door tools (en mensen) die vertalen.
-- Zorg voor unieke toegankelijke namen op een pagina. Dit maakt het gebruik van spraakbediening makkelijker.
-- Voor dit succescriterium is het ook belangrijk om tekst in afbeeldingen in het tekstalternatief te gebruiken. Zo kan de afbeelding als zichtbare naam gebruikt worden.
-
-## Veelgemaakte fouten
-
-### Fout: `aria-label` overschrijft de zichtbare naam
-
-Het `aria-label`-attribuut overschrijft de zichtbare naam bij het bepalen van de toegankelijke naam. Waar men denkt de zichtbare naam aan te vullen, daar gaat deze juist verloren.
-
-```
-<!-- Foute code, niet gebruiken  ->
-<a href="#" aria-label=", opent externe website">Geef uw melding door</a>
-```
-
-In dit voorbeeld wordt de toegankelijke naam ", opent externe website" in plaats van "Geef uw melding door, opent externe website".
 
 ## Gebruikersonderzoek
 
