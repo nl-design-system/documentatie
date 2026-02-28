@@ -56,7 +56,8 @@ Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/ove
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/" "/community/community-sprints/mijn-services-community/"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/aanmelden/" "/community/community-sprints/mijn-services-community/aanmelden/"
 Redirect 301 "/handboek/developer/aan-de-slag/" "/handboek/developer/introductie/"
-Redirect 301 "/handboek/developer/samenwerken-aan-componenten/" "/handboek/componenten-kiezen/"
+Redirect 301 "/handboek/developer/samenwerken-aan-componenten/" "/handboek/componenten-vinden/"
+Redirect 301 "/handboek/componenten-kiezen/" "/handboek/componenten-vinden/"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
@@ -170,6 +171,9 @@ Redirect 301 "/belangenorganisatie" "/community/belangenorganisaties/aanmelden/"
 # Convenience redirects for use in code
 Redirect 301 "/lint-staged" "/linting-en-code-formatting#lint-staged"
 
+# Convenience redirects because pages have been deleted,  but we have some idea what a helpfull alternative could be
+Redirect 301 "/handboek/developer/architectuur/" "/handboek/developer/introductie"
+
 # Temporary redirects until we have multiple factsheets and turn /factsheets into an overview page
 RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
 
@@ -178,6 +182,7 @@ Redirect 307 "/character-count" "/componenten"
 Redirect 307 "/form-field-radio-option" "/componenten"
 Redirect 307 "/form-field-checkbox-option" "/componenten"
 Redirect 307 "/tooltip" "/componenten"
+
 
 Redirect 307 "/miro/" "https://miro.com/app/board/uXjVLTpHyN8=/"
 Redirect 307 "/miro" "https://miro.com/app/board/uXjVLTpHyN8=/"
