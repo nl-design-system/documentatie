@@ -44,16 +44,12 @@ import { Guideline } from "@site/src/components/Guideline";
   title="Een div in plaats van een label gebruiken."
   description="De for en id koppeling werkt alleen met een label-element."
 >
-  <Canvas
-    language="html"
-    code={`<div for="kleur5">Wat is je lievelingskleur?</div>
-<input type="text" id="kleur5" name="lievelingskleur" />`}
-  >
+  <Canvas language="html">
     {() => (
-      <div aria-hidden="true">
+      <>
         <div htmlFor="kleur5">Wat is je lievelingskleur?</div>
         <input type="text" id="kleur5" name="lievelingskleur" />
-      </div>
+      </>
     )}
   </Canvas>
 </Guideline>
@@ -62,24 +58,20 @@ import { Guideline } from "@site/src/components/Guideline";
   appearance="dont"
   title="Een label zonder gekoppelde input. Door het label-element te gebruiken zonder for mis je de koppeling tussen het label en de input voor mensen die de visuele context niet waarnemen."
 >
-  <Canvas
-    language="html"
-    code={`<label>Wat is je lievelingskleur?</label>
-<select name="lievelingskleur">
-  <option>Rood</option>
-  <option>Blauw</option>
-  <option>Wit</option>
-</select>`}
-  >
+  <Canvas language="html">
     {() => (
-      <div aria-hidden="true">
-        <label>Wat is je lievelingskleur?</label>
-        <select name="lievelingskleur">
-          <option>Rood</option>
-          <option>Blauw</option>
-          <option>Wit</option>
-        </select>
-      </div>
+      <>
+        <p>
+          <label>Wat is je lievelingskleur?</label>
+        </p>
+        <p>
+          <select name="lievelingskleur">
+            <option>Rood</option>
+            <option>Blauw</option>
+            <option>Wit</option>
+          </select>
+        </p>
+      </>
     )}
   </Canvas>
 </Guideline>
