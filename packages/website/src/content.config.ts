@@ -52,6 +52,25 @@ function getSlug(options): string | null {
   return null;
 }
 
+function generateId(options) {
+  let filename = options.entry;
+
+  // remove file extensions
+  filename = filename.replace(/.mdx$/, '');
+  filename = filename.replace(/.md$/, '');
+
+  // Make readme's the overview page
+  filename = filename.replace(/\/readme/i, '');
+
+  // remove leading ordering number in file segment
+  filename = filename
+    .split('/')
+    .map((segment) => segment.replace(/^\d+-/, ''))
+    .join('/');
+
+  return getSlug(options) || filename;
+}
+
 const docs = defineCollection({
   loader: globIgnoringUnderscores({
     base: './../../docs',
@@ -69,24 +88,7 @@ const docs = defineCollection({
       'wcag/**/!(_)*.{md,mdx}',
       'woordenlijst/**/!(_)*.{md,mdx}',
     ],
-    generateId: (options) => {
-      let filename = options.entry;
-
-      // remove file extensions
-      filename = filename.replace(/.mdx$/, '');
-      filename = filename.replace(/.md$/, '');
-
-      // Make readme's the overview page
-      filename = filename.replace(/\/readme/i, '');
-
-      // remove leading ordering number in file segment
-      filename = filename
-        .split('/')
-        .map((segment) => segment.replace(/^\d+-/, ''))
-        .join('/');
-
-      return getSlug(options) || filename;
-    },
+    generateId,
   }),
   schema: z.object({
     title: z.string().optional(),
@@ -95,4 +97,17 @@ const docs = defineCollection({
   }),
 });
 
-export const collections = { docs };
+const components = defineCollection({
+  loader: globIgnoringUnderscores({
+    base: './../../docs',
+    pattern: ['componenten/**/!(_)*.{md,mdx}'],
+    generateId,
+  }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    slug: z.string().optional(),
+    unlisted: z.boolean().optional(),
+  }),
+});
+export const collections = { docs, components };
