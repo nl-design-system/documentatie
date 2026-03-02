@@ -8,6 +8,7 @@ export async function analyzeAccessibility(page: Page, disabledRules: string[]) 
     .options({ resultTypes: ['violations'] })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
     .disableRules(disabledRules)
+    .exclude('[datatest-id="exclude-axe"]')
     .analyze();
 }
 

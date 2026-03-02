@@ -34,14 +34,22 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
   description="Dit voorbeeld heeft [een contrast van 2.62:1](/contrast/?color=%23999999&background-color=%23f8f5f1)"
 >
   <Canvas
-    code={`<label htmlFor="naam2">Uw naam</label>
-<input type="text" id="naam2" autoComplete="name" />`}
+    language="html"
+    designTokens={{
+      "--utrecht-form-label-color": "#999999",
+    }}
   >
     {() => (
-      <div aria-hidden="true">
-        <label htmlFor="naam2">Uw naam</label>
-        <input type="text" id="naam2" autoComplete="name" />
-      </div>
+      <>
+        <p>
+          <label datatest-id="exclude-axe" htmlFor="naam2">
+            Uw naam
+          </label>
+        </p>
+        <p>
+          <input type="text" id="naam2" autoComplete="name" />
+        </p>
+      </>
     )}
   </Canvas>
 </Guideline>

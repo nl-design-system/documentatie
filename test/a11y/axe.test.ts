@@ -53,10 +53,7 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
 
   const disabledRules = getDisabledRules(pathname);
   const results = await analyzeAccessibility(page, disabledRules);
-
-  violations.push(results);
-  const criticalViolations = results.violations.filter((v) => v.impact === 'critical');
-  expect(criticalViolations).toEqual([]);
+  expect(results.violations).toEqual([]);
 }
 
 function isDocusaurusHydrated(): boolean {
