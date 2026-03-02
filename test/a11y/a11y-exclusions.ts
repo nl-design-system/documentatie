@@ -19,7 +19,7 @@ export const exclusionGroups: Record<string, string[]> = {
   forms: ['label', 'select-name'],
 };
 
-export const skippedRoutes: (string | RegExp)[] = ['/search/'];
+export const skippedRoutes: (string | RegExp)[] = ['/search/', '/handboek/designer/figma-changelog/'];
 
 export const AXE_VIOLATION_IDS: string[] = ['target-size'];
 

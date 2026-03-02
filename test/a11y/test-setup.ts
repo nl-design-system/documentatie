@@ -22,6 +22,7 @@ export function getDisabledRules(pathname: string): string[] {
   for (const exclusion of exclusions) {
     const isMatch = exclusion.routes.some((route) => {
       if (typeof route === 'string') {
+        if (route === '*') return true;
         return route === pathname;
       }
       return route.test(pathname);
@@ -41,10 +42,41 @@ export function getDisabledRules(pathname: string): string[] {
           }
         });
       }
+      if (exclusion.excludeIds) {
+        exclusion.excludeIds.forEach((id) => {
+          if (typeof id === 'string') {
+            disabledRules.add(id);
+          }
+        });
+      }
     }
   }
 
   return Array.from(disabledRules);
+}
+
+export function getExcludedViolationIds(pathname: string): RegExp[] {
+  const excluded: RegExp[] = [];
+
+  for (const exclusion of exclusions) {
+    const isMatch = exclusion.routes.some((route) => {
+      if (typeof route === 'string') {
+        if (route === '*') return true;
+        return route === pathname;
+      }
+      return route.test(pathname);
+    });
+
+    if (isMatch && exclusion.excludeIds) {
+      exclusion.excludeIds.forEach((id) => {
+        if (typeof id !== 'string') {
+          excluded.push(id);
+        }
+      });
+    }
+  }
+
+  return excluded;
 }
 
 export function shouldSkipRoute(pathname: string): boolean {

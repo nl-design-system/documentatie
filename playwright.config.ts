@@ -88,7 +88,6 @@ export default defineConfig({
       command: 'pnpm run serve:astro',
       port: 4321,
       reuseExistingServer: !process.env.CI,
-      timeout: 120 * 1000,
-  },
+    },
   ],
 });
