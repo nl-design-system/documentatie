@@ -1,3 +1,37 @@
-<div data-docusaurus-mock="component-overview">
-  <p>COMPONENT OVERVIEW NOT IMPLEMENTED</p>
-</div>
+---
+import componentProgress from '@nl-design-system/component-progress/dist/index.json';
+import { CardGroup } from '@site/src/components/CardGroup';
+import { ComponentCard } from '@site/src/components/ComponentCard';
+import { getCollection } from 'astro:content';
+import { COMPONENT_STATES, getComponentFrameworkNames, type Component } from '@site/src/utils.ts';
+
+const components = await getCollection('components');
+---
+
+<CardGroup>
+  {
+    components.map((item) => {
+      const { title, description } = item.data;
+
+      const component = (componentProgress as Component[]).find((item) => {
+        return item.title === title;
+      });
+
+      if (!component) return null;
+
+      const relayStep = component && COMPONENT_STATES[component.relayStep];
+      const frameworkNames = getComponentFrameworkNames(component);
+
+      return (
+        <ComponentCard
+          name={title}
+          headingLevel={2}
+          href={item.id}
+          description={description}
+          relayStep={relayStep}
+          frameworkNames={frameworkNames}
+        />
+      );
+    })
+  }
+</CardGroup>
