@@ -319,6 +319,11 @@ p {
   padding-inline-start: 48px;
 }
 
+.theme-doc-sidebar-item-link-level-5 .menu__link,
+.theme-doc-sidebar-item-category-level-5 .menu__link {
+  padding-inline-start: 64px;
+}
+
 .theme-unlisted-banner {
   display: none;
 }

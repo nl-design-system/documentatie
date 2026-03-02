@@ -8,7 +8,6 @@ export const VideoPlayer = ({ id, title, ...restProps }: LiteYouTubeProps) => (
     cookie={false} // Default false, don't connect to YouTube via the Privacy-Enhanced Mode using https://www.youtube-nocookie.com
     id={id}
     title={title}
-    poster="maxresdefault"
     {...restProps}
   />
 );
