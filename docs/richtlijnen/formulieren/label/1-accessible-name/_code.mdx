@@ -46,10 +46,10 @@ import { Guideline } from "@site/src/components/Guideline";
 >
   <Canvas language="html">
     {() => (
-      <>
+      <div datatest-id="exclude-axe">
         <div htmlFor="kleur5">Wat is je lievelingskleur?</div>
         <input type="text" id="kleur5" name="lievelingskleur" />
-      </>
+      </div>
     )}
   </Canvas>
 </Guideline>
@@ -60,7 +60,7 @@ import { Guideline } from "@site/src/components/Guideline";
 >
   <Canvas language="html">
     {() => (
-      <>
+      <div datatest-id="exclude-axe">
         <p>
           <label>Wat is je lievelingskleur?</label>
         </p>
@@ -71,7 +71,7 @@ import { Guideline } from "@site/src/components/Guideline";
             <option>Wit</option>
           </select>
         </p>
-      </>
+      </div>
     )}
   </Canvas>
 </Guideline>
