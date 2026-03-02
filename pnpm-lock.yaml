@@ -417,6 +417,9 @@ importers:
       '@astrojs/ts-plugin':
         specifier: 1.10.6
         version: 1.10.6
+      '@nl-design-system/component-progress':
+        specifier: 1.0.7
+        version: 1.0.7
       '@nl-design-system/tsconfig':
         specifier: 1.0.5
         version: 1.0.5(typescript@5.9.3)
