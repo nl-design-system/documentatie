@@ -241,7 +241,7 @@
     };
    var _ = n(46072),
     W = n(79889);
-   const R = ({ title: e, sc: t, component: n, tags: s }) => {
+   const R = ({ title: e, sc: t, children: n, tags: s }) => {
      const r = (0, l.useId)(),
       o = [...s];
      if (t) {
@@ -260,7 +260,7 @@
         (0, i.jsxs)('div', {
          className: 'new-checklist__content',
          children: [
-          (0, i.jsx)('div', { children: n }),
+          n && (0, i.jsx)('div', { children: n }),
           (0, i.jsx)(x._Q, {
            className: 'new-checklist__badge-list',
            children: o.map((e, t) => {
@@ -278,21 +278,17 @@
       }),
      });
     },
-    S = ({ items: e, headingLevel: t }) => {
-     const n = e.reduce(
-       (e, t) => (
-        t.tags.forEach((t) => {
-         e.add(t);
-        }),
-        e
-       ),
-       new Set(),
-      ),
-      [s, r] = (0, l.useState)(Array.from(n.values())),
-      o = (e) => s.includes(e),
-      a = (0, l.useId)(),
-      c = s.length >= 1 ? e.filter(({ tags: e }) => e.some((e) => s.includes(e))) : e,
-      d = e.length - c.length;
+    S = ({ children: e, headingLevel: t }) => {
+     const n = new Set();
+     l.Children.forEach(e, (e) => {
+      (e?.props?.tags || []).forEach((e) => n.add(e));
+     });
+     const s = l.Children.count(e),
+      [r, o] = (0, l.useState)(Array.from(n.values())),
+      a = (e) => r.includes(e),
+      c = (0, l.useId)(),
+      d = r.length >= 1 ? l.Children.map(e, (e) => (e.props.tags.some((e) => r.includes(e)) ? e : null)).filter((e) => e) : [e],
+      h = s - d.length;
      return (0, i.jsxs)('div', {
       children: [
        (0, i.jsxs)('div', {
@@ -300,9 +296,9 @@
         children: [
          (0, i.jsxs)(m.LB, {
           'aria-describedby': 'filter-results',
-          'aria-labelledby': a,
+          'aria-labelledby': c,
           children: [
-           (0, i.jsx)(m.DZ, { level: t, id: a, children: 'Filter acceptatiecriteria voor:' }),
+           (0, i.jsx)(m.DZ, { level: t, id: c, children: 'Filter acceptatiecriteria voor:' }),
            Array.from(n.values()).map((e) =>
             (0, i.jsxs)(
              m.zB,
@@ -310,13 +306,13 @@
               type: 'checkbox',
               children: [
                (0, i.jsx)(m.Sc, {
-                defaultChecked: o(e),
-                checked: o(e),
+                defaultChecked: a(e),
+                checked: a(e),
                 id: e,
                 onChange: () =>
                  ((e, t) => {
-                  const n = ('boolean' == typeof t ? t : !o(e)) ? [...s, e] : s.filter((t) => t !== e);
-                  r(n);
+                  const n = ('boolean' == typeof t ? t : !a(e)) ? [...r, e] : r.filter((t) => t !== e);
+                  o(n);
                  })(e),
                }),
                (0, i.jsx)(m.lR, { htmlFor: e, children: e }),
@@ -330,12 +326,12 @@
          (0, i.jsx)('div', {
           children: (0, i.jsxs)(i.Fragment, {
            children: [
-            (0, i.jsxs)('p', { role: 'status', children: [e.length - d, ' van de ', e.length, ' items zijn nu zichtbaar.'] }),
-            d >= 1
+            (0, i.jsxs)('p', { role: 'status', children: [s - h, ' van de ', s, ' items zijn nu zichtbaar.'] }),
+            h >= 1
              ? (0, i.jsx)(x.$n, {
                 appearance: 'secondary-action-button',
                 onClick: () => {
-                 r(Array.from(n.values()));
+                 o(Array.from(n.values()));
                 },
                 children: 'Toon alles',
                })
@@ -345,7 +341,7 @@
          }),
         ],
        }),
-       (0, i.jsx)('ul', { className: 'new-checklist', role: 'list', children: c.map((e, t) => (0, i.jsx)(R, { ...e }, t)) }),
+       (0, i.jsx)('ul', { className: 'new-checklist', role: 'list', children: d }),
       ],
      });
     };
@@ -365,7 +361,7 @@
     },
     O = ({ testCategory: e, items: t }) => (0, i.jsx)(x.If, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 3, expanded: !1, label: (0, i.jsx)('span', { children: e }), body: t.map((e, t) => (0, i.jsx)(D, { ...e }, t)) }] });
    function B({ children: e }) {
-    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: r.A, OverviewPage: w, DocCardList: u.A, ComponentOverview: G, Checklist: S, ComponentAnatomy: M, CriteriaList: O }, children: e });
+    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: r.A, OverviewPage: w, DocCardList: u.A, ComponentOverview: G, Checklist: S, ChecklistItem: R, ComponentAnatomy: M, CriteriaList: O }, children: e });
    }
   },
   11063(e, t, n) {

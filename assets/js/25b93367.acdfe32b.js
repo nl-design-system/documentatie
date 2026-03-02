@@ -28,18 +28,115 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  5160(e, n, t) {
+  2944(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => o });
-   var r = t(86070),
-    i = t(18439);
-   function s(e) {
-    const n = { a: 'a', code: 'code', p: 'p', pre: 'pre', ...(0, i.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['De link heeft een rol van ', (0, r.jsx)(n.code, { children: 'link' }), ' en een ', (0, r.jsx)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name', children: 'toegankelijke naam' }), ' die duidelijk maakt waar de link voor dient.'] }), '\n', (0, r.jsxs)(n.p, { children: ['HTML-elementen hebben een impliciete rol. Maak daar gebruik van. Kies daarom een ', (0, r.jsx)(n.code, { children: 'a' }), '-element met het ', (0, r.jsx)(n.code, { children: 'href' }), ' attribuut als je een link nodig hebt:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<a href="url">Contact</a>\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Het is mogelijk om met ARIA een ', (0, r.jsx)(n.code, { children: 'role="link"' }), ' toe te voegen aan een ander element dan een ', (0, r.jsx)(n.code, { children: 'a' }), ', maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc. Let erop dat je hiervoor JavaScript nodig hebt.'] })] });
+   (t.r(n), t.d(n, { assets: () => B, component: () => I, contentTitle: () => P, default: () => J, description: () => Z, frontMatter: () => G, issueNumber: () => $, metadata: () => r, title: () => U, toc: () => W }));
+   const r = JSON.parse('{"id":"componenten/link/index","title":"Link","description":"Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.","source":"@site/docs/componenten/link/index.mdx","sourceDirName":"componenten/link","slug":"/link","permalink":"/link","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/link/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Link","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Link","pagination_label":"Link","description":"Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.","slug":"/link","keywords":["a","a tag","anchor","anchor element","anchor link","back link","button as link","call to action link","cta link","externe link","external link","href","hyper link","hyperlink","inline link","koppeling","label","link","link button","links","navigatie","navigation","navlink","ordinal","standalone","standalone link","text link","URL","url","verwijzing","web address"]},"sidebar":"componenten","previous":{"title":"Language Navigation","permalink":"/language-navigation"},"next":{"title":"Link List","permalink":"/link-list"}}');
+   var i = t(86070),
+    s = t(18439),
+    o = t(36059),
+    a = t(17045),
+    c = t(19776),
+    l = t(40808);
+   t(82548);
+   function d(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als het label van de link alleen uit een icoon of logo bestaat, dan heeft deze afbeelding een goed tekstalternatief, zodat de link een naam heeft die duidelijk maakt waar de link voor dient.' }), '\n', (0, i.jsxs)(n.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder het icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor de afbeelding is niet nodig als er naast de afbeelding ook tekst in de link staat die uitlegt waar de link naartoe gaat. Een ', (0, i.jsx)(n.code, { children: 'img' }), ' kan dan een leeg ', (0, i.jsx)(n.code, { children: 'alt' }), '-attribuut krijgen (', (0, i.jsx)(n.code, { children: 'alt=""' }), ').'] }), '\n', (0, i.jsx)(n.p, { children: 'Is het toch gewenst om alleen een icoon of logo te tonen, hou dan rekening met het volgende.' }), '\n', (0, i.jsxs)(n.p, { children: ['Een ', (0, i.jsx)(n.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de toegankelijke naam van de link:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url">\n  <img src="ideal.svg" alt="iDeal" />\n</a>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Maar duidelijker is:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url"> Betaal met iDeal <img src="ideal.svg" alt="" /> </a>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/', children: 'Functionele afbeeldingen' }) }), '\n'] })] });
    }
-   function o(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   var h = t(2196),
+    u = t(83329);
+   function j(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Onderstreep links in een lopende tekst, zodat bezoekers makkelijk kunnen zien dat er een link in de tekst staat.' }), '\n', (0, i.jsx)(n.p, { children: 'Een andere manier om links te onderscheiden van de lopende tekst is door een andere tekstkleur te gebruiken. Deze kleur moet dan wel een contrastratio van minimaal 3:1 hebben ten opzichte van de lopende tekst, maar liever hoger. Hou er rekening mee dat alle tekst altijd voldoende contrast moet hebben met de achtergrondkleur van de pagina, ook bij muishover en toetsenbordfocus.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/doel/', children: 'Gebruik kleur met een doel' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
+   }
+   var m = t(83672),
+    p = t(34257),
+    g = t(36369),
+    k = t(92233),
+    x = t(60577),
+    v = t(27055),
+    b = t(61640),
+    y = t(24838),
+    f = t(23885),
+    w = t(96412),
+    z = t(36599),
+    A = t(8584),
+    D = t(76334);
+   const L = [
+     {
+      title: 'Als het label van de Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief.',
+      sc: '1.1.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
+      },
+      tags: ['designer', 'contentmaker'],
+     },
+     {
+      title: 'Links in een lopende tekst zijn duidelijk zichtbaar.',
+      sc: '1.4.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(j, { ...e }) }) : j(e);
+      },
+      tags: ['designer', 'contentmaker'],
+     },
+     { title: 'De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: m.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst.', sc: '1.4.5', status: '', component: w.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Als het zichtbare label van de Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.', sc: '1.4.11', status: '', component: h.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).', sc: '2.4.4', status: '', component: D.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Als de Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud', sc: '2.4.11', status: '', component: A.Ay, tags: ['developer', 'designer'] },
+     { title: 'Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: y.Ay, tags: ['developer', 'contentmaker'] },
+     { title: 'Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: f.Ay, tags: ['developer', 'designer', 'contentmaker'] },
+    ],
+    N = [
+     { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: p.Ay, tags: ['developer'] },
+     { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: u.Ay, tags: ['developer'] },
+     { title: 'Je kunt de Link focussen met de tabtoets en activeren met de entertoets.', sc: '2.1.1', status: '', component: g.Ay, tags: ['developer'] },
+     { title: 'De functionaliteit van de Link veroorzaakt geen toetsenbordval.', sc: '2.1.2', status: '', component: z.Ay, tags: ['developer'] },
+     { title: 'Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar.', sc: '2.4.7', status: '', component: k.Ay, tags: ['developer', 'designer'] },
+     { title: 'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.', sc: '2.5.2', status: '', component: x.Ay, tags: ['developer'] },
+     { title: 'De zichtbare naam van de Link komt voor in de toegankelijke naam.', sc: '2.5.3', status: '', component: v.Ay, tags: ['developer'] },
+     { title: 'De Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels.', sc: '2.5.5', status: '', component: b.Ay, tags: ['developer'] },
+    ];
+   var S = t(90495),
+    _ = t(46447),
+    R = t(65947),
+    T = t(1292),
+    F = t(72401),
+    C = t(85825),
+    M = t(17889),
+    E = t(12013);
+   function V(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.header, { children: (0, i.jsx)(n.h1, { id: 'gebruik-link', children: 'Gebruik Link' }) }), '\n', (0, i.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, i.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-css', children: '@nl-design-system-candidate/link-css' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik de ', (0, i.jsx)(n.code, { children: 'nl-link' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'a' }), ' element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="https://example.com" class="nl-link">example.com</a>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/link-css\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/link-css@1/dist/link.css" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, i.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/link-css/dist/link.css" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/link-css/link.css";\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'link-om-een-image-of-andere-inline-box-componenten', children: 'Link om een Image of andere inline-box componenten' }), '\n', (0, i.jsxs)(n.p, { children: ['Om te zorgen dat de states van een Link component goed werken als een link om een inline-box element zoals een Image is gezet gebruik je de ', (0, i.jsx)(n.code, { children: 'nl-link' }), ' class name in combinatie met ', (0, i.jsx)(n.code, { children: 'nl-link--inline-box' }), ' class name.'] }), '\n', (0, i.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, i.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-react', children: '@nl-design-system-candidate/link-react' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/link-react\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-jsx', children: 'import { Link } from "@nl-design-system-candidate/link-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <p>\n          <Link href="https://example.com">example.com</Link>\n        </p>\n      </body>\n    </html>\n  );\n};\n' }) })] });
+   }
+   function O(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(V, { ...e }) }) : V(e);
+   }
+   var H = t(86334);
+   const G = { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link', keywords: ['a', 'a tag', 'anchor', 'anchor element', 'anchor link', 'back link', 'button as link', 'call to action link', 'cta link', 'externe link', 'external link', 'href', 'hyper link', 'hyperlink', 'inline link', 'koppeling', 'label', 'link', 'link button', 'links', 'navigatie', 'navigation', 'navlink', 'ordinal', 'standalone', 'standalone link', 'text link', 'URL', 'url', 'verwijzing', 'web address'] },
+    P = void 0,
+    B = {},
+    U = 'Link',
+    Z = 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.',
+    $ = 118,
+    I = o.find((e) => e.number === $),
+    W = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...c.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'Link om een Image of andere inline-box componenten', id: 'link-om-een-image-of-andere-inline-box-componenten', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function X(e) {
+    const n = { h2: 'h2', h3: 'h3', ...(0, s.R)(), ...e.components },
+     { Checklist: t, ChecklistItem: r } = n;
+    return (t || K('Checklist', !0), r || K('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, i.jsx)(C.Fc, { component: I, headingLevel: 1, description: Z }), '\n', (0, i.jsx)(F.e, { component: I }), '\n', (0, i.jsx)(S.Zp, { className: 'implementation-card', children: (0, i.jsxs)(S.Wu, { children: [(0, i.jsx)(R.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(_.dk, { children: [(0, i.jsxs)(_.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1056', children: [(0, i.jsx)(T.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(_.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1056', children: [(0, i.jsx)(T.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(R.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(_.dk, { children: [(0, i.jsxs)(_.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-link--documentatie', children: [(0, i.jsx)(T.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(_.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/link--documentatie', children: [(0, i.jsx)(T.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(R.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(_.dk, { children: [(0, i.jsxs)(_.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-css', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/link-css'] }), (0, i.jsxs)(_.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-react', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/link-react'] }), (0, i.jsxs)(_.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-tokens', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/link-tokens'] })] })] }) }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(c.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: L.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: N.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(E.o, { omitH1: !0, headingLevel: 2, children: (0, i.jsx)(O, {}) }), '\n', (0, i.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, i.jsx)(M.B, { tokens: H }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(C.VK, { component: I, headingLevel: 3 }), '\n', (0, i.jsx)(C.$9, { component: I, headingLevel: 2 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(C.mu, { component: I, headingLevel: 3 })] }));
+   }
+   function J(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(X, { ...e }) }) : X(e);
+   }
+   function K(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
    }
   },
   8584(e, n, t) {
@@ -161,160 +258,6 @@
       (0, j.jsxs)(o.e2, { children: [(0, j.jsx)(m, { content: c, language: 'json', children: 'Kopieer als JSON' }), (0, j.jsx)(m, { content: a, language: 'css', children: 'Kopieer als CSS' })] }),
      ],
     });
-   }
-  },
-  18474(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => B, component: () => W, contentTitle: () => P, default: () => J, description: () => Z, frontMatter: () => G, issueNumber: () => $, metadata: () => r, title: () => U, toc: () => I }));
-   const r = JSON.parse('{"id":"componenten/link/index","title":"Link","description":"Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.","source":"@site/docs/componenten/link/index.mdx","sourceDirName":"componenten/link","slug":"/link","permalink":"/link","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/link/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Link","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Link","pagination_label":"Link","description":"Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.","slug":"/link","keywords":["a","a tag","anchor","anchor element","anchor link","back link","button as link","call to action link","cta link","externe link","external link","href","hyper link","hyperlink","inline link","koppeling","label","link","link button","links","navigatie","navigation","navlink","ordinal","standalone","standalone link","text link","URL","url","verwijzing","web address"]},"sidebar":"componenten","previous":{"title":"Language Navigation","permalink":"/language-navigation"},"next":{"title":"Link List","permalink":"/link-list"}}');
-   var i = t(86070),
-    s = t(18439),
-    o = t(36059),
-    a = t(17045),
-    c = t(19776),
-    l = t(40808);
-   t(82548);
-   function d(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als het label van de link alleen uit een icoon of logo bestaat, dan heeft deze afbeelding een goed tekstalternatief, zodat de link een naam heeft die duidelijk maakt waar de link voor dient.' }), '\n', (0, i.jsxs)(n.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder het icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor de afbeelding is niet nodig als er naast de afbeelding ook tekst in de link staat die uitlegt waar de link naartoe gaat. Een ', (0, i.jsx)(n.code, { children: 'img' }), ' kan dan een leeg ', (0, i.jsx)(n.code, { children: 'alt' }), '-attribuut krijgen (', (0, i.jsx)(n.code, { children: 'alt=""' }), ').'] }), '\n', (0, i.jsx)(n.p, { children: 'Is het toch gewenst om alleen een icoon of logo te tonen, hou dan rekening met het volgende.' }), '\n', (0, i.jsxs)(n.p, { children: ['Een ', (0, i.jsx)(n.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de toegankelijke naam van de link:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url">\n  <img src="ideal.svg" alt="iDeal" />\n</a>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Maar duidelijker is:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url"> Betaal met iDeal <img src="ideal.svg" alt="" /> </a>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/', children: 'Functionele afbeeldingen' }) }), '\n'] })] });
-   }
-   function h(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
-   }
-   var u = t(2196),
-    j = t(83329);
-   function m(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Onderstreep links in een lopende tekst, zodat bezoekers makkelijk kunnen zien dat er een link in de tekst staat.' }), '\n', (0, i.jsx)(n.p, { children: 'Een andere manier om links te onderscheiden van de lopende tekst is door een andere tekstkleur te gebruiken. Deze kleur moet dan wel een contrastratio van minimaal 3:1 hebben ten opzichte van de lopende tekst, maar liever hoger. Hou er rekening mee dat alle tekst altijd voldoende contrast moet hebben met de achtergrondkleur van de pagina, ook bij muishover en toetsenbordfocus.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/doel/', children: 'Gebruik kleur met een doel' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
-   }
-   function p(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(m, { ...e }) }) : m(e);
-   }
-   var g = t(83672),
-    k = t(34257),
-    x = t(36369),
-    v = t(92233),
-    b = t(60577),
-    y = t(27055),
-    f = t(61640),
-    w = t(24838),
-    z = t(23885),
-    A = (t(5160), t(96412)),
-    D = t(36599),
-    L = t(8584),
-    N = t(76334),
-    S = t(90495),
-    _ = t(46447),
-    R = t(65947),
-    T = t(1292),
-    F = t(72401),
-    M = t(85825),
-    C = t(17889),
-    E = t(12013);
-   function V(e) {
-    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.header, { children: (0, i.jsx)(n.h1, { id: 'gebruik-link', children: 'Gebruik Link' }) }), '\n', (0, i.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, i.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-css', children: '@nl-design-system-candidate/link-css' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik de ', (0, i.jsx)(n.code, { children: 'nl-link' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'a' }), ' element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="https://example.com" class="nl-link">example.com</a>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/link-css\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/link-css@1/dist/link.css" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, i.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/link-css/dist/link.css" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/link-css/link.css";\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'link-om-een-image-of-andere-inline-box-componenten', children: 'Link om een Image of andere inline-box componenten' }), '\n', (0, i.jsxs)(n.p, { children: ['Om te zorgen dat de states van een Link component goed werken als een link om een inline-box element zoals een Image is gezet gebruik je de ', (0, i.jsx)(n.code, { children: 'nl-link' }), ' class name in combinatie met ', (0, i.jsx)(n.code, { children: 'nl-link--inline-box' }), ' class name.'] }), '\n', (0, i.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, i.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-react', children: '@nl-design-system-candidate/link-react' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/link-react\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-jsx', children: 'import { Link } from "@nl-design-system-candidate/link-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <p>\n          <Link href="https://example.com">example.com</Link>\n        </p>\n      </body>\n    </html>\n  );\n};\n' }) })] });
-   }
-   function H(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(V, { ...e }) }) : V(e);
-   }
-   var O = t(86334);
-   const G = { title: 'Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Link', pagination_label: 'Link', description: 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.', slug: '/link', keywords: ['a', 'a tag', 'anchor', 'anchor element', 'anchor link', 'back link', 'button as link', 'call to action link', 'cta link', 'externe link', 'external link', 'href', 'hyper link', 'hyperlink', 'inline link', 'koppeling', 'label', 'link', 'link button', 'links', 'navigatie', 'navigation', 'navlink', 'ordinal', 'standalone', 'standalone link', 'text link', 'URL', 'url', 'verwijzing', 'web address'] },
-    P = void 0,
-    B = {},
-    U = 'Link',
-    Z = 'Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.',
-    $ = 118,
-    W = o.find((e) => e.number === $),
-    I = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...c.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'Link om een Image of andere inline-box componenten', id: 'link-om-een-image-of-andere-inline-box-componenten', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function X(e) {
-    const n = { h2: 'h2', h3: 'h3', ...(0, s.R)(), ...e.components },
-     { Checklist: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('Checklist', !0),
-     (0, i.jsxs)(i.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, i.jsx)(M.Fc, { component: W, headingLevel: 1, description: Z }),
-       '\n',
-       (0, i.jsx)(F.e, { component: W }),
-       '\n',
-       (0, i.jsx)(S.Zp, { className: 'implementation-card', children: (0, i.jsxs)(S.Wu, { children: [(0, i.jsx)(R.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(_.dk, { children: [(0, i.jsxs)(_.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1056', children: [(0, i.jsx)(T.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(_.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1056', children: [(0, i.jsx)(T.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(R.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(_.dk, { children: [(0, i.jsxs)(_.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-link--documentatie', children: [(0, i.jsx)(T.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(_.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/link--documentatie', children: [(0, i.jsx)(T.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(R.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(_.dk, { children: [(0, i.jsxs)(_.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-css', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/link-css'] }), (0, i.jsxs)(_.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-react', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/link-react'] }), (0, i.jsxs)(_.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/link-tokens', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/link-tokens'] })] })] }) }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
-       '\n',
-       (0, i.jsx)(l.Ay, {}),
-       '\n',
-       (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
-       '\n',
-       (0, i.jsx)(c.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'Als het label van de Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief.', sc: '1.1.1', status: '', component: (0, i.jsx)(h, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Links in een lopende tekst zijn duidelijk zichtbaar.', sc: '1.4.1', status: '', component: (0, i.jsx)(p, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: (0, i.jsx)(g.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst.', sc: '1.4.5', status: '', component: (0, i.jsx)(A.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Als het zichtbare label van de Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.', sc: '1.4.11', status: '', component: (0, i.jsx)(u.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).', sc: '2.4.4', status: '', component: (0, i.jsx)(N.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Als de Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud', sc: '2.4.11', status: '', component: (0, i.jsx)(L.Ay, {}), tags: ['developer', 'designer'] },
-         { title: 'Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: (0, i.jsx)(w.Ay, {}), tags: ['developer', 'contentmaker'] },
-         { title: 'Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: (0, i.jsx)(z.Ay, {}), tags: ['developer', 'designer', 'contentmaker'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
-       '\n',
-       (0, i.jsx)(a.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, i.jsx)(k.Ay, {}), tags: ['developer'] },
-         { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, i.jsx)(j.Ay, {}), tags: ['developer'] },
-         { title: 'Je kunt de Link focussen met de tabtoets en activeren met de entertoets.', sc: '2.1.1', status: '', component: (0, i.jsx)(x.Ay, {}), tags: ['developer'] },
-         { title: 'De functionaliteit van de Link veroorzaakt geen toetsenbordval.', sc: '2.1.2', status: '', component: (0, i.jsx)(D.Ay, {}), tags: ['developer'] },
-         { title: 'Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar.', sc: '2.4.7', status: '', component: (0, i.jsx)(v.Ay, {}), tags: ['developer', 'designer'] },
-         { title: 'Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.', sc: '2.5.2', status: '', component: (0, i.jsx)(b.Ay, {}), tags: ['developer'] },
-         { title: 'De zichtbare naam van de Link komt voor in de toegankelijke naam.', sc: '2.5.3', status: '', component: (0, i.jsx)(y.Ay, {}), tags: ['developer'] },
-         { title: 'De Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels.', sc: '2.5.5', status: '', component: (0, i.jsx)(f.Ay, {}), tags: ['developer'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(E.o, { omitH1: !0, headingLevel: 2, children: (0, i.jsx)(H, {}) }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }),
-       '\n',
-       (0, i.jsx)(C.B, { tokens: O }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, i.jsx)(M.VK, { component: W, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(M.$9, { component: W, headingLevel: 2 }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, i.jsx)(M.mu, { component: W, headingLevel: 3 }),
-      ],
-     })
-    );
-   }
-   function J(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(X, { ...e }) }) : X(e);
    }
   },
   19776(e, n, t) {

@@ -275,145 +275,6 @@
     return ((0, r.useEffect)(() => n(!0), []), e);
    }
   },
-  65149(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => C, component: () => O, contentTitle: () => H, default: () => E, description: () => M, frontMatter: () => L, issueNumber: () => F, metadata: () => r, title: () => R, toc: () => G }));
-   const r = JSON.parse('{"id":"componenten/heading/index","title":"Heading","description":"Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.","source":"@site/docs/componenten/heading/index.mdx","sourceDirName":"componenten/heading","slug":"/heading","permalink":"/heading","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Heading","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Heading","pagination_label":"Heading","description":"Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.","slug":"/heading","keywords":["bold-text","caption","content","h1","h2","h3","h4","h5","h6","header","heading","heading level","headline","hoofdkop","hoofdstuk","hoofdtekst","hyperlink","kop","kopje","kop tekst","koptekst","linktekst","pagina titel","paragraaf titel","sectie","section","structure","titel","title","tussenkop","tussenkopje","url"]},"sidebar":"componenten","previous":{"title":"Form Summary","permalink":"/form-summary"},"next":{"title":"Heading 1","permalink":"/heading-1"}}');
-   var i = t(86070),
-    s = t(18439),
-    o = t(36059),
-    c = (t(64164), t(17045)),
-    a = t(19776),
-    l = t(40808);
-   function d(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['In HTML zijn de juiste elementen voor koppen ', (0, i.jsx)(n.code, { children: 'h1' }), ' tot en met ', (0, i.jsx)(n.code, { children: 'h6' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'Voor screenreadergebruikers is een goede koppenstructuur een belangrijk navigatiemiddel. Gebruik daarom een heading-element van het juiste niveau met een tekst die de content van de sectie eronder beschrijft. Op die manier ontstaat een duidelijke inhoudsopgave wanneer een gebruiker met hulpsoftware een koppenlijst opvraagt.' }), '\n', (0, i.jsxs)(n.p, { children: ['Wil je tekst alleen maar vormgeven, bijvoorbeeld groter maken? Gebruik dan CSS in combinatie met bijvoorbeeld een ', (0, i.jsx)(n.code, { children: 'span' }), '- of een ', (0, i.jsx)(n.code, { children: 'p' }), '-element, geen heading-element.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Sla geen kopniveaus over, dus bijvoorbeeld een ', (0, i.jsx)(n.code, { children: 'h3' }), ' na een ', (0, i.jsx)(n.code, { children: 'h1' }), '. Gebruikers van ', (0, i.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), ' kunnen dan het idee krijgen dat ze informatie missen.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Let erop dat je per pagina 1 ', (0, i.jsx)(n.code, { children: 'h1' }), ' gebruikt en dat deze aan het begin van de ', (0, i.jsx)(n.code, { children: 'main' }), '-content staat. Door niet meer dan 1 ', (0, i.jsx)(n.code, { children: 'h1' }), ' te gebruiken, kan een screenreadergebruiker makkelijk naar het begin van de unieke content springen.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Richtlijnen voor koppen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/relaties/#relaties-binnen-typografie', children: 'Gebruik ruimte om relaties te cre\xebren tussen elementen, Relaties binnen typografie' }) }), '\n'] })] });
-   }
-   function h(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
-   }
-   function u(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['In HTML zijn de juiste elementen voor koppen ', (0, i.jsx)(n.code, { children: 'h1' }), ' tot en met ', (0, i.jsx)(n.code, { children: 'h6' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Richtlijnen voor koppen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/relaties/#relaties-binnen-typografie', children: 'Gebruik ruimte om relaties te cre\xebren tussen elementen, Relaties binnen typografie' }) }), '\n'] })] });
-   }
-   function j(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(u, { ...e }) }) : u(e);
-   }
-   var p = t(83329),
-    g = t(83672),
-    m = t(34257);
-   function k(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'De tekst van de kop beschrijft kort en bondig waar de tekst eronder over gaat, als een soort samenvatting.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Koppen' }) }), '\n'] })] });
-   }
-   function v(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(k, { ...e }) }) : k(e);
-   }
-   var y = t(24838);
-   var x = t(90495),
-    b = t(46447),
-    f = t(65947),
-    w = t(1292),
-    A = t(72401),
-    N = t(85825),
-    z = t(17889),
-    S = t(12013);
-   function _(e) {
-    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.header, { children: (0, i.jsx)(n.h1, { id: 'gebruik-code', children: 'Gebruik Code' }) }), '\n', (0, i.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, i.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-css', children: '@nl-design-system-candidate/heading-css' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/heading-css\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/heading-css@1/dist/heading.css" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, i.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/heading-css/dist/heading.css" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/heading-css/heading.css";\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-1', children: 'Heading level 1' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een hoofdkop van een pagina de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-1' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h1' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h1 class="nl-heading nl-heading--level-1">Hoofdkop van de pagina</h1>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-2', children: 'Heading level 2' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-2' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h2' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h2 class="nl-heading nl-heading--level-2">\n  Een koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat\n</h2>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-3', children: 'Heading level 3' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het derde niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-3' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h3' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h3 class="nl-heading nl-heading--level-3">Een koptekst die in de koppenstructuur op het derde niveau staat</h3>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-4', children: 'Heading level 4' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het vierde niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-4' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h4' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h4 class="nl-heading nl-heading--level-4">Een koptekst die in de koppenstructuur op het vierde niveau staat</h4>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-5', children: 'Heading level 5' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het vijfde niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-5' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h5' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h5 class="nl-heading nl-heading--level-5">Een koptekst die in de koppenstructuur op het vijfde niveau staat</h5>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-6', children: 'Heading level 6' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het zesde niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-5' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h6' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h6 class="nl-heading nl-heading--level-6">Een koptekst die in de koppenstructuur op het zesde niveau staat</h6>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'kop-gebruiken-met-het-uiterlijk-van-een-ander-level', children: 'Kop gebruiken met het uiterlijk van een ander level' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die semantisch op het ene level staat, maar visueel de uitstraling heeft van een ander level de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-{het visuele level}' }), ' op het semantische heading component naar keuze:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h2 class="nl-heading nl-heading--level-4">\n  Een koptekst die in de koppenstructuur op het tweede level staat en eruit ziet als het vierde level.\n</h2>\n' }) }), '\n', (0, i.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, i.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-react', children: '@nl-design-system-candidate/heading-react' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/heading-react\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-jsx', children: 'import { Heading } from "@nl-design-system-candidate/heading-react";\n\nexport const MyComponent = () => {\n  return (\n    <div>\n      <Heading level={2} appearance="level-4"></Heading>\n    </div>\n  );\n};\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Of inclusief CSS:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-jsx', children: 'import { Heading } from "@nl-design-system-candidate/heading-react/css";\n\nexport const MyComponent = () => {\n  return (\n    <div>\n      <Heading level={2} appearance="level-4"></Heading>\n    </div>\n  );\n};\n' }) })] });
-   }
-   function D(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(_, { ...e }) }) : _(e);
-   }
-   var T = t(83766);
-   const L = { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading', keywords: ['bold-text', 'caption', 'content', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'heading', 'heading level', 'headline', 'hoofdkop', 'hoofdstuk', 'hoofdtekst', 'hyperlink', 'kop', 'kopje', 'kop tekst', 'koptekst', 'linktekst', 'pagina titel', 'paragraaf titel', 'sectie', 'section', 'structure', 'titel', 'title', 'tussenkop', 'tussenkopje', 'url'] },
-    H = void 0,
-    C = {},
-    R = 'Heading',
-    M = 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.',
-    F = 114,
-    O = o.find((e) => e.number === F),
-    G = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...c.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'Heading level 1', id: 'heading-level-1', level: 3 }, { value: 'Heading level 2', id: 'heading-level-2', level: 3 }, { value: 'Heading level 3', id: 'heading-level-3', level: 3 }, { value: 'Heading level 4', id: 'heading-level-4', level: 3 }, { value: 'Heading level 5', id: 'heading-level-5', level: 3 }, { value: 'Heading level 6', id: 'heading-level-6', level: 3 }, { value: 'Kop gebruiken met het uiterlijk van een ander level', id: 'kop-gebruiken-met-het-uiterlijk-van-een-ander-level', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function V(e) {
-    const n = { h2: 'h2', h3: 'h3', ...(0, s.R)(), ...e.components },
-     { Checklist: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('Checklist', !0),
-     (0, i.jsxs)(i.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, i.jsx)(N.Fc, { component: O, headingLevel: 1, description: M }),
-       '\n',
-       (0, i.jsx)(A.e, { component: O }),
-       '\n',
-       (0, i.jsx)(x.Zp, { className: 'implementation-card', children: (0, i.jsxs)(x.Wu, { children: [(0, i.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(b.dk, { children: [(0, i.jsxs)(b.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1039', children: [(0, i.jsx)(w.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(b.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1039', children: [(0, i.jsx)(w.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(b.dk, { children: [(0, i.jsxs)(b.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-heading--documentatie', children: [(0, i.jsx)(w.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(b.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/heading--documentatie', children: [(0, i.jsx)(w.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(b.dk, { children: [(0, i.jsxs)(b.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-css', children: [(0, i.jsx)(w.r, { brand: 'npm' }), ' @nl-design-system-candidate/heading-css'] }), (0, i.jsxs)(b.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-react', children: [(0, i.jsx)(w.r, { brand: 'npm' }), ' @nl-design-system-candidate/heading-react'] }), (0, i.jsxs)(b.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-tokens', children: [(0, i.jsx)(w.r, { brand: 'npm' }), ' @nl-design-system-candidate/heading-tokens'] })] })] }) }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
-       '\n',
-       (0, i.jsx)(l.Ay, {}),
-       '\n',
-       (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
-       '\n',
-       (0, i.jsx)(a.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'Het niveau van de kop klopt binnen de koppenstructuur van de pagina.', sc: '1.3.1', status: '', component: (0, i.jsx)(h, {}), tags: ['contentmaker'] },
-         { title: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: (0, i.jsx)(g.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'De koptekst maakt duidelijk waar de sectie over gaat.', sc: '2.4.6', status: '', component: (0, i.jsx)(v, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Als de kop in een andere taal is dan de rest van de pagina, dan heeft het lang-attribuut de juiste taalcode.', sc: '3.1.2', status: '', component: (0, i.jsx)(y.Ay, {}), tags: ['contentmaker', 'developer'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
-       '\n',
-       (0, i.jsx)(c.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'Als tekst er uitziet als een kop, moet dit ook in de HTML een kop zijn.', sc: '1.3.1', status: '', component: (0, i.jsx)(j, {}), tags: ['developer'] },
-         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, i.jsx)(m.Ay, {}), tags: ['developer'] },
-         { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, i.jsx)(p.Ay, {}), tags: ['developer'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(S.o, { omitH1: !0, headingLevel: 2, children: (0, i.jsx)(D, {}) }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }),
-       '\n',
-       (0, i.jsx)(z.B, { tokens: T }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, i.jsx)(N.VK, { component: O, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(N.$9, { component: O, headingLevel: 2 }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, i.jsx)(N.mu, { component: O, headingLevel: 3 }),
-      ],
-     })
-    );
-   }
-   function E(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(V, { ...e }) }) : V(e);
-   }
-  },
   67970(e, n, t) {
    'use strict';
    t.d(n, { D: () => c });
@@ -446,6 +307,108 @@
    var r = t(13526),
     i = t(86070);
    const s = ({ children: e, className: n, level: t = 1, suffix: s, ...o }) => (0, i.jsxs)('hgroup', { className: (0, r.A)('nlds-inline-heading-group', `utrecht-heading-${t}`, n), ...o, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: e }), s && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [s ? ' ' : '', s] })] });
+  },
+  80545(e, n, t) {
+   'use strict';
+   (t.r(n), t.d(n, { assets: () => H, component: () => F, contentTitle: () => L, default: () => V, description: () => R, frontMatter: () => T, issueNumber: () => M, metadata: () => r, title: () => C, toc: () => O }));
+   const r = JSON.parse('{"id":"componenten/heading/index","title":"Heading","description":"Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.","source":"@site/docs/componenten/heading/index.mdx","sourceDirName":"componenten/heading","slug":"/heading","permalink":"/heading","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Heading","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Heading","pagination_label":"Heading","description":"Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.","slug":"/heading","keywords":["bold-text","caption","content","h1","h2","h3","h4","h5","h6","header","heading","heading level","headline","hoofdkop","hoofdstuk","hoofdtekst","hyperlink","kop","kopje","kop tekst","koptekst","linktekst","pagina titel","paragraaf titel","sectie","section","structure","titel","title","tussenkop","tussenkopje","url"]},"sidebar":"componenten","previous":{"title":"Form Summary","permalink":"/form-summary"},"next":{"title":"Heading 1","permalink":"/heading-1"}}');
+   var i = t(86070),
+    s = t(18439),
+    o = t(36059),
+    c = (t(64164), t(17045)),
+    a = t(19776),
+    l = t(40808),
+    d = t(90495),
+    h = t(46447),
+    u = t(65947),
+    j = t(1292),
+    p = t(72401),
+    g = t(85825);
+   function m(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['In HTML zijn de juiste elementen voor koppen ', (0, i.jsx)(n.code, { children: 'h1' }), ' tot en met ', (0, i.jsx)(n.code, { children: 'h6' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'Voor screenreadergebruikers is een goede koppenstructuur een belangrijk navigatiemiddel. Gebruik daarom een heading-element van het juiste niveau met een tekst die de content van de sectie eronder beschrijft. Op die manier ontstaat een duidelijke inhoudsopgave wanneer een gebruiker met hulpsoftware een koppenlijst opvraagt.' }), '\n', (0, i.jsxs)(n.p, { children: ['Wil je tekst alleen maar vormgeven, bijvoorbeeld groter maken? Gebruik dan CSS in combinatie met bijvoorbeeld een ', (0, i.jsx)(n.code, { children: 'span' }), '- of een ', (0, i.jsx)(n.code, { children: 'p' }), '-element, geen heading-element.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Sla geen kopniveaus over, dus bijvoorbeeld een ', (0, i.jsx)(n.code, { children: 'h3' }), ' na een ', (0, i.jsx)(n.code, { children: 'h1' }), '. Gebruikers van ', (0, i.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), ' kunnen dan het idee krijgen dat ze informatie missen.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Let erop dat je per pagina 1 ', (0, i.jsx)(n.code, { children: 'h1' }), ' gebruikt en dat deze aan het begin van de ', (0, i.jsx)(n.code, { children: 'main' }), '-content staat. Door niet meer dan 1 ', (0, i.jsx)(n.code, { children: 'h1' }), ' te gebruiken, kan een screenreadergebruiker makkelijk naar het begin van de unieke content springen.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Richtlijnen voor koppen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/relaties/#relaties-binnen-typografie', children: 'Gebruik ruimte om relaties te cre\xebren tussen elementen, Relaties binnen typografie' }) }), '\n'] })] });
+   }
+   function k(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['In HTML zijn de juiste elementen voor koppen ', (0, i.jsx)(n.code, { children: 'h1' }), ' tot en met ', (0, i.jsx)(n.code, { children: 'h6' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Richtlijnen voor koppen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/relaties/#relaties-binnen-typografie', children: 'Gebruik ruimte om relaties te cre\xebren tussen elementen, Relaties binnen typografie' }) }), '\n'] })] });
+   }
+   var v = t(83329),
+    y = t(83672),
+    x = t(34257);
+   function b(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'De tekst van de kop beschrijft kort en bondig waar de tekst eronder over gaat, als een soort samenvatting.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Koppen' }) }), '\n'] })] });
+   }
+   var f = t(24838);
+   const w = [
+     {
+      title: 'Het niveau van de kop klopt binnen de koppenstructuur van de pagina.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(m, { ...e }) }) : m(e);
+      },
+      tags: ['contentmaker'],
+     },
+     { title: 'De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: y.Ay, tags: ['designer', 'contentmaker'] },
+     {
+      title: 'De koptekst maakt duidelijk waar de sectie over gaat.',
+      sc: '2.4.6',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(b, { ...e }) }) : b(e);
+      },
+      tags: ['designer', 'contentmaker'],
+     },
+     { title: 'Als de kop in een andere taal is dan de rest van de pagina, dan heeft het lang-attribuut de juiste taalcode.', sc: '3.1.2', status: '', component: f.Ay, tags: ['contentmaker', 'developer'] },
+    ],
+    A = [
+     {
+      title: 'Als tekst er uitziet als een kop, moet dit ook in de HTML een kop zijn.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(k, { ...e }) }) : k(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: x.Ay, tags: ['developer'] },
+     { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: v.Ay, tags: ['developer'] },
+    ];
+   var N = t(17889),
+    z = t(12013);
+   function S(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.header, { children: (0, i.jsx)(n.h1, { id: 'gebruik-code', children: 'Gebruik Code' }) }), '\n', (0, i.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, i.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-css', children: '@nl-design-system-candidate/heading-css' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/heading-css\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/heading-css@1/dist/heading.css" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, i.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/heading-css/dist/heading.css" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/heading-css/heading.css";\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-1', children: 'Heading level 1' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een hoofdkop van een pagina de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-1' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h1' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h1 class="nl-heading nl-heading--level-1">Hoofdkop van de pagina</h1>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-2', children: 'Heading level 2' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-2' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h2' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h2 class="nl-heading nl-heading--level-2">\n  Een koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat\n</h2>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-3', children: 'Heading level 3' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het derde niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-3' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h3' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h3 class="nl-heading nl-heading--level-3">Een koptekst die in de koppenstructuur op het derde niveau staat</h3>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-4', children: 'Heading level 4' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het vierde niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-4' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h4' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h4 class="nl-heading nl-heading--level-4">Een koptekst die in de koppenstructuur op het vierde niveau staat</h4>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-5', children: 'Heading level 5' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het vijfde niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-5' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h5' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h5 class="nl-heading nl-heading--level-5">Een koptekst die in de koppenstructuur op het vijfde niveau staat</h5>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'heading-level-6', children: 'Heading level 6' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die in de koppenstructuur op het zesde niveau staat de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-5' }), ' class name op een ', (0, i.jsx)(n.code, { children: 'h6' }), ', element:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h6 class="nl-heading nl-heading--level-6">Een koptekst die in de koppenstructuur op het zesde niveau staat</h6>\n' }) }), '\n', (0, i.jsx)(n.h3, { id: 'kop-gebruiken-met-het-uiterlijk-van-een-ander-level', children: 'Kop gebruiken met het uiterlijk van een ander level' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik voor een koptekst die semantisch op het ene level staat, maar visueel de uitstraling heeft van een ander level de ', (0, i.jsx)(n.code, { children: 'nl-heading' }), ' en ', (0, i.jsx)(n.code, { children: 'nl-heading--level-{het visuele level}' }), ' op het semantische heading component naar keuze:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<h2 class="nl-heading nl-heading--level-4">\n  Een koptekst die in de koppenstructuur op het tweede level staat en eruit ziet als het vierde level.\n</h2>\n' }) }), '\n', (0, i.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, i.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(n.p, { children: (0, i.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-react', children: '@nl-design-system-candidate/heading-react' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/heading-react\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-jsx', children: 'import { Heading } from "@nl-design-system-candidate/heading-react";\n\nexport const MyComponent = () => {\n  return (\n    <div>\n      <Heading level={2} appearance="level-4"></Heading>\n    </div>\n  );\n};\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Of inclusief CSS:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-jsx', children: 'import { Heading } from "@nl-design-system-candidate/heading-react/css";\n\nexport const MyComponent = () => {\n  return (\n    <div>\n      <Heading level={2} appearance="level-4"></Heading>\n    </div>\n  );\n};\n' }) })] });
+   }
+   function _(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(S, { ...e }) }) : S(e);
+   }
+   var D = t(83766);
+   const T = { title: 'Heading', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading', pagination_label: 'Heading', description: 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.', slug: '/heading', keywords: ['bold-text', 'caption', 'content', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'heading', 'heading level', 'headline', 'hoofdkop', 'hoofdstuk', 'hoofdtekst', 'hyperlink', 'kop', 'kopje', 'kop tekst', 'koptekst', 'linktekst', 'pagina titel', 'paragraaf titel', 'sectie', 'section', 'structure', 'titel', 'title', 'tussenkop', 'tussenkopje', 'url'] },
+    L = void 0,
+    H = {},
+    C = 'Heading',
+    R = 'Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.',
+    M = 114,
+    F = o.find((e) => e.number === M),
+    O = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...c.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'Heading level 1', id: 'heading-level-1', level: 3 }, { value: 'Heading level 2', id: 'heading-level-2', level: 3 }, { value: 'Heading level 3', id: 'heading-level-3', level: 3 }, { value: 'Heading level 4', id: 'heading-level-4', level: 3 }, { value: 'Heading level 5', id: 'heading-level-5', level: 3 }, { value: 'Heading level 6', id: 'heading-level-6', level: 3 }, { value: 'Kop gebruiken met het uiterlijk van een ander level', id: 'kop-gebruiken-met-het-uiterlijk-van-een-ander-level', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function G(e) {
+    const n = { h2: 'h2', h3: 'h3', ...(0, s.R)(), ...e.components },
+     { Checklist: t, ChecklistItem: r } = n;
+    return (t || E('Checklist', !0), r || E('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(g.Fc, { component: F, headingLevel: 1, description: R }), '\n', (0, i.jsx)(p.e, { component: F }), '\n', (0, i.jsx)(d.Zp, { className: 'implementation-card', children: (0, i.jsxs)(d.Wu, { children: [(0, i.jsx)(u.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(h.dk, { children: [(0, i.jsxs)(h.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1039', children: [(0, i.jsx)(j.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(h.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1039', children: [(0, i.jsx)(j.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(u.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(h.dk, { children: [(0, i.jsxs)(h.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-heading--documentatie', children: [(0, i.jsx)(j.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(h.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/heading--documentatie', children: [(0, i.jsx)(j.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(u.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(h.dk, { children: [(0, i.jsxs)(h.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-css', children: [(0, i.jsx)(j.r, { brand: 'npm' }), ' @nl-design-system-candidate/heading-css'] }), (0, i.jsxs)(h.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-react', children: [(0, i.jsx)(j.r, { brand: 'npm' }), ' @nl-design-system-candidate/heading-react'] }), (0, i.jsxs)(h.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/heading-tokens', children: [(0, i.jsx)(j.r, { brand: 'npm' }), ' @nl-design-system-candidate/heading-tokens'] })] })] }) }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: w.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(c.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: A.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(z.o, { omitH1: !0, headingLevel: 2, children: (0, i.jsx)(_, {}) }), '\n', (0, i.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, i.jsx)(N.B, { tokens: D }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(g.VK, { component: F, headingLevel: 3 }), '\n', (0, i.jsx)(g.$9, { component: F, headingLevel: 2 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(g.mu, { component: F, headingLevel: 3 })] }));
+   }
+   function V(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(G, { ...e }) }) : G(e);
+   }
+   function E(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
+   }
   },
   82839(e, n, t) {
    var r = { './button-docs/docs/aliases.md': [24653, 24653], './code-block-docs/docs/aliases.md': [85464, 85464], './code-docs/docs/aliases.md': [31984, 31984], './color-sample-docs/docs/aliases.md': [10595, 10595], './data-badge-docs/docs/aliases.md': [73253, 73253], './heading-1-docs/docs/aliases.md': [57471, 57471], './heading-2-docs/docs/aliases.md': [63923, 63923], './heading-3-docs/docs/aliases.md': [7855, 7855], './heading-4-docs/docs/aliases.md': [88584, 66203], './heading-docs/docs/aliases.md': [87734, 87734], './link-docs/docs/aliases.md': [99126, 99126], './mark-docs/docs/aliases.md': [8740, 8740], './number-badge-docs/docs/aliases.md': [55080, 55080], './paragraph-docs/docs/aliases.md': [24478, 24478], './skip-link-docs/docs/aliases.md': [89150, 89150] };

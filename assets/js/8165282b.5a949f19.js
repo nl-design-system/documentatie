@@ -8,11 +8,11 @@
     i = t(74172),
     o = t(15089),
     s = t(28377),
-    a = t(33648),
-    c = t(83386),
+    c = t(33648),
+    a = t(83386),
     l = t(86070);
-   const d = { figma: (0, l.jsx)(i.A, {}), github: (0, l.jsx)(o.A, {}), npm: (0, l.jsx)(s.A, {}), storybook: (0, l.jsx)(a.A, {}) },
-    u = ({ brand: e }) => (0, l.jsx)(r.In, { children: d[e] || (0, l.jsx)(c.A, {}) });
+   const d = { figma: (0, l.jsx)(i.A, {}), github: (0, l.jsx)(o.A, {}), npm: (0, l.jsx)(s.A, {}), storybook: (0, l.jsx)(c.A, {}) },
+    u = ({ brand: e }) => (0, l.jsx)(r.In, { children: d[e] || (0, l.jsx)(a.A, {}) });
   },
   4964(e, n, t) {
    'use strict';
@@ -30,7 +30,7 @@
   },
   8584(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -38,209 +38,14 @@
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Een onderdeel dat toetsenbordfocus heeft mag niet volledig bedekt zijn.' });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  16067(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => W, component: () => q, contentTitle: () => U, default: () => ee, description: () => K, frontMatter: () => $, issueNumber: () => J, metadata: () => r, title: () => X, toc: () => Y }));
-   const r = JSON.parse('{"id":"componenten/text-input/index","title":"Text Input","description":"Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.","source":"@site/docs/componenten/text-input/index.mdx","sourceDirName":"componenten/text-input","slug":"/text-input","permalink":"/text-input","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/text-input/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Text Input","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Text Input","pagination_label":"Text Input","description":"Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.","slug":"/text-input","keywords":["editable textfield","form","form control","formulier","formulierelement","formfield","form field","form input","formulier-stap","input","input field","inputfield","invoerveld","invulveld","tekstveld","tekstinvoer","text box","textbox","text entry","text field","text input","textinput","veld"]},"sidebar":"componenten","previous":{"title":"Task Navigation","permalink":"/task-navigation"},"next":{"title":"Text Area","permalink":"/text-area"}}');
-   var i = t(86070),
-    o = t(18439),
-    s = t(36059),
-    a = t(17045),
-    c = t(19776),
-    l = t(40808);
-   function d(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Als de Text Input een tekstueel label heeft, gebruik dan een ', (0, i.jsx)(n.code, { children: 'label' }), '-element en koppel het met de attributen ', (0, i.jsx)(n.code, { children: 'for' }), ' en ', (0, i.jsx)(n.code, { children: 'id' }), ' aan de Text Input.'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="voorbeeld">Ik ben een Text Input</label> <input type="text" id="voorbeeld" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Op die manier is het label expliciet gekoppeld met de Text Input, ook als het invoerveld niet binnen een ', (0, i.jsx)(n.code, { children: 'label' }), '-element genest is.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Koppel instructies en foutmeldingen ook aan de Text Input met het ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), ' attribuut:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<p id="error">Invoerfout: Het veld Naam is niet ingevuld. Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name error" autocomplete="name" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Geef zowel in tekst als in code aan of een veld verplicht ingevuld moet worden. In code doe je dit doe je met het ', (0, i.jsx)(n.code, { children: 'required' }), ' attribuut of met het ', (0, i.jsx)(n.code, { children: 'aria-required' }), ' attribuut.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/toegankelijke-naam/', children: 'Toegankelijke naam label' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/foutmeldingen/', children: 'Toegankelijke foutmeldingen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/', children: 'Toegankelijke verplichte velden' }) }), '\n'] })] });
-   }
-   function u(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
-   }
-   function h(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat instructies en foutmeldingen die nodig zijn om te begrijpen wat er van de bezoeker verwacht wordt op een logische plek staan en gekoppeld zijn aan het formulierveld.' }), '\n', (0, i.jsx)(n.p, { children: 'De meest gebruiksvriendelijke plek voor instructies en foutmeldingen is tussen het label en het invoerveld. Als instructies \xf3nder het veld staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.' }), '\n', (0, i.jsxs)(n.p, { children: ['Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna instructies t\xfassen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Koppel instructies en foutmeldingen daarom ook aan het formulierveld met ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), '. Op die manier wordt de beschrijving voorgelezen wanneer de toetsenbordfocus op het formulierveld staat.'] }), '\n', (0, i.jsx)(n.p, { children: 'Voorbeeld:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<p id="error">Invoerfout: Het veld Naam is niet ingevuld. Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name error" autocomplete="name" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke instructies en beschrijvingen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/foutmeldingen/', children: 'Toegankelijke foutmeldingen' }) }), '\n'] })] });
-   }
-   function j(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(h, { ...e }) }) : h(e);
-   }
-   function p(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Help bezoekers met het invullen van persoonlijke gegevens door gebruik te maken van het ', (0, i.jsx)(n.code, { children: 'autocomplete' }), '-attribuut.'] }), '\n', (0, i.jsx)(n.p, { children: 'Voorbeeld:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" type="text" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['In de HTML specificatie vind je een ', (0, i.jsx)(n.a, { href: 'https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute.', children: 'lijst van mogelijke autocomplete-waarden' })] }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik altijd een ', (0, i.jsx)(n.code, { children: 'autocomplete' }), '-attribuut wanneer je persoonlijke informatie van bezoekers uitvraagt waar een geschikte autocomplete-waarde voor bestaat, ook als de waarde van het ', (0, i.jsx)(n.code, { children: 'type' }), '-attribuut (zoals ', (0, i.jsx)(n.code, { children: 'email' }), ' ) al voldoende duidelijk lijkt. Dit helpt browsers de juiste gegevens aan de bezoeker voor te stellen.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function m(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(p, { ...e }) }) : p(e);
-   }
-   var g = t(55552);
-   function v(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg voor voldoende kleurcontrast tussen de kleuren van componenten die visueel betekenis hebben en hun directe omgeving. Zorg ervoor dat dit minimaal 3:1, maar het liefst hoger.' }), '\n', (0, i.jsx)(n.p, { children: 'Kleuren die van toepassing zijn bij de Text Input zijn bijvoorbeeld:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: ['De rand van de Text Input, zodat de bezoeker weet waar het veld is. Vergeet hierbij ook niet de kleur van de rand wanneer de Text Input ', (0, i.jsx)(n.code, { children: 'invalid' }), ' is.'] }), '\n', (0, i.jsx)(n.li, { children: 'De focusrand om de Text Input.' }), '\n'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
-   }
-   function x(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(v, { ...e }) }) : v(e);
-   }
-   var k = t(83329),
-    f = t(83672),
-    b = t(34257),
-    y = (t(38286), t(25872));
-   function w(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Plaats de toetsenbordfocus niet standaard op het eerste veld in een formulier. Hierdoor slaan bezoekers die gebruik maken van een screenreader mogelijk belangrijke informatie over.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/tabindex/', children: 'Tabindex in formulieren' }) }), '\n'] })] });
-   }
-   function z(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(w, { ...e }) }) : w(e);
-   }
-   var A = t(99805),
-    D = t(92233);
-   t(60577);
-   function T(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat de tekstuele naam van het element voor formulierinvoer voorkomt in de toegankelijke naam.' }), '\n', (0, i.jsxs)(n.p, { children: ['De meestgebruikte manier is door een ', (0, i.jsx)(n.code, { children: 'label' }), '-element te koppelen aan het element voor formulierinvoer, met de attributen ', (0, i.jsx)(n.code, { children: 'for' }), ' en ', (0, i.jsx)(n.code, { children: 'id' }), '.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Pas op met het gebruik van ', (0, i.jsx)(n.code, { children: 'aria-label' }), ' om een naam te geven aan een element voor formulierinvoer. Een ', (0, i.jsx)(n.code, { children: 'aria-label' }), ' overschrijft de toegankelijke naam van een element. Daardoor kan de toegankelijke naam anders zijn dan de zichtbare naam. Bezoekers die gebruik maken van spraakgestuurde navigatie kunnen hierdoor moeite hebben om het element voor formulierinvoer te activeren.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/zichtbare-naam/', children: 'De zichtbare naam moet overeenkomen met de toegankelijke naam' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function N(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(T, { ...e }) }) : T(e);
-   }
-   t(61640);
-   var R = t(24838),
-    _ = t(4964);
-   function S(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat het doel (of de naam) en instructies bij een invoerveld beschikbaar zijn en blijven.' }), '\n', (0, i.jsxs)(n.p, { children: ['Maak daarom nooit all\xe9\xe9n gebruik van een placeholdertekst voor de naam of instructies van een invoerveld. Plaats de instructies ook niet in een tooltip, maar boven of onder het veld en koppel het aan het element voor formulierinvoer met ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'Als een icon een alternatief is voor een tekstueel label bij een element voor formulierinvoer, moet het duidelijk zijn wat de gebruiker moet doen of moet invullen.' }), '\n', (0, i.jsx)(n.p, { children: 'Bijvoorbeeld:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: 'Een icon van een slot in een inlogformulier vraagt om een wachtwoord.' }), '\n', (0, i.jsx)(n.li, { children: 'Een icon van een vergrootglas in een zoekfunctie vraagt om een zoekterm.' }), '\n', (0, i.jsx)(n.li, { children: 'Een icon van een telefoonhoorn in een contactformulier vraagt om een telefoonnummer.' }), '\n'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/', children: 'Toegankelijke labels in formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke beschrijvingen en instructies in formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: 'richtlijnen/formulieren/placeholders/', children: 'Placeholders in formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/', children: 'Richtlijnen voor iconen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/', children: 'Functionele afbeeldingen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function L(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(S, { ...e }) }) : S(e);
-   }
-   function F(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Vraag de bezoeker niet om meerdere keren dezelfde gegevens in te vullen. Maak in plaats daarvan gebruik van de eerder ingevulde informatie. Als je er zeker van wil zijn dat de informatie correct is, toon dan de eerder ingevulde informatie en laat de bezoeker controleren of de gegevens kloppen.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/vragen/voorkom-dubbel-werk/', children: 'Vraag niet meerdere keren dezelfde informatie uit' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function I(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(F, { ...e }) }) : F(e);
-   }
-   function M(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat de Text Input een toegankelijke naam en een kloppende rol heeft.' }), '\n', (0, i.jsxs)(n.p, { children: ['Zorg dat de Text Input een kloppende rol heeft, door het HTML-element ', (0, i.jsx)(n.code, { children: 'input' }), ' te gebruiken met het relevante ', (0, i.jsx)(n.code, { children: 'type' }), ' attribuut. Dit zijn de opties:'] }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: ['De types ', (0, i.jsx)(n.code, { children: 'text' }), ', ', (0, i.jsx)(n.code, { children: 'email' }), ', ', (0, i.jsx)(n.code, { children: 'tel' }), ' en ', (0, i.jsx)(n.code, { children: 'url' }), ' geven de rol ', (0, i.jsx)(n.code, { children: 'textbox' }), '.'] }), '\n', (0, i.jsxs)(n.li, { children: ['Het type ', (0, i.jsx)(n.code, { children: 'search' }), ' geeft de rol ', (0, i.jsx)(n.code, { children: 'searchbox' }), '.'] }), '\n'] }), '\n', (0, i.jsxs)(n.p, { children: ['Daarnaast moeten de staat en eigenschappen waar bezoekers zelf invloed op hebben (zoals in- of uitgeklapt, of ', (0, i.jsx)(n.code, { children: 'checked' }), ') en de ingevulde waarde (', (0, i.jsx)(n.code, { children: 'value' }), ') beschikbaar zijn voor hulpsoftware.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen/', children: 'Wanneer kies je welk element in een formulier?' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function V(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(M, { ...e }) }) : M(e);
-   }
-   var E = t(68413),
-    C = t(44720),
-    Z = t(36599),
-    B = t(70957),
-    H = t(31820),
-    O = t(80221),
-    G = t(8584),
-    P = t(85825);
-   const $ = { title: 'Text Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Text Input', pagination_label: 'Text Input', description: 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.', slug: '/text-input', keywords: ['editable textfield', 'form', 'form control', 'formulier', 'formulierelement', 'formfield', 'form field', 'form input', 'formulier-stap', 'input', 'input field', 'inputfield', 'invoerveld', 'invulveld', 'tekstveld', 'tekstinvoer', 'text box', 'textbox', 'text entry', 'text field', 'text input', 'textinput', 'veld'] },
-    U = void 0,
-    W = {},
-    X = 'Text Input',
-    K = 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.',
-    J = 200,
-    q = s.find((e) => e.number === J),
-    Y = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...c.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function Q(e) {
-    const n = { h2: 'h2', h3: 'h3', ...(0, o.R)(), ...e.components },
-     { Checklist: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('Checklist', !0),
-     (0, i.jsxs)(i.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, i.jsx)(P.Fc, { component: q, headingLevel: 1, description: K }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
-       '\n',
-       (0, i.jsx)(l.Ay, {}),
-       '\n',
-       (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
-       '\n',
-       (0, i.jsx)(c.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'Het label van de Text Input is gekoppeld aan de Text Input en het is duidelijk of de Text Input verplicht ingevuld moet worden.', sc: '1.3.1', status: '', component: (0, i.jsx)(u, {}), tags: ['developer'] },
-         { title: 'Instructies bij de Text Input staan op een logische plek', sc: '1.3.2', status: '', component: (0, i.jsx)(j, {}), tags: ['developer', 'designer', 'contentmaker'] },
-         { title: 'Een Text Input die om persoonlijke gegevens vraagt heeft het juiste autocomplete-attribuut.', sc: '1.3.5', status: '', component: (0, i.jsx)(m, {}), tags: ['developer'] },
-         { title: 'Kleur is niet de enige manier om informatie over een Text Input weer te geven.', sc: '1.4.1', status: '', component: (0, i.jsx)(C.Ay, {}), tags: ['designer'] },
-         { title: 'Placeholderteksten hebben een contrastratio van minimaal 4,5:1 met de achtergrond. ', sc: '1.4.3', status: '', component: (0, i.jsx)(f.Ay, {}), tags: ['designer'] },
-         { title: 'De bezoeker kan de Text Input tot 400% vergroten zonder verlies van functionaliteit of informatie.', sc: '1.4.10', status: '', component: (0, i.jsx)(g.Ay, {}), tags: ['developer'] },
-         { title: 'Niet-tekstuele informatie heeft een contrastratio van minimaal 3:1 met de achtergrond.', sc: '1.4.11', status: '', component: (0, i.jsx)(x, {}), tags: ['designer'] },
-         { title: 'De Text Input veroorzaakt geen toetsenbordval.', sc: '2.1.2', status: '', component: (0, i.jsx)(Z.Ay, {}), tags: ['developer'] },
-         { title: 'De Text Input staat op een logische plek in de focusvolgorde.', sc: '2.4.3', status: '', component: (0, i.jsx)(z, {}), tags: ['developer'] },
-         { title: 'De Text Input heeft een beschrijvend label en toegankelijke naam.', sc: '2.4.6', status: '', component: (0, i.jsx)(A.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Als de Text Input de toetsenbordfocus krijgt, is het niet volledig bedekt door andere inhoud.', sc: '2.4.11', status: '', component: (0, i.jsx)(G.Ay, {}), tags: ['developer'] },
-         { title: 'De zichtbare naam van de Text Input is gelijk aan de toegankelijke naam.', sc: '2.5.3', status: '', component: (0, i.jsx)(N, {}), tags: ['developer'] },
-         { title: 'De Text Input heeft een minimale grootte van 24 bij 24 pixels.', sc: '2.5.8', status: '', component: (0, i.jsx)(B.Ay, {}), tags: ['developer', 'designer'] },
-         { title: 'Als de placeholdertekst en invoertekst in een andere taal is dan de taal van de pagina, dan heeft het `input`-element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: (0, i.jsx)(R.Ay, {}), tags: ['developer'] },
-         { title: 'Als de Text Input focus krijgt, gebeurt er niets onverwachts.', sc: '3.2.1', status: '', component: (0, i.jsx)(H.Ay, {}), tags: ['developer'] },
-         { title: 'Bij het invullen van de Text Input gebeurt er niets onverwachts.', sc: '3.2.2', status: '', component: (0, i.jsx)(O.Ay, {}), tags: ['developer', 'designer'] },
-         { title: 'Text Inputs met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.', sc: '3.2.4', status: '', component: (0, i.jsx)(_.Ay, {}), tags: ['developer', 'designer'] },
-         { title: 'De naam en instructies over het invullen van de Text Input staan niet alleen in de placeholder', sc: '3.3.2', status: '', component: (0, i.jsx)(L, {}), tags: ['developer', 'designer'] },
-         { title: 'Gebruikers hoeven dezelfde gegevens niet opnieuw in te voeren als deze al eerder in hetzelfde proces zijn ingevuld of beschikbaar zijn in het systeem.', sc: '3.3.7', status: '', component: (0, i.jsx)(I, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'De Text Input heeft een toegankelijke naam en rol, en de eigenschappen en waarde zijn beschikbaar voor hulpsoftware. ', sc: '4.1.2', status: '', component: (0, i.jsx)(V, {}), tags: ['designer', 'contentmaker'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
-       '\n',
-       (0, i.jsx)(a.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'Het is mogelijk om autocomplete in te stellen bij de Text Input.', sc: '1.3.5', status: '', component: (0, i.jsx)(m, {}), tags: ['developer'] },
-         { title: 'Placeholderteksten blijven leesbaar wanneer de tekstafstand vergroot wordt.', sc: '1.4.12', status: '', component: (0, i.jsx)(k.Ay, {}), tags: ['developer'] },
-         { title: 'Als je de tekst van placeholders vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, i.jsx)(b.Ay, {}), tags: ['developer'] },
-         { title: 'Je kunt de Text Input bereiken en bedienen met het toetsenbord.', sc: '2.1.1', status: '', component: (0, i.jsx)(y.Ay, {}), tags: ['developer'] },
-         { title: 'Als de Text Input de toetsenbordfocus krijgt is de focus zichtbaar.', sc: '2.4.7', status: '', component: (0, i.jsx)(D.Ay, {}), tags: ['developer'] },
-         { title: 'Het is mogelijk de Text Input een toegankelijke naam en de juiste rol te geven en het `value`-attribuut is aanwezig en instelbaar.', sc: '4.1.2', status: '', component: (0, i.jsx)(E.Ay, {}), tags: ['developer'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, i.jsx)(P.VK, { component: q, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(P.$9, { component: q, headingLevel: 2 }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, i.jsx)(P.mu, { component: q, headingLevel: 3 }),
-      ],
-     })
-    );
-   }
-   function ee(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(Q, { ...e }) }) : Q(e);
-   }
-  },
   17045(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -248,14 +53,14 @@
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Als je de NL Design System component gebruikt kun je er vanuit gaan dat onderstaande checks zijn gedaan. Maar door keuzes in de website of applicaties kan het natuurlijk zijn dat ze toch niet helemaal werken. Voor de zekerheid is het dus goed om ook op onderstaande punten te letten.' });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
   19776(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -263,7 +68,7 @@
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Een component gebruik je in de context van een pagina, website of applicatie. Hoe toegankelijk en gebruiksvriendelijk een component is, hangt daarom voor een groot deel af van context. We hebben onderstaande criteria verdeeld op rol: de developer, de designer en de contentmaker. Vanuit iedere rol kun je je steentje bijdragen om een toegankelijke en gebruiksvriendelijke ervaring te bieden aan je gebruikers.' });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
@@ -298,7 +103,7 @@
   },
   31820(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -306,20 +111,20 @@
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Verras een gebruiker niet als die een interactief element focus geeft. Maak functionaliteit voorspelbaar en daardoor goed te begrijpen.' }), '\n', (0, r.jsx)(n.p, { children: 'Als een gebruiker een component focus geeft met het toetsenbord of door erop te klikken met de muis, zorg dan dat die actie niet automatisch een contextwijziging veroorzaakt.' }), '\n', (0, r.jsx)(n.p, { children: 'Bij een contextwijziging verandert onverwacht de indeling, informatie, toetsenbordfocus of functionaliteit. Bijvoorbeeld door het direct versturen van een formulier na het kiezen van een select-optie, waarna de gebruiker naar een andere pagina wordt doorgestuurd.' })] });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
   33062(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => i, KF: () => h, mJ: () => m, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => f, B2: () => j, Pc: () => c, f4: () => a, GT: () => b, fX: () => o, eQ: () => k, B_: () => x, o_: () => v, Rc: () => y });
+   t.d(n, { bo: () => i, KF: () => h, mJ: () => m, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => f, B2: () => j, Pc: () => a, f4: () => c, GT: () => b, fX: () => o, eQ: () => x, B_: () => k, o_: () => v, Rc: () => y });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
-    a = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    c = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
+    c = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    a = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
     l = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
    function d(e) {
     return Array.from(new Set(e));
@@ -346,15 +151,15 @@
        .filter(({ name: e, value: t }) => '' !== t && e.includes(n))
        .map(({ name: r, id: i, value: o }) => {
         const s = /^(.+) URL/.exec(r)[1],
-         a = 'Storybook' === s ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${s}`;
-        return { brand: s.toLowerCase(), name: r, id: i, value: o, description: a };
+         c = 'Storybook' === s ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${s}`;
+        return { brand: s.toLowerCase(), name: r, id: i, value: o, description: c };
        });
       return { frameworkName: n, tasks: r };
      });
     },
     v = (e) => e.join('.'),
-    x = (e) => '--' + e.join('-'),
-    k = (e, n) => n.reduce((e, n) => e?.[n], e);
+    k = (e) => '--' + e.join('-'),
+    x = (e, n) => n.reduce((e, n) => e?.[n], e);
    function f(e, n = []) {
     return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? f(e[t], [...n, t]) : []));
    }
@@ -399,9 +204,199 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
    }
   },
+  36378(e, n, t) {
+   'use strict';
+   (t.r(n), t.d(n, { assets: () => B, component: () => $, contentTitle: () => H, default: () => X, description: () => P, frontMatter: () => Z, issueNumber: () => G, metadata: () => r, title: () => O, toc: () => U }));
+   const r = JSON.parse('{"id":"componenten/text-input/index","title":"Text Input","description":"Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.","source":"@site/docs/componenten/text-input/index.mdx","sourceDirName":"componenten/text-input","slug":"/text-input","permalink":"/text-input","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/text-input/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Text Input","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Text Input","pagination_label":"Text Input","description":"Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.","slug":"/text-input","keywords":["editable textfield","form","form control","formulier","formulierelement","formfield","form field","form input","formulier-stap","input","input field","inputfield","invoerveld","invulveld","tekstveld","tekstinvoer","text box","textbox","text entry","text field","text input","textinput","veld"]},"sidebar":"componenten","previous":{"title":"Task Navigation","permalink":"/task-navigation"},"next":{"title":"Text Area","permalink":"/text-area"}}');
+   var i = t(86070),
+    o = t(18439),
+    s = t(36059),
+    c = t(17045),
+    a = t(19776),
+    l = t(40808);
+   function d(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Als de Text Input een tekstueel label heeft, gebruik dan een ', (0, i.jsx)(n.code, { children: 'label' }), '-element en koppel het met de attributen ', (0, i.jsx)(n.code, { children: 'for' }), ' en ', (0, i.jsx)(n.code, { children: 'id' }), ' aan de Text Input.'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="voorbeeld">Ik ben een Text Input</label> <input type="text" id="voorbeeld" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Op die manier is het label expliciet gekoppeld met de Text Input, ook als het invoerveld niet binnen een ', (0, i.jsx)(n.code, { children: 'label' }), '-element genest is.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Koppel instructies en foutmeldingen ook aan de Text Input met het ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), ' attribuut:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<p id="error">Invoerfout: Het veld Naam is niet ingevuld. Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name error" autocomplete="name" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Geef zowel in tekst als in code aan of een veld verplicht ingevuld moet worden. In code doe je dit doe je met het ', (0, i.jsx)(n.code, { children: 'required' }), ' attribuut of met het ', (0, i.jsx)(n.code, { children: 'aria-required' }), ' attribuut.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/toegankelijke-naam/', children: 'Toegankelijke naam label' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/foutmeldingen/', children: 'Toegankelijke foutmeldingen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/voorkom-fouten/verplichte-velden/', children: 'Toegankelijke verplichte velden' }) }), '\n'] })] });
+   }
+   function u(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat instructies en foutmeldingen die nodig zijn om te begrijpen wat er van de bezoeker verwacht wordt op een logische plek staan en gekoppeld zijn aan het formulierveld.' }), '\n', (0, i.jsx)(n.p, { children: 'De meest gebruiksvriendelijke plek voor instructies en foutmeldingen is tussen het label en het invoerveld. Als instructies \xf3nder het veld staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.' }), '\n', (0, i.jsxs)(n.p, { children: ['Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna instructies t\xfassen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Koppel instructies en foutmeldingen daarom ook aan het formulierveld met ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), '. Op die manier wordt de beschrijving voorgelezen wanneer de toetsenbordfocus op het formulierveld staat.'] }), '\n', (0, i.jsx)(n.p, { children: 'Voorbeeld:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<p id="error">Invoerfout: Het veld Naam is niet ingevuld. Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name error" autocomplete="name" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke instructies en beschrijvingen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/foutmeldingen/', children: 'Toegankelijke foutmeldingen' }) }), '\n'] })] });
+   }
+   function h(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Help bezoekers met het invullen van persoonlijke gegevens door gebruik te maken van het ', (0, i.jsx)(n.code, { children: 'autocomplete' }), '-attribuut.'] }), '\n', (0, i.jsx)(n.p, { children: 'Voorbeeld:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" type="text" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['In de HTML specificatie vind je een ', (0, i.jsx)(n.a, { href: 'https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofilling-form-controls:-the-autocomplete-attribute.', children: 'lijst van mogelijke autocomplete-waarden' })] }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik altijd een ', (0, i.jsx)(n.code, { children: 'autocomplete' }), '-attribuut wanneer je persoonlijke informatie van bezoekers uitvraagt waar een geschikte autocomplete-waarde voor bestaat, ook als de waarde van het ', (0, i.jsx)(n.code, { children: 'type' }), '-attribuut (zoals ', (0, i.jsx)(n.code, { children: 'email' }), ' ) al voldoende duidelijk lijkt. Dit helpt browsers de juiste gegevens aan de bezoeker voor te stellen.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   function j(e = {}) {
+    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(h, { ...e }) }) : h(e);
+   }
+   var p = t(55552);
+   function m(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg voor voldoende kleurcontrast tussen de kleuren van componenten die visueel betekenis hebben en hun directe omgeving. Zorg ervoor dat dit minimaal 3:1, maar het liefst hoger.' }), '\n', (0, i.jsx)(n.p, { children: 'Kleuren die van toepassing zijn bij de Text Input zijn bijvoorbeeld:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: ['De rand van de Text Input, zodat de bezoeker weet waar het veld is. Vergeet hierbij ook niet de kleur van de rand wanneer de Text Input ', (0, i.jsx)(n.code, { children: 'invalid' }), ' is.'] }), '\n', (0, i.jsx)(n.li, { children: 'De focusrand om de Text Input.' }), '\n'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
+   }
+   var g = t(83329),
+    v = t(83672),
+    k = t(34257),
+    x = t(25872);
+   function f(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Plaats de toetsenbordfocus niet standaard op het eerste veld in een formulier. Hierdoor slaan bezoekers die gebruik maken van een screenreader mogelijk belangrijke informatie over.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/tabindex/', children: 'Tabindex in formulieren' }) }), '\n'] })] });
+   }
+   var b = t(99805),
+    y = t(92233);
+   function w(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat de tekstuele naam van het element voor formulierinvoer voorkomt in de toegankelijke naam.' }), '\n', (0, i.jsxs)(n.p, { children: ['De meestgebruikte manier is door een ', (0, i.jsx)(n.code, { children: 'label' }), '-element te koppelen aan het element voor formulierinvoer, met de attributen ', (0, i.jsx)(n.code, { children: 'for' }), ' en ', (0, i.jsx)(n.code, { children: 'id' }), '.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Pas op met het gebruik van ', (0, i.jsx)(n.code, { children: 'aria-label' }), ' om een naam te geven aan een element voor formulierinvoer. Een ', (0, i.jsx)(n.code, { children: 'aria-label' }), ' overschrijft de toegankelijke naam van een element. Daardoor kan de toegankelijke naam anders zijn dan de zichtbare naam. Bezoekers die gebruik maken van spraakgestuurde navigatie kunnen hierdoor moeite hebben om het element voor formulierinvoer te activeren.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/zichtbare-naam/', children: 'De zichtbare naam moet overeenkomen met de toegankelijke naam' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   var z = t(24838),
+    A = t(4964);
+   function D(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat het doel (of de naam) en instructies bij een invoerveld beschikbaar zijn en blijven.' }), '\n', (0, i.jsxs)(n.p, { children: ['Maak daarom nooit all\xe9\xe9n gebruik van een placeholdertekst voor de naam of instructies van een invoerveld. Plaats de instructies ook niet in een tooltip, maar boven of onder het veld en koppel het aan het element voor formulierinvoer met ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'Als een icon een alternatief is voor een tekstueel label bij een element voor formulierinvoer, moet het duidelijk zijn wat de gebruiker moet doen of moet invullen.' }), '\n', (0, i.jsx)(n.p, { children: 'Bijvoorbeeld:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: 'Een icon van een slot in een inlogformulier vraagt om een wachtwoord.' }), '\n', (0, i.jsx)(n.li, { children: 'Een icon van een vergrootglas in een zoekfunctie vraagt om een zoekterm.' }), '\n', (0, i.jsx)(n.li, { children: 'Een icon van een telefoonhoorn in een contactformulier vraagt om een telefoonnummer.' }), '\n'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/', children: 'Toegankelijke labels in formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke beschrijvingen en instructies in formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: 'richtlijnen/formulieren/placeholders/', children: 'Placeholders in formulieren' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/', children: 'Richtlijnen voor iconen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/', children: 'Functionele afbeeldingen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   function T(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Vraag de bezoeker niet om meerdere keren dezelfde gegevens in te vullen. Maak in plaats daarvan gebruik van de eerder ingevulde informatie. Als je er zeker van wil zijn dat de informatie correct is, toon dan de eerder ingevulde informatie en laat de bezoeker controleren of de gegevens kloppen.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/vragen/voorkom-dubbel-werk/', children: 'Vraag niet meerdere keren dezelfde informatie uit' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   function N(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat de Text Input een toegankelijke naam en een kloppende rol heeft.' }), '\n', (0, i.jsxs)(n.p, { children: ['Zorg dat de Text Input een kloppende rol heeft, door het HTML-element ', (0, i.jsx)(n.code, { children: 'input' }), ' te gebruiken met het relevante ', (0, i.jsx)(n.code, { children: 'type' }), ' attribuut. Dit zijn de opties:'] }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: ['De types ', (0, i.jsx)(n.code, { children: 'text' }), ', ', (0, i.jsx)(n.code, { children: 'email' }), ', ', (0, i.jsx)(n.code, { children: 'tel' }), ' en ', (0, i.jsx)(n.code, { children: 'url' }), ' geven de rol ', (0, i.jsx)(n.code, { children: 'textbox' }), '.'] }), '\n', (0, i.jsxs)(n.li, { children: ['Het type ', (0, i.jsx)(n.code, { children: 'search' }), ' geeft de rol ', (0, i.jsx)(n.code, { children: 'searchbox' }), '.'] }), '\n'] }), '\n', (0, i.jsxs)(n.p, { children: ['Daarnaast moeten de staat en eigenschappen waar bezoekers zelf invloed op hebben (zoals in- of uitgeklapt, of ', (0, i.jsx)(n.code, { children: 'checked' }), ') en de ingevulde waarde (', (0, i.jsx)(n.code, { children: 'value' }), ') beschikbaar zijn voor hulpsoftware.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen/', children: 'Wanneer kies je welk element in een formulier?' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   var R = t(68413),
+    _ = t(44720),
+    S = t(36599),
+    L = t(70957),
+    I = t(31820),
+    F = t(80221),
+    M = t(8584);
+   const V = [
+     {
+      title: 'Het label van de Text Input is gekoppeld aan de Text Input en het is duidelijk of de Text Input verplicht ingevuld moet worden.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
+      },
+      tags: ['developer'],
+     },
+     {
+      title: 'Instructies bij de Text Input staan op een logische plek',
+      sc: '1.3.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(u, { ...e }) }) : u(e);
+      },
+      tags: ['developer', 'designer', 'contentmaker'],
+     },
+     { title: 'Een Text Input die om persoonlijke gegevens vraagt heeft het juiste autocomplete-attribuut.', sc: '1.3.5', status: '', component: j, tags: ['developer'] },
+     { title: 'Kleur is niet de enige manier om informatie over een Text Input weer te geven.', sc: '1.4.1', status: '', component: _.Ay, tags: ['designer'] },
+     { title: 'Placeholderteksten hebben een contrastratio van minimaal 4,5:1 met de achtergrond. ', sc: '1.4.3', status: '', component: v.Ay, tags: ['designer'] },
+     { title: 'De bezoeker kan de Text Input tot 400% vergroten zonder verlies van functionaliteit of informatie.', sc: '1.4.10', status: '', component: p.Ay, tags: ['developer'] },
+     {
+      title: 'Niet-tekstuele informatie heeft een contrastratio van minimaal 3:1 met de achtergrond.',
+      sc: '1.4.11',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(m, { ...e }) }) : m(e);
+      },
+      tags: ['designer'],
+     },
+     { title: 'De Text Input veroorzaakt geen toetsenbordval.', sc: '2.1.2', status: '', component: S.Ay, tags: ['developer'] },
+     {
+      title: 'De Text Input staat op een logische plek in de focusvolgorde.',
+      sc: '2.4.3',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(f, { ...e }) }) : f(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'De Text Input heeft een beschrijvend label en toegankelijke naam.', sc: '2.4.6', status: '', component: b.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Als de Text Input de toetsenbordfocus krijgt, is het niet volledig bedekt door andere inhoud.', sc: '2.4.11', status: '', component: M.Ay, tags: ['developer'] },
+     {
+      title: 'De zichtbare naam van de Text Input is gelijk aan de toegankelijke naam.',
+      sc: '2.5.3',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(w, { ...e }) }) : w(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'De Text Input heeft een minimale grootte van 24 bij 24 pixels.', sc: '2.5.8', status: '', component: L.Ay, tags: ['developer', 'designer'] },
+     { title: 'Als de placeholdertekst en invoertekst in een andere taal is dan de taal van de pagina, dan heeft het `input`-element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: z.Ay, tags: ['developer'] },
+     { title: 'Als de Text Input focus krijgt, gebeurt er niets onverwachts.', sc: '3.2.1', status: '', component: I.Ay, tags: ['developer'] },
+     { title: 'Bij het invullen van de Text Input gebeurt er niets onverwachts.', sc: '3.2.2', status: '', component: F.Ay, tags: ['developer', 'designer'] },
+     { title: 'Text Inputs met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.', sc: '3.2.4', status: '', component: A.Ay, tags: ['developer', 'designer'] },
+     {
+      title: 'De naam en instructies over het invullen van de Text Input staan niet alleen in de placeholder',
+      sc: '3.3.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(D, { ...e }) }) : D(e);
+      },
+      tags: ['developer', 'designer'],
+     },
+     {
+      title: 'Gebruikers hoeven dezelfde gegevens niet opnieuw in te voeren als deze al eerder in hetzelfde proces zijn ingevuld of beschikbaar zijn in het systeem.',
+      sc: '3.3.7',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(T, { ...e }) }) : T(e);
+      },
+      tags: ['designer', 'contentmaker'],
+     },
+     {
+      title: 'De Text Input heeft een toegankelijke naam en rol, en de eigenschappen en waarde zijn beschikbaar voor hulpsoftware. ',
+      sc: '4.1.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(N, { ...e }) }) : N(e);
+      },
+      tags: ['designer', 'contentmaker'],
+     },
+    ],
+    C = [
+     { title: 'Het is mogelijk om autocomplete in te stellen bij de Text Input.', sc: '1.3.5', status: '', component: j, tags: ['developer'] },
+     { title: 'Placeholderteksten blijven leesbaar wanneer de tekstafstand vergroot wordt.', sc: '1.4.12', status: '', component: g.Ay, tags: ['developer'] },
+     { title: 'Als je de tekst van placeholders vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: k.Ay, tags: ['developer'] },
+     { title: 'Je kunt de Text Input bereiken en bedienen met het toetsenbord.', sc: '2.1.1', status: '', component: x.Ay, tags: ['developer'] },
+     { title: 'Als de Text Input de toetsenbordfocus krijgt is de focus zichtbaar.', sc: '2.4.7', status: '', component: y.Ay, tags: ['developer'] },
+     { title: 'Het is mogelijk de Text Input een toegankelijke naam en de juiste rol te geven en het `value`-attribuut is aanwezig en instelbaar.', sc: '4.1.2', status: '', component: R.Ay, tags: ['developer'] },
+    ];
+   var E = t(85825);
+   const Z = { title: 'Text Input', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Text Input', pagination_label: 'Text Input', description: 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.', slug: '/text-input', keywords: ['editable textfield', 'form', 'form control', 'formulier', 'formulierelement', 'formfield', 'form field', 'form input', 'formulier-stap', 'input', 'input field', 'inputfield', 'invoerveld', 'invulveld', 'tekstveld', 'tekstinvoer', 'text box', 'textbox', 'text entry', 'text field', 'text input', 'textinput', 'veld'] },
+    H = void 0,
+    B = {},
+    O = 'Text Input',
+    P = 'Biedt de mogelijkheid om \xe9\xe9n regel aan tekens in te vullen.',
+    G = 200,
+    $ = s.find((e) => e.number === G),
+    U = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...c.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function W(e) {
+    const n = { h2: 'h2', h3: 'h3', ...(0, o.R)(), ...e.components },
+     { Checklist: t, ChecklistItem: r } = n;
+    return (t || K('Checklist', !0), r || K('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, i.jsx)(E.Fc, { component: $, headingLevel: 1, description: P }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: V.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(c.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: C.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(E.VK, { component: $, headingLevel: 3 }), '\n', (0, i.jsx)(E.$9, { component: $, headingLevel: 2 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(E.mu, { component: $, headingLevel: 3 })] }));
+   }
+   function X(e = {}) {
+    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(W, { ...e }) }) : W(e);
+   }
+   function K(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
+   }
+  },
   36599(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -409,28 +404,14 @@
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.' });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  38286(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => s });
-   var r = t(86070),
-    i = t(18439);
-   function o(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Een icon kan uit een afbeelding van een letter bestaan (bijvoorbeeld B voor dikgedrukte tekst). Gebruik geen icons van letters om woorden of teksten te maken.' }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/afbeelding-als-button/', children: 'Afbeeldingen als buttons' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/', children: 'Tekst in een afbeelding' }) }), '\n'] })] });
-   }
-   function s(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
-   }
-  },
   40808(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -438,7 +419,7 @@
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Hier beschrijven we waar de component al aan voldoet en wat je zelf nog moet doen om de component toegankelijk \xe9n gebruiksvriendelijk in te zetten.' });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
@@ -459,7 +440,7 @@
   },
   44720(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -467,7 +448,7 @@
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.' }), '\n', (0, r.jsx)(n.p, { children: 'Bijvoorbeeld: geef een foutmelding niet alleen aan met een rood randje, maar ook in tekst en eventueel met een icoontje dat een foutmelding markeert.' })] });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
@@ -495,42 +476,14 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
    }
   },
-  60577(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => s });
-   var r = t(86070),
-    i = t(18439);
-   function o(e) {
-    const n = { a: 'a', code: 'code', p: 'p', ...(0, i.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.' }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik hiervoor het ', (0, r.jsx)(n.code, { children: 'click' }), '-event. Dit is een apparaatonafhankelijke methode. Zo activeert de actie niet als de bezoeker de aanwijzer indrukt, maar pas als de bezoeker de aanwijzer weer loslaat. De bezoeker kan de aanwijzer nog verplaatsen naar buiten het element om de actie weer ongedaan te maken.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Voor knoppen waarbij het essentieel is dat ze activeren bij het indrukken (', (0, r.jsx)(n.code, { children: 'keydown' }), ') geldt een uitzondering. Dit geldt bijvoorbeeld voor knoppen in een ', (0, r.jsx)(n.a, { href: 'https://en.wikipedia.org/wiki/Virtual_keyboard', children: 'schermtoetsenbord' }), ' en pianotoetsen.'] })] });
-   }
-   function s(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
-   }
-  },
-  61640(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => s });
-   var r = t(86070),
-    i = t(18439);
-   function o(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', strong: 'strong', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Zorg ervoor dat het element een minimale grootte heeft van 44 bij 44 pixels. Definieer hoogte en de breedte niet in ', (0, r.jsx)(n.code, { children: 'px' }), ', maar gebruik een relatieve waarde als ', (0, r.jsx)(n.code, { children: 'em' }), ' of ', (0, r.jsx)(n.code, { children: 'rem' }), '. Anders kan het element niet goed meegroeien wanneer de gebruiker inzoomt.'] }), '\n', (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.strong, { children: 'Let op' }), ': Links in zinnen en paragrafen van tekst zijn uitgezonderd. De grootte van het aanwijsgebied is hier afhankelijk van de grootte van de linktekst zelf.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/', children: 'Maak aanklikbare formuliervelden groot genoeg' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/interactieve-elementen/', children: 'Reserveer ruimte tussen interactieve elementen' }) }), '\n'] })] });
-   }
-   function s(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
-   }
-  },
   67970(e, n, t) {
    'use strict';
-   t.d(n, { D: () => a });
+   t.d(n, { D: () => c });
    var r = t(46447),
     i = t(13526),
     o = t(33062),
     s = t(86070);
-   const a = ({ state: e }) => {
+   const c = ({ state: e }) => {
     const n = (0, o.fX)(e);
     return (0, s.jsx)(r.KE, { className: (0, i.A)('estafette-badge', n && `estafette-badge--${n}`), children: e });
    };
@@ -551,7 +504,7 @@
   },
   70957(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -559,7 +512,7 @@
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
     return (0, r.jsx)(n.p, { children: 'Aanwijsbare elementen op een pagina zijn groot genoeg om makkelijk aan te wijzen met bijvoorbeeld een muis of vinger. Het aan te wijzen gebied is ten minste 24 bij 24 pixels groot.' });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
@@ -573,7 +526,7 @@
   },
   80221(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => a, RM: () => o });
+   t.d(n, { Ay: () => c, RM: () => o });
    var r = t(86070),
     i = t(18439);
    const o = [];
@@ -581,7 +534,7 @@
     const n = { p: 'p', strong: 'strong', ...(0, i.R)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Verras een gebruiker niet, maar maak functionaliteit voorspelbaar en daardoor goed te begrijpen.' }), '\n', (0, r.jsx)(n.p, { children: 'Als een gebruiker een formuliercomponent of -optie selecteert of een invoerveld invult met het toetsenbord of met de muis, veroorzaakt dit niet automatisch een contextwijziging.' }), '\n', (0, r.jsx)(n.p, { children: 'Bij een contextwijziging verandert onverwacht de indeling, informatie of functionaliteit. Bijvoorbeeld door het direct versturen van een formulier na het kiezen van een select-optie, waarna de gebruiker naar een andere pagina wordt doorgestuurd.' }), '\n', (0, r.jsxs)(n.p, { children: [(0, r.jsx)(n.strong, { children: 'Let op' }), ': een verandering van ', (0, r.jsx)(n.strong, { children: 'context' }), ' is niet hetzelfde als verandering van ', (0, r.jsx)(n.strong, { children: 'content' }), '.\nDirect aanpassen van de zoekresultaten, waarbij de gebruiker op dezelfde pagina blijft, valt niet onder dit succescriterium.'] })] });
    }
-   function a(e = {}) {
+   function c(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
@@ -616,18 +569,18 @@
   },
   85825(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => x, $9: () => f, mu: () => k, Fc: () => b });
+   t.d(n, { VK: () => k, $9: () => f, mu: () => x, Fc: () => b });
    var r = t(29181),
     i = t(13526),
     o = t(1292),
     s = t(90495),
-    a = t(54565);
-   function c(e) {
-    return (0, a.c)() ? e.children() : null;
+    c = t(54565);
+   function a(e) {
+    return (0, c.c)() ? e.children() : null;
    }
    var l = t(86070);
    const d = ({ checked: e, unchecked: n }) =>
-    (0, l.jsx)(c, {
+    (0, l.jsx)(a, {
      children: () => {
       const r = t(83294).V6;
       return (0, l.jsx)(r, {
@@ -649,12 +602,12 @@
    const m = ({ children: e }) => (0, l.jsx)('ul', { className: 'task-list', children: e }),
     g = ({ checked: e, children: n, title: t, description: r, headingLevel: o = 3 }) => (0, l.jsxs)('li', { className: (0, i.A)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.A)('task-list-item__marker', e && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: e ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), e && (0, l.jsx)(p.UJe, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [t ? (0, l.jsx)(j.DZ, { appearance: 'utrecht-heading-3', level: o, children: t }) : null, r, n] })] });
    var v = t(33062);
-   const x = ({ component: e, headingLevel: n }) => {
+   const k = ({ component: e, headingLevel: n }) => {
      const t = e && e.projects.filter((e) => v.f4.includes(e.id)),
       o = t && v.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
      return e && (0, l.jsx)(r.If, { sections: o.map((t) => ({ className: (0, i.A)('definition-of-done', t && `definition-of-done--${(0, v.fX)(t.title)}`), headingLevel: n, expanded: !1, label: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', body: t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(m, { children: t.tasks.map(({ checked: e, name: t, id: r }) => (0, l.jsx)(g, { headingLevel: n + 1, checked: e, title: t, description: (0, v.qZ)(r) }, r)) }), (0, l.jsx)(r.fz, { children: (0, l.jsxs)(r.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) })) });
     },
-    k = ({ component: e, headingLevel: n }) => {
+    x = ({ component: e, headingLevel: n }) => {
      const t = e && e.projects.filter((e) => !v.f4.includes(e.id));
      return e && t.length
       ? (0, l.jsx)(s.AC, {
@@ -669,12 +622,12 @@
           .map((e) => {
            const t = e.tasks.find(({ name: e }) => 'Naam' === e),
             i = t?.value,
-            a = (0, v.Pv)(e),
-            c = new Map([
+            c = (0, v.Pv)(e),
+            a = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${i} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
             ]),
-            u = e.tasks.filter(({ name: e, value: n }) => c.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
+            u = e.tasks.filter(({ name: e, value: n }) => a.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
            return (0, l.jsx)(
             s.Zp,
             {
@@ -683,19 +636,19 @@
               children: [
                (0, l.jsx)(r.DZ, { level: n, children: e.title.replace(/^Community/i, '') }),
                (0, l.jsxs)(r.fz, { children: [(0, l.jsx)(d, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(r.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               (u.length > 0 || a.length > 0) && (0, l.jsx)(r.DZ, { level: n + 1, children: 'Snel aan de slag' }),
+               (u.length > 0 || c.length > 0) && (0, l.jsx)(r.DZ, { level: n + 1, children: 'Snel aan de slag' }),
                u.length > 0 &&
                 (0, l.jsx)(l.Fragment, {
                  children: (0, l.jsx)(r.dk, {
                   links: u
-                   .filter((e) => !!c.get(e.name))
+                   .filter((e) => !!a.get(e.name))
                    .map((e) => {
-                    const n = c.get(e.name);
+                    const n = a.get(e.name);
                     return { children: n.desciption, icon: (0, l.jsx)(o.r, { brand: n.brand }), href: e.value };
                    }),
                  }),
                 }),
-               a.length > 0 && (0, l.jsx)(l.Fragment, { children: a.map(({ frameworkName: e, tasks: t }) => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.DZ, { level: n + 2, children: [i, ' in ', e] }), (0, l.jsx)(r.dk, { links: t.map((e) => ({ children: e.description, icon: (0, l.jsx)(o.r, { brand: e.brand }), href: e.value })) })] })) }),
+               c.length > 0 && (0, l.jsx)(l.Fragment, { children: c.map(({ frameworkName: e, tasks: t }) => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(r.DZ, { level: n + 2, children: [i, ' in ', e] }), (0, l.jsx)(r.dk, { links: t.map((e) => ({ children: e.description, icon: (0, l.jsx)(o.r, { brand: e.brand }), href: e.value })) })] })) }),
               ],
              }),
             },
@@ -717,15 +670,15 @@
   },
   90495(e, n, t) {
    'use strict';
-   t.d(n, { AC: () => l, Fu: () => s, Wu: () => a, Zp: () => c });
+   t.d(n, { AC: () => l, Fu: () => s, Wu: () => c, Zp: () => a });
    var r = t(46447),
     i = t(13526),
     o = t(86070);
    const s = ({ background: e, children: n, className: t, ...r }) => (0, o.jsx)('div', { className: (0, i.A)('card__illustration', e && `card__illustration--${e}`, t), ...r, children: n }),
-    a = (e) => (0, o.jsx)('div', { className: 'card__content', ...e }),
-    c = ({ href: e, appearance: n, className: t, component: s = 'div', background: a, children: c }) => {
+    c = (e) => (0, o.jsx)('div', { className: 'card__content', ...e }),
+    a = ({ href: e, appearance: n, className: t, component: s = 'div', background: c, children: a }) => {
      const l = (e) => ('article' === s ? (0, o.jsx)('article', { ...e }) : 'section' === s ? (0, o.jsx)('section', { ...e }) : (0, o.jsx)('div', { ...e })),
-      d = (0, o.jsx)(l, { className: (0, i.A)('cardgroup__card', a && 'cardgroup__card--light-purple', `cardgroup__card--${n}`, t), children: c });
+      d = (0, o.jsx)(l, { className: (0, i.A)('cardgroup__card', c && 'cardgroup__card--light-purple', `cardgroup__card--${n}`, t), children: a });
      return e ? (0, o.jsx)(r.N_, { href: e, boxContent: !0, className: 'cardgroup__link', children: d }) : d;
     },
     l = ({ appearance: e = 'medium', children: n, className: t }) => (0, o.jsx)('div', { className: (0, i.A)('cardgroup', `cardgroup--${e}`, t), children: n });

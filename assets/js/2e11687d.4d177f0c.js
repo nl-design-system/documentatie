@@ -14,147 +14,6 @@
    const l = { figma: (0, d.jsx)(i.A, {}), github: (0, d.jsx)(s.A, {}), npm: (0, d.jsx)(a.A, {}), storybook: (0, d.jsx)(o.A, {}) },
     h = ({ brand: e }) => (0, d.jsx)(r.In, { children: l[e] || (0, d.jsx)(c.A, {}) });
   },
-  9173(e, t, n) {
-   'use strict';
-   (n.r(t), n.d(t, { assets: () => R, component: () => G, contentTitle: () => C, default: () => E, description: () => F, frontMatter: () => B, issueNumber: () => V, metadata: () => r, title: () => M, toc: () => O }));
-   const r = JSON.parse('{"id":"componenten/data-badge/index","title":"Data Badge","description":"Label met extra informatie, zoals een categorie of een eigenschap.","source":"@site/docs/componenten/data-badge/index.mdx","sourceDirName":"componenten/data-badge","slug":"/data-badge","permalink":"/data-badge","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/data-badge/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Data Badge","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Data Badge","pagination_label":"Data Badge","description":"Label met extra informatie, zoals een categorie of een eigenschap.","slug":"/data-badge","keywords":["annotatie","annotation","badge","categorie","category","categorie aanduiding","categoriseren","categorize","characteristic","chip","data","data badge","data tag","eigenschap","etiket","etiquette","filteren op","filter tag","index","index term","info","info tag","informatiebadge","label","metadata","pill","property","stamp","status","status badge","sticker","tag","tagging","tagged","term","time"]},"sidebar":"componenten","previous":{"title":"Contact Timeline","permalink":"/contact-timeline"},"next":{"title":"Data Summary","permalink":"/data-summary"}}');
-   var i = n(86070),
-    s = n(18439),
-    a = n(36059),
-    o = (n(11333), n(17045)),
-    c = n(19776),
-    d = n(40808);
-   function l(e) {
-    const t = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(t.p, { children: 'Als de Data Badge een icoon bevat, of een icoon bevat dat extra informatie geeft naast de tekst, dan heeft dit icoon een goed tekstalternatief, zodat de informatie ook beschikbaar is voor mensen die de de afbeelding niet kunnen zien.' }), '\n', (0, i.jsxs)(t.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder een icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor het icoon is niet nodig als er tekst in beeld is die hetzelfde betekent. Een ', (0, i.jsx)(t.code, { children: 'img' }), ' kan dan een leeg ', (0, i.jsx)(t.code, { children: 'alt' }), '-attribuut krijgen (', (0, i.jsx)(t.code, { children: 'alt=""' }), ').'] }), '\n', (0, i.jsx)(t.p, { children: 'Is het toch gewenst om alleen een icoon of een extra informatief icoon te tonen, hou dan rekening met het volgende.' }), '\n', (0, i.jsxs)(t.p, { children: ['Een ', (0, i.jsx)(t.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen.'] }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-html', children: '<span><img src="klok.svg" alt="tijd" />12.45</span>\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(t.ul, { children: ['\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/', children: 'Informatieve afbeeldingen' }) }), '\n'] })] });
-   }
-   function h(e = {}) {
-    const { wrapper: t } = { ...(0, s.R)(), ...e.components };
-    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(l, { ...e }) }) : l(e);
-   }
-   function u(e) {
-    const t = { a: 'a', code: 'code', p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(t.p, { children: ['Gebruik zoveel mogelijk semantische HTML, bijvoorbeeld het ', (0, i.jsxs)(t.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time', children: [(0, i.jsx)(t.code, { children: 'time' }), '-element'] }), ' als het om een datum of een tijd gaat.'] }), '\n', (0, i.jsxs)(t.p, { children: ['De toevoeging van de Data Badge mag niet verwarrend zijn voor gebruikers van ', (0, i.jsx)(t.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), '. De Data Badge geeft informatie die onmiddelijk duidelijk is voor ziende gebruikers. Dit voordeel hebben screenreadergebruikers niet.'] })] });
-   }
-   function j(e = {}) {
-    const { wrapper: t } = { ...(0, s.R)(), ...e.components };
-    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(u, { ...e }) }) : u(e);
-   }
-   function g(e) {
-    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(t.p, { children: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken. Rood staat bijvoorbeeld voor gevaar, groen bijvoorbeeld voor het feit dat iets is gelukt. Veel mensen kunnen kleur niet of niet goed waarnemen. Zorg daarom dat er een tweede manier is om de betekenis te herkennen.' }), '\n', (0, i.jsx)(t.p, { children: "Het gebruik van duidelijke teksten is hierbij een goede oplossing. Bijvoorbeeld een rode Data Badge met de tekst 'fout', en een groene Data Badge met de tekst 'gelukt'." }), '\n', (0, i.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(t.ul, { children: ['\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/doel/', children: 'Gebruik kleur met een doel' }) }), '\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
-   }
-   function m(e = {}) {
-    const { wrapper: t } = { ...(0, s.R)(), ...e.components };
-    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(g, { ...e }) }) : g(e);
-   }
-   var p = n(83329),
-    y = n(83672),
-    k = n(34257),
-    b = n(66706),
-    x = n(24838),
-    v = n(90495),
-    f = n(46447),
-    w = n(65947),
-    D = n(1292),
-    A = n(72401),
-    z = n(85825),
-    N = n(17889),
-    _ = n(12013);
-   function S(e) {
-    const t = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(t.header, { children: (0, i.jsx)(t.h1, { id: 'gebruik-data-badge', children: 'Gebruik Data Badge' }) }), '\n', (0, i.jsx)(t.h2, { id: 'css', children: 'CSS' }), '\n', (0, i.jsx)(t.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(t.p, { children: (0, i.jsx)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-css', children: '@nl-design-system-candidate/data-badge-css' }) }), '\n', (0, i.jsxs)(t.p, { children: ['Gebruik de ', (0, i.jsx)(t.code, { children: 'nl-data-badge' }), ' class name op een ', (0, i.jsx)(t.code, { children: 'span' }), ' element:'] }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-html', children: '<span class="nl-data-badge">42</span>\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/data-badge-css\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/data-badge-css@1/dist/data-badge.css"\n/>\n' }) }), '\n', (0, i.jsxs)(t.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, i.jsx)(t.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/data-badge-css/dist/data-badge.css" />\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/data-badge-css/data-badge.css";\n' }) }), '\n', (0, i.jsx)(t.h2, { id: 'react', children: 'React' }), '\n', (0, i.jsx)(t.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(t.p, { children: (0, i.jsx)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-react', children: '@nl-design-system-candidate/data-badge-react' }) }), '\n', (0, i.jsx)(t.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/data-badge-react\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-jsx', children: 'import { DataBadge } from "@nl-design-system-candidate/data-badge-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <DataBadge>42</DataBadge>\n      </body>\n    </html>\n  );\n};\n' }) })] });
-   }
-   function T(e = {}) {
-    const { wrapper: t } = { ...(0, s.R)(), ...e.components };
-    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(S, { ...e }) }) : S(e);
-   }
-   var L = n(38445);
-   const B = { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'category', 'categorie aanduiding', 'categoriseren', 'categorize', 'characteristic', 'chip', 'data', 'data badge', 'data tag', 'eigenschap', 'etiket', 'etiquette', 'filteren op', 'filter tag', 'index', 'index term', 'info', 'info tag', 'informatiebadge', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagging', 'tagged', 'term', 'time'] },
-    C = void 0,
-    R = {},
-    M = 'Data Badge',
-    F = 'Label met extra informatie, zoals een categorie of een eigenschap.',
-    V = 94,
-    G = a.find((e) => e.number === V),
-    O = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...c.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...o.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function H(e) {
-    const t = { h2: 'h2', h3: 'h3', ...(0, s.R)(), ...e.components },
-     { Checklist: n } = t;
-    return (
-     n ||
-      (function (e, t) {
-       throw new Error('Expected ' + (t ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('Checklist', !0),
-     (0, i.jsxs)(i.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, i.jsx)(z.Fc, { component: G, headingLevel: 1, description: F }),
-       '\n',
-       (0, i.jsx)(A.e, { component: G }),
-       '\n',
-       (0, i.jsx)(v.Zp, { className: 'implementation-card', children: (0, i.jsxs)(v.Wu, { children: [(0, i.jsx)(w.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(f.dk, { children: [(0, i.jsxs)(f.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-18012', children: [(0, i.jsx)(D.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(f.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13781-18012', children: [(0, i.jsx)(D.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(w.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(f.dk, { children: [(0, i.jsxs)(f.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-data-badge--documentatie', children: [(0, i.jsx)(D.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(f.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/data-badge--documentatie', children: [(0, i.jsx)(D.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(w.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(f.dk, { children: [(0, i.jsxs)(f.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-css', children: [(0, i.jsx)(D.r, { brand: 'npm' }), ' @nl-design-system-candidate/data-badge-css'] }), (0, i.jsxs)(f.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-react', children: [(0, i.jsx)(D.r, { brand: 'npm' }), ' @nl-design-system-candidate/data-badge-react'] }), (0, i.jsxs)(f.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-tokens', children: [(0, i.jsx)(D.r, { brand: 'npm' }), ' @nl-design-system-candidate/data-badge-tokens'] })] })] }) }),
-       '\n',
-       (0, i.jsx)(t.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
-       '\n',
-       (0, i.jsx)(d.Ay, {}),
-       '\n',
-       (0, i.jsx)(t.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
-       '\n',
-       (0, i.jsx)(c.Ay, {}),
-       '\n',
-       (0, i.jsx)(n, {
-        headingLevel: '4',
-        items: [
-         { title: 'Als er in de Data Badge een informatief icoon staat, is er een goed tekstalternatief.', sc: '1.1.1', status: '', component: (0, i.jsx)(h, {}), tags: ['developer', 'contentmaker'] },
-         { title: 'Gebruik zoveel mogelijk semantische HTML voor de Data Badge.', sc: '1.3.1', status: '', component: (0, i.jsx)(j, {}), tags: ['developer'] },
-         { title: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken.', sc: '1.4.1', status: '', component: (0, i.jsx)(m, {}), tags: ['designer'] },
-         { title: 'De tekst van de Data Badge heeft voldoende contrast tegen de achtergrond.', sc: '1.4.3', status: '', component: (0, i.jsx)(y.Ay, {}), tags: ['designer'] },
-         { title: 'Gebruik geen afbeeldingen van tekst voor de Data Badge.', sc: '1.4.5', status: '', component: (0, i.jsx)(b.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Als een tekst in de Data Badge in een andere taal is dan de taal van de pagina, dan heeft de Data Badge een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: (0, i.jsx)(x.Ay, {}), tags: ['contentmaker', 'developer'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
-       '\n',
-       (0, i.jsx)(o.Ay, {}),
-       '\n',
-       (0, i.jsx)(n, {
-        headingLevel: '4',
-        items: [
-         { title: 'Als je de tekst van de Data Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, i.jsx)(k.Ay, {}), tags: ['developer'] },
-         { title: 'Als je de tekstafstand van de Data Badge vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, i.jsx)(p.Ay, {}), tags: ['developer'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(_.o, { omitH1: !0, headingLevel: 2, children: (0, i.jsx)(T, {}) }),
-       '\n',
-       (0, i.jsx)(t.h2, { id: 'design-tokens', children: 'Design tokens' }),
-       '\n',
-       (0, i.jsx)(N.B, { tokens: L }),
-       '\n',
-       (0, i.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, i.jsx)(z.VK, { component: G, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(z.$9, { component: G, headingLevel: 2 }),
-       '\n',
-       (0, i.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, i.jsx)(z.mu, { component: G, headingLevel: 3 }),
-      ],
-     })
-    );
-   }
-   function E(e = {}) {
-    const { wrapper: t } = { ...(0, s.R)(), ...e.components };
-    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(H, { ...e }) }) : H(e);
-   }
-  },
   12013(e, t, n) {
    'use strict';
    n.d(t, { o: () => l });
@@ -414,6 +273,110 @@
    function i() {
     const [e, t] = (0, r.useState)();
     return ((0, r.useEffect)(() => t(!0), []), e);
+   }
+  },
+  59268(e, t, n) {
+   'use strict';
+   (n.r(t), n.d(t, { assets: () => B, component: () => V, contentTitle: () => C, default: () => H, description: () => M, frontMatter: () => L, issueNumber: () => F, metadata: () => r, title: () => R, toc: () => G }));
+   const r = JSON.parse('{"id":"componenten/data-badge/index","title":"Data Badge","description":"Label met extra informatie, zoals een categorie of een eigenschap.","source":"@site/docs/componenten/data-badge/index.mdx","sourceDirName":"componenten/data-badge","slug":"/data-badge","permalink":"/data-badge","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/data-badge/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Data Badge","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Data Badge","pagination_label":"Data Badge","description":"Label met extra informatie, zoals een categorie of een eigenschap.","slug":"/data-badge","keywords":["annotatie","annotation","badge","categorie","category","categorie aanduiding","categoriseren","categorize","characteristic","chip","data","data badge","data tag","eigenschap","etiket","etiquette","filteren op","filter tag","index","index term","info","info tag","informatiebadge","label","metadata","pill","property","stamp","status","status badge","sticker","tag","tagging","tagged","term","time"]},"sidebar":"componenten","previous":{"title":"Contact Timeline","permalink":"/contact-timeline"},"next":{"title":"Data Summary","permalink":"/data-summary"}}');
+   var i = n(86070),
+    s = n(18439),
+    a = n(36059),
+    o = (n(11333), n(17045)),
+    c = n(19776),
+    d = n(40808);
+   function l(e) {
+    const t = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(t.p, { children: 'Als de Data Badge een icoon bevat, of een icoon bevat dat extra informatie geeft naast de tekst, dan heeft dit icoon een goed tekstalternatief, zodat de informatie ook beschikbaar is voor mensen die de de afbeelding niet kunnen zien.' }), '\n', (0, i.jsxs)(t.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder een icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor het icoon is niet nodig als er tekst in beeld is die hetzelfde betekent. Een ', (0, i.jsx)(t.code, { children: 'img' }), ' kan dan een leeg ', (0, i.jsx)(t.code, { children: 'alt' }), '-attribuut krijgen (', (0, i.jsx)(t.code, { children: 'alt=""' }), ').'] }), '\n', (0, i.jsx)(t.p, { children: 'Is het toch gewenst om alleen een icoon of een extra informatief icoon te tonen, hou dan rekening met het volgende.' }), '\n', (0, i.jsxs)(t.p, { children: ['Een ', (0, i.jsx)(t.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen.'] }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-html', children: '<span><img src="klok.svg" alt="tijd" />12.45</span>\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(t.ul, { children: ['\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/', children: 'Informatieve afbeeldingen' }) }), '\n'] })] });
+   }
+   function h(e) {
+    const t = { a: 'a', code: 'code', p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(t.p, { children: ['Gebruik zoveel mogelijk semantische HTML, bijvoorbeeld het ', (0, i.jsxs)(t.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time', children: [(0, i.jsx)(t.code, { children: 'time' }), '-element'] }), ' als het om een datum of een tijd gaat.'] }), '\n', (0, i.jsxs)(t.p, { children: ['De toevoeging van de Data Badge mag niet verwarrend zijn voor gebruikers van ', (0, i.jsx)(t.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), '. De Data Badge geeft informatie die onmiddelijk duidelijk is voor ziende gebruikers. Dit voordeel hebben screenreadergebruikers niet.'] })] });
+   }
+   function u(e) {
+    const t = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(t.p, { children: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken. Rood staat bijvoorbeeld voor gevaar, groen bijvoorbeeld voor het feit dat iets is gelukt. Veel mensen kunnen kleur niet of niet goed waarnemen. Zorg daarom dat er een tweede manier is om de betekenis te herkennen.' }), '\n', (0, i.jsx)(t.p, { children: "Het gebruik van duidelijke teksten is hierbij een goede oplossing. Bijvoorbeeld een rode Data Badge met de tekst 'fout', en een groene Data Badge met de tekst 'gelukt'." }), '\n', (0, i.jsx)(t.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(t.ul, { children: ['\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/stijl/kleuren/doel/', children: 'Gebruik kleur met een doel' }) }), '\n', (0, i.jsx)(t.li, { children: (0, i.jsx)(t.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
+   }
+   var j = n(83329),
+    g = n(83672),
+    m = n(34257),
+    p = n(66706),
+    y = n(24838);
+   const k = [
+     {
+      title: 'Als er in de Data Badge een informatief icoon staat, is er een goed tekstalternatief.',
+      sc: '1.1.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: t } = { ...(0, s.R)(), ...e.components };
+       return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(l, { ...e }) }) : l(e);
+      },
+      tags: ['developer', 'contentmaker'],
+     },
+     {
+      title: 'Gebruik zoveel mogelijk semantische HTML voor de Data Badge.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: t } = { ...(0, s.R)(), ...e.components };
+       return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(h, { ...e }) }) : h(e);
+      },
+      tags: ['developer'],
+     },
+     {
+      title: 'Gebruik niet alleen kleur om de betekenis van de Data Badge duidelijk te maken.',
+      sc: '1.4.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: t } = { ...(0, s.R)(), ...e.components };
+       return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(u, { ...e }) }) : u(e);
+      },
+      tags: ['designer'],
+     },
+     { title: 'De tekst van de Data Badge heeft voldoende contrast tegen de achtergrond.', sc: '1.4.3', status: '', component: g.Ay, tags: ['designer'] },
+     { title: 'Gebruik geen afbeeldingen van tekst voor de Data Badge.', sc: '1.4.5', status: '', component: p.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Als een tekst in de Data Badge in een andere taal is dan de taal van de pagina, dan heeft de Data Badge een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: y.Ay, tags: ['contentmaker', 'developer'] },
+    ],
+    b = [
+     { title: 'Als je de tekst van de Data Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: m.Ay, tags: ['developer'] },
+     { title: 'Als je de tekstafstand van de Data Badge vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: j.Ay, tags: ['developer'] },
+    ];
+   var x = n(90495),
+    v = n(46447),
+    f = n(65947),
+    w = n(1292),
+    D = n(72401),
+    A = n(85825),
+    z = n(17889),
+    N = n(12013);
+   function _(e) {
+    const t = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(t.header, { children: (0, i.jsx)(t.h1, { id: 'gebruik-data-badge', children: 'Gebruik Data Badge' }) }), '\n', (0, i.jsx)(t.h2, { id: 'css', children: 'CSS' }), '\n', (0, i.jsx)(t.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(t.p, { children: (0, i.jsx)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-css', children: '@nl-design-system-candidate/data-badge-css' }) }), '\n', (0, i.jsxs)(t.p, { children: ['Gebruik de ', (0, i.jsx)(t.code, { children: 'nl-data-badge' }), ' class name op een ', (0, i.jsx)(t.code, { children: 'span' }), ' element:'] }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-html', children: '<span class="nl-data-badge">42</span>\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/data-badge-css\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/data-badge-css@1/dist/data-badge.css"\n/>\n' }) }), '\n', (0, i.jsxs)(t.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, i.jsx)(t.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/data-badge-css/dist/data-badge.css" />\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/data-badge-css/data-badge.css";\n' }) }), '\n', (0, i.jsx)(t.h2, { id: 'react', children: 'React' }), '\n', (0, i.jsx)(t.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, i.jsx)(t.p, { children: (0, i.jsx)(t.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-react', children: '@nl-design-system-candidate/data-badge-react' }) }), '\n', (0, i.jsx)(t.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/data-badge-react\n' }) }), '\n', (0, i.jsx)(t.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, i.jsx)(t.pre, { children: (0, i.jsx)(t.code, { className: 'language-jsx', children: 'import { DataBadge } from "@nl-design-system-candidate/data-badge-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <DataBadge>42</DataBadge>\n      </body>\n    </html>\n  );\n};\n' }) })] });
+   }
+   function S(e = {}) {
+    const { wrapper: t } = { ...(0, s.R)(), ...e.components };
+    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(_, { ...e }) }) : _(e);
+   }
+   var T = n(38445);
+   const L = { title: 'Data Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Data Badge', pagination_label: 'Data Badge', description: 'Label met extra informatie, zoals een categorie of een eigenschap.', slug: '/data-badge', keywords: ['annotatie', 'annotation', 'badge', 'categorie', 'category', 'categorie aanduiding', 'categoriseren', 'categorize', 'characteristic', 'chip', 'data', 'data badge', 'data tag', 'eigenschap', 'etiket', 'etiquette', 'filteren op', 'filter tag', 'index', 'index term', 'info', 'info tag', 'informatiebadge', 'label', 'metadata', 'pill', 'property', 'stamp', 'status', 'status badge', 'sticker', 'tag', 'tagging', 'tagged', 'term', 'time'] },
+    C = void 0,
+    B = {},
+    R = 'Data Badge',
+    M = 'Label met extra informatie, zoals een categorie of een eigenschap.',
+    F = 94,
+    V = a.find((e) => e.number === F),
+    G = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...c.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...o.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function O(e) {
+    const t = { h2: 'h2', h3: 'h3', ...(0, s.R)(), ...e.components },
+     { Checklist: n, ChecklistItem: r } = t;
+    return (n || E('Checklist', !0), r || E('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(A.Fc, { component: V, headingLevel: 1, description: M }), '\n', (0, i.jsx)(D.e, { component: V }), '\n', (0, i.jsx)(x.Zp, { className: 'implementation-card', children: (0, i.jsxs)(x.Wu, { children: [(0, i.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(v.dk, { children: [(0, i.jsxs)(v.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13781-18012', children: [(0, i.jsx)(w.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(v.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13781-18012', children: [(0, i.jsx)(w.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(v.dk, { children: [(0, i.jsxs)(v.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-data-badge--documentatie', children: [(0, i.jsx)(w.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(v.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/data-badge--documentatie', children: [(0, i.jsx)(w.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(f.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(v.dk, { children: [(0, i.jsxs)(v.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-css', children: [(0, i.jsx)(w.r, { brand: 'npm' }), ' @nl-design-system-candidate/data-badge-css'] }), (0, i.jsxs)(v.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-react', children: [(0, i.jsx)(w.r, { brand: 'npm' }), ' @nl-design-system-candidate/data-badge-react'] }), (0, i.jsxs)(v.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-tokens', children: [(0, i.jsx)(w.r, { brand: 'npm' }), ' @nl-design-system-candidate/data-badge-tokens'] })] })] }) }), '\n', (0, i.jsx)(t.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(d.Ay, {}), '\n', (0, i.jsx)(t.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(c.Ay, {}), '\n', (0, i.jsx)(n, { headingLevel: '4', children: k.map(({ component: e, ...t }) => (0, i.jsx)(r, { ...t, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(o.Ay, {}), '\n', (0, i.jsx)(n, { headingLevel: '4', children: b.map(({ component: e, ...t }) => (0, i.jsx)(r, { ...t, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(N.o, { omitH1: !0, headingLevel: 2, children: (0, i.jsx)(S, {}) }), '\n', (0, i.jsx)(t.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, i.jsx)(z.B, { tokens: T }), '\n', (0, i.jsx)(t.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(A.VK, { component: V, headingLevel: 3 }), '\n', (0, i.jsx)(A.$9, { component: V, headingLevel: 2 }), '\n', (0, i.jsx)(t.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(A.mu, { component: V, headingLevel: 3 })] }));
+   }
+   function H(e = {}) {
+    const { wrapper: t } = { ...(0, s.R)(), ...e.components };
+    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(O, { ...e }) }) : O(e);
+   }
+   function E(e, t) {
+    throw new Error('Expected ' + (t ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
    }
   },
   66706(e, t, n) {

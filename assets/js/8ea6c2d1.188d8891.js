@@ -465,9 +465,9 @@
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(u.p, { level: n, suffix: s && (0, l.jsx)(h.D, { state: s }), children: e.title }), (0, l.jsx)(r.fz, { lead: !0, children: t })] });
     };
   },
-  90069(e, n, t) {
+  88722(e, n, t) {
    'use strict';
-   (t.r(n), t.d(n, { assets: () => T, component: () => B, contentTitle: () => S, default: () => O, description: () => C, frontMatter: () => D, issueNumber: () => R, metadata: () => r, title: () => L, toc: () => M }));
+   (t.r(n), t.d(n, { assets: () => L, component: () => M, contentTitle: () => T, default: () => V, description: () => R, frontMatter: () => S, issueNumber: () => B, metadata: () => r, title: () => C, toc: () => F }));
    const r = JSON.parse('{"id":"componenten/number-badge/index","title":"Number Badge","description":"Toont een klein label dat de aandacht trekt en informeert over een aantal.","source":"@site/docs/componenten/number-badge/index.mdx","sourceDirName":"componenten/number-badge","slug":"/number-badge","permalink":"/number-badge","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/number-badge/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Number Badge","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Number Badge","pagination_label":"Number Badge","description":"Toont een klein label dat de aandacht trekt en informeert over een aantal.","slug":"/number-badge","keywords":["aantal","badge","count badge","counter badge","cijfer","chip","counter","label","number","number badge","number label","number marker","notification badge","notification label","pill","stamp","tag"]},"sidebar":"componenten","previous":{"title":"Notification Banner","permalink":"/notification-banner"},"next":{"title":"Number Input","permalink":"/number-input"}}');
    var s = t(86070),
     i = t(18439),
@@ -479,114 +479,66 @@
     const n = { a: 'a', code: 'code', p: 'p', pre: 'pre', ...(0, i.R)(), ...e.components };
     return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(n.p, { children: ['Visueel heeft de Number Badge een betekenis die duidelijk is. Deze betekenis moet ook duidelijk zijn voor gebruikers van ', (0, s.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), ". Het volstaat daarom meestal niet als de Number Badge alleen een cijfer toevoegt aan bijvoorbeeld een tekst 'Inbox'. De visuele layout maakt namelijk duidelijk dat het om nieuwe berichten gaat."] }), '\n', (0, s.jsx)(n.p, { children: 'Geeft dan extra tekstuele context, bijvoorbeeld met een visueel verborgen tekst:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<a href="/inbox">\n  Inbox\n  <data class="utrecht-number-badge" value="4">4</data>\n  <span class="screenreader-only">nieuwe berichten</span>\n</a>\n' }) })] });
    }
-   function h(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(d, { ...e }) }) : d(e);
-   }
-   var u = t(83329),
-    j = t(83672),
-    m = t(34257),
-    g = t(66706),
-    p = t(24838),
-    b = t(90495),
-    y = t(46447),
-    k = t(65947),
-    v = t(1292),
-    x = t(72401),
-    f = t(85825),
-    w = t(17889),
-    N = t(12013);
-   function A(e) {
+   var h = t(83329),
+    u = t(83672),
+    j = t(34257),
+    m = t(66706),
+    g = t(24838);
+   const p = [
+     { title: 'De tekst van de Number Badge heeft voldoende contrast tegen de achtergrond.', sc: '1.4.3', status: '', component: u.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Gebruik geen afbeeldingen van tekst voor de Number Badge.', sc: '1.4.5', status: '', component: m.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Als een tekst en/of het aria-label in de Number Badge in een andere taal is dan de taal van de pagina, dan heeft de Number Badge een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: g.Ay, tags: ['developer', 'contentmaker'] },
+    ],
+    b = [
+     {
+      title: 'Geef de informatie uit de Number Badge ook door aan screenreaders',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(d, { ...e }) }) : d(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'Als je de tekst van de Number Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: j.Ay, tags: ['developer'] },
+     { title: 'Als je de tekstafstand van de Number Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: h.Ay, tags: ['developer'] },
+    ];
+   var y = t(90495),
+    k = t(46447),
+    v = t(65947),
+    x = t(1292),
+    f = t(72401),
+    w = t(85825),
+    N = t(17889),
+    A = t(12013);
+   function _(e) {
     const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', p: 'p', pre: 'pre', ...(0, i.R)(), ...e.components };
     return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.header, { children: (0, s.jsx)(n.h1, { id: 'gebruik-number-badge', children: 'Gebruik Number Badge' }) }), '\n', (0, s.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, s.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, s.jsx)(n.p, { children: (0, s.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: '@nl-design-system-candidate/number-badge-css' }) }), '\n', (0, s.jsxs)(n.p, { children: ['Gebruik de ', (0, s.jsx)(n.code, { children: 'nl-number-badge' }), ' class name op een ', (0, s.jsx)(n.code, { children: 'span' }), ' element:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<span class="nl-number-badge">42</span>\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/number-badge-css\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/number-badge-css@1/dist/number-badge.css"\n/>\n' }) }), '\n', (0, s.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, s.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/number-badge-css/dist/number-badge.css" />\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/number-badge-css/number-badge.css";\n' }) }), '\n', (0, s.jsx)(n.h3, { id: 'number-badge-als-data-component', children: 'Number badge als data component' }), '\n', (0, s.jsxs)(n.p, { children: ['Je kunt er ook voor kiezen om number badge op een ', (0, s.jsx)(n.code, { children: 'data' }), ' element te gebruiken:'] }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<data class="nl-number-badge" value="42">42</data>\n' }) }), '\n', (0, s.jsx)(n.h3, { id: 'number-badge-met-een-toegankelijk-label', children: 'Number badge met een toegankelijk label' }), '\n', (0, s.jsx)(n.p, { children: 'Om te zorgen dat de betekenis van een number badge duidelijk is wanneer de pagina wordt voorgelezeg kun je ook een onzichtbaar label toevoegen:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-html', children: '<data value="42" class="nl-number-badge">\n  <span hidden aria-hidden="true" class="nl-number-badge__visible-label">42</span>\n  <span class="nl-number-badge__hidden-label">42 ongelezen berichten</span>\n</data>\n' }) }), '\n', (0, s.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, s.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, s.jsx)(n.p, { children: (0, s.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: '@nl-design-system-candidate/number-badge-react' }) }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/number-badge-react\n' }) }), '\n', (0, s.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, s.jsx)(n.pre, { children: (0, s.jsx)(n.code, { className: 'language-jsx', children: 'import { NumberBadge } from "@nl-design-system-candidate/number-badge-react";\n\nexport const MyComponent = () => <NumberBadge value="42" />;\n' }) })] });
    }
-   function _(e = {}) {
+   function z(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(A, { ...e }) }) : A(e);
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(_, { ...e }) }) : _(e);
    }
-   var z = t(23071);
-   const D = { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Toont een klein label dat de aandacht trekt en informeert over een aantal.', slug: '/number-badge', keywords: ['aantal', 'badge', 'count badge', 'counter badge', 'cijfer', 'chip', 'counter', 'label', 'number', 'number badge', 'number label', 'number marker', 'notification badge', 'notification label', 'pill', 'stamp', 'tag'] },
-    S = void 0,
-    T = {},
-    L = 'Number Badge',
-    C = 'Toont een klein label dat de aandacht trekt en informeert over een aantal.',
-    R = 7,
-    B = o.find((e) => e.number === R),
-    M = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...c.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'Number badge als data component', id: 'number-badge-als-data-component', level: 3 }, { value: 'Number badge met een toegankelijk label', id: 'number-badge-met-een-toegankelijk-label', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function F(e) {
+   var D = t(23071);
+   const S = { title: 'Number Badge', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Number Badge', pagination_label: 'Number Badge', description: 'Toont een klein label dat de aandacht trekt en informeert over een aantal.', slug: '/number-badge', keywords: ['aantal', 'badge', 'count badge', 'counter badge', 'cijfer', 'chip', 'counter', 'label', 'number', 'number badge', 'number label', 'number marker', 'notification badge', 'notification label', 'pill', 'stamp', 'tag'] },
+    T = void 0,
+    L = {},
+    C = 'Number Badge',
+    R = 'Toont een klein label dat de aandacht trekt en informeert over een aantal.',
+    B = 7,
+    M = o.find((e) => e.number === B),
+    F = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...c.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'Number badge als data component', id: 'number-badge-als-data-component', level: 3 }, { value: 'Number badge met een toegankelijk label', id: 'number-badge-met-een-toegankelijk-label', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function O(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, i.R)(), ...e.components },
-     { Checklist: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('Checklist', !0),
-     (0, s.jsxs)(s.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, s.jsx)(f.Fc, { component: B, headingLevel: 1, description: C }),
-       '\n',
-       (0, s.jsx)(x.e, { component: B }),
-       '\n',
-       (0, s.jsx)(b.Zp, { className: 'implementation-card', children: (0, s.jsxs)(b.Wu, { children: [(0, s.jsx)(k.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271', children: [(0, s.jsx)(v.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, s.jsxs)(y.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=1233-4271', children: [(0, s.jsx)(v.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, s.jsx)(k.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-number-badge--documentatie', children: [(0, s.jsx)(v.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, s.jsxs)(y.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/number-badge--documentatie', children: [(0, s.jsx)(v.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, s.jsx)(k.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, s.jsxs)(y.dk, { children: [(0, s.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: [(0, s.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-css'] }), (0, s.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: [(0, s.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-react'] }), (0, s.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-tokens', children: [(0, s.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-tokens'] })] })] }) }),
-       '\n',
-       (0, s.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
-       '\n',
-       (0, s.jsx)(l.Ay, {}),
-       '\n',
-       (0, s.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
-       '\n',
-       (0, s.jsx)(a.Ay, {}),
-       '\n',
-       (0, s.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'De tekst van de Number Badge heeft voldoende contrast tegen de achtergrond.', sc: '1.4.3', status: '', component: (0, s.jsx)(j.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Gebruik geen afbeeldingen van tekst voor de Number Badge.', sc: '1.4.5', status: '', component: (0, s.jsx)(g.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Als een tekst en/of het aria-label in de Number Badge in een andere taal is dan de taal van de pagina, dan heeft de Number Badge een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: (0, s.jsx)(p.Ay, {}), tags: ['developer', 'contentmaker'] },
-        ],
-       }),
-       '\n',
-       (0, s.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
-       '\n',
-       (0, s.jsx)(c.Ay, {}),
-       '\n',
-       (0, s.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'Geef de informatie uit de Number Badge ook door aan screenreaders', sc: '1.3.1', status: '', component: (0, s.jsx)(h, {}), tags: ['developer'] },
-         { title: 'Als je de tekst van de Number Badge vergroot tot 200% blijft de tekst in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, s.jsx)(m.Ay, {}), tags: ['developer'] },
-         { title: 'Als je de tekstafstand van de Number Badge vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, s.jsx)(u.Ay, {}), tags: ['developer'] },
-        ],
-       }),
-       '\n',
-       (0, s.jsx)(N.o, { omitH1: !0, headingLevel: 3, children: (0, s.jsx)(_, {}) }),
-       '\n',
-       (0, s.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }),
-       '\n',
-       (0, s.jsx)(w.B, { tokens: z }),
-       '\n',
-       (0, s.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, s.jsx)(f.VK, { component: B, headingLevel: 3 }),
-       '\n',
-       (0, s.jsx)(f.$9, { component: B, headingLevel: 2 }),
-       '\n',
-       (0, s.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, s.jsx)(f.mu, { component: B, headingLevel: 3 }),
-      ],
-     })
-    );
+     { Checklist: t, ChecklistItem: r } = n;
+    return (t || H('Checklist', !0), r || H('ChecklistItem', !0), (0, s.jsxs)(s.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, s.jsx)(w.Fc, { component: M, headingLevel: 1, description: R }), '\n', (0, s.jsx)(f.e, { component: M }), '\n', (0, s.jsx)(y.Zp, { className: 'implementation-card', children: (0, s.jsxs)(y.Wu, { children: [(0, s.jsx)(v.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, s.jsxs)(k.dk, { children: [(0, s.jsxs)(k.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1233-4271', children: [(0, s.jsx)(x.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, s.jsxs)(k.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=1233-4271', children: [(0, s.jsx)(x.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, s.jsx)(v.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, s.jsxs)(k.dk, { children: [(0, s.jsxs)(k.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-number-badge--documentatie', children: [(0, s.jsx)(x.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, s.jsxs)(k.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/number-badge--documentatie', children: [(0, s.jsx)(x.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, s.jsx)(v.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, s.jsxs)(k.dk, { children: [(0, s.jsxs)(k.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: [(0, s.jsx)(x.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-css'] }), (0, s.jsxs)(k.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: [(0, s.jsx)(x.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-react'] }), (0, s.jsxs)(k.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-tokens', children: [(0, s.jsx)(x.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-tokens'] })] })] }) }), '\n', (0, s.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, s.jsx)(l.Ay, {}), '\n', (0, s.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, s.jsx)(a.Ay, {}), '\n', (0, s.jsx)(t, { headingLevel: '4', children: p.map(({ component: e, ...n }) => (0, s.jsx)(r, { ...n, children: (0, s.jsx)(e, {}) })) }), '\n', (0, s.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, s.jsx)(c.Ay, {}), '\n', (0, s.jsx)(t, { headingLevel: '4', children: b.map(({ component: e, ...n }) => (0, s.jsx)(r, { ...n, children: (0, s.jsx)(e, {}) })) }), '\n', (0, s.jsx)(A.o, { omitH1: !0, headingLevel: 3, children: (0, s.jsx)(z, {}) }), '\n', (0, s.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, s.jsx)(N.B, { tokens: D }), '\n', (0, s.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, s.jsx)(w.VK, { component: M, headingLevel: 3 }), '\n', (0, s.jsx)(w.$9, { component: M, headingLevel: 2 }), '\n', (0, s.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, s.jsx)(w.mu, { component: M, headingLevel: 3 })] }));
    }
-   function O(e = {}) {
+   function V(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(F, { ...e }) }) : F(e);
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(O, { ...e }) }) : O(e);
+   }
+   function H(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
    }
   },
   90495(e, n, t) {

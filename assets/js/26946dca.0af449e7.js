@@ -120,6 +120,81 @@
     });
    }
   },
+  19316(e, n, t) {
+   'use strict';
+   (t.r(n), t.d(n, { assets: () => C, component: () => R, contentTitle: () => S, default: () => O, description: () => L, frontMatter: () => D, issueNumber: () => M, metadata: () => r, title: () => T, toc: () => F }));
+   const r = JSON.parse('{"id":"componenten/code-block/index","title":"Code Block","description":"Blok met \xe9\xe9n of meerdere regels computercode.","source":"@site/docs/componenten/code-block/index.mdx","sourceDirName":"componenten/code-block","slug":"/code-block","permalink":"/code-block","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code-block/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Code Block","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Code Block","pagination_label":"Code Block","description":"Blok met \xe9\xe9n of meerdere regels computercode.","slug":"/code-block","keywords":["code","code block","code blok","code container","code example","code fences","code memo","code snippet","code snippet blok","code voorbeeld","code wrapper","codeblock","codepen","copy paste blok","css voorbeeld","html voorbeeld","inline code","monospace","monotype","pre","snippet","source code","source doc","toepassing","voorbeeld blok","Code Snippet","Code Blok","Code Example"]},"sidebar":"componenten","previous":{"title":"Code","permalink":"/code"},"next":{"title":"Color Sample","permalink":"/color-sample"}}');
+   var o = t(86070),
+    s = t(18439),
+    c = t(36059),
+    i = (t(31074), t(17045)),
+    a = t(19776),
+    l = t(40808);
+   function d(e) {
+    const n = { a: 'a', code: 'code', p: 'p', pre: 'pre', strong: 'strong', ...(0, s.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsxs)(n.p, { children: ['Gebruik voor tekst gemarkeerd als opgemaakte code semantische HTML. In het geval van de component Code Block is dat het HTML-element ', (0, o.jsx)(n.code, { children: 'code' }), '\nin combinatie met ', (0, o.jsx)(n.code, { children: 'pre' }), '.'] }), '\n', (0, o.jsx)(n.p, { children: 'Dus niet zo:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '\x3c!-- Foute code, niet gebruiken --\x3e\n<pre>\n  <div class="code-block">\n    @use "./mixin";\n    \n    .nl-heading-1 {\n    @include mixin.nl-heading-1;\n    }\n  </div>\n</pre>\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Maar zo:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<pre>\n  <code class="code-block">\n    @use "./mixin";\n  \n    .nl-heading-1 {\n    @include mixin.nl-heading-1;\n    }\n  </code>\n</pre>\n' }) }), '\n', (0, o.jsxs)(n.p, { children: [(0, o.jsx)(n.strong, { children: 'Let op' }), ': Het element ', (0, o.jsx)(n.code, { children: '<code>' }), ' wordt op het moment van schrijven (2025) nog niet ondersteund door alle hulpsoftware. Dat betekent niet dat bezoekers die bijvoorbeeld een ', (0, o.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' gebruiken de inhoud van het element niet horen, alleen dat er op dit moment niet wordt aangegeven dat het om een ', (0, o.jsx)(n.code, { children: 'code' }), ' element gaat.'] })] });
+   }
+   var h = t(35437),
+    u = t(83329),
+    j = t(83672),
+    p = t(34257);
+   const m = [
+     { title: 'De code is niet alleen herkenbaar aan een andere achtergrondkleur.', sc: '1.4.1', status: '', component: t(44720).Ay, tags: ['designer', 'contentmaker', 'developer'] },
+     { title: 'De code heeft voldoende contrast met de achtergrondkleur', sc: '1.4.3', status: '', component: j.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Wanneer de achtergrondkleur van het Code Block anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.', sc: '1.4.11', status: '', component: h.Ay, tags: ['designer', 'contentmaker'] },
+    ],
+    g = [
+     {
+      title: 'De juiste HTML-elementen voor de Code Block component zijn toegepast.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(d, { ...e }) }) : d(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar.', sc: '1.4.4', status: '', component: p.Ay, tags: ['developer'] },
+     { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: u.Ay, tags: ['developer'] },
+    ];
+   var k = t(90495),
+    y = t(46447),
+    b = t(65947),
+    v = t(1292),
+    x = t(72401),
+    f = t(85825),
+    w = t(17889),
+    A = t(12013);
+   function _(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.header, { children: (0, o.jsx)(n.h1, { id: 'gebruik-code-block', children: 'Gebruik Code Block' }) }), '\n', (0, o.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, o.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, o.jsx)(n.p, { children: (0, o.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css', children: '@nl-design-system-candidate/code-block-css' }) }), '\n', (0, o.jsxs)(n.p, { children: ['Gebruik de ', (0, o.jsx)(n.code, { children: 'nl-code-block' }), ' class name op een ', (0, o.jsx)(n.code, { children: 'pre' }), ' element met de ', (0, o.jsx)(n.code, { children: 'nl-code-block__code' }), ' class name op een ', (0, o.jsx)(n.code, { children: 'code' }), ' element:'] }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<pre dir="ltr" translate="no" class="nl-code-block">\n  <code class="nl-code-block__code">function addNumbers(a, b) {\n  return a + b;\n}</code>\n</pre>\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-block-css\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-block-css@1/dist/code-block.css"\n/>\n' }) }), '\n', (0, o.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, o.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-block-css/dist/code-block.css" />\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/code-block-css/code-block.css";\n' }) }), '\n', (0, o.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, o.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, o.jsx)(n.p, { children: (0, o.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react', children: '@nl-design-system-candidate/code-block-react' }) }), '\n', (0, o.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-block-react\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-jsx', children: 'import { CodeBlock } from "@nl-design-system-candidate/code-block-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        function addNumbers(a, b) {\n          return a + b;\n        }\n      </body>\n    </html>\n  );\n};\n' }) })] });
+   }
+   function z(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(_, { ...e }) }) : _(e);
+   }
+   var N = t(89019);
+   const D = { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Blok met \xe9\xe9n of meerdere regels computercode.', slug: '/code-block', keywords: ['code', 'code block', 'code blok', 'code container', 'code example', 'code fences', 'code memo', 'code snippet', 'code snippet blok', 'code voorbeeld', 'code wrapper', 'codeblock', 'codepen', 'copy paste blok', 'css voorbeeld', 'html voorbeeld', 'inline code', 'monospace', 'monotype', 'pre', 'snippet', 'source code', 'source doc', 'toepassing', 'voorbeeld blok', 'Code Snippet', 'Code Blok', 'Code Example'] },
+    S = void 0,
+    C = {},
+    T = 'Code Block',
+    L = 'Blok met \xe9\xe9n of meerdere regels computercode.',
+    M = 329,
+    R = c.find((e) => e.number === M),
+    F = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...i.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function B(e) {
+    const n = { a: 'a', admonition: 'admonition', h2: 'h2', h3: 'h3', p: 'p', ...(0, s.R)(), ...e.components },
+     { Checklist: t, ChecklistItem: r } = n;
+    return (t || V('Checklist', !0), r || V('ChecklistItem', !0), (0, o.jsxs)(o.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, o.jsx)(f.Fc, { component: R, headingLevel: 1, description: L }), '\n', (0, o.jsx)(x.e, { component: R }), '\n', (0, o.jsx)(n.admonition, { title: 'Tip', type: 'tip', children: (0, o.jsxs)(n.p, { children: ['Gebruik de ', (0, o.jsx)(n.a, { href: '/code/', children: 'Code' }), ' component als de code in een regel met andere tekst staat.'] }) }), '\n', (0, o.jsx)(k.Zp, { className: 'implementation-card', children: (0, o.jsxs)(k.Wu, { children: [(0, o.jsx)(b.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, o.jsxs)(y.dk, { children: [(0, o.jsxs)(y.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-3553', children: [(0, o.jsx)(v.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, o.jsxs)(y.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-3553', children: [(0, o.jsx)(v.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, o.jsx)(b.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, o.jsxs)(y.dk, { children: [(0, o.jsxs)(y.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-code-block--documentatie', children: [(0, o.jsx)(v.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, o.jsxs)(y.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/code-block--documentatie', children: [(0, o.jsx)(v.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, o.jsx)(b.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, o.jsxs)(y.dk, { children: [(0, o.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css', children: [(0, o.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-block-css'] }), (0, o.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react', children: [(0, o.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-block-react'] }), (0, o.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-tokens', children: [(0, o.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-block-tokens'] })] })] }) }), '\n', (0, o.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, o.jsx)(l.Ay, {}), '\n', (0, o.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, o.jsx)(a.Ay, {}), '\n', (0, o.jsx)(t, { headingLevel: '4', children: m.map(({ component: e, ...n }) => (0, o.jsx)(r, { ...n, children: (0, o.jsx)(e, {}) })) }), '\n', (0, o.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, o.jsx)(i.Ay, {}), '\n', (0, o.jsx)(t, { headingLevel: '4', children: g.map(({ component: e, ...n }) => (0, o.jsx)(r, { ...n, children: (0, o.jsx)(e, {}) })) }), '\n', (0, o.jsx)(A.o, { omitH1: !0, headingLevel: 2, children: (0, o.jsx)(z, {}) }), '\n', (0, o.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, o.jsx)(w.B, { tokens: N }), '\n', (0, o.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, o.jsx)(f.VK, { component: R, headingLevel: 3 }), '\n', (0, o.jsx)(f.$9, { component: R, headingLevel: 2 }), '\n', (0, o.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, o.jsx)(f.mu, { component: R, headingLevel: 3 })] }));
+   }
+   function O(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(B, { ...e }) }) : B(e);
+   }
+   function V(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
+   }
+  },
   19776(e, n, t) {
    'use strict';
    t.d(n, { Ay: () => i, RM: () => s });
@@ -288,132 +363,6 @@
    function o() {
     const [e, n] = (0, r.useState)();
     return ((0, r.useEffect)(() => n(!0), []), e);
-   }
-  },
-  64600(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => C, component: () => R, contentTitle: () => S, default: () => O, description: () => L, frontMatter: () => D, issueNumber: () => M, metadata: () => r, title: () => T, toc: () => F }));
-   const r = JSON.parse('{"id":"componenten/code-block/index","title":"Code Block","description":"Blok met \xe9\xe9n of meerdere regels computercode.","source":"@site/docs/componenten/code-block/index.mdx","sourceDirName":"componenten/code-block","slug":"/code-block","permalink":"/code-block","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code-block/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Code Block","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Code Block","pagination_label":"Code Block","description":"Blok met \xe9\xe9n of meerdere regels computercode.","slug":"/code-block","keywords":["code","code block","code blok","code container","code example","code fences","code memo","code snippet","code snippet blok","code voorbeeld","code wrapper","codeblock","codepen","copy paste blok","css voorbeeld","html voorbeeld","inline code","monospace","monotype","pre","snippet","source code","source doc","toepassing","voorbeeld blok","Code Snippet","Code Blok","Code Example"]},"sidebar":"componenten","previous":{"title":"Code","permalink":"/code"},"next":{"title":"Color Sample","permalink":"/color-sample"}}');
-   var o = t(86070),
-    s = t(18439),
-    c = t(36059),
-    i = (t(31074), t(17045)),
-    a = t(19776),
-    l = t(40808);
-   function d(e) {
-    const n = { a: 'a', code: 'code', p: 'p', pre: 'pre', strong: 'strong', ...(0, s.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsxs)(n.p, { children: ['Gebruik voor tekst gemarkeerd als opgemaakte code semantische HTML. In het geval van de component Code Block is dat het HTML-element ', (0, o.jsx)(n.code, { children: 'code' }), '\nin combinatie met ', (0, o.jsx)(n.code, { children: 'pre' }), '.'] }), '\n', (0, o.jsx)(n.p, { children: 'Dus niet zo:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '\x3c!-- Foute code, niet gebruiken --\x3e\n<pre>\n  <div class="code-block">\n    @use "./mixin";\n    \n    .nl-heading-1 {\n    @include mixin.nl-heading-1;\n    }\n  </div>\n</pre>\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Maar zo:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<pre>\n  <code class="code-block">\n    @use "./mixin";\n  \n    .nl-heading-1 {\n    @include mixin.nl-heading-1;\n    }\n  </code>\n</pre>\n' }) }), '\n', (0, o.jsxs)(n.p, { children: [(0, o.jsx)(n.strong, { children: 'Let op' }), ': Het element ', (0, o.jsx)(n.code, { children: '<code>' }), ' wordt op het moment van schrijven (2025) nog niet ondersteund door alle hulpsoftware. Dat betekent niet dat bezoekers die bijvoorbeeld een ', (0, o.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' gebruiken de inhoud van het element niet horen, alleen dat er op dit moment niet wordt aangegeven dat het om een ', (0, o.jsx)(n.code, { children: 'code' }), ' element gaat.'] })] });
-   }
-   function h(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(d, { ...e }) }) : d(e);
-   }
-   var u = t(35437),
-    j = t(83329),
-    p = t(83672),
-    m = t(34257),
-    g = t(44720),
-    k = t(90495),
-    y = t(46447),
-    b = t(65947),
-    v = t(1292),
-    x = t(72401),
-    f = t(85825),
-    w = t(17889),
-    A = t(12013);
-   function _(e) {
-    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.header, { children: (0, o.jsx)(n.h1, { id: 'gebruik-code-block', children: 'Gebruik Code Block' }) }), '\n', (0, o.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, o.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, o.jsx)(n.p, { children: (0, o.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css', children: '@nl-design-system-candidate/code-block-css' }) }), '\n', (0, o.jsxs)(n.p, { children: ['Gebruik de ', (0, o.jsx)(n.code, { children: 'nl-code-block' }), ' class name op een ', (0, o.jsx)(n.code, { children: 'pre' }), ' element met de ', (0, o.jsx)(n.code, { children: 'nl-code-block__code' }), ' class name op een ', (0, o.jsx)(n.code, { children: 'code' }), ' element:'] }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<pre dir="ltr" translate="no" class="nl-code-block">\n  <code class="nl-code-block__code">function addNumbers(a, b) {\n  return a + b;\n}</code>\n</pre>\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-block-css\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-block-css@1/dist/code-block.css"\n/>\n' }) }), '\n', (0, o.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, o.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/code-block-css/dist/code-block.css" />\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/code-block-css/code-block.css";\n' }) }), '\n', (0, o.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, o.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, o.jsx)(n.p, { children: (0, o.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react', children: '@nl-design-system-candidate/code-block-react' }) }), '\n', (0, o.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/code-block-react\n' }) }), '\n', (0, o.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-jsx', children: 'import { CodeBlock } from "@nl-design-system-candidate/code-block-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        function addNumbers(a, b) {\n          return a + b;\n        }\n      </body>\n    </html>\n  );\n};\n' }) })] });
-   }
-   function z(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(_, { ...e }) }) : _(e);
-   }
-   var N = t(89019);
-   const D = { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Blok met \xe9\xe9n of meerdere regels computercode.', slug: '/code-block', keywords: ['code', 'code block', 'code blok', 'code container', 'code example', 'code fences', 'code memo', 'code snippet', 'code snippet blok', 'code voorbeeld', 'code wrapper', 'codeblock', 'codepen', 'copy paste blok', 'css voorbeeld', 'html voorbeeld', 'inline code', 'monospace', 'monotype', 'pre', 'snippet', 'source code', 'source doc', 'toepassing', 'voorbeeld blok', 'Code Snippet', 'Code Blok', 'Code Example'] },
-    S = void 0,
-    C = {},
-    T = 'Code Block',
-    L = 'Blok met \xe9\xe9n of meerdere regels computercode.',
-    M = 329,
-    R = c.find((e) => e.number === M),
-    F = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...i.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function B(e) {
-    const n = { a: 'a', admonition: 'admonition', h2: 'h2', h3: 'h3', p: 'p', ...(0, s.R)(), ...e.components },
-     { Checklist: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('Checklist', !0),
-     (0, o.jsxs)(o.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, o.jsx)(f.Fc, { component: R, headingLevel: 1, description: L }),
-       '\n',
-       (0, o.jsx)(x.e, { component: R }),
-       '\n',
-       (0, o.jsx)(n.admonition, { title: 'Tip', type: 'tip', children: (0, o.jsxs)(n.p, { children: ['Gebruik de ', (0, o.jsx)(n.a, { href: '/code/', children: 'Code' }), ' component als de code in een regel met andere tekst staat.'] }) }),
-       '\n',
-       (0, o.jsx)(k.Zp, { className: 'implementation-card', children: (0, o.jsxs)(k.Wu, { children: [(0, o.jsx)(b.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, o.jsxs)(y.dk, { children: [(0, o.jsxs)(y.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-3553', children: [(0, o.jsx)(v.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, o.jsxs)(y.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-3553', children: [(0, o.jsx)(v.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, o.jsx)(b.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, o.jsxs)(y.dk, { children: [(0, o.jsxs)(y.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-code-block--documentatie', children: [(0, o.jsx)(v.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, o.jsxs)(y.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/code-block--documentatie', children: [(0, o.jsx)(v.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, o.jsx)(b.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, o.jsxs)(y.dk, { children: [(0, o.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css', children: [(0, o.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-block-css'] }), (0, o.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react', children: [(0, o.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-block-react'] }), (0, o.jsxs)(y.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/code-block-tokens', children: [(0, o.jsx)(v.r, { brand: 'npm' }), ' @nl-design-system-candidate/code-block-tokens'] })] })] }) }),
-       '\n',
-       (0, o.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }),
-       '\n',
-       (0, o.jsx)(l.Ay, {}),
-       '\n',
-       (0, o.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
-       '\n',
-       (0, o.jsx)(a.Ay, {}),
-       '\n',
-       (0, o.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'De code is niet alleen herkenbaar aan een andere achtergrondkleur.', sc: '1.4.1', status: '', component: (0, o.jsx)(g.Ay, {}), tags: ['designer', 'contentmaker', 'developer'] },
-         { title: 'De code heeft voldoende contrast met de achtergrondkleur', sc: '1.4.3', status: '', component: (0, o.jsx)(p.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'Wanneer de achtergrondkleur van het Code Block anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.', sc: '1.4.11', status: '', component: (0, o.jsx)(u.Ay, {}), tags: ['designer', 'contentmaker'] },
-        ],
-       }),
-       '\n',
-       (0, o.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
-       '\n',
-       (0, o.jsx)(i.Ay, {}),
-       '\n',
-       (0, o.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'De juiste HTML-elementen voor de Code Block component zijn toegepast.', sc: '1.3.1', status: '', component: (0, o.jsx)(h, {}), tags: ['developer'] },
-         { title: 'Als je inzoomt naar 200% blijft alle tekst leesbaar.', sc: '1.4.4', status: '', component: (0, o.jsx)(m.Ay, {}), tags: ['developer'] },
-         { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: (0, o.jsx)(j.Ay, {}), tags: ['developer'] },
-        ],
-       }),
-       '\n',
-       (0, o.jsx)(A.o, { omitH1: !0, headingLevel: 2, children: (0, o.jsx)(z, {}) }),
-       '\n',
-       (0, o.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }),
-       '\n',
-       (0, o.jsx)(w.B, { tokens: N }),
-       '\n',
-       (0, o.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, o.jsx)(f.VK, { component: R, headingLevel: 3 }),
-       '\n',
-       (0, o.jsx)(f.$9, { component: R, headingLevel: 2 }),
-       '\n',
-       (0, o.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, o.jsx)(f.mu, { component: R, headingLevel: 3 }),
-      ],
-     })
-    );
-   }
-   function O(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(B, { ...e }) }) : B(e);
    }
   },
   67970(e, n, t) {

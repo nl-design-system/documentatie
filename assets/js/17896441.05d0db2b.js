@@ -82,15 +82,15 @@
     b = n(33062),
     v = n(90495),
     j = n(45282);
-   const T = { 'Heading 1': 'Heading', 'Heading 2': 'Heading', 'Heading 3': 'Heading', 'Heading 4': 'Heading', 'Heading 5': 'Heading', 'Heading 6': 'Heading' },
-    C = ({ name: e, relayStep: t, description: n }) => {
+   const C = { 'Heading 1': 'Heading', 'Heading 2': 'Heading', 'Heading 3': 'Heading', 'Heading 4': 'Heading', 'Heading 5': 'Heading', 'Heading 6': 'Heading' },
+    T = ({ name: e, relayStep: t, description: n }) => {
      const s = (0, b.fX)(t),
-      o = T[e] ?? e;
+      o = C[e] ?? e;
      return (0, i.jsxs)(x.WK, { children: [(0, i.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, g.A)('component-illustration', `component-illustration--${s}`), fill: 'none', children: [(0, i.jsxs)('g', { fill: 'var(--component-illustration-background-color, white)', children: [(0, i.jsx)('rect', { width: '960', height: '540' }), (0, i.jsx)('rect', { width: '960', height: '540' })] }), (0, i.jsxs)('g', { fill: 'var(--component-illustration-grid-color, #eee)', children: [(0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, i.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, i.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, i.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, i.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, i.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, i.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, i.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, i.jsx)('use', { href: `/svg/componenten_overzicht_${(0, b.fX)(o)}.svg#component-illustration` })] }), (0, i.jsx)(x.$P, { className: 'component-illustration__caption', children: n })] });
     };
    var k = n(67970);
    const N = ({ name: e, description: t, relayStep: n, headingLevel: s = 2, href: o, frameworkNames: l }) => {
-     return (0, i.jsxs)(v.Zp, { appearance: 'large', className: (0, g.A)('component-card', !n && 'component-card--suggestion'), component: 'section', children: [(0, i.jsx)(v.Fu, { children: (0, i.jsx)(C, { relayStep: n, description: `Schets van de ${e} component`, name: e }) }), (0, i.jsxs)(v.Wu, { children: [(0, i.jsxs)('div', { children: [(0, i.jsx)(m.DZ, { level: s, className: 'component-card__title', children: e }), n && (0, i.jsx)('p', { children: (0, i.jsx)(k.D, { state: n }) }), t && (0, i.jsx)(m.fz, { children: t }), l && (0, i.jsx)(m._Q, { children: l.map((e) => (0, i.jsx)(m.KE, { children: e }, e)) })] }), o && (0, i.jsx)(m.fz, { children: (0, i.jsxs)(j.N, { className: 'utrecht-link', to: ((r = o), 'string' == typeof r && !1 === r.endsWith('/') ? `${r}/` : r), children: ['Bekijk ', (0, i.jsx)('span', { className: 'w', children: e }), ' component'] }) })] })] });
+     return (0, i.jsxs)(v.Zp, { appearance: 'large', className: (0, g.A)('component-card', !n && 'component-card--suggestion'), component: 'section', children: [(0, i.jsx)(v.Fu, { children: (0, i.jsx)(T, { relayStep: n, description: `Schets van de ${e} component`, name: e }) }), (0, i.jsxs)(v.Wu, { children: [(0, i.jsxs)('div', { children: [(0, i.jsx)(m.DZ, { level: s, className: 'component-card__title', children: e }), n && (0, i.jsx)('p', { children: (0, i.jsx)(k.D, { state: n }) }), t && (0, i.jsx)(m.fz, { children: t }), l && (0, i.jsx)(m._Q, { children: l.map((e) => (0, i.jsx)(m.KE, { children: e }, e)) })] }), o && (0, i.jsx)(m.fz, { children: (0, i.jsxs)(j.N, { className: 'utrecht-link', to: ((r = o), 'string' == typeof r && !1 === r.endsWith('/') ? `${r}/` : r), children: ['Bekijk ', (0, i.jsx)('span', { className: 'w', children: e }), ' component'] }) })] })] });
      var r;
     },
     G = () => {
@@ -109,7 +109,7 @@
       [d, g] = (0, r.useState)(c),
       [u, p] = (0, r.useState)(l.get(t)?.split(',') || []),
       [w, j] = (0, r.useState)(l.get(e)?.split(',') || []),
-      T = (0, b.KF)(c);
+      C = (0, b.KF)(c);
      return (
       (0, r.useEffect)(() => {
        (g(c.filter((e) => !u.length || u.some((t) => e.relayStep === t)).filter((e) => !w.length || w.some((t) => (0, b.B2)(e, t)))), u.length ? l.set(t, u.join(',')) : l.delete(t), w.length ? l.set(e, w.join(',')) : l.delete(e), o({ ...s, search: l.toString() }));
@@ -153,13 +153,13 @@
                 ),
                ],
               }),
-              T.length > 0 &&
+              C.length > 0 &&
                (0, i.jsxs)(x.LB, {
                 'aria-describedby': 'filter-results',
                 'aria-labelledby': 'filter-results-label',
                 children: [
                  (0, i.jsx)('h3', { className: 'utrecht-heading-6', children: 'Implementatie' }),
-                 T.map((e) =>
+                 C.map((e) =>
                   (0, i.jsxs)(
                    m.zB,
                    {
@@ -212,7 +212,7 @@
     };
    var W = n(46072),
     _ = n(79889);
-   const R = ({ title: e, sc: t, component: n, tags: s }) => {
+   const R = ({ title: e, sc: t, children: n, tags: s }) => {
      const o = (0, r.useId)(),
       l = [...s];
      if (t) {
@@ -231,7 +231,7 @@
         (0, i.jsxs)('div', {
          className: 'new-checklist__content',
          children: [
-          (0, i.jsx)('div', { children: n }),
+          n && (0, i.jsx)('div', { children: n }),
           (0, i.jsx)(x._Q, {
            className: 'new-checklist__badge-list',
            children: l.map((e, t) => {
@@ -249,21 +249,17 @@
       }),
      });
     },
-    S = ({ items: e, headingLevel: t }) => {
-     const n = e.reduce(
-       (e, t) => (
-        t.tags.forEach((t) => {
-         e.add(t);
-        }),
-        e
-       ),
-       new Set(),
-      ),
-      [s, o] = (0, r.useState)(Array.from(n.values())),
-      l = (e) => s.includes(e),
-      a = (0, r.useId)(),
-      c = s.length >= 1 ? e.filter(({ tags: e }) => e.some((e) => s.includes(e))) : e,
-      d = e.length - c.length;
+    S = ({ children: e, headingLevel: t }) => {
+     const n = new Set();
+     r.Children.forEach(e, (e) => {
+      (e?.props?.tags || []).forEach((e) => n.add(e));
+     });
+     const s = r.Children.count(e),
+      [o, l] = (0, r.useState)(Array.from(n.values())),
+      a = (e) => o.includes(e),
+      c = (0, r.useId)(),
+      d = o.length >= 1 ? r.Children.map(e, (e) => (e.props.tags.some((e) => o.includes(e)) ? e : null)).filter((e) => e) : [e],
+      h = s - d.length;
      return (0, i.jsxs)('div', {
       children: [
        (0, i.jsxs)('div', {
@@ -271,9 +267,9 @@
         children: [
          (0, i.jsxs)(m.LB, {
           'aria-describedby': 'filter-results',
-          'aria-labelledby': a,
+          'aria-labelledby': c,
           children: [
-           (0, i.jsx)(m.DZ, { level: t, id: a, children: 'Filter acceptatiecriteria voor:' }),
+           (0, i.jsx)(m.DZ, { level: t, id: c, children: 'Filter acceptatiecriteria voor:' }),
            Array.from(n.values()).map((e) =>
             (0, i.jsxs)(
              m.zB,
@@ -281,13 +277,13 @@
               type: 'checkbox',
               children: [
                (0, i.jsx)(m.Sc, {
-                defaultChecked: l(e),
-                checked: l(e),
+                defaultChecked: a(e),
+                checked: a(e),
                 id: e,
                 onChange: () =>
                  ((e, t) => {
-                  const n = ('boolean' == typeof t ? t : !l(e)) ? [...s, e] : s.filter((t) => t !== e);
-                  o(n);
+                  const n = ('boolean' == typeof t ? t : !a(e)) ? [...o, e] : o.filter((t) => t !== e);
+                  l(n);
                  })(e),
                }),
                (0, i.jsx)(m.lR, { htmlFor: e, children: e }),
@@ -301,12 +297,12 @@
          (0, i.jsx)('div', {
           children: (0, i.jsxs)(i.Fragment, {
            children: [
-            (0, i.jsxs)('p', { role: 'status', children: [e.length - d, ' van de ', e.length, ' items zijn nu zichtbaar.'] }),
-            d >= 1
+            (0, i.jsxs)('p', { role: 'status', children: [s - h, ' van de ', s, ' items zijn nu zichtbaar.'] }),
+            h >= 1
              ? (0, i.jsx)(x.$n, {
                 appearance: 'secondary-action-button',
                 onClick: () => {
-                 o(Array.from(n.values()));
+                 l(Array.from(n.values()));
                 },
                 children: 'Toon alles',
                })
@@ -316,7 +312,7 @@
          }),
         ],
        }),
-       (0, i.jsx)('ul', { className: 'new-checklist', role: 'list', children: c.map((e, t) => (0, i.jsx)(R, { ...e }, t)) }),
+       (0, i.jsx)('ul', { className: 'new-checklist', role: 'list', children: d }),
       ],
      });
     };
@@ -336,7 +332,7 @@
     },
     O = ({ testCategory: e, items: t }) => (0, i.jsx)(x.If, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 3, expanded: !1, label: (0, i.jsx)('span', { children: e }), body: t.map((e, t) => (0, i.jsx)(D, { ...e }, t)) }] });
    function z({ children: e }) {
-    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: o.A, OverviewPage: w, DocCardList: u.A, ComponentOverview: G, Checklist: S, ComponentAnatomy: M, CriteriaList: O }, children: e });
+    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: o.A, OverviewPage: w, DocCardList: u.A, ComponentOverview: G, Checklist: S, ChecklistItem: R, ComponentAnatomy: M, CriteriaList: O }, children: e });
    }
   },
   12013(e, t, n) {
@@ -385,7 +381,7 @@
   },
   33062(e, t, n) {
    'use strict';
-   n.d(t, { bo: () => o, KF: () => h, mJ: () => p, VZ: () => T, cR: () => j, Pv: () => w, qZ: () => r, kD: () => x, B2: () => g, Pc: () => a, f4: () => i, GT: () => b, fX: () => l, eQ: () => y, B_: () => f, o_: () => A, Rc: () => v });
+   n.d(t, { bo: () => o, KF: () => h, mJ: () => p, VZ: () => C, cR: () => j, Pv: () => w, qZ: () => r, kD: () => x, B2: () => g, Pc: () => a, f4: () => i, GT: () => b, fX: () => l, eQ: () => y, B_: () => f, o_: () => A, Rc: () => v });
    const s = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     o = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     l = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -450,7 +446,7 @@
      if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
      return e.replace(/^[\^~>=<]+/, '');
     },
-    T = () => {
+    C = () => {
      const e = s.sP?.node;
      if (!e) throw new Error('No node version found in package.json#engines.node');
      const t = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);

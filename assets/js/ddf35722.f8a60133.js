@@ -1,5 +1,5 @@
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [28568],
+ [30722],
  {
   1292(e, n, t) {
    'use strict';
@@ -13,6 +13,20 @@
     l = t(86070);
    const d = { figma: (0, l.jsx)(i.A, {}), github: (0, l.jsx)(o.A, {}), npm: (0, l.jsx)(s.A, {}), storybook: (0, l.jsx)(c.A, {}) },
     h = ({ brand: e }) => (0, l.jsx)(r.In, { children: d[e] || (0, l.jsx)(a.A, {}) });
+  },
+  4964(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => s });
+   var r = t(86070),
+    i = t(18439);
+   function o(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: "Zorg ervoor dat invoervelden die op meerdere pagina's voorkomen en die dezelfde functie hebben, er op die pagina's hetzelfde uitzien en dezelfde visuele en toegankelijke naam hebben." }), '\n', (0, r.jsx)(n.p, { children: 'Bijvoorbeeld:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: "Een algemene zoekfunctie heeft op iedere pagina het label 'Zoeken' en niet op de ene plek 'Zoeken' en op de andere plek 'Waar ben je naar op zoek?' of 'Zoek op website'." }), '\n', (0, r.jsx)(n.li, { children: "Een inschrijfformulier van evenementen waarin persoonlijke gegevens worden gevraagd, hebben allebei het veld 'Voor- en achternaam' en niet op de ene plek 'Voor- en achternaam' en op de andere plek 'Volledige naam' of 'Hoe heet je?'." }), '\n'] }), '\n', (0, r.jsx)(n.p, { children: 'Dit geldt ook voor het gebruik van icons.' }), '\n', (0, r.jsx)(n.p, { children: 'Als componenten op verschillende plekken andere functies hebben hoeven die uiteraard niet hetzelfde visuele label te hebben. Bijvoorbeeld:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: "Een algemene zoekfunctie genaamd 'Zoeken' in de header van iedere pagina." }), '\n', (0, r.jsx)(n.li, { children: "Een specifieke zoekfunctie genaamd 'Zoek in de database'." }), '\n'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Respecteer conventies' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/duidelijke-tekst/', children: 'Gebruik duidelijke labels' }) }), '\n'] })] });
+   }
+   function s(e = {}) {
+    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
+   }
   },
   17045(e, n, t) {
    'use strict';
@@ -60,7 +74,7 @@
   },
   33062(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => i, KF: () => u, mJ: () => m, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => f, B2: () => j, Pc: () => a, f4: () => c, GT: () => b, fX: () => o, eQ: () => k, B_: () => v, o_: () => y, Rc: () => x });
+   t.d(n, { bo: () => i, KF: () => u, mJ: () => m, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => v, B2: () => j, Pc: () => a, f4: () => c, GT: () => f, fX: () => o, eQ: () => y, B_: () => b, o_: () => k, Rc: () => x });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -99,16 +113,16 @@
       return { frameworkName: n, tasks: r };
      });
     },
-    y = (e) => e.join('.'),
-    v = (e) => '--' + e.join('-'),
-    k = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function f(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? f(e[t], [...n, t]) : []));
+    k = (e) => e.join('.'),
+    b = (e) => '--' + e.join('-'),
+    y = (e, n) => n.reduce((e, n) => e?.[n], e);
+   function v(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? v(e[t], [...n, t]) : []));
    }
-   function b(e) {
+   function f(e) {
     const n = new Map();
     function t(e) {
-     return (n.has(e) || n.set(e, y(e)), n.get(e));
+     return (n.has(e) || n.set(e, k(e)), n.get(e));
     }
     return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
    }
@@ -175,6 +189,21 @@
    }
    ((i.keys = () => Object.keys(r)), (i.id = 42962), (e.exports = i));
   },
+  44720(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => c, RM: () => o });
+   var r = t(86070),
+    i = t(18439);
+   const o = [];
+   function s(e) {
+    const n = { p: 'p', ...(0, i.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.' }), '\n', (0, r.jsx)(n.p, { children: 'Bijvoorbeeld: geef een foutmelding niet alleen aan met een rood randje, maar ook in tekst en eventueel met een icoontje dat een foutmelding markeert.' })] });
+   }
+   function c(e = {}) {
+    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
   54565(e, n, t) {
    'use strict';
    t.d(n, { c: () => i });
@@ -196,119 +225,6 @@
    function s(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
-   }
-  },
-  63666(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => z, component: () => N, contentTitle: () => w, default: () => T, description: () => A, frontMatter: () => x, issueNumber: () => F, metadata: () => r, title: () => D, toc: () => _ }));
-   const r = JSON.parse('{"id":"componenten/form-field-description/index","title":"Form Field Description","description":"Toont ondersteunende tekst en biedt extra context over de in te vullen informatie.","source":"@site/docs/componenten/form-field-description/index.mdx","sourceDirName":"componenten/form-field-description","slug":"/form-field-description","permalink":"/form-field-description","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-description/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Form Field Description","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Form Field Description","pagination_label":"Form Field Description","description":"Toont ondersteunende tekst en biedt extra context over de in te vullen informatie.","slug":"/form-field-description","keywords":["beschrijving","description","form","form field","form field description","form field help text","form field hint","formulier","formulierelement","helper","help text","hint","hint label","hint tekst","hint text"]},"sidebar":"componenten","previous":{"title":"Form Field","permalink":"/form-field"},"next":{"title":"Form Field Error Message","permalink":"/form-field-error-message"}}');
-   var i = t(86070),
-    o = t(18439),
-    s = t(36059),
-    c = t(17045),
-    a = t(19776);
-   t(40808);
-   function l(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Koppel de Form Field Description met ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), ' aan het bijbehorende element voor formulierinvoer:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke instructies en beschrijvingen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function d(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(l, { ...e }) }) : l(e);
-   }
-   function h(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['De Form Field Description kan met ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), ' aan het bijbehorende element voor formulierinvoer worden gekoppeld.'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke descriptions bij formuliervelden' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function u(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(h, { ...e }) }) : h(e);
-   }
-   function j(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat instructies die nodig zijn om te begrijpen wat er van de bezoeker verwacht wordt op een logische plek staan en gekoppeld zijn aan het element voor formulierinvoer.' }), '\n', (0, i.jsx)(n.p, { children: 'De meest gebruiksvriendelijke plek voor instructies is tussen het label en het element voor formulierinvoer. Als instructies er \xf3nder staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.' }), '\n', (0, i.jsxs)(n.p, { children: ['Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna instructies t\xfassen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Koppel instructies daarom ook aan het element voor formulierinvoer met ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), '. Op die manier wordt de beschrijving voorgelezen wanneer de toetsenbordfocus op dat element staat.'] }), '\n', (0, i.jsx)(n.p, { children: 'Voorbeeld:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke instructies en beschrijvingen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function p(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(j, { ...e }) }) : j(e);
-   }
-   var m = t(55552),
-    g = t(83329),
-    y = t(83672),
-    v = t(34257),
-    k = t(24838),
-    f = t(91391),
-    b = t(85825);
-   const x = { title: 'Form Field Description', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Description', pagination_label: 'Form Field Description', description: 'Toont ondersteunende tekst en biedt extra context over de in te vullen informatie.', slug: '/form-field-description', keywords: ['beschrijving', 'description', 'form', 'form field', 'form field description', 'form field help text', 'form field hint', 'formulier', 'formulierelement', 'helper', 'help text', 'hint', 'hint label', 'hint tekst', 'hint text'] },
-    w = void 0,
-    z = {},
-    D = 'Form Field Description',
-    A = 'Toont ondersteunende tekst en biedt extra context over de in te vullen informatie.',
-    F = 174,
-    N = s.find((e) => e.number === F),
-    _ = [{ value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...c.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function S(e) {
-    const n = { h2: 'h2', h3: 'h3', ...(0, o.R)(), ...e.components },
-     { Checklist: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('Checklist', !0),
-     (0, i.jsxs)(i.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, i.jsx)(b.Fc, { component: N, headingLevel: 1, description: A }),
-       '\n',
-       (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }),
-       '\n',
-       (0, i.jsx)(a.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'De Form Field Description is gekoppeld aan het bijbehorende element voor formulierinvoer', sc: '1.3.1', status: '', component: (0, i.jsx)(d, {}), tags: ['developer'] },
-         { title: 'De Form Field Description staat op een logische plek', sc: '1.3.2', status: '', component: (0, i.jsx)(p, {}), tags: ['designer', 'developer'] },
-         { title: 'Instructies in de Form Field Description zijn op een inclusieve manier beschreven.', sc: '1.3.3', status: '', component: (0, i.jsx)(f.Ay, {}), tags: ['designer', 'contentmaker'] },
-         { title: 'De tekst in de Form Field Description heeft een contrastratio van minimaal 4,5:1 met de achtergrondkleur.', sc: '1.4.3', status: '', component: (0, i.jsx)(y.Ay, {}), tags: ['designer'] },
-         { title: 'Als je de tekst van de Form Field Description vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: (0, i.jsx)(v.Ay, {}), tags: ['developer'] },
-         { title: 'De bezoeker kan de Form Field Description tot 400% vergroten zonder verlies van functionaliteit of informatie.', sc: '1.4.10', status: '', component: (0, i.jsx)(m.Ay, {}), tags: ['developer', 'designer'] },
-         { title: 'Als de Form Field Description in een andere taal is dan de taal van de pagina, dan heeft het een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: (0, i.jsx)(k.Ay, {}), tags: ['developer'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }),
-       '\n',
-       (0, i.jsx)(c.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: '4',
-        items: [
-         { title: 'De Form Field Description kan aan een element voor formulierinvoer gekoppeld worden.', sc: '1.3.1', status: '', component: (0, i.jsx)(u, {}), tags: ['developer'] },
-         { title: 'Tekst in de Form Field Description blijft leesbaar wanneer de tekstafstand vergroot wordt. ', sc: '1.4.12', status: '', component: (0, i.jsx)(g.Ay, {}), tags: ['developer'] },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, i.jsx)(b.VK, { component: N, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, i.jsx)(b.mu, { component: N, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(b.$9, { component: N, headingLevel: 2 }),
-      ],
-     })
-    );
-   }
-   function T(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(S, { ...e }) }) : S(e);
    }
   },
   67970(e, n, t) {
@@ -358,9 +274,88 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
    }
   },
+  83918(e, n, t) {
+   'use strict';
+   (t.r(n), t.d(n, { assets: () => z, component: () => D, contentTitle: () => w, default: () => S, description: () => F, frontMatter: () => x, issueNumber: () => _, metadata: () => r, title: () => A, toc: () => N }));
+   const r = JSON.parse('{"id":"componenten/form-field-label/index","title":"Form Field Label","description":"Toont een tekstlabel dat informeert over de in te vullen informatie.","source":"@site/docs/componenten/form-field-label/index.mdx","sourceDirName":"componenten/form-field-label","slug":"/form-field-label","permalink":"/form-field-label","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-label/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Form Field Label","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Form Field Label","pagination_label":"Form Field Label","description":"Toont een tekstlabel dat informeert over de in te vullen informatie.","slug":"/form-field-label","keywords":["caption","form","field label","form field label","form input","form label","formlabel","formulier","formulierelement","input label","label","text label","textlabel"]},"sidebar":"componenten","previous":{"title":"Form Field Error Message","permalink":"/form-field-error-message"},"next":{"title":"Form Field Label Suffix","permalink":"/form-field-label-suffix"}}');
+   var i = t(86070),
+    o = t(18439),
+    s = t(36059),
+    c = t(17045),
+    a = t(19776),
+    l = t(40808);
+   function d(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Koppel het ', (0, i.jsx)(n.code, { children: 'label' }), '-element met de attributen ', (0, i.jsx)(n.code, { children: 'for' }), ' en ', (0, i.jsx)(n.code, { children: 'id' }), ' aan het bijbehorende input-element.'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="voorbeeld">Ik ben een Text Input</label> <input type="text" id="voorbeeld" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Op die manier is het Form Field Label expliciet gekoppeld met het input-element, ook als het input-element niet binnen een ', (0, i.jsx)(n.code, { children: 'label' }), '-element genest is.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/toegankelijke-naam/', children: 'Toegankelijke naam label' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   function h(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Het Form Field Label kan met de attributen ', (0, i.jsx)(n.code, { children: 'for' }), ' en ', (0, i.jsx)(n.code, { children: 'id' }), ' aan het bijbehorende element voor formulierinvoer worden gekoppeld.'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<label for="voorbeeld">Ik ben een Text Input</label> <input type="text" id="voorbeeld" />\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Op die manier is het Form Field Label expliciet gekoppeld met het element voor formulierinvoer, ook als die niet binnen een ', (0, i.jsx)(n.code, { children: 'label' }), '-element genest is.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/toegankelijke-naam/', children: 'Toegankelijke naam label' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   var u = t(55552),
+    j = t(83329),
+    p = t(83672),
+    m = t(34257),
+    g = t(99805),
+    k = t(24838),
+    b = t(4964);
+   const y = [
+     {
+      title: 'Het Form Field label is gekoppeld aan het bijbehorende element voor formulierinvoer.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'De kleur van het Form Field Label geeft geen informatie die niet ook op minimaal 1 andere manier wordt gegeven.', sc: '1.4.1', status: '', component: t(44720).Ay, tags: ['designer'] },
+     { title: 'De tekst in het Form Field Label heeft een contrastratio van minimaal 4,5:1 met de achtergrondkleur.', sc: '1.4.3', status: '', component: p.Ay, tags: ['designer'] },
+     { title: 'De bezoeker kan het Form Field Label tot 400% vergroten zonder verlies van functionaliteit of informatie.', sc: '1.4.10', status: '', component: u.Ay, tags: ['developer', 'designer'] },
+     { title: 'Het Form Field Label beschrijft wat de bezoeker moet invullen.', sc: '2.4.6', status: '', component: g.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Als het Form Field Label in een andere taal is dan de taal van de pagina, dan heeft het label-element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: k.Ay, tags: ['developer'] },
+     { title: 'Elementen voor formulierinvoer met dezelfde functie hebben hetzelfde label.', sc: '3.2.4', status: '', component: b.Ay, tags: ['designer', 'contentmaker'] },
+    ],
+    v = [
+     {
+      title: 'Het Form Field Label kan aan een element voor formulierinvoer gekoppeld worden.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(h, { ...e }) }) : h(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'Als je de tekst van het Form Field Label vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: m.Ay, tags: ['developer'] },
+     { title: 'Tekst in het Form Field Label blijft leesbaar wanneer de tekstafstand vergroot wordt. ', sc: '1.4.12', status: '', component: j.Ay, tags: ['developer'] },
+    ];
+   var f = t(85825);
+   const x = { title: 'Form Field Label', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Label', pagination_label: 'Form Field Label', description: 'Toont een tekstlabel dat informeert over de in te vullen informatie.', slug: '/form-field-label', keywords: ['caption', 'form', 'field label', 'form field label', 'form input', 'form label', 'formlabel', 'formulier', 'formulierelement', 'input label', 'label', 'text label', 'textlabel'] },
+    w = void 0,
+    z = {},
+    A = 'Form Field Label',
+    F = 'Toont een tekstlabel dat informeert over de in te vullen informatie.',
+    _ = 177,
+    D = s.find((e) => e.number === _),
+    N = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...l.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...a.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...c.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function L(e) {
+    const n = { h2: 'h2', h3: 'h3', ...(0, o.R)(), ...e.components },
+     { Checklist: t, ChecklistItem: r } = n;
+    return (t || T('Checklist', !0), r || T('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(f.Fc, { component: D, headingLevel: 1, description: F }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: y.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(c.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: v.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(f.VK, { component: D, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(f.mu, { component: D, headingLevel: 3 }), '\n', (0, i.jsx)(f.$9, { component: D, headingLevel: 2 })] }));
+   }
+   function S(e = {}) {
+    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(L, { ...e }) }) : L(e);
+   }
+   function T(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
+   }
+  },
   85825(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => v, $9: () => f, mu: () => k, Fc: () => b });
+   t.d(n, { VK: () => b, $9: () => v, mu: () => y, Fc: () => f });
    var r = t(29181),
     i = t(13526),
     o = t(1292),
@@ -392,14 +387,14 @@
     p = t(45561);
    const m = ({ children: e }) => (0, l.jsx)('ul', { className: 'task-list', children: e }),
     g = ({ checked: e, children: n, title: t, description: r, headingLevel: o = 3 }) => (0, l.jsxs)('li', { className: (0, i.A)('task-list-item'), children: [(0, l.jsxs)('div', { className: (0, i.A)('task-list-item__marker', e && 'task-list-item__marker--checked'), children: [(0, l.jsx)('span', { className: 'task-list-item__marker-label', children: e ? 'Afgevinkt. ' : 'Niet afgevinkt. ' }), e && (0, l.jsx)(p.UJe, { 'aria-hidden': !0, className: 'utrecht-icon' })] }), (0, l.jsxs)('div', { children: [t ? (0, l.jsx)(j.DZ, { appearance: 'utrecht-heading-3', level: o, children: t }) : null, r, n] })] });
-   var y = t(33062);
-   const v = ({ component: e, headingLevel: n }) => {
-     const t = e && e.projects.filter((e) => y.f4.includes(e.id)),
-      o = t && y.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
-     return e && (0, l.jsx)(r.If, { sections: o.map((t) => ({ className: (0, i.A)('definition-of-done', t && `definition-of-done--${(0, y.fX)(t.title)}`), headingLevel: n, expanded: !1, label: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', body: t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(m, { children: t.tasks.map(({ checked: e, name: t, id: r }) => (0, l.jsx)(g, { headingLevel: n + 1, checked: e, title: t, description: (0, y.qZ)(r) }, r)) }), (0, l.jsx)(r.fz, { children: (0, l.jsxs)(r.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) })) });
+   var k = t(33062);
+   const b = ({ component: e, headingLevel: n }) => {
+     const t = e && e.projects.filter((e) => k.f4.includes(e.id)),
+      o = t && k.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
+     return e && (0, l.jsx)(r.If, { sections: o.map((t) => ({ className: (0, i.A)('definition-of-done', t && `definition-of-done--${(0, k.fX)(t.title)}`), headingLevel: n, expanded: !1, label: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', body: t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(m, { children: t.tasks.map(({ checked: e, name: t, id: r }) => (0, l.jsx)(g, { headingLevel: n + 1, checked: e, title: t, description: (0, k.qZ)(r) }, r)) }), (0, l.jsx)(r.fz, { children: (0, l.jsxs)(r.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) })) });
     },
-    k = ({ component: e, headingLevel: n }) => {
-     const t = e && e.projects.filter((e) => !y.f4.includes(e.id));
+    y = ({ component: e, headingLevel: n }) => {
+     const t = e && e.projects.filter((e) => !k.f4.includes(e.id));
      return e && t.length
       ? (0, l.jsx)(s.AC, {
          appearance: 'large',
@@ -413,7 +408,7 @@
           .map((e) => {
            const t = e.tasks.find(({ name: e }) => 'Naam' === e),
             i = t?.value,
-            c = (0, y.Pv)(e),
+            c = (0, k.Pv)(e),
             a = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${i} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
@@ -449,13 +444,13 @@
         })
       : (0, l.jsx)(r.fz, { children: 'Er zijn nog geen implementaties' });
     },
-    f = ({ component: e, headingLevel: n }) => {
+    v = ({ component: e, headingLevel: n }) => {
      const t = e?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(r.DZ, { level: n, children: 'Help om deze component te verbeteren' }), (0, l.jsxs)(r.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.Xy, { children: [i ? (0, l.jsxs)(r.Er, { children: ['Vul de ', (0, l.jsx)(r.N_, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.Er, { children: [(0, l.jsxs)(r.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    b = ({ component: e, headingLevel: n, description: t }) => {
-     const i = e && y.bo[e.relayStep];
+    f = ({ component: e, headingLevel: n, description: t }) => {
+     const i = e && k.bo[e.relayStep];
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(u.p, { level: n, suffix: i && (0, l.jsx)(h.D, { state: i }), children: e.title }), (0, l.jsx)(r.fz, { lead: !0, children: t })] });
     };
   },
@@ -474,19 +469,18 @@
     },
     l = ({ appearance: e = 'medium', children: n, className: t }) => (0, o.jsx)('div', { className: (0, i.A)('cardgroup', `cardgroup--${e}`, t), children: n });
   },
-  91391(e, n, t) {
+  99805(e, n, t) {
    'use strict';
-   t.d(n, { Ay: () => c, RM: () => o });
+   t.d(n, { Ay: () => s });
    var r = t(86070),
     i = t(18439);
-   const o = [];
-   function s(e) {
-    const n = { li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Geef instructies op een inclusieve manier. De instructies kunnen begrijpen moet niet afhankelijk zijn van eigenschappen die sommige gebruikers niet ervaren.' }), '\n', (0, r.jsx)(n.p, { children: 'Het gaat hierbij om eigenschappen zoals vorm, kleur, afmeting, locatie op het scherm, richting, of geluid. Bijvoorbeeld:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: '"De fouten zijn met een rode rand gemarkeerd". Niet iedereen kan zien, niet iedereen kan de kleur rood van zwart onderscheiden.' }), '\n', (0, r.jsx)(n.li, { children: '"Klik op de meest rechtse knop". Niet iedereen kan zien, sommige gebruikers zijn ingezoomd waardoor de knoppen op twee regels staan.' }), '\n', (0, r.jsx)(n.li, { children: '"Als je het geluid hoort, heb je nog 5 minuten." Niet iedereen kan dat geluid goed horen of heeft het geluid aanstaan.' }), '\n'] })] });
+   function o(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Het label van een invoerveld maakt kort en bondig duidelijk welke invoer van de bezoeker gevraagd wordt. Een tekstueel label kan een tekst zijn, of een icoon waar de alternatieve tekst het doel van het invoerveld beschrijft.' }), '\n', (0, r.jsx)(n.p, { children: "Bijvoorbeeld: de alternatieve tekst van een vergrootglas icoon is 'Zoeken' en niet 'Vergrootglas'." }), '\n', (0, r.jsxs)(n.p, { children: ['Let op: Gebruik je een asterisk (', (0, r.jsx)(n.code, { children: '*' }), ") om aan te geven dat een veld verplicht is? Zorg dan dat je v\xf3\xf3r de eerste asterisk uitlegt wat de betekenis is. Plaats bijvoorbeeld bovenaan het formulier de tekst: 'Velden met een ", (0, r.jsx)(n.code, { children: '*' }), " zijn verplicht'."] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/duidelijke-tekst/', children: 'Gebruik duidelijke labelteksten' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
    }
-   function c(e = {}) {
+   function s(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
    }
   },
  },
