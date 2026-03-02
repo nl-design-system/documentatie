@@ -31,6 +31,7 @@ export interface ChecklistItemProps {
  */
 export interface ChecklistProps {
   headingLevel: HeadingProps['level'];
+  children: React.ReactElement<ChecklistItemProps>[];
 }
 
 /**
@@ -39,7 +40,7 @@ export interface ChecklistProps {
  * sc is optional.
  *
  */
-export const ChecklistItem = ({ title, sc, children, tags }: ChecklistItemProps) => {
+export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChildren<ChecklistItemProps>) => {
   const labelId = useId();
 
   const badgeTags = [...tags];
