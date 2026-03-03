@@ -40,82 +40,197 @@ import Summary from "./summaries/_1.4.11-summary.md";
 
 <Summary />
 
-## Hoogcontrastknop
+Dit succescriterium gaat over niet-tekstuele onderdelen van de interface:
 
-Als een hoogcontrastknop wordt toegevoegd aan de website om onvoldoende contrast te verhelpen, moet deze knop ALLE contrastproblemen oplossen. Test alle kleurencombinaties van achtergrond en tekst met de knop ingeschakeld. Als het contrast van de website afhankelijk is van deze knop, moet de knop op alle resoluties zichtbaar zijn en zelf ook voldoende contrast hebben.
+- Grafische elementen die informatie geven. Denk aan een hamburgericoon voor een menu, een driehoek voor een waarschuwing of een vinkje voor succes. Ook de onderstreping van links en iconen die een dropdown of accordion aangeven vallen hieronder.
+- Invoervelden van alle typen: tekstvelden, checkboxen, radio buttons, dropdowns en meer.
+- Aangepaste focusindicatoren. Als je de standaard browserfocus vervangt door een eigen stijl, moet die eigen stijl voldoende contrast hebben.
+- Lijnen en balken in grafieken en gebieden op kaarten.
 
-## Uitzonderingen
+### Uitzonderingen
 
-Als een component van de gebruikersinterface een tekst bevat, dan moet deze tekst voldoen aan [WCAG-succescriterium 1.4.3 Contrast (minimum)](https://nldesignsystem.nl/wcag/1.4.3/). In dat geval hoeft het grafische element zelf niet te voldoen aan de contrasteisen.
+Bevat een UI-component tekst? Dan hoeft het grafische element zelf niet aan de contrastratio van 3:1 te voldoen. De tekst valt dan onder [SC 1.4.3 Contrast (minimum)](https://nldesignsystem.nl/wcag/1.4.3/).
 
-Bijvoorbeeld: een knop met een vergrootglasicoon naast het woord “Zoeken”. Omdat deze knop tekst bevat, wordt het contrast van de tekst gemeten. Het icoon is in dit geval decoratief en hoeft niet te voldoen aan succescritierium 1.4.11.
+Bijvoorbeeld: een knop met een vergrootglasicoon naast het woord "Zoeken". Omdat de knop tekst bevat, wordt het contrast van de tekst gemeten. Het icoon is dan decoratief.
 
-Nog een voorbeeld: een invoerveld met placeholdertekst. Als deze placeholdertekst voldoende contrast heeft (meer dan 4,5:1), hoeft de rand van het invoerveld niet te worden gemeten.
+Nog een voorbeeld: een invoerveld met placeholdertekst. Als de placeholdertekst voldoende contrast heeft (minimaal 4,5:1), hoeft de rand van het invoerveld niet te worden gemeten.
 
-Staat er alleen een grafisch element zonder tekst? Dan moet je het contrast van dit element met de achtergrond worden gemeten. Bijvoorbeeld: een zoekknop met alleen een vergrootglas-icoon. Hier wordt alleen het contrast tussen het icoon en de achtergrond gemeten, niet de rand van de knop. Nog een voorbeeld: een zoekveld zonder placeholdertekst. In dit geval wordt het contrast van de rand van het invoerveld gemeten.
+Staat er alleen een grafisch element zonder tekst? Dan meet je het contrast van dat element met de achtergrond. Denk aan een zoekknop met alleen een vergrootglasicoon. Je meet dan het contrast tussen het icoon en de achtergrond, niet de rand van de knop.
 
-Wanneer het voor een webdeveloper niet mogelijk is om de manier waarop een browser het element toont aan te passen, hoeft dit element niet te worden getest op contrast.
+Elementen die door de browser worden gestyled en die je als developer niet kunt aanpassen, hoeven niet te worden getest.
+
+### Hoogcontrastknop
+
+Biedt je website een hoogcontrastknop aan om onvoldoende contrast te verhelpen? Dan moet die knop alle contrastproblemen oplossen. Test alle kleurencombinaties met de knop ingeschakeld. De knop moet op alle schermformaten zichtbaar zijn en moet zelf ook voldoende contrast hebben.
 
 ## Veelgemaakte fouten
 
-### Fout: een informatief icoon heeft onvoldoende kleurcontrast met de achtergrond waar het op staat
+### Fout: informatief icoon heeft onvoldoende contrast met de achtergrond
 
-Denk bijvoorbeeld aan een hamburger icoon of een avatar icoon. Let op: de achtergrond en de kleur van het icoon kan veranderen wanneer de lay-out van de pagina verandert.
+Een hamburgericoon, een avatar of een pijltjesicoon dat informatie geeft, moet minimaal een contrastverhouding van 3:1 hebben met de achtergrond. Let op: de achtergrondkleur kan veranderen bij een andere schermgrootte of in dark mode.
 
-### Fout: een invoerveld heeft onvoldoende contrast met de achtergrond waar het op staat
+```html
+<!-- Fout: lichtgrijs icoon op witte achtergrond, contrast 2,3:1 -->
+<button aria-label="Menu">
+  <svg fill="#BBBBBB" viewBox="0 0 24 24">
+    <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" />
+  </svg>
+</button>
 
-Wanneer er geen placeholdertekst aanwezig is met voldoende contrast, dan is het voor sommige bezoekers niet zichtbaar waar ze gegevens moeten invoeren.
+<!-- Goed: donkerder icoon, contrast 4,6:1 -->
+<button aria-label="Menu">
+  <svg fill="#767676" viewBox="0 0 24 24">
+    <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" />
+  </svg>
+</button>
+```
 
-### Fout: de actieve link in het menu heeft een onderstreping met onvoldoende contrast
+### Fout: invoerveld heeft onvoldoende contrast met de achtergrond
 
-Als er geen andere methode wordt gebruikt om aan te geven dat het om een actieve link gaat, dan zullen sommige bezoeker deze informatie missen.
-De onderstreping moet duidelijk zichtbaar zijn. Een alternatief is bijvoorbeeld een vetgedrukte tekst kunnen of een icoon naast de link.
+Als er geen placeholdertekst met voldoende contrast aanwezig is, moet de rand van het invoerveld minimaal 3:1 contrast hebben met de achtergrond. Zonder die rand is het voor veel bezoekers niet zichtbaar waar ze gegevens moeten invoeren.
 
-### Fout: onvoldoende contrastratio van een zelfgemaakte focusindicator
+```css
+/* Fout: lichtgrijze rand op wit, contrast 1,5:1 */
+.invoerveld {
+  border: 1px solid #d9d9d9;
+  background-color: #ffffff;
+}
 
-Wanneer de standaard browserfocus wordt vervangen door een eigen focusindicator, moet het contrast op alle achtergronden van de website voldoende zijn. De standaard browserfocus hoeft niet te worden getest.
+/* Goed: donkerdere rand, contrast 3,1:1 */
+.invoerveld {
+  border: 1px solid #767676;
+  background-color: #ffffff;
+}
+```
 
-### Fout: het contrast tussen de balken of lijnen in een grafiek of gebieden op een kaart is lager dan 3:1
+### Fout: actieve link in het menu heeft een onderstreping met onvoldoende contrast
 
-Wanneer alleen kleur wordt gebruikt om informatie in een grafiek of een kaart te tonen en het contrast onvoldoende is, is deze informatie niet voor iedereen zichtbaar.
+Als de onderstreping de enige manier is om aan te geven welke pagina actief is, moet die onderstreping een contrast van minimaal 3:1 hebben met de achtergrond. Een alternatief is een vetgedrukte tekst of een icoon naast de link.
 
-### Fout: een screenshot waarop een cirkel is getekend om aandacht te trekken, heeft onvoldoende contrast
+```css
+/* Fout: lichtblauwe onderstreping op wit, contrast 2,5:1 */
+.nav-link--actief {
+  border-bottom: 3px solid #8ab4f8;
+}
 
-Veelgebruikte kleuren voor dergelijke cirkels zijn geel of rood. Deze kleuren hebben in veel situaties een contrast dat lager is dan 3:1.
+/* Goed: donkere onderstreping, contrast 4,6:1 */
+.nav-link--actief {
+  border-bottom: 3px solid #2056a5;
+}
+
+/* Of: combineer meerdere visuele aanwijzingen */
+.nav-link--actief {
+  border-bottom: 3px solid #2056a5;
+  font-weight: bold;
+}
+```
+
+### Fout: zelfgemaakte focusindicator heeft onvoldoende contrast
+
+Als je de standaard browserfocus vervangt door een eigen focusindicator, moet het contrast op alle achtergronden minimaal 3:1 zijn. De standaard browserfocus hoeft niet te worden getest.
+
+```css
+/* Fout: lichtblauwe outline op wit, contrast 1,8:1 */
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #99ccff;
+}
+
+/* Goed: contrastrijke focusring, contrast 4,6:1 */
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #2056a5;
+}
+
+/* Of: twee kleuren om op zowel lichte als donkere achtergronden te werken */
+button:focus-visible {
+  outline: 2px solid #2056a5;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px #ffffff;
+}
+```
+
+### Fout: contrast van balken of lijnen in een grafiek is lager dan 3:1
+
+Als je alleen kleur gebruikt om informatie in een grafiek te tonen en het contrast met aangrenzende elementen is lager dan 3:1, dan is de informatie niet voor iedereen zichtbaar. Aangrenzende balken, lijnen of gebieden moeten onderling en met de achtergrond voldoende contrasteren.
+
+```html
+<!-- Fout: twee lichte kleuren naast elkaar, contrast onderling 1,3:1 -->
+<div class="staaf" style="background-color: #90CAF9; height: 60%;"></div>
+<div class="staaf" style="background-color: #A5D6A7; height: 40%;"></div>
+
+<!-- Goed: voldoende contrast én randen als extra onderscheid -->
+<div class="staaf" style="background-color: #1565C0; height: 60%;"></div>
+<div class="staaf" style="background-color: #2E7D32; height: 40%;"></div>
+```
+
+### Fout: screenshot met cirkel of markering die onvoldoende contrast heeft
+
+Op screenshots worden vaak gekleurde cirkels of pijlen gebruikt om aandacht te trekken. Veelgebruikte kleuren als geel of rood hebben op een lichte achtergrond vaak een contrast lager dan 3:1.
+
+### Fout: checkbox of radiobutton heeft onvoldoende contrast
+
+Als je de standaard browser-checkboxen of -radiobuttons vervangt door eigen ontwerpen, moeten de randen en de selectie-indicatoren minimaal 3:1 contrast hebben met de achtergrond.
+
+```css
+/* Fout: lichtgrijze rand, contrast 1,9:1 op wit */
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+}
+
+/* Goed: rand met voldoende contrast, 4,6:1 op wit */
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #767676;
+  border-radius: 3px;
+}
+
+/* Aangevinkte staat: het vinkje moet ook voldoende contrast hebben */
+.checkbox-custom--checked {
+  background-color: #2056a5;
+  border-color: #2056a5;
+}
+```
+
+## Gerelateerde succescriteria
+
+- [SC 1.4.1](https://nldesignsystem.nl/wcag/1.4.1/) — Gebruik van kleur: kleur mag niet het enige middel zijn om informatie over te brengen.
+- [SC 1.4.3](https://nldesignsystem.nl/wcag/1.4.3/) — Contrast (minimum): tekst moet voldoende contrasteren met de achtergrond (4,5:1).
+- [SC 2.4.7](https://nldesignsystem.nl/wcag/2.4.7/) — Focus zichtbaar: interactieve elementen moeten een zichtbare focusindicator hebben.
+- [SC 2.4.11](https://nldesignsystem.nl/wcag/2.4.11/) — Focus niet bedekt: de focusindicator mag niet volledig bedekt worden door andere content.
 
 ## Hoe te testen
 
-Gebruik een contrast tool of de inspector in de browser.
+### Voor iedereen
 
-- Tool om te installeren: [Color Contrast Analyzer](https://vispero.com/color-contrast-checker/)
-- Tool in de browser: [Contrast checker van WebAim](https://webaim.org/resources/contrastchecker/)
+1. Kijk naar informatieve iconen, invoervelden, knoppen en andere UI-elementen. Zijn ze duidelijk zichtbaar?
+2. Controleer of je invoervelden goed kunt onderscheiden van de achtergrond. Weet je waar je moet klikken om tekst in te voeren?
+3. Tab door de pagina met je toetsenbord. Is de focusindicator op elk element duidelijk zichtbaar?
+4. Bekijk de pagina op verschillende schermformaten. Controleer ook de mobiele weergave.
+5. Test in dark mode als de website dat aanbiedt.
 
-Bij informatieve iconen wordt het contrast tussen het icoon en de achtergrond beoordeeld. Heeft het icoon een rand? Dan hoeft deze niet te worden getest. Het icoon is in dit geval informatief, niet de rand.
+### Voor developers
 
-Bij invoervelden zonder placeholdertekst of met placeholdertekst met onvoldoende contrast (lager dan 4,5:1), wordt het contrast van de rand van het invoerveld getest.
-
-Controleer eerst of het element actief is. Een actief element reageert op interactie van een bezoeker. In de HTML hebben de niet-actieve elementen het attribuut ‘disabled’.
-
-### Welke scenario’s moet je testen?
-
-- Verschillende gangbare schermgroottes, inclusief mobiele weergave. Je zoomt in met (Control / Command +)
-- Verschillende oriëntaties: portrait en landscape
-- Een dark mode in een browser
+1. Gebruik de Color Contrast Analyzer of de DevTools contrastchecker om de kleuren van niet-tekstuele elementen te meten. Pak de kleur van het element en de kleur van de achtergrond en controleer of de verhouding minimaal 3:1 is.
+2. Controleer aangepaste focusindicatoren. Zoek in je CSS naar `outline`, `box-shadow` of `border` op `:focus` en `:focus-visible`. Meet het contrast van die kleuren op alle achtergronden.
+3. Controleer aangepaste formuliervelden. Heb je checkboxen, radiobuttons of dropdowns opnieuw vormgegeven? Meet het contrast van de randen en selectie-indicatoren.
+4. Controleer invoervelden zonder placeholdertekst. Meet het contrast van de rand met de achtergrond.
+5. Controleer informatieve iconen. Meet het contrast van de icoonfill of -stroke met de achtergrond.
+6. Controleer grafieken en diagrammen. Meet het contrast van aangrenzende balken, lijnen of gebieden, zowel onderling als met de achtergrond.
+7. Controleer of inactieve elementen daadwerkelijk `disabled` zijn in de HTML. Alleen dan geldt de uitzondering.
 
 ### Wat test je niet?
 
-- Het contrast van uitgeschakelde elementen (disabled in de HTML)
-- Het contrast van decoratieve elementen, zoals een scheidingslijn tussen secties
-- Iconen die naast tekst op een knop, link of als een label bij een invoerveld staan en alleen een aanvulling zijn op de tekst
-- De rand van een invoerveld wanneer de tekst in het veld een contrastratio hoger dan 4,5:1 heeft
-- UI-elementen die door de browser zelf worden toegevoegd, zoals een kruisje in een invoerveld van het type “search”
-
-## Wie maakt gebruik van NL Design System
-
-- Gemeente Utrecht
-- Gemeente Den Haag
-- Gemeente Amsterdam
-- Zie de volledige lijst op [Wie doet mee?](https://nldesignsystem.nl/community/wie-doet-mee/)
+- Het contrast van uitgeschakelde elementen (`disabled` in de HTML).
+- Decoratieve elementen, zoals een scheidingslijn tussen secties.
+- Iconen die naast tekst staan op een knop, link of als label bij een invoerveld. Die iconen zijn een aanvulling op de tekst en hoeven niet apart te voldoen.
+- De rand van een invoerveld als de placeholdertekst een contrast hoger dan 4,5:1 heeft.
+- UI-elementen die door de browser worden toegevoegd, zoals het kruisje in een invoerveld van het type `search`.
+- De standaard browserfocus. Alleen aangepaste focusindicatoren moeten worden getest.
 
 ## Gerelateerde NL Design System-richtlijnen
 
