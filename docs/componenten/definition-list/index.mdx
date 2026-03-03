@@ -17,15 +17,24 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Description List";
 export const description = "Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.";
 export const issueNumber = 92;
+export const relayStep = "help wanted";
+export const componentName = "definition-list";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentIllustration
+  relayStep={relayStep}
+  description={`Schets van de ${componentName} component`}
+  name={componentName}
+/>
 
 ## Definition of Done
 
