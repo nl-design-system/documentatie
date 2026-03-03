@@ -21,34 +21,34 @@ export const general = [
     title: 'Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst',
     sc: '1.4.5',
     status: '',
-    component: <Wcag145 />,
+    component: Wcag145,
   },
   {
     title:
       'De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).',
     sc: '2.4.4',
     status: '',
-    component: <Wcag244 />,
+    component: Wcag244,
   },
   {
     title:
       'Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken',
     sc: '2.5.2',
     status: '',
-    component: <Wcag252 />,
+    component: Wcag252,
   },
   {
     title: 'De zichtbare naam van de Login Link komt voor in de toegankelijke naam',
     sc: '2.5.3',
     status: '',
-    component: <Wcag253 />,
+    component: Wcag253,
   },
   {
     title:
       'Als de tekst van de Login Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode',
     sc: '3.1.2',
     status: '',
-    component: <Wcag312 />,
+    component: Wcag312,
   },
 ];
 
@@ -57,14 +57,14 @@ export const visualDesign = [
     title: 'De contrastverhouding van de tekstkleur in Login Link met de achtergrondkleur is hoog genoeg.',
     sc: '1.4.3',
     status: '',
-    component: <Wcag143 />,
+    component: Wcag143,
   },
   {
     title:
       'Als het zichtbare label van de Login Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1',
     sc: '1.4.11',
     status: '',
-    component: <Wcag1411 />,
+    component: Wcag1411,
   },
   /* Suspended until we have a common implementation of focus-indicator in 2025Q1 */
   /*
@@ -72,20 +72,20 @@ export const visualDesign = [
   title: "De Login Link heeft een goed zichtbare focusindicator",
   sc: "2.4.13",
   status: "",
-  component: <Wcag2413 />,
+  component: Wcag2413 ,
 },
  */
   {
     title: 'De Login Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels',
     sc: '2.5.5',
     status: '',
-    component: <Wcag255 />,
+    component: Wcag255,
   },
   {
     title: 'Login Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label',
     sc: '3.2.4',
     status: '',
-    component: <Wcag324 />,
+    component: Wcag324,
   },
 ];
 
@@ -94,13 +94,13 @@ export const zoom = [
     title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar',
     sc: '1.4.4',
     status: '',
-    component: <Wcag144 />,
+    component: Wcag144,
   },
   {
     title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar',
     sc: '1.4.12',
     status: '',
-    component: <Wcag1412 />,
+    component: Wcag1412,
   },
 ];
 
@@ -109,25 +109,25 @@ export const keyboard = [
     title: 'Je kunt de Login Link focussen met de tabtoets en activeren met de entertoets',
     sc: '2.1.1',
     status: '',
-    component: <Wcag211 />,
+    component: Wcag211,
   },
   {
     title: 'De functionaliteit van de Login Link veroorzaakt geen toetsenbordval',
     sc: '2.1.2',
     status: '',
-    component: <Wcag212 />,
+    component: Wcag212,
   },
   {
     title: 'Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar',
     sc: '2.4.7',
     status: '',
-    component: <Wcag247 />,
+    component: Wcag247,
   },
   {
     title: 'Als de Login Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud',
     sc: '2.4.11',
     status: '',
-    component: <Wcag2411 />,
+    component: Wcag2411,
   },
 ];
 
@@ -136,13 +136,13 @@ export const screenreader = [
     title: 'Als het label van de Login Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief',
     sc: '1.1.1',
     status: '',
-    component: <Wcag111 />,
+    component: Wcag111,
   },
   {
     title:
       'De Login Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Login Link voor dient',
     sc: '4.1.2',
     status: '',
-    component: <Wcag412 />,
+    component: Wcag412,
   },
 ];

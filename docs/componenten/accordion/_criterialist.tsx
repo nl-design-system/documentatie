@@ -27,50 +27,50 @@ export const general = [
     title: 'De informatie in de accordeon bestaat uit tekst, niet uit tekst in een afbeelding',
     sc: '1.4.5',
     status: '',
-    component: <Wcag145 />,
+    component: Wcag145,
   },
   {
     title: 'Het is duidelijk welke content in de accordion aanwezig is',
     sc: '2.4.6',
     status: '',
-    component: <Wcag246 />,
+    component: Wcag246,
   },
   {
     title: 'De bezoeker kan het openen van de accordion of een interactief element in de accordion annuleren',
     sc: '2.5.2',
     status: '',
-    component: <Wcag252 />,
+    component: Wcag252,
   },
   {
     title: 'De visuele naam van de accordion komt voor in de toegankelijke naam van de accordion',
     sc: '2.5.3',
     status: '',
-    component: <Wcag253 />,
+    component: Wcag253,
   },
   {
     title: 'Het aanwijsgebied van de accordion is groot genoeg',
     sc: '2.5.5',
     status: '',
-    component: <Wcag255 />,
+    component: Wcag255,
   },
   {
     title:
       'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig',
     sc: '3.1.2',
     status: '',
-    component: <Wcag312 />,
+    component: Wcag312,
   },
   {
     title: 'Het gedrag van de accordion is voorspelbaar',
     sc: '3.2.1',
     status: '',
-    component: <Wcag321 />,
+    component: Wcag321,
   },
   {
     title: 'Het openen of sluiten van de accordion verplaatst de focus niet',
     sc: '3.2.2',
     status: '',
-    component: <Wcag322 />,
+    component: Wcag322,
   },
 ];
 
@@ -79,32 +79,32 @@ export const visualDesign = [
     title: 'Informatie in of over de accordion is niet alleen te begrijpen door middel van kleur',
     sc: '1.4.1',
     status: '',
-    component: <Wcag141 />,
+    component: Wcag141,
   },
   {
     title: 'De contrastratio tussen de tekst en de achtergrondkleur in de accordion is hoog genoeg',
     sc: '1.4.3',
     status: '',
-    component: <Wcag143 />,
+    component: Wcag143,
   },
   {
     title: 'Niet-tekstuele content in de accordion heeft een contrastratio van minimaal 3:1 met de achtergrond',
     sc: '1.4.11',
     status: '',
-    component: <Wcag1411 />,
+    component: Wcag1411,
   },
   {
     title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling',
     sc: '2.4.7',
     status: '',
-    component: <Wcag247 />,
+    component: Wcag247,
   },
   {
     title:
       'Accordions met dezelfde functie of informatie zien er op iedere pagina waar de accordion voorkomt hetzelfde uit',
     sc: '3.2.4',
     status: '',
-    component: <Wcag324 />,
+    component: Wcag324,
   },
 ];
 
@@ -113,25 +113,25 @@ export const zoom = [
     title: 'Tekst in de accordion kan 200% vergroot worden zonder verlies van functionaliteit of informatie',
     sc: '1.4.4',
     status: '',
-    component: <Wcag144 />,
+    component: Wcag144,
   },
   {
     title: 'De bezoeker kan de accordeon tot 400% vergroten zonder verlies van functionaliteit of informatie',
     sc: '1.4.10',
     status: '',
-    component: <Wcag1410 />,
+    component: Wcag1410,
   },
   {
     title: 'De tekstopmaak in de accordion kan aangepast worden zonder verlies van functionaliteit of informatie',
     sc: '1.4.12',
     status: '',
-    component: <Wcag1412 />,
+    component: Wcag1412,
   },
   {
     title: 'De accordion opent niet bij hover of focus.',
     sc: '1.4.13',
     status: '',
-    component: <Wcag1413 />,
+    component: Wcag1413,
   },
 ];
 
@@ -140,31 +140,31 @@ export const keyboard = [
     title: 'De accordion is bedienbaar met het toetsenbord',
     sc: '2.1.1',
     status: '',
-    component: <Wcag211 />,
+    component: Wcag211,
   },
   {
     title: 'De accordion zorgt niet voor een toetsenbordval',
     sc: '2.1.2',
     status: '',
-    component: <Wcag212 />,
+    component: Wcag212,
   },
   {
     title: 'De focusvolgorde rondom en in de accordion is logisch',
     sc: '2.4.3',
     status: '',
-    component: <Wcag243 />,
+    component: Wcag243,
   },
   {
     title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling',
     sc: '2.4.6',
     status: '',
-    component: <Wcag246 />,
+    component: Wcag246,
   },
   {
     title: 'De accordion wordt niet bedekt door andere content',
     sc: '2.4.11',
     status: '',
-    component: <Wcag2411 />,
+    component: Wcag2411,
   },
 ];
 
@@ -173,25 +173,25 @@ export const screenreader = [
     title: 'De staat van de accordion is beschikbaar voor hulpsoftware',
     sc: '1.3.1',
     status: '',
-    component: <Wcag131 />,
+    component: Wcag131,
   },
   {
     title: 'Het is duidelijk welke content in de accordion aanwezig is',
     sc: '2.4.6',
     status: '',
-    component: <Wcag246 />,
+    component: Wcag246,
   },
   {
     title:
       'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig',
     sc: '3.1.2',
     status: '',
-    component: <Wcag312 />,
+    component: Wcag312,
   },
   {
     title: 'De accordion heeft een toegankelijke naam, rol en status',
     sc: '4.1.2',
     status: '',
-    component: <Wcag412 />,
+    component: Wcag412,
   },
 ];

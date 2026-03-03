@@ -22,7 +22,7 @@ import DocCardList from '@theme/DocCardList';
 import { ComponentOverview } from '@site/src/components/ComponentOverview';
 import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
 import { ComponentAnatomy } from '@site/src/components/ComponentAnatomy';
-import { CriteriaList } from '@site/src/components/ComponentCriteriaList';
+import { CriteriaList, CriteriaListItem } from '@site/src/components/ComponentCriteriaList';
 
 interface Props {
   children: ReactNode;
@@ -59,6 +59,7 @@ export default function MDXContent({ children }: Props): ReactElement {
         ChecklistItem,
         ComponentAnatomy,
         CriteriaList,
+        CriteriaListItem,
       }}
     >
       {children}
