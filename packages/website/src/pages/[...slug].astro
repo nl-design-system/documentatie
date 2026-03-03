@@ -11,8 +11,9 @@ import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
+  const components = await getCollection('components');
 
-  return docs
+  return [...docs, ...components]
     .filter((page) => page.data?.unlisted !== true)
     .map((page) => ({
       params: { slug: page.id },
