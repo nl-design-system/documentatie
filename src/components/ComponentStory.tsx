@@ -1,7 +1,7 @@
 import { useId, type HTMLAttributes, type ReactNode } from 'react';
 
-import '@nl-design-system-community/theme-wizard-app/dist/components/wizard-reset-theme/index.js';
-import '@nl-design-system-community/theme-wizard-app/dist/components/wizard-story-preview/index.js';
+import '@nl-design-system-community/theme-wizard-app/dist/components/wizard-reset-theme.js';
+import '@nl-design-system-community/theme-wizard-app/dist/components/wizard-story-preview.js';
 import './ComponentStory.css';
 
 declare global {
