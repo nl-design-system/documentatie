@@ -145,6 +145,7 @@
     "@nl-design-system-candidate/color-sample-react": "1.2.2",
     "@nl-design-system-community/editor-react": "1.2.0",
     "@nl-design-system-community/ma-design-tokens": "2.5.0",
+    "@nl-design-system-community/theme-wizard-app": "1.0.0",
     "@nl-design-system-unstable/documentation": "workspace:*",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "9.0.0",

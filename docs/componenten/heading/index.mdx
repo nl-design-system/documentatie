@@ -82,10 +82,9 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<ComponentStory
-  label="Voorbeeld van een Heading 3"
-  render={() => <CandidateHeading level={3}>Kopniveau 3 voorbeeld</CandidateHeading>}
-/>
+<ComponentStory label="Voorbeeld van een Heading 3">
+  <CandidateHeading level={3}>Kopniveau 3 voorbeeld</CandidateHeading>
+</ComponentStory>
 
 <ComponentAliases component={component} />
 

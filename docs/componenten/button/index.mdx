@@ -101,17 +101,14 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<ComponentStory
-  label="Voorbeeld met 4 Buttons die het visueel ontwerp van de Primary, Secondary, Subtle en Default button laten zien."
-  render={() => (
-    <ActionGroup>
-      <Button purpose="primary">Primary</Button>
-      <Button purpose="secondary">Secondary</Button>
-      <Button purpose="subtle">Subtle</Button>
-      <Button>Default</Button>
-    </ActionGroup>
-  )}
-/>
+<ComponentStory label="Voorbeeld met 4 Buttons die het visueel ontwerp van de Primary, Secondary, Subtle en Default button laten zien.">
+  <ActionGroup>
+    <Button purpose="primary">Primary</Button>
+    <Button purpose="secondary">Secondary</Button>
+    <Button purpose="subtle">Subtle</Button>
+    <Button>Default</Button>
+  </ActionGroup>
+</ComponentStory>
 
 <ComponentAliases component={component} />
 

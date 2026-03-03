@@ -67,10 +67,9 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<ComponentStory
-  label="Voorbeeld van een Number Badge met het getal 42"
-  render={() => <CandidateNumberBadge label="42 ongelezen berichten">{"42"}</CandidateNumberBadge>}
-/>
+<ComponentStory label="Voorbeeld van een Number Badge met het getal 42">
+  <CandidateNumberBadge label="42 ongelezen berichten">{"42"}</CandidateNumberBadge>
+</ComponentStory>
 
 <ComponentAliases component={component} />
 

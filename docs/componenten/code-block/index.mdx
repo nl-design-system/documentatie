@@ -78,16 +78,13 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<ComponentStory
-  label="Voorbeeld van een Code Block met de eerste regels van een HTML-bestand"
-  render={() => (
-    <CandidateCodeBlock>{`<!DOCTYPE html>
+<ComponentStory label="Voorbeeld van een Code Block met de eerste regels van een HTML-bestand">
+  <CandidateCodeBlock>{`<!DOCTYPE html>
 <html lang="nl" dir="ltr">
   <head>
     <title>NL Design System</title>
     ...`}</CandidateCodeBlock>
-  )}
-/>
+</ComponentStory>
 
 <ComponentAliases component={component} />
 

@@ -81,10 +81,9 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<ComponentStory
-  label="Voorbeeld van een Paragraph met een korte zin waarin bijna alle letters van het alfabet zijn gebruikt"
-  render={() => <CandidateParagraph>{"Op brute wĳze ving de schooljuf de quasi-kalme lynx."}</CandidateParagraph>}
-/>
+<ComponentStory label="Voorbeeld van een Paragraph met een korte zin waarin bijna alle letters van het alfabet zijn gebruikt">
+  <CandidateParagraph>{"Op brute wĳze ving de schooljuf de quasi-kalme lynx."}</CandidateParagraph>
+</ComponentStory>
 
 <ComponentAliases component={component} />
 

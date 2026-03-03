@@ -1,7 +1,7 @@
-import { useId, type HTMLAttributes, type ReactNode } from 'react';
+import { useId, type HTMLAttributes, type PropsWithChildren } from 'react';
 
-import '@nl-design-system-community/theme-wizard-app/dist/components/wizard-reset-theme.js';
-import '@nl-design-system-community/theme-wizard-app/dist/components/wizard-story-preview.js';
+// import '@nl-design-system-community/theme-wizard-app/dist/components/wizard-reset-theme.js';
+// import '@nl-design-system-community/theme-wizard-app/dist/components/wizard-story-preview.js';
 import './ComponentStory.css';
 
 declare global {
@@ -18,17 +18,16 @@ export interface ComponentStoryProps {
   lang?: string;
   dir?: string;
   label?: string;
-  render: () => ReactNode;
 }
 
-export const ComponentStory = ({ dir, label, lang, render }: ComponentStoryProps) => {
+export const ComponentStory = ({ dir, label, lang, children }: PropsWithChildren<ComponentStoryProps>) => {
   const labelId = useId();
   return (
     <figure className="reset-figure" aria-labelledby={labelId}>
       <wizard-story-preview>
         <wizard-reset-theme>
           <div className="voorbeeld-theme" aria-hidden="true" lang={lang} dir={dir}>
-            {render()}
+            {children}
           </div>
         </wizard-reset-theme>
       </wizard-story-preview>

@@ -87,10 +87,9 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<ComponentStory
-  label="Voorbeeld van een Color Sample waar een klein vakje met is ingekleurd"
-  render={() => <CandidateColorSample value="#007dad" />}
-/>
+<ComponentStory label="Voorbeeld van een Color Sample waar een klein vakje met is ingekleurd">
+  <CandidateColorSample value="#007dad" />
+</ComponentStory>
 
 <ComponentAliases component={component} />
 

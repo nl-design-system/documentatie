@@ -73,16 +73,13 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<ComponentStory
-  label='Voorbeeld van  Mark in een zin waar "quasi-kalme lynx" gemarkeerd is.'
-  render={() => (
-    <div>
-      {"Op brute wĳze ving de schooljuf de "}
-      <CandidateMark>quasi-kalme lynx</CandidateMark>
-      {"."}
-    </div>
-  )}
-/>
+<ComponentStory label='Voorbeeld van  Mark in een zin waar "quasi-kalme lynx" gemarkeerd is.'>
+  <div>
+    {"Op brute wĳze ving de schooljuf de "}
+    <CandidateMark>quasi-kalme lynx</CandidateMark>
+    {"."}
+  </div>
+</ComponentStory>
 
 <ComponentAliases component={component} />
 

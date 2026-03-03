@@ -75,16 +75,13 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<ComponentStory
-  label="Voorbeeld van een stukje HTML-code in een lopende zin."
-  render={() => (
-    <div>
-      {"Gebruik "}
-      <CandidateCode>{'<code class="nl-code">'}</CandidateCode>
-      {" om code in lopende tekst te plaatsen."}
-    </div>
-  )}
-/>
+<ComponentStory label="Voorbeeld van een stukje HTML-code in een lopende zin.">
+  <div>
+    {"Gebruik "}
+    <CandidateCode>{'<code class="nl-code">'}</CandidateCode>
+    {" om code in lopende tekst te plaatsen."}
+  </div>
+</ComponentStory>
 
 <ComponentAliases component={component} />
 
