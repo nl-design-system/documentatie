@@ -1,5 +1,5 @@
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [18401, 83249, 84813],
+ [18401, 37643, 83249],
  {
   3227(e, t, n) {
    'use strict';
@@ -206,8 +206,8 @@
      );
     };
    var G = n(46072),
-    _ = n(79889);
-   const W = ({ title: e, sc: t, children: n, tags: s }) => {
+    W = n(79889);
+   const _ = ({ title: e, sc: t, children: n, tags: s }) => {
      const r = (0, l.useId)(),
       o = [...s];
      if (t) {
@@ -230,10 +230,10 @@
           (0, i.jsx)(x._Q, {
            className: 'new-checklist__badge-list',
            children: o.map((e, t) => {
-            let n = (0, i.jsx)(_.K, { children: e }, t);
+            let n = (0, i.jsx)(W.K, { children: e }, t);
             if (/^[0-9]+\.[0-9]+\.[0-9]+$/.test(e)) {
              const s = G.pI.get(e);
-             n = (0, i.jsx)(v.N, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${s.sc} ${s.nl.title}`, style: { lineHeight: 1 }, children: (0, i.jsx)(_.K, { children: `WCAG ${e}` }) }, t);
+             n = (0, i.jsx)(v.N, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${s.sc} ${s.nl.title}`, style: { lineHeight: 1 }, children: (0, i.jsx)(W.K, { children: `WCAG ${e}` }) }, t);
             }
             return n;
            }),
@@ -312,56 +312,27 @@
      });
     };
    var S = n(12013);
-   const P = ({ children: e }) => (0, i.jsx)('ol', { className: 'nlds-anatomy-list', children: e }),
-    L = ({ children: e }) => (0, i.jsx)('li', { className: 'nlds-anatomy-list__item', children: e }),
+   const L = ({ children: e }) => (0, i.jsx)('ol', { className: 'nlds-anatomy-list', children: e }),
+    P = ({ children: e }) => (0, i.jsx)('li', { className: 'nlds-anatomy-list__item', children: e }),
     F = ({ component: e, illustration: t }) => {
      const { title: s } = e,
       r = (0, j.fX)(s),
       o = l.lazy(() => n(51580)(`./${r}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
-     return (0, i.jsx)(l.Suspense, { fallback: null, children: (0, i.jsxs)('figure', { className: (0, g.A)('component-anatomy'), children: [t && (0, i.jsx)(t, { height: null, className: (0, g.A)('component-anatomy__illustration') }), t && o && (0, i.jsx)('figcaption', { children: (0, i.jsx)(S.o, { omitH1: !0, headingLevel: 1, components: { ol: ({ children: e }) => (0, i.jsx)(P, { children: e }), li: ({ children: e }) => (0, i.jsx)(L, { children: e }) }, children: (0, i.jsx)(o, {}) }) })] }) });
+     return (0, i.jsx)(l.Suspense, { fallback: null, children: (0, i.jsxs)('figure', { className: (0, g.A)('component-anatomy'), children: [t && (0, i.jsx)(t, { height: null, className: (0, g.A)('component-anatomy__illustration') }), t && o && (0, i.jsx)('figcaption', { children: (0, i.jsx)(S.o, { omitH1: !0, headingLevel: 1, components: { ol: ({ children: e }) => (0, i.jsx)(L, { children: e }), li: ({ children: e }) => (0, i.jsx)(P, { children: e }) }, children: (0, i.jsx)(o, {}) }) })] }) });
     },
-    M = ({ title: e, sc: t, status: n, component: s, headingLevel: r = 4 }) => {
+    M = ({ title: e, sc: t, status: n, children: s, headingLevel: r = 4 }) => {
      const o = G.pI.get(t),
       l = o ? `${t} ${o.nl?.title}` : t;
      return (0, i.jsxs)('div', { className: 'component-criteria-section', children: [(0, i.jsx)(m.DZ, { appearance: 'utrecht-heading-4', level: r, className: 'component-criteria-section__heading', children: e }), (t || n) && (0, i.jsxs)('dl', { className: 'component-criteria-section__dl', children: [t && (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)('dt', { className: 'component-criteria-section__dt', children: 'WCAG' }), (0, i.jsx)('dd', { className: 'component-criteria-section__dd', children: (0, i.jsx)(m.N_, { href: `/wcag/${t}/`, children: l }) })] }), n && (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)('dt', { className: 'component-criteria-section__dt', children: 'Status' }), (0, i.jsx)('dd', { className: 'component-criteria-section__dl', children: n })] })] }), s] });
     },
-    D = ({ testCategory: e, items: t }) => (0, i.jsx)(x.If, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 3, expanded: !1, label: (0, i.jsx)('span', { children: e }), body: t.map((e, t) => (0, i.jsx)(M, { ...e }, t)) }] });
+    D = ({ testCategory: e, children: t }) => (0, i.jsx)(x.If, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 3, expanded: !1, label: (0, i.jsx)('span', { children: e }), body: t }] });
    function O({ children: e }) {
-    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: r.A, OverviewPage: w, DocCardList: u.A, ComponentOverview: N, Checklist: R, ChecklistItem: W, ComponentAnatomy: F, CriteriaList: D }, children: e });
-   }
-  },
-  10441(e, t, n) {
-   'use strict';
-   (n.r(t), n.d(t, { default: () => f }));
-   n(30758);
-   var s = n(13526),
-    r = n(18236),
-    o = n(71639),
-    l = n(86332),
-    i = n(57485),
-    a = n(63195),
-    c = n(57605),
-    d = n(19485),
-    m = n(63811),
-    h = n(99816),
-    g = n(76310),
-    u = n(39470),
-    p = n(86070);
-   function w({ tag: e }) {
-    const t = (0, i.ZD)(e);
-    return (0, p.jsxs)(p.Fragment, { children: [(0, p.jsx)(l.be, { title: t, description: e.description }), (0, p.jsx)(m.A, { tag: 'blog_tags_posts' })] });
-   }
-   function A({ tag: e, items: t, sidebar: n, listMetadata: s }) {
-    const o = (0, i.ZD)(e);
-    return (0, p.jsxs)(c.A, { sidebar: n, children: [e.unlisted && (0, p.jsx)(g.A, {}), (0, p.jsxs)('header', { className: 'margin-bottom--xl', children: [(0, p.jsx)(u.A, { as: 'h1', children: o }), e.description && (0, p.jsx)('p', { children: e.description }), (0, p.jsx)(a.A, { href: e.allTagsPath, children: (0, p.jsx)(r.A, { id: 'theme.tags.tagsPageLink', description: 'The label of the link targeting the tag list page', children: 'View All Tags' }) })] }), (0, p.jsx)(h.A, { items: t }), (0, p.jsx)(d.A, { metadata: s })] });
-   }
-   function f(e) {
-    return (0, p.jsxs)(l.e3, { className: (0, s.A)(o.G.wrapper.blogPages, o.G.page.blogTagPostListPage), children: [(0, p.jsx)(w, { ...e }), (0, p.jsx)(A, { ...e })] });
+    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: r.A, OverviewPage: w, DocCardList: u.A, ComponentOverview: N, Checklist: R, ChecklistItem: _, ComponentAnatomy: F, CriteriaList: D, CriteriaListItem: M }, children: e });
    }
   },
   11063(e, t, n) {
    'use strict';
-   n.d(t, { A: () => P });
+   n.d(t, { A: () => L });
    n(30758);
    var s = n(13526),
     r = n(68139),
@@ -429,13 +400,13 @@
    }
    var N = n(71639),
     G = n(29307),
-    _ = n(97068);
-   function W() {
+    W = n(97068);
+   function _() {
     return (0, o.jsx)('b', { children: (0, o.jsx)(d.A, { id: 'theme.blog.post.readMore', description: 'The label used in blog post item excerpts to link to full blog posts', children: 'Read more' }) });
    }
    function R(e) {
     const { blogPostTitle: t, ...n } = e;
-    return (0, o.jsx)(i.A, { 'aria-label': (0, d.T)({ message: 'Read more about {title}', id: 'theme.blog.post.readMoreLabel', description: 'The ARIA label for the link to full blog posts from excerpts' }, { title: t }), ...n, children: (0, o.jsx)(W, {}) });
+    return (0, o.jsx)(i.A, { 'aria-label': (0, d.T)({ message: 'Read more about {title}', id: 'theme.blog.post.readMoreLabel', description: 'The ARIA label for the link to full blog posts from excerpts' }, { title: t }), ...n, children: (0, o.jsx)(_, {}) });
    }
    function S() {
     const { metadata: e, isBlogPostPage: t } = (0, r.e7)(),
@@ -445,11 +416,11 @@
     if (!(h || m || i)) return null;
     if (t) {
      const e = !!(i || d || c);
-     return (0, o.jsxs)('footer', { className: 'docusaurus-mt-lg', children: [h && (0, o.jsx)('div', { className: (0, s.A)('row', 'margin-top--sm', N.G.blog.blogFooterEditMetaRow), children: (0, o.jsx)('div', { className: 'col', children: (0, o.jsx)(_.A, { tags: n }) }) }), e && (0, o.jsx)(G.A, { className: (0, s.A)('margin-top--sm', N.G.blog.blogFooterEditMetaRow), editUrl: i, lastUpdatedAt: d, lastUpdatedBy: c })] });
+     return (0, o.jsxs)('footer', { className: 'docusaurus-mt-lg', children: [h && (0, o.jsx)('div', { className: (0, s.A)('row', 'margin-top--sm', N.G.blog.blogFooterEditMetaRow), children: (0, o.jsx)('div', { className: 'col', children: (0, o.jsx)(W.A, { tags: n }) }) }), e && (0, o.jsx)(G.A, { className: (0, s.A)('margin-top--sm', N.G.blog.blogFooterEditMetaRow), editUrl: i, lastUpdatedAt: d, lastUpdatedBy: c })] });
     }
-    return (0, o.jsxs)('footer', { className: 'row docusaurus-mt-lg', children: [h && (0, o.jsx)('div', { className: (0, s.A)('col', { 'col--9': m }), children: (0, o.jsx)(_.A, { tags: n }) }), m && (0, o.jsx)('div', { className: (0, s.A)('col text--right', { 'col--3': h }), children: (0, o.jsx)(R, { blogPostTitle: l, to: e.permalink }) })] });
+    return (0, o.jsxs)('footer', { className: 'row docusaurus-mt-lg', children: [h && (0, o.jsx)('div', { className: (0, s.A)('col', { 'col--9': m }), children: (0, o.jsx)(W.A, { tags: n }) }), m && (0, o.jsx)('div', { className: (0, s.A)('col text--right', { 'col--3': h }), children: (0, o.jsx)(R, { blogPostTitle: l, to: e.permalink }) })] });
    }
-   function P({ children: e, className: t }) {
+   function L({ children: e, className: t }) {
     const n = (function () {
      const { isBlogPostPage: e } = (0, r.e7)();
      return e ? void 0 : 'margin-bottom--xl';
@@ -716,23 +687,6 @@
    }
    ((r.keys = () => Object.keys(s)), (r.id = 51580), (e.exports = r));
   },
-  57485(e, t, n) {
-   'use strict';
-   n.d(t, { ZD: () => l, uz: () => i });
-   n(30758);
-   var s = n(18236),
-    r = n(18105);
-   n(86070);
-   function o() {
-    const { selectMessage: e } = (0, r.W)();
-    return (t) => e(t, (0, s.T)({ id: 'theme.blog.post.plurals', description: 'Pluralized label for "{count} posts". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)', message: 'One post|{count} posts' }, { count: t }));
-   }
-   function l(e) {
-    const t = o();
-    return (0, s.T)({ id: 'theme.blog.tagTitle', description: 'The title of the page for a blog tag', message: '{nPosts} tagged with "{tagName}"' }, { nPosts: t(e.count), tagName: e.label });
-   }
-   const i = () => (0, s.T)({ id: 'theme.blog.authorsList.pageTitle', message: 'Authors', description: 'The title of the authors page' });
-  },
   67970(e, t, n) {
    'use strict';
    n.d(t, { D: () => i });
@@ -797,43 +751,40 @@
     return (c && (d = d.trim()), (0, a.jsx)(r.f4, { theme: i, code: d, language: t || '', children: ({ style: t, tokens: n, getLineProps: r, getTokenProps: o }) => (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)('span', { hidden: !0, id: g, children: ['codevoorbeeld ', h ? `\u201c${h}\u201d` : '', ' ', m ? ': ' : ' ', m] }), (0, a.jsx)(s.NG, { tabIndex: 0, role: m ? 'region' : void 0, 'aria-labelledby': g, style: t, children: n.map((t, n) => (0, a.jsxs)('span', { ...r({ line: t }), children: [e && (0, a.jsx)('span', { children: n + 1 }), t.map((e, t) => (0, a.jsx)('span', { ...o({ token: e }) }, t)), '\n'] }, n)) })] }) }));
    }
   },
-  76310(e, t, n) {
+  79988(e, t, n) {
    'use strict';
-   n.d(t, { A: () => c });
+   (n.r(t), n.d(t, { default: () => A }));
    n(30758);
    var s = n(13526),
-    r = n(71639),
-    o = n(79540),
-    l = n(76713),
-    i = n(86070);
-   function a({ className: e }) {
-    return (0, i.jsx)(l.A, { type: 'caution', title: (0, i.jsx)(o.Rc, {}), className: (0, s.A)(e, r.G.common.unlistedBanner), children: (0, i.jsx)(o.Uh, {}) });
+    r = n(74147),
+    o = n(86332),
+    l = n(71639),
+    i = n(57605),
+    a = n(19485),
+    c = n(63811),
+    d = n(99816),
+    m = n(70241),
+    h = n(68139),
+    g = n(86070);
+   function u(e) {
+    const t = (0, h.kJ)(e);
+    return (0, g.jsx)(m.A, { children: (0, g.jsx)('script', { type: 'application/ld+json', children: JSON.stringify(t) }) });
    }
-   function c(e) {
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(o.AE, {}), (0, i.jsx)(a, { ...e })] });
+   function p(e) {
+    const { metadata: t } = e,
+     {
+      siteConfig: { title: n },
+     } = (0, r.A)(),
+     { blogDescription: s, blogTitle: l, permalink: i } = t,
+     a = '/' === i ? n : l;
+    return (0, g.jsxs)(g.Fragment, { children: [(0, g.jsx)(o.be, { title: a, description: s }), (0, g.jsx)(c.A, { tag: 'blog_posts_list' })] });
    }
-  },
-  79540(e, t, n) {
-   'use strict';
-   n.d(t, { AE: () => a, Rc: () => l, TT: () => d, Uh: () => i, Yh: () => c });
-   n(30758);
-   var s = n(18236),
-    r = n(70241),
-    o = n(86070);
-   function l() {
-    return (0, o.jsx)(s.A, { id: 'theme.contentVisibility.unlistedBanner.title', description: 'The unlisted content banner title', children: 'Unlisted page' });
+   function w(e) {
+    const { metadata: t, items: n, sidebar: s } = e;
+    return (0, g.jsxs)(i.A, { sidebar: s, children: [(0, g.jsx)(d.A, { items: n }), (0, g.jsx)(a.A, { metadata: t })] });
    }
-   function i() {
-    return (0, o.jsx)(s.A, { id: 'theme.contentVisibility.unlistedBanner.message', description: 'The unlisted content banner message', children: 'This page is unlisted. Search engines will not index it, and only users having a direct link can access it.' });
-   }
-   function a() {
-    return (0, o.jsx)(r.A, { children: (0, o.jsx)('meta', { name: 'robots', content: 'noindex, nofollow' }) });
-   }
-   function c() {
-    return (0, o.jsx)(s.A, { id: 'theme.contentVisibility.draftBanner.title', description: 'The draft content banner title', children: 'Draft page' });
-   }
-   function d() {
-    return (0, o.jsx)(s.A, { id: 'theme.contentVisibility.draftBanner.message', description: 'The draft content banner message', children: 'This page is a draft. It will only be visible in dev and be excluded from the production build.' });
+   function A(e) {
+    return (0, g.jsxs)(o.e3, { className: (0, s.A)(l.G.wrapper.blogPages, l.G.page.blogListPage), children: [(0, g.jsx)(p, { ...e }), (0, g.jsx)(u, { ...e }), (0, g.jsx)(w, { ...e })] });
    }
   },
   90495(e, t, n) {

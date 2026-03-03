@@ -43,152 +43,6 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  14808(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => R, component: () => C, contentTitle: () => S, default: () => O, description: () => T, frontMatter: () => _, issueNumber: () => M, metadata: () => r, title: () => F, toc: () => V }));
-   const r = JSON.parse('{"id":"componenten/login-link/index","title":"Login Link","description":"Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.","source":"@site/docs/componenten/login-link/index.mdx","sourceDirName":"componenten/login-link","slug":"/login-link","permalink":"/login-link","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/login-link/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Login Link","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Login Link","pagination_label":"Login Link","description":"Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.","slug":"/login-link","keywords":["aanmeldlink","anoniem","auth link","authenticatie","authentication","authorise","bewindvoering","bsn","button","buttons","button login","cta","digid","eherkenning","eidas","eu login","european login","external link","go to","gebruikersnaam","identiteit","identity","inlogbutton","inloggen","inloggen bij","inloggen link","inloggen met service","inlogmiddel","inlogmiddelen","inlogservice","knop","knoppen","kvk","label-link","login","login knop","login met","login navigatie","login navigation","login provider","machtigen","mijn organisatie link","naar login","particulier","password","sign in","username","wachtwoord","zakelijk"]},"sidebar":"componenten","previous":{"title":"Link List","permalink":"/link-list"},"next":{"title":"Logo","permalink":"/logo"}}');
-   var i = t(86070),
-    o = t(18439),
-    s = t(36059),
-    a = t(62528);
-   function c(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als het label van de link alleen uit een icoon of logo bestaat, dan heeft deze afbeelding een goed tekstalternatief, zodat de link een naam heeft die duidelijk maakt waar de link voor dient.' }), '\n', (0, i.jsxs)(n.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder het icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor de afbeelding is niet nodig als er naast de afbeelding ook tekst in de link staat die uitlegt waar de link naartoe gaat. Een ', (0, i.jsx)(n.code, { children: 'img' }), ' kan dan een leeg ', (0, i.jsx)(n.code, { children: 'alt' }), '-attribuut krijgen (', (0, i.jsx)(n.code, { children: 'alt=""' }), ').'] }), '\n', (0, i.jsx)(n.p, { children: 'Is het toch gewenst om alleen een icoon of logo te tonen, hou dan rekening met het volgende.' }), '\n', (0, i.jsxs)(n.p, { children: ['Een ', (0, i.jsx)(n.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de toegankelijke naam van de link:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url">\n  <img src="ideal.svg" alt="iDeal" />\n</a>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Maar duidelijker is:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url"> Betaal met iDeal <img src="ideal.svg" alt="" /> </a>\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Logius geeft voor het inloggen met DigiD, eHerkenning en European login "Opmaakrichtlijnen voor inlogmiddelknoppen" in de ', (0, i.jsx)(n.a, { href: 'https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang', children: 'Stijlhandleiding aansluiten Toegang' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/', children: 'Functionele afbeeldingen' }) }), '\n'] })] });
-   }
-   function l(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(c, { ...e }) }) : c(e);
-   }
-   var d = t(2196),
-    h = t(83329),
-    u = t(83672),
-    j = t(34257),
-    g = t(36369),
-    m = (t(75978), t(92233)),
-    p = t(60577),
-    k = t(27055),
-    v = t(61640),
-    y = t(24838);
-   function x(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Login Links die dezelfde functie hebben binnen een website, zien er hetzelfde uit en werken ook hetzelfde.' }), '\n', (0, i.jsxs)(n.p, { children: ['Logius geeft voor het inloggen met DigiD, eHerkenning en European login "Opmaakrichtlijnen voor inlogmiddelknoppen" in de ', (0, i.jsx)(n.a, { href: 'https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang', children: 'Stijlhandleiding aansluiten Toegang' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Respecteer conventies' }) }), '\n'] })] });
-   }
-   function b(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(x, { ...e }) }) : x(e);
-   }
-   function f(e) {
-    const n = { a: 'a', code: 'code', p: 'p', pre: 'pre', ...(0, o.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['De link heeft een rol van ', (0, i.jsx)(n.code, { children: 'link' }), ' en een ', (0, i.jsx)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name', children: 'toegankelijke naam' }), ' die duidelijk maakt waar de link voor dient.'] }), '\n', (0, i.jsxs)(n.p, { children: ['HTML-elementen hebben een impliciete rol. Maak daar gebruik van. Kies daarom een ', (0, i.jsx)(n.code, { children: 'a' }), '-element met het ', (0, i.jsx)(n.code, { children: 'href' }), ' attribuut als je een link nodig hebt:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url">Contact</a>\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Het is mogelijk om met ARIA een ', (0, i.jsx)(n.code, { children: 'role="link"' }), ' toe te voegen aan een ander element dan een ', (0, i.jsx)(n.code, { children: 'a' }), ', maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc. Let erop dat je hiervoor JavaScript nodig hebt.'] })] });
-   }
-   function w(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(f, { ...e }) }) : f(e);
-   }
-   var z = t(96412),
-    L = t(36599),
-    A = t(8584),
-    D = t(76334),
-    N = t(85825);
-   const _ = { title: 'Login Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Login Link', pagination_label: 'Login Link', description: 'Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.', slug: '/login-link', keywords: ['aanmeldlink', 'anoniem', 'auth link', 'authenticatie', 'authentication', 'authorise', 'bewindvoering', 'bsn', 'button', 'buttons', 'button login', 'cta', 'digid', 'eherkenning', 'eidas', 'eu login', 'european login', 'external link', 'go to', 'gebruikersnaam', 'identiteit', 'identity', 'inlogbutton', 'inloggen', 'inloggen bij', 'inloggen link', 'inloggen met service', 'inlogmiddel', 'inlogmiddelen', 'inlogservice', 'knop', 'knoppen', 'kvk', 'label-link', 'login', 'login knop', 'login met', 'login navigatie', 'login navigation', 'login provider', 'machtigen', 'mijn organisatie link', 'naar login', 'particulier', 'password', 'sign in', 'username', 'wachtwoord', 'zakelijk'] },
-    S = void 0,
-    R = {},
-    F = 'Login Link',
-    T = 'Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.',
-    M = 268,
-    C = s.find((e) => e.number === M),
-    V = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...a.RM];
-   function E(e) {
-    const n = { h2: 'h2', ...(0, o.R)(), ...e.components },
-     { CriteriaList: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('CriteriaList', !0),
-     (0, i.jsxs)(i.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, i.jsx)(N.Fc, { component: C, headingLevel: 1, description: T }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, i.jsx)(N.VK, { component: C, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, i.jsx)(N.mu, { component: C, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
-       '\n',
-       (0, i.jsx)(a.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid algemeen',
-        items: [
-         { title: 'Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst', sc: '1.4.5', status: '', component: (0, i.jsx)(z.Ay, {}) },
-         { title: 'De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).', sc: '2.4.4', status: '', component: (0, i.jsx)(D.Ay, {}) },
-         { title: 'Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken', sc: '2.5.2', status: '', component: (0, i.jsx)(p.Ay, {}) },
-         { title: 'De zichtbare naam van de Login Link komt voor in de toegankelijke naam', sc: '2.5.3', status: '', component: (0, i.jsx)(k.Ay, {}) },
-         { title: 'Als de tekst van de Login Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: (0, i.jsx)(y.Ay, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid visueel ontwerp',
-        items: [
-         { title: 'De contrastverhouding van de tekstkleur in Login Link met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: (0, i.jsx)(u.Ay, {}) },
-         { title: 'Als het zichtbare label van de Login Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1', sc: '1.4.11', status: '', component: (0, i.jsx)(d.Ay, {}) },
-         { title: 'De Login Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels', sc: '2.5.5', status: '', component: (0, i.jsx)(v.Ay, {}) },
-         { title: 'Login Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label', sc: '3.2.4', status: '', component: (0, i.jsx)(b, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid zoom en herschalen',
-        items: [
-         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, i.jsx)(j.Ay, {}) },
-         { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, i.jsx)(h.Ay, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid toetsenbord',
-        items: [
-         { title: 'Je kunt de Login Link focussen met de tabtoets en activeren met de entertoets', sc: '2.1.1', status: '', component: (0, i.jsx)(g.Ay, {}) },
-         { title: 'De functionaliteit van de Login Link veroorzaakt geen toetsenbordval', sc: '2.1.2', status: '', component: (0, i.jsx)(L.Ay, {}) },
-         { title: 'Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: (0, i.jsx)(m.Ay, {}) },
-         { title: 'Als de Login Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud', sc: '2.4.11', status: '', component: (0, i.jsx)(A.Ay, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid screenreader',
-        items: [
-         { title: 'Als het label van de Login Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief', sc: '1.1.1', status: '', component: (0, i.jsx)(l, {}) },
-         { title: 'De Login Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Login Link voor dient', sc: '4.1.2', status: '', component: (0, i.jsx)(w, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(N.$9, { component: C, headingLevel: 2 }),
-      ],
-     })
-    );
-   }
-   function O(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(E, { ...e }) }) : E(e);
-   }
-  },
   24838(e, n, t) {
    'use strict';
    t.d(n, { Ay: () => s });
@@ -219,7 +73,7 @@
   },
   33062(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => i, KF: () => u, mJ: () => m, VZ: () => z, cR: () => w, Pv: () => p, qZ: () => s, kD: () => x, B2: () => j, Pc: () => c, f4: () => a, GT: () => b, fX: () => o, eQ: () => y, B_: () => v, o_: () => k, Rc: () => f });
+   t.d(n, { bo: () => i, KF: () => u, mJ: () => m, VZ: () => z, cR: () => w, Pv: () => p, qZ: () => s, kD: () => b, B2: () => j, Pc: () => c, f4: () => a, GT: () => x, fX: () => o, eQ: () => y, B_: () => v, o_: () => k, Rc: () => f });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -261,10 +115,10 @@
     k = (e) => e.join('.'),
     v = (e) => '--' + e.join('-'),
     y = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function x(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? x(e[t], [...n, t]) : []));
+   function b(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? b(e[t], [...n, t]) : []));
    }
-   function b(e) {
+   function x(e) {
     const n = new Map();
     function t(e) {
      return (n.has(e) || n.set(e, k(e)), n.get(e));
@@ -357,6 +211,113 @@
     return ((0, r.useEffect)(() => n(!0), []), e);
    }
   },
+  56125(e, n, t) {
+   'use strict';
+   (t.r(n), t.d(n, { assets: () => T, component: () => E, contentTitle: () => F, default: () => H, description: () => M, frontMatter: () => R, issueNumber: () => V, metadata: () => r, title: () => C, toc: () => O }));
+   const r = JSON.parse('{"id":"componenten/login-link/index","title":"Login Link","description":"Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.","source":"@site/docs/componenten/login-link/index.mdx","sourceDirName":"componenten/login-link","slug":"/login-link","permalink":"/login-link","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/login-link/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Login Link","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Login Link","pagination_label":"Login Link","description":"Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.","slug":"/login-link","keywords":["aanmeldlink","anoniem","auth link","authenticatie","authentication","authorise","bewindvoering","bsn","button","buttons","button login","cta","digid","eherkenning","eidas","eu login","european login","external link","go to","gebruikersnaam","identiteit","identity","inlogbutton","inloggen","inloggen bij","inloggen link","inloggen met service","inlogmiddel","inlogmiddelen","inlogservice","knop","knoppen","kvk","label-link","login","login knop","login met","login navigatie","login navigation","login provider","machtigen","mijn organisatie link","naar login","particulier","password","sign in","username","wachtwoord","zakelijk"]},"sidebar":"componenten","previous":{"title":"Link List","permalink":"/link-list"},"next":{"title":"Logo","permalink":"/logo"}}');
+   var i = t(86070),
+    o = t(18439),
+    s = t(36059),
+    a = t(62528),
+    c = t(85825);
+   function l(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als het label van de link alleen uit een icoon of logo bestaat, dan heeft deze afbeelding een goed tekstalternatief, zodat de link een naam heeft die duidelijk maakt waar de link voor dient.' }), '\n', (0, i.jsxs)(n.p, { children: ['Het beste is om altijd visueel een tekst te tonen naast of onder het icoon. Iconen zijn immers niet altijd voor iedereen duidelijk. Een tekstalternatief voor de afbeelding is niet nodig als er naast de afbeelding ook tekst in de link staat die uitlegt waar de link naartoe gaat. Een ', (0, i.jsx)(n.code, { children: 'img' }), ' kan dan een leeg ', (0, i.jsx)(n.code, { children: 'alt' }), '-attribuut krijgen (', (0, i.jsx)(n.code, { children: 'alt=""' }), ').'] }), '\n', (0, i.jsx)(n.p, { children: 'Is het toch gewenst om alleen een icoon of logo te tonen, hou dan rekening met het volgende.' }), '\n', (0, i.jsxs)(n.p, { children: ['Een ', (0, i.jsx)(n.code, { children: 'img' }), ' met een alt-attribuut is een robuuste manier om een alternatieve tekst toe te voegen. De waarde van het alt-attribuut vormt de toegankelijke naam van de link:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url">\n  <img src="ideal.svg" alt="iDeal" />\n</a>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'Maar duidelijker is:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url"> Betaal met iDeal <img src="ideal.svg" alt="" /> </a>\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Logius geeft voor het inloggen met DigiD, eHerkenning en European login "Opmaakrichtlijnen voor inlogmiddelknoppen" in de ', (0, i.jsx)(n.a, { href: 'https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang', children: 'Stijlhandleiding aansluiten Toegang' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/gebruik-svg/#toepassen-van-een-svg-in-code', children: 'Toepassen van een SVG in code' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/', children: 'Functionele afbeeldingen' }) }), '\n'] })] });
+   }
+   var d = t(2196),
+    h = t(83329),
+    u = t(83672),
+    j = t(34257),
+    g = t(36369),
+    m = t(92233),
+    p = t(60577),
+    k = t(27055),
+    v = t(61640),
+    y = t(24838);
+   function b(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Login Links die dezelfde functie hebben binnen een website, zien er hetzelfde uit en werken ook hetzelfde.' }), '\n', (0, i.jsxs)(n.p, { children: ['Logius geeft voor het inloggen met DigiD, eHerkenning en European login "Opmaakrichtlijnen voor inlogmiddelknoppen" in de ', (0, i.jsx)(n.a, { href: 'https://www.logius.nl/domeinen/toegang/stijlhandleiding-aansluiten-toegang', children: 'Stijlhandleiding aansluiten Toegang' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Respecteer conventies' }) }), '\n'] })] });
+   }
+   function x(e) {
+    const n = { a: 'a', code: 'code', p: 'p', pre: 'pre', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['De link heeft een rol van ', (0, i.jsx)(n.code, { children: 'link' }), ' en een ', (0, i.jsx)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name', children: 'toegankelijke naam' }), ' die duidelijk maakt waar de link voor dient.'] }), '\n', (0, i.jsxs)(n.p, { children: ['HTML-elementen hebben een impliciete rol. Maak daar gebruik van. Kies daarom een ', (0, i.jsx)(n.code, { children: 'a' }), '-element met het ', (0, i.jsx)(n.code, { children: 'href' }), ' attribuut als je een link nodig hebt:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<a href="url">Contact</a>\n' }) }), '\n', (0, i.jsxs)(n.p, { children: ['Het is mogelijk om met ARIA een ', (0, i.jsx)(n.code, { children: 'role="link"' }), ' toe te voegen aan een ander element dan een ', (0, i.jsx)(n.code, { children: 'a' }), ', maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc. Let erop dat je hiervoor JavaScript nodig hebt.'] })] });
+   }
+   var f = t(96412),
+    w = t(36599),
+    z = t(8584),
+    L = t(76334);
+   const A = [
+     { title: 'Het label van de Login Link bestaat uit gewone tekst, niet uit een afbeelding van tekst', sc: '1.4.5', status: '', component: f.Ay },
+     { title: 'De linktekst van de Login Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).', sc: '2.4.4', status: '', component: L.Ay },
+     { title: 'Als de gebruiker de Login Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken', sc: '2.5.2', status: '', component: p.Ay },
+     { title: 'De zichtbare naam van de Login Link komt voor in de toegankelijke naam', sc: '2.5.3', status: '', component: k.Ay },
+     { title: 'Als de tekst van de Login Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode', sc: '3.1.2', status: '', component: y.Ay },
+    ],
+    D = [
+     { title: 'De contrastverhouding van de tekstkleur in Login Link met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: u.Ay },
+     { title: 'Als het zichtbare label van de Login Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1', sc: '1.4.11', status: '', component: d.Ay },
+     { title: 'De Login Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels', sc: '2.5.5', status: '', component: v.Ay },
+     {
+      title: 'Login Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label',
+      sc: '3.2.4',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(b, { ...e }) }) : b(e);
+      },
+     },
+    ],
+    N = [
+     { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: j.Ay },
+     { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: h.Ay },
+    ],
+    _ = [
+     { title: 'Je kunt de Login Link focussen met de tabtoets en activeren met de entertoets', sc: '2.1.1', status: '', component: g.Ay },
+     { title: 'De functionaliteit van de Login Link veroorzaakt geen toetsenbordval', sc: '2.1.2', status: '', component: w.Ay },
+     { title: 'Wanneer de Login Link de toetsenbordfocus krijgt is de focus zichtbaar', sc: '2.4.7', status: '', component: m.Ay },
+     { title: 'Als de Login Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud', sc: '2.4.11', status: '', component: z.Ay },
+    ],
+    S = [
+     {
+      title: 'Als het label van de Login Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief',
+      sc: '1.1.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(l, { ...e }) }) : l(e);
+      },
+     },
+     {
+      title: 'De Login Link heeft een rol van link en een toegankelijke naam die duidelijk maakt waar de Login Link voor dient',
+      sc: '4.1.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(x, { ...e }) }) : x(e);
+      },
+     },
+    ],
+    R = { title: 'Login Link', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Login Link', pagination_label: 'Login Link', description: 'Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.', slug: '/login-link', keywords: ['aanmeldlink', 'anoniem', 'auth link', 'authenticatie', 'authentication', 'authorise', 'bewindvoering', 'bsn', 'button', 'buttons', 'button login', 'cta', 'digid', 'eherkenning', 'eidas', 'eu login', 'european login', 'external link', 'go to', 'gebruikersnaam', 'identiteit', 'identity', 'inlogbutton', 'inloggen', 'inloggen bij', 'inloggen link', 'inloggen met service', 'inlogmiddel', 'inlogmiddelen', 'inlogservice', 'knop', 'knoppen', 'kvk', 'label-link', 'login', 'login knop', 'login met', 'login navigatie', 'login navigation', 'login provider', 'machtigen', 'mijn organisatie link', 'naar login', 'particulier', 'password', 'sign in', 'username', 'wachtwoord', 'zakelijk'] },
+    F = void 0,
+    T = {},
+    C = 'Login Link',
+    M = 'Biedt de mogelijkheid om naar de beschikbare inlogmiddelen te navigeren.',
+    V = 268,
+    E = s.find((e) => e.number === V),
+    O = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...a.RM];
+   function G(e) {
+    const n = { h2: 'h2', ...(0, o.R)(), ...e.components },
+     { CriteriaList: t, CriteriaListItem: r } = n;
+    return (t || B('CriteriaList', !0), r || B('CriteriaListItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(c.Fc, { component: E, headingLevel: 1, description: M }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(c.VK, { component: E, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(c.mu, { component: E, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', children: A.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', children: D.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid zoom en herschalen', children: N.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid toetsenbord', children: _.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid screenreader', children: S.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(c.$9, { component: E, headingLevel: 2 })] }));
+   }
+   function H(e = {}) {
+    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(G, { ...e }) }) : G(e);
+   }
+   function B(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
+   }
+  },
   60577(e, n, t) {
    'use strict';
    t.d(n, { Ay: () => s });
@@ -419,20 +380,6 @@
     i = t(86070);
    const o = ({ children: e, className: n, level: t = 1, suffix: o, ...s }) => (0, i.jsxs)('hgroup', { className: (0, r.A)('nlds-inline-heading-group', `utrecht-heading-${t}`, n), ...s, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: e }), o && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [o ? ' ' : '', o] })] });
   },
-  75978(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => s });
-   var r = t(86070),
-    i = t(18439);
-   function o(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Er is een goed zichtbare focusindicator. Dit doe je met een minimale dikte van 2 pixels en een minimaal contrast van 3:1 ten opzichte van aangrenzende kleuren. Hou ook rekening met het contrast met de verschillende achtergrondkleuren waarop een element gebruikt kan worden. Met de ', (0, r.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), ' kun je controleren of je gekozen kleuren voldoen.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar/', children: 'Maak toetsenbordfocus goed zichtbaar' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/voorkeuren/', children: 'Let op voorkeursinstellingen voor kleur' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
-   }
-   function s(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(o, { ...e }) }) : o(e);
-   }
-  },
   76334(e, n, t) {
    'use strict';
    t.d(n, { Ay: () => a, RM: () => o });
@@ -478,7 +425,7 @@
   },
   85825(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => v, $9: () => x, mu: () => y, Fc: () => b });
+   t.d(n, { VK: () => v, $9: () => b, mu: () => y, Fc: () => x });
    var r = t(29181),
     i = t(13526),
     o = t(1292),
@@ -567,12 +514,12 @@
         })
       : (0, l.jsx)(r.fz, { children: 'Er zijn nog geen implementaties' });
     },
-    x = ({ component: e, headingLevel: n }) => {
+    b = ({ component: e, headingLevel: n }) => {
      const t = e?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(r.DZ, { level: n, children: 'Help om deze component te verbeteren' }), (0, l.jsxs)(r.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.Xy, { children: [i ? (0, l.jsxs)(r.Er, { children: ['Vul de ', (0, l.jsx)(r.N_, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.Er, { children: [(0, l.jsxs)(r.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    b = ({ component: e, headingLevel: n, description: t }) => {
+    x = ({ component: e, headingLevel: n, description: t }) => {
      const i = e && k.bo[e.relayStep];
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(u.p, { level: n, suffix: i && (0, l.jsx)(h.D, { state: i }), children: e.title }), (0, l.jsx)(r.fz, { lead: !0, children: t })] });
     };

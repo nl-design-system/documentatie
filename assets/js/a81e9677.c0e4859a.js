@@ -14,224 +14,213 @@
    const d = { figma: (0, l.jsx)(i.A, {}), github: (0, l.jsx)(o.A, {}), npm: (0, l.jsx)(s.A, {}), storybook: (0, l.jsx)(a.A, {}) },
     u = ({ brand: e }) => (0, l.jsx)(r.In, { children: d[e] || (0, l.jsx)(c.A, {}) });
   },
-  1955(e, n, t) {
+  6392(e, n, t) {
    'use strict';
-   (t.r(n), t.d(n, { assets: () => U, component: () => J, contentTitle: () => W, default: () => Q, description: () => I, frontMatter: () => $, issueNumber: () => K, metadata: () => r, title: () => X, toc: () => q }));
+   (t.r(n), t.d(n, { assets: () => O, component: () => W, contentTitle: () => G, default: () => X, description: () => Z, frontMatter: () => V, issueNumber: () => $, metadata: () => r, title: () => P, toc: () => I }));
    const r = JSON.parse('{"id":"componenten/breadcrumb-navigation/index","title":"Breadcrumb Navigation","description":"Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.","source":"@site/docs/componenten/breadcrumb-navigation/index.mdx","sourceDirName":"componenten/breadcrumb-navigation","slug":"/breadcrumb-navigation","permalink":"/breadcrumb-navigation","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/breadcrumb-navigation/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Breadcrumb Navigation","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Breadcrumb Navigation","pagination_label":"Breadcrumb Navigation","description":"Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.","slug":"/breadcrumb-navigation","keywords":["back","back link","breadcrumb navigation","breadcrumb trail","breadcrumbs","broodkruimelpad","broodkruimels","hi\xebrarchie","hierarchy","home","homepage","home","kruimelpad","links","nav","navigatie","navigeren","navigation","trail","up"]},"sidebar":"componenten","previous":{"title":"Blockquote","permalink":"/blockquote"},"next":{"title":"Button","permalink":"/button"}}');
    var i = t(86070),
     o = t(18439),
     s = t(36059),
-    a = t(62528);
-   function c(e) {
+    a = t(62528),
+    c = t(85825);
+   function l(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als het broodkruimelpad een afbeelding bevat, bijvoorbeeld een huisje om de homepage aan te geven, heeft de afbeelding een alternatieve tekst. Als deze afbeelding een link bevat, beschrijft de alternatieve tekst ook het linkdoel.' }), '\n', (0, i.jsxs)(n.p, { children: ['Als tussen de links in het broodkruimelpad tekens staan, zoals een schuine streep of een groter-dan-teken, zijn deze verborgen voor hulpsoftware. De relatie tussen de links wordt namelijk al op een andere manier duidelijk gemaakt aan bezoekers die gebruik maken van een ', (0, i.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ', door de georderende lijst (', (0, i.jsx)(n.code, { children: 'ol' }), ') binnen het ', (0, i.jsx)(n.code, { children: 'nav' }), ' element.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/', children: 'Richtlijnen voor iconen' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/', children: 'Functionele afbeeldingen' }) }), '\n'] })] });
-   }
-   function l(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(c, { ...e }) }) : c(e);
    }
    function d(e) {
     const n = { a: 'a', code: 'code', p: 'p', pre: 'pre', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['De relatie tussen de links in het broodkruimelpad moet niet alleen visueel, maar ook voor bezoekers die gebruik maken van een ', (0, i.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' duidelijk zijn.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Het broodkruimelpad is herkenbaar als navigatiemenu door het ', (0, i.jsx)(n.code, { children: 'nav' }), ' element te gebruiken, of door ', (0, i.jsx)(n.code, { children: 'role="navigation"' }), ' te gebruiken. Gebruik bij voorkeur altijd HTML elementen, tenzij het echt niet anders kan.'] }), '\n', (0, i.jsxs)(n.p, { children: ["Het navigatiemenu heeft een toegankelijke naam om het te onderscheiden van andere navigatiemenu's op de pagina. Bijvoorbeeld met ", (0, i.jsx)(n.code, { children: 'aria-label' }), ', of door met ', (0, i.jsx)(n.code, { children: 'aria-labelledby' }), ' te verwijzen naar een visueel verborgen ', (0, i.jsx)(n.code, { children: 'h2' }), ' element in het broodkruimelpad.'] }), '\n', (0, i.jsxs)(n.p, { children: ['De links in het broodkruimelpad staan binnen het ', (0, i.jsx)(n.code, { children: 'nav' }), ' element in een georderende lijst: het ', (0, i.jsx)(n.code, { children: 'ol' }), ' element. Dit geeft de hi\xebrarchie in de links aan. Iedere link is afzonderlijk opgemaakt met een ', (0, i.jsx)(n.code, { children: 'li' }), ' element en staat genest binnen het ', (0, i.jsx)(n.code, { children: 'ol' }), ' element.'] }), '\n', (0, i.jsxs)(n.p, { children: ['De huidige pagina in het broodkruimelpad hoeft niet als link opgemaakt te zijn, maar bevat wel het ', (0, i.jsx)(n.code, { children: 'aria-current="page"' }), ' attribuut.'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<nav aria-label="Broodkruimelpad">\n  <ol>\n    <li><a href="/">Home</a></li>\n    <li><a href="/zelfregelen">Zelf regelen</a></li>\n    <li><a aria-current="page" href="/zelfregelen/rijbewijsaanvragen">Rijbewijs aanvragen</a></li>\n  </ol>\n</nav>\n' }) })] });
    }
-   function u(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
-   }
-   var h = t(83672);
-   function j(e) {
+   var u = t(83672);
+   function h(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'De gebruiker moet tekst twee keer (200%) kunnen vergroten. Het gaat hierbij alleen om het vergroten van tekst en niet om bijvoorbeeld afbeeldingen of de layout.\nAlle functies moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn. Er mag geen inhoud buiten beeld vallen, verborgen zijn of maar gedeeltelijk zichtbaar zijn.' }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'word-break: break-word; hyphens: auto;' }), ' in combinatie met ', (0, i.jsx)(n.code, { children: 'text-wrap-style: pretty' }), ' of ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar.'] }), '\n', (0, i.jsx)(n.p, { children: 'Een broodkruimelpad mag van vorm veranderen bij het vergroten of aanpassen van tekst, of bij inzoomen, als het broodkruimelpad door het doorlopen op een volgende of meerdere regels teveel ruimte in beslag neemt.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
    }
-   function m(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(j, { ...e }) }) : j(e);
-   }
-   function p(e) {
+   function j(e) {
     const n = { code: 'code', p: 'p', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'De gebruiker moet de webpagina bij een schermgrootte van 1280 bij 124 pixels tot 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.' }), '\n', (0, i.jsx)(n.p, { children: 'Alle functies moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn.' }), '\n', (0, i.jsx)(n.p, { children: 'Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 CSS).' }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'word-break: break-word; hyphens: auto;' }), ' in combinatie met ', (0, i.jsx)(n.code, { children: 'text-wrap-style: pretty' }), ' of ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar.'] }), '\n', (0, i.jsx)(n.p, { children: 'Een broodkruimelpad mag van vorm veranderen bij het vergroten of aanpassen van tekst, of bij inzoomen, als het broodkruimelpad door het doorlopen op een volgende of meerdere regels teveel ruimte in beslag neemt.' })] });
    }
-   function g(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(p, { ...e }) }) : p(e);
-   }
-   function k(e) {
+   function m(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Als het broodkruimelpad niet-tekstuele content zoals afbeeldingen bevat, bijvoorbeeld een huisje voor de homepage en iconen van / of > tussen de links, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1. Dit is te controleren met de ', (0, i.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
    }
-   function b(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(k, { ...e }) }) : k(e);
-   }
-   function v(e) {
+   function p(e) {
     const n = { code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Tekst kan op een aantal manieren aangepast worden, door mensen voor wie dat prettig is.' }), '\n', (0, i.jsx)(n.p, { children: 'Alle tekst moet leesbaar blijven. Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of maar gedeeltelijk zichtbaar zijn.' }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'word-break: break-word; hyphens: auto;' }), ' in combinatie met ', (0, i.jsx)(n.code, { children: 'text-wrap-style: pretty' }), ' of ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar.'] }), '\n', (0, i.jsx)(n.p, { children: 'Een broodkruimelpad mag van vorm veranderen bij het vergroten of aanpassen van tekst, of bij inzoomen, als het broodkruimelpad door het doorlopen op een volgende of meerdere regels teveel ruimte in beslag neemt.' }), '\n', (0, i.jsx)(n.p, { children: 'Het gaat om:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: 'De ruimte tussen tekstregels kan relatief groot ingesteld worden, zodat de ruimte tussen tekstregels anderhalf keer groter is dan de hoogte van een tekstregel zelf.' }), '\n', (0, i.jsx)(n.li, { children: "De ruimte tussen alinea's kan ingesteld worden op minimaal de twee keer de hoogte van een tekstregel." }), '\n', (0, i.jsx)(n.li, { children: 'De ruimte tussen letters kan 12% groter worden ingesteld dan normaal.' }), '\n', (0, i.jsx)(n.li, { children: 'De ruimte tussen woorden kan 16% groter worden ingesteld dan normaal.' }), '\n'] }), '\n', (0, i.jsx)(n.p, { children: 'Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier buttons voor te maken in de website zelf.' })] });
    }
-   function x(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(v, { ...e }) }) : v(e);
-   }
-   var f = t(25872);
-   function y(e) {
+   var g = t(25872);
+   function k(e) {
     const n = { p: 'p', ...(0, o.R)(), ...e.components };
     return (0, i.jsx)(n.p, { children: 'De links in het broodkruimelpad krijgen afzonderlijk toetsenbordfocus met de Tab-toets (en shift + Tab-toets). De focusvolgorde volgt de hierarchische structuur in het broodkruimelpad.' });
    }
-   function w(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(y, { ...e }) }) : y(e);
-   }
-   var z = t(92233),
-    A = t(75978);
-   function D(e) {
+   var b = t(92233),
+    v = t(75978);
+   function f(e) {
     const n = { code: 'code', p: 'p', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat als de gebruiker links in het broodkruimelpad aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om de actie te voorkomen of ongedaan te maken.' }), '\n', (0, i.jsx)(n.p, { children: 'Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.' }), '\n', (0, i.jsxs)(n.p, { children: ['Met een HTML link (', (0, i.jsx)(n.code, { children: 'a' }), ' element met een ', (0, i.jsx)(n.code, { children: 'href' }), ' attribuut) gaat dit automatisch goed. Bij een ', (0, i.jsx)(n.code, { children: 'div' }), ' element met ', (0, i.jsx)(n.code, { children: 'role="link"' }), ' moet dit nog worden aangepast. Gebruik voor dit laatste bij voorkeur het ', (0, i.jsx)(n.code, { children: 'click' }), ' event, omdat dit apparaatonafhankelijk is.'] })] });
    }
-   function N(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(D, { ...e }) }) : D(e);
-   }
-   function _(e) {
+   function x(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat de aanklikbare elementen op een pagina groot genoeg zijn om makkelijk aan te klikken met een muis of vinger.' }), '\n', (0, i.jsx)(n.p, { children: 'Hierbij geldt dat het aan te klikken gebied ten minste 24 bij 24 pixels groot is, behalve als het aanklikbare element en de ruimte om het element samen tenminste 24 pixels groot zijn.' }), '\n', (0, i.jsxs)(n.p, { children: ['Hou als dat mogelijk is een groter aanwijsgebied van 44 bij 44 pixels aan, om ook te voldoen ', (0, i.jsx)(n.a, { href: '/wcag/2.5.5/', children: 'succescriterium 2.5.5 Grootte van het aanwijsgebied (uitgebreid)' })] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/', children: 'Maak aanklikbare formuliervelden groot genoeg' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/interactieve-elementen/', children: 'Reserveer ruimte tussen interactieve elementen' }) }), '\n'] })] });
    }
-   function R(e = {}) {
+   function y(e = {}) {
     const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(_, { ...e }) }) : _(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(x, { ...e }) }) : x(e);
    }
-   function L(e) {
+   function w(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: "Als je het broodkruimelpad op meerdere pagina's toevoegt, zijn er een aantal dingen om rekening mee te houden:" }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsxs)(n.li, { children: ["Het broodkruimelpad moet op alle pagina's in dezelfde relatieve volgorde op de pagina voorkomen. Bijvoorbeeld: Het broodkruimelpad staat altijd onder de ", (0, i.jsx)(n.code, { children: 'header' }), ' en boven de eerste kop op de pagina.'] }), '\n', (0, i.jsx)(n.li, { children: "De links in het broodkruimelpad staan op alle pagina's in dezelfde relatieve volgorde. Bijvoorbeeld: Als de link naar de homepage in het broodkruimelpad staat, is dit op iedere pagina waar dit zo is de eerste link in het broodkruimelpad." }), '\n'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/meerdere-stappen/consistente-benaming/', children: 'Consistente navigatie' }) }), '\n'] })] });
    }
-   function S(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(L, { ...e }) }) : L(e);
-   }
-   function T(e) {
+   function z(e) {
     const n = { code: 'code', p: 'p', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Het broodkruimelpad staat in een ', (0, i.jsx)(n.code, { children: 'nav' }), ' element, of heeft ', (0, i.jsx)(n.code, { children: 'role="navigation"' }), ", met een toegankelijke naam (bijvoorbeeld 'broodkruimelpad'). Gebruik bij voorkeur altijd HTML elementen, tenzij het echt niet anders kan."] }), '\n', (0, i.jsxs)(n.p, { children: ['De links in het broodkruimelpad staan genest in een ', (0, i.jsx)(n.code, { children: 'ol' }), ' element en iedere link staat in een ', (0, i.jsx)(n.code, { children: 'li' }), ' element. Gebruik geen ', (0, i.jsx)(n.code, { children: 'role="list\'' }), ', omdat de hi\xebrarchie tussen de links dan verloren gaat.'] }), '\n', (0, i.jsxs)(n.p, { children: ['De links in het broodkruimelpad hebben de rol van link. Gebruik hiervoor bij voorkeur het ', (0, i.jsx)(n.code, { children: 'a' }), ' element (met een ', (0, i.jsx)(n.code, { children: 'href' }), ' attribuut). Het is mogelijk om met ARIA een ', (0, i.jsx)(n.code, { children: 'role="link"' }), ' toe te voegen aan een ander element dan een ', (0, i.jsx)(n.code, { children: 'a' }), ', maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc. Let erop dat je hiervoor JavaScript nodig hebt.'] }), '\n', (0, i.jsxs)(n.p, { children: ['De huidige (laatste) pagina in het broodkruimelpad geeft daarnaast ook met ', (0, i.jsx)(n.code, { children: 'aria-current="page"' }), ' aan dat het om de huidige pagina gaat.'] })] });
    }
-   function M(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(T, { ...e }) }) : T(e);
-   }
-   var F = t(92544),
-    H = t(96412),
-    C = t(36599),
-    B = t(76334),
-    E = t(8584),
-    V = t(30788),
-    G = t(69488),
-    O = t(31820),
-    P = t(87711),
-    Z = t(85825);
-   const $ = { title: 'Breadcrumb Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Breadcrumb Navigation', pagination_label: 'Breadcrumb Navigation', description: 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.', slug: '/breadcrumb-navigation', keywords: ['back', 'back link', 'breadcrumb navigation', 'breadcrumb trail', 'breadcrumbs', 'broodkruimelpad', 'broodkruimels', 'hi\xebrarchie', 'hierarchy', 'home', 'homepage', 'home', 'kruimelpad', 'links', 'nav', 'navigatie', 'navigeren', 'navigation', 'trail', 'up'] },
-    W = void 0,
-    U = {},
-    X = 'Breadcrumb Navigation',
-    I = 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.',
-    K = 54,
-    J = s.find((e) => e.number === K),
-    q = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...a.RM];
-   function Y(e) {
+   var A = t(92544),
+    D = t(96412),
+    N = t(36599),
+    _ = t(76334),
+    R = t(8584),
+    L = t(30788),
+    S = t(69488),
+    T = t(31820),
+    M = t(87711);
+   const F = [
+     { title: 'De linkteksten van de links in het broodkruimelpad zijn voor iedereen duidelijk', sc: '2.4.4', status: '', component: _.Ay },
+     {
+      title: 'De bezoeker kan het activeren van links in het broodkruimelpad annuleren',
+      sc: '2.5.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(f, { ...e }) }) : f(e);
+      },
+     },
+     { title: 'De visuele naam van de links in het broodkruimelpad komen voor in de toegankelijke naam van de links in het broodkruimelpad', sc: '2.5.3', status: '', component: L.Ay },
+     { title: 'Het aanwijsgebied van de links in het broodkruimelpad is groot genoeg', sc: '2.5.8', status: '', component: y },
+     { title: 'Als het broodkruimelpad tekst in een andere taal dan de hoofdtaal van de pagina bevat, wordt hier een taalwissel voor aangegeven', sc: '3.1.2', status: '', component: S.Ay },
+     { title: 'Het gedrag van het broodkruimelpad is voorspelbaar', sc: '3.2.1', status: '', component: T.Ay },
+     {
+      title: "Als het broodkruimelpad op meerdere pagina's voorkomt, staat het overal op dezelfde plek en de links in het broodkruimelpad staan in dezelfde volgorde",
+      sc: '3.2.3',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(w, { ...e }) }) : w(e);
+      },
+     },
+    ],
+    H = [
+     { title: 'De contrastratio tussen de tekst en de achtergrondkleur in het broodkruimelpad is hoog genoeg', sc: '1.4.3', status: '', component: u.Ay },
+     { title: 'Het broodkruimelpad bevat niet onnodig afbeeldingen van tekst', sc: '1.4.5', status: '', component: D.Ay },
+     {
+      title: 'Niet-tekstuele content in het broodkruimelpad heeft een contrastratio van minimaal 3:1 met de achtergrond',
+      sc: '1.4.11',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(m, { ...e }) }) : m(e);
+      },
+     },
+     { title: 'Het is zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.7', status: '', component: b.Ay },
+     { title: 'Het aanwijsgebied van de links in het broodkruimelpad is groot genoeg', sc: '2.5.8', status: '', component: y },
+     { title: 'Het is duidelijk zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.13', status: '', component: v.Ay },
+     { title: "Als het broodkruimelpad op meerdere pagina's voorkomt, ziet het er hetzelfde uit en werkt het hetzelfde", sc: '3.2.4', status: '', component: M.Ay },
+    ],
+    C = [
+     {
+      title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar',
+      sc: '1.4.4',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(h, { ...e }) }) : h(e);
+      },
+     },
+     {
+      title: 'Bij inzoomen gaat er geen informatie of functionaliteit verloren',
+      sc: '1.4.10',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(j, { ...e }) }) : j(e);
+      },
+     },
+     {
+      title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar',
+      sc: '1.4.12',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(p, { ...e }) }) : p(e);
+      },
+     },
+    ],
+    B = [
+     { title: 'Links in het broodkruimelpad zijn bereikbaar en bedienbaar met het toetsenbord', sc: '2.1.1', status: '', component: g.Ay },
+     { title: 'Het broodkruimelpad zorgt niet voor een toetsenbordval', sc: '2.1.2', status: '', component: N.Ay },
+     {
+      title: 'De focus volgorde volgt de hi\xebrarchische structuur van het broodkruimelpad',
+      sc: '2.4.3',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(k, { ...e }) }) : k(e);
+      },
+     },
+     { title: 'Het is zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.7', status: '', component: b.Ay },
+     { title: 'De links in het broodkruimelpad worden niet bedekt door andere content', sc: '2.4.11', status: '', component: R.Ay },
+     { title: 'Het is duidelijk zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.13', status: '', component: v.Ay },
+    ],
+    E = [
+     {
+      title: 'Informatieve afbeeldingen hebben een alternatieve tekst en decoratieve tekens en iconen zijn verborgen',
+      sc: '1.1.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(l, { ...e }) }) : l(e);
+      },
+     },
+     {
+      title: 'Het is duidelijk dat het om een navigatiemenu gaat en de relatie tussen de links in het broodkruimelpad is voor iedereen duidelijk ',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(d, { ...e }) }) : d(e);
+      },
+     },
+     { title: 'De leesvolgorde van tekst en links in het broodkruimelpad is voor iedereen logisch', sc: '1.3.2', status: '', component: A.Ay },
+     { title: 'Als het broodkruimelpad tekst in een andere taal dan de hoofdtaal van de pagina bevat, wordt hier een taalwissel voor aangegeven', sc: '3.1.2', status: '', component: S.Ay },
+     {
+      title: 'Het broodkruimelpad en de links in het broodkruimelpad hebben een toegankelijke naam, rol en status',
+      sc: '4.1.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+       return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(z, { ...e }) }) : z(e);
+      },
+     },
+    ],
+    V = { title: 'Breadcrumb Navigation', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Breadcrumb Navigation', pagination_label: 'Breadcrumb Navigation', description: 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.', slug: '/breadcrumb-navigation', keywords: ['back', 'back link', 'breadcrumb navigation', 'breadcrumb trail', 'breadcrumbs', 'broodkruimelpad', 'broodkruimels', 'hi\xebrarchie', 'hierarchy', 'home', 'homepage', 'home', 'kruimelpad', 'links', 'nav', 'navigatie', 'navigeren', 'navigation', 'trail', 'up'] },
+    G = void 0,
+    O = {},
+    P = 'Breadcrumb Navigation',
+    Z = 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.',
+    $ = 54,
+    W = s.find((e) => e.number === $),
+    I = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...a.RM];
+   function U(e) {
     const n = { h2: 'h2', ...(0, o.R)(), ...e.components },
-     { CriteriaList: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('CriteriaList', !0),
-     (0, i.jsxs)(i.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, i.jsx)(Z.Fc, { component: J, headingLevel: 1, description: I }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, i.jsx)(Z.VK, { component: J, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, i.jsx)(Z.mu, { component: J, headingLevel: 3 }),
-       '\n',
-       (0, i.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
-       '\n',
-       (0, i.jsx)(a.Ay, {}),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid algemeen',
-        items: [
-         { title: 'De linkteksten van de links in het broodkruimelpad zijn voor iedereen duidelijk', sc: '2.4.4', status: '', component: (0, i.jsx)(B.Ay, {}) },
-         { title: 'De bezoeker kan het activeren van links in het broodkruimelpad annuleren', sc: '2.5.2', status: '', component: (0, i.jsx)(N, {}) },
-         { title: 'De visuele naam van de links in het broodkruimelpad komen voor in de toegankelijke naam van de links in het broodkruimelpad', sc: '2.5.3', status: '', component: (0, i.jsx)(V.Ay, {}) },
-         { title: 'Het aanwijsgebied van de links in het broodkruimelpad is groot genoeg', sc: '2.5.8', status: '', component: (0, i.jsx)(R, {}) },
-         { title: 'Als het broodkruimelpad tekst in een andere taal dan de hoofdtaal van de pagina bevat, wordt hier een taalwissel voor aangegeven', sc: '3.1.2', status: '', component: (0, i.jsx)(G.Ay, {}) },
-         { title: 'Het gedrag van het broodkruimelpad is voorspelbaar', sc: '3.2.1', status: '', component: (0, i.jsx)(O.Ay, {}) },
-         { title: "Als het broodkruimelpad op meerdere pagina's voorkomt, staat het overal op dezelfde plek en de links in het broodkruimelpad staan in dezelfde volgorde", sc: '3.2.3', status: '', component: (0, i.jsx)(S, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid visueel ontwerp',
-        items: [
-         { title: 'De contrastratio tussen de tekst en de achtergrondkleur in het broodkruimelpad is hoog genoeg', sc: '1.4.3', status: '', component: (0, i.jsx)(h.Ay, {}) },
-         { title: 'Het broodkruimelpad bevat niet onnodig afbeeldingen van tekst', sc: '1.4.5', status: '', component: (0, i.jsx)(H.Ay, {}) },
-         { title: 'Niet-tekstuele content in het broodkruimelpad heeft een contrastratio van minimaal 3:1 met de achtergrond', sc: '1.4.11', status: '', component: (0, i.jsx)(b, {}) },
-         { title: 'Het is zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.7', status: '', component: (0, i.jsx)(z.Ay, {}) },
-         { title: 'Het aanwijsgebied van de links in het broodkruimelpad is groot genoeg', sc: '2.5.8', status: '', component: (0, i.jsx)(R, {}) },
-         { title: 'Het is duidelijk zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.13', status: '', component: (0, i.jsx)(A.Ay, {}) },
-         { title: "Als het broodkruimelpad op meerdere pagina's voorkomt, ziet het er hetzelfde uit en werkt het hetzelfde", sc: '3.2.4', status: '', component: (0, i.jsx)(P.Ay, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid zoom en herschalen',
-        items: [
-         { title: 'Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar', sc: '1.4.4', status: '', component: (0, i.jsx)(m, {}) },
-         { title: 'Bij inzoomen gaat er geen informatie of functionaliteit verloren', sc: '1.4.10', status: '', component: (0, i.jsx)(g, {}) },
-         { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar', sc: '1.4.12', status: '', component: (0, i.jsx)(x, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid toetsenbord',
-        items: [
-         { title: 'Links in het broodkruimelpad zijn bereikbaar en bedienbaar met het toetsenbord', sc: '2.1.1', status: '', component: (0, i.jsx)(f.Ay, {}) },
-         { title: 'Het broodkruimelpad zorgt niet voor een toetsenbordval', sc: '2.1.2', status: '', component: (0, i.jsx)(C.Ay, {}) },
-         { title: 'De focus volgorde volgt de hi\xebrarchische structuur van het broodkruimelpad', sc: '2.4.3', status: '', component: (0, i.jsx)(w, {}) },
-         { title: 'Het is zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.7', status: '', component: (0, i.jsx)(z.Ay, {}) },
-         { title: 'De links in het broodkruimelpad worden niet bedekt door andere content', sc: '2.4.11', status: '', component: (0, i.jsx)(E.Ay, {}) },
-         { title: 'Het is duidelijk zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.13', status: '', component: (0, i.jsx)(A.Ay, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(t, {
-        headingLevel: 4,
-        testCategory: 'Toegankelijkheid screenreader',
-        items: [
-         { title: 'Informatieve afbeeldingen hebben een alternatieve tekst en decoratieve tekens en iconen zijn verborgen', sc: '1.1.1', status: '', component: (0, i.jsx)(l, {}) },
-         { title: 'Het is duidelijk dat het om een navigatiemenu gaat en de relatie tussen de links in het broodkruimelpad is voor iedereen duidelijk ', sc: '1.3.1', status: '', component: (0, i.jsx)(u, {}) },
-         { title: 'De leesvolgorde van tekst en links in het broodkruimelpad is voor iedereen logisch', sc: '1.3.2', status: '', component: (0, i.jsx)(F.Ay, {}) },
-         { title: 'Als het broodkruimelpad tekst in een andere taal dan de hoofdtaal van de pagina bevat, wordt hier een taalwissel voor aangegeven', sc: '3.1.2', status: '', component: (0, i.jsx)(G.Ay, {}) },
-         { title: 'Het broodkruimelpad en de links in het broodkruimelpad hebben een toegankelijke naam, rol en status', sc: '4.1.2', status: '', component: (0, i.jsx)(M, {}) },
-        ],
-       }),
-       '\n',
-       (0, i.jsx)(Z.$9, { component: J, headingLevel: 2 }),
-      ],
-     })
-    );
+     { CriteriaList: t, CriteriaListItem: r } = n;
+    return (t || K('CriteriaList', !0), r || K('CriteriaListItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(c.Fc, { component: W, headingLevel: 1, description: Z }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(c.VK, { component: W, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(c.mu, { component: W, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', children: F.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', children: H.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid zoom en herschalen', children: C.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid toetsenbord', children: B.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid screenreader', children: E.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(c.$9, { component: W, headingLevel: 2 })] }));
    }
-   function Q(e = {}) {
+   function X(e = {}) {
     const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(Y, { ...e }) }) : Y(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(U, { ...e }) }) : U(e);
+   }
+   function K(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
    }
   },
   8584(e, n, t) {
@@ -295,7 +284,7 @@
   },
   33062(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => i, KF: () => h, mJ: () => p, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => x, B2: () => j, Pc: () => c, f4: () => a, GT: () => f, fX: () => o, eQ: () => v, B_: () => b, o_: () => k, Rc: () => y });
+   t.d(n, { bo: () => i, KF: () => h, mJ: () => p, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => f, B2: () => j, Pc: () => c, f4: () => a, GT: () => x, fX: () => o, eQ: () => v, B_: () => b, o_: () => k, Rc: () => y });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -337,10 +326,10 @@
     k = (e) => e.join('.'),
     b = (e) => '--' + e.join('-'),
     v = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function x(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? x(e[t], [...n, t]) : []));
+   function f(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? f(e[t], [...n, t]) : []));
    }
-   function f(e) {
+   function x(e) {
     const n = new Map();
     function t(e) {
      return (n.has(e) || n.set(e, k(e)), n.get(e));
@@ -499,7 +488,7 @@
   },
   85825(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => b, $9: () => x, mu: () => v, Fc: () => f });
+   t.d(n, { VK: () => b, $9: () => f, mu: () => v, Fc: () => x });
    var r = t(29181),
     i = t(13526),
     o = t(1292),
@@ -588,12 +577,12 @@
         })
       : (0, l.jsx)(r.fz, { children: 'Er zijn nog geen implementaties' });
     },
-    x = ({ component: e, headingLevel: n }) => {
+    f = ({ component: e, headingLevel: n }) => {
      const t = e?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(r.DZ, { level: n, children: 'Help om deze component te verbeteren' }), (0, l.jsxs)(r.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.Xy, { children: [i ? (0, l.jsxs)(r.Er, { children: ['Vul de ', (0, l.jsx)(r.N_, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.Er, { children: [(0, l.jsxs)(r.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    f = ({ component: e, headingLevel: n, description: t }) => {
+    x = ({ component: e, headingLevel: n, description: t }) => {
      const i = e && k.bo[e.relayStep];
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(h.p, { level: n, suffix: i && (0, l.jsx)(u.D, { state: i }), children: e.title }), (0, l.jsx)(r.fz, { lead: !0, children: t })] });
     };

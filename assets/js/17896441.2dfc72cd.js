@@ -320,14 +320,14 @@
       l = r.lazy(() => n(51580)(`./${o}-docs/docs/anatomy/anatomy.md`).catch(() => ({ default: () => null })));
      return (0, i.jsx)(r.Suspense, { fallback: null, children: (0, i.jsxs)('figure', { className: (0, g.A)('component-anatomy'), children: [t && (0, i.jsx)(t, { height: null, className: (0, g.A)('component-anatomy__illustration') }), t && l && (0, i.jsx)('figcaption', { children: (0, i.jsx)(S.o, { omitH1: !0, headingLevel: 1, components: { ol: ({ children: e }) => (0, i.jsx)(L, { children: e }), li: ({ children: e }) => (0, i.jsx)(F, { children: e }) }, children: (0, i.jsx)(l, {}) }) })] }) });
     },
-    M = ({ title: e, sc: t, status: n, component: s, headingLevel: o = 4 }) => {
+    M = ({ title: e, sc: t, status: n, children: s, headingLevel: o = 4 }) => {
      const l = G.pI.get(t),
       r = l ? `${t} ${l.nl?.title}` : t;
      return (0, i.jsxs)('div', { className: 'component-criteria-section', children: [(0, i.jsx)(m.DZ, { appearance: 'utrecht-heading-4', level: o, className: 'component-criteria-section__heading', children: e }), (t || n) && (0, i.jsxs)('dl', { className: 'component-criteria-section__dl', children: [t && (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)('dt', { className: 'component-criteria-section__dt', children: 'WCAG' }), (0, i.jsx)('dd', { className: 'component-criteria-section__dd', children: (0, i.jsx)(m.N_, { href: `/wcag/${t}/`, children: r }) })] }), n && (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)('dt', { className: 'component-criteria-section__dt', children: 'Status' }), (0, i.jsx)('dd', { className: 'component-criteria-section__dl', children: n })] })] }), s] });
     },
-    D = ({ testCategory: e, items: t }) => (0, i.jsx)(x.If, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 3, expanded: !1, label: (0, i.jsx)('span', { children: e }), body: t.map((e, t) => (0, i.jsx)(M, { ...e }, t)) }] });
+    D = ({ testCategory: e, children: t }) => (0, i.jsx)(x.If, { sections: [{ className: 'utrecht-accordion--nlds-subtle', headingLevel: 3, expanded: !1, label: (0, i.jsx)('span', { children: e }), body: t }] });
    function O({ children: e }) {
-    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: o.A, OverviewPage: w, DocCardList: u.A, ComponentOverview: N, Checklist: R, ChecklistItem: _, ComponentAnatomy: P, CriteriaList: D }, children: e });
+    return (0, i.jsx)(s.x, { components: { code: m.Cy, a: m.N_, em: m.lx, pre: d, details: a, ul: ({ children: e }) => (0, i.jsx)(m.Xy, { className: 'utrecht-unordered-list--html-content', children: e }), ol: ({ children: e }) => (0, i.jsx)(m._J, { className: 'utrecht-ordered-list--html-content', children: e }), img: m._V, h1: m._, h2: m.fV, h3: m._B, h4: m.f_, h5: m.mM, h6: m.TT, admonition: o.A, OverviewPage: w, DocCardList: u.A, ComponentOverview: N, Checklist: R, ChecklistItem: _, ComponentAnatomy: P, CriteriaList: D, CriteriaListItem: M }, children: e });
    }
   },
   12013(e, t, n) {

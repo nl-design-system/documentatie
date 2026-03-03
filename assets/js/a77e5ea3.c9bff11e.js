@@ -76,7 +76,7 @@
   },
   33062(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => o, KF: () => h, mJ: () => m, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => x, B2: () => j, Pc: () => a, f4: () => c, GT: () => f, fX: () => i, eQ: () => b, B_: () => v, o_: () => k, Rc: () => y });
+   t.d(n, { bo: () => o, KF: () => h, mJ: () => m, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => y, B2: () => j, Pc: () => a, f4: () => c, GT: () => x, fX: () => i, eQ: () => b, B_: () => v, o_: () => k, Rc: () => f });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     o = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -118,17 +118,17 @@
     k = (e) => e.join('.'),
     v = (e) => '--' + e.join('-'),
     b = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function x(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? x(e[t], [...n, t]) : []));
+   function y(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? y(e[t], [...n, t]) : []));
    }
-   function f(e) {
+   function x(e) {
     const n = new Map();
     function t(e) {
      return (n.has(e) || n.set(e, k(e)), n.get(e));
     }
     return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
    }
-   function y(e) {
+   function f(e) {
     const n = {};
     for (const t of e) {
      let e = n;
@@ -192,251 +192,6 @@
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  49042(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => K, component: () => Q, contentTitle: () => X, default: () => te, description: () => Y, frontMatter: () => I, issueNumber: () => q, metadata: () => r, title: () => J, toc: () => ee }));
-   const r = JSON.parse('{"id":"componenten/accordion/index","title":"Accordion","description":"Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.","source":"@site/docs/componenten/accordion/index.mdx","sourceDirName":"componenten/accordion","slug":"/accordion","permalink":"/accordion","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/accordion/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Accordion","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Accordion","pagination_label":"Accordion","description":"Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.","slug":"/accordion","keywords":["accordeon","accordion","aria-expanded","collapse","collapsible","details","disclosure","expand","expandable","expandable section","expanded","ingeklapt","inklappen","secties","sections","toggle","uitgeklapt","uitklappen","uitklapper","lamellen","blinders"]},"sidebar":"componenten","previous":{"title":"Overzicht","permalink":"/componenten/"},"next":{"title":"Action Group","permalink":"/action-group"}}');
-   var o = t(86070),
-    i = t(18439),
-    s = t(36059),
-    c = t(62528);
-   function a(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsxs)(n.p, { children: ['De staat van de accordion \u2013 ingeklapt of uitgeklapt \u2013 is beschikbaar voor hulpsoftware. Bijvoorbeeld met het ', (0, o.jsx)(n.code, { children: 'aria-expanded' }), ' attribuut op het ', (0, o.jsx)(n.code, { children: 'button' }), ' element dat uitklapt, of door een ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie.'] }), '\n', (0, o.jsxs)(n.p, { children: ['Wanneer de tekst in de ', (0, o.jsx)(n.code, { children: 'button' }), ' of de ', (0, o.jsx)(n.code, { children: 'summary' }), ' van de ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie een kop is voor de content \xedn de accordion, is de tekst opgemaakt met een ', (0, o.jsx)(n.code, { children: 'h' }), ' element. Welk niveau de kop heeft, is afhankelijk van de structuur van de pagina.'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Koppen' }) }), '\n'] })] });
-   }
-   function l(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(a, { ...e }) }) : a(e);
-   }
-   function d(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Kleur is niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.' }), '\n', (0, o.jsx)(n.p, { children: 'Bijvoorbeeld: Als niet met een icoon, maar door een kleurverandering in de tekst wordt aangegeven of een accordion geopend of gesloten is, is dit niet voor iedereen duidelijk.' }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/doel/', children: 'Gebruik kleur met een doel' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
-   }
-   function u(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(d, { ...e }) }) : d(e);
-   }
-   function h(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Het contrast van de tekstkleur ten opzichte van de achtergrondkleur moet hoog genoeg zijn, zodat de tekst in het algemeen goed leesbaar wordt gevonden.\nDe criteria voor kleurcontrast zijn:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsxs)(n.li, { children: [(0, o.jsx)(n.a, { href: '/contrast/?background-color=white&color=%23767676', children: '4,5:1 contrast' }), ' voor normale tekst.'] }), '\n', (0, o.jsxs)(n.li, { children: [(0, o.jsx)(n.a, { href: '/contrast/?background-color=white&color=%23949494', children: '3:1 contrast' }), ' voor grotere letters (vanaf 24 pixels).'] }), '\n', (0, o.jsx)(n.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-tekst/', children: 'Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/', children: 'Geef tekst voldoende kleurcontrast' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
-   }
-   function j(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(h, { ...e }) }) : h(e);
-   }
-   function p(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De gebruiker moet tekst twee keer (200%) kunnen vergroten. Het gaat hierbij alleen om het vergroten van tekst en niet om bijvoorbeeld afbeeldingen of de layout.\nAlle functies moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn. Er mag geen inhoud buiten beeld vallen, verborgen zijn of maar gedeeltelijk zichtbaar zijn.' }), '\n', (0, o.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, o.jsx)(n.code, { children: 'word-break: break-word; hyphens: auto;' }), ' in combinatie met ', (0, o.jsx)(n.code, { children: 'text-wrap-style: pretty' }), ' of ', (0, o.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar.'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
-   }
-   function m(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(p, { ...e }) }) : p(e);
-   }
-   function g(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De tekst in de gebruikersinterface om de accordion te openen (bijvoorbeeld de button of een details summary combinatie) bestaat uit tekst, niet uit tekst in een afbeelding.' }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijn:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/afbeelding-als-button/', children: 'Afbeeldingen als buttons' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/', children: 'Tekst in een afbeelding' }) }), '\n'] })] });
-   }
-   function k(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(g, { ...e }) }) : g(e);
-   }
-   function v(e) {
-    const n = { li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visueel betekenis hebben.\nBijvoorbeeld:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Een icoon dat betekenis heeft, zoals het icoon dat aangeeft dat een accordion in- of uitgeklapt kan worden.' }), '\n', (0, o.jsx)(n.li, { children: 'De omranding van accordion, om aan te geven waar de gebruiker kan klikken met de muis of touch.' }), '\n'] }), '\n', (0, o.jsx)(n.p, { children: 'Het gemeten kleurcontrast tussen het element en de achtergrond moet minstens 3:1 zijn.' })] });
-   }
-   function b(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(v, { ...e }) }) : v(e);
-   }
-   function x(e) {
-    const n = { p: 'p', ...(0, i.R)(), ...e.components };
-    return (0, o.jsx)(n.p, { children: 'Het plaatsen van toetsenbordfocus of hover op de accordion, zorgt er niet voor dat de accordion opent.' });
-   }
-   function f(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(x, { ...e }) }) : x(e);
-   }
-   function y(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De accordion is bereikbaar met de Tab-toets, en opent en sluit met de entertoets en met de spatietoets.' }), '\n', (0, o.jsxs)(n.p, { children: ['Met een ', (0, o.jsx)(n.code, { children: 'button' }), ' element en met een ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie gaat dit automatisch goed. Voor een ', (0, o.jsx)(n.code, { children: 'div' }), ' element waar ', (0, o.jsx)(n.code, { children: 'role = "button"' }), ' en ', (0, o.jsx)(n.code, { children: 'aria-expanded' }), ' aan worden toegevoegd, moet de toetsenbordinteractie nog worden toegevoegd.'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toetsenbordbediening/', children: 'Toetsenbordbediening van een button' }) }), '\n'] })] });
-   }
-   function w(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(y, { ...e }) }) : y(e);
-   }
-   function z(e) {
-    const n = { p: 'p', ...(0, i.R)(), ...e.components };
-    return (0, o.jsx)(n.p, { children: 'Wanneer de accordion ingeklapt is, krijgen interactieve elementen in de ingeklapte content geen toetsenbordfocus.' });
-   }
-   function A(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(z, { ...e }) }) : z(e);
-   }
-   function D(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De tekst in de gebruikersinterface om de accordion te openen beschrijft duidelijk de inhoud van de content in de accordion.' }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/duidelijk-buttontekst/', children: 'Duidelijke buttontekst die beschrijft wat de button doet' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toegankelijke-naam/', children: 'De toegankelijke naam van een button' }) }), '\n'] })] });
-   }
-   function _(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(D, { ...e }) }) : D(e);
-   }
-   function N(e) {
-    const n = { code: 'code', p: 'p', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Zorg ervoor dat, als de gebruiker de accordion aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken.' }), '\n', (0, o.jsx)(n.p, { children: 'Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.' }), '\n', (0, o.jsxs)(n.p, { children: ['Met zowel een ', (0, o.jsx)(n.code, { children: 'button' }), ' element als met een ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie gaat dit automatisch goed. Met een div-element waarop ', (0, o.jsx)(n.code, { children: 'role= "button"' }), ' is geplaatst, moet zowel de toetsenbordinteractie als de interactie voor muis en touch nog worden toegevoegd. Gebruik voor dit laatste bij voorkeur het ', (0, o.jsx)(n.code, { children: 'click' }), '-event, omdat dit apparaatonafhankelijk is.'] })] });
-   }
-   function R(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(N, { ...e }) }) : N(e);
-   }
-   function S(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De tekst in de gebruikersinterface om de accordion te activeren komt voor in:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'De toegankelijke naam van de button, of;' }), '\n', (0, o.jsxs)(n.li, { children: ['In de ', (0, o.jsx)(n.code, { children: 'summary' }), ' van de ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie.'] }), '\n'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/zichtbare-naam/', children: 'De zichtbare naam moet overeenkomen met de toegankelijke naam' }) }), '\n'] })] });
-   }
-   function L(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(S, { ...e }) }) : S(e);
-   }
-   function M(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Maak het aanwijsgebied van de accordion groot genoeg, zodat het makkelijker is om deze te selecteren. Houd hiervoor een grootte aan van tenminste 44 bij 44 pixels.' }), '\n', (0, o.jsxs)(n.p, { children: ['Gebruik bijvoorbeeld een relatieve waarde als ', (0, o.jsx)(n.code, { children: 'em' }), ' of ', (0, o.jsx)(n.code, { children: 'rem' }), '. Dit maakt de grootte van het element schaalbaar relatief aan de grootte van de letters op de pagina.'] }), '\n', (0, o.jsx)(n.p, { children: 'Om er voor te zorgen dat het aanwijsgebied van de accordion in \xe1lle gevallen minimaal 44 bij 44 pixels is, kunnen de CSS-eigenschappen min-inline-size en min-block-size behulpzaam zijn.' }), '\n', (0, o.jsx)(n.p, { children: 'Dit zorgt ervoor dat de website makkelijker te navigeren en te bedienen is. Dit geldt speciaal voor mensen die werken op kleine aanraakschermen en muisgebruikers met trillende handen door bijvoorbeeld Parkinson.' }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/', children: 'Maak aanklikbare formuliervelden groot genoeg' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/interactieve-elementen/', children: 'Reserveer ruimte tussen interactieve elementen' }) }), '\n'] })] });
-   }
-   function T(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(M, { ...e }) }) : M(e);
-   }
-   function F(e) {
-    const n = { p: 'p', ...(0, i.R)(), ...e.components };
-    return (0, o.jsx)(n.p, { children: 'Als de gebruiker de accordion opent of sluit, blijft de focus op het element waarmee de accordion geopend of gesloten wordt.' });
-   }
-   function C(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(F, { ...e }) }) : F(e);
-   }
-   function E(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsxs)(n.p, { children: ['Het onderdeel van de gebruikersinterface waarmee een bezoeker de accordion opent, heeft de rol ', (0, o.jsx)(n.code, { children: 'button' }), '.'] }), '\n', (0, o.jsx)(n.p, { children: 'Opties:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Wanneer een details en summary combinatie gebruikt wordt, heeft het summary element voor hulpsoftware automatisch de juiste rol.' }), '\n', (0, o.jsxs)(n.li, { children: ['Een HTML ', (0, o.jsx)(n.code, { children: 'button' }), ' heeft ook automatisch de juiste rol. Het is mogelijk om met ARIA een ', (0, o.jsx)(n.code, { children: 'role=button' }), ' toe te voegen aan een ander element dan een ', (0, o.jsx)(n.code, { children: 'button' }), ', maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc.'] }), '\n'] }), '\n', (0, o.jsx)(n.p, { children: 'De staat van de accordion (open of dicht) moet ook beschikbaar zijn voor hulpsoftware.' }), '\n', (0, o.jsx)(n.p, { children: 'Opties:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Wanneer een details en summary combinatie gebruikt wordt, gaat dit automatisch goed.' }), '\n', (0, o.jsx)(n.li, { children: 'Bij een knop moet de staat worden aangegeven met het aria-expanded attribuut.' }), '\n'] }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<button aria-expanded="true">Menu</button>\n' }) }), '\n', (0, o.jsxs)(n.p, { children: ['Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat ', (0, o.jsx)(n.code, { children: 'aria-expanded' }), ' de waarde ', (0, o.jsx)(n.code, { children: 'false' }), ' krijgt wanneer het menu weer is ingeklapt.'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toegankelijke-naam/', children: 'De toegankelijke naam van een button' }) }), '\n'] })] });
-   }
-   function O(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(E, { ...e }) }) : E(e);
-   }
-   var V = t(30536),
-    H = t(32066),
-    G = t(36599),
-    B = t(45411),
-    P = t(8584),
-    $ = (t(73026), t(69488)),
-    U = t(31820),
-    W = t(87711),
-    Z = t(85825);
-   const I = { title: 'Accordion', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Accordion', pagination_label: 'Accordion', description: 'Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.', slug: '/accordion', keywords: ['accordeon', 'accordion', 'aria-expanded', 'collapse', 'collapsible', 'details', 'disclosure', 'expand', 'expandable', 'expandable section', 'expanded', 'ingeklapt', 'inklappen', 'secties', 'sections', 'toggle', 'uitgeklapt', 'uitklappen', 'uitklapper', 'lamellen', 'blinders'] },
-    X = void 0,
-    K = {},
-    J = 'Accordion',
-    Y = 'Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.',
-    q = 102,
-    Q = s.find((e) => e.number === q),
-    ee = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...c.RM];
-   function ne(e) {
-    const n = { h2: 'h2', ...(0, i.R)(), ...e.components },
-     { CriteriaList: t } = n;
-    return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('CriteriaList', !0),
-     (0, o.jsxs)(o.Fragment, {
-      children: [
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       '\n',
-       (0, o.jsx)(Z.Fc, { component: Q, headingLevel: 1, description: Y }),
-       '\n',
-       (0, o.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }),
-       '\n',
-       (0, o.jsx)(Z.VK, { component: Q, headingLevel: 3 }),
-       '\n',
-       (0, o.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }),
-       '\n',
-       (0, o.jsx)(Z.mu, { component: Q, headingLevel: 3 }),
-       '\n',
-       (0, o.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }),
-       '\n',
-       (0, o.jsx)(c.Ay, {}),
-       '\n',
-       (0, o.jsx)(t, {
-        headingLevel: 3,
-        testCategory: 'Toegankelijkheid algemeen',
-        items: [
-         { title: 'De informatie in de accordeon bestaat uit tekst, niet uit tekst in een afbeelding', sc: '1.4.5', status: '', component: (0, o.jsx)(k, {}) },
-         { title: 'Het is duidelijk welke content in de accordion aanwezig is', sc: '2.4.6', status: '', component: (0, o.jsx)(_, {}) },
-         { title: 'De bezoeker kan het openen van de accordion of een interactief element in de accordion annuleren', sc: '2.5.2', status: '', component: (0, o.jsx)(R, {}) },
-         { title: 'De visuele naam van de accordion komt voor in de toegankelijke naam van de accordion', sc: '2.5.3', status: '', component: (0, o.jsx)(L, {}) },
-         { title: 'Het aanwijsgebied van de accordion is groot genoeg', sc: '2.5.5', status: '', component: (0, o.jsx)(T, {}) },
-         { title: 'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig', sc: '3.1.2', status: '', component: (0, o.jsx)($.Ay, {}) },
-         { title: 'Het gedrag van de accordion is voorspelbaar', sc: '3.2.1', status: '', component: (0, o.jsx)(U.Ay, {}) },
-         { title: 'Het openen of sluiten van de accordion verplaatst de focus niet', sc: '3.2.2', status: '', component: (0, o.jsx)(C, {}) },
-        ],
-       }),
-       '\n',
-       (0, o.jsx)(t, {
-        headingLevel: 3,
-        testCategory: 'Toegankelijkheid visueel ontwerp',
-        items: [
-         { title: 'Informatie in of over de accordion is niet alleen te begrijpen door middel van kleur', sc: '1.4.1', status: '', component: (0, o.jsx)(u, {}) },
-         { title: 'De contrastratio tussen de tekst en de achtergrondkleur in de accordion is hoog genoeg', sc: '1.4.3', status: '', component: (0, o.jsx)(j, {}) },
-         { title: 'Niet-tekstuele content in de accordion heeft een contrastratio van minimaal 3:1 met de achtergrond', sc: '1.4.11', status: '', component: (0, o.jsx)(b, {}) },
-         { title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling', sc: '2.4.7', status: '', component: (0, o.jsx)(B.Ay, {}) },
-         { title: 'Accordions met dezelfde functie of informatie zien er op iedere pagina waar de accordion voorkomt hetzelfde uit', sc: '3.2.4', status: '', component: (0, o.jsx)(W.Ay, {}) },
-        ],
-       }),
-       '\n',
-       (0, o.jsx)(t, {
-        headingLevel: 3,
-        testCategory: 'Toegankelijkheid zoom en herschalen',
-        items: [
-         { title: 'Tekst in de accordion kan 200% vergroot worden zonder verlies van functionaliteit of informatie', sc: '1.4.4', status: '', component: (0, o.jsx)(m, {}) },
-         { title: 'De bezoeker kan de accordeon tot 400% vergroten zonder verlies van functionaliteit of informatie', sc: '1.4.10', status: '', component: (0, o.jsx)(V.Ay, {}) },
-         { title: 'De tekstopmaak in de accordion kan aangepast worden zonder verlies van functionaliteit of informatie', sc: '1.4.12', status: '', component: (0, o.jsx)(H.Ay, {}) },
-         { title: 'De accordion opent niet bij hover of focus.', sc: '1.4.13', status: '', component: (0, o.jsx)(f, {}) },
-        ],
-       }),
-       '\n',
-       (0, o.jsx)(t, {
-        headingLevel: 3,
-        testCategory: 'Toegankelijkheid toetsenbord',
-        items: [
-         { title: 'De accordion is bedienbaar met het toetsenbord', sc: '2.1.1', status: '', component: (0, o.jsx)(w, {}) },
-         { title: 'De accordion zorgt niet voor een toetsenbordval', sc: '2.1.2', status: '', component: (0, o.jsx)(G.Ay, {}) },
-         { title: 'De focusvolgorde rondom en in de accordion is logisch', sc: '2.4.3', status: '', component: (0, o.jsx)(A, {}) },
-         { title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling', sc: '2.4.6', status: '', component: (0, o.jsx)(_, {}) },
-         { title: 'De accordion wordt niet bedekt door andere content', sc: '2.4.11', status: '', component: (0, o.jsx)(P.Ay, {}) },
-        ],
-       }),
-       '\n',
-       (0, o.jsx)(t, {
-        headingLevel: 3,
-        testCategory: 'Toegankelijkheid screenreader',
-        items: [
-         { title: 'De staat van de accordion is beschikbaar voor hulpsoftware', sc: '1.3.1', status: '', component: (0, o.jsx)(l, {}) },
-         { title: 'Het is duidelijk welke content in de accordion aanwezig is', sc: '2.4.6', status: '', component: (0, o.jsx)(_, {}) },
-         { title: 'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig', sc: '3.1.2', status: '', component: (0, o.jsx)($.Ay, {}) },
-         { title: 'De accordion heeft een toegankelijke naam, rol en status', sc: '4.1.2', status: '', component: (0, o.jsx)(O, {}) },
-        ],
-       }),
-       '\n',
-       (0, o.jsx)(Z.$9, { component: Q, headingLevel: 2 }),
-      ],
-     })
-    );
-   }
-   function te(e = {}) {
-    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(ne, { ...e }) }) : ne(e);
-   }
-  },
   54565(e, n, t) {
    'use strict';
    t.d(n, { c: () => o });
@@ -495,24 +250,9 @@
     o = t(86070);
    const i = ({ children: e, className: n, level: t = 1, suffix: i, ...s }) => (0, o.jsxs)('hgroup', { className: (0, r.A)('nlds-inline-heading-group', `utrecht-heading-${t}`, n), ...s, children: [(0, o.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: e }), i && (0, o.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [i ? ' ' : '', i] })] });
   },
-  73026(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => c, RM: () => i });
-   var r = t(86070),
-    o = t(18439);
-   const i = [];
-   function s(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', strong: 'strong', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg dat het goed zichtbaar is welk element de toetsenbordfocus heeft, wanneer je door de website navigeert met een toetsenbord of vergelijkbare bediening. Het moet duidelijk te zien zijn waar de toetsenbordfocus zich bevindt.' }), '\n', (0, r.jsxs)(n.p, { children: ['Een optie is het geven van een outline (focusring). Dit kan via de CSS-properties ', (0, r.jsx)(n.code, { children: 'outline' }), ' of ', (0, r.jsx)(n.code, { children: 'border' }), '.'] }), '\n', (0, r.jsx)(n.p, { children: 'Geef de outline:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsxs)(n.li, { children: ['een dikte van minimaal 2 ', (0, r.jsx)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel', children: 'CSS-pixels' }), ';'] }), '\n', (0, r.jsx)(n.li, { children: 'een kleurcontrast van ten minste 3:1 ten opzichte van de aangrenzende kleuren;' }), '\n', (0, r.jsxs)(n.li, { children: ['een kleurcontrast van ten minste 3:1 tussen dezelfde pixels in de ', (0, r.jsx)(n.strong, { children: 'gefocuste' }), ' en ', (0, r.jsx)(n.strong, { children: 'niet-gefocuste' }), ' staat.'] }), '\n'] }), '\n', (0, r.jsxs)(n.p, { children: ['Een andere optie is geen outline toepassen, maar het hele element van kleur te laten veranderen.\nBijvoorbeeld een button die van kleur verandert bij toetsenbordfocus. Ook hier geldt een kleurcontrast van ten minste 3:1 tussen dezelfde pixels in de ', (0, r.jsx)(n.strong, { children: 'gefocuste' }), ' en ', (0, r.jsx)(n.strong, { children: 'niet-gefocuste' }), ' staat.'] })] });
-   }
-   function c(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
-   }
-  },
   85825(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => v, $9: () => x, mu: () => b, Fc: () => f });
+   t.d(n, { VK: () => v, $9: () => y, mu: () => b, Fc: () => x });
    var r = t(29181),
     o = t(13526),
     i = t(1292),
@@ -601,12 +341,12 @@
         })
       : (0, l.jsx)(r.fz, { children: 'Er zijn nog geen implementaties' });
     },
-    x = ({ component: e, headingLevel: n }) => {
+    y = ({ component: e, headingLevel: n }) => {
      const t = e?.projects.find((e) => 'HELP_WANTED' === e.id),
       o = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(r.DZ, { level: n, children: 'Help om deze component te verbeteren' }), (0, l.jsxs)(r.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.Xy, { children: [o ? (0, l.jsxs)(r.Er, { children: ['Vul de ', (0, l.jsx)(r.N_, { href: o, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.Er, { children: [(0, l.jsxs)(r.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    f = ({ component: e, headingLevel: n, description: t }) => {
+    x = ({ component: e, headingLevel: n, description: t }) => {
      const o = e && k.bo[e.relayStep];
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(h.p, { level: n, suffix: o && (0, l.jsx)(u.D, { state: o }), children: e.title }), (0, l.jsx)(r.fz, { lead: !0, children: t })] });
     };
@@ -624,6 +364,256 @@
    function c(e = {}) {
     const { wrapper: n } = { ...(0, o.R)(), ...e.components };
     return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  88107(e, n, t) {
+   'use strict';
+   (t.r(n), t.d(n, { assets: () => G, component: () => I, contentTitle: () => H, default: () => X, description: () => P, frontMatter: () => V, issueNumber: () => $, metadata: () => r, title: () => B, toc: () => W }));
+   const r = JSON.parse('{"id":"componenten/accordion/index","title":"Accordion","description":"Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.","source":"@site/docs/componenten/accordion/index.mdx","sourceDirName":"componenten/accordion","slug":"/accordion","permalink":"/accordion","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/accordion/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Accordion","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Accordion","pagination_label":"Accordion","description":"Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.","slug":"/accordion","keywords":["accordeon","accordion","aria-expanded","collapse","collapsible","details","disclosure","expand","expandable","expandable section","expanded","ingeklapt","inklappen","secties","sections","toggle","uitgeklapt","uitklappen","uitklapper","lamellen","blinders"]},"sidebar":"componenten","previous":{"title":"Overzicht","permalink":"/componenten/"},"next":{"title":"Action Group","permalink":"/action-group"}}');
+   var o = t(86070),
+    i = t(18439),
+    s = t(36059),
+    c = t(62528),
+    a = t(85825);
+   function l(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsxs)(n.p, { children: ['De staat van de accordion \u2013 ingeklapt of uitgeklapt \u2013 is beschikbaar voor hulpsoftware. Bijvoorbeeld met het ', (0, o.jsx)(n.code, { children: 'aria-expanded' }), ' attribuut op het ', (0, o.jsx)(n.code, { children: 'button' }), ' element dat uitklapt, of door een ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie.'] }), '\n', (0, o.jsxs)(n.p, { children: ['Wanneer de tekst in de ', (0, o.jsx)(n.code, { children: 'button' }), ' of de ', (0, o.jsx)(n.code, { children: 'summary' }), ' van de ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie een kop is voor de content \xedn de accordion, is de tekst opgemaakt met een ', (0, o.jsx)(n.code, { children: 'h' }), ' element. Welk niveau de kop heeft, is afhankelijk van de structuur van de pagina.'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/koppen/', children: 'Koppen' }) }), '\n'] })] });
+   }
+   function d(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Kleur is niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.' }), '\n', (0, o.jsx)(n.p, { children: 'Bijvoorbeeld: Als niet met een icoon, maar door een kleurverandering in de tekst wordt aangegeven of een accordion geopend of gesloten is, is dit niet voor iedereen duidelijk.' }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/doel/', children: 'Gebruik kleur met een doel' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
+   }
+   function u(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Het contrast van de tekstkleur ten opzichte van de achtergrondkleur moet hoog genoeg zijn, zodat de tekst in het algemeen goed leesbaar wordt gevonden.\nDe criteria voor kleurcontrast zijn:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsxs)(n.li, { children: [(0, o.jsx)(n.a, { href: '/contrast/?background-color=white&color=%23767676', children: '4,5:1 contrast' }), ' voor normale tekst.'] }), '\n', (0, o.jsxs)(n.li, { children: [(0, o.jsx)(n.a, { href: '/contrast/?background-color=white&color=%23949494', children: '3:1 contrast' }), ' voor grotere letters (vanaf 24 pixels).'] }), '\n', (0, o.jsx)(n.li, { children: '3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).' }), '\n'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-tekst/', children: 'Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar/', children: 'Geef tekst voldoende kleurcontrast' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst/', children: 'Gebruik van kleur in tekst' }) }), '\n'] })] });
+   }
+   function h(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De gebruiker moet tekst twee keer (200%) kunnen vergroten. Het gaat hierbij alleen om het vergroten van tekst en niet om bijvoorbeeld afbeeldingen of de layout.\nAlle functies moeten werken en zichtbaar zijn. Alle tekst moet leesbaar zijn. Er mag geen inhoud buiten beeld vallen, verborgen zijn of maar gedeeltelijk zichtbaar zijn.' }), '\n', (0, o.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, o.jsx)(n.code, { children: 'word-break: break-word; hyphens: auto;' }), ' in combinatie met ', (0, o.jsx)(n.code, { children: 'text-wrap-style: pretty' }), ' of ', (0, o.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar.'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
+   }
+   function j(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De tekst in de gebruikersinterface om de accordion te openen (bijvoorbeeld de button of een details summary combinatie) bestaat uit tekst, niet uit tekst in een afbeelding.' }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijn:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/afbeelding-als-button/', children: 'Afbeeldingen als buttons' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/', children: 'Tekst in een afbeelding' }) }), '\n'] })] });
+   }
+   function p(e) {
+    const n = { li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Zorg voor voldoende kleurcontrast tussen de achtergrondkleur en de kleur van componenten die visueel betekenis hebben.\nBijvoorbeeld:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Een icoon dat betekenis heeft, zoals het icoon dat aangeeft dat een accordion in- of uitgeklapt kan worden.' }), '\n', (0, o.jsx)(n.li, { children: 'De omranding van accordion, om aan te geven waar de gebruiker kan klikken met de muis of touch.' }), '\n'] }), '\n', (0, o.jsx)(n.p, { children: 'Het gemeten kleurcontrast tussen het element en de achtergrond moet minstens 3:1 zijn.' })] });
+   }
+   function m(e) {
+    const n = { p: 'p', ...(0, i.R)(), ...e.components };
+    return (0, o.jsx)(n.p, { children: 'Het plaatsen van toetsenbordfocus of hover op de accordion, zorgt er niet voor dat de accordion opent.' });
+   }
+   function g(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De accordion is bereikbaar met de Tab-toets, en opent en sluit met de entertoets en met de spatietoets.' }), '\n', (0, o.jsxs)(n.p, { children: ['Met een ', (0, o.jsx)(n.code, { children: 'button' }), ' element en met een ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie gaat dit automatisch goed. Voor een ', (0, o.jsx)(n.code, { children: 'div' }), ' element waar ', (0, o.jsx)(n.code, { children: 'role = "button"' }), ' en ', (0, o.jsx)(n.code, { children: 'aria-expanded' }), ' aan worden toegevoegd, moet de toetsenbordinteractie nog worden toegevoegd.'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toetsenbordbediening/', children: 'Toetsenbordbediening van een button' }) }), '\n'] })] });
+   }
+   function k(e) {
+    const n = { p: 'p', ...(0, i.R)(), ...e.components };
+    return (0, o.jsx)(n.p, { children: 'Wanneer de accordion ingeklapt is, krijgen interactieve elementen in de ingeklapte content geen toetsenbordfocus.' });
+   }
+   function v(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De tekst in de gebruikersinterface om de accordion te openen beschrijft duidelijk de inhoud van de content in de accordion.' }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/duidelijk-buttontekst/', children: 'Duidelijke buttontekst die beschrijft wat de button doet' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toegankelijke-naam/', children: 'De toegankelijke naam van een button' }) }), '\n'] })] });
+   }
+   function b(e = {}) {
+    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(v, { ...e }) }) : v(e);
+   }
+   function y(e) {
+    const n = { code: 'code', p: 'p', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Zorg ervoor dat, als de gebruiker de accordion aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om actie te voorkomen of ongedaan te maken.' }), '\n', (0, o.jsx)(n.p, { children: 'Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.' }), '\n', (0, o.jsxs)(n.p, { children: ['Met zowel een ', (0, o.jsx)(n.code, { children: 'button' }), ' element als met een ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie gaat dit automatisch goed. Met een div-element waarop ', (0, o.jsx)(n.code, { children: 'role= "button"' }), ' is geplaatst, moet zowel de toetsenbordinteractie als de interactie voor muis en touch nog worden toegevoegd. Gebruik voor dit laatste bij voorkeur het ', (0, o.jsx)(n.code, { children: 'click' }), '-event, omdat dit apparaatonafhankelijk is.'] })] });
+   }
+   function x(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'De tekst in de gebruikersinterface om de accordion te activeren komt voor in:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'De toegankelijke naam van de button, of;' }), '\n', (0, o.jsxs)(n.li, { children: ['In de ', (0, o.jsx)(n.code, { children: 'summary' }), ' van de ', (0, o.jsx)(n.code, { children: 'details' }), ' en ', (0, o.jsx)(n.code, { children: 'summary' }), ' combinatie.'] }), '\n'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/zichtbare-naam/', children: 'De zichtbare naam moet overeenkomen met de toegankelijke naam' }) }), '\n'] })] });
+   }
+   function f(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Maak het aanwijsgebied van de accordion groot genoeg, zodat het makkelijker is om deze te selecteren. Houd hiervoor een grootte aan van tenminste 44 bij 44 pixels.' }), '\n', (0, o.jsxs)(n.p, { children: ['Gebruik bijvoorbeeld een relatieve waarde als ', (0, o.jsx)(n.code, { children: 'em' }), ' of ', (0, o.jsx)(n.code, { children: 'rem' }), '. Dit maakt de grootte van het element schaalbaar relatief aan de grootte van de letters op de pagina.'] }), '\n', (0, o.jsx)(n.p, { children: 'Om er voor te zorgen dat het aanwijsgebied van de accordion in \xe1lle gevallen minimaal 44 bij 44 pixels is, kunnen de CSS-eigenschappen min-inline-size en min-block-size behulpzaam zijn.' }), '\n', (0, o.jsx)(n.p, { children: 'Dit zorgt ervoor dat de website makkelijker te navigeren en te bedienen is. Dit geldt speciaal voor mensen die werken op kleine aanraakschermen en muisgebruikers met trillende handen door bijvoorbeeld Parkinson.' }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/', children: 'Maak aanklikbare formuliervelden groot genoeg' }) }), '\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/interactieve-elementen/', children: 'Reserveer ruimte tussen interactieve elementen' }) }), '\n'] })] });
+   }
+   function w(e) {
+    const n = { p: 'p', ...(0, i.R)(), ...e.components };
+    return (0, o.jsx)(n.p, { children: 'Als de gebruiker de accordion opent of sluit, blijft de focus op het element waarmee de accordion geopend of gesloten wordt.' });
+   }
+   function z(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsxs)(n.p, { children: ['Het onderdeel van de gebruikersinterface waarmee een bezoeker de accordion opent, heeft de rol ', (0, o.jsx)(n.code, { children: 'button' }), '.'] }), '\n', (0, o.jsx)(n.p, { children: 'Opties:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Wanneer een details en summary combinatie gebruikt wordt, heeft het summary element voor hulpsoftware automatisch de juiste rol.' }), '\n', (0, o.jsxs)(n.li, { children: ['Een HTML ', (0, o.jsx)(n.code, { children: 'button' }), ' heeft ook automatisch de juiste rol. Het is mogelijk om met ARIA een ', (0, o.jsx)(n.code, { children: 'role=button' }), ' toe te voegen aan een ander element dan een ', (0, o.jsx)(n.code, { children: 'button' }), ', maar dit is niet aan te raden. Heb je het absoluut nodig, zorg er dan voor dat het gekozen element ook voldoet aan de verwachte toetsenbordinteractie, focusstijl, etc.'] }), '\n'] }), '\n', (0, o.jsx)(n.p, { children: 'De staat van de accordion (open of dicht) moet ook beschikbaar zijn voor hulpsoftware.' }), '\n', (0, o.jsx)(n.p, { children: 'Opties:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Wanneer een details en summary combinatie gebruikt wordt, gaat dit automatisch goed.' }), '\n', (0, o.jsx)(n.li, { children: 'Bij een knop moet de staat worden aangegeven met het aria-expanded attribuut.' }), '\n'] }), '\n', (0, o.jsx)(n.pre, { children: (0, o.jsx)(n.code, { className: 'language-html', children: '<button aria-expanded="true">Menu</button>\n' }) }), '\n', (0, o.jsxs)(n.p, { children: ['Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat ', (0, o.jsx)(n.code, { children: 'aria-expanded' }), ' de waarde ', (0, o.jsx)(n.code, { children: 'false' }), ' krijgt wanneer het menu weer is ingeklapt.'] }), '\n', (0, o.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toegankelijke-naam/', children: 'De toegankelijke naam van een button' }) }), '\n'] })] });
+   }
+   var A = t(30536),
+    D = t(32066),
+    _ = t(36599),
+    N = t(45411),
+    R = t(8584),
+    S = t(69488),
+    L = t(31820),
+    M = t(87711);
+   const T = [
+     {
+      title: 'De informatie in de accordeon bestaat uit tekst, niet uit tekst in een afbeelding',
+      sc: '1.4.5',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(j, { ...e }) }) : j(e);
+      },
+     },
+     { title: 'Het is duidelijk welke content in de accordion aanwezig is', sc: '2.4.6', status: '', component: b },
+     {
+      title: 'De bezoeker kan het openen van de accordion of een interactief element in de accordion annuleren',
+      sc: '2.5.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(y, { ...e }) }) : y(e);
+      },
+     },
+     {
+      title: 'De visuele naam van de accordion komt voor in de toegankelijke naam van de accordion',
+      sc: '2.5.3',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(x, { ...e }) }) : x(e);
+      },
+     },
+     {
+      title: 'Het aanwijsgebied van de accordion is groot genoeg',
+      sc: '2.5.5',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(f, { ...e }) }) : f(e);
+      },
+     },
+     { title: 'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig', sc: '3.1.2', status: '', component: S.Ay },
+     { title: 'Het gedrag van de accordion is voorspelbaar', sc: '3.2.1', status: '', component: L.Ay },
+     {
+      title: 'Het openen of sluiten van de accordion verplaatst de focus niet',
+      sc: '3.2.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(w, { ...e }) }) : w(e);
+      },
+     },
+    ],
+    F = [
+     {
+      title: 'Informatie in of over de accordion is niet alleen te begrijpen door middel van kleur',
+      sc: '1.4.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(d, { ...e }) }) : d(e);
+      },
+     },
+     {
+      title: 'De contrastratio tussen de tekst en de achtergrondkleur in de accordion is hoog genoeg',
+      sc: '1.4.3',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(u, { ...e }) }) : u(e);
+      },
+     },
+     {
+      title: 'Niet-tekstuele content in de accordion heeft een contrastratio van minimaal 3:1 met de achtergrond',
+      sc: '1.4.11',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(p, { ...e }) }) : p(e);
+      },
+     },
+     { title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling', sc: '2.4.7', status: '', component: N.Ay },
+     { title: 'Accordions met dezelfde functie of informatie zien er op iedere pagina waar de accordion voorkomt hetzelfde uit', sc: '3.2.4', status: '', component: M.Ay },
+    ],
+    C = [
+     {
+      title: 'Tekst in de accordion kan 200% vergroot worden zonder verlies van functionaliteit of informatie',
+      sc: '1.4.4',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(h, { ...e }) }) : h(e);
+      },
+     },
+     { title: 'De bezoeker kan de accordeon tot 400% vergroten zonder verlies van functionaliteit of informatie', sc: '1.4.10', status: '', component: A.Ay },
+     { title: 'De tekstopmaak in de accordion kan aangepast worden zonder verlies van functionaliteit of informatie', sc: '1.4.12', status: '', component: D.Ay },
+     {
+      title: 'De accordion opent niet bij hover of focus.',
+      sc: '1.4.13',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(m, { ...e }) }) : m(e);
+      },
+     },
+    ],
+    O = [
+     {
+      title: 'De accordion is bedienbaar met het toetsenbord',
+      sc: '2.1.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(g, { ...e }) }) : g(e);
+      },
+     },
+     { title: 'De accordion zorgt niet voor een toetsenbordval', sc: '2.1.2', status: '', component: _.Ay },
+     {
+      title: 'De focusvolgorde rondom en in de accordion is logisch',
+      sc: '2.4.3',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(k, { ...e }) }) : k(e);
+      },
+     },
+     { title: 'Interactieve elementen in de accordion hebben een zichtbare focusstyling', sc: '2.4.6', status: '', component: b },
+     { title: 'De accordion wordt niet bedekt door andere content', sc: '2.4.11', status: '', component: R.Ay },
+    ],
+    E = [
+     {
+      title: 'De staat van de accordion is beschikbaar voor hulpsoftware',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(l, { ...e }) }) : l(e);
+      },
+     },
+     { title: 'Het is duidelijk welke content in de accordion aanwezig is', sc: '2.4.6', status: '', component: b },
+     { title: 'Als de accordion tekst bevat in een taal anders dan de aangegeven taal van de pagina, is er een taalwissel aanwezig', sc: '3.1.2', status: '', component: S.Ay },
+     {
+      title: 'De accordion heeft een toegankelijke naam, rol en status',
+      sc: '4.1.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+       return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(z, { ...e }) }) : z(e);
+      },
+     },
+    ],
+    V = { title: 'Accordion', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Accordion', pagination_label: 'Accordion', description: 'Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.', slug: '/accordion', keywords: ['accordeon', 'accordion', 'aria-expanded', 'collapse', 'collapsible', 'details', 'disclosure', 'expand', 'expandable', 'expandable section', 'expanded', 'ingeklapt', 'inklappen', 'secties', 'sections', 'toggle', 'uitgeklapt', 'uitklappen', 'uitklapper', 'lamellen', 'blinders'] },
+    H = void 0,
+    G = {},
+    B = 'Accordion',
+    P = 'Secties met de mogelijkheid om gerelateerde content te tonen en weer te verbergen.',
+    $ = 102,
+    I = s.find((e) => e.number === $),
+    W = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...c.RM];
+   function U(e) {
+    const n = { h2: 'h2', ...(0, i.R)(), ...e.components },
+     { CriteriaList: t, CriteriaListItem: r } = n;
+    return (t || Z('CriteriaList', !0), r || Z('CriteriaListItem', !0), (0, o.jsxs)(o.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, o.jsx)(a.Fc, { component: I, headingLevel: 1, description: P }), '\n', (0, o.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, o.jsx)(a.VK, { component: I, headingLevel: 3 }), '\n', (0, o.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, o.jsx)(a.mu, { component: I, headingLevel: 3 }), '\n', (0, o.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }), '\n', (0, o.jsx)(c.Ay, {}), '\n', (0, o.jsx)(t, { headingLevel: 3, testCategory: 'Toegankelijkheid algemeen', children: T.map(({ component: e, ...n }) => (0, o.jsx)(r, { ...n, children: (0, o.jsx)(e, {}) })) }), '\n', (0, o.jsx)(t, { headingLevel: 3, testCategory: 'Toegankelijkheid visueel ontwerp', children: F.map(({ component: e, ...n }) => (0, o.jsx)(r, { ...n, children: (0, o.jsx)(e, {}) })) }), '\n', (0, o.jsx)(t, { headingLevel: 3, testCategory: 'Toegankelijkheid zoom en herschalen', children: C.map(({ component: e, ...n }) => (0, o.jsx)(r, { ...n, children: (0, o.jsx)(e, {}) })) }), '\n', (0, o.jsx)(t, { headingLevel: 3, testCategory: 'Toegankelijkheid toetsenbord', children: O.map(({ component: e, ...n }) => (0, o.jsx)(r, { ...n, children: (0, o.jsx)(e, {}) })) }), '\n', (0, o.jsx)(t, { headingLevel: 3, testCategory: 'Toegankelijkheid screenreader', children: E.map(({ component: e, ...n }) => (0, o.jsx)(r, { ...n, children: (0, o.jsx)(e, {}) })) }), '\n', (0, o.jsx)(a.$9, { component: I, headingLevel: 2 })] }));
+   }
+   function X(e = {}) {
+    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(U, { ...e }) }) : U(e);
+   }
+   function Z(e, n) {
+    throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
    }
   },
   90495(e, n, t) {
