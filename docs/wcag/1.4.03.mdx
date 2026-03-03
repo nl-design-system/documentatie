@@ -38,61 +38,210 @@ import Summary from "./summaries/_1.4.3-summary.md";
 
 <Summary />
 
-## Hoogcontrastknop
+Grote tekst is tekst van 18 punt (24px) of groter, of vetgedrukte tekst van 14 punt (ongeveer 19px) of groter. Voor deze grotere tekst geldt een lagere eis van 3:1 omdat grotere letters van nature beter leesbaar zijn.
 
-Als een hoogcontrastknop wordt toegevoegd aan de website om onvoldoende contrast te verhelpen, moet deze knop ALLE contrastproblemen oplossen. Test alle kleurencombinaties van achtergrond en tekst met de knop ingeschakeld. Als het contrast van de website afhankelijk is van deze knop, moet de knop op alle resoluties zichtbaar zijn en zelf ook voldoende contrast hebben.
+Er zijn 3 uitzonderingen:
 
-## Veelvoorkomende fouten
+- Tekst in inactieve onderdelen, zoals een uitgeschakelde knop, hoeft niet aan de eis te voldoen.
+- Puur decoratieve tekst is uitgezonderd.
+- Tekst die onderdeel is van een logo of merknaam is ook vrijgesteld.
 
-### Fout: tekst kleiner dan 19px en niet vetgedrukt heeft een contrastratio onder 4,5:1
+## Veelgemaakte fouten
 
-Tekst met een contrastratio lager dan 4,5:1 is niet voor iedereen leesbaar.
+### Fout: lichtgrijze tekst op een witte achtergrond
 
-### Fout: linktest heeft onvoldoende kleurcontrast als een muis over het element beweegt of als een link is bezocht
+Dit is de meest voorkomende contrastfout. Lichtgrijs (`#999999`) op wit (`#FFFFFF`) heeft een contrastverhouding van slechts 2,85:1. Dat is ver onder de vereiste 4,5:1. Het ziet er misschien mooi uit, maar voor veel mensen is het niet leesbaar.
 
-Als een link van kleur verandert, mag het contrast van de linktekst niet lager worden dan 4,5:1. Anders is de link niet leesbaar voor bezoekers met een milde visuele beperking.
+```css
+/* Fout: contrast 2,85:1 */
+.subtekst {
+  color: #999999;
+  background-color: #ffffff;
+}
 
-### Fout: tekst op de knop heeft onvoldoende kleurcontrast bij focus
+/* Goed: contrast 4,64:1 */
+.subtekst {
+  color: #767676;
+  background-color: #ffffff;
+}
+```
 
-Tekst op een knop mag nooit minder contrast hebben dan 4,5:1. De enige uitzondering is als een knop die niet actief is (‘disabled’ in de HTML).
+### Fout: placeholdertekst met onvoldoende contrast
 
-### Fout: cijfers van een geordende lijst zijn toegevoegd via CSS en de contrastratio is onder 4,5:1
+Placeholder-tekst in formuliervelden is berucht om slecht contrast. De standaard browserstyling
+van placeholders haalt vaak de vereiste contrastverhouding niet. Als je
+placeholders gebruikt om belangrijke informatie te tonen, zoals een invoerformaat, moeten ze wel
+leesbaar zijn.
 
-Opsommingstekens zijn decoratief, maar cijfers niet. Omdat cijfers als tekst gelden, moeten ze voldoen aan de contrasteisen.
+```css
+/* Fout: standaard placeholderkleur is vaak te licht */
+::placeholder {
+  color: #c0c0c0; /* contrast 1,6:1 op wit */
+}
 
-### Fout: placeholdertekst in een invoerveld heeft een contrastratio onder 4,5:1
+/* Goed */
+::placeholder {
+  color: #767676; /* contrast 4,64:1 op wit */
+}
+```
 
-Deze eis geldt alleen voor placeholdertekst die werkt als label voor het invoerveld of een belangrijke instructie. Staat deze informatie ook als tekst op de pagina, dan is de placeholdertekst decoratief en hoeft niet te voldoen aan de minimale contrasteisen.
+### Fout: tekst op een afbeelding of kleurverloop zonder overlay
 
-### Fout: contrast wordt minder bij het inzoomen
+Tekst die direct op een foto of kleurverloop staat, kan op de ene plek voldoende contrast hebben en op een andere plek niet. Zonder een semi-transparante overlay of tekstvak is het contrast onvoorspelbaar en meestal onvoldoende.
 
-Bij het vergroten van de tekst of het inzoomen op de pagina kan de tekst uit het kader lopen en kan een contrastratio lager worden dan 4,5:1
-Het kan zijn dat de tekst dan onleesbaar wordt omdat de achtergrondkleur anders is dan die van het kader.
+```html
+<!-- Fout: witte tekst direct op een foto -->
+<div style="background-image: url('foto.jpg');">
+  <h2 style="color: white;">Welkom bij ons</h2>
+</div>
+
+<!-- Goed: overlay voor gegarandeerd contrast -->
+<div style="background-image: url('foto.jpg'); position: relative;">
+  <div style="background-color: rgba(0,0,0,0.6); padding: 1rem;">
+    <h2 style="color: white;">Welkom bij ons</h2>
+  </div>
+</div>
+```
+
+### Fout: gekleurde knop met witte tekst die niet voldoet
+
+Felgekleurde knoppen met witte tekst halen vaak de contrastverhouding niet. Denk aan lichtblauwe, oranje of lichtgroene knoppen. Oranje (`#FF8C00`) met wit heeft slechts een contrast van 2,14:1.
+
+```css
+/* Fout: contrast 2,14:1 */
+.cta-knop {
+  background-color: #ff8c00;
+  color: #ffffff;
+}
+
+/* Goed: donkerdere achtergrond, contrast 4,63:1 */
+.cta-knop {
+  background-color: #c25700;
+  color: #ffffff;
+}
+
+/* Of: donkere tekst op lichte achtergrond */
+.cta-knop {
+  background-color: #ff8c00;
+  color: #000000;
+}
+```
+
+### Fout: links die alleen door kleur te onderscheiden zijn maar onvoldoende contrasteren
+
+Onderstreep je links niet en zijn ze alleen door kleur te onderscheiden van de omringende tekst? Dan moet er voldoende contrast zijn tussen de linktekst en de omringende tekst, namelijk 3:1. Daarnaast moet de link ook voldoende contrast hebben tegenover de achtergrond, namelijk 4,5:1.
+
+```css
+/* Fout: link (#6699CC) op wit, contrast 3,0:1 */
+a {
+  color: #6699cc;
+  text-decoration: none;
+}
+
+/* Goed: voldoende contrast en/of onderstreping */
+a {
+  color: #2056a5;
+  text-decoration: underline;
+}
+```
+
+### Fout: tekst in <span lang="en">dark mode</span> met onvoldoende contrast
+
+<span lang="en">Dark mode</span> kan nieuwe contrastproblemen met zich meebrengen. Donkergrijze tekst op een donkere
+achtergrond, of felle kleuren die op een lichte achtergrond wel werken maar op donker niet. Het gaat snel mis.
+
+```css
+/* Fout: contrast 2,16:1 */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #666666;
+}
+
+/* Goed: contrast 9,73:1 */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #d4d4d4;
+}
+```
+
+### Fout: statusmeldingen met alleen kleur en onvoldoende contrast
+
+Foutmeldingen in rood, succesmeldingen in groen en waarschuwingen in oranje hebben lang niet altijd voldoende contrast. Vooral als de tekst licht gekleurd is op een witte of lichte achtergrond.
+
+```css
+/* Fout: lichtgroen op wit, contrast 1,43:1 */
+.succes {
+  color: #90ee90;
+}
+
+/* Goed: donkergroen op wit, contrast 5,14:1 */
+.succes {
+  color: #2e7d32;
+}
+```
+
+### Fout: voettekst of kleine lettertjes met laag contrast
+
+Kleine tekst in de <span lang="en">footer</span> wordt vaak in lichtgrijs weergegeven. Denk aan privacybeleid, copyright en voorwaarden. Maar juist kleinere tekst heeft meer contrast nodig om leesbaar te blijven. De 4,5:1 eis geldt hier volledig.
+
+```css
+/* Fout */
+.footer {
+  color: #aaaaaa; /* contrast 2,32:1 op wit */
+  font-size: 12px;
+}
+
+/* Goed */
+.footer {
+  color: #595959; /* contrast 7,0:1 op wit */
+  font-size: 12px;
+}
+```
+
+### Fout: uitgeschakelde knoppen met net te weinig contrast
+
+Inactieve elementen zijn uitgezonderd van de contrasteis. Maar het gaat mis als je knoppen alleen visueel uitschakelt door ze grijs te maken, zonder ze daadwerkelijk `disabled` te maken in de code. Dan geldt de uitzondering niet en moet het contrast gewoon voldoen.
+
+```html
+<!-- Fout: visueel uitgeschakeld maar technisch actief -->
+<button style="color: #CCCCCC; background: #F0F0F0;">Versturen</button>
+
+<!-- Goed: echt disabled, uitzondering geldt -->
+<button disabled style="color: #CCCCCC; background: #F0F0F0;">Versturen</button>
+
+<!-- Of: actief met voldoende contrast -->
+<button style="color: #595959; background: #F0F0F0;">Versturen</button>
+```
+
+### Fout: contrast alleen getest op het eigen scherm
+
+Wat er op jouw Retina-display prima uitziet, kan op een ouder scherm, in direct zonlicht of op een projector onleesbaar zijn. De WCAG-contrasteis van 4,5:1 is een minimum dat rekening houdt met die variatie. "Ik kan het prima lezen" is geen geldige test.
+
+## Gerelateerde succescriteria
+
+- [SC 1.4.1](https://nldesignsystem.nl/wcag/1.4.1/) — Gebruik van kleur.
+- [SC 1.4.6](https://nldesignsystem.nl/wcag/1.4.6/) — Contrast (versterkt): strengere eis van 7:1.
+- [SC 1.4.11](https://nldesignsystem.nl/wcag/1.4.11/) — Contrast van niet-tekstuele content.
 
 ## Hoe te testen
 
-Test altijd in minimaal twee browsers en wijzig in één browser het thema naar ‘donker’.
+### Voor iedereen
 
-### Tekst op de pagina
+1. Kijk kritisch naar de tekst op je pagina. Zijn er plekken waar tekst moeilijk leesbaar is? Let vooral op lichtgrijze tekst, tekst op foto's en kleine tekst in de <span lang="en">footer</span>.
+2. Probeer de pagina te lezen in een goed verlichte ruimte of op een ouder scherm. Als tekst dan al moeilijk leesbaar is, voldoet het waarschijnlijk niet.
+3. Gebruik een gratis online tool zoals de <span lang="en">WebAIM Contrast Checker</span> op webaim.org/resources/contrastchecker. Vul de tekst- en achtergrondkleur in en het resultaat vertelt je of het voldoende is.
+4. Controleer ook de <span lang="en">dark mode</span> als je website die aanbiedt. Contrastproblemen komen daar net zo goed voor.
+5. Let op tekst op afbeeldingen en kleurverlopen. Staat de tekst op het lichtste deel van de afbeelding nog steeds goed leesbaar?
 
-De meest betrouwbare manier is het controleren van kleurcodes in de Inspector. Als dat niet mogelijk is, kan een tool worden gebruikt.
+### Voor developers
 
-### Tekst op een kleurverloop
-
-Maak gebruik van een tool. Gebruik de slechtste pixel van de achtergrond en de tekst.
-
-### Tekst op een afbeelding
-
-Maak gebruik van een tool. Test alle tekst in grafieken en diagrammen en alle tekst die via canvas- en svg-elementen wordt weergegeven
-
-### Wat wel moet worden getest
-
-Alle tekst, inclusief tekst op knoppen en links. Test ook situaties waarin de tekst verandert, bijvoorbeeld als de muis over de tekst beweegt, een knop is ingedrukt of juist nog niet is geselecteerd, of als een link is bezocht.
-Controleeer de placeholderteksten in de invoervelden en vergeet de skiplinks niet.
-
-### Wat niet hoeft te worden getest:
-
-Logo’s, kunstobjecten met tekst, decoratieve tekst en tekst op uitgeschakelde elementen.
+1. Gebruik de DevTools kleurcontrast-checker. In Chrome: inspecteer een tekstelement, klik op het kleurvakje naast de `color`-waarde en je ziet de contrastverhouding met de achtergrondkleur.
+2. Gebruik Lighthouse in Chrome DevTools, onder het tabblad "Lighthouse". Voer een toegankelijkheidsaudit uit. Contrastproblemen worden automatisch gedetecteerd.
+3. Installeer de axe DevTools-extensie. Deze vindt contrastproblemen en geeft de exacte contrastverhoudingen weer.
+4. Controleer placeholders apart: `::placeholder` heeft een eigen kleur die je apart moet testen.
+5. Test alle kleurmodi: licht, donker en hoog contrast als je die aanbiedt. Elke modus moet apart aan de contrasteisen voldoen.
+6. Controleer dynamische content: toasts, meldingen, tooltips en overlays worden vaak over het hoofd gezien bij contrastcontroles.
+7. Zoek in je CSS naar kleuren met lage contrastwaarden. Een snelle controle: elke grijstint lichter dan `#767676` op een witte achtergrond voldoet niet.
 
 ## Gerelateerde NL Design System-richtlijnen
 
