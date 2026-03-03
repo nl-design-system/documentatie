@@ -1,3 +1,8 @@
-<div data-docusaurus-mock="criteria-list">
-  <p>CRITERIA LIST NOT IMPLEMENTED</p>
-</div>
+---
+const { testCategory } = Astro.props;
+---
+
+<details>
+  <summary>{testCategory}</summary>
+  <slot />
+</details>
