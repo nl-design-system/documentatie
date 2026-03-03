@@ -46,20 +46,21 @@ De "context" die mag meetellen is beperkt tot wat programmatisch te bepalen is:
 - Een tabelcel (`<td>` of `<th>`):
   `<table><tr><td>Het leukste <a href="#">evenement</a> dit jaar was ...</td></tr></table>`
 
-Informatie die alleen visueel duidelijk is (zoals de positie op de pagina of een afbeelding naast de link) telt niet mee. Wat valt **niet** onder linkcontext?
+Informatie die alleen visueel duidelijk is telt niet mee. Denk aan de positie op de pagina of een afbeelding naast de link. Dit valt niet onder linkcontext:
 
-- Een kop waar de link onder staat
-- Een alinea die boven een link staat
-- Containers zoals `<article>`, `<section>`, `<div>`
+- Een kop waar de link onder staat.
+- Een alinea die boven een link staat.
+- Containers zoals `<article>`, `<section>`, `<div>`.
 
-Er is een uitzondering: als het doel van de link voor iedereen onduidelijk zou zijn, ook voor ziende bezoekers, dan is het geen schending van dit SC. Maar eerlijk: die uitzondering komt zelden voor.
+Er is een uitzondering: als het doel van de link voor iedereen onduidelijk zou zijn, ook voor ziende bezoekers, dan is het geen fout onder dit succescriterium. Die uitzondering komt in de praktijk zelden voor.
 
 ## Veelgemaakte fouten
 
 ### Fout: "Lees meer" als linktekst
 
-Als deze link onder een alinea of een kop van een bericht staat, heeft het geen context en is het linkdoel onduidelijk.
 Dit is veruit de meest voorkomende fout. "Lees meer" zegt niets over de bestemming van de link. Iemand die met een screenreader door de links op een pagina navigeert, hoort tien keer "Lees meer" zonder te weten waar elke link naartoe gaat.
+
+Als deze link onder een alinea of kop van een bericht staat, heeft het geen context en is het linkdoel onduidelijk.
 
 ```html
 <!-- Fout: geen context -->
@@ -67,12 +68,12 @@ Dit is veruit de meest voorkomende fout. "Lees meer" zegt niets over de bestemmi
 <a href="/retourbeleid">Lees meer</a>.
 
 <!-- Goed: wel context -->
-<p>We hebben een nieuw <a href="/retourbeleid">retourbeleid</a>. Lees de volledige voorwaarden.</p>
+<p><a href="/retourbeleid">Lees meer </a> over de retourvoorwaarden.</p>
 ```
 
-### Fout: link op een URL als zichtbare tekst
+### Fout: een URL als zichtbare tekst
 
-Een kale URL als linktekst is niet informatief en wordt door een screenreader karakter voor karakter of als een lange onbegrijpelijke reeks voorgelezen.
+Een kale URL als linktekst is niet informatief. Een screenreader leest de URL karakter voor karakter of als een lange onbegrijpelijke reeks voor.
 
 ```html
 <!-- Fout -->
@@ -103,9 +104,9 @@ Als een link alleen een afbeelding bevat en die afbeelding geen alt-tekst heeft,
 </a>
 ```
 
-### Fout: link opent in een nieuw venster
+### Fout: link opent in een nieuw venster zonder indicatie
 
-Als je ervoor kiest om deze informatie aan een ziende bezoeker te geven door het icoontje bij de link te plaatsen, dan moet je het ook aan hulpsoftware laten weten. Een link met `target="_blank"` opent een nieuwe browsertab en deze informatie kan belangrijk zijn voor je bezoekers.
+Als je een icoontje bij de link plaatst om ziende bezoekers te informeren dat de link in een nieuw venster opent, geef dat dan ook door aan hulpsoftware. Een link met `target="_blank"` opent een nieuwe browsertab. Deze informatie kan belangrijk zijn voor je bezoekers.
 
 ```html
 <!-- Fout -->
@@ -127,9 +128,9 @@ Als je ervoor kiest om deze informatie aan een ziende bezoeker te geven door het
 </a>
 ```
 
-### Fout: hele alinea of groot blok tekst als link
+### Fout: hele alinea of groot blok als link
 
-Als je een heel tekstblok klikbaar maakt, wordt de volledige tekst als linktekst voorgelezen. Dat is onnodig lang en maakt het lastig om snel te begrijpen wat de link doet.
+Als je een heel tekstblok klikbaar maakt, leest de screenreader de volledige tekst als linktekst voor. Dat is onnodig lang en maakt het lastig om snel te begrijpen wat de link doet.
 
 ```html
 <!-- Fout: hele alinea is een link -->
@@ -148,9 +149,9 @@ Als je een heel tekstblok klikbaar maakt, wordt de volledige tekst als linktekst
 </p>
 ```
 
-### Fout: link zonder enige tekst of toegankelijke naam
+### Fout: link zonder inhoud of toegankelijke naam
 
-Een lege link — bijvoorbeeld een `<a>`-element met alleen een achtergrondafbeelding via CSS of een leeg element — heeft geen toegankelijke naam. Een screenreader meldt een link, maar niet waarheen.
+Een lege link heeft geen toegankelijke naam. Denk aan een `<a>`-element met alleen een achtergrondafbeelding via CSS of een leeg element. Een screenreader meldt een link, maar niet waarheen.
 
 ```html
 <!-- Fout: lege link met alleen een CSS-achtergrond -->
@@ -202,7 +203,7 @@ Als je paginering alleen uit cijfers bestaat zonder verdere context, is het link
 
 ### Fout: linktekst bestaat uit een enkel teken
 
-Een losse letter of icoon als linktekst maakt het linkdoel niet duidelijk. Dit zie je bijvoorbeeld bij knoppen met A, A, A om de tekstgrootte aan te passen, of bij social media-iconen zonder label.
+Een losse letter of icoon als linktekst maakt het linkdoel niet duidelijk. Dit zie je bijvoorbeeld bij knoppen met A, A, A om de tekstgrootte aan te passen, of bij social media-iconen.
 
 ```html
 <!-- Fout: enkele letters zonder context -->
@@ -211,14 +212,14 @@ Een losse letter of icoon als linktekst maakt het linkdoel niet duidelijk. Dit z
 <a href="?size=large">A</a>
 
 <!-- Goed: met duidelijke labels -->
-<a href="?size=small" aria-label="Kleine tekst">A</a>
-<a href="?size=medium" aria-label="Normale tekst">A</a>
-<a href="?size=large" aria-label="Grote tekst">A</a>
+<a href="?size=small" aria-label="Kleine tekstgrootte">A</a>
+<a href="?size=medium" aria-label="Normale tekstgrootte">A</a>
+<a href="?size=large" aria-label="Grote tekstgrootte">A</a>
 ```
 
 ### Fout: linktekst bevat dubbele informatie
 
-Als een link zowel een afbeelding met alt-tekst als zichtbare tekst bevat, worden die samengevoegd tot de linktekst. Dat levert dubbelingen op: een screenreader leest dan iets als "Winkelwagen Winkelwagen" of "Zoek zoek".
+Als een link zowel een afbeelding met alt-tekst als zichtbare tekst bevat, voegt de screenreader die samen tot de linktekst. Dat levert dubbelingen op: een screenreader leest dan iets als "Winkelwagen Winkelwagen" of "Home logo Ga naar homepage".
 
 ```html
 <!-- Fout: alt-tekst en zichtbare tekst zeggen hetzelfde -->
@@ -237,7 +238,7 @@ Als een link zowel een afbeelding met alt-tekst als zichtbare tekst bevat, worde
 
 ### Fout: linktekst bevat tekens die er niet in horen
 
-Tekens als `>` en `>>` worden door screenreaders voorgelezen als "groter dan". "Lees meer >>" wordt dus "Lees meer groter dan groter dan". Pijltjes en andere decoratieve tekens horen niet in je linktekst.
+Tekens als `>` en `>>` leest een screenreader voor als "groter dan". "Lees meer >>" wordt dus "Lees meer groter dan groter dan". Pijltjes en andere decoratieve tekens horen niet in je linktekst.
 
 ```html
 <!-- Fout -->
@@ -256,7 +257,7 @@ Tekens als `>` en `>>` worden door screenreaders voorgelezen als "groter dan". "
 
 ### Fout: linkcontext is alleen visueel te herkennen
 
-Als een link met "Download" in een tabel staat maar die tabel mist de juiste HTML-markering, dan is de relatie tussen de link en de context (wat wordt hier gedownload?) niet programmatisch te bepalen.
+Als een link met "Download" in een tabel staat maar die tabel mist de juiste HTML-markering, dan is de relatie tussen de link en de context niet programmatisch te bepalen. De bezoeker weet niet wat er gedownload wordt.
 
 ```html
 <!-- Fout: geen echte tabelmarkering, context is alleen visueel -->
@@ -307,18 +308,30 @@ Links naar PDF's, Word-documenten, spreadsheets of andere bestanden moeten het b
 <a href="/voorwaarden.pdf">Algemene voorwaarden (PDF, 340 KB)</a>
 ```
 
+## Gerelateerde succescriteria
+
+- [SC 2.4.9](https://nldesignsystem.nl/wcag/2.4.9/) — Linkdoel (alleen link): strengere eis waarbij de linktekst op zichzelf duidelijk moet zijn, zonder context.
+- [SC 1.1.1](https://nldesignsystem.nl/wcag/1.1.1/) — Niet-tekstuele content: afbeeldingen in links moeten een alt-tekst hebben.
+
 ## Hoe te testen
 
-### Visuele inspectie
+### Voor iedereen
 
-1. Lees alle links op de pagina en vraag jezelf af: begrijp ik waar deze link naartoe gaat? Antwoord is Ja is goed.
-2. Nee: korte of onduidelijke linktekst. Staat de link binnen context die het doel duidelijk maakt? Antwoord is Ja is goed. Maar controleer nog even de HTML.
-3. Alle andere situaties, behalve navigaties, moet je verder in de code onderzoeken.
+1. Lees alle links op de pagina en vraag jezelf af: begrijp ik waar deze link naartoe gaat, zonder de rest van de tekst te lezen? Als het antwoord nee is, is de linktekst waarschijnlijk niet duidelijk genoeg.
+2. Gebruik <kbd>Tab</kbd> om door alle links te navigeren. Bij elk gemarkeerd element moet je kunnen begrijpen wat het doet.
+3. Let op links als "Klik hier", "Lees meer", "Meer info", "Hier" en "Dit". Als deze vaak voorkomen, is er waarschijnlijk een probleem.
+4. Controleer of links naar bestanden zoals PDF of Word het bestandstype vermelden.
+5. Let op links die in een nieuw venster openen. Staat dat erbij?
 
-### Inspecteer de HTML
+### Voor developers
 
-1. Open de Accessibility-tab in DevTools en inspecteer de toegankelijke naam van elke link. Controleer of die het doel beschrijft.
-2. Of gebruik axe DevTools of WAVE om links zonder toegankelijke naam automatisch te vinden. Inhoudelijke kwaliteit van linktekst moet je handmatig controleren.
+1. Open de <span lang="en">Accessibility</span>-tab in DevTools en inspecteer de toegankelijke naam van elke link. Controleer of die het doel beschrijft.
+2. Gebruik een screenreader en open de linkslijst. In <span lang="en">VoiceOver</span>: <kbd>VO</kbd>+<kbd>U</kbd>. In <span lang="en">NVDA</span>: <kbd>Insert</kbd>+<kbd>F7</kbd>. Loop door de links en controleer of elke link op zichzelf begrijpelijk is.
+3. Zoek in de codebase naar `>Klik hier<`, `>Lees meer<`, `>Meer<`, `>Hier<`. Dit zijn indicatoren voor slechte linkteksten.
+4. Controleer alle links die alleen een afbeelding bevatten. Heeft de afbeelding een `alt`-attribuut dat het linkdoel beschrijft?
+5. Zoek naar lege `<a>`-tags of links met alleen een CSS-achtergrondafbeelding. Deze hebben een `aria-label` of visueel verborgen tekst nodig.
+6. Controleer links met `target="_blank"`. Is er een indicatie in de tekst of via `aria-label` dat de link in een nieuw venster opent?
+7. Gebruik axe DevTools of WAVE om links zonder toegankelijke naam automatisch te vinden. De inhoudelijke kwaliteit van linktekst moet je handmatig controleren.
 
 ## Gerelateerde NL Design System-richtlijnen
 
