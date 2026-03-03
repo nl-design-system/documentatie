@@ -321,15 +321,15 @@ Links naar PDF's, Word-documenten, spreadsheets of andere bestanden moeten het b
 2. Gebruik <kbd>Tab</kbd> om door alle links te navigeren. Bij elk gemarkeerd element moet je kunnen begrijpen wat het doet.
 3. Let op links als "Klik hier", "Lees meer", "Meer info", "Hier" en "Dit". Als deze vaak voorkomen, is er waarschijnlijk een probleem.
 4. Controleer of links naar bestanden zoals PDF of Word het bestandstype vermelden.
-5. Let op links die in een nieuw venster openen. Staat dat erbij?
+5. Let op links die in een nieuw venstesr openen. Staat dat erbij?
 
 ### Voor developers
 
 1. Open de Accessibility-tab in DevTools en inspecteer de toegankelijke naam van elke link. Controleer of die het doel beschrijft.
-2. Gebruik een screenreader en open de linkslijst. In <span lang="en">VoiceOver</span>: <kbd>VO</kbd>+<kbd>U</kbd>. In <span lang="en">NVDA</span>: <kbd>Insert</kbd>+<kbd>F7</kbd>. Loop door de links en controleer of elke link op zichzelf begrijpelijk is.
+2. Gebruik een screenreader en open de linkslijst. In <span lang="en">VoiceOver</span>: <kbd>VO</kbd>+<kbd>U</kbd>. In NVDA: <kbd>Insert</kbd>+<kbd>F7</kbd>. Loop door de links en controleer of elke link op zichzelf begrijpelijk is.
 3. Zoek in de codebase naar `>Klik hier<`, `>Lees meer<`, `>Meer<`, `>Hier<`. Dit zijn indicatoren voor slechte linkteksten.
 4. Controleer alle links die alleen een afbeelding bevatten. Heeft de afbeelding een `alt`-attribuut dat het linkdoel beschrijft?
-5. Zoek naar lege `<a>`-tags of links met alleen een CSS-achtergrondafbeelding. Deze hebben een `aria-label` of visueel verborgen tekst nodig.
+5. Zoek naar lege `<a>`-elements of links met alleen een CSS-achtergrondafbeelding. Deze hebben een `aria-label` of visueel verborgen tekst nodig.
 6. Controleer links met `target="_blank"`. Is er een indicatie in de tekst of via `aria-label` dat de link in een nieuw venster opent?
 7. Gebruik axe DevTools of WAVE om links zonder toegankelijke naam automatisch te vinden. De inhoudelijke kwaliteit van linktekst moet je handmatig controleren.
 
