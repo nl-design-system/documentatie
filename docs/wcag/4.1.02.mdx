@@ -37,135 +37,335 @@ import Summary from "./summaries/_4.1.2-summary.md";
 
 <Summary />
 
-Wanneer standaard HTML-elementen volgens de specificatie wordt gebruikt, is de rol automatisch goed ingesteld. In sommige gevallen moet de status worden toegevoegd. De naam van een element moet altijd expliciet worden opgeven.
+### De rol: wat voor soort element is dit?
 
-Programmeer je zelf bedieningselementen of verander je de standaardrol van een interactief element? Bijvoorbeeld door een div-element klikbaar te maken. Dan moeten rol, naam en eventuele waarde correct worden ingesteld. Dit kost meer tijd dan het gebruik van standaard HTML-elementen, is foutgevoeliger en vereist uitgebreid testen.
+De rol geeft aan welke functie een element heeft: knop, link, invoerveld, selectievak, enzovoort. Bij standaard HTML-elementen is de rol automatisch goed ingesteld. Een `<button>` heeft de rol "button" en een `<a>` heeft de rol "link".
 
-## De rol (wat voor soort element is dit)
+Maak je zelf een bedieningselement, bijvoorbeeld door een `<div>` klikbaar te maken? Dan moet je de rol handmatig toevoegen met het ARIA-attribuut `role`. Dit kost meer tijd, is foutgevoeliger en vereist uitgebreid testen. Gebruik daarom waar mogelijk standaard HTML-elementen.
 
-De rol geeft aan welke functie het element heeft, zoals button, link, of invoerveld. Bij een standaard HTML-element is de rol automatisch goed ingesteld. Bij een zelfgemaakt bedieningselement wordt de rol toegevoegd met het ARIA-attribuut `role="xx"`.
+Let op: een handmatig toegevoegde ARIA-rol overschrijft de standaardrol. Een `<ul role="menu">` heeft dan niet meer de rol van een lijst.
 
-Let op: wanneer een ARIA-rol handmatig wordt toegevoegd, wordt de standaardrol overschreven. Bijvoorbeeld: `<ul role="menu">` heeft niet meer de rol van een lijst-container. Wees hier zorgvuldig mee.
+### De naam: wat doet het element?
 
-## De naam (wat is de functie)
-
-De naam beschrijft wat een element doet, zoals "zoeken", "verwijderen" of "e-mailadres invoeren". Deze naam kan zichtbaar of onzichtbaar zijn op de pagina, maar moet altijd beschikbaar zijn voor hulpsoftware.
-
-WCAG-succescriterium 2.4.6 gaat ook over de naam van een element. In dat succescriterium wordt de kwaliteit van de naam beoordeeld.
+De naam beschrijft wat een element doet, zoals "Zoeken", "Verwijderen" of "E-mailadres". De naam kan zichtbaar zijn op de pagina of onzichtbaar, maar moet altijd beschikbaar zijn voor hulpsoftware.
 
 Er zijn meerdere manieren om een naam toe te voegen:
 
-- Een tekstalternatief bij een afbeelding
-- Een title-attribuut
-- Een gekoppeld label
-- Een aria-label
-- Het attribuut aria-labelledby
+- Een zichtbaar label gekoppeld aan een invoerveld met `<label>`.
+- Een `aria-label`-attribuut.
+- Een `aria-labelledby`-attribuut dat verwijst naar een ander element.
+- Een tekstalternatief bij een afbeelding met `alt`.
+- De tekst in het element zelf, zoals de tekst op een knop.
 
-## De waarde (wat is de status)
+### De waarde: wat is de status?
 
-Interactieve elementen kunnen een status of eigenschap hebben, zoals "ingeschakeld", "geselecteerd" of "uitgeschakeld". Deze informatie kan worden doorgegeven via HTML- of ARIA-attributen of tekst.
+Interactieve elementen kunnen een status hebben die verandert bij interactie. Denk aan "ingedrukt", "geselecteerd", "uitgevouwen" of "uitgeschakeld". Deze informatie geef je door met HTML- of ARIA-attributen, zoals `aria-expanded`, `aria-checked` of `disabled`.
 
-## ARIA
+### Over ARIA
 
-Belangrijke regels:
+Drie belangrijke regels voor het gebruik van ARIA:
 
-- <span lang="en">NEVER use ARIA unless you have to.</span>
-- <span lang="en">ALWAYS use ARIA when you have to.</span>
+- <span lang="en">Never use ARIA unless you have to.</span>
+- <span lang="en">Always use ARIA when you have to.</span>
 - <span lang="en">You're doing it wrong (probably).</span>
 
-ARIA is bedoeld om niet-toegankelijke elementen toegankelijker te maken. Voordat ARIA wordt toegepast, is een uitgebreide studie sterk aan te bevelen. Er is ervaring met schermlezers nodig om correct te kunnen testen wanneer ARIA wordt ingezet.
-
-### Wat kan ARIA doen?
-
-- Labels en namen aan elementen geven
-- Rollen toevoegen of overschrijven
-- Relaties tussen elementen duidelijk maken
-- Status van een element aangeven
-- Statusberichten tijdig laten voorlezen
-
-Een groot deel van deze functionaliteiten kan ook met standaard HTML worden bereikt. Onjuist gebruik van ARIA kan een website juist minder toegankelijk maken. Allen voor de laatste twee punten in de bovenstaande lijst heb je ARIA nodig.
+ARIA is bedoeld om niet-toegankelijke elementen toegankelijker te maken. Maar onjuist gebruik van ARIA maakt een website juist minder toegankelijk. Het meeste wat ARIA kan, kan ook met standaard HTML. Alleen voor het aangeven van statussen en het laten voorlezen van statusberichten heb je ARIA echt nodig.
 
 ## Veelgemaakte fouten
 
-### Fout: een ARIA-attribuut heeft een ongeldige waarde of is verkeerd gespeld
+### Fout: interactief element heeft geen toegankelijke naam
 
-Wanneer een attribuut of rol verkeerd is geschreven, is deze niet beschikbaar voor hulpsoftware en is het element of de sectie niet toegankelijk.
+Een knop, link of invoerveld zonder naam is onbruikbaar voor screenreadergebruikers. Ze horen dan alleen de rol ("knop" of "link") maar niet wat het element doet.
+
+```html
+<!-- Fout: knop met alleen een icoon, zonder naam -->
+<button>
+  <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3z" /></svg>
+</button>
+
+<!-- Goed: aria-label geeft de knop een naam -->
+<button aria-label="Menu openen">
+  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 6h18v2H3z" /></svg>
+</button>
+```
+
+```html
+<!-- Fout: invoerveld zonder label -->
+<input type="email" placeholder="E-mailadres" />
+
+<!-- Goed: gekoppeld label -->
+<label for="email">E-mailadres</label>
+<input id="email" type="email" />
+```
+
+```html
+<!-- Fout: link met alleen een afbeelding, zonder naam -->
+<a href="/home">
+  <img src="logo.png" />
+</a>
+
+<!-- Goed: alt-tekst geeft de link een naam -->
+<a href="/home">
+  <img src="logo.png" alt="Naar de homepagina" />
+</a>
+```
+
+### Fout: interactief element heeft geen toegankelijke rol
+
+Bij een zelfgemaakt bedieningselement ontbreekt de rol. Hulpsoftware kan dan niet aangeven wat het element is.
+
+```html
+<!-- Fout: div als knop zonder rol -->
+<div class="knop" onclick="verstuur()">Versturen</div>
+
+<!-- Goed: gebruik een echt button-element -->
+<button onclick="verstuur()">Versturen</button>
+
+<!-- Of: voeg rol en toetsenbordbediening toe -->
+<div class="knop" role="button" tabindex="0" onclick="verstuur()" onkeydown="handleKey(event)">Versturen</div>
+```
+
+```html
+<!-- Fout: zelfgemaakt selectievakje zonder rol -->
+<div class="checkbox" onclick="toggle()"><span class="vinkje">✓</span> Ik ga akkoord</div>
+
+<!-- Goed: gebruik een echt checkbox-element -->
+<label> <input type="checkbox" /> Ik ga akkoord </label>
+```
+
+### Fout: interactief element heeft een verkeerde rol
+
+Een element met de verkeerde rol geeft misleidende informatie aan screenreadergebruikers. Een knop die naar een andere pagina navigeert moet een link zijn. Een link die een actie uitvoert moet een knop zijn.
+
+```html
+<!-- Fout: knop die navigeert (moet een link zijn) -->
+<button onclick="window.location='/contact'">Contact</button>
+
+<!-- Goed: gebruik een link voor navigatie -->
+<a href="/contact">Contact</a>
+```
+
+```html
+<!-- Fout: link die een actie uitvoert (moet een knop zijn) -->
+<a href="#" onclick="verwijder()">Verwijderen</a>
+
+<!-- Goed: gebruik een knop voor acties -->
+<button onclick="verwijder()">Verwijderen</button>
+```
+
+### Fout: ARIA-attribuut heeft een ongeldige waarde of is verkeerd gespeld
+
+Als een attribuut of rol verkeerd is geschreven, negeert de browser het. Het element wordt dan niet correct doorgegeven aan hulpsoftware.
+
+```html
+<!-- Fout: verkeerd gespeld attribuut -->
+<button aria-expandd="true">Menu</button>
+<div role="nagivation">...</div>
+
+<!-- Goed: correct gespeld -->
+<button aria-expanded="true">Menu</button>
+<div role="navigation">...</div>
+```
+
+```html
+<!-- Fout: ongeldige waarde -->
+<button aria-expanded="yes">Menu</button>
+
+<!-- Goed: geldige waarde (true of false) -->
+<button aria-expanded="true">Menu</button>
+```
 
 ### Fout: ARIA-attributen zijn toegepast op elementen die deze niet ondersteunen
 
-Sommige combinaties van rollen en attributen zijn niet toegestaan. Het is bijvoorbeeld onjuist om aria-label toe te passen op elementen met `role="generic"`, zoals div of p. Raadpleeg [de WAI-ARIA specificatie](https://www.w3.org/TR/wai-aria-1.2/#generic). Zoek in dit document de rol die je wilt gebruiken en kijk in de bijbehorende tabel bij Prohibited States and Properties.
+Sommige combinaties van rollen en attributen zijn niet toegestaan. Zo mag je `aria-label` niet toepassen op elementen met `role="generic"`, zoals `<div>` of `<span>` zonder rol.
 
-### Fout: een interactief element heeft geen toegankelijke naam
+```html
+<!-- Fout: aria-label op een div zonder rol -->
+<div aria-label="Zoekresultaten">
+  <p>3 resultaten gevonden</p>
+</div>
 
-Een interactief element, zoals een knop, link, invoerveld of selectiemenu heeft geen toegankelijke naam of de naam bevat geen leesbare tekst voor hulpsoftware.
+<!-- Goed: voeg een rol toe, of gebruik een semantisch element -->
+<div role="region" aria-label="Zoekresultaten">
+  <p>3 resultaten gevonden</p>
+</div>
 
-Voorbeelden:
+<!-- Of: gebruik een semantisch element -->
+<section aria-label="Zoekresultaten">
+  <p>3 resultaten gevonden</p>
+</section>
+```
 
-- Een link waarbij een icoon met `:before` is toegevoegd
-- Een label-element dat is gekoppeld aan een invoerveld, maar verborgen is met `display:none`
+### Fout: ARIA-rol is niet compleet
 
-### Fout: een video- of audio-element heeft geen toegankelijke naam
+Sommige ARIA-rollen hebben verplichte ouder- of kindrollen, of verplichte attributen. Als die ontbreken, werkt het element niet correct met hulpsoftware.
 
-Wanneer video- en audio-elementen het controls-attribuut hebben, moeten zij een toegankelijke naam hebben.
+```html
+<!-- Fout: tab zonder tablist -->
+<div role="tab">Tab 1</div>
+<div role="tab">Tab 2</div>
+<div role="tabpanel">Inhoud van tab 1</div>
 
-### Fout: een interactief element heeft geen toegankelijke rol
+<!-- Goed: tablist als ouder, met gekoppelde tabpanels -->
+<div role="tablist">
+  <button role="tab" aria-selected="true" aria-controls="panel-1">Tab 1</button>
+  <button role="tab" aria-selected="false" aria-controls="panel-2">Tab 2</button>
+</div>
+<div id="panel-1" role="tabpanel">Inhoud van tab 1</div>
+<div id="panel-2" role="tabpanel" hidden>Inhoud van tab 2</div>
+```
 
-Voorbeeld: bij een zelfgemaakt selectievakje ontbreekt de rol van een checkbox. Daardoor kan hulpsoftware niet aangeven wat het element doet.
+### Fout: button-element bevat semantische of interactieve elementen
 
-### Fout: een interactief element heeft geen correcte toegankelijke rol
+Een `<button>` verwijdert de semantische rol van elementen die erin staan. Een heading in een button verliest de rol van heading. Een link in een button is ongeldig HTML.
 
-Voorbeelden:
+```html
+<!-- Fout: heading in een button verliest zijn rol -->
+<button>
+  <h3>Bekijk details</h3>
+</button>
 
-- Een knop die een nieuwe pagina opent (dit moet een link zijn)
-- Een link die een formulier verstuurt (dit moet een knop zijn)
+<!-- Goed: platte tekst in de button -->
+<button>Bekijk details</button>
+```
 
-### Fout: een ARIA-attribuut of ARIA-rol is niet compleet
+```html
+<!-- Fout: link in een button is ongeldig -->
+<button>
+  <a href="/details">Bekijk details</a>
+</button>
 
-Sommige ARIA-rollen hebben verplichte ouder- of kindrollen of verplichte attributen. Bij `role="tab"` mogen bijvoorbeeld geen bijbehorende elementen met `role="tablist"` ontbreken.
+<!-- Goed: kies één van de twee -->
+<a href="/details">Bekijk details</a>
+```
 
-### Fout: een button-element bevat semantische of interactieve elementen
+### Fout: summary-element bevat semantische elementen
 
-Een button-element verwijdert de semantische rollen van elementen die erin zijn geplaatst. Wanneer bijvoorbeeld een heading in een button staat, verdwijnt de rol van de heading.
+Een `<summary>` heeft de impliciete rol van een button. Net als bij een button wordt de semantische rol van elementen binnen het summary-element genegeerd door hulpsoftware.
 
-### Fout: een summary-element bevat semantische elementen
+```html
+<!-- Fout: heading in summary verliest zijn rol -->
+<details>
+  <summary><h3>Veelgestelde vragen</h3></summary>
+  <p>Hier staan de antwoorden.</p>
+</details>
 
-Een summary-element heeft de impliciete rol van een button. Daardoor wordt de semantische rol van elementen binnen het summary-element niet voorgelezen.
+<!-- Goed: platte tekst in summary -->
+<h3>Veelgestelde vragen</h3>
+<details>
+  <summary>Hoe wijzig ik mijn wachtwoord?</summary>
+  <p>Ga naar je profielpagina en klik op "Wachtwoord wijzigen".</p>
+</details>
+```
 
 ### Fout: de status van een interactief element is onbekend voor hulpsoftware
 
-Voorbeelden:
+Bij zelfgemaakte bedieningselementen moet de status worden doorgegeven met ARIA-attributen. Zonder die attributen weet de screenreader niet of een element is geselecteerd, ingedrukt of aangevinkt.
 
-- Hulpsoftware kan niet bepalen of een keuzerondje is geselecteerd
-- Hulpsoftware kan niet bepalen of een knop is ingedrukt
+```html
+<!-- Fout: zelfgemaakte toggle zonder status -->
+<button class="toggle active">Donkere modus</button>
 
-### Fout: de focus-status wordt niet doorgegeven aan hulpsoftware
+<!-- Goed: aria-pressed geeft de status door -->
+<button class="toggle" aria-pressed="true">Donkere modus</button>
+```
 
-Bij zelfgemaakte bedieningselementen kan hulpsoftware niet vaststellen wanneer het element focus heeft.
+```html
+<!-- Fout: zelfgemaakt selectievakje zonder status -->
+<div role="checkbox" tabindex="0">Onthoud mij</div>
 
-### Fout: een element dat uitklapbare content opent, geeft niet aan of de content open of gesloten is
+<!-- Goed: aria-checked geeft de status door -->
+<div role="checkbox" tabindex="0" aria-checked="false">Onthoud mij</div>
+```
 
-Voorbeelden:
+### Fout: uitklapbare content geeft niet aan of deze open of gesloten is
 
-- Hulpsoftware kan niet vaststellen of een accordionpaneel open of gesloten is
-- Een zelfgemaakte tooltip die extra content toont bij hover of focus, geeft niet aan of deze zichtbaar is
+Als een element content uitklapt of inklapt, moet de status worden doorgegeven met `aria-expanded`. Zonder dit attribuut weet een screenreadergebruiker niet of de content zichtbaar is.
 
-### Fout: de status van een submenu wordt niet doorgegeven aan hulpsoftware
+```html
+<!-- Fout: accordion zonder status -->
+<button class="accordion-trigger">Meer informatie</button>
+<div class="accordion-panel">
+  <p>Hier staat de extra informatie.</p>
+</div>
 
-Een menu-item bevat een dropdown, maar hulpsoftware kan niet vaststellen of het submenu open of gesloten is.
+<!-- Goed: aria-expanded geeft de status door -->
+<button class="accordion-trigger" aria-expanded="false" aria-controls="panel-1">Meer informatie</button>
+<div id="panel-1" class="accordion-panel" hidden>
+  <p>Hier staat de extra informatie.</p>
+</div>
+```
+
+```html
+<!-- Fout: submenu zonder status -->
+<li>
+  <button>Producten</button>
+  <ul class="submenu">
+    <li><a href="/laptops">Laptops</a></li>
+    <li><a href="/telefoons">Telefoons</a></li>
+  </ul>
+</li>
+
+<!-- Goed: aria-expanded op de trigger -->
+<li>
+  <button aria-expanded="false" aria-controls="submenu-producten">Producten</button>
+  <ul id="submenu-producten" class="submenu" hidden>
+    <li><a href="/laptops">Laptops</a></li>
+    <li><a href="/telefoons">Telefoons</a></li>
+  </ul>
+</li>
+```
+
+### Fout: video- of audio-element heeft geen toegankelijke naam
+
+Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element een toegankelijke naam hebben. Zonder naam weet een screenreadergebruiker niet welke media wordt afgespeeld.
+
+```html
+<!-- Fout: video zonder toegankelijke naam -->
+<video controls src="instructie.mp4"></video>
+
+<!-- Goed: aria-label geeft de video een naam -->
+<video controls src="instructie.mp4" aria-label="Instructievideo: account aanmaken"></video>
+
+<!-- Of: aria-labelledby verwijst naar een zichtbare titel -->
+<h2 id="video-titel">Instructievideo: account aanmaken</h2>
+<video controls src="instructie.mp4" aria-labelledby="video-titel"></video>
+```
+
+## Gerelateerde succescriteria
+
+- [SC 1.1.1](https://nldesignsystem.nl/wcag/1.1.1/) — Niet-tekstuele content: afbeeldingen en iconen hebben een tekstalternatief nodig.
+- [SC 1.3.1](https://nldesignsystem.nl/wcag/1.3.1/) — Info en relaties: de structuur van de pagina moet programmatisch bepaalbaar zijn.
+- [SC 2.4.6](https://nldesignsystem.nl/wcag/2.4.6/) — Koppen en labels: labels en koppen moeten het onderwerp of doel beschrijven.
+- [SC 2.5.3](https://nldesignsystem.nl/wcag/2.5.3/) — Label in naam: de toegankelijke naam moet de zichtbare tekst bevatten.
+- [SC 4.1.3](https://nldesignsystem.nl/wcag/4.1.3/) — Statusberichten: statusberichten moeten programmatisch bepaalbaar zijn zonder focuswijziging.
 
 ## Hoe te testen
 
-De toegankelijke naam, rol en waarden zijn te vinden in de browser inspector, op het tab Accessibility of in de Accessibility Tree.
+### Voor iedereen
 
-Zoek alle bedieningselementen op de pagina en controleer of de naam, rol en eventueel de status correct zijn ingesteld.
+1. Tab door alle interactieve elementen op de pagina. Wordt elk element aangekondigd door een screenreader met een duidelijke naam en rol?
+2. Activeer knoppen, links en andere bedieningselementen. Wordt de statusverandering aangekondigd? Denk aan het openen van een accordion, het selecteren van een tab of het aanvinken van een selectievakje.
+3. Controleer of zelfgemaakte bedieningselementen dezelfde informatie geven als standaard HTML-elementen.
 
-## Bronnen en tools
+### Voor developers
 
-- De accessibility tree van je browser.
-- Een screenreader, bijvoorbeeld [NVDA voor Windows](https://www.nvaccess.org/download/) of [VoiceOver/Safari](https://support.apple.com/nl-nl/guide/voiceover/welcome/mac) voor MacOS.
-- [axe Devtools](https://www.deque.com/axe/browser-extensions/).
-- [Gebruik van WAI-ARIA](https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html) van
-  TPGi.
+1. Open de accessibility tree in je browser. In Chrome en Firefox: inspecteer een element, ga naar het tabblad "Accessibility". Controleer of naam, rol en waarde kloppen.
+2. Controleer alle knoppen en links. Heeft elk element een toegankelijke naam? Zoek naar `<button>` en `<a>` elementen zonder tekst, zonder `aria-label` en zonder `aria-labelledby`.
+3. Controleer alle invoervelden. Is elk veld gekoppeld aan een `<label>` of heeft het een `aria-label`?
+4. Controleer zelfgemaakte bedieningselementen. Heeft elk element de juiste `role`, `tabindex` en toetsenbordafhandeling?
+5. Controleer ARIA-attributen. Zijn ze correct gespeld? Hebben ze geldige waarden? Gebruik de [WAI-ARIA specificatie](https://www.w3.org/TR/wai-aria-1.2/) om te verifiëren welke attributen bij welke rollen horen.
+6. Controleer uitklapbare elementen. Is `aria-expanded` aanwezig en wordt de waarde bijgewerkt bij interactie?
+7. Controleer of `<button>` en `<summary>` geen semantische kindelementen bevatten zoals headings of links.
+8. Test met een screenreader. NVDA op Windows of VoiceOver op macOS. Navigeer door de pagina en controleer of elk element begrijpelijk wordt aangekondigd.
+
+## Tools
+
+- De accessibility tree in je browser (Chrome, Firefox, Edge).
+- [NVDA](https://www.nvaccess.org/download/) — gratis screenreader voor Windows.
+- [VoiceOver](https://support.apple.com/nl-nl/guide/voiceover/welcome/mac) — ingebouwde screenreader op macOS.
+- [axe DevTools](https://www.deque.com/axe/browser-extensions/) — browserextensie die ontbrekende namen, rollen en ongeldige ARIA automatisch detecteert.
+- [WAI-ARIA-gebruik van TPGi](https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html) — overzicht van correct ARIA-gebruik per rol.
 
 ## Gerelateerde NL Design System-richtlijnen
 
