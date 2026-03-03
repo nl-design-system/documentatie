@@ -28,15 +28,24 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Dialog";
 export const description = "Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina blijft mogelijk.";
 export const issueNumber = 181;
+export const relayStep = "help wanted";
+export const componentName = "dialog";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentIllustration
+  relayStep={relayStep}
+  description={`Schets van de ${componentName} component`}
+  name={componentName}
+/>
 
 <p>
   Gerelateerde componenten: <a href="/alert-dialog/">Alert Dialog</a>, <a href="/drawer/">Drawer</a>,{" "}

@@ -39,15 +39,24 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Input Group";
 export const description = "Formulierveld waarmee je een waarde kunt bewerken in een groep van meerdere invoervelden.";
 export const issueNumber = 178;
+export const relayStep = "help wanted";
+export const componentName = "input-group";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentIllustration
+  relayStep={relayStep}
+  description={`Schets van de ${componentName} component`}
+  name={componentName}
+/>
 
 ## Definition of Done
 

@@ -20,15 +20,24 @@ import {
   Implementations,
   Introduction,
 } from "@site/src/components/ComponentPage";
+import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Note";
 export const description = "Visueel ondersteunend element dat de aandacht vestigt op aanvullende of belangrijke informatie.";
 export const issueNumber = 409;
+export const relayStep = "help wanted";
+export const componentName = "note";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentIllustration
+  relayStep={relayStep}
+  description={`Schets van de ${componentName} component`}
+  name={componentName}
+/>
 
 <p>
   Gerelateerde componenten: <a href="/alert/">Alert</a>, <a href="/notification-banner/">Notification Banner</a>.
