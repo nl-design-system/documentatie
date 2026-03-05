@@ -1,5 +1,16 @@
 [
   {
+    "id": 120,
+    "date": "2026-03-03",
+    "description": [
+      "Bryan van de MijnServices Community geeft een hands-on update over nieuwe bijdrages vanuit de community, even langs een nieuw view op het community sprintbord en als het lukt nog even langs de Storybook voor een nieuwe template pagina.",
+      "Marieke en Jana van gemeente Groningen vertellen over het gebruikersonderzoek dat zij gedaan hebben naar de homepagina van de Mijn Omgeving / Podium D Portaal.",
+      "Robbert van het kernteam vertelt over de verbeteringen op de NL Design System website op het Componenten Overzicht en de Component Detail pagina aan de hand van enquête resultaten."
+    ],
+    "title": "Heartbeat van 3 maart 2026.",
+    "youtubeId": "UBTwT70RRjI"
+  },
+  {
     "id": 119,
     "date": "2026-02-17",
     "description": [
