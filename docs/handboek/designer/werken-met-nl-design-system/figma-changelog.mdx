@@ -30,6 +30,196 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 12.0.0
+
+5 maart 2026
+
+### Community component 'Switch' van Utrecht toegevoegd
+
+Community component 'Switch' (Form Toggle) van gemeente Utrecht is toegevoegd aan de bibliotheek.
+
+Daarnaast is todo-switch verwijderd uit de ToDo Bibliotheek, inclusief alle bijbehorende design tokens.
+
+Wat moet je doen?
+
+- Ga naar de pagina 'Switch' in de ToDo Bibliotheek.
+- Verwijder de volledige pagina.
+- Publiceer de ToDo Bibliotheek.
+- Ga naar de algemene Bibliotheek.
+- Open Tokens Studio.
+- Ga naar de tokenset `switch`.
+- Vervang de todo tokens door de onderstaande design tokens van Utrecht.
+- Voeg de [Switch component van Utrecht](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=29587-37032&p=f&t=u3OAiwRwtite1OQd-11) toe aan de bibliotheek van jouw organisatie.
+- Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+```json
+{
+  "utrecht": {
+    "form-toggle": {
+      "accent-color": {
+        "$type": "color",
+        "$value": "{basis.color.default-inverse.bg-default}"
+      },
+      "background-color": {
+        "$type": "color",
+        "$value": "{utrecht.form-toggle.accent-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.transparent}"
+      },
+      "border-radius": {
+        "$type": "dimension",
+        "$value": "{basis.border-radius.round}"
+      },
+      "border-style": {
+        "$type": "other",
+        "$value": "solid",
+        "$description": "[code-only]"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.border-width.sm}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": "2.5rem"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "width": {
+        "$type": "dimension",
+        "$value": "5rem"
+      },
+      "checked": {
+        "accent-color": {
+          "$type": "color",
+          "$value": "{basis.color.positive-inverse.bg-default}"
+        }
+      },
+      "disabled": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-style": {
+          "$type": "other",
+          "$value": "solid",
+          "$description": "[code-only]"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.disabled.color-document}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default-inverse.bg-hover}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        }
+      },
+      "focus": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-style": {
+          "$type": "other",
+          "$value": "solid",
+          "$description": "[code-only]"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        }
+      },
+      "thumb": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-default}"
+        },
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{basis.border-radius.round}"
+        },
+        "box-shadow": {
+          "$type": "boxShadow",
+          "$value": "{basis.box-shadow.sm}"
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.sm}"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.sm}"
+        },
+        "min-inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.size.sm}"
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.disabled.bg-default}"
+          },
+          "box-shadow": {
+            "$type": "boxShadow",
+            "$value": "{basis.box-shadow.sm}"
+          }
+        }
+      },
+      "track": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{basis.border-radius.round}"
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.disabled-inverse.color-subtle}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 11.4.0
 
 2 maart 2026
