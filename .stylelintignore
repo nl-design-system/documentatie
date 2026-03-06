@@ -1,8 +1,11 @@
 # Ignore 3rd party files
+
 node_modules/
 vendor/
 
 # Ignore generated files
+
+.astro/
 .docusaurus/
 build/
 coverage/

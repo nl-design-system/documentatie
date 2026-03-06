@@ -4,6 +4,7 @@ vendor/
 .husky/
 
 # Ignore generated files
+.astro/
 .docusaurus/
 build/
 coverage/
