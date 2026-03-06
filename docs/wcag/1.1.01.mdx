@@ -40,12 +40,9 @@ Er zijn een paar uitzonderingen. Decoratieve afbeeldingen hoeven geen tekstalter
 
 Bij formulierelementen en knoppen die een afbeelding of icoon bevatten, moet het tekstalternatief het doel beschrijven. Schrijf dus niet "afbeelding van een vergrootglas", maar "Zoeken".
 
-<span lang="en">CAPTCHA's</span> zijn een apart verhaal. Het tekstalternatief
-moet uitleggen wat het doel is van de
-<span lang="en">CAPTCHA</span>. Daarnaast moet er een alternatieve vorm zijn
-voor mensen die de primaire
-<span lang="en">CAPTCHA</span> niet kunnen gebruiken. Denk aan een
-audio-alternatief naast een visuele
+<span lang="en">CAPTCHA's</span> zijn een apart verhaal. Het tekstalternatief moet uitleggen wat het doel is van de
+<span lang="en">CAPTCHA</span>. Daarnaast moet er een alternatieve vorm zijn voor mensen die de primaire
+<span lang="en">CAPTCHA</span> niet kunnen gebruiken. Denk aan een audio-alternatief naast een visuele
 <span lang="en">CAPTCHA</span>.
 
 ## Veelgemaakte fouten
@@ -62,12 +59,7 @@ Als een `<img>` geen `alt`-attribuut heeft, leest een screenreader vaak de besta
 
 <Guideline appearance="do" title="Afbeelding met een beschrijvende alt-tekst">
   <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <img
-        src="team-foto.jpg"
-        alt="Het ontwikkelteam tijdens de hackathon van 2024"
-      />
-    )}
+    {() => <img src="team-foto.jpg" alt="Het ontwikkelteam tijdens de hackathon van 2024" />}
   </Canvas>
 </Guideline>
 
@@ -81,10 +73,7 @@ Een alt-tekst als "afbeelding" of "foto" is niet zinvol. De screenreader meldt a
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Alt-tekst beschrijft de inhoud van de afbeelding"
->
+<Guideline appearance="do" title="Alt-tekst beschrijft de inhoud van de afbeelding">
   <Canvas language="html" defaultExpandedCode>
     {() => (
       <img
@@ -99,19 +88,13 @@ Een alt-tekst als "afbeelding" of "foto" is niet zinvol. De screenreader meldt a
 
 Sfeerbeelden en decoratieve elementen die geen informatie toevoegen, moeten een lege alt-tekst krijgen met `alt=""`. Als je er een beschrijving aan geeft, leest de screenreader die voor en leidt dat af van de eigenlijke inhoud.
 
-<Guideline
-  appearance="dont"
-  title="Decoratieve afbeelding met een beschrijvende alt-tekst"
->
+<Guideline appearance="dont" title="Decoratieve afbeelding met een beschrijvende alt-tekst">
   <Canvas language="html" defaultExpandedCode>
     {() => <img src="scheidingslijn.svg" alt="decoratieve lijn" />}
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Decoratieve afbeelding met een lege alt-tekst"
->
+<Guideline appearance="do" title="Decoratieve afbeelding met een lege alt-tekst">
   <Canvas language="html" defaultExpandedCode>
     {() => <img src="scheidingslijn.svg" alt="" />}
   </Canvas>
@@ -133,10 +116,7 @@ Een knop die alleen een icoon bevat, heeft geen zichtbare tekst. Denk aan een ha
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Icoonknop met aria-label als toegankelijke naam"
->
+<Guideline appearance="do" title="Icoonknop met aria-label als toegankelijke naam">
   <Canvas language="html" defaultExpandedCode>
     {() => (
       <button aria-label="Menu openen">
@@ -162,10 +142,7 @@ Een knop die alleen een icoon bevat, heeft geen zichtbare tekst. Denk aan een ha
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Informatieve SVG met role='img' en aria-label"
->
+<Guideline appearance="do" title="Informatieve SVG met role='img' en aria-label">
   <Canvas language="html" defaultExpandedCode>
     {() => (
       <svg viewBox="0 0 100 100" role="img" aria-label="Status: actief">
@@ -179,10 +156,7 @@ Een knop die alleen een icoon bevat, heeft geen zichtbare tekst. Denk aan een ha
 
 Afbeeldingen die via CSS `background-image` worden ingeladen, zijn volledig onzichtbaar voor screenreaders. Als zo'n afbeelding informatie overbrengt, mist een deel van je gebruikers die informatie. Denk aan een logo, een kaart of een infographic.
 
-<Guideline
-  appearance="dont"
-  title="Logo als CSS-achtergrondafbeelding zonder alternatief"
->
+<Guideline appearance="dont" title="Logo als CSS-achtergrondafbeelding zonder alternatief">
   <Canvas language="html" defaultExpandedCode>
     {() => (
       <div
@@ -197,10 +171,7 @@ Afbeeldingen die via CSS `background-image` worden ingeladen, zijn volledig onzi
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Informatieve afbeelding als img-element met alt-tekst"
->
+<Guideline appearance="do" title="Informatieve afbeelding als img-element met alt-tekst">
   <Canvas language="html" defaultExpandedCode>
     {() => <img src="#" alt="Logo gemeente X" />}
   </Canvas>
@@ -210,26 +181,15 @@ Afbeeldingen die via CSS `background-image` worden ingeladen, zijn volledig onzi
 
 Als tekst als afbeelding wordt weergegeven, moet de volledige tekst in het alt-attribuut staan. Denk aan een flyer, een menu of een screenshot met tekst. Iemand met een screenreader kan de tekst in de afbeelding niet lezen.
 
-<Guideline
-  appearance="dont"
-  title="Afbeelding van tekst met onvolledige alt-tekst"
->
+<Guideline appearance="dont" title="Afbeelding van tekst met onvolledige alt-tekst">
   <Canvas language="html" defaultExpandedCode>
     {() => <img src="aanbieding.jpg" alt="aanbieding" />}
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Afbeelding van tekst met de volledige tekst als alt-tekst"
->
+<Guideline appearance="do" title="Afbeelding van tekst met de volledige tekst als alt-tekst">
   <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <img
-        src="aanbieding.jpg"
-        alt="Weekaanbieding: 20% korting op alle winterjassen, geldig t/m 31 januari"
-      />
-    )}
+    {() => <img src="aanbieding.jpg" alt="Weekaanbieding: 20% korting op alle winterjassen, geldig t/m 31 januari" />}
   </Canvas>
 </Guideline>
 
@@ -237,26 +197,17 @@ Als tekst als afbeelding wordt weergegeven, moet de volledige tekst in het alt-a
 
 Een grafiek, diagram of infographic bevat vaak te veel informatie voor een kort alt-attribuut. Een korte beschrijving als alt-tekst is een begin. De volledige data moet ook beschikbaar zijn, bijvoorbeeld in een tabel direct na de grafiek.
 
-<Guideline
-  appearance="dont"
-  title="Complexe grafiek met alleen een vage alt-tekst"
->
+<Guideline appearance="dont" title="Complexe grafiek met alleen een vage alt-tekst">
   <Canvas language="html" defaultExpandedCode>
     {() => <img src="resultaten.png" alt="Grafiek met onderzoeksresultaten" />}
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Korte alt-tekst én uitgebreide beschrijving in een tabel"
->
+<Guideline appearance="do" title="Korte alt-tekst én uitgebreide beschrijving in een tabel">
   <Canvas language="html" defaultExpandedCode>
     {() => (
       <figure>
-        <img
-          src="resultaten.png"
-          alt="Staafdiagram: tevredenheidsscores per afdeling, zie tabel hieronder"
-        />
+        <img src="resultaten.png" alt="Staafdiagram: tevredenheidsscores per afdeling, zie tabel hieronder" />
         <figcaption>
           <table>
             <caption>Tevredenheidsscores per afdeling</caption>
@@ -291,10 +242,7 @@ Een grafiek, diagram of infographic bevat vaak te veel informatie voor een kort 
 
 Als een afbeelding het enige element in een link is, moet de alt-tekst beschrijven waar de link naartoe gaat. Beschrijf niet wat er op de afbeelding staat. De afbeelding is hier een interactief element, geen informatief element.
 
-<Guideline
-  appearance="dont"
-  title="Alt-tekst beschrijft de afbeelding, niet de bestemming van de link"
->
+<Guideline appearance="dont" title="Alt-tekst beschrijft de afbeelding, niet de bestemming van de link">
   <Canvas language="html" defaultExpandedCode>
     {() => (
       <a href="/producten/schoenen">
@@ -304,10 +252,7 @@ Als een afbeelding het enige element in een link is, moet de alt-tekst beschrijv
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Alt-tekst beschrijft de bestemming van de link"
->
+<Guideline appearance="do" title="Alt-tekst beschrijft de bestemming van de link">
   <Canvas language="html" defaultExpandedCode>
     {() => (
       <a href="/producten/schoenen">
@@ -319,9 +264,8 @@ Als een afbeelding het enige element in een link is, moet de alt-tekst beschrijv
 
 ### Fout: video of audio zonder beschrijving van het doel
 
-<span lang="en">Embedded</span> video- en audiospelers zonder enige beschrijving
-zijn een zwart gat voor iemand met een screenreader. Het tekstalternatief hoeft
-niet de volledige inhoud te beschrijven. Dat valt onder andere succescriteria.
+<span lang="en">Embedded</span> video- en audiospelers zonder enige beschrijving zijn een zwart gat voor iemand met een
+screenreader. Het tekstalternatief hoeft niet de volledige inhoud te beschrijven. Dat valt onder andere succescriteria.
 Het moet wel aangeven wat de media bevat. Zie ook
 [Videobeschrijving](https://nldesignsystem.nl/richtlijnen/content/video/beschrijving/)
 
@@ -331,17 +275,9 @@ Het moet wel aangeven wat de media bevat. Zie ook
   </Canvas>
 </Guideline>
 
-<Guideline
-  appearance="do"
-  title="Video met een aria-label als toegankelijke naam"
->
+<Guideline appearance="do" title="Video met een aria-label als toegankelijke naam">
   <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <video
-        src="introductie.mp4"
-        aria-label="Introductievideo: rondleiding door de applicatie"
-      ></video>
-    )}
+    {() => <video src="introductie.mp4" aria-label="Introductievideo: rondleiding door de applicatie"></video>}
   </Canvas>
 </Guideline>
 
