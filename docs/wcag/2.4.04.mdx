@@ -21,6 +21,8 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -37,7 +39,7 @@ import Summary from "./summaries/_2.4.4-summary.md";
 
 <Summary />
 
-De "context" die mag meetellen is beperkt tot wat programmatisch te bepalen is:
+De "context" die mag meetellen is beperkt tot elementen die in code een directe relatie hebben met de link:
 
 - Een zin of alinea waarin de link staat:
   `<p>Op onze <a href="#">website</a> lees je meer over ...</p>`
@@ -46,7 +48,7 @@ De "context" die mag meetellen is beperkt tot wat programmatisch te bepalen is:
 - Een tabelcel (`<td>` of `<th>`):
   `<table><tr><td>Het leukste <a href="#">evenement</a> dit jaar was ...</td></tr></table>`
 
-Informatie die alleen visueel duidelijk is telt niet mee. Denk aan de positie op de pagina of een afbeelding naast de link. Dit valt niet onder linkcontext:
+Relaties tussen elementen die alleen visueel duidelijk is telt niet mee. Denk aan de positie op de pagina of een afbeelding naast de link. Dit valt niet onder linkcontext:
 
 - Een kop waar de link onder staat.
 - Een alinea die boven een link staat.
@@ -62,251 +64,357 @@ Dit is veruit de meest voorkomende fout. "Lees meer" zegt niets over de bestemmi
 
 Als deze link onder een alinea of kop van een bericht staat, heeft het geen context en is het linkdoel onduidelijk.
 
-```html
-<!-- Fout: geen context -->
-<p>We hebben een nieuw retourbeleid.</p>
-<a href="/retourbeleid">Lees meer</a>.
+<Guideline appearance="dont" title="'Lees meer' als linktekst zonder context">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>We hebben een nieuw retourbeleid.</p>
+        <a href="/retourbeleid">Lees meer</a>.
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: wel context -->
-<p><a href="/retourbeleid">Lees meer </a> over de retourvoorwaarden.</p>
-```
-
-### Fout: een URL als zichtbare tekst
-
-Een kale URL als linktekst is niet informatief. Een screenreader leest de URL karakter voor karakter of als een lange onbegrijpelijke reeks voor.
-
-```html
-<!-- Fout -->
-<a href="https://www.example.com/rapport-2024.pdf">https://www.example.com/rapport-2024.pdf</a>
-
-<!-- Goed -->
-<a href="https://www.example.com/rapport-2024.pdf">Jaarrapport 2024 (PDF, 2,3 MB)</a>
-```
+<Guideline appearance="do" title="Linktekst met context">
+  <Canvas language="html">
+    {() => (
+      <p>
+        <a href="/retourbeleid">Lees meer</a> over de retourvoorwaarden.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: afbeelding als link zonder alt-tekst die het doel beschrijft
 
 Als een link alleen een afbeelding bevat en die afbeelding geen alt-tekst heeft, dan heeft de link geen toegankelijke naam. Een screenreader leest dan de URL voor, of helemaal niets.
 
-```html
-<!-- Fout: geen alt -->
-<a href="/winkelwagen">
-  <img src="cart-icon.svg" />
-</a>
+<Guideline appearance="dont" title="Afbeelding als link zonder alt-tekst">
+  <Canvas language="html">
+    {() => (
+      <a href="/winkelwagen">
+        <img src="cart-icon.svg" />
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Fout: alt beschrijft de afbeelding, niet het doel -->
-<a href="/winkelwagen">
-  <img src="cart-icon.svg" alt="Icoon van een winkelwagen" />
-</a>
+<Guideline appearance="dont" title="Alt-tekst beschrijft de afbeelding in plaats van het linkdoel">
+  <Canvas language="html">
+    {() => (
+      <a href="/winkelwagen">
+        <img src="cart-icon.svg" alt="Icoon van een winkelwagen" />
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: alt beschrijft het doel -->
-<a href="/winkelwagen">
-  <img src="cart-icon.svg" alt="Winkelwagen" />
-</a>
-```
+<Guideline appearance="do" title="Alt-tekst beschrijft het linkdoel">
+  <Canvas language="html">
+    {() => (
+      <a href="/winkelwagen">
+        <img src="cart-icon.svg" alt="Winkelwagen" />
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: link opent in een nieuw venster zonder indicatie
 
 Als je een icoontje bij de link plaatst om ziende bezoekers te informeren dat de link in een nieuw venster opent, geef dat dan ook door aan hulpsoftware. Een link met `target="_blank"` opent een nieuwe browsertab. Deze informatie kan belangrijk zijn voor je bezoekers.
 
-```html
-<!-- Fout -->
-<a href="https://extern.nl/artikel" target="_blank"
-  ><svg aria-hidden="true" class="icoon-extern"></svg>Lees het artikel</a
->
+<Guideline appearance="dont" title="Link opent in nieuw venster zonder indicatie">
+  <Canvas language="html">
+    {() => (
+      <a href="https://extern.nl/artikel" target="_blank">
+        <svg aria-hidden="true" className="icoon-extern"></svg>
+        Lees het artikel
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed -->
-<a href="https://extern.nl/artikel" target="_blank"
-  ><svg aria-hidden="true" class="icoon-extern"></svg>
-  Lees het artikel (opent in nieuw venster)
-</a>
-
-<!-- Of met screenreadertekst -->
-<a href="https://extern.nl/artikel" target="_blank">
-  Lees het artikel
-  <span class="sr-only">(opent in nieuw venster)</span>
-  <svg aria-hidden="true" class="icoon-extern"><!-- icoon --></svg>
-</a>
-```
+<Guideline appearance="do" title="Informatie over nieuw venster in de linktekst">
+  <Canvas language="html">
+    {() => (
+      <>
+        <a href="https://extern.nl/artikel" target="_blank">
+          <svg aria-hidden="true" className="icoon-extern"></svg>
+          Lees het artikel (opent in nieuw venster)
+        </a>
+        <br />
+        <a href="https://extern.nl/artikel" target="_blank">
+          Lees het artikel
+          <span className="sr-only">(opent in nieuw venster)</span>
+          <svg aria-hidden="true" className="icoon-extern"></svg>
+        </a>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: hele alinea of groot blok als link
 
 Als je een heel tekstblok klikbaar maakt, leest de screenreader de volledige tekst als linktekst voor. Dat is onnodig lang en maakt het lastig om snel te begrijpen wat de link doet.
 
-```html
-<!-- Fout: hele alinea is een link -->
-<a href="/product/jas">
-  <p>
-    Deze prachtige winterjas is gemaakt van gerecycled materiaal en houdt je warm tot -20 graden. Verkrijgbaar in drie
-    kleuren. Nu met 20% korting.
-  </p>
-</a>
+<Guideline appearance="dont" title="Hele alinea als link">
+  <Canvas language="html">
+    {() => (
+      <a href="/product/jas">
+        <p>
+          Deze prachtige winterjas is gemaakt van gerecycled materiaal en houdt je warm tot -20 graden. Verkrijgbaar in
+          drie kleuren. Nu met 20% korting.
+        </p>
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: alleen de relevante tekst is een link -->
-<p>
-  Deze prachtige
-  <a href="/product/jas">winterjas van gerecycled materiaal</a> houdt je warm tot -20 graden. Verkrijgbaar in drie
-  kleuren. Nu met 20% korting.
-</p>
-```
+<Guideline appearance="do" title="Alleen de relevante tekst als link">
+  <Canvas language="html">
+    {() => (
+      <p>
+        Deze prachtige <a href="/product/jas">winterjas van gerecycled materiaal</a> houdt je warm tot -20 graden.
+        Verkrijgbaar in drie kleuren. Nu met 20% korting.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: link zonder inhoud of toegankelijke naam
 
 Een lege link heeft geen toegankelijke naam. Denk aan een `<a>`-element met alleen een achtergrondafbeelding via CSS of een leeg element. Een screenreader meldt een link, maar niet waarheen.
 
-```html
-<!-- Fout: lege link met alleen een CSS-achtergrond -->
-<a href="/home" class="logo-link"></a>
+<Guideline appearance="dont" title="Lege link zonder toegankelijke naam">
+  <Canvas language="html">{() => <a href="/home" className="logo-link"></a>}</Canvas>
+</Guideline>
 
-<!-- Goed -->
-<a href="/home" class="logo-link">
-  <span class="sr-only">Acme company</span>
-</a>
-```
+<Guideline appearance="do" title="Link met visueel verborgen tekst voor screenreaders">
+  <Canvas language="html">
+    {() => (
+      <a href="/home" className="logo-link">
+        <span className="sr-only">Acme company</span>
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: linktekst is verborgen voor hulpsoftware
 
 Als je linktekst verbergt met `display: none` of `visibility: hidden`, dan is die tekst ook onzichtbaar voor screenreaders. De link heeft dan geen inhoud en dus geen linkdoel.
 
-```html
-<!-- Fout: tekst verborgen met display:none -->
-<a href="/acties">
-  <span style="display: none;">Bekijk onze acties</span>
-</a>
+<Guideline appearance="dont" title="Linktekst verborgen met display:none">
+  <Canvas language="html">
+    {() => (
+      <a href="/acties">
+        <span style={{ display: "none" }}>Bekijk onze acties</span>
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: visueel verborgen maar wel beschikbaar voor screenreaders -->
-<a href="/acties">
-  <span class="sr-only">Bekijk onze acties</span>
-</a>
-```
+<Guideline appearance="do" title="Visueel verborgen maar beschikbaar voor screenreaders">
+  <Canvas language="html">
+    {() => (
+      <a href="/acties">
+        <span className="sr-only">Bekijk onze acties</span>
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: linktekst in een paginering is niet beschrijvend genoeg
 
 Als je paginering alleen uit cijfers bestaat zonder verdere context, is het linkdoel onduidelijk. "1", "2", "3" zegt niets als je niet weet dat het om pagina's gaat. Dit geldt ook voor carrousels met genummerde navigatie.
 
-```html
-<!-- Fout: alleen cijfers zonder context -->
-<ul>
-  <li><a href="?pagina=1">1</a></li>
-  <li><a href="?pagina=2">2</a></li>
-  <li><a href="?pagina=3">3</a></li>
-</ul>
+<Guideline appearance="dont" title="Paginering met alleen cijfers zonder context">
+  <Canvas language="html">
+    {() => (
+      <ul>
+        <li>
+          <a href="?pagina=1">1</a>
+        </li>
+        <li>
+          <a href="?pagina=2">2</a>
+        </li>
+        <li>
+          <a href="?pagina=3">3</a>
+        </li>
+      </ul>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: als navigatie met aria-labels -->
-<nav aria-label="Paginering">
-  <ul>
-    <li><a href="?pagina=1" aria-label="Pagina 1">1</a></li>
-    <li><a href="?pagina=2" aria-label="Pagina 2">2</a></li>
-    <li><a href="?pagina=3" aria-label="Pagina 3">3</a></li>
-  </ul>
-</nav>
-```
+<Guideline appearance="do" title="Paginering met aria-labels">
+  <Canvas language="html">
+    {() => (
+      <nav aria-label="Paginering">
+        <ul>
+          <li>
+            <a href="?pagina=1" aria-label="Pagina 1">
+              1
+            </a>
+          </li>
+          <li>
+            <a href="?pagina=2" aria-label="Pagina 2">
+              2
+            </a>
+          </li>
+          <li>
+            <a href="?pagina=3" aria-label="Pagina 3">
+              3
+            </a>
+          </li>
+        </ul>
+      </nav>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: linktekst bestaat uit een enkel teken
 
 Een losse letter of icoon als linktekst maakt het linkdoel niet duidelijk. Dit zie je bijvoorbeeld bij knoppen met A, A, A om de tekstgrootte aan te passen, of bij social media-iconen.
 
-```html
-<!-- Fout: enkele letters zonder context -->
-<a href="?size=small">A</a>
-<a href="?size=medium">A</a>
-<a href="?size=large">A</a>
+<Guideline appearance="dont" title="Enkele letters als linktekst zonder context">
+  <Canvas language="html">
+    {() => (
+      <>
+        <a href="?size=small">A</a>
+        <a href="?size=medium">A</a>
+        <a href="?size=large">A</a>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: met duidelijke labels -->
-<a href="?size=small" aria-label="Kleine tekstgrootte">A</a>
-<a href="?size=medium" aria-label="Normale tekstgrootte">A</a>
-<a href="?size=large" aria-label="Grote tekstgrootte">A</a>
-```
+<Guideline appearance="do" title="Letters met duidelijke aria-labels">
+  <Canvas language="html">
+    {() => (
+      <>
+        <a href="?size=small" aria-label="Kleine tekstgrootte">
+          A
+        </a>
+        <a href="?size=medium" aria-label="Normale tekstgrootte">
+          A
+        </a>
+        <a href="?size=large" aria-label="Grote tekstgrootte">
+          A
+        </a>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: linktekst bevat dubbele informatie
 
 Als een link zowel een afbeelding met alt-tekst als zichtbare tekst bevat, voegt de screenreader die samen tot de linktekst. Dat levert dubbelingen op: een screenreader leest dan iets als "Winkelwagen Winkelwagen" of "Home logo Ga naar homepage".
 
-```html
-<!-- Fout: alt-tekst en zichtbare tekst zeggen hetzelfde -->
-<a href="/winkelwagen">
-  <img src="cart.svg" alt="Winkelwagen" />
-  Winkelwagen
-</a>
-<!-- Screenreader leest: "Winkelwagen Winkelwagen" -->
+<Guideline appearance="dont" title="Alt-tekst en zichtbare tekst zeggen hetzelfde">
+  <Canvas language="html">
+    {() => (
+      <a href="/winkelwagen">
+        <img src="cart.svg" alt="Winkelwagen" />
+        Winkelwagen
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: lege alt zodat alleen de zichtbare tekst meetelt -->
-<a href="/winkelwagen">
-  <img src="cart.svg" alt="" />
-  Winkelwagen
-</a>
-```
+<Guideline appearance="do" title="Lege alt zodat alleen de zichtbare tekst meetelt">
+  <Canvas language="html">
+    {() => (
+      <a href="/winkelwagen">
+        <img src="cart.svg" alt="" />
+        Winkelwagen
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: linktekst bevat tekens die er niet in horen
 
 Tekens als `>` en `>>` leest een screenreader voor als "groter dan". "Lees meer >>" wordt dus "Lees meer groter dan groter dan". Pijltjes en andere decoratieve tekens horen niet in je linktekst.
 
-```html
-<!-- Fout -->
-<a href="/aanbiedingen">Bekijk aanbiedingen >></a>
-<!-- Screenreader: "Bekijk aanbiedingen groter dan groter dan" -->
+<Guideline appearance="dont" title="Decoratieve tekens in de linktekst">
+  <Canvas language="html">{() => <a href="/aanbiedingen">Bekijk aanbiedingen &gt;&gt;</a>}</Canvas>
+</Guideline>
 
-<!-- Goed -->
-<a href="/aanbiedingen">Bekijk aanbiedingen</a>
-
-<!-- Of met een visueel pijltje dat verborgen is voor screenreaders -->
-<a href="/aanbiedingen">
-  Bekijk aanbiedingen
-  <span aria-hidden="true"> &rarr;</span>
-</a>
-```
+<Guideline appearance="do" title="Decoratief pijltje verborgen voor screenreaders">
+  <Canvas language="html">
+    {() => (
+      <>
+        <a href="/aanbiedingen">Bekijk aanbiedingen</a>
+        <br />
+        <a href="/aanbiedingen">
+          Bekijk aanbiedingen
+          <span aria-hidden="true"> &rarr;</span>
+        </a>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: linkcontext is alleen visueel te herkennen
 
 Als een link met "Download" in een tabel staat maar die tabel mist de juiste HTML-markering, dan is de relatie tussen de link en de context niet programmatisch te bepalen. De bezoeker weet niet wat er gedownload wordt.
 
-```html
-<!-- Fout: geen echte tabelmarkering, context is alleen visueel -->
-<div class="rij">
-  <div class="cel">Jaarverslag 2024</div>
-  <div class="cel"><a href="/jaarverslag.pdf">Download</a></div>
-</div>
+<Guideline appearance="dont" title="Linkcontext alleen visueel herkenbaar door div-opmaak">
+  <Canvas language="html">
+    {() => (
+      <div className="rij">
+        <div className="cel">Jaarverslag 2024</div>
+        <div className="cel">
+          <a href="/jaarverslag.pdf">Download</a>
+        </div>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: echte tabel, context is programmatisch te bepalen -->
-<table>
-  <tr>
-    <td>Jaarverslag 2024</td>
-    <td><a href="/jaarverslag.pdf">Download</a></td>
-  </tr>
-</table>
-```
-
-### Fout: linktekst op een Nederlandstalige website is in het Engels
-
-Als een `alt`-tekst of `aria-label` de linktekst bepaalt en die is in het Engels op een Nederlandstalige pagina, dan leest een screenreader die tekst voor met Nederlandse uitspraak. Dat maakt de tekst onverstaanbaar. Zorg dat de taal van de linktekst overeenkomt met de paginataal, of geef het element een `lang`-attribuut.
-
-```html
-<!-- Fout: Engels aria-label op een NL-pagina, wordt met NL-uitspraak voorgelezen -->
-<a href="/contact" aria-label="Get in touch">
-  <img src="contact.svg" alt="" />
-</a>
-
-<!-- Goed: Nederlands label -->
-<a href="/contact" aria-label="Neem contact op">
-  <img src="contact.svg" alt="" />
-</a>
-
-<!-- Of: met taalattribuut als het Engels moet blijven -->
-<a href="/contact" aria-label="Get in touch" lang="en">
-  <img src="contact.svg" alt="" />
-</a>
-```
+<Guideline appearance="do" title="Linkcontext programmatisch te bepalen via echte tabel">
+  <Canvas language="html">
+    {() => (
+      <table>
+        <tbody>
+          <tr>
+            <th>Jaarverslag 2024</th>
+            <td>
+              <a href="/jaarverslag.pdf">Download</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Advies: link die naar een bestand verwijst zonder het bestandstype te noemen
 
 Links naar PDF's, Word-documenten, spreadsheets of andere bestanden moeten het bestandstype vermelden. Je bezoekers verwachten een webpagina. Een onverwachte download of een PDF die ineens in de browser opent, is verwarrend.
 
-```html
-<!-- Fout -->
-<a href="/voorwaarden.pdf">Algemene voorwaarden</a>
+<Guideline appearance="dont" title="Link naar bestand zonder bestandstype te noemen">
+  <Canvas language="html">{() => <a href="/voorwaarden.pdf">Algemene voorwaarden</a>}</Canvas>
+</Guideline>
 
-<!-- Goed -->
-<a href="/voorwaarden.pdf">Algemene voorwaarden (PDF, 340 KB)</a>
-```
+<Guideline appearance="do" title="Bestandstype en -grootte vermeld in de linktekst">
+  <Canvas language="html">{() => <a href="/voorwaarden.pdf">Algemene voorwaarden (PDF, 340 KB)</a>}</Canvas>
+</Guideline>
+
+### Advies: een URL als zichtbare tekst
+
+Een kale URL als linktekst is niet informatief. Een screenreader leest de URL karakter voor karakter of als een lange onbegrijpelijke reeks voor.
+
+<Guideline appearance="dont" title="URL als zichtbare linktekst">
+  <Canvas language="html">
+    {() => <a href="https://www.example.com/rapport-2024.pdf">https://www.example.com/rapport-2024.pdf</a>}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Beschrijvende linktekst">
+  <Canvas language="html">
+    {() => <a href="https://www.example.com/rapport-2024.pdf">Jaarrapport 2024 (PDF, 2,3 MB)</a>}
+  </Canvas>
+</Guideline>
 
 ## Gerelateerde succescriteria
 
@@ -318,15 +426,14 @@ Links naar PDF's, Word-documenten, spreadsheets of andere bestanden moeten het b
 ### Voor iedereen
 
 1. Lees alle links op de pagina en vraag jezelf af: begrijp ik waar deze link naartoe gaat, zonder de rest van de tekst te lezen? Als het antwoord nee is, is de linktekst waarschijnlijk niet duidelijk genoeg.
-2. Gebruik <kbd>Tab</kbd> om door alle links te navigeren. Bij elk gemarkeerd element moet je kunnen begrijpen wat het doet.
-3. Let op links als "Klik hier", "Lees meer", "Meer info", "Hier" en "Dit". Als deze vaak voorkomen, is er waarschijnlijk een probleem.
-4. Controleer of links naar bestanden zoals PDF of Word het bestandstype vermelden.
-5. Let op links die in een nieuw venstesr openen. Staat dat erbij?
+2. Let op links als "Klik hier", "Lees meer", "Meer info", "Hier" en "Dit". Als deze vaak voorkomen, is er waarschijnlijk een probleem.
+3. Controleer of links naar bestanden zoals PDF of Word het bestandstype vermelden.
+4. Let op links die in een nieuw venster openen. Staat dat erbij?
 
 ### Voor developers
 
 1. Open de Accessibility-tab in DevTools en inspecteer de toegankelijke naam van elke link. Controleer of die het doel beschrijft.
-2. Gebruik een screenreader en open de linkslijst. In <span lang="en">VoiceOver</span>: <kbd>VO</kbd>+<kbd>U</kbd>. In NVDA: <kbd>Insert</kbd>+<kbd>F7</kbd>. Loop door de links en controleer of elke link op zichzelf begrijpelijk is.
+2. Gebruik een screenreader en open de linkslijst. In <span lang="en">VoiceOver</span>: <kbd>VO</kbd>+<kbd>U</kbd>. In NVDA: <kbd>Insert</kbd>+<kbd>F7</kbd>. Lees alle linkteksten en controleer of elke link op zichzelf begrijpelijk is.
 3. Zoek in de codebase naar `>Klik hier<`, `>Lees meer<`, `>Meer<`, `>Hier<`. Dit zijn indicatoren voor slechte linkteksten.
 4. Controleer alle links die alleen een afbeelding bevatten. Heeft de afbeelding een `alt`-attribuut dat het linkdoel beschrijft?
 5. Zoek naar lege `<a>`-elements of links met alleen een CSS-achtergrondafbeelding. Deze hebben een `aria-label` of visueel verborgen tekst nodig.
