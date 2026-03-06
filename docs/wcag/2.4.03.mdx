@@ -42,7 +42,7 @@ De focusvolgorde wordt bepaald door de volgorde van interactieve elementen in de
 
 ## Veelgemaakte fouten
 
-In de onderstaande beschrijvingen wordt gesproken over dialoogvensters. Dit zijn elementen die boven de webpagina worden getoond en de interactie met de onderliggende pagina blokkeren. Denk aan <span lang="en">lightboxes</span>, mobiele menu's, cookiebanners en videomodals.
+De volgende voorbeelden gaan wordt gesproken over dialoogvensters. Dit zijn elementen die boven de webpagina worden getoond en de interactie met de onderliggende pagina blokkeren. Denk aan <span lang="en">lightboxes</span>, mobiele menu's, cookiebanners en videomodals.
 
 ### Fout: chaotische focusvolgorde
 
@@ -231,10 +231,10 @@ function valideerFormulier() {
 Een skiplink moet de focus direct naar de unieke hoofdcontent van de pagina brengen. Als de skiplink alleen de pagina scrollt maar de focus niet verplaatst, navigeert de bezoeker na de volgende <kbd>Tab</kbd>-druk weer vanaf het begin van de pagina.
 
 ```html
-<!-- Fout: skiplink zonder focusbaar doel -->
+<!-- Fout: pagina scrollt naar #main maar focus blijft op de skiplink -->
 <a href="#main">Ga naar inhoud</a>
 ...
-<main id="content">
+<main id="main">
   <h1>Paginatitel</h1>
 </main>
 
@@ -321,12 +321,11 @@ Een developer heeft `tabindex`-attributen met positieve waarden toegevoegd om de
    dan of CSS `order`, `flex-direction: row-reverse`, `grid` of `position: absolute` de visuele layout verandert zonder
    de HTML aan te passen.
 2. Zoek in je code naar `tabindex` met positieve waarden zoals `tabindex="1"` en `tabindex="2"`. Verwijder ze en los de volgorde op in de HTML.
-3. Test dialoogvensters: open elk venster en controleer of de focus erin verplaatst wordt, erin gevangen blijft via een <span lang="en">focus trap</span>, en na sluiten terugkeert naar het trigger-element.
+3. Test modals: open elk venster en controleer of de focus erin verplaatst wordt, erin gevangen blijft via een <span lang="en">focus trap</span>, en na sluiten terugkeert naar het trigger-element.
 4. Controleer accordions en tabs: staat de content van een geopend paneel direct na de bijbehorende knop in de HTML?
 5. Controleer skiplinks: navigeer met <kbd>Tab</kbd> naar de skiplink, activeer hem met <kbd>Enter</kbd> en druk nogmaals op <kbd>Tab</kbd>. Belandt de focus in de hoofdcontent?
 6. Test formuliervalidatie: verzend een formulier met fouten en check of de focus naar de eerste foutmelding verplaatst.
 7. Gebruik de bookmarklet van [pauljadam.com/bookmarklets/focus.html](https://pauljadam.com/bookmarklets/focus.html) om de focusvolgorde visueel zichtbaar te maken.
-8. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> voor een eerste scan. Focusvolgorde-problemen zijn zelden automatisch te detecteren. Je moet handmatig testen.
 
 ## Gerelateerde NL Design System-richtlijnen
 
