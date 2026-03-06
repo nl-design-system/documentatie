@@ -8,7 +8,7 @@ description: Elke actie is uit te voeren met een toetsenbord.
 slug: 2.1.1
 keywords:
   - WCAG
-  - Nievau A
+  - Niveau A
   - bedienbaar
   - toetsenbordtoegankelijk
   - operable
@@ -60,7 +60,7 @@ Een `<div>` of `<span>` met een `onclick`-handler is niet bereikbaar met het toe
 
 ### Fout: muisgebeurtenissen zonder toetsenbordalternatieven
 
-Interactie die alleen werkt via `onmouseover`, `onmousedown` of `ondblclick` is niet te gebruiken met een toetsenbord. Elke muisgebeurtenis moet een toetsenbordequivalent hebben.
+Interactie die alleen werkt via `onmouseover`, `onmousedown` of `ondblclick` is niet te gebruiken met een toetsenbord. Elke muisgebeurtenis moet een gelijkwaardige toetsenbordgebeurtenis hebben.
 
 ```javascript
 // Fout: alleen muisgebeurtenis
@@ -75,7 +75,7 @@ element.addEventListener("blur", verbergTooltip);
 
 ### Fout: custom dropdown die niet met toetsen te bedienen is
 
-Veel op maat gemaakte dropdowns en selectiemenu's zijn volledig met de muis gebouwd. Ze openen niet met <kbd>Enter</kbd> of <kbd>Spatie</kbd>. Je kunt niet door de opties navigeren met <kbd>pijltjestoetsen</kbd>. <kbd>Escape</kbd> sluit ze niet. Gebruik het `<select>`-element, of bouw een <span lang="en">custom component</span> dat het ARIA-combobox- of listbox-patroon volgt.
+Veel op maat gemaakte dropdowns en selectiemenu's zijn alleen voor gebruik met een muis gebouwd. Ze openen niet met <kbd>Enter</kbd> of <kbd>Spatie</kbd>. Je kunt niet door de opties navigeren met <kbd>pijltjestoetsen</kbd>. <kbd>Escape</kbd> sluit ze niet. Gebruik het `<select>`-element, of bouw een <span lang="en">custom component</span> dat het ARIA-combobox- of listbox-patroon volgt.
 
 ```html
 <!-- Fout: custom dropdown zonder toetsenbordondersteuning -->
@@ -161,7 +161,7 @@ Carrousels die alleen via <span lang="en">swipe</span> of klikken op pijltjes we
 
 ### Fout: <span lang="en">infinite scroll</span> zonder alternatieve navigatie
 
-Bij <span lang="en">infinite scroll</span> verdwijnt de <span lang="en">footer</span> en worden steeds nieuwe elementen geladen als je naar beneden scrollt. Met een toetsenbord raak je vast in een eindeloze lijst en kom je nooit voorbij de content bij de <span lang="en">footer</span>, navigatie of andere pagina-onderdelen.
+Bij <span lang="en">infinite scroll</span> verdwijnt de <span lang="en">footer</span> en worden steeds nieuwe elementen geladen als je naar beneden scrollt. Met een toetsenbord raak je vast in een eindeloze lijst en kom je nooit bij de <span lang="en">footer</span>, navigatie of andere pagina-onderdelen.
 
 ```html
 <!-- Fout: alleen infinite scroll -->
