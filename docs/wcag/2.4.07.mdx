@@ -181,25 +181,6 @@ Bij het bouwen van <span lang="en">custom components</span> zoals tabs, accordio
 }
 ```
 
-### Fout: alleen kleurverandering als focusindicator
-
-Als de focusindicator uitsluitend bestaat uit een kleurverandering, is dat niet genoeg voor mensen die kleuren niet kunnen onderscheiden. Denk aan tekst die blauw wordt. Combineer kleurveranderingen altijd met een vormverandering zoals een <span lang="en">outline</span>, onderstreping of achtergrondmarkering.
-
-```css
-/* Fout: alleen kleurverandering */
-a:focus-visible {
-  outline: none;
-  color: blue;
-}
-
-/* Goed: kleurverandering in combinatie met outline */
-a:focus-visible {
-  outline: 2px solid #0066cc;
-  outline-offset: 2px;
-  color: #0066cc;
-}
-```
-
 ## Gerelateerde succescriteria
 
 - [SC 2.1.1](https://nldesignsystem.nl/wcag/2.1.1/) — Toetsenbord: alle functionaliteit moet bereikbaar zijn met het toetsenbord.
