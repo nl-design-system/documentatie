@@ -1,0 +1,55 @@
+---
+title: Afbeeldingen
+hide_title: true
+sidebar_label: Afbeeldingen
+sidebar_position: 7
+pagination_label: Afbeeldingen
+description: Afbeeldingen voor communicatie vanuit het project NL Design System.
+keywords:
+  - kernteam
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Afbeeldingen
+
+## Toestemming voor gebruik
+
+{/* TODO: Herschrijf dit hoofdstukje */}
+
+Gebruik nooit zomaar afbeeldingen van internet. Krijg je een afbeelding aangeleverd? Check dan of je deze mag gebruiken en of bronvermelding nodig is. Maak je zelf foto's op een evenement of bijeenkomst? Vraag dan altijd toestemming aan de aanwezigen of je de foto mag delen.
+
+## Toegankelijkheid
+
+Wanneer afbeeldingen veel tekst erin hebben, beoordeel dan of een rich text alternatief gebruiksvriendelijker en toegankelijker zou zijn.
+
+Een afbeelding heeft een alt-tekst nodig. In de alt-tekst beschrijf je wat er op de afbeelding staat. Houd afbeeldingen daarom zo simpel mogelijk.
+
+## Screenshots
+
+Gebruik PNG voor het opslaan van screenshots, niet een lossy formaat zoals JPEG. Laat het optimaliseren van afbeeldingen over aan de software voor de website. In de toekomst kunnen nieuwe technieken voor optimalisaties gebruikt worden, en dan is het handig dat het bronbestand van hoge kwaliteit nog beschikbaar is.
+
+Zorg voor een rustige layout van de pagina door afbeeldingen en video's te gebruiken met consistente formaten. Gebruik voor screenshots de volgende formaten die relevant zijn voor [WCAG-succescriterium 1.4.10 Reflow](/wcag/1.4.10/), tenzij er een belangrijke reden is om een ander formaat te gebruiken.
+
+- 1280 × 1024 pixels: 100% zoom
+- 320 × 256 pixels: 400% zoom
+- 256 × 320 pixels: 400% zoom, portretmodus
+- 1024 ×1280 pixels: 100% zoom, landschapsmodus
+
+Een handige manier om screenshots in een vast formaat te maken is via de Chrome Developer Tools. Je kunt Devices aanmaken die je "WCAG 100%" en "WCAG 400%" noemt, zodat je makkelijk de website op het juiste formaat kunt instellen. Maak dan een screenshot via de developer tools.
+
+Bekijk een video over hoe dit werkt: [4 ways to capture screenshots in Chrome DevTools](https://youtu.be/tL-R9KzZA0s?t=55)
+
+Zorg dat screenshots er niet onscherp uit zien op high-end beeldschermen. Maak daarom screenshots met een pixel density van tenminste 2 dots per pixel. Gebruik een apparaat met een pixel-density van tenminste 2 dots per pixel, of simuleer een hoge pixel density via de Device instellingen in Developer Tools. Beeldschermen van Apple en high-end mobiele telefoons voldoen hieraan.
+
+### Gedateerde screenshots
+
+Afbeeldingen kunnen na een paar jaar de indruk wekken dat ze gedateerd zijn. De kans bestaat dat door een oude screenshot de hele pagina gedateerd voelt. Afbeeldingen moeten daarom periodiek vernieuwd worden. Maak de afweging of hebben van de afbeelding opweegt tegen het onderhoud dat er voor nodig is.
+
+Een screenshot zonder de user interface van de browser of het besturingssysteem zal minder snel gedateerd zijn. Maak een screenshots van websites daarom alleen van de website zelf, via de Developer Tools.
+
+## Vector-afbeeldingen
+
+SVG afbeeldingen zijn soms beter! Gebruik `fill="currentColor"` in plaats van vaste kleuren, zodat de illustratie zich aanpast in dark mode en in forced colors mode. Gebruik `<svg>` in de HTML van de pagina, gebruik niet `<img src="image.svg">`
