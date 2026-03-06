@@ -102,7 +102,7 @@ Als bij een fout in een invoerveld alleen de rand rood wordt, mist iemand met kl
     {() => (
       <>
         <label htmlFor="email-fout">E-mailadres</label>
-        <input id="email-fout" type="email" style={{ borderColor: 'red', display: 'block' }} />
+        <input id="email-fout" type="email" style={{ borderColor: "red", display: "block" }} />
       </>
     )}
   </Canvas>
@@ -118,7 +118,7 @@ Als bij een fout in een invoerveld alleen de rand rood wordt, mist iemand met kl
           type="email"
           aria-describedby="fout-email"
           aria-invalid="true"
-          style={{ borderColor: 'red', display: 'block' }}
+          style={{ borderColor: "red", display: "block" }}
         />
         <p id="fout-email">Vul een geldig e-mailadres in.</p>
       </>
@@ -137,7 +137,7 @@ Cellen in een tabel of items in een lijst die alleen een andere achtergrondkleur
         <tbody>
           <tr>
             <td>Project B</td>
-            <td style={{ backgroundColor: 'green' }}>Project A</td>
+            <td style={{ backgroundColor: "green" }}>Project A</td>
           </tr>
         </tbody>
       </table>
@@ -152,11 +152,11 @@ Cellen in een tabel of items in een lijst die alleen een andere achtergrondkleur
         <tbody>
           <tr>
             <td>Aanvraag 1</td>
-            <td style={{ backgroundColor: 'green', color: 'white' }}>✓ Goedgekeurd</td>
+            <td style={{ backgroundColor: "green", color: "white" }}>✓ Goedgekeurd</td>
           </tr>
           <tr>
             <td>Aanvraag 2</td>
-            <td style={{ backgroundColor: 'red', color: 'white' }}>✗ Afgewezen</td>
+            <td style={{ backgroundColor: "red", color: "white" }}>✗ Afgewezen</td>
           </tr>
         </tbody>
       </table>
@@ -172,10 +172,18 @@ De actieve pagina in een navigatiemenu die alleen te herkennen is aan een andere
   <Canvas language="html">
     {() => (
       <nav>
-        <ul style={{ listStyle: 'none', display: 'flex', gap: '1rem', padding: 0 }}>
-          <li><a href="#">Home</a></li>
-          <li><a href="#" style={{ color: '#0066cc', textDecoration: 'none' }}>Over ons</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul style={{ listStyle: "none", display: "flex", gap: "1rem", padding: 0 }}>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#" style={{ color: "#0066cc", textDecoration: "none" }}>
+              Over ons
+            </a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
       </nav>
     )}
@@ -186,17 +194,26 @@ De actieve pagina in een navigatiemenu die alleen te herkennen is aan een andere
   <Canvas language="html">
     {() => (
       <nav>
-        <ul style={{ listStyle: 'none', display: 'flex', gap: '1rem', padding: 0 }}>
-          <li><a href="#">Home</a></li>
+        <ul style={{ listStyle: "none", display: "flex", gap: "1rem", padding: 0 }}>
+          <li>
+            <a href="#">Home</a>
+          </li>
           <li>
             <a
               href="#"
-              style={{ color: '#0066cc', textDecoration: 'none', borderBottom: '3px solid currentColor', fontWeight: 'bold' }}
+              style={{
+                color: "#0066cc",
+                textDecoration: "none",
+                borderBottom: "3px solid currentColor",
+                fontWeight: "bold",
+              }}
             >
               Over ons
             </a>
           </li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
       </nav>
     )}
@@ -210,10 +227,10 @@ In een carrousel met ronde navigatieknoppen die de slides aangeven, mag de actie
 <Guideline appearance="dont" title="Actieve dot alleen in een andere kleur">
   <Canvas language="html">
     {() => (
-      <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-        <div style={{ backgroundColor: '#ccc', borderRadius: '50%', width: '12px', height: '12px' }}></div>
-        <div style={{ backgroundColor: '#0066cc', borderRadius: '50%', width: '12px', height: '12px' }}></div>
-        <div style={{ backgroundColor: '#ccc', borderRadius: '50%', width: '12px', height: '12px' }}></div>
+      <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+        <div style={{ backgroundColor: "#ccc", borderRadius: "50%", width: "12px", height: "12px" }}></div>
+        <div style={{ backgroundColor: "#0066cc", borderRadius: "50%", width: "12px", height: "12px" }}></div>
+        <div style={{ backgroundColor: "#ccc", borderRadius: "50%", width: "12px", height: "12px" }}></div>
       </div>
     )}
   </Canvas>
@@ -222,10 +239,18 @@ In een carrousel met ronde navigatieknoppen die de slides aangeven, mag de actie
 <Guideline appearance="do" title="Actieve dot met kleur én groter formaat">
   <Canvas language="html">
     {() => (
-      <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-        <div style={{ backgroundColor: '#ccc', borderRadius: '50%', width: '12px', height: '12px' }}></div>
-        <div style={{ backgroundColor: '#0066cc', borderRadius: '50%', width: '16px', height: '16px', border: '2px solid #003d7a' }}></div>
-        <div style={{ backgroundColor: '#ccc', borderRadius: '50%', width: '12px', height: '12px' }}></div>
+      <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+        <div style={{ backgroundColor: "#ccc", borderRadius: "50%", width: "12px", height: "12px" }}></div>
+        <div
+          style={{
+            backgroundColor: "#0066cc",
+            borderRadius: "50%",
+            width: "16px",
+            height: "16px",
+            border: "2px solid #003d7a",
+          }}
+        ></div>
+        <div style={{ backgroundColor: "#ccc", borderRadius: "50%", width: "12px", height: "12px" }}></div>
       </div>
     )}
   </Canvas>
@@ -237,17 +262,13 @@ Als een focusrand minder dan 3:1 contrast heeft met de achtergrond, wordt alleen
 
 <Guideline appearance="dont" title="Focusrand met onvoldoende contrast">
   <Canvas language="html">
-    {() => (
-      <button style={{ outline: '2px solid #99ccff', outlineOffset: '2px' }}>Klik mij</button>
-    )}
+    {() => <button style={{ outline: "2px solid #99ccff", outlineOffset: "2px" }}>Klik mij</button>}
   </Canvas>
 </Guideline>
 
 <Guideline appearance="do" title="Contrastrijke focusrand">
   <Canvas language="html">
-    {() => (
-      <button style={{ outline: '2px solid #0066cc', outlineOffset: '2px' }}>Klik mij</button>
-    )}
+    {() => <button style={{ outline: "2px solid #0066cc", outlineOffset: "2px" }}>Klik mij</button>}
   </Canvas>
 </Guideline>
 
