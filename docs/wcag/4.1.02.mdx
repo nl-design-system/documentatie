@@ -21,6 +21,8 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -51,23 +53,23 @@ De naam beschrijft wat een element doet, zoals "Zoeken", "Verwijderen" of "E-mai
 
 Er zijn meerdere manieren om een naam toe te voegen:
 
-- Een zichtbaar label gekoppeld aan een invoerveld met `<label>`.
-- Een `aria-label`-attribuut.
 - Een `aria-labelledby`-attribuut dat verwijst naar een ander element.
-- Een tekstalternatief bij een afbeelding met `alt`.
+- Een `aria-label`-attribuut.
+- Een zichtbaar label gekoppeld aan een invoerveld met `<label>`.
+- Een tekstalternatief bij een afbeelding met `alt`, genest in een link.
 - De tekst in het element zelf, zoals de tekst op een knop.
 
-### De waarde: wat is de status?
+### De waarde, staat en eigenschappen: wat kan de bezoeker zelf aanpassen?
 
-Interactieve elementen kunnen een status hebben die verandert bij interactie. Denk aan "ingedrukt", "geselecteerd", "uitgevouwen" of "uitgeschakeld". Deze informatie geef je door met HTML- of ARIA-attributen, zoals `aria-expanded`, `aria-checked` of `disabled`.
+Dit geldt alleen voor elementen waarbij de bezoeker zelf iets kan wijzigen. De waarde is wat een bezoeker invult of selecteert in een invoerelement, zoals een tekstveld, een slider of een keuzelijst. De staat geeft aan hoe een element er op dat moment voor staat: is een checkbox aangevinkt, is een accordeon ingeklapt, is een optie geselecteerd? Eigenschappen liggen dicht bij de staat — ze zijn soms moeilijk van elkaar te onderscheiden. Denk aan `aria-expanded`, `aria-checked`, `aria-selected` en `disabled`.
 
 ### Over ARIA
 
 Drie belangrijke regels voor het gebruik van ARIA:
 
-- <span lang="en">Never use ARIA unless you have to.</span>
-- <span lang="en">Always use ARIA when you have to.</span>
-- <span lang="en">You're doing it wrong (probably).</span>
+- Gebruik ARIA nooit tenzij het niet anders kan.
+- Gebruik ARIA altijd als het niet anders kan.
+- Je doet het waarschijnlijk fout.
 
 ARIA is bedoeld om niet-toegankelijke elementen toegankelijker te maken. Maar onjuist gebruik van ARIA maakt een website juist minder toegankelijk. Het meeste wat ARIA kan, kan ook met standaard HTML. Alleen voor het aangeven van statussen en het laten voorlezen van statusberichten heb je ARIA echt nodig.
 
@@ -77,260 +79,458 @@ ARIA is bedoeld om niet-toegankelijke elementen toegankelijker te maken. Maar on
 
 Een knop, link of invoerveld zonder naam is onbruikbaar voor screenreadergebruikers. Ze horen dan alleen de rol ("knop" of "link") maar niet wat het element doet.
 
-```html
-<!-- Fout: knop met alleen een icoon, zonder naam -->
-<button>
-  <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3z" /></svg>
-</button>
+<Guideline appearance="dont" title="Knop met alleen een icoon, zonder toegankelijke naam">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button>
+        <svg viewBox="0 0 24 24">
+          <path d="M3 6h18v2H3z" />
+        </svg>
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: aria-label geeft de knop een naam -->
-<button aria-label="Menu openen">
-  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 6h18v2H3z" /></svg>
-</button>
-```
+<Guideline appearance="do" title="Knop met een aria-label als toegankelijke naam">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button aria-label="Menu openen">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M3 6h18v2H3z" />
+        </svg>
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-```html
-<!-- Fout: invoerveld zonder label -->
-<input type="email" placeholder="E-mailadres" />
+<Guideline appearance="dont" title="Invoerveld zonder label">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <input type="email" placeholder="E-mailadres" />}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: gekoppeld label -->
-<label for="email">E-mailadres</label>
-<input id="email" type="email" />
-```
+<Guideline appearance="do" title="Invoerveld met een gekoppeld label">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <label htmlFor="email">E-mailadres</label>
+        <input id="email" type="email" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-```html
-<!-- Fout: link met alleen een afbeelding, zonder naam -->
-<a href="/home">
-  <img src="logo.png" />
-</a>
+<Guideline appearance="dont" title="Link met alleen een afbeelding, zonder toegankelijke naam">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <a href="/home">
+        <img src="logo.png" alt="" />
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: alt-tekst geeft de link een naam -->
-<a href="/home">
-  <img src="logo.png" alt="Naar de homepagina" />
-</a>
-```
+<Guideline appearance="do" title="Link met een alt-tekst als toegankelijke naam">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <a href="/home">
+        <img src="logo.png" alt="Naar de homepagina" />
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: interactief element heeft geen toegankelijke rol
 
 Bij een zelfgemaakt bedieningselement ontbreekt de rol. Hulpsoftware kan dan niet aangeven wat het element is.
 
-```html
-<!-- Fout: div als knop zonder rol -->
-<div class="knop" onclick="verstuur()">Versturen</div>
+<Guideline appearance="dont" title="Een div als knop, zonder toegankelijke rol">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div className="knop" onClick={() => {}}>
+        Versturen
+      </div>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: gebruik een echt button-element -->
-<button onclick="verstuur()">Versturen</button>
+<Guideline appearance="do" title="Een echt button-element, of een div met role='button'">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <button onClick={() => {}}>Versturen</button>
+        <div className="knop" role="button" tabIndex="0" onClick={() => {}} onKeyDown={() => {}}>
+          Versturen
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Of: voeg rol en toetsenbordbediening toe -->
-<div class="knop" role="button" tabindex="0" onclick="verstuur()" onkeydown="handleKey(event)">Versturen</div>
-```
+<Guideline appearance="dont" title="Een zelfgemaakt selectievakje zonder toegankelijke rol">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div className="checkbox" onClick={() => {}}>
+        <span className="vinkje">✓</span> Ik ga akkoord
+      </div>
+    )}
+  </Canvas>
+</Guideline>
 
-```html
-<!-- Fout: zelfgemaakt selectievakje zonder rol -->
-<div class="checkbox" onclick="toggle()"><span class="vinkje">✓</span> Ik ga akkoord</div>
-
-<!-- Goed: gebruik een echt checkbox-element -->
-<label> <input type="checkbox" /> Ik ga akkoord </label>
-```
+<Guideline appearance="do" title="Een echt checkbox-element">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <label>
+        <input type="checkbox" /> Ik ga akkoord
+      </label>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: interactief element heeft een verkeerde rol
 
 Een element met de verkeerde rol geeft misleidende informatie aan screenreadergebruikers. Een knop die naar een andere pagina navigeert moet een link zijn. Een link die een actie uitvoert moet een knop zijn.
 
-```html
-<!-- Fout: knop die navigeert (moet een link zijn) -->
-<button onclick="window.location='/contact'">Contact</button>
+<Guideline appearance="dont" title="Een knop die navigeert naar een andere pagina">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <button onClick={() => {}}>Contact</button>}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: gebruik een link voor navigatie -->
-<a href="/contact">Contact</a>
-```
+<Guideline appearance="do" title="Een link voor navigatie naar een andere pagina">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <a href="/contact">Contact</a>}
+  </Canvas>
+</Guideline>
 
-```html
-<!-- Fout: link die een actie uitvoert (moet een knop zijn) -->
-<a href="#" onclick="verwijder()">Verwijderen</a>
+<Guideline appearance="dont" title="Een link die een actie uitvoert">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <a href="#" onClick={() => {}}>
+        Verwijderen
+      </a>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: gebruik een knop voor acties -->
-<button onclick="verwijder()">Verwijderen</button>
-```
+<Guideline appearance="do" title="Een knop voor het uitvoeren van een actie">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <button onClick={() => {}}>Verwijderen</button>}
+  </Canvas>
+</Guideline>
 
 ### Fout: ARIA-attribuut heeft een ongeldige waarde of is verkeerd gespeld
 
 Als een attribuut of rol verkeerd is geschreven, negeert de browser het. Het element wordt dan niet correct doorgegeven aan hulpsoftware.
 
-```html
-<!-- Fout: verkeerd gespeld attribuut -->
-<button aria-expandd="true">Menu</button>
-<div role="nagivation">...</div>
+<Guideline appearance="dont" title="Een ARIA-attribuut verkeerd gespeld">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <button aria-expandd="true">Menu</button>
+        <div role="nagivation">
+          <p>Navigatie</p>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: correct gespeld -->
-<button aria-expanded="true">Menu</button>
-<div role="navigation">...</div>
-```
+<Guideline appearance="do" title="Een ARIA-attribuut correct gespeld">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <button aria-expanded="true">Menu</button>
+        <div role="navigation">
+          <p>Navigatie</p>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-```html
-<!-- Fout: ongeldige waarde -->
-<button aria-expanded="yes">Menu</button>
+<Guideline appearance="dont" title="Een ARIA-attribuut met een ongeldige waarde">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <button aria-expanded="yes">Menu</button>}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: geldige waarde (true of false) -->
-<button aria-expanded="true">Menu</button>
-```
+<Guideline appearance="do" title="Een ARIA-attribuut met een geldige waarde">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <button aria-expanded="true">Menu</button>}
+  </Canvas>
+</Guideline>
 
 ### Fout: ARIA-attributen zijn toegepast op elementen die deze niet ondersteunen
 
 Sommige combinaties van rollen en attributen zijn niet toegestaan. Zo mag je `aria-label` niet toepassen op elementen met `role="generic"`, zoals `<div>` of `<span>` zonder rol.
 
-```html
-<!-- Fout: aria-label op een div zonder rol -->
-<div aria-label="Zoekresultaten">
-  <p>3 resultaten gevonden</p>
-</div>
+<Guideline appearance="dont" title="aria-label op een div zonder rol">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div aria-label="Zoekresultaten">
+        <p>3 resultaten gevonden</p>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: voeg een rol toe, of gebruik een semantisch element -->
-<div role="region" aria-label="Zoekresultaten">
-  <p>3 resultaten gevonden</p>
-</div>
-
-<!-- Of: gebruik een semantisch element -->
-<section aria-label="Zoekresultaten">
-  <p>3 resultaten gevonden</p>
-</section>
-```
+<Guideline appearance="do" title="Een rol toevoegen, of een semantisch element gebruiken">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <div role="region" aria-label="Zoekresultaten">
+          <p>3 resultaten gevonden</p>
+        </div>
+        <section aria-label="Zoekresultaten">
+          <p>3 resultaten gevonden</p>
+        </section>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: ARIA-rol is niet compleet
 
 Sommige ARIA-rollen hebben verplichte ouder- of kindrollen, of verplichte attributen. Als die ontbreken, werkt het element niet correct met hulpsoftware.
 
-```html
-<!-- Fout: tab zonder tablist -->
-<div role="tab">Tab 1</div>
-<div role="tab">Tab 2</div>
-<div role="tabpanel">Inhoud van tab 1</div>
+<Guideline appearance="dont" title="Tabs zonder tablist als ouder-element">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <div role="tab">Tab 1</div>
+        <div role="tab">Tab 2</div>
+        <div role="tabpanel">Inhoud van tab 1</div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: tablist als ouder, met gekoppelde tabpanels -->
-<div role="tablist">
-  <button role="tab" aria-selected="true" aria-controls="panel-1">Tab 1</button>
-  <button role="tab" aria-selected="false" aria-controls="panel-2">Tab 2</button>
-</div>
-<div id="panel-1" role="tabpanel">Inhoud van tab 1</div>
-<div id="panel-2" role="tabpanel" hidden>Inhoud van tab 2</div>
-```
+<Guideline appearance="do" title="Tabs met tablist als ouder-element en gekoppelde tabpanels">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <div role="tablist">
+          <button role="tab" aria-selected="true" aria-controls="panel-1">
+            Tab 1
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="panel-2">
+            Tab 2
+          </button>
+        </div>
+        <div id="panel-1" role="tabpanel">
+          Inhoud van tab 1
+        </div>
+        <div id="panel-2" role="tabpanel" hidden>
+          Inhoud van tab 2
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: button-element bevat semantische of interactieve elementen
 
 Een `<button>` verwijdert de semantische rol van elementen die erin staan. Een heading in een button verliest de rol van heading. Een link in een button is ongeldig HTML.
 
-```html
-<!-- Fout: heading in een button verliest zijn rol -->
-<button>
-  <h3>Bekijk details</h3>
-</button>
+<Guideline appearance="dont" title="Een heading in een button verliest zijn rol">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button>
+        <h3>Bekijk details</h3>
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: platte tekst in de button -->
-<button>Bekijk details</button>
-```
+<Guideline appearance="do" title="Platte tekst in een button">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <button>Bekijk details</button>}
+  </Canvas>
+</Guideline>
 
-```html
-<!-- Fout: link in een button is ongeldig -->
-<button>
-  <a href="/details">Bekijk details</a>
-</button>
+<Guideline appearance="dont" title="Een link in een button is ongeldig HTML">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button>
+        <a href="/details">Bekijk details</a>
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: kies één van de twee -->
-<a href="/details">Bekijk details</a>
-```
+<Guideline appearance="do" title="Kies één van de twee: een link of een button">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <a href="/details">Bekijk details</a>}
+  </Canvas>
+</Guideline>
 
 ### Fout: summary-element bevat semantische elementen
 
 Een `<summary>` heeft de impliciete rol van een button. Net als bij een button wordt de semantische rol van elementen binnen het summary-element genegeerd door hulpsoftware.
 
-```html
-<!-- Fout: heading in summary verliest zijn rol -->
-<details>
-  <summary><h3>Veelgestelde vragen</h3></summary>
-  <p>Hier staan de antwoorden.</p>
-</details>
+<Guideline appearance="dont" title="Een heading in summary verliest zijn rol">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <details>
+        <summary>
+          <h3>Veelgestelde vragen</h3>
+        </summary>
+        <p>Hier staan de antwoorden.</p>
+      </details>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: platte tekst in summary -->
-<h3>Veelgestelde vragen</h3>
-<details>
-  <summary>Hoe wijzig ik mijn wachtwoord?</summary>
-  <p>Ga naar je profielpagina en klik op "Wachtwoord wijzigen".</p>
-</details>
-```
+<Guideline appearance="do" title="Platte tekst in summary, heading buiten details">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <h3>Veelgestelde vragen</h3>
+        <details>
+          <summary>Hoe wijzig ik mijn wachtwoord?</summary>
+          <p>Ga naar je profielpagina en klik op &ldquo;Wachtwoord wijzigen&rdquo;.</p>
+        </details>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: de status van een interactief element is onbekend voor hulpsoftware
 
 Bij zelfgemaakte bedieningselementen moet de status worden doorgegeven met ARIA-attributen. Zonder die attributen weet de screenreader niet of een element is geselecteerd, ingedrukt of aangevinkt.
 
-```html
-<!-- Fout: zelfgemaakte toggle zonder status -->
-<button class="toggle active">Donkere modus</button>
+<Guideline appearance="dont" title="Een toggle-knop zonder aria-pressed">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <button className="toggle active">Donkere modus</button>}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: aria-pressed geeft de status door -->
-<button class="toggle" aria-pressed="true">Donkere modus</button>
-```
+<Guideline appearance="do" title="Een toggle-knop met aria-pressed">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button className="toggle" aria-pressed="true">
+        Donkere modus
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-```html
-<!-- Fout: zelfgemaakt selectievakje zonder status -->
-<div role="checkbox" tabindex="0">Onthoud mij</div>
+<Guideline appearance="dont" title="Een zelfgemaakt selectievakje zonder aria-checked">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div role="checkbox" tabIndex="0">
+        Onthoud mij
+      </div>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: aria-checked geeft de status door -->
-<div role="checkbox" tabindex="0" aria-checked="false">Onthoud mij</div>
-```
+<Guideline appearance="do" title="Een zelfgemaakt selectievakje met aria-checked">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div role="checkbox" tabIndex="0" aria-checked="false">
+        Onthoud mij
+      </div>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: uitklapbare content geeft niet aan of deze open of gesloten is
 
 Als een element content uitklapt of inklapt, moet de status worden doorgegeven met `aria-expanded`. Zonder dit attribuut weet een screenreadergebruiker niet of de content zichtbaar is.
 
-```html
-<!-- Fout: accordion zonder status -->
-<button class="accordion-trigger">Meer informatie</button>
-<div class="accordion-panel">
-  <p>Hier staat de extra informatie.</p>
-</div>
+<Guideline appearance="dont" title="Een accordion-knop zonder aria-expanded">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <button className="accordion-trigger">Meer informatie</button>
+        <div className="accordion-panel">
+          <p>Hier staat de extra informatie.</p>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: aria-expanded geeft de status door -->
-<button class="accordion-trigger" aria-expanded="false" aria-controls="panel-1">Meer informatie</button>
-<div id="panel-1" class="accordion-panel" hidden>
-  <p>Hier staat de extra informatie.</p>
-</div>
-```
+<Guideline appearance="do" title="Een accordion-knop met aria-expanded">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <button className="accordion-trigger" aria-expanded="false" aria-controls="panel-1">
+          Meer informatie
+        </button>
+        <div id="panel-1" className="accordion-panel" hidden>
+          <p>Hier staat de extra informatie.</p>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-```html
-<!-- Fout: submenu zonder status -->
-<li>
-  <button>Producten</button>
-  <ul class="submenu">
-    <li><a href="/laptops">Laptops</a></li>
-    <li><a href="/telefoons">Telefoons</a></li>
-  </ul>
-</li>
+<Guideline appearance="dont" title="Een submenu-knop zonder aria-expanded">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <ul>
+        <li>
+          <button>Producten</button>
+          <ul className="submenu">
+            <li>
+              <a href="/laptops">Laptops</a>
+            </li>
+            <li>
+              <a href="/telefoons">Telefoons</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: aria-expanded op de trigger -->
-<li>
-  <button aria-expanded="false" aria-controls="submenu-producten">Producten</button>
-  <ul id="submenu-producten" class="submenu" hidden>
-    <li><a href="/laptops">Laptops</a></li>
-    <li><a href="/telefoons">Telefoons</a></li>
-  </ul>
-</li>
-```
+<Guideline appearance="do" title="Een submenu-knop met aria-expanded">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <ul>
+        <li>
+          <button aria-expanded="false" aria-controls="submenu-producten">
+            Producten
+          </button>
+          <ul id="submenu-producten" className="submenu" hidden>
+            <li>
+              <a href="/laptops">Laptops</a>
+            </li>
+            <li>
+              <a href="/telefoons">Telefoons</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: video- of audio-element heeft geen toegankelijke naam
 
 Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element een toegankelijke naam hebben. Zonder naam weet een screenreadergebruiker niet welke media wordt afgespeeld.
 
-```html
-<!-- Fout: video zonder toegankelijke naam -->
-<video controls src="instructie.mp4"></video>
+<Guideline appearance="dont" title="Een video zonder toegankelijke naam">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <video controls src="instructie.mp4"></video>}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: aria-label geeft de video een naam -->
-<video controls src="instructie.mp4" aria-label="Instructievideo: account aanmaken"></video>
-
-<!-- Of: aria-labelledby verwijst naar een zichtbare titel -->
-<h2 id="video-titel">Instructievideo: account aanmaken</h2>
-<video controls src="instructie.mp4" aria-labelledby="video-titel"></video>
-```
+<Guideline appearance="do" title="Een video met een toegankelijke naam via aria-label of aria-labelledby">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <video controls src="instructie.mp4" aria-label="Instructievideo: account aanmaken"></video>
+        <h2 id="video-titel">Instructievideo: account aanmaken</h2>
+        <video controls src="instructie.mp4" aria-labelledby="video-titel"></video>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
 ## Gerelateerde succescriteria
 
@@ -347,10 +547,11 @@ Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element 
 1. Tab door alle interactieve elementen op de pagina. Wordt elk element aangekondigd door een screenreader met een duidelijke naam en rol?
 2. Activeer knoppen, links en andere bedieningselementen. Wordt de statusverandering aangekondigd? Denk aan het openen van een accordion, het selecteren van een tab of het aanvinken van een selectievakje.
 3. Controleer of zelfgemaakte bedieningselementen dezelfde informatie geven als standaard HTML-elementen.
+4. Test met een screenreader. NVDA op Windows of VoiceOver op macOS. Navigeer door de pagina en controleer of elk element begrijpelijk wordt aangekondigd.
 
 ### Voor developers
 
-1. Open de accessibility tree in je browser. In Chrome en Firefox: inspecteer een element, ga naar het tabblad "Accessibility". Controleer of naam, rol en waarde kloppen.
+1. Open de accessibility tree in je browser. In Chrome en Firefox: inspecteer een element, ga naar het tabblad "Accessibility". Controleer of naam, rol, waarde en status kloppen.
 2. Controleer alle knoppen en links. Heeft elk element een toegankelijke naam? Zoek naar `<button>` en `<a>` elementen zonder tekst, zonder `aria-label` en zonder `aria-labelledby`.
 3. Controleer alle invoervelden. Is elk veld gekoppeld aan een `<label>` of heeft het een `aria-label`?
 4. Controleer zelfgemaakte bedieningselementen. Heeft elk element de juiste `role`, `tabindex` en toetsenbordafhandeling?
