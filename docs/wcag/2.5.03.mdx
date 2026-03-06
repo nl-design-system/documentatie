@@ -38,9 +38,9 @@ import Summary from "./summaries/_2.5.3-summary.md";
 
 <Summary />
 
-Dit is vooral belangrijk voor mensen die spraakbesturing gebruiken. Zij activeren knoppen en links door te zeggen wat ze op het scherm zien: "Klik op Versturen". Als de toegankelijke naam van de knop afwijkt van de zichtbare tekst, werkt het spraakcommando niet. Denk aan een `aria-label` dat iets anders zegt.
+Dit is vooral belangrijk voor mensen die spraakbesturing gebruiken. Zij activeren knoppen en links door te zeggen wat ze op het scherm zien: "Klik op Versturen". Als de toegankelijke naam van de knop afwijkt van de zichtbare tekst, werkt het spraakcommando niet. Bijvoorbeeld: de zichtbare tekst is 'Versturen' en de toegankelijke naam komt van `aria-label="Indienen"`.
 
-Dit succescriterium vereist niet dat elk element een zichtbaar label heeft. Maar waar een zichtbaar label aanwezig is, moet het terugkomen in de toegankelijke naam. Zet de zichtbare tekst bij voorkeur aan het begin van de toegankelijke naam.
+Om aan dit succescriterium te voldoen is het is niet nodig om zichtbare tekst bij alle interactieve-elementen te plaatsen. Maar áls je zichtbare tekst gebruikt, moet die tekst ook voorkomen in de toegankelijke naam. Zet de zichtbare tekst bij voorkeur aan het begin van de toegankelijke naam.
 
 Let op: met "tekst" wordt hier een [reeks karakters](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html#dfn-text) bedoeld die iets uitdrukken in menselijke taal. Een enkele letter, zoals een "A" om tekst te vergroten, valt hier niet onder en hoeft dus niet terug te komen in de toegankelijke naam.
 
@@ -54,13 +54,13 @@ Dit gaat vaak fout bij logo's wanneer de zichtbare tekst niet in de toegankelijk
 <!-- Fout: zichtbare tekst is "WC3" -->
 <a href=""><img src="#" alt="" /><!--logo met tekst --></a>
 
-<!-- Goed: aria-label bevat de zichtbare tekst -->
+<!-- Goed: de zichtbare tekst staat in de alternatieve tekst -->
 <a href=""><img src="#" alt="W3C" /><!--logo met tekst --></a>
 ```
 
 ### Fout: aria-label dat niet overeenkomt met de zichtbare tekst
 
-De meest voorkomende fout. Een knop toont "Zoeken" op het scherm, maar het `aria-label` zegt iets anders. Iemand met spraakbesturing zegt "Klik op Zoeken" en er gebeurt niets.
+De meest voorkomende fout. Een knop heeft de zichtbare tekst "Zoeken", maar in het `aria-label` staat een andere tekst. Iemand met spraakbesturing zegt "Klik op Zoeken" en er gebeurt niets.
 
 ```html
 <!-- Fout: zichtbare tekst is "Zoeken", aria-label is anders -->
@@ -108,7 +108,7 @@ Als een knop zowel een icoon als tekst bevat, maar een `aria-label` de zichtbare
 
 ### Fout: afbeeldingsknop of link met alt-tekst die afwijkt van de zichtbare tekst
 
-Knoppen en links met een afbeelding waar tekst in staat, zoals een afbeelding met teks als een knop of een link, moeten een alt-tekst hebben die overeenkomt met de tekst in de afbeelding.
+Knoppen en links met een afbeelding waar tekst in staat moeten een alternatieve tekst hebben die overeenkomt met de tekst in de afbeelding.
 
 ```html
 <!-- Fout: de afbeelding toont "Inschrijven", alt zegt iets anders -->
@@ -120,7 +120,7 @@ Knoppen en links met een afbeelding waar tekst in staat, zoals een afbeelding me
 
 ### Fout: zichtbare tekst in een andere taal dan de toegankelijke naam
 
-Als de zichtbare knoptekst "<span lang="en">Submit</span>" is maar het `aria-label` is "Verzenden", komt de zichtbare tekst niet terug in de toegankelijke naam. Iemand met spraakbesturing die "Klik op <span lang="en">Submit</span>" zegt, krijgt geen match.
+Als de zichtbare knoptekst "<span lang="en">Submit</span>" is maar het `aria-label` is "Verzenden", komt de zichtbare tekst niet terug in de toegankelijke naam. Iemand met spraakbesturing zegt "Klik op <span lang="en">Submit</span>", maar er gebeurt niets.
 
 ```html
 <!-- Fout: zichtbaar "Submit", aria-label "Verzenden" -->
@@ -151,22 +151,11 @@ Als de zichtbare tekst van een element deels uit CSS `::before` of `::after` con
 <button>Verwijderen definitief</button>
 ```
 
-### Fout: component uit een framework met een vertaald label
-
-Als je een UI-framework gebruikt en je zorgt niet voor de vertaling van de alt-teksten en aria-labels, wordt de toegankelijke naam automatisch ingesteld door het framework in het Engels. De zichtbare tekst in jouw interface is vertaald naar het Nederlands. De twee komen dan niet overeen.
-
-```html
-<!-- Fout: React-component met Engels aria-label, Nederlandse zichtbare tekst -->
-<DatePicker aria-label="Select date" label="Kies een datum" />
-
-<!-- Goed: dezelfde taal en tekst -->
-<DatePicker aria-label="Kies een datum" label="Kies een datum" />
-```
-
 ## Gerelateerde succescriteria
 
 - [SC 1.3.1](https://nldesignsystem.nl/wcag/1.3.1/) — Info en relaties: labels moeten programmatisch gekoppeld zijn aan hun formulierveld.
 - [SC 4.1.2](https://nldesignsystem.nl/wcag/4.1.2/) — Naam, rol, waarde: elk interactief element moet een toegankelijke naam hebben.
+- [SC 1.1.1](https://nldesignsystem.nl/wcag/1.1.1/) - Niet-tekstuele content.
 
 ## Hoe te testen
 
