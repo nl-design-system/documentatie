@@ -41,15 +41,11 @@ corepack enable
 pnpm -v
 ```
 
-Daarnaast staat de minimumversie van pnpm in `package.json` onder `engines.pnpm`.
-Op dit moment is de minimumversie van pnpm {getMinimumPnpmVersion()}.
-Deze versie bevat een aantal veiligheidsfeatures met betrekking tot [minimum release age](https://pnpm.io/settings#minimumreleaseage).
+Je vindt de pnpm-minimumversie in `package.json` onder `engines.pnpm`. De minimumversie is nu {getMinimumPnpmVersion()}. Deze versie beschermt je beter via de [minimumleeftijd van een release](https://pnpm.io/settings#minimumreleaseage).
 
 ## pnpm upgraden
 
-Ook voor upgraden gebruik je Corepack.
-Gebruik altijd de `corepack` CLI om de versie in `package.json` te upgraden zodat de hash wordt toegevoegd aan de versie.
-Dit is een beveiligingsmaatregel om te verifiëren dat exact dezelfde pnpm-binary wordt gebruikt op elke machine.
+Gebruik ook voor het upgraden Corepack. Upgrade de versie in `package.json` altijd via de `corepack` CLI. Zo voegt Corepack een hash toe aan de versie. Dit is een extra beveiligingsmaatregel, waarmee je controleert of elke machine exact dezelfde pnpm-binary gebruikt.
 
 ```sh
 # upgraden naar laatste versie in major range

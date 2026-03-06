@@ -159,15 +159,13 @@ De componenten, zoals deze vanuit de bibliotheek worden gepubliceerd, worden alt
 
 #### 3.2.4 Sub-componenten
 
-Soms zijn componenten opgesplitst in [sub-componenten](#3-3-sub-componenten). Deze sub-componenten krijger een kortere naam, zodat lagen beter leesbaar blijven.
+Sommige componenten bestaan uit [sub-componenten](#3-3-sub-componenten). Geef deze een korte naam. Zo blijven de lagen leesbaar. Schrijf sub-componenten in 'kebab-case'. Gebruik twee underscores voor de naam. Laat de naam van de hoofdcomponent weg. Zo blijven ze verborgen in de bibliotheek. Ook sluit de naamgeving aan bij de BEM-methode uit de code.
 
-Sub-componenten worden altijd geschreven in 'kebab-case', met 2 underscores voor de naam van het element. De naam van de component wordt weggelaten.
+Bijvoorbeeld:
 
-Hierdoor blijven sub-componenten verborgen bij het gebruik van de bibliotheek en sluit de naamgeving aan bij de BEM-conventie, die ook in code wordt toegepast. Bijvoorbeeld:
-
-- `.denhaag-contact-timeline__step-header` wordt `__step-header`
-- `.denhaag-contact-timeline__step` wordt `__step`
-- `.utrecht-accordion__button` wordt `__button`
+- `__step-header` (in plaats van `.denhaag-contact-timeline__step-header`)
+- `__step` (in plaats van `.denhaag-contact-timeline__step`)
+- `__button` (in plaats van `.utrecht-accordion__button`)
 
 ### 3.3 Sub-componenten
 
@@ -350,7 +348,7 @@ Annotatie stickers kunnen in templates worden gebruikt om aanvullende informatie
 
 ### 3.9 Zelf componenten maken
 
-Soms ontbreekt de component die je nodig hebt in de bibliotheken. Ontwikkel deze in dat geval volgens de NL Design System architectuur.
+Ontbreekt de component die je nodig hebt? Ontwikkel deze dan volgens de NL Design System-architectuur.
 
 [Bekijk hoe je als designer een component kunt maken in Figma](/handboek/designer/zelf-componenten-maken/)
 

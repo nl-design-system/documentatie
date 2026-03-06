@@ -67,9 +67,9 @@ Bij elke belangrijke wijziging schrijf je een korte uitleg voor gebruikers: dat 
 
 De changelog is verdeeld in drie categorieën:
 
-- **`patch`**: een versie met updates die je veilig kan installeren.
-- **`minor`**: een versie die nieuwe mogelijkheden heeft, die je later misschien wil gebruiken.
-- **`major`**: een versie waar je zelf ook wijzigingen voor moet doen, als jij het onderdeel gebruikt dat is aangepast.
+- **`patch`**: een veilige update zonder nieuwe functies.
+- **`minor`**: een versie met nieuwe mogelijkheden die de huidige werking niet verstoren.
+- **`major`**: een versie met wijzigingen die jouw eigen code kunnen breken. Je moet zelf aanpassingen doen.
 
 Bij een major update beschrijf je:
 
@@ -79,7 +79,7 @@ Bij een major update beschrijf je:
 
 ## Lege changesets
 
-Soms is een lege changeset nodig, bijvoorbeeld om een release af te dwingen zonder daadwerkelijke wijzigingen in de code.
+Soms is een lege changeset nodig. Hiermee dwing je een release af zonder codewijzigingen.
 
 ## Maak een changeset met een script
 

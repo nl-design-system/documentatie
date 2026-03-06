@@ -19,13 +19,13 @@ Design tokens kunnen allerlei ontwerpkeuzes bevatten: kleuren, lettergroottes, a
 
 ### Algemeen
 
-Meestal begint een inventarisatie bij de kleuren. Bij een bestaande site kan dat bijvoorbeeld door individuele kleuren met de developer tools te inspecteren. Met een tool als [Project Wallace](https://www.projectwallace.com/) kun je in één keer de kleuren (en meer) uit een pagina in een overzicht krijgen.
+Inventariseer eerst de kleuren. Inspecteer kleuren met developer tools of gebruik een tool zoals [Project Wallace](https://www.projectwallace.com/). Hiermee krijg je direct een overzicht van alle kleuren op een pagina.
 
-Dat hoeft niet altijd één op één. Soms valt dan op dat sommige kleuren wel erg dicht bij elkaar liggen, dan kan bijvoorbeeld de meest voorkomende gekozen worden en de rest afgerond worden, de afwijking is dan vast eerder een foutje dan een keuze.
+Soms liggen kleuren erg dicht bij elkaar. Kies dan de meest voorkomende kleur en rond de rest af. Vaak is een kleine afwijking een foutje en geen bewuste keuze.
 
-Het kan ook zijn dat er duidelijk meerdere varianten zijn van één kleur, bijvoorbeeld drie tinten rood. Je kunt tokens noemen hoe je wilt, het is vaak handig om er iets van een systeem in aan te brengen. Soms kan dat uit een huisstijlgids worden overgenomen. Als er geen bestaand systeem is in de namen, kun je ook de kleurwaarde naar [HSL](https://hslpicker.com) converteren en dan de lightness gebruiken (de “L” uit “HSL”), zodat je bv met `rood-30`, `rood-50` en `rood-70`. Rond gerust af op hele getallen.
+Bestaat een kleur uit meerdere varianten, zoals drie tinten rood? Geef dan systematisch namen. Gebruik hiervoor een huisstijlgids of kies voor de HSL-methode. Converteer de kleurwaarde naar [HSL](https://hslpicker.com) en gebruik de lightness (de L). Zo ontstaan namen als `rood-30` en `rood-50`. Rond getallen altijd af naar boven of beneden.
 
-De kleuren zetten we uiteindelijk in een JSON-bestand (in het [Design Tokens Format](https://tr.designtokens.org/format/)):
+Zet de kleuren tot slot in een JSON-bestand volgens het [Design Tokens Format](https://tr.designtokens.org/format/):
 
 ```json title="colors.tokens.json"
 {

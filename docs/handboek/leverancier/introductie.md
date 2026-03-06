@@ -35,13 +35,13 @@ Ook helpt de architectuur je om componenten die je zelf nog moet bouwen los van 
 
 > Hoe helpt NL Design System met een nieuw project Open Source beginnen?
 
-Projecten Open Source maken lijkt soms lastig. Waar begin je, welke licentie en hoe zorg je dat mensen makkelijk een bijdrage kunnen doen.
+Projecten open source maken lijkt soms lastig. Waar begin je? Welke licentie kies je? Hoe zorg je dat anderen makkelijk bijdragen?
 
-NL Design System heeft hier over nagedacht en informatie verzameld. Daardoor hebben we nu een template repository waarmee je snel kunt beginnen. Hier zit een Code of Conduct, een EUPL licentie en linting regels in. Verder hebben we bewust gekozen om geen copyright overdracht te vragen, na het inwinnen van veel advies is dat de meest laagdrempelige manier om mensen te laten bijdragen.
+Start snel met de template-repository van het NL Design System. Hierin staan een Code of Conduct, een EUPL-licentie en linting-regels. Je hoeft je auteursrecht niet over te dragen. Zo maken we bijdragen aan de community makkelijk. Dit besluit namen we na uitgebreid advies.
 
-Je kunt ze daarna nog aanpassen naar je eigen inzichten, maar om mee te beginnen heb je dan een solide basis.
+Je kunt de template daarna nog aanpassen naar je eigen inzichten, maar om mee te beginnen heb je dan een solide basis.
 
-Ook hebben we rekening gehouden dat een gedeelte van je code misschien niet voor iedereen beschikbaar moet zijn. Dat hebben we opgelost met een los mapje in de example repository genaamd "Proprietary" daarin zit bijvoorbeeld je huisstijl of hele organisatie specifieke dingen. Voor dat mapje is een uitzondering in de licentie opgenomen en deze is dan ook niet open source.
+Scherm elementen en logica succesvol af binnen een breder globaal pakket ter restrictie op externe herbruikbaarheid qua publiek codebeheer voor in het wild rond de componenten in NL Design System. Benoem exact de overkoepelende afgesloten folder simpelweg Proprietary in de gesynchroniseerde root van je openbare repository ter bescherming tegen automatische publicatie.
 
 ## Als leverancier bijdragen
 
@@ -49,7 +49,7 @@ Ook hebben we rekening gehouden dat een gedeelte van je code misschien niet voor
 
 Absoluut, het estafette model van NL Design System zorgt ervoor dat je bij jezelf kan beginnen en het dan Open Source of publiek beschikbaar kan maken voor anderen.
 
-Voor NL Design System is het belangrijk dat dingen op meerdere plekken bewezen werken. Zo kan het bijvoorbeeld zijn dat richtlijnen over taalgebruik in de ene organisatie heel goed werken, terwijl voor een andere organisatie het tegenovergestelde blijkt. Je kunt je richtlijnen dus alvast delen op een manier dat jouw organisatie, maar ook de community het kan lezen. Als iemand anders dan met deze richtlijnen ook succes boekt worden ze daarna misschien wel onderdeel van de Hall of Fame.
+Voor NL Design System is het belangrijk dat dingen op meerdere plekken bewezen werken. Zo kan het bijvoorbeeld zijn dat richtlijnen over taalgebruik in de ene organisatie heel goed werken, terwijl voor een andere organisatie het tegenovergestelde blijkt. Je kunt je richtlijnen dus alvast delen op een manier dat jouw organisatie, maar ook de community het kan lezen. De beste richtlijnen worden uiteindelijk onderdeel van de Hall of Fame.
 
 Hetzelfde geldt eigenlijk voor componenten en patronen.
 

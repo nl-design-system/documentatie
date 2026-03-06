@@ -1,6 +1,6 @@
 # Design tokens volgorde
 
-Voor documentatie schrijven we design tokens soms als geheel uit en presenteren we ze als lijst. Om het scannen van zo'n lijst gemakkelijk te maken houden we een volgorde aan. Voor deze volgorde maken we gebruik van de [BEM methodologie](https://getbem.com/).
+Schrijf design tokens uit als een lijst. Houd hierbij een vaste volgorde aan. Zo scan je de lijst makkelijk. Gebruik voor de volgorde de [BEM-methode](https://getbem.com/).
 
 1. Block: naam van de component, of naam van een common concept.
 2. Element: kleiner onderdeel van een component, bijvoorbeeld `icon` of `label`. Niet alle componenten hebben dit.

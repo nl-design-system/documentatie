@@ -4,7 +4,7 @@ Voor veel componenten hebben we de namen al vastgelegd. Bij nieuwe componenten g
 
 ## 'Component as link' en 'Component as button'
 
-Er zijn een aantal componenten die zich gedragen als een button of link. Denk bijvoorbeeld aan een 'Avatar'. Soms is dit component niet interactief, enkel decoratief. Soms gedraagt dit component zich als een 'link', waardoor men bijvoorbeeld naar een detailpagina wordt geleid. Soms gedraagt dit component zich als een 'button', waardoor men bijvoorbeeld een menu kan openen. Om voor dit soort componenten design tokens aan te maken hanteren we de naamgeving [Component] as [button/link].
+Verschillende componenten gedragen zich specifiek als een button of link. De term 'Avatar' illustreert dit proces duidelijk. Vaak fungeert de component louter ter illustratie. Verder leidt de component bezoekers met link-gedrag direct af naar detailpagina's. Richt als derde in dat de component menu navigaties vlot opent. Verwerk hiervoor een structuur uitgeschreven als `[Component] as [button/link]` per specifieke set design tokens.
 
 **Component**
 

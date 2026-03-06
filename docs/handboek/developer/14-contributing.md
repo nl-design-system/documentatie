@@ -18,11 +18,10 @@ keywords:
 # Tips voor het bijdragen aan componenten
 
 :::warning[Waarschuwing]
-De codevoorbeelden zijn bewust vereenvoudigd om één concept tegelijk te tonen. Neem de codefragmenten niet letterlijk over.
-Kijk voor meer complete voorbeelden naar de broncode van bestaande componenten.
+De codevoorbeelden zijn eenvoudig. Ze tonen steeds één concept. Neem de code niet letterlijk over. Bekijk de broncode van bestaande componenten voor complete voorbeelden.
 :::
 
-Op deze pagina wordt een aantal tips gegeven, zodat je componenten beter kunnen aansluiten op de wensen en best-practices van andere developers. De tips bevatten soms framework-specifieke informatie.
+Deze tips helpen je componenten beter aan te sluiten bij andere developers. Soms bevatten de tips informatie voor een specifiek framework.
 
 ## Ontwikkel componenten met uitbreidbaarheid in gedachten
 
@@ -56,7 +55,7 @@ export const MyComponent = ({
 }: PropsWithChildren<MyComponentProps>) => <div>{children}</div>;
 ```
 
-Voor andere parameters is het gebruik van `ReactNode` misschien niet zo voor de hand liggend, omdat je misschien geneigd bent te beginnen met `string`. Bijvoorbeeld:
+Voor andere parameters gebruik je vaak `string`. Toch is `ReactNode` soms een betere keuze. Bijvoorbeeld:
 
 ```jsx
 import type { PropsWithChildren } from "react";

@@ -221,7 +221,7 @@ Dan kun je de volgende `tokens.json` meeleveren:
 }
 ```
 
-We gebruiken op dit moment de volgende extensions:
+Dit zijn de extensies in gebruik:
 
 - `nl.nldesignsystem.css-property-syntax`: een string of array met [CSS syntax descriptors](https://developer.mozilla.org/en-US/docs/Web/.CSS/@property/syntax). We gebruiken deze waarde om een handige design token editor te genereren, en om [`@property` definities](https://developer.mozilla.org/en-US/docs/Web/CSS/@property) te genereren voor CSS.
 - `nl.nldesignsystem.figma-implementation`: een handmatige check die we doen om te kijken of de design token ook in Figma werkt. Voor sommige CSS properties is het niet mogelijk om in CSS een werkende implementatie te maken.
