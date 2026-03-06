@@ -366,8 +366,6 @@ const sidebars: SidebarsConfig = {
             },
             { type: 'doc', id: 'community/events/mijn-services-check-in' },
             { type: 'doc', id: 'community/events/rijkshuisstijl-community-open-hour' },
-            { type: 'doc', id: 'community/events/rijkshuisstijl-community-refinement' },
-            { type: 'doc', id: 'community/events/rijkshuisstijl-community-sprint-planning' },
             { type: 'doc', id: 'community/events/design-open-dag' },
             { type: 'doc', id: 'community/events/estafettemodeldag' },
           ],
