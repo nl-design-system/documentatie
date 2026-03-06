@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-handboek/developer/conventies/versionering/changesets" data-has-hydrated="false">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="Docusaurus v3.9.2" />
+  <title data-rh="true">Nieuwe versies uitbrengen met Changesets · NL Design System</title>
+  <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
+  <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+  <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/handboek/developer/changeset-conventie/" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" name="docusaurus_locale" content="nl" />
+  <meta data-rh="true" name="docsearch:language" content="nl" />
+  <meta data-rh="true" name="docusaurus_version" content="current" />
+  <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" name="docsearch:version" content="current" />
+  <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" property="og:title" content="Nieuwe versies uitbrengen met Changesets · NL Design System" />
+  <meta data-rh="true" name="description" content="Inzicht in versiebeheer en hoe je semantische versionering (SemVer) toepast voor stabiele releases." />
+  <meta data-rh="true" property="og:description" content="Inzicht in versiebeheer en hoe je semantische versionering (SemVer) toepast voor stabiele releases." />
+  <meta data-rh="true" name="keywords" content="developer,aan de slag,componenten,versionering,semver,changesets" />
+  <link data-rh="true" rel="icon" href="/favicon.svg" />
+  <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/handboek/developer/changeset-conventie/" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/developer/changeset-conventie/" hreflang="nl-NL" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/developer/changeset-conventie/" hreflang="x-default" />
+  <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
+  <script data-rh="true" type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     { "@type": "ListItem", "position": 1, "name": "Handboek", "item": "https://nldesignsystem.nl/handboek" },
+     { "@type": "ListItem", "position": 2, "name": "Voor developers", "item": "https://nldesignsystem.nl/handboek/developer/introductie" },
+     { "@type": "ListItem", "position": 3, "name": "Conventies", "item": "https://nldesignsystem.nl/handboek/developer/conventies/" },
+     { "@type": "ListItem", "position": 4, "name": "Versionering conventie", "item": "https://nldesignsystem.nl/handboek/developer/conventies/versionering/" },
+     { "@type": "ListItem", "position": 5, "name": "Changesets", "item": "https://nldesignsystem.nl/handboek/developer/changeset-conventie/" }
+    ]
+   }
+  </script>
+  <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="NL Design System RSS Feed" />
+  <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
+
+  <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
+  <link rel="stylesheet" href="/assets/css/styles.7327fd2c.css" />
+  <script src="/assets/js/runtime~main.9fe53342.js" defer="defer"></script>
+  <script src="/assets/js/main.1766165b.js" defer="defer"></script>
+ </head>
+ <body class="navigation-with-keyboard">
+  <svg style="display: none">
+   <defs>
+    <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z" /></symbol>
+   </defs>
+  </svg>
+  <script>
+   (document.documentElement.setAttribute('data-theme', 'light'),
+    document.documentElement.setAttribute('data-theme-choice', 'light'),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })());
+  </script>
+  <div id="__docusaurus">
+   <div class="utrecht-page-layout ma-theme">
+    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_cAw_" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top navbarHideable_pA0f">
+     <div class="navbar__inner">
+      <div class="theme-layout-navbar-left navbar__items">
+       <a class="navbar__brand" href="/"
+        ><div class="navbar__logo"><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--light_LkwR" /><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--dark_tUww" /></div>
+        <b class="navbar__title text--truncate"></b></a
+       ><a aria-current="page" class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item navbar__link--active" href="/handboek/">Handboek</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/richtlijnen/">Richtlijnen</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/componenten/">Componenten</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/voorbeelden/">Voorbeelden</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/community/">Community</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/project/">Project</a>
+      </div>
+      <div class="theme-layout-navbar-right navbar__items navbar__items--right">
+       <div class="navbarSearchContainer_f6Ff">
+        <div class="DocSearch-Trigger">
+         <button type="button" class="DocSearch DocSearch-Button" aria-label="Zoeken (Command+K)">
+          <span class="DocSearch-Button-Container"
+           ><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Zoeken</span></span
+          ><span class="DocSearch-Button-Keys"></span>
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div role="presentation" class="navbar-sidebar__backdrop"></div>
+    </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper__Za8">
+     <div class="docsWrapper_tP7r">
+      <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_UKXV" type="button"></button>
+      <div class="docRoot_OXsM">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_DT74">
+        <div class="sidebarViewport_sDE8">
+         <div class="sidebar_Opk5 sidebarWithHideableNavbar_Z8sa">
+          <a tabindex="-1" class="sidebarLogo_WKlN" href="/"><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--light_LkwR" /><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--dark_tUww" /><b></b></a>
+          <nav aria-label="Docs zijbalk" class="menu thin-scrollbar menu_f2k6">
+           <ul class="theme-doc-sidebar-menu menu__list">
+            <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item sidebar__main-category">
+             <div class="menu__list-item-collapsible">
+              <a class="categoryLink_zrGg menu__link menu__link--active" href="/handboek/"><span title="Handboek" class="categoryLinkLabel_z34k">Handboek</span></a>
+             </div>
+             <ul class="menu__list">
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/introductie/"><span title="Introductie" class="linkLabel_dHA3">Introductie</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/estafettemodel/"><span title="Estafettemodel" class="linkLabel_dHA3">Estafettemodel</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/componenten-vinden/"><span title="Componenten vinden" class="linkLabel_dHA3">Componenten vinden</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/estafettemodel/componenten/definition-of-done/"><span title="Definition of Done" class="categoryLinkLabel_z34k">Definition of Done</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Definition of Done&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/huisstijl-vastleggen/overzicht/"><span title="Huisstijl vastleggen" class="categoryLinkLabel_z34k">Huisstijl vastleggen</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Huisstijl vastleggen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/designer/introductie/"><span title="Voor designers" class="categoryLinkLabel_z34k">Voor designers</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Voor designers&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist menu__link--active" tabindex="0" href="/handboek/developer/introductie/"><span title="Voor developers" class="categoryLinkLabel_z34k">Voor developers</span></a
+                ><button aria-label="Categorie zijbalk inklappen &#x27;Voor developers&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button>
+               </div>
+               <ul class="menu__list">
+                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
+                 <a class="menu__link" tabindex="0" href="/handboek/developer/introductie/"><span title="Introductie" class="linkLabel_dHA3">Introductie</span></a>
+                </li>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/aan-de-slag/"><span title="Aan de slag" class="categoryLinkLabel_z34k">Aan de slag</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Aan de slag&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                </li>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist menu__link--active" tabindex="0" href="/handboek/developer/conventies/"><span title="Conventies" class="categoryLinkLabel_z34k">Conventies</span></a
+                  ><button aria-label="Categorie zijbalk inklappen &#x27;Conventies&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                 <ul class="menu__list">
+                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item">
+                   <a class="menu__link" tabindex="0" href="/handboek/developer/design-token-conventie/"><span title="Design Token conventie" class="linkLabel_dHA3">Design Token conventie</span></a>
+                  </li>
+                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item">
+                   <a class="menu__link" tabindex="0" href="/handboek/developer/css-conventie/"><span title="CSS conventie" class="linkLabel_dHA3">CSS conventie</span></a>
+                  </li>
+                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item">
+                   <a class="menu__link" tabindex="0" href="/handboek/developer/api-conventie/"><span title="API conventie" class="linkLabel_dHA3">API conventie</span></a>
+                  </li>
+                  <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item">
+                   <div class="menu__list-item-collapsible">
+                    <a class="categoryLink_zrGg menu__link menu__link--sublist menu__link--active" tabindex="0" href="/handboek/developer/conventies/versionering/"><span title="Versionering conventie" class="categoryLinkLabel_z34k">Versionering conventie</span></a
+                    ><button aria-label="Categorie zijbalk inklappen &#x27;Versionering conventie&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button>
+                   </div>
+                   <ul class="menu__list">
+                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item">
+                     <a class="menu__link" tabindex="0" href="/handboek/developer/semver-conventie/"><span title="Semantic Versioning" class="linkLabel_dHA3">Semantic Versioning</span></a>
+                    </li>
+                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item">
+                     <a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/handboek/developer/changeset-conventie/"><span title="Changesets" class="linkLabel_dHA3">Changesets</span></a>
+                    </li>
+                    <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-5 menu__list-item">
+                     <a class="menu__link" tabindex="0" href="/handboek/developer/deprecation-conventie/"><span title="Deprecation" class="linkLabel_dHA3">Deprecation</span></a>
+                    </li>
+                   </ul>
+                  </li>
+                 </ul>
+                </li>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/design-tokens/"><span title="Design Tokens" class="categoryLinkLabel_z34k">Design Tokens</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Design Tokens&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                </li>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/infrastructuur/"><span title="Infrastructuur" class="categoryLinkLabel_z34k">Infrastructuur</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Infrastructuur&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                </li>
+               </ul>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/organisatie/overzicht/"><span title="Voor organisaties" class="categoryLinkLabel_z34k">Voor organisaties</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Voor organisaties&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/leverancier/introductie/"><span title="Voor leveranciers" class="linkLabel_dHA3">Voor leveranciers</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/manager/introductie/"><span title="Voor managers" class="linkLabel_dHA3">Voor managers</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/baseline/"><span title="Baseline" class="categoryLinkLabel_z34k">Baseline</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Baseline&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/woordenlijst/"><span title="Woordenlijst" class="linkLabel_dHA3">Woordenlijst</span></a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </nav>
+          <button type="button" title="Zijbalk inklappen" aria-label="Zijbalk inklappen" class="button button--secondary button--outline collapseSidebarButton_djY9">
+           <svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_avcA">
+            <g fill="#7a7a7a">
+             <path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path>
+             <path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path>
+            </g>
+           </svg>
+          </button>
+         </div>
+        </div>
+       </aside>
+       <main class="docMainContainer_o6bJ">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col docItemCol_pMYj">
+           <div class="docItemContainer_aQSU">
+            <article>
+             <nav class="theme-doc-breadcrumbs breadcrumbsContainer_Bqeg" aria-label="Broodkruimels">
+              <ul class="breadcrumbs">
+               <li class="breadcrumbs__item">
+                <a aria-label="Homepagina" class="breadcrumbs__link" href="/"
+                 ><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_nXN1"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg
+                ></a>
+               </li>
+               <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/handboek/"><span>Handboek</span></a>
+               </li>
+               <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/handboek/developer/introductie/"><span>Voor developers</span></a>
+               </li>
+               <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/handboek/developer/conventies/"><span>Conventies</span></a>
+               </li>
+               <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/handboek/developer/conventies/versionering/"><span>Versionering conventie</span></a>
+               </li>
+               <li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Changesets</span></li>
+              </ul>
+             </nav>
+             <div class="tocCollapsible_RuM8 theme-doc-toc-mobile tocMobile_zSi9"><button type="button" class="clean-btn tocCollapsibleButton_XjgU">Op deze pagina</button></div>
+             <div class="theme-doc-markdown markdown">
+              <header><h1 id="nieuwe-versies-uitbrengen-met-changesets" class="utrecht-heading-1">Nieuwe versies uitbrengen met Changesets</h1></header>
+              <p>Als je als developer een pull request maakt voor een verbetering of een bugfix, wil je dat de nieuwe versie ergens gebruikt kan worden. Bij NL Design System kun je met één druk op de knop een nieuwe versie uitbrengen. Maar voordat dit automatisch kan gebeuren, moet je eerst een changelog toevoegen aan je pull request.</p>
+              <p>We gebruiken <a href="https://semver.org" class="utrecht-link utrecht-link--html-a">semver</a> om betekenis te geven aan wijzigingen en <a href="https://github.com/changesets" class="utrecht-link utrecht-link--html-a">changesets</a> om versies aan te passen.</p>
+              <p>Al onze code leeft in mono repositories, waarbij packages onderling van elkaar afhankelijk kunnen zijn.</p>
+              <p>Je zult dus goed moeten nagaan wat een breaking change in een package betekent voor een afhankelijk package en hoe dit zich vertaalt naar versieverhogingen. Changesets helpen hierbij door automatisch de impact op versienummers te bepalen en inzichtelijk te maken welke wijzigingen een nieuwe release vereisen.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><strong>Maak kleine pull requests.</strong> Kleine wijzigingen zijn makkelijker te begrijpen, te reviewen en te testen. Dit verkleint de kans op onvoorziene breaking changes en maakt het eenvoudiger om de juiste changesets toe te voegen.</li>
+               <li><strong>Voeg een changeset toe om de impact van wijzigingen vast te leggen.</strong> Dit kan in dezelfde commit of in een nieuwe commit.</li>
+              </ul>
+              <h2 id="wanneer-heb-je-een-changeset-nodig" class="utrecht-heading-2">Wanneer heb je een changeset nodig?</h2>
+              <p>Je hebt een changeset nodig bij elke wijziging die wordt gepubliceerd in een package, zoals:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Bugfixes.</li>
+               <li>Nieuwe functionaliteiten.</li>
+               <li>Breaking changes.</li>
+              </ul>
+              <p>Je hebt <strong>geen changeset nodig</strong> voor wijzigingen die niet worden gepubliceerd, zoals updates in documentatie of aanpassingen in de build-configuratie.</p>
+              <p>Changesets zorgen voor changelogs. Deze helpen andere ontwikkelaars om te begrijpen welke wijzigingen zijn doorgevoerd. Houd dit einddoel in gedachten bij het schrijven van een changeset.</p>
+              <h2 id="naam-van-een-changeset" class="utrecht-heading-2">Naam van een changeset</h2>
+              <p>De naam van een changeset maakt niet uit en wordt automatisch gegenereerd. Let er echter op dat deze niet ongepast is.</p>
+              <h2 id="kies-een-semantische-versie" class="utrecht-heading-2">Kies een semantische versie</h2>
+              <p>Bij NL Design System gaat het versienummer kiezen geheel automatisch, volgens de regels van &quot;<a href="https://semver.org" class="utrecht-link utrecht-link--html-a">semantic versioning</a>&quot;. Je moet per onderdeel van het design system kiezen in welke groep de wijzing valt: patch, minor of major.</p>
+              <p>Gebruik de volgende richtlijnen bij het kiezen van een versie:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                <strong><code class="utrecht-code">patch</code></strong> → Voor bugfixes.
+               </li>
+               <li>
+                <strong><code class="utrecht-code">minor</code></strong> → Voor nieuwe functionaliteiten.
+               </li>
+               <li>
+                <strong><code class="utrecht-code">major</code></strong> → Voor breaking changes.
+               </li>
+              </ul>
+              <p>Voor meer informatie over het kiezen van de juiste versie, zie <a href="./12-changes.md" class="utrecht-link utrecht-link--html-a">SemVer: Major, Minor of Patch?</a>.</p>
+              <h2 id="schrijf-een-changelog" class="utrecht-heading-2">Schrijf een changelog</h2>
+              <p>Bij elke belangrijke wijziging schrijf je een korte uitleg voor gebruikers: dat is een &quot;changeset&quot;. Dit helpt hen om te bepalen wat ze met de nieuwe versie moeten doen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>&quot;Kan ik veilig de update installeren, en verder niets doen?&quot;</li>
+               <li>&quot;Zijn er interessante nieuwe mogelijkheden waar ik meer over wil leren?&quot;</li>
+               <li>&quot;Moet ik mijn website aanpassen, voordat ik de nieuwe versie kan gebruiken?&quot;</li>
+              </ul>
+              <p>De changelog is verdeeld in drie categorieën:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                <strong><code class="utrecht-code">patch</code></strong
+                >: een versie met updates die je veilig kan installeren.
+               </li>
+               <li>
+                <strong><code class="utrecht-code">minor</code></strong
+                >: een versie die nieuwe mogelijkheden heeft, die je later misschien wil gebruiken.
+               </li>
+               <li>
+                <strong><code class="utrecht-code">major</code></strong
+                >: een versie waar je zelf ook wijzigingen voor moet doen, als jij het onderdeel gebruikt dat is aangepast.
+               </li>
+              </ul>
+              <p>Bij een major update beschrijf je:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Leg uit <strong>wat</strong> er is veranderd.</li>
+               <li>Motiveer <strong>waarom</strong> de wijziging nodig was.</li>
+               <li>Geef aan <strong>hoe</strong> gebruikers hun code moeten aanpassen.</li>
+              </ul>
+              <h2 id="lege-changesets" class="utrecht-heading-2">Lege changesets</h2>
+              <p>Soms is een lege changeset nodig, bijvoorbeeld om een release af te dwingen zonder daadwerkelijke wijzigingen in de code.</p>
+              <h2 id="maak-een-changeset-met-een-script" class="utrecht-heading-2">Maak een changeset met een script</h2>
+              <p>In <code class="utrecht-code">package.json</code> staat een script om changesets toe te voegen:</p>
+              <span hidden="" id=":Rtq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rtq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;scripts&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;changeset&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;changeset add&quot;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <p>Een nieuwe changeset maak je met:</p>
+              <span hidden="" id=":Rvq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rvq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm run changeset</span>
+</span></code></pre>
+              <p>Dit opent een interactieve prompt waarin je de wijzigingen kunt specificeren.</p>
+              <span hidden="" id=":R11q7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R11q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Which packages would you like to include? …</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">◯ changed packages</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  ◯ @scope/een-package</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">◯ unchanged packages</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  ◯ @scope/een-ander-package</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  ◯ etc...</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Selecteer met <kbd>spatie</kbd> welke packages er veranderd zijn.</li>
+              </ul>
+              <span hidden="" id=":R13q7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R13q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Which packages would you like to include? …</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">◉ changed packages</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  ◉ @scope/een-package</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">◯ unchanged packages</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  ◯ @scope/een-ander-package</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  ◯ etc...</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Druk op <kbd>enter</kbd> om verder te gaan.</li>
+              </ul>
+              <span hidden="" id=":R15q7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R15q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Which packages would you like to include? · @scope/een-package</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Which packages should have a major bump? …</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">◯ all packages</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  ◯ @scope/een-package@1.0.0</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Geef met <kbd>spatie</kbd> de packages aan die een major versie ophoging moeten krijgen of druk op <kbd>enter</kbd> om verder te gaan als er geen packages zijn die een major versie ophoging nodig hebben</li>
+              </ul>
+              <blockquote>
+               <p>Tip: Als je tijdens het maken van een changeset een fout maakt kun je het process afbreken met <kbd>Ctrl-C</kbd> en gewoon opnieuw beginnen.</p>
+              </blockquote>
+              <p>Een <strong>lege changeset</strong> maak je met:</p>
+              <span hidden="" id=":R19q7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R19q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm run changeset --empty</span>
+</span></code></pre>
+              <h2 id="handmatig-een-changeset-toevoegen" class="utrecht-heading-2">Handmatig een changeset toevoegen</h2>
+              <p>Maak een nieuw Markdown-bestand in de map <code class="utrecht-code">.changeset</code> met deze inhoud:</p>
+              <span hidden="" id=":R1cq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R1cq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span><span class="token front-matter-block"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:var(--nlds-code-block-atrule-color)">&quot;@&lt;organisatie&gt;/&lt;package-name&gt;&quot;</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token front-matter-block front-matter yaml language-yaml"> major</span><span class="token front-matter-block"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Beschrijving van de wijziging</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Voeg alle relevante packages toe tussen de eerste set <code class="utrecht-code">---</code>, elk op een nieuwe regel, tussen dubbele aanhalingstekens.</li>
+               <li>Beschrijf na de tweede set <code class="utrecht-code">---</code> welke wijzigingen zijn doorgevoerd.</li>
+              </ul>
+              <p>Voor een <strong>lege changeset</strong> gebruik je alleen:</p>
+              <span hidden="" id=":R1fq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R1fq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span><span class="token front-matter-block"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:var(--nlds-code-block-punctuation-color)">---</span>
+</span></code></pre>
+              <h2 id="changesets-publiceren" class="utrecht-heading-2">Changesets publiceren</h2>
+              <p>Na het mergen van je pull request wordt er automatisch een nieuwe pull request aangemaakt om de versie te publiceren. Je kunt deze direct mergen of wachten tot er meer wijzigingen zijn. Als de publicatie-pull request niet meteen gemerged wordt zal hij automatisch worden bijgewerkt zo lang dat nodig is. Zodra de publicatie-pull request gemerged wordt, worden de pakketten automatisch gepubliceerd naar de npm Registry.</p>
+              <h2 id="voorbeeld-changeset" class="utrecht-heading-2">Voorbeeld changeset</h2>
+              <p>Hieronder een voorbeeld waarin een nieuwe functionaliteit is toegevoegd. Dit is een minor update:</p>
+              <span hidden="" id=":R1kq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R1kq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Which packages would you like to include? · @scope/een-package</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Which packages should have a major bump? · No items were selected</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Which packages should have a minor bump? · @scope/een-package</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Please enter a summary for this change (this will be in the changelogs).</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋    (submit empty line to open external editor)</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Summary ‣Tertiary variant voor een-package component toegevoegd</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  === Summary of changesets ===</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  minor:  @scope/een-package</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Note: All dependents of these packages that will be incompatible with</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  the new version will be patch bumped when this changeset is applied.</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Is this your desired changeset? (Y/n) ‣ true</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  Changeset added! - you can now commit it</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  If you want to modify or expand on the changeset summary, you can find it here</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">🦋  info /pad/naar/lokaal/repository/.changeset/itchy-kangaroos-grab.md</span>
+</span></code></pre>
+              <p>In het voorbeeld hierboven is een changeset met een willekeurige naam <code class="utrecht-code">itchy-kangaroos-grab.md</code> toegevoegd aan de <code class="utrecht-code">.changeset</code> folder in de root van de repository. Deze file moet toegevoegd worden aan de pull request die voor deze wijziging gemaakt wordt.</p>
+              <h2 id="best-practices-voor-changesets" class="utrecht-heading-2">Best practices voor changesets</h2>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Maak er een gewoonte van om elke codewijziging te beschrijven in een changeset.</li>
+               <li>Zorg dat elke pull request met wijzigingen in een package een changeset bevat. Dit kan in dezelfde commit of in een nieuwe commit.</li>
+               <li>Je kunt meerdere changesets toevoegen.</li>
+               <li>Wacht niet te lang met het publiceren van changes, de pull request voor publicatie wordt anders erg groot.</li>
+              </ul>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
+               <div class="col noPrint_BL5k">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/03-conventies/06-versionering/12-changesets.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit__SPV" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_t6HD"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="docusaurus-mt-lg pagination-nav" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/developer/semver-conventie/"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Semantic Versioning</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/developer/deprecation-conventie/"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Deprecation</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_yXC1 thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#wanneer-heb-je-een-changeset-nodig" class="table-of-contents__link toc-highlight">Wanneer heb je een changeset nodig?</a></li>
+             <li><a href="#naam-van-een-changeset" class="table-of-contents__link toc-highlight">Naam van een changeset</a></li>
+             <li><a href="#kies-een-semantische-versie" class="table-of-contents__link toc-highlight">Kies een semantische versie</a></li>
+             <li><a href="#schrijf-een-changelog" class="table-of-contents__link toc-highlight">Schrijf een changelog</a></li>
+             <li><a href="#lege-changesets" class="table-of-contents__link toc-highlight">Lege changesets</a></li>
+             <li><a href="#maak-een-changeset-met-een-script" class="table-of-contents__link toc-highlight">Maak een changeset met een script</a></li>
+             <li><a href="#handmatig-een-changeset-toevoegen" class="table-of-contents__link toc-highlight">Handmatig een changeset toevoegen</a></li>
+             <li><a href="#changesets-publiceren" class="table-of-contents__link toc-highlight">Changesets publiceren</a></li>
+             <li><a href="#voorbeeld-changeset" class="table-of-contents__link toc-highlight">Voorbeeld changeset</a></li>
+             <li><a href="#best-practices-voor-changesets" class="table-of-contents__link toc-highlight">Best practices voor changesets</a></li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </main>
+      </div>
+     </div>
+    </div>
+    <footer class="theme-layout-footer footer">
+     <div class="container container-fluid">
+      <div class="footer__links text--center">
+       <div class="footer__links">
+        <a class="footer__link-item" href="/blog/">Blog</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/project/kernteam/">Contact</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/privacyverklaring/">Privacyverklaring</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/colofon/">Colofon</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/github/">GitHub</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/slack/">Slack</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/figma/">Figma</a><span class="footer__link-separator">·</span
+        ><a href="https://www.linkedin.com/company/nl-design-system/" target="_blank" rel="noopener noreferrer" class="footer__link-item"
+         >LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_ES_1"><use href="#theme-svg-external-link"></use></svg
+        ></a>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>

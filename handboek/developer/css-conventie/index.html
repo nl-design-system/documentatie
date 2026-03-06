@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-handboek/developer/conventies/css-conventie" data-has-hydrated="false">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="Docusaurus v3.9.2" />
+  <title data-rh="true">CSS conventie · NL Design System</title>
+  <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
+  <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+  <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/handboek/developer/css-conventie/" />
+  <meta data-rh="true" property="og:locale" content="nl_NL" />
+  <meta data-rh="true" name="docusaurus_locale" content="nl" />
+  <meta data-rh="true" name="docsearch:language" content="nl" />
+  <meta data-rh="true" name="docusaurus_version" content="current" />
+  <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" name="docsearch:version" content="current" />
+  <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
+  <meta data-rh="true" property="og:title" content="CSS conventie · NL Design System" />
+  <meta data-rh="true" name="description" content="Conventies voor het schrijven van CSS voor NL Design System" />
+  <meta data-rh="true" property="og:description" content="Conventies voor het schrijven van CSS voor NL Design System" />
+  <meta data-rh="true" name="keywords" content="developer,CSS,componenten" />
+  <link data-rh="true" rel="icon" href="/favicon.svg" />
+  <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/handboek/developer/css-conventie/" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/developer/css-conventie/" hreflang="nl-NL" />
+  <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/developer/css-conventie/" hreflang="x-default" />
+  <link data-rh="true" rel="preconnect" href="https://HS7BGF6EOX-dsn.algolia.net" crossorigin="anonymous" />
+  <script data-rh="true" type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     { "@type": "ListItem", "position": 1, "name": "Handboek", "item": "https://nldesignsystem.nl/handboek" },
+     { "@type": "ListItem", "position": 2, "name": "Voor developers", "item": "https://nldesignsystem.nl/handboek/developer/introductie" },
+     { "@type": "ListItem", "position": 3, "name": "Conventies", "item": "https://nldesignsystem.nl/handboek/developer/conventies/" },
+     { "@type": "ListItem", "position": 4, "name": "CSS conventie", "item": "https://nldesignsystem.nl/handboek/developer/css-conventie/" }
+    ]
+   }
+  </script>
+  <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="NL Design System RSS Feed" />
+  <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
+
+  <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
+  <link rel="stylesheet" href="/assets/css/styles.7327fd2c.css" />
+  <script src="/assets/js/runtime~main.9fe53342.js" defer="defer"></script>
+  <script src="/assets/js/main.1766165b.js" defer="defer"></script>
+ </head>
+ <body class="navigation-with-keyboard">
+  <svg style="display: none">
+   <defs>
+    <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z" /></symbol>
+   </defs>
+  </svg>
+  <script>
+   (document.documentElement.setAttribute('data-theme', 'light'),
+    document.documentElement.setAttribute('data-theme-choice', 'light'),
+    (function () {
+     try {
+      const c = new URLSearchParams(window.location.search).entries();
+      for (var [t, e] of c)
+       if (t.startsWith('docusaurus-data-')) {
+        var a = t.replace('docusaurus-data-', 'data-');
+        document.documentElement.setAttribute(a, e);
+       }
+     } catch (t) {}
+    })());
+  </script>
+  <div id="__docusaurus">
+   <div class="utrecht-page-layout ma-theme">
+    <div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_cAw_" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div>
+    <nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top navbarHideable_pA0f">
+     <div class="navbar__inner">
+      <div class="theme-layout-navbar-left navbar__items">
+       <a class="navbar__brand" href="/"
+        ><div class="navbar__logo"><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--light_LkwR" /><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--dark_tUww" /></div>
+        <b class="navbar__title text--truncate"></b></a
+       ><a aria-current="page" class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item navbar__link--active" href="/handboek/">Handboek</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/richtlijnen/">Richtlijnen</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/componenten/">Componenten</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/voorbeelden/">Voorbeelden</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/community/">Community</a><a class="navbar__item navbar__link utrecht-link utrecht-link--html-a ma-navigation-bar-item" href="/project/">Project</a>
+      </div>
+      <div class="theme-layout-navbar-right navbar__items navbar__items--right">
+       <div class="navbarSearchContainer_f6Ff">
+        <div class="DocSearch-Trigger">
+         <button type="button" class="DocSearch DocSearch-Button" aria-label="Zoeken (Command+K)">
+          <span class="DocSearch-Button-Container"
+           ><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Zoeken</span></span
+          ><span class="DocSearch-Button-Keys"></span>
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div role="presentation" class="navbar-sidebar__backdrop"></div>
+    </nav>
+    <div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper__Za8">
+     <div class="docsWrapper_tP7r">
+      <button aria-label="Scroll naar boven" class="clean-btn theme-back-to-top-button backToTopButton_UKXV" type="button"></button>
+      <div class="docRoot_OXsM">
+       <aside class="theme-doc-sidebar-container docSidebarContainer_DT74">
+        <div class="sidebarViewport_sDE8">
+         <div class="sidebar_Opk5 sidebarWithHideableNavbar_Z8sa">
+          <a tabindex="-1" class="sidebarLogo_WKlN" href="/"><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--light_LkwR" /><img src="/svg/logo-wit.svg" alt="NL Design System Logo: Link naar Homepagina" class="themedComponent_JvYm themedComponent--dark_tUww" /><b></b></a>
+          <nav aria-label="Docs zijbalk" class="menu thin-scrollbar menu_f2k6">
+           <ul class="theme-doc-sidebar-menu menu__list">
+            <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item sidebar__main-category">
+             <div class="menu__list-item-collapsible">
+              <a class="categoryLink_zrGg menu__link menu__link--active" href="/handboek/"><span title="Handboek" class="categoryLinkLabel_z34k">Handboek</span></a>
+             </div>
+             <ul class="menu__list">
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/introductie/"><span title="Introductie" class="linkLabel_dHA3">Introductie</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/estafettemodel/"><span title="Estafettemodel" class="linkLabel_dHA3">Estafettemodel</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/componenten-vinden/"><span title="Componenten vinden" class="linkLabel_dHA3">Componenten vinden</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/estafettemodel/componenten/definition-of-done/"><span title="Definition of Done" class="categoryLinkLabel_z34k">Definition of Done</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Definition of Done&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/huisstijl-vastleggen/overzicht/"><span title="Huisstijl vastleggen" class="categoryLinkLabel_z34k">Huisstijl vastleggen</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Huisstijl vastleggen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/designer/introductie/"><span title="Voor designers" class="categoryLinkLabel_z34k">Voor designers</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Voor designers&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist menu__link--active" tabindex="0" href="/handboek/developer/introductie/"><span title="Voor developers" class="categoryLinkLabel_z34k">Voor developers</span></a
+                ><button aria-label="Categorie zijbalk inklappen &#x27;Voor developers&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button>
+               </div>
+               <ul class="menu__list">
+                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
+                 <a class="menu__link" tabindex="0" href="/handboek/developer/introductie/"><span title="Introductie" class="linkLabel_dHA3">Introductie</span></a>
+                </li>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/aan-de-slag/"><span title="Aan de slag" class="categoryLinkLabel_z34k">Aan de slag</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Aan de slag&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                </li>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist menu__link--active" tabindex="0" href="/handboek/developer/conventies/"><span title="Conventies" class="categoryLinkLabel_z34k">Conventies</span></a
+                  ><button aria-label="Categorie zijbalk inklappen &#x27;Conventies&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                 <ul class="menu__list">
+                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item">
+                   <a class="menu__link" tabindex="0" href="/handboek/developer/design-token-conventie/"><span title="Design Token conventie" class="linkLabel_dHA3">Design Token conventie</span></a>
+                  </li>
+                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item">
+                   <a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/handboek/developer/css-conventie/"><span title="CSS conventie" class="linkLabel_dHA3">CSS conventie</span></a>
+                  </li>
+                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item">
+                   <a class="menu__link" tabindex="0" href="/handboek/developer/api-conventie/"><span title="API conventie" class="linkLabel_dHA3">API conventie</span></a>
+                  </li>
+                  <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed">
+                   <div class="menu__list-item-collapsible">
+                    <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/conventies/versionering/"><span title="Versionering conventie" class="categoryLinkLabel_z34k">Versionering conventie</span></a
+                    ><button aria-label="Categorie zijbalk uitklappen &#x27;Versionering conventie&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                   </div>
+                  </li>
+                 </ul>
+                </li>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/design-tokens/"><span title="Design Tokens" class="categoryLinkLabel_z34k">Design Tokens</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Design Tokens&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                </li>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/infrastructuur/"><span title="Infrastructuur" class="categoryLinkLabel_z34k">Infrastructuur</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Infrastructuur&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                </li>
+               </ul>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/organisatie/overzicht/"><span title="Voor organisaties" class="categoryLinkLabel_z34k">Voor organisaties</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Voor organisaties&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/leverancier/introductie/"><span title="Voor leveranciers" class="linkLabel_dHA3">Voor leveranciers</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/handboek/manager/introductie/"><span title="Voor managers" class="linkLabel_dHA3">Voor managers</span></a>
+              </li>
+              <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
+               <div class="menu__list-item-collapsible">
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/baseline/"><span title="Baseline" class="categoryLinkLabel_z34k">Baseline</span></a
+                ><button aria-label="Categorie zijbalk uitklappen &#x27;Baseline&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+               </div>
+              </li>
+              <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+               <a class="menu__link" tabindex="0" href="/woordenlijst/"><span title="Woordenlijst" class="linkLabel_dHA3">Woordenlijst</span></a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </nav>
+          <button type="button" title="Zijbalk inklappen" aria-label="Zijbalk inklappen" class="button button--secondary button--outline collapseSidebarButton_djY9">
+           <svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_avcA">
+            <g fill="#7a7a7a">
+             <path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path>
+             <path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path>
+            </g>
+           </svg>
+          </button>
+         </div>
+        </div>
+       </aside>
+       <main class="docMainContainer_o6bJ">
+        <div class="container padding-top--md padding-bottom--lg">
+         <div class="row">
+          <div class="col docItemCol_pMYj">
+           <div class="docItemContainer_aQSU">
+            <article>
+             <nav class="theme-doc-breadcrumbs breadcrumbsContainer_Bqeg" aria-label="Broodkruimels">
+              <ul class="breadcrumbs">
+               <li class="breadcrumbs__item">
+                <a aria-label="Homepagina" class="breadcrumbs__link" href="/"
+                 ><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_nXN1"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg
+                ></a>
+               </li>
+               <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/handboek/"><span>Handboek</span></a>
+               </li>
+               <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/handboek/developer/introductie/"><span>Voor developers</span></a>
+               </li>
+               <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/handboek/developer/conventies/"><span>Conventies</span></a>
+               </li>
+               <li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">CSS conventie</span></li>
+              </ul>
+             </nav>
+             <div class="tocCollapsible_RuM8 theme-doc-toc-mobile tocMobile_zSi9"><button type="button" class="clean-btn tocCollapsibleButton_XjgU">Op deze pagina</button></div>
+             <div class="theme-doc-markdown markdown">
+              <header><h1 id="css-conventie" class="utrecht-heading-1">CSS conventie</h1></header>
+              <p>Dit document beschrijft de conventies voor het schrijven van herbruikbare CSS voor componenten en applicaties met NL Design System. Deze zijn bedoeld voor iedereen die nieuwe componenten ontwikkelt of bijdraagt aan gedeelde CSS-bibliotheken en voor iedereen die aanvullende CSS scrhijft in een herbruikbare applicatie.</p>
+              <h2 id="huisstijl-onafhankelijk" class="utrecht-heading-2">Huisstijl onafhankelijk</h2>
+              <p>Schrijf CSS die ook werkt voor anderen. Herbruikbare CSS gebruikt geen huisstijlcode. CSS-variabelen worden gebruikt voor <em class="utrecht-emphasis utrecht-emphasis--stressed">component design tokens</em> die ingevuld kunnen worden met de huisstijl van een organisatie. Dit is van belang wanneer componenten door anderen worden gebruikt, of wanneer software door meerdere organisaties met hun eigen huisstijl wordt geïnstalleerd, zoals een CMS voor gemeenten of <a href="http://commonground.nl" class="utrecht-link utrecht-link--html-a">Common Ground</a>-software.</p>
+              <div class="nlds-guideline nlds-guideline--do" id="gebruik-component-tokens-voor-de-design-beslissingen-die-per-huisstijl-verschillen.">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Gebruik component tokens voor de design beslissingen die per huisstijl verschillen.</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R44q7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Gebruik component tokens voor de design beslissingen die per huisstijl verschillen.</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R44q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-button</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-button-background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <div class="nlds-guideline nlds-guideline--do" id="gebruik-basis-tokens-voor-de-design-beslissingen-in-een-custom.css-of-componenten-die-niet-in-het-design-system-zitten.">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Gebruik basis tokens voor de design beslissingen in een custom.css of componenten die niet in het design system zitten.</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R45q7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Gebruik basis tokens voor de design beslissingen in een custom.css of componenten die niet in het design system zitten.</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R45q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-custom-footer</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--basis-color-accent-1-inverse-bg-document</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--basis-color-accent-1-inverse-color-default</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <div class="nlds-guideline nlds-guideline--do" id="gebruik-basis-tokens-als-fallback-voor-de-design-beslissingen-in-componenten-die-nog-niet-in-de-community-zitten.">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Gebruik basis tokens als fallback voor de design beslissingen in componenten die nog niet in de community zitten.</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R46q7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Gebruik basis tokens als fallback voor de design beslissingen in componenten die nog niet in de community zitten.</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R46q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-custom-footer</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-custom-footer-background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--basis-color-accent-1-inverse-bg-document</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-custom-footer-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">,</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--basis-color-accent-1-inverse-color-default</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <div class="nlds-guideline nlds-guideline--dont" id="hardcoded-waardes-voor-design-beslissingen">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Hardcoded waardes voor design beslissingen</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R47q7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Niet doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Hardcoded waardes voor design beslissingen</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R47q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-custom-footer</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token hexcode color">#663399</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <div class="nlds-guideline nlds-guideline--dont" id="huisstijl-tokens-van-jouw-organisatie-in-de-component">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Huisstijl tokens van jouw organisatie in de component</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R48q7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Niet doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Huisstijl tokens van jouw organisatie in de component</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R48q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-custom-footer</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--purple</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <h2 id="geïsoleerde-theming" class="utrecht-heading-2">Geïsoleerde theming</h2>
+              <p>Zorg dat de CSS van een thema niet de stylesheet van anderen in de weg zit. De huisstijlcode staat voor iedere organisatie in een apart thema-bestand. Gedeelde CSS wordt aangeboden zonder side-effects. De CSS heeft pas effect op een pagina nadat een expliciete CSS-class is toegepast. Zo kan hergebruik plaatsvinden zonder onbedoelde invloed op bestaande stylesheets.</p>
+              <div class="nlds-guideline nlds-guideline--do" id="gebruik-brand-tokens-in-je-thema">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Gebruik brand tokens in je thema</p>
+                <p>Daarin verwijst de <code>component design token</code> naar de <code>brand design token</code></p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R4bq7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Gebruik brand tokens in je thema</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R4bq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/* Voorbeeld thema in CSS op basis van de Design Tokens JSON */</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-theme</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-purple</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token hexcode color">#663399</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-button-background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-purple</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <p>Dit thema-bestand kan automatisch worden gegenereerd via een <a href="https://design-tokens.github.io/community-group/format/" class="utrecht-link utrecht-link--html-a">Design Tokens JSON-bestand</a> met <a href="https://styledictionary.com" class="utrecht-link utrecht-link--html-a">Style Dictionary</a>. Elke huisstijl kan een eigen design token JSON-bestand hebben dat in meerdere projecten wordt gebruikt.</p>
+              <div class="nlds-guideline nlds-guideline--do" id="huisstijl-inladen-met-een-eigen-class-name">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Huisstijl inladen met een eigen class name</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R4dq7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Huisstijl inladen met een eigen class name</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R4dq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">html</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">utrecht-root example-theme</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">&lt;!-- </span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  Example use of Community, Candidate and custom components</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  that will be styled by the example-theme stylesheet</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">--&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">body</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">utrecht-body</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-heading nl-heading--level-1</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Example page</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h1</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">example-card-group</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">example-card</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">example-card__heading nl-heading nl-heading--level-2</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Hello</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">h2</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">        </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)"> </span><span class="token tag attr-name" style="color:var(--nlds-code-block-attr-name-color);font-style:italic">class</span><span class="token tag attr-value punctuation attr-equals" style="color:var(--nlds-code-block-punctuation-color)">=</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag attr-value" style="color:var(--nlds-code-block-attr-value-color)">nl-paragraph</span><span class="token tag attr-value punctuation" style="color:var(--nlds-code-block-punctuation-color)">&quot;</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain">Some content here</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">p</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">body</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">html</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
+</span></code></pre>
+               </div>
+              </div>
+              <div class="nlds-guideline nlds-guideline--dont" id="huisstijl-inladen-in-de-:root">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Huisstijl inladen in de :root</p>
+                <p>Zo kunnen andere stylesheets niet makkelijk worden ingeladen zonder mogelijke side-effects</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R4eq7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Niet doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Huisstijl inladen in de :root</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R4eq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector pseudo-class" style="color:var(--nlds-code-block-selector-color);font-style:italic">:root</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-link-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token color">rebeccapurple</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <h2 id="herleidbare-prefix" class="utrecht-heading-2">Herleidbare prefix</h2>
+              <p>Zorg dat de prefix van de componenten en tokens herkenbaar en herleidbaar is. De componenten bij NL Design System worden bijgedragen door diverse organisaties. Om te herleiden waar een component vandaan komt en met wie je kan samenwerken om een verbetering door te voeren houden we de prefix van die organisatie aan. Ook in de applicatie van een organisatie met een andere naam. Het kan dus voorkomen dat een thema bestaat uit design tokens van diverse organisaties.</p>
+              <div class="nlds-guideline nlds-guideline--do" id="gebruik-de-prefix-van-de-organisatie-die-de-componenten-beheert">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Gebruik de prefix van de organisatie die de componenten beheert</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R4hq7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Gebruik de prefix van de organisatie die de componenten beheert</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R4hq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/* Voorbeeld CSS Output van de Design Tokens JSON met diverse componenten */</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"> theme</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--ams-breadcrumb-link-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token color">blue</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--nl-link-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token color">blue</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--utrecht-button-background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token color">rebeccapurple</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <div class="nlds-guideline nlds-guideline--do" id="eigen-prefix-voor-nieuwe-componenten">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Eigen prefix voor nieuwe componenten</p>
+                <p>Alle namen in gedeelde CSS beginnen met een prefix die uniek is voor de organisatie. De prefix bestaat uitsluitend uit letters en cijfers, zonder koppelstreepjes of andere tekens.</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R4iq7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Eigen prefix voor nieuwe componenten</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R4iq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-video</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">border-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-video-border-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">border-radius</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-video-border-radius</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">border-width</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-video-border-width</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <div class="nlds-guideline nlds-guideline--do" id="eigen-prefix-voor-specifieke-component-tokens-bij-gebruik-van-andere-componenten">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Eigen prefix voor specifieke component tokens bij gebruik van andere componenten</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R4jq7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Eigen prefix voor specifieke component tokens bij gebruik van andere componenten</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R4jq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-video__button</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--nl-button-background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-video-button-background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--nl-button-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-video-button-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <div class="nlds-guideline nlds-guideline--dont" id="eigen-css-om-de-tokens-of-css-van-een-andere-prefix-te-voorzien">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Eigen CSS om de tokens of CSS van een andere prefix te voorzien</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R4kq7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Niet doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Eigen CSS om de tokens of CSS van een andere prefix te voorzien</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R4kq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/* Voorbeeld CSS Output van de Design Tokens JSON met diverse componenten */</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example</span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic"> theme</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-breadcrumb-link-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token color">blue</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-link-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token color">blue</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-button-background-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token color">rebeccapurple</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/* Voorbeeld pseudo CSS om onnodig eigen componenten logica te onderhouden */</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-breadcrumb</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--ams-breadcrumb-link-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token variable" style="color:var(--nlds-code-block-variable-color)">--example-breadcrumb-link-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token atrule rule" style="color:var(--nlds-code-block-atrule-color)">@include</span><span class="token atrule" style="color:var(--nlds-code-block-atrule-color)"> ams-breadcrumb</span><span class="token atrule punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <h2 id="herbruikbare-mixins" class="utrecht-heading-2">Herbruikbare mixins</h2>
+              <p>Schrijf SCSS mixins voor gebruik met andere CSS selectors. CSS-onderdelen worden aangeboden als <a href="https://sass-lang.com/documentation/at-rules/mixin" class="utrecht-link utrecht-link--html-a">SCSS-mixin</a>, zodat andere projecten dezelfde stijlen kunnen toepassen op afwijkende selectors.</p>
+              <p><code class="utrecht-code">_mixin.scss</code>:</p>
+              <span hidden="" id=":Roq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Roq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@mixin</span><span class="token plain"> </span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">example-link </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token function" style="color:var(--nlds-code-block-function-color)">var</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">(</span><span class="token plain">--example-link-color</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">)</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <p><code class="utrecht-code">index.scss</code>:</p>
+              <span hidden="" id=":Rqq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rqq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;./mixin&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-link </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@include</span><span class="token plain"> example-link</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <p>Een project dat geen invloed heeft op de HTML past de mixin toe op alle links:</p>
+              <span hidden="" id=":Rsq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rsq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@example/css-components/link&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">a:link </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@include</span><span class="token plain"> example-link</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <p>Een project met Shadow DOM:</p>
+              <span hidden="" id=":Ruq7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Ruq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@example/css-components/link&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">:host </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@include</span><span class="token plain"> example-link</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <p>Een project dat de mixin tijdelijk gebruikt tijdens een migratie van oude class names:</p>
+              <span hidden="" id=":R10q7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R10q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@import</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;@example/css-components/link&quot;</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">.old-link </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@include</span><span class="token plain"> example-link</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+              <h2 id="robuuste-reset" class="utrecht-heading-2">Robuuste reset</h2>
+              <p>Schrijf robuuste CSS die niet afhankelijk is van een algemene <code class="utrecht-code">reset.css</code>. Wanneer een HTML-element zoals <code class="utrecht-code">&lt;ul&gt;</code> wordt gebruikt voor een navigatiecomponent, worden browser-standaardstijlen — zoals <code class="utrecht-code">padding-inline-start</code> in <a href="https://hg.mozilla.org/mozilla-central/file/tip/layout/style/res/html.css" class="utrecht-link utrecht-link--html-a">Firefox</a> of <a href="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css" class="utrecht-link utrecht-link--html-a">Safari</a> — expliciet gereset.</p>
+              <div class="nlds-guideline nlds-guideline--do" id="reset-css-in-de-component-zelf">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Reset CSS in de component zelf</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R53q7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Reset CSS in de component zelf</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R53q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">ul</span><span class="token selector class" style="color:var(--nlds-code-block-selector-color);font-style:italic">.example-nav</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">padding-inline-start</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/* …other styles… */</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <p>
+               Ook als het project een <a href="https://meyerweb.com/eric/tools/css/reset/" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">reset.css</code>-variant</a> gebruikt, blijft deze reset aanwezig in de componentcode zodat het ook werkt voor projecten zonder die <code class="utrecht-code">reset.css</code>.
+              </p>
+              <div class="nlds-guideline nlds-guideline--dont" id="globale-css-reset">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 10l.01 0"></path>
+                  <path d="M15 10l.01 0"></path>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path></svg
+                 ><span class="nlds-guideline__title">Niet doen</span>
+                </p>
+                <p class="utrecht-paragraph">Globale CSS reset</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R55q7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Niet doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Globale CSS reset</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R55q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">*</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">padding</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+              <h3 id="reset-in-een-scss-mixin" class="utrecht-heading-3">Reset in een SCSS mixin</h3>
+              <p>Wanneer een property is ingesteld op de <em class="utrecht-emphasis utrecht-emphasis--stressed">initial value</em> (zoals <code class="utrecht-code">0</code> voor padding), kan dit eruitzien als overbodige code. Als reset-code in een losse mixin staat, ontbreekt de context dat het bedoeld is als browser-reset.</p>
+              <div class="nlds-guideline nlds-guideline--do" id="reset-in-een-mixin">
+               <div class="nlds-guideline__description">
+                <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy nlds-guideline__icon" aria-hidden="true" role="presentation">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 9l.01 0"></path>
+                  <path d="M15 9l.01 0"></path>
+                  <path d="M8 13a4 4 0 1 0 8 0h-8"></path></svg
+                 ><span class="nlds-guideline__title">Doen</span>
+                </p>
+                <p class="utrecht-paragraph">Reset in een mixin</p>
+                <p>Om te voorkomen dat de code later als dode code wordt verwijderd, staat reset-code in een eigen mixin</p>
+               </div>
+               <div class="nlds-guideline__example">
+                <span hidden="" id=":R58q7dalbah:"
+                 >codevoorbeeld
+                 <!-- -->“Doen”<!-- -->
+                 <!-- -->:
+                 <!-- -->Reset in een mixin</span
+                >
+                <pre class="utrecht-code-block" tabindex="0" role="region" aria-labelledby=":R58q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@mixin</span><span class="token plain"> </span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">reset-ul </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">padding-inline-start</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> </span><span class="token number" style="color:var(--nlds-code-block-number-color)">0</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/* …other styles… */</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@mixin</span><span class="token plain"> </span><span class="token selector" style="color:var(--nlds-code-block-selector-color);font-style:italic">example-nav </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token keyword" style="color:var(--nlds-code-block-keyword-color)">@include</span><span class="token plain"> reset-ul</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">;</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/* …other styles… */</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
+</span></code></pre>
+               </div>
+              </div>
+             </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
+               <div class="col noPrint_BL5k">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/03-conventies/03-css-conventie.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit__SPV" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_t6HD"></div>
+              </div>
+             </footer>
+            </article>
+            <nav class="docusaurus-mt-lg pagination-nav" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/developer/design-token-conventie/"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Design Token conventie</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/developer/api-conventie/"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">API conventie</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_yXC1 thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#huisstijl-onafhankelijk" class="table-of-contents__link toc-highlight">Huisstijl onafhankelijk</a></li>
+             <li><a href="#geïsoleerde-theming" class="table-of-contents__link toc-highlight">Geïsoleerde theming</a></li>
+             <li><a href="#herleidbare-prefix" class="table-of-contents__link toc-highlight">Herleidbare prefix</a></li>
+             <li><a href="#herbruikbare-mixins" class="table-of-contents__link toc-highlight">Herbruikbare mixins</a></li>
+             <li><a href="#robuuste-reset" class="table-of-contents__link toc-highlight">Robuuste reset</a></li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </main>
+      </div>
+     </div>
+    </div>
+    <footer class="theme-layout-footer footer">
+     <div class="container container-fluid">
+      <div class="footer__links text--center">
+       <div class="footer__links">
+        <a class="footer__link-item" href="/blog/">Blog</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/project/kernteam/">Contact</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/privacyverklaring/">Privacyverklaring</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/colofon/">Colofon</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/github/">GitHub</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/slack/">Slack</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/figma/">Figma</a><span class="footer__link-separator">·</span
+        ><a href="https://www.linkedin.com/company/nl-design-system/" target="_blank" rel="noopener noreferrer" class="footer__link-item"
+         >LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_ES_1"><use href="#theme-svg-external-link"></use></svg
+        ></a>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>

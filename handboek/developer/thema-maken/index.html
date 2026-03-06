@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-handboek/developer/thema-maken" data-has-hydrated="false">
+<html lang="nl-NL" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-handboek/developer/design-tokens/thema-maken" data-has-hydrated="false">
  <head>
   <meta charset="UTF-8" />
   <meta name="generator" content="Docusaurus v3.9.2" />
-  <title data-rh="true">Thema maken · NL Design System</title>
+  <title data-rh="true">Design tokens vastleggen · NL Design System</title>
   <meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1" />
   <meta data-rh="true" name="twitter:card" content="summary_large_image" />
   <meta data-rh="true" property="og:url" content="https://nldesignsystem.nl/handboek/developer/thema-maken/" />
@@ -14,9 +14,9 @@
   <meta data-rh="true" name="docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
-  <meta data-rh="true" property="og:title" content="Thema maken · NL Design System" />
-  <meta data-rh="true" name="description" content="NL Design System thema maken" />
-  <meta data-rh="true" property="og:description" content="NL Design System thema maken" />
+  <meta data-rh="true" property="og:title" content="Design tokens vastleggen · NL Design System" />
+  <meta data-rh="true" name="description" content="NL Design System Design tokens vastleggen" />
+  <meta data-rh="true" property="og:description" content="NL Design System Design tokens vastleggen" />
   <link data-rh="true" rel="icon" href="/favicon.svg" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/handboek/developer/thema-maken/" />
   <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/handboek/developer/thema-maken/" hreflang="nl-NL" />
@@ -28,8 +28,9 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
      { "@type": "ListItem", "position": 1, "name": "Handboek", "item": "https://nldesignsystem.nl/handboek" },
-     { "@type": "ListItem", "position": 2, "name": "Voor developers", "item": "https://nldesignsystem.nl/handboek/developer/overzicht" },
-     { "@type": "ListItem", "position": 3, "name": "Thema maken", "item": "https://nldesignsystem.nl/handboek/developer/thema-maken" }
+     { "@type": "ListItem", "position": 2, "name": "Voor developers", "item": "https://nldesignsystem.nl/handboek/developer/introductie" },
+     { "@type": "ListItem", "position": 3, "name": "Design Tokens", "item": "https://nldesignsystem.nl/handboek/developer/design-tokens/" },
+     { "@type": "ListItem", "position": 4, "name": "Design tokens vastleggen", "item": "https://nldesignsystem.nl/handboek/developer/thema-maken/" }
     ]
    }
   </script>
@@ -37,9 +38,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.458ae586.css" />
-  <script src="/assets/js/runtime~main.65e8c1d1.js" defer="defer"></script>
-  <script src="/assets/js/main.0774773e.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.7327fd2c.css" />
+  <script src="/assets/js/runtime~main.9fe53342.js" defer="defer"></script>
+  <script src="/assets/js/main.1766165b.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -108,7 +109,7 @@
                <a class="menu__link" tabindex="0" href="/handboek/estafettemodel/"><span title="Estafettemodel" class="linkLabel_dHA3">Estafettemodel</span></a>
               </li>
               <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
-               <a class="menu__link" tabindex="0" href="/handboek/componenten-kiezen/"><span title="Componenten kiezen" class="linkLabel_dHA3">Componenten kiezen</span></a>
+               <a class="menu__link" tabindex="0" href="/handboek/componenten-vinden/"><span title="Componenten vinden" class="linkLabel_dHA3">Componenten vinden</span></a>
               </li>
               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
                <div class="menu__list-item-collapsible">
@@ -124,90 +125,47 @@
               </li>
               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed">
                <div class="menu__list-item-collapsible">
-                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/designer/overzicht/"><span title="Voor designers" class="categoryLinkLabel_z34k">Voor designers</span></a
+                <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/designer/introductie/"><span title="Voor designers" class="categoryLinkLabel_z34k">Voor designers</span></a
                 ><button aria-label="Categorie zijbalk uitklappen &#x27;Voor designers&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
                </div>
               </li>
               <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
                <div class="menu__list-item-collapsible">
-                <a class="categoryLink_zrGg menu__link menu__link--sublist menu__link--active" tabindex="0" href="/handboek/developer/overzicht/"><span title="Voor developers" class="categoryLinkLabel_z34k">Voor developers</span></a
+                <a class="categoryLink_zrGg menu__link menu__link--sublist menu__link--active" tabindex="0" href="/handboek/developer/introductie/"><span title="Voor developers" class="categoryLinkLabel_z34k">Voor developers</span></a
                 ><button aria-label="Categorie zijbalk inklappen &#x27;Voor developers&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button>
                </div>
                <ul class="menu__list">
                 <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
                  <a class="menu__link" tabindex="0" href="/handboek/developer/introductie/"><span title="Introductie" class="linkLabel_dHA3">Introductie</span></a>
                 </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/architectuur/"><span title="Architectuur" class="linkLabel_dHA3">Architectuur</span></a>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/aan-de-slag/"><span title="Aan de slag" class="categoryLinkLabel_z34k">Aan de slag</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Aan de slag&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
                 </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/handboek/developer/thema-maken/"><span title="Thema maken" class="linkLabel_dHA3">Thema maken</span></a>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/conventies/"><span title="Conventies" class="categoryLinkLabel_z34k">Conventies</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Conventies&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
                 </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/component-inzetten/"><span title="Component inzetten" class="linkLabel_dHA3">Component inzetten</span></a>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist menu__link--active" tabindex="0" href="/handboek/developer/design-tokens/"><span title="Design Tokens" class="categoryLinkLabel_z34k">Design Tokens</span></a
+                  ><button aria-label="Categorie zijbalk inklappen &#x27;Design Tokens&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button>
+                 </div>
+                 <ul class="menu__list">
+                  <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item">
+                   <a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/handboek/developer/thema-maken/"><span title="Design tokens vastleggen" class="linkLabel_dHA3">Design tokens vastleggen</span></a>
+                  </li>
+                 </ul>
                 </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/component-uitbreiden/"><span title="Component uitbreiden" class="linkLabel_dHA3">Component uitbreiden</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/componenten-maken/"><span title="Componenten maken" class="linkLabel_dHA3">Componenten maken</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/meewerken-als-developer/"><span title="Meewerken" class="linkLabel_dHA3">Meewerken</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/zonder-front-end-framework/"><span title="NL Design System gebruiken zonder front-end framework" class="linkLabel_dHA3">NL Design System gebruiken zonder front-end framework</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/herbruikbare-css/"><span title="Herbruikbare CSS schrijven" class="linkLabel_dHA3">Herbruikbare CSS schrijven</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/changesets/"><span title="Versionering beheren" class="linkLabel_dHA3">Versionering beheren</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/changes/"><span title="SemVer: Major, Minor of Patch?" class="linkLabel_dHA3">SemVer: Major, Minor of Patch?</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/deprecation/"><span title="Verouderde versies (deprecation)" class="linkLabel_dHA3">Verouderde versies (deprecation)</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/bijdragen/"><span title="Tips voor het bijdragen aan componenten" class="linkLabel_dHA3">Tips voor het bijdragen aan componenten</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/component-testen/"><span title="Componenten testen" class="linkLabel_dHA3">Componenten testen</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/node/"><span title="Werken met Node.js" class="linkLabel_dHA3">Werken met Node.js</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/pnpm/"><span title="Werken met pnpm" class="linkLabel_dHA3">Werken met pnpm</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/api-conventie/"><span title="API conventie" class="linkLabel_dHA3">API conventie</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/cdn-migratie/"><span title="Migreer van een CDN naar pnpm" class="linkLabel_dHA3">Migreer van een CDN naar pnpm</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/cdn/"><span title="CDN gebruiken" class="linkLabel_dHA3">CDN gebruiken</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/design-token-conventie/"><span title="Design Token conventie" class="linkLabel_dHA3">Design Token conventie</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/handboek/developer/github-actions/"><span title="GitHub Actions" class="linkLabel_dHA3">GitHub Actions</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/github/"><span title="GitHub" class="linkLabel_dHA3">GitHub</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/linting-en-code-formatting/"><span title="Linting en code formatting" class="linkLabel_dHA3">Linting en code formatting</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/pnpm-audit/"><span title="Security audit voor npm" class="linkLabel_dHA3">Security audit voor npm</span></a>
-                </li>
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item">
-                 <a class="menu__link" tabindex="0" href="/vercel/"><span title="Vercel" class="linkLabel_dHA3">Vercel</span></a>
+                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed">
+                 <div class="menu__list-item-collapsible">
+                  <a class="categoryLink_zrGg menu__link menu__link--sublist" tabindex="0" href="/handboek/developer/infrastructuur/"><span title="Infrastructuur" class="categoryLinkLabel_z34k">Infrastructuur</span></a
+                  ><button aria-label="Categorie zijbalk uitklappen &#x27;Infrastructuur&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button>
+                 </div>
                 </li>
                </ul>
               </li>
@@ -264,28 +222,30 @@
                 <a class="breadcrumbs__link" href="/handboek/"><span>Handboek</span></a>
                </li>
                <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="/handboek/developer/overzicht/"><span>Voor developers</span></a>
+                <a class="breadcrumbs__link" href="/handboek/developer/introductie/"><span>Voor developers</span></a>
                </li>
-               <li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Thema maken</span></li>
+               <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/handboek/developer/design-tokens/"><span>Design Tokens</span></a>
+               </li>
+               <li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Design tokens vastleggen</span></li>
               </ul>
              </nav>
              <div class="tocCollapsible_RuM8 theme-doc-toc-mobile tocMobile_zSi9"><button type="button" class="clean-btn tocCollapsibleButton_XjgU">Op deze pagina</button></div>
              <div class="theme-doc-markdown markdown">
-              <header><h1 id="nl-design-system-thema-maken" class="utrecht-heading-1">NL Design System thema maken</h1></header>
+              <header><h1 id="design-tokens-vastleggen" class="utrecht-heading-1">Design tokens vastleggen</h1></header>
               <p>Zoals beschreven in <a href="/handboek/developer/aan-de-slag/#ontwikkel-een-thema-voor-jouw-organisatie" class="utrecht-link utrecht-link--html-a">Ontwikkel een thema voor jouw organisatie</a>: thema&#x27;s zijn technisch JSON-bestanden waarin design tokens zijn gedefinieerd. Met tooling maken we ze beschikbaar als custom properties in CSS.</p>
-              <h2 id="design-tokens-vastleggen" class="utrecht-heading-2">Design tokens vastleggen</h2>
               <p>Design tokens kunnen allerlei ontwerpkeuzes bevatten: kleuren, lettergroottes, afstanden en meer. Om een thema te maken vanuit een bestaande website en/of huisstijl maken we vaak een inventarisatie, met als einddoel één of meer JSON-bestanden.</p>
-              <h3 id="algemeen" class="utrecht-heading-3">Algemeen</h3>
+              <h2 id="algemeen" class="utrecht-heading-2">Algemeen</h2>
               <p>Meestal begint een inventarisatie bij de kleuren. Bij een bestaande site kan dat bijvoorbeeld door individuele kleuren met de developer tools te inspecteren. Met een tool als <a href="https://www.projectwallace.com/" class="utrecht-link utrecht-link--html-a">Project Wallace</a> kun je in één keer de kleuren (en meer) uit een pagina in een overzicht krijgen.</p>
               <p>Dat hoeft niet altijd één op één. Soms valt dan op dat sommige kleuren wel erg dicht bij elkaar liggen, dan kan bijvoorbeeld de meest voorkomende gekozen worden en de rest afgerond worden, de afwijking is dan vast eerder een foutje dan een keuze.</p>
               <p>Het kan ook zijn dat er duidelijk meerdere varianten zijn van één kleur, bijvoorbeeld drie tinten rood. Je kunt tokens noemen hoe je wilt, het is vaak handig om er iets van een systeem in aan te brengen. Soms kan dat uit een huisstijlgids worden overgenomen. Als er geen bestaand systeem is in de namen, kun je ook de kleurwaarde naar <a href="https://hslpicker.com" class="utrecht-link utrecht-link--html-a">HSL</a> converteren en dan de lightness gebruiken (de “L” uit “HSL”), zodat je bv met <code class="utrecht-code">rood-30</code>, <code class="utrecht-code">rood-50</code> en <code class="utrecht-code">rood-70</code>. Rond gerust af op hele getallen.</p>
               <p>De kleuren zetten we uiteindelijk in een JSON-bestand (in het <a href="https://tr.designtokens.org/format/" class="utrecht-link utrecht-link--html-a">Design Tokens Format</a>):</p>
-              <span hidden="" id=":R9q7dalbah:"
+              <span hidden="" id=":R8q7dalbah:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R8q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;organisatie&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;color&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;red&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
@@ -298,12 +258,12 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
               <p>Dat bestand kan bijvoorbeeld zo in de filestructuur staan:</p>
-              <span hidden="" id=":Rbq7dalbah:"
+              <span hidden="" id=":Raq7dalbah:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rbq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">├─ src</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Raq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">├─ src</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  ├─ brand</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    ├─ organisatie</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      ├─ colors.tokens.json</span>
@@ -314,14 +274,14 @@
                <li>spacing</li>
                <li>focus styles</li>
               </ul>
-              <h3 id="componenten-en-variabelen" class="utrecht-heading-3">Componenten en variabelen</h3>
+              <h2 id="componenten-en-variabelen" class="utrecht-heading-2">Componenten en variabelen</h2>
               <p>Als de algemene tokens zijn gemaakt, kan er ook per component een bestand met tokens worden toegevoegd, waarin ook naar de andere beschikbare tokens kan worden verwezen, zelfs in andere organisaties. In het volgende voorbeeld wordt bijvoorbeeld in de tokens voor de <code class="utrecht-code">link</code> component van <code class="utrecht-code">organisatie</code> verwezen naar een kleur rood van <code class="utrecht-code">andereOrganisatie</code>, met de verwijzing in curly brackets:</p>
-              <span hidden="" id=":Rgq7dalbah:"
+              <span hidden="" id=":Rfq7dalbah:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rgq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rfq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;organisatie&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">    </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;link&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">      </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;color&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">{</span><span class="token plain"> </span><span class="token property" style="color:var(--nlds-code-block-property-color)">&quot;value&quot;</span><span class="token operator" style="color:var(--nlds-code-block-operator-color)">:</span><span class="token plain"> </span><span class="token string" style="color:var(--nlds-code-block-string-color)">&quot;{andereOrganisatie.color.red.45}&quot;</span><span class="token plain"> </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
@@ -329,21 +289,21 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span><span class="token plain"></span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
-              <h3 id="meer-over-design-tokens-vastleggen" class="utrecht-heading-3">Meer over design tokens vastleggen</h3>
-              <link rel="preload" href="https://i.ytimg.com/vi/jSvjnU7oY5Y/maxresdefault.jpg" as="image" /><noscript
+              <h2 id="meer-over-design-tokens-vastleggen" class="utrecht-heading-2">Meer over design tokens vastleggen</h2>
+              <link rel="preload" href="https://i.ytimg.com/vi/jSvjnU7oY5Y/hqdefault.jpg" as="image" /><noscript
                ><a href="https://www.youtube.com/watch?v=jSvjnU7oY5Y" aria-label="Watch Meer over design tokens vastleggen on YouTube">Watch &quot;<!-- -->Meer over design tokens vastleggen<!-- -->&quot; on YouTube</a></noscript
               >
-              <article class="yt-lite" data-title="Meer over design tokens vastleggen" role="img" aria-label="Meer over design tokens vastleggen - YouTube video preview" style="background-image: url(https://i.ytimg.com/vi/jSvjnU7oY5Y/maxresdefault.jpg); --aspect-ratio: 56.25%">
+              <article class="yt-lite" data-title="Meer over design tokens vastleggen" role="img" aria-label="Meer over design tokens vastleggen - YouTube video preview" style="background-image: url(https://i.ytimg.com/vi/jSvjnU7oY5Y/hqdefault.jpg); --aspect-ratio: 56.25%">
                <button type="button" class="lty-playbtn" aria-label="Bekijk Meer over design tokens vastleggen" tabindex="0"><span class="lty-visually-hidden">Bekijk</span></button>
               </article>
               <h2 id="design-tokens-inzetten" class="utrecht-heading-2">Design tokens inzetten</h2>
               <p>Zoals genoemd kunnen deze JSON-bestanden in allerlei toepassingen worden gebruikt. Bij NL Design System zorgt <a href="https://styledictionary.com" class="utrecht-link utrecht-link--html-a">Style Dictionary</a> dat de tokens bruikbaar worden in CSS, door een <code class="utrecht-code">design-tokens.css</code> te genereren. Die output kan er bijvoorbeeld zo uit zien:</p>
-              <span hidden="" id=":Rlq7dalbah:"
+              <span hidden="" id=":Rkq7dalbah:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rlq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/**</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rkq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">/**</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  * Do not edit directly</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  * Generated at […]</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token comment" style="color:var(--nlds-code-block-comment-color);font-style:italic">  */</span><span class="token plain"></span>
@@ -355,19 +315,18 @@
 </span></code></pre>
               <p>In dit bestand worden alle tokens die in het theme van deze organisatie bestaan vanuit verschillende plekken bij elkaar gezet, als custom properties. Nu kunnen ze in de CSS van deze organisatie worden gebruikt, op pagina&#x27;s waar de <code class="utrecht-code">organisatie-theme</code> classname op de body staat. Er is ook een output setting waar de variabelen op <code class="utrecht-code">:root</code> worden geplaatst, voor als de HTML niet makkelijk aanpasbaar is.</p>
               <p><a href="https://github.com/amzn/style-dictionary/tree/main/examples/advanced/referencing_aliasing" class="utrecht-link utrecht-link--html-a">Referencing/aliasing</a> is de feature in Style Dictionary die zorgt dat tokens als variabele kunnen worden ingezet, zoals we in het vorige voorbeeld deden met tokens uit een andere organisatie. In de NL Design System configuratie worden alle tokenbestanden meegenomen (met <code class="utrecht-code">**/*</code>). Ook worden de gebruikte verwijzingen opgenomen als verwijzingen naar CSS, wat extra handig is in het geval van updates.</p>
-              <h3 id="werken-met-design-tokens" class="utrecht-heading-3">Werken met design tokens</h3>
               <p>Meer weten over werken met design tokens? In onderstaande video vertelt Yolijn meer over uitbreiden van bestaande design tokens met jouw designkeuzes.</p>
-              <link rel="preload" href="https://i.ytimg.com/vi/-guAi7Lvl6g/maxresdefault.jpg" as="image" /><noscript
+              <link rel="preload" href="https://i.ytimg.com/vi/-guAi7Lvl6g/hqdefault.jpg" as="image" /><noscript
                ><a href="https://www.youtube.com/watch?v=-guAi7Lvl6g" aria-label="Watch Werken met design tokens on YouTube">Watch &quot;<!-- -->Werken met design tokens<!-- -->&quot; on YouTube</a></noscript
               >
-              <article class="yt-lite" data-title="Werken met design tokens" role="img" aria-label="Werken met design tokens - YouTube video preview" style="background-image: url(https://i.ytimg.com/vi/-guAi7Lvl6g/maxresdefault.jpg); --aspect-ratio: 56.25%">
+              <article class="yt-lite" data-title="Werken met design tokens" role="img" aria-label="Werken met design tokens - YouTube video preview" style="background-image: url(https://i.ytimg.com/vi/-guAi7Lvl6g/hqdefault.jpg); --aspect-ratio: 56.25%">
                <button type="button" class="lty-playbtn" aria-label="Bekijk Werken met design tokens" tabindex="0"><span class="lty-visually-hidden">Bekijk</span></button>
               </article>
              </div>
              <footer class="theme-doc-footer docusaurus-mt-lg">
               <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
                <div class="col noPrint_BL5k">
-                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/03-thema-maken.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/04-design-tokens/02-thema-maken.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
                  ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit__SPV" aria-hidden="true">
                   <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
                  >Bewerk deze pagina</a
@@ -378,12 +337,12 @@
              </footer>
             </article>
             <nav class="docusaurus-mt-lg pagination-nav" aria-label="Documentatie pagina">
-             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/developer/architectuur/"
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/developer/design-tokens/"
               ><div class="pagination-nav__sublabel">Vorige</div>
-              <div class="pagination-nav__label">Architectuur</div></a
-             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/developer/component-inzetten/"
+              <div class="pagination-nav__label">Design tokens</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/developer/infrastructuur/"
               ><div class="pagination-nav__sublabel">Volgende</div>
-              <div class="pagination-nav__label">Component inzetten</div></a
+              <div class="pagination-nav__label">Infrastructuur</div></a
              >
             </nav>
            </div>
@@ -391,7 +350,9 @@
           <div class="col col--3">
            <div class="tableOfContents_yXC1 thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
-             <li><a href="#design-tokens-vastleggen" class="table-of-contents__link toc-highlight">Design tokens vastleggen</a></li>
+             <li><a href="#algemeen" class="table-of-contents__link toc-highlight">Algemeen</a></li>
+             <li><a href="#componenten-en-variabelen" class="table-of-contents__link toc-highlight">Componenten en variabelen</a></li>
+             <li><a href="#meer-over-design-tokens-vastleggen" class="table-of-contents__link toc-highlight">Meer over design tokens vastleggen</a></li>
              <li><a href="#design-tokens-inzetten" class="table-of-contents__link toc-highlight">Design tokens inzetten</a></li>
             </ul>
            </div>
