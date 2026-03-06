@@ -1,0 +1,256 @@
+---
+title: Aanpak voor WCAG-pagina's
+hide_title: true
+sidebar_label: WCAG-pagina's
+sidebar_position: 2
+pagination_label: WCAG-pagina's
+description: Aanpak voor WCAG-pagina's op de NL Design System website.
+keywords:
+  - kernteam
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Aanpak voor WCAG-pagina's
+
+{/* Er is een GitHub Project board om bij of de WCAG-pagina's al voldoen aan de schrijfwijzer: */}
+{/* https://github.com/orgs/nl-design-system/projects/95 */}
+
+<Paragraph lead>
+  De WCAG-pagina's zijn een praktische aanvulling op de abstracte teksten in de officiële specificatie. Mensen die voor
+  het eerst een toegankelijke website maken leren waar ze op moeten letten. De WCAG-pagina's zijn ook een startpunt voor
+  NL Design System oplossingen voor problemen die zijn gevonden bij een toegankelijkheidsonderzoek.
+</Paragraph>
+
+De hoofdstructuur van de pagina moet begrijpelijk zijn voor een breed publiek. De introductie, de koppenstructuur en eerste zin na koppen zijn daarom minder technisch. Via de hoofdstructuur moet het voor iedereen mogelijk zijn om relevante informatie te vinden. Daarmee kan iedereen oplossingen doorsturen naar een collega of een klant.
+
+Developers, designers en contentmakers willen concrete oplossingen vinden. Bijvoorbeeld nadat ze een toegankelijkheidsonderzoek hebben gelezen, of juist voordat ze aan de slag gaan met een nieuw project. Ga er vanuit dat de lezer samenwerkt met mensen die toegankelijke websites maken, maar dat niet elke lezer voorkennis heeft van toegankelijkheid, hulpmiddelen voor toegankelijkheid of web development.
+
+De WCAG-pagina's zijn geen vervanging voor WCAG. Het is een manier om kennis te maken met WCAG en oplossingen te vinden er om er aan te voldoen. De pagina's geven daarom algemene uitleg en staan verder vol met links naar de componenten, richtlijnen, patronen, templates en hulpmiddelen van NL Design System.
+
+## Schrijfwijze van WCAG-pagina's
+
+### Herkenbaar
+
+Noem eerst voorbeelden en situaties die het meest waarschijnlijk zijn dat de lezer ze herkent. Situaties de vaak voorkomen of heel concrete voorbeelden zijn het meest herkenbaar.
+
+Wel:
+
+> Zorg ervoor dat een bezoeker het scherm niet fysiek hoeft te draaien om een webpagina goed te kunnen gebruiken.
+
+Deze beschrijving is heel herkenbaar, want de meeste mensen draaien een smartphone afhankelijk van de situatie, of kennen mensen die dat doen.
+
+Niet:
+
+> Een website is staand en liggend gelijkwaardig.
+
+"Gelijkwaardig" is een asbtract woord, in plaats van een concrete situatie. "Staand" en "liggend" is jargon, en mogelijk verwarrend in plaats van herkenbaar.
+
+### Relevant
+
+Bedenk of onderzoek welke situaties heel relevant zijn voor een zo breed mogelijke doelgroep, zodat zowel developers, designers als contentmakers goed kunnen inschatten of het WCAG-succescriterium voor hen relevant is.
+
+Wel: noem de situaties die verreweg het meest voorkomen in toegankelijkheidsrapporten.
+
+> 1.1.1 Niet-tekstuele content:
+> [Noem afbeeldingen met een tekstbeschrijving, iconen die extra betekenis geven.]
+
+Niet: heel abstract beschrijven dat het over afbeeldingen gaat, en wel CAPTCHA's als uitzondering noemen.
+
+> 1.1.1 Niet-tekstuele content:
+>
+> Alle niet-tekstuele content die aan de gebruiker wordt gepresenteerd, heeft een tekstalternatief dat een gelijkwaardig doel dient.
+> Uitzonderingen zijn bedieningselementen en invoer met een toegankelijke naam, op tijd gebaseerde media, een test of oefening, content bedoeld om een specifieke zintuiglijke ervaring te creëren, CAPTCHA's en niet-tekstuele content bedoeld voor decoratie.
+
+### Uitzonderingen niet te prominent
+
+Begin niet met uitzonderingen en uitzonderlijke situaties, die belangrijk voelen omdat WCAG ze noemt. Als ze in de praktijk niet gelijk voor verwarring zorgen, dan kun je de uitzonderingen verderop bespreken. Of je kunt expliciet noemen dat het belangrijk is om de de WCAG specificatie te lezen voor details en uitzonderingen.
+
+### Niet abstract
+
+Vermijd abstracte beschrijvingen, want daarvoor is WCAG zelf al bedoeld. We verwijzen op elke pagina door naar de WCAG specificatie, voor de precieze details.
+
+### Scanbare tekst
+
+Begin elke alinea met de kern van het verhaal, en ga daarna verder in op details. Zo houd je de aandacht vast, en kunnen lezers het voor hun relevante tekstonderdeel vinden.
+
+### Begrijpelijk
+
+De tekst moet begrijpelijk zijn voor lezers die geen voorkennis hebben van WCAG, maar die wel gewend zijn aan websites te werken.
+
+### Testbaar
+
+Vraag niet om iets te testen, zonder informatie hoe. Bijvoorbeeld niet alleen: "Controleer de HTML-structuur" of "test met CSS uitgeschakeld". Maak duidelijk hoe je de beoordeling kan doen, bijvoorbeeld met een link naar een externe website.
+
+### Geen voorkennis
+
+Wees concreet, en ga niet uit van voorkennis. Bijvoorbeeld niet: "denk aan componenten zoals Link en Button" of "denk aan screenreadergebruikers", omdat de betekenis verschilt van persoon tot persoon.
+
+### Geen onduidelijkheid
+
+Gebruik geen twijfelwoorden, waarmee je voorkomt dat de lezer actie onderneemt. Bijvoorbeeld: “meestal”, “vaak” of “soms”. Het is belangrijk om concreet uit te leggen wat de uitzonderingen zijn, die worden bedoeld.
+
+### Geen frustratie
+
+Laat in de documentatie geen frustratie blijken over problemen die vaak voorkomen. Of dat hoe makkelijk de oplossing is, niet in verhouding staat tot de impact op gebruikers. Of dat designers, developers en product owners soms hun eigen belang meer prioriteit geven dan toegankelijkheid.
+
+### Jargon
+
+Vermijd jargon in de koppen, de introductiealinea en het begin van teksten. Gebruik in eerste instantie termen die duidelijk zijn voor een breed publiek. Maak het op deze manier mogelijk de betekenis van jargon af te leiden uit de context.
+
+Deze aanpak helpt ook bij voldoen aan [WCAG-succescriterium 3.1.3 Ongebruikelijke woorden](/wcag/3.1.3/). Dit WCAG-succescriterium is niet verplicht voor de [NL Design System Baseline](/baseline/), maar is zeker de moeite waard in de WCAG-pagina's.
+
+Voorbeelden van jargon, en mogelijke alternatieven:
+
+- "navigeren" betekent voor een breed publiek iets voor een reis op zee, maar als jargon staat het voor toetsenbordnavigatie of browsen naar een andere pagina. Een betere algemene term is: "toetsenbordbediening".
+- "tabben" is niet een algemeen bekende term. Het is duidelijker om te zeggen: "Ga met de `Tab`-toets naar ...".
+
+Wanneer developers en designers een bepaald jargon gewend zijn, gebruik liever dat jargon dan de doelgroep van specialisten afschrikken met een zeer ongebruikelijk term. Als het niet mogelijk is om de betekenis af te leiden uit de context, bied dan een link aan waar het jargon wordt uitgelegd. Bijvoorbeeld: gebruik "screenreader" in plaats van "schermvoorlezer", maar leg de term wel uit met een link.
+
+## Oplossingen in NL Design System
+
+### Consistent met het design system
+
+Gebruik de namen van [componenten uit het design system](/componenten/), en gebruik dezelfde termen voor concepten zoals [states](/handboek/developer/conventies/states/), varianten en anatomie. Schrijf namen van componenten met een hoofdletter. Bijvoorbeeld: Accordion, Button. Lezers kunnen met consistente termen makkelijker oplossingen vinden in het design system.
+
+{/* TODO: Gebruik de documentatie voor algemene API conventies, wanneer de naamgeving nog niet bepaald is voor een component. */}
+{/* https://github.com/nl-design-system/documentatie/issues/1078 */}
+
+De meeste namen zijn gekozen in samenwerking met de [NL Design System Community](/community/), als een stap in het [Estafettemodel](/handboek/estafettemodel/).
+
+### Links naar componenten
+
+Link naar componenten van NL Design System die je kunt gebruiken als oplossing voor een ontoegankelijke situatie. Bijvoorbeeld:
+
+- [WCAG-succescriterium 2.4.1 Blokken omzeilen](/wcag/2.4.1/) heeft een link naar de [Skip Link](/skip-link/) component.
+- [WCAG-succescriterium 1.3.2 Betekenisvolle volgorde](/wcag/1.3.2/) heeft een link naar de [Heading Group](/heading-group/) component.
+
+### Links naar richtlijnen
+
+Maak een link naar richtlijnen van NL Design System die relevant zijn om de website goed krijgen voor het WCAG succescriterium. Bijvoorbeeld:
+
+- [WCAG-succescriterium 1.3.1 Info en relaties](/wcag/1.3.1/) heeft een link naar de [contentrichtlijnen voor een opsomming zonder de juiste opmaak](/richtlijnen/content/tekstopmaak/opsommingen/#lijst-elementen)
+
+### Integratie met het design system ecosysteem
+
+Componenten gebruiken is niet altijd de beste oplossing, vaak gaat het om een kleine aanpassing van het visueel ontwerp of een aanpassing van de paginastructuur.
+
+Link naar andere oplossingen die NL Design System heeft om te voldoen aan dit WCAG succescriterium. Bijvoorbeeld:
+
+- [WCAG-succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3/) en [WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/) hebben een link naar het [hulpmiddel voor Contrast van kleuren](/contrast/).
+- [WCAG-succescriterium 2.4.1 Blokken omzeilen](/wcag/2.4.1/) heeft een link naar een template met de Skip Link en Cookie Banner.
+- De [NL Design System Baseline](/baseline/) heeft een overzicht van browsers en hulpmiddelen waarmee je kunt testen.
+
+### Voldoet aan het design system
+
+Stel oplossingen voor die voldoen aan het design system. Geef geen advies dat niet klopt met de richtlijnen.
+
+Wanneer een codevoorbeeld tot de essentie teruggebracht is voor de duidelijkheid, dan kan het zijn dat het niet voldoet aan het design system. Noem dat dan expliciet, en verwijs door naar een andere pagina in het design system. De volledige oplossing staat dan bijvoorbeeld in een component, richtlijn of template.
+
+## Opbouw van een WCAG-pagina
+
+Een WCAG-pagina is compleet wanneer het de volgende onderdelen bevat, en er geen belangrijke informatie mist in één van de onderdelen:
+
+- Metadata, in Markdown frontmatter
+- Paginatitel
+- Uitleg
+  - Lead Paragraph
+  - Gedetailleerd vervolg op introductietekst
+- Veelgemaakte fouten
+- Hoe te testen
+- Relevante links
+- W3C referenties
+- Help deze richtlijn verbeteren
+
+### Introductie-alinea
+
+In aanvulling op de [algemene schrijfwijzer voor een introductie-alinea](./pagina-opbouw.mdx#introductie-alinea), is er een specifieke aanpak voor de introductie-alinea van WCAG-pagina's.
+
+#### Positief beginnen
+
+Begin op een positieve noot. Beschrijf hoe succes er uit ziet. Niet alleen voor een specifieke beperking of hulpmiddel, maar ook in het algemeen.
+
+Bijvoorbeeld niet:
+
+> Developers maken vaak geen gebruik van standaard HTML-elementen, en daardoor zijn websites vaak niet toegankelijkheid met een toetsenbord.
+
+#### Nog niet technisch
+
+Gebruik geen termen die alleen developers en designers kennen, omdat de introductie-alinea voor een brede doelgroep is. Optimaliseer voor het F-patroon, waarbij mensen koppen en het begin van teksten als eerste scannen.
+
+#### Ook duidelijk zonder context
+
+Zorg dat de introductie-alinea helemaal op zichzelf duidelijk is. De tekst moet onafhankelijk zijn van de hoofdkop — maak ook geen verwijzingen naar de hoofdkop. Eindig niet met een cliffhanger.
+
+### Veelgemaakte fouten
+
+1. Het doel van het patroon, de gewenste situatie.
+1. Een beschrijving van wanneer de situatie onvoldoende toegankelijk is. Wees duidelijk dat dan de implementatie fout is, en niet het patroon, wanneer een toegankelijke implementatie in principe wel mogelijk is.
+1. Een beschrijving hoe je dat kan testen.
+1. Informatie over de beste oplossing, waar mogelijk met links naar bestaande informatie in het design system.
+1. Door wie het kan worden opgelost.
+1. Indien er nog geen component of richtlijn is met een oplossing: een voldoende uitgebreide beschrijving van de oplossing. Deze tekst kan later verhuisd kan worden naar een specifieke pagina.
+
+#### Koppen: niet technisch waar mogelijk
+
+Vermijd technische termen in een kop, als je het anders kunt oplossen. Vermijd bijvoorbeeld volgende termen in een kop.
+
+- "DOM-volgorde"
+- "DOM-structuur"
+- Namen van CSS properties
+- Namen van APIs
+
+Vaak is een goed alternatief voor technische termen gebruiken, om de user experience te beschrijven.
+
+### Hoe te testen
+
+Wanneer mensen begrijpen waar het WCAG succescriterium over gaat, en ze herkennen dat het relevant is voor hun website, dan willen dat waar mogelijk ze kunnen controleren of hun website goed werkt.
+
+Wanneer voorkennis nodig is om te testen, maak dan duidelijk wie dit het best kan doen. Bijvoorbeeld: "Met een screenreader", "Met Developer Tools", "Met een browser". Wanneer iemand een project wil testen, dan kunnen ze hiermee de mensen vinden met de juiste vaardigheden.
+
+### Relevante links
+
+Plaats uitleg bij elke link, zodat de relevantie van de link beoordelen niet onnodig tijd kost van de bezoeker. Maak duidelijk wie de doelgroep is, en in welke situatie de bezoeker verder zou moeten lezen op deze externe website.
+
+#### Verdiepende informatie
+
+De uitleg bij een link naar kan bijvoorbeeld verwoord worden als call to action: "Lees meer op de website van Apple om te leren hoe je met de screenreader VoiceOver alle Links en Headings op een pagina kan vinden."
+
+#### Commerciële oplossingen
+
+Voor toegankelijkheid bestaan vaak concurrerende commerciële oplossingen. Vermijd verwijzingen naar commerciële organisaties, dat is de meest praktische oplossing om discussies te vermijden. Blogs van toegankelijkheidsspecialisten zijn onvermijdelijk, maar verwijs naar gevariëerde websites.
+
+## Technisch advies
+
+Voorkom dat mensen websites die prima werken, ten onrechte gaan aanpassen, doordat richtlijnen stellig bepaalde technieken afraden. Het is goed om aandacht te geven aan technieken die een risico voor toegankelijkheid zijn. Maar geef altijd voldoende informatie om zelf te testen of een situatie onvoldoende toegankelijk is.
+
+## Markdown snippets
+
+De documentatie gebruikt op veel plekken Markdown snippets, voor herbruikbare teksten. Markdown snippets herken je aan de underscore voor de bestandsnaam: `_snippet.md`.
+
+Zorg dat de informatie in snippets niet alleen duidelijk is in de context van de pagina waar jij de snippet voor gebruikt. Controleer ook dat de betekenis van andere pagina’s niet per ongeluk verandert.
+
+## Test met gebruikers
+
+Test de documentatie met gebruikers, wanneer je de mogelijkheid hebt. Wanneer de pagina voldoet aan de schrijfwijzer, is het een goed moment om te controleren of alle aannames kloppen.
+
+Voorbeelden van onderzoeksvragen:
+
+- Kan de betekenis van jargon uit de context afgeleid worden?
+- Wordt het gebruikte jargon inderdaad door specialisten, of blijkt dat het jargon alleen bekend is bij een kleinere groep?
+- Vinden mensen de koppenstructuur handig?
+- Welke onderdelen van de pagina vinden mensen het meest relevant voor zichzelf?
+- Welke onderdelen van de pagina vinden mensen niet relevant voor zichzelf?
+- Begrijpen mensen wat ze kunnen doen voor dit WCAG-succescriterium?
+- Kunnen mensen de WCAG-pagina uitleggen aan iemand anders?
+- Vinden mensen de voorbeelden herkenbaar en relevant?
+- Kunnen mensen het probleem uit hun WCAG-EM onderzoekrapport herkennen in deze pagina?
+- Kunnen mensen een oplossing vinden in NL Design System, voor situaties die ze herkennen in hun eigen website?
+
+Buiten scope:
+
+- Begrijpen mensen het WCAG-succescriterium? Hiervoor moeten mensen de WCAG-specificatie zelf lezen.
+
+Lees meer over [onderzoeken doen op gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl/docs/onderzoek-doen/).
