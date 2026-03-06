@@ -24,6 +24,7 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -50,146 +51,198 @@ Er mag geen specifieke timing vereist zijn voor toetsaanslagen. Je moet op eigen
 
 Een `<div>` of `<span>` met een `onclick`-handler is niet bereikbaar met het toetsenbord. Toetsenbordgebruikers kunnen er niet naartoe tabben en het niet activeren met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>. Gebruik altijd een `<button>` voor acties en een `<a>` voor navigatie.
 
-```html
-<!-- Fout -->
-<div class="knop" onclick="verstuur()">Versturen</div>
+<Guideline appearance="dont" title="Klikbare div is niet bereikbaar met het toetsenbord">
+  ```html
+  <div class="knop" onclick="verstuur()">
+    Versturen
+  </div>
+  ```
+</Guideline>
 
-<!-- Goed -->
-<button type="button" onclick="verstuur()">Versturen</button>
-```
+<Guideline appearance="do" title="Een button is wel bereikbaar met het toetsenbord">
+  ```html
+  <button type="button" onclick="verstuur()">
+    Versturen
+  </button>
+  ```
+</Guideline>
 
 ### Fout: muisgebeurtenissen zonder toetsenbordalternatieven
 
 Interactie die alleen werkt via `onmouseover`, `onmousedown` of `ondblclick` is niet te gebruiken met een toetsenbord. Elke muisgebeurtenis moet een gelijkwaardige toetsenbordgebeurtenis hebben.
 
-```javascript
-// Fout: alleen muisgebeurtenis
-element.addEventListener("mouseover", toonTooltip);
+{/* prettier-ignore */}
+<Guideline appearance="dont" title="Alleen een muisgebeurtenis, geen toetsenbordgebeurtenis">
+  ```javascript
+  element.addEventListener("mouseover", toonTooltip);
+  ```
+</Guideline>
 
-// Goed: ook toetsenbord
-element.addEventListener("mouseover", toonTooltip);
-element.addEventListener("focus", toonTooltip);
-element.addEventListener("mouseout", verbergTooltip);
-element.addEventListener("blur", verbergTooltip);
-```
+{/* prettier-ignore */}
+<Guideline appearance="do" title="Zowel muis- als toetsenbordgebeurtenis">
+  ```javascript
+  element.addEventListener("mouseover", toonTooltip);
+  element.addEventListener("focus", toonTooltip);
+  element.addEventListener("mouseout", verbergTooltip);
+  element.addEventListener("blur", verbergTooltip);
+  ```
+</Guideline>
 
 ### Fout: custom dropdown die niet met toetsen te bedienen is
 
 Veel op maat gemaakte dropdowns en selectiemenu's zijn alleen voor gebruik met een muis gebouwd. Ze openen niet met <kbd>Enter</kbd> of <kbd>Spatie</kbd>. Je kunt niet door de opties navigeren met <kbd>pijltjestoetsen</kbd>. <kbd>Escape</kbd> sluit ze niet. Gebruik het `<select>`-element, of bouw een <span lang="en">custom component</span> dat het ARIA-combobox- of listbox-patroon volgt.
 
-```html
-<!-- Fout: custom dropdown zonder toetsenbordondersteuning -->
-<div class="dropdown" onclick="toggleMenu()">
-  <span>Kies een optie</span>
-  <ul class="dropdown-opties" style="display:none;">
-    <li onclick="selecteer('a')">Optie A</li>
-    <li onclick="selecteer('b')">Optie B</li>
-  </ul>
-</div>
+<Guideline appearance="dont" title="Custom dropdown zonder toetsenbordondersteuning">
+  ```html
+  <div class="dropdown" onclick="toggleMenu()">
+    <span>Kies een optie</span>
+    <ul class="dropdown-opties" style="display:none;">
+      <li onclick="selecteer('a')">Optie A</li>
+      <li onclick="selecteer('b')">Optie B</li>
+    </ul>
+  </div>
+  ```
+</Guideline>
 
-<!-- Goed: native element -->
-<label for="keuze">Kies een optie</label>
-<select id="keuze">
-  <option value="a">Optie A</option>
-  <option value="b">Optie B</option>
-</select>
-```
+<Guideline appearance="do" title="Native select-element is toetsenbordtoegankelijk">
+  ```html
+  <label for="keuze">Kies een optie</label>
+  <select id="keuze">
+    <option value="a">Optie A</option>
+    <option value="b">Optie B</option>
+  </select>
+  ```
+</Guideline>
 
 ### Fout: <span lang="en">drag-and-drop</span> zonder toetsenbordalternatief
 
 Een interface waar je items kunt slepen en neerzetten om ze te sorteren, maar waar geen toetsenbordalternatief is, sluit toetsenbordgebruikers volledig uit. Voeg knoppen toe om items omhoog en omlaag te verplaatsen.
 
-```html
-<!-- Fout: alleen drag-and-drop -->
-<ul id="sorteerlijst">
-  <li draggable="true">Item 1</li>
-  <li draggable="true">Item 2</li>
-</ul>
+<Guideline appearance="dont" title="Alleen drag-and-drop, geen toetsenbordalternatief">
+  ```html
+  <ul id="sorteerlijst">
+    <li draggable="true">Item 1</li>
+    <li draggable="true">Item 2</li>
+  </ul>
+  ```
+</Guideline>
 
-<!-- Goed: met toetsenbordknoppen -->
-<ul id="sorteerlijst">
-  <li>
-    Item 1
-    <button aria-label="Item 1 omhoog verplaatsen">&#9650;</button>
-    <button aria-label="Item 1 omlaag verplaatsen">&#9660;</button>
-  </li>
-  <li>
-    Item 2
-    <button aria-label="Item 2 omhoog verplaatsen">&#9650;</button>
-    <button aria-label="Item 2 omlaag verplaatsen">&#9660;</button>
-  </li>
-</ul>
-```
+<Guideline appearance="do" title="Drag-and-drop met toetsenbordknoppen als alternatief">
+  ```html
+  <ul id="sorteerlijst">
+    <li>
+      Item 1<button aria-label="Item 1 omhoog verplaatsen">&#9650;</button>
+      <button aria-label="Item 1 omlaag verplaatsen">&#9660;</button>
+    </li>
+    <li>
+      Item 2<button aria-label="Item 2 omhoog verplaatsen">&#9650;</button>
+      <button aria-label="Item 2 omlaag verplaatsen">&#9660;</button>
+    </li>
+  </ul>
+  ```
+</Guideline>
 
 ### Fout: <span lang="en">hover</span>-content die niet met toetsenbord bereikbaar is
 
 Informatie die alleen verschijnt als je erover hovert met de muis is onbereikbaar met een toetsenbord als er geen focus-equivalent is. Denk aan <span lang="en">tooltips</span>, uitklapmenu's en extra details.
 
-```css
-/* Fout: alleen hover */
-.tooltip {
-  display: none;
-}
-.trigger:hover .tooltip {
-  display: block;
-}
+<Guideline appearance="dont" title="Hover-content alleen zichtbaar bij hover, niet bij focus">
+  ```css
+  .tooltip {
+    display: none;
+  }
+  .trigger:hover .tooltip {
+    display: block;
+  }
+  ```
+</Guideline>
 
-/* Goed: hover en focus */
-.tooltip {
-  display: none;
-}
-.trigger:hover .tooltip,
-.trigger:focus .tooltip,
-.trigger:focus-within .tooltip {
-  display: block;
-}
-```
+<Guideline appearance="do" title="Hover-content ook zichtbaar bij toetsenbordfocus">
+  ```css
+  .tooltip {
+    display: none;
+  }
+  .trigger:hover .tooltip,
+  .trigger:focus .tooltip,
+  .trigger:focus-within .tooltip {
+    display: block;
+  }
+  ```
+</Guideline>
 
 ### Fout: carrousel of slider zonder toetsenbordbediening
 
 Carrousels die alleen via <span lang="en">swipe</span> of klikken op pijltjes werken, zonder dat je met <kbd>pijltjestoetsen</kbd> door de slides kunt navigeren of de navigatieknoppen focusbaar zijn, sluiten toetsenbordgebruikers uit.
 
-```html
-<!-- Fout: pijltjes als niet-focusbare elementen -->
-<div class="pijl-links" onclick="vorigeSlide()">&#8249;</div>
-<div class="pijl-rechts" onclick="volgendeSlide()">&#8250;</div>
+<Guideline appearance="dont" title="Pijltjes als niet-focusbare divs">
+  ```html
+  <div class="pijl-links" onclick="vorigeSlide()">
+    &#8249;
+  </div>
+  <div class="pijl-rechts" onclick="volgendeSlide()">
+    &#8250;
+  </div>
+  ```
+</Guideline>
 
-<!-- Goed: focusbare knoppen -->
-<button aria-label="Vorige slide" onclick="vorigeSlide()">&#8249;</button>
-<button aria-label="Volgende slide" onclick="volgendeSlide()">&#8250;</button>
-```
+<Guideline appearance="do" title="Pijltjes als focusbare knoppen">
+  ```html
+  <button aria-label="Vorige slide" onclick="vorigeSlide()">
+    &#8249;
+  </button>
+  <button aria-label="Volgende slide" onclick="volgendeSlide()">
+    &#8250;
+  </button>
+  ```
+</Guideline>
 
 ### Fout: <span lang="en">infinite scroll</span> zonder alternatieve navigatie
 
 Bij <span lang="en">infinite scroll</span> verdwijnt de <span lang="en">footer</span> en worden steeds nieuwe elementen geladen als je naar beneden scrollt. Met een toetsenbord raak je vast in een eindeloze lijst en kom je nooit bij de <span lang="en">footer</span>, navigatie of andere pagina-onderdelen.
 
-```html
-<!-- Fout: alleen infinite scroll -->
-<div class="resultaten" onscroll="laadMeer()">
-  <!-- eindeloze lijst -->
-</div>
+<Guideline appearance="dont" title="Infinite scroll zonder navigatiealternatief">
+  ```html
+  <div class="resultaten" onscroll="laadMeer()">
+    <!-- eindeloze lijst -->
+  </div>
+  ```
+</Guideline>
 
-<!-- Beter: paginering of "laad meer"-knop -->
-<div class="resultaten">
-  <!-- beperkte lijst -->
-</div>
-<button onclick="laadMeer()">Meer resultaten laden</button>
-```
+<Guideline appearance="do" title="Paginering of een laad-meer-knop als alternatief">
+  ```html
+  <div class="resultaten">
+    <!-- beperkte lijst -->
+  </div>
+  <button onclick="laadMeer()">Meer resultaten laden</button>
+  ```
+</Guideline>
 
 ### Fout: video- of audiospeler met onbereikbare bedieningsknoppen
 
 <span lang="en">Custom</span> mediaspelers waarvan de knoppen niet focusbaar of activeerbaar zijn met het toetsenbord.
 Denk aan afspelen, pauzeren, volume en volledig scherm. Zonder muis kun je de video of audio dan niet bedienen.
 
-```html
-<!-- Fout: divs als knoppen -->
-<div class="play-knop" onclick="speel()">&#9654;</div>
-<div class="volume" onclick="volume()">&#128266;</div>
+<Guideline appearance="dont" title="Mediaspeler met divs als knoppen">
+  ```html
+  <div class="play-knop" onclick="speel()">
+    &#9654;
+  </div>
+  <div class="volume" onclick="volume()">
+    &#128266;
+  </div>
+  ```
+</Guideline>
 
-<!-- Goed: echte knoppen -->
-<button aria-label="Afspelen" onclick="speel()">&#9654;</button>
-<button aria-label="Volume aanpassen" onclick="volume()">&#128266;</button>
-```
+<Guideline appearance="do" title="Mediaspeler met echte knoppen">
+  ```html
+  <button aria-label="Afspelen" onclick="speel()">
+    &#9654;
+  </button>
+  <button aria-label="Volume aanpassen" onclick="volume()">
+    &#128266;
+  </button>
+  ```
+</Guideline>
 
 ### Fout: <span lang="en">CAPTCHA</span> is niet met het toetsenbord te bedienen
 
@@ -197,9 +250,9 @@ Als de <span lang="en">CAPTCHA</span>-test niet met het toetsenbord kan worden v
 
 ## Gerelateerde succescriteria
 
-- [**SC 2.1.2**](https://nldesignsystem.nl/wcag/2.1.2/) — Geen toetsenbordval: je mag nergens "vast" komen te zitten.
-- [**SC 2.4.3**](https://nldesignsystem.nl/wcag/2.4.3/) — Focusvolgorde: de tabvolgorde moet logisch zijn.
-- [**SC 2.4.7**](https://nldesignsystem.nl/wcag/2.4.7/) — Focus zichtbaar: je moet kunnen zien welk element de focus heeft.
+- [SC 2.1.2](https://nldesignsystem.nl/wcag/2.1.2/) — Geen toetsenbordval: je mag nergens "vast" komen te zitten.
+- [SC 2.4.3](https://nldesignsystem.nl/wcag/2.4.3/) — Focusvolgorde: de tabvolgorde moet logisch zijn.
+- [SC 2.4.7](https://nldesignsystem.nl/wcag/2.4.7/) — Focus zichtbaar: je moet kunnen zien welk element de focus heeft.
 
 ### Hoe het hoort te werken
 
