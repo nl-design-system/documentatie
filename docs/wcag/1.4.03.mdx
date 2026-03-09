@@ -22,6 +22,8 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -42,9 +44,9 @@ Grote tekst is tekst van 18 punt (24px) of groter, of vetgedrukte tekst van 14 p
 
 Er zijn 3 uitzonderingen:
 
-- Tekst in inactieve onderdelen, zoals een uitgeschakelde knop, hoeft niet aan de eis te voldoen.
-- Puur decoratieve tekst is uitgezonderd.
-- Tekst die onderdeel is van een logo of merknaam is ook vrijgesteld.
+- Tekst in inactieve onderdelen, zoals een uitgeschakelde knop.
+- Puur decoratieve tekst.
+- Tekst die onderdeel is van een logo of merknaam.
 
 ## Veelgemaakte fouten
 
@@ -52,50 +54,72 @@ Er zijn 3 uitzonderingen:
 
 Dit is de meest voorkomende contrastfout. Lichtgrijs (`#999999`) op wit (`#FFFFFF`) heeft een contrastverhouding van slechts 2,85:1. Dat is ver onder de vereiste 4,5:1. Het ziet er misschien mooi uit, maar voor veel mensen is het niet leesbaar.
 
-```css
-/* Fout: contrast 2,85:1 */
-.subtekst {
-  color: #999999;
-  background-color: #ffffff;
-}
+<Guideline appearance="dont" title="Lichtgrijs op wit, contrast 2,85:1">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ color: "#999999", backgroundColor: "#ffffff", padding: "0.5rem" }}>
+        Deze tekst is lastig leesbaar voor veel mensen.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
-/* Goed: contrast 4,64:1 */
-.subtekst {
-  color: #767676;
-  background-color: #ffffff;
-}
-```
+<Guideline appearance="do" title="Donkerder grijs op wit, contrast 4,64:1">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ color: "#767676", backgroundColor: "#ffffff", padding: "0.5rem" }}>
+        Deze tekst is goed leesbaar voor veel mensen.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: placeholdertekst met onvoldoende contrast
 
 Placeholder-tekst in formuliervelden is berucht om slecht contrast. De standaard browserstyling
-van placeholders haalt vaak de vereiste contrastverhouding niet. Als je
-placeholders gebruikt om belangrijke informatie te tonen, zoals een invoerformaat, moeten ze wel
-leesbaar zijn.
+van placeholders haalt vaak de vereiste contrastverhouding niet.
 
-```css
-/* Fout: standaard placeholderkleur is vaak te licht */
-::placeholder {
-  color: #c0c0c0; /* contrast 1,6:1 op wit */
-}
+<Guideline appearance="dont" title="Placeholderkleur te licht, contrast 1,6:1 op wit">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <input
+        type="text"
+        placeholder="dd-mm-jjjj"
+        style={{ padding: "0.5rem", border: "1px solid #767676", color: "#c0c0c0" }}
+      />
+    )}
+  </Canvas>
+</Guideline>
 
-/* Goed */
-::placeholder {
-  color: #767676; /* contrast 4,64:1 op wit */
-}
-```
+<Guideline appearance="do" title="Placeholder met voldoende contrast, 4,64:1 op wit">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <input
+        type="text"
+        placeholder="dd-mm-jjjj"
+        style={{ padding: "0.5rem", border: "1px solid #767676", color: "#767676" }}
+      />
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: tekst op een afbeelding of kleurverloop zonder overlay
 
 Tekst die direct op een foto of kleurverloop staat, kan op de ene plek voldoende contrast hebben en op een andere plek niet. Zonder een semi-transparante overlay of tekstvak is het contrast onvoorspelbaar en meestal onvoldoende.
 
+<Guideline appearance="dont" title="Witte tekst direct op een foto">
+
 ```html
-<!-- Fout: witte tekst direct op een foto -->
 <div style="background-image: url('foto.jpg');">
   <h2 style="color: white;">Welkom bij ons</h2>
 </div>
+```
 
-<!-- Goed: overlay voor gegarandeerd contrast -->
+</Guideline>
+
+<Guideline appearance="do" title="Overlay voor gegarandeerd contrast">
+
+```html
 <div style="background-image: url('foto.jpg'); position: relative;">
   <div style="background-color: rgba(0,0,0,0.6); padding: 1rem;">
     <h2 style="color: white;">Welkom bij ons</h2>
@@ -103,119 +127,236 @@ Tekst die direct op een foto of kleurverloop staat, kan op de ene plek voldoende
 </div>
 ```
 
+</Guideline>
+
 ### Fout: gekleurde knop met witte tekst die niet voldoet
 
 Felgekleurde knoppen met witte tekst halen vaak de contrastverhouding niet. Denk aan lichtblauwe, oranje of lichtgroene knoppen. Oranje (`#FF8C00`) met wit heeft slechts een contrast van 2,14:1.
 
-```css
-/* Fout: contrast 2,14:1 */
-.cta-knop {
-  background-color: #ff8c00;
-  color: #ffffff;
-}
+<Guideline appearance="dont" title="Witte tekst op oranje knop, contrast 2,14:1">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button
+        style={{
+          backgroundColor: "#ff8c00",
+          color: "#ffffff",
+          padding: "0.5rem 1rem",
+          border: "none",
+          borderRadius: "4px",
+          fontSize: "1rem",
+        }}
+      >
+        Versturen
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-/* Goed: donkerdere achtergrond, contrast 4,63:1 */
-.cta-knop {
-  background-color: #c25700;
-  color: #ffffff;
-}
+<Guideline appearance="do" title="Donkerdere achtergrond, contrast 4,63:1">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button
+        style={{
+          backgroundColor: "#c25700",
+          color: "#ffffff",
+          padding: "0.5rem 1rem",
+          border: "none",
+          borderRadius: "4px",
+          fontSize: "1rem",
+        }}
+      >
+        Versturen
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-/* Of: donkere tekst op lichte achtergrond */
-.cta-knop {
-  background-color: #ff8c00;
-  color: #000000;
-}
-```
+<Guideline appearance="do" title="Donkere tekst op lichte achtergrond">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button
+        style={{
+          backgroundColor: "#ff8c00",
+          color: "#000000",
+          padding: "0.5rem 1rem",
+          border: "none",
+          borderRadius: "4px",
+          fontSize: "1rem",
+        }}
+      >
+        Versturen
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: links die alleen door kleur te onderscheiden zijn maar onvoldoende contrasteren
 
 Onderstreep je links niet en zijn ze alleen door kleur te onderscheiden van de omringende tekst? Dan moet er voldoende contrast zijn tussen de linktekst en de omringende tekst, namelijk 3:1. Daarnaast moet de link ook voldoende contrast hebben tegenover de achtergrond, namelijk 4,5:1.
 
-```css
-/* Fout: link (#6699CC) op wit, contrast 3,0:1 */
-a {
-  color: #6699cc;
-  text-decoration: none;
-}
+<Guideline appearance="dont" title="Link alleen door kleur, contrast 3,0:1 op wit">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ padding: "0.5rem" }}>
+        Lees meer over{" "}
+        <a href="#" style={{ color: "#6699cc", textDecoration: "none" }}>
+          onze voorwaarden
+        </a>{" "}
+        op deze pagina.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
-/* Goed: voldoende contrast en/of onderstreping */
-a {
-  color: #2056a5;
-  text-decoration: underline;
-}
-```
+<Guideline appearance="do" title="Voldoende contrast en onderstreping">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ padding: "0.5rem" }}>
+        Lees meer over{" "}
+        <a href="#" style={{ color: "#2056a5", textDecoration: "underline" }}>
+          onze voorwaarden
+        </a>{" "}
+        op deze pagina.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: tekst in <span lang="en">dark mode</span> met onvoldoende contrast
 
 <span lang="en">Dark mode</span> kan nieuwe contrastproblemen met zich meebrengen. Donkergrijze tekst op een donkere
 achtergrond, of felle kleuren die op een lichte achtergrond wel werken maar op donker niet. Het gaat snel mis.
 
-```css
-/* Fout: contrast 2,16:1 */
-.dark-mode {
-  background-color: #1a1a1a;
-  color: #666666;
-}
+<Guideline appearance="dont" title="Donkergrijze tekst op donkere achtergrond, contrast 2,16:1">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ backgroundColor: "#1a1a1a", color: "#666666", padding: "0.5rem" }}>
+        Deze tekst is nauwelijks leesbaar in dark mode.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
-/* Goed: contrast 9,73:1 */
-.dark-mode {
-  background-color: #1a1a1a;
-  color: #d4d4d4;
-}
-```
+<Guideline appearance="do" title="Lichte tekst op donkere achtergrond, contrast 9,73:1">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ backgroundColor: "#1a1a1a", color: "#d4d4d4", padding: "0.5rem" }}>
+        Deze tekst is goed leesbaar in dark mode.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: statusmeldingen met alleen kleur en onvoldoende contrast
 
 Foutmeldingen in rood, succesmeldingen in groen en waarschuwingen in oranje hebben lang niet altijd voldoende contrast. Vooral als de tekst licht gekleurd is op een witte of lichte achtergrond.
 
-```css
-/* Fout: lichtgroen op wit, contrast 1,43:1 */
-.succes {
-  color: #90ee90;
-}
+<Guideline appearance="dont" title="Lichtgroen op wit, contrast 1,43:1">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ color: "#90ee90", backgroundColor: "#ffffff", padding: "0.5rem" }}>
+        Het formulier is succesvol verzonden.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
-/* Goed: donkergroen op wit, contrast 5,14:1 */
-.succes {
-  color: #2e7d32;
-}
-```
+<Guideline appearance="do" title="Donkergroen op wit, contrast 5,14:1">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ color: "#2e7d32", backgroundColor: "#ffffff", padding: "0.5rem" }}>
+        Het formulier is succesvol verzonden.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: voettekst of kleine lettertjes met laag contrast
 
-Kleine tekst in de <span lang="en">footer</span> wordt vaak in lichtgrijs weergegeven. Denk aan privacybeleid, copyright en voorwaarden. Maar juist kleinere tekst heeft meer contrast nodig om leesbaar te blijven. De 4,5:1 eis geldt hier volledig.
+Kleine tekst in de <span lang="en">footer</span> wordt vaak in lichtgrijs weergegeven. Denk aan privacybeleid, copyright en voorwaarden. Maar juist kleinere tekst heeft meer contrast nodig om leesbaar te blijven. Deze tekst moet minimale contrastverhouding van 4,5:1 hebben, maar kies hier liever voor een nog hoger contrast.
 
-```css
-/* Fout */
-.footer {
-  color: #aaaaaa; /* contrast 2,32:1 op wit */
-  font-size: 12px;
-}
+<Guideline appearance="dont" title="Lichtgrijze voettekst, contrast 2,32:1 op wit">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ color: "#aaaaaa", backgroundColor: "#ffffff", fontSize: "12px", padding: "0.5rem" }}>
+        © 2025 Voorbeeldorganisatie — Privacybeleid — Voorwaarden
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
-/* Goed */
-.footer {
-  color: #595959; /* contrast 7,0:1 op wit */
-  font-size: 12px;
-}
-```
+<Guideline appearance="do" title="Donkerdere voettekst, contrast 7,0:1 op wit">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <p style={{ color: "#595959", backgroundColor: "#ffffff", fontSize: "12px", padding: "0.5rem" }}>
+        © 2025 Voorbeeldorganisatie — Privacybeleid — Voorwaarden
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: uitgeschakelde knoppen met net te weinig contrast
 
 Inactieve elementen zijn uitgezonderd van de contrasteis. Maar het gaat mis als je knoppen alleen visueel uitschakelt door ze grijs te maken, zonder ze daadwerkelijk `disabled` te maken in de code. Dan geldt de uitzondering niet en moet het contrast gewoon voldoen.
 
-```html
-<!-- Fout: visueel uitgeschakeld maar technisch actief -->
-<button style="color: #CCCCCC; background: #F0F0F0;">Versturen</button>
+<Guideline appearance="dont" title="Visueel uitgeschakeld maar technisch actief">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button
+        style={{
+          color: "#CCCCCC",
+          background: "#F0F0F0",
+          padding: "0.5rem 1rem",
+          border: "1px solid #ddd",
+          borderRadius: "4px",
+        }}
+      >
+        Versturen
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Goed: echt disabled, uitzondering geldt -->
-<button disabled style="color: #CCCCCC; background: #F0F0F0;">Versturen</button>
+<Guideline appearance="do" title="Echt disabled, uitzondering geldt">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button
+        disabled
+        style={{
+          color: "#CCCCCC",
+          background: "#F0F0F0",
+          padding: "0.5rem 1rem",
+          border: "1px solid #ddd",
+          borderRadius: "4px",
+        }}
+      >
+        Versturen
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
-<!-- Of: actief met voldoende contrast -->
-<button style="color: #595959; background: #F0F0F0;">Versturen</button>
-```
+<Guideline appearance="do" title="Actief met voldoende contrast">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button
+        style={{
+          color: "#595959",
+          background: "#F0F0F0",
+          padding: "0.5rem 1rem",
+          border: "1px solid #ddd",
+          borderRadius: "4px",
+        }}
+      >
+        Versturen
+      </button>
+    )}
+  </Canvas>
+</Guideline>
 
 ### Fout: contrast alleen getest op het eigen scherm
 
-Wat er op jouw Retina-display prima uitziet, kan op een ouder scherm, in direct zonlicht of op een projector onleesbaar zijn. De WCAG-contrasteis van 4,5:1 is een minimum dat rekening houdt met die variatie. "Ik kan het prima lezen" is geen geldige test.
+Wat er op jouw Retina-display prima uitziet, kan op een ouder scherm, in direct zonlicht of op een projector onleesbaar zijn. De WCAG-contrasteis van 4,5:1 is een minimum dat rekening houdt met die variatie.
 
 ## Gerelateerde succescriteria
 
@@ -229,9 +370,9 @@ Wat er op jouw Retina-display prima uitziet, kan op een ouder scherm, in direct 
 
 1. Kijk kritisch naar de tekst op je pagina. Zijn er plekken waar tekst moeilijk leesbaar is? Let vooral op lichtgrijze tekst, tekst op foto's en kleine tekst in de <span lang="en">footer</span>.
 2. Probeer de pagina te lezen in een goed verlichte ruimte of op een ouder scherm. Als tekst dan al moeilijk leesbaar is, voldoet het waarschijnlijk niet.
-3. Gebruik een gratis online tool zoals de <span lang="en">WebAIM Contrast Checker</span> op webaim.org/resources/contrastchecker. Vul de tekst- en achtergrondkleur in en het resultaat vertelt je of het voldoende is.
+3. Gebruik [onze online tool](https://nldesignsystem.nl/contrast/). Vul de tekst- en achtergrondkleur in en het resultaat vertelt je of het voldoende is.
 4. Controleer ook de <span lang="en">dark mode</span> als je website die aanbiedt. Contrastproblemen komen daar net zo goed voor.
-5. Let op tekst op afbeeldingen en kleurverlopen. Staat de tekst op het lichtste deel van de afbeelding nog steeds goed leesbaar?
+5. Let op tekst in afbeeldingen en op kleurverlopen. Is de tekst op het lichtste deel van de afbeelding nog steeds goed leesbaar?
 
 ### Voor developers
 
