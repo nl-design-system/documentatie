@@ -24,6 +24,7 @@ keywords:
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import { Guideline } from "@site/src/components/Guideline";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
 import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
@@ -59,18 +60,26 @@ Voor alle onderstaande voorbeelden geldt: als je `outline` een eigen kleur geeft
 
 De meest voorkomende en schadelijkste fout. Designers vinden de standaard focus-<span lang="en">outline</span> lelijk en verwijderen die globaal met CSS. Toetsenbordgebruikers kunnen dan niet meer zien welk element de focus heeft.
 
+<Guideline appearance="dont" title="Alle focus-outlines verwijderd">
+
 ```css
-/* Fout: alle focus-outlines verwijderd */
 *:focus {
   outline: none;
 }
+```
 
-/* Goed: outline alleen verwijderen als je een duidelijk alternatief biedt */
+</Guideline>
+
+<Guideline appearance="do" title="Outline alleen verwijderen als je een duidelijk alternatief biedt">
+
+```css
 *:focus-visible {
   outline: 2px solid #0066cc;
   outline-offset: 2px;
 }
 ```
+
+</Guideline>
 
 Let op het verschil: `:focus-visible` toont de indicator alleen wanneer de browser detecteert dat je via het toetsenbord navigeert. Zo voorkom je de <span lang="en">outline</span> bij muisklikken maar behoud je hem voor toetsenbordgebruikers.
 
@@ -78,51 +87,73 @@ Let op het verschil: `:focus-visible` toont de indicator alleen wanneer de brows
 
 Een focusindicator die er technisch gezien is, maar dezelfde kleur heeft als de achtergrond of te subtiel is om op te merken, voldoet niet. De indicator moet zichtbaar genoeg zijn om op te vallen.
 
+<Guideline appearance="dont" title="Lichtgrijze outline op witte achtergrond">
+
 ```css
-/* Fout: lichtgrijze outline op witte achtergrond */
 button:focus-visible {
   outline: 1px solid #e0e0e0;
 }
+```
 
-/* Goed: contrastrijke outline */
+</Guideline>
+
+<Guideline appearance="do" title="Contrastrijke outline">
+
+```css
 button:focus-visible {
   outline: 2px solid #0066cc;
   outline-offset: 2px;
 }
 ```
 
+</Guideline>
+
 ### Fout: achtergrondkleur of afbeelding die de <span lang="en">outline</span> bedekt
 
 Als een element een achtergrondkleur heeft die even groot is als het element zelf, of als `outline-offset` op een negatieve waarde staat, kan de focusindicator verborgen raken achter het element of de achtergrond.
 
+<Guideline appearance="dont" title="Negatieve offset duwt de outline onder het element">
+
 ```css
-/* Fout: negatieve offset duwt de outline onder het element */
 a:focus-visible {
   outline: 2px solid black;
   outline-offset: -4px;
   background-color: black;
   color: white;
 }
+```
 
-/* Goed: positieve offset houdt de outline zichtbaar */
+</Guideline>
+
+<Guideline appearance="do" title="Positieve offset houdt de outline zichtbaar">
+
+```css
 a:focus-visible {
   outline: 2px solid black;
   outline-offset: 2px;
 }
 ```
 
+</Guideline>
+
 ### Fout: <span lang="en">overflow hidden</span> op een parent-element dat de <span lang="en">outline</span> afsnijdt
 
 Als een parent-element `overflow: hidden` heeft, kan de focusindicator van een child-element worden afgesneden en onzichtbaar worden. Dit is een subtiele fout die vaak over het hoofd wordt gezien.
 
+<Guideline appearance="dont" title="Overflow hidden snijdt focus-outline af">
+
 ```css
-/* Fout: overflow hidden snijdt focus-outline af */
 .kaart {
   overflow: hidden;
   border-radius: 8px;
 }
+```
 
-/* Goed: overflow visible of voldoende padding */
+</Guideline>
+
+<Guideline appearance="do" title="Overflow visible of voldoende padding">
+
+```css
 .kaart {
   overflow: hidden;
   border-radius: 8px;
@@ -136,21 +167,33 @@ Als een parent-element `overflow: hidden` heeft, kan de focusindicator van een c
 }
 ```
 
+</Guideline>
+
 ### Fout: focusindicator verwijderd via JavaScript
 
 Scripts die focus actief verwijderen van elementen door `blur()` aan te roepen, of de <span lang="en">outline</span> dynamisch uitzetten, maken het onmogelijk om de focus te volgen.
 
+<Guideline appearance="dont" title="Focus weghalen zodra een element het ontvangt">
+
+{/* prettier-ignore */}
 ```javascript
-// Fout: focus weghalen zodra een element het ontvangt
 element.addEventListener("focus", function () {
   this.blur();
 });
+```
 
-// Fout: outline dynamisch verwijderen
+</Guideline>
+
+<Guideline appearance="dont" title="Outline dynamisch verwijderen via JavaScript">
+
+{/* prettier-ignore */}
+```javascript
 element.addEventListener("focus", function () {
   this.style.outline = "none";
 });
 ```
+
+</Guideline>
 
 Er is geen reden om focus programmatisch te verwijderen van een interactief element. Verwijder dit soort code.
 
@@ -158,16 +201,22 @@ Er is geen reden om focus programmatisch te verwijderen van een interactief elem
 
 Bij het bouwen van <span lang="en">custom components</span> zoals tabs, accordions en dropdowns wordt de focusstijl vaak vergeten. De standaard browser-<span lang="en">outline</span> wordt soms onbedoeld overschreven door de CSS van de component zonder dat er een alternatief voor terugkomt.
 
+<Guideline appearance="dont" title="Component-CSS die de outline onbedoeld overschrijft">
+
 ```css
-/* Fout: component-CSS die de outline onbedoeld overschrijft */
 .tab {
   border: none;
   outline: none; /* verwijderd om het ontwerp "schoon" te houden */
   background: transparent;
   padding: 8px 16px;
 }
+```
 
-/* Goed: eigen focusstijl die past bij het ontwerp */
+</Guideline>
+
+<Guideline appearance="do" title="Eigen focusstijl die past bij het ontwerp">
+
+```css
 .tab {
   border: none;
   background: transparent;
@@ -180,6 +229,8 @@ Bij het bouwen van <span lang="en">custom components</span> zoals tabs, accordio
   border-radius: 4px;
 }
 ```
+
+</Guideline>
 
 ## Gerelateerde succescriteria
 
