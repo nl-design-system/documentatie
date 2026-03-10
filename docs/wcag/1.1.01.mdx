@@ -52,15 +52,19 @@ Bij formulierelementen en knoppen die een afbeelding of icoon bevatten, moet het
 Als een `<img>` geen `alt`-attribuut heeft, leest een screenreader vaak de bestandsnaam voor. Dat levert onbegrijpelijke resultaten op zoals "DSC_0042.jpg" of "header-banner-v3-final.png". Je bezoeker heeft dan geen idee wat er op de afbeelding staat.
 
 <Guideline appearance="dont" title="Afbeelding zonder alt-attribuut">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="team-foto.jpg" />}
-  </Canvas>
+
+```html
+<img src="team-foto.jpg" />
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Afbeelding met een beschrijvende alt-tekst">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="team-foto.jpg" alt="Het ontwikkelteam tijdens de hackathon van 2024" />}
-  </Canvas>
+
+```html
+<img src="team-foto.jpg" alt="Het ontwikkelteam tijdens de hackathon van 2024" />
+```
+
 </Guideline>
 
 ### Fout: alt-tekst die de afbeelding niet beschrijft
@@ -68,20 +72,19 @@ Als een `<img>` geen `alt`-attribuut heeft, leest een screenreader vaak de besta
 Een alt-tekst als "afbeelding" of "foto" is niet zinvol. De screenreader meldt al dat het een afbeelding is. De alt-tekst moet beschrijven wat er op de afbeelding te zien is, of welk doel de afbeelding dient in de context van de pagina.
 
 <Guideline appearance="dont" title="Alt-tekst beschrijft de afbeelding niet">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="grafiek-omzet.png" alt="afbeelding" />}
-  </Canvas>
+
+```html
+<img src="grafiek-omzet.png" alt="afbeelding" />
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Alt-tekst beschrijft de inhoud van de afbeelding">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <img
-        src="grafiek-omzet.png"
-        alt="Staafdiagram van de kwartaalomzet 2024: Q1 €2,1M, Q2 €2,4M, Q3 €1,9M, Q4 €3,0M"
-      />
-    )}
-  </Canvas>
+
+```html
+<img src="grafiek-omzet.png" alt="Staafdiagram van de kwartaalomzet 2024: Q1 €2,1M, Q2 €2,4M, Q3 €1,9M, Q4 €3,0M" />
+```
+
 </Guideline>
 
 ### Fout: decoratieve afbeelding met een beschrijvende alt-tekst
@@ -89,15 +92,19 @@ Een alt-tekst als "afbeelding" of "foto" is niet zinvol. De screenreader meldt a
 Sfeerbeelden en decoratieve elementen die geen informatie toevoegen, moeten een lege alt-tekst krijgen met `alt=""`. Als je er een beschrijving aan geeft, leest de screenreader die voor en leidt dat af van de eigenlijke inhoud.
 
 <Guideline appearance="dont" title="Decoratieve afbeelding met een beschrijvende alt-tekst">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="scheidingslijn.svg" alt="decoratieve lijn" />}
-  </Canvas>
+
+```html
+<img src="scheidingslijn.svg" alt="decoratieve lijn" />
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Decoratieve afbeelding met een lege alt-tekst">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="scheidingslijn.svg" alt="" />}
-  </Canvas>
+
+```html
+<img src="scheidingslijn.svg" alt="" />
+```
+
 </Guideline>
 
 ### Fout: icoonknop zonder toegankelijke naam
@@ -157,24 +164,19 @@ Een knop die alleen een icoon bevat, heeft geen zichtbare tekst. Denk aan een ha
 Afbeeldingen die via CSS `background-image` worden ingeladen, zijn volledig onzichtbaar voor screenreaders. Als zo'n afbeelding informatie overbrengt, mist een deel van je gebruikers die informatie. Denk aan een logo, een kaart of een infographic.
 
 <Guideline appearance="dont" title="Logo als CSS-achtergrondafbeelding zonder alternatief">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <div
-        className="logo"
-        style={{
-          backgroundImage: "url('logo.png')",
-          width: "100px",
-          height: "50px",
-        }}
-      ></div>
-    )}
-  </Canvas>
+
+```html
+<div class="logo" style="background-image: url('logo.png'); width: 100px; height: 50px;"></div>
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Informatieve afbeelding als img-element met alt-tekst">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="#" alt="Logo gemeente X" />}
-  </Canvas>
+
+```html
+<img src="logo.png" alt="Logo gemeente X" />
+```
+
 </Guideline>
 
 ### Fout: afbeelding van tekst zonder volledige alt-tekst
@@ -182,15 +184,19 @@ Afbeeldingen die via CSS `background-image` worden ingeladen, zijn volledig onzi
 Als tekst als afbeelding wordt weergegeven, moet de volledige tekst in het alt-attribuut staan. Denk aan een flyer, een menu of een screenshot met tekst. Iemand met een screenreader kan de tekst in de afbeelding niet lezen.
 
 <Guideline appearance="dont" title="Afbeelding van tekst met onvolledige alt-tekst">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="aanbieding.jpg" alt="aanbieding" />}
-  </Canvas>
+
+```html
+<img src="aanbieding.jpg" alt="aanbieding" />
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Afbeelding van tekst met de volledige tekst als alt-tekst">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="aanbieding.jpg" alt="Weekaanbieding: 20% korting op alle winterjassen, geldig t/m 31 januari" />}
-  </Canvas>
+
+```html
+<img src="aanbieding.jpg" alt="Weekaanbieding: 20% korting op alle winterjassen, geldig t/m 31 januari" />
+```
+
 </Guideline>
 
 ### Fout: complexe grafiek met alleen een korte alt-tekst
@@ -198,44 +204,48 @@ Als tekst als afbeelding wordt weergegeven, moet de volledige tekst in het alt-a
 Een grafiek, diagram of infographic bevat vaak te veel informatie voor een kort alt-attribuut. Een korte beschrijving als alt-tekst is een begin. De volledige data moet ook beschikbaar zijn, bijvoorbeeld in een tabel direct na de grafiek.
 
 <Guideline appearance="dont" title="Complexe grafiek met alleen een vage alt-tekst">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <img src="resultaten.png" alt="Grafiek met onderzoeksresultaten" />}
-  </Canvas>
+
+```html
+<img src="resultaten.png" alt="Grafiek met onderzoeksresultaten" />
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Korte alt-tekst én uitgebreide beschrijving in een tabel">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <figure>
-        <img src="resultaten.png" alt="Staafdiagram: tevredenheidsscores per afdeling, zie tabel hieronder" />
-        <figcaption>
-          <table>
-            <caption>Tevredenheidsscores per afdeling</caption>
-            <thead>
-              <tr>
-                <th>Afdeling</th>
-                <th>Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Verkoop</td>
-                <td>8,2</td>
-              </tr>
-              <tr>
-                <td>Ontwikkeling</td>
-                <td>7,6</td>
-              </tr>
-              <tr>
-                <td>Support</td>
-                <td>6,9</td>
-              </tr>
-            </tbody>
-          </table>
-        </figcaption>
-      </figure>
-    )}
-  </Canvas>
+
+```html
+<figure>
+  <img src="resultaten.png" alt="Staafdiagram: tevredenheidsscores per afdeling, zie tabel hieronder" />
+  <figcaption>
+    <table>
+      <caption>
+        Tevredenheidsscores per afdeling
+      </caption>
+      <thead>
+        <tr>
+          <th>Afdeling</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Verkoop</td>
+          <td>8,2</td>
+        </tr>
+        <tr>
+          <td>Ontwikkeling</td>
+          <td>7,6</td>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td>6,9</td>
+        </tr>
+      </tbody>
+    </table>
+  </figcaption>
+</figure>
+```
+
 </Guideline>
 
 ### Fout: gelinkte afbeelding met een alt die de afbeelding beschrijft in plaats van de bestemming
@@ -243,23 +253,23 @@ Een grafiek, diagram of infographic bevat vaak te veel informatie voor een kort 
 Als een afbeelding het enige element in een link is, moet de alt-tekst beschrijven waar de link naartoe gaat. Beschrijf niet wat er op de afbeelding staat. De afbeelding is hier een interactief element, geen informatief element.
 
 <Guideline appearance="dont" title="Alt-tekst beschrijft de afbeelding, niet de bestemming van de link">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <a href="/producten/schoenen">
-        <img src="sneakers.jpg" alt="Foto van witte sneakers" />
-      </a>
-    )}
-  </Canvas>
+
+```html
+<a href="/producten/schoenen">
+  <img src="sneakers.jpg" alt="Foto van witte sneakers" />
+</a>
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Alt-tekst beschrijft de bestemming van de link">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <a href="/producten/schoenen">
-        <img src="sneakers.jpg" alt="Bekijk onze schoenen" />
-      </a>
-    )}
-  </Canvas>
+
+```html
+<a href="/producten/schoenen">
+  <img src="sneakers.jpg" alt="Bekijk onze schoenen" />
+</a>
+```
+
 </Guideline>
 
 ### Fout: video of audio zonder beschrijving van het doel
@@ -270,15 +280,19 @@ Het moet wel aangeven wat de media bevat. Zie ook
 [Videobeschrijving](https://nldesignsystem.nl/richtlijnen/content/video/beschrijving/)
 
 <Guideline appearance="dont" title="Video zonder toegankelijke naam">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <video src="introductie.mp4"></video>}
-  </Canvas>
+
+```html
+<video src="introductie.mp4"></video>
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Video met een aria-label als toegankelijke naam">
-  <Canvas language="html" defaultExpandedCode>
-    {() => <video src="introductie.mp4" aria-label="Introductievideo: rondleiding door de applicatie"></video>}
-  </Canvas>
+
+```html
+<video src="introductie.mp4" aria-label="Introductievideo: rondleiding door de applicatie"></video>
+```
+
 </Guideline>
 
 ## Gerelateerde succescriteria
