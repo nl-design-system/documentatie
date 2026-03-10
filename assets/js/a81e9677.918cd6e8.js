@@ -16,7 +16,7 @@
   },
   6392(e, n, t) {
    'use strict';
-   (t.r(n), t.d(n, { assets: () => O, component: () => W, contentTitle: () => G, default: () => X, description: () => Z, frontMatter: () => V, issueNumber: () => $, metadata: () => r, title: () => P, toc: () => I }));
+   (t.r(n), t.d(n, { assets: () => O, component: () => W, contentTitle: () => G, default: () => X, description: () => $, frontMatter: () => V, issueNumber: () => Z, metadata: () => r, title: () => P, toc: () => I }));
    const r = JSON.parse('{"id":"componenten/breadcrumb-navigation/index","title":"Breadcrumb Navigation","description":"Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.","source":"@site/docs/componenten/breadcrumb-navigation/index.mdx","sourceDirName":"componenten/breadcrumb-navigation","slug":"/breadcrumb-navigation","permalink":"/breadcrumb-navigation","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/breadcrumb-navigation/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Breadcrumb Navigation","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Breadcrumb Navigation","pagination_label":"Breadcrumb Navigation","description":"Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.","slug":"/breadcrumb-navigation","keywords":["back","back link","breadcrumb navigation","breadcrumb trail","breadcrumbs","broodkruimelpad","broodkruimels","hi\xebrarchie","hierarchy","home","homepage","home","kruimelpad","links","nav","navigatie","navigeren","navigation","trail","up"]},"sidebar":"componenten","previous":{"title":"Blockquote","permalink":"/blockquote"},"next":{"title":"Button","permalink":"/button"}}');
    var i = t(86070),
     o = t(18439),
@@ -59,13 +59,13 @@
     const n = { code: 'code', p: 'p', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat als de gebruiker links in het broodkruimelpad aanraakt met een enkele aanwijzer, zoals een muis of vinger, er de mogelijkheid is om de actie te voorkomen of ongedaan te maken.' }), '\n', (0, i.jsx)(n.p, { children: 'Dit voorkomt het per ongeluk aanraken en openen van content, wanneer het niet de bedoeling was.' }), '\n', (0, i.jsxs)(n.p, { children: ['Met een HTML link (', (0, i.jsx)(n.code, { children: 'a' }), ' element met een ', (0, i.jsx)(n.code, { children: 'href' }), ' attribuut) gaat dit automatisch goed. Bij een ', (0, i.jsx)(n.code, { children: 'div' }), ' element met ', (0, i.jsx)(n.code, { children: 'role="link"' }), ' moet dit nog worden aangepast. Gebruik voor dit laatste bij voorkeur het ', (0, i.jsx)(n.code, { children: 'click' }), ' event, omdat dit apparaatonafhankelijk is.'] })] });
    }
-   function x(e) {
+   function y(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat de aanklikbare elementen op een pagina groot genoeg zijn om makkelijk aan te klikken met een muis of vinger.' }), '\n', (0, i.jsx)(n.p, { children: 'Hierbij geldt dat het aan te klikken gebied ten minste 24 bij 24 pixels groot is, behalve als het aanklikbare element en de ruimte om het element samen tenminste 24 pixels groot zijn.' }), '\n', (0, i.jsxs)(n.p, { children: ['Hou als dat mogelijk is een groter aanwijsgebied van 44 bij 44 pixels aan, om ook te voldoen ', (0, i.jsx)(n.a, { href: '/wcag/2.5.5/', children: 'succescriterium 2.5.5 Grootte van het aanwijsgebied (uitgebreid)' })] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar/', children: 'Maak aanklikbare formuliervelden groot genoeg' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/ruimte/interactieve-elementen/', children: 'Reserveer ruimte tussen interactieve elementen' }) }), '\n'] })] });
    }
-   function y(e = {}) {
+   function x(e = {}) {
     const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(x, { ...e }) }) : x(e);
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(y, { ...e }) }) : y(e);
    }
    function w(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
@@ -84,7 +84,7 @@
     S = t(69488),
     T = t(31820),
     M = t(87711);
-   const F = [
+   const H = [
      { title: 'De linkteksten van de links in het broodkruimelpad zijn voor iedereen duidelijk', sc: '2.4.4', status: '', component: _.Ay },
      {
       title: 'De bezoeker kan het activeren van links in het broodkruimelpad annuleren',
@@ -96,7 +96,7 @@
       },
      },
      { title: 'De visuele naam van de links in het broodkruimelpad komen voor in de toegankelijke naam van de links in het broodkruimelpad', sc: '2.5.3', status: '', component: L.Ay },
-     { title: 'Het aanwijsgebied van de links in het broodkruimelpad is groot genoeg', sc: '2.5.8', status: '', component: y },
+     { title: 'Het aanwijsgebied van de links in het broodkruimelpad is groot genoeg', sc: '2.5.8', status: '', component: x },
      { title: 'Als het broodkruimelpad tekst in een andere taal dan de hoofdtaal van de pagina bevat, wordt hier een taalwissel voor aangegeven', sc: '3.1.2', status: '', component: S.Ay },
      { title: 'Het gedrag van het broodkruimelpad is voorspelbaar', sc: '3.2.1', status: '', component: T.Ay },
      {
@@ -109,7 +109,7 @@
       },
      },
     ],
-    H = [
+    F = [
      { title: 'De contrastratio tussen de tekst en de achtergrondkleur in het broodkruimelpad is hoog genoeg', sc: '1.4.3', status: '', component: u.Ay },
      { title: 'Het broodkruimelpad bevat niet onnodig afbeeldingen van tekst', sc: '1.4.5', status: '', component: D.Ay },
      {
@@ -122,7 +122,7 @@
       },
      },
      { title: 'Het is zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.7', status: '', component: b.Ay },
-     { title: 'Het aanwijsgebied van de links in het broodkruimelpad is groot genoeg', sc: '2.5.8', status: '', component: y },
+     { title: 'Het aanwijsgebied van de links in het broodkruimelpad is groot genoeg', sc: '2.5.8', status: '', component: x },
      { title: 'Het is duidelijk zichtbaar wanneer links in het broodkruimelpad toetsenbordfocus hebben', sc: '2.4.13', status: '', component: v.Ay },
      { title: "Als het broodkruimelpad op meerdere pagina's voorkomt, ziet het er hetzelfde uit en werkt het hetzelfde", sc: '3.2.4', status: '', component: M.Ay },
     ],
@@ -206,14 +206,14 @@
     G = void 0,
     O = {},
     P = 'Breadcrumb Navigation',
-    Z = 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.',
-    $ = 54,
-    W = s.find((e) => e.number === $),
+    $ = 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.',
+    Z = 54,
+    W = s.find((e) => e.number === Z),
     I = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...a.RM];
    function U(e) {
     const n = { h2: 'h2', ...(0, o.R)(), ...e.components },
      { CriteriaList: t, CriteriaListItem: r } = n;
-    return (t || K('CriteriaList', !0), r || K('CriteriaListItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(c.Fc, { component: W, headingLevel: 1, description: Z }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(c.VK, { component: W, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(c.mu, { component: W, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', children: F.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', children: H.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid zoom en herschalen', children: C.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid toetsenbord', children: B.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid screenreader', children: E.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(c.$9, { component: W, headingLevel: 2 })] }));
+    return (t || K('CriteriaList', !0), r || K('CriteriaListItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(c.Fc, { component: W, headingLevel: 1, description: $ }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(c.VK, { component: W, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(c.mu, { component: W, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', children: H.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', children: F.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid zoom en herschalen', children: C.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid toetsenbord', children: B.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid screenreader', children: E.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(c.$9, { component: W, headingLevel: 2 })] }));
    }
    function X(e = {}) {
     const { wrapper: n } = { ...(0, o.R)(), ...e.components };
@@ -284,7 +284,7 @@
   },
   33062(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => i, KF: () => h, mJ: () => p, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => f, B2: () => j, Pc: () => c, f4: () => a, GT: () => x, fX: () => o, eQ: () => v, B_: () => b, o_: () => k, Rc: () => y });
+   t.d(n, { bo: () => i, KF: () => h, mJ: () => p, VZ: () => z, cR: () => w, Pv: () => g, qZ: () => s, kD: () => f, B2: () => j, Pc: () => c, f4: () => a, GT: () => y, fX: () => o, eQ: () => v, B_: () => b, o_: () => k, Rc: () => x });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -329,14 +329,14 @@
    function f(e, n = []) {
     return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? f(e[t], [...n, t]) : []));
    }
-   function x(e) {
+   function y(e) {
     const n = new Map();
     function t(e) {
      return (n.has(e) || n.set(e, k(e)), n.get(e));
     }
     return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
    }
-   function y(e) {
+   function x(e) {
     const n = {};
     for (const t of e) {
      let e = n;
@@ -488,7 +488,7 @@
   },
   85825(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => b, $9: () => f, mu: () => v, Fc: () => x });
+   t.d(n, { VK: () => b, $9: () => f, mu: () => v, Fc: () => y });
    var r = t(29181),
     i = t(13526),
     o = t(1292),
@@ -582,7 +582,7 @@
       i = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(r.DZ, { level: n, children: 'Help om deze component te verbeteren' }), (0, l.jsxs)(r.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(r.Xy, { children: [i ? (0, l.jsxs)(r.Er, { children: ['Vul de ', (0, l.jsx)(r.N_, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(r.Er, { children: [(0, l.jsxs)(r.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(r.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(r.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(r.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    x = ({ component: e, headingLevel: n, description: t }) => {
+    y = ({ component: e, headingLevel: n, description: t }) => {
      const i = e && k.bo[e.relayStep];
      return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(h.p, { level: n, suffix: i && (0, l.jsx)(u.D, { state: i }), children: e.title }), (0, l.jsx)(r.fz, { lead: !0, children: t })] });
     };
@@ -638,8 +638,8 @@
     i = t(18439);
    const o = [];
    function s(e) {
-    const n = { a: 'a', p: 'p', ...(0, i.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat iedereen de tekst van een webpagina kan volgen en dat het begrip hiervan niet alleen afhankelijk is van de visuele presentatie.' }), '\n', (0, r.jsxs)(n.p, { children: ['Wanneer een gebruiker de webpagina inzoomt, of met een ', (0, r.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' de inhoud van boven naar beneden leest, moet de informatie en de volgorde van de informatie logisch en begrijpelijk zijn.'] })] });
+    const n = { p: 'p', ...(0, i.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Wanneer een bezoeker met hulpsoftware de inhoud van begin tot eind leest, moet de informatie en de volgorde logisch en begrijpelijk zijn. Het is belangrijk dat de informatie in de juiste leesvolgorde in de HTML staat. De leesvolgorde mag afwijken van wat je ziet, maar de betekenis moet hetzelfde blijven.' });
    }
    function a(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };

@@ -15,9 +15,9 @@
   <meta data-rh="true" name="docsearch:version" content="current" />
   <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
   <meta data-rh="true" property="og:title" content="WCAG-succescriterium 1.3.2 Betekenisvolle volgorde · NL Design System" />
-  <meta data-rh="true" name="description" content="Geef toetsenbordgebruikers de mogelijkheid om binnen een pagina sneller te navigeren door onderdelen te kunnen overslaan." />
-  <meta data-rh="true" property="og:description" content="Geef toetsenbordgebruikers de mogelijkheid om binnen een pagina sneller te navigeren door onderdelen te kunnen overslaan." />
-  <meta data-rh="true" name="keywords" content="WCAG,A,waarneembaar,aanpasbaar,perceivable,adaptable,meaningful sequence" />
+  <meta data-rh="true" name="description" content="Als het belangrijk is dat de inhoud van een pagina in een bepaalde volgorde wordt gelezen, moet hulpsoftware die volgorde ook kunnen volgen." />
+  <meta data-rh="true" property="og:description" content="Als het belangrijk is dat de inhoud van een pagina in een bepaalde volgorde wordt gelezen, moet hulpsoftware die volgorde ook kunnen volgen." />
+  <meta data-rh="true" name="keywords" content="WCAG,Niveau A,waarneembaar,aanpasbaar,perceivable,adaptable,meaningful sequence" />
   <link data-rh="true" rel="icon" href="/favicon.svg" />
   <link data-rh="true" rel="canonical" href="https://nldesignsystem.nl/wcag/1.3.2/" />
   <link data-rh="true" rel="alternate" href="https://nldesignsystem.nl/wcag/1.3.2/" hreflang="nl-NL" />
@@ -39,7 +39,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.7327fd2c.css" />
-  <script src="/assets/js/runtime~main.66bcb029.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.2961888e.js" defer="defer"></script>
   <script src="/assets/js/main.5d8b8af6.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -443,18 +443,55 @@
                <p class="nlds-inline-heading-group__suffix"><span class="utrecht-data-badge nlds-inline-heading-group__badge">Niveau A</span></p>
               </hgroup>
               <h2 id="uitleg" class="utrecht-heading-2">Uitleg</h2>
-              <p>Zorg ervoor dat iedereen de tekst van een webpagina kan volgen en dat het begrip hiervan niet alleen afhankelijk is van de visuele presentatie.</p>
-              <p>Wanneer een gebruiker de webpagina inzoomt, of met een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a> de inhoud van boven naar beneden leest, moet de informatie en de volgorde van de informatie logisch en begrijpelijk zijn.</p>
-              <p>Gebruikers van <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a> lezen informatie op een webpagina van boven naar beneden. Dan is het belangrijk dat de informatie ook in deze leesvolgorde in de gegenereerde code, de <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" class="utrecht-link utrecht-link--html-a">DOM</a>, staat.</p>
-              <p>Screenreadergebruikers kunnen een lijst met de kopjes oproepen en een kopje kiezen vanwaar te lezen op een pagina. Als er gerelateerde informatie boven een kopje staat, mist de screenreadergebruiker deze inhoud.</p>
-              <p>Bijvoorbeeld: In een lijst met evenementen staat de categorie en de datum van het evenement boven het kopje. Alleen een visueel kader rondom de gegevens van het evenement, is duidelijk wat bij elkaar hoort. De screenreadergebruiker mist dan de juiste categorie en datum bij dat evenement als deze vanaf het kopje gaat lezen. Dit wordt gedemonstreerd met de screenreader VoiceOver in de onderstaande video.</p>
-              <h3 id="demo-betekenisvolle-volgorde-in-de-screenreader-voiceover" class="utrecht-heading-3">Demo betekenisvolle volgorde in de screenreader VoiceOver</h3>
+              <p>Wanneer een bezoeker met hulpsoftware de inhoud van begin tot eind leest, moet de informatie en de volgorde logisch en begrijpelijk zijn. Het is belangrijk dat de informatie in de juiste leesvolgorde in de HTML staat. De leesvolgorde mag afwijken van wat je ziet, maar de betekenis moet hetzelfde blijven.</p>
+              <h2 id="veelgemaakte-fouten" class="utrecht-heading-2">Veelgemaakte fouten</h2>
+              <h3 id="fout-onduidelijk-bij-welk-artikel-de-gegevens-horen" class="utrecht-heading-3">Fout: onduidelijk bij welk artikel de gegevens horen</h3>
+              <p>Koppen geven een pagina of een document structuur aan en laten zien wat bij elkaar hoort. Alle inhoud die onder een kop staat, hoort bij die kop. Gebruikers van schermlezers kunnen een lijst met koppen openen en naar een kop navigeren. Als informatie die bij een artikel hoort boven een kop staat, mist de bezoeker die informatie of lijkt het alsof die bij het vorige artikel hoort. Dit speelt alleen op pagina&#x27;s met meerdere berichten.</p>
+              <h3 id="fout-in-een-lijst-met-evenementen-staan-de-categorie-en-de-datum-van-het-evenement-boven-het-kopje" class="utrecht-heading-3">Fout: in een lijst met evenementen staan de categorie en de datum van het evenement boven het kopje</h3>
+              <p>Alleen een visueel kader rond de gegevens van het evenement maakt duidelijk wat bij elkaar hoort. Als een gebruiker van een schermlezer naar een kop navigeert en vanaf daar leest, mist die gebruiker de juiste categorie en datum bij dat evenement. Dit wordt gedemonstreerd met de schermlezer VoiceOver in de onderstaande video.</p>
+              <h3 id="fout-tekst-in-kolommen" class="utrecht-heading-3">Fout: tekst in kolommen</h3>
+              <p>Als een pagina twee kolommen heeft met in elke kolom een afbeelding en een beschrijving, mag het niet zo zijn dat eerst de alt-tekst van de afbeeldingen wordt voorgelezen en daarna pas de beschrijvingen. Dan begrijpt een bezoeker die naar een schermlezer luistert niet bij welke afbeelding de beschrijving hoort.</p>
+              <h3 id="fout-de-leesvolgorde-in-een-tabel" class="utrecht-heading-3">Fout: de leesvolgorde in een tabel</h3>
+              <p>Stel dat een tabel op een pagina de openingstijden toont. In de eerste kolom staan de dagen van de week en in de tweede kolom de openingstijden. Een verkeerde leesvolgorde zou zijn: maandag, dinsdag, woensdag en daarna 9 - 15, 9 - 13, 9 - 20.</p>
+              <h3 id="fout-de-leesvolgorde-in-een-carrousel-met-bladerknoppen" class="utrecht-heading-3">Fout: de leesvolgorde in een carrousel met bladerknoppen</h3>
+              <p>Als de knoppen boven de slides staan, dan leest een schermlezer de knoppen eerst. Een schermlezer leest dan: &#x27;vorige&#x27;, &#x27;volgende&#x27;, inhoud van slide 1, inhoud van slide 2. Een logische leesvolgorde is: eerst de inhoud van de slides en daarna de knoppen. Dan is pas duidelijk of verder bladeren gewenst is.</p>
+              <h3 id="fout-de-leesvolgorde-in-diagrammen-en-grafieken" class="utrecht-heading-3">Fout: de leesvolgorde in diagrammen en grafieken</h3>
+              <p>Dit kan gebeuren bij svg-elementen die tekst bevatten. Dan worden bijvoorbeeld eerst de waarden van de X-as en daarna de waarden van de Y-as als losse getallen voorgelezen. De uitleg van wat deze assen betekenen kan dan op een verkeerd moment komen. Ook canvas- en object-elementen kunnen met een verkeerde leesvolgorde worden voorgelezen.</p>
+              <h3 id="fout-content-die-verschijnt-door-interactie-met-een-webpagina" class="utrecht-heading-3">Fout: content die verschijnt door interactie met een webpagina</h3>
+              <p>Deze content moet op het juiste moment en in een logische volgorde worden voorgelezen. Bijvoorbeeld: een bezoeker opent een sectie waarin gerelateerde content kan worden getoond en verborgen, de zogenoemde <a href="/accordion/" class="utrecht-link utrecht-link--html-a">accordion</a>. De nieuwe content moet als eerste worden voorgelezen. Dit kan ook misgaan bij <a href="/tabs/" class="utrecht-link utrecht-link--html-a">tabs</a>. Als een dialoogvenster wordt geopend, moet de schermlezer de inhoud van bovenaf lezen. Dit punt lijkt sterk op <a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a">succescriterium 2.4.3 Focusvolgorde</a>. Het verschil is dat focusvolgorde gaat over interactieve elementen en leesvolgorde niet.</p>
+              <h3 id="fout-de-leesvolgorde-na-het-sluiten-van-een-dialoogvensters" class="utrecht-heading-3">Fout: de leesvolgorde na het sluiten van een dialoogvensters</h3>
+              <p>Na het sluiten van <a href="/dialog/" class="utrecht-link utrecht-link--html-a">een dialoogvenster</a> keert een schermlezer niet terug naar het element dat het venster opende, maar leest de inhoud verder vanaf een onlogische plek. Er kan een verschil zijn tussen de toetsenbordfocus <a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a">(SC 2.4.3)</a> en de volgorde waarin een schermlezer de inhoud van een pagina leest (dit SC 1.3.2). Daarom moet alle content die dynamisch verschijnt worden getest met een schermlezer.</p>
+              <h3 id="fout-de-leesvolgorde-terwijl-een-menu-of-een-dialoog-open-zijn" class="utrecht-heading-3">Fout: de leesvolgorde terwijl een menu of een dialoog open zijn</h3>
+              <p>Een schermlezer kan de inhoud van de pagina voorlezen terwijl dat niet de bedoeling is. Bijvoorbeeld: een mobiel menu dat niet zichtbaar is, of de inhoud van de pagina terwijl een dialoogvenster nog open is.</p>
+              <h3 id="demo-lees--en-focusvolgorde-in-de-screenreader-voiceover" class="utrecht-heading-3">Demo lees- en focusvolgorde in de screenreader VoiceOver</h3>
               <link rel="preload" href="https://i.ytimg.com/vi/OEe1wkRK2jg/hqdefault.jpg" as="image" /><noscript
                ><a href="https://www.youtube.com/watch?v=OEe1wkRK2jg" aria-label="Watch Demo betekenisvolle volgorde in de screenreader VoiceOver on YouTube">Watch &quot;<!-- -->Demo betekenisvolle volgorde in de screenreader VoiceOver<!-- -->&quot; on YouTube</a></noscript
               >
               <article class="yt-lite" data-title="Demo betekenisvolle volgorde in de screenreader VoiceOver" role="img" aria-label="Demo betekenisvolle volgorde in de screenreader VoiceOver - YouTube video preview" style="background-image: url(https://i.ytimg.com/vi/OEe1wkRK2jg/hqdefault.jpg); --aspect-ratio: 56.25%">
                <button type="button" class="lty-playbtn" aria-label="Bekijk Demo betekenisvolle volgorde in de screenreader VoiceOver" tabindex="0"><span class="lty-visually-hidden">Bekijk</span></button>
               </article>
+              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
+              <p>Let bij het testen op de volgorde van elementen in de DOM en de visuele volgorde. Is de volgorde waarin de inhoud van boven naar beneden wordt voorgelezen begrijpelijk als je de pagina niet ziet?</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Controleer de HTML-structuur met een <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" class="utrecht-link utrecht-link--html-a">browser inspector</a>.</li>
+               <li>Lees de Accessibility Tree</li>
+               <li>Zet CSS uit. Met CSS kan de leesvolgorde worden aangepast, bijvoorbeeld met <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout" class="utrecht-link utrecht-link--html-a">CSS grid layout</a> en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts" class="utrecht-link utrecht-link--html-a">Flexbox</a>. CSS uitschakelen gaat het gemakkelijkst in Firefox. Kies in het menu &#x27;View&#x27; &gt; &#x27;Page style&#x27; &gt; &#x27;No style&#x27;. Of gebruik Web Developer tool, tab CSS &gt; Disable all styles.</li>
+               <li>Tabellen kunnen worden gelineariseerd met de Web Developer tool, tab ‘Miscellaneous’ &gt; optie ‘Linearize Page’. Deze optie werkt niet op alle pagina’s.</li>
+               <li>Gebruik schermlezer om te testen of de leesvolgorde van de dynamisch geïnjecteerde content klopt.</li>
+              </ul>
+              <p>Nuttige links voor het testen met screenreaders:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><a href="https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-voiceover-macos" class="utrecht-link utrecht-link--html-a">Zelf testen met screenreaders - VoiceOver (macOS)</a> op Toegankelijk Online.</li>
+               <li><a href="https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-nvda-windows" class="utrecht-link utrecht-link--html-a">Zelf testen met screenreaders - NVDA (Windows)</a> op Toegankelijk Online.</li>
+               <li>
+                <a href="https://accessibility-manual.dwp.gov.uk/best-practice/screen-reader-testing" class="utrecht-link utrecht-link--html-a"><span lang="en">Screenreader testing</span></a> op GOV.UK.
+               </li>
+               <li>
+                <a href="https://dequeuniversity.com/screenreaders/" class="utrecht-link utrecht-link--html-a"><span lang="en">Screen Reader Keyboard Shortcuts and Gestures</span></a> op Deque University.
+               </li>
+              </ul>
+              <p>Test de volgorde van de inhoud ook in verschillende responsieve weergaves en oriëntaties. Zoom ook in tot 400%. Verandert de volgorde van de inhoud? Is de voorgelezen inhoud nog steeds logisch en betekenisvol?</p>
+              <p>Dit succescriterium gaat alleen over de leesvolgorde. De volgorde van de toetsenbordfocus valt onder het <a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 2.4.3 Focus volgorde</a>.</p>
               <h2 id="gerelateerde-nl-design-system-richtlijnen" class="utrecht-heading-2">Gerelateerde NL Design System-richtlijnen</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Formulieren: <a href="/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang/" class="utrecht-link utrecht-link--html-a">Plaats de informatie over waar de gebruiker is in de stappen boven het formulier</a>.</li>
@@ -467,36 +504,6 @@
               </p>
               <h2 id="gebruikersonderzoek" class="utrecht-heading-2">Gebruikersonderzoek</h2>
               <p>Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij <a href="https://gebruikersonderzoeken.nl/docs/onderzoek-delen/" class="utrecht-link utrecht-link--html-a">Gebruikersonderzoeken delen</a> op gebruikersonderzoeken.nl.</p>
-              <h2 id="hoe-te-testen" class="utrecht-heading-2">Hoe te testen</h2>
-              <p>De handigste manier om dit goed te testen is met een screenreader, zoals VoiceOver voor de Mac of NVDA voor Windows.</p>
-              <p>Nuttige links voor het testen met screenreaders:</p>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li><a href="https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-voiceover-macos" class="utrecht-link utrecht-link--html-a">Zelf testen met screenreaders - VoiceOver (macOS)</a> op Toegankelijk Online.</li>
-               <li><a href="https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-nvda-windows" class="utrecht-link utrecht-link--html-a">Zelf testen met screenreaders - NVDA (Windows)</a> op Toegankelijk Online.</li>
-               <li>
-                <a href="https://accessibility-manual.dwp.gov.uk/best-practice/screen-reader-testing" class="utrecht-link utrecht-link--html-a"><span lang="en">Screenreader testing</span></a> op GOV.UK.
-               </li>
-               <li>
-                <a href="https://dequeuniversity.com/screenreaders/" class="utrecht-link utrecht-link--html-a"><span lang="en">Screen Reader Keyboard Shortcuts and Gestures</span></a> op Deque University.
-               </li>
-              </ul>
-              <p>Controleer ook de HTML-structuur met een <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" class="utrecht-link utrecht-link--html-a">browser inspector</a>.</p>
-              <p>Je kunt ook testen door CSS uit te schakelen. Let daarbij wel op verschillen in leesvolgorde in de DOM en visuele volgorde. In CSS kan de leesvolgorde namelijk aangepast worden, bijvoorbeeld met <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout" class="utrecht-link utrecht-link--html-a">CSS grid layout</a> en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox" class="utrecht-link utrecht-link--html-a">Flexbox</a>.</p>
-              <p>CSS uitschakelen is het makkelijkst in Firefox. Kies in het menu <span lang="en">&#x27;View&#x27; &gt; &#x27;Page style&#x27; &gt; &#x27;No style&#x27;</span>.</p>
-              <p><strong>Let op</strong>: dit succescriterium gaat alleen over de leesvolgorde. De volgorde van de toetsenbordfocus valt onder het <a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium Focus volgorde</a>.</p>
-              <p>Test:</p>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>Is de volgorde waarin de inhoud van boven naar beneden wordt voorgelezen begrijpelijk als je het scherm niet ziet? Met andere woorden, is het begrip van de inhoud onafhankelijk van het visueel ontwerp?</li>
-               <li>Wordt alle inhoud die bij een kopje hoort ook ná het kopje voorgelezen?</li>
-               <li>Is het begrijpelijk welke metadata, zoals auteur, categorie of datum, bij welke inhoud hoort?</li>
-              </ul>
-              <p>Test de volgorde van de inhoud ook in verschillende responsieve weergaves en oriëntaties. Zoom ook in tot 400%. Verandert de volgorde van de inhoud? Is de voorgelezen inhoud nog steeds logisch en betekenisvol?</p>
-              <h2 id="veelgemaakte-fouten" class="utrecht-heading-2">Veelgemaakte fouten</h2>
-              <h3 id="fout-de-volgorde-van-de-inhoud-is-niet-meer-logisch-voor-kleine-schermgroottes" class="utrecht-heading-3">Fout: de volgorde van de inhoud is niet meer logisch voor kleine schermgroottes</h3>
-              <p>De leesvolgorde is anders voor ingezoomde weergaves dan voor de desktopweergave. Controleer de leesvolgorde voor de verschillende breedtes en oriëntaties en zoom ook in tot 400%. Overleg dit ook met de designer.</p>
-              <h3 id="fout-er-staat-content-boven-een-gerelateerd-kopje" class="utrecht-heading-3">Fout: er staat content boven een gerelateerd kopje</h3>
-              <p>Het is voor dit criterium van belang dat content die bij een kopje hoort zich onder dat kopje bevindt, in ieder geval in de leesvolgorde. Maar soms wordt in het ontwerp gekozen om content die bij een kopje hoort visueel boven dat kopje te plaatsen. Overleg dan met de designer of dit eventueel anders kan, of pas de volgorde aan met CSS (zie hieronder).</p>
-              <p>Het is mogelijk om de visuele volgorde met CSS-code aan te passen zodat de inhoud anders wordt voorgelezen van de visuele volgorde, maar pas hierbij op. De <strong>visuele</strong> volgorde van de toetsenbordfocus moet ook betekenisvol zijn, zie hiervoor het <a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 2.4.3 Focusvolgorde</a>.</p>
               <h2 id="w3c-referenties" class="utrecht-heading-2">W3C referenties</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>
@@ -551,11 +558,11 @@
            <div class="tableOfContents_yXC1 thin-scrollbar theme-doc-toc-desktop">
             <ul class="table-of-contents table-of-contents__left-border">
              <li><a href="#uitleg" class="table-of-contents__link toc-highlight">Uitleg</a></li>
+             <li><a href="#veelgemaakte-fouten" class="table-of-contents__link toc-highlight">Veelgemaakte fouten</a></li>
+             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
              <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
              <li><a href="#bron" class="table-of-contents__link toc-highlight">Bron</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
-             <li><a href="#hoe-te-testen" class="table-of-contents__link toc-highlight">Hoe te testen</a></li>
-             <li><a href="#veelgemaakte-fouten" class="table-of-contents__link toc-highlight">Veelgemaakte fouten</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
              <li><a href="#belangrijk-de-richtlijnen-van-nl-design-system-zijn-geen-wettelijke-verplichting" class="table-of-contents__link toc-highlight">Belangrijk: De richtlijnen van NL Design System zijn geen wettelijke verplichting</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
