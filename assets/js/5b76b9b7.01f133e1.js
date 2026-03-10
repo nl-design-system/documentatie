@@ -73,9 +73,9 @@
           );
          })(e.id, w, j, u)
        : null,
-      S = i.useMemo(() => e.thumbnail || f || `https://i.ytimg.com/${w}/${e.playlist ? g : m}/${u}.${j}`, [e.thumbnail, f, w, e.playlist, g, m, u, j]),
-      x = e.activatedClass || 'lyt-activated',
-      D = e.adNetwork || !1,
+      D = i.useMemo(() => e.thumbnail || f || `https://i.ytimg.com/${w}/${e.playlist ? g : m}/${u}.${j}`, [e.thumbnail, f, w, e.playlist, g, m, u, j]),
+      S = e.activatedClass || 'lyt-activated',
+      x = e.adNetwork || !1,
       L = e.aspectHeight || 9,
       z = e.aspectWidth || 16,
       N = e.iframeClass || '',
@@ -91,9 +91,9 @@
       }, [o, $, e.focusOnLoad, n]),
       (0, t.jsxs)(t.Fragment, {
        children: [
-        !e.lazyLoad && (0, t.jsx)('link', { rel: I, href: S, as: 'image' }),
-        (0, t.jsx)(t.Fragment, { children: s && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: y }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), D && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
-        e.seo && !e.playlist && (0, t.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: l(e.id, c, S, y, e.seo) } }),
+        !e.lazyLoad && (0, t.jsx)('link', { rel: I, href: D, as: 'image' }),
+        (0, t.jsx)(t.Fragment, { children: s && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: y }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), x && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
+        e.seo && !e.playlist && (0, t.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: l(e.id, c, D, y, e.seo) } }),
         U && !e.playlist && (0, t.jsx)('noscript', { children: (0, t.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${c} on YouTube`, children: ['Watch "', c, '" on YouTube'] }) }),
         (0, t.jsxs)(R, {
          onPointerOver: () => {
@@ -102,12 +102,12 @@
          onClick: () => {
           o || d(!0);
          },
-         className: `${_} ${o ? x : ''}`,
+         className: `${_} ${o ? S : ''}`,
          'data-title': c,
          role: o ? void 0 : 'img',
          'aria-label': o ? void 0 : `${c} - YouTube video preview`,
-         style: { ...(!e.lazyLoad && { backgroundImage: `url(${S})` }), '--aspect-ratio': (L / z) * 100 + '%', ...(e.style || {}) },
-         children: [e.lazyLoad && !o && (0, t.jsx)('img', { src: S, alt: `${c} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), (0, t.jsx)('button', { type: 'button', className: O, 'aria-label': `${h} ${c}`, 'aria-hidden': o || void 0, tabIndex: o ? -1 : 0, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: h }) }), o && (0, t.jsx)('iframe', { ref: n, className: N, title: c, width: '560', height: '315', style: { border: 0 }, allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: v, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+         style: { ...(!e.lazyLoad && { backgroundImage: `url(${D})` }), '--aspect-ratio': (L / z) * 100 + '%', ...(e.style || {}) },
+         children: [e.lazyLoad && !o && (0, t.jsx)('img', { src: D, alt: `${c} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), (0, t.jsx)('button', { type: 'button', className: O, 'aria-label': `${h} ${c}`, 'aria-hidden': o || void 0, tabIndex: o ? -1 : 0, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: h }) }), o && (0, t.jsx)('iframe', { ref: n, className: N, title: c, width: '560', height: '315', style: { border: 0 }, allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: v, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
       })
@@ -117,7 +117,7 @@
   },
   84800(e, n, s) {
    (s.r(n), s.d(n, { assets: () => m, contentTitle: () => d, default: () => u, frontMatter: () => o, metadata: () => t, toc: () => g }));
-   const t = JSON.parse('{"id":"community/events/design-systems-week/eerdere-edities/2022","title":"Design Systems Week 2022","description":"Tijdens Design Systems Week 2022 met sprekers uit de NL Design System community. Gelukkig hebben we de video\'s nog!","source":"@site/docs/community/events/design-systems-week/eerdere-edities/2022.mdx","sourceDirName":"community/events/design-systems-week/eerdere-edities","slug":"/events/design-systems-week-2022","permalink":"/events/design-systems-week-2022","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2022.mdx","tags":[],"version":"current","sidebarPosition":4,"frontMatter":{"title":"Design Systems Week 2022","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"2022","sidebar_position":4,"pagination_label":"Design Systems Week 2022","slug":"/events/design-systems-week-2022"},"sidebar":"community","previous":{"title":"Videos 2023","permalink":"/events/design-systems-week-2023/programma"},"next":{"title":"Belangenorganisaties","permalink":"/community/belangenorganisaties/aanmelden"}}');
+   const t = JSON.parse('{"id":"community/events/design-systems-week/eerdere-edities/2022","title":"Design Systems Week 2022","description":"Tijdens Design Systems Week 2022 met sprekers uit de NL Design System community. Gelukkig hebben we de video\'s nog!","source":"@site/docs/community/events/design-systems-week/eerdere-edities/2022.mdx","sourceDirName":"community/events/design-systems-week/eerdere-edities","slug":"/events/design-systems-week-2022","permalink":"/events/design-systems-week-2022","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2022.mdx","tags":[],"version":"current","sidebarPosition":4,"frontMatter":{"title":"Design Systems Week 2022","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"2022","sidebar_position":4,"pagination_label":"Design Systems Week 2022","slug":"/events/design-systems-week-2022"},"sidebar":"community","previous":{"title":"Videos 2023","permalink":"/events/design-systems-week-2023/programma"},"next":{"title":"Design systems","permalink":"/community/design-systems"}}');
    var i = s(86070),
     a = s(18439),
     l = s(75397),

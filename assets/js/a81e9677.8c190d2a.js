@@ -16,7 +16,7 @@
   },
   6392(e, n, t) {
    'use strict';
-   (t.r(n), t.d(n, { assets: () => O, component: () => W, contentTitle: () => G, default: () => X, description: () => $, frontMatter: () => V, issueNumber: () => Z, metadata: () => r, title: () => P, toc: () => I }));
+   (t.r(n), t.d(n, { assets: () => O, component: () => I, contentTitle: () => G, default: () => X, description: () => Z, frontMatter: () => V, issueNumber: () => $, metadata: () => r, title: () => P, toc: () => W }));
    const r = JSON.parse('{"id":"componenten/breadcrumb-navigation/index","title":"Breadcrumb Navigation","description":"Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.","source":"@site/docs/componenten/breadcrumb-navigation/index.mdx","sourceDirName":"componenten/breadcrumb-navigation","slug":"/breadcrumb-navigation","permalink":"/breadcrumb-navigation","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/breadcrumb-navigation/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Breadcrumb Navigation","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Breadcrumb Navigation","pagination_label":"Breadcrumb Navigation","description":"Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.","slug":"/breadcrumb-navigation","keywords":["back","back link","breadcrumb navigation","breadcrumb trail","breadcrumbs","broodkruimelpad","broodkruimels","hi\xebrarchie","hierarchy","home","homepage","home","kruimelpad","links","nav","navigatie","navigeren","navigation","trail","up"]},"sidebar":"componenten","previous":{"title":"Blockquote","permalink":"/blockquote"},"next":{"title":"Button","permalink":"/button"}}');
    var i = t(86070),
     o = t(18439),
@@ -84,7 +84,7 @@
     S = t(69488),
     T = t(31820),
     M = t(87711);
-   const H = [
+   const F = [
      { title: 'De linkteksten van de links in het broodkruimelpad zijn voor iedereen duidelijk', sc: '2.4.4', status: '', component: _.Ay },
      {
       title: 'De bezoeker kan het activeren van links in het broodkruimelpad annuleren',
@@ -109,7 +109,7 @@
       },
      },
     ],
-    F = [
+    H = [
      { title: 'De contrastratio tussen de tekst en de achtergrondkleur in het broodkruimelpad is hoog genoeg', sc: '1.4.3', status: '', component: u.Ay },
      { title: 'Het broodkruimelpad bevat niet onnodig afbeeldingen van tekst', sc: '1.4.5', status: '', component: D.Ay },
      {
@@ -206,14 +206,14 @@
     G = void 0,
     O = {},
     P = 'Breadcrumb Navigation',
-    $ = 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.',
-    Z = 54,
-    W = s.find((e) => e.number === Z),
-    I = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...a.RM];
+    Z = 'Toont de locatie van de pagina binnen de hi\xebrarchie van een website en biedt de mogelijkheid om tussen niveaus te navigeren.',
+    $ = 54,
+    I = s.find((e) => e.number === $),
+    W = [{ value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }, { value: 'Acceptatiecriteria', id: 'acceptatiecriteria', level: 2 }, ...a.RM];
    function U(e) {
     const n = { h2: 'h2', ...(0, o.R)(), ...e.components },
      { CriteriaList: t, CriteriaListItem: r } = n;
-    return (t || K('CriteriaList', !0), r || K('CriteriaListItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(c.Fc, { component: W, headingLevel: 1, description: $ }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(c.VK, { component: W, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(c.mu, { component: W, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', children: H.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', children: F.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid zoom en herschalen', children: C.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid toetsenbord', children: B.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid screenreader', children: E.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(c.$9, { component: W, headingLevel: 2 })] }));
+    return (t || K('CriteriaList', !0), r || K('CriteriaListItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(c.Fc, { component: I, headingLevel: 1, description: Z }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(c.VK, { component: I, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(c.mu, { component: I, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'acceptatiecriteria', children: 'Acceptatiecriteria' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid algemeen', children: F.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid visueel ontwerp', children: H.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid zoom en herschalen', children: C.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid toetsenbord', children: B.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(t, { headingLevel: 4, testCategory: 'Toegankelijkheid screenreader', children: E.map(({ component: e, ...n }) => (0, i.jsx)(r, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(c.$9, { component: I, headingLevel: 2 })] }));
    }
    function X(e = {}) {
     const { wrapper: n } = { ...(0, o.R)(), ...e.components };
@@ -639,7 +639,7 @@
    const o = [];
    function s(e) {
     const n = { p: 'p', ...(0, i.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Wanneer een bezoeker met hulpsoftware de inhoud van begin tot eind leest, moet de informatie en de volgorde logisch en begrijpelijk zijn. Het is belangrijk dat de informatie in de juiste leesvolgorde in de HTML staat. De leesvolgorde mag afwijken van wat je ziet, maar de betekenis moet hetzelfde blijven.' });
+    return (0, r.jsx)(n.p, { children: 'Een bezoeker die een screenreader gebruikt, hoort de content van een pagina in de volgorde waarin die in de HTML staat. Die volgorde komt overeen met wat een ziende bezoeker op het scherm ziet. Zo begrijpt iedereen welke informatie bij welk onderdeel hoort, ongeacht hoe iemand de pagina gebruikt.' });
    }
    function a(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };

@@ -3,7 +3,7 @@
  [61386],
  {
   18439(e, n, i) {
-   i.d(n, { R: () => o, x: () => s });
+   i.d(n, { R: () => o, x: () => d });
    var r = i(30758);
    const t = {},
     a = r.createContext(t);
@@ -16,19 +16,19 @@
      [n, e],
     );
    }
-   function s(e) {
+   function d(e) {
     let n;
     return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(t) : e.components || t) : o(e.components)), r.createElement(a.Provider, { value: n }, e.children));
    }
   },
   37738(e, n, i) {
-   (i.r(n), i.d(n, { assets: () => l, contentTitle: () => d, default: () => h, frontMatter: () => s, metadata: () => r, toc: () => j }));
-   const r = JSON.parse('{"id":"project/schrijfwijzer/index","title":"Schrijfwijzer","description":"Schrijfwijzer voor communicatie vanuit het project NL Design System.","source":"@site/docs/project/schrijfwijzer/index.mdx","sourceDirName":"project/schrijfwijzer","slug":"/project/schrijfwijzer/","permalink":"/project/schrijfwijzer/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/project/schrijfwijzer/index.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Schrijfwijzer","hide_title":true,"sidebar_label":"Schrijfwijzer","sidebar_position":1,"pagination_label":"Schrijfwijzer","description":"Schrijfwijzer voor communicatie vanuit het project NL Design System.","keywords":["kernteam"]},"sidebar":"project","previous":{"title":"Global design systems","permalink":"/project/global-design-system"},"next":{"title":"Schrijfwijzer","permalink":"/project/schrijfwijzer/"}}');
+   (i.r(n), i.d(n, { assets: () => l, contentTitle: () => s, default: () => h, frontMatter: () => d, metadata: () => r, toc: () => j }));
+   const r = JSON.parse('{"id":"project/schrijfwijzer/index","title":"Schrijfwijzer","description":"Schrijfwijzer voor communicatie vanuit het project NL Design System.","source":"@site/docs/project/schrijfwijzer/index.mdx","sourceDirName":"project/schrijfwijzer","slug":"/project/schrijfwijzer/","permalink":"/project/schrijfwijzer/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/project/schrijfwijzer/index.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Schrijfwijzer","hide_title":true,"sidebar_label":"Schrijfwijzer","sidebar_position":1,"pagination_label":"Schrijfwijzer","description":"Schrijfwijzer voor communicatie vanuit het project NL Design System.","keywords":["kernteam"]},"sidebar":"project","previous":{"title":"Klachten","permalink":"/project/klachten"},"next":{"title":"Schrijfwijzer","permalink":"/project/schrijfwijzer/"}}');
    var t = i(86070),
     a = i(18439),
     o = i(46447);
-   const s = { title: 'Schrijfwijzer', hide_title: !0, sidebar_label: 'Schrijfwijzer', sidebar_position: 1, pagination_label: 'Schrijfwijzer', description: 'Schrijfwijzer voor communicatie vanuit het project NL Design System.', keywords: ['kernteam'] },
-    d = 'Schrijfwijzer',
+   const d = { title: 'Schrijfwijzer', hide_title: !0, sidebar_label: 'Schrijfwijzer', sidebar_position: 1, pagination_label: 'Schrijfwijzer', description: 'Schrijfwijzer voor communicatie vanuit het project NL Design System.', keywords: ['kernteam'] },
+    s = 'Schrijfwijzer',
     l = {},
     j = [
      { value: 'Schrijfstijl', id: 'schrijfstijl', level: 2 },
