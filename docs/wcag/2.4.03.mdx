@@ -23,6 +23,7 @@ keywords:
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import { Guideline } from "@site/src/components/Guideline";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
 import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
@@ -52,14 +53,22 @@ De focus springt onvoorspelbaar tussen verschillende secties zonder logisch patr
 
 Als een dialoogvenster de pagina bedekt maar de focus niet naar dat venster verplaatst, kan de bezoeker het venster niet bedienen met het toetsenbord. De focus zit nog ergens achter het venster.
 
+<Guideline appearance="dont" title="Dialoogvenster openen zonder focus te verplaatsen">
+
+{/* prettier-ignore */}
 ```javascript
-// Fout: dialoogvenster openen zonder focus te verplaatsen
 function openDialog() {
   document.getElementById("dialog").style.display = "block";
   document.getElementById("overlay").style.display = "block";
 }
+```
 
-// Goed: focus verplaatsen naar het dialoogvenster
+</Guideline>
+
+<Guideline appearance="do" title="Focus verplaatsen naar het dialoogvenster">
+
+{/* prettier-ignore */}
+```javascript
 function openDialog() {
   const dialog = document.getElementById("dialog");
   dialog.style.display = "block";
@@ -68,15 +77,19 @@ function openDialog() {
 }
 ```
 
+</Guideline>
+
 ### Fout: focus verlaat het dialoogvenster terwijl het nog open is
 
 Na het doorlopen van alle interactieve elementen in een dialoogvenster kan de focus het venster verlaten terwijl het nog open is. Denk aan een <span lang="en">lightbox</span> of mobiel menu. De bezoeker navigeert dan door elementen achter het venster. Als het venster bovendien niet met <kbd>Escape</kbd> te sluiten is, zit de bezoeker vast.
 
+<Guideline appearance="do" title="Focus trap in een dialoogvenster">
+
+{/* prettier-ignore */}
 ```javascript
-// Goed: focus trap in een dialoogvenster
 function trapFocus(dialog) {
   const focusableElements = dialog.querySelectorAll(
-    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
   );
   const first = focusableElements[0];
   const last = focusableElements[focusableElements.length - 1];
@@ -99,18 +112,28 @@ function trapFocus(dialog) {
 }
 ```
 
+</Guideline>
+
 ### Fout: focus keert niet terug naar het verwachte element
 
 Na het sluiten van een dialoogvenster keert de focus niet terug naar de knop die het venster heeft geopend, of naar een ander element naast deze knop. De bezoeker is de draad kwijt en moet opnieuw door de pagina tabben om te vinden waar die was.
 
+<Guideline appearance="dont" title="Focus verdwijnt na sluiten van het dialoogvenster">
+
+{/* prettier-ignore */}
 ```javascript
-// Fout: focus verdwijnt na sluiten
 function sluitDialog() {
   document.getElementById("dialog").style.display = "none";
   // Focus gaat nergens naartoe — belandt op <body>
 }
+```
 
-// Goed: focus terug naar de trigger
+</Guideline>
+
+<Guideline appearance="do" title="Focus terug naar de trigger na sluiten">
+
+{/* prettier-ignore */}
+```javascript
 let triggerElement = null;
 
 function openDialog(trigger) {
@@ -125,12 +148,15 @@ function sluitDialog() {
 }
 ```
 
+</Guideline>
+
 ### Fout: cookiebanner krijgt niet als eerste de focus
 
 Een cookiebanner verschijnt bij het laden van de pagina, maar staat onderaan in de HTML en daardoor onderaan in de focusvolgorde. De banner bedekt de inhoud van de pagina, maar de bezoeker moet eerst door de volledige pagina tabben om de banner te bereiken.
 
+<Guideline appearance="dont" title="Cookiebanner onderaan de HTML">
+
 ```html
-<!-- Fout: cookiebanner onderaan de HTML -->
 <header>...</header>
 <main>...</main>
 <footer>...</footer>
@@ -139,8 +165,13 @@ Een cookiebanner verschijnt bij het laden van de pagina, maar staat onderaan in 
   <button>Accepteren</button>
   <button>Weigeren</button>
 </div>
+```
 
-<!-- Goed: cookiebanner bovenaan de HTML of met focusmanagement -->
+</Guideline>
+
+<Guideline appearance="do" title="Cookiebanner bovenaan de HTML of met focusmanagement">
+
+```html
 <div class="cookiebanner" role="dialog" aria-label="Cookiemelding">
   <p>Wij gebruiken cookies.</p>
   <button autofocus>Accepteren</button>
@@ -151,20 +182,28 @@ Een cookiebanner verschijnt bij het laden van de pagina, maar staat onderaan in 
 <footer>...</footer>
 ```
 
+</Guideline>
+
 ### Fout: focusvolgorde in een accordion of tabs is onjuist
 
 In een accordion moeten de knoppen die panelen openen achtereenvolgens focus krijgen. Als een paneel open is en interactieve elementen bevat, moet de focus naar die elementen gaan voordat de volgende knop aan de beurt is. Dit probleem komt ook voor bij "Meer opties"-knoppen in filters of op overzichtspagina's.
 
+<Guideline appearance="dont" title="Geopend paneel staat na alle knoppen in de HTML">
+
 ```html
-<!-- Fout: geopend paneel staat na alle knoppen in de HTML -->
 <button aria-expanded="true">Sectie 1</button>
 <button aria-expanded="false">Sectie 2</button>
 <button aria-expanded="false">Sectie 3</button>
 <div class="paneel-1">
   <a href="/link-in-paneel-1">Link in paneel 1</a>
 </div>
+```
 
-<!-- Goed: paneel staat direct na de bijbehorende knop -->
+</Guideline>
+
+<Guideline appearance="do" title="Paneel staat direct na de bijbehorende knop">
+
+```html
 <button aria-expanded="true" aria-controls="paneel-1">Sectie 1</button>
 <div id="paneel-1" role="region">
   <a href="/link-in-paneel-1">Link in paneel 1</a>
@@ -175,12 +214,15 @@ In een accordion moeten de knoppen die panelen openen achtereenvolgens focus kri
 <div id="paneel-3" role="region" hidden>...</div>
 ```
 
+</Guideline>
+
 ### Fout: focusvolgorde in een carrousel is onjuist
 
 De focus doorloopt de navigatieknoppen van een carrousel correct, maar als een slide interactieve elementen bevat, zoals links en knoppen, wordt de focus niet naar die elementen verplaatst. De bezoeker kan de inhoud van de actieve slide niet bereiken.
 
+<Guideline appearance="dont" title="Slide-content is niet focusbaar">
+
 ```html
-<!-- Fout: slide-content is niet focusbaar -->
 <div class="carrousel">
   <button aria-label="Vorige slide">&#8249;</button>
   <button aria-label="Volgende slide">&#8250;</button>
@@ -190,8 +232,13 @@ De focus doorloopt de navigatieknoppen van een carrousel correct, maar als een s
     <!-- tabindex="-1" haalt de link uit de focusvolgorde -->
   </div>
 </div>
+```
 
-<!-- Goed: interactieve elementen in de actieve slide zijn focusbaar -->
+</Guideline>
+
+<Guideline appearance="do" title="Interactieve elementen in de actieve slide zijn focusbaar">
+
+```html
 <div class="carrousel">
   <div class="slide actief">
     <h3>Aanbieding</h3>
@@ -202,12 +249,16 @@ De focus doorloopt de navigatieknoppen van een carrousel correct, maar als een s
 </div>
 ```
 
+</Guideline>
+
 ### Fout: focus wordt niet naar een foutmelding verplaatst
 
 Na het verzenden van een formulier verschijnen foutmeldingen bovenaan het formulier, maar de focus blijft op de verzendknop staan. De bezoeker merkt niet dat er fouten zijn en weet niet waar die staan.
 
+<Guideline appearance="dont" title="Foutmeldingen tonen zonder focus te verplaatsen">
+
+{/* prettier-ignore */}
 ```javascript
-// Fout: foutmeldingen tonen zonder focus te verplaatsen
 function valideerFormulier() {
   const fouten = vindFouten();
   if (fouten.length > 0) {
@@ -215,8 +266,14 @@ function valideerFormulier() {
     // Focus blijft op de verzendknop
   }
 }
+```
 
-// Goed: focus naar de eerste foutmelding
+</Guideline>
+
+<Guideline appearance="do" title="Focus naar de eerste foutmelding">
+
+{/* prettier-ignore */}
+```javascript
 function valideerFormulier() {
   const fouten = vindFouten();
   if (fouten.length > 0) {
@@ -226,20 +283,27 @@ function valideerFormulier() {
 }
 ```
 
+</Guideline>
+
 ### Fout: skiplink verplaatst de focus niet naar het juiste doel
 
 Een skiplink moet de focus direct naar de unieke hoofdcontent van de pagina brengen. Als de skiplink alleen de pagina scrollt maar de focus niet verplaatst, navigeert de bezoeker na de volgende <kbd>Tab</kbd>-druk weer vanaf het begin van de pagina.
 
+<Guideline appearance="dont" title="Pagina scrollt naar #main maar focus blijft op de skiplink">
+
 ```html
-<!-- Fout: pagina scrollt naar #main maar focus blijft op de skiplink -->
 <a href="#main">Ga naar inhoud</a>
 ...
 <main id="main">
   <h1>Paginatitel</h1>
 </main>
+```
 
-<!-- Goed: doel is focusbaar -->
-<!-- In sommige browsers krijgt main geen focus zonder tabindex -->
+</Guideline>
+
+<Guideline appearance="do" title="Doel is focusbaar — in sommige browsers krijgt main geen focus zonder tabindex">
+
+```html
 <a href="#main">Ga naar inhoud</a>
 ...
 <main id="main" tabindex="-1">
@@ -247,19 +311,27 @@ Een skiplink moet de focus direct naar de unieke hoofdcontent van de pagina bren
 </main>
 ```
 
+</Guideline>
+
 ### Fout: in-page links verplaatsen de focus niet
 
 Een pagina bevat een inhoudsopgave. Na het klikken op een link scrollt de pagina naar de juiste sectie, maar de toetsenbordfocus blijft op de link in de inhoudsopgave staan. Bij de volgende <kbd>Tab</kbd>-druk spring je terug naar boven. Dit probleem komt ook voor bij "scroll naar boven"-links.
 
+<Guideline appearance="dont" title="Heading is niet focusbaar">
+
 ```html
-<!-- Fout: heading is niet focusbaar -->
 <nav>
   <a href="#sectie-2">Hoofdstuk 2</a>
 </nav>
 ...
 <h2 id="sectie-2">Hoofdstuk 2</h2>
+```
 
-<!-- Goed: heading is focusbaar met tabindex="-1" -->
+</Guideline>
+
+<Guideline appearance="do" title="Heading is focusbaar met tabindex=&quot;-1&quot;">
+
+```html
 <nav>
   <a href="#sectie-2">Hoofdstuk 2</a>
 </nav>
@@ -267,12 +339,15 @@ Een pagina bevat een inhoudsopgave. Na het klikken op een link scrollt de pagina
 <h2 id="sectie-2" tabindex="-1">Hoofdstuk 2</h2>
 ```
 
+</Guideline>
+
 ### Fout: positieve tabindex maakt focusvolgorde onlogisch
 
 Een developer heeft `tabindex`-attributen met positieve waarden toegevoegd om de focus binnen een <span lang="en">widget</span> te sturen. Het resultaat: de focusvolgorde op de volledige pagina is onlogisch en onvoorspelbaar. Elementen met een positieve `tabindex` krijgen altijd als eerste focus, ongeacht hun positie in de HTML.
 
+<Guideline appearance="dont" title="Positieve tabindex verstoort de hele pagina">
+
 ```html
-<!-- Fout: positieve tabindex verstoort de hele pagina -->
 <nav>
   <a href="/">Home</a>
   <a href="/over-ons">Over ons</a>
@@ -283,8 +358,13 @@ Een developer heeft `tabindex`-attributen met positieve waarden toegevoegd om de
   <!-- Focus gaat eerst naar Verzenden (1), dan Zoeken (2),
        dan pas de navigatielinks (0) -->
 </main>
+```
 
-<!-- Goed: gebruik de HTML-volgorde, geen positieve tabindex -->
+</Guideline>
+
+<Guideline appearance="do" title="Gebruik de HTML-volgorde, geen positieve tabindex">
+
+```html
 <nav>
   <a href="/">Home</a>
   <a href="/over-ons">Over ons</a>
@@ -294,6 +374,8 @@ Een developer heeft `tabindex`-attributen met positieve waarden toegevoegd om de
   <button>Verzenden</button>
 </main>
 ```
+
+</Guideline>
 
 ## Gerelateerde succescriteria
 
