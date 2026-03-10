@@ -4,11 +4,11 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.3.2 Betekenisvolle volgorde
 pagination_label: WCAG-succescriterium 1.3.2 Betekenisvolle volgorde
-description: Geef toetsenbordgebruikers de mogelijkheid om binnen een pagina sneller te navigeren door onderdelen te kunnen overslaan.
+description: Als het belangrijk is dat de inhoud van een pagina in een bepaalde volgorde wordt gelezen, moet hulpsoftware die volgorde ook kunnen volgen.
 slug: 1.3.2
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - aanpasbaar
   - perceivable
@@ -35,17 +35,72 @@ import Summary from "./summaries/_1.3.2-summary.md";
 
 <Summary />
 
-Gebruikers van [screenreaders](/woordenlijst/#screenreader) lezen informatie op een webpagina van boven naar beneden. Dan is het belangrijk dat de informatie ook in deze leesvolgorde in de gegenereerde code, de [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), staat.
+## Veelgemaakte fouten
 
-Screenreadergebruikers kunnen een lijst met de kopjes oproepen en een kopje kiezen vanwaar te lezen op een pagina.
-Als er gerelateerde informatie boven een kopje staat, mist de screenreadergebruiker deze inhoud.
+### Fout: onduidelijk bij welk artikel de gegevens horen
 
-Bijvoorbeeld:
-In een lijst met evenementen staat de categorie en de datum van het evenement boven het kopje. Alleen een visueel kader rondom de gegevens van het evenement, is duidelijk wat bij elkaar hoort. De screenreadergebruiker mist dan de juiste categorie en datum bij dat evenement als deze vanaf het kopje gaat lezen. Dit wordt gedemonstreerd met de screenreader VoiceOver in de onderstaande video.
+Koppen geven een pagina of een document structuur aan en laten zien wat bij elkaar hoort. Alle inhoud die onder een kop staat, hoort bij die kop. Gebruikers van schermlezers kunnen een lijst met koppen openen en naar een kop navigeren. Als informatie die bij een artikel hoort boven een kop staat, mist de bezoeker die informatie of lijkt het alsof die bij het vorige artikel hoort. Dit speelt alleen op pagina's met meerdere berichten.
 
-### Demo betekenisvolle volgorde in de screenreader VoiceOver
+### Fout: in een lijst met evenementen staan de categorie en de datum van het evenement boven het kopje
+
+Alleen een visueel kader rond de gegevens van het evenement maakt duidelijk wat bij elkaar hoort. Als een gebruiker van een schermlezer naar een kop navigeert en vanaf daar leest, mist die gebruiker de juiste categorie en datum bij dat evenement. Dit wordt gedemonstreerd met de schermlezer VoiceOver in de onderstaande video.
+
+### Fout: tekst in kolommen
+
+Als een pagina twee kolommen heeft met in elke kolom een afbeelding en een beschrijving, mag het niet zo zijn dat eerst de alt-tekst van de afbeeldingen wordt voorgelezen en daarna pas de beschrijvingen. Dan begrijpt een bezoeker die naar een schermlezer luistert niet bij welke afbeelding de beschrijving hoort.
+
+### Fout: de leesvolgorde in een tabel
+
+Stel dat een tabel op een pagina de openingstijden toont. In de eerste kolom staan de dagen van de week en in de tweede kolom de openingstijden. Een verkeerde leesvolgorde zou zijn: maandag, dinsdag, woensdag en daarna 9 - 15, 9 - 13, 9 - 20.
+
+### Fout: de leesvolgorde in een carrousel met bladerknoppen
+
+Als de knoppen boven de slides staan, dan leest een schermlezer de knoppen eerst.
+Een schermlezer leest dan: 'vorige', 'volgende', inhoud van slide 1, inhoud van slide 2. Een logische leesvolgorde is: eerst de inhoud van de slides en daarna de knoppen. Dan is pas duidelijk of verder bladeren gewenst is.
+
+### Fout: de leesvolgorde in diagrammen en grafieken
+
+Dit kan gebeuren bij svg-elementen die tekst bevatten. Dan worden bijvoorbeeld eerst de waarden van de X-as en daarna de waarden van de Y-as als losse getallen voorgelezen. De uitleg van wat deze assen betekenen kan dan op een verkeerd moment komen. Ook canvas- en object-elementen kunnen met een verkeerde leesvolgorde worden voorgelezen.
+
+### Fout: content die verschijnt door interactie met een webpagina
+
+Deze content moet op het juiste moment en in een logische volgorde worden voorgelezen.
+Bijvoorbeeld: een bezoeker opent een sectie waarin gerelateerde content kan worden getoond en verborgen, de zogenoemde [accordion](https://nldesignsystem.nl/accordion/). De nieuwe content moet als eerste worden voorgelezen. Dit kan ook misgaan bij [tabs](https://nldesignsystem.nl/tabs/). Als een dialoogvenster wordt geopend, moet de schermlezer de inhoud van bovenaf lezen. Dit punt lijkt sterk op [succescriterium 2.4.3 Focusvolgorde](https://nldesignsystem.nl/wcag/2.4.3/). Het verschil is dat focusvolgorde gaat over interactieve elementen en leesvolgorde niet.
+
+### Fout: de leesvolgorde na het sluiten van een dialoogvensters
+
+Na het sluiten van [een dialoogvenster](https://nldesignsystem.nl/dialog/) keert een schermlezer niet terug naar het element dat het venster opende, maar leest de inhoud verder vanaf een onlogische plek.
+Er kan een verschil zijn tussen de toetsenbordfocus [(SC 2.4.3)](https://nldesignsystem.nl/wcag/2.4.3/) en de volgorde waarin een schermlezer de inhoud van een pagina leest (dit SC 1.3.2). Daarom moet alle content die dynamisch verschijnt worden getest met een schermlezer.
+
+### Fout: de leesvolgorde terwijl een menu of een dialoog open zijn
+
+Een schermlezer kan de inhoud van de pagina voorlezen terwijl dat niet de bedoeling is.
+Bijvoorbeeld: een mobiel menu dat niet zichtbaar is, of de inhoud van de pagina terwijl een dialoogvenster nog open is.
+
+### Demo lees- en focusvolgorde in de screenreader VoiceOver
 
 <VideoPlayer id="OEe1wkRK2jg" title="Demo betekenisvolle volgorde in de screenreader VoiceOver" />
+
+## Hoe te testen
+
+Let bij het testen op de volgorde van elementen in de DOM en de visuele volgorde. Is de volgorde waarin de inhoud van boven naar beneden wordt voorgelezen begrijpelijk als je de pagina niet ziet?
+
+- Controleer de HTML-structuur met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
+- Lees de Accessibility Tree
+- Zet CSS uit. Met CSS kan de leesvolgorde worden aangepast, bijvoorbeeld met [CSS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout) en [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts). CSS uitschakelen gaat het gemakkelijkst in Firefox. Kies in het menu 'View' > 'Page style' > 'No style'. Of gebruik Web Developer tool, tab CSS > Disable all styles.
+- Tabellen kunnen worden gelineariseerd met de Web Developer tool, tab ‘Miscellaneous’ > optie ‘Linearize Page’. Deze optie werkt niet op alle pagina’s.
+- Gebruik schermlezer om te testen of de leesvolgorde van de dynamisch geïnjecteerde content klopt.
+
+Nuttige links voor het testen met screenreaders:
+
+- [Zelf testen met screenreaders - VoiceOver (macOS)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-voiceover-macos) op Toegankelijk Online.
+- [Zelf testen met screenreaders - NVDA (Windows)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-nvda-windows) op Toegankelijk Online.
+- [<span lang="en">Screenreader testing</span>](https://accessibility-manual.dwp.gov.uk/best-practice/screen-reader-testing) op GOV.UK.
+- [<span lang="en">Screen Reader Keyboard Shortcuts and Gestures</span>](https://dequeuniversity.com/screenreaders/) op Deque University.
+
+Test de volgorde van de inhoud ook in verschillende responsieve weergaves en oriëntaties. Zoom ook in tot 400%. Verandert de volgorde van de inhoud? Is de voorgelezen inhoud nog steeds logisch en betekenisvol?
+
+Dit succescriterium gaat alleen over de leesvolgorde. De volgorde van de toetsenbordfocus valt onder het [WCAG-succescriterium 2.4.3 Focus volgorde](https://nldesignsystem.nl/wcag/2.4.3/).
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -60,45 +115,6 @@ In een lijst met evenementen staat de categorie en de datum van het evenement bo
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-De handigste manier om dit goed te testen is met een screenreader, zoals VoiceOver voor de Mac of NVDA voor Windows.
-
-Nuttige links voor het testen met screenreaders:
-
-- [Zelf testen met screenreaders - VoiceOver (macOS)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-voiceover-macos) op Toegankelijk Online.
-- [Zelf testen met screenreaders - NVDA (Windows)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-nvda-windows) op Toegankelijk Online.
-- [<span lang="en">Screenreader testing</span>](https://accessibility-manual.dwp.gov.uk/best-practice/screen-reader-testing) op GOV.UK.
-- [<span lang="en">Screen Reader Keyboard Shortcuts and Gestures</span>](https://dequeuniversity.com/screenreaders/) op Deque University.
-
-Controleer ook de HTML-structuur met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
-
-Je kunt ook testen door CSS uit te schakelen. Let daarbij wel op verschillen in leesvolgorde in de DOM en visuele volgorde. In CSS kan de leesvolgorde namelijk aangepast worden, bijvoorbeeld met [CSS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) en [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox).
-
-CSS uitschakelen is het makkelijkst in Firefox. Kies in het menu <span lang="en">'View' > 'Page style' > 'No style'</span>.
-
-**Let op**: dit succescriterium gaat alleen over de leesvolgorde. De volgorde van de toetsenbordfocus valt onder het [WCAG-succescriterium Focus volgorde](/wcag/2.4.3).
-
-Test:
-
-- Is de volgorde waarin de inhoud van boven naar beneden wordt voorgelezen begrijpelijk als je het scherm niet ziet? Met andere woorden, is het begrip van de inhoud onafhankelijk van het visueel ontwerp?
-- Wordt alle inhoud die bij een kopje hoort ook ná het kopje voorgelezen?
-- Is het begrijpelijk welke metadata, zoals auteur, categorie of datum, bij welke inhoud hoort?
-
-Test de volgorde van de inhoud ook in verschillende responsieve weergaves en oriëntaties. Zoom ook in tot 400%. Verandert de volgorde van de inhoud? Is de voorgelezen inhoud nog steeds logisch en betekenisvol?
-
-## Veelgemaakte fouten
-
-### Fout: de volgorde van de inhoud is niet meer logisch voor kleine schermgroottes
-
-De leesvolgorde is anders voor ingezoomde weergaves dan voor de desktopweergave. Controleer de leesvolgorde voor de verschillende breedtes en oriëntaties en zoom ook in tot 400%. Overleg dit ook met de designer.
-
-### Fout: er staat content boven een gerelateerd kopje
-
-Het is voor dit criterium van belang dat content die bij een kopje hoort zich onder dat kopje bevindt, in ieder geval in de leesvolgorde. Maar soms wordt in het ontwerp gekozen om content die bij een kopje hoort visueel boven dat kopje te plaatsen. Overleg dan met de designer of dit eventueel anders kan, of pas de volgorde aan met CSS (zie hieronder).
-
-Het is mogelijk om de visuele volgorde met CSS-code aan te passen zodat de inhoud anders wordt voorgelezen van de visuele volgorde, maar pas hierbij op. De **visuele** volgorde van de toetsenbordfocus moet ook betekenisvol zijn, zie hiervoor het [WCAG-succescriterium 2.4.3 Focusvolgorde](/wcag/2.4.3).
 
 ## W3C referenties
 
