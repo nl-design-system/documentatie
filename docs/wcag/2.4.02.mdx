@@ -8,12 +8,15 @@ description: Webpagina's hebben titels die het onderwerp of doel beschrijven.
 slug: 2.4.2
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - bedienbaar
   - navigeerbaar
   - operable
   - navigable
   - page titled
+  - WCAG paginatitel
+  - HTML title element
+  - toegankelijke paginatitel
 ---
 
 {/* @license CC0-1.0 */}
@@ -34,19 +37,278 @@ import Summary from "./summaries/_2.4.2-summary.md";
 
 <Summary />
 
-Deze titels staan in de `<head>` sectie van de HTML-code, in het element `<title>`.
+Voor screenreadergebruikers is de paginatitel extra belangrijk. Het is het eerste wat ze horen wanneer ze een pagina openen. Een duidelijke titel helpt hen te begrijpen waar ze zijn, zonder eerst door de hele pagina te moeten navigeren.
 
-Maak deze tekst eenduidig en beschrijvend, zodat je weet welke pagina van welke website je bezoekt. Ook informatie over foutmeldingen en zoekresultaten hoort in de titel thuis.
+Een goede paginatitel:
 
-Deze tekst staat in de browser-tab, waardoor je makkelijk kunt herkennen welke website er onder welke tab staat. Begin daarom niet met de sitenaam, maar met het onderwerp. Anders lijken alle titels op elkaar wanneer je maar een deel van de tekst ziet in de tab.
+- Beschrijft het onderwerp of doel van de pagina.
+- Is uniek binnen de website. Elke pagina heeft een andere titel.
+- Is beknopt maar informatief.
+- Begint met de meest specifieke informatie. Zet de paginanaam vóór de sitenaam.
 
-Voorbeelden van goede titels:
+Bij formulieren met meerdere stappen is het handig om de stap in de titel te vermelden. Bij pagina's met zoekresultaten is het nuttig om de zoekterm in de titel op te nemen.
 
-- 'Gemeente Voorbeeld', voor de voorpagina.
-- 'Contact - Gemeente Voorbeeld', voor de contactpagina.
-- '12 zoekresultaten voor rijbewijs - Gemeente Voorbeeld', voor de zoekpagina.
-- 'Stap 2 van 3: Uw gegevens - Rijbewijs verlengen - Gemeente Voorbeeld', voor een meerstappenformulier.
-- '2 foutmeldingen - Uw vraag - Gemeente Voorbeeld', voor een formulier met foutmeldingen.
+## Veelgemaakte fouten
+
+### Fout: paginatitel ontbreekt
+
+Zonder `<title>`-element toont de browser de URL of bestandsnaam in het tabblad. Screenreaders lezen dan iets als "https://example.com/pagina-3b.html" voor, wat niets zegt over de inhoud.
+
+<Guideline appearance="dont" title="Geen title-element in de head">
+  ```html
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Beschrijvende titel aanwezig in de head">
+  ```html
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact - Gemeente Utrecht</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  ```
+</Guideline>
+
+### Fout: paginatitel is leeg
+
+Een leeg `<title>`-element is net zo slecht als een ontbrekende titel. De browser toont dan de URL in het tabblad.
+
+<Guideline appearance="dont" title="Leeg title-element">
+  ```html
+  <title></title>
+  ```
+</Guideline>
+
+<Guideline appearance="dont" title="Title-element met alleen spaties">
+  ```html
+  <title> </title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Beschrijvende paginatitel">
+  ```html
+  <title>Veelgestelde vragen - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: alle pagina's hebben dezelfde titel
+
+Wanneer elke pagina dezelfde titel heeft, kunnen bezoekers niet onderscheiden op welke pagina ze zich bevinden. Dit is vooral een probleem bij meerdere geopende tabbladen.
+
+<Guideline appearance="dont" title="Dezelfde generieke titel op elke pagina">
+  ```html
+  <title>Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Unieke titel per pagina">
+    ```html
+    <!-- Op de homepagina: -->
+    <title>Home - Gemeente Utrecht</title>
+
+    <!-- Op de contactpagina: -->
+    <title>Contact - Gemeente Utrecht</title>
+
+    <!-- Op de pagina met veelgestelde vragen: -->
+    <title>Veelgestelde vragen - Gemeente Utrecht</title>
+    ```
+
+</Guideline>
+
+### Fout: paginatitel beschrijft de inhoud niet
+
+Een titel als "Pagina 1" of "Welkom" zegt niets over het doel of de inhoud van de pagina. Een bezoeker die meerdere tabbladen open heeft, kan dan niet terugvinden welk tabblad de juiste pagina bevat.
+
+<Guideline appearance="dont" title="Nietszeggende paginatitel">
+  ```html
+  <title>Pagina 1</title>
+  <title>Welkom</title>
+  <title>Untitled Document</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Beschrijvende paginatitel">
+  ```html
+  <title>Paspoort aanvragen - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: paginatitel beschrijft de inhoud niet voldoende
+
+Als de paginatitel de inhoud van de pagina niet duidelijk beschrijft, is het niet duidelijk waar de pagina over gaat. Bijvoorbeeld: "Nieuwsbericht - Gemeente Utrecht". Uit deze titel is niet duidelijk om welk nieuwsbericht het gaat.
+
+<Guideline appearance="dont" title="Te vage paginatitel">
+  ```html
+  <title>Nieuwsbericht - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Specifieke paginatitel">
+  ```html
+  <title>Nieuwe parkeerregels vanaf 1 januari - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: paginatitel is te cryptisch
+
+Een paginatitel die alleen woorden bevat zoals "404" of "404-pagina" is niet duidelijk voor een bezoeker die deze termen niet kent.
+
+<Guideline appearance="dont" title="Cryptische paginatitel">
+  ```html
+  <title>404</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Begrijpelijke paginatitel">
+  ```html
+  <title>Pagina niet gevonden - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: paginatitel is in een andere taal
+
+De tekst in het `<title>`-element wordt voorgelezen met de uitspraakregels van de taal die is ingesteld op het `<html>`-element. Als de paginatitel in een andere taal is geschreven, wordt deze met de verkeerde uitspraak voorgelezen.
+
+<Guideline appearance="dont" title="Engelstalige titel op een Nederlandstalige pagina">
+  ```html
+  <html lang="nl">
+    <head>
+      <title>Contact - Municipality of Utrecht</title>
+    </head>
+  </html>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Titel in dezelfde taal als de pagina">
+  ```html
+  <html lang="nl">
+    <head>
+      <title>Contact - Gemeente Utrecht</title>
+    </head>
+  </html>
+  ```
+</Guideline>
+
+### Fout: sitenaam staat vóór de paginanaam
+
+In tabbladen is vaak alleen het begin van de titel zichtbaar. Als de sitenaam vooraan staat, zien bezoekers bij meerdere tabbladen steeds hetzelfde begin en kunnen ze pagina's niet onderscheiden.
+
+<Guideline appearance="dont" title="Sitenaam vóór de paginanaam">
+  ```html
+  <title>Gemeente Utrecht - Paspoort aanvragen</title>
+  <title>Gemeente Utrecht - Rijbewijs verlengen</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Paginanaam vóór de sitenaam">
+  ```html
+  <title>Paspoort aanvragen - Gemeente Utrecht</title>
+  <title>Rijbewijs verlengen - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: titel wordt niet bijgewerkt bij paginawijziging in een single-page applicatie
+
+In een single-page applicatie (SPA) verandert de content zonder dat de browser een nieuwe pagina laadt. Als de titel niet wordt bijgewerkt, toont de browser steeds de oude titel. Screenreaders kondigen de nieuwe pagina dan niet aan.
+
+<Guideline appearance="do" title="Titel bijwerken bij elke routewijziging met vanilla JavaScript">
+    ```javascript
+    function navigeerNaar(pagina) {
+      // ... content laden ...
+      document.title = pagina.titel + " - Gemeente Utrecht";
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Titel bijwerken bij elke routewijziging met React useEffect">
+    ```javascript
+    useEffect(() => {
+      document.title = `${paginaTitel} - Gemeente Utrecht`;
+    }, [paginaTitel]);
+    ```
+</Guideline>
+
+### Fout: foutmelding of zoekresultaat niet in de titel
+
+Bij een formulier met fouten of een pagina met zoekresultaten is het nuttig om die informatie in de titel te vermelden. Screenreadergebruikers horen dan direct dat er iets is veranderd.
+
+<Guideline appearance="dont" title="Geen indicatie van formulierfout in de titel">
+  ```html
+  <title>Contactformulier - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Foutmelding opgenomen in de titel">
+  ```html
+  <title>2 fouten - Contactformulier - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+<Guideline appearance="dont" title="Zoekresultaat niet in de titel">
+  ```html
+  <title>Zoeken - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Zoekterm en aantal resultaten in de titel">
+  ```html
+  <title>12 resultaten voor "paspoort" - Zoeken - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: stap ontbreekt in de titel van een meerstappenformulier
+
+Bij een formulier met meerdere stappen weet de bezoeker niet in welke stap het formulier zich bevindt als die informatie ontbreekt in de titel.
+
+<Guideline appearance="dont" title="Geen stapinformatie in de titel">
+  ```html
+  <title>Verhuizing doorgeven - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Stap opgenomen in de titel">
+  ```html
+  <title>Stap 2 van 4: Nieuw adres - Verhuizing doorgeven - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+## Gerelateerde succescriteria
+
+- [SC 1.3.1](https://nldesignsystem.nl/wcag/1.3.1/) — Info en relaties: de structuur van de pagina moet programmatisch bepaalbaar zijn.
+- [SC 2.4.4](https://nldesignsystem.nl/wcag/2.4.4/) — Linkdoel in context: het doel van elke link moet duidelijk zijn.
+- [SC 2.4.6](https://nldesignsystem.nl/wcag/2.4.6/) — Koppen en labels: koppen en labels beschrijven het onderwerp of doel.
+- [SC 3.2.3](https://nldesignsystem.nl/wcag/3.2.3/) — Consistente navigatie: navigatie moet consistent zijn binnen een website.
+- [SC 3.2.4](https://nldesignsystem.nl/wcag/3.2.4/) — Consistente identificatie: componenten met dezelfde functie worden consistent benoemd.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Kijk naar de titel in het tabblad van je browser. Beschrijft deze titel waar de pagina over gaat?
+2. Open meerdere pagina's van dezelfde website in verschillende tabbladen. Zijn de titels uniek en onderscheidend?
+3. Vul een formulier fout in en verstuur het. Verandert de titel om de foutmelding aan te geven?
+4. Voer een zoekopdracht uit. Bevat de titel de zoekterm of het aantal resultaten?
+5. Doorloop een meerstappenformulier. Wordt de stap in de titel vermeld?
+
+### Voor developers
+
+1. Controleer of elke pagina een `<title>`-element heeft in de `<head>`. Open de broncode of inspecteer het element in de DevTools.
+2. Controleer of de titel niet leeg is en geen standaardtekst bevat zoals "Untitled Document" of "Home".
+3. Controleer of de paginanaam vóór de sitenaam staat in de titel.
+4. Test single-page applicaties: navigeer tussen pagina's en controleer of `document.title` wordt bijgewerkt. Bekijk dit in de DevTools console met `document.title`.
+5. Controleer foutscenario's. Wordt de titel bijgewerkt na een formuliervalidatiefout?
+6. Gebruik axe DevTools of WAVE voor een eerste scan. Een ontbrekend of leeg `<title>`-element wordt automatisch gedetecteerd.
+
+## Tools
+
+- axe DevTools — detecteert ontbrekende of lege `<title>`-elementen.
+- WAVE — toont de paginatitel bovenaan het rapport en signaleert ontbrekende titels.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/) — controleert op ontbrekende paginatitels in de toegankelijkheidsaudit.
+- Een screenreader (NVDA of VoiceOver) — lees de pagina voor en controleer of de titel begrijpelijk is.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -58,23 +320,6 @@ Voorbeelden van goede titels:
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-- Controleer of er een `title`-element in de `head` aanwezig is en deze tekst bevat.
-- Controleer de taal van de titel, is deze hetzelfde als die van de pagina?
-- Controleer of de titel de pagina beschrijft, met eenduidige liefst unieke tekst binnen de website.
-- Zijn er iframes op de pagina? Controleer of deze ook een goede titel bevatten.
-
-## Veelgemaakte fouten
-
-### Fout: de titels van alle pagina's zijn hetzelfde
-
-Als alle `title`-elementen op een website dezelfde tekst bevatten (bijvoorbeeld de sitenaam) geeft dit geen goede informatie over op welke pagina je je bevindt.
-
-### Fout: de tekst van een titel wordt niet vertaald door een plugin
-
-Als de titel wordt gegenereerd door een plugin, kan het voorkomen dat de plugin de taal van de website niet volledig ondersteund. Of het kan zijn dat de taal niet goed is ingesteld. Controleer altijd de settings van een plugin en ook de uitvoer: zijn alle gegenereerde teksten, dus ook de titel, in de taal van de website.
 
 ## W3C referenties
 
