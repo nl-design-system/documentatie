@@ -70,11 +70,45 @@ Als je een [WCAG-EM toegankelijkheidsonderzoek doet](https://www.w3.org/TR/WCAG-
 
 Je kunt de NL Design System Baseline noemen bij je onderzoeksrapport onder "basisniveau van toegankelijkheidsondersteuning". Je kunt verwijzen naar de Baseline momentopname onder ["bij het onderzoek gebruikte browsers en softwareprogramma's"](https://www.digitoegankelijk.nl/toegankelijkheidsverklaring/controle).
 
-## Standaard toegankelijk
+## 100% toegankelijk
 
-Het uitgangspunt van NL Design System is toegankelijk en gebruiksvriendelijk ontwerpen en ontwikkelen. Alternatieven voor basis toegankelijkheid, zoals een versie die geactiveerd moet worden met een hoogcontrastknop of toegankelijkheidswidget, zijn daarom geen onderdeel van de baseline van NL Design System.
+Het uitgangspunt van NL Design System is toegankelijk en gebruiksvriendelijk ontwerpen en ontwikkelen. De standaardversie van een website moet helemaal toegankelijk zijn.
+Toegankelijke alternatieven voor niet-toegankelijke kleuren, teksten en techniek zijn daarom geen onderdeel van NL Design System. 
 
-Aanvullende instellingen voor persoonlijke voorkeuren, zoals dark mode of het aanpassen aan systeem- en browserinstellingen, zijn wel onderdeel van de baseline.
+Functies zoals een hoogcontrastknop of toegankelijkheidswidget zijn alleen toegestaan wanneer de standaardversie toegankelijk is en je op een toegankelijke manier terug kan naar de standaardversie.
+
+## Instellingen voor persoonlijke voorkeuren
+
+Besturingssystemen en browsers bieden verschillende opties om persoonlijke voorkeuren voor toegankelijkheid in te stellen.
+
+Websites die aan NL Design System voldoen moeten de volgende instellingen voor persoonlijke voorkeuren ondersteunen:
+
+- `forced-colors: active`, oftewel: forced colors mode
+- `prefers-reduced-motion: reduce`
+- `prefers-reduced-transparency: reduce`
+
+Daarnaast zijn er nog een aantal instellingen die optioneel kunnen worden ondersteund:
+
+- `prefers-color-scheme: dark`, oftewel: dark mode
+- `prefers-contrast: more`, oftewel: high contrast mode
+
+### Forced colors mode
+
+Forced Colors Mode is een toegankelijkheidsfunctie in besturingssystemen zoals Windows. Gebruikers kiezen hiermee een beperkte set aan kleuren om teksten en onderdelen op een pagina beter zichtbaar te maken.
+De CSS media-feature `forced-colors` detecteert of deze functie actief is en overschrijft de kleuren van de website.
+
+De website moet goed werken wanneer forced colors mode actief is. Dat betekent:
+
+- De visuele hiërarchie moet duidelijk blijven, eventueel door gebruik van extra borders.
+- Buttons en links zijn herkenbaar aan de kleur, door het gebruik van CSS system colors.
+- Disabled buttons, links, formulierelementen en placeholders zijn herkenbaar aan de kleur, door gebruik van CSS system colors.
+- SVG-afbeeldingen zoals iconen zijn goed zichtbaar, door gebruik van CSS system colors.
+- Alle tekst is goed leesbaar doordat een CSS system color als achtergrondkleur is ingesteld. Let hierbij in het bijzonder op componenten die overlappen met andere onderdelen op de pagina, zoals: 
+      - Select Combobox
+      - Dialog, Alert Dialog en Modal Dialog
+      - Drawer
+      - Skip Link
+      - Toggletip
 
 ## Momentopname
 
