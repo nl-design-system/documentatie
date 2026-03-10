@@ -38,7 +38,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.7327fd2c.css" />
-  <script src="/assets/js/runtime~main.d71e887d.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.66bcb029.js" defer="defer"></script>
   <script src="/assets/js/main.5d8b8af6.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -235,8 +235,43 @@
               <h2 id="testen-voor-toegankelijkheid" class="utrecht-heading-2">Testen voor toegankelijkheid</h2>
               <p>Om vast te kunnen stellen of iets toegankelijk is en voldoet volgens WCAG, mag je zelf kiezen welke technologie je ondersteunt: de <a href="https://www.w3.org/TR/WCAG-EM/#step1c" class="utrecht-link utrecht-link--html-a">Accessibility Support Baseline</a>. Voor NL Design System is dat vastgelegd op deze pagina.</p>
               <p>Het toegankelijkheidsdoel van NL Design System is WCAG 2.2 Niveau AA. Daarmee voldoen we aan de wettelijke eis voor WCAG 2.1, plus enkele nieuwe succescriteria.</p>
-              <p>Als je een <a href="https://www.w3.org/TR/WCAG-EM/" class="utrecht-link utrecht-link--html-a">WCAG-EM toegankelijkheidsonderzoek doet</a>, test dan met elke combinatie van software in lijst.</p>
+              <p>Als je een <a href="https://www.w3.org/TR/WCAG-EM/" class="utrecht-link utrecht-link--html-a">WCAG-EM toegankelijkheidsonderzoek doet</a>, test dan met elke combinatie van software in de lijst.</p>
               <p>Je kunt de NL Design System Baseline noemen bij je onderzoeksrapport onder &quot;basisniveau van toegankelijkheidsondersteuning&quot;. Je kunt verwijzen naar de Baseline momentopname onder <a href="https://www.digitoegankelijk.nl/toegankelijkheidsverklaring/controle" class="utrecht-link utrecht-link--html-a">&quot;bij het onderzoek gebruikte browsers en softwareprogramma&#x27;s&quot;</a>.</p>
+              <h2 id="100-toegankelijk" class="utrecht-heading-2">100% toegankelijk</h2>
+              <p>Het uitgangspunt van NL Design System is toegankelijk en gebruiksvriendelijk ontwerpen en ontwikkelen. De standaardversie van een website moet helemaal toegankelijk zijn. Toegankelijke alternatieven voor niet-toegankelijke kleuren, teksten en techniek zijn daarom geen onderdeel van de NL Design System baseline.</p>
+              <p>Functies zoals een hoogcontrastknop of toegankelijkheidswidget zijn alleen toegestaan wanneer de standaardversie toegankelijk is en je op een toegankelijke manier terug kan naar de standaardversie.</p>
+              <h2 id="instellingen-voor-persoonlijke-voorkeuren" class="utrecht-heading-2">Instellingen voor persoonlijke voorkeuren</h2>
+              <p>Besturingssystemen en browsers bieden verschillende opties om persoonlijke voorkeuren voor toegankelijkheid in te stellen.</p>
+              <p>Test of je website de volgende instellingen ondersteunt:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">forced-colors: active</code>, oftewel: forced colors mode</li>
+               <li><code class="utrecht-code">prefers-reduced-motion: reduce</code></li>
+               <li><code class="utrecht-code">prefers-reduced-transparency: reduce</code></li>
+              </ul>
+              <p>Daarnaast zijn er nog een aantal instellingen die optioneel kunnen worden ondersteund:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li><code class="utrecht-code">prefers-color-scheme: dark</code>, oftewel: dark mode</li>
+               <li><code class="utrecht-code">prefers-contrast: more</code>, oftewel: high contrast mode</li>
+              </ul>
+              <h3 id="forced-colors-mode" class="utrecht-heading-3">Forced colors mode</h3>
+              <p>Forced Colors Mode is een toegankelijkheidsfunctie in besturingssystemen zoals Windows. Gebruikers kiezen hiermee een beperkte set aan kleuren om teksten en onderdelen op een pagina beter zichtbaar te maken. De CSS media-feature <code class="utrecht-code">forced-colors</code> detecteert of deze functie actief is en overschrijft de kleuren van de website.</p>
+              <p>De website moet goed werken wanneer forced colors mode actief is. Dat betekent:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>De visuele hiërarchie moet duidelijk blijven, eventueel door gebruik van extra borders.</li>
+               <li>Buttons en links zijn herkenbaar aan de kleur, door het gebruik van CSS system colors.</li>
+               <li>Disabled buttons, links, formulierelementen en placeholders zijn herkenbaar aan de kleur, door gebruik van CSS system colors.</li>
+               <li>SVG-afbeeldingen zoals iconen zijn goed zichtbaar, door gebruik van CSS system colors.</li>
+               <li>
+                Alle tekst is goed leesbaar doordat een CSS system color als achtergrondkleur is ingesteld. Let hierbij in het bijzonder op componenten die overlappen met andere onderdelen op de pagina, zoals:<!-- -->
+                <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                 <li>Select Combobox</li>
+                 <li>Dialog, Alert Dialog en Modal Dialog</li>
+                 <li>Drawer</li>
+                 <li>Skip Link</li>
+                 <li>Toggletip</li>
+                </ul>
+               </li>
+              </ul>
               <h2 id="momentopname" class="utrecht-heading-2">Momentopname</h2>
               <p>Technologie verandert elke maand, dus de precieze betekenis van de Baseline verandert. Op de NL Design System website publiceren we periodiek een momentopname van welke softwareversies op dat moment worden bedoeld met de Baseline.</p>
               <p>Maak duidelijke afspraken welke versie van de Baseline je kiest als doel. Er zijn heel veel opties denkbaar, bijvoorbeeld:</p>
@@ -290,6 +325,8 @@
              <li><a href="#technologie-met-brede-ondersteuning" class="table-of-contents__link toc-highlight">Technologie met brede ondersteuning</a></li>
              <li><a href="#software-om-mee-te-testen" class="table-of-contents__link toc-highlight">Software om mee te testen</a></li>
              <li><a href="#testen-voor-toegankelijkheid" class="table-of-contents__link toc-highlight">Testen voor toegankelijkheid</a></li>
+             <li><a href="#100-toegankelijk" class="table-of-contents__link toc-highlight">100% toegankelijk</a></li>
+             <li><a href="#instellingen-voor-persoonlijke-voorkeuren" class="table-of-contents__link toc-highlight">Instellingen voor persoonlijke voorkeuren</a></li>
              <li><a href="#momentopname" class="table-of-contents__link toc-highlight">Momentopname</a></li>
              <li><a href="#voor-wie-is-de-baseline-bedoeld" class="table-of-contents__link toc-highlight">Voor wie is de Baseline bedoeld?</a></li>
              <li><a href="#hall-of-fame" class="table-of-contents__link toc-highlight">Hall of Fame</a></li>
