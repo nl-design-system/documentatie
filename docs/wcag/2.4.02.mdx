@@ -14,7 +14,8 @@ keywords:
   - operable
   - navigable
   - page titled
-  - pagina titel WCAG
+  - WCAG paginatitel
+  - HTML title element
   - toegankelijke paginatitel
 ---
 
@@ -133,6 +134,62 @@ Een titel als "Pagina 1" of "Welkom" zegt niets over het doel of de inhoud van d
 <Guideline appearance="do" title="Beschrijvende paginatitel">
   ```html
   <title>Paspoort aanvragen - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: paginatitel beschrijft de inhoud niet voldoende
+
+Als de paginatitel de inhoud van de pagina niet duidelijk beschrijft, is het niet duidelijk waar de pagina over gaat. Bijvoorbeeld: "Nieuwsbericht - Gemeente Utrecht". Uit deze titel is niet duidelijk om welk nieuwsbericht het gaat.
+
+<Guideline appearance="dont" title="Te vage paginatitel">
+  ```html
+  <title>Nieuwsbericht - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Specifieke paginatitel">
+  ```html
+  <title>Nieuwe parkeerregels vanaf 1 januari - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: paginatitel is te cryptisch
+
+Een paginatitel die alleen woorden bevat zoals "404" of "404-pagina" is niet duidelijk voor een bezoeker die deze termen niet kent.
+
+<Guideline appearance="dont" title="Cryptische paginatitel">
+  ```html
+  <title>404</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Begrijpelijke paginatitel">
+  ```html
+  <title>Pagina niet gevonden - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+### Fout: paginatitel is in een andere taal
+
+De tekst in het `<title>`-element wordt voorgelezen met de uitspraakregels van de taal die is ingesteld op het `<html>`-element. Als de paginatitel in een andere taal is geschreven, wordt deze met de verkeerde uitspraak voorgelezen.
+
+<Guideline appearance="dont" title="Engelstalige titel op een Nederlandstalige pagina">
+  ```html
+  <html lang="nl">
+    <head>
+      <title>Contact - Municipality of Utrecht</title>
+    </head>
+  </html>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Titel in dezelfde taal als de pagina">
+  ```html
+  <html lang="nl">
+    <head>
+      <title>Contact - Gemeente Utrecht</title>
+    </head>
+  </html>
   ```
 </Guideline>
 
