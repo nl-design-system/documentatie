@@ -25,6 +25,7 @@ keywords:
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import { Guideline } from "@site/src/components/Guideline";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
 import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
@@ -50,106 +51,163 @@ Let op: met "tekst" wordt hier een [reeks karakters](https://www.w3.org/WAI/WCAG
 
 Dit gaat vaak fout bij logo's wanneer de zichtbare tekst niet in de toegankelijke naam van de link staat.
 
-```html
-<!-- Fout: zichtbare tekst is "WC3" -->
-<a href=""><img src="#" alt="" /><!--logo met tekst --></a>
+<Guideline appearance="dont" title="Zichtbare tekst ontbreekt in de toegankelijke naam">
 
-<!-- Goed: de zichtbare tekst staat in de alternatieve tekst -->
+```html
+<a href=""><img src="#" alt="" /><!--logo met tekst --></a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="De zichtbare tekst staat in de alternatieve tekst">
+
+```html
 <a href=""><img src="#" alt="W3C" /><!--logo met tekst --></a>
 ```
+
+</Guideline>
 
 ### Fout: aria-label dat niet overeenkomt met de zichtbare tekst
 
 De meest voorkomende fout. Een knop heeft de zichtbare tekst "Zoeken", maar in het `aria-label` staat een andere tekst. Iemand met spraakbesturing zegt "Klik op Zoeken" en er gebeurt niets.
 
-```html
-<!-- Fout: zichtbare tekst is "Zoeken", aria-label is anders -->
-<button aria-label="Doorzoek de volledige website">Zoeken</button>
+<Guideline appearance="dont" title="aria-label komt niet overeen met de zichtbare tekst">
 
-<!-- Goed: aria-label bevat de zichtbare tekst -->
+```html
+<button aria-label="Doorzoek de volledige website">Zoeken</button>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="aria-label bevat de zichtbare tekst">
+
+```html
 <button aria-label="Zoeken op de website">Zoeken</button>
 
 <!-- Beste: geen aria-label nodig als de zichtbare tekst voldoende is -->
 <button>Zoeken</button>
 ```
 
+</Guideline>
+
 ### Fout: aria-labelledby dat verwijst naar een ander element dan het zichtbare label
 
 Als `aria-labelledby` verwijst naar een element dat andere tekst bevat dan wat er zichtbaar bij het formulierveld staat, ontstaat er een mismatch.
 
+<Guideline appearance="dont" title="aria-labelledby verwijst naar andere tekst dan het zichtbare label">
+
 ```html
-<!-- Fout: zichtbaar staat "E-mailadres", maar aria-labelledby verwijst naar andere tekst -->
 <span id="verborgen-label">Voer uw elektronische postadres in</span>
 <label>E-mailadres</label>
 <input type="email" aria-labelledby="verborgen-label" />
-
-<!-- Goed: label en toegankelijke naam komen overeen -->
-<label for="email">E-mailadres</label>
-<input type="email" id="email" />
 ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Label en toegankelijke naam komen overeen">
+
+```html
+<label for="email">E-mailadres</label> <input type="email" id="email" />
+```
+
+</Guideline>
 
 ### Fout: knop met een icoon en tekst, maar aria-label vervangt de tekst
 
 Als een knop zowel een icoon als tekst bevat, maar een `aria-label` de zichtbare tekst vervangt door een langere omschrijving, is de zichtbare tekst niet meer onderdeel van de toegankelijke naam.
 
+<Guideline appearance="dont" title="aria-label vervangt de zichtbare tekst">
+
 ```html
-<!-- Fout: "Opslaan" is zichtbaar, maar aria-label vervangt het -->
 <button aria-label="Sla het huidige document op naar de server">
   <svg aria-hidden="true"><!-- icoon --></svg>
   Opslaan
 </button>
+```
 
-<!-- Goed: geen aria-label nodig, zichtbare tekst is voldoende -->
+</Guideline>
+
+<Guideline appearance="do" title="Geen aria-label nodig, zichtbare tekst is voldoende">
+
+```html
 <button>
   <svg aria-hidden="true"><!-- icoon --></svg>
   Opslaan
 </button>
 ```
 
+</Guideline>
+
 ### Fout: afbeeldingsknop of link met alt-tekst die afwijkt van de zichtbare tekst
 
 Knoppen en links met een afbeelding waar tekst in staat moeten een alternatieve tekst hebben die overeenkomt met de tekst in de afbeelding.
 
-```html
-<!-- Fout: de afbeelding toont "Inschrijven", alt zegt iets anders -->
-<input type="image" src="inschrijven-knop.png" alt="Registreer voor de nieuwsbrief" />
+<Guideline appearance="dont" title="alt-tekst wijkt af van de tekst in de afbeelding">
 
-<!-- Goed -->
+```html
+<input type="image" src="inschrijven-knop.png" alt="Registreer voor de nieuwsbrief" />
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="alt-tekst komt overeen met de tekst in de afbeelding">
+
+```html
 <input type="image" src="inschrijven-knop.png" alt="Inschrijven" />
 ```
+
+</Guideline>
 
 ### Fout: zichtbare tekst in een andere taal dan de toegankelijke naam
 
 Als de zichtbare knoptekst "<span lang="en">Submit</span>" is maar het `aria-label` is "Verzenden", komt de zichtbare tekst niet terug in de toegankelijke naam. Iemand met spraakbesturing zegt "Klik op <span lang="en">Submit</span>", maar er gebeurt niets.
 
-```html
-<!-- Fout: zichtbaar "Submit", aria-label "Verzenden" -->
-<button aria-label="Verzenden">Submit</button>
+<Guideline appearance="dont" title="Zichtbare tekst in een andere taal dan de toegankelijke naam">
 
-<!-- Goed: zorg dat de talen overeenkomen -->
+```html
+<button aria-label="Verzenden">Submit</button>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Zorg dat de talen overeenkomen">
+
+```html
 <button>Verzenden</button>
 <!-- Of als het Engels moet blijven: -->
 <button aria-label="Submit form">Submit</button>
 ```
 
+</Guideline>
+
 ### Fout: CSS-gegenereerde content die het zichtbare label aanpast
 
 Als de zichtbare tekst van een element deels uit CSS `::before` of `::after` content komt, wordt die niet altijd meegenomen in de berekening van de toegankelijke naam. Dit kan een mismatch veroorzaken.
 
+<Guideline appearance="dont" title="CSS-gegenereerde content wijzigt het zichtbare label">
+
 ```css
-/* Problematisch: CSS voegt tekst toe die een gebruiker wel ziet */
+/* CSS voegt tekst toe die een gebruiker wel ziet */
 .knop-verwijderen::after {
   content: " definitief";
 }
 ```
 
 ```html
-<!-- De gebruiker ziet "Verwijderen definitief", maar de toegankelijke naam is alleen "Verwijderen" -->
+<!-- De gebruiker ziet "Verwijderen definitief",
+     maar de toegankelijke naam is alleen "Verwijderen" -->
 <button class="knop-verwijderen">Verwijderen</button>
+```
 
-<!-- Beter: alle tekst in de HTML -->
+</Guideline>
+
+<Guideline appearance="do" title="Alle tekst in de HTML">
+
+```html
 <button>Verwijderen definitief</button>
 ```
+
+</Guideline>
 
 ## Gerelateerde succescriteria
 
