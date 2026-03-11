@@ -17,6 +17,15 @@ keywords:
   - WCAG paginatitel
   - HTML title element
   - toegankelijke paginatitel
+  - paginatitel
+  - title
+  - title-element
+  - document title
+  - tabblad
+  - navigatie
+  - screenreader
+  - WCAG 2.4.2
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
@@ -34,26 +43,19 @@ import Summary from "./summaries/_2.4.2-summary.md";
   {"WCAG-succescriterium 2.4.2 Paginatitel"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-Voor screenreadergebruikers is de paginatitel extra belangrijk. Het is het eerste wat ze horen wanneer ze een pagina openen. Een duidelijke titel helpt hen te begrijpen waar ze zijn, zonder eerst door de hele pagina te moeten navigeren.
+Een screenreader leest de paginatitel voor zodra iemand een pagina opent. Dat is het eerste oriëntatiepunt: zonder een beschrijvende titel moet iemand eerst door de hele pagina bladeren om te begrijpen waar die is.
 
-Een goede paginatitel:
-
-- Beschrijft het onderwerp of doel van de pagina.
-- Is uniek binnen de website. Elke pagina heeft een andere titel.
-- Is beknopt maar informatief.
-- Begint met de meest specifieke informatie. Zet de paginanaam vóór de sitenaam.
-
-Bij formulieren met meerdere stappen is het handig om de stap in de titel te vermelden. Bij pagina's met zoekresultaten is het nuttig om de zoekterm in de titel op te nemen.
+Een goede paginatitel begint met de meest specifieke informatie: eerst de paginanaam, dan de sitenaam. Bij formulieren met meerdere stappen vermeldt de titel in welke stap je zit. Bij zoekresultaten bevat de titel de zoekterm.
 
 ## Veelgemaakte fouten
 
-### Fout: paginatitel ontbreekt
+### Paginatitel ontbreekt of is leeg
 
-Zonder `<title>`-element toont de browser de URL of bestandsnaam in het tabblad. Screenreaders lezen dan iets als "https://example.com/pagina-3b.html" voor, wat niets zegt over de inhoud.
+Elke pagina moet een `<title>`-element in de `<head>` van de HTML hebben. Ontbreekt het element of is het leeg, dan toont de browser de URL in het tabblad. Een screenreader leest dan iets voor als "https://example.com/pagina-3b.html" — dat zegt niets over de inhoud.
+
+**Hoe te testen:** bekijk het tabblad van je browser. Staat daar een beschrijvende titel of een URL? In de DevTools controleer je of het `<title>`-element aanwezig is en tekst bevat.
 
 <Guideline appearance="dont" title="Geen title-element in de head">
   ```html
@@ -64,7 +66,13 @@ Zonder `<title>`-element toont de browser de URL of bestandsnaam in het tabblad.
   ```
 </Guideline>
 
-<Guideline appearance="do" title="Beschrijvende titel aanwezig in de head">
+<Guideline appearance="dont" title="Leeg title-element">
+  ```html
+  <title></title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Beschrijvende titel in de head">
   ```html
   <head>
     <meta charset="utf-8" />
@@ -74,31 +82,13 @@ Zonder `<title>`-element toont de browser de URL of bestandsnaam in het tabblad.
   ```
 </Guideline>
 
-### Fout: paginatitel is leeg
+**Wie kan dit oplossen:** een developer voegt het `<title>`-element toe en zorgt dat het bij elke pagina wordt gevuld.
 
-Een leeg `<title>`-element is net zo slecht als een ontbrekende titel. De browser toont dan de URL in het tabblad.
+### Alle pagina's hebben dezelfde titel
 
-<Guideline appearance="dont" title="Leeg title-element">
-  ```html
-  <title></title>
-  ```
-</Guideline>
+Elke pagina op een website heeft een unieke titel zodat bezoekers pagina's van elkaar kunnen onderscheiden. Als alle pagina's dezelfde titel hebben, zien bezoekers bij meerdere geopende tabbladen steeds hetzelfde. Een screenreadergebruiker hoort bij het openen van elke pagina dezelfde titel en kan niet inschatten of de navigatie gelukt is.
 
-<Guideline appearance="dont" title="Title-element met alleen spaties">
-  ```html
-  <title> </title>
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="Beschrijvende paginatitel">
-  ```html
-  <title>Veelgestelde vragen - Gemeente Utrecht</title>
-  ```
-</Guideline>
-
-### Fout: alle pagina's hebben dezelfde titel
-
-Wanneer elke pagina dezelfde titel heeft, kunnen bezoekers niet onderscheiden op welke pagina ze zich bevinden. Dit is vooral een probleem bij meerdere geopende tabbladen.
+**Hoe te testen:** open drie of vier pagina's van dezelfde website in aparte tabbladen. Zijn de titels in de tabbladen van elkaar te onderscheiden?
 
 <Guideline appearance="dont" title="Dezelfde generieke titel op elke pagina">
   ```html
@@ -120,11 +110,15 @@ Wanneer elke pagina dezelfde titel heeft, kunnen bezoekers niet onderscheiden op
 
 </Guideline>
 
-### Fout: paginatitel beschrijft de inhoud niet
+**Wie kan dit oplossen:** een developer zorgt dat het CMS of de applicatie een unieke titel genereert per pagina.
 
-Een titel als "Pagina 1" of "Welkom" zegt niets over het doel of de inhoud van de pagina. Een bezoeker die meerdere tabbladen open heeft, kan dan niet terugvinden welk tabblad de juiste pagina bevat.
+### Titel beschrijft de inhoud niet
 
-<Guideline appearance="dont" title="Nietszeggende paginatitel">
+Een titel als "Pagina 1" of "Welkom" zegt niets over het doel van de pagina. Een bezoeker met meerdere tabbladen open kan niet terugvinden welk tabblad de juiste pagina bevat. Een screenreadergebruiker weet niet of de juiste pagina is geopend.
+
+**Hoe te testen:** lees de titel in het tabblad. Weet je zonder de pagina te zien waar deze over gaat?
+
+<Guideline appearance="dont" title="Nietszeggend paginatitel">
   ```html
   <title>Pagina 1</title>
   <title>Welkom</title>
@@ -138,65 +132,13 @@ Een titel als "Pagina 1" of "Welkom" zegt niets over het doel of de inhoud van d
   ```
 </Guideline>
 
-### Fout: paginatitel beschrijft de inhoud niet voldoende
+**Wie kan dit oplossen:** een contentbeheerder vult een beschrijvende paginatitel in via het CMS. Een developer zorgt dat het CMS dit afdwingt.
 
-Als de paginatitel de inhoud van de pagina niet duidelijk beschrijft, is het niet duidelijk waar de pagina over gaat. Bijvoorbeeld: "Nieuwsbericht - Gemeente Utrecht". Uit deze titel is niet duidelijk om welk nieuwsbericht het gaat.
+### Sitenaam staat vóór de paginanaam
 
-<Guideline appearance="dont" title="Te vage paginatitel">
-  ```html
-  <title>Nieuwsbericht - Gemeente Utrecht</title>
-  ```
-</Guideline>
+In een tabblad is vaak alleen het begin van de titel zichtbaar. Als de sitenaam vooraan staat, begint elke titel met dezelfde tekst. Bij meerdere tabbladen van dezelfde website is dan niet te zien welke pagina waar staat.
 
-<Guideline appearance="do" title="Specifieke paginatitel">
-  ```html
-  <title>Nieuwe parkeerregels vanaf 1 januari - Gemeente Utrecht</title>
-  ```
-</Guideline>
-
-### Fout: paginatitel is te cryptisch
-
-Een paginatitel die alleen woorden bevat zoals "404" of "404-pagina" is niet duidelijk voor een bezoeker die deze termen niet kent.
-
-<Guideline appearance="dont" title="Cryptische paginatitel">
-  ```html
-  <title>404</title>
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="Begrijpelijke paginatitel">
-  ```html
-  <title>Pagina niet gevonden - Gemeente Utrecht</title>
-  ```
-</Guideline>
-
-### Fout: paginatitel is in een andere taal
-
-De tekst in het `<title>`-element wordt voorgelezen met de uitspraakregels van de taal die is ingesteld op het `<html>`-element. Als de paginatitel in een andere taal is geschreven, wordt deze met de verkeerde uitspraak voorgelezen.
-
-<Guideline appearance="dont" title="Engelstalige titel op een Nederlandstalige pagina">
-  ```html
-  <html lang="nl">
-    <head>
-      <title>Contact - Municipality of Utrecht</title>
-    </head>
-  </html>
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="Titel in dezelfde taal als de pagina">
-  ```html
-  <html lang="nl">
-    <head>
-      <title>Contact - Gemeente Utrecht</title>
-    </head>
-  </html>
-  ```
-</Guideline>
-
-### Fout: sitenaam staat vóór de paginanaam
-
-In tabbladen is vaak alleen het begin van de titel zichtbaar. Als de sitenaam vooraan staat, zien bezoekers bij meerdere tabbladen steeds hetzelfde begin en kunnen ze pagina's niet onderscheiden.
+**Hoe te testen:** open meerdere pagina's van dezelfde website. Zijn de tabbladen van elkaar te onderscheiden als de titels worden afgekapt?
 
 <Guideline appearance="dont" title="Sitenaam vóór de paginanaam">
   ```html
@@ -212,9 +154,13 @@ In tabbladen is vaak alleen het begin van de titel zichtbaar. Als de sitenaam vo
   ```
 </Guideline>
 
-### Fout: titel wordt niet bijgewerkt bij paginawijziging in een single-page applicatie
+**Wie kan dit oplossen:** een developer past het template aan zodat de paginanaam vóór de sitenaam staat.
 
-In een single-page applicatie (SPA) verandert de content zonder dat de browser een nieuwe pagina laadt. Als de titel niet wordt bijgewerkt, toont de browser steeds de oude titel. Screenreaders kondigen de nieuwe pagina dan niet aan.
+### Titel wordt niet bijgewerkt in een single-page applicatie
+
+In een <span lang="en">single-page</span> applicatie (SPA) verandert de content zonder dat de browser een nieuwe pagina laadt. De titel in het `<title>`-element wordt dan bijgewerkt bij elke navigatie. Gebeurt dat niet, dan blijft de oude titel staan en kondigt een screenreader de nieuwe pagina niet aan.
+
+**Hoe te testen:** navigeer binnen de applicatie en controleer of de titel in het tabblad verandert bij elke paginawijziging. In de DevTools console controleer je de waarde van `document.title`.
 
 <Guideline appearance="do" title="Titel bijwerken bij elke routewijziging met vanilla JavaScript">
     ```javascript
@@ -233,9 +179,13 @@ In een single-page applicatie (SPA) verandert de content zonder dat de browser e
     ```
 </Guideline>
 
-### Fout: foutmelding of zoekresultaat niet in de titel
+**Wie kan dit oplossen:** een developer voegt titellogica toe aan de router of aan elke paginacomponent.
 
-Bij een formulier met fouten of een pagina met zoekresultaten is het nuttig om die informatie in de titel te vermelden. Screenreadergebruikers horen dan direct dat er iets is veranderd.
+### Foutmelding of zoekresultaat ontbreekt in de titel
+
+Bij een formulier dat met fouten is verstuurd, bevat de titel een indicatie van de fouten. Bij zoekresultaten bevat de titel de zoekterm en het aantal resultaten. Zo hoort een screenreadergebruiker direct dat er iets is veranderd zonder eerst door de pagina te hoeven bladeren.
+
+**Hoe te testen:** vul een formulier bewust fout in en verstuur het. Verandert de titel? Voer een zoekopdracht uit. Bevat de titel de zoekterm of het aantal resultaten?
 
 <Guideline appearance="dont" title="Geen indicatie van formulierfout in de titel">
   ```html
@@ -261,9 +211,13 @@ Bij een formulier met fouten of een pagina met zoekresultaten is het nuttig om d
   ```
 </Guideline>
 
-### Fout: stap ontbreekt in de titel van een meerstappenformulier
+**Wie kan dit oplossen:** een developer werkt de titel bij na formuliervalidatie en bij zoekresultaten.
 
-Bij een formulier met meerdere stappen weet de bezoeker niet in welke stap het formulier zich bevindt als die informatie ontbreekt in de titel.
+### Stap ontbreekt in de titel van een meerstappenformulier
+
+Bij een formulier met meerdere stappen vermeldt de titel in welke stap de bezoeker zich bevindt. Zonder die informatie weet iemand die de pagina later opnieuw opent, of iemand met een screenreader, niet hoe ver het formulier is gevorderd.
+
+**Hoe te testen:** doorloop een meerstappenformulier. Verandert de titel bij elke stap? Staat de stap en het totaal aantal stappen in de titel?
 
 <Guideline appearance="dont" title="Geen stapinformatie in de titel">
   ```html
@@ -277,21 +231,15 @@ Bij een formulier met meerdere stappen weet de bezoeker niet in welke stap het f
   ```
 </Guideline>
 
-## Gerelateerde succescriteria
-
-- [SC 1.3.1](https://nldesignsystem.nl/wcag/1.3.1/) — Info en relaties: de structuur van de pagina moet programmatisch bepaalbaar zijn.
-- [SC 2.4.4](https://nldesignsystem.nl/wcag/2.4.4/) — Linkdoel in context: het doel van elke link moet duidelijk zijn.
-- [SC 2.4.6](https://nldesignsystem.nl/wcag/2.4.6/) — Koppen en labels: koppen en labels beschrijven het onderwerp of doel.
-- [SC 3.2.3](https://nldesignsystem.nl/wcag/3.2.3/) — Consistente navigatie: navigatie moet consistent zijn binnen een website.
-- [SC 3.2.4](https://nldesignsystem.nl/wcag/3.2.4/) — Consistente identificatie: componenten met dezelfde functie worden consistent benoemd.
+**Wie kan dit oplossen:** een developer voegt de stapinformatie toe aan de titellogica van het formulier.
 
 ## Hoe te testen
 
 ### Voor iedereen
 
-1. Kijk naar de titel in het tabblad van je browser. Beschrijft deze titel waar de pagina over gaat?
-2. Open meerdere pagina's van dezelfde website in verschillende tabbladen. Zijn de titels uniek en onderscheidend?
-3. Vul een formulier fout in en verstuur het. Verandert de titel om de foutmelding aan te geven?
+1. Bekijk het tabblad van je browser. Staat daar een titel die beschrijft waar de pagina over gaat?
+2. Open meerdere pagina's van dezelfde website in verschillende tabbladen. Zijn de titels uniek en van elkaar te onderscheiden?
+3. Vul een formulier bewust fout in en verstuur het. Verandert de titel om de fouten aan te geven?
 4. Voer een zoekopdracht uit. Bevat de titel de zoekterm of het aantal resultaten?
 5. Doorloop een meerstappenformulier. Wordt de stap in de titel vermeld?
 
@@ -299,17 +247,21 @@ Bij een formulier met meerdere stappen weet de bezoeker niet in welke stap het f
 
 1. Controleer of elke pagina een `<title>`-element heeft in de `<head>`. Open de broncode of inspecteer het element in de DevTools.
 2. Controleer of de titel niet leeg is en geen standaardtekst bevat zoals "Untitled Document" of "Home".
-3. Controleer of de paginanaam vóór de sitenaam staat in de titel.
-4. Test single-page applicaties: navigeer tussen pagina's en controleer of `document.title` wordt bijgewerkt. Bekijk dit in de DevTools console met `document.title`.
-5. Controleer foutscenario's. Wordt de titel bijgewerkt na een formuliervalidatiefout?
-6. Gebruik axe DevTools of WAVE voor een eerste scan. Een ontbrekend of leeg `<title>`-element wordt automatisch gedetecteerd.
+3. Controleer of de paginanaam vóór de sitenaam staat.
+4. Test <span lang="en">single-page</span> applicaties: navigeer tussen pagina's en controleer of `document.title` wordt bijgewerkt. Bekijk dit in de DevTools-console met `document.title`.
+5. Controleer foutscenario's: wordt de titel bijgewerkt na een formuliervalidatiefout?
+6. Gebruik <span lang="en">axe DevTools</span>, <span lang="en">WAVE</span> of <span lang="en">Lighthouse</span> voor een eerste scan. Een ontbrekend of leeg `<title>`-element wordt automatisch gedetecteerd. Of de titel inhoudelijk klopt, controleer je handmatig.
 
-## Tools
+## Gerelateerde succescriteria
 
-- axe DevTools — detecteert ontbrekende of lege `<title>`-elementen.
-- WAVE — toont de paginatitel bovenaan het rapport en signaleert ontbrekende titels.
-- [Lighthouse](https://developer.chrome.com/docs/lighthouse/) — controleert op ontbrekende paginatitels in de toegankelijkheidsaudit.
-- Een screenreader (NVDA of VoiceOver) — lees de pagina voor en controleer of de titel begrijpelijk is.
+- [2.4.4 Linkdoel in context](https://nldesignsystem.nl/wcag/2.4.4/): net als de paginatitel beschrijft ook de linktekst een bestemming. Relevante achtergrond als je werkt aan duidelijke navigatie.
+- [2.4.6 Koppen en labels](https://nldesignsystem.nl/wcag/2.4.6/): koppen en labels helpen, net als de paginatitel, bij oriëntatie op de pagina.
+- [3.2.3 Consistente navigatie](https://nldesignsystem.nl/wcag/3.2.3/): als navigatie consistent is, wordt de paginatitel het belangrijkste onderscheidende element tussen pagina's.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 2.4.2 Paginatitel](https://www.w3.org/Translations/WCAG22-nl/#paginatitel) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 2.4.2: Page Titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
