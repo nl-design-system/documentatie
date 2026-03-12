@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { readFileSync } from 'fs';
+import { readFileSync } from 'node:fs';
 import * as cheerio from 'cheerio';
 import { siteBaseUrl, siteTitle, siteName, twitterCard } from '../../packages/website/src/seo.config';
 
@@ -9,10 +9,8 @@ const CONFIG = {
   sitemap: '/sitemap-index.xml',
 };
 
-const canonicalBaseUrl = 'https://nldesignsystem.nl';
-
-test.describe('SEO values', () => {
-  const pathnames = getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`);
+test.describe('SEO values', async () => {
+  const pathnames = await getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`);
 
   pathnames.forEach(async (pathname) => {
     test.describe(pathname, async () => {
@@ -29,63 +27,71 @@ test.describe('SEO values', () => {
             .innerText()
             .then((title) => ({ title })),
           page
-            .locator('meta[name="description"]')
+            .locator('meta[name="description" i]')
             .getAttribute('content')
             .then((description) => ({ description })),
           page
-            .locator('link[rel="canonical"]')
+            .locator('link[rel="canonical" i]')
             .getAttribute('href')
             .then((canonical) => ({ canonical })),
           page
-            .locator('meta[name="viewport"]')
+            .locator('meta[name="viewport" i]')
             .getAttribute('content')
             .then((viewport) => ({ viewport })),
+          page
+            .locator('meta[charset]')
+            .getAttribute('charset')
+            .then((charset) => ({ charset })),
+          page
+            .locator('html')
+            .getAttribute('dir')
+            .then((dir) => ({ dir })),
           page
             .locator('html')
             .getAttribute('lang')
             .then((lang) => ({ lang })),
           page
-            .locator('meta[name="robots"]')
+            .locator('meta[name="robots" i]')
             .getAttribute('content')
             .then((robots) => ({ robots })),
           page
-            .locator('meta[name="keywords"]')
+            .locator('meta[name="keywords" i]')
             .getAttribute('content')
             .then((keywords) => ({ keywords })),
           page
-            .locator('meta[property="og:type"]')
+            .locator('meta[property="og:type" i]')
             .getAttribute('content')
             .then((ogType) => ({ ogType })),
           page
-            .locator('meta[property="og:site_name"]')
+            .locator('meta[property="og:site_name" i]')
             .getAttribute('content')
             .then((ogSiteName) => ({ ogSiteName })),
           page
-            .locator('meta[property="og:image"]')
+            .locator('meta[property="og:image" i]')
             .getAttribute('content')
             .then((ogImage) => ({ ogImage })),
           page
-            .locator('meta[property="og:image:alt"]')
+            .locator('meta[property="og:image:alt" i]')
             .getAttribute('content')
             .then((ogImageAlt) => ({ ogImageAlt })),
           page
-            .locator('meta[property="og:description"]')
+            .locator('meta[property="og:description" i]')
             .getAttribute('content')
             .then((ogDescription) => ({ ogDescription })),
           page
-            .locator('meta[property="og:title"]')
+            .locator('meta[property="og:title" i]')
             .getAttribute('content')
             .then((ogTitle) => ({ ogTitle })),
           page
-            .locator('meta[property="og:url"]')
+            .locator('meta[property="og:url" i]')
             .getAttribute('content')
             .then((ogUrl) => ({ ogUrl })),
           page
-            .locator('meta[property="og:locale"]')
+            .locator('meta[property="og:locale" i]')
             .getAttribute('content')
             .then((ogLocale) => ({ ogLocale })),
           page
-            .locator('meta[property="twitter:card"]')
+            .locator('meta[property="twitter:card" i]')
             .getAttribute('content')
             .then((twitterCard) => ({ twitterCard })),
         ]).then((values) => Object.assign({}, ...values));
@@ -97,6 +103,14 @@ test.describe('SEO values', () => {
         } else {
           await expect(values.lang).toBe('nl');
         }
+      });
+
+      test('dir is set', async () => {
+        await expect(['rtl', 'ltr'].includes(values.dir.toLowerCase())).toBeTruthy();
+      });
+
+      test('charset is utf-8', async () => {
+        await expect(['utf8', 'utf-8'].includes(values.charset.toLowerCase())).toBeTruthy();
       });
 
       test('The page title is set', async () => {
@@ -124,7 +138,7 @@ test.describe('SEO values', () => {
       });
 
       test('Canonical url is present', async () => {
-        await expect(values.canonical).toBe(`${canonicalBaseUrl}${pathname}`);
+        await expect(values.canonical).toBe(`${siteBaseUrl}${pathname}`);
       });
 
       test('User can scale page', async () => {
@@ -144,7 +158,7 @@ test.describe('SEO values', () => {
           await expect(['website', 'article'].includes(values.ogType)).toBeTruthy();
         });
         test('site name is set', async () => {
-          await expect(values.ogSiteName).toBe('nldesignsystem.nl');
+          await expect(values.ogSiteName).toBe(siteName);
         });
         test('image is set', async () => {
           await expect(values.ogImage?.startsWith('http')).toBe(true);
@@ -165,7 +179,7 @@ test.describe('SEO values', () => {
           await expect(values.ogLocale).toBe(values.lang);
         });
         test('twitter card is set', async () => {
-          await expect(values.twitterCard).toBe('summary_large_image');
+          await expect(values.twitterCard).toBe(twitterCard);
         });
       });
     });
