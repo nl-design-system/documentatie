@@ -71,6 +71,17 @@ function generateId(options) {
   return getSlug(options) || filename;
 }
 
+const schema = z.object({
+  title: z.string().optional(),
+  description: z.string().optional(),
+  lang: z.enum(['nl', 'en']).optional(),
+  slug: z.string().optional(),
+  unlisted: z.boolean().optional(),
+  image: z.string().optional(),
+  image_alt: z.string().optional(),
+  keywords: z.array(z.string()).optional(),
+});
+
 const docs = defineCollection({
   loader: globIgnoringUnderscores({
     base: './../../docs',
@@ -85,21 +96,11 @@ const docs = defineCollection({
       'project/**/!(_)*.{md,mdx}',
       'richtlijnen/**/!(_)*.{md,mdx}',
       'voorbeelden/**/!(_)*.{md,mdx}',
-      'wcag/**/!(_)*.{md,mdx}',
       'woordenlijst/**/!(_)*.{md,mdx}',
     ],
     generateId,
   }),
-  schema: z.object({
-    title: z.string().optional(),
-    description: z.string().optional(),
-    lang: z.enum(['nl', 'en']).optional(),
-    slug: z.string().optional(),
-    unlisted: z.boolean().optional(),
-    image: z.string().optional(),
-    image_alt: z.string().optional(),
-    keywords: z.array(z.string()).optional(),
-  }),
+  schema,
 });
 
 const components = defineCollection({
@@ -108,15 +109,16 @@ const components = defineCollection({
     pattern: ['componenten/**/!(_)*.{md,mdx}'],
     generateId,
   }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    lang: z.enum(['nl', 'en']).optional(),
-    slug: z.string().optional(),
-    unlisted: z.boolean().optional(),
-    image: z.string().optional(),
-    image_alt: z.string().optional(),
-    keywords: z.array(z.string()).optional(),
-  }),
+  schema,
 });
-export const collections = { docs, components };
+
+const wcag = defineCollection({
+  loader: globIgnoringUnderscores({
+    base: './../../docs',
+    pattern: ['wcag/**/!(_)*.{md,mdx}'],
+    generateId,
+  }),
+  schema,
+});
+
+export const collections = { docs, wcag, components };
