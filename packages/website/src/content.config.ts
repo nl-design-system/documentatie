@@ -92,8 +92,13 @@ const docs = defineCollection({
   }),
   schema: z.object({
     title: z.string().optional(),
+    description: z.string().optional(),
+    lang: z.enum(['nl', 'en']).optional(),
     slug: z.string().optional(),
     unlisted: z.boolean().optional(),
+    image: z.string().optional(),
+    image_alt: z.string().optional(),
+    keywords: z.array(z.string()).optional(),
   }),
 });
 
@@ -106,8 +111,12 @@ const components = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
+    lang: z.enum(['nl', 'en']).optional(),
     slug: z.string().optional(),
     unlisted: z.boolean().optional(),
+    image: z.string().optional(),
+    image_alt: z.string().optional(),
+    keywords: z.array(z.string()).optional(),
   }),
 });
 export const collections = { docs, components };
