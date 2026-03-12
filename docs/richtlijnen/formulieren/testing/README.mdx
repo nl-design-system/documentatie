@@ -1,0 +1,344 @@
+---
+title: Formulier testen
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Formulier testen
+sidebar_position: 15
+pagination_label: Formulier testen
+description: Stap-voor-stap testhandreiking om te controleren of een formulier voldoet aan de richtlijnen voor toegankelijkheid en gebruiksvriendelijkheid.
+slug: /richtlijnen/formulieren/testen
+keywords:
+  - formulier
+  - testen
+  - toegankelijkheid
+  - gebruikersvriendelijkheid
+---
+
+import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/_footer_info.md";
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Formulier testen
+
+<Paragraph lead>
+  Gebruik deze checklist om te controleren of je formulier voldoet aan de richtlijnen voor toegankelijkheid en
+  gebruikersvriendelijkheid. De checks zijn geordend per onderwerp, zodat je de checks die bij elkaar horen in volgorde
+  kunt doorlopen.
+</Paragraph>
+
+Sommige checks doe je handmatig, andere kun je automatiseren. Bij elke check staat een verwijzing naar de bijbehorende richtlijn voor meer uitleg.
+
+## Test de inhoud en vragen
+
+Controleer of je alleen vraagt wat je echt nodig hebt en of de vragen duidelijk zijn.
+
+### Alleen informatie gevraagd die nodig is
+
+Elk gevraagd veld heeft een duidelijke reden. Je kunt uitleggen waarom je die informatie nodig hebt.
+
+- [vragen wat nodig is](/richtlijnen/formulieren/vragen).
+
+### Uitgelegd waarom specifieke informatie nodig is
+
+Reden voor uitvragen van privacygevoelig informatie zoals BSN nummer of contactgegevens zoals telefoonnummer en e-mailadres is uitgelegd.
+
+- [leg uit waarom](/richtlijnen/formulieren/vragen/leg-uit-waarom)
+
+### Informatie niet dubbel uitgevraagd
+
+Dezelfde informatie wordt niet meerdere keren gevraagd. Ook niet om een e-mail adres of wachtwoord te controleren.
+
+- [dubbel werk voorkomen](/richtlijnen/formulieren/vragen/voorkom-dubbel-werk)
+
+### Tekst is makkelijk te begrijpen
+
+Er is geen haakjesnotatie zoals voorna(a)m(en) of jargon gebruikt. De tekst is makkelijk te begrijpen en kan goed worden vertaald.
+
+## Test het visueel ontwerp
+
+Controleer of het formulier visueel duidelijk is voor alle gebruikers.
+
+### Invoervelden zijn goed zichtbaar
+
+Invoervelden zijn herkenbaar als invoerveld: de rand (border) heeft minimaal 3:1 kleurcontrast ten opzichte van de achtergrond.
+
+- [invoerveld goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar).
+
+### Tekst en placeholders hebben voldoende kleurcontrast
+
+Tekst in het formulier heeft voldoende kleurcontrast (minimaal 4,5:1). Placeholdertekst heeft ook voldoende kleurcontrast (minimaal 4,5:1).
+
+- [tekst goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar)
+- [placeholder goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar)
+
+### Klikbare onderdelen zijn groot genoeg
+
+Klikbare onderdelen zijn groot genoeg om makkelijk aan te klikken.
+
+- [invoerveld goed aanklikbaar](/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar).
+
+### Velden staan in een logische volgorde
+
+De volgorde van de velden is logisch van boven naar beneden.
+
+- [logische volgorde](/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde).
+
+### Geen afbeeldingen gebruikt voor buttons
+
+Er worden geen afbeeldingen gebruikt voor buttons.
+
+- [geen afbeelding voor buttons](/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons).
+
+## Test de labels en beschrijvingen
+
+Controleer of elk veld duidelijk gelabeld is en of de uitleg goed is geplaatst.
+
+### Elk veld heeft een zichtbaar en makkelijk vindbaar label
+
+Elk invoerveld heeft een zichtbaar label dat boven het invoerveld staat. Alleen bij de zoekfunctie is de label eventueel vervangen door alleen een placeholder.
+
+- [plaatsing label](/richtlijnen/formulieren/labels/plaatsing)
+- [label altijd zichtbaar](/richtlijnen/formulieren/labels/altijd-zichtbaar)
+- [placeholder bij zoekfunctie](/richtlijnen/formulieren/placeholders/zoekfunctie)
+- [zichtbare naam label](/richtlijnen/formulieren/labels/zichtbare-naam)
+
+### Elk invoerveld heeft een goed gekoppeld label
+
+De zichtbare labeltekst komt overeen met de toegankelijke naam in de code. Klik op het label: het bijbehorende invoerveld krijgt focus — zo werkt de `for`-en-`id`-koppeling.
+
+- [toegankelijke naam label](/richtlijnen/formulieren/labels/toegankelijke-naam)
+
+### Labels bevatten alleen tekst
+
+Labels bevatten geen afbeeldingen of interactieve elementen. Labelteksten zijn duidelijk en beschrijvend.
+
+- [label bevat alleen tekst](/richtlijnen/formulieren/labels/alleen-tekst)
+- [duidelijke tekst label](/richtlijnen/formulieren/labels/duidelijke-tekst).
+
+### Beschrijvingen zijn kort, makkelijk vindbaar en goed gekoppeld
+
+Belangrijke uitleg staat in een description of in de labeltekst, niet alleen in een placeholder of tooltip. Descriptions bevatten alleen tekst, staan tussen het label en het invoerveld, zijn kort en to-the-point, en het aanklikbare gedeelte is groot genoeg. Bij meerdere descriptions zijn ze allemaal correct gekoppeld aan het invoerveld.
+
+- [descriptions](/richtlijnen/formulieren/descriptions)
+- [inhoud description](/richtlijnen/formulieren/descriptions/inhoud)
+- [plaatsing description](/richtlijnen/formulieren/descriptions/plaatsing)
+- [meerdere descriptions](/richtlijnen/formulieren/descriptions/meerdere-koppelen)
+- [grootte aanklikbaar gedeelte](/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte) en [lengte description](/richtlijnen/formulieren/descriptions/lengte).
+
+### Fieldsets hebben een duidelijke legend en makkelijk vindebare beschrijving
+
+Bij fieldsets heeft de `<legend>` een duidelijke tekst die de groep omschrijft. De description staat tussen de `<legend>` en het eerste item in de groep.
+
+- [legends in een fieldset](/richtlijnen/formulieren/fieldsets/legend)
+- [description bij fieldsets](/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset)
+
+## Test de verplichte velden
+
+Controleer of duidelijk is welke velden verplicht zijn.
+
+### Verplichte velden zijn duidelijk en consistent aangemerkt
+
+Boven het formulier staat uitleg over hoe verplichte of niet-verplichte velden zijn aangemerkt. De markering gebruikt 'verplicht' of 'niet verplicht' in tekst — niet alleen een asterisk of kleur. Verplichte of niet-verplichte velden zijn consequent aangemerkt in het hele formulier.
+
+- [optioneel of verplicht](/richtlijnen/formulieren/voorkom-fouten/verplichte-velden).
+
+### Verplichte velden hebben het juiste attribuut in de code
+
+Verplichte velden hebben `aria-required` of `required` in de code.
+
+- [optioneel of verplicht](/richtlijnen/formulieren/voorkom-fouten/verplichte-velden).
+
+## Test automatisch invullen
+
+Controleer of de browser bestaande gegevens kan gebruiken om velden vooraf in te vullen.
+
+### Velden hebben het juiste autocomplete-attribuut
+
+Naam-, adres-, e-mailadres- en telefoonnummervelden hebben het juiste `autocomplete`-attribuut.
+
+- [autocomplete](/richtlijnen/formulieren/voorkom-fouten/autocomplete).
+
+### Bekende gegevens worden vooraf ingevuld via DigiD
+
+Als de gebruiker is ingelogd via DigiD worden bekende gegevens vooraf ingevuld waar dat wettelijk is toegestaan.
+
+- [automatisch invullen](/richtlijnen/formulieren/voorkom-fouten/automatisch-invullen).
+
+## Test met een toetsenbord
+
+Doorloop het formulier volledig met alleen het toetsenbord (zonder muis).
+
+### Alle elementen zijn bereikbaar met het toetsenbord in een logische volgorde
+
+Elk invoerveld, elke button en elke link is bereikbaar met de Tab-toets. De tabvolgorde is logisch: van boven naar beneden, van links naar rechts. Er wordt geen positieve `tabindex` gebruikt die de volgorde verstoort.
+
+- [toetsenbordnavigatie](/richtlijnen/formulieren/toetsenbord/toetsenbordnavigatie)
+- [geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex)
+
+### Focus is altijd zichtbaar
+
+De focusindicator is goed zichtbaar waardoor het altijd duidelijk is waar focus is tijdens het navigeren met de Tab-toets.
+
+- [focus goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar)
+
+### Radiobuttons zijn bedienbaar met de pijltjestoetsen
+
+Radiobuttons zijn bedienbaar met de pijltjestoetsen.
+
+- [toetsenbordnavigatie](/richtlijnen/formulieren/toetsenbord/toetsenbordnavigatie)
+
+### Formulier wordt niet automatisch verzonden
+
+Het formulier wordt niet automatisch verzonden na het wijzigen van een veld.
+
+- [verstuur niet automatisch](/richtlijnen/formulieren/buttons/niet-automatisch-versturen)
+
+### Buttons zijn correct geplaatst
+
+Buttons staan links uitgelijnd met de labels en invoervelden
+
+- [plaatsing button](/richtlijnen/formulieren/buttons/plaatsing)
+
+### Buttons hebben een goed label
+
+Buttons hebben een duidelijke en beschrijvende tekst en wanneer er een toegankelijke naam is gebruikt code, bijvoorbeeld met `aria-label` komt deze overeen met de zichtbare tekst.
+
+- [duidelijke buttontekst](/richtlijnen/formulieren/buttons/duidelijk-buttontekst)
+- [toegankelijke naam button](/richtlijnen/formulieren/buttons/toegankelijke-naam)
+
+### Buttons zijn niet onnodig disabled
+
+Disabled submitbuttons worden niet gebruikt om verzenden te blokkeren.
+
+- [disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
+
+## Test de validatie
+
+Controleer hoe het formulier omgaat met wat de gebruiker invoert.
+
+### Geldige waarden zijn vooraf aangegeven en velden hebben geen onnodige lengtebeperkingen
+
+Geldige waarden voor een invoerveld zijn vooraf aangegeven, zodat gebruikers weten wat er wordt verwacht. Invoervelden hebben geen onnodig minimum of maximum aantal tekens.
+
+Lees meer over [geef geldige waardes aan](/richtlijnen/formulieren/voorkom-fouten/geldige-waardes) en [geen vaste tekstlengte](/richtlijnen/formulieren/vragen/geen-min-max-lengte).
+
+### Invoer wordt niet onnodig afgekeurd of beperkt
+
+Ingevoerde gegevens worden niet te snel afgekeurd. Er worden geen invoerpatronen gebruikt zodat bijvoorbeeld een minder vaak gebruikt e-mail adres (`user+inbox@voorbeeld.nl`) of een postcode met èn zonder spatieook geldig is.
+
+- [keur niet te snel af](/richtlijnen/formulieren/voorkom-fouten/keur-niet-te-snel-af)
+- [vermijd invoerpatronen](/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen).
+
+### Knippen en plakken is toegestaan in alle invoervelden.
+
+Knippen en plakken is toegestaan. Zodat gebruikers niet gedwongen worden een simpel goed te onthoduen wachtwoord te kiezen of hun contactgevens uit een adres boek kunnen overnemen.
+
+- [wachtwoord plakken](/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken)
+
+### Inzending kan worden gecontroleerd, gewijzigd of ongedaan gemaakt
+
+Het formulier biedt de mogelijkheid om een inzending te controleren, te wijzigen of ongedaan te maken.
+
+- [controleren en aanpassen](/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen)
+
+## Test de foutmeldingen
+
+Vul het formulier bewust fout in en controleer de foutafhandeling.
+
+### Foutmeldingen verschijnen op het juiste moment
+
+Foutmeldingen verschijnen niet al tijdens het typen — pas na het verlaten van het veld of na verzenden. HTML-formuliervalidatie van de browser is uitgeschakeld (`novalidate`).
+
+- [fouten controleren](/richtlijnen/formulieren/foutmeldingen/controleren)
+- [HTML-formuliervalidatie](/richtlijnen/formulieren/foutmeldingen/html-formuliervalidatie)
+
+### Foutmeldingen zijn beschrijvend en geven de gebruiker geen schuld
+
+Elke foutmelding staat in tekst bij het betreffende veld, niet alleen als kleur of icoon. Foutmeldingen leggen uit wat er fout is en hoe het opgelost kan worden — niet alleen "Invoer klopt niet!". Foutmeldingen geven de gebruiker niet de schuld en eindigen met een punt zodat een screenreader een duidelijke pauze maakt.
+
+Lees meer over [fouten beschrijven](/richtlijnen/formulieren/foutmeldingen/beschrijven) en [duidelijke foutmeldingen](/richtlijnen/formulieren/foutmeldingen/duidelijk).
+
+### Foutmeldingen staan bij het betreffende veld
+
+Foutmeldingen staan bij het betreffende veld, niet alleen bovenaan de pagina.
+
+Lees meer over [plaatsing foutmelding](/richtlijnen/formulieren/foutmeldingen/plaatsing).
+
+### Na verzenden verschijnt een samenvatting van alle fouten
+
+Na verzenden met fouten verschijnt een samenvatting van alle fouten boven het formulier. Elke foutmelding in de samenvatting is een link naar het betreffende veld. Het kopje van de foutensamenvatting krijgt toetsenbordfocus na verzenden.
+
+Lees meer over [samenvatting fouten](/richtlijnen/formulieren/foutmeldingen/samenvatting).
+
+## Test met een screenreader
+
+Test het formulier met een screenreader. Gebruik bij voorkeur een combinatie van screenreader en browser die veel voorkomt bij je doelgroep, zoals NVDA met Firefox of VoiceOver met Safari.
+
+### Labels, descriptions en verplichte velden worden correct voorgelezen
+
+Het label van elk veld wordt voorgelezen als het veld focus krijgt. De description van een veld wordt voorgelezen als het veld focus krijgt. Verplichte velden worden als verplicht aangeduid bij het voorlezen.
+
+Lees meer over [toegankelijke naam label](/richtlijnen/formulieren/labels/toegankelijke-naam), [koppel description](/richtlijnen/formulieren/descriptions/koppelen) en [optioneel of verplicht](/richtlijnen/formulieren/voorkom-fouten/verplichte-velden).
+
+### Foutmeldingen worden voorgelezen
+
+Foutmeldingen worden voorgelezen — controleer ook de foutensamenvatting.
+
+Lees meer over [screenreaderfeedback](/richtlijnen/formulieren/foutmeldingen/screenreaderfeedback).
+
+### Statusberichten worden voorgelezen en blijven zichtbaar — indien het formulier statusberichten toont
+
+Statusberichten (zoals "formulier verzonden") worden voorgelezen zonder dat de gebruiker er naartoe hoeft te navigeren. Statusberichten zijn ook zichtbaar voor ingezoomde gebruikers — ze verdwijnen niet buiten het scherm. Statusberichten verdwijnen niet automatisch — of als ze dat doen, wordt het einde van de status ook via een screenreader gecommuniceerd.
+
+Lees meer over [informeer screenreaders](/richtlijnen/formulieren/status/screenreaders), [informeer ingezoomde gebruikers](/richtlijnen/formulieren/status/zoom) en [geef gebruikers voldoende tijd](/richtlijnen/formulieren/status/enough-time).
+
+## Test een formulier met meerdere stappen
+
+Controleer als het formulier meerdere stappen heeft of de gebruikerservaring goed is.
+
+### Voortgang is zichtbaar en hoorbaar
+
+De voortgang wordt getoond boven het formulier in tekst, bijvoorbeeld "Stap 2 van 4". De naam van de stap en het formulier staat in de `<title>` van de pagina, zodat deze zichtbaar is in de browsertab en browsergeschiedenis. De voortgang is hoorbaar voor screenreadergebruikers: "Stap 2 van 4" of vergelijkbaar.
+
+Lees meer over [voortgang stappen tonen](/richtlijnen/formulieren/meerdere-stappen/voortgang-tonen).
+
+### Navigatie is consistent in elke stap
+
+De navigatie (volgende, vorige, annuleren) is consistent in elke stap.
+
+Lees meer over [consistente navigatie](/richtlijnen/formulieren/meerdere-stappen/consistente-benaming).
+
+### Laatste stap toont een samenvatting van alle ingevoerde gegevens
+
+De laatste stap toont een samenvatting van alle ingevoerde gegevens.
+
+Lees meer over [samenvatting in laatste stap](/richtlijnen/formulieren/meerdere-stappen/samenvatting).
+
+### Het is duidelijk wanneer het formulier wordt verzonden
+
+Het is duidelijk in welke stap het formulier daadwerkelijk wordt verzonden.
+
+Lees meer over [duidelijk aangeven verzenden](/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven).
+
+### Google Translate vertaalt geen ingevoerde gegevens mee
+
+Als je Google Translate gebruikt op de controlepagina, wordt de ingevoerde informatie niet meevertaald.
+
+## Test de bevestiging en succesmelding
+
+Controleer wat er gebeurt na het verzenden van het formulier.
+
+### Na verzenden verschijnt een duidelijke bevestiging
+
+Na verzenden verschijnt een duidelijke bevestiging dat het formulier succesvol is verzonden. De bevestiging vermeldt welke informatie is verstuurd, of verwijst naar een plek waar dat te vinden is. De bevestiging vermeldt wat de vervolgstappen zijn.
+
+Lees meer over [toegankelijke succesmelding](/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding), [bevestigingspagina](/richtlijnen/formulieren/bevestigingspagina) en [benoem vervolgstappen](/richtlijnen/formulieren/bevestigingspagina/vervolgstappen).
+
+## Test of er hulp wordt geboden
+
+### Er zijn meerdere contactmogelijkheden beschikbaar
+
+Er zijn meerdere manieren om contact op te nemen (niet alleen telefoon). Contactinformatie staat ook bovenaan het formulier of op de bevestigingspagina, niet alleen in de footer.
+
+Lees meer over [contactmogelijkheden](/richtlijnen/formulieren/vragen/manieren-voor-contact) en [contact opnemen](/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen).
+
+<FooterInfo />
