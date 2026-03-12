@@ -27,66 +27,115 @@ import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
 Sommige checks doe je handmatig, andere kun je automatiseren. Bij elke check staat een verwijzing naar de bijbehorende richtlijn voor meer uitleg.
 
-## Test de inhoud en vragen
+## Checklist voor de inhoud
 
-Controleer of je alleen vraagt wat je echt nodig hebt en of de vragen duidelijk zijn.
+Bekijk elk formulierveld, en controleer voor elk veld:
 
-### Alleen informatie gevraagd die nodig is
+- **Wordt om persoonlijke gegevens worden gevraagd?**\
+  Dan moet uitgelegd worden waarom, in de introductietekst of bij het formulierveld zelf.
+- **Is het veld verplicht?**\
+  Check of dat echt nodig is, pas het anders aan van "verplicht" naar optioneel.
+- **Is het veld dubbel?**\
+  Verwijder invoervelden die dubbel zijn.
+- **Is het veld niet echt nodig?**\
+  Verwijder invoervelden die niet nodig zijn.
+- **Heeft de tekst haakjes in woorden?**\
+  Bijvoorbeeld: "voorna(a)m(en)"? Pas de tekst aan.
+- **Kun je voor dit veld autocomplete instellen?**
 
-Elk gevraagd veld heeft een duidelijke reden. Je kunt uitleggen waarom je die informatie nodig hebt.
+Lees de richtlijnen voor meer informatie:
 
 - [vragen wat nodig is](/richtlijnen/formulieren/vragen).
-
-### Uitgelegd waarom specifieke informatie nodig is
-
-Reden voor uitvragen van privacygevoelig informatie zoals BSN nummer of contactgegevens zoals telefoonnummer en e-mailadres is uitgelegd.
-
 - [leg uit waarom](/richtlijnen/formulieren/vragen/leg-uit-waarom)
-
-### Informatie niet dubbel uitgevraagd
-
-Dezelfde informatie wordt niet meerdere keren gevraagd. Ook niet om een e-mail adres of wachtwoord te controleren.
-
 - [dubbel werk voorkomen](/richtlijnen/formulieren/vragen/voorkom-dubbel-werk)
+- [inhoud description](/richtlijnen/formulieren/descriptions/inhoud)
+- [autocomplete](/richtlijnen/formulieren/voorkom-fouten/autocomplete).
 
-### Tekst is makkelijk te begrijpen
+## Checklist voor het design
 
-Er is geen haakjesnotatie zoals voorna(a)m(en) of jargon gebruikt. De tekst is makkelijk te begrijpen en kan goed worden vertaald.
+- **Check het kleurcontrast van componenten.**\
+  De rand moet voldoende contrast hebben met de achtergrondkleur.
+- **Check het kleurcontrast van subtielere tekst.**\
+  De tekst van de beschrijving en van de placeholder moet voldoende contrast hebben met de achtergrondkleur.
+- **Zijn de componenten groot genoeg?**\
+  44x44px is gebruijksvriendelijk.
+- **Staan er buttons aan het eind van de regel, zoals "Volgende"?**\
+  Plaats de buttons aan het begin van de regel, waar iedereen ze kan vinden.
 
-## Test het visueel ontwerp
+Lees meer in de richtlijnen:
 
-Controleer of het formulier visueel duidelijk is voor alle gebruikers.
-
-### Invoervelden zijn goed zichtbaar
-
-Invoervelden zijn herkenbaar als invoerveld: de rand (border) heeft minimaal 3:1 kleurcontrast ten opzichte van de achtergrond.
-
+- [plaatsing label](/richtlijnen/formulieren/labels/plaatsing)
+- [label altijd zichtbaar](/richtlijnen/formulieren/labels/altijd-zichtbaar)
+- [zichtbare naam label](/richtlijnen/formulieren/labels/zichtbare-naam) ⁉️
 - [invoerveld goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar).
-
-### Tekst en placeholders hebben voldoende kleurcontrast
-
-Tekst in het formulier heeft voldoende kleurcontrast (minimaal 4,5:1). Placeholdertekst heeft ook voldoende kleurcontrast (minimaal 4,5:1).
-
 - [tekst goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar)
 - [placeholder goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/placeholder-goed-zichtbaar)
-
-### Klikbare onderdelen zijn groot genoeg
-
-Klikbare onderdelen zijn groot genoeg om makkelijk aan te klikken.
-
 - [invoerveld goed aanklikbaar](/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-aanklikbaar).
+- [placeholder bij zoekfunctie](/richtlijnen/formulieren/placeholders/zoekfunctie)
+- [plaatsing description](/richtlijnen/formulieren/descriptions/plaatsing)
+- [grootte aanklikbaar gedeelte](/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte) en [lengte description](/richtlijnen/formulieren/descriptions/lengte).
+- [plaatsing button](/richtlijnen/formulieren/buttons/plaatsing)
 
-### Velden staan in een logische volgorde
+## Checklist voor de code
 
-De volgorde van de velden is logisch van boven naar beneden.
+- Er worden geen afbeeldingen gebruikt voor buttons.
+- De zichtbare labeltekst komt overeen met de toegankelijke naam in de code. Klik op het label: het bijbehorende invoerveld krijgt focus — zo werkt de `for`-en-`id`-koppeling.
+- **Heb je code die voorkomt dat je kunt plakken?\n**
+  Verwijder die code.
+
+Lees meer in de richtlijnen:
+
+- [toegankelijke naam label](/richtlijnen/formulieren/labels/toegankelijke-naam)
+- [geen afbeelding voor buttons](/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons).
+- [descriptions](/richtlijnen/formulieren/descriptions)
+- [meerdere descriptions](/richtlijnen/formulieren/descriptions/meerdere-koppelen)
+- [disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
+- [legends in een fieldset](/richtlijnen/formulieren/fieldsets/legend)
+- [description bij fieldsets](/richtlijnen/formulieren/descriptions/plaatsing-bij-fieldset)
+- [wachtwoord plakken](/richtlijnen/formulieren/voorkom-fouten/wachtwoord-plakken)
+
+## Checklist voor gebruikerservaring
+
+- **Staan de formuliervelden in logische volgorde?**
+- **Zijn er meerdere contactmogelijkheden beschikbaar om hulp te krijgen?**
+  Zorg voor meerdere manieren zodat het voor iedereen mogelijk is contact op te nemen. Bijorobeeld: e-mail, chat en telefoon.
+- **Wordt hulp op meerdere plekken aangeboden?**
+  Goede plekken zijn: in de introductietekst, bovenaan een formulier, in de [Page Footer](/page-footer/) op de controlepagina en op de bevestigingspagina.
+
+- **Is er een duidelijke bevestiging?**
+  Een goede bevestiging vermeldt welke informatie is verstuurd, of verwijst naar een plek waar dat te vinden is. De bevestiging vermeldt wat de vervolgstappen zijn.
+
+### Na verzenden verschijnt een duidelijke bevestiging
+
+Na verzenden verschijnt een duidelijke bevestiging dat het formulier succesvol is verzonden. De bevestiging vermeldt welke informatie is verstuurd, of verwijst naar een plek waar dat te vinden is. De bevestiging vermeldt wat de vervolgstappen zijn.
+
+Lees meer over [toegankelijke succesmelding](/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding), [bevestigingspagina](/richtlijnen/formulieren/bevestigingspagina) en [benoem vervolgstappen](/richtlijnen/formulieren/bevestigingspagina/vervolgstappen).
+
+Lees meer in de richtlijnen:
 
 - [logische volgorde](/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde).
+- [contactmogelijkheden](/richtlijnen/formulieren/vragen/manieren-voor-contact)
+- [contact opnemen](/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen).
+
+## Checklist met toetsenbord
+
+- De focusindicator is goed zichtbaar waardoor het altijd duidelijk is waar focus is tijdens het navigeren met de Tab-toets.
+- Radiobuttons zijn bedienbaar met de pijltjestoetsen.
+
+Lees meer in de richtlijnen:
+
+- [focus goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar)
+- [toetsenbordnavigatie](/richtlijnen/formulieren/toetsenbord/toetsenbordnavigatie)
+
+## Checklist met screenreader
+
+...
+
+## Checklist voor zelf het formulier invullen
+
+- Controleer of de browser autocomplete aanbiedt om velden vooraf in te vullen.
 
 ### Geen afbeeldingen gebruikt voor buttons
-
-Er worden geen afbeeldingen gebruikt voor buttons.
-
-- [geen afbeelding voor buttons](/richtlijnen/formulieren/visueel-ontwerp/geen-afbeelding-voor-buttons).
 
 ## Test de labels en beschrijvingen
 
@@ -117,12 +166,6 @@ Labels bevatten geen afbeeldingen of interactieve elementen. Labelteksten zijn d
 ### Beschrijvingen zijn kort, makkelijk vindbaar en goed gekoppeld
 
 Belangrijke uitleg staat in een description of in de labeltekst, niet alleen in een placeholder of tooltip. Descriptions bevatten alleen tekst, staan tussen het label en het invoerveld, zijn kort en to-the-point, en het aanklikbare gedeelte is groot genoeg. Bij meerdere descriptions zijn ze allemaal correct gekoppeld aan het invoerveld.
-
-- [descriptions](/richtlijnen/formulieren/descriptions)
-- [inhoud description](/richtlijnen/formulieren/descriptions/inhoud)
-- [plaatsing description](/richtlijnen/formulieren/descriptions/plaatsing)
-- [meerdere descriptions](/richtlijnen/formulieren/descriptions/meerdere-koppelen)
-- [grootte aanklikbaar gedeelte](/richtlijnen/formulieren/descriptions/aanklikbaar-gedeelte) en [lengte description](/richtlijnen/formulieren/descriptions/lengte).
 
 ### Fieldsets hebben een duidelijke legend en makkelijk vindebare beschrijving
 
@@ -332,13 +375,5 @@ Controleer wat er gebeurt na het verzenden van het formulier.
 Na verzenden verschijnt een duidelijke bevestiging dat het formulier succesvol is verzonden. De bevestiging vermeldt welke informatie is verstuurd, of verwijst naar een plek waar dat te vinden is. De bevestiging vermeldt wat de vervolgstappen zijn.
 
 Lees meer over [toegankelijke succesmelding](/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding), [bevestigingspagina](/richtlijnen/formulieren/bevestigingspagina) en [benoem vervolgstappen](/richtlijnen/formulieren/bevestigingspagina/vervolgstappen).
-
-## Test of er hulp wordt geboden
-
-### Er zijn meerdere contactmogelijkheden beschikbaar
-
-Er zijn meerdere manieren om contact op te nemen (niet alleen telefoon). Contactinformatie staat ook bovenaan het formulier of op de bevestigingspagina, niet alleen in de footer.
-
-Lees meer over [contactmogelijkheden](/richtlijnen/formulieren/vragen/manieren-voor-contact) en [contact opnemen](/richtlijnen/formulieren/bevestigingspagina/contact-bij-vragen).
 
 <FooterInfo />
