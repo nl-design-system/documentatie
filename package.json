@@ -36,6 +36,7 @@
     "clean:docusaurus": "docusaurus clear",
     "clean:playwright": "playwright uninstall",
     "clean:generated": "rimraf build/ dist/ tmp/",
+    "clean:workspaces": "pnpm run --recursive clean",
     "serve": "http-server --port 3000 build/",
     "serve:test-report": "pnpm exec playwright show-report tmp/playwright-html-report",
     "serve:astro": "pnpm --filter @nl-design-system/website-astro run preview",
