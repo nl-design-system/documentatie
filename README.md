@@ -35,8 +35,8 @@ Heb je hulp nodig? Stel je vraag op [Slack](https://nldesignsystem.nl/slack) of 
 1. Zorg dat je de repository op je computer hebt staan door de geforkte documentatie repository te clonen.
 2. Open de Terminal en zorg dat je in het mapje zit waar de clone is belandt
 3. Draai `pnpm install` om te zorgen dat alle afhankelijkheden die Docusaurus nodig heeft beschikbaar zijn
-4. Draai `pnpm run build` om de CSS te builden (dit hoeft alleen de eerste keer)
-5. Draai `pnpm run start` om Docusaurus te starten.
+4. Draai `pnpm run build:docusaurus` om de CSS te builden (dit hoeft alleen de eerste keer)
+5. Draai `pnpm run start:docusaurus` om Docusaurus te starten.
 6. In de terminal staat nu `Docusaurus website is running at http://localhost:3000/` met `Cmd` ingedrukt kun je deze link aanklikken
 7. De website opent in je standaard browser
 
@@ -47,7 +47,7 @@ Zolang je het script in je terminal hebt draaien zal de website automatisch de o
 Als je de website structuur hebt aangepast dan is het nodig de website eerst te stoppen en dan opnieuw op te starten.
 
 1. Stop het script dat de website lokaal draait met `Cmd+C` in te typen in de terminal waar het script draait.
-2. Draai `pnpm run start` et voilá, de veranderingen worden zichtbaar.
+2. Draai `pnpm run start:docusaurus` et voilá, de veranderingen worden zichtbaar.
 
 ## Lokaal de build draaien met de Apache HTTP server
 
@@ -55,7 +55,7 @@ Apache HTTP server wordt momenteel gebruikt voor hosting van nldesignsystem.nl. 
 
 Het belangrijkste voordeel is dat je HTTP redirects kunt testen die in `static/.htaccess` zijn ingesteld.
 
-1. Zorg dat je een build hebt gemaakt: `pnpm run build`
+1. Zorg dat je een build hebt gemaakt: `pnpm run build:docusaurus`
 2. `docker-compose up`
 3. ga naar `http://localhost:8080/`
 4. Je kunt nu `static/.htaccess` aanpassen, en gelijk de resultaten testen.
