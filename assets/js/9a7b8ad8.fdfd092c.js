@@ -1,4 +1,4 @@
-/*! For license information please see 9a7b8ad8.7a97f9c8.js.LICENSE.txt */
+/*! For license information please see 9a7b8ad8.fdfd092c.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [67287],
@@ -54,7 +54,7 @@
     l = s(18439),
     r = s(88666),
     a = s(64249),
-    o = s(46447);
+    o = s(29181);
    const c = { title: 'Slack', slug: '/slack/', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Slack', pagination_label: 'Slack', description: 'Wij hebben chatkanelen in Slack, lees hier hoe je mee kan doen.', keywords: ['chat', 'Code for NL', 'codefor.nl', 'global-design-system', 'huddle', 'nl design system', 'nl-design-system', 'nl-design-system-a11y', 'nl-design-system-content', 'nl-design-system-designers', 'nl-design-system-developers', 'rijkshuisstijl-community', 'Slack'] },
     d = 'Slack voor NL Design System',
     h = {},
