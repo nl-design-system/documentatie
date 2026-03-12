@@ -1,15 +1,15 @@
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [85905],
+ [26169],
  {
-  18439(e, s, n) {
-   n.d(s, { R: () => o, x: () => a });
-   var r = n(30758);
+  18439(e, s, r) {
+   r.d(s, { R: () => o, x: () => a });
+   var n = r(30758);
    const i = {},
-    t = r.createContext(i);
+    t = n.createContext(i);
    function o(e) {
-    const s = r.useContext(t);
-    return r.useMemo(
+    const s = n.useContext(t);
+    return n.useMemo(
      function () {
       return 'function' == typeof e ? e(s) : { ...s, ...e };
      },
@@ -18,14 +18,14 @@
    }
    function a(e) {
     let s;
-    return ((s = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : o(e.components)), r.createElement(t.Provider, { value: s }, e.children));
+    return ((s = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : o(e.components)), n.createElement(t.Provider, { value: s }, e.children));
    }
   },
-  56456(e, s, n) {
-   (n.r(s), n.d(s, { assets: () => l, contentTitle: () => a, default: () => h, frontMatter: () => o, metadata: () => r, toc: () => d }));
-   const r = JSON.parse('{"id":"baseline/2026-02","title":"Baseline februari 2026","description":"De softwareversies waarmee we in februari 2026 voor NL Design System testen voor Baseline support.","source":"@site/docs/baseline/2026-02.mdx","sourceDirName":"baseline","slug":"/baseline/2026-02","permalink":"/baseline/2026-02","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/baseline/2026-02.mdx","tags":[],"version":"current","sidebarPosition":-202602,"frontMatter":{"title":"Baseline februari 2026","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Baseline februari 2026","sidebar_position":-202602,"pagination_label":"Baseline februari 2026","description":"De softwareversies waarmee we in februari 2026 voor NL Design System testen voor Baseline support.","slug":"/baseline/2026-02","keywords":["Accessibility Support Baseline","Baseline","browser support","browserversie"]},"sidebar":"handboek","previous":{"title":"Baseline","permalink":"/baseline/"},"next":{"title":"Baseline december 2025","permalink":"/baseline/2025-12"}}');
-   var i = n(86070),
-    t = n(18439);
+  94333(e, s, r) {
+   (r.r(s), r.d(s, { assets: () => l, contentTitle: () => a, default: () => h, frontMatter: () => o, metadata: () => n, toc: () => d }));
+   const n = JSON.parse('{"id":"baseline/Archief/2026-02","title":"Baseline februari 2026","description":"De softwareversies waarmee we in februari 2026 voor NL Design System testen voor Baseline support.","source":"@site/docs/baseline/Archief/2026-02.mdx","sourceDirName":"baseline/Archief","slug":"/baseline/2026-02","permalink":"/baseline/2026-02","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/baseline/Archief/2026-02.mdx","tags":[],"version":"current","sidebarPosition":-202602,"frontMatter":{"title":"Baseline februari 2026","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Baseline februari 2026","sidebar_position":-202602,"pagination_label":"Baseline februari 2026","description":"De softwareversies waarmee we in februari 2026 voor NL Design System testen voor Baseline support.","slug":"/baseline/2026-02","keywords":["Accessibility Support Baseline","Baseline","browser support","browserversie"]},"sidebar":"handboek","previous":{"title":"Baseline maart 2026","permalink":"/baseline/2026-03"},"next":{"title":"Baseline december 2025","permalink":"/baseline/2025-12"}}');
+   var i = r(86070),
+    t = r(18439);
    const o = { title: 'Baseline februari 2026', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Baseline februari 2026', sidebar_position: -202602, pagination_label: 'Baseline februari 2026', description: 'De softwareversies waarmee we in februari 2026 voor NL Design System testen voor Baseline support.', slug: '/baseline/2026-02', keywords: ['Accessibility Support Baseline', 'Baseline', 'browser support', 'browserversie'] },
     a = 'NL Design System Baseline: februari 2026',
     l = {},
