@@ -1,13 +1,55 @@
-<html lang="nl" dir="ltr">
+---
+import { siteName, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: 'nl' | 'en';
+  seoImage?: string;
+  seoImageAlt?: string;
+  keywords?: string[];
+  index?: boolean;
+}
+
+const { title, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true } = Astro.props;
+
+const fallbackSeoImage = '/social-image_nl-design-system.png';
+const fallbackSeoImageAlt = 'Logo van NL Design System';
+
+const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
+const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
+const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
+const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
+---
+
+<html lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content={siteThemeColor} />
+    <meta name="color-scheme" content={siteColorScheme} />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={[..._keywords].join(', ')} />
+    <meta name="robots" content={index ? 'index' : 'noindex'} />
 
-    <title>NL Design System</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:image" content={_seoImage} />
+    <meta property="og:image:alt" content={_seoImageAlt} />
+    <meta property="og:description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={lang} />
+    <meta property="twitter:card" content={twitterCard} />
+
+    <slot name="head" />
   </head>
 
   <body>
