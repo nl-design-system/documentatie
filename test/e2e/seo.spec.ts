@@ -125,7 +125,7 @@ test.describe('SEO values', async () => {
         await expect(values.title.length).toBeLessThanOrEqual(60);
       });
 
-      test.skip('Page description is set', async () => {
+      test('Page description is set', async () => {
         await expect(values.description).toBeTruthy();
       });
 
