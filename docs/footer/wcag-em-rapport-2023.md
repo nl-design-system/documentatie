@@ -1,5 +1,6 @@
 ---
 title: Audit toegankelijkheid NLDesignSystem.nl versie 1.0
+description: ""
 hide_title: true
 hide_table_of_contents: false
 pagination_label: Toegankelijkheid
