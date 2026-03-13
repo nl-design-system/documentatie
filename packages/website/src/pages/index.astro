@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { siteDescription, siteTitle } from '../seo.config.ts';
 import Document from '@layouts/document.astro';
 
 const docs = await getCollection('docs');
@@ -38,7 +39,7 @@ const duplicates = getDuplicateTitles(docs);
 const placeholderTitle = '(geen paginatitel)';
 ---
 
-<Document>
+<Document title={siteTitle} description={siteDescription}>
   <h1>NL Design System gerenderd met Astro</h1>
   {
     Object.entries(sections).map(([section, list]) => (
