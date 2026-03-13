@@ -1,6 +1,6 @@
 ---
 title: Privacyverklaring
-description: ""
+description: Voor verschillende activiteiten van NL Design System geef je persoonlijke gegevens op. Op deze pagina vind je wat we met deze gegevens doen.
 hide_title: true
 hide_table_of_contents: true
 pagination_label: Privacyverklaring
