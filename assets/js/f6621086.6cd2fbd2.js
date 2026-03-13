@@ -1,4 +1,4 @@
-/*! For license information please see f6621086.ce957a4d.js.LICENSE.txt */
+/*! For license information please see f6621086.6cd2fbd2.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [95414],
@@ -36,14 +36,14 @@
   },
   23874(e, n, i) {
    (i.r(n), i.d(n, { assets: () => m, contentTitle: () => c, default: () => p, frontMatter: () => g, metadata: () => t, toc: () => h }));
-   const t = JSON.parse('{"id":"community/events/design-systems-week/eerdere-edities/2025","title":"Videos","description":"Tijdens Design Systems Week kon je 4 dagen lang meerdere korte talks per dag volgen. Bijvoorbeeld over het TEDI:","source":"@site/docs/community/events/design-systems-week/eerdere-edities/2025.mdx","sourceDirName":"community/events/design-systems-week/eerdere-edities","slug":"/events/design-systems-week-2025/programma","permalink":"/events/design-systems-week-2025/programma","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2025.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Videos","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"2025","pagination_label":"Design Systems Week 2025","sidebar_position":1,"slug":"/events/design-systems-week-2025/programma","image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png---"},"sidebar":"community","previous":{"title":"Videos 2023","permalink":"/events/design-systems-week-2023/en/program"},"next":{"title":"Design Systems Week 2025","permalink":"/events/design-systems-week-2025/programma"}}');
+   const t = JSON.parse('{"id":"community/events/design-systems-week/eerdere-edities/2025","title":"Videos","description":"Tijdens Design Systems Week kon je 4 dagen lang meerdere korte talks per dag volgen. Bijvoorbeeld over het TEDI:","source":"@site/docs/community/events/design-systems-week/eerdere-edities/2025.mdx","sourceDirName":"community/events/design-systems-week/eerdere-edities","slug":"/events/design-systems-week-2025/programma","permalink":"/events/design-systems-week-2025/programma","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2025.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Videos","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"2025","pagination_label":"Design Systems Week 2025","sidebar_position":1,"slug":"/events/design-systems-week-2025/programma","image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png","image_alt":"NL Design System Design Systems Week 2024 27-30 Oktober, online"},"sidebar":"community","previous":{"title":"Videos 2023","permalink":"/events/design-systems-week-2023/en/program"},"next":{"title":"Design Systems Week 2025","permalink":"/events/design-systems-week-2025/programma"}}');
    var s = i(86070),
     a = i(18439),
     r = i(46447),
     o = i(2397),
     l = i(82702),
     d = i(75112);
-   const g = { title: 'Videos', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2025, pagination_label: 'Design Systems Week 2025', sidebar_position: 1, slug: '/events/design-systems-week-2025/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png---' },
+   const g = { title: 'Videos', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2025, pagination_label: 'Design Systems Week 2025', sidebar_position: 1, slug: '/events/design-systems-week-2025/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2025.png', image_alt: 'NL Design System Design Systems Week 2024 27-30 Oktober, online' },
     c = 'Design Systems Week 2025 terugkijken',
     m = {},
     h = [];
@@ -128,8 +128,8 @@
       S = e.adNetwork || !1,
       D = e.aspectHeight || 9,
       T = e.aspectWidth || 16,
-      I = e.iframeClass || '',
-      L = e.playerClass || 'lty-playbtn',
+      L = e.iframeClass || '',
+      I = e.playerClass || 'lty-playbtn',
       N = e.wrapperClass || 'yt-lite',
       E = s.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
       A = e.rel ? 'prefetch' : 'preload',
@@ -157,7 +157,7 @@
          role: l ? void 0 : 'img',
          'aria-label': l ? void 0 : `${m} - YouTube video preview`,
          style: { ...(!e.lazyLoad && { backgroundImage: `url(${z})` }), '--aspect-ratio': (D / T) * 100 + '%', ...(e.style || {}) },
-         children: [e.lazyLoad && !l && (0, t.jsx)('img', { src: z, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), (0, t.jsx)('button', { type: 'button', className: L, 'aria-label': `${u} ${m}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: u }) }), l && (0, t.jsx)('iframe', { ref: n, className: I, title: m, width: '560', height: '315', style: { border: 0 }, allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: v, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+         children: [e.lazyLoad && !l && (0, t.jsx)('img', { src: z, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), (0, t.jsx)('button', { type: 'button', className: I, 'aria-label': `${u} ${m}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: u }) }), l && (0, t.jsx)('iframe', { ref: n, className: L, title: m, width: '560', height: '315', style: { border: 0 }, allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: v, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
       })

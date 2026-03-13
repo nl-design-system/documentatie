@@ -5,8 +5,8 @@
   37447(e, s, i) {
    i.d(s, { W: () => o });
    var t = i(29181),
-    r = i(30758),
-    n = i(27890),
+    n = i(30758),
+    r = i(27890),
     a = i(54565),
     l = i(86070);
    const o = ({ listId: e = '', laPostaId: s = '', thanksPage: i = '', emailFieldId: o = '', firstNameFieldId: d = '', orgId: c = '', interestsId: h = '', interestsLegend: u = 'Waar wil je NL Design System voor gebruiken?', interests: m = [], interestsRequired: p = !1, disallowedInterestValues: g = [], workAreasId: j = '', privacyPolicyId: x = '', language: y, submitText: v = '', talkTitleId: f = '', talkDescriptionId: k = '', roleId: b = '', roleLegend: w = 'Wat is jouw rol?', roles: z = [], roleRequired: R = !1 }) => {
@@ -14,8 +14,8 @@
       register: I,
       handleSubmit: S,
       formState: { errors: _ },
-     } = (0, n.mN)(),
-     $ = (0, r.useRef)(null),
+     } = (0, r.mN)(),
+     $ = (0, n.useRef)(null),
      D = '2' === y?.value,
      F = (0, a.c)() ? window.location.search : '',
      B = new URLSearchParams(F),
@@ -26,7 +26,7 @@
       ((e, s) => {
        const i = [];
        let t = 1;
-       for (let r = 0; r < e.length; r++) {
+       for (let n = 0; n < e.length; n++) {
         for (; s.includes(t); ) t++;
         (i.push(t), t++);
        }
@@ -47,27 +47,27 @@
   },
   46974(e, s, i) {
    (i.r(s), i.d(s, { assets: () => d, contentTitle: () => o, default: () => u, frontMatter: () => l, metadata: () => t, toc: () => c }));
-   const t = JSON.parse('{"id":"community/events/design-systems-week/en/call-for-speakers","title":"Propose talk","description":"From October 27th to 31st, 2025, we\'re once again organizing a week full of sessions on design systems. A week in which we\'ll share experiences, demonstrate practical applications, and learn together about design, code, guidelines, and collaboration.","source":"@site/docs/community/events/design-systems-week/en/call-for-speakers.mdx","sourceDirName":"community/events/design-systems-week/en","slug":"/events/design-systems-week/en/call-for-speakers","permalink":"/events/design-systems-week/en/call-for-speakers","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/call-for-speakers.mdx","tags":[],"version":"current","frontMatter":{"title":"Propose talk","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Propose talk","pagination_label":"Propose talk","slug":"/events/design-systems-week/en/call-for-speakers","displayed_sidebar":"community"},"sidebar":"community"}');
-   var r = i(86070),
-    n = i(18439),
+   const t = JSON.parse('{"id":"community/events/design-systems-week/en/call-for-speakers","title":"Propose talk","description":"From October 27th to 31st, 2025, we\'re once again organizing a week full of sessions on design systems. A week in which we\'ll share experiences, demonstrate practical applications, and learn together about design, code, guidelines, and collaboration.","source":"@site/docs/community/events/design-systems-week/en/call-for-speakers.mdx","sourceDirName":"community/events/design-systems-week/en","slug":"/events/design-systems-week/en/call-for-speakers","permalink":"/events/design-systems-week/en/call-for-speakers","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/call-for-speakers.mdx","tags":[],"version":"current","frontMatter":{"title":"Propose talk","lang":"en","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Propose talk","pagination_label":"Propose talk","slug":"/events/design-systems-week/en/call-for-speakers","displayed_sidebar":"community"},"sidebar":"community"}');
+   var n = i(86070),
+    r = i(18439),
     a = i(37447);
-   const l = { title: 'Propose talk', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Propose talk', pagination_label: 'Propose talk', slug: '/events/design-systems-week/en/call-for-speakers', displayed_sidebar: 'community' },
+   const l = { title: 'Propose talk', lang: 'en', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Propose talk', pagination_label: 'Propose talk', slug: '/events/design-systems-week/en/call-for-speakers', displayed_sidebar: 'community' },
     o = 'Design Systems Week 2025 - Call for speakers',
     d = {},
     c = [{ value: 'Submit your proposal via this form', id: 'submit-your-proposal-via-this-form', level: 2 }];
    function h(e) {
-    const s = { h1: 'h1', h2: 'h2', header: 'header', p: 'p', ...(0, n.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(s.header, { children: (0, r.jsx)(s.h1, { id: 'design-systems-week-2025---call-for-speakers', children: 'Design Systems Week 2025 - Call for speakers' }) }), '\n', (0, r.jsx)(s.p, { children: "From October 27th to 31st, 2025, we're once again organizing a week full of sessions on design systems. A week in which we'll share experiences, demonstrate practical applications, and learn together about design, code, guidelines, and collaboration." }), '\n', (0, r.jsx)(s.p, { children: 'Are you a designer, developer, or content creator working with a government design system? Or do you have a great idea to share about the importance of an accessible design system? Then the Design Systems Week is a great opportunity to share knowledge with colleagues.' }), '\n', (0, r.jsx)(s.h2, { id: 'submit-your-proposal-via-this-form', children: 'Submit your proposal via this form' }), '\n', (0, r.jsx)(a.W, { listId: 'k5thcm7i86', emailFieldId: 'ieVxMqAsNc', firstNameFieldId: 'RH0bMSWloq', talkTitleId: '5DRurXNffg', talkDescriptionId: 'tT7iO8Fz3h', privacyPolicyId: '0Tw7Elhcrt', orgId: 'kdCftAyRgW', laPostaId: 'iyihtuzpiq', language: { id: 'x95hFD1RX5', value: '2' } })] });
+    const s = { h1: 'h1', h2: 'h2', header: 'header', p: 'p', ...(0, r.R)(), ...e.components };
+    return (0, n.jsxs)(n.Fragment, { children: [(0, n.jsx)(s.header, { children: (0, n.jsx)(s.h1, { id: 'design-systems-week-2025---call-for-speakers', children: 'Design Systems Week 2025 - Call for speakers' }) }), '\n', (0, n.jsx)(s.p, { children: "From October 27th to 31st, 2025, we're once again organizing a week full of sessions on design systems. A week in which we'll share experiences, demonstrate practical applications, and learn together about design, code, guidelines, and collaboration." }), '\n', (0, n.jsx)(s.p, { children: 'Are you a designer, developer, or content creator working with a government design system? Or do you have a great idea to share about the importance of an accessible design system? Then the Design Systems Week is a great opportunity to share knowledge with colleagues.' }), '\n', (0, n.jsx)(s.h2, { id: 'submit-your-proposal-via-this-form', children: 'Submit your proposal via this form' }), '\n', (0, n.jsx)(a.W, { listId: 'k5thcm7i86', emailFieldId: 'ieVxMqAsNc', firstNameFieldId: 'RH0bMSWloq', talkTitleId: '5DRurXNffg', talkDescriptionId: 'tT7iO8Fz3h', privacyPolicyId: '0Tw7Elhcrt', orgId: 'kdCftAyRgW', laPostaId: 'iyihtuzpiq', language: { id: 'x95hFD1RX5', value: '2' } })] });
    }
    function u(e = {}) {
-    const { wrapper: s } = { ...(0, n.R)(), ...e.components };
-    return s ? (0, r.jsx)(s, { ...e, children: (0, r.jsx)(h, { ...e }) }) : h(e);
+    const { wrapper: s } = { ...(0, r.R)(), ...e.components };
+    return s ? (0, n.jsx)(s, { ...e, children: (0, n.jsx)(h, { ...e }) }) : h(e);
    }
   },
   54565(e, s, i) {
-   i.d(s, { c: () => r });
+   i.d(s, { c: () => n });
    var t = i(30758);
-   function r() {
+   function n() {
     const [e, s] = (0, t.useState)();
     return ((0, t.useEffect)(() => s(!0), []), e);
    }
