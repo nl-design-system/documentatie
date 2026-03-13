@@ -1,7 +1,7 @@
 .contrast-ratio {
   position: relative;
   inline-size: 100%;
-  min-block-size: 320px;
+  min-block-size: var(--basis-space-block-max);
 }
 
 .contrast-ratio__sample {
