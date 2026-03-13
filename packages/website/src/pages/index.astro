@@ -4,6 +4,8 @@ import { siteDescription, siteTitle } from '../seo.config.ts';
 import Document from '@layouts/document.astro';
 
 const docs = await getCollection('docs');
+const wcag = await getCollection('wcag');
+const components = await getCollection('components');
 
 const sections: Record<string, { title: string; id: string }[]> = {};
 
@@ -25,7 +27,7 @@ const getDuplicateTitles = (docs: DocsArray) => {
   return Object.values(titles).filter((x) => x.length > 1);
 };
 
-docs.forEach((doc) => {
+[...components, ...docs, ...wcag].forEach((doc) => {
   if (!doc.filePath) return;
   const relativeFilePath = doc.filePath.replace('../../docs/', '');
   const section = relativeFilePath.split('/').at(0) || '';
