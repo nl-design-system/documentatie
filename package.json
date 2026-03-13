@@ -64,7 +64,7 @@
     "install-test-browsers": "playwright install",
     "test-a11y": "playwright test test/a11y/axe.test.ts --workers=8",
     "test-a11y:next": "playwright test test/a11y/axe.next.test.ts --workers=8",
-    "test-e2e": "playwright test test/e2e/",
+    "test-e2e": "playwright test test/e2e/ --workers=8",
     "test-visual": "playwright test test/visual/",
     "publish:argos": "argos upload ./tmp/screenshots",
     "test-update": "npm-run-all --sequential clean lint build",
