@@ -52,6 +52,7 @@ import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/cs
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import { ComponentStory } from "@site/src/components/ComponentStory";
 
 import {
   DefinitionOfDone,
@@ -64,6 +65,7 @@ import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./\_usage.md";
 import tokens from "@nl-design-system-candidate/heading-tokens";
+import { Heading as CandidateHeading } from "@nl-design-system-candidate/heading-react/css";
 
 export const title = "Heading";
 export const description = "Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.";
@@ -72,6 +74,10 @@ export const issueNumber = 114;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentStory label="Voorbeeld van een Heading 3">
+  <CandidateHeading level={3}>Kopniveau 3 voorbeeld</CandidateHeading>
+</ComponentStory>
 
 <ComponentAliases component={component} />
 
