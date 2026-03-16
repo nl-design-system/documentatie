@@ -1,65 +1,65 @@
 ---
-title: Vragen over aanbestedingen
+title: Tips voor NL Design System in aanbestedingen
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Aanbestedingen
 sidebar_position: 2
 pagination_label: Aanbestedingen
-description: Vragen over aanbestedingen
+description: Hoe kun je NL Design System opnemen, welke niveaus kun je kiezen en hoe krijg je de juiste expertise?
   - leverancier
   - waarom NL Design System
   - waarom een design system
 ---
 
-# Vragen over aanbestedingen
+<!-- @license CC0-1.0 -->
 
-## Moet ik NL Design System gebruiken verplicht stellen in mijn aanbesteding?
+# NL Design System in aanbestedingen
 
-NL Design System is niet een volledig kant-en-klaar product, dat voor elk project geschikt is om gelijk in gebruik te nemen.
-De community draagt voortdurend bij aan een levend product, zodat NL Design System steeds makkelijker ingezet kan worden in meer situaties.
+NL Design System is niet een volledig kant-en-klaar product, dat voor elk project geschikt is om gelijk in gebruik te nemen. De community zorgt dat NL Design System wordt doorontwikkeld zodat het makkelijker ingezet kan worden in meer situaties.
 
-Daarom is het belangrijk om duidelijk te zijn richting leveranciers, en kies één of meerdere opties:
+Wanneer NL Design System wordt opgenomen in je aanbesteding is het dus belangrijk om duidelijk te zijn richting leveranciers op welke manier je dat bedoelt. Een leverancier kan gebruik maken van de samenwerking van de community, de richtlijnen bij NL Design System, de bestaande componenten die werken met de eigen huisstijl óf een gedeelte van de componenten die nieuw worden ontwikkeld bijdragen aan NL Design System.
 
-- Voorkom dubbel werk: maak gebruik van NL Design System voor zover de voorraad strekt.
-- Maak de huisstijl beschikbaar voor volgende projecten: stel je huisstijl beschikbaar als thema voor NL Design System componenten, door een kant-en-klaar pakketje te maken met design tokens.
-- Verbeter toegankelijkheid en gebruiksvriendelijkheid: maak gebruik van de richtlijnen van NL Design System.
-- Draag bij aan de open source community: deel neem aan events, deel code, designs en gebruikersonderzoek.
+Door het minimale niveau van meedoen te kiezen maak je de verwachtingen duidelijk. Er is niet zoiets als een NL Design System keurmerk of compliance. Wel kunnen we als kernteam per niveau aangeven waar wij zelf op zouden letten.
 
-## Moet ik ervaring met NL Design System verplicht stellen in mijn uitvraag?
+De niveau's om uit te kiezen zijn:
 
-NL Design System bestaat nog maar enkele jaren, en de community wordt gelukkig steeds groter! Aan de slag gaan met NL Design System wordt steeds makkelijker, en daarom is het niet essentieël dat kandidaten al ervaring hebben met NL Design System. Het kan natuurlijk wel een wens zijn!
-Ervaring met de meestgebruikte technieken is natuurlijk wel erg waardevol. Daarom hebben we op aanvraag wel een templates beschikbaar voor de rol van UX-designer en Front-end Developer.
+1. **Draag bij aan de open source community**: deel voortgang in de Heartbeat en op Slack, deel code op GitHub, designs in Figma en uitkomsten van gebruikersonderzoek op gebruikersonderzoeken.nl.
+2. **Maak de huisstijl beschikbaar en hou deze up-to-date**: Stel de huisstijl beschikbaar als thema voor NL Design System componenten, door een kant-en-klaar pakketje te maken met design tokens. Zorg bij nieuwe projecten dat dit thema up-to-date is zodat er ook een huisstijl is ingesteld voor de nieuwste componenten.
+3. **Gebruik de richtlijnen**: Verbeter toegankelijkheid en gebruiksvriendelijkheid door bij de ontwikkeling van nieuwe websites gebruik te maken van de richtlijnen van NL Design System.
+4. **Gebruik bestaande componenten**: Maak gebruik van de componenten die al beschikbaar zijn als Community, Candidate of Hall of Fame component.
+5. **Help componenten verbeteren**: Zorg dat verbeteringen en uitbreidingen aan bestaande componenten worden bijgedragen aan de Community. Zo kunnen andere projecten en organisaties ook van deze verbeteringen profiteren.
+6. **Draag nieuwe componenten bij**: Maak nieuwe componenten in GitHub en Figma volgens de NL Design System aanpak, draag deze bij volgens het Community stappenplan en zorg voor beheer van deze componenten.
 
-### Tips om ervaring op te doen met NL Design System
+Bij  [meedoen met je organisatie](/handboek/organisatie/meedoen/)  is opgenomen hoe NL Design System de niveaus beoordeeld.
 
-- Lees de documentatie van NL Design System.
-- Kijk video-opnames terug met uitleg over NL Design System.
-- Lees mee op Slack naar vragen die anderen op doen.
-- Leer van je collega’s door mee te luisteren met Design Open Hour of Developer Open Hour
-- Werk een keer met de technieken waarmee NL Design System werkt.
+## Stel ervaring met NL Design System niet verplicht
 
-## Hoe formuleren we de eis in de uitvraag? Welke boodschap geven we aan leveranciers?
+NL Design System bestaat nog maar enkele jaren en het is geen standaard die in alle projecten gebruikt wordt. Daarom raden wij aan om ervaring met NL Design System niet verplicht te stellen in je uitvraag, maar wel als wens op te nemen.
 
-- Maak voor zover mogelijk gebruik van de richtlijnen en componenten NL Design System.
-- Nieuwe componenten die nodig zijn voor het project, maak je open source beschikbaar en ontwikkel je volgens de NL Design System architectuur.
-- Maak de huisstijl van de organisatie beschikbaar als design tokens, zodat nieuwe projecten gelijk gebruik kunnen maken van alle componenten.
-- Deel je ervaringen met de NL Design System community, zodat de richtlijnen en componenten nog beter worden.
+Ervaring met de gebruikte technieken van NL Design System is natuurlijk wel erg waardevol. Denk hierbij aan:
 
-## Hoe kunnen wij als organisatie controleren of aan de eis wordt voldaan?
+- Ervaring met Design Systems
+- Ervaring met herbruikbare componenten in Figma
+- Ervaring met Design Tokens JSON
+- Ervaring met Storybook en Chromatic
 
-Er is niet zoiets als een NL Design System keurmerk of compliance. Wel kunnen we als kernteam per niveau aangeven waar wij zelf op zouden letten.
+Op aanvraag heeft het kernteam een templates beschikbaar voor de rol van UX-designer en Front-end Developer.
 
-Bij [meedoen met je organisatie](/handboek/organisatie/meedoen) hebben we opgenomen hoe wij de niveaus zouden beoordelen.
+## Voorbereiden op NL Design System in een aanbesteding
 
-### Wat moeten wij als organisatie zelf doen, zodat een leverancier met het NL Design System voor ons aan de slag kan?
+Wat kun je zelf doen, zodat een leverancier met NL Design System aan de slag kan?
 
-- Deel je huisstijl informatie
-- Stel een contactpersoon beschikbaar om designkeuzes te maken, bijvoorbeeld wanneer een al eerder gemaakte keuze niet toegankelijk is of niet voldoet aan de richtlijnen van NL Design System.
-- Die contactpersoon kan ook deelnemen aan de Slack van #nl-design-system, zodat mensen laagdrempelig vragen kunnen stellen.
+### Deel je huisstijl informatie.
 
-### Wat betekent dat voor reeds bestaande design/techniek die nog niet aan de standaarden van NL Design System voldoet?
+Is er al een thema beschikbaar? Deel deze dan met de leverancier.
 
-1. Verbeter issues uit de toegankelijkheidsverklaring met hulp van de NL Design System richtlijnen
-2. Maak een eigen thema voor componenten die je later uit NL Design System wil gebruiken
-3. Gebruik en verbeter bij het maken van bug-fixes bestaande componenten
-4. Vervang de oncontroversiele componenten in de code door NL Design System componenten
+### Zorg voor afspraken
+
+Maak afspraken hoe nieuwe design keuzes mogen worden gemaakt, wie de updates deelt in de Heartbeat, wie vragen stelt in de Open Hours en of gebruikersonderzoeken mogen worden gedeeld.
+
+## Hulp nodig?
+
+Deze documentatie is opgesteld door het kernteam van NL Design System. Heb je hulp nodig om NL Design System te gaan gebruiken in jouw projecten? Kom in [Slack](/slack) of stuur een e-mail naar [info@nldesignsystem.nl](mailt:info@nldesignsystem.nl) .
+
+We willen graag van de community horen of deze documentatie werkbaar en nuttig is. Heb je vragen, aanvullingen of opmerkingen?
+[Open een issue op GitHub](https://github.com/nl-design-system/documentatie/issues) en deel je mening.
