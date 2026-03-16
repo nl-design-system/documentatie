@@ -323,8 +323,8 @@ importers:
         specifier: 7.71.1
         version: 7.71.1(react@18.3.1)
       react-lite-youtube-embed:
-        specifier: 2.6.0
-        version: 2.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 3.5.1
+        version: 3.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-markdown:
         specifier: 10.1.0
         version: 10.1.0(@types/react@18.3.27)(react@18.3.1)
@@ -9616,8 +9616,8 @@ packages:
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
-  react-lite-youtube-embed@2.6.0:
-    resolution: {integrity: sha512-IOz67PY67a/2hlEkiUIBJ9D6TYX7RQnJgCa5J2xgDWd9yhGxEacuamo4c3b5nV6+CwssyL6OCLtgFh2guaKsmw==}
+  react-lite-youtube-embed@3.5.1:
+    resolution: {integrity: sha512-nUxkYNt0mLQhbUpwxTqrHVjM35MuE7d5s0ZQB+atzE4lweBi293cAQFirslYvFf0YGXAGeVhvm9PrRhHitx29A==}
     peerDependencies:
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
@@ -22951,7 +22951,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  react-lite-youtube-embed@2.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-lite-youtube-embed@3.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
