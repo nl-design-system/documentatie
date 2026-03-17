@@ -98,13 +98,13 @@ element.addEventListener("blur", verbergTooltip);
 
 **Wie kan dit oplossen:** een developer voegt `focus`- en `blur`-events toe naast de muisgebeurtenissen.
 
-### Custom dropdown die niet met het toetsenbord te bedienen is
+### Zelfgemaakte dropdown die niet met het toetsenbord te bedienen is
 
-Op maat gemaakte dropdowns en selectiemenu's zijn vaak alleen voor de muis gebouwd. Ze openen niet met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>, je kunt niet door de opties navigeren met pijltjestoetsen en <kbd>Escape</kbd> sluit ze niet.
+Een dropdown moet te openen zijn met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>, je moet door de opties kunnen navigeren met pijltjestoetsen en <kbd>Escape</kbd> moet de dropdown sluiten. Een native `<select>`-element doet dit automatisch. Zelfgemaakte dropdowns missen deze toetsenbordbediening vaak.
 
 **Hoe te testen:** navigeer met <kbd>Tab</kbd> naar de dropdown. Kun je hem openen met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>? Kun je door de opties navigeren met pijltjestoetsen? Sluit <kbd>Escape</kbd> de dropdown?
 
-<Guideline appearance="dont" title="Custom dropdown zonder toetsenbordondersteuning.">
+<Guideline appearance="dont" title="Zelfgemaakte dropdown zonder toetsenbordondersteuning.">
 
 ```html
 <div class="dropdown" onclick="toggleMenu()">
