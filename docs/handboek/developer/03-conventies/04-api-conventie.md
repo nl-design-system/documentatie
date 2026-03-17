@@ -87,7 +87,7 @@ Gebruik de prefix van jouw organisatie voor de volgende dingen in CSS:
 - CSS custom properties
 - CSS class name selectors
 
-Gebruik selectors met een lage [CSS specificty](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), zodat mensen makkelijk uitbreidingen op je code kunnen doen.
+Gebruik selectors met een lage [CSS specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), zodat mensen makkelijk uitbreidingen op je code kunnen doen.
 
 CSS variables zijn onderdeel van de API van je component, tenzij ze met `--_` zijn geprefixed.
 
