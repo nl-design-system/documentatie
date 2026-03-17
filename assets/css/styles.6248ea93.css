@@ -1785,11 +1785,11 @@ body {
 .menu__caret:before,
 .menu__link--sublist-caret:after {
  content: "";
+ filter: var(--ifm-menu-link-sublist-icon-filter);
  height: 1.25rem;
  transform: rotate(180deg);
  transition: transform var(--ifm-transition-fast) linear;
  width: 1.25rem;
- filter: var(--ifm-menu-link-sublist-icon-filter);
 }
 .menu__link--sublist-caret:after {
  background: var(--ifm-menu-link-sublist-icon) 50%/2rem 2rem;
@@ -10031,10 +10031,6 @@ html:not([data-theme]) .themedComponent--light_LkwR {
 .toggleButtonDisabled_etUJ {
  cursor: not-allowed;
 }
-.dropdownNavbarItemMobile_ureE,
-.yt-lite {
- cursor: pointer;
-}
 .darkNavbarColorModeToggle_O1rP:hover {
  background: var(--ifm-color-gray-800);
 }
@@ -10078,6 +10074,9 @@ html:not([data-theme]) .themedComponent--light_LkwR {
 .docsWrapper_tP7r {
  display: flex;
  flex: 1 0 auto;
+}
+.dropdownNavbarItemMobile_ureE {
+ cursor: pointer;
 }
 .iconLanguage_tzxH {
  margin-right: 5px;
@@ -10131,10 +10130,12 @@ html:not([data-theme]) .themedComponent--light_LkwR {
  --utrecht-badge-font-size: max(var(--utrecht-paragraph-font-size), calc(var(--utrecht-heading-1-font-size) * 0.42));
 }
 .yt-lite {
+ aspect-ratio: 16/9;
  background-color: #000;
  background-position: 50%;
  background-size: cover;
- contain: content;
+ contain: layout style;
+ cursor: pointer;
  display: block;
  position: relative;
 }
@@ -10157,10 +10158,21 @@ html:not([data-theme]) .themedComponent--light_LkwR {
  display: block;
  padding-bottom: var(--aspect-ratio, 56.25%);
 }
+@supports (aspect-ratio: 16/9) {
+ .yt-lite:after {
+  display: none;
+ }
+}
 .yt-lite > iframe {
+ border: 0;
+ display: block;
  height: 100%;
  left: 0;
+ margin: 0;
+ outline: 0;
+ padding: 0;
  position: absolute;
+ right: 0;
  top: 0;
  width: 100%;
 }
@@ -10174,30 +10186,29 @@ html:not([data-theme]) .themedComponent--light_LkwR {
  width: 100%;
 }
 .yt-lite > .lty-playbtn {
- background-color: #212121;
- border-radius: 14%;
- height: 46px;
- opacity: 0.8;
- transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
- width: 70px;
- z-index: 1;
-}
-.yt-lite:hover > .lty-playbtn {
- background-color: red;
- opacity: 1;
-}
-.yt-lite > .lty-playbtn:before {
- border-color: transparent transparent transparent #fff;
- border-style: solid;
- border-width: 11px 0 11px 19px;
- content: "";
-}
-.yt-lite > .lty-playbtn,
-.yt-lite > .lty-playbtn:before {
+ background-color: transparent;
+ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="%23f00"/><path d="M45 24 27 14v20" fill="%23fff"/></svg>');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ border: none;
+ cursor: pointer;
+ filter: grayscale(100%);
+ font-size: 0;
+ height: 48px;
  left: 50%;
+ line-height: 0;
+ opacity: 0.8;
+ padding: 0;
  position: absolute;
  top: 50%;
  transform: translate3d(-50%, -50%, 0);
+ transition: filter 0.1s cubic-bezier(0, 0, 0.2, 1);
+ width: 68px;
+ z-index: 1;
+}
+.yt-lite:hover > .lty-playbtn {
+ filter: none;
+ opacity: 1;
 }
 .yt-lite.lyt-activated {
  cursor: unset;
@@ -10221,6 +10232,29 @@ html:not([data-theme]) .themedComponent--light_LkwR {
 .dsw-session,
 .dsw-session__speakers {
  margin-block: 2em;
+}
+.yt-lite > .lty-playlist-icon {
+ align-items: center;
+ background-color: rgba(0, 0, 0, 0.8);
+ border-radius: 4px;
+ display: flex;
+ height: 48px;
+ justify-content: center;
+ pointer-events: none;
+ position: absolute;
+ right: 8px;
+ top: 8px;
+ width: 48px;
+ z-index: 1;
+}
+.yt-lite > .lty-playlist-icon:before {
+ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M4 6h2v12H4V6zm12 0h-2v12h2V6zM8 6h10v12H8V6z" opacity="0.5"/><path d="M10 8h8v8h-8V8z"/></svg>');
+ background-position: 50%;
+ background-repeat: no-repeat;
+ background-size: contain;
+ content: "";
+ height: 28px;
+ width: 28px;
 }
 .dsw-session {
  border-block-end: 4px dotted #ccc;

@@ -3,7 +3,7 @@
  [43294],
  {
   18439(e, n, i) {
-   i.d(n, { R: () => r, x: () => l });
+   i.d(n, { R: () => r, x: () => a });
    var t = i(30758);
    const o = {},
     s = t.createContext(o);
@@ -16,31 +16,31 @@
      [n, e],
     );
    }
-   function l(e) {
+   function a(e) {
     let n;
     return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(o) : e.components || o) : r(e.components)), t.createElement(s.Provider, { value: n }, e.children));
    }
   },
-  75397(e, n, i) {
-   i.d(n, { L: () => a });
-   var t = i(30758),
-    o = i(86070);
+  73058(e, n, i) {
+   i.d(n, { L: () => l });
+   var t = i(86070),
+    o = i(30758);
    const s = { default: 120, mqdefault: 320, hqdefault: 480, sddefault: 640, maxresdefault: 1280 };
    function r(e, n, i, t, o) {
-    const s = { '@context': 'https://schema.org', '@type': 'VideoObject', name: (null == o ? void 0 : o.name) || n, thumbnailUrl: [(null == o ? void 0 : o.thumbnailUrl) || i], embedUrl: (null == o ? void 0 : o.embedUrl) || `${t}/embed/${e}`, contentUrl: (null == o ? void 0 : o.contentUrl) || `https://www.youtube.com/watch?v=${e}`, ...((null == o ? void 0 : o.description) && { description: o.description }), ...((null == o ? void 0 : o.uploadDate) && { uploadDate: o.uploadDate }), ...((null == o ? void 0 : o.duration) && { duration: o.duration }) };
+    const s = { '@context': 'https://schema.org', '@type': 'VideoObject', name: o?.name || n, thumbnailUrl: [o?.thumbnailUrl || i], embedUrl: o?.embedUrl || `${t}/embed/${e}`, contentUrl: o?.contentUrl || `https://www.youtube.com/watch?v=${e}`, ...(o?.description && { description: o.description }), ...(o?.uploadDate && { uploadDate: o.uploadDate }), ...(o?.duration && { duration: o.duration }) };
     return JSON.stringify(s);
    }
-   const l = t.forwardRef(function (e, n) {
-     const [i, l] = t.useState(!1),
-      [a, d] = t.useState(e.alwaysLoadIframe || !1),
+   const a = o.forwardRef(function (e, n) {
+     const [i, a] = o.useState(!1),
+      [l, d] = o.useState(e.alwaysLoadIframe || !1),
       c = encodeURIComponent(e.id),
       h = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
       u = e.title,
       m = e.poster || 'hqdefault',
       j = e.announce || 'Watch',
       g = !e.alwaysLoadIframe || (e.autoplay && e.muted),
-      k = t.useMemo(() => {
-       const n = new URLSearchParams({ ...(e.muted ? { mute: '1' } : {}), ...(g ? { autoplay: '1' } : {}), ...(e.enableJsApi ? { enablejsapi: '1' } : {}), ...(e.playlist ? { list: c } : {}) });
+      k = o.useMemo(() => {
+       const n = new URLSearchParams({ ...(e.muted ? { mute: '1' } : {}), ...(g ? { autoplay: '1' } : {}), ...(e.enableJsApi ? { enablejsapi: '1' } : {}), ...(e.enableJsApi && typeof window < 'u' ? { origin: window.location.origin } : {}), ...(e.playlist ? { list: c } : {}) });
        return (
         e.params &&
          new URLSearchParams(e.params.startsWith('&') ? e.params.slice(1) : e.params).forEach((e, i) => {
@@ -49,92 +49,171 @@
         n
        );
       }, [e.muted, g, e.enableJsApi, e.playlist, c, e.params]),
-      p = t.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
-      b = t.useMemo(() => (e.playlist ? `${p}/embed/videoseries?${k.toString()}` : `${p}/embed/${c}?${k.toString()}`), [e.playlist, p, c, k]),
+      p = o.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
+      b = o.useMemo(() => (e.playlist ? `${p}/embed/videoseries?${k.toString()}` : `${p}/embed/${c}?${k.toString()}`), [e.playlist, p, c, k]),
       v = !e.thumbnail && !e.playlist && 'maxresdefault' === m,
       x = e.webp ? 'webp' : 'jpg',
       f = e.webp ? 'vi_webp' : 'vi',
-      w = v
-       ? ((e, n, i, o = 'maxresdefault') => {
-          const [r, l] = (0, t.useState)('');
+      y = v
+       ? ((e, n, i, t = 'maxresdefault') => {
+          const [r, a] = (0, o.useState)('');
           return (
-           (0, t.useEffect)(() => {
-            const t = `https://img.youtube.com/${n}/${e}/${o}.${i}`,
+           (0, o.useEffect)(() => {
+            const o = `https://img.youtube.com/${n}/${e}/${t}.${i}`,
              r = `https://img.youtube.com/${n}/${e}/hqdefault.${i}`,
-             a = s[o],
+             l = s[t],
              d = new Image();
             ((d.onload = () => {
-             d.width < a ? l(r) : l(t);
+             d.width < l ? a(r) : a(o);
             }),
-             (d.onerror = () => l(r)),
-             (d.src = t));
-           }, [e, n, i, o]),
+             (d.onerror = () => a(r)),
+             (d.src = o));
+           }, [e, n, i, t]),
            r
           );
          })(e.id, f, x, m)
        : null,
-      y = t.useMemo(() => e.thumbnail || w || `https://i.ytimg.com/${f}/${e.playlist ? h : c}/${m}.${x}`, [e.thumbnail, w, f, e.playlist, h, c, m, x]),
-      z = e.activatedClass || 'lyt-activated',
-      S = e.adNetwork || !1,
+      w = o.useMemo(() => e.thumbnail || y || `https://i.ytimg.com/${f}/${e.playlist ? h : c}/${m}.${x}`, [e.thumbnail, y, f, e.playlist, h, c, m, x]),
+      S = e.activatedClass || 'lyt-activated',
+      z = e.adNetwork || !1,
       D = e.aspectHeight || 9,
       C = e.aspectWidth || 16,
       N = e.iframeClass || '',
-      _ = e.playerClass || 'lty-playbtn',
-      L = e.wrapperClass || 'yt-lite',
-      $ = t.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
-      B = e.rel ? 'prefetch' : 'preload',
-      O = e.containerElement || 'article',
-      A = !1 !== e.noscriptFallback;
+      E = e.playerClass || 'lty-playbtn',
+      _ = e.wrapperClass || 'yt-lite',
+      L = o.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
+      P = e.rel ? 'prefetch' : 'preload',
+      B = e.containerElement || 'article',
+      $ = !1 !== e.noscriptFallback,
+      O = () => {
+       l || d(!0);
+      };
      return (
-      t.useEffect(() => {
-       a && ($(), e.focusOnLoad && 'object' == typeof n && null != n && n.current && n.current.focus());
-      }, [a, $, e.focusOnLoad, n]),
-      (0, o.jsxs)(o.Fragment, {
+      o.useEffect(() => {
+       l && (L(), e.focusOnLoad && 'object' == typeof n && n?.current && n.current.focus());
+      }, [l, L, e.focusOnLoad, n]),
+      o.useEffect(() => {
+       if (!l || !e.enableJsApi || !(e.onReady || e.onStateChange || e.onError || e.onPlay || e.onPause || e.onEnd || e.onBuffering || e.onPlaybackRateChange || e.onPlaybackQualityChange)) return;
+       let i = !1,
+        t = !1;
+       const o = (t) => {
+        if ('https://www.youtube.com' !== t.origin && 'https://www.youtube-nocookie.com' !== t.origin) return;
+        let o;
+        try {
+         o = 'string' == typeof t.data ? JSON.parse(t.data) : t.data;
+        } catch {
+         return;
+        }
+        switch (o.event) {
+         case 'onReady':
+          i || ((i = !0), e.onReady && e.onReady({ videoId: e.id, title: u }));
+          break;
+         case 'infoDelivery':
+          if (void 0 !== o.info?.playerState) {
+           const i = o.info.playerState;
+           switch ((e.onStateChange && e.onStateChange({ state: i, currentTime: o.info.currentTime, duration: o.info.duration }), i)) {
+            case 1:
+             e.onPlay?.();
+             break;
+            case 2:
+             e.onPause?.();
+             break;
+            case 0:
+             (e.onEnd?.(), e.stopOnEnd && 'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*'));
+             break;
+            case 3:
+             e.onBuffering?.();
+           }
+          }
+          (void 0 !== o.info?.playbackRate && e.onPlaybackRateChange?.(o.info.playbackRate), void 0 !== o.info?.playbackQuality && e.onPlaybackQualityChange?.(o.info.playbackQuality));
+          break;
+         case 'onStateChange':
+          if (void 0 !== o.info?.playerState) {
+           const i = o.info.playerState;
+           switch ((e.onStateChange && e.onStateChange({ state: i, currentTime: o.info.currentTime, duration: o.info.duration }), i)) {
+            case 1:
+             e.onPlay?.();
+             break;
+            case 2:
+             e.onPause?.();
+             break;
+            case 0:
+             (e.onEnd?.(), e.stopOnEnd && 'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*'));
+             break;
+            case 3:
+             e.onBuffering?.();
+           }
+          }
+          break;
+         case 'onError':
+          if (o.info && 'errorCode' in o.info) {
+           const n = o.info.errorCode;
+           e.onError && e.onError(n);
+          }
+          break;
+         case 'onPlaybackRateChange':
+          void 0 !== o.info?.playbackRate && e.onPlaybackRateChange?.(o.info.playbackRate);
+          break;
+         case 'onPlaybackQualityChange':
+          void 0 !== o.info?.playbackQuality && e.onPlaybackQualityChange?.(o.info.playbackQuality);
+        }
+       };
+       window.addEventListener('message', o);
+       const s = [],
+        r = () => {
+         'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"listening","id":"' + c + '"}', '*');
+        },
+        a = () => {
+         t ||
+          ((t = !0),
+          r(),
+          [100, 300, 600, 1200, 2400].forEach((e) => {
+           s.push(setTimeout(r, e));
+          }));
+        };
+       return (
+        'object' == typeof n && n?.current
+         ? (n.current.addEventListener('load', a), 'complete' === n.current.contentDocument?.readyState && a())
+         : [200, 500, 1e3, 2e3, 3e3].forEach((e) => {
+            s.push(setTimeout(r, e));
+           }),
+        () => {
+         (window.removeEventListener('message', o), s.forEach(clearTimeout), 'object' == typeof n && n?.current && n.current.removeEventListener('load', a));
+        }
+       );
+      }, [l, e.enableJsApi, e.onReady, e.onStateChange, e.onError, e.onPlay, e.onPause, e.onEnd, e.onBuffering, e.onPlaybackRateChange, e.onPlaybackQualityChange, e.stopOnEnd, e.id, c, u, n]),
+      (0, t.jsxs)(t.Fragment, {
        children: [
-        !e.lazyLoad && (0, o.jsx)('link', { rel: B, href: y, as: 'image' }),
-        (0, o.jsx)(o.Fragment, { children: i && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('link', { rel: 'preconnect', href: p }), (0, o.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), S && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, o.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
-        e.seo && !e.playlist && (0, o.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: r(e.id, u, y, p, e.seo) } }),
-        A && !e.playlist && (0, o.jsx)('noscript', { children: (0, o.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${u} on YouTube`, children: ['Watch "', u, '" on YouTube'] }) }),
-        (0, o.jsxs)(O, {
+        !e.lazyLoad && (0, t.jsx)('link', { rel: P, href: w, as: 'image' }),
+        (0, t.jsx)(t.Fragment, { children: i && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: p }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), z && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
+        e.seo && !e.playlist && (0, t.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: r(e.id, u, w, p, e.seo) } }),
+        $ && !e.playlist && (0, t.jsx)('noscript', { children: (0, t.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${u} on YouTube`, children: ['Watch "', u, '" on YouTube'] }) }),
+        (0, t.jsxs)(B, {
          onPointerOver: () => {
-          i || l(!0);
+          i || a(!0);
          },
-         onClick: () => {
-          a || d(!0);
-         },
-         className: `${L} ${a ? z : ''}`,
+         onClick: O,
+         className: `${_} ${l ? S : ''}`,
          'data-title': u,
-         role: a ? void 0 : 'img',
-         'aria-label': a ? void 0 : `${u} - YouTube video preview`,
-         style: { ...(!e.lazyLoad && { backgroundImage: `url(${y})` }), '--aspect-ratio': (D / C) * 100 + '%', ...(e.style || {}) },
-         children: [e.lazyLoad && !a && (0, o.jsx)('img', { src: y, alt: `${u} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), (0, o.jsx)('button', { type: 'button', className: _, 'aria-label': `${j} ${u}`, 'aria-hidden': a || void 0, tabIndex: a ? -1 : 0, children: (0, o.jsx)('span', { className: 'lty-visually-hidden', children: j }) }), a && (0, o.jsx)('iframe', { ref: n, className: N, title: u, width: '560', height: '315', style: { border: 0 }, allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+         role: l || e.lazyLoad ? void 0 : 'img',
+         'aria-label': l ? void 0 : `${u} - YouTube video preview`,
+         style: { ...(!e.lazyLoad && { backgroundImage: `url(${w})` }), '--aspect-ratio': (D / C) * 100 + '%', ...(e.style || {}) },
+         children: [e.lazyLoad && !l && (0, t.jsx)('img', { src: w, alt: `${u} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !l && (0, t.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && l) && (0, t.jsx)('button', { type: 'button', className: E, 'aria-label': `${j} ${u}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, onClick: O, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: j }) }), l && (0, t.jsx)('iframe', { ref: n, className: N, title: u, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
       })
      );
     }),
-    a = ({ id: e, title: n, ...i }) => {
-     const s = (0, t.useCallback)((e) => {
-      if (!e) return;
-      const n = e.querySelector('[role="img"]');
-      n && n.setAttribute('role', 'group');
-      const i = new MutationObserver(() => {
-       const n = e.querySelector('[role="img"]');
-       n && (n.setAttribute('role', 'group'), i.disconnect());
-      });
-      i.observe(e, { attributes: !0, subtree: !0, attributeFilter: ['role'] });
-     }, []);
-     return (0, o.jsx)('div', { ref: s, children: (0, o.jsx)(l, { adNetwork: !1, announce: 'Bekijk', cookie: !1, containerElement: 'div', id: e, title: n, poster: 'maxresdefault', ...i }) });
-    };
+    l = ({ id: e, title: n, ...i }) => (0, t.jsx)(a, { lazyLoad: !0, adNetwork: !1, announce: 'Bekijk', cookie: !1, containerElement: 'div', id: e, title: n, poster: 'maxresdefault', ...i });
   },
   78123(e, n, i) {
-   (i.r(n), i.d(n, { assets: () => d, contentTitle: () => a, default: () => u, frontMatter: () => l, metadata: () => t, toc: () => c }));
+   (i.r(n), i.d(n, { assets: () => d, contentTitle: () => l, default: () => u, frontMatter: () => a, metadata: () => t, toc: () => c }));
    const t = JSON.parse('{"id":"handboek/huisstijl-vastleggen/design-tokens","title":"Design tokens","description":"Design tokens introductie","source":"@site/docs/handboek/huisstijl-vastleggen/design-tokens.mdx","sourceDirName":"handboek/huisstijl-vastleggen","slug":"/handboek/huisstijl/design-tokens","permalink":"/handboek/huisstijl/design-tokens","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/huisstijl-vastleggen/design-tokens.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Design tokens","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Design tokens","sidebar_position":1,"pagination_label":"Design tokens - Introductie","description":"Design tokens introductie","slug":"/handboek/huisstijl/design-tokens","keywords":["design token","design tokens","introductie"]},"sidebar":"handboek","previous":{"title":"Huisstijl vastleggen","permalink":"/handboek/huisstijl-vastleggen/overzicht"},"next":{"title":"Thema\'s","permalink":"/handboek/huisstijl/themas"}}');
    var o = i(86070),
     s = i(18439),
-    r = i(75397);
-   const l = { title: 'Design tokens', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Design tokens', sidebar_position: 1, pagination_label: 'Design tokens - Introductie', description: 'Design tokens introductie', slug: '/handboek/huisstijl/design-tokens', keywords: ['design token', 'design tokens', 'introductie'] },
-    a = 'Design tokens',
+    r = i(73058);
+   const a = { title: 'Design tokens', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Design tokens', sidebar_position: 1, pagination_label: 'Design tokens - Introductie', description: 'Design tokens introductie', slug: '/handboek/huisstijl/design-tokens', keywords: ['design token', 'design tokens', 'introductie'] },
+    l = 'Design tokens',
     d = {},
     c = [
      { value: 'Thema&#39;s', id: 'themas', level: 2 },

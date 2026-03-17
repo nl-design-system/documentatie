@@ -1,20 +1,20 @@
-/*! For license information please see ae1f0659.ec4e2408.js.LICENSE.txt */
+/*! For license information please see ae1f0659.63776662.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [29732],
  {
-  471(e, n, s) {
-   (s.r(n), s.d(n, { assets: () => c, contentTitle: () => m, default: () => p, frontMatter: () => g, metadata: () => i, toc: () => h }));
-   const i = JSON.parse('{"id":"community/events/design-systems-week/eerdere-edities/2024","title":"Video\'s van Design Systems Week 2024","description":"Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code","source":"@site/docs/community/events/design-systems-week/eerdere-edities/2024.mdx","sourceDirName":"community/events/design-systems-week/eerdere-edities","slug":"/events/design-systems-week-2024/programma","permalink":"/events/design-systems-week-2024/programma","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2024.mdx","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Video\'s van Design Systems Week 2024","description":"Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"2024","pagination_label":"Design Systems Week 2024","sidebar_position":2,"slug":"/events/design-systems-week-2024/programma","image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png","image_alt":"NL Design System Design Systems Week 2024 14-17 oktober, online"},"sidebar":"community","previous":{"title":"Design Systems Week 2025","permalink":"/events/design-systems-week-2025/programma"},"next":{"title":"Videos 2023","permalink":"/events/design-systems-week-2023/programma"}}');
-   var t = s(86070),
-    a = s(18439),
-    r = s(46447),
-    o = s(56796),
-    d = s(48419),
-    l = s(75112);
+  471(e, n, i) {
+   (i.r(n), i.d(n, { assets: () => m, contentTitle: () => c, default: () => p, frontMatter: () => g, metadata: () => s, toc: () => h }));
+   const s = JSON.parse('{"id":"community/events/design-systems-week/eerdere-edities/2024","title":"Video\'s van Design Systems Week 2024","description":"Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code","source":"@site/docs/community/events/design-systems-week/eerdere-edities/2024.mdx","sourceDirName":"community/events/design-systems-week/eerdere-edities","slug":"/events/design-systems-week-2024/programma","permalink":"/events/design-systems-week-2024/programma","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2024.mdx","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Video\'s van Design Systems Week 2024","description":"Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"2024","pagination_label":"Design Systems Week 2024","sidebar_position":2,"slug":"/events/design-systems-week-2024/programma","image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png","image_alt":"NL Design System Design Systems Week 2024 14-17 oktober, online"},"sidebar":"community","previous":{"title":"Design Systems Week 2025","permalink":"/events/design-systems-week-2025/programma"},"next":{"title":"Videos 2023","permalink":"/events/design-systems-week-2023/programma"}}');
+   var t = i(86070),
+    a = i(18439),
+    r = i(46447),
+    o = i(56796),
+    d = i(48419),
+    l = i(75112);
    const g = { title: "Video's van Design Systems Week 2024", description: 'Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2024, pagination_label: 'Design Systems Week 2024', sidebar_position: 2, slug: '/events/design-systems-week-2024/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png', image_alt: 'NL Design System Design Systems Week 2024 14-17 oktober, online' },
-    m = 'Design Systems Week 2024 terugkijken',
-    c = {},
+    c = 'Design Systems Week 2024 terugkijken',
+    m = {},
     h = [];
    function u(e) {
     const n = { a: 'a', em: 'em', h1: 'h1', header: 'header', p: 'p', ...(0, a.R)(), ...e.components };
@@ -25,14 +25,14 @@
     return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(u, { ...e }) }) : u(e);
    }
   },
-  18439(e, n, s) {
-   s.d(n, { R: () => r, x: () => o });
-   var i = s(30758);
+  18439(e, n, i) {
+   i.d(n, { R: () => r, x: () => o });
+   var s = i(30758);
    const t = {},
-    a = i.createContext(t);
+    a = s.createContext(t);
    function r(e) {
-    const n = i.useContext(a);
-    return i.useMemo(
+    const n = s.useContext(a);
+    return s.useMemo(
      function () {
       return 'function' == typeof e ? e(n) : { ...n, ...e };
      },
@@ -41,16 +41,16 @@
    }
    function o(e) {
     let n;
-    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(t) : e.components || t) : r(e.components)), i.createElement(a.Provider, { value: n }, e.children));
+    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(t) : e.components || t) : r(e.components)), s.createElement(a.Provider, { value: n }, e.children));
    }
   },
-  18652(e, n, s) {
-   s.d(n, { A: () => a });
-   var i = s(30758),
+  18652(e, n, i) {
+   i.d(n, { A: () => a });
+   var s = i(30758),
     t = { outline: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' }, filled: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'currentColor', stroke: 'none' } };
-   const a = (e, n, s, a) => {
-    const r = (0, i.forwardRef)(({ color: s = 'currentColor', size: r = 24, stroke: o = 2, title: d, className: l, children: g, ...m }, c) => (0, i.createElement)('svg', { ref: c, ...t[e], width: r, height: r, className: ['tabler-icon', `tabler-icon-${n}`, l].join(' '), ...('filled' === e ? { fill: s } : { strokeWidth: o, stroke: s }), ...m }, [d && (0, i.createElement)('title', { key: 'svg-title' }, d), ...a.map(([e, n]) => (0, i.createElement)(e, n)), ...(Array.isArray(g) ? g : [g])]));
-    return ((r.displayName = `${s}`), r);
+   const a = (e, n, i, a) => {
+    const r = (0, s.forwardRef)(({ color: i = 'currentColor', size: r = 24, stroke: o = 2, title: d, className: l, children: g, ...c }, m) => (0, s.createElement)('svg', { ref: m, ...t[e], width: r, height: r, className: ['tabler-icon', `tabler-icon-${n}`, l].join(' '), ...('filled' === e ? { fill: i } : { strokeWidth: o, stroke: i }), ...c }, [d && (0, s.createElement)('title', { key: 'svg-title' }, d), ...a.map(([e, n]) => (0, s.createElement)(e, n)), ...(Array.isArray(g) ? g : [g])]));
+    return ((r.displayName = `${i}`), r);
    };
   },
   48419(e) {
@@ -59,130 +59,209 @@
   56796(e) {
    e.exports = JSON.parse('[{"uuid":"C0639355-E372-422F-8EC9-B069C08CDEEA","isoDateTime":"2024-10-14T09:00:00.000Z","speakers":["GertHengeveld"],"subject":"Testing UI","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#testing-ui","icalLink":"/dsweek-2024/gert-hengeveld.ics","language":{"abbr":"EN","description":"English"},"videoId":"0_Xq74LkMY4"},{"uuid":"3A80C3A1-4657-42F8-908D-F9B7565CAF69","isoDateTime":"2024-10-14T11:00:00.000Z","speakers":["GeriReid"],"subject":"Design Systems: Choose your own adventure","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#design-systems:-choose-your-own-adventure","icalLink":"/dsweek-2024/geri-reid.ics","videoId":"lAy-dOhw2bU","language":{"abbr":"EN","description":"English"}},{"uuid":"6CB6A172-9F41-46FB-A24F-CA1DE023550C","isoDateTime":"2024-10-14T13:00:00.000Z","speakers":["ThijsLouisse"],"subject":"Werken op schaal","icalLink":"/dsweek-2024/thijs-louisse.ics","videoId":"5yThQMZ4cs0","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#werken-op-schaal","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"CE68A449-D6B7-44C2-B114-017668D83998","isoDateTime":"2024-10-14T14:30:00.000Z","speakers":["MikeGifford"],"subject":"De voordelen van open werken met design systems bij de overheid","icalLink":"/dsweek-2024/mike-gifford.ics","videoId":"lxLmK2NOFd4","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#de-voordelen-van-open-werken-met-design-systems-bij-de-overheid","language":{"abbr":"EN","description":"English"}},{"uuid":"E42373CE-E7D8-4996-B087-7DAB45D5AF96","isoDateTime":"2024-10-15T09:00:00.000Z","speakers":["KimDenie"],"subject":"Tips voor toegankelijke diensten","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#tips-voor-toegankelijke-dienstverlening","icalLink":"/dsweek-2024/kim-denie.ics","videoId":"0k0C0pRFaP8","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"F07EEF22-EA9B-4967-B326-2B721E7F2DD2","isoDateTime":"2024-10-15T11:00:00.000Z","speakers":["BryandeJong","MariekeBrouwer","LarsvandeCappelle","RaoulWittenberns"],"subject":"Heartbeat: Design Systems Week editie","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#heartbeat:-de-design-systems-week-lightning-talks-editie","icalLink":"/dsweek-2024/heartbeat.ics","videoId":"jMMxxZxCB4o","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"7A2AC63A-0D82-4156-A187-C688BAD1BE47","isoDateTime":"2024-10-15T13:00:00.000Z","speakers":["JeroenduChatinier"],"subject":"Je eerste gebruikersonderzoek doen, hoe doe je dat?","icalLink":"/dsweek-2024/jeroen-du-chatinier.ics","videoId":"m-qn8NQ1xh0","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#je-eerste-gebruikersonderzoek-doen,-hoe-doe-je-dat?","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"268DE453-5636-468C-8721-EAB3134D02A4","isoDateTime":"2024-10-15T14:30:00.000Z","speakers":["CharlottevanBijnen"],"subject":"Jongeren en jeugdcriminaliteit: een journey voor (en naar) betere communicatie door de Raad voor de Kinderbescherming","icalLink":"/dsweek-2024/charlotte-van-bijnen.ics","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#jongeren-en-jeugdcriminaliteit:-een-journey-voor-(en-naar)-betere-communicatie-door-de-raad-van-de-kinderbescherming","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"0963CB03-7FBC-4EBD-AAF1-6534402F3A58","isoDateTime":"2024-10-16T09:00:00.000Z","speakers":["GijsVeyfeyken","VincentSennesael","WarreBuysse"],"subject":"Vlaams Design System: 10 jaar lessons learned","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#vlaams-design-system:-10-jaar-lessons-learned","icalLink":"/dsweek-2024/vlaanderen.ics","videoId":"RN7BDhoU8Dc","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"5C1C0DCD-33E3-4F57-90F8-4807A55F6200","isoDateTime":"2024-10-16T11:00:00.000Z","speakers":["DaricedeCuba"],"subject":"Unmeasurable Accessibility: Beyond conformance","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#unmeasurable-accessibility:-beyond-conformance","icalLink":"/dsweek-2024/darice-de-cuba.ics","videoId":"LckUy3t7mUg","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"50AFAB63-ACDE-4137-8BD5-57B5C34F8B50","isoDateTime":"2024-10-16T13:00:00.000Z","speakers":["BartVeneman"],"subject":"Wat je allemaal niet weet over je CSS","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#wat-je-allemaal-niet-weet-over-je-css","icalLink":"/dsweek-2024/bart-veneman.ics","videoId":"ySJjj9CISD4","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"FE871D75-D5C2-4842-A100-71A8A7069FAD","isoDateTime":"2024-10-16T14:30:00.000Z","speakers":["AmyCole"],"subject":"Using USWDS Accessibility Tests to Develop Accessibility Skills Across Government Teams","icalLink":"/dsweek-2024/amy-cole.ics","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#using-uswds-accessibility-tests-to-develop-accessibility-skills-across-government-teams","videoId":"WYTKw_l3IXE","language":{"abbr":"EN","description":"English"}},{"uuid":"A980E371-ED8E-4EA4-A22C-CA1A212150F7","isoDateTime":"2024-10-17T09:00:00.000Z","speakers":["RobbertBroersma"],"subject":"Aan de slag met NL Design System","icalLink":"/dsweek-2024/robbert-broersma.ics","videoId":"ZozbnQpcBu8","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#live-coden-met-robbert","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"6024d4f3-c8fd-4bd5-a06c-36b69a687453","isoDateTime":"2024-10-17T11:00:00.000Z","speakers":["ChenHuiJing"],"subject":"CSS for internationalisation","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#css-for-internationalisation","icalLink":"/dsweek-2024/chen-hui-jing.ics","videoId":"wpypfDnrw78","language":{"abbr":"EN","description":"Engels"}},{"uuid":"A778C5D1-743F-4C8E-93AF-56F8375C29AC","isoDateTime":"2024-10-17T13:00:00.000Z","speakers":["LotteBijl"],"subject":"Inclusief gebruikersonderzoek bij de Belastingdienst, een blik achter de schermen","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#inclusief-gebruikersonderzoek-bij-de-belastingdienst,-een-blik-achter-de-schermen","icalLink":"/dsweek-2024/lotte-bijl.ics","videoId":"GMmDJOMBUx0","language":{"abbr":"NL","description":"Nederlands"}},{"uuid":"17A1CBCD-ACB8-4A85-87E4-A4CD258AFABA","isoDateTime":"2024-10-17T14:30:00.000Z","speakers":["SteveMesser"],"subject":"Common direction, boring magic","sessionLink":"https://nldesignsystem.nl/events/design-systems-week-2024/programma#common-direction,-boring-magic","icalLink":"/dsweek-2024/steve-messer.ics","videoId":"1xhZnqF6dc8","language":{"abbr":"EN","description":"Engels"}}]');
   },
-  75112(e, n, s) {
-   s.d(n, { H: () => l });
-   var i = s(90578),
-    t = s(46447),
-    a = s(13526),
-    r = s(75397),
-    o = s(86070);
-   const d = new Date().toISOString(),
-    l = ({ lang: e = 'nl', headingLevel: n = 3, allSpeakers: s, videoId: l, children: g, allSessions: m, sessionId: c }) => {
-     const h = m?.find(({ uuid: e }) => c === e),
-      u = h && h.speakers.map((e) => s[e]).filter(Boolean),
-      p = [l, h?.videoId, ...(h?.videoIds ?? [])].filter(Boolean);
-     return h ? (0, o.jsxs)('article', { className: (0, a.A)('dsw-session'), children: [(0, o.jsx)(t.DZ, { level: n, className: 'dsw-session__title', id: h.subject.toLowerCase().replace(/\s/gi, '-'), children: h.subject }), (0, o.jsx)(t.fz, { className: 'dsw-session__subtitle', lead: !0, children: u && u.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }), p.length > 0 && p.map((e) => (0, o.jsx)(r.L, { id: e, title: h.subject, style: { marginBlock: '20px' } }, e)), h && h.isoDateTime && h.isoDateTime > d ? (0, o.jsx)(t.fz, { children: (0, o.jsx)('time', { dateTime: h.isoDateTime, children: new Intl.DateTimeFormat(e, { dateStyle: 'full', timeStyle: 'nl' === e ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(h.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}), g, 'nl' === e && u.find(({ language: e }) => 'nl' !== e) && (0, o.jsxs)(t.fz, { children: [(0, o.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }), h.captioned ? (h.captionId ? (0, o.jsx)(o.Fragment, { children: (0, o.jsxs)(t.fz, { children: ['nl' === e ? (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Bij deze sessie is een schrijftolk aanwezig: ' }) }) : (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Live captioning is available for this session: ' }) }), (0, o.jsxs)('a', { href: `https://text-on-tap.live/#e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === e ? 'in de browser' : 'in the browser'] }), 'nl' === e ? ' of ' : ' or ', (0, o.jsxs)('a', { href: `https://text-on-tap.live/openoverlay.html?e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === e ? 'met de Overlay tool' : 'with the de Overlay tool'] })] }) }) : 'nl' === e ? (0, o.jsx)(t.fz, { children: 'Voor deze sessie hebben we nog geen schrijftolk gevonden' }) : (0, o.jsx)(o.Fragment, {})) : (0, o.jsx)(o.Fragment, {}), (0, o.jsx)('aside', { className: (0, a.A)('dsw-session__speakers'), children: u.map((n, s) => (0, o.jsxs)('div', { className: (0, a.A)('dsw-session__speaker', 'dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, a.A)('dsw-speaker__image'), src: n.image.src, alt: n.image.alt }), (0, o.jsx)(t.fz, { className: (0, a.A)('dsw-speaker__description'), children: n.description[e] })] }, s)) }), h && h.icalLink && !l ? (0, o.jsx)(t.fz, { children: (0, o.jsxs)(t.vx, { href: h.icalLink, download: h.icalLink, appearance: 'primary-action-button', children: [(0, o.jsx)(t.In, { children: (0, o.jsx)(i.A, {}) }), (0, o.jsx)('span', { children: 'nl' === e ? (0, o.jsxs)(o.Fragment, { children: ['Zet', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' in je agenda'] }) : (0, o.jsxs)(o.Fragment, { children: ['Add', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' to your calendar'] }) })] }) }) : null] }) : (0, o.jsx)(o.Fragment, {});
-    };
-  },
-  75397(e, n, s) {
-   s.d(n, { L: () => d });
-   var i = s(30758),
-    t = s(86070);
+  73058(e, n, i) {
+   i.d(n, { L: () => d });
+   var s = i(86070),
+    t = i(30758);
    const a = { default: 120, mqdefault: 320, hqdefault: 480, sddefault: 640, maxresdefault: 1280 };
-   function r(e, n, s, i, t) {
-    const a = { '@context': 'https://schema.org', '@type': 'VideoObject', name: (null == t ? void 0 : t.name) || n, thumbnailUrl: [(null == t ? void 0 : t.thumbnailUrl) || s], embedUrl: (null == t ? void 0 : t.embedUrl) || `${i}/embed/${e}`, contentUrl: (null == t ? void 0 : t.contentUrl) || `https://www.youtube.com/watch?v=${e}`, ...((null == t ? void 0 : t.description) && { description: t.description }), ...((null == t ? void 0 : t.uploadDate) && { uploadDate: t.uploadDate }), ...((null == t ? void 0 : t.duration) && { duration: t.duration }) };
+   function r(e, n, i, s, t) {
+    const a = { '@context': 'https://schema.org', '@type': 'VideoObject', name: t?.name || n, thumbnailUrl: [t?.thumbnailUrl || i], embedUrl: t?.embedUrl || `${s}/embed/${e}`, contentUrl: t?.contentUrl || `https://www.youtube.com/watch?v=${e}`, ...(t?.description && { description: t.description }), ...(t?.uploadDate && { uploadDate: t.uploadDate }), ...(t?.duration && { duration: t.duration }) };
     return JSON.stringify(a);
    }
-   const o = i.forwardRef(function (e, n) {
-     const [s, o] = i.useState(!1),
-      [d, l] = i.useState(e.alwaysLoadIframe || !1),
+   const o = t.forwardRef(function (e, n) {
+     const [i, o] = t.useState(!1),
+      [d, l] = t.useState(e.alwaysLoadIframe || !1),
       g = encodeURIComponent(e.id),
-      m = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
-      c = e.title,
+      c = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
+      m = e.title,
       h = e.poster || 'hqdefault',
       u = e.announce || 'Watch',
       p = !e.alwaysLoadIframe || (e.autoplay && e.muted),
-      k = i.useMemo(() => {
-       const n = new URLSearchParams({ ...(e.muted ? { mute: '1' } : {}), ...(p ? { autoplay: '1' } : {}), ...(e.enableJsApi ? { enablejsapi: '1' } : {}), ...(e.playlist ? { list: g } : {}) });
+      k = t.useMemo(() => {
+       const n = new URLSearchParams({ ...(e.muted ? { mute: '1' } : {}), ...(p ? { autoplay: '1' } : {}), ...(e.enableJsApi ? { enablejsapi: '1' } : {}), ...(e.enableJsApi && typeof window < 'u' ? { origin: window.location.origin } : {}), ...(e.playlist ? { list: g } : {}) });
        return (
         e.params &&
-         new URLSearchParams(e.params.startsWith('&') ? e.params.slice(1) : e.params).forEach((e, s) => {
-          n.append(s, e);
+         new URLSearchParams(e.params.startsWith('&') ? e.params.slice(1) : e.params).forEach((e, i) => {
+          n.append(i, e);
          }),
         n
        );
       }, [e.muted, p, e.enableJsApi, e.playlist, g, e.params]),
-      v = i.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
-      b = i.useMemo(() => (e.playlist ? `${v}/embed/videoseries?${k.toString()}` : `${v}/embed/${g}?${k.toString()}`), [e.playlist, v, g, k]),
+      b = t.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
+      v = t.useMemo(() => (e.playlist ? `${b}/embed/videoseries?${k.toString()}` : `${b}/embed/${g}?${k.toString()}`), [e.playlist, b, g, k]),
       j = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
       w = e.webp ? 'webp' : 'jpg',
       y = e.webp ? 'vi_webp' : 'vi',
       f = j
-       ? ((e, n, s, t = 'maxresdefault') => {
-          const [r, o] = (0, i.useState)('');
+       ? ((e, n, i, s = 'maxresdefault') => {
+          const [r, o] = (0, t.useState)('');
           return (
-           (0, i.useEffect)(() => {
-            const i = `https://img.youtube.com/${n}/${e}/${t}.${s}`,
-             r = `https://img.youtube.com/${n}/${e}/hqdefault.${s}`,
-             d = a[t],
+           (0, t.useEffect)(() => {
+            const t = `https://img.youtube.com/${n}/${e}/${s}.${i}`,
+             r = `https://img.youtube.com/${n}/${e}/hqdefault.${i}`,
+             d = a[s],
              l = new Image();
             ((l.onload = () => {
-             l.width < d ? o(r) : o(i);
+             l.width < d ? o(r) : o(t);
             }),
              (l.onerror = () => o(r)),
-             (l.src = i));
-           }, [e, n, s, t]),
+             (l.src = t));
+           }, [e, n, i, s]),
            r
           );
          })(e.id, y, w, h)
        : null,
-      z = i.useMemo(() => e.thumbnail || f || `https://i.ytimg.com/${y}/${e.playlist ? m : g}/${h}.${w}`, [e.thumbnail, f, y, e.playlist, m, g, h, w]),
+      z = t.useMemo(() => e.thumbnail || f || `https://i.ytimg.com/${y}/${e.playlist ? c : g}/${h}.${w}`, [e.thumbnail, f, y, e.playlist, c, g, h, w]),
       x = e.activatedClass || 'lyt-activated',
-      D = e.adNetwork || !1,
-      S = e.aspectHeight || 9,
+      S = e.adNetwork || !1,
+      D = e.aspectHeight || 9,
       C = e.aspectWidth || 16,
       A = e.iframeClass || '',
       L = e.playerClass || 'lty-playbtn',
       B = e.wrapperClass || 'yt-lite',
-      E = i.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
+      E = t.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
       I = e.rel ? 'prefetch' : 'preload',
       N = e.containerElement || 'article',
-      F = !1 !== e.noscriptFallback;
+      T = !1 !== e.noscriptFallback,
+      F = () => {
+       d || l(!0);
+      };
      return (
-      i.useEffect(() => {
-       d && (E(), e.focusOnLoad && 'object' == typeof n && null != n && n.current && n.current.focus());
+      t.useEffect(() => {
+       d && (E(), e.focusOnLoad && 'object' == typeof n && n?.current && n.current.focus());
       }, [d, E, e.focusOnLoad, n]),
-      (0, t.jsxs)(t.Fragment, {
+      t.useEffect(() => {
+       if (!d || !e.enableJsApi || !(e.onReady || e.onStateChange || e.onError || e.onPlay || e.onPause || e.onEnd || e.onBuffering || e.onPlaybackRateChange || e.onPlaybackQualityChange)) return;
+       let i = !1,
+        s = !1;
+       const t = (s) => {
+        if ('https://www.youtube.com' !== s.origin && 'https://www.youtube-nocookie.com' !== s.origin) return;
+        let t;
+        try {
+         t = 'string' == typeof s.data ? JSON.parse(s.data) : s.data;
+        } catch {
+         return;
+        }
+        switch (t.event) {
+         case 'onReady':
+          i || ((i = !0), e.onReady && e.onReady({ videoId: e.id, title: m }));
+          break;
+         case 'infoDelivery':
+          if (void 0 !== t.info?.playerState) {
+           const i = t.info.playerState;
+           switch ((e.onStateChange && e.onStateChange({ state: i, currentTime: t.info.currentTime, duration: t.info.duration }), i)) {
+            case 1:
+             e.onPlay?.();
+             break;
+            case 2:
+             e.onPause?.();
+             break;
+            case 0:
+             (e.onEnd?.(), e.stopOnEnd && 'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*'));
+             break;
+            case 3:
+             e.onBuffering?.();
+           }
+          }
+          (void 0 !== t.info?.playbackRate && e.onPlaybackRateChange?.(t.info.playbackRate), void 0 !== t.info?.playbackQuality && e.onPlaybackQualityChange?.(t.info.playbackQuality));
+          break;
+         case 'onStateChange':
+          if (void 0 !== t.info?.playerState) {
+           const i = t.info.playerState;
+           switch ((e.onStateChange && e.onStateChange({ state: i, currentTime: t.info.currentTime, duration: t.info.duration }), i)) {
+            case 1:
+             e.onPlay?.();
+             break;
+            case 2:
+             e.onPause?.();
+             break;
+            case 0:
+             (e.onEnd?.(), e.stopOnEnd && 'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*'));
+             break;
+            case 3:
+             e.onBuffering?.();
+           }
+          }
+          break;
+         case 'onError':
+          if (t.info && 'errorCode' in t.info) {
+           const n = t.info.errorCode;
+           e.onError && e.onError(n);
+          }
+          break;
+         case 'onPlaybackRateChange':
+          void 0 !== t.info?.playbackRate && e.onPlaybackRateChange?.(t.info.playbackRate);
+          break;
+         case 'onPlaybackQualityChange':
+          void 0 !== t.info?.playbackQuality && e.onPlaybackQualityChange?.(t.info.playbackQuality);
+        }
+       };
+       window.addEventListener('message', t);
+       const a = [],
+        r = () => {
+         'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"listening","id":"' + g + '"}', '*');
+        },
+        o = () => {
+         s ||
+          ((s = !0),
+          r(),
+          [100, 300, 600, 1200, 2400].forEach((e) => {
+           a.push(setTimeout(r, e));
+          }));
+        };
+       return (
+        'object' == typeof n && n?.current
+         ? (n.current.addEventListener('load', o), 'complete' === n.current.contentDocument?.readyState && o())
+         : [200, 500, 1e3, 2e3, 3e3].forEach((e) => {
+            a.push(setTimeout(r, e));
+           }),
+        () => {
+         (window.removeEventListener('message', t), a.forEach(clearTimeout), 'object' == typeof n && n?.current && n.current.removeEventListener('load', o));
+        }
+       );
+      }, [d, e.enableJsApi, e.onReady, e.onStateChange, e.onError, e.onPlay, e.onPause, e.onEnd, e.onBuffering, e.onPlaybackRateChange, e.onPlaybackQualityChange, e.stopOnEnd, e.id, g, m, n]),
+      (0, s.jsxs)(s.Fragment, {
        children: [
-        !e.lazyLoad && (0, t.jsx)('link', { rel: I, href: z, as: 'image' }),
-        (0, t.jsx)(t.Fragment, { children: s && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: v }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), D && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
-        e.seo && !e.playlist && (0, t.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: r(e.id, c, z, v, e.seo) } }),
-        F && !e.playlist && (0, t.jsx)('noscript', { children: (0, t.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${c} on YouTube`, children: ['Watch "', c, '" on YouTube'] }) }),
-        (0, t.jsxs)(N, {
+        !e.lazyLoad && (0, s.jsx)('link', { rel: I, href: z, as: 'image' }),
+        (0, s.jsx)(s.Fragment, { children: i && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)('link', { rel: 'preconnect', href: b }), (0, s.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), S && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, s.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
+        e.seo && !e.playlist && (0, s.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: r(e.id, m, z, b, e.seo) } }),
+        T && !e.playlist && (0, s.jsx)('noscript', { children: (0, s.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${m} on YouTube`, children: ['Watch "', m, '" on YouTube'] }) }),
+        (0, s.jsxs)(N, {
          onPointerOver: () => {
-          s || o(!0);
+          i || o(!0);
          },
-         onClick: () => {
-          d || l(!0);
-         },
+         onClick: F,
          className: `${B} ${d ? x : ''}`,
-         'data-title': c,
-         role: d ? void 0 : 'img',
-         'aria-label': d ? void 0 : `${c} - YouTube video preview`,
-         style: { ...(!e.lazyLoad && { backgroundImage: `url(${z})` }), '--aspect-ratio': (S / C) * 100 + '%', ...(e.style || {}) },
-         children: [e.lazyLoad && !d && (0, t.jsx)('img', { src: z, alt: `${c} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), (0, t.jsx)('button', { type: 'button', className: L, 'aria-label': `${u} ${c}`, 'aria-hidden': d || void 0, tabIndex: d ? -1 : 0, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: u }) }), d && (0, t.jsx)('iframe', { ref: n, className: A, title: c, width: '560', height: '315', style: { border: 0 }, allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+         'data-title': m,
+         role: d || e.lazyLoad ? void 0 : 'img',
+         'aria-label': d ? void 0 : `${m} - YouTube video preview`,
+         style: { ...(!e.lazyLoad && { backgroundImage: `url(${z})` }), '--aspect-ratio': (D / C) * 100 + '%', ...(e.style || {}) },
+         children: [e.lazyLoad && !d && (0, s.jsx)('img', { src: z, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !d && (0, s.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && d) && (0, s.jsx)('button', { type: 'button', className: L, 'aria-label': `${u} ${m}`, 'aria-hidden': d || void 0, tabIndex: d ? -1 : 0, onClick: F, children: (0, s.jsx)('span', { className: 'lty-visually-hidden', children: u }) }), d && (0, s.jsx)('iframe', { ref: n, className: A, title: m, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: v, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
       })
      );
     }),
-    d = ({ id: e, title: n, ...s }) => {
-     const a = (0, i.useCallback)((e) => {
-      if (!e) return;
-      const n = e.querySelector('[role="img"]');
-      n && n.setAttribute('role', 'group');
-      const s = new MutationObserver(() => {
-       const n = e.querySelector('[role="img"]');
-       n && (n.setAttribute('role', 'group'), s.disconnect());
-      });
-      s.observe(e, { attributes: !0, subtree: !0, attributeFilter: ['role'] });
-     }, []);
-     return (0, t.jsx)('div', { ref: a, children: (0, t.jsx)(o, { adNetwork: !1, announce: 'Bekijk', cookie: !1, containerElement: 'div', id: e, title: n, poster: 'maxresdefault', ...s }) });
+    d = ({ id: e, title: n, ...i }) => (0, s.jsx)(o, { lazyLoad: !0, adNetwork: !1, announce: 'Bekijk', cookie: !1, containerElement: 'div', id: e, title: n, poster: 'maxresdefault', ...i });
+  },
+  75112(e, n, i) {
+   i.d(n, { H: () => l });
+   var s = i(90578),
+    t = i(46447),
+    a = i(13526),
+    r = i(73058),
+    o = i(86070);
+   const d = new Date().toISOString(),
+    l = ({ lang: e = 'nl', headingLevel: n = 3, allSpeakers: i, videoId: l, children: g, allSessions: c, sessionId: m }) => {
+     const h = c?.find(({ uuid: e }) => m === e),
+      u = h && h.speakers.map((e) => i[e]).filter(Boolean),
+      p = [l, h?.videoId, ...(h?.videoIds ?? [])].filter(Boolean);
+     return h ? (0, o.jsxs)('article', { className: (0, a.A)('dsw-session'), children: [(0, o.jsx)(t.DZ, { level: n, className: 'dsw-session__title', id: h.subject.toLowerCase().replace(/\s/gi, '-'), children: h.subject }), (0, o.jsx)(t.fz, { className: 'dsw-session__subtitle', lead: !0, children: u && u.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }), p.length > 0 && p.map((e) => (0, o.jsx)(r.L, { id: e, title: h.subject, style: { marginBlock: '20px' } }, e)), h && h.isoDateTime && h.isoDateTime > d ? (0, o.jsx)(t.fz, { children: (0, o.jsx)('time', { dateTime: h.isoDateTime, children: new Intl.DateTimeFormat(e, { dateStyle: 'full', timeStyle: 'nl' === e ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(h.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}), g, 'nl' === e && u.find(({ language: e }) => 'nl' !== e) && (0, o.jsxs)(t.fz, { children: [(0, o.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }), h.captioned ? (h.captionId ? (0, o.jsx)(o.Fragment, { children: (0, o.jsxs)(t.fz, { children: ['nl' === e ? (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Bij deze sessie is een schrijftolk aanwezig: ' }) }) : (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Live captioning is available for this session: ' }) }), (0, o.jsxs)('a', { href: `https://text-on-tap.live/#e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === e ? 'in de browser' : 'in the browser'] }), 'nl' === e ? ' of ' : ' or ', (0, o.jsxs)('a', { href: `https://text-on-tap.live/openoverlay.html?e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === e ? 'met de Overlay tool' : 'with the de Overlay tool'] })] }) }) : 'nl' === e ? (0, o.jsx)(t.fz, { children: 'Voor deze sessie hebben we nog geen schrijftolk gevonden' }) : (0, o.jsx)(o.Fragment, {})) : (0, o.jsx)(o.Fragment, {}), (0, o.jsx)('aside', { className: (0, a.A)('dsw-session__speakers'), children: u.map((n, i) => (0, o.jsxs)('div', { className: (0, a.A)('dsw-session__speaker', 'dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, a.A)('dsw-speaker__image'), src: n.image.src, alt: n.image.alt }), (0, o.jsx)(t.fz, { className: (0, a.A)('dsw-speaker__description'), children: n.description[e] })] }, i)) }), h && h.icalLink && !l ? (0, o.jsx)(t.fz, { children: (0, o.jsxs)(t.vx, { href: h.icalLink, download: h.icalLink, appearance: 'primary-action-button', children: [(0, o.jsx)(t.In, { children: (0, o.jsx)(s.A, {}) }), (0, o.jsx)('span', { children: 'nl' === e ? (0, o.jsxs)(o.Fragment, { children: ['Zet', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' in je agenda'] }) : (0, o.jsxs)(o.Fragment, { children: ['Add', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' to your calendar'] }) })] }) }) : null] }) : (0, o.jsx)(o.Fragment, {});
     };
   },
-  90578(e, n, s) {
-   s.d(n, { A: () => i });
-   const i = (0, s(18652).A)('outline', 'calendar-event', 'CalendarEvent', [
+  90578(e, n, i) {
+   i.d(n, { A: () => s });
+   const s = (0, i(18652).A)('outline', 'calendar-event', 'CalendarEvent', [
     ['path', { d: 'M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12', key: 'svg-0' }],
     ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
     ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
