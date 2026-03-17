@@ -10,6 +10,7 @@ const CONFIG = {
   sitemapDir: './packages/website/dist',
   sitemap: '/sitemap-index.xml',
   reportPath: './tmp/axe.next.json',
+  failOnImpact: ['critical', 'serious', 'moderate'],
 };
 
 const violations: AxeResults[] = [];
@@ -69,6 +70,6 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
 
   violations.push(results);
 
-  const criticalViolations = results.violations.filter((v) => v.impact === 'critical');
-  expect(criticalViolations).toEqual([]);
+  const violationsWhichFail = results.violations.filter((v) => CONFIG.failOnImpact.includes(v.impact));
+  expect(violationsWhichFail).toEqual([]);
 }
