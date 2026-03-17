@@ -39,9 +39,9 @@ import Summary from "./summaries/_2.1.1-summary.md";
 
 <Summary />
 
-De enige uitzondering geldt voor functionaliteit die afhankelijk is van het pad dat je met de muis aflegt, niet alleen het begin- en eindpunt. Denk aan vrij tekenen of een handtekening zetten. <span lang="en">Drag-and-drop</span> valt hier niet onder: het eindpunt is wat telt, niet het pad ernaartoe. <span lang="en">Drag-and-drop</span> moet dus ook met het toetsenbord werken.
+Vrij tekenen of een handtekening zetten met de muis of een touchscreen is uitgezonderd van dit succescriterium. <span lang="en">Drag-and-drop</span> is dat niet: het eindpunt is wat telt, niet het pad ernaartoe. <span lang="en">Drag-and-drop</span> moet dus ook met het toetsenbord werken.
 
-Er mag geen specifieke timing vereist zijn voor toetsaanslagen. Je moet op eigen tempo kunnen navigeren en activeren.
+Bezoekers moeten op hun eigen tempo toetsen kunnen indrukken, zonder tijdsdruk. Een sneltoets die alleen werkt als je twee toetsen binnen een halve seconde indrukt, sluit mensen uit die daar langer voor nodig hebben.
 
 ## Veelgemaakte fouten
 
@@ -130,11 +130,11 @@ Op maat gemaakte dropdowns en selectiemenu's zijn vaak alleen voor de muis gebou
 
 </Guideline>
 
-**Wie kan dit oplossen:** een developer vervangt de custom dropdown door een `<select>`-element, of bouwt een component dat het ARIA-combobox- of listbox-patroon volgt.
+**Wie kan dit oplossen:** een developer vervangt de dropdown door een `<select>`-element, of gebruikt een bestaande toegankelijke combobox-component.
 
 ### Drag-and-drop zonder toetsenbordalternatief
 
-Een interface waar je items kunt slepen en neerzetten om ze te sorteren, maar waar geen toetsenbordalternatief is, sluit toetsenbordgebruikers volledig uit.
+Bij een sorteerbare lijst moet elke bezoeker items kunnen verplaatsen, ook zonder muis. Dat kan bijvoorbeeld met knoppen om items omhoog en omlaag te verplaatsen, of met een toetsenbordvriendelijke drag-and-drop implementatie.
 
 **Hoe te testen:** probeer de sorteerlijst te bedienen met alleen het toetsenbord. Kun je items verplaatsen zonder muis?
 
@@ -306,6 +306,7 @@ Als de <span lang="en">CAPTCHA</span>-test niet met het toetsenbord kan worden v
 5. Controleer carrousels, sliders en mediaspelers. Kun je ze bedienen zonder muis?
 
 Op macOS kunnen extra instellingen nodig zijn:
+
 - [Keyboard navigation on macOS](https://support.apple.com/en-gb/guide/mac-help/mchlc06d1059/mac) (Engels).
 - [How to activate keyboard navigation on macOS](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/) (Engels).
 
@@ -314,7 +315,7 @@ Op macOS kunnen extra instellingen nodig zijn:
 1. Tab door de pagina en vergelijk met de visuele elementen. Elk interactief element moet bereikbaar zijn met <kbd>Tab</kbd>.
 2. Zoek in de code naar `onclick` op niet-interactieve elementen (`<div>`, `<span>`, `<li>`). Vervang ze door `<button>` of `<a>`.
 3. Zoek naar `onmouseover`, `onmousedown` en `ondblclick`. Controleer of er een toetsenbordequivalent (`onfocus`, `onkeydown`) aanwezig is.
-4. Controleer custom componenten (dropdowns, datepickers, modals). Volgen ze het juiste [ARIA-patroon](https://www.w3.org/WAI/ARIA/apg/patterns/)?
+4. Controleer zelfgemaakte componenten (dropdowns, datepickers, modals). Volgen ze het juiste [ARIA-patroon](https://www.w3.org/WAI/ARIA/apg/patterns/)?
 5. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Navigeer door de pagina en controleer of alle interactieve elementen bereikbaar en activeerbaar zijn.
 
 ## Gerelateerde succescriteria
@@ -336,6 +337,7 @@ Op macOS kunnen extra instellingen nodig zijn:
 - [A Guide To Keyboard Accessibility: HTML And CSS](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/) — uitgebreide gids over toetsenbordtoegankelijkheid (Smashing Magazine, Engels).
 - [Tabindex: 0 and -1 Values](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one) — wanneer je tabindex 0 en -1 gebruikt (WebAIM, Engels).
 - [How To Avoid Breaking Web Pages For Keyboard Users](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) — veelgemaakte fouten bij toetsenbordbediening (TPGI, Engels).
+- [Exploring the challenges in creating an accessible sortable list](https://github.blog/engineering/user-experience/exploring-the-challenges-in-creating-an-accessible-sortable-list-drag-and-drop/) — hoe GitHub een toegankelijke drag-and-drop sorteerlijst heeft gebouwd (GitHub Blog, Engels).
 
 ## Gebruikersonderzoek
 
