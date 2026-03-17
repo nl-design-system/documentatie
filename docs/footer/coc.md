@@ -43,6 +43,4 @@ We zullen elke melding serieus nemen en vertrouwelijk behandelen.
 
 ## Melding maken
 
-Yolijn: 06-19991566
-
-Niet urgent? Je kunt ook melding maken via [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl)
+Je kunt een melding maken via [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl) of op Slack naar een van de [kernteam leden](/project/kernteam).
