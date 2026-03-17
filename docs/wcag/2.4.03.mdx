@@ -197,12 +197,11 @@ let triggerElement = null;
 
 function openDialog(trigger) {
   triggerElement = trigger;
-  document.getElementById("dialog").style.display = "block";
-  document.getElementById("dialog").querySelector("button")?.focus();
+  document.getElementById("dialog").showModal();
 }
 
 function sluitDialog() {
-  document.getElementById("dialog").style.display = "none";
+  document.getElementById("dialog").close();
   triggerElement?.focus();
 }
 ```
