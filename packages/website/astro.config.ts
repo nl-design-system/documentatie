@@ -26,9 +26,14 @@ export default defineConfig({
     },
   },
 
+  markdown: {
+    syntaxHighlight: false,
+  },
+
   integrations: [
     mdx({
       remarkPlugins: [remarkCustomHeaderId],
+      syntaxHighlight: false,
     }),
     react(),
     sitemap({

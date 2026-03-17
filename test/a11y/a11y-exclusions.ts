@@ -22,11 +22,20 @@ export const exclusionGroups: Record<string, string[]> = {
 export const skippedRoutes: (string | RegExp)[] = ['/search/', '/handboek/designer/figma-changelog/'];
 
 export const AXE_VIOLATION_IDS: string[] = ['target-size'];
+export const AXE_VIOLATION_IDS_NEXT: string[] = ['target-size'];
 
 export const exclusions: RouteExclusion[] = [
   {
     routes: ['*'],
     excludeIds: AXE_VIOLATION_IDS,
+    description: 'Filter out axe-core violations not relevant to content or tested routes',
+  },
+];
+
+export const exclusionsNext: RouteExclusion[] = [
+  {
+    routes: [/zonder-front-end-framework/],
+    excludeIds: AXE_VIOLATION_IDS_NEXT,
     description: 'Filter out axe-core violations not relevant to content or tested routes',
   },
 ];

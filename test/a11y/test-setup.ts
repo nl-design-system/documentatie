@@ -1,6 +1,6 @@
 import { AxeBuilder } from '@axe-core/playwright';
 import { writeFile } from 'fs/promises';
-import { exclusions, exclusionGroups, skippedRoutes } from './a11y-exclusions';
+import { exclusions, exclusionGroups, skippedRoutes, type RouteExclusion } from './a11y-exclusions';
 import type { Page } from '@playwright/test';
 
 export async function analyzeAccessibility(page: Page, disabledRules: string[]) {
@@ -17,10 +17,10 @@ export async function saveViolationsReport(reportData: unknown[], filePath: stri
   await writeFile(filePath, JSON.stringify(reportData, null, 2));
 }
 
-export function getDisabledRules(pathname: string): string[] {
+export function getDisabledRules(pathname: string, _exclusions: RouteExclusion[] = exclusions): string[] {
   const disabledRules = new Set<string>();
 
-  for (const exclusion of exclusions) {
+  for (const exclusion of _exclusions) {
     const isMatch = exclusion.routes.some((route) => {
       if (typeof route === 'string') {
         if (route === '*') return true;
