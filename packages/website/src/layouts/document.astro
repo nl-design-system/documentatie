@@ -53,8 +53,20 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
   </head>
 
   <body>
+    <header>
+      TODO: PageHeader
+      <h2 id="hoofdnavigatie-label">Hoofdmenu</h2>
+      <nav aria-labelledby="hoofdnavigatie-label">TODO: Hoofd navigatie</nav>
+    </header>
+    <h2 id="breadcrumb-label">Kruimelpad</h2>
+    <nav aria-labelledby="breadcrumb-label">TODO: Breadcrumb navigatie</nav>
     <main>
       <slot />
     </main>
+    <footer>
+      TODO: PageFooter
+      <h2 id="site-navigatie-label">Submenu</h2>
+      <nav aria-labelledby="site-navigatie-label">TODO: Footer navigatie</nav>
+    </footer>
   </body>
 </html>
