@@ -1,5 +1,5 @@
 ---
-title: Flitsen in video · Video · Content · Richtlijnen
+title: Flitsen in video
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Flitsen

@@ -1,5 +1,5 @@
 ---
-title: Voor managers · Handboek
+title: Voor managers
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Voor managers

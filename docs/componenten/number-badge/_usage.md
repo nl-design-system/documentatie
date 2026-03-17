@@ -4,8 +4,7 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fnumber-badge-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/number-badge-css](https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css)
-versie 1.
+[@nl-design-system-candidate/number-badge-css](https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css)
 
 Gebruik de `nl-number-badge` class name op een `span` element:
 
@@ -63,8 +62,7 @@ Om te zorgen dat de betekenis van een number badge duidelijk is wanneer de pagin
 
 De React component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fnumber-badge-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/number-badge-react](https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react)
-versie 1.
+[@nl-design-system-candidate/number-badge-react](https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react)
 
 Je kunt de npm package zo installeren:
 

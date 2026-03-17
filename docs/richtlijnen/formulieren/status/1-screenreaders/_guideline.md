@@ -18,11 +18,8 @@ Bijvoorbeeld:
 - De verbinding met de server is verbroken, lokale wijzigingen worden nu niet opgeslagen.
 - Je hebt nog 20 seconden om het formulier te verzenden.
 
-```markup
-<div role="alert">
-  Waarschuwing: Je hebt nog 20 seconden
-  om het formulier te verzenden.
-</div>
+```html
+<div role="alert">Waarschuwing: Je hebt nog 20 seconden om het formulier te verzenden.</div>
 ```
 
 Een element met `role="alert"` is een ‘assertive’ live region, en functioneel gelijk aan het gebruiken van de combinatie [aria-live="assertive"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) en [aria-atomic="true"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).  
@@ -40,11 +37,8 @@ Bijvoorbeeld:
 - Je hebt nu 3 producten in je winkelmandje.
 - Er zijn 5 zoekresultaten gevonden voor 'eikenprocessierups'.
 
-```markup
-<div role="status">
-  Er zijn 5 zoekresultaten gevonden
-  voor 'eikenprocessierups'.
-</div>
+```html
+<div role="status">Er zijn 5 zoekresultaten gevonden voor 'eikenprocessierups'.</div>
 ```
 
 Het instellen van role="status" is gelijk aan het instellen van [aria-live="polite"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) en [aria-atomic="true"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).
@@ -60,8 +54,6 @@ Voorbeelden van dit soort functionaliteit:
 - [wp-a11y-speak()](https://make.wordpress.org/accessibility/handbook/markup/wp-a11y-speak/) voor WordPress.
 - [drupal.accounce](https://www.drupal.org/node/1973218) voor Drupal.
 - [live-announcer](https://www.npmjs.com/package/@react-aria/live-announcer) voor react-aria.
-
-Het informeren van alle gebruikers over een statusbericht is verplicht om te voldoen aan het WCAG-succescriterium [4.1.3 Statusberichten](https://nldesignsystem.nl/wcag/4.1.3) (niveau AA).
 
 Bronnen:
 

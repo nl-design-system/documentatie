@@ -20,6 +20,12 @@ Let erop dat je hiervoor JavaScript nodig hebt en zorg ervoor dat `aria-expanded
 
 Zorg er daarnaast voor dat het `type`-attribuut kloppend is bij de rol van de knop, zoals `"submit"` voor een verzendknop en `"reset"` voor een resetknop.
 
+Vermijd het gebruik van `aria-busy` op interactieve elementen zoals knoppen, bijvoorbeeld om aan te geven dat een formulier bezig is met verzenden. Dit attribuut geeft aan hulpsoftware aan dat veranderingen, zoals in een live-region of tijdens het laden van een pagina, niet moeten worden voorgelezen totdat de waarde weer op `false` staat. Hierdoor worden updates voorgelezen als het proces voltooid is, zodat er geen onvolledige informatie wordt gegeven. Je gebruikt het `aria-busy` attribuut wel op de container waarin de updates worden getoond, niet op de knop om de actie mee uit voeren.
+
+Gebruik in plaats daarvan `aria-disabled` met `tabindex="0"` op de knop en pas de visuele en toegankelijke naam aan, bijvoorbeeld naar 'Bezig met verzenden'. Gebruik vervolgens `role="status"` of `role="alert"` op de container om statusmeldingen over het resultaat van het verzenden van het formulier aan te geven.
+
 NL Design System richtlijnen:
 
 - [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam)
+- [Toegankelijke succesmeldingen in een formulier](/richtlijnen/formulieren/bevestigingspagina/toegankelijke-succesmelding/)
+- [Duidelijke succesmeldingen in een formulier](/richtlijnen/formulieren/bevestigingspagina/succesmelding/)

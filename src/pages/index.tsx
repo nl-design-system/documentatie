@@ -277,6 +277,18 @@ export default function Home() {
                   headingLevel={3}
                   href="/events/developer-open-hour/aanmelden"
                 ></Card>
+                <Card
+                  body="Tijdens de Rijkshuisstijl Community Open Hour gaan organisaties informatie, inzichten en tips uitwisselen."
+                  heading="Rijkshuisstijl Community Open Hour"
+                  headingLevel={3}
+                  href="/events/rijkshuisstijl-community-open-hour/"
+                ></Card>
+                <Card
+                  body="Volg NL Design System op LinkedIn voor het laatste nieuws, updates en om in contact te blijven met de community."
+                  heading="LinkedIn"
+                  headingLevel={3}
+                  href="https://www.linkedin.com/company/nl-design-system/"
+                ></Card>
               </div>
             </div>
           </SpotlightSection>

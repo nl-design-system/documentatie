@@ -17,8 +17,3 @@ Adam Silver geeft hier uitgebreid uitleg over in [The problem with automatically
 Let wel: `tabindex="0"` en `tabindex="-1"` zijn wel toegestaan om bepaalde elementen focus te kunnen geven die van nature geen focus krijgen. Dit verstoort de natuurlijke tabvolgorde niet. Wanneer welke waarde te gebruiken wordt uitgelegd in [0 and -1 Values](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one) van WebAIM.
 
 Een goede uitleg over de impact van tabindex op toegankelijkheidstaat staat in: [How To Avoid Breaking Web Pages For Keyboard Users](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
-
-Geen positieve tabindex of autofocus gebruiken is nodig om te voldoen aan de volgende WCAG-succescriteria:
-
-- [2.4.3 Focusvolgorde](/wcag/2.4.3) (niveau A).
-- [3.2.3 Consistente navigatie](/wcag/3.2.3) (niveau AA).

@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import { render } from 'astro:content';
+import Document from '@layouts/document.astro';
+import { MDXComponents } from '@utils/mdx-components.astro';
+import { siteTitle } from '../seo.config.ts';
+
+export async function getStaticPaths() {
+  const docs = await getCollection('docs');
+
+  return docs
+    .filter((page) => page.data?.unlisted !== true)
+    .map((page) => ({
+      params: { slug: page.id },
+      props: { page },
+    }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+
+<Document
+  title={page.data.title ? `${page.data.title} | ${siteTitle}` : siteTitle}
+  description={page.data.description}
+  lang={page.data.lang}
+  seoImage={page.data.image}
+  seoImageAlt={page.data.image_alt}
+  keywords={page.data.keywords}
+  index={page.data.unlisted !== true}
+>
+  <Content components={MDXComponents} />
+</Document>

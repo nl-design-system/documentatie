@@ -2,13 +2,14 @@ import js from '@eslint/js';
 import json from '@eslint/json';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import react from 'eslint-plugin-react';
+import astro from 'eslint-plugin-astro';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
     name: 'nl-design-system/global-ignores',
-    ignores: ['**/dist/', '**/build/', '**/coverage/', '**/.docusaurus/', '**/src/theme/SearchBar/'],
+    ignores: ['**/dist/', '**/build/', '**/coverage/', '**/.docusaurus/', '**/.astro', '**/src/theme/SearchBar/'],
   },
   {
     name: 'nl-design-system/plugins-settings',
@@ -67,6 +68,7 @@ export default tseslint.config(
     language: 'json/json',
     ...json.configs.recommended,
   },
+  ...astro.configs['flat/recommended'],
   //{
   //files: ['**/*.js', '**/*.cjs', '**/*.mjs', '**/*.jsx', '**/*.ts', '**/*.tsx'],
   //rules: {

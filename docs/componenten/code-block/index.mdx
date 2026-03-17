@@ -44,18 +44,13 @@ import CodeBlockIllustration from "@nl-design-system-candidate/code-block-docs/d
 import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac/_ac_component.md";
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/_component_gebruiken_intro.md";
-import Wcag131 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.1-code-block.md";
-import Wcag1411 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.11-code.md";
-import Wcag1412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12.md";
-import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.3.md";
-import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md";
-import Wcag141 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md";
+import * as Acceptatiecriteria from "./_acceptatiecriteria.tsx";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, Link } from "@utrecht/component-library-react/dist/css-module";
+import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
-import { Checklist } from "@site/src/components/Checklist";
+
 import {
   DefinitionOfDone,
   HelpImproveComponent,
@@ -86,21 +81,21 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
-      <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
-      <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
+      <LinkListLink href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Start bibliotheek</LinkListLink>
+      <LinkListLink href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=13778-3553"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">Storybook</Heading>
     <LinkList>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-code-block--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/code-block--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/css-code-block--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</LinkListLink>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/code-block--documentatie"><BrandIcon brand='storybook' />Storybook - React</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">npm</Heading>
     <LinkList>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-css</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-react</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-tokens</Link>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-css</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-react</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/code-block-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/code-block-tokens</LinkListLink>
     </LinkList>
 
   </CardContent>
@@ -114,64 +109,25 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
 
 <AcImplementatie />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "De code is niet alleen herkenbaar aan een andere achtergrondkleur.",
-      sc: "1.4.1",
-      status: "",
-      component: <Wcag141 />,
-      tags: ["designer", "contentmaker", "developer"],
-    },
-    {
-      title: "De code heeft voldoende contrast met de achtergrondkleur",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title:
-        "Wanneer de achtergrondkleur van het Code Block anders is dan de default browserkleur, dan heeft deze een kleurcontrast van minimaal 3:1 met de achtergrondkleur van de pagina.",
-      sc: "1.4.11",
-      status: "",
-      component: <Wcag1411 />,
-      tags: ["designer", "contentmaker"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  {Acceptatiecriteria.usage.map(({ component: Wcag, ...item }) => (
+    <ChecklistItem {...item}>
+      <Wcag />
+    </ChecklistItem>
+  ))}
+</Checklist>
 
 ### Acceptatiecriteria van de component
 
 <AcComponent />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "De juiste HTML-elementen voor de Code Block component zijn toegepast.",
-      sc: "1.3.1",
-      status: "",
-      component: <Wcag131 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als je inzoomt naar 200% blijft alle tekst leesbaar.",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.",
-      sc: "1.4.12",
-      status: "",
-      component: <Wcag1412 />,
-      tags: ["developer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  {Acceptatiecriteria.component.map(({ component: Wcag, ...item }) => (
+    <ChecklistItem {...item}>
+      <Wcag />
+    </ChecklistItem>
+  ))}
+</Checklist>
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
@@ -185,9 +141,7 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
 
 <DefinitionOfDone component={component} headingLevel={3} />
 
-## Help component verbeteren
-
-<HelpImproveComponent component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={2} />
 
 ## Community implementaties
 

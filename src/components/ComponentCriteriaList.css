@@ -10,7 +10,7 @@
 
 .component-criteria-section__dl {
   display: grid;
-  grid-gap: 4px 16px;
+  grid-gap: var(--basis-space-column-sm) var(--basis-space-column-lg);
   grid-template-columns: max-content;
 }
 .component-criteria-section__dt {

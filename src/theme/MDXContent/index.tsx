@@ -17,6 +17,12 @@ import {
   UnorderedList,
 } from '@utrecht/component-library-react/dist/css-module';
 import type { ReactElement, ReactNode } from 'react';
+import { OverviewPage } from '@site/src/components/OverviewPage';
+import DocCardList from '@theme/DocCardList';
+import { ComponentOverview } from '@site/src/components/ComponentOverview';
+import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
+import { ComponentAnatomy } from '@site/src/components/ComponentAnatomy';
+import { CriteriaList, CriteriaListItem } from '@site/src/components/ComponentCriteriaList';
 
 interface Props {
   children: ReactNode;
@@ -45,6 +51,15 @@ export default function MDXContent({ children }: Props): ReactElement {
         h5: Heading5,
         h6: Heading6,
         admonition: Admonition,
+
+        OverviewPage,
+        DocCardList,
+        ComponentOverview,
+        Checklist,
+        ChecklistItem,
+        ComponentAnatomy,
+        CriteriaList,
+        CriteriaListItem,
       }}
     >
       {children}

@@ -4,8 +4,7 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Flink-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/link-css](https://www.npmjs.com/package/@nl-design-system-candidate/link-css)
-versie 1.
+[@nl-design-system-candidate/link-css](https://www.npmjs.com/package/@nl-design-system-candidate/link-css)
 
 Gebruik de `nl-link` class name op een `a` element:
 
@@ -45,8 +44,7 @@ Om te zorgen dat de states van een Link component goed werken als een link om ee
 
 De React component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Flink-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/link-react](https://www.npmjs.com/package/@nl-design-system-candidate/link-react)
-versie 1.
+[@nl-design-system-candidate/link-react](https://www.npmjs.com/package/@nl-design-system-candidate/link-react)
 
 Je kunt de npm package zo installeren:
 

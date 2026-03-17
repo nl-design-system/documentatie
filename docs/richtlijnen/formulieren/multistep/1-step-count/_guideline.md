@@ -2,7 +2,7 @@
 
 # Geef aan hoeveel stappen er zijn en in welke stap de gebruiker zich bevindt
 
-Als een formulier meerdere stappen heeft, is het noodzakelijk dat een gebruiker weet in welke stap ze zich bevindt en hoeveel stappen er nog volgen. Dit geeft duidelijkheid en voorkomt onzekerheid bij de gebruiker.
+Als een formulier meerdere stappen heeft, is het in veel gevallen wenselijk dat een gebruiker weet in welke stap zij zich bevindt en hoeveel stappen er nog volgen. Dit kan duidelijkheid geven en onzekerheid bij de gebruiker verminderen, met name wanneer uit onderzoek blijkt dat hier behoefte aan is.
 
 Een goed patroon in tekst hiervoor is bijvoorbeeld de tekst: **Stap 2 van 6** of **Vraag 2 van 6**.
 
@@ -21,8 +21,6 @@ De stappen kort uitschrijven als tekst heeft de voorkeur boven een visuele weerg
 
 Lees hierover [<span lang="en">Using progress indicators</span>](https://design-system.service.gov.uk/patterns/question-pages/#using-progress-indicators) en [<span lang="en">Do less</span>](https://designnotes.blog.gov.uk/2014/07/07/do-less-problems-as-shared-spaces/) op GOV.UK.
 
-Het duidelijk aangeven van het aantal stappen en de huidige locatie binnen de stappen is nodig om te voldoen de WCAG-succescriteria:
+Op dit moment hebben we nog onvoldoende inzichten 'of', danwel 'hoe' dit patroon het best werkt bij formulieren waarbij het aantal stappen afhankelijk is van eerder gegeven antwoorden of gemaakte keuzes. Dit noemen we ook wel 'conditionele stappen'. We leren hier graag meer over op basis van gebruikersonderzoek en praktijkervaringen.
 
-- [1.3.2 Betekenisvolle volgorde](/wcag/1.3.2) (niveau A).
-- [2.4.2 Paginatitel](/wcag/2.4.2) (niveau A), deze richtlijn geldt ook voor dynamische pagina’s.
-- [3.2.3 Consistente navigatie](/wcag/3.2.3) (niveau AA)
+Heb je inzichten of voorbeelden? Deel ze via de [GitHub Discussion 'Voortgang indicatie - Meerstappenformulier'](https://github.com/orgs/nl-design-system/discussions/369) of op [gebruikersonderzoeken.nl].

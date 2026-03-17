@@ -1,0 +1,1 @@
+Feedback van eindgebruikers is meegenomen in de Candidate component, zodat de Hall of Fame component niet alleen technisch goed werkt, maar ook bewezen gebruiksvriendelijk is voor de mensen die ermee moeten werken.

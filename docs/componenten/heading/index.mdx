@@ -47,31 +47,23 @@ import HeadingIllustration from "@nl-design-system-candidate/heading-docs/docs/a
 import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_component.md";
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/\_component_gebruiken_intro.md";
-import Wcag131 from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.3.1-heading.md';
-import Wcag131NLDS from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/\_wcag-1.3.1-nlds-heading.md';
-import Wcag1412 from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.12.md';
-import Wcag143 from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.3.md';
-import Wcag144 from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-1.4.4.md';
-import Wcag246 from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-2.4.6-heading.md';
-import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-3.1.2.md';
-import Wcag411 from '@nl-design-system-unstable/documentation/componenten/ac/\_wcag-4.1.1-heading.md';
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, Link } from "@utrecht/component-library-react/dist/css-module";
+import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
-import { ComponentAnatomy } from "@site/src/components/ComponentAnatomy";
-import { Checklist } from "@site/src/components/Checklist";
+
 import {
-DefinitionOfDone,
-HelpImproveComponent,
-Implementations,
-Introduction,
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
 } from "@site/src/components/ComponentPage";
-import { DesignTokens } from '@site/src/components/DesignTokens';
+import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
+import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./\_usage.md";
-import tokens from '@nl-design-system-candidate/heading-tokens';
+import tokens from "@nl-design-system-candidate/heading-tokens";
 
 export const title = "Heading";
 export const description = "Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.";
@@ -87,20 +79,20 @@ export const component = componentProgress.find((item) => item.number === issueN
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
-      <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1039"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
-      <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1039"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
+      <LinkListLink href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1039"><BrandIcon brand='figma' />Figma - Start bibliotheek</LinkListLink>
+      <LinkListLink href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1039"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">Storybook</Heading>
     <LinkList>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-heading--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/heading--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/css-heading--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</LinkListLink>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/heading--documentatie"><BrandIcon brand='storybook' />Storybook - React</LinkListLink>
     </LinkList>
     <Heading level={2} appearance="level-4">npm</Heading>
     <LinkList>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/heading-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/heading-css</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/heading-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/heading-react</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/heading-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/heading-tokens</Link>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/heading-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/heading-css</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/heading-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/heading-react</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/heading-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/heading-tokens</LinkListLink>
     </LinkList>
 
   </CardContent>
@@ -114,71 +106,25 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <AcImplementatie />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "Het niveau van de kop klopt binnen de koppenstructuur van de pagina.",
-      sc: "1.3.1",
-      status: "",
-      component: <Wcag131 />,
-      tags: ["contentmaker"],
-    },
-    {
-      title: "De contrastverhouding van de tekstkleur met de achtergrondkleur is hoog genoeg.",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title: "De koptekst maakt duidelijk waar de sectie over gaat.",
-      sc: "2.4.6",
-      status: "",
-      component: <Wcag246 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title:
-        "Als de kop in een andere taal is dan de rest van de pagina, dan heeft het lang-attribuut de juiste taalcode.",
-      sc: "3.1.2",
-      status: "",
-      component: <Wcag312 />,
-      tags: ["contentmaker", "developer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  {Acceptatiecriteria.usage.map(({ component: Wcag, ...item }) => (
+    <ChecklistItem {...item}>
+      <Wcag />
+    </ChecklistItem>
+  ))}
+</Checklist>
 
 ### Acceptatiecriteria van de component
 
 <AcComponent />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "Als tekst er uitziet als een kop, moet dit ook in de HTML een kop zijn.",
-      sc: "1.3.1",
-      status: "",
-      component: <Wcag131NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.",
-      sc: "1.4.12",
-      status: "",
-      component: <Wcag1412 />,
-      tags: ["developer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  {Acceptatiecriteria.component.map(({ component: Wcag, ...item }) => (
+    <ChecklistItem {...item}>
+      <Wcag />
+    </ChecklistItem>
+  ))}
+</Checklist>
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
@@ -192,9 +138,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <DefinitionOfDone component={component} headingLevel={3} />
 
-## Help component verbeteren
-
-<HelpImproveComponent component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={2} />
 
 ## Community implementaties
 

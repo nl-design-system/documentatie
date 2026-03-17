@@ -30,13 +30,13 @@ Heb je een document dat je wil bijdragen, stuur ons dan een linkje naar die gist
 ## Lokaal draaien van de website
 
 We gebruiken `pnpm` om afhankelijkheden te installeren en de website met Docusaurus te draaien. Zorg dat je dat eerst installeert, dat kan bijvoorbeeld met `npm`.
-Als je hier hulp bij nodig hebt kun je ons op [Slack](https://praatmee.codefor.nl) vinden of even een e-mail sturen
+Heb je hulp nodig? Stel je vraag op [Slack](https://nldesignsystem.nl/slack) of stuur een e-mail naar [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).
 
 1. Zorg dat je de repository op je computer hebt staan door de geforkte documentatie repository te clonen.
 2. Open de Terminal en zorg dat je in het mapje zit waar de clone is belandt
 3. Draai `pnpm install` om te zorgen dat alle afhankelijkheden die Docusaurus nodig heeft beschikbaar zijn
-4. Draai `pnpm run build` om de CSS te builden (dit hoeft alleen de eerste keer)
-5. Draai `pnpm run start` om Docusaurus te starten.
+4. Draai `pnpm run build:docusaurus` om de CSS te builden (dit hoeft alleen de eerste keer)
+5. Draai `pnpm run start:docusaurus` om Docusaurus te starten.
 6. In de terminal staat nu `Docusaurus website is running at http://localhost:3000/` met `Cmd` ingedrukt kun je deze link aanklikken
 7. De website opent in je standaard browser
 
@@ -47,7 +47,7 @@ Zolang je het script in je terminal hebt draaien zal de website automatisch de o
 Als je de website structuur hebt aangepast dan is het nodig de website eerst te stoppen en dan opnieuw op te starten.
 
 1. Stop het script dat de website lokaal draait met `Cmd+C` in te typen in de terminal waar het script draait.
-2. Draai `pnpm run start` et voilá, de veranderingen worden zichtbaar.
+2. Draai `pnpm run start:docusaurus` et voilá, de veranderingen worden zichtbaar.
 
 ## Lokaal de build draaien met de Apache HTTP server
 
@@ -55,7 +55,7 @@ Apache HTTP server wordt momenteel gebruikt voor hosting van nldesignsystem.nl. 
 
 Het belangrijkste voordeel is dat je HTTP redirects kunt testen die in `static/.htaccess` zijn ingesteld.
 
-1. Zorg dat je een build hebt gemaakt: `pnpm run build`
+1. Zorg dat je een build hebt gemaakt: `pnpm run build:docusaurus`
 2. `docker-compose up`
 3. ga naar `http://localhost:8080/`
 4. Je kunt nu `static/.htaccess` aanpassen, en gelijk de resultaten testen.
@@ -75,6 +75,18 @@ Gebaseerd op de blog post van Docusaurus [Upgrading frontend dependencies with c
 Voeg het label `visual regression test` toe aan je pull request om Argos CI aan het werk te zetten. We hebben 5,000 screenshots per maand, verspil geen screenshots als je pull request nog niet klaar is.
 
 [![Covered by Argos Visual Testing](https://argos-ci.com/badge-large.svg)](https://app.argos-ci.com/nl-design-system-ci/nldesignsystem.nl/reference)
+
+## Browsers installeren
+
+Installeer de browsers die nodig zijn voor het testen:
+
+`pnpm install-test-browsers`
+
+## Toegankelijkheidstests
+
+Draai de toegankelijkheidstests:
+
+`pnpm test-a11y`
 
 ## Documentatie toevoegen
 

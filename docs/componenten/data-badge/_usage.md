@@ -4,8 +4,7 @@
 
 De CSS van deze component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fdata-badge-css.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/data-badge-css](https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-css)
-versie 1.
+[@nl-design-system-candidate/data-badge-css](https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-css)
 
 Gebruik de `nl-data-badge` class name op een `span` element:
 
@@ -44,8 +43,7 @@ import "@nl-design-system-candidate/data-badge-css/data-badge.css";
 
 De React component is gepubliceerd in een npm package:
 
-[<img src="https://badge.fury.io/js/@nl-design-system-candidate%2Fdata-badge-react.svg" alt="" style={{verticalAlign: 'middle'}} /> @nl-design-system-candidate/data-badge-react](https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-react)
-versie 1.
+[@nl-design-system-candidate/data-badge-react](https://www.npmjs.com/package/@nl-design-system-candidate/data-badge-react)
 
 Je kunt de npm package zo installeren:
 

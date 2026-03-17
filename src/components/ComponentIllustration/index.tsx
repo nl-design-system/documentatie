@@ -10,8 +10,19 @@ interface ComponentIllustrationProps extends HTMLAttributes<HTMLElement> {
   name: string;
 }
 
+const COMPONENT_ILLUSTRATION_NAME_MAPPING: Record<string, string> = {
+  'Heading 1': 'Heading',
+  'Heading 2': 'Heading',
+  'Heading 3': 'Heading',
+  'Heading 4': 'Heading',
+  'Heading 5': 'Heading',
+  'Heading 6': 'Heading',
+};
+
 export const ComponentIllustration = ({ name, relayStep, description }: ComponentIllustrationProps) => {
   const stateModifier = toKebabCase(relayStep);
+  const illustrationName = COMPONENT_ILLUSTRATION_NAME_MAPPING[name] ?? name;
+
   return (
     <Figure>
       <svg
@@ -45,7 +56,7 @@ export const ComponentIllustration = ({ name, relayStep, description }: Componen
           <rect width="960" height="2" transform="translate(0 392)" />
           <rect width="960" height="2" transform="translate(0 474)" />
         </g>
-        <use href={`/svg/componenten_overzicht_${toKebabCase(name)}.svg#component-illustration`} />
+        <use href={`/svg/componenten_overzicht_${toKebabCase(illustrationName)}.svg#component-illustration`} />
       </svg>
       <FigureCaption className="component-illustration__caption">{description}</FigureCaption>
     </Figure>

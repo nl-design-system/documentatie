@@ -300,6 +300,7 @@ p {
   border-inline-start-color: var(--basis-color-accent-1-inverse-border-active);
   color: var(--basis-color-accent-1-inverse-color-active);
 }
+
 .navbar-sidebar .menu__link:hover,
 .navbar-sidebar .menu__list-item-collapsible:hover,
 .navbar-sidebar .menu__caret:hover {
@@ -316,6 +317,15 @@ p {
 .theme-doc-sidebar-item-link-level-4 .menu__link,
 .theme-doc-sidebar-item-category-level-4 .menu__link {
   padding-inline-start: 48px;
+}
+
+.theme-doc-sidebar-item-link-level-5 .menu__link,
+.theme-doc-sidebar-item-category-level-5 .menu__link {
+  padding-inline-start: 64px;
+}
+
+.theme-unlisted-banner {
+  display: none;
 }
 
 /* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
@@ -387,6 +397,7 @@ p {
     border-color: var(--ma-docsearch-button-hover-border-color);
     color: var(--ma-docsearch-button-hover-border-color);
   }
+
   &:focus-visible {
     --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
     --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
@@ -685,7 +696,7 @@ pre {
   --nlds-code-block-margin-inline-end: 0;
   --nlds-code-block-background-color: #011627;
   --nlds-code-block-selected-background-color: rgb(29 59 83 / 99%);
-  --nlds-code-block-comment-color: rgb(99 119 119);
+  --nlds-code-block-comment-color: rgb(130 155 155);
   --nlds-code-block-comment-font-style: italic;
   --nlds-code-block-prolog-color: rgb(99 119 119);
   --nlds-code-block-prolog-font-style: italic;
@@ -739,6 +750,7 @@ pre {
   font-size: 16px;
   vertical-align: 1%;
 }
+
 code {
   background-color: transparent !important;
   border-inline-end: 0;
@@ -785,4 +797,19 @@ code {
   width: 100vw;
   padding-block: 0.5rem;
   font-size: 1.125rem;
+}
+
+ams-page-header,
+ams-page-footer {
+  inline-size: 100%;
+}
+
+.nl-skip-link {
+  z-index: 10000;
+}
+
+/* Fix contrast for links in success alerts (Tips) */
+.alert--success a {
+  color: #285f8f !important;
+  /* Satisfies AA contrast on #e6f6e6 */
 }
