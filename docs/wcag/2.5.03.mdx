@@ -117,8 +117,7 @@ Als `aria-labelledby` verwijst naar een element dat andere tekst bevat dan wat e
 <Guideline appearance="do" title="Label en toegankelijke naam komen overeen.">
 
 ```html
-<label for="email">E-mailadres</label>
-<input type="email" id="email" />
+<label for="email">E-mailadres</label> <input type="email" id="email" />
 ```
 
 </Guideline>
@@ -242,15 +241,15 @@ Als de zichtbare tekst van een element deels uit CSS `::before` of `::after` con
 ### Voor iedereen
 
 1. Bekijk elke knop, link en elk formulierveld op de pagina. Lees de zichtbare tekst.
-2. Open de Accessibility-tab in DevTools (rechtermuisknop > Inspecteren > Accessibility). Controleer bij elk element of de toegankelijke naam de zichtbare tekst bevat.
-3. Test met spraakbesturing als dat beschikbaar is. Zeg "Klik op [zichtbare tekst]" en controleer of het juiste element wordt geactiveerd.
+2. Test met spraakbesturing als dat beschikbaar is. Zeg "Klik op [zichtbare tekst]" en controleer of het juiste element wordt geactiveerd.
 
-### Voor developers
+### Met Developer Tools
 
-1. Zoek in de code naar `aria-label` en `aria-labelledby`. Controleer bij elk voorkomen of de waarde de zichtbare tekst bevat.
-2. Controleer afbeeldingen in knoppen en links. Komt de `alt`-tekst overeen met de zichtbare tekst in de afbeelding?
-3. Controleer of CSS `::before` of `::after` zichtbare tekst toevoegt aan interactieve elementen. Zo ja, verplaats die tekst naar de HTML.
-4. Let op framework-componenten met automatisch gegenereerde labels. Controleer of die overeenkomen met de zichtbare tekst.
+1. Open de Accessibility-tab in DevTools (rechtermuisknop > Inspecteren > Accessibility). Controleer bij elk interactief element of de toegankelijke naam de zichtbare tekst bevat.
+2. Zoek in de code naar `aria-label` en `aria-labelledby`. Controleer bij elk voorkomen of de waarde de zichtbare tekst bevat.
+3. Controleer afbeeldingen in knoppen en links. Komt de `alt`-tekst overeen met de zichtbare tekst in de afbeelding?
+4. Controleer of CSS `::before` of `::after` zichtbare tekst toevoegt aan interactieve elementen. Zo ja, verplaats die tekst naar de HTML.
+5. Let op framework-componenten met automatisch gegenereerde labels. Controleer of die overeenkomen met de zichtbare tekst.
 
 ## Gerelateerde succescriteria
 
