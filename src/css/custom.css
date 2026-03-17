@@ -84,6 +84,8 @@
   --ifm-breadcrumb-border-radius: 0;
   --ifm-toc-link-color: var(--basis-color-action-2-color-default);
   --docusaurus-announcement-bar-height: auto;
+  --ifm-color-secondary-contrast-background: var(--basis-color-accent-1-bg-default);
+  --ifm-color-secondary-dark: var(--basis-color-accent-1-border-subtle);
 
   /* Temporary styling for custom nlds components */
   --nlds-blog-post-footer-background-color: #f2ebe4;
@@ -107,6 +109,7 @@
   --nlds-status-hall-of-fame-border-color: var(--ma-color-groen-5);
   --nlds-status-hall-of-fame-color: var(--ma-color-groen-12);
   --nlds-status-border-color: var(--ma-color-paars-12);
+  --denhaag-step-marker-current-background-color: var(--basis-color-accent-2-inverse-bg-default);
 
   /* Override pixel values from Figma */
   --utrecht-heading-1-line-height: 1.1;
@@ -884,4 +887,13 @@ ams-page-footer {
   outline-style: var(--utrecht-focus-outline-style, revert);
   outline-width: var(--utrecht-focus-outline-width, revert);
 }
+
 /* stylelint-enable selector-class-pattern */
+.theme-admonition {
+  --utrecht-heading-2-margin-block-start: 0;
+  --utrecht-heading-3-margin-block-start: 0;
+  --utrecht-heading-4-margin-block-start: 0;
+  --utrecht-heading-5-margin-block-start: 0;
+  --utrecht-heading-6-margin-block-start: 0;
+  --utrecht-unordered-list-margin-block-end: 16px;
+}

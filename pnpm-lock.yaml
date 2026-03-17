@@ -216,6 +216,9 @@ importers:
       '@fontsource/source-sans-pro':
         specifier: 5.2.5
         version: 5.2.5
+      '@gemeente-denhaag/process-steps':
+        specifier: 4.2.3
+        version: 4.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mdx-js/react':
         specifier: 3.1.1
         version: 3.1.1(@types/react@18.3.27)(react@18.3.1)
@@ -2859,6 +2862,12 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
+  '@gemeente-denhaag/button@3.0.2':
+    resolution: {integrity: sha512-nybKK0rD3z/MtEC6zF604aNrblxNHsKrVLVntI3lB2Sj4/kjlPXvQdc5cuHUtkb1hGhA6q+d3lZ3fSubpWN1bA==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/card-authentication@0.1.1-alpha.103':
     resolution: {integrity: sha512-OS5IVgYthbPaDZl0pxIr7kzQRYfzlfZG78zE/rxcfZVoVi4Vw34zi1/LUfTJcuCIxgzDbZQVJDNyOpLA7uW7tw==}
 
@@ -2958,6 +2967,12 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
+  '@gemeente-denhaag/icons@4.0.1':
+    resolution: {integrity: sha512-SX+o0S1SvdPDaCXCdha+2dQaOkyiHdYIqLhR80FblBrkxaS45K/zY2vahlI15NdKY8kQ3onEZv26i/6TPh1gyg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/language-switcher@0.2.3-alpha.366':
     resolution: {integrity: sha512-5zbIgKeRYaQQi6CFHScFb5ppt/Ti12/n2PFoTGThqsviip+gi0QwpLR+oq6FYs72c5qEvH2kvYoSYiQPzPLLvg==}
     peerDependencies:
@@ -2994,6 +3009,12 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
+  '@gemeente-denhaag/process-steps@4.2.3':
+    resolution: {integrity: sha512-Q/b4nt3gVp36dilRN22kx3KQeBY4lqY9DXlE7Dg0dFZMKM3DecLjv8HZJ4PmwRQc1wzqJsdVGQr05JE4bE7YUg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/radio-button@0.3.0-alpha.7':
     resolution: {integrity: sha512-ZsjbF2ETunOQpDCwLwPojf/vckIvh5Ye0yVz1aPRjEDMOIkYRUZm1cwZD55Yi0psxQJJTuL5NE0JvQgBEQU09A==}
     peerDependencies:
@@ -3017,6 +3038,12 @@ packages:
     resolution: {integrity: sha512-cfxvCKPKJFAE8TGK3YuOhlpeBPN3yQG8WwptXk/KEWy4D2C5zqX8+v0xUD4sCYAwZd/o40X2P/It1nb57vcAQw==}
     peerDependencies:
       react: ^18.0.0
+
+  '@gemeente-denhaag/step-marker@3.0.1':
+    resolution: {integrity: sha512-UL3HD9lRv1akJSCRhNd/Uf6pH8LBZ1DlbnythF4AC9u9EQ3fM28eIHhjdW9Qp4mCDmBGqFWq2wbooYVGVTK0Iw==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
 
   '@gemeente-denhaag/stylesprovider@0.1.1-alpha.374':
     resolution: {integrity: sha512-OqvNv8YHxCuGaIgy6dBUnjR8iZGgge95/AHYgPF0EGrJ8LjeomzdCdrwTn5Vkww+g9+a/Sec+zbALiZVoD7Elw==}
@@ -14731,6 +14758,13 @@ snapshots:
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
       react: 18.3.1
 
+  '@gemeente-denhaag/button@3.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/card-authentication@0.1.1-alpha.103(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/button': 0.2.3-alpha.374(react@18.3.1)
@@ -14947,6 +14981,12 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  '@gemeente-denhaag/icons@4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/language-switcher@0.2.3-alpha.366(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gemeente-denhaag/icons': 0.2.3-alpha.374(react@18.3.1)
@@ -15002,6 +15042,15 @@ snapshots:
       '@gemeente-denhaag/typography': 0.2.3-alpha.374(react@18.3.1)
       react: 18.3.1
 
+  '@gemeente-denhaag/process-steps@4.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/button': 3.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/step-marker': 3.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/radio-button@0.3.0-alpha.7(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@utrecht/component-library-react': 3.0.0(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15026,6 +15075,13 @@ snapshots:
   '@gemeente-denhaag/step-marker@0.0.1-alpha.75(react@18.3.1)':
     dependencies:
       react: 18.3.1
+
+  '@gemeente-denhaag/step-marker@3.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@gemeente-denhaag/stylesprovider@0.1.1-alpha.374(react@18.3.1)':
     dependencies:

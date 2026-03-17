@@ -1,0 +1,9 @@
+.process-steps {
+  margin-block-end: 20px;
+}
+
+.admonition__decorator-img {
+  inline-size: 100px;
+  display: flex;
+  justify-self: end;
+}

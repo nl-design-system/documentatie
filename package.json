@@ -142,6 +142,7 @@
     "@fontsource/fira-sans": "5.2.7",
     "@fontsource/open-sans": "5.2.7",
     "@fontsource/source-sans-pro": "5.2.5",
+    "@gemeente-denhaag/process-steps": "4.2.3",
     "@mdx-js/react": "3.1.1",
     "@nl-design-system-candidate/button-docs": "1.0.2",
     "@nl-design-system-candidate/button-tokens": "1.0.0",
