@@ -70,6 +70,9 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
 
   violations.push(results);
 
-  const violationsWhichFail = results.violations.filter((v) => CONFIG.failOnImpact.includes(v.impact));
+  const violationsWhichFail = results.violations
+    .filter((v) => CONFIG.failOnImpact.includes(v.impact))
+    .map((violation) => violation.description);
+
   expect(violationsWhichFail).toEqual([]);
 }
