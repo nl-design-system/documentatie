@@ -41,7 +41,23 @@ import Summary from "./summaries/_2.4.3-summary.md";
 
 <Summary />
 
-De focusvolgorde wordt bepaald door de volgorde van elementen in de HTML. Die hoeft niet exact overeen te komen met de visuele weergave, maar wijkt er niet zodanig van af dat het verwarrend wordt. Bij dialoogvensters, zoals een cookiebanner of mobiel menu, verplaatst de focus zich naar het venster zodra het opent en keert terug naar de oorspronkelijke plek zodra het sluit.
+De focusvolgorde wordt bepaald door de volgorde van elementen in de HTML. Die hoeft niet exact overeen te komen met de visuele weergave, maar wijkt er niet zodanig van af dat het verwarrend wordt.
+
+### Wanneer is een afwijkende volgorde acceptabel?
+
+De focusvolgorde hoeft niet altijd van links naar rechts te lopen. Soms is een andere volgorde logischer. Denk aan een navigatiebalk die op desktop de primaire navigatie links toont en de zoekknop rechts. Op mobiel staat de hamburgerknop voor de primaire navigatie rechts (bij de duim) en de zoekknop links daarvan. De visuele volgorde op mobiel is dan zoeken-navigatie, maar de tabvolgorde is navigatie-zoeken.
+
+Dat is acceptabel, omdat:
+
+- de tabvolgorde consistent is tussen viewports — de navigatie komt altijd eerst;
+- het belangrijkste en meestgebruikte onderdeel (de navigatie) als eerste bereikbaar is;
+- de volgorde niet verwarrend is voor de bezoeker.
+
+Consistentie tussen viewports kan zwaarder wegen dan de visuele volgorde op één viewport. Zie ook [SC 3.2.3 Consistente navigatie](https://nldesignsystem.nl/wcag/3.2.3/): de navigatie moet op elke pagina in dezelfde relatieve volgorde staan.
+
+Bij twijfel of discussie over wat een logische volgorde is: doe een gebruikerstest. Laat toetsenbordgebruikers de pagina bedienen en observeer waar ze vastlopen. Dat geeft betere antwoorden dan een theoretische discussie.
+
+Bij modal dialoogvensters, zoals een cookiebanner of mobiel menu, verplaatst de focus zich naar het venster zodra het opent en keert terug naar de oorspronkelijke plek zodra het sluit.
 
 ## Veelgemaakte fouten
 
@@ -55,15 +71,15 @@ Dit gebeurt als CSS-properties als `order`, `flex-direction: row-reverse` of `gr
 
 **Wie kan dit oplossen:** een developer past de HTML-volgorde aan zodat die overeenkomt met de visuele layout.
 
-### Dialoogvenster krijgt geen focus bij openen
+### Modal dialoogvenster krijgt geen focus bij openen
 
-Een dialoogvenster verschijnt boven de pagina en blokkeert de interactie met de onderliggende content. De focus verplaatst zich naar het venster zodra het opent. Gebeurt dat niet, dan zit de focus nog ergens achter het venster en kan de bezoeker het dialoogvenster niet bedienen met het toetsenbord.
+Een modal dialoogvenster verschijnt boven de pagina en blokkeert de interactie met de onderliggende content. De focus verplaatst zich naar het venster zodra het opent. Gebeurt dat niet, dan zit de focus nog ergens achter het venster en kan de bezoeker het niet bedienen met het toetsenbord.
 
-Dit geldt voor alle elementen die de pagina bedekken: <span lang="en">lightboxes</span>, mobiele menu's, cookiebanners en videomodals.
+Dit geldt voor alle modale elementen: dialoogvensters, <span lang="en">lightboxes</span>, mobiele menu's, cookiebanners en videomodals. Bij een cookiebanner die bij het laden van de pagina verschijnt, gaat de focus direct naar de banner zodat de bezoeker de keuze kan maken.
 
-**Hoe te testen:** open een dialoogvenster en druk op <kbd>Tab</kbd>. Bevindt de focus zich in het venster? Of navigeer je door elementen achter het venster?
+**Hoe te testen:** open een modal dialoogvenster of laad een pagina met een cookiebanner. Druk op <kbd>Tab</kbd>. Bevindt de focus zich in het venster? Of navigeer je door elementen achter het venster?
 
-<Guideline appearance="dont" title="Dialoogvenster openen zonder focus te verplaatsen.">
+<Guideline appearance="dont" title="Modal dialoogvenster openen zonder focus te verplaatsen.">
 
 ```javascript
 function openDialog() {
@@ -74,7 +90,7 @@ function openDialog() {
 
 </Guideline>
 
-<Guideline appearance="do" title="Focus verplaatsen naar het dialoogvenster bij openen.">
+<Guideline appearance="do" title="Focus verplaatsen naar het modal dialoogvenster bij openen.">
 
 ```javascript
 function openDialog() {
@@ -87,15 +103,45 @@ function openDialog() {
 
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt focusmanagement toe aan de openlogica van het dialoogvenster.
+<Guideline appearance="dont" title="Cookiebanner onderaan de HTML, waardoor de focus er pas na de hele pagina naartoe gaat.">
 
-### Focus verlaat een dialoogvenster terwijl het nog open is
+```html
+<header>...</header>
+<main>...</main>
+<footer>...</footer>
+<div class="cookiebanner">
+  <p>Wij gebruiken cookies.</p>
+  <button>Accepteren</button>
+  <button>Weigeren</button>
+</div>
+```
 
-Zolang een dialoogvenster open is, blijft de focus binnen het venster. Na het laatste interactieve element in het venster springt de focus terug naar het eerste element. Zonder deze zogenoemde <span lang="en">focus trap</span> navigeert de bezoeker door elementen achter het venster die niet zichtbaar of bedienbaar zijn.
+</Guideline>
+
+<Guideline appearance="do" title="Cookiebanner bovenaan de HTML of met focusmanagement.">
+
+```html
+<dialog class="cookiebanner" aria-label="Cookiemelding">
+  <p>Wij gebruiken cookies.</p>
+  <button>Accepteren</button>
+  <button>Weigeren</button>
+</dialog>
+<header>...</header>
+<main>...</main>
+<footer>...</footer>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt focusmanagement toe aan de openlogica van het modal dialoogvenster, of plaatst een cookiebanner bovenaan in de HTML.
+
+### Focus verlaat een modal dialoogvenster terwijl het nog open is
+
+Zolang een modal dialoogvenster open is, blijft de focus binnen het venster. Na het laatste interactieve element in het venster springt de focus terug naar het eerste element. Zonder deze zogenoemde <span lang="en">focus trap</span> navigeert de bezoeker door elementen achter het venster die niet zichtbaar of bedienbaar zijn.
 
 **Hoe te testen:** open een dialoogvenster en druk herhaaldelijk op <kbd>Tab</kbd>. Blijft de focus binnen het venster? Druk op <kbd>Escape</kbd>. Sluit het venster?
 
-<Guideline appearance="do" title="Focus vasthouden binnen een dialoogvenster met een focus trap.">
+<Guideline appearance="do" title="Focus vasthouden binnen een modal dialoogvenster met een focus trap.">
 
 ```javascript
 function trapFocus(dialog) {
@@ -127,13 +173,13 @@ function trapFocus(dialog) {
 
 **Wie kan dit oplossen:** een developer implementeert een <span lang="en">focus trap</span>. Het HTML-element `<dialog>` regelt dit automatisch.
 
-### Focus keert niet terug na het sluiten van een dialoogvenster
+### Focus keert niet terug na het sluiten van een modal dialoogvenster
 
-Na het sluiten van een dialoogvenster keert de focus terug naar de knop die het venster heeft geopend. Gebeurt dat niet, dan belandt de focus op `<body>` en moet de bezoeker opnieuw door de hele pagina tabben.
+Na het sluiten van een modal dialoogvenster keert de focus terug naar de knop die het venster heeft geopend. Gebeurt dat niet, dan belandt de focus op `<body>` en moet de bezoeker opnieuw door de hele pagina tabben.
 
 **Hoe te testen:** open een dialoogvenster, sluit het en druk op <kbd>Tab</kbd>. Gaat de focus verder vanaf de knop die het venster opende?
 
-<Guideline appearance="dont" title="Focus verdwijnt na het sluiten van een dialoogvenster.">
+<Guideline appearance="dont" title="Focus verdwijnt na het sluiten van een modal dialoogvenster.">
 
 ```javascript
 function sluitDialog() {
@@ -165,44 +211,6 @@ function sluitDialog() {
 
 **Wie kan dit oplossen:** een developer slaat het trigger-element op bij het openen en herstelt de focus bij het sluiten.
 
-### Cookiebanner krijgt niet als eerste de focus
-
-Een cookiebanner verschijnt bij het laden van de pagina en bedekt de content. De focus verplaatst zich direct naar de banner zodat de bezoeker de keuze kan maken. Als de banner onderaan de HTML staat, moet de bezoeker eerst door de hele pagina tabben om de banner te bereiken.
-
-**Hoe te testen:** laad een pagina met een cookiebanner en druk op <kbd>Tab</kbd>. Gaat de focus direct naar de banner?
-
-<Guideline appearance="dont" title="Cookiebanner onderaan de HTML, waardoor de focus er pas na de hele pagina naartoe gaat.">
-
-```html
-<header>...</header>
-<main>...</main>
-<footer>...</footer>
-<div class="cookiebanner">
-  <p>Wij gebruiken cookies.</p>
-  <button>Accepteren</button>
-  <button>Weigeren</button>
-</div>
-```
-
-</Guideline>
-
-<Guideline appearance="do" title="Cookiebanner bovenaan de HTML of met focusmanagement.">
-
-```html
-<div class="cookiebanner" role="dialog" aria-label="Cookiemelding">
-  <p>Wij gebruiken cookies.</p>
-  <button autofocus>Accepteren</button>
-  <button>Weigeren</button>
-</div>
-<header>...</header>
-<main>...</main>
-<footer>...</footer>
-```
-
-</Guideline>
-
-**Wie kan dit oplossen:** een developer plaatst de banner bovenaan in de HTML of implementeert focusmanagement met JavaScript.
-
 ### Content van een accordion of tabpaneel staat niet direct na de bijbehorende knop
 
 Bij een accordion of tabstructuur staat de content van een geopend paneel direct na de knop die het opent. Zo loopt de focusvolgorde van de knop naar de content van het paneel en daarna naar de volgende knop. Als alle panelen na alle knoppen staan in de HTML, springt de focus eerst door alle knoppen en pas daarna naar de content.
@@ -212,12 +220,14 @@ Bij een accordion of tabstructuur staat de content van een geopend paneel direct
 <Guideline appearance="dont" title="Geopend paneel staat na alle knoppen in de HTML.">
 
 ```html
-<button aria-expanded="true">Sectie 1</button>
-<button aria-expanded="false">Sectie 2</button>
-<button aria-expanded="false">Sectie 3</button>
-<div class="paneel-1">
+<button aria-expanded="true" aria-controls="paneel-1">Sectie 1</button>
+<button aria-expanded="false" aria-controls="paneel-2">Sectie 2</button>
+<button aria-expanded="false" aria-controls="paneel-3">Sectie 3</button>
+<div id="paneel-1">
   <a href="/link-in-paneel-1">Link in paneel 1</a>
 </div>
+<div id="paneel-2" hidden>...</div>
+<div id="paneel-3" hidden>...</div>
 ```
 
 </Guideline>
@@ -313,9 +323,9 @@ function valideerFormulier() {
 
 **Wie kan dit oplossen:** een developer voegt focusmanagement toe aan de formuliervalidatie.
 
-### Skiplink verplaatst de focus niet naar de hoofdcontent
+### Skiplink verplaatst de focus niet naar de unieke content
 
-Een skiplink brengt de focus direct naar de hoofdcontent van de pagina, voorbij de navigatie. Als de skiplink alleen de pagina scrollt maar de focus niet verplaatst, springt de bezoeker bij de volgende <kbd>Tab</kbd>-druk terug naar de navigatie.
+Een skiplink brengt de focus direct naar de unieke content van de pagina, voorbij de navigatie. Als de skiplink alleen de pagina scrollt maar de focus niet verplaatst, springt de bezoeker bij de volgende <kbd>Tab</kbd>-druk terug naar de navigatie.
 
 **Hoe te testen:** druk op <kbd>Tab</kbd> om de skiplink te bereiken, activeer hem met <kbd>Enter</kbd> en druk nogmaals op <kbd>Tab</kbd>. Bevindt de focus zich nu in de hoofdcontent?
 
@@ -417,6 +427,72 @@ De focusvolgorde volgt de HTML-volgorde. Een positieve `tabindex` (zoals `tabind
 
 **Wie kan dit oplossen:** een developer verwijdert positieve `tabindex`-waarden en lost de volgorde op in de HTML.
 
+### Klikbare card met dubbele tabstop
+
+Een card die als geheel klikbaar is én een link bevat met dezelfde bestemming, verschijnt twee keer in de tabvolgorde. De bezoeker tabt eerst naar de card en daarna naar de link erin, terwijl beide naar dezelfde pagina leiden. Dat is verwarrend en kost extra tabstops.
+
+**Hoe te testen:** navigeer met <kbd>Tab</kbd> door een overzicht met cards. Kom je twee keer op dezelfde card terecht?
+
+<Guideline appearance="dont" title="Card en link erin zijn allebei focusbaar met dezelfde bestemming.">
+
+```html
+<a href="/artikel" class="card">
+  <h3>Nieuw artikel</h3>
+  <p>Korte beschrijving van het artikel.</p>
+  <a href="/artikel">Lees meer</a>
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Eén focusbaar element per card.">
+
+```html
+<div class="card">
+  <h3><a href="/artikel">Nieuw artikel</a></h3>
+  <p>Korte beschrijving van het artikel.</p>
+</div>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zorgt dat elke card één focusbaar element heeft. Maak de heading een link, of gebruik een overlay-techniek waarbij de hele card klikbaar is via de link in de heading.
+
+### Focus verdwijnt doordat een widget opnieuw wordt gerenderd
+
+Als JavaScript de `innerHTML` van een container overschrijft, worden alle elementen daarin verwijderd en opnieuw aangemaakt. Het element dat op dat moment de focus had, bestaat dan niet meer. De focus valt terug naar `<body>` en de bezoeker moet opnieuw door de pagina tabben.
+
+**Hoe te testen:** gebruik een complexe widget (zoals een filterlijst of een tabel met sortering) en druk op <kbd>Tab</kbd> naar een interactief element. Activeer een actie die de widget ververst. Verdwijnt de focus?
+
+<Guideline appearance="dont" title="Focus verdwijnt doordat innerHTML de hele container overschrijft.">
+
+```javascript
+function updateResultaten(data) {
+  document.getElementById("resultaten").innerHTML = renderResultaten(data);
+  // Het element dat focus had is verwijderd — focus valt terug naar <body>
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Gebruik een framework of library die alleen gewijzigde elementen bijwerkt.">
+
+```jsx
+function Resultaten({ data }) {
+  return (
+    <ul id="resultaten">
+      {data.map((item) => (
+        <li key={item.id}>{item.naam}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer gebruikt een framework of library (zoals React, Vue of Lit) die alleen gewijzigde elementen bijwerkt in plaats van de hele container te overschrijven.
+
 ## Hoe te testen
 
 ### Voor iedereen
@@ -434,10 +510,9 @@ De focusvolgorde volgt de HTML-volgorde. Een positieve `tabindex` (zoals `tabind
 2. Zoek in de broncode naar `tabindex` met positieve waarden. Verwijder ze en los de volgorde op in de HTML.
 3. Test elk dialoogvenster: controleer of de focus erin verplaatst wordt, erin gevangen blijft en na sluiten terugkeert naar het trigger-element.
 4. Controleer accordions en tabs: staat de content van een geopend paneel direct na de bijbehorende knop in de HTML?
-5. Test skiplinks: activeer de skiplink en druk op <kbd>Tab</kbd>. Belandt de focus in de hoofdcontent?
+5. Test skiplinks: activeer de skiplink en druk op <kbd>Tab</kbd>. Belandt de focus in de unieke content?
 6. Verstuur een formulier met fouten. Verplaatst de focus zich naar de eerste foutmelding?
 7. Gebruik de [Focus Order bookmarklet](https://pauljadam.com/bookmarklets/focus.html) om de focusvolgorde visueel zichtbaar te maken op de pagina (Engels).
-8. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> voor een eerste scan. De meeste focusvolgorde-problemen zijn niet automatisch te detecteren en vereisen handmatig testen.
 
 ## Gerelateerde succescriteria
 
