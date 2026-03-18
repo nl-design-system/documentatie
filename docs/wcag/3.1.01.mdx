@@ -18,6 +18,7 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -30,72 +31,175 @@ import Summary from "./summaries/_3.1.1-summary.md";
   {"WCAG-succescriterium 3.1.1 Taal van de pagina"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-Deze waarde is als volgt samengesteld: Twee (kleine) letters voor de taalgroep uit de [ISO 639-1 standaard](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) en, optioneel, een koppelteken, met daarna twee of drie letters voor de variatie of regio van de taal in hoofdletters.
+Als het `lang`-attribuut correct is ingesteld, leest een screenreader de tekst voor met de juiste uitspraak en tonen zoekmachines de pagina in de juiste taalversie van zoekresultaten. Zonder `lang="nl"` op een Nederlandstalige pagina kan een screenreader de tekst met een Engelse stem voorlezen. Het resultaat is onverstaanbaar.
 
-De code voor taalgroep is verplicht, de regio-code is optioneel.
+## Veelgemaakte fouten
 
-Een uitgebreid overzicht staat op [HTML lang attribute / ISO language code reference / Culture names](https://gist.github.com/JamieMason/3748498) van Jamie Mason.
+### Pagina heeft geen lang-attribuut
 
-Voor Nederlands:
+Elke webpagina heeft een `lang`-attribuut op het `<html>`-element dat de hoofdtaal van de pagina aangeeft. Ontbreekt het attribuut, dan raadt de browser en screenreader de taal. Die gok is niet altijd juist: een Nederlandstalige pagina kan als Engels worden geïnterpreteerd, waardoor een screenreader de tekst met een verkeerde uitspraak voorleest.
 
-- `<html lang="nl">` voor algemeen Nederlands.
-- `<html lang="nl-NL">` voor Nederlands.
-- `<html lang="nl-BE">` voor Vlaams.
+**Hoe te testen:** open de DevTools en inspecteer het `<html>`-element. Is er een `lang`-attribuut aanwezig?
 
-Het Fries is geen variatie van het Nederlands maar een eigen taal en heeft daarom een eigen ISO 639-1 code: `<html lang="fy">`.
+<Guideline appearance="dont" title="Geen lang-attribuut op het html-element.">
+  ```html
+  <html>
+    <head>
+      <title>Over ons - Gemeente Utrecht</title>
+    </head>
+  </html>
+  ```
+</Guideline>
 
-Voor Engels bijvoorbeeld:
+<Guideline appearance="do" title="Lang-attribuut geeft de hoofdtaal aan.">
+  ```html
+  <html lang="nl">
+    <head>
+      <title>Over ons - Gemeente Utrecht</title>
+    </head>
+  </html>
+  ```
+</Guideline>
 
-- `<html lang="en">` voor algemeen Engels.
-- `<html lang="en-GB">` voor Brits.
-- `<html lang="en-US">` voor Amerikaans.
+**Wie kan dit oplossen:** een developer voegt het `lang`-attribuut toe aan het `<html>`-element in het template.
 
-De gebruiker kan verschillende talen (stemmen) downloaden en ervoor kiezen bijvoorbeeld alleen Brits-Engels te gebruiken. Een Amerikaans gelabelde website wordt dan toch in het Brits voorgelezen.
+### Taalcode is onjuist of ongeldig
 
-**Let op**: dit succescriterium betreft de taal van de hele pagina. Wil je alleen een deel in een andere taal publiceren, gebruik dan het `lang`-attribuut op elementen in de andere taal binnen de pagina. Hoe dit te doen staat bij het WCAG-succescriterium [3.1.2 Taal van onderdelen](/wcag/3.1.2).
+Het `lang`-attribuut moet een geldige taalcode bevatten volgens de BCP 47-standaard. Voor Nederlands is dat `nl`, voor Engels `en`, voor Fries `fy`. Codes zoals `lang="dutch"` of `lang="ned"` worden door browsers en screenreaders niet herkend. Ze vallen dan terug op een standaardtaal, waardoor de uitspraak niet klopt.
 
-## Gerelateerde NL Design System-richtlijnen
+**Hoe te testen:** inspecteer het `<html>`-element in de DevTools. Controleer of de taalcode geldig is. Voor Nederlands is dat `nl`, voor Engels `en`, voor Fries `fy`.
 
-- Content: [De juiste taal instellen](/richtlijnen/content/tekstopmaak/taal).
+<Guideline appearance="dont" title="Ongeldige taalcodes.">
+    ```html
+    <html lang="dutch">
+    <html lang="ned">
+    <html lang="nl-NLD">
+    ```
+</Guideline>
 
-## Bronnen
+<Guideline appearance="do" title="Geldige BCP 47-taalcodes.">
+    ```html
+    <!-- Nederlands -->
+    <html lang="nl">
 
-- [<span lang="en">The lang attribute: browsers telling lies, telling sweet little lies</span>](https://www.matuzo.at/blog/lang-attribute) van Manuel Matuzović over de problemen met het automatisch vertalen met Google Translate.
-- [<span lang="en">Language subtag lookup</span>](https://r12a.github.io/app-subtags/)
-- [<span lang="en">`lang`-attribuut op MDN</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)
-- [<span lang="en">Language tags in HTML and XML</span>](https://www.w3.org/International/articles/language-tags/index.en) van de W3C.
+    <!-- Engels -->
+    <html lang="en">
+
+    <!-- Fries -->
+    <html lang="fy">
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer past de taalcode aan in het template.
+
+### Taalcode komt niet overeen met de daadwerkelijke taal
+
+Het `lang`-attribuut geeft een andere taal aan dan waarin de pagina geschreven is. Dit gebeurt als een website in meerdere talen beschikbaar is, maar het `lang`-attribuut niet mee verandert bij het wisselen van taal. Een screenreader leest dan bijvoorbeeld een Nederlandstalige pagina voor met een Engelse stem.
+
+**Hoe te testen:** bekijk de taal van de content op de pagina. Open de DevTools en controleer of het `lang`-attribuut op `<html>` overeenkomt met die taal. Wissel van taal op de website en controleer of het `lang`-attribuut mee verandert.
+
+<Guideline appearance="dont" title="Engelse taalcode op een Nederlandstalige pagina.">
+  ```html
+  <html lang="en">
+    <head>
+      <title>Over ons - Gemeente Utrecht</title>
+    </head>
+    <body>
+      <h1>Over ons</h1>
+      <p>Welkom bij de gemeente Utrecht.</p>
+    </body>
+  </html>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Taalcode komt overeen met de content.">
+  ```html
+  <html lang="nl">
+    <head>
+      <title>Over ons - Gemeente Utrecht</title>
+    </head>
+    <body>
+      <h1>Over ons</h1>
+      <p>Welkom bij de gemeente Utrecht.</p>
+    </body>
+  </html>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer laat de waarde van het `lang`-attribuut automatisch veranderen wanneer een andere taal is gekozen.
+
+### Taal verandert niet mee in een single-page applicatie
+
+In een <span lang="en">single-page</span> applicatie verandert de content zonder dat de browser een nieuwe pagina laadt. Als de applicatie meertalig is en de bezoeker van taal wisselt, moet het `lang`-attribuut op `<html>` worden bijgewerkt. Gebeurt dat niet, dan blijft de oude taalcode staan en leest een screenreader de nieuwe taal met de verkeerde stem voor.
+
+**Hoe te testen:** wissel van taal in de applicatie. Open de DevTools console en controleer de waarde van `document.documentElement.lang`. Komt die overeen met de geselecteerde taal?
+
+<Guideline appearance="do" title="Lang-attribuut bijwerken bij taalwissel.">
+    ```javascript
+    function wisselTaal(taalcode) {
+      document.documentElement.lang = taalcode;
+      // ... content laden in de nieuwe taal ...
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt taallogica toe aan de taalwisselfunctie van de applicatie.
+
+### Template van een framework heeft een standaard Engelse taalcode
+
+Frameworks zoals React, Angular en Vue genereren een standaard `index.html` met `lang="en"`. Bij een Nederlandstalige website wordt die standaardwaarde niet aangepast. De pagina meldt zich als Engels terwijl de content Nederlands is.
+
+**Hoe te testen:** open de DevTools en inspecteer het `<html>`-element. Staat er `lang="en"` terwijl de content in een andere taal is?
+
+<Guideline appearance="dont" title="Standaard Engelse taalcode uit een framework-template.">
+    ```html
+    <!-- Gegenereerd door create-react-app -->
+    <html lang="en">
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Taalcode aangepast aan de daadwerkelijke taal.">
+    ```html
+    <html lang="nl">
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer past het `lang`-attribuut aan in het template (`index.html`, `app.component.html` of equivalent).
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Gebruik een screenreader om een stuk tekst te laten voorlezen. Klinkt de uitspraak correct voor de taal van de pagina? Een verkeerde taalinstelling herken je aan een onnatuurlijke, buitenlandse uitspraak.
+2. Als de website meertalig is: wissel van taal en controleer of de uitspraak van de screenreader mee verandert.
+
+### Voor developers
+
+1. Inspecteer het `<html>`-element in de DevTools. Controleer of een `lang`-attribuut aanwezig is met een geldige BCP 47-taalcode.
+2. Controleer of het `lang`-attribuut via JavaScript wordt bijgewerkt bij meertalige websites en single-page applicaties.
+3. Zoek in je templates naar hardcoded `lang="en"` uit framework-generators. Pas deze aan naar de juiste taal.
+4. Gebruik een geautomatiseerde tool zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span>. Een ontbrekend `lang`-attribuut wordt automatisch gedetecteerd. Of de taalcode overeenkomt met de daadwerkelijke content moet je handmatig controleren.
+
+## Gerelateerde succescriteria
+
+- [3.1.2 Taal van onderdelen](https://nldesignsystem.nl/wcag/3.1.2/): als een passage in een andere taal is geschreven dan de rest van de pagina, geeft een `lang`-attribuut op dat element de afwijkende taal aan. Lees hier meer als je pagina's hebt met gemengde talen.
+
+## Relevante bronnen
+
+- [BCP 47 Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) — het volledige register van geldige taalcodes. Gebruik dit als je twijfelt over de juiste code voor een specifieke taal (Engels).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
+## W3C-referenties
 
-Inspecteer de gegenereerde HTML-code van de webpagina, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
-Heeft het `html`-element een `lang`-attribuut en is dit een geldige waarde?
-
-Staat er op een website een taalkeuze? Controleer bij de verschillende talen of ook de waarde van het lang-attribuut is aangepast.
-
-**Let op**: alleen de tekst (de content) wordt in een andere taal voorgelezen. Dus alle ander informatie die een [screenreader](/woordenlijst/#screenreader) voorleest blijft in de taal van de computer. Dit is informatie over bijvoorbeeld formulierelementen, het niveau van een kopje, of een element een button of een link is, etc. Dit is gewenst gedrag.
-
-## Veelgemaakte fouten
-
-### Fout: Ontbrekend lang-attribuut
-
-Jaarlijks meet WebAIM de toegankelijkheid van 1 miljoen voorpagina's van websites. Volgens het onderzoek [WebAIM Million uit 2024](https://webaim.org/projects/million/) mist bij 17% van de gemeten websites het `lang`-attribuut. Het hoort hierbij tot de top 5 van meest gemaakte fouten.
-
-Het controleren van de taal is dus geen overbodige luxe. Een goed CMS zet zelf het `lang`-attribuut in de code. Maar check dan ook of dat de juiste waarde is voor de tekst van de website.
-
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.1.1 Language of Page</span>](https://www.w3.org/TR/WCAG22/#language-of-page).
-- Nederlandse vertaling van het WCAG-succescriterium: [3.1.1 Taal van de pagina](https://www.w3.org/Translations/WCAG22-nl/#language-of-page).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.1.1 Language of Page</span>](https://www.w3.org/WAI/WCAG22/quickref/#language-of-page).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 3.1.1: Language of Page</span>](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html).
+- [WCAG 2.2: Succescriterium 3.1.1 Taal van de pagina](https://www.w3.org/Translations/WCAG22-nl/#taal-van-de-pagina) — de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 3.1.1: Language of Page](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Quick Reference 3.1.1 Language of Page](https://www.w3.org/WAI/WCAG22/quickref/#language-of-page) — snelreferentie met technieken (Engels).
 
 <SpotlightSection>
   <Markdown omitH1 headinglevel={3}>
