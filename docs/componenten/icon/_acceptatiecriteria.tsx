@@ -8,6 +8,7 @@ import Wcag1410 from '@nl-design-system-unstable/documentation/componenten/ac/_w
 import Wcag1411 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.11.md';
 import Wcag244 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.4-icon.md';
 import Wcag246 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.6-icon.md';
+import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md';
 import Wcag324 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.2.4-icon.md';
 import Wcag332 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.3.2-icon.md';
 import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md';
@@ -68,6 +69,14 @@ export const usage = [
     status: '',
     component: Wcag246,
     tags: ['designer', 'contentmaker'],
+  },
+  {
+    title:
+      'Als de alternatieve tekst van een icon in een andere taal is dan de hoofdtaal van de pagina, is dat duidelijk aangegeven.',
+    sc: '3.1.2',
+    status: '',
+    component: Wcag312,
+    tags: ['developer'],
   },
   {
     title:
