@@ -66,6 +66,7 @@
     "test-a11y:next": "playwright test test/a11y/axe.next.test.ts --workers=8",
     "test-e2e": "playwright test test/e2e/ --workers=8",
     "test-visual": "playwright test test/visual/",
+    "test-csp": "playwright test test/csp/",
     "publish:argos": "argos upload ./tmp/screenshots",
     "test-update": "npm-run-all --sequential clean lint build",
     "test": "npm-run-all test:**",

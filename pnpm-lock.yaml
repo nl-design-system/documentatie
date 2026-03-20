@@ -437,6 +437,9 @@ importers:
       astro:
         specifier: 6.0.5
         version: 6.0.5(patch_hash=e839f917d03bc409f94bd044bd6a1594aa35edc409118c2c3e58b682cfefd776)(@types/node@24.10.9)(jiti@1.21.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+      cheerio:
+        specifier: 1.2.0
+        version: 1.2.0
       react:
         specifier: 18.3.1
         version: 18.3.1
