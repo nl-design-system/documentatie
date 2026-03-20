@@ -12,8 +12,8 @@
   margin-block-end: var(--basis-space-block-2xl);
 }
 
-.admonition__decorator-img {
-  inline-size: 100px;
+.ammonition__decorator-img {
+  max-inline-size: 100px;
   display: flex;
   justify-self: end;
 }
