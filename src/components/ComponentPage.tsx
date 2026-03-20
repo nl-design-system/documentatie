@@ -23,6 +23,7 @@ import {
   type ComponentPageSectionProps,
 } from '../utils';
 import './ComponentPage.css';
+import relationMap from './relations.json';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
@@ -200,6 +201,23 @@ export const Introduction = ({ component, headingLevel, description }: Introduct
         </InlineHeadingGroup>
         <Paragraph lead>{description}</Paragraph>
       </>
+    )
+  );
+};
+
+export const Related = ({ component }: ComponentPageSectionProps) => {
+  const relatedComponents = component && relationMap[component.title] ? relationMap[component.title].related_to : [];
+  return (
+    relatedComponents.length > 0 && (
+      <Paragraph>
+        Gerelateerde componenten:{' '}
+        {relatedComponents.map((relatedComponent, index) => (
+          <>
+            <Link href={`/${relatedComponent.toLowerCase().replaceAll(' ', '-')}/`}>{relatedComponent}</Link>
+            {index < relatedComponents.length - 1 ? ', ' : '.'}
+          </>
+        ))}
+      </Paragraph>
     )
   );
 };
