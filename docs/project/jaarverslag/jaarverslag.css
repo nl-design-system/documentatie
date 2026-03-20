@@ -1,5 +1,15 @@
-.process-steps {
-  margin-block-end: 20px;
+.ams-progress-list-substeps {
+  margin-inline-start: var(--basis-space-inline-md);
+}
+
+.ams-progress-list-substeps__indicator {
+  margin-block-start: var(--basis-space-block-md);
+}
+
+.progress-list {
+  --utrecht-paragraph-margin-block-start: 0;
+  --utrecht-paragraph-margin-block-end: 0;
+  margin-block-end: var(--basis-space-block-2xl);
 }
 
 .admonition__decorator-img {

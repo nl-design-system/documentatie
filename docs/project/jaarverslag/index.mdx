@@ -7,7 +7,9 @@ hide_title: true
 ---
 
 import { Paragraph, Figure, FigureCaption } from "@utrecht/component-library-react/dist/css-module";
-import { Status } from "@gemeente-denhaag/process-steps";
+import { ProgressList } from "@amsterdam/design-system-react";
+import "@amsterdam/design-system-css/dist/progress-list/progress-list.css";
+import "@amsterdam/design-system-css/dist/visually-hidden/visually-hidden.css";
 import "./jaarverslag.css";
 
 {/* @license CC0-1.0 */}
@@ -103,48 +105,26 @@ Wie zitten er in de Community? Overheidsorganisaties en leveranciers van overhei
 Organisaties kunnen op 6 niveaus bijdragen en meedoen aan NL Design System. Hierbij is niveau 1 de start en loopt een organisatie al dan niet door naar het gewenste niveau.
 In de visualisatie hieronder staan de 6 niveaus van deelname beschreven.
 
-<div className="process-steps">
-  <Status
-    steps={[
-      {
-        id: "kennisdeling",
-        marker: 1,
-        status: "current",
-        title: "Kennisdeling",
-      },
-      {
-        id: "richtlijnen",
-        marker: 2,
-        status: "current",
-        title: "Richtlijnen gebruiken",
-      },
-      {
-        id: "thema",
-        marker: 3,
-        status: "current",
-        title: "Eigen thema maken en onderhouden",
-      },
-      {
-        id: "hergebruiken",
-        marker: 4,
-        status: "current",
-        title: "Componenten hergebruiken",
-      },
-      {
-        id: "verbeteren",
-        marker: 5,
-        status: "current",
-        title: "Componenten verbeteren",
-      },
-      {
-        id: "bijdragen",
-        marker: 6,
-        status: "current",
-        title: "Componenten bijdragen en onderhouden",
-      },
-    ]}
-  ></Status>
-</div>
+<ProgressList headingLevel={3} className="progress-list">
+  <ProgressList.Step status="current">
+    <Paragraph>Kennisdeling</Paragraph>
+  </ProgressList.Step>
+  <ProgressList.Step status="current">
+    <Paragraph>Richtlijnen gebruiken</Paragraph>
+  </ProgressList.Step>
+  <ProgressList.Step status="current">
+    <Paragraph>Eigen thema maken en onderhouden</Paragraph>
+  </ProgressList.Step>
+  <ProgressList.Step status="current">
+    <Paragraph>Componenten hergebruiken</Paragraph>
+  </ProgressList.Step>
+  <ProgressList.Step status="current">
+    <Paragraph>Componenten verbeteren</Paragraph>
+  </ProgressList.Step>
+  <ProgressList.Step status="current">
+    <Paragraph>Componenten bijdragen en onderhouden</Paragraph>
+  </ProgressList.Step>
+</ProgressList>
 
 Ga voor een uitgebreidere beschrijving naar [niveaus van meedoen](/handboek/organisatie/meedoen/).
 
@@ -194,96 +174,105 @@ Het Kernteam faciliteert deze kennisdeling en zorgt voor omgeving waarin teams r
 
 In het overzicht hieronder is een overzicht van de bijeenkomsten die structureel worden georganiseerd.
 
-<div className="process-steps">
-  <Status
-    steps={[
-      {
-        id: "dagelijks",
-        status: "checked",
-        title: "Dagelijks",
-        steps: [
-          {
-            status: "checked",
-            title:  <>Vragen uit de Community beantwoorden in <a href="/slack">Slack</a></>
-          },
-          {
-            status: "checked",
-            title: <>Helpen met de samenwerking in <a href="/github">Github</a></>,
-          },
-          {
-            status: "checked",
-            title: <>Helpen met de samenwerking in <a href="/figma">Figma</a></>,
-          }
-        ],
-      },
-      {
-        id: "wekelijks",
-        status: "checked",
-        title: "Wekelijks",
-        steps: [
-          {
-            status: "checked",
-            title: <a href="/events/developer-open-hour/">Developer Open Hour</a>,
-          },
-          {
-            status: "checked",
-            title: <a href="/events/mijn-services-check-in/">MijnServices check-in</a>,
-          },
-        ],
-      },
-      {
-        id: "tweewekelijks",
-        status: "checked",
-        title: "2-wekelijks",
-        steps: [
-          {
-            status: "checked",
-            title: <a href="/events/heartbeat">Heartbeat</a>,
-          },
-          {
-            status: "checked",
-            title: <a href="/events/design-open-hour">Design Open Hour</a>,
-          },
-          {
-            status: "checked",
-            title: <a href="/events/rijkshuisstijl-community-open-hour">Rijkshuisstijl Community Open Hour</a>,
-          },
-        ],
-      },
-      {
-        id: "maandelijks",        
-        status: "checked",
-        title: "Maandelijks",
-        steps: [
-          {
-            status: "checked",
-            title: <a href="/events/design-open-dag">Design Open Dag</a>,
-          },
-          {
-            status: "checked",
-            title: <a href="/events/estafettemodeldag">Estafettemodeldag</a>,
-          },
-        ],
-      },
-      {
-        id: "jaarlijks",
-        status: "checked",
-        title: "Jaarlijks",
-        steps: [
-          {
-            status: "checked",
-            title: <a href="/events/design-systems-week-2025/programma/">Design Systems Week</a>,
-          },
-        ],
-      },
-      {
-        status: "todo"
-      }
-    ]}
-
-> </Status>
-
-</div>
+<ProgressList headingLevel={3} className="progress-list">
+  <ProgressList.Step hasSubsteps heading="Kennisdeling" status="completed">
+    <ProgressList.Substeps>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            Vragen uit de Community beantwoorden in <a href="/slack">Slack</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            Helpen met de samenwerking in <a href="/github">Github</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            Helpen met de samenwerking in <a href="/figma">Figma</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+    </ProgressList.Substeps>
+  </ProgressList.Step>
+  <ProgressList.Step hasSubsteps heading="Wekelijks" status="completed">
+    <ProgressList.Substeps>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            <a href="/events/developer-open-hour/">Developer Open Hour</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            <a href="/events/mijn-services-check-in/">MijnServices check-in</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+    </ProgressList.Substeps>
+  </ProgressList.Step>
+  <ProgressList.Step hasSubsteps heading="2-wekelijks" status="completed">
+    <ProgressList.Substeps>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            <a href="/events/heartbeat">Heartbeat</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            <a href="/events/design-open-hour">Design Open Hour</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            <a href="/events/rijkshuisstijl-community-open-hour">Rijkshuisstijl Community Open Hour</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+    </ProgressList.Substeps>
+  </ProgressList.Step>
+  <ProgressList.Step hasSubsteps heading="Maandelijks" status="completed">
+    <ProgressList.Substeps>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            <a href="/events/design-open-dag">Design Open Dag</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            <a href="/events/estafettemodeldag">Estafettemodeldag</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+    </ProgressList.Substeps>
+  </ProgressList.Step>
+  <ProgressList.Step hasSubsteps heading="Jaarlijks" status="completed">
+    <ProgressList.Substeps>
+      <ProgressList.Substep status="completed">
+        {
+          <Paragraph>
+            <a href="/events/design-systems-week-2025/programma/">Design Systems Week</a>
+          </Paragraph>
+        }
+      </ProgressList.Substep>
+    </ProgressList.Substeps>
+  </ProgressList.Step>
+</ProgressList>
 
 :::success[2025]
 
