@@ -13,7 +13,9 @@ import { Card, CardContent, CardGroup } from './CardGroup';
 import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
-import { TaskList, TaskListItem } from './TaskList';
+import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
+import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
+import '@nl-design-system-candidate/heading-css/heading.css';
 import {
   COMPONENT_STATES,
   getProjectFrameworks,
@@ -23,6 +25,7 @@ import {
   type ComponentPageSectionProps,
 } from '../utils';
 import './ComponentPage.css';
+import type { HeadingLevel } from '@nl-design-system-candidate/heading-react';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
@@ -42,9 +45,9 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
               <TaskList>
                 {project.tasks.map(({ checked, name, id }) => (
                   <TaskListItem
-                    headingLevel={headingLevel + 1}
+                    headingLevel={(headingLevel + 1) as HeadingLevel}
                     checked={checked}
-                    title={name}
+                    heading={name}
                     key={id}
                     description={getRelayBoardDescription(id)}
                   />
