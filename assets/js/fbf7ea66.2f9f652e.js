@@ -1,0 +1,270 @@
+'use strict';
+(globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
+ [77068],
+ {
+  1292(e, n, t) {
+   t.d(n, { r: () => h });
+   var a = t(29181),
+    r = t(74172),
+    i = t(15089),
+    s = t(28377),
+    o = t(33648),
+    d = t(83386),
+    l = t(86070);
+   const c = { figma: (0, l.jsx)(r.A, {}), github: (0, l.jsx)(i.A, {}), npm: (0, l.jsx)(s.A, {}), storybook: (0, l.jsx)(o.A, {}) },
+    h = ({ brand: e }) => (0, l.jsx)(a.In, { children: c[e] || (0, l.jsx)(d.A, {}) });
+  },
+  33062(e, n, t) {
+   t.d(n, { bo: () => r, KF: () => m, mJ: () => u, VZ: () => A, cR: () => w, Pv: () => f, qZ: () => s, kD: () => b, B2: () => g, Pc: () => d, f4: () => o, GT: () => k, fX: () => i, eQ: () => x, B_: () => v, o_: () => j, Rc: () => _ });
+   const a = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
+    r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
+    i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
+    s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
+    o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    d = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
+    l = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
+   function c(e) {
+    return Array.from(new Set(e));
+   }
+   const h = (e) => [...e].sort((e, n) => l.indexOf(e) - l.indexOf(n)),
+    m = (e) => {
+     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => p(e));
+     return h(c(n));
+    },
+    g = (e, n) => u(e).includes(n),
+    p = (e) => {
+     const n = / URL \(([^)]+)\)/;
+     return h(c(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
+    },
+    u = (e) => h(c(e.projects.flatMap((e) => p(e)))),
+    f = (e) => {
+     const n = p(e),
+      t = ((e) => {
+       const n = e.tasks.find(({ name: e }) => 'Naam' === e);
+       return n?.value || '';
+      })(e);
+     return n.map((n) => {
+      const a = e.tasks
+       .filter(({ name: e, value: t }) => '' !== t && e.includes(n))
+       .map(({ name: a, id: r, value: i }) => {
+        const s = /^(.+) URL/.exec(a)[1],
+         o = 'Storybook' === s ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${s}`;
+        return { brand: s.toLowerCase(), name: a, id: r, value: i, description: o };
+       });
+      return { frameworkName: n, tasks: a };
+     });
+    },
+    j = (e) => e.join('.'),
+    v = (e) => '--' + e.join('-'),
+    x = (e, n) => n.reduce((e, n) => e?.[n], e);
+   function b(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? b(e[t], [...n, t]) : []));
+   }
+   function k(e) {
+    const n = new Map();
+    function t(e) {
+     return (n.has(e) || n.set(e, j(e)), n.get(e));
+    }
+    return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
+   }
+   function _(e) {
+    const n = {};
+    for (const t of e) {
+     let e = n;
+     for (const n of t) (e[n] || (e[n] = {}), (e = e[n]));
+    }
+    return n;
+   }
+   const w = () => {
+     const e = a.sP?.pnpm;
+     if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
+     return e.replace(/^[\^~>=<]+/, '');
+    },
+    A = () => {
+     const e = a.sP?.node;
+     if (!e) throw new Error('No node version found in package.json#engines.node');
+     const n = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
+     return n ? n[1] : e.replace(/^[\^~>=<]+/, '');
+    };
+  },
+  44594(e, n, t) {
+   t.d(n, { s: () => d });
+   var a = t(29181),
+    r = t(13526),
+    i = t(33062),
+    s = t(86070);
+   const o = { 'Heading 1': 'Heading', 'Heading 2': 'Heading', 'Heading 3': 'Heading', 'Heading 4': 'Heading', 'Heading 5': 'Heading', 'Heading 6': 'Heading' },
+    d = ({ name: e, relayStep: n, description: t }) => {
+     const d = (0, i.fX)(n),
+      l = o[e] ?? e;
+     return (0, s.jsxs)(a.WK, { children: [(0, s.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, r.A)('component-illustration', `component-illustration--${d}`), fill: 'none', children: [(0, s.jsxs)('g', { fill: 'var(--component-illustration-background-color, white)', children: [(0, s.jsx)('rect', { width: '960', height: '540' }), (0, s.jsx)('rect', { width: '960', height: '540' })] }), (0, s.jsxs)('g', { fill: 'var(--component-illustration-grid-color, #eee)', children: [(0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, s.jsx)('use', { href: `/svg/componenten_overzicht_${(0, i.fX)(l)}.svg#component-illustration` })] }), (0, s.jsx)(a.$P, { className: 'component-illustration__caption', children: t })] });
+    };
+  },
+  54565(e, n, t) {
+   t.d(n, { c: () => r });
+   var a = t(30758);
+   function r() {
+    const [e, n] = (0, a.useState)();
+    return ((0, a.useEffect)(() => n(!0), []), e);
+   }
+  },
+  67970(e, n, t) {
+   t.d(n, { D: () => o });
+   var a = t(46447),
+    r = t(13526),
+    i = t(33062),
+    s = t(86070);
+   const o = ({ state: e }) => {
+    const n = (0, i.fX)(e);
+    return (0, s.jsx)(a.KE, { className: (0, r.A)('estafette-badge', n && `estafette-badge--${n}`), children: e });
+   };
+  },
+  72642(e, n, t) {
+   t.d(n, { p: () => i });
+   var a = t(13526),
+    r = t(86070);
+   const i = ({ children: e, className: n, level: t = 1, suffix: i, ...s }) => (0, r.jsxs)('hgroup', { className: (0, a.A)('nlds-inline-heading-group', `utrecht-heading-${t}`, n), ...s, children: [(0, r.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: e }), i && (0, r.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [i ? ' ' : '', i] })] });
+  },
+  80427(e, n, t) {
+   (t.r(n), t.d(n, { assets: () => h, component: () => j, componentName: () => f, contentTitle: () => c, default: () => b, description: () => g, frontMatter: () => l, issueNumber: () => p, metadata: () => a, relayStep: () => u, title: () => m, toc: () => v }));
+   const a = JSON.parse('{"id":"componenten/case-card/index","title":"Case Card","description":"Toont meta-informatie over een zaak en biedt de mogelijkheid hier naartoe te navigeren.","source":"@site/docs/componenten/case-card/index.mdx","sourceDirName":"componenten/case-card","slug":"/case-card","permalink":"/case-card","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/case-card/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Case Card","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Case Card","pagination_label":"Case Card","description":"Toont meta-informatie over een zaak en biedt de mogelijkheid hier naartoe te navigeren.","slug":"/case-card","keywords":["aanvraag","afgehandeld","afgerond","archief","archive","archived","bezwaar","beroep","bericht","card","case","case card","complaint","data","dossier","file","gearchiveerd","in behandeling","kenmerk","klacht","lopende zaak","melding","MijnOmgeving","MijnServices","MijnZaken","navigeren","navigate","navigatie","navigation","permit","procedure","record","response","request","terugkoppeling","tile","vergunning","zaak","zaak informatie","zaaknummer","zaaksysteem"]},"sidebar":"componenten","previous":{"title":"Card as Link","permalink":"/card-as-link"},"next":{"title":"Checkbox","permalink":"/checkbox"}}');
+   var r = t(86070),
+    i = t(18439),
+    s = t(87069),
+    o = t(80506),
+    d = t(44594);
+   const l = { title: 'Case Card', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Case Card', pagination_label: 'Case Card', description: 'Toont meta-informatie over een zaak en biedt de mogelijkheid hier naartoe te navigeren.', slug: '/case-card', keywords: ['aanvraag', 'afgehandeld', 'afgerond', 'archief', 'archive', 'archived', 'bezwaar', 'beroep', 'bericht', 'card', 'case', 'case card', 'complaint', 'data', 'dossier', 'file', 'gearchiveerd', 'in behandeling', 'kenmerk', 'klacht', 'lopende zaak', 'melding', 'MijnOmgeving', 'MijnServices', 'MijnZaken', 'navigeren', 'navigate', 'navigatie', 'navigation', 'permit', 'procedure', 'record', 'response', 'request', 'terugkoppeling', 'tile', 'vergunning', 'zaak', 'zaak informatie', 'zaaknummer', 'zaaksysteem'] },
+    c = void 0,
+    h = {},
+    m = 'Case Card',
+    g = 'Toont meta-informatie over een zaak en biedt de mogelijkheid hier naartoe te navigeren.',
+    p = 253,
+    u = 'help wanted',
+    f = 'case-card',
+    j = s.find((e) => e.number === p),
+    v = [
+     { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
+     { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
+    ];
+   function x(e) {
+    const n = { h2: 'h2', ...(0, i.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, r.jsx)(o.Fc, { component: j, headingLevel: 1, description: g }), '\n', (0, r.jsx)(d.s, { relayStep: u, description: `Schets van de ${f} component`, name: f }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(o.VK, { component: j, headingLevel: 3 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(o.mu, { component: j, headingLevel: 3 }), '\n', (0, r.jsx)(o.$9, { component: j, headingLevel: 2 })] });
+   }
+   function b(e = {}) {
+    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(x, { ...e }) }) : x(e);
+   }
+  },
+  80506(e, n, t) {
+   t.d(n, { VK: () => u, $9: () => j, mu: () => f, Fc: () => v });
+   var a = t(29181),
+    r = t(13526),
+    i = t(1292),
+    s = t(90495),
+    o = t(54565);
+   function d(e) {
+    return (0, o.c)() ? e.children() : null;
+   }
+   var l = t(86070);
+   const c = ({ checked: e, unchecked: n }) =>
+    (0, l.jsx)(d, {
+     children: () => {
+      const a = t(83294).V6;
+      return (0, l.jsx)(a, {
+       radius: 20,
+       arcWidth: 4,
+       data: [
+        { fill: 'var(--basis-color-accent-1-inverse-bg-default)', key: 'Done', value: e, stroke: '2' },
+        { fill: 'var(--basis-color-disabled-bg-default)', key: 'Todo', value: n, stroke: '2' },
+       ],
+       donutValue: null,
+       showLabels: !1,
+      });
+     },
+    });
+   var h = t(67970),
+    m = t(72642),
+    g = t(58876),
+    p = t(33062);
+   const u = ({ component: e, headingLevel: n }) => {
+     const t = e && e.projects.filter((e) => p.f4.includes(e.id)),
+      i = t && p.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
+     return e && (0, l.jsx)(a.If, { sections: i.map((t) => ({ className: (0, r.A)('definition-of-done', t && `definition-of-done--${(0, p.fX)(t.title)}`), headingLevel: n, expanded: !1, label: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', body: t && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(g._, { children: t.tasks.map(({ checked: e, name: t, id: a }) => (0, l.jsx)(g.Z, { headingLevel: n + 1, checked: e, heading: t, description: (0, p.qZ)(a) }, a)) }), (0, l.jsx)(a.fz, { children: (0, l.jsxs)(a.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) })) });
+    },
+    f = ({ component: e, headingLevel: n }) => {
+     const t = e && e.projects.filter((e) => !p.f4.includes(e.id));
+     return e && t.length
+      ? (0, l.jsx)(s.AC, {
+         appearance: 'large',
+         className: 'implementation-card-group',
+         children: t
+          .sort((e, n) => {
+           const t = e.progress.max - e.progress.value,
+            a = n.progress.max - n.progress.value;
+           return t === a ? e.title.localeCompare(n.title) : t - a;
+          })
+          .map((e) => {
+           const t = e.tasks.find(({ name: e }) => 'Naam' === e),
+            r = t?.value,
+            o = (0, p.Pv)(e),
+            d = new Map([
+             ['Figma URL', { brand: 'figma', desciption: `${r} in Figma` }],
+             ['Theme Storybook URL', { brand: 'storybook', desciption: `${r} voor visuele regressie tests` }],
+            ]),
+            h = e.tasks.filter(({ name: e, value: n }) => d.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
+           return (0, l.jsx)(
+            s.Zp,
+            {
+             className: 'implementation-card',
+             children: (0, l.jsxs)(s.Wu, {
+              children: [
+               (0, l.jsx)(a.DZ, { level: n, children: e.title.replace(/^Community/i, '') }),
+               (0, l.jsxs)(a.fz, { children: [(0, l.jsx)(c, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, l.jsxs)(a.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
+               (h.length > 0 || o.length > 0) && (0, l.jsx)(a.DZ, { level: n + 1, children: 'Snel aan de slag' }),
+               h.length > 0 &&
+                (0, l.jsx)(l.Fragment, {
+                 children: (0, l.jsx)(a.dk, {
+                  links: h
+                   .filter((e) => !!d.get(e.name))
+                   .map((e) => {
+                    const n = d.get(e.name);
+                    return { children: n.desciption, icon: (0, l.jsx)(i.r, { brand: n.brand }), href: e.value };
+                   }),
+                 }),
+                }),
+               o.length > 0 && (0, l.jsx)(l.Fragment, { children: o.map(({ frameworkName: e, tasks: t }) => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsxs)(a.DZ, { level: n + 2, children: [r, ' in ', e] }), (0, l.jsx)(a.dk, { links: t.map((e) => ({ children: e.description, icon: (0, l.jsx)(i.r, { brand: e.brand }), href: e.value })) })] })) }),
+              ],
+             }),
+            },
+            e.title,
+           );
+          }),
+        })
+      : (0, l.jsx)(a.fz, { children: 'Er zijn nog geen implementaties' });
+    },
+    j = ({ component: e, headingLevel: n }) => {
+     const t = e?.projects.find((e) => 'HELP_WANTED' === e.id),
+      r = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
+     return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(a.DZ, { level: n, children: 'Help om deze component te verbeteren' }), (0, l.jsxs)(a.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, l.jsxs)(a.Xy, { children: [r ? (0, l.jsxs)(a.Er, { children: ['Vul de ', (0, l.jsx)(a.N_, { href: r, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, l.jsxs)(a.Er, { children: [(0, l.jsxs)(a.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, l.jsxs)(a.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, l.jsx)(a.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, l.jsx)(a.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
+    },
+    v = ({ component: e, headingLevel: n, description: t }) => {
+     const r = e && p.bo[e.relayStep];
+     return e && (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(m.p, { level: n, suffix: r && (0, l.jsx)(h.D, { state: r }), children: e.title }), (0, l.jsx)(a.fz, { lead: !0, children: t })] });
+    };
+  },
+  90495(e, n, t) {
+   t.d(n, { AC: () => l, Fu: () => s, Wu: () => o, Zp: () => d });
+   var a = t(46447),
+    r = t(13526),
+    i = t(86070);
+   const s = ({ background: e, children: n, className: t, ...a }) => (0, i.jsx)('div', { className: (0, r.A)('card__illustration', e && `card__illustration--${e}`, t), ...a, children: n }),
+    o = (e) => (0, i.jsx)('div', { className: 'card__content', ...e }),
+    d = ({ href: e, appearance: n, className: t, component: s = 'div', background: o, children: d }) => {
+     const l = (e) => ('article' === s ? (0, i.jsx)('article', { ...e }) : 'section' === s ? (0, i.jsx)('section', { ...e }) : (0, i.jsx)('div', { ...e })),
+      c = (0, i.jsx)(l, { className: (0, r.A)('cardgroup__card', o && 'cardgroup__card--light-purple', `cardgroup__card--${n}`, t), children: d });
+     return e ? (0, i.jsx)(a.N_, { href: e, boxContent: !0, className: 'cardgroup__link', children: c }) : c;
+    },
+    l = ({ appearance: e = 'medium', children: n, className: t }) => (0, i.jsx)('div', { className: (0, r.A)('cardgroup', `cardgroup--${e}`, t), children: n });
+  },
+ },
+]);
