@@ -8,16 +8,26 @@ description: Laat een gebruiker op een toegankelijke manier weten hoe een formul
 slug: 3.3.3
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - begrijpelijk
   - assistentie bij invoer
   - understandable
   - input assistance
   - error suggestion
+  - foutsuggestie
+  - formulier
+  - validatie
+  - invoerfout
+  - correctie
+  - foutmelding
+  - autocorrectie
+  - WCAG 3.3.3
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -30,9 +40,192 @@ import Summary from "./summaries/_3.3.3-summary.md";
   {"WCAG-succescriterium 3.3.3 Foutsuggestie"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+Als een formulier weet welk antwoord het verwacht, biedt het bij een fout een suggestie aan. Vult iemand "32 januari" in als datum? Dan meldt het formulier niet alleen "Datum is niet geldig" maar stelt het voor: "Bedoelde je 31 januari of 1 februari?"
+
+Hoe specifieker de suggestie, hoe sneller de bezoeker het formulier correct kan invullen. Bij een wachtwoordveld mag je suggereren welke eis niet is gehaald, zolang je geen gevoelige informatie over geldige wachtwoorden onthult. Vermelden dat een wachtwoord minimaal een bepaald aantal tekens moet hebben mag, want die informatie staat ook op het aanmeldformulier.
+
+## Veelgemaakte fouten
+
+### Foutmelding zonder suggestie terwijl het verwachte formaat bekend is
+
+Het formulier weet welk formaat het verwacht, maar deelt dat niet met de bezoeker. Een datumveld verwacht "dd-mm-jjjj" maar meldt alleen "Ongeldige datum". Een telefoonnummerveld verwacht tien cijfers maar meldt alleen "Ongeldig telefoonnummer". De bezoeker moet raden wat er precies wordt verwacht.
+
+**Hoe te testen:** vul een veld in met een waarde in het verkeerde formaat. Beschrijft de foutmelding welk formaat wordt verwacht? Bevat de melding een voorbeeld?
+
+<Guideline appearance="dont" title="Foutmelding zonder het verwachte formaat.">
+  ```html
+  <label for="datum">Geboortedatum</label>
+  <input type="text" id="datum" aria-describedby="datum-fout" aria-invalid="true" />
+  <p id="datum-fout" class="fout">
+    Ongeldige datum
+  </p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Foutmelding met het verwachte formaat en een voorbeeld.">
+  ```html
+  <label for="datum">Geboortedatum</label>
+  <input type="text" id="datum" aria-describedby="datum-fout" aria-invalid="true" />
+  <p id="datum-fout" class="fout">
+    Datum is niet in het juiste formaat. Gebruik dd-mm-jjjj, bijvoorbeeld 15-03-1990
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt het verwachte formaat en een voorbeeld toe aan de foutmelding.
+
+### Postcode wordt afgekeurd omdat het formaat afwijkt
+
+Een Nederlandse postcode bestaat uit vier cijfers en twee letters. Bezoekers schrijven die op twee manieren: "3512JE" en "3512 JE". Als het formulier alleen het formaat zonder spatie accepteert, krijgt de bezoeker een foutmelding terwijl de postcode correct is. Accepteer beide varianten, of bied een suggestie aan met het verwachte formaat.
+
+**Hoe te testen:** vul een postcode in met en zonder spatie. Worden beide geaccepteerd? Als niet, biedt de foutmelding dan het verwachte formaat aan?
+
+<Guideline appearance="dont" title="Postcode afgekeurd zonder suggestie.">
+  ```html
+  <label for="postcode">Postcode</label>
+  <input type="text" id="postcode" value="3512 JE" aria-describedby="postcode-fout" aria-invalid="true" />
+  <p id="postcode-fout" class="fout">
+    Ongeldige postcode
+  </p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Beide formaten accepteren.">
+    ```javascript
+    function normaliseerPostcode(waarde) {
+      return waarde.replace(/\s/g, "").toUpperCase();
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Suggestie met het verwachte formaat als je maar één formaat accepteert.">
+  ```html
+  <label for="postcode">Postcode</label>
+  <input type="text" id="postcode" value="3512 JE" aria-describedby="postcode-fout" aria-invalid="true" />
+  <p id="postcode-fout" class="fout">
+    Postcode is niet in het juiste formaat. Gebruik het formaat zonder spatie, bijvoorbeeld 3512JE
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer normaliseert de invoer zodat beide schrijfwijzen worden geaccepteerd, of voegt het verwachte formaat toe aan het label boven het veld en de foutmelding.
+
+### Datum buiten bereik zonder te melden welke datums geldig zijn
+
+Een datumveld accepteert alleen datums binnen een bepaald bereik, maar meldt niet welk bereik geldig is. De bezoeker vult een datum in die te ver in het verleden of in de toekomst ligt en krijgt alleen "Datum buiten bereik". Vermeld de grenzen zodat de bezoeker direct de juiste datum kan kiezen.
+
+**Hoe te testen:** vul een datum in die buiten het geldige bereik valt. Vermeldt de foutmelding het geldige bereik?
+
+<Guideline appearance="dont" title="Geen vermelding van het geldige bereik.">
+  ```html
+  <label for="afspraak">Datum afspraak</label>
+  <input type="date" id="afspraak" aria-describedby="afspraak-fout" aria-invalid="true" />
+  <p id="afspraak-fout" class="fout">
+    Datum buiten bereik
+  </p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Foutmelding met het geldige bereik.">
+  ```html
+  <label for="afspraak">Datum afspraak</label>
+  <input type="date" id="afspraak" aria-describedby="afspraak-fout" aria-invalid="true" />
+  <p id="afspraak-fout" class="fout">
+    Kies een datum tussen 1 april 2026 en 30 juni 2026
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt de grenzen van het geldige bereik toe aan de foutmelding.
+
+### Verplicht veld met alleen de melding "Dit veld is verplicht"
+
+"Dit veld is verplicht" beschrijft een regel, geen oplossing. De bezoeker weet dat er iets moet worden ingevuld, maar niet wat. Bij een naamveld is "Vul je voor- en achternaam in" direct bruikbaar. Bij een selectie is "Kies een bezorgmethode" concreter dan "Dit veld is verplicht".
+
+**Hoe te testen:** laat een verplicht veld leeg en verstuur het formulier. Beschrijft de foutmelding wat je moet invullen, of zegt het alleen dat het veld verplicht is?
+
+<Guideline appearance="dont" title="Generieke melding die alleen de regel herhaalt.">
+  ```html
+  <label for="naam">Naam</label>
+  <input type="text" id="naam" aria-describedby="naam-fout" aria-invalid="true" />
+  <p id="naam-fout" class="fout">
+    Dit veld is verplicht
+  </p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Specifieke melding die beschrijft wat er wordt verwacht.">
+  ```html
+  <label for="naam">Naam</label>
+  <input type="text" id="naam" aria-describedby="naam-fout" aria-invalid="true" />
+  <p id="naam-fout" class="fout">
+    Vul je voor- en achternaam in
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer of contentbeheerder schrijft per veld een specifieke foutmelding die beschrijft wat er verwacht wordt.
+
+### Wachtwoord voldoet niet aan de eisen maar de melding zegt niet welke eis niet is gehaald
+
+Een wachtwoordveld heeft meerdere eisen: minimale lengte, een hoofdletter, een cijfer. De foutmelding zegt alleen "Wachtwoord voldoet niet aan de eisen" zonder te specificeren welke eis niet is gehaald. De bezoeker moet alle eisen opnieuw doorlopen.
+
+**Hoe te testen:** vul een wachtwoord in dat aan sommige eisen voldoet maar niet aan alle. Specificeert de foutmelding welke eis niet is gehaald?
+
+<Guideline appearance="dont" title="Generieke melding zonder specifieke eisen.">
+  ```html
+  <label for="wachtwoord">Wachtwoord</label>
+  <input type="password" id="wachtwoord" aria-describedby="ww-fout" aria-invalid="true" />
+  <p id="ww-fout" class="fout">
+    Wachtwoord voldoet niet aan de eisen
+  </p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Specifieke melding per eis die niet is gehaald.">
+  ```html
+  <label for="wachtwoord">Wachtwoord</label>
+  <input type="password" id="wachtwoord" aria-describedby="ww-fout" aria-invalid="true" />
+  <ul id="ww-fout" class="fout">
+    <li>Minimaal 8 tekens (je hebt er nu 5)</li>
+    <li>Minimaal één cijfer</li>
+  </ul>
+  ```
+</Guideline>
+
+Noem in de foutmelding niet welke tekens wél correct zijn — dat onthult informatie over het wachtwoord.
+
+**Wie kan dit oplossen:** een developer splitst de validatie op in afzonderlijke controles en toont per eis of die is gehaald.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Vul een formulier in met waarden in een verkeerd formaat (datum, telefoonnummer, postcode). Biedt de foutmelding het verwachte formaat en een voorbeeld?
+2. Typ een waarde met een kleine typefout in een zoekveld of keuzelijst. Biedt het formulier een alternatief aan?
+3. Vul een datum in buiten het geldige bereik. Vermeldt de foutmelding welke datums geldig zijn?
+4. Controleer wachtwoordvelden. Geeft de foutmelding aan welke specifieke eis niet is gehaald?
+
+### Voor developers
+
+1. Controleer elke foutmelding in het formulier. Bevat de melding een suggestie of voorbeeld als het verwachte formaat of de geldige opties bekend zijn?
+2. Test met een screenreader. Worden suggesties voorgelezen samen met de foutmelding? Zijn klikbare suggesties bereikbaar met het toetsenbord?
+3. Controleer dat suggesties bij wachtwoordvelden geen informatie onthullen die de beveiliging ondermijnt.
+4. Gebruik <span lang="en">axe DevTools</span> voor een eerste scan. Foutsuggesties zijn niet automatisch te herkennen — dit vereist handmatig testen.
+
+## Gerelateerde succescriteria
+
+- [3.3.1 Foutidentificatie](https://nldesignsystem.nl/wcag/3.3.1/): het formulier meldt welk veld fout is en wat er mis is. Foutsuggestie bouwt hierop voort door ook een oplossing aan te bieden.
+- [3.3.2 Labels of instructies](https://nldesignsystem.nl/wcag/3.3.2/): duidelijke labels en instructies bij invoervelden voorkomen fouten voordat ze ontstaan. Lees hier meer als je het verwachte formaat al bij het label wilt tonen.
+- [3.3.4 Foutpreventie](https://nldesignsystem.nl/wcag/3.3.4/): bij juridische of financiële transacties kan de bezoeker invoer controleren en corrigeren voordat deze definitief wordt verzonden.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 3.3.3 Foutsuggestie](https://www.w3.org/Translations/WCAG22-nl/#foutsuggestie) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 3.3.3: Error Suggestion](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Accessible form validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/) — uitgebreide gids van Smashing Magazine over toegankelijke formuliervalidatie, inclusief patronen voor foutsuggesties (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -58,16 +251,6 @@ Overige bronnen:
 - [Onderzoek online meldingen](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen).
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-Controleer de foutmeldingen in het formulier:
-
-- De foutmeldingen staan zichtbaar, in tekst, boven het formulierveld.
-- De foutmeldingen helpen de gebruiker het veld in te vullen. Ze bevatten informatie over wat het probleem is en hoe dit op te lossen.
-- Alleen de tekst "Dit is een verplicht veld" is onvoldoende informatie.
-
-Meer informatie en voorbeelden staan op [Foutmeldingen in een formulier](https://nldesignsystem.nl/richtlijnen/formulieren/foutmeldingen).
 
 ## W3C referenties
 
