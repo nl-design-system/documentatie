@@ -8,16 +8,26 @@ description: Je kunt updates met belangrijke informatie met de gebruiker delen v
 slug: 4.1.3
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - robuust
   - compatibel
   - robust
   - compatible
   - status messages
+  - statusbericht
+  - aria-live
+  - role alert
+  - role status
+  - screenreader
+  - formulier
+  - winkelwagen
+  - notificatie
+  - WCAG 4.1.3
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
-
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -30,24 +40,481 @@ import Summary from "./summaries/_4.1.3-summary.md";
   {"WCAG-succescriterium 4.1.3 Statusberichten"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-## Bronnen
+Dat werkt alleen als het bericht in de code is gemarkeerd als live region. Een live region is een HTML-element met `role="status"`, `role="alert"` of `aria-live` dat de screenreader in de gaten houdt. Zodra de tekst in dat element verandert, leest de screenreader het voor. Zonder die markering verschijnt het bericht wel op het scherm, maar merkt een screenreader er niets van.
 
-Op [<span lang="en">Understanding SC 4.1.3: Status Messages</span>](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html) staat goed beschreven wanneer dit succescriterium van toepassing is. Deze pagina bevat ook een aantal links naar wanneer en hoe ARIA-roles hiervoor te gebruiken. Zoals `role="status"`, `role="log"` en `aria-live`.
+Er zijn twee urgentieniveaus. `role="status"` (of `aria-live="polite"`) wacht tot de screenreader klaar is met de huidige spraak. `role="alert"` (of `aria-live="assertive"`) onderbreekt de huidige spraak en leest het bericht direct voor.
+
+## Veelgemaakte fouten
+
+### Bevestigingsmelding na het verzenden van een formulier wordt niet voorgelezen
+
+Een bezoeker verstuurt een formulier en er verschijnt een bevestiging op de pagina. De pagina wordt niet herladen — de melding verschijnt dynamisch. Een screenreader leest de bevestiging automatisch voor zodat de bezoeker weet dat het verzenden is gelukt. Zonder `role="status"` op het element negeert de screenreader het bericht.
+
+**Hoe te testen:** verstuur een formulier en luister met een screenreader. Wordt de bevestiging voorgelezen zonder dat je er zelf naartoe gaat?
+
+<Guideline appearance="dont" title="Bevestigingsmelding zonder ARIA-markering">
+  ```html
+  <p class="bevestiging">Je bericht is verstuurd</p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Bevestigingsmelding met role=status">
+  ```html
+  <p class="bevestiging" role="status">
+    Je bericht is verstuurd
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `role="status"` toe aan het element dat de bevestiging bevat.
+
+### Urgente waarschuwing wordt niet direct voorgelezen
+
+Een sessie verloopt over twee minuten. Een betaling is mislukt. Een formulier bevat fouten. Dit zijn meldingen die de bezoeker direct moet horen, ook als de screenreader op dat moment iets anders voorleest. `role="alert"` onderbreekt de huidige spraak. Zonder die markering mist de bezoeker de waarschuwing.
+
+**Hoe te testen:** veroorzaak een urgente melding. Onderbreekt de screenreader de huidige spraak om het bericht voor te lezen?
+
+<Guideline appearance="dont" title="Urgente melding zonder ARIA-markering">
+  ```html
+  <p class="waarschuwing">Je sessie verloopt over 2 minuten</p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Urgente melding met role=alert">
+  ```html
+  <p class="waarschuwing" role="alert">
+    Je sessie verloopt over 2 minuten
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `role="alert"` toe aan urgente meldingen.
+
+### QR-code verloopt zonder melding
+
+Een betaal- of inlogpagina toont een QR-code die na een paar minuten verloopt. Visueel verschijnt er een nieuwe QR-code of een melding dat de vorige is verlopen. Zonder statusbericht merkt een screenreadergebruiker niets: die scant een verlopen code en krijgt een fout die niet te verklaren is.
+
+**Hoe te testen:** wacht tot een QR-code verloopt. Leest een screenreader voor dat de code is verlopen en dat er een nieuwe beschikbaar is?
+
+<Guideline appearance="dont" title="QR-code verloopt zonder melding">
+    ```javascript
+    function vernieuwQRCode() {
+      document.getElementById("qr-code").src = genereerNieuweQR();
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Melding bij verlopen QR-code met een directe link als alternatief">
+    ```html
+    <p id="qr-status" role="alert"></p>
+    <img id="qr-code" src="qr.png" alt="QR-code om in te loggen" />
+    <a href="https://example.com/login" id="qr-link">
+      Of open de inlogpagina direct in je browser
+    </a>
+    ```
+    ```javascript
+    function vernieuwQRCode() {
+      document.getElementById("qr-code").src = genereerNieuweQR();
+      document.getElementById("qr-link").href = genereerNieuweLink();
+      document.getElementById("qr-status").textContent =
+        "De QR-code is verlopen. Er is een nieuwe QR-code gegenereerd.";
+    }
+    ```
+</Guideline>
+
+Gebruik hier `role="alert"` — de bezoeker moet direct weten dat de code is veranderd.
+
+**Wie kan dit oplossen:** een developer voegt een live region toe die meldt wanneer de QR-code verloopt en wordt vernieuwd.
+
+### Nieuwe berichten in een livechat worden niet voorgelezen
+
+Een bezoeker gebruikt een livechat met klantenservice. De medewerker stuurt een antwoord. Het bericht verschijnt in het chatvenster, maar een screenreader meldt niets. De bezoeker wacht op een antwoord dat er al staat.
+
+**Hoe te testen:** open een livechat en laat iemand anders een bericht sturen. Leest een screenreader het nieuwe bericht voor?
+
+<Guideline appearance="dont" title="Nieuw chatbericht zonder live region">
+    ```javascript
+    function ontvangBericht(bericht) {
+      const el = document.createElement("div");
+      el.className = "chat-bericht";
+      el.textContent = bericht.tekst;
+      chatContainer.appendChild(el);
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Chatcontainer als live region zodat nieuwe berichten worden voorgelezen">
+    ```html
+    <div id="chat-berichten" role="log" aria-live="polite" aria-label="Chatberichten">
+    </div>
+    ```
+    ```javascript
+    function ontvangBericht(bericht) {
+      const el = document.createElement("div");
+      el.className = "chat-bericht";
+      el.textContent = bericht.afzender + ": " + bericht.tekst;
+      document.getElementById("chat-berichten").appendChild(el);
+    }
+    ```
+</Guideline>
+
+`role="log"` geeft aan dat het om een chronologische reeks berichten gaat. In combinatie met `aria-live="polite"` leest een screenreader elk nieuw bericht voor zodra de huidige spraak is afgelopen.
+
+**Wie kan dit oplossen:** een developer voegt `role="log"` en `aria-live="polite"` toe aan de chatcontainer.
+
+### Update van de winkelwagen wordt niet voorgelezen
+
+Een bezoeker klikt op "Toevoegen aan winkelwagen". Het aantal in het winkelwagenicoontje verandert van 2 naar 3. Visueel ziet de bezoeker de wijziging. Een screenreader meldt niets — de bezoeker weet niet of de actie is gelukt.
+
+**Hoe te testen:** voeg een product toe aan de winkelwagen. Leest een screenreader een bevestiging voor?
+
+<Guideline appearance="dont" title="Winkelwagen-update zonder statusbericht">
+    ```javascript
+    function voegToeAanWinkelwagen(product) {
+      winkelwagen.push(product);
+      document.querySelector(".wagen-aantal").textContent = winkelwagen.length;
+      document.querySelector(".melding").textContent = "Product toegevoegd";
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Winkelwagen-update met een live region">
+    ```html
+    <p class="melding" role="status" aria-live="polite"></p>
+    ```
+    ```javascript
+    function voegToeAanWinkelwagen(product) {
+      winkelwagen.push(product);
+      document.querySelector(".wagen-aantal").textContent = winkelwagen.length;
+      document.querySelector(".melding").textContent =
+        product.naam + " is toegevoegd aan je winkelwagen";
+    }
+    ```
+</Guideline>
+
+Het element met `role="status"` staat al in de HTML voordat het bericht wordt ingevuld. Screenreaders registreren de live region bij het laden van de pagina en luisteren naar wijzigingen.
+
+**Wie kan dit oplossen:** een developer voegt een live region toe en vult die bij elke winkelwagenactie met een beschrijvend bericht.
+
+### Melding over het aantal zoekresultaten wordt niet voorgelezen
+
+Een bezoeker typt in een zoekveld en de resultaten verschijnen direct op de pagina. Er staat een tekst "12 resultaten gevonden" die een screenreader niet voorleest. De bezoeker weet niet dat er resultaten zijn verschenen, laat staan hoeveel.
+
+**Hoe te testen:** gebruik een zoekveld dat resultaten toont zonder de pagina te herladen. Leest een screenreader het aantal resultaten voor?
+
+<Guideline appearance="dont" title="Zoekresultaten zonder statusbericht">
+    ```javascript
+    function toonResultaten(resultaten) {
+      container.innerHTML = resultaten.map(r => `<li>${r.titel}</li>`).join("");
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Zoekresultaten met een statusbericht over het aantal">
+    ```html
+    <p id="zoek-status" role="status" aria-live="polite"></p>
+    <ul id="resultaten"></ul>
+    ```
+    ```javascript
+    function toonResultaten(resultaten) {
+      container.innerHTML = resultaten.map(r => `<li>${r.titel}</li>`).join("");
+      document.getElementById("zoek-status").textContent =
+        resultaten.length + " resultaten gevonden";
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een live region toe die het aantal resultaten meldt.
+
+### Filterresultaten in een webshop worden niet gemeld
+
+Een bezoeker selecteert een filter — "Maat M" of "Kleur: blauw" — en de productlijst wordt bijgewerkt. Er verschijnt een bericht: "X resultaten voldoen aan je criteria". Een screenreader leest dit bericht niet voor. De bezoeker weet niet of het filter heeft gewerkt en hoeveel producten er over zijn.
+
+**Hoe te testen:** selecteer een filter en luister met een screenreader. Wordt het aantal overgebleven producten voorgelezen?
+
+<Guideline appearance="dont" title="Filterresultaten bijwerken zonder statusbericht">
+    ```javascript
+    function pasFilterToe(filter) {
+      const resultaten = producten.filter(p => p.kleur === filter);
+      toonProducten(resultaten);
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Filterresultaten met een statusbericht">
+    ```html
+    <p id="filter-status" role="status" aria-live="polite"></p>
+    <ul id="producten"></ul>
+    ```
+    ```javascript
+    function pasFilterToe(filter) {
+      const resultaten = producten.filter(p => p.kleur === filter);
+      toonProducten(resultaten);
+      document.getElementById("filter-status").textContent =
+        resultaten.length + " producten gevonden";
+    }
+    ```
+</Guideline>
+
+Bij meerdere filters tegelijk vermeld je de actieve filters in het statusbericht, bijvoorbeeld "8 producten gevonden voor Maat M en Kleur: blauw".
+
+**Wie kan dit oplossen:** een developer voegt een live region toe die het aantal resultaten meldt bij elke filterwijziging.
+
+### Laadstatus is alleen een draaiend icoon
+
+Een bezoeker klikt op een knop en er verschijnt een draaiend icoontje. Visueel begrijpt de bezoeker dat er iets wordt geladen. Een screenreader meldt niets — de bezoeker weet niet of de actie is gestart, of er iets wordt geladen of dat er iets is misgegaan. Hetzelfde geldt voor een tekst "Aan het laden..." die niet als statusbericht is gemarkeerd.
+
+**Hoe te testen:** klik op een knop die content laadt en luister met een screenreader. Wordt de laadstatus voorgelezen? Wordt het einde van het laden gemeld?
+
+<Guideline appearance="dont" title="Laadanimatie zonder statusbericht">
+    ```html
+    <button onclick="laadData()">Zoek beschikbaarheid</button>
+    <div class="spinner" style="display: none;">
+      <svg class="draaiend-icoon"><!-- animatie --></svg>
+    </div>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Laadstatus met een live region die begin en einde meldt">
+    ```html
+    <button onclick="laadData()">Zoek beschikbaarheid</button>
+    <div class="spinner" style="display: none;" aria-hidden="true">
+      <svg class="draaiend-icoon"><!-- animatie --></svg>
+    </div>
+    <p id="laad-status" role="status" aria-live="polite"></p>
+    ```
+    ```javascript
+    function laadData() {
+      document.querySelector(".spinner").style.display = "block";
+      document.getElementById("laad-status").textContent = "Beschikbaarheid wordt geladen";
+
+      fetch("/api/beschikbaarheid")
+        .then(response => response.json())
+        .then(data => {
+          document.querySelector(".spinner").style.display = "none";
+          toonResultaten(data);
+          document.getElementById("laad-status").textContent = "Beschikbaarheid geladen";
+        });
+    }
+    ```
+
+</Guideline>
+
+Het draaiende icoon krijgt `aria-hidden="true"` — het is puur visueel. De live region meldt zowel het begin als het einde van het laden.
+
+**Wie kan dit oplossen:** een developer voegt een live region toe die de laadstatus in tekst meldt en verbergt het visuele icoon voor screenreaders.
+
+### Voortgangsindicator is alleen visueel
+
+Een bezoeker uploadt een bestand en een voortgangsbalk vult zich. Visueel is duidelijk hoever het proces is. Een screenreader meldt niets — de bezoeker weet niet of de upload loopt, hoever die is of wanneer die klaar is.
+
+**Hoe te testen:** start een upload of een ander proces met een voortgangsbalk. Meldt een screenreader de voortgang?
+
+<Guideline appearance="dont" title="Voortgangsbalk die alleen visueel is">
+  ```html
+  <div class="voortgang">
+    <div class="balk" style="width: 60%"></div>
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Voortgangsbalk met een progressbar-rol en een statusbericht">
+  ```html
+  <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Bestand uploaden">
+    <div class="balk" style="width: 60%"></div>
+  </div>
+  <p role="status" aria-live="polite">
+    60% geüpload
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `role="progressbar"` toe met de juiste ARIA-attributen en een live region die de voortgang in tekst meldt.
+
+### Tekenteller leest bij elke toetsaanslag het resterende aantal voor
+
+Een tekstvak heeft een maximumaantal tekens. Onder het veld staat een teller: "147 van 150 tekens". Die teller staat in een live region en wordt bij elke toetsaanslag voorgelezen. Bij elk karakter dat de bezoeker typt, onderbreekt de screenreader: "146 van 150 tekens", "145 van 150 tekens", "144 van 150 tekens". Typen wordt onmogelijk.
+
+Een live region die te vaak wordt bijgewerkt is net zo problematisch als een ontbrekende live region. Meld de teller alleen wanneer de bezoeker de limiet nadert.
+
+**Hoe te testen:** typ in een tekstvak met een tekenteller en luister met een screenreader. Wordt het aantal bij elke toetsaanslag voorgelezen?
+
+<Guideline appearance="dont" title="Tekenteller als live region die bij elke toetsaanslag wordt bijgewerkt">
+    ```html
+    <textarea id="bericht" maxlength="150"></textarea>
+    <p id="teller" role="status" aria-live="polite">0 van 150 tekens</p>
+    ```
+    ```javascript
+    bericht.addEventListener("input", function () {
+      document.getElementById("teller").textContent =
+        this.value.length + " van 150 tekens";
+    });
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Tekenteller die alleen meldt wanneer de limiet nadert">
+    ```html
+    <textarea id="bericht" maxlength="150" aria-describedby="teller"></textarea>
+    <p id="teller">0 van 150 tekens</p>
+    <p id="teller-waarschuwing" role="status" aria-live="polite"></p>
+    ```
+    ```javascript
+    bericht.addEventListener("input", function () {
+      const resterend = 150 - this.value.length;
+      document.getElementById("teller").textContent =
+        this.value.length + " van 150 tekens";
+
+      if (resterend === 20) {
+        document.getElementById("teller-waarschuwing").textContent =
+          "Nog 20 tekens over";
+      } else if (resterend === 0) {
+        document.getElementById("teller-waarschuwing").textContent =
+          "Tekenlimiet bereikt";
+      }
+    });
+    ```
+
+</Guideline>
+
+De teller zelf is gekoppeld aan het tekstvak via `aria-describedby` — een screenreader leest het aantal voor wanneer het veld focus krijgt. De aparte live region meldt alleen de drempelwaarden.
+
+**Wie kan dit oplossen:** een developer verplaatst de live region naar een apart element dat alleen bij drempelwaarden wordt gevuld.
+
+### Resultaat van een CAPTCHA wordt niet gemeld
+
+Een bezoeker voltooit een CAPTCHA. Visueel verschijnt een groen vinkje of de tekst "Verificatie geslaagd". Een screenreader meldt niets — de bezoeker weet niet of de CAPTCHA is gelukt en of het formulier nu verstuurd kan worden. Bij een mislukte poging weet de bezoeker niet dat er een nieuwe CAPTCHA nodig is.
+
+**Hoe te testen:** voltooi een CAPTCHA en luister met een screenreader. Wordt het resultaat voorgelezen? Probeer ook een fout antwoord.
+
+<Guideline appearance="dont" title="CAPTCHA-resultaat zonder statusbericht">
+  ```html
+  <div class="captcha-resultaat">
+    <span class="vinkje">&#10003;</span> Verificatie geslaagd
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="CAPTCHA-resultaat als statusbericht">
+  ```html
+  <div class="captcha-resultaat" role="status">
+    <span class="vinkje" aria-hidden="true">
+      &#10003;
+    </span>{" "}
+    Verificatie geslaagd
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Mislukte CAPTCHA als urgente melding">
+  ```html
+  <div class="captcha-resultaat" role="alert">
+    Verificatie mislukt. Los de nieuwe CAPTCHA op om door te gaan.
+  </div>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `role="status"` toe aan een geslaagde verificatie en `role="alert"` aan een mislukte poging.
+
+### Toast-notificatie verdwijnt voordat een screenreader het heeft voorgelezen
+
+Een toast-notificatie verschijnt kort in beeld en verdwijnt na een paar seconden. De focus verplaatst niet naar het bericht. Zonder `role="status"` leest een screenreader het bericht niet voor. Met `role="status"` maar een te korte zichtbaarheidsduur verdwijnt het bericht voordat de screenreader het heeft voorgelezen.
+
+**Hoe te testen:** veroorzaak een toast-notificatie. Leest een screenreader het bericht voor voordat het verdwijnt?
+
+<Guideline appearance="dont" title="Toast die na 2 seconden verdwijnt zonder ARIA-markering">
+    ```javascript
+    function toonToast(melding) {
+      const toast = document.createElement("div");
+      toast.className = "toast";
+      toast.textContent = melding;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 2000);
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Toast met role=status en voldoende tijd">
+    ```javascript
+    function toonToast(melding) {
+      const toast = document.createElement("div");
+      toast.className = "toast";
+      toast.setAttribute("role", "status");
+      toast.textContent = melding;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 8000);
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `role="status"` toe en verlengt de zichtbaarheidsduur.
+
+### Live region wordt toegevoegd en gevuld tegelijkertijd
+
+Een live region wordt dynamisch aan de pagina toegevoegd en direct gevuld met tekst. Screenreaders registreren de live region pas nadat het element in de DOM staat. Als het element en de tekst tegelijk verschijnen, mist de screenreader het bericht.
+
+Het element met `role="status"` of `aria-live` staat al in de HTML bij het laden van de pagina. De tekst wordt later ingevuld via JavaScript.
+
+**Hoe te testen:** controleer in de DevTools of het element met `role="status"` of `aria-live` al in de HTML staat voordat het bericht verschijnt.
+
+<Guideline appearance="dont" title="Live region en tekst worden tegelijk toegevoegd">
+    ```javascript
+    function toonMelding(tekst) {
+      const melding = document.createElement("p");
+      melding.setAttribute("role", "status");
+      melding.textContent = tekst;
+      document.body.appendChild(melding);
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Live region staat al in de HTML, tekst wordt later ingevuld">
+    ```html
+    <!-- Element staat al in de HTML bij het laden van de pagina -->
+    <p id="melding" role="status"></p>
+    ```
+    ```javascript
+    function toonMelding(tekst) {
+      document.getElementById("melding").textContent = tekst;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst het live region-element in het HTML-template en vult het dynamisch met JavaScript.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Voer acties uit die een melding opleveren: verstuur een formulier, voeg een product toe aan de winkelwagen, zoek, upload een bestand. Verschijnt er een zichtbare bevestiging?
+2. Test met een screenreader. Worden de meldingen automatisch voorgelezen zonder dat je er zelf naartoe gaat?
+
+### Voor developers
+
+1. Zoek in de HTML naar elementen die dynamisch verschijnen na een gebruikersactie. Controleer of ze een `role="status"`, `role="alert"` of `aria-live`-attribuut hebben.
+2. Controleer of live regions al in de HTML staan bij het laden van de pagina en niet tegelijk met de tekst worden toegevoegd.
+3. Controleer het urgentieniveau: `role="status"` voor niet-urgente berichten (bevestigingen, zoekresultaten, voortgang), `role="alert"` voor urgente meldingen (fouten, verlopen sessies, mislukte acties).
+4. Test toast-notificaties met een screenreader. Worden ze voorgelezen voordat ze verdwijnen?
+5. Controleer voortgangsindicatoren. Hebben ze `role="progressbar"` met de juiste ARIA-attributen?
+6. Controleer tekentellers en andere elementen die frequent worden bijgewerkt. Wordt de live region niet te vaak geactiveerd?
+7. Gebruik <span lang="en">axe DevTools</span> voor een eerste scan. De meeste statusberichtproblemen zijn niet automatisch te herkennen en vereisen handmatig testen met een screenreader.
+
+## Gerelateerde succescriteria
+
+- [3.3.1 Foutidentificatie](https://nldesignsystem.nl/wcag/3.3.1/): foutmeldingen bij formuliervelden die de focus krijgen, vallen onder foutidentificatie. Statusberichten zijn meldingen die verschijnen zonder dat de focus verplaatst.
+- [4.1.2 Naam, rol, waarde](https://nldesignsystem.nl/wcag/4.1.2/): interactieve elementen hebben een toegankelijke naam en rol nodig. Relevant als een voortgangsbalk of notificatie een eigen widget is.
+- [2.2.1 Timing aanpasbaar](https://nldesignsystem.nl/wcag/2.2.1/): als een statusbericht automatisch verdwijnt, heeft de bezoeker voldoende tijd om het te lezen. Lees hier meer als je werkt met toasts of andere meldingen met een tijdslimiet.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 4.1.3 Statusberichten](https://www.w3.org/Translations/WCAG22-nl/#statusberichten) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 4.1.3: Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [ARIA live regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) — MDN-documentatie over `aria-live`, `role="status"`, `role="alert"` en `role="log"` met voorbeelden (Engels).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-Test elk statusbericht dat dynamisch aan de content wordt toegevoegd en geen toetsenbordfocus krijgt.
-Wordt de tekst van de melding goed voorgelezen door een [screenreader](/woordenlijst/#screenreader)?
-
-**Let op**: dit geldt alleen voor statusberichten die worden getoond zonder dat de pagina opnieuw geladen wordt.
 
 ## W3C referenties
 
