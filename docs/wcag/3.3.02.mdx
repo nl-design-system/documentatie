@@ -4,11 +4,11 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.3.2 Labels of instructies
 pagination_label: WCAG-succescriterium 3.3.2 Labels of instructies
-description: Geef invoervelden een label of uitleg.
+description: Formuliervelden hebben een permanent zichtbaar label en, waar nodig, instructies die uitleggen wat er wordt verwacht.
 slug: 3.3.2
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - begrijpelijk
   - assistentie bij invoer
   - invoer
@@ -16,84 +16,407 @@ keywords:
   - understandable
   - input assistance
   - labels or instructions
+  - labels
+  - instructies
+  - formulier
+  - invoerveld
+  - placeholder
+  - label-element
+  - screenreader
+  - WCAG 3.3.2
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
-
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
-import Summary from "./summaries/_3.3.2-summary.md";
+import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
+import Disclaimer from "./\_wcag-disclaimer.md";
+import WCAGFooterInfo from "./\_wcag_footer_info.md";
+import Summary from "./summaries/\_3.3.2-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
   {"WCAG-succescriterium 3.3.2 Labels of instructies"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Gebruikers weten wat ze in moeten voeren.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Geef een label of uitleg bij invoer.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Iedereen, vooral mensen met cognitieve beperkingen, weet waar men aan toe is.</dd>
-  </div>
-</dl>
-
-## Uitleg
-
 <Summary />
 
-Als er ergens invoer nodig is, is het voor iedereen prettig om te weten wat er verwacht wordt. Labels en uitleg helpen daarbij. Een label betekent in deze context dat er iets zichtbaar is, zoals tekst of een icoon, waardoor je als bezoeker weet wat het doel is. Denk aan:
+Bijvoorbeeld: "Voornaam", "E-mailadres", "Postcode". Waar het invoerformaat niet vanzelfsprekend is, staat er een instructie bij: "Gebruik het formaat dd-mm-jjjj" of "Minimaal 8 tekens". Zo weet de bezoeker wat er moet worden ingevuld voordat er een fout ontstaat.
 
-- Voornaam
-- Plaatsnaam
-- Wachtwoord
-- Telefoonnummer
-- Een vergrootglas-icoon bij een zoekfunctie
-
-Het label moet voor iedereen duidelijk genoeg zijn.
-
-Een uitleg (een instructie) vertelt meer over wat er verwacht wordt van de invoer, zoals de manier van spellen of schrijven. Denk aan:
-
-- een nieuw wachtwoord dat lang genoeg moet zijn
-- wel of geen spatie tussen de letters en cijfers van een postcode
-- de manier waarop een datum geschreven moet worden
-
-Als de invoer aan bepaalde eisen moet voldoen, is het een goed idee om een uitleg toe te voegen.
-
-## Gerelateerde NL Design System-richtlijnen
-
-Dit succescriterium past bij bijna alle richtlijnen rond formulieren.
-
-- [Richtlijnen voor formulieren](https://nldesignsystem.nl/richtlijnen/formulieren)
-- Formulieren: [Richtlijnen voor labels in een formulier](https://nldesignsystem.nl/richtlijnen/formulieren/labels/)
-
-## Hoe te testen
-
-- Zoek de invoervelden en formulieren.
-- Controleer van elk veld of er een beschrijvend label of behulpzame uitleg bij is.
-
-## Tips
-
-- Het behalen van dit criterium kan onder andere ook helpen bij [2.4.6 Koppen en labels](/wcag/2.4.6) en [4.1.2 Naam, rol, waarde](/wcag/4.1.2).
-- Zorg voor zowel labels als uitleg om fouten te voorkomen.
-- Als een nieuw wachtwoord aan bepaalde eisen moet voldoen, maak die dan meteen zichtbaar.
+Labels zijn zichtbaar en blijven zichtbaar terwijl de bezoeker het veld invult. Zodra het veld focus krijgt, leest een screenreader het label voor — of de alt-tekst als een icoon als label dient. Instructies staan bij het veld en niet alleen in een inleidende tekst bovenaan het formulier.
 
 ## Veelgemaakte fouten
 
-### Fout: Labels en/of uitleg zijn niet verbonden aan de invoer.
+### Invoerveld heeft geen zichtbaar label
 
-Voor [1.3.1 Info en relaties](/wcag/1.3.1) is het belangrijk dat labels en uitleg niet alleen aanwezig zijn, maar ook in de code aan elkaar verbonden zijn. De relatie die je ziet moet ook in de code aanwezig zijn. Dit kan met het `<label>`-element, maar ook met `aria-labelledby`. Foutmeldingen kun je ook koppelen aan het invoerveld. Dit kan met `aria-describedby`.
+Elk invoerveld heeft een zichtbaar label dat beschrijft wat er moet worden ingevuld. Een veld zonder label dwingt de bezoeker om uit de context te raden wat er wordt verwacht. Een screenreader leest alleen "invoerveld" voor zonder verdere informatie.
+
+**Hoe te testen:** bekijk het formulier. Heeft elk veld een zichtbaar label? Klik op het label.
+
+<Guideline appearance="dont" title="Invoerveld zonder zichtbaar label">
+  <Canvas language="html">
+    {() => (
+      <p>
+        <input type="email" placeholder="E-mailadres" />
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Invoerveld met een zichtbaar en gekoppeld label">
+  <Canvas language="html">
+    {() => (
+      <p>
+        <label htmlFor="vis-email">E-mailadres</label>
+        <br />
+        <input type="email" id="vis-email" />
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een `<label>`-element toe dat via `for` en `id` is gekoppeld aan het invoerveld.
+
+### Label is alleen beschikbaar voor screenreaders
+
+Een invoerveld heeft een `aria-label` of een visueel verborgen `<label>`, maar geen zichtbaar label op het scherm. Een screenreader leest het label voor, maar een ziende bezoeker ziet niet wat er in het veld moet worden ingevuld. Dit succescriterium vereist dat labels zichtbaar zijn voor iedereen, niet alleen voor hulpsoftware.
+
+**Hoe te testen:** bekijk het formulier zonder hulpsoftware. Heeft elk veld een zichtbaar label? Inspecteer de velden in de DevTools: staat het label in een `aria-label` of in een element met `class="sr-only"` of vergelijkbare visueel verborgen CSS?
+
+<Guideline appearance="dont" title="Label alleen beschikbaar via aria-label">
+  ```html
+  <input type="text" aria-label="Zoekterm" placeholder="Zoeken..." />
+  ```
+</Guideline>
+
+<Guideline appearance="dont" title="Label visueel verborgen met sr-only">
+  ```html
+  <label for="zoek" class="sr-only">
+    Zoekterm
+  </label>
+  <input type="text" id="zoek" placeholder="Zoeken..." />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Zichtbaar label voor iedereen">
+  ```html
+  <label for="zoek">Zoekterm</label>
+  <input type="text" id="zoek" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt het verborgen label door een zichtbaar label. Een designer maakt ruimte in het ontwerp voor zichtbare labels.
+
+### Zoekveld heeft alleen een icoon als label en dat icoon is niet zichtbaar voor iedereen
+
+Een zoekveld zonder tekstlabel kan acceptabel zijn als de context ondubbelzinnig is — bijvoorbeeld een vergrootglasicoon naast een zoekknop. Maar als dat icoon een contrast van minder dan 3:1 heeft met de achtergrond, is het niet zichtbaar voor bezoekers met verminderd gezichtsvermogen. Het veld heeft dan voor die bezoekers geen herkenbare aanduiding.
+
+**Hoe te testen:** meet het contrast van het vergrootglasicoon ten opzichte van de achtergrond. Is het lager dan 3:1? Dan is het icoon niet voor iedereen zichtbaar en functioneert het niet als label.
+
+<Guideline appearance="dont" title="Zoekveld met een vergrootglasicoon dat onvoldoende contrast heeft">
+  <Canvas language="html">
+    {() => (
+      <p style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+        <input type="search" aria-label="Zoeken" placeholder="Zoeken..." />
+        <button style={{ background: "none", border: "none", padding: "4px" }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#CCCCCC" aria-hidden="true">
+            <path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+          </svg>
+        </button>
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Zoekveld met een zichtbaar tekstlabel">
+  <Canvas language="html">
+    {() => (
+      <p style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+        <label htmlFor="vis-zoek">Zoeken</label>
+        <input type="search" id="vis-zoek" />
+        <button style={{ background: "none", border: "none", padding: "4px" }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#333333" aria-hidden="true">
+            <path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+          </svg>
+        </button>
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Zoekveld met een zoekknop die tekst bevat">
+  <Canvas language="html">
+    {() => (
+      <p style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+        <input type="search" aria-label="Zoeken" />
+        <button>Zoeken</button>
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een zichtbaar tekstlabel toe, of een zoekknop met zichtbare tekst. Een designer zorgt dat het icoon voldoende contrast heeft als het de enige visuele aanduiding is.
+
+### Placeholder wordt gebruikt als label
+
+Een placeholder verdwijnt zodra de bezoeker begint te typen. De bezoeker weet dan niet meer wat er in het veld moet worden ingevuld.
+Placeholders zijn niet bedoeld als vervanging van een label.
+
+**Hoe te testen:** begin met typen in een veld dat alleen een placeholder heeft. Verdwijnt de placeholder zodra je begint te typen?
+
+<Guideline appearance="dont" title="Placeholder als enige aanduiding van het veld">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>
+          <input type="text" placeholder="Voornaam" />
+        </p>
+        <p>
+          <input type="text" placeholder="Achternaam" />
+        </p>
+        <p>
+          <input type="email" placeholder="E-mailadres" />
+        </p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Zichtbaar label met een placeholder als aanvullend voorbeeld">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>
+          <label htmlFor="vis-voornaam">Voornaam</label>
+          <br />
+          <input type="text" id="vis-voornaam" placeholder="bijv. Fatima" />
+        </p>
+        <p>
+          <label htmlFor="vis-achternaam">Achternaam</label>
+          <br />
+          <input type="text" id="vis-achternaam" placeholder="bijv. De Vries" />
+        </p>
+        <p>
+          <label htmlFor="vis-email2">E-mailadres</label>
+          <br />
+          <input type="email" id="vis-email2" placeholder="bijv. naam@voorbeeld.nl" />
+        </p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt permanent zichtbare labels toe aan de velden. De placeholders kunnen blijven staan als aanvullend voorbeeld.
+
+### Verwacht invoerformaat ontbreekt
+
+Een veld verwacht een specifiek formaat, maar dat staat nergens vermeld. Een datumveld zonder instructie laat de bezoeker raden: is het dd-mm-jjjj of mm/dd/yyyy? Een telefoonnummerveld zonder instructie: met of zonder landcode? Met spaties of aaneengesloten?
+
+**Hoe te testen:** bekijk elk veld dat een specifiek formaat verwacht. Staat het verwachte formaat bij het veld, als placeholder of als instructietekst?
+
+<Guideline appearance="dont" title="Datumveld zonder formaatinstructie">
+  ```html
+  <label for="geboortedatum">Geboortedatum</label>
+  <input type="text" id="geboortedatum" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Datumveld met formaatinstructie">
+  ```html
+  <label for="geboortedatum">Geboortedatum</label>
+  <input type="text" id="geboortedatum" aria-describedby="datum-hint" placeholder="dd-mm-jjjj" />
+  <p id="datum-hint" class="hint">
+    Gebruik het formaat dd-mm-jjjj, bijvoorbeeld 15-03-1990
+  </p>
+  ```
+</Guideline>
+
+De instructie is via `aria-describedby` gekoppeld aan het veld, zodat een screenreader het voorleest wanneer het veld focus krijgt.
+
+**Wie kan dit oplossen:** een developer voegt een instructie toe bij het veld en koppelt die via `aria-describedby`.
+
+### Verplichte velden zijn niet gemarkeerd
+
+Een formulier heeft verplichte en optionele velden, maar er is geen aanduiding welke verplicht zijn. De bezoeker ontdekt het pas na het verzenden. Markeer verplichte velden met een zichtbare aanduiding en het `required`-attribuut of `aria-required="true"`.
+
+**Hoe te testen:** bekijk het formulier. Kun je voor het invullen zien welke velden verplicht zijn? Is er een legenda die het sterretje of de aanduiding "(verplicht)" verklaart?
+
+<Guideline appearance="dont" title="Verplicht veld zonder aanduiding">
+  <Canvas language="html">
+    {() => (
+      <p>
+        <label htmlFor="vis-naam1">Naam</label>
+        <br />
+        <input type="text" id="vis-naam1" />
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Verplicht veld met zichtbare aanduiding en required-attribuut">
+  <Canvas language="html">
+    {() => (
+      <p>
+        <label htmlFor="vis-naam2">
+          Naam <span aria-hidden="true">*</span>
+        </label>
+        <br />
+        <input type="text" id="vis-naam2" required />
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Verplicht veld met het woord 'verplicht' in het label">
+  <Canvas language="html">
+    {() => (
+      <p>
+        <label htmlFor="vis-naam3">Naam (verplicht)</label>
+        <br />
+        <input type="text" id="vis-naam3" required />
+      </p>
+    )}
+  </Canvas>
+</Guideline>
+
+Als de meeste velden verplicht zijn, markeer dan de optionele velden met "(optioneel)" in plaats van alle verplichte velden met een sterretje.
+
+**Wie kan dit oplossen:** een developer voegt de markering toe aan de labels en het `required`-attribuut aan de velden.
+
+### Instructie staat alleen bovenaan het formulier
+
+Een formulier begint met een blok instructietekst dat uitlegt hoe het formulier moet worden ingevuld. Verder in het formulier ontbreken instructies bij de individuele velden. Bij een lang formulier is de bezoeker de instructie vergeten tegen de tijd dat het betreffende veld in beeld komt.
+
+**Hoe te testen:** scroll door een lang formulier. Zijn de instructies beschikbaar bij de velden waar ze relevant zijn, of moet je terugscrollen naar het begin?
+
+<Guideline appearance="dont" title="Instructies alleen bovenaan het formulier">
+    ```html
+    <p>Vul alle datums in als dd-mm-jjjj. Telefoonnummers zonder spaties.</p>
+
+    <!-- Verderop in het formulier, zonder herhaling: -->
+    <label for="startdatum">Startdatum</label>
+    <input type="text" id="startdatum" />
+
+    <label for="telefoon">Telefoonnummer</label>
+    <input type="tel" id="telefoon" />
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Instructies bij de individuele velden">
+    ```html
+    <label for="startdatum">Startdatum</label>
+    <input type="text" id="startdatum" aria-describedby="startdatum-hint" />
+    <p id="startdatum-hint" class="hint">Gebruik het formaat dd-mm-jjjj</p>
+
+    <label for="telefoon">Telefoonnummer</label>
+    <input type="tel" id="telefoon" aria-describedby="telefoon-hint" />
+    <p id="telefoon-hint" class="hint">10 cijfers, zonder spaties</p>
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst de instructies bij de velden en koppelt ze via `aria-describedby`.
+
+### Groep invoervelden zonder groepslabel
+
+Een formulier heeft een sectie met adresvelden: straat, huisnummer, postcode, plaats. Visueel is duidelijk dat ze bij elkaar horen, maar in de code ontbreekt een groepslabel. Een screenreader leest de velden los van elkaar voor zonder de context van de groep.
+
+Dit komt ook voor bij betalingsformulieren (kaartnummer, vervaldatum, CVC) en bij persoonlijke gegevens (voornaam, achternaam, geboortedatum).
+
+**Hoe te testen:** ga met een screenreader door een groep gerelateerde velden. Wordt de groepsnaam voorgelezen bij elk veld?
+
+<Guideline appearance="dont" title="Adresvelden zonder groepering">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>
+          <label htmlFor="vis-straat1">Straat</label>
+          <br />
+          <input type="text" id="vis-straat1" />
+        </p>
+        <p>
+          <label htmlFor="vis-huisnummer1">Huisnummer</label>
+          <br />
+          <input type="text" id="vis-huisnummer1" />
+        </p>
+        <p>
+          <label htmlFor="vis-postcode1">Postcode</label>
+          <br />
+          <input type="text" id="vis-postcode1" />
+        </p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Adresvelden gegroepeerd met fieldset en legend">
+  <Canvas language="html">
+    {() => (
+      <fieldset>
+        <legend>Factuuradres</legend>
+        <p>
+          <label htmlFor="vis-straat2">Straat</label>
+          <br />
+          <input type="text" id="vis-straat2" />
+        </p>
+        <p>
+          <label htmlFor="vis-huisnummer2">Huisnummer</label>
+          <br />
+          <input type="text" id="vis-huisnummer2" />
+        </p>
+        <p>
+          <label htmlFor="vis-postcode2">Postcode</label>
+          <br />
+          <input type="text" id="vis-postcode2" />
+        </p>
+      </fieldset>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer groepeert de velden met `<fieldset>` en `<legend>`.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Bekijk elk invoerveld in het formulier. Heeft elk veld een zichtbaar label dat beschrijft wat er wordt verwacht?
+2. Controleer of verplichte velden zijn gemarkeerd. Weet je voor het invullen welke velden verplicht zijn?
+3. Controleer velden die een specifiek formaat verwachten. Staat het verwachte formaat bij het veld?
+4. Begin te typen in een veld. Verdwijnt het label? Zo ja, weet je nog wat er wordt verwacht?
+
+### Voor developers
+
+1. Inspecteer elk invoerveld in de DevTools. Heeft elk veld een gekoppeld `<label>` via `for` en `id`? Zoek naar `<input>`, `<select>` en `<textarea>` zonder gekoppeld label.
+2. Controleer of instructies via `aria-describedby` zijn gekoppeld aan het bijbehorende veld. Navigeer met een screenreader naar het veld en controleer of de instructie wordt voorgelezen.
+3. Controleer of verplichte velden het `required`-attribuut of `aria-required="true"` hebben.
+4. Controleer groepen gerelateerde velden. Zijn ze gegroepeerd met `<fieldset>` en `<legend>`?
+5. Test labels die in het veld zweven (<span lang="en">floating labels</span>) bij 200% en 400% zoom. Blijven ze zichtbaar en leesbaar?
+6. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">WAVE</span> voor een eerste scan. Ontbrekende labels worden automatisch herkend. Of de labels inhoudelijk duidelijk zijn, controleer je handmatig.
+
+## Gerelateerde succescriteria
+
+- [1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1/): labels zijn programmatisch gekoppeld aan hun invoerveld. Lees hier meer als de koppeling tussen label en veld ontbreekt in de code.
+- [3.3.1 Foutidentificatie](https://nldesignsystem.nl/wcag/3.3.1/): duidelijke labels en instructies voorkomen fouten. Als er toch fouten ontstaan, beschrijft de foutmelding wat er mis is.
+- [3.3.3 Foutsuggestie](https://nldesignsystem.nl/wcag/3.3.3/): als het systeem weet hoe een fout gecorrigeerd kan worden, biedt het een suggestie aan. Instructies bij het veld verminderen de noodzaak voor suggesties achteraf.
+- [2.5.3 Label in naam](https://nldesignsystem.nl/wcag/2.5.3/): de zichtbare tekst van een label komt overeen met de toegankelijke naam. Relevant als je `aria-label` gebruikt dat afwijkt van het zichtbare label.
+- [1.4.3 Contrast (minimum)](https://nldesignsystem.nl/wcag/1.4.3/): labels en instructietekst voldoen aan de minimale contrasteis van 4,5:1. Lichtgrijze placeholders halen die eis niet.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren: [Labels](/richtlijnen/formulieren/labels).
+- Formulieren: [Descriptions](/richtlijnen/formulieren/descriptions).
+- Formulieren: [Veldtypen](/richtlijnen/formulieren/veldtypen).
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 3.3.2 Labels of instructies](https://www.w3.org/Translations/WCAG22-nl/#labels-of-instructies) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 3.3.2: Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Accessible form validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/) — uitgebreide gids van Smashing Magazine over toegankelijke formulieren, inclusief labels en instructies (Engels).
 
 ## Gebruikersonderzoek
 
