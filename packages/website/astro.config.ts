@@ -85,6 +85,10 @@ export default defineConfig({
     sitemap({
       changefreq: 'weekly',
       priority: 0.5,
+      filter: (page) => {
+        const url = new URL(page);
+        return globalThis.unlistedPages.has(url.pathname) === false;
+      },
     }),
   ],
 });
