@@ -67,6 +67,7 @@
     "test-e2e": "playwright test test/e2e/ --workers=8",
     "test-visual-disabled": "playwright test test/visual/",
     "test-csp": "playwright test test/csp/",
+    "test-unlisted-pages": "playwright test test/e2e/unlisted-pages.spec.ts",
     "publish:argos": "argos upload ./tmp/screenshots",
     "test-update": "npm-run-all --sequential clean lint build",
     "test": "npm-run-all test:**",
@@ -116,6 +117,7 @@
     "@utrecht/design-tokens": "2.5.1",
     "clsx": "2.1.1",
     "eslint-plugin-astro": "1.6.0",
+    "glob": "11.1.0",
     "html-react-parser": "5.2.13",
     "prettier-plugin-astro": "0.14.1",
     "prism-react-renderer": "2.4.1",
@@ -124,6 +126,7 @@
     "remark-custom-header-id": "1.0.0"
   },
   "devDependencies": {
+    "@astrojs/markdown-remark": "7.0.1",
     "@axe-core/playwright": "4.11.0",
     "@changesets/cli": "2.29.8",
     "@docsearch/react": "3.9.0",
