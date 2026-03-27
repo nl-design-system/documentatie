@@ -37,7 +37,7 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
     <link rel="canonical" href={canonicalUrl} />
     <meta name="description" content={description} />
     <meta name="keywords" content={[..._keywords].join(', ')} />
-    <meta name="robots" content={index ? 'index' : 'noindex'} />
+    <meta name="robots" content={index ? 'index follow' : 'noindex nofollow'} />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
