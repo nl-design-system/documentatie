@@ -1,29 +1,11 @@
 {
-  "Notification Banner": {
-    "related_to": ["Alert", "Note"]
-  },
-  "Note": {
-    "related_to": ["Alert", "Notification Banner"]
-  },
-  "Modal Dialog": {
-    "related_to": ["Alert Dialog", "Drawer", "Dialog"]
-  },
-  "Drawer": {
-    "related_to": ["Modal Dialog", "Dialog"]
-  },
-  "Dialog": {
-    "related_to": ["Alert Dialog", "Drawer"]
-  },
-  "Alert Dialog": {
-    "related_to": ["Alert", "Modal Dialog", "Dialog"]
-  },
-  "Alert": {
-    "related_to": ["Alert Dialog", "Notification Banner", "Note"]
-  },
-  "Unordered List": {
-    "related_to": ["Ordered List", "Rich Text Content", "Link List", "Task List"]
-  },
-  "Ordered List": {
-    "related_to": ["Rich Text Content", "Unordered List"]
-  }
+  "Notification Banner": ["Alert", "Note"],
+  "Note": ["Alert", "Notification Banner"],
+  "Modal Dialog": ["Alert Dialog", "Drawer", "Dialog"],
+  "Drawer": ["Modal Dialog", "Dialog"],
+  "Dialog": ["Alert Dialog", "Drawer"],
+  "Alert Dialog": ["Alert", "Modal Dialog", "Dialog"],
+  "Alert": ["Alert Dialog", "Notification Banner", "Note"],
+  "Unordered List": ["Ordered List", "Rich Text Content", "Link List", "Task List"],
+  "Ordered List": ["Rich Text Content", "Unordered List"]
 }

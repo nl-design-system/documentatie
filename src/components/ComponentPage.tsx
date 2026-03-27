@@ -209,7 +209,7 @@ export const Introduction = ({ component, headingLevel, description }: Introduct
 };
 
 export const Related = ({ component }: ComponentPageSectionProps) => {
-  const relatedComponents = component && relationMap[component.title] ? relationMap[component.title].related_to : [];
+  const relatedComponents = (component && relationMap[component.title]) || [];
   return (
     relatedComponents.length > 0 && (
       <Paragraph>
