@@ -9,9 +9,10 @@ interface Props {
   seoImageAlt?: string;
   keywords?: string[];
   index?: boolean;
+  follow?: boolean;
 }
 
-const { title, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true } = Astro.props;
+const { title, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
@@ -20,6 +21,8 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
 const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
 const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
 const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
+const _follow = follow === undefined ? index : follow;
+const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
 ---
 
 <html lang={lang} dir="ltr">
@@ -37,7 +40,7 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
     <link rel="canonical" href={canonicalUrl} />
     <meta name="description" content={description} />
     <meta name="keywords" content={[..._keywords].join(', ')} />
-    <meta name="robots" content={index ? 'index follow' : 'noindex nofollow'} />
+    <meta name="robots" content={_robots} />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
