@@ -1,8 +1,9 @@
 ---
-import { siteName, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { siteName, siteTitle, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
 
 interface Props {
-  title?: string;
+  title: string;
+  titleSm?: string;
   description?: string;
   lang?: 'nl' | 'en';
   seoImage?: string;
@@ -12,11 +13,12 @@ interface Props {
   follow?: boolean;
 }
 
-const { title, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
+const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
 
+const documentTitle = `${titleSm || title} · ${siteTitle}`;
 const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
 const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
 const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
@@ -29,7 +31,7 @@ const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
+    <title>{documentTitle}</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
@@ -47,7 +49,7 @@ const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow
     <meta property="og:image" content={_seoImage} />
     <meta property="og:image:alt" content={_seoImageAlt} />
     <meta property="og:description" content={description} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={documentTitle} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:locale" content={lang} />
     <meta property="twitter:card" content={twitterCard} />
