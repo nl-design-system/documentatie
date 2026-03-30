@@ -8,12 +8,10 @@ import { siteTitle } from '../seo.config.ts';
 export async function getStaticPaths() {
   const components = await getCollection('components');
 
-  return components
-    .filter((page) => page.data?.unlisted !== true)
-    .map((page) => ({
-      params: { component: page.id },
-      props: { page },
-    }));
+  return components.map((page) => ({
+    params: { component: page.id },
+    props: { page },
+  }));
 }
 
 const { page } = Astro.props;

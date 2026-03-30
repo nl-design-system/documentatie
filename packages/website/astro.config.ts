@@ -43,6 +43,10 @@ const cspProdConfig: AstroUserConfig = {
 
 const cspConfig = process.env['NODE_ENV'] === 'development' ? cspDevConfig : cspProdConfig;
 
+// A global set of pages that are unlisted. This set is filled during the
+// generation of the content collections.
+globalThis.unlistedPages = new Set();
+
 // https://astro.build/config
 export default defineConfig({
   publicDir: '../../static',
@@ -81,6 +85,10 @@ export default defineConfig({
     sitemap({
       changefreq: 'weekly',
       priority: 0.5,
+      filter: (page) => {
+        const url = new URL(page);
+        return globalThis.unlistedPages.has(url.pathname) === false;
+      },
     }),
   ],
 });
