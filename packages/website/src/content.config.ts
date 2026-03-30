@@ -20,6 +20,7 @@ export function customGlob(options: GlobOptions): Loader {
 
   return {
     ...inner,
+    name: 'Content Loader',
     async load(context: LoaderContext) {
       await inner.load(context);
 
@@ -27,10 +28,18 @@ export function customGlob(options: GlobOptions): Loader {
       for (const [id, { data }] of context.store.entries()) {
         if (hasUnderscoredSegment(id)) {
           context.store.delete(id);
+          continue;
         }
 
-        if (data.unlisted) {
-          globalThis.unlistedPages.add(`${id}/`);
+        const result = schema.safeParse(data);
+        if (result.success) {
+          if (result.data.title.length >= 60 && !result.data.title_sm) {
+            context.logger.warn(`No title_sm provided for ${id}`);
+          }
+
+          if (result.data.unlisted) {
+            globalThis.unlistedPages.add(`${id}/`);
+          }
         }
       }
     },
@@ -79,12 +88,13 @@ function generateId(options) {
 }
 
 const schema = z.object({
-  title: z.string().optional(),
+  title: z.string(),
+  title_sm: z.string().max(24).optional(),
   description: z.string().optional(),
   lang: z.enum(['nl', 'en']).optional(),
   slug: z.string().optional(),
   unlisted: z.boolean().optional(),
-  image: z.string().optional(),
+  image: z.httpUrl().optional(),
   image_alt: z.string().optional(),
   keywords: z.array(z.string()).optional(),
 });
