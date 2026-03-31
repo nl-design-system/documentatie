@@ -39,6 +39,11 @@
   --nlds-canvas-code-block-user-select: none;
 }
 
+.nlds-canvas__content {
+  padding-block: 16px;
+  padding-inline: 16px;
+}
+
 .nlds-canvas__validations-list {
   padding-block: 8px;
   padding-inline: 8px;

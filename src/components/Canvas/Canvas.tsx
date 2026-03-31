@@ -114,11 +114,11 @@ export const Canvas = ({
       <div slot="value" hidden dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <div className={clsx('nlds-canvas')}>
         {jsxTree && (
-          <>
+          <div className={clsx('nlds-canvas__content')}>
             <ClippyContent>
               <ClippyGutter mode="list" />
             </ClippyContent>
-          </>
+          </div>
         )}
         {displayCode && (
           <div className={clsx('nlds-canvas__toolbar')}>
