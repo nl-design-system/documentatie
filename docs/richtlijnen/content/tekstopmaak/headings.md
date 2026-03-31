@@ -86,7 +86,7 @@ Gebruik koppen in volgorde. Begin bijvoorbeeld met een kopniveau 2 onder de hoof
 Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel. Het is prima om na een kopniveau 4 weer een nieuwe sectie te beginnen met een kopniveau 2.
 
 <Guideline appearance="do" title="Gebruik kopniveaus in de de goede volgorde.">
-  <Canvas language="html">
+  <Canvas language="html" editorProps={{ topHeadingLevel: 1 }}>
     {() => (
       <>
           <h1>Kop met niveau 1</h1>
@@ -116,7 +116,7 @@ Van boven naar beneden mag je geen niveaus overslaan. Van beneden naar boven wel
 </Guideline>
 
 <Guideline appearance="dont" title="Van boven naar beneden een kopniveau overslaan.">
-  <Canvas language="html">
+  <Canvas language="html" editorProps={{ topHeadingLevel: 1 }}>
     {() => (
       <>
           <h1>Dit is een kop met niveau 1</h1>

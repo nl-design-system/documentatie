@@ -10,6 +10,9 @@ interface CanvasProps {
   language: string;
   copy?: boolean;
   designTokens?: CSSProperties;
+  editorProps?: {
+    topHeadingLevel: number | undefined;
+  };
 }
 
 const CanvasClient = lazy(() => import('./CanvasClient').then(({ CanvasClient }) => ({ default: CanvasClient })));

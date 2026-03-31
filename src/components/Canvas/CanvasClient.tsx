@@ -28,6 +28,9 @@ interface CanvasProps {
   language: string;
   copy?: boolean;
   designTokens?: CSSProperties;
+  editorProps?: {
+    topHeadingLevel: number | undefined;
+  };
 }
 
 export const CanvasClient = ({
@@ -38,6 +41,7 @@ export const CanvasClient = ({
   children,
   language,
   designTokens,
+  editorProps = { topHeadingLevel: 2 },
 }: CanvasProps) => {
   // By default the `children` argument is converted to code.
   const jsxTree = typeof children === 'function' ? children() : children;
@@ -75,7 +79,7 @@ export const CanvasClient = ({
   };
 
   return (
-    <ClippyContext id={codeBlockId} topHeadingLevel={2}>
+    <ClippyContext id={codeBlockId} {...editorProps}>
       <div slot="value" hidden dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <div className={clsx('nlds-canvas')}>
         {jsxTree && (
