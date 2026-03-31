@@ -158,7 +158,7 @@ export const Canvas = ({
             )}
           </div>
         )}
-        <div>
+        <div className="nlds-canvas__validations-list">
           <ClippyValidationsList />
         </div>
       </div>
