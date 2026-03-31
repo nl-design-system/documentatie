@@ -110,7 +110,7 @@ export const Canvas = ({
   }
 
   return (
-    <ClippyContext id={codeBlockId} topLevelHeading={2}>
+    <ClippyContext id={codeBlockId} topHeadingLevel={2}>
       <div slot="value" hidden dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <div className={clsx('nlds-canvas')}>
         {jsxTree && (
