@@ -30,6 +30,8 @@
   },
   "dependencies": {
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
+    "@nl-design-system-candidate/skip-link-react": "1.1.7",
+    "@nl-design-system-community/ma-design-tokens": "2.5.0",
     "@utrecht/body-css": "2.0.1",
     "@utrecht/body-react": "0.0.10",
     "@utrecht/page-body-css": "1.0.1",
