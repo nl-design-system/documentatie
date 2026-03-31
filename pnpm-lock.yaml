@@ -419,6 +419,9 @@ importers:
 
   packages/website:
     dependencies:
+      '@nl-design-system-candidate/skip-link-css':
+        specifier: 1.0.5
+        version: 1.0.5
       '@utrecht/body-css':
         specifier: 2.0.1
         version: 2.0.1
@@ -3425,6 +3428,9 @@ packages:
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.3':
     resolution: {integrity: sha512-EtFFQagTwkJYL5k9+h8xDQDh9GKzgo4CJnFrSuxWNzM3A3Hi+vAd6bIBAj4ECBZfW5IJBtsONAduSoCiPo5CbA==}
+
+  '@nl-design-system-candidate/skip-link-css@1.0.5':
+    resolution: {integrity: sha512-0Bq6yDPgz6sCGrd5EuV8CfL9m78he1a914sJPeZ+Cqr4WTqN0m1qf3LPJ2YVpOP0fYgk5GX2UqwTKIDhSLg5GA==}
 
   '@nl-design-system-candidate/skip-link-docs@1.2.1':
     resolution: {integrity: sha512-kNGtfmwI7iQVF0Bebpftjn/R/wHRaOFxNVOgoLlAQeRCimIu5t8zYJUGnJGguMgx2gwDFSRcOhn4/cwRI2LVNg==}
@@ -15351,6 +15357,8 @@ snapshots:
   '@nl-design-system-candidate/paragraph-docs@1.2.1': {}
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.3': {}
+
+  '@nl-design-system-candidate/skip-link-css@1.0.5': {}
 
   '@nl-design-system-candidate/skip-link-docs@1.2.1': {}
 
