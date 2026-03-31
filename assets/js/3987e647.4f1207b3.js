@@ -256,8 +256,8 @@
     t = o(18439);
    const s = [];
    function r(e) {
-    const n = { p: 'p', ...(0, t.R)(), ...e.components };
-    return (0, i.jsx)(n.p, { children: 'Designers kunnen vanaf de NL Design System website met \xe9\xe9n klik de Figma-component openen, zonder door het Figma bestand te zoeken.' });
+    const n = { a: 'a', p: 'p', strong: 'strong', ...(0, t.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Designers kunnen vanaf de NL Design System website met \xe9\xe9n klik de Figma-component openen, zonder door het Figma bestand te zoeken.' }), '\n', (0, i.jsxs)(n.p, { children: [(0, i.jsx)(n.strong, { children: 'Tip!' }), ' ', (0, i.jsx)(n.a, { href: '/handboek/designer/zelf-componenten-maken/', children: 'Ontwerp componenten volgens de afspraken van NL Design System' }), ', zodat componenten onderling uitwisselbaar zijn.'] })] });
    }
    function a(e = {}) {
     const { wrapper: n } = { ...(0, t.R)(), ...e.components };

@@ -23,26 +23,26 @@
   },
   72223(e, n, t) {
    (t.r(n), t.d(n, { assets: () => d, contentTitle: () => l, default: () => p, frontMatter: () => s, metadata: () => o, toc: () => c }));
-   const o = JSON.parse('{"id":"handboek/designer/zelf-componenten-maken","title":"Zelf componenten maken","description":"Informatie voor designers over hoe je zelf componenten kunt maken in Figma met design tokens.","source":"@site/docs/handboek/designer/zelf-componenten-maken.mdx","sourceDirName":"handboek/designer","slug":"/handboek/designer/zelf-componenten-maken","permalink":"/handboek/designer/zelf-componenten-maken","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/designer/zelf-componenten-maken.mdx","tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"title":"Zelf componenten maken","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"Zelf componenten maken","sidebar_position":5,"pagination_label":"Zelf componenten maken","description":"Informatie voor designers over hoe je zelf componenten kunt maken in Figma met design tokens.","slug":"/handboek/designer/zelf-componenten-maken","keywords":["index","designer","meedoen","componenten","figma","design tokens"]},"sidebar":"handboek","previous":{"title":"Zelf componenten uitbreiden","permalink":"/handboek/designer/zelf-componenten-uitbreiden"},"next":{"title":"Figma-bestanden overzicht","permalink":"/figma"}}');
+   const o = JSON.parse('{"id":"handboek/designer/zelf-componenten-maken","title":"Zelf componenten maken","description":"Informatie voor designers over hoe je zelf componenten kunt maken in Figma met design tokens.","source":"@site/docs/handboek/designer/zelf-componenten-maken.mdx","sourceDirName":"handboek/designer","slug":"/handboek/designer/zelf-componenten-maken","permalink":"/handboek/designer/zelf-componenten-maken","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/designer/zelf-componenten-maken.mdx","tags":[],"version":"current","sidebarPosition":5,"frontMatter":{"title":"Zelf componenten maken","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Zelf componenten maken","sidebar_position":5,"pagination_label":"Zelf componenten maken","description":"Informatie voor designers over hoe je zelf componenten kunt maken in Figma met design tokens.","slug":"/handboek/designer/zelf-componenten-maken","keywords":["index","designer","meedoen","componenten","figma","design tokens"]},"sidebar":"handboek","previous":{"title":"Zelf componenten uitbreiden","permalink":"/handboek/designer/zelf-componenten-uitbreiden"},"next":{"title":"Figma-bestanden overzicht","permalink":"/figma"}}');
    var a = t(86070),
     i = t(18439),
     r = t(73058);
-   const s = { title: 'Zelf componenten maken', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Zelf componenten maken', sidebar_position: 5, pagination_label: 'Zelf componenten maken', description: 'Informatie voor designers over hoe je zelf componenten kunt maken in Figma met design tokens.', slug: '/handboek/designer/zelf-componenten-maken', keywords: ['index', 'designer', 'meedoen', 'componenten', 'figma', 'design tokens'] },
+   const s = { title: 'Zelf componenten maken', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Zelf componenten maken', sidebar_position: 5, pagination_label: 'Zelf componenten maken', description: 'Informatie voor designers over hoe je zelf componenten kunt maken in Figma met design tokens.', slug: '/handboek/designer/zelf-componenten-maken', keywords: ['index', 'designer', 'meedoen', 'componenten', 'figma', 'design tokens'] },
     l = 'Zelf componenten maken',
     d = {},
     c = [
-     { value: 'Community component ontbreekt', id: 'community-component-ontbreekt', level: 2 },
-     { value: 'Eigen Community component bijdragen', id: 'eigen-community-component-bijdragen', level: 2 },
      { value: 'Demo&#39;s', id: 'demos', level: 2 },
      { value: 'Component &#39;Demo Sticker&#39; maken', id: 'component-demo-sticker-maken', level: 3 },
      { value: 'Component &#39;Demo Card&#39; maken', id: 'component-demo-card-maken', level: 3 },
+     { value: 'Component delen', id: 'component-delen', level: 2 },
+     { value: 'Community Components projectbord', id: 'community-components-projectbord', level: 3 },
      { value: 'Handige links', id: 'handige-links', level: 2 },
      { value: 'Help deze documentatie te verbeteren', id: 'help-deze-documentatie-te-verbeteren', level: 2 },
      { value: 'Vragen', id: 'vragen', level: 2 },
     ];
    function m(e) {
-    const n = { a: 'a', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', hr: 'hr', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.header, { children: (0, a.jsx)(n.h1, { id: 'zelf-componenten-maken', children: 'Zelf componenten maken' }) }), '\n', (0, a.jsx)(n.p, { children: 'De Figma bibliotheken van NL Design System bevatten veel componenten en worden regelmatig aangevuld. Toch zijn er situaties waarin je zelf componenten moet maken.' }), '\n', (0, a.jsx)(n.h2, { id: 'community-component-ontbreekt', children: 'Community component ontbreekt' }), '\n', (0, a.jsx)(n.p, { children: 'De Community component die jij nu juist nodig hebt ontbreekt nog. Je hebt dit doorgegeven aan het kernteam, maar er is (nog) geen tijd om dit op te pakken. In dat geval kun je de component zelf maken.' }), '\n', (0, a.jsx)(n.h2, { id: 'eigen-community-component-bijdragen', children: 'Eigen Community component bijdragen' }), '\n', (0, a.jsx)(n.p, { children: 'Je wilt als organisatie een nieuwe component ontwikkelen en delen met de community.' }), '\n', (0, a.jsx)(n.h2, { id: 'demos', children: "Demo's" }), '\n', (0, a.jsx)(n.p, { children: 'Het is fijn om componenten te ontwikkelen volgens de afspraken van NL Design System: open source, met design tokens en de juiste naamgeving. Zo blijven componenten onderling uitwisselbaar.' }), '\n', (0, a.jsx)(n.p, { children: 'We hebben twee fictieve componenten uitgewerkt om te laten zien hoe je als designer zelf een component kunt maken.' }), '\n', (0, a.jsx)(n.h3, { id: 'component-demo-sticker-maken', children: "Component 'Demo Sticker' maken" }), '\n', (0, a.jsx)(n.p, { children: "In deze video laten we zien hoe de component 'Demo Sticker' wordt ontwikkeld in Figma." }), '\n', (0, a.jsx)(r.L, { id: 'dbTcHS01IGQ', title: 'Zelf componenten maken - Demo Sticker' }), '\n', (0, a.jsx)(n.h3, { id: 'component-demo-card-maken', children: "Component 'Demo Card' maken" }), '\n', (0, a.jsx)(n.p, { children: "In deze video laten we zien hoe de component 'Demo Card' wordt ontwikkeld in Figma." }), '\n', (0, a.jsx)(r.L, { id: 'vsJjs6ehGZ0', title: 'Zelf componenten maken - Demo Card' }), '\n', (0, a.jsx)(n.h2, { id: 'handige-links', children: 'Handige links' }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsxs)(n.li, { children: [(0, a.jsx)(n.a, { href: '/handboek/estafettemodel/componenten/definition-of-done/', children: 'Definition of Done (Estafettemodel)' }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/estafettemodel/componenten/help-wanted-stappenplan/', children: 'Help Wanted stappenplan' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/estafettemodel/componenten/community-stappenplan/voor-organisaties/', children: 'Community stappenplan voor organisaties' }) }), '\n'] }), '\n'] }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/componenten-gebruiken/', children: 'Componenten gebruiken' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/huisstijl/design-tokens/', children: 'Design tokens' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/designer/figma-hygiene/', children: 'Figma hygi\xebne' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: 'https://help.figma.com/', children: 'help.figma.com' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: 'https://forum.figma.com/', children: 'forum.figma.com' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: 'https://tokens.studio/', children: 'tokenstudio.com' }) }), '\n'] }), '\n', (0, a.jsx)(n.hr, {}), '\n', (0, a.jsx)(n.h2, { id: 'help-deze-documentatie-te-verbeteren', children: 'Help deze documentatie te verbeteren' }), '\n', (0, a.jsxs)(n.p, { children: ['Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via ', (0, a.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie', children: 'GitHub' }), '.'] }), '\n', (0, a.jsx)(n.h2, { id: 'vragen', children: 'Vragen' }), '\n', (0, a.jsxs)(n.p, { children: ['Heb je een vraag? Twijfel niet en ', (0, a.jsx)(n.a, { href: '/project/kernteam/', children: 'neem contact op met het kernteam' }), '.'] })] });
+    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', hr: 'hr', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
+    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.header, { children: (0, a.jsx)(n.h1, { id: 'zelf-componenten-maken', children: 'Zelf componenten maken' }) }), '\n', (0, a.jsx)(n.p, { children: 'De Figma bibliotheken van NL Design System bevatten veel componenten en worden regelmatig aangevuld. Toch kan het voorkomen dat je zelf componenten moet maken. Bijvoorbeeld wanneer deze nog ontbreken in de community.' }), '\n', (0, a.jsx)(n.h2, { id: 'demos', children: "Demo's" }), '\n', (0, a.jsx)(n.p, { children: 'Het is fijn om componenten te ontwikkelen volgens de afspraken van NL Design System: open source, met design tokens en de juiste naamgeving. Zo blijven componenten onderling uitwisselbaar.' }), '\n', (0, a.jsx)(n.p, { children: 'We hebben twee fictieve componenten uitgewerkt om te laten zien hoe je als designer zelf een component kunt maken.' }), '\n', (0, a.jsx)(n.h3, { id: 'component-demo-sticker-maken', children: "Component 'Demo Sticker' maken" }), '\n', (0, a.jsx)(n.p, { children: "In deze video laten we zien hoe de component 'Demo Sticker' wordt ontwikkeld in Figma." }), '\n', (0, a.jsx)(r.L, { id: 'dbTcHS01IGQ', title: 'Zelf componenten maken - Demo Sticker' }), '\n', (0, a.jsx)(n.h3, { id: 'component-demo-card-maken', children: "Component 'Demo Card' maken" }), '\n', (0, a.jsx)(n.p, { children: "In deze video laten we zien hoe de component 'Demo Card' wordt ontwikkeld in Figma." }), '\n', (0, a.jsx)(r.L, { id: 'vsJjs6ehGZ0', title: 'Zelf componenten maken - Demo Card' }), '\n', (0, a.jsx)(n.h2, { id: 'component-delen', children: 'Component delen' }), '\n', (0, a.jsx)(n.p, { children: 'Heb je een component ontwikkeld in Figma? Wat goed! Deel deze dan met het kernteam. Zo blijven we op de hoogte van nieuwe componenten en kunnen we beoordelen of deze opgenomen kan worden in de NL Design System bibliotheek.' }), '\n', (0, a.jsxs)(n.p, { children: ['Plaats een link naar je ontwerp in de ', (0, a.jsx)(n.a, { href: 'https://github.com/orgs/nl-design-system/discussions', children: 'GitHub Discussion van de component' }), ' en deel deze ook op ', (0, a.jsx)(n.a, { href: '/slack/', children: 'Slack' }), ' in het kanaal ', (0, a.jsx)(n.code, { children: '#nl-design-system-designers' }), '.'] }), '\n', (0, a.jsxs)(n.p, { children: ['Bestaat er nog geen GitHub Discussion? Deel dan een link naar je ontwerp via Slack in het kanaal ', (0, a.jsx)(n.code, { children: '#nl-design-system-designers' }), '. Het kernteam bepaalt vervolgens wat een passende vervolgstap is.'] }), '\n', (0, a.jsx)(n.h3, { id: 'community-components-projectbord', children: 'Community Components projectbord' }), '\n', (0, a.jsxs)(n.p, { children: ['Voeg ook meteen een link naar je ontwerp toe aan het ', (0, a.jsx)(n.a, { href: 'https://github.com/orgs/nl-design-system/projects?query=is:open+community+components', children: 'Community Components projectbord' }), ' van jouw organisatie. Zo kan de component worden meegenomen in het Community stappenplan.'] }), '\n', (0, a.jsx)(n.h2, { id: 'handige-links', children: 'Handige links' }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsxs)(n.li, { children: [(0, a.jsx)(n.a, { href: '/handboek/estafettemodel/componenten/definition-of-done/', children: 'Definition of Done (Estafettemodel)' }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/estafettemodel/componenten/help-wanted-stappenplan/', children: 'Help Wanted stappenplan' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/estafettemodel/componenten/community-stappenplan/voor-organisaties/', children: 'Community stappenplan voor organisaties' }) }), '\n'] }), '\n'] }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/componenten-gebruiken/', children: 'Componenten gebruiken' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/huisstijl/design-tokens/', children: 'Design tokens' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/handboek/designer/figma-hygiene/', children: 'Figma hygi\xebne' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: 'https://help.figma.com/', children: 'help.figma.com' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: 'https://forum.figma.com/', children: 'forum.figma.com' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: 'https://tokens.studio/', children: 'tokenstudio.com' }) }), '\n'] }), '\n', (0, a.jsx)(n.hr, {}), '\n', (0, a.jsx)(n.h2, { id: 'help-deze-documentatie-te-verbeteren', children: 'Help deze documentatie te verbeteren' }), '\n', (0, a.jsxs)(n.p, { children: ['Om ervoor te zorgen dat deze documentatie nuttig, relevant en up-to-date is, kun je een wijziging voorstellen via ', (0, a.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie', children: 'GitHub' }), '.'] }), '\n', (0, a.jsx)(n.h2, { id: 'vragen', children: 'Vragen' }), '\n', (0, a.jsxs)(n.p, { children: ['Heb je een vraag? Twijfel niet en ', (0, a.jsx)(n.a, { href: '/project/kernteam/', children: 'neem contact op met het kernteam' }), '.'] })] });
    }
    function p(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
@@ -64,8 +64,8 @@
       c = encodeURIComponent(e.id),
       m = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
       p = e.title,
-      u = e.poster || 'hqdefault',
-      h = e.announce || 'Watch',
+      h = e.poster || 'hqdefault',
+      u = e.announce || 'Watch',
       f = !e.alwaysLoadIframe || (e.autoplay && e.muted),
       g = a.useMemo(() => {
        const n = new URLSearchParams({ ...(e.muted ? { mute: '1' } : {}), ...(f ? { autoplay: '1' } : {}), ...(e.enableJsApi ? { enablejsapi: '1' } : {}), ...(e.enableJsApi && typeof window < 'u' ? { origin: window.location.origin } : {}), ...(e.playlist ? { list: c } : {}) });
@@ -79,7 +79,7 @@
       }, [e.muted, f, e.enableJsApi, e.playlist, c, e.params]),
       k = a.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
       b = a.useMemo(() => (e.playlist ? `${k}/embed/videoseries?${g.toString()}` : `${k}/embed/${c}?${g.toString()}`), [e.playlist, k, c, g]),
-      y = !e.thumbnail && !e.playlist && 'maxresdefault' === u,
+      y = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
       j = e.webp ? 'webp' : 'jpg',
       v = e.webp ? 'vi_webp' : 'vi',
       w = y
@@ -99,27 +99,27 @@
            }, [e, n, t, o]),
            r
           );
-         })(e.id, v, j, u)
+         })(e.id, v, j, h)
        : null,
-      x = a.useMemo(() => e.thumbnail || w || `https://i.ytimg.com/${v}/${e.playlist ? m : c}/${u}.${j}`, [e.thumbnail, w, v, e.playlist, m, c, u, j]),
+      x = a.useMemo(() => e.thumbnail || w || `https://i.ytimg.com/${v}/${e.playlist ? m : c}/${h}.${j}`, [e.thumbnail, w, v, e.playlist, m, c, h, j]),
       C = e.activatedClass || 'lyt-activated',
       z = e.adNetwork || !1,
       S = e.aspectHeight || 9,
-      E = e.aspectWidth || 16,
-      $ = e.iframeClass || '',
-      P = e.playerClass || 'lty-playbtn',
-      _ = e.wrapperClass || 'yt-lite',
-      D = a.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
-      R = e.rel ? 'prefetch' : 'preload',
-      L = e.containerElement || 'article',
+      $ = e.aspectWidth || 16,
+      D = e.iframeClass || '',
+      E = e.playerClass || 'lty-playbtn',
+      P = e.wrapperClass || 'yt-lite',
+      _ = a.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
+      L = e.rel ? 'prefetch' : 'preload',
+      R = e.containerElement || 'article',
       I = !1 !== e.noscriptFallback,
       T = () => {
        l || d(!0);
       };
      return (
       a.useEffect(() => {
-       l && (D(), e.focusOnLoad && 'object' == typeof n && n?.current && n.current.focus());
-      }, [l, D, e.focusOnLoad, n]),
+       l && (_(), e.focusOnLoad && 'object' == typeof n && n?.current && n.current.focus());
+      }, [l, _, e.focusOnLoad, n]),
       a.useEffect(() => {
        if (!l || !e.enableJsApi || !(e.onReady || e.onStateChange || e.onError || e.onPlay || e.onPause || e.onEnd || e.onBuffering || e.onPlaybackRateChange || e.onPlaybackQualityChange)) return;
        let t = !1,
@@ -212,21 +212,21 @@
       }, [l, e.enableJsApi, e.onReady, e.onStateChange, e.onError, e.onPlay, e.onPause, e.onEnd, e.onBuffering, e.onPlaybackRateChange, e.onPlaybackQualityChange, e.stopOnEnd, e.id, c, p, n]),
       (0, o.jsxs)(o.Fragment, {
        children: [
-        !e.lazyLoad && (0, o.jsx)('link', { rel: R, href: x, as: 'image' }),
+        !e.lazyLoad && (0, o.jsx)('link', { rel: L, href: x, as: 'image' }),
         (0, o.jsx)(o.Fragment, { children: t && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('link', { rel: 'preconnect', href: k }), (0, o.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), z && (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, o.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
         e.seo && !e.playlist && (0, o.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: r(e.id, p, x, k, e.seo) } }),
         I && !e.playlist && (0, o.jsx)('noscript', { children: (0, o.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${p} on YouTube`, children: ['Watch "', p, '" on YouTube'] }) }),
-        (0, o.jsxs)(L, {
+        (0, o.jsxs)(R, {
          onPointerOver: () => {
           t || s(!0);
          },
          onClick: T,
-         className: `${_} ${l ? C : ''}`,
+         className: `${P} ${l ? C : ''}`,
          'data-title': p,
          role: l || e.lazyLoad ? void 0 : 'img',
          'aria-label': l ? void 0 : `${p} - YouTube video preview`,
-         style: { ...(!e.lazyLoad && { backgroundImage: `url(${x})` }), '--aspect-ratio': (S / E) * 100 + '%', ...(e.style || {}) },
-         children: [e.lazyLoad && !l && (0, o.jsx)('img', { src: x, alt: `${p} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !l && (0, o.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && l) && (0, o.jsx)('button', { type: 'button', className: P, 'aria-label': `${h} ${p}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, onClick: T, children: (0, o.jsx)('span', { className: 'lty-visually-hidden', children: h }) }), l && (0, o.jsx)('iframe', { ref: n, className: $, title: p, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+         style: { ...(!e.lazyLoad && { backgroundImage: `url(${x})` }), '--aspect-ratio': (S / $) * 100 + '%', ...(e.style || {}) },
+         children: [e.lazyLoad && !l && (0, o.jsx)('img', { src: x, alt: `${p} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !l && (0, o.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && l) && (0, o.jsx)('button', { type: 'button', className: E, 'aria-label': `${u} ${p}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, onClick: T, children: (0, o.jsx)('span', { className: 'lty-visually-hidden', children: u }) }), l && (0, o.jsx)('iframe', { ref: n, className: D, title: p, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
       })
