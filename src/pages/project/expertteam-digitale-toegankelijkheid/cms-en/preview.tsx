@@ -17,13 +17,6 @@ const pageStyle = {
   minHeight: '100vh',
 };
 
-const contentStyle = {
-  boxSizing: 'border-box' as const,
-  margin: '0 auto',
-  maxWidth: '48rem',
-  padding: '3rem 1.5rem 4rem',
-};
-
 export default function CmsEnPlainHtmlPage() {
   return (
     <>

@@ -1,13 +1,13 @@
 import { CodeBlockSyntaxHighlighting } from '@site/src/components/CodeBlockSyntaxHighlighting';
-import { Button, Document, Paragraph, Surface } from '@utrecht/component-library-react/dist/css-module';
+import { Button } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import prettierBabel from 'prettier/plugins/babel.mjs';
 import prettierESTree from 'prettier/plugins/estree.mjs';
 import prettierHTML from 'prettier/plugins/html.mjs';
 import prettierPostcss from 'prettier/plugins/postcss.mjs';
 import prettier from 'prettier/standalone';
-import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'react';
-import { isValidElement, useEffect, useId, useState, Fragment } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
+import { isValidElement, useEffect, useId, useState } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import './Canvas.css';
 import '@nl-design-system-community/editor/theme.css';
@@ -18,31 +18,6 @@ import {
   ClippyValidationsList,
 } from '@nl-design-system-community/editor-react';
 
-export type CanvasContainerType = 'document' | 'paragraph' | 'surface';
-
-const ParagraphContainer = ({ children }: PropsWithChildren<object>) => (
-  <Surface className="nlds-canvas__example-surface">
-    <Document className={clsx('utrecht-document--surface', 'nlds-canvas__example-document')}>
-      <Paragraph className="nlds-canvas__example-paragraph">{children}</Paragraph>
-    </Document>
-  </Surface>
-);
-
-ParagraphContainer.displayName = 'ParagraphContainer';
-
-const DocumentContainer = ({ children }: PropsWithChildren<object>) => (
-  <Surface className="nlds-canvas__example-surface">
-    <Document className={clsx('utrecht-document--surface', 'nlds-canvas__example-document')}>{children}</Document>
-  </Surface>
-);
-DocumentContainer.displayName = 'DocumentContainer';
-
-const SurfaceContainer = ({ children }: PropsWithChildren<object>) => (
-  <Surface className="nlds-canvas__example-surface">{children}</Surface>
-);
-
-SurfaceContainer.displayName = 'SurfaceContainer';
-
 interface CanvasProps {
   defaultExpandedCode?: boolean;
   displayCode?: boolean;
@@ -50,7 +25,6 @@ interface CanvasProps {
   children: ReactNode | (() => ReactNode);
   language: string;
   copy?: boolean;
-  container?: string | CanvasContainerType;
   designTokens?: CSSProperties;
 }
 
@@ -60,7 +34,6 @@ export const Canvas = ({
   defaultExpandedCode = false,
   displayCode = true,
   children,
-  container = 'document',
   language,
   designTokens,
 }: CanvasProps) => {
@@ -99,23 +72,13 @@ export const Canvas = ({
     navigator.clipboard.writeText(exampleSourceCode).catch((err) => console.error('Copy code failed', err));
   };
 
-  let Container: ElementType = Fragment;
-
-  if (container === 'paragraph') {
-    Container = ParagraphContainer;
-  } else if (container === 'document') {
-    Container = DocumentContainer;
-  } else if (container === 'surface') {
-    Container = SurfaceContainer;
-  }
-
   return (
     <ClippyContext id={codeBlockId} topHeadingLevel={2}>
       <div slot="value" hidden dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <div className={clsx('nlds-canvas')}>
         {jsxTree && (
           <div className={clsx('nlds-canvas__content')}>
-            <ClippyContent>
+            <ClippyContent className="voorbeeld-theme" style={designTokens}>
               <ClippyGutter mode="list" />
             </ClippyContent>
           </div>
