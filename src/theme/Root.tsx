@@ -12,7 +12,7 @@ import '@utrecht/document-css/dist/html/index.css';
 function Root({ children }: PropsWithChildren<object>) {
   return (
     <>
-      <PageLayout className="ma-theme">{children}</PageLayout>
+      <PageLayout className="ma-theme clippy-theme">{children}</PageLayout>
     </>
   );
 }

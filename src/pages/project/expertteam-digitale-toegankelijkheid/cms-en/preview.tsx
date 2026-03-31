@@ -39,7 +39,7 @@ export default function CmsEnPlainHtmlPage() {
           <Suspense fallback="Voorbeeld laden...">
             <div className="ma-theme clippy-theme utrecht-root" style={pageStyle}>
               <ClippyContentView>
-                <div slot="content">
+                <div slot="value">
                   <h1>NL Design System Editor — voorbeeld</h1>
                   <p>
                     Onder die steden, <strong>welke</strong> <em>vanouds</em> aan de

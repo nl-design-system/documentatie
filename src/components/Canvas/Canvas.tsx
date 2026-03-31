@@ -1,6 +1,5 @@
 import { CodeBlockSyntaxHighlighting } from '@site/src/components/CodeBlockSyntaxHighlighting';
 import { Button, Document, Paragraph, Surface } from '@utrecht/component-library-react/dist/css-module';
-import { HTMLContent } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import prettierBabel from 'prettier/plugins/babel.mjs';
 import prettierESTree from 'prettier/plugins/estree.mjs';
@@ -8,10 +7,16 @@ import prettierHTML from 'prettier/plugins/html.mjs';
 import prettierPostcss from 'prettier/plugins/postcss.mjs';
 import prettier from 'prettier/standalone';
 import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'react';
-import { isValidElement, useEffect, useId, useState } from 'react';
-import { Fragment } from 'react';
+import { isValidElement, useEffect, useId, useState, Fragment } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import './Canvas.css';
+import '@nl-design-system-community/editor/theme.css';
+import {
+  ClippyContent,
+  ClippyContext,
+  ClippyGutter,
+  ClippyValidationsList,
+} from '@nl-design-system-community/editor-react';
 
 export type CanvasContainerType = 'document' | 'paragraph' | 'surface';
 
@@ -61,6 +66,7 @@ export const Canvas = ({
 }: CanvasProps) => {
   // By default the `children` argument is converted to code.
   const jsxTree = typeof children === 'function' ? children() : children;
+  const contentHtml = ReactDOMServer.renderToStaticMarkup(<>{jsxTree}</>);
   // You can override the code from `children` with the `code` argument.
   // The code argument can be a string, or JSX, or a function that generates JSX.
   const codeJsxTree = typeof code === 'function' ? code() : isValidElement(code) ? code : undefined;
@@ -104,54 +110,58 @@ export const Canvas = ({
   }
 
   return (
-    <div className={clsx('nlds-canvas')}>
-      {jsxTree && (
-        <div className={clsx('nlds-canvas__example')}>
-          <div className="voorbeeld-theme" style={designTokens}>
-            <Container>
-              <HTMLContent>{jsxTree}</HTMLContent>
-            </Container>
+    <ClippyContext id={codeBlockId} topLevelHeading={2}>
+      <div slot="value" hidden dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <div className={clsx('nlds-canvas')}>
+        {jsxTree && (
+          <>
+            <ClippyContent>
+              <ClippyGutter mode="list" />
+            </ClippyContent>
+          </>
+        )}
+        {displayCode && (
+          <div className={clsx('nlds-canvas__toolbar')}>
+            <Button
+              className={clsx('nlds-canvas__button', 'nlds-canvas__toggle-code-button')}
+              appearance="subtle-button"
+              onClick={toggleExpanded}
+              aria-expanded={expandedSourceCode}
+              aria-controls={codeBlockId}
+            >
+              {!expandedSourceCode ? 'Bekijk code' : 'Verberg code'}
+            </Button>
           </div>
-        </div>
-      )}
-      {displayCode && (
-        <div className={clsx('nlds-canvas__toolbar')}>
-          <Button
-            className={clsx('nlds-canvas__button', 'nlds-canvas__toggle-code-button')}
-            appearance="subtle-button"
-            onClick={toggleExpanded}
-            aria-expanded={expandedSourceCode}
-            aria-controls={codeBlockId}
+        )}
+        {displayCode && (
+          <div
+            className={clsx('nlds-canvas__code-block', !copy && 'nlds-canvas__code-block--user-select-none')}
+            id={codeBlockId}
+            hidden={!expandedSourceCode}
           >
-            {!expandedSourceCode ? 'Bekijk code' : 'Verberg code'}
-          </Button>
+            <CodeBlockSyntaxHighlighting
+              codeBlockLabel={'Codevoorbeeld'}
+              syntax={language}
+              textContent={exampleSourceCode}
+              trim
+            />
+            {copy && (
+              <div className={clsx('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy')}>
+                <Button
+                  className={clsx('nlds-canvas__button', 'nlds-canvas__copy-button')}
+                  appearance="subtle-button"
+                  onClick={copyCode}
+                >
+                  Kopieer
+                </Button>
+              </div>
+            )}
+          </div>
+        )}
+        <div>
+          <ClippyValidationsList />
         </div>
-      )}
-      {displayCode && (
-        <div
-          className={clsx('nlds-canvas__code-block', !copy && 'nlds-canvas__code-block--user-select-none')}
-          id={codeBlockId}
-          hidden={!expandedSourceCode}
-        >
-          <CodeBlockSyntaxHighlighting
-            codeBlockLabel={'Codevoorbeeld'}
-            syntax={language}
-            textContent={exampleSourceCode}
-            trim
-          />
-          {copy && (
-            <div className={clsx('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy')}>
-              <Button
-                className={clsx('nlds-canvas__button', 'nlds-canvas__copy-button')}
-                appearance="subtle-button"
-                onClick={copyCode}
-              >
-                Kopieer
-              </Button>
-            </div>
-          )}
-        </div>
-      )}
-    </div>
+      </div>
+    </ClippyContext>
   );
 };

@@ -43,7 +43,7 @@ export const RichTextEditor = () => {
       {() => (
         <Suspense fallback="Rich text editor laden...">
           <ClippyEditor id="react-editor-1">
-            <div slot="content" hidden>
+            <div slot="value" hidden>
               <h1>Kopniveau 1</h1>
               <p>Dit is een voorbeeld van de Clippy Editor met een Lit's React wrapper.</p>
               <h3>Kopniveau 3</h3>
@@ -57,7 +57,7 @@ export const RichTextEditor = () => {
           <hr />
           <h2>Configuratie</h2>
           <ClippyEditor toolbarConfig={[['bold', 'italic', 'underline', 'code']]} id="react-editor-2">
-            <div slot="content" hidden>
+            <div slot="value" hidden>
               <h1>Kopniveau 1</h1>
               <p>Dit is een voorbeeld van de Clippy Editor met een Lit's React wrapper.</p>
               <h3>Kopniveau 3</h3>
@@ -73,7 +73,7 @@ export const RichTextEditor = () => {
             Voorbeeld<code>ClippyGutter</code>, <code>ClippyGutter</code> en <code>ClippyGutter</code>
           </p>
           <ClippyContext id="react-editor-3">
-            <div slot="content">
+            <div slot="value">
               <h1>Kopniveau 1 in React editor</h1>
               <p>
                 Dit is een voorbeeld van de Clippy Editor{' '}
