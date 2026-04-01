@@ -209,4 +209,7 @@ Redirect 307 "/enquete-2025" "https://forms.office.com/Pages/ResponsePage.aspx?i
 Redirect 307 "/theme-wizard/" "https://theme-wizard.nl-design-system-community.nl"
 Redirect 307 "/theme-wizard" "https://theme-wizard.nl-design-system-community.nl"
 
+Redirect 307 "/project/expertteam-digitale-toegankelijkheid/meedenken/" "https://laposta.nl/f/ssrxdc7irqdj"
+Redirect 307 "/project/expertteam-digitale-toegankelijkheid/meedenken" "https://laposta.nl/f/ssrxdc7irqdj"
+
 ErrorDocument 404 /404.html
