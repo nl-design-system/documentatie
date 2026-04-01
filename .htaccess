@@ -206,4 +206,7 @@ Redirect 307 "/events/heartbeat/deelnemen" https://teams.microsoft.com/l/meetup-
 Redirect 307 "/enquete-2025/" "https://forms.office.com/Pages/ResponsePage.aspx?id=oj0da1E3PU6zyeZ4TIutcO-qDj4A3l9NqEOUBB9i7MlUNlg5Szk4T1UxWFo0RUJQNTM3T0lBVU1ZUS4u"
 Redirect 307 "/enquete-2025" "https://forms.office.com/Pages/ResponsePage.aspx?id=oj0da1E3PU6zyeZ4TIutcO-qDj4A3l9NqEOUBB9i7MlUNlg5Szk4T1UxWFo0RUJQNTM3T0lBVU1ZUS4u"
 
+Redirect 307 "/theme-wizard/" "https://theme-wizard.nl-design-system-community.nl"
+Redirect 307 "/theme-wizard" "https://theme-wizard.nl-design-system-community.nl"
+
 ErrorDocument 404 /404.html
