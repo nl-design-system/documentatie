@@ -30,19 +30,29 @@ We gebruiken GitHub voor versiebeheer, in plaats van GitLab of Azure DevOps, omd
 
 Gebruik terraform om nieuwe repositories aan te maken in GitHub, en om de instellingen van de repository te beheren. Dat kan via GitOps in de [nl-design-system/terraform repository](http://github.com/nl-design-system/terraform).
 
+## Pull Requests
+
+Maak wijzigingen in Git altijd via Pull Requests, zodat de kwaliteit gecontroleerd kan worden met [continuous integration](./continous-integration) en [code reviews](./code-reviews).
+
+Maak Pull Requests door een branch te maken in de orginele repository, maak niet vanuit een fork een Pull Request. Omdat forks geen volledige toegang hebben tot continuous integration, kunnen Pull Requests vanuit forks niet gemerged worden.
+
+## Branches
+
+Er is geen voorgeschreven conventie voor de namen van branches.
+
+Wanneer een specifieke repository wel een conventie gebruikt voor branch-naamgeving, dan is de bedoeling dat je dit kan vinden in `CONTRIBUTING.md`.
+
 ## Kwaliteit van de main branch {#default-branch}
 
 De `main` branch van de Git repositories moet alleen gewijzigd worden via branches die een positieve review hebben gehad door een tweede persoon. Vereis daarom pull requests voor wijzigingen aan de `main` branch via GitHub Rulesets.
 
 Gebruik terraform om rulesets in te stellen voor de `main` branch.
 
-## Tags voor releases {#tags}
+## Beheer van gebruikers
 
-Maak Git tags aan met het versienummer van releases. De bestaande infrastructuur voor changesets doet dat automatisch. Voor monorepositories kunnen zo duizenden tags ontstaan, dat is niet erg.
+Beheer GitHub gebruikers en toegang tot repositories bij voorkeur met GitOps via terraform, zodat wijzigingen door een tweede persoon gecontroleerd kunnen worden.
 
-Gebruikers willen kunnen vertrouwen dat tags nooit achter gewijzigd worden.
-
-Gebruik Terraform om tag protections in te stellen voor alle repositories waar releases worden gepubliceerd.
+Lees meer in de terraform repository over [het proces van GitHub gebruikers toevoegen](https://github.com/nl-design-system/terraform/blob/main/docs/adding-users.md).
 
 ## `.gitignore` {#gitignore}
 
@@ -67,17 +77,13 @@ Vermijd uitbreidingen aan de `.gitignore` wanneer het logisch is om de bestanden
 
 {/* TODO: Lees meer over conventies voor bestanden en directories in het handboek. */}
 
-## Beheer van gebruikers
+## Tags voor releases {#tags}
 
-Beheer GitHub gebruikers en toegang tot repositories bij voorkeur met GitOps via terraform, zodat wijzigingen door een tweede persoon gecontroleerd kunnen worden.
+Maak Git tags aan met het versienummer van releases. De bestaande infrastructuur voor changesets doet dat automatisch. Voor monorepositories kunnen zo duizenden tags ontstaan, dat is niet erg.
 
-Lees meer in de terraform repository over [het proces van GitHub gebruikers toevoegen](https://github.com/nl-design-system/terraform/blob/main/docs/adding-users.md).
+Gebruikers willen kunnen vertrouwen dat tags nooit achter gewijzigd worden.
 
-## Branches
-
-Er is geen voorgeschreven conventie voor de namen van branches.
-
-Wanneer een specifieke repository wel een conventie gebruikt voor branch-naamgeving, dan is de bedoeling dat je dit kan vinden in `CONTRIBUTING.md`.
+Gebruik Terraform om tag protections in te stellen voor alle repositories waar releases worden gepubliceerd.
 
 ## Backups
 
