@@ -32,7 +32,7 @@ export async function onRequest(context, next) {
       }),
   );
 
-  if (hashes.size) {
+  if (cspRuleElement.length > 0 && hashes.size) {
     const cspRules = cspRuleElement
       .attr('content')
       .split(';')
@@ -41,7 +41,6 @@ export async function onRequest(context, next) {
         cspRule.startsWith('style-src') ? `${cspRule} ${[...hashes.values()].join(' ')} 'unsafe-hashes'` : cspRule,
       )
       .join('; ');
-
     $(cspRuleElement).attr('content', cspRules);
   }
 
