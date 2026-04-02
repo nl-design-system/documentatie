@@ -22,6 +22,7 @@ const cspImgSrcSources = [
   'https://www.gebruikercentraal.nl',
   'https://designsystem.gebruikercentraal.nl',
   'https://media.licdn.com',
+  'https://badge.fury.io',
 ].join(' ');
 
 const cspProdConfig: AstroUserConfig = {
