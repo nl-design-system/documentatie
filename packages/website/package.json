@@ -29,6 +29,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/fira-code": "5.2.7",
+    "@fontsource/fira-sans": "5.2.7",
+    "@fontsource/source-sans-pro": "5.2.5",
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
     "@nl-design-system-candidate/skip-link-react": "1.1.7",
     "@nl-design-system-community/ma-design-tokens": "2.5.0",
