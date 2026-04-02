@@ -44,9 +44,7 @@ import Summary from "./summaries/\_3.3.2-summary.md";
 
 <Summary />
 
-Bijvoorbeeld: "Voornaam", "E-mailadres", "Postcode". Waar het invoerformaat niet vanzelfsprekend is, staat er een instructie bij: "Gebruik het formaat dd-mm-jjjj" of "Minimaal 8 tekens". Zo weet de bezoeker wat er moet worden ingevuld voordat er een fout ontstaat.
-
-Labels zijn zichtbaar en blijven zichtbaar terwijl de bezoeker het veld invult. Zodra het veld focus krijgt, leest een screenreader het label voor — of de alt-tekst als een icoon als label dient. Instructies staan bij het veld en niet alleen in een inleidende tekst bovenaan het formulier.
+Labels zijn permanent zichtbaar en blijven zichtbaar terwijl de bezoeker het veld invult. Een screenreader leest het label of de alt-tekst van een icoon zodra het veld focus krijgt. Instructies staan bij het veld en niet alleen in een inleidende tekst bovenaan het formulier.
 
 ## Veelgemaakte fouten
 
@@ -54,7 +52,7 @@ Labels zijn zichtbaar en blijven zichtbaar terwijl de bezoeker het veld invult. 
 
 Elk invoerveld heeft een zichtbaar label dat beschrijft wat er moet worden ingevuld. Een veld zonder label dwingt de bezoeker om uit de context te raden wat er wordt verwacht. Een screenreader leest alleen "invoerveld" voor zonder verdere informatie.
 
-**Hoe te testen:** bekijk het formulier. Heeft elk veld een zichtbaar label? Klik op het label.
+**Hoe te testen:** bekijk het formulier. Heeft elk veld een zichtbaar label?
 
 <Guideline appearance="dont" title="Invoerveld zonder zichtbaar label">
   <Canvas language="html">
@@ -109,56 +107,6 @@ Een invoerveld heeft een `aria-label` of een visueel verborgen `<label>`, maar g
 </Guideline>
 
 **Wie kan dit oplossen:** een developer vervangt het verborgen label door een zichtbaar label. Een designer maakt ruimte in het ontwerp voor zichtbare labels.
-
-### Zoekveld heeft alleen een icoon als label en dat icoon is niet zichtbaar voor iedereen
-
-Een zoekveld zonder tekstlabel kan acceptabel zijn als de context ondubbelzinnig is — bijvoorbeeld een vergrootglasicoon naast een zoekknop. Maar als dat icoon een contrast van minder dan 3:1 heeft met de achtergrond, is het niet zichtbaar voor bezoekers met verminderd gezichtsvermogen. Het veld heeft dan voor die bezoekers geen herkenbare aanduiding.
-
-**Hoe te testen:** meet het contrast van het vergrootglasicoon ten opzichte van de achtergrond. Is het lager dan 3:1? Dan is het icoon niet voor iedereen zichtbaar en functioneert het niet als label.
-
-<Guideline appearance="dont" title="Zoekveld met een vergrootglasicoon dat onvoldoende contrast heeft">
-  <Canvas language="html">
-    {() => (
-      <p style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-        <input type="search" aria-label="Zoeken" placeholder="Zoeken..." />
-        <button style={{ background: "none", border: "none", padding: "4px" }}>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#CCCCCC" aria-hidden="true">
-            <path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-          </svg>
-        </button>
-      </p>
-    )}
-  </Canvas>
-</Guideline>
-
-<Guideline appearance="do" title="Zoekveld met een zichtbaar tekstlabel">
-  <Canvas language="html">
-    {() => (
-      <p style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-        <label htmlFor="vis-zoek">Zoeken</label>
-        <input type="search" id="vis-zoek" />
-        <button style={{ background: "none", border: "none", padding: "4px" }}>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#333333" aria-hidden="true">
-            <path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-          </svg>
-        </button>
-      </p>
-    )}
-  </Canvas>
-</Guideline>
-
-<Guideline appearance="do" title="Zoekveld met een zoekknop die tekst bevat">
-  <Canvas language="html">
-    {() => (
-      <p style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-        <input type="search" aria-label="Zoeken" />
-        <button>Zoeken</button>
-      </p>
-    )}
-  </Canvas>
-</Guideline>
-
-**Wie kan dit oplossen:** een developer voegt een zichtbaar tekstlabel toe, of een zoekknop met zichtbare tekst. Een designer zorgt dat het icoon voldoende contrast heeft als het de enige visuele aanduiding is.
 
 ### Placeholder wordt gebruikt als label
 
@@ -380,6 +328,48 @@ Dit komt ook voor bij betalingsformulieren (kaartnummer, vervaldatum, CVC) en bi
 
 **Wie kan dit oplossen:** een developer groepeert de velden met `<fieldset>` en `<legend>`.
 
+### Icoon als label is niet duidelijk genoeg
+
+Een label mag een icoon zijn, maar alleen als de betekenis voor iedereen duidelijk is. Een vergrootglas bij een zoekveld of een envelop bij een e-mailveld is herkenbaar. Maar niet elk icoon is vanzelfsprekend. Een trechter-icoon voor filteren, een schuifregelaar-icoon voor voorkeuren of een paperclip voor bijlagen: niet iedere bezoeker begrijpt direct wat zo'n icoon betekent. Het icoon heeft dan een zichtbare tekst nodig om als label te werken.
+
+Daarnaast heeft elk icoon een toegankelijke naam nodig zodat een screenreader het kan voorlezen. Zonder alt-tekst of `aria-label` leest de screenreader niets voor, of alleen de bestandsnaam van de afbeelding.
+
+**Hoe te testen:** bekijk het formulier. Heeft elk veld een label dat je direct begrijpt? Herken je de betekenis van elk icoon zonder erover na te denken? Test met een screenreader: wordt er een duidelijke naam voorgelezen bij het veld?
+
+<Guideline appearance="dont" title="Onduidelijk icoon zonder tekst als label">
+    ```html
+    <!-- Trechter-icoon: betekent dit filteren, sorteren of iets anders? -->
+    <label for="filter">
+      <svg aria-hidden="true"><use href="#icon-funnel" /></svg>
+    </label>
+    <select id="filter">
+      <option>Alle categorieën</option>
+      <option>Elektronisch</option>
+      <option>Kleding</option>
+    </select>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Icoon met zichtbare tekst als label">
+  ```html
+  <label for="filter">
+    <svg aria-hidden="true">
+      <use href="#icon-funnel" />
+    </svg>
+    Filter op categorie
+  </label>
+  <select id="filter">
+    <option>Alle categorieën</option>
+    <option>Elektronisch</option>
+    <option>Kleding</option>
+  </select>
+  ```
+</Guideline>
+
+Als er geen ruimte is voor zichtbare tekst naast het icoon, zorg dan dat het icoon zelf een toegankelijke naam heeft via alt-tekst of een `<title>` in het SVG-element. Maar ook dan geldt: als het icoon onbekend is voor je doelgroep, voeg zichtbare tekst toe.
+
+**Wie kan dit oplossen:** een designer kiest herkenbare iconen en maakt ruimte voor zichtbare tekst bij iconen die niet vanzelfsprekend zijn. Een developer zorgt dat het icoon een toegankelijke naam heeft.
+
 ## Hoe te testen
 
 ### Voor iedereen
@@ -405,6 +395,7 @@ Dit komt ook voor bij betalingsformulieren (kaartnummer, vervaldatum, CVC) en bi
 - [3.3.3 Foutsuggestie](https://nldesignsystem.nl/wcag/3.3.3/): als het systeem weet hoe een fout gecorrigeerd kan worden, biedt het een suggestie aan. Instructies bij het veld verminderen de noodzaak voor suggesties achteraf.
 - [2.5.3 Label in naam](https://nldesignsystem.nl/wcag/2.5.3/): de zichtbare tekst van een label komt overeen met de toegankelijke naam. Relevant als je `aria-label` gebruikt dat afwijkt van het zichtbare label.
 - [1.4.3 Contrast (minimum)](https://nldesignsystem.nl/wcag/1.4.3/): labels en instructietekst voldoen aan de minimale contrasteis van 4,5:1. Lichtgrijze placeholders halen die eis niet.
+- [1.4.11 Contrast van niet-tekstuele content](https://nldesignsystem.nl/wcag/1.4.11/): een icoon dat als label dient, moet een contrast van minimaal 3:1 hebben ten opzichte van de achtergrond.
 
 ## Gerelateerde NL Design System-richtlijnen
 
