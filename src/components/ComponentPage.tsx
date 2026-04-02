@@ -159,7 +159,9 @@ export const HelpImproveComponent = ({ component, headingLevel }: ComponentPageS
   return (
     component && (
       <>
-        <Heading level={headingLevel}>Help om deze component te verbeteren</Heading>
+        <Heading id="help-component-verbeteren" level={headingLevel}>
+          Help om deze component te verbeteren
+        </Heading>
         <Paragraph>
           We vinden het belangrijk dat de component {component.title} goed te gebruiken is door iedereen. Help je mee?
         </Paragraph>
