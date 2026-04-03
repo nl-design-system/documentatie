@@ -2421,6 +2421,8 @@ html[data-theme="dark"] {
 }
 :root {
  --docusaurus-progress-bar-color: var(--ifm-color-primary);
+ -webkit-hyphenate-limit-before: 8;
+ -webkit-hyphenate-limit-after: 4;
  hyphenate-limit-chars: 12 8 4;
  --ma-docsearch-button-background-color: #fff;
  --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
