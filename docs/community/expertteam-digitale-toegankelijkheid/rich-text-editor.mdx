@@ -16,6 +16,10 @@ keywords:
 import { RichTextEditor } from "@site/src/components/RichTextEditor";
 import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
+import "@nl-design-system-community/ma-design-tokens/dist/theme.css";
+import "@utrecht/component-library-css/dist/index.css";
+import "@utrecht/design-tokens/dist/theme.css";
+import "@nl-design-system-community/editor/theme.css";
 import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
 
 # Toegankelijkheid door c met CMS-en
@@ -29,6 +33,10 @@ Momenteel is de Clippy Rich Text Editor volop in ontwikkeling door het NL Design
   </ButtonLink>
   <ButtonLink href="https://github.com/nl-design-system/editor" appearance="secondary-action">
     {"Editor op GitHub"}
+    <IconChevronRight />
+  </ButtonLink>
+  <ButtonLink href="/project/expertteam-digitale-toegankelijkheid/cms-en/preview/" appearance="secondary-action">
+    {"Preview voorbeeld"}
     <IconChevronRight />
   </ButtonLink>
 </ActionGroup>
@@ -47,4 +55,6 @@ De Clippy Rich Text Editor is tevens beschikbaar als React component. Importeer 
 
 ## Demo
 
-<RichTextEditor />
+<div className="ma-theme clippy-theme utrecht-root">
+  <RichTextEditor />
+</div>

@@ -1,6 +1,5 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Canvas } from '@site/src/components/Canvas/Canvas';
-import type { CanvasContainerType } from '@site/src/components/Canvas/Canvas';
 import { ContrastRatio } from '@site/src/components/ContrastRatio';
 import { Guideline } from '@site/src/components/Guideline';
 import Layout from '@theme/Layout';
@@ -130,7 +129,6 @@ const ContrastPage = () => {
     positive: boolean;
     result: boolean;
     content?: ReactNode;
-    container?: CanvasContainerType;
     example?: () => ReactNode;
   }
   const recommendations: Recommendation[] = [
@@ -138,21 +136,18 @@ const ContrastPage = () => {
       positive: true,
       result: contrastRatio >= 4.5,
       content: <>Je mag de kleuren gebruiken voor alle tekst, als je wilt voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
       example: ExampleNormalText,
     },
     {
       positive: true,
       result: contrastRatio >= 3,
       content: <>Je mag de kleuren voor iconen gebruiken, als je wilt voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
       example: ExampleIcon,
     },
     {
       positive: true,
       result: contrastRatio >= 3,
       content: <>Je mag de kleuren gebruiken voor tekst groter dan 24px, als je wilt voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
       example: LargeTextExample,
     },
     {
@@ -161,7 +156,6 @@ const ContrastPage = () => {
       content: (
         <>Je mag de kleuren gebruiken voor vette tekst groter dan 18.5px, als je wilt voldoen aan WCAG 2.2 AA niveau.</>
       ),
-      container: 'document',
       example: BoldTextExample,
     },
     /*
@@ -176,21 +170,18 @@ const ContrastPage = () => {
       positive: false,
       result: contrastRatio >= 3,
       content: <>Je mag de kleuren niet voor iconen gebruiken, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
       example: ExampleIcon,
     },
     {
       positive: false,
       result: contrastRatio >= 4.5,
       content: <>Je mag de kleuren niet gebruiken voor tekst, hiermee zou je niet voldoen aan WCAG 2.2 AA niveau.</>,
-      container: 'document',
       example: ExampleNormalText,
     },
     {
       positive: false,
       result: contrastRatio >= 7,
       content: <>Je mag de kleuren niet gebruiken voor tekst, als je wilt voldoen aan WCAG 2.2 AAA niveau.</>,
-      container: 'document',
       example: ExampleNormalText,
     },
   ];
@@ -264,13 +255,12 @@ const ContrastPage = () => {
               <>
                 <Paragraph>Gebruik deze kleuren voor bijvoorbeeld:</Paragraph>
                 <div>
-                  {dos.map(({ container, content, example, positive }, index) => (
+                  {dos.map(({ content, example, positive }, index) => (
                     <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} figure>
                       <Canvas
                         language="html"
                         code={null}
                         displayCode={false}
-                        container={container}
                         designTokens={{
                           backgroundColor,
                           color,
@@ -297,13 +287,12 @@ const ContrastPage = () => {
                   Deze kleuren moet je <strong>niet gebruiken</strong> voor:
                 </Paragraph>{' '}
                 <div>
-                  {donts.map(({ container, content, example, positive }, index) => (
+                  {donts.map(({ content, example, positive }, index) => (
                     <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content}>
                       <Canvas
                         language="html"
                         code={null}
                         displayCode={false}
-                        container={container}
                         designTokens={{
                           backgroundColor,
                           color,
