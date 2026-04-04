@@ -5,19 +5,92 @@ hide_table_of_contents: true
 sidebar_label: Introductie formulieren
 sidebar_position: 0
 pagination_label: Introductie
-description: Introductie van de richtlijnen voor formulieren van het NL Design System.
+description: Richtlijnen voor toegankelijke en gebruikersvriendelijke formulieren, van de eerste vraag tot de bevestiging na verzending.
 slug: /richtlijnen/formulieren
 keywords:
   - formulier
 ---
 
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/_footer_info.md";
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
-# Introductie richtlijnen NL Design System voor formulieren
+# Richtlijnen voor formulieren
 
-Het NL Design System geeft richtlijnen voor formulieren. Hierbij zijn we uitgegaan van toegankelijkheid, gebruikersvriendelijkheid en consistentie, ondersteund door gebruikersonderzoek.
+<Paragraph lead>
+  Goede formulieren zijn toegankelijk, gebruikersvriendelijk en consistent. Deze richtlijnen helpen je een formulier te
+  maken dat iedereen kan invullen, van een introductie tot bevestiging na succesvol verzenden.
+</Paragraph>
 
-Deze richtlijnen staan gesorteerd op onderwerp en op alfabet. De aanvullende blogpost [Toegankelijke foutmeldingen in formulieren](/blog/toegankelijke-foutmeldingen-formulieren) vertelt in een lopend verhaal hoe foutmeldingen in formulieren op te zetten.
+## Zo gebruik je deze richtlijnen
+
+Een formulier bouwen gaat door verschillende fases. De richtlijnen zijn per onderwerp georganiseerd, maar hieronder staat welke onderwerpen relevant zijn per fase van het proces. Doe je gebruikersonderzoek naar een formulier? Deel je bevindingen dan op [gebruikersonderzoeken.nl](http://gebruikersonderzoeken.nl/), zodat de hele community ervan kan leren.
+
+### Ontwerp een duidelijk formulier
+
+Zorg dat het formulier duidelijk en goed te gebruiken is voor iedereen, ook voor mensen die een toetsenbord of screenreader gebruiken.
+
+Gebruik herkenbare patronen: gebruikers herkennen radiobuttons als rondjes en checkboxes als vierkantjes, en die werken ook anders met toetsenbordbediening. Gebruik descriptions om extra uitleg te geven bij velden, maar houd ze kort.
+
+Gebruik geen placeholder als vervanging van een label. Zodra iemand begint te typen, verdwijnt de placeholder en is de uitleg weg.
+
+- [Visueel ontwerp](/richtlijnen/formulieren/visueel-ontwerp): Zichtbare invoervelden, goed kleurcontrast en een logische volgorde.
+- [Labels](/richtlijnen/formulieren/labels): Elk veld heeft een zichtbaar en duidelijk label dat altijd zichtbaar blijft.
+- [Descriptions](/richtlijnen/formulieren/descriptions): Geef extra uitleg bij velden waar dat nodig is, geplaatst tussen label en invoerveld.
+- [Placeholders](/richtlijnen/formulieren/placeholders): Gebruik placeholders alleen als aanvulling, nooit als vervanging van een label.
+- [Uit te vragen informatie](/richtlijnen/formulieren/vragen): Stel alleen wat je nodig hebt en leg uit waarom je het vraagt.
+- [Wanneer welk element?](/richtlijnen/formulieren/wanneer-welk-form-element): Kies het meest gebruiksvriendelijke invoerelement, zodat zoveel mogelijk mensen het formulier kunnen invullen.
+- [Fieldsets](/richtlijnen/formulieren/fieldsets): Groepeer samenhangende velden in een `<fieldset>` met een beschrijvende `<legend>`, zodat de samenhang zowel visueel als in code duidelijk is.
+
+### Help de gebruiker fouten te voorkomen
+
+Goede formulieren voorkomen fouten voordat ze ontstaan. Vertel vooraf welke documenten nodig zijn en welke velden verplicht zijn. Gebruik 'verplicht' of 'niet verplicht' als aanduiding. 'optioneel' is voor laaggeletterde lezers lastig en een `*` asterisk vereist voorkennis.
+
+Keur ingevoerde gegevens niet te snel af. Iemand die een telefoonnummer met spaties invoert, bedoelt hetzelfde als zonder. Los het formaat van de invoer dus op in de afhandeling van het formulier. Zo zorg je dat gebruikers een formulier makkelijk en succesvol kunnen invullen.
+
+Gebruik foutmeldingen die uitleggen wat er moet worden aangepast als er toch iets misgaat. Vertel de gebruiker niet alleen dat er iets fout is, maar ook hoe ze het kunnen oplossen.
+
+- [Voorkom fouten](/richtlijnen/formulieren/voorkom-fouten): Geef duidelijkheid over verplichte velden, geldige waarden en autocomplete, en maak het mogelijk een inzending te controleren of aan te passen.
+- [Foutmeldingen](/richtlijnen/formulieren/foutmeldingen): Geef foutmeldingen in tekst (niet alleen met kleur), op het juiste moment, met een samenvatting boven het formulier.
+- [Status](/richtlijnen/formulieren/status): Informeer gebruikers over veranderingen op de pagina ook via screenreaders en bij inzoomen. Geef gebruikers voldoende tijd om statusberichten te lezen.
+
+### Zorg voor goede bediening
+
+Het formulier moet voor iedereen bedienbaar zijn, met een muis, toetsenbord, screenreader of andere hulpmiddelen. Controleer of het formulier volledig met het toetsenbord te bedienen is en of de focusvolgorde logisch is. Links in een formulier zijn voor aanvullende informatie, zoals algemene voorwaarden of privacybeleid. Door ze boven het gerelateerde veld te zetten niet in het label kan iedereen ze gebruiken.
+
+- [Toetsenbord](/richtlijnen/formulieren/toetsenbord): Zorg dat het formulier werkt met alleen een toetsenbord en gebruik geen positieve tabindex.
+- [Buttons](/richtlijnen/formulieren/buttons): Gebruik duidelijke buttontekst die beschrijft wat de button doet, en verzend het formulier nooit automatisch.
+- [Links](/richtlijnen/formulieren/links): Plaats links boven het gerelateerde formulierveld en geef aan als een link in een nieuwe tab opent.
+
+### Begeleid de gebruiker door meerdere stappen
+
+Deel een formulier op in stappen wanneer de hoeveelheid vragen of de complexiteit dat rechtvaardigt.
+
+Zorg voor een introductiepagina die de gebruiker van te voren vertelt welke informatie ze nodig hebben. Gebruik geen tijdsindicatie, deze zorgt bij veel gebruikers voor stress en verwarring.
+
+Toon de voortgang boven het formulier en zorg voor consistente navigatie. Geef gebruikers de mogelijkheid om tussentijds op te slaan, zeker als er bijlagen nodig zijn.
+
+Bied als laatste stap een samenvatting van alle ingevoerde gegevens aan voordat het formulier wordt verzonden.
+
+- [Meerdere stappen](/richtlijnen/formulieren/meerdere-stappen): Toon voortgang, zorg voor consistente navigatie en bied een samenvatting vóór verzending.
+- Verzamelde inzichten in [de Intropagina GitHub Discussion](https://github.com/orgs/nl-design-system/discussions/371).
+- Verzamelde inzichten in [de Controlepagina GitHub Discussion](https://github.com/orgs/nl-design-system/discussions/372).
+- Verzamelde inzichten in [de Opslaan of Stoppen GitHub Discussion](https://github.com/orgs/nl-design-system/discussions/378).
+
+### Bevestig de verzending en bied hulp
+
+Laat de gebruiker weten dat het formulier goed is verzonden, welke informatie er is verstuurd en wat de vervolgstappen zijn. Zorg daarnaast dat hulp makkelijk te vinden is: niet iedereen kan opbellen, dus bied meerdere contactmogelijkheden aan. Zet contactinformatie bovenaan het formulier, niet alleen in de footer.
+
+- [Bevestigingspagina](/richtlijnen/formulieren/bevestigingspagina): Vermeld de succesmelding, vertel wat de vervolgstappen zijn en zorg dat de gebruiker contact op kan nemen bij vragen.
+- [Verzamelde inzichten over de Bevestigingspagina van een meerstappenformulier](https://github.com/orgs/nl-design-system/discussions/373) in een GitHub Discussion.
+- [Bied contactmogelijkheden](/richtlijnen/formulieren/vragen/manieren-voor-contact): Zorg voor meerdere manieren om contact op te nemen, want niet iedereen kan bellen of appen.
+
+## Formulier testen
+
+Gebruik de [test checklist voor formulieren](/richtlijnen/formulieren/testen) om stap voor stap te controleren of je formulier voldoet aan de richtlijnen van NL Design System. De checks zijn geordend per fase en bevatten zowel handmatige als geautomatiseerde tests.
+
+## Alle richtlijnen
+
+De richtlijnen zijn ook op onderwerp te vinden.
 
 <OverviewPage excludeDocIDs={["richtlijnen/formulieren/README"]} />
 
