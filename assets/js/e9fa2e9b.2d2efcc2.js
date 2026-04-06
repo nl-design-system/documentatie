@@ -22,14 +22,14 @@
    }
   },
   70177(e, n, t) {
-   (t.r(n), t.d(n, { assets: () => i, contentTitle: () => l, default: () => p, frontMatter: () => d, metadata: () => a, toc: () => r }));
-   const a = JSON.parse('{"id":"handboek/developer/aan-de-slag/index","title":"Aan de slag met NL Design System","description":"Als developer aan de slag met NL Design System","source":"@site/docs/handboek/developer/02-aan-de-slag/index.md","sourceDirName":"handboek/developer/02-aan-de-slag","slug":"/handboek/developer/aan-de-slag/","permalink":"/handboek/developer/aan-de-slag/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/02-aan-de-slag/index.md","tags":[],"version":"current","frontMatter":{"title":"Aan de slag met NL Design System","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Aan de slag","pagination_label":"Aan de slag","description":"Als developer aan de slag met NL Design System"},"sidebar":"handboek","previous":{"title":"Introductie","permalink":"/handboek/developer/introductie"},"next":{"title":"Prototypes","permalink":"/handboek/developer/aan-de-slag/prototypes/"}}');
+   (t.r(n), t.d(n, { assets: () => r, contentTitle: () => l, default: () => p, frontMatter: () => d, metadata: () => a, toc: () => i }));
+   const a = JSON.parse('{"id":"handboek/developer/aan-de-slag/index","title":"Aan de slag met NL Design System","description":"Als developer aan de slag met NL Design System","source":"@site/docs/handboek/developer/02-aan-de-slag/index.md","sourceDirName":"handboek/developer/02-aan-de-slag","slug":"/handboek/developer/aan-de-slag/","permalink":"/handboek/developer/aan-de-slag/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/developer/02-aan-de-slag/index.md","tags":[],"version":"current","frontMatter":{"title":"Aan de slag met NL Design System","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Aan de slag","pagination_label":"Aan de slag","description":"Als developer aan de slag met NL Design System","slug":"/handboek/developer/aan-de-slag/"},"sidebar":"handboek","previous":{"title":"Introductie","permalink":"/handboek/developer/introductie"},"next":{"title":"Prototypes","permalink":"/handboek/developer/prototypes/"}}');
    var s = t(86070),
     o = t(18439);
-   const d = { title: 'Aan de slag met NL Design System', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aan de slag', pagination_label: 'Aan de slag', description: 'Als developer aan de slag met NL Design System' },
+   const d = { title: 'Aan de slag met NL Design System', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Aan de slag', pagination_label: 'Aan de slag', description: 'Als developer aan de slag met NL Design System', slug: '/handboek/developer/aan-de-slag/' },
     l = 'Als developer aan de slag met NL Design System',
-    i = {},
-    r = [];
+    r = {},
+    i = [];
    function c(e) {
     const n = { h1: 'h1', header: 'header', ...(0, o.R)(), ...e.components },
      { OverviewPage: t } = n;
