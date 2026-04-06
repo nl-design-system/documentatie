@@ -8,6 +8,7 @@ description: Als developer Open Source ontwikkelen met NL Design System
 keywords:
   - developer
   - open source
+slug: /handboek/developer/open-source-conventie/
 ---
 
 # Conventies voor Open Source ontwikkelen
