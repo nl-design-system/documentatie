@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Design Systems
 pagination_label: Design Systems
 description: Als developer Design Systems maken met NL Design System
+slug: /handboek/developer/design-systems/
 ---
 
 # Design Systems maken met NL Design System
