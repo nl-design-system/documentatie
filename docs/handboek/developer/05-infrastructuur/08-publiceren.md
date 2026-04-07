@@ -1,0 +1,145 @@
+---
+title: Publiceren van npm packages
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Publiceren van npm packages
+pagination_label: Publiceren van npm packages
+description: Publiceren van npm packages
+slug: /handboek/developer/npm-publish/
+keywords:
+  - publiceren
+  - publish
+  - npm
+  - package
+  - openid connect
+  - oidc
+---
+
+<!--
+De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd
+- Als developer wil ik weten hoe ik een package kan publiceren
+- Als developer/maintainer wil ik weten hoe ik mijn repository moet inrichten om packages te publiceren via Changesets
+- Als DevOps Engineer wil ik dat de community kan troubleshooten bij publiceren, omdat eventuele foutmeldingen bij problemen vaak onduidelijk zijn
+-->
+
+# Publiceren van npm packages
+
+Het publiceren van NL Design System packages gaat altijd via GitHub Actions pipelines.
+Dat is handig en veiliger dan handmatig publiceren.
+We volgen hierbij de Changesets-workflow: bij elke wijziging die je wilt publiceren voorzie je die gelijk van de tekst voor de changelog, en je publiceert op een goed moment één of meerdere wijzigingen door een Pull Request goed te keuren.
+
+Op deze pagina lees je meer over de technische infrastructuur:
+
+- Hoe GitHub Actions is ingericht om publiceren mogelijk te maken.
+- Hoe publiceren met OpenID Connect werkt.
+- Waarom de eerste publicatie van een nieuw package anders is.
+
+Lees hier meer over het voorbereiden van een release bij: [Nieuwe versies uitbrengen met Changesets](/handboek/developer/changeset-conventie/).
+
+## GitHub Actions inrichten met de Changesets action
+
+De relevante regels in de GitHub Actions workflow zijn als volgt:
+
+```yaml
+publish-npm:
+  environment:
+    name: publish
+
+  permissions:
+    contents: read
+    id-token: write
+
+  steps:
+    - name: Publish to npm Registry
+      uses: changesets/action@6a0a831ff30acef54f2c6aa1cbbc1096b066edaf # v1.7.0
+      id: changeset
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
+        GIT_AUTHOR_NAME: "NL Design System"
+        GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
+        GIT_COMMITTER_NAME: "NL Design System"
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+```
+
+Goed om te weten:
+
+- De job die een publish uitvoert, heeft schrijf-rechten nodig die andere jobs niet nodig hebben.
+  Om je npm package zo goed mogelijk te beveiligen, gebruikt deze deze job een aparte [GitHub environment](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments) die we `publish` noemen.
+  De publish omgeving kan alleen gebruikt worden wanneer een pull request is gemerged naar de default branch.
+  Daarmee zorgen we dat de access tokens alleen beschikbaar zijn voor code die voldoet aan alle verplichte code reviews en checks.
+- Via `env` wordt `GITHUB_TOKEN` overschreven (met `secrets.GH_TOKEN`).
+  Deze token wordt apart beschikbaar gesteld in de `publish` environment.
+  De reden dat dit token wordt gebruikt (en niet de conventionele `secrets.GITHUB_TOKEN`) is dat de action een andere PR opent/updatet, en GitHub anders geen automatische checks start als ingebouwde beveiliging tegen infinite loops.
+  Daarnaast zorgt dit ervoor dat de commits en PRs op naam staan van de bot `nl-design-system-ci`.
+- Onder `permissions` worden de rechten van `GITHUB_TOKEN` ingesteld.
+  Omdat `GH_TOKEN` wordt gebruikt is `contents: read` voldoende.
+  `id-token: write` is nodig voor OpenID Connect, waarover je hieronder meer leest.
+
+## Publiceren via OpenID Connect
+
+### Nieuwe versies van bestaande packages publiceren
+
+We gebruiken OpenID Connect om packages te publiceren.
+Daarmee wordt bij een release veilig en automatisch een eenmalig token tussen GitHub Actions en de npm Registry uitgewisseld.
+Zo kan npm publiceren zonder een vast npm-token te hoeven mee te geven.
+
+Dit heeft als voordeel dat:
+
+- Er geen handmatig beheerde publishing tokens nodig zijn.
+- Gelekte secrets minder risico opleveren, omdat er geen vast token is.
+- Publicaties aantoonbaar uit de juiste repository en workflow komen.
+
+### Nieuwe packages publiceren
+
+Een beperking is dat OpenID Connect alleen werkt voor packages die al gepubliceerd zijn.
+De eerste publicatie van een nieuw package wordt dus nog wel met een npm token gedaan.
+Een kernteam admin kan jou helpen om deze in te stellen.
+Na die eerste publicatie kun je OpenID Connect gebruiken voor alle volgende versies.
+
+Stappen in het kort:
+
+1. Vraag een kernteam admin om de npm token in te stellen.
+2. Merge de changesets publish PR die de nieuwe package zal publiceren.
+3. De kernteam admin configureert trusted publishing via OpenID Connect in npmjs.org.
+4. Publiceer vervolgversies via de normale GitHub Actions release pipeline.
+
+## Veelvoorkomende vragen
+
+Soms lukt het publiceren van een package niet.
+De foutmelding die je in de GitHub Actions pipeline krijgt wijst vaak niet direct de oorzaak aan.
+
+### Ik krijg `E404 Not Found` tijdens publiceren
+
+Controleer in deze volgorde:
+
+1. Bestaat het package al op npmjs.com?
+2. Is Trusted publishing correct ingesteld (repository, workflow-pad, environment)?
+3. Komt het workflow-pad exact overeen, inclusief bestandsnaam en extensie (bijvoorbeeld: `yaml` vs. `yml`)?
+4. Heeft de workflow de `id-token: write` permission?
+5. Draait de release op Node.js 24 met een recente npm-versie?
+
+Als het package nog nooit is gepubliceerd, voer dan eerst een eenmalige publicatie uit met een npm token.
+
+### Ik krijg een `E403 Forbidden` tijdens publiceren
+
+Controleer in deze volgorde:
+
+1. Betreft het een private package?
+   Controleer dat de er een (read-only) npm-token is ingesteld zodat de huidige versie kan worden uitgelezen tijdens het publiceren.
+2. Is de package niet al gepubliceerd?
+   Soms zie je de nieuwste versie nog niet door cache.
+3. Is de package _unpublished_?
+   Versienummers kunnen dan niet worden hergebruikt.
+   `npm view <package> time` om alle versies (inclusief unpublished) te zien.
+
+### Ik krijg een melding over een verlopen npm token
+
+Bij OpenID Connect is een npm token niet nodig voor reguliere releases.
+Zo'n foutmelding betekent vaak dat de workflow nog niet volledig via Trusted publishing publiceert.
+Controleer dan opnieuw de OIDC-instellingen in npm en de workflow permissions.
+
+### Waar vind ik meer technische achtergrond?
+
+- [Trusted publishing op npm](https://docs.npmjs.com/trusted-publishers)
+- [OpenID Connect in GitHub Actions](https://docs.github.com/en/actions/concepts/security/openid-connect)
