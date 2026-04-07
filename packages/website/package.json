@@ -29,7 +29,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/fira-code": "5.2.7",
+    "@fontsource/fira-sans": "5.2.7",
+    "@fontsource/source-sans-pro": "5.2.5",
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
+    "@nl-design-system-candidate/skip-link-react": "1.1.7",
+    "@nl-design-system-community/ma-design-tokens": "2.5.0",
     "@utrecht/body-css": "2.0.1",
     "@utrecht/body-react": "0.0.10",
     "@utrecht/page-body-css": "1.0.1",
@@ -44,6 +49,7 @@
     "@astrojs/react": "5.0.0",
     "@astrojs/sitemap": "3.7.1",
     "@astrojs/ts-plugin": "1.10.7",
+    "@nl-design-system-unstable/postcss-remove-unused-design-tokens": "0.0.2",
     "@nl-design-system/component-progress": "1.0.7",
     "@nl-design-system/tsconfig": "1.0.5",
     "@types/react": "18.3.27",
