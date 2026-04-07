@@ -44,6 +44,7 @@
     "@astrojs/react": "5.0.0",
     "@astrojs/sitemap": "3.7.1",
     "@astrojs/ts-plugin": "1.10.7",
+    "@nl-design-system-unstable/postcss-remove-unused-design-tokens": "0.0.2",
     "@nl-design-system/component-progress": "1.0.7",
     "@nl-design-system/tsconfig": "1.0.5",
     "@types/react": "18.3.27",

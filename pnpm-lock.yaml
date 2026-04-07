@@ -459,6 +459,9 @@ importers:
       '@astrojs/ts-plugin':
         specifier: 1.10.7
         version: 1.10.7
+      '@nl-design-system-unstable/postcss-remove-unused-design-tokens':
+        specifier: 0.0.2
+        version: 0.0.2
       '@nl-design-system/component-progress':
         specifier: 1.0.7
         version: 1.0.7
@@ -3464,6 +3467,9 @@ packages:
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18 || ^19
+
+  '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2':
+    resolution: {integrity: sha512-nIgtDusYF1UpiefHojQCJ7BhT3dlH5xBDGfB0j4MG9WlJaFK4rXuSpZMWlpmxe6KgRotUXL6k5QLbJ6aGCVZxg==}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0':
     resolution: {integrity: sha512-Ax1JW5KSUJUnfkFVDwzPHvpD61HMirn6Kp2Gu5QkHIEqwLjkD6P3/dtwKMJZq8dUGzoP/9XwMNcugLhB7Z0Qlg==}
@@ -15407,6 +15413,8 @@ snapshots:
       '@nl-design-system-candidate/heading-react': 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
       clsx: 2.1.1
       react: 18.3.1
+
+  '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2': {}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0': {}
 
