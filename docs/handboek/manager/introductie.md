@@ -30,12 +30,12 @@ Deelname betekent directe invloed. Je beslist mee over nieuwe bouwblokken, profi
 ## Samenwerken in een actieve community met brede expertise
 Sinds 2018 uitgegroeid tot een community met 800+ specialisten die werkzaam zijn voor de overheid. Dit zijn medewerkers van Rijksoverheid, uitvoeringsorganisaties en gemeenten, maar ook hun leveranciers. 
 
-###De Community
+### De Community
 - Deelt kennis
 - Valideert en verbeterd bestaande oplossingen
 - Draagt missende onderdelen bij voor hergebruik
 
-###Het Kernteaam
+### Het Kernteaam
 - Faciliteert de samenwerking binnen de Community
 - Voert regie op de kwaliteit van het design system ecosysteem
 - werkt toe naar standaardisatie
