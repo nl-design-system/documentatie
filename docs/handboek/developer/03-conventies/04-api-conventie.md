@@ -175,7 +175,7 @@ Combineer je eigen props met de standaard HTML-attributen van het onderliggende 
 ```tsx
 type ButtonSize = "sm" | "md" | "lg";
 
-export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: ButtonSize;
 }
 
