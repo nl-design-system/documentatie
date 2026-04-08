@@ -11,34 +11,35 @@ description: Waarom zou je als manager investeren in NL Design System?
   - waarom een design system
 ---
 
-# Voor managers
+# Waarom NL Design System
+Digitale overheidsdiensten delen uitdagingen als wettelijke eisen, klantgerichtheid en onderhoud. NL Design System versimpelt en versnelt het werk door samenwerking aan generieke bouwblokken. Deze eerste zin moet anders. Het gaat namelijk niet snel... het is robuust...
 
-_Verbeter je online dienstverlening met NL Design System_
+NL Design System is een open source ecosysteem van design systems bij overheidsorganisaties. Het bestaat uit herbruikbare bouwblokken, duidelijke richtlijnen en bewezen best practices met als doel toegankelijke, gebruiksvriendelijke en consistente digitale diensten te maken.
 
-Digitale overheidsdiensten delen uitdagingen als wettelijke eisen, klantgerichtheid en onderhoud. NL Design System versimpelt en versnelt het werk door samenwerking aan generieke bouwblokken.
+## Waarom aansluiten loont
+Deelname betekent directe invloed. Je beslist mee over nieuwe bouwblokken, profiteert van wat er al is en maakt gebruik van de expertise van het NL Design System kernteam en de Community.
 
-## Voordeel van meedoen
+## Wat het concreet oplevert
+- Een herbruikbare oplossing geschikt voor verschillende systemen.
+- Een oplossing die techniek en huisstijl los van elkaar registreert en zo meebeweegt met doorontwikkelingen en aanpassingen in systemen en in huisstijl.
+- Online dienstverlening die beter aansluit bij de gebruikersbehoefte door validatie bij eindgebruikers.
+- Gefaseerd instappen mogelijk op een manier die aansluit bij de strategie binnen de eigen organisatie
+- Aansluiten bij digitale strategie van de overheid.
+- Mogelijkheid om op front-end toete werken naar de 1 overheid beleving
 
-Je beslist mee over nieuwe bouwblokken, profiteert van wat er al is en maakt gebruik van de expertise van kernteam en community.
+## Samenwerken in een actieve community met brede expertise
+Sinds 2018 uitgegroeid tot een community met 800+ specialisten die werkzaam zijn voor de overheid. Dit zijn medewerkers van Rijksoverheid, uitvoeringsorganisaties en gemeenten, maar ook hun leveranciers. 
 
-### Kenmerken op een rij
+###De Community
+- Deelt kennis
+- Valideert en verbeterd bestaande oplossingen
+- Draagt missende onderdelen bij voor hergebruik
 
-- **Concrete oplossingen** om makkelijker te voldoen aan wettelijke eisen (zoals Digitoegankelijk, Wmebv)
-- **Gebruikersonderzoek** zodat dienstverlening beter en efficiënter wordt.
-- **Meedoen is gratis** en kan stap voor stap. Je kosten zitten in resources en de tijd waarin ze samenwerken.
-- **Open source** en dus makkelijk op meerdere plekken te gebruiken.
-- **Generieke architectuur** die overal bruikbaar is, ook in jouw systemen en huisstijl.
-- **Privacy en security** best practices toegepast.
-- **Meerjarig project** dat onderdeel is van de digitale strategie van de overheid.
+###Het Kernteaam
+- Faciliteert de samenwerking binnen de Community
+- Voert regie op de kwaliteit van het design system ecosysteem
+- werkt toe naar standaardisatie
 
-## Community voor en door de overheid
+## Meedoen?
+Link naar inschrijving of meer informatie
 
-Sinds 2018 uitgegroeid tot een community met 500+ specialisten van gemeenten, Rijk en alles ertussen. Plus hun leveranciers.
-
-## Samenwerking
-
-Organisaties en hun leveranciers maken, delen en gebruiken onderdelen. Zelf èn samen. Het kernteam waarborgt kwaliteit en voert regie op de samenwerking.
-
-## Waaruit het design system bestaat
-
-Bouwstenen om toegankelijke en gebruiksvriendelijke webapplicaties te maken, richtlijnen om ze te duiden en best practices om ze te combineren.
