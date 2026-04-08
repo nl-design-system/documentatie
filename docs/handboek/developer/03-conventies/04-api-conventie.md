@@ -168,8 +168,6 @@ interface ButtonProps {
 }
 ```
 
-Dit sluit ook aan op de conventie bij [Breaking changes voorkomen](#breaking-changes-voorkomen): begin met een union type (ook met één optie), zodat uitbreidingen geen breaking change zijn.
-
 ### Props typen met uitbreiding van HTML-attributen
 
 Combineer je eigen props met de standaard HTML-attributen van het onderliggende element via `React.ComponentPropsWithoutRef`. Zo hoef je geen native attributen (zoals `disabled`, `aria-*`, `data-*`) zelf te herhalen:
