@@ -17,8 +17,6 @@ _Verbeter je online dienstverlening met NL Design System_
 
 Digitale overheidsdiensten delen uitdagingen als wettelijke eisen, klantgerichtheid en onderhoud. NL Design System versimpelt en versnelt het werk door samenwerking aan generieke bouwblokken.
 
-(Zie ook: [Printvriendelijke versie](/factsheets/managers))
-
 ## Voordeel van meedoen
 
 Je beslist mee over nieuwe bouwblokken, profiteert van wat er al is en maakt gebruik van de expertise van kernteam en community.
