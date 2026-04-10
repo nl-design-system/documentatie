@@ -1,32 +1,47 @@
 ---
-import { siteName, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { siteName, siteTitle, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { Root } from '@components/root/root';
+import { Body } from '@components/body/body';
+import { PageBody } from '@components/page-body/page-body';
+import { PageLayout } from '@components/page-layout/page-layout';
+import { SkipLink } from '@components/skip-link/skip-link.tsx';
+
+import '@fontsource/fira-code';
+import '@fontsource/fira-sans/700';
+import '@fontsource/source-sans-pro';
+import '@fontsource/source-sans-pro/700.css';
 
 interface Props {
-  title?: string;
+  title: string;
+  titleSm?: string;
   description?: string;
   lang?: 'nl' | 'en';
   seoImage?: string;
   seoImageAlt?: string;
   keywords?: string[];
   index?: boolean;
+  follow?: boolean;
 }
 
-const { title, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true } = Astro.props;
+const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
 
+const documentTitle = `${titleSm || title} · ${siteTitle}`;
 const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
 const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
 const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
 const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
+const _follow = follow === undefined ? index : follow;
+const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
 ---
 
-<html lang={lang} dir="ltr">
+<Root lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
+    <title>{documentTitle}</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
@@ -37,14 +52,14 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
     <link rel="canonical" href={canonicalUrl} />
     <meta name="description" content={description} />
     <meta name="keywords" content={[..._keywords].join(', ')} />
-    <meta name="robots" content={index ? 'index' : 'noindex'} />
+    <meta name="robots" content={_robots} />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:image" content={_seoImage} />
     <meta property="og:image:alt" content={_seoImageAlt} />
     <meta property="og:description" content={description} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={documentTitle} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:locale" content={lang} />
     <meta property="twitter:card" content={twitterCard} />
@@ -52,24 +67,38 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
     <slot name="head" />
   </head>
 
-  <body>
-    <header>
-      TODO: PageHeader
-      <h2 id="hoofdnavigatie-label">Hoofdmenu</h2>
-      <nav aria-labelledby="hoofdnavigatie-label">TODO: Hoofd navigatie</nav>
-    </header>
-    <h2 id="breadcrumb-label">Kruimelpad</h2>
-    <nav aria-labelledby="breadcrumb-label">TODO: Breadcrumb navigatie</nav>
-    <main>
-      <slot />
-    </main>
-    <footer>
-      TODO: PageFooter
-      <h2 id="site-navigatie-label">Submenu</h2>
-      <nav aria-labelledby="site-navigatie-label">TODO: Footer navigatie</nav>
-    </footer>
-  </body>
-</html>
+  <Body>
+    <SkipLink href="#main">Naar de inhoud</SkipLink>
+    <PageLayout>
+      <header>
+        TODO: PageHeader
+        <nav aria-labelledby="hoofdnavigatie-label">
+          <h2 id="hoofdnavigatie-label">Hoofdmenu</h2>
+          TODO: Hoofd navigatie
+        </nav>
+      </header>
+
+      <PageBody>
+        <nav aria-labelledby="breadcrumb-label">
+          <h2 id="breadcrumb-label">Kruimelpad</h2>
+          TODO: Breadcrumb navigatie
+        </nav>
+
+        <main id="main">
+          <slot />
+        </main>
+      </PageBody>
+
+      <footer>
+        TODO: PageFooter
+        <nav aria-labelledby="site-navigatie-label">
+          <h2 id="site-navigatie-label">Submenu</h2>
+          TODO: Footer navigatie
+        </nav>
+      </footer>
+    </PageLayout>
+  </Body>
+</Root>
 
 <style is:global>
   /* These styles are temporary to let axe pass. When actual components are

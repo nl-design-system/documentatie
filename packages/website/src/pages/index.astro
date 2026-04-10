@@ -7,7 +7,7 @@ const docs = await getCollection('docs');
 const wcag = await getCollection('wcag');
 const components = await getCollection('components');
 
-const sections: Record<string, { title: string; id: string }[]> = {};
+const sections: Record<string, { title: string; titleSm?: string; id: string }[]> = {};
 
 type DocsArray = typeof docs;
 
@@ -34,7 +34,7 @@ const getDuplicateTitles = (docs: DocsArray) => {
   if (!sections[section]) {
     sections[section] = [];
   }
-  sections[section].push({ title: doc.data.title || doc.id, id: doc.id });
+  sections[section].push({ title: doc.data.title, titleSm: doc.data.title_sm, id: doc.id });
 });
 
 const duplicates = getDuplicateTitles(docs);
@@ -46,14 +46,44 @@ const placeholderTitle = '(geen paginatitel)';
   {
     Object.entries(sections).map(([section, list]) => (
       <details open>
-        <summary>{section}</summary>
-        <ul>
-          {list.map((item) => (
-            <li>
-              <a href={item.id}>{item.title ?? placeholderTitle}</a>
-            </li>
-          ))}
-        </ul>
+        <summary>
+          <strong>{section}</strong>
+        </summary>
+        <table border="1">
+          <thead>
+            <tr>
+              <td>title</td>
+              <td>title small</td>
+              <td>document title</td>
+            </tr>
+          </thead>
+          {list.map((item) => {
+            const itemParts = [
+              [...(item.titleSm || item.title)].splice(0, 60).join(''),
+              [...(item.titleSm || item.title)].splice(60).join(''),
+            ].filter(Boolean);
+
+            return (
+              <tr>
+                <td>
+                  <a href={item.id}>{item.title}</a>
+                </td>
+                <td>{item.titleSm}</td>
+                <td>
+                  {itemParts.length === 2 ? (
+                    <>
+                      {itemParts[0]}
+                      <mark>{itemParts[1]}</mark>
+                    </>
+                  ) : (
+                    itemParts[0]
+                  )}{' '}
+                  · NL Design System
+                </td>
+              </tr>
+            );
+          })}
+        </table>
       </details>
     ))
   }

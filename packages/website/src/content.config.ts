@@ -8,22 +8,38 @@ type GlobOptions = Parameters<typeof glob>[0];
 const hasUnderscoredSegment = (path: string) => path.split('/').some((segment) => segment.startsWith('_'));
 
 /**
- * Extend of the build in glob to filter out entries with an underscore
- * prefixed folder or file. The glob pattern does not allow to filter out both
- * thus an extend was needed for a second filter pass
+ * Extend of the build in glob to:
+ * 1. Filter out entries with an underscore prefixed folder or file.
+ *    The glob pattern does not allow to filter out both
+ *    thus an extend was needed for a second filter pass
+ * 2. Add pages with the `unlisted` flag to the global unlistedPages set. These
+ *    pages won't end up in the sitemap
  */
-export function globIgnoringUnderscores(options: GlobOptions): Loader {
+export function customGlob(options: GlobOptions): Loader {
   const inner = glob(options);
 
   return {
     ...inner,
+    name: 'Content Loader',
     async load(context: LoaderContext) {
       await inner.load(context);
 
       // After loading, remove entries whose path contains an underscore prefixed segment
-      for (const [id] of context.store.entries()) {
+      for (const [id, { data }] of context.store.entries()) {
         if (hasUnderscoredSegment(id)) {
           context.store.delete(id);
+          continue;
+        }
+
+        const result = schema.safeParse(data);
+        if (result.success) {
+          if (result.data.title.length >= 60 && !result.data.title_sm) {
+            context.logger.warn(`No title_sm provided for ${id}`);
+          }
+
+          if (result.data.unlisted) {
+            globalThis.unlistedPages.add(`${id}/`);
+          }
         }
       }
     },
@@ -72,23 +88,23 @@ function generateId(options) {
 }
 
 const schema = z.object({
-  title: z.string().optional(),
+  title: z.string(),
+  title_sm: z.string().max(24).optional(),
   description: z.string().optional(),
   lang: z.enum(['nl', 'en']).optional(),
   slug: z.string().optional(),
   unlisted: z.boolean().optional(),
-  image: z.string().optional(),
+  image: z.httpUrl().optional(),
   image_alt: z.string().optional(),
   keywords: z.array(z.string()).optional(),
 });
 
 const docs = defineCollection({
-  loader: globIgnoringUnderscores({
+  loader: customGlob({
     base: './../../docs',
     pattern: [
       'baseline/**/!(_)*.{md,mdx}',
       'community/**/!(_)*.{md,mdx}',
-      'componenten/**/!(_)*.{md,mdx}',
       'footer/**/!(_)*.{md,mdx}',
       'handboek/**/!(_)*.{md,mdx}',
       'open-source/**/!(_)*.{md,mdx}',
@@ -104,7 +120,7 @@ const docs = defineCollection({
 });
 
 const components = defineCollection({
-  loader: globIgnoringUnderscores({
+  loader: customGlob({
     base: './../../docs',
     pattern: ['componenten/**/!(_)*.{md,mdx}'],
     generateId,
@@ -113,7 +129,7 @@ const components = defineCollection({
 });
 
 const wcag = defineCollection({
-  loader: globIgnoringUnderscores({
+  loader: customGlob({
     base: './../../docs',
     pattern: ['wcag/**/!(_)*.{md,mdx}'],
     generateId,

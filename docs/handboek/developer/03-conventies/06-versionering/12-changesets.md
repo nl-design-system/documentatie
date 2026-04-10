@@ -54,7 +54,7 @@ Gebruik de volgende richtlijnen bij het kiezen van een versie:
 - **`minor`** → Voor nieuwe functionaliteiten.
 - **`major`** → Voor breaking changes.
 
-Voor meer informatie over het kiezen van de juiste versie, zie [SemVer: Major, Minor of Patch?](./12-changes.md).
+Voor meer informatie over het kiezen van de juiste versie, zie [Semantic Versioning](/handboek/developer/semver-conventie/).
 
 ## Schrijf een changelog
 

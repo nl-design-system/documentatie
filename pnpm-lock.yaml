@@ -146,6 +146,9 @@ importers:
       eslint-plugin-astro:
         specifier: 1.6.0
         version: 1.6.0(eslint@9.39.2(jiti@1.21.0))
+      glob:
+        specifier: 11.1.0
+        version: 11.1.0
       html-react-parser:
         specifier: 5.2.13
         version: 5.2.13(@types/react@18.3.27)(react@18.3.1)
@@ -165,6 +168,9 @@ importers:
         specifier: 1.0.0
         version: 1.0.0
     devDependencies:
+      '@astrojs/markdown-remark':
+        specifier: 7.0.1
+        version: 7.0.1
       '@axe-core/playwright':
         specifier: 4.11.0
         version: 4.11.0(playwright-core@1.58.0)
@@ -232,8 +238,8 @@ importers:
         specifier: 3.4.0
         version: 3.4.0
       '@nl-design-system/component-progress':
-        specifier: 1.0.9
-        version: 1.0.9
+        specifier: 1.0.10
+        version: 1.0.10
       '@nl-design-system/eslint-config':
         specifier: 1.0.0
         version: 1.0.0(eslint@9.39.2(jiti@1.21.0))(typescript@5.9.3)
@@ -413,6 +419,49 @@ importers:
 
   packages/website:
     dependencies:
+      '@fontsource/fira-code':
+        specifier: 5.2.7
+        version: 5.2.7
+      '@fontsource/fira-sans':
+        specifier: 5.2.7
+        version: 5.2.7
+      '@fontsource/source-sans-pro':
+        specifier: 5.2.5
+        version: 5.2.5
+      '@nl-design-system-candidate/skip-link-css':
+        specifier: 1.0.5
+        version: 1.0.5
+      '@nl-design-system-candidate/skip-link-react':
+        specifier: 1.1.7
+        version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-community/ma-design-tokens':
+        specifier: 2.5.0
+        version: 2.5.0
+      '@utrecht/body-css':
+        specifier: 2.0.1
+        version: 2.0.1
+      '@utrecht/body-react':
+        specifier: 0.0.10
+        version: 0.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/page-body-css':
+        specifier: 1.0.1
+        version: 1.0.1
+      '@utrecht/page-body-react':
+        specifier: 1.0.10
+        version: 1.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/page-layout-css':
+        specifier: 2.0.1
+        version: 2.0.1
+      '@utrecht/page-layout-react':
+        specifier: 1.0.9
+        version: 1.0.9(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/root-css':
+        specifier: 3.0.0
+        version: 3.0.0
+      '@utrecht/root-react':
+        specifier: 1.0.11
+        version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    devDependencies:
       '@astrojs/mdx':
         specifier: 5.0.1
         version: 5.0.1(astro@6.0.5(patch_hash=e839f917d03bc409f94bd044bd6a1594aa35edc409118c2c3e58b682cfefd776)(@types/node@24.10.9)(jiti@1.21.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
@@ -425,6 +474,9 @@ importers:
       '@astrojs/ts-plugin':
         specifier: 1.10.7
         version: 1.10.7
+      '@nl-design-system-unstable/postcss-remove-unused-design-tokens':
+        specifier: 0.0.2
+        version: 0.0.2
       '@nl-design-system/component-progress':
         specifier: 1.0.7
         version: 1.0.7
@@ -553,6 +605,9 @@ packages:
   '@astrojs/markdown-remark@7.0.0':
     resolution: {integrity: sha512-jTAXHPy45L7o1ljH4jYV+ShtOHtyQUa1mGp3a5fJp1soX8lInuTJQ6ihmldHzVM4Q7QptU4SzIDIcKbBJO7sXQ==}
 
+  '@astrojs/markdown-remark@7.0.1':
+    resolution: {integrity: sha512-zAfLJmn07u9SlDNNHTpjv0RT4F8D4k54NR7ReRas8CO4OeGoqSvOuKwqCFg2/cqN3wHwdWlK/7Yv/lMXlhVIaw==}
+
   '@astrojs/mdx@5.0.1':
     resolution: {integrity: sha512-xfvc9MuV/5Kl6JaiYYEFi7ilbGYyaaOboH+gH8f2jHAZ2pmmHtnSrewS03vNeruBsa8rtS3X8NHJrqeZt+0wLg==}
     engines: {node: ^20.19.1 || >=22.12.0}
@@ -562,6 +617,10 @@ packages:
   '@astrojs/prism@4.0.0':
     resolution: {integrity: sha512-NndtNPpxaGinRpRytljGBvYHpTOwHycSZ/c+lQi5cHvkqqrHKWdkPEhImlODBNmbuB+vyQUNUDXyjzt66CihJg==}
     engines: {node: ^20.19.1 || >=22.12.0}
+
+  '@astrojs/prism@4.0.1':
+    resolution: {integrity: sha512-nksZQVjlferuWzhPsBpQ1JE5XuKAf1id1/9Hj4a9KG4+ofrlzxUUwX4YGQF/SuDiuiGKEnzopGOt38F3AnVWsQ==}
+    engines: {node: '>=22.12.0'}
 
   '@astrojs/react@5.0.0':
     resolution: {integrity: sha512-OuM+0QFsoPkvv8ZB57kVLxKOqvR+84GR/Em9lh/tAL4fV4CnpBPDxc++0vd1CipH4o99Is7GribuTHFy3doF6g==}
@@ -2719,6 +2778,9 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@fontsource/fira-code@5.2.7':
+    resolution: {integrity: sha512-tnB9NNund9TwIym8/7DMJe573nlPEQb+fKUV5GL8TBYXjIhDvL0D7mgmNVNQUPhXp+R7RylQeiBdkA4EbOHPGQ==}
+
   '@fontsource/fira-sans@5.2.7':
     resolution: {integrity: sha512-5DE4AealD/VnbwdzMgnpWfCttMQBbteNiK9DCJE7cVwZEbDTPLUoFDMMvxNQ498nZc5in7Mta9c/s+3Ehh0BAg==}
 
@@ -3388,6 +3450,9 @@ packages:
   '@nl-design-system-candidate/paragraph-tokens@1.1.3':
     resolution: {integrity: sha512-EtFFQagTwkJYL5k9+h8xDQDh9GKzgo4CJnFrSuxWNzM3A3Hi+vAd6bIBAj4ECBZfW5IJBtsONAduSoCiPo5CbA==}
 
+  '@nl-design-system-candidate/skip-link-css@1.0.5':
+    resolution: {integrity: sha512-0Bq6yDPgz6sCGrd5EuV8CfL9m78he1a914sJPeZ+Cqr4WTqN0m1qf3LPJ2YVpOP0fYgk5GX2UqwTKIDhSLg5GA==}
+
   '@nl-design-system-candidate/skip-link-docs@1.2.1':
     resolution: {integrity: sha512-kNGtfmwI7iQVF0Bebpftjn/R/wHRaOFxNVOgoLlAQeRCimIu5t8zYJUGnJGguMgx2gwDFSRcOhn4/cwRI2LVNg==}
 
@@ -3421,14 +3486,17 @@ packages:
       '@babel/runtime': ^7
       react: ^18 || ^19
 
+  '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2':
+    resolution: {integrity: sha512-nIgtDusYF1UpiefHojQCJ7BhT3dlH5xBDGfB0j4MG9WlJaFK4rXuSpZMWlpmxe6KgRotUXL6k5QLbJ6aGCVZxg==}
+
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0':
     resolution: {integrity: sha512-Ax1JW5KSUJUnfkFVDwzPHvpD61HMirn6Kp2Gu5QkHIEqwLjkD6P3/dtwKMJZq8dUGzoP/9XwMNcugLhB7Z0Qlg==}
 
+  '@nl-design-system/component-progress@1.0.10':
+    resolution: {integrity: sha512-nxl+rtzN6m/AK1FHdr/2/wmiPtVQPWtUB7HmQYYckP6W6xPs93J4DM4ZcsW1tDaEGJahkQv/jN0k1hn1DtLjwg==}
+
   '@nl-design-system/component-progress@1.0.7':
     resolution: {integrity: sha512-yhJVnQPcrEJcOWTq06eSVx7AsimvJj6OilVfC9mQXKH8X31MuWzIg5cyQBlTZ6u8f4QtXu2jKGeb738nNE+kEw==}
-
-  '@nl-design-system/component-progress@1.0.9':
-    resolution: {integrity: sha512-Gn7vJlTkoM72cANTWVDuJQT6GyoB9mYwVO+2zbusatueP/4M6EeN+t3oqOxCPepvxnn57a3t7m1RMt2CGBE9NA==}
 
   '@nl-design-system/eslint-config@1.0.0':
     resolution: {integrity: sha512-ypsu7zBN26tVLdnbcK2+He2l+QK33qNtHGlBY0CY5x8wWkCQULSH+10E+rUIAf+kBHKdQkgr5+W60qyj97a66Q==}
@@ -4383,6 +4451,16 @@ packages:
   '@utrecht/body-css@2.0.1':
     resolution: {integrity: sha512-WQjaF2Ii0eERCnTGYI32Jpjts5ydJpCAQUTtLjVs/jGF2+wHBz7XRDN6SFd8S0xIgp6llMQjHB9rdVp8JxieWA==}
 
+  '@utrecht/body-css@3.0.0':
+    resolution: {integrity: sha512-OvKBtolyCBmIGwzLjCi5+Ut0rqzUsyEU07PYtw9lTTOJ22XsluChZ8w7FAICVVHBXC3sWJ1DdRo2hUngGZFyFQ==}
+
+  '@utrecht/body-react@0.0.10':
+    resolution: {integrity: sha512-kH4CebVgESHsM2+orgoDONdPY8ska8o4MlXvGVb7hverkkXcxUp2SPmSPmbKvGmBLpY1w4Rabkh7Gto1UcqelA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/breadcrumb-nav-css@2.1.0':
     resolution: {integrity: sha512-BOYqFSnrR5rVzU1mb4eDb4BbpuE9TSEPN5FTlJJduYDvsJr5DLDaxADmFp1p05di7GWV1qTaPBMxw0gEuMAbaQ==}
 
@@ -4759,6 +4837,13 @@ packages:
   '@utrecht/page-body-css@1.0.1':
     resolution: {integrity: sha512-0keuwgUACGo52SA7Nvd31STGirZ/A1dkR/at5z8SpEXYdfMyRpPK1odH5MgB19Ig1Nie1Ke5oi+h++HcVg5Ksg==}
 
+  '@utrecht/page-body-react@1.0.10':
+    resolution: {integrity: sha512-HBWjRhNxchvykObDCbc7Vzouuig5gV3A7sz8LNxLrwxv0YA5HjX5HqsCCiP94ggCzGVWISNzFrMYcwEu1ut7lw==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/page-content-css@2.0.1':
     resolution: {integrity: sha512-Hgx63BEUbaGJyBQXpa97EN8ng0M9LTX3ddu9IQM+ar/rA2OGIM5oiGbwXUYhLwQp/HnhkFm/gpPGGTtQjpXC6w==}
 
@@ -4811,6 +4896,19 @@ packages:
 
   '@utrecht/root-css@2.0.1':
     resolution: {integrity: sha512-mhEyFaHhWHmwxu3HFR1+HpQDdQfGCfETBRKDP9QsGFwxX1t8FDUmL570+0LH3VqBA7db6gz8/krh8MUzCRp8yw==}
+
+  '@utrecht/root-css@3.0.0':
+    resolution: {integrity: sha512-T4GxW4qz0D+Kxecm+/QX9UrDhYRh55dtfptuuXAVr9vMEOajPreJlJ0u5sC+Wyr0NaIfxcCcJVCCVhzLNLJ1Dg==}
+
+  '@utrecht/root-css@3.1.0':
+    resolution: {integrity: sha512-Xi96mZewr7ttbtaED/BGK/bNoLyIETVM8tXSNSgA22Xb/gxgtzhkjRlW0Q0sNe11fsqUzI1SJwj43lZDHZWBXg==}
+
+  '@utrecht/root-react@1.0.11':
+    resolution: {integrity: sha512-+DCYlt1/LoROsdFXYeLd48bol8M2Lr9+HBbGDMgokvG8W8pzheZNkHSocGfeYKATpEqEt25h5GKoQREW0qo6iw==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/search-bar-css@3.0.1':
     resolution: {integrity: sha512-ix/dUg05HIUhUptSvCmxghQ7MhXa2ryYj+PWAk/3aWlxmF/jrxx/l2fiqaroBotTfIJrjxBAVuZn5mVQwW0cfg==}
@@ -8263,10 +8361,6 @@ packages:
   minimalistic-assert@1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
 
-  minimatch@10.1.1:
-    resolution: {integrity: sha512-enIvLvRAFZYXJzkCYG5RKmPfrFArdLv+R+lbQ53BmIMLIry74bjKzX6iHAm8WYamJkhSSEabrWN5D97XnKObjQ==}
-    engines: {node: 20 || >=22}
-
   minimatch@10.1.2:
     resolution: {integrity: sha512-fu656aJ0n2kcXwsnwnv9g24tkU5uSmOlTjd6WyyaKm2Z+h1qmY6bAjrcaIxF/BslFqbZ8UBtbJi7KgQOZD2PTw==}
     engines: {node: 20 || >=22}
@@ -11369,6 +11463,31 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@astrojs/markdown-remark@7.0.1':
+    dependencies:
+      '@astrojs/internal-helpers': 0.8.0
+      '@astrojs/prism': 4.0.1
+      github-slugger: 2.0.0
+      hast-util-from-html: 2.0.3
+      hast-util-to-text: 4.0.2
+      js-yaml: 4.1.1
+      mdast-util-definitions: 6.0.0
+      rehype-raw: 7.0.0
+      rehype-stringify: 10.0.1
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.2
+      remark-smartypants: 3.0.2
+      shiki: 4.0.2
+      smol-toml: 1.6.0
+      unified: 11.0.5
+      unist-util-remove-position: 5.0.0
+      unist-util-visit: 5.1.0
+      unist-util-visit-parents: 6.0.2
+      vfile: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
   '@astrojs/mdx@5.0.1(astro@6.0.5(patch_hash=e839f917d03bc409f94bd044bd6a1594aa35edc409118c2c3e58b682cfefd776)(@types/node@24.10.9)(jiti@1.21.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 7.0.0
@@ -11389,6 +11508,10 @@ snapshots:
       - supports-color
 
   '@astrojs/prism@4.0.0':
+    dependencies:
+      prismjs: 1.30.0
+
+  '@astrojs/prism@4.0.1':
     dependencies:
       prismjs: 1.30.0
 
@@ -14455,6 +14578,8 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
+  '@fontsource/fira-code@5.2.7': {}
+
   '@fontsource/fira-sans@5.2.7': {}
 
   '@fontsource/open-sans@5.2.7': {}
@@ -15259,6 +15384,8 @@ snapshots:
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.3': {}
 
+  '@nl-design-system-candidate/skip-link-css@1.0.5': {}
+
   '@nl-design-system-candidate/skip-link-docs@1.2.1': {}
 
   '@nl-design-system-candidate/skip-link-react@1.1.7(@babel/runtime@7.28.6)(react@18.3.1)':
@@ -15307,11 +15434,13 @@ snapshots:
       clsx: 2.1.1
       react: 18.3.1
 
+  '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2': {}
+
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0': {}
 
-  '@nl-design-system/component-progress@1.0.7': {}
+  '@nl-design-system/component-progress@1.0.10': {}
 
-  '@nl-design-system/component-progress@1.0.9': {}
+  '@nl-design-system/component-progress@1.0.7': {}
 
   '@nl-design-system/eslint-config@1.0.0(eslint@9.39.2(jiti@1.21.0))(typescript@5.9.3)':
     dependencies:
@@ -16295,6 +16424,16 @@ snapshots:
 
   '@utrecht/body-css@2.0.1': {}
 
+  '@utrecht/body-css@3.0.0': {}
+
+  '@utrecht/body-react@0.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/body-css': 3.0.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@utrecht/breadcrumb-nav-css@2.1.0': {}
 
   '@utrecht/button-css@3.0.1': {}
@@ -16814,6 +16953,14 @@ snapshots:
 
   '@utrecht/page-body-css@1.0.1': {}
 
+  '@utrecht/page-body-react@1.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/page-body-css': 1.0.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@utrecht/page-content-css@2.0.1': {}
 
   '@utrecht/page-css@2.0.1': {}
@@ -16855,6 +17002,18 @@ snapshots:
   '@utrecht/root-css@1.2.1': {}
 
   '@utrecht/root-css@2.0.1': {}
+
+  '@utrecht/root-css@3.0.0': {}
+
+  '@utrecht/root-css@3.1.0': {}
+
+  '@utrecht/root-react@1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/root-css': 3.1.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@utrecht/search-bar-css@3.0.1': {}
 
@@ -19519,7 +19678,7 @@ snapshots:
     dependencies:
       foreground-child: 3.3.1
       jackspeak: 4.1.1
-      minimatch: 10.1.1
+      minimatch: 10.1.2
       minipass: 7.1.2
       package-json-from-dist: 1.0.1
       path-scurry: 2.0.1
@@ -21293,10 +21452,6 @@ snapshots:
       webpack: 5.104.1
 
   minimalistic-assert@1.0.1: {}
-
-  minimatch@10.1.1:
-    dependencies:
-      '@isaacs/brace-expansion': 5.0.1
 
   minimatch@10.1.2:
     dependencies:
