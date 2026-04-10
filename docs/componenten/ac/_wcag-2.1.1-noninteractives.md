@@ -2,7 +2,7 @@
 
 Componenten en elementen die niet interactief zijn, zijn niet bereikbaar en bedienbaar met het toetsenbord.
 
-Een uitzondering geldt voor situaties waarbij een link, zoals een Skiplink of een Link in een zij-navigatie, de bezoeker direct naar de component of het element stuurt.
+Een uitzondering geldt voor situaties waarbij een interactief element zoals een Skip Link of een Link in een zij-navigatie, de bezoeker direct naar de component of het element stuurt.
 
 NL Design System richtlijnen:
 
