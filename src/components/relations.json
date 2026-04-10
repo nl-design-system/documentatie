@@ -1,0 +1,11 @@
+{
+  "Notification Banner": ["Alert", "Note"],
+  "Note": ["Alert", "Notification Banner"],
+  "Modal Dialog": ["Alert Dialog", "Drawer", "Dialog"],
+  "Drawer": ["Modal Dialog", "Dialog"],
+  "Dialog": ["Alert Dialog", "Drawer"],
+  "Alert Dialog": ["Alert", "Modal Dialog", "Dialog"],
+  "Alert": ["Alert Dialog", "Notification Banner", "Note"],
+  "Unordered List": ["Ordered List", "Rich Text Content", "Link List", "Task List"],
+  "Ordered List": ["Rich Text Content", "Unordered List"]
+}
