@@ -1,0 +1,55 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="component-illustration">
+<g clip-path="url(#clip0_1978_3364)">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+<g clip-path="url(#clip1_1978_3364)">
+<rect width="2" height="540" transform="translate(69)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(151)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(233)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(315)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(397)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(479)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(561)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(643)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(725)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(807)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="2" height="540" transform="translate(889)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 64)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 146)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 228)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 310)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 392)" fill="var(--component-illustration-grid-color, #EEE)"/>
+<rect width="960" height="2" transform="translate(0 474)" fill="var(--component-illustration-grid-color, #EEE)"/>
+</g>
+<path d="M65 58H895C896.105 58 897 58.8954 897 60V480C897 481.105 896.105 482 895 482H65C63.8954 482 63 481.105 63 480V60L63.0107 59.7959C63.113 58.7872 63.9643 58 65 58Z" stroke="var(--component-illustration-color, #666)" stroke-width="4"/>
+<path d="M73 66H887C888.105 66 889 66.8954 889 68V472C889 473.105 888.105 474 887 474H73C71.8954 474 71 473.105 71 472V68C71 66.8954 71.8954 66 73 66Z" stroke="var(--component-illustration-color, #666)" stroke-width="4"/>
+<path d="M850.021 98V100H854C855.105 100 856 100.895 856 102V106H858V114H856V122H858V130H856V138H858V146H856V154H858V162H856V170H858V178H856V186H858V194H856V202H858V210H856V218H858V226H856V234H858V242H856V250H858V258H856V266H858V274H856V282H858V290H856V298H858V306H856V314H858V322H856V330H858V338H856V346H858V354H856V362H858V370H856V378H858V386H856V394H858V402H856V410H858V418H856V426H858V434H856V438C856 439.105 855.105 440 854 440H850.021V442H842.064V440H834.107V442H826.149V440H818.192V442H810.234V440H802.277V442H794.319V440H786.362V442H778.404V440H770.447V442H762.49V440H754.532V442H746.575V440H738.617V442H730.66V440H722.702V442H714.745V440H706.788V442H698.83V440H690.873V442H682.915V440H674.958V442H667V440H659.043V442H651.086V440H643.128V442H635.171V440H627.213V442H619.256V440H611.298V442H603.341V440H595.383V442H587.426V440H579.469V442H571.511V440H563.554V442H555.596V440H547.639V442H539.681V440H531.724V442H523.766V440H515.809V442H507.852V440H499.894V442H491.937V440H483.979V442H476.021V440H468.063V442H460.106V440H452.149V442H444.191V440H436.234V442H428.276V440H420.319V442H412.361V440H404.404V442H396.446V440H388.489V442H380.532V440H372.574V442H364.617V440H356.659V442H348.702V440H340.744V442H332.787V440H324.83V442H316.872V440H308.915V442H300.957V440H293V442H285.043V440H277.085V442H269.128V440H261.17V442H253.213V440H245.255V442H237.298V440H229.341V442H221.383V440H213.426V442H205.468V440H197.511V442H189.553V440H181.596V442H173.639V440H165.681V442H157.724V440H149.766V442H141.809V440H133.851V442H125.894V440H117.937V442H109.979V440H106C104.895 440 104 439.105 104 438V434H102V426H104V418H102V410H104V402H102V394H104V386H102V378H104V370H102V362H104V354H102V346H104V338H102V330H104V322H102V314H104V306H102V298H104V290H102V282H104V274H102V266H104V258H102V250H104V242H102V234H104V226H102V218H104V210H102V202H104V194H102V186H104V178H102V170H104V162H102V154H104V146H102V138H104V130H102V122H104V114H102V106H104V102C104 100.895 104.895 100 106 100H109.979V98H117.936V100H125.893V98H133.851V100H141.808V98H149.766V100H157.723V98H165.681V100H173.638V98H181.596V100H189.553V98H197.51V100H205.468V98H213.425V100H221.383V98H229.34V100H237.298V98H245.255V100H253.212V98H261.17V100H269.127V98H277.085V100H285.042V98H293V100H300.957V98H308.914V100H316.872V98H324.829V100H332.787V98H340.744V100H348.702V98H356.659V100H364.617V98H372.574V100H380.531V98H388.489V100H396.446V98H404.404V100H412.361V98H420.319V100H428.276V98H436.234V100H444.191V98H452.148V100H460.106V98H468.063V100H476.021V98H483.979V100H491.937V98H499.894V100H507.851V98H515.809V100H523.766V98H531.724V100H539.681V98H547.639V100H555.596V98H563.554V100H571.511V98H579.468V100H587.426V98H595.383V100H603.341V98H611.298V100H619.256V98H627.213V100H635.17V98H643.128V100H651.085V98H659.043V100H667V98H674.957V100H682.915V98H690.872V100H698.83V98H706.787V100H714.745V98H722.702V100H730.659V98H738.617V100H746.574V98H754.532V100H762.489V98H770.447V100H778.404V98H786.361V100H794.319V98H802.276V100H810.234V98H818.191V100H826.149V98H834.106V100H842.063V98H850.021Z" stroke="var(--component-illustration-color, #666)" stroke-width="4" stroke-dasharray="8 8"/>
+<rect x="112" y="107" width="736" height="326" rx="2" stroke="var(--component-illustration-color, #666)" stroke-width="4"/>
+<rect x="112" y="352" width="736" height="81" rx="2" stroke="var(--component-illustration-color, #666)" stroke-width="4"/>
+<rect x="152" y="384" width="78.6667" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
+<rect x="255.664" y="384" width="78.6667" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
+<rect x="359.336" y="384" width="78.6667" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
+<rect x="112" y="108" width="736" height="81" rx="2" stroke="var(--component-illustration-color, #666)" stroke-width="4"/>
+<rect x="439" y="140" width="79.6667" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
+<rect x="543.664" y="140" width="79.6667" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
+<rect x="648.336" y="140" width="79.6667" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
+<g clip-path="url(#clip2_1978_3364)">
+<line x1="2" y1="-2" x2="91.2858" y2="-2" transform="matrix(0.89773 0.440547 -0.529143 0.848533 151 127.903)" stroke="var(--component-illustration-color, #666)" stroke-width="4" stroke-linecap="round"/>
+<line x1="2" y1="-2" x2="91.2858" y2="-2" transform="matrix(0.89773 -0.440547 0.529143 0.848533 151.258 169)" stroke="var(--component-illustration-color, #666)" stroke-width="4" stroke-linecap="round"/>
+</g>
+<rect x="153" y="129" width="80" height="38" rx="2" stroke="var(--component-illustration-color, #666)" stroke-width="4"/>
+</g>
+<defs>
+<clipPath id="clip0_1978_3364">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+</clipPath>
+<clipPath id="clip1_1978_3364">
+<rect width="960" height="540" fill="var(--component-illustration-background-color, white)"/>
+</clipPath>
+<clipPath id="clip2_1978_3364">
+<rect x="151" y="127" width="84" height="42" rx="4" fill="var(--component-illustration-background-color, white)"/>
+</clipPath>
+</defs>
+</symbol>
+<use href="#component-illustration"/>
+</svg>
