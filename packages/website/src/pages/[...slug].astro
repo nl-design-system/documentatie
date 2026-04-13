@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import Document from '@layouts/document.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
+import TableOfContents from '@components/table-of-content/table-of-content.astro';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
@@ -27,5 +28,6 @@ const { Content } = await render(page);
   keywords={page.data.keywords}
   index={page.data.unlisted !== true}
 >
+  <TableOfContents />
   <Content components={MDXComponents} />
 </Document>
