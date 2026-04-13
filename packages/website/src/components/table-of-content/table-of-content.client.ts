@@ -29,8 +29,9 @@ class MaTableOfContents extends HTMLElement {
 
     if (!this.#scopeRoot) throw new Error(`Could not locate scope element by id ${id}`);
 
-    if (this.#observer) {
-      this.#observer.observe(this.#scopeRoot, { childList: true, subtree: true });
+    if (this.isConnected) {
+      this.#observer?.disconnect();
+      this.#observer?.observe(this.#scopeRoot, { childList: true, subtree: true });
     }
 
     this.update();
@@ -58,6 +59,7 @@ class MaTableOfContents extends HTMLElement {
 
   constructor() {
     super();
+    this.#observer = this.setupMutationObserver();
     this.#headingListItemMap = new Map();
     this.#headingsToIgnore = new Set();
   }
@@ -74,7 +76,6 @@ class MaTableOfContents extends HTMLElement {
   }
 
   connectedCallback() {
-    this.#observer = this.setupMutationObserver();
     this.#observer.observe(this.#scopeRoot, { childList: true, subtree: true });
 
     this.#listElement = this.querySelector('ul,ol') || document.createElement('ul');
