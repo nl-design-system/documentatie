@@ -1,5 +1,26 @@
 [
   {
+    "id": 123,
+    "date": "2026-04-14",
+    "description": [
+      "Yolijn van het kernteam geeft een praatje over hoe niet alleen de NL Design System community maar ook het kernteam transparent werkt.",
+      "Bas van gemeente Amsterdam vertelt over het gebruikersonderzoek dat is gedaan naar de positie van “Mijn Amsterdam” in de Page Header."
+    ],
+    "title": "Heartbeat van 14 april 2026.",
+    "youtubeId": "ZUdXNaWIyH4"
+  },
+  {
+    "id": 122,
+    "date": "2026-03-31",
+    "description": [
+      "Tim van het Expertteam Digitale Toegankelijkheid deelt hoe ver hij is met de editor die bedoeld is om te helpen toegankelijke content te maken.",
+      "Fionn en Neslihan van Logius delen hoe ze het CSS Cross Contamination probleem in de Rijkshuisstijl Community hebben opgelost en de stappen die andere kunnen nemen om dit ook zo op te lossen.",
+      "Richard van het kerneam verteld hoe het kernteam helpt de infrastructuur voor Open Source werken up-to-date en veilig te houden en waar je rekening mee kunt houden om op een veilige manier code van anderen te gebruiken en nieuwe code toe te voegen."
+    ],
+    "title": "Heartbeat van 31 maart 2026.",
+    "youtubeId": "ee-rRqBGcJg"
+  },
+  {
     "id": 121,
     "date": "2026-03-17",
     "description": [
@@ -19,7 +40,7 @@
       "Robbert van het kernteam vertelt over de verbeteringen op de NL Design System website op het Componenten Overzicht en de Component Detail pagina aan de hand van enquête resultaten."
     ],
     "title": "Heartbeat van 3 maart 2026.",
-    "youtubeId": "UBTwT70RRjI"
+    "youtubeId": "fCPsq-u-ezM"
   },
   {
     "id": 119,
