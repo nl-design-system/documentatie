@@ -2,6 +2,9 @@
 import { getCollection } from 'astro:content';
 import { siteDescription, siteTitle } from '../seo.config.ts';
 import Document from '@layouts/document.astro';
+import { SideNavigationLink } from '@components/side-nav/side-nav';
+import { SideNavigationItem } from '@components/side-nav/side-nav';
+import { SideNavigation } from '@components/side-nav/side-nav';
 
 const docs = await getCollection('docs');
 const wcag = await getCollection('wcag');
@@ -39,10 +42,19 @@ const getDuplicateTitles = (docs: DocsArray) => {
 
 const duplicates = getDuplicateTitles(docs);
 const placeholderTitle = '(geen paginatitel)';
+const sideNavItems = Object.entries(sections).map(([section, list]) =>
+  list.map((item) => ({
+    href: item.id,
+    label: item.title,
+  })),
+);
 ---
 
 <Document title={siteTitle} description={siteDescription}>
   <h1>NL Design System gerenderd met Astro</h1>
+  <nav>
+    <SideNavigation items={sideNavItems} />
+  </nav>
   {
     Object.entries(sections).map(([section, list]) => (
       <details open>
