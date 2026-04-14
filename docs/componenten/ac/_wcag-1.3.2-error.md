@@ -2,7 +2,7 @@
 
 Zorg ervoor dat foutmeldingen op een logische plek staan en gekoppeld zijn aan het element voor formulierinvoer.
 
-De meest gebruiksvriendelijke plek voor foutmeldingen is tussen het label en het element voor formulierinvoer. Als foutmeldingen er ónder staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.
+De meest gebruiksvriendelijke plek voor foutmeldingen is tussen het label en het element voor formulierinvoer. Als foutmeldingen onder de formulierinvoer staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.
 
 Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna foutmeldingen tússen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Koppel foutmeldingen daarom ook aan het element voor formulierinvoer met `aria-describedby`. Op die manier wordt de foutmeldingen voorgelezen wanneer de toetsenbordfocus op dat element staat.
 
