@@ -452,6 +452,12 @@ importers:
       '@utrecht/link-list-css':
         specifier: 4.0.0
         version: 4.0.0
+      '@utrecht/nav-bar-css':
+        specifier: 3.1.0
+        version: 3.1.0
+      '@utrecht/nav-bar-react':
+        specifier: 1.1.0
+        version: 1.1.0(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/nav-list-css':
         specifier: 2.0.0
         version: 2.0.0
@@ -461,6 +467,18 @@ importers:
       '@utrecht/page-body-react':
         specifier: 1.0.11
         version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/page-footer-css':
+        specifier: 4.0.0
+        version: 4.0.0
+      '@utrecht/page-footer-react':
+        specifier: 1.0.11
+        version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/page-header-css':
+        specifier: 3.0.0
+        version: 3.0.0
+      '@utrecht/page-header-react':
+        specifier: 1.0.10
+        version: 1.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/page-layout-css':
         specifier: 4.0.0
         version: 4.0.0
@@ -501,24 +519,6 @@ importers:
       '@types/react-dom':
         specifier: 18.3.7
         version: 18.3.7(@types/react@18.3.27)
-      '@utrecht/nav-bar-css':
-        specifier: 3.1.0
-        version: 3.1.0
-      '@utrecht/nav-bar-react':
-        specifier: 1.1.0
-        version: 1.1.0(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/page-footer-css':
-        specifier: 4.0.0
-        version: 4.0.0
-      '@utrecht/page-footer-react':
-        specifier: 1.0.11
-        version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@utrecht/page-header-css':
-        specifier: 3.0.0
-        version: 3.0.0
-      '@utrecht/page-header-react':
-        specifier: 1.0.10
-        version: 1.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       astro:
         specifier: 6.0.5
         version: 6.0.5(patch_hash=e839f917d03bc409f94bd044bd6a1594aa35edc409118c2c3e58b682cfefd776)(@types/node@24.10.9)(jiti@1.21.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
