@@ -5,47 +5,50 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.1 Blokken omzeilen
 pagination_label: WCAG-succescriterium 2.4.1 Blokken omzeilen
-description: Geef toetsenbordgebruikers de mogelijkheid om binnen een pagina sneller te navigeren door onderdelen te kunnen overslaan.
+description: Geef toetsenbordgebruikers een manier om herhaalde onderdelen op een pagina over te slaan en direct bij de hoofdinhoud te komen.
 slug: 2.4.1
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - bedienbaar
   - navigeerbaar
   - operable
   - navigable
   - bypass blocks
+  - blokken omzeilen
+  - skiplink
+  - skip navigation
+  - landmark
+  - main
+  - nav
+  - toetsenbord
+  - herhaalde content
+  - WCAG 2.4.1
 ---
 
 {/* @license CC0-1.0 */}
-
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
-import Summary from "./summaries/_2.4.1-summary.md";
+import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
+import Disclaimer from "./\_wcag-disclaimer.md";
+import WCAGFooterInfo from "./\_wcag_footer_info.md";
+import Summary from "./summaries/\_2.4.1-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
   {"WCAG-succescriterium 2.4.1 Blokken omzeilen"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+Er moet een manier zijn om herhaalde blokken over te slaan. De meest gebruikte oplossingen zijn:
 
-Er zijn verschillende manieren om met hulptechnologie snel door een webpagina te navigeren. Zo kan een gebruiker van een [screenreader](/woordenlijst/#screenreader) een lijst van links, koppen of landmarks oproepen en daar een keuze uit maken. Maar de skiplink is ook voor gebruikers van screenreaders handig.
+- Een **skiplink** bovenaan de pagina die direct naar de hoofdinhoud springt.
+- **Landmarkregio's** zoals `<main>`, `<nav>` en `<aside>` waarmee screenreadergebruikers per sectie door de pagina kunnen bewegen.
+- **Koppen** waarmee screenreadergebruikers direct naar de juiste sectie springen.
 
-Om zo gebruikersvriendelijk en consistent mogelijk te werken is een skiplink de eerste link op een pagina. Plaats deze link binnen de header-landmark. Als eerste focusable element, bovenaan de pagina, op een vaste plek.
-
-Een uitzondering wordt gemaakt als er eerst een cookiebanner verschijnt. Dan krijgen de links en buttons in deze banner als eerste de toetsenbordfocus.
-
-Je hoeft je niet te beperken tot alleen een skiplink naar de hoofdinhoud.
-
-- Een skiplink naar het zoekformulier kan zinvol zijn.
-- Je kunt binnen de webpagina interne skiplinks plaatsen vlak boven advertenties of carousels om de gebruiker ook snel deze componenten te laten overslaan.
+Een skiplink werkt voor iedereen die met het toetsenbord werkt. Landmarkregio's en koppen helpen specifiek screenreadergebruikers.
 
 ### Demo skiplink op de website van de gemeente Den Haag
 
@@ -53,66 +56,233 @@ Deze video laat zien hoe een skiplink werkt op de website van de [gemeente Den H
 
 <VideoPlayer id="CULH5Iq9Tr8" title="Demo skiplink op de website van de gemeente Den Haag" />
 
-### Hoe werkt een skiplink?
+## Veelgemaakte fouten
 
-Een skiplink is een interne link naar bijvoorbeeld het begin van de inhoud. Als een gebruiker deze link aanklikt, verplaats de focus naar een punt vlak boven de hoofdinhoud.
+### Geen skiplink aanwezig
 
-De skiplink kan altijd zichtbaar zijn, of alleen zichtbaar worden als de link toetsenbordfocus krijgt. Beide opties zijn goed.
+De pagina heeft geen skiplink. Een toetsenbordgebruiker gaat met <kbd>Tab</kbd> op elke pagina opnieuw door de volledige navigatie. Pas daarna komt de hoofdinhoud in beeld. Op een website met een uitgebreide header, een zoekbalk en een submenu kan dat tientallen tabstops kosten.
 
-Je kunt bijvoorbeeld naar het `<main>`-element linken, als dit de hoofdinhoud van een webpagina bevat.
+**Hoe te testen:** zet de cursor in de adresbalk van de browser en druk op <kbd>Tab</kbd>. Wat is het eerste focuspunt op de webpagina? Verschijnt er een link waarmee je direct naar de hoofdinhoud kunt springen?
 
-Consistentie is belangrijk. Zet de skiplink altijd op dezelfde plek binnen een website en laat deze dezelfde plek linken.
+<Guideline appearance="dont" title="Pagina zonder skiplink">
+  ```html
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/diensten">Diensten</a>
+        <a href="/over-ons">Over ons</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Welkom</h1>
+    </main>
+  </body>
+  ```
+</Guideline>
 
-### tabindex="-1"
+<Guideline appearance="do" title="Skiplink als eerste element op de pagina">
+  ```html
+  <body>
+    <a href="#main" class="skiplink">
+      Ga naar inhoud
+    </a>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/diensten">Diensten</a>
+        <a href="/over-ons">Over ons</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <h1>Welkom</h1>
+    </main>
+  </body>
+  ```
+</Guideline>
 
-Om een skiplink in alle browsers goed te laten werken is het belangrijk dat de focus zich goed verplaatst naar het doelelement.
+Het `tabindex="-1"` op het `<main>`-element zorgt dat de focus daadwerkelijk naar het element verplaatst.
 
-Als dit element van nature geen focus kan krijgen, zoals een `<main>` landmark, kan het zijn dat de focus niet goed wordt verplaatst voor een screenreader. Voeg daarom `tabindex="-1"` toe aan het element dat de focus moet krijgen.
+**Wie kan dit oplossen:** een developer voegt een skiplink toe aan het paginatemplate.
 
-Het voordeel van `tabindex="-1"` in plaats van `tabindex="0"` is dat het element niet in de natuurlijke tabvolgorde wordt opgenomen, maar het wel focus kan krijgen. Gebruik nooit een positieve tabindex om een element toetsenbordfocus te geven. Waarom, staat uitgelegd bij de richtlijn [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/#gebruik-geen-positieve-tabindex).
+### Skiplink is er maar niet zichtbaar bij focus
 
-Lees ook: [<span lang="en">Where focus goes when following in page links</span>](https://hidde.blog/where-focus-goes-when-following-in-page-links/) van Hidde de Vries.
+De skiplink staat wel in de HTML, maar is permanent verborgen met `display: none` of `visibility: hidden`. Hierdoor kun je de link niet bereiken met het toetsenbord. Een skiplink mag visueel verborgen zijn totdat die focus krijgt. Zodra de link focus krijgt, wordt hij zichtbaar.
 
-### Codevoorbeelden van een skiplink
+**Hoe te testen:** druk op <kbd>Tab</kbd> op een pagina. Verschijnt er een zichtbare skiplink?
 
-In de HTML:
+<Guideline appearance="dont" title="Skiplink permanent verborgen">
+    ```css
+    .skiplink {
+      display: none;
+    }
+    ```
+</Guideline>
 
-```html
-<!-- De skiplink, geplaatst als eerste focusable element op de webpagina -->
-<a class="sr-only-focusable" href="#site-content">Naar de hoofdinhoud</a>
-```
+<Guideline appearance="do" title="Skiplink verborgen tot focus, dan zichtbaar">
+    ```css
+    .skiplink {
+      position: absolute;
+      left: -9999px;
+    }
 
-```html
-<!-- Het doel van de skiplink, waar de hoofdinhoud begint -->
-<main id="site-content" class="content" tabindex="-1">[...]</main>
-```
+    .skiplink:focus {
+      position: static;
+      left: auto;
+    }
+    ```
 
-In de CSS. Dit is een voorbeeld, er zijn meerdere technieken om hetzelfde effect te bereiken.
+</Guideline>
 
-```css
-.sr-only-focusable {
-  inset-block-start: 5%;
-  inset-inline-start: -100%;
-  position: absolute;
-}
+**Wie kan dit oplossen:** een developer past de CSS aan zodat de skiplink zichtbaar wordt bij focus.
 
-.sr-only-focusable:focus {
-  background-color: #ffeb85;
-  color: #1e357e;
-  inset-inline-start: 0;
-  outline: 2px solid #2b0000;
-  outline-offset: 0;
-  padding: 10px;
-  text-decoration: none;
-  z-index: 1;
-}
-```
+### Skiplink verwijst naar een verkeerd of niet-bestaand doel
 
-Tip: [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) zorgt ervoor dat de skiplink zich aanpast aan de leesrichting [dir](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#dir) van een pagina.
-Voor `<html lang="nl" dir="rtl">` staat de skiplink dan aan de rechterkant in plaats van de linkerkant.
+De `href` van de skiplink verwijst naar een `id` die niet op de pagina staat, of naar het verkeerde element. De link doet niets of springt naar een onverwachte plek.
 
-## Bronnen
+**Hoe te testen:** activeer de skiplink met <kbd>Enter</kbd> en druk op <kbd>Tab</kbd>. Bevindt de focus zich in de hoofdcontent?
 
+<Guideline appearance="dont" title="Skiplink verwijst naar een id dat niet bestaat">
+    ```html
+    <a href="#content">Ga naar inhoud</a>
+    <!-- ... -->
+    <main id="main">
+      <h1>Welkom</h1>
+    </main>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Skiplink en doel-id komen overeen">
+    ```html
+    <a href="#main">Ga naar inhoud</a>
+    <!-- ... -->
+    <main id="main" tabindex="-1">
+      <h1>Welkom</h1>
+    </main>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer controleert of het `href`-attribuut van de skiplink overeenkomt met het `id` van het doelelement.
+
+### Herhaald blok binnen de hoofdcontent heeft geen skip-mechanisme
+
+Niet alleen de navigatie bovenaan de pagina is een herhaald blok. Een zijkolom met navigatie of een filterbalk die zich op meerdere pagina's herhaalt, valt ook onder "herhaalde content". Ook deze blokken moet je kunnen overslaan.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> door de pagina. Zijn er filters of navigaties in de zijkolom die je bij elke pagina opnieuw moet doorlopen?
+
+<Guideline appearance="do" title="Filterbalk in een gelabeld nav-element dat overgeslagen kan worden via landmarks">
+    ```html
+    <main id="main" tabindex="-1">
+      <h1>Zoekresultaten</h1>
+      <nav aria-label="Filters">
+        <button>Categorie</button>
+        <button>Prijs</button>
+        <button>Beoordeling</button>
+        <!-- ... nog meer filters -->
+      </nav>
+      <section aria-label="Resultaten">
+        <h2>12 resultaten</h2>
+        <!-- ... -->
+      </section>
+    </main>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst herhaalde blokken binnen de hoofdinhoud in een eigen landmark met een duidelijke `aria-label`, zodat screenreadergebruikers het blok kunnen overslaan.
+
+### Advies: Landmarkregio's gebruiken
+
+De pagina gebruikt geen landmarkregio's zoals `<main>`, `<nav>`, `<header>` en `<footer>`. Alles staat in generieke `<div>`-elementen. Screenreadergebruikers kunnen niet per sectie door de pagina bewegen. Ze missen een belangrijk mechanisme om herhaalde blokken over te slaan.
+
+**Hoe te testen:** open de pagina in een screenreader en open de landmarklijst. In <span lang="en">VoiceOver</span>: <kbd>VO</kbd>+<kbd>U</kbd> en kies "Landmarks". In <span lang="en">NVDA</span>: druk op <kbd>D</kbd> om naar de volgende landmark te springen. Zijn de belangrijkste secties als landmark herkenbaar?
+
+<Guideline appearance="dont" title="Geen landmarkregio's, alles in div-elementen">
+  ```html
+  <div class="header">
+    <div class="nav">...</div>
+  </div>
+  <div class="content">...</div>
+  <div class="sidebar">...</div>
+  <div class="footer">...</div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Semantische landmarkregio's">
+  ```html
+  <header>
+    <nav aria-label="Hoofdnavigatie">...</nav>
+  </header>
+  <main>...</main>
+  <aside>...</aside>
+  <footer>...</footer>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt generieke `<div>`-elementen door semantische HTML-elementen.
+
+### Advies: Meerdere navigatieblokken met eigen beschrijving
+
+De pagina bevat meerdere `<nav>`-elementen. Geen ervan heeft een naam die aangeeft welke navigatie het is. In de landmarklijst van een screenreader staat dan meerdere keren "navigatie". De gebruiker weet niet welke de hoofdnavigatie is en welke een broodkruimelpad of footernavigatie.
+
+**Hoe te testen:** open de landmarklijst in een screenreader. Zijn de navigatieregio's van elkaar te onderscheiden?
+
+<Guideline appearance="dont" title="Twee nav-elementen zonder label">
+  ```html
+  <nav>
+    <a href="/">Home</a>
+    <a href="/diensten">Diensten</a>
+  </nav>
+  <nav>
+    <a href="/">Home</a> &gt; <a href="/diensten">Diensten</a> &gt; Audit
+  </nav>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Elke nav met een beschrijvend label">
+  ```html
+  <nav aria-label="Hoofdnavigatie">
+    <a href="/">Home</a>
+    <a href="/diensten">Diensten</a>
+  </nav>
+  <nav aria-label="Broodkruimelpad">
+    <a href="/">Home</a> &gt; <a href="/diensten">Diensten</a> &gt; Audit
+  </nav>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een `aria-label` toe aan elk `<nav>`-element.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Laad een pagina en druk op <kbd>Tab</kbd>. Verschijnt er een skiplink? Activeer de link met <kbd>Enter</kbd>. Spring je voorbij de navigatie naar de hoofdcontent?
+2. Bezoek een tweede pagina op dezelfde website en herhaal de test. De skiplink werkt op elke pagina.
+3. Controleer of de skiplink zichtbaar wordt zodra die focus krijgt. Een skiplink die nooit zichtbaar is, is niet bruikbaar voor ziende toetsenbordgebruikers.
+4. Controleer of er na de skiplink niet alsnog veel tabstops zijn voordat je bij de content bent. Dat kan wijzen op een verkeerd doel of een extra herhaald blok zonder skip-mechanisme.
+
+### Voor developers
+
+1. Controleer of de pagina een skiplink bevat als eerste focusbare element. De `href` verwijst naar een `id` op het `<main>`-element of het begin van de hoofdcontent.
+2. Controleer of het doelelement van de skiplink `tabindex="-1"` heeft, zodat de focus daadwerkelijk verplaatst. Zonder `tabindex` springt de focus in sommige browsers terug.
+3. Controleer of de skiplink niet permanent verborgen is met `display: none` of `visibility: hidden`. De link is visueel verborgen tot focus en dan zichtbaar.
+4. Inspecteer de landmarkregio's op de pagina. Zijn `<header>`, `<nav>`, `<main>`, `<aside>` en `<footer>` aanwezig? Hebben meerdere `<nav>`-elementen elk een eigen `aria-label`?
+5. Controleer of de pagina een `<h1>` heeft aan het begin van de hoofdcontent. Screenreadergebruikers navigeren via koppen als alternatief voor een skiplink.
+6. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">WAVE</span> voor een eerste scan. Deze tools herkennen een ontbrekende landmarkregio of een missende skiplink niet altijd. Of de skiplink correct werkt, controleer je handmatig.
+
+## Gerelateerde succescriteria
+
+- [2.4.3 Focusvolgorde](https://nldesignsystem.nl/wcag/2.4.3/): de skiplink is onderdeel van de focusvolgorde. Als de focusvolgorde niet klopt, kan de skiplink op een onverwachte plek staan.
+- [2.4.6 Koppen en labels](https://nldesignsystem.nl/wcag/2.4.6/): beschrijvende koppen zijn een tweede mechanisme om blokken te omzeilen. Screenreadergebruikers springen via de koppenlijst direct naar de juiste sectie.
+- [1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1/): landmarkregio's en koppen zijn programmatisch bepaald. Zonder correcte HTML-structuur werken deze mechanismen niet.
+- [2.4.2 Paginatitel](https://nldesignsystem.nl/wcag/2.4.2/): de paginatitel is het eerste wat een screenreader voorleest. Samen met de skiplink en landmarks helpt het bij snelle oriëntatie.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 2.4.1 Blokken omzeilen](https://www.w3.org/Translations/WCAG22-nl/#blokken-omzeilen) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 2.4.1: Bypass Blocks](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 - [Zo zet je skiplinks in voor een optimale navigatie](https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie) van Stichting Accessibility.
 - [<span lang="en">Understanding skip link</span>](https://tatiana-fokina-blog.ru/en/articles/understanding-a-skip-link/) van Tatiana Fokina.
 - [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
@@ -125,59 +295,6 @@ Voor `<html lang="nl" dir="rtl">` staat de skiplink dan aan de rechterkant in pl
 WebAIM publiceert elk jaar de [<span lang="en">Screen Reader User Survey</span>](https://webaim.org/projects/screenreadersurvey10/). In 2024 staat het ontbreken van een skiplink in de [top 12 van problemen](https://webaim.org/projects/screenreadersurvey10/#problematic).
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-Bepaal eerst of er een skiplink nodig is. Als er bijvoorbeeld geen navigatieblokken bovenaan de webpagina staan en de pagina meteen met de hoofdinhoud begint is een skiplink zinloos.
-
-Dit succescriteria gaat specifiek over blokken content die op elke pagina worden herhaald. Bevat de website maar één pagina, dan is dit succescriterium niet van toepassing. Wat niet wegneemt dat gebruik van een skiplink ook in dat geval gebruikersvriendelijk kan zijn.
-
-Als een skiplink van toepassing is voor een webpagina:
-
-- Controleer of een skiplink niet verborgen wordt met de CSS `display: none;` De skiplink moet voor screenreadergebruikers ook zonder focus te herkennen zijn in de lijst met links.
-- Controleer of een verborgen skiplink zichtbaar wordt op toetsenbordfocus.
-- Controleer ook het kleurcontrast van de zichtbare skiplink, dit wordt vaak vergeten.
-- Controleer of na het aanklikken van de link, de toetsenbordfocus zich ook echt verplaats naar het linkdoel.
-
-Het plaatsen van een skiplink binnen de header-landmark is _best practice_. Maar, staat de skiplink bovenaan de pagina als eerste focusable element en buiten een landmark, dat is dit **geen** overtreding van dit WCAG-succescriterium.
-
-## Veelgemaakte fouten
-
-### Fout: de toetsenbordfocus verplaatst zich niet na aanklikken skiplink
-
-Als een skiplink met alleen JavaScript wordt gebouwd, via bijvoorbeeld een `scrollIntoView()` method, verandert alleen de zichtbare focus, maar niet de toetsenbordfocus.
-Voeg tabindex="-1" toe aan het doelelement om het de focus te kunnen geven met `tabIndex = -1`. Zorg ervoor dat ook de toetsenbordfocus zich verplaatst met `focus()`.
-
-### Fout: het linkdoel van de skiplink bestaat niet
-
-Controleer altijd of het doel waar de skiplink naar toe gaat ook inderdaad bestaat. Bij aanpassingen aan een template kan dit wel eens over het hoofd gezien worden.
-
-Als het ID, waar in de skiplink naar verwijst niet bestaat, werkt de skiplink niet.
-
-### Fout: de skiplink verwijst naar een name-attribuut
-
-In HTML5 wordt het gebruik van het `name` attribuut in een interne link [niet ondersteund](https://html.spec.whatwg.org/multipage/obsolete.html#obsolete-but-conforming-features).
-
-Wat vroeger een goede opzet was in HTML4, is nu in HTML5 niet meer geldig.
-
-```html
-<!-- Niet gebruiken, code is niet geldig in HTML5 -->
-<a href="#site-content">Naar de hoofdinhoud</a>
-[...]
-<main>
-  <a name="site-content"></a>
-  [...]
-</main>
-```
-
-Correcte code: verwijs naar een element met een id.
-
-```html
-<!-- Correcte opzet van een skiplink -->
-<a href="#site-content">Naar de hoofdinhoud</a>
-[...]
-<main id="site-content" tabindex="-1">[...]</main>
-```
 
 ## W3C referenties
 
