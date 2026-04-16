@@ -41,7 +41,7 @@ const duplicates = getDuplicateTitles(docs);
 const placeholderTitle = '(geen paginatitel)';
 ---
 
-<Document title={siteTitle} description={siteDescription}>
+<Document title={siteTitle} description={siteDescription} showBreadcrumbs={false}>
   <h1>NL Design System gerenderd met Astro</h1>
   {
     Object.entries(sections).map(([section, list]) => (

@@ -1,10 +1,18 @@
 ---
 import { siteName, siteTitle, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
 import { Root } from '@components/root/root';
-import { Body } from '@components/body/body';
 import { PageBody } from '@components/page-body/page-body';
+import { PageHeader } from '@components/page-header/page-header';
+import { PageFooter } from '@components/page-footer/page-footer';
+import { NavBar } from '@components/nav-bar/nav-bar';
 import { PageLayout } from '@components/page-layout/page-layout';
 import { SkipLink } from '@components/skip-link/skip-link.tsx';
+import { NavList } from '@components/nav-list/nav-list';
+import { NavListLink } from '@components/nav-list/nav-list';
+import { Logo } from '@components/logo/logo';
+import { LinkList, LinkListLink } from '@components/link-list/link-list';
+import { BreadcrumbNav, BreadcrumbNavLink, BreadcrumbNavSeparator } from '@components/breadcrumb-nav/breadcrumb-nav';
+import { IconChevronRight } from '@tabler/icons-react';
 
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
@@ -21,9 +29,21 @@ interface Props {
   keywords?: string[];
   index?: boolean;
   follow?: boolean;
+  showBreadcrumbs?: boolean;
 }
 
-const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
+const {
+  title,
+  titleSm,
+  description,
+  lang = 'nl',
+  keywords,
+  seoImage,
+  seoImageAlt,
+  index = true,
+  follow,
+  showBreadcrumbs = true,
+} = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
@@ -35,6 +55,28 @@ const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
 const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
 const _follow = follow === undefined ? index : follow;
 const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
+
+const mainNavigationItems = [
+  { href: '/', label: 'Home' },
+  { href: '/handboek/', label: 'Handboek' },
+  { href: '/richtlijnen/', label: 'Richtlijnen' },
+  { href: '/componenten/', label: 'Componenten' },
+  { href: '/voorbeelden/', label: 'Voorbeelden' },
+  { href: '/community/', label: 'Community' },
+  { href: '/project/', label: 'Project' },
+];
+
+const footerNavigationItems = [
+  { href: '/blog/', label: 'Blog' },
+  { href: '/project/kernteam/', label: 'Contact' },
+  { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid' },
+  { href: '/privacyverklaring/', label: 'Privacyverklaring' },
+  { href: '/colofon/', label: 'Colofon' },
+  { href: '/github/', label: 'GitHub' },
+  { href: '/slack/', label: 'Slack' },
+  { href: '/figma/', label: 'Figma' },
+  { href: 'https://www.linkedin.com/company/nl-design-system/', label: 'LinkedIn', external: true },
+];
 ---
 
 <Root lang={lang} dir="ltr">
@@ -67,37 +109,58 @@ const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow
     <slot name="head" />
   </head>
 
-  <Body>
+  <body>
     <SkipLink href="#main">Naar de inhoud</SkipLink>
     <PageLayout>
-      <header>
-        TODO: PageHeader
-        <nav aria-labelledby="hoofdnavigatie-label">
-          <h2 id="hoofdnavigatie-label">Hoofdmenu</h2>
-          TODO: Hoofd navigatie
-        </nav>
-      </header>
-
+      <PageHeader>
+        <a href="/" aria-label="Link naar Homepagina"><Logo /></a>
+      </PageHeader>
+      <NavBar aria-labelledby="hoofdnavigatie-label">
+        <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
+        <NavList>
+          {mainNavigationItems.map(({ href, label }) => <NavListLink href={href}>{label}</NavListLink>)}
+        </NavList>
+      </NavBar>
       <PageBody>
-        <nav aria-labelledby="breadcrumb-label">
-          <h2 id="breadcrumb-label">Kruimelpad</h2>
-          TODO: Breadcrumb navigatie
-        </nav>
+        {
+          showBreadcrumbs && (
+            <nav aria-labelledby="breadcrumb-label">
+              <h2 hidden id="breadcrumb-label">
+                Kruimelpad
+              </h2>
+              <BreadcrumbNav>
+                <BreadcrumbNavLink href="/">Home</BreadcrumbNavLink>
+                <BreadcrumbNavSeparator>
+                  <IconChevronRight />
+                </BreadcrumbNavSeparator>
+                <BreadcrumbNavLink href="#">{title}</BreadcrumbNavLink>
+              </BreadcrumbNav>
+            </nav>
+          )
+        }
 
         <main id="main">
           <slot />
         </main>
       </PageBody>
 
-      <footer>
-        TODO: PageFooter
+      <PageFooter>
         <nav aria-labelledby="site-navigatie-label">
-          <h2 id="site-navigatie-label">Submenu</h2>
-          TODO: Footer navigatie
+          <h2 hidden id="site-navigatie-label">Submenu</h2>
+          <LinkList>
+            {
+              footerNavigationItems.map(({ href, label }) => (
+                <LinkListLink href={href}>
+                  {label}
+                  <IconChevronRight slot="icon" />
+                </LinkListLink>
+              ))
+            }
+          </LinkList>
         </nav>
-      </footer>
+      </PageFooter>
     </PageLayout>
-  </Body>
+  </body>
 </Root>
 
 <style is:global>
