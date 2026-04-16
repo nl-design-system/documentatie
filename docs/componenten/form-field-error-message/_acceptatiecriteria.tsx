@@ -83,7 +83,7 @@ export const usage = [
   },
   {
     title:
-      'Informatie over foutmeldingen wordt direct voorgelezen aan bezoekers die een screenreader gebruiken, ook als het formulierveld met een foutmelding geen toetsenbordfocus krijgt.',
+      'Foutmeldingen over fouten die de bezoeker heeft gemaakt worden direct voorgelezen aan bezoekers die een screenreader gebruiken.',
     sc: '4.1.3',
     status: '',
     component: Wcag413,
