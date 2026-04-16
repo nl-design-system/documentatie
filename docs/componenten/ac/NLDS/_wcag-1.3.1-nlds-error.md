@@ -3,10 +3,10 @@
 De Form Field Error Message kan met `aria-describedby` aan het bijbehorende element voor formulierinvoer worden gekoppeld.
 
 ```html
-<label for="name">Naam</label>
-<p id="error-name">Het veld 'Naam' is een verplicht veld.</p>
+<p><label for="name">Naam</label></p>
 <p id="description-name">Vul je voor- en achternaam in.</p>
-<input id="name" aria-describedby="error-name description-name" autocomplete="name" type="text" />
+<p id="error-name">Het veld 'Naam' is een verplicht veld.</p>
+<p><input id="name" aria-describedby="description-name error-name" autocomplete="name" type="text" /></p>
 ```
 
 NL Design System richtlijnen:
