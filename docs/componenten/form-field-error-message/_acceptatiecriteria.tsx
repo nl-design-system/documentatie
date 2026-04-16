@@ -9,7 +9,7 @@ import Wcag144 from '@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md';
 import Wcag133 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.3.3-summary.md';
 import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md';
-import Wcag413 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-4.1.3.md';
+import Wcag413Error from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-4.1.3-error.md';
 import Wcag413NLDS from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-4.1.3-nlds.md';
 
 export const usage = [
@@ -83,10 +83,10 @@ export const usage = [
   },
   {
     title:
-      'Foutmeldingen over fouten die de bezoeker heeft gemaakt worden direct voorgelezen aan bezoekers die een screenreader gebruiken.',
+      'Foutmeldingen over fouten die de bezoeker heeft gemaakt worden meteen voorgelezen aan bezoekers die een screenreader gebruiken.',
     sc: '4.1.3',
     status: '',
-    component: Wcag413,
+    component: Wcag413Error,
     tags: ['developer'],
   },
 ];
