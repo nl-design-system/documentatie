@@ -29,9 +29,21 @@ interface Props {
   keywords?: string[];
   index?: boolean;
   follow?: boolean;
+  showBreadcrumbs?: boolean;
 }
 
-const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
+const {
+  title,
+  titleSm,
+  description,
+  lang = 'nl',
+  keywords,
+  seoImage,
+  seoImageAlt,
+  index = true,
+  follow,
+  showBreadcrumbs = true,
+} = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
@@ -110,14 +122,22 @@ const footerNavigationItems = [
         </NavList>
       </NavBar>
       <PageBody>
-        <nav aria-labelledby="breadcrumb-label">
-          <h2 hidden id="breadcrumb-label">Kruimelpad</h2>
-          <BreadcrumbNav>
-            <BreadcrumbNavLink href="/">Home</BreadcrumbNavLink>
-            <BreadcrumbNavSeparator><IconChevronRight /></BreadcrumbNavSeparator>
-            <BreadcrumbNavLink href="#">{documentTitle}</BreadcrumbNavLink>
-          </BreadcrumbNav>
-        </nav>
+        {
+          showBreadcrumbs && (
+            <nav aria-labelledby="breadcrumb-label">
+              <h2 hidden id="breadcrumb-label">
+                Kruimelpad
+              </h2>
+              <BreadcrumbNav>
+                <BreadcrumbNavLink href="/">Home</BreadcrumbNavLink>
+                <BreadcrumbNavSeparator>
+                  <IconChevronRight />
+                </BreadcrumbNavSeparator>
+                <BreadcrumbNavLink href="#">{title}</BreadcrumbNavLink>
+              </BreadcrumbNav>
+            </nav>
+          )
+        }
 
         <main id="main">
           <slot />
@@ -130,8 +150,10 @@ const footerNavigationItems = [
           <LinkList>
             {
               footerNavigationItems.map(({ href, label }) => (
-                /* TODO: add `icon={<IconChevronLeft/>}` */
-                <LinkListLink href={href}>{label}</LinkListLink>
+                <LinkListLink href={href}>
+                  {label}
+                  <IconChevronRight slot="icon" />
+                </LinkListLink>
               ))
             }
           </LinkList>
