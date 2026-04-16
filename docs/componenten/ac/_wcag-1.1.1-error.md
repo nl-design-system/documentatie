@@ -2,8 +2,6 @@
 
 Zorg ervoor dat de tekst in de Form Field Error Message duidelijk genoeg is om de foutmelding te begrijpen. Het is dan niet nodig om informatieve icons te gebruiken die een alternatieve tekst nodig hebben voor bezoekers die het scherm niet kunnen zien.
 
-Je kunt wel decoratieve icons gebruiken in de Form Field Error Message. Een icon is decoratief als er een beschrijvende tekst boven, naast of onder staat.
-
 [Bekijk de acceptatiecriteria voor de Icon component.](/icon)
 
 NL Design System richtlijnen:
