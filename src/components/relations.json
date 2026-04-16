@@ -2,79 +2,79 @@
   "Notification Banner": [
     {
       "name": "Alert",
-      "slug": "/alert/"
+      "slug": "alert"
     },
     {
       "name": "Note",
-      "slug": "/note/"
+      "slug": "note"
     }
   ],
   "Note": [
     {
       "name": "Alert",
-      "slug": "/alert/"
+      "slug": "alert"
     },
     {
       "name": "Notification Banner",
-      "slug": "/notification-banner/"
+      "slug": "notification-banner"
     }
   ],
   "Modal Dialog": [
     {
       "name": "Alert Dialog",
-      "slug": "/alert-dialog/"
+      "slug": "alert-dialog"
     },
     {
       "name": "Drawer",
-      "slug": "/drawer/"
+      "slug": "drawer"
     },
     {
       "name": "Dialog",
-      "slug": "/dialog/"
+      "slug": "dialog"
     }
   ],
   "Drawer": [
     {
       "name": "Modal Dialog",
-      "slug": "/modal-dialog/"
+      "slug": "modal-dialog"
     },
     {
       "name": "Dialog",
-      "slug": "/dialog/"
+      "slug": "dialog"
     }
   ],
   "Dialog": [
     {
       "name": "Alert Dialog",
-      "slug": "/alert-dialog/"
+      "slug": "alert-dialog"
     },
     {
       "name": "Drawer",
-      "slug": "/drawer/"
+      "slug": "drawer"
     },
     {
       "name": "Modal Dialog",
-      "slug": "/modal-dialog/"
+      "slug": "modal-dialog"
     }
   ],
   "Alert Dialog": [
     {
       "name": "Alert",
-      "slug": "/alert/"
+      "slug": "alert"
     },
     {
       "name": "Modal Dialog",
-      "slug": "/modal-dialog/"
+      "slug": "modal-dialog"
     },
     {
       "name": "Dialog",
-      "slug": "/dialog/"
+      "slug": "dialog"
     }
   ],
   "Alert": [
     {
       "name": "Alert Dialog",
-      "slug": "/alert-dialog/"
+      "slug": "alert-dialog"
     },
     {
       "name": "Invalid Form Alert",
@@ -82,154 +82,154 @@
     },
     {
       "name": "Notification Banner",
-      "slug": "/notification-banner/"
+      "slug": "notification-banner"
     },
     {
       "name": "Note",
-      "slug": "/note/"
+      "slug": "note"
     }
   ],
   "Unordered List": [
     {
       "name": "Ordered List",
-      "slug": "/ordered-list/"
+      "slug": "ordered-list"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     },
     {
       "name": "Link List",
-      "slug": "/link-list/"
+      "slug": "link-list"
     },
     {
       "name": "Task List",
-      "slug": "/task-list/"
+      "slug": "task-list"
     }
   ],
   "Ordered List": [
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     },
     {
       "name": "Unordered List",
-      "slug": "/unordered-list/"
+      "slug": "unordered-list"
     }
   ],
   "Link": [
     {
       "name": "Link List",
-      "slug": "/link-list/"
+      "slug": "link-list"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Button": [
     {
       "name": "Action Group",
-      "slug": "/action-group/"
+      "slug": "action-group"
     },
     {
       "name": "Login Link",
-      "slug": "/login-link/"
+      "slug": "login-link"
     }
   ],
   "Mark": [
     {
       "name": "Strong",
-      "slug": "/strong/"
+      "slug": "strong"
     }
   ],
   "Code Block": [
     {
       "name": "Code",
-      "slug": "/code/"
+      "slug": "code"
     }
   ],
   "Number Badge": [
     {
       "name": "Data Badge",
-      "slug": "/data-badge/"
+      "slug": "data-badge"
     },
     {
       "name": "Dot Badge",
-      "slug": "/dot-badge/"
+      "slug": "dot-badge"
     },
     {
       "name": "Status Badge",
-      "slug": "/status-badge/"
+      "slug": "status-badge"
     }
   ],
   "Heading": [
     {
       "name": "Heading 1",
-      "slug": "/heading-1/"
+      "slug": "heading-1"
     },
     {
       "name": "Heading 2",
-      "slug": "/heading-2/"
+      "slug": "heading-2"
     },
     {
       "name": "Heading 3",
-      "slug": "/heading-3/"
+      "slug": "heading-3"
     },
     {
       "name": "Heading 4",
-      "slug": "/heading-4/"
+      "slug": "heading-4"
     },
     {
       "name": "Heading 5",
-      "slug": "/heading-5/"
+      "slug": "heading-5"
     },
     {
       "name": "Heading 6",
-      "slug": "/heading-6/"
+      "slug": "heading-6"
     },
     {
       "name": "Heading Group",
-      "slug": "/heading-group/"
+      "slug": "heading-group"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Data Badge": [
     {
       "name": "Dot Badge",
-      "slug": "/dot-badge/"
+      "slug": "dot-badge"
     },
     {
       "name": "Number Badge",
-      "slug": "/number-badge/"
+      "slug": "number-badge"
     },
     {
       "name": "Status Badge",
-      "slug": "/status-badge/"
+      "slug": "status-badge"
     }
   ],
   "Color Sample": [],
   "Code": [
     {
       "name": "Code Block",
-      "slug": "/code-block/"
+      "slug": "code-block"
     }
   ],
   "Paragraph": [
     {
       "name": "Lead Paragraph",
-      "slug": "/paragraph/"
+      "slug": "paragraph"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     },
     {
       "name": "Strong",
-      "slug": "/strong/"
+      "slug": "strong"
     }
   ],
   "Form Field Error Message": [
@@ -241,7 +241,7 @@
   "File": [
     {
       "name": "File Input",
-      "slug": "/file-input/"
+      "slug": "file-input"
     }
   ],
   "Page Footer": [
@@ -259,7 +259,7 @@
     },
     {
       "name": "Page Header",
-      "slug": "/page-header/"
+      "slug": "page-header"
     },
     {
       "name": "Page Body",
@@ -285,41 +285,41 @@
     },
     {
       "name": "Page Footer",
-      "slug": "/page-footer/"
+      "slug": "page-footer"
     },
     {
       "name": "Navigation Bar",
-      "slug": "/navigation-bar/"
+      "slug": "navigation-bar"
     }
   ],
   "Text Input": [
     {
       "name": "Checkbox Group",
-      "slug": "/checkbox-group/"
+      "slug": "checkbox-group"
     },
     {
       "name": "Date Input",
-      "slug": "/date-input/"
+      "slug": "date-input"
     },
     {
       "name": "File Input",
-      "slug": "/file-input/"
+      "slug": "file-input"
     },
     {
       "name": "Number Input",
-      "slug": "/number-input/"
+      "slug": "number-input"
     },
     {
       "name": "Password Input",
-      "slug": "/password-input/"
+      "slug": "password-input"
     },
     {
       "name": "Radio Group",
-      "slug": "/radio-group/"
+      "slug": "radio-group"
     },
     {
       "name": "Text Area",
-      "slug": "/text-area/"
+      "slug": "text-area"
     },
     {
       "name": "Text Input Group",
@@ -329,35 +329,35 @@
   "Date Input": [
     {
       "name": "Calendar",
-      "slug": "/calendar/"
+      "slug": "calendar"
     },
     {
       "name": "Date Input Group",
-      "slug": "/date-input-group/"
+      "slug": "date-input-group"
     },
     {
       "name": "Date Picker",
-      "slug": "/date-picker/"
+      "slug": "date-picker"
     }
   ],
   "Description List": [
     {
       "name": "Data Summary",
-      "slug": "/data-summary/"
+      "slug": "data-summary"
     },
     {
       "name": "Form Summary",
-      "slug": "/form-summary/"
+      "slug": "form-summary"
     },
     {
       "name": "Table",
-      "slug": "/table/"
+      "slug": "table"
     }
   ],
   "Fieldset": [
     {
       "name": "Date Input Group",
-      "slug": "/date-input-group/"
+      "slug": "date-input-group"
     },
     {
       "name": "Text Input Group",
@@ -365,75 +365,75 @@
     },
     {
       "name": "Radio Group",
-      "slug": "/radio-group/"
+      "slug": "radio-group"
     },
     {
       "name": "Checkbox Group",
-      "slug": "/checkbox-group/"
+      "slug": "checkbox-group"
     }
   ],
   "Dot Badge": [
     {
       "name": "Data Badge",
-      "slug": "/data-badge/"
+      "slug": "data-badge"
     },
     {
       "name": "Number Badge",
-      "slug": "/number-badge/"
+      "slug": "number-badge"
     },
     {
       "name": "Status Badge",
-      "slug": "/status-badge/"
+      "slug": "status-badge"
     }
   ],
   "Figure": [
     {
       "name": "Image",
-      "slug": "/image/"
+      "slug": "image"
     },
     {
       "name": "Video",
-      "slug": "/video/"
+      "slug": "video"
     }
   ],
   "File Input": [
     {
       "name": "Form Field",
-      "slug": "/form-field/"
+      "slug": "form-field"
     },
     {
       "name": "File",
-      "slug": "/file/"
+      "slug": "file"
     }
   ],
   "Password Input": [
     {
       "name": "Checkbox Group",
-      "slug": "/checkbox-group/"
+      "slug": "checkbox-group"
     },
     {
       "name": "Date Input",
-      "slug": "/date-input/"
+      "slug": "date-input"
     },
     {
       "name": "File Input",
-      "slug": "/file-input/"
+      "slug": "file-input"
     },
     {
       "name": "Number Input",
-      "slug": "/number-input/"
+      "slug": "number-input"
     },
     {
       "name": "Radio Group",
-      "slug": "/radio-group/"
+      "slug": "radio-group"
     },
     {
       "name": "Text Area",
-      "slug": "/text-area/"
+      "slug": "text-area"
     },
     {
       "name": "Text Input",
-      "slug": "/text-input/"
+      "slug": "text-input"
     },
     {
       "name": "Text Input Group",
@@ -443,48 +443,48 @@
   "Status Badge": [
     {
       "name": "Data Badge",
-      "slug": "/data-badge/"
+      "slug": "data-badge"
     },
     {
       "name": "Dot Badge",
-      "slug": "/dot-badge/"
+      "slug": "dot-badge"
     },
     {
       "name": "Number Badge",
-      "slug": "/number-badge/"
+      "slug": "number-badge"
     }
   ],
   "Form Field Description": [
     {
       "name": "Form Field",
-      "slug": "/form-field/"
+      "slug": "form-field"
     },
     {
       "name": "Form Field Label",
-      "slug": "/form-field-label/"
+      "slug": "form-field-label"
     },
     {
       "name": "Form Field Label Suffix",
-      "slug": "/form-field-label suffix/"
+      "slug": "form-field-label suffix"
     },
     {
       "name": "Form Field Error Message",
-      "slug": "/form-field-error message/"
+      "slug": "form-field-error message"
     }
   ],
   "Breadcrumb Navigation": [],
   "Form Field Label": [
     {
       "name": "Form Field",
-      "slug": "/form-field/"
+      "slug": "form-field"
     },
     {
       "name": "Form Field Description",
-      "slug": "/form-field-description/"
+      "slug": "form-field-description"
     },
     {
       "name": "Form Field Label Suffix",
-      "slug": "/form-field-label suffix/"
+      "slug": "form-field-label suffix"
     },
     {
       "name": "Legend",
@@ -494,125 +494,125 @@
   "Table": [
     {
       "name": "Description List",
-      "slug": "/description-list/"
+      "slug": "description-list"
     },
     {
       "name": "Form Summary",
-      "slug": "/form-summary/"
+      "slug": "form-summary"
     }
   ],
   "Login Link": [
     {
       "name": "Button",
-      "slug": "/button/"
+      "slug": "button"
     }
   ],
   "Link List": [
     {
       "name": "Link",
-      "slug": "/link/"
+      "slug": "link"
     },
     {
       "name": "Unordered List",
-      "slug": "/unordered-list/"
+      "slug": "unordered-list"
     }
   ],
   "Select": [
     {
       "name": "Select Combobox",
-      "slug": "/select-combobox/"
+      "slug": "select-combobox"
     },
     {
       "name": "Radio Group",
-      "slug": "/radio-group/"
+      "slug": "radio-group"
     }
   ],
   "Image": [
     {
       "name": "Figure",
-      "slug": "/figure/"
+      "slug": "figure"
     }
   ],
   "Form Summary": [
     {
       "name": "Data Summary",
-      "slug": "/data-summary/"
+      "slug": "data-summary"
     },
     {
       "name": "Description List",
-      "slug": "/description-list/"
+      "slug": "description-list"
     },
     {
       "name": "Table",
-      "slug": "/table/"
+      "slug": "table"
     }
   ],
   "Card as Link": [
     {
       "name": "Case Card",
-      "slug": "/case-card/"
+      "slug": "case-card"
     }
   ],
   "Text Area": [
     {
       "name": "Form Field",
-      "slug": "/form-field/"
+      "slug": "form-field"
     },
     {
       "name": "Form Field Description",
-      "slug": "/form-field-description/"
+      "slug": "form-field-description"
     },
     {
       "name": "Form Field Error Message",
-      "slug": "/form-field-error message/"
+      "slug": "form-field-error message"
     },
     {
       "name": "Form Field Label",
-      "slug": "/form-field-label/"
+      "slug": "form-field-label"
     },
     {
       "name": "Text Input",
-      "slug": "/text-input/"
+      "slug": "text-input"
     }
   ],
   "Radio Button": [
     {
       "name": "Radio Group",
-      "slug": "/radio-group/"
+      "slug": "radio-group"
     },
     {
       "name": "Checkbox",
-      "slug": "/checkbox/"
+      "slug": "checkbox"
     },
     {
       "name": "Switch",
-      "slug": "/switch/"
+      "slug": "switch"
     }
   ],
   "Checkbox": [
     {
       "name": "Checkbox Group",
-      "slug": "/checkbox-group/"
+      "slug": "checkbox-group"
     },
     {
       "name": "Radio Button",
-      "slug": "/radio-button/"
+      "slug": "radio-button"
     },
     {
       "name": "Switch",
-      "slug": "/switch/"
+      "slug": "switch"
     }
   ],
   "Action Group": [
     {
       "name": "Button",
-      "slug": "/button/"
+      "slug": "button"
     }
   ],
   "Side Navigation": [
     {
       "name": "Navigation Bar",
-      "slug": "/navigation-bar/"
+      "slug": "navigation-bar"
     }
   ],
   "Icon": [],
@@ -623,24 +623,24 @@
     },
     {
       "name": "Tabs",
-      "slug": "/tabs/"
+      "slug": "tabs"
     }
   ],
   "Skip Link": [],
   "Blockquote": [
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Heading Group": [
     {
       "name": "Heading",
-      "slug": "/heading/"
+      "slug": "heading"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     },
     {
       "name": "Subheading",
@@ -654,39 +654,39 @@
   "Form Field": [
     {
       "name": "Checkbox Group",
-      "slug": "/checkbox-group/"
+      "slug": "checkbox-group"
     },
     {
       "name": "Date Input",
-      "slug": "/date-input/"
+      "slug": "date-input"
     },
     {
       "name": "File Input",
-      "slug": "/file-input/"
+      "slug": "file-input"
     },
     {
       "name": "Number Input",
-      "slug": "/number-input/"
+      "slug": "number-input"
     },
     {
       "name": "Password Input",
-      "slug": "/password-input/"
+      "slug": "password-input"
     },
     {
       "name": "Radio Group",
-      "slug": "/radio-group/"
+      "slug": "radio-group"
     },
     {
       "name": "Range",
-      "slug": "/range/"
+      "slug": "range"
     },
     {
       "name": "Text Area",
-      "slug": "/text-area/"
+      "slug": "text-area"
     },
     {
       "name": "Text Input",
-      "slug": "/text-input/"
+      "slug": "text-input"
     },
     {
       "name": "Text Input Group",
@@ -697,201 +697,201 @@
   "Heading 6": [
     {
       "name": "Heading",
-      "slug": "/heading/"
+      "slug": "heading"
     },
     {
       "name": "Heading 1",
-      "slug": "/heading-1/"
+      "slug": "heading-1"
     },
     {
       "name": "Heading 2",
-      "slug": "/heading-2/"
+      "slug": "heading-2"
     },
     {
       "name": "Heading 3",
-      "slug": "/heading-3/"
+      "slug": "heading-3"
     },
     {
       "name": "Heading 4",
-      "slug": "/heading-4/"
+      "slug": "heading-4"
     },
     {
       "name": "Heading 5",
-      "slug": "/heading-5/"
+      "slug": "heading-5"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Heading 5": [
     {
       "name": "Heading",
-      "slug": "/heading/"
+      "slug": "heading"
     },
     {
       "name": "Heading 1",
-      "slug": "/heading-1/"
+      "slug": "heading-1"
     },
     {
       "name": "Heading 2",
-      "slug": "/heading-2/"
+      "slug": "heading-2"
     },
     {
       "name": "Heading 3",
-      "slug": "/heading-3/"
+      "slug": "heading-3"
     },
     {
       "name": "Heading 4",
-      "slug": "/heading-4/"
+      "slug": "heading-4"
     },
     {
       "name": "Heading 6",
-      "slug": "/heading-6/"
+      "slug": "heading-6"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Heading 4": [
     {
       "name": "Heading",
-      "slug": "/heading/"
+      "slug": "heading"
     },
     {
       "name": "Heading 1",
-      "slug": "/heading-1/"
+      "slug": "heading-1"
     },
     {
       "name": "Heading 2",
-      "slug": "/heading-2/"
+      "slug": "heading-2"
     },
     {
       "name": "Heading 3",
-      "slug": "/heading-3/"
+      "slug": "heading-3"
     },
     {
       "name": "Heading 5",
-      "slug": "/heading-5/"
+      "slug": "heading-5"
     },
     {
       "name": "Heading 6",
-      "slug": "/heading-6/"
+      "slug": "heading-6"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Heading 3": [
     {
       "name": "Heading",
-      "slug": "/heading/"
+      "slug": "heading"
     },
     {
       "name": "Heading 1",
-      "slug": "/heading-1/"
+      "slug": "heading-1"
     },
     {
       "name": "Heading 2",
-      "slug": "/heading-2/"
+      "slug": "heading-2"
     },
     {
       "name": "Heading 4",
-      "slug": "/heading-4/"
+      "slug": "heading-4"
     },
     {
       "name": "Heading 5",
-      "slug": "/heading-5/"
+      "slug": "heading-5"
     },
     {
       "name": "Heading 6",
-      "slug": "/heading-6/"
+      "slug": "heading-6"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Heading 2": [
     {
       "name": "Heading",
-      "slug": "/heading/"
+      "slug": "heading"
     },
     {
       "name": "Heading 1",
-      "slug": "/heading-1/"
+      "slug": "heading-1"
     },
     {
       "name": "Heading 3",
-      "slug": "/heading-3/"
+      "slug": "heading-3"
     },
     {
       "name": "Heading 4",
-      "slug": "/heading-4/"
+      "slug": "heading-4"
     },
     {
       "name": "Heading 5",
-      "slug": "/heading-5/"
+      "slug": "heading-5"
     },
     {
       "name": "Heading 6",
-      "slug": "/heading-6/"
+      "slug": "heading-6"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Heading 1": [
     {
       "name": "Heading",
-      "slug": "/heading/"
+      "slug": "heading"
     },
     {
       "name": "Heading 2",
-      "slug": "/heading-2/"
+      "slug": "heading-2"
     },
     {
       "name": "Heading 3",
-      "slug": "/heading-3/"
+      "slug": "heading-3"
     },
     {
       "name": "Heading 4",
-      "slug": "/heading-4/"
+      "slug": "heading-4"
     },
     {
       "name": "Heading 5",
-      "slug": "/heading-5/"
+      "slug": "heading-5"
     },
     {
       "name": "Heading 6",
-      "slug": "/heading-6/"
+      "slug": "heading-6"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ],
   "Form Field Label Suffix": [
     {
       "name": "Form Field",
-      "slug": "/form-field/"
+      "slug": "form-field"
     },
     {
       "name": "Form Field Label",
-      "slug": "/form-field-label/"
+      "slug": "form-field-label"
     },
     {
       "name": "Form Field Description",
-      "slug": "/form-field-description/"
+      "slug": "form-field-description"
     }
   ],
   "Progress List": [
     {
       "name": "Form Navigation",
-      "slug": "/form-navigation/"
+      "slug": "form-navigation"
     }
   ],
   "Task Navigation": [
@@ -904,50 +904,50 @@
   "Avatar": [
     {
       "name": "Figure",
-      "slug": "/figure/"
+      "slug": "figure"
     }
   ],
   "Calendar": [
     {
       "name": "Date Input",
-      "slug": "/date-input/"
+      "slug": "date-input"
     },
     {
       "name": "Date Input Group",
-      "slug": "/date-input-group/"
+      "slug": "date-input-group"
     },
     {
       "name": "Date Picker",
-      "slug": "/date-picker/"
+      "slug": "date-picker"
     }
   ],
   "Contact Timeline": [],
   "Switch": [
     {
       "name": "Checkbox",
-      "slug": "/checkbox/"
+      "slug": "checkbox"
     },
     {
       "name": "Radio Button",
-      "slug": "/radio-button/"
+      "slug": "radio-button"
     }
   ],
   "Tabs": [
     {
       "name": "Accordion",
-      "slug": "/accordion/"
+      "slug": "accordion"
     }
   ],
   "Navigation Bar": [
     {
       "name": "Side Navigation",
-      "slug": "/side-navigation/"
+      "slug": "side-navigation"
     }
   ],
   "Select Combobox": [
     {
       "name": "Select",
-      "slug": "/select/"
+      "slug": "select"
     },
     {
       "name": "Search Input",
@@ -957,76 +957,76 @@
   "Case Card": [
     {
       "name": "Card as link",
-      "slug": "/card-as-link/"
+      "slug": "card-as-link"
     }
   ],
   "Page Number Navigation": [],
   "Rich Text Content": [
     {
       "name": "Blockquote",
-      "slug": "/blockquote/"
+      "slug": "blockquote"
     },
     {
       "name": "Heading",
-      "slug": "/heading/"
+      "slug": "heading"
     },
     {
       "name": "Heading 1",
-      "slug": "/heading-1/"
+      "slug": "heading-1"
     },
     {
       "name": "Heading 2",
-      "slug": "/heading-2/"
+      "slug": "heading-2"
     },
     {
       "name": "Heading 3",
-      "slug": "/heading-3/"
+      "slug": "heading-3"
     },
     {
       "name": "Heading 4",
-      "slug": "/heading-4/"
+      "slug": "heading-4"
     },
     {
       "name": "Heading 5",
-      "slug": "/heading-5/"
+      "slug": "heading-5"
     },
     {
       "name": "Heading 6",
-      "slug": "/heading-6/"
+      "slug": "heading-6"
     },
     {
       "name": "Lead Paragraph",
-      "slug": "/paragraph/"
+      "slug": "paragraph"
     },
     {
       "name": "Link",
-      "slug": "/link/"
+      "slug": "link"
     },
     {
       "name": "Ordered List",
-      "slug": "/ordered-list/"
+      "slug": "ordered-list"
     },
     {
       "name": "Paragraph",
-      "slug": "/paragraph/"
+      "slug": "paragraph"
     },
     {
       "name": "Pre-heading",
-      "slug": "/pre-heading/"
+      "slug": "pre-heading"
     },
     {
       "name": "Strong",
-      "slug": "/strong/"
+      "slug": "strong"
     },
     {
       "name": "Unordered List",
-      "slug": "/unordered-list/"
+      "slug": "unordered-list"
     }
   ],
   "Range": [
     {
       "name": "Number Input",
-      "slug": "/number-input/"
+      "slug": "number-input"
     }
   ],
   "Toggletip": [],
@@ -1034,89 +1034,89 @@
   "Spinner": [
     {
       "name": "Progress Bar",
-      "slug": "/progress-bar/"
+      "slug": "progress-bar"
     }
   ],
   "Checkbox Group": [
     {
       "name": "Checkbox",
-      "slug": "/checkbox/"
+      "slug": "checkbox"
     },
     {
       "name": "Fieldset",
-      "slug": "/fieldset/"
+      "slug": "fieldset"
     },
     {
       "name": "Radio Group",
-      "slug": "/radio-group/"
+      "slug": "radio-group"
     }
   ],
   "Date Input Group": [
     {
       "name": "Calendar",
-      "slug": "/calendar/"
+      "slug": "calendar"
     },
     {
       "name": "Date Input",
-      "slug": "/date-input/"
+      "slug": "date-input"
     },
     {
       "name": "Date Picker",
-      "slug": "/date-picker/"
+      "slug": "date-picker"
     },
     {
       "name": "Input Group",
-      "slug": "/input-group/"
+      "slug": "input-group"
     }
   ],
   "Date Picker": [
     {
       "name": "Calendar",
-      "slug": "/calendar/"
+      "slug": "calendar"
     },
     {
       "name": "Date Input",
-      "slug": "/date-input/"
+      "slug": "date-input"
     },
     {
       "name": "Date Input Group",
-      "slug": "/date-input-group/"
+      "slug": "date-input-group"
     }
   ],
   "Radio Group": [
     {
       "name": "Radio Button",
-      "slug": "/radio-button/"
+      "slug": "radio-button"
     },
     {
       "name": "Fieldset",
-      "slug": "/fieldset/"
+      "slug": "fieldset"
     },
     {
       "name": "Checkbox Group",
-      "slug": "/checkbox-group/"
+      "slug": "checkbox-group"
     },
     {
       "name": "Select",
-      "slug": "/select/"
+      "slug": "select"
     }
   ],
   "Task List": [
     {
       "name": "Unordered List",
-      "slug": "/unordered-list/"
+      "slug": "unordered-list"
     }
   ],
   "Progress Bar": [
     {
       "name": "Spinner",
-      "slug": "/spinner/"
+      "slug": "spinner"
     }
   ],
   "Input Group": [
     {
       "name": "Date Input Group",
-      "slug": "/date-input-group/"
+      "slug": "date-input-group"
     },
     {
       "name": "Form Field Partial",
@@ -1124,53 +1124,53 @@
     },
     {
       "name": "Form Field",
-      "slug": "/form-field/"
+      "slug": "form-field"
     },
     {
       "name": "Text Input",
-      "slug": "/text-input/"
+      "slug": "text-input"
     }
   ],
   "Form Navigation": [
     {
       "name": "Progress List",
-      "slug": "/progress-list/"
+      "slug": "progress-list"
     }
   ],
   "YouTube Video": [
     {
       "name": "Video",
-      "slug": "/video/"
+      "slug": "video"
     }
   ],
   "Data Summary": [
     {
       "name": "Description List",
-      "slug": "/description-list/"
+      "slug": "description-list"
     },
     {
       "name": "Form Summary",
-      "slug": "/form-summary/"
+      "slug": "form-summary"
     }
   ],
   "Video": [
     {
       "name": "Youtube Video",
-      "slug": "/youtube-video/"
+      "slug": "youtube-video"
     },
     {
       "name": "Figure",
-      "slug": "/figure/"
+      "slug": "figure"
     }
   ],
   "Strong": [
     {
       "name": "Paragraph",
-      "slug": "/paragraph/"
+      "slug": "paragraph"
     },
     {
       "name": "Rich Text Content",
-      "slug": "/rich-text-content/"
+      "slug": "rich-text-content"
     }
   ]
 }

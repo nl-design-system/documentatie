@@ -217,7 +217,7 @@ export const Related = ({ component }: ComponentPageSectionProps) => {
         {relatedComponents.map((relatedComponent, index) => (
           <>
             {relatedComponent.slug ? (
-              <Link href={relatedComponent.slug}>{relatedComponent.name}</Link>
+              <Link href={`/${relatedComponent.slug}/`}>{relatedComponent.name}</Link>
             ) : (
               relatedComponent.name
             )}
