@@ -218,7 +218,11 @@ export const Related = ({ component }: ComponentPageSectionProps) => {
         Gerelateerde componenten:{' '}
         {relatedComponents.map((relatedComponent, index) => (
           <>
-            <Link href={`/${relatedComponent.toLowerCase().replaceAll(' ', '-')}/`}>{relatedComponent}</Link>
+            {relatedComponent.slug ? (
+              <Link href={`/${relatedComponent.slug}/`}>{relatedComponent.name}</Link>
+            ) : (
+              relatedComponent.name
+            )}
             {index < relatedComponents.length - 1 ? ', ' : '.'}
           </>
         ))}
