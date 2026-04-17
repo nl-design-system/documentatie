@@ -47,6 +47,8 @@ const cspConfig = process.env['NODE_ENV'] === 'development' ? cspDevConfig : csp
 // generation of the content collections.
 globalThis.unlistedPages = new Set();
 
+globalThis.isAstro = true;
+
 // https://astro.build/config
 export default defineConfig({
   publicDir: '../../static',
