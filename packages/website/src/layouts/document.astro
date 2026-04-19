@@ -115,11 +115,13 @@ const footerNavigationItems = [
       <PageHeader>
         <a href="/" aria-label="Link naar Homepagina"><Logo /></a>
       </PageHeader>
-      <NavBar aria-labelledby="hoofdnavigatie-label">
-        <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
-        <NavList>
-          {mainNavigationItems.map(({ href, label }) => <NavListLink href={href}>{label}</NavListLink>)}
-        </NavList>
+      <NavBar>
+        <nav aria-labelledby="hoofdnavigatie-label">
+          <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
+          <NavList>
+            {mainNavigationItems.map(({ href, label }) => <NavListLink href={href}>{label}</NavListLink>)}
+          </NavList>
+        </nav>
       </NavBar>
       <PageBody>
         {
