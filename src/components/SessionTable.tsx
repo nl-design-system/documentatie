@@ -38,21 +38,21 @@ interface SessionTableProps extends HTMLAttributes<HTMLTableElement> {
 }
 
 const SpeakerData = ({ name, organisation }: Speaker) => (
-  <Paragraph className={clsx('session-table__speaker', 'speaker')}>
-    <Icon className="speaker__icon">
+  <Paragraph className={clsx('ma-session-table__speaker', 'ma-speaker')}>
+    <Icon className="ma-speaker__icon">
       <IconUser />
     </Icon>
-    <span className="speaker__name">{name}</span>
+    <span className="ma-speaker__name">{name}</span>
     <br />
-    <span className="speaker__organisation">{organisation}</span>
+    <span className="ma-speaker__organisation">{organisation}</span>
   </Paragraph>
 );
 
 export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className, ...props }: SessionTableProps) => (
-  <div className={clsx('session-table-container', className)}>
-    <Table className={clsx('session-table', className)} {...props}>
+  <div className={clsx('ma-session-table-container', className)}>
+    <Table className={clsx('ma-session-table', className)} {...props}>
       <TableHeader>
-        <TableRow className="session-table__row">
+        <TableRow className="ma-session-table__row">
           <TableHeaderCell>{lang === 'nl-NL' ? 'Tijd' : 'Time'}</TableHeaderCell>
           <TableHeaderCell>{lang === 'nl-NL' ? 'Taal' : 'Language'}</TableHeaderCell>
           <TableHeaderCell>{lang === 'nl-NL' ? 'Spreker' : 'Speaker'}</TableHeaderCell>
@@ -64,8 +64,8 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
         {sessions.map(
           ({ isoDateTime, speakers, subject, icalLink, language, cancelled }, index) =>
             !cancelled && (
-              <TableRow className="session-table__row" key={index}>
-                <TableCell className="session-table__time">
+              <TableRow className="ma-session-table__row" key={index}>
+                <TableCell className="ma-session-table__time">
                   <Paragraph>
                     <time dateTime={isoDateTime}>
                       {new Intl.DateTimeFormat(lang, {
@@ -77,11 +77,11 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
                     </time>
                   </Paragraph>
                 </TableCell>
-                <TableCell className="session-table__language">
+                <TableCell className="ma-session-table__language">
                   <abbr title={language.description}>{language.abbr}</abbr>
                 </TableCell>
                 <TableCell>
-                  <div className="session-table__speakers">
+                  <div className="ma-session-table__speakers">
                     {Object.entries(allSpeakers)
                       .filter(([fullName]) => speakers.includes(fullName))
                       .map(([_, speaker], index) => (
@@ -89,7 +89,7 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
                       ))}
                   </div>
                 </TableCell>
-                <TableCell className="session-table__subject">
+                <TableCell className="ma-session-table__subject">
                   <Paragraph lang={language.abbr}>
                     <Link
                       href={`/events/design-systems-week-2025/${lang === 'nl-NL' ? 'programma' : language.abbr === 'EN' ? 'en/program' : 'programma'}#${subject.toLowerCase().replace(/\s/gi, '-')}`}
@@ -98,7 +98,7 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
                     </Link>
                   </Paragraph>
                 </TableCell>
-                <TableCell className="session-table__time">
+                <TableCell className="ma-session-table__time">
                   {icalLink && (
                     <ButtonLink href={icalLink} download={icalLink} aria-labelledby="ical-description">
                       <Icon>

@@ -1,3 +1,4 @@
+/* stylelint-disable-next-line selector-class-pattern */
 .card {
   --utrecht-space-around: 0;
   --ifm-link-color: var(--nlds-interaction-color);
@@ -15,21 +16,26 @@
   position: relative;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .card:has(.cardLink:hover) {
   border-color: #ddd;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .cardTitle {
   font-size: 28px;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .cardDescription {
   font-size: 20px;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .cardLink {
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .cardLink::before {
   content: "";
   inset-block-end: 0;
@@ -39,16 +45,16 @@
   position: absolute;
 }
 
-li.check::before,
-li.almost-check::before {
+li.ma-doelen__item--check::before,
+li.ma-doelen__item--almost-check::before {
   float: inline-start;
   padding-inline-end: 0.33em;
 }
 
-li.check::before {
+li.ma-doelen__item--check::before {
   content: "✅";
 }
-li.almost-check::before {
+li.ma-doelen__item--almost-check::before {
   content: "☑️";
 }
 /*

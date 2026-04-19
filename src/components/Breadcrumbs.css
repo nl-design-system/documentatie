@@ -1,3 +1,6 @@
+/* `breabreadcrumbsContainer` and `breadcrumbs` are Docusaurus class names */
+/* stylelint-disable selector-class-pattern */
+
 .breadcrumbsContainer {
   --ifm-breadcrumb-size-multiplier: 0.8;
 

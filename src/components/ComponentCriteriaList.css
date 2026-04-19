@@ -1,22 +1,22 @@
-.component-criteria-section__heading {
+.ma-component-criteria-section__heading {
   display: inline-block;
 }
 
-.component-criteria-section {
+.ma-component-criteria-section {
   border: solid 1px #ccc;
   padding: 1em;
   margin-block-end: 1em;
 }
 
-.component-criteria-section__dl {
+.ma-component-criteria-section__dl {
   display: grid;
   grid-gap: var(--basis-space-column-sm) var(--basis-space-column-lg);
   grid-template-columns: max-content;
 }
-.component-criteria-section__dt {
+.ma-component-criteria-section__dt {
   font-weight: bold;
 }
-.component-criteria-section__dd {
+.ma-component-criteria-section__dd {
   margin: 0;
   grid-column-start: 2;
 }

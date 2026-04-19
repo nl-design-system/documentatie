@@ -54,7 +54,7 @@ p + .nlds-guideline {
   margin-block-end: 16px;
 }
 
-.nlds-guideline span.progress-indicator {
+.nlds-guideline span.example-progress-indicator {
   display: block;
   font-size: 1rem;
   font-weight: normal;

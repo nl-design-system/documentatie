@@ -1,11 +1,11 @@
-.terms-list__item {
+.ma-terms-list__item {
   margin-block-end: 32px;
 }
 
-.terms-list__definition {
+.ma-terms-list__definition {
   margin-inline-start: 0;
 }
 
-.terms-list__definition__sources {
+.ma-terms-list__definition__sources {
   margin-block-start: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }

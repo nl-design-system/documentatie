@@ -1,7 +1,7 @@
-.component-anatomy {
+.ma-component-anatomy {
   margin: 0;
 }
-.component-anatomy__illustration {
+.ma-component-anatomy__illustration {
   max-inline-size: 100%;
   block-size: auto;
 }
