@@ -10,10 +10,11 @@
   margin-inline-start: 0; /* reset <figure> margin */
 }
 
-.nlds-guideline:first-of-type {
+p + .nlds-guideline {
   margin-block-start: 20px;
 }
-p + .nlds-guideline {
+
+.nlds-guideline:first-of-type {
   margin-block-start: 20px;
 }
 
@@ -22,7 +23,8 @@ p + .nlds-guideline {
 }
 
 .nlds-guideline__description {
-  padding: 24px;
+  padding-block: 24px;
+  padding-inline: 24px;
 }
 
 .nlds-guideline__example {

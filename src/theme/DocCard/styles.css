@@ -32,10 +32,6 @@
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.cardLink {
-}
-
-/* stylelint-disable-next-line selector-class-pattern */
 .cardLink::before {
   content: "";
   inset-block-end: 0;

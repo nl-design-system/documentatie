@@ -1,5 +1,6 @@
 .ma-component-anatomy {
-  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
 }
 .ma-component-anatomy__illustration {
   block-size: auto;

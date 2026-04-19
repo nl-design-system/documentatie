@@ -1,10 +1,7 @@
 .ma-dsw-session {
-  margin-block: 2em;
-}
-
-.ma-dsw-session {
   border-block-end: 4px dotted #ccc;
   margin-block-end: 1em;
+  margin-block-start: 2em;
   padding-block-end: 2.5em;
 }
 
@@ -34,8 +31,9 @@
   flex-direction: row;
   font-style: italic;
   gap: 1em;
-  margin: 0;
+  margin-block: 0;
   margin-block: 1em;
+  margin-inline: 0;
 }
 
 .ma-dsw-speaker__image {
