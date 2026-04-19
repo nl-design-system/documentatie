@@ -1,10 +1,10 @@
-.story {
+.ma-story {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.story__link {
+.ma-story__link {
   background-color: var(--ifm-button-color);
   color: var(--ifm-background-color);
   display: block;
@@ -13,7 +13,7 @@
   text-decoration: none;
 }
 
-.story__link:hover {
+.ma-story__link:hover {
   color: white;
   text-decoration: underline;
 }

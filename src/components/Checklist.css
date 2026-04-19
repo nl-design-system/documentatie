@@ -15,29 +15,29 @@
   display: inline-flex;
   align-items: center;
 }
-.new-checklist {
+.ma-new-checklist {
   padding-inline-start: 0;
   list-style: none;
 }
 
-.new-checklist__title {
+.ma-new-checklist__title {
   font-weight: 600;
   margin-inline-start: 5px;
 }
 
-.new-checklist__content {
+.ma-new-checklist__content {
   margin-inline-start: 20px;
   margin-block-end: 20px;
 }
 
-.new-checklist__checkbox {
+.ma-new-checklist__checkbox {
   grid-area: checkbox;
 }
-.new-checklist__badge-list {
+.ma-new-checklist__badge-list {
   grid-area: badge-list;
   grid-column: 2;
 }
-.new-checklist__actions {
+.ma-new-checklist__actions {
   grid-area: actions;
 }
 
@@ -67,7 +67,7 @@
   --nl-data-badge-color: white;
 }
 
-.new-checklist-group {
+.ma-new-checklist-group {
   display: flex;
   flex-direction: column;
   row-gap: var(--basis-space-row-xl);

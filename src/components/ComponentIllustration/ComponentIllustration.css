@@ -1,38 +1,38 @@
-.component-illustration {
+.ma-component-illustration {
   display: inline;
   block-size: auto;
   margin: 0;
-  max-block-size: var(--component-illustration-svg-max-height);
+  max-block-size: var(--ma-component-illustration-svg-max-height);
   max-inline-size: 100%;
-  padding-inline: var(--component-illustration-padding-inline);
+  padding-inline: var(--ma-component-illustration-padding-inline);
   inline-size: auto;
 }
 
-.component-illustration--help-wanted {
-  --component-illustration-background-color: var(--nlds-status-help-wanted-subtle-background-color);
-  --component-illustration-grid-color: var(--nlds-status-help-wanted-border-color);
-  --component-illustration-color: var(--nlds-status-help-wanted-color);
+.ma-component-illustration--help-wanted {
+  --ma-component-illustration-background-color: var(--nlds-status-help-wanted-subtle-background-color);
+  --ma-component-illustration-grid-color: var(--nlds-status-help-wanted-border-color);
+  --ma-component-illustration-color: var(--nlds-status-help-wanted-color);
 }
 
-.component-illustration--community {
-  --component-illustration-background-color: var(--nlds-status-community-subtle-background-color);
-  --component-illustration-grid-color: var(--nlds-status-community-border-color);
-  --component-illustration-color: var(--nlds-status-community-color);
+.ma-component-illustration--community {
+  --ma-component-illustration-background-color: var(--nlds-status-community-subtle-background-color);
+  --ma-component-illustration-grid-color: var(--nlds-status-community-border-color);
+  --ma-component-illustration-color: var(--nlds-status-community-color);
 }
 
-.component-illustration--candidate {
-  --component-illustration-background-color: var(--nlds-status-candidate-subtle-background-color);
-  --component-illustration-grid-color: var(--nlds-status-candidate-border-color);
-  --component-illustration-color: var(--nlds-status-candidate-color);
+.ma-component-illustration--candidate {
+  --ma-component-illustration-background-color: var(--nlds-status-candidate-subtle-background-color);
+  --ma-component-illustration-grid-color: var(--nlds-status-candidate-border-color);
+  --ma-component-illustration-color: var(--nlds-status-candidate-color);
 }
 
-.component-illustration--hall-of-fame {
-  --component-illustration-background-color: var(--nlds-status-hall-of-fame-subtle-background-color);
-  --component-illustration-grid-color: var(--nlds-status-hall-of-fame-border-color);
-  --component-illustration-color: var(--nlds-status-hall-of-fame-color);
+.ma-component-illustration--hall-of-fame {
+  --ma-component-illustration-background-color: var(--nlds-status-hall-of-fame-subtle-background-color);
+  --ma-component-illustration-grid-color: var(--nlds-status-hall-of-fame-border-color);
+  --ma-component-illustration-color: var(--nlds-status-hall-of-fame-color);
 }
 
-.component-illustration__caption {
+.ma-component-illustration__caption {
   inset-inline-start: -1000vw;
   position: absolute;
 }

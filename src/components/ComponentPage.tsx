@@ -37,7 +37,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
     component && (
       <AccordionProvider
         sections={relayOrderedProjects.map((project) => ({
-          className: clsx('definition-of-done', project && `definition-of-done--${toKebabCase(project.title)}`),
+          className: clsx('ma-definition-of-done', project && `ma-definition-of-done--${toKebabCase(project.title)}`),
           headingLevel: headingLevel,
           expanded: false,
           label: project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : '',
@@ -70,7 +70,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
 export const Implementations = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const implementations = component && component.projects.filter((project) => !relayProjectIds.includes(project.id));
   return component && implementations.length ? (
-    <CardGroup appearance="large" className="implementation-card-group">
+    <CardGroup appearance="large" className="ma-implementation-card-group">
       {implementations
         .sort((a, b) => {
           const aTodo = a.progress.max - a.progress.value;
@@ -93,7 +93,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           );
 
           return (
-            <Card key={project.title} className="implementation-card">
+            <Card key={project.title} className="ma-implementation-card">
               <CardContent>
                 <Heading level={headingLevel}>{project.title.replace(/^Community/i, '')}</Heading>
                 <Paragraph>

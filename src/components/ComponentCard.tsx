@@ -32,7 +32,7 @@ export const ComponentCard = ({
   return (
     <Card
       appearance="large"
-      className={clsx('component-card', !relayStep && 'component-card--suggestion')}
+      className={clsx('ma-component-card', !relayStep && 'ma-component-card--suggestion')}
       component="section"
     >
       <CardIllustration>
@@ -40,7 +40,7 @@ export const ComponentCard = ({
       </CardIllustration>
       <CardContent>
         <div>
-          <Heading level={headingLevel} className="component-card__title">
+          <Heading level={headingLevel} className="ma-component-card__title">
             {name}
           </Heading>
           {relayStep && (

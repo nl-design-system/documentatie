@@ -1,7 +1,9 @@
+/* stylelint-disable-next-line selector-class-pattern */
 .containsTaskList {
   list-style: none;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 :not(.containsTaskList > li) > .containsTaskList {
   padding-inline-start: 0;
 }

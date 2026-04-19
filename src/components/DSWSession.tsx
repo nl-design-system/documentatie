@@ -57,15 +57,15 @@ export const DSWSession = ({
   const videoIds = [videoId, session?.videoId, ...(session?.videoIds ?? [])].filter(Boolean);
 
   return session ? (
-    <article className={clsx('dsw-session')}>
+    <article className={clsx('ma-dsw-session')}>
       <Heading
         level={headingLevel}
-        className="dsw-session__title"
+        className="ma-dsw-session__title"
         id={session.subject.toLowerCase().replace(/\s/gi, '-')}
       >
         {session.subject}
       </Heading>
-      <Paragraph className="dsw-session__subtitle" lead>
+      <Paragraph className="ma-dsw-session__subtitle" lead>
         {speakers &&
           speakers
             .map((speaker) => (speaker?.organisation ? `${speaker.name} - ${speaker.organisation}` : speaker.name))
@@ -126,11 +126,11 @@ export const DSWSession = ({
       ) : (
         <></>
       )}
-      <aside className={clsx('dsw-session__speakers')}>
+      <aside className={clsx('ma-dsw-session__speakers')}>
         {speakers.map((speaker, index) => (
-          <div key={index} className={clsx('dsw-session__speaker', 'dsw-speaker')}>
-            <img className={clsx('dsw-speaker__image')} src={speaker.image.src} alt={speaker.image.alt} />
-            <Paragraph className={clsx('dsw-speaker__description')}>{speaker.description[lang]}</Paragraph>
+          <div key={index} className={clsx('ma-dsw-session__speaker', 'ma-dsw-speaker')}>
+            <img className={clsx('ma-dsw-speaker__image')} src={speaker.image.src} alt={speaker.image.alt} />
+            <Paragraph className={clsx('ma-dsw-speaker__description')}>{speaker.description[lang]}</Paragraph>
           </div>
         ))}
       </aside>
