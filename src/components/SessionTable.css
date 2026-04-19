@@ -1,5 +1,5 @@
 .session-table-container {
-  max-width: 90vw;
+  max-inline-size: 90vw;
   overflow-x: auto;
 }
 
@@ -10,7 +10,7 @@
 
   display: table;
   table-layout: auto;
-  width: 100%;
+  inline-size: 100%;
 }
 
 .session-table__row {
@@ -29,7 +29,7 @@
   --utrecht-icon-margin-inline-end: 4px;
 
   padding-inline-start: calc(var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end));
-  width: max-content;
+  inline-size: max-content;
 }
 
 .speaker__icon {

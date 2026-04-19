@@ -1,11 +1,11 @@
 .component-illustration {
   display: inline;
-  height: auto;
+  block-size: auto;
   margin: 0;
-  max-height: var(--component-illustration-svg-max-height);
-  max-width: 100%;
+  max-block-size: var(--component-illustration-svg-max-height);
+  max-inline-size: 100%;
   padding-inline: var(--component-illustration-padding-inline);
-  width: auto;
+  inline-size: auto;
 }
 
 .component-illustration--help-wanted {
@@ -33,6 +33,6 @@
 }
 
 .component-illustration__caption {
-  left: -1000vw;
+  inset-inline-start: -1000vw;
   position: absolute;
 }

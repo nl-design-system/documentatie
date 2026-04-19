@@ -13,7 +13,7 @@
 }
 
 .bingo__input {
-  left: -100vw;
+  inset-inline-start: -100vw;
   position: absolute;
 }
 
