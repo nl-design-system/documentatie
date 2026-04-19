@@ -12,12 +12,12 @@
 }
 
 .nl-data-badge {
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
 }
 .ma-new-checklist {
-  padding-inline-start: 0;
   list-style: none;
+  padding-inline-start: 0;
 }
 
 .ma-new-checklist__title {
@@ -26,8 +26,8 @@
 }
 
 .ma-new-checklist__content {
-  margin-inline-start: 20px;
   margin-block-end: 20px;
+  margin-inline-start: 20px;
 }
 
 .ma-new-checklist__checkbox {
@@ -74,14 +74,14 @@
 }
 
 .ma-filter-block {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--basis-space-block-md);
-  padding-inline: var(--basis-space-inline-lg);
-  padding-block: var(--basis-space-block-lg);
   background-color: var(--basis-color-accent-1-bg-default);
   border-color: var(--basis-color-accent-1-border-subtle);
   border-style: solid;
   border-width: 1px;
+  display: flex;
+  flex-direction: column;
   margin-block-end: var(--basis-space-row-xl);
+  padding-block: var(--basis-space-block-lg);
+  padding-inline: var(--basis-space-inline-lg);
+  row-gap: var(--basis-space-block-md);
 }

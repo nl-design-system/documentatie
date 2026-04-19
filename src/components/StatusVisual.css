@@ -5,15 +5,15 @@
 
 .ma-status-visual__connector-wrapper {
   display: flex;
-  justify-content: center;
   inline-size: 100%;
+  justify-content: center;
 }
 
 .ma-status-visual__connector {
-  inline-size: 24px;
   block-size: 24px;
-  margin-block-start: -2px;
   color: var(--nlds-status-border-color);
+  inline-size: 24px;
+  margin-block-start: -2px;
 }
 
 .ma-status-visual__title.ma-status-visual--help-wanted,
@@ -43,20 +43,20 @@
 .ma-status-visual__title {
   font-size: 24px;
   line-height: 24px;
-  margin-block-start: 0;
   margin-block-end: 0;
-  padding-block-start: 24px;
+  margin-block-start: 0;
   padding-block-end: 16px;
-  padding-inline-start: 24px;
+  padding-block-start: 24px;
   padding-inline-end: 24px;
+  padding-inline-start: 24px;
 }
 
 .ma-status-visual__description {
-  margin-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-block-end: 32px;
-  padding-inline-start: 24px;
-  padding-inline-end: 24px;
   border-block-end: 2px solid var(--nlds-status-border-color);
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-start: 0;
+  padding-block-end: 32px;
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
 }

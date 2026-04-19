@@ -6,23 +6,19 @@
 
 /* stylelint-disable-next-line selector-class-pattern */
 .sr-only {
+  block-size: 1px;
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
-  block-size: 1px;
+  inline-size: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  inline-size: 1px;
   word-wrap: normal;
 }
 
 :root {
-  -webkit-hyphenate-limit-before: 8;
-  -webkit-hyphenate-limit-after: 4;
-  hyphenate-limit-chars: 12 8 4;
-
   /* docsearch tokens */
   --ma-docsearch-button-background-color: white;
   --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
@@ -50,14 +46,13 @@
   --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
   --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
   --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
+
+  -webkit-hyphenate-limit-after: 4;
+  -webkit-hyphenate-limit-before: 8;
+  hyphenate-limit-chars: 12 8 4;
 }
 
 .ma-theme {
-  /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
-  -moz-osx-font-smoothing: auto !important;
-  -webkit-font-smoothing: auto !important;
-  font-size-adjust: 0.5;
-
   /* You can override the default Infima variables here. */
   --ifm-container-width: 870px;
   --ifm-container-width-xl: 960px;
@@ -128,7 +123,6 @@
   --utrecht-form-field-description-margin-block-start: 0;
   --utrecht-form-field-margin-block-start: 8px;
   --utrecht-form-field-margin-block-end: 8px;
-
   --utrecht-form-fieldset-legend-font-size: var(--utrecht-form-label-font-size);
   --utrecht-form-fieldset-legend-font-weight: var(--utrecht-form-label-font-weight);
   --utrecht-form-fieldset-legend-line-height: var(--utrecht-form-label-line-height);
@@ -144,8 +138,13 @@
   --utrecht-unordered-list-font-size: var(--basis-text-font-size-md);
   --utrecht-accordion-button-background-color: transparent !important;
   --utrecht-link-text-underline-offset: 4px !important;
-
   --ifm-footer-link-horizontal-spacing: 20px;
+
+  font-size-adjust: 0.5;
+
+  /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
+  -moz-osx-font-smoothing: auto !important;
+  -webkit-font-smoothing: auto !important;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -159,7 +158,7 @@
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.menu__caret:focus-visible.menu__caret:before {
+.menu__caret:focus-visible.menu__caret::before {
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="var(--basis-focus-color)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
 }
 
@@ -178,13 +177,14 @@
   --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
   --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
     var(--utrecht-focus-inverse-outline-color, transparent);
+
+  background-color: var(--basis-focus-background-color);
   box-shadow: var(--_ma-focus-ring-box-shadow);
+  color: var(--basis-focus-color);
   outline-color: var(--basis-focus-outline-color, revert);
   outline-offset: var(--utrecht-focus-outline-offset, revert);
   outline-style: var(--utrecht-focus-outline-style, revert);
   outline-width: var(--utrecht-focus-outline-width, revert);
-  background-color: var(--basis-focus-background-color);
-  color: var(--basis-focus-color);
 }
 /* stylelint-enable selector-class-pattern */
 
@@ -200,17 +200,17 @@ p {
 .utrecht-heading-5,
 .utrecht-heading-6,
 .utrecht-paragraph {
+  hyphens: none;
   max-inline-size: 38rem;
   word-break: normal;
-  hyphens: none;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
 .menu__link {
-  text-decoration: none;
-  padding-inline: 20px;
-  border-radius: 0;
   border-inline-start: 4px solid transparent;
+  border-radius: 0;
+  padding-inline: 20px;
+  text-decoration: none;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -244,12 +244,13 @@ p {
 .ma-navigation-bar-item {
   --utrecht-link-color: white;
   --utrecht-link-text-decoration: none;
-  min-block-size: 100%;
-  border-block-start-width: 4px;
-  border-block-start-style: solid;
-  border-color: transparent;
+
   align-content: center;
+  border-block-start-style: solid;
+  border-block-start-width: 4px;
+  border-color: transparent;
   line-height: 2;
+  min-block-size: 100%;
 }
 
 .ma-navigation-bar-item:hover {
@@ -275,7 +276,7 @@ p {
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.navbar-sidebar .menu__caret:before {
+.navbar-sidebar .menu__caret::before {
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="white" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
 }
 
@@ -284,9 +285,9 @@ p {
   --ifm-color-emphasis-600: white;
 
   border-color: white;
-  border-width: var(--utrecht-button-secondary-action-border-width);
-  border-style: solid;
   border-radius: var(--utrecht-button-border-radius);
+  border-style: solid;
+  border-width: var(--utrecht-button-secondary-action-border-width);
   padding-block-end: var(--utrecht-button-padding-block-end);
   padding-block-start: var(--utrecht-button-padding-block-start);
   padding-inline-end: var(--utrecht-button-padding-inline-end);
@@ -296,6 +297,7 @@ p {
 /* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar__brand button:hover {
   --ifm-color-emphasis-600: var(--utrecht-button-secondary-action-hover-color);
+
   background-color: var(--utrecht-button-secondary-action-hover-background-color);
   color: var(--utrecht-button-secondary-action-hover-color);
 }
@@ -413,8 +415,8 @@ p {
 
 /* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Hit .DocSearch-Hit-title mark {
-  font-weight: var(--ma-docsearch-modal-hit-mark-font-weight);
   color: inherit;
+  font-weight: var(--ma-docsearch-modal-hit-mark-font-weight);
   text-decoration: none;
 }
 
@@ -427,9 +429,9 @@ p {
 
 /* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Trigger .DocSearch-Button {
+  block-size: unset;
   border-radius: var(--ma-docsearch-button-border-radius);
   box-sizing: border-box;
-  block-size: unset;
   padding-block-end: var(--ma-docsearch-button-padding-block-end);
   padding-block-start: var(--ma-docsearch-button-padding-block-start);
   padding-inline-end: var(--ma-docsearch-button-padding-inline-end);
@@ -487,10 +489,10 @@ aside button[title="Zijbalk inklappen"],
 }
 
 .pra-donutchart-chart {
-  padding-block: 0 !important;
-  padding-inline: 0 !important;
   block-size: 20px !important;
   inline-size: 20px !important;
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
 }
 
 .pra-donutchart-legend {
@@ -501,12 +503,11 @@ aside button[title="Zijbalk inklappen"],
 .utrecht-card {
   --utrecht-heading-3-margin-block-start: 1rem;
   --utrecht-heading-3-font-size: 1.5rem;
-  -_utrecht-link-state-color: inherit;
   --utrecht-link-text-decoration: none;
-
   --utrecht-card-padding-inline-end: 20px;
   --utrecht-card-padding-inline-start: 20px;
 
+  -_utrecht-link-state-color: inherit;
   padding-inline-end: var(--utrecht-card-padding-inline-end);
   padding-inline-start: var(--utrecht-card-padding-inline-start);
 }
@@ -551,6 +552,7 @@ aside button[title="Zijbalk inklappen"],
 
 .utrecht-button-link {
   --ifm-link-hover-color: var(--_utrecht-button-hover-color);
+
   /* --ifm-link-hover-decoration: none; */
 }
 
@@ -582,15 +584,15 @@ aside button[title="Zijbalk inklappen"],
 
 /* stylelint-disable-next-line selector-class-pattern */
 .footer__links {
+  column-gap: 20px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
 .footer__link-item {
-  text-underline-offset: var(--utrecht-link-text-underline-offset);
   text-decoration-skip-ink: auto;
+  text-underline-offset: var(--utrecht-link-text-underline-offset);
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -618,27 +620,27 @@ aside button[title="Zijbalk inklappen"],
 /* stylelint-disable-next-line selector-class-pattern */
 .breadcrumbs__link {
   color: var(--basis-color-action-2-color-default);
-  text-underline-offset: var(--utrecht-link-text-underline-offset);
   font-size: var(--basis-text-font-size-sm);
   text-decoration-skip-ink: auto;
+  text-underline-offset: var(--utrecht-link-text-underline-offset);
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
 .breadcrumbs__link:hover {
+  background-color: none;
   color: var(--basis-color-action-2-color-hover);
   text-decoration: none;
-  background-color: none;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
 .breadcrumbs__link:active {
+  background-color: none;
   color: var(--basis-color-action-2-color-active);
   text-decoration: none;
-  background-color: none;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.breadcrumbs__link[href="/"]:after {
+.breadcrumbs__link[href="/"]::after {
   content: "Home";
 }
 
@@ -790,14 +792,14 @@ pre {
   --nlds-code-block-attr-name-font-style: italic;
   --nlds-code-block-inserted-color: rgb(173 219 103);
   --nlds-code-block-inserted-font-style: italic;
-  --nlds-code-block-string-color: rgb(111, 211, 206);
+  --nlds-code-block-string-color: rgb(111 211 206);
   --nlds-code-block-url-color: rgb(173 219 103);
   --nlds-code-block-entity-color: rgb(173 219 103);
   --nlds-code-block-css-token-color: rgb(173 219 103);
   --nlds-code-block-style-token-color: rgb(173 219 103);
-  --nlds-code-block-class-name-color: rgb(139, 214, 255);
-  --nlds-code-block-maybe-class-name-color: rgb(255, 139, 216);
-  --nlds-code-block-atrule-color: rgb(189, 139, 255);
+  --nlds-code-block-class-name-color: rgb(139 214 255);
+  --nlds-code-block-maybe-class-name-color: rgb(255 139 216);
+  --nlds-code-block-atrule-color: rgb(189 139 255);
   --nlds-code-block-attr-value-color: rgb(255 203 139);
   --nlds-code-block-regex-color: rgb(214 222 235);
   --nlds-code-block-important-color: rgb(214 222 235);
@@ -826,14 +828,14 @@ code {
   padding: 0;
 }
 
-@media screen and (max-width: 70rem) {
+@media screen and (width <= 70rem) {
   /* stylelint-disable-next-line selector-class-pattern */
   .navbar__brand {
     margin-inline-end: 8px;
   }
 }
 
-@media screen and (max-width: 62rem) {
+@media screen and (width <= 62rem) {
   /* stylelint-disable-next-line selector-class-pattern */
   .navbar__items:first-of-type {
     justify-content: space-between;
@@ -845,14 +847,14 @@ code {
   }
 }
 
-@media screen and (max-width: 29rem) {
+@media screen and (width <= 29rem) {
   /* stylelint-disable-next-line selector-class-pattern */
   .navbar__items--right {
     min-inline-size: 30vw;
   }
 }
 
-@media screen and (max-width: 20rem) {
+@media screen and (width <= 20rem) {
   /* stylelint-disable-next-line selector-class-pattern */
   .navbar__items--right {
     min-inline-size: 25vw;
@@ -866,10 +868,11 @@ code {
   --utrecht-link-color: white;
   --utrecht-link-text-decoration-color: white;
   --utrecht-link-hover-text-decoration-thickness: 2px;
-  min-block-size: 40px;
-  inline-size: 100vw;
-  padding-block: 0.5rem;
+
   font-size: 1.125rem;
+  inline-size: 100vw;
+  min-block-size: 40px;
+  padding-block: 0.5rem;
 }
 
 ams-page-header,
@@ -885,5 +888,6 @@ ams-page-footer {
 /* stylelint-disable-next-line selector-class-pattern */
 .alert--success a {
   color: #285f8f !important;
+
   /* Satisfies AA contrast on #e6f6e6 */
 }

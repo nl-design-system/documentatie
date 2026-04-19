@@ -57,6 +57,7 @@ li.ma-doelen__item--check::before {
 li.ma-doelen__item--almost-check::before {
   content: "☑️";
 }
+
 /*
 li.check {
   display: none;

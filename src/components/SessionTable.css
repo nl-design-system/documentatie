@@ -9,8 +9,8 @@
   --utrecht-icon-inset-block-start: 0.1em;
 
   display: table;
-  table-layout: auto;
   inline-size: 100%;
+  table-layout: auto;
 }
 
 .ma-session-table__row {
@@ -28,8 +28,8 @@
 .ma-session-table__speaker {
   --utrecht-icon-margin-inline-end: 4px;
 
-  padding-inline-start: calc(var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end));
   inline-size: max-content;
+  padding-inline-start: calc(var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end));
 }
 
 .ma-speaker__icon {

@@ -1,11 +1,12 @@
 .ma-cardgroup {
   --utrecht-heading-2-font-size: 28px;
+
   display: grid;
   gap: var(--ma-cardgroup-gap);
   grid-template-columns: var(--ma-cardgroup-grid-template-columns);
+  margin-block: var(--ma-cardgroup-margin-block, 16px);
   padding-block-end: var(--ma-cardgroup-padding-block-end);
   padding-block-start: var(--ma-cardgroup-padding-block-start);
-  margin-block: var(--ma-cardgroup-margin-block, 16px);
 }
 
 .ma-cardgroup--small {
@@ -13,6 +14,7 @@
   --ma-cardgroup-padding-block-end: var(--ma-cardgroup-small-padding-block-end, 16px);
   --ma-cardgroup-gap: var(--ma-cardgroup-small-gap, 20px);
   --ma-card-illustration-img-max-hight: 4rem;
+
   padding-block: 20px;
 }
 
@@ -33,9 +35,9 @@
   align-content: var(--ma-cardgroup-card-align-content, center);
   background-color: var(--ma-cardgroup-card-background-color, var(--nlds-document-background-color, white));
   border-color: var(--ma-cardgroup-card-border-color, #cfd5dd);
+  border-radius: var(--ma-cardgroup-card-border-radius, 8px);
   border-style: var(--ma-cardgroup-card-border-style, solid);
   border-width: var(--ma-cardgroup-card-border-width, 1px);
-  border-radius: var(--ma-cardgroup-card-border-radius, 8px);
   box-sizing: border-box;
   color: var(--ma-cardgroup-card-color, var(--nlds-document-color));
   display: flex;
@@ -129,14 +131,15 @@
 .ma-card__content {
   --utrecht-heading-2-margin-block-start: 0;
   --utrecht-heading-3-margin-block-start: 0;
+
+  block-size: 100%;
   display: flex;
   flex-direction: column;
-  block-size: 100%;
+  inline-size: var(--ma-card-content-inline-size);
   justify-content: space-between;
   padding-block-end: var(--ma-card-content-padding-block-end, 36px);
   padding-block-start: var(--ma-card-content-padding-block-start, 36px);
   padding-inline: var(--ma-card-content-padding-inline, 24px);
-  inline-size: var(--ma-card-content-inline-size);
 }
 
 @media (width => 768px) {

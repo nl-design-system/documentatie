@@ -2,9 +2,10 @@
   --utrecht-badge-line-height: var(--ma-estafette-badge-line-height, 24px);
   --utrecht-badge-padding-block: var(--ma-estafette-badge-block, 4px);
   --utrecht-badge-padding-inline: var(--ma-estafette-badge-padding-inline, 8px);
-  border-width: var(--ma-estafette-badge-border-width, 0);
+
   border-color: var(--ma-estafette-badge-border-color, var(--ma-estafette-badge-color));
   border-style: solid;
+  border-width: var(--ma-estafette-badge-border-width, 0);
   vertical-align: middle;
 }
 

@@ -4,8 +4,8 @@
 
 .ma-component-criteria-section {
   border: solid 1px #ccc;
-  padding: 1em;
   margin-block-end: 1em;
+  padding: 1em;
 }
 
 .ma-component-criteria-section__dl {
@@ -14,9 +14,9 @@
   grid-template-columns: max-content;
 }
 .ma-component-criteria-section__dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 .ma-component-criteria-section__dd {
-  margin: 0;
   grid-column-start: 2;
+  margin: 0;
 }
