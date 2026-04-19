@@ -4,9 +4,9 @@
   display: grid;
   gap: 8px;
   grid-auto-flow: column;
+  inline-size: 100%;
   margin-block-start: 30px;
   max-block-size: 200px;
-  inline-size: 100%;
 }
 
 .ma-core-team__card {

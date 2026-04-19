@@ -6,8 +6,8 @@
   border: 1px solid rgb(0 0 0 / 10%);
   margin-block-end: 40px;
   margin-block-start: 0; /* reset <figure> margin */
-  margin-inline-start: 0; /* reset <figure> margin */
   margin-inline-end: 0; /* reset <figure> margin */
+  margin-inline-start: 0; /* reset <figure> margin */
 }
 
 .nlds-guideline:first-of-type {
@@ -38,9 +38,9 @@ p + .nlds-guideline {
 
 .nlds-guideline__icon {
   block-size: 20px;
+  inline-size: 20px;
   margin-inline-end: 8px;
   vertical-align: middle;
-  inline-size: 20px;
 }
 
 .nlds-guideline__title {
@@ -57,7 +57,7 @@ p + .nlds-guideline {
 .nlds-guideline span.example-progress-indicator {
   display: block;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .nlds-guideline__badge--dont {

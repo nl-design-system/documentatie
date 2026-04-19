@@ -1,11 +1,11 @@
 .ma-component-illustration {
-  display: inline;
   block-size: auto;
+  display: inline;
+  inline-size: auto;
   margin: 0;
   max-block-size: var(--ma-component-illustration-svg-max-height);
   max-inline-size: 100%;
   padding-inline: var(--ma-component-illustration-padding-inline);
-  inline-size: auto;
 }
 
 .ma-component-illustration--help-wanted {
