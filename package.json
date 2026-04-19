@@ -45,7 +45,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "lint": "npm-run-all --continue-on-error lint:**",
-    "lint-todo:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
+    "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
     "lint:js": "eslint",
     "lint:package-json": "npmPkgJsonLint '**/package.json'",
     "lint:prettier": "prettier --check .",
