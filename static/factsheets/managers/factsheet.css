@@ -4,7 +4,8 @@ body {
   box-sizing: border-box;
   color: #004152;
   font-family: "Source Sans 3", sans-serif;
-  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
 }
 @media (width >= 50em) {
   body {
@@ -15,7 +16,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   margin-block-start: 0;
 }
 
@@ -140,7 +141,9 @@ header h1 + p {
   padding-block-end: 6em;
 }
 .ma-factsheet__footer-items div {
-  margin: 0.5em 0 2em;
+  margin-block-end: 2em;
+  margin-block-start: 0.5em;
+  margin-inline: 0;
 }
 .ma-factsheet__footer .ma-factsheet__pre-h3 {
   display: block;
@@ -159,7 +162,8 @@ header h1 + p {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .ma-factsheet__footer-items div {
-    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
   }
 }
 
@@ -174,14 +178,17 @@ header h1 + p {
 }
 
 .ma-factsheet__container {
-  margin: 0 auto;
+  margin-block: 0;
+  margin-inline: auto;
   max-inline-size: 50em;
-  padding: 1em;
+  padding-block: 1em;
+  padding-inline: 1em;
 }
 
 @media (width >= 40em) {
   .ma-factsheet__container {
-    padding: 2em;
+    padding-block: 2em;
+    padding-inline: 2em;
   }
 }
 

@@ -27,7 +27,8 @@
 }
 
 .nlds-canvas__example:empty {
-  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 .nlds-canvas__code-block {

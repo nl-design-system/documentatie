@@ -13,12 +13,6 @@
   table-layout: auto;
 }
 
-.ma-session-table__row {
-}
-
-.ma-session-table__time {
-}
-
 .ma-session-table__speakers {
   display: flex;
   flex-direction: column;

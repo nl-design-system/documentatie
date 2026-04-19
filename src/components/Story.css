@@ -8,7 +8,8 @@
   background-color: var(--ifm-button-color);
   color: var(--ifm-background-color);
   display: block;
-  padding: 10px 20px;
+  padding-block: 10px;
+  padding-inline: 20px;
   text-align: end;
   text-decoration: none;
 }

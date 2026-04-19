@@ -11,9 +11,11 @@
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   inline-size: 1px;
-  margin: -1px;
+  margin-block: -1px;
+  margin-inline: -1px;
   overflow: hidden;
-  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
   position: absolute;
   word-wrap: normal;
 }
@@ -57,8 +59,10 @@
   --ifm-container-width: 870px;
   --ifm-container-width-xl: 960px;
   --ifm-link-hover-color: currentColor;
+  /* stylelint-disable-next-line custom-property-pattern */
   --doc-sidebar-width: clamp(20rem, 30rem, 30vw);
   --ifm-navbar-sidebar-width: clamp(20rem, 30rem, 80vw);
+  /* stylelint-disable-next-line custom-property-pattern */
   --navbar-inner-min-height: 64px;
   --ifm-navbar-background-color: var(--ma-navigation-bar-background-color);
   --ifm-navbar-link-color: var(--ma-navigation-bar-item-color);
@@ -116,7 +120,6 @@
   --utrecht-card-border-radius: 4px;
   --utrecht-card-content-padding-block-end: 20px;
   --utrecht-card-content-padding-block-start: 20px;
-  --utrecht-card-link-hover-background-color: var(--basis-color-action-2-background-hover);
   --utrecht-button-group-margin-block-end: 20px;
   --utrecht-button-group-margin-block-start: 40px;
   --utrecht-badge-list-column-gap: var(--basis-space-inline-sm);
@@ -161,32 +164,6 @@
 .menu__caret:focus-visible.menu__caret::before {
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="var(--basis-focus-color)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
 }
-
-/* stylelint-disable selector-class-pattern */
-.breadcrumbs__link:focus-visible,
-.DocSearch-Trigger .DocSearch-Button:focus-visible,
-.menu__link:focus-visible,
-.menu__caret:focus-visible,
-.footer__link-item:focus-visible,
-*[aria-label="Ga naar hoofdinhoud"] a:focus-visible,
-.navbar__brand:focus-visible,
-.clean-btn:focus-visible,
-.navbar-sidebar__back:focus-visible {
-  --ifm-color-emphasis-600: var(--basis-focus-color);
-  --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
-  --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
-  --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
-    var(--utrecht-focus-inverse-outline-color, transparent);
-
-  background-color: var(--basis-focus-background-color);
-  box-shadow: var(--_ma-focus-ring-box-shadow);
-  color: var(--basis-focus-color);
-  outline-color: var(--basis-focus-outline-color, revert);
-  outline-offset: var(--utrecht-focus-outline-offset, revert);
-  outline-style: var(--utrecht-focus-outline-style, revert);
-  outline-width: var(--utrecht-focus-outline-width, revert);
-}
-/* stylelint-enable selector-class-pattern */
 
 /* HACK: Hackysnacky CSS that should be solved better in the chefs-kiss website */
 p {
@@ -238,7 +215,8 @@ p {
 
 /* stylelint-disable-next-line selector-class-pattern */
 .menu {
-  padding: 0 !important;
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
 }
 
 .ma-navigation-bar-item {
@@ -268,6 +246,11 @@ p {
 .navbar__link--active {
   background-color: var(--ma-navigation-bar-item-active-background-color);
   border-block-start-color: var(--ma-navigation-bar-item-active-border-color);
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.navbar-sidebar {
+  --ifm-menu-color-background-active: transparent;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -311,11 +294,6 @@ p {
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.navbar-sidebar {
-  --ifm-menu-color-background-active: transparent;
-}
-
-/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar__back:hover {
   background-color: var(--ma-navigation-bar-item-hover-background-color);
   color: var(--ma-navigation-bar-item-hover-color);
@@ -326,17 +304,6 @@ p {
   background-color: var(--basis-color-accent-1-inverse-bg-active);
   border-inline-start-color: var(--basis-color-accent-1-inverse-border-active);
   color: var(--basis-color-accent-1-inverse-color-active);
-}
-
-/* stylelint-disable-next-line selector-class-pattern */
-.navbar-sidebar .menu__link:hover,
-/* stylelint-disable-next-line selector-class-pattern */
-.navbar-sidebar .menu__list-item-collapsible:hover,
-/* stylelint-disable-next-line selector-class-pattern */
-.navbar-sidebar .menu__caret:hover {
-  background-color: var(--basis-color-accent-1-inverse-bg-hover);
-  border-inline-start-color: var(--basis-color-accent-1-inverse-border-hover);
-  color: var(--basis-color-accent-1-inverse-color-hover);
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -358,6 +325,17 @@ p {
 /* stylelint-disable-next-line selector-class-pattern */
 .theme-doc-sidebar-item-category-level-5 .menu__link {
   padding-inline-start: 64px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.navbar-sidebar .menu__link:hover,
+/* stylelint-disable-next-line selector-class-pattern */
+.navbar-sidebar .menu__list-item-collapsible:hover,
+/* stylelint-disable-next-line selector-class-pattern */
+.navbar-sidebar .menu__caret:hover {
+  background-color: var(--basis-color-accent-1-inverse-bg-hover);
+  border-inline-start-color: var(--basis-color-accent-1-inverse-border-hover);
+  color: var(--basis-color-accent-1-inverse-color-hover);
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -463,7 +441,7 @@ p {
 
 /* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Button-Placeholder {
-  font-family: var(--ma-docsearch-button-font-family);
+  font-family: var(--ma-docsearch-button-font-family), sans-serif;
   font-weight: 700;
 }
 
@@ -556,6 +534,7 @@ aside button[title="Zijbalk inklappen"],
   /* --ifm-link-hover-decoration: none; */
 }
 
+/* stylelint-disable-next-line selector-id-pattern, selector-max-id */
 #__docusaurus,
 .utrecht-page-layout {
   flex-grow: 1;
@@ -573,7 +552,8 @@ aside button[title="Zijbalk inklappen"],
 
 /* stylelint-disable-next-line selector-class-pattern */
 .footer .container {
-  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
   padding-inline-start: 20px;
 }
 
@@ -587,6 +567,8 @@ aside button[title="Zijbalk inklappen"],
   column-gap: 20px;
   display: flex;
   flex-wrap: wrap;
+  margin-block: 0;
+  margin-inline: 0;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -658,16 +640,33 @@ aside button[title="Zijbalk inklappen"],
 }
 
 /* Add styling to code blocks  */
+code,
+pre {
+  font-family: "Fira Code VF", monospace !important;
+  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
+  font-size: 16px;
+  vertical-align: 1%;
+}
+
+code {
+  background-color: transparent !important;
+  border-inline-end: 0;
+  border-inline-start: 0;
+  border-width: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
 code[class*="language-"] {
   background-color: var(--nlds-code-block-background-color);
   color: var(--nlds-code-block-code-color);
   direction: ltr;
-  font-family: var(--nlds-code-block-font-family, monospace);
+  font-family: var(--nlds-code-block-font-family, monospace), monospace;
   -webkit-hyphens: var(--nlds-code-block-hyphens, none);
   -moz-hyphens: var(--nlds-code-block-hyphens, none);
+  -ms-hyphens: var(--nlds-code-block-hyphens, none);
   hyphens: var(--nlds-code-block-hyphens, none);
   line-height: var(--nlds-code-block-line-height, 1.5);
-  ms-hyphens: var(--nlds-code-block-hyphens, none);
   -moz-tab-size: var(--nlds-code-block-tab-size, 4);
   -o-tab-size: var(--nlds-code-block-tab-size, 4);
   tab-size: var(--nlds-code-block-tab-size, 4);
@@ -680,17 +679,17 @@ code[class*="language-"] {
 pre[class*="language-"] {
   background-color: var(--nlds-code-block-background-color);
   color: var(--nlds-code-block-color);
-  font-family: var(--nlds-code-block-font-family, monospace);
+  font-family: var(--nlds-code-block-font-family, monospace), monospace;
   font-size: var(--nlds-code-block-font-size, 1em);
   -webkit-hyphens: var(--nlds-code-block-hyphens, none);
   -moz-hyphens: var(--nlds-code-block-hyphens, none);
+  -ms-hyphens: var(--nlds-code-block-hyphens, none);
   hyphens: var(--nlds-code-block-hyphens, none);
   line-height: var(--nlds-code-block-line-height, 1.5);
   margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em);
   margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em);
   margin-inline-end: var(--nlds-code-block-margin-inline-end, 0);
   margin-inline-start: var(--nlds-code-block-margin-inline-start, 0);
-  ms-hyphens: var(--nlds-code-block-hyphens, none);
   overflow: auto;
   padding-block-end: var(--nlds-code-block-padding-block-end, 1em);
   padding-block-start: var(--nlds-code-block-padding-block-start, 1em);
@@ -708,7 +707,8 @@ pre[class*="language-"] {
 
 /* avoid double spacing */
 pre > code {
-  padding: 0 !important;
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
 }
 
 ul + div[class*="language-"],
@@ -716,10 +716,6 @@ ul + .nlds-guideline_src-components-Guideline-module {
   margin-block-start: var(--nlds-code-block-margin-inline-start, 1.5em);
 }
 
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection,
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
@@ -748,18 +744,11 @@ pre {
   --nlds-code-block-color: #fff;
   --nlds-code-block-font-family: "Fira Code", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
   --nlds-code-block-tab-size: 4;
-  --nlds-code-block-tab-size: 4;
-  --nlds-code-block-tab-size: 4;
-  --nlds-code-block-hyphens: none;
-  --nlds-code-block-hyphens: none;
-  --nlds-code-block-hyphens: none;
   --nlds-code-block-hyphens: none;
   --nlds-code-block-padding-inline-start: 1em;
   --nlds-code-block-padding-inline-end: 1em;
   --nlds-code-block-padding-block-start: 1em;
   --nlds-code-block-padding-block-end: 1em;
-  --nlds-code-block-margin-inline-start: 0;
-  --nlds-code-block-margin-inline-end: 0;
   --nlds-code-block-margin-inline-start: 0;
   --nlds-code-block-margin-inline-end: 0;
   --nlds-code-block-background-color: #011627;
@@ -805,27 +794,6 @@ pre {
   --nlds-code-block-important-color: rgb(214 222 235);
   --nlds-code-block-variable-color: rgb(214 222 235);
   --nlds-code-block-keyword-color: rgb(214 222 235);
-}
-
-/* stylelint-disable-next-line selector-class-pattern */
-.footer__links {
-  margin: 0;
-}
-
-code,
-pre {
-  font-family: "Fira Code VF" !important;
-  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
-  font-size: 16px;
-  vertical-align: 1%;
-}
-
-code {
-  background-color: transparent !important;
-  border-inline-end: 0;
-  border-inline-start: 0;
-  border-width: 0;
-  padding: 0;
 }
 
 @media screen and (width <= 70rem) {
@@ -891,3 +859,29 @@ ams-page-footer {
 
   /* Satisfies AA contrast on #e6f6e6 */
 }
+
+/* stylelint-disable selector-class-pattern, no-descending-specificity */
+.breadcrumbs__link:focus-visible,
+.DocSearch-Trigger .DocSearch-Button:focus-visible,
+.menu__link:focus-visible,
+.menu__caret:focus-visible,
+.footer__link-item:focus-visible,
+*[aria-label="Ga naar hoofdinhoud"] a:focus-visible,
+.navbar__brand:focus-visible,
+.clean-btn:focus-visible,
+.navbar-sidebar__back:focus-visible {
+  --ifm-color-emphasis-600: var(--basis-focus-color);
+  --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
+  --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
+  --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
+
+  background-color: var(--basis-focus-background-color);
+  box-shadow: var(--_ma-focus-ring-box-shadow);
+  color: var(--basis-focus-color);
+  outline-color: var(--basis-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+}
+/* stylelint-enable selector-class-pattern */
