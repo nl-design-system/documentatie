@@ -41,8 +41,8 @@
   display: flex;
   flex-direction: var(--cardgroup-card-flex-direction, column);
   justify-content: var(--cardgroup-card-justify-content, space-between);
-  max-width: var(--cardgroup-card-max-width);
-  min-height: var(--cardgroup-card-min-height);
+  max-inline-size: var(--cardgroup-card-max-width);
+  min-block-size: var(--cardgroup-card-min-height);
   padding-block-end: var(--cardgroup-card-padding-block-end);
   padding-block-start: var(--cardgroup-card-padding-block-start);
 }
@@ -82,7 +82,7 @@
 }
 
 .card__illustration img {
-  max-height: var(--card-illustration-img-max-hight);
+  max-block-size: var(--card-illustration-img-max-hight);
 }
 
 .card__illustration--light-orange {
@@ -131,7 +131,7 @@
   --utrecht-heading-3-margin-block-start: 0;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  block-size: 100%;
   justify-content: space-between;
   padding-block-end: var(--card-content-padding-block-end, 36px);
   padding-block-start: var(--card-content-padding-block-start, 36px);
@@ -143,7 +143,7 @@
   .cardgroup--medium {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
-    min-height: fit-content;
+    min-block-size: fit-content;
   }
 }
 

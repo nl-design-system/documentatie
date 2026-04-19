@@ -33,14 +33,14 @@ p + .nlds-guideline {
 
 .nlds-guideline select {
   display: block;
-  margin-bottom: 0.5em;
+  margin-block-end: 0.5em;
 }
 
 .nlds-guideline__icon {
-  height: 20px;
+  block-size: 20px;
   margin-inline-end: 8px;
   vertical-align: middle;
-  width: 20px;
+  inline-size: 20px;
 }
 
 .nlds-guideline__title {

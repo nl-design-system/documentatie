@@ -16,7 +16,7 @@
   --utrecht-heading-2-margin-block-end: 0.1em;
 
   font-size: 1.5em;
-  margin-top: inherit !important;
+  margin-block-start: inherit !important;
 }
 
 .dsw-session__subtitle {
@@ -39,9 +39,9 @@
 }
 
 .dsw-speaker__image {
-  height: 100%;
+  block-size: 100%;
   margin-block-start: 0.4em;
-  max-width: 5em;
+  max-inline-size: 5em;
 }
 
 .dsw-session__video {
@@ -51,11 +51,10 @@
   position: relative;
 }
 .dsw-session__video > div {
-  left: 0;
+  inset-inline: 0;
   position: absolute;
-  right: 0;
-  top: 0;
+  inset-block-start: 0;
 }
 .dsw-session__video iframe {
-  max-width: 100%;
+  max-inline-size: 100%;
 }

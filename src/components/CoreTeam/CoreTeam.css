@@ -5,8 +5,8 @@
   gap: 8px;
   grid-auto-flow: column;
   margin-block-start: 30px;
-  max-height: 200px;
-  width: 100%;
+  max-block-size: 200px;
+  inline-size: 100%;
 }
 
 .core-team__card {
@@ -43,7 +43,7 @@
 }
 
 .core-team__avatar {
-  height: 150px;
+  block-size: 150px;
   padding-block-start: 24px;
   padding-inline: 8px;
 }

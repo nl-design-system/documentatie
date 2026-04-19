@@ -8,12 +8,12 @@
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
-  height: 1px;
+  block-size: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
+  inline-size: 1px;
   word-wrap: normal;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .ma-theme .navbar__logo {
-  margin-right: 0;
+  margin-block-end: 0;
 }
 
 .navbar__brand:focus-visible {
@@ -231,7 +231,7 @@ p {
 .ma-navigation-bar-item {
   --utrecht-link-color: white;
   --utrecht-link-text-decoration: none;
-  min-height: 100%;
+  min-block-size: 100%;
   border-block-start-width: 4px;
   border-block-start-style: solid;
   border-color: transparent;
@@ -246,7 +246,7 @@ p {
 }
 
 .navbar {
-  width: 100%;
+  inline-size: 100%;
 }
 
 .navbar__link--active {
@@ -330,7 +330,6 @@ p {
   display: none;
 }
 
-/* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
 .DocSearch {
   --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
   --docsearch-muted-color: var(--utrecht-button-secondary-action-color);
@@ -385,7 +384,7 @@ p {
 .DocSearch-Trigger .DocSearch-Button {
   border-radius: var(--ma-docsearch-button-border-radius);
   box-sizing: border-box;
-  height: unset;
+  block-size: unset;
   padding-block-end: var(--ma-docsearch-button-padding-block-end);
   padding-block-start: var(--ma-docsearch-button-padding-block-start);
   padding-inline-end: var(--ma-docsearch-button-padding-inline-end);
@@ -440,8 +439,8 @@ aside button[title="Zijbalk inklappen"],
 .pra-donutchart-chart {
   padding-block: 0 !important;
   padding-inline: 0 !important;
-  height: 20px !important;
-  width: 20px !important;
+  block-size: 20px !important;
+  inline-size: 20px !important;
 }
 
 .pra-donutchart-legend {
@@ -511,11 +510,11 @@ aside button[title="Zijbalk inklappen"],
 }
 
 .main-wrapper {
-  width: 100%;
+  inline-size: 100%;
 }
 
 .footer {
-  width: 100%;
+  inline-size: 100%;
 }
 
 .footer .container {
@@ -543,7 +542,7 @@ aside button[title="Zijbalk inklappen"],
 }
 
 .theme-doc-sidebar-container {
-  margin-top: 0 !important;
+  margin-block-start: 0 !important;
 }
 
 .table-of-contents,
@@ -608,7 +607,7 @@ code[class*="language-"] {
   -moz-tab-size: var(--nlds-code-block-tab-size, 4);
   -o-tab-size: var(--nlds-code-block-tab-size, 4);
   tab-size: var(--nlds-code-block-tab-size, 4);
-  text-align: left;
+  text-align: start;
   white-space: pre;
   word-break: normal;
   word-spacing: normal;
@@ -636,7 +635,7 @@ pre[class*="language-"] {
   -moz-tab-size: var(--nlds-code-block-tab-size, 4);
   -o-tab-size: var(--nlds-code-block-tab-size, 4);
   tab-size: var(--nlds-code-block-tab-size, 4);
-  text-align: left;
+  text-align: start;
   white-space: pre;
   word-break: normal;
   word-spacing: normal;
@@ -763,7 +762,7 @@ code {
 
 @media screen and (max-width: 70rem) {
   .navbar__brand {
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 }
 
@@ -773,19 +772,19 @@ code {
   }
 
   .navbar__items--right {
-    min-width: 40vw;
+    min-inline-size: 40vw;
   }
 }
 
 @media screen and (max-width: 29rem) {
   .navbar__items--right {
-    min-width: 30vw;
+    min-inline-size: 30vw;
   }
 }
 
 @media screen and (max-width: 20rem) {
   .navbar__items--right {
-    min-width: 25vw;
+    min-inline-size: 25vw;
   }
 }
 
@@ -795,8 +794,8 @@ code {
   --utrecht-link-color: white;
   --utrecht-link-text-decoration-color: white;
   --utrecht-link-hover-text-decoration-thickness: 2px;
-  min-height: 40px;
-  width: 100vw;
+  min-block-size: 40px;
+  inline-size: 100vw;
   padding-block: 0.5rem;
   font-size: 1.125rem;
 }

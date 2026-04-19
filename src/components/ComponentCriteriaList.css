@@ -5,7 +5,7 @@
 .component-criteria-section {
   border: solid 1px #ccc;
   padding: 1em;
-  margin-bottom: 1em;
+  margin-block-end: 1em;
 }
 
 .component-criteria-section__dl {
