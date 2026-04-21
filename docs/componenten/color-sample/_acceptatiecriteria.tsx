@@ -7,7 +7,6 @@ import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.
 import Wcag1411 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.11-color-sample.md';
 import Wcag1412 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12-colorsample.md';
 import Wcag144 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4-colorsample.md';
-import Wcag145 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.5-color-sample.md';
 import Wcag143 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.4.3-summary.md';
 import Wcag211NI from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.1.1-noninteractives.md';
 import Wcag211NLDSNI from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.1.1-nlds-noninteractives.md';
