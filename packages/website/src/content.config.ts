@@ -1,4 +1,5 @@
 import type { Loader, LoaderContext } from 'astro/loaders';
+import { getCollection } from 'astro:content';
 import { defineCollection } from 'astro/content/config';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
@@ -138,3 +139,13 @@ const wcag = defineCollection({
 });
 
 export const collections = { docs, wcag, components };
+
+export const getAllCollections = async () => {
+  const collectionPromises = await Promise.all([
+    getCollection('components'),
+    getCollection('docs'),
+    getCollection('wcag'),
+  ]);
+
+  return collectionPromises.flat();
+};
