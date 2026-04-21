@@ -40,7 +40,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.5c543eae.css" />
-  <script src="/assets/js/runtime~main.c28c7e73.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.6d632e48.js" defer="defer"></script>
   <script src="/assets/js/main.3fc81dd4.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -266,27 +266,37 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token key atrule" style="color:var(--nlds-code-block-atrule-color)">run</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">:</span><span class="token plain"> pnpm install </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">-</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">-</span><span class="token plain">frozen</span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">-</span><span class="token plain">lockfile</span>
 </span></code></pre>
               <p>Op deze manier stopt de GitHub Action wanneer in de dependencies een npm package is gevonden, waarvan inmiddels bekend is dat het onveilig kan zijn.</p>
+              <div class="theme-admonition theme-admonition-info admonition_raOx alert alert--info">
+               <div class="admonitionHeading_LcOG">
+                <span class="admonitionIcon_RjEs"
+                 ><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span
+                >Goed om te weten
+               </div>
+               <div class="admonitionContent_HpCY">
+                <p>Op dit moment (april 2026) zijn er problemen met <code class="utrecht-code">pnpm audit</code>; om precies te zijn, het onderliggende npm audit endpoint kan een foutmelding teruggeven (&quot;This endpoint is being retired&quot;). Het is onduidelijk hoe lang dit gaat spelen. Deze melding krijg je bij gebruik van pnpm v10. Mocht het voorkomen, dan kun je in de audit stap gebruik maken van pnpm v11. Hiervoor moet in GitHub de <code class="utrecht-code">ENABLE_PNPM_AUDIT_V11</code> op <code class="utrecht-code">1</code> worden gezet. Een beheerder kan dit op repository- of organisatieniveau voor je instellen.</p>
+               </div>
+              </div>
               <h2 id="snel-ingrijpen" class="utrecht-heading-2">Snel ingrijpen</h2>
               <p>Wanneer een security vulnerability bekend wordt, zoals <a href="https://snyk.io/blog/sha1-hulud-npm-supply-chain-incident/" class="utrecht-link utrecht-link--html-a">SHA1-Hulud</a>, wil je snel kunnen ingrijpen en voorkomen dat de kwaadaardige npm package wordt geïnstalleerd op een plek waar gevoelige &quot;environment secrets&quot; uit kunnen lekken.</p>
               <p>Omdat het in de praktijk niet mogelijk is om snel genoeg alle branches van alle repositories te controleren, gebruiken we deze aanpak om automatisch elke <code class="utrecht-code">pnpm install</code> te voorkomen. Wanneer veiligheidsonderzoekers op een centrale plek een melding doen van een critical vulnerability, dan grijpt <code class="utrecht-code">pnpm audit</code> vanaf dat moment automatisch in.</p>
               <h2 id="betere-versies-installeren" class="utrecht-heading-2">Betere versies installeren</h2>
               <p>Vaak is het probleem al opgelost in een nieuwe versie, en dan is de oplossing om een update te installeren. De makkelijkste manier is om met de command-line de volgende commando&#x27;s uit te voeren.</p>
-              <span hidden="" id=":R9q7dalbah:"
+              <span hidden="" id=":Raq7dalbah:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R9q7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm audit --fix</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Raq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm audit --fix</span>
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm install --ignore-scripts</span>
 </span></code></pre>
               <p>Het eerste commando past de configuratie van pnpm aan, om alleen bepaalde veiligere versies te gebruiken. Het tweede commando installeert de aangepaste dependencies, en past de &quot;lockfile&quot; aan.</p>
               <p>Controleer of met deze wijzigingen de belangrijkste security vulnerabilities zijn opgelost:</p>
-              <span hidden="" id=":Rcq7dalbah:"
+              <span hidden="" id=":Rdq7dalbah:"
                >codevoorbeeld
                <!-- -->
                <!-- -->
               </span>
-              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rcq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm audit --audit-level critical</span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":Rdq7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">pnpm audit --audit-level critical</span>
 </span></code></pre>
               <p>Commit de wijzigingen aan <code class="utrecht-code">pnpm-lock.yaml</code> en <code class="utrecht-code">pnpm-workspace.yaml</code> en maak een Pull Request met je wijzigingen.</p>
               <p><strong>Let op:</strong> test goed of je project nog goed werkt na het installeren van de updates, op de voor jou gebruikelijke manier. De updates bevatten meestal niet alleen veiligheidsverbeteringen, maar ook algemene verbeteringen die zijn gedaan sinds je voor het laatst alle updates installeerde.</p>
