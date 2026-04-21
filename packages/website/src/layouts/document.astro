@@ -13,6 +13,8 @@ import { Logo } from '@components/logo/logo';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
 import { BreadcrumbNav, BreadcrumbNavLink, BreadcrumbNavSeparator } from '@components/breadcrumb-nav/breadcrumb-nav';
 import { IconChevronRight } from '@tabler/icons-react';
+import { SideNav } from '@components/side-nav/side-nav.tsx';
+import { navigation } from '../navigation.config.ts';
 
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
@@ -77,6 +79,8 @@ const footerNavigationItems = [
   { href: '/figma/', label: 'Figma' },
   { href: 'https://www.linkedin.com/company/nl-design-system/', label: 'LinkedIn', external: true },
 ];
+
+const nav = await navigation;
 ---
 
 <Root lang={lang} dir="ltr">
@@ -123,6 +127,7 @@ const footerNavigationItems = [
           </NavList>
         </nav>
       </NavBar>
+      <SideNav data={nav} />
       <PageBody>
         {
           showBreadcrumbs && (
