@@ -98,6 +98,7 @@ const schema = z.object({
   image: z.httpUrl().optional(),
   image_alt: z.string().optional(),
   keywords: z.array(z.string()).optional(),
+  navigation_order: z.number().optional(),
 });
 
 const docs = defineCollection({
