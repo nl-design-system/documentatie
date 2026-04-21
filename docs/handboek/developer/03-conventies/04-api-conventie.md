@@ -175,7 +175,7 @@ Combineer je eigen props met de standaard HTML-attributen van het onderliggende 
 ```tsx
 type ButtonSize = "sm" | "md" | "lg";
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
   size?: ButtonSize;
 }
 
@@ -183,6 +183,8 @@ const ExampleButton = ({ size = "md", className, ...restProps }: ButtonProps) =>
   <button className={clsx("example-button", `example-button--${size}`, className)} {...restProps} />
 );
 ```
+
+Wanneer je refs doorgeeft, kun je de tegenhanger `React.ComponentPropsWithRef` gebruiken.
 
 ## Termen uit het Web Platform
 
