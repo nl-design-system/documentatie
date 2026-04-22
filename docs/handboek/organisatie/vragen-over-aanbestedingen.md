@@ -1,5 +1,6 @@
 ---
 title: Tips voor NL Design System in aanbestedingen
+title_sm: Aanbestedingen
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Aanbestedingen

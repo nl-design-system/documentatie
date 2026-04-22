@@ -1,5 +1,6 @@
 ---
 title: Creative Commons 0 Universal licentie
+title_sm: Creative Commons 0
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Creative Commons 0
