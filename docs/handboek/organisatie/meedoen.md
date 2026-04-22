@@ -5,6 +5,7 @@ hide_title: true
 hide_table_of_contents: true
 sidebar_label: Meedoen
 sidebar_position: 2
+navigation_order: 2
 pagination_label: Meedoen
 description: Meedoen als organisatie
   - leverancier
