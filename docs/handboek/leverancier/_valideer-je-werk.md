@@ -1,5 +1,6 @@
 ---
 title: Werk je met NL Design System?
+title_sm: Valideren
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Valideren
