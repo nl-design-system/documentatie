@@ -15,18 +15,21 @@ keywords:
   - oidc
 ---
 
-<!--
-De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd
-- Als developer wil ik weten hoe ik een package kan publiceren
-- Als developer/maintainer wil ik weten hoe ik mijn repository moet inrichten om packages te publiceren via Changesets
-- Als DevOps Engineer wil ik dat de community kan troubleshooten bij publiceren, omdat eventuele foutmeldingen bij problemen vaak onduidelijk zijn
--->
+{/* De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd */}
+{/* - Als developer wil ik weten hoe ik een package kan publiceren */}
+{/* - Als developer/maintainer wil ik weten hoe ik mijn repository moet inrichten om packages te publiceren via Changesets */}
+{/* - Als DevOps Engineer wil ik dat de community kan troubleshooten bij publiceren, omdat eventuele foutmeldingen bij problemen vaak onduidelijk zijn */}
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
 # Publiceren van npm packages
 
-Het publiceren van NL Design System packages gaat altijd via GitHub Actions pipelines.
-Dat is handig en veiliger dan handmatig publiceren.
-We volgen hierbij de Changesets-workflow: bij elke wijziging die je wilt publiceren voorzie je die gelijk van de tekst voor de changelog, en je publiceert op een goed moment één of meerdere wijzigingen door een Pull Request goed te keuren.
+<Paragraph lead>
+  Het publiceren van NL Design System packages gaat altijd via GitHub Actions pipelines. Dat is handig en veiliger dan
+  handmatig publiceren. We volgen hierbij de Changesets-workflow: bij elke wijziging die je wilt publiceren voorzie je
+  die gelijk van de tekst voor de changelog, en je publiceert op een goed moment één of meerdere wijzigingen door een
+  Pull Request goed te keuren.
+</Paragraph>
 
 Op deze pagina lees je meer over de technische infrastructuur:
 
