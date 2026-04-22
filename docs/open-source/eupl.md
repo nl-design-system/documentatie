@@ -1,5 +1,6 @@
 ---
 title: EUPL 1.2 licentie
+title_sm: EUPL 1.2
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: EUPL 1.2
