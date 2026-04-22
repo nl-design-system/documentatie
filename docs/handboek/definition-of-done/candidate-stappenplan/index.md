@@ -4,6 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Overzicht
 sidebar_position: 1
+navigation_order: 1
 pagination_label: Overzicht
 description: Overzicht van de Definition of Done voor componenten
 slug: /handboek/estafettemodel/componenten/candidate

@@ -4,6 +4,7 @@ hide_title: true
 hide_table_of_contents: true
 sidebar_label: Aanbestedingen
 sidebar_position: 2
+navigation_order: 2
 pagination_label: Aanbestedingen
 description: Hoe kun je NL Design System opnemen, welke niveaus kun je kiezen en hoe krijg je de juiste expertise?
   - leverancier
