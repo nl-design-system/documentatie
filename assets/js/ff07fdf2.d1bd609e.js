@@ -69,7 +69,7 @@
    }
   },
   25727(e, n, t) {
-   (t.r(n), t.d(n, { assets: () => S, component: () => T, contentTitle: () => F, default: () => _, description: () => C, frontMatter: () => A, issueNumber: () => H, metadata: () => i, title: () => N, toc: () => z }));
+   (t.r(n), t.d(n, { assets: () => S, component: () => T, contentTitle: () => F, default: () => _, description: () => C, frontMatter: () => A, issueNumber: () => H, metadata: () => i, title: () => N, toc: () => R }));
    const i = JSON.parse('{"id":"componenten/unordered-list/index","title":"Unordered List","description":"Opsomming waar de volgorde van items in de lijst niet van belang is.","source":"@site/docs/componenten/unordered-list/index.mdx","sourceDirName":"componenten/unordered-list","slug":"/unordered-list","permalink":"/unordered-list","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/unordered-list/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Unordered List","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Unordered List","pagination_label":"Unordered List","description":"Opsomming waar de volgorde van items in de lijst niet van belang is.","slug":"/unordered-list","keywords":["bolletjes lijst","bullet list","bullet points","bulleted list","bullets","items","itemslijst","lijst","lijst met volgorde","lijstje","lijsten","list","list items","nested list","numbered list","ongeordend","ongeordende lijst","ongesorteerde lijst","opsomming","opsommingslijst","order","ordered list","punten","punt","sequence","ul","unordered","unordered list","vertical list"]},"sidebar":"componenten","previous":{"title":"Toggletip","permalink":"/toggletip"},"next":{"title":"Video","permalink":"/video"}}');
    var a = t(86070),
     r = t(18439),
@@ -139,15 +139,15 @@
     C = 'Opsomming waar de volgorde van items in de lijst niet van belang is.',
     H = 116,
     T = o.find((e) => e.number === H),
-    z = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...s.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function R(e) {
+    R = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...s.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function z(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, r.R)(), ...e.components },
      { Checklist: t, ChecklistItem: i } = n;
     return (t || B('Checklist', !0), i || B('ChecklistItem', !0), (0, a.jsxs)(a.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, a.jsx)(y.Fc, { component: T, headingLevel: 1, description: C }), '\n', (0, a.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, a.jsx)(d.Ay, {}), '\n', (0, a.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, a.jsx)(l.Ay, {}), '\n', (0, a.jsx)(t, { headingLevel: '4', children: w.map(({ component: e, ...n }) => (0, a.jsx)(i, { ...n, children: (0, a.jsx)(e, {}) })) }), '\n', (0, a.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, a.jsx)(s.Ay, {}), '\n', (0, a.jsx)(t, { headingLevel: '4', children: L.map(({ component: e, ...n }) => (0, a.jsx)(i, { ...n, children: (0, a.jsx)(e, {}) })) }), '\n', (0, a.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, a.jsx)(y.VK, { component: T, headingLevel: 3 }), '\n', (0, a.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, a.jsx)(y.mu, { component: T, headingLevel: 3 }), '\n', (0, a.jsx)(y.K_, { component: T }), '\n', (0, a.jsx)(y.$9, { component: T, headingLevel: 2 })] }));
    }
    function _(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
-    return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(R, { ...e }) }) : R(e);
+    return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(z, { ...e }) }) : z(e);
    }
    function B(e, n) {
     throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
@@ -366,7 +366,7 @@
     a = t(18439);
    function r(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, a.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Componenten en elementen die niet interactief zijn, zijn niet bereikbaar en bedienbaar met het toetsenbord.' }), '\n', (0, i.jsx)(n.p, { children: 'Een uitzondering geldt voor situaties waarbij een interactief element zoals een Skip Link of een Link in een zij-navigatie, de bezoeker direct naar de component of het element stuurt.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/', children: 'Toetsenbordtoegankelijkheid' }) }), '\n'] })] });
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Componenten en elementen die niet interactief zijn, zijn niet bereikbaar en bedienbaar met het toetsenbord.' }), '\n', (0, i.jsx)(n.p, { children: 'Een uitzondering geldt voor situaties waarbij een interactief element zoals een Skip Link of een Link in een Side Navigation, de bezoeker direct naar de component of het element stuurt.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/', children: 'Toetsenbordtoegankelijkheid' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, a.R)(), ...e.components };
@@ -400,7 +400,7 @@
     a = t(18439);
    function r(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, a.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Componenten en elementen die niet interactief zijn, komen niet voor in de normale toetsenbord-focusvolgorde van de pagina.' }), '\n', (0, i.jsx)(n.p, { children: 'Een uitzondering geldt voor situaties waarbij een interactief component een Skip Link of een Link in een zij-navigatie, de bezoeker direct naar de component of het element stuurt.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/', children: 'Toetsenbordtoegankelijkheid' }) }), '\n'] })] });
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Componenten en elementen die niet interactief zijn, komen niet voor in de normale toetsenbord-focusvolgorde van de pagina.' }), '\n', (0, i.jsx)(n.p, { children: 'Een uitzondering geldt voor situaties waarbij een interactief component een Skip Link of een Link in een Side Navigation, de bezoeker direct naar de component of het element stuurt.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/', children: 'Toetsenbordtoegankelijkheid' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, a.R)(), ...e.components };
