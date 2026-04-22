@@ -40,7 +40,7 @@ export interface NavigationGroup {
   items: (NavigationItem | NavigationGroup | Promise<NavigationItem> | Promise<NavigationGroup>)[];
 
   /**
-   * An index page for the group. Usually the README.md in the folder. Usefull
+   * An index page for the group. Usually the index.md in the folder. Useful
    * as an overview page. If the `index` item is a file within the folder, it
    * is removed from the `items` list when the items are generated based on
    * the `dirName`.
@@ -72,7 +72,27 @@ const collections = getAllCollections();
  */
 export const navigationElements: NavigationElement[] = [];
 
-type NavigationItemInput = string | Partial<Omit<NavigationItem, 'id'>>;
+type NavigationItemInput =
+  | string
+  | (Partial<Omit<NavigationItem, 'id'>> & ({ label: string; href: string } | { label?: string; href: never }));
+
+/**
+ * Create a `NavigationItem` object.
+ *
+ * A `NavigationItem` is an reference to a page on the website. Provide a
+ * filepath to a markdown file or an configuration object. When a filepath is
+ * provided, this markdown file should be available in Astro as part of a
+ * Content Collection.
+ *
+ * @see {@link ./README.md} for further information.
+ *
+ * @example
+ * ```js
+ * navigationItem("docs/handboek/estafettemodel.mdx");
+ * // or
+ * navigationItem({ label: "Home", href: "/" });
+ * ```
+ */
 export async function navigationItem(input: NavigationItemInput): Promise<NavigationItem> {
   const _filePath = typeof input === 'string' ? input : input.filePath;
   const options = typeof input === 'string' ? undefined : input;
@@ -107,6 +127,31 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
 type NavigationGroupOptions = Partial<Pick<NavigationGroup, 'label' | 'filePath' | 'items'>> & {
   index?: Promise<NavigationItem>;
 };
+
+/**
+ * Create a `NavigationGroup` object.
+ *
+ * A `NavigationGroup` is a reference to a folder relative to the `docs/`
+ * folder. A `NavigationGroup` collects its items either via a the `items`
+ * field or the `filePath`. When provided with a `filePath` it will build a
+ * navigation tree starting from the `filePath`. The `filePath` needs to be an
+ * folder.
+ *
+ * @see {@link ./README.md} for further information on configuration the options
+ *
+ * @example
+ * ```js
+ * navigationGroup({ filePath: 'docs/richtlijnen' });
+ * // or
+ * navigationGroup({
+ *   label: 'Handboek',
+ *   items: [
+ *     navigationItem('docs/handboek/introductie.md'),
+ *     ...
+ *   ]
+ * });
+ * ```
+ */
 export async function navigationGroup(options: NavigationGroupOptions): Promise<NavigationGroup> {
   // Resolve provided item promises before continueing to ensure all data to
   // be available
