@@ -31,6 +31,102 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 14.0.0
+
+23 april 2026
+
+### Community componenten Root, Page Layout en Page Body van Utrecht toegevoegd
+
+Community componenten Root, Page Layout en Page Body van gemeente Utrecht zijn toegevoegd aan de bibliotheek. Deze componenten worden in één keer toegevoegd omdat zij sterk met elkaar te maken hebben. Daarnaast is er bij elk van deze componenten een voorbeeld waarin ze alle drie worden gebruikt.
+
+[Bekijk de video 'Changelog: Root, Page Layout en Page Body'](https://youtu.be/eM8Hj-8Elcw) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+- [Bekijk Root in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=31438-14472).
+- [Bekijk Page Layout in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=31438-15851).
+- [Bekijk Page Body in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=31438-15561).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "utrecht": {
+    "root": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.bg-document}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "font-family": {
+        "$type": "fontFamilies",
+        "$value": "{basis.text.font-family.default}"
+      },
+      "font-size": {
+        "$type": "fontSizes",
+        "$value": "{basis.text.font-size.md}"
+      },
+      "font-size-adjust": {
+        "$type": "other",
+        "$value": "0.515",
+        "$description": "[code-only]"
+      },
+      "line-height": {
+        "$type": "lineHeights",
+        "$value": "{basis.text.line-height.md}"
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "utrecht": {
+    "page-body": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.bg-document}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "content": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-document}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.page.max-inline-size}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.4xl}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        }
+      }
+    }
+  }
+}
+```
+
 ## 13.1.0
 
 22 april 2026
