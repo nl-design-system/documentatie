@@ -31,6 +31,119 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 14.2.0
+
+23 april 2026
+
+### Component 'Icon Button' van Amsterdam toegevoegd en toegepast in Modal Dialog
+
+Component 'Icon Button' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+Daarnaast is in Modal Dialog de 'nl-button' ingewisseld door deze 'ams-icon-button'.
+
+Verder is bij de Modal Dialog de link in het frame 'Documentatie - Modal Dialog' bijgewerkt naar de juiste verwijzing.
+
+[Bekijk de video 'Changelog: Icon Button toevoegen en toepassen in Modal Dialog](https://youtu.be/zsqYUQqEHeM) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+- [Bekijk Icon Button in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=31493-5684&t=z5ICOL7N9YkTr8Dp-11).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "ams": {
+    "icon-button": {
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.action-1.color-default}"
+      },
+      "cursor": {
+        "$type": "other",
+        "$value": "default",
+        "$description": "[code-only]"
+      },
+      "outline-offset": {
+        "$type": "other",
+        "$value": "auto",
+        "$description": "[code-only]"
+      },
+      "disabled": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.disabled.color-subtle}"
+        },
+        "cursor": {
+          "$type": "other",
+          "$value": "disabled",
+          "$description": "[code-only]"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.bg-hover}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-hover}"
+        }
+      },
+      "contrast": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-default}"
+        },
+        "disabled": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.disabled.color-subtle}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1.bg-hover}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1.color-hover}"
+          }
+        }
+      },
+      "inverse": {
+        "background-color": {
+          "$type": "color",
+          "$value": "transparent"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1-inverse.color-default}"
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.disabled-inverse.bg-subtle}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.disabled-inverse.color-subtle}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.bg-hover}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-hover}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 14.1.0
 
 23 april 2026
@@ -42,6 +155,8 @@ De volgende tokens zijn hernoemd bij Community component 'Modal Dialog' van geme
 - `todo.dialog.border-radius` naar `ams.dialog.border-radius`
 - `todo.dialog.box-shadow` naar `ams.dialog.box-shadow`
 
+Wat moet je doen?
+
 - [Ga naar de pagina van Modal Dialog](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=27412-33408).
 - Open Tokens Studio.
 - Ga naar de tokenset 'modal-dialog'.
@@ -50,7 +165,7 @@ De volgende tokens zijn hernoemd bij Community component 'Modal Dialog' van geme
 - Selecteer voor alle zekerheid alle frames en klik vervolgens op 'Apply to selection'.
 - Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
 
-[Bekijk de video 'Changelog: Modal Dialog tokens hernoemen'](https://youtu.be/YR4Uhp86km0) waarin we laten zien hoe je dit zelf kunt doen.
+[Bekijk de video 'Changelog: Modal Dialog tokens hernoemen'](https://youtu.be/YR4Uhp86km0) waarin wordt uitgelegd hoe je dit zelf kunt doen.
 
 ## 14.0.1
 
