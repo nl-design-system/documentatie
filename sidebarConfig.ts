@@ -404,7 +404,7 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', id: 'project/over-nl-design-system' },
         { type: 'doc', id: 'project/faq' },
         { type: 'doc', id: 'project/kernteam' },
-        { type: 'doc', id: 'project/jaarverslag' },
+        { type: 'doc', id: 'project/jaarverslag/index' },
         { type: 'doc', id: 'project/blijf-op-de-hoogte' },
         { type: 'doc', id: 'project/klachten' },
         {
