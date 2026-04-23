@@ -248,44 +248,6 @@ Bij een accordion of tabstructuur staat de content van een geopend paneel direct
 
 **Wie kan dit oplossen:** een developer past de HTML-structuur aan.
 
-### Interactieve elementen in een carrousel zijn niet bereikbaar
-
-Een carrousel bevat slides met interactieve elementen zoals links of knoppen. Die elementen zijn bereikbaar met het toetsenbord. Als ze een `tabindex="-1"` hebben of buiten de focusvolgorde vallen, kan de bezoeker de content van de actieve slide niet gebruiken.
-
-**Hoe te testen:** navigeer met <kbd>Tab</kbd> naar een carrousel. Kun je de links en knoppen in de actieve slide bereiken?
-
-<Guideline appearance="dont" title="Slide-content is niet focusbaar door tabindex=-1.">
-
-```html
-<div class="carrousel">
-  <button aria-label="Vorige slide">&#8249;</button>
-  <button aria-label="Volgende slide">&#8250;</button>
-  <div class="slide actief">
-    <h3>Aanbieding</h3>
-    <a href="/aanbieding" tabindex="-1">Bekijk aanbieding</a>
-  </div>
-</div>
-```
-
-</Guideline>
-
-<Guideline appearance="do" title="Interactieve elementen in de actieve slide zijn focusbaar.">
-
-```html
-<div class="carrousel">
-  <div class="slide actief">
-    <h3>Aanbieding</h3>
-    <a href="/aanbieding">Bekijk aanbieding</a>
-  </div>
-  <button aria-label="Vorige slide">&#8249;</button>
-  <button aria-label="Volgende slide">&#8250;</button>
-</div>
-```
-
-</Guideline>
-
-**Wie kan dit oplossen:** een developer verwijdert `tabindex="-1"` van interactieve elementen in de actieve slide en voegt het toe aan elementen in niet-actieve slides.
-
 ### Focus gaat niet naar een foutmelding na formuliervalidatie
 
 Na het verzenden van een formulier met fouten verplaatst de focus zich naar de eerste foutmelding of een samenvatting van de fouten. Zo weet de bezoeker direct dat het verzenden niet is gelukt en waar de fouten staan. Blijft de focus op de verzendknop, dan merkt een screenreadergebruiker niet dat er foutmeldingen zijn verschenen.
@@ -352,7 +314,7 @@ Een skiplink brengt de focus direct naar de unieke content van de pagina, voorbi
 
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt `tabindex="-1"` toe aan het doelelement en zorgt dat het `id` overeenkomt met het `href` van de skiplink.
+**Wie kan dit oplossen:** een developer voegt `tabindex="-1"` toe aan het eerste element in de unieke content en zorgt dat het `id` overeenkomt met het `href` van de skiplink.
 
 ### In-page links verplaatsen de focus niet
 
@@ -472,25 +434,7 @@ function updateResultaten(data) {
 }
 ```
 
-</Guideline>
-
-<Guideline appearance="do" title="Gebruik een framework of library die alleen gewijzigde elementen bijwerkt.">
-
-```jsx
-function Resultaten({ data }) {
-  return (
-    <ul id="resultaten">
-      {data.map((item) => (
-        <li key={item.id}>{item.naam}</li>
-      ))}
-    </ul>
-  );
-}
-```
-
-</Guideline>
-
-**Wie kan dit oplossen:** een developer gebruikt een framework of library (zoals React, Vue of Lit) die alleen gewijzigde elementen bijwerkt in plaats van de hele container te overschrijven.
+**Wie kan dit oplossen:** een developer gebruikt een framework of library die alleen gewijzigde elementen bijwerkt in plaats van de hele container te overschrijven.
 
 ## Hoe te testen
 
