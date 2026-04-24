@@ -53,6 +53,8 @@ import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/cs
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import ExplanationContrast from "@nl-design-system-unstable/documentation/componenten/paragraph/issues/contrast/explanation.md";
+import SolutionContrast from "@nl-design-system-unstable/documentation/componenten/paragraph/issues/contrast/solution.md";
 
 import {
   DefinitionOfDone,
@@ -128,6 +130,14 @@ export const component = componentProgress.find((item) => item.number === issueN
     </ChecklistItem>
   ))}
 </Checklist>
+
+## Veel voorkomende toegankelijkheidsproblemen
+
+### De tekst heeft een te laag contrast
+
+<ExplanationContrast />
+
+<SolutionContrast />
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
