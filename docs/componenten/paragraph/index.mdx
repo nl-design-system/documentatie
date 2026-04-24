@@ -50,6 +50,16 @@ import ParagraphIllustration from "@nl-design-system-candidate/paragraph-docs/do
 import * as Acceptatiecriteria from "./_acceptatiecriteria.tsx";
 import ExplanationContrast from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/contrast/explanation.md";
 import SolutionContrast from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/contrast/solution.md";
+import ExplanationEmpty from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/empty/explanation.md";
+import SolutionEmpty from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/empty/solution.md";
+import ExplanationLanguage from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/language/explanation.md";
+import SolutionLanguage from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/language/solution.md";
+import ExplanationMultiple from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/multiple/explanation.md";
+import SolutionMultiple from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/multiple/solution.md";
+import ExplanationStrong from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/explanation.md";
+import SolutionStrong from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/solution.md";
+import ExplanationEmphasis from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/explanation.md";
+import SolutionEmphasis from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution.md";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
 import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
@@ -131,13 +141,43 @@ export const component = componentProgress.find((item) => item.number === issueN
   ))}
 </Checklist>
 
-## Veel voorkomende toegankelijkheidsproblemen
+## Vaak voorkomende problemen
 
 ### De tekst heeft een te laag contrast
 
 <ExplanationContrast />
 
 <SolutionContrast />
+
+### Paragraaf heeft geen inhoud
+
+<ExplanationEmpty />
+
+<SolutionEmpty />
+
+### Tekst heeft een andere taal dan de taal van de pagina
+
+<ExplanationLanguage />
+
+<SolutionLanguage />
+
+### Meerdere alinea's in één paragraaf
+
+<ExplanationMultiple />
+
+<SolutionMultiple />
+
+### Hele paragraaf is dikgedrukt
+
+<ExplanationStrong />
+
+<SolutionStrong />
+
+### Hele paragraaf is schuingedrukt
+
+<ExplanationEmphasis />
+
+<SolutionEmphasis />
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
