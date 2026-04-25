@@ -8,7 +8,7 @@ description: Opgenomen audio en video heeft een transcript of audiodescriptie.
 slug: 1.2.3
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - op tijd gebaseerde media
   - perceivable
@@ -36,20 +36,111 @@ import Summary from "./summaries/_1.2.3-summary.md";
   {"WCAG-succescriterium 1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+Wie de beelden van een video niet kan zien, krijgt het volledige verhaal via een audiodescriptie of een tekstalternatief.
+Een tekstalternatief beschrijft álles wat er in de video gebeurt: de gesproken woorden, de belangrijke visuele
+handelingen en de belangrijke geluiden, in de volgorde waarin dat plaatsvindt. Het is meer dan een transcript van de
+dialoog. Iemand die het document laat voorlezen, krijgt hetzelfde verhaal als iemand die de video ziet en hoort. Het
+alternatief staat op de pagina zelf, of via een link met een duidelijke tekst.
 
-Een uitgebreide uitleg van transcripts vind je in de richtlijn [Transcript bij video](/richtlijnen/content/video/transcript). Een uitgebreide uitleg van audiodescriptie vind je in de richtlijn [Audiodescriptie bij video](/richtlijnen/content/video/audiodescriptie).
+Op niveau AA wordt deze keuze strenger: [1.2.5 Audiodescriptie (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.5/) vereist een echte audiodescriptie. Een media-alternatief is daar niet meer voldoende. Als je website aan AA moet voldoen, kies dan direct voor audiodescriptie, dan dek je 1.2.3 en 1.2.5 in één keer af.
+
+## Veelgemaakte fouten
+
+### Geen audiodescriptie en geen media-alternatief
+
+Een video op een webpagina heeft geen audiodescriptie en geen tekstversie. Wie de beelden niet kan zien, mist de visuele informatie en kan dat nergens terugvinden.
+
+**Hoe te testen:** zet de video aan en sluit je ogen. Krijg je alle informatie mee? Zo niet, staat er dan een link naar een tekstalternatief, of een knop voor audiodescriptie? Als beide ontbreken, voldoet de video niet.
+
+**Wie kan dit oplossen:** een contentmaker kiest voor audiodescriptie of voor een tekstalternatief en zorgt dat dit bij de video staat.
+
+### Transcript beschrijft alleen de dialoog
+
+Bij de video staat een transcript. Dat transcript bevat alles wat gezegd wordt, maar niet wat er in beeld gebeurt. De rondleiding door het gebouw, de grafiek, het naamkaartje, de demonstratie: het staat er niet in. Dit telt niet als media-alternatief voor 1.2.3.
+
+**Hoe te testen:** lees het transcript. Krijg je uit de tekst alleen hetzelfde verhaal als iemand die de video ziet en hoort? Of mis je dingen die in beeld gebeuren?
+
+**Wie kan dit oplossen:** een contentmaker breidt het transcript uit met beschrijvingen van wat er visueel gebeurt, in de juiste volgorde.
+
+### Ondertitels aanbieden als alternatief
+
+Bij de video staan ondertitels. Ondertitels zijn geen tekstversie. Ze zijn bedoeld voor wie de audio niet kan horen, niet voor wie de beelden niet kan zien. Ze bevatten alleen de gesproken tekst en belangrijke geluiden, niet de visuele informatie. Ondertitels vallen onder [1.2.2](https://nldesignsystem.nl/wcag/1.2.2/), niet onder 1.2.3.
+
+**Hoe te testen:** zijn ondertitels het enige alternatief bij de video? Dan ontbreekt er nog iets voor wie de beelden niet kan zien.
+
+**Wie kan dit oplossen:** een contentmaker voegt een audiodescriptie of een volledig media-alternatief toe, naast de bestaande ondertitels.
+
+### Media-alternatief is niet te vinden bij de video
+
+Het media-alternatief bestaat, maar staat ergens onderaan de pagina tussen andere links, zonder duidelijke tekst die verklaart dat dit de uitgeschreven tekst is van de video.
+
+**Hoe te testen:** staat er bij de video zelf een duidelijke link naar het tekstalternatief? Kun je het alternatief makkelijk vinden?
+
+**Wie kan dit oplossen:** een contentmaker of developer plaatst een link met een duidelijke tekst direct bij de video, bijvoorbeeld "Tekstversie van deze video".
+
+### Media-alternatief is niet volledig
+
+Het tekstalternatief geeft een samenvatting van de video in plaats van de inhoud volledig uit te schrijven. Wie de tekst leest, krijgt een beperkter verhaal dan wie de video kijkt.
+
+**Hoe te testen:** vergelijk de uitgeschreven tekst met de inhoud van de video.
+
+**Wie kan dit oplossen:** een contentmaker herschrijft de uitgeschreven inhoud van de video.
+
+### Belangrijke geluiden ontbreken in het media-alternatief
+
+In de video hoor je een telefoon rinkelen, een deur dichtslaan, een dramatische stilte. Deze geluiden dragen bij aan de betekenis. In het media-alternatief staat alleen de dialoog en de visuele actie. De sfeer en context gaan verloren.
+
+**Hoe te testen:** luister naar de video en let op niet-talige geluiden. Komen die terug in het alternatief?
+
+**Wie kan dit oplossen:** een contentmaker vermeldt belangrijke geluiden expliciet in het alternatief, bijvoorbeeld "[op de achtergrond rinkelt een telefoon]".
+
+### Interactieve video zonder alternatief voor de interactie
+
+Een video met keuzemomenten, hotspots of links in beeld werkt als een interactieve ervaring. Het media-alternatief beschrijft alleen het verhaal, niet de keuzes die je kunt maken of de bestemmingen van de links. Wie de video niet kan gebruiken, mist de interactieve onderdelen.
+
+**Hoe te testen:** kun je alle interactieve onderdelen van de video ook via het alternatief bereiken? Staan de links apart op de pagina? Zijn de keuzemogelijkheden beschreven?
+
+**Wie kan dit oplossen:** een contentmaker of developer plaatst de interactieve elementen als losse links of knoppen naast het media-alternatief.
+
+### Video naast tekst zonder uitleg dat het een alternatief is
+
+Een pagina toont eerst een artikel in tekst en daarna een video waarin dezelfde inhoud wordt verteld. De video is bedoeld als extra optie voor wie liever kijkt dan leest. In dit geval geldt de uitzondering: de video hoeft geen audiodescriptie of media-alternatief te hebben. Maar dan moet je wel duidelijk maken dat de video een alternatief is voor de tekst erboven. Zonder deze toelichting weet een bezoeker niet dat het antwoord al in de tekst staat.
+
+**Hoe te testen:** staat er boven of bij de video een duidelijke vermelding dat het om een alternatieve versie van de tekst gaat? Bijvoorbeeld "Liever kijken dan lezen? Dit artikel is ook beschikbaar als video."?
+
+**Wie kan dit oplossen:** een contentmaker voegt een duidelijk label toe bij de video.
 
 ## Hoe te testen
 
-- Kijk of het geluid of beeld bij een video een gelijkwaardig alternatief heeft. Hierbij beoordelen we de originele audio, een eventuele losse audiotrack en een eventuele uitgeschreven tekst.
+### Voor iedereen
 
-## Gerelateerde NL Design System-richtlijnen
+1. Zet de video aan en sluit je ogen. Begrijp je nog wat er gebeurt? Krijg je alle essentiële informatie mee?
+2. Als je iets mist, zoek bij de video naar een audiodescriptiespoor of een link naar een tekstversie.
+3. Lees het tekstalternatief. Staat er alles in: dialoog, visuele actie, belangrijke geluiden, interactieve elementen, in de juiste volgorde?
+4. Controleer of de link naar het alternatief een duidelijke linktekst heeft en direct bij de video staat.
+5. Als de video zelf een alternatief is voor een tekst op dezelfde pagina, controleer of dat duidelijk vermeld wordt.
 
-- Content: [Audiodescriptie bij video](/richtlijnen/content/video/audiodescriptie).
-- Content: [Transcript bij video](/richtlijnen/content/video/transcript).
+### Voor developers
+
+1. Inspecteer het `<video>`-element. Is er een `<track kind="descriptions">` aanwezig, of staat er een link naar een tekstalternatief?
+2. Controleer of de link naar het alternatief een beschrijvende naam heeft, zoals "Tekstversie" of "Volledige beschrijving van de video".
+3. Bij automatisch gegenereerde transcripts (bijvoorbeeld van YouTube): zorg dat de contentmaker de tekst redigeert voor publicatie.
+4. Automatische tools zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> controleren niet of een alternatief inhoudelijk compleet is. Dit is een handmatige controle.
+
+## Gerelateerde succescriteria
+
+- [1.2.5 Audiodescriptie (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.5/): op niveau AA is een tekstalternatief niet meer voldoende. Er moet een echte audiodescriptie zijn.
+- [1.2.1 Alleen-audio en alleen-video (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.1/): voor video zonder geluid of audio zonder beeld gelden aparte regels met eigen alternatieven.
+- [1.2.2 Ondertitels (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.2/): naast het alternatief voor wie de beelden niet kan zien, zijn ondertitels verplicht voor wie de audio niet kan horen.
+- [1.2.7 Audiodescriptie (uitgebreid)](https://nldesignsystem.nl/wcag/1.2.7/): als er te weinig stiltes in de video zijn voor een gewone audiodescriptie, biedt uitgebreide audiodescriptie een oplossing. Niveau AAA.
+- [1.2.8 Media-alternatief (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.8/): op niveau AAA is naast audiodescriptie ook een volledig media-alternatief verplicht.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-of-media-alternatief-vooraf-opgenomen) — de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 1.2.3: Audio Description or Media Alternative (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/) — W3C-handleiding over toegankelijke audio en video (Engels).
 
 ## Gebruikersonderzoek
 
