@@ -9,15 +9,22 @@ description: Opgenomen video's hebben audiodescriptie.
 slug: 1.2.5
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - waarneembaar
   - op tijd gebaseerde media
   - perceivable
   - time-based media
   - audio description (prerecorded)
   - audio description
-  - prerecorded
-  - vooraf opgenomen
+  - vooraf opgenomen video
+  - video
+  - blind
+  - slechtziend
+  - visuele beperking
+  - synchronized media
+  - prerecorded video
+  - WCAG 1.2.5
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
@@ -34,20 +41,84 @@ import Summary from "./summaries/_1.2.5-summary.md";
   {"WCAG-succescriterium 1.2.5 Audiodescriptie (vooraf opgenomen)"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-Een uitgebreide uitleg van audiodescriptie vind je in de richtlijn [Audiodescriptie bij video](/richtlijnen/content/video/audiodescriptie).
+Wie de beelden van een video niet kan zien, krijgt de visuele informatie via een audiodescriptie: een extra audiospoor dat meeloopt met de video en beschrijft wat in beeld gebeurt. De beschrijvingen passen in de stiltes tussen de dialogen, of aan het begin of het einde van de video.
+
+Op niveau A mag onder [1.2.3](https://nldesignsystem.nl/wcag/1.2.3/) ook een transcript volstaan. Op niveau AA is dat niet meer genoeg: er moet een echte audiodescriptie zijn die je tegelijk met de video kunt horen. Dit succescriterium geldt voor alle vooraf opgenomen video's met geluid. Live uitzendingen vallen onder [1.2.4 Ondertitels (live)](https://nldesignsystem.nl/wcag/1.2.4/) en [1.2.9 Audio-only (live)](https://nldesignsystem.nl/wcag/1.2.9/). Als de video alleen een visuele versie is van tekst die al op de pagina staat én je dat duidelijk vermeldt, geldt de uitzondering "media-alternatief voor tekst" en hoeft er geen audiodescriptie te zijn.
+
+## Veelgemaakte fouten
+
+### Geen audiodescriptie bij een video met essentiële visuele informatie
+
+Een bedrijfsvideo toont een rondleiding door een kantoor of een productdemonstratie. De beelden bevatten informatie die de spreker niet noemt. Zonder audiodescriptie mist iemand die blind is een deel van het verhaal.
+
+**Hoe te testen:** zet de video aan en sluit je ogen. Begrijp je het verhaal nog? Als je belangrijke dingen mist, heeft de video audiodescriptie nodig.
+
+**Wie kan dit oplossen:** een contentmaker laat een audiodescriptie schrijven en inspreken. De developer zorgt dat de videospeler het extra spoor kan afspelen, of plaatst een tweede versie van de video met de audiodescriptie ingemixt.
+
+### Een transcript aanbieden in plaats van audiodescriptie
+
+Een transcript is een volledige tekstversie van alles wat in de video gebeurt. Op niveau A mag dat onder [1.2.3](https://nldesignsystem.nl/wcag/1.2.3/) als alternatief voor audiodescriptie. Op niveau AA is dat niet genoeg. Voor dit succescriterium moet er een audiodescriptie zijn die je tegelijk met de video kunt horen.
+
+**Hoe te testen:** heeft de video alleen een linkje naar een tekstbestand, en geen audiospoor met beschrijvingen? Dan voldoet de video wel aan 1.2.3, maar niet aan 1.2.5.
+
+**Wie kan dit oplossen:** een contentmaker laat een audiodescriptie maken, bovenop het bestaande transcript.
+
+### Tekst in beeld blijft onbeschreven
+
+De video toont een naamkaartje onder een spreker, het logo van het bedrijf of tekstuele informatie over de makers van de video aan het einde. Die tekst hoor je nergens terug. Wie de beelden niet kan zien, mist deze informatie.
+
+**Hoe te testen:** hoor je deze tekst of de naam van het bedrijf in de audiodescriptie?
+
+**Wie kan dit oplossen:** een contentmaker laat de audiodescriptie ook de tekst in beeld voorlezen.
+
+### Audiodescriptie beschrijft decoratie
+
+De audiodescriptie leest voor dat decoratieve elementen in beeld verschijnen. Een blinde bezoeker krijgt informatie te horen die er niet toe doet.
+
+**Hoe te testen:** beluister de video met audiodescriptie. Voegt de beschrijving informatie toe, of beschrijft de verteller decoratieve inhoud?
+
+**Wie kan dit oplossen:** een contentmaker beschrijft alleen visuele informatie die nodig is om het verhaal te begrijpen.
+
+### Audiodescriptie in een andere taal dan de video
+
+De video is in het Nederlands, maar de audiodescriptie is alleen in het Engels beschikbaar. Of andersom. Wie de taal van de audiodescriptie niet spreekt, heeft er niets aan.
+
+**Hoe te testen:** in welke taal is de video? In welke taal is de audiodescriptie? Kloppen die?
+
+**Wie kan dit oplossen:** een contentmaker laat voor elke taalversie van de video een audiodescriptie in dezelfde taal maken.
 
 ## Hoe te testen
 
-- Kijk of het geluid en beeld bij een video gelijkwaardig zijn. Hierbij luisteren we zowel naar de originele audio, als een eventuele losse audiotrack.
+### Voor iedereen
 
-## Tip
+1. Zet de video aan met geluid en sluit je ogen. Begrijp je nog wat er gebeurt? Krijg je de essentiële informatie mee?
+2. Zoek in de videospeler naar een optie voor audiodescriptie of een extra audiospoor.
+3. Zet de audiodescriptie aan en beluister de video opnieuw. Krijg je nu wel het volledige verhaal?
+4. Let op tekst die in beeld verschijnt: namen, bedrijfsnamen of andere tekst. Hoor je ze terug?
+5. Controleer of de audiodescriptie in dezelfde taal is als de video.
 
-- Als je slaagt voor dit succescriterium, slaag je automatisch ook voor [WCAG Succescriterium 1.2.3](/wcag/1.2.3).
-- Dit succescriterium geldt niet als de video een alternatief is voor de inhoud van de pagina.
+### Voor developers
+
+1. Inspecteer het `<video>`-element. Is er een `<track kind="descriptions">` aanwezig, of een tweede videobestand met de audiodescriptie ingemixt?
+2. Controleer of de videospeler een knop of optie biedt om het audiodescriptie-spoor aan of uit te zetten.
+3. Automatische tools zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> controleren niet of de audiodescriptie inhoudelijk volledig en relevant is. Dit is een handmatige controle.
+
+## Gerelateerde succescriteria
+
+- [1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.3/): op niveau A mag je kiezen tussen audiodescriptie of een tekstalternatief. Op niveau AA moet er echte audiodescriptie zijn.
+- [1.2.7 Audiodescriptie (uitgebreid)](https://nldesignsystem.nl/wcag/1.2.7/): als er te weinig stiltes zijn voor een gewone audiodescriptie, pauzeert de video af en toe zodat er meer ruimte is voor beschrijvingen. Dit is niveau AAA.
+- [1.2.8 Media-alternatief (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.8/): een volledige tekstversie van de video, inclusief alle visuele en auditieve informatie. Niveau AAA.
+- [1.2.2 Ondertitels (vooraf opgenomen)](https://nldesignsystem.nl/wcag/1.2.2/): voor dezelfde video's is ondertiteling verplicht voor wie de audio niet kan horen. Audiodescriptie en ondertiteling zijn twee aparte sporen voor twee verschillende doelgroepen.
+- [1.1.1 Niet-tekstuele content](https://nldesignsystem.nl/wcag/1.1.1/): voor video's zonder geluid of audio zonder beeld gelden andere regels. Een korte beschrijving van het doel van de video is dan vaak al genoeg.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 1.2.5 Audiodescriptie (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-vooraf-opgenomen) — de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 1.2.5: Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/) — W3C-handleiding over toegankelijke audio en video, inclusief uitleg over audiodescriptie (Engels).
+- [HTMLMediaElement: `<track>` kind="descriptions"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track) — MDN-documentatie over het `<track>`-element en de kinds die beschikbaar zijn (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
