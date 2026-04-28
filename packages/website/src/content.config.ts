@@ -5,15 +5,9 @@ import { z } from 'astro/zod';
 
 type GlobOptions = Parameters<typeof glob>[0];
 
-const hasUnderscoredSegment = (path: string) => path.split('/').some((segment) => segment.startsWith('_'));
-
 /**
- * Extend of the build in glob to:
- * 1. Filter out entries with an underscore prefixed folder or file.
- *    The glob pattern does not allow to filter out both
- *    thus an extend was needed for a second filter pass
- * 2. Add pages with the `unlisted` flag to the global unlistedPages set. These
- *    pages won't end up in the sitemap
+ * Extend of the build in glob to add pages with the `unlisted` flag to the
+ * global unlistedPages set. These pages won't end up in the sitemap
  */
 export function customGlob(options: GlobOptions): Loader {
   const inner = glob(options);
@@ -24,13 +18,7 @@ export function customGlob(options: GlobOptions): Loader {
     async load(context: LoaderContext) {
       await inner.load(context);
 
-      // After loading, remove entries whose path contains an underscore prefixed segment
       for (const [id, { data }] of context.store.entries()) {
-        if (hasUnderscoredSegment(id)) {
-          context.store.delete(id);
-          continue;
-        }
-
         const result = schema.safeParse(data);
         if (result.success) {
           if (result.data.title.length >= 60 && !result.data.title_sm) {
@@ -50,10 +38,6 @@ export function customGlob(options: GlobOptions): Loader {
  * Get the slug from the frontmatter.
  */
 function getSlug(options): string | null {
-  // Return early when the path contains an underscore prefixed segment. These
-  // files should be ignored
-  if (hasUnderscoredSegment(options.entry)) return null;
-
   if (options.data.slug) {
     return options.data.slug.startsWith('/')
       ? options.data.slug // if the slug starts with a `/` use it as is
@@ -103,16 +87,18 @@ const docs = defineCollection({
   loader: customGlob({
     base: './../../docs',
     pattern: [
-      'baseline/**/!(_)*.{md,mdx}',
-      'community/**/!(_)*.{md,mdx}',
-      'footer/**/!(_)*.{md,mdx}',
-      'handboek/**/!(_)*.{md,mdx}',
-      'open-source/**/!(_)*.{md,mdx}',
-      'private/**/!(_)*.{md,mdx}',
-      'project/**/!(_)*.{md,mdx}',
-      'richtlijnen/**/!(_)*.{md,mdx}',
-      'voorbeelden/**/!(_)*.{md,mdx}',
-      'woordenlijst/**/!(_)*.{md,mdx}',
+      'baseline/**/*.{md,mdx}',
+      'community/**/*.{md,mdx}',
+      'footer/**/*.{md,mdx}',
+      'handboek/**/*.{md,mdx}',
+      'open-source/**/*.{md,mdx}',
+      'private/**/*.{md,mdx}',
+      'project/**/*.{md,mdx}',
+      'richtlijnen/**/*.{md,mdx}',
+      'voorbeelden/**/*.{md,mdx}',
+      'woordenlijst/**/*.{md,mdx}',
+      '!**/_*/**',
+      '!**/_*.{md,mdx}',
     ],
     generateId,
   }),
@@ -122,7 +108,7 @@ const docs = defineCollection({
 const components = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['componenten/**/!(_)*.{md,mdx}'],
+    pattern: ['componenten/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
   schema,
@@ -131,7 +117,7 @@ const components = defineCollection({
 const wcag = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['wcag/**/!(_)*.{md,mdx}'],
+    pattern: ['wcag/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
   schema,
