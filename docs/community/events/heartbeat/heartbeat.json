@@ -1,5 +1,15 @@
 [
   {
+    "id": 124,
+    "date": "2026-04-28",
+    "description": [
+      "Bart van het Expertteam Digitale Toegankelijkheid laat de voortgang zien van de Theme Wizard.",
+      "Rozerin van het kernteam neemt jullie mee in hoe we Figma hygiëne toepassen in ons werk en hoe dit helpt om efficiënter samen te werken."
+    ],
+    "title": "Heartbeat van 28 april 2026.",
+    "youtubeId": "uu-7SYCiIfE"
+  },  
+  {
     "id": 123,
     "date": "2026-04-14",
     "description": [
@@ -15,7 +25,7 @@
     "description": [
       "Tim van het Expertteam Digitale Toegankelijkheid deelt hoe ver hij is met de editor die bedoeld is om te helpen toegankelijke content te maken.",
       "Fionn en Neslihan van Logius delen hoe ze het CSS Cross Contamination probleem in de Rijkshuisstijl Community hebben opgelost en de stappen die andere kunnen nemen om dit ook zo op te lossen.",
-      "Richard van het kerneam verteld hoe het kernteam helpt de infrastructuur voor Open Source werken up-to-date en veilig te houden en waar je rekening mee kunt houden om op een veilige manier code van anderen te gebruiken en nieuwe code toe te voegen."
+      "Richard van het kerneam vertelt hoe het kernteam helpt de infrastructuur voor Open Source werken up-to-date en veilig te houden en waar je rekening mee kunt houden om op een veilige manier code van anderen te gebruiken en nieuwe code toe te voegen."
     ],
     "title": "Heartbeat van 31 maart 2026.",
     "youtubeId": "ee-rRqBGcJg"
