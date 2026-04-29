@@ -384,9 +384,6 @@ importers:
       unist-util-visit:
         specifier: 5.1.0
         version: 5.1.0
-      uuid:
-        specifier: 11.1.0
-        version: 11.1.0
       yaml-loader:
         specifier: 0.9.0
         version: 0.9.0
@@ -11042,10 +11039,6 @@ packages:
   utils-merge@1.0.1:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
-
-  uuid@11.1.0:
-    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
-    hasBin: true
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
@@ -24680,8 +24673,6 @@ snapshots:
   utility-types@3.10.0: {}
 
   utils-merge@1.0.1: {}
-
-  uuid@11.1.0: {}
 
   uuid@8.3.2: {}
 
