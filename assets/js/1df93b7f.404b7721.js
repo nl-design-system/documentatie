@@ -1,4 +1,4 @@
-/*! For license information please see 1df93b7f.2e0d4ef5.js.LICENSE.txt */
+/*! For license information please see 1df93b7f.404b7721.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [34583],
@@ -6,7 +6,7 @@
   7088(e, n, t) {
    (t.r(n), t.d(n, { default: () => v }));
    var a = t(74147),
-    i = t(46664),
+    i = t(75330),
     r = t(46447),
     o = t(90495),
     d = t(39831),

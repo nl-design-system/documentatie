@@ -9,7 +9,7 @@
     t = n(71639),
     a = n(86332),
     i = n(70389),
-    l = n(46664),
+    l = n(75330),
     u = n(86070);
    function c(e) {
     return (0, u.jsx)(a.e3, { className: (0, r.A)(t.G.wrapper.docsPages), children: (0, u.jsx)(l.A, { children: (0, i.v)(e.route.routes) }) });
