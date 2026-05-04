@@ -292,8 +292,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       '@utrecht/web-component-library-react':
-        specifier: 3.0.12
-        version: 3.0.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 4.0.4
+        version: 4.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/web-component-library-stencil':
         specifier: 3.7.0
         version: 3.7.0
@@ -1866,6 +1866,10 @@ packages:
 
   '@babel/runtime-corejs3@7.28.4':
     resolution: {integrity: sha512-h7iEYiW4HebClDEhtvFObtPmIvrd1SSfpI9EhOeKk4CtIK/ngBWFpuhCzhdmRKtg71ylcue+9I6dv54XYO1epQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.24.8':
+    resolution: {integrity: sha512-5F7SDGs1T72ZczbRwbGO9lQi0NLjQxzl6i4lJxLxfW9U5UluCSyEJeniWvnhl3/euNiqQVbo8zruhsDfid0esA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.28.6':
@@ -5104,14 +5108,17 @@ packages:
   '@utrecht/vega-visualization-css@1.4.2':
     resolution: {integrity: sha512-JTTx1DsKIeYZz95+H34HGfocKjDpbVOsFdPK1f/b3U3C5ivdC75fTkzU1+tVp6ijPwKnWPNr6eiIXTY9tHj5Kg==}
 
-  '@utrecht/web-component-library-react@3.0.12':
-    resolution: {integrity: sha512-MrnnMCg9NZxFWoBjOH4jxduhX96H+QqfwogNlldy8xqJtUXmO21TZY8T29Q1y7DHQT5by+Br0IDIMuarWsY0AQ==}
+  '@utrecht/web-component-library-react@4.0.4':
+    resolution: {integrity: sha512-Xc5tt4dwev7elsXoZ6cShE/ULLEBFY3GNmczozsCZ/UVVIx2oLM32SCBFqFVX4GLYzW7sskMTKJIdZbXUvBz5Q==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/web-component-library-stencil@3.7.0':
     resolution: {integrity: sha512-JvJ6rQAJlRtVbQApFODOMC25FgGsiLkTOs773VZo3u/rvvL4GhpXdri5Zap1yn0oD9dfjC4VWLq9LM+dPsLTDQ==}
+
+  '@utrecht/web-component-library-stencil@4.2.0':
+    resolution: {integrity: sha512-Qou70PKkqtQzC42A/SQdrGCl9IE5vM/kZZvd6Ekfwhtbx/MfIux5Q+TGUYUQOl5GMWS/kF2I7dvkU/IdrQiv/g==}
 
   '@utrecht/youtube-video-css@2.0.1':
     resolution: {integrity: sha512-h4wGXrIDLUevryoUvPsAj8C6dSo23KkN7M0BgQxAhlOy6KB59aUOGBlmY+xhZtsIgL/XrHPctjwlZKw8crd3IA==}
@@ -9884,6 +9891,9 @@ packages:
   regenerate@1.4.2:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
 
+  regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
+
   regenerator-transform@0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
 
@@ -13387,6 +13397,10 @@ snapshots:
   '@babel/runtime-corejs3@7.28.4':
     dependencies:
       core-js-pure: 3.47.0
+
+  '@babel/runtime@7.24.8':
+    dependencies:
+      regenerator-runtime: 0.14.1
 
   '@babel/runtime@7.28.6': {}
 
@@ -17469,13 +17483,18 @@ snapshots:
 
   '@utrecht/vega-visualization-css@1.4.2': {}
 
-  '@utrecht/web-component-library-react@3.0.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@utrecht/web-component-library-react@4.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@utrecht/web-component-library-stencil': 3.7.0
+      '@babel/runtime': 7.24.8
+      '@utrecht/web-component-library-stencil': 4.2.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
   '@utrecht/web-component-library-stencil@3.7.0':
+    dependencies:
+      '@stencil/core': 4.18.3
+
+  '@utrecht/web-component-library-stencil@4.2.0':
     dependencies:
       '@stencil/core': 4.18.3
 
@@ -23401,6 +23420,8 @@ snapshots:
       regenerate: 1.4.2
 
   regenerate@1.4.2: {}
+
+  regenerator-runtime@0.14.1: {}
 
   regenerator-transform@0.15.2:
     dependencies:
