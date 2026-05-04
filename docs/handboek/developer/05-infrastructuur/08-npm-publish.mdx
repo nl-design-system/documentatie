@@ -25,10 +25,10 @@ import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 # Publiceren van npm packages
 
 <Paragraph lead>
-  Het publiceren van NL Design System packages gaat altijd via GitHub Actions pipelines. Dat is handig en veiliger dan
-  handmatig publiceren. We volgen hierbij de Changesets-workflow: bij elke wijziging die je wilt publiceren voorzie je
-  die gelijk van de tekst voor de changelog, en je publiceert op een goed moment één of meerdere wijzigingen door een
-  Pull Request goed te keuren.
+  Het publiceren van NL Design System packages gaat altijd via CI/CD pipelines. Dat is handig en veiliger dan handmatig
+  publiceren. We volgen hierbij de Changesets-workflow: bij elke wijziging die je wilt publiceren voorzie je die gelijk
+  van de tekst voor de changelog, en je publiceert op een goed moment één of meerdere wijzigingen door een Pull Request
+  goed te keuren.
 </Paragraph>
 
 Op deze pagina lees je meer over de technische infrastructuur:
@@ -84,7 +84,7 @@ Goed om te weten:
 ### Nieuwe versies van bestaande packages publiceren
 
 We gebruiken OpenID Connect om packages te publiceren.
-Daarmee wordt bij een release veilig en automatisch een eenmalig token tussen GitHub Actions en de npm Registry uitgewisseld.
+Daarmee wordt bij een release veilig en automatisch een eenmalig token tussen GitHub Actions (of GitLab CI/CD Pipelines) en de npm Registry uitgewisseld.
 Zo kan npm publiceren zonder een vast npm-token te hoeven mee te geven.
 
 Dit heeft als voordeel dat:
