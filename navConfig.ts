@@ -33,7 +33,7 @@ const navbar: Navbar = {
       type: 'doc',
       docId: 'voorbeelden/introductie',
       position: 'left',
-      label: 'Voorbeelden',
+      label: 'Patronen en templates',
       className: 'utrecht-link utrecht-link--html-a ma-navigation-bar-item',
     },
     {

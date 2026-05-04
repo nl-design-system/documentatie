@@ -77,6 +77,7 @@ RedirectMatch 301 "^/project/events(.\*)$" "/community/events$1"
 RedirectMatch 301 "^/richtlijnen/formulieren/alle-richtlijnen/(.\*)$" "/richtlijnen/formulieren/$1"
 RedirectMatch 301 "^/videos(.\*)$" "/project/events$1"
 RedirectMatch 301 "^/voorbeelden/patronen/formulieren(?:/.*)?$" "/voorbeelden/patronen-en-templates/formulieren"
+RedirectMatch 301 "^/voorbeelden(.\*)$" "/patronen-en-templates$1""
 
 RedirectMatch 301 "^/handboek/estafettemodel/componenten/community-stappenplan(.*)$" "/handboek/estafettemodel/componenten/community$1"
 RedirectMatch 301 "^/handboek/estafettemodel/componenten/candidate-stappenplan(.*)$" "/handboek/estafettemodel/componenten/candidate$1"
