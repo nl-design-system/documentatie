@@ -1,6 +1,5 @@
 ---
 import { siteName, siteTitle, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
-import { Root } from '@components/root/root';
 import { PageHeader } from '@components/page-header/page-header';
 import { PageFooter } from '@components/page-footer/page-footer';
 import { NavBar } from '@components/nav-bar/nav-bar';
@@ -16,6 +15,7 @@ import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
 import '@fontsource/source-sans-pro';
 import '@fontsource/source-sans-pro/700.css';
+import '@utrecht/root-css/dist/index.css';
 
 export interface Props {
   title: string;
@@ -65,7 +65,7 @@ const footerNavigationItems = [
 ];
 ---
 
-<Root lang={lang} dir="ltr">
+<html class="utrecht-root" lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -129,7 +129,7 @@ const footerNavigationItems = [
       </PageFooter>
     </PageLayout>
   </body>
-</Root>
+</html>
 
 <style is:global>
   /* These styles are temporary to let axe pass. When actual components are
