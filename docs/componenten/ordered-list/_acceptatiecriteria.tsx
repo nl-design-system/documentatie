@@ -12,7 +12,7 @@ import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/_wc
 
 export const usage = [
   {
-    title: 'De Ordered List bevat alleen list-items.',
+    title: 'De Ordered List bestaat uit een list met list-items.',
     sc: '1.3.1',
     status: '',
     component: Wcag131Lists,
