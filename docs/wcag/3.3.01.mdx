@@ -43,9 +43,7 @@ import Summary from "./summaries/_3.3.1-summary.md";
 
 <Summary />
 
-Foutmeldingen verschijnen op het moment dat de fout wordt herkend: na het verzenden van het formulier of direct bij het verlaten van een veld. De melding staat bij het veld waar de fout zit, niet alleen in een samenvatting bovenaan de pagina. Een screenreader leest de foutmelding voor in samenhang met het veld, zodat de bezoeker weet welk veld aandacht nodig heeft.
-
-Een rode rand of een icoon alleen is niet voldoende. De foutmelding moet in tekst beschrijven wat er mis is, zodat iedereen de fout kan begrijpen en corrigeren.
+Foutmeldingen verschijnen op het moment dat de fout wordt herkend: na het verzenden van het formulier of bij het verlaten van een veld. De melding staat bij het veld waar de fout zit, eventueel aangevuld met een samenvatting van fouten bovenaan de pagina. Een screenreader leest de foutmelding voor in samenhang met het veld, zodat de bezoeker weet welk veld aandacht nodig heeft.
 
 ## Veelgemaakte fouten
 
@@ -58,7 +56,7 @@ Een foutmelding bij een invoerveld beschrijft wat er mis is en hoe de bezoeker h
 <Guideline appearance="dont" title="Generieke foutmelding die niets zegt over het probleem.">
   ```html
   <label for="email">E-mailadres</label>
-  <input type="email" id="email" aria-describedby="email-fout" />
+  <input type="email" id="email" aria-describedby="email-fout" aria-invalid="true" />
   <p id="email-fout" class="fout">
     Ongeldige invoer
   </p>
@@ -75,33 +73,7 @@ Een foutmelding bij een invoerveld beschrijft wat er mis is en hoe de bezoeker h
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer schrijft specifieke foutmeldingen per validatieregel. Een contentbeheerder levert de teksten aan.
-
-### Foutmelding is niet gekoppeld aan het invoerveld
-
-Een foutmelding staat visueel bij het juiste veld, maar is er in de code niet aan gekoppeld. Een screenreader leest de foutmelding dan niet voor wanneer de bezoeker naar het veld navigeert. De bezoeker hoort alleen het label en weet niet dat er een fout is.
-
-**Hoe te testen:** navigeer met een screenreader naar een veld met een fout. Wordt de foutmelding voorgelezen samen met het label? Inspecteer het veld in de DevTools: heeft het een `aria-describedby` dat verwijst naar de foutmelding?
-
-<Guideline appearance="dont" title="Foutmelding staat visueel bij het veld maar is niet gekoppeld.">
-  ```html
-  <label for="postcode">Postcode</label>
-  <input type="text" id="postcode" />
-  <p class="fout">Postcode is niet geldig. Gebruik het format 1234 AB</p>
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="Foutmelding is via aria-describedby gekoppeld aan het veld.">
-  ```html
-  <label for="postcode">Postcode</label>
-  <input type="text" id="postcode" aria-describedby="postcode-fout" aria-invalid="true" />
-  <p id="postcode-fout" class="fout">
-    Postcode is niet geldig. Gebruik het format 1234 AB
-  </p>
-  ```
-</Guideline>
-
-**Wie kan dit oplossen:** een developer koppelt de foutmelding aan het veld met `aria-describedby` en markeert het veld met `aria-invalid="true"`.
+**Wie kan dit oplossen:** een UX-designer of contentdesigner formuleert de foutteksten zodat ze concreet en behulpzaam zijn. Een developer koppelt de juiste tekst aan elke validatieregel.
 
 ### Fout is alleen aangegeven met kleur
 
@@ -130,11 +102,13 @@ Een invoerveld met een fout heeft alleen een rode rand of een rood label. Iemand
 
 **Wie kan dit oplossen:** een developer voegt een tekstuele foutmelding toe naast de kleurverandering.
 
-### Foutmeldingen verschijnen alleen bovenaan de pagina
+## Best practice
 
-Na het verzenden van een formulier verschijnt een samenvatting van fouten bovenaan de pagina, maar bij de velden zelf staat niets. De bezoeker moet heen en weer scrollen tussen de samenvatting en de velden om te begrijpen wat er mis is. Bij lange formulieren is dat onwerkbaar.
+### Toon foutmeldingen ook bij het veld zelf
 
-**Hoe te testen:** verstuur een formulier met meerdere fouten. Staan de foutmeldingen ook bij de individuele velden? Of moet je scrollen naar een samenvatting bovenaan?
+Een samenvatting van fouten bovenaan de pagina helpt bezoekers om snel te zien hoeveel fouten er zijn en waar ze zitten. Plaats daarnaast bij elk veld de bijbehorende foutmelding, zodat een bezoeker tijdens het corrigeren niet hoeft te scrollen tussen de samenvatting en het veld. Bij lange formulieren maakt dat het verschil tussen werkbaar en onwerkbaar.
+
+**Hoe te testen:** verstuur een formulier met meerdere fouten. Staan de foutmeldingen ook bij de individuele velden? Verwijzen de links in de samenvatting naar het juiste veld?
 
 <Guideline appearance="dont" title="Foutmeldingen alleen in een samenvatting bovenaan.">
     ```html
@@ -171,13 +145,13 @@ Na het verzenden van een formulier verschijnt een samenvatting van fouten bovena
 
 De links in de samenvatting verwijzen naar de velden, zodat de bezoeker direct naar het juiste veld kan springen.
 
-**Wie kan dit oplossen:** een developer voegt foutmeldingen toe bij de individuele velden en maakt de samenvatting klikbaar.
+**Wie kan dit toepassen:** een developer voegt foutmeldingen toe bij de individuele velden en maakt de samenvatting klikbaar.
 
-### Inline validatie markeert een veld als fout terwijl de bezoeker nog bezig is
+### Valideer pas bij het verlaten van het veld
 
-Inline validatie controleert een veld terwijl de bezoeker nog aan het typen is. Na het eerste karakter van een e-mailadres verschijnt al een foutmelding dat het adres ongeldig is. Dat is verwarrend en frustrerend. Valideer pas nadat de bezoeker het veld heeft verlaten of het formulier heeft verzonden.
+Een bezoeker die aan het typen is, is nog bezig met het invullen — een foutmelding na het eerste karakter is verwarrend en frustrerend. Wacht met valideren tot de bezoeker het veld verlaat of het formulier verzendt. Dan is duidelijk dat de invoer "af" is en geeft de melding feedback op een afgerond geheel.
 
-**Hoe te testen:** begin met het invullen van een veld. Verschijnt er al een foutmelding terwijl je nog aan het typen bent?
+**Hoe te testen:** begin met het invullen van een veld. Verschijnt er een foutmelding terwijl je nog aan het typen bent?
 
 <Guideline appearance="dont" title="Validatie bij elke toetsaanslag.">
     ```javascript
@@ -195,13 +169,13 @@ Inline validatie controleert een veld terwijl de bezoeker nog aan het typen is. 
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer wijzigt de validatietrigger van `input` naar `blur` of `submit`.
+**Wie kan dit toepassen:** een developer wijzigt de validatietrigger van `input` naar `blur` of `submit`.
 
 ## Hoe te testen
 
 ### Voor iedereen
 
-1. Verstuur een formulier met bewust lege of fout ingevulde velden. Verschijnt er bij elk veld met een fout een foutmelding?
+1. Verstuur een formulier met bewust lege en fout ingevulde velden. Verschijnt er bij elk veld met een fout een foutmelding?
 2. Lees de foutmeldingen. Beschrijven ze concreet wat er mis is en in welk invoerveld?
 
 ### Voor developers
@@ -209,10 +183,11 @@ Inline validatie controleert een veld terwijl de bezoeker nog aan het typen is. 
 1. Inspecteer velden met fouten in de DevTools. Heeft elk veld met een fout een `aria-invalid="true"` en een `aria-describedby` dat verwijst naar de foutmelding?
 2. Test met een screenreader. Navigeer naar een veld met een fout. Wordt de foutmelding voorgelezen samen met het label?
 3. Controleer of inline validatie niet triggert terwijl de bezoeker nog aan het typen is.
-4. Als er een foutsamenvatting bovenaan staat: controleer of de links naar de individuele velden verwijzen en of de focus naar de samenvatting verplaatst na het verzenden.
+4. Als er een foutsamenvatting bovenaan staat: controleer of de links naar de individuele velden verwijzen. Controleer ook of de samenvatting na het verzenden door een screenreader wordt aangekondigd: dat kan via `role="alert"` op de samenvatting, of door de focus na het verzenden naar de samenvatting te verplaatsen.
 
 ## Gerelateerde succescriteria
 
+- [1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1/): de programmatische koppeling tussen een foutmelding en het invoerveld (bijvoorbeeld via `aria-describedby`) valt onder dit succescriterium. Lees hier meer als foutmeldingen visueel wel bij het veld staan, maar in de code niet zijn gekoppeld.
 - [3.3.2 Labels of instructies](https://nldesignsystem.nl/wcag/3.3.2/): duidelijke labels en instructies voorkomen fouten. Lees hier meer als velden onduidelijk zijn gelabeld en bezoekers daardoor fouten maken.
 - [3.3.3 Foutsuggestie](https://nldesignsystem.nl/wcag/3.3.3/): als het systeem weet hoe de fout gecorrigeerd kan worden, biedt het een suggestie aan. Lees hier meer als je naast foutidentificatie ook automatische correctiesuggesties wilt bieden.
 - [1.4.1 Gebruik van kleur](https://nldesignsystem.nl/wcag/1.4.1/): informatie mag niet alleen door kleur worden overgebracht. Relevant als foutmeldingen alleen met een rode rand worden aangegeven.
