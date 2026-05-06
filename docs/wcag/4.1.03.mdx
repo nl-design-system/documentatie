@@ -42,15 +42,15 @@ import Summary from "./summaries/\_4.1.3-summary.md";
 
 <Summary />
 
-Dat werkt alleen als het bericht in de code is gemarkeerd als live region. Een live region is een HTML-element met `role="status"`, `role="alert"` of `aria-live` dat de screenreader in de gaten houdt. Zodra de tekst in dat element verandert, leest de screenreader het voor. Zonder die markering verschijnt het bericht wel op het scherm, maar merkt een screenreader er niets van.
-
 Er zijn twee urgentieniveaus. `role="status"` (of `aria-live="polite"`) wacht tot de screenreader klaar is met de huidige spraak. `role="alert"` (of `aria-live="assertive"`) onderbreekt de huidige spraak en leest het bericht direct voor.
+
+Plaats de live region als lege container al in de HTML bij het laden van de pagina, en vul de tekst later in via JavaScript. Een screenreader registreert een live region pas als die in de DOM staat. Verschijnt het element en de tekst tegelijk, dan mist de screenreader het bericht.
 
 ## Veelgemaakte fouten
 
 ### Bevestigingsmelding na het verzenden van een formulier wordt niet voorgelezen
 
-Een bezoeker verstuurt een formulier en er verschijnt een bevestiging op de pagina. De pagina wordt niet herladen — de melding verschijnt dynamisch. Een screenreader leest de bevestiging automatisch voor zodat de bezoeker weet dat het verzenden is gelukt. Zonder `role="status"` op het element negeert de screenreader het bericht.
+Een bezoeker verstuurt een formulier en er verschijnt een bevestiging op de pagina. De pagina wordt niet herladen — de melding verschijnt dynamisch. Zonder `role="status"` op het element negeert de screenreader het bericht.
 
 **Hoe te testen:** verstuur een formulier en luister met een screenreader. Wordt de bevestiging voorgelezen zonder dat je er zelf naartoe gaat?
 
@@ -60,19 +60,72 @@ Een bezoeker verstuurt een formulier en er verschijnt een bevestiging op de pagi
   ```
 </Guideline>
 
-<Guideline appearance="do" title="Bevestigingsmelding met role=status">
+<Guideline appearance="do" title="Lege container met role=status staat al in de HTML, tekst wordt later ingevuld">
+    ```html
+    <p class="bevestiging" role="status"></p>
+    ```
+    ```javascript
+    function bevestigVerzending() {
+      document.querySelector(".bevestiging").textContent =
+        "Je bericht is verstuurd";
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst een lege container met `role="status"` in het HTML-template en vult die na verzending met de bevestigingstekst.
+
+### Foutmelding na het verzenden van een formulier wordt niet voorgelezen
+
+Een bezoeker verstuurt een formulier en de server geeft fouten terug — verplichte velden ontbreken of een datum klopt niet. Bovenaan de pagina verschijnt een samenvatting van de fouten. De pagina wordt niet herladen en de focus blijft op de verzendknop staan. Zonder ARIA-markering of focusverplaatsing leest een screenreader niets voor: de bezoeker denkt dat het verzenden is gelukt.
+
+**Hoe te testen:** verstuur een formulier met fouten en luister met een screenreader. Wordt de foutmelding voorgelezen of krijgt deze direct de focus?
+
+<Guideline appearance="dont" title="Foutmelding zonder ARIA-markering of focusverplaatsing">
   ```html
-  <p class="bevestiging" role="status">
-    Je bericht is verstuurd
-  </p>
+  <div class="foutmelding">Er zijn 2 fouten gevonden. Controleer de gemarkeerde velden.</div>
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt `role="status"` toe aan het element dat de bevestiging bevat.
+<Guideline appearance="do" title="Foutmelding krijgt focus zodat de screenreader hem voorleest">
+    ```html
+    <div id="foutmelding" tabindex="-1" hidden>
+      <h2>Er zijn 2 fouten gevonden. Controleer de gemarkeerde velden.</h2>
+      <ul>
+        <li><a href="#email">Vul een e-mailadres in</a></li>
+        <li><a href="#datum">Kies een datum in de toekomst</a></li>
+      </ul>
+    </div>
+    ```
+    ```javascript
+    function toonFoutmelding() {
+      const foutmelding = document.getElementById("foutmelding");
+      foutmelding.hidden = false;
+      foutmelding.focus();
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Lege live region met role=alert staat al in de HTML, foutmelding wordt erin geplaatst">
+    ```html
+    <div id="foutmelding" role="alert"></div>
+    ```
+    ```javascript
+    function toonFoutmelding() {
+      document.getElementById("foutmelding").innerHTML =
+        "<h2>Er zijn 2 fouten gevonden. Controleer de gemarkeerde velden.</h2>" +
+        '<ul><li><a href="#email">Vul een e-mailadres in</a></li>' +
+        '<li><a href="#datum">Kies een datum in de toekomst</a></li></ul>';
+    }
+    ```
+</Guideline>
+
+Er zijn twee gangbare oplossingen. De eerste verplaatst de focus naar de foutmelding zodat de screenreader hem direct voorleest — de bezoeker komt ook visueel bij het bericht uit. De tweede maakt de container een live region met `role="alert"`; de focus blijft staan, maar de melding wordt voorgelezen. Kies één van beide; gebruik ze niet tegelijk, anders leest de screenreader het bericht dubbel.
+
+**Wie kan dit oplossen:** een developer maakt de foutsamenvatting focusable met `tabindex="-1"` en verplaatst de focus na verzenden, óf plaatst een lege container met `role="alert"` in het HTML-template en vult die met de foutmelding.
 
 ### Urgente waarschuwing wordt niet direct voorgelezen
 
-Een sessie verloopt over twee minuten. Een betaling is mislukt. Een formulier bevat fouten. Dit zijn meldingen die de bezoeker direct moet horen, ook als de screenreader op dat moment iets anders voorleest. `role="alert"` onderbreekt de huidige spraak. Zonder die markering mist de bezoeker de waarschuwing.
+Een sessie verloopt over twee minuten. Een betaling is mislukt. Het netwerk valt weg. Dit zijn meldingen die de bezoeker direct moet horen, ook als de screenreader op dat moment iets anders voorleest. `role="alert"` onderbreekt de huidige spraak. Zonder die markering mist de bezoeker de waarschuwing.
 
 **Hoe te testen:** veroorzaak een urgente melding. Onderbreekt de screenreader de huidige spraak om het bericht voor te lezen?
 
@@ -82,15 +135,19 @@ Een sessie verloopt over twee minuten. Een betaling is mislukt. Een formulier be
   ```
 </Guideline>
 
-<Guideline appearance="do" title="Urgente melding met role=alert">
-  ```html
-  <p class="waarschuwing" role="alert">
-    Je sessie verloopt over 2 minuten
-  </p>
-  ```
+<Guideline appearance="do" title="Lege container met role=alert staat al in de HTML, tekst wordt later ingevuld">
+    ```html
+    <p class="waarschuwing" role="alert"></p>
+    ```
+    ```javascript
+    function waarschuwSessie() {
+      document.querySelector(".waarschuwing").textContent =
+        "Je sessie verloopt over 2 minuten";
+    }
+    ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt `role="alert"` toe aan urgente meldingen.
+**Wie kan dit oplossen:** een developer plaatst een lege container met `role="alert"` in het HTML-template en vult die met de tekst zodra de waarschuwing relevant wordt.
 
 ### QR-code verloopt zonder melding
 
@@ -321,14 +378,21 @@ Een bezoeker uploadt een bestand en een voortgangsbalk vult zich. Visueel is dui
 </Guideline>
 
 <Guideline appearance="do" title="Voortgangsbalk met een progressbar-rol en een statusbericht">
-  ```html
-  <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Bestand uploaden">
-    <div class="balk" style="width: 60%"></div>
-  </div>
-  <p role="status" aria-live="polite">
-    60% geüpload
-  </p>
-  ```
+    ```html
+    <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Bestand uploaden">
+      <div class="balk" style="width: 0%"></div>
+    </div>
+    <p id="upload-status" role="status" aria-live="polite"></p>
+    ```
+    ```javascript
+    function updateVoortgang(percent) {
+      const progressbar = document.querySelector('[role="progressbar"]');
+      progressbar.setAttribute("aria-valuenow", percent);
+      document.querySelector(".balk").style.width = percent + "%";
+      document.getElementById("upload-status").textContent =
+        percent + "% geüpload";
+    }
+    ```
 </Guideline>
 
 **Wie kan dit oplossen:** een developer voegt `role="progressbar"` toe met de juiste ARIA-attributen en een live region die de voortgang in tekst meldt.
@@ -396,26 +460,27 @@ Een bezoeker voltooit een CAPTCHA. Visueel verschijnt een groen vinkje of de tek
   ```
 </Guideline>
 
-<Guideline appearance="do" title="CAPTCHA-resultaat als statusbericht">
-  ```html
-  <div class="captcha-resultaat" role="status">
-    <span class="vinkje" aria-hidden="true">
-      &#10003;
-    </span>{" "}
-    Verificatie geslaagd
-  </div>
-  ```
+<Guideline appearance="do" title="Lege live regions voor geslaagde en mislukte verificatie staan al in de HTML">
+    ```html
+    <div class="captcha-status" role="status"></div>
+    <div class="captcha-fout" role="alert"></div>
+    ```
+    ```javascript
+    function toonCaptchaResultaat(geslaagd) {
+      if (geslaagd) {
+        document.querySelector(".captcha-status").innerHTML =
+          '<span aria-hidden="true">&#10003;</span> Verificatie geslaagd';
+      } else {
+        document.querySelector(".captcha-fout").textContent =
+          "Verificatie mislukt. Los de nieuwe CAPTCHA op om door te gaan.";
+      }
+    }
+    ```
 </Guideline>
 
-<Guideline appearance="do" title="Mislukte CAPTCHA als urgente melding">
-  ```html
-  <div class="captcha-resultaat" role="alert">
-    Verificatie mislukt. Los de nieuwe CAPTCHA op om door te gaan.
-  </div>
-  ```
-</Guideline>
+Een geslaagde verificatie is een bevestiging — `role="status"` is voldoende. Een mislukte poging vraagt directe actie van de bezoeker; gebruik daarvoor `role="alert"`.
 
-**Wie kan dit oplossen:** een developer voegt `role="status"` toe aan een geslaagde verificatie en `role="alert"` aan een mislukte poging.
+**Wie kan dit oplossen:** een developer plaatst twee lege live regions in het HTML-template — één met `role="status"` voor een geslaagde verificatie en één met `role="alert"` voor een mislukte poging — en vult de juiste container bij het resultaat.
 
 ### Toast-notificatie verdwijnt voordat een screenreader het heeft voorgelezen
 
@@ -435,20 +500,25 @@ Een toast-notificatie verschijnt kort in beeld en verdwijnt na een paar seconden
     ```
 </Guideline>
 
-<Guideline appearance="do" title="Toast met role=status en voldoende tijd">
+<Guideline appearance="do" title="Toast-container met role=status staat al in de HTML, toasts verschijnen erin">
+    ```html
+    <div id="toast-container" role="status" aria-live="polite"></div>
+    ```
     ```javascript
     function toonToast(melding) {
+      const container = document.getElementById("toast-container");
       const toast = document.createElement("div");
       toast.className = "toast";
-      toast.setAttribute("role", "status");
       toast.textContent = melding;
-      document.body.appendChild(toast);
+      container.appendChild(toast);
       setTimeout(() => toast.remove(), 8000);
     }
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt `role="status"` toe en verlengt de zichtbaarheidsduur.
+De toast-container met `role="status"` staat al in de HTML bij het laden van de pagina. Nieuwe toasts worden in de container toegevoegd zodat de screenreader ze opmerkt en voorleest.
+
+**Wie kan dit oplossen:** een developer plaatst een toast-container met `role="status"` in het HTML-template, voegt nieuwe toasts in die container toe en zorgt voor voldoende zichtbaarheidsduur.
 
 ### Live region wordt toegevoegd en gevuld tegelijkertijd
 
@@ -488,17 +558,19 @@ Het element met `role="status"` of `aria-live` staat al in de HTML bij het laden
 ### Voor iedereen
 
 1. Voer acties uit die een melding opleveren: verstuur een formulier, voeg een product toe aan de winkelwagen, zoek, upload een bestand. Verschijnt er een zichtbare bevestiging?
-2. Test met een screenreader. Worden de meldingen automatisch voorgelezen zonder dat je er zelf naartoe gaat?
+2. Verstuur ook een formulier met fouten. Komt er een foutmelding in beeld en is duidelijk welk veld aandacht nodig heeft?
+3. Test met een screenreader. Worden de meldingen automatisch voorgelezen zonder dat je er zelf naartoe gaat? Bij foutmeldingen mag de focus ook naar de melding verspringen.
 
 ### Voor developers
 
 1. Zoek in de HTML naar elementen die dynamisch verschijnen na een gebruikersactie. Controleer of ze een `role="status"`, `role="alert"` of `aria-live`-attribuut hebben.
 2. Controleer of live regions al in de HTML staan bij het laden van de pagina en niet tegelijk met de tekst worden toegevoegd.
 3. Controleer het urgentieniveau: `role="status"` voor niet-urgente berichten (bevestigingen, zoekresultaten, voortgang), `role="alert"` voor urgente meldingen (fouten, verlopen sessies, mislukte acties).
-4. Test toast-notificaties met een screenreader. Worden ze voorgelezen voordat ze verdwijnen?
-5. Controleer voortgangsindicatoren. Hebben ze `role="progressbar"` met de juiste ARIA-attributen?
-6. Controleer tekentellers en andere elementen die frequent worden bijgewerkt. Wordt de live region niet te vaak geactiveerd?
-7. Gebruik <span lang="en">axe DevTools</span> voor een eerste scan. De meeste statusberichtproblemen zijn niet automatisch te herkennen en vereisen handmatig testen met een screenreader.
+4. Controleer foutmeldingen na een formulierverzending. Krijgt de samenvatting de focus, of is het een live region met `role="alert"`? Eén van beide volstaat — beide tegelijk niet.
+5. Test toast-notificaties met een screenreader. Worden ze voorgelezen voordat ze verdwijnen?
+6. Controleer voortgangsindicatoren. Hebben ze `role="progressbar"` met de juiste ARIA-attributen?
+7. Controleer tekentellers en andere elementen die frequent worden bijgewerkt. Wordt de live region niet te vaak geactiveerd?
+8. Gebruik <span lang="en">axe DevTools</span> voor een eerste scan. De meeste statusberichtproblemen zijn niet automatisch te herkennen en vereisen handmatig testen met een screenreader.
 
 ## Gerelateerde succescriteria
 
