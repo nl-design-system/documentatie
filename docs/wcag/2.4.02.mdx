@@ -45,7 +45,7 @@ import Summary from "./summaries/_2.4.2-summary.md";
 
 <Summary />
 
-Een screenreader leest de paginatitel voor zodra iemand een pagina opent. Dat is het eerste oriëntatiepunt: zonder een beschrijvende titel moet iemand eerst door de hele pagina bladeren om te begrijpen waar die is.
+Een screenreader leest de paginatitel voor zodra iemand een pagina opent. Dat is het eerste oriëntatiepunt: zonder een beschrijvende titel moet iemand eerst door de hele pagina bladeren om te begrijpen waar de pagina over gaat.
 
 Een goede paginatitel begint met de meest specifieke informatie: eerst de paginanaam, dan de sitenaam. Bij formulieren met meerdere stappen vermeldt de titel in welke stap je zit. Bij zoekresultaten bevat de titel de zoekterm.
 
@@ -53,7 +53,7 @@ Een goede paginatitel begint met de meest specifieke informatie: eerst de pagina
 
 ### Paginatitel ontbreekt of is leeg
 
-Elke pagina moet een `<title>`-element in de `<head>` van de HTML hebben. Ontbreekt het element of is het leeg, dan toont de browser de URL in het tabblad. Een screenreader leest dan iets voor als "https://example.com/pagina-3b.html" — dat zegt niets over de inhoud.
+Elke pagina moet een `<title>`-element in de `<head>` van de HTML hebben. Ontbreekt het element of is het leeg, dan toont de browser de URL in het tabblad. Een screenreader leest dan de URL voor — dat zegt niets over de inhoud.
 
 **Hoe te testen:** bekijk het tabblad van je browser. Staat daar een beschrijvende titel of een URL? In de DevTools controleer je of het `<title>`-element aanwezig is en tekst bevat.
 
@@ -110,7 +110,7 @@ Elke pagina op een website heeft een unieke titel zodat bezoekers pagina's van e
 
 </Guideline>
 
-**Wie kan dit oplossen:** een developer zorgt dat het CMS of de applicatie een unieke titel genereert per pagina.
+**Wie kan dit oplossen:** een developer zorgt dat het CMS of de applicatie voor iedere pagina een unieke titel genereert.
 
 ### Titel beschrijft de inhoud niet
 
@@ -118,7 +118,7 @@ Een titel als "Pagina 1" of "Welkom" zegt niets over het doel van de pagina. Een
 
 **Hoe te testen:** lees de titel in het tabblad. Weet je zonder de pagina te zien waar deze over gaat?
 
-<Guideline appearance="dont" title="Nietszeggend paginatitel">
+<Guideline appearance="dont" title="Nietszeggende paginatitel">
   ```html
   <title>Pagina 1</title>
   <title>Welkom</title>
@@ -133,28 +133,6 @@ Een titel als "Pagina 1" of "Welkom" zegt niets over het doel van de pagina. Een
 </Guideline>
 
 **Wie kan dit oplossen:** een contentbeheerder vult een beschrijvende paginatitel in via het CMS. Een developer zorgt dat het CMS dit afdwingt.
-
-### Sitenaam staat vóór de paginanaam
-
-In een tabblad is vaak alleen het begin van de titel zichtbaar. Als de sitenaam vooraan staat, begint elke titel met dezelfde tekst. Bij meerdere tabbladen van dezelfde website is dan niet te zien welke pagina waar staat.
-
-**Hoe te testen:** open meerdere pagina's van dezelfde website. Zijn de tabbladen van elkaar te onderscheiden als de titels worden afgekapt?
-
-<Guideline appearance="dont" title="Sitenaam vóór de paginanaam">
-  ```html
-  <title>Gemeente Utrecht - Paspoort aanvragen</title>
-  <title>Gemeente Utrecht - Rijbewijs verlengen</title>
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="Paginanaam vóór de sitenaam">
-  ```html
-  <title>Paspoort aanvragen - Gemeente Utrecht</title>
-  <title>Rijbewijs verlengen - Gemeente Utrecht</title>
-  ```
-</Guideline>
-
-**Wie kan dit oplossen:** een developer past het template aan zodat de paginanaam vóór de sitenaam staat.
 
 ### Titel wordt niet bijgewerkt in een single-page applicatie
 
@@ -181,7 +159,29 @@ In een <span lang="en">single-page</span> applicatie (SPA) verandert de content 
 
 **Wie kan dit oplossen:** een developer voegt titellogica toe aan de router of aan elke paginacomponent.
 
-### Foutmelding of zoekresultaat ontbreekt in de titel
+## Best practice
+
+### Vermeld de stap in een meerstappenformulier
+
+Bij een formulier met meerdere stappen vermeldt de titel in welke stap de bezoeker zich bevindt. Zonder die informatie weet iemand die de pagina later opnieuw opent, of iemand met een screenreader, niet hoe ver het formulier is gevorderd.
+
+**Hoe te testen:** doorloop een meerstappenformulier. Verandert de titel bij elke stap? Staat de stap en het totaal aantal stappen in de titel?
+
+<Guideline appearance="dont" title="Geen stapinformatie in de titel">
+  ```html
+  <title>Verhuizing doorgeven - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Stap opgenomen in de titel">
+  ```html
+  <title>Stap 2 van 4: Nieuw adres - Verhuizing doorgeven - Gemeente Utrecht</title>
+  ```
+</Guideline>
+
+**Wie kan dit toepassen:** een developer voegt de stapinformatie toe aan de titellogica van het formulier.
+
+### Toon foutmeldingen en zoekresultaten in de titel
 
 Bij een formulier dat met fouten is verstuurd, bevat de titel een indicatie van de fouten. Bij zoekresultaten bevat de titel de zoekterm en het aantal resultaten. Zo hoort een screenreadergebruiker direct dat er iets is veranderd zonder eerst door de pagina te hoeven bladeren.
 
@@ -211,27 +211,29 @@ Bij een formulier dat met fouten is verstuurd, bevat de titel een indicatie van 
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer werkt de titel bij na formuliervalidatie en bij zoekresultaten.
+**Wie kan dit toepassen:** een developer werkt de titel bij na formuliervalidatie en bij zoekresultaten.
 
-### Stap ontbreekt in de titel van een meerstappenformulier
+### Plaats de paginanaam vóór de sitenaam
 
-Bij een formulier met meerdere stappen vermeldt de titel in welke stap de bezoeker zich bevindt. Zonder die informatie weet iemand die de pagina later opnieuw opent, of iemand met een screenreader, niet hoe ver het formulier is gevorderd.
+In een tabblad is alleen het begin van de titel zichtbaar zodra meerdere tabbladen openstaan. Als de sitenaam vooraan staat, begint elke titel met dezelfde tekst en is niet te zien welke pagina waar staat.
 
-**Hoe te testen:** doorloop een meerstappenformulier. Verandert de titel bij elke stap? Staat de stap en het totaal aantal stappen in de titel?
+**Hoe te testen:** open meerdere pagina's van dezelfde website. Zijn de tabbladen van elkaar te onderscheiden als de titels worden afgekapt?
 
-<Guideline appearance="dont" title="Geen stapinformatie in de titel">
+<Guideline appearance="dont" title="Sitenaam vóór de paginanaam">
   ```html
-  <title>Verhuizing doorgeven - Gemeente Utrecht</title>
+  <title>Gemeente Utrecht - Paspoort aanvragen</title>
+  <title>Gemeente Utrecht - Rijbewijs verlengen</title>
   ```
 </Guideline>
 
-<Guideline appearance="do" title="Stap opgenomen in de titel">
+<Guideline appearance="do" title="Paginanaam vóór de sitenaam">
   ```html
-  <title>Stap 2 van 4: Nieuw adres - Verhuizing doorgeven - Gemeente Utrecht</title>
+  <title>Paspoort aanvragen - Gemeente Utrecht</title>
+  <title>Rijbewijs verlengen - Gemeente Utrecht</title>
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt de stapinformatie toe aan de titellogica van het formulier.
+**Wie kan dit toepassen:** een developer past het template aan zodat de paginanaam vóór de sitenaam staat.
 
 ## Hoe te testen
 
