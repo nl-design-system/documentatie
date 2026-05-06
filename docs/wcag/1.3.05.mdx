@@ -43,7 +43,7 @@ import Summary from "./summaries/_1.3.5-summary.md";
 
 <Summary />
 
-Automatisch invullen werkt alleen als het invoerveld een `autocomplete`-attribuut heeft met de juiste waarde. Zonder dat attribuut herkent de browser het veld niet en kan het niet automatisch worden ingevuld. Het `autocomplete`-attribuut maakt het ook mogelijk om iconen of labels bij velden te tonen die de bezoeker helpen begrijpen wat er wordt verwacht — onafhankelijk van de taal van de pagina.
+Op basis van het `type`-attribuut kan een browser soms al raden welk soort gegevens een veld vraagt — bijvoorbeeld bij `type="email"` of `type="tel"`. Voor het accuraat invullen van specifieke persoonlijke gegevens, zoals voornaam, huisnummer of postcode, is een `autocomplete`-attribuut met de juiste waarde nodig. Pas dan weet de browser welke opgeslagen gegevens in welk veld horen. Het `autocomplete`-attribuut maakt het ook mogelijk om iconen of labels bij velden te tonen die de bezoeker helpen begrijpen wat er wordt verwacht — onafhankelijk van de taal van de pagina.
 
 Dit succescriterium geldt voor invoervelden die persoonlijke gegevens van de bezoeker verzamelen. Bekijk de volledige [lijst van geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
 
@@ -116,14 +116,27 @@ Een veld heeft een `autocomplete`-attribuut, maar met een verkeerde waarde. Een 
 
 ### Autocomplete is uitgeschakeld op velden voor persoonlijke gegevens
 
-Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vragen. De browser mag de velden niet automatisch invullen. De bezoeker moet alles handmatig typen. Developers doen dit vaak om beveiligingsredenen, maar voor de meeste velden is het niet nodig en het maakt het formulier onnodig moeilijk te gebruiken.
+Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vragen, of op het `<form>`-element zelf. Een waarde op het `<form>`-element geldt voor alle velden in dat formulier. De browser mag de velden dan niet automatisch invullen. De bezoeker moet alles handmatig typen. Developers doen dit vaak om beveiligingsredenen, maar voor de meeste velden is het niet nodig en het maakt het formulier onnodig moeilijk te gebruiken.
 
-**Hoe te testen:** inspecteer de velden in de <span lang="en">DevTools</span>. Staat er `autocomplete="off"` op velden voor naam, adres, e-mail of telefoonnummer?
+**Hoe te testen:** inspecteer de velden én het omhullende `<form>`-element in de <span lang="en">DevTools</span>. Staat er `autocomplete="off"` op velden voor naam, adres, e-mail of telefoonnummer of op het hele formulier?
 
 <Guideline appearance="dont" title="Autocomplete uitgeschakeld op een naamveld">
   ```html
   <label for="naam">Volledige naam</label>
   <input type="text" id="naam" autocomplete="off" />
+  ```
+</Guideline>
+
+<Guideline appearance="dont" title="Autocomplete uitgeschakeld op het hele formulier">
+  ```html
+  <form autocomplete="off">
+    <label for="naam">Volledige naam</label>
+    <input type="text" id="naam" />
+
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" />
+
+  </form>
   ```
 </Guideline>
 
@@ -136,7 +149,7 @@ Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vra
 
 Bij wachtwoordvelden voor een nieuw wachtwoord gebruik je `autocomplete="new-password"`. Dat signaleert aan de browser en wachtwoordmanagers dat het om een nieuw wachtwoord gaat, niet om een bestaand wachtwoord dat moet worden ingevuld.
 
-**Wie kan dit oplossen:** een developer vervangt `autocomplete="off"` door de juiste `autocomplete`-waarde.
+**Wie kan dit oplossen:** een developer verwijdert `autocomplete="off"` van het `<form>`-element en vervangt `autocomplete="off"` op de individuele velden door de juiste `autocomplete`-waarde.
 
 ### Betaalvelden missen autocomplete
 
@@ -206,9 +219,11 @@ Bij een registratieformulier gebruik je `autocomplete="new-password"` voor het w
 
 **Wie kan dit oplossen:** een developer voegt `autocomplete="username"` en `autocomplete="current-password"` toe aan het inlogformulier en `autocomplete="new-password"` aan het registratieformulier.
 
-### Advies: Afwijkend afleveradres en factuuradres delen dezelfde autocomplete-waarden
+## Best practice
 
-Een bestelformulier heeft een afleveradres en een factuuradres. Beide secties gebruiken dezelfde `autocomplete`-waarden. De browser vult dan hetzelfde adres in bij beide secties.
+### Onderscheid afleveradres en factuuradres met shipping en billing
+
+Een bestelformulier heeft een afleveradres en een factuuradres. Met de prefixen <span lang="en">`shipping`</span> en <span lang="en">`billing`</span> in de `autocomplete`-waarden weet de browser welk adres bij welke sectie hoort. Zonder deze prefixen kan de browser hetzelfde adres in beide secties invullen.
 
 **Hoe te testen:** vul een bestelformulier in met een afwijkend aflever- en factuuradres. Biedt de browser de juiste adressen aan bij de juiste secties?
 
@@ -238,9 +253,7 @@ Een bestelformulier heeft een afleveradres en een factuuradres. Beide secties ge
 
 </Guideline>
 
-De prefixen <span lang="en">`shipping`</span> en <span lang="en">`billing`</span> vertellen de browser welk adres bij welke sectie hoort.
-
-**Wie kan dit oplossen:** een developer voegt de juiste prefix toe aan de `autocomplete`-waarden van de adresvelden.
+**Wie kan dit toepassen:** een developer voegt de juiste prefix toe aan de `autocomplete`-waarden van de adresvelden.
 
 ## Hoe te testen
 
@@ -256,7 +269,7 @@ De prefixen <span lang="en">`shipping`</span> en <span lang="en">`billing`</span
 1. Inspecteer elk invoerveld dat persoonlijke gegevens verzamelt in de <span lang="en">DevTools</span>. Heeft het veld een `autocomplete`-attribuut met een geldige waarde?
 2. Controleer of de `autocomplete`-waarde overeenkomt met wat het veld vraagt. Vergelijk met de [lijst met geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
 3. Zoek in de broncode naar `autocomplete="off"` op velden voor persoonlijke gegevens. Vervang die door de juiste waarde.
-4. Advies: Controleer bestelformulieren met meerdere adressecties. Hebben de secties de juiste `shipping` of `billing` prefix?
+4. Controleer bestelformulieren met meerdere adressecties. Hebben de secties de juiste `shipping` of `billing` prefix?
 5. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> voor een eerste scan. Ontbrekende `autocomplete`-attributen op veelvoorkomende veldtypen worden automatisch gedetecteerd.
 
 ## Veelgebruikte autocomplete-waarden
