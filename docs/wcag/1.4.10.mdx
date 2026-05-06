@@ -452,7 +452,7 @@ Een tabel valt onder de uitzondering en mag horizontaal scrollen. Maar een zoekb
 
 1. Open de DevTools en schakel de responsive modus in. Stel de breedte in op 320 pixels. Controleer of de layout zich aanpast.
 2. Zoek in de CSS naar vaste breedtes in pixels (`width: ...px`) zonder bijbehorende `max-width` of flexibele alternatieven.
-3. Zoek naar `overflow: hidden` op containers. Controleer of content niet wordt afgesneden bij inzoomen.
+3. Zoek naar containers met een vaste afmeting in combinatie met `overflow: hidden`. Controleer de volgende CSS properties: `height`, `width`, `block-size`, `inline-size`, en vervang ze waar mogelijk door de `min-` variant.
 4. Controleer de viewport meta-tag. Verwijder `maximum-scale`, `minimum-scale` en `user-scalable=no`.
 5. Controleer of navigatiemenu's een mobiele variant hebben die ook bij 400% zoom werkt.
 6. Test de layout met `flex-wrap: wrap` of CSS Grid met `auto-fit`/`auto-fill` zodat kolommen vanzelf onder elkaar springen.
