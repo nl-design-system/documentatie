@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 import {
   COMPONENT_STATES,
   getAllFrameworkNames,
-  getComponentFrameworkNames,
+  getComponentFrameworkNamesForFilteredStatus,
   hasFramework,
   normalizeName,
   type Component,
@@ -165,7 +165,7 @@ export const ComponentOverview = () => {
           });
 
           const relayStep = component && COMPONENT_STATES[component.relayStep];
-          const frameworkNames = getComponentFrameworkNames(component);
+          const frameworkNames = getComponentFrameworkNamesForFilteredStatus(component, showStatuses);
 
           return (
             <ComponentCard

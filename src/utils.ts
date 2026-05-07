@@ -134,6 +134,57 @@ export const getProjectFrameworkNames = (project: ComponentProject): string[] =>
 export const getComponentFrameworkNames = (component: Component): string[] =>
   sortFrameworkNames(removeDuplicates(component.projects.flatMap((project) => getProjectFrameworkNames(project))));
 
+export const getComponentFrameworkNamesForFilteredStatus = (component: Component, relayFilters: string[]): string[] => {
+  // No extra logic needed if no filters are selected
+  if (relayFilters.length < 1) return getComponentFrameworkNames(component);
+
+  // Only get the framework names for the projects that match the selected relay filters,
+  // so that for example if Candidate is selected, which only has CSS, HTML and React implementations,
+  // it doesn't show the Angular framework which comes from one of the community implementations.
+  const frameworkNames = component.projects.flatMap((project) => {
+    // 1a. Determine the project's relay step (HELP_WANTED, COMMUNITY, CANDIDATE, HALL_OF_FAME) based on its id
+    // Usually relayStep is one of RELAY_STEP,
+    // in case of community projects, the id is something like DEN_HAAG.
+    const projectRelayStep = project.id as RELAY_STEP;
+    // 1b. Determine if this project is a community project by checking if the projectRelayStep is
+    // not in the known relayProjectIds (HELP_WANTED, COMMUNITY, CANDIDATE, HALL_OF_FAME)
+    const isCommunityProject = !relayProjectIds.includes(projectRelayStep);
+
+    // 2a. Determine if this relay step is included in the relayFilters
+    // Which we only depend on for non-community projects, since community projects have ids like DEN_HAAG
+    const isInRelayFilters = relayFilters.includes(projectRelayStep);
+    // 2b. Determine if the HELP_WANTED or COMMUNITY relay step is included in the relayFilters,
+    // because if it is, then we want to include all community projects.
+    // We include for HELP_WANTED, because HELP_WANTED might already have community implementations.
+    const communityProjectsAreAllowed = relayFilters.includes('HELP_WANTED') || relayFilters.includes('COMMUNITY');
+
+    // Project CANDIDATE exists and is done.
+    const isCompletedCandidate = project.id === 'CANDIDATE' && project.done;
+    // Project HALL_OF_FAME exists and is done.
+    const isCompletedHallOfFame = project.id === 'HALL_OF_FAME' && project.done;
+
+    // In case of HELP_WANTED or COMMUNITY
+    if (communityProjectsAreAllowed && isCommunityProject) {
+      return getProjectFrameworkNames(project);
+    }
+    // In case of any other relay step, only include the framework names if this project's relay step is included in the relayFilters
+    // For example: when filtering CANDIDATE or HALL_OF_FAME, DEN_HAAG would end up here.
+    else if (!isInRelayFilters) {
+      return [];
+    }
+    // In case of CANDIDATE, we can't get the frameworks from the projectboard,
+    // but we know we support (and require at least implementations of) CSS, HTML and React, so we can just return those.
+    // In case of HALL_OF_FAME, we don't have those components yet,
+    // but those too would be expected to support (and have a CANDIDATE implementation of) CSS, HTML and React, so we can just return those as well.
+    else if (isCompletedCandidate || isCompletedHallOfFame) {
+      return ['CSS', 'HTML', 'React'];
+    }
+    // Anything else, just get the framework names for this project without extra logic
+    return getProjectFrameworkNames(project);
+  });
+  return sortFrameworkNames(removeDuplicates(frameworkNames));
+};
+
 export const getComponentAlias = (project: ComponentProject): string => {
   const task = project.tasks.find(({ name }) => name === 'Naam');
   return task?.value || '';
