@@ -51,38 +51,9 @@ import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/_component_gebruiken_intro.md";
 import SkipLinkIllustration from "@nl-design-system-candidate/skip-link-docs/docs/anatomy/anatomy.svg";
-import Wcag1412NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-1.4.12-nlds.md";
-import Wcag1412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12.md";
-import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.3.md";
-import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md";
-import Wcag144NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-1.4.4-nlds.md";
-import Wcag211 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.1.1-link.md";
-import Wcag211NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.1.1-nlds.md";
-import Wcag2413CC from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.13-contrast.md";
-import Wcag2413SL from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.13-skip-link.md";
-import Wcag2413NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.4.13-nlds.md";
-import Wcag243 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.3-skip-link.md";
-import Wcag244 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.4-skip-link.md";
-import Wcag247NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.4.7-nlds.md";
-import Wcag247 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.7-skip-link.md";
-import Wcag252NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.5.2-nlds.md";
-import Wcag252 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.2.md";
-import Wcag253 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.3-link.md";
-import Wcag255NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.5.5-nlds.md";
-import Wcag255 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.5-skip-link.md";
-import Wcag312 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md";
-import Wcag323 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.2.3-skip-link.md";
-import Wcag324 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.2.4-link.md";
-import Wcag412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-4.1.2-link.md";
-import Wcag412NLDS from "@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-4.1.2-nlds.md";
-import Wcag1410 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.10-summary.md";
-import Wcag145 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.5-summary.md";
-import Wcag212 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.1.2-summary.md";
-import Wcag241 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.1-summary.md";
-import Wcag2411 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.11-summary.md";
-import Wcag321 from "@nl-design-system-unstable/documentation/wcag/summaries/_3.2.1-summary.md";
+import * as Acceptatiecriteria from "./_acceptatiecriteria.tsx";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, Link } from "@utrecht/component-library-react/dist/css-module";
+import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
@@ -91,12 +62,12 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";
 import tokens from "@nl-design-system-candidate/skip-link-tokens";
-import { Checklist } from "@site/src/components/Checklist";
 
 {/* Add name and description for the component */}
 export const title = "Skip Link";
@@ -111,24 +82,24 @@ Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkel
 
 <ComponentAliases component={component} />
 
-<Card className="implementation-card">
+<Card className="ma-implementation-card">
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
-      <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2217-10122"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
-      <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2217-10122"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
+      <LinkListLink href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=3462-12790"><BrandIcon brand='figma' />Figma - Start bibliotheek</LinkListLink>
+      <LinkListLink href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=3462-12790"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">Storybook</Heading>
     <LinkList>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-skip-link--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/skip-link--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/css-skip-link--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</LinkListLink>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/skip-link--documentatie"><BrandIcon brand='storybook' />Storybook - React</LinkListLink>
     </LinkList>
     <Heading level={2} appearance="level-4">npm</Heading>
     <LinkList>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/skip-link-css</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/skip-link-react</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/skip-link-tokens</Link>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/skip-link-css</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/skip-link-react</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/skip-link-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/skip-link-tokens</LinkListLink>
     </LinkList>
 
   </CardContent>
@@ -142,173 +113,25 @@ Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkel
 
 <AcImplementatie />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "De tekstkleur van de Skip Link heeft voldoende contrast met de achtergrondkleur.",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-      tags: ["designer"],
-    },
-    {
-      title: "Het label van de Skip Link bestaat uit tekst, niet uit een afbeelding van tekst.",
-      sc: "1.4.5",
-      status: "",
-      component: <Wcag145 />,
-      tags: ["developer", "contentmaker"],
-    },
-    {
-      title: "De Skip Link slaat 1 of meerdere herhalende contentblokken over.",
-      sc: "2.4.1",
-      status: "",
-      component: <Wcag241 />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "De Skip Link staat vooraan in de focusvolgorde van een pagina en verwijst naar de eerste niet-herhalende content op de pagina.",
-      sc: "2.4.3",
-      status: "",
-      component: <Wcag243 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De linktekst van de Skip Link beschrijft duidelijk het linkdoel.",
-      sc: "2.4.4",
-      status: "",
-      component: <Wcag244 />,
-      tags: ["developer", "contentmaker"],
-    },
-    {
-      title: "De Skip Link wordt niet bedekt door een ander element op de pagina.",
-      sc: "2.4.11",
-      status: "",
-      component: <Wcag2411 />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "Als de tekst van de Skip Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.",
-      sc: "3.1.2",
-      status: "",
-      component: <Wcag312 />,
-      tags: ["developer", "contentmaker"],
-    },
-    {
-      title:
-        "Skip Links die op meerdere pagina's voorkomen staan op iedere pagina vooraan in de focusvolgorde van een pagina.",
-      sc: "3.2.3",
-      status: "",
-      component: <Wcag323 />,
-      tags: ["developer", "designer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  {Acceptatiecriteria.usage.map(({ component: Wcag, ...item }) => (
+    <ChecklistItem {...item}>
+      <Wcag />
+    </ChecklistItem>
+  ))}
+</Checklist>
 
 ### Acceptatiecriteria van de component
 
 <AcComponent />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "Als je de hele webpagina inzoomt tot 400% veroorzaakt de Skip Link geen horizontale scrollbalk en blijft alle tekst op de pagina leesbaar.",
-      sc: "1.4.10",
-      status: "",
-      component: <Wcag1410 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De tekst in de Skip Link blijft zichtbaar als je de tekstafstand vergoot.",
-      sc: "1.4.12",
-      status: "",
-      component: <Wcag1412NLDS />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "Je kunt de Skip Link focussen met de tabtoets en activeren met de entertoets.",
-      sc: "2.1.1",
-      status: "",
-      component: <Wcag211NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title:
-        "Als een gebruiker de Skip Link focust met het toetsenbord, dan moet deze ook weer weg kunnen gaan met het toetsenbord.",
-      sc: "2.1.2",
-      status: "",
-      component: <Wcag212 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De Skip Link heeft een zichtbare focusindicator.",
-      sc: "2.4.7",
-      status: "",
-      component: <Wcag247NLDS />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De Skip Link heeft een zichtbare focusindicator met een dikte van minimaal 2 pixels.",
-      sc: "2.4.13",
-      status: "",
-      component: <Wcag2413NLDS />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De Skip Link activeren met een enkele aanwijzer kan voorkomen of geannuleerd worden.",
-      sc: "2.5.2",
-      status: "",
-      component: <Wcag252NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title: "De zichtbare naam van de Skip Link komt voor in de toegankelijke naam.",
-      sc: "2.5.3",
-      status: "",
-      component: <Wcag253 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Het aanwijsgebied van de Skip Link is groot genoeg.",
-      sc: "2.5.5",
-      status: "",
-      component: <Wcag255NLDS />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als de Skip Link toetsenbordfocus krijgt vindt er geen contextwijziging plaats.",
-      sc: "3.2.1",
-      status: "",
-      component: <Wcag321 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Skip Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.",
-      sc: "3.2.4",
-      status: "",
-      component: <Wcag324 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title: "De Skip Link heeft een rol van link.",
-      sc: "4.1.2",
-      status: "",
-      component: <Wcag412NLDS />,
-      tags: ["developer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  {Acceptatiecriteria.component.map(({ component: Wcag, ...item }) => (
+    <ChecklistItem {...item}>
+      <Wcag />
+    </ChecklistItem>
+  ))}
+</Checklist>
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
@@ -327,3 +150,5 @@ Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkel
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />

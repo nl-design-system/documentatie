@@ -10,15 +10,19 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="first-name">Voornaam (een of meerdere)</label>
+        <p>
+          <label htmlFor="first-name">Voornaam (een of meerdere)</label>
+        </p>
         <p id="first-name-description">Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.</p>
-        <input
-          autoComplete="given-name"
-          type="text"
-          name="first_name"
-          id="first-name"
-          aria-describedby="first-name-description"
-        />
+        <p>
+          <input
+            autoComplete="given-name"
+            type="text"
+            name="first_name"
+            id="first-name"
+            aria-describedby="first-name-description"
+          />
+        </p>
       </>
     )}
   </Canvas>
@@ -28,8 +32,12 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="first-name2">Voornaam(en)</label>
-        <input autoComplete="given-name" type="text" name="first_name" id="first-name2" />
+        <p>
+          <label htmlFor="first-name2">Voornaam(en)</label>
+        </p>
+        <p>
+          <input autoComplete="given-name" type="text" name="first_name" id="first-name2" />
+        </p>
       </>
     )}
   </Canvas>

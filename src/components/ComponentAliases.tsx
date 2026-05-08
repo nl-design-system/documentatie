@@ -11,7 +11,7 @@ export const ComponentAliases = ({ component }: PropsWithChildren<ComponentAlias
   const { title } = component;
   const slug = toKebabCase(title);
   const Aliases = React.lazy(() =>
-    import(`@nl-design-system-candidate/${slug}-docs/docs/aliases.md`).catch(() => {
+    import(/* @vite-ignore */ `@nl-design-system-candidate/${slug}-docs/docs/aliases.md`).catch(() => {
       return { default: () => null };
     }),
   );

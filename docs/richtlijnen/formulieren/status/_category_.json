@@ -2,7 +2,7 @@
   "label": "Status",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/formulieren/status/README"
+    "id": "richtlijnen/formulieren/status/index"
   },
   "customProps": {
     "showLinkedDoc": true
