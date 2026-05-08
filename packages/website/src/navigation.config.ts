@@ -1,8 +1,7 @@
 import { navigationItem, navigationGroup } from './navigation';
 
 export const navigation = navigationGroup({
-  label: 'Home',
-  index: navigationItem({ label: 'Home', href: '/' }),
+  index: navigationItem({ href: '/', label: 'Home' }),
   items: [
     navigationGroup({
       label: 'Handboek',

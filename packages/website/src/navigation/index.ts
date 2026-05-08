@@ -4,13 +4,14 @@ import { getAllCollections } from '../content.config';
 import type { Dirent } from 'node:fs';
 import { sortItems } from './sort-items';
 export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element';
+export { getMainNavigation } from './get-main-navigation';
 
 /**
  * An item in a navigation tree. The item references an Content Collection ID.
  */
 export interface NavigationItem {
   /** The label of the item to display to the user */
-  label: string;
+  label?: string;
 
   /** The Astro Content Collection ID of the item */
   id?: string;
@@ -35,7 +36,7 @@ export interface NavigationItem {
  */
 export interface NavigationGroup {
   /** The label of the group to display to the user */
-  label: string;
+  label?: string;
 
   /** The items in the group */
   items: (NavigationItem | NavigationGroup | Promise<NavigationItem> | Promise<NavigationGroup>)[];
