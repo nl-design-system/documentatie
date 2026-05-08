@@ -18,11 +18,8 @@ Bijvoorbeeld:
 - De verbinding met de server is verbroken, lokale wijzigingen worden nu niet opgeslagen.
 - Je hebt nog 20 seconden om het formulier te verzenden.
 
-```markup
-<div role="alert">
-  Waarschuwing: Je hebt nog 20 seconden
-  om het formulier te verzenden.
-</div>
+```html
+<div role="alert">Waarschuwing: Je hebt nog 20 seconden om het formulier te verzenden.</div>
 ```
 
 Een element met `role="alert"` is een ‘assertive’ live region, en functioneel gelijk aan het gebruiken van de combinatie [aria-live="assertive"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) en [aria-atomic="true"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).  
@@ -40,11 +37,8 @@ Bijvoorbeeld:
 - Je hebt nu 3 producten in je winkelmandje.
 - Er zijn 5 zoekresultaten gevonden voor 'eikenprocessierups'.
 
-```markup
-<div role="status">
-  Er zijn 5 zoekresultaten gevonden
-  voor 'eikenprocessierups'.
-</div>
+```html
+<div role="status">Er zijn 5 zoekresultaten gevonden voor 'eikenprocessierups'.</div>
 ```
 
 Het instellen van role="status" is gelijk aan het instellen van [aria-live="polite"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live) en [aria-atomic="true"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-atomic).

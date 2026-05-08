@@ -1,5 +1,5 @@
 ---
-title: Tabellen · Tekstopmaak · Content · Richtlijnen
+title: Tabellen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tabellen
@@ -171,7 +171,9 @@ Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je name
       <>
         <table>
           <tr>
-            <td style={{inlineSize:'50%'}}><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png"/></td>
+            <td style={{inlineSize:'50%'}}>
+              <img alt="De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS" src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png" />
+            </td>
             <td>De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS</td>
           </tr>
         </table>

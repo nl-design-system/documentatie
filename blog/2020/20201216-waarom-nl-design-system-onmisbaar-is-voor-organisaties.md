@@ -82,7 +82,7 @@ De komende tijd wordt het NL Design System doorontwikkeld om er een stabiele, vo
 
 ## Meedoen?
 
-Wil je meer weten of graag meedoen? Neem dan contact op met Angela Imhof. Voor meer informatie kun je je ook aanmelden op [ons Slackkanaal](https://praatmee.codefor.nl/).
+Wil je meer weten of graag meedoen? Neem dan contact op met Angela Imhof. Voor meer informatie kun je je ook aanmelden op [onze Slack](/slack).
 
 We nodigen je tevens van harte uit voor een [online bijeenkomst met het kernteam van NL Design System](https://www.gebruikercentraal.nl/agenda/online-bijeenkomst-met-het-kernteam-van-nl-design-system/) op 5 januari (13.00-14.30 uur). Deze sessie is meteen een aftrap voor de ‘heartbeat’ van het project. Want daarna zullen we elke 2 weken een sessie organiseren waarin we geïnteresseerden en betrokkenen meenemen in wat is er gedaan en wat gaan we doen.
 

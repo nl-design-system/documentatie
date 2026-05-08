@@ -1,0 +1,16 @@
+---
+const { title, sc, status } = Astro.props;
+---
+
+<article>
+  <dl>
+    <dt>title:</dt>
+    <dd>{title}</dd>
+    <dt>sc:</dt>
+    <dd>{sc}</dd>
+    <dt>status:</dt>
+    <dd>{status}</dd>
+  </dl>
+
+  <slot />
+</article>

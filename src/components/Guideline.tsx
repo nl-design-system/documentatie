@@ -2,11 +2,12 @@ import { IconMoodHappy, IconMoodSad } from '@tabler/icons-react';
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import Markdown from 'react-markdown';
 import { createContext } from 'react';
 import './Guideline.css';
 interface GuidelineProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
   title?: ReactNode;
-  description?: ReactNode;
+  description?: ReactNode | string;
   appearance: 'do' | 'dont';
   figure?: boolean;
 }
@@ -24,6 +25,8 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
   };
   const ContainerElement = figure ? 'figure' : 'div';
   const CaptionElement = figure ? 'figcaption' : 'div';
+
+  const _description = typeof description === 'string' ? <Markdown>{description}</Markdown> : description;
 
   return (
     <ContainerElement
@@ -48,7 +51,7 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
             <Paragraph>{title}</Paragraph>
           </>
         )}
-        {description}
+        {_description}
       </CaptionElement>
       <div className="nlds-guideline__example">
         <CodeExampleContext.Provider value={{ title: title, type: guidelineLabel[appearance] }}>

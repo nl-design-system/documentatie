@@ -1,5 +1,6 @@
 ---
 title: Audit toegankelijkheid NLDesignSystem.nl versie 2.0
+description: Rapport van de WCAG EM Audit van nldesignsystem.nl in 2024
 hide_title: true
 hide_table_of_contents: false
 pagination_label: Toegankelijkheid

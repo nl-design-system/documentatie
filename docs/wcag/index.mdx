@@ -1,0 +1,78 @@
+---
+title: Introductie WCAG pagina's
+hide_title: true
+hide_table_of_contents: true
+sidebar_position: 1
+navigation_order: 1
+sidebar_label: Introductie WCAG-pagina's
+pagination_label: Introductie WCAG-pagina's
+description: Introductie van informatie over de WCAG-succescriteria.
+slug: /wcag
+keywords:
+  - WCAG
+  - succescriteria
+---
+
+import { Markdown } from "@site/src/components/Markdown";
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import Disclaimer from "./_wcag-disclaimer.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import { successCriteria } from "@site/src/components/wcag22";
+
+# Introductie WCAG-pagina's
+
+<SpotlightSection>
+  <Markdown omitH1 headinglevel={2}>
+    <Disclaimer />
+  </Markdown>
+</SpotlightSection>
+
+## Opzet
+
+Elk WCAG-succescriterium heeft een eigen pagina waarin is opgenomen:
+
+- Een uitleg.
+- Links naar gerelateerde richtlijnen, zodat je weet hoe deze criteria toe te passen.
+- Bronnen over extra uitleg of voorbeelden.
+- Relevant gebruikersonderzoek.
+- Hoe voor een succescriterium zelf te testen op webpagina's.
+- Veelgemaakte fouten en de oplossingen hiervoor.
+- De links naar de officiële richtlijnen en W3C-referenties.
+- Een disclaimer over het gebruik van de richtlijnen.
+
+Sommige succescriteria bevatten nu alleen nog links en een uitleg. Het doel is om eind van 2025 de inhoud van de A- en AA-criteria compleet te hebben.
+
+## WCAG-pagina's
+
+### Niveau A en Niveau AA
+
+<OverviewPage
+  excludeDocIDs={[
+    "wcag/README",
+    ...successCriteria
+      .filter(({ conformance }) => conformance === "AAA")
+      .map(({ sc }) => sc)
+      .map((sc) => sc.replace(/\.(\d)$/g, ".0$1"))
+      .map((wcag) => `wcag/${wcag}`),
+  ]}
+/>
+
+### Niveau AAA
+
+<OverviewPage
+  excludeDocIDs={[
+    "wcag/README",
+    "wcag/4.1.01",
+    ...successCriteria
+      .filter(({ conformance, sc }) => conformance === "A" || conformance === "AA")
+      .map(({ sc }) => sc)
+      .map((sc) => sc.replace(/\.(\d)$/g, ".0$1"))
+      .map((wcag) => `wcag/${wcag}`),
+  ]}
+/>
+
+## Help richtlijnen verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

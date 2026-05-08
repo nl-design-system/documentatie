@@ -9,7 +9,7 @@ Bijvoorbeeld:
 
 Dit geldt ook voor het gebruik van icons.
 
-Als een component op verschillende plekken andere functies hebben hoeven die uiteraard niet hetzelfde visuele label te hebben. Bijvoorbeeld:
+Als componenten op verschillende plekken andere functies hebben hoeven die uiteraard niet hetzelfde visuele label te hebben. Bijvoorbeeld:
 
 - Een algemene zoekfunctie genaamd 'Zoeken' in de header van iedere pagina.
 - Een specifieke zoekfunctie genaamd 'Zoek in de database'.

@@ -5,7 +5,6 @@ import {
   getTokenPaths,
   sortTokenPaths,
   tokenAtPath,
-  tokenPathsToEmptyTokenTree,
   tokenPathToCSSCustomProperty,
   tokenPathToDottedTokenPath,
 } from '@site/src/utils';
@@ -22,18 +21,41 @@ import {
 import { CopyButton } from './CopyButton';
 import type { IconType } from './TokenIcon';
 import { TokenIcon } from './TokenIcon';
+import type { BaseDesignToken } from '@nl-design-system-community/design-tokens-schema';
+import { cloneDeepWith } from 'es-toolkit/object';
 
 interface Props {
   tokens: TokenNode;
 }
 
+type DesignTokenDefinition = Omit<BaseDesignToken, '$value'>;
+
+export const isTokenDefinition = (obj: unknown): obj is DesignTokenDefinition => {
+  // Must have a `$type: string`
+  return (
+    obj !== null &&
+    typeof obj === 'object' &&
+    Object.hasOwn(obj, '$type') &&
+    typeof (obj as never)['$type'] === 'string'
+  );
+};
+
 export function DesignTokens({ tokens }: Props) {
   const tokenPaths = getTokenPaths(tokens);
+  const cleanTokens = cloneDeepWith(tokens, (obj) =>
+    isTokenDefinition(obj)
+      ? {
+          $type: obj.$type,
+          $value: '',
+        }
+      : undefined,
+  );
+
   const sortedTokenPaths = sortTokenPaths(tokenPaths);
   const cssCustomPropertiesString = sortedTokenPaths
     .map((tokenPath) => tokenPathToCSSCustomProperty(tokenPath) + ': ;')
     .join('\n');
-  const jsonString = JSON.stringify(tokenPathsToEmptyTokenTree(sortedTokenPaths));
+  const jsonString = JSON.stringify(cleanTokens);
 
   return (
     <>

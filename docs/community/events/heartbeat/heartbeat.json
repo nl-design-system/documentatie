@@ -1,5 +1,69 @@
 [
   {
+    "id": 124,
+    "date": "2026-04-28",
+    "description": [
+      "Bart van het Expertteam Digitale Toegankelijkheid laat de voortgang zien van de Theme Wizard.",
+      "Rozerin van het kernteam neemt jullie mee in hoe we Figma hygiëne toepassen in ons werk en hoe dit helpt om efficiënter samen te werken."
+    ],
+    "title": "Heartbeat van 28 april 2026.",
+    "youtubeId": "uu-7SYCiIfE"
+  },
+  {
+    "id": 123,
+    "date": "2026-04-14",
+    "description": [
+      "Yolijn van het kernteam geeft een praatje over hoe niet alleen de NL Design System community maar ook het kernteam transparent werkt.",
+      "Bas van gemeente Amsterdam vertelt over het gebruikersonderzoek dat is gedaan naar de positie van “Mijn Amsterdam” in de Page Header."
+    ],
+    "title": "Heartbeat van 14 april 2026.",
+    "youtubeId": "ZUdXNaWIyH4"
+  },
+  {
+    "id": 122,
+    "date": "2026-03-31",
+    "description": [
+      "Tim van het Expertteam Digitale Toegankelijkheid deelt hoe ver hij is met de editor die bedoeld is om te helpen toegankelijke content te maken.",
+      "Fionn en Neslihan van Logius delen hoe ze het CSS Cross Contamination probleem in de Rijkshuisstijl Community hebben opgelost en de stappen die andere kunnen nemen om dit ook zo op te lossen.",
+      "Richard van het kerneam vertelt hoe het kernteam helpt de infrastructuur voor Open Source werken up-to-date en veilig te houden en waar je rekening mee kunt houden om op een veilige manier code van anderen te gebruiken en nieuwe code toe te voegen."
+    ],
+    "title": "Heartbeat van 31 maart 2026.",
+    "youtubeId": "ee-rRqBGcJg"
+  },
+  {
+    "id": 121,
+    "date": "2026-03-17",
+    "description": [
+      "Renate van het kernteam vertelt wat er voor nodig is om componenten van Community naar Candidate te krijgen en hoe de community daaraan kan bijdragen en de voortgang kan volgen.",
+      "Charlotte van het kernteam deelt de data van de estafettemodeldagen.",
+      "Vincent van VNG, Merlijn van gemeente Den Haag en Annet van Acato vertellen over het Service Design-traject van MijnPlan, een nieuw onderdeel van MijnServices binnen het Omnichannel programma."
+    ],
+    "title": "Heartbeat van 17 maart 2026.",
+    "youtubeId": "CjjAlIqXuPo"
+  },
+  {
+    "id": 120,
+    "date": "2026-03-03",
+    "description": [
+      "Bryan van de MijnServices Community geeft een hands-on update over nieuwe bijdrages vanuit de community, even langs een nieuw view op het community sprintbord en als het lukt nog even langs de Storybook voor een nieuwe template pagina.",
+      "Marieke en Jana van gemeente Groningen vertellen over het gebruikersonderzoek dat zij gedaan hebben naar de homepagina van de Mijn Omgeving / Podium D Portaal.",
+      "Robbert van het kernteam vertelt over de verbeteringen op de NL Design System website op het Componenten Overzicht en de Component Detail pagina aan de hand van enquête resultaten."
+    ],
+    "title": "Heartbeat van 3 maart 2026.",
+    "youtubeId": "fCPsq-u-ezM"
+  },
+  {
+    "id": 119,
+    "date": "2026-02-17",
+    "description": [
+      "Sergei is tech lead bij Open Formulieren en vertelt hoe de nieuwe rendering het makkelijker maakt om nog meer aan te sluiten op NL Design System.",
+      "Kees is developer en heeft voor Rotterdam Design System Apache Wicket componenten gemaakt op basis van NL Design System.",
+      "Jeffrey en Rozerin vertellen over de Community componenten die zij hebben toegevoegd aan de Figma bibliotheek, zoals Description List, Date Input, Calendar, Checkbox Group en Radio Group."
+    ],
+    "title": "Heartbeat van 17 februari 2026.",
+    "youtubeId": "55KlsLNkiDI"
+  },
+  {
     "id": 118,
     "date": "2026-02-03",
     "description": [

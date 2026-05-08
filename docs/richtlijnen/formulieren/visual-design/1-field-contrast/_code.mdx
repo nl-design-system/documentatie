@@ -7,12 +7,7 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
 <Guideline
   appearance="do"
   title="Geef invoerveld een duidelijke rand met voldoende contrast."
-  description={
-    <>
-      Dit voorbeeld heeft{" "}
-      <Link href="/contrast/?color=%23006FA1&background-color=%23ffffff">een contrast van 5.54:1</Link>.
-    </>
-  }
+  description="Dit voorbeeld heeft [een contrast van 5.54:1](/contrast/?color=%23006FA1&background-color=%23ffffff)"
 >
   <Canvas
     language="html"
@@ -23,7 +18,8 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
   >
     {() => (
       <>
-        <input type="text" />
+        <label htmlFor="contrast-input-goed">Voorbeeld invoerveld met goed contrast</label>
+        <input type="text" id="contrast-input-goed" />
       </>
     )}
   </Canvas>
@@ -32,12 +28,7 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
 <Guideline
   appearance="do"
   title="Geef een radiobutton voldoende kleurcontrast."
-  description={
-    <>
-      Dit voorbeeld heeft{" "}
-      <Link href="/contrast/?color=%23006FA1&background-color=%23ffffff">een contrast van 5.54:1</Link>.
-    </>
-  }
+  description="Dit voorbeeld heeft [een contrast van 5.54:1](/contrast/?color=%23006FA1&background-color=%23ffffff)"
 >
   <Canvas
     language="html"
@@ -50,26 +41,28 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
       <>
         <fieldset>
           <legend>Kies je kleur</legend>
-          <div><input type="radio" id="radio1" name="kleur" /> <label htmlFor="radio1">Blauw</label></div>
-          <div><input type="radio" id="radio2" name="kleur"/> <label htmlFor="radio2">Groen</label></div>
-          <div><input type="radio" id="radio3" name="kleur" /> <label htmlFor="radio3">Rood</label></div>
+          <div>
+            <input type="radio" id="radio1" name="kleur" />
+            <label htmlFor="radio1">Blauw</label>
+          </div>
+          <div>
+            <input type="radio" id="radio2" name="kleur" />
+            <label htmlFor="radio2">Groen</label>
+          </div>
+          <div>
+            <input type="radio" id="radio3" name="kleur" />
+            <label htmlFor="radio3">Rood</label>
+          </div>
         </fieldset>
-
       </>
     )}
-
   </Canvas>
 </Guideline>
 
 <Guideline
   appearance="dont"
   title="Geef invoerveld een slecht zichtbare rand met onvoldoende contrast."
-  description={
-    <>
-      Dit voorbeeld heeft{" "}
-      <Link href="/contrast/?color=%23f8f5f1&background-color=%23ffffff">een contrast van 1.08:1</Link>.
-    </>
-  }
+  description="Dit voorbeeld heeft [een contrast van 1.08:1](/contrast/?color=%23f8f5f1&background-color=%23ffffff)"
 >
   <Canvas
     language="html"
@@ -80,7 +73,8 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
   >
     {() => (
       <>
-        <input type="text" />
+        <label htmlFor="contrast-input-slecht">Voorbeeld invoerveld met slecht contrast</label>
+        <input type="text" id="contrast-input-slecht" />
       </>
     )}
   </Canvas>

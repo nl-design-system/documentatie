@@ -1,5 +1,5 @@
 ---
-title: Audiodescriptie · Video · Content · Richtlijnen
+title: Audiodescriptie
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Audiodescriptie

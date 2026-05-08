@@ -1,10 +1,10 @@
 <svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
 <symbol id="component-illustration">
-<g fill="var(--component-illustration-background-color, white)">
+<g fill="var(--ma-component-illustration-background-color, white)">
 <rect width="960" height="540"/>
 <rect width="960" height="540"/>
 </g>
-<g fill="var(--component-illustration-grid-color, #eee)">
+<g fill="var(--ma-component-illustration-grid-color, #eee)">
     <rect width="2" height="540" transform="translate(69)"/>
     <rect width="2" height="540" transform="translate(151)"/>
     <rect width="2" height="540" transform="translate(233)"/>
@@ -23,11 +23,11 @@
     <rect width="960" height="2" transform="translate(0 392)"/>
     <rect width="960" height="2" transform="translate(0 474)"/>
 </g>
-<rect x="182" y="262" width="80" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
-<rect x="287" y="262" width="96" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
-<rect x="408" y="262" width="120" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
-<rect x="553" y="262" width="80" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
-<rect x="658" y="262" width="120" height="16" rx="8" fill="var(--component-illustration-color, #666)"/>
+<rect x="182" y="262" width="80" height="16" rx="8" fill="var(--ma-component-illustration-color, #666)"/>
+<rect x="287" y="262" width="96" height="16" rx="8" fill="var(--ma-component-illustration-color, #666)"/>
+<rect x="408" y="262" width="120" height="16" rx="8" fill="var(--ma-component-illustration-color, #666)"/>
+<rect x="553" y="262" width="80" height="16" rx="8" fill="var(--ma-component-illustration-color, #666)"/>
+<rect x="658" y="262" width="120" height="16" rx="8" fill="var(--ma-component-illustration-color, #666)"/>
 </symbol>
 <use href="#component-illustration"/>
 </svg>

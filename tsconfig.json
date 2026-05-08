@@ -11,7 +11,8 @@
     "paths": {
       "@docs/*": ["./docs/*"],
       "@site/*": ["./*"],
-      "@theme/*": ["src/theme/*"]
+      "@theme/*": ["src/theme/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
   "include": [

@@ -1,5 +1,5 @@
 ---
-title: Gebarentaal · Video · Content · Richtlijnen
+title: Gebarentaal
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Gebarentaal

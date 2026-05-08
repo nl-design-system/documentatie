@@ -68,4 +68,4 @@ Na het Proof of Concept, en na goedkeuring van de stuurgroep, zullen we (ergens 
 - 3 juli 13.00-17.00 bij ICTU, Den Haag: Werksessie voor de werkgroepen.
 - 9 of 11 juli 13.00-17.30 bij de Gemeente Utrecht (voorlopig; definitieve datum volgt): open kennisbijeenkomst voor iedereen die meer wil weten over design systems bij de overheid. Houd deze website in de gaten voor meer informatie (of schrijf je in voor de nieuwsbrief).
 
-Meer weten? Word dan lid van de [Slack groep](http://praatmee.codefor.nl/) van Code for NL en zoek het NL Design System kanaal op. Meer details kun je lezen op de projectwebsite.
+Meer weten? Word dan lid van de [Slack groep](/slack) en zoek het NL Design System kanaal op. Meer details kun je lezen op de projectwebsite.

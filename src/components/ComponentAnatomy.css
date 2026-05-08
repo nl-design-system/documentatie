@@ -1,7 +1,8 @@
-.component-anatomy {
-  margin: 0;
+.ma-component-anatomy {
+  margin-block: 0;
+  margin-inline: 0;
 }
-.component-anatomy__illustration {
-  max-width: 100%;
-  height: auto;
+.ma-component-anatomy__illustration {
+  block-size: auto;
+  max-inline-size: 100%;
 }

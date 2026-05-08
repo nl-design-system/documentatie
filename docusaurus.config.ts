@@ -6,6 +6,7 @@ import footer from './footerConfig';
 import navbar from './navConfig';
 import nldsPrismTheme from './nldsPrism';
 import { addTrailingSlashPlugin } from './rehype-trailing-slash';
+import remarkCustomHeaderId from 'remark-custom-header-id';
 
 const siteUrl = 'https://nldesignsystem.nl';
 
@@ -30,6 +31,7 @@ const config: Config = {
           routeBasePath: '/',
         },
         docs: {
+          remarkPlugins: [remarkCustomHeaderId],
           beforeDefaultRehypePlugins: [[addTrailingSlashPlugin, { siteUrl, stripOrigin: true }]],
           routeBasePath: '/', // Serve the docs at the site's root
           // Please change this to your repo.

@@ -1,10 +1,10 @@
-.main-nav {
+.ma-main-nav {
   background-color: #004152;
   padding-block-end: 15px;
   padding-block-start: 18px;
 }
 
-.main-nav__container {
+.ma-main-nav__container {
   --ifm-navbar-item-padding-vertical: 0;
   --ifm-navbar-item-padding-horizontal: 0;
 

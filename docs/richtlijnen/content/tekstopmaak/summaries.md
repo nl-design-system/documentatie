@@ -1,5 +1,5 @@
 ---
-title: Opsommingen · Tekstopmaak · Content · Richtlijnen
+title: Opsommingen
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Opsommingen
