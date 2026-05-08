@@ -10,6 +10,7 @@ import { NavListLink } from '@components/nav-list/nav-list';
 import { Logo } from '@components/logo/logo';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
 import { IconChevronRight } from '@tabler/icons-react';
+import { getMainNavigation } from '../navigation';
 
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
@@ -42,15 +43,7 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
 const _follow = follow === undefined ? index : follow;
 const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
 
-const mainNavigationItems = [
-  { href: '/', label: 'Home' },
-  { href: '/handboek/', label: 'Handboek' },
-  { href: '/richtlijnen/', label: 'Richtlijnen' },
-  { href: '/componenten/', label: 'Componenten' },
-  { href: '/voorbeelden/', label: 'Voorbeelden' },
-  { href: '/community/', label: 'Community' },
-  { href: '/project/', label: 'Project' },
-];
+const mainNavigationItems = await getMainNavigation();
 
 const footerNavigationItems = [
   { href: '/blog/', label: 'Blog' },
