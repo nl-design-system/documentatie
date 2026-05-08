@@ -193,9 +193,11 @@ Niet alleen de navigatie bovenaan de pagina is een herhaald blok. Een zijkolom m
 
 **Wie kan dit oplossen:** een developer plaatst herhaalde blokken binnen de hoofdinhoud in een eigen landmark met een duidelijke `aria-label`, zodat screenreadergebruikers het blok kunnen overslaan.
 
-### Advies: Landmarkregio's gebruiken
+## Best practice
 
-De pagina gebruikt geen landmarkregio's zoals `<main>`, `<nav>`, `<header>` en `<footer>`. Alles staat in generieke `<div>`-elementen. Screenreadergebruikers kunnen niet per sectie door de pagina bewegen. Ze missen een belangrijk mechanisme om herhaalde blokken over te slaan.
+### Gebruik landmarkregio's voor de hoofdsecties van de pagina
+
+Landmarkregio's zoals `<main>`, `<nav>`, `<header>` en `<footer>` geven screenreadergebruikers de mogelijkheid om per sectie door de pagina te bewegen. Het is een belangrijk extra mechanisme om herhaalde blokken over te slaan, naast een skiplink. Generieke `<div>`-elementen bieden die structuur niet.
 
 **Hoe te testen:** open de pagina in een screenreader en open de landmarklijst. In <span lang="en">VoiceOver</span>: <kbd>VO</kbd>+<kbd>U</kbd> en kies "Landmarks". In <span lang="en">NVDA</span>: druk op <kbd>D</kbd> om naar de volgende landmark te springen. Zijn de belangrijkste secties als landmark herkenbaar?
 
@@ -221,11 +223,11 @@ De pagina gebruikt geen landmarkregio's zoals `<main>`, `<nav>`, `<header>` en `
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer vervangt generieke `<div>`-elementen door semantische HTML-elementen.
+**Wie kan dit toepassen:** een developer vervangt generieke `<div>`-elementen door semantische HTML-elementen.
 
-### Advies: Meerdere navigatieblokken met eigen beschrijving
+### Geef elk navigatieblok een eigen beschrijving
 
-De pagina bevat meerdere `<nav>`-elementen. Geen ervan heeft een naam die aangeeft welke navigatie het is. In de landmarklijst van een screenreader staat dan meerdere keren "navigatie". De gebruiker weet niet welke de hoofdnavigatie is en welke een broodkruimelpad of footernavigatie.
+Een pagina kan meerdere `<nav>`-elementen bevatten — bijvoorbeeld een hoofdnavigatie, een broodkruimelpad en een footernavigatie. Geef elk daarvan een `aria-label` dat de functie beschrijft. In de landmarklijst van een screenreader is dan duidelijk welke navigatie wat is.
 
 **Hoe te testen:** open de landmarklijst in een screenreader. Zijn de navigatieregio's van elkaar te onderscheiden?
 
@@ -253,7 +255,7 @@ De pagina bevat meerdere `<nav>`-elementen. Geen ervan heeft een naam die aangee
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt een `aria-label` toe aan elk `<nav>`-element.
+**Wie kan dit toepassen:** een developer voegt een `aria-label` toe aan elk `<nav>`-element.
 
 ## Hoe te testen
 
