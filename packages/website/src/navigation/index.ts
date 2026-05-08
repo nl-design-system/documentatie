@@ -3,6 +3,7 @@ import { readdir } from 'node:fs/promises';
 import { getAllCollections } from '../content.config';
 import type { Dirent } from 'node:fs';
 import { sortItems } from './sort-items';
+export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element';
 
 /**
  * An item in a navigation tree. The item references an Content Collection ID.
@@ -63,9 +64,6 @@ export interface NavigationGroup {
 export type NavigationElement = NavigationItem | NavigationGroup;
 export type NavigationElementOrdered = NavigationElement & { order: NonNullable<NavigationElement['order']> };
 
-/** All available entries from each Content Collection */
-const collections = getAllCollections();
-
 /**
  * A flat list of all navigation elements, filled when the `navigation` promise
  * is resolved
@@ -97,7 +95,7 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
   const _filePath = typeof input === 'string' ? input : input.filePath;
   const options = typeof input === 'string' ? undefined : input;
 
-  const entries = await collections;
+  const entries = await getAllCollections();
   const entry = entries.find(
     (entry) =>
       (_filePath && entry.filePath?.endsWith(_filePath)) || // relative file path
