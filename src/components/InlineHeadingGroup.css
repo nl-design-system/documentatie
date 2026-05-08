@@ -1,4 +1,5 @@
 /* TODO: When SCSS is supported, use the mixins */
+
 /*
 @import "@utrecht/heading-1/src/mixin";
 @import "@utrecht/heading-2/src/mixin";
@@ -33,8 +34,8 @@
 }
 
 .nlds-inline-heading-group__heading {
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
   color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }

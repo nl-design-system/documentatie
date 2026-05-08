@@ -1,5 +1,6 @@
 ---
 title: Toegankelijkheid
+description: Toegankelijkheidsverklaring van nldesignsystem.nl
 hide_title: true
 hide_table_of_contents: false
 pagination_label: Toegankelijkheid

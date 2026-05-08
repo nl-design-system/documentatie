@@ -1,0 +1,10 @@
+.ma-side-nav {
+  input {
+    display: inline-block;
+    min-inline-size: 24px;
+  }
+
+  li:has(> input[type="checkbox"]:not(:checked)) > ul {
+    display: none;
+  }
+}

@@ -1,13 +1,13 @@
 <svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
   <!-- This ensures the component can be found in the ComponentIllustration component -->
   <symbol id="component-illustration" viewBox="0 0 960 540">
-    
+
     <!-- Use variables to set backgroundcolors so they can change with the status of the component without modififying this file -->
-    <g fill="var(--component-illustration-background-color, white)">
+    <g fill="var(--ma-component-illustration-background-color, white)">
       <rect width="960" height="540" />
       <rect width="960" height="540" />
     </g>
-    <g fill="var(--component-illustration-grid-color, #eee)">
+    <g fill="var(--ma-component-illustration-grid-color, #eee)">
       <rect width="2" height="540" transform="translate(69)" />
       <rect width="2" height="540" transform="translate(151)" />
       <rect width="2" height="540" transform="translate(233)" />
@@ -26,7 +26,7 @@
       <rect width="960" height="2" transform="translate(0 392)" />
       <rect width="960" height="2" transform="translate(0 474)" />
     </g>
-    <g fill="var(--component-illustration-color, #666)">
+    <g fill="var(--ma-component-illustration-color, #666)">
       <path
         d="M185.586 180.586C186.367 179.805 187.633 179.805 188.414 180.586L199 191.172L209.586 180.586C210.367 179.805 211.633 179.805 212.414 180.586C213.195 181.367 213.195 182.633 212.414 183.414L200.414 195.414C199.633 196.195 198.367 196.195 197.586 195.414L185.586 183.414C184.805 182.633 184.805 181.367 185.586 180.586Z"
       />
