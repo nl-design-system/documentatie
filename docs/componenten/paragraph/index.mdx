@@ -63,10 +63,12 @@ import MultipleExplanation from "@nl-design-system-unstable/documentation/compon
 import MultipleSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/multiple/solution.md";
 import StrongMeta from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/metadata.json";
 import StrongExplanation from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/explanation.md";
-import StrongSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/solution.md";
+import StrongSolutionHeading from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/solution-heading.md";
+import StrongSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/solution-lead.md";
 import EmphasisMeta from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/metadata.json";
 import EmphasisExplanation from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/explanation.md";
-import EmphasisSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution.md";
+import EmphasisSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution-lead.md";
+import EmphasisSolutionQuote from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution-quote.md";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
 import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
@@ -156,9 +158,9 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <ContrastExplanation />
 
-<ContrastSolution />
+#### Oplossing
 
-{/* Is dit handig om erbij te hebben, of wordt het dan teveel dubbelop? */}
+<ContrastSolution />
 
 <ContrastRelated />
 
@@ -168,11 +170,15 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <EmptyExplanation />
 
+#### Oplossing
+
 <EmptySolution />
 
 <Heading level={3}>{LanguageMeta.title}</Heading>
 
 <LanguageExplanation />
+
+#### Oplossing
 
 <LanguageSolution />
 
@@ -180,19 +186,29 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <MultipleExplanation />
 
+#### Oplossing
+
 <MultipleSolution />
 
 <Heading level={3}>{StrongMeta.title}</Heading>
 
 <StrongExplanation />
 
-<StrongSolution />
+#### Oplossing
+
+<StrongSolutionHeading />
+
+<StrongSolutionLead />
 
 <Heading level={3}>{EmphasisMeta.title}</Heading>
 
 <EmphasisExplanation />
 
-<EmphasisSolution />
+#### Oplossing
+
+<EmphasisSolutionLead />
+
+<EmphasisSolutionQuote />
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
