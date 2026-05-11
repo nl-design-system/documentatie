@@ -98,7 +98,7 @@ export default function Home() {
                 body="Meedoen met Figma? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
                 heading="Als je designs maakt"
                 headingLevel={4}
-                href="/handboek/designer/introductie/"
+                href="/handboek/designer/index/"
                 image={<DesignerSVG />}
               ></Card>
               <Card
