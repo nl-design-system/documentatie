@@ -122,7 +122,11 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
     order: entry?.data?.navigation_order,
   };
 
-  navigationElements.push(item);
+  // Unlisted items are allowd to be turned into an `NavigationItem`, but
+  // should not end up in
+  if (!entry?.data?.unlisted) {
+    navigationElements.push(item);
+  }
 
   return item;
 }
@@ -184,6 +188,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
 
         if (file.isFile()) {
           const filePath = relative('.', `${file.parentPath}/${file.name}`);
+          const contentCollectionEntry = await getEntryWithFilepath(filePath);
 
           // Treat index.md(x) files as the group index
           if (/index.mdx?$/i.test(file.name)) {
@@ -192,6 +197,11 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
 
           // If an index file is provided in the options, ignore it as sub item
           else if (indexOptions?.filePath?.endsWith(file.name)) {
+            return;
+          }
+
+          // If the entry is marked as `unlisted`, ignore it
+          else if (contentCollectionEntry?.data.unlisted) {
             return;
           }
 
@@ -245,6 +255,11 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
 
   // Return the group for consumption
   return group;
+}
+
+async function getEntryWithFilepath(filePath: string) {
+  const entries = await collections;
+  return entries.find((entry) => filePath && entry.filePath?.endsWith(filePath));
 }
 
 function toTitleCase(string?: string) {
