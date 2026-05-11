@@ -113,7 +113,7 @@ const components = defineCollection({
     pattern: ['componenten/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema,
+  schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
 });
 
 const wcag = defineCollection({

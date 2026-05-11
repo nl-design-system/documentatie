@@ -1,0 +1,47 @@
+---
+import Document, { type Props as DocumentProps } from './document.astro';
+import { BreadcrumbNav, BreadcrumbNavLink, BreadcrumbNavSeparator } from '@components/breadcrumb-nav/breadcrumb-nav';
+import { IconChevronRight } from '@tabler/icons-react';
+import TableOfContents from '@components/table-of-content/table-of-content.astro';
+import { SideNav } from '@components/side-nav/side-nav.tsx';
+import { navigation } from '../navigation.config.ts';
+import './detail.css';
+
+export type Props = DocumentProps;
+
+const nav = await navigation;
+const { ...props } = Astro.props;
+---
+
+<Document {...props}>
+  <div class="ma-layout-detail">
+    <div class="ma-layout-detail__content">
+      <div class="ma-layout-detail__side-nav">
+        <SideNav data={nav} />
+      </div>
+
+      <nav class="ma-layout-detail__breadcrumb-nav" aria-labelledby="breadcrumb-label">
+        <h2 hidden id="breadcrumb-label">Kruimelpad</h2>
+        <BreadcrumbNav>
+          <BreadcrumbNavLink href="/">Home</BreadcrumbNavLink>
+          <BreadcrumbNavSeparator>
+            <IconChevronRight />
+          </BreadcrumbNavSeparator>
+          <BreadcrumbNavLink href="#">{props.title}</BreadcrumbNavLink>
+        </BreadcrumbNav>
+      </nav>
+
+      <main id="main" class="ma-layout-detail__main">
+        <header class="ma-layout-detail__header"><slot name="header" /></header>
+
+        <aside class="ma-layout-detail__anchor-nav">
+          <TableOfContents />
+        </aside>
+
+        <div class="ma-layout-detail__main-body">
+          <slot />
+        </div>
+      </main>
+    </div>
+  </div>
+</Document>
