@@ -53,6 +53,9 @@ export interface NavigationGroup {
   /** The directory representing the group */
   filePath?: string;
 
+  /** Specific file paths to ignore. Paths are _relative to the filePath_ */
+  ignoredFiles?: string[];
+
   /** The parent `NavigationGroup` this group is nested under. */
   parent?: NavigationGroup;
 
@@ -124,7 +127,7 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
   return item;
 }
 
-type NavigationGroupOptions = Partial<Pick<NavigationGroup, 'label' | 'filePath' | 'items'>> & {
+type NavigationGroupOptions = Partial<Pick<NavigationGroup, 'label' | 'filePath' | 'ignoredFiles' | 'items'>> & {
   index?: Promise<NavigationItem>;
 };
 
@@ -175,6 +178,10 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
     // Loop over all files in the directory
     await Promise.all(
       files.map(async (file) => {
+        if (options.ignoredFiles?.includes(file.name)) {
+          return;
+        }
+
         if (file.isFile()) {
           const filePath = relative('.', `${file.parentPath}/${file.name}`);
 
