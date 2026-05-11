@@ -99,6 +99,7 @@ const docs = defineCollection({
       'richtlijnen/**/*.{md,mdx}',
       'voorbeelden/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
+      'CHANGELOG.md',
       '!**/_*/**',
       '!**/_*.{md,mdx}',
     ],
