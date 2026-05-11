@@ -74,7 +74,7 @@ function generateId(options) {
 
 const schema = z.object({
   title: z.string(),
-  title_sm: z.string().max(24).optional(),
+  title_sm: z.string().max(65).optional(),
   description: z.string().optional(),
   lang: z.enum(['nl', 'en']).optional(),
   slug: z.string().optional(),
