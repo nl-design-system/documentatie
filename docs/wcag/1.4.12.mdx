@@ -5,45 +5,334 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.12 Tekstafstand
 pagination_label: WCAG-succescriterium 1.4.12 Tekstafstand
-description: Tekst is door bezoekers aan te passen.
+description: Je kan letters, woorden en regels verder uit elkaar zetten, en alle tekst en functies moeten dan nog werken.
 slug: 1.4.12
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - waarneembaar
   - onderscheidbaar
   - perceivable
   - distinguishable
   - text spacing
+  - tekstafstand
+  - regelafstand
+  - line-height
+  - letterafstand
+  - letter-spacing
+  - woordafstand
+  - word-spacing
+  - dyslexie
+  - WCAG 1.4.12
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
-
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
-import Summary from "./summaries/_1.4.12-summary.md";
+import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
+import Disclaimer from "./\_wcag-disclaimer.md";
+import WCAGFooterInfo from "./\_wcag_footer_info.md";
+import Summary from "./summaries/\_1.4.12-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
   {"WCAG-succescriterium 1.4.12 Tekstafstand"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+Een bezoeker zet de afstanden ruimer en de pagina moet bruikbaar blijven bij vier minimumwaarden:
+
+- regelhoogte (regelafstand): minstens 1,5 keer de lettergrootte;
+- afstand tussen alinea's: minstens 2 keer de lettergrootte;
+- letterafstand: minstens 0,12 keer de lettergrootte;
+- woordafstand: minstens 0,16 keer de lettergrootte.
+
+Het verschil met [1.4.4 Herschalen van tekst](/wcag/1.4.4/) zit in wát de bezoeker aanpast. Bij 1.4.4 wordt de lettergrootte groter. Bij 1.4.12 blijft de lettergrootte gelijk, maar worden de afstanden ruimer. Beide criteria vragen om dezelfde CSS-aanpak: flexibele containers die met de inhoud meegroeien, geen vaste hoogtes die content afsnijden.
+
+## Veelgemaakte fouten
+
+### Tekst in een container met vaste hoogte wordt afgesneden
+
+Een container heeft een vaste hoogte in pixels. Bij de standaard regelafstand past de tekst er net in. Zet een bezoeker de regelafstand op 1,5 keer de lettergrootte, dan wordt de tekst hoger. Met `overflow: hidden` valt het deel dat niet past weg. De bezoeker ziet de rest van de tekst niet.
+
+**Hoe te testen:** gebruik de tekstafstand-bookmarklet en kijk of er tekst wegvalt. Inspecteer verdachte containers in de <span lang="en">DevTools</span> op een combinatie van vaste `height` en `overflow: hidden`.
+
+<Guideline appearance="dont" title="Vaste hoogte snijdt de tekst af">
+    ```css
+    .kaart {
+      height: 160px;
+      overflow: hidden;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Minimale hoogte laat de container meegroeien">
+    ```css
+    .kaart {
+      min-height: 160px;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt vaste afmetingen (`height`, `width`, `block-size`, `inline-size`) waar mogelijk door de `min-`-variant, zodat de container kan meegroeien.
+
+### Knop of label met een vaste hoogte
+
+Een knop heeft een vaste hoogte en een vaste lettergrootte. De tekst past daar precies in. Met ruimere regelafstand of letterafstand wordt de tekst hoger of breder. De tekst loopt buiten de knop of wordt afgesneden.
+
+**Hoe te testen:** pas de tekstafstand aan. Blijft de tekst binnen de knop leesbaar? Of loopt de tekst buiten de rand?
+
+<Guideline appearance="dont" title="Vaste hoogte op een knop">
+    ```css
+    .knop {
+      height: 40px;
+      line-height: 40px;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Padding in em laat de knop meegroeien">
+    ```css
+    .knop {
+      padding: 0.5em 1em;
+      line-height: 1.5;
+    }
+    ```
+</Guideline>
+
+`line-height` gebruiken om verticaal te centreren in een vaste hoogte blokkeert aanpassingen door de bezoeker. Door `padding` in `em` te gebruiken groeit de knop mee met de tekst.
+
+**Wie kan dit oplossen:** een developer vervangt vaste hoogtes door flexibele `padding`.
+
+### De stijlregels van de site overrulen de aanpassingen van de bezoeker
+
+De bezoeker past de afstanden aan via een bookmarklet of extensie, maar de site negeert die aanpassingen. Dat komt doordat op `line-height`, `letter-spacing` of `word-spacing` `!important` staat: de stijlregel van de site wint van die van de bezoeker.
+
+**Hoe te testen:** zoek in de CSS naar `!important` op `line-height`, `letter-spacing`, `word-spacing` of `margin-bottom` op alinea's.
+
+<Guideline appearance="dont" title="!important blokkeert bezoekerstijl">
+    ```css
+    p {
+      line-height: 1.2 !important;
+      letter-spacing: 0 !important;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Zonder !important kan de bezoeker overrulen">
+    ```css
+    p {
+      line-height: 1.5;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer verwijdert `!important` van tekstafstand-eigenschappen.
+
+### Tekst wordt na een vast aantal regels afgekapt
+
+Een product-teaser of kaart kapt de tekst af na drie regels met de CSS-eigenschap `-webkit-line-clamp`. Bij de standaard regelafstand passen drie zinnen. Bij een ruimere regelafstand passen die zinnen niet meer in drie regels en valt een deel van de tekst weg achter het beletselteken.
+
+**Hoe te testen:** pas de regelafstand aan. Wordt de tekst na enkele regels met een beletselteken afgebroken, terwijl de rest van de tekst niet meer leesbaar is?
+
+<Guideline appearance="dont" title="Vaste regel-clamp snijdt ruimere regels af">
+    ```css
+    .teaser {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Laat de volledige tekst meegroeien">
+    ```css
+    .teaser {
+      display: block;
+    }
+    ```
+</Guideline>
+
+Als het ontwerp vraagt om een korte samenvatting, schrijf dan een kortere tekst in plaats van met CSS af te kappen.
+
+**Wie kan dit oplossen:** een developer verwijdert de clamp. Een contentmaker kort de tekst zelf in.
+
+### Elementen overlappen elkaar bij ruimere tekstafstand
+
+Een element staat op een vaste plek in de pagina, los van de tekst eromheen. Bij ruimere regelafstand groeit de tekst, maar het element blijft op zijn plek. De tekst loopt erachter, of het element valt over de tekst heen. Vaak gaat het om elementen met `position: absolute`.
+
+**Hoe te testen:** pas de tekstafstand aan. Overlappen er elementen? Komen er knoppen of labels op onverwachte plekken terecht?
+
+<Guideline appearance="dont" title="Absolute positie botst met ruimere tekst">
+    ```css
+    .actieknop {
+      position: absolute;
+      top: 120px;
+      right: 20px;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Normale flow met flex of grid">
+    ```css
+    .kaart {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer kiest voor een layout waarbij elementen meebewegen met de inhoud.
+
+### Navigatie-items lopen over elkaar of buiten het scherm
+
+Een horizontale navigatie heeft menu-items met een vaste breedte, en de tekst in de items mag niet afbreken naar een nieuwe regel. Bij grotere letter- of woordafstand wordt de tekst breder. De items lopen over elkaar, over de rand van het scherm of worden afgesneden. Vaak gaat het om een combinatie van een vaste `width` met `white-space: nowrap`.
+
+**Hoe te testen:** pas de letter- en woordafstand aan. Passen alle navigatie-items nog op de balk?
+
+<Guideline appearance="dont" title="Navigatie-items met vaste breedte">
+    ```css
+    .nav-item {
+      width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Flexibele items die wrappen">
+    ```css
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .nav-item {
+      padding: 0.5em 1em;
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer bouwt een navigatie die kan wrappen of bij groeiende tekst naar een mobiele variant omschakelt.
+
+### Tooltip of popover met vaste maten
+
+Een tooltip of popover heeft een vaste hoogte en breedte. De inhoud past bij standaard tekstafstand. Met ruimere regelafstand valt de onderste regel buiten de tooltip weg, of wordt de tekst afgesneden.
+
+**Hoe te testen:** open een tooltip met aangepaste tekstafstand. Is alle tekst nog leesbaar?
+
+<Guideline appearance="dont" title="Tooltip met vaste maten">
+    ```css
+    .tooltip {
+      width: 200px;
+      height: 60px;
+      overflow: hidden;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Tooltip met minimale maten">
+    ```css
+    .tooltip {
+      min-width: 200px;
+      max-width: 320px;
+      padding: 0.5em 0.75em;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt vaste maten door `min-` en `max-`-varianten met `padding`.
+
+### Formulierlabels naast invoervelden met vaste maten
+
+Een label staat links naast een invoerveld. Het label heeft een vaste breedte en vaste hoogte. Bij ruimere letterafstand past het label niet meer en loopt het over het invoerveld, of wordt het afgesneden.
+
+**Hoe te testen:** pas de tekstafstand aan. Zijn alle labels nog volledig leesbaar en los van het invoerveld?
+
+<Guideline appearance="dont" title="Label met vaste breedte naast het invoerveld">
+    ```css
+    .form-groep label {
+      width: 150px;
+      height: 40px;
+      overflow: hidden;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Label boven het invoerveld">
+    ```css
+    .form-groep {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een designer kiest voor labels boven de invoervelden. Een developer bouwt een flexibele layout.
+
+### Tabelcellen met vaste hoogte
+
+Een datatabel heeft rijen met een vaste hoogte voor een strak ontwerp. Bij ruimere regelafstand wordt tekst in een cel afgesneden. In cellen met meerdere regels tekst verdwijnt een deel onder de onderrand.
+
+**Hoe te testen:** pas de tekstafstand aan en bekijk de tabel. Wordt er tekst afgesneden binnen cellen?
+
+<Guideline appearance="dont" title="Vaste rijhoogte">
+    ```css
+    td {
+      height: 48px;
+      overflow: hidden;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Padding bepaalt de minimale hoogte">
+    ```css
+    td {
+      padding: 0.75em 1em;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt vaste rijhoogtes door `padding` op de cellen.
 
 ## Hoe te testen
 
-- Op de pagina die je wil testen gebruik je de [<span lang="en">text spacing bookmarklet</span> van HTML5 Accessibility/Steve Faulkner](https://www.html5accessibility.com/tests/tsbookmarklet.html). Zie je niks veranderen? Mogelijk is er een security policy (CSP) aktief die je bookmarklet blokkeert. Je kan ook een extensie voor je browser gebruiken zoals [Stylus](https://github.com/openstyles/stylus).
-- Controleer of er geen tekst of functionaliteit wegvalt.
+### Voor iedereen
 
-## Tips
+1. Gebruik de [tekstafstand-bookmarklet van Steve Faulkner](https://codepen.io/stevef/full/YLMqbo) of een vergelijkbare tool. Die zet in één klik de vier waarden op het minimum dat het succescriterium vereist.
+2. Bekijk de pagina. Is alle tekst nog zichtbaar? Wordt er niets afgesneden, afgekapt of verborgen?
+3. Controleer knoppen, labels, navigatie en tooltips. Is alles nog bereikbaar en leesbaar?
+4. Controleer of alle functies nog werken: formulieren, menu's, zoeken.
 
-- De website hoeft zelf niet deze instellingen te gebruiken. De instellingen moeten alleen ondersteund worden als de gebruiker ze zelf instelt. Denk hierbij bijvoorbeeld aan eigen custom CSS-stylesheets.
-- De website hoeft geen instellingen te bieden om dit aan te passen. De instellingen moeten alleen ondersteund worden als de gebruiker ze zelf instelt.
+### Voor developers
+
+1. Zoek in de CSS naar vaste afmetingen in combinatie met `overflow: hidden`. Controleer de eigenschappen `height`, `width`, `block-size` en `inline-size`, en vervang ze waar mogelijk door de `min-`-variant.
+2. Zoek naar `!important` op `line-height`, `letter-spacing`, `word-spacing` en `margin`. Verwijder tenzij er een goede reden voor is.
+3. Zoek naar `-webkit-line-clamp`. Overweeg om de tekst zelf in te korten in plaats van met CSS af te kappen.
+4. Zoek naar tekst in afbeeldingen. Vervang door echte HTML-tekst.
+5. Controleer elementen met `position: absolute` of `position: fixed`. Passen ze nog in de layout bij ruimere tekst?
+6. Automatische tools zoals <span lang="en">axe DevTools</span> herkennen dit succescriterium niet. Handmatig testen is nodig.
+
+## Gerelateerde succescriteria
+
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): als de bezoeker de tekst 2 keer zo groot instelt, moet alle content en functionaliteit beschikbaar blijven. Dezelfde CSS-aanpak helpt bij beide criteria.
+- [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom en 320 pixels breedte past de layout zich aan zonder horizontaal scrollen. Flexibele containers zijn voor alle drie de criteria de basis.
+- [1.4.8 Visuele presentatie](/wcag/1.4.8/): op niveau AAA gelden striktere eisen voor regelafstand en alineaspatiëring als standaardinstelling.
+- [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/): tekst in afbeeldingen kan niet aangepast worden. Gebruik echte tekst.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 1.4.12 Tekstafstand](https://www.w3.org/Translations/WCAG22-nl/#tekstafstand) — de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 1.4.12: Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Tekstafstand-bookmarklet van Steve Faulkner](https://codepen.io/stevef/full/YLMqbo) — zet de vier tekstafstanden in één klik op het minimumniveau, voor snelle handmatige tests.
 
 ## Gebruikersonderzoek
 
