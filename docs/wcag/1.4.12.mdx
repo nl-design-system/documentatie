@@ -37,6 +37,29 @@ import Disclaimer from "./\_wcag-disclaimer.md";
 import WCAGFooterInfo from "./\_wcag_footer_info.md";
 import Summary from "./summaries/\_1.4.12-summary.md";
 
+export const tekstafstand = {
+  lineHeight: 1.5,
+  letterSpacing: "0.12em",
+  wordSpacing: "0.16em",
+};
+
+export const demoSurface = {
+  background: "#fff",
+  color: "#1f2937",
+  padding: 20,
+  fontFamily: "system-ui, sans-serif",
+};
+
+export const demoLabel = {
+  display: "block",
+  fontSize: 12,
+  fontWeight: 600,
+  textTransform: "uppercase",
+  letterSpacing: "0.05em",
+  color: "#6b7280",
+  marginBottom: 8,
+};
+
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
   {"WCAG-succescriterium 1.4.12 Tekstafstand"}
 </WcagHeadingGroup>
@@ -50,9 +73,26 @@ Een bezoeker zet de afstanden ruimer en de pagina moet bruikbaar blijven bij vie
 - letterafstand: minstens 0,12 keer de lettergrootte;
 - woordafstand: minstens 0,16 keer de lettergrootte.
 
+Hetzelfde stukje tekst, met en zonder de minimumwaarden toegepast:
+
+<div aria-hidden="true" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 16, marginBlock: 24}}>
+  <div style={{...demoSurface, border: "1px solid rgba(0,0,0,0.1)"}}>
+    <span style={demoLabel}>Standaard</span>
+    <p style={{margin: 0, marginBottom: "1em"}}>De bezoeker past de afstand tussen letters, woorden, regels en alinea's aan.</p>
+    <p style={{margin: 0}}>Zo wordt de tekst leesbaarder voor wie moeite heeft met lezen.</p>
+  </div>
+  <div style={{...demoSurface, border: "1px solid rgba(0,0,0,0.1)"}}>
+    <span style={demoLabel}>Minimumwaarden 1.4.12</span>
+    <p style={{margin: 0, marginBottom: "2em", ...tekstafstand}}>De bezoeker past de afstand tussen letters, woorden, regels en alinea's aan.</p>
+    <p style={{margin: 0, ...tekstafstand}}>Zo wordt de tekst leesbaarder voor wie moeite heeft met lezen.</p>
+  </div>
+</div>
+
 Het verschil met [1.4.4 Herschalen van tekst](/wcag/1.4.4/) zit in wát de bezoeker aanpast. Bij 1.4.4 wordt de lettergrootte groter. Bij 1.4.12 blijft de lettergrootte gelijk, maar worden de afstanden ruimer. Beide criteria vragen om dezelfde CSS-aanpak: flexibele containers die met de inhoud meegroeien, geen vaste hoogtes die content afsnijden.
 
 ## Veelgemaakte fouten
+
+In de voorbeelden hieronder hebben de demo's de minimumwaarden uit het succescriterium al ingebouwd. Zo zie je het effect zonder zelf een bookmarklet of extensie te hoeven activeren.
 
 ### Tekst in een container met vaste hoogte wordt afgesneden
 
@@ -61,6 +101,11 @@ Een container heeft een vaste hoogte in pixels. Bij de standaard regelafstand pa
 **Hoe te testen:** gebruik de tekstafstand-bookmarklet en kijk of er tekst wegvalt. Inspecteer verdachte containers in de <span lang="en">DevTools</span> op een combinatie van vaste `height` en `overflow: hidden`.
 
 <Guideline appearance="dont" title="Vaste hoogte snijdt de tekst af">
+    <div aria-hidden="true" style={demoSurface}>
+      <div style={{height: 160, overflow: "hidden", maxWidth: 260, border: "1px solid rgba(0,0,0,0.15)", padding: 12, ...tekstafstand}}>
+        Een productkaart met een korte beschrijving. Bij ruimere regelafstand wordt deze tekst hoger dan de container en valt het laatste deel onder de rand weg.
+      </div>
+    </div>
     ```css
     .kaart {
       height: 160px;
@@ -70,6 +115,11 @@ Een container heeft een vaste hoogte in pixels. Bij de standaard regelafstand pa
 </Guideline>
 
 <Guideline appearance="do" title="Minimale hoogte laat de container meegroeien">
+    <div aria-hidden="true" style={demoSurface}>
+      <div style={{minHeight: 160, maxWidth: 260, border: "1px solid rgba(0,0,0,0.15)", padding: 12, ...tekstafstand}}>
+        Een productkaart met een korte beschrijving. Bij ruimere regelafstand wordt deze tekst hoger dan de container en valt het laatste deel onder de rand weg.
+      </div>
+    </div>
     ```css
     .kaart {
       min-height: 160px;
@@ -86,6 +136,11 @@ Een knop heeft een vaste hoogte en een vaste lettergrootte. De tekst past daar p
 **Hoe te testen:** pas de tekstafstand aan. Blijft de tekst binnen de knop leesbaar? Of loopt de tekst buiten de rand?
 
 <Guideline appearance="dont" title="Vaste hoogte op een knop">
+    <div aria-hidden="true" style={demoSurface}>
+      <button type="button" style={{height: 40, width: 220, padding: "0 16px", overflow: "hidden", background: "#1f2937", color: "#fff", border: "none", borderRadius: 4, fontSize: 16, whiteSpace: "normal", ...tekstafstand}}>
+        Plaats bestelling vandaag
+      </button>
+    </div>
     ```css
     .knop {
       height: 40px;
@@ -95,6 +150,11 @@ Een knop heeft een vaste hoogte en een vaste lettergrootte. De tekst past daar p
 </Guideline>
 
 <Guideline appearance="do" title="Padding in em laat de knop meegroeien">
+    <div aria-hidden="true" style={demoSurface}>
+      <button type="button" style={{padding: "0.5em 1em", maxWidth: 220, background: "#1f2937", color: "#fff", border: "none", borderRadius: 4, fontSize: 16, ...tekstafstand}}>
+        Plaats bestelling vandaag
+      </button>
+    </div>
     ```css
     .knop {
       padding: 0.5em 1em;
@@ -114,6 +174,12 @@ De bezoeker past de afstanden aan via een bookmarklet of extensie, maar de site 
 **Hoe te testen:** zoek in de CSS naar `!important` op `line-height`, `letter-spacing`, `word-spacing` of `margin-bottom` op alinea's.
 
 <Guideline appearance="dont" title="!important blokkeert bezoekerstijl">
+    <div aria-hidden="true" style={demoSurface}>
+      <span style={demoLabel}>Bezoeker probeert tekstafstand te verruimen — site negeert het</span>
+      <p style={{margin: 0, lineHeight: 1.2, letterSpacing: 0, wordSpacing: 0}}>
+        De bezoeker activeert de tekstafstand-bookmarklet, maar deze alinea blijft compact omdat de stijlregels van de site `!important` gebruiken.
+      </p>
+    </div>
     ```css
     p {
       line-height: 1.2 !important;
@@ -123,6 +189,12 @@ De bezoeker past de afstanden aan via een bookmarklet of extensie, maar de site 
 </Guideline>
 
 <Guideline appearance="do" title="Zonder !important kan de bezoeker overrulen">
+    <div aria-hidden="true" style={demoSurface}>
+      <span style={demoLabel}>Bezoeker verruimt tekstafstand — site laat het toe</span>
+      <p style={{margin: 0, ...tekstafstand}}>
+        De bezoeker activeert de tekstafstand-bookmarklet, en deze alinea krijgt de ruimere afstanden tussen letters, woorden en regels.
+      </p>
+    </div>
     ```css
     p {
       line-height: 1.5;
@@ -139,6 +211,11 @@ Een product-teaser of kaart kapt de tekst af na drie regels met de CSS-eigenscha
 **Hoe te testen:** pas de regelafstand aan. Wordt de tekst na enkele regels met een beletselteken afgebroken, terwijl de rest van de tekst niet meer leesbaar is?
 
 <Guideline appearance="dont" title="Vaste regel-clamp snijdt ruimere regels af">
+    <div aria-hidden="true" style={demoSurface}>
+      <p style={{margin: 0, maxWidth: 320, display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden", ...tekstafstand}}>
+        Deze teaser hoort uit drie zinnen te bestaan. De eerste zin past nog op één regel. Maar met de minimum-tekstafstand passen drie zinnen niet meer in drie regels, dus eindigt de teaser hier met een beletselteken zonder dat de bezoeker de hele tekst kan lezen.
+      </p>
+    </div>
     ```css
     .teaser {
       display: -webkit-box;
@@ -150,6 +227,11 @@ Een product-teaser of kaart kapt de tekst af na drie regels met de CSS-eigenscha
 </Guideline>
 
 <Guideline appearance="do" title="Laat de volledige tekst meegroeien">
+    <div aria-hidden="true" style={demoSurface}>
+      <p style={{margin: 0, maxWidth: 320, ...tekstafstand}}>
+        Deze teaser hoort uit drie zinnen te bestaan. De eerste zin past nog op één regel. Maar met de minimum-tekstafstand passen drie zinnen niet meer in drie regels, dus eindigt de teaser hier met een beletselteken zonder dat de bezoeker de hele tekst kan lezen.
+      </p>
+    </div>
     ```css
     .teaser {
       display: block;
@@ -168,6 +250,13 @@ Een element staat op een vaste plek in de pagina, los van de tekst eromheen. Bij
 **Hoe te testen:** pas de tekstafstand aan. Overlappen er elementen? Komen er knoppen of labels op onverwachte plekken terecht?
 
 <Guideline appearance="dont" title="Absolute positie botst met ruimere tekst">
+    <div aria-hidden="true" style={demoSurface}>
+      <div style={{position: "relative", maxWidth: 320, border: "1px solid rgba(0,0,0,0.15)", padding: 12, ...tekstafstand}}>
+        <p style={{margin: 0, marginBottom: "2em"}}>Een kaart met een titel en een korte beschrijving op meerdere regels.</p>
+        <p style={{margin: 0}}>Het is een leesbare hoeveelheid tekst die met de minimum-tekstafstand groter wordt.</p>
+        <button type="button" style={{position: "absolute", top: 120, right: 12, background: "#1f2937", color: "#fff", border: "none", borderRadius: 4, padding: "0.4em 0.8em", fontSize: 14}}>Meer info</button>
+      </div>
+    </div>
     ```css
     .actieknop {
       position: absolute;
@@ -178,6 +267,13 @@ Een element staat op een vaste plek in de pagina, los van de tekst eromheen. Bij
 </Guideline>
 
 <Guideline appearance="do" title="Normale flow met flex of grid">
+    <div aria-hidden="true" style={demoSurface}>
+      <div style={{display: "flex", flexDirection: "column", gap: "1rem", maxWidth: 320, border: "1px solid rgba(0,0,0,0.15)", padding: 12, ...tekstafstand}}>
+        <p style={{margin: 0}}>Een kaart met een titel en een korte beschrijving op meerdere regels.</p>
+        <p style={{margin: 0}}>Het is een leesbare hoeveelheid tekst die met de minimum-tekstafstand groter wordt.</p>
+        <button type="button" style={{alignSelf: "flex-start", background: "#1f2937", color: "#fff", border: "none", borderRadius: 4, padding: "0.4em 0.8em", fontSize: 14}}>Meer info</button>
+      </div>
+    </div>
     ```css
     .kaart {
       display: flex;
@@ -196,6 +292,13 @@ Een horizontale navigatie heeft menu-items met een vaste breedte, en de tekst in
 **Hoe te testen:** pas de letter- en woordafstand aan. Passen alle navigatie-items nog op de balk?
 
 <Guideline appearance="dont" title="Navigatie-items met vaste breedte">
+    <div aria-hidden="true" style={demoSurface}>
+      <nav style={{display: "flex", gap: 0}}>
+        <a href="#" style={{width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Aanvraag indienen</a>
+        <a href="#" style={{width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Status bekijken</a>
+        <a href="#" style={{width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Contact opnemen</a>
+      </nav>
+    </div>
     ```css
     .nav-item {
       width: 150px;
@@ -206,6 +309,13 @@ Een horizontale navigatie heeft menu-items met een vaste breedte, en de tekst in
 </Guideline>
 
 <Guideline appearance="do" title="Flexibele items die wrappen">
+    <div aria-hidden="true" style={demoSurface}>
+      <nav style={{display: "flex", flexWrap: "wrap", gap: "0.5rem"}}>
+        <a href="#" style={{padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Aanvraag indienen</a>
+        <a href="#" style={{padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Status bekijken</a>
+        <a href="#" style={{padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Contact opnemen</a>
+      </nav>
+    </div>
     ```css
     .nav {
       display: flex;
@@ -229,6 +339,11 @@ Een tooltip of popover heeft een vaste hoogte en breedte. De inhoud past bij sta
 **Hoe te testen:** open een tooltip met aangepaste tekstafstand. Is alle tekst nog leesbaar?
 
 <Guideline appearance="dont" title="Tooltip met vaste maten">
+    <div aria-hidden="true" style={demoSurface}>
+      <div style={{width: 200, height: 60, overflow: "hidden", background: "#1f2937", color: "#fff", padding: "0.5em 0.75em", borderRadius: 4, fontSize: 14, ...tekstafstand}}>
+        Tip: vul hier het bedrag in zoals het op je factuur staat, inclusief eurocenten.
+      </div>
+    </div>
     ```css
     .tooltip {
       width: 200px;
@@ -239,6 +354,11 @@ Een tooltip of popover heeft een vaste hoogte en breedte. De inhoud past bij sta
 </Guideline>
 
 <Guideline appearance="do" title="Tooltip met minimale maten">
+    <div aria-hidden="true" style={demoSurface}>
+      <div style={{minWidth: 200, maxWidth: 320, background: "#1f2937", color: "#fff", padding: "0.5em 0.75em", borderRadius: 4, fontSize: 14, ...tekstafstand}}>
+        Tip: vul hier het bedrag in zoals het op je factuur staat, inclusief eurocenten.
+      </div>
+    </div>
     ```css
     .tooltip {
       min-width: 200px;
@@ -257,6 +377,12 @@ Een label staat links naast een invoerveld. Het label heeft een vaste breedte en
 **Hoe te testen:** pas de tekstafstand aan. Zijn alle labels nog volledig leesbaar en los van het invoerveld?
 
 <Guideline appearance="dont" title="Label met vaste breedte naast het invoerveld">
+    <div aria-hidden="true" style={demoSurface}>
+      <div style={{display: "flex", alignItems: "center", gap: 12}}>
+        <label style={{width: 110, height: 32, overflow: "hidden", display: "inline-block", color: "#1f2937", outline: "1px dashed rgba(0,0,0,0.3)", padding: 2, ...tekstafstand}}>Naam van de hoofdaanvrager</label>
+        <input type="text" style={{padding: "0.4em 0.6em", border: "1px solid rgba(0,0,0,0.3)", borderRadius: 4, fontSize: 16, flex: 1}} />
+      </div>
+    </div>
     ```css
     .form-groep label {
       width: 150px;
@@ -267,6 +393,12 @@ Een label staat links naast een invoerveld. Het label heeft een vaste breedte en
 </Guideline>
 
 <Guideline appearance="do" title="Label boven het invoerveld">
+    <div aria-hidden="true" style={demoSurface}>
+      <div style={{display: "flex", flexDirection: "column", gap: "0.25rem"}}>
+        <label style={{color: "#1f2937", ...tekstafstand}}>Naam van de hoofdaanvrager</label>
+        <input type="text" style={{padding: "0.4em 0.6em", border: "1px solid rgba(0,0,0,0.3)", borderRadius: 4, fontSize: 16}} />
+      </div>
+    </div>
     ```css
     .form-groep {
       display: flex;
@@ -285,6 +417,26 @@ Een datatabel heeft rijen met een vaste hoogte voor een strak ontwerp. Bij ruime
 **Hoe te testen:** pas de tekstafstand aan en bekijk de tabel. Wordt er tekst afgesneden binnen cellen?
 
 <Guideline appearance="dont" title="Vaste rijhoogte">
+    <div aria-hidden="true" style={demoSurface}>
+      <table style={{borderCollapse: "collapse", width: "100%", maxWidth: 360, fontSize: 14, color: "#1f2937"}}>
+        <thead>
+          <tr style={{borderBottom: "2px solid rgba(0,0,0,0.2)"}}>
+            <th style={{textAlign: "left", padding: "0.5em 0.75em"}}>Aanvraag</th>
+            <th style={{textAlign: "left", padding: "0.5em 0.75em"}}>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style={{borderBottom: "1px solid rgba(0,0,0,0.1)"}}>
+            <td style={{padding: "0 0.75em", verticalAlign: "top"}}>
+              <div style={{height: 48, overflow: "hidden", ...tekstafstand}}>Aanvraag woonvergunning met aanvullende toelichting</div>
+            </td>
+            <td style={{padding: "0 0.75em", verticalAlign: "top"}}>
+              <div style={{height: 48, overflow: "hidden", ...tekstafstand}}>In behandeling</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     ```css
     td {
       height: 48px;
@@ -294,6 +446,22 @@ Een datatabel heeft rijen met een vaste hoogte voor een strak ontwerp. Bij ruime
 </Guideline>
 
 <Guideline appearance="do" title="Padding bepaalt de minimale hoogte">
+    <div aria-hidden="true" style={demoSurface}>
+      <table style={{borderCollapse: "collapse", width: "100%", maxWidth: 360, fontSize: 14, color: "#1f2937"}}>
+        <thead>
+          <tr style={{borderBottom: "2px solid rgba(0,0,0,0.2)"}}>
+            <th style={{textAlign: "left", padding: "0.5em 0.75em"}}>Aanvraag</th>
+            <th style={{textAlign: "left", padding: "0.5em 0.75em"}}>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style={{borderBottom: "1px solid rgba(0,0,0,0.1)"}}>
+            <td style={{padding: "0.75em 1em", ...tekstafstand}}>Aanvraag woonvergunning met aanvullende toelichting</td>
+            <td style={{padding: "0.75em 1em", ...tekstafstand}}>In behandeling</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     ```css
     td {
       padding: 0.75em 1em;
