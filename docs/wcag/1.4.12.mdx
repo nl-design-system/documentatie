@@ -75,16 +75,23 @@ Een bezoeker zet de afstanden ruimer en de pagina moet bruikbaar blijven bij vie
 
 Hetzelfde stukje tekst, met en zonder de minimumwaarden toegepast:
 
-<div aria-hidden="true" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 16, marginBlock: 24}}>
-  <div style={{...demoSurface, border: "1px solid rgba(0,0,0,0.1)"}}>
+<div
+  aria-hidden="true"
+  style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 16, marginBlock: 24 }}
+>
+  <div style={{ ...demoSurface, border: "1px solid rgba(0,0,0,0.1)" }}>
     <span style={demoLabel}>Standaard</span>
-    <p style={{margin: 0, marginBottom: "1em"}}>De bezoeker past de afstand tussen letters, woorden, regels en alinea's aan.</p>
-    <p style={{margin: 0}}>Zo wordt de tekst leesbaarder voor wie moeite heeft met lezen.</p>
+    <p style={{ margin: 0, marginBottom: "1em" }}>
+      De bezoeker past de afstand tussen letters, woorden, regels en alinea's aan.
+    </p>
+    <p style={{ margin: 0 }}>Zo wordt de tekst leesbaarder voor wie moeite heeft met lezen.</p>
   </div>
-  <div style={{...demoSurface, border: "1px solid rgba(0,0,0,0.1)"}}>
+  <div style={{ ...demoSurface, border: "1px solid rgba(0,0,0,0.1)" }}>
     <span style={demoLabel}>Minimumwaarden 1.4.12</span>
-    <p style={{margin: 0, marginBottom: "2em", ...tekstafstand}}>De bezoeker past de afstand tussen letters, woorden, regels en alinea's aan.</p>
-    <p style={{margin: 0, ...tekstafstand}}>Zo wordt de tekst leesbaarder voor wie moeite heeft met lezen.</p>
+    <p style={{ margin: 0, marginBottom: "2em", ...tekstafstand }}>
+      De bezoeker past de afstand tussen letters, woorden, regels en alinea's aan.
+    </p>
+    <p style={{ margin: 0, ...tekstafstand }}>Zo wordt de tekst leesbaarder voor wie moeite heeft met lezen.</p>
   </div>
 </div>
 
