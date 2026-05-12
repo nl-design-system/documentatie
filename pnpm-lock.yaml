@@ -284,8 +284,8 @@ importers:
         specifier: 1.0.9
         version: 1.0.9(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/root-css':
-        specifier: 1.2.1
-        version: 1.2.1
+        specifier: 4.1.1
+        version: 4.1.1
       '@utrecht/web-component-library-react':
         specifier: 3.0.12
         version: 3.0.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -475,8 +475,8 @@ importers:
         specifier: 1.0.11
         version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/root-css':
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.1.1
+        version: 4.1.1
     devDependencies:
       '@astrojs/mdx':
         specifier: 5.0.4
@@ -4981,14 +4981,11 @@ packages:
   '@utrecht/rich-text-css@2.0.1':
     resolution: {integrity: sha512-rpRXWSoaKL/DGAvTTjkniqsDiyOTJajie7OpZu+bQO+QkTxDiZqxUs0YLeA0aOE4TuKSLXMt45OxLxwXIvec3g==}
 
-  '@utrecht/root-css@1.2.1':
-    resolution: {integrity: sha512-zgHxu5aeT1XOIJ3yI0EGYqQF7ZsJWG8DyKtt2t12+qMGRW/kxuUQMX9nk9CbE3nnku1TXEEPa3Zt7dV2/p8MQw==}
-
   '@utrecht/root-css@2.0.1':
     resolution: {integrity: sha512-mhEyFaHhWHmwxu3HFR1+HpQDdQfGCfETBRKDP9QsGFwxX1t8FDUmL570+0LH3VqBA7db6gz8/krh8MUzCRp8yw==}
 
-  '@utrecht/root-css@4.1.0':
-    resolution: {integrity: sha512-n2W52d/mSBgscTClpytczKSafdW8SBt1FiO7ysQRVXgDWgUFAzSUZ0M4ZGoTxzq/0oDYB0ol7j0pTUqHh6mQYg==}
+  '@utrecht/root-css@4.1.1':
+    resolution: {integrity: sha512-FOUJ5ISJAF+yiDbGdpuDiKee6Wb2rSBDTZMyBikeQdMqJBc+akQYtO4+dVhTgT6jwGWchFHUEKkW967WUUUheg==}
 
   '@utrecht/search-bar-css@3.0.1':
     resolution: {integrity: sha512-ix/dUg05HIUhUptSvCmxghQ7MhXa2ryYj+PWAk/3aWlxmF/jrxx/l2fiqaroBotTfIJrjxBAVuZn5mVQwW0cfg==}
@@ -17308,11 +17305,9 @@ snapshots:
 
   '@utrecht/rich-text-css@2.0.1': {}
 
-  '@utrecht/root-css@1.2.1': {}
-
   '@utrecht/root-css@2.0.1': {}
 
-  '@utrecht/root-css@4.1.0': {}
+  '@utrecht/root-css@4.1.1': {}
 
   '@utrecht/search-bar-css@3.0.1': {}
 
