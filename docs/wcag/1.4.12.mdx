@@ -144,9 +144,9 @@ Een knop heeft een vaste hoogte en een vaste lettergrootte. De tekst past daar p
 
 <Guideline appearance="dont" title="Vaste hoogte op een knop">
     <div aria-hidden="true" style={demoSurface}>
-      <button type="button" style={{height: 40, width: 220, padding: "0 16px", overflow: "hidden", background: "#1f2937", color: "#fff", border: "none", borderRadius: 4, fontSize: 16, whiteSpace: "normal", ...tekstafstand}}>
+      <span style={{display: "inline-block", boxSizing: "border-box", height: 40, width: 220, padding: "0 16px", overflow: "hidden", background: "#1f2937", color: "#fff", borderRadius: 4, fontSize: 16, ...tekstafstand}}>
         Plaats bestelling vandaag
-      </button>
+      </span>
     </div>
     ```css
     .knop {
@@ -158,9 +158,9 @@ Een knop heeft een vaste hoogte en een vaste lettergrootte. De tekst past daar p
 
 <Guideline appearance="do" title="Padding in em laat de knop meegroeien">
     <div aria-hidden="true" style={demoSurface}>
-      <button type="button" style={{padding: "0.5em 1em", maxWidth: 220, background: "#1f2937", color: "#fff", border: "none", borderRadius: 4, fontSize: 16, ...tekstafstand}}>
+      <span style={{display: "inline-block", boxSizing: "border-box", padding: "0.5em 1em", maxWidth: 220, background: "#1f2937", color: "#fff", borderRadius: 4, fontSize: 16, ...tekstafstand}}>
         Plaats bestelling vandaag
-      </button>
+      </span>
     </div>
     ```css
     .knop {
@@ -261,7 +261,7 @@ Een element staat op een vaste plek in de pagina, los van de tekst eromheen. Bij
       <div style={{position: "relative", maxWidth: 320, border: "1px solid rgba(0,0,0,0.15)", padding: 12, ...tekstafstand}}>
         <p style={{margin: 0, marginBottom: "2em"}}>Een kaart met een titel en een korte beschrijving op meerdere regels.</p>
         <p style={{margin: 0}}>Het is een leesbare hoeveelheid tekst die met de minimum-tekstafstand groter wordt.</p>
-        <button type="button" style={{position: "absolute", top: 120, right: 12, background: "#1f2937", color: "#fff", border: "none", borderRadius: 4, padding: "0.4em 0.8em", fontSize: 14}}>Meer info</button>
+        <span style={{display: "inline-block", position: "absolute", top: 120, right: 12, background: "#1f2937", color: "#fff", borderRadius: 4, padding: "0.4em 0.8em", fontSize: 14}}>Meer info</span>
       </div>
     </div>
     ```css
@@ -278,7 +278,7 @@ Een element staat op een vaste plek in de pagina, los van de tekst eromheen. Bij
       <div style={{display: "flex", flexDirection: "column", gap: "1rem", maxWidth: 320, border: "1px solid rgba(0,0,0,0.15)", padding: 12, ...tekstafstand}}>
         <p style={{margin: 0}}>Een kaart met een titel en een korte beschrijving op meerdere regels.</p>
         <p style={{margin: 0}}>Het is een leesbare hoeveelheid tekst die met de minimum-tekstafstand groter wordt.</p>
-        <button type="button" style={{alignSelf: "flex-start", background: "#1f2937", color: "#fff", border: "none", borderRadius: 4, padding: "0.4em 0.8em", fontSize: 14}}>Meer info</button>
+        <span style={{display: "inline-block", alignSelf: "flex-start", background: "#1f2937", color: "#fff", borderRadius: 4, padding: "0.4em 0.8em", fontSize: 14}}>Meer info</span>
       </div>
     </div>
     ```css
@@ -301,9 +301,9 @@ Een horizontale navigatie heeft menu-items met een vaste breedte, en de tekst in
 <Guideline appearance="dont" title="Navigatie-items met vaste breedte">
     <div aria-hidden="true" style={demoSurface}>
       <nav style={{display: "flex", gap: 0}}>
-        <a href="#" style={{width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Aanvraag indienen</a>
-        <a href="#" style={{width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Status bekijken</a>
-        <a href="#" style={{width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Contact opnemen</a>
+        <span style={{display: "inline-block", boxSizing: "border-box", width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", borderBottom: "2px solid transparent", ...tekstafstand}}>Aanvraag indienen</span>
+        <span style={{display: "inline-block", boxSizing: "border-box", width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", borderBottom: "2px solid transparent", ...tekstafstand}}>Status bekijken</span>
+        <span style={{display: "inline-block", boxSizing: "border-box", width: 110, whiteSpace: "nowrap", overflow: "hidden", padding: "0.5em 1em", color: "#1f2937", borderBottom: "2px solid transparent", ...tekstafstand}}>Contact opnemen</span>
       </nav>
     </div>
     ```css
@@ -318,9 +318,9 @@ Een horizontale navigatie heeft menu-items met een vaste breedte, en de tekst in
 <Guideline appearance="do" title="Flexibele items die wrappen">
     <div aria-hidden="true" style={demoSurface}>
       <nav style={{display: "flex", flexWrap: "wrap", gap: "0.5rem"}}>
-        <a href="#" style={{padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Aanvraag indienen</a>
-        <a href="#" style={{padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Status bekijken</a>
-        <a href="#" style={{padding: "0.5em 1em", color: "#1f2937", textDecoration: "none", borderBottom: "2px solid transparent", ...tekstafstand}}>Contact opnemen</a>
+        <span style={{display: "inline-block", padding: "0.5em 1em", color: "#1f2937", borderBottom: "2px solid transparent", ...tekstafstand}}>Aanvraag indienen</span>
+        <span style={{display: "inline-block", padding: "0.5em 1em", color: "#1f2937", borderBottom: "2px solid transparent", ...tekstafstand}}>Status bekijken</span>
+        <span style={{display: "inline-block", padding: "0.5em 1em", color: "#1f2937", borderBottom: "2px solid transparent", ...tekstafstand}}>Contact opnemen</span>
       </nav>
     </div>
     ```css
@@ -387,7 +387,7 @@ Een label staat links naast een invoerveld. Het label heeft een vaste breedte en
     <div aria-hidden="true" style={demoSurface}>
       <div style={{display: "flex", alignItems: "center", gap: 12}}>
         <label style={{width: 110, height: 32, overflow: "hidden", display: "inline-block", color: "#1f2937", outline: "1px dashed rgba(0,0,0,0.3)", padding: 2, ...tekstafstand}}>Naam van de hoofdaanvrager</label>
-        <input type="text" style={{padding: "0.4em 0.6em", border: "1px solid rgba(0,0,0,0.3)", borderRadius: 4, fontSize: 16, flex: 1}} />
+        <span style={{display: "inline-block", padding: "0.4em 0.6em", border: "1px solid rgba(0,0,0,0.3)", borderRadius: 4, fontSize: 16, flex: 1, background: "#fff", minHeight: "1.5em"}}>&nbsp;</span>
       </div>
     </div>
     ```css
@@ -403,7 +403,7 @@ Een label staat links naast een invoerveld. Het label heeft een vaste breedte en
     <div aria-hidden="true" style={demoSurface}>
       <div style={{display: "flex", flexDirection: "column", gap: "0.25rem"}}>
         <label style={{color: "#1f2937", ...tekstafstand}}>Naam van de hoofdaanvrager</label>
-        <input type="text" style={{padding: "0.4em 0.6em", border: "1px solid rgba(0,0,0,0.3)", borderRadius: 4, fontSize: 16}} />
+        <span style={{display: "inline-block", padding: "0.4em 0.6em", border: "1px solid rgba(0,0,0,0.3)", borderRadius: 4, fontSize: 16, background: "#fff", minHeight: "1.5em"}}>&nbsp;</span>
       </div>
     </div>
     ```css
