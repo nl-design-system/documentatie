@@ -15,34 +15,38 @@ keywords:
 
 # GitHub teams en code owners
 
-Binnen NL Design System gebruiken we GitHub teams om verantwoordelijkheden duidelijk te organiseren.
-Hiermee organiseren we wie (schrijf)toegang heeft tot repositories, en weet je snel wie je moet betrekken bij een wijziging, code review of toegangsvraag.
+Binnen NL Design System gebruiken we rollen om verantwoordelijkheden duidelijk te organiseren.
+In GitHub zijn er teams per organisatie en per rol.
 
-We gebruiken het `CODEOWNERS`-bestand om reviewverzoeken automatisch bij de juiste mensen te laten landen.
+Hiermee organiseren we wie toegang heeft tot repositories, en weet je snel wie toestemming moet geven voor een aanpassing van code of voor een wijziging in toegangsrechten.
 
-## Teams in de praktijk
+We gebruiken het `CODEOWNERS`-bestand om te garanderen dat een code review wordt gevraagd aan de juiste personen, voor wijzigingen aan belangrijke bestanden.
 
-Over het algemeen hanteren we per organisatie een contributor-team, een maintainer-team en een admin-team.
+## Rollen
+
+Over het algemeen is er per organisatie een contributor-team, een maintainer-team en een admin-team.
 
 - `<organisatie>-contributor` - heeft schrijftoegang tot de repository en kan daarmee pull requests indienen
 - `<organisatie>-maintainer` - voor het beoordelen en mergen van pull requests en onderhoudstaken op de repository
 - `<organisatie>-admin` - voor toegangsbeheer van de repository
 
-Op verzoek kunnen voor meer granulariteit meer teams worden aangemaakt, maar bovenstaande is in de meeste gevallen voldoende.
+Op verzoek kunnen extra rollen gebruikt worden, maar de standaard-rollen zijn in de meeste gevallen voldoende.
 
 ## Lid worden van een team
 
-Een maintainer of een lid van het kernteam kan in de `terraform` infrastructuurrepository een pull request aanmaken.
+Wanneer iemand aan een team toegevoegd moet worden, dan moet een maintainer of een admin die wijziging doorvoeren door een pull request aan te maken in de `terraform`-repository.
 Hiervoor is een [handleiding](https://github.com/nl-design-system/terraform/blob/main/docs/adding-users.md) beschikbaar.
 
-De admin van de organisatie wordt gevraagd om de aanvraag goed te keuren, en om te kijken of de lijst van gebruikers in de teams up-to-date is.
+De admin van de organisatie moet de wijzigingen indienen of goedkeuren.
+
+De admin moet periodiek controleren dat de toegangsrechten van gebruikers nog kloppen.
 
 ## CODEOWNERS
 
-Met `CODEOWNERS` leg je vast welke gebruikers/teams eigenaar zijn van bepaalde bestanden of mappen.
-Deze gebruikers worden automatisch toegevoegd als reviewer als een pull request deze bestanden of mappen wijzigt.
+Met `CODEOWNERS` leg je vast welke gebruikers of rollen verantwoordelijk zijn voor bepaalde bestanden of mappen.
+Als een pull request die paden wijzigt, voegt GitHub die code owners automatisch toe als reviewer.
 
-Een vereenvoudigd voorbeeld:
+Een vereenvoudigd voorbeeld (zet rollen met meer rechten bij voorkeur achteraan op dezelfde regel):
 
 ```txt
 # Infra-bestanden
@@ -51,7 +55,7 @@ Een vereenvoudigd voorbeeld:
 docs/ @nl-design-system/documentatie
 ```
 
-Met dit voorbeeld, bij een pull request dat bestanden onder `docs/` wijzigt, vraagt GitHub automatisch een review aan bij `@nl-design-system/documentatie`.
+Met dit voorbeeld vraagt GitHub bij een pull request die bestanden onder `docs/` wijzigt automatisch een review aan bij de gebruikers in het team `@nl-design-system/documentatie`.
 
 :::tip[Praktisch advies]
 Het kan zijn dat een team niet 1-op-1 mapt op de mensen die je als eigenaar wil toewijzen.
@@ -63,7 +67,7 @@ Gebruik verder comments bij paden waar uit de naamgeving niet direct duidelijk w
 ### Review van code owners verplichten
 
 Code owners worden altijd aan pull requests toegevoegd als reviewer.
-Middels een _branch protection rule_ kun je verplichten dat een goedkeuring van één (of meer) code owners nodig is.
+Middels een _branch protection rule_ kun je verplichten dat een goedkeuring van één of meer code owners nodig is.
 
 Standaard staat deze verplichting uit.
 We raden sterk aan om hier wel gebruik van te maken.
