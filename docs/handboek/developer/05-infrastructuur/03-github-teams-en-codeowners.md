@@ -45,6 +45,8 @@ De admin moet periodiek controleren dat de toegangsrechten van gebruikers nog kl
 
 Met `CODEOWNERS` leg je vast welke gebruikers of rollen verantwoordelijk zijn voor bepaalde bestanden of mappen.
 Als een pull request die paden wijzigt, voegt GitHub die code owners automatisch toe als reviewer.
+Hiermee worden de juiste mensen gelijk geïnformeerd.
+Als beveiligingslaag kan een accordering van een code owner ook verplicht worden.
 
 Een vereenvoudigd voorbeeld:
 
