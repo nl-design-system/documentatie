@@ -46,19 +46,22 @@ De admin moet periodiek controleren dat de toegangsrechten van gebruikers nog kl
 Met `CODEOWNERS` leg je vast welke gebruikers of rollen verantwoordelijk zijn voor bepaalde bestanden of mappen.
 Als een pull request die paden wijzigt, voegt GitHub die code owners automatisch toe als reviewer.
 
-Een vereenvoudigd voorbeeld (zet rollen met meer rechten bij voorkeur achteraan op dezelfde regel):
+Een vereenvoudigd voorbeeld:
 
 ```txt
+docs/ @nl-design-system/documentatie
+
 # Infra-bestanden
 .github/ @nl-design-system/kernteam-maintainer
-
-docs/ @nl-design-system/documentatie
 ```
 
 Met dit voorbeeld vraagt GitHub bij een pull request die bestanden onder `docs/` wijzigt automatisch een review aan bij de gebruikers in het team `@nl-design-system/documentatie`.
 
 :::tip[Praktisch advies]
-Het kan zijn dat een team niet 1-op-1 mapt op de mensen die je als eigenaar wil toewijzen.
+De volgorde is belangrijk; als meerdere regels van toepassing zijn op een wijziging, wordt de laatst matchende regel toegepast.
+Over het algemeen zet je daarom de rollen met meer rechten achteraan.
+
+Het kan zijn dat een team niet 1-op-1 mapt op de mensen die je als eigenaar wilt toewijzen.
 Gebruik in `CODEOWNERS` dan bij voorkeur individuele accounts in plaats van teams.
 
 Gebruik verder comments bij paden waar uit de naamgeving niet direct duidelijk wordt wat de scope is van de bestanden.
