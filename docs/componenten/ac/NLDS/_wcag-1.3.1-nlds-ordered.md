@@ -4,12 +4,12 @@ De Ordered List is herkenbaar voor hulpsoftware als geordende lijst omdat de com
 In de browser Safari ([NL Design System baseline mei 2026](/baseline/2026-05/)) verdwijnt de semantiek van de lijst zodra in CSS `list-style: none` wordt gebruikt. Daarom is de ARIA rol `list` toegevoegd.
 
 ```html
-<ul role="list">
+<ol role="list">
   <li>List-item voorbeeld</li>
   <li>List-item voorbeeld</li>
   <li>List-item voorbeeld</li>
   <li>List-item voorbeeld</li>
-</ul>
+</ol>
 ```
 
 NL Design System richtlijnen:
