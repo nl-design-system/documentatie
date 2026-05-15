@@ -1,17 +1,16 @@
 <!-- @license CC0-1.0 -->
 
-De Ordered List is herkenbaar voor hulpsoftware als ongeordende lijst omdat de component is opgemaakt met `ol` en `li` elementen.
+De Ordered List is herkenbaar voor hulpsoftware als geordende lijst omdat de component is opgemaakt met `ol` en `li` elementen.
+In de browser Safari ([NL Design System baseline mei 2026](/baseline/2026-05/)) verdwijnt de semantiek van de lijst zodra in CSS `list-style: none` wordt gebruikt. Daarom is de ARIA rol `list` toegevoegd.
 
 ```html
-<ol>
+<ul role="list">
   <li>List-item voorbeeld</li>
   <li>List-item voorbeeld</li>
   <li>List-item voorbeeld</li>
   <li>List-item voorbeeld</li>
-</ol>
+</ul>
 ```
-
-Voeg `role="list"` aan het ul-element wanneer je eigen markers gebruikt en daarvoor de standaard styling in CSS overschrijft met `list-style: none`. In de browser Safari ([NL Design System baseline maart 2026](https://nldesignsystem.nl/baseline/2026-03/)) verdwijnt de semantiek van de lijst zodra in CSS `list-style: none` wordt gebruikt. Met de ARIA rol `list` voeg je die semantiek weer toe.
 
 NL Design System richtlijnen:
 
