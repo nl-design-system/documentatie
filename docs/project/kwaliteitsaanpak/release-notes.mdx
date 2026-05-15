@@ -26,8 +26,8 @@ Volg de `CHANGELOG.md` filename-conventie, zodat de release notes op diverse man
 
 ## Automatiseer de release notes
 
-Voorkom dat iedereen de `CHANGELOG.md` file direct moet wijzigen via Git, en daardoor doorlopend merge conflicts ontstaan en de release notes bijhouden een tijdrovend en frustrerend proces is.
+Voorkom dat iedereen de `CHANGELOG.md` file direct moet wijzigen via Git, en daardoor steeds weer merge conflicts ontstaan. De release notes bijhouden moet niet een tijdrovend en frustrerend proces zijn.
 
-Gebruik de [changesets](https://github.com/changesets/changesets) workflow voor het vastleggen van wijzigingen in `.changeset/*.md`-bestanden.
+Gebruik de [changesets workflow](../../handboek/developer/03-conventies/06-versionering/12-changesets.md) voor het vastleggen van wijzigingen in `.changeset/*.md`-bestanden.
 
-Gebruik de `changeset` tool om bij releases de release notes automatisch toe te voegen aan alle relevante `CHANGELOG.md` bestanden. Door automatisch in één keer de changelog samen te stellen, heeft niemand last van merge conflicts doordat meerdere mensen tegelijk `CHANGELOG.md` willen wijzigen.
+Gebruik de `changeset` tool in de CI/CD pipeline om de `CHANGELOG.md` bestanden aan te vullen. Als verder niemand de `CHANGELOG.md` aanpast, wijzigen.

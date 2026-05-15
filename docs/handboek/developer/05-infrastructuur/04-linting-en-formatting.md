@@ -35,6 +35,13 @@ De tools vullen elkaar aan:
 - **Linting bewaakt kwaliteit.** Deze tools controleren code op mogelijke fouten, anti‑patterns en overtredingen van afgesproken regels. Bijvoorbeeld: ongebruikte variabelen, incorrecte afhankelijkheden.
 - **Formatting is voor consistentie.** Code wordt automatisch opgemaakt, zonder de code inhoudelijk te beoordelen. Bijvoorbeeld: voorspelbare inspringing, quotes en regellengte.
 
+Voordelen van deze tools:
+
+- Je kunt sneller werken, omdat veel tools de code automatisch kunnen aanpassen.
+- Je kunt sneller code lezen en begrijpen, wanneer code consistent en voorspelbaar is.
+- Pull requests reviewen is minder werk, als over inspringing en opmaak geen discussie is.
+- De informatie in [`git blame`](https://git-scm.com/docs/git-blame) is duidelijker, wanneer code niet steeds wordt aangepast voor betere opmaak.
+
 ## Gebruikte tooling
 
 Hier sommen we op welke tooling we gebruiken en hoe het wordt gebruikt.
@@ -70,7 +77,7 @@ Prettier ondersteunt standaard al veel talen, maar er zijn ook nog uitbreidingen
 
 Voordelen:
 
--
+- Je hebt minder last van merge conflicts, wanneer code consistent wordt opgemaakt.
 
 ### markdownlint
 
