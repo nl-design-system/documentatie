@@ -4,22 +4,23 @@
  * work well for content-centric websites.
  */
 
+/* stylelint-disable-next-line selector-class-pattern */
 .sr-only {
+  block-size: 1px;
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
+  inline-size: 1px;
+  margin-block: -1px;
+  margin-inline: -1px;
   overflow: hidden;
-  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
   position: absolute;
-  width: 1px;
   word-wrap: normal;
 }
 
 :root {
-  hyphenate-limit-chars: 12 8 4;
-
   /* docsearch tokens */
   --ma-docsearch-button-background-color: white;
   --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
@@ -47,20 +48,21 @@
   --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
   --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
   --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
+
+  -webkit-hyphenate-limit-after: 4;
+  -webkit-hyphenate-limit-before: 8;
+  hyphenate-limit-chars: 12 8 4;
 }
 
 .ma-theme {
-  /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
-  -moz-osx-font-smoothing: auto !important;
-  -webkit-font-smoothing: auto !important;
-  font-size-adjust: 0.5;
-
   /* You can override the default Infima variables here. */
   --ifm-container-width: 870px;
   --ifm-container-width-xl: 960px;
   --ifm-link-hover-color: currentColor;
+  /* stylelint-disable-next-line custom-property-pattern */
   --doc-sidebar-width: clamp(20rem, 30rem, 30vw);
   --ifm-navbar-sidebar-width: clamp(20rem, 30rem, 80vw);
+  /* stylelint-disable-next-line custom-property-pattern */
   --navbar-inner-min-height: 64px;
   --ifm-navbar-background-color: var(--ma-navigation-bar-background-color);
   --ifm-navbar-link-color: var(--ma-navigation-bar-item-color);
@@ -118,14 +120,12 @@
   --utrecht-card-border-radius: 4px;
   --utrecht-card-content-padding-block-end: 20px;
   --utrecht-card-content-padding-block-start: 20px;
-  --utrecht-card-link-hover-background-color: var(--basis-color-action-2-background-hover);
   --utrecht-button-group-margin-block-end: 20px;
   --utrecht-button-group-margin-block-start: 40px;
   --utrecht-badge-list-column-gap: var(--basis-space-inline-sm);
   --utrecht-form-field-description-margin-block-start: 0;
   --utrecht-form-field-margin-block-start: 8px;
   --utrecht-form-field-margin-block-end: 8px;
-
   --utrecht-form-fieldset-legend-font-size: var(--utrecht-form-label-font-size);
   --utrecht-form-fieldset-legend-font-weight: var(--utrecht-form-label-font-weight);
   --utrecht-form-fieldset-legend-line-height: var(--utrecht-form-label-line-height);
@@ -141,43 +141,28 @@
   --utrecht-unordered-list-font-size: var(--basis-text-font-size-md);
   --utrecht-accordion-button-background-color: transparent !important;
   --utrecht-link-text-underline-offset: 4px !important;
-
   --ifm-footer-link-horizontal-spacing: 20px;
+
+  font-size-adjust: 0.5;
+
+  /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
+  -moz-osx-font-smoothing: auto !important;
+  -webkit-font-smoothing: auto !important;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .ma-theme .navbar__logo {
-  margin-right: 0;
+  margin-block-end: 0;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar__brand:focus-visible {
   background-color: transparent !important;
 }
 
-.menu__caret:focus-visible.menu__caret:before {
+/* stylelint-disable-next-line selector-class-pattern */
+.menu__caret:focus-visible.menu__caret::before {
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="var(--basis-focus-color)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
-}
-
-.breadcrumbs__link:focus-visible,
-.DocSearch-Trigger .DocSearch-Button:focus-visible,
-.menu__link:focus-visible,
-.menu__caret:focus-visible,
-.footer__link-item:focus-visible,
-*[aria-label="Ga naar hoofdinhoud"] a:focus-visible,
-.navbar__brand:focus-visible,
-.clean-btn:focus-visible,
-.navbar-sidebar__back:focus-visible {
-  --ifm-color-emphasis-600: var(--basis-focus-color);
-  --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
-  --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
-  --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
-    var(--utrecht-focus-inverse-outline-color, transparent);
-  box-shadow: var(--_ma-focus-ring-box-shadow);
-  outline-color: var(--basis-focus-outline-color, revert);
-  outline-offset: var(--utrecht-focus-outline-offset, revert);
-  outline-style: var(--utrecht-focus-outline-style, revert);
-  outline-width: var(--utrecht-focus-outline-width, revert);
-  background-color: var(--basis-focus-background-color);
-  color: var(--basis-focus-color);
 }
 
 /* HACK: Hackysnacky CSS that should be solved better in the chefs-kiss website */
@@ -192,49 +177,58 @@ p {
 .utrecht-heading-5,
 .utrecht-heading-6,
 .utrecht-paragraph {
+  hyphens: none;
   max-inline-size: 38rem;
   word-break: normal;
-  hyphens: none;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .menu__link {
-  text-decoration: none;
-  padding-inline: 20px;
-  border-radius: 0;
   border-inline-start: 4px solid transparent;
+  border-radius: 0;
+  padding-inline: 20px;
+  text-decoration: none;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .menu__link--active,
+/* stylelint-disable-next-line selector-class-pattern */
 .menu__list-item-collapsible--active {
   background-color: var(--ifm-menu-color-background-active);
   border-inline-start-color: var(--basis-color-accent-1-border-active);
   color: var(--basis-color-accent-1-color-active);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .menu__link:hover,
+/* stylelint-disable-next-line selector-class-pattern */
 .menu__list-item-collapsible:hover {
   background-color: var(--basis-color-accent-1-bg-hover);
   border-inline-start-color: var(--basis-color-accent-1-border-hover);
   color: var(--basis-color-accent-1-color-hover);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .menu__caret {
   padding-inline: 10px;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .menu {
-  padding: 0 !important;
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
 }
 
 .ma-navigation-bar-item {
   --utrecht-link-color: white;
   --utrecht-link-text-decoration: none;
-  min-height: 100%;
-  border-block-start-width: 4px;
-  border-block-start-style: solid;
-  border-color: transparent;
+
   align-content: center;
+  border-block-start-style: solid;
+  border-block-start-width: 4px;
+  border-color: transparent;
   line-height: 2;
+  min-block-size: 100%;
 }
 
 .ma-navigation-bar-item:hover {
@@ -243,42 +237,55 @@ p {
   color: var(--ma-navigation-bar-item-hover-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar {
-  width: 100%;
+  inline-size: 100%;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar__link--active {
   background-color: var(--ma-navigation-bar-item-active-background-color);
   border-block-start-color: var(--ma-navigation-bar-item-active-border-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
+.navbar-sidebar {
+  --ifm-menu-color-background-active: transparent;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
 .ma-theme .navbar-sidebar {
   --ifm-menu-color: var(--ma-navigation-bar-item-color);
 }
 
-.navbar-sidebar .menu__caret:before {
+/* stylelint-disable-next-line selector-class-pattern */
+.navbar-sidebar .menu__caret::before {
   --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="white" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar__brand button {
   --ifm-color-emphasis-600: white;
 
   border-color: white;
-  border-width: var(--utrecht-button-secondary-action-border-width);
-  border-style: solid;
   border-radius: var(--utrecht-button-border-radius);
+  border-style: solid;
+  border-width: var(--utrecht-button-secondary-action-border-width);
   padding-block-end: var(--utrecht-button-padding-block-end);
   padding-block-start: var(--utrecht-button-padding-block-start);
   padding-inline-end: var(--utrecht-button-padding-inline-end);
   padding-inline-start: var(--utrecht-button-padding-inline-start);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar__brand button:hover {
   --ifm-color-emphasis-600: var(--utrecht-button-secondary-action-hover-color);
+
   background-color: var(--utrecht-button-secondary-action-hover-background-color);
   color: var(--utrecht-button-secondary-action-hover-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar__back {
   background-color: var(--basis-color-accent-1-inverse-bg-default);
   color: var(--ma-navigation-bar-item-color);
@@ -286,39 +293,57 @@ p {
   padding-block-start: 20px;
 }
 
-.navbar-sidebar {
-  --ifm-menu-color-background-active: transparent;
-}
-
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar__back:hover {
   background-color: var(--ma-navigation-bar-item-hover-background-color);
   color: var(--ma-navigation-bar-item-hover-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar .menu__link--active {
   background-color: var(--basis-color-accent-1-inverse-bg-active);
   border-inline-start-color: var(--basis-color-accent-1-inverse-border-active);
   color: var(--basis-color-accent-1-inverse-color-active);
 }
+
+/* stylelint-disable-next-line selector-class-pattern */
+.theme-doc-sidebar-item-link-level-3 .menu__link,
+/* stylelint-disable-next-line selector-class-pattern */
+.theme-doc-sidebar-item-category-level-3 .menu__link {
+  padding-inline-start: 32px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.theme-doc-sidebar-item-link-level-4 .menu__link,
+/* stylelint-disable-next-line selector-class-pattern */
+.theme-doc-sidebar-item-category-level-4 .menu__link {
+  padding-inline-start: 48px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.theme-doc-sidebar-item-link-level-5 .menu__link,
+/* stylelint-disable-next-line selector-class-pattern */
+.theme-doc-sidebar-item-category-level-5 .menu__link {
+  padding-inline-start: 64px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar .menu__link:hover,
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar .menu__list-item-collapsible:hover,
+/* stylelint-disable-next-line selector-class-pattern */
 .navbar-sidebar .menu__caret:hover {
   background-color: var(--basis-color-accent-1-inverse-bg-hover);
   border-inline-start-color: var(--basis-color-accent-1-inverse-border-hover);
   color: var(--basis-color-accent-1-inverse-color-hover);
 }
 
-.theme-doc-sidebar-item-link-level-3 .menu__link,
-.theme-doc-sidebar-item-category-level-3 .menu__link {
-  padding-inline-start: 32px;
+/* stylelint-disable-next-line selector-class-pattern */
+.theme-unlisted-banner {
+  display: none;
 }
 
-.theme-doc-sidebar-item-link-level-4 .menu__link,
-.theme-doc-sidebar-item-category-level-4 .menu__link {
-  padding-inline-start: 48px;
-}
-
-/* stylelint-disable -- Overwriting DocSearch, we don't have control over the markup. */
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch {
   --docsearch-subtle-color: var(--ma-docsearch-button-border-color);
   --docsearch-muted-color: var(--utrecht-button-secondary-action-color);
@@ -332,48 +357,59 @@ p {
   --docsearch-text-color: var(--ma-docsearch-modal-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Input {
   margin-inline: 1rem;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Logo path,
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Logo rect {
   fill: currentColor !important;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Form {
   border-block-end-color: var(--ma-docsearch-modal-border-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Divider {
   border-color: var(--ma-docsearch-modal-border-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Footer {
   border-block-start-color: var(--ma-docsearch-modal-border-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Hit[aria-selected="true"] .DocSearch-Hit-title,
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Hit[aria-selected="true"] .DocSearch-Hit-path {
   color: var(--ma-docsearch-modal-hit-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Hit .DocSearch-Hit-title mark {
-  font-weight: var(--ma-docsearch-modal-hit-mark-font-weight);
   color: inherit;
+  font-weight: var(--ma-docsearch-modal-hit-mark-font-weight);
   text-decoration: none;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Trigger {
   align-items: center;
   box-sizing: border-box;
   display: flex;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Trigger .DocSearch-Button {
+  block-size: unset;
   border-radius: var(--ma-docsearch-button-border-radius);
   box-sizing: border-box;
-  height: unset;
   padding-block-end: var(--ma-docsearch-button-padding-block-end);
   padding-block-start: var(--ma-docsearch-button-padding-block-start);
   padding-inline-end: var(--ma-docsearch-button-padding-inline-end);
@@ -387,12 +423,14 @@ p {
     border-color: var(--ma-docsearch-button-hover-border-color);
     color: var(--ma-docsearch-button-hover-border-color);
   }
+
   &:focus-visible {
     --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
     --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
   }
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Trigger .DocSearch-Button-Key {
   --ma-focus-indicator-color: var(--ma-docsearch-button-key-focus-visible-color);
 
@@ -401,16 +439,20 @@ p {
   color: var(--ma-docsearch-button-key-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .DocSearch-Button-Placeholder {
-  font-family: var(--ma-docsearch-button-font-family);
+  font-family: var(--ma-docsearch-button-font-family), sans-serif;
   font-weight: 700;
 }
 
 /* Hide Docusaurus items */
 aside a[href="/"],
 aside button[title="Zijbalk inklappen"],
+/* stylelint-disable-next-line selector-class-pattern */
 .sidebar__main-category > div,
+/* stylelint-disable-next-line selector-class-pattern */
 .theme-doc-footer,
+/* stylelint-disable-next-line selector-class-pattern */
 .pagination-nav {
   display: none !important;
 }
@@ -425,10 +467,10 @@ aside button[title="Zijbalk inklappen"],
 }
 
 .pra-donutchart-chart {
+  block-size: 20px !important;
+  inline-size: 20px !important;
   padding-block: 0 !important;
   padding-inline: 0 !important;
-  height: 20px !important;
-  width: 20px !important;
 }
 
 .pra-donutchart-legend {
@@ -439,12 +481,11 @@ aside button[title="Zijbalk inklappen"],
 .utrecht-card {
   --utrecht-heading-3-margin-block-start: 1rem;
   --utrecht-heading-3-font-size: 1.5rem;
-  -_utrecht-link-state-color: inherit;
   --utrecht-link-text-decoration: none;
-
   --utrecht-card-padding-inline-end: 20px;
   --utrecht-card-padding-inline-start: 20px;
 
+  -_utrecht-link-state-color: inherit;
   padding-inline-end: var(--utrecht-card-padding-inline-end);
   padding-inline-start: var(--utrecht-card-padding-inline-start);
 }
@@ -489,113 +530,147 @@ aside button[title="Zijbalk inklappen"],
 
 .utrecht-button-link {
   --ifm-link-hover-color: var(--_utrecht-button-hover-color);
+
   /* --ifm-link-hover-decoration: none; */
 }
 
+/* stylelint-disable-next-line selector-id-pattern, selector-max-id */
 #__docusaurus,
 .utrecht-page-layout {
   flex-grow: 1;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .main-wrapper {
-  width: 100%;
+  inline-size: 100%;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .footer {
-  width: 100%;
+  inline-size: 100%;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .footer .container {
-  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
   padding-inline-start: 20px;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .footer__link-separator {
   display: none;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .footer__links {
+  column-gap: 20px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
+  margin-block: 0;
+  margin-inline: 0;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .footer__link-item {
-  text-underline-offset: var(--utrecht-link-text-underline-offset);
   text-decoration-skip-ink: auto;
+  text-underline-offset: var(--utrecht-link-text-underline-offset);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .footer__link-item svg {
   display: none;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .theme-doc-sidebar-container {
-  margin-top: 0 !important;
+  margin-block-start: 0 !important;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .table-of-contents,
+/* stylelint-disable-next-line selector-class-pattern */
 .table-of-contents ul {
   font-size: var(--basis-text-font-size-sm) !important;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .table-of-contents__link {
   padding-block: var(--basis-space-block-sm);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .breadcrumbs__link {
   color: var(--basis-color-action-2-color-default);
-  text-underline-offset: var(--utrecht-link-text-underline-offset);
   font-size: var(--basis-text-font-size-sm);
   text-decoration-skip-ink: auto;
+  text-underline-offset: var(--utrecht-link-text-underline-offset);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .breadcrumbs__link:hover {
+  background-color: none;
   color: var(--basis-color-action-2-color-hover);
   text-decoration: none;
-  background-color: none;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .breadcrumbs__link:active {
+  background-color: none;
   color: var(--basis-color-action-2-color-active);
   text-decoration: none;
-  background-color: none;
 }
 
-.breadcrumbs__link[href="/"]:after {
+/* stylelint-disable-next-line selector-class-pattern */
+.breadcrumbs__link[href="/"]::after {
   content: "Home";
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .breadcrumbs__link[href="/"] svg {
   display: none;
 }
 
-.containter {
-  padding-block: 20px;
-}
-
-.filter-accordion {
+.ma-filter-accordion {
   --utrecht-accordion-panel-padding-block-start: 0;
 }
 
-.filter-accordion .utrecht-form-fieldset:first-child {
+.ma-filter-accordion .utrecht-form-fieldset:first-child {
   --utrecht-heading-6-margin-block-start: 0;
 }
 
 /* Add styling to code blocks  */
+code,
+pre {
+  font-family: "Fira Code VF", monospace !important;
+  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
+  font-size: 16px;
+  vertical-align: 1%;
+}
+
+code {
+  background-color: transparent !important;
+  border-inline-end: 0;
+  border-inline-start: 0;
+  border-width: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
 code[class*="language-"] {
   background-color: var(--nlds-code-block-background-color);
   color: var(--nlds-code-block-code-color);
   direction: ltr;
-  font-family: var(--nlds-code-block-font-family, monospace);
+  font-family: var(--nlds-code-block-font-family, monospace), monospace;
   -webkit-hyphens: var(--nlds-code-block-hyphens, none);
   -moz-hyphens: var(--nlds-code-block-hyphens, none);
+  -ms-hyphens: var(--nlds-code-block-hyphens, none);
   hyphens: var(--nlds-code-block-hyphens, none);
   line-height: var(--nlds-code-block-line-height, 1.5);
-  ms-hyphens: var(--nlds-code-block-hyphens, none);
   -moz-tab-size: var(--nlds-code-block-tab-size, 4);
   -o-tab-size: var(--nlds-code-block-tab-size, 4);
   tab-size: var(--nlds-code-block-tab-size, 4);
-  text-align: left;
+  text-align: start;
   white-space: pre;
   word-break: normal;
   word-spacing: normal;
@@ -604,17 +679,17 @@ code[class*="language-"] {
 pre[class*="language-"] {
   background-color: var(--nlds-code-block-background-color);
   color: var(--nlds-code-block-color);
-  font-family: var(--nlds-code-block-font-family, monospace);
+  font-family: var(--nlds-code-block-font-family, monospace), monospace;
   font-size: var(--nlds-code-block-font-size, 1em);
   -webkit-hyphens: var(--nlds-code-block-hyphens, none);
   -moz-hyphens: var(--nlds-code-block-hyphens, none);
+  -ms-hyphens: var(--nlds-code-block-hyphens, none);
   hyphens: var(--nlds-code-block-hyphens, none);
   line-height: var(--nlds-code-block-line-height, 1.5);
   margin-block-end: var(--nlds-code-block-margin-inline-end, 0.5em);
   margin-block-start: var(--nlds-code-block-margin-inline-start, 0.5em);
   margin-inline-end: var(--nlds-code-block-margin-inline-end, 0);
   margin-inline-start: var(--nlds-code-block-margin-inline-start, 0);
-  ms-hyphens: var(--nlds-code-block-hyphens, none);
   overflow: auto;
   padding-block-end: var(--nlds-code-block-padding-block-end, 1em);
   padding-block-start: var(--nlds-code-block-padding-block-start, 1em);
@@ -623,7 +698,7 @@ pre[class*="language-"] {
   -moz-tab-size: var(--nlds-code-block-tab-size, 4);
   -o-tab-size: var(--nlds-code-block-tab-size, 4);
   tab-size: var(--nlds-code-block-tab-size, 4);
-  text-align: left;
+  text-align: start;
   white-space: pre;
   word-break: normal;
   word-spacing: normal;
@@ -632,7 +707,8 @@ pre[class*="language-"] {
 
 /* avoid double spacing */
 pre > code {
-  padding: 0 !important;
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
 }
 
 ul + div[class*="language-"],
@@ -643,23 +719,22 @@ ul + .nlds-guideline_src-components-Guideline-module {
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
-code[class*="language-"] ::selection,
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
   background: var(--nlds-code-block-selected-background-color);
   text-shadow: none;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 code.language-css .token.string {
   color: var(--nlds-code-block-css-token-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 code .style .token.string {
   color: var(--nlds-code-block-style-token-color);
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 code .namespace {
   color: var(--nlds-code-block-namespace-color);
 }
@@ -669,11 +744,6 @@ pre {
   --nlds-code-block-color: #fff;
   --nlds-code-block-font-family: "Fira Code", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
   --nlds-code-block-tab-size: 4;
-  --nlds-code-block-tab-size: 4;
-  --nlds-code-block-tab-size: 4;
-  --nlds-code-block-hyphens: none;
-  --nlds-code-block-hyphens: none;
-  --nlds-code-block-hyphens: none;
   --nlds-code-block-hyphens: none;
   --nlds-code-block-padding-inline-start: 1em;
   --nlds-code-block-padding-inline-end: 1em;
@@ -681,11 +751,9 @@ pre {
   --nlds-code-block-padding-block-end: 1em;
   --nlds-code-block-margin-inline-start: 0;
   --nlds-code-block-margin-inline-end: 0;
-  --nlds-code-block-margin-inline-start: 0;
-  --nlds-code-block-margin-inline-end: 0;
   --nlds-code-block-background-color: #011627;
   --nlds-code-block-selected-background-color: rgb(29 59 83 / 99%);
-  --nlds-code-block-comment-color: rgb(99 119 119);
+  --nlds-code-block-comment-color: rgb(130 155 155);
   --nlds-code-block-comment-font-style: italic;
   --nlds-code-block-prolog-color: rgb(99 119 119);
   --nlds-code-block-prolog-font-style: italic;
@@ -713,14 +781,14 @@ pre {
   --nlds-code-block-attr-name-font-style: italic;
   --nlds-code-block-inserted-color: rgb(173 219 103);
   --nlds-code-block-inserted-font-style: italic;
-  --nlds-code-block-string-color: rgb(111, 211, 206);
+  --nlds-code-block-string-color: rgb(111 211 206);
   --nlds-code-block-url-color: rgb(173 219 103);
   --nlds-code-block-entity-color: rgb(173 219 103);
   --nlds-code-block-css-token-color: rgb(173 219 103);
   --nlds-code-block-style-token-color: rgb(173 219 103);
-  --nlds-code-block-class-name-color: rgb(139, 214, 255);
-  --nlds-code-block-maybe-class-name-color: rgb(255, 139, 216);
-  --nlds-code-block-atrule-color: rgb(189, 139, 255);
+  --nlds-code-block-class-name-color: rgb(139 214 255);
+  --nlds-code-block-maybe-class-name-color: rgb(255 139 216);
+  --nlds-code-block-atrule-color: rgb(189 139 255);
   --nlds-code-block-attr-value-color: rgb(255 203 139);
   --nlds-code-block-regex-color: rgb(214 222 235);
   --nlds-code-block-important-color: rgb(214 222 235);
@@ -728,61 +796,92 @@ pre {
   --nlds-code-block-keyword-color: rgb(214 222 235);
 }
 
-.footer__links {
-  margin: 0;
-}
-
-code,
-pre {
-  font-family: "Fira Code VF" !important;
-  font-feature-settings: "cv13", "cv20", "ss01", "ss02", "ss03";
-  font-size: 16px;
-  vertical-align: 1%;
-}
-code {
-  background-color: transparent !important;
-  border-inline-end: 0;
-  border-inline-start: 0;
-  border-width: 0;
-  padding: 0;
-}
-
-@media screen and (max-width: 70rem) {
+@media screen and (width <= 70rem) {
+  /* stylelint-disable-next-line selector-class-pattern */
   .navbar__brand {
-    margin-right: 8px;
+    margin-inline-end: 8px;
   }
 }
 
-@media screen and (max-width: 62rem) {
+@media screen and (width <= 62rem) {
+  /* stylelint-disable-next-line selector-class-pattern */
   .navbar__items:first-of-type {
     justify-content: space-between;
   }
 
+  /* stylelint-disable-next-line selector-class-pattern */
   .navbar__items--right {
-    min-width: 40vw;
+    min-inline-size: 40vw;
   }
 }
 
-@media screen and (max-width: 29rem) {
+@media screen and (width <= 29rem) {
+  /* stylelint-disable-next-line selector-class-pattern */
   .navbar__items--right {
-    min-width: 30vw;
+    min-inline-size: 30vw;
   }
 }
 
-@media screen and (max-width: 20rem) {
+@media screen and (width <= 20rem) {
+  /* stylelint-disable-next-line selector-class-pattern */
   .navbar__items--right {
-    min-width: 25vw;
+    min-inline-size: 25vw;
   }
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .announcementbar-content {
   --utrecht-icon-color: var(--basis-color-accent-1-inverse-color-subtle);
   --utrecht-icon-inset-block-start: 5px;
   --utrecht-link-color: white;
   --utrecht-link-text-decoration-color: white;
   --utrecht-link-hover-text-decoration-thickness: 2px;
-  min-height: 40px;
-  width: 100vw;
-  padding-block: 0.5rem;
+
   font-size: 1.125rem;
+  inline-size: 100vw;
+  min-block-size: 40px;
+  padding-block: 0.5rem;
 }
+
+ams-page-header,
+ams-page-footer {
+  inline-size: 100%;
+}
+
+.nl-skip-link {
+  z-index: 10000;
+}
+
+/* Fix contrast for links in success alerts (Tips) */
+/* stylelint-disable-next-line selector-class-pattern */
+.alert--success a {
+  color: #285f8f !important;
+
+  /* Satisfies AA contrast on #e6f6e6 */
+}
+
+/* stylelint-disable selector-class-pattern, no-descending-specificity */
+.breadcrumbs__link:focus-visible,
+.DocSearch-Trigger .DocSearch-Button:focus-visible,
+.menu__link:focus-visible,
+.menu__caret:focus-visible,
+.footer__link-item:focus-visible,
+*[aria-label="Ga naar hoofdinhoud"] a:focus-visible,
+.navbar__brand:focus-visible,
+.clean-btn:focus-visible,
+.navbar-sidebar__back:focus-visible {
+  --ifm-color-emphasis-600: var(--basis-focus-color);
+  --ma-docsearch-button-key-background-color: var(--ma-docsearch-button-key-focus-visible-background-color);
+  --ma-docsearch-button-key-color: var(--ma-docsearch-button-key-focus-visible-color);
+  --_ma-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
+
+  background-color: var(--basis-focus-background-color);
+  box-shadow: var(--_ma-focus-ring-box-shadow);
+  color: var(--basis-focus-color);
+  outline-color: var(--basis-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+}
+/* stylelint-enable selector-class-pattern */
