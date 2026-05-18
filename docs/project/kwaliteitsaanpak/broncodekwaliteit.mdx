@@ -19,7 +19,7 @@ import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
 <Paragraph lead>
   Broncodekwaliteit moet zoveel mogelijk automatisch gecontroleerd en verbeterd worden. Continuous integration checks
-  garanderen de kwaliteit van code die wordt gemerged in de main branch. Effectieve integratie in de workflow van
+  garanderen de kwaliteit van code die wordt gemerged in de `main` branch. Effectieve integratie in de workflow van
   developers verhoogt de snelheid van werken en zorgt voor draagvlak van rigide kwaliteitseisen.
 </Paragraph>
 
@@ -41,19 +41,19 @@ Gebruik GitHub Actions om `pnpm run --if-present lint` uit te voeren.
 
 Configureer de lint-tools om geen warnings te geven, maar alleen fouten. Maak het via een GitHub Action verplicht in continuous integration dat alleen Pull Requests met 0 fouten gemerged mogen worden. Dat heeft meerdere voordelen:
 
-- de monitoring is per definitie ingebouwd: de main branch heeft 0 fouten
+- de monitoring is per definitie ingebouwd: de `main` branch heeft 0 fouten
 - je wordt niet geconfronteerd met warnings in onderdelen van de code waar je geen ervaring mee hebt
 - het is altijd duidelijk wie de verantwoordelijkheid heeft om de fout op te lossen
 
 ## Automatische opmaak van code
 
-Gebruik waarm mogelijk tools om code automatisch op te maken, zoals Prettier en EditorConfig.
+Gebruik waarm mogelijk tools om code automatisch op te maken, zoals Prettier en EditorConfig, voor alle bestandsformaten die vaak worden gebruikt en waar goede tools voor zijn.
 
-Gebruik waar mogelijk UTF-8 als encoding.
+Gebruik waar mogelijk UTF-8 als encoding, zoals in tekstbestanden, i18n bestanden etcetera.
 
 ## Aanbevolen tools \{#tools\}
 
-Gebruik waar mogelijk de aanbevolen tools:
+Gebruik waar de aanbevolen tools in elke repository waar deze bestandsformaten worden gebruikt:
 
 - Gebruik een [EditorConfig](https://editorconfig.org) configuratie in `.editorconfig` voor basis-instellingen voor code-opmaak.
 - Gebruik [Prettier](https://prettier.io) voor talen en file extensions waar we goede ervaringen mee hebben:
@@ -78,9 +78,9 @@ Je kunt Git instellen om elke keer dat je een commit doet automatisch de code co
 
 Installeer de pre-commit hook met `pnpm run prepare`, nadat je `pnpm install` hebt gedaan. Hierna zul je zien dat `git commit` extra controles uitvoert voordat de commit wordt opgeslagen.
 
-Wanneer je geen tijd hebt om de fouten op te lossen, dan kun je met `git commit --no-verify` de commit doen zonder checks, zodat je in elk geval een backup hebt van je code.
+Wanneer je geen tijd hebt om de fouten op te lossen, dan kun je met `git commit --no-verify` de commit doen zonder checks, zodat je in elk geval een backup hebt van je code. [Continuous integration](./continuous-integration.mdx) checks zullen voorkomen dat deze onvoltooide code per ongeluk al wordt gemerged.
 
-Pre-commit hooks helpen ook te garanderen dat de code van elke atomic commit klopt, en niet alleen de code van de laatste commit in de branch. Hiermee wordt het makkelijker om met `git cherry-pick` alvast enkele commits te mergen naar de main branch, voordat de volledige branch klaar is.
+Pre-commit hooks helpen ook te garanderen dat de code van elke atomic commit klopt, en niet alleen de code van de laatste commit in de branch. Hiermee wordt het makkelijker om met `git cherry-pick` alvast enkele commits te mergen naar de `main` branch, voordat de volledige branch klaar is.
 
 ### Beheer van de pre-commit hook
 

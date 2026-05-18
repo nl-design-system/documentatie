@@ -13,11 +13,21 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
 # Internationalisatie en localisatie
+
+<Paragraph appearance="lead">
+  Voor betere onderhoudbaarheid en om te voldoen aan WCAG wat betreft "Taal van de onderdelen", is het aanbevolen om
+  hardcoded teksten voor de user-interace apart op te slaan in i18n-bestanden, in plaats van hardcoded teksten
+  gebruiken.
+</Paragraph>
+
+Het niet gebruiken van i18n kan worden beschouwd als "technical debt", en daarvoor moet een issue aangemaakt worden op de backlog.
 
 ## Taal
 
-De software moet ontwikkeld worden met ondersteuning voor tweetaligheid. De standaard-taal van de ontwikkelde software moet Nederlands zijn. De software moet ook geconfigureerd kunnen worden met een andere taal.
+Nieuwe software moet ontwikkeld worden met ondersteuning voor tweetaligheid, tenzij de product owner een uitzondering wil maken. De standaard-taal van de ontwikkelde software moet Nederlands zijn. De software moet ook geconfigureerd kunnen worden met een andere taal.
 
 Het moet mogelijk zijn om left-to-right talen te gebruiken (zoals Nederlands en Engels), om right-to-left talen te gebruiken (zoals Arabisch en Farsi), en om CJK-talen te gebruiken.
 
