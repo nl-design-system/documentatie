@@ -14,6 +14,9 @@ export interface NavigationItem {
   /** The label of the item to display to the user */
   label?: string;
 
+  /** The description of the markdown frontmatter for this item */
+  description?: string;
+
   /** The Astro Content Collection ID of the item */
   id?: string;
 
@@ -115,6 +118,7 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
 
   const item: NavigationItem = {
     id: entry?.id,
+    description: entry?.data.description,
     label,
     filePath: entry?.filePath,
     parent: options?.parent,
@@ -168,6 +172,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
   let folderName: string | undefined;
   const indexOptions = await options?.index;
   let indexFile: NavigationItem | undefined;
+  let indexOverview: NavigationItem | undefined;
 
   if (options.filePath) {
     const baseDir = resolve('../../');
@@ -177,7 +182,10 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
     folderName = options.filePath.split('/').at(-1);
     files = (await readdir(targetDir, { withFileTypes: true }))
       .filter((file) => file.name.startsWith('_') === false)
-      .filter((file) => file.name.endsWith('.md') || file.name.endsWith('.mdx') || file.isDirectory());
+      .filter(
+        (file) =>
+          file.name.endsWith('.md') || file.name.endsWith('.mdx') || file.name === 'index.json' || file.isDirectory(),
+      );
 
     // Loop over all files in the directory
     await Promise.all(
@@ -198,6 +206,11 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
           // If an index file is provided in the options, ignore it as sub item
           else if (indexOptions?.filePath?.endsWith(file.name)) {
             return;
+          }
+
+          // Generate an overview page based on a config file
+          else if (file.name === 'index.json') {
+            indexOverview = await navigationItem(filePath);
           }
 
           // If the entry is marked as `unlisted`, ignore it
@@ -226,7 +239,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
   // Sort items alphabetically based on their label
   const sortedItems = options.filePath ? sortItems(items) : items;
 
-  const index = indexOptions || indexFile;
+  const index = indexOptions || indexFile || indexOverview;
 
   // Resulting NavigationGroup to be returned
   const group: NavigationGroup = {
@@ -262,8 +275,8 @@ async function getEntryWithFilepath(filePath: string) {
   return entries.find((entry) => filePath && entry.filePath?.endsWith(filePath));
 }
 
-function toTitleCase(string?: string) {
-  if (!string) return string;
-  const [firstLetter, ...rest] = [...string];
-  return `${firstLetter.toUpperCase()}${rest.join('')}`.replaceAll('-', ' ');
+function toTitleCase(input: string | undefined): string | undefined {
+  if (input === undefined) return input;
+  const [firstLetter, ...rest] = [...input];
+  return String(`${firstLetter.toUpperCase()}${rest.join('')}`).replaceAll('-', ' ');
 }
