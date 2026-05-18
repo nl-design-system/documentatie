@@ -5,6 +5,7 @@ export const navigation = navigationGroup({
   items: [
     navigationGroup({
       label: 'Handboek',
+      index: navigationItem('docs/handboek/index.json'),
       items: [
         navigationItem('docs/handboek/introductie.md'),
         navigationItem('docs/handboek/estafettemodel.mdx'),
@@ -34,6 +35,7 @@ export const navigation = navigationGroup({
     navigationGroup({ filePath: 'docs/voorbeelden' }),
     navigationGroup({
       label: 'Community',
+      index: navigationItem('docs/community/index.json'),
       items: [
         navigationItem('docs/community/sluit-je-aan.mdx'),
         navigationItem('docs/community/wie-doet-mee.mdx'),
