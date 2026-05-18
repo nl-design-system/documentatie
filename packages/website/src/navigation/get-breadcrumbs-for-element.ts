@@ -1,6 +1,6 @@
-import { navigationElements, type NavigationElement, type NavigationGroup } from './index';
+import type { NavigationElement, NavigationGroup } from './index';
 import { navigation } from '../navigation.config';
-import type { NavigationItem } from './index.ts';
+import { getNavigationElement } from './get-navigation-element';
 
 /**
  * Based on the navigation config, get the breadcrumb path of
@@ -11,7 +11,7 @@ export async function getBreadcrumbsForElement(input: string | NavigationElement
   await navigation;
 
   const parents: NavigationGroup[] = [];
-  const child: NavigationElement | undefined = typeof input === 'string' ? findNavigationElement(input) : input;
+  const child: NavigationElement | undefined = typeof input === 'string' ? await getNavigationElement(input) : input;
 
   if (!child) return [];
 
@@ -26,16 +26,6 @@ export async function getBreadcrumbsForElement(input: string | NavigationElement
 }
 
 /**
- * Find an element in the navigation tree based on a href.
- */
-function findNavigationElement(href: string) {
-  return navigationElements.find((element: NavigationElement) => {
-    const _href = (element as NavigationItem)?.href || (element as NavigationGroup)?.index?.href;
-    return trimSlashes(_href) === trimSlashes(href);
-  });
-}
-
-/**
  * Find all parents for a given `NavigationElement`.
  */
 function findNavigationElementParents(element: NavigationElement, list: NavigationElement[]) {
@@ -43,15 +33,4 @@ function findNavigationElementParents(element: NavigationElement, list: Navigati
     list.push(element.parent);
     findNavigationElementParents(element.parent, list);
   }
-}
-
-/**
- * Trim the slashes of a string (usually an `href`) to use in a comparison.
- * Since the `href` of an `NavigationItem` can be based on an
- * Astro Content Collection Id's, a Docusaurus ID, the existance of a leading
- * or trailing slash is not guaranteed. Stripping them results in a more stable
- * comparison
- */
-function trimSlashes(string?: string) {
-  return string ? string.replace(/\/$/, '').replace(/^\//, '') : undefined;
 }

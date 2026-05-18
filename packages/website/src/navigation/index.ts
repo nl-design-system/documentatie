@@ -5,6 +5,7 @@ import type { Dirent } from 'node:fs';
 import { sortItems } from './sort-items';
 export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element';
 export { getMainNavigation } from './get-main-navigation';
+export { getNavigationElement } from './get-navigation-element';
 
 /**
  * An item in a navigation tree. The item references an Content Collection ID.
