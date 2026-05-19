@@ -7,28 +7,31 @@ pagination_label: Ordered List
 description: Lijst waarvan de volgorde van items betekenis heeft.
 slug: /ordered-list
 keywords:
+  - alfabetische lijst
+  - array
+  - enum
   - genummerde lijst
   - geordende lijst
-  - gestructureerde lijst
-  - items
-  - itemslijst
+  - gesorteerde lijst
+  - inhoudsopgave
   - lijst
   - lijst met nummers
-  - lijsten
   - list
-  - list group
+  - list items
+  - nested list
   - numbered list
-  - nummer
+  - numerieke lijst
+  - nummer lijst
   - nummering
-  - nummerlijst
-  - nummering
-  - oplopende lijst
-  - order
-  - ordered items
+  - ol
+  - opsomming
+  - opsommings lijst
+  - ordered
   - ordered list
-  - sequence list
-  - step-by-step list
-  - volgorde lijst
+  - rangschikking
+  - sequence
+  - stappen
+  - vertical list
 ---
 
 {/* @license CC0-1.0 */}
@@ -39,6 +42,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
@@ -58,6 +62,6 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Implementations component={component} headingLevel={3} />
 
-## Help component verbeteren
+<Related component={component} />
 
-<HelpImproveComponent component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={2} />

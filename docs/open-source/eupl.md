@@ -1,9 +1,11 @@
 ---
-title: EUPL 1.2 licentie · Open Source
+title: EUPL 1.2 licentie
+title_sm: EUPL 1.2
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: EUPL 1.2
 sidebar_position: 1
+navigation_order: 1
 pagination_label: EUPL 1.2 licentie
 description: NL Design System gebruikt de EUPL-1.2 licentie voor code en design.
 keywords:

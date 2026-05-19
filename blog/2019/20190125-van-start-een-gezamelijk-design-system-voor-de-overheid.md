@@ -54,5 +54,5 @@ Mocht je tot in meer detail willen meedenken over de risico’s, kansen en proje
 Het gezamenlijke design system is een project dat de dienstverlening van de overheid naar een hoger niveau kan tillen, dat samenwerking over overheden heen stimuleert en dat daarnaast een flink aantal technische en inhoudelijke uitdagingen kent. Dat wil je meemaken, toch? Je bent van harte welkom!
 
 - Kom naar de [meetup op 12 februari](http://www.gebruikercentraal.nl/agenda/meetup-gezamenlijk-design-system-van-start/). Voor iedereen die (mogelijk) wil bijdragen aan het gezamenlijke design system.
-- Praat mee in het [Slack kanaal van Code for NL](https://praatmee.codefor.nl/), waar we de belangrijkste gesprekken voeren.
+- Praat mee in op [Slack](/slack), waar we de belangrijkste gesprekken voeren.
 - Heb je specifieke vragen? Contacteer Edo Plantinga op Edo.Plantinga@ictu.nl.

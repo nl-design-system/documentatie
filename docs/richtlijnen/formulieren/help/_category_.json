@@ -2,7 +2,7 @@
   "label": "Voorkom fouten",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/formulieren/help/README"
+    "id": "richtlijnen/formulieren/help/index"
   },
   "customProps": {
     "showLinkedDoc": true

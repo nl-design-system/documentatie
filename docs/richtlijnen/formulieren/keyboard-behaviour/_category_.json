@@ -2,7 +2,7 @@
   "label": "Toetsenbord",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/formulieren/keyboard-behaviour/README"
+    "id": "richtlijnen/formulieren/keyboard-behaviour/index"
   },
   "customProps": {
     "showLinkedDoc": true

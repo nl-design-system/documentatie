@@ -47,35 +47,19 @@ import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/_component_gebruiken_intro.md";
 import LinkIllustration from "@nl-design-system-candidate/link-docs/docs/anatomy/anatomy.svg";
-import Wcag111 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.1.1-link.md";
-import Wcag1411 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.11-link.md";
-import Wcag1412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12.md";
-import Wcag141 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.1-link.md";
-import Wcag143 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.3.md";
-import Wcag144 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md";
-import Wcag211 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.1.1-link.md";
-import Wcag247 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.7.md";
-import Wcag252 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.2.md";
-import Wcag253 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.3-link.md";
-import Wcag255 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.5.md";
-import Wcag312 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md";
-import Wcag324 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.2.4.md";
-import Wcag412 from "@nl-design-system-unstable/documentation/componenten/ac/_wcag-4.1.2-link.md";
-import Wcag145 from "@nl-design-system-unstable/documentation/wcag/summaries/_1.4.5-summary.md";
-import Wcag212 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.1.2-summary.md";
-import Wcag2411 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.11-summary.md";
-import Wcag244 from "@nl-design-system-unstable/documentation/wcag/summaries/_2.4.4-summary.md";
+import * as Acceptatiecriteria from "./_acceptatiecriteria.tsx";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, Link } from "@utrecht/component-library-react/dist/css-module";
+import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
-import { Checklist } from "@site/src/components/Checklist";
+
 import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
@@ -93,25 +77,25 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <ComponentAliases component={component} />
 
-<Card className="implementation-card">
+<Card className="ma-implementation-card">
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
-      <Link href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1056"><BrandIcon brand='figma' />Figma - Start bibliotheek</Link>
-      <Link href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1056"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</Link>
+      <LinkListLink href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=153-1056"><BrandIcon brand='figma' />Figma - Start bibliotheek</LinkListLink>
+      <LinkListLink href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=153-1056"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">Storybook</Heading>
     <LinkList>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/css-link--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</Link>
-      <Link href="https://nl-design-system.github.io/candidate/?path=/docs/link--documentatie"><BrandIcon brand='storybook' />Storybook - React</Link>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/css-link--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</LinkListLink>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/link--documentatie"><BrandIcon brand='storybook' />Storybook - React</LinkListLink>
     </LinkList>
 
     <Heading level={2} appearance="level-4">npm</Heading>
     <LinkList>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/link-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-css</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/link-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-react</Link>
-      <Link href="https://www.npmjs.com/package/@nl-design-system-candidate/link-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-tokens</Link>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/link-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-css</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/link-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-react</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/link-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/link-tokens</LinkListLink>
     </LinkList>
 
   </CardContent>
@@ -125,153 +109,25 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <AcImplementatie />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "Als het label van de Link uit een icoon bestaat, dan heeft deze een goed tekstalternatief.",
-      sc: "1.1.1",
-      status: "",
-      component: <Wcag111 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title: "Links in een lopende tekst zijn duidelijk zichtbaar.",
-      sc: "1.4.1",
-      status: "",
-      component: <Wcag141 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title: "De contrastverhouding van de tekstkleur van de Link met de achtergrondkleur is hoog genoeg.",
-      sc: "1.4.3",
-      status: "",
-      component: <Wcag143 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title: "Het label van de Link bestaat uit gewone tekst, niet uit een afbeelding van tekst.",
-      sc: "1.4.5",
-      status: "",
-      component: <Wcag145 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title:
-        "Als het zichtbare label van de Link alleen een afbeelding of icoon is, dan is het contrast tussen de afbeelding en de achtergrond minimaal 3:1.",
-      sc: "1.4.11",
-      status: "",
-      component: <Wcag1411 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title: "De linktekst van de Link vertelt eenduidig aan de gebruiker waar de link naar toe gaat (het linkdoel).",
-      sc: "2.4.4",
-      status: "",
-      component: <Wcag244 />,
-      tags: ["designer", "contentmaker"],
-    },
-    {
-      title: "Als de Link de toetsenbordfocus krijgt, is het element niet volledig bedekt door andere inhoud",
-      sc: "2.4.11",
-      status: "",
-      component: <Wcag2411 />,
-      tags: ["developer", "designer"],
-    },
-    {
-      title:
-        "Als de tekst van de Link in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.",
-      sc: "3.1.2",
-      status: "",
-      component: <Wcag312 />,
-      tags: ["developer", "contentmaker"],
-    },
-    {
-      title: "Links met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label",
-      sc: "3.2.4",
-      status: "",
-      component: <Wcag324 />,
-      tags: ["developer", "designer", "contentmaker"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  {Acceptatiecriteria.usage.map(({ component: Wcag, ...item }) => (
+    <ChecklistItem {...item}>
+      <Wcag />
+    </ChecklistItem>
+  ))}
+</Checklist>
 
 ### Acceptatiecriteria van de component
 
 <AcComponent />
 
-<Checklist
-  headingLevel="4"
-  items={[
-    {
-      title: "Als je de tekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.",
-      sc: "1.4.4",
-      status: "",
-      component: <Wcag144 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.",
-      sc: "1.4.12",
-      status: "",
-      component: <Wcag1412 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Je kunt de Link focussen met de tabtoets en activeren met de entertoets.",
-      sc: "2.1.1",
-      status: "",
-      component: <Wcag211 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De functionaliteit van de Link veroorzaakt geen toetsenbordval.",
-      sc: "2.1.2",
-      status: "",
-      component: <Wcag212 />,
-      tags: ["developer"],
-    },
-    {
-      title: "Wanneer de Link de toetsenbordfocus krijgt is de focus zichtbaar.",
-      sc: "2.4.7",
-      status: "",
-      component: <Wcag247 />,
-      tags: ["developer", "designer"],
-    },
-    /* Suspended until we have a common implementation of focus-indicator in 2025Q1 */
-    /*
-    {
-      title: "De Link heeft een goed zichtbare focusindicator.",
-      sc: "2.4.13",
-      status: "",
-      component: <Wcag2413 />,
-      tags: ["developer", "designer"],
-    },
-    */
-    {
-      title:
-        "Als de gebruiker de Link indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.",
-      sc: "2.5.2",
-      status: "",
-      component: <Wcag252 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De zichtbare naam van de Link komt voor in de toegankelijke naam.",
-      sc: "2.5.3",
-      status: "",
-      component: <Wcag253 />,
-      tags: ["developer"],
-    },
-    {
-      title: "De Link heeft een aanklikbaar gedeelte van ten minste 44 bij 44 pixels.",
-      sc: "2.5.5",
-      status: "",
-      component: <Wcag255 />,
-      tags: ["developer"],
-    },
-  ]}
-/>
+<Checklist headingLevel="4">
+  {Acceptatiecriteria.component.map(({ component: Wcag, ...item }) => (
+    <ChecklistItem {...item}>
+      <Wcag />
+    </ChecklistItem>
+  ))}
+</Checklist>
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
@@ -285,10 +141,10 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <DefinitionOfDone component={component} headingLevel={3} />
 
-## Help component verbeteren
-
-<HelpImproveComponent component={component} headingLevel={3} />
+<HelpImproveComponent component={component} headingLevel={2} />
 
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />

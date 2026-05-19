@@ -1,9 +1,11 @@
 ---
-title: Community stappenplan voor het kernteam · Component bijdragen · Handboek
+title: Community stappenplan voor het kernteam
+title_sm: Kernteam
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Kernteam
 sidebar_position: 2
+navigation_order: 2
 pagination_label: Kernteam
 description: Stappen voor de Community fase van Definition of Done
 slug: /handboek/estafettemodel/componenten/community/voor-kernteam
@@ -292,7 +294,7 @@ Door deze 'Component stickers' op screenshots te plakken, kunnen we geïnteresse
 
 ### Actie
 
-Als de component wordt ontwikkeld met de NL Design System infrastructuur op [github.com/nl-design-system](github.com/nl-design-system), dan wordt al automatisch een backup gemaakt van de code met Rewind.
+Als de component wordt ontwikkeld met de NL Design System infrastructuur op [github.com/nl-design-system](https://github.com/nl-design-system), dan wordt al automatisch een backup gemaakt van de code met Rewind.
 
 Als code van de component in eigen infrastructuur wordt ontwikkeld, dan moet handmatig een automatische backup ingesteld worden. Neem contact op met het kernteam, en vraag om een automatisch dagelijks een mirror te maken van jouw Git repository naar een repository bij NL Design System. De backup-repository zal private zijn, zodat geen verwarring ontstaat wat de originele repository is, en voorkom je dat de backup-repository hoger kan eindigen in zoekresultaten.
 
@@ -335,8 +337,8 @@ Zet het checkpoint 'Promotie' op 'Done' of 'Scheduled' vóór de promotie heeft 
 
 ### Actie
 
-- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
-- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
+- Publiceer een nieuwe versie van het `component-progress` package: ga naar de [pull requests van de Index repository](https://github.com/nl-design-system/index/pulls) en zoek naar de pull request genaamd `docs(release): design system packages`. Approve en merge de pull request. Deze pull request word automatisch aangemaakt elke keer wanneer de vorige is gemerged.
+- Wacht tot [`@nl-design-system/component-progress` op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
 - Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
 - Maak een nieuwe branch aan en gebruik de volgende naam:
