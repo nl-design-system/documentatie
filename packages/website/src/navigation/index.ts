@@ -257,7 +257,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
 }
 
 async function getEntryWithFilepath(filePath: string) {
-  const entries = await collections;
+  const entries = await getAllCollections();
   return entries.find((entry) => filePath && entry.filePath?.endsWith(filePath));
 }
 
