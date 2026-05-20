@@ -176,6 +176,7 @@ Redirect 301 "/belangenorganisatie" "/community/belangenorganisaties/aanmelden/"
 
 # Convenience redirects for use in code
 Redirect 301 "/lint-staged" "/linting-en-code-formatting#lint-staged"
+Redirect 301 "/codeowners" "/handboek/developer/github-teams-en-code-owners/#codeowners"
 
 # Convenience redirects because pages have been deleted,  but we have some idea what a helpfull alternative could be
 Redirect 301 "/handboek/developer/architectuur/" "/handboek/developer/introductie/"
