@@ -38,13 +38,16 @@ import Summary from "./summaries/_1.2.3-summary.md";
 </WcagHeadingGroup>
 
 <Summary />
+
+Dit succescriterium gaat alleen over **vooraf opgenomen video met audio**. Voor live video geldt [1.2.4](/wcag/1.2.4/), voor alleen-audio of alleen-video [1.2.1](/wcag/1.2.1/).
+
 Wie de beelden van een video niet kan zien, krijgt het volledige verhaal via een audiodescriptie of een
 tekstalternatief. Een tekstalternatief beschrijft álles wat er in de video gebeurt: de gesproken woorden, de belangrijke
 visuele handelingen en de belangrijke geluiden, in de volgorde waarin dat plaatsvindt. Het is meer dan een transcript
 van de dialoog. Iemand die het document laat voorlezen, krijgt hetzelfde verhaal als iemand die de video ziet en hoort.
 Het alternatief staat op de pagina zelf, of via een link met een duidelijke tekst.
 
-Op niveau AA wordt deze keuze strenger: [1.2.5 Audiodescriptie (vooraf opgenomen)](/wcag/1.2.5/) vereist een echte audiodescriptie. Een media-alternatief is daar niet meer voldoende. Als je website aan AA moet voldoen, kies dan direct voor audiodescriptie, dan dek je 1.2.3 en 1.2.5 in één keer af.
+Als je website aan WCAG 2.2 AA moet voldoen is een audiodescriptie verplicht, door succescriterium [1.2.5 Audiodescriptie (vooraf opgenomen)](/wcag/1.2.5/). Alléén een media-alternatief is niet voldoende. Je kunt er wel voor kiezen om ook een media-alternatief aan te bieden, naast audiodescriptie. Dat is fijn voor doofblinde bezoekers en bezoekers die informatie liever lezen dan horen.
 
 ## Veelgemaakte fouten
 
@@ -60,15 +63,15 @@ Een video op een webpagina heeft geen audiodescriptie en geen tekstversie. Wie d
 
 Bij de video staat een transcript. Dat transcript bevat alles wat gezegd wordt, maar niet wat er in beeld gebeurt. De rondleiding door het gebouw, de grafiek, het naamkaartje, de demonstratie: het staat er niet in. Dit telt niet als media-alternatief voor 1.2.3.
 
-**Hoe te testen:** lees het transcript. Krijg je uit de tekst alleen hetzelfde verhaal als iemand die de video ziet en hoort? Of mis je dingen die in beeld gebeuren?
+**Hoe te testen:** lees het transcript. Krijg je uit alléén de tekst hetzelfde verhaal als iemand die de video ziet en hoort? Of ontbreekt er informatie?
 
 **Wie kan dit oplossen:** een contentmaker breidt het transcript uit met beschrijvingen van wat er visueel gebeurt, in de juiste volgorde.
 
 ### Ondertitels aanbieden als alternatief
 
-Bij de video staan ondertitels. Ondertitels zijn geen tekstversie. Ze zijn bedoeld voor wie de audio niet kan horen, niet voor wie de beelden niet kan zien. Ze bevatten alleen de gesproken tekst en belangrijke geluiden, niet de visuele informatie. Ondertitels vallen onder [1.2.2](/wcag/1.2.2/), niet onder 1.2.3.
+Bij de video staan ondertitels. Ondertitels zijn geen media-alternatief voor een audiodescriptie. Ze zijn bedoeld voor wie de audio niet kan horen, niet voor wie de beelden niet kan zien. Ze bevatten alleen de gesproken tekst en belangrijke geluiden, niet de visuele informatie. Daarnaast is de tekst in ondertiteling over het algemeen niet beschikbaar voor een screenreader.
 
-**Hoe te testen:** zijn ondertitels het enige alternatief bij de video? Dan ontbreekt er nog iets voor wie de beelden niet kan zien.
+**Hoe te testen:** zijn ondertitels het enige alternatief bij de video? Dat is niet voldoende.
 
 **Wie kan dit oplossen:** een contentmaker voegt een audiodescriptie of een volledig media-alternatief toe, naast de bestaande ondertitels.
 
@@ -140,6 +143,11 @@ Een pagina toont eerst een artikel in tekst en daarna een video waarin dezelfde 
 ## NLDS-componenten
 
 - [Video](/componenten/video/) — videocomponent met ruimte voor ondertitels, audiodescriptie en een tekstalternatief.
+
+## NLDS-richtlijnen
+
+- [Audiodescriptie](/richtlijnen/content/video/audiodescriptie/) — hoe je een goede audiodescriptie maakt voor video's.
+- [Transcript](/richtlijnen/content/video/transcript/) — hoe je een bruikbaar transcript schrijft bij video- en audio-content.
 
 ## Relevante bronnen
 
