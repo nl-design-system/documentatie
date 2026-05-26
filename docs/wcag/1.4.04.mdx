@@ -497,6 +497,90 @@ Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "vera
 
 **Wie kan dit oplossen:** een developer voegt `overflow-wrap: break-word` toe aan tekstcontainers. Voor automatische streepjes op lettergreepgrenzen: ook `hyphens: auto` plus een correct `lang`-attribuut op `<html>`.
 
+## Best practice
+
+Naast de fouten hierboven zijn er een paar technieken die de leesbaarheid van vergrote tekst extra verbeteren. Ze zijn geen verplichting vanuit dit succescriterium, maar voorkomen wel veel praktische problemen met lange woorden.
+
+### Stel het `lang`-attribuut correct in voor automatische woordafbreking
+
+`hyphens: auto` werkt alleen als de browser weet welke taal de tekst heeft. Zonder een correct `lang`-attribuut op `<html>` (of een ouder-element van de tekst) kiest de browser geen woordenboek en verschijnen er geen streepjes op lettergreepgrenzen.
+
+Nederlandse woordafbreking wordt ondersteund in Chrome, Edge en Safari. Firefox ondersteunt minder talen. Staat er een stuk tekst in een andere taal? Zet `lang` dan op het blok zelf, bijvoorbeeld `<span lang="en">`.
+
+**Hoe te testen:** open de <span lang="en">DevTools</span> en controleer het `lang`-attribuut op `<html>`. Plaats een lang Nederlands woord in een smalle container met `hyphens: auto`. Verschijnt er een afbreekstreepje op een lettergreepgrens? Verwijder het `lang`-attribuut tijdelijk en kijk of de afbreking verdwijnt.
+
+<Guideline appearance="do" title="Lang-attribuut op html plus hyphens auto">
+  ```html
+  <html lang="nl">
+    ...
+    <p style="hyphens: auto">patiëntenvertegenwoordiger</p>
+  </html>
+  ```
+</Guideline>
+
+**Wie kan dit toepassen:** een developer zet het `lang`-attribuut op `<html>`. Een webredacteur voegt het `lang`-attribuut toe op blokken tekst in een andere taal, bijvoorbeeld via een CMS-veld.
+
+### Gebruik `overflow-wrap: anywhere` in flex- en grid-layouts
+
+`overflow-wrap: break-word` en `overflow-wrap: anywhere` lijken op elkaar: ze breken een te lang woord af zodra er geen ruimte meer is. Het verschil zit in de berekening van `min-content`. `anywhere` telt het breekpunt mee, waardoor een flex- of grid-item kan krimpen tot de breedte van de container. Bij `break-word` blijft de minimumbreedte gelijk aan het langste woord, en steekt de container alsnog uit.
+
+**Hoe te testen:** plaats een lang woord zonder spaties in een flex-item met een smalle ouder. Krimpt het item mee met de container, of houdt het de breedte van het langste woord aan? Wissel tussen `break-word` en `anywhere` en vergelijk.
+
+<Guideline appearance="do" title="overflow-wrap anywhere in een flex-container">
+  ```css
+  .card-tekst {
+    overflow-wrap: anywhere;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit toepassen:** een developer kiest `overflow-wrap: anywhere` boven `break-word` in flex- en grid-layouts waar containers mee moeten krimpen.
+
+### Geef redacteuren controle met soft hyphen en `<wbr>`
+
+Automatische woordafbreking heeft grenzen. Vakwoorden, productnamen, plaatsnamen en samenstellingen die niet in het woordenboek van de browser staan, worden niet afgebroken. In smalle containers steken ze er dan alsnog uit.
+
+Een redacteur of developer kan zelf een breekpunt aangeven:
+
+- `&shy;` is een onzichtbaar afbreekstreepje. De browser breekt alleen op deze plek af als het nodig is, en zet er dan een streepje neer. Geschikt voor lange Nederlandse woorden in lopende tekst.
+- `<wbr>` markeert een plek waar afbreken mag, zonder streepje. Geschikt voor URL's, e-mailadressen of technische strings waar een streepje verwarrend zou zijn.
+
+**Hoe te testen:** vergroot de tekst tot 200% en zoek in smalle containers naar lange, onbekende of samengestelde woorden. Steken ze er als één blok uit? Voeg dan een `&shy;` of `<wbr>` toe op een logische plek en test opnieuw.
+
+<Guideline appearance="do" title="Soft hyphen in een lange samenstelling">
+  ```html
+  <p>patiënten&shy;vertegenwoordiger</p>
+  ```
+</Guideline>
+
+**Wie kan dit toepassen:** een redacteur voegt `&shy;` toe in CMS-velden met lange Nederlandse samenstellingen. Een developer plaatst dezelfde tags in templates, of gebruikt `<wbr>` in URL's en technische strings.
+
+### Behandel URL's en e-mailadressen als één lang woord
+
+URL's en e-mailadressen bevatten geen spaties. De browser ziet ze als één woord en breekt ze niet automatisch af. In smalle containers — een card, een footer-kolom, een tabel-cel — steken ze bij vergrote tekst snel uit.
+
+`overflow-wrap: anywhere` lost het op door op een willekeurige plek af te breken. Voor nettere breekpunten kan een developer `<wbr>` na de schuine streep of na de `@` plaatsen.
+
+**Hoe te testen:** vergroot de tekst tot 200% en bekijk pagina's met zichtbare URL's of e-mailadressen, zoals een contactpagina, footer of card met externe link. Steekt de tekst uit de container?
+
+<Guideline appearance="do" title="Lange URL met overflow-wrap anywhere">
+  ```css
+  .contactgegevens a {
+    overflow-wrap: anywhere;
+  }
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="wbr op logische breekpunten in een URL">
+  ```html
+  <a href="https://example.nl/diensten/contact">
+    https://example.nl/<wbr>diensten/<wbr>contact
+  </a>
+  ```
+</Guideline>
+
+**Wie kan dit toepassen:** een developer voegt `overflow-wrap: anywhere` toe aan containers met URL's of e-mailadressen, of plaatst `<wbr>` op logische breekpunten in de tekst.
+
 ## Hoe te testen
 
 ### Voor iedereen
