@@ -68,7 +68,7 @@ Koppen als "Ga naar", "Snel naar" of "Bezoek ook" zeggen niets over de inhoud va
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentbeheerder vervangt generieke koppen door beschrijvende koppen.
+**Wie kan dit oplossen:** een contentbeheerder vervangt generieke koppen door beschrijvende koppen. Worden de koppen door een template of component bepaald, dan passen een designer en developer ze aan op template-niveau.
 
 ### Meerdere koppen met dezelfde tekst op een pagina
 
@@ -120,7 +120,7 @@ Een knop heeft een tekst die niet duidelijk maakt wat de knop doet. Een veelvoor
 
 **Wie kan dit oplossen:** een developer past de knoptekst aan zodat die de functie beschrijft. Als de knoptekst wordt bepaald door een externe tool, zoals een cookiebanner van een derde partij, controleer dan of de tekst aanpasbaar is in de configuratie van die tool.
 
-Dit geldt ook voor onzichtbare labels. Een knop met een oogicoon naast een wachtwoordveld heeft vaak een `aria-label` dat het icoon beschrijft in plaats van de functie. "Oog" zegt niets over wat de knop doet. Het label beschrijft de functie, niet het uiterlijk.
+Dit geldt ook voor knoppen met alleen een icoon. Het icoon zelf is een zichtbaar label — voor wie het kan zien. Voor hulptechnologie is daarnaast een toegankelijke naam nodig, vaak in de vorm van een `aria-label`. Die toegankelijke naam is onzichtbaar voor mensen die geen hulptechnologie gebruiken. Vaak beschrijft het `aria-label` het uiterlijk van het icoon ("Oog") in plaats van de functie. Zowel het zichtbare als het onzichtbare label moeten de functie beschrijven, niet het uiterlijk.
 
 <Guideline appearance="dont" title="Onzichtbaar label beschrijft het icoon in plaats van de functie">
     ```html
@@ -286,6 +286,32 @@ Hetzelfde geldt voor carrousels. Knoppen met "Vorige" en "Volgende" zijn duideli
 
 </Guideline>
 
+Paginering werkt op een vergelijkbare manier. Een rij met knoppen "1", "2", "3" en "Volgende" zegt op zichzelf niets — een screenreadergebruiker hoort alleen losse cijfers. Plaats de paginering in een `<nav>` met een `aria-label` dat beschrijft wat er gepagineerd wordt, geef elke knop een toegankelijke naam zoals "Pagina 2" en markeer de huidige pagina met `aria-current="page"`.
+
+<Guideline appearance="dont" title="Paginering met alleen cijfers en zonder groepering">
+    ```html
+    <div>
+      <a href="?pagina=1">1</a>
+      <a href="?pagina=2">2</a>
+      <a href="?pagina=3">3</a>
+      <a href="?pagina=3">Volgende</a>
+    </div>
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Paginering in een gelabelde nav met beschrijvende knopteksten">
+    ```html
+    <nav aria-label="Paginering zoekresultaten">
+      <a href="?pagina=1" aria-label="Pagina 1">1</a>
+      <a href="?pagina=2" aria-current="page" aria-label="Pagina 2">2</a>
+      <a href="?pagina=3" aria-label="Pagina 3">3</a>
+      <a href="?pagina=3" aria-label="Volgende pagina">Volgende</a>
+    </nav>
+    ```
+
+</Guideline>
+
 ### Iframe zonder beschrijving van het type inhoud
 
 Een `<iframe>` heeft een `title`-attribuut dat beschrijft wat het iframe bevat. Alleen de titel van de inhoud is niet genoeg. Een screenreadergebruiker moet weten wat voor type inhoud het iframe bevat, zodat die kan inschatten wat te verwachten. "Productdemo" kan een video zijn, een interactieve tool of een quiz. Vermeld het type inhoud in de titel.
@@ -369,20 +395,17 @@ Een `<th>`-element in een tabel werkt als label voor de cellen eronder of ernaas
 1. Lees alleen de koppen op een pagina. Begrijp je bij elke kop waar de sectie over gaat?
 2. Controleer of koppen niet dubbel voorkomen. Als dat zo is, zijn ze dan van elkaar te onderscheiden?
 3. Lees de labels van alle formuliervelden. Weet je bij elk veld wat je moet invullen?
-4. Klik in een formulierveld en begin te typen. Is nog steeds zichtbaar welk veld het is?
-5. Controleer of de kop boven een sectie klopt met de inhoud eronder.
-6. Lees de tekst van elke knop op de pagina. Beschrijft de tekst wat de knop doet? Let vooral op knoppen met alleen een icoon: heeft de knop een zichtbare of onzichtbare tekst die de functie beschrijft, niet het uiterlijk?
-7. Zijn er meerdere knoppen met dezelfde tekst op de pagina? Controleer of bij elke knop duidelijk is waar die betrekking op heeft, bijvoorbeeld door een kop of groepering erboven.
+4. Controleer of de kop boven een sectie klopt met de inhoud eronder.
+5. Lees de tekst van elke knop op de pagina. Beschrijft de tekst wat de knop doet? Let vooral op knoppen met alleen een icoon: heeft de knop een zichtbare of onzichtbare tekst die de functie beschrijft, niet het uiterlijk?
+6. Zijn er meerdere knoppen met dezelfde tekst op de pagina? Controleer of bij elke knop duidelijk is waar die betrekking op heeft, bijvoorbeeld door een kop of groepering erboven.
 
 ### Voor developers
 
 1. Open een screenreader en navigeer via de koppenlijst. Beschrijft elke kop het onderwerp van de bijbehorende sectie?
 2. Gebruik een browser-extensie zoals <span lang="en">HeadingsMap</span> om alle koppen op een pagina in een overzicht te zien. Controleer of de koppen beschrijvend en uniek zijn.
-3. Controleer of elk formulierveld een `<label>`-element heeft dat beschrijft wat het veld verwacht. Gebruik de DevTools om te controleren of het `for`-attribuut van het label overeenkomt met het `id` van het veld.
-4. Controleer of er geen velden zijn die alleen een `placeholder` gebruiken in plaats van een `<label>`.
-5. Inspecteer knoppen met alleen een icoon in de DevTools. Controleer of de toegankelijke naam de functie beschrijft. Open de <span lang="en">Accessibility</span>-tab en bekijk de waarde bij "Name". Een knop met een oogicoon heeft als naam bijvoorbeeld "Wachtwoord tonen", niet "Oog".
-6. Controleer knoppen met dezelfde tekst, zoals "Vorige" en "Volgende" bij carrousels. Staan ze in een gelabelde groep zoals een `<section>` met `aria-label`? Zonder groepering is niet te bepalen welke carrousel de knop bedient.
-7. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">WAVE</span> voor een eerste scan. Ontbrekende labels worden automatisch herkend. Of koppen, labels en knopteksten inhoudelijk beschrijvend zijn, controleer je handmatig.
+3. Inspecteer knoppen met alleen een icoon in de DevTools. Controleer of de toegankelijke naam de functie beschrijft. Open de <span lang="en">Accessibility</span>-tab en bekijk de waarde bij "Name". Een knop met een oogicoon heeft als naam bijvoorbeeld "Wachtwoord tonen", niet "Oog".
+4. Controleer knoppen met dezelfde tekst, zoals "Vorige" en "Volgende" bij carrousels of paginering. Staan ze in een gelabelde groep zoals een `<section>` of `<nav>` met `aria-label`? Bij paginering: heeft elke genummerde knop een toegankelijke naam zoals "Pagina 2", en wordt de huidige pagina gemarkeerd met `aria-current="page"`?
+5. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">WAVE</span> voor een eerste scan. Ontbrekende labels worden automatisch herkend. Of koppen, labels en knopteksten inhoudelijk beschrijvend zijn, controleer je handmatig.
 
 ## Gerelateerde succescriteria
 
