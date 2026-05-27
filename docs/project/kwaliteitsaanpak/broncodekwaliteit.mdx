@@ -47,13 +47,13 @@ Configureer de lint-tools om geen warnings te geven, maar alleen fouten. Maak he
 
 ## Automatische opmaak van code
 
-Gebruik waarm mogelijk tools om code automatisch op te maken, zoals Prettier en EditorConfig, voor alle bestandsformaten die vaak worden gebruikt en waar goede tools voor zijn.
+Gebruik waar mogelijk tools om code automatisch op te maken, zoals Prettier en EditorConfig, voor alle bestandsformaten die vaak worden gebruikt en waar goede tools voor zijn.
 
 Gebruik waar mogelijk UTF-8 als encoding, zoals in tekstbestanden, i18n bestanden etcetera.
 
 ## Aanbevolen tools \{#tools\}
 
-Gebruik waar de aanbevolen tools in elke repository waar deze bestandsformaten worden gebruikt:
+Gebruik waar mogelijk de aanbevolen tools in de repositories waar deze bestandsformaten worden gebruikt:
 
 - Gebruik een [EditorConfig](https://editorconfig.org) configuratie in `.editorconfig` voor basis-instellingen voor code-opmaak.
 - Gebruik [Prettier](https://prettier.io) voor talen en file extensions waar we goede ervaringen mee hebben:
@@ -78,7 +78,7 @@ Je kunt Git instellen om elke keer dat je een commit doet automatisch de code co
 
 Installeer de pre-commit hook met `pnpm run prepare`, nadat je `pnpm install` hebt gedaan. Hierna zul je zien dat `git commit` extra controles uitvoert voordat de commit wordt opgeslagen.
 
-Wanneer je geen tijd hebt om de fouten op te lossen, dan kun je met `git commit --no-verify` de commit doen zonder checks, zodat je in elk geval een backup hebt van je code. [Continuous integration](./continuous-integration.mdx) checks zullen voorkomen dat deze onvoltooide code per ongeluk al wordt gemerged.
+Wanneer je geen tijd hebt om de fouten op te lossen, maar wel een backup wil committen, dan kun je met `git commit --no-verify` de commit doen zonder checks. [Continuous integration](./continuous-integration.mdx) checks zullen voorkomen dat deze onvoltooide code per ongeluk wordt gemerged.
 
 Pre-commit hooks helpen ook te garanderen dat de code van elke atomic commit klopt, en niet alleen de code van de laatste commit in de branch. Hiermee wordt het makkelijker om met `git cherry-pick` alvast enkele commits te mergen naar de `main` branch, voordat de volledige branch klaar is.
 
