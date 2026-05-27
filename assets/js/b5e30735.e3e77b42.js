@@ -2,79 +2,65 @@
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [6667],
  {
-  12941(e, n, t) {
-   t.d(n, { o: () => w });
-   var i = t(18439),
-    r = t(46447),
-    s = t(86070);
-   const o = (e, n) => {
-     const t = new URL(n, new URL(e, 'resolve://pathname/'));
-     if ('resolve:' === t.protocol) {
-      const { pathname: t, search: i, hash: r } = new URL(n, new URL(e, 'http://example.com/'));
-      return t + i + r;
+  12941(e, t, n) {
+   n.d(t, { o: () => w });
+   var i = n(18439),
+    o = n(46447),
+    s = n(86070);
+   const r = (e, t) => {
+     const n = new URL(t, new URL(e, 'resolve://pathname/'));
+     if ('resolve:' === n.protocol) {
+      const { pathname: n, search: i, hash: o } = new URL(t, new URL(e, 'http://example.com/'));
+      return n + i + o;
      }
-     return t.toString();
+     return n.toString();
     },
-    l = { 1: {}, 2: { h1: r.fV, h2: r._B, h3: r.f_, h4: r.mM, h5: r.TT }, 3: { h1: r._B, h2: r.f_, h3: r.mM, h4: r.TT, h5: r.TT }, 4: { h1: r.f_, h2: r.mM, h3: r.TT, h4: r.TT, h5: r.TT }, 5: { h1: r.mM, h2: r.TT, h3: r.TT, h4: r.TT, h5: r.TT }, 6: { h1: r.TT, h2: r.TT, h3: r.TT, h4: r.TT, h5: r.TT } },
-    a = (e) => ({ img: ({ src: n, ...t }) => (0, s.jsx)('img', { ...t, src: o(e, n), className: 'utrecht-img utrecht-img--fit' }) }),
-    c = (e, n) => {
+    l = { 1: {}, 2: { h1: o.fV, h2: o._B, h3: o.f_, h4: o.mM, h5: o.TT }, 3: { h1: o._B, h2: o.f_, h3: o.mM, h4: o.TT, h5: o.TT }, 4: { h1: o.f_, h2: o.mM, h3: o.TT, h4: o.TT, h5: o.TT }, 5: { h1: o.mM, h2: o.TT, h3: o.TT, h4: o.TT, h5: o.TT }, 6: { h1: o.TT, h2: o.TT, h3: o.TT, h4: o.TT, h5: o.TT } },
+    a = (e) => ({ img: ({ src: t, ...n }) => (0, s.jsx)('img', { ...n, src: r(e, t), className: 'utrecht-img utrecht-img--fit' }) }),
+    c = (e, t) => {
      if (e) {
-      const e = { ...l[n - 1] };
+      const e = { ...l[t - 1] };
       return ((e.h1 = () => null), e);
      }
-     return l[n];
+     return l[t];
     },
-    w = ({ children: e, omitH1: n = !1, headingLevel: t = 1, baseUrl: r = '', components: o = {} }) => (0, s.jsx)(i.x, { components: { ...c(n, t), ...a(r), ...o }, children: e });
+    w = ({ children: e, omitH1: t = !1, headingLevel: n = 1, baseUrl: o = '', components: r = {} }) => (0, s.jsx)(i.x, { components: { ...c(t, n), ...a(o), ...r }, children: e });
   },
-  18439(e, n, t) {
-   t.d(n, { R: () => o, x: () => l });
-   var i = t(30758);
-   const r = {},
-    s = i.createContext(r);
-   function o(e) {
-    const n = i.useContext(s);
+  18439(e, t, n) {
+   n.d(t, { R: () => r, x: () => l });
+   var i = n(30758);
+   const o = {},
+    s = i.createContext(o);
+   function r(e) {
+    const t = i.useContext(s);
     return i.useMemo(
      function () {
-      return 'function' == typeof e ? e(n) : { ...n, ...e };
+      return 'function' == typeof e ? e(t) : { ...t, ...e };
      },
-     [n, e],
+     [t, e],
     );
    }
    function l(e) {
-    let n;
-    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(r) : e.components || r) : o(e.components)), i.createElement(s.Provider, { value: n }, e.children));
+    let t;
+    return ((t = e.disableParentContext ? ('function' == typeof e.components ? e.components(o) : e.components || o) : r(e.components)), i.createElement(s.Provider, { value: t }, e.children));
    }
   },
-  28890(e, n, t) {
-   t.d(n, { Ay: () => l, RM: () => s });
-   var i = t(86070),
-    r = t(18439);
-   const s = [{ value: 'Belangrijk: De richtlijnen van NL Design System zijn geen wettelijke verplichting', id: 'belangrijk-de-richtlijnen-van-nl-design-system-zijn-geen-wettelijke-verplichting', level: 2 }];
-   function o(e) {
-    const n = { a: 'a', h2: 'h2', p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.h2, { id: 'belangrijk-de-richtlijnen-van-nl-design-system-zijn-geen-wettelijke-verplichting', children: 'Belangrijk: De richtlijnen van NL Design System zijn geen wettelijke verplichting' }), '\n', (0, i.jsxs)(n.p, { children: ['De richtlijnen van NL Design System zijn niet wettelijk verplicht en zijn geen vervanging voor de ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG21/', children: 'wettelijk geldende WCAG 2.1 specificatie' }), '.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Ons doel is om praktische uitleg en voorbeelden te geven die helpen bij het toegankelijk inzetten van de NL Design System componenten, patronen en richtlijnen. We doen dat op basis van een interpretatie van de ', (0, i.jsx)(n.a, { href: 'https://www.w3.org/TR/WCAG22/', children: 'nieuwe WCAG 2.2 specificatie' }), '.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Weten waar je volgens de wet aan moet voldoen? Ga dan naar ', (0, i.jsx)(n.a, { href: 'https://www.digitoegankelijk.nl/wetgeving/wat-is-verplicht', children: 'wat is verplicht van DigiToegankelijk' }), '.'] })] });
-   }
-   function l(e = {}) {
-    const { wrapper: n } = { ...(0, r.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(o, { ...e }) }) : o(e);
-   }
-  },
-  47219(e, n, t) {
-   t.d(n, { Ay: () => l, RM: () => s });
-   var i = t(86070),
-    r = t(18439);
+  47219(e, t, n) {
+   n.d(t, { Ay: () => l, RM: () => s });
+   var i = n(86070),
+    o = n(18439);
    const s = [];
-   function o(e) {
-    const n = { a: 'a', h1: 'h1', header: 'header', p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.header, { children: (0, i.jsx)(n.h1, { id: 'aanvullingen-of-opmerkingen', children: 'Aanvullingen of opmerkingen?' }) }), '\n', (0, i.jsxs)(n.p, { children: ["Deze pagina's over WCAG worden onderhouden door NL Design System. Heb je aanvullingen of opmerkingen? ", (0, i.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Deel je mening op GitHub' }), '.'] })] });
+   function r(e) {
+    const t = { a: 'a', h1: 'h1', header: 'header', p: 'p', ...(0, o.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(t.header, { children: (0, i.jsx)(t.h1, { id: 'aanvullingen-of-opmerkingen', children: 'Aanvullingen of opmerkingen?' }) }), '\n', (0, i.jsxs)(t.p, { children: ["Deze pagina's over WCAG worden onderhouden door NL Design System. Heb je aanvullingen of opmerkingen? ", (0, i.jsx)(t.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Deel je mening op GitHub' }), '.'] })] });
    }
    function l(e = {}) {
-    const { wrapper: n } = { ...(0, r.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(o, { ...e }) }) : o(e);
+    const { wrapper: t } = { ...(0, o.R)(), ...e.components };
+    return t ? (0, i.jsx)(t, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
    }
   },
-  77928(e, n, t) {
-   t.d(n, { NO: () => s, pI: () => o });
+  77928(e, t, n) {
+   n.d(t, { NO: () => s, pI: () => r });
    const i = [
      { sc: '1.1.1', title: 'Non-text Content', url: 'https://www.w3.org/TR/WCAG21/#non-text-content', conformance: 'A', nldesignsystem: !0, nl: { title: 'Niet-tekstuele content' } },
      { sc: '1.2.1', title: 'Audio-only and Video-only (Prerecorded)', url: 'https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded', conformance: 'A', nldesignsystem: !0, nl: { title: 'Louter-geluid en louter-videobeeld (vooraf opgenomen)' } },
@@ -155,83 +141,80 @@
      { sc: '4.1.2', title: 'Name, Role, Value', url: 'https://www.w3.org/TR/WCAG21/#name-role-value', conformance: 'A', nldesignsystem: !0, nl: { title: 'Naam, rol, waarde' } },
      { sc: '4.1.3', title: 'Status Messages', url: 'https://www.w3.org/TR/WCAG21/#status-messages', conformance: 'AA', nldesignsystem: !0, nl: { title: 'Statusberichten' } },
     ].map((e) => ({ ...e, fragment: new URL(e.url).hash.replace(/^#/, '') })),
-    r = (new Map(i.map((e) => [e.sc, e])), [{ sc: '4.1.1', title: 'Parsing', url: 'https://www.w3.org/TR/WCAG21/#parsing', conformance: 'A', nldesignsystem: !0, nl: { title: 'Parsen' }, since: 'WCAG22' }]),
-    s = [...i.map((e) => ({ ...e, url: e.url.replace(/WCAG21/i, 'WCAG22') })), { sc: '2.4.11', title: 'Focus Not Obscured (Minimum)', url: 'https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum', conformance: 'AA', nl: { title: 'Focus niet bedekt (minimum)' }, since: 'WCAG22' }, { sc: '2.4.12', title: 'Focus Not Obscured (Enhanced)', url: 'https://www.w3.org/TR/WCAG22/#focus-not-obscured-enhanced', conformance: 'AAA', nl: { title: 'Focus niet bedekt (uitgebreid)' }, since: 'WCAG22' }, { sc: '2.4.13', title: 'Focus Appearance', url: 'https://www.w3.org/TR/WCAG22/#focus-appearance', conformance: 'AAA', nldesignsystem: !0, nl: { title: 'Focusweergave' }, since: 'WCAG22' }, { sc: '2.5.7', title: 'Dragging Movements', url: 'https://www.w3.org/TR/WCAG22/#dragging-movements', conformance: 'AA', nldesignsystem: !0, nl: { title: 'Sleepbewegingen' }, since: 'WCAG22' }, { sc: '2.5.8', title: 'Target Size (minimum)', url: 'https://www.w3.org/TR/WCAG22/#target-size-minimum', conformance: 'AA', nldesignsystem: !0, nl: { title: 'Grootte van het aanwijsgebied (minimum)' }, since: 'WCAG22' }, { sc: '3.2.6', title: 'Consistent Help', url: 'https://www.w3.org/TR/WCAG22/#consistent-help', conformance: 'A', nldesignsystem: !0, nl: { title: 'Consistente hulp' }, since: 'WCAG22' }, { sc: '3.3.7', title: 'Redundant Entry', url: 'https://www.w3.org/TR/WCAG22/#redundant-entry', conformance: 'A', nldesignsystem: !0, nl: { title: 'Overbodige invoer' }, since: 'WCAG22' }, { sc: '3.3.8', title: 'Accessible Authentication (Minimum)', url: 'https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum', conformance: 'AA', nldesignsystem: !0, nl: { title: 'Toegankelijke authenticatie (minimum)' }, since: 'WCAG22' }, { sc: '3.3.9', title: 'Accessible Authentication (Enhanced)', url: 'https://www.w3.org/TR/WCAG22/#accessible-authentication-enhanced', conformance: 'AAA', nl: { title: 'Toegankelijke authenticatie (uitgebreid)' }, since: 'WCAG22' }].map((e) => ({ ...e, fragment: new URL(e.url).hash.replace(/^#/, '') })).filter(({ sc: e }) => !r.find((n) => n.sc === e)),
-    o = new Map(s.map((e) => [e.sc, e]));
+    o = (new Map(i.map((e) => [e.sc, e])), [{ sc: '4.1.1', title: 'Parsing', url: 'https://www.w3.org/TR/WCAG21/#parsing', conformance: 'A', nldesignsystem: !0, nl: { title: 'Parsen' }, since: 'WCAG22' }]),
+    s = [...i.map((e) => ({ ...e, url: e.url.replace(/WCAG21/i, 'WCAG22') })), { sc: '2.4.11', title: 'Focus Not Obscured (Minimum)', url: 'https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum', conformance: 'AA', nl: { title: 'Focus niet bedekt (minimum)' }, since: 'WCAG22' }, { sc: '2.4.12', title: 'Focus Not Obscured (Enhanced)', url: 'https://www.w3.org/TR/WCAG22/#focus-not-obscured-enhanced', conformance: 'AAA', nl: { title: 'Focus niet bedekt (uitgebreid)' }, since: 'WCAG22' }, { sc: '2.4.13', title: 'Focus Appearance', url: 'https://www.w3.org/TR/WCAG22/#focus-appearance', conformance: 'AAA', nldesignsystem: !0, nl: { title: 'Focusweergave' }, since: 'WCAG22' }, { sc: '2.5.7', title: 'Dragging Movements', url: 'https://www.w3.org/TR/WCAG22/#dragging-movements', conformance: 'AA', nldesignsystem: !0, nl: { title: 'Sleepbewegingen' }, since: 'WCAG22' }, { sc: '2.5.8', title: 'Target Size (minimum)', url: 'https://www.w3.org/TR/WCAG22/#target-size-minimum', conformance: 'AA', nldesignsystem: !0, nl: { title: 'Grootte van het aanwijsgebied (minimum)' }, since: 'WCAG22' }, { sc: '3.2.6', title: 'Consistent Help', url: 'https://www.w3.org/TR/WCAG22/#consistent-help', conformance: 'A', nldesignsystem: !0, nl: { title: 'Consistente hulp' }, since: 'WCAG22' }, { sc: '3.3.7', title: 'Redundant Entry', url: 'https://www.w3.org/TR/WCAG22/#redundant-entry', conformance: 'A', nldesignsystem: !0, nl: { title: 'Overbodige invoer' }, since: 'WCAG22' }, { sc: '3.3.8', title: 'Accessible Authentication (Minimum)', url: 'https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum', conformance: 'AA', nldesignsystem: !0, nl: { title: 'Toegankelijke authenticatie (minimum)' }, since: 'WCAG22' }, { sc: '3.3.9', title: 'Accessible Authentication (Enhanced)', url: 'https://www.w3.org/TR/WCAG22/#accessible-authentication-enhanced', conformance: 'AAA', nl: { title: 'Toegankelijke authenticatie (uitgebreid)' }, since: 'WCAG22' }].map((e) => ({ ...e, fragment: new URL(e.url).hash.replace(/^#/, '') })).filter(({ sc: e }) => !o.find((t) => t.sc === e)),
+    r = new Map(s.map((e) => [e.sc, e]));
   },
-  91584(e, n, t) {
-   (t.r(n), t.d(n, { assets: () => u, contentTitle: () => g, default: () => p, frontMatter: () => d, metadata: () => i, toc: () => A }));
+  91584(e, t, n) {
+   (n.r(t), n.d(t, { assets: () => g, contentTitle: () => d, default: () => m, frontMatter: () => w, metadata: () => i, toc: () => u }));
    const i = JSON.parse('{"id":"wcag/index","title":"Introductie WCAG pagina\'s","description":"Introductie van informatie over de WCAG-succescriteria.","source":"@site/docs/wcag/index.mdx","sourceDirName":"wcag","slug":"/wcag","permalink":"/wcag","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/wcag/index.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Introductie WCAG pagina\'s","title_sm":"WCAG","hide_title":true,"hide_table_of_contents":true,"sidebar_position":1,"navigation_order":1,"sidebar_label":"Introductie WCAG-pagina\'s","pagination_label":"Introductie WCAG-pagina\'s","description":"Introductie van informatie over de WCAG-succescriteria.","slug":"/wcag","keywords":["WCAG","succescriteria"]},"sidebar":"richtlijnen","previous":{"title":"Kies het meest gebruiksvriendelijke formulierelement","permalink":"/richtlijnen/formulieren/wanneer-welk-form-element/kies-gebruiksvriendelijkheid"},"next":{"title":"Introductie WCAG-pagina\'s","permalink":"/wcag"}}');
-   var r = t(86070),
-    s = t(18439),
-    o = t(12941),
-    l = t(46447),
-    a = t(28890),
-    c = t(47219),
-    w = t(77928);
-   const d = { title: "Introductie WCAG pagina's", title_sm: 'WCAG', hide_title: !0, hide_table_of_contents: !0, sidebar_position: 1, navigation_order: 1, sidebar_label: "Introductie WCAG-pagina's", pagination_label: "Introductie WCAG-pagina's", description: 'Introductie van informatie over de WCAG-succescriteria.', slug: '/wcag', keywords: ['WCAG', 'succescriteria'] },
-    g = "Introductie WCAG-pagina's",
-    u = {},
-    A = [...a.RM, { value: 'Opzet', id: 'opzet', level: 2 }, { value: 'WCAG-pagina&#39;s', id: 'wcag-paginas', level: 2 }, { value: 'Niveau A en Niveau AA', id: 'niveau-a-en-niveau-aa', level: 3 }, { value: 'Niveau AAA', id: 'niveau-aaa', level: 3 }, { value: 'Help richtlijnen verbeteren', id: 'help-richtlijnen-verbeteren', level: 2 }, ...c.RM];
-   function m(e) {
-    const n = { h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components },
-     { OverviewPage: t } = n;
+   var o = n(86070),
+    s = n(18439),
+    r = n(12941),
+    l = n(46447),
+    a = n(47219),
+    c = n(77928);
+   const w = { title: "Introductie WCAG pagina's", title_sm: 'WCAG', hide_title: !0, hide_table_of_contents: !0, sidebar_position: 1, navigation_order: 1, sidebar_label: "Introductie WCAG-pagina's", pagination_label: "Introductie WCAG-pagina's", description: 'Introductie van informatie over de WCAG-succescriteria.', slug: '/wcag', keywords: ['WCAG', 'succescriteria'] },
+    d = "Introductie WCAG-pagina's",
+    g = {},
+    u = [{ value: 'Opzet', id: 'opzet', level: 2 }, { value: 'WCAG-pagina&#39;s', id: 'wcag-paginas', level: 2 }, { value: 'Niveau A en Niveau AA', id: 'niveau-a-en-niveau-aa', level: 3 }, { value: 'Niveau AAA', id: 'niveau-aaa', level: 3 }, { value: 'Help richtlijnen verbeteren', id: 'help-richtlijnen-verbeteren', level: 2 }, ...a.RM];
+   function A(e) {
+    const t = { a: 'a', h1: 'h1', h2: 'h2', h3: 'h3', header: 'header', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components },
+     { OverviewPage: n } = t;
     return (
-     t ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
+     n ||
+      (function (e, t) {
+       throw new Error('Expected ' + (t ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
       })('OverviewPage', !0),
-     (0, r.jsxs)(r.Fragment, {
+     (0, o.jsxs)(o.Fragment, {
       children: [
-       (0, r.jsx)(n.header, { children: (0, r.jsx)(n.h1, { id: 'introductie-wcag-paginas', children: "Introductie WCAG-pagina's" }) }),
+       (0, o.jsx)(t.header, { children: (0, o.jsx)(t.h1, { id: 'introductie-wcag-paginas', children: "Introductie WCAG-pagina's" }) }),
        '\n',
-       (0, r.jsx)(l.K7, { children: (0, r.jsx)(o.o, { omitH1: !0, headinglevel: 2, children: (0, r.jsx)(a.Ay, {}) }) }),
+       (0, o.jsx)(l.fz, { appearance: 'lead', children: (0, o.jsx)(t.p, { children: "De WCAG pagina's op NL Design System geven praktische uitleg en voorbeelden op basis van de nieuwe WCAG 2.2\nspecificatie. Het doel is om met deze pagina's te helpen bij het toegankelijk inzetten van de NL Design System\ncomponenten, patronen en richtlijnen en veelgemaakte fouten te voorkomen." }) }),
        '\n',
-       (0, r.jsx)(n.h2, { id: 'opzet', children: 'Opzet' }),
+       (0, o.jsxs)(t.p, { children: ['Wil je weten waar je volgens de wet aan moet voldoen? Ga dan naar naar de website van DigiToegankelijk: ', (0, o.jsx)(t.a, { href: 'https://www.digitoegankelijk.nl/wetgeving/wat-is-verplicht', children: 'Wat is verplicht?' }), '.'] }),
        '\n',
-       (0, r.jsx)(n.p, { children: 'Elk WCAG-succescriterium heeft een eigen pagina waarin is opgenomen:' }),
+       (0, o.jsx)(t.h2, { id: 'opzet', children: 'Opzet' }),
        '\n',
-       (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: 'Een uitleg.' }), '\n', (0, r.jsx)(n.li, { children: 'Links naar gerelateerde richtlijnen, zodat je weet hoe deze criteria toe te passen.' }), '\n', (0, r.jsx)(n.li, { children: 'Bronnen over extra uitleg of voorbeelden.' }), '\n', (0, r.jsx)(n.li, { children: 'Relevant gebruikersonderzoek.' }), '\n', (0, r.jsx)(n.li, { children: "Hoe voor een succescriterium zelf te testen op webpagina's." }), '\n', (0, r.jsx)(n.li, { children: 'Veelgemaakte fouten en de oplossingen hiervoor.' }), '\n', (0, r.jsx)(n.li, { children: 'De links naar de offici\xeble richtlijnen en W3C-referenties.' }), '\n', (0, r.jsx)(n.li, { children: 'Een disclaimer over het gebruik van de richtlijnen.' }), '\n'] }),
+       (0, o.jsxs)(t.ul, { children: ['\n', (0, o.jsx)(t.li, { children: 'Een uitleg.' }), '\n', (0, o.jsx)(t.li, { children: 'Links naar gerelateerde componenten en richtlijnen, zodat je weet hoe deze criteria toe te passen.' }), '\n', (0, o.jsx)(t.li, { children: 'Bronnen over extra uitleg of voorbeelden.' }), '\n', (0, o.jsx)(t.li, { children: 'Relevant gebruikersonderzoek.' }), '\n', (0, o.jsx)(t.li, { children: "Hoe voor een succescriterium zelf te testen op webpagina's." }), '\n', (0, o.jsx)(t.li, { children: 'Veelgemaakte fouten en de oplossingen hiervoor.' }), '\n', (0, o.jsx)(t.li, { children: 'De links naar de offici\xeble richtlijnen en W3C-referenties.' }), '\n'] }),
        '\n',
-       (0, r.jsx)(n.p, { children: 'Sommige succescriteria bevatten nu alleen nog links en een uitleg. Het doel is om eind van 2025 de inhoud van de A- en AA-criteria compleet te hebben.' }),
+       (0, o.jsx)(t.h2, { id: 'wcag-paginas', children: "WCAG-pagina's" }),
        '\n',
-       (0, r.jsx)(n.h2, { id: 'wcag-paginas', children: "WCAG-pagina's" }),
+       (0, o.jsx)(t.h3, { id: 'niveau-a-en-niveau-aa', children: 'Niveau A en Niveau AA' }),
        '\n',
-       (0, r.jsx)(n.h3, { id: 'niveau-a-en-niveau-aa', children: 'Niveau A en Niveau AA' }),
-       '\n',
-       (0, r.jsx)(t, {
+       (0, o.jsx)(n, {
         excludeDocIDs: [
          'wcag/README',
-         ...w.NO.filter(({ conformance: e }) => 'AAA' === e)
+         ...c.NO.filter(({ conformance: e }) => 'AAA' === e)
           .map(({ sc: e }) => e)
           .map((e) => e.replace(/\.(\d)$/g, '.0$1'))
           .map((e) => `wcag/${e}`),
         ],
        }),
        '\n',
-       (0, r.jsx)(n.h3, { id: 'niveau-aaa', children: 'Niveau AAA' }),
+       (0, o.jsx)(t.h3, { id: 'niveau-aaa', children: 'Niveau AAA' }),
        '\n',
-       (0, r.jsx)(t, {
+       (0, o.jsx)(n, {
         excludeDocIDs: [
          'wcag/README',
          'wcag/4.1.01',
-         ...w.NO.filter(({ conformance: e, sc: n }) => 'A' === e || 'AA' === e)
+         ...c.NO.filter(({ conformance: e, sc: t }) => 'A' === e || 'AA' === e)
           .map(({ sc: e }) => e)
           .map((e) => e.replace(/\.(\d)$/g, '.0$1'))
           .map((e) => `wcag/${e}`),
         ],
        }),
        '\n',
-       (0, r.jsx)(n.h2, { id: 'help-richtlijnen-verbeteren', children: 'Help richtlijnen verbeteren' }),
+       (0, o.jsx)(t.h2, { id: 'help-richtlijnen-verbeteren', children: 'Help richtlijnen verbeteren' }),
        '\n',
-       (0, r.jsx)(o.o, { omitH1: !0, headinglevel: 3, children: (0, r.jsx)(c.Ay, {}) }),
+       (0, o.jsx)(r.o, { omitH1: !0, headinglevel: 3, children: (0, o.jsx)(a.Ay, {}) }),
       ],
      })
     );
    }
-   function p(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(m, { ...e }) }) : m(e);
+   function m(e = {}) {
+    const { wrapper: t } = { ...(0, s.R)(), ...e.components };
+    return t ? (0, o.jsx)(t, { ...e, children: (0, o.jsx)(A, { ...e }) }) : A(e);
    }
   },
  },
