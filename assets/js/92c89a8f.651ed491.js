@@ -23,11 +23,11 @@
   },
   39049(e, n, i) {
    (i.r(n), i.d(n, { assets: () => c, contentTitle: () => d, default: () => p, frontMatter: () => a, metadata: () => t, toc: () => l }));
-   const t = JSON.parse('{"id":"project/schrijfwijzer/reviews","title":"Reviews","description":"Reviews voor NL Design System communicatie.","source":"@site/docs/project/schrijfwijzer/reviews.mdx","sourceDirName":"project/schrijfwijzer","slug":"/project/schrijfwijzer/reviews","permalink":"/project/schrijfwijzer/reviews","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/project/schrijfwijzer/reviews.mdx","tags":[],"version":"current","sidebarPosition":8,"frontMatter":{"title":"Reviews","hide_title":true,"sidebar_label":"Reviews","sidebar_position":8,"navigation_order":8,"pagination_label":"Reviews","description":"Reviews voor NL Design System communicatie.","keywords":["kernteam"]},"sidebar":"project","previous":{"title":"Beslissingen voor schrijfwijze","permalink":"/project/schrijfwijzer/beslissingen"}}');
+   const t = JSON.parse('{"id":"project/schrijfwijzer/reviews","title":"Reviews","description":"Reviews voor NL Design System communicatie.","source":"@site/docs/project/schrijfwijzer/reviews.mdx","sourceDirName":"project/schrijfwijzer","slug":"/project/schrijfwijzer/reviews","permalink":"/project/schrijfwijzer/reviews","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/project/schrijfwijzer/reviews.mdx","tags":[],"version":"current","sidebarPosition":9,"frontMatter":{"title":"Reviews","hide_title":true,"sidebar_label":"Reviews","sidebar_position":9,"navigation_order":9,"pagination_label":"Reviews","description":"Reviews voor NL Design System communicatie.","keywords":["kernteam"]},"sidebar":"project","previous":{"title":"Beslissingen voor schrijfwijze","permalink":"/project/schrijfwijzer/beslissingen"}}');
    var r = i(86070),
     s = i(18439),
     o = i(46447);
-   const a = { title: 'Reviews', hide_title: !0, sidebar_label: 'Reviews', sidebar_position: 8, navigation_order: 8, pagination_label: 'Reviews', description: 'Reviews voor NL Design System communicatie.', keywords: ['kernteam'] },
+   const a = { title: 'Reviews', hide_title: !0, sidebar_label: 'Reviews', sidebar_position: 9, navigation_order: 9, pagination_label: 'Reviews', description: 'Reviews voor NL Design System communicatie.', keywords: ['kernteam'] },
     d = 'Reviews',
     c = {},
     l = [
