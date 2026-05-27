@@ -39,9 +39,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.c823e81f.css" />
-  <script src="/assets/js/runtime~main.5b6144eb.js" defer="defer"></script>
-  <script src="/assets/js/main.20731287.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.ea820451.css" />
+  <script src="/assets/js/runtime~main.1c1e1e26.js" defer="defer"></script>
+  <script src="/assets/js/main.14f0de48.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -272,6 +272,15 @@
                <li><strong>Linting bewaakt kwaliteit.</strong> Deze tools controleren code op mogelijke fouten, anti‑patterns en overtredingen van afgesproken regels. Bijvoorbeeld: ongebruikte variabelen, incorrecte afhankelijkheden.</li>
                <li><strong>Formatting is voor consistentie.</strong> Code wordt automatisch opgemaakt, zonder de code inhoudelijk te beoordelen. Bijvoorbeeld: voorspelbare inspringing, quotes en regellengte.</li>
               </ul>
+              <p>Voordelen van deze tools:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Je kunt sneller werken, omdat veel tools de code automatisch kunnen aanpassen.</li>
+               <li>Je kunt sneller code lezen en begrijpen, wanneer code consistent en voorspelbaar is.</li>
+               <li>Pull requests reviewen is minder werk, als over inspringing en opmaak geen discussie is.</li>
+               <li>
+                De informatie in <a href="https://git-scm.com/docs/git-blame" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">git blame</code></a> is duidelijker, wanneer code niet steeds wordt aangepast voor betere opmaak.
+               </li>
+              </ul>
               <h2 id="gebruikte-tooling" class="utrecht-heading-2">Gebruikte tooling</h2>
               <p>Hier sommen we op welke tooling we gebruiken en hoe het wordt gebruikt.</p>
               <h3 id="eslint" class="utrecht-heading-3">ESLint</h3>
@@ -287,16 +296,42 @@
                <li>Uitvoeren met <code class="utrecht-code">pnpm lint:css</code></li>
               </ul>
               <h3 id="prettier" class="utrecht-heading-3">Prettier</h3>
-              <p><a href="https://prettier.io/" class="utrecht-link utrecht-link--html-a">Prettier</a> wordt gebruikt voor het formatteren van code. Het wordt niet alleen toegepast op JavaScript en TypeScript, maar ook YAML en Markdown.</p>
+              <p>Gebruik <a href="https://prettier.io/" class="utrecht-link utrecht-link--html-a">Prettier</a> voor het formatteren van code. Het wordt niet alleen toegepast op JavaScript en TypeScript, maar ook YAML en Markdown.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Geconfigureerd in <code class="utrecht-code">prettier.config.mjs</code> (<a href="https://github.com/nl-design-system/example/blob/main/prettier.config.mjs" class="utrecht-link utrecht-link--html-a">voorbeeld</a>)</li>
                <li>Uitvoeren met <code class="utrecht-code">pnpm lint:prettier</code></li>
               </ul>
+              <p>Prettier ondersteunt standaard al veel talen, maar er zijn ook nog uitbreidingen beschikbaar:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>
+                Java in <code class="utrecht-code">*.java</code> bestanden, met <a href="http://npmjs.com/package/prettier-plugin-java" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">prettier-plugin-java</code></a>
+               </li>
+               <li>
+                PHP in <code class="utrecht-code">*.php</code> bestanden, met <a href="https://www.npmjs.com/package/wp-prettier" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">wp-prettier</code></a>
+               </li>
+              </ul>
+              <p>Voordelen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Je hebt minder last van merge conflicts, wanneer code consistent wordt opgemaakt.</li>
+              </ul>
               <h3 id="markdownlint" class="utrecht-heading-3">markdownlint</h3>
-              <p><a href="https://github.com/DavidAnson/markdownlint" class="utrecht-link utrecht-link--html-a">markdownlint</a> wordt gebruikt om Markdown-bestanden te controleren, bijvoorbeeld op headings, witruimte of het ontbreken van alt-teksten op plaatjes.</p>
+              <p><a href="https://github.com/DavidAnson/markdownlint" class="utrecht-link utrecht-link--html-a">markdownlint</a> wordt gebruikt om <code class="utrecht-code">.md</code>-bestanden te controleren. Dat is met name voor documentatie.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Geconfigureerd in <code class="utrecht-code">.markdownlint.json</code> (<a href="https://github.com/nl-design-system/example/blob/main/.markdownlint.json" class="utrecht-link utrecht-link--html-a">voorbeeld</a>)</li>
                <li>Uitvoeren met <code class="utrecht-code">pnpm lint:md</code></li>
+              </ul>
+              <p>Voordelen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Je kunt toegankelijkheid bij de bron controleren, zoals kopniveau&#x27;s en alt-teksten.</li>
+               <li>Je kunt problemen in Markdown-files vinden, bijvoorbeeld wanneer je teksten plakt met tekens die iets speciaals doen in Markdown.</li>
+               <li>Als je ook Prettier gebruikt, dan gaan de meeste checks voor consistent witruimte gebruiken automatisch goed.</li>
+              </ul>
+              <p>Als je in jouw situatie veel onnodige foutmeldingen krijgt, dan kun je het volgende doen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Wanneer je een onnodige melding krijgt, plaats dit voor de tekstregel waar het om gaat: <code class="utrecht-code">&lt;!-- markdownlint-disable-line --&gt;</code>.</li>
+               <li>Wanneer je bestanden aangeleverd krijgt, waar je geen wijziging in wilt doen. Plaats dan bovenaan: <code class="utrecht-code">&lt;!-- markdownlint-disable --&gt;</code>.</li>
+               <li>Wanneer in jouw project een <a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md" class="utrecht-link utrecht-link--html-a">Markdownlint Rule</a> meer problemen veroorzaakt dan oplost, schakel dan die Rule dan uit voor je hele project in <code class="utrecht-code">.markdownlint.json</code>.</li>
+               <li>Wanneer je hele bestanden en mappen negeren wilt negeren, voeg de namen dan toe aan <code class="utrecht-code">.markdownlintignore</code>.</li>
               </ul>
               <h3 id="npm-package-json-lint" class="utrecht-heading-3">npm-package-json-lint</h3>
               <p>Met <a href="https://npmpackagejsonlint.org/" class="utrecht-link utrecht-link--html-a">npm-package-json-lint</a> wordt de <code class="utrecht-code">package.json</code> gecontroleerd, bijvoorbeeld op het bestaan van een author. Voor NL Design System wordt onder andere bijgehouden dat de licentie op <a href="/blog/licentiekeuze-nl-design-system/" class="utrecht-link utrecht-link--html-a">EUPL</a> staat.</p>
@@ -304,6 +339,12 @@
                <li>Geconfigureerd in <code class="utrecht-code">npmpackagejsonlint.config.cjs</code> (<a href="https://github.com/nl-design-system/example/blob/main/npmpackagejsonlint.config.cjs" class="utrecht-link utrecht-link--html-a">voorbeeld</a>)</li>
                <li>Uitvoeren met <code class="utrecht-code">pnpm lint:package-json</code></li>
               </ul>
+              <h3 id="editorconfig" class="utrecht-heading-3">EditorConfig</h3>
+              <p>Gebruik een <a href="https://editorconfig.org/" class="utrecht-link utrecht-link--html-a">EditorConfig</a> configuratie in .editorconfig voor basis-instellingen voor code-opmaak.</p>
+              <h3 id="git" class="utrecht-heading-3">Git</h3>
+              <p>
+               Gebruik consistent regeleinden. Configureer Git om de juiste regeleinden te gebruiken via <code class="utrecht-code">.gitattributes</code>. Je vind een voorbeeld van <a href="https://github.com/nl-design-system/utrecht/blob/main/.gitattributes" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">.gitattributes</code> in de example repository</a>.
+              </p>
               <h2 id="automatisering" class="utrecht-heading-2">Automatisering</h2>
               <h3 id="lint-staged" class="utrecht-heading-3">Automatisering met husky en lint-staged</h3>
               <p>We gebruiken <strong>husky</strong> in combinatie met <strong>lint‑staged</strong> om deze checks uit te voeren vóórdat code wordt gecommit.</p>
