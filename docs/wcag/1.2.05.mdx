@@ -9,21 +9,24 @@ description: Opgenomen video's hebben audiodescriptie.
 slug: 1.2.5
 keywords:
   - WCAG
+  - WCAG 1.2.5
   - Niveau AA
+  - AA
   - waarneembaar
-  - op tijd gebaseerde media
   - perceivable
+  - op tijd gebaseerde media
   - time-based media
   - audio description (prerecorded)
   - audio description
+  - vooraf opgenomen
   - vooraf opgenomen video
+  - prerecorded
+  - prerecorded video
+  - synchronized media
   - video
   - blind
   - slechtziend
   - visuele beperking
-  - synchronized media
-  - prerecorded video
-  - WCAG 1.2.5
   - toegankelijkheid
 ---
 
@@ -45,7 +48,9 @@ import Summary from "./summaries/_1.2.5-summary.md";
 
 Wie de beelden van een video niet kan zien, krijgt de visuele informatie via een audiodescriptie: een extra audiospoor dat meeloopt met de video en beschrijft wat in beeld gebeurt. De beschrijvingen passen in de stiltes tussen de dialogen, of aan het begin of het einde van de video.
 
-Op niveau A mag onder [1.2.3](/wcag/1.2.3/) ook een transcript volstaan. Op niveau AA is dat niet meer genoeg: er moet een echte audiodescriptie zijn die je tegelijk met de video kunt horen. Dit succescriterium geldt voor alle vooraf opgenomen video's met geluid. Live uitzendingen vallen onder [1.2.4 Ondertitels (live)](/wcag/1.2.4/) en [1.2.9 Audio-only (live)](/wcag/1.2.9/). Als de video alleen een visuele versie is van tekst die al op de pagina staat én je dat duidelijk vermeldt, geldt de uitzondering "media-alternatief voor tekst" en hoeft er geen audiodescriptie te zijn.
+Op niveau A mag een transcript onder [1.2.3](/wcag/1.2.3/) nog volstaan; op niveau AA niet meer. Er moet dan een audiodescriptie zijn die je tegelijk met de video kunt horen.
+
+Dit geldt voor alle vooraf opgenomen video's met geluid. Voor live uitzendingen gelden aparte regels (zie [1.2.4 Ondertitels (live)](/wcag/1.2.4/)). Eén uitzondering: als de video alleen een visuele versie is van tekst die al op de pagina staat én je dat ook duidelijk vermeldt, hoeft er geen audiodescriptie te zijn.
 
 ## Veelgemaakte fouten
 
@@ -73,6 +78,14 @@ De video toont een naamkaartje onder een spreker, het logo van het bedrijf of te
 
 **Wie kan dit oplossen:** een contentmaker laat de audiodescriptie ook de tekst in beeld voorlezen.
 
+### Audiodescriptie loopt over belangrijke audio heen
+
+De audiodescriptie wordt over de dialoog of belangrijke geluiden van de video heen gesproken. De luisteraar krijgt twee sporen tegelijk en kan niet meer goed volgen wat er gezegd of beschreven wordt.
+
+**Hoe te testen:** beluister de video met audiodescriptie aan. Kun je nog goed verstaan wat er in de oorspronkelijke audio gezegd wordt? Vallen de beschrijvingen in de stiltes?
+
+**Wie kan dit oplossen:** een contentmaker laat de audiodescriptie in de stiltes tussen de dialogen vallen. Als er te weinig ruimte is voor beschrijvingen, biedt [1.2.7 Audiodescriptie (uitgebreid)](/wcag/1.2.7/) een oplossing — daar pauzeert de video kort voor extra ruimte.
+
 ### Audiodescriptie beschrijft decoratie
 
 De audiodescriptie leest voor dat decoratieve elementen in beeld verschijnen. Een blinde bezoeker krijgt informatie te horen die er niet toe doet.
@@ -83,9 +96,11 @@ De audiodescriptie leest voor dat decoratieve elementen in beeld verschijnen. Ee
 
 ### Audiodescriptie in een andere taal dan de video
 
-De video is in het Nederlands, maar de audiodescriptie is alleen in het Engels beschikbaar. Of andersom. Wie de taal van de audiodescriptie niet spreekt, heeft er niets aan.
+De audiodescriptie is in een andere taal dan de hoofdtaal van de video, of dan de taal van de doelgroep. Wie die taal niet spreekt, heeft er niets aan.
 
-**Hoe te testen:** in welke taal is de video? In welke taal is de audiodescriptie? Kloppen die?
+Bij een video met meerdere talen — bijvoorbeeld een Nederlandse documentaire met een Engelstalig interview — blijft de audiodescriptie consequent in de hoofdtaal van de productie. De verteller schakelt niet mee met de gesproken taal in de video; die anderstalige passages hoort de blinde luisteraar gewoon zelf.
+
+**Hoe te testen:** in welke taal is de hoofdaudio van de video? In welke taal is de audiodescriptie? Komt die overeen?
 
 **Wie kan dit oplossen:** een contentmaker laat voor elke taalversie van de video een audiodescriptie in dezelfde taal maken.
 
