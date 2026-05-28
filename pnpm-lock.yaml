@@ -8,6 +8,11 @@ overrides:
   form-data@>=4.0.0 <4.0.4: '>=4.0.4'
   '@isaacs/brace-expansion@<=5.0.0': '>=5.0.1'
 
+patchedDependencies:
+  '@rijkshuisstijl-community/card-react':
+    hash: c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247
+    path: patches/@rijkshuisstijl-community__card-react.patch
+
 importers:
 
   .:
@@ -455,7 +460,7 @@ importers:
         version: 1.0.0
       '@rijkshuisstijl-community/card-react':
         specifier: 1.0.0
-        version: 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.3.2(@types/node@24.10.9)(jiti@1.21.0)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))
+        version: 1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.3.2(@types/node@24.10.9)(jiti@1.21.0)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))
       '@tabler/icons-react':
         specifier: 3.36.1
         version: 3.36.1(react@18.3.1)
@@ -16096,7 +16101,7 @@ snapshots:
 
   '@rijkshuisstijl-community/card-css@1.0.0': {}
 
-  '@rijkshuisstijl-community/card-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.3.2(@types/node@24.10.9)(jiti@1.21.0)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))':
+  '@rijkshuisstijl-community/card-react@1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.3.2(@types/node@24.10.9)(jiti@1.21.0)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))':
     dependencies:
       '@rijkshuisstijl-community/card-css': 1.0.0
       '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.29.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.3.2(@types/node@24.10.9)(jiti@1.21.0)(sass@1.97.3)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))

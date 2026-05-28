@@ -75,6 +75,9 @@ export default defineConfig({
     ssr: {
       noExternal: [/@rijkshuisstijl-community\/.*/],
     },
+    resolve: {
+      noExternal: [/@rijkshuisstijl-community\/.*/],
+    },
   },
 
   markdown: {
