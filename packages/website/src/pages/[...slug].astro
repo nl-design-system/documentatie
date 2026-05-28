@@ -3,7 +3,8 @@ import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
-import { getNavigationElement, isNavigationGroup } from 'src/navigation';
+import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
+import { isNavigationGroup } from 'src/navigation';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
