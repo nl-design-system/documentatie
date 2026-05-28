@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import OverviewLayout from '@layouts/overview.astro';
-import { getNavigationElement, isNavigationGroup, isNavigationItem } from '../navigation';
+import { isNavigationGroup, isNavigationItem } from '../navigation';
+import { getNavigationElement } from '../navigation/get-navigation-element.ts';
 import { OverviewPage } from '@components/overview-page/overview-page';
 
 export async function getStaticPaths() {
