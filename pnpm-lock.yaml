@@ -426,9 +426,12 @@ importers:
 
   packages/website:
     dependencies:
+      '@amsterdam/design-system-css':
+        specifier: 4.1.0
+        version: 4.1.0
       '@amsterdam/design-system-react':
         specifier: 4.1.0
-        version: 4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.0(@amsterdam/design-system-css@4.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@fontsource/fira-code':
         specifier: 5.2.7
         version: 5.2.7
@@ -630,6 +633,12 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@amsterdam/design-system-css@4.1.0':
+    resolution: {integrity: sha512-AfR2vCwOTnbpv1P6oaa8CPcwJSi6NNtBfExszqxSob5EWg0+o/mvdBah6GddItEg8sGrXctSvnYGM/I00q3chQ==}
+    peerDependencies:
+      '@amsterdam/design-system-assets': 2.3.0
+      '@amsterdam/design-system-tokens': 4.0.1
 
   '@amsterdam/design-system-react-icons@2.0.0':
     resolution: {integrity: sha512-yMQ7aABGOTcPdOANypG9EGeHB5vBv/syX8E+La/tmsfY++CtahRylIIVuRpMq3s6g03+vbWan/ANuRA5Eu0NFg==}
@@ -11882,13 +11891,16 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
+  '@amsterdam/design-system-css@4.1.0': {}
+
   '@amsterdam/design-system-react-icons@2.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@amsterdam/design-system-react@4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@amsterdam/design-system-react@4.1.0(@amsterdam/design-system-css@4.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
+      '@amsterdam/design-system-css': 4.1.0
       '@amsterdam/design-system-react-icons': 2.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@babel/runtime': 7.29.2
       clsx: 2.1.1

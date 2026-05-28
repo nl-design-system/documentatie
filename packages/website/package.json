@@ -29,6 +29,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@amsterdam/design-system-css": "4.1.0",
     "@amsterdam/design-system-react": "4.1.0",
     "@fontsource/fira-code": "5.2.7",
     "@fontsource/fira-sans": "5.2.7",
