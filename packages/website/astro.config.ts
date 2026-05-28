@@ -72,6 +72,9 @@ export default defineConfig({
       // prevent vite from inlining assets as data:* attributes because it violates csp rules
       assetsInlineLimit: 0,
     },
+    ssr: {
+      noExternal: [/@rijkshuisstijl-community\/.*/],
+    },
   },
 
   markdown: {
