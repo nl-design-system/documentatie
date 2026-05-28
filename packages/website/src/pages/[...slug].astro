@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
+import { getNavigationElement, isNavigationGroup } from 'src/navigation';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
@@ -15,6 +16,11 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content } = await render(page);
+
+const navigationElement = await getNavigationElement(Astro.url.pathname);
+const navigationGroup = isNavigationGroup(navigationElement) ? navigationElement : navigationElement?.parent;
+
+const components = await MDXComponents({ navigationItems: navigationGroup?.items });
 ---
 
 <DetailLayout
@@ -27,5 +33,5 @@ const { Content } = await render(page);
   keywords={page.data.keywords}
   index={page.data.unlisted !== true}
 >
-  <Content components={MDXComponents} />
+  <Content components={components} />
 </DetailLayout>
