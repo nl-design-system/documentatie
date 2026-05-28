@@ -11,6 +11,9 @@ export { getNavigationElement } from './get-navigation-element';
  * An item in a navigation tree. The item references an Content Collection ID.
  */
 export interface NavigationItem {
+  /** The type of NavigationElement */
+  type: 'item';
+
   /** The label of the item to display to the user */
   label?: string;
 
@@ -39,6 +42,9 @@ export interface NavigationItem {
  * group is either a markdown file or an other group.
  */
 export interface NavigationGroup {
+  /** The type of NavigationElement */
+  type: 'group';
+
   /** The label of the group to display to the user */
   label?: string;
 
@@ -68,6 +74,13 @@ export interface NavigationGroup {
   /** The position this group should take within a NavigationGroup items list */
   order?: number;
 }
+
+export const isNavigationGroup: (object?: NavigationElement) => object is NavigationGroup = (
+  object: NavigationElement,
+) => object?.type === 'group';
+
+export const isNavigationItem: (object?: NavigationElement) => object is NavigationItem = (object: NavigationElement) =>
+  object?.type === 'item';
 
 export type NavigationElement = NavigationItem | NavigationGroup;
 export type NavigationElementOrdered = NavigationElement & { order: NonNullable<NavigationElement['order']> };
@@ -117,6 +130,7 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
   if (!label) throw new Error(`No label provided for ${_filePath}`);
 
   const item: NavigationItem = {
+    type: 'item',
     id: entry?.id,
     description: entry?.data.description,
     label,
@@ -243,6 +257,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
 
   // Resulting NavigationGroup to be returned
   const group: NavigationGroup = {
+    type: 'group',
     label: options.label || index?.label || toTitleCase(folderName) || 'unknown',
     items: sortedItems,
     index,
