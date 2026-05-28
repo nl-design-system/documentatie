@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import OverviewLayout from '@layouts/overview.astro';
-import { getNavigationElement, type NavigationElement } from '../navigation';
+import { getNavigationElement, isNavigationGroup, isNavigationItem } from '../navigation';
+import { OverviewPage } from '@components/overview-page/overview-page';
 
 export async function getStaticPaths() {
   const pages = await getCollection('overviewPages');
@@ -14,6 +15,11 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const navigationElement = await getNavigationElement(Astro.url.pathname);
+
+let pages = isNavigationGroup(navigationElement) && navigationElement.items ? navigationElement.items : [];
+pages = isNavigationItem(navigationElement) ? navigationElement.parent?.items || pages : pages;
+
+pages = await Promise.all(pages);
 ---
 
 <OverviewLayout
@@ -29,13 +35,5 @@ const navigationElement = await getNavigationElement(Astro.url.pathname);
   <h1>{page?.data?.title}</h1>
   <p>{page?.data?.description}</p>
 
-  {
-    (navigationElement?.items || navigationElement?.parent?.items)?.map((item: NavigationElement) => (
-      <>
-        <p>{item.label}</p>
-        <p>{item?.description}</p>
-        <hr />
-      </>
-    ))
-  }
+  <OverviewPage pages={pages} />
 </OverviewLayout>
