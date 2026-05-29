@@ -27,9 +27,7 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
-import Disclaimer from "./\_wcag-disclaimer.md";
 import WCAGFooterInfo from "./\_wcag_footer_info.md";
 import Summary from "./summaries/\_2.4.5-summary.md";
 
@@ -39,19 +37,21 @@ import Summary from "./summaries/\_2.4.5-summary.md";
 
 <Summary />
 
-Voor mensen die een schermvergroter of screenreader gebruiken kan een zoekveld een efficiëntere route zijn dan door een grote navigatiebalk heen klikken. Voor mensen met een cognitieve beperking kan een sitemap of inhoudsopgave meer houvast geven dan stap voor stap door de pagina's klikken. Geen van deze manieren werkt voor iedereen — daarom moet je er meer dan één aanbieden.
+Niet iedereen vindt op dezelfde manier zijn weg: de een zoekt op een trefwoord, de ander klikt via het menu, en weer een ander gebruikt de sitemap om in één oogopslag te zien wat er is.
 
-WCAG noemt deze manieren als geldig om naast elkaar aan te bieden:
+Voor mensen die een schermvergroter of screenreader gebruiken is een zoekveld vaak sneller dan door een grote navigatiebalk heen klikken. Voor mensen met een cognitieve beperking is een sitemap of inhoudsopgave makkelijker te overzien dan stap voor stap door de pagina's klikken. Geen van deze manieren werkt voor iedereen — daarom moet je er meer dan één aanbieden.
 
-- een hoofdnavigatie met links naar alle hoofdsecties,
-- een zoekfunctie waarmee je op trefwoord een pagina kunt vinden,
-- een sitemap met links naar alle pagina's op de site,
-- een footer of overzichtspagina die naar alle belangrijke pagina's linkt,
-- een homepage waarvandaan alle pagina's bereikbaar zijn.
+Je kunt bijvoorbeeld deze manieren naast elkaar aanbieden:
+
+- Een hoofdnavigatie met links naar alle hoofdsecties.
+- Een zoekfunctie waarmee je op trefwoord een pagina kunt vinden.
+- Een sitemap met links naar alle pagina's op de site.
+- Een footer of overzichtspagina die naar alle belangrijke pagina's linkt.
+- Een homepage waarvandaan alle pagina's bereikbaar zijn.
 
 Twee van deze manieren zijn voldoende, zolang ze allebei alle pagina's bereiken die voor de bezoeker relevant zijn.
 
-Er is één uitzondering: pagina's die onderdeel zijn van een proces hoeven niet op meerdere manieren vindbaar te zijn. Denk aan de stappen van een bestelproces, een formulier in meerdere schermen, of een bevestigingspagina na een betaling. Die wil je juist niet rechtstreeks vindbaar maken, omdat de stappen ervoor noodzakelijk zijn.
+Voor bepaalde pagina's is het logisch dat ze maar op één manier te bereiken zijn. Bijvoorbeeld een formulier met meerdere stappen, en de [bevestigingspagina](/richtlijnen/formulieren/bevestigingspagina/) na het verzenden. Pagina's die onderdeel zijn van een proces hoeven niet op meerdere manieren vindbaar te zijn.
 
 ## Veelgemaakte fouten
 
@@ -59,7 +59,7 @@ Er is één uitzondering: pagina's die onderdeel zijn van een proces hoeven niet
 
 De enige manier om een pagina te vinden is via de hoofdnavigatie. Er is geen zoekveld, geen sitemap en geen overzicht in de footer. Voor iemand met een schermvergroter past het uitgeklapte menu vaak niet in beeld. Voor een screenreadergebruiker betekent het langs alle menu-items heen bewegen tot de juiste link langskomt. Beide groepen verliezen tijd of haken af.
 
-**Hoe te testen:** controleer of er naast het hoofdmenu nog een andere manier is om een willekeurige pagina te bereiken, zoals een zoekveld, een sitemap of een footer met links naar de hoofdsecties.
+**Hoe te testen:** controleer of er naast het hoofdmenu nog een andere manier is om een willekeurige pagina te bereiken. Bijvoorbeeld via een zoekveld, een sitemap of een [Page Footer](/page-footer/) met links.
 
 <Guideline appearance="dont" title="Alleen een hoofdmenu als ingang">
   ```html
@@ -142,11 +142,14 @@ Het zoekveld is wel aanwezig, maar alleen op de startpagina opgenomen en niet in
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer verplaatst het zoekveld naar een gedeelde template zoals de header, zodat het op elke pagina beschikbaar is.
+**Wie kan dit oplossen:**
+
+- Een contentmaker kan een link naar de zoekpagina aan het menu toevoegen.
+- Een developer voegt een zoekfunctie toe aan de header, zodat die op elke pagina beschikbaar is.
 
 ### De sitemap mist pagina's of klopt niet meer
 
-De sitemap wordt handmatig bijgehouden. Daardoor raakt hij achter: recente pagina's ontbreken en verwijderde pagina's blijven erin staan als doodlopende links. Een bezoeker die de sitemap gebruikt mist inhoud die er wel is, of belandt op een 404-pagina. De sitemap is dan geen werkbare tweede manier om pagina's te vinden.
+Wanneer de sitemap handmatig wordt bijgehouden, raakt de pagina vaak verouderd. Recente pagina's ontbreken en verwijderde pagina's blijven erin staan als kapotte links. Met ontbrekende pagina's en kapotte links is de sitemap geen werkbare tweede manier om pagina's te vinden.
 
 **Hoe te testen:** vergelijk het aantal pagina's in de sitemap met het aantal pagina's in het CMS of de inhoudsstructuur. Klik daarna een aantal willekeurige links aan en controleer of ze nog werken.
 
@@ -155,7 +158,7 @@ De sitemap wordt handmatig bijgehouden. Daardoor raakt hij achter: recente pagin
     <!-- sitemap.html, voor het laatst bijgewerkt in 2022 -->
     <ul>
       <li><a href="/diensten">Diensten</a></li>
-      <li><a href="/diensten/oud-product">Oud product (404)</a></li>
+      <li><a href="/diensten/oud-product">Oud product (kapotte link)</a></li>
       <!-- nieuwe pagina's uit 2024 en 2025 ontbreken -->
     </ul>
     ```
@@ -172,18 +175,18 @@ De sitemap wordt handmatig bijgehouden. Daardoor raakt hij achter: recente pagin
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer maakt de sitemap dynamisch op basis van de pagina's in het CMS, zodat nieuwe pagina's vanzelf verschijnen en verwijderde pagina's vanzelf verdwijnen.
+**Wie kan dit oplossen:** een developer zorgt dat de sitemap automatisch wordt gemaakt, zodat nieuwe pagina's vanzelf verschijnen en er geen kapotte links zijn.
 
-### Beide manieren leiden alleen naar dezelfde subset
+### Niet alle pagina's gevonden kunnen worden
 
-De site biedt bijvoorbeeld een productfilter én een zoekfunctie aan, maar allebei doorzoeken alleen de productcatalogus. Informatiepagina's, blogartikelen en contactgegevens zijn dan nog steeds alleen via het hoofdmenu te vinden. Dat zijn geen twee verschillende manieren om de site te doorzoeken, maar twee manieren om bij dezelfde set pagina's uit te komen. Voor pagina's buiten die set blijft het hoofdmenu de enige route.
+Naast het hoofdmenu biedt de site een zoekveld aan, als tweede manier om pagina's te vinden. Maar het zoekveld doorzoekt maar een beperkt aantal pagina's: oudere artikelen, losse informatiepagina's en detailpagina's komen niet in de resultaten naar boven. Voor die pagina's blijft het hoofdmenu de enige manier. Een zoekveld dat niet de hele site dekt, telt niet als geldige tweede manier naast het hoofdmenu.
 
-**Hoe te testen:** kies een pagina die geen productpagina is, bijvoorbeeld een blogartikel of een contactpagina. Probeer die via de zoekfunctie te vinden. Lukt dat niet, dan beslaat de zoekfunctie niet de hele site.
+**Hoe te testen:** kies een blogartikel of een nieuwsbericht. Probeer die via de zoekfunctie te vinden. Lukt dat niet, dan beslaat de zoekfunctie niet de hele site.
 
-<Guideline appearance="dont" title="Zoekfunctie die alleen productpagina's vindt">
+<Guideline appearance="dont" title="Zoekveld dat maar een deel van de site doorzoekt">
   ```html
-  <form role="search" action="/producten/zoeken">
-    <label for="zoek">Zoek in onze producten</label>
+  <form role="search" action="/nieuws/zoeken">
+    <label for="zoek">Zoek in het nieuws</label>
     <input type="search" id="zoek" name="q" />
     <button type="submit">Zoek</button>
   </form>
@@ -200,7 +203,7 @@ De site biedt bijvoorbeeld een productfilter én een zoekfunctie aan, maar alleb
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer breidt de zoekindex uit zodat alle pagina's worden meegenomen, niet alleen de productcatalogus. Een contentbeheerder controleert steekproefsgewijs of pagina's uit verschillende secties via de zoekfunctie vindbaar zijn.
+**Wie kan dit oplossen:** een developer breidt de zoekindex uit zodat alle pagina's worden meegenomen, niet alleen een deel van de site. Een contentbeheerder controleert steekproefsgewijs of pagina's uit verschillende secties via de zoekfunctie vindbaar zijn.
 
 ### De sitemap is verstopt
 
@@ -233,83 +236,6 @@ De sitemap bestaat wel, maar de link ernaartoe staat ergens diep weggestopt of a
 </Guideline>
 
 **Wie kan dit oplossen:** een developer plaatst de link naar de sitemap in de footer of een andere gedeelde sectie, zodat de link op elke pagina aanwezig is.
-
-### De procesuitzondering wordt te ruim toegepast
-
-Een productdetailpagina, een blogartikel of een informatiepagina wordt tot een "proces" gerekend, omdat de bezoeker er normaal via een filter of lijst komt. Daardoor wordt die pagina niet apart vindbaar gemaakt via zoekfunctie of sitemap. Het zijn echter op zichzelf staande inhoudspagina's, geen procesonderdelen. Bezoekers die niet via de standaardroute binnenkomen — bijvoorbeeld via een gedeelde link of een resultaat in een externe zoekmachine — kunnen die pagina's dan niet vinden.
-
-**Hoe te testen:** maak een lijst van pagina's die je tot "proces" rekent. Vraag jezelf bij elke pagina af: is dit een stap in een handeling die de bezoeker bewust begonnen is (bestellen, betalen, formulier invullen), of is het een inhoudspagina die op zichzelf staat?
-
-<Guideline appearance="dont" title="Productdetailpagina behandeld als procesonderdeel">
-    ```html
-    <!-- /product/winterjas-2024 staat niet in de sitemap en niet
-         in de zoekindex, omdat hij "alleen via de catalogus" bereikbaar
-         hoort te zijn -->
-    ```
-</Guideline>
-
-<Guideline appearance="do" title="Productdetailpagina opgenomen in sitemap en zoekindex">
-    ```html
-    <!-- /product/winterjas-2024 staat in de sitemap en wordt
-         meegenomen in de zoekindex. /betalen/stap-2 (echte
-         procesonderdelen) wordt uitgesloten. -->
-    ```
-</Guideline>
-
-**Wie kan dit oplossen:** een developer past de configuratie van de sitemap en zoekindex aan, zodat alleen echte procesonderdelen worden uitgesloten en inhoudspagina's worden meegenomen.
-
-### Een single-page applicatie heeft maar één ingang naar de routes
-
-De routes binnen een single-page applicatie (zoals `/dashboard`, `/instellingen`, `/profiel`) zijn alleen via de hoofdnavigatie te bereiken. Er is geen zoek- of overzichtsfunctie binnen de app. Voor de bezoeker zijn de routes aparte pagina's, dus geldt dezelfde eis: minstens twee manieren om er te komen.
-
-**Hoe te testen:** open de applicatie en kies een route, bijvoorbeeld een instellingenpagina. Probeer die op een tweede manier te bereiken, zonder het hoofdmenu te gebruiken.
-
-<Guideline appearance="dont" title="SPA met alleen een hoofdmenu als ingang">
-  ```html
-  <aside>
-    <nav aria-label="Hoofdmenu">
-      <ul>
-        <li>
-          <a href="/dashboard">Dashboard</a>
-        </li>
-        <li>
-          <a href="/instellingen">Instellingen</a>
-        </li>
-        <li>
-          <a href="/profiel">Profiel</a>
-        </li>
-      </ul>
-    </nav>
-  </aside>
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="SPA met hoofdmenu en een zoekfunctie binnen de app">
-  ```html
-  <aside>
-    <nav aria-label="Hoofdmenu">
-      <ul>
-        <li>
-          <a href="/dashboard">Dashboard</a>
-        </li>
-        <li>
-          <a href="/instellingen">Instellingen</a>
-        </li>
-        <li>
-          <a href="/profiel">Profiel</a>
-        </li>
-      </ul>
-    </nav>
-    <form role="search" action="/zoeken">
-      <label for="app-zoek">Zoek binnen de applicatie</label>
-      <input type="search" id="app-zoek" name="q" />
-      <button type="submit">Zoek</button>
-    </form>
-  </aside>
-  ```
-</Guideline>
-
-**Wie kan dit oplossen:** een developer voegt een tweede ingang toe aan de applicatie, zoals een zoekfunctie of een commandopalet waarmee een gebruiker een route kan opzoeken.
 
 ## Hoe te testen
 
@@ -351,12 +277,6 @@ De routes binnen een single-page applicatie (zoals `/dashboard`, `/instellingen`
 - Nederlandse vertaling van het WCAG-succescriterium: [2.4.5 Meerdere manieren](https://www.w3.org/Translations/WCAG22-nl/#multiple-ways).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.5 Multiple Ways</span>](https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.5 Multiple Ways</span>](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
