@@ -12,7 +12,7 @@ export { getNavigationElement } from './get-navigation-element';
  */
 export interface NavigationItem {
   /** The type of NavigationElement */
-  type: 'item';
+  type: 'item' | 'link';
 
   /** The label of the item to display to the user */
   label?: string;
@@ -75,12 +75,13 @@ export interface NavigationGroup {
   order?: number;
 }
 
-export const isNavigationGroup: (object?: NavigationElement) => object is NavigationGroup = (
-  object: NavigationElement,
-) => object?.type === 'group';
+export function isNavigationGroup(object?: NavigationElement): object is NavigationGroup {
+  return object?.type === 'group';
+}
 
-export const isNavigationItem: (object?: NavigationElement) => object is NavigationItem = (object: NavigationElement) =>
-  object?.type === 'item';
+export function isNavigationItem(object?: NavigationElement): object is NavigationItem {
+  return object?.type === 'item' || object?.type === 'link';
+}
 
 export type NavigationElement = NavigationItem | NavigationGroup;
 export type NavigationElementOrdered = NavigationElement & { order: NonNullable<NavigationElement['order']> };
@@ -130,7 +131,7 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
   if (!label) throw new Error(`No label provided for ${_filePath}`);
 
   const item: NavigationItem = {
-    type: 'item',
+    type: options?.type || 'item',
     id: entry?.id,
     description: entry?.data.description,
     label,
