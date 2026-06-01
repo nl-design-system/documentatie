@@ -4,6 +4,7 @@ import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
 import OverviewLayout from '@layouts/overview.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
+import { Grid } from '@components/grid/grid';
 
 export async function getStaticPaths() {
   const components = await getCollection('components');
@@ -34,8 +35,16 @@ const components = await MDXComponents();
   keywords={['component', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
   index={page.data.unlisted !== true}
 >
-  <h1 slot="header">{page.data.title}</h1>
-  <p slot="header">{page.data.description}</p>
+  <Grid>
+    <Grid.Cell span="all">
+      <h1 slot="header">{page.data.title}</h1>
+      <p slot="header">{page.data.description}</p>
+    </Grid.Cell>
+  </Grid>
 
-  <Content components={components} />
+  <Grid>
+    <Grid.Cell span="all">
+      <Content components={components} />
+    </Grid.Cell>
+  </Grid>
 </Layout>

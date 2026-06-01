@@ -76,17 +76,20 @@
   }
   .ma-layout-overview__content {
     grid-template-areas:
-      "side-nav . . breadcrumb-nav . "
-      "side-nav . . body . ";
+      ". side-nav . breadcrumb-nav . "
+      ". side-nav . body . ";
     grid-template-columns:
+      /* empty column to center page */
+      1fr
       /* side-nav */
       minmax(var(--ma-layout-overview-side-nav-min-inline-size), var(--ma-layout-overview-side-nav-max-inline-size))
       /* side-nav gutter */
       var(--basis-space-inline-2xl)
-      /* empty column to center page */
-      1fr
       /* page body */
-      minmax(var(--ma-layout-overview-min-inline-size), var(--basis-page-max-inline-size))
+      minmax(
+        var(--ma-layout-overview-min-inline-size),
+        calc(var(--basis-page-max-inline-size) + var(--ma-layout-detail-side-nav-max-inline-size))
+      )
       /* empty column to center page */
       minmax(var(--ma-layout-overview-side-nav-max-inline-size), 1fr);
     grid-template-rows: auto 1fr;

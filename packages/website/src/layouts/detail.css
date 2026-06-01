@@ -114,16 +114,16 @@
 
   .ma-layout-detail__content {
     grid-template-areas:
-      "side-nav . . breadcrumb-nav . anchor-nav ."
-      "side-nav . . header . anchor-nav ."
-      "side-nav . . body . anchor-nav . ";
+      ". side-nav . breadcrumb-nav . anchor-nav ."
+      ". side-nav . header . anchor-nav ."
+      ". side-nav . body . anchor-nav . ";
     grid-template-columns:
+      /* empty column to center page */
+      1fr
       /* side-nav */
       minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
       /* side-nav gutter */
       var(--basis-space-inline-2xl)
-      /* empty column to center page */
-      1fr
       /* page body */
       minmax(var(--ma-layout-detail-min-inline-size), var(--basis-page-max-inline-size))
       /* anchor-nav gutter */

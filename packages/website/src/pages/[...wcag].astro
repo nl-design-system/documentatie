@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
+import { Grid } from '@components/grid/grid';
 import { MDXComponents } from '@utils/mdx-components.astro';
 
 export async function getStaticPaths() {
@@ -32,5 +33,9 @@ const components = await MDXComponents();
   keywords={['wcag', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
   index={page.data.unlisted !== true}
 >
-  <Content components={components} />
+  <Grid>
+    <Grid.Cell span="all">
+      <Content components={components} />
+    </Grid.Cell>
+  </Grid>
 </DetailLayout>

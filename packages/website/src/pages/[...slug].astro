@@ -6,6 +6,7 @@ import { MDXComponents } from '@utils/mdx-components.astro';
 import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
 import { isNavigationGroup } from 'src/navigation';
 import { navigation } from '../navigation.config';
+import { Grid } from '@components/grid/grid';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
@@ -36,5 +37,9 @@ const components = await MDXComponents({ navigationItems: navigationGroup?.items
   keywords={page.data.keywords}
   index={page.data.unlisted !== true}
 >
-  <Content components={components} />
+  <Grid>
+    <Grid.Cell span="all">
+      <Content components={components} />
+    </Grid.Cell>
+  </Grid>
 </DetailLayout>

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import { siteDescription, siteTitle } from '../seo.config.ts';
 import CenterColumnLayout from '@layouts/center-column.astro';
+import { Grid } from '@components/grid/grid';
 
 const docs = await getCollection('docs');
 const wcag = await getCollection('wcag');
@@ -42,74 +43,76 @@ const placeholderTitle = '(geen paginatitel)';
 ---
 
 <CenterColumnLayout title={siteTitle} description={siteDescription} showBreadcrumbs={false}>
-  <h1>NL Design System gerenderd met Astro</h1>
-  {
-    Object.entries(sections).map(([section, list]) => (
-      <details open>
-        <summary>
-          <strong>{section}</strong>
-        </summary>
-        <table border="1">
-          <thead>
-            <tr>
-              <td>title</td>
-              <td>title small</td>
-              <td>document title</td>
-            </tr>
-          </thead>
-          {list.map((item) => {
-            const itemParts = [
-              [...(item.titleSm || item.title)].splice(0, 60).join(''),
-              [...(item.titleSm || item.title)].splice(60).join(''),
-            ].filter(Boolean);
+  <Grid>
+    <Grid.Cell span="all">
+      <h1>NL Design System gerenderd met Astro</h1>
+    </Grid.Cell>
+  </Grid>
+  <Grid className="section">
+    <Grid.Cell span="all">
+      <p>Section</p>
+    </Grid.Cell>
+  </Grid>
 
-            return (
-              <tr>
-                <td>
-                  <a href={item.id}>{item.title}</a>
-                </td>
-                <td>{item.titleSm}</td>
-                <td>
-                  {itemParts.length === 2 ? (
-                    <>
-                      {itemParts[0]}
-                      <mark>{itemParts[1]}</mark>
-                    </>
-                  ) : (
-                    itemParts[0]
-                  )}{' '}
-                  · NL Design System
-                </td>
-              </tr>
-            );
-          })}
-        </table>
-      </details>
-    ))
-  }
-  {
-    duplicates.length > 1 ? (
-      <aside>
-        <h2>Waarschuwing: paginatitels moeten uniek zijn</h2>
-        <p>
-          Er zijn paginatitels die voor meerdere pagina's worden gebruikt. Pas de paginatitels aan zodat ze uniek zijn
-          binnen deze website.
-        </p>
-        <ul>
-          {duplicates.map((group) => (
-            <li>
-              {group[0].data.title ?? placeholderTitle}
-              <ul>
-                {group.map((doc) => (
-                  <li>
-                    <a href={doc.id}>{doc.data.title ?? placeholderTitle}</a>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </aside>
-    ) : null
-  }
+  <Grid>
+    <Grid.Cell span={6}>
+      <div class="blokje">Blokje</div>
+    </Grid.Cell>
+
+    <Grid.Cell span={6}>
+      <div class="blokje">Blokje</div>
+    </Grid.Cell>
+  </Grid>
+
+  <Grid>
+    <Grid.Cell span="all">
+      {
+        duplicates.length > 1 ? (
+          <aside>
+            <h2>Waarschuwing: paginatitels moeten uniek zijn</h2>
+            <p>
+              Er zijn paginatitels die voor meerdere pagina's worden gebruikt. Pas de paginatitels aan zodat ze uniek
+              zijn binnen deze website.
+            </p>
+            <ul>
+              {duplicates.map((group) => (
+                <li>
+                  {group[0].data.title ?? placeholderTitle}
+                  <ul>
+                    {group.map((doc) => (
+                      <li>
+                        <a href={doc.id}>{doc.data.title ?? placeholderTitle}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        ) : null
+      }
+    </Grid.Cell>
+  </Grid>
 </CenterColumnLayout>
+
+<style is:global>
+  .section {
+    position: relative;
+    z-index: 0;
+  }
+  .section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    inline-size: 200vw;
+    block-size: 100%;
+    left: 50%;
+    translate: -50%;
+    background-color: hotpink;
+    z-index: -1;
+  }
+  .blokje {
+    background-color: rebeccapurple;
+    color: white;
+  }
+</style>
