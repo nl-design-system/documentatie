@@ -125,7 +125,7 @@
      { title: 'Als het Form Field Label in een andere taal is dan de taal van de pagina, dan heeft het label-element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: b.Ay, tags: ['developer'] },
      { title: 'Elementen voor formulierinvoer met dezelfde functie hebben hetzelfde label.', sc: '3.2.4', status: '', component: f.Ay, tags: ['designer', 'contentmaker'] },
     ],
-    y = [
+    L = [
      {
       title: 'Het Form Field Label kan aan een element voor formulierinvoer gekoppeld worden.',
       sc: '1.3.1',
@@ -141,7 +141,7 @@
      { title: 'Het Form Field Label is standaard niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: k.Ay, tags: ['developer'] },
      { title: 'Het Form Field Label komt standaard niet voor in de focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: v.Ay, tags: ['developer'] },
     ];
-   var L = t(56167);
+   var y = t(56167);
    const A = { title: 'Form Field Label', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Label', pagination_label: 'Form Field Label', description: 'Toont een tekstlabel dat informeert over de in te vullen informatie.', slug: '/form-field-label', keywords: ['caption', 'form', 'field label', 'form field label', 'form input', 'form label', 'formlabel', 'formulier', 'formulierelement', 'input label', 'label', 'text label', 'textlabel'] },
     N = void 0,
     S = {},
@@ -153,7 +153,7 @@
    function _(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, r.R)(), ...e.components },
      { Checklist: t, ChecklistItem: a } = n;
-    return (t || G('Checklist', !0), a || G('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(L.Fc, { component: C, headingLevel: 1, description: H }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(d.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(s.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: D.map(({ component: e, ...n }) => (0, i.jsx)(a, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: y.map(({ component: e, ...n }) => (0, i.jsx)(a, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(L.VK, { component: C, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(L.mu, { component: C, headingLevel: 3 }), '\n', (0, i.jsx)(L.K_, { component: C }), '\n', (0, i.jsx)(L.$9, { component: C, headingLevel: 2 })] }));
+    return (t || G('Checklist', !0), a || G('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(y.Fc, { component: C, headingLevel: 1, description: H }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(d.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(s.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: D.map(({ component: e, ...n }) => (0, i.jsx)(a, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(t, { headingLevel: '4', children: L.map(({ component: e, ...n }) => (0, i.jsx)(a, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(y.VK, { component: C, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(y.mu, { component: C, headingLevel: 3 }), '\n', (0, i.jsx)(y.K_, { component: C }), '\n', (0, i.jsx)(y.$9, { component: C, headingLevel: 2 })] }));
    }
    function B(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
@@ -267,7 +267,7 @@
     i = t(18439);
    function r(e) {
     const n = { code: 'code', p: 'p', ...(0, i.R)(), ...e.components };
-    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.p, { children: 'De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.' }), '\n', (0, a.jsx)(n.p, { children: 'Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).' }), '\n', (0, a.jsx)(n.p, { children: "Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video's en landkaarten." }), '\n', (0, a.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, a.jsx)(n.code, { children: 'word-break: break-word; hyphens: auto;' }), ' in combinatie met ', (0, a.jsx)(n.code, { children: 'text-wrap-style: pretty' }), ' of ', (0, a.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op ', (0, a.jsx)(n.code, { children: ':root' }), ' niveau.'] })] });
+    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.p, { children: 'De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.' }), '\n', (0, a.jsx)(n.p, { children: 'Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).' }), '\n', (0, a.jsx)(n.p, { children: "Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video's en landkaarten." }), '\n', (0, a.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, a.jsx)(n.code, { children: 'overflow-wrap: break-word; hyphens: auto;' }), ' eventueel in combinatie ', (0, a.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op ', (0, a.jsx)(n.code, { children: ':root' }), ' niveau.'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };

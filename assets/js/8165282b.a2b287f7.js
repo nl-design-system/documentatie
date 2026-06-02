@@ -209,7 +209,7 @@
     r = t(18439);
    function a(e) {
     const n = { code: 'code', p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.' }), '\n', (0, i.jsx)(n.p, { children: 'Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).' }), '\n', (0, i.jsx)(n.p, { children: "Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video's en landkaarten." }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'word-break: break-word; hyphens: auto;' }), ' in combinatie met ', (0, i.jsx)(n.code, { children: 'text-wrap-style: pretty' }), ' of ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op ', (0, i.jsx)(n.code, { children: ':root' }), ' niveau.'] })] });
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.' }), '\n', (0, i.jsx)(n.p, { children: 'Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).' }), '\n', (0, i.jsx)(n.p, { children: "Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video's en landkaarten." }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'overflow-wrap: break-word; hyphens: auto;' }), ' eventueel in combinatie ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op ', (0, i.jsx)(n.code, { children: ':root' }), ' niveau.'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
@@ -358,11 +358,11 @@
    }
    var b = t(99805),
     w = t(92233);
-   function y(e) {
+   function D(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, a.R)(), ...e.components };
     return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat de tekstuele naam van het element voor formulierinvoer voorkomt in de toegankelijke naam.' }), '\n', (0, r.jsxs)(n.p, { children: ['De meestgebruikte manier is door een ', (0, r.jsx)(n.code, { children: 'label' }), '-element te koppelen aan het element voor formulierinvoer, met de attributen ', (0, r.jsx)(n.code, { children: 'for' }), ' en ', (0, r.jsx)(n.code, { children: 'id' }), '.'] }), '\n', (0, r.jsxs)(n.p, { children: ['Pas op met het gebruik van ', (0, r.jsx)(n.code, { children: 'aria-label' }), ' om een naam te geven aan een element voor formulierinvoer. Een ', (0, r.jsx)(n.code, { children: 'aria-label' }), ' overschrijft de toegankelijke naam van een element. Daardoor kan de toegankelijke naam anders zijn dan de zichtbare naam. Bezoekers die gebruik maken van spraakgestuurde navigatie kunnen hierdoor moeite hebben om het element voor formulierinvoer te activeren.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/zichtbare-naam/', children: 'De zichtbare naam moet overeenkomen met de toegankelijke naam' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
    }
-   var D = t(24838),
+   var y = t(24838),
     z = t(4964);
    function T(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, a.R)(), ...e.components };
@@ -437,12 +437,12 @@
       status: '',
       component: function (e = {}) {
        const { wrapper: n } = { ...(0, a.R)(), ...e.components };
-       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(y, { ...e }) }) : y(e);
+       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(D, { ...e }) }) : D(e);
       },
       tags: ['developer'],
      },
      { title: 'De Text Input heeft een minimale grootte van 24 bij 24 pixels.', sc: '2.5.8', status: '', component: S.Ay, tags: ['developer', 'designer'] },
-     { title: 'Als de placeholdertekst en invoertekst in een andere taal is dan de taal van de pagina, dan heeft het `input`-element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: D.Ay, tags: ['developer'] },
+     { title: 'Als de placeholdertekst en invoertekst in een andere taal is dan de taal van de pagina, dan heeft het `input`-element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: y.Ay, tags: ['developer'] },
      { title: 'Als de Text Input focus krijgt, gebeurt er niets onverwachts.', sc: '3.2.1', status: '', component: I.Ay, tags: ['developer'] },
      { title: 'Bij het invullen van de Text Input gebeurt er niets onverwachts.', sc: '3.2.2', status: '', component: H.Ay, tags: ['developer', 'designer'] },
      { title: 'Text Inputs met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.', sc: '3.2.4', status: '', component: z.Ay, tags: ['developer', 'designer'] },
@@ -535,7 +535,7 @@
    }
   },
   76097(e, n, t) {
-   t.d(n, { bo: () => r, KF: () => g, mJ: () => h, VZ: () => y, cR: () => w, Pv: () => j, qZ: () => o, kD: () => k, B2: () => m, Pc: () => s, f4: () => l, GT: () => b, fX: () => a, eQ: () => v, B_: () => f, o_: () => x });
+   t.d(n, { bo: () => r, KF: () => g, mJ: () => h, VZ: () => D, cR: () => w, Pv: () => j, qZ: () => o, kD: () => k, B2: () => m, Pc: () => s, f4: () => l, GT: () => b, fX: () => a, eQ: () => v, B_: () => f, o_: () => x });
    const i = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^10.17.0"}}'),
     r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     a = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -592,7 +592,7 @@
      if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
      return e.replace(/^[\^~>=<]+/, '');
     },
-    y = () => {
+    D = () => {
      const e = i.sP?.node;
      if (!e) throw new Error('No node version found in package.json#engines.node');
      const n = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
