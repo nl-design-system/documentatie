@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.3 Contrast (minimum)
 pagination_label: WCAG-succescriterium 1.4.3 Contrast (minimum)
-description: Tekst op een webpagina moet voldoende contrasteren met de achtergrond. Lees meer over de eisen en veelvoorkomende fouten.
+description: Tekst op een webpagina moet voldoende contrasteren met de achtergrond, zodat iedereen de tekst kan lezen.
 slug: 1.4.3
 keywords:
   - WCAG
@@ -39,7 +39,7 @@ import Summary from "./summaries/_1.4.3-summary.md";
 
 <Summary />
 
-Grote tekst is tekst van 18 punt (24px) of groter, of vetgedrukte tekst van 14 punt (ongeveer 19px) of groter. Voor deze grotere tekst geldt een lagere eis van 3:1 omdat grotere letters van nature beter leesbaar zijn.
+Grote tekst is tekst van 18 punt (24px) of groter, of vetgedrukte tekst van 14 punt (ongeveer 19px) of groter. Voor deze grotere tekst geldt een lagere eis van 3:1, omdat grotere letters makkelijker te onderscheiden zijn.
 
 Er zijn 3 uitzonderingen:
 
@@ -51,7 +51,7 @@ Er zijn 3 uitzonderingen:
 
 ### Lichtgrijze tekst op een witte achtergrond
 
-Lichtgrijs (`#999999`) op wit (`#FFFFFF`) heeft een contrastverhouding van slechts 2,85:1. Dat is ver onder de vereiste 4,5:1. Het ziet er misschien subtiel uit, maar voor veel mensen is het niet leesbaar.
+Lichtgrijs (`#999999`) op wit (`#FFFFFF`) heeft een contrastverhouding van 2,85:1. Dat is ruim onder de 4,5:1 die nodig is voor goede leesbaarheid. Het ziet er misschien subtiel uit, maar voor veel mensen is het niet te lezen.
 
 **Hoe te testen:** inspecteer het tekstelement in de browser DevTools en controleer de contrastverhouding. Of gebruik een contrasttool zoals de [Colour Contrast Analyser](https://www.tpgi.com/color-contrast-checker/).
 
@@ -75,9 +75,9 @@ Lichtgrijs (`#999999`) op wit (`#FFFFFF`) heeft een contrastverhouding van slech
 
 ### Placeholdertekst met onvoldoende contrast
 
-Placeholder-tekst in formuliervelden is berucht om slecht contrast. De standaard browserstyling van placeholders haalt vaak de vereiste contrastverhouding niet.
+Placeholdertekst in formuliervelden heeft vaak een te laag contrast. De standaard browserstyling van placeholders haalt de minimale contrastverhouding van 4,5:1 niet.
 
-**Hoe te testen:** inspecteer het invoerveld en controleer de kleur van de `::placeholder` pseudo-element. Vergelijk deze met de achtergrondkleur.
+**Hoe te testen:** inspecteer het invoerveld en controleer de kleur van het `::placeholder`-pseudo-element. Vergelijk die met de achtergrondkleur.
 
 <Guideline appearance="dont" title="Placeholderkleur te licht, contrast 1,6:1 op wit.">
 
@@ -129,7 +129,7 @@ Tekst die direct op een foto of kleurverloop staat, kan op de ene plek voldoende
 
 ### Gekleurde knop met witte tekst die niet voldoet
 
-Felgekleurde knoppen met witte tekst halen vaak de contrastverhouding niet. Denk aan lichtblauwe, oranje of lichtgroene knoppen. Oranje (`#FF8C00`) met wit heeft slechts een contrast van 2,14:1.
+Felgekleurde knoppen met witte tekst halen vaak de minimale contrastverhouding niet. Bijvoorbeeld lichtblauwe, oranje of lichtgroene knoppen. Oranje (`#FF8C00`) met wit heeft een contrast van 2,14:1.
 
 **Hoe te testen:** controleer de contrastverhouding tussen de tekstkleur en de achtergrondkleur van de knop.
 
@@ -161,7 +161,7 @@ Felgekleurde knoppen met witte tekst halen vaak de contrastverhouding niet. Denk
 
 ### Links die alleen door kleur te onderscheiden zijn
 
-Onderstreep je links niet en zijn ze alleen door kleur te onderscheiden van de omringende tekst? Dan moet er een contrastverhouding van 3:1 zijn tussen de linktekst en de omringende tekst. Daarnaast moet de link ook 4,5:1 contrast hebben met de achtergrond.
+Als links niet onderstreept zijn en alleen door kleur te onderscheiden zijn van de omringende tekst, dan moet er een contrastverhouding van 3:1 zijn tussen de linktekst en de omringende tekst. De link moet daarnaast 4,5:1 contrast hebben met de achtergrond.
 
 **Hoe te testen:** controleer of de link visueel te onderscheiden is zonder kleur (bijvoorbeeld door een onderstreping). Zo niet, meet dan het contrast tussen de linkkleur en de kleur van de omringende tekst.
 
@@ -193,8 +193,8 @@ Onderstreep je links niet en zijn ze alleen door kleur te onderscheiden van de o
 
 ### Tekst in dark mode met onvoldoende contrast
 
-<span lang="en">Dark mode</span> kan nieuwe contrastproblemen veroorzaken. Donkergrijze tekst op een donkere
-achtergrond, of felle kleuren die op een lichte achtergrond wel werken maar op donker niet.
+<span lang="en">Dark mode</span> kan nieuwe contrastproblemen veroorzaken. Bijvoorbeeld donkergrijze tekst op een
+donkere achtergrond, of felle kleuren die op een lichte achtergrond wel voldoen maar op een donkere niet.
 
 **Hoe te testen:** schakel over naar <span lang="en">dark mode</span> en controleer het contrast van alle tekstelementen opnieuw.
 
@@ -218,7 +218,7 @@ achtergrond, of felle kleuren die op een lichte achtergrond wel werken maar op d
 
 ### Statusmeldingen met onvoldoende contrast
 
-Foutmeldingen in rood, succesmeldingen in groen en waarschuwingen in oranje hebben lang niet altijd voldoende contrast. Vooral als de tekst licht gekleurd is op een witte of lichte achtergrond.
+Foutmeldingen in rood, succesmeldingen in groen en waarschuwingen in oranje hebben niet altijd voldoende contrast, vooral als de tekst licht gekleurd is op een witte of lichte achtergrond.
 
 **Hoe te testen:** controleer het contrast van fout-, succes- en waarschuwingsteksten met de achtergrondkleur.
 
@@ -242,7 +242,7 @@ Foutmeldingen in rood, succesmeldingen in groen en waarschuwingen in oranje hebb
 
 ### Voettekst of kleine lettertjes met laag contrast
 
-Kleine tekst in de footer wordt vaak in lichtgrijs weergegeven. Denk aan privacybeleid, copyright en voorwaarden. Juist kleinere tekst heeft meer contrast nodig om leesbaar te blijven.
+Kleine tekst in de footer wordt vaak in lichtgrijs weergegeven. Bijvoorbeeld privacybeleid, copyright en voorwaarden. Juist kleinere tekst heeft meer contrast nodig om leesbaar te blijven.
 
 **Hoe te testen:** inspecteer de tekst in de footer en controleer of de contrastverhouding minimaal 4,5:1 is.
 
@@ -250,7 +250,7 @@ Kleine tekst in de footer wordt vaak in lichtgrijs weergegeven. Denk aan privacy
 
 ```html
 <p style="color: #aaaaaa; background-color: #ffffff; font-size: 12px;">
-  &copy; 2025 Voorbeeldorganisatie — Privacybeleid — Voorwaarden
+  &copy; 2025 Voorbeeldorganisatie · Privacybeleid · Voorwaarden
 </p>
 ```
 
@@ -260,7 +260,7 @@ Kleine tekst in de footer wordt vaak in lichtgrijs weergegeven. Denk aan privacy
 
 ```html
 <p style="color: #595959; background-color: #ffffff; font-size: 12px;">
-  &copy; 2025 Voorbeeldorganisatie — Privacybeleid — Voorwaarden
+  &copy; 2025 Voorbeeldorganisatie · Privacybeleid · Voorwaarden
 </p>
 ```
 
@@ -302,7 +302,7 @@ Inactieve elementen zijn uitgezonderd van de contrasteis. Maar als je knoppen al
 
 ### Contrast alleen getest op het eigen scherm
 
-Wat er op een Retina-display prima uitziet, kan op een ouder scherm, in direct zonlicht of op een projector onleesbaar zijn. De WCAG-contrasteis van 4,5:1 is een minimum dat rekening houdt met die variatie. Toets altijd met een contrasttool in plaats van op het oog.
+Wat er op een Retina-display prima uitziet, kan op een ouder scherm, in direct zonlicht of op een projector onleesbaar zijn. Het minimum van 4,5:1 houdt rekening met die variatie. Toets altijd met een contrasttool in plaats van op het oog.
 
 **Hoe te testen:** gebruik een contrasttool om de exacte contrastverhouding te meten. Vertrouw niet op hoe het er op je eigen scherm uitziet.
 
@@ -313,18 +313,18 @@ Wat er op een Retina-display prima uitziet, kan op een ouder scherm, in direct z
 ### Voor iedereen
 
 1. Kijk kritisch naar de tekst op de pagina. Let vooral op lichtgrijze tekst, tekst op foto's en kleine tekst in de footer.
-2. Gebruik een contrasttool zoals de [Colour Contrast Analyser](https://www.tpgi.com/color-contrast-checker/) of de [NL Design System contrasttool](/contrast/). Vul de tekst- en achtergrondkleur in en het resultaat vertelt je of het voldoende is.
+2. Gebruik een contrasttool zoals de [Colour Contrast Analyser](https://www.tpgi.com/color-contrast-checker/) of de [NL Design System contrasttool](/contrast/). Vul de tekst- en achtergrondkleur in. De tool laat zien of het contrast voldoende is.
 3. Controleer ook de <span lang="en">dark mode</span> als de website die aanbiedt.
 4. Let op tekst op afbeeldingen en kleurverlopen. Is de tekst op het lichtste deel nog steeds leesbaar?
 
 ### Voor developers
 
-1. Gebruik de DevTools kleurcontrast-checker. In Chrome: inspecteer een tekstelement, klik op het kleurvakje naast de `color`-waarde en je ziet de contrastverhouding.
+1. Gebruik de kleurcontrast-checker in DevTools. In Chrome: inspecteer een tekstelement, klik op het kleurvakje naast de `color`-waarde en je ziet de contrastverhouding.
 2. Voer een Lighthouse-toegankelijkheidsaudit uit in Chrome DevTools. Contrastproblemen worden automatisch gedetecteerd.
 3. Installeer de [axe DevTools-extensie](https://www.deque.com/axe/browser-extensions/). Deze vindt contrastproblemen en geeft de exacte contrastverhoudingen weer.
 4. Controleer placeholders apart: `::placeholder` heeft een eigen kleur die apart getest moet worden.
 5. Test alle kleurmodi: licht, donker en hoog contrast. Elke modus moet apart aan de contrasteisen voldoen.
-6. Controleer dynamische content: toasts, meldingen, tooltips en overlays worden vaak over het hoofd gezien.
+6. Controleer dynamische content: toasts, meldingen, tooltips en overlays worden vaak vergeten.
 7. Elke grijstint lichter dan `#767676` op een witte achtergrond voldoet niet aan de eis van 4,5:1.
 
 ## Gerelateerde succescriteria
@@ -343,12 +343,12 @@ Wat er op een Retina-display prima uitziet, kan op een ouder scherm, in direct z
 
 ## Relevante bronnen
 
-- [Contrast van kleuren](/contrast/) — de NL Design System contrasttool om snel contrastverhoudingen te controleren.
-- [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/) — desktoptool om het contrast te meten tussen twee kleuren (TPGI, gratis).
-- [Figma contrast accessibility plugin tools](https://www.figma.com/community/accessibility/contrast) — Figma-plugins om contrast te controleren tijdens het ontwerpen.
-- [axe DevTools browser add-on](https://www.deque.com/axe/browser-extensions/) — browserextensie die contrastproblemen automatisch detecteert.
-- [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/) — online tool om webpagina's te testen op toegankelijkheid, inclusief contrast.
-- [Richtlijnen NL Design System voor kleuren](/richtlijnen/stijl/kleuren/) — overzicht van richtlijnen, bronnen en tools voor kleurgebruik.
+- [Contrast van kleuren](/contrast/): de NL Design System-contrasttool om snel contrastverhoudingen te controleren.
+- [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/): desktoptool van TPGI om het contrast te meten tussen twee kleuren (gratis).
+- [Figma contrast accessibility plugin tools](https://www.figma.com/community/accessibility/contrast): Figma-plugins om contrast te controleren tijdens het ontwerpen.
+- [axe DevTools browser add-on](https://www.deque.com/axe/browser-extensions/): browserextensie die contrastproblemen automatisch detecteert.
+- [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/): online tool om webpagina's te testen op toegankelijkheid, inclusief contrast.
+- [Richtlijnen NL Design System voor kleuren](/richtlijnen/stijl/kleuren/): overzicht van richtlijnen, bronnen en tools voor kleurgebruik.
 
 ## Gebruikersonderzoek
 
@@ -356,9 +356,9 @@ Wat er op een Retina-display prima uitziet, kan op een ouder scherm, in direct z
 
 ## W3C-referenties
 
-- [WCAG 2.2: Succescriterium 1.4.3 Contrast (minimum)](https://www.w3.org/Translations/WCAG22-nl/#contrast-minimum) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 1.4.3: Contrast (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Quick Reference 1.4.3 Contrast (minimum)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum) — snelreferentie met technieken (Engels).
+- [WCAG 2.2: Succescriterium 1.4.3 Contrast (minimum)](https://www.w3.org/Translations/WCAG22-nl/#contrast-minimum): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 1.4.3: Contrast (minimum)</span>](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 1.4.3 Contrast (minimum)</span>](https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum): snelreferentie met technieken (Engels).
 
 <SpotlightSection>
   <Markdown omitH1 headinglevel={3}>
