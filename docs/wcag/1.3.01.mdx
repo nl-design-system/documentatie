@@ -585,32 +585,6 @@ Als een oude prijs visueel is doorgestreept maar dit niet in de HTML staat, lees
 
 **Wie kan dit oplossen:** een developer voegt visueel verborgen tekst toe die het verschil tussen de prijzen aangeeft.
 
-### Advies: meerdere navigaties toegankelijke naam geven
-
-Als er meerdere navigaties op een pagina staan, weten screenreadergebruikers niet wat het verschil is. Geef elke navigatie een toegankelijke naam.
-
-**Hoe te testen:** controleer of elk `<nav>`-element een `aria-label` of `aria-labelledby` heeft wanneer er meerdere navigaties op de pagina staan.
-
-<Guideline appearance="dont" title="Twee navigaties zonder naam.">
-
-```html
-<nav>...</nav>
-<nav>...</nav>
-```
-
-</Guideline>
-
-<Guideline appearance="do" title="Navigaties met een naam.">
-
-```html
-<nav aria-label="Hoofdnavigatie">...</nav>
-<nav aria-label="Footernavigatie">...</nav>
-```
-
-</Guideline>
-
-**Wie kan dit oplossen:** een developer voegt een `aria-label` toe aan elk `<nav>`-element.
-
 ## Hoe te testen
 
 ### Voor iedereen
