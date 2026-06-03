@@ -45,7 +45,7 @@ import Summary from "./summaries/_4.1.2-summary.md";
 
 De rol geeft aan welke functie een element heeft: knop, link, invoerveld, selectievak, enzovoort. Bij standaard HTML-elementen is de rol automatisch goed ingesteld. Een `<button>` heeft de rol "button" en een `<a>` heeft de rol "link".
 
-Maak je zelf een bedieningselement, bijvoorbeeld door een `<div>` klikbaar te maken? Dan moet je de rol handmatig toevoegen met het ARIA-attribuut `role`. Dit kost meer tijd, is foutgevoeliger en vereist uitgebreid testen. Gebruik daarom waar mogelijk standaard HTML-elementen.
+Maak je zelf een bedieningselement, bijvoorbeeld door een `<div>` klikbaar te maken, dan moet je de rol handmatig toevoegen met het ARIA-attribuut `role`. Dat kost meer tijd, is foutgevoeliger en vereist uitgebreid testen. Gebruik daarom waar mogelijk standaard HTML-elementen.
 
 Let op: een handmatig toegevoegde ARIA-rol overschrijft de standaardrol. Een `<ul role="menu">` heeft dan niet meer de rol van een lijst.
 
@@ -63,17 +63,17 @@ Er zijn meerdere manieren om een naam toe te voegen:
 
 ### De waarde, staat en eigenschappen: wat kan de bezoeker zelf aanpassen?
 
-Dit geldt alleen voor elementen waarbij de bezoeker zelf iets kan wijzigen. De waarde is wat een bezoeker invult of selecteert in een invoerelement, zoals een tekstveld, een slider of een keuzelijst. De staat geeft aan hoe een element er op dat moment voor staat: is een checkbox aangevinkt, is een accordeon ingeklapt, is een optie geselecteerd? Eigenschappen liggen dicht bij de staat — ze zijn soms moeilijk van elkaar te onderscheiden. Denk aan `aria-expanded`, `aria-checked`, `aria-selected` en `disabled`.
+Dit geldt alleen voor elementen waarbij de bezoeker zelf iets kan wijzigen. De waarde is wat een bezoeker invult of selecteert in een invoerelement, zoals een tekstveld, een slider of een keuzelijst. De staat geeft aan hoe een element er op dat moment voor staat: of een checkbox aangevinkt is, of een accordeon ingeklapt is, of een optie geselecteerd is. Eigenschappen liggen dicht bij de staat en zijn daar soms moeilijk van te onderscheiden. Bijvoorbeeld `aria-expanded`, `aria-checked`, `aria-selected` en `disabled`.
 
 ### Over ARIA
 
 Drie belangrijke regels voor het gebruik van ARIA:
 
-- Gebruik ARIA nooit tenzij het niet anders kan.
-- Gebruik ARIA altijd als het niet anders kan.
-- Je doet het waarschijnlijk fout.
+- Gebruik standaard HTML als dat kan, ARIA alleen als het niet anders kan.
+- Verander de standaardrol van een HTML-element niet zonder reden.
+- Test ARIA altijd met een screenreader en met het toetsenbord, want het is foutgevoelig.
 
-ARIA is bedoeld om niet-toegankelijke elementen toegankelijker te maken. Maar onjuist gebruik van ARIA maakt een website juist minder toegankelijk. Het meeste wat ARIA kan, kan ook met standaard HTML. Alleen voor het aangeven van statussen en het laten voorlezen van statusberichten heb je ARIA echt nodig.
+ARIA is bedoeld om niet-toegankelijke elementen toegankelijker te maken. Onjuist gebruik werkt averechts en kan een website juist minder toegankelijk maken. Het meeste wat ARIA kan, kan ook met standaard HTML. Alleen voor het aangeven van statussen en het laten voorlezen van statusberichten is ARIA echt nodig.
 
 ## Veelgemaakte fouten
 
@@ -81,7 +81,7 @@ ARIA is bedoeld om niet-toegankelijke elementen toegankelijker te maken. Maar on
 
 Een knop, link of invoerveld zonder naam is onbruikbaar voor screenreadergebruikers. Ze horen dan alleen de rol ("knop" of "link") maar niet wat het element doet.
 
-**Hoe te testen:** navigeer met een screenreader naar knoppen, links en invoervelden. Wordt elk element aangekondigd met een duidelijke naam?
+**Hoe te testen:** beweeg met een screenreader langs knoppen, links en invoervelden. Wordt elk element aangekondigd met een duidelijke naam?
 
 <Guideline appearance="dont" title="Knop met alleen een icoon, zonder toegankelijke naam.">
   <Canvas language="html" defaultExpandedCode>
@@ -199,11 +199,11 @@ Bij een zelfgemaakt bedieningselement ontbreekt de rol. Hulpsoftware kan dan nie
 
 ### Interactief element heeft een verkeerde rol
 
-Een element met de verkeerde rol geeft misleidende informatie aan screenreadergebruikers. Een knop die naar een andere pagina navigeert moet een link zijn. Een link die een actie uitvoert moet een knop zijn.
+Een element met de verkeerde rol geeft misleidende informatie aan screenreadergebruikers. Een knop die naar een andere pagina leidt, moet een link zijn. Een link die een actie uitvoert, moet een knop zijn.
 
-**Hoe te testen:** controleer of het gedrag van het element past bij de rol. Navigeert het naar een andere pagina? Dan hoort het een link te zijn. Voert het een actie uit? Dan hoort het een knop te zijn.
+**Hoe te testen:** controleer of het gedrag van het element past bij de rol. Als het naar een andere pagina leidt, hoort het een link te zijn. Als het een actie uitvoert, hoort het een knop te zijn.
 
-<Guideline appearance="dont" title="Een knop die navigeert naar een andere pagina.">
+<Guideline appearance="dont" title="Een knop die naar een andere pagina leidt.">
   <Canvas language="html" defaultExpandedCode>
     {() => <button onClick={() => {}}>Contact</button>}
   </Canvas>
@@ -237,7 +237,7 @@ Een element met de verkeerde rol geeft misleidende informatie aan screenreaderge
 
 Als een attribuut of rol verkeerd is geschreven, negeert de browser het. Het element wordt dan niet correct doorgegeven aan hulpsoftware.
 
-**Hoe te testen:** gebruik axe DevTools of de accessibility tree in je browser. Ongeldige ARIA-attributen worden automatisch gedetecteerd.
+**Hoe te testen:** gebruik axe DevTools of de accessibility tree in je browser. Ongeldige ARIA-attributen worden automatisch herkend.
 
 <Guideline appearance="dont" title="Een ARIA-attribuut verkeerd gespeld.">
 
@@ -477,7 +477,7 @@ Als een element content uitklapt of inklapt, moet de status worden doorgegeven m
 
 Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element een toegankelijke naam hebben. Zonder naam weet een screenreadergebruiker niet welke media wordt afgespeeld.
 
-**Hoe te testen:** navigeer met een screenreader naar het media-element. Wordt het aangekondigd met een duidelijke naam?
+**Hoe te testen:** beweeg met een screenreader langs het media-element. Wordt het aangekondigd met een duidelijke naam?
 
 <Guideline appearance="dont" title="Een video zonder toegankelijke naam.">
 
@@ -505,10 +505,10 @@ Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element 
 
 ### Voor iedereen
 
-1. Tab door alle interactieve elementen op de pagina. Wordt elk element aangekondigd door een screenreader met een duidelijke naam en rol?
-2. Activeer knoppen, links en andere bedieningselementen. Wordt de statusverandering aangekondigd? Denk aan het openen van een accordion, het selecteren van een tab of het aanvinken van een selectievakje.
+1. Ga met de <kbd>Tab</kbd>-toets langs alle interactieve elementen op de pagina. Wordt elk element aangekondigd door een screenreader met een duidelijke naam en rol?
+2. Activeer knoppen, links en andere bedieningselementen. Wordt de statusverandering aangekondigd? Bijvoorbeeld het openen van een accordion, het selecteren van een tab of het aanvinken van een selectievakje.
 3. Controleer of zelfgemaakte bedieningselementen dezelfde informatie geven als standaard HTML-elementen.
-4. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Navigeer door de pagina en controleer of elk element begrijpelijk wordt aangekondigd.
+4. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Beweeg met <kbd>Tab</kbd> en de pijltjestoetsen door de pagina en controleer of elk element begrijpelijk wordt aangekondigd.
 
 ### Voor developers
 
@@ -519,7 +519,7 @@ Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element 
 5. Controleer ARIA-attributen. Zijn ze correct gespeld? Hebben ze geldige waarden? Gebruik de [WAI-ARIA specificatie](https://www.w3.org/TR/wai-aria-1.2/) om te verifiëren welke attributen bij welke rollen horen.
 6. Controleer uitklapbare elementen. Is `aria-expanded` aanwezig en wordt de waarde bijgewerkt bij interactie?
 7. Controleer of `<button>` en `<summary>` geen semantische kindelementen bevatten zoals headings of links.
-8. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Navigeer door de pagina en controleer of elk element begrijpelijk wordt aangekondigd.
+8. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Beweeg met <kbd>Tab</kbd> en de pijltjestoetsen door de pagina en controleer of elk element begrijpelijk wordt aangekondigd.
 
 ## Gerelateerde succescriteria
 
@@ -537,10 +537,10 @@ Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element 
 
 ## Relevante bronnen
 
-- [axe DevTools](https://www.deque.com/axe/browser-extensions/) — browserextensie die ontbrekende namen, rollen en ongeldige ARIA automatisch detecteert (Deque, Engels).
-- [WAI-ARIA-gebruik van TPGi](https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html) — overzicht van correct ARIA-gebruik per rol (TPGi, Engels).
-- [NVDA](https://www.nvaccess.org/download/) — gratis screenreader voor Windows (NV Access, Engels).
-- [VoiceOver](https://support.apple.com/nl-nl/guide/voiceover/welcome/mac) — ingebouwde screenreader op macOS (Apple).
+- [axe DevTools](https://www.deque.com/axe/browser-extensions/): browserextensie die ontbrekende namen, rollen en ongeldige ARIA automatisch herkent (Deque, Engels).
+- [WAI-ARIA-gebruik van TPGi](https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html): overzicht van correct ARIA-gebruik per rol (TPGi, Engels).
+- [NVDA](https://www.nvaccess.org/download/): gratis screenreader voor Windows (NV Access, Engels).
+- [VoiceOver](https://support.apple.com/nl-nl/guide/voiceover/welcome/mac): ingebouwde screenreader op macOS (Apple).
 
 ## Gebruikersonderzoek
 
@@ -548,9 +548,9 @@ Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element 
 
 ## W3C-referenties
 
-- [WCAG 2.2: Succescriterium 4.1.2 Naam, rol, waarde](https://www.w3.org/Translations/WCAG22-nl/#name-role-value) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Quick Reference 4.1.2 Name, Role, Value](https://www.w3.org/WAI/WCAG22/quickref/#name-role-value) — snelreferentie met technieken (Engels).
+- [WCAG 2.2: Succescriterium 4.1.2 Naam, rol, waarde](https://www.w3.org/Translations/WCAG22-nl/#name-role-value): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 4.1.2: Name, Role, Value</span>](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 4.1.2 Name, Role, Value</span>](https://www.w3.org/WAI/WCAG22/quickref/#name-role-value): snelreferentie met technieken (Engels).
 
 <SpotlightSection>
   <Markdown omitH1 headinglevel={3}>
