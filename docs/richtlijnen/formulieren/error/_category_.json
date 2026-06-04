@@ -2,7 +2,7 @@
   "label": "Foutmeldingen",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/formulieren/error/README"
+    "id": "richtlijnen/formulieren/error/index"
   },
   "customProps": {
     "showLinkedDoc": true

@@ -1,9 +1,11 @@
 ---
-title: Help Wanted stappenplan · Component bijdragen · Handboek
+title: Help Wanted stappenplan
+title_sm: Help Wanted
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Help Wanted
 sidebar_position: 2
+navigation_order: 2
 pagination_label: Help Wanted
 description: Stappen voor de Help Wanted fase van Definition of Done
 slug: /handboek/estafettemodel/componenten/help-wanted
@@ -36,6 +38,8 @@ Kijk voor inspiratie bijvoorbeeld bij:
 
 Zijn er meerdere namen voor de component? Kies de meest gangbare. De andere namen kun je later toevoegen aan de documentatie.
 
+Deze naam en de aliassen die je tegenkomt zal je straks documenteren in de stap [Aangemaakt als een GitHub Discussion](#aangemaakt-als-een-github-discussion).
+
 **🚩 Checkpoint**: Naam
 
 ## Component kort beschreven
@@ -54,6 +58,8 @@ Kijk ter inspiratie bij in het [componentenoverzicht](https://www.nldesignsystem
 
 Beschrijf specifiek, kort en bondig wat de definitie is voor de component. We schrijven definities over het algemeen niet langer dan één zin, maar zeker niet meer dan een alinea.
 
+Deze beschrijving zal je straks documenteren in de stap [Aangemaakt als een GitHub Discussion](#aangemaakt-als-een-github-discussion).
+
 **🚩 Checkpoint**: Beschrijving
 
 ## Afbeelding gemaakt om de component visueel duidelijk te maken
@@ -61,6 +67,8 @@ Beschrijf specifiek, kort en bondig wat de definitie is voor de component. We sc
 Doel: De component is visueel duidelijk.
 
 Om de community letterlijk een beeld te geven van de component voegen we een afbeelding toe. Het kernteam maakt deze in het [Figma 'Schetsboek'](https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&node-id=439-969&mode=design). Zelf kun je een eigen afbeelding maken, huisstijl maakt niet uit.
+
+Deze afbeelding zal je straks documenteren in de stap [Aangemaakt als een GitHub Discussion](#aangemaakt-als-een-github-discussion).
 
 **🚩 Checkpoint**: Afbeelding
 
@@ -107,7 +115,7 @@ Het kan voorkomen dat andere componenten sterk gerelateerd zijn aan dit componen
 ```md
 ## Gerelateerde componenten
 
-X, Y, of Z.
+X, Y, Z
 ```
 
 **🚩 Checkpoint**: Discussion URL
@@ -180,7 +188,7 @@ Daarnaast wordt het gewaardeerd als je onderzoeksresultaten deelt. Is dit compon
 
 #### Oproep via Slack
 
-Plaats de oproep in het Slack channel [#nl-design-system](https://codefornl.slack.com/archives/C7KDQRXMZ).
+Plaats de oproep op [Slack](/slack) in het kanaal `#nl-design-system`.
 
 - Voeg de afbeelding toe aan je bericht.
 - Voeg ook hier de 'alt text' toe. [Alt text toevoegen aan een Slack bericht](https://slack.com/help/articles/4403914924435-Add-descriptions-to-images)
@@ -215,7 +223,7 @@ Het kernteam houdt deze set van organisaties aan. Hiermee hebben we een mooie mi
 
 #### Den Haag
 
-- [Storybook](https://nl-design-system.github.io/denhaag/?path=/story/den-haag-introduction--page)
+- [Storybook](https://nl-design-system.github.io/denhaag/?path=/docs/den-haag-introduction--docs)
 - [GitHub](https://github.com/nl-design-system/denhaag) ([CSS componenten](https://github.com/nl-design-system/denhaag/tree/main/components))
 - [Figma](https://www.figma.com/design/eSl0Sclc8t03X76qM1cWyz/DHDS-Library?node-id=6-159&t=o7vvXlU8UTwR2Onp-1)
 
@@ -227,7 +235,7 @@ Het kernteam houdt deze set van organisaties aan. Hiermee hebben we een mooie mi
 
 #### DUO
 
-[Documentatie website](https://uno.dfront.rijkscloud.nl/)
+[Documentatie website](https://uno.duo.nl/)
 
 #### Open Formulieren
 
@@ -244,7 +252,7 @@ Gebruik in Patternlab het linkadres van de `h2` of `h3` om naar een specifiek on
 
 - [Storybook](https://nl-design-system.github.io/rotterdam/?path=/docs/rotterdam-rotterdam-design-system--docs)
 - [GitHub](https://github.com/nl-design-system/rotterdam) ([CSS componenten](https://github.com/nl-design-system/rotterdam/tree/main/packages/components-css))
-- [Figma - Fundament](https://www.figma.com/design/RiVsTfcbmnKSU2BGqQBI9n/RODS-fundament?m=auto&node-id=37-1964&t=4HB7uIyaVunmBW6Z-1)
+- [Figma - Foundation](https://www.figma.com/design/jzlKh1VbBDvRc3fYfVotsW/RODS-Foundation?m=auto&node-id=3427-315&t=0YUNbi8FvqTnjHMc-1)
 - [Figma - Component](https://www.figma.com/design/iWuQsxelJzXVfCge87Og81/RODS-component?m=auto&node-id=0-1&t=uSL3DDt2TD2JBfoT-1)
 
 #### RVO
@@ -464,10 +472,10 @@ Installeer in Visual Studio Code de extensie 'SVG' ontwikkeld door Jock.
   - Klik met de rechtermuisknop op de bestandsnaam in het linkerpaneel.
   - Kies ‘Open With…’ en selecteer ‘Text Editor’ om de code te openen.
 - Verwissel alle kleurwaardes van de fills en strokes naar design tokens die zijn aangevuld met een fallback.
-  - `#FFF3EA` wordt `var(--component-illustration-background-color, white)`.
-  - `#FAD6BA` wordt `var(--component-illustration-grid-color, #EEE)`.
-  - `#46280D` wordt `var(--component-illustration-color, #666)`.
-  - `white` wordt `var(--component-illustration-background-color, white)`.
+  - `#FFF3EA` wordt `var(--ma-component-illustration-background-color, white)`.
+  - `#FAD6BA` wordt `var(--ma-component-illustration-grid-color, #EEE)`.
+  - `#46280D` wordt `var(--ma-component-illustration-color, #666)`.
+  - `white` wordt `var(--ma-component-illustration-background-color, white)`.
 
 **Tip!**
 Met de toetscombinatie `Cmd+D` (of `Ctrl+D`) kun je stukjes code selecteren die overeenkomen met je huidige selectie. Let wel op met het selecteren van `white`. Die term komt ook voor als fallback in de eerste token.
@@ -503,8 +511,8 @@ feat: add documentation page for {naam-component}
 **Tip!**
 Voordat je de component progress gaat bijwerken is het handig om te controleren of alle checkpoints op het [Help Wanted bord](https://github.com/orgs/nl-design-system/projects/27/views/1) op groen staan. Checkpoint 'nldesignsystem.nl' mag je nu ook alvast op 'Done' zetten.
 
-- Publiceer een nieuwe versie van het `component-progress` package door op `Run Workflow` te klikken in [GitHub Actions van de Index repository](https://github.com/nl-design-system/index/actions/workflows/update-component-progress.yml). Kies hierbij voor de `main` branch.
-- Wacht tot [component-progress op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
+- Publiceer een nieuwe versie van het `component-progress` package: ga naar de [pull requests van de Index repository](https://github.com/nl-design-system/index/pulls) en zoek naar de pull request genaamd `docs(release): design system packages`. Approve en merge de pull request. Deze pull request word automatisch aangemaakt elke keer wanneer de vorige is gemerged.
+- Wacht tot [`@nl-design-system/component-progress` op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
 - Maak een commit en gebruik hierbij het volgende bericht:
 

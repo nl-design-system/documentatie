@@ -51,7 +51,7 @@ Het was een waardevolle sessie waar we in Nederland veel van kunnen leren. De be
 
 ## Meer weten?
 
-- [Praat mee](http://praatmee.codefor.nl/) over dit onderwerp in het Slack kanaal van Code for NL. Er is een levendig gesprek gaande daar.
+- Praat mee over dit onderwerp op [Slack](/slack). Er is een levendig gesprek gaande daar.
 - De links naar de video van de conference call en de presentatie van de Australiërs zullen hier volgen zodra we deze hebben ontvangen.
 - Ook in ons kikkerlandje streven we naar een centraal design system / interactiebibliotheek. Kom daarom op 30 mei 2018 naar deze [meetup over interactiebibliotheken](http://www.gebruikercentraal.nl/agenda/interactiebibliotheek/).
 

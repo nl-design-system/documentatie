@@ -1,5 +1,5 @@
 ---
-title: Tekst in een afbeelding · Afbeeldingen · Content · Richtlijnen
+title: Tekst in een afbeelding
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Tekst in een afbeelding
