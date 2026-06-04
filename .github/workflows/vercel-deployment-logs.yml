@@ -19,11 +19,10 @@ jobs:
     steps:
       - name: Resolve Vercel deployment URL
         id: vercel
+        shell: bash
         env:
           LOG_URL: ${{ github.event.deployment_status.log_url }}
         run: |
-          set -euo pipefail
-
           if [[ -z "${LOG_URL}" ]]; then
             echo "::error::deployment_status.log_url is empty; cannot resolve Vercel deployment URL"
             exit 1
@@ -42,6 +41,7 @@ jobs:
 
       - name: Fetch Vercel deployment logs
         id: fetch_logs
+        shell: bash
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
@@ -56,6 +56,7 @@ jobs:
 
       - name: Convert Vercel deployment logs to text
         id: convert_logs
+        shell: bash
         run: |
           JSON_FILENAME="${{ steps.fetch_logs.outputs.filename }}"
           FILENAME="${JSON_FILENAME%.json}.txt"
