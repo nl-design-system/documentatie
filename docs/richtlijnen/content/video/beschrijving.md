@@ -1,5 +1,6 @@
 ---
-title: Beschrijving voor video · Video · Content · Richtlijnen
+title: Beschrijving voor video
+title_sm: Video beschrijving
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Video beschrijving
