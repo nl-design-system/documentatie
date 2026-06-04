@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.3 Focus volgorde
 pagination_label: WCAG-succescriterium 2.4.3 Focus volgorde
-description: Wanneer een toetsenbordgebruiker binnen de webpagina navigeert, bijvoorbeeld met de Tab-toets, moet de tabvolgorde logisch en voorspelbaar zijn.
+description: Een toetsenbordgebruiker beweegt door de webpagina met bijvoorbeeld de Tab-toets. De volgorde waarin elementen focus krijgen moet logisch en voorspelbaar zijn.
 slug: 2.4.3
 keywords:
   - WCAG
@@ -45,13 +45,13 @@ De focusvolgorde wordt bepaald door de volgorde van elementen in de HTML. Die ho
 
 ### Wanneer is een afwijkende volgorde acceptabel?
 
-De focusvolgorde hoeft niet altijd van links naar rechts te lopen. Soms is een andere volgorde logischer. Denk aan een navigatiebalk die op desktop de primaire navigatie links toont en de zoekknop rechts. Op mobiel staat de hamburgerknop voor de primaire navigatie rechts (bij de duim) en de zoekknop links daarvan. De visuele volgorde op mobiel is dan zoeken-navigatie, maar de tabvolgorde is navigatie-zoeken.
+De focusvolgorde hoeft niet altijd van links naar rechts te lopen. Soms is een andere volgorde logischer. Bijvoorbeeld een navigatiebalk die op desktop de primaire navigatie links toont en de zoekknop rechts. Op mobiel staat de hamburgerknop voor de primaire navigatie rechts bij de duim, en de zoekknop links daarvan. De visuele volgorde op mobiel is dan zoeken-navigatie, maar de tabvolgorde is navigatie-zoeken.
 
-Dat is acceptabel, omdat:
+Dat is acceptabel, om drie redenen:
 
-- de tabvolgorde consistent is tussen viewports — de navigatie komt altijd eerst;
-- het belangrijkste en meestgebruikte onderdeel (de navigatie) als eerste bereikbaar is;
-- de volgorde niet verwarrend is voor de bezoeker.
+- De tabvolgorde is consistent tussen viewports: de navigatie komt altijd eerst.
+- Het belangrijkste en meestgebruikte onderdeel is als eerste bereikbaar.
+- De volgorde is niet verwarrend voor de bezoeker.
 
 Consistentie tussen viewports kan zwaarder wegen dan de visuele volgorde op één viewport. Zie ook [SC 3.2.3 Consistente navigatie](/wcag/3.2.3/): de navigatie moet op elke pagina in dezelfde relatieve volgorde staan.
 
@@ -67,7 +67,7 @@ De focus verplaatst zich in een logische volgorde die past bij de visuele opbouw
 
 Dit gebeurt als CSS-properties als `order`, `flex-direction: row-reverse` of `grid` de visuele volgorde veranderen zonder de HTML aan te passen.
 
-**Hoe te testen:** navigeer met <kbd>Tab</kbd> door de pagina. Volgt de focus de visuele volgorde van links naar rechts, van boven naar beneden? Test ook op smalle schermen: responsive layouts kunnen de visuele volgorde veranderen terwijl de HTML-volgorde gelijk blijft.
+**Hoe te testen:** ga met <kbd>Tab</kbd> door de pagina. Volgt de focus de visuele volgorde van links naar rechts, van boven naar beneden? Test ook op smalle schermen: responsive layouts kunnen de visuele volgorde veranderen terwijl de HTML-volgorde gelijk blijft.
 
 **Wie kan dit oplossen:** een developer past de HTML-volgorde aan zodat die overeenkomt met de visuele layout.
 
@@ -77,7 +77,7 @@ Een modal dialoogvenster verschijnt boven de pagina en blokkeert de interactie m
 
 Dit geldt voor alle modale elementen: dialoogvensters, <span lang="en">lightboxes</span>, mobiele menu's, cookiebanners en videomodals. Bij een cookiebanner die bij het laden van de pagina verschijnt, gaat de focus direct naar de banner zodat de bezoeker de keuze kan maken.
 
-**Hoe te testen:** open een modal dialoogvenster of laad een pagina met een cookiebanner. Druk op <kbd>Tab</kbd>. Bevindt de focus zich in het venster? Of navigeer je door elementen achter het venster?
+**Hoe te testen:** open een modal dialoogvenster of laad een pagina met een cookiebanner. Druk op <kbd>Tab</kbd>. Bevindt de focus zich in het venster? Of beweeg je door elementen achter het venster?
 
 <Guideline appearance="dont" title="Modal dialoogvenster openen zonder focus te verplaatsen.">
 
@@ -137,7 +137,7 @@ function openDialog() {
 
 ### Focus verlaat een modal dialoogvenster terwijl het nog open is
 
-Zolang een modal dialoogvenster open is, blijft de focus binnen het venster. Na het laatste interactieve element in het venster springt de focus terug naar het eerste element. Zonder deze zogenoemde <span lang="en">focus trap</span> navigeert de bezoeker door elementen achter het venster die niet zichtbaar of bedienbaar zijn.
+Zolang een modal dialoogvenster open is, blijft de focus binnen het venster. Na het laatste interactieve element in het venster springt de focus terug naar het eerste element. Zonder deze zogenoemde <span lang="en">focus trap</span> beweegt de bezoeker door elementen achter het venster die niet zichtbaar of bedienbaar zijn.
 
 **Hoe te testen:** open een dialoogvenster en druk herhaaldelijk op <kbd>Tab</kbd>. Blijft de focus binnen het venster? Druk op <kbd>Escape</kbd>. Sluit het venster?
 
@@ -175,7 +175,7 @@ function trapFocus(dialog) {
 
 ### Focus keert niet terug na het sluiten van een modal dialoogvenster
 
-Na het sluiten van een modal dialoogvenster keert de focus terug naar de knop die het venster heeft geopend. Gebeurt dat niet, dan belandt de focus op `<body>` en moet de bezoeker opnieuw door de hele pagina tabben.
+Na het sluiten van een modal dialoogvenster keert de focus terug naar de knop die het venster heeft geopend. Gebeurt dat niet, dan belandt de focus op `<body>` en moet de bezoeker opnieuw vanaf het begin door de pagina gaan met <kbd>Tab</kbd>.
 
 **Hoe te testen:** open een dialoogvenster, sluit het en druk op <kbd>Tab</kbd>. Gaat de focus verder vanaf de knop die het venster opende?
 
@@ -184,7 +184,7 @@ Na het sluiten van een modal dialoogvenster keert de focus terug naar de knop di
 ```javascript
 function sluitDialog() {
   document.getElementById("dialog").style.display = "none";
-  // Focus gaat nergens naartoe — belandt op <body>
+  // Focus gaat nergens naartoe en belandt op <body>
 }
 ```
 
@@ -392,7 +392,7 @@ De focusvolgorde volgt de HTML-volgorde. Een positieve `tabindex` (zoals `tabind
 
 Een card die als geheel klikbaar is én een link bevat met dezelfde bestemming, verschijnt twee keer in de tabvolgorde. De bezoeker tabt eerst naar de card en daarna naar de link erin, terwijl beide naar dezelfde pagina leiden. Dat is verwarrend en kost extra tabstops.
 
-**Hoe te testen:** navigeer met <kbd>Tab</kbd> door een overzicht met cards. Kom je twee keer op dezelfde card terecht?
+**Hoe te testen:** ga met <kbd>Tab</kbd> door een overzicht met cards. Kom je twee keer op dezelfde card terecht?
 
 <Guideline appearance="dont" title="Card en link erin zijn allebei focusbaar met dezelfde bestemming.">
 
@@ -421,7 +421,7 @@ Een card die als geheel klikbaar is én een link bevat met dezelfde bestemming, 
 
 ### Focus verdwijnt doordat een widget opnieuw wordt gerenderd
 
-Als JavaScript de `innerHTML` van een container overschrijft, worden alle elementen daarin verwijderd en opnieuw aangemaakt. Het element dat op dat moment de focus had, bestaat dan niet meer. De focus valt terug naar `<body>` en de bezoeker moet opnieuw door de pagina tabben.
+Als JavaScript de `innerHTML` van een container overschrijft, worden alle elementen daarin verwijderd en opnieuw aangemaakt. Het element dat op dat moment de focus had, bestaat dan niet meer. De focus valt terug naar `<body>` en de bezoeker moet opnieuw vanaf het begin door de pagina gaan met <kbd>Tab</kbd>.
 
 **Hoe te testen:** gebruik een complexe widget (zoals een filterlijst of een tabel met sortering) en druk op <kbd>Tab</kbd> naar een interactief element. Activeer een actie die de widget ververst. Verdwijnt de focus?
 
@@ -430,7 +430,7 @@ Als JavaScript de `innerHTML` van een container overschrijft, worden alle elemen
 ```javascript
 function updateResultaten(data) {
   document.getElementById("resultaten").innerHTML = renderResultaten(data);
-  // Het element dat focus had is verwijderd — focus valt terug naar <body>
+  // Het element dat focus had is verwijderd. Focus valt terug naar <body>
 }
 ```
 
@@ -443,15 +443,13 @@ function updateResultaten(data) {
 ### Voor iedereen
 
 1. Klik in de adresbalk van de browser en druk op <kbd>Tab</kbd>. Verplaats de focus van element naar element door de pagina. Volgt de focus een logische volgorde die past bij de visuele opbouw?
-2. Navigeer terug met <kbd>Shift</kbd>+<kbd>Tab</kbd>. Gaat de focus in omgekeerde volgorde?
+2. Ga terug met <kbd>Shift</kbd>+<kbd>Tab</kbd>. Gaat de focus in omgekeerde volgorde?
 3. Open dialoogvensters, mobiele menu's en cookiebanners. Krijgen die direct de focus? Blijft de focus erin? Keert de focus terug als je ze sluit?
 4. Test op verschillende schermbreedtes. Responsive layouts kunnen de visuele volgorde veranderen terwijl de focusvolgorde gelijk blijft.
 
 ### Voor developers
 
-1. <kbd>Tab</kbd> door de pagina en vergelijk de focusvolgorde met de visuele volgorde. Als die afwijken, controleer of
-   CSS `order`, `flex-direction: row-reverse`, `grid` of `position: absolute` de visuele layout verandert zonder de HTML
-   aan te passen.
+1. Ga met <kbd>Tab</kbd> door de pagina en vergelijk de focusvolgorde met de visuele volgorde. Als die afwijken, controleer of CSS `order`, `flex-direction: row-reverse`, `grid` of `position: absolute` de visuele layout verandert zonder de HTML aan te passen.
 2. Zoek in de broncode naar `tabindex` met positieve waarden. Verwijder ze en los de volgorde op in de HTML.
 3. Test elk dialoogvenster: controleer of de focus erin verplaatst wordt, erin gevangen blijft en na sluiten terugkeert naar het trigger-element.
 4. Controleer accordions en tabs: staat de content van een geopend paneel direct na de bijbehorende knop in de HTML?
@@ -468,9 +466,9 @@ function updateResultaten(data) {
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 2.4.3 Focusvolgorde](https://www.w3.org/Translations/WCAG22-nl/#focusvolgorde) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 2.4.3: Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Focus Order bookmarklet](https://pauljadam.com/bookmarklets/focus.html) — voegt visuele nummering toe aan elk focusbaar element op de pagina, zodat je de focusvolgorde kunt controleren zonder te tabben (Engels).
+- [WCAG 2.2: Succescriterium 2.4.3 Focusvolgorde](https://www.w3.org/Translations/WCAG22-nl/#focusvolgorde): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 2.4.3: Focus Order</span>](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Focus Order bookmarklet](https://pauljadam.com/bookmarklets/focus.html): voegt visuele nummering toe aan elk focusbaar element op de pagina, zodat je de focusvolgorde kunt controleren zonder met <kbd>Tab</kbd> door alle elementen te gaan (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
