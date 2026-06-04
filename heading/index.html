@@ -31,7 +31,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.ea820451.css" />
-  <script src="/assets/js/runtime~main.a4709816.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.c18a2ede.js" defer="defer"></script>
   <script src="/assets/js/main.b37cfd21.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -756,7 +756,7 @@
                    <div>
                     <p>Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.</p>
                     <p>Zorg ervoor dat de component meegroeit met de tekst. Definieer hoogte en de breedte niet in <code class="utrecht-code">px</code>, maar gebruik een relatieve waarde als <code class="utrecht-code">em</code> of <code class="utrecht-code">rem</code>.</p>
-                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">word-break: break-word; hyphens: auto;</code> in combinatie met <code class="utrecht-code">text-wrap-style: pretty</code> of <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur niet alleen op de specifieke styling van het element of component, maar op globaal (<code class="utrecht-code">:root</code>) niveau.</p>
+                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">overflow-wrap: break-word; hyphens: auto;</code> eventueel in combinatie met <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op <code class="utrecht-code">:root</code> niveau.</p>
                     <p>NL Design System richtlijnen:</p>
                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                      <li><a href="/richtlijnen/stijl/typografie/voorkeur/" class="utrecht-link utrecht-link--html-a">Let op voorkeursinstellingen voor typografie</a></li>
@@ -777,7 +777,7 @@
                    <div>
                     <p>Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea&#x27;s, letterafstand en ruimte tussen woorden. Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier buttons voor te maken in de website zelf.</p>
                     <p>Zorg ervoor dat de component mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.</p>
-                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">word-break: break-word; hyphens: auto;</code> in combinatie met <code class="utrecht-code">text-wrap-style: pretty</code> of <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur niet alleen op de specifieke styling van het element of component, maar op globaal (<code class="utrecht-code">:root</code>) niveau.</p>
+                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">overflow-wrap: break-word; hyphens: auto;</code> eventueel in combinatie met <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op <code class="utrecht-code">:root</code> niveau.</p>
                     <p>Je moet de afstand kunnen vergroten naar deze waardes:</p>
                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                      <li>Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte.</li>
