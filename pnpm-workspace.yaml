@@ -2,6 +2,13 @@ packages:
   - docs/
   - packages/*
 
+allowBuilds:
+  "@parcel/watcher": true
+  core-js: false
+  core-js-pure: false
+  esbuild: true
+  sharp: true
+
 autoInstallPeers: false
 
 engineStrict: true
@@ -26,6 +33,8 @@ overrides:
 
 patchedDependencies:
   "@rijkshuisstijl-community/card-react": patches/@rijkshuisstijl-community__card-react.patch
+
+provenance: true
 
 saveExact: true
 
