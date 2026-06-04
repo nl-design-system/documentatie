@@ -1,0 +1,161 @@
+---
+title: Namen van states
+description: Door namen van states als conventie te gebruiken, zijn APIs voor states voorspelbaar en stabiel. Hier lees je hoe dat werkt.
+hide_title: true
+sidebar_label: Namen van states
+pagination_label: Namen van states
+slug: /handboek/developer/state-conventie/
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Namen van states
+
+<Paragraph lead>
+  De namen van states van componenten zijn gebaseerd op webstandaarden die veel gebruik worden. Door deze conventies te
+  gebruiken, zijn APIs voor states voorspelbaar en stabiel.
+</Paragraph>
+
+De namen van states worden onder andere gebruikt in Figma, code, design tokens en andere API's van componenten.
+
+Voor sommige states zijn er "common design tokens", waarmee het makkelijk is om states herkenbaar te maken voor gebruikers door een consistent visueel ontwerp. Bijvoorbeeld: voor Hover, Active, Selected, Disabled. Voor Invalid gebruik je de Error common tokens.
+
+Interactie-states:
+
+- [Active](#active)
+- [Focus](#focus)
+- [Focus Visible](#focus-visible)
+- [Hover](#hover)
+
+Andere states:
+
+- [Checked](#checked)
+- [Current](#current)
+- [Disabled](#disabled)
+- [Expanded](#expanded)
+- [Indeterminate](#indeterminate)
+- [Pressed](#pressed)
+- [Read-only](#read-only)
+- [Required](#required)
+- [Selected](#selected)
+- [Visited](#visited)
+
+Voor tegenovergestelde states is niet altijd een bestaande naam in webstandaarden. Bedenk dan niet zelf een naam, maar gebruik dan "not something" als tegenovergestelde state van "something". Bijvoorbeeld: "not checked", en niet "unchecked". Deze conventie is gebaseerd op de webstandaard CSS: `:not(:checked)`.
+
+## Active \{#active\}
+
+De active state geeft feedback aan de gebruiker dat door het indrukken de component geactiveerd is of geactiveerd gaat worden.
+
+- Bij een muis gebeurt dat tussen de muisknop indrukken en de muisknop loslaten. Dat duurt vaak minder dan een seconde, volgt op de Hover state en is tegelijk met de Focus state.
+- Bij een touchscreen is dit zolang het scherm wordt aangeraakt.
+- Bij een toetsenbord is dit wanneer je met `Space` een Button indrukt, tot je `Space` loslaat of [de actie annuleert](/wcag/https://nldesignsystem.nl/wcag/2.5.2/) met bijvoorbeeld `Escape`.
+
+Gebruik Active voor componenten die ingedrukt kunnen worden om een actie uit te voeren, zoals Link en Button, en varianten daarop.
+
+Wanneer de button active is, dan kun je vaak nog de actie annuleren door op `Escape` te drukken of de aanwijzer te verplaatsen naar buiten de component.
+
+Wanneer een component niet interactief is, bijvoorbeeld al de component Disabled is, dan moet de active state niet gebruikt worden.
+
+Ook bekend als: Pressed, ingedrukt.
+
+De active state is anders dan [pressed](#pressed) en [current](#current). Er is wel 1 situatie waar active en pressed gelijk zijn: Een Toggle Button die actief is zolang de button is is ingedrukt, en deactiveert bij het loslaten, is tegelijk active en pressed. Bijvoorbeeld: een fast-forward Button voor een video.
+
+De naam "active" is gebaseerd op `:active` in CSS.
+
+## Checked \{#checked\}
+
+De checked state is voor formuliercomponenten, zoals [Checkbox](/checkbox/), [Radio Button](/radio-button/) en [Switch](/switch/).
+
+De andere states zijn: "not checked" en "[indeterminate](#indeterminate)".
+
+De naam "checked" is gebaseerd op `:checked` in CSS, het HTML-attribuut `checked`, de DOM-property `checked` en `aria-checked`.
+
+## Current \{#current\}
+
+Gebruik de Current state om de gebruiker te helpen door duidelijk te maken wat het huidige item is een verzameling. Duidelijk maken dat een link verwijst naar de huidige pagina, is waar Current het meest gebruikt wordt. Current wordt ook gebruikt om de huidige stap in een proces aan te geven.
+
+De naam "current" is gebaseerd op `aria-current`. De naam "active" wordt ook vaak gebruikt voor de Current state, maar met een andere naam kan verwarring voorkomen worden met de Active state.
+
+## Disabled \{#disabled\}
+
+De Disabled state is voor componenten die normaal geactiveerd kunnen worden, maar die nu uitgeschakeld zijn.
+
+De naam "disabled" is gebaseerd op `:disabled` in CSS, het HTML-attribuut `disabled`, `aria-disabled` en de DOM-property `disabled`.
+
+## Expanded \{#expanded\}
+
+Gebruik de Expanded state voor componenten waar extra mogelijkheden geopend en verborgen kunnen worden. Bijvoorbeeld: een Accordion, of een Button die een Drawer of Dialog opent.
+
+De naam "expanded" is gebaseerd op `aria-expanded`.
+
+## Focus \{#focus\}
+
+De Focus state geeft aan welk component bediend kan worden met het toetsenbord.
+
+De naam "focus" is gebaseerd op `:focus` in CSS, en het `focus` event in de DOM.
+
+## Focus Visible \{#focus-visible\}
+
+Gebruik de Focus Visible state om het design van de component aan te passen, zodat duidelijk is welk component bediend kan worden met het toetsenbord.
+
+De naam "focus visible" is gebaseerd op `:focus-visible` in CSS.
+
+## Hover \{#hover\}
+
+De hover state laat zien welke component wordt aangewezen, met bijvoorbeeld een muisaanwijzer of "eye tracking". Touch screens hebben geen hover state.
+
+Bekijk een video met voorbeelden van hover voor eyetracking bij ["Design hover interactions for visionOS" op de website van Apple](https://developer.apple.com/videos/play/wwdc2025/303/).
+
+De naam "hover" is gebaseerd op `:hover` in CSS.
+
+## Indeterminate \{#indeterminate\}
+
+De Indeterminate state is voor de Checkbox, wanneer de situatie tussen Checked en Not Checked in zit.
+
+Bijvoorbeeld: er is een Checkbox voor elke item in een lijst, en er is een Checkbox waarmee je alle items in één keer kan checken of unchecken. Wanneer de helft van de items gecheckt is en de andere helft niet, dan is de Checkbox voor de verzameling Indeterminate: ergens tussen Checked en Not Checked in.
+
+De naam "indeterminate" is gebaseerd op `:indeterminate` in CSS en de `indeterminate` DOM-property.
+
+De naam is moeilijk uit te spreken, maar gelukkig wordt deze state weinig gebruikt!
+
+## Invalid \{#required\}
+
+De Invalid state is voor formulier-componenten die niet voldoen aan de eisen.
+
+De naam "invalid" is gebaseerd op `:invalid` in CSS en `aria-invalid`.
+
+## Pressed \{#pressed\}
+
+De Pressed state is voor buttons die ingedrukt kunnen worden, en omgekeerd. Bijvoorbeeld: een Play/Pauze button, of toolbar buttons voor Bold, Italic en Underline.
+
+De naam "pressed" is gebaseerd op `aria-pressed`.
+
+## Read-only \{#read-only\}
+
+De Read-only state is om de waarde van formuliervelden te tonen, terwijl het niet mogelijk is de waarde aan te passen.
+
+Het verschil met de Disabled state is dat Read-only componenten wel altijd Focus kunnen krijgen zijn, waardoor de ingevulde waarde toegankelijk is.
+
+De naam "read-only" is gebaseerd op `:read-only` in CSS, het HTML-attribuut `readonly`, `aria-readonly` en de DOM-property `readOnly`.
+
+## Required \{#required\}
+
+De Required state is voor formulier-componenten die niet optioneel zijn.
+
+De naam "required" is gebaseerd op `:required` in CSS, het HTML-attribuut `required` en `aria-required`.
+
+## Selected \{#selected\}
+
+De Selected state is om duidelijk te maken welke items uit een verzameling zijn geselecteerd voor een volgende actie.
+
+De Selected state wordt gebruikt door een aantal formuliercomponenten, zoals [Select Combobox](/select-combobox/). Ook andere componenten met verzamelingen kunnen de Selected state gebruiken, zoals [Calendar](/calendar/) en [Table](/table/).
+
+De naam "selected" is gebaseerd op het HTML-attribuut `selected` voor het element `option`, op en `aria-selected`.
+
+## Visited \{#visited\}
+
+De Visited state is om duidelijk te maken welke Links de gebruiker al bezocht heeft. Het kan gebruikers helpen, maar het heeft ook impact op de privacy als anderen meekijken.
+
+De Visited state is met name relevant voor de [Link](/link/)-component.
+
+De naam "visited" is gebaseerd op `:visited` in CSS.
