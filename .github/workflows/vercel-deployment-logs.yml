@@ -55,18 +55,22 @@ jobs:
             --output "${FILENAME}"
 
       - name: Convert Vercel deployment logs to text
+        id: convert_logs
         run: |
-          FILENAME="${{ steps.fetch_logs.outputs.filename }}"
-          TXT_FILENAME="${FILENAME%.json}.txt"
+          JSON_FILENAME="${{ steps.fetch_logs.outputs.filename }}"
+          FILENAME="${JSON_FILENAME%.json}.txt"
+          echo "filename=${FILENAME}" >> "${GITHUB_OUTPUT}"
           jq -r '
             .[]
             | select((.text // "") != "")
             | "[\((.created / 1000 | strftime("%Y-%m-%d %H:%M:%S")))] [\(.type // "log")] \(.text)"
-          ' "${FILENAME}" > "${TXT_FILENAME}"
+          ' "${JSON_FILENAME}" > "${FILENAME}"
 
       - name: Upload Vercel deployment logs
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: vercel-deployment-logs-${{ steps.vercel.outputs.deployment_url }}
-          path: vercel-deployment-logs-*.{json,txt}
+          path: |
+            ${{ steps.fetch_logs.outputs.filename }}
+            ${{ steps.convert_logs.outputs.filename }}
           if-no-files-found: error
