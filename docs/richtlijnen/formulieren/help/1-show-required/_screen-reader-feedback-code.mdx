@@ -10,9 +10,15 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <form>
-          <label htmlFor="kleur8">Wat is je lievelingskleur (verplicht)</label>
-          <input type="text" id="kleur8" name="lievelingskleur" aria-required="true" aria-invalid="false" />
-          <button>Verstuur</button>
+          <p>
+            <label htmlFor="kleur8">Wat is je lievelingskleur (verplicht)</label>
+          </p>
+          <p>
+            <input type="text" id="kleur8" name="lievelingskleur" aria-required="true" aria-invalid="false" />
+          </p>
+          <p>
+            <button>Verstuur</button>
+          </p>
         </form>
       </>
     )}
@@ -27,9 +33,15 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <form noValidate>
-          <label htmlFor="kleur9">Wat is je lievelingskleur (verplicht)</label>
-          <input type="text" id="kleur9" name="lievelingskleur" required aria-invalid="false" />
-          <button>Verstuur</button>
+          <p>
+            <label htmlFor="kleur9">Wat is je lievelingskleur (verplicht)</label>
+          </p>
+          <p>
+            <input type="text" id="kleur9" name="lievelingskleur" required aria-invalid="false" />
+          </p>
+          <p>
+            <button>Verstuur</button>
+          </p>
         </form>
       </>
     )}
@@ -44,10 +56,16 @@ import { Guideline } from "@site/src/components/Guideline";
     {() => (
       <>
         <form>
-          <label htmlFor="kleur10">Wat is je lievelingskleur</label>
+          <p>
+            <label htmlFor="kleur10">Wat is je lievelingskleur</label>
+          </p>
           <p id="fout10">Invoerfout: Vul de naam van een kleur in.</p>
-          <input type="text" id="kleur10" aria-describedby="fout10" name="lievelingskleur" />
-          <button>Verstuur</button>
+          <p>
+            <input type="text" id="kleur10" aria-describedby="fout10" name="lievelingskleur" />
+          </p>
+          <p>
+            <button>Verstuur</button>
+          </p>
         </form>
       </>
     )}

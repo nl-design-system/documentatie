@@ -24,20 +24,26 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
+import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Drawer";
 export const description = 'Een paneel aan de zijkant van een scherm, die geopend kan worden voor gerelateerde informatie, formulieren of acties.';
 export const issueNumber = 256;
+export const relayStep = "help wanted";
+export const componentName = "drawer";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<p>
-  Gerelateerde componenten: <a href="/modal-dialog/">Modal Dialog</a>, <a href="/dialog/">Dialog</a>.
-</p>
+<ComponentIllustration
+  relayStep={relayStep}
+  description={`Schets van de ${componentName} component`}
+  name={componentName}
+/>
 
 ## Definition of Done
 
@@ -46,5 +52,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 <HelpImproveComponent component={component} headingLevel={2} />

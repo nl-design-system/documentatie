@@ -2,7 +2,7 @@
   "label": "Uit te vragen informatie",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/formulieren/questions/README"
+    "id": "richtlijnen/formulieren/questions/index"
   },
   "customProps": {
     "showLinkedDoc": true

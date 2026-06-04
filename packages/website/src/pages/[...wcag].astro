@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import { render } from 'astro:content';
+import Document from '@layouts/document.astro';
+import { MDXComponents } from '@utils/mdx-components.astro';
+import TableOfContents from '@components/table-of-content/table-of-content.astro';
+
+export async function getStaticPaths() {
+  const wcag = await getCollection('wcag');
+
+  return wcag.map((page) => ({
+    params: { wcag: page.id },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+
+const description =
+  page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
+---
+
+<Document
+  title={page.data.title}
+  titleSm={page.data.title_sm}
+  description={description}
+  lang={page.data.lang}
+  seoImage={page.data.image}
+  seoImageAlt={page.data.image_alt}
+  keywords={['wcag', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
+  index={page.data.unlisted !== true}
+>
+  <TableOfContents />
+  <Content components={MDXComponents} />
+</Document>
