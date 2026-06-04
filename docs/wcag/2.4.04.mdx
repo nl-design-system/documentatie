@@ -47,7 +47,7 @@ De "context" die mag meetellen is beperkt tot elementen die in code een directe 
 - Een tabelcel (`<td>` of `<th>`):
   `<table><tr><td>Het leukste <a href="#">evenement</a> dit jaar was ...</td></tr></table>`
 
-Relaties tussen elementen die alleen visueel duidelijk zijn, tellen niet mee. Denk aan de positie op de pagina of een afbeelding naast de link. Dit valt niet onder linkcontext:
+Relaties tussen elementen die alleen visueel duidelijk zijn, tellen niet mee. Bijvoorbeeld de positie op de pagina of een afbeelding naast de link. Dit valt niet onder linkcontext:
 
 - Een kop waar de link onder staat.
 - Een alinea die boven een link staat.
@@ -59,7 +59,7 @@ Er is een uitzondering: als het doel van de link voor iedereen onduidelijk zou z
 
 ### "Lees meer" als linktekst
 
-Dit is de meest voorkomende fout. "Lees meer" zegt niets over de bestemming van de link. Iemand die met een screenreader door de links op een pagina navigeert, hoort tien keer "Lees meer" zonder te weten waar elke link naartoe gaat.
+Dit is de meest voorkomende fout. "Lees meer" zegt niets over de bestemming van de link. Iemand die met een screenreader de linkslijst van een pagina doorloopt, hoort tien keer "Lees meer" zonder te weten waar elke link naartoe gaat.
 
 **Hoe te testen:** open de linkslijst in een screenreader en controleer of elke linktekst op zichzelf begrijpelijk is.
 
@@ -191,7 +191,7 @@ Als je een heel tekstblok klikbaar maakt, leest de screenreader de volledige tek
 
 ### Link zonder inhoud of toegankelijke naam
 
-Een lege link heeft geen toegankelijke naam. Denk aan een `<a>`-element met alleen een achtergrondafbeelding via CSS of een leeg element. Een screenreader meldt een link, maar niet waarheen.
+Een lege link heeft geen toegankelijke naam. Bijvoorbeeld een `<a>`-element met alleen een achtergrondafbeelding via CSS, of een leeg element. Een screenreader meldt een link, maar niet waarheen.
 
 **Hoe te testen:** gebruik axe DevTools of WAVE om links zonder toegankelijke naam automatisch te vinden.
 
@@ -493,10 +493,10 @@ Een kale URL als linktekst is niet informatief. Een screenreader leest de URL ka
 
 ## Relevante bronnen
 
-- [The perfect link](https://www.a11y-collective.com/blog/the-perfect-link/) — uitgebreide gids over het maken van toegankelijke links (The A11Y Collective, Engels).
-- [Why Your Links Should Never Say "Click Here"](https://www.smashingmagazine.com/2012/06/links-should-never-say-click-here/) — waarom "klik hier" een slechte linktekst is (Smashing Magazine, Engels).
-- [Better Link Labels: 4Ss for Encouraging Clicks](https://www.nngroup.com/articles/better-link-labels/) — richtlijnen voor effectieve linkteksten (Nielsen Norman Group, Engels).
-- [What is anchor text?](https://yoast.com/what-is-anchor-text/) — uitleg over ankertekst en het belang voor toegankelijkheid en SEO (Yoast, Engels).
+- [The perfect link](https://www.a11y-collective.com/blog/the-perfect-link/): uitgebreide gids over het maken van toegankelijke links (The A11Y Collective, Engels).
+- [Why Your Links Should Never Say "Click Here"](https://www.smashingmagazine.com/2012/06/links-should-never-say-click-here/): waarom "klik hier" een slechte linktekst is (Smashing Magazine, Engels).
+- [Better Link Labels: 4Ss for Encouraging Clicks](https://www.nngroup.com/articles/better-link-labels/): richtlijnen voor effectieve linkteksten (Nielsen Norman Group, Engels).
+- [What is anchor text?](https://yoast.com/what-is-anchor-text/): uitleg over ankertekst en het belang voor toegankelijkheid en SEO (Yoast, Engels).
 
 ## Gebruikersonderzoek
 
@@ -504,9 +504,9 @@ Een kale URL als linktekst is niet informatief. Een screenreader leest de URL ka
 
 ## W3C-referenties
 
-- [WCAG 2.2: Succescriterium 2.4.4 Linkdoel (in context)](https://www.w3.org/Translations/WCAG22-nl/#linkdoel-in-context) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 2.4.4: Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Quick Reference 2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) — snelreferentie met technieken (Engels).
+- [WCAG 2.2: Succescriterium 2.4.4 Linkdoel (in context)](https://www.w3.org/Translations/WCAG22-nl/#linkdoel-in-context): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 2.4.4: Link Purpose (In Context)</span>](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 2.4.4 Link Purpose (In Context)</span>](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context): snelreferentie met technieken (Engels).
 
 <SpotlightSection>
   <Markdown omitH1 headinglevel={3}>
