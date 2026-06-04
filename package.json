@@ -7,11 +7,11 @@
   ],
   "private": true,
   "license": "EUPL-1.2",
-  "packageManager": "pnpm@10.30.1+sha512.3590e550d5384caa39bd5c7c739f72270234b2f6059e13018f975c313b1eb9fefcc09714048765d4d9efe961382c312e624572c0420762bdc5d5940cdf9be73a",
+  "packageManager": "pnpm@11.5.1+sha512.93f7b57422ea7068257235b4c16eb60762eb68e1dc23723199cc739043ea9be2c4143274a399d8c6defa2b1176226d9ca1c4b63482d6200c1a8fbaa78c1d1485",
   "engines": {
     "//": "Update @types/node to match the highest node version here",
     "node": ">=24 <=25",
-    "pnpm": "^10.17.0"
+    "pnpm": "^11.4.0"
   },
   "repository": {
     "type": "git+ssh",
