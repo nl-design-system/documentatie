@@ -448,6 +448,9 @@ importers:
       '@fontsource/source-sans-pro':
         specifier: 5.2.5
         version: 5.2.5
+      '@gemeente-denhaag/side-navigation':
+        specifier: 4.1.0
+        version: 4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nl-design-system-candidate/skip-link-css':
         specifier: 1.0.5
         version: 1.0.5
@@ -3004,10 +3007,22 @@ packages:
     peerDependencies:
       react: ^18.0.0
 
+  '@gemeente-denhaag/iconbutton@3.1.0':
+    resolution: {integrity: sha512-pPH5yW5i3M2e7MWvLopP9i2Qsqt9GIZvCYqJCYXUmJQPw3pRAsVk2WtKuGsam5t0Led6mMxsVN6LxVDTVHLixw==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/icons@0.2.3-alpha.374':
     resolution: {integrity: sha512-63ZmHziHtSIrkc/bEJQOT6lNFujLsEkGVg59gd5JwoICQv16GIZQSUzqVyQwgkrBGk7tvpIBFAw1uZchLnsEkw==}
     peerDependencies:
       react: ^18.0.0
+
+  '@gemeente-denhaag/icons@4.0.1':
+    resolution: {integrity: sha512-SX+o0S1SvdPDaCXCdha+2dQaOkyiHdYIqLhR80FblBrkxaS45K/zY2vahlI15NdKY8kQ3onEZv26i/6TPh1gyg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
 
   '@gemeente-denhaag/language-switcher@0.2.3-alpha.366':
     resolution: {integrity: sha512-5zbIgKeRYaQQi6CFHScFb5ppt/Ti12/n2PFoTGThqsviip+gi0QwpLR+oq6FYs72c5qEvH2kvYoSYiQPzPLLvg==}
@@ -3031,6 +3046,12 @@ packages:
     resolution: {integrity: sha512-6wUlNVdZF8X9eLXARevQ1/AoMyZ+JfxIlXEeDPlMfmxK4tmK0npp5WJvWoGnAV7pfHPw8JV9Zg0qqOVkTsyvOA==}
     peerDependencies:
       react: ^18.0.0
+
+  '@gemeente-denhaag/number-badge@2.1.0':
+    resolution: {integrity: sha512-m1ar7fpQzzmzfUMKgj2wrU1WMrLPmNppgjk3KnffbR6rswh05OlX2RwY00nOrdQwtQzwlRdir3U9CMo21n4gEg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
 
   '@gemeente-denhaag/page@0.1.1-alpha.234':
     resolution: {integrity: sha512-izLsAr/eUJS6TKxOWIwSuzuMxjeuXfJwin8EQDq5lurtL8VYLhH+fzidz20Y8FdAyDOeYm5YHnif62Vju51JFw==}
@@ -3057,6 +3078,12 @@ packages:
     resolution: {integrity: sha512-apRUzkPeY2izIiGpPZqnFZsKonGC4LU/Tg+97rxP96lYESsBu0x3lEP+zvIRktunZ9T1MKYCTdghkCG1me5Zag==}
     peerDependencies:
       react: ^18.0.0
+
+  '@gemeente-denhaag/side-navigation@4.1.0':
+    resolution: {integrity: sha512-/a29KJCbP4JVcDHJPFmQib5+0NdbhWX5q94cJ8OKYCKaE559PdycUtrfEOD6pf99gNKckfUdF6AdZVRjuRGheg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
 
   '@gemeente-denhaag/sidenav@0.1.0-alpha.192':
     resolution: {integrity: sha512-USN3YcBeYNod4icQ7ZpNWpadiH56AbdSBYGboOSFyDZyE7bwpn0LH0DE2GavFKWu2R9s2mmxqEtYhuHF0O/aCA==}
@@ -15339,9 +15366,22 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  '@gemeente-denhaag/iconbutton@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/icons@0.2.3-alpha.374(react@18.3.1)':
     dependencies:
       react: 18.3.1
+
+  '@gemeente-denhaag/icons@4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@gemeente-denhaag/language-switcher@0.2.3-alpha.366(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -15384,6 +15424,11 @@ snapshots:
       - react-vega
       - vega
 
+  '@gemeente-denhaag/number-badge@2.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/page@0.1.1-alpha.234': {}
 
   '@gemeente-denhaag/pagination@0.1.1-alpha.301(react@18.3.1)':
@@ -15414,6 +15459,15 @@ snapshots:
   '@gemeente-denhaag/sheet@0.1.0-alpha.170(react@18.3.1)':
     dependencies:
       react: 18.3.1
+
+  '@gemeente-denhaag/side-navigation@4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@gemeente-denhaag/iconbutton': 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/icons': 4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/number-badge': 2.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@gemeente-denhaag/sidenav@0.1.0-alpha.192(react@18.3.1)':
     dependencies:
