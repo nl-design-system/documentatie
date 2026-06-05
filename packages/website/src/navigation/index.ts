@@ -34,6 +34,12 @@ export interface NavigationItem {
 
   /** The position this item should take within a NavigationGroup items list */
   order?: number;
+
+  /** Indicating that this item is the current page */
+  current?: boolean;
+
+  /** Indicating that an NavigationItem is to be unlisted in visible menus */
+  unlisted?: boolean;
 }
 
 /**
@@ -73,6 +79,29 @@ export interface NavigationGroup {
 
   /** The position this group should take within a NavigationGroup items list */
   order?: number;
+
+  /** Should the group be expanded */
+  expanded?: boolean;
+
+  /** Indicating that this items index is the current page */
+  current?: boolean;
+
+  /** Indicating that an NavigationGroup is to be unlisted in visible menus */
+  unlisted?: boolean;
+}
+
+type NavigationElementResolved = NavigationItem | NavigationGroupResolved;
+
+interface NavigationGroupResolved extends NavigationGroup {
+  items: NavigationElementResolved[];
+}
+
+export interface NavigationRoot {
+  /** A tree structure of all resolved NavigationElements starting with a NavigationGroup  */
+  navigationTree: NavigationGroupResolved;
+
+  /** A flat list of all resolved NavigationElements */
+  navigationList: Set<NavigationElementResolved>;
 }
 
 export function isNavigationGroup(object?: NavigationElement): object is NavigationGroup {
@@ -85,12 +114,6 @@ export function isNavigationItem(object?: NavigationElement): object is Navigati
 
 export type NavigationElement = NavigationItem | NavigationGroup;
 export type NavigationElementOrdered = NavigationElement & { order: NonNullable<NavigationElement['order']> };
-
-/**
- * A flat list of all navigation elements, filled when the `navigation` promise
- * is resolved
- */
-export const navigationElements: NavigationElement[] = [];
 
 type NavigationItemInput =
   | string
@@ -139,13 +162,8 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
     parent: options?.parent,
     href: `/${entry?.id || options?.href}/`.replaceAll(/\/{2,}/g, '/'),
     order: entry?.data?.navigation_order,
+    unlisted: entry?.data?.unlisted,
   };
-
-  // Unlisted items are allowd to be turned into an `NavigationItem`, but
-  // should not end up in
-  if (!entry?.data?.unlisted) {
-    navigationElements.push(item);
-  }
 
   return item;
 }
@@ -277,13 +295,48 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
     index.parent = group;
   }
 
-  // Add the group to the navigationElements list
-  if (group.items.length) {
-    navigationElements.push(group);
-  }
-
   // Return the group for consumption
   return group;
+}
+
+/**
+ * Normalised Navigation structure:
+ * - Each element is resolved
+ * - Empty Groups are replaced by their index pages
+ */
+export async function navigationRoot(group: Promise<NavigationGroup>) {
+  const navigationTree = (await group) as NavigationGroupResolved;
+  const navigationList = new Set<NavigationElement>();
+
+  const walkTree = (
+    item: NavigationGroupResolved | NavigationItem,
+  ): NavigationGroupResolved | NavigationItem | undefined => {
+    if (!isNavigationItem(item) && !isNavigationGroup(item)) throw new Error('Item is not resolved');
+
+    if (isNavigationGroup(item)) {
+      item.items = item.items.map(walkTree).filter(Boolean) as NavigationElementResolved[];
+
+      if (item.items.length === 0 && item.index) {
+        item.index.parent = item.parent;
+
+        if (!item.unlisted) {
+          navigationList.add(item.index);
+          return item.index;
+        }
+      }
+    }
+
+    if (!item.unlisted) {
+      navigationList.add(item);
+      return item;
+    }
+
+    return undefined;
+  };
+
+  navigationTree.items = navigationTree.items.map(walkTree).filter(Boolean) as NavigationElementResolved[];
+
+  return { navigationTree, navigationList };
 }
 
 async function getEntryWithFilepath(filePath: string) {
