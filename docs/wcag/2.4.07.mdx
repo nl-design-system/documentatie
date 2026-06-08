@@ -8,7 +8,7 @@ description: Zorg dat het goed zichtbaar is welk element de toetsenbordfocus hee
 slug: 2.4.7
 keywords:
   - WCAG
-  - Niveau AA
+  - AA
   - bedienbaar
   - navigeerbaar
   - operable
@@ -24,16 +24,16 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import { Guideline } from "@site/src/components/Guideline";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.4.7-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
   {"WCAG-succescriterium 2.4.7 Focus zichtbaar"}
 </WcagHeadingGroup>
+
+## Uitleg
 
 <Summary />
 
@@ -310,7 +310,7 @@ Een script roept `blur()` aan op elementen die focus ontvangen, of zet de `outli
     ```
 </Guideline>
 
-Als je dit soort code tegenkomt, zoek dan eerst uit waarom het is toegevoegd. Vaak is het een poging om een visueel probleem op te lossen, zoals een ongewenste omlijning bij muisklikken. De oplossing is dan niet om de code zonder meer te verwijderen, maar om het onderliggende probleem anders op te lossen — bijvoorbeeld met `:focus-visible` in plaats van `outline: none` via JavaScript.
+Als je dit soort code tegenkomt, zoek dan eerst uit waarom het is toegevoegd. Vaak is het een poging om een visueel probleem op te lossen, zoals een ongewenste omlijning bij muisklikken. De oplossing is dan niet om de code zonder meer te verwijderen, maar om het onderliggende probleem anders op te lossen, bijvoorbeeld met `:focus-visible` in plaats van `outline: none` via JavaScript.
 
 **Wie kan dit oplossen:** een developer onderzoekt waarom `.blur()` of `outline = 'none'` is toegevoegd en vervangt het door een CSS-oplossing met `:focus-visible`.
 
@@ -343,7 +343,7 @@ De focusindicator bestaat alleen uit een kleurverandering, zoals tekst die blauw
 
 ## Hoe te testen
 
-De beste manier om te weten of de focusindicator goed werkt, is door te testen met mensen die dagelijks het toetsenbord gebruiken om websites te bedienen. Zij merken problemen op die je zelf over het hoofd ziet. Denk aan mensen met een motorische beperking, screenreadergebruikers en mensen die de voorkeur geven aan het toetsenbord.
+De beste manier om te weten of de focusindicator goed werkt, is door te testen met mensen die dagelijks het toetsenbord gebruiken om websites te bedienen. Zij merken problemen op die je zelf niet opmerkt. Bijvoorbeeld mensen met een motorische beperking, screenreadergebruikers en mensen die de voorkeur geven aan het toetsenbord.
 
 ### Voor iedereen
 
@@ -372,28 +372,28 @@ Als je met <kbd>Tab</kbd> door de pagina beweegt en bij elk onderdeel direct kun
 
 Als je toch met het toetsenbord door de pagina beweegt, kun je tegelijk een aantal gerelateerde succescriteria testen. Dat scheelt tijd en voorkomt dat je problemen onder het verkeerde criterium schaart:
 
-- [2.1.1 Toetsenbord](https://nldesignsystem.nl/wcag/2.1.1/): kun je elk interactief element bereiken en activeren met het toetsenbord?
-- [2.4.3 Focusvolgorde](https://nldesignsystem.nl/wcag/2.4.3/): springt de focus in een logische volgorde door de pagina?
-- [2.4.11 Focus niet bedekt](https://nldesignsystem.nl/wcag/2.4.11/): wordt het gefocuste element bedekt door een sticky header, footer of ander element?
-- [2.4.12 Focusweergave](https://nldesignsystem.nl/wcag/2.4.12/): is de focusindicator groot genoeg en heeft die voldoende contrast? (Dit gaat verder dan 2.4.7 en stelt eisen aan de minimale grootte en het contrast van de indicator zelf.)
-- [1.4.11 Contrast van niet-tekstuele content](https://nldesignsystem.nl/wcag/1.4.11/): heeft de focusindicator een contrast van minimaal 3:1 ten opzichte van de achtergrond?
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): kun je elk interactief element bereiken en activeren met het toetsenbord?
+- [2.4.3 Focusvolgorde](/wcag/2.4.3/): springt de focus in een logische volgorde door de pagina?
+- [2.4.11 Focus niet bedekt](/wcag/2.4.11/): wordt het gefocuste element bedekt door een sticky header, footer of ander element?
+- [2.4.12 Focusweergave](/wcag/2.4.12/): is de focusindicator groot genoeg en heeft die voldoende contrast? (Dit gaat verder dan 2.4.7 en stelt eisen aan de minimale grootte en het contrast van de indicator zelf.)
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): heeft de focusindicator een contrast van minimaal 3:1 ten opzichte van de achtergrond?
 
 ## Gerelateerde succescriteria
 
-- [2.1.1 Toetsenbord](https://nldesignsystem.nl/wcag/2.1.1/): alle interactieve elementen zijn bereikbaar met het toetsenbord. Een zichtbare focusindicator helpt alleen als elementen ook daadwerkelijk focus kunnen ontvangen.
-- [2.4.3 Focusvolgorde](https://nldesignsystem.nl/wcag/2.4.3/): de volgorde waarin elementen focus krijgen is logisch. Lees hier meer als de focus in een onverwachte volgorde door de pagina springt.
-- [2.4.11 Focusweergave](https://nldesignsystem.nl/wcag/2.4.11/): aanvullende eisen aan de focusindicator in WCAG 2.2, zoals minimale grootte en contrast. Lees hier meer als je een eigen focusindicator ontwerpt.
-- [1.4.11 Contrast van niet-tekstuele content](https://nldesignsystem.nl/wcag/1.4.11/): de focusindicator is niet-tekstuele content en heeft een contrast van minimaal 3:1 nodig ten opzichte van de achtergrond.
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): alle interactieve elementen zijn bereikbaar met het toetsenbord. Een zichtbare focusindicator helpt alleen als elementen ook daadwerkelijk focus kunnen ontvangen.
+- [2.4.3 Focusvolgorde](/wcag/2.4.3/): de volgorde waarin elementen focus krijgen is logisch. Lees hier meer als de focus in een onverwachte volgorde door de pagina springt.
+- [2.4.11 Focus niet bedekt](/wcag/2.4.11/): aanvullende eisen aan de focusindicator in WCAG 2.2, zoals minimale grootte en contrast. Lees hier meer als je een eigen focusindicator ontwerpt.
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): de focusindicator is niet-tekstuele content en heeft een contrast van minimaal 3:1 nodig ten opzichte van de achtergrond.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 2.4.7 Focus zichtbaar](https://www.w3.org/Translations/WCAG22-nl/#focus-zichtbaar) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 2.4.7: Focus Visible](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [A guide to designing accessible, WCAG-conformant focus indicators](https://www.sarasoueidan.com/blog/focus-indicators/) — uitgebreide gids over het ontwerpen van focusindicatoren die aan WCAG voldoen (Sara Soueidan, Engels).
-- [How to activate keyboard navigation on macOS](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/) — hoe je in Safari en macOS toetsenbordnavigatie inschakelt, nodig om focusindicatoren te kunnen testen (The A11Y Collective, Engels).
-- [Keyboard-only accessibility testing](https://liptrot.org/posts/keyboard-only-accessibility-testing/) — praktische gids voor het testen met alleen een toetsenbord, inclusief Safari-instellingen (Adam Liptrot, Engels).
-- [Setting up your Mac for accessibility testing](https://accessibility.dxw.com/development/setting-up-your-mac-for-accessibility-testing/) — complete setup-gids om macOS klaar te maken voor toegankelijkheidstesten (dxw, Engels).
-- [Enabling Keyboard Accessibility on a Mac](https://dequeuniversity.com/mac/keyboard-access-mac) — stapsgewijze uitleg van de macOS-instellingen voor toetsenbordtoegankelijkheid (Deque University, Engels).
+- [WCAG 2.2: Succescriterium 2.4.7 Focus zichtbaar](https://www.w3.org/Translations/WCAG22-nl/#focus-zichtbaar): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 2.4.7: Focus Visible</span>](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">A guide to designing accessible, WCAG-conformant focus indicators</span>](https://www.sarasoueidan.com/blog/focus-indicators/): uitgebreide gids over het ontwerpen van focusindicatoren die aan WCAG voldoen (Sara Soueidan, Engels).
+- [<span lang="en">How to activate keyboard navigation on macOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/): hoe je in Safari en macOS toetsenbordnavigatie inschakelt, nodig om focusindicatoren te kunnen testen (The A11Y Collective, Engels).
+- [<span lang="en">Keyboard-only accessibility testing</span>](https://liptrot.org/posts/keyboard-only-accessibility-testing/): praktische gids voor het testen met alleen een toetsenbord, inclusief Safari-instellingen (Adam Liptrot, Engels).
+- [<span lang="en">Setting up your Mac for accessibility testing</span>](https://accessibility.dxw.com/development/setting-up-your-mac-for-accessibility-testing/): complete setup-gids om macOS klaar te maken voor toegankelijkheidstesten (dxw, Engels).
+- [<span lang="en">Enabling Keyboard Accessibility on a Mac</span>](https://dequeuniversity.com/mac/keyboard-access-mac): stapsgewijze uitleg van de macOS-instellingen voor toetsenbordtoegankelijkheid (Deque University, Engels).
 
 ## Gerelateerde NL Design System-richtlijn
 
@@ -409,12 +409,6 @@ Formulieren: [Maak de toetsenbordfocus goed zichtbaar](/richtlijnen/formulieren/
 - Nederlandse vertaling van het WCAG-succescriterium: [2.4.7 Focus zichtbaar](https://www.w3.org/Translations/WCAG22-nl/#focus-visible).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.7 Focus Visible</span>](https://www.w3.org/WAI/WCAG22/quickref/#focus-visible).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.7 Focus Visible</span>](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
