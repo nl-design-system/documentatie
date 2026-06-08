@@ -631,6 +631,10 @@
     {
       "name": "Rich Text Content",
       "slug": "rich-text-content"
+    },
+    {
+      "name": "Pull Quote",
+      "slug": "pull-quote"
     }
   ],
   "Heading Group": [
@@ -1171,6 +1175,12 @@
     {
       "name": "Rich Text Content",
       "slug": "rich-text-content"
+    }
+  ],
+  "Pull Quote": [
+    {
+      "name": "Blockquote",
+      "slug": "blockquote"
     }
   ]
 }
