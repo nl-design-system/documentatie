@@ -1,55 +1,55 @@
-.core-team {
+.ma-core-team {
   align-items: baseline;
   align-items: center;
   display: grid;
   gap: 8px;
   grid-auto-flow: column;
+  inline-size: 100%;
   margin-block-start: 30px;
-  max-height: 200px;
-  width: 100%;
+  max-block-size: 200px;
 }
 
-.core-team__card {
-  --cardgroup-card-box-shadow: none;
-  --cardgroup-card-border-width: 1px;
-  --cardgroup-card-large-padding-block-start: 0;
-  --cardgroup-card-large-padding-block-end: 0;
+.ma-core-team__card {
+  --ma-cardgroup-card-box-shadow: none;
+  --ma-cardgroup-card-border-width: 1px;
+  --ma-cardgroup-card-large-padding-block-start: 0;
+  --ma-cardgroup-card-large-padding-block-end: 0;
 }
 
-.core-team__content {
+.ma-core-team__content {
   padding-block-end: 36px;
   padding-block-start: 24px;
   padding-inline-end: 24px;
   padding-inline-start: 24px;
 }
 
-.core-team__heading {
+.ma-core-team__heading {
   padding-block-end: 24px;
 }
 
-.core-team__heading-subtitle {
+.ma-core-team__heading-subtitle {
   font-size: 20px;
   padding-block-start: 8px;
 }
-.core-team__description {
+.ma-core-team__description {
   padding-block-end: 24px;
 }
 
-.core-team__illustration {
-  --card-illustration-background-color: var(--nlds-document-inverse-background-color);
+.ma-core-team__illustration {
+  --ma-card-illustration-background-color: var(--nlds-document-inverse-background-color);
 
   align-items: flex-end;
   display: flex;
 }
 
-.core-team__avatar {
-  height: 150px;
+.ma-core-team__avatar {
+  block-size: 150px;
   padding-block-start: 24px;
   padding-inline: 8px;
 }
 
 @media (width <= 768px) {
-  .core-team__card {
-    --cardgroup-card-max-width: auto;
+  .ma-core-team__card {
+    --ma-cardgroup-card-max-width: auto;
   }
 }

@@ -1,0 +1,77 @@
+name: Vercel deployment failure logs
+
+on:
+  deployment_status:
+
+permissions: {}
+
+jobs:
+  fetch-vercel-deployment-logs:
+    if: >-
+      (github.event.deployment_status.state == 'failure' ||
+      github.event.deployment_status.state == 'error') &&
+      github.event.deployment.creator.login == 'vercel[bot]'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: vercel-deployment-logs-${{ github.event.deployment_status.id }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Resolve Vercel deployment URL
+        id: vercel
+        shell: bash
+        env:
+          LOG_URL: ${{ github.event.deployment_status.log_url }}
+        run: |
+          if [[ -z "${LOG_URL}" ]]; then
+            echo "::error::deployment_status.log_url is empty; cannot resolve Vercel deployment URL"
+            exit 1
+          fi
+
+          DEPLOYMENT_URL="${LOG_URL##*/}"
+          DEPLOYMENT_URL="${DEPLOYMENT_URL%%\?*}"
+
+          if [[ -z "${DEPLOYMENT_URL}" ]]; then
+            echo "::error::Could not parse Vercel deployment URL from log_url: ${LOG_URL}"
+            exit 1
+          fi
+
+          echo "deployment_url=${DEPLOYMENT_URL}" >> "${GITHUB_OUTPUT}"
+          echo "Resolved Vercel deployment URL: ${DEPLOYMENT_URL}"
+
+      - name: Fetch Vercel deployment logs
+        id: fetch_logs
+        shell: bash
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          LOG_BASENAME="vercel-deployment-logs-${{ steps.vercel.outputs.deployment_url }}"
+          FILENAME="${LOG_BASENAME//.vercel.app/}.json"
+          echo "filename=${FILENAME}" >> "${GITHUB_OUTPUT}"
+          curl --fail --show-error --silent \
+            --header "Authorization: Bearer ${VERCEL_TOKEN}" \
+            --header "Accept: application/json" \
+            "https://api.vercel.com/v3/deployments/${{ steps.vercel.outputs.deployment_url }}/events?follow=0&limit=-1" \
+            --output "${FILENAME}"
+
+      - name: Convert Vercel deployment logs to text
+        id: convert_logs
+        shell: bash
+        run: |
+          JSON_FILENAME="${{ steps.fetch_logs.outputs.filename }}"
+          FILENAME="${JSON_FILENAME%.json}.txt"
+          echo "filename=${FILENAME}" >> "${GITHUB_OUTPUT}"
+          jq -r '
+            .[]
+            | select((.text // "") != "")
+            | "[\((.created / 1000 | strftime("%Y-%m-%d %H:%M:%S")))] [\(.type // "log")] \(.text)"
+          ' "${JSON_FILENAME}" > "${FILENAME}"
+
+      - name: Upload Vercel deployment logs
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: vercel-deployment-logs-${{ steps.vercel.outputs.deployment_url }}
+          path: |
+            ${{ steps.fetch_logs.outputs.filename }}
+            ${{ steps.convert_logs.outputs.filename }}
+          if-no-files-found: error

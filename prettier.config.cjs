@@ -23,5 +23,12 @@ module.exports = {
         singleQuote: false,
       },
     },
+    {
+      files: '*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
   ],
+  plugins: ['prettier-plugin-astro'],
 };

@@ -13,6 +13,7 @@
  *  Heading level CriteriaListItem is now hardcoded as an h4, should be a variable.
  */
 
+import type { PropsWithChildren, ReactElement } from 'react';
 import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react/dist/css-module';
 import { successCriteriaMap } from './wcag22';
 import { AccordionProvider } from '@utrecht/component-library-react';
@@ -43,7 +44,7 @@ export interface CriteriaListItemProps {
 export interface CriteriaListProps {
   headingLevel: HeadingProps['level'];
   testCategory: string;
-  items: CriteriaListItemProps[];
+  children: ReactElement<CriteriaListItemProps>[];
 }
 
 /**
@@ -52,34 +53,40 @@ export interface CriteriaListProps {
  * sc and status are optional.
  *
  */
-export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 4 }: CriteriaListItemProps) => {
+export const CriteriaListItem = ({
+  title,
+  sc,
+  status,
+  children,
+  headingLevel = 4,
+}: PropsWithChildren<CriteriaListItemProps>) => {
   const data = successCriteriaMap.get(sc);
   const scTitle = data ? `${sc} ${data.nl?.title}` : sc;
 
   return (
-    <div className="component-criteria-section">
-      <Heading appearance="utrecht-heading-4" level={headingLevel} className="component-criteria-section__heading">
+    <div className="ma-component-criteria-section">
+      <Heading appearance="utrecht-heading-4" level={headingLevel} className="ma-component-criteria-section__heading">
         {title}
       </Heading>
       {(sc || status) && (
-        <dl className="component-criteria-section__dl">
+        <dl className="ma-component-criteria-section__dl">
           {sc && (
             <>
-              <dt className="component-criteria-section__dt">WCAG</dt>
-              <dd className="component-criteria-section__dd">
+              <dt className="ma-component-criteria-section__dt">WCAG</dt>
+              <dd className="ma-component-criteria-section__dd">
                 <Link href={`/wcag/${sc}/`}>{scTitle}</Link>
               </dd>
             </>
           )}
           {status && (
             <>
-              <dt className="component-criteria-section__dt">Status</dt>
-              <dd className="component-criteria-section__dl">{status}</dd>
+              <dt className="ma-component-criteria-section__dt">Status</dt>
+              <dd className="ma-component-criteria-section__dl">{status}</dd>
             </>
           )}
         </dl>
       )}
-      {component}
+      {children}
     </div>
   );
 };
@@ -88,7 +95,7 @@ export const CriteriaListItem = ({ title, sc, status, component, headingLevel = 
  * CriteriaList renders the details, summary for the testCategory.
  *
  */
-export const CriteriaList = ({ testCategory, items }: CriteriaListProps) => (
+export const CriteriaList = ({ testCategory, children }: CriteriaListProps) => (
   <AccordionProvider
     sections={[
       {
@@ -98,7 +105,7 @@ export const CriteriaList = ({ testCategory, items }: CriteriaListProps) => (
         // TODO: Make Pull Request for Utrecht Accordion to allow `ReactNode`
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         label: (<span>{testCategory}</span>) as any,
-        body: items.map((item, index) => <CriteriaListItem key={index} {...item} />),
+        body: children,
       },
     ]}
   />

@@ -36,6 +36,8 @@ Redirect 301 "/handboek/leverancier/leverancier-sessie-maart-2023" "/handboek/le
 Redirect 301 "/non-modal-dialog" "/dialog"
 Redirect 301 "/onderzoek" "/voorbeelden/onderzoek"
 Redirect 301 "/pagination" "/page-number-navigation"
+Redirect 301 "/project/global-design-system/" "/community/global-design-system/"
+Redirect 301 "/project/links/" "/community/design-systems/"
 Redirect 301 "/project/over-nlds" "/project/over-nl-design-system"
 Redirect 301 "/project/wie-doet-mee" "/community/wie-doet-mee"
 Redirect 301 "/richtlijnen/formulieren/overzicht" "/richtlijnen/formulieren"
@@ -55,8 +57,13 @@ Redirect 301 "/voorbeelden/templates" "/voorbeelden/patronen-en-templates"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/overzicht/" "/community/community-sprints/mijn-services-community/overzicht/"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/" "/community/community-sprints/mijn-services-community/"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/aanmelden/" "/community/community-sprints/mijn-services-community/aanmelden/"
-Redirect 301 "/handboek/developer/aan-de-slag/" "/handboek/developer/introductie/"
-Redirect 301 "/handboek/developer/samenwerken-aan-componenten/" "/handboek/componenten-kiezen/"
+Redirect 301 "/handboek/developer/samenwerken-aan-componenten/" "/handboek/componenten-vinden/"
+Redirect 301 "/handboek/componenten-kiezen/" "/handboek/componenten-vinden/"
+Redirect 301 "/handboek/developer/zonder-front-end-framework/" "/handboek/developer/aan-de-slag/prototypes/zonder-front-end-framework/"
+Redirect 301 "/handboek/developer/herbruikbare-css/" "/handboek/developer/css-conventie/"
+Redirect 301 "/handboek/developer/changesets/" "/handboek/developer/changeset-conventie/"
+Redirect 301 "/handboek/developer/changes/" "/handboek/developer/semver-conventie/"
+Redirect 301 "/handboek/developer/deprecation/" "/handboek/developer/deprecation-conventie/"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
@@ -169,6 +176,16 @@ Redirect 301 "/belangenorganisatie" "/community/belangenorganisaties/aanmelden/"
 
 # Convenience redirects for use in code
 Redirect 301 "/lint-staged" "/linting-en-code-formatting#lint-staged"
+Redirect 301 "/codeowners" "/handboek/developer/github-teams-en-code-owners/#codeowners"
+
+# Convenience redirects because pages have been deleted,  but we have some idea what a helpfull alternative could be
+Redirect 301 "/handboek/developer/architectuur/" "/handboek/developer/introductie/"
+Redirect 301 "/handboek/developer/meewerken-als-developer/" "/handboek/developer/introductie/"
+Redirect 301 "/handboek/developer/component-inzetten/" "/handboek/developer/introductie/"
+Redirect 301 "/handboek/developer/component-uitbreiden/" "/handboek/developer/introductie/"
+Redirect 301 "/handboek/developer/componenten-maken/" "/handboek/developer/introductie/"
+Redirect 301 "/handboek/developer/bijdragen/" "/handboek/developer/introductie/"
+Redirect 301 "/handboek/developer/component-testen/" "/handboek/developer/introductie/"
 
 # Temporary redirects until we have multiple factsheets and turn /factsheets into an overview page
 RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
@@ -179,6 +196,7 @@ Redirect 307 "/form-field-radio-option" "/componenten"
 Redirect 307 "/form-field-checkbox-option" "/componenten"
 Redirect 307 "/tooltip" "/componenten"
 
+
 Redirect 307 "/miro/" "https://miro.com/app/board/uXjVLTpHyN8=/"
 Redirect 307 "/miro" "https://miro.com/app/board/uXjVLTpHyN8=/"
 
@@ -187,5 +205,11 @@ Redirect 307 "/events/heartbeat/deelnemen" https://teams.microsoft.com/l/meetup-
 
 Redirect 307 "/enquete-2025/" "https://forms.office.com/Pages/ResponsePage.aspx?id=oj0da1E3PU6zyeZ4TIutcO-qDj4A3l9NqEOUBB9i7MlUNlg5Szk4T1UxWFo0RUJQNTM3T0lBVU1ZUS4u"
 Redirect 307 "/enquete-2025" "https://forms.office.com/Pages/ResponsePage.aspx?id=oj0da1E3PU6zyeZ4TIutcO-qDj4A3l9NqEOUBB9i7MlUNlg5Szk4T1UxWFo0RUJQNTM3T0lBVU1ZUS4u"
+
+Redirect 307 "/theme-wizard/" "https://theme-wizard.nl-design-system-community.nl"
+Redirect 307 "/theme-wizard" "https://theme-wizard.nl-design-system-community.nl"
+
+Redirect 307 "/project/expertteam-digitale-toegankelijkheid/meedenken/" "https://laposta.nl/f/ssrxdc7irqdj"
+Redirect 307 "/project/expertteam-digitale-toegankelijkheid/meedenken" "https://laposta.nl/f/ssrxdc7irqdj"
 
 ErrorDocument 404 /404.html
