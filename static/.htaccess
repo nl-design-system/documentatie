@@ -26,6 +26,7 @@ Redirect 301 "/handboek/component-bijdragen/community-stappenplan/voor-organisat
 Redirect 301 "/handboek/component-bijdragen/definition-of-done" "/handboek/estafettemodel/componenten/definition-of-done"
 Redirect 301 "/handboek/component-bijdragen/hall-of-fame-stappenplan" "/handboek/estafettemodel/componenten/hall-of-fame-stappenplan"
 Redirect 301 "/handboek/component-bijdragen/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted-stappenplan"
+Redirect 301 "/handboek/estafettemodel/componenten/help-wanted-stappenplan/" "/handboek/estafettemodel/componenten/help-wanted/"
 Redirect 301 "/handboek/componenten-gebruiken" "/handboek/componenten-vinden"
 Redirect 301 "/handboek/estafettemodel/componenten/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted"
 Redirect 301 "/handboek/estafettemodel/componenten/hall-of-fame-stappenplan" "/handboek/estafettemodel/componenten/hall-of-fame"
