@@ -30,13 +30,14 @@ jobs:
 
           DEPLOYMENT_URL="${LOG_URL##*/}"
           DEPLOYMENT_URL="${DEPLOYMENT_URL%%\?*}"
-
           if [[ -z "${DEPLOYMENT_URL}" ]]; then
             echo "::error::Could not parse Vercel deployment URL from log_url: ${LOG_URL}"
             exit 1
           fi
 
+          DEPLOYMENT_NAME="${DEPLOYMENT_URL//.vercel.app/}"
           echo "deployment_url=${DEPLOYMENT_URL}" >> "${GITHUB_OUTPUT}"
+          echo "deployment_name=${DEPLOYMENT_NAME}" >> "${GITHUB_OUTPUT}"
           echo "Resolved Vercel deployment URL: ${DEPLOYMENT_URL}"
 
       - name: Fetch Vercel deployment logs
@@ -45,8 +46,7 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          LOG_BASENAME="vercel-deployment-logs-${{ steps.vercel.outputs.deployment_url }}"
-          FILENAME="${LOG_BASENAME//.vercel.app/}.json"
+          FILENAME="vercel-deployment-logs-${{ steps.vercel.outputs.deployment_name }}.json"
           echo "filename=${FILENAME}" >> "${GITHUB_OUTPUT}"
           curl --fail --show-error --silent \
             --header "Authorization: Bearer ${VERCEL_TOKEN}" \
@@ -70,7 +70,7 @@ jobs:
       - name: Upload Vercel deployment logs
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: vercel-deployment-logs-${{ steps.vercel.outputs.deployment_url }}
+          name: vercel-deployment-logs-${{ steps.vercel.outputs.deployment_name }}
           path: |
             ${{ steps.fetch_logs.outputs.filename }}
             ${{ steps.convert_logs.outputs.filename }}
