@@ -18,7 +18,7 @@ Redirect 301 "/events/design-systems-week-2023/overzicht" "/events/design-system
 Redirect 301 "/footer/colofon" "/colofon"
 Redirect 301 "/footer/toegankelijkheidsverklaring" "/toegankelijkheidsverklaring"
 Redirect 301 "/handboek/candidate-stappenplan" "/handboek/estafettemodel/componenten/candidate-stappenplan"
-Redirect 301 "/handboek/community-stappenplan" "/handboek/estafettemodel/componenten/community-stappenplan"
+Redirect 301 "/handboek/community-stappenplan" "/handboek/estafettemodel/componenten/community"
 Redirect 301 "/handboek/component-bijdragen/candidate-stappenplan" "/handboek/estafettemodel/componenten/candidate-stappenplan"
 Redirect 301 "/handboek/component-bijdragen/community-stappenplan" "/handboek/estafettemodel/componenten/community-stappenplan"
 Redirect 301 "/handboek/component-bijdragen/community-stappenplan/voor-kernteam" "/handboek/estafettemodel/componenten/community-stappenplan/voor-kernteam"

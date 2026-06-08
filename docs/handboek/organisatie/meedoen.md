@@ -76,7 +76,7 @@ Wanneer een component uit de community niet helemaal voldoet aan de eisen, is ge
 Nieuwe componenten zijn opgeleverd volgens de aanpak van NL Design System. Dat betekent:
 
 - De component is aangemaakt als GitHub Discussion voor Help Wanted.
-- De [eerste stappen voor “Community component”](https://nldesignsystem.nl/handboek/community-stappenplan) zijn gevolgd.
+- De [eerste stappen voor “Community component”](https://nldesignsystem.nl/handboek/component-bijdragen/community-stappenplan) zijn gevolgd.
 - De component is gebouwd volgens de NL Design System architectuur.
 - De component is beschikbaar gemaakt in de thema Storybook website van NL Design System.
 
