@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import OverviewLayout from '@layouts/overview.astro';
+import { isNavigationGroup, isNavigationItem } from '../navigation';
+import { getNavigationElement } from '../navigation/get-navigation-element.ts';
+import { OverviewPage } from '@components/overview-page/overview-page';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('overviewPages');
+
+  return pages.map((page) => ({
+    params: { overview: page.id },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const navigationElement = await getNavigationElement(Astro.url.pathname);
+
+let pages = isNavigationGroup(navigationElement) && navigationElement.items ? navigationElement.items : [];
+pages = isNavigationItem(navigationElement) ? navigationElement.parent?.items || pages : pages;
+
+pages = await Promise.all(pages);
+---
+
+<OverviewLayout
+  title={page.data.title}
+  titleSm={page.data.title_sm}
+  description={page.data.description}
+  lang={page.data.lang}
+  seoImage={page.data.image}
+  seoImageAlt={page.data.image_alt}
+  keywords={page.data.keywords}
+  index={page.data.unlisted !== true}
+>
+  <h1>{page?.data?.title}</h1>
+  <p>{page?.data?.description}</p>
+
+  <OverviewPage pages={pages} />
+</OverviewLayout>

@@ -25,13 +25,16 @@ export const CardIllustration = ({
   className,
   ...props
 }: PropsWithChildren<CardIllustrationProps>) => (
-  <div className={clsx('card__illustration', background && `card__illustration--${background}`, className)} {...props}>
+  <div
+    className={clsx('ma-card__illustration', background && `ma-card__illustration--${background}`, className)}
+    {...props}
+  >
     {children}
   </div>
 );
 
 export const CardContent = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => (
-  <div className="card__content" {...props} />
+  <div className="ma-card__content" {...props} />
 );
 
 interface CardProps {
@@ -59,9 +62,9 @@ export const Card = ({
   const card = (
     <Wrapper
       className={clsx(
-        'cardgroup__card',
-        background && 'cardgroup__card--light-purple',
-        `cardgroup__card--${appearance}`,
+        'ma-cardgroup__card',
+        background && 'ma-cardgroup__card--light-purple',
+        `ma-cardgroup__card--${appearance}`,
         className,
       )}
     >
@@ -70,7 +73,7 @@ export const Card = ({
   );
 
   return href ? (
-    <Link href={href} boxContent className="cardgroup__link">
+    <Link href={href} boxContent className="ma-cardgroup__link">
       {card}
     </Link>
   ) : (
@@ -83,5 +86,5 @@ interface CardGroupProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const CardGroup = ({ appearance = 'medium', children, className }: PropsWithChildren<CardGroupProps>) => (
-  <div className={clsx('cardgroup', `cardgroup--${appearance}`, className)}>{children}</div>
+  <div className={clsx('ma-cardgroup', `ma-cardgroup--${appearance}`, className)}>{children}</div>
 );

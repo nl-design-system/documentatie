@@ -1,0 +1,22 @@
+---
+import { OverviewPage } from '@components/overview-page/overview-page.tsx';
+import { DocCardList } from '@components/doc-card-list/doc-card-list';
+import ComponentOverview from '@components/docusaurus-mocks/ComponentOverview.astro';
+import ComponentAnatomy from '@components/docusaurus-mocks/ComponentAnatomy.astro';
+import CriteriaList from '@components/docusaurus-mocks/CriteriaList.astro';
+import CriteriaListItem from '@components/docusaurus-mocks/CriteriaListItem.astro';
+import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
+
+export const MDXComponents = async ({ navigationItems } = {}) => {
+  return {
+    Checklist,
+    ChecklistItem,
+    ComponentOverview,
+    ComponentAnatomy,
+    CriteriaList,
+    CriteriaListItem,
+    OverviewPage: (props) => OverviewPage({ ...props, pages: navigationItems || [] }),
+    DocCardList,
+  };
+};
+---

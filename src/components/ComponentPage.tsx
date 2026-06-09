@@ -13,7 +13,9 @@ import { Card, CardContent, CardGroup } from './CardGroup';
 import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
-import { TaskList, TaskListItem } from './TaskList';
+import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
+import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
+import '@nl-design-system-candidate/heading-css/heading.css';
 import {
   COMPONENT_STATES,
   getProjectFrameworks,
@@ -23,6 +25,8 @@ import {
   type ComponentPageSectionProps,
 } from '../utils';
 import './ComponentPage.css';
+import relationMap from './relations.json';
+import type { HeadingLevel } from '@nl-design-system-candidate/heading-react';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
@@ -33,7 +37,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
     component && (
       <AccordionProvider
         sections={relayOrderedProjects.map((project) => ({
-          className: clsx('definition-of-done', project && `definition-of-done--${toKebabCase(project.title)}`),
+          className: clsx('ma-definition-of-done', project && `ma-definition-of-done--${toKebabCase(project.title)}`),
           headingLevel: headingLevel,
           expanded: false,
           label: project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : '',
@@ -42,9 +46,9 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
               <TaskList>
                 {project.tasks.map(({ checked, name, id }) => (
                   <TaskListItem
-                    headingLevel={headingLevel + 1}
+                    headingLevel={(headingLevel + 1) as HeadingLevel}
                     checked={checked}
-                    title={name}
+                    heading={name}
                     key={id}
                     description={getRelayBoardDescription(id)}
                   />
@@ -66,7 +70,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
 export const Implementations = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const implementations = component && component.projects.filter((project) => !relayProjectIds.includes(project.id));
   return component && implementations.length ? (
-    <CardGroup appearance="large" className="implementation-card-group">
+    <CardGroup appearance="large" className="ma-implementation-card-group">
       {implementations
         .sort((a, b) => {
           const aTodo = a.progress.max - a.progress.value;
@@ -89,7 +93,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
           );
 
           return (
-            <Card key={project.title} className="implementation-card">
+            <Card key={project.title} className="ma-implementation-card">
               <CardContent>
                 <Heading level={headingLevel}>{project.title.replace(/^Community/i, '')}</Heading>
                 <Paragraph>
@@ -155,7 +159,9 @@ export const HelpImproveComponent = ({ component, headingLevel }: ComponentPageS
   return (
     component && (
       <>
-        <Heading level={headingLevel}>Help om deze component te verbeteren</Heading>
+        <Heading id="help-component-verbeteren" level={headingLevel}>
+          Help om deze component te verbeteren
+        </Heading>
         <Paragraph>
           We vinden het belangrijk dat de component {component.title} goed te gebruiken is door iedereen. Help je mee?
         </Paragraph>
@@ -192,6 +198,11 @@ interface IntroductionProps extends ComponentPageSectionProps {
 export const Introduction = ({ component, headingLevel, description }: IntroductionProps) => {
   const relayStep = component && COMPONENT_STATES[component.relayStep];
 
+  // This component should not be rendered with Astro since the Astro layout
+  // renders the `h1` in the template. That allows us to inject frontmatter
+  // data between the page title and the rest of the document's markdown
+  if (globalThis.isAstro) return null;
+
   return (
     component && (
       <>
@@ -200,6 +211,27 @@ export const Introduction = ({ component, headingLevel, description }: Introduct
         </InlineHeadingGroup>
         <Paragraph lead>{description}</Paragraph>
       </>
+    )
+  );
+};
+
+export const Related = ({ component }: ComponentPageSectionProps) => {
+  const relatedComponents = (component && relationMap[component.title]) || [];
+  return (
+    relatedComponents.length > 0 && (
+      <Paragraph>
+        Gerelateerde componenten:{' '}
+        {relatedComponents.map((relatedComponent, index) => (
+          <>
+            {relatedComponent.slug ? (
+              <Link href={`/${relatedComponent.slug}/`}>{relatedComponent.name}</Link>
+            ) : (
+              relatedComponent.name
+            )}
+            {index < relatedComponents.length - 1 ? ', ' : '.'}
+          </>
+        ))}
+      </Paragraph>
     )
   );
 };

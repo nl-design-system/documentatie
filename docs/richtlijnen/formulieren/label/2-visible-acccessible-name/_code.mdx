@@ -9,8 +9,12 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <label htmlFor="hond">Hoe heet je hond</label>
-        <input type="text" id="hond" name="hond" />
+        <p>
+          <label htmlFor="hond">Hoe heet je hond</label>
+        </p>
+        <p>
+          <input type="text" id="hond" name="hond" />
+        </p>
       </>
     )}
   </Canvas>
@@ -23,7 +27,14 @@ import { Guideline } from "@site/src/components/Guideline";
 >
   <Canvas language="html">
     {() => (
-      <input type="text" name="lievelingskleur" aria-label="Vul een kleur in" placeholder="Wat is je lievelingskleur" />
+      <p>
+        <input
+          type="text"
+          name="lievelingskleur"
+          aria-label="Vul een kleur in"
+          placeholder="Wat is je lievelingskleur"
+        />
+      </p>
     )}
   </Canvas>
 </Guideline>
@@ -36,7 +47,7 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas language="html">
     {() => (
       <>
-        <div>Zoek</div>
+        <p>Zoek</p>
         <input type="search" name="trefwoord" aria-label="Trefwoord" />
       </>
     )}
