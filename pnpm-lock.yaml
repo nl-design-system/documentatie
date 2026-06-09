@@ -5,8 +5,8 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  form-data@>=4.0.0 <4.0.4: '>=4.0.4'
   '@isaacs/brace-expansion@<=5.0.0': '>=5.0.1'
+  form-data@>=4.0.0 <4.0.4: '>=4.0.4'
 
 patchedDependencies:
   '@rijkshuisstijl-community/card-react':
@@ -453,8 +453,8 @@ importers:
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.29.2)(react@18.3.1)
       '@nl-design-system-community/ma-design-tokens':
-        specifier: 2.5.0
-        version: 2.5.0
+        specifier: 5.2.0
+        version: 5.2.0
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
@@ -3569,6 +3569,9 @@ packages:
 
   '@nl-design-system-community/ma-design-tokens@2.5.0':
     resolution: {integrity: sha512-3TYzzbo0C5br42SiS6jISScUL7u4hxgDvU2DZVBv6gJ40jBZPpXIgLI1T/JESQj79+nY2AddGm6l8xg2o2WLFA==}
+
+  '@nl-design-system-community/ma-design-tokens@5.2.0':
+    resolution: {integrity: sha512-QUtNjFjmWgIivCIiO6frPqZnImieO4K5TkQJmxhiFUFJPfJUId/zeFc56vHx5V1VMi7yPyLWTS1vlNGALPV0iQ==}
 
   '@nl-design-system-community/ma-task-list-css@0.0.3':
     resolution: {integrity: sha512-v87Cf65wWxtSSb4yhICFei/SppKJ79ozNaVov/4NGcbQ2U4eo8EFg3swP8GP83PM+QzC5AuUWQLjtK9D2hzXQA==}
@@ -15938,6 +15941,8 @@ snapshots:
       prosemirror-model: 1.25.4
 
   '@nl-design-system-community/ma-design-tokens@2.5.0': {}
+
+  '@nl-design-system-community/ma-design-tokens@5.2.0': {}
 
   '@nl-design-system-community/ma-task-list-css@0.0.3': {}
 
