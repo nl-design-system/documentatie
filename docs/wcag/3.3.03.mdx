@@ -4,11 +4,11 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.3.3 Foutsuggestie
 pagination_label: WCAG-succescriterium 3.3.3 Foutsuggestie
-description: Laat een gebruiker op een toegankelijke manier weten hoe een formulierveld goed in te vullen.
+description: Als je een fout maakt bij het invullen van een formulier, krijg je een concrete suggestie hoe je het veld goed kunt invullen. Zo weet je direct wat je moet doen om verder te gaan.
 slug: 3.3.3
 keywords:
   - WCAG
-  - Niveau AA
+  - AA
   - begrijpelijk
   - assistentie bij invoer
   - understandable
@@ -30,9 +30,7 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.3.3-summary.md";
 
@@ -40,9 +38,11 @@ import Summary from "./summaries/_3.3.3-summary.md";
   {"WCAG-succescriterium 3.3.3 Foutsuggestie"}
 </WcagHeadingGroup>
 
+## Uitleg
+
 <Summary />
 
-Een bezoeker die een formulier invult, kan een fout maken. Als duidelijk is wat het verwachte antwoord is, krijgt hij of zij een concrete suggestie bij de foutmelding. Vult iemand "32 januari" in als datum? Dan ziet de bezoeker niet alleen "Datum is niet geldig", maar ook een suggestie: "Bedoelde je 31 januari of 1 februari?"
+Een bezoeker die een formulier invult, kan een fout maken. Als duidelijk is wat het verwachte antwoord is, krijgt de bezoeker een concrete suggestie bij de foutmelding. Vult iemand "32 januari" in als datum? Dan ziet de bezoeker niet alleen "Datum is niet geldig", maar ook een suggestie: "Bedoelde je 31 januari of 1 februari?"
 
 ## Veelgemaakte fouten
 
@@ -154,7 +154,7 @@ Een datumveld accepteert alleen datums binnen een bepaald bereik, maar meldt nie
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer of contentbeheerder schrijft per veld een specifieke foutmelding die beschrijft wat er verwacht wordt.
+**Wie kan dit oplossen:** een contentbeheerder of developer schrijft per veld een specifieke foutmelding die beschrijft wat er verwacht wordt.
 
 ### Bij een nieuw wachtwoord wordt niet gemeld welke eis niet is gehaald
 
@@ -185,7 +185,7 @@ Bij een inlogveld geldt dit niet: daar mag je nooit melden dat juist het wachtwo
   ```
 </Guideline>
 
-Noem in de foutmelding niet welke tekens wél correct zijn — dat onthult informatie over het wachtwoord.
+Noem in de foutmelding niet welke tekens wél correct zijn, dat onthult informatie over het wachtwoord.
 
 **Wie kan dit oplossen:** een developer splitst de validatie op in afzonderlijke controles en toont per eis of die is gehaald.
 
@@ -193,7 +193,7 @@ Noem in de foutmelding niet welke tekens wél correct zijn — dat onthult infor
 
 ### Vermeld het verwachte formaat al bij het label of in de description
 
-Een foutmelding voorkomt geen fout — die meldt 'm pas. Een betere strategie: vertel bezoekers vóóraf wat je verwacht. Zet het verwachte formaat bij het label of in de [description bij het invoerveld](/richtlijnen/formulieren/descriptions). Dan hoeft de foutmelding dat niet meer te herhalen en maken minder bezoekers de fout. Zie ook de richtlijn over [foutmeldingen in formulieren](/richtlijnen/formulieren/foutmeldingen).
+Een foutmelding voorkomt geen fout, die meldt de fout pas. Een betere strategie: vertel bezoekers vooraf wat je verwacht. Zet het verwachte formaat bij het label of in de [description bij het invoerveld](/richtlijnen/formulieren/descriptions). Dan hoeft de foutmelding dat niet meer te herhalen en maken minder bezoekers de fout. Zie ook de richtlijn over [foutmeldingen in formulieren](/richtlijnen/formulieren/foutmeldingen).
 
 **Hoe te testen:** kijk per veld waar het verwachte formaat staat. Staat het bij het label of in de description, of leert de bezoeker het pas via de foutmelding?
 
@@ -222,7 +222,7 @@ Een foutmelding voorkomt geen fout — die meldt 'm pas. Een betere strategie: v
 
 ### Bied een alternatief aan bij een typefout in een zoekveld
 
-Een zoekveld heeft meestal geen formele validatie — een typefout levert geen foutmelding op, maar gewoon geen of de verkeerde resultaten. Je kunt bezoekers wel helpen door bij vermoedelijke typefouten een alternatief voor te stellen ("Bedoelde je …?") of suggesties te tonen tijdens het typen.
+Een zoekveld heeft meestal geen formele validatie: een typefout levert geen foutmelding op, maar gewoon geen of de verkeerde resultaten. Je kunt bezoekers wel helpen door bij vermoedelijke typefouten een alternatief voor te stellen ("Bedoelde je …?") of suggesties te tonen tijdens het typen.
 
 **Hoe te testen:** typ een zoekterm met een kleine typefout. Stelt het zoekveld een alternatief voor of toont het suggesties tijdens het typen?
 
@@ -238,7 +238,7 @@ Een zoekveld heeft meestal geen formele validatie — een typefout levert geen f
 
 ## Hoe te testen
 
-Foutsuggesties zijn niet automatisch te herkennen — dit succescriterium vereist altijd handmatig testen.
+Foutsuggesties zijn niet automatisch te herkennen, dit succescriterium vereist altijd handmatig testen.
 
 ### Voor iedereen
 
@@ -254,38 +254,29 @@ Foutsuggesties zijn niet automatisch te herkennen — dit succescriterium vereis
 
 ## Gerelateerde succescriteria
 
-- [3.3.1 Foutidentificatie](https://nldesignsystem.nl/wcag/3.3.1/): het formulier meldt welk veld fout is en wat er mis is. Foutsuggestie bouwt hierop voort door ook een oplossing aan te bieden.
-- [3.3.2 Labels of instructies](https://nldesignsystem.nl/wcag/3.3.2/): duidelijke labels en instructies bij invoervelden voorkomen fouten voordat ze ontstaan. Lees hier meer als je het verwachte formaat al bij het label wilt tonen.
-- [3.3.4 Foutpreventie](https://nldesignsystem.nl/wcag/3.3.4/): bij juridische of financiële transacties kan de bezoeker invoer controleren en corrigeren voordat deze definitief wordt verzonden.
+- [3.3.1 Foutidentificatie](/wcag/3.3.1/): het formulier meldt welk veld fout is en wat er mis is. Foutsuggestie bouwt hierop voort door ook een oplossing aan te bieden.
+- [3.3.2 Labels of instructies](/wcag/3.3.2/): duidelijke labels en instructies bij invoervelden voorkomen fouten voordat ze ontstaan. Lees hier meer als je het verwachte formaat al bij het label wilt tonen.
+- [3.3.4 Foutpreventie](/wcag/3.3.4/): bij juridische of financiële transacties kan de bezoeker invoer controleren en corrigeren voordat deze definitief wordt verzonden.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 3.3.3 Foutsuggestie](https://www.w3.org/Translations/WCAG22-nl/#foutsuggestie) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 3.3.3: Error Suggestion](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Accessible form validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/) — uitgebreide gids van Smashing Magazine over toegankelijke formuliervalidatie, inclusief patronen voor foutsuggesties (Engels).
+- [WCAG 2.2: Succescriterium 3.3.3 Foutsuggestie](https://www.w3.org/Translations/WCAG22-nl/#foutsuggestie): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 3.3.3: Error Suggestion</span>](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Accessible form validation</span>](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/): uitgebreide gids van Smashing Magazine over toegankelijke formuliervalidatie, inclusief patronen voor foutsuggesties (Engels).
+- [Toegankelijke foutmeldingen in formulieren](/blog/toegankelijke-foutmeldingen-formulieren), op het blog van het NL Design System.
+- [<span lang="en">Error-Message Guidelines</span>](https://www.nngroup.com/articles/error-message-guidelines/) van de Nielsen Norman Group.
+- [<span lang="en">Error Message</span>](https://design-system.service.gov.uk/components/error-message/) op GOV.UK.
+- [<span lang="en">Be clear and concise</span>](https://design-system.service.gov.uk/components/error-message/#be-clear-and-concise) op GOV.UK.
+- [<span lang="en">Wiki 3.3.3 Error Suggestion</span>](https://github.com/alphagov/wcag-primer/wiki/3.3.3) op GOV.UK.
+- Gebruikersonderzoek: [Contactformulier voor WMEBV](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/formulieren/vng-online-formulieren/).
+- Gebruikersonderzoek: [Onderzoek online meldingen](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen).
 
 ## Gerelateerde NL Design System-richtlijnen
 
 - Formulieren: [Foutmeldingen](/richtlijnen/formulieren/foutmeldingen).
 - Formulieren: [Descriptions](/richtlijnen/formulieren/descriptions).
 
-## Bronnen
-
-Op GOV.UK:
-
-- [<span lang="en">Error Message</span>](https://design-system.service.gov.uk/components/error-message/).
-- [<span lang="en">Be clear and concise</span>](https://design-system.service.gov.uk/components/error-message/#be-clear-and-concise).
-- [<span lang="en">Wiki 3.3.3 Error Suggestion</span>](https://github.com/alphagov/wcag-primer/wiki/3.3.3).
-
-Overige bronnen:
-
-- [Toegankelijke foutmeldingen in formulieren](/blog/toegankelijke-foutmeldingen-formulieren), op het blog van het NL Design System.
-- [<span lang="en">Error-Message Guidelines</span>](https://www.nngroup.com/articles/error-message-guidelines/) van de Nielsen Norman Group.
-
 ## Gebruikersonderzoek
-
-- [Contactformulier voor WMEBV](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/formulieren/vng-online-formulieren/).
-- [Onderzoek online meldingen](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/utrecht-online-meldingen).
 
 <CTAGebruikersonderzoek />
 
@@ -295,12 +286,6 @@ Overige bronnen:
 - Nederlandse vertaling van het WCAG-succescriterium: [3.3.3 Foutsuggestie](https://www.w3.org/Translations/WCAG22-nl/#error-suggestion).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.3.3 Error Suggestion</span>](https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.3.3 Error Suggestion</span>](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
