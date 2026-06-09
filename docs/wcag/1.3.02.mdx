@@ -4,11 +4,11 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.3.2 Betekenisvolle volgorde
 pagination_label: WCAG-succescriterium 1.3.2 Betekenisvolle volgorde
-description: Als het belangrijk is dat de inhoud van een pagina in een bepaalde volgorde wordt gelezen, moet hulpsoftware die volgorde ook kunnen volgen.
+description: Een screenreader leest de inhoud van een pagina voor in de volgorde waarin die in de HTML staat. Die volgorde moet overeenkomen met wat een ziende bezoeker op het scherm ziet.
 slug: 1.3.2
 keywords:
   - WCAG
-  - Niveau A
+  - A
   - waarneembaar
   - aanpasbaar
   - perceivable
@@ -30,15 +30,15 @@ import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.3.2-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
   {"WCAG-succescriterium 1.3.2 Betekenisvolle volgorde"}
 </WcagHeadingGroup>
+
+## Uitleg
 
 <Summary />
 
@@ -48,7 +48,7 @@ CSS kan elementen visueel verplaatsen zonder de HTML-volgorde te veranderen. Een
 
 ### Metadata staat boven de kop van een artikel
 
-Alle inhoud die onder een kop staat, hoort bij die kop. Bezoekers die een screenreader gebruiken, navigeren van kop naar kop om de structuur van een pagina te begrijpen. Staat informatie zoals een datum of categorie boven de kop in de HTML, dan lijkt die informatie bij het vorige artikel te horen.
+Alle inhoud die onder een kop staat, hoort bij die kop. Bezoekers die een screenreader gebruiken, gaan van kop naar kop om de structuur van een pagina te begrijpen. Staat informatie zoals een datum of categorie boven de kop in de HTML, dan lijkt die informatie bij het vorige artikel te horen.
 
 **Hoe te testen:** inspecteer de HTML-volgorde in de DevTools. Staat de kop bovenaan in elk artikel, gevolgd door metadata en inhoud?
 
@@ -80,7 +80,7 @@ Alle inhoud die onder een kop staat, hoort bij die kop. Bezoekers die een screen
 
 Een pagina met twee kolommen groepeert de afbeelding en de beschrijving per kolom. De HTML bevat niet de afbeelding en de beschrijving, maar eerst alle afbeeldingen en daarna alle beschrijvingen. Dan begrijpt een screenreadergebruiker niet welke beschrijving bij welke afbeelding hoort.
 
-**Hoe te testen:** schakel CSS uit in de browser (Firefox: View > Page Style > No Style). Staat de informatie die bij elkaar hoort ook bij elkaar in de HTML?
+**Hoe te testen:** schakel CSS uit in de browser (Firefox: Beeld > Paginastijl > Geen stijl). Staat de informatie die bij elkaar hoort ook bij elkaar in de HTML?
 
 <Guideline appearance="dont" title="Alle afbeeldingen eerst, dan alle beschrijvingen">
   ```html
@@ -144,7 +144,7 @@ Een screenreader leest hier: "Stap 2", "Stap 3", "Stap 1".
 
 Een tabel koppelt gegevens aan elkaar: een dag aan een openingstijd, een naam aan een functie. Een correcte `<table>` met `<tr>`, `<th>` en `<td>` behoudt die koppeling. Een tabel nagebouwd met `<div>`-elementen en CSS kan ertoe leiden dat een screenreader eerst alle dagen voorleest en daarna pas alle tijden.
 
-**Hoe te testen:** gebruik de <span lang="en">Web Developer</span>-extensie (tab Miscellaneous > Linearize Page) om de tabel te lineariseren. Klopt de koppeling tussen de gegevens nog?
+**Hoe te testen:** gebruik de <span lang="en">Web Developer</span>-extensie (tab <span lang="en">Miscellaneous</span> > <span lang="en">Linearize Page</span>) om de tabel te lineariseren. Klopt de koppeling tussen de gegevens nog?
 
 <Guideline appearance="do" title="Correcte tabel behoudt de koppeling tussen gegevens">
   ```html
@@ -199,13 +199,13 @@ De inhoud van een carrousel is belangrijk voor de bezoeker. Staan de vorige- en 
 
 SVG-elementen die tekst bevatten, worden voorgelezen in de volgorde waarin ze in de code staan. Dat kan betekenen: eerst de waarden van de X-as, dan de Y-as als losse getallen, en pas daarna de uitleg van de assen. Bied bij complexe grafieken een tekstueel alternatief aan, zoals een tabel met dezelfde data.
 
-**Hoe te testen:** navigeer met een screenreader door de grafiek. Is de volgorde begrijpelijk? Zo niet, controleer of er een alternatief zoals een tabel beschikbaar is.
+**Hoe te testen:** ga met een screenreader door de grafiek. Is de volgorde begrijpelijk? Zo niet, controleer of er een alternatief zoals een tabel beschikbaar is.
 
-**Wie kan dit oplossen:** een developer voegt een tekstueel alternatief toe, bijvoorbeeld een [tabel](https://nldesignsystem.nl/table/).
+**Wie kan dit oplossen:** een developer voegt een tekstueel alternatief toe, bijvoorbeeld een [tabel](/table/).
 
 ### Uitklapbare content verschijnt op de verkeerde plek
 
-Content die verschijnt na interactie staat direct na het element dat de content opent. Bij een [Accordion](https://nldesignsystem.nl/accordion/) staat de inhoud van een paneel direct na de knop die het paneel opent. Bij [Tabs](https://nldesignsystem.nl/tabs/) staat de inhoud van het actieve tabpaneel direct na de tablijst. Staat de content ergens anders in de HTML, dan leest een screenreader die op een onverwacht moment voor.
+Content die verschijnt na interactie staat direct na het element dat de content opent. Bij een [Accordion](/accordion/) staat de inhoud van een paneel direct na de knop die het paneel opent. Bij [Tabs](/tabs/) staat de inhoud van het actieve tabpaneel direct na de tablijst. Staat de content ergens anders in de HTML, dan leest een screenreader die op een onverwacht moment voor.
 
 **Hoe te testen:** open een accordion, tabpaneel of ander uitklapbaar element. Inspecteer de HTML-volgorde in de DevTools. Staat de content direct na de bijbehorende trigger?
 
@@ -230,7 +230,7 @@ Content die verschijnt na interactie staat direct na het element dat de content 
 
 Een dialoogvenster dat de pagina bedekt, beperkt de screenreader tot de inhoud van dat venster. De achterliggende pagina wordt niet voorgelezen zolang het venster open is. Bij sluiten keert de focus terug naar het element dat het venster opende.
 
-**Hoe te testen:** open het dialoogvenster en navigeer met een screenreader. Kun je content achter het venster bereiken? Zo ja, dan is het venster niet goed afgeschermd.
+**Hoe te testen:** open het dialoogvenster en ga met een screenreader door de pagina. Kun je content achter het venster bereiken? Zo ja, dan is het venster niet goed afgeschermd.
 
 <Guideline appearance="do" title="Dialog met aria-modal voorkomt dat de achtergrond wordt gelezen">
   ```html
@@ -251,7 +251,7 @@ Gebruik het `<dialog>`-element met `aria-modal="true"`, of beheer de focus handm
 
 Een mobiel menu dat visueel verborgen is, is ook verborgen voor screenreaders. Verberg het met `display: none` of `visibility: hidden`. Gebruik niet alleen `opacity: 0` of een negatieve positie, want dan vindt een screenreader het menu alsnog.
 
-**Hoe te testen:** navigeer met een screenreader door de pagina. Hoor je content die niet op het scherm zichtbaar is?
+**Hoe te testen:** ga met een screenreader door de pagina. Hoor je content die niet op het scherm zichtbaar is?
 
 <Guideline appearance="dont" title="Menu verborgen met alleen opacity">
   ```html
@@ -271,7 +271,9 @@ Een mobiel menu dat visueel verborgen is, is ook verborgen voor screenreaders. V
 
 **Wie kan dit oplossen:** een developer past de manier van verbergen aan.
 
-### Demo lees- en focusvolgorde in de screenreader VoiceOver
+## Demo
+
+### Lees- en focusvolgorde in de screenreader VoiceOver
 
 <VideoPlayer id="OEe1wkRK2jg" title="Demo betekenisvolle volgorde in de screenreader VoiceOver" />
 
@@ -286,32 +288,32 @@ Een mobiel menu dat visueel verborgen is, is ook verborgen voor screenreaders. V
 
 ### Voor developers
 
-1. Schakel CSS uit. In Firefox: kies in het menu View > Page Style > No Style. Bekijk of de content in een begrijpelijke volgorde staat.
+1. Schakel CSS uit. In Firefox: kies in het menu Beeld > Paginastijl > Geen stijl. Bekijk of de content in een begrijpelijke volgorde staat.
 2. Bekijk de <span lang="en">Accessibility Tree</span> in de DevTools. Controleer of de volgorde overeenkomt met de visuele volgorde.
 3. Zoek in je CSS naar `order`, `flex-direction: row-reverse`, `flex-direction: column-reverse` en `grid-row`/`grid-column` die de visuele volgorde veranderen. Controleer of de HTML-volgorde logisch blijft.
-4. Lineariseer tabellen met de <span lang="en">Web Developer</span>-extensie (tab Miscellaneous > Linearize Page). Controleer of de informatie nog klopt.
+4. Lineariseer tabellen met de <span lang="en">Web Developer</span>-extensie (tab <span lang="en">Miscellaneous</span> > <span lang="en">Linearize Page</span>). Controleer of de informatie nog klopt.
 5. Test dynamische content met een screenreader. Open een accordion, tab of dialoogvenster en controleer of de content in de juiste volgorde wordt voorgelezen. Lees de handleiding [Zelf testen met screenreaders - VoiceOver (macOS)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-voiceover-macos) of [NVDA (Windows)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-nvda-windows) op Toegankelijk Online als je daar nog niet mee hebt gewerkt.
 6. Test in verschillende responsieve weergaves en zoom tot 400%. Controleer of de leesvolgorde intact blijft.
 
 ## Gerelateerde succescriteria
 
-- [1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1/): de structuur van de content moet programmatisch bepaalbaar zijn.
-- [2.4.3 Focusvolgorde](https://nldesignsystem.nl/wcag/2.4.3/): de volgorde van interactieve elementen bij toetsenbordnavigatie.
-- [4.1.2 Naam, rol, waarde](https://nldesignsystem.nl/wcag/4.1.2/): interactieve elementen moeten correct zijn geprogrammeerd.
+- [1.3.1 Info en relaties](/wcag/1.3.1/): de structuur van de content moet programmatisch bepaalbaar zijn.
+- [2.4.3 Focusvolgorde](/wcag/2.4.3/): de volgorde van interactieve elementen bij toetsenbordnavigatie.
+- [4.1.2 Naam, rol, waarde](/wcag/4.1.2/): interactieve elementen moeten correct zijn geprogrammeerd.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 1.3.2 Betekenisvolle volgorde](https://www.w3.org/Translations/WCAG22-nl/#betekenisvolle-volgorde) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 1.3.2: Meaningful Sequence](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Zelf testen met screenreaders - VoiceOver (macOS)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-voiceover-macos) — stap-voor-stap handleiding om met VoiceOver te testen op macOS. Handig voor het controleren van de leesvolgorde.
-- [Zelf testen met screenreaders - NVDA (Windows)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-nvda-windows) — stap-voor-stap handleiding om met NVDA te testen op Windows.
-- [<span lang="en">Screen Reader Keyboard Shortcuts and Gestures</span>](https://dequeuniversity.com/screenreaders/) — overzicht van toetsenbordsneltoetsen en gebaren per screenreader op Deque University (Engels).
-- [<span lang="en">Source Order Matters</span>](https://adrianroselli.com/2015/09/source-order-matters.html) — artikel van Adrian Roselli over waarom de broncodevolgorde ertoe doet (Engels).
+- [WCAG 2.2: Succescriterium 1.3.2 Betekenisvolle volgorde](https://www.w3.org/Translations/WCAG22-nl/#betekenisvolle-volgorde): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 1.3.2: Meaningful Sequence</span>](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Zelf testen met screenreaders - VoiceOver (macOS)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-voiceover-macos): stap-voor-stap handleiding om met VoiceOver te testen op macOS. Handig voor het controleren van de leesvolgorde.
+- [Zelf testen met screenreaders - NVDA (Windows)](https://toegankelijkonline.nl/artikelen/zelf-testen-met-screenreaders-nvda-windows): stap-voor-stap handleiding om met NVDA te testen op Windows.
+- [<span lang="en">Screen Reader Keyboard Shortcuts and Gestures</span>](https://dequeuniversity.com/screenreaders/): overzicht van toetsenbordsneltoetsen en gebaren per screenreader op Deque University (Engels).
+- [<span lang="en">Source Order Matters</span>](https://adrianroselli.com/2015/09/source-order-matters.html): artikel van Adrian Roselli over waarom de broncodevolgorde ertoe doet (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
-- Formulieren: [Plaats de informatie over waar de gebruiker is in de stappen boven het formulier](https://nldesignsystem.nl/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang).
-- Formulieren: [Zorg voor een logische volgorde van de informatie](https://nldesignsystem.nl/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde).
+- Formulieren: [Plaats de informatie over waar de gebruiker is in de stappen boven het formulier](/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang).
+- Formulieren: [Zorg voor een logische volgorde van de informatie](/richtlijnen/formulieren/visueel-ontwerp/logische-volgorde).
 - Content: [Tabellen](/richtlijnen/content/tekstopmaak/tabellen).
 
 ## Gebruikersonderzoek
@@ -324,12 +326,6 @@ Een mobiel menu dat visueel verborgen is, is ook verborgen voor screenreaders. V
 - Nederlandse vertaling van het WCAG-succescriterium: [1.3.2 Betekenisvolle volgorde](https://www.w3.org/Translations/WCAG22-nl/#meaningful-sequence).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.2 Meaningful Sequence</span>](https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.2 Meaningful Sequence</span>](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
