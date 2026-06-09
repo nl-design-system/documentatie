@@ -1,7 +1,8 @@
 ---
-title: Kantoorbestanden · Content · Richtlijnen
+title: Kantoorbestanden
 hide_title: true
 hide_table_of_contents: false
+navigation_order: 4
 sidebar_label: Kantoorbestanden
 pagination_label: Kantoorbestanden
 description: ...

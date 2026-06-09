@@ -2,6 +2,6 @@
   "label": "Niet als label",
   "link": {
     "type": "doc",
-    "id": "README"
+    "id": "index"
   }
 }
