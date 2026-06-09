@@ -7,13 +7,14 @@ import { navigation } from '../navigation.config.ts';
 import { getBreadcrumbsForElement } from '../navigation/get-breadcrumbs-for-element.ts';
 import './overview.css';
 import { withCurrentIndication } from 'src/navigation/with-current-indication';
+import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
 
 export type Props = DocumentProps;
 
 const { navigationTree, navigationList } = await withCurrentIndication(navigation, Astro.url.pathname);
 const breadcrumbPath = await getBreadcrumbsForElement(navigationList, Astro.url.pathname);
 const treeLevelOne = navigationTree.items.find((item) => item.expanded || item.current);
-const items = JSON.parse(JSON.stringify(treeLevelOne, (key, value) => (key === 'parent' ? undefined : value)));
+const items = serialiseNavigationTree(treeLevelOne);
 const { ...props } = Astro.props;
 ---
 
