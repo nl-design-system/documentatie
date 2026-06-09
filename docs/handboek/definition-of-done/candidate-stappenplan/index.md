@@ -44,7 +44,7 @@ Het kernteam wil met de voorbereidingfase voorkomen dat er steeds nieuwe richtin
 
 Alleen een component waar alle acceptatiecriteria voor zijn vastgesteld, wordt als Candidate beschikbaar gemaakt. Input uit de community is omgezet naar acceptatiecriteria en testcases, die worden gebruikt om op basis van de Community implementaties een robuust en goed onderbouwd component te maken. Ook andere organisaties kunnen eventueel tijdens de ontwikkeling gelijk rekening houden met de uitgebreide testset waar de component aan moet voldoen.
 
-Meer weten? [Bekijk de stappen van de Voorbereidingsfase](/handboek/estafettemodel/componenten/candidate/voorbereidingsfase)
+Meer weten? [Bekijk de stappen van de Voorbereidingsfase](/handboek/estafettemodel/componenten/candidate/voorbereidingsfase/)
 
 ## 3. Ontwikkelfase
 
