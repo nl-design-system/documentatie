@@ -15,71 +15,69 @@ description: Meedoen als organisatie
 
 # Meedoen als organisatie
 
-Organisaties en hun leveranciers kunnen op verschillende niveaus meedoen met NL Design System.
+Organisaties en hun leveranciers kunnen op verschillende niveaus meedoen met NL Design System. Hieronder staat beschreven wat meedoen aan NL Design System inhoudt.
 
-## Niveau 1. Online meedoen
-
-### Bewijs
+## Aanmelden bij de Community
 
 - personen [schrijven zich in](/community/sluit-je-aan) als lid van de community.
-- personen zijn af en toe aanwezig bij de [NL Design System Heartbeat](/events/heartbeat).
-- designers zijn af en toe aanwezig bij de [Design Open Hour](/events/design-open-hour).
-- developers zijn af en toe aanwezig bij de Developer Open Hour.
-- developers en designers zijn aanwezig op [Slack](/slack) in het kanaal `nl-design-system`.
+- developers en designers melden zich aan [Slack](/slack) in het kanaal `nl-design-system`.
+
+## Samenwerken binnen de Community
+
+### Open manier van werken
 - vragen worden gesteld in publieke chatkanalen of in GitHub.
 - werkzaamheden en plannen zijn publiek gedeeld in de NL Design System community.
+- feedback....
 
-## Niveau 2. Richtlijnen gebruiken
+### Kennisdeling en community samenwerking
+- personen brengen en halen informatie over voortgang van ontwikkelingen tijdens de [NL Design System Heartbeat](/events/heartbeat).
+- designers brengen en halen, wanneer relevant, informatie tijdens de [Design Open Hour](/events/design-open-hour).
+- developers brengen en halen, wanneer relevant, informatie tijdens de Developer Open Hour.
 
-Onder [Richtlijnen](/richtlijnen) verzamelen we richtlijnen voor het maken van digitale diensten, bijvoorbeeld voor het maken van formulieren.
+## Richtlijnen gebruiken
 
-### Bewijs
+Gebruik de NL Design System [Richtlijnen](/richtlijnen) als designer, developer of contentmaker om toegankelijke en gebruiksvriendelijke website en webapplicaties te maken. Bijvoorbeeld voor het maken van formulieren.
 
+### Bewijs --> kunnen we deze naar een pagina rondom aanbesteding verplaatsen met wat kun je vragen en hoe kun je erop toetsen ofzo?
 Het opgeleverde werk voldoet aan de richtlijnen van NL Design System. Vraag de leverancier dit mee te nemen en ga achteraf zo goed mogelijk na of dit is gebeurd. Vraag om uitleg als er is afgeweken.
 
-## Niveau 3. Eigen NL Design System thema maken en onderhouden
+## Eigen NL Design System thema maken en onderhouden
 
-NL Design System thema's bestaan uit organisatiespecifieke ontwerpbeslissingen, die zijn vastgelegd als [Design Tokens](/handboek/huisstijl/design-tokens/).
+Stel een NL Design System thema beschikbaar voor de huisstijl van de organisatie en maak snel en makkelijk gebruik van bestaande oplossingen die met NL Design System zijn gebouwd.
 
-### Bewijs
+### Extra uitleg
+- Uitleg [Design Tokens](/handboek/huisstijl/design-tokens/).
+- Registartie van het eigen thema gebeurt in [Thema Storybook](https://nl-design-system.github.io/themes/).
+- Bekijk in de [Thema Storybook](https://nl-design-system.github.io/themes/) of de gebruikte componenten in de huisstijl van jouw organisatie beschikbaar zijn.
 
-Er staat een thema voor jouw organisatie in de [Thema Storybook](https://nl-design-system.github.io/themes/). De leverancier heeft in hun werkwijze opgenomen om dit thema te gebruiken en waar nodig uit te breiden. Bekijk in de [Thema Storybook](https://nl-design-system.github.io/themes/) of de gebruikte componenten in de huisstijl van jouw organisatie beschikbaar zijn.
+#### Aanbestedingsstukje --> De leverancier heeft in hun werkwijze opgenomen om dit thema te gebruiken en waar nodig uit te breiden. 
 
-## Niveau 4. Componenten hergebruiken uit de community
+## Componenten hergebruiken uit de community
 
-### Bewijs
+Maak bij het ontwikkelen van online diensten gebruik van de componenten en voorbeeldpagina's van NL Design System voor consistente en gebruiksvriendelijke interfaces. Gebruik hierbij de componenten met de hoogte Estafettemodel-status. 
 
-Bij het maken van prototypes is gebruik gemaakt van de Figma-bibliotheek van NL Design System, of er zijn onderdelen van community prototypes hergebruikt. In code worden zoveel mogelijk componenten met de status “Community” of hoger gebruikt.
+### Deel je ervaring
+Deel het met de community wanneer je een bestaande component niet kan hergebruiken. Dat kan bijvoorbeeld in de GitHub Discussion over de component, of door een GitHub Issue aan te maken bij de maker van de component.
 
-**Altijd**: je maakt voor zover mogelijk gebruik van “Community”, “Candidate” en “Hall of Fame” componenten.
+## Componenten verbeteren
 
-**Minimale optie**: Wanneer de component niet bruikbaar is, dan kies je een eigen weg.
+Help bestaande componenten en voorbeeldpagina's verbeteren door inzichten uit gebruikersonderzoek te delen en missende functionaliteit toe te voegen. 
 
-**Ideale optie**: Deel het met de community wanneer je een bestaande component niet kan hergebruiken. Dat kan bijvoorbeeld in de GitHub Discussion over de component, of door een GitHub Issue aan te maken bij de maker van de component.
+### Waar bestaat verbeteren uit?
+- Valideer door het uitvoeren van gebruikersonderzoeken en deel de inzichten op [gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl)
+- Voeg de verbeteringen toe aan de GitHub discussions
+- Voor de verbeteringen in samenwerking met de behgeerpartij bij
 
-**Tip**: We raden leveranciers aan om deel te nemen aan designer en developer open hours zodat vragen gesteld kunnen worden en samengewerkt kan worden met de bestaande community.
+## Componenten bijdragen
 
-## Niveau 5. Componenten verbeteren uit de community
+Ontwikkel nieuwe componenten op de herbruikbare, huisstijl onafhankelijke manier van NL Design System en draag deze bij met een eigen componenten bibliotheek in de Community. Hierbij is het van belang dat het doel van de component duidelijk is, en kan worden aangenomen dat het ook bruikbaar is voor de rest van Nederland. 
 
-### Bewijs
+Bij componenten die waarschijnlijk niet bruikbaar zijn voor de rest van Nederland, maar wel binnen eigen websites en apps, kiezen organisaties soms om ze alleen in hun eigen design system op te nemen, als zogenaamde ‘snowflake’.
 
-Wanneer een component uit de community niet helemaal voldoet aan de eisen, is gebruik gemaakt van bestaande code om op door te bouwen.
-
-**Minimale optie**: De nieuwe component is zoveel mogelijk opgebouwd op dezelfde manier als de bestaande component en de community is van deze nieuwe variant op de hoogte gesteld.
-
-**Ideale optie**: Er is samengewerkt met de oorspronkelijke organisatie om de verbetering daar door te voeren.
-
-## Niveau 6. Componenten bijdragen aan de community
-
-### Bewijs
-
-Nieuwe componenten zijn opgeleverd volgens de aanpak van NL Design System. Dat betekent:
-
-- De component is aangemaakt als GitHub Discussion voor Help Wanted.
-- De [eerste stappen voor “Community component”](https://nldesignsystem.nl/handboek/community-stappenplan) zijn gevolgd.
-- De component is gebouwd volgens de NL Design System architectuur.
-- De component is beschikbaar gemaakt in de thema Storybook website van NL Design System.
-
-Daarnaast is het van belang dat het doel van de component duidelijk is, en kan worden aangenomen dat het ook bruikbaar is voor de rest van Nederland. Bij componenten die waarschijnlijk niet bruikbaar zijn voor de rest van Nederland, maar wel binnen eigen websites en apps, kiezen organisaties soms om ze alleen in hun eigen design system op te nemen, als zogenaamde ‘snowflake’.
-
-**Ideale optie**: De component is ook in Figma beschikbaar volgens de Figma architectuur.
+### Waar bestaat bijdragen uit?
+- Bepalen van het doel en herbruikbaarheid
+- Aanpaken van een GitHub Discussion voor Help Wanted.
+- De [eerste stappen voor “Community component”](https://nldesignsystem.nl/handboek/community-stappenplan) worden gevolgd.
+- Bouw volgende de NL Design System architectuur --> waarnaar verwijzen?
+- Beschikbaar stellen voor hergebruik door de Community in --> link?
+- Optioneel en wenselijk voor optimaal hergebruik: Stel de component ook beschikbaar in Figma beschikbaar volgens de Figma architectuur. --> link? 
