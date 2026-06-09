@@ -1,5 +1,6 @@
 ---
 title: "Nieuwe versies uitbrengen met Changesets"
+title_sm: Changesets
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Changesets
@@ -54,7 +55,7 @@ Gebruik de volgende richtlijnen bij het kiezen van een versie:
 - **`minor`** → Voor nieuwe functionaliteiten.
 - **`major`** → Voor breaking changes.
 
-Voor meer informatie over het kiezen van de juiste versie, zie [SemVer: Major, Minor of Patch?](./12-changes.md).
+Voor meer informatie over het kiezen van de juiste versie, zie [Semantic Versioning](/handboek/developer/semver-conventie/).
 
 ## Schrijf een changelog
 
@@ -159,7 +160,7 @@ Voor een **lege changeset** gebruik je alleen:
 ---
 ```
 
-## Changesets publiceren
+## Packages publiceren
 
 Na het mergen van je pull request wordt er automatisch een nieuwe pull request aangemaakt om de versie te publiceren. Je kunt deze direct mergen of wachten tot er meer wijzigingen zijn. Als de publicatie-pull request niet meteen gemerged wordt zal hij automatisch worden bijgewerkt zo lang dat nodig is. Zodra de publicatie-pull request gemerged wordt, worden de pakketten automatisch gepubliceerd naar de npm Registry.
 

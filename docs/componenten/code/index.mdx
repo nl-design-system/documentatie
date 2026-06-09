@@ -53,6 +53,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
@@ -74,7 +75,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 Gebruik de [Code Block](/code-block) component als de code meerdere regels beslaat.
 :::
 
-<Card className="implementation-card">
+<Card className="ma-implementation-card">
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
@@ -143,3 +144,5 @@ Gebruik de [Code Block](/code-block) component als de code meerdere regels besla
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />

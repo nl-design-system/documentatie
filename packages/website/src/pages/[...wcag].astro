@@ -1,31 +1,30 @@
 ---
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
-import Document from '@layouts/document.astro';
+import DetailLayout from '@layouts/detail.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
-import { siteTitle } from '../seo.config.ts';
 
 export async function getStaticPaths() {
   const wcag = await getCollection('wcag');
 
-  return wcag
-    .filter((page) => page.data?.unlisted !== true)
-    .map((page) => ({
-      params: { wcag: page.id },
-      props: { page },
-    }));
+  return wcag.map((page) => ({
+    params: { wcag: page.id },
+    props: { page },
+  }));
 }
 
 const { page } = Astro.props;
 const { Content } = await render(page);
 
-const title = page.data.title ? `${page.data.title} | ${siteTitle}` : siteTitle;
 const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
+
+const components = await MDXComponents();
 ---
 
-<Document
-  title={title}
+<DetailLayout
+  title={page.data.title}
+  titleSm={page.data.title_sm}
   description={description}
   lang={page.data.lang}
   seoImage={page.data.image}
@@ -33,5 +32,5 @@ const description =
   keywords={['wcag', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
   index={page.data.unlisted !== true}
 >
-  <Content components={MDXComponents} />
-</Document>
+  <Content components={components} />
+</DetailLayout>
