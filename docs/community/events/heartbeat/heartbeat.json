@@ -1,5 +1,16 @@
 [
   {
+    "id": 127,
+    "date": "2026-06-09",
+    "description": [
+      "Jiro van Maykin vertelt ons over diens avontuur van de afgelopen periode, waar die componenten uit de MijnServices interactie-patronen designs door het NL Design System estafettemodel heeft gehaald.",
+      "Richard van het kernteam geeft een korte update met betrekking tot tooling en veiligheid: pnpm, GitHub Actions, Vercel.",
+      "Yolijn geeft een community update: de 100e Help Wanted component van NL Design System, nieuwe componenten die sinds de laatste estafettemodeldag nu Community status zijn, en de aankomende estafettemodeldag."
+    ],
+    "title": "Heartbeat van 9 juni 2026.",
+    "youtubeId": "PLJzPPP2Ewc"
+  },
+  {
     "id": 126,
     "date": "2026-05-26",
     "description": [
