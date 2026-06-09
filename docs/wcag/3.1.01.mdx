@@ -4,11 +4,11 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.1.1 Taal van de pagina
 pagination_label: WCAG-succescriterium 3.1.1 Taal van de pagina
-description: Geef de menselijke taal waarin de tekst van een webpagina is geschreven aan. Dit kan door in het html-element het attribuut ‘lang’ mee te geven.
+description: Een webpagina geeft via het lang-attribuut op het html-element aan in welke taal de content is geschreven. Zo lezen screenreaders de tekst met de juiste uitspraak voor.
 slug: 3.1.1
 keywords:
   - WCAG
-  - Niveau A
+  - A
   - begrijpelijk
   - leesbaar
   - understandable
@@ -30,15 +30,15 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.1.1-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
   {"WCAG-succescriterium 3.1.1 Taal van de pagina"}
 </WcagHeadingGroup>
+
+## Uitleg
 
 <Summary />
 
@@ -48,7 +48,7 @@ Als het `lang`-attribuut correct is ingesteld, leest een screenreader de tekst v
 
 ### Pagina heeft geen lang-attribuut
 
-Elke webpagina heeft een `lang`-attribuut op het `<html>`-element dat de hoofdtaal van de pagina aangeeft. Ontbreekt het attribuut, dan raadt de browser en screenreader de taal. Die gok is niet altijd juist: een Nederlandstalige pagina kan als Engels worden geïnterpreteerd, waardoor een screenreader de tekst met een verkeerde uitspraak voorleest.
+Elke webpagina heeft een `lang`-attribuut op het `<html>`-element dat de hoofdtaal van de pagina aangeeft. Ontbreekt het attribuut, dan raden de browser en de screenreader de taal. Die gok is niet altijd juist: een Nederlandstalige pagina kan als Engels worden geïnterpreteerd, waardoor een screenreader de tekst met een verkeerde uitspraak voorleest.
 
 **Hoe te testen:** open de DevTools en inspecteer het `<html>`-element. Is er een `lang`-attribuut aanwezig?
 
@@ -188,17 +188,17 @@ Frameworks zoals React, Angular en Vue genereren een standaard `index.html` met 
 ### Voor developers
 
 1. Inspecteer het `<html>`-element in de DevTools. Controleer of een `lang`-attribuut aanwezig is met een geldige BCP 47-taalcode.
-2. Controleer of het `lang`-attribuut via JavaScript wordt bijgewerkt bij meertalige websites en single-page applicaties.
+2. Controleer of het `lang`-attribuut via JavaScript wordt bijgewerkt bij meertalige websites en <span lang="en">single-page</span> applicaties.
 3. Zoek in je templates naar hardcoded `lang="en"` uit framework-generators. Pas deze aan naar de juiste taal.
 4. Gebruik een geautomatiseerde tool zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span>. Een ontbrekend `lang`-attribuut wordt automatisch gedetecteerd. Of de taalcode overeenkomt met de daadwerkelijke content moet je handmatig controleren.
 
 ## Gerelateerde succescriteria
 
-- [3.1.2 Taal van onderdelen](https://nldesignsystem.nl/wcag/3.1.2/): als een passage in een andere taal is geschreven dan de rest van de pagina, geeft een `lang`-attribuut op dat element de afwijkende taal aan. Lees hier meer als je pagina's hebt met gemengde talen.
+- [3.1.2 Taal van onderdelen](/wcag/3.1.2/): als een passage in een andere taal is geschreven dan de rest van de pagina, geeft een `lang`-attribuut op dat element de afwijkende taal aan. Lees hier meer als je pagina's hebt met gemengde talen.
 
 ## Relevante bronnen
 
-- [BCP 47 Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) — het volledige register van geldige taalcodes. Gebruik dit als je twijfelt over de juiste code voor een specifieke taal (Engels).
+- [<span lang="en">BCP 47 Language Subtag Registry</span>](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry): het volledige register van geldige taalcodes. Gebruik dit als je twijfelt over de juiste code voor een specifieke taal (Engels).
 
 ## Gebruikersonderzoek
 
@@ -206,15 +206,9 @@ Frameworks zoals React, Angular en Vue genereren een standaard `index.html` met 
 
 ## W3C-referenties
 
-- [WCAG 2.2: Succescriterium 3.1.1 Taal van de pagina](https://www.w3.org/Translations/WCAG22-nl/#taal-van-de-pagina) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 3.1.1: Language of Page](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Quick Reference 3.1.1 Language of Page](https://www.w3.org/WAI/WCAG22/quickref/#language-of-page) — snelreferentie met technieken (Engels).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- [WCAG 2.2: Succescriterium 3.1.1 Taal van de pagina](https://www.w3.org/Translations/WCAG22-nl/#taal-van-de-pagina): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 3.1.1: Language of Page</span>](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 3.1.1 Language of Page</span>](https://www.w3.org/WAI/WCAG22/quickref/#language-of-page): snelreferentie met technieken (Engels).
 
 ## Help richtlijn verbeteren
 
