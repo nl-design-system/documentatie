@@ -1,0 +1,45 @@
+---
+title: Testomgeving
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Testomgeving
+sidebar_position: 11
+pagination_label: Testomgeving
+description: Branch deployments van GitHub Pull Requests zijn de testomgevingen.
+keywords:
+  - dtap
+  - otap
+  - test
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Testomgeving
+
+<Paragraph lead>
+  Biedt een testomgeving aan voor elke wijziging, zodat het laagdrempelig is om een review te doen van een wijziging.
+  Laat ook weten waar in testomgeving je moet zijn, en hoe je de wijzigingen kan testen. Zo maak je samen een beter
+  product.
+</Paragraph>
+
+De aanbevolen manier is "branch deployments" als testomgeving.
+
+## Branch deployments
+
+Gebruik de bestaande [Vercel infrastructuur voor NL Design System](/vercel) voor het maken van branch deployments voor GitHub Pull Requests, voor projecten waarvan de build een statische website of een Node.js server is.
+
+Wanneer iemand een Pull Request maakt, wordt automatisch een testomgeving aangemaakt. De Pull Request ontvangt na enkele minuten automatisch een comment met een linkje naar de testomgeving.
+
+Gebruik waar mogelijk infrastructure-as-code om Vercel te configureren, via de [vercel terraform provider](https://registry.terraform.io/providers/vercel/vercel/latest/docs) in de [nl-design-system/terraform repository](http://github.com/nl-design-system/terraform).
+
+## Lokale testomgeving
+
+Gebruik de `README.md` om instructies te delen om de testomgeving lokaal op te starten. Dit is handig wanneer branch deployments niet beschikbaar zijn. Documenteer in elk geval:
+
+- Vereisten. Bijvoorbeeld installeer Node.js en pmpm of Docker, en gebruik `pnpm install`.
+- Configuratie. Bijvoorbeeld welke environment variables nodig zijn voor de testomgeving.
+- Hoe je de testomgeving start. Bijvoorbeeld: `pnpm run build` en `pnpm run start`.
+
+Let op: de ontwikkelomgeving die je start met `pnpm run dev` is niet hetzelfde een testomgeving. De testomgeving moet zoveel mogelijk lijken op de productieomgeving.

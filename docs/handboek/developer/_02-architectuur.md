@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Architectuur
 pagination_label: Architectuur
 description: NL Design System architectuur
+slug: /handboek/developer/architectuur/
 ---
 
 <!-- Deze pagina kan binnenkort weg, maar is mogelijk nog interessant om snippets uit mee te nemen bij het maken van nieuwe pagina's. Daarom blijft hij nog even staan zonder op de website gerendered te worden. -->

@@ -1,9 +1,11 @@
 ---
 title: Creative Commons 0 Universal licentie
+title_sm: Creative Commons 0
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Creative Commons 0
 sidebar_position: 1
+navigation_order: 1
 pagination_label: Creative Commons
 description: NL Design System gebruikt de CC0-1.0 licentie voor documentatie.
 keywords:

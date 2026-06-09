@@ -42,7 +42,9 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
     {() => (
       <>
         <p>
-          <label htmlFor="naam2">Uw naam</label>
+          <label datatest-id="exclude-axe" htmlFor="naam2">
+            Uw naam
+          </label>
         </p>
         <p>
           <input type="text" id="naam2" autoComplete="name" />

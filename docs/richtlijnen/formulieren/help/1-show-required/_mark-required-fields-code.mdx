@@ -41,21 +41,11 @@ import { Guideline } from "@site/src/components/Guideline";
       <>
         <p>Als iets verplicht is, staat er een * bij.</p>
         <form>
-          <p>
-            <label htmlFor="kleur4">Wat is je lievelingskleur *</label>
-          </p>
-          <p>
-            <input type="text" id="kleur24" name="lievelingskleur" aria-required="true" aria-invalid="false" />
-          </p>
-          <p>
-            <label htmlFor="dier4">Wat is je lievelingsdier</label>
-          </p>
-          <p>
-            <input type="text" id="dier4" name="lievelingsdier" />
-          </p>
-          <p>
-            <button>Verstuur</button>
-          </p>
+          <label htmlFor="kleur4">Wat is je lievelingskleur *</label>
+          <input type="text" id="kleur4" name="lievelingskleur" aria-required="true" aria-invalid="false" />
+          <label htmlFor="dier4">Wat is je lievelingsdier</label>
+          <input type="text" id="dier4" name="lievelingsdier" />
+          <button>Verstuur</button>
         </form>
       </>
     )}

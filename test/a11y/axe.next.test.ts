@@ -3,12 +3,14 @@ import * as cheerio from 'cheerio';
 import { AxeResults } from 'axe-core';
 import { readFileSync } from 'fs';
 import { analyzeAccessibility, getDisabledRules, saveViolationsReport } from './test-setup';
+import { exclusionsNext } from './a11y-exclusions';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
   sitemapDir: './packages/website/dist',
   sitemap: '/sitemap-index.xml',
   reportPath: './tmp/axe.next.json',
+  failOnImpact: ['critical', 'serious', 'moderate'],
 };
 
 const violations: AxeResults[] = [];
@@ -63,11 +65,14 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
   const isAxeDisabled = (await page.locator('meta[name="axe"][content="false"]').count()) > 0;
   test.skip(isAxeDisabled, 'Skipped because of <meta name="axe" content="false">');
 
-  const disabledRules = getDisabledRules(pathname);
+  const disabledRules = getDisabledRules(pathname, exclusionsNext);
   const results = await analyzeAccessibility(page, disabledRules);
 
   violations.push(results);
 
-  const criticalViolations = results.violations.filter((v) => v.impact === 'critical');
-  expect(criticalViolations).toEqual([]);
+  const violationsWhichFail = results.violations
+    .filter((v) => CONFIG.failOnImpact.includes(v.impact))
+    .map((violation) => `[${violation.id}] ${violation.description}`);
+
+  expect(violationsWhichFail).toEqual([]);
 }

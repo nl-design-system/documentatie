@@ -87,7 +87,7 @@ Gebruik de prefix van jouw organisatie voor de volgende dingen in CSS:
 - CSS custom properties
 - CSS class name selectors
 
-Gebruik selectors met een lage [CSS specificty](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), zodat mensen makkelijk uitbreidingen op je code kunnen doen.
+Gebruik selectors met een lage [CSS specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), zodat mensen makkelijk uitbreidingen op je code kunnen doen.
 
 CSS variables zijn onderdeel van de API van je component, tenzij ze met `--_` zijn geprefixed.
 
@@ -145,6 +145,46 @@ import { clsx } from "clsx";
 
 const ExampleButton = ({ children, className }) => <p className={clsx("example-button", className)}>{children}</p>;
 ```
+
+### Gebruik union types voor props met een vaste set opties
+
+Als een prop een vaste set geldige waarden heeft, gebruik dan een union type in plaats van `string`. Dit geeft gebruikers directe feedback van de editor (autocomplete, typechecking) en voorkomt ongeldige waarden.
+
+**Vermijd:**
+
+```tsx
+interface ButtonProps {
+  size?: string; // te breed: accepteert alles
+}
+```
+
+**Gebruik dit:**
+
+```tsx
+type ButtonSize = "sm" | "md" | "lg";
+
+interface ButtonProps {
+  size?: ButtonSize;
+}
+```
+
+### Props typen met uitbreiding van HTML-attributen
+
+Combineer je eigen props met de standaard HTML-attributen van het onderliggende element via `React.ComponentPropsWithoutRef`. Zo hoef je geen native attributen (zoals `disabled`, `aria-*`, `data-*`) zelf te herhalen:
+
+```tsx
+type ButtonSize = "sm" | "md" | "lg";
+
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
+  size?: ButtonSize;
+}
+
+const ExampleButton = ({ size = "md", className, ...restProps }: ButtonProps) => (
+  <button className={clsx("example-button", `example-button--${size}`, className)} {...restProps} />
+);
+```
+
+Wanneer je refs doorgeeft, kun je de tegenhanger `React.ComponentPropsWithRef` gebruiken.
 
 ## Termen uit het Web Platform
 

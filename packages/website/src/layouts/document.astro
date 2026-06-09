@@ -1,18 +1,136 @@
-<html lang="nl" dir="ltr">
+---
+import { siteName, siteTitle, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { PageHeader } from '@components/page-header/page-header';
+import { PageFooter } from '@components/page-footer/page-footer';
+import { NavBar } from '@components/nav-bar/nav-bar';
+import { PageLayout } from '@components/page-layout/page-layout';
+import { SkipLink } from '@components/skip-link/skip-link.tsx';
+import { NavList } from '@components/nav-list/nav-list';
+import { NavListLink } from '@components/nav-list/nav-list';
+import { Logo } from '@components/logo/logo';
+import { LinkList, LinkListLink } from '@components/link-list/link-list';
+import { IconChevronRight } from '@tabler/icons-react';
+import { getMainNavigation } from '../navigation';
+
+import '@fontsource/fira-code';
+import '@fontsource/fira-sans/700';
+import '@fontsource/source-sans-pro';
+import '@fontsource/source-sans-pro/700.css';
+import '@utrecht/root-css/dist/index.css';
+
+export interface Props {
+  title: string;
+  titleSm?: string;
+  description?: string;
+  lang?: 'nl' | 'en';
+  seoImage?: string;
+  seoImageAlt?: string;
+  keywords?: string[];
+  index?: boolean;
+  follow?: boolean;
+}
+
+const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
+
+const fallbackSeoImage = '/social-image_nl-design-system.png';
+const fallbackSeoImageAlt = 'Logo van NL Design System';
+
+const documentTitle = `${titleSm || title} · ${siteTitle}`;
+const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
+const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
+const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
+const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
+const _follow = follow === undefined ? index : follow;
+const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
+
+const mainNavigationItems = await getMainNavigation();
+
+const footerNavigationItems = [
+  { href: '/blog/', label: 'Blog' },
+  { href: '/project/kernteam/', label: 'Contact' },
+  { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid' },
+  { href: '/privacyverklaring/', label: 'Privacyverklaring' },
+  { href: '/colofon/', label: 'Colofon' },
+  { href: '/github/', label: 'GitHub' },
+  { href: '/slack/', label: 'Slack' },
+  { href: '/figma/', label: 'Figma' },
+  { href: 'https://www.linkedin.com/company/nl-design-system/', label: 'LinkedIn', external: true },
+];
+---
+
+<html class="utrecht-root" lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{documentTitle}</title>
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content={siteThemeColor} />
+    <meta name="color-scheme" content={siteColorScheme} />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={[..._keywords].join(', ')} />
+    <meta name="robots" content={_robots} />
 
-    <title>NL Design System</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:image" content={_seoImage} />
+    <meta property="og:image:alt" content={_seoImageAlt} />
+    <meta property="og:description" content={description} />
+    <meta property="og:title" content={documentTitle} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={lang} />
+    <meta property="twitter:card" content={twitterCard} />
+
+    <slot name="head" />
   </head>
 
   <body>
-    <main>
+    <SkipLink href="#main">Naar de inhoud</SkipLink>
+    <PageLayout>
+      <PageHeader>
+        <a href="/" aria-label="Link naar Homepagina"><Logo /></a>
+      </PageHeader>
+      <NavBar>
+        <nav aria-labelledby="hoofdnavigatie-label">
+          <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
+          <NavList>
+            {mainNavigationItems.map(({ href, label }) => <NavListLink href={href}>{label}</NavListLink>)}
+          </NavList>
+        </nav>
+      </NavBar>
+
       <slot />
-    </main>
+
+      <PageFooter>
+        <nav aria-labelledby="site-navigatie-label">
+          <h2 hidden id="site-navigatie-label">Submenu</h2>
+          <LinkList>
+            {
+              footerNavigationItems.map(({ href, label }) => (
+                <LinkListLink href={href}>
+                  {label}
+                  <IconChevronRight slot="icon" />
+                </LinkListLink>
+              ))
+            }
+          </LinkList>
+        </nav>
+      </PageFooter>
+    </PageLayout>
   </body>
 </html>
+
+<style is:global>
+  /* These styles are temporary to let axe pass. When actual components are
+  being implemented, these styles will be removed */
+  a,
+  input,
+  summary {
+    display: inline-block;
+    min-height: 24px;
+  }
+</style>

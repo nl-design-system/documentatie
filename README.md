@@ -35,8 +35,8 @@ Heb je hulp nodig? Stel je vraag op [Slack](https://nldesignsystem.nl/slack) of 
 1. Zorg dat je de repository op je computer hebt staan door de geforkte documentatie repository te clonen.
 2. Open de Terminal en zorg dat je in het mapje zit waar de clone is belandt
 3. Draai `pnpm install` om te zorgen dat alle afhankelijkheden die Docusaurus nodig heeft beschikbaar zijn
-4. Draai `pnpm run build` om de CSS te builden (dit hoeft alleen de eerste keer)
-5. Draai `pnpm run start` om Docusaurus te starten.
+4. Draai `pnpm run build:docusaurus` om de CSS te builden (dit hoeft alleen de eerste keer)
+5. Draai `pnpm run start:docusaurus` om Docusaurus te starten.
 6. In de terminal staat nu `Docusaurus website is running at http://localhost:3000/` met `Cmd` ingedrukt kun je deze link aanklikken
 7. De website opent in je standaard browser
 
@@ -47,7 +47,7 @@ Zolang je het script in je terminal hebt draaien zal de website automatisch de o
 Als je de website structuur hebt aangepast dan is het nodig de website eerst te stoppen en dan opnieuw op te starten.
 
 1. Stop het script dat de website lokaal draait met `Cmd+C` in te typen in de terminal waar het script draait.
-2. Draai `pnpm run start` et voilá, de veranderingen worden zichtbaar.
+2. Draai `pnpm run start:docusaurus` et voilá, de veranderingen worden zichtbaar.
 
 ## Lokaal de build draaien met de Apache HTTP server
 
@@ -55,7 +55,7 @@ Apache HTTP server wordt momenteel gebruikt voor hosting van nldesignsystem.nl. 
 
 Het belangrijkste voordeel is dat je HTTP redirects kunt testen die in `static/.htaccess` zijn ingesteld.
 
-1. Zorg dat je een build hebt gemaakt: `pnpm run build`
+1. Zorg dat je een build hebt gemaakt: `pnpm run build:docusaurus`
 2. `docker-compose up`
 3. ga naar `http://localhost:8080/`
 4. Je kunt nu `static/.htaccess` aanpassen, en gelijk de resultaten testen.
@@ -166,3 +166,42 @@ Optie 2: markeer het hele blok als JSX:
 ```mdx
 {<Button>My button text</Button>}
 ```
+
+### OpenGraph image toevoegen aan een pagina
+
+De Astro omgeving biedt de mogelijkheid om per pagina een OpenGraph image toe te voegen.
+Wanneer een pagina gedeeld wordt via Slack of sociale media, zal deze afbeelding gebruikt worden als ondersteunende visual.
+
+De aangeraden afmeting van een OpenGraph image is 1200x630.
+
+#### Uploaden van de afbeelding
+
+Begin met het uploaden van de afbeelding op de `assets` branch. Afbeeldingen en video's maken een git repository erg zwaar,
+daarom hebben we ervoor gekozen om alle afbeeldingen op een aparte branch te verzamelen.
+
+In de [README](https://github.com/nl-design-system/documentatie/tree/assets?tab=readme-ov-file#assets-branch-voor-nl-design-system-documentatie) van de `assets` branch staat uitgelegd hoe je afbeeldingen kunt uploaden.
+
+#### Toevoegen van de afbeelding als OpenGraph image
+
+Na het uploaden van de afbeelding krijg je een URL in de vorm:
+`https://raw.githubusercontent.com/nl-design-system/documentatie/assets/<naam-van-het-plaatje>`.
+
+Voeg vervolgens twee keys toe aan de frontmatter van de pagina:
+
+```yml
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/<naam-van-het-plaatje>
+image_alt: Beschrijving van het plaatje
+```
+
+- `image`: de volledige URL van de afbeelding.
+- `image_alt`: de alternatieve tekst van de afbeelding.
+
+#### Controleren of de afbeelding correct wordt gebruikt
+
+Nadat de afbeelding is geüpload en aan de frontmatter is toegevoegd, kun je controleren of de afbeelding goed wordt weergegeven als OpenGraph image.
+
+1. Open de preview URL van de PR (voor Astro is dit het `documentatie-next` project).
+2. Navigeer naar de betreffende pagina en kopieer de URL.
+3. Ga naar [opengraph.xyz](https://opengraph.xyz) en plak daar de URL.
+
+In het overzicht dat volgt zie je een voorbeeld van de afbeelding.

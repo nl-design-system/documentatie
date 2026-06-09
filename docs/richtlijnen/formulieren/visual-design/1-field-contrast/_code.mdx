@@ -18,7 +18,8 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
   >
     {() => (
       <>
-        <input type="text" />
+        <label htmlFor="contrast-input-goed">Voorbeeld invoerveld met goed contrast</label>
+        <input type="text" id="contrast-input-goed" />
       </>
     )}
   </Canvas>
@@ -40,14 +41,21 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
       <>
         <fieldset>
           <legend>Kies je kleur</legend>
-          <p><input type="radio" id="radio1" name="kleur" /> <label htmlFor="radio1">Blauw</label></p>
-          <p><input type="radio" id="radio2" name="kleur"/> <label htmlFor="radio2">Groen</label></p>
-          <p><input type="radio" id="radio3" name="kleur" /> <label htmlFor="radio3">Rood</label></p>
+          <div>
+            <input type="radio" id="radio1" name="kleur" />
+            <label htmlFor="radio1">Blauw</label>
+          </div>
+          <div>
+            <input type="radio" id="radio2" name="kleur" />
+            <label htmlFor="radio2">Groen</label>
+          </div>
+          <div>
+            <input type="radio" id="radio3" name="kleur" />
+            <label htmlFor="radio3">Rood</label>
+          </div>
         </fieldset>
-
       </>
     )}
-
   </Canvas>
 </Guideline>
 
@@ -65,7 +73,8 @@ import { Link } from "@utrecht/component-library-react/dist/css-module";
   >
     {() => (
       <>
-        <input type="text" />
+        <label htmlFor="contrast-input-slecht">Voorbeeld invoerveld met slecht contrast</label>
+        <input type="text" id="contrast-input-slecht" />
       </>
     )}
   </Canvas>

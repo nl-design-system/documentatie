@@ -63,11 +63,23 @@ Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebr
 
 <Guideline appearance="dont" title="Kleur gebruiken om tekst nadruk te geven">
   <Canvas language="html">
-    {() => (
-      <>
-        Je kunt op eigen gelegenheid oversteken. <span style={{ color: 'red' }}>Pas op!</span> Dit is <span style={{ color: 'red' }}>erg gevaarlijk</span>
-      </>
-    )}
+    {() => {
+      const basisColorErrorBg1 = "#ce2c31";
+
+      return (
+        <>
+          Je kunt op eigen gelegenheid oversteken.{" "}
+          <span style={{ color: basisColorErrorBg1 }}>
+            Pas op!
+          </span>{" "}
+          Dit is{" "}
+          <span style={{ color: basisColorErrorBg1 }}>
+            erg gevaarlijk
+          </span>
+        </>
+      );
+    }}
+
   </Canvas>
 </Guideline>
 
