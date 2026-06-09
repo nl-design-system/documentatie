@@ -4,11 +4,11 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.2 Paginatitel
 pagination_label: WCAG-succescriterium 2.4.2 Paginatitel
-description: Webpagina's hebben titels die het onderwerp of doel beschrijven.
+description: Elke pagina heeft een eigen titel die beschrijft waar de pagina over gaat. Zo vinden bezoekers met meerdere tabbladen open snel de juiste pagina terug.
 slug: 2.4.2
 keywords:
   - WCAG
-  - Niveau A
+  - A
   - bedienbaar
   - navigeerbaar
   - operable
@@ -33,15 +33,15 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.4.2-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
   {"WCAG-succescriterium 2.4.2 Paginatitel"}
 </WcagHeadingGroup>
+
+## Uitleg
 
 <Summary />
 
@@ -53,7 +53,7 @@ Een goede paginatitel begint met de meest specifieke informatie: eerst de pagina
 
 ### Paginatitel ontbreekt of is leeg
 
-Elke pagina moet een `<title>`-element in de `<head>` van de HTML hebben. Ontbreekt het element of is het leeg, dan toont de browser de URL in het tabblad. Een screenreader leest dan de URL voor — dat zegt niets over de inhoud.
+Elke pagina moet een `<title>`-element in de `<head>` van de HTML hebben. Ontbreekt het element of is het leeg, dan toont de browser de URL in het tabblad. Een screenreader leest dan de URL voor, en dat zegt niets over de inhoud.
 
 **Hoe te testen:** bekijk het tabblad van je browser. Staat daar een beschrijvende titel of een URL? In de DevTools controleer je of het `<title>`-element aanwezig is en tekst bevat.
 
@@ -138,7 +138,7 @@ Een titel als "Pagina 1" of "Welkom" zegt niets over het doel van de pagina. Een
 
 In een <span lang="en">single-page</span> applicatie (SPA) verandert de content zonder dat de browser een nieuwe pagina laadt. De titel in het `<title>`-element wordt dan bijgewerkt bij elke navigatie. Gebeurt dat niet, dan blijft de oude titel staan en kondigt een screenreader de nieuwe pagina niet aan.
 
-**Hoe te testen:** navigeer binnen de applicatie en controleer of de titel in het tabblad verandert bij elke paginawijziging. In de DevTools console controleer je de waarde van `document.title`.
+**Hoe te testen:** wissel binnen de applicatie tussen pagina's en controleer of de titel in het tabblad verandert bij elke paginawijziging. In de DevTools console controleer je de waarde van `document.title`.
 
 <Guideline appearance="do" title="Titel bijwerken bij elke routewijziging met vanilla JavaScript">
     ```javascript
@@ -250,20 +250,20 @@ In een tabblad is alleen het begin van de titel zichtbaar zodra meerdere tabblad
 1. Controleer of elke pagina een `<title>`-element heeft in de `<head>`. Open de broncode of inspecteer het element in de DevTools.
 2. Controleer of de titel niet leeg is en geen standaardtekst bevat zoals "Untitled Document" of "Home".
 3. Controleer of de paginanaam vóór de sitenaam staat.
-4. Test <span lang="en">single-page</span> applicaties: navigeer tussen pagina's en controleer of `document.title` wordt bijgewerkt. Bekijk dit in de DevTools-console met `document.title`.
+4. Test <span lang="en">single-page</span> applicaties: wissel tussen pagina's en controleer of `document.title` wordt bijgewerkt. Bekijk dit in de DevTools-console met `document.title`.
 5. Controleer foutscenario's: wordt de titel bijgewerkt na een formuliervalidatiefout?
 6. Gebruik <span lang="en">axe DevTools</span>, <span lang="en">WAVE</span> of <span lang="en">Lighthouse</span> voor een eerste scan. Een ontbrekend of leeg `<title>`-element wordt automatisch gedetecteerd. Of de titel inhoudelijk klopt, controleer je handmatig.
 
 ## Gerelateerde succescriteria
 
-- [2.4.4 Linkdoel in context](https://nldesignsystem.nl/wcag/2.4.4/): net als de paginatitel beschrijft ook de linktekst een bestemming. Relevante achtergrond als je werkt aan duidelijke navigatie.
-- [2.4.6 Koppen en labels](https://nldesignsystem.nl/wcag/2.4.6/): koppen en labels helpen, net als de paginatitel, bij oriëntatie op de pagina.
-- [3.2.3 Consistente navigatie](https://nldesignsystem.nl/wcag/3.2.3/): als navigatie consistent is, wordt de paginatitel het belangrijkste onderscheidende element tussen pagina's.
+- [2.4.4 Linkdoel in context](/wcag/2.4.4/): net als de paginatitel beschrijft ook de linktekst een bestemming. Relevante achtergrond als je werkt aan duidelijke navigatie.
+- [2.4.6 Koppen en labels](/wcag/2.4.6/): koppen en labels helpen, net als de paginatitel, bij oriëntatie op de pagina.
+- [3.2.3 Consistente navigatie](/wcag/3.2.3/): als navigatie consistent is, wordt de paginatitel het belangrijkste onderscheidende element tussen pagina's.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 2.4.2 Paginatitel](https://www.w3.org/Translations/WCAG22-nl/#paginatitel) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 2.4.2: Page Titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [WCAG 2.2: Succescriterium 2.4.2 Paginatitel](https://www.w3.org/Translations/WCAG22-nl/#paginatitel): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 2.4.2: Page Titled</span>](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -282,12 +282,6 @@ In een tabblad is alleen het begin van de titel zichtbaar zodra meerdere tabblad
 - Nederlandse vertaling van het WCAG-succescriterium: [2.4.2 Paginatitel](https://www.w3.org/Translations/WCAG22-nl/#page-titled).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.2 Page Titled</span>](https://www.w3.org/WAI/WCAG22/quickref/#page-titled).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.2 Page Titled</span>](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
