@@ -10,7 +10,7 @@ interface EstafetteBadgeProps {
 export const EstafetteBadge = ({ state }: EstafetteBadgeProps) => {
   const stateModifier = toKebabCase(state);
   return (
-    <DataBadge className={clsx('estafette-badge', stateModifier && `estafette-badge--${stateModifier}`)}>
+    <DataBadge className={clsx('ma-estafette-badge', stateModifier && `ma-estafette-badge--${stateModifier}`)}>
       {state}
     </DataBadge>
   );

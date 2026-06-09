@@ -122,7 +122,8 @@ test.describe('SEO values', async () => {
       });
 
       test.skip('The page title is less then 60 chars', async () => {
-        await expect(values.title.length).toBeLessThanOrEqual(60);
+        const [title] = values.title.split(' ·');
+        await expect(title.length).toBeLessThanOrEqual(60);
       });
 
       test('Page description is set', async () => {

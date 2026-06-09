@@ -1,7 +1,4 @@
-.external-link {
-}
-
-.external-link__icon {
+.ma-external-link__icon {
   fill: currentColor;
-  margin-left: 0.5ch;
+  margin-inline-start: 0.5ch;
 }

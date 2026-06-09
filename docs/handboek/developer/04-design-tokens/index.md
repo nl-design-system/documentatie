@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Design tokens
 pagination_label: Design tokens
 description: NL Design System Design tokens
+slug: /handboek/developer/design-tokens/
 ---
 
 # Design tokens
