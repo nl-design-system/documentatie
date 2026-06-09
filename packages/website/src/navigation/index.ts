@@ -96,13 +96,13 @@ interface NavigationGroupResolved extends NavigationGroup {
   items: NavigationElementResolved[];
 }
 
-export interface NavigationRoot {
+export type NavigationRoot = () => {
   /** A tree structure of all resolved NavigationElements starting with a NavigationGroup  */
   navigationTree: NavigationGroupResolved;
 
   /** A flat list of all resolved NavigationElements */
-  navigationList: Set<NavigationElementResolved>;
-}
+  navigationList: NavigationElementResolved[];
+};
 
 export function isNavigationGroup(object?: NavigationElement): object is NavigationGroup {
   return object?.type === 'group';
@@ -336,7 +336,7 @@ export async function navigationRoot(group: Promise<NavigationGroup>) {
 
   navigationTree.items = navigationTree.items.map(walkTree).filter(Boolean) as NavigationElementResolved[];
 
-  return { navigationTree, navigationList };
+  return () => structuredClone({ navigationTree, navigationList: [...navigationList] });
 }
 
 async function getEntryWithFilepath(filePath: string) {

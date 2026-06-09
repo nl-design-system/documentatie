@@ -12,15 +12,21 @@ function markExpanded(group: NavigationGroup) {
  * Helper fuction that mark `NavigationElement`s with a `current` status based on the provided `pathname`
  */
 export async function withCurrentIndication(navigationRoot: Promise<NavigationRoot>, pathname: string) {
-  const { navigationTree, navigationList } = await navigationRoot;
+  const { navigationTree, navigationList } = (await navigationRoot)();
 
   const currentElement = await getNavigationElement(navigationList, pathname);
   if (currentElement) {
     currentElement.current = true;
   }
 
-  if (currentElement?.parent) {
+  // mark all ancestors as expanded, except the home
+  if (currentElement?.parent && currentElement.parent !== navigationTree) {
     markExpanded(currentElement.parent);
+  }
+
+  // only when the homepage is visible, mark it as the current page
+  if (pathname === '/') {
+    navigationTree.current = true;
   }
 
   return { navigationTree, navigationList };

@@ -100,8 +100,8 @@ const footerNavigationItems = [
           <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
           <NavList>
             {
-              mainNavigationItems.map(({ href, label, expanded }) => (
-                <NavListLink href={href} aria-current={expanded}>
+              mainNavigationItems.map(({ href, label, expanded, current }) => (
+                <NavListLink href={href} aria-current={expanded || current ? 'page' : null}>
                   {label}
                 </NavListLink>
               ))

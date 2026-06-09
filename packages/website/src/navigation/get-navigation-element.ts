@@ -3,8 +3,8 @@ import type { NavigationElement, NavigationGroup, NavigationItem } from './index
 /**
  * Get an element in the navigation tree based on a href.
  */
-export async function getNavigationElement(navigationElementList: Set<NavigationElement>, href: string) {
-  return navigationElementList.values().find((element: NavigationElement) => {
+export async function getNavigationElement(navigationElementList: NavigationElement[], href: string) {
+  return navigationElementList.find((element: NavigationElement) => {
     const _href = (element as NavigationItem)?.href || (element as NavigationGroup)?.index?.href;
     return trimSlashes(_href) === trimSlashes(href);
   });

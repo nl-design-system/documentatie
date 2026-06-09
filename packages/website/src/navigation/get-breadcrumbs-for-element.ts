@@ -7,7 +7,7 @@ import { getNavigationElement } from './get-navigation-element';
  * `href` or `NavigationElement`.
  */
 export async function getBreadcrumbsForElement(
-  navigationElementList: Set<NavigationElement>,
+  navigationElementList: NavigationElement[],
   input: string | NavigationElement,
 ): Promise<NavigationElement[]> {
   const parents: Set<NavigationGroup> = new Set();
