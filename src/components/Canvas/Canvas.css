@@ -13,20 +13,22 @@
   --utrecht-surface-background-color: hsl(30 33% 96%);
   --utrecht-document-background-color: white;
 
+  overflow: hidden;
+
   /* Contain example code within this elements boundaries */
   position: relative;
-  overflow: hidden;
 }
 
 .nlds-canvas__example-document {
-  padding-inline-start: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 16px;
   padding-block-end: 16px;
+  padding-block-start: 16px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 
 .nlds-canvas__example:empty {
-  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 .nlds-canvas__code-block {

@@ -58,6 +58,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
 import { DesignTokens } from "@site/src/components/DesignTokens";
@@ -75,7 +76,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <ComponentAliases component={component} />
 
-<Card className="implementation-card">
+<Card className="ma-implementation-card">
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
@@ -143,3 +144,5 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />

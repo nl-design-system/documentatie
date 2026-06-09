@@ -67,6 +67,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { general, visualDesign, zoom, keyboard, screenreader } from "./_criterialist.tsx";
 
@@ -86,6 +87,8 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 ## Acceptatiecriteria
 
