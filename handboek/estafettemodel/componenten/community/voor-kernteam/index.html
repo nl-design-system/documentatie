@@ -40,8 +40,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.ea820451.css" />
-  <script src="/assets/js/runtime~main.2f2e1a19.js" defer="defer"></script>
-  <script src="/assets/js/main.db5c92f8.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.d9635e78.js" defer="defer"></script>
+  <script src="/assets/js/main.c92ca313.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -237,7 +237,7 @@
              <div class="tocCollapsible_RuM8 theme-doc-toc-mobile tocMobile_zSi9"><button type="button" class="clean-btn tocCollapsibleButton_XjgU">Op deze pagina</button></div>
              <div class="theme-doc-markdown markdown">
               <header><h1 id="stappenplan-community-door-het-kernteam" class="utrecht-heading-1">Stappenplan: Community door het kernteam</h1></header>
-              <p>Het kernteam volgt dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de <a href="https://github.com/orgs/nl-design-system/projects/29" class="utrecht-link utrecht-link--html-a">&#x27;Community&#x27; status</a> van het <a href="https://www.nldesignsystem.nl/componenten/definition-of-done" class="utrecht-link utrecht-link--html-a">Estafettemodel</a>. Organisaties die een component bij willen dragen kunnen het <a href="/handboek/estafettemodel/componenten/community-stappenplan/voor-organisaties/" class="utrecht-link utrecht-link--html-a">Stappenplan voor organisaties</a> gebruiken.</p>
+              <p>Het kernteam volgt dit stappenplan om een component van alle checkpoints 🚩 te voorzien die nodig zijn voor de <a href="https://github.com/orgs/nl-design-system/projects/29" class="utrecht-link utrecht-link--html-a">&#x27;Community&#x27; status</a> van het <a href="https://www.nldesignsystem.nl/handboek/component-bijdragen/definition-of-done" class="utrecht-link utrecht-link--html-a">Estafettemodel</a>. Organisaties die een component bij willen dragen kunnen het <a href="/handboek/estafettemodel/componenten/community/voor-organisaties/" class="utrecht-link utrecht-link--html-a">Stappenplan voor organisaties</a> gebruiken.</p>
               <p>Onderstaande stappen zijn van toepassing op 1 implementatie uit de community. Alle checks die je uitvoert gelden dus voor deze ene implementatie.</p>
               <p>Er kunnen meerdere community implementaties zijn die volledig voldoen, maar voor dit bord kijken we naar een component die het meest ver is. De component heeft een Community status als er minimaal één implementatie beschikbaar is die aan alle checkpoints voldoet. Voordat je begint kies je het <a href="https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten" class="utrecht-link utrecht-link--html-a">Community Componenten bord op GitHub</a> waar de component de meeste checks heeft behaald. Dit bord gebruik je vervolgens om de checks die kijken naar &quot;tenminste één organisatie&quot; mee te beoordelen.</p>
               <h2 id="welke-organisatie" class="utrecht-heading-2">Welke organisatie</h2>
@@ -380,9 +380,222 @@
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li>Controleer dat de component in de Storybook van de themes repository staat, met tenminste het Start-thema en Voorbeeld-thema.</li>
               </ul>
-              <p><strong></strong></p>
+              <p><strong>🚩 Checkpoint</strong>: Visuele regressietest</p>
+              <h2 id="beschikbaar-in-de-nl-design-system-figma-bibliotheek" class="utrecht-heading-2">Beschikbaar in de NL Design System Figma bibliotheek</h2>
+              <h3 id="doel-13" class="utrecht-heading-3">Doel</h3>
+              <p>Designers kunnen alle componenten direct gebruiken in hun Figma ontwerpen door te koppelen met de <a href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=197-664&amp;t=t25LHoMjEkUZyEi1-1" class="utrecht-link utrecht-link--html-a">NL Design System Figma bibliotheek</a>, en elke component met een code-implementatie is beschikaar.</p>
+              <p>Developers kunnen ontwerpen in Figma gebruiken om te vinden welke component-implementaties ze kunnen gebruiken in code, doordat het ontwerp is voorzien van links naar alle relevante informatie.</p>
+              <p>Er worden vaker toegankelijke componenten uit het design system gebruikt, doordat designers dit aanbevelen aan developers voordat de ontwikkeling van een website begint.</p>
+              <p>Gebruikers van de <a href="/handboek/huisstijl/themas/start-thema/#basis-tokens" class="utrecht-link utrecht-link--html-a">Basis-tokens</a> kunnen gebruik maken van de nieuwe component door de component design tokens over te nemen van het Start-thema.</p>
+              <p>De component kan met het Voorbeeld-thema gebruikt worden in voorbeelden, templates en patronen.</p>
+              <h3 id="actie-13" class="utrecht-heading-3">Actie</h3>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Als kernteam nemen we de component over uit de Figma omgeving van de gekozen organisatie, inclusief de bijbehorende design tokens.</li>
+               <li>Plaats de component in de NL Design System Figma bibliotheek.</li>
+               <li>Voeg de component toe aan het Start-thema.</li>
+               <li>Voeg de component toe aan het Voorbeeld-thema.</li>
+               <li>Heeft de gekozen organisatie geen Figma component? Dan ontwikkelen we deze als kernteam zelf.</li>
+              </ul>
+              <p>Organisaties die de NL Design System Figma bibliotheek vanaf dat moment dupliceren, krijgen de component direct meegeleverd. Organisaties die de NL Design System Figma bibliotheek al hadden gedupliceerd, worden op basis van de <a href="/handboek/designer/figma-changelog/" class="utrecht-link utrecht-link--html-a">Figma changelog</a> geïnformeerd over hoe ze dit component ook kunnen overnemen.</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Kopieer de URL van de componentpagina door in Figma met de rechtermuisknop op de component in de sidebar te klikken en &#x27;Copy link to page&#x27; te selecteren.</li>
+               <li>Plak de URL in de kolom &#x27;Figma URL&#x27; van het <a href="https://github.com/orgs/nl-design-system/projects/29/views/1" class="utrecht-link utrecht-link--html-a">Community projectbord</a>.</li>
+               <li>Had de gekozen organisatie zelf geen Figma component? Plak de URL dan óók in het projectbord voor deze organisatie.</li>
+              </ul>
+              <p><strong>🚩 Checkpoint</strong>: Figma URL</p>
+              <h2 id="beschikbaar-in-de-nl-design-system-component-assessment-figma" class="utrecht-heading-2">Beschikbaar in de NL Design System Component assessment (Figma)</h2>
+              <h3 id="doel-14" class="utrecht-heading-3">Doel</h3>
+              <p>Developers kunnen ontwerpen in Figma gebruiken om te vinden welke component-implementaties ze kunnen gebruiken in code, zelfs wanneer de designs niet gemaakt zijn met de bijbehorende Figma-componenten, doordat het ontwerp is voorzien van links naar alle relevante informatie.</p>
+              <p>Er worden vaker toegankelijke componenten uit het design system gebruikt, doordat designers dit aanbevelen aan developers voordat de ontwikkeling van een website begint.</p>
+              <h3 id="actie-14" class="utrecht-heading-3">Actie</h3>
+              <p>Het kernteam voegt een &#x27;Component sticker&#x27; toe aan het Figma bestand &#x27;<a href="https://www.figma.com/design/NLbNbckFo9manEihRFeJmR/NL-Design-System---Component-Assessment?m=auto&amp;t=J0gWvRWoyCJhSqot-6" class="utrecht-link utrecht-link--html-a">NL Design System Component assessment</a>&#x27;. Deze sticker linkt naar de documentatiepagina van de component op nldesignsystem.nl.</p>
+              <p>Door deze &#x27;Component stickers&#x27; op screenshots te plakken, kunnen we geïnteresseerde organisaties inzicht bieden welke componenten beschikbaar zijn om hun website of applicatie mee op te bouwen.</p>
+              <p><strong>🚩 Checkpoint</strong>: Component assessment</p>
+              <h2 id="backup-van-de-code" class="utrecht-heading-2">Backup van de code</h2>
+              <h3 id="doel-15" class="utrecht-heading-3">Doel</h3>
+              <p>Gebruikers kunnen vertrouwen dat de code van de componenten die ze gebruiken langdurig beschikbaar is voor doorontwikkeling.</p>
+              <p>Gebruikers kunnen vertrouwen dat er backups zijn van de componenten die ze gebruiken.</p>
+              <h3 id="actie-15" class="utrecht-heading-3">Actie</h3>
+              <p>Als de component wordt ontwikkeld met de NL Design System infrastructuur op <a href="https://github.com/nl-design-system" class="utrecht-link utrecht-link--html-a">github.com/nl-design-system</a>, dan wordt al automatisch een backup gemaakt van de code met Rewind.</p>
+              <p>Als code van de component in eigen infrastructuur wordt ontwikkeld, dan moet handmatig een automatische backup ingesteld worden. Neem contact op met het kernteam, en vraag om een automatisch dagelijks een mirror te maken van jouw Git repository naar een repository bij NL Design System. De backup-repository zal private zijn, zodat geen verwarring ontstaat wat de originele repository is, en voorkom je dat de backup-repository hoger kan eindigen in zoekresultaten.</p>
+              <h2 id="status-bijgewerkt-naar-community" class="utrecht-heading-2">Status bijgewerkt naar Community</h2>
+              <h3 id="doel-16" class="utrecht-heading-3">Doel</h3>
+              <p>Gebruikers kunnen herkennen dat de component klaar is om te gebruiken in eigen projecten door de badge &quot;Community&quot;.</p>
+              <h3 id="actie-16" class="utrecht-heading-3">Actie</h3>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Verander de Status van het backlog issue naar in het projectenbord Components - 2 - Community naar &#x27;Community&#x27;.</li>
+               <li>Verander het label &#x27;Help Wanted&#x27; van het backlog issue naar &#x27;Community&#x27;.</li>
+               <li>Verander het label &#x27;Help Wanted&#x27; van de GitHub Discussion naar &#x27;Community&#x27;.</li>
+               <li>Selecteer bij ‘Projects’ het volgende projectenbord: Components - 3 - Candidate.</li>
+               <li>Filter het <a href="https://github.com/orgs/nl-design-system/projects/80" class="utrecht-link utrecht-link--html-a">Candidate bord</a> op de component door te zoeken op <code class="utrecht-code">{naam-component}</code>.</li>
+               <li>Kopieer de URL na het filteren.</li>
+               <li>Voeg onderstaande tekst toe als comment aan de GitHub Discussion.</li>
+              </ul>
+              <span hidden="" id=":R3sa7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R3sa7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token title important punctuation" style="color:var(--nlds-code-block-punctuation-color);font-weight:bold">##</span><span class="token title important" style="color:var(--nlds-code-block-important-color);font-weight:bold"> ✨ Dit component is nu Community ✨</span><span class="token plain"></span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Help je mee hem door de Candidate stappen te krijgen?</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">{naam-component} op het Candidate bord</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-candidate-bord}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span>
+</span></code></pre>
+              <p><strong>🚩 Checkpoint</strong>: Status</p>
+              <h2 id="over-promotie" class="utrecht-heading-2">Over promotie</h2>
+              <p>Zet het checkpoint &#x27;Promotie&#x27; op &#x27;Done&#x27; of &#x27;Scheduled&#x27; vóór de promotie heeft plaatsgevonden. Dit doen we omdat de status &#x27;Community&#x27; pas zichtbaar wordt nadat alle checkpoint zijn behaald.</p>
+              <p><strong>🚩 Checkpoint</strong>: Promotie</p>
+              <h2 id="informatie-van-de-component-bijgewerkt-op-nldesignsystemnl" class="utrecht-heading-2">Informatie van de component bijgewerkt op nldesignsystem.nl</h2>
+              <h3 id="doel-17" class="utrecht-heading-3">Doel</h3>
+              <p>Op nldesignsystem.nl is de meest recente informatie van de component beschikbaar, op het moment dat de component wordt gepromoot door het kernteam.</p>
+              <h3 id="actie-17" class="utrecht-heading-3">Actie</h3>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Publiceer een nieuwe versie van het <code class="utrecht-code">component-progress</code> package: ga naar de <a href="https://github.com/nl-design-system/index/pulls" class="utrecht-link utrecht-link--html-a">pull requests van de Index repository</a> en zoek naar de pull request genaamd <code class="utrecht-code">docs(release): design system packages</code>. Approve en merge de pull request. Deze pull request word automatisch aangemaakt elke keer wanneer de vorige is gemerged.</li>
+               <li>
+                Wacht tot <a href="https://www.npmjs.com/package/@nl-design-system/component-progress" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">@nl-design-system/component-progress</code> op npm</a> is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij <code class="utrecht-code">Last publish</code>.
+               </li>
+               <li>Open de <a href="https://github.com/nl-design-system/documentatie" class="utrecht-link utrecht-link--html-a">documentatie repository</a> in Visual Studio Code.</li>
+               <li>Update <code class="utrecht-code">@nl-design-system/component-progress</code> in de documentatie repository. Dat doe je door lokaal in de branch <code class="utrecht-code">pnpm install @nl-design-system/component-progress@latest --save-dev -w</code> te draaien. Dit update de devDependency en de lockfile.</li>
+               <li>Maak een nieuwe branch aan en gebruik de volgende naam:</li>
+              </ul>
+              <p><strong>Branch</strong></p>
+              <span hidden="" id=":R47a7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R47a7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">build/update-component-progress-{datum-of-versienummer}</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Maak een commit en gebruik hierbij het volgende bericht:</li>
+              </ul>
+              <p><strong>Commit Message</strong></p>
+              <span hidden="" id=":R4aa7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R4aa7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">build: update component progress {versienummer}</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Publiceer je branch naar GitHub om een pull request (PR) aan te maken.</li>
+               <li>Ga naar GitHub en gebruik de volgende opzet voor je PR:</li>
+              </ul>
+              <p><strong>Title</strong></p>
+              <span hidden="" id=":R4da7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R4da7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">build: update component progress {versienummer}</span>
+</span></code></pre>
+              <p><strong>Description</strong></p>
+              <span hidden="" id=":R4fa7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R4fa7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">This PR will update the component progress to version {versienummer}.</span>
+</span></code></pre>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Klik op &#x27;Create Pull Request&#x27;</li>
+               <li>Geef een developer uit het kernteam via Slack een seintje dat de PR klaar staat.</li>
+              </ul>
+              <p><strong>🚩 Checkpoint</strong>: nldesignsystem.nl</p>
+              <h2 id="gebruik-van-component-uit-de-community-gepromoot" class="utrecht-heading-2">Gebruik van component uit de community gepromoot</h2>
+              <h3 id="doel-18" class="utrecht-heading-3">Doel</h3>
+              <p>De community weet dat hun inzet om de component te maken wordt gewaardeerd.</p>
+              <p>Bekendheid geven aan een component die een nieuwe implementatie heeft.</p>
+              <p>Gebruikers aanmoedigen een nieuwe component toe te passen in hun eigen huisstijl, in eigen code en in eigen ontwerpen, en daar feedback over te geven.</p>
+              <h3 id="actie-18" class="utrecht-heading-3">Actie</h3>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Voeg het label &#x27;📣 Promotion&#x27; toe aan het backlog issue.</li>
+              </ul>
+              <h3 id="communityleden-selecteren-voor-credits" class="utrecht-heading-3">Communityleden selecteren voor credits</h3>
+              <p>Het kernteam selecteert communityleden om credits toe te kennen. Dit kan bijvoorbeeld de maintainer van Storybook zijn of de betrokken designer. Activiteit in de Discussion of commits in de code van het community component kunnen hierbij als basis dienen.</p>
+              <h3 id="slack" class="utrecht-heading-3">Slack</h3>
+              <p>Plaats dit bericht in #nl-design-system en vul het aan waar nodig.</p>
+              <span hidden="" id=":R4ra7dalbah:"
+               >codevoorbeeld
+               <!-- -->
+               <!-- -->
+              </span>
+              <pre class="utrecht-code-block" tabindex="0" aria-labelledby=":R4ra7dalbah:" style="color: var(--nlds-code-block-color); background-color: var(--nlds-code-block-background-color)"><code class="utrecht-code-block__content"><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">✨ {naam-component} is nu Community ✨</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Met dank aan {persoon/personen} van {organisatie} is {naam-component} nu beschikbaar in de Community!</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">Bekijk {naam-component}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-nldesignsystem.nl}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain">: {beschrijving-component}</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain" style="display:inline-block">
+</span>
+</span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">Help je mee {naam-component} naar Candidate te brengen? Dat doe je bijvoorbeeld door ons in de </span><span class="token url" style="color:var(--nlds-code-block-url-color)">[</span><span class="token url content" style="color:var(--nlds-code-block-url-color)">GitHub Discussion voor de {naam-component} component</span><span class="token url" style="color:var(--nlds-code-block-url-color)">](</span><span class="token url" style="color:var(--nlds-code-block-url-color)">{url-github-discussion}</span><span class="token url" style="color:var(--nlds-code-block-url-color)">)</span><span class="token plain"> te laten weten waar je {naam-component} component gebruikt.</span>
+</span></code></pre>
+              <h3 id="heartbeat-nieuwsbrief-en-linkedin" class="utrecht-heading-3">Heartbeat, Nieuwsbrief en LinkedIn</h3>
+              <p>Vanuit het kernteam benaderen we de organisatie die de component heeft ontwikkeld. We vragen of zij de component tijdens een Heartbeat willen presenteren. Als dit niet mogelijk is, nemen wij als kernteam deze taak op ons.</p>
+              <p>Daarnaast plaatsen we een bericht in de nieuwsbrief en op LinkedIn.</p>
+              <p>Promoties hoeven niet altijd dezelfde vorm aan te houden. Gebruik onderstaande punten als voorzet:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Naam van de component.</li>
+               <li>Beschrijving van de component.</li>
+               <li>URL van de component op nldesignsystem.nl</li>
+               <li>URL van de GitHub Discussion.</li>
+               <li>Credits: persoon/personen van organisatie, eventueel gecombineerd met een kort interview.</li>
+              </ul>
+              <p>Promoties kunnen ook gecombineerd worden wanneer meerdere componenten van status veranderen.</p>
+              <h2 id="-finish" class="utrecht-heading-2">🏁 Finish</h2>
+              <p>Zo wat een werk! Je hebt alle stappen genomen en zo alle checkpoints behaald die nodig zijn voor de <a href="https://github.com/orgs/nl-design-system/projects/29/views/1" class="utrecht-link utrecht-link--html-a">&#x27;Community&#x27; status</a> van het <a href="https://www.nldesignsystem.nl/handboek/component-bijdragen/definition-of-done" class="utrecht-link utrecht-link--html-a">Estafettemodel</a>. De component gaat nu door voor de &#x27;Candidate&#x27; status.</p>
              </div>
+             <footer class="theme-doc-footer docusaurus-mt-lg">
+              <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
+               <div class="col noPrint_BL5k">
+                <a href="https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/community-stappenplan/voor-kernteam.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"
+                 ><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit__SPV" aria-hidden="true">
+                  <g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg
+                 >Bewerk deze pagina</a
+                >
+               </div>
+               <div class="col lastUpdated_t6HD"></div>
+              </div>
+             </footer>
             </article>
+            <nav class="docusaurus-mt-lg pagination-nav" aria-label="Documentatie pagina">
+             <a class="pagination-nav__link pagination-nav__link--prev" href="/handboek/estafettemodel/componenten/community/voor-organisaties/"
+              ><div class="pagination-nav__sublabel">Vorige</div>
+              <div class="pagination-nav__label">Organisaties</div></a
+             ><a class="pagination-nav__link pagination-nav__link--next" href="/handboek/estafettemodel/componenten/candidate/"
+              ><div class="pagination-nav__sublabel">Volgende</div>
+              <div class="pagination-nav__label">Overzicht</div></a
+             >
+            </nav>
+           </div>
+          </div>
+          <div class="col col--3">
+           <div class="tableOfContents_yXC1 thin-scrollbar theme-doc-toc-desktop">
+            <ul class="table-of-contents table-of-contents__left-border">
+             <li><a href="#welke-organisatie" class="table-of-contents__link toc-highlight">Welke organisatie</a></li>
+             <li><a href="#beschikbaar-in-css" class="table-of-contents__link toc-highlight">Beschikbaar in CSS</a></li>
+             <li><a href="#publiek-beschikbaar-in-storybook" class="table-of-contents__link toc-highlight">Publiek beschikbaar in Storybook</a></li>
+             <li><a href="#implementatie-voldoet-aan-naam-en-beschrijving-uit-de-github-discussion" class="table-of-contents__link toc-highlight">Implementatie voldoet aan naam en beschrijving uit de GitHub Discussion</a></li>
+             <li><a href="#implementatie-heeft-minimaal-kleur-en-typografie-beslissingen-met-design-tokens-geïmplementeerd" class="table-of-contents__link toc-highlight">Implementatie heeft minimaal kleur en typografie beslissingen met design tokens geïmplementeerd</a></li>
+             <li><a href="#apis-zoals-design-tokens-hebben-een-prefix-van-de-verantwoordelijke-organisatie" class="table-of-contents__link toc-highlight">API&#39;s zoals design tokens hebben een prefix van de verantwoordelijke organisatie</a></li>
+             <li><a href="#gebruikte-design-tokens-voldoen-aan-naamgeving-conventie-van-nl-design-system" class="table-of-contents__link toc-highlight">Gebruikte design tokens voldoen aan naamgeving conventie van NL Design System</a></li>
+             <li><a href="#eupl-12-licentie-toegepast" class="table-of-contents__link toc-highlight">EUPL-1.2 licentie toegepast</a></li>
+             <li><a href="#documentatie-heeft-de-creative-commons-0-licentie-cc0" class="table-of-contents__link toc-highlight">Documentatie heeft de Creative Commons 0 licentie (CC0)</a></li>
+             <li><a href="#beschikbaar-in-de-storybook-met-alle-nl-design-system-themas" class="table-of-contents__link toc-highlight">Beschikbaar in de Storybook met alle NL Design System thema&#39;s</a></li>
+             <li><a href="#git-repository-kan-gebruikt-worden-voor-doorontwikkeling" class="table-of-contents__link toc-highlight">Git repository kan gebruikt worden voor doorontwikkeling</a></li>
+             <li><a href="#externe-developers-kunnen-bijdragen" class="table-of-contents__link toc-highlight">Externe developers kunnen bijdragen</a></li>
+             <li><a href="#visuele-regressietests-zijn-beschikbaar-in-de-thema-storybook" class="table-of-contents__link toc-highlight">Visuele regressietests zijn beschikbaar in de Thema Storybook</a></li>
+             <li><a href="#beschikbaar-in-de-nl-design-system-figma-bibliotheek" class="table-of-contents__link toc-highlight">Beschikbaar in de NL Design System Figma bibliotheek</a></li>
+             <li><a href="#beschikbaar-in-de-nl-design-system-component-assessment-figma" class="table-of-contents__link toc-highlight">Beschikbaar in de NL Design System Component assessment (Figma)</a></li>
+             <li><a href="#backup-van-de-code" class="table-of-contents__link toc-highlight">Backup van de code</a></li>
+             <li><a href="#status-bijgewerkt-naar-community" class="table-of-contents__link toc-highlight">Status bijgewerkt naar Community</a></li>
+             <li><a href="#over-promotie" class="table-of-contents__link toc-highlight">Over promotie</a></li>
+             <li><a href="#informatie-van-de-component-bijgewerkt-op-nldesignsystemnl" class="table-of-contents__link toc-highlight">Informatie van de component bijgewerkt op nldesignsystem.nl</a></li>
+             <li><a href="#gebruik-van-component-uit-de-community-gepromoot" class="table-of-contents__link toc-highlight">Gebruik van component uit de community gepromoot</a></li>
+             <li><a href="#-finish" class="table-of-contents__link toc-highlight">🏁 Finish</a></li>
+            </ul>
            </div>
           </div>
          </div>
@@ -391,6 +604,18 @@
       </div>
      </div>
     </div>
+    <footer class="theme-layout-footer footer">
+     <div class="container container-fluid">
+      <div class="footer__links text--center">
+       <div class="footer__links">
+        <a class="footer__link-item" href="/blog/">Blog</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/project/kernteam/">Contact</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/toegankelijkheidsverklaring/">Toegankelijkheid</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/privacyverklaring/">Privacyverklaring</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/colofon/">Colofon</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/github/">GitHub</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/slack/">Slack</a><span class="footer__link-separator">·</span><a class="footer__link-item" href="/figma/">Figma</a><span class="footer__link-separator">·</span
+        ><a href="https://www.linkedin.com/company/nl-design-system/" target="_blank" rel="noopener noreferrer" class="footer__link-item"
+         >LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_ES_1"><use href="#theme-svg-external-link"></use></svg
+        ></a>
+       </div>
+      </div>
+     </div>
+    </footer>
    </div>
   </div>
  </body>
