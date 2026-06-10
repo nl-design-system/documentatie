@@ -30,9 +30,7 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
@@ -44,7 +42,7 @@ import Summary from "./summaries/_1.4.4-summary.md";
 
 <Summary />
 
-Dit succescriterium vereist dat tekst tot 200% vergroot kan worden zonder hulpsoftware en zonder verlies van inhoud of functionaliteit. Browserzoom telt mee als een manier om tekst te vergroten. Het gaat om tekst, niet om afbeeldingen van tekst. Die vallen onder [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/).
+Tekst vergroten kan met de lettergrootte-instelling van de browser en met browserzoom. Allebei moeten werken zonder dat tekst wegvalt of overlapt. De fouten hieronder ontstaan doordat containers niet meegroeien met de tekst.
 
 ## Veelgemaakte fouten
 
@@ -120,7 +118,7 @@ Een container heeft een vaste hoogte in pixels. Bij een normale lettergrootte pa
 
 Een lettergrootte die alleen in `vw` is ingesteld, schaalt mee met de breedte van het browservenster, maar niet met de tekstgrootte-instelling van de browser. Als de bezoeker de lettergrootte op 200% zet, verandert er niets aan de tekst.
 
-**Hoe te testen:** ga naar de browserinstellingen en zet de standaard lettergrootte op 200% (of "Zeer groot"). Verandert de tekst op de pagina? Als een kop of broodtekst niet groter wordt, is de lettergrootte waarschijnlijk alleen in `vw` ingesteld.
+**Hoe te testen:** ga naar de browserinstellingen en zet de standaard lettergrootte op 200% of op "Zeer groot". Verandert de tekst op de pagina? Als een kop of broodtekst niet groter wordt, is de lettergrootte waarschijnlijk alleen in `vw` ingesteld.
 
 <Guideline appearance="dont" title="Lettergrootte alleen in viewport units">
     ```css
@@ -148,7 +146,7 @@ Een lettergrootte die alleen in `vw` is ingesteld, schaalt mee met de breedte va
 
 </Guideline>
 
-Door `rem` te combineren met `vw` in een `clamp()` schaalt de tekst zowel mee met het scherm als met de browserinstelling. De `rem`-waarde zorgt ervoor dat de instelling van de bezoeker wordt gerespecteerd.
+Door `rem` te combineren met `vw` in een `clamp()` schaalt de tekst zowel mee met het scherm als met de browserinstelling. De `rem`-waarde zorgt dat de browser de instelling van de bezoeker volgt.
 
 **Wie kan dit oplossen:** een developer vervangt pure `vw`-waarden door een combinatie met `rem` via `clamp()`.
 
@@ -224,7 +222,7 @@ Door `padding` in `em` te gebruiken, schaalt de ruimte rond de tekst mee met de 
 
 ### Navigatie wordt onbruikbaar bij vergrote tekst
 
-Een horizontale navigatiebalk heeft net genoeg ruimte voor de menu-items bij de standaard lettergrootte. Bij 200% tekstvergroting passen de items niet meer naast elkaar. Ze overlappen, vallen buiten het scherm, worden afgesneden of verliezen goed contrast met de achtergrond.
+Een horizontale navigatiebalk heeft net genoeg ruimte voor de menu-items bij de standaard lettergrootte. Bij 200% tekstvergroting passen de items niet meer naast elkaar. Ze overlappen, vallen buiten het scherm of worden afgesneden.
 
 **Hoe te testen:** vergroot de tekst tot 200%. Kun je alle navigatie-items lezen en aanklikken? Valt er tekst buiten het scherm?
 
@@ -332,7 +330,7 @@ Met `flex-wrap: wrap` springen items die niet meer passen naar de volgende regel
 
 ### De bezoeker kan niet inzoomen op de pagina
 
-De viewport meta-tag bevat `maximum-scale=1` of `user-scalable=no`. De bezoeker kan niet inzoomen. Dit raakt zowel browserzoom als de knijpbeweging op mobiele apparaten.
+De viewport meta-tag bevat `maximum-scale=1` of `user-scalable=no`. De bezoeker kan niet inzoomen. De beperking blokkeert zowel browserzoom als de knijpbeweging op mobiele apparaten.
 
 **Hoe te testen:** inspecteer de `<head>` van de pagina in de <span lang="en">DevTools</span>. Bevat de viewport meta-tag `maximum-scale`, `minimum-scale` of `user-scalable=no`?
 
@@ -431,9 +429,9 @@ Labels boven het invoerveld werken het best bij tekstvergroting. Als het ontwerp
 
 ### Lange woorden vallen buiten een smalle container bij vergroting
 
-Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "verantwoordelijkheid" of "patiëntenvertegenwoordiger" past bij normale grootte nog binnen een sidebar of card, maar steekt eruit zodra de tekst groter wordt. De bezoeker moet dan horizontaal scrollen, of de tekst loopt over andere elementen heen.
+Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "verantwoordelijkheid" of "patiëntenvertegenwoordiger" past bij normale grootte nog binnen een zijbalk of card, maar steekt eruit zodra de tekst groter wordt. De bezoeker moet dan horizontaal scrollen, of de tekst loopt over andere elementen heen.
 
-**Hoe te testen:** vergroot de tekst tot 200% en bekijk smalle containers zoals zijbalken, tabel-cellen en kaarten. Steekt er tekst uit? Houd ook rekening met andere talen — Duits en Fins hebben vaak langere samenstellingen dan Nederlands.
+**Hoe te testen:** vergroot de tekst tot 200% en bekijk smalle containers zoals zijbalken, tabelcellen en kaarten. Steekt er tekst uit? Houd ook rekening met andere talen: Duits en Fins kennen langere samenstellingen dan Nederlands.
 
 <Guideline appearance="dont" title="Geen woordafbreking, lange woorden steken uit de container">
   <Canvas language="html" defaultExpandedCode>
@@ -493,100 +491,16 @@ Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "vera
 
 </Guideline>
 
-`overflow-wrap: break-word` zorgt dat een te lang woord op een willekeurig punt afgebroken wordt zodra er geen ruimte meer is. `hyphens: auto` voegt afbreekstreepjes toe op lettergreepgrenzen, maar werkt alleen als het juiste `lang`-attribuut op `<html>` (of een ouder-element) staat.
+`overflow-wrap: break-word` breekt een te lang woord op een willekeurig punt af zodra er geen ruimte meer is. `hyphens: auto` voegt afbreekstreepjes toe op lettergreepgrenzen, maar werkt alleen als het juiste `lang`-attribuut op `<html>` of op een ouder-element staat.
 
 **Wie kan dit oplossen:** een developer voegt `overflow-wrap: break-word` toe aan tekstcontainers. Voor automatische streepjes op lettergreepgrenzen: ook `hyphens: auto` plus een correct `lang`-attribuut op `<html>`.
-
-## Best practice
-
-Naast de fouten hierboven zijn er een paar technieken die de leesbaarheid van vergrote tekst extra verbeteren. Ze zijn geen verplichting vanuit dit succescriterium, maar voorkomen wel veel praktische problemen met lange woorden.
-
-### Stel het `lang`-attribuut correct in voor automatische woordafbreking
-
-`hyphens: auto` werkt alleen als de browser weet welke taal de tekst heeft. Zonder een correct `lang`-attribuut op `<html>` (of een ouder-element van de tekst) kiest de browser geen woordenboek en verschijnen er geen streepjes op lettergreepgrenzen.
-
-Nederlandse woordafbreking wordt ondersteund in Chrome, Edge en Safari. Firefox ondersteunt minder talen. Staat er een stuk tekst in een andere taal? Zet `lang` dan op het blok zelf, bijvoorbeeld `<span lang="en">`.
-
-**Hoe te testen:** open de <span lang="en">DevTools</span> en controleer het `lang`-attribuut op `<html>`. Plaats een lang Nederlands woord in een smalle container met `hyphens: auto`. Verschijnt er een afbreekstreepje op een lettergreepgrens? Verwijder het `lang`-attribuut tijdelijk en kijk of de afbreking verdwijnt.
-
-<Guideline appearance="do" title="Lang-attribuut op html plus hyphens auto">
-  ```html
-  <html lang="nl">
-    ...
-    <p style="hyphens: auto">patiëntenvertegenwoordiger</p>
-  </html>
-  ```
-</Guideline>
-
-**Wie kan dit toepassen:** een developer zet het `lang`-attribuut op `<html>`. Een webredacteur voegt het `lang`-attribuut toe op blokken tekst in een andere taal, bijvoorbeeld via een CMS-veld.
-
-### Gebruik `overflow-wrap: anywhere` in flex- en grid-layouts
-
-`overflow-wrap: break-word` en `overflow-wrap: anywhere` lijken op elkaar: ze breken een te lang woord af zodra er geen ruimte meer is. Het verschil zit in de berekening van `min-content`. `anywhere` telt het breekpunt mee, waardoor een flex- of grid-item kan krimpen tot de breedte van de container. Bij `break-word` blijft de minimumbreedte gelijk aan het langste woord, en steekt de container alsnog uit.
-
-**Hoe te testen:** plaats een lang woord zonder spaties in een flex-item met een smalle ouder. Krimpt het item mee met de container, of houdt het de breedte van het langste woord aan? Wissel tussen `break-word` en `anywhere` en vergelijk.
-
-<Guideline appearance="do" title="overflow-wrap anywhere in een flex-container">
-  ```css
-  .card-tekst {
-    overflow-wrap: anywhere;
-  }
-  ```
-</Guideline>
-
-**Wie kan dit toepassen:** een developer kiest `overflow-wrap: anywhere` boven `break-word` in flex- en grid-layouts waar containers mee moeten krimpen.
-
-### Geef redacteuren controle met soft hyphen en `<wbr>`
-
-Automatische woordafbreking heeft grenzen. Vakwoorden, productnamen, plaatsnamen en samenstellingen die niet in het woordenboek van de browser staan, worden niet afgebroken. In smalle containers steken ze er dan alsnog uit.
-
-Een redacteur of developer kan zelf een breekpunt aangeven:
-
-- `&shy;` is een onzichtbaar afbreekstreepje. De browser breekt alleen op deze plek af als het nodig is, en zet er dan een streepje neer. Geschikt voor lange Nederlandse woorden in lopende tekst.
-- `<wbr>` markeert een plek waar afbreken mag, zonder streepje. Geschikt voor URL's, e-mailadressen of technische strings waar een streepje verwarrend zou zijn.
-
-**Hoe te testen:** vergroot de tekst tot 200% en zoek in smalle containers naar lange, onbekende of samengestelde woorden. Steken ze er als één blok uit? Voeg dan een `&shy;` of `<wbr>` toe op een logische plek en test opnieuw.
-
-<Guideline appearance="do" title="Soft hyphen in een lange samenstelling">
-  ```html
-  <p>patiënten&shy;vertegenwoordiger</p>
-  ```
-</Guideline>
-
-**Wie kan dit toepassen:** een redacteur voegt `&shy;` toe in CMS-velden met lange Nederlandse samenstellingen. Een developer plaatst dezelfde tags in templates, of gebruikt `<wbr>` in URL's en technische strings.
-
-### Behandel URL's en e-mailadressen als één lang woord
-
-URL's en e-mailadressen bevatten geen spaties. De browser ziet ze als één woord en breekt ze niet automatisch af. In smalle containers — een card, een footer-kolom, een tabel-cel — steken ze bij vergrote tekst snel uit.
-
-`overflow-wrap: anywhere` lost het op door op een willekeurige plek af te breken. Voor nettere breekpunten kan een developer `<wbr>` na de schuine streep of na de `@` plaatsen.
-
-**Hoe te testen:** vergroot de tekst tot 200% en bekijk pagina's met zichtbare URL's of e-mailadressen, zoals een contactpagina, footer of card met externe link. Steekt de tekst uit de container?
-
-<Guideline appearance="do" title="Lange URL met overflow-wrap anywhere">
-  ```css
-  .contactgegevens a {
-    overflow-wrap: anywhere;
-  }
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="wbr op logische breekpunten in een URL">
-  ```html
-  <a href="https://example.nl/diensten/contact">
-    https://example.nl/<wbr>diensten/<wbr>contact
-  </a>
-  ```
-</Guideline>
-
-**Wie kan dit toepassen:** een developer voegt `overflow-wrap: anywhere` toe aan containers met URL's of e-mailadressen, of plaatst `<wbr>` op logische breekpunten in de tekst.
 
 ## Hoe te testen
 
 ### Voor iedereen
 
-1. Ga naar de browserinstellingen en zet de standaard lettergrootte op 200% (of "Zeer groot"). In Chrome: Instellingen, Vormgeving, Lettergrootte.
-2. Bekijk de pagina. Is alle tekst groter geworden? Tekst die niet verandert is mogelijk een afbeelding of gebruikt alleen viewport units.
+1. Ga naar de browserinstellingen en zet de standaard lettergrootte op 200% of op "Zeer groot". In Chrome: Instellingen, Vormgeving, Lettergrootte.
+2. Bekijk de pagina. Is alle tekst groter geworden? Tekst die niet verandert, is mogelijk een afbeelding of heeft een lettergrootte die alleen meeschaalt met de schermbreedte.
 3. Controleer of er geen tekst wordt afgesneden, overlapt of buiten het scherm valt.
 4. Controleer of alle functies nog werken: formulieren, knoppen, navigatie, menu's.
 5. Test ook met browserzoom op 200% (<kbd>Ctrl</kbd> + <kbd>+</kbd> of <kbd>Cmd</kbd> + <kbd>+</kbd>). Dit vergroot alles, niet alleen tekst.
@@ -605,18 +519,18 @@ URL's en e-mailadressen bevatten geen spaties. De browser ziet ze als één woor
 
 - [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom past de layout zich aan zodat horizontaal scrollen niet nodig is. Reflow gaat over de layout, herschalen van tekst gaat over de leesbaarheid van de tekst zelf.
 - [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/): tekst die als afbeelding wordt weergegeven kan niet vergroot worden via de browserinstelling. Gebruik echte tekst in plaats van afbeeldingen.
-- [1.4.12 Tekstafstand](/wcag/1.4.12/): aangepaste regelafstand, woordafstand en letterafstand mogen geen contentverlies veroorzaken. Dezelfde CSS-oplossingen (flexibele containers, geen vaste hoogtes) helpen bij beide criteria.
-- [1.4.3 Contrast (minimum)](/wcag/1.4.3/): vergrote tekst hoeft alleen aan de contrasteis van 3:1 te voldoen in plaats van 4,5:1. Tekst van 18pt of 14pt bold geldt als groot.
+- [1.4.12 Tekstafstand](/wcag/1.4.12/): aangepaste regelafstand, woordafstand en letterafstand mogen geen contentverlies veroorzaken. Dezelfde CSS-oplossingen helpen bij beide criteria: flexibele containers en geen vaste hoogtes.
+- [1.4.3 Contrast (minimum)](/wcag/1.4.3/): vergrote tekst hoeft alleen aan de contrasteis van 3:1 te voldoen in plaats van 4,5:1. Tekst van 18pt of vetgedrukte tekst van 14pt geldt als groot.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 1.4.4 Herschalen van tekst](https://www.w3.org/Translations/WCAG22-nl/#herschalen-van-tekst) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 1.4.4: Resize Text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [WCAG 2.2: Succescriterium 1.4.4 Herschalen van tekst](https://www.w3.org/Translations/WCAG22-nl/#herschalen-van-tekst): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 1.4.4: Resize Text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
-- Stijl - Typografie: [Introductie typografie](/richtlijnen/stijl/typografie/)
-- Stijl - Ruimte: [Introductie ruimte](/richtlijnen/stijl/ruimte/)
+- Stijl: [Introductie typografie](/richtlijnen/stijl/typografie/).
+- Stijl: [Introductie ruimte](/richtlijnen/stijl/ruimte/).
 
 ## Gebruikersonderzoek
 
@@ -628,12 +542,6 @@ URL's en e-mailadressen bevatten geen spaties. De browser ziet ze als één woor
 - Nederlandse vertaling van het WCAG-succescriterium: [1.4.4 Herschalen van tekst](https://www.w3.org/Translations/WCAG22-nl/#resize-text).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.4. Resize Text</span>](https://www.w3.org/WAI/WCAG22/quickref/#resize-text).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.4. Resize Text</span>](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
