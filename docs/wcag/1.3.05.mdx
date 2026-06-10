@@ -43,9 +43,9 @@ import Summary from "./summaries/_1.3.5-summary.md";
 
 <Summary />
 
-Op basis van het `type`-attribuut kan een browser soms al raden welk soort gegevens een veld vraagt — bijvoorbeeld bij `type="email"` of `type="tel"`. Voor het accuraat invullen van specifieke persoonlijke gegevens, zoals voornaam, huisnummer of postcode, is een `autocomplete`-attribuut met de juiste waarde nodig. Pas dan weet de browser welke opgeslagen gegevens in welk veld horen. Het `autocomplete`-attribuut maakt het ook mogelijk om iconen of labels bij velden te tonen die de bezoeker helpen begrijpen wat er wordt verwacht — onafhankelijk van de taal van de pagina.
+Op basis van het `type`-attribuut, bijvoorbeeld `type="email"` of `type="tel"`, kan een browser al raden welk soort gegevens een veld vraagt. Om specifieke persoonlijke gegevens goed in te vullen, zoals voornaam, huisnummer of postcode, heeft de browser een `autocomplete`-attribuut met de juiste waarde nodig. Pas dan weet de browser welke opgeslagen gegevens in welk veld horen. Het `autocomplete`-attribuut maakt het ook mogelijk om iconen of labels bij velden te tonen die de bezoeker helpen begrijpen wat het veld vraagt, onafhankelijk van de taal van de pagina.
 
-Dit succescriterium geldt voor invoervelden die persoonlijke gegevens van de bezoeker verzamelen. Bekijk de volledige [lijst van geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
+Dit succescriterium geldt voor invoervelden die persoonlijke gegevens van de bezoeker verzamelen. Bekijk de volledige [lijst met geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
 
 ## Veelgemaakte fouten
 
@@ -89,7 +89,7 @@ Een formulier vraagt om naam, adres, e-mailadres of andere persoonlijke gegevens
 
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt het juiste `autocomplete`-attribuut toe aan elk veld dat persoonlijke gegevens verzamelt. Bij sommige contentmanagementsystemen kan de webredactie dit attribuut toevoegen.
+**Wie kan dit oplossen:** een webredacteur voegt het `autocomplete`-attribuut toe via het CMS, als het contentmanagementsysteem dat ondersteunt. Een developer voegt het juiste `autocomplete`-attribuut toe aan elk veld dat persoonlijke gegevens verzamelt.
 
 ### Autocomplete-waarde is onjuist
 
@@ -116,7 +116,7 @@ Een veld heeft een `autocomplete`-attribuut, maar met een verkeerde waarde. Een 
 
 ### Autocomplete is uitgeschakeld op velden voor persoonlijke gegevens
 
-Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vragen, of op het `<form>`-element zelf. Een waarde op het `<form>`-element geldt voor alle velden in dat formulier. De browser mag de velden dan niet automatisch invullen. De bezoeker moet alles handmatig typen. Developers doen dit vaak om beveiligingsredenen, maar voor de meeste velden is het niet nodig en het maakt het formulier onnodig moeilijk te gebruiken.
+Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vragen, of op het `<form>`-element zelf. Een waarde op het `<form>`-element geldt voor alle velden in dat formulier. De browser mag de velden dan niet automatisch invullen. De bezoeker moet alles handmatig typen. Developers schakelen autocomplete uit om beveiligingsredenen. Voor de meeste velden is dat niet nodig en het maakt het formulier onnodig moeilijk te gebruiken.
 
 **Hoe te testen:** inspecteer de velden én het omhullende `<form>`-element in de <span lang="en">DevTools</span>. Staat er `autocomplete="off"` op velden voor naam, adres, e-mail of telefoonnummer of op het hele formulier?
 
@@ -147,7 +147,7 @@ Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vra
   ```
 </Guideline>
 
-Bij wachtwoordvelden voor een nieuw wachtwoord gebruik je `autocomplete="new-password"`. Dat signaleert aan de browser en wachtwoordmanagers dat het om een nieuw wachtwoord gaat, niet om een bestaand wachtwoord dat moet worden ingevuld.
+Bij wachtwoordvelden voor een nieuw wachtwoord gebruik je `autocomplete="new-password"`. Dat signaleert aan de browser en wachtwoordmanagers dat het om een nieuw wachtwoord gaat, niet om een bestaand wachtwoord.
 
 **Wie kan dit oplossen:** een developer verwijdert `autocomplete="off"` van het `<form>`-element en vervangt `autocomplete="off"` op de individuele velden door de juiste `autocomplete`-waarde.
 
@@ -270,7 +270,7 @@ Een bestelformulier heeft een afleveradres en een factuuradres. Met de prefixen 
 2. Controleer of de `autocomplete`-waarde overeenkomt met wat het veld vraagt. Vergelijk met de [lijst met geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
 3. Zoek in de broncode naar `autocomplete="off"` op velden voor persoonlijke gegevens. Vervang die door de juiste waarde.
 4. Controleer bestelformulieren met meerdere adressecties. Hebben de secties de juiste `shipping` of `billing` prefix?
-5. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> voor een eerste scan. Ontbrekende `autocomplete`-attributen op veelvoorkomende veldtypen worden automatisch gedetecteerd.
+5. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> voor een eerste scan. Die tools herkennen ontbrekende `autocomplete`-attributen op veelvoorkomende veldtypen automatisch.
 
 ## Veelgebruikte autocomplete-waarden
 
@@ -295,17 +295,17 @@ Een bestelformulier heeft een afleveradres en een factuuradres. Met de prefixen 
 
 ## Gerelateerde succescriteria
 
-- [1.3.1 Info en relaties](/wcag/1.3.1/): labels zijn programmatisch gekoppeld aan hun invoerveld. Autocomplete voegt daar het doel van het veld aan toe.
-- [3.3.2 Labels of instructies](/wcag/3.3.2/): zichtbare labels beschrijven wat er in een veld moet worden ingevuld. Autocomplete helpt de browser om het veld automatisch in te vullen op basis van die beschrijving.
-- [3.3.7 Overbodige invoer](/wcag/3.3.7/): informatie die de bezoeker eerder heeft ingevuld, wordt automatisch aangeboden. Autocomplete is een van de manieren om dit te realiseren.
+- [1.3.1 Info en relaties](/wcag/1.3.1/): labels zijn in de code gekoppeld aan hun invoerveld. Autocomplete voegt daar het doel van het veld aan toe.
+- [3.3.2 Labels of instructies](/wcag/3.3.2/): zichtbare labels beschrijven wat de bezoeker in een veld moet invullen. Autocomplete helpt de browser om het veld automatisch in te vullen op basis van die beschrijving.
+- [3.3.7 Overbodige invoer](/wcag/3.3.7/): informatie die de bezoeker eerder heeft ingevuld, wordt automatisch aangeboden. Autocomplete is een van de manieren om dat te doen.
 
-## Gerelateerde NL Design System-richtlijn
+## Gerelateerde NL Design System-richtlijnen
 
-Formulieren: [Autocomplete in een formulier](/richtlijnen/formulieren/voorkom-fouten/autocomplete).
+- Formulieren: [Autocomplete in een formulier](/richtlijnen/formulieren/voorkom-fouten/autocomplete).
 
-## Bronnen
+## Relevante bronnen
 
-- WCAG bevat een volledige lijst van [waarden voor autocomplete](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
+- WCAG bevat een volledige lijst met [waarden voor autocomplete](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
 - Jules Ernst van 200 OK heeft van deze lijst een [Nederlandse interpretatie van autocomplete](https://www.200ok.nl/tips/autocomplete/) gemaakt.
 
 ## Gebruikersonderzoek
