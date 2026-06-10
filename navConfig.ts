@@ -17,14 +17,14 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
-      docId: 'richtlijnen/README',
+      docId: 'richtlijnen/index',
       position: 'left',
       label: 'Richtlijnen',
       className: 'utrecht-link utrecht-link--html-a utrecht-link utrecht-link--html-a ma-navigation-bar-item',
     },
     {
       type: 'doc',
-      docId: 'componenten/README',
+      docId: 'componenten/index',
       position: 'left',
       label: 'Componenten',
       className: 'utrecht-link utrecht-link--html-a ma-navigation-bar-item',
@@ -45,7 +45,7 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
-      docId: 'project/README',
+      docId: 'project/index',
       position: 'left',
       label: 'Project',
       className: 'utrecht-link utrecht-link--html-a ma-navigation-bar-item',

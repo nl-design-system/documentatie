@@ -3,17 +3,15 @@ import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import Document from '@layouts/document.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
-import { siteTitle } from '../seo.config.ts';
+import TableOfContents from '@components/table-of-content/table-of-content.astro';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
 
-  return docs
-    .filter((page) => page.data?.unlisted !== true)
-    .map((page) => ({
-      params: { slug: page.id },
-      props: { page },
-    }));
+  return docs.map((page) => ({
+    params: { slug: page.id },
+    props: { page },
+  }));
 }
 
 const { page } = Astro.props;
@@ -21,7 +19,8 @@ const { Content } = await render(page);
 ---
 
 <Document
-  title={page.data.title ? `${page.data.title} | ${siteTitle}` : siteTitle}
+  title={page.data.title}
+  titleSm={page.data.title_sm}
   description={page.data.description}
   lang={page.data.lang}
   seoImage={page.data.image}
@@ -29,5 +28,6 @@ const { Content } = await render(page);
   keywords={page.data.keywords}
   index={page.data.unlisted !== true}
 >
+  <TableOfContents />
   <Content components={MDXComponents} />
 </Document>
