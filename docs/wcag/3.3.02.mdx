@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.3.2 Labels of instructies
 pagination_label: WCAG-succescriterium 3.3.2 Labels of instructies
-description: Formuliervelden hebben een permanent zichtbaar label en, waar nodig, instructies die uitleggen wat er wordt verwacht.
+description: Formuliervelden hebben een permanent zichtbaar label en, waar nodig, instructies die uitleggen wat de bezoeker moet invullen.
 slug: 3.3.2
 keywords:
   - WCAG
@@ -45,13 +45,13 @@ import Summary from "./summaries/\_3.3.2-summary.md";
 
 <Summary />
 
-Labels zijn permanent zichtbaar en blijven zichtbaar terwijl de bezoeker het veld invult. Een screenreader leest het label of de alt-tekst van een icoon zodra het veld focus krijgt. Instructies staan bij het veld en niet alleen in een inleidende tekst bovenaan het formulier.
+Labels zijn permanent zichtbaar, ook terwijl de bezoeker het veld invult. Een screenreader leest het label of de alt-tekst van een icoon zodra het veld focus krijgt. Instructies staan bij het veld en niet alleen in een inleidende tekst bovenaan het formulier.
 
 ## Veelgemaakte fouten
 
 ### Invoerveld heeft geen zichtbaar label
 
-Elk invoerveld heeft een zichtbaar label dat beschrijft wat er moet worden ingevuld. Een veld zonder label dwingt de bezoeker om uit de context te raden wat er wordt verwacht. Een screenreader leest alleen "invoerveld" voor zonder verdere informatie.
+Elk invoerveld heeft een zichtbaar label dat beschrijft wat de bezoeker moet invullen. Een veld zonder label dwingt de bezoeker om uit de context te raden wat het veld vraagt. Een screenreader leest alleen "invoerveld" voor zonder verdere informatie.
 
 **Hoe te testen:** bekijk het formulier. Heeft elk veld een zichtbaar label?
 
@@ -77,11 +77,11 @@ Elk invoerveld heeft een zichtbaar label dat beschrijft wat er moet worden ingev
   </Canvas>
 </Guideline>
 
-**Wie kan dit oplossen:** een developer voegt een `<label>`-element toe dat via `for` en `id` is gekoppeld aan het invoerveld.
+**Wie kan dit oplossen:** een contentmaker of webredacteur vult de labeltekst in via het CMS of de formulierbouwer, als daar een veld voor is. Een developer voegt een `<label>`-element toe dat via `for` en `id` is gekoppeld aan het invoerveld.
 
 ### Label is alleen beschikbaar voor screenreaders
 
-Een invoerveld heeft een `aria-label` of een visueel verborgen `<label>`, maar geen zichtbaar label op het scherm. Een screenreader leest het label voor, maar een ziende bezoeker ziet niet wat er in het veld moet worden ingevuld. Een zichtbaar label helpt iedereen die het formulier gebruikt, niet alleen bezoekers met hulpsoftware.
+Een invoerveld heeft een `aria-label` of een visueel verborgen `<label>`, maar geen zichtbaar label op het scherm. Een screenreader leest het label voor, maar een ziende bezoeker ziet niet wat het veld vraagt. Een zichtbaar label helpt iedereen die het formulier gebruikt, niet alleen bezoekers met hulpsoftware.
 
 **Hoe te testen:** bekijk het formulier zonder hulpsoftware. Heeft elk veld een zichtbaar label? Inspecteer de velden in de DevTools: staat het label in een `aria-label` of in een element met `class="sr-only"` of vergelijkbare visueel verborgen CSS?
 
@@ -111,7 +111,7 @@ Een invoerveld heeft een `aria-label` of een visueel verborgen `<label>`, maar g
 
 ### Placeholder wordt gebruikt als label
 
-Een placeholder verdwijnt zodra de bezoeker begint te typen. De bezoeker weet dan niet meer wat er in het veld moet worden ingevuld.
+Een placeholder verdwijnt zodra de bezoeker begint te typen. De bezoeker weet dan niet meer wat het veld vraagt.
 Placeholders zijn niet bedoeld als vervanging van een label.
 
 **Hoe te testen:** begin met typen in een veld dat alleen een placeholder heeft. Verdwijnt de placeholder zodra je begint te typen?
@@ -233,11 +233,11 @@ Een formulier heeft verplichte en optionele velden, maar er is geen aanduiding w
 
 Als de meeste velden verplicht zijn, markeer dan de optionele velden met "(optioneel)" in plaats van alle verplichte velden met een sterretje.
 
-**Wie kan dit oplossen:** een contentmaker of webredacteur voegt de zichtbare markering toe aan het labeltekst-veld in het CMS, bijvoorbeeld een sterretje of het woord "verplicht". Een developer zorgt dat het `required`-attribuut op het invoerveld staat en dat de legenda bij het sterretje aanwezig is.
+**Wie kan dit oplossen:** een contentmaker of webredacteur voegt de zichtbare markering toe aan de labeltekst in het CMS, bijvoorbeeld een sterretje of het woord "verplicht". Een developer zorgt dat het `required`-attribuut op het invoerveld staat en dat de legenda bij het sterretje aanwezig is.
 
 ### Instructie staat alleen bovenaan het formulier
 
-Een formulier begint met een blok instructietekst dat uitlegt hoe het formulier moet worden ingevuld. Verder in het formulier ontbreken instructies bij de individuele velden. Bij een lang formulier is de bezoeker de instructie vergeten tegen de tijd dat het betreffende veld in beeld komt.
+Een formulier begint met een blok instructietekst dat uitlegt hoe de bezoeker het formulier moet invullen. Verder in het formulier ontbreken instructies bij de individuele velden. Bij een lang formulier is de bezoeker de instructie vergeten tegen de tijd dat het veld in beeld komt.
 
 **Hoe te testen:** scroll door een lang formulier. Zijn de instructies beschikbaar bij de velden waar ze relevant zijn, of moet je terugscrollen naar het begin?
 
@@ -375,10 +375,10 @@ Als er geen ruimte is voor zichtbare tekst naast het icoon, zorg dan dat het ico
 
 ### Voor iedereen
 
-1. Bekijk elk invoerveld in het formulier. Heeft elk veld een zichtbaar label dat beschrijft wat er wordt verwacht?
+1. Bekijk elk invoerveld in het formulier. Heeft elk veld een zichtbaar label dat beschrijft wat je moet invullen?
 2. Controleer of verplichte velden zijn gemarkeerd. Weet je voor het invullen welke velden verplicht zijn?
 3. Controleer velden die een specifiek formaat verwachten. Staat het verwachte formaat bij het veld?
-4. Begin te typen in een veld. Verdwijnt het label? Zo ja, weet je nog wat er wordt verwacht?
+4. Begin te typen in een veld. Verdwijnt het label? Zo ja, weet je nog wat je moet invullen?
 
 ### Voor developers
 
@@ -386,14 +386,14 @@ Als er geen ruimte is voor zichtbare tekst naast het icoon, zorg dan dat het ico
 2. Controleer of instructies via `aria-describedby` zijn gekoppeld aan het bijbehorende veld. Navigeer met een screenreader naar het veld en controleer of de instructie wordt voorgelezen.
 3. Controleer of verplichte velden het `required`-attribuut of `aria-required="true"` hebben.
 4. Controleer groepen gerelateerde velden. Zijn ze gegroepeerd met `<fieldset>` en `<legend>`?
-5. Test labels die in het veld zweven (<span lang="en">floating labels</span>) bij 200% en 400% zoom. Blijven ze zichtbaar en leesbaar?
+5. Test labels die in het veld zweven, zogeheten <span lang="en">floating labels</span>, bij 200% en 400% zoom. Blijven ze zichtbaar en leesbaar?
 6. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">WAVE</span> voor een eerste scan. Ontbrekende labels worden automatisch herkend. Of de labels inhoudelijk duidelijk zijn, controleer je handmatig.
 
 ## Gerelateerde succescriteria
 
-- [1.3.1 Info en relaties](/wcag/1.3.1/): labels zijn programmatisch gekoppeld aan hun invoerveld. Lees hier meer als de koppeling tussen label en veld ontbreekt in de code.
+- [1.3.1 Info en relaties](/wcag/1.3.1/): labels zijn in de code gekoppeld aan hun invoerveld. Lees hier meer als die koppeling ontbreekt.
 - [3.3.1 Foutidentificatie](/wcag/3.3.1/): duidelijke labels en instructies voorkomen fouten. Als er toch fouten ontstaan, beschrijft de foutmelding wat er mis is.
-- [3.3.3 Foutsuggestie](/wcag/3.3.3/): als het systeem weet hoe een fout gecorrigeerd kan worden, biedt het een suggestie aan. Instructies bij het veld verminderen de noodzaak voor suggesties achteraf.
+- [3.3.3 Foutsuggestie](/wcag/3.3.3/): als het systeem weet hoe de bezoeker een fout kan herstellen, biedt het een suggestie aan. Instructies bij het veld verminderen de noodzaak voor suggesties achteraf.
 - [2.5.3 Label in naam](/wcag/2.5.3/): de zichtbare tekst van een label komt overeen met de toegankelijke naam. Relevant als je `aria-label` gebruikt dat afwijkt van het zichtbare label.
 - [1.4.3 Contrast (minimum)](/wcag/1.4.3/): labels en instructietekst voldoen aan de minimale contrasteis van 4,5:1. Lichtgrijze placeholders halen die eis niet.
 - [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): een icoon dat als label dient, moet een contrast van minimaal 3:1 hebben ten opzichte van de achtergrond.
