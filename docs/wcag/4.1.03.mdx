@@ -44,7 +44,7 @@ import Summary from "./summaries/_4.1.3-summary.md";
 
 <Summary />
 
-Er zijn twee urgentieniveaus. `role="status"` (of `aria-live="polite"`) wacht tot de screenreader klaar is met de huidige spraak. `role="alert"` (of `aria-live="assertive"`) onderbreekt de huidige spraak en leest het bericht direct voor.
+Er zijn twee urgentieniveaus. `role="status"` of `aria-live="polite"` wacht tot de screenreader klaar is met de huidige spraak. `role="alert"` of `aria-live="assertive"` onderbreekt de huidige spraak en leest het bericht direct voor.
 
 Plaats de live region als lege container al in de HTML bij het laden van de pagina, en vul de tekst later in via JavaScript. Een screenreader herkent een live region pas als die al in de HTML staat. Verschijnen het element en de tekst tegelijk, dan mist de screenreader het bericht.
 
@@ -567,7 +567,7 @@ Het element met `role="status"` of `aria-live` staat al in de HTML bij het laden
 
 1. Zoek in de HTML naar elementen die dynamisch verschijnen na een gebruikersactie. Controleer of ze een `role="status"`, `role="alert"` of `aria-live`-attribuut hebben.
 2. Controleer of live regions al in de HTML staan bij het laden van de pagina en niet tegelijk met de tekst worden toegevoegd.
-3. Controleer het urgentieniveau: `role="status"` voor niet-urgente berichten (bevestigingen, zoekresultaten, voortgang), `role="alert"` voor urgente meldingen (fouten, verlopen sessies, mislukte acties).
+3. Controleer het urgentieniveau: `role="status"` voor niet-urgente berichten zoals bevestigingen, zoekresultaten en voortgang, `role="alert"` voor urgente meldingen zoals fouten, verlopen sessies en mislukte acties.
 4. Controleer foutmeldingen na een formulierverzending. Krijgt de samenvatting de focus, of is het een live region met `role="alert"`? Eén van beide volstaat, beide tegelijk niet.
 5. Test toast-notificaties met een screenreader. Worden ze voorgelezen voordat ze verdwijnen?
 6. Controleer voortgangsindicatoren. Hebben ze `role="progressbar"` met de juiste ARIA-attributen?
