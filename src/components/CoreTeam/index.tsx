@@ -2,6 +2,7 @@ import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-libra
 import clsx from 'clsx';
 import Astrid from './Astrid';
 import Jeffrey from './Jeffrey';
+import Julia from './Julia';
 import Robbert from './Robbert';
 import Rozerin from './Rozerin';
 import Yolijn from './Yolijn';
@@ -12,7 +13,7 @@ import Richard from './Richard';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Renate, Peter, Sandra, Richard];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Renate, Peter, Sandra, Richard, Julia];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
