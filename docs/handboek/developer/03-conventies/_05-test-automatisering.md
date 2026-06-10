@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Testautomatisering
 pagination_label: Testautomatisering
 description: Aanpak voor testautomatisering van NL Design System
+slug: /handboek/developer/test-automatisering-conventie/
 keywords:
   - developer
   - bijdragen
