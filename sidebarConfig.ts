@@ -281,21 +281,19 @@ const sidebars: SidebarsConfig = {
           ],
         },
         {
-          type: 'doc',
-          id: 'community/expertteam-digitale-toegankelijkheid/index',
+          type: 'category',
+          label: 'Expertteam Digitale Toegankelijkheid',
+          link: {
+            type: 'doc',
+            id: 'community/expertteam-digitale-toegankelijkheid/index',
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'community/expertteam-digitale-toegankelijkheid/design-tokens-lint/index',
+            },
+          ],
         },
-        // {
-        //   type: 'category',
-        //   label: 'Expertteam Digitale Toegankelijkheid',
-        //   link: {
-        //     type: 'doc',
-        //     id: 'community/expertteam-digitale-toegankelijkheid/index',
-        //   },
-        //   items: [
-        //     { type: 'doc', id: 'community/expertteam-digitale-toegankelijkheid/index' },
-        //     { type: 'doc', id: 'community/expertteam-digitale-toegankelijkheid/meedenken-meld-je-aan' },
-        //   ],
-        // },
         {
           type: 'category',
           label: 'Bijeenkomsten',
