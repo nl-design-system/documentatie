@@ -18,7 +18,7 @@ Redirect 301 "/events/design-systems-week-2023/overzicht" "/events/design-system
 Redirect 301 "/footer/colofon" "/colofon"
 Redirect 301 "/footer/toegankelijkheidsverklaring" "/toegankelijkheidsverklaring"
 Redirect 301 "/handboek/candidate-stappenplan" "/handboek/estafettemodel/componenten/candidate-stappenplan"
-Redirect 301 "/handboek/community-stappenplan" "/handboek/estafettemodel/componenten/community-stappenplan"
+Redirect 301 "/handboek/community-stappenplan" "/handboek/estafettemodel/componenten/community"
 Redirect 301 "/handboek/component-bijdragen/candidate-stappenplan" "/handboek/estafettemodel/componenten/candidate-stappenplan"
 Redirect 301 "/handboek/component-bijdragen/community-stappenplan" "/handboek/estafettemodel/componenten/community-stappenplan"
 Redirect 301 "/handboek/component-bijdragen/community-stappenplan/voor-kernteam" "/handboek/estafettemodel/componenten/community-stappenplan/voor-kernteam"
@@ -26,7 +26,8 @@ Redirect 301 "/handboek/component-bijdragen/community-stappenplan/voor-organisat
 Redirect 301 "/handboek/component-bijdragen/definition-of-done" "/handboek/estafettemodel/componenten/definition-of-done"
 Redirect 301 "/handboek/component-bijdragen/hall-of-fame-stappenplan" "/handboek/estafettemodel/componenten/hall-of-fame-stappenplan"
 Redirect 301 "/handboek/component-bijdragen/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted-stappenplan"
-Redirect 301 "/handboek/componenten-gebruiken" "/handboek/componenten-kiezen"
+Redirect 301 "/handboek/estafettemodel/componenten/help-wanted-stappenplan/" "/handboek/estafettemodel/componenten/help-wanted/"
+Redirect 301 "/handboek/componenten-gebruiken" "/handboek/componenten-vinden"
 Redirect 301 "/handboek/estafettemodel/componenten/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted"
 Redirect 301 "/handboek/estafettemodel/componenten/hall-of-fame-stappenplan" "/handboek/estafettemodel/componenten/hall-of-fame"
 Redirect 301 "/handboek/designer/breaking-changes" "/handboek/designer/nieuwe-versie-publiceren/versiebeheer-voor-design-tokens"
@@ -34,16 +35,17 @@ Redirect 301 "/handboek/hall-of-fame-stappenplan" "/handboek/estafettemodel/comp
 Redirect 301 "/handboek/help-wanted-stappenplan" "/handboek/estafettemodel/componenten/help-wanted-stappenplan"
 Redirect 301 "/handboek/leverancier/leverancier-sessie-maart-2023" "/handboek/leverancier/introductie"
 Redirect 301 "/non-modal-dialog" "/dialog"
-Redirect 301 "/onderzoek" "/voorbeelden/onderzoek"
+Redirect 301 "/onderzoek" "/voorbeelden/onderzoek/"
 Redirect 301 "/pagination" "/page-number-navigation"
 Redirect 301 "/project/global-design-system/" "/community/global-design-system/"
 Redirect 301 "/project/links/" "/community/design-systems/"
 Redirect 301 "/project/over-nlds" "/project/over-nl-design-system"
 Redirect 301 "/project/wie-doet-mee" "/community/wie-doet-mee"
+Redirect 301 "/project/global-design-system/" "/community/global-design-system"
 Redirect 301 "/richtlijnen/formulieren/overzicht" "/richtlijnen/formulieren"
 Redirect 301 "/richtlijnen/formulieren/overzicht/" "/richtlijnen/formulieren"
-Redirect 301 "/richtlijnen/introductie" "/richtlijnen"
-Redirect 301 "/richtlijnen/introductie/" "/richtlijnen"
+Redirect 301 "/richtlijnen/introductie" "/richtlijnen/"
+Redirect 301 "/richtlijnen/introductie/" "/richtlijnen/"
 Redirect 301 "/richtlijnen/stijl/overzicht" "/richtlijnen/stijl"
 Redirect 301 "/richtlijnen/stijl/overzicht/" "/richtlijnen/stijl"
 Redirect 301 "/richtlijnen/stijl/typografie/opmaak" "/richtlijnen/stijl/typografie/uitlijning"
@@ -57,7 +59,6 @@ Redirect 301 "/voorbeelden/templates" "/voorbeelden/patronen-en-templates"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/overzicht/" "/community/community-sprints/mijn-services-community/overzicht/"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/" "/community/community-sprints/mijn-services-community/"
 Redirect 301 "/community/community-sprints/overheidsbrede-portalen-community/aanmelden/" "/community/community-sprints/mijn-services-community/aanmelden/"
-Redirect 301 "/handboek/developer/aan-de-slag/" "/handboek/developer/introductie/"
 Redirect 301 "/handboek/developer/samenwerken-aan-componenten/" "/handboek/componenten-vinden/"
 Redirect 301 "/handboek/componenten-kiezen/" "/handboek/componenten-vinden/"
 Redirect 301 "/handboek/developer/zonder-front-end-framework/" "/handboek/developer/aan-de-slag/prototypes/zonder-front-end-framework/"
@@ -177,6 +178,7 @@ Redirect 301 "/belangenorganisatie" "/community/belangenorganisaties/aanmelden/"
 
 # Convenience redirects for use in code
 Redirect 301 "/lint-staged" "/linting-en-code-formatting#lint-staged"
+Redirect 301 "/codeowners" "/handboek/developer/github-teams-en-code-owners/#codeowners"
 
 # Convenience redirects because pages have been deleted,  but we have some idea what a helpfull alternative could be
 Redirect 301 "/handboek/developer/architectuur/" "/handboek/developer/introductie/"
@@ -205,5 +207,11 @@ Redirect 307 "/events/heartbeat/deelnemen" https://teams.microsoft.com/l/meetup-
 
 Redirect 307 "/enquete-2025/" "https://forms.office.com/Pages/ResponsePage.aspx?id=oj0da1E3PU6zyeZ4TIutcO-qDj4A3l9NqEOUBB9i7MlUNlg5Szk4T1UxWFo0RUJQNTM3T0lBVU1ZUS4u"
 Redirect 307 "/enquete-2025" "https://forms.office.com/Pages/ResponsePage.aspx?id=oj0da1E3PU6zyeZ4TIutcO-qDj4A3l9NqEOUBB9i7MlUNlg5Szk4T1UxWFo0RUJQNTM3T0lBVU1ZUS4u"
+
+Redirect 307 "/theme-wizard/" "https://theme-wizard.nl-design-system-community.nl"
+Redirect 307 "/theme-wizard" "https://theme-wizard.nl-design-system-community.nl"
+
+Redirect 307 "/project/expertteam-digitale-toegankelijkheid/meedenken/" "https://laposta.nl/f/ssrxdc7irqdj"
+Redirect 307 "/project/expertteam-digitale-toegankelijkheid/meedenken" "https://laposta.nl/f/ssrxdc7irqdj"
 
 ErrorDocument 404 /404.html

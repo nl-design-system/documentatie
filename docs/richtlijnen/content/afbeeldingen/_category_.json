@@ -2,7 +2,7 @@
   "label": "Afbeeldingen",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/content/afbeeldingen/README"
+    "id": "richtlijnen/content/afbeeldingen/index"
   },
   "customProps": {
     "showLinkedDoc": true

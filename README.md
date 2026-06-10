@@ -166,3 +166,42 @@ Optie 2: markeer het hele blok als JSX:
 ```mdx
 {<Button>My button text</Button>}
 ```
+
+### OpenGraph image toevoegen aan een pagina
+
+De Astro omgeving biedt de mogelijkheid om per pagina een OpenGraph image toe te voegen.
+Wanneer een pagina gedeeld wordt via Slack of sociale media, zal deze afbeelding gebruikt worden als ondersteunende visual.
+
+De aangeraden afmeting van een OpenGraph image is 1200x630.
+
+#### Uploaden van de afbeelding
+
+Begin met het uploaden van de afbeelding op de `assets` branch. Afbeeldingen en video's maken een git repository erg zwaar,
+daarom hebben we ervoor gekozen om alle afbeeldingen op een aparte branch te verzamelen.
+
+In de [README](https://github.com/nl-design-system/documentatie/tree/assets?tab=readme-ov-file#assets-branch-voor-nl-design-system-documentatie) van de `assets` branch staat uitgelegd hoe je afbeeldingen kunt uploaden.
+
+#### Toevoegen van de afbeelding als OpenGraph image
+
+Na het uploaden van de afbeelding krijg je een URL in de vorm:
+`https://raw.githubusercontent.com/nl-design-system/documentatie/assets/<naam-van-het-plaatje>`.
+
+Voeg vervolgens twee keys toe aan de frontmatter van de pagina:
+
+```yml
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/<naam-van-het-plaatje>
+image_alt: Beschrijving van het plaatje
+```
+
+- `image`: de volledige URL van de afbeelding.
+- `image_alt`: de alternatieve tekst van de afbeelding.
+
+#### Controleren of de afbeelding correct wordt gebruikt
+
+Nadat de afbeelding is geüpload en aan de frontmatter is toegevoegd, kun je controleren of de afbeelding goed wordt weergegeven als OpenGraph image.
+
+1. Open de preview URL van de PR (voor Astro is dit het `documentatie-next` project).
+2. Navigeer naar de betreffende pagina en kopieer de URL.
+3. Ga naar [opengraph.xyz](https://opengraph.xyz) en plak daar de URL.
+
+In het overzicht dat volgt zie je een voorbeeld van de afbeelding.

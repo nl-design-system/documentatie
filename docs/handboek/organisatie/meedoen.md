@@ -1,9 +1,11 @@
 ---
 title: Meedoen als organisatie
+title_sm: Meedoen
 hide_title: true
 hide_table_of_contents: true
 sidebar_label: Meedoen
 sidebar_position: 2
+navigation_order: 2
 pagination_label: Meedoen
 description: Meedoen als organisatie
   - leverancier
@@ -29,7 +31,7 @@ Organisaties en hun leveranciers kunnen op verschillende niveaus meedoen met NL 
 
 ## Niveau 2. Richtlijnen gebruiken
 
-Onder [Richtlijnen](/richtlijnen) verzamelen we richtlijnen voor het maken van digitale diensten, bijvoorbeeld voor het maken van formulieren.
+Onder [Richtlijnen](/richtlijnen/) verzamelen we richtlijnen voor het maken van digitale diensten, bijvoorbeeld voor het maken van formulieren.
 
 ### Bewijs
 
@@ -74,7 +76,7 @@ Wanneer een component uit de community niet helemaal voldoet aan de eisen, is ge
 Nieuwe componenten zijn opgeleverd volgens de aanpak van NL Design System. Dat betekent:
 
 - De component is aangemaakt als GitHub Discussion voor Help Wanted.
-- De [eerste stappen voor “Community component”](https://nldesignsystem.nl/handboek/community-stappenplan) zijn gevolgd.
+- De [eerste stappen voor “Community component”](https://nldesignsystem.nl/handboek/component-bijdragen/community-stappenplan) zijn gevolgd.
 - De component is gebouwd volgens de NL Design System architectuur.
 - De component is beschikbaar gemaakt in de thema Storybook website van NL Design System.
 

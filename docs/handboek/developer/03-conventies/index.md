@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Conventies
 pagination_label: Conventies
 description: Conventies van NL Design System
+slug: /handboek/developer/conventies/
 ---
 
 # Conventies van NL Design System

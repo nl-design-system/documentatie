@@ -4,6 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Voor leveranciers
 sidebar_position: 2
+navigation_order: 2
 pagination_label: Voor leveranciers
 description: Waarom zou je als leverancier meedoen aan NL Design System?
   - leverancier

@@ -1,0 +1,98 @@
+---
+title: Product Backlog
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Product Backlog
+pagination_label: Product Backlog
+sidebar_position: 5
+description: Uitleg over de backlog van NL Design System.
+keywords:
+  - backlog
+---
+
+{/* @license CC0-1.0 */}
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Product backlog
+
+<Paragraph lead>
+  Om keuzes te kunnen maken welk werk prioriteit krijgt worden alle taken, ideeën en processen vooraf vastgelegd in de
+  Product Backlog.
+</Paragraph>
+
+De product backlog wordt vastgelegd in een GitHub Project die bestaat uit GitHub Issues uit meerdere GitHub repositories in de nl-design-system organisatie.
+
+## Prioriteit
+
+De prioriteit wordt in overleg met de Product Owner vastgelegd, volgens een [MoSCoW methode](https://en.wikipedia.org/wiki/MoSCoW_method):
+
+- <span lang="en">Must have</span>
+- <span lang="en">Should have</span>
+- <span lang="en">Could have</span>
+- <span lang="en">Won't have (for now)</span>
+
+## Tijdsinschatting
+
+Gebruik t-shirt sizes uit het volgende overzicht voor het maken van een tijdsinschatting. Maak samen met de relevante teamleden de inschatting voor de optelsom van tijd die nodig is van iedereen om te voldoen aan de Definition of Done. Rond naar boven af.
+
+| T-shirt size | Tijdsinschatting |
+| ------------ | ---------------- |
+| XS           | 2 uur            |
+| S            | 4 uur            |
+| M            | 1 dag            |
+| L            | 2 dagen          |
+| XL           | 4 dagen          |
+| XXL          | 8 dagen          |
+
+## Status
+
+De product owner beheert in het GitHub projectboard de status van de acceptatiecriteria, om voor backlog grooming, refinement, en sprint planning snel de relevante issues te kunnen vinden.
+
+- **Triage:** er zijn nog geen acceptatiecriteria. Alle issues beginnen hier mee.
+- **Ready for refinement:** de acceptatiecriteria zijn klaar om met het team te bespreken.
+- **Ready:** de issue voldoet aan de [Definition of Ready](./definition-of-ready.mdx).
+- **In progress:** iemand heeft verantwoordelijkheid genomen voor het werk, en het werk is begonnen.
+- **Review needed:** het ontwikkelwerk lijkt klaar, maar een code review of handmatige test is nog nodig.
+- **Done:** het werk is opgeleverd, en er zijn geen verder werkzaamheden meer.
+- **Maintenance:** het werk is opgeleverd, en de feature moet doorlopend of periodiek onderhouden worden.
+
+## Sprint
+
+In het veld "Sprint" wordt gepland in wanneer het werk wordt uitgevoerd.
+
+Issues kunnen alvast worden ingesteld op een toekomstige sprint, maar dan is dit slechts een voorstel. Pas bij de sprintplanning wordt de inhoud van de sprint definitief gekozen.
+
+Wanneer een issue niet klaar is aan het eind van de sprint, dan kan je kiezen om het verdere werk in een volgende sprint te plannen. Pas dan "Sprint" aan naar de volgende sprint.
+
+## Planning en volgorde
+
+Maak volgorde duidelijk door vast te leggen dat een issue afhankelijk is van andere werkzaamheden. Gebruik de "Relationship" om aan te geven dat de issue "Blocked by" een andere issue is.
+
+Wanneer een issue een deadline op een bepaalde datum heeft, leg die dan vast in de "Deadline" property van het GitHub Project.
+
+## Issue
+
+Leg de user stories vast volgens het patroon "Als **stakeholder** wil ik **iets** zodat **doel**", zodat de volgende vragen gelijk beantwoord zijn: _wat_ er gemaakt moet worden, _waarom_, en _voor wie_.
+
+Voeg elk issue toe aan het GitHub Project. Issues die onderdeel zijn van het project, kunnen geprioriteerd worden, aan sprints worden toegevoegd, en kunnen opgenomen worden in een maandrapportage.
+
+Leg de volgorde van user stories vast in door in in GitHub Project de issues op volgorde te zetten in het "Backlog" board.
+
+Leg de taken voor user stories vast als sub-issues.
+
+Maak bij elke issue een Heading 2 kopje "Acceptatiecriteria", met een Markdown-checklist voor de acceptatiecriteria.
+
+## Epic
+
+Een Epic is een grote hoeveelheid werk die opgesplitst kan worden in meerdere issues. De losse issues kunnen in meerdere sprints uitgevoerd kunnen.
+
+De Epic krijgt een eigen issue, die de parent issue is voor de onderliggende issues. De parent issues zijn een goede manier om overzicht te hebben, voor je aan een Epic begint, en om de voortgang te volgen.
+
+Maak onderscheid tussen Epics en User Stories door het label "Epic" toe te voegen.
+
+## Voorbeelden:
+
+- [NL Design System Kernteam: Backlog](https://github.com/orgs/nl-design-system/projects/94/views/1)
+- [Expertteam Digitale Toegankelijkheid: Backlog](https://github.com/orgs/nl-design-system/projects/70/views/1)
+- [Template: Product backlog](https://github.com/orgs/nl-design-system/projects/108)

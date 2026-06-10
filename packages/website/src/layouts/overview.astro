@@ -1,0 +1,55 @@
+---
+import Document, { type Props as DocumentProps } from './document.astro';
+import { BreadcrumbNav, BreadcrumbNavLink, BreadcrumbNavSeparator } from '@components/breadcrumb-nav/breadcrumb-nav';
+import { IconChevronRight } from '@tabler/icons-react';
+import { SideNav } from '@components/side-nav/side-nav.tsx';
+import { navigation } from '../navigation.config.ts';
+import { getBreadcrumbsForElement } from '../navigation/get-breadcrumbs-for-element.ts';
+import './overview.css';
+
+export type Props = DocumentProps;
+
+const nav = await navigation;
+const breadcrumbPath = await getBreadcrumbsForElement(Astro.url.pathname);
+const { ...props } = Astro.props;
+---
+
+<Document {...props}>
+  <div class="ma-layout-overview">
+    <div class="ma-layout-overview__content">
+      <div class="ma-layout-overview__side-bar">
+        <SideNav data={nav} />
+      </div>
+
+      {
+        breadcrumbPath.length > 0 && (
+          <nav class="ma-layout-overview__breadcrumb-nav" aria-labelledby="breadcrumb-label">
+            <h2 hidden id="breadcrumb-label">
+              Kruimelpad
+            </h2>
+            <BreadcrumbNav>
+              {breadcrumbPath.map((item, index, list) => (
+                <>
+                  <BreadcrumbNavLink href={item.href || ''} disabled={!item.href}>
+                    {item.label}
+                  </BreadcrumbNavLink>
+                  {index < list.length - 1 ? (
+                    <BreadcrumbNavSeparator>
+                      <IconChevronRight />
+                    </BreadcrumbNavSeparator>
+                  ) : null}
+                </>
+              ))}
+            </BreadcrumbNav>
+          </nav>
+        )
+      }
+
+      <main id="main" class="ma-layout-overview__main">
+        <div class="ma-layout-overview__main-body">
+          <slot />
+        </div>
+      </main>
+    </div>
+  </div>
+</Document>

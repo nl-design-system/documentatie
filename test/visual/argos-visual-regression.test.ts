@@ -49,6 +49,9 @@ const screenshotPathname = (pathname: string) => {
 };
 
 test.describe('Docusaurus site screenshots', () => {
+  // Full-page screenshots of very long pages could exceed the default 30s timeout on CI
+  test.setTimeout(60_000);
+
   const pathnames = extractSitemapPathnames(sitemapPath);
   pathnames.forEach(screenshotPathname);
 });

@@ -1,18 +1,18 @@
-.homepage-section .utrecht-heading-3:first-of-type {
+.ma-homepage-section .utrecht-heading-3:first-of-type {
   --utrecht-heading-3-margin-block-start: 0;
 }
 
-.homepage-spotlight-section {
+.ma-homepage-spotlight-section {
   --utrecht-spotlight-section-border-width: 0;
   --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-bg-subtle);
 }
 
-.homepage-spotlight-section--hero {
+.ma-homepage-spotlight-section--hero {
   --utrecht-heading-2-font-size: 1.25rem;
   --utrecht-heading-2-margin-block-start: 20px;
 }
 
-.homepage-spotlight-section--heartbeat {
+.ma-homepage-spotlight-section--heartbeat {
   --utrecht-heading-2-margin-block-start: 20px;
   --utrecht-heading-3-margin-block-start: 0;
   --utrecht-heading-4-margin-block-start: 0;
@@ -20,7 +20,7 @@
   --utrecht-spotlight-section-margin-block-start: 40px;
 }
 
-.homepage-spotlight-section--footer {
+.ma-homepage-spotlight-section--footer {
   --utrecht-spotlight-section-padding-block-end: 20px;
   --utrecht-spotlight-section-padding-block-start: 20px;
   --utrecht-spotlight-section-margin-block-start: 40px;
@@ -32,7 +32,7 @@
   --utrecht-card-color: var(--basis-color-action-1-inverse-color-default);
 }
 
-.homepage-card-group {
+.ma-homepage-card-group {
   block-size: 100%;
   display: grid;
   gap: 1.5rem;

@@ -295,11 +295,11 @@ export const NewsletterSignUp = ({
           <FormFieldDescription id={`${privacyPolicyId}-description`}>
             {IS_ENGLISH ? (
               <p>
-                The <a href="/privacy-policy">privacy policy</a> of NL Design System applies to our activities.
+                The <a href="/privacy-policy/">privacy policy</a> of NL Design System applies to our activities.
               </p>
             ) : (
               <p>
-                Op onze activiteiten is de <a href="/privacyverklaring">privacyverklaring van NL Design System</a> van
+                Op onze activiteiten is de <a href="/privacyverklaring/">privacyverklaring van NL Design System</a> van
                 toepassing.
               </p>
             )}

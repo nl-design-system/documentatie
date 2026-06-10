@@ -4,6 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Voor managers
 sidebar_position: 2
+navigation_order: 2
 pagination_label: Voor managers
 description: Waarom zou je als manager investeren in NL Design System?
   - manager

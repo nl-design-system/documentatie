@@ -2,7 +2,7 @@
   "label": "Wanneer welk element?",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/formulieren/when-which/README"
+    "id": "richtlijnen/formulieren/when-which/index"
   },
   "customProps": {
     "showLinkedDoc": true

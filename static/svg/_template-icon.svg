@@ -2,9 +2,9 @@
 <symbol id="component-illustration">
     <!-- SVG paths here -->
 
-    <!-- Use var(--component-illustration-background-color, white) for fill and stroke in background color -->
-    <!-- Use var(--component-illustration-grid-color, #eee) for grid color -->
-    <!-- Use var(--component-illustration-color, #666) for component color -->
+    <!-- Use var(--ma-component-illustration-background-color, white) for fill and stroke in background color -->
+    <!-- Use var(--ma-component-illustration-grid-color, #eee) for grid color -->
+    <!-- Use var(--ma-component-illustration-color, #666) for component color -->
 
     <!-- Optional: remove unnecessary `def` and `g` elements -->
     <!-- Optional: use `g` elements to group multiple paths and rects with the samen fill or stroke color -->

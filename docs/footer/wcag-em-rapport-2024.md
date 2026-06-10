@@ -651,7 +651,7 @@ Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsv
     </li>
     <li>
       <span>Richtlijnen</span> -
-      <span><a href="https://nldesignsystem.nl/richtlijnen" rel="nofollow">nldesignsystem.nl/richtlijnen</a></span>
+      <span><a href="https://nldesignsystem.nl/richtlijnen/" rel="nofollow">nldesignsystem.nl/richtlijnen</a></span>
     </li>
     <li>
       <span>Formulierenoverzicht</span> -

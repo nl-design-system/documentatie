@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: CMS-en
 pagination_label: CMS-en
 description: NL Design System met CMS-en
+slug: /handboek/developer/cms/
 ---
 
 # CMS-en

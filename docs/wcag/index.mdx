@@ -1,0 +1,75 @@
+---
+title: Introductie WCAG pagina's
+title_sm: WCAG
+hide_title: true
+hide_table_of_contents: true
+sidebar_position: 1
+navigation_order: 1
+sidebar_label: Introductie WCAG-pagina's
+pagination_label: Introductie WCAG-pagina's
+description: Introductie van informatie over de WCAG-succescriteria.
+slug: /wcag
+keywords:
+  - WCAG
+  - succescriteria
+---
+
+import { Markdown } from "@site/src/components/Markdown";
+import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import { successCriteria } from "@site/src/components/wcag22";
+
+# Introductie WCAG-pagina's
+
+<Paragraph appearance="lead">
+  De WCAG pagina's op NL Design System geven praktische uitleg en voorbeelden op basis van de nieuwe WCAG 2.2
+  specificatie. Het doel is om met deze pagina's te helpen bij het toegankelijk inzetten van de NL Design System
+  componenten, patronen en richtlijnen en veelgemaakte fouten te voorkomen.
+</Paragraph>
+
+Wil je weten waar je volgens de wet aan moet voldoen? Ga dan naar naar de website van DigiToegankelijk: [Wat is verplicht?](https://www.digitoegankelijk.nl/wetgeving/wat-is-verplicht).
+
+## Opzet
+
+- Een uitleg.
+- Links naar gerelateerde componenten en richtlijnen, zodat je weet hoe deze criteria toe te passen.
+- Bronnen over extra uitleg of voorbeelden.
+- Relevant gebruikersonderzoek.
+- Hoe voor een succescriterium zelf te testen op webpagina's.
+- Veelgemaakte fouten en de oplossingen hiervoor.
+- De links naar de officiële richtlijnen en W3C-referenties.
+
+## WCAG-pagina's
+
+### Niveau A en Niveau AA
+
+<OverviewPage
+  excludeDocIDs={[
+    "wcag/README",
+    ...successCriteria
+      .filter(({ conformance }) => conformance === "AAA")
+      .map(({ sc }) => sc)
+      .map((sc) => sc.replace(/\.(\d)$/g, ".0$1"))
+      .map((wcag) => `wcag/${wcag}`),
+  ]}
+/>
+
+### Niveau AAA
+
+<OverviewPage
+  excludeDocIDs={[
+    "wcag/README",
+    "wcag/4.1.01",
+    ...successCriteria
+      .filter(({ conformance, sc }) => conformance === "A" || conformance === "AA")
+      .map(({ sc }) => sc)
+      .map((sc) => sc.replace(/\.(\d)$/g, ".0$1"))
+      .map((wcag) => `wcag/${wcag}`),
+  ]}
+/>
+
+## Help richtlijnen verbeteren
+
+<Markdown omitH1 headinglevel={3}>
+  <WCAGFooterInfo />
+</Markdown>

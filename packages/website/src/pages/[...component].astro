@@ -1,31 +1,32 @@
 ---
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
-import Document from '@layouts/document.astro';
+import DetailLayout from '@layouts/detail.astro';
+import OverviewLayout from '@layouts/overview.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
-import { siteTitle } from '../seo.config.ts';
 
 export async function getStaticPaths() {
   const components = await getCollection('components');
 
-  return components
-    .filter((page) => page.data?.unlisted !== true)
-    .map((page) => ({
-      params: { component: page.id },
-      props: { page },
-    }));
+  return components.map((page) => ({
+    params: { component: page.id },
+    props: { page },
+  }));
 }
 
 const { page } = Astro.props;
 const { Content } = await render(page);
 
-const title = page.data.title ? `${page.data.title} | ${siteTitle}` : siteTitle;
 const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
+
+const Layout = page.data?.page_layout === 'overview' ? OverviewLayout : DetailLayout;
+const components = await MDXComponents();
 ---
 
-<Document
-  title={title}
+<Layout
+  title={page.data.title}
+  titleSm={page.data.title_sm}
   description={description}
   lang={page.data.lang}
   seoImage={page.data.image}
@@ -33,5 +34,8 @@ const description =
   keywords={['component', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
   index={page.data.unlisted !== true}
 >
-  <Content components={MDXComponents} />
-</Document>
+  <h1 slot="header">{page.data.title}</h1>
+  <p slot="header">{page.data.description}</p>
+
+  <Content components={components} />
+</Layout>

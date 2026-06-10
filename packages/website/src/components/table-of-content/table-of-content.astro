@@ -1,0 +1,16 @@
+---
+// The list can not be filled in the template since Astro is not aware of
+// headings added in components. Therefore the list is being filled in
+// middleware when the whole page is rendered
+---
+
+<ma-table-of-contents scope="main" heading-level="2">
+  <h2 id="toc-label">Inhoudsopgave</h2>
+  <ul aria-labelledby="toc-label">
+    <li><span>Definition of Done</span></li>
+    <li><a href="#community-implementaties">Community implementaties</a></li>
+    <li><a href="#not-there">Missing Heading</a></li>
+  </ul>
+</ma-table-of-contents>
+
+<script src="./table-of-content.client.ts"></script>

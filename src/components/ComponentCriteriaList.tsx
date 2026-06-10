@@ -64,24 +64,24 @@ export const CriteriaListItem = ({
   const scTitle = data ? `${sc} ${data.nl?.title}` : sc;
 
   return (
-    <div className="component-criteria-section">
-      <Heading appearance="utrecht-heading-4" level={headingLevel} className="component-criteria-section__heading">
+    <div className="ma-component-criteria-section">
+      <Heading appearance="utrecht-heading-4" level={headingLevel} className="ma-component-criteria-section__heading">
         {title}
       </Heading>
       {(sc || status) && (
-        <dl className="component-criteria-section__dl">
+        <dl className="ma-component-criteria-section__dl">
           {sc && (
             <>
-              <dt className="component-criteria-section__dt">WCAG</dt>
-              <dd className="component-criteria-section__dd">
+              <dt className="ma-component-criteria-section__dt">WCAG</dt>
+              <dd className="ma-component-criteria-section__dd">
                 <Link href={`/wcag/${sc}/`}>{scTitle}</Link>
               </dd>
             </>
           )}
           {status && (
             <>
-              <dt className="component-criteria-section__dt">Status</dt>
-              <dd className="component-criteria-section__dl">{status}</dd>
+              <dt className="ma-component-criteria-section__dt">Status</dt>
+              <dd className="ma-component-criteria-section__dl">{status}</dd>
             </>
           )}
         </dl>

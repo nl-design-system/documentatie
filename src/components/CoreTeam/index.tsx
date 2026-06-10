@@ -19,15 +19,15 @@ export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
     <CardGroup appearance="large">
       {coreteam.map(({ name, role, Description, slack }) => {
         return (
-          <Card appearance="large" className={clsx('core-team__card')} component="section" key={name}>
-            <CardContent className={clsx('core-team__content')}>
-              <HeadingGroup className={clsx('core-team__heading')}>
-                <Heading level={headingLevel} className={clsx('core-team__heading-title')}>
+          <Card appearance="large" className={clsx('ma-core-team__card')} component="section" key={name}>
+            <CardContent className={clsx('ma-core-team__content')}>
+              <HeadingGroup className={clsx('ma-core-team__heading')}>
+                <Heading level={headingLevel} className={clsx('ma-core-team__heading-title')}>
                   {name}
                 </Heading>
-                <Paragraph className={clsx('core-team__heading-subtitle')}>{role}</Paragraph>
+                <Paragraph className={clsx('ma-core-team__heading-subtitle')}>{role}</Paragraph>
               </HeadingGroup>
-              <div className={clsx('core-team__description')}>
+              <div className={clsx('ma-core-team__description')}>
                 <Description />
               </div>
 
