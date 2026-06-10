@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 4.1.3 Statusberichten
 pagination_label: WCAG-succescriterium 4.1.3 Statusberichten
-description: Een statusbericht is een melding die op de pagina verschijnt zonder dat de focus verplaatst. Markeer die in de code als live region, zodat ook screenreaders het bericht voorlezen aan bezoekers die het niet zien.
+description: Een statusbericht is een melding die op de pagina verschijnt zonder dat de focus verspringt. Markeer die in de code, zodat een screenreader het bericht ook voorleest.
 slug: 4.1.3
 keywords:
   - WCAG
@@ -46,13 +46,13 @@ import Summary from "./summaries/_4.1.3-summary.md";
 
 Er zijn twee urgentieniveaus. `role="status"` (of `aria-live="polite"`) wacht tot de screenreader klaar is met de huidige spraak. `role="alert"` (of `aria-live="assertive"`) onderbreekt de huidige spraak en leest het bericht direct voor.
 
-Plaats de live region als lege container al in de HTML bij het laden van de pagina, en vul de tekst later in via JavaScript. Een screenreader registreert een live region pas als die in de DOM staat. Verschijnt het element en de tekst tegelijk, dan mist de screenreader het bericht.
+Plaats de live region als lege container al in de HTML bij het laden van de pagina, en vul de tekst later in via JavaScript. Een screenreader herkent een live region pas als die al in de HTML staat. Verschijnen het element en de tekst tegelijk, dan mist de screenreader het bericht.
 
 ## Veelgemaakte fouten
 
 ### Bevestigingsmelding na het verzenden van een formulier wordt niet voorgelezen
 
-Een bezoeker verstuurt een formulier en er verschijnt een bevestiging op de pagina. De pagina wordt niet herladen, de melding verschijnt dynamisch. Zonder `role="status"` op het element negeert de screenreader het bericht.
+Een bezoeker verstuurt een formulier en er verschijnt een bevestiging op de pagina. De pagina laadt niet opnieuw; de melding verschijnt dynamisch. Zonder `role="status"` op het element negeert de screenreader het bericht.
 
 **Hoe te testen:** verstuur een formulier en luister met een screenreader. Wordt de bevestiging voorgelezen zonder dat je er zelf naartoe gaat?
 
@@ -78,7 +78,7 @@ Een bezoeker verstuurt een formulier en er verschijnt een bevestiging op de pagi
 
 ### Foutmelding na het verzenden van een formulier wordt niet voorgelezen
 
-Een bezoeker verstuurt een formulier en de server geeft fouten terug: verplichte velden ontbreken of een datum klopt niet. Bovenaan de pagina verschijnt een samenvatting van de fouten. De pagina wordt niet herladen en de focus blijft op de verzendknop staan. Zonder ARIA-markering of focusverplaatsing leest een screenreader niets voor: de bezoeker denkt dat het verzenden is gelukt.
+Een bezoeker verstuurt een formulier en de server geeft fouten terug: verplichte velden ontbreken of een datum klopt niet. Bovenaan de pagina verschijnt een samenvatting van de fouten. De pagina laadt niet opnieuw en de focus blijft op de verzendknop staan. Zonder ARIA-markering of focusverplaatsing leest een screenreader niets voor: de bezoeker denkt dat het verzenden is gelukt.
 
 **Hoe te testen:** verstuur een formulier met fouten en luister met een screenreader. Wordt de foutmelding voorgelezen of krijgt deze direct de focus?
 
@@ -225,7 +225,7 @@ Een bezoeker gebruikt een livechat met klantenservice. De medewerker stuurt een 
 
 ### Update van de winkelwagen wordt niet voorgelezen
 
-Een bezoeker klikt op "Toevoegen aan winkelwagen". Het aantal in het winkelwagenicoontje verandert van 2 naar 3. Visueel ziet de bezoeker de wijziging. Een screenreader meldt niets, de bezoeker weet niet of de actie is gelukt.
+Een bezoeker klikt op "Toevoegen aan winkelwagen". Het aantal in het winkelwagenicoon verandert van 2 naar 3. Visueel ziet de bezoeker de wijziging. Een screenreader meldt niets. De bezoeker weet niet of de actie is gelukt.
 
 **Hoe te testen:** voeg een product toe aan de winkelwagen. Leest een screenreader een bevestiging voor?
 
@@ -253,13 +253,13 @@ Een bezoeker klikt op "Toevoegen aan winkelwagen". Het aantal in het winkelwagen
     ```
 </Guideline>
 
-Het element met `role="status"` staat al in de HTML voordat het bericht wordt ingevuld. Screenreaders registreren de live region bij het laden van de pagina en luisteren naar wijzigingen.
+Het element met `role="status"` staat al in de HTML voordat het bericht wordt ingevuld. Screenreaders herkennen de live region bij het laden van de pagina en luisteren naar wijzigingen.
 
 **Wie kan dit oplossen:** een developer voegt een live region toe en vult die bij elke winkelwagenactie met een beschrijvend bericht.
 
 ### Melding over het aantal zoekresultaten wordt niet voorgelezen
 
-Een bezoeker typt in een zoekveld en de resultaten verschijnen direct op de pagina. Er staat een tekst "12 resultaten gevonden" die een screenreader niet voorleest. De bezoeker weet niet dat er resultaten zijn verschenen, laat staan hoeveel.
+Een bezoeker typt in een zoekveld en de resultaten verschijnen direct op de pagina. Er staat een tekst "12 resultaten gevonden" die een screenreader niet voorleest. De bezoeker weet niet dat er resultaten zijn verschenen, en ook niet hoeveel.
 
 **Hoe te testen:** gebruik een zoekveld dat resultaten toont zonder de pagina te herladen. Leest een screenreader het aantal resultaten voor?
 
@@ -289,7 +289,7 @@ Een bezoeker typt in een zoekveld en de resultaten verschijnen direct op de pagi
 
 ### Filterresultaten in een webshop worden niet gemeld
 
-Een bezoeker selecteert een filter (bijvoorbeeld "Maat M" of "Kleur: blauw") en de productlijst wordt bijgewerkt. Er verschijnt een bericht: "X resultaten voldoen aan je criteria". Een screenreader leest dit bericht niet voor. De bezoeker weet niet of het filter heeft gewerkt en hoeveel producten er over zijn.
+Een bezoeker selecteert een filter, bijvoorbeeld "Maat M" of "Kleur: blauw", en de productlijst wordt bijgewerkt. Er verschijnt een bericht: "X resultaten voldoen aan je criteria". Een screenreader leest dit bericht niet voor. De bezoeker weet niet of het filter heeft gewerkt en hoeveel producten er over zijn.
 
 **Hoe te testen:** selecteer een filter en luister met een screenreader. Wordt het aantal overgebleven producten voorgelezen?
 
@@ -323,7 +323,7 @@ Bij meerdere filters tegelijk vermeld je de actieve filters in het statusbericht
 
 ### Laadstatus is alleen een draaiend icoon
 
-Een bezoeker klikt op een knop en er verschijnt een draaiend icoontje. Visueel begrijpt de bezoeker dat er iets wordt geladen. Een screenreader meldt niets, de bezoeker weet niet of de actie is gestart, of er iets wordt geladen of dat er iets is misgegaan. Hetzelfde geldt voor een tekst "Aan het laden..." die niet als statusbericht is gemarkeerd.
+Een bezoeker klikt op een knop en er verschijnt een draaiend icoon. Visueel begrijpt de bezoeker dat er iets wordt geladen. Een screenreader meldt niets. De bezoeker weet niet of de actie is gestart, of er iets wordt geladen of dat er iets is misgegaan. Hetzelfde geldt voor een tekst "Aan het laden..." die niet als statusbericht is gemarkeerd.
 
 **Hoe te testen:** klik op een knop die content laadt en luister met een screenreader. Wordt de laadstatus voorgelezen? Wordt het einde van het laden gemeld?
 
@@ -367,7 +367,7 @@ Het draaiende icoon krijgt `aria-hidden="true"`: het is puur visueel. De live re
 
 ### Voortgangsindicator is alleen visueel
 
-Een bezoeker uploadt een bestand en een voortgangsbalk vult zich. Visueel is duidelijk hoever het proces is. Een screenreader meldt niets, de bezoeker weet niet of de upload loopt, hoever die is of wanneer die klaar is.
+Een bezoeker uploadt een bestand en een voortgangsbalk vult zich. Visueel is duidelijk hoever het proces is. Een screenreader meldt niets. De bezoeker weet niet of de upload loopt, hoever die is of wanneer die klaar is.
 
 **Hoe te testen:** start een upload of een ander proces met een voortgangsbalk. Meldt een screenreader de voortgang?
 
@@ -401,7 +401,7 @@ Een bezoeker uploadt een bestand en een voortgangsbalk vult zich. Visueel is dui
 
 ### Tekenteller leest bij elke toetsaanslag het resterende aantal voor
 
-Een tekstvak heeft een maximumaantal tekens. Onder het veld staat een teller: "147 van 150 tekens". Die teller staat in een live region en wordt bij elke toetsaanslag voorgelezen. Bij elk karakter dat de bezoeker typt, onderbreekt de screenreader: "146 van 150 tekens", "145 van 150 tekens", "144 van 150 tekens". Typen wordt onmogelijk.
+Een tekstvak heeft een maximumaantal tekens. Onder het veld staat een teller: "147 van 150 tekens". Die teller staat in een live region en wordt bij elke toetsaanslag voorgelezen. Bij elk teken dat de bezoeker typt, onderbreekt de screenreader: "146 van 150 tekens", "145 van 150 tekens", "144 van 150 tekens". Typen wordt onmogelijk.
 
 Een live region die te vaak wordt bijgewerkt is net zo problematisch als een ontbrekende live region. Meld de teller alleen wanneer de bezoeker de limiet nadert.
 
@@ -450,7 +450,7 @@ De teller zelf is gekoppeld aan het tekstvak via `aria-describedby`: een screenr
 
 ### Resultaat van een CAPTCHA wordt niet gemeld
 
-Een bezoeker voltooit een CAPTCHA. Visueel verschijnt een groen vinkje of de tekst "Verificatie geslaagd". Een screenreader meldt niets, de bezoeker weet niet of de CAPTCHA is gelukt en of het formulier nu verstuurd kan worden. Bij een mislukte poging weet de bezoeker niet dat er een nieuwe CAPTCHA nodig is.
+Een bezoeker voltooit een CAPTCHA. Visueel verschijnt een groen vinkje of de tekst "Verificatie geslaagd". Een screenreader meldt niets. De bezoeker weet niet of de CAPTCHA is gelukt en of het formulier nu verstuurd kan worden. Bij een mislukte poging weet de bezoeker niet dat er een nieuwe CAPTCHA nodig is.
 
 **Hoe te testen:** voltooi een CAPTCHA en luister met een screenreader. Wordt het resultaat voorgelezen? Probeer ook een fout antwoord.
 
@@ -482,11 +482,11 @@ Een bezoeker voltooit een CAPTCHA. Visueel verschijnt een groen vinkje of de tek
 
 Een geslaagde verificatie is een bevestiging: `role="status"` is voldoende. Een mislukte poging vraagt directe actie van de bezoeker; gebruik daarvoor `role="alert"`.
 
-**Wie kan dit oplossen:** een developer plaatst twee lege live regions in het HTML-template (één met `role="status"` voor een geslaagde verificatie en één met `role="alert"` voor een mislukte poging) en vult de juiste container bij het resultaat.
+**Wie kan dit oplossen:** een developer plaatst twee lege live regions in het HTML-template: één met `role="status"` voor een geslaagde verificatie en één met `role="alert"` voor een mislukte poging. Bij het resultaat vult de code de juiste container.
 
-### Toast-notificatie verdwijnt voordat een screenreader het heeft voorgelezen
+### Toast-notificatie verdwijnt voordat de screenreader die heeft voorgelezen
 
-Een toast-notificatie verschijnt kort in beeld en verdwijnt na een paar seconden. De focus verplaatst niet naar het bericht. Zonder `role="status"` leest een screenreader het bericht niet voor. Met `role="status"` maar een te korte zichtbaarheidsduur verdwijnt het bericht voordat de screenreader het heeft voorgelezen.
+Een toast-notificatie verschijnt kort in beeld en verdwijnt na een paar seconden. De focus verspringt niet naar het bericht. Zonder `role="status"` leest een screenreader het bericht niet voor. Staat `role="status"` er wel, maar blijft het bericht te kort zichtbaar, dan verdwijnt het voordat de screenreader het heeft voorgelezen.
 
 **Hoe te testen:** veroorzaak een toast-notificatie. Leest een screenreader het bericht voor voordat het verdwijnt?
 
@@ -520,11 +520,11 @@ Een toast-notificatie verschijnt kort in beeld en verdwijnt na een paar seconden
 
 De toast-container met `role="status"` staat al in de HTML bij het laden van de pagina. Nieuwe toasts worden in de container toegevoegd zodat de screenreader ze opmerkt en voorleest.
 
-**Wie kan dit oplossen:** een developer plaatst een toast-container met `role="status"` in het HTML-template, voegt nieuwe toasts in die container toe en zorgt voor voldoende zichtbaarheidsduur.
+**Wie kan dit oplossen:** een developer plaatst een toast-container met `role="status"` in het HTML-template, voegt nieuwe toasts in die container toe en zorgt dat ze lang genoeg zichtbaar blijven.
 
 ### Live region wordt toegevoegd en gevuld tegelijkertijd
 
-Een live region wordt dynamisch aan de pagina toegevoegd en direct gevuld met tekst. Screenreaders registreren de live region pas nadat het element in de DOM staat. Als het element en de tekst tegelijk verschijnen, mist de screenreader het bericht.
+Een live region wordt dynamisch aan de pagina toegevoegd en direct gevuld met tekst. Screenreaders herkennen de live region pas nadat het element in de HTML staat. Als het element en de tekst tegelijk verschijnen, mist de screenreader het bericht.
 
 Het element met `role="status"` of `aria-live` staat al in de HTML bij het laden van de pagina. De tekst wordt later ingevuld via JavaScript.
 
@@ -572,11 +572,11 @@ Het element met `role="status"` of `aria-live` staat al in de HTML bij het laden
 5. Test toast-notificaties met een screenreader. Worden ze voorgelezen voordat ze verdwijnen?
 6. Controleer voortgangsindicatoren. Hebben ze `role="progressbar"` met de juiste ARIA-attributen?
 7. Controleer tekentellers en andere elementen die frequent worden bijgewerkt. Wordt de live region niet te vaak geactiveerd?
-8. Gebruik <span lang="en">axe DevTools</span> voor een eerste scan. De meeste statusberichtproblemen zijn niet automatisch te herkennen en vereisen handmatig testen met een screenreader.
+8. Gebruik <span lang="en">axe DevTools</span> voor een eerste scan. De meeste problemen met statusberichten zijn niet automatisch te herkennen en vereisen handmatig testen met een screenreader.
 
 ## Gerelateerde succescriteria
 
-- [3.3.1 Foutidentificatie](/wcag/3.3.1/): foutmeldingen bij formuliervelden die de focus krijgen, vallen onder foutidentificatie. Statusberichten zijn meldingen die verschijnen zonder dat de focus verplaatst.
+- [3.3.1 Foutidentificatie](/wcag/3.3.1/): foutmeldingen bij formuliervelden die de focus krijgen, vallen onder foutidentificatie. Statusberichten zijn meldingen die verschijnen zonder dat de focus verspringt.
 - [4.1.2 Naam, rol, waarde](/wcag/4.1.2/): interactieve elementen hebben een toegankelijke naam en rol nodig. Relevant als een voortgangsbalk of notificatie een eigen widget is.
 - [2.2.1 Timing aanpasbaar](/wcag/2.2.1/): als een statusbericht automatisch verdwijnt, heeft de bezoeker voldoende tijd om het te lezen. Lees hier meer als je werkt met toasts of andere meldingen met een tijdslimiet.
 
