@@ -1,9 +1,9 @@
 ---
-title: Lint Design Tokens
+title: Design Tokens valideren
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Lint Design Tokens
-pagination_label: Lint Design Tokens
+sidebar_label: Design Tokens valideren
+pagination_label: Design Tokens valideren
 description: Linten en valideren van bestaande thema tokens JSON bestanden
 slug: /project/expertteam-digitale-toegankelijkheid/lint-design-tokens
 keywords:
@@ -17,37 +17,33 @@ keywords:
   - thema's
 ---
 
-# Design Tokens lint
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
 
-Gebruik de design-tokens-lint CLI tool om automatisch the tokens JSON bestanden te valideren.
+# Design Tokens valideren
+
+<Paragraph appearance="lead">
+  Gebruik de `design-tokens-lint` CLI tool om automatisch de Design Tokens JSON bestanden te valideren.
+</Paragraph>
 
 ## Installatie
 
-```sh
-pnpm add @nl-design-system-community/design-tokens-lint
-```
-
-## Gebruik
-
 ```shell
-design-tokens-lint [opties] <bestand> [bestanden...]
+pnpm add --save-dev @nl-design-system-community/design-tokens-lint
 ```
 
-### Valideer een tokens-bestand
+## Valideer een tokens-bestand
 
 ```shell
 design-tokens-lint src/tokens.json
 ```
 
-### Valideer meerdere bestanden
-
 Meerdere bestanden worden voor validatie in volgorde samengevoegd. Bij conflicten overschrijven latere bestanden eerdere.
 
 ```shell
-design-tokens-lint base.json theme.json overrides.json
+design-tokens-lint theme.tokens.json dark-mode.tokens.json
 ```
 
-### Tokens Studio
+## Valideer een Tokens Studio-bestand
 
 Bij gebruik van een tokens.json die door Tokens Studio is gegenereerd moeten we 1 laag van de JSON afhalen.
 
@@ -55,20 +51,18 @@ Bij gebruik van een tokens.json die door Tokens Studio is gegenereerd moeten we 
 design-tokens-lint --exclude-parent-keys figma/figma.tokens.json
 ```
 
-### Uitvoer naar bestand schrijven
+## Verbeteringen opslaan
 
-Schrijf uitvoer naar een bestand in plaats van stderr/stdout. Dit werkt voor zowel geslaagde als mislukte validaties. Bij succes wordt de volledige tokens-tree geschreven, inclusief aanvullende NL Design System-extensies en geüpgradede tokens die overeenkomen met [het Design Tokens JSON-formaat](https://www.designtokens.org/tr/2025.10/format/). Bij een fout worden de problemen als JSON naar het bestand geschreven.
+Sla het resultaat op in een bestand, in plaats van alleen het resultaat zien in de terminal. Dit werkt voor zowel geslaagde als mislukte validaties. Bij succes wordt de volledige tokens-tree geschreven, inclusief aanvullende NL Design System-extensies en geüpgradede tokens die overeenkomen met [het Design Tokens JSON-formaat](https://www.designtokens.org/tr/2025.10/format/). Bij een fout worden de problemen als JSON naar het bestand geschreven.
 
 ```shell
 design-tokens-lint --out result.json src/tokens.json
 ```
 
-## Opties
+## Command line opties
 
-| Optie                   | Beschrijving                                   |
-| ----------------------- | ---------------------------------------------- |
-| `--exclude-parent-keys` | Sluit bovenliggende sleutels uit van validatie |
-| `--out`, `-o <bestand>` | Schrijf JSON-uitvoer naar bestand              |
-| `--verbose`             | Toon stap-voor-stap voortgang                  |
-| `--debug`               | Toon tussentijdse JSON-uitvoer                 |
-| `--help`, `-h`          | Toon help                                      |
+Gebruik `--help` om alle opties te bekijken:
+
+```shell
+design-tokens-lint --help
+```
