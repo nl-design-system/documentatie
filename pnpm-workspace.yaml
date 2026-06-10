@@ -26,10 +26,12 @@ minimumReleaseAgeExclude:
   - "@nl-rvo/*"
   - "@rijkshuisstijl-community/*"
   - "@utrecht/*"
+  - shell-quote@1.8.4
 
 overrides:
   "@isaacs/brace-expansion@<=5.0.0": ">=5.0.1"
   form-data@>=4.0.0 <4.0.4: ">=4.0.4"
+  shell-quote@>=1.1.0 <=1.8.3: ^1.8.4
 
 patchedDependencies:
   "@rijkshuisstijl-community/card-react": patches/@rijkshuisstijl-community__card-react.patch
