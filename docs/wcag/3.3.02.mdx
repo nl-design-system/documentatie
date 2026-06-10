@@ -80,7 +80,7 @@ Elk invoerveld heeft een zichtbaar label dat beschrijft wat er moet worden ingev
 
 ### Label is alleen beschikbaar voor screenreaders
 
-Een invoerveld heeft een `aria-label` of een visueel verborgen `<label>`, maar geen zichtbaar label op het scherm. Een screenreader leest het label voor, maar een ziende bezoeker ziet niet wat er in het veld moet worden ingevuld. Dit succescriterium vereist dat labels zichtbaar zijn voor iedereen, niet alleen voor hulpsoftware.
+Een invoerveld heeft een `aria-label` of een visueel verborgen `<label>`, maar geen zichtbaar label op het scherm. Een screenreader leest het label voor, maar een ziende bezoeker ziet niet wat er in het veld moet worden ingevuld. Een zichtbaar label helpt iedereen die het formulier gebruikt, niet alleen bezoekers met hulpsoftware.
 
 **Hoe te testen:** bekijk het formulier zonder hulpsoftware. Heeft elk veld een zichtbaar label? Inspecteer de velden in de DevTools: staat het label in een `aria-label` of in een element met `class="sr-only"` of vergelijkbare visueel verborgen CSS?
 
@@ -140,17 +140,17 @@ Placeholders zijn niet bedoeld als vervanging van een label.
         <p>
           <label htmlFor="vis-voornaam">Voornaam</label>
           <br />
-          <input type="text" id="vis-voornaam" placeholder="bijv. Fatima" />
+          <input type="text" id="vis-voornaam" placeholder="bijvoorbeeld Fatima" />
         </p>
         <p>
           <label htmlFor="vis-achternaam">Achternaam</label>
           <br />
-          <input type="text" id="vis-achternaam" placeholder="bijv. De Vries" />
+          <input type="text" id="vis-achternaam" placeholder="bijvoorbeeld De Vries" />
         </p>
         <p>
           <label htmlFor="vis-email2">E-mailadres</label>
           <br />
-          <input type="email" id="vis-email2" placeholder="bijv. naam@voorbeeld.nl" />
+          <input type="email" id="vis-email2" placeholder="bijvoorbeeld naam@voorbeeld.nl" />
         </p>
       </>
     )}
@@ -184,7 +184,7 @@ Een veld verwacht een specifiek formaat, maar dat staat nergens vermeld. Een dat
 
 De instructie is via `aria-describedby` gekoppeld aan het veld, zodat een screenreader het voorleest wanneer het veld focus krijgt.
 
-**Wie kan dit oplossen:** een developer voegt een instructie toe bij het veld en koppelt die via `aria-describedby`.
+**Wie kan dit oplossen:** een contentmaker of webredacteur voegt de instructietekst toe in het CMS, als er een veld voor een helptekst of instructie bij het invoerveld bestaat. Een developer voegt zo'n instructieveld toe als het ontbreekt en koppelt het via `aria-describedby` aan het invoerveld.
 
 ### Verplichte velden zijn niet gemarkeerd
 
@@ -232,7 +232,7 @@ Een formulier heeft verplichte en optionele velden, maar er is geen aanduiding w
 
 Als de meeste velden verplicht zijn, markeer dan de optionele velden met "(optioneel)" in plaats van alle verplichte velden met een sterretje.
 
-**Wie kan dit oplossen:** een developer voegt de markering toe aan de labels en het `required`-attribuut aan de velden.
+**Wie kan dit oplossen:** een contentmaker of webredacteur voegt de zichtbare markering toe aan het labeltekst-veld in het CMS, bijvoorbeeld een sterretje of het woord "verplicht". Een developer zorgt dat het `required`-attribuut op het invoerveld staat en dat de legenda bij het sterretje aanwezig is.
 
 ### Instructie staat alleen bovenaan het formulier
 
@@ -267,13 +267,13 @@ Een formulier begint met een blok instructietekst dat uitlegt hoe het formulier 
 
 </Guideline>
 
-**Wie kan dit oplossen:** een developer plaatst de instructies bij de velden en koppelt ze via `aria-describedby`.
+**Wie kan dit oplossen:** een contentmaker of webredacteur plaatst de instructies bij de individuele velden in het CMS, als daar ruimte voor is. Een developer zorgt dat elke instructie via `aria-describedby` aan het bijbehorende veld is gekoppeld.
 
 ### Groep invoervelden zonder groepslabel
 
 Een formulier heeft een sectie met adresvelden: straat, huisnummer, postcode, plaats. Visueel is duidelijk dat ze bij elkaar horen, maar in de code ontbreekt een groepslabel. Een screenreader leest de velden los van elkaar voor zonder de context van de groep.
 
-Dit komt ook voor bij betalingsformulieren (kaartnummer, vervaldatum, CVC) en bij persoonlijke gegevens (voornaam, achternaam, geboortedatum).
+Hetzelfde geldt voor een betalingsformulier met kaartnummer, vervaldatum en CVC, of een blok met persoonlijke gegevens als voornaam, achternaam en geboortedatum.
 
 **Hoe te testen:** ga met een screenreader door een groep gerelateerde velden. Wordt de groepsnaam voorgelezen bij elk veld?
 
