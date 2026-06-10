@@ -44,7 +44,7 @@ export default function Home() {
       </Head>
       <Layout>
         <main>
-          <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--hero">
+          <SpotlightSection className="ma-homepage-spotlight-section ma-homepage-spotlight-section--hero">
             <div className="container">
               <Heading level={1}>Samen bouwen aan betere digitale dienstverlening</Heading>
               <Paragraph appearance="lead">
@@ -77,7 +77,7 @@ export default function Home() {
               </ActionGroup>
             </div>
           </SpotlightSection>
-          <div className="container homepage-section">
+          <div className="container ma-homepage-section">
             <Heading level={2}>Waar begin je?</Heading>
             <Heading level={3}>Bekijk de onboarding sessie</Heading>
             <VideoPlayer id="Yh4NqpphJQ4" title="Onboarding sessie voor NL Design System" />
@@ -86,50 +86,50 @@ export default function Home() {
               je een huisstijl vast kan leggen als thema en hoe je de componenten kunt gebruiken in code.
             </Paragraph>
             <Heading level={3}>Lees de documentatie</Heading>
-            <div className="homepage-card-group">
+            <div className="ma-homepage-card-group">
               <Card
                 body="Meedoen met code? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Storybook en design tokens."
                 heading="Als je websites bouwt"
                 headingLevel={4}
-                href="/handboek/developer/overzicht"
+                href="/handboek/developer/introductie/"
                 image={<DeveloperSVG />}
               ></Card>
               <Card
                 body="Meedoen met Figma? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
                 heading="Als je designs maakt"
                 headingLevel={4}
-                href="/handboek/designer/overzicht"
+                href="/handboek/designer/introductie/"
                 image={<DesignerSVG />}
               ></Card>
               <Card
                 body="Meedoen als contentmaker? Gebruik vandaag nog onze content richtlijnen bij het maken van toegankelijke webcontent."
                 heading="Als je content beheert"
                 headingLevel={4}
-                href="/richtlijnen/content"
+                href="/richtlijnen/content/"
                 image={<ContentSVG />}
               ></Card>
               <Card
                 body="Meedoen als manager? Herbruikbare oplossingen die tijd en budget besparen, met business cases en implementatiestrategieën"
                 heading="Als je projecten leidt"
                 headingLevel={4}
-                href="/handboek/manager/introductie"
+                href="/handboek/manager/introductie/"
                 image={<ManagerSVG />}
               ></Card>
             </div>
           </div>
-          <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--heartbeat">
+          <SpotlightSection className="ma-homepage-spotlight-section ma-homepage-spotlight-section--heartbeat">
             <div className="container">
               <Heading level={2}>Bekijk de laatste updates</Heading>
               <HeartbeatEpisode headingLevel={3} />
 
               <ActionGroup>
-                <ButtonLink href="/events/heartbeat/aanmelden" appearance="primary-action-button">
+                <ButtonLink href="/events/heartbeat/aanmelden/" appearance="primary-action-button">
                   Meld je aan voor de Heartbeat
                   <Icon>
                     <IconChevronRight />
                   </Icon>
                 </ButtonLink>
-                <ButtonLink href="/events/heartbeat/videos" appearance="secondary-action-button">
+                <ButtonLink href="/events/heartbeat/videos/" appearance="secondary-action-button">
                   Bekijk andere Heartbeats
                   <Icon>
                     <IconChevronRight />
@@ -138,14 +138,14 @@ export default function Home() {
               </ActionGroup>
             </div>
           </SpotlightSection>
-          <div className="container homepage-section">
+          <div className="container ma-homepage-section">
             <Heading level={2}>Gebruik NL Design System</Heading>
-            <div className="homepage-card-group">
+            <div className="ma-homepage-card-group">
               <Card
                 body="Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen."
                 heading="Richtlijnen"
                 headingLevel={3}
-                href="/richtlijnen"
+                href="/richtlijnen/"
                 image={<GuidelineSVG />}
                 className="utrecht-card--ma-info"
               ></Card>
@@ -153,7 +153,7 @@ export default function Home() {
                 body="Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer."
                 heading="Componenten"
                 headingLevel={3}
-                href="/componenten"
+                href="/componenten/"
                 image={<ComponentSVG />}
                 className="utrecht-card--ma-info"
               ></Card>
@@ -161,7 +161,7 @@ export default function Home() {
                 body="Een overzicht van patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te lossen."
                 heading="Voorbeelden"
                 headingLevel={3}
-                href="/voorbeelden"
+                href="/voorbeelden/"
                 image={<ExamplesSVG />}
                 className="utrecht-card--ma-info"
               ></Card>
@@ -169,13 +169,13 @@ export default function Home() {
                 body="NL Design System verzamelt en publiceert gebruikersonderzoeken en faciliteert de community om samen te werken aan nieuwe onderzoeken."
                 heading="Gebruikersonderzoek"
                 headingLevel={3}
-                href="/voorbeelden/onderzoek"
+                href="/voorbeelden/onderzoek/"
                 image={<UserResearchSVG />}
                 className="utrecht-card--ma-info"
               ></Card>
             </div>
           </div>
-          <div className="container homepage-section">
+          <div className="container ma-homepage-section">
             <Heading level={2}>Wie doen er al mee?</Heading>
             <CardGroup appearance="small">
               <TempCard appearance="small" href="https://github.com/nl-design-system/utrecht">
@@ -249,27 +249,27 @@ export default function Home() {
               System.
             </Paragraph>
           </div>
-          <SpotlightSection className="homepage-spotlight-section homepage-spotlight-section--footer">
+          <SpotlightSection className="ma-homepage-spotlight-section ma-homepage-spotlight-section--footer">
             <div className="container">
               <Heading level={2}>Blijf op de hoogte</Heading>
-              <div className="homepage-card-group">
+              <div className="ma-homepage-card-group">
                 <Card
                   body="Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System worden besproken."
                   heading="Heartbeat"
                   headingLevel={3}
-                  href="/events/heartbeat/aanmelden"
+                  href="/events/heartbeat/aanmelden/"
                 ></Card>
                 <Card
                   body="Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL Design System."
                   heading="Nieuwsbrief"
                   headingLevel={3}
-                  href="/project/blijf-op-de-hoogte#nieuwsbrief"
+                  href="/project/blijf-op-de-hoogte/#nieuwsbrief"
                 ></Card>
                 <Card
                   body="Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit te wisselen."
                   heading=" Design Open Hour"
                   headingLevel={3}
-                  href="/events/design-open-hour/aanmelden"
+                  href="/events/design-open-hour/aanmelden/"
                 ></Card>
                 <Card
                   body="Wees welkom bij de 2-wekelijkse online bijeenkomst waar developers vragen stellen, inzichten delen en tips uit te wisselen."

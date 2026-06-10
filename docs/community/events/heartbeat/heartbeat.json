@@ -1,5 +1,68 @@
 [
   {
+    "id": 127,
+    "date": "2026-06-09",
+    "description": [
+      "Jiro van Maykin vertelt ons over diens avontuur van de afgelopen periode, waar die componenten uit de MijnServices interactie-patronen designs door het NL Design System estafettemodel heeft gehaald.",
+      "Richard van het kernteam geeft een korte update met betrekking tot tooling en veiligheid: pnpm, GitHub Actions, Vercel.",
+      "Yolijn geeft een community update: de 100e Help Wanted component van NL Design System, nieuwe componenten die sinds de laatste estafettemodeldag nu Community status zijn, en de aankomende estafettemodeldag."
+    ],
+    "title": "Heartbeat van 9 juni 2026.",
+    "youtubeId": "PLJzPPP2Ewc"
+  },
+  {
+    "id": 126,
+    "date": "2026-05-26",
+    "description": [
+      "Aline van Logius neemt ons mee in de design token aanpak voor multidimensionale thema’s in Figma voor de Rijkshuisstijl.",
+      "Bart vertelt over zijn opdracht bij de Rijkshuisstijl Community.",
+      "Charlotte van het kernteam geeft een recap van de estafettemodeldag van mei bij ICTU in Den Haag."
+    ],
+    "title": "Heartbeat van 26 mei 2026.",
+    "youtubeId": "aNrrtwLrk0Q"
+  },
+  {
+    "id": 125,
+    "date": "2026-05-12",
+    "description": [
+      "Charlotte van het kernteam geeft een recap van de estafettemodeldag van april bij ICTU in Den Haag.",
+      "Robbert van het kernteam vertelt over de nieuwe Root component, welke je nu al direct kan gebruiken."
+    ],
+    "title": "Heartbeat van 12 mei 2026.",
+    "youtubeId": "swWoEQiQ8y0"
+  },
+  {
+    "id": 124,
+    "date": "2026-04-28",
+    "description": [
+      "Bart van het Expertteam Digitale Toegankelijkheid laat de voortgang zien van de Theme Wizard.",
+      "Rozerin van het kernteam neemt jullie mee in hoe we Figma hygiëne toepassen in ons werk en hoe dit helpt om efficiënter samen te werken."
+    ],
+    "title": "Heartbeat van 28 april 2026.",
+    "youtubeId": "uu-7SYCiIfE"
+  },
+  {
+    "id": 123,
+    "date": "2026-04-14",
+    "description": [
+      "Yolijn van het kernteam geeft een praatje over hoe niet alleen de NL Design System community maar ook het kernteam transparent werkt.",
+      "Bas van gemeente Amsterdam vertelt over het gebruikersonderzoek dat is gedaan naar de positie van “Mijn Amsterdam” in de Page Header."
+    ],
+    "title": "Heartbeat van 14 april 2026.",
+    "youtubeId": "ZUdXNaWIyH4"
+  },
+  {
+    "id": 122,
+    "date": "2026-03-31",
+    "description": [
+      "Tim van het Expertteam Digitale Toegankelijkheid deelt hoe ver hij is met de editor die bedoeld is om te helpen toegankelijke content te maken.",
+      "Fionn en Neslihan van Logius delen hoe ze het CSS Cross Contamination probleem in de Rijkshuisstijl Community hebben opgelost en de stappen die andere kunnen nemen om dit ook zo op te lossen.",
+      "Richard van het kerneam vertelt hoe het kernteam helpt de infrastructuur voor Open Source werken up-to-date en veilig te houden en waar je rekening mee kunt houden om op een veilige manier code van anderen te gebruiken en nieuwe code toe te voegen."
+    ],
+    "title": "Heartbeat van 31 maart 2026.",
+    "youtubeId": "ee-rRqBGcJg"
+  },
+  {
     "id": 121,
     "date": "2026-03-17",
     "description": [
@@ -19,7 +82,7 @@
       "Robbert van het kernteam vertelt over de verbeteringen op de NL Design System website op het Componenten Overzicht en de Component Detail pagina aan de hand van enquête resultaten."
     ],
     "title": "Heartbeat van 3 maart 2026.",
-    "youtubeId": "UBTwT70RRjI"
+    "youtubeId": "fCPsq-u-ezM"
   },
   {
     "id": 119,
@@ -171,7 +234,7 @@
     "date": "2025-07-08",
     "description": [
       "Charlotte deelt hoe de Rijkshuisstijl Community hun nieuwe website heeft geüpdatet.",
-      "Rozerin vertelt over de vernieuwde pagina's voor designers en ze laat zien hoe je makkelijker componenten kunt filteren op implementatie op [nldesignsystem.nl/componenten](/componenten)."
+      "Rozerin vertelt over de vernieuwde pagina's voor designers en ze laat zien hoe je makkelijker componenten kunt filteren op implementatie op [nldesignsystem.nl/componenten](/componenten/)."
     ],
     "title": "Heartbeat van 7 juli 2025",
     "youtubeId": "1n7LK_zckgQ"
@@ -182,7 +245,7 @@
     "description": [
       "Bryan geeft een update over de Overheidsbrede Portalen bij het Common Ground Fieldlab.",
       "Peter vertelt over zijn PostCSS-plugin om alleen de design tokens in te laden die je daadwerkelijk gebruikt.",
-      "Menno vertelt over het verbeterde componentenoverzicht op [nldesignsystem.nl/componenten](/componenten)."
+      "Menno vertelt over het verbeterde componentenoverzicht op [nldesignsystem.nl/componenten](/componenten/)."
     ],
     "title": "Heartbeat van 24 juni 2025",
     "youtubeId": "wXkWWCoE9vU"
@@ -363,7 +426,7 @@
     "id": 86,
     "date": "2024-10-01",
     "description": [
-      "In deze Heartbeat vertelt Yasmin Hoekstra van de gemeente Rotterdam over het gebruikersonderzoek naar klachtenformulieren. En we delen updates uit de Community Sprints. Tot slot vertelt Jeffrey dat de [Design Systems Week](https://nldesignsystem.nl/events/design-systems-week-2024) er weer aankomt! Via de website van NL Design System [meld je je aan](https://nldesignsystem.nl/events/design-systems-week/aanmelden/)."
+      "In deze Heartbeat vertelt Yasmin Hoekstra van de gemeente Rotterdam over het gebruikersonderzoek naar klachtenformulieren. En we delen updates uit de Community Sprints. Tot slot vertelt Jeffrey dat de [Design Systems Week](https://nldesignsystem.nl/events/design-systems-week-2024/programma/) er weer aankomt! Via de website van NL Design System [meld je je aan](https://nldesignsystem.nl/events/design-systems-week/aanmelden/)."
     ],
     "title": "Heartbeat van 1 oktober 2024",
     "youtubeId": "4a310TouM3c"
@@ -372,7 +435,7 @@
     "id": 85,
     "date": "2024-09-17",
     "description": [
-      "In deze Heartbeat vertelt Hidde over de eerstvolgende [communitybijeenkomst op vrijdag 18 oktober](https://nldesignsystem.nl/events/communitybijeenkomst-18-10-2024/). Ook stelt ons nieuwe kernteamlid Marjon zich voor. Jaap-Hein van Logius vertelt over de Logius hackaton waarbij het design systems team de publieksprijs won. Vervolgens vertelt Bryan over de Community Sprint Overheidsbrede Portalen. Tot slot vertelt Hidde dat de [Design Systems Week](https://nldesignsystem.nl/events/design-systems-week-2024) er weer aankomt! Via de website van NL Design System [meld je je aan](https://nldesignsystem.nl/events/design-systems-week/aanmelden/)."
+      "In deze Heartbeat vertelt Hidde over de eerstvolgende [communitybijeenkomst op vrijdag 18 oktober](https://nldesignsystem.nl/events/communitybijeenkomst-18-10-2024/). Ook stelt ons nieuwe kernteamlid Marjon zich voor. Jaap-Hein van Logius vertelt over de Logius hackaton waarbij het design systems team de publieksprijs won. Vervolgens vertelt Bryan over de Community Sprint Overheidsbrede Portalen. Tot slot vertelt Hidde dat de [Design Systems Week](https://nldesignsystem.nl/events/design-systems-week-2024/programma/) er weer aankomt! Via de website van NL Design System [meld je je aan](https://nldesignsystem.nl/events/design-systems-week/aanmelden/)."
     ],
     "title": "Heartbeat van 17 september 2024",
     "youtubeId": "a6jXXcNSFBQ"
