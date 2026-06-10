@@ -44,7 +44,7 @@
   },
   33500(e, t, n) {
    (n.r(t), n.d(t, { assets: () => c, contentTitle: () => s, default: () => m, frontMatter: () => l, metadata: () => a, toc: () => d }));
-   const a = JSON.parse('{"id":"community/expertteam-digitale-toegankelijkheid/index","title":"Expertteam Digitale Toegankelijkheid","description":"Over het deelproject Expertteam Digitale Toegankelijkheid","source":"@site/docs/community/expertteam-digitale-toegankelijkheid/index.mdx","sourceDirName":"community/expertteam-digitale-toegankelijkheid","slug":"/project/expertteam-digitale-toegankelijkheid","permalink":"/project/expertteam-digitale-toegankelijkheid","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/expertteam-digitale-toegankelijkheid/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Expertteam Digitale Toegankelijkheid","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Expertteam Digitale Toegankelijkheid","pagination_label":"Expertteam Digitale Toegankelijkheid","description":"Over het deelproject Expertteam Digitale Toegankelijkheid","slug":"/project/expertteam-digitale-toegankelijkheid","keywords":["Expertteam","deelproject","nl design system","contact"]},"sidebar":"community","previous":{"title":"Aanmelden","permalink":"/community/community-sprints/rijkshuisstijl-community/aanmelden"},"next":{"title":"Bijeenkomsten","permalink":"/community/events/overzicht"}}');
+   const a = JSON.parse('{"id":"community/expertteam-digitale-toegankelijkheid/index","title":"Expertteam Digitale Toegankelijkheid","description":"Over het deelproject Expertteam Digitale Toegankelijkheid","source":"@site/docs/community/expertteam-digitale-toegankelijkheid/index.mdx","sourceDirName":"community/expertteam-digitale-toegankelijkheid","slug":"/project/expertteam-digitale-toegankelijkheid","permalink":"/project/expertteam-digitale-toegankelijkheid","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/expertteam-digitale-toegankelijkheid/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Expertteam Digitale Toegankelijkheid","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Expertteam Digitale Toegankelijkheid","pagination_label":"Expertteam Digitale Toegankelijkheid","description":"Over het deelproject Expertteam Digitale Toegankelijkheid","slug":"/project/expertteam-digitale-toegankelijkheid","keywords":["Expertteam","deelproject","nl design system","contact"]},"sidebar":"community","previous":{"title":"Aanmelden","permalink":"/community/community-sprints/rijkshuisstijl-community/aanmelden"},"next":{"title":"Design Tokens valideren","permalink":"/project/expertteam-digitale-toegankelijkheid/lint-design-tokens"}}');
    var i = n(86070),
     o = n(18439),
     r = (n(46447), n(26655), n(53538), n(72863));
@@ -133,8 +133,8 @@
       E = e.activatedClass || 'lyt-activated',
       _ = e.adNetwork || !1,
       C = e.aspectHeight || 9,
-      $ = e.aspectWidth || 16,
-      T = e.iframeClass || '',
+      T = e.aspectWidth || 16,
+      $ = e.iframeClass || '',
       D = e.playerClass || 'lty-playbtn',
       N = e.wrapperClass || 'yt-lite',
       S = i.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
@@ -253,8 +253,8 @@
          'data-title': m,
          role: s || e.lazyLoad ? void 0 : 'img',
          'aria-label': s ? void 0 : `${m} - YouTube video preview`,
-         style: { ...(!e.lazyLoad && { backgroundImage: `url(${w})` }), '--aspect-ratio': (C / $) * 100 + '%', ...(e.style || {}) },
-         children: [e.lazyLoad && !s && (0, a.jsx)('img', { src: w, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !s && (0, a.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && s) && (0, a.jsx)('button', { type: 'button', className: D, 'aria-label': `${h} ${m}`, 'aria-hidden': s || void 0, tabIndex: s ? -1 : 0, onClick: O, children: (0, a.jsx)('span', { className: 'lty-visually-hidden', children: h }) }), s && (0, a.jsx)('iframe', { ref: t, className: T, title: m, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+         style: { ...(!e.lazyLoad && { backgroundImage: `url(${w})` }), '--aspect-ratio': (C / T) * 100 + '%', ...(e.style || {}) },
+         children: [e.lazyLoad && !s && (0, a.jsx)('img', { src: w, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !s && (0, a.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && s) && (0, a.jsx)('button', { type: 'button', className: D, 'aria-label': `${h} ${m}`, 'aria-hidden': s || void 0, tabIndex: s ? -1 : 0, onClick: O, children: (0, a.jsx)('span', { className: 'lty-visually-hidden', children: h }) }), s && (0, a.jsx)('iframe', { ref: t, className: $, title: m, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
       })
