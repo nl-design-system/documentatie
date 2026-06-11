@@ -1,6 +1,6 @@
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [60170],
+ [40581],
  {
   18439(e, s, n) {
    n.d(s, { R: () => o, x: () => a });
@@ -21,9 +21,9 @@
     return ((s = e.disableParentContext ? ('function' == typeof e.components ? e.components(r) : e.components || r) : o(e.components)), i.createElement(t.Provider, { value: s }, e.children));
    }
   },
-  97508(e, s, n) {
+  75699(e, s, n) {
    (n.r(s), n.d(s, { assets: () => l, contentTitle: () => a, default: () => m, frontMatter: () => o, metadata: () => i, toc: () => d }));
-   const i = JSON.parse('{"id":"baseline/2026-05","title":"Baseline mei 2026","description":"De softwareversies waarmee we in mei 2026 voor NL Design System testen voor Baseline support.","source":"@site/docs/baseline/2026-05.mdx","sourceDirName":"baseline","slug":"/baseline/2026-05","permalink":"/baseline/2026-05","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/baseline/2026-05.mdx","tags":[],"version":"current","sidebarPosition":-202605,"frontMatter":{"title":"Baseline mei 2026","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Baseline mei 2026","sidebar_position":-202605,"navigation_order":-202605,"pagination_label":"Baseline mei 2026","description":"De softwareversies waarmee we in mei 2026 voor NL Design System testen voor Baseline support.","slug":"/baseline/2026-05","keywords":["Accessibility Support Baseline","Baseline","browser support","browserversie"]},"sidebar":"handboek","previous":{"title":"Baseline","permalink":"/baseline/"},"next":{"title":"Baseline april 2026","permalink":"/baseline/2026-04"}}');
+   const i = JSON.parse('{"id":"baseline/Archief/2026-05","title":"Baseline mei 2026","description":"De softwareversies waarmee we in mei 2026 voor NL Design System testen voor Baseline support.","source":"@site/docs/baseline/Archief/2026-05.mdx","sourceDirName":"baseline/Archief","slug":"/baseline/2026-05","permalink":"/baseline/2026-05","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/baseline/Archief/2026-05.mdx","tags":[],"version":"current","sidebarPosition":-202605,"frontMatter":{"title":"Baseline mei 2026","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Baseline mei 2026","sidebar_position":-202605,"navigation_order":-202605,"pagination_label":"Baseline mei 2026","description":"De softwareversies waarmee we in mei 2026 voor NL Design System testen voor Baseline support.","slug":"/baseline/2026-05","keywords":["Accessibility Support Baseline","Baseline","browser support","browserversie"]},"sidebar":"handboek","previous":{"title":"Baseline juni 2026","permalink":"/baseline/2026-06"},"next":{"title":"Baseline april 2026","permalink":"/baseline/2026-04"}}');
    var r = n(86070),
     t = n(18439);
    const o = { title: 'Baseline mei 2026', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Baseline mei 2026', sidebar_position: -202605, navigation_order: -202605, pagination_label: 'Baseline mei 2026', description: 'De softwareversies waarmee we in mei 2026 voor NL Design System testen voor Baseline support.', slug: '/baseline/2026-05', keywords: ['Accessibility Support Baseline', 'Baseline', 'browser support', 'browserversie'] },
