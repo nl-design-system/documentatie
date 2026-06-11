@@ -6,7 +6,7 @@ Een Alert geeft informatie over het proces van de bezoeker. De bezoeker moet de 
 
 Bijvoorbeeld:
 
-- Een samenvatting van foutmeldingen in een formulier blijft staan tot de bezoeker alle foutmeldingen heeft opgelost.
+- Een samenvatting van foutmeldingen boven een formulier blijft staan tot de bezoeker het formulier opnieuw verstuurt of de foutmelding(en) oplost. De inhoud mag wel veranderen.
 - Een waarschuwing blijft zichtbaar totdat de bezoeker actie heeft ondernomen.
 - Een succesmelding blijft zichtbaar totdat de bezoeker de pagina verlaat of een andere actie op de pagina uitvoert.
 
