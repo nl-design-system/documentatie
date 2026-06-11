@@ -1,6 +1,8 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor dat meldingen op een logische plek op de pagina staan. De plek van een melding op een pagina geeft context over het belang van de melding. Daarnaast helpt het de bezoeker te bepalen of de bezoeker zelf actie moet ondernemen.
+Zorg ervoor dat meldingen op een logische plek op de pagina staan. Wanneer de Alert informatie bevat die invloed heeft op een beslissing of acties van een bezoeker plaats je de Alert vóór de interactieve elementen die de bezoeker daarvoor nodig heeft.
+
+Zo zorg je er tegelijkertijd voor dat als de Alert toetsenbordfocus krijgt, er geen belangrijke informatie en andere interactieve elementen worden overgeslagen wanneer de bezoeker verder navigeert met het toetsenbord.
 
 Bijvoorbeeld:
 
