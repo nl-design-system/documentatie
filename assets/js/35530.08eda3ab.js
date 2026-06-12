@@ -1,7 +1,7 @@
-/*! For license information please see 5657.ef036ea7.js.LICENSE.txt */
+/*! For license information please see 35530.08eda3ab.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [5657],
+ [35530],
  {
   1375(e, t, n) {
    n.d(t, { A: () => a });
@@ -62,57 +62,62 @@
     ['path', { d: 'M15.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0', key: 'svg-3' }],
    ]);
   },
-  56421(e, t, n) {
-   n.d(t, { D: () => a.D });
-   var a = n(37168);
-   n(30758);
-   !(function (e, t) {
-    void 0 === t && (t = {});
-    var n = t.insertAt;
-    if ('undefined' != typeof document) {
-     var a = document.head || document.getElementsByTagName('head')[0],
-      r = document.createElement('style');
-     ((r.type = 'text/css'), 'top' === n && a.firstChild ? a.insertBefore(r, a.firstChild) : a.appendChild(r), r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(document.createTextNode(e)));
-    }
-   })('.nl-heading{break-after:avoid;break-inside:avoid}.nl-heading--level-1{color:var(--nl-heading-level-1-color, inherit);font-family:var(--nl-heading-level-1-font-family);font-size:var(--nl-heading-level-1-font-size, revert);font-weight:var(--nl-heading-level-1-font-weight, bold);line-height:var(--nl-heading-level-1-line-height);margin-block-end:var(--nl-heading-level-1-margin-block-end, revert);margin-block-start:var(--nl-heading-level-1-margin-block-start, revert)}.nl-heading--level-2{color:var(--nl-heading-level-2-color, inherit);font-family:var(--nl-heading-level-2-font-family);font-size:var(--nl-heading-level-2-font-size, revert);font-weight:var(--nl-heading-level-2-font-weight, bold);line-height:var(--nl-heading-level-2-line-height);margin-block-end:var(--nl-heading-level-2-margin-block-end, revert);margin-block-start:var(--nl-heading-level-2-margin-block-start, revert)}.nl-heading--level-3{color:var(--nl-heading-level-3-color, inherit);font-family:var(--nl-heading-level-3-font-family);font-size:var(--nl-heading-level-3-font-size, revert);font-weight:var(--nl-heading-level-3-font-weight, bold);line-height:var(--nl-heading-level-3-line-height);margin-block-end:var(--nl-heading-level-3-margin-block-end, revert);margin-block-start:var(--nl-heading-level-3-margin-block-start, revert)}.nl-heading--level-4{color:var(--nl-heading-level-4-color, inherit);font-family:var(--nl-heading-level-4-font-family);font-size:var(--nl-heading-level-4-font-size, revert);font-weight:var(--nl-heading-level-4-font-weight, bold);line-height:var(--nl-heading-level-4-line-height);margin-block-end:var(--nl-heading-level-4-margin-block-end, revert);margin-block-start:var(--nl-heading-level-4-margin-block-start, revert)}.nl-heading--level-5{color:var(--nl-heading-level-5-color, inherit);font-family:var(--nl-heading-level-5-font-family);font-size:var(--nl-heading-level-5-font-size, revert);font-weight:var(--nl-heading-level-5-font-weight, bold);line-height:var(--nl-heading-level-5-line-height);margin-block-end:var(--nl-heading-level-5-margin-block-end, revert);margin-block-start:var(--nl-heading-level-5-margin-block-start, revert)}.nl-heading--level-6{color:var(--nl-heading-level-6-color, inherit);font-family:var(--nl-heading-level-6-font-family);font-size:var(--nl-heading-level-6-font-size, revert);font-weight:var(--nl-heading-level-6-font-weight, bold);line-height:var(--nl-heading-level-6-line-height);margin-block-end:var(--nl-heading-level-6-margin-block-end, revert);margin-block-start:var(--nl-heading-level-6-margin-block-start, revert)}\n');
+  43864(e, t, n) {
+   n.d(t, { A: () => a });
+   const a = (0, n(18652).A)('outline', 'shadow', 'Shadow', [
+    ['path', { d: 'M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0', key: 'svg-0' }],
+    ['path', { d: 'M13 12h5', key: 'svg-1' }],
+    ['path', { d: 'M13 15h4', key: 'svg-2' }],
+    ['path', { d: 'M13 18h1', key: 'svg-3' }],
+    ['path', { d: 'M13 9h4', key: 'svg-4' }],
+    ['path', { d: 'M13 6h1', key: 'svg-5' }],
+   ]);
+  },
+  73563(e, t, n) {
+   n.d(t, { A: () => a });
+   const a = (0, n(18652).A)('outline', 'number', 'Number', [
+    ['path', { d: 'M4 17v-10l7 10v-10', key: 'svg-0' }],
+    ['path', { d: 'M15 17h5', key: 'svg-1' }],
+    ['path', { d: 'M15 10a2.5 3 0 1 0 5 0a2.5 3 0 1 0 -5 0', key: 'svg-2' }],
+   ]);
   },
   76223(e, t, n) {
    n.d(t, { sj: () => M });
    const a = '[object RegExp]',
     r = '[object String]',
-    l = '[object Number]',
-    o = '[object Boolean]',
-    i = '[object Arguments]',
-    c = '[object Symbol]',
+    o = '[object Number]',
+    s = '[object Boolean]',
+    c = '[object Arguments]',
+    i = '[object Symbol]',
     d = '[object Date]',
-    s = '[object Map]',
-    v = '[object Set]',
-    h = '[object Array]',
-    g = '[object ArrayBuffer]',
-    f = '[object Object]',
-    b = '[object DataView]',
-    u = '[object Uint8Array]',
-    y = '[object Uint8ClampedArray]',
-    p = '[object Uint16Array]',
+    l = '[object Map]',
+    f = '[object Set]',
+    p = '[object Array]',
+    u = '[object ArrayBuffer]',
+    h = '[object Object]',
+    y = '[object DataView]',
+    v = '[object Uint8Array]',
+    g = '[object Uint8ClampedArray]',
+    b = '[object Uint16Array]',
     m = '[object Uint32Array]',
     k = '[object Int8Array]',
-    w = '[object Int16Array]',
-    j = '[object Int32Array]',
+    j = '[object Int16Array]',
+    w = '[object Int32Array]',
     O = '[object Float32Array]',
     A = '[object Float64Array]';
    function M(e, t) {
     return x(e, void 0, e, new Map(), t);
    }
-   function x(e, t, n, M = new Map(), B = void 0) {
-    const S = B?.(e, t, n, M);
+   function x(e, t, n, M = new Map(), P = void 0) {
+    const S = P?.(e, t, n, M);
     if (void 0 !== S) return S;
-    if (null == (C = e) || ('object' != typeof C && 'function' != typeof C)) return e;
-    var C, P;
+    if (null == (N = e) || ('object' != typeof N && 'function' != typeof N)) return e;
+    var N, C;
     if (M.has(e)) return M.get(e);
     if (Array.isArray(e)) {
      const t = new Array(e.length);
      M.set(e, t);
-     for (let a = 0; a < e.length; a++) t[a] = x(e[a], a, n, M, B);
+     for (let a = 0; a < e.length; a++) t[a] = x(e[a], a, n, M, P);
      return (Object.hasOwn(e, 'index') && (t.index = e.index), Object.hasOwn(e, 'input') && (t.input = e.input), t);
     }
     if (e instanceof Date) return new Date(e.getTime());
@@ -123,50 +128,50 @@
     if (e instanceof Map) {
      const t = new Map();
      M.set(e, t);
-     for (const [a, r] of e) t.set(a, x(r, a, n, M, B));
+     for (const [a, r] of e) t.set(a, x(r, a, n, M, P));
      return t;
     }
     if (e instanceof Set) {
      const t = new Set();
      M.set(e, t);
-     for (const a of e) t.add(x(a, void 0, n, M, B));
+     for (const a of e) t.add(x(a, void 0, n, M, P));
      return t;
     }
     if ('undefined' != typeof Buffer && Buffer.isBuffer(e)) return e.subarray();
-    if (((P = e), ArrayBuffer.isView(P) && !(P instanceof DataView))) {
+    if (((C = e), ArrayBuffer.isView(C) && !(C instanceof DataView))) {
      const t = new (Object.getPrototypeOf(e).constructor)(e.length);
      M.set(e, t);
-     for (let a = 0; a < e.length; a++) t[a] = x(e[a], a, n, M, B);
+     for (let a = 0; a < e.length; a++) t[a] = x(e[a], a, n, M, P);
      return t;
     }
     if (e instanceof ArrayBuffer || ('undefined' != typeof SharedArrayBuffer && e instanceof SharedArrayBuffer)) return e.slice(0);
     if (e instanceof DataView) {
      const t = new DataView(e.buffer.slice(0), e.byteOffset, e.byteLength);
-     return (M.set(e, t), z(t, e, n, M, B), t);
+     return (M.set(e, t), B(t, e, n, M, P), t);
     }
     if ('undefined' != typeof File && e instanceof File) {
      const t = new File([e], e.name, { type: e.type });
-     return (M.set(e, t), z(t, e, n, M, B), t);
+     return (M.set(e, t), B(t, e, n, M, P), t);
     }
     if ('undefined' != typeof Blob && e instanceof Blob) {
      const t = new Blob([e], { type: e.type });
-     return (M.set(e, t), z(t, e, n, M, B), t);
+     return (M.set(e, t), B(t, e, n, M, P), t);
     }
     if (e instanceof Error) {
      const t = structuredClone(e);
-     return (M.set(e, t), (t.message = e.message), (t.name = e.name), (t.stack = e.stack), (t.cause = e.cause), (t.constructor = e.constructor), z(t, e, n, M, B), t);
+     return (M.set(e, t), (t.message = e.message), (t.name = e.name), (t.stack = e.stack), (t.cause = e.cause), (t.constructor = e.constructor), B(t, e, n, M, P), t);
     }
     if (e instanceof Boolean) {
      const t = new Boolean(e.valueOf());
-     return (M.set(e, t), z(t, e, n, M, B), t);
+     return (M.set(e, t), B(t, e, n, M, P), t);
     }
     if (e instanceof Number) {
      const t = new Number(e.valueOf());
-     return (M.set(e, t), z(t, e, n, M, B), t);
+     return (M.set(e, t), B(t, e, n, M, P), t);
     }
     if (e instanceof String) {
      const t = new String(e.valueOf());
-     return (M.set(e, t), z(t, e, n, M, B), t);
+     return (M.set(e, t), B(t, e, n, M, P), t);
     }
     if (
      'object' == typeof e &&
@@ -176,27 +181,27 @@
         return null == e ? (void 0 === e ? '[object Undefined]' : '[object Null]') : Object.prototype.toString.call(e);
        })(e)
       ) {
-       case i:
-       case h:
-       case g:
-       case b:
-       case o:
+       case c:
+       case p:
+       case u:
+       case y:
+       case s:
        case d:
        case O:
        case A:
        case k:
-       case w:
        case j:
-       case s:
+       case w:
        case l:
-       case f:
+       case o:
+       case h:
        case a:
-       case v:
+       case f:
        case r:
-       case c:
-       case u:
-       case y:
-       case p:
+       case i:
+       case v:
+       case g:
+       case b:
        case m:
         return !0;
        default:
@@ -205,17 +210,17 @@
      })(e)
     ) {
      const t = Object.create(Object.getPrototypeOf(e));
-     return (M.set(e, t), z(t, e, n, M, B), t);
+     return (M.set(e, t), B(t, e, n, M, P), t);
     }
     return e;
    }
-   function z(e, t, n = e, a, r) {
-    const l = [...Object.keys(t), ...((o = t), Object.getOwnPropertySymbols(o).filter((e) => Object.prototype.propertyIsEnumerable.call(o, e)))];
-    var o;
-    for (let i = 0; i < l.length; i++) {
-     const o = l[i],
-      c = Object.getOwnPropertyDescriptor(e, o);
-     (null == c || c.writable) && (e[o] = x(t[o], o, n, a, r));
+   function B(e, t, n = e, a, r) {
+    const o = [...Object.keys(t), ...((s = t), Object.getOwnPropertySymbols(s).filter((e) => Object.prototype.propertyIsEnumerable.call(s, e)))];
+    var s;
+    for (let c = 0; c < o.length; c++) {
+     const s = o[c],
+      i = Object.getOwnPropertyDescriptor(e, s);
+     (null == i || i.writable) && (e[s] = x(t[s], s, n, a, r));
     }
    }
   },
@@ -227,15 +232,15 @@
    ]);
   },
   79889(e, t, n) {
-   n.d(t, { K: () => h });
+   n.d(t, { K: () => p });
    var a = n(15540),
     r = n(69967),
-    l = n(86070),
-    o = n(30758),
-    i = ['children'],
-    c = ['dateTime'],
+    o = n(86070),
+    s = n(30758),
+    c = ['children'],
+    i = ['dateTime'],
     d = ['value'];
-   function s(e, t) {
+   function l(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var a = Object.getOwnPropertySymbols(e);
@@ -247,25 +252,25 @@
     }
     return n;
    }
-   function v(e) {
+   function f(e) {
     for (var t = 1; t < arguments.length; t++) {
      var n = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? s(Object(n), !0).forEach(function (t) {
+      ? l(Object(n), !0).forEach(function (t) {
          (0, a.A)(e, t, n[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-        : s(Object(n)).forEach(function (t) {
+        : l(Object(n)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t));
           });
     }
     return e;
    }
-   var h = (0, o.forwardRef)(function (e, t) {
+   var p = (0, s.forwardRef)(function (e, t) {
     var n = e.children,
-     a = (0, r.A)(e, i),
-     o = (function () {
+     a = (0, r.A)(e, c),
+     s = (function () {
       for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
       return t.filter(Boolean).join(' ');
      })('nl-data-badge', e.className);
@@ -274,22 +279,22 @@
       return 'dateTime' in e;
      })(a)
     ) {
-     var s = a.dateTime,
-      h = (0, r.A)(a, c);
-     return (0, l.jsx)('time', v(v({}, h), {}, { dateTime: s, className: o, ref: t, children: n }));
+     var l = a.dateTime,
+      p = (0, r.A)(a, i);
+     return (0, o.jsx)('time', f(f({}, p), {}, { dateTime: l, className: s, ref: t, children: n }));
     }
     if (
      (function (e) {
       return 'value' in e;
      })(a)
     ) {
-     var g = a.value,
-      f = (0, r.A)(a, d);
-     return (0, l.jsx)('data', v(v({}, f), {}, { value: g, className: o, ref: t, children: n }));
+     var u = a.value,
+      h = (0, r.A)(a, d);
+     return (0, o.jsx)('data', f(f({}, h), {}, { value: u, className: s, ref: t, children: n }));
     }
-    return (0, l.jsx)('span', v(v({}, a), {}, { className: o, ref: t, children: n }));
+    return (0, o.jsx)('span', f(f({}, a), {}, { className: s, ref: t, children: n }));
    });
-   h.displayName = 'DataBadge';
+   p.displayName = 'DataBadge';
    !(function (e, t) {
     void 0 === t && (t = {});
     var n = t.insertAt;
@@ -299,6 +304,10 @@
      ((r.type = 'text/css'), 'top' === n && a.firstChild ? a.insertBefore(r, a.firstChild) : a.appendChild(r), r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(document.createTextNode(e)));
     }
    })('.nl-data-badge{background-color:var(--nl-data-badge-background-color);border-color:var(--nl-data-badge-border-color, currentColor);border-radius:var(--nl-data-badge-border-radius, 0);border-style:solid;border-width:var(--nl-data-badge-border-width, 1px);box-sizing:border-box;color:var(--nl-data-badge-color);display:inline-block;font-family:var(--nl-data-badge-font-family);font-size:var(--nl-data-badge-font-size);font-weight:var(--nl-data-badge-font-weight);line-height:var(--nl-data-badge-line-height);max-block-size:max-content;max-inline-size:max-content;min-block-size:var(--nl-data-badge-min-block-size);min-inline-size:var(--nl-data-badge-min-inline-size);padding-block:var(--nl-data-badge-padding-block);padding-inline:var(--nl-data-badge-padding-inline);text-decoration:none}@media screen and (forced-colors: active){.nl-data-badge{border-color:currentColor;border-width:min(var(--nl-data-badge-border-width, 1px),1px)}}\n');
+  },
+  82999(e, t, n) {
+   n.d(t, { A: () => a });
+   const a = (0, n(18652).A)('outline', 'pointer', 'Pointer', [['path', { d: 'M7.904 17.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093l4.907 4.907a1.067 1.067 0 0 0 1.509 0l1.047 -1.047a1.067 1.067 0 0 0 0 -1.509l-4.907 -4.907l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563', key: 'svg-0' }]]);
   },
   91525(e, t, n) {
    n.d(t, { A: () => a });
@@ -318,13 +327,13 @@
    ]);
   },
   96547(e, t, n) {
-   n.d(t, { C: () => v });
+   n.d(t, { C: () => f });
    var a = n(15540),
     r = n(69967),
-    l = n(86070),
-    o = n(30758),
-    i = ['children', 'className'];
-   function c(e, t) {
+    o = n(86070),
+    s = n(30758),
+    c = ['children', 'className'];
+   function i(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
      var a = Object.getOwnPropertySymbols(e);
@@ -340,28 +349,28 @@
     for (var t = 1; t < arguments.length; t++) {
      var n = null != arguments[t] ? arguments[t] : {};
      t % 2
-      ? c(Object(n), !0).forEach(function (t) {
+      ? i(Object(n), !0).forEach(function (t) {
          (0, a.A)(e, t, n[t]);
         })
       : Object.getOwnPropertyDescriptors
         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-        : c(Object(n)).forEach(function (t) {
+        : i(Object(n)).forEach(function (t) {
            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t));
           });
     }
     return e;
    }
-   var s = function () {
+   var l = function () {
      for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
      return t.filter(Boolean).join(' ');
     },
-    v = (0, o.forwardRef)(function (e, t) {
+    f = (0, s.forwardRef)(function (e, t) {
      var n = e.children,
       a = e.className,
-      o = (0, r.A)(e, i);
-     return (0, l.jsx)('code', d(d({ dir: 'ltr', translate: 'no', className: s('nl-code', a) }, o), {}, { ref: t, children: n }));
+      s = (0, r.A)(e, c);
+     return (0, o.jsx)('code', d(d({ dir: 'ltr', translate: 'no', className: l('nl-code', a) }, s), {}, { ref: t, children: n }));
     });
-   v.displayName = 'Code';
+   f.displayName = 'Code';
    !(function (e, t) {
     void 0 === t && (t = {});
     var n = t.insertAt;

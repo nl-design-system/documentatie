@@ -49,7 +49,7 @@
   },
   16764(e, n, t) {
    'use strict';
-   t.d(n, { B: () => S });
+   t.d(n, { B: () => R });
    var i = t(96547),
     a = t(79889),
     r = t(76097),
@@ -78,21 +78,27 @@
        })
      : null;
    }
-   var p = t(35193),
-    j = t(13088),
-    b = t(91525),
-    x = t(24214),
-    k = t(92081),
-    v = t(1375),
-    f = t(23436),
-    w = t(79532),
-    y = t(30758);
-   const D = { color: p.A, dimension: j.A, fontFamilies: b.A, fontSizes: x.A, fontWeights: k.A, lineHeights: v.A, other: f.A, textDecoration: w.A },
-    A = ({ type: e }) => (0, m.jsx)(g.In, { children: (0, y.createElement)(D[e]) });
-   var z = t(76223);
-   function S({ tokens: e }) {
+   var p = t(43864),
+    j = t(35193),
+    b = t(82999),
+    x = t(13088),
+    k = t(91525),
+    v = t(24214),
+    f = t(92081),
+    w = t(1375),
+    y = t(73563),
+    D = t(23436),
+    A = t(79532),
+    z = t(30758);
+   const S = { boxShadow: p.A, color: j.A, cursor: b.A, dimension: x.A, fontFamily: k.A, fontFamilies: k.A, fontSize: v.A, fontSizes: v.A, fontWeight: f.A, fontWeights: f.A, lineHeight: w.A, lineHeights: w.A, number: y.A, other: D.A, textDecoration: A.A },
+    F = ({ type: e }) => {
+     const n = Object.hasOwn(S, e) ? e : 'other';
+     return (0, m.jsx)(g.In, { children: (0, z.createElement)(S[n]) });
+    };
+   var N = t(76223);
+   function R({ tokens: e }) {
     const n = (0, r.kD)(e),
-     t = (0, z.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     t = (0, N.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      s = (0, r.GT)(n),
      l = s.map((e) => (0, r.B_)(e) + ': ;').join('\n'),
      d = JSON.stringify(t);
@@ -105,7 +111,7 @@
          children: s.map((n) => {
           const t = (0, r.o_)(n),
            s = (0, r.eQ)(e, n).$type;
-          return (0, m.jsxs)(o.Hj, { children: [(0, m.jsx)(o.nA, { children: (0, m.jsx)(i.C, { children: (0, m.jsx)(o.kf, { children: t }) }) }), (0, m.jsx)(o.nA, { children: (0, m.jsxs)(a.K, { children: [(0, m.jsx)(A, { type: s }), ' ', s] }) })] }, t);
+          return (0, m.jsxs)(o.Hj, { children: [(0, m.jsx)(o.nA, { children: (0, m.jsx)(i.C, { children: (0, m.jsx)(o.kf, { children: t }) }) }), (0, m.jsx)(o.nA, { children: (0, m.jsxs)(a.K, { children: [(0, m.jsx)(F, { type: s }), ' ', s] }) })] }, t);
          }),
         }),
        ],

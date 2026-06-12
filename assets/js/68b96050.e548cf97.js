@@ -49,7 +49,7 @@
   },
   16764(e, n, a) {
    'use strict';
-   a.d(n, { B: () => N });
+   a.d(n, { B: () => L });
    var t = a(96547),
     r = a(79889),
     i = a(76097),
@@ -78,21 +78,27 @@
        })
      : null;
    }
-   var h = a(35193),
-    j = a(13088),
-    x = a(91525),
-    b = a(24214),
-    k = a(92081),
-    f = a(1375),
-    v = a(23436),
-    y = a(79532),
-    w = a(30758);
-   const D = { color: h.A, dimension: j.A, fontFamilies: x.A, fontSizes: b.A, fontWeights: k.A, lineHeights: f.A, other: v.A, textDecoration: y.A },
-    A = ({ type: e }) => (0, m.jsx)(u.In, { children: (0, w.createElement)(D[e]) });
-   var S = a(76223);
-   function N({ tokens: e }) {
+   var h = a(43864),
+    j = a(35193),
+    x = a(82999),
+    b = a(13088),
+    k = a(91525),
+    f = a(24214),
+    v = a(92081),
+    y = a(1375),
+    w = a(73563),
+    A = a(23436),
+    D = a(79532),
+    S = a(30758);
+   const N = { boxShadow: h.A, color: j.A, cursor: x.A, dimension: b.A, fontFamily: k.A, fontFamilies: k.A, fontSize: f.A, fontSizes: f.A, fontWeight: v.A, fontWeights: v.A, lineHeight: y.A, lineHeights: y.A, number: w.A, other: A.A, textDecoration: D.A },
+    T = ({ type: e }) => {
+     const n = Object.hasOwn(N, e) ? e : 'other';
+     return (0, m.jsx)(u.In, { children: (0, S.createElement)(N[n]) });
+    };
+   var F = a(76223);
+   function L({ tokens: e }) {
     const n = (0, i.kD)(e),
-     a = (0, S.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     a = (0, F.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      o = (0, i.GT)(n),
      l = o.map((e) => (0, i.B_)(e) + ': ;').join('\n'),
      d = JSON.stringify(a);
@@ -105,7 +111,7 @@
          children: o.map((n) => {
           const a = (0, i.o_)(n),
            o = (0, i.eQ)(e, n).$type;
-          return (0, m.jsxs)(s.Hj, { children: [(0, m.jsx)(s.nA, { children: (0, m.jsx)(t.C, { children: (0, m.jsx)(s.kf, { children: a }) }) }), (0, m.jsx)(s.nA, { children: (0, m.jsxs)(r.K, { children: [(0, m.jsx)(A, { type: o }), ' ', o] }) })] }, a);
+          return (0, m.jsxs)(s.Hj, { children: [(0, m.jsx)(s.nA, { children: (0, m.jsx)(t.C, { children: (0, m.jsx)(s.kf, { children: a }) }) }), (0, m.jsx)(s.nA, { children: (0, m.jsxs)(r.K, { children: [(0, m.jsx)(T, { type: o }), ' ', o] }) })] }, a);
          }),
         }),
        ],
@@ -568,8 +574,8 @@
     ];
    var y = a(26655),
     w = a(46447),
-    D = a(56421),
-    A = a(39948),
+    A = a(56421),
+    D = a(39948),
     S = a(1457),
     N = a(56167),
     T = a(16764),
@@ -594,7 +600,7 @@
    function O(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, i.R)(), ...e.components },
      { Checklist: a, ChecklistItem: t } = n;
-    return (a || E('Checklist', !0), t || E('ChecklistItem', !0), (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(N.Fc, { component: I, headingLevel: 1, description: B }), '\n', (0, r.jsx)(S.e, { component: I }), '\n', (0, r.jsx)(y.Zp, { className: 'ma-implementation-card', children: (0, r.jsxs)(y.Wu, { children: [(0, r.jsx)(D.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, r.jsxs)(w.dk, { children: [(0, r.jsxs)(w.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, r.jsx)(A.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, r.jsxs)(w.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, r.jsx)(A.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, r.jsx)(D.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, r.jsxs)(w.dk, { children: [(0, r.jsxs)(w.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie', children: [(0, r.jsx)(A.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, r.jsxs)(w.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/paragraph--documentatie', children: [(0, r.jsx)(A.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, r.jsx)(D.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, r.jsxs)(w.dk, { children: [(0, r.jsxs)(w.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: [(0, r.jsx)(A.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-css'] }), (0, r.jsxs)(w.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: [(0, r.jsx)(A.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-react'] }), (0, r.jsxs)(w.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-tokens', children: [(0, r.jsx)(A.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-tokens'] })] })] }) }), '\n', (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, r.jsx)(d.Ay, {}), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, r.jsx)(l.Ay, {}), '\n', (0, r.jsx)(a, { headingLevel: '4', children: f.map(({ component: e, ...n }) => (0, r.jsx)(t, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, r.jsx)(o.Ay, {}), '\n', (0, r.jsx)(a, { headingLevel: '4', children: v.map(({ component: e, ...n }) => (0, r.jsx)(t, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(F.o, { omitH1: !0, headingLevel: 2, children: (0, r.jsx)(C, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, r.jsx)(T.B, { tokens: z }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(N.VK, { component: I, headingLevel: 3 }), '\n', (0, r.jsx)(N.$9, { component: I, headingLevel: 2 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(N.mu, { component: I, headingLevel: 3 }), '\n', (0, r.jsx)(N.K_, { component: I })] }));
+    return (a || E('Checklist', !0), t || E('ChecklistItem', !0), (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(N.Fc, { component: I, headingLevel: 1, description: B }), '\n', (0, r.jsx)(S.e, { component: I }), '\n', (0, r.jsx)(y.Zp, { className: 'ma-implementation-card', children: (0, r.jsxs)(y.Wu, { children: [(0, r.jsx)(A.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, r.jsxs)(w.dk, { children: [(0, r.jsxs)(w.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, r.jsx)(D.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, r.jsxs)(w.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, r.jsx)(D.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, r.jsx)(A.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, r.jsxs)(w.dk, { children: [(0, r.jsxs)(w.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie', children: [(0, r.jsx)(D.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, r.jsxs)(w.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/paragraph--documentatie', children: [(0, r.jsx)(D.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, r.jsx)(A.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, r.jsxs)(w.dk, { children: [(0, r.jsxs)(w.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: [(0, r.jsx)(D.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-css'] }), (0, r.jsxs)(w.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: [(0, r.jsx)(D.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-react'] }), (0, r.jsxs)(w.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-tokens', children: [(0, r.jsx)(D.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-tokens'] })] })] }) }), '\n', (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, r.jsx)(d.Ay, {}), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, r.jsx)(l.Ay, {}), '\n', (0, r.jsx)(a, { headingLevel: '4', children: f.map(({ component: e, ...n }) => (0, r.jsx)(t, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, r.jsx)(o.Ay, {}), '\n', (0, r.jsx)(a, { headingLevel: '4', children: v.map(({ component: e, ...n }) => (0, r.jsx)(t, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(F.o, { omitH1: !0, headingLevel: 2, children: (0, r.jsx)(C, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, r.jsx)(T.B, { tokens: z }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(N.VK, { component: I, headingLevel: 3 }), '\n', (0, r.jsx)(N.$9, { component: I, headingLevel: 2 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(N.mu, { component: I, headingLevel: 3 }), '\n', (0, r.jsx)(N.K_, { component: I })] }));
    }
    function V(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
