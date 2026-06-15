@@ -20,7 +20,7 @@ const { page } = Astro.props;
 const { Content } = await render(page);
 
 const { navigationList } = (await navigation)();
-const navigationElement = await getNavigationElement(navigationList, Astro.url.pathname);
+const navigationElement = getNavigationElement(navigationList, Astro.url.pathname);
 const navigationGroup = isNavigationGroup(navigationElement) ? navigationElement : navigationElement?.parent;
 
 const components = await MDXComponents({ navigationItems: navigationGroup?.items });

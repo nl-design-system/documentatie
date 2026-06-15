@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { navigationList } = (await navigation)();
-const navigationElement = await getNavigationElement(navigationList, Astro.url.pathname);
+const navigationElement = getNavigationElement(navigationList, Astro.url.pathname);
 
 let pages = isNavigationGroup(navigationElement) && navigationElement.items ? navigationElement.items : [];
 pages = isNavigationItem(navigationElement) ? navigationElement.parent?.items || pages : pages;

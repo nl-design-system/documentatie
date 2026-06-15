@@ -12,7 +12,7 @@ import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tre
 export type Props = DocumentProps;
 
 const { navigationTree, navigationList } = await withCurrentIndication(navigation, Astro.url.pathname);
-const breadcrumbPath = await getBreadcrumbsForElement(navigationList, Astro.url.pathname);
+const breadcrumbPath = getBreadcrumbsForElement(navigationList, Astro.url.pathname);
 const treeLevelOne = navigationTree.items.find((item) => item.expanded || item.current);
 const items = serialiseNavigationTree(treeLevelOne);
 const { ...props } = Astro.props;

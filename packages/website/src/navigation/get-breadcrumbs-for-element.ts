@@ -6,13 +6,13 @@ import { getNavigationElement } from './get-navigation-element';
  * NavigationElements for a specific route. The `input` can be either an
  * `href` or `NavigationElement`.
  */
-export async function getBreadcrumbsForElement(
+export function getBreadcrumbsForElement(
   navigationElementList: NavigationElement[],
   input: string | NavigationElement,
-): Promise<NavigationElement[]> {
+): NavigationElement[] {
   const parents: Set<NavigationGroup> = new Set();
   const child: NavigationElement | undefined =
-    typeof input === 'string' ? await getNavigationElement(navigationElementList, input) : input;
+    typeof input === 'string' ? getNavigationElement(navigationElementList, input) : input;
 
   if (!child) return [];
 
