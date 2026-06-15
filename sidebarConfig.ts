@@ -312,7 +312,7 @@ const sidebars: SidebarsConfig = {
               link: {
                 type: 'generated-index',
                 title: 'Heartbeat',
-                slug: '/events/heartbeat/overzicht',
+                slug: '/events/heartbeat',
               },
               description:
                 "In onze tweewekelijkse Heartbeat vertellen kernteam en community wat er gaande is. Meld je aan of kijk video's terug.",
@@ -331,7 +331,7 @@ const sidebars: SidebarsConfig = {
               link: {
                 type: 'generated-index',
                 title: 'Design Open Hour',
-                slug: '/events/design-open-hour/overzicht',
+                slug: '/events/design-open-hour',
               },
               items: [
                 { type: 'doc', id: 'community/events/design-open-hour/index' },
@@ -346,7 +346,7 @@ const sidebars: SidebarsConfig = {
               link: {
                 type: 'generated-index',
                 title: 'Developer Open Hour',
-                slug: '/events/developer-open-hour/overzicht',
+                slug: '/events/developer-open-hour',
               },
               items: [
                 { type: 'doc', id: 'community/events/developer-open-hour/index' },
