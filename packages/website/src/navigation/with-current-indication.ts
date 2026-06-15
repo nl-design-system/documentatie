@@ -3,7 +3,9 @@ import { getNavigationElement } from './get-navigation-element';
 
 function markExpanded(group: NavigationGroup) {
   group.expanded = true;
-  if (group.parent) {
+
+  // mark all parents as expanded except for home
+  if (group.parent && group.parent.href !== '/') {
     markExpanded(group.parent);
   }
 }
@@ -14,13 +16,12 @@ function markExpanded(group: NavigationGroup) {
 export async function withCurrentIndication(navigationRoot: Promise<NavigationRoot>, pathname: string) {
   const { navigationTree, navigationList } = (await navigationRoot)();
 
-  const currentElement = await getNavigationElement(navigationList, pathname);
+  const currentElement = getNavigationElement(navigationList, pathname);
   if (currentElement) {
     currentElement.current = true;
   }
 
-  // mark all ancestors as expanded, except the home
-  if (currentElement?.parent && currentElement.parent !== navigationTree) {
+  if (currentElement?.parent) {
     markExpanded(currentElement.parent);
   }
 
