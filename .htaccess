@@ -66,6 +66,9 @@ Redirect 301 "/handboek/developer/herbruikbare-css/" "/handboek/developer/css-co
 Redirect 301 "/handboek/developer/changesets/" "/handboek/developer/changeset-conventie/"
 Redirect 301 "/handboek/developer/changes/" "/handboek/developer/semver-conventie/"
 Redirect 301 "/handboek/developer/deprecation/" "/handboek/developer/deprecation-conventie/"
+Redirect 301 "/events/heartbeat/overzicht/" "/events/heartbeat/"
+Redirect 301 "/events/design-open-hour/overzicht/" "/events/design-open-hour/"
+Redirect 301 "/events/developer-open-hour/overzicht/" "/events/developer-open-hour/"
 
 # Permanent redirects because the directory structure changed
 RedirectMatch 301 "^/events/?$" "/community/events/overzicht"
