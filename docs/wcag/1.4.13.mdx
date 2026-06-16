@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.13 Content bij hover of focus
 pagination_label: WCAG-succescriterium 1.4.13 Content bij hover of focus
-description: Maak tijdelijke inhoud voorspelbaar.
+description: Vensters die op hover of focus verschijnen, blijven leesbaar en kun je zelf sluiten.
 slug: 1.4.13
 keywords:
   - WCAG
@@ -30,9 +30,7 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.4.13-summary.md";
 
@@ -40,28 +38,30 @@ import Summary from "./summaries/_1.4.13-summary.md";
   {"WCAG-succescriterium 1.4.13 Content bij hover of focus"}
 </WcagHeadingGroup>
 
+## Uitleg
+
 <Summary />
 
-Dit succescriterium gaat over **niet-modale pop-ups**: aanvullende content die boven de bestaande pagina-inhoud verschijnt en die de rest van de pagina blokkeert. Denk aan zelfgemaakte tooltips, uitklap-submenu's in een hoofdmenu, info-popovers en autocomplete-suggestielijsten. Een modale dialoog die de rest van de pagina pas weer toegankelijk maakt na bevestiging, valt hier niet onder.
+Het gaat hier om **niet-modale pop-ups**: aanvullende content die boven de bestaande pagina-inhoud verschijnt en de rest van de pagina blokkeert. Bijvoorbeeld zelfgemaakte tooltips, uitklap-submenu's in een hoofdmenu, info-popovers en autocomplete-suggestielijsten. Een modale dialoog die de rest van de pagina pas weer toegankelijk maakt na bevestiging, valt hier niet onder.
 
-Aan zulke niet-modale pop-ups stelt het succescriterium drie eisen:
+Zulke niet-modale pop-ups moeten aan drie dingen voldoen:
 
-- **Afsluitbaar:** als het venster andere pagina-inhoud bedekt, moet de bezoeker hem kunnen afsluiten zonder de muis of toetsenbordfocus te verplaatsen — bijvoorbeeld met de <kbd>Escape</kbd>-toets.
-- **Aanwijsbaar:** als het venster op hover verschijnt, kan de muisaanwijzer over het venster zelf bewogen worden zonder dat het verdwijnt.
-- **Aanhoudend:** het venster blijft zichtbaar totdat de bezoeker hem afsluit, de muis of focus wordt verplaatst, of de informatie niet meer geldig is.
+- **Afsluitbaar:** als het venster andere pagina-inhoud bedekt, moet de bezoeker het kunnen afsluiten zonder de muis of toetsenbordfocus te verplaatsen, bijvoorbeeld met de <kbd>Escape</kbd>-toets.
+- **Aanwijsbaar:** als het venster op hover verschijnt, kan de bezoeker de muisaanwijzer over het venster zelf bewegen zonder dat het verdwijnt.
+- **Aanhoudend:** het venster blijft zichtbaar totdat de bezoeker het afsluit, de muis of focus wordt verplaatst, of de informatie niet meer geldig is.
 
-Het succescriterium geldt voor alles wat met JavaScript of CSS is gemaakt: zelfgemaakte tooltips, popovers, uitklapmenu's, hoverkaarten en infoballonnen. Het geldt **niet** voor:
+Dit speelt bij alles wat met JavaScript of CSS is gemaakt: zelfgemaakte tooltips, popovers, uitklapmenu's, hoverkaarten en infoballonnen. Het speelt **niet** bij:
 
-- de native tooltip uit het `title`-attribuut — die wordt door de browser zelf gestyled;
+- de native tooltip uit het `title`-attribuut, die wordt door de browser zelf gestyled;
 - content die alleen op klik of Enter verschijnt;
-- aanvullende content die geen andere pagina-inhoud bedekt — bijvoorbeeld een tooltip die over een blanco vlak hangt of een submenu dat alleen over een decoratieve foto valt;
+- aanvullende content die geen andere pagina-inhoud bedekt, bijvoorbeeld een tooltip die over een blanco vlak hangt of een submenu dat alleen over een decoratieve foto valt;
 - zelfstandige content zoals een skiplink op focus.
 
 ## Veelgemaakte fouten
 
 ### Niet-modaal venster bedekt pagina-inhoud en sluit niet met Escape
 
-Een popover, tooltip of uitklap-submenu verschijnt op hover of focus en bedekt een deel van de tekst eronder. De bezoeker wil de onderliggende tekst lezen, maar het venster blijft staan. Er is geen sluitknop en <kbd>Escape</kbd> doet niets. De enige manier om het venster weg te krijgen is de muis of focus verplaatsen — en daarmee verdwijnt ook waar de bezoeker net mee bezig was.
+Een popover, tooltip of uitklap-submenu verschijnt op hover of focus en bedekt een deel van de tekst eronder. De bezoeker wil de onderliggende tekst lezen, maar het venster blijft staan. Er is geen sluitknop en <kbd>Escape</kbd> doet niets. De enige manier om het venster weg te krijgen is de muis of focus verplaatsen, en daarmee verdwijnt ook waar de bezoeker net mee bezig was.
 
 Dit komt het vaakst voor bij uitklap-submenu's in de hoofdnavigatie en bij info-popovers op knoppen. Voor wie ingezoomd werkt is het een blokker: na inzoomen is bijna elk zichtbaar element een mogelijke trigger, en zonder afsluiting met <kbd>Escape</kbd> wordt steeds een deel van het scherm onbereikbaar.
 
@@ -90,9 +90,9 @@ Dit komt het vaakst voor bij uitklap-submenu's in de hoofdnavigatie en bij info-
 
 </Guideline>
 
-Deze eis geldt alleen als het venster andere pagina-inhoud bedekt. Een kleine tooltip die naast een knop hangt op een blanco vlak hoeft niet afsluitbaar te zijn. Twijfel je of het venster iets bedekt — bijvoorbeeld op verschillende schermbreedtes of bij ingezoomde weergave? Maak hem afsluitbaar.
+Deze eis geldt alleen als het venster andere pagina-inhoud bedekt. Een kleine tooltip die naast een knop hangt op een blanco vlak hoeft niet afsluitbaar te zijn. Twijfel je of het venster iets bedekt, bijvoorbeeld op verschillende schermbreedtes of bij ingezoomde weergave? Maak het afsluitbaar.
 
-**Wie kan dit oplossen:** een developer voegt een Escape-handler toe aan het component.
+**Wie kan dit oplossen:** een developer voegt een Escape-handler toe aan de component.
 
 ### Bezoeker kan met de muis niet over de aanvullende content meelezen
 
@@ -127,7 +127,7 @@ Door de hover-state op een wrapper te zetten die zowel de trigger als de popover
 
 Een tooltip, popover of submenu verschijnt op hover of focus en sluit na een paar seconden vanzelf, ook als de bezoeker de aanwijzer of focus op zijn plek laat. De content is weg voordat de bezoeker hem af heeft.
 
-Dit treft vooral wie tijd nodig heeft om tekst te lezen: bezoekers met een cognitieve beperking, mensen die in een tweede taal lezen, en wie een schermvergroter gebruikt — die laatste groep ziet maar een klein deel van de tekst tegelijk en heeft meer leesbewegingen nodig om alles te overzien.
+Dit treft vooral wie tijd nodig heeft om tekst te lezen: bezoekers met een cognitieve beperking, mensen die in een tweede taal lezen, en wie een schermvergroter gebruikt. Die laatste groep ziet maar een klein deel van de tekst tegelijk en heeft meer leesbewegingen nodig om alles te overzien.
 
 **Hoe te testen:** open een popover, tooltip of submenu. Laat de aanwijzer of focus stilstaan op de trigger of op het venster zelf. Wacht minstens 10 seconden. Blijft de content zichtbaar?
 
@@ -149,7 +149,7 @@ Dit treft vooral wie tijd nodig heeft om tekst te lezen: bezoekers met een cogni
     ```
 </Guideline>
 
-De content mag alleen sluiten op drie momenten: de bezoeker verplaatst de aanwijzer of focus weg, de bezoeker sluit hem zelf (zie de <kbd>Escape</kbd>-afhandeling hierboven), of de informatie is niet meer geldig — bijvoorbeeld bij een autocomplete-suggestielijst waarvan de suggesties veranderen door nieuwe invoer. Een vaste tijdslimiet hoort daar niet bij.
+De content mag alleen sluiten op drie momenten: de bezoeker verplaatst de aanwijzer of focus weg, de bezoeker sluit hem zelf met <kbd>Escape</kbd>, of de informatie is niet meer geldig, bijvoorbeeld bij een autocomplete-suggestielijst waarvan de suggesties veranderen door nieuwe invoer. Een vaste tijdslimiet hoort daar niet bij.
 
 **Wie kan dit oplossen:** een developer haalt de `setTimeout` weg en laat het sluiten alleen op de drie geldige momenten gebeuren.
 
@@ -159,9 +159,9 @@ De content mag alleen sluiten op drie momenten: de bezoeker verplaatst de aanwij
 
 1. Inventariseer eerst welke pop-ups onder 1.4.13 vallen. Sluit uit: native browser-tooltips uit `title=`, modale dialogen, content die geen pagina-inhoud bedekt, foutmeldingen, en zelfstandige content zoals skiplinks.
 2. Beweeg de muis over knoppen, links en menu-items. Bij elk niet-modaal venster dat verschijnt:
-   - Beweeg de muis op het venster zelf — blijft het zichtbaar? (aanwijsbaar)
-   - Druk op <kbd>Escape</kbd> — sluit het zonder de muis te verplaatsen? (afsluitbaar)
-   - Laat de muis stilstaan op trigger of venster — blijft het zichtbaar? (aanhoudend)
+   - Beweeg de muis op het venster zelf: blijft het zichtbaar? (aanwijsbaar)
+   - Druk op <kbd>Escape</kbd>: sluit het zonder de muis te verplaatsen? (afsluitbaar)
+   - Laat de muis stilstaan op trigger of venster: blijft het zichtbaar? (aanhoudend)
 3. Ga met <kbd>Tab</kbd> door de pagina. Bij elk niet-modaal venster dat op focus verschijnt, doe dezelfde controles met het toetsenbord.
 4. Zoom de pagina tot 200%. Bedekken pop-ups en submenu's nu een groot deel van het scherm? Werkt <kbd>Escape</kbd> nog?
 
@@ -170,22 +170,22 @@ De content mag alleen sluiten op drie momenten: de bezoeker verplaatst de aanwij
 1. Inventariseer in de code alle plekken waar content op `:hover` of `:focus` (of `mouseenter`/`focus`-listeners) verschijnt.
 2. Per geval: bedekt het venster andere pagina-inhoud? Zo ja, voeg een `keydown`-handler toe op `document`-niveau die <kbd>Escape</kbd> afvangt en het venster sluit.
 3. Controleer dat de hover-state op een wrapper rondom trigger én venster staat, of gebruik `:focus-within`. Zo blijft het venster open als de muis of focus van trigger naar venster gaat.
-4. Test specifiek op 200% zoom — daar wordt duidelijk welke vensters in de praktijk pagina-inhoud bedekken.
+4. Test specifiek op 200% zoom: daar wordt duidelijk welke vensters in de praktijk pagina-inhoud bedekken.
 5. Automatische tools detecteren dit succescriterium niet betrouwbaar. Handmatig testen met muis én toetsenbord is nodig.
 
 ## Gerelateerde succescriteria
 
 - [2.1.1 Toetsenbord](/wcag/2.1.1/): aanvullende content die alleen op hover verschijnt en niet op focus, is voor toetsenbordgebruikers onbereikbaar. Dat is een 2.1.1-probleem, niet 1.4.13.
-- [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom worden niet-modale pop-ups vaak groter dan het zichtbare gebied. Op die schermbreedte komt 1.4.13 vaker in beeld.
+- [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom kunnen niet-modale pop-ups groter worden dan het zichtbare gebied, waardoor ze meer pagina-inhoud bedekken.
 - [4.1.2 Naam, rol, waarde](/wcag/4.1.2/): de ARIA-koppeling van een tooltip aan zijn trigger (via `aria-describedby` en `role="tooltip"`) en de toegankelijke naam vallen onder 4.1.2, niet onder 1.4.13.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 1.4.13 Content bij hover of focus](https://www.w3.org/Translations/WCAG22-nl/#content-bij-aanwijzen-met-de-aanwijzer-of-focus) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 1.4.13: Content on Hover or Focus](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html) — de W3C-uitleg met technieken en voorbeelden (Engels).
-- [APG: Tooltip pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) — de ARIA Authoring Practices Guide voor toegankelijke tooltips, met code-voorbeelden en toetsenbordverwachtingen.
-- [Inclusive Components: Tooltips & Toggletips](https://inclusive-components.design/tooltips-toggletips/) — uitleg van Heydon Pickering over het verschil tussen tooltips (puur uitleg) en toggletips (uitleg op klik), met patronen voor beide.
-- [Floating UI](https://floating-ui.com/) — een JavaScript-bibliotheek die tooltips en popovers automatisch positioneert zodat ze niet buiten beeld vallen.
+- [WCAG 2.2: Succescriterium 1.4.13 Content bij hover of focus](https://www.w3.org/Translations/WCAG22-nl/#content-bij-aanwijzen-met-de-aanwijzer-of-focus): de officiële Nederlandstalige vertaling.
+- [Understanding 1.4.13 Content on Hover or Focus](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html): de toelichting van het W3C met technieken en voorbeelden (Engels).
+- [APG: Tooltip pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/): de ARIA Authoring Practices Guide voor toegankelijke tooltips, met code-voorbeelden en toetsenbordverwachtingen.
+- [Inclusive Components: Tooltips & Toggletips](https://inclusive-components.design/tooltips-toggletips/): uitleg van Heydon Pickering over het verschil tussen tooltips (puur uitleg) en toggletips (uitleg op klik), met patronen voor beide.
+- [Floating UI](https://floating-ui.com/): een JavaScript-bibliotheek die tooltips en popovers automatisch positioneert zodat ze niet buiten beeld vallen.
 
 ## Gebruikersonderzoek
 
@@ -197,12 +197,6 @@ De content mag alleen sluiten op drie momenten: de bezoeker verplaatst de aanwij
 - Nederlandse vertaling van het WCAG-succescriterium: [1.4.13 Content bij hover of focus](https://www.w3.org/Translations/WCAG22-nl/#content-on-hover-or-focus).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.13 Content on Hover or Focus</span>](https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.13 Content on Hover or Focus</span>](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
