@@ -31,9 +31,9 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
-import Summary from "./summaries/_1.4.12-summary.md";
+import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./\_wcag_footer_info.md";
+import Summary from "./summaries/\_1.4.12-summary.md";
 
 export const tekstafstand = {
   lineHeight: 1.5,
@@ -94,8 +94,6 @@ Hetzelfde stukje tekst, met en zonder de minimumwaarden toegepast:
     <p style={{ margin: 0, ...tekstafstand }}>Zo wordt de tekst leesbaarder voor wie moeite heeft met lezen.</p>
   </div>
 </div>
-
-Het verschil met [1.4.4 Herschalen van tekst](/wcag/1.4.4/) zit in wát de bezoeker aanpast. Bij 1.4.4 wordt de lettergrootte groter. Bij 1.4.12 blijft de lettergrootte gelijk, maar worden de afstanden ruimer. Beide criteria vragen om dezelfde CSS-aanpak: flexibele containers die met de inhoud meegroeien, geen vaste hoogtes die content afsnijden.
 
 ## Veelgemaakte fouten
 
@@ -498,7 +496,7 @@ Een datatabel heeft rijen met een vaste hoogte voor een strak ontwerp. Bij ruime
 
 ## Gerelateerde succescriteria
 
-- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): als de bezoeker de tekst 2 keer zo groot instelt, moet alle tekst en alle functies beschikbaar blijven. Dezelfde CSS-aanpak helpt bij beide criteria.
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): het verschil zit in wát de bezoeker aanpast. Bij 1.4.4 wordt de tekst groter, bij 1.4.12 blijft de tekst even groot en komt er alleen meer ruimte omheen.
 - [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom en 320 pixels breedte past de layout zich aan zonder horizontaal scrollen. Flexibele containers zijn voor alle drie de criteria de basis.
 - [1.4.8 Visuele presentatie](/wcag/1.4.8/): op niveau AAA gelden striktere eisen voor regelafstand en alineaspatiëring als standaardinstelling.
 - [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/): tekst in afbeeldingen kan niet aangepast worden. Gebruik echte tekst.
