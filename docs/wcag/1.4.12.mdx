@@ -132,7 +132,7 @@ Een container heeft een vaste hoogte in pixels. Bij de standaard regelafstand pa
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer vervangt vaste afmetingen (`height`, `width`, `block-size`, `inline-size`) waar mogelijk door de `min-`-variant, zodat de container kan meegroeien.
+**Wie kan dit oplossen:** een developer vervangt vaste afmetingen (`height`, `width`, `block-size`, `inline-size`) waar mogelijk door de `min`-variant, zodat de container kan meegroeien.
 
 ### Knop of label met een vaste hoogte
 
@@ -211,7 +211,7 @@ De bezoeker past de afstanden aan via een bookmarklet of extensie, maar de site 
 
 ### Tekst wordt na een vast aantal regels afgekapt
 
-Een product-teaser of kaart kapt de tekst af na drie regels met de CSS-eigenschap `-webkit-line-clamp`. Bij de standaard regelafstand passen drie zinnen. Bij een ruimere regelafstand passen die zinnen niet meer in drie regels en valt een deel van de tekst weg achter het beletselteken.
+Een product-teaser of kaart kapt de tekst af na een vast aantal regels. Daarvoor wordt de CSS-eigenschap `-webkit-line-clamp` gebruikt, maar het probleem geldt voor elke manier van line-clamping, niet alleen de variant met `-webkit-`-voorvoegsel. Bij de standaard regelafstand passen drie zinnen. Bij een ruimere regelafstand passen die zinnen niet meer in drie regels en valt een deel van de tekst weg achter het beletselteken.
 
 **Hoe te testen:** pas de regelafstand aan. Wordt de tekst na enkele regels met een beletselteken afgebroken, terwijl de rest van de tekst niet meer leesbaar is?
 
@@ -373,7 +373,7 @@ Een tooltip of pop-up heeft een vaste hoogte en breedte. De inhoud past bij stan
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer vervangt vaste maten door `min-` en `max-`-varianten met `padding`.
+**Wie kan dit oplossen:** een developer vervangt vaste maten door `min`- en `max`-varianten met `padding`.
 
 ### Formulierlabels naast invoervelden met vaste maten
 
@@ -487,7 +487,7 @@ Een datatabel heeft rijen met een vaste hoogte voor een strak ontwerp. Bij ruime
 
 ### Voor developers
 
-1. Zoek in de CSS naar vaste afmetingen in combinatie met `overflow: hidden`. Controleer de eigenschappen `height`, `width`, `block-size` en `inline-size`, en vervang ze waar mogelijk door de `min-`-variant.
+1. Zoek in de CSS naar vaste afmetingen in combinatie met `overflow: hidden`. Controleer de eigenschappen `height`, `width`, `block-size` en `inline-size`, en vervang ze waar mogelijk door de `min`-variant.
 2. Zoek naar `!important` op `line-height`, `letter-spacing`, `word-spacing` en `margin`. Verwijder tenzij er een goede reden voor is.
 3. Zoek naar `-webkit-line-clamp`. Overweeg om de tekst zelf in te korten in plaats van met CSS af te kappen.
 4. Zoek naar tekst in afbeeldingen. Vervang door echte HTML-tekst.
