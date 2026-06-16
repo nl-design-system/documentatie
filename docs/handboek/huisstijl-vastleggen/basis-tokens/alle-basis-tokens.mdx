@@ -18,7 +18,11 @@ keywords:
 import tokens from "@nl-design-system-unstable/basis-design-tokens/src/tokens.json";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 
-TODO: link naar changelog
+export const colorSection = (...keys) => ({
+  basis: {
+    color: Object.fromEntries(keys.map((k) => [k, tokens.basis.color[k]])),
+  },
+});
 
 # Alle basis-tokens
 
@@ -31,72 +35,59 @@ Op deze pagina vind je een overzicht van alle beschikbare basis-tokens, inclusie
 
 ### Transparant
 
-<DesignTokens tokens={{ basis: { color: { transparent: tokens.basis.color.transparent } } }} />
+<DesignTokens tokens={colorSection("transparent")} />
 
 ### Default
 
-<DesignTokens tokens={{ basis: { color: { default: tokens.basis.color["default"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "default-inverse": tokens.basis.color["default-inverse"] } } }} />
+<DesignTokens tokens={colorSection("default", "default-inverse")} />
 
 ### Accent 1
 
-<DesignTokens tokens={{ basis: { color: { "accent-1": tokens.basis.color["accent-1"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "accent-1-inverse": tokens.basis.color["accent-1-inverse"] } } }} />
+<DesignTokens tokens={colorSection("accent-1", "accent-1-inverse")} />
 
 ### Accent 2
 
-<DesignTokens tokens={{ basis: { color: { "accent-2": tokens.basis.color["accent-2"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "accent-2-inverse": tokens.basis.color["accent-2-inverse"] } } }} />
+<DesignTokens tokens={colorSection("accent-2", "accent-2-inverse")} />
 
 ### Accent 3
 
-<DesignTokens tokens={{ basis: { color: { "accent-3": tokens.basis.color["accent-3"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "accent-3-inverse": tokens.basis.color["accent-3-inverse"] } } }} />
+<DesignTokens tokens={colorSection("accent-3", "accent-3-inverse")} />
 
 ### Action 1
 
-<DesignTokens tokens={{ basis: { color: { "action-1": tokens.basis.color["action-1"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "action-1-inverse": tokens.basis.color["action-1-inverse"] } } }} />
+<DesignTokens tokens={colorSection("action-1", "action-1-inverse")} />
 
 ### Action 2
 
-<DesignTokens tokens={{ basis: { color: { "action-2": tokens.basis.color["action-2"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "action-2-inverse": tokens.basis.color["action-2-inverse"] } } }} />
+<DesignTokens tokens={colorSection("action-2", "action-2-inverse")} />
 
 ### Disabled
 
-<DesignTokens tokens={{ basis: { color: { disabled: tokens.basis.color["disabled"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "disabled-inverse": tokens.basis.color["disabled-inverse"] } } }} />
+<DesignTokens tokens={colorSection("disabled", "disabled-inverse")} />
 
 ### Highlight
 
-<DesignTokens tokens={{ basis: { color: { highlight: tokens.basis.color["highlight"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "highlight-inverse": tokens.basis.color["highlight-inverse"] } } }} />
+<DesignTokens tokens={colorSection("highlight", "highlight-inverse")} />
 
 ### Info
 
-<DesignTokens tokens={{ basis: { color: { info: tokens.basis.color["info"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "info-inverse": tokens.basis.color["info-inverse"] } } }} />
+<DesignTokens tokens={colorSection("info", "info-inverse")} />
 
 ### Negative
 
-<DesignTokens tokens={{ basis: { color: { negative: tokens.basis.color["negative"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "negative-inverse": tokens.basis.color["negative-inverse"] } } }} />
+<DesignTokens tokens={colorSection("negative", "negative-inverse")} />
 
 ### Positive
 
-<DesignTokens tokens={{ basis: { color: { positive: tokens.basis.color["positive"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "positive-inverse": tokens.basis.color["positive-inverse"] } } }} />
+<DesignTokens tokens={colorSection("positive", "positive-inverse")} />
 
 ### Warning
 
-<DesignTokens tokens={{ basis: { color: { warning: tokens.basis.color["warning"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "warning-inverse": tokens.basis.color["warning-inverse"] } } }} />
+<DesignTokens tokens={colorSection("warning", "warning-inverse")} />
 
 ### Selected
 
-<DesignTokens tokens={{ basis: { color: { selected: tokens.basis.color["selected"] } } }} />
-<DesignTokens tokens={{ basis: { color: { "selected-inverse": tokens.basis.color["selected-inverse"] } } }} />
+<DesignTokens tokens={colorSection("selected", "selected-inverse")} />
 
 ## Text
 
