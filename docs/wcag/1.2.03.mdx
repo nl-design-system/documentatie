@@ -27,9 +27,7 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.2.3-summary.md";
 
@@ -39,7 +37,7 @@ import Summary from "./summaries/_1.2.3-summary.md";
 
 <Summary />
 
-Dit succescriterium gaat alleen over **vooraf opgenomen video met audio**. Voor live video geldt [1.2.4](/wcag/1.2.4/), voor alleen-audio of alleen-video [1.2.1](/wcag/1.2.1/).
+Het gaat hier om **vooraf opgenomen video met geluid**. Voor live video geldt succescriterium [1.2.4 Ondertitels voor doven en slechthorenden (live)](/wcag/1.2.4/); voor alleen-audio of alleen-video geldt succescriterium [1.2.1 Alleen-audio en alleen-video (vooraf opgenomen)](/wcag/1.2.1/).
 
 Wie de beelden van een video niet kan zien, krijgt het volledige verhaal via een audiodescriptie of een
 tekstalternatief. Een tekstalternatief beschrijft álles wat er in de video gebeurt: de gesproken woorden, de belangrijke
@@ -47,7 +45,7 @@ visuele handelingen en de belangrijke geluiden, in de volgorde waarin dat plaats
 van de dialoog. Iemand die het document laat voorlezen, krijgt hetzelfde verhaal als iemand die de video ziet en hoort.
 Het alternatief staat op de pagina zelf, of via een link met een duidelijke tekst.
 
-Als je website aan WCAG 2.2 AA moet voldoen is een audiodescriptie verplicht, door succescriterium [1.2.5 Audiodescriptie (vooraf opgenomen)](/wcag/1.2.5/). Alléén een media-alternatief is niet voldoende. Je kunt er wel voor kiezen om ook een media-alternatief aan te bieden, naast audiodescriptie. Dat is fijn voor doofblinde bezoekers en bezoekers die informatie liever lezen dan horen.
+Als je website aan WCAG 2.2 niveau AA moet voldoen, is een audiodescriptie verplicht. Dat eist [1.2.5 Audiodescriptie (vooraf opgenomen)](/wcag/1.2.5/). Alléén een media-alternatief is niet voldoende. Je kunt er wel voor kiezen om ook een media-alternatief aan te bieden, naast audiodescriptie. Dat is fijn voor doofblinde bezoekers en bezoekers die informatie liever lezen dan horen.
 
 ## Veelgemaakte fouten
 
@@ -89,7 +87,7 @@ Het tekstalternatief geeft een samenvatting van de video in plaats van de inhoud
 
 **Hoe te testen:** vergelijk de uitgeschreven tekst met de inhoud van de video.
 
-**Wie kan dit oplossen:** een contentmaker herschrijft de uitgeschreven inhoud van de video.
+**Wie kan dit oplossen:** een contentmaker vult de tekst aan zodat de hele inhoud van de video erin staat.
 
 ### Belangrijke geluiden ontbreken in het media-alternatief
 
@@ -129,7 +127,7 @@ Een pagina toont eerst een artikel in tekst en daarna een video waarin dezelfde 
 
 1. Inspecteer het `<video>`-element. Is er een `<track kind="descriptions">` aanwezig, of staat er een link naar een tekstalternatief?
 2. Controleer of de link naar het alternatief een beschrijvende naam heeft, zoals "Tekstversie" of "Volledige beschrijving van de video".
-3. Bij automatisch gegenereerde transcripts (bijvoorbeeld van YouTube): zorg dat de contentmaker de tekst redigeert voor publicatie.
+3. Bij automatisch gegenereerde transcripts, bijvoorbeeld van YouTube: zorg dat de contentmaker de tekst redigeert voor publicatie.
 4. Automatische tools zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> controleren niet of een alternatief inhoudelijk compleet is. Dit is een handmatige controle.
 
 ## Gerelateerde succescriteria
@@ -140,19 +138,19 @@ Een pagina toont eerst een artikel in tekst en daarna een video waarin dezelfde 
 - [1.2.7 Audiodescriptie (uitgebreid)](/wcag/1.2.7/): als er te weinig stiltes in de video zijn voor een gewone audiodescriptie, biedt uitgebreide audiodescriptie een oplossing. Niveau AAA.
 - [1.2.8 Media-alternatief (vooraf opgenomen)](/wcag/1.2.8/): op niveau AAA is naast audiodescriptie ook een volledig media-alternatief verplicht.
 
-## NLDS-componenten
+## NL Design System-componenten
 
-- [Video](/componenten/video/) — videocomponent met ruimte voor ondertitels, audiodescriptie en een tekstalternatief.
+- [Video](/componenten/video/): videocomponent met ruimte voor ondertitels, audiodescriptie en een tekstalternatief.
 
-## NLDS-richtlijnen
+## NL Design System-richtlijnen
 
-- [Richtlijnen voor video](/richtlijnen/content/video/) — onze richtlijnen voor toegankelijke video, met aparte pagina's over transcript, audiodescriptie, ondertiteling en gebarentaal.
+- [Richtlijnen voor video](/richtlijnen/content/video/): onze richtlijnen voor toegankelijke video, met aparte pagina's over transcript, audiodescriptie, ondertiteling en gebarentaal.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-of-media-alternatief-vooraf-opgenomen) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 1.2.3: Audio Description or Media Alternative (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/) — W3C-handleiding over toegankelijke audio en video (Engels).
+- [WCAG 2.2: Succescriterium 1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-of-media-alternatief-vooraf-opgenomen): de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 1.2.3: Audio Description or Media Alternative (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html): de Engelstalige W3C-uitleg bij het succescriterium, met technieken en voorbeelden.
+- [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/): de Engelstalige W3C-handleiding over toegankelijke audio en video.
 
 ## Gebruikersonderzoek
 
@@ -161,15 +159,9 @@ Een pagina toont eerst een artikel in tekst en daarna een video waarin dezelfde 
 ## W3C referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.2.3 Audio Description or Media Alternative (Prerecorded)</span>](https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded).
-- Nederlandse vertaling van het WCAG-succescriterium: [1.2.3 Audiodescriptie of media-alternatief](https://www.w3.org/Translations/WCAG22-nl/#audio-description-or-media-alternative-prerecorded).
+- Nederlandse vertaling van het WCAG-succescriterium: [1.2.3 Audiodescriptie of media-alternatief](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-of-media-alternatief-vooraf-opgenomen).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.2.3 Audio Description or Media Alternative (Prerecorded)</span>](https://www.w3.org/WAI/WCAG22/quickref/#audio-description-or-media-alternative-prerecorded).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.2.3 Audio Description or Media Alternative (Prerecorded)</span>](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
