@@ -28,9 +28,7 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
-import Disclaimer from "./\_wcag-disclaimer.md";
 import WCAGFooterInfo from "./\_wcag_footer_info.md";
 import Summary from "./summaries/\_2.4.6-summary.md";
 
@@ -42,7 +40,7 @@ import Summary from "./summaries/\_2.4.6-summary.md";
 
 Screenreadergebruikers doorlopen een pagina vaak via een lijst van koppen. Zijn die koppen beschrijvend, dan kan iemand direct naar de juiste sectie springen. Zijn ze vaag of generiek, dan moet iemand elke sectie openen en de inhoud lezen om te begrijpen waar die over gaat. Hetzelfde geldt voor labels bij formulieren: een duidelijk label voorkomt dat iemand moet gokken wat er in een veld moet staan.
 
-Dit succescriterium vereist niet dat elke pagina koppen of labels heeft. Het vereist dat koppen en labels die er zijn, beschrijvend zijn.
+Niet elke pagina heeft koppen of labels nodig. Maar de koppen en labels die er staan, moeten duidelijk maken waar de inhoud over gaat.
 
 ## Veelgemaakte fouten
 
@@ -118,9 +116,9 @@ Een knop heeft een tekst die niet duidelijk maakt wat de knop doet. Een veelvoor
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer past de knoptekst aan zodat die de functie beschrijft. Als de knoptekst wordt bepaald door een externe tool, zoals een cookiebanner van een derde partij, controleer dan of de tekst aanpasbaar is in de configuratie van die tool.
+**Wie kan dit oplossen:** een webredacteur kan de knoptekst aanpassen via het CMS. Staat de tekst in de code, dan past een developer die aan. Wordt de knoptekst bepaald door een externe tool, zoals een cookiebanner van een derde partij, controleer dan of de tekst aanpasbaar is in de configuratie van die tool.
 
-Dit geldt ook voor knoppen met alleen een icoon. Het icoon zelf is een zichtbaar label — voor wie het kan zien. Voor hulptechnologie is daarnaast een toegankelijke naam nodig, vaak in de vorm van een `aria-label`. Die toegankelijke naam is onzichtbaar voor mensen die geen hulptechnologie gebruiken. Vaak beschrijft het `aria-label` het uiterlijk van het icoon ("Oog") in plaats van de functie. Zowel het zichtbare als het onzichtbare label moeten de functie beschrijven, niet het uiterlijk.
+Dit geldt ook voor knoppen met alleen een icoon. Het icoon zelf is een zichtbaar label, maar alleen voor wie het kan zien. Voor hulptechnologie is daarnaast een toegankelijke naam nodig, vaak in de vorm van een `aria-label`. Die toegankelijke naam is onzichtbaar voor mensen die geen hulptechnologie gebruiken. Vaak beschrijft het `aria-label` het uiterlijk van het icoon ("Oog") in plaats van de functie. Zowel het zichtbare als het onzichtbare label moeten de functie beschrijven, niet het uiterlijk.
 
 <Guideline appearance="dont" title="Onzichtbaar label beschrijft het icoon in plaats van de functie">
     ```html
@@ -196,7 +194,7 @@ Twee velden hebben hetzelfde label, zoals twee keer "Naam" of twee keer "Datum".
 
 </Guideline>
 
-**Wie kan dit oplossen:** een developer of contentbeheerder maakt de labels specifiek genoeg om ze van elkaar te onderscheiden.
+**Wie kan dit oplossen:** een contentbeheerder of developer maakt de labels specifiek genoeg om ze van elkaar te onderscheiden.
 
 ### Kop die niet aansluit bij de inhoud eronder
 
@@ -222,9 +220,9 @@ De kop beschrijft iets anders dan wat de sectie bevat. Dat kan gebeuren als inho
 
 ### Knoppen met dezelfde tekst maar een verschillende functie
 
-Meerdere knoppen op een pagina hebben dezelfde tekst, maar doen iets anders. Denk aan drie knoppen met "Verwijderen" die elk bij een ander item horen, zonder dat een kop of groepering aangeeft welk item bedoeld is. Een screenreadergebruiker die door de knoppen navigeert, hoort drie keer "Verwijderen" en weet niet welke knop bij welk item hoort.
+Meerdere knoppen op een pagina hebben dezelfde tekst, maar doen iets anders. Bijvoorbeeld drie knoppen met "Verwijderen" die elk bij een ander item horen, zonder dat een kop of groepering aangeeft welk item bedoeld is. Een screenreadergebruiker die door de knoppen navigeert, hoort drie keer "Verwijderen" en weet niet welke knop bij welk item hoort.
 
-Dit is vooral een probleem als de knop niet onder een beschrijvende kop staat of in een groep zoals een `<fieldset>` of `<details>` die context geeft. Zonder die context is het label het enige houvast.
+Dit is vooral een probleem als de knop niet onder een beschrijvende kop staat of in een groep zoals een `<fieldset>` of `<details>` die context geeft. Zonder die context geeft alleen het label informatie.
 
 **Hoe te testen:** navigeer met een screenreader door de knoppen op een pagina. Zijn er knoppen met dezelfde tekst? Zo ja, is bij elke knop duidelijk waar die betrekking op heeft?
 
@@ -286,7 +284,7 @@ Hetzelfde geldt voor carrousels. Knoppen met "Vorige" en "Volgende" zijn duideli
 
 </Guideline>
 
-Paginering werkt op een vergelijkbare manier. Een rij met knoppen "1", "2", "3" en "Volgende" zegt op zichzelf niets — een screenreadergebruiker hoort alleen losse cijfers. Plaats de paginering in een `<nav>` met een `aria-label` dat beschrijft wat er gepagineerd wordt, geef elke knop een toegankelijke naam zoals "Pagina 2" en markeer de huidige pagina met `aria-current="page"`.
+Paginering werkt op een vergelijkbare manier. Een rij met knoppen "1", "2", "3" en "Volgende" zegt op zichzelf niets. Een screenreadergebruiker hoort alleen losse cijfers. Plaats de paginering in een `<nav>` met een `aria-label` dat beschrijft wat er gepagineerd wordt, geef elke knop een toegankelijke naam zoals "Pagina 2" en markeer de huidige pagina met `aria-current="page"`.
 
 <Guideline appearance="dont" title="Paginering met alleen cijfers en zonder groepering">
     ```html
@@ -312,7 +310,7 @@ Paginering werkt op een vergelijkbare manier. Een rij met knoppen "1", "2", "3" 
 
 </Guideline>
 
-### Iframe zonder beschrijving van het type inhoud
+### Ingesloten inhoud zonder beschrijving van wat het is
 
 Een `<iframe>` heeft een `title`-attribuut dat beschrijft wat het iframe bevat. Alleen de titel van de inhoud is niet genoeg. Een screenreadergebruiker moet weten wat voor type inhoud het iframe bevat, zodat die kan inschatten wat te verwachten. "Productdemo" kan een video zijn, een interactieve tool of een quiz. Vermeld het type inhoud in de titel.
 
@@ -330,7 +328,7 @@ Een `<iframe>` heeft een `title`-attribuut dat beschrijft wat het iframe bevat. 
   ```
 </Guideline>
 
-Dit geldt voor elk type inhoud in een iframe: een video, een kaart, een formulier of een interactieve tool. Benoem het type zodat een bezoeker weet wat er wordt aangeboden.
+Dit geldt voor elk type inhoud in een iframe: een video, een kaart, een formulier of een interactieve tool. Benoem het type, zodat een bezoeker weet wat de ingesloten inhoud biedt.
 
 **Wie kan dit oplossen:** een developer voegt een beschrijvend `title`-attribuut toe aan het `<iframe>` dat zowel het type inhoud als het onderwerp vermeldt.
 
@@ -410,14 +408,14 @@ Een `<th>`-element in een tabel werkt als label voor de cellen eronder of ernaas
 ## Gerelateerde succescriteria
 
 - [2.4.2 Paginatitel](/wcag/2.4.2/): net als koppen helpt de paginatitel bij oriëntatie. De paginatitel beschrijft de hele pagina, koppen beschrijven secties binnen de pagina.
-- [2.4.10 Paragraafkoppen](/wcag/2.4.10/): vereist dat inhoud is ingedeeld met koppen. Dit criterium gaat een stap verder dan 2.4.6, dat alleen vereist dat bestaande koppen beschrijvend zijn.
-- [1.3.1 Info en relaties](/wcag/1.3.1/): koppen en labels zijn programmatisch bepaald. 1.3.1 gaat over de technische koppeling, 2.4.6 over de inhoudelijke kwaliteit.
-- [3.3.2 Labels of instructies](/wcag/3.3.2/): vereist dat labels of instructies aanwezig zijn bij invoervelden. 2.4.6 vereist dat aanwezige labels beschrijvend zijn.
+- [2.4.10 Paragraafkoppen](/wcag/2.4.10/): hiermee deel je inhoud in met koppen. Dat gaat een stap verder dan 2.4.6, waar het erom gaat dat bestaande koppen beschrijvend zijn.
+- [1.3.1 Info en relaties](/wcag/1.3.1/): hiermee zijn koppen en labels programmatisch bepaald. 1.3.1 gaat over die technische koppeling, 2.4.6 over de inhoudelijke kwaliteit.
+- [3.3.2 Labels of instructies](/wcag/3.3.2/): hiermee hebben invoervelden een label of instructie. Bij 2.4.6 gaat het erom dat een aanwezig label ook beschrijvend is.
 
 ## Relevante bronnen
 
-- [Understanding SC 2.4.6: Headings and Labels](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [<span lang="en">Accessible heading structure</span>](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/) van Rian Rietveld voor the A11y Project.
+- [Understanding SC 2.4.6: Headings and Labels](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html): de Engelstalige W3C-uitleg bij het succescriterium, met technieken en voorbeelden.
+- [<span lang="en">Accessible heading structure</span>](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/) van Rian Rietveld voor The A11y Project.
 - [Headings voor betekenisvol opmaken](https://www.internetacademy.nl/ebooks/handboek-webcontent/headings-voor-betekenisvol-opmaken) in het handboek "Handboek webcontent: meer focus, minder content" van de Internet Academy.
 - [<span lang="en">Heading structures are tables of contents</span>](https://hidde.blog/heading-structures-are-tables-of-contents/) van Hidde de Vries.
 - [HeadingsMap voor Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi).
@@ -430,17 +428,11 @@ Een `<th>`-element in een tabel werkt als label voor de cellen eronder of ernaas
 
 ## W3C referenties
 
-- [WCAG 2.2: Succescriterium 2.4.6 Koppen en labels](https://www.w3.org/Translations/WCAG22-nl/#koppen-en-labels) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [WCAG 2.2: Succescriterium 2.4.6 Koppen en labels](https://www.w3.org/Translations/WCAG22-nl/#koppen-en-labels): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.6 Headings and Labels</span>](https://www.w3.org/TR/WCAG22/#headings-and-labels).
 - Nederlandse vertaling van het WCAG-succescriterium: [2.4.6 Koppen en labels](https://www.w3.org/Translations/WCAG22-nl/#headings-and-labels).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.6 Headings and Labels</span>](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.6 Headings and Labels</span>](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
