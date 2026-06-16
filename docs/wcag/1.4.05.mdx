@@ -16,7 +16,6 @@ keywords:
   - distinguishable
   - images of text
   - afbeeldingen van tekst
-  - images of text
   - tekst in afbeelding
   - SVG-tekst
   - hero-banner
@@ -30,9 +29,7 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
-import Disclaimer from "./\_wcag-disclaimer.md";
 import WCAGFooterInfo from "./\_wcag_footer_info.md";
 import Summary from "./summaries/\_1.4.5-summary.md";
 
@@ -40,15 +37,15 @@ import Summary from "./summaries/\_1.4.5-summary.md";
   {"WCAG-succescriterium 1.4.5 Afbeeldingen van tekst"}
 </WcagHeadingGroup>
 
+## Uitleg
+
 <Summary />
 
-Bezoekers kunnen tekst alleen vergroten, andere kleuren kiezen, doorzoeken, laten voorlezen of laten vertalen als het echte tekst is. Echte tekst blijft ook scherp bij elke zoomstand. Gebruik daarom geen afbeeldingen van tekst — behalve voor logo's, en in zeldzame gevallen waarin de bezoeker de afbeelding zelf kan aanpassen (lettergrootte, kleur, achtergrond) of waarin de exacte presentatie van de tekst essentieel is.
-
-## Toelichting
+Bezoekers kunnen tekst alleen vergroten, andere kleuren kiezen, doorzoeken, laten voorlezen of laten vertalen als het echte tekst is. Echte tekst blijft ook scherp bij elke zoomstand. Gebruik daarom geen afbeeldingen van tekst, behalve voor logo's en in zeldzame gevallen. Dat laatste geldt als de bezoeker de afbeelding zelf kan aanpassen, zoals lettergrootte, kleur en achtergrond, of als de exacte presentatie van de tekst essentieel is.
 
 Met "afbeelding van tekst" bedoelen we tekst die als pixels in een afbeelding staat: een JPG, PNG, GIF of een afbeelding in een ander bitmap-formaat. SVG met `<text>`-elementen telt niet als afbeelding van tekst, want die tekst is echte tekst en schaalt mee.
 
-De uitzondering "essentieel" is smal. Een specifieke presentatie is essentieel als de tekst alleen iets betekent in die vorm: een voorbeeld van een handschrift, een screenshot waarmee je iets uitlegt, een citaat uit een historisch document. Een banner waarin de marketingafdeling een mooi lettertype wilde gebruiken, valt daar niet onder.
+De uitzondering "essentieel" geldt maar zelden. Een specifieke presentatie is essentieel als de tekst alleen iets betekent in die vorm: een voorbeeld van een handschrift, een screenshot waarmee je iets uitlegt, een citaat uit een historisch document. Een banner waarin de marketingafdeling een mooi lettertype wilde gebruiken, valt daar niet onder.
 
 Vuistregel: als je hetzelfde visuele effect met echte tekst kunt bereiken, doe dat dan. Een afbeelding van tekst is pas verantwoord in drie situaties. De eerste: het visuele effect is met opmaak niet te maken. De tweede: het effect kan wel, maar wordt niet betrouwbaar weergegeven in de browsers en hulpsoftware die bezoekers gebruiken. De derde: een techniek die dit criterium oplost zou een ander criterium breken, bijvoorbeeld als de tekst daardoor niet meer tot 2 keer zo groot kan worden zoals [1.4.4 Herschalen van tekst](/wcag/1.4.4/) eist. Buiten die drie gevallen is echte tekst de juiste keuze.
 
@@ -139,7 +136,7 @@ Een artikel bevat een groot uitgelicht citaat in een handgeschreven lettertype. 
   ```html
   <figure>
     <img src="/images/citaat-jansen.png" alt="Toegankelijkheid is geen extra, het is de basis." />
-    <figcaption>— Jansen, designer</figcaption>
+    <figcaption>Jansen, designer</figcaption>
   </figure>
   ```
 </Guideline>
@@ -150,7 +147,7 @@ Een artikel bevat een groot uitgelicht citaat in een handgeschreven lettertype. 
       <blockquote>
         <p>Toegankelijkheid is geen extra, het is de basis.</p>
       </blockquote>
-      <figcaption>— Jansen, designer</figcaption>
+      <figcaption>Jansen, designer</figcaption>
     </figure>
     ```
 
@@ -164,14 +161,6 @@ Een artikel bevat een groot uitgelicht citaat in een handgeschreven lettertype. 
 </Guideline>
 
 **Wie kan dit oplossen:** een developer laadt het lettertype als webfont (bijvoorbeeld via Google Fonts) en gebruikt echte tekst voor het citaat.
-
-### Tekst in een PDF die als afbeelding is gescand
-
-Een organisatie publiceert beleidsdocumenten als PDF. De PDF is een ingescand papieren document, zonder OCR-laag. De tekst is voor de bezoeker een verzameling pixels: niet doorzoekbaar, niet selecteerbaar, niet voorleesbaar door een screenreader.
-
-**Hoe te testen:** open de PDF en probeer met <kbd>Ctrl</kbd> + <kbd>F</kbd> een woord uit de tekst te zoeken. Vindt de zoekfunctie iets? Probeer een alinea te selecteren en te kopiëren. Krijg je tekst of een afbeelding?
-
-**Wie kan dit oplossen:** een contentmaker publiceert het document als HTML-pagina of als PDF met een tekstlaag. Als alleen een scan beschikbaar is, voer dan OCR (tekstherkenning) uit en controleer of de tekst correct is herkend.
 
 ### Tabel als screenshot in plaats van een echte tabel
 
@@ -294,50 +283,6 @@ Een hoofdmenu heeft items met een uniek lettertype, een specifieke kleur en een 
 
 **Wie kan dit oplossen:** een developer vervangt de menu-afbeeldingen door links met echte tekst en bouwt het uiterlijk en de hover- en focus-states na in CSS.
 
-## Best practice
-
-### Gebruik echte tekstkarakters voor letter-iconen in een opmaak-toolbar
-
-Een opmaak-toolbar in een editor heeft vaak knoppen met een letter als pictogram: een **B** voor vet, een _I_ voor cursief, een U voor onderstrepen. Die letters functioneren als icoon, niet als leesbare tekst — ze vallen daarom buiten dit succescriterium. Toch is het de moeite waard ze als echte tekstkarakters op te bouwen: ze blijven scherp bij elke zoomstand, je hoeft geen losse bitmap-bestanden te onderhouden en je kunt het uiterlijk via CSS aanpassen aan de rest van de interface.
-
-**Hoe te testen:** vergroot de browser tot 4 keer zo groot. Blijven de letters op de toolbar-knoppen scherp? Inspecteer een knop in de <span lang="en">DevTools</span>. Bevat de `<button>` een tekstkarakter, of een `<img>`?
-
-<Guideline appearance="dont" title="Toolbar-knoppen als bitmap">
-  ```html
-  <button type="button">
-    <img src="/images/btn-bold.png" alt="Vet" />
-  </button>
-  <button type="button">
-    <img src="/images/btn-italic.png" alt="Cursief" />
-  </button>
-  <button type="button">
-    <img src="/images/btn-underline.png" alt="Onderstrepen" />
-  </button>
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="Toolbar-knoppen met echte tekstkarakters">
-    ```html
-    <button type="button" aria-label="Vet"><b>B</b></button>
-    <button type="button" aria-label="Cursief"><i>I</i></button>
-    <button type="button" aria-label="Onderstrepen"><u>U</u></button>
-    ```
-
-    ```css
-    .toolbar button {
-      font-family: serif;
-      font-size: 1rem;
-      min-width: 2rem;
-      min-height: 2rem;
-    }
-    ```
-
-</Guideline>
-
-De `aria-label` zorgt voor een betekenisvolle naam voor screenreadergebruikers, zodat zij "Vet" horen in plaats van "B".
-
-**Wie kan dit toepassen:** een developer vervangt de bitmap-icoontjes door `<button>`-elementen met tekstkarakters en een `aria-label`.
-
 ## Hoe te testen
 
 ### Voor iedereen
@@ -345,28 +290,27 @@ De `aria-label` zorgt voor een betekenisvolle naam voor screenreadergebruikers, 
 1. Klik en sleep over tekst op de pagina. Kun je de woorden selecteren? Als je een vierkant selecteert in plaats van losse woorden, is het waarschijnlijk een afbeelding.
 2. Zoek met <kbd>Ctrl</kbd> + <kbd>F</kbd> (of <kbd>Cmd</kbd> + <kbd>F</kbd>) naar een woord dat je op de pagina ziet. Wordt het gevonden? Zo niet, dan staat het mogelijk in een afbeelding.
 3. Zet browserzoom op 400%. Wordt tekst korrelig of pixelig? Echte tekst blijft scherp.
-4. Schakel afbeeldingen uit in de browserinstellingen. Welke teksten verdwijnen? Die staan in afbeeldingen.
-5. Controleer of de informatie die wegvalt elders op de pagina als tekst beschikbaar is.
 
 ### Voor developers
 
 1. Inspecteer banners, koppen, knoppen en menu-items in de <span lang="en">DevTools</span>. Zoek naar `<img>`-elementen of `background-image` met tekst erin.
 2. Open elke afbeelding op de pagina en controleer of er tekst in staat die ook in de HTML hoort.
 3. Controleer of speciale lettertypes als webfont worden geladen in plaats van als afbeelding worden geëxporteerd.
-4. Bij gescande PDF's: voer OCR uit of bied een HTML-versie aan.
-5. Geautomatiseerde tools herkennen dit criterium maar beperkt. Een handmatige check blijft nodig — vooral op banners, koppen, navigatie en uitgelichte secties.
+4. Schakel afbeeldingen uit, via de browserinstellingen of via de <span lang="en">DevTools</span>. Welke teksten verdwijnen? Die staan in afbeeldingen. Controleer of die informatie elders op de pagina als tekst beschikbaar is.
+5. Geautomatiseerde tools herkennen dit criterium maar beperkt. Een handmatige check blijft nodig, vooral op banners, koppen, navigatie en uitgelichte secties.
 
 ## Gerelateerde succescriteria
 
 - [1.1.1 Niet-tekstuele content](/wcag/1.1.1/): elke afbeelding heeft een tekstalternatief nodig. Als je tóch een afbeelding van tekst gebruikt (bijvoorbeeld een logo), zorg dan voor een correcte alt-tekst.
-- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): echte tekst moet 2 keer zo groot ingesteld kunnen worden. Afbeeldingen van tekst voldoen daar meestal niet aan, omdat ze korrelig worden bij vergroting.
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): echte tekst moet 2 keer zo groot ingesteld kunnen worden. Afbeeldingen van tekst voldoen daar niet aan, omdat ze korrelig worden bij vergroting.
 - [1.4.10 Reflow](/wcag/1.4.10/): bij 4 keer zo groot moet de layout zich aanpassen. Brede afbeeldingen van tekst dwingen tot horizontaal scrollen en breken reflow.
 - [1.4.9 Afbeeldingen van tekst (geen uitzondering)](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception.html): de strengere variant op AAA-niveau. Daar geldt de uitzondering "essentieel" alleen voor logo's, niet voor presentatie.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 1.4.5 Afbeeldingen van tekst](https://www.w3.org/Translations/WCAG22-nl/#afbeeldingen-van-tekst) — de officiële Nederlandstalige vertaling. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 1.4.5: Images of Text](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [WCAG 2.2: Succescriterium 1.4.5 Afbeeldingen van tekst](https://www.w3.org/Translations/WCAG22-nl/#afbeeldingen-van-tekst): de officiële Nederlandstalige vertaling. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding 1.4.5 Images of Text](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html): de toelichting van het W3C, met technieken en voorbeelden (Engels).
+- [NL Design System: Tekst in een afbeelding](/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/): de contentrichtlijn van NL Design System over wanneer je tekst wel en niet in een afbeelding zet.
 
 ## Gebruikersonderzoek
 
@@ -378,12 +322,6 @@ De `aria-label` zorgt voor een betekenisvolle naam voor screenreadergebruikers, 
 - Nederlandse vertaling van het WCAG-succescriterium: [1.4.5 Afbeeldingen van tekst](https://www.w3.org/Translations/WCAG22-nl/#afbeeldingen-van-tekst).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.5 Images of Text</span>](https://www.w3.org/WAI/WCAG22/quickref/#images-of-text).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.5 Images of Text</span>](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
