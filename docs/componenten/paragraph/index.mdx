@@ -63,10 +63,12 @@ import MultipleExplanation from "@nl-design-system-unstable/documentation/compon
 import MultipleSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/multiple/solution.md";
 import StrongMeta from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/metadata.json";
 import StrongExplanation from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/explanation.md";
+import StrongSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/solution.md";
 import StrongSolutionHeading from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/solution-heading.md";
 import StrongSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/strong/solution-lead.md";
 import EmphasisMeta from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/metadata.json";
 import EmphasisExplanation from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/explanation.md";
+import EmphasisSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution.md";
 import EmphasisSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution-lead.md";
 import EmphasisSolutionQuote from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution-quote.md";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
@@ -162,11 +164,7 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <ContrastSolution />
 
-<ContrastRelated />
-
 <Heading level={3}>{EmptyMeta.title}</Heading>
-
-{/* Ik had eerst overal probleem/oplossing maar ik vind het erg veel ruimte in beslag nemen. thoughts? */}
 
 <EmptyExplanation />
 
@@ -196,6 +194,8 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 #### Oplossing
 
+<StrongSolution />
+
 <StrongSolutionHeading />
 
 <StrongSolutionLead />
@@ -205,6 +205,8 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 <EmphasisExplanation />
 
 #### Oplossing
+
+<EmphasisSolution />
 
 <EmphasisSolutionLead />
 
