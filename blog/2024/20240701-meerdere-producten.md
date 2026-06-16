@@ -54,4 +54,4 @@ Momenteel hebben we een aantal community componenten voorbereid voor de verschil
 
 Raoul benadrukt dat Logius ook graag een bijdrage levert aan het NL Design System zodat andere overheidsorganisaties daar uiteindelijk ook van kunnen profiteren: “We doen bij Logius regelmatig gebruikersonderzoeken. Met producten als MijnOverheid en DigiD zijn we ook erg zichtbaar. We krijgen daarom regelmatig de vraag of we de onderzoeksresultaten en onze designs kunnen delen. We zien het NL Design System als de geschikte plek om dat te kunnen doen.” Raoul ziet voor zich dat in de toekomst kennis en componenten vanuit de NL Design System community in Lux gebruikt worden, en vanuit Lux weer kennis en componenten in de community gedeeld worden.
 
-Wil je op de hoogte blijven van alles rondom NL Design System? [Meld je dan aan](/project/blijf-op-de-hoogte#nieuwsbrief) voor onze nieuwsbrief.
+Wil je op de hoogte blijven van alles rondom NL Design System? [Meld je dan aan](/project/blijf-op-de-hoogte/#nieuwsbrief) voor onze nieuwsbrief.

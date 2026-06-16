@@ -7,12 +7,6 @@
   ],
   "private": true,
   "license": "EUPL-1.2",
-  "packageManager": "pnpm@10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264",
-  "engines": {
-    "//": "Update @types/node to match the highest node version here",
-    "node": ">=24 <=25",
-    "pnpm": "^10.17.0"
-  },
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:nl-design-system/documentatie.git",
@@ -29,12 +23,17 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@amsterdam/design-system-css": "4.1.0",
+    "@amsterdam/design-system-react": "4.1.0",
     "@fontsource/fira-code": "5.2.7",
     "@fontsource/fira-sans": "5.2.7",
     "@fontsource/source-sans-pro": "5.2.5",
+    "@gemeente-denhaag/side-navigation": "4.1.0",
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
     "@nl-design-system-candidate/skip-link-react": "1.1.7",
-    "@nl-design-system-community/ma-design-tokens": "2.5.0",
+    "@nl-design-system-community/ma-design-tokens": "5.2.0",
+    "@rijkshuisstijl-community/card-css": "1.0.0",
+    "@rijkshuisstijl-community/card-react": "1.0.0",
     "@tabler/icons-react": "3.36.1",
     "@utrecht/body-css": "4.0.0",
     "@utrecht/body-react": "0.0.11",
@@ -45,13 +44,12 @@
     "@utrecht/page-body-react": "1.0.11",
     "@utrecht/page-layout-css": "4.0.0",
     "@utrecht/page-layout-react": "1.0.11",
-    "@utrecht/root-css": "4.1.0",
-    "@utrecht/root-react": "1.0.15"
+    "@utrecht/root-css": "4.1.0"
   },
   "devDependencies": {
-    "@astrojs/mdx": "5.0.1",
-    "@astrojs/react": "5.0.0",
-    "@astrojs/sitemap": "3.7.1",
+    "@astrojs/mdx": "5.0.4",
+    "@astrojs/react": "5.0.4",
+    "@astrojs/sitemap": "3.7.2",
     "@astrojs/ts-plugin": "1.10.7",
     "@nl-design-system-unstable/postcss-remove-unused-design-tokens": "0.0.2",
     "@nl-design-system/component-progress": "1.0.7",
@@ -64,7 +62,7 @@
     "@utrecht/page-footer-react": "1.0.11",
     "@utrecht/page-header-css": "3.0.0",
     "@utrecht/page-header-react": "1.0.10",
-    "astro": "6.0.5",
+    "astro": "6.2.2",
     "cheerio": "1.2.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
