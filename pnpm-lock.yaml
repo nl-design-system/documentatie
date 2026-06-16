@@ -478,6 +478,9 @@ importers:
       '@utrecht/breadcrumb-nav-css':
         specifier: 3.0.0
         version: 3.0.0
+      '@utrecht/link-css':
+        specifier: 3.0.1
+        version: 3.0.1
       '@utrecht/link-list-css':
         specifier: 4.0.0
         version: 4.0.0
@@ -4948,6 +4951,9 @@ packages:
 
   '@utrecht/link-css@2.0.1':
     resolution: {integrity: sha512-2mpaFeKybBeL+qIvJ73UC0jtwhn0IBM3vn8BD9OTwYQK6djY0tVwQwpouDWrzPRU169swp8BPllMU19A0xfyZA==}
+
+  '@utrecht/link-css@3.0.1':
+    resolution: {integrity: sha512-Us/X9ziHRiqj2nsWLLedrOVT0K/BMVMV5ASYgg1yqexKqaQlKfizWzq9w1UP6MAqjVKAmX+gKsLLCV+CMllHAg==}
 
   '@utrecht/link-list-css@3.0.1':
     resolution: {integrity: sha512-/+pNmHFGadl/zVy0I3G6TVNWB3EuqRLvjsoBL7ue9+wJeye4LqDcweYgdFKm7wFcN4Tci479j21fZ63IK4KlXA==}
@@ -17640,6 +17646,8 @@ snapshots:
   '@utrecht/link-button-css@2.0.1': {}
 
   '@utrecht/link-css@2.0.1': {}
+
+  '@utrecht/link-css@3.0.1': {}
 
   '@utrecht/link-list-css@3.0.1': {}
 

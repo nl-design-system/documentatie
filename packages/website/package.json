@@ -38,6 +38,7 @@
     "@utrecht/body-css": "4.0.0",
     "@utrecht/body-react": "0.0.11",
     "@utrecht/breadcrumb-nav-css": "3.0.0",
+    "@utrecht/link-css": "3.0.1",
     "@utrecht/link-list-css": "4.0.0",
     "@utrecht/nav-list-css": "2.0.0",
     "@utrecht/page-body-css": "2.0.0",
