@@ -31,6 +31,573 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ov
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 14.6.0
+
+2 juni 2026
+
+### Design tokens toegevoegd aan Community component 'Task Card' van Den Haag
+
+De volgende tokens zijn toegevoegd:
+
+- `denhaag.action.border-radius`
+- `denhaag.action.font-family`
+
+Deze tokens zijn toegepast op zowel de componenten Task Card als Task Navigation van gemeente Den Haag.
+
+[Bekijk de video 'Changelog: Aanvullende design tokens Task Card component'](https://youtu.be/a1XUHdzRHks) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 14.5.0
+
+1 juni 2026
+
+### Drie nieuwe basis-token en een type wijziging
+
+De volgende basis-tokens zijn toegevoegd:
+
+- `basis.form-color.focus.accent-color`
+- `basis.form-color.invalid.accent-color`
+- `basis.form-color.read-only.accent-color`
+
+Het type van basis-token `basis.focus.outline-offset` is aangepast van `other` naar `dimension`.
+
+[Bekijk de video 'Changelog: Drie nieuwe basis-token en een type wijziging'](https://youtu.be/4DdRzBEZpkY) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Daarnaast zijn de waarden van de volgende component-tokens gewijzigd. Controleer of deze wijzigingen ook wenselijk zijn voor het thema van jouw organisatie. Zo niet, dan hoef je deze niet over te nemen.
+
+#### Checkbox
+
+- Waarde van token `utrecht.checkbox.checked.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-default}`.
+- Waarde van token `utrecht.checkbox.indeterminate.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-default}`.
+- Waarde van token `todo.checkbox.checked.active.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-active}`.
+- Waarde van token `todo.checkbox.checked.focus-visible.background-color` is gewijzigd van `{basis.form-control.focus.background-color}` naar common token `{basis.form-control.focus.accent-color}`.
+- Waarde van token `todo.checkbox.checked.hover.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-hover}`.
+- Waarde van token `todo.checkbox.indeterminate.active.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-active}`.
+- Waarde van token `todo.checkbox.indeterminate.focus-visible.background-color` is gewijzigd van `{basis.form-control.focus.background-color}` naar common token `{basis.form-control.focus.accent-color}`.
+- Waarde van token `todo.checkbox.indeterminate.hover.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-hover}`.
+
+Heb je de design token waarden van de Checkbox nooit aangepast? Dan zou je ook simpelweg onderstaande JSON-code kunnen overnemen.
+
+```json
+{
+  "utrecht": {
+    "checkbox": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.background-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.border-color}"
+      },
+      "border-radius": {
+        "$type": "dimension",
+        "$value": "{basis.border-radius.none}"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.form-control.border-width}"
+      },
+      "margin-inline-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.md}"
+      },
+      "size": {
+        "$type": "dimension",
+        "$value": "{basis.size.xs}"
+      },
+      "icon": {
+        "size": {
+          "$type": "dimension",
+          "$value": "{basis.size.icon.md}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.active.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.active.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.active.border-width}"
+        }
+      },
+      "disabled": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.border-color}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.focus.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.focus.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.focus.border-width}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.hover.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.hover.border-width}"
+        }
+      },
+      "invalid": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.invalid.border-width}"
+        }
+      },
+      "checked": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.accent-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1-inverse.color-default}"
+        }
+      },
+      "indeterminate": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.accent-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1-inverse.color-default}"
+        }
+      }
+    }
+  },
+  "todo": {
+    "checkbox": {
+      "checked": {
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.active.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.active.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-active}"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.color}"
+          }
+        },
+        "focus-visible": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.border-color}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.focus.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.color}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.hover.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.hover.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-hover}"
+          }
+        }
+      },
+      "indeterminate": {
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.active.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.active.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-active}"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.color}"
+          }
+        },
+        "focus-visible": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.border-color}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.focus.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.color}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.hover.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.hover.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-hover}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Radio Button
+
+- Waarde van token `utrecht.radio-button.checked.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-default}`.
+- Waarde van token `utrecht.radio-button.checked.active.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-active}`.
+- Waarde van token `utrecht.radio-button.checked.focus.background-color` is gewijzigd van `{basis.form-control.focus.background-color}` naar common token `{basis.form-control.focus.accent-color}`.
+- Waarde van token `utrecht.radio-button.checked.hover.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-hover}`.
+
+Heb je de design token waarden van de Radio Button nooit aangepast? Dan zou je ook simpelweg onderstaande JSON-code kunnen overnemen.
+
+```json
+{
+  "utrecht": {
+    "radio-button": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.background-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.border-color}"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.form-control.border-width}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{utrecht.radio-button.border-color}"
+      },
+      "margin-block-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.none}",
+        "$description": "[code-only]"
+      },
+      "margin-block-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.none}",
+        "$description": "[code-only]"
+      },
+      "margin-inline-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.md}"
+      },
+      "size": {
+        "$type": "dimension",
+        "$value": "{basis.size.xs}"
+      },
+      "icon": {
+        "size": {
+          "$type": "dimension",
+          "$value": "{basis.size.3xs}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.active.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.active.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.active.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.active.border-color}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.focus.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.focus.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.focus.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.focus.border-color}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.hover.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.hover.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.hover.border-color}"
+        }
+      },
+      "disabled": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.disabled.border-color}"
+        }
+      },
+      "invalid": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.invalid.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.invalid.border-color}"
+        }
+      },
+      "checked": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.accent-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1-inverse.color-default}"
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.active.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.active.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-active}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.border-color}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.focus.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.color}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.hover.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.hover.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-hover}"
+          }
+        }
+      }
+    }
+  },
+  "todo": {
+    "radio-button": {
+      "checked": {
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.color}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## 14.4.0
 
 11 mei 2026

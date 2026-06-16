@@ -18,6 +18,8 @@ const { Content } = await render(page);
 
 const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
+
+const components = await MDXComponents();
 ---
 
 <DetailLayout
@@ -30,5 +32,5 @@ const description =
   keywords={['wcag', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
   index={page.data.unlisted !== true}
 >
-  <Content components={MDXComponents} />
+  <Content components={components} />
 </DetailLayout>

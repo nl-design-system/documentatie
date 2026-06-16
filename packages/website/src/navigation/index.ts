@@ -3,13 +3,22 @@ import { readdir } from 'node:fs/promises';
 import { getAllCollections } from '../content.config';
 import type { Dirent } from 'node:fs';
 import { sortItems } from './sort-items';
+export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element';
+export { getMainNavigation } from './get-main-navigation';
+export { getNavigationElement } from './get-navigation-element';
 
 /**
  * An item in a navigation tree. The item references an Content Collection ID.
  */
 export interface NavigationItem {
+  /** The type of NavigationElement */
+  type: 'item' | 'link';
+
   /** The label of the item to display to the user */
-  label: string;
+  label?: string;
+
+  /** The description of the markdown frontmatter for this item */
+  description?: string;
 
   /** The Astro Content Collection ID of the item */
   id?: string;
@@ -25,6 +34,12 @@ export interface NavigationItem {
 
   /** The position this item should take within a NavigationGroup items list */
   order?: number;
+
+  /** Indicating that this item is the current page */
+  current?: boolean;
+
+  /** Indicating that an NavigationItem is to be unlisted in visible menus */
+  unlisted?: boolean;
 }
 
 /**
@@ -33,8 +48,11 @@ export interface NavigationItem {
  * group is either a markdown file or an other group.
  */
 export interface NavigationGroup {
+  /** The type of NavigationElement */
+  type: 'group';
+
   /** The label of the group to display to the user */
-  label: string;
+  label?: string;
 
   /** The items in the group */
   items: (NavigationItem | NavigationGroup | Promise<NavigationItem> | Promise<NavigationGroup>)[];
@@ -53,24 +71,49 @@ export interface NavigationGroup {
   /** The directory representing the group */
   filePath?: string;
 
+  /** Specific file paths to ignore. Paths are _relative to the filePath_ */
+  ignoredFiles?: string[];
+
   /** The parent `NavigationGroup` this group is nested under. */
   parent?: NavigationGroup;
 
   /** The position this group should take within a NavigationGroup items list */
   order?: number;
+
+  /** Should the group be expanded */
+  expanded?: boolean;
+
+  /** Indicating that this items index is the current page */
+  current?: boolean;
+
+  /** Indicating that an NavigationGroup is to be unlisted in visible menus */
+  unlisted?: boolean;
+}
+
+type NavigationElementResolved = NavigationItem | NavigationGroupResolved;
+
+interface NavigationGroupResolved extends NavigationGroup {
+  items: NavigationElementResolved[];
+}
+
+export type NavigationRoot = () => {
+  /** A tree structure of all resolved NavigationElements starting with a NavigationGroup  */
+  navigationTree: NavigationGroupResolved;
+
+  /** A flat list of all resolved NavigationElements */
+  navigationList: NavigationElementResolved[];
+};
+
+export function isNavigationGroup(object?: NavigationElement): object is NavigationGroup {
+  return object?.type === 'group';
+}
+
+export function isNavigationItem(object?: NavigationElement): object is NavigationItem {
+  return object?.type === 'item' || object?.type === 'link';
 }
 
 export type NavigationElement = NavigationItem | NavigationGroup;
 export type NavigationElementOrdered = NavigationElement & { order: NonNullable<NavigationElement['order']> };
-
-/** All available entries from each Content Collection */
-const collections = getAllCollections();
-
-/**
- * A flat list of all navigation elements, filled when the `navigation` promise
- * is resolved
- */
-export const navigationElements: NavigationElement[] = [];
 
 type NavigationItemInput =
   | string
@@ -97,7 +140,7 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
   const _filePath = typeof input === 'string' ? input : input.filePath;
   const options = typeof input === 'string' ? undefined : input;
 
-  const entries = await collections;
+  const entries = await getAllCollections();
   const entry = entries.find(
     (entry) =>
       (_filePath && entry.filePath?.endsWith(_filePath)) || // relative file path
@@ -111,20 +154,21 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
   if (!label) throw new Error(`No label provided for ${_filePath}`);
 
   const item: NavigationItem = {
+    type: options?.type || 'item',
     id: entry?.id,
+    description: entry?.data.description,
     label,
     filePath: entry?.filePath,
     parent: options?.parent,
     href: `/${entry?.id || options?.href}/`.replaceAll(/\/{2,}/g, '/'),
     order: entry?.data?.navigation_order,
+    unlisted: entry?.data?.unlisted,
   };
-
-  navigationElements.push(item);
 
   return item;
 }
 
-type NavigationGroupOptions = Partial<Pick<NavigationGroup, 'label' | 'filePath' | 'items'>> & {
+type NavigationGroupOptions = Partial<Pick<NavigationGroup, 'label' | 'filePath' | 'ignoredFiles' | 'items'>> & {
   index?: Promise<NavigationItem>;
 };
 
@@ -161,6 +205,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
   let folderName: string | undefined;
   const indexOptions = await options?.index;
   let indexFile: NavigationItem | undefined;
+  let indexOverview: NavigationItem | undefined;
 
   if (options.filePath) {
     const baseDir = resolve('../../');
@@ -170,13 +215,21 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
     folderName = options.filePath.split('/').at(-1);
     files = (await readdir(targetDir, { withFileTypes: true }))
       .filter((file) => file.name.startsWith('_') === false)
-      .filter((file) => file.name.endsWith('.md') || file.name.endsWith('.mdx') || file.isDirectory());
+      .filter(
+        (file) =>
+          file.name.endsWith('.md') || file.name.endsWith('.mdx') || file.name === 'index.json' || file.isDirectory(),
+      );
 
     // Loop over all files in the directory
     await Promise.all(
       files.map(async (file) => {
+        if (options.ignoredFiles?.includes(file.name)) {
+          return;
+        }
+
         if (file.isFile()) {
           const filePath = relative('.', `${file.parentPath}/${file.name}`);
+          const contentCollectionEntry = await getEntryWithFilepath(filePath);
 
           // Treat index.md(x) files as the group index
           if (/index.mdx?$/i.test(file.name)) {
@@ -185,6 +238,16 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
 
           // If an index file is provided in the options, ignore it as sub item
           else if (indexOptions?.filePath?.endsWith(file.name)) {
+            return;
+          }
+
+          // Generate an overview page based on a config file
+          else if (file.name === 'index.json') {
+            indexOverview = await navigationItem(filePath);
+          }
+
+          // If the entry is marked as `unlisted`, ignore it
+          else if (contentCollectionEntry?.data.unlisted) {
             return;
           }
 
@@ -209,10 +272,11 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
   // Sort items alphabetically based on their label
   const sortedItems = options.filePath ? sortItems(items) : items;
 
-  const index = indexOptions || indexFile;
+  const index = indexOptions || indexFile || indexOverview;
 
   // Resulting NavigationGroup to be returned
   const group: NavigationGroup = {
+    type: 'group',
     label: options.label || index?.label || toTitleCase(folderName) || 'unknown',
     items: sortedItems,
     index,
@@ -231,17 +295,57 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
     index.parent = group;
   }
 
-  // Add the group to the navigationElements list
-  if (group.items.length) {
-    navigationElements.push(group);
-  }
-
   // Return the group for consumption
   return group;
 }
 
-function toTitleCase(string?: string) {
-  if (!string) return string;
-  const [firstLetter, ...rest] = [...string];
-  return `${firstLetter.toUpperCase()}${rest.join('')}`.replaceAll('-', ' ');
+/**
+ * Normalised Navigation structure:
+ * - Each element is resolved
+ * - Empty Groups are replaced by their index pages
+ */
+export async function navigationRoot(group: Promise<NavigationGroup>) {
+  const navigationTree = (await group) as NavigationGroupResolved;
+  const navigationList = new Set<NavigationElement>();
+
+  const walkTree = (
+    item: NavigationGroupResolved | NavigationItem,
+  ): NavigationGroupResolved | NavigationItem | undefined => {
+    if (!isNavigationItem(item) && !isNavigationGroup(item)) throw new Error('Item is not resolved');
+
+    if (isNavigationGroup(item)) {
+      item.items = item.items.map(walkTree).filter(Boolean) as NavigationElementResolved[];
+
+      if (item.items.length === 0 && item.index) {
+        item.index.parent = item.parent;
+
+        if (!item.unlisted) {
+          navigationList.add(item.index);
+          return item.index;
+        }
+      }
+    }
+
+    if (!item.unlisted) {
+      navigationList.add(item);
+      return item;
+    }
+
+    return undefined;
+  };
+
+  navigationTree.items = navigationTree.items.map(walkTree).filter(Boolean) as NavigationElementResolved[];
+
+  return () => structuredClone({ navigationTree, navigationList: [...navigationList] });
+}
+
+async function getEntryWithFilepath(filePath: string) {
+  const entries = await getAllCollections();
+  return entries.find((entry) => filePath && entry.filePath?.endsWith(filePath));
+}
+
+function toTitleCase(input: string | undefined): string | undefined {
+  if (input === undefined) return input;
+  const [firstLetter, ...rest] = [...input];
+  return String(`${firstLetter.toUpperCase()}${rest.join('')}`).replaceAll('-', ' ');
 }
