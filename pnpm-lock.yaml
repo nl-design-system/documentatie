@@ -451,6 +451,9 @@ importers:
       '@gemeente-denhaag/side-navigation':
         specifier: 4.1.0
         version: 4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nl-design-system-candidate/button-react':
+        specifier: 1.1.0
+        version: 1.1.0(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/heading-react':
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
@@ -3469,6 +3472,12 @@ packages:
 
   '@nl-design-system-candidate/button-docs@1.0.2':
     resolution: {integrity: sha512-G+UO66sr49bg1yMMV4Z2QAKKSCigFrECkejq46GNjgCCoKuSxgJcFHw89MhgXRxgMQuDGJSQhWpTKk/VOK1cAg==}
+
+  '@nl-design-system-candidate/button-react@1.1.0':
+    resolution: {integrity: sha512-Zi2QGpAq6/AWkL0hf9BNcNp8AQUV5yyDcKw7WDBuZ3W0ci/EF46ZfvntTbbBpHX09lYqS6F4Vf7hPGh1BdGxTg==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
 
   '@nl-design-system-candidate/button-tokens@1.0.0':
     resolution: {integrity: sha512-2uxqqVUW9kyib/rPn1rvWI09auUVOkA5IUC+rBlYxUz9DVVn4UcXPeOe9KVgh0a1WuM2dzX3k/bpWRBINtKACw==}
@@ -15872,6 +15881,12 @@ snapshots:
       react: 18.3.1
 
   '@nl-design-system-candidate/button-docs@1.0.2': {}
+
+  '@nl-design-system-candidate/button-react@1.1.0(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/button-tokens@1.0.0': {}
 
