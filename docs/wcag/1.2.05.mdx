@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.2.5 Audiodescriptie (vooraf opgenomen)
 pagination_label: WCAG-succescriterium 1.2.5 Audiodescriptie (vooraf opgenomen)
-description: Opgenomen video's hebben audiodescriptie.
+description: Bij een vooraf opgenomen video met geluid hoort een audiodescriptie, zodat wie de beelden niet kan zien de visuele informatie toch meekrijgt.
 slug: 1.2.5
 keywords:
   - WCAG
@@ -34,9 +34,7 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.2.5-summary.md";
 
@@ -48,9 +46,9 @@ import Summary from "./summaries/_1.2.5-summary.md";
 
 Wie de beelden van een video niet kan zien, krijgt de visuele informatie via een audiodescriptie: een extra audiospoor dat meeloopt met de video en beschrijft wat in beeld gebeurt. De beschrijvingen passen in de stiltes tussen de dialogen, of aan het begin of het einde van de video.
 
-Op niveau A mag een transcript onder [1.2.3](/wcag/1.2.3/) nog volstaan; op niveau AA niet meer. Er moet dan een audiodescriptie zijn die je tegelijk met de video kunt horen.
+Op niveau A mag een transcript onder succescriterium [1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](/wcag/1.2.3/) nog volstaan; op niveau AA niet meer. Er moet dan een audiodescriptie zijn die je tegelijk met de video kunt horen.
 
-Dit geldt voor alle vooraf opgenomen video's met geluid. Voor live uitzendingen gelden aparte regels (zie [1.2.4 Ondertitels (live)](/wcag/1.2.4/)). Eén uitzondering: als de video alleen een visuele versie is van tekst die al op de pagina staat én je dat ook duidelijk vermeldt, hoeft er geen audiodescriptie te zijn.
+Dit geldt voor alle vooraf opgenomen video's met geluid. Voor live uitzendingen geldt succescriterium [1.2.4 Ondertitels voor doven en slechthorenden (live)](/wcag/1.2.4/). Eén uitzondering: als de video alleen een visuele versie is van tekst die al op de pagina staat én je dat ook duidelijk vermeldt, hoeft er geen audiodescriptie te zijn.
 
 ## Veelgemaakte fouten
 
@@ -64,9 +62,9 @@ Een bedrijfsvideo toont een rondleiding door een kantoor of een productdemonstra
 
 ### Een transcript aanbieden in plaats van audiodescriptie
 
-Een transcript is een volledige tekstversie van alles wat in de video gebeurt. Op niveau A mag dat onder [1.2.3](/wcag/1.2.3/) als alternatief voor audiodescriptie. Op niveau AA is dat niet genoeg. Voor dit succescriterium moet er een audiodescriptie zijn die je tegelijk met de video kunt horen.
+Een transcript is een volledige tekstversie van alles wat in de video gebeurt. Op niveau A mag dat onder succescriterium [1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](/wcag/1.2.3/) als alternatief voor audiodescriptie. Op niveau AA is dat niet genoeg. Voor dit succescriterium moet er een audiodescriptie zijn die je tegelijk met de video kunt horen.
 
-**Hoe te testen:** heeft de video alleen een linkje naar een tekstbestand, en geen audiospoor met beschrijvingen? Dan voldoet de video wel aan 1.2.3, maar niet aan 1.2.5.
+**Hoe te testen:** heeft de video alleen een linkje naar een tekstbestand, en geen audiospoor met beschrijvingen? Dan voldoet de video wel aan succescriterium 1.2.3, maar niet aan 1.2.5.
 
 **Wie kan dit oplossen:** een contentmaker laat een audiodescriptie maken, bovenop het bestaande transcript.
 
@@ -84,7 +82,7 @@ De audiodescriptie wordt over de dialoog of belangrijke geluiden van de video he
 
 **Hoe te testen:** beluister de video met audiodescriptie aan. Kun je nog goed verstaan wat er in de oorspronkelijke audio gezegd wordt? Vallen de beschrijvingen in de stiltes?
 
-**Wie kan dit oplossen:** een contentmaker laat de audiodescriptie in de stiltes tussen de dialogen vallen. Als er te weinig ruimte is voor beschrijvingen, biedt [1.2.7 Audiodescriptie (uitgebreid)](/wcag/1.2.7/) een oplossing — daar pauzeert de video kort voor extra ruimte.
+**Wie kan dit oplossen:** een contentmaker laat de audiodescriptie in de stiltes tussen de dialogen vallen. Als er te weinig ruimte is voor beschrijvingen, biedt succescriterium [1.2.7 Audiodescriptie (uitgebreid)](/wcag/1.2.7/) een oplossing. Daar pauzeert de video kort voor extra ruimte.
 
 ### Audiodescriptie beschrijft decoratie
 
@@ -98,7 +96,7 @@ De audiodescriptie leest voor dat decoratieve elementen in beeld verschijnen. Ee
 
 De audiodescriptie is in een andere taal dan de hoofdtaal van de video, of dan de taal van de doelgroep. Wie die taal niet spreekt, heeft er niets aan.
 
-Bij een video met meerdere talen — bijvoorbeeld een Nederlandse documentaire met een Engelstalig interview — blijft de audiodescriptie consequent in de hoofdtaal van de productie. De verteller schakelt niet mee met de gesproken taal in de video; die anderstalige passages hoort de blinde luisteraar gewoon zelf.
+Bij een video met meerdere talen, bijvoorbeeld een Nederlandse documentaire met een Engelstalig interview, blijft de audiodescriptie consequent in de hoofdtaal van de productie. De verteller schakelt niet mee met de gesproken taal in de video; die anderstalige passages hoort de blinde luisteraar gewoon zelf.
 
 **Hoe te testen:** in welke taal is de hoofdaudio van de video? In welke taal is de audiodescriptie? Komt die overeen?
 
@@ -130,10 +128,10 @@ Bij een video met meerdere talen — bijvoorbeeld een Nederlandse documentaire m
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 1.2.5 Audiodescriptie (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-vooraf-opgenomen) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 1.2.5: Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/) — W3C-handleiding over toegankelijke audio en video, inclusief uitleg over audiodescriptie (Engels).
-- [HTMLMediaElement: `<track>` kind="descriptions"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track) — MDN-documentatie over het `<track>`-element en de kinds die beschikbaar zijn (Engels).
+- [WCAG 2.2: Succescriterium 1.2.5 Audiodescriptie (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-vooraf-opgenomen): de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 1.2.5: Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html): de Engelstalige W3C-uitleg bij het succescriterium, met technieken en voorbeelden.
+- [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/): de Engelstalige W3C-handleiding over toegankelijke audio en video, inclusief uitleg over audiodescriptie.
+- [HTMLMediaElement: `<track>` kind="descriptions"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track): de Engelstalige MDN-documentatie over het `<track>`-element en de beschikbare kinds.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -146,15 +144,9 @@ Bij een video met meerdere talen — bijvoorbeeld een Nederlandse documentaire m
 ## W3C referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.2.5 Audio Description (Prerecorded)</span>](https://www.w3.org/TR/WCAG22/#audio-description-prerecorded).
-- Nederlandse vertaling van het WCAG-succescriterium: [1.2.5 Audiodescriptie (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audio-description-prerecorded).
+- Nederlandse vertaling van het WCAG-succescriterium: [1.2.5 Audiodescriptie (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-vooraf-opgenomen).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.2.5 Audio Description (Prerecorded)</span>](https://www.w3.org/WAI/WCAG22/quickref/#audio-description-prerecorded).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.2.5 Audio Description (Prerecorded)</span>](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
