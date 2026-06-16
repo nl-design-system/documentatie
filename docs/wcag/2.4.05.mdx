@@ -35,9 +35,11 @@ import Summary from "./summaries/\_2.4.5-summary.md";
   {"WCAG-succescriterium 2.4.5 Meerdere manieren"}
 </WcagHeadingGroup>
 
+## Uitleg
+
 <Summary />
 
-Voor mensen die een schermvergroter of screenreader gebruiken is een zoekveld vaak sneller dan door een grote navigatiebalk heen klikken. Voor mensen met een cognitieve beperking is een sitemap of inhoudsopgave makkelijker te overzien dan stap voor stap door de pagina's klikken. Geen van deze manieren werkt voor iedereen, daarom moet je er meer dan één aanbieden.
+Voor mensen die een schermvergroter of screenreader gebruiken is een zoekveld sneller dan door een grote navigatiebalk heen klikken. Voor mensen met een cognitieve beperking is een sitemap of inhoudsopgave makkelijker te overzien dan stap voor stap door de pagina's klikken. Geen van deze manieren werkt voor iedereen, daarom moet je er meer dan één aanbieden.
 
 Je kunt bijvoorbeeld deze manieren naast elkaar aanbieden:
 
@@ -49,15 +51,15 @@ Je kunt bijvoorbeeld deze manieren naast elkaar aanbieden:
 
 Twee van deze manieren zijn voldoende, zolang een bezoeker met beide manieren alle pagina's kan bereiken.
 
-Voor bepaalde pagina's is het logisch dat ze maar op één manier te bereiken zijn. Bijvoorbeeld een formulier met meerdere stappen, en de [bevestigingspagina](/richtlijnen/formulieren/bevestigingspagina/) na het verzenden. Pagina's die onderdeel zijn van een proces hoeven niet op meerdere manieren vindbaar te zijn.
+Voor bepaalde pagina's is het logisch dat ze maar op één manier te bereiken zijn. Bijvoorbeeld: een formulier met meerdere stappen, en de [bevestigingspagina](/richtlijnen/formulieren/bevestigingspagina/) na het verzenden. Pagina's die onderdeel zijn van een proces hoeven niet op meerdere manieren vindbaar te zijn.
 
 ## Veelgemaakte fouten
 
 ### De site biedt alleen een hoofdmenu
 
-De enige manier om een pagina te vinden is via de hoofdnavigatie. Er is geen zoekveld, geen sitemap en geen overzicht in de footer. Voor iemand met een schermvergroter past het uitgeklapte menu vaak niet helemaal in beeld. Voor een screenreadergebruiker betekent het langs alle menu-items gaan met de tabtoets tot de juiste link langskomt. Beide groepen verliezen tijd of haken af.
+De enige manier om een pagina te vinden is via de hoofdnavigatie. Er is geen zoekveld, geen sitemap en geen overzicht in de footer. Voor iemand met een schermvergroter past het uitgeklapte menu niet helemaal in beeld. Voor een screenreadergebruiker betekent het langs alle menu-items gaan met de tabtoets tot de juiste link langskomt. Beide groepen verliezen tijd of haken af.
 
-**Hoe te testen:** controleer of er naast het hoofdmenu nog een andere manier is om een willekeurige pagina te bereiken. Bijvoorbeeld via een zoekveld, een sitemap of een [Page Footer](/page-footer/) met links.
+**Hoe te testen:** controleer of er naast het hoofdmenu nog een andere manier is om een willekeurige pagina te bereiken. Bijvoorbeeld: via een zoekveld, een sitemap of een [Page Footer](/page-footer/) met links.
 
 <Guideline appearance="dont" title="Alleen een hoofdmenu als ingang">
   ```html
@@ -106,7 +108,7 @@ De enige manier om een pagina te vinden is via de hoofdnavigatie. Er is geen zoe
 
 **Wie kan dit oplossen:** een developer voegt een zoekfunctie of een link naar de sitemap toe aan het siteframework, zodat de tweede ingang op elke pagina aanwezig is.
 
-### Het zoekveld staat alleen op de homepage
+### Het zoekveld staat alleen op de homepage, niet in het menu
 
 Het zoekveld is wel aanwezig, maar alleen op de homepage. Bezoekers die op een andere pagina zijn en de zoekfunctie willen gebruiken, moeten eerst terug naar de homepage. Dat zijn extra stappen en is vooral hinderlijk voor toetsenbord- en screenreadergebruikers. De zoekfunctie telt dan niet als geldige tweede manier, omdat hij niet vanaf elke pagina te bereiken is.
 
@@ -147,7 +149,7 @@ Het zoekveld is wel aanwezig, maar alleen op de homepage. Bezoekers die op een a
 
 ### De sitemap mist pagina's of klopt niet meer
 
-Wanneer de sitemap handmatig wordt bijgehouden, raakt de pagina vaak verouderd. Recente pagina's ontbreken en verwijderde pagina's blijven erin staan als kapotte links. Met ontbrekende pagina's en kapotte links is de sitemap geen werkbare tweede manier om pagina's te vinden.
+Een sitemap die handmatig wordt bijgehouden, raakt makkelijk verouderd. Recente pagina's ontbreken en verwijderde pagina's blijven erin staan als kapotte links. Met ontbrekende pagina's en kapotte links is de sitemap geen werkbare tweede manier om pagina's te vinden.
 
 **Hoe te testen:** vergelijk het aantal pagina's in de sitemap met het aantal pagina's in het CMS of de inhoudsstructuur. Klik daarna een aantal willekeurige links aan en controleer of ze nog werken.
 
@@ -205,7 +207,7 @@ Naast het hoofdmenu biedt de site een zoekveld aan, als tweede manier om pagina'
 
 ### De sitemap is verstopt
 
-De sitemap bestaat wel, maar de link ernaartoe staat ergens diep weggestopt of alleen op één pagina. Een bezoeker weet vaak niet eens dat er een sitemap is, en gebruikt hem dus niet. De sitemap telt daarmee in de praktijk niet als tweede manier om pagina's te vinden, ook al staat hij in de paginastructuur.
+De sitemap bestaat wel, maar de link ernaartoe staat ergens diep weggestopt of alleen op één pagina. Een bezoeker weet niet eens dat er een sitemap is, en gebruikt hem dus niet. De sitemap telt daarmee in de praktijk niet als tweede manier om pagina's te vinden, ook al staat hij in de paginastructuur.
 
 **Hoe te testen:** open een willekeurige pagina op de site en zoek naar een link met de tekst "Sitemap" of "Overzicht". Staat die op een voorspelbare plek zoals de footer?
 
@@ -262,8 +264,8 @@ De sitemap bestaat wel, maar de link ernaartoe staat ergens diep weggestopt of a
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 2.4.5 Meerdere manieren](https://www.w3.org/Translations/WCAG22-nl/#meerdere-manieren) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 2.4.5: Multiple Ways](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [WCAG 2.2: Succescriterium 2.4.5 Meerdere manieren](https://www.w3.org/Translations/WCAG22-nl/#meerdere-manieren): de officiële Nederlandstalige vertaling. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding 2.4.5 Multiple Ways](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html): de toelichting van het W3C, met technieken en voorbeelden (Engels).
 
 ## Gebruikersonderzoek
 
