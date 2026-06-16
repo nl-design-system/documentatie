@@ -31,11 +31,9 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
-import Disclaimer from "./\_wcag-disclaimer.md";
-import WCAGFooterInfo from "./\_wcag_footer_info.md";
-import Summary from "./summaries/\_1.4.12-summary.md";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./_wcag_footer_info.md";
+import Summary from "./summaries/_1.4.12-summary.md";
 
 export const tekstafstand = {
   lineHeight: 1.5,
@@ -64,11 +62,13 @@ export const demoLabel = {
   {"WCAG-succescriterium 1.4.12 Tekstafstand"}
 </WcagHeadingGroup>
 
+## Uitleg
+
 <Summary />
 
 Een bezoeker zet de afstanden ruimer en de pagina moet bruikbaar blijven bij vier minimumwaarden:
 
-- regelhoogte (regelafstand): minstens 1,5 keer de lettergrootte;
+- regelhoogte, ook wel regelafstand: minstens 1,5 keer de lettergrootte;
 - afstand tussen alinea's: minstens 2 keer de lettergrootte;
 - letterafstand: minstens 0,12 keer de lettergrootte;
 - woordafstand: minstens 0,16 keer de lettergrootte.
@@ -182,7 +182,7 @@ De bezoeker past de afstanden aan via een bookmarklet of extensie, maar de site 
 
 <Guideline appearance="dont" title="!important blokkeert bezoekerstijl">
     <div aria-hidden="true" style={demoSurface}>
-      <span style={demoLabel}>Bezoeker probeert tekstafstand te verruimen — site negeert het</span>
+      <span style={demoLabel}>Bezoeker probeert tekstafstand te verruimen: site negeert het</span>
       <p style={{margin: 0, lineHeight: 1.2, letterSpacing: 0, wordSpacing: 0}}>
         De bezoeker activeert de tekstafstand-bookmarklet, maar deze alinea blijft compact omdat de stijlregels van de site `!important` gebruiken.
       </p>
@@ -197,7 +197,7 @@ De bezoeker past de afstanden aan via een bookmarklet of extensie, maar de site 
 
 <Guideline appearance="do" title="Zonder !important kan de bezoeker overrulen">
     <div aria-hidden="true" style={demoSurface}>
-      <span style={demoLabel}>Bezoeker verruimt tekstafstand — site laat het toe</span>
+      <span style={demoLabel}>Bezoeker verruimt tekstafstand: site laat het toe</span>
       <p style={{margin: 0, ...tekstafstand}}>
         De bezoeker activeert de tekstafstand-bookmarklet, en deze alinea krijgt de ruimere afstanden tussen letters, woorden en regels.
       </p>
@@ -339,9 +339,9 @@ Een horizontale navigatie heeft menu-items met een vaste breedte, en de tekst in
 
 **Wie kan dit oplossen:** een developer bouwt een navigatie die kan wrappen of bij groeiende tekst naar een mobiele variant omschakelt.
 
-### Tooltip of popover met vaste maten
+### Tooltip of pop-up met vaste maten
 
-Een tooltip of popover heeft een vaste hoogte en breedte. De inhoud past bij standaard tekstafstand. Met ruimere regelafstand valt de onderste regel buiten de tooltip weg, of wordt de tekst afgesneden.
+Een tooltip of pop-up heeft een vaste hoogte en breedte. De inhoud past bij standaard tekstafstand. Met ruimere regelafstand valt de onderste regel buiten de tooltip weg, of wordt de tekst afgesneden.
 
 **Hoe te testen:** open een tooltip met aangepaste tekstafstand. Is alle tekst nog leesbaar?
 
@@ -498,16 +498,16 @@ Een datatabel heeft rijen met een vaste hoogte voor een strak ontwerp. Bij ruime
 
 ## Gerelateerde succescriteria
 
-- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): als de bezoeker de tekst 2 keer zo groot instelt, moet alle content en functionaliteit beschikbaar blijven. Dezelfde CSS-aanpak helpt bij beide criteria.
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): als de bezoeker de tekst 2 keer zo groot instelt, moet alle tekst en alle functies beschikbaar blijven. Dezelfde CSS-aanpak helpt bij beide criteria.
 - [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom en 320 pixels breedte past de layout zich aan zonder horizontaal scrollen. Flexibele containers zijn voor alle drie de criteria de basis.
 - [1.4.8 Visuele presentatie](/wcag/1.4.8/): op niveau AAA gelden striktere eisen voor regelafstand en alineaspatiëring als standaardinstelling.
 - [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/): tekst in afbeeldingen kan niet aangepast worden. Gebruik echte tekst.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 1.4.12 Tekstafstand](https://www.w3.org/Translations/WCAG22-nl/#tekstafstand) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 1.4.12: Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Tekstafstand-bookmarklet van Steve Faulkner](https://codepen.io/stevef/full/YLMqbo) — zet de vier tekstafstanden in één klik op het minimumniveau, voor snelle handmatige tests.
+- [WCAG 2.2: Succescriterium 1.4.12 Tekstafstand](https://www.w3.org/Translations/WCAG22-nl/#tekstafstand): de officiële Nederlandstalige vertaling.
+- [Understanding 1.4.12 Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html): de toelichting van het W3C, met technieken en voorbeelden (Engels).
+- [Tekstafstand-bookmarklet van Steve Faulkner](https://codepen.io/stevef/full/YLMqbo): zet de vier tekstafstanden in één klik op het minimumniveau, voor snelle handmatige tests.
 
 ## Gebruikersonderzoek
 
@@ -519,12 +519,6 @@ Een datatabel heeft rijen met een vaste hoogte voor een strak ontwerp. Bij ruime
 - Nederlandse vertaling van het WCAG-succescriterium: [1.4.12 Tekstafstand](https://www.w3.org/Translations/WCAG22-nl/#text-spacing).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.12 Text Spacing</span>](https://www.w3.org/WAI/WCAG22/quickref/#text-spacing).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.12 Text Spacing</span>](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
