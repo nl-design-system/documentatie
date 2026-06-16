@@ -28,6 +28,7 @@
     "@fontsource/fira-code": "5.2.7",
     "@fontsource/fira-sans": "5.2.7",
     "@fontsource/source-sans-pro": "5.2.5",
+    "@gemeente-denhaag/iconbutton": "3.1.1",
     "@gemeente-denhaag/side-navigation": "4.1.0",
     "@nl-design-system-candidate/button-css": "1.1.0",
     "@nl-design-system-candidate/button-react": "1.1.0",

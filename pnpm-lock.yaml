@@ -448,15 +448,33 @@ importers:
       '@fontsource/source-sans-pro':
         specifier: 5.2.5
         version: 5.2.5
+      '@gemeente-denhaag/iconbutton':
+        specifier: 3.1.1
+        version: 3.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/side-navigation':
         specifier: 4.1.0
         version: 4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nl-design-system-candidate/button-css':
+        specifier: 1.1.0
+        version: 1.1.0
       '@nl-design-system-candidate/button-react':
         specifier: 1.1.0
         version: 1.1.0(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/heading-react':
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/link-css':
+        specifier: 2.0.3
+        version: 2.0.3
+      '@nl-design-system-candidate/link-react':
+        specifier: 1.1.8
+        version: 1.1.8(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/paragraph-css':
+        specifier: 2.1.3
+        version: 2.1.3
+      '@nl-design-system-candidate/paragraph-react':
+        specifier: 2.2.2
+        version: 2.2.2(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-candidate/skip-link-css':
         specifier: 1.0.5
         version: 1.0.5
@@ -475,6 +493,9 @@ importers:
       '@tabler/icons-react':
         specifier: 3.36.1
         version: 3.36.1(react@18.3.1)
+      '@utrecht/accordion-css':
+        specifier: 4.0.1
+        version: 4.0.1
       '@utrecht/body-css':
         specifier: 4.0.0
         version: 4.0.0
@@ -484,6 +505,9 @@ importers:
       '@utrecht/breadcrumb-nav-css':
         specifier: 3.0.0
         version: 3.0.0
+      '@utrecht/img-css':
+        specifier: 3.0.1
+        version: 3.0.1
       '@utrecht/link-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -3022,6 +3046,12 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
+  '@gemeente-denhaag/iconbutton@3.1.1':
+    resolution: {integrity: sha512-5xWtVxXZcNYPsN4WuXdxIdAlV5wQtimD8psfX5mtCvPBbePj34KA7OsMeUg0FTlpEh6PFhTkqQQEgDq6bBqATg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/icons@0.2.3-alpha.374':
     resolution: {integrity: sha512-63ZmHziHtSIrkc/bEJQOT6lNFujLsEkGVg59gd5JwoICQv16GIZQSUzqVyQwgkrBGk7tvpIBFAw1uZchLnsEkw==}
     peerDependencies:
@@ -3470,6 +3500,9 @@ packages:
       '@types/react': '>=16'
       react: '>=16'
 
+  '@nl-design-system-candidate/button-css@1.1.0':
+    resolution: {integrity: sha512-w0JLQyiPL9UrfRwzu3Mq2EWbYvAJbolepeFH4ggyBFXoYm9RMWX6vWb/8Oj999GzAF6N77LlES5jUnaR3BJ7Yw==}
+
   '@nl-design-system-candidate/button-docs@1.0.2':
     resolution: {integrity: sha512-G+UO66sr49bg1yMMV4Z2QAKKSCigFrECkejq46GNjgCCoKuSxgJcFHw89MhgXRxgMQuDGJSQhWpTKk/VOK1cAg==}
 
@@ -3578,8 +3611,17 @@ packages:
   '@nl-design-system-candidate/number-badge-tokens@2.0.3':
     resolution: {integrity: sha512-LfJVX9ha486SMJ7laHy/yRy31mDdJHS5r8bczsuR4afll5F6xiwvhyxeJlzGv4z/Gsdoub3SWiz3apVObYJErg==}
 
+  '@nl-design-system-candidate/paragraph-css@2.1.3':
+    resolution: {integrity: sha512-f3GHiSpisUZAcn4gSNpSX2C3Mhl7y9dg1TfTe+jGMtHAqau/tztrtE3H27FlwrZeVEtsUtvssRCYUA3UO/GDpQ==}
+
   '@nl-design-system-candidate/paragraph-docs@1.2.1':
     resolution: {integrity: sha512-IXpd7MJp8f4d52u3xOB7qDAVGX+Zwx8sWAxuxoTLQiQY6yyyY7ahPMLFShGsnZpjn7KoQ6UExbTV2sihBODkyg==}
+
+  '@nl-design-system-candidate/paragraph-react@2.2.2':
+    resolution: {integrity: sha512-naW+drAzlq7HPaZmhdYdgFbR06dyuB63KGg83CRDqjbCVJ40uJzLh/56hgyYzUoRrQe9m5aXZ744uFojJYngug==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.3':
     resolution: {integrity: sha512-EtFFQagTwkJYL5k9+h8xDQDh9GKzgo4CJnFrSuxWNzM3A3Hi+vAd6bIBAj4ECBZfW5IJBtsONAduSoCiPo5CbA==}
@@ -4579,6 +4621,9 @@ packages:
   '@utrecht/accordion-css@3.0.1':
     resolution: {integrity: sha512-BWqGNjsJKzZ468gNbicMNyNoAwEAdN6msViCGURrW/tIsWRqoIcck3CozGuWdS9u7pakasfi6hhHvPbXcz4CoA==}
 
+  '@utrecht/accordion-css@4.0.1':
+    resolution: {integrity: sha512-Sqyy/xT3mgutHVDolo1wa4dulq5puUOrOLAooVCVn7UtUFNLXG5OmjeYho4sPXIikF8vQU5XrOabrR8l0hFtnw==}
+
   '@utrecht/action-group-css@3.0.1':
     resolution: {integrity: sha512-IFOWCIMgcr44MuqotyY7wC3KXOMaxvcn8ZoDtCISK+5uG5NjbSsdI9DyegrWBq8M7fGPLnjDMdWCmIVFM2lgCA==}
 
@@ -4954,6 +4999,9 @@ packages:
 
   '@utrecht/img-css@2.0.1':
     resolution: {integrity: sha512-G5D1Nc7SlQeUgKic14s7VdsMcXxSquyS0INNmq79ejf73l6GNXY7E+Gag3JwyOopHUAKqW1u5fKZG00bySPabA==}
+
+  '@utrecht/img-css@3.0.1':
+    resolution: {integrity: sha512-8RBjO+fHCoeugzFHubx4Az79fHX0FNhsXjIBJ3TzA3hnmZwk4VSPUfCFL/3v1b9q6OlbhEBCwM9KoiNYN6KLng==}
 
   '@utrecht/index-char-nav-css@2.0.1':
     resolution: {integrity: sha512-/sCn0vamJZaFDYx0hyFgKSVJgAndGtMsDRs287vR5fkJzGjeNoFH+cigYukIpjj/55bvFVjuLdFWT9toGiIkVA==}
@@ -15880,6 +15928,8 @@ snapshots:
       '@types/react': 18.3.27
       react: 18.3.1
 
+  '@nl-design-system-candidate/button-css@1.1.0': {}
+
   '@nl-design-system-candidate/button-docs@1.0.2': {}
 
   '@nl-design-system-candidate/button-react@1.1.0(@babel/runtime@7.28.6)(react@18.3.1)':
@@ -15959,7 +16009,15 @@ snapshots:
 
   '@nl-design-system-candidate/number-badge-tokens@2.0.3': {}
 
+  '@nl-design-system-candidate/paragraph-css@2.1.3': {}
+
   '@nl-design-system-candidate/paragraph-docs@1.2.1': {}
+
+  '@nl-design-system-candidate/paragraph-react@2.2.2(@babel/runtime@7.28.6)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      clsx: 2.1.1
+      react: 18.3.1
 
   '@nl-design-system-candidate/paragraph-tokens@1.1.3': {}
 
@@ -17036,6 +17094,8 @@ snapshots:
 
   '@utrecht/accordion-css@3.0.1': {}
 
+  '@utrecht/accordion-css@4.0.1': {}
+
   '@utrecht/action-group-css@3.0.1': {}
 
   '@utrecht/action-group-react@1.1.4(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
@@ -17658,6 +17718,8 @@ snapshots:
   '@utrecht/icon-css@3.0.1': {}
 
   '@utrecht/img-css@2.0.1': {}
+
+  '@utrecht/img-css@3.0.1': {}
 
   '@utrecht/index-char-nav-css@2.0.1': {}
 
