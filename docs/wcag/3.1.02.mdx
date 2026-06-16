@@ -29,9 +29,7 @@ import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
-import Disclaimer from "./\_wcag-disclaimer.md";
 import WCAGFooterInfo from "./\_wcag_footer_info.md";
 import Summary from "./summaries/\_3.1.2-summary.md";
 
@@ -49,7 +47,7 @@ Een Nederlandstalige pagina bevat een Engels citaat. Die Engelse passage krijgt 
 
 Een tekst in een andere taal staat op de pagina zonder dat de taal is aangegeven. De screenreader leest de passage voor met de uitspraakregels van de hoofdtaal. Een Engels citaat op een Nederlandstalige pagina klinkt dan alsof iemand Engels probeert te lezen met een Nederlandse uitspraak.
 
-**Hoe te testen:** zoek op de pagina naar tekst in een andere taal. Inspecteer het element in de DevTools en controleer of er een `lang`-attribuut op staat en of de waarde klopt.
+**Hoe te testen:** zoek op de pagina naar tekst in een andere taal. Inspecteer het element in de <span lang="en">DevTools</span> en controleer of er een `lang`-attribuut op staat en of de waarde klopt.
 
 <Guideline appearance="dont" title="Engelse zin zonder taalmarkering op een Nederlandstalige pagina">
   ```html
@@ -73,13 +71,13 @@ Een tekst in een andere taal staat op de pagina zonder dat de taal is aangegeven
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer of contentbeheerder voegt een `lang`-attribuut toe aan het element dat de anderstalige tekst bevat.
+**Wie kan dit oplossen:** een contentbeheerder of developer voegt een `lang`-attribuut toe aan het element dat de anderstalige tekst bevat.
 
 ### Screenreader wisselt te vroeg naar een andere taal
 
 Het `lang`-attribuut staat op een parent-element dat meer content bevat dan alleen de anderstalige passage. Hierdoor wordt ook de Nederlandstalige tekst eromheen als Engels gemarkeerd. De screenreader schakelt te vroeg naar de Engelse stem en leest de Nederlandse tekst verkeerd voor.
 
-**Hoe te testen:** inspecteer het element met het `lang`-attribuut in de DevTools. Bevat het element alleen de anderstalige tekst, of ook tekst in de hoofdtaal?
+**Hoe te testen:** inspecteer het element met het `lang`-attribuut in de <span lang="en">DevTools</span>. Bevat het element alleen de anderstalige tekst, of ook tekst in de hoofdtaal?
 
 <Guideline appearance="dont" title="Lang-attribuut op een te breed element">
   ```html
@@ -95,13 +93,13 @@ Het `lang`-attribuut staat op een parent-element dat meer content bevat dan alle
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer of contentbeheerder verplaatst het `lang`-attribuut naar een element dat alleen de anderstalige tekst omvat.
+**Wie kan dit oplossen:** een contentbeheerder of developer verplaatst het `lang`-attribuut naar een element dat alleen de anderstalige tekst omvat.
 
 ### Screenreader herkent de taalcode niet
 
 Het `lang`-attribuut op een anderstalige passage bevat een ongeldige taalcode. De screenreader herkent de code niet en valt terug op de hoofdtaal van de pagina. Het effect is hetzelfde als wanneer het `lang`-attribuut ontbreekt.
 
-**Hoe te testen:** inspecteer anderstalige elementen in de DevTools. Controleer of de taalcode geldig is volgens de BCP 47-standaard.
+**Hoe te testen:** inspecteer anderstalige elementen in de <span lang="en">DevTools</span>. Controleer of de taalcode geldig is volgens de BCP 47-standaard.
 
 <Guideline appearance="dont" title="Ongeldige taalcodes">
   ```html
@@ -119,7 +117,7 @@ Het `lang`-attribuut op een anderstalige passage bevat een ongeldige taalcode. D
 
 **Wie kan dit oplossen:** een developer past de taalcode aan naar een geldige BCP 47-code.
 
-### Uitzonderingen
+## Uitzonderingen
 
 Niet elke anderstalige tekst heeft een `lang`-attribuut nodig. Je hoeft geen `lang`-attribuut te gebruiken bij:
 
@@ -147,16 +145,10 @@ Niet elke anderstalige tekst heeft een `lang`-attribuut nodig. Je hoeft geen `la
 
 ## Gerelateerde succescriteria
 
-- [3.1.1 Taal van de pagina](https://nldesignsystem.nl/wcag/3.1.1/): de hoofdtaal van de hele pagina is aangegeven in het `lang`-attribuut op `<html>`. Dit criterium is de basis: zonder een correcte hoofdtaal kan een screenreader ook de taalwisselingen binnen de pagina niet goed verwerken.
-- [1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1/): de taalmarkering is een vorm van programmatisch bepaalde informatie. Als de taal niet is aangegeven, gaat structurele informatie verloren.
+- [3.1.1 Taal van de pagina](/wcag/3.1.1/): de hoofdtaal van de hele pagina is aangegeven in het `lang`-attribuut op `<html>`. Dit criterium is de basis: zonder een correcte hoofdtaal kan een screenreader ook de taalwisselingen binnen de pagina niet goed verwerken.
+- [1.3.1 Info en relaties](/wcag/1.3.1/): de taalmarkering is een vorm van programmatisch bepaalde informatie. Als de taal niet is aangegeven, gaat structurele informatie verloren.
 
-## Relevante bronnen
-
-- [WCAG 2.2: Succescriterium 3.1.2 Taal van onderdelen](https://www.w3.org/Translations/WCAG22-nl/#taal-van-onderdelen) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 3.1.2: Language of Parts](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [BCP 47 Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) — het volledige register van geldige taalcodes. Gebruik dit als je twijfelt over de juiste code voor een specifieke taal (Engels).
-
-### Demo taalwisseling met VoiceOver
+## Demo taalwisseling met VoiceOver
 
 In deze video hoor je hoe de screenreader VoiceOver wisselt van stem en taal voor teksten die met het `lang`-attribuut zijn gemarkeerd.
 
@@ -166,11 +158,14 @@ In deze video hoor je hoe de screenreader VoiceOver wisselt van stem en taal voo
 
 - Content: [De juiste taal instellen](/richtlijnen/content/tekstopmaak/taal).
 
-## Bronnen
+## Relevante bronnen
 
-- [<span lang="en">The lang attribute: browsers telling lies, telling sweet little lies</span>](https://www.matuzo.at/blog/lang-attribute) van Manuel Matuzović over de problemen met het automatisch vertalen met Google Translate.
-- [<span lang="en">Language subtag lookup</span>](https://r12a.github.io/app-subtags/)
-- [`lang`-attribuut op <span lang="en">MDN</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)
+- [WCAG 2.2: Succescriterium 3.1.2 Taal van onderdelen](https://www.w3.org/Translations/WCAG22-nl/#taal-van-onderdelen): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 3.1.2: Language of Parts](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html): de Engelstalige W3C-uitleg bij het succescriterium, met technieken en voorbeelden.
+- [BCP 47 Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry): het volledige Engelstalige register van geldige taalcodes. Gebruik dit als je twijfelt over de juiste code voor een specifieke taal.
+- [<span lang="en">The lang attribute: browsers telling lies, telling sweet little lies</span>](https://www.matuzo.at/blog/lang-attribute) van Manuel Matuzović over de problemen met automatisch vertalen via Google Translate.
+- [<span lang="en">Language subtag lookup</span>](https://r12a.github.io/app-subtags/) om snel een geldige taalcode op te zoeken.
+- [`lang`-attribuut op <span lang="en">MDN</span>](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) met de technische documentatie van het attribuut.
 - [<span lang="en">Language tags in HTML and XML</span>](https://www.w3.org/International/articles/language-tags/index.en) van het W3C.
 
 ## Gebruikersonderzoek
@@ -180,15 +175,9 @@ In deze video hoor je hoe de screenreader VoiceOver wisselt van stem en taal voo
 ## W3C referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.1.2 Language of Parts</span>](https://www.w3.org/TR/WCAG22/#language-of-parts).
-- Nederlandse vertaling van het WCAG-succescriterium: [3.1.2 Taal van onderdelen](https://www.w3.org/Translations/WCAG22-nl/#language-of-parts).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.1.2 Language of Parts</span>](https://www.w3.org/WAI/WCAG22/quickref/#language-of-page).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 3.1.2: Language of Parts</span>](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- Nederlandse vertaling van het WCAG-succescriterium: [3.1.2 Taal van onderdelen](https://www.w3.org/Translations/WCAG22-nl/#taal-van-onderdelen).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.1.2 Language of Parts</span>](https://www.w3.org/WAI/WCAG22/quickref/#language-of-parts).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 3.1.2: Language of Parts</span>](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html).
 
 ## Help richtlijn verbeteren
 
