@@ -60,8 +60,9 @@ function generateId(options) {
   filename = filename.replace(/.mdx$/, '');
   filename = filename.replace(/.md$/, '');
 
-  // Make readme's the overview page
-  filename = filename.replace(/\/readme/i, '');
+  // Make index.json's the overview page
+  filename = filename.replace(/\/index.json$/i, '');
+  filename = filename.replace('/index', '');
 
   // remove leading ordering number in file segment
   filename = filename
@@ -126,13 +127,23 @@ const wcag = defineCollection({
   schema,
 });
 
-export const collections = { docs, wcag, components };
+const overviewPages = defineCollection({
+  loader: customGlob({
+    base: './../../docs',
+    pattern: ['**/index.json'],
+    generateId,
+  }),
+  schema,
+});
+
+export const collections = { docs, wcag, components, overviewPages };
 
 export const getAllCollections = async () => {
   const collectionPromises = await Promise.all([
     getCollection('components'),
     getCollection('docs'),
     getCollection('wcag'),
+    getCollection('overviewPages'),
   ]);
 
   return collectionPromises.flat();
