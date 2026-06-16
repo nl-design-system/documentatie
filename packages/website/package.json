@@ -33,6 +33,8 @@
     "@nl-design-system-candidate/button-css": "1.1.0",
     "@nl-design-system-candidate/button-react": "1.1.0",
     "@nl-design-system-candidate/heading-react": "1.1.7",
+    "@nl-design-system-candidate/link-css": "2.0.3",
+    "@nl-design-system-candidate/link-react": "1.1.8",
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
     "@nl-design-system-candidate/skip-link-react": "1.1.7",
     "@nl-design-system-community/ma-design-tokens": "5.2.0",
