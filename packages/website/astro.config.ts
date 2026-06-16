@@ -47,6 +47,8 @@ const cspConfig = process.env['NODE_ENV'] === 'development' ? cspDevConfig : csp
 // generation of the content collections.
 globalThis.unlistedPages = new Set();
 
+globalThis.isAstro = true;
+
 // https://astro.build/config
 export default defineConfig({
   publicDir: '../../static',
@@ -69,6 +71,12 @@ export default defineConfig({
     build: {
       // prevent vite from inlining assets as data:* attributes because it violates csp rules
       assetsInlineLimit: 0,
+    },
+    ssr: {
+      noExternal: [/@rijkshuisstijl-community\/.*/],
+    },
+    resolve: {
+      noExternal: [/@rijkshuisstijl-community\/.*/],
     },
   },
 

@@ -1,4 +1,5 @@
 import type { Loader, LoaderContext } from 'astro/loaders';
+import { getCollection } from 'astro:content';
 import { defineCollection } from 'astro/content/config';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
@@ -59,8 +60,9 @@ function generateId(options) {
   filename = filename.replace(/.mdx$/, '');
   filename = filename.replace(/.md$/, '');
 
-  // Make readme's the overview page
-  filename = filename.replace(/\/readme/i, '');
+  // Make index.json's the overview page
+  filename = filename.replace(/\/index.json$/i, '');
+  filename = filename.replace('/index', '');
 
   // remove leading ordering number in file segment
   filename = filename
@@ -73,7 +75,7 @@ function generateId(options) {
 
 const schema = z.object({
   title: z.string(),
-  title_sm: z.string().max(24).optional(),
+  title_sm: z.string().max(65).optional(),
   description: z.string().optional(),
   lang: z.enum(['nl', 'en']).optional(),
   slug: z.string().optional(),
@@ -81,6 +83,7 @@ const schema = z.object({
   image: z.httpUrl().optional(),
   image_alt: z.string().optional(),
   keywords: z.array(z.string()).optional(),
+  navigation_order: z.number().optional(),
 });
 
 const docs = defineCollection({
@@ -97,6 +100,7 @@ const docs = defineCollection({
       'richtlijnen/**/*.{md,mdx}',
       'voorbeelden/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
+      'CHANGELOG.md',
       '!**/_*/**',
       '!**/_*.{md,mdx}',
     ],
@@ -111,7 +115,7 @@ const components = defineCollection({
     pattern: ['componenten/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema,
+  schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
 });
 
 const wcag = defineCollection({
@@ -123,4 +127,24 @@ const wcag = defineCollection({
   schema,
 });
 
-export const collections = { docs, wcag, components };
+const overviewPages = defineCollection({
+  loader: customGlob({
+    base: './../../docs',
+    pattern: ['**/index.json'],
+    generateId,
+  }),
+  schema,
+});
+
+export const collections = { docs, wcag, components, overviewPages };
+
+export const getAllCollections = async () => {
+  const collectionPromises = await Promise.all([
+    getCollection('components'),
+    getCollection('docs'),
+    getCollection('wcag'),
+    getCollection('overviewPages'),
+  ]);
+
+  return collectionPromises.flat();
+};

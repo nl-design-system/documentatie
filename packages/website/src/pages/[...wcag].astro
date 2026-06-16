@@ -1,9 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
-import Document from '@layouts/document.astro';
+import DetailLayout from '@layouts/detail.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
-import TableOfContents from '@components/table-of-content/table-of-content.astro';
 
 export async function getStaticPaths() {
   const wcag = await getCollection('wcag');
@@ -19,9 +18,11 @@ const { Content } = await render(page);
 
 const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
+
+const components = await MDXComponents();
 ---
 
-<Document
+<DetailLayout
   title={page.data.title}
   titleSm={page.data.title_sm}
   description={description}
@@ -31,6 +32,5 @@ const description =
   keywords={['wcag', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
   index={page.data.unlisted !== true}
 >
-  <TableOfContents />
-  <Content components={MDXComponents} />
-</Document>
+  <Content components={components} />
+</DetailLayout>

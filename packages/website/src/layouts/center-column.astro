@@ -1,0 +1,16 @@
+---
+import Document, { type Props as DocumentProps } from './document.astro';
+import { PageBody } from '@components/page-body/page-body';
+
+export type Props = DocumentProps;
+
+const { ...props } = Astro.props;
+---
+
+<Document {...props}>
+  <PageBody className="ma-layout-center-column">
+    <main id="main">
+      <slot />
+    </main>
+  </PageBody>
+</Document>

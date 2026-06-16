@@ -198,6 +198,11 @@ interface IntroductionProps extends ComponentPageSectionProps {
 export const Introduction = ({ component, headingLevel, description }: IntroductionProps) => {
   const relayStep = component && COMPONENT_STATES[component.relayStep];
 
+  // This component should not be rendered with Astro since the Astro layout
+  // renders the `h1` in the template. That allows us to inject frontmatter
+  // data between the page title and the rest of the document's markdown
+  if (globalThis.isAstro) return null;
+
   return (
     component && (
       <>

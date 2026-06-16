@@ -1,0 +1,75 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="component-illustration">
+        <g clip-path="url(#clip0_1450_2976)">
+            <rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)" />
+            <g clip-path="url(#clip1_1450_2976)">
+                <rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)" />
+                <rect width="2" height="540" transform="translate(69)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(151)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(233)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(315)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(397)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(479)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(561)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(643)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(725)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(807)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="2" height="540" transform="translate(889)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="960" height="2" transform="translate(0 64)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="960" height="2" transform="translate(0 146)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="960" height="2" transform="translate(0 228)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="960" height="2" transform="translate(0 310)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="960" height="2" transform="translate(0 392)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+                <rect width="960" height="2" transform="translate(0 474)"
+                    fill="var(--ma-component-illustration-grid-color, #EEE)" />
+            </g>
+            <path d="M70 65L70 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M152 65L152 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M234 65L234 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M316 65L316 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M398 65L398 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M480 65L480 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M562 65L562 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M644 65L644 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M726 65L726 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M808 65L808 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+            <path d="M890 65L890 475" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"
+                stroke-linecap="round" />
+        </g>
+        <defs>
+            <clipPath id="clip0_1450_2976">
+                <rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)" />
+            </clipPath>
+            <clipPath id="clip1_1450_2976">
+                <rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)" />
+            </clipPath>
+        </defs>
+    </symbol>
+    <use href="#component-illustration" />
+</svg>

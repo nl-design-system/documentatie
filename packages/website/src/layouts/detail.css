@@ -1,0 +1,137 @@
+/**
+ * Layout for detail pages. A detail page is usually a rendered markdown file.
+ * It displays the `side-nav`, `breadcrumb-nav` and
+ * a table of contents (`anchor-nav`)
+ */
+.ma-layout-detail {
+  /* Temporary variables until the design is thought through with a designer */
+  --ma-layout-detail-side-nav-min-inline-size: 100px;
+  --ma-layout-detail-side-nav-max-inline-size: 300px;
+  --ma-layout-detail-min-inline-size: 220px;
+
+  container: ma-layout-detail / inline-size;
+  inline-size: 100%;
+}
+
+.ma-layout-detail__content {
+  display: grid;
+  grid-template-areas:
+    ". side-nav ."
+    ". breadcrumb-nav ."
+    ". header ."
+    ". anchor-nav ."
+    ". content .";
+  grid-template-columns: var(--basis-space-inline-2xl) 1fr var(--basis-space-inline-2xl);
+  inline-size: 100%;
+}
+
+.ma-layout-detail__side-nav {
+  grid-area: side-nav;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  position: absolute;
+}
+
+.ma-layout-detail__breadcrumb-nav {
+  grid-area: breadcrumb-nav;
+}
+
+.ma-layout-detail__header {
+  grid-area: header;
+}
+
+.ma-layout-detail__anchor-nav {
+  grid-area: anchor-nav;
+}
+
+.ma-layout-detail__main {
+  display: contents;
+}
+
+.ma-layout-detail__main-body {
+  grid-area: body;
+}
+
+/*
+ * Temporary value until the design is thought through with a designer.
+ * Value felt right.
+ */
+@container ma-layout-detail (width >= 768px) {
+  .ma-layout-detail__content {
+    grid-template-areas:
+      ". breadcrumb-nav ."
+      ". header ."
+      ". anchor-nav ."
+      ". body . ";
+    grid-template-columns:
+      /* gutter */
+      var(--basis-space-inline-2xl)
+      /* page body */
+      minmax(var(--ma-layout-detail-min-inline-size), var(--basis-page-max-inline-size))
+      /* gutter */
+      var(--basis-space-inline-2xl);
+    grid-template-rows: auto auto auto 1fr;
+  }
+}
+
+/*
+ * Temporary value until the design is thought through with a designer.
+ * Value based on --basis-page-max-inline.
+ */
+@container ma-layout-detail (width >= 1140px) {
+  .ma-layout-detail__side-nav {
+    position: relative;
+  }
+
+  .ma-layout-detail__content {
+    grid-template-areas:
+      "side-nav . breadcrumb-nav . "
+      "side-nav . header . "
+      "side-nav . anchor-nav . "
+      "side-nav . body . ";
+    grid-template-columns:
+      /* side-nav */
+      minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
+      /* side-nav gutter */
+      var(--basis-space-inline-2xl)
+      /* page body */
+      minmax(var(--ma-layout-detail-min-inline-size), var(--basis-page-max-inline-size))
+      /* anchor-nav gutter */
+      var(--basis-space-inline-2xl);
+    grid-template-rows: auto auto auto 1fr;
+  }
+}
+
+/*
+ * Temporary value until the design is thought through with a designer.
+ * Value based on --basis-page-max-inline, now with room for the anchor nav
+ */
+@container ma-layout-detail (width >= 1500px) {
+  .ma-layout-detail__anchor-nav > * {
+    inset-block-start: 0;
+    position: sticky;
+  }
+
+  .ma-layout-detail__content {
+    grid-template-areas:
+      "side-nav . . breadcrumb-nav . anchor-nav ."
+      "side-nav . . header . anchor-nav ."
+      "side-nav . . body . anchor-nav . ";
+    grid-template-columns:
+      /* side-nav */
+      minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
+      /* side-nav gutter */
+      var(--basis-space-inline-2xl)
+      /* empty column to center page */
+      1fr
+      /* page body */
+      minmax(var(--ma-layout-detail-min-inline-size), var(--basis-page-max-inline-size))
+      /* anchor-nav gutter */
+      var(--basis-space-inline-2xl)
+      /* anchor-nav */
+      minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
+      /* empty column to center page */
+      1fr;
+    grid-template-rows: auto auto 1fr;
+  }
+}

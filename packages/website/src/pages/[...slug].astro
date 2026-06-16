@@ -1,9 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
-import Document from '@layouts/document.astro';
+import DetailLayout from '@layouts/detail.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
-import TableOfContents from '@components/table-of-content/table-of-content.astro';
+import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
+import { isNavigationGroup } from 'src/navigation';
+import { navigation } from '../navigation.config';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
@@ -16,9 +18,15 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props;
 const { Content } = await render(page);
+
+const { navigationList } = (await navigation)();
+const navigationElement = getNavigationElement(navigationList, Astro.url.pathname);
+const navigationGroup = isNavigationGroup(navigationElement) ? navigationElement : navigationElement?.parent;
+
+const components = await MDXComponents({ navigationItems: navigationGroup?.items });
 ---
 
-<Document
+<DetailLayout
   title={page.data.title}
   titleSm={page.data.title_sm}
   description={page.data.description}
@@ -28,6 +36,5 @@ const { Content } = await render(page);
   keywords={page.data.keywords}
   index={page.data.unlisted !== true}
 >
-  <TableOfContents />
-  <Content components={MDXComponents} />
-</Document>
+  <Content components={components} />
+</DetailLayout>

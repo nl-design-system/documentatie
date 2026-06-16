@@ -1,7 +1,5 @@
 ---
 import { siteName, siteTitle, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
-import { Root } from '@components/root/root';
-import { PageBody } from '@components/page-body/page-body';
 import { PageHeader } from '@components/page-header/page-header';
 import { PageFooter } from '@components/page-footer/page-footer';
 import { NavBar } from '@components/nav-bar/nav-bar';
@@ -11,15 +9,17 @@ import { NavList } from '@components/nav-list/nav-list';
 import { NavListLink } from '@components/nav-list/nav-list';
 import { Logo } from '@components/logo/logo';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
-import { BreadcrumbNav, BreadcrumbNavLink, BreadcrumbNavSeparator } from '@components/breadcrumb-nav/breadcrumb-nav';
 import { IconChevronRight } from '@tabler/icons-react';
+import { getMainNavigation } from '../navigation';
+import { navigation } from '../navigation.config.ts';
 
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
 import '@fontsource/source-sans-pro';
 import '@fontsource/source-sans-pro/700.css';
+import '@utrecht/root-css/dist/index.css';
 
-interface Props {
+export interface Props {
   title: string;
   titleSm?: string;
   description?: string;
@@ -29,21 +29,9 @@ interface Props {
   keywords?: string[];
   index?: boolean;
   follow?: boolean;
-  showBreadcrumbs?: boolean;
 }
 
-const {
-  title,
-  titleSm,
-  description,
-  lang = 'nl',
-  keywords,
-  seoImage,
-  seoImageAlt,
-  index = true,
-  follow,
-  showBreadcrumbs = true,
-} = Astro.props;
+const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
@@ -56,15 +44,7 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
 const _follow = follow === undefined ? index : follow;
 const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
 
-const mainNavigationItems = [
-  { href: '/', label: 'Home' },
-  { href: '/handboek/', label: 'Handboek' },
-  { href: '/richtlijnen/', label: 'Richtlijnen' },
-  { href: '/componenten/', label: 'Componenten' },
-  { href: '/voorbeelden/', label: 'Voorbeelden' },
-  { href: '/community/', label: 'Community' },
-  { href: '/project/', label: 'Project' },
-];
+const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
 
 const footerNavigationItems = [
   { href: '/blog/', label: 'Blog' },
@@ -79,7 +59,7 @@ const footerNavigationItems = [
 ];
 ---
 
-<Root lang={lang} dir="ltr">
+<html class="utrecht-root" lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -119,32 +99,18 @@ const footerNavigationItems = [
         <nav aria-labelledby="hoofdnavigatie-label">
           <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
           <NavList>
-            {mainNavigationItems.map(({ href, label }) => <NavListLink href={href}>{label}</NavListLink>)}
+            {
+              mainNavigationItems.map(({ href, label, expanded, current }) => (
+                <NavListLink href={href} aria-current={expanded || current ? 'page' : null}>
+                  {label}
+                </NavListLink>
+              ))
+            }
           </NavList>
         </nav>
       </NavBar>
-      <PageBody>
-        {
-          showBreadcrumbs && (
-            <nav aria-labelledby="breadcrumb-label">
-              <h2 hidden id="breadcrumb-label">
-                Kruimelpad
-              </h2>
-              <BreadcrumbNav>
-                <BreadcrumbNavLink href="/">Home</BreadcrumbNavLink>
-                <BreadcrumbNavSeparator>
-                  <IconChevronRight />
-                </BreadcrumbNavSeparator>
-                <BreadcrumbNavLink href="#">{title}</BreadcrumbNavLink>
-              </BreadcrumbNav>
-            </nav>
-          )
-        }
 
-        <main id="main">
-          <slot />
-        </main>
-      </PageBody>
+      <slot />
 
       <PageFooter>
         <nav aria-labelledby="site-navigatie-label">
@@ -163,7 +129,7 @@ const footerNavigationItems = [
       </PageFooter>
     </PageLayout>
   </body>
-</Root>
+</html>
 
 <style is:global>
   /* These styles are temporary to let axe pass. When actual components are

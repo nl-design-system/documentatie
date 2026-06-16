@@ -1,0 +1,94 @@
+/**
+ * Layout for overview pages. Usually the page is generated with a list of
+ * sub pages as its body.
+ * It displays the `side-nav` and `breadcrumb-nav`
+ */
+.ma-layout-overview {
+  /* Temporary variables until the design is thought through with a designer */
+  --ma-layout-overview-side-nav-min-inline-size: 100px;
+  --ma-layout-overview-side-nav-max-inline-size: 300px;
+  --ma-layout-overview-min-inline-size: 220px;
+
+  container: ma-layout-overview / inline-size;
+  inline-size: 100%;
+}
+
+.ma-layout-overview__content {
+  display: grid;
+  grid-template-areas:
+    ". side-nav ."
+    ". breadcrumb-nav ."
+    ". body .";
+  grid-template-columns: var(--basis-space-inline-2xl) 1fr var(--basis-space-inline-2xl);
+  inline-size: 100%;
+}
+
+.ma-layout-overview__side-nav {
+  grid-area: side-nav;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  position: absolute;
+}
+
+.ma-layout-overview__breadcrumb-nav {
+  grid-area: breadcrumb-nav;
+}
+
+.ma-layout-overview__header {
+  grid-area: header;
+}
+
+.ma-layout-overview__main {
+  display: contents;
+}
+
+.ma-layout-overview__main-body {
+  grid-area: body;
+}
+
+/*
+ * Temporary value until the design is thought through with a designer.
+ * Value felt right.
+ */
+@container ma-layout-overview (width >= 768px) {
+  .ma-layout-overview__content {
+    grid-template-areas:
+      ". breadcrumb-nav ."
+      ". body . ";
+    grid-template-columns:
+      /* gutter */
+      var(--basis-space-inline-2xl)
+      /* page body */
+      minmax(var(--ma-layout-overview-min-inline-size), var(--basis-page-max-inline-size))
+      /* gutter */
+      var(--basis-space-inline-2xl);
+    grid-template-rows: auto 1fr;
+  }
+}
+
+/*
+ * Temporary value until the design is thought through with a designer.
+ * Value based on --basis-page-max-inline.
+ */
+@container ma-layout-overview (width >= 1140px) {
+  .ma-layout-overview__side-nav {
+    position: relative;
+  }
+  .ma-layout-overview__content {
+    grid-template-areas:
+      "side-nav . . breadcrumb-nav . "
+      "side-nav . . body . ";
+    grid-template-columns:
+      /* side-nav */
+      minmax(var(--ma-layout-overview-side-nav-min-inline-size), var(--ma-layout-overview-side-nav-max-inline-size))
+      /* side-nav gutter */
+      var(--basis-space-inline-2xl)
+      /* empty column to center page */
+      1fr
+      /* page body */
+      minmax(var(--ma-layout-overview-min-inline-size), var(--basis-page-max-inline-size))
+      /* empty column to center page */
+      minmax(var(--ma-layout-overview-side-nav-max-inline-size), 1fr);
+    grid-template-rows: auto 1fr;
+  }
+}

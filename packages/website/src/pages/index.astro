@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { siteDescription, siteTitle } from '../seo.config.ts';
-import Document from '@layouts/document.astro';
+import CenterColumnLayout from '@layouts/center-column.astro';
 
 const docs = await getCollection('docs');
 const wcag = await getCollection('wcag');
@@ -41,7 +41,7 @@ const duplicates = getDuplicateTitles(docs);
 const placeholderTitle = '(geen paginatitel)';
 ---
 
-<Document title={siteTitle} description={siteDescription} showBreadcrumbs={false}>
+<CenterColumnLayout title={siteTitle} description={siteDescription} showBreadcrumbs={false}>
   <h1>NL Design System gerenderd met Astro</h1>
   {
     Object.entries(sections).map(([section, list]) => (
@@ -112,4 +112,4 @@ const placeholderTitle = '(geen paginatitel)';
       </aside>
     ) : null
   }
-</Document>
+</CenterColumnLayout>
