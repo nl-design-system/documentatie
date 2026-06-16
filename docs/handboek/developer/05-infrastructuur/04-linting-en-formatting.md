@@ -80,7 +80,7 @@ Voor NL Design System wordt onder andere bijgehouden dat de licentie op [EUPL](h
 
 ## Automatisering
 
-### Automatisering met husky en lint-staged {#lint-staged}
+### Automatisering met husky en lint-staged \{#lint-staged\}
 
 We gebruiken **husky** in combinatie met **lint‑staged** om deze checks uit te voeren vóórdat code wordt gecommit.
 

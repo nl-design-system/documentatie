@@ -160,7 +160,7 @@ Voor een **lege changeset** gebruik je alleen:
 ---
 ```
 
-## Changesets publiceren
+## Packages publiceren
 
 Na het mergen van je pull request wordt er automatisch een nieuwe pull request aangemaakt om de versie te publiceren. Je kunt deze direct mergen of wachten tot er meer wijzigingen zijn. Als de publicatie-pull request niet meteen gemerged wordt zal hij automatisch worden bijgewerkt zo lang dat nodig is. Zodra de publicatie-pull request gemerged wordt, worden de pakketten automatisch gepubliceerd naar de npm Registry.
 
