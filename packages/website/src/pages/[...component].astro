@@ -21,6 +21,7 @@ const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
 
 const Layout = page.data?.page_layout === 'overview' ? OverviewLayout : DetailLayout;
+const components = await MDXComponents();
 ---
 
 <Layout
@@ -36,5 +37,5 @@ const Layout = page.data?.page_layout === 'overview' ? OverviewLayout : DetailLa
   <h1 slot="header">{page.data.title}</h1>
   <p slot="header">{page.data.description}</p>
 
-  <Content components={MDXComponents} />
+  <Content components={components} />
 </Layout>

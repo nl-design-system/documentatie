@@ -11,6 +11,7 @@ import { Logo } from '@components/logo/logo';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
 import { IconChevronRight } from '@tabler/icons-react';
 import { getMainNavigation } from '../navigation';
+import { navigation } from '../navigation.config.ts';
 
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
@@ -43,7 +44,7 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
 const _follow = follow === undefined ? index : follow;
 const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
 
-const mainNavigationItems = await getMainNavigation();
+const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
 
 const footerNavigationItems = [
   { href: '/blog/', label: 'Blog' },
@@ -98,7 +99,13 @@ const footerNavigationItems = [
         <nav aria-labelledby="hoofdnavigatie-label">
           <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
           <NavList>
-            {mainNavigationItems.map(({ href, label }) => <NavListLink href={href}>{label}</NavListLink>)}
+            {
+              mainNavigationItems.map(({ href, label, expanded, current }) => (
+                <NavListLink href={href} aria-current={expanded || current ? 'page' : null}>
+                  {label}
+                </NavListLink>
+              ))
+            }
           </NavList>
         </nav>
       </NavBar>
