@@ -6,14 +6,15 @@
   border: 1px solid rgb(0 0 0 / 10%);
   margin-block-end: 40px;
   margin-block-start: 0; /* reset <figure> margin */
-  margin-inline-start: 0; /* reset <figure> margin */
   margin-inline-end: 0; /* reset <figure> margin */
+  margin-inline-start: 0; /* reset <figure> margin */
+}
+
+p + .nlds-guideline {
+  margin-block-start: 20px;
 }
 
 .nlds-guideline:first-of-type {
-  margin-block-start: 20px;
-}
-p + .nlds-guideline {
   margin-block-start: 20px;
 }
 
@@ -22,7 +23,8 @@ p + .nlds-guideline {
 }
 
 .nlds-guideline__description {
-  padding: 24px;
+  padding-block: 24px;
+  padding-inline: 24px;
 }
 
 .nlds-guideline__example {
@@ -33,14 +35,14 @@ p + .nlds-guideline {
 
 .nlds-guideline select {
   display: block;
-  margin-bottom: 0.5em;
+  margin-block-end: 0.5em;
 }
 
 .nlds-guideline__icon {
-  height: 20px;
+  block-size: 20px;
+  inline-size: 20px;
   margin-inline-end: 8px;
   vertical-align: middle;
-  width: 20px;
 }
 
 .nlds-guideline__title {
@@ -54,10 +56,10 @@ p + .nlds-guideline {
   margin-block-end: 16px;
 }
 
-.nlds-guideline span.progress-indicator {
+.nlds-guideline span.example-progress-indicator {
   display: block;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .nlds-guideline__badge--dont {

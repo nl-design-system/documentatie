@@ -1,10 +1,12 @@
 ---
 title: Prototypes met NL Design System
+title_sm: Prototypes
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: Prototypes
 pagination_label: Prototypes
 description: Als developer prototypes maken met NL Design System
+slug: /handboek/developer/prototypes/
 ---
 
 # Prototypes met NL Design System

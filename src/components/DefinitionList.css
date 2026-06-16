@@ -1,20 +1,18 @@
-.definition-list {
-}
-
-.definition {
+.ma-definition {
   margin-block-end: 1rem;
 }
 
-.definition__title {
+.ma-definition__title {
   display: inline;
   font-weight: 700;
 }
 
-.definition__title::after {
+.ma-definition__title::after {
   content: ": ";
 }
 
-.definition__data {
+.ma-definition__data {
   display: inline;
-  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
 }

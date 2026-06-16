@@ -1,32 +1,32 @@
-.component-card {
-  --cardgroup-card-mobile-max-width: 300px;
-  --cardgroup-card-padding-block-start: 36px;
-  --cardgroup-card-padding-block-end: 36px;
-  --card-content-padding-block-end: 0;
-  --card-content-padding-block-start: 0;
-  --component-illustration-svg-max-height: 185px;
-  --component-illustration-padding-inline: 24px;
-  --card-content-inline-size: 60%;
+.ma-component-card {
+  --ma-cardgroup-card-mobile-max-width: 300px;
+  --ma-cardgroup-card-padding-block-start: 36px;
+  --ma-cardgroup-card-padding-block-end: 36px;
+  --ma-card-content-padding-block-end: 0;
+  --ma-card-content-padding-block-start: 0;
+  --ma-component-illustration-svg-max-height: 185px;
+  --ma-component-illustration-padding-inline: 24px;
+  --ma-card-content-inline-size: 60%;
   --utrecht-badge-list-item-margin-block: 0.25em;
   --utrecht-badge-list-item-margin-inline: 0.25em;
 }
 
-.component-card--suggestion {
+.ma-component-card--suggestion {
   --utrecht-heading-color: #333;
 }
 
-.component-name {
+.ma-component-name {
   text-transform: lowercase;
 }
 
-.component-card .utrecht-badge-list {
+.ma-component-card .utrecht-badge-list {
   margin-block-start: 12px;
 }
 
 @media screen and (width <= 768px) {
-  .component-card {
-    --component-illustration-svg-max-height: none;
-    --cardgroup-card-max-width: 400px;
-    --card-content-inline-size: 100%;
+  .ma-component-card {
+    --ma-component-illustration-svg-max-height: none;
+    --ma-cardgroup-card-max-width: 400px;
+    --ma-card-content-inline-size: 100%;
   }
 }

@@ -26,6 +26,15 @@ Om te voorkomen dat hackers controle kunnen krijgen over de software releases va
 
 Op deze manier stopt de GitHub Action wanneer in de dependencies een npm package is gevonden, waarvan inmiddels bekend is dat het onveilig kan zijn.
 
+:::info[Goed om te weten]
+Op dit moment (april 2026) zijn er problemen met `pnpm audit`; om precies te zijn, het onderliggende npm audit endpoint kan een foutmelding teruggeven ("This endpoint is being retired").
+Het is onduidelijk hoe lang dit gaat spelen.
+Deze melding krijg je bij gebruik van pnpm v10.
+Mocht het voorkomen, dan kun je in de audit stap gebruik maken van pnpm v11.
+Hiervoor moet in GitHub de `ENABLE_PNPM_AUDIT_V11` op `1` worden gezet.
+Een beheerder kan dit op repository- of organisatieniveau voor je instellen.
+:::
+
 ## Snel ingrijpen
 
 Wanneer een security vulnerability bekend wordt, zoals [SHA1-Hulud](https://snyk.io/blog/sha1-hulud-npm-supply-chain-incident/), wil je snel kunnen ingrijpen en voorkomen dat de kwaadaardige npm package wordt geïnstalleerd op een plek waar gevoelige "environment secrets" uit kunnen lekken.

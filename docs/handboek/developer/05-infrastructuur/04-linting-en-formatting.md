@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Linting en code formatting
 pagination_label: Linting en code formatting
 description: Linting en formatting van code
-slug: /linting-en-code-formatting
+slug: /linting-en-code-formatting/
 keywords:
   - lint
   - eslint
@@ -80,7 +80,7 @@ Voor NL Design System wordt onder andere bijgehouden dat de licentie op [EUPL](h
 
 ## Automatisering
 
-### Automatisering met husky en lint-staged {#lint-staged}
+### Automatisering met husky en lint-staged \{#lint-staged\}
 
 We gebruiken **husky** in combinatie met **lint‑staged** om deze checks uit te voeren vóórdat code wordt gecommit.
 

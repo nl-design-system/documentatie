@@ -1,0 +1,53 @@
+---
+title: Form Field Status
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Form Field Status
+pagination_label: Form Field Status
+description: Statusmelding over de waarde van een formulierveld, bijvoorbeeld of deze voldoet aan de eisen of het aantal resterende tekens.
+slug: /form-field-status
+keywords:
+  - character count
+  - character counter
+  - karakter teller
+  - text limit
+  - password strength indicator
+  - wachtwoord sterkte
+  - requirement
+  - requirement status
+  - checklist
+  - field status
+  - form field status
+  - feedback
+  - field feedback
+  - helper status
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+} from "@site/src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Form Field Status";
+export const description = "Statusmelding over de waarde van een formulierveld, bijvoorbeeld of deze voldoet aan de eisen of het aantal resterende tekens.";
+export const issueNumber = 425;
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Community implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+<HelpImproveComponent component={component} headingLevel={2} />

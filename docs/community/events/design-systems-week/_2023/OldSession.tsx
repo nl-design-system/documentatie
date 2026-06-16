@@ -33,22 +33,22 @@ export const OldSession = ({
   speakers,
   videoId,
 }: PropsWithChildren<OldSessionProps>) => (
-  <article className={clsx('dsw-session')} id={title.toLowerCase().replace(/\s/gi, '-')}>
-    <Heading level={headingLevel} className="dsw-session__title">
+  <article className={clsx('ma-dsw-session')} id={title.toLowerCase().replace(/\s/gi, '-')}>
+    <Heading level={headingLevel} className="ma-dsw-session__title">
       {title}
     </Heading>
-    <Paragraph className="dsw-session__subtitle" lead>
+    <Paragraph className="ma-dsw-session__subtitle" lead>
       {speakers
         .map((speaker) => (speaker.organisation ? `${speaker.name} - ${speaker.organisation}` : speaker.name))
         .join(' & ')}
     </Paragraph>
     {videoId ? <VideoPlayer id={videoId} title={title} style={{ marginBlock: '20px' }} /> : <></>}
     {children}
-    <aside className={clsx('dsw-session__speakers')}>
+    <aside className={clsx('ma-dsw-session__speakers')}>
       {speakers.map((speaker, index) => (
-        <div key={index} className={clsx('dsw-session__speaker', 'dsw-speaker')}>
-          <img className={clsx('dsw-speaker__image')} src={speaker.image.src} alt={speaker.image.alt} />
-          <Paragraph className={clsx('dsw-speaker__description')}>{speaker.description['nl']}</Paragraph>
+        <div key={index} className={clsx('ma-dsw-session__speaker', 'ma-dsw-speaker')}>
+          <img className={clsx('ma-dsw-speaker__image')} src={speaker.image.src} alt={speaker.image.alt} />
+          <Paragraph className={clsx('ma-dsw-speaker__description')}>{speaker.description['nl']}</Paragraph>
         </div>
       ))}
     </aside>
