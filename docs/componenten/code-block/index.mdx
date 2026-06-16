@@ -56,6 +56,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
@@ -77,7 +78,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 Gebruik de [Code](/code) component als de code in een regel met andere tekst staat.
 :::
 
-<Card className="implementation-card">
+<Card className="ma-implementation-card">
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
@@ -146,3 +147,5 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
