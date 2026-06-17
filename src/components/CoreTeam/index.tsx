@@ -27,9 +27,11 @@ export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
                 </Heading>
                 <Paragraph className={clsx('ma-core-team__heading-subtitle')}>{role}</Paragraph>
               </HeadingGroup>
-              <div className={clsx('ma-core-team__description')}>
-                <Description />
-              </div>
+              {Description && (
+                <div className={clsx('ma-core-team__description')}>
+                  <Description />
+                </div>
+              )}
 
               <Paragraph>
                 Slack: <Link href={`https://codefornl.slack.com/team/${slack.id}`}>{slack.mention}</Link>
