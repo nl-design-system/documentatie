@@ -5,9 +5,11 @@ Zorg ervoor dat deze informatie ook meteen beschikbaar is voor bezoekers die een
 
 Dit kun je op verschillende manieren doen:
 
-- Door de rol `alert` te gebruiken. Deze rol gebruik je voor foutmeldingen en waarschuwingen. De melding wordt dan direct voorgelezen. Dit onderbreekt een screenreader in het voorlezen van de tekst die op dat moment wordt voorgelezen.
-- Door de rol `status` te gebruiken. Deze rol gebruik je voor statusupdates, zoals succesmeldingen. De melding wordt dan voorgelezen zodra de screenreader klaar is met het voorlezen van de tekst die op dat moment wordt voorgelezen.
+- Door de rol `alert` te gebruiken. Deze live-region rol gebruik je voor foutmeldingen en waarschuwingen. De melding wordt dan direct voorgelezen. Dit onderbreekt een screenreader in het voorlezen van de tekst die op dat moment wordt voorgelezen.
+- Door de rol `status` te gebruiken. Deze live-region rol gebruik je voor statusupdates, zoals succesmeldingen. De melding wordt dan voorgelezen zodra de screenreader klaar is met het voorlezen van de tekst die op dat moment wordt voorgelezen.
 - Door de toetsenbordfocus naar de Alert te verplaatsen. De melding wordt dan direct voorgelezen. Dit onderbreekt een screenreader in het voorlezen van de tekst die op dat moment wordt voorgelezen.
+
+Vermijd het dubbel voorlezen van de melding door een [screenreader](/woordenlijst/#:~:text=Nederlandstalige%20WCAG%20definitie-,Screenreader,-screen%20reader). Verplaats niet de focus naar de Alert als de Alert ook al een live-region is.
 
 Kies de methode die het beste aansluit bij de aard van de melding.
 
