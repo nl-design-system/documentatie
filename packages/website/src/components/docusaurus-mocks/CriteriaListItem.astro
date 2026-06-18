@@ -1,16 +1,18 @@
 ---
+import { Card } from '@components/card/card';
+import { UnorderedList } from '@components/unordered-list/unordered-list';
 const { title, sc, status } = Astro.props;
 ---
 
-<article>
-  <dl>
-    <dt>title:</dt>
-    <dd>{title}</dd>
-    <dt>sc:</dt>
-    <dd>{sc}</dd>
-    <dt>status:</dt>
-    <dd>{status}</dd>
-  </dl>
+<UnorderedList.Item>
+  <Card heading={title}>
+    <dl>
+      <dt>sc:</dt>
+      <dd>{sc}</dd>
+      <dt>status:</dt>
+      <dd>{status}</dd>
+    </dl>
 
-  <slot />
-</article>
+    <slot />
+  </Card>
+</UnorderedList.Item>
