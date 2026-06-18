@@ -9,6 +9,12 @@
   --ma-layout-overview-side-nav-max-inline-size: 300px;
   --ma-layout-overview-min-inline-size: 220px;
 
+  --ma-layout-overview-content-max-inline-size: var(--basis-page-max-inline-size);
+  --ma-layout-overview-content-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-layout-overview-content-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-layout-overview-content-padding-block-end: var(--basis-space-block-6xl);
+  --ma-layout-overview-content-padding-block-start: var(--basis-space-block-xl);
+
   container: ma-layout-overview / inline-size;
   inline-size: 100%;
 }
@@ -16,11 +22,18 @@
 .ma-layout-overview__content {
   display: grid;
   grid-template-areas:
-    ". side-nav ."
-    ". breadcrumb-nav ."
-    ". body .";
-  grid-template-columns: var(--basis-space-inline-2xl) 1fr var(--basis-space-inline-2xl);
+    "side-nav"
+    "breadcrumb-nav"
+    "body";
   inline-size: 100%;
+
+  margin-inline: auto;
+  max-inline-size: var(--ma-layout-overview-content-max-inline-size);
+  box-sizing: border-box;
+  padding-inline-end: var(--ma-layout-overview-content-padding-inline-end);
+  padding-inline-start: var(--ma-layout-overview-content-padding-inline-start);
+  padding-block-end: var(--ma-layout-overview-content-padding-block-end);
+  padding-block-start: var(--ma-layout-overview-content-padding-block-start);
 }
 
 .ma-layout-overview__side-nav {
@@ -28,6 +41,7 @@
   inset-block-start: 0;
   inset-inline-start: 0;
   position: absolute;
+  display: none;
 }
 
 .ma-layout-overview__breadcrumb-nav {
@@ -53,15 +67,13 @@
 @container ma-layout-overview (width >= 768px) {
   .ma-layout-overview__content {
     grid-template-areas:
-      ". breadcrumb-nav ."
-      ". body . ";
+      "breadcrumb-nav"
+      "body";
     grid-template-columns:
-      /* gutter */
-      var(--basis-space-inline-2xl)
-      /* page body */
-      minmax(var(--ma-layout-overview-min-inline-size), var(--basis-page-max-inline-size))
-      /* gutter */
-      var(--basis-space-inline-2xl);
+      /* page body */ minmax(
+      var(--ma-layout-overview-min-inline-size),
+      var(--basis-page-max-inline-size)
+    );
     grid-template-rows: auto 1fr;
   }
 }
@@ -73,14 +85,13 @@
 @container ma-layout-overview (width >= 1140px) {
   .ma-layout-overview__side-nav {
     position: relative;
+    display: block;
   }
   .ma-layout-overview__content {
     grid-template-areas:
-      ". side-nav . breadcrumb-nav . "
-      ". side-nav . body . ";
+      "side-nav . breadcrumb-nav"
+      "side-nav . body";
     grid-template-columns:
-      /* empty column to center page */
-      1fr
       /* side-nav */
       minmax(var(--ma-layout-overview-side-nav-min-inline-size), var(--ma-layout-overview-side-nav-max-inline-size))
       /* side-nav gutter */
@@ -89,9 +100,8 @@
       minmax(
         var(--ma-layout-overview-min-inline-size),
         calc(var(--basis-page-max-inline-size) + var(--ma-layout-detail-side-nav-max-inline-size))
-      )
-      /* empty column to center page */
-      minmax(var(--ma-layout-overview-side-nav-max-inline-size), 1fr);
+      );
+
     grid-template-rows: auto 1fr;
   }
 }

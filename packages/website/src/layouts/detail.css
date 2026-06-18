@@ -9,6 +9,12 @@
   --ma-layout-detail-side-nav-max-inline-size: 300px;
   --ma-layout-detail-min-inline-size: 220px;
 
+  --ma-layout-detail-content-max-inline-size: var(--basis-page-max-inline-size);
+  --ma-layout-detail-content-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-layout-detail-content-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-layout-detail-content-padding-block-end: var(--basis-space-block-6xl);
+  --ma-layout-detail-content-padding-block-start: var(--basis-space-block-xl);
+
   container: ma-layout-detail / inline-size;
   inline-size: 100%;
 }
@@ -16,13 +22,20 @@
 .ma-layout-detail__content {
   display: grid;
   grid-template-areas:
-    ". side-nav ."
-    ". breadcrumb-nav ."
-    ". header ."
-    ". anchor-nav ."
-    ". content .";
-  grid-template-columns: var(--basis-space-inline-2xl) 1fr var(--basis-space-inline-2xl);
+    "side-nav"
+    "breadcrumb-nav"
+    "header"
+    "anchor-nav"
+    "body";
   inline-size: 100%;
+
+  margin-inline: auto;
+  max-inline-size: var(--ma-layout-detail-content-max-inline-size);
+  box-sizing: border-box;
+  padding-inline-end: var(--ma-layout-detail-content-padding-inline-end);
+  padding-inline-start: var(--ma-layout-detail-content-padding-inline-start);
+  padding-block-end: var(--ma-layout-detail-content-padding-block-end);
+  padding-block-start: var(--ma-layout-detail-content-padding-block-start);
 }
 
 .ma-layout-detail__side-nav {
@@ -30,6 +43,7 @@
   inset-block-start: 0;
   inset-inline-start: 0;
   position: absolute;
+  display: none;
 }
 
 .ma-layout-detail__breadcrumb-nav {
@@ -38,6 +52,11 @@
 
 .ma-layout-detail__header {
   grid-area: header;
+  .ams-grid__cell {
+    display: flex;
+    flex-direction: column;
+    gap: var(--basis-space-row-xl);
+  }
 }
 
 .ma-layout-detail__anchor-nav {
@@ -59,17 +78,10 @@
 @container ma-layout-detail (width >= 768px) {
   .ma-layout-detail__content {
     grid-template-areas:
-      ". breadcrumb-nav ."
-      ". header ."
-      ". anchor-nav ."
-      ". body . ";
-    grid-template-columns:
-      /* gutter */
-      var(--basis-space-inline-2xl)
-      /* page body */
-      minmax(var(--ma-layout-detail-min-inline-size), var(--basis-page-max-inline-size))
-      /* gutter */
-      var(--basis-space-inline-2xl);
+      "breadcrumb-nav"
+      "header"
+      "anchor-nav"
+      "body ";
     grid-template-rows: auto auto auto 1fr;
   }
 }
@@ -81,23 +93,22 @@
 @container ma-layout-detail (width >= 1140px) {
   .ma-layout-detail__side-nav {
     position: relative;
+    display: block;
   }
 
   .ma-layout-detail__content {
     grid-template-areas:
-      "side-nav . breadcrumb-nav . "
-      "side-nav . header . "
-      "side-nav . anchor-nav . "
-      "side-nav . body . ";
+      "side-nav . breadcrumb-nav"
+      "side-nav . header"
+      "side-nav . anchor-nav"
+      "side-nav . body";
     grid-template-columns:
       /* side-nav */
       minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
       /* side-nav gutter */
       var(--basis-space-inline-2xl)
       /* page body */
-      minmax(var(--ma-layout-detail-min-inline-size), var(--basis-page-max-inline-size))
-      /* anchor-nav gutter */
-      var(--basis-space-inline-2xl);
+      min(100vw, var(--basis-page-max-inline-size));
     grid-template-rows: auto auto auto 1fr;
   }
 }
@@ -114,12 +125,10 @@
 
   .ma-layout-detail__content {
     grid-template-areas:
-      ". side-nav . breadcrumb-nav . anchor-nav ."
-      ". side-nav . header . anchor-nav ."
-      ". side-nav . body . anchor-nav . ";
+      "side-nav . breadcrumb-nav breadcrumb-nav breadcrumb-nav"
+      "side-nav . header . anchor-nav"
+      "side-nav . body . anchor-nav";
     grid-template-columns:
-      /* empty column to center page */
-      1fr
       /* side-nav */
       minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
       /* side-nav gutter */
@@ -129,9 +138,7 @@
       /* anchor-nav gutter */
       var(--basis-space-inline-2xl)
       /* anchor-nav */
-      minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
-      /* empty column to center page */
-      1fr;
+      minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size));
     grid-template-rows: auto auto 1fr;
   }
 }
