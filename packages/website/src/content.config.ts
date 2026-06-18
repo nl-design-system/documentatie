@@ -106,7 +106,7 @@ const docs = defineCollection({
     ],
     generateId,
   }),
-  schema,
+  schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
 });
 
 const components = defineCollection({

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
+import OverviewLayout from '@layouts/overview.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
 import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
 import { isNavigationGroup } from 'src/navigation';
@@ -25,9 +26,10 @@ const navigationElement = getNavigationElement(navigationList, Astro.url.pathnam
 const navigationGroup = isNavigationGroup(navigationElement) ? navigationElement : navigationElement?.parent;
 
 const components = await MDXComponents({ navigationItems: navigationGroup?.items });
+const Layout = page.data?.page_layout === 'overview' ? OverviewLayout : DetailLayout;
 ---
 
-<DetailLayout
+<Layout
   title={page.data.title}
   titleSm={page.data.title_sm}
   description={page.data.description}
@@ -42,4 +44,4 @@ const components = await MDXComponents({ navigationItems: navigationGroup?.items
       <Content components={components} />
     </Grid.Cell>
   </Grid>
-</DetailLayout>
+</Layout>
