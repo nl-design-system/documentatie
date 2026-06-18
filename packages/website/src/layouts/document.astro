@@ -19,6 +19,8 @@ import '@fontsource/source-sans-pro';
 import '@fontsource/source-sans-pro/700.css';
 import '@utrecht/root-css/dist/index.css';
 
+import '../../src/styles/missing-tokens.css';
+
 export interface Props {
   title: string;
   titleSm?: string;
@@ -137,25 +139,6 @@ const footerNavigationItems = [
     --ma-layout-detail-side-nav-min-inline-size: 100px;
     --ma-layout-detail-side-nav-max-inline-size: 300px;
     --ma-layout-detail-min-inline-size: 220px;
-
-    --utrecht-page-body-content-max-inline-size: calc(
-      var(--ma-layout-detail-side-nav-max-inline-size) + var(--ma-max-content-inline-size) +
-        var(--ma-layout-detail-side-nav-max-inline-size)
-    ) !important;
-
-    --utrecht-page-header-content-max-inline-size: calc(
-      var(--ma-layout-detail-side-nav-max-inline-size) + var(--ma-max-content-inline-size) +
-        var(--ma-layout-detail-side-nav-max-inline-size)
-    ) !important;
-    --utrecht-nav-bar-content-max-inline-size: calc(
-      var(--ma-layout-detail-side-nav-max-inline-size) + var(--ma-max-content-inline-size) +
-        var(--ma-layout-detail-side-nav-max-inline-size)
-    ) !important;
-
-    --utrecht-page-footer-content-max-inline-size: calc(
-      var(--ma-layout-detail-side-nav-max-inline-size) + var(--ma-max-content-inline-size) +
-        var(--ma-layout-detail-side-nav-max-inline-size)
-    ) !important;
   }
 
   .utrecht-nav-list__link {
