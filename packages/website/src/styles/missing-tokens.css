@@ -6,14 +6,12 @@
   --denhaag-icon-button-color: var(--basis-color-action-2-color-default);
   --ams-unordered-list-gap: var(--basis-space-row-lg);
   --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-xl);
-
   --rhc-card-heading-font-size: var(--basis-text-font-size-lg);
   --rhc-card-background-color: var(--basis-color-default-bg-document);
   --rhc-card-border-color: var(--basis-color-default-border-subtle);
   --rhc-card-border-width: var(--basis-border-width-sm);
   --rhc-card-border-radius: var(--basis-border-radius-md);
   --rhc-card-row-gap: var(--basis-space-row-sm);
-
   --rhc-card-padding-block-end: var(--basis-space-block-3xl);
   --rhc-card-padding-block-start: var(--basis-space-block-xl);
   --rhc-card-padding-inline-end: var(--basis-space-inline-xl);
@@ -45,21 +43,20 @@
 }
 
 .denhaag-side-navigation__link {
-  /* denhaag.side-navigation.link.padding-inline-start */
-  padding-inline-start: var(--basis-space-inline-xl);
-
   /* denhaag.side-navigation.link.padding-inline-end */
   padding-inline-end: var(--basis-space-inline-xl);
+
+  /* denhaag.side-navigation.link.padding-inline-start */
+  padding-inline-start: var(--basis-space-inline-xl);
 }
 
 .denhaag-side-navigation__link--current {
+  /* denhaag.side-navigation.link.current.border-color */
+  border-color: var(--basis-color-accent-1-border-default);
   border-inline-start-style: solid;
 
   /* denhaag.side-navigation.link.current.border-inline-start.width */
   border-inline-start-width: var(--basis-border-width-lg);
-
-  /* denhaag.side-navigation.link.current.border-color */
-  border-color: var(--basis-color-accent-1-border-default);
 }
 
 .denhaag-side-navigation__link:hover {
@@ -93,9 +90,9 @@
   /* denhaag.side-navigation.expand-button.focus.background-color */
   background-color: var(--basis-focus-background-color);
 
-  /* denhaag.side-navigation.expand-button.focus.color */
-  color: var(--basis-focus-color);
-
   /* denhaag.side-navigation.expand-button.focus.border */
   border: var(--denhaag-focus-border);
+
+  /* denhaag.side-navigation.expand-button.focus.color */
+  color: var(--basis-focus-color);
 }
