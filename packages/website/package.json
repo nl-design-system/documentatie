@@ -32,6 +32,7 @@
     "@gemeente-denhaag/side-navigation": "4.1.0",
     "@nl-design-system-candidate/button-css": "1.1.0",
     "@nl-design-system-candidate/button-react": "1.1.0",
+    "@nl-design-system-candidate/heading-css": "1.1.3",
     "@nl-design-system-candidate/heading-react": "1.1.7",
     "@nl-design-system-candidate/link-css": "2.0.3",
     "@nl-design-system-candidate/link-react": "1.1.8",
