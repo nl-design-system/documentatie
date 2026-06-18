@@ -127,7 +127,7 @@ export const component = [
     tags: ['developer'],
   },
   {
-    title: 'De Alert heeft standaard de rol van status of alert.',
+    title: 'Het is mogelijk om van de Alert een live-region te maken.',
     sc: '4.1.3',
     status: '',
     component: Wcag413NLDSAlert,
