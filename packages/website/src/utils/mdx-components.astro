@@ -8,6 +8,7 @@ import CriteriaListItem from '@components/docusaurus-mocks/CriteriaListItem.astr
 import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
 import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
+import { Link } from '@components/link/link';
 import { Image } from '@components/img/img';
 
 export const MDXComponents = async ({ navigationItems } = {}) => {
@@ -27,6 +28,7 @@ export const MDXComponents = async ({ navigationItems } = {}) => {
     h5: Heading5,
     h6: Heading6,
     p: Paragraph,
+    a: Link,
     img: (props) => Image({ width: '100%', ...props }),
   };
 };
