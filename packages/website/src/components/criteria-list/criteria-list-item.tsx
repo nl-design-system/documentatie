@@ -1,10 +1,19 @@
+import type { ReactNode } from 'react';
 import { Card } from '../card/card';
 import { UnorderedList } from '../unordered-list/unordered-list';
 
-export const CriteriaListItem = ({ title, sc, status, children }) => {
+interface CriteriaListItemProps {
+  title: string;
+  sc: string;
+  status: string;
+  children: ReactNode;
+  headingLevel: 1 | 2 | 3 | 4 | 5 | 6;
+}
+
+export const CriteriaListItem = ({ title, sc, status, children, headingLevel = 4 }: CriteriaListItemProps) => {
   return (
     <UnorderedList.Item>
-      <Card heading={title} headingLevel={3}>
+      <Card heading={title} headingLevel={headingLevel}>
         <dl>
           <dt>sc:</dt>
           <dd>{sc}</dd>

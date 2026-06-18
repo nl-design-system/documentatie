@@ -5,6 +5,10 @@
 
   .utrecht-accordion__section[open] .nl-button__icon-start {
     rotate: 180deg;
+
+    :dir(rtl) & {
+      rotate: -180deg;
+    }
   }
 
   .utrecht-accordion__header {
@@ -15,6 +19,10 @@
 
       flex: 1;
       justify-content: start;
+    }
+
+    .nl-button__label {
+      margin-block: 0;
     }
   }
 }
