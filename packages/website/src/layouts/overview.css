@@ -69,11 +69,7 @@
     grid-template-areas:
       "breadcrumb-nav"
       "body";
-    grid-template-columns:
-      /* page body */ minmax(
-      var(--ma-layout-overview-min-inline-size),
-      var(--basis-page-max-inline-size)
-    );
+    grid-template-columns: minmax(var(--ma-layout-overview-min-inline-size), var(--basis-page-max-inline-size));
     grid-template-rows: auto 1fr;
   }
 }

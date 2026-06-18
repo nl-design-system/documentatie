@@ -48,21 +48,6 @@ const placeholderTitle = '(geen paginatitel)';
       <h1>NL Design System gerenderd met Astro</h1>
     </Grid.Cell>
   </Grid>
-  <Grid className="section">
-    <Grid.Cell span="all">
-      <p>Section</p>
-    </Grid.Cell>
-  </Grid>
-
-  <Grid>
-    <Grid.Cell span={6}>
-      <div class="blokje">Blokje</div>
-    </Grid.Cell>
-
-    <Grid.Cell span={6}>
-      <div class="blokje">Blokje</div>
-    </Grid.Cell>
-  </Grid>
 
   <Grid>
     <Grid.Cell span="all">
@@ -94,25 +79,3 @@ const placeholderTitle = '(geen paginatitel)';
     </Grid.Cell>
   </Grid>
 </CenterColumnLayout>
-
-<style is:global>
-  .section {
-    position: relative;
-    z-index: 0;
-  }
-  .section::before {
-    content: '';
-    display: block;
-    position: absolute;
-    inline-size: 200vw;
-    block-size: 100%;
-    left: 50%;
-    translate: -50%;
-    background-color: hotpink;
-    z-index: -1;
-  }
-  .blokje {
-    background-color: rebeccapurple;
-    color: white;
-  }
-</style>

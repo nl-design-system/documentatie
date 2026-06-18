@@ -108,7 +108,7 @@
       /* side-nav gutter */
       var(--basis-space-inline-2xl)
       /* page body */
-      min(100vw, var(--basis-page-max-inline-size));
+      1fr;
     grid-template-rows: auto auto auto 1fr;
   }
 }
