@@ -35,7 +35,7 @@ const { ...props } = Astro.props;
             <BreadcrumbNav>
               {breadcrumbPath.map((item, index, list) => (
                 <>
-                  <BreadcrumbNavLink href={item.href || ''} disabled={!item.href}>
+                  <BreadcrumbNavLink index={index} href={item.href || ''} disabled={!item.href}>
                     {item.label}
                   </BreadcrumbNavLink>
                   {index < list.length - 1 ? (
