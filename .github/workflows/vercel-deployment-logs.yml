@@ -45,20 +45,23 @@ jobs:
         shell: bash
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          DEPLOYMENT_NAME: ${{ steps.vercel.outputs.deployment_name }}
+          DEPLOYMENT_URL: ${{ steps.vercel.outputs.deployment_url }}
         run: |
-          FILENAME="vercel-deployment-logs-${{ steps.vercel.outputs.deployment_name }}.json"
+          FILENAME="vercel-deployment-logs-${DEPLOYMENT_NAME}.json"
           echo "filename=${FILENAME}" >> "${GITHUB_OUTPUT}"
           curl --fail --show-error --silent \
             --header "Authorization: Bearer ${VERCEL_TOKEN}" \
             --header "Accept: application/json" \
-            "https://api.vercel.com/v3/deployments/${{ steps.vercel.outputs.deployment_url }}/events?follow=0&limit=-1" \
+            "https://api.vercel.com/v3/deployments/${DEPLOYMENT_URL}/events?follow=0&limit=-1" \
             --output "${FILENAME}"
 
       - name: Convert Vercel deployment logs to text
         id: convert_logs
         shell: bash
+        env:
+          JSON_FILENAME: ${{ steps.fetch_logs.outputs.filename }}
         run: |
-          JSON_FILENAME="${{ steps.fetch_logs.outputs.filename }}"
           FILENAME="${JSON_FILENAME%.json}.txt"
           echo "filename=${FILENAME}" >> "${GITHUB_OUTPUT}"
           jq -r '
