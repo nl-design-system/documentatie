@@ -285,8 +285,8 @@ importers:
         specifier: 10.3.10
         version: 10.3.10(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/document-css':
-        specifier: 1.5.1
-        version: 1.5.1
+        specifier: 3.0.0
+        version: 3.0.0
       '@utrecht/page-layout-react':
         specifier: 1.0.9
         version: 1.0.9(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4895,11 +4895,11 @@ packages:
   '@utrecht/digid-button-css@1.4.2':
     resolution: {integrity: sha512-lE0/KipLVHaxb7YeZC3YPqSiSaDVyCkzSWmxLjs8k5ghzId8WI4vG8P42716gDBh9tsfdX0kRcVFdh5KerSiyw==}
 
-  '@utrecht/document-css@1.5.1':
-    resolution: {integrity: sha512-ZXE4qzk0/MCxphcoqjgNooOcMxobR0JzqvpuZllNvtYgMcL1NMLCZ0KIj1dpQsUruLjO+bqGNYsF52McqUBi5g==}
-
   '@utrecht/document-css@2.0.1':
     resolution: {integrity: sha512-j4KLusBIGqB6SQocBtGSm5zHfCY4nvwG5gxzh3kOLdPuLGj6scaUxN3AahJi1cO/o2ciOyFxBbDYk0LJVq1Mdg==}
+
+  '@utrecht/document-css@3.0.0':
+    resolution: {integrity: sha512-CMOuUNMW9BJoi8XpZyT2FnyWW6MlanykyN2vfi0f/s6GRpWHWc4Qe5vO+eNnEpY1XaXOcfjAbfQO3EDo93N8+A==}
 
   '@utrecht/drawer-css@2.0.1':
     resolution: {integrity: sha512-4YysV31TmYGK8mLIF0ZLnUsc7j+02TylXJVZrMDQzisasEUbh8FXhHNbGTyZxlmGaFfjMtblCldp/UnsLkFH2Q==}
@@ -17644,9 +17644,9 @@ snapshots:
 
   '@utrecht/digid-button-css@1.4.2': {}
 
-  '@utrecht/document-css@1.5.1': {}
-
   '@utrecht/document-css@2.0.1': {}
+
+  '@utrecht/document-css@3.0.0': {}
 
   '@utrecht/drawer-css@2.0.1': {}
 
