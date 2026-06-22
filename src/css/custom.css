@@ -90,23 +90,7 @@
   --nlds-navbar-link-active-border-color: white;
   --nlds-sidebar-menu-item-active-border-color: white;
   --nlds-code-block-background-color: #011627;
-  --nlds-status-help-wanted-subtle-background-color: var(--ma-color-oranje-2);
-  --nlds-status-help-wanted-background-color: var(--ma-color-oranje-3);
-  --nlds-status-help-wanted-border-color: var(--ma-color-oranje-5);
-  --nlds-status-help-wanted-color: var(--ma-color-oranje-12);
-  --nlds-status-community-subtle-background-color: var(--ma-color-paars-2);
-  --nlds-status-community-background-color: var(--ma-color-paars-3);
-  --nlds-status-community-border-color: var(--ma-color-paars-5);
-  --nlds-status-community-color: var(--ma-color-paars-12);
-  --nlds-status-candidate-subtle-background-color: var(--ma-color-blauw-2);
-  --nlds-status-candidate-background-color: var(--ma-color-blauw-3);
-  --nlds-status-candidate-border-color: var(--ma-color-blauw-5);
-  --nlds-status-candidate-color: var(--ma-color-blauw-12);
-  --nlds-status-hall-of-fame-subtle-background-color: var(--ma-color-groen-2);
-  --nlds-status-hall-of-fame-background-color: var(--ma-color-groen-3);
-  --nlds-status-hall-of-fame-border-color: var(--ma-color-groen-5);
-  --nlds-status-hall-of-fame-color: var(--ma-color-groen-12);
-  --nlds-status-border-color: var(--ma-color-paars-12);
+  --nlds-status-border-color: currentColor;
 
   /* Override pixel values from Figma */
   --utrecht-heading-1-line-height: 1.1;
@@ -188,6 +172,10 @@ p {
   hyphens: none;
   max-inline-size: 38rem;
   word-break: normal;
+}
+
+.utrecht-button-link .utrecht-icon {
+  color: currentColor;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
