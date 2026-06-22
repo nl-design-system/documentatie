@@ -237,8 +237,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nl-design-system-community/ma-design-tokens':
-        specifier: 2.5.0
-        version: 2.5.0
+        specifier: 5.4.0
+        version: 5.4.0
       '@nl-design-system-unstable/basis-design-tokens':
         specifier: 3.1.1
         version: 3.1.1
@@ -275,6 +275,9 @@ importers:
       '@types/unist':
         specifier: 3.0.3
         version: 3.0.3
+      '@utrecht/badge-list-css':
+        specifier: 4.0.1
+        version: 4.0.1
       '@utrecht/card-react':
         specifier: 0.0.4
         version: 0.0.4(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -284,6 +287,9 @@ importers:
       '@utrecht/component-library-react':
         specifier: 10.3.10
         version: 10.3.10(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/data-badge-css':
+        specifier: 3.0.1
+        version: 3.0.1
       '@utrecht/document-css':
         specifier: 1.5.1
         version: 1.5.1
@@ -485,8 +491,8 @@ importers:
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-community/ma-design-tokens':
-        specifier: 5.2.0
-        version: 5.2.0
+        specifier: 5.4.0
+        version: 5.4.0
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
@@ -3665,11 +3671,8 @@ packages:
   '@nl-design-system-community/editor@1.3.1':
     resolution: {integrity: sha512-PeMjFnhnaDa+vhgLsheYxfQizMc2MsQcmYaLsVvfdOzMxZ0HIQK+bswAlLNj1a14uPNRSS/SEVxz+fB0Udj0sw==}
 
-  '@nl-design-system-community/ma-design-tokens@2.5.0':
-    resolution: {integrity: sha512-3TYzzbo0C5br42SiS6jISScUL7u4hxgDvU2DZVBv6gJ40jBZPpXIgLI1T/JESQj79+nY2AddGm6l8xg2o2WLFA==}
-
-  '@nl-design-system-community/ma-design-tokens@5.2.0':
-    resolution: {integrity: sha512-QUtNjFjmWgIivCIiO6frPqZnImieO4K5TkQJmxhiFUFJPfJUId/zeFc56vHx5V1VMi7yPyLWTS1vlNGALPV0iQ==}
+  '@nl-design-system-community/ma-design-tokens@5.4.0':
+    resolution: {integrity: sha512-qby2c6NEJmEMvWwjl3gtoPOEes4K+HRz1dyfVvC7WeIHKVgtXPkydJp2BT8lUcN5JnrftDx2ghI2Ky+VqCW/gQ==}
 
   '@nl-design-system-community/ma-task-list-css@0.0.3':
     resolution: {integrity: sha512-v87Cf65wWxtSSb4yhICFei/SppKJ79ozNaVov/4NGcbQ2U4eo8EFg3swP8GP83PM+QzC5AuUWQLjtK9D2hzXQA==}
@@ -4667,6 +4670,9 @@ packages:
   '@utrecht/badge-list-css@3.0.1':
     resolution: {integrity: sha512-ujhscNHXxliZ/DZHa6xitpDArF+S32b6baP8erRbAo7SiP90aFw+3zQ7Uj0d5IAMXMCOOiTrRp8q9GWTAMRy+Q==}
 
+  '@utrecht/badge-list-css@4.0.1':
+    resolution: {integrity: sha512-wCRVTeajocYKBTTSTnophwGkxitA914Uvnlj3Kzj9YMBc04mz4/g0MFIUqm7T9sj2jZzVlMFVkSmo1qZA2Rn0A==}
+
   '@utrecht/badge-status-css@2.0.1':
     resolution: {integrity: sha512-PRIpMVRokVEdUZ02tmER/a4Nw2SvwyjNGe/APFNiJrVeFeGKPh33OkkJ331XOxDVpXJ3htnvDaqxu6aSjbLc9g==}
 
@@ -4875,6 +4881,9 @@ packages:
 
   '@utrecht/data-badge-css@2.0.1':
     resolution: {integrity: sha512-UMisFH+47SvLFKicA+Em9el8ksyfoO2UtNZHODSL6qf+Bb33QQhGHnnBvcuKg1LTtiK1YdjHxVlnk05wCuFSqQ==}
+
+  '@utrecht/data-badge-css@3.0.1':
+    resolution: {integrity: sha512-5yODQeXL/wPfQUW0wnw15HLGa2N1ESZrf7fIZRAeIPq9kqOrOp3TEyjlQtv7qPCRdvP03P49CW7hsf1L1s7grw==}
 
   '@utrecht/data-badge-react@1.0.7':
     resolution: {integrity: sha512-+RLDmI1tWBIloMA2Qt1bROOfXgssfu5H2mKKO5RWwqkFRtGXsvvUyLYv1TFaLYQCRZFzGjXjwVN97zrbIUaPFg==}
@@ -16106,9 +16115,7 @@ snapshots:
       lit: 3.3.1
       prosemirror-model: 1.25.4
 
-  '@nl-design-system-community/ma-design-tokens@2.5.0': {}
-
-  '@nl-design-system-community/ma-design-tokens@5.2.0': {}
+  '@nl-design-system-community/ma-design-tokens@5.4.0': {}
 
   '@nl-design-system-community/ma-task-list-css@0.0.3': {}
 
@@ -17147,6 +17154,8 @@ snapshots:
 
   '@utrecht/badge-list-css@3.0.1': {}
 
+  '@utrecht/badge-list-css@4.0.1': {}
+
   '@utrecht/badge-status-css@2.0.1': {}
 
   '@utrecht/blockquote-css@2.0.1': {}
@@ -17627,6 +17636,8 @@ snapshots:
   '@utrecht/custom-checkbox-css@2.0.1': {}
 
   '@utrecht/data-badge-css@2.0.1': {}
+
+  '@utrecht/data-badge-css@3.0.1': {}
 
   '@utrecht/data-badge-react@1.0.7(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
