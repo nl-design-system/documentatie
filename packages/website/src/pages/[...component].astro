@@ -7,6 +7,7 @@ import { MDXComponents } from '@utils/mdx-components.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
+import '../../../../src/components/ComponentPage.css';
 
 export async function getStaticPaths() {
   const components = await getCollection('components');

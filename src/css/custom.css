@@ -145,6 +145,12 @@
   --utrecht-link-text-underline-offset: 4px !important;
   --ifm-footer-link-horizontal-spacing: 20px;
 
+  /* ma-design-tokens used in Astro */
+  --nl-button-padding-block-end: var(--basis-space-block-md);
+  --nl-button-padding-block-start: var(--basis-space-block-md);
+  --nl-button-padding-inline-end: var(--basis-space-inline-md);
+  --nl-button-padding-inline-start: var(--basis-space-inline-md);
+
   font-size-adjust: 0.5;
 
   /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
