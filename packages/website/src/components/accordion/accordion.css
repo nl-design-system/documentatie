@@ -28,5 +28,12 @@
     .nl-heading {
       color: inherit;
     }
+
+    &:focus-visible {
+      .nl-button {
+        background-color: var(--basis-focus-background-color);
+        color: var(--basis-focus-color);
+      }
+    }
   }
 }
