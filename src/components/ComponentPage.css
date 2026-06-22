@@ -1,31 +1,105 @@
 .ma-definition-of-done {
   --utrecht-heading-3-margin-block-end: 0;
+  --nl-button-subtle-border-width: 0;
 
   fill: var(--utrecht-accordion-button-color);
 }
 
 .ma-definition-of-done--help-wanted {
-  --utrecht-accordion-button-background-color: var(--nlds-status-help-wanted-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-help-wanted-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-help-wanted-background-color);
+  --nl-button-subtle-background-color: var(
+    --ma-color-help-wanted-bg-default,
+    var(--nlds-status-help-wanted-background-color)
+  );
+  --nl-button-subtle-color: var(--ma-color-help-wanted-color-default, var(--nlds-status-help-wanted-color));
+  --nl-button-subtle-hover-background-color: var(
+    --ma-color-help-wanted-bg-hover,
+    var(--nlds-status-help-wanted-subtle-background-color)
+  );
+  --nl-button-subtle-hover-color: var(--ma-color-help-wanted-color-hover, var(--nlds-status-help-wanted-subtle-color));
+  --nl-button-subtle-active-background-color: var(
+    --ma-color-help-wanted-bg-active,
+    var(--nlds-status-help-wanted-subtle-background-color)
+  );
+  --nl-button-subtle-active-color: var(
+    --ma-color-help-wanted-color-active,
+    var(--nlds-status-help-wanted-subtle-color)
+  );
+  --utrecht-accordion-panel-border-color: var(
+    --ma-color-help-wanted-bg-default,
+    var(--nlds-status-help-wanted-background-color)
+  );
 }
 
 .ma-definition-of-done--community {
-  --utrecht-accordion-button-background-color: var(--nlds-status-community-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-community-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-community-background-color);
+  --nl-button-subtle-background-color: var(
+    --ma-color-community-bg-default,
+    var(--nlds-status-community-background-color)
+  );
+  --nl-button-subtle-color: var(--ma-color-community-color-default, var(--nlds-status-community-color));
+  --nl-button-subtle-hover-background-color: var(
+    --ma-color-community-bg-hover,
+    var(--nlds-status-community-subtle-background-color)
+  );
+  --nl-button-subtle-hover-color: var(--ma-color-community-color-hover, var(--nlds-status-community-subtle-color));
+  --nl-button-subtle-active-background-color: var(
+    --ma-color-community-bg-active,
+    var(--nlds-status-community-subtle-background-color)
+  );
+  --nl-button-subtle-active-color: var(--ma-color-community-color-active, var(--nlds-status-community-subtle-color));
+  --utrecht-accordion-panel-border-color: var(
+    --ma-color-community-bg-default,
+    var(--nlds-status-community-background-color)
+  );
 }
 
 .ma-definition-of-done--candidate {
-  --utrecht-accordion-button-background-color: var(--nlds-status-candidate-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-candidate-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-candidate-background-color);
+  --nl-button-subtle-background-color: var(
+    --ma-color-candidate-bg-default,
+    var(--nlds-status-candidate-background-color)
+  );
+  --nl-button-subtle-color: var(--ma-color-candidate-color-default, var(--nlds-status-candidate-color));
+  --nl-button-subtle-hover-background-color: var(
+    --ma-color-candidate-bg-hover,
+    var(--nlds-status-candidate-subtle-background-color)
+  );
+  --nl-button-subtle-hover-color: var(--ma-color-candidate-color-hover, var(--nlds-status-candidate-subtle-color));
+  --nl-button-subtle-active-background-color: var(
+    --ma-color-candidate-bg-active,
+    var(--nlds-status-candidate-subtle-background-color)
+  );
+  --nl-button-subtle-active-color: var(--ma-color-candidate-color-active, var(--nlds-status-candidate-subtle-color));
+  --utrecht-accordion-panel-border-color: var(
+    --ma-color-candidate-bg-default,
+    var(--nlds-status-candidate-background-color)
+  );
 }
 
 .ma-definition-of-done--hall-of-fame {
-  --utrecht-accordion-button-background-color: var(--nlds-status-hall-of-fame-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-hall-of-fame-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-hall-of-fame-background-color);
+  --nl-button-subtle-background-color: var(
+    --ma-color-hall-of-fame-bg-default,
+    var(--nlds-status-hall-of-fame-background-color)
+  );
+  --nl-button-subtle-color: var(--ma-color-hall-of-fame-color-default, var(--nlds-status-hall-of-fame-color));
+  --nl-button-subtle-hover-background-color: var(
+    --ma-color-hall-of-fame-bg-hover,
+    var(--nlds-status-hall-of-fame-subtle-background-color)
+  );
+  --nl-button-subtle-hover-color: var(
+    --ma-color-hall-of-fame-color-hover,
+    var(--nlds-status-hall-of-fame-subtle-color)
+  );
+  --nl-button-subtle-active-background-color: var(
+    --ma-color-hall-of-fame-bg-active,
+    var(--nlds-status-hall-of-fame-subtle-background-color)
+  );
+  --nl-button-subtle-active-color: var(
+    --ma-color-hall-of-fame-color-active,
+    var(--nlds-status-hall-of-fame-subtle-color)
+  );
+  --utrecht-accordion-panel-border-color: var(
+    --ma-color-hall-of-fame-bg-default,
+    var(--nlds-status-hall-of-fame-background-color)
+  );
 }
 
 .ma-implementation-card-group {
