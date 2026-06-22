@@ -8,6 +8,7 @@ import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
 import { isNavigationGroup } from 'src/navigation';
 import { navigation } from '../navigation.config';
 import { Grid } from '@components/grid/grid';
+import '../../../../src/components/EstafetteBadge.css';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
