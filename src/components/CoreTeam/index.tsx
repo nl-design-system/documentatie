@@ -9,10 +9,12 @@ import Renate from './Renate';
 import Peter from './Peter';
 import Sandra from './Sandra';
 import Richard from './Richard';
+import Charlotte from './Charlotte';
+import Julia from './Julia';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Renate, Peter, Sandra, Richard];
+const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Renate, Peter, Sandra, Richard, Charlotte, Julia];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
@@ -27,9 +29,11 @@ export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
                 </Heading>
                 <Paragraph className={clsx('ma-core-team__heading-subtitle')}>{role}</Paragraph>
               </HeadingGroup>
-              <div className={clsx('ma-core-team__description')}>
-                <Description />
-              </div>
+              {Description && (
+                <div className={clsx('ma-core-team__description')}>
+                  <Description />
+                </div>
+              )}
 
               <Paragraph>
                 Slack: <Link href={`https://codefornl.slack.com/team/${slack.id}`}>{slack.mention}</Link>
