@@ -5,25 +5,31 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.1 Gebruik van kleur
 pagination_label: WCAG-succescriterium 1.4.1 Gebruik van kleur
-description: Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.
+description: Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden.
 slug: 1.4.1
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - onderscheidbaar
   - perceivable
   - distinguishable
   - use of color
+  - kleur
+  - kleurgebruik
+  - kleurenblindheid
+  - contrast
+  - WCAG 1.4.1
+  - digitale toegankelijkheid kleur
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.4.1-summary.md";
 
@@ -31,86 +37,388 @@ import Summary from "./summaries/_1.4.1-summary.md";
   {"WCAG-succescriterium 1.4.1 Gebruik van kleur"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-<h2>Gerelateerde NL Design System-richtlijnen</h2>
-
-- Stijl: [Vertrouw niet alleen op kleur](/richtlijnen/stijl/kleuren/niet-kleur-alleen)
-- Formulieren: [Schrijf een duidelijke foutmelding](/richtlijnen/formulieren/foutmeldingen/duidelijk/)
-- Formulieren: [Geef fouten weer met meer dan alleen kleur](/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur)
-- Content: [Kleurgebruik in tekst](/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst).
-
-## Hoe te testen
-
-Bekijk de pagina en controleer of er betekenis aan kleur is gegeven.
-
-Let bijvoorbeeld op:
-
-- het aangeven van foutmeldingen bij formulieren, alleen een rood randje is niet voldoende;
-- de weergave van data in grafieken;
-- de weergave van links in de tekst, deze moet liefst onderstreept zijn;
-- het aangeven van een status (succes, waarschuwing, fout) in een statusmelding, alleen een groene, gele of rode achtergrond is onvoldoende, er moet ook in tekst staan wat de status is;
-- verwijzingen naar kleur in de tekst, bijvoorbeeld 'druk op de groene knop om door te gaan' is voor blinde en kleurenblinde bezoekers een probleem.
-
-Het is voldoende als de informatie ergens anders op de pagina makkelijk vindbaar is en goed wordt uitgelegd, of als de betekenis volgt uit het gebruik of plek van een element. Een link in een menu hoeft bijvoorbeeld niet onderstreept te zijn.
-
-Het kan helpen met testen om de pagina met een grijsfilter te bekijken, zodat alle kleur verdwijnt. Is de inhoud dan nog steeds te begrijpen?
-
-Grijsfilters:
-
-- [Grayscale bookmarklet](https://pauljadam.com/bookmarklets/) van Paul J. Adams
-- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/), app voor iOS en Mac
-- [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter), website waar je door het invoeren van een url de pagina kunt testen.
-
-Ook via de browser kun je de kleur uit een pagina verwijderen:
-
-- Voor Firefox: Open de inspector, kies de "Accessibility"-tab en selecteer bij Simulate Achromatopsia.
-- Voor Chrome: Open de inspector, selecteer de console, klik op de drie puntjes aan de linkerkant, kies Rendering en selecteer helemaal onderaan bij Emulate vision deficiencies "Achromatopsia".
+Er is een belangrijk verschil tussen kleur en contrast. Als het verschil tussen twee kleuren een contrastverhouding heeft van minder dan 3:1, is er sprake van kleurgebruik. Bij een contrastverhouding van 3:1 of hoger is er sprake van contrast. Contrast geldt als een andere manier om informatie over te brengen, dus is dit succescriterium dan niet van toepassing.
 
 ## Veelgemaakte fouten
 
-### Aangeven van een fout met alleen een rood randje
+### Links in lopende tekst zijn alleen door kleur te onderscheiden
 
-Een rood randje rondom een formulierveld dat verplicht is, maar niet is ingevuld, geeft onvoldoende informatie.
-Gebruikers die kleurenblind zijn kunnen deze informatie missen.
-Schrijf daarom ook altijd een duidelijke foutmelding uit in tekst bij een formulierveld.
+Links die niet onderstreept zijn en alleen door kleur verschillen van de omringende tekst, zijn niet voor iedereen herkenbaar. Iemand met kleurenblindheid ziet geen verschil tussen de link en de rest van de tekst.
 
-Meer informatie over foutmeldingen aangeven in onze blogpost over Toegankelijke foutmeldingen in formulieren [Hoe geef ik aan of een vraag niet of niet goed is ingevuld](/blog/toegankelijke-foutmeldingen-formulieren/#hoe-geef-ik-aan-of-een-vraag-niet-of-niet-goed-is-ingevuld).
+**Hoe te testen:** bekijk de pagina en controleer of links in lopende tekst ook zonder kleur herkenbaar zijn, bijvoorbeeld door een onderstreping of vetgedrukt lettertype.
 
-### Weergeven van data in een grafiek door alleen een verschil in kleur te gebruiken
+<Guideline appearance="dont" title="Link alleen door kleur te onderscheiden van de omringende tekst.">
+  <Canvas language="html">
+    {() => (
+      <p>
+        Lees meer over{" "}
+        <a href="#" style={{ color: "#2056a5", textDecoration: "none" }}>
+          de Waddenzee
+        </a>{" "}
+        en haar omgeving.
+      </p>
+    )}
+  </Canvas>
+</Guideline>
 
-Een veelgemaakte fout is het weergeven van data in een grafiek door alleen een verschil in kleur te gebruiken.
-Iemand die slechtziend is of kleurenblind, weet dan niet welk lijntje bij welke data hoort.
+<Guideline appearance="do" title="Link met onderstreping ook zonder kleur herkenbaar.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <p>
+          Lees meer over{" "}
+          <a href="#" style={{ color: "#2056a5", textDecoration: "underline" }}>
+            de Waddenzee
+          </a>{" "}
+          en haar omgeving.
+        </p>
+        <p>
+          Lees meer over{" "}
+          <a
+            href="#"
+            style={{
+              color: "#2056a5",
+              textDecoration: "none",
+              fontWeight: "bold",
+              borderBottom: "1px solid currentColor",
+            }}
+          >
+            de Waddenzee
+          </a>{" "}
+          en haar omgeving.
+        </p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
 
-In de onderstaande afbeelding staan twee grafieken over de populariteit van browsers zien. De eerste grafiek laat de gegevens van de verschillende browsers zien in gekleurde lijntjes. De tweede grafiek is dezelfde grafiek, maar dan in alleen grijstinten, om kleurenblindheid te simuleren. In deze grijze grafiek is het onmogelijk de data goed uit te lezen.
+**Wie kan dit oplossen:** een developer of designer voegt een onderstreping, vetgedrukt lettertype of andere visuele aanduiding toe aan links in lopende tekst.
 
-![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-fout.png)
+### Formuliervelden kleuren rood bij een foutmelding zonder tekst
 
-Hoe moet het dan wel? Gebruik naast kleur ook een andere manier om de data te onderscheiden. Bijvoorbeeld stippeltjes of streepjes.
+Als bij een fout in een invoerveld alleen de rand rood wordt, mist iemand met kleurenblindheid of beperkt gezichtsvermogen de foutmelding. Voeg altijd een tekstuele foutmelding toe die aangeeft wat er mis is.
 
-In onderstaande afbeelding worden de lijntjes weergegeven zodat ze in grijstinten ook goed onderscheidbaar zijn.
-![Twee verschillende weergaven van een grafiek over de populariteit van verschillende webbrowsers, een met gekleurde maar verschillend gestreepte lijntjes en daarnaast dezelfde grafiek in grijstinten.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-goed.png)
+**Hoe te testen:** vul een formulier opzettelijk fout in. Verschijnt er naast een kleurverandering ook een tekstuele foutmelding?
+
+<Guideline appearance="dont" title="Formulierveld kleurt rood bij een fout zonder tekstuele melding.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="email-fout">E-mailadres</label>
+        <input id="email-fout" type="email" style={{ borderColor: "red", display: "block" }} />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Rode rand en een tekstuele foutmelding.">
+  <Canvas language="html">
+    {() => (
+      <>
+        <label htmlFor="email-goed">E-mailadres</label>
+        <input
+          id="email-goed"
+          type="email"
+          aria-describedby="fout-email"
+          aria-invalid="true"
+          style={{ borderColor: "red", display: "block" }}
+        />
+        <p id="fout-email">Vul een geldig e-mailadres in.</p>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een tekstuele foutmelding toe naast de visuele kleurverandering.
+
+### Gekleurde achtergrond als enige manier om categorieën aan te geven
+
+Cellen in een tabel of items in een lijst die alleen een andere achtergrondkleur hebben om ze in categorieën te verdelen, zijn niet voor iedereen te onderscheiden. Voeg een tekstlabel of icoon toe.
+
+**Hoe te testen:** bekijk tabellen en lijsten op de pagina. Wordt er alleen kleur gebruikt om onderscheid te maken, of is er ook tekst of een icoon aanwezig?
+
+<Guideline appearance="dont" title="Alleen kleur geeft de status aan.">
+  <Canvas language="html">
+    {() => (
+      <table>
+        <tbody>
+          <tr>
+            <td>Project B</td>
+            <td style={{ backgroundColor: "green" }}>Project A</td>
+          </tr>
+        </tbody>
+      </table>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Kleur en tekst geven de status aan.">
+  <Canvas language="html">
+    {() => (
+      <table>
+        <tbody>
+          <tr>
+            <td>Aanvraag 1</td>
+            <td style={{ backgroundColor: "green", color: "white" }}>✓ Goedgekeurd</td>
+          </tr>
+          <tr>
+            <td>Aanvraag 2</td>
+            <td style={{ backgroundColor: "red", color: "white" }}>✗ Afgewezen</td>
+          </tr>
+        </tbody>
+      </table>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een designer voegt tekstlabels of iconen toe naast de kleurcodering. Een developer implementeert dit in de code.
+
+### Huidige pagina in het menu alleen in een andere kleur
+
+De actieve pagina in een navigatiemenu die alleen te herkennen is aan een andere tekstkleur, is niet voor iedereen herkenbaar. Voeg een extra visuele aanduiding toe, zoals een onderstreping, een achtergrondkleur met voldoende contrast of een vetgedrukt lettertype.
+
+**Hoe te testen:** bekijk de navigatie. Is de actieve pagina te herkennen zonder op kleur te letten?
+
+<Guideline appearance="dont" title="Actieve pagina alleen in een andere kleur.">
+  <Canvas language="html">
+    {() => (
+      <nav>
+        <ul
+          style={{
+            listStyle: "none",
+            display: "flex",
+            gap: "1rem",
+            padding: 0,
+          }}
+        >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#" style={{ color: "#0066cc", textDecoration: "none" }}>
+              Over ons
+            </a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Actieve pagina met kleur en extra visuele aanduiding.">
+  <Canvas language="html">
+    {() => (
+      <nav>
+        <ul
+          style={{
+            listStyle: "none",
+            display: "flex",
+            gap: "1rem",
+            padding: 0,
+          }}
+        >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a
+              href="#"
+              style={{
+                color: "#0066cc",
+                textDecoration: "none",
+                borderBottom: "3px solid currentColor",
+                fontWeight: "bold",
+              }}
+            >
+              Over ons
+            </a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een designer ontwerpt een extra visuele aanduiding voor de actieve pagina. Een developer past dit toe in de navigatiecomponent.
+
+### Actieve knop in een carrousel alleen in kleur aangegeven
+
+In een carrousel met ronde navigatieknoppen die de slides aangeven, mag de actieve knop niet alleen door kleur verschillen van de overige knoppen. Gebruik ook een andere vorm, een dikkere rand of een groter formaat.
+
+**Hoe te testen:** bekijk de carrousel. Is de actieve slide-indicator te herkennen zonder op kleur te letten?
+
+<Guideline appearance="dont" title="Actieve dot alleen in een andere kleur.">
+  <Canvas language="html">
+    {() => (
+      <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+        <div
+          style={{
+            backgroundColor: "#ccc",
+            borderRadius: "50%",
+            width: "12px",
+            height: "12px",
+          }}
+        ></div>
+        <div
+          style={{
+            backgroundColor: "#0066cc",
+            borderRadius: "50%",
+            width: "12px",
+            height: "12px",
+          }}
+        ></div>
+        <div
+          style={{
+            backgroundColor: "#ccc",
+            borderRadius: "50%",
+            width: "12px",
+            height: "12px",
+          }}
+        ></div>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Actieve dot met kleur en groter formaat.">
+  <Canvas language="html">
+    {() => (
+      <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+        <div
+          style={{
+            backgroundColor: "#ccc",
+            borderRadius: "50%",
+            width: "12px",
+            height: "12px",
+          }}
+        ></div>
+        <div
+          style={{
+            backgroundColor: "#0066cc",
+            borderRadius: "50%",
+            width: "16px",
+            height: "16px",
+            border: "2px solid #003d7a",
+          }}
+        ></div>
+        <div
+          style={{
+            backgroundColor: "#ccc",
+            borderRadius: "50%",
+            width: "12px",
+            height: "12px",
+          }}
+        ></div>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een designer ontwerpt een niet-kleurafhankelijk verschil voor de actieve indicator. Een developer past dit toe.
+
+### Focusrand gebruikt alleen kleur
+
+Als een focusrand minder dan 3:1 contrast heeft met de achtergrond, wordt alleen kleur gebruikt om toetsenbordfocus aan te geven. Dat is onvoldoende voor bezoekers met een visuele beperking of kleurenblindheid.
+
+**Hoe te testen:** beweeg met <kbd>Tab</kbd> door de pagina. Is de focusrand duidelijk zichtbaar, ook zonder op kleur te letten?
+
+<Guideline appearance="dont" title="Focusrand met onvoldoende contrast.">
+  <Canvas language="html">
+    {() => <button style={{ outline: "2px solid #99ccff", outlineOffset: "2px" }}>Klik mij</button>}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Contrastrijke focusrand.">
+  <Canvas language="html">
+    {() => <button style={{ outline: "2px solid #0066cc", outlineOffset: "2px" }}>Klik mij</button>}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer past de focusstijl aan zodat de focusrand voldoende contrast heeft (minimaal 3:1).
+
+### Data in een grafiek alleen door kleur te onderscheiden
+
+Lijnen of vlakken in een grafiek die alleen een andere kleur hebben, zijn voor mensen met kleurenblindheid niet te onderscheiden. Gebruik naast kleur ook een ander visueel kenmerk, zoals streepjes, stippellijnen of symbolen. Bied bij complexe grafieken ook een tabel aan met dezelfde data.
+
+**Hoe te testen:** bekijk de grafiek in zwart-wit (gebruik een grijsfilter). Zijn de datareeksen nog steeds te onderscheiden?
+
+![Twee verschillende weergaven van een grafiek, een fout voorbeeld](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-fout.png)
+
+Gebruik naast kleur ook vorm om de data te onderscheiden, zoals stippeltjes of streepjes.
+
+![Twee verschillende weergaven van een grafiek, een goed voorbeeld.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag-1-4-1-grafiek-goed.png)
 
 De data browsergebruik komt van [statcounter.com](https://gs.statcounter.com/browser-market-share#monthly-200901-202412).
+
+**Wie kan dit oplossen:** een designer kiest naast kleur ook patronen, stippellijnen of symbolen voor datareeksen. Een developer implementeert dit in de grafiek.
+
+### Legenda bij een kaart gebruikt alleen kleur
+
+In een legenda mag je niet uitsluitend kleur gebruiken om gebieden op een kaart te onderscheiden. Voeg naast kleur ook patronen, arceringen of labels toe.
+
+**Hoe te testen:** bekijk de kaart in zwart-wit. Is het onderscheid tussen de gebieden nog steeds duidelijk?
+
+**Wie kan dit oplossen:** een designer voegt patronen, arceringen of labels toe aan de legenda. Een developer implementeert dit.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Bekijk de pagina en let op plekken waar kleur informatie overbrengt. Bijvoorbeeld links, foutmeldingen, grafieken, statusindicatoren en navigatiemenu's.
+2. Stel jezelf de vraag: als ik geen kleuren kon zien, zou ik dezelfde informatie dan nog steeds begrijpen?
+3. Bekijk de pagina met een grijsfilter. Is alle informatie nog steeds te begrijpen?
+4. Controleer of links in lopende tekst onderstreept of op een andere manier dan alleen kleur te onderscheiden zijn.
+5. Controleer of foutmeldingen bij formuliervelden ook als tekst zichtbaar zijn.
+
+### Voor developers
+
+1. Gebruik een kleurenblindheidsimulator in je browser:
+   - Firefox: open de inspector, kies de tab <span lang="en">"Accessibility"</span> en selecteer bij <span lang="en">"Simulate"</span> de optie <span lang="en">"Achromatopsia"</span>.
+   - Chrome: open de inspector, open de console via de drie puntjes linksboven, kies <span lang="en">"Rendering"</span> en selecteer onder <span lang="en">"Emulate vision deficiencies"</span> de optie <span lang="en">"Achromatopsia"</span>.
+2. Controleer links in lopende tekst. Zoek in je CSS naar links met `text-decoration: none` zonder een alternatieve visuele aanduiding.
+3. Controleer formuliervalidatie. Wordt een fout alleen met een rode rand aangegeven? Zoek naar `border-color: red` of vergelijkbare stijlen zonder bijbehorende tekstuele foutmelding.
+4. Controleer grafieken en diagrammen. Zijn de datareeksen alleen door kleur te onderscheiden, of ook door vorm, patroon of label?
+5. Controleer navigatiemenu's. Is de actieve pagina alleen door kleur te herkennen?
+6. Gebruik axe DevTools of WAVE voor een eerste scan. De meeste kleurproblemen vereisen handmatige controle.
+
+## Gerelateerde succescriteria
+
+- [1.3.1 Info en relaties](/wcag/1.3.1/): informatie die visueel met kleur wordt gegeven, moet ook programmatisch beschikbaar zijn.
+- [1.3.3 Zintuiglijke eigenschappen](/wcag/1.3.3/): verwijs niet alleen naar kleur in instructies.
+- [1.4.3 Contrast (minimum)](/wcag/1.4.3/): tekst moet voldoende contrasteren met de achtergrond.
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): grafische elementen en interface-onderdelen moeten voldoende contrast hebben.
+- [4.1.2 Naam, rol, waarde](/wcag/4.1.2/): als de status van een interactief element visueel zichtbaar is, moet die informatie ook beschikbaar zijn voor screenreadergebruikers.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Stijl: [Vertrouw niet alleen op kleur](/richtlijnen/stijl/kleuren/niet-kleur-alleen).
+- Formulieren: [Schrijf een duidelijke foutmelding](/richtlijnen/formulieren/foutmeldingen/duidelijk/).
+- Formulieren: [Geef fouten weer met meer dan alleen kleur](/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur).
+- Content: [Kleurgebruik in tekst](/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst).
+
+## Relevante bronnen
+
+- [Grayscale bookmarklet](https://pauljadam.com/bookmarklets/): bookmarklet om een pagina in grijswaarden te bekijken (Paul J. Adam, Engels).
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/): app om kleurenblindheid te simuleren (iOS en macOS, Engels).
+- [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter): website om een URL te testen op kleurenblindheid (Toptal, Engels).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## W3C referenties
+## W3C-referenties
 
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.4.1 Use of color</span>](https://www.w3.org/TR/WCAG22/#use-of-color).
-- Nederlandse vertaling van het WCAG-succescriterium: [1.4.1 Gebruik van kleur](https://www.w3.org/Translations/WCAG22-nl/#use-of-color).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.1 Use of color</span>](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.1 Use of color</span>](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- [WCAG 2.2: Succescriterium 1.4.1 Gebruik van kleur](https://www.w3.org/Translations/WCAG22-nl/#use-of-color): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 1.4.1: Use of Color</span>](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 1.4.1 Use of Color</span>](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color): snelreferentie met technieken (Engels).
 
 ## Help richtlijn verbeteren
 
