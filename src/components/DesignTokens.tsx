@@ -59,6 +59,15 @@ export function DesignTokens({ tokens }: Props) {
 
   return (
     <>
+      <ActionGroup>
+        <CopyButton content={jsonString} language="json">
+          Kopieer als JSON
+        </CopyButton>
+        <CopyButton content={cssCustomPropertiesString} language="css">
+          Kopieer als CSS
+        </CopyButton>
+      </ActionGroup>
+
       <Table>
         <TableHeader>
           <TableRow>
@@ -88,15 +97,6 @@ export function DesignTokens({ tokens }: Props) {
           })}
         </TableBody>
       </Table>
-
-      <ActionGroup>
-        <CopyButton content={jsonString} language="json">
-          Kopieer als JSON
-        </CopyButton>
-        <CopyButton content={cssCustomPropertiesString} language="css">
-          Kopieer als CSS
-        </CopyButton>
-      </ActionGroup>
     </>
   );
 }
