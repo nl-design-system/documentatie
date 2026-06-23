@@ -5,25 +5,29 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.4 Linkdoel (in context)
 pagination_label: WCAG-succescriterium 2.4.4 Linkdoel (in context)
-description: De linktekst vertelt aan de gebruiker waar de link naar toe gaat (het linkdoel).
+description: Het doel van elke link moet duidelijk zijn uit de linktekst zelf, of uit de linktekst samen met de directe context eromheen.
 slug: 2.4.4
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - bedienbaar
   - navigeerbaar
   - operable
   - navigable
-  - link purpose (in context)
+  - link purpose
+  - linkdoel
+  - linktekst
+  - toegankelijke link
+  - screenreader
+  - lees meer
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.4.4-summary.md";
 
@@ -31,140 +35,477 @@ import Summary from "./summaries/_2.4.4-summary.md";
   {"WCAG-succescriterium 2.4.4 Linkdoel (in context)"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-**Let op**: Een linktekst wordt voor dit succescriterium niet afgekeurd als de betekenis voor alle gebruikers onduidelijk is. Wat natuurlijk niet wegneemt dat dit voor iedereen een slechte gebruikerservaring is.
+De "context" die mag meetellen is beperkt tot elementen die in code een directe relatie hebben met de link:
 
-Een eenduidige tekst is belangrijk voor alle gebruikers, zodat ze goed weten wat er gebeurt bij het aanklikken van een link. Gebruikers van [screenreaders](/woordenlijst/#screenreader) kunnen een lijst van alle links op een pagina oproepen en zo snel door de website navigeren, maar dan moeten de linkteksten wel onderscheidbaar zijn.
+- Een zin of alinea waarin de link staat:
+  `<p>Op onze <a href="#">website</a> lees je meer over ...</p>`
+- Een lijstitem:
+  `<ul><li>De tweede reden om <a href="#">ons boek</a> te lezen is ...</li></ul>`
+- Een tabelcel (`<td>` of `<th>`):
+  `<table><tr><td>Het leukste <a href="#">evenement</a> dit jaar was ...</td></tr></table>`
 
-Het kan overduidelijk zijn waar een link heen gaat, maar soms is meer context nodig. Zijn er veel links met dezelfde linktekst op een pagina? Maak dan onderscheid tussen de linktekst door het toevoegen van meer informatie.
+Relaties tussen elementen die alleen visueel duidelijk zijn, tellen niet mee. Bijvoorbeeld de positie op de pagina of een afbeelding naast de link. Dit valt niet onder linkcontext:
 
-Voor ziende gebruikers kan duidelijk zijn waar een "Lees meer" link naar toe gaat, als deze linktekst onder een korte samenvatting staat. Om het voor screenreadergebruikers ook duidelijk te maken waar de link naar toe gaat kan er extra tekst worden toegevoegd die onzichtbaar, maar wel hoorbaar is.
+- Een kop waar de link onder staat.
+- Een alinea die boven een link staat.
+- Containers zoals `<article>`, `<section>`, `<div>`.
 
-Dit kan door gebruik te maken van CSS-classes zoals .sr-only, [.visually-hidden](https://getbootstrap.com/docs/5.3/getting-started/accessibility/#visually-hidden-content) of [.screen-reader-text](https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/).
+Er is een uitzondering: als het doel van de link voor iedereen onduidelijk zou zijn, ook voor ziende bezoekers, dan is het geen fout onder dit succescriterium.
 
-In code:
+## Veelgemaakte fouten
+
+### "Lees meer" als linktekst
+
+Dit is de meest voorkomende fout. "Lees meer" zegt niets over de bestemming van de link. Iemand die met een screenreader de linkslijst van een pagina doorloopt, hoort tien keer "Lees meer" zonder te weten waar elke link naartoe gaat.
+
+**Hoe te testen:** open de linkslijst in een screenreader en controleer of elke linktekst op zichzelf begrijpelijk is.
+
+<Guideline appearance="dont" title="'Lees meer' als linktekst zonder context.">
 
 ```html
-<a href="url">Lees meer<span class="sr-only"> over warmtepompen</a>.
+<p>We hebben een nieuw retourbeleid.</p>
+<a href="/retourbeleid">Lees meer</a>.
 ```
 
-Of door het toevoegen van een `aria-label` aan de link.
+</Guideline>
 
-In code:
+<Guideline appearance="do" title="Linktekst met context in dezelfde zin.">
 
 ```html
-<a href="url" aria-label="Lees meer over warmtepompen">Lees meer</a>.
+<p><a href="/retourbeleid">Lees meer</a> over de retourvoorwaarden.</p>
 ```
 
-Ook in tekstparagrafen is een duidelijke linktekst belangrijk. Vergelijk de scanbaarheid en duidelijkheid van de volgende twee voorbeelden.
+</Guideline>
 
-- [Klik hier](https://nl.wikipedia.org/wiki/Waddenzee) om verder te lezen over de Waddenzee.
-- Lees verder over [de Waddenzee](https://nl.wikipedia.org/wiki/Waddenzee).
+**Wie kan dit oplossen:** een contentmaker schrijft een beschrijvende linktekst. Een developer plaatst de link in de juiste context.
 
-‘Klik hier’ is de slechtste linktekst die er is. Alle gebruikers moeten eerst de hele zin lezen om te weten waar de link naar toe gaat. Specifiek voor gebruikers met een screenreader die een lijst van links opvragen is het zeer onduidelijk als er één of meer keer ‘Klik hier’ in die lijst staat. De linktekst ‘de Waddenzee’ voor een link naar informatie over de Waddenzee werkt juist heel goed. De linktekst schept hier een verwachting die goed aansluit bij het linkdoel.
-Vermijd ook het linken van een hele URL, zoals in 'Lees verder op [https://nl.wikipedia.org/wiki/Waddenzee](https://nl.wikipedia.org/wiki/Waddenzee)'.
+### Afbeelding als link zonder alt-tekst die het doel beschrijft
 
-In de blogpost [<span lang="en">The perfect link</span>](https://www.a11y-collective.com/blog/the-perfect-link/) staan uitgebreid voorbeelden en toepassingen van goede linkteksten.
+Als een link alleen een afbeelding bevat en die afbeelding geen alt-tekst heeft, dan heeft de link geen toegankelijke naam. Een screenreader leest dan de URL voor, of helemaal niets.
+
+**Hoe te testen:** inspecteer de link in de Accessibility Tree. Heeft de link een toegankelijke naam die het doel beschrijft?
+
+<Guideline appearance="dont" title="Afbeelding als link zonder alt-tekst.">
+
+```html
+<a href="/winkelwagen">
+  <img src="cart-icon.svg" />
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="dont" title="Alt-tekst beschrijft de afbeelding in plaats van het linkdoel.">
+
+```html
+<a href="/winkelwagen">
+  <img src="cart-icon.svg" alt="Icoon van een winkelwagen" />
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Alt-tekst beschrijft het linkdoel.">
+
+```html
+<a href="/winkelwagen">
+  <img src="cart-icon.svg" alt="Winkelwagen" />
+</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een alt-tekst toe die het linkdoel beschrijft.
+
+### Link opent in een nieuw venster zonder indicatie
+
+Als een link in een nieuw venster opent (`target="_blank"`), moeten alle bezoekers dat weten. Een icoontje alleen is niet voldoende: geef de informatie ook door aan hulpsoftware.
+
+**Hoe te testen:** zoek in de code naar `target="_blank"`. Staat er in de linktekst of via visueel verborgen tekst dat de link in een nieuw venster opent?
+
+<Guideline appearance="dont" title="Link opent in nieuw venster zonder indicatie.">
+
+```html
+<a href="https://extern.nl/artikel" target="_blank">
+  <svg aria-hidden="true" class="icoon-extern"></svg>
+  Lees het artikel
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Informatie over nieuw venster in de linktekst.">
+
+```html
+<a href="https://extern.nl/artikel" target="_blank">
+  <svg aria-hidden="true" class="icoon-extern"></svg>
+  Lees het artikel (opent in nieuw venster)
+</a>
+
+<!-- Of met visueel verborgen tekst: -->
+<a href="https://extern.nl/artikel" target="_blank">
+  Lees het artikel
+  <span class="sr-only">(opent in nieuw venster)</span>
+  <svg aria-hidden="true" class="icoon-extern"></svg>
+</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt "(opent in nieuw venster)" toe aan de linktekst of als visueel verborgen tekst.
+
+### Hele alinea of groot blok als link
+
+Als je een heel tekstblok klikbaar maakt, leest de screenreader de volledige tekst als linktekst voor. Dat is onnodig lang en maakt het lastig om snel te begrijpen wat de link doet.
+
+**Hoe te testen:** inspecteer de toegankelijke naam van de link. Is die onnodig lang?
+
+<Guideline appearance="dont" title="Hele alinea als link.">
+
+```html
+<a href="/product/jas">
+  <p>
+    Deze prachtige winterjas is gemaakt van gerecycled materiaal en houdt je warm tot -20 graden. Verkrijgbaar in drie
+    kleuren. Nu met 20% korting.
+  </p>
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Alleen de relevante tekst als link.">
+
+```html
+<p>
+  Deze prachtige <a href="/product/jas">winterjas van gerecycled materiaal</a> houdt je warm tot -20 graden.
+  Verkrijgbaar in drie kleuren. Nu met 20% korting.
+</p>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer beperkt de link tot de relevante tekst.
+
+### Link zonder inhoud of toegankelijke naam
+
+Een lege link heeft geen toegankelijke naam. Bijvoorbeeld een `<a>`-element met alleen een achtergrondafbeelding via CSS, of een leeg element. Een screenreader meldt een link, maar niet waarheen.
+
+**Hoe te testen:** gebruik axe DevTools of WAVE om links zonder toegankelijke naam automatisch te vinden.
+
+<Guideline appearance="dont" title="Lege link zonder toegankelijke naam.">
+
+```html
+<a href="/home" class="logo-link"></a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Link met visueel verborgen tekst voor screenreaders.">
+
+```html
+<a href="/home" class="logo-link">
+  <span class="sr-only">Acme company</span>
+</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt visueel verborgen tekst of een `aria-label` toe.
+
+### Linktekst verborgen voor hulpsoftware
+
+Als je linktekst verbergt met `display: none` of `visibility: hidden`, dan is die tekst ook onzichtbaar voor screenreaders. De link heeft dan geen inhoud en dus geen linkdoel.
+
+**Hoe te testen:** inspecteer de link in de Accessibility Tree. Heeft de link een toegankelijke naam?
+
+<Guideline appearance="dont" title="Linktekst verborgen met display:none.">
+
+```html
+<a href="/acties">
+  <span style="display: none">Bekijk onze acties</span>
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Visueel verborgen maar beschikbaar voor screenreaders.">
+
+```html
+<a href="/acties">
+  <span class="sr-only">Bekijk onze acties</span>
+</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer gebruikt een `sr-only`-class in plaats van `display: none`.
+
+### Paginering zonder beschrijvende linktekst
+
+Als paginering alleen uit cijfers bestaat zonder verdere context, is het linkdoel onduidelijk. "1", "2", "3" zegt niets als je niet weet dat het om pagina's gaat.
+
+**Hoe te testen:** open de linkslijst in een screenreader. Zijn de pagineringlinks begrijpelijk?
+
+<Guideline appearance="dont" title="Paginering met alleen cijfers zonder context.">
+
+```html
+<ul>
+  <li>
+    <a href="?pagina=1">1</a>
+  </li>
+  <li>
+    <a href="?pagina=2">2</a>
+  </li>
+  <li>
+    <a href="?pagina=3">3</a>
+  </li>
+</ul>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Paginering met aria-labels.">
+
+```html
+<nav aria-label="Paginering">
+  <ul>
+    <li>
+      <a href="?pagina=1" aria-label="Pagina 1">1</a>
+    </li>
+    <li>
+      <a href="?pagina=2" aria-label="Pagina 2">2</a>
+    </li>
+    <li>
+      <a href="?pagina=3" aria-label="Pagina 3">3</a>
+    </li>
+  </ul>
+</nav>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `aria-label` toe aan de pagineringlinks.
+
+### Linktekst bestaat uit een enkel teken
+
+Een losse letter of icoon als linktekst maakt het linkdoel niet duidelijk. Dit zie je bijvoorbeeld bij knoppen met A, A, A om de tekstgrootte aan te passen, of bij social media-iconen.
+
+**Hoe te testen:** controleer of links met een enkel teken een `aria-label` hebben dat het doel beschrijft.
+
+<Guideline appearance="dont" title="Enkele letters als linktekst zonder context.">
+
+```html
+<a href="?size=small">A</a>
+<a href="?size=medium">A</a>
+<a href="?size=large">A</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Letters met duidelijke aria-labels.">
+
+```html
+<a href="?size=small" aria-label="Kleine tekstgrootte">A</a>
+<a href="?size=medium" aria-label="Normale tekstgrootte">A</a>
+<a href="?size=large" aria-label="Grote tekstgrootte">A</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een `aria-label` toe dat het doel beschrijft.
+
+### Linktekst bevat dubbele informatie
+
+Als een link zowel een afbeelding met alt-tekst als zichtbare tekst bevat, voegt de screenreader die samen tot de linktekst. Dat levert dubbelingen op: een screenreader leest dan "Winkelwagen Winkelwagen".
+
+**Hoe te testen:** inspecteer de toegankelijke naam van de link in de Accessibility Tree. Wordt informatie herhaald?
+
+<Guideline appearance="dont" title="Alt-tekst en zichtbare tekst zeggen hetzelfde.">
+
+```html
+<a href="/winkelwagen">
+  <img src="cart.svg" alt="Winkelwagen" />
+  Winkelwagen
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Lege alt zodat alleen de zichtbare tekst meetelt.">
+
+```html
+<a href="/winkelwagen">
+  <img src="cart.svg" alt="" />
+  Winkelwagen
+</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer maakt de alt-tekst leeg (`alt=""`) als er al zichtbare linktekst is.
+
+### Linktekst bevat decoratieve tekens
+
+Tekens als `>` en `>>` leest een screenreader voor als "groter dan". "Lees meer >>" wordt "Lees meer groter dan groter dan". Decoratieve tekens horen niet in de linktekst.
+
+**Hoe te testen:** lees de linktekst voor met een screenreader. Worden er onbedoelde tekens voorgelezen?
+
+<Guideline appearance="dont" title="Decoratieve tekens in de linktekst.">
+
+```html
+<a href="/aanbiedingen">Bekijk aanbiedingen &gt;&gt;</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Decoratief pijltje verborgen voor screenreaders.">
+
+```html
+<a href="/aanbiedingen">Bekijk aanbiedingen</a>
+
+<!-- Of met een decoratief pijltje: -->
+<a href="/aanbiedingen">
+  Bekijk aanbiedingen
+  <span aria-hidden="true"> &rarr;</span>
+</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer verbergt decoratieve tekens met `aria-hidden="true"`.
+
+### Linkcontext is alleen visueel te herkennen
+
+Als een link met "Download" in een tabel staat maar die tabel mist de juiste HTML-markering, dan is de relatie tussen de link en de context niet programmatisch te bepalen.
+
+**Hoe te testen:** controleer of de context van de link beschikbaar is in de Accessibility Tree.
+
+<Guideline appearance="dont" title="Linkcontext alleen visueel herkenbaar door div-opmaak.">
+
+```html
+<div class="rij">
+  <div class="cel">Jaarverslag 2024</div>
+  <div class="cel">
+    <a href="/jaarverslag.pdf">Download</a>
+  </div>
+</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Linkcontext programmatisch te bepalen via echte tabel.">
+
+```html
+<table>
+  <tbody>
+    <tr>
+      <th>Jaarverslag 2024</th>
+      <td>
+        <a href="/jaarverslag.pdf">Download</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer gebruikt de juiste HTML-elementen zodat de context programmatisch bepaalbaar is.
+
+### Link naar een bestand zonder het bestandstype te noemen
+
+Links naar PDF's, Word-documenten, spreadsheets of andere bestanden moeten het bestandstype vermelden. Je bezoekers verwachten een webpagina. Een onverwachte download of een PDF die in de browser opent, is verwarrend.
+
+**Hoe te testen:** controleer of links naar bestanden het bestandstype en bij voorkeur de bestandsgrootte vermelden.
+
+<Guideline appearance="dont" title="Link naar bestand zonder bestandstype.">
+
+```html
+<a href="/voorwaarden.pdf">Algemene voorwaarden</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Bestandstype en -grootte vermeld in de linktekst.">
+
+```html
+<a href="/voorwaarden.pdf">Algemene voorwaarden (PDF, 340 KB)</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker of developer voegt het bestandstype en de grootte toe aan de linktekst.
+
+### URL als zichtbare linktekst
+
+Een kale URL als linktekst is niet informatief. Een screenreader leest de URL karakter voor karakter of als een lange onbegrijpelijke reeks voor.
+
+**Hoe te testen:** zoek op de pagina naar links waarvan de zichtbare tekst een URL is.
+
+<Guideline appearance="dont" title="URL als zichtbare linktekst.">
+
+```html
+<a href="https://www.example.com/rapport-2024.pdf">https://www.example.com/rapport-2024.pdf</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Beschrijvende linktekst.">
+
+```html
+<a href="https://www.example.com/rapport-2024.pdf">Jaarrapport 2024 (PDF, 2,3 MB)</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker vervangt de URL door een beschrijvende linktekst.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Lees alle links op de pagina. Begrijp je waar elke link naartoe gaat, zonder de rest van de tekst te lezen?
+2. Let op links als "Klik hier", "Lees meer", "Meer info", "Hier" en "Dit". Als deze vaak voorkomen, is er waarschijnlijk een probleem.
+3. Controleer of links naar bestanden (PDF, Word) het bestandstype vermelden.
+4. Let op links die in een nieuw venster openen. Staat dat erbij?
+
+### Voor developers
+
+1. Open de Accessibility-tab in DevTools en inspecteer de toegankelijke naam van elke link. Beschrijft die het doel?
+2. Gebruik een screenreader en open de linkslijst. In <span lang="en">VoiceOver</span>: <kbd>VO</kbd>+<kbd>U</kbd>. In NVDA: <kbd>Insert</kbd>+<kbd>F7</kbd>. Controleer of elke link op zichzelf begrijpelijk is.
+3. Zoek in de codebase naar `>Klik hier<`, `>Lees meer<`, `>Meer<`, `>Hier<`.
+4. Controleer alle links die alleen een afbeelding bevatten. Heeft de afbeelding een `alt`-attribuut dat het linkdoel beschrijft?
+5. Zoek naar lege `<a>`-elementen of links met alleen een CSS-achtergrondafbeelding.
+6. Controleer links met `target="_blank"`. Is er een indicatie dat de link in een nieuw venster opent?
+7. Gebruik [axe DevTools](https://www.deque.com/axe/browser-extensions/) of [WAVE](https://wave.webaim.org/) om links zonder toegankelijke naam automatisch te vinden.
+
+## Gerelateerde succescriteria
+
+- [2.4.9 Linkdoel (alleen link)](/wcag/2.4.9/): strengere eis waarbij de linktekst op zichzelf duidelijk moet zijn, zonder context (Niveau AAA).
+- [1.1.1 Niet-tekstuele content](/wcag/1.1.1/): afbeeldingen in links moeten een alt-tekst hebben.
 
 ## Gerelateerde NL Design System-richtlijnen
 
 - Content: [Toegankelijke linkteksten](/richtlijnen/content/tekstopmaak/linkteksten).
 
-## Bronnen
+## Relevante bronnen
 
-- [What is anchor text?](https://yoast.com/what-is-anchor-text/) van Yoast.
-- [Better Link Labels: 4Ss for Encouraging Clicks](https://www.nngroup.com/articles/better-link-labels/) van de Nielsen Norman Group.
-- [8 Secrets of the Perfect Link](https://www.webdesignerdepot.com/2018/07/8-secrets-of-the-perfect-link/) van Web Designer Depot.
-- [Why Your Links Should Never Say “Click Here”](https://www.smashingmagazine.com/2012/06/links-should-never-say-click-here/) van Smashing Magazine.
-- [<span lang="en">The perfect link</span>](https://www.a11y-collective.com/blog/the-perfect-link/) van The A11Y Collective.
+- [The perfect link](https://www.a11y-collective.com/blog/the-perfect-link/): uitgebreide gids over het maken van toegankelijke links (The A11Y Collective, Engels).
+- [Why Your Links Should Never Say "Click Here"](https://www.smashingmagazine.com/2012/06/links-should-never-say-click-here/): waarom "klik hier" een slechte linktekst is (Smashing Magazine, Engels).
+- [Better Link Labels: 4Ss for Encouraging Clicks](https://www.nngroup.com/articles/better-link-labels/): richtlijnen voor effectieve linkteksten (Nielsen Norman Group, Engels).
+- [What is anchor text?](https://yoast.com/what-is-anchor-text/): uitleg over ankertekst en het belang voor toegankelijkheid en SEO (Yoast, Engels).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
+## W3C-referenties
 
-Goede tools voor het controleren voor dit succescriterium:
-
-- De accessibility tree van je browser.
-- Een screenreader, bijvoorbeeld [NVDA voor Windows](https://www.nvaccess.org/download/) of [VoiceOver/Safari](https://support.apple.com/nl-nl/guide/voiceover/welcome/mac) voor MacOS.
-
-Controleer de linkteksten:
-
-- Heeft de link een [toegankelijke naam](/wcag/4.1.2)?
-- Beschrijft de linktekst duidelijk en eenduidig het linkdoel, of kan dit doel uit de omringende content worden begrepen?
-- Is de linktekst en het linkdoel ook door gebruikers van hulpmiddelen te begrijpen?
-
-## Veelgemaakte fouten
-
-### Fout: De hele inhoud van een card/teaser/tile is de linktekst
-
-Om een card/teaser/tile helemaal te linken wordt er een link om de hele inhoud gezet. Dit leidt tot een onleesbare linktekst voor screenreadergebruikers.
-
-```html
-<!-- Foute code, niet gebruiken -->
-<a href="url">
-  <img src="url" alt="Tulpen" />
-  <h3>Wanneer bloeien tulpen?</h3>
-  <p>
-    Op welk moment bloeien tulpen precies en waar kun je de prachtigste tulpenvelden vinden? Ontdek hier alles over de
-    lentepracht van Nederlandse bloemen <span>Lees meer ... </span>
-  </p>
-</a>
-```
-
-De linktekst wordt dan:
-‘Tulpen Wanneer bloeien tulpen? Op welk moment bloeien tulpen precies en waar kun je de prachtigste tulpenvelden vinden? Ontdek hier alles over de lentepracht van Nederlandse bloemen. Lees meer ...’
-
-Deze constructie om een card te linken is een ramp om naar te luisteren met een screenreader.
-
-Mogelijke oplossingen:
-
-Florian Schroiff beschrijft hoe een card aanklikbaar te maken via CSS met een [pseudo-element link overlay](https://www.frontendbbq.com/articles/accessible-teaser). In de YouTube video [What makes an accessible card?](https://www.youtube.com/watch?v=AH2NagMoYYE) onderzoekt Rian Rietveld de manieren om een card zo toegankelijk mogelijk te maken.
-
-### Fout: Verkeerde linktekst voor een link met een afbeelding
-
-Een link naar de voorpagina die een afbeelding van het logo bevat in de header is een bekend patroon.
-Een veel voorkomende fout is bijvoorbeeld de alt-tekst ‘Logo gemeente Voorbeeld’.
-De alt-tekst beschrijft de afbeelding. Maar de alt tekst is hier ook de toegankelijke naam van de link.
-In code:
-
-```html
-<!-- Dit is fout, niet gebruiken -->
-<a href="link-url">
-  <img src="img-url" alt="Logo gemeente Voorbeeld" />
-</a>
-```
-
-De toegankelijke naam van de link is in dit geval de alt-tekst en de linktekst wordt dus ‘Logo gemeente Voorbeeld’.
-Dit is geen goede toegankelijke naam. De naam beschrijft niet waar de link naar toe gaat.
-
-Een goede oplossing is de alt-tekst te wijzigen in ‘Gemeente Voorbeeld logo, naar de homepagina’.
-
-```html
-<a href="link-url">
-  <img src="img-url" alt="Gemeente Voorbeeld logo, naar de homepagina" />
-</a>
-```
-
-Dan vertel je wat er op de afbeelding staat en waar de link naar toe gaat.
-VoiceOver leest dit voor als: ‘Link, afbeelding, Gemeente Voorbeeld logo, naar de voorpagina’.
-
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.4 Link Purpose (In Context)</span>](https://www.w3.org/TR/WCAG22/#link-purpose-in-context).
-- Nederlandse vertaling van het WCAG-succescriterium: [2.4.4 Linkdoel (in context)](https://www.w3.org/Translations/WCAG22-nl//#linkdoel-in-context).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.4 Link Purpose (In Context)</span>](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.4 Link Purpose (In Context)</span>](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- [WCAG 2.2: Succescriterium 2.4.4 Linkdoel (in context)](https://www.w3.org/Translations/WCAG22-nl/#linkdoel-in-context): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 2.4.4: Link Purpose (In Context)</span>](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 2.4.4 Link Purpose (In Context)</span>](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context): snelreferentie met technieken (Engels).
 
 ## Help richtlijn verbeteren
 
