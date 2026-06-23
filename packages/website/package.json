@@ -56,7 +56,8 @@
     "@utrecht/page-body-react": "1.0.11",
     "@utrecht/page-layout-css": "4.0.0",
     "@utrecht/page-layout-react": "1.0.11",
-    "@utrecht/root-css": "4.1.0"
+    "@utrecht/root-css": "4.1.0",
+    "@utrecht/spotlight-section-css": "3.0.2"
   },
   "devDependencies": {
     "@astrojs/mdx": "5.0.4",
@@ -78,6 +79,7 @@
     "cheerio": "1.2.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "remark-custom-header-id": "1.0.0"
+    "remark-custom-header-id": "1.0.0",
+    "remark-directive": "4.0.0"
   }
 }
