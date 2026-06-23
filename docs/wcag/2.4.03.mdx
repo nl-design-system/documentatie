@@ -5,25 +5,32 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.3 Focus volgorde
 pagination_label: WCAG-succescriterium 2.4.3 Focus volgorde
-description: Wanneer een toetsenbordgebruiker binnen de webpagina navigeert, bijvoorbeeld met de Tab-toets, moet de tabvolgorde logisch en voorspelbaar zijn.
+description: Een toetsenbordgebruiker beweegt door de webpagina met bijvoorbeeld de Tab-toets. De volgorde waarin elementen focus krijgen moet logisch en voorspelbaar zijn.
 slug: 2.4.3
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - bedienbaar
   - navigeerbaar
   - operable
   - navigable
   - focus order
+  - focusvolgorde
+  - WCAG focus
+  - toetsenbord
+  - tabindex
+  - focus
+  - dialoogvenster
+  - modal
+  - WCAG 2.4.3
 ---
 
 {/* @license CC0-1.0 */}
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import { Guideline } from "@site/src/components/Guideline";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.4.3-summary.md";
 
@@ -31,17 +38,436 @@ import Summary from "./summaries/_2.4.3-summary.md";
   {"WCAG-succescriterium 2.4.3 Focus volgorde"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-Een voorspelbare focus volgorde is belangrijk voor toetsenbordgebruikers. Zij kunnen dan bijvoorbeeld makkelijker binnen een pagina links of buttons ontdekken of een formulier invullen.
+De focusvolgorde wordt bepaald door de volgorde van elementen in de HTML. Die hoeft niet exact overeen te komen met de visuele weergave, maar wijkt er niet zodanig van af dat het verwarrend wordt.
 
-Zorg ervoor dat de natuurlijke tabvolgorde bij de verschillende resoluties, schermbreedtes en oriëntaties logisch blijft.
+### Wanneer is een afwijkende volgorde acceptabel?
 
-Met het tabindex attribuut kan de volgorde ook specifiek worden ingesteld per element, maar dat raden we af, omdat je dan voor elk element op de pagina zo'n tabindex zou moeten zetten, en het is bijna onmogelijk dat goed te doen, zeker bij verschillende resoluties, schermbreedtes en oriëntaties.
+De focusvolgorde hoeft niet altijd van links naar rechts te lopen. Soms is een andere volgorde logischer. Bijvoorbeeld een navigatiebalk die op desktop de primaire navigatie links toont en de zoekknop rechts. Op mobiel staat de hamburgerknop voor de primaire navigatie rechts bij de duim, en de zoekknop links daarvan. De visuele volgorde op mobiel is dan zoeken-navigatie, maar de tabvolgorde is navigatie-zoeken.
 
-Voor een Nederlandstalige website is leesvolgorde van links naar rechts en van boven naar beneden. Zorg er dan voor dat ook de tabvolgorde van links naar rechts en van boven naar beneden is. Voor bijvoorbeeld Hebreeuws of Arabisch kan deze volgorde anders zijn. Laat de tabvolgorde die van de taalinstelling en [leesrichting](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir) volgen.
+Dat is acceptabel, om drie redenen:
+
+- De tabvolgorde is consistent tussen viewports: de navigatie komt altijd eerst.
+- Het belangrijkste en meestgebruikte onderdeel is als eerste bereikbaar.
+- De volgorde is niet verwarrend voor de bezoeker.
+
+Consistentie tussen viewports kan zwaarder wegen dan de visuele volgorde op één viewport. Zie ook [SC 3.2.3 Consistente navigatie](/wcag/3.2.3/): de navigatie moet op elke pagina in dezelfde relatieve volgorde staan.
+
+Bij twijfel of discussie over wat een logische volgorde is: doe een gebruikerstest. Laat toetsenbordgebruikers de pagina bedienen en observeer waar ze vastlopen. Dat geeft betere antwoorden dan een theoretische discussie.
+
+Bij modal dialoogvensters, zoals een cookiebanner of mobiel menu, verplaatst de focus zich naar het venster zodra het opent en keert terug naar de oorspronkelijke plek zodra het sluit.
+
+## Veelgemaakte fouten
+
+### Focusvolgorde komt niet overeen met de visuele volgorde
+
+De focus verplaatst zich in een logische volgorde die past bij de visuele opbouw van de pagina. Als de visuele layout via CSS afwijkt van de HTML-volgorde, springt de focus onverwacht van de ene sectie naar de andere. Een bezoeker die de sidebar rechts ziet staan, verwacht niet dat de focus daar begint.
+
+Dit gebeurt als CSS-properties als `order`, `flex-direction: row-reverse` of `grid` de visuele volgorde veranderen zonder de HTML aan te passen.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> door de pagina. Volgt de focus de visuele volgorde van links naar rechts, van boven naar beneden? Test ook op smalle schermen: responsive layouts kunnen de visuele volgorde veranderen terwijl de HTML-volgorde gelijk blijft.
+
+**Wie kan dit oplossen:** een developer past de HTML-volgorde aan zodat die overeenkomt met de visuele layout.
+
+### Modal dialoogvenster krijgt geen focus bij openen
+
+Een modal dialoogvenster verschijnt boven de pagina en blokkeert de interactie met de onderliggende content. De focus verplaatst zich naar het venster zodra het opent. Gebeurt dat niet, dan zit de focus nog ergens achter het venster en kan de bezoeker het niet bedienen met het toetsenbord.
+
+Dit geldt voor alle modale elementen: dialoogvensters, <span lang="en">lightboxes</span>, mobiele menu's, cookiebanners en videomodals. Bij een cookiebanner die bij het laden van de pagina verschijnt, gaat de focus direct naar de banner zodat de bezoeker de keuze kan maken.
+
+**Hoe te testen:** open een modal dialoogvenster of laad een pagina met een cookiebanner. Druk op <kbd>Tab</kbd>. Bevindt de focus zich in het venster? Of beweeg je door elementen achter het venster?
+
+<Guideline appearance="dont" title="Modal dialoogvenster openen zonder focus te verplaatsen.">
+
+```javascript
+function openDialog() {
+  document.getElementById("dialog").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Focus verplaatsen naar het modal dialoogvenster bij openen.">
+
+```javascript
+function openDialog() {
+  const dialog = document.getElementById("dialog");
+  dialog.style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+  dialog.querySelector("button, [href], input")?.focus();
+}
+```
+
+</Guideline>
+
+<Guideline appearance="dont" title="Cookiebanner onderaan de HTML, waardoor de focus er pas na de hele pagina naartoe gaat.">
+
+```html
+<header>...</header>
+<main>...</main>
+<footer>...</footer>
+<div class="cookiebanner">
+  <p>Wij gebruiken cookies.</p>
+  <button>Accepteren</button>
+  <button>Weigeren</button>
+</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Cookiebanner bovenaan de HTML of met focusmanagement.">
+
+```html
+<dialog class="cookiebanner" aria-label="Cookiemelding">
+  <p>Wij gebruiken cookies.</p>
+  <button>Accepteren</button>
+  <button>Weigeren</button>
+</dialog>
+<header>...</header>
+<main>...</main>
+<footer>...</footer>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt focusmanagement toe aan de openlogica van het modal dialoogvenster, of plaatst een cookiebanner bovenaan in de HTML.
+
+### Focus verlaat een modal dialoogvenster terwijl het nog open is
+
+Zolang een modal dialoogvenster open is, blijft de focus binnen het venster. Na het laatste interactieve element in het venster springt de focus terug naar het eerste element. Zonder deze zogenoemde <span lang="en">focus trap</span> beweegt de bezoeker door elementen achter het venster die niet zichtbaar of bedienbaar zijn.
+
+**Hoe te testen:** open een dialoogvenster en druk herhaaldelijk op <kbd>Tab</kbd>. Blijft de focus binnen het venster? Druk op <kbd>Escape</kbd>. Sluit het venster?
+
+<Guideline appearance="do" title="Focus vasthouden binnen een modal dialoogvenster met een focus trap.">
+
+```javascript
+function trapFocus(dialog) {
+  const focusableElements = dialog.querySelectorAll(
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+  );
+  const first = focusableElements[0];
+  const last = focusableElements[focusableElements.length - 1];
+
+  dialog.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      sluitDialog();
+      return;
+    }
+    if (e.key !== "Tab") return;
+
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer implementeert een <span lang="en">focus trap</span>. Het HTML-element `<dialog>` regelt dit automatisch.
+
+### Focus keert niet terug na het sluiten van een modal dialoogvenster
+
+Na het sluiten van een modal dialoogvenster keert de focus terug naar de knop die het venster heeft geopend. Gebeurt dat niet, dan belandt de focus op `<body>` en moet de bezoeker opnieuw vanaf het begin door de pagina gaan met <kbd>Tab</kbd>.
+
+**Hoe te testen:** open een dialoogvenster, sluit het en druk op <kbd>Tab</kbd>. Gaat de focus verder vanaf de knop die het venster opende?
+
+<Guideline appearance="dont" title="Focus verdwijnt na het sluiten van een modal dialoogvenster.">
+
+```javascript
+function sluitDialog() {
+  document.getElementById("dialog").style.display = "none";
+  // Focus gaat nergens naartoe en belandt op <body>
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Focus terugzetten naar het trigger-element na het sluiten.">
+
+```javascript
+let triggerElement = null;
+
+function openDialog(trigger) {
+  triggerElement = trigger;
+  document.getElementById("dialog").showModal();
+}
+
+function sluitDialog() {
+  document.getElementById("dialog").close();
+  triggerElement?.focus();
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer slaat het trigger-element op bij het openen en herstelt de focus bij het sluiten.
+
+### Content van een accordion of tabpaneel staat niet direct na de bijbehorende knop
+
+Bij een accordion of tabstructuur staat de content van een geopend paneel direct na de knop die het opent. Zo loopt de focusvolgorde van de knop naar de content van het paneel en daarna naar de volgende knop. Als alle panelen na alle knoppen staan in de HTML, springt de focus eerst door alle knoppen en pas daarna naar de content.
+
+**Hoe te testen:** open een paneel in een accordion en druk op <kbd>Tab</kbd>. Gaat de focus naar de content van dat paneel, of naar de volgende accordionknop?
+
+<Guideline appearance="dont" title="Geopend paneel staat na alle knoppen in de HTML.">
+
+```html
+<button aria-expanded="true" aria-controls="paneel-1">Sectie 1</button>
+<button aria-expanded="false" aria-controls="paneel-2">Sectie 2</button>
+<button aria-expanded="false" aria-controls="paneel-3">Sectie 3</button>
+<div id="paneel-1">
+  <a href="/link-in-paneel-1">Link in paneel 1</a>
+</div>
+<div id="paneel-2" hidden>...</div>
+<div id="paneel-3" hidden>...</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Paneel staat direct na de bijbehorende knop.">
+
+```html
+<button aria-expanded="true" aria-controls="paneel-1">Sectie 1</button>
+<div id="paneel-1" role="region">
+  <a href="/link-in-paneel-1">Link in paneel 1</a>
+</div>
+<button aria-expanded="false" aria-controls="paneel-2">Sectie 2</button>
+<div id="paneel-2" role="region" hidden>...</div>
+<button aria-expanded="false" aria-controls="paneel-3">Sectie 3</button>
+<div id="paneel-3" role="region" hidden>...</div>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer past de HTML-structuur aan.
+
+### Focus gaat niet naar een foutmelding na formuliervalidatie
+
+Na het verzenden van een formulier met fouten verplaatst de focus zich naar de eerste foutmelding of een samenvatting van de fouten. Zo weet de bezoeker direct dat het verzenden niet is gelukt en waar de fouten staan. Blijft de focus op de verzendknop, dan merkt een screenreadergebruiker niet dat er foutmeldingen zijn verschenen.
+
+**Hoe te testen:** verstuur een formulier met bewust lege of fout ingevulde velden. Verplaatst de focus zich naar de foutmelding?
+
+<Guideline appearance="dont" title="Foutmeldingen tonen zonder de focus te verplaatsen.">
+
+```javascript
+function valideerFormulier() {
+  const fouten = vindFouten();
+  if (fouten.length > 0) {
+    toonFoutmeldingen(fouten);
+    // Focus blijft op de verzendknop
+  }
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Focus verplaatsen naar de eerste foutmelding.">
+
+```javascript
+function valideerFormulier() {
+  const fouten = vindFouten();
+  if (fouten.length > 0) {
+    toonFoutmeldingen(fouten);
+    document.querySelector(".foutmelding")?.focus();
+  }
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt focusmanagement toe aan de formuliervalidatie.
+
+### Skiplink verplaatst de focus niet naar de unieke content
+
+Een skiplink brengt de focus direct naar de unieke content van de pagina, voorbij de navigatie. Als de skiplink alleen de pagina scrollt maar de focus niet verplaatst, springt de bezoeker bij de volgende <kbd>Tab</kbd>-druk terug naar de navigatie.
+
+**Hoe te testen:** druk op <kbd>Tab</kbd> om de skiplink te bereiken, activeer hem met <kbd>Enter</kbd> en druk nogmaals op <kbd>Tab</kbd>. Bevindt de focus zich nu in de hoofdcontent?
+
+<Guideline appearance="dont" title="Skiplink verwijst naar een id dat niet overeenkomt met het doelelement.">
+
+```html
+<a href="#main">Ga naar inhoud</a>
+...
+<main id="content">
+  <h1>Paginatitel</h1>
+</main>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Doelelement is focusbaar en het id komt overeen met de skiplink.">
+
+```html
+<a href="#main">Ga naar inhoud</a>
+...
+<main id="main" tabindex="-1">
+  <h1>Paginatitel</h1>
+</main>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `tabindex="-1"` toe aan het eerste element in de unieke content en zorgt dat het `id` overeenkomt met het `href` van de skiplink.
+
+### In-page links verplaatsen de focus niet
+
+Een inhoudsopgave of "scroll naar boven"-link scrollt de pagina naar de juiste plek. De focus verplaatst zich mee, zodat de bezoeker vanaf die plek verder kan navigeren. Zonder focusverplaatsing springt de focus bij de volgende <kbd>Tab</kbd>-druk terug naar de link in de inhoudsopgave.
+
+**Hoe te testen:** klik op een in-page link en druk op <kbd>Tab</kbd>. Gaat de focus verder vanaf het doel van de link, of springt die terug naar de inhoudsopgave?
+
+<Guideline appearance="dont" title="In-page link verwijst naar een heading die niet focusbaar is.">
+
+```html
+<nav>
+  <a href="#sectie-2">Hoofdstuk 2</a>
+</nav>
+...
+<h2 id="sectie-2">Hoofdstuk 2</h2>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Heading is focusbaar met tabindex=-1.">
+
+```html
+<nav>
+  <a href="#sectie-2">Hoofdstuk 2</a>
+</nav>
+...
+<h2 id="sectie-2" tabindex="-1">Hoofdstuk 2</h2>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `tabindex="-1"` toe aan de doelelementen van in-page links.
+
+### Positieve tabindex verstoort de focusvolgorde
+
+De focusvolgorde volgt de HTML-volgorde. Een positieve `tabindex` (zoals `tabindex="1"` of `tabindex="2"`) haalt elementen uit die natuurlijke volgorde: ze krijgen altijd als eerste focus, ongeacht hun positie op de pagina. Het resultaat is een onvoorspelbare focusvolgorde.
+
+**Hoe te testen:** zoek in de broncode naar `tabindex` met een waarde hoger dan 0. Elk voorkomen is een risico.
+
+<Guideline appearance="dont" title="Positieve tabindex verstoort de focusvolgorde van de hele pagina.">
+
+```html
+<nav>
+  <a href="/">Home</a>
+  <a href="/over-ons">Over ons</a>
+</nav>
+<main>
+  <input tabindex="2" type="text" placeholder="Zoeken" />
+  <button tabindex="1">Verzenden</button>
+  <!-- Focus gaat eerst naar Verzenden (1), dan Zoeken (2),
+       dan pas de navigatielinks (0) -->
+</main>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Gebruik de HTML-volgorde, geen positieve tabindex.">
+
+```html
+<nav>
+  <a href="/">Home</a>
+  <a href="/over-ons">Over ons</a>
+</nav>
+<main>
+  <input type="text" placeholder="Zoeken" />
+  <button>Verzenden</button>
+</main>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer verwijdert positieve `tabindex`-waarden en lost de volgorde op in de HTML.
+
+### Klikbare card met dubbele tabstop
+
+Een card die als geheel klikbaar is én een link bevat met dezelfde bestemming, verschijnt twee keer in de tabvolgorde. De bezoeker tabt eerst naar de card en daarna naar de link erin, terwijl beide naar dezelfde pagina leiden. Dat is verwarrend en kost extra tabstops.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> door een overzicht met cards. Kom je twee keer op dezelfde card terecht?
+
+<Guideline appearance="dont" title="Card en link erin zijn allebei focusbaar met dezelfde bestemming.">
+
+```html
+<a href="/artikel" class="card">
+  <h3>Nieuw artikel</h3>
+  <p>Korte beschrijving van het artikel.</p>
+  <a href="/artikel">Lees meer</a>
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Eén focusbaar element per card.">
+
+```html
+<div class="card">
+  <h3><a href="/artikel">Nieuw artikel</a></h3>
+  <p>Korte beschrijving van het artikel.</p>
+</div>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zorgt dat elke card één focusbaar element heeft. Maak de heading een link, of gebruik een overlay-techniek waarbij de hele card klikbaar is via de link in de heading.
+
+### Focus verdwijnt doordat een widget opnieuw wordt gerenderd
+
+Als JavaScript de `innerHTML` van een container overschrijft, worden alle elementen daarin verwijderd en opnieuw aangemaakt. Het element dat op dat moment de focus had, bestaat dan niet meer. De focus valt terug naar `<body>` en de bezoeker moet opnieuw vanaf het begin door de pagina gaan met <kbd>Tab</kbd>.
+
+**Hoe te testen:** gebruik een complexe widget (zoals een filterlijst of een tabel met sortering) en druk op <kbd>Tab</kbd> naar een interactief element. Activeer een actie die de widget ververst. Verdwijnt de focus?
+
+<Guideline appearance="dont" title="Focus verdwijnt doordat innerHTML de hele container overschrijft.">
+
+```javascript
+function updateResultaten(data) {
+  document.getElementById("resultaten").innerHTML = renderResultaten(data);
+  // Het element dat focus had is verwijderd. Focus valt terug naar <body>
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer gebruikt een framework of library die alleen gewijzigde elementen bijwerkt in plaats van de hele container te overschrijven.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Klik in de adresbalk van de browser en druk op <kbd>Tab</kbd>. Verplaats de focus van element naar element door de pagina. Volgt de focus een logische volgorde die past bij de visuele opbouw?
+2. Ga terug met <kbd>Shift</kbd>+<kbd>Tab</kbd>. Gaat de focus in omgekeerde volgorde?
+3. Open dialoogvensters, mobiele menu's en cookiebanners. Krijgen die direct de focus? Blijft de focus erin? Keert de focus terug als je ze sluit?
+4. Test op verschillende schermbreedtes. Responsive layouts kunnen de visuele volgorde veranderen terwijl de focusvolgorde gelijk blijft.
+
+### Voor developers
+
+1. Ga met <kbd>Tab</kbd> door de pagina en vergelijk de focusvolgorde met de visuele volgorde. Als die afwijken, controleer of CSS `order`, `flex-direction: row-reverse`, `grid` of `position: absolute` de visuele layout verandert zonder de HTML aan te passen.
+2. Zoek in de broncode naar `tabindex` met positieve waarden. Verwijder ze en los de volgorde op in de HTML.
+3. Test elk dialoogvenster: controleer of de focus erin verplaatst wordt, erin gevangen blijft en na sluiten terugkeert naar het trigger-element.
+4. Controleer accordions en tabs: staat de content van een geopend paneel direct na de bijbehorende knop in de HTML?
+5. Test skiplinks: activeer de skiplink en druk op <kbd>Tab</kbd>. Belandt de focus in de unieke content?
+6. Verstuur een formulier met fouten. Verplaatst de focus zich naar de eerste foutmelding?
+7. Gebruik de [Focus Order bookmarklet](https://pauljadam.com/bookmarklets/focus.html) om de focusvolgorde visueel zichtbaar te maken op de pagina (Engels).
+
+## Gerelateerde succescriteria
+
+- [1.3.2 Betekenisvolle volgorde](/wcag/1.3.2/): als de leesvolgorde van content niet klopt, klopt de focusvolgorde vaak ook niet. Beide worden bepaald door de HTML-structuur.
+- [2.4.7 Focus zichtbaar](/wcag/2.4.7/): een logische focusvolgorde helpt alleen als de focus ook zichtbaar is. Lees hier hoe je de focusindicator goed vormgeeft.
+- [2.4.11 Focus niet bedekt](/wcag/2.4.11/): als een sticky header of footer het gefocuste element bedekt, lijkt de focusvolgorde fout terwijl het een visueel probleem is.
+- [3.2.1 Bij focus](/wcag/3.2.1/): een element dat focus krijgt, veroorzaakt geen onverwachte wijziging van context. Relevant als focusmanagement onbedoeld een paginawijziging triggert.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 2.4.3 Focusvolgorde](https://www.w3.org/Translations/WCAG22-nl/#focusvolgorde): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 2.4.3: Focus Order</span>](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Focus Order bookmarklet](https://pauljadam.com/bookmarklets/focus.html): voegt visuele nummering toe aan elk focusbaar element op de pagina, zodat je de focusvolgorde kunt controleren zonder met <kbd>Tab</kbd> door alle elementen te gaan (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -52,44 +478,6 @@ Voor een Nederlandstalige website is leesvolgorde van links naar rechts en van b
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Hoe te testen
-
-Tab met het toetsenbord door de pagina en controleer of de tabvolgorde logisch en zoals verwacht is.
-De tabvolgorde moet voor elk type weergave logisch, zichtbaar en voorspelbaar zijn en niet alleen voor een breed scherm op hoge resolutie.
-
-Let vooral op als de volgorde voor een andere weergave wordt aangepast via CSS met grid of flexbox.
-
-Aanvullende testen:
-
-- Tab ook terug met shift-tab, werkt dat ook voorspelbaar?
-- Controleer dialogs zoals het responsive menu. Is de tabvolgorde logisch. Keert bij het sluiten de focus terug naar de button om het dialog te openen?
-- Test bij verschillende schermbreedtes en oriëntaties (landscape/portrait).
-- Zoom in tot 400% en check de tabvolgorde.
-- Controleer dynamisch toegevoegde inhoud, zoals extra formuliervelden bij het selecteren van optie of een uitklapmenu.
-
-## Tips
-
-<dl>
-  <dt class="dl__term">Focus en autonomie</dt>
-  <dd class="dl__definition">
-    Verplaats de focus van de gebruiker zo min mogelijk. Het is geen prettige ervaring om "verplaatst te worden" op een
-    website.
-  </dd>
-</dl>
-
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.3 Focus Order</span>](https://www.w3.org/TR/WCAG22/#focus-order).
-- Nederlandse vertaling van het WCAG-succescriterium: [2.4.3 Focus volgorde](https://www.w3.org/Translations/WCAG22-nl/#focus-order).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.3 Focus Order</span>](https://www.w3.org/WAI/WCAG22/quickref/#focus-order).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.3 Focus Order</span>](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
