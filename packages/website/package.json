@@ -77,11 +77,8 @@
     "@utrecht/page-header-react": "1.0.10",
     "astro": "6.2.2",
     "cheerio": "1.2.0",
-    "hastscript": "9.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "remark-admonition": "2.0.0",
-    "remark-admonitions": "1.2.1",
     "remark-custom-header-id": "1.0.0",
     "remark-directive": "4.0.0"
   }

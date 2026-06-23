@@ -4,6 +4,8 @@ import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import remarkCustomHeaderId from 'remark-custom-header-id';
+import remarkDirective from 'remark-directive';
+import { remarkAdmonitions } from './markdown-plugins/admonitions';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -86,7 +88,7 @@ export default defineConfig({
 
   integrations: [
     mdx({
-      remarkPlugins: [remarkCustomHeaderId],
+      remarkPlugins: [remarkCustomHeaderId, remarkDirective, remarkAdmonitions],
       syntaxHighlight: false,
     }),
     react(),
