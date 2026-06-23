@@ -198,7 +198,7 @@ jobs:
     needs: continuous-integration
     if: github.ref == 'refs/heads/main'
     permissions:
-      contents: read
+      contents: write
 
     steps:
       - name: Checkout release branch
