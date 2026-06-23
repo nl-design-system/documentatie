@@ -9,16 +9,27 @@ description: Laat een gebruiker weten als er fouten zijn bij het invullen van ee
 slug: 3.3.1
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - begrijpelijk
   - assistentie bij invoer
   - understandable
   - input assistance
   - error identification
+  - foutmelding formulier
+  - formulier
+  - validatie
+  - invoerfout
+  - foutidentificatie
+  - aria-describedby
+  - aria-invalid
+  - screenreader
+  - WCAG 3.3.1
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -31,29 +42,171 @@ import Summary from "./summaries/_3.3.1-summary.md";
   {"WCAG-succescriterium 3.3.1 Foutidentificatie"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+Foutmeldingen verschijnen op het moment dat de fout wordt herkend: na het verzenden van het formulier of bij het verlaten van een veld. De melding staat bij het veld waar de fout zit, eventueel aangevuld met een samenvatting van fouten bovenaan de pagina. Een screenreader leest de foutmelding voor in samenhang met het veld, zodat de bezoeker weet welk veld aandacht nodig heeft.
+
+## Veelgemaakte fouten
+
+### Foutmelding beschrijft niet wat er mis is
+
+Een foutmelding bij een invoerveld beschrijft wat er mis is en hoe de bezoeker het kan corrigeren. Een generieke melding als "Dit veld is verplicht" of "Ongeldige invoer" zegt niet wat er wordt verwacht. Bij een e-mailveld is "Geen geldig e-mailadres ingevoerd" direct bruikbaar.
+
+**Hoe te testen:** vul een formulier bewust fout in en verstuur het. Beschrijft elke foutmelding concreet wat er mis is? Weet je na het lezen van de melding hoe je de fout kunt oplossen?
+
+<Guideline appearance="dont" title="Generieke foutmelding die niets zegt over het probleem.">
+  ```html
+  <label for="email">E-mailadres</label>
+  <input type="email" id="email" aria-describedby="email-fout" aria-invalid="true" />
+  <p id="email-fout" class="fout">
+    Ongeldige invoer
+  </p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Specifieke foutmelding die beschrijft wat er mis is.">
+  ```html
+  <label for="email">E-mailadres</label>
+  <input type="email" id="email" aria-describedby="email-fout" aria-invalid="true" />
+  <p id="email-fout" class="fout">
+    E-mailadres is niet geldig. Gebruik het formaat naam@voorbeeld.nl
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een UX-designer of contentdesigner formuleert de foutteksten zodat ze concreet en behulpzaam zijn. Een developer koppelt de juiste tekst aan elke validatieregel.
+
+### Fout is alleen aangegeven met kleur
+
+Een invoerveld met een fout heeft alleen een rode rand of een rood label. Iemand die kleuren niet kan onderscheiden, ziet geen verschil tussen een veld met en zonder fout. Combineer kleur altijd met een tekst en bij voorkeur een icoon.
+
+**Hoe te testen:** controleer of de foutmelding in tekst is gegeven. Bekijk het formulier in grijswaarden (gebruik de DevTools-optie "Emulate vision deficiencies" > "Achromatopsia"). Kun je nog zien welke velden een fout bevatten?
+
+<Guideline appearance="dont" title="Fout alleen aangegeven met een rode rand.">
+    ```css
+    input.fout {
+      border-color: red;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Fout aangegeven met kleur, tekst en een icoon.">
+    ```html
+    <label for="naam">Naam</label>
+    <input type="text" id="naam" class="fout" aria-describedby="naam-fout" aria-invalid="true" />
+    <p id="naam-fout" class="fout">
+      <svg aria-hidden="true" class="fout-icoon"><!-- waarschuwingsicoon --></svg>
+      Naam is niet ingevuld
+    </p>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een tekstuele foutmelding toe naast de kleurverandering.
+
+## Best practice
+
+### Toon foutmeldingen ook bij het veld zelf
+
+Een samenvatting van fouten bovenaan de pagina helpt bezoekers om snel te zien hoeveel fouten er zijn en waar ze zitten. Plaats daarnaast bij elk veld de bijbehorende foutmelding, zodat een bezoeker tijdens het corrigeren niet hoeft te scrollen tussen de samenvatting en het veld. Bij lange formulieren maakt dat het verschil tussen werkbaar en onwerkbaar.
+
+**Hoe te testen:** verstuur een formulier met meerdere fouten. Staan de foutmeldingen ook bij de individuele velden? Verwijzen de links in de samenvatting naar het juiste veld?
+
+<Guideline appearance="dont" title="Foutmeldingen alleen in een samenvatting bovenaan.">
+    ```html
+    <div class="fout-samenvatting">
+      <p>Er zijn 3 fouten gevonden:</p>
+      <ul>
+        <li>Naam is verplicht</li>
+        <li>E-mailadres is ongeldig</li>
+        <li>Postcode is verplicht</li>
+      </ul>
+    </div>
+    <!-- Velden verderop zonder foutmeldingen -->
+    <label for="naam">Naam</label>
+    <input type="text" id="naam" />
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Samenvatting bovenaan én foutmeldingen bij de velden.">
+    ```html
+    <div class="fout-samenvatting" role="alert">
+      <p>Er zijn 3 fouten gevonden:</p>
+      <ul>
+        <li><a href="#naam">Naam is niet ingevuld</a></li>
+        <li><a href="#email">E-mailadres is niet ingevuld</a></li>
+        <li><a href="#postcode">Postcode is niet ingevuld</a></li>
+      </ul>
+    </div>
+    <!-- Foutmelding ook bij het veld zelf -->
+    <label for="naam">Naam</label>
+    <input type="text" id="naam" aria-describedby="naam-fout" aria-invalid="true" />
+    <p id="naam-fout" class="fout">Naam is niet ingevuld</p>
+    ```
+</Guideline>
+
+De links in de samenvatting verwijzen naar de velden, zodat de bezoeker direct naar het juiste veld kan springen.
+
+**Wie kan dit toepassen:** een developer voegt foutmeldingen toe bij de individuele velden en maakt de samenvatting klikbaar.
+
+### Valideer pas bij het verlaten van het veld
+
+Een bezoeker die aan het typen is, is nog bezig met het invullen — een foutmelding na het eerste karakter is verwarrend en frustrerend. Wacht met valideren tot de bezoeker het veld verlaat of het formulier verzendt. Dan is duidelijk dat de invoer "af" is en geeft de melding feedback op een afgerond geheel.
+
+**Hoe te testen:** begin met het invullen van een veld. Verschijnt er een foutmelding terwijl je nog aan het typen bent?
+
+<Guideline appearance="dont" title="Validatie bij elke toetsaanslag.">
+    ```javascript
+    emailVeld.addEventListener("input", () => {
+      valideerEmail(emailVeld.value);
+    });
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Validatie pas bij het verlaten van het veld.">
+    ```javascript
+    emailVeld.addEventListener("blur", () => {
+      valideerEmail(emailVeld.value);
+    });
+    ```
+</Guideline>
+
+**Wie kan dit toepassen:** een developer wijzigt de validatietrigger van `input` naar `blur` of `submit`.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Verstuur een formulier met bewust lege en fout ingevulde velden. Verschijnt er bij elk veld met een fout een foutmelding?
+2. Lees de foutmeldingen. Beschrijven ze concreet wat er mis is en in welk invoerveld?
+
+### Voor developers
+
+1. Inspecteer velden met fouten in de DevTools. Heeft elk veld met een fout een `aria-invalid="true"` en een `aria-describedby` dat verwijst naar de foutmelding?
+2. Test met een screenreader. Navigeer naar een veld met een fout. Wordt de foutmelding voorgelezen samen met het label?
+3. Controleer of inline validatie niet triggert terwijl de bezoeker nog aan het typen is.
+4. Als er een foutsamenvatting bovenaan staat: controleer of de links naar de individuele velden verwijzen. Controleer ook of de samenvatting na het verzenden door een screenreader wordt aangekondigd: dat kan via `role="alert"` op de samenvatting, of door de focus na het verzenden naar de samenvatting te verplaatsen.
+
+## Gerelateerde succescriteria
+
+- [1.3.1 Info en relaties](https://nldesignsystem.nl/wcag/1.3.1/): de programmatische koppeling tussen een foutmelding en het invoerveld (bijvoorbeeld via `aria-describedby`) valt onder dit succescriterium. Lees hier meer als foutmeldingen visueel wel bij het veld staan, maar in de code niet zijn gekoppeld.
+- [3.3.2 Labels of instructies](https://nldesignsystem.nl/wcag/3.3.2/): duidelijke labels en instructies voorkomen fouten. Lees hier meer als velden onduidelijk zijn gelabeld en bezoekers daardoor fouten maken.
+- [3.3.3 Foutsuggestie](https://nldesignsystem.nl/wcag/3.3.3/): als het systeem weet hoe de fout gecorrigeerd kan worden, biedt het een suggestie aan. Lees hier meer als je naast foutidentificatie ook automatische correctiesuggesties wilt bieden.
+- [1.4.1 Gebruik van kleur](https://nldesignsystem.nl/wcag/1.4.1/): informatie mag niet alleen door kleur worden overgebracht. Relevant als foutmeldingen alleen met een rode rand worden aangegeven.
+- [4.1.3 Statusberichten](https://nldesignsystem.nl/wcag/4.1.3/): statusberichten die niet de focus krijgen, worden via ARIA aan screenreaders gemeld. Relevant voor foutsamenvattingen en inline foutmeldingen die verschijnen na het verzenden.
 
 ## Gerelateerde NL Design System-richtlijnen
 
 - Formulieren: [Foutmeldingen](/richtlijnen/formulieren/foutmeldingen).
 - Formulieren: [Descriptions](/richtlijnen/formulieren/descriptions).
 
-## Bronnen
+## Relevante bronnen
 
-Op GOV.UK:
-
-- [<span lang="en">Error Message</span>](https://design-system.service.gov.uk/components/error-message/).
-- [<span lang="en">Error summary</span>](https://design-system.service.gov.uk/components/error-summary/).
-- [<span lang="en">Be clear and concise</span>](https://design-system.service.gov.uk/components/error-message/#be-clear-and-concise).
-- [<span lang="en">3.3.1 Error Identification</span>](https://github.com/alphagov/wcag-primer/wiki/3.3.1).
-
-Overige bronnen:
-
-- [Toegankelijke foutmeldingen in formulieren](/blog/toegankelijke-foutmeldingen-formulieren), op het blog van het NL Design System.
-- [<span lang="en">The problem with live validation and what to do instead van Adam Silver</span>](https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/) van Adam Silver.
-- [<span lang="en">Avoid Default Field Validation</span>](https://adrianroselli.com/2019/02/avoid-default-field-validation.html) van Adrian Roselli.
+- [Accessible form validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/) — uitgebreide gids over toegankelijke formuliervalidatie, met patronen voor foutmeldingen en ARIA-gebruik (Smashing Magazine, Engels).
+- [Toegankelijke foutmeldingen in formulieren](/blog/toegankelijke-foutmeldingen-formulieren) — blogpost van NL Design System over foutmeldingen in formulieren.
+- [The problem with live validation and what to do instead](https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/) — waarom inline validatie tijdens het typen problematisch is (Adam Silver, Engels).
+- [Avoid Default Field Validation](https://adrianroselli.com/2019/02/avoid-default-field-validation.html) — waarom standaard browservalidatie niet voldoende is (Adrian Roselli, Engels).
+- [Error Message](https://design-system.service.gov.uk/components/error-message/) — het foutmeldingspatroon van GOV.UK, met richtlijnen voor duidelijke teksten (Engels).
+- [Error summary](https://design-system.service.gov.uk/components/error-summary/) — het foutsamenvatting-patroon van GOV.UK (Engels).
 
 ## Gebruikersonderzoek
 
@@ -62,29 +215,11 @@ Overige bronnen:
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
+## W3C-referenties
 
-Dit is een samenvatting van de richtlijnen in [Foutmeldingen in een formulier](/richtlijnen/formulieren/foutmeldingen).
-
-Controleer het formulier op foutmeldingen:
-
-- De foutmelding mag niet al zichtbaar als de gebruiker nog aan het typen is.
-- De foutmelding wordt niet automatisch door de browser gegenereerd.
-- De foutmelding staat zichtbaar, in tekst, boven het formulierveld.
-- De foutmelding staat niet over andere informatie heen.
-- De tekst van foutmelding heeft dezelfde vergroting en tekstafstand als de rest van de pagina
-- De tekst van de foutmelding is duidelijk en niet algemeen. Dus niet "Dit veld is verplicht", maar bijvoorbeeld "Vul uw achternaam in".
-- Het is duidelijk voor gebruikers van [screenreaders](/woordenlijst/#screenreader) wanneer een veld niet goed is ingevuld, bijvoorbeeld met `aria-invalid`.
-- De tekst van de foutmelding wordt goed voorgelezen door een screenreader.
-- Wanneer de gebruiker een formulier verzend en er dan nog foutmeldingen zijn, staat er boven het formulier een samenvatting van alle foutmeldingen.
-- Is er een page-reload na submit van het formulier, dan staat er in het `<title>`-element in de `<head>` dat het formulier fouten bevat.
-
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.3.1 Error Identification</span>](https://www.w3.org/TR/WCAG22/#error-identification).
-- Nederlandse vertaling van het WCAG-succescriterium: [3.3.1 Foutidentificatie](https://www.w3.org/Translations/WCAG22-nl/#error-identification).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.3.1 Error Identification</span>](https://www.w3.org/WAI/WCAG22/quickref/#error-identification).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 3.3.1 Error Identification</span>](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html).
+- [WCAG 2.2: Succescriterium 3.3.1 Foutidentificatie](https://www.w3.org/Translations/WCAG22-nl/#foutidentificatie) — de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 3.3.1: Error Identification](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Quick Reference 3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) — snelreferentie met technieken (Engels).
 
 <SpotlightSection>
   <Markdown omitH1 headinglevel={3}>
