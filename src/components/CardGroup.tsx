@@ -85,6 +85,6 @@ interface CardGroupProps extends HTMLAttributes<HTMLDivElement> {
   appearance?: Appearance;
 }
 
-export const CardGroup = ({ appearance = 'medium', children, className }: PropsWithChildren<CardGroupProps>) => (
+export const CardGroup = ({ appearance = 'large', children, className }: PropsWithChildren<CardGroupProps>) => (
   <div className={clsx('ma-cardgroup', `ma-cardgroup--${appearance}`, className)}>{children}</div>
 );

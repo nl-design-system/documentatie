@@ -16,42 +16,9 @@
   --rhc-card-padding-block-start: var(--basis-space-block-xl);
   --rhc-card-padding-inline-end: var(--basis-space-inline-xl);
   --rhc-card-padding-inline-start: var(--basis-space-inline-xl);
-  --ma-color-help-wanted-bg-default: #ffeee0;
-  --ma-color-help-wanted-bg-hover: #ffe7d4;
-  --ma-color-help-wanted-bg-active: #ffe0c7;
-  --ma-color-help-wanted-border-default: #834c1a;
-  --ma-color-help-wanted-border-hover: #6e4018;
-  --ma-color-help-wanted-border-active: #593516;
-  --ma-color-help-wanted-color-default: #834c1a;
-  --ma-color-help-wanted-color-hover: #6e4018;
-  --ma-color-help-wanted-color-active: #593516;
-  --ma-color-community-bg-default: #f6eef9;
-  --ma-color-community-bg-hover: #f3e7f7;
-  --ma-color-community-bg-active: #efe0f4;
-  --ma-color-community-border-default: #803d95;
-  --ma-color-community-border-hover: #6c337e;
-  --ma-color-community-border-active: #592a67;
-  --ma-color-community-color-default: #803d95;
-  --ma-color-community-color-hover: #6c337e;
-  --ma-color-community-color-active: #592a67;
-  --ma-color-candidate-bg-default: #e9f2f9;
-  --ma-color-candidate-bg-hover: #e1edf7;
-  --ma-color-candidate-bg-active: #d8e7f5;
-  --ma-color-candidate-border-default: #255d8d;
-  --ma-color-candidate-border-hover: #1f4e77;
-  --ma-color-candidate-border-active: #1a4061;
-  --ma-color-candidate-color-default: #255d8d;
-  --ma-color-candidate-color-hover: #1f4e77;
-  --ma-color-candidate-color-active: #1a4061;
-  --ma-color-hall-of-fame-bg-default: #e7f4e5;
-  --ma-color-hall-of-fame-bg-hover: #ddf0da;
-  --ma-color-hall-of-fame-bg-active: #d4ecd0;
-  --ma-color-hall-of-fame-border-default: #32652a;
-  --ma-color-hall-of-fame-border-hover: #2a5523;
-  --ma-color-hall-of-fame-border-active: #23451d;
-  --ma-color-hall-of-fame-color-default: #32652a;
-  --ma-color-hall-of-fame-color-hover: #2a5523;
-  --ma-color-hall-of-fame-color-active: #23451d;
+  --ma-estafette-badge-border-width: 1px;
+  --utrecht-badge-list-column-gap: 4px;
+  --utrecht-badge-list-row-gap: 4px;
 }
 
 /**

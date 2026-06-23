@@ -14,21 +14,21 @@
 }
 
 .ma-estafette-badge--help-wanted {
-  --utrecht-data-badge-background-color: var(--nlds-status-help-wanted-background-color);
-  --utrecht-data-badge-color: var(--nlds-status-help-wanted-color);
+  --utrecht-data-badge-background-color: var(--ma-color-help-wanted-bg-default);
+  --utrecht-data-badge-color: var(--ma-color-help-wanted-color-default);
 }
 
 .ma-estafette-badge--community {
-  --utrecht-data-badge-background-color: var(--nlds-status-community-background-color);
-  --utrecht-data-badge-color: var(--nlds-status-community-color);
+  --utrecht-data-badge-background-color: var(--ma-color-community-bg-default);
+  --utrecht-data-badge-color: var(--ma-color-community-color-default);
 }
 
 .ma-estafette-badge--candidate {
-  --utrecht-data-badge-background-color: var(--nlds-status-candidate-background-color);
-  --utrecht-data-badge-color: var(--nlds-status-candidate-color);
+  --utrecht-data-badge-background-color: var(--ma-color-candidate-bg-default);
+  --utrecht-data-badge-color: var(--ma-color-candidate-border-default);
 }
 
 .ma-estafette-badge--hall-of-fame {
-  --utrecht-data-badge-background-color: var(--nlds-status-hall-of-fame-background-color);
-  --utrecht-data-badge-color: var(--nlds-status-hall-of-fame-color);
+  --utrecht-data-badge-background-color: var(--ma-color-hall-of-fame-bg-default);
+  --utrecht-data-badge-color: var(--ma-color-hall-of-fame-color-default);
 }
