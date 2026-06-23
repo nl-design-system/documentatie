@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)
 pagination_label: WCAG-succescriterium 1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)
-description: Opgenomen video heeft ondertiteling.
+description: Bij een vooraf opgenomen video met gesproken tekst bied je ondertitels die de dialoog, de sprekers en de belangrijke geluiden tonen.
 slug: 1.2.2
 keywords:
   - WCAG
@@ -18,15 +18,21 @@ keywords:
   - captions
   - prerecorded
   - vooraf opgenomen
+  - ondertitels
+  - ondertiteling
+  - doven
+  - slechthorenden
+  - video
+  - WCAG 1.2.2
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import { Guideline } from "@site/src/components/Guideline";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.2.2-summary.md";
 
@@ -34,20 +40,138 @@ import Summary from "./summaries/_1.2.2-summary.md";
   {"WCAG-succescriterium 1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-Een uitgebreide uitleg van ondertiteling vind je in de richtlijn [Ondertiteling bij video](/richtlijnen/content/video/ondertiteling).
+Ondertitels voor doven en slechthorenden zijn meer dan een uitgeschreven dialoog. Ze benoemen ook de spreker als die niet in beeld is, en geluiden die betekenis dragen: een telefoon die rinkelt, applaus, dreigende muziek, een plotselinge stilte. De tekst loopt synchroon met de video, zodat de ondertitel op het juiste moment in beeld komt.
+
+Let op het verschil met vertaalde ondertitels. Een vertaling toont alleen de gesproken tekst in een andere taal, zonder de geluiden en zonder te benoemen wie er praat. Een vertaling vervangt dus geen ondertitels voor doven en slechthorenden. Dit geldt ook voor een los transcript onder de video: dat is nuttig, maar het loopt niet mee met de beelden en telt daarom niet als ondertiteling.
+
+Er is één uitzondering: als de video zelf een alternatief is voor tekst die al op dezelfde pagina staat, en dat duidelijk bij de video vermeld staat, dan zijn ondertitels niet nodig.
+
+## Veelgemaakte fouten
+
+### Video met gesproken tekst zonder ondertitels
+
+Een video met dialoog of voice-over heeft geen ondertitels. Wie de audio niet kan horen, mist de inhoud volledig en kan die nergens teruglezen.
+
+**Hoe te testen:** zet het geluid uit en speel de video af. Begrijp je nog wat er gezegd wordt? Kun je ondertitels aanzetten in de videospeler?
+
+<Guideline appearance="dont" title="Video zonder ondertitelspoor">
+  ```html
+  <video controls>
+    <source src="uitleg.mp4" type="video/mp4" />
+  </video>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Video met een ondertitelspoor voor doven en slechthorenden">
+  ```html
+  <video controls>
+    <source src="uitleg.mp4" type="video/mp4" />
+    <track kind="captions" src="uitleg-nl.vtt" srclang="nl" label="Nederlands" />
+  </video>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker maakt een ondertitelbestand en koppelt dat aan de video.
+
+### Automatisch gegenereerde ondertitels zonder controle
+
+De ondertitels komen rechtstreeks uit de automatische spraakherkenning van een videoplatform, zonder nacontrole. Automatische spraakherkenning maakt fouten bij eigennamen en vaktermen, voegt geen interpunctie toe en laat niet zien wie er aan het woord is. Wie meeleest, krijgt een onbetrouwbare versie van het verhaal.
+
+**Hoe te testen:** zet de automatische ondertitels aan en lees mee terwijl je luistert. Komen de woorden overeen met wat er gezegd wordt? Staan er hoofdletters, leestekens en sprekers in?
+
+**Wie kan dit oplossen:** een contentmaker corrigeert de automatische ondertitels voordat de video online gaat, of laat ze professioneel maken.
+
+### Ondertitels tonen alleen de dialoog, niet de belangrijke geluiden
+
+De ondertitels geven netjes de gesproken tekst weer, maar laten de geluiden weg die betekenis dragen. Een telefoon die rinkelt, muziek die de sfeer bepaalt, gelach op de achtergrond: het staat er niet in. Wie niet kan horen, mist die context.
+
+**Hoe te testen:** luister naar de video en let op niet-gesproken geluiden. Komen die belangrijke geluiden terug in de ondertitels, bijvoorbeeld als "[telefoon rinkelt]"?
+
+**Wie kan dit oplossen:** een contentmaker voegt beschrijvingen van belangrijke geluiden toe aan de ondertitels.
+
+### Niet duidelijk wie er aan het woord is
+
+In een video met meerdere sprekers hoort iemand die het geluid hoort het verschil tussen de stemmen, ook als de spreker niet in beeld is. Wie de ondertitels leest, hoort dat verschil niet. Tonen de ondertitels dan alleen de tekst zonder te benoemen wie wat zegt, dan kan een horende bezoeker het gesprek nog volgen en een dove of slechthorende bezoeker niet. De ondertitels brengen dezelfde informatie over als de audio, en daar hoort bij wie er praat.
+
+**Hoe te testen:** zet het geluid uit bij een fragment met meerdere sprekers van wie er minstens één niet in beeld is. Is op basis van de ondertitels te volgen wie wat zegt?
+
+**Wie kan dit oplossen:** een contentmaker voegt een sprekeraanduiding toe aan de ondertitels op de momenten dat de spreker niet zichtbaar is.
+
+### Ondertitels lopen niet synchroon met het geluid
+
+De ondertitels verschijnen te vroeg of te laat, of ze staan zo kort in beeld dat je ze niet kunt lezen. Wie de tekst nodig heeft om de video te volgen, raakt de draad kwijt.
+
+**Hoe te testen:** speel de video af en let op de timing. Verschijnt elke ondertitel op het moment dat de tekst klinkt? Blijft hij lang genoeg staan om te lezen?
+
+**Wie kan dit oplossen:** een contentmaker of developer corrigeert de tijdcodes in het ondertitelbestand.
+
+### Vertaalde ondertitels aangeboden in plaats van ondertitels voor doven en slechthorenden
+
+Bij de video staat alleen een vertaling, bijvoorbeeld een Engelse video met Nederlandse ondertitels. Zo'n vertaling geeft de gesproken tekst weer, maar laat de geluiden weg en benoemt de sprekers niet. Voor wie de audio niet kan horen, ontbreekt daardoor nog steeds informatie.
+
+**Hoe te testen:** bekijk welke ondertitels beschikbaar zijn. Bevatten ze ook de belangrijke geluiden en de sprekers, of alleen de vertaalde dialoog? In het `<track>`-element is dit verschil zichtbaar: `kind="subtitles"` is bedoeld voor vertaling, `kind="captions"` voor doven en slechthorenden.
+
+<Guideline appearance="dont" title="Alleen een vertaalspoor, zonder geluiden of sprekers">
+  ```html
+  <track kind="subtitles" src="video-nl.vtt" srclang="nl" label="Nederlands" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een ondertitelspoor voor doven en slechthorenden, naast de vertaling">
+  ```html
+  <track kind="captions" src="video-nl-sdh.vtt" srclang="nl" label="Nederlands voor doven en slechthorenden" />
+  <track kind="subtitles" src="video-nl.vtt" srclang="nl" label="Nederlands" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker maakt een ondertitelspoor met geluiden en sprekers, naast de eventuele vertaling.
+
+### Alleen een transcript in plaats van synchrone ondertitels
+
+Onder de video staat een uitgeschreven transcript, maar de video zelf heeft geen ondertitels. Een transcript loopt niet mee met de beelden. Wie de video bekijkt, kan de tekst niet op het juiste moment volgen en moet steeds wisselen tussen lezen en kijken.
+
+**Hoe te testen:** kun je in de videospeler ondertitels aanzetten die meelopen met de beelden? Of staat de tekst alleen los onder de video?
+
+**Wie kan dit oplossen:** een contentmaker voegt synchrone ondertitels toe aan de video. Een transcript mag daarnaast blijven staan als extra hulpmiddel.
+
+### Video is een alternatief voor tekst, maar dat is niet vermeld
+
+Een pagina toont eerst een artikel in tekst en daarna een video waarin dezelfde inhoud wordt verteld. De video is bedoeld als extra optie voor wie liever kijkt dan leest. In dat geval geldt de uitzondering en zijn ondertitels niet nodig. Maar dan vermeld je wel duidelijk bij de video dat het om een alternatief voor de tekst gaat. Zonder die toelichting weet een bezoeker niet dat dezelfde inhoud al in de tekst erboven staat.
+
+**Hoe te testen:** staat er bij de video een duidelijke vermelding dat het om een videoversie van de tekst gaat, bijvoorbeeld "Liever kijken dan lezen? Dit artikel staat hierboven ook als tekst."?
+
+**Wie kan dit oplossen:** een contentmaker voegt een duidelijke vermelding toe bij de video.
 
 ## Hoe te testen
 
-- Controleer bij opgenomen video of er kloppende ondertiteling aanwezig is.
+### Voor iedereen
 
-## Tips
+1. Zet het geluid uit en speel de video af. Krijg je alle gesproken informatie mee via de ondertitels?
+2. Let op de timing. Verschijnt elke ondertitel op het juiste moment en blijft hij lang genoeg staan om te lezen?
+3. Lees mee bij een fragment met meerdere sprekers. Is duidelijk wie wat zegt?
+4. Let op niet-gesproken geluiden, zoals muziek of een rinkelende telefoon. Staan de belangrijke geluiden in de ondertitels?
+5. Controleer bij automatische ondertitels of de tekst klopt met wat er gezegd wordt.
 
-- Let bij de presentatie van ondertiteling goed op toegankelijkheidsprincipes als het contrast, het formaat van de tekst en een goed leesbaar lettertype.
-- Automatisch gegenereerde ondertiteling is praktisch. Het laat echter vaak steken vallen. Dit gebeurt vooral met namen, als er veel jargon is, of als de taal van de audio afwijkt van de gebruikte tool. Ook wordt niet-gesproken audio niet meegenomen hierin.
+### Voor developers
+
+1. Inspecteer het `<video>`-element. Is er een `<track kind="captions">` aanwezig met het juiste `srclang` en een duidelijk `label`?
+2. Controleer of een vertaalspoor niet de enige optie is. Voor doven en slechthorenden is `kind="captions"` nodig, niet alleen `kind="subtitles"`.
+3. Bij video van een extern platform: controleer of het ingesloten ondertitelspoor de geredigeerde versie toont en niet de ruwe automatische ondertitels.
+4. Automatische tools zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> herkennen wel of er een ondertitelspoor aanwezig is, maar niet of de ondertitels inhoudelijk kloppen. Of de tekst, de sprekers en de geluiden volledig zijn, controleer je handmatig.
+
+## Gerelateerde succescriteria
+
+- [1.2.1 Alleen-audio en alleen-video (vooraf opgenomen)](/wcag/1.2.1/): voor een video zonder geluid of een geluidsfragment zonder beeld gelden aparte regels. Daar volstaat een transcript wel als alternatief.
+- [1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](/wcag/1.2.3/): naast ondertitels voor wie de audio niet kan horen, is er ook een alternatief nodig voor wie de beelden niet kan zien.
+- [1.2.4 Ondertitels voor doven en slechthorenden (live)](/wcag/1.2.4/): voor een live-uitzending gelden vergelijkbare eisen, met ondertitels die tijdens de uitzending worden gemaakt. Niveau AA.
+- [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/): ondertitels horen echte tekst te zijn, geen ingebrande afbeelding, zodat een bezoeker ze kan vergroten en aanpassen.
+
+## Relevante bronnen
+
+- [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/): W3C-handleiding over toegankelijke audio en video, inclusief het maken van ondertitels (Engels).
+- [Understanding SC 1.2.2: Captions (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -63,12 +187,6 @@ Een uitgebreide uitleg van ondertiteling vind je in de richtlijn [Ondertiteling 
 - Nederlandse vertaling van het WCAG-succescriterium: [1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#captions-prerecorded).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.2.2 Captions (Prerecorded)</span>](https://www.w3.org/WAI/WCAG22/quickref/#captions-prerecorded).
 - Engelstalige toelichting: [<span lang="en">1.2.2 Captions (Prerecorded)</span>](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html).
-
-  <SpotlightSection>
-    <Markdown omitH1 headinglevel={3}>
-      <Disclaimer />
-    </Markdown>
-  </SpotlightSection>
 
 ## Help richtlijn verbeteren
 
