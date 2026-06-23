@@ -158,6 +158,10 @@
 }
 
 /* HACK: Hackysnacky CSS that should be solved better in the chefs-kiss website */
+html {
+  block-size: auto !important;
+}
+
 p {
   max-inline-size: 80ch;
 }
