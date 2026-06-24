@@ -36,7 +36,12 @@ jobs:
             exit 1
           fi
 
-          DEPLOYMENT_NAME="${DEPLOYMENT_URL//.vercel.app/}"
+          if [[ ! "${DEPLOYMENT_URL}" =~ ^[a-z0-9-]+[a-z0-9.-]*$ ]]; then
+            echo "::error::Invalid Vercel deployment URL: ${DEPLOYMENT_URL}"
+            exit 1
+          fi
+
+          DEPLOYMENT_NAME="${DEPLOYMENT_URL%.vercel.app}"
           echo "deployment_url=${DEPLOYMENT_URL}" >> "${GITHUB_OUTPUT}"
           echo "deployment_name=${DEPLOYMENT_NAME}" >> "${GITHUB_OUTPUT}"
           echo "Resolved Vercel deployment URL: ${DEPLOYMENT_URL}"
