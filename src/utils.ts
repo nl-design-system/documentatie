@@ -246,7 +246,7 @@ export const getMinimumNodeVersion = () => {
   return version.replace(/^[\^~>=<]+/, '');
 };
 
-const FILE_EXTENSIONS = new Set(['html', 'htm', 'ics', 'json', 'pdf']);
+const FILE_EXTENSIONS = new Set(['ics', 'json', 'pdf']);
 
 export const hasFileExtension = (pathname: string): boolean => {
   const lastSegment = pathname.split('/').pop() ?? '';
