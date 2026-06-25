@@ -24,7 +24,13 @@ export const Accordion = ({ className, ...props }: AccordionProps) => {
   return <div className={_className}>{props.children}</div>;
 };
 
-export const AccordionSection = ({ className, ...props }: AccordionSectionProps) => {
+export const AccordionSection = ({
+  className,
+  heading,
+  headingLevel,
+  headingApperance,
+  ...props
+}: AccordionSectionProps) => {
   const _className = clsx('utrecht-accordion__section', className);
 
   return (
@@ -35,8 +41,8 @@ export const AccordionSection = ({ className, ...props }: AccordionSectionProps)
             <IconChevronDown />
           </span>
           <span className="nl-button__label">
-            <Heading level={props.headingLevel} appearance={props.headingApperance}>
-              {props.heading}
+            <Heading level={headingLevel} appearance={headingApperance}>
+              {heading}
             </Heading>
           </span>
         </span>
