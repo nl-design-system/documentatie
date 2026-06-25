@@ -245,3 +245,12 @@ export const getMinimumNodeVersion = () => {
   // Handle simple prefixes like "^18.0.0", "~18.0.0", ">=18.0.0"
   return version.replace(/^[\^~>=<]+/, '');
 };
+
+const FILE_EXTENSIONS = new Set(['html', 'htm', 'ics', 'json', 'pdf']);
+
+export const hasFileExtension = (pathname: string): boolean => {
+  const lastSegment = pathname.split('/').pop() ?? '';
+  const extension = lastSegment.split('.').pop()?.toLowerCase();
+
+  return extension !== undefined && FILE_EXTENSIONS.has(extension);
+};
