@@ -6,6 +6,10 @@ import sitemap from '@astrojs/sitemap';
 import remarkCustomHeaderId from 'remark-custom-header-id';
 import remarkDirective from 'remark-directive';
 import { remarkAdmonitions } from './markdown-plugins/admonitions';
+import { nldsComponentsPlugin } from './markdown-plugins/rehype-nlds-components';
+import { addTrailingSlashPlugin } from './markdown-plugins/rehype-trailing-slash';
+import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1/index.ts';
+import syntaxHighlightTheme from './src/syntax-highlight-theme.json';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -83,13 +87,20 @@ export default defineConfig({
   },
 
   markdown: {
-    syntaxHighlight: false,
+    remarkPlugins: [remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
+    rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+    shikiConfig: {
+      theme: syntaxHighlightTheme,
+    },
   },
 
   integrations: [
     mdx({
-      remarkPlugins: [remarkCustomHeaderId, remarkDirective, remarkAdmonitions],
-      syntaxHighlight: false,
+      remarkPlugins: [remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
+      rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+      shikiConfig: {
+        theme: syntaxHighlightTheme,
+      },
     }),
     react(),
     sitemap({

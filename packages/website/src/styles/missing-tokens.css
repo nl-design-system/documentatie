@@ -21,6 +21,10 @@
   --utrecht-badge-list-row-gap: 4px;
 }
 
+.nl-code-block {
+  --nl-code-block-background-color: var(--prism-a11y-color-background); /* stylelint-disable-line */
+}
+
 /**
  * Below are all tweaks to existing community components that we want to give
  * back to the community. Usually these are missing tokens with their proposed
