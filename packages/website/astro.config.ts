@@ -8,8 +8,7 @@ import remarkDirective from 'remark-directive';
 import { remarkAdmonitions } from './markdown-plugins/admonitions';
 import { nldsComponentsPlugin } from './markdown-plugins/rehype-nlds-components';
 import { addTrailingSlashPlugin } from './markdown-plugins/rehype-trailing-slash';
-import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1/index.ts';
-import syntaxHighlightTheme from './src/syntax-highlight-theme.json';
+import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -89,18 +88,14 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
     rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
-    shikiConfig: {
-      theme: syntaxHighlightTheme,
-    },
+    syntaxHighlight: 'prism',
   },
 
   integrations: [
     mdx({
       remarkPlugins: [remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
       rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
-      shikiConfig: {
-        theme: syntaxHighlightTheme,
-      },
+      syntaxHighlight: 'prism',
     }),
     react(),
     sitemap({
