@@ -9,70 +9,263 @@ description: Een webpagina is op meerdere manieren te vinden.
 slug: 2.4.5
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - bedienbaar
   - navigeerbaar
   - operable
   - navigable
   - multiple ways
+  - meerdere manieren
+  - navigatie
+  - zoekfunctie
+  - sitemap
+  - vindbaarheid
+  - WCAG 2.4.5
 ---
 
 {/* @license CC0-1.0 */}
-
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
-import Summary from "./summaries/_2.4.5-summary.md";
+import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./\_wcag_footer_info.md";
+import Summary from "./summaries/\_2.4.5-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
   {"WCAG-succescriterium 2.4.5 Meerdere manieren"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Gebruiker kunnen op meerdere manier bij inhoud komen.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Zorg voor minstens 2 manieren om bij dezelfde inhoud te komen.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Niet iedereen kan op dezelfde manier naar inhoud navigeren.</dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-Binnen een website, dus niet via een zoekmachine, moet een pagina op minstens 2 manieren te bereiken zijn. Sommige bezoekers hebben baat bij een sitemap. Andere bezoekers kunnen beter navigeren met een zoekfunctie.
-Nog belangrijker is dat sommige methodes een barrière kunnen vormen voor bezoekers. Dyslexie en een zoekfunctie kunnen lastig zijn. Uitgebreide menu's kunnen een drempel vormen voor [screenreaders](/woordenlijst/#screenreader). Ook als een gebruiker inzoomt kan een uitgebreid menu lastig zijn om te overzien.
-Als er meerdere manieren aangeboden worden dan kan de bezoeker kiezen.
+Voor mensen die een schermvergroter of screenreader gebruiken is een zoekveld sneller dan door een grote navigatiebalk heen klikken. Voor mensen met een cognitieve beperking is een sitemap of inhoudsopgave makkelijker te overzien dan stap voor stap door de pagina's klikken. Geen van deze manieren werkt voor iedereen, daarom moet je er meer dan één aanbieden.
+
+Je kunt bijvoorbeeld deze manieren naast elkaar aanbieden:
+
+- Een hoofdnavigatie met links naar alle hoofdsecties.
+- Een zoekfunctie waarmee je op trefwoord een pagina kunt vinden.
+- Een sitemap met links naar alle pagina's op de site.
+- Een footer of overzichtspagina die naar alle belangrijke pagina's linkt.
+- Een homepage waarvandaan alle pagina's bereikbaar zijn.
+
+Twee van deze manieren zijn voldoende, zolang een bezoeker met beide manieren alle pagina's kan bereiken.
+
+Voor bepaalde pagina's is het logisch dat ze maar op één manier te bereiken zijn. Bijvoorbeeld: een formulier met meerdere stappen, en de [bevestigingspagina](/richtlijnen/formulieren/bevestigingspagina/) na het verzenden. Pagina's die onderdeel zijn van een proces hoeven niet op meerdere manieren vindbaar te zijn.
+
+## Veelgemaakte fouten
+
+### De site biedt alleen een hoofdmenu
+
+De enige manier om een pagina te vinden is via de hoofdnavigatie. Er is geen zoekveld, geen sitemap en geen overzicht in de footer. Voor iemand met een schermvergroter past het uitgeklapte menu niet helemaal in beeld. Voor een screenreadergebruiker betekent het langs alle menu-items gaan met de tabtoets tot de juiste link langskomt. Beide groepen verliezen tijd of haken af.
+
+**Hoe te testen:** controleer of er naast het hoofdmenu nog een andere manier is om een willekeurige pagina te bereiken. Bijvoorbeeld: via een zoekveld, een sitemap of een [Page Footer](/page-footer/) met links.
+
+<Guideline appearance="dont" title="Alleen een hoofdmenu als ingang">
+  ```html
+  <header>
+    <nav aria-label="Hoofdmenu">
+      <ul>
+        <li>
+          <a href="/diensten">Diensten</a>
+        </li>
+        <li>
+          <a href="/over-ons">Over ons</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Hoofdmenu met een zoekfunctie als tweede ingang">
+  ```html
+  <header>
+    <nav aria-label="Hoofdmenu">
+      <ul>
+        <li>
+          <a href="/diensten">Diensten</a>
+        </li>
+        <li>
+          <a href="/over-ons">Over ons</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <form role="search" action="/zoeken">
+      <label for="zoekveld">Zoeken</label>
+      <input type="search" id="zoekveld" name="q" />
+      <button type="submit">Zoek</button>
+    </form>
+  </header>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een zoekfunctie of een link naar de sitemap toe aan het siteframework, zodat de tweede ingang op elke pagina aanwezig is.
+
+### Het zoekveld staat alleen op de homepage, niet in het menu
+
+Het zoekveld is wel aanwezig, maar alleen op de homepage. Bezoekers die op een andere pagina zijn en de zoekfunctie willen gebruiken, moeten eerst terug naar de homepage. Dat zijn extra stappen en is vooral hinderlijk voor toetsenbord- en screenreadergebruikers. De zoekfunctie telt dan niet als geldige tweede manier, omdat hij niet vanaf elke pagina te bereiken is.
+
+**Hoe te testen:** open een willekeurige detailpagina, bijvoorbeeld een blogartikel of productpagina. Controleer of het zoekveld ook daar in beeld is.
+
+<Guideline appearance="dont" title="Zoekveld alleen in de homepage-template">
+    ```html
+    <!-- homepage.html -->
+    <main>
+      <h1>Welkom</h1>
+      <form role="search" action="/zoeken">
+        <label for="zoek">Zoeken op de site</label>
+        <input type="search" id="zoek" name="q" />
+        <button type="submit">Zoek</button>
+      </form>
+    </main>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Zoekveld in de gedeelde header op elke pagina">
+    ```html
+    <!-- header.html (gedeeld over alle pagina's) -->
+    <header>
+      <a href="/">Naar de homepage</a>
+      <form role="search" action="/zoeken">
+        <label for="zoek">Zoeken op de site</label>
+        <input type="search" id="zoek" name="q" />
+        <button type="submit">Zoek</button>
+      </form>
+    </header>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een contentmaker kan een link naar de zoekpagina aan het menu toevoegen.
+- Een developer voegt een zoekfunctie toe aan de header, zodat die op elke pagina beschikbaar is.
+
+### De sitemap mist pagina's of klopt niet meer
+
+Een sitemap die handmatig wordt bijgehouden, raakt makkelijk verouderd. Recente pagina's ontbreken en verwijderde pagina's blijven erin staan als kapotte links. Met ontbrekende pagina's en kapotte links is de sitemap geen werkbare tweede manier om pagina's te vinden.
+
+**Hoe te testen:** vergelijk het aantal pagina's in de sitemap met het aantal pagina's in het CMS of de inhoudsstructuur. Klik daarna een aantal willekeurige links aan en controleer of ze nog werken.
+
+<Guideline appearance="dont" title="Handmatig bijgehouden sitemap die achterloopt">
+    ```html
+    <!-- sitemap.html, voor het laatst bijgewerkt in 2022 -->
+    <ul>
+      <li><a href="/diensten">Diensten</a></li>
+      <li><a href="/diensten/oud-product">Oud product (kapotte link)</a></li>
+      <!-- nieuwe pagina's uit 2024 en 2025 ontbreken -->
+    </ul>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Sitemap die automatisch uit het CMS wordt gegenereerd">
+    ```html
+    <!-- sitemap wordt bij elke deploy opnieuw opgebouwd uit het CMS -->
+    <ul>
+      {pages.map((page) => (
+        <li><a href={page.url}>{page.title}</a></li>
+      ))}
+    </ul>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zorgt dat de sitemap automatisch wordt gemaakt, zodat nieuwe pagina's vanzelf verschijnen en er geen kapotte links zijn.
+
+### Niet alle pagina's worden gevonden met de zoekfunctie
+
+Naast het hoofdmenu biedt de site een zoekveld aan, als tweede manier om pagina's te vinden. Maar het zoekveld doorzoekt maar een beperkt aantal pagina's: oudere artikelen, losse informatiepagina's en detailpagina's komen niet in de resultaten naar boven. Voor die pagina's blijft het hoofdmenu de enige manier. Een zoekveld dat niet de hele site dekt, telt niet als geldige tweede manier naast het hoofdmenu.
+
+**Hoe te testen:** kies een blogartikel of een nieuwsbericht. Probeer die via de zoekfunctie te vinden. Lukt dat niet, dan beslaat de zoekfunctie niet de hele site.
+
+<Guideline appearance="dont" title="Zoekveld dat maar een deel van de site doorzoekt">
+  ```html
+  <form role="search" action="/nieuws/zoeken">
+    <label for="zoek">Zoek in het nieuws</label>
+    <input type="search" id="zoek" name="q" />
+    <button type="submit">Zoek</button>
+  </form>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Zoekfunctie die de hele site doorzoekt">
+  ```html
+  <form role="search" action="/zoeken">
+    <label for="zoek">Zoek op de hele site</label>
+    <input type="search" id="zoek" name="q" />
+    <button type="submit">Zoek</button>
+  </form>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer breidt de zoekindex uit zodat alle pagina's worden meegenomen, niet alleen een deel van de site. Een contentbeheerder controleert steekproefsgewijs of pagina's uit verschillende secties via de zoekfunctie vindbaar zijn.
+
+### De sitemap is verstopt
+
+De sitemap bestaat wel, maar de link ernaartoe staat ergens diep weggestopt of alleen op één pagina. Een bezoeker weet niet eens dat er een sitemap is, en gebruikt hem dus niet. De sitemap telt daarmee in de praktijk niet als tweede manier om pagina's te vinden, ook al staat hij in de paginastructuur.
+
+**Hoe te testen:** open een willekeurige pagina op de site en zoek naar een link met de tekst "Sitemap" of "Overzicht". Staat die op een voorspelbare plek zoals de footer?
+
+<Guideline appearance="dont" title="Sitemap-link alleen op één losse pagina">
+    ```html
+    <!-- Alleen op de contactpagina, niet op andere pagina's -->
+    <p>Zie ook onze <a href="/sitemap">sitemap</a> voor een overzicht.</p>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Sitemap-link in de footer op elke pagina">
+    ```html
+    <!-- footer.html (gedeeld over alle pagina's) -->
+    <footer>
+      <nav aria-label="Footernavigatie">
+        <ul>
+          <li><a href="/sitemap">Sitemap</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li>
+            <a href="/toegankelijkheidsverklaring">Toegankelijkheidsverklaring</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst de link naar de sitemap in de footer of een andere gedeelde sectie, zodat de link op elke pagina aanwezig is.
 
 ## Hoe te testen
 
-- Controleer voor elke pagina of deze op meerdere manieren te bereiken is.
+### Voor iedereen
 
-## Tips
+1. Inventariseer welke manieren de site biedt om pagina's te vinden: hoofdmenu, zoekfunctie, sitemap, footer-navigatie. Twee of meer? Dan voldoe je in principe aan dit succescriterium.
+2. Kies een willekeurige pagina die geen onderdeel is van een proces. Probeer die op minstens twee verschillende manieren te bereiken vanaf de homepage.
+3. Open een detailpagina diep in de site. Is de zoekfunctie of een link naar de sitemap daar ook beschikbaar?
+4. Controleer de footer. Staat daar een link naar een sitemap of naar de hoofdsecties van de site?
+5. Test de uitzondering: pagina's binnen een proces (bijvoorbeeld stap 2 van een bestelproces) hoeven niet rechtstreeks vindbaar te zijn. Geldt de uitzondering alleen voor échte procesonderdelen?
 
-- Een logische structuur helpt gebruikers een beeld te vormen van hoe pagina's samenhangen. Dit vergemakkelijkt navigeren. Deze structuur maakt het vervolgens weer makkelijker om menu's te maken.
-- Veel voorkomende manieren van navigatie zijn:
-  - menu's,
-  - links in de footer,
-  - een zoekfunctie,
-  - archiefpaginas,
-  - een index,
-  - een sitemap.
-- Links tussen vergelijkbare pagina's kunnen ook bijdragen aan het voldoen aan dit succescriterium. Denk bijvoorbeeld aan een linkje "vorig blogbericht".
-- Zorg ervoor dat methodes zoals zoekfuncties en sitemaps volledig zijn. Bij veranderende websites kunnen deze functies uit de pas lopen met de daadwerkelijke inhoud.
-- Bevindt een pagina zich binnen een proces? Dan is er een uitzondering.
+### Voor developers
+
+1. Controleer of de tweede manier (zoekveld, sitemap-link) in een gedeelde template staat, zodat hij op elke pagina aanwezig is.
+2. Controleer of de zoekfunctie en de sitemap naar pagina's leiden die niet in het hoofdmenu staan, zoals oudere blogartikelen of detailpagina's.
+3. Open de gegenereerde sitemap (`/sitemap.xml` of een HTML-sitemap) en vergelijk het aantal vermelde pagina's met het werkelijke aantal in het CMS. Wijken die sterk af, dan klopt de sitemap niet.
+4. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">WAVE</span> voor een eerste scan. Of de site echt meerdere manieren biedt, en of die dezelfde set pagina's bereiken, controleer je handmatig.
+
+## Gerelateerde succescriteria
+
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): zorgt ervoor dat de zoekfunctie en sitemap-link bedienbaar zijn met het toetsenbord. Relevant zodra je een tweede ingang zoals een zoekveld toevoegt.
+- [2.4.1 Blokken omzeilen](/wcag/2.4.1/): zorgt ervoor dat bezoekers herhalende blokken zoals het hoofdmenu kunnen overslaan. Lees verder als je werkt aan de structuur van de header en navigatie.
+- [2.4.8 Locatie](/wcag/2.4.8/): gaat over weten wáár je bent op de site, bijvoorbeeld via een kruimelpad. Een aanvulling op meerdere manieren om pagina's te vinden.
+- [3.2.3 Consistente navigatie](/wcag/3.2.3/): de navigatie moet op elke pagina op dezelfde plek staan en in dezelfde volgorde. Relevant zodra je meerdere manieren naast elkaar gebruikt.
+- [3.2.4 Consistente identificatie](/wcag/3.2.4/): onderdelen met dezelfde functie (zoals een zoekveld) moeten op de hele site hetzelfde herkenbaar zijn.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 2.4.5 Meerdere manieren](https://www.w3.org/Translations/WCAG22-nl/#meerdere-manieren): de officiële Nederlandstalige vertaling. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding 2.4.5 Multiple Ways](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html): de toelichting van het W3C, met technieken en voorbeelden (Engels).
 
 ## Gebruikersonderzoek
 
@@ -84,12 +277,6 @@ Als er meerdere manieren aangeboden worden dan kan de bezoeker kiezen.
 - Nederlandse vertaling van het WCAG-succescriterium: [2.4.5 Meerdere manieren](https://www.w3.org/Translations/WCAG22-nl/#multiple-ways).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.5 Multiple Ways</span>](https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.5 Multiple Ways</span>](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
