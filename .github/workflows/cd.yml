@@ -111,6 +111,8 @@ jobs:
     needs: [continuous-integration]
     permissions:
       contents: read
+    env:
+      E2E_TEST_TIMEOUT_S: 60
 
     steps:
       - name: Checkout branch
