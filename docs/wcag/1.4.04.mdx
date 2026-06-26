@@ -5,48 +5,533 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.4 Herschalen van tekst
 pagination_label: WCAG-succescriterium 1.4.4 Herschalen van tekst
-description: Tekst moet twee keer zo groot kunnen zijn.
+description: Je kan tekst 2 keer zo groot instellen, en alle content en functionaliteit moet dan nog beschikbaar zijn.
 slug: 1.4.4
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - waarneembaar
   - onderscheidbaar
   - perceivable
   - distinguishable
   - resize text
+  - herschalen
+  - tekst vergroten
+  - zoom
+  - lettergrootte
+  - font-size
+  - em
+  - rem
+  - viewport units
+  - WCAG 1.4.4
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import Summary from "./summaries/_1.4.4-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
   {"WCAG-succescriterium 1.4.4 Herschalen van tekst"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+Tekst vergroten kan met de lettergrootte-instelling van de browser en met browserzoom. Allebei moeten werken zonder dat tekst wegvalt of overlapt. De fouten hieronder ontstaan doordat containers niet meegroeien met de tekst.
+
+## Veelgemaakte fouten
+
+### Tekst in een container met een vaste hoogte wordt afgesneden
+
+Een container heeft een vaste hoogte in pixels. Bij een normale lettergrootte past de tekst erin. Maar als de bezoeker de tekst vergroot tot 200%, groeit de tekst buiten de container. Met `overflow: hidden` verdwijnt het deel dat niet past. De bezoeker kan de rest van de tekst niet lezen.
+
+**Hoe te testen:** vergroot de tekst tot 200% via de browserinstellingen. Wordt er tekst afgesneden? Inspecteer verdachte elementen in de <span lang="en">DevTools</span> en controleer of een combinatie van `height` en `overflow: hidden` de oorzaak is.
+
+<Guideline appearance="dont" title="Vaste hoogte knipt vergrote tekst af">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{
+        height: "120px",
+        overflow: "hidden",
+        border: "1px solid #d0d0d0",
+        padding: "0.75rem",
+        width: "260px",
+        fontFamily: "system-ui",
+        backgroundColor: "#fafafa",
+        boxSizing: "border-box",
+        color: "#1a1a1a",
+      }}>
+        <h3 style={{ margin: "0 0 0.5rem", fontSize: "1.4rem" }}>Aanmelden</h3>
+        <p style={{ margin: 0, fontSize: "1.15rem", lineHeight: "1.5" }}>
+          Volg de instructies en maak een account aan om gebruik te kunnen maken van alle functies.
+        </p>
+      </div>
+    )}
+  </Canvas>
+
+```css
+.card-beschrijving {
+  height: 120px;
+  overflow: hidden;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Minimale hoogte laat de container meegroeien">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{
+        minHeight: "120px",
+        border: "1px solid #d0d0d0",
+        padding: "0.75rem",
+        width: "260px",
+        fontFamily: "system-ui",
+        backgroundColor: "#fafafa",
+        boxSizing: "border-box",
+        color: "#1a1a1a",
+      }}>
+        <h3 style={{ margin: "0 0 0.5rem", fontSize: "1.4rem" }}>Aanmelden</h3>
+        <p style={{ margin: 0, fontSize: "1.15rem", lineHeight: "1.5" }}>
+          Volg de instructies en maak een account aan om gebruik te kunnen maken van alle functies.
+        </p>
+      </div>
+    )}
+  </Canvas>
+
+```css
+.card-beschrijving {
+  min-height: 120px;
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt `height` door `min-height` zodat de container meegroeit met de tekst.
+
+### Tekst wordt niet groter bij aangepaste browserinstelling
+
+Een lettergrootte die alleen in `vw` is ingesteld, schaalt mee met de breedte van het browservenster, maar niet met de tekstgrootte-instelling van de browser. Als de bezoeker de lettergrootte op 200% zet, verandert er niets aan de tekst.
+
+**Hoe te testen:** ga naar de browserinstellingen en zet de standaard lettergrootte op 200% of op "Zeer groot". Verandert de tekst op de pagina? Als een kop of broodtekst niet groter wordt, is de lettergrootte waarschijnlijk alleen in `vw` ingesteld.
+
+<Guideline appearance="dont" title="Lettergrootte alleen in viewport units">
+    ```css
+    h1 {
+      font-size: 5vw;
+    }
+
+    p {
+      font-size: 2vw;
+    }
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Lettergrootte met clamp die mee schaalt met de browserinstelling">
+    ```css
+    h1 {
+      font-size: clamp(1.5rem, 3vw + 1rem, 3rem);
+    }
+
+    p {
+      font-size: clamp(1rem, 1vw + 0.75rem, 1.5rem);
+    }
+    ```
+
+</Guideline>
+
+Door `rem` te combineren met `vw` in een `clamp()` schaalt de tekst zowel mee met het scherm als met de browserinstelling. De `rem`-waarde zorgt dat de browser de instelling van de bezoeker volgt.
+
+**Wie kan dit oplossen:** een developer vervangt pure `vw`-waarden door een combinatie met `rem` via `clamp()`.
+
+### Tekst overlapt andere elementen bij vergroting
+
+Bij 200% tekstvergroting wordt tekst groter, maar de omliggende elementen groeien niet mee. Labels overlappen invoervelden, knoppen overlappen tekst of navigatie-items vallen over elkaar heen. De pagina is niet meer bruikbaar.
+
+**Hoe te testen:** vergroot de tekst tot 200%. Controleer of tekst, knoppen en labels nog steeds leesbaar zijn en niet over andere elementen heen vallen.
+
+<Guideline appearance="dont" title="Vaste afmetingen op een knop, tekst loopt over">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button style={{
+        width: "120px",
+        height: "40px",
+        overflow: "hidden",
+        fontSize: "1.25rem",
+        border: "1px solid #1a1a1a",
+        backgroundColor: "#ffffff",
+        color: "#1a1a1a",
+        borderRadius: "4px",
+        fontFamily: "system-ui",
+        whiteSpace: "nowrap",
+        textOverflow: "clip",
+        cursor: "pointer",
+      }}>
+        Verzend formulier
+      </button>
+    )}
+  </Canvas>
+
+```css
+.knop {
+  width: 120px;
+  height: 40px;
+  overflow: hidden;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Knop groeit mee met de tekst">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button style={{
+        minWidth: "120px",
+        padding: "0.5em 1em",
+        fontSize: "1.25rem",
+        border: "1px solid #1a1a1a",
+        backgroundColor: "#ffffff",
+        color: "#1a1a1a",
+        borderRadius: "4px",
+        fontFamily: "system-ui",
+        cursor: "pointer",
+      }}>
+        Verzend formulier
+      </button>
+    )}
+  </Canvas>
+
+```css
+.knop {
+  min-width: 120px;
+  padding: 0.5em 1em;
+}
+```
+
+</Guideline>
+
+Door `padding` in `em` te gebruiken, schaalt de ruimte rond de tekst mee met de lettergrootte. De knop wordt automatisch groter als de tekst groter wordt.
+
+**Wie kan dit oplossen:** een developer vervangt vaste afmetingen door flexibele waarden met `padding` in `em` of `rem`.
+
+### Navigatie wordt onbruikbaar bij vergrote tekst
+
+Een horizontale navigatiebalk heeft net genoeg ruimte voor de menu-items bij de standaard lettergrootte. Bij 200% tekstvergroting passen de items niet meer naast elkaar. Ze overlappen, vallen buiten het scherm of worden afgesneden.
+
+**Hoe te testen:** vergroot de tekst tot 200%. Kun je alle navigatie-items lezen en aanklikken? Valt er tekst buiten het scherm?
+
+<Guideline appearance="dont" title="Navigatie-items met een vaste breedte">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <nav style={{ display: "flex", gap: "0.5rem", fontFamily: "system-ui" }}>
+        <a href="#" style={{
+          display: "inline-block",
+          width: "150px",
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+          textOverflow: "clip",
+          padding: "0.5rem",
+          fontSize: "1.25rem",
+          color: "#1a1a1a",
+          textDecoration: "none",
+          border: "1px solid #d0d0d0",
+        }}>Home</a>
+        <a href="#" style={{
+          display: "inline-block",
+          width: "150px",
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+          textOverflow: "clip",
+          padding: "0.5rem",
+          fontSize: "1.25rem",
+          color: "#1a1a1a",
+          textDecoration: "none",
+          border: "1px solid #d0d0d0",
+        }}>Voorzieningen</a>
+        <a href="#" style={{
+          display: "inline-block",
+          width: "150px",
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+          textOverflow: "clip",
+          padding: "0.5rem",
+          fontSize: "1.25rem",
+          color: "#1a1a1a",
+          textDecoration: "none",
+          border: "1px solid #d0d0d0",
+        }}>Gemeentelijke diensten</a>
+      </nav>
+    )}
+  </Canvas>
+
+```css
+.nav-item {
+  display: inline-block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Navigatie die wrapt bij vergrote tekst">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <nav style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", fontFamily: "system-ui", maxWidth: "480px" }}>
+        <a href="#" style={{
+          padding: "0.5em 1em",
+          fontSize: "1.25rem",
+          color: "#1a1a1a",
+          textDecoration: "none",
+          border: "1px solid #d0d0d0",
+        }}>Home</a>
+        <a href="#" style={{
+          padding: "0.5em 1em",
+          fontSize: "1.25rem",
+          color: "#1a1a1a",
+          textDecoration: "none",
+          border: "1px solid #d0d0d0",
+        }}>Voorzieningen</a>
+        <a href="#" style={{
+          padding: "0.5em 1em",
+          fontSize: "1.25rem",
+          color: "#1a1a1a",
+          textDecoration: "none",
+          border: "1px solid #d0d0d0",
+        }}>Gemeentelijke diensten</a>
+      </nav>
+    )}
+  </Canvas>
+
+```css
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  padding: 0.5em 1em;
+}
+```
+
+</Guideline>
+
+Met `flex-wrap: wrap` springen items die niet meer passen naar de volgende regel.
+
+**Wie kan dit oplossen:** een developer bouwt een navigatie die bij vergrote tekst kan wrappen of naar een mobiele variant omschakelt.
+
+### De bezoeker kan niet inzoomen op de pagina
+
+De viewport meta-tag bevat `maximum-scale=1` of `user-scalable=no`. De bezoeker kan niet inzoomen. De beperking blokkeert zowel browserzoom als de knijpbeweging op mobiele apparaten.
+
+**Hoe te testen:** inspecteer de `<head>` van de pagina in de <span lang="en">DevTools</span>. Bevat de viewport meta-tag `maximum-scale`, `minimum-scale` of `user-scalable=no`?
+
+<Guideline appearance="dont" title="Viewport meta-tag blokkeert inzoomen">
+  ```html
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Viewport meta-tag zonder zoombeperkingen">
+  ```html
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  ```
+</Guideline>
+
+De meeste mobiele browsers negeren `user-scalable=no` inmiddels, maar niet allemaal. Verwijder deze attributen zodat inzoomen altijd mogelijk is.
+
+**Wie kan dit oplossen:** een developer verwijdert de zoombeperkende attributen uit de viewport meta-tag.
+
+### Formulierlabel verdwijnt achter het invoerveld bij vergroting
+
+Een label staat links naast een invoerveld. Bij 200% tekstvergroting wordt het label breder en schuift het achter of onder het invoerveld. De bezoeker ziet het label niet meer.
+
+**Hoe te testen:** vergroot de tekst tot 200%. Zijn alle labels bij hun invoervelden nog zichtbaar?
+
+<Guideline appearance="dont" title="Label en invoerveld naast elkaar met vaste breedtes">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{ display: "flex", alignItems: "center", fontFamily: "system-ui", width: "320px", color: "#1a1a1a" }}>
+        <label htmlFor="straat-fout" style={{
+          width: "150px",
+          flexShrink: 0,
+          fontSize: "1.25rem",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          textOverflow: "clip",
+        }}>Straatnaam en huisnummer</label>
+        <input id="straat-fout" type="text" style={{
+          flex: 1,
+          padding: "0.5rem",
+          fontSize: "1rem",
+          border: "1px solid #767676",
+          borderRadius: "4px",
+        }} />
+      </div>
+    )}
+  </Canvas>
+
+```css
+.form-groep {
+  display: flex;
+  align-items: center;
+}
+
+.form-groep label {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.form-groep input {
+  flex: 1;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Label boven het invoerveld, groeit mee met de tekst">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.25rem", fontFamily: "system-ui", width: "320px", color: "#1a1a1a" }}>
+        <label htmlFor="straat-goed" style={{ fontSize: "1.25rem" }}>Straatnaam en huisnummer</label>
+        <input id="straat-goed" type="text" style={{
+          padding: "0.5rem",
+          fontSize: "1rem",
+          border: "1px solid #767676",
+          borderRadius: "4px",
+        }} />
+      </div>
+    )}
+  </Canvas>
+
+```css
+.form-groep {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+```
+
+</Guideline>
+
+Labels boven het invoerveld werken het best bij tekstvergroting. Als het ontwerp labels naast de velden vereist, zorg dan dat de layout bij vergrote tekst naar een gestapelde variant overschakelt.
+
+**Wie kan dit oplossen:** een designer kiest voor labels boven het invoerveld. Een developer bouwt een layout die bij vergrote tekst naar een gestapelde variant schakelt.
+
+### Lange woorden vallen buiten een smalle container bij vergroting
+
+Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "verantwoordelijkheid" of "patiëntenvertegenwoordiger" past bij normale grootte nog binnen een zijbalk of card, maar steekt eruit zodra de tekst groter wordt. De bezoeker moet dan horizontaal scrollen, of de tekst loopt over andere elementen heen.
+
+**Hoe te testen:** vergroot de tekst tot 200% en bekijk smalle containers zoals zijbalken, tabelcellen en kaarten. Steekt er tekst uit? Houd ook rekening met andere talen: Duits en Fins kennen langere samenstellingen dan Nederlands.
+
+<Guideline appearance="dont" title="Geen woordafbreking, lange woorden steken uit de container">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <aside style={{
+        width: "180px",
+        border: "1px solid #d0d0d0",
+        padding: "0.75rem",
+        fontFamily: "system-ui",
+        fontSize: "1.15rem",
+        backgroundColor: "#fafafa",
+        color: "#1a1a1a",
+      }}>
+        <p style={{ margin: 0 }}>
+          Bel met onze patiëntenvertegenwoordiger voor meer informatie.
+        </p>
+      </aside>
+    )}
+  </Canvas>
+
+```css
+.zijbalk {
+  width: 180px;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Lange woorden mogen afbreken op woordgrenzen of lettergrepen">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <aside lang="nl" style={{
+        width: "180px",
+        border: "1px solid #d0d0d0",
+        padding: "0.75rem",
+        fontFamily: "system-ui",
+        fontSize: "1.15rem",
+        backgroundColor: "#fafafa",
+        color: "#1a1a1a",
+        overflowWrap: "break-word",
+        hyphens: "auto",
+      }}>
+        <p style={{ margin: 0 }}>
+          Bel met onze patiëntenvertegenwoordiger voor meer informatie.
+        </p>
+      </aside>
+    )}
+  </Canvas>
+
+```css
+.zijbalk {
+  width: 180px;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+```
+
+</Guideline>
+
+`overflow-wrap: break-word` breekt een te lang woord op een willekeurig punt af zodra er geen ruimte meer is. `hyphens: auto` voegt afbreekstreepjes toe op lettergreepgrenzen, maar werkt alleen als het juiste `lang`-attribuut op `<html>` of op een ouder-element staat.
+
+**Wie kan dit oplossen:** een developer voegt `overflow-wrap: break-word` toe aan tekstcontainers. Voor automatische streepjes op lettergreepgrenzen: ook `hyphens: auto` plus een correct `lang`-attribuut op `<html>`.
 
 ## Hoe te testen
 
-Volg de instructies van [WCAG succescriterium 1.4.10](/wcag/1.4.10). Als de webpagina voldoet aan 1.4.10, dan voldoet hij zeer waarschijnlijk ook aan de eisen van 1.4.4.
+### Voor iedereen
 
-## Tips
+1. Ga naar de browserinstellingen en zet de standaard lettergrootte op 200% of op "Zeer groot". In Chrome: Instellingen, Vormgeving, Lettergrootte.
+2. Bekijk de pagina. Is alle tekst groter geworden? Tekst die niet verandert, is mogelijk een afbeelding of heeft een lettergrootte die alleen meeschaalt met de schermbreedte.
+3. Controleer of er geen tekst wordt afgesneden, overlapt of buiten het scherm valt.
+4. Controleer of alle functies nog werken: formulieren, knoppen, navigatie, menu's.
+5. Test ook met browserzoom op 200% (<kbd>Ctrl</kbd> + <kbd>+</kbd> of <kbd>Cmd</kbd> + <kbd>+</kbd>). Dit vergroot alles, niet alleen tekst.
 
-- Als een pagina niet goed te vergroten is, dan kan dit in de HTML zijn ingesteld. In de `<head>` kan een `<meta>`-element staan met het attribuut `name="viewport"`. Dit element mag geen `maximum-scale` met een waarde onder de 3, of `user-scalable` met als waarde `0` of `no` bevatten.
+### Voor developers
+
+1. Zoek in de CSS naar `font-size` met alleen `vw` als eenheid. Vervang door een combinatie met `rem` via `clamp()`.
+2. Zoek naar containers met een vaste afmeting in combinatie met `overflow: hidden`. Controleer de volgende CSS properties: `height`, `width`, `block-size`, `inline-size`, en vervang ze waar mogelijk door de `min-` variant.
+3. Controleer de viewport meta-tag. Verwijder `maximum-scale`, `minimum-scale` en `user-scalable=no`.
+4. Controleer knoppen en navigatie-items. Groeien ze mee met de tekst of worden ze afgesneden?
+5. Zoek naar tekst in afbeeldingen die essentieel is voor de content. Vervang door echte tekst in HTML.
+6. Voeg `overflow-wrap: break-word` toe aan tekstcontainers, en `hyphens: auto` met een correct `lang`-attribuut op `<html>` voor automatische woordafbreking.
+7. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> voor een eerste scan. De viewport meta-tag wordt automatisch gecontroleerd.
+
+## Gerelateerde succescriteria
+
+- [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom past de layout zich aan zodat horizontaal scrollen niet nodig is. Reflow gaat over de layout, herschalen van tekst gaat over de leesbaarheid van de tekst zelf.
+- [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/): tekst die als afbeelding wordt weergegeven kan niet vergroot worden via de browserinstelling. Gebruik echte tekst in plaats van afbeeldingen.
+- [1.4.12 Tekstafstand](/wcag/1.4.12/): aangepaste regelafstand, woordafstand en letterafstand mogen geen contentverlies veroorzaken. Dezelfde CSS-oplossingen helpen bij beide criteria: flexibele containers en geen vaste hoogtes.
+- [1.4.3 Contrast (minimum)](/wcag/1.4.3/): vergrote tekst hoeft alleen aan de contrasteis van 3:1 te voldoen in plaats van 4,5:1. Tekst van 18pt of vetgedrukte tekst van 14pt geldt als groot.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 1.4.4 Herschalen van tekst](https://www.w3.org/Translations/WCAG22-nl/#herschalen-van-tekst): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 1.4.4: Resize Text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
-- Stijl - Typografie: [Introductie typografie](https://nldesignsystem.nl/richtlijnen/stijl/typografie/)
-- Stijl - Ruimte: [Introductie ruimte](https://nldesignsystem.nl/richtlijnen/stijl/ruimte/)
+- Stijl: [Introductie typografie](/richtlijnen/stijl/typografie/).
+- Stijl: [Introductie ruimte](/richtlijnen/stijl/ruimte/).
 
 ## Gebruikersonderzoek
 
@@ -58,12 +543,6 @@ Volg de instructies van [WCAG succescriterium 1.4.10](/wcag/1.4.10). Als de webp
 - Nederlandse vertaling van het WCAG-succescriterium: [1.4.4 Herschalen van tekst](https://www.w3.org/Translations/WCAG22-nl/#resize-text).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.4. Resize Text</span>](https://www.w3.org/WAI/WCAG22/quickref/#resize-text).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.4. Resize Text</span>](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
