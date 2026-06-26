@@ -13,9 +13,6 @@ const CONFIG = {
 const violations: AxeResults[] = [];
 
 test.describe('Accessibility features', () => {
-  // Axe scans on very long pages (e.g. alle-basis-tokens) can exceed the default 30s timeout on CI
-  test.setTimeout(60_000);
-
   const pathnames = getPathnamesFromSitemap(CONFIG.sitemapPath).filter((pathname) => !shouldSkipRoute(pathname));
 
   pathnames.forEach((pathname) => {
