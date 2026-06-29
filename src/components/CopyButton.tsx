@@ -5,7 +5,6 @@ import prettier from 'prettier/standalone';
 import type { ButtonHTMLAttributes } from 'react';
 import { IconCopy } from '@tabler/icons-react';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
-import { Icon } from '@utrecht/component-library-react';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   language: 'json' | 'css';
@@ -28,11 +27,8 @@ export function CopyButton({ children, content, language }: Props) {
   if (!('clipboard' in navigator)) return null;
 
   return (
-    <Button type="button" appearance="secondary-action-button" onClick={onClick}>
+    <Button type="button" appearance="secondary-action-button" onClick={onClick} icon={<IconCopy />}>
       {children}
-      <Icon>
-        <IconCopy />
-      </Icon>
     </Button>
   );
 }
