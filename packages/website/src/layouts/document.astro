@@ -8,7 +8,6 @@ import { PageLayout } from '@components/page-layout/page-layout';
 import { SkipLink } from '@components/skip-link/skip-link.tsx';
 import { NavList } from '@components/nav-list/nav-list';
 import { NavListLink } from '@components/nav-list/nav-list';
-import { Logo } from '@components/logo/logo';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
 import { MobileMenu, MobileMenuTrigger } from '@components/mobile-menu/mobile-menu';
 import { IconChevronRight } from '@tabler/icons-react';
@@ -128,10 +127,7 @@ const footerNavigationItems = [
   <body>
     <SkipLink href="#main">Naar de inhoud</SkipLink>
     <PageLayout>
-      <PageHeader>
-        <MobileMenuTrigger />
-        <a href="/" aria-label="Link naar Homepagina"><Logo /></a>
-      </PageHeader>
+      <PageHeader />
       <NavBar>
         <nav aria-labelledby="hoofdnavigatie-label">
           <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
@@ -179,9 +175,8 @@ const footerNavigationItems = [
       import { UpdateDocumentTitleEvent } from '@utils/document-title.js';
 
       document.addEventListener(UpdateDocumentTitleEvent.eventName, (event: Event) => {
-        const titleElement = document.querySelector<HTMLTitleElement>('head title');
-        if (event instanceof UpdateDocumentTitleEvent && titleElement) {
-          titleElement.innerText = event.newTitle;
+        if (event instanceof UpdateDocumentTitleEvent) {
+          document.title = event.newTitle;
         }
       });
     </script>
