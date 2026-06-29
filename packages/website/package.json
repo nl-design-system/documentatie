@@ -79,6 +79,7 @@
     "@utrecht/table-css": "3.0.1",
     "@utrecht/textarea-css": "4.0.1",
     "@utrecht/textbox-css": "4.0.1",
+    "@utrecht/textbox-react": "1.0.16",
     "a11y-syntax-highlighting": "1.1.0",
     "hast": "1.0.0",
     "invokers-polyfill": "1.0.3"

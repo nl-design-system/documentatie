@@ -619,6 +619,12 @@ importers:
       invokers-polyfill:
         specifier: 1.0.3
         version: 1.0.3
+      '@utrecht/textbox-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/textbox-react':
+        specifier: 1.0.16
+        version: 1.0.16(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@astrojs/mdx':
         specifier: 5.0.4
@@ -5513,6 +5519,13 @@ packages:
 
   '@utrecht/textbox-react@1.0.13':
     resolution: {integrity: sha512-z33gq8KRMxYlB8KR+JsXKd71QiOdt89hW6UT146bMVI+3fYjSVkOhgixf8gB0PIAKjcMFjjMsYqq4hfvtQq5gg==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
+  '@utrecht/textbox-react@1.0.16':
+    resolution: {integrity: sha512-UBfQt9Z0MshnIjZkooTlitYiB4wnLRWOxp17ebcpiyGxR30QlD6fin9ZAc/1R8SzMliPf3LlZblbHl6Pb3iO/g==}
     peerDependencies:
       '@babel/runtime': ^7.23.6
       react: ^18.0.0 || ^19.0.0
@@ -18308,6 +18321,14 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.28.6
       '@utrecht/textbox-css': 3.1.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/textbox-react@1.0.16(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/textbox-css': 4.0.1
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
