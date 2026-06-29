@@ -7,6 +7,12 @@ pagination_label: Citaten
 description: Met aanhalingstekens of de juiste markeringen zijn citaten herkenbaar voor de bezoeker met en zonder hulptechnologie.
 slug: /richtlijnen/content/citaten
 keywords:
+  - semantiek
+  - tekstopmaak
+  - structuur
+  - tekststructuur
+  - quotes
+  - citaat
   - lettergrootte
 ---
 
