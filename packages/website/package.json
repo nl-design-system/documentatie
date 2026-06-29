@@ -82,7 +82,8 @@
     "@utrecht/textbox-react": "1.0.16",
     "a11y-syntax-highlighting": "1.1.0",
     "hast": "1.0.0",
-    "invokers-polyfill": "1.0.3"
+    "invokers-polyfill": "1.0.3",
+    "dompurify": "3.4.11"
   },
   "devDependencies": {
     "@astrojs/mdx": "5.0.4",
