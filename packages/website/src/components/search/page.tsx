@@ -33,11 +33,16 @@ export const SearchPage = () => {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<SearchResult>();
   const [error, setError] = useState<SearchErrorClass | GroupError | undefined>();
+  const [autoFocus, setAutoFocus] = useState<boolean>(false);
+  const [autoFocusKnown, setAutoFocusKnown] = useState<boolean>(false);
 
   useEffect(() => {
     const url = new URL(document.URL);
     const query = url.searchParams.get('query');
+
     setSearchQuery(query);
+    setAutoFocus(Boolean(query) === false);
+    setAutoFocusKnown(true);
   }, []);
 
   useEffect(() => {
@@ -58,21 +63,23 @@ export const SearchPage = () => {
   }, [searchQuery]);
 
   return (
-    <Grid>
-      <Grid.Cell span="all">
-        <Heading level={1}>{pageTitle(searchQuery)}</Heading>
-      </Grid.Cell>
+    autoFocusKnown && (
+      <Grid>
+        <Grid.Cell span="all">
+          <Heading level={1}>{pageTitle(searchQuery)}</Heading>
+        </Grid.Cell>
 
-      <Grid.Cell span="all">
-        <SearchForm value={searchQuery} onChange={(value) => setSearchQuery(value)} />
-      </Grid.Cell>
+        <Grid.Cell span="all">
+          <SearchForm autoFocus={autoFocus} value={searchQuery} onChange={(value) => setSearchQuery(value)} />
+        </Grid.Cell>
 
-      <Grid.Cell span="all" className="ma-flow">
-        {!searchQuery && <Paragraph>Gebruik het zoekveld om te zoeken in nldesignsystem.nl</Paragraph>}
-        {loading && <Paragraph role="status">Aan het zoeken</Paragraph>}
-        {results && <SearchResults results={results} />}
-        {error && <SearchError error={error} />}
-      </Grid.Cell>
-    </Grid>
+        <Grid.Cell span="all" className="ma-flow">
+          {!searchQuery && <Paragraph>Gebruik het zoekveld om te zoeken in nldesignsystem.nl</Paragraph>}
+          {loading && <Paragraph role="status">Aan het zoeken</Paragraph>}
+          {results && <SearchResults results={results} />}
+          {error && <SearchError error={error} />}
+        </Grid.Cell>
+      </Grid>
+    )
   );
 };
