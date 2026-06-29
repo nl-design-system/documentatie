@@ -1,6 +1,7 @@
 export const siteBaseUrl = 'https://nldesignsystem.nl';
 export const siteName = 'nldesignsystem.nl';
 export const siteTitle = 'NL Design System';
+export const siteTitleSeparator = '|';
 export const siteDescription =
   'NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te ontdekken welke componenten écht werken in de praktijk.';
 export const siteKeywords = ['nl design system', 'design system'];

@@ -1,5 +1,6 @@
 ---
-import { siteName, siteTitle, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { siteName, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { generateDocumentTitle } from '@utils/document-title';
 import { PageHeader } from '@components/page-header/page-header';
 import { PageFooter } from '@components/page-footer/page-footer';
 import { NavBar } from '@components/nav-bar/nav-bar';
@@ -69,7 +70,7 @@ const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAl
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
 
-const documentTitle = `${titleSm || title} · ${siteTitle}`;
+const documentTitle = generateDocumentTitle(titleSm || title);
 const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
 const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
 const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
@@ -173,6 +174,16 @@ const footerNavigationItems = [
 
     <script>
       import 'invokers-polyfill';
+    </script>
+    <script>
+      import { UpdateDocumentTitleEvent } from '@utils/document-title.js';
+
+      document.addEventListener(UpdateDocumentTitleEvent.eventName, (event: Event) => {
+        const titleElement = document.querySelector<HTMLTitleElement>('head title');
+        if (event instanceof UpdateDocumentTitleEvent && titleElement) {
+          titleElement.innerText = event.newTitle;
+        }
+      });
     </script>
   </body>
 </html>
