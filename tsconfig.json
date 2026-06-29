@@ -3,17 +3,31 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "jsx": "react-jsx",
-    "lib": ["DOM", "ESNext"],
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
     "baseUrl": ".",
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
     "paths": {
-      "@docs/*": ["./docs/*"],
-      "@site/*": ["./*"],
-      "@theme/*": ["src/theme/*"],
-      "@utils/*": ["src/utils/*"],
-      "@components/*": ["./packages/website/src/components/*"]
+      "@docs/*": [
+        "./docs/*"
+      ],
+      "@site/*": [
+        "./*"
+      ],
+      "@theme/*": [
+        "src/theme/*"
+      ],
+      "@utils/*": [
+        "src/utils/*",
+        "packages/website/src/utils/*"
+      ],
+      "@components/*": [
+        "./packages/website/src/components/*"
+      ]
     }
   },
   "include": [
@@ -24,5 +38,7 @@
     "docs/handboek/definition-of-done/candidate-stappenplan/selectiefase.md",
     "docs/handboek/definition-of-done/candidate-stappenplan/voorbereidingsfase.md"
   ],
-  "exclude": ["**/node_modules/*"]
+  "exclude": [
+    "**/node_modules/*"
+  ]
 }
