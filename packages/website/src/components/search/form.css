@@ -1,0 +1,16 @@
+.ma-search-form {
+  container-name: search-form;
+  container-type: inline-size;
+  display: flex;
+}
+
+.ma-search-form__form {
+  display: grid;
+  grid-template-columns: minmax(auto, var(--basis-form-control-max-inline-size)) auto;
+  inline-size: 100%;
+  max-block-size: var(--basis-size-md);
+
+  .utrecht-textbox {
+    inline-size: auto;
+  }
+}

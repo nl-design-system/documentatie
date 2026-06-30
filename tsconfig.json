@@ -12,7 +12,8 @@
       "@docs/*": ["./docs/*"],
       "@site/*": ["./*"],
       "@theme/*": ["src/theme/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*", "packages/website/src/utils/*"],
+      "@components/*": ["packages/website/src/components/*"]
     }
   },
   "include": [
