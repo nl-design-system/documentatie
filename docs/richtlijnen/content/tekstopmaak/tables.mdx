@@ -19,7 +19,7 @@ keywords:
   - tabelstructuur
 ---
 
-<!-- @license CC0-1.0 -->
+{/* @license CC0-1.0 */}
 
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
@@ -37,23 +37,23 @@ Zorg ervoor dat je in het systeem waarmee je publiceert aangeeft welke cellen ko
   <Canvas language="html">
     {() => (
       <>
-          <table>
-            <tr>
-              <th>Datum</th>
-              <th>Evenement</th>
-              <th>Locatie</th>
-            </tr>
-            <tr>
-              <td>6 mei 2025</td>
-              <td>Rolling Stones</td>
-              <td>Westerpark, Amsterdam</td>
-            </tr>
-            <tr>
-              <td>10 juli 2025</td>
-              <td>Beatles</td>
-              <td>Goffertpark, Nijmegen</td>
-            </tr>
-          </table>
+        <table>
+          <tr>
+            <th>Datum</th>
+            <th>Evenement</th>
+            <th>Locatie</th>
+          </tr>
+          <tr>
+            <td>6 mei 2025</td>
+            <td>Rolling Stones</td>
+            <td>Westerpark, Amsterdam</td>
+          </tr>
+          <tr>
+            <td>10 juli 2025</td>
+            <td>Beatles</td>
+            <td>Goffertpark, Nijmegen</td>
+          </tr>
+        </table>
       </>
     )}
   </Canvas>
@@ -63,37 +63,43 @@ Zorg ervoor dat je in het systeem waarmee je publiceert aangeeft welke cellen ko
   <Canvas language="html">
     {() => (
       <>
-          <table>
-            <tr>
-              <th>Datum</th>
-              <th>Evenement</th>
-              <th>Locatie</th>
-            </tr>
-            <tr>
-              <td colspan='3'><strong>Concerten in het voorjaar</strong></td></tr>
-            <tr>
-              <td>6 mei 2025</td>
-              <td>Rolling Stones</td>
-              <td>Westerpark, Amsterdam</td>
-            </tr>
-            <tr>
-              <td>7 mei 2025</td>
-              <td>Rolling Stones</td>
-              <td>Westerpark, Amsterdam</td>
-            </tr>
-            <tr>
-              <td colspan='3'><strong>Concerten in het najaar</strong></td></tr>
-            <tr>
-              <td>10 oktober 2025</td>
-              <td>Beatles</td>
-              <td>Goffertpark, Nijmegen</td>
-            </tr>
-            <tr>
-              <td>11 oktober 2025</td>
-              <td>Beatles</td>
-              <td>Goffertpark, Nijmegen</td>
-            </tr>
-          </table>
+        <table>
+          <tr>
+            <th>Datum</th>
+            <th>Evenement</th>
+            <th>Locatie</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Concerten in het voorjaar</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>6 mei 2025</td>
+            <td>Rolling Stones</td>
+            <td>Westerpark, Amsterdam</td>
+          </tr>
+          <tr>
+            <td>7 mei 2025</td>
+            <td>Rolling Stones</td>
+            <td>Westerpark, Amsterdam</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <strong>Concerten in het najaar</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>10 oktober 2025</td>
+            <td>Beatles</td>
+            <td>Goffertpark, Nijmegen</td>
+          </tr>
+          <tr>
+            <td>11 oktober 2025</td>
+            <td>Beatles</td>
+            <td>Goffertpark, Nijmegen</td>
+          </tr>
+        </table>
       </>
     )}
   </Canvas>
@@ -133,7 +139,7 @@ Tabellen zijn een goede manier om relaties tussen gegevens aan te geven. Maar ee
             </tr>
           </tbody>
         </table>
-        <br/>
+        <br />
         <table>
           <caption>Concerten in het najaar</caption>
           <thead>
@@ -171,8 +177,11 @@ Gebruik tabellen niet alleen voor een mooiere opmaak. Met een tabel geef je name
       <>
         <table>
           <tr>
-            <td style={{inlineSize:'50%'}}>
-              <img alt="De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS" src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png" />
+            <td style={{ inlineSize: "50%" }}>
+              <img
+                alt="De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS"
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_headings_in_voiceover.png"
+              />
             </td>
             <td>De koppenstructuur zoals die wordt weergegeven door VoiceOver op MacOS</td>
           </tr>
@@ -204,7 +213,10 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
             <td>Docent Nederlands</td>
           </tr>
         </table>
-        <p>Een screenreader zal in dit geval eerst alle namen voor gaan lezen en daarna pas de functies. Het verband tussen die twee is dan helemaal verdwenen</p>
+        <p>
+          Een screenreader zal in dit geval eerst alle namen voor gaan lezen en daarna pas de functies. Het verband
+          tussen die twee is dan helemaal verdwenen
+        </p>
       </>
     )}
   </Canvas>
@@ -217,19 +229,19 @@ Zorg dat de inhoud van de tabel in een volgorde staat die óók begrijpelijk is 
         <table>
           <tr>
             <th>Naam</th>
-              <th>Functie</th>
+            <th>Functie</th>
           </tr>
           <tr>
             <td>Jan</td>
-              <td>Docent Natuurkunde</td>
+            <td>Docent Natuurkunde</td>
           </tr>
-            <tr>
+          <tr>
             <td>Piet</td>
-              <td>Netwerkbeheerder</td>
+            <td>Netwerkbeheerder</td>
           </tr>
-            <tr>
+          <tr>
             <td>Kees</td>
-              <td>Docent Nederlands</td>
+            <td>Docent Nederlands</td>
           </tr>
         </table>
         <p>Een screenreader zal in dit geval de naam en bijbehorende functie achter elkaar voorlezen.</p>

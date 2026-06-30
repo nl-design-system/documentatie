@@ -10,7 +10,7 @@ keywords:
   - lettergrootte
 ---
 
-<!-- @license CC0-1.0 -->
+{/* @license CC0-1.0 */}
 
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
@@ -26,9 +26,7 @@ Korte citaten en lange citaten kun je tussen enkele of dubbele aanhalingsteken z
   <Canvas language="html">
     {() => (
       <>
-        <p>
-          De voorzitter vroeg: “Was dat het antwoord op uw vraag?”
-        </p>
+        <p>De voorzitter vroeg: “Was dat het antwoord op uw vraag?”</p>
       </>
     )}
   </Canvas>
@@ -39,11 +37,20 @@ Als contentspecialist werk je meestal in een contentmanagementsysteem (CMS). Vee
 <Guideline appearance="do" title="Een citaat uitlichten met de specifiek daarvoor bedoelde mogelijkheid in het CMS.">
   <Canvas language="html">
     {() => (
-      <>  <p>Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. </p>
-          <blockquote>
-          Een vat vol geleerdheid is nog geen druppel wijsheid waard.
-          </blockquote>
-          <p>De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.</p>
+      <>
+        {" "}
+        <p>
+          Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de
+          discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij
+          benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en
+          empathie, in plaats van alleen maar feitenkennis.{" "}
+        </p>
+        <blockquote>Een vat vol geleerdheid is nog geen druppel wijsheid waard.</blockquote>
+        <p>
+          De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig
+          overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te
+          passen.
+        </p>
       </>
     )}
   </Canvas>
@@ -54,11 +61,20 @@ Gebruik hiervoor geen semantische opmaak die daar niet voor bedoeld is, zoals ee
 <Guideline appearance="dont" title="Een citaat uitlichten met opmaak die daar niet voor bedoeld is, zoals een kop.">
   <Canvas language="html">
     {() => (
-      <>  <p>Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. </p>
-          <h2>
-          Een vat vol geleerdheid is nog geen druppel wijsheid waard.
-          </h2>
-          <p>De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.</p>
+      <>
+        {" "}
+        <p>
+          Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de
+          discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij
+          benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en
+          empathie, in plaats van alleen maar feitenkennis.{" "}
+        </p>
+        <h2>Een vat vol geleerdheid is nog geen druppel wijsheid waard.</h2>
+        <p>
+          De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig
+          overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te
+          passen.
+        </p>
       </>
     )}
   </Canvas>
@@ -70,8 +86,15 @@ Je mag natuurlijk wel een citaat gebruiken in een koptekst als het citaat releva
   <Canvas language="html">
     {() => (
       <>
-      <h2>"Een vat vol geleerdheid is nog geen druppel wijsheid waard"</h2>
-      <p>Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en empathie, in plaats van alleen maar feitenkennis. De professor, die al decennia lang pleit voor onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig ruimte krijgen om deze informatie te reflecteren en toe te passen.</p>
+        <h2>"Een vat vol geleerdheid is nog geen druppel wijsheid waard"</h2>
+        <p>
+          Tijdens een recent interview met de gerespecteerde professor gooide hij een opmerkelijke quote in de
+          discussie. "Een vat vol geleerdheid is nog geen druppel wijsheid waard," zei hij met een glimlach. Hij
+          benadrukte dat het onderwijssysteem meer focus zou moeten leggen op het ontwikkelen van kritisch denken en
+          empathie, in plaats van alleen maar feitenkennis. De professor, die al decennia lang pleit voor
+          onderwijshervormingen, wees erop dat veel studenten tegenwoordig overspoeld worden met informatie, maar weinig
+          ruimte krijgen om deze informatie te reflecteren en toe te passen.
+        </p>
       </>
     )}
   </Canvas>
