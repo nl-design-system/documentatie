@@ -10,6 +10,10 @@ overrides:
   shell-quote@>=1.1.0 <=1.8.3: ^1.8.4
 
 patchedDependencies:
+  '@gemeente-denhaag/iconbutton@3.1.0': da0c7ecd733b2ae3ddf6302d79a2a23ac35ac3678ce602d97406281ba2b6bb8d
+  '@gemeente-denhaag/icons@4.0.1': cc14f2ecdeabcc85e8c3394c30d1de582cfbeac741d17297e4abd43fbe161240
+  '@gemeente-denhaag/number-badge@2.1.0': b675fd2f28efbeba50e82b29b6716822e040042eb2452174f3d2c70f8c3658c1
+  '@gemeente-denhaag/side-navigation@4.1.0': 3295b6f74778642baea0e502b3c3603eec54678bb51dc3218d44a96db7b95ff7
   '@rijkshuisstijl-community/card-react': c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247
 
 importers:
@@ -462,7 +466,7 @@ importers:
         version: 3.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/side-navigation':
         specifier: 4.1.0
-        version: 4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 4.1.0(patch_hash=3295b6f74778642baea0e502b3c3603eec54678bb51dc3218d44a96db7b95ff7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nl-design-system-candidate/button-css':
         specifier: 1.1.0
         version: 1.1.0
@@ -15587,9 +15591,9 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@gemeente-denhaag/iconbutton@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/iconbutton@3.1.0(patch_hash=da0c7ecd733b2ae3ddf6302d79a2a23ac35ac3678ce602d97406281ba2b6bb8d)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@gemeente-denhaag/icons': 4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/icons': 4.0.1(patch_hash=cc14f2ecdeabcc85e8c3394c30d1de582cfbeac741d17297e4abd43fbe161240)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -15605,7 +15609,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@gemeente-denhaag/icons@4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/icons@4.0.1(patch_hash=cc14f2ecdeabcc85e8c3394c30d1de582cfbeac741d17297e4abd43fbe161240)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       clsx: 2.1.1
       react: 18.3.1
@@ -15658,7 +15662,7 @@ snapshots:
       - react-vega
       - vega
 
-  '@gemeente-denhaag/number-badge@2.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/number-badge@2.1.0(patch_hash=b675fd2f28efbeba50e82b29b6716822e040042eb2452174f3d2c70f8c3658c1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -15694,11 +15698,11 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@gemeente-denhaag/side-navigation@4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/side-navigation@4.1.0(patch_hash=3295b6f74778642baea0e502b3c3603eec54678bb51dc3218d44a96db7b95ff7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@gemeente-denhaag/iconbutton': 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@gemeente-denhaag/icons': 4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@gemeente-denhaag/number-badge': 2.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/iconbutton': 3.1.0(patch_hash=da0c7ecd733b2ae3ddf6302d79a2a23ac35ac3678ce602d97406281ba2b6bb8d)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/icons': 4.0.1(patch_hash=cc14f2ecdeabcc85e8c3394c30d1de582cfbeac741d17297e4abd43fbe161240)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/number-badge': 2.1.0(patch_hash=b675fd2f28efbeba50e82b29b6716822e040042eb2452174f3d2c70f8c3658c1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
