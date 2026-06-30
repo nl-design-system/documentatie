@@ -77,6 +77,35 @@ Het formulier weet welk formaat het verwacht, maar deelt dat niet met de bezoeke
 
 **Wie kan dit oplossen:** een contentbeheerder of developer voegt het verwachte formaat en een voorbeeld toe aan de foutmelding.
 
+### Het verwachte formaat staat alleen in de foutmelding, niet in de description
+
+Een invoerveld kan een description hebben: een korte uitleg die bij het veld hoort. Een foutmelding met het verwachte formaat erin helpt al, maar de bezoeker ziet die pas nadat het misging. Staat het formaat ook in de description, dan weet de bezoeker vooraf wat het veld verwacht en hoeft die niet te raden. Zet het formaat en een voorbeeld in de description, dan kan de foutmelding kort blijven en ernaar verwijzen.
+
+**Hoe te testen:** kijk per veld waar het verwachte formaat staat. Staat het in de description bij het veld, of leert de bezoeker het pas via de foutmelding?
+
+<Guideline appearance="dont" title="Het verwachte formaat staat alleen in de foutmelding.">
+  ```html
+  <label for="datum">Geboortedatum</label>
+  <input type="text" id="datum" aria-describedby="datum-fout" aria-invalid="true" />
+  <p id="datum-fout" class="fout">
+    Vul de datum in als dd-mm-jjjj, bijvoorbeeld 15-03-1990
+  </p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Het verwachte formaat staat in de description, de foutmelding kan kort.">
+  ```html
+  <label for="datum">Geboortedatum</label>
+  <p id="datum-uitleg">Gebruik dd-mm-jjjj, bijvoorbeeld 15-03-1990</p>
+  <input type="text" id="datum" aria-describedby="datum-uitleg datum-fout" aria-invalid="true" />
+  <p id="datum-fout" class="fout">
+    Datum is niet in het juiste formaat
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een contentbeheerder zet het verwachte formaat en een voorbeeld in de [description van het veld](/richtlijnen/formulieren/descriptions). Een developer koppelt het label, de [Form Field Description](/form-field-description) en de foutmelding aan elkaar met `aria-describedby`.
+
 ### Postcode wordt afgekeurd terwijl het formaat net afwijkt
 
 Een Nederlandse postcode bestaat uit 4 cijfers en 2 letters. Bezoekers schrijven die op 2 manieren: "3512JE" en "3512 JE". Als het formulier alleen het formaat zonder spatie accepteert, krijgt de bezoeker een foutmelding terwijl de postcode correct is. Accepteer beide varianten, of bied een suggestie aan met het verwachte formaat.
