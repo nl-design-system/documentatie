@@ -13,7 +13,7 @@ keywords:
   - kleurcontrast
 ---
 
-<!-- @license CC0-1.0 -->
+{/* @license CC0-1.0 */}
 
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 import { Guideline } from "@site/src/components/Guideline";
@@ -49,7 +49,7 @@ Je vult daar de kleur van je tekst en de achtergrond in, en je ziet meteen of he
 
 Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebruik die optie alleen als het echt nodig is. Kies dan voor een kleur met voldoende contrast ten opzichte van de achtergrond. Gebruik nooit kleur als enige manier om nadruk te geven.
 
-<!-- Dit omzetten naar Do's en Dont's -->
+{/* Dit omzetten naar Do's en Dont's */}
 
 <Guideline appearance="do" title="Vette tekst gebruiken om tekst nadruk te geven">
   <Canvas language="html">
@@ -91,8 +91,13 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
   <Canvas language="html">
     {() => (
       <>
-        <div style={{ background:'center center no-repeat url("https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg")' }}>
-          <h2 style={{ padding: '50px', color: 'white' }}>Kaarten van Nederland</h2>
+        <div
+          style={{
+            background:
+              'center center no-repeat url("https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg")',
+          }}
+        >
+          <h2 style={{ padding: "50px", color: "white" }}>Kaarten van Nederland</h2>
         </div>
       </>
     )}
@@ -103,8 +108,13 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
   <Canvas language="html">
     {() => (
       <>
-        <div style={{ background:'center center no-repeat url("https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg")' }}>
-          <h2 style={{ padding: '50px', color: 'white', backgroundColor: 'rgba(0,0,0,0.5)' }}>Kaarten van Nederland</h2>
+        <div
+          style={{
+            background:
+              'center center no-repeat url("https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg")',
+          }}
+        >
+          <h2 style={{ padding: "50px", color: "white", backgroundColor: "rgba(0,0,0,0.5)" }}>Kaarten van Nederland</h2>
         </div>
       </>
     )}
