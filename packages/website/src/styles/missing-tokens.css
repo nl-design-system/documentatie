@@ -1,0 +1,105 @@
+/**
+ * These are all values yet to be included in the MA Design Tokens
+ */
+:root {
+  --denhaag-focus-border: 2px dashed var(--basis-focus-outline-color);
+  --denhaag-icon-button-color: var(--basis-color-action-2-color-default);
+  --ams-unordered-list-gap: var(--basis-space-row-lg);
+  --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-xl);
+  --rhc-card-heading-font-size: var(--basis-text-font-size-lg);
+  --rhc-card-background-color: var(--basis-color-default-bg-document);
+  --rhc-card-border-color: var(--basis-color-default-border-subtle);
+  --rhc-card-border-width: var(--basis-border-width-sm);
+  --rhc-card-border-radius: var(--basis-border-radius-md);
+  --rhc-card-row-gap: var(--basis-space-row-sm);
+  --rhc-card-padding-block-end: var(--basis-space-block-3xl);
+  --rhc-card-padding-block-start: var(--basis-space-block-xl);
+  --rhc-card-padding-inline-end: var(--basis-space-inline-xl);
+  --rhc-card-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-estafette-badge-border-width: 1px;
+  --utrecht-badge-list-column-gap: 4px;
+  --utrecht-badge-list-row-gap: 4px;
+}
+
+.nl-code-block {
+  --nl-code-block-background-color: var(--prism-a11y-color-background); /* stylelint-disable-line */
+}
+
+/**
+ * Below are all tweaks to existing community components that we want to give
+ * back to the community. Usually these are missing tokens with their proposed
+ * value.
+ */
+.rhc-card {
+  /* rhc-card.inline-size */
+  inline-size: 100%;
+}
+
+.rhc-card__heading:not(:has(a)) {
+  --rhc-card-active-text-decoration: none;
+}
+
+.utrecht-nav-bar__content {
+  box-sizing: border-box;
+
+  /* utrecht.nav-bar.content.padding-inline-end */
+  padding-inline-end: var(--basis-space-inline-xl);
+
+  /* utrecht.nav-bar.content.padding-inline-start */
+  padding-inline-start: var(--basis-space-inline-xl);
+}
+
+.denhaag-side-navigation__link {
+  /* denhaag.side-navigation.link.padding-inline-end */
+  padding-inline-end: var(--basis-space-inline-xl);
+
+  /* denhaag.side-navigation.link.padding-inline-start */
+  padding-inline-start: var(--basis-space-inline-xl);
+}
+
+.denhaag-side-navigation__link--current {
+  /* denhaag.side-navigation.link.current.border-color */
+  border-color: var(--basis-color-accent-1-border-default);
+  border-inline-start-style: solid;
+
+  /* denhaag.side-navigation.link.current.border-inline-start.width */
+  border-inline-start-width: var(--basis-border-width-lg);
+}
+
+.denhaag-side-navigation__link:hover {
+  text-decoration: underline;
+}
+
+.denhaag-side-navigation__link:focus-visible {
+  /* denhaag.side-navigation.link.focus.background-color */
+  background-color: var(--basis-focus-background-color);
+
+  /* denhaag.side-navigation.link.focus.color */
+  color: var(--basis-focus-color);
+}
+
+.denhaag-side-navigation__expand-button:hover {
+  /* denhaag.side-navigation.expand-button.hover.color */
+  --denhaag-icon-button-hover-color: var(--basis-color-action-2-color-hover);
+
+  /* denhaag.side-navigation.expand-button.hover.color */
+  background-color: var(--basis-color-action-2-bg-hover);
+}
+
+.denhaag-side-navigation__expand-button:active {
+  /* denhaag.side-navigation.expand-button.active.color */
+  --denhaag-icon-button-hover-color: var(--basis-color-action-2-color-active);
+
+  /* denhaag.side-navigation.expand-button.active.background-color */
+  background-color: var(--basis-color-action-2-bg-active);
+}
+.denhaag-side-navigation__expand-button:focus-visible {
+  /* denhaag.side-navigation.expand-button.focus.background-color */
+  background-color: var(--basis-focus-background-color);
+
+  /* denhaag.side-navigation.expand-button.focus.border */
+  border: var(--denhaag-focus-border);
+
+  /* denhaag.side-navigation.expand-button.focus.color */
+  color: var(--basis-focus-color);
+}

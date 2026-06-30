@@ -4,6 +4,11 @@ import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import remarkCustomHeaderId from 'remark-custom-header-id';
+import remarkDirective from 'remark-directive';
+import { remarkAdmonitions } from './markdown-plugins/admonitions';
+import { nldsComponentsPlugin } from './markdown-plugins/rehype-nlds-components';
+import { addTrailingSlashPlugin } from './markdown-plugins/rehype-trailing-slash';
+import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -81,13 +86,16 @@ export default defineConfig({
   },
 
   markdown: {
-    syntaxHighlight: false,
+    remarkPlugins: [remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
+    rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+    syntaxHighlight: 'prism',
   },
 
   integrations: [
     mdx({
-      remarkPlugins: [remarkCustomHeaderId],
-      syntaxHighlight: false,
+      remarkPlugins: [remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
+      rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+      syntaxHighlight: 'prism',
     }),
     react(),
     sitemap({

@@ -10,9 +10,13 @@ concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true
 
+permissions: {}
+
 jobs:
   continuous-integration:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout branch
@@ -30,13 +34,6 @@ jobs:
           cache: pnpm
 
       - name: Check for known security issues with npm packages
-        if: vars.ENABLE_PNPM_AUDIT_V11 == '1'
-        run: |
-          echo "Auditing npm dependencies with pnpm v11 before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
-          pnpm dlx pnpm@11.0.0-rc.2 --config.manage-package-manager-versions=false audit --audit-level critical
-
-      - name: Check for known security issues with npm packages
-        if: vars.ENABLE_PNPM_AUDIT_V11 != '1'
         run: |
           echo "Auditing npm dependencies before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
           pnpm audit --audit-level critical
@@ -72,6 +69,8 @@ jobs:
   csp-test:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout branch
@@ -88,13 +87,6 @@ jobs:
           node-version-file: .nvmrc
 
       - name: Check for known security issues with npm packages
-        if: vars.ENABLE_PNPM_AUDIT_V11 == '1'
-        run: |
-          echo "Auditing npm dependencies with pnpm v11 before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
-          pnpm dlx pnpm@11.0.0-rc.2 --config.manage-package-manager-versions=false audit --audit-level critical
-
-      - name: Check for known security issues with npm packages
-        if: vars.ENABLE_PNPM_AUDIT_V11 != '1'
         run: |
           echo "Auditing npm dependencies before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
           pnpm audit --audit-level critical
@@ -117,6 +109,10 @@ jobs:
   e2e-test:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
+    permissions:
+      contents: read
+    env:
+      E2E_TEST_TIMEOUT_S: 60
 
     steps:
       - name: Checkout branch
@@ -133,13 +129,6 @@ jobs:
           node-version-file: .nvmrc
 
       - name: Check for known security issues with npm packages
-        if: vars.ENABLE_PNPM_AUDIT_V11 == '1'
-        run: |
-          echo "Auditing npm dependencies with pnpm v11 before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
-          pnpm dlx pnpm@11.0.0-rc.2 --config.manage-package-manager-versions=false audit --audit-level critical
-
-      - name: Check for known security issues with npm packages
-        if: vars.ENABLE_PNPM_AUDIT_V11 != '1'
         run: |
           echo "Auditing npm dependencies before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
           pnpm audit --audit-level critical
@@ -210,6 +199,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: continuous-integration
     if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout release branch

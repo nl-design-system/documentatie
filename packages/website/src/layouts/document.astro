@@ -11,12 +11,28 @@ import { Logo } from '@components/logo/logo';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
 import { IconChevronRight } from '@tabler/icons-react';
 import { getMainNavigation } from '../navigation';
+import { navigation } from '../navigation.config.ts';
 
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
 import '@fontsource/source-sans-pro';
 import '@fontsource/source-sans-pro/700.css';
 import '@utrecht/root-css/dist/index.css';
+
+// NLDS markdown components
+import '@utrecht/blockquote-css/dist/index.css';
+import '@utrecht/emphasis-css/dist/index.css';
+import '@utrecht/figure-css/dist/index.css';
+import '@utrecht/separator-css/dist/index.css';
+import '@utrecht/ordered-list-css/dist/index.css';
+import '@utrecht/table-css/dist/index.css';
+import '@utrecht/img-css/dist/index.css';
+import '@utrecht/spotlight-section-css/dist/index.css';
+import '@nl-design-system-candidate/code-css/code.css';
+import '@nl-design-system-candidate/code-block-css/code-block.css';
+
+import 'a11y-syntax-highlighting/dist/prism/a11y-dark.css';
+import '../../src/styles/missing-tokens.css';
 
 export interface Props {
   title: string;
@@ -43,7 +59,7 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
 const _follow = follow === undefined ? index : follow;
 const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
 
-const mainNavigationItems = await getMainNavigation();
+const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
 
 const footerNavigationItems = [
   { href: '/blog/', label: 'Blog' },
@@ -98,7 +114,13 @@ const footerNavigationItems = [
         <nav aria-labelledby="hoofdnavigatie-label">
           <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
           <NavList>
-            {mainNavigationItems.map(({ href, label }) => <NavListLink href={href}>{label}</NavListLink>)}
+            {
+              mainNavigationItems.map(({ href, label, expanded, current }) => (
+                <NavListLink href={href} aria-current={expanded || current ? 'page' : null}>
+                  {label}
+                </NavListLink>
+              ))
+            }
           </NavList>
         </nav>
       </NavBar>

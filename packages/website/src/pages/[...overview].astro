@@ -4,6 +4,8 @@ import OverviewLayout from '@layouts/overview.astro';
 import { isNavigationGroup, isNavigationItem } from '../navigation';
 import { getNavigationElement } from '../navigation/get-navigation-element.ts';
 import { OverviewPage } from '@components/overview-page/overview-page';
+import { navigation } from 'src/navigation.config';
+import { Grid } from '@components/grid/grid';
 
 export async function getStaticPaths() {
   const pages = await getCollection('overviewPages');
@@ -15,7 +17,8 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const navigationElement = await getNavigationElement(Astro.url.pathname);
+const { navigationList } = (await navigation)();
+const navigationElement = getNavigationElement(navigationList, Astro.url.pathname);
 
 let pages = isNavigationGroup(navigationElement) && navigationElement.items ? navigationElement.items : [];
 pages = isNavigationItem(navigationElement) ? navigationElement.parent?.items || pages : pages;
@@ -33,8 +36,12 @@ pages = await Promise.all(pages);
   keywords={page.data.keywords}
   index={page.data.unlisted !== true}
 >
-  <h1>{page?.data?.title}</h1>
-  <p>{page?.data?.description}</p>
+  <Grid>
+    <Grid.Cell span="all">
+      <h1>{page?.data?.title}</h1>
+      <p>{page?.data?.description}</p>
+    </Grid.Cell>
+  </Grid>
 
   <OverviewPage pages={pages} />
 </OverviewLayout>

@@ -17,7 +17,7 @@ const footer: Footer = {
     },
     {
       label: 'Privacyverklaring',
-      to: '/privacyverklaring',
+      to: '/privacyverklaring/',
     },
     {
       label: 'Colofon',

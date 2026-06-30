@@ -1,0 +1,114 @@
+---
+title: Code
+hide_title: true
+sidebar_label: Code
+sidebar_position: 8
+pagination_label: Code
+description: Richtlijnen voor code-voorbeelden in communicatie vanuit het project NL Design System.
+keywords:
+  - kernteam
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+{/* @license CC0-1.0 */}
+
+# Code
+
+<Paragraph lead>
+  Met herkenbare code-voorbeelden wordt het makkelijker om richtlijnen en patronen uit het design system te begrijpen.
+  Gebruik deze tips om goede voorbeelden te maken.
+</Paragraph>
+
+## Taal
+
+Omdat alle Web Platform APIs Engelstalig zijn, gebruiken we Engelstalig code. Bijvoorbeeld: `next()` in plaats van `volgende()`.
+
+De tekstinhoud van HTML-codevoorbeelden mag wel Nederlands zijn.
+
+## Code in lopende tekst
+
+Gebruik het [Code component](../../componenten/code/index.mdx) om code in de lopende tekst en in koppen op te maken. Zo krijgt de code een beter leesbaar lettertype, en wordt voorkomen dat de tekst onbedoeld vertaald wordt door vertaalsoftware. In Markdown gebruik je daarvoor de "backtick" tekens. Bijvoorbeeld:
+
+```md
+Gebruik `alertElement.focus()` om de toetsenbordfocus te verplaatsen.
+```
+
+Gebruik Code in lopende tekst alleen voor korte code snippets die ook zonder syntax highlighting goed te begrijpen zijn, en kies anders voor een Code Block
+
+## Code Block
+
+Stel de taal van de code in bij Markdown [Code Blocks](../../componenten/code-block/index.mdx), zodat de bijpassende syntax highlighting wordt gebruikt. Bijvoorbeeld, een Markdown codeblock met het type `md`:
+
+````md
+```md
+Gebruik `alertElement.focus()` om de toetsenbordfocus te verplaatsen.
+```
+````
+
+Veelgebruikte types zijn:
+
+- `css`: CSS
+- `html`: HTML
+- `js`: JavaScript en ECMAScript
+- `json`: JSON
+- `jsx`: JavaScript met React JSX
+- `md`: Markdown
+- `mdx`: Markdown met React JSX
+- `scss`: SCSS
+- `shell`: command-line commando's en code
+- `text`: platte tekst
+- `xml`: XML
+- `yaml`: YAML configuratie-bestanden
+
+## Code comments
+
+Plaats de uitleg buiten de Code Block, en vermijd code comments in code-voorbeelden. Zo kan de uitleg in andere talen gelezen worden met vertaalsoftware.
+
+## Conventies
+
+Volg [code conventies](../../handboek/developer/03-conventies/index.md). Aandachtspunten:
+
+- gebruik moderne JavaScript, zoals arrow functions.
+- gebruik moderne events, zoals `input` in plaats van `change`.
+- gebruik moderne event APIs, zoals `key` in plaats van `keyCode`.
+
+Vermijd APIs die worden afraden, om te voorkomen dat mensen die gaan gebruiken. Bijvoorbeeld: geen `maxlength` voor `input`.
+
+Volg de NL Design System richtlijnen zoveel mogelijk, en vermijd patronen die worden afraden. Voorkomen dat mensen de verkeerde aanpak gaan gebruiken. Bijvoorbeeld: geen `maxlength` voor `input`.
+
+{/* TODO: Link naar een pagina met een overzicht van afgeraden patronen */}
+
+## Vendor prefix
+
+Gebruik `example` als prefix voor code waar een vendor prefix gebruikelijk is. Bijvoorbeeld:
+
+- class names: `class="example-button"`.
+- CSS variables: `var(--example-button-color)`.
+- design tokens: `example.button.color`.
+
+## URLs
+
+Gebruik de gereserveerde domeinnaam `example.com` in voorbeelden waar een URL nodig is. Voorkom dat je een domeinnaam gebruikt die in de toekomst in verkeerde handen kan komen.
+
+Bijvoorbeeld: `<a href="https://example.com/login">Inloggen</a>`.
+
+## Regellengte
+
+Probeer de "nesting" van de code beperkt te houden, om te voorkomen dat onnodige niveau's van nesting de regels langer maken.
+
+Code in code-voorbeelden kan automatisch opgemaakt worden met Prettier, dus de witruimte voor inspringing hoef je niet handmatig te optimaliseren.
+
+## Minimale code-voorbeelden
+
+Beperk code-voorbeelden tot een minimum, zodat het makkelijk is om de essentie te begrijpen. Voeg wel korte uitleg dat het code-voorbeeld onvolledig is, wanneer het risico bestaat dat mensen verkeerde voorbeelden als basis gebruiken.
+
+## Afkortingen
+
+Schrijf _command line options_ voluit waar mogelijk, zodat de code beter te begrijpen is zonder achtergrondkennis. Bijvoorbeeld: `npm install --save-dev` in plaats van `npm i -D`.
+
+## Realistische content
+
+Gebruik realistische teksten in voorbeelden, en geen populaire placeholder-teksten zoals "[Lorem ipsum](https://www.lipsum.com)", "[Hello, world](https://en.wikipedia.org/wiki/Hello%2C_world)" en ["foo", "bar" en "quux"](https://en.wikipedia.org/wiki/Foobar).
+
+De tekstinhoud van het code-voorbeeld moet zelf geen documentatie bevatten, alle documentatie moet beschikbaar zijn buiten de Code Block.

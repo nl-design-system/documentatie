@@ -140,7 +140,7 @@ Dit is snel opgelost: voer éénmalig `pnpm prepare` uit.
 Voor een optimale developerervaring:
 
 - Schakel **format on save** in en configureer het om Prettier uit te voeren
-- Gebruik dezelfde [Node.js‑versie](/nodejs) als het project
+- Gebruik dezelfde [Node.js‑versie](/handboek/developer/node/) als het project
 - Zorg dat de lokale Prettier config wordt gebruikt
 
 ## Voorbeeld en referentie

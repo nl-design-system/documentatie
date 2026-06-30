@@ -62,6 +62,7 @@ function generateId(options) {
 
   // Make index.json's the overview page
   filename = filename.replace(/\/index.json$/i, '');
+  filename = filename.replace('/index', '');
 
   // remove leading ordering number in file segment
   filename = filename
@@ -105,7 +106,7 @@ const docs = defineCollection({
     ],
     generateId,
   }),
-  schema,
+  schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
 });
 
 const components = defineCollection({
