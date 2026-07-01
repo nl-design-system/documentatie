@@ -1,0 +1,9 @@
+import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import type { TeamMember } from './TeamMember';
+
+const Renate: TeamMember = {
+  name: 'Julia Tol',
+  role: 'Specialist webtoegankelijkheid',
+  slack: { mention: '@Julia Tol', id: 'U07H8798ZV5'},
+
+export default Julia;
