@@ -1,4 +1,31 @@
 ---
+
+## 1.10.0
+### Minor Changes
+
+- 55a3840: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Form Field Description.
+- dfe2ef2: Toevoeging van acceptatiecriteria voor toegankelijkheid voor Form Field Error Message.
+- 9ea6f0b: Kleine wijziging schrijfwijzer voor code.
+- 8172ff7: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Data Badge.
+- 9b2d161: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Code.
+- 74b6d15: Baseline update voor juni 2026.
+- b18ea3a: Aanpassing WCAG Herschalen van tekst en Tekstafstand snippets naar non-deprecated CSS. Kleine tekstuele fix voor Reflow snippets.
+- 655ef1c: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Color Sample en omzetten checklist component voor Color Sample component pagina.
+- b35362d: Toevoeging acceptatiecriteria toegankelijkheid voor Ordered List.
+- a16a489: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Form Field Label.
+- a0bd4f5: Aanpassing WCAG Reflow snippets naar non-deprecated CSS.
+- b6d4697: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Number Badge.
+- 6df4a97: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Heading.
+- 5911c00: Baseline maart 2026 update.
+- 1193a95: Toevoeging Tekst van onderdelen aan acceptatiecriteria Icon.
+- 7a3d9fc: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Paragraph.
+- 607bbb6: NL Design System baseline update voor april 2026.
+- cb33ec8: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Icon.
+- 4f2c0d3: Toevoeging acceptatiecriteria voor toegankelijkheid voor Unordered List.
+- 9a4c303: Advies over ingeklapte teksten toegevoegd aan 1.3.1 voor Form Field Description.
+- 4c7beaa: NL Design System baseline update voor mei 2026.
+- 516b18d: Schrijfwijzer voor code-voorbeelden.
+- ede8614: Aanpassing baseline omtrent alternatieve versies en instellingen voor persoonlijke voorkeuren.
 title: Changelog
 description: De changelog van de nldesignsystem.nl website
 ---
