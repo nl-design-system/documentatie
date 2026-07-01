@@ -31,6 +31,101 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ove
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 14.8.0
+
+1 juli 2026
+
+### Community componenten Grid van Amsterdam toegevoegd
+
+Community component 'Grid' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Grid in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=33228-134).
+- Hieronder vind je de bijbehorende design tokens.
+- [Bekijk de video 'Changelog: Grid'](https://youtu.be/yA2cT8cQuxI) waarin wordt uitgelegd hoe je dit component overneemt.
+
+```json
+{
+  "ams": {
+    "grid": {
+      "column-count": {
+        "$type": "number",
+        "$value": 12
+      },
+      "column-gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.column.xl}"
+      },
+      "padding-block": {
+        "l": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.3xl}"
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.6xl}"
+        }
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.space.none}"
+      },
+      "row-gap": {
+        "l": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.xl}"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.3xl}"
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.5xl}"
+        }
+      },
+      "vi-medium": {
+        "column-count": {
+          "$type": "number",
+          "$value": 12
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      },
+      "vi-wide": {
+        "column-count": {
+          "$type": "number",
+          "$value": 12
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      },
+      "cell": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      }
+    }
+  }
+}
+```
+
 ## 14.7.0
 
 22 juni 2026
