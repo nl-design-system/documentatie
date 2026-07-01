@@ -1,6 +1,6 @@
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [23730],
+ [26592],
  {
   18127(e, n, t) {
    t.d(n, { H: () => g });
@@ -21,7 +21,7 @@
    m.displayName = 'DocumentContainer';
    const j = ({ children: e }) => (0, h.jsx)(s.ui, { className: 'nlds-canvas__example-surface', children: e });
    j.displayName = 'SurfaceContainer';
-   const g = ({ code: e, copy: n = !0, defaultExpandedCode: t = !1, displayCode: g = !0, children: b, container: v = 'document', language: y, designTokens: x }) => {
+   const g = ({ code: e, copy: n = !0, defaultExpandedCode: t = !1, displayCode: g = !0, children: b, container: v = 'document', language: x, designTokens: y }) => {
     const f = 'function' == typeof b ? b() : b,
      _ = 'function' == typeof e ? e() : (0, k.isValidElement)(e) ? e : void 0,
      w = 'string' == typeof e ? e : p.qV(_ || f),
@@ -29,7 +29,7 @@
      [C, A] = (0, k.useState)(t);
     (0, k.useEffect)(() => {
      (async () => {
-      const e = await d.Ay.format(w, { parser: y, plugins: [r.A, i.Ay, a.Ay, c.Ay], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
+      const e = await d.Ay.format(w, { parser: x, plugins: [r.A, i.Ay, a.Ay, c.Ay], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
       N(e);
      })();
     }, [w]);
@@ -40,7 +40,7 @@
      (0, h.jsxs)('div', {
       className: (0, o.A)('nlds-canvas'),
       children: [
-       f && (0, h.jsx)('div', { className: (0, o.A)('nlds-canvas__example'), children: (0, h.jsx)('div', { className: 'voorbeeld-theme', style: x, children: (0, h.jsx)(D, { children: (0, h.jsx)(s.v$, { children: f }) }) }) }),
+       f && (0, h.jsx)('div', { className: (0, o.A)('nlds-canvas__example'), children: (0, h.jsx)('div', { className: 'voorbeeld-theme', style: y, children: (0, h.jsx)(D, { children: (0, h.jsx)(s.v$, { children: f }) }) }) }),
        g &&
         (0, h.jsx)('div', {
          className: (0, o.A)('nlds-canvas__toolbar'),
@@ -61,7 +61,7 @@
          id: S,
          hidden: !C,
          children: [
-          (0, h.jsx)(l.M, { codeBlockLabel: 'Codevoorbeeld', syntax: y, textContent: z, trim: !0 }),
+          (0, h.jsx)(l.M, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: z, trim: !0 }),
           n &&
            (0, h.jsx)('div', {
             className: (0, o.A)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
@@ -100,27 +100,6 @@
     return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(s) : e.components || s) : r(e.components)), l.createElement(o.Provider, { value: n }, e.children));
    }
   },
-  46311(e, n, t) {
-   (t.r(n), t.d(n, { assets: () => k, contentTitle: () => d, default: () => u, frontMatter: () => c, metadata: () => l, toc: () => p }));
-   const l = JSON.parse('{"id":"richtlijnen/content/tekstopmaak/link-text","title":"Toegankelijke linkteksten","description":"Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.","source":"@site/docs/richtlijnen/content/tekstopmaak/link-text.md","sourceDirName":"richtlijnen/content/tekstopmaak","slug":"/richtlijnen/content/tekstopmaak/linkteksten","permalink":"/richtlijnen/content/tekstopmaak/linkteksten","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/link-text.md","tags":[],"version":"current","frontMatter":{"title":"Toegankelijke linkteksten","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Toegankelijke linkteksten","pagination_label":"Toegankelijke linkteksten","description":"Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.","slug":"/richtlijnen/content/tekstopmaak/linkteksten","keywords":["semantiek","tekstopmaak","structuur","tekststructuur","links"]},"sidebar":"richtlijnen","previous":{"title":"De juiste taal instellen","permalink":"/richtlijnen/content/tekstopmaak/taal"},"next":{"title":"Citaten","permalink":"/richtlijnen/content/citaten"}}');
-   var s = t(86070),
-    o = t(18439),
-    r = t(18127),
-    i = t(88022),
-    a = t(78734);
-   const c = { title: 'Toegankelijke linkteksten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Toegankelijke linkteksten', pagination_label: 'Toegankelijke linkteksten', description: 'Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.', slug: '/richtlijnen/content/tekstopmaak/linkteksten', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'links'] },
-    d = 'Toegankelijke linkteksten',
-    k = {},
-    p = [{ value: 'Wat werkt wel (en wat niet)?', id: 'wat-werkt-wel-en-wat-niet', level: 2 }, { value: 'Hoe te testen', id: 'hoe-te-testen', level: 2 }, { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...a.RM];
-   function h(e) {
-    const n = { a: 'a', h1: 'h1', h2: 'h2', header: 'header', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(n.header, { children: (0, s.jsx)(n.h1, { id: 'toegankelijke-linkteksten', children: 'Toegankelijke linkteksten' }) }), '\n', (0, s.jsx)(n.p, { children: 'Veel gebruikers krijgen links te zien of te horen los van de rest van de tekst. Een link als \u2018klik hier\u2019 of \u2018lees meer\u2019 zegt dan niets. Zorg daarom dat de linktekst op zichzelf duidelijk is. Dat maakt je content toegankelijker \xe9n beter vindbaar in zoekmachines.' }), '\n', (0, s.jsxs)(n.p, { children: ['Linkteksten moeten duidelijk maken waar een link naartoe gaat. Dat helpt iedereen die snel door een pagina scant, en is extra belangrijk voor mensen die niet alle context kunnen zien of horen \u2014 bijvoorbeeld omdat ze een ', (0, s.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' gebruiken, het scherm sterk vergroten, of moeite hebben met lezen.'] }), '\n', (0, s.jsx)(n.p, { children: 'Op deze pagina lees je hoe je goede linkteksten schrijft en welke fouten je beter kunt vermijden.' }), '\n', (0, s.jsx)(n.p, { children: 'Hieronder zie je voorbeelden van wat wel werkt en wat je beter kunt laten.' }), '\n', (0, s.jsx)(n.h2, { id: 'wat-werkt-wel-en-wat-niet', children: 'Wat werkt wel (en wat niet)?' }), '\n', (0, s.jsx)(i.$, { appearance: 'do', title: 'Schrijf goede toegankelijke linkteksten waaruit blijkt wat er gebeurt als je erop klikt.', children: (0, s.jsx)(r.H, { language: 'html', children: () => (0, s.jsx)(s.Fragment, { children: (0, s.jsxs)('ul', { children: [(0, s.jsxs)('li', { children: ['Meer informatie staat op de pagina ', (0, s.jsx)('a', { href: 'https://example.com/', children: 'Rechten van mensen met een beperking' })] }), (0, s.jsx)('li', { children: (0, s.jsx)('a', { href: 'https://example.com/', children: 'Download de rapportage digitale toegankelijkheid 2023 (pdf 400 kB)' }) }), (0, s.jsxs)('li', { children: ['Stuur een mail naar ', (0, s.jsx)('a', { href: 'https://example.com/', children: 'test@test.nl' })] })] }) }) }) }), '\n', (0, s.jsx)(i.$, { appearance: 'dont', title: 'Onduidelijke linkteksten gebruiken waaruit niet blijkt wat er gebeurt als je erop klikt.', children: (0, s.jsx)(r.H, { language: 'html', children: () => (0, s.jsx)(s.Fragment, { children: (0, s.jsxs)('ul', { children: [(0, s.jsxs)('li', { children: [(0, s.jsx)('a', { href: 'https://example.com/', children: 'Klik hier' }), ' voor meer informatie over de rechten van mensen met een beperking'] }), (0, s.jsxs)('li', { children: [(0, s.jsx)('a', { href: 'https://example.com/', children: 'Lees meer' }), ' over digitale toegankelijkheid'] })] }) }) }) }), '\n', (0, s.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, s.jsx)(n.p, { children: 'Lees de pagina door en controleer alle linkteksten. Gebruik de onderstaande stappen als checklist:' }), '\n', (0, s.jsxs)(n.ul, { children: ['\n', (0, s.jsx)(n.li, { children: 'Controleer of de linktekst duidelijk maakt waar de link naartoe leidt.\nVermijd vage teksten zoals \u2018klik hier\u2019 of \u2018lees meer\u2019. De linktekst moet zelfstandig begrijpelijk zijn, zodat gebruikers weten wat ze kunnen verwachten.' }), '\n', (0, s.jsx)(n.li, { children: 'Controleer of links naar verschillende bestemmingen unieke en beschrijvende linkteksten hebben.\nDit voorkomt verwarring, vooral voor gebruikers van screenreaders die een lijst van links opvragen.' }), '\n'] }), '\n', (0, s.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, s.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, s.jsxs)(n.ul, { children: ['\n', (0, s.jsx)(n.li, { children: (0, s.jsx)(n.a, { href: '/wcag/2.4.4/', children: 'Succescriterium 2.4.4 Linkdoel(in context)' }) }), '\n', (0, s.jsx)(n.li, { children: (0, s.jsx)(n.a, { href: '/wcag/2.4.9/', children: 'Succescriterium 2.4.9 Linkdoel (alleen link)' }) }), '\n', (0, s.jsx)(n.li, { children: (0, s.jsx)(n.a, { href: '/wcag/2.5.3/', children: 'Succescriterium 2.5.3 Label in naam' }) }), '\n'] }), '\n', (0, s.jsx)(a.Ay, {})] });
-   }
-   function u(e = {}) {
-    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(h, { ...e }) }) : h(e);
-   }
-  },
   78734(e, n, t) {
    t.d(n, { Ay: () => i, RM: () => o });
    var l = t(86070),
@@ -152,6 +131,27 @@
       m = 'string' == typeof t ? (0, c.jsx)(i.oz, { children: t }) : t;
      return (0, c.jsxs)(h, { className: (0, r.A)('nlds-guideline', `nlds-guideline--${n}`), id: 'string' == typeof e ? e?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(u, { className: 'nlds-guideline__description', children: ['dont' === n ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.fz, { className: (0, r.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(s.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: p.dont })] }), (0, c.jsx)(o.fz, { children: e })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(o.fz, { className: (0, r.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(l.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: p.do })] }), (0, c.jsx)(o.fz, { children: e })] }), m] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(d.Provider, { value: { title: e, type: p[n] }, children: a }) })] });
     };
+  },
+  92453(e, n, t) {
+   (t.r(n), t.d(n, { assets: () => k, contentTitle: () => d, default: () => u, frontMatter: () => c, metadata: () => l, toc: () => p }));
+   const l = JSON.parse('{"id":"richtlijnen/content/tekstopmaak/link-text","title":"Toegankelijke linkteksten","description":"Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.","source":"@site/docs/richtlijnen/content/tekstopmaak/link-text.mdx","sourceDirName":"richtlijnen/content/tekstopmaak","slug":"/richtlijnen/content/tekstopmaak/linkteksten","permalink":"/richtlijnen/content/tekstopmaak/linkteksten","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/link-text.mdx","tags":[],"version":"current","frontMatter":{"title":"Toegankelijke linkteksten","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Toegankelijke linkteksten","pagination_label":"Toegankelijke linkteksten","description":"Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.","slug":"/richtlijnen/content/tekstopmaak/linkteksten","keywords":["semantiek","tekstopmaak","structuur","tekststructuur","links"]},"sidebar":"richtlijnen","previous":{"title":"De juiste taal instellen","permalink":"/richtlijnen/content/tekstopmaak/taal"},"next":{"title":"Citaten","permalink":"/richtlijnen/content/citaten"}}');
+   var s = t(86070),
+    o = t(18439),
+    r = t(18127),
+    i = t(88022),
+    a = t(78734);
+   const c = { title: 'Toegankelijke linkteksten', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Toegankelijke linkteksten', pagination_label: 'Toegankelijke linkteksten', description: 'Schrijf duidelijke linkteksten. Dit helpt je bezoekers om het doel van de link te begrijpen.', slug: '/richtlijnen/content/tekstopmaak/linkteksten', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'links'] },
+    d = 'Toegankelijke linkteksten',
+    k = {},
+    p = [{ value: 'Wat werkt wel (en wat niet)?', id: 'wat-werkt-wel-en-wat-niet', level: 2 }, { value: 'Hoe te testen', id: 'hoe-te-testen', level: 2 }, { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...a.RM];
+   function h(e) {
+    const n = { a: 'a', h1: 'h1', h2: 'h2', header: 'header', li: 'li', p: 'p', ul: 'ul', ...(0, o.R)(), ...e.components };
+    return (0, s.jsxs)(s.Fragment, { children: ['\n', '\n', (0, s.jsx)(n.header, { children: (0, s.jsx)(n.h1, { id: 'toegankelijke-linkteksten', children: 'Toegankelijke linkteksten' }) }), '\n', (0, s.jsx)(n.p, { children: 'Veel gebruikers krijgen links te zien of te horen los van de rest van de tekst. Een link als \u2018klik hier\u2019 of \u2018lees meer\u2019 zegt dan niets. Zorg daarom dat de linktekst op zichzelf duidelijk is. Dat maakt je content toegankelijker \xe9n beter vindbaar in zoekmachines.' }), '\n', (0, s.jsxs)(n.p, { children: ['Linkteksten moeten duidelijk maken waar een link naartoe gaat. Dat helpt iedereen die snel door een pagina scant, en is extra belangrijk voor mensen die niet alle context kunnen zien of horen \u2014 bijvoorbeeld omdat ze een ', (0, s.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' gebruiken, het scherm sterk vergroten, of moeite hebben met lezen.'] }), '\n', (0, s.jsx)(n.p, { children: 'Op deze pagina lees je hoe je goede linkteksten schrijft en welke fouten je beter kunt vermijden.' }), '\n', (0, s.jsx)(n.p, { children: 'Hieronder zie je voorbeelden van wat wel werkt en wat je beter kunt laten.' }), '\n', (0, s.jsx)(n.h2, { id: 'wat-werkt-wel-en-wat-niet', children: 'Wat werkt wel (en wat niet)?' }), '\n', (0, s.jsx)(i.$, { appearance: 'do', title: 'Schrijf goede toegankelijke linkteksten waaruit blijkt wat er gebeurt als je erop klikt.', children: (0, s.jsx)(r.H, { language: 'html', children: () => (0, s.jsx)(s.Fragment, { children: (0, s.jsxs)('ul', { children: [(0, s.jsxs)('li', { children: ['Meer informatie staat op de pagina ', (0, s.jsx)('a', { href: 'https://example.com/', children: 'Rechten van mensen met een beperking' })] }), (0, s.jsx)('li', { children: (0, s.jsx)('a', { href: 'https://example.com/', children: 'Download de rapportage digitale toegankelijkheid 2023 (pdf 400 kB)' }) }), (0, s.jsxs)('li', { children: ['Stuur een mail naar ', (0, s.jsx)('a', { href: 'https://example.com/', children: 'test@test.nl' })] })] }) }) }) }), '\n', (0, s.jsx)(i.$, { appearance: 'dont', title: 'Onduidelijke linkteksten gebruiken waaruit niet blijkt wat er gebeurt als je erop klikt.', children: (0, s.jsx)(r.H, { language: 'html', children: () => (0, s.jsx)(s.Fragment, { children: (0, s.jsxs)('ul', { children: [(0, s.jsxs)('li', { children: [(0, s.jsx)('a', { href: 'https://example.com/', children: 'Klik hier' }), ' voor meer informatie over de rechten van mensen met een beperking'] }), (0, s.jsxs)('li', { children: [(0, s.jsx)('a', { href: 'https://example.com/', children: 'Lees meer' }), ' over digitale toegankelijkheid'] })] }) }) }) }), '\n', (0, s.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, s.jsx)(n.p, { children: 'Lees de pagina door en controleer alle linkteksten. Gebruik de onderstaande stappen als checklist:' }), '\n', (0, s.jsxs)(n.ul, { children: ['\n', (0, s.jsx)(n.li, { children: 'Controleer of de linktekst duidelijk maakt waar de link naartoe leidt.\nVermijd vage teksten zoals \u2018klik hier\u2019 of \u2018lees meer\u2019. De linktekst moet zelfstandig begrijpelijk zijn, zodat gebruikers weten wat ze kunnen verwachten.' }), '\n', (0, s.jsx)(n.li, { children: 'Controleer of links naar verschillende bestemmingen unieke en beschrijvende linkteksten hebben.\nDit voorkomt verwarring, vooral voor gebruikers van screenreaders die een lijst van links opvragen.' }), '\n'] }), '\n', (0, s.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, s.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, s.jsxs)(n.ul, { children: ['\n', (0, s.jsx)(n.li, { children: (0, s.jsx)(n.a, { href: '/wcag/2.4.4/', children: 'Succescriterium 2.4.4 Linkdoel(in context)' }) }), '\n', (0, s.jsx)(n.li, { children: (0, s.jsx)(n.a, { href: '/wcag/2.4.9/', children: 'Succescriterium 2.4.9 Linkdoel (alleen link)' }) }), '\n', (0, s.jsx)(n.li, { children: (0, s.jsx)(n.a, { href: '/wcag/2.5.3/', children: 'Succescriterium 2.5.3 Label in naam' }) }), '\n'] }), '\n', (0, s.jsx)(a.Ay, {})] });
+   }
+   function u(e = {}) {
+    const { wrapper: n } = { ...(0, o.R)(), ...e.components };
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(h, { ...e }) }) : h(e);
+   }
   },
   95822(e, n, t) {
    t.d(n, { M: () => c });

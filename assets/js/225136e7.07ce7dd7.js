@@ -1,6 +1,6 @@
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [35180],
+ [87122],
  {
   18127(e, n, t) {
    t.d(n, { H: () => b });
@@ -100,9 +100,9 @@
     return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(l) : e.components || l) : s(e.components)), r.createElement(o.Provider, { value: n }, e.children));
    }
   },
-  46981(e, n, t) {
+  45563(e, n, t) {
    (t.r(n), t.d(n, { assets: () => k, contentTitle: () => d, default: () => g, frontMatter: () => c, metadata: () => r, toc: () => u }));
-   const r = JSON.parse('{"id":"richtlijnen/content/tekstopmaak/colour-contrast","title":"Kleurgebruik in tekst","description":"Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.","source":"@site/docs/richtlijnen/content/tekstopmaak/colour-contrast.md","sourceDirName":"richtlijnen/content/tekstopmaak","slug":"/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst","permalink":"/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/colour-contrast.md","tags":[],"version":"current","frontMatter":{"title":"Kleurgebruik in tekst","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Kleurgebruik in tekst","pagination_label":"Kleurgebruik in tekst","description":"Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.","slug":"/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst","keywords":["tekstopmaak","kleurgebruik","tekst","kleurcontrast"]},"sidebar":"richtlijnen","previous":{"title":"Content","permalink":"/richtlijnen/content/tekstopmaak"},"next":{"title":"Tekst benadrukken","permalink":"/richtlijnen/content/tekstopmaak/tekst-benadrukken"}}');
+   const r = JSON.parse('{"id":"richtlijnen/content/tekstopmaak/colour-contrast","title":"Kleurgebruik in tekst","description":"Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.","source":"@site/docs/richtlijnen/content/tekstopmaak/colour-contrast.mdx","sourceDirName":"richtlijnen/content/tekstopmaak","slug":"/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst","permalink":"/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/colour-contrast.mdx","tags":[],"version":"current","frontMatter":{"title":"Kleurgebruik in tekst","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Kleurgebruik in tekst","pagination_label":"Kleurgebruik in tekst","description":"Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iemand slechtziend is of als de zon op je smartphone schijnt.","slug":"/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst","keywords":["tekstopmaak","kleurgebruik","tekst","kleurcontrast"]},"sidebar":"richtlijnen","previous":{"title":"Content","permalink":"/richtlijnen/content/tekstopmaak"},"next":{"title":"Tekst benadrukken","permalink":"/richtlijnen/content/tekstopmaak/tekst-benadrukken"}}');
    var l = t(86070),
     o = t(18439),
     s = t(18127),
@@ -116,6 +116,8 @@
     const n = { a: 'a', br: 'br', h1: 'h1', h2: 'h2', header: 'header', li: 'li', p: 'p', strong: 'strong', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, l.jsxs)(l.Fragment, {
      children: [
+      '\n',
+      '\n',
       (0, l.jsx)(n.header, { children: (0, l.jsx)(n.h1, { id: 'kleurgebruik-in-tekst', children: 'Kleurgebruik in tekst' }) }),
       '\n',
       (0, l.jsx)(n.p, { children: 'Kleurgebruik speelt een grote rol in hoe mensen content waarnemen. Niet iedereen ziet kleuren op dezelfde manier. Daarom is het belangrijk dat je informatie nooit alleen met kleur overbrengt, en dat tekst altijd goed leesbaar blijft tegen de achtergrond.' }),
@@ -141,6 +143,7 @@
       (0, l.jsx)(n.h2, { id: 'tekstkleur-in-het-cms', children: 'Tekstkleur in het CMS' }),
       '\n',
       (0, l.jsx)(n.p, { children: 'Sommige CMS\u2019en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebruik die optie alleen als het echt nodig is. Kies dan voor een kleur met voldoende contrast ten opzichte van de achtergrond. Gebruik nooit kleur als enige manier om nadruk te geven.' }),
+      '\n',
       '\n',
       (0, l.jsx)(i.$, { appearance: 'do', title: 'Vette tekst gebruiken om tekst nadruk te geven', children: (0, l.jsx)(s.H, { language: 'html', children: () => (0, l.jsxs)(l.Fragment, { children: ['Je kunt op eigen gelegenheid oversteken. ', (0, l.jsx)('strong', { children: 'Pas op!' }), ' Dit is ', (0, l.jsx)('strong', { children: 'erg gevaarlijk' })] }) }) }),
       '\n',

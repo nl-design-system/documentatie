@@ -1,7 +1,28 @@
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [64308],
+ [42564],
  {
+  7393(e, n, t) {
+   (t.r(n), t.d(n, { assets: () => m, contentTitle: () => d, default: () => j, frontMatter: () => c, metadata: () => s, toc: () => p }));
+   const s = JSON.parse('{"id":"richtlijnen/content/tekstopmaak/summaries","title":"Opsommingen","description":"Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een screenreader gebruiken.","source":"@site/docs/richtlijnen/content/tekstopmaak/summaries.mdx","sourceDirName":"richtlijnen/content/tekstopmaak","slug":"/richtlijnen/content/tekstopmaak/opsommingen","permalink":"/richtlijnen/content/tekstopmaak/opsommingen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/summaries.mdx","tags":[],"version":"current","frontMatter":{"title":"Opsommingen","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Opsommingen","pagination_label":"Opsommingen","description":"Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een screenreader gebruiken.","slug":"/richtlijnen/content/tekstopmaak/opsommingen","keywords":["semantiek","tekstopmaak","structuur","tekststructuur","opsommingen","geordende","ongeordende","lijst"]},"sidebar":"richtlijnen","previous":{"title":"Citaten","permalink":"/richtlijnen/content/citaten"},"next":{"title":"Tabellen","permalink":"/richtlijnen/content/tekstopmaak/tabellen"}}');
+   var o = t(86070),
+    l = t(18439),
+    r = t(18127),
+    i = t(88022),
+    a = t(78734);
+   const c = { title: 'Opsommingen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Opsommingen', pagination_label: 'Opsommingen', description: 'Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een screenreader gebruiken.', slug: '/richtlijnen/content/tekstopmaak/opsommingen', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'opsommingen', 'geordende', 'ongeordende', 'lijst'] },
+    d = 'Opsommingen',
+    m = {},
+    p = [{ value: 'Lijst-elementen', id: 'lijst-elementen', level: 2 }, { value: 'Genummerde en ongenummerde lijsten', id: 'genummerde-en-ongenummerde-lijsten', level: 2 }, { value: 'Hoe te testen', id: 'hoe-te-testen', level: 2 }, { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...a.RM];
+   function u(e) {
+    const n = { a: 'a', h1: 'h1', h2: 'h2', header: 'header', li: 'li', p: 'p', ul: 'ul', ...(0, l.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: ['\n', '\n', (0, o.jsx)(n.header, { children: (0, o.jsx)(n.h1, { id: 'opsommingen', children: 'Opsommingen' }) }), '\n', (0, o.jsxs)(n.p, { children: ['Met een opsomming maak je informatie overzichtelijk. Dat is handig voor iedereen die snel wil scannen, maar ook belangrijk voor mensen die gebruikmaken van een ', (0, o.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' of een vergroot scherm.'] }), '\n', (0, o.jsx)(n.p, { children: 'Alleen: niet elke lijst is automatisch toegankelijk. Dat hangt af van de manier waarop je de opsomming opmaakt. Een visuele lijst met streepjes of icoontjes wordt niet altijd herkend door hulptechnologie. Ook het type lijst, genummerd of ongenummerd, moet passen bij de inhoud.' }), '\n', (0, o.jsx)(n.p, { children: 'Op deze pagina lees je hoe je opsommingen toegankelijk maakt en welke opmaak je het beste kunt gebruiken.' }), '\n', (0, o.jsx)(n.h2, { id: 'lijst-elementen', children: 'Lijst-elementen' }), '\n', (0, o.jsx)(n.p, { children: 'Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. De meeste CMS-en bieden hier een aparte optie voor aan. Maak niet zelf een lijst door het gebruik van bijvoorbeeld leestekens. Hulpsoftware herkent deze opmaak namelijk niet als een lijst.' }), '\n', (0, o.jsx)(i.$, { appearance: 'dont', title: 'Zelf sterretjes, streepjes of nummers typen om een lijst te maken.', children: (0, o.jsx)(r.H, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsxs)('p', { children: ['- Dit is geen lijst', (0, o.jsx)('br', {}), '- Dit is geen lijst', (0, o.jsx)('br', {}), '- Dit is geen lijst', (0, o.jsx)('br', {}), '- Dit is geen lijst', (0, o.jsx)('br', {}), (0, o.jsx)('br', {}), '1. Dit is \xf3\xf3k geen lijst', (0, o.jsx)('br', {}), '2. Dit is \xf3\xf3k geen lijst', (0, o.jsx)('br', {}), '3. Dit is \xf3\xf3k geen lijst', (0, o.jsx)('br', {}), '4. Dit is \xf3\xf3k geen lijst', (0, o.jsx)('br', {}), (0, o.jsx)('br', {})] }) }) }) }), '\n', (0, o.jsx)(n.h2, { id: 'genummerde-en-ongenummerde-lijsten', children: 'Genummerde en ongenummerde lijsten' }), '\n', (0, o.jsx)(i.$, { appearance: 'do', title: 'Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verwerken van de informatie of als de items in een vaste volgorde staan. Bijvoorbeeld bij een stappenplan. Gebruik anders een ongenummerde lijst met opsommingstekens.', children: (0, o.jsx)(r.H, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('h2', { children: 'Burrata salade' }), (0, o.jsx)('p', { children: 'Een lekkere salade met burrata en tomaten.' }), (0, o.jsx)('h3', { children: 'Ingredi\xebnten' }), (0, o.jsxs)('ul', { children: [(0, o.jsx)('li', { children: '250 gr (snoep)tomaten' }), (0, o.jsx)('li', { children: '1 bol burrata' }), (0, o.jsx)('li', { children: 'verse basilicum' }), (0, o.jsx)('li', { children: '1 el pesto' }), (0, o.jsx)('li', { children: 'scheutje olijfolie' }), (0, o.jsx)('li', { children: 'handje rucola' }), (0, o.jsx)('li', { children: 'crema di balsamico' }), (0, o.jsx)('li', { children: 'zwarte peper' })] }), (0, o.jsx)('h3', { children: 'Bereiding' }), (0, o.jsxs)('ol', { children: [(0, o.jsx)('li', { children: 'Snijd de tomaten in stukjes.' }), (0, o.jsx)('li', { children: 'Verdeel de rucola over een bord, en voeg ook de tomaten toe.' }), (0, o.jsx)('li', { children: 'Leg de bol burrata in het midden van de salade.' }), (0, o.jsx)('li', { children: 'Verdeel wat peper, olijfolie en crema di balsamico over de salade.' }), (0, o.jsx)('li', { children: 'Maak af met een schepje pesto en wat verse basilicum.' })] })] }) }) }), '\n', (0, o.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, o.jsx)(n.p, { children: 'Lees de pagina door en controleer alle opsommingen. Gebruik de onderstaande stappen als checklist:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Bekijk of de tekst is opgemaakt via de opsomknoppen in je CMS, en niet met zelfgetypte streepjes of andere tekens want die worden niet als lijst herkend door hulptechnologie.' }), '\n', (0, o.jsx)(n.li, { children: 'Controleer of je een genummerde of ongenummerde lijst hebt gekozen die past bij de inhoud.\nGebruik een genummerde lijst als de volgorde belangrijk is (zoals bij stappen). Gebruik een ongenummerde lijst als de volgorde geen rol speelt.' }), '\n'] }), '\n', (0, o.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, o.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/wcag/1.3.1/', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n'] }), '\n', (0, o.jsx)(a.Ay, {})] });
+   }
+   function j(e = {}) {
+    const { wrapper: n } = { ...(0, l.R)(), ...e.components };
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(u, { ...e }) }) : u(e);
+   }
+  },
   18127(e, n, t) {
    t.d(n, { H: () => b });
    var s = t(95822),
@@ -21,7 +42,7 @@
    h.displayName = 'DocumentContainer';
    const g = ({ children: e }) => (0, u.jsx)(o.ui, { className: 'nlds-canvas__example-surface', children: e });
    g.displayName = 'SurfaceContainer';
-   const b = ({ code: e, copy: n = !0, defaultExpandedCode: t = !1, displayCode: b = !0, children: k, container: v = 'document', language: y, designTokens: x }) => {
+   const b = ({ code: e, copy: n = !0, defaultExpandedCode: t = !1, displayCode: b = !0, children: k, container: v = 'document', language: x, designTokens: y }) => {
     const f = 'function' == typeof k ? k() : k,
      _ = 'function' == typeof e ? e() : (0, m.isValidElement)(e) ? e : void 0,
      w = 'string' == typeof e ? e : p.qV(_ || f),
@@ -29,7 +50,7 @@
      [C, A] = (0, m.useState)(t);
     (0, m.useEffect)(() => {
      (async () => {
-      const e = await d.Ay.format(w, { parser: y, plugins: [r.A, i.Ay, a.Ay, c.Ay], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
+      const e = await d.Ay.format(w, { parser: x, plugins: [r.A, i.Ay, a.Ay, c.Ay], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
       N(e);
      })();
     }, [w]);
@@ -40,7 +61,7 @@
      (0, u.jsxs)('div', {
       className: (0, l.A)('nlds-canvas'),
       children: [
-       f && (0, u.jsx)('div', { className: (0, l.A)('nlds-canvas__example'), children: (0, u.jsx)('div', { className: 'voorbeeld-theme', style: x, children: (0, u.jsx)(D, { children: (0, u.jsx)(o.v$, { children: f }) }) }) }),
+       f && (0, u.jsx)('div', { className: (0, l.A)('nlds-canvas__example'), children: (0, u.jsx)('div', { className: 'voorbeeld-theme', style: y, children: (0, u.jsx)(D, { children: (0, u.jsx)(o.v$, { children: f }) }) }) }),
        b &&
         (0, u.jsx)('div', {
          className: (0, l.A)('nlds-canvas__toolbar'),
@@ -61,7 +82,7 @@
          id: S,
          hidden: !C,
          children: [
-          (0, u.jsx)(s.M, { codeBlockLabel: 'Codevoorbeeld', syntax: y, textContent: z, trim: !0 }),
+          (0, u.jsx)(s.M, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: z, trim: !0 }),
           n &&
            (0, u.jsx)('div', {
             className: (0, l.A)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
@@ -98,27 +119,6 @@
    function i(e) {
     let n;
     return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(o) : e.components || o) : r(e.components)), s.createElement(l.Provider, { value: n }, e.children));
-   }
-  },
-  52187(e, n, t) {
-   (t.r(n), t.d(n, { assets: () => m, contentTitle: () => d, default: () => j, frontMatter: () => c, metadata: () => s, toc: () => p }));
-   const s = JSON.parse('{"id":"richtlijnen/content/tekstopmaak/summaries","title":"Opsommingen","description":"Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een screenreader gebruiken.","source":"@site/docs/richtlijnen/content/tekstopmaak/summaries.md","sourceDirName":"richtlijnen/content/tekstopmaak","slug":"/richtlijnen/content/tekstopmaak/opsommingen","permalink":"/richtlijnen/content/tekstopmaak/opsommingen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/content/tekstopmaak/summaries.md","tags":[],"version":"current","frontMatter":{"title":"Opsommingen","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Opsommingen","pagination_label":"Opsommingen","description":"Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een screenreader gebruiken.","slug":"/richtlijnen/content/tekstopmaak/opsommingen","keywords":["semantiek","tekstopmaak","structuur","tekststructuur","opsommingen","geordende","ongeordende","lijst"]},"sidebar":"richtlijnen","previous":{"title":"Citaten","permalink":"/richtlijnen/content/citaten"},"next":{"title":"Tabellen","permalink":"/richtlijnen/content/tekstopmaak/tabellen"}}');
-   var o = t(86070),
-    l = t(18439),
-    r = t(18127),
-    i = t(88022),
-    a = t(78734);
-   const c = { title: 'Opsommingen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Opsommingen', pagination_label: 'Opsommingen', description: 'Zorg dat een opsomming goed is opgemaakt, zodat deze beter bruikbaar is voor bijvoorbeeld blinde mensen die een screenreader gebruiken.', slug: '/richtlijnen/content/tekstopmaak/opsommingen', keywords: ['semantiek', 'tekstopmaak', 'structuur', 'tekststructuur', 'opsommingen', 'geordende', 'ongeordende', 'lijst'] },
-    d = 'Opsommingen',
-    m = {},
-    p = [{ value: 'Lijst-elementen', id: 'lijst-elementen', level: 2 }, { value: 'Genummerde en ongenummerde lijsten', id: 'genummerde-en-ongenummerde-lijsten', level: 2 }, { value: 'Hoe te testen', id: 'hoe-te-testen', level: 2 }, { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...a.RM];
-   function u(e) {
-    const n = { a: 'a', h1: 'h1', h2: 'h2', header: 'header', li: 'li', p: 'p', ul: 'ul', ...(0, l.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.header, { children: (0, o.jsx)(n.h1, { id: 'opsommingen', children: 'Opsommingen' }) }), '\n', (0, o.jsxs)(n.p, { children: ['Met een opsomming maak je informatie overzichtelijk. Dat is handig voor iedereen die snel wil scannen, maar ook belangrijk voor mensen die gebruikmaken van een ', (0, o.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreader' }), ' of een vergroot scherm.'] }), '\n', (0, o.jsx)(n.p, { children: 'Alleen: niet elke lijst is automatisch toegankelijk. Dat hangt af van de manier waarop je de opsomming opmaakt. Een visuele lijst met streepjes of icoontjes wordt niet altijd herkend door hulptechnologie. Ook het type lijst, genummerd of ongenummerd, moet passen bij de inhoud.' }), '\n', (0, o.jsx)(n.p, { children: 'Op deze pagina lees je hoe je opsommingen toegankelijk maakt en welke opmaak je het beste kunt gebruiken.' }), '\n', (0, o.jsx)(n.h2, { id: 'lijst-elementen', children: 'Lijst-elementen' }), '\n', (0, o.jsx)(n.p, { children: 'Stel een lijst in als lijst-element via de contenteditor in je contentmanagementsysteem (CMS). Zo krijgt de lijst de juiste opmaak en de juiste HTML-elementen mee. De meeste CMS-en bieden hier een aparte optie voor aan. Maak niet zelf een lijst door het gebruik van bijvoorbeeld leestekens. Hulpsoftware herkent deze opmaak namelijk niet als een lijst.' }), '\n', (0, o.jsx)(i.$, { appearance: 'dont', title: 'Zelf sterretjes, streepjes of nummers typen om een lijst te maken.', children: (0, o.jsx)(r.H, { language: 'html', children: () => (0, o.jsx)(o.Fragment, { children: (0, o.jsxs)('p', { children: ['- Dit is geen lijst', (0, o.jsx)('br', {}), '- Dit is geen lijst', (0, o.jsx)('br', {}), '- Dit is geen lijst', (0, o.jsx)('br', {}), '- Dit is geen lijst', (0, o.jsx)('br', {}), (0, o.jsx)('br', {}), '1. Dit is \xf3\xf3k geen lijst', (0, o.jsx)('br', {}), '2. Dit is \xf3\xf3k geen lijst', (0, o.jsx)('br', {}), '3. Dit is \xf3\xf3k geen lijst', (0, o.jsx)('br', {}), '4. Dit is \xf3\xf3k geen lijst', (0, o.jsx)('br', {}), (0, o.jsx)('br', {})] }) }) }) }), '\n', (0, o.jsx)(n.h2, { id: 'genummerde-en-ongenummerde-lijsten', children: 'Genummerde en ongenummerde lijsten' }), '\n', (0, o.jsx)(i.$, { appearance: 'do', title: 'Gebruik een genummerde lijst wanneer de nummering de bezoeker helpt met het verwerken van de informatie of als de items in een vaste volgorde staan. Bijvoorbeeld bij een stappenplan. Gebruik anders een ongenummerde lijst met opsommingstekens.', children: (0, o.jsx)(r.H, { language: 'html', children: () => (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)('h2', { children: 'Burrata salade' }), (0, o.jsx)('p', { children: 'Een lekkere salade met burrata en tomaten.' }), (0, o.jsx)('h3', { children: 'Ingredi\xebnten' }), (0, o.jsxs)('ul', { children: [(0, o.jsx)('li', { children: '250 gr (snoep)tomaten' }), (0, o.jsx)('li', { children: '1 bol burrata' }), (0, o.jsx)('li', { children: 'verse basilicum' }), (0, o.jsx)('li', { children: '1 el pesto' }), (0, o.jsx)('li', { children: 'scheutje olijfolie' }), (0, o.jsx)('li', { children: 'handje rucola' }), (0, o.jsx)('li', { children: 'crema di balsamico' }), (0, o.jsx)('li', { children: 'zwarte peper' })] }), (0, o.jsx)('h3', { children: 'Bereiding' }), (0, o.jsxs)('ol', { children: [(0, o.jsx)('li', { children: 'Snijd de tomaten in stukjes.' }), (0, o.jsx)('li', { children: 'Verdeel de rucola over een bord, en voeg ook de tomaten toe.' }), (0, o.jsx)('li', { children: 'Leg de bol burrata in het midden van de salade.' }), (0, o.jsx)('li', { children: 'Verdeel wat peper, olijfolie en crema di balsamico over de salade.' }), (0, o.jsx)('li', { children: 'Maak af met een schepje pesto en wat verse basilicum.' })] })] }) }) }), '\n', (0, o.jsx)(n.h2, { id: 'hoe-te-testen', children: 'Hoe te testen' }), '\n', (0, o.jsx)(n.p, { children: 'Lees de pagina door en controleer alle opsommingen. Gebruik de onderstaande stappen als checklist:' }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: 'Bekijk of de tekst is opgemaakt via de opsomknoppen in je CMS, en niet met zelfgetypte streepjes of andere tekens want die worden niet als lijst herkend door hulptechnologie.' }), '\n', (0, o.jsx)(n.li, { children: 'Controleer of je een genummerde of ongenummerde lijst hebt gekozen die past bij de inhoud.\nGebruik een genummerde lijst als de volgorde belangrijk is (zoals bij stappen). Gebruik een ongenummerde lijst als de volgorde geen rol speelt.' }), '\n'] }), '\n', (0, o.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, o.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, o.jsxs)(n.ul, { children: ['\n', (0, o.jsx)(n.li, { children: (0, o.jsx)(n.a, { href: '/wcag/1.3.1/', children: 'Succescriterium 1.3.1 Info en relaties' }) }), '\n'] }), '\n', (0, o.jsx)(a.Ay, {})] });
-   }
-   function j(e = {}) {
-    const { wrapper: n } = { ...(0, l.R)(), ...e.components };
-    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(u, { ...e }) }) : u(e);
    }
   },
   78734(e, n, t) {
