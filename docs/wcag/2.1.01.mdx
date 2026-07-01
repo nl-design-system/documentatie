@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.1 Toetsenbord
 pagination_label: WCAG-succescriterium 2.1.1 Toetsenbord
-description: Elke actie is uit te voeren met een toetsenbord.
+description: Alle functionaliteit op een webpagina moet te bedienen zijn met alleen een toetsenbord.
 slug: 2.1.1
 keywords:
   - WCAG
@@ -15,15 +15,20 @@ keywords:
   - operable
   - keyboard accessible
   - keyboard
+  - toetsenbordtoegankelijkheid
+  - focusbaar
+  - interactief
+  - WCAG 2.1.1
+  - toetsenbord
+  - website bedienen zonder muis
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.1.1-summary.md";
 
@@ -31,121 +36,319 @@ import Summary from "./summaries/_2.1.1-summary.md";
   {"WCAG-succescriterium 2.1.1 Toetsenbord"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Elke actie is uit te voeren met een toetsenbord.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">
-      Acties die je kunt uitvoeren met een [aanwijzer](/woordenlijst/#aanwijzer) kunnen ook met een toetsenbord.
-    </dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Veel mensen zijn afhankelijk van bediening met het toetsenbord, onder andere mensen die blind zijn of een beperkte
-      mobiliteit hebben.
-    </dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-Het toetsenbord is een veel gebruikt hulpmiddel voor mensen met een beperking. Niet iedereen kan een muis of een ander apparaat met aanwijzer gebruiken. Dit criterium is voor tal van hulpmiddelen die zich gedragen als een toetsenbord. Denk hierbij naast het toetsenbord aan een [screenreader](/woordenlijst/#screenreader) of een [eenfunctieschakelaar](/woordenlijst/#eenfunctieschakelaar).
+Vrij tekenen of een handtekening zetten met de muis of een touchscreen is uitgezonderd van dit succescriterium. <span lang="en">Drag-and-drop</span> is dat niet: het eindpunt is wat telt, niet het pad ernaartoe. <span lang="en">Drag-and-drop</span> moet dus ook met het toetsenbord werken.
 
-### Hoe het hoort te werken
+Bezoekers moeten op hun eigen tempo toetsen kunnen indrukken, zonder tijdsdruk. Een sneltoets die alleen werkt als je twee toetsen binnen een halve seconde indrukt, sluit mensen uit die daar langer voor nodig hebben.
 
-Het is relatief laagdrempelig om verbeteringen te vinden voor dit criterium; een computer met toetsenbord volstaat. Dit zorgt ervoor dat velen een bijdrage kunnen leveren aan het voldoen aan dit criterium.
+## Veelgemaakte fouten
 
-- De interactieve onderdelen op een pagina moet je kunnen bereiken met <kbd>tab</kbd> en de combinatie <kbd>shift+tab</kbd>. <kbd>tab</kbd> navigeert je van het ene naar het andere interactieve element in een logische volgorde ([WCAG-successcriterium 2.4.3 Focus volgorde](/wcag/2.4.3)). <kbd>shift+tab</kbd> doet hetzelfde maar in omgekeerde volgorde.
-- Binnen een onderdeel zijn soms de pijltjestoetsen nodig. Denk hierbij aan groeperingen zoals radio-buttons, tabbladen en kalenders. Een groepering zoals een kalender is bereikbaar met <kbd>tab</kbd>. Losse dagen zijn daarna bereikbaar met pijltjestoetsen.
-- Het activeren of bedienen van elementen moet ook met het toetsenbord kunnen.
-  - Een link is te activeren met <kbd>return/enter</kbd>.
-  - Een knop is daarnaast te activeren met de <kbd>spatiebalk</kbd>.
-  - Selecties binnen een onderdeel kunnen vaak met de <kbd>spatiebalk</kbd>.
-  - Sommige elementen zoals sliders zijn te bedienen met pijltjestoetsen.
-  - Een formulier kan verzonden worden met <kbd>return/enter</kbd> in plaats van een `<button>` te gebruiken. Dit heet [<span lang="en">implicit submission</span>](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission).
-  - Soms zijn er nog andere manieren om het toetsenbord te gebruik. Denk hierbij aan acties annuleren met <kbd>esc</kbd> of navigeren met toetsen als <kbd>home</kbd> en <kbd>end</kbd>. Als er twijfel is bij zelfgebouwde elementen, vergelijk dan met pure HTML.
+### Klikbare div of span in plaats van een button of link
 
-Op MacOS kunnen extra instellingen nodig zijn:
+Een `<div>` of `<span>` met een `onclick`-handler is niet bereikbaar met het toetsenbord. Toetsenbordgebruikers kunnen er niet naartoe tabben en het niet activeren met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>. Gebruik een `<button>` voor acties en een `<a>` voor navigatie.
 
-- [<span lang="en">Keyboard navigation on MacOS</span>](https://support.apple.com/en-gb/guide/mac-help/mchlc06d1059/mac).
-- [<span lang="en">How to activate keyboard navigation on MacOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
+**Hoe te testen:** druk op <kbd>Tab</kbd> en controleer of je het element kunt bereiken. Probeer het te activeren met <kbd>Enter</kbd>.
+
+<Guideline appearance="dont" title="Klikbare div is niet bereikbaar met het toetsenbord.">
+
+```html
+<div class="knop" onclick="verstuur()">Versturen</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Een button is bereikbaar met het toetsenbord.">
+
+```html
+<button type="button" onclick="verstuur()">Versturen</button>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de `<div>` of `<span>` door een `<button>` of `<a>`.
+
+### Muisgebeurtenissen zonder toetsenbordalternatieven
+
+Interactie die alleen werkt via `onmouseover`, `onmousedown` of `ondblclick` is niet te gebruiken met een toetsenbord. Elke muisgebeurtenis moet een gelijkwaardige toetsenbordgebeurtenis hebben.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> naar het element. Verschijnt dezelfde interactie als bij hover met de muis?
+
+{/* prettier-ignore */}
+<Guideline appearance="dont" title="Alleen een muisgebeurtenis, geen toetsenbordgebeurtenis.">
+
+```javascript
+element.addEventListener("mouseover", toonTooltip);
+```
+
+</Guideline>
+
+{/* prettier-ignore */}
+<Guideline appearance="do" title="Zowel muis- als toetsenbordgebeurtenissen.">
+
+```javascript
+element.addEventListener("mouseover", toonTooltip);
+element.addEventListener("focus", toonTooltip);
+element.addEventListener("mouseout", verbergTooltip);
+element.addEventListener("blur", verbergTooltip);
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `focus`- en `blur`-events toe naast de muisgebeurtenissen.
+
+### Zelfgemaakte dropdown die niet met het toetsenbord te bedienen is
+
+Een dropdown moet te openen zijn met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>, je moet door de opties kunnen bewegen met pijltjestoetsen en <kbd>Escape</kbd> moet de dropdown sluiten. Een native `<select>`-element doet dit automatisch. Zelfgemaakte dropdowns missen deze toetsenbordbediening vaak.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> naar de dropdown. Kun je hem openen met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>? Kun je door de opties bewegen met pijltjestoetsen? Sluit <kbd>Escape</kbd> de dropdown?
+
+<Guideline appearance="dont" title="Zelfgemaakte dropdown zonder toetsenbordondersteuning.">
+
+```html
+<div class="dropdown" onclick="toggleMenu()">
+  <span>Kies een optie</span>
+  <ul class="dropdown-opties" style="display:none;">
+    <li onclick="selecteer('a')">Optie A</li>
+    <li onclick="selecteer('b')">Optie B</li>
+  </ul>
+</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Native select-element is toetsenbordtoegankelijk.">
+
+```html
+<label for="keuze">Kies een optie</label>
+<select id="keuze">
+  <option value="a">Optie A</option>
+  <option value="b">Optie B</option>
+</select>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de dropdown door een `<select>`-element, of gebruikt een bestaande toegankelijke combobox-component.
+
+### Drag-and-drop zonder toetsenbordalternatief
+
+Bij een sorteerbare lijst moet elke bezoeker items kunnen verplaatsen, ook zonder muis. Dat kan bijvoorbeeld met knoppen om items omhoog en omlaag te verplaatsen, of met een toetsenbordvriendelijke <span lang="en">drag-and-drop</span>-implementatie.
+
+**Hoe te testen:** probeer de sorteerlijst te bedienen met alleen het toetsenbord. Kun je items verplaatsen zonder muis?
+
+<Guideline appearance="dont" title="Alleen drag-and-drop, geen toetsenbordalternatief.">
+
+```html
+<ul id="sorteerlijst">
+  <li draggable="true">Item 1</li>
+  <li draggable="true">Item 2</li>
+</ul>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Drag-and-drop met toetsenbordknoppen als alternatief.">
+
+```html
+<ul id="sorteerlijst">
+  <li>
+    Item 1
+    <button aria-label="Item 1 omhoog verplaatsen">&#9650;</button>
+    <button aria-label="Item 1 omlaag verplaatsen">&#9660;</button>
+  </li>
+  <li>
+    Item 2
+    <button aria-label="Item 2 omhoog verplaatsen">&#9650;</button>
+    <button aria-label="Item 2 omlaag verplaatsen">&#9660;</button>
+  </li>
+</ul>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt knoppen toe om items met het toetsenbord te verplaatsen.
+
+### Content verschijnt bij hover maar niet bij toetsenbordfocus
+
+Informatie die alleen verschijnt als je erover hovert met de muis is onbereikbaar met een toetsenbord. Bijvoorbeeld tooltips, uitklapmenu's en extra details.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> naar het element. Verschijnt dezelfde content als bij hover?
+
+<Guideline appearance="dont" title="Content alleen zichtbaar bij hover, niet bij focus.">
+
+```css
+.tooltip {
+  display: none;
+}
+.trigger:hover .tooltip {
+  display: block;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Content ook zichtbaar bij toetsenbordfocus.">
+
+```css
+.tooltip {
+  display: none;
+}
+.trigger:hover .tooltip,
+.trigger:focus .tooltip,
+.trigger:focus-within .tooltip {
+  display: block;
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `:focus` en `:focus-within` toe aan de CSS naast `:hover`.
+
+### Carrousel of slider zonder toetsenbordbediening
+
+Carrousels die alleen via <span lang="en">swipe</span> of klikken op pijltjes werken, zonder dat de navigatieknoppen focusbaar zijn, sluiten toetsenbordgebruikers uit.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> naar de carrousel. Kun je de navigatieknoppen bereiken en activeren met <kbd>Enter</kbd>?
+
+<Guideline appearance="dont" title="Pijltjes als niet-focusbare divs.">
+
+```html
+<div class="pijl-links" onclick="vorigeSlide()">&#8249;</div>
+<div class="pijl-rechts" onclick="volgendeSlide()">&#8250;</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Pijltjes als focusbare knoppen.">
+
+```html
+<button aria-label="Vorige slide" onclick="vorigeSlide()">&#8249;</button>
+<button aria-label="Volgende slide" onclick="volgendeSlide()">&#8250;</button>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de divs door `<button>`-elementen.
+
+### Eindeloos scrollen zonder alternatieve navigatie
+
+Bij <span lang="en">infinite scroll</span> verdwijnt de footer en worden steeds nieuwe elementen geladen als je naar beneden scrollt. Met een toetsenbord raak je vast in een eindeloze lijst en kom je nooit bij de footer, navigatie of andere pagina-onderdelen.
+
+**Hoe te testen:** beweeg met <kbd>Tab</kbd> door de pagina. Kun je voorbij de lijst komen bij de footer en andere pagina-onderdelen?
+
+<Guideline appearance="dont" title="Eindeloos scrollen zonder navigatiealternatief.">
+
+```html
+<div class="resultaten" onscroll="laadMeer()">
+  <!-- eindeloze lijst -->
+</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Paginering of een laad-meer-knop als alternatief.">
+
+```html
+<div class="resultaten">
+  <!-- beperkte lijst -->
+</div>
+<button onclick="laadMeer()">Meer resultaten laden</button>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt <span lang="en">infinite scroll</span> door paginering of een "meer laden"-knop.
+
+### Mediaspeler met onbereikbare bedieningsknoppen
+
+Eigen mediaspelers waarvan de knoppen niet focusbaar of activeerbaar zijn met het toetsenbord. Bijvoorbeeld afspelen, pauzeren, volume en volledig scherm. Zonder muis kun je de video of audio dan niet bedienen.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> naar de mediaspeler. Kun je alle bedieningsknoppen bereiken en activeren?
+
+<Guideline appearance="dont" title="Mediaspeler met divs als knoppen.">
+
+```html
+<div class="play-knop" onclick="speel()">&#9654;</div>
+<div class="volume" onclick="volume()">&#128266;</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Mediaspeler met echte knoppen.">
+
+```html
+<button aria-label="Afspelen" onclick="speel()">&#9654;</button>
+<button aria-label="Volume aanpassen" onclick="volume()">&#128266;</button>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de divs door `<button>`-elementen met een `aria-label`.
+
+### CAPTCHA is niet met het toetsenbord te bedienen
+
+Als de <span lang="en">CAPTCHA</span>-test niet met het toetsenbord kan worden voltooid, sluit je toetsenbordgebruikers uit van het invullen van het formulier.
+
+**Hoe te testen:** probeer de CAPTCHA te voltooien met alleen het toetsenbord.
+
+**Wie kan dit oplossen:** een developer kiest een CAPTCHA-oplossing die toetsenbordtoegankelijk is.
 
 ## Hoe te testen
 
-1. Vind alle plekken op een website waar je iets kan doen.
-2. Controleer of je het met een toetsenbord kan doen.
+### Voor iedereen
 
-Deze tests moeten ook slagen als de website ingezoomd is. Er kunnen dan andere interactieve elementen aanwezig zijn.
+1. Klik in de adresbalk van de browser en druk op <kbd>Tab</kbd>. Beweeg door de hele pagina. Kun je elke link, knop en elk formulierveld bereiken?
+2. Activeer knoppen met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd> en links met <kbd>Enter</kbd>. Werkt alles?
+3. Controleer of tooltips, uitklapmenu's en andere content die bij hover verschijnt, ook verschijnt bij toetsenbordfocus.
+4. Open dialoogvensters en menu's. Kun je ze bedienen en sluiten met het toetsenbord?
+5. Controleer carrousels, sliders en mediaspelers. Kun je ze bedienen zonder muis?
 
-## Tips
+Op macOS kunnen extra instellingen nodig zijn:
 
-<dl>
-  <dt class="dl__term">Semantische HTML</dt>
-  <dd class="dl__definition">Gebruik zo veel mogelijk HTML-elementen in plaats van zelfgebouwde onderdelen. Zelfgebouwde onderdelen houden vaak geen rekening met bediening door een toetsenbord terwijl HTML standaard goed werkt met een toetsenbord. Een niet-interactief element dat klikbaar is gemaakt met JavaScript zal standaard niet werken met een toetsenbord. Een element dat van zichzelf interactief is (`<button>`, `<link>`, etc) werkt wel.</dd>
-  <dt class="dl__term">Gerelateerde successcriteria</dt>
-  <dd class="dl__definition">
-    Als je test voor bediening met het toetsenbord, test dan meteen gerelateerde successcriteria zoals:
-    <ul>
-      <li><a href="/wcag/1.4.11">WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content</a> voor de focusweergave</li>
-      <li><a href="/wcag/2.1.2">WCAG-succescriterium 2.1.2 Geen toetsenbordval</a></li>
-      <li><a href="/wcag/2.1.3">WCAG-succescriterium 2.1.3 Toetsenbord (geen uitzondering)</a></li>
-      <li><a href="/wcag/2.4.1">WCAG-succescriterium 2.4.1 Blokken omzeilen</a></li>
-      <li><a href="/wcag/2.4.3">WCAG-succescriterium 2.4.3 Focus volgorde</a></li>
-      <li><a href="/wcag/2.4.7">WCAG-succescriterium 2.4.7 Focus zichtbaar</a></li>
-      <li><a href="/wcag/2.4.13">WCAG-succescriterium 2.4.13 Focusweergave</a></li>
-      <li><a href="/wcag/3.2.1">WCAG-succescriterium 3.2.1 Bij focus</a></li>
-    </ul>
-  </dd>
-  <dt class="dl__term">Volgorde in de code</dt>
-  <dd class="dl__definition">Een uitklappend menu en andere overlappende onderdelen zoals chatvensters en cookiemeldingen zijn lastig voor het toetsenbord. Visueel worden ze vaak onderaan een pagina geplaatst. Voor een toetsenbord is het einde van de pagina vaak erg onhandig. De code van een uitklappend menu plaats je het liefst direct na de knop die het opent. Zo zit het voor de navigatie volgorde op een logische plek. De gebruiker opent iets, en met een opvolgende `tab` is het gefocust.</dd>
-  <dt class="dl__term">Dialoogvensters</dt>
-  <dd class="dl__definition">Bij het openen van een dialoogvenster moet de focus hierop geplaatst worden. Welk onderdeel de focus krijgt hangt af van de inhoud van het venster. Dit wordt uitgelegd op de Engelstalige pagina <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/#keyboard_interaction"><span lang="en">Dialog (Modal) Pattern</span></a> van de ARIA Authoring Practices Guide (APG). Als een dialoogvenster sluit moet de focus weer terug naar het element dat het opende.</dd>
-  <dt class="dl__term">Hover</dt>
-  <dd class="dl__definition">Elementen die reageren op een hover moeten ook werken met het toetsenbord. Denk hierbij bijvoorbeeld aan tooltips en uitklappende menus.</dd>
-  <dt class="dl__term">Tabindex</dt>
-  <dd class="dl__definition"><a href="/richtlijnen/formulieren/toetsenbord/tabindex">Gebruik geen positieve tabindex</a>. Voeg ook geen `tabindex="0"` toe aan elementen die niet interactief zijn. Als een element wel interactief moet zijn, voeg ook een naam toe voor <a href="/wcag/4.1.2">WCAG-succescriterium 4.1.2 Naam, rol, waarde</a>.</dd>
-  <dt class="dl__term">Ingewikkelde onderdelen</dt>
-  <dd class="dl__definition">Kaarten en visualizaties zijn soms erg lastig toegankelijk te maken voor een toetsenbord. Als er geen andere oplossing mogelijk is kan er een alternatief geboden worden. Zo kan een kaart met markers en adressen aangevuld worden met een lijst met dezelfde adressen. Let wel op dat het alternatief een volwaardige oplossing is.</dd>
-</dl>
+- [<span lang="en">Keyboard navigation on macOS</span>](https://support.apple.com/en-gb/guide/mac-help/mchlc06d1059/mac) (Engels).
+- [<span lang="en">How to activate keyboard navigation on macOS</span>](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/) (Engels).
+
+### Voor developers
+
+1. Beweeg met <kbd>Tab</kbd> door de pagina en vergelijk met de visuele elementen. Elk interactief element moet bereikbaar zijn met <kbd>Tab</kbd>.
+2. Zoek in de code naar `onclick` op niet-interactieve elementen (`<div>`, `<span>`, `<li>`). Vervang ze door `<button>` of `<a>`.
+3. Zoek naar `onmouseover`, `onmousedown` en `ondblclick`. Controleer of er een toetsenbordequivalent (`onfocus`, `onkeydown`) aanwezig is.
+4. Controleer zelfgemaakte componenten (dropdowns, datepickers, modals). Volgen ze het juiste [ARIA-patroon](https://www.w3.org/WAI/ARIA/apg/patterns/)?
+5. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Beweeg door de pagina en controleer of alle interactieve elementen bereikbaar en activeerbaar zijn.
+
+## Gerelateerde succescriteria
+
+- [2.1.2 Geen toetsenbordval](/wcag/2.1.2/): je mag nergens "vast" komen te zitten bij toetsenbordnavigatie.
+- [2.4.3 Focusvolgorde](/wcag/2.4.3/): de tabvolgorde moet logisch zijn.
+- [2.4.7 Focus zichtbaar](/wcag/2.4.7/): je moet kunnen zien welk element de focus heeft.
 
 ## Gerelateerde NL Design System-richtlijnen
 
-- Formulieren - Toetsenbord: [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/).
-- Formulieren - Toetsenbord: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
-- Formulieren - Buttons: [Toetsenbordbediening van een button](/richtlijnen/formulieren/buttons/toetsenbordbediening).
-- Formulieren - Buttons: [Disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
-- Formulieren - Wanneer gebruik je welk formulierelement: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
+- Formulieren: [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/).
+- Formulieren: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
+- Formulieren: [Toetsenbordbediening van een button](/richtlijnen/formulieren/buttons/toetsenbordbediening).
+- Formulieren: [Disabled submitbuttons](/richtlijnen/formulieren/buttons/disabled-submitbuttons).
+- Formulieren: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
+
+## Relevante bronnen
+
+- [<span lang="en">A Guide To Keyboard Accessibility: HTML And CSS</span>](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/): uitgebreide gids over toetsenbordtoegankelijkheid (Smashing Magazine, Engels).
+- [<span lang="en">Tabindex: 0 and -1 Values</span>](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one): wanneer je tabindex 0 en -1 gebruikt (WebAIM, Engels).
+- [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/): veelgemaakte fouten bij toetsenbordbediening (TPGI, Engels).
+- [<span lang="en">Exploring the challenges in creating an accessible sortable list</span>](https://github.blog/engineering/user-experience/exploring-the-challenges-in-creating-an-accessible-sortable-list-drag-and-drop/): hoe GitHub een toegankelijke drag-and-drop sorteerlijst heeft gebouwd (GitHub Blog, Engels).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## Bronnen
+## W3C-referenties
 
-- [<span lang="en">A Guide To Keyboard Accessibility: HTML And CSS</span>](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/) by Cristian Díaz in Smashing Magazine.
-- [<span lang="en">Tabindex: 0 and -1 Values</span>](https://webaim.org/techniques/keyboard/tabindex#zero-negative-one) van WebAIM.
-- [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
-
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.1.1 Keyboard</span>](https://www.w3.org/TR/WCAG22/#keyboard).
-- Nederlandse vertaling van het WCAG-succescriterium: [2.1.1 Toetsenbord](https://www.w3.org/Translations/WCAG22-nl/#keyboard).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.1.1 Keyboard</span>](https://www.w3.org/WAI/WCAG22/quickref/#keyboard).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 2.1.1 Keyboard</span>](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- [WCAG 2.2: Succescriterium 2.1.1 Toetsenbord](https://www.w3.org/Translations/WCAG22-nl/#keyboard): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 2.1.1: Keyboard</span>](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 2.1.1 Keyboard</span>](https://www.w3.org/WAI/WCAG22/quickref/#keyboard): snelreferentie met technieken (Engels).
 
 ## Help richtlijn verbeteren
 
