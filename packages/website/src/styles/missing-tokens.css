@@ -31,6 +31,9 @@
   --ma-space-relative-block-sm: 0.25em; /* 4px; */
   --ma-space-relative-block-xs: 0.125em; /* 2px; */
   --ma-space-relative-block-2xs: 0.0625em; /* 1px; */
+
+  --ma-layout-side-bar-inline-size: 300px;
+  --ma-layout-column-gap: var(--basis-space-column-4xl);
 }
 
 .nl-code-block {
