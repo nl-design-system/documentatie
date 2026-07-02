@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   dep: ['dev', 'prod'],
   install: 'always',
   packageManager: 'pnpm',
