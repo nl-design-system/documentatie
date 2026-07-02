@@ -20,8 +20,8 @@
 
 .ma-layout-detail__content {
   box-sizing: border-box;
-  display: grid;
   column-gap: var(--ma-layout-column-gap);
+  display: grid;
   grid-template-areas:
     "side-nav"
     "breadcrumb-nav"
@@ -107,6 +107,14 @@
       /* page body */
       1fr;
     grid-template-rows: auto auto auto 1fr;
+  }
+}
+
+@container ma-layout-detail (width < 1280px) {
+  .ma-layout-detail__anchor-nav {
+    ma-table-of-contents {
+      --ma-table-of-contents-highlighted: 1;
+    }
   }
 }
 

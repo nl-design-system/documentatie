@@ -34,6 +34,12 @@
 
   --ma-layout-side-bar-inline-size: 300px;
   --ma-layout-column-gap: var(--basis-space-column-4xl);
+
+  --ma-table-of-contents-highlighted-background-color: var(--basis-color-accent-1-bg-subtle);
+  --ma-table-of-contents-highlighted-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-table-of-contents-highlighted-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
+  --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
 }
 
 .nl-code-block {
