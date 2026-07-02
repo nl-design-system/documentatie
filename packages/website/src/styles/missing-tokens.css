@@ -64,6 +64,15 @@
   padding-inline-start: var(--basis-space-inline-xl);
 }
 
+.utrecht-checkbox {
+  margin-block-end: var(--basis-space-row-lg);
+}
+
+/* The alignment of icons is off without the option to fix is via tokens */
+.utrecht-link-list__item .utrecht-link-list__link {
+  align-items: unset;
+}
+
 .denhaag-side-navigation__link {
   /* denhaag.side-navigation.link.padding-inline-end */
   padding-inline-end: var(--basis-space-inline-xl);
