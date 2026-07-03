@@ -17,7 +17,7 @@ import Wcag413NLDSAlert from '@nl-design-system-unstable/documentation/component
 
 export const usage = [
   {
-    title: 'De Alert bevat geen informatieve icons en decoratieve icons zijn verborgen voor hulpsoftware.',
+    title: 'De Alert bevat geen informatieve icons, en decoratieve icons zijn verborgen voor hulpsoftware.',
     sc: '1.1.1',
     status: '',
     component: Wcag111Alert,
