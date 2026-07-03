@@ -1,5 +1,6 @@
 import { Button } from '@components/button/button';
 import { Textbox } from '@utrecht/component-library-react';
+import { IconSearch } from '@tabler/icons-react';
 import { useEffect, useState, type ChangeEvent, type FormEvent, type FormEventHandler } from 'react';
 import '@utrecht/textbox-css/dist/index.css';
 import './form.css';
@@ -30,7 +31,7 @@ export function SearchForm(props: SearchFormProps) {
           value={value || ''}
           onChange={(event: ChangeEvent<HTMLInputElement>) => setValue(event.target.value)}
         />
-        <Button type="submit" purpose="secondary">
+        <Button type="submit" purpose="secondary" iconStart={<IconSearch />}>
           Zoeken
         </Button>
       </form>
