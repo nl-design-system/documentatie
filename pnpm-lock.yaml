@@ -532,7 +532,6 @@ importers:
       '@utrecht/breadcrumb-nav-css':
         specifier: 3.0.0
         version: 3.0.0
-      '@utrecht/drawer-css':
       '@utrecht/button-css':
         specifier: 4.0.1
         version: 4.0.1
@@ -540,6 +539,9 @@ importers:
         specifier: 3.0.1
         version: 3.0.1
       '@utrecht/custom-checkbox-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/drawer-css':
         specifier: 3.0.1
         version: 3.0.1
       '@utrecht/emphasis-css':
