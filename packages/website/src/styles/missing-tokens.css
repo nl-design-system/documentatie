@@ -20,6 +20,17 @@
   --utrecht-badge-list-column-gap: 4px;
   --utrecht-badge-list-row-gap: 4px;
   --ma-mobile-menu-max-inline-size: 300px;
+  --ma-space-relative-block-6xl: 4em; /* 64px; */
+  --ma-space-relative-block-5xl: 3em; /* 48px; */
+  --ma-space-relative-block-4xl: 2em; /* 32px; */
+  --ma-space-relative-block-3xl: 1.5em; /* 24px; */
+  --ma-space-relative-block-2xl: 1.25em; /* 20px; */
+  --ma-space-relative-block-xl: 1em; /* 16px; */
+  --ma-space-relative-block-lg: 0.75em; /* 12px; */
+  --ma-space-relative-block-md: 0.5em; /* 8px; */
+  --ma-space-relative-block-sm: 0.25em; /* 4px; */
+  --ma-space-relative-block-xs: 0.125em; /* 2px; */
+  --ma-space-relative-block-2xs: 0.0625em; /* 1px; */
 }
 
 .nl-code-block {

@@ -41,7 +41,7 @@ const Layout = page.data?.page_layout === 'overview' ? OverviewLayout : DetailLa
   index={page.data.unlisted !== true}
 >
   <Grid>
-    <Grid.Cell span="all">
+    <Grid.Cell className="ma-flow" span="all">
       <Content components={components} />
     </Grid.Cell>
   </Grid>
