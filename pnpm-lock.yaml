@@ -532,6 +532,9 @@ importers:
       '@utrecht/breadcrumb-nav-css':
         specifier: 3.0.0
         version: 3.0.0
+      '@utrecht/drawer-css':
+        specifier: 3.0.1
+        version: 3.0.1
       '@utrecht/emphasis-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -4999,6 +5002,9 @@ packages:
 
   '@utrecht/drawer-css@2.0.1':
     resolution: {integrity: sha512-4YysV31TmYGK8mLIF0ZLnUsc7j+02TylXJVZrMDQzisasEUbh8FXhHNbGTyZxlmGaFfjMtblCldp/UnsLkFH2Q==}
+
+  '@utrecht/drawer-css@3.0.1':
+    resolution: {integrity: sha512-u8x/Injky1MYAV/tR8Yc1jHl9saiPG7jm5mgN3L2agKkht+1NUUvi7+CB5O/q7OZOnXltnQySi2NGLzz3B326w==}
 
   '@utrecht/emphasis-css@2.0.1':
     resolution: {integrity: sha512-lnFb2l7puRIMKCy/4w9Zvg1Ipi6rSaJMyxyG7q30EH6kUpY/R4NYZYgLTkB5gzvPGBddfywvl20c590sYd9dHQ==}
@@ -17803,6 +17809,8 @@ snapshots:
   '@utrecht/document-css@2.0.1': {}
 
   '@utrecht/drawer-css@2.0.1': {}
+
+  '@utrecht/drawer-css@3.0.1': {}
 
   '@utrecht/emphasis-css@2.0.1': {}
 
