@@ -2,7 +2,7 @@
 
 Zorg ervoor dat meldingen op een logische plek op de pagina staan. Wanneer de Alert informatie bevat die invloed heeft op een beslissing of acties van een bezoeker, dan plaats je de Alert vóór de interactieve elementen die de bezoeker daarvoor nodig heeft.
 
-Zo zorg je er tegelijkertijd voor dat als de Alert toetsenbordfocus krijgt, er geen belangrijke informatie en andere interactieve elementen worden overgeslagen wanneer de bezoeker verder navigeert met het toetsenbord.
+Wanneer de Alert op een logische plek staat, dan wordt er geen belangrijke informatie en andere interactieve inhoud overgeslagen wanneer de Alert focus krijgt en de bezoeker verder navigeert met het toetsenbord.
 
 Bijvoorbeeld:
 
