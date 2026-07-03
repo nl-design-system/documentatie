@@ -150,7 +150,7 @@
     "@nl-design-system-candidate/button-tokens": "1.0.0",
     "@nl-design-system-community/design-tokens-schema": "2.1.0",
     "@nl-design-system-community/editor-react": "1.2.0",
-    "@nl-design-system-community/ma-design-tokens": "5.4.0",
+    "@nl-design-system-community/ma-design-tokens": "5.5.0",
     "@nl-design-system-unstable/basis-design-tokens": "3.1.1",
     "@nl-design-system-unstable/documentation": "workspace:*",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
