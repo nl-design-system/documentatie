@@ -106,7 +106,7 @@ export const usage = [
 
 export const component = [
   {
-    title: 'Tekst in de Alert blijft leesbaar wanneer de tekstafstand vergroot wordt. ',
+    title: 'Tekst in de Alert blijft leesbaar wanneer de tekstafstand vergroot wordt.',
     sc: '1.4.12',
     status: '',
     component: Wcag1412,
