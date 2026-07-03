@@ -70,7 +70,8 @@
     "@utrecht/spotlight-section-css": "3.0.2",
     "@utrecht/table-css": "3.0.1",
     "a11y-syntax-highlighting": "1.1.0",
-    "hast": "1.0.0"
+    "hast": "1.0.0",
+    "invokers-polyfill": "1.0.3"
   },
   "devDependencies": {
     "@astrojs/mdx": "5.0.4",
