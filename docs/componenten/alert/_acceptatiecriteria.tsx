@@ -120,7 +120,7 @@ export const component = [
     tags: ['developer'],
   },
   {
-    title: 'Het is mogelijk om de toetsenbordfocus naar de Alert te verplaatsen.',
+    title: 'Het is mogelijk om via code de toetsenbordfocus naar de Alert te verplaatsen.',
     sc: '2.4.3',
     status: '',
     component: Wcag243NLDSAlert,
