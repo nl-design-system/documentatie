@@ -23,14 +23,24 @@ import '@utrecht/root-css/dist/index.css';
 import '@components/flow/flow.css';
 
 // NLDS markdown components
+import '@utrecht/button-css/dist/index.css';
 import '@utrecht/blockquote-css/dist/index.css';
+import '@utrecht/custom-checkbox-css/dist/index.css';
+import '@utrecht/checkbox-css/dist/index.css';
 import '@utrecht/emphasis-css/dist/index.css';
 import '@utrecht/figure-css/dist/index.css';
+import '@utrecht/form-label-css/dist/index.css';
+import '@utrecht/form-field-css/dist/index.css';
+import '@utrecht/form-fieldset-css/dist/index.css';
+import '@utrecht/form-field-description-css/dist/index.css';
 import '@utrecht/separator-css/dist/index.css';
 import '@utrecht/ordered-list-css/dist/index.css';
 import '@utrecht/table-css/dist/index.css';
+import '@utrecht/textarea-css/dist/index.css';
+import '@utrecht/textbox-css/dist/index.css';
 import '@utrecht/img-css/dist/index.css';
 import '@utrecht/spotlight-section-css/dist/index.css';
+import '@nl-design-system-candidate/paragraph-css/paragraph.css';
 import '@nl-design-system-candidate/code-css/code.css';
 import '@nl-design-system-candidate/code-block-css/code-block.css';
 
@@ -39,6 +49,8 @@ import '../../src/styles/missing-tokens.css';
 import './document.css';
 import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
 import { withCurrentIndication } from 'src/navigation/with-current-indication.ts';
+import '@components/sr-only/sr-only.css';
+import '@components/body-copy/body-copy.css';
 
 export interface Props {
   title: string;
@@ -144,7 +156,9 @@ const footerNavigationItems = [
               footerNavigationItems.map(({ href, label }) => (
                 <LinkListLink href={href}>
                   {label}
-                  <IconChevronRight slot="icon" />
+                  <span class="utrecht-icon" slot="icon">
+                    <IconChevronRight />
+                  </span>
                 </LinkListLink>
               ))
             }
