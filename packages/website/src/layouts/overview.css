@@ -59,11 +59,7 @@
   grid-area: body;
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value felt right.
- */
-@container ma-layout-overview (width >= 768px) {
+@media (--medium-and-up) {
   .ma-layout-overview__content {
     grid-template-areas:
       "breadcrumb-nav"
@@ -73,11 +69,7 @@
   }
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value based on --basis-page-max-inline.
- */
-@container ma-layout-overview (width >= 1140px) {
+@media (--large-and-up) {
   .ma-layout-overview__side-nav {
     display: block;
     position: relative;

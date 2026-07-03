@@ -70,11 +70,7 @@
   grid-area: body;
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value felt right.
- */
-@container ma-layout-detail (width >= 768px) {
+@media (--medium-and-up) {
   .ma-layout-detail__content {
     grid-template-areas:
       "breadcrumb-nav"
@@ -85,11 +81,7 @@
   }
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value based on --basis-page-max-inline.
- */
-@container ma-layout-detail (width >= 1140px) {
+@media (--large-and-up) {
   .ma-layout-detail__side-nav {
     display: block;
     position: relative;
@@ -110,7 +102,7 @@
   }
 }
 
-@container ma-layout-detail (width < 1280px) {
+@media (--x-large-and-down) {
   .ma-layout-detail__anchor-nav {
     ma-table-of-contents {
       --ma-table-of-contents-highlighted: 1;
@@ -118,11 +110,7 @@
   }
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value based on --basis-page-max-inline, now with room for the anchor nav
- */
-@container ma-layout-detail (width >= 1280px) {
+@media (--x-large-and-up) {
   .ma-layout-detail__anchor-nav > * {
     inset-block-start: 0;
     position: sticky;
