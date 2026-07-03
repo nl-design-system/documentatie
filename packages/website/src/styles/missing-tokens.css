@@ -2,23 +2,10 @@
  * These are all values yet to be included in the MA Design Tokens
  */
 :root {
-  --denhaag-focus-border: 2px dashed var(--basis-focus-outline-color);
-  --denhaag-icon-button-color: var(--basis-color-action-2-color-default);
   --ams-unordered-list-gap: var(--basis-space-row-lg);
   --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-xl);
-  --rhc-card-heading-font-size: var(--basis-text-font-size-lg);
-  --rhc-card-background-color: var(--basis-color-default-bg-document);
-  --rhc-card-border-color: var(--basis-color-default-border-subtle);
-  --rhc-card-border-width: var(--basis-border-width-sm);
-  --rhc-card-border-radius: var(--basis-border-radius-md);
-  --rhc-card-row-gap: var(--basis-space-row-sm);
-  --rhc-card-padding-block-end: var(--basis-space-block-3xl);
-  --rhc-card-padding-block-start: var(--basis-space-block-xl);
-  --rhc-card-padding-inline-end: var(--basis-space-inline-xl);
-  --rhc-card-padding-inline-start: var(--basis-space-inline-xl);
+  --rhc-card-inline-size: 100% !important;
   --ma-estafette-badge-border-width: 1px;
-  --utrecht-badge-list-column-gap: 4px;
-  --utrecht-badge-list-row-gap: 4px;
   --ma-mobile-menu-max-inline-size: 300px;
   --ma-space-relative-block-6xl: 4em; /* 64px; */
   --ma-space-relative-block-5xl: 3em; /* 48px; */
@@ -39,6 +26,13 @@
   --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
   --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
   --ma-body-copy-items-max-inline-size: 65ch;
+}
+
+/**
+ * These are tweaks to docusaurus components that break in Astro
+ */
+.ma-component-illustration {
+  box-sizing: border-box;
 }
 
 .nl-code-block {
