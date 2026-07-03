@@ -13,7 +13,7 @@ interface CriteriaListItemProps {
 export const CriteriaListItem = ({ title, sc, status, children, headingLevel = 4 }: CriteriaListItemProps) => {
   return (
     <UnorderedList.Item>
-      <Card heading={title} headingLevel={headingLevel}>
+      <Card heading={title} headingLevel={headingLevel} className="ma-flow--on-content">
         <dl>
           <dt>sc:</dt>
           <dd>{sc}</dd>

@@ -9,6 +9,7 @@ import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
 import '../../../../src/components/ComponentPage.css';
 import '../../../../src/components/EstafetteBadge.css';
+import './[...component].css';
 
 export async function getStaticPaths() {
   const components = await getCollection('components');
@@ -47,7 +48,7 @@ const components = await MDXComponents();
   </Grid>
 
   <Grid>
-    <Grid.Cell span="all">
+    <Grid.Cell className="ma-flow" span="all">
       <Content components={components} />
     </Grid.Cell>
   </Grid>
