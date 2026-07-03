@@ -9,7 +9,9 @@ import { NavList } from '@components/nav-list/nav-list';
 import { NavListLink } from '@components/nav-list/nav-list';
 import { Logo } from '@components/logo/logo';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
+import { MobileMenu, MobileMenuTrigger } from '@components/mobile-menu/mobile-menu';
 import { IconChevronRight } from '@tabler/icons-react';
+import { SideNavigation } from '@components/side-navigation/side-navigation.tsx';
 import { getMainNavigation } from '../navigation';
 import { navigation } from '../navigation.config.ts';
 
@@ -33,6 +35,9 @@ import '@nl-design-system-candidate/code-block-css/code-block.css';
 
 import 'a11y-syntax-highlighting/dist/prism/a11y-dark.css';
 import '../../src/styles/missing-tokens.css';
+import './document.css';
+import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
+import { withCurrentIndication } from 'src/navigation/with-current-indication.ts';
 
 export interface Props {
   title: string;
@@ -59,6 +64,8 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
 const _follow = follow === undefined ? index : follow;
 const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
 
+const { navigationTree } = await withCurrentIndication(navigation, Astro.url.pathname);
+const items = serialiseNavigationTree(navigationTree);
 const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
 
 const footerNavigationItems = [
@@ -108,6 +115,7 @@ const footerNavigationItems = [
     <SkipLink href="#main">Naar de inhoud</SkipLink>
     <PageLayout>
       <PageHeader>
+        <MobileMenuTrigger />
         <a href="/" aria-label="Link naar Homepagina"><Logo /></a>
       </PageHeader>
       <NavBar>
@@ -143,6 +151,14 @@ const footerNavigationItems = [
         </nav>
       </PageFooter>
     </PageLayout>
+
+    <MobileMenu>
+      <SideNavigation items={[items.items]} client:load />
+    </MobileMenu>
+
+    <script>
+      import 'invokers-polyfill';
+    </script>
   </body>
 </html>
 
