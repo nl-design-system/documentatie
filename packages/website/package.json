@@ -53,6 +53,7 @@
     "@utrecht/body-css": "4.0.0",
     "@utrecht/body-react": "0.0.11",
     "@utrecht/breadcrumb-nav-css": "3.0.0",
+    "@utrecht/drawer-css": "3.0.1",
     "@utrecht/emphasis-css": "3.0.1",
     "@utrecht/figure-css": "3.0.1",
     "@utrecht/img-css": "3.0.1",
