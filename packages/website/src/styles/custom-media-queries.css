@@ -1,0 +1,2 @@
+@custom-media --medium-and-down (width < 768px);
+@custom-media --medium-and-up (width >= 768px);
