@@ -39,7 +39,7 @@ export const usage = [
   },
   {
     title:
-      'Als kleuren worden gebruikt om aan te geven of de melding in de Alert positief of negatief is, is die informatie ook op minimaal een andere manier beschikbaar.',
+      'Als kleuren worden gebruikt om aan te geven of de melding in de Alert positief of negatief is, is die informatie ook op een andere manier beschikbaar.',
     sc: '1.4.1',
     status: '',
     component: Wcag141,
