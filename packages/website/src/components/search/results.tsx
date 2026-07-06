@@ -3,6 +3,7 @@ import { UnorderedList } from '@components/unordered-list/unordered-list';
 import { Card } from '@components/card/card';
 import DOMPurify from 'dompurify';
 import { Heading } from '@nl-design-system-candidate/heading-react';
+import { siteBaseUrl } from 'src/seo.config.js';
 
 export interface SearchResultsProps {
   results: SearchResult;
@@ -20,6 +21,7 @@ export function SearchResults({ results }: SearchResultsProps) {
               hit._highlightResult?.hierarchy?.[hit.type]?.value || (hit.type === 'content' && hit.hierarchy.lvl1);
             const description = hit._snippetResult?.content?.value;
             const linkLabel = hit.type !== 'lvl1' && hit.type !== 'content' && hit.hierarchy.lvl1;
+            const href = new URL(hit.url, siteBaseUrl);
 
             return (
               <UnorderedList.Item key={hit.url}>
@@ -29,7 +31,7 @@ export function SearchResults({ results }: SearchResultsProps) {
                     description={
                       description && <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description) }} />
                     }
-                    href={hit.url}
+                    href={href.toString().replace(siteBaseUrl, '')}
                     linkLabel={linkLabel || undefined}
                   />
                 </>

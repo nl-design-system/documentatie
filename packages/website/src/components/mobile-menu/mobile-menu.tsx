@@ -6,11 +6,11 @@ import './mobile-menu.css';
 
 export const MobileMenuTrigger = () => {
   return (
-    // @ts-expect-error commandfor is not defined in React. Polyfill is included
     <Button
       className="ma-mobile-menu-trigger"
       purpose="subtle"
       iconStart={<IconMenu2 />}
+      /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
       commandfor="ma-mobile-menu-drawer"
       command="show-modal"
     >
