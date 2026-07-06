@@ -2,23 +2,10 @@
  * These are all values yet to be included in the MA Design Tokens
  */
 :root {
-  --denhaag-focus-border: 2px dashed var(--basis-focus-outline-color);
-  --denhaag-icon-button-color: var(--basis-color-action-2-color-default);
   --ams-unordered-list-gap: var(--basis-space-row-lg);
   --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-xl);
-  --rhc-card-heading-font-size: var(--basis-text-font-size-lg);
-  --rhc-card-background-color: var(--basis-color-default-bg-document);
-  --rhc-card-border-color: var(--basis-color-default-border-subtle);
-  --rhc-card-border-width: var(--basis-border-width-sm);
-  --rhc-card-border-radius: var(--basis-border-radius-md);
-  --rhc-card-row-gap: var(--basis-space-row-sm);
-  --rhc-card-padding-block-end: var(--basis-space-block-3xl);
-  --rhc-card-padding-block-start: var(--basis-space-block-xl);
-  --rhc-card-padding-inline-end: var(--basis-space-inline-xl);
-  --rhc-card-padding-inline-start: var(--basis-space-inline-xl);
+  --rhc-card-inline-size: 100% !important;
   --ma-estafette-badge-border-width: 1px;
-  --utrecht-badge-list-column-gap: 4px;
-  --utrecht-badge-list-row-gap: 4px;
   --ma-mobile-menu-max-inline-size: 300px;
   --ma-space-relative-block-6xl: 4em; /* 64px; */
   --ma-space-relative-block-5xl: 3em; /* 48px; */
@@ -31,6 +18,21 @@
   --ma-space-relative-block-sm: 0.25em; /* 4px; */
   --ma-space-relative-block-xs: 0.125em; /* 2px; */
   --ma-space-relative-block-2xs: 0.0625em; /* 1px; */
+  --ma-layout-side-bar-inline-size: 300px;
+  --ma-layout-column-gap: var(--basis-space-column-4xl);
+  --ma-table-of-contents-highlighted-background-color: var(--basis-color-accent-1-bg-subtle);
+  --ma-table-of-contents-highlighted-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-table-of-contents-highlighted-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
+  --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
+  --ma-body-copy-items-max-inline-size: 65ch;
+}
+
+/**
+ * These are tweaks to docusaurus components that break in Astro
+ */
+.ma-component-illustration {
+  box-sizing: border-box;
 }
 
 .nl-code-block {
@@ -59,6 +61,15 @@
 
   /* utrecht.nav-bar.content.padding-inline-start */
   padding-inline-start: var(--basis-space-inline-xl);
+}
+
+.utrecht-checkbox {
+  margin-block-end: var(--basis-space-row-lg);
+}
+
+/* The alignment of icons is off without the option to fix is via tokens */
+.utrecht-link-list__item .utrecht-link-list__link {
+  align-items: unset;
 }
 
 .denhaag-side-navigation__link {

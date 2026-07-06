@@ -20,6 +20,7 @@
 
 .ma-layout-detail__content {
   box-sizing: border-box;
+  column-gap: var(--ma-layout-column-gap);
   display: grid;
   grid-template-areas:
     "side-nav"
@@ -69,11 +70,7 @@
   grid-area: body;
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value felt right.
- */
-@container ma-layout-detail (width >= 768px) {
+@media (--medium-and-up) {
   .ma-layout-detail__content {
     grid-template-areas:
       "breadcrumb-nav"
@@ -84,11 +81,7 @@
   }
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value based on --basis-page-max-inline.
- */
-@container ma-layout-detail (width >= 1140px) {
+@media (--large-and-up) {
   .ma-layout-detail__side-nav {
     display: block;
     position: relative;
@@ -96,26 +89,28 @@
 
   .ma-layout-detail__content {
     grid-template-areas:
-      "side-nav . breadcrumb-nav"
-      "side-nav . header"
-      "side-nav . anchor-nav"
-      "side-nav . body";
+      "side-nav breadcrumb-nav"
+      "side-nav header"
+      "side-nav anchor-nav"
+      "side-nav body";
     grid-template-columns:
       /* side-nav */
-      minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
-      /* side-nav gutter */
-      var(--basis-space-inline-2xl)
+      var(--ma-layout-side-bar-inline-size)
       /* page body */
       1fr;
     grid-template-rows: auto auto auto 1fr;
   }
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value based on --basis-page-max-inline, now with room for the anchor nav
- */
-@container ma-layout-detail (width >= 1500px) {
+@media (--x-large-and-down) {
+  .ma-layout-detail__anchor-nav {
+    ma-table-of-contents {
+      --ma-table-of-contents-highlighted: 1;
+    }
+  }
+}
+
+@media (--x-large-and-up) {
   .ma-layout-detail__anchor-nav > * {
     inset-block-start: 0;
     position: sticky;
@@ -123,20 +118,16 @@
 
   .ma-layout-detail__content {
     grid-template-areas:
-      "side-nav . breadcrumb-nav breadcrumb-nav breadcrumb-nav"
-      "side-nav . header . anchor-nav"
-      "side-nav . body . anchor-nav";
+      "side-nav  breadcrumb-nav breadcrumb-nav"
+      "side-nav  header  anchor-nav"
+      "side-nav  body  anchor-nav";
     grid-template-columns:
       /* side-nav */
-      minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size))
-      /* side-nav gutter */
-      var(--basis-space-inline-2xl)
+      var(--ma-layout-side-bar-inline-size)
       /* page body */
-      minmax(var(--ma-layout-detail-min-inline-size), var(--basis-page-max-inline-size))
-      /* anchor-nav gutter */
-      var(--basis-space-inline-2xl)
+      1fr
       /* anchor-nav */
-      minmax(var(--ma-layout-detail-side-nav-min-inline-size), var(--ma-layout-detail-side-nav-max-inline-size));
+      var(--ma-layout-side-bar-inline-size);
     grid-template-rows: auto auto 1fr;
   }
 }
