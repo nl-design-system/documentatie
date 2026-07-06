@@ -72,6 +72,14 @@
   align-items: unset;
 }
 
+.utrecht-nav-list__item .utrecht-link:any-link {
+  text-decoration-line: none;
+
+  &:focus {
+    background-color: var(--utrecht-nav-bar-content-hover-background-color);
+  }
+}
+
 @media (forced-colors: active) {
   .utrecht-nav-bar .utrecht-nav-list__item:not(:has([aria-current])) {
     border-block-end-style: none;
