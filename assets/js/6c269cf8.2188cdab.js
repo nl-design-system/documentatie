@@ -98,7 +98,7 @@
     s = o(86070);
    const a = ({ backgroundColor: e, color: L, contrastRatio: o }) => (0, s.jsxs)('dl', { className: 'ma-contrast-ratio', children: [(0, s.jsxs)('div', { className: 'ma-contrast-ratio__result', children: [(0, s.jsx)('dt', { className: 'ma-contrast-ratio__result-key', children: 'Contrast ratio:' }), (0, s.jsx)('dd', { className: 'ma-contrast-ratio__result-value', children: (0, s.jsxs)(r.Q9, { children: [new Intl.NumberFormat('nl', { maximumSignificantDigits: 3, roundingMode: 'floor' }).format(o), ' \xf7 1'] }) })] }), (0, s.jsxs)('div', { className: (0, n.A)('ma-contrast-ratio__sample', 'ma-contrast-ratio__sample--background-color'), children: [(0, s.jsx)('dt', { className: 'ma-contrast-ratio__sample-key', children: 'Achtergrond:' }), (0, s.jsxs)('dd', { className: 'ma-contrast-ratio__sample-value', children: [(0, s.jsx)(r.Yc, { className: 'ma-contrast-ratio__color-sample', color: e, role: 'img', 'aria-label': `voorbeeld van: ${e}` }), ' ', (0, s.jsx)(r.Cy, { children: e })] })] }), (0, s.jsxs)('div', { className: (0, n.A)('ma-contrast-ratio__sample', 'ma-contrast-ratio__sample--color'), children: [(0, s.jsx)('dt', { className: 'ma-contrast-ratio__sample-key', children: 'Voorgrond:' }), (0, s.jsxs)('dd', { className: 'ma-contrast-ratio__sample-value', children: [(0, s.jsx)(r.Yc, { className: 'ma-contrast-ratio__color-sample', color: L, role: 'img', 'aria-label': `voorbeeld van: ${e}` }), ' ', (0, s.jsx)(r.Cy, { children: L })] })] })] });
    var c = o(88022),
-    i = o(4310),
+    i = o(53687),
     d = o(70410),
     u = o(29181),
     p = o(46565);

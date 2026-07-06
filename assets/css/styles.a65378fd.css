@@ -10323,7 +10323,7 @@ body :lang(ar) {
 .DocSearch-Logo a,
 .DocSearch-Menu-content.open,
 .DocSearch-SearchBar,
-.searchLogoColumn_dKLe a {
+.searchLogoColumn_pijl a {
  display: flex;
 }
 .DocSearch-Form {
@@ -11843,8 +11843,8 @@ html:not([data-theme]) .themedComponent--light_LkwR {
 .yearGroupHeading_hb_k {
  margin: 1rem 0.75rem 0.5rem;
 }
-.searchQueryInput_n9eM,
-.searchVersionInput_hmp_ {
+.searchQueryInput_2Ahw,
+.searchVersionInput_UqcZ {
  background: var(--docsearch-searchbox-focus-background);
  border: 2px solid var(--ifm-toc-border-color);
  border-radius: var(--ifm-global-radius);
@@ -11855,46 +11855,46 @@ html:not([data-theme]) .themedComponent--light_LkwR {
  transition: border var(--ifm-transition-fast) ease;
  width: 100%;
 }
-.searchQueryInput_n9eM:focus,
-.searchVersionInput_hmp_:focus {
+.searchQueryInput_2Ahw:focus,
+.searchVersionInput_UqcZ:focus {
  border-color: var(--docsearch-primary-color);
  outline: 0;
 }
-.searchQueryInput_n9eM::placeholder {
+.searchQueryInput_2Ahw::placeholder {
  color: var(--docsearch-muted-color);
 }
-.searchResultsColumn_jokz {
+.searchResultsColumn_q8ZV {
  font-size: 0.9rem;
  font-weight: 700;
 }
-.searchLogoColumn_dKLe {
+.searchLogoColumn_pijl {
  align-items: center;
  display: flex;
  gap: 0.5rem;
  justify-content: flex-end;
 }
-.searchLogoColumn_dKLe span {
+.searchLogoColumn_pijl span {
  color: var(--docsearch-muted-color);
  font-weight: 400;
 }
-.searchResultItem_21iL {
+.searchResultItem__WCa {
  border-bottom: 1px solid var(--ifm-toc-border-color);
  padding: 1rem 0;
 }
-.searchResultItemHeading_ullO {
+.searchResultItemHeading_JlSC {
  font-weight: 400;
  margin-bottom: 0;
 }
-.searchResultItemPath_enCJ {
+.searchResultItemPath_pWcp {
  color: var(--ifm-color-content-secondary);
  font-size: 0.8rem;
  --ifm-breadcrumb-separator-size-multiplier: 1;
 }
-.searchResultItemSummary_mVWS {
+.searchResultItemSummary_IqR3 {
  font-style: italic;
  margin: 0.5rem 0 0;
 }
-.loadingSpinner_E7Fm {
+.loadingSpinner_oVpp {
  animation: 1s linear infinite d;
  border: 0.4em solid #eee;
  border-radius: 50%;
@@ -11917,7 +11917,7 @@ html:not([data-theme]) .themedComponent--light_LkwR {
   transform: rotate(1turn);
  }
 }
-.loader_GslC {
+.loader_S7q9 {
  margin-top: 2rem;
 }
 .search-result-match {
@@ -13802,15 +13802,15 @@ li.ma-doelen__item--almost-check:before {
  }
 }
 @media only screen and (max-width: 996px) {
- .searchQueryColumn_Huni,
- .searchResultsColumn_jokz {
+ .searchQueryColumn_MiEM,
+ .searchResultsColumn_q8ZV {
   max-width: 60% !important;
  }
- .searchLogoColumn_dKLe,
- .searchVersionColumn_qvbh {
+ .searchLogoColumn_pijl,
+ .searchVersionColumn_VqDO {
   max-width: 40% !important;
  }
- .searchLogoColumn_dKLe {
+ .searchLogoColumn_pijl {
   padding-left: 0 !important;
  }
 }
@@ -13924,10 +13924,10 @@ li.ma-doelen__item--almost-check:before {
  }
 }
 @media screen and (max-width: 576px) {
- .searchQueryColumn_Huni {
+ .searchQueryColumn_MiEM {
   max-width: 100% !important;
  }
- .searchVersionColumn_qvbh {
+ .searchVersionColumn_VqDO {
   max-width: 100% !important;
   padding-left: var(--ifm-spacing-horizontal) !important;
  }

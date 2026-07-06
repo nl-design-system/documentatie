@@ -1,8 +1,8 @@
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [86546],
+ [37956],
  {
-  86546(s, e, _) {
+  37956(s, e, _) {
    _.r(e);
   },
  },
