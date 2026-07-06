@@ -13,7 +13,6 @@ import Robbert from './Robbert';
 import Rozerin from './Rozerin';
 import Sandra from './Sandra';
 import Yolijn from './Yolijn';
-import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
 const coreteam = [
@@ -33,31 +32,24 @@ const coreteam = [
 ];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
-  return (
-    <CardGroup appearance="large">
-      {coreteam.map(({ name, role, Description, slack }) => {
-        return (
-          <Card appearance="large" className={clsx('ma-core-team__card')} component="section" key={name}>
-            <CardContent className={clsx('ma-core-team__content')}>
-              <HeadingGroup className={clsx('ma-core-team__heading')}>
-                <Heading level={headingLevel} className={clsx('ma-core-team__heading-title')}>
-                  {name}
-                </Heading>
-                <Paragraph className={clsx('ma-core-team__heading-subtitle')}>{role}</Paragraph>
-              </HeadingGroup>
-              <div className={clsx('ma-core-team__description')}>
-                <Description />
-              </div>
-
-              <Paragraph>
-                Slack: <Link href={`https://codefornl.slack.com/team/${slack.id}`}>{slack.mention}</Link>
-              </Paragraph>
-            </CardContent>
-          </Card>
-        );
-      })}
-    </CardGroup>
-  );
+  return coreteam.map(({ name, role, Description, slack }) => {
+    return (
+      <section key="name" className={clsx('ma-core-team__item')} id="name">
+        <HeadingGroup className={clsx('ma-core-team__heading')}>
+          <Heading level={headingLevel} className={clsx('ma-core-team__heading-title')}>
+            {name}
+          </Heading>
+          <Paragraph className={clsx('ma-core-team__heading-subtitle')}>{role}</Paragraph>
+        </HeadingGroup>
+        <div className={clsx('ma-core-team__description')}>
+          <Description />
+        </div>
+        <Paragraph>
+          Slack: <Link href={`https://codefornl.slack.com/team/${slack.id}`}>{slack.mention}</Link>
+        </Paragraph>
+      </section>
+    );
+  });
 };
 
 export default CoreTeam;
