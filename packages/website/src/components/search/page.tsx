@@ -10,6 +10,7 @@ import { groupHitsToPages, type GroupError } from './algolia-api/group-hits-to-p
 import { SearchError } from './error';
 import { SearchResults } from './results';
 import './page.css';
+import '@nl-design-system-candidate/mark-css/mark.css';
 
 function pageTitle(query?: string | null) {
   return query ? `Zoeken naar: "${query}"` : 'Zoeken';

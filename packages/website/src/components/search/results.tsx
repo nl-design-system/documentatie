@@ -3,7 +3,7 @@ import { UnorderedList } from '@components/unordered-list/unordered-list';
 import { Card } from '@components/card/card';
 import DOMPurify from 'dompurify';
 import { Heading } from '@nl-design-system-candidate/heading-react';
-import { siteBaseUrl } from 'src/seo.config.js';
+import { siteBaseUrl } from '../../seo.config';
 
 export interface SearchResultsProps {
   results: SearchResult;

@@ -12,8 +12,8 @@
   }
 
   @media (width < 768px) {
-    padding-inline: var(--basis-space-inline-md);
     padding-block-end: var(--basis-space-block-sm);
+    padding-inline: var(--basis-space-inline-md);
 
     .nl-button {
       padding-inline: var(--basis-space-inline-md);

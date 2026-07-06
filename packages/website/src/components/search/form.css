@@ -5,9 +5,9 @@
 }
 
 .ma-search-form__form {
+  column-gap: var(--basis-space-column-md);
   display: grid;
   grid-template-columns: minmax(auto, var(--basis-form-control-max-inline-size)) auto;
-  column-gap: var(--basis-space-column-md);
   inline-size: 100%;
   max-block-size: var(--basis-size-md);
 
