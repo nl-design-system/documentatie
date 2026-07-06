@@ -9,7 +9,7 @@ const Julia: TeamMember = {
   Description: () => (
     <>
       <Paragraph>
-        Onderzoekt en schrijft richtlijnen voor het toegankelijk inzetten van NL Design System componenten.
+        Julia onderzoekt en schrijft richtlijnen voor het toegankelijk inzetten van NL Design System componenten.
       </Paragraph>
       <Paragraph>
         Je kunt via <Link href="/slack/">#nl-design-system-designers en #nl-design-system-developers</Link> bij haar
