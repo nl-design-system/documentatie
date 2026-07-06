@@ -1,19 +1,36 @@
 import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
+import Ali from './Ali';
 import Astrid from './Astrid';
+import Charlotte from './Charlotte';
+import Eelco from './Eelco';
 import Jeffrey from './Jeffrey';
 import Julia from './Julia';
+import Peter from './Peter';
+import Renate from './Renate';
+import Richard from './Richard';
 import Robbert from './Robbert';
 import Rozerin from './Rozerin';
-import Yolijn from './Yolijn';
-import Renate from './Renate';
-import Peter from './Peter';
 import Sandra from './Sandra';
-import Richard from './Richard';
+import Yolijn from './Yolijn';
 import { Card, CardContent, CardGroup } from '../CardGroup';
 import './CoreTeam.css';
 
-const coreteam = [Astrid, Yolijn, Robbert, Jeffrey, Rozerin, Renate, Peter, Sandra, Richard, Julia];
+const coreteam = [
+  Astrid,
+  Yolijn,
+  Robbert,
+  Jeffrey,
+  Rozerin,
+  Charlotte,
+  Eelco,
+  Renate,
+  Julia,
+  Richard,
+  Peter,
+  Ali,
+  Sandra,
+];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return (
