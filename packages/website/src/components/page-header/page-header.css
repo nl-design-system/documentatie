@@ -11,7 +11,7 @@
     justify-content: flex-end;
   }
 
-  @media (width < 768px) {
+  @media (--medium-down) {
     padding-block-end: var(--basis-space-block-sm);
     padding-inline: var(--basis-space-inline-md);
 
@@ -21,7 +21,7 @@
   }
 }
 
-@media (width >= 768px) {
+@media (--medium-and-up) {
   .utrecht-page-header__content {
     grid-template-columns: max-content 1fr;
 

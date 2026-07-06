@@ -78,7 +78,11 @@ export const SearchPage = () => {
           {!searchQuery && <Paragraph>Gebruik het zoekveld om te zoeken in nldesignsystem.nl</Paragraph>}
           {loading && <Paragraph role="status">Aan het zoeken</Paragraph>}
           {results && <SearchResults results={results} />}
-          {error && <SearchError error={error} />}
+          {error && (
+            <div role="alert">
+              <SearchError error={error} />
+            </div>
+          )}
         </Grid.Cell>
       </Grid>
     )
