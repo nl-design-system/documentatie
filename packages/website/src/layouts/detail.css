@@ -102,7 +102,7 @@
   }
 }
 
-@media (--x-large-and-down) {
+@media (--x-large-down) {
   .ma-layout-detail__anchor-nav {
     ma-table-of-contents {
       --ma-table-of-contents-highlighted: 1;

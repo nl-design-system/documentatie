@@ -1,13 +1,19 @@
 import { Button } from '@components/button/button';
 import { Drawer } from '@utrecht/component-library-react';
-import { IconX } from '@tabler/icons-react';
+import { IconX, IconMenu2 } from '@tabler/icons-react';
 import '@utrecht/drawer-css/dist/index.css';
 import './mobile-menu.css';
 
 export const MobileMenuTrigger = () => {
   return (
-    // @ts-expect-error commandfor is not defined in React. Polyfill is included
-    <Button commandfor="ma-mobile-menu-drawer" command="show-modal">
+    <Button
+      className="ma-mobile-menu-trigger"
+      purpose="subtle"
+      iconStart={<IconMenu2 />}
+      /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
+      commandfor="ma-mobile-menu-drawer"
+      command="show-modal"
+    >
       Menu
     </Button>
   );

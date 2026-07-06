@@ -1,4 +1,4 @@
-@media (--medium-and-down) {
+@media (--medium-down) {
   .utrecht-nav-bar {
     block-size: var(--basis-border-width-lg);
   }
