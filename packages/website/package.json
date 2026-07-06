@@ -104,6 +104,7 @@
     "@utrecht/page-footer-react": "1.0.11",
     "@utrecht/page-header-css": "3.0.0",
     "@utrecht/page-header-react": "1.0.10",
+    "algoliasearch": "5.55.1",
     "astro": "6.2.2",
     "cheerio": "1.2.0",
     "hast-util-is-element": "3.0.0",
