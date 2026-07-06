@@ -1,7 +1,7 @@
-/*! For license information please see 40.8a89f2d9.js.LICENSE.txt */
+/*! For license information please see 1242.17cb1c80.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [40],
+ [1242],
  {
   2858(e, n, a) {
    a.d(n, { i: () => r });
@@ -61,49 +61,10 @@
     ['path', { d: 'M8 13a4 4 0 1 0 8 0h-8', key: 'svg-3' }],
    ]);
   },
-  40558(e, n, a) {
-   a.d(n, { f: () => h });
-   var t = a(15540),
-    r = a(69967),
-    i = a(86070),
-    l = a(13526),
-    o = a(30758),
-    d = ['children', 'className', 'purpose'];
-   function s(e, n) {
-    var a = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-     var t = Object.getOwnPropertySymbols(e);
-     (n &&
-      (t = t.filter(function (n) {
-       return Object.getOwnPropertyDescriptor(e, n).enumerable;
-      })),
-      a.push.apply(a, t));
-    }
-    return a;
-   }
-   function c(e) {
-    for (var n = 1; n < arguments.length; n++) {
-     var a = null != arguments[n] ? arguments[n] : {};
-     n % 2
-      ? s(Object(a), !0).forEach(function (n) {
-         (0, t.A)(e, n, a[n]);
-        })
-      : Object.getOwnPropertyDescriptors
-        ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-        : s(Object(a)).forEach(function (n) {
-           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(a, n));
-          });
-    }
-    return e;
-   }
-   var h = (0, o.forwardRef)(function (e, n) {
-    var a = e.children,
-     o = e.className,
-     s = e.purpose,
-     h = (0, r.A)(e, d);
-    return (0, i.jsx)('p', c(c({ className: (0, l.$)('nl-paragraph', (0, t.A)({}, 'nl-paragraph--lead', 'lead' === s), o), ref: n }, h), {}, { children: 'lead' === s ? (0, i.jsx)('b', { className: 'nl-paragraph__lead', children: a }) : a }));
-   });
-   h.displayName = 'Paragraph';
+  48004(e, n, a) {
+   a.d(n, { f: () => t.f });
+   var t = a(56561);
+   (a(86070), a(30758));
    !(function (e, n) {
     void 0 === n && (n = {});
     var a = n.insertAt;
@@ -220,6 +181,50 @@
      ((r.type = 'text/css'), 'top' === a && t.firstChild ? t.insertBefore(r, t.firstChild) : t.appendChild(r), r.styleSheet ? (r.styleSheet.cssText = e) : r.appendChild(document.createTextNode(e)));
     }
    })('.nl-heading{break-after:avoid;break-inside:avoid}.nl-heading--level-1{color:var(--nl-heading-level-1-color, inherit);font-family:var(--nl-heading-level-1-font-family);font-size:var(--nl-heading-level-1-font-size, revert);font-weight:var(--nl-heading-level-1-font-weight, bold);line-height:var(--nl-heading-level-1-line-height);margin-block-end:var(--nl-heading-level-1-margin-block-end, revert);margin-block-start:var(--nl-heading-level-1-margin-block-start, revert)}.nl-heading--level-2{color:var(--nl-heading-level-2-color, inherit);font-family:var(--nl-heading-level-2-font-family);font-size:var(--nl-heading-level-2-font-size, revert);font-weight:var(--nl-heading-level-2-font-weight, bold);line-height:var(--nl-heading-level-2-line-height);margin-block-end:var(--nl-heading-level-2-margin-block-end, revert);margin-block-start:var(--nl-heading-level-2-margin-block-start, revert)}.nl-heading--level-3{color:var(--nl-heading-level-3-color, inherit);font-family:var(--nl-heading-level-3-font-family);font-size:var(--nl-heading-level-3-font-size, revert);font-weight:var(--nl-heading-level-3-font-weight, bold);line-height:var(--nl-heading-level-3-line-height);margin-block-end:var(--nl-heading-level-3-margin-block-end, revert);margin-block-start:var(--nl-heading-level-3-margin-block-start, revert)}.nl-heading--level-4{color:var(--nl-heading-level-4-color, inherit);font-family:var(--nl-heading-level-4-font-family);font-size:var(--nl-heading-level-4-font-size, revert);font-weight:var(--nl-heading-level-4-font-weight, bold);line-height:var(--nl-heading-level-4-line-height);margin-block-end:var(--nl-heading-level-4-margin-block-end, revert);margin-block-start:var(--nl-heading-level-4-margin-block-start, revert)}.nl-heading--level-5{color:var(--nl-heading-level-5-color, inherit);font-family:var(--nl-heading-level-5-font-family);font-size:var(--nl-heading-level-5-font-size, revert);font-weight:var(--nl-heading-level-5-font-weight, bold);line-height:var(--nl-heading-level-5-line-height);margin-block-end:var(--nl-heading-level-5-margin-block-end, revert);margin-block-start:var(--nl-heading-level-5-margin-block-start, revert)}.nl-heading--level-6{color:var(--nl-heading-level-6-color, inherit);font-family:var(--nl-heading-level-6-font-family);font-size:var(--nl-heading-level-6-font-size, revert);font-weight:var(--nl-heading-level-6-font-weight, bold);line-height:var(--nl-heading-level-6-line-height);margin-block-end:var(--nl-heading-level-6-margin-block-end, revert);margin-block-start:var(--nl-heading-level-6-margin-block-start, revert)}\n');
+  },
+  56561(e, n, a) {
+   a.d(n, { f: () => h });
+   var t = a(15540),
+    r = a(69967),
+    i = a(86070),
+    l = a(13526),
+    o = a(30758),
+    d = ['children', 'className', 'purpose'];
+   function s(e, n) {
+    var a = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+     var t = Object.getOwnPropertySymbols(e);
+     (n &&
+      (t = t.filter(function (n) {
+       return Object.getOwnPropertyDescriptor(e, n).enumerable;
+      })),
+      a.push.apply(a, t));
+    }
+    return a;
+   }
+   function c(e) {
+    for (var n = 1; n < arguments.length; n++) {
+     var a = null != arguments[n] ? arguments[n] : {};
+     n % 2
+      ? s(Object(a), !0).forEach(function (n) {
+         (0, t.A)(e, n, a[n]);
+        })
+      : Object.getOwnPropertyDescriptors
+        ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+        : s(Object(a)).forEach(function (n) {
+           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(a, n));
+          });
+    }
+    return e;
+   }
+   var h = (0, o.forwardRef)(function (e, n) {
+    var a = e.children,
+     o = e.className,
+     s = e.purpose,
+     h = (0, r.A)(e, d);
+    return (0, i.jsx)('p', c(c({ className: (0, l.$)('nl-paragraph', (0, t.A)({}, 'nl-paragraph--lead', 'lead' === s), o), ref: n }, h), {}, { children: 'lead' === s ? (0, i.jsx)('b', { className: 'nl-paragraph__lead', children: a }) : a }));
+   });
+   h.displayName = 'Paragraph';
   },
   58315(e, n, a) {
    a.d(n, { A: () => t });
