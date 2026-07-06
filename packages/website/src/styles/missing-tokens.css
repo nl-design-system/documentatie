@@ -72,6 +72,12 @@
   align-items: unset;
 }
 
+@media (forced-colors: active) {
+  .utrecht-nav-bar .utrecht-nav-list__item:not(:has([aria-current])) {
+    border-block-end-style: none;
+  }
+}
+
 .denhaag-side-navigation__link {
   /* denhaag.side-navigation.link.padding-inline-end */
   padding-inline-end: var(--basis-space-inline-xl);
