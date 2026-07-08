@@ -2019,10 +2019,6 @@ html[data-theme="dark"] {
 .pills__item:not(.pills__item--active):hover {
  background: var(--ifm-pills-color-background-active);
 }
-.DocSearch-Markdown-Content p:last-child,
-.ma-theme .navbar__logo {
- margin-block-end: 0;
-}
 .navbar-sidebar__close {
  display: flex;
  margin-left: auto;
@@ -2557,6 +2553,13 @@ html[data-theme="dark"] {
  --nl-button-padding-inline-end: var(--basis-space-inline-md);
  --nl-button-padding-inline-start: var(--basis-space-inline-md);
  font-size-adjust: 0.5;
+}
+.ma-theme .navbar__logo {
+ margin-block-end: 0;
+}
+.DocSearch-Hits:last-of-type,
+.ma-core-team__item {
+ margin-block-end: 24px;
 }
 .navbar__brand:focus-visible {
  background-color: transparent !important;
@@ -10002,6 +10005,24 @@ body {
 body :lang(ar) {
  letter-spacing: 0 !important;
 }
+.ma-core-team {
+ align-items: baseline;
+ align-items: center;
+ display: grid;
+ gap: 8px;
+ grid-auto-flow: column;
+ inline-size: 100%;
+ margin-block-start: 30px;
+ max-block-size: 200px;
+}
+.ma-core-team__description,
+.ma-core-team__heading {
+ padding-block-end: 8px;
+}
+.ma-core-team__heading-subtitle {
+ font-size: 20px;
+ padding-block-start: 8px;
+}
 .ma-status-visual {
  display: flex;
  flex-direction: column;
@@ -10517,9 +10538,6 @@ svg.DocSearch-Hit-Select-Icon {
 .DocSearch-Logo svg {
  color: var(--docsearch-logo-color);
  margin-inline-start: 8px;
-}
-.DocSearch-Hits:last-of-type {
- margin-block-end: 24px;
 }
 .DocSearch-Hits mark {
  background: none;
@@ -11121,6 +11139,9 @@ html {
 }
 .DocSearch-Markdown-Content p {
  margin: 1em 0;
+}
+.DocSearch-Markdown-Content p:last-child {
+ margin-block-end: 0;
 }
 .DocSearch-Markdown-Content p:first-child {
  margin-block-start: 0;
@@ -12400,46 +12421,6 @@ li.ma-doelen__item--almost-check:before {
  padding-block-end: var(--ma-card-content-padding-block-end, 36px);
  padding-block-start: var(--ma-card-content-padding-block-start, 36px);
  padding-inline: var(--ma-card-content-padding-inline, 24px);
-}
-.ma-core-team {
- align-items: baseline;
- align-items: center;
- display: grid;
- gap: 8px;
- grid-auto-flow: column;
- inline-size: 100%;
- margin-block-start: 30px;
- max-block-size: 200px;
-}
-.ma-core-team__card {
- --ma-cardgroup-card-box-shadow: none;
- --ma-cardgroup-card-border-width: 1px;
- --ma-cardgroup-card-large-padding-block-start: 0;
- --ma-cardgroup-card-large-padding-block-end: 0;
-}
-.ma-core-team__content {
- padding-block-end: 36px;
- padding-block-start: 24px;
- padding-inline-end: 24px;
- padding-inline-start: 24px;
-}
-.ma-core-team__description,
-.ma-core-team__heading {
- padding-block-end: 24px;
-}
-.ma-core-team__heading-subtitle {
- font-size: 20px;
- padding-block-start: 8px;
-}
-.ma-core-team__illustration {
- --ma-card-illustration-background-color: var(--nlds-document-inverse-background-color);
- align-items: flex-end;
- display: flex;
-}
-.ma-core-team__avatar {
- block-size: 150px;
- padding-block-start: 24px;
- padding-inline: 8px;
 }
 .ma-homepage-spotlight-section {
  --utrecht-spotlight-section-border-width: 0;
@@ -13895,11 +13876,6 @@ li.ma-doelen__item--almost-check:before {
   --ma-cardgroup-grid-template-columns: 1fr 1fr;
   --ma-cardgroup-padding-block-end: 16px;
   --ma-cardgroup-gap: 16px;
- }
-}
-@media (width <= 768px) {
- .ma-core-team__card {
-  --ma-cardgroup-card-max-width: auto;
  }
 }
 @media screen and (width <= 768px) {
