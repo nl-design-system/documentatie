@@ -3,6 +3,8 @@ import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
 import { Grid } from '@components/grid/grid';
+import { Heading } from '@components/heading/heading';
+import { Paragraph } from '@components/paragraph/paragraph';
 import { MDXComponents } from '@utils/mdx-components.astro';
 
 export async function getStaticPaths() {
@@ -33,8 +35,15 @@ const components = await MDXComponents();
   keywords={['wcag', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
   index={page.data.unlisted !== true}
 >
-  <Grid>
+  <Grid slot="header">
     <Grid.Cell span="all">
+      <Heading level={1}>{page.data.title}</Heading>
+      <Paragraph purpose="lead">{page.data.description}</Paragraph>
+    </Grid.Cell>
+  </Grid>
+
+  <Grid>
+    <Grid.Cell span="all" className="ma-flow">
       <Content components={components} />
     </Grid.Cell>
   </Grid>
