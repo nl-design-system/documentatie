@@ -1,8 +1,3 @@
----
-title: Changelog
-description: De changelog van de nldesignsystem.nl website
----
-
 # @nl-design-system-unstable/documentation
 
 ## 1.9.0
