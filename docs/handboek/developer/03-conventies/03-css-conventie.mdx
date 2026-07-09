@@ -83,10 +83,10 @@ Dit thema-bestand kan automatisch worden gegenereerd via een [Design Tokens JSON
 <Guideline appearance="do" title="Huisstijl inladen met een eigen class name">
   ```html
   <html class="utrecht-root example-theme">
-  <!-- 
+    {/* 
     Example use of Community, Candidate and custom components
     that will be styled by the example-theme stylesheet
-  -->
+  */}
     <body class="utrecht-body">
       <h1 class="nl-heading nl-heading--level-1">Example page</h1>
       <div class="example-card-group">
@@ -124,7 +124,6 @@ Zorg dat de prefix van de componenten en tokens herkenbaar en herleidbaar is. De
 </Guideline>
 
 <Guideline appearance="do" title="Eigen prefix voor nieuwe componenten" description="Alle namen in gedeelde CSS beginnen met een prefix die uniek is voor de organisatie. De prefix bestaat uitsluitend uit letters en cijfers, zonder koppelstreepjes of andere tekens.">
-
 ```css
 .example-video {
   border-color: var(--example-video-border-color);
@@ -132,7 +131,6 @@ Zorg dat de prefix van de componenten en tokens herkenbaar en herleidbaar is. De
   border-width: var(--example-video-border-width);
 }
 ```
-
 </Guideline>
 
 <Guideline appearance="do" title="Eigen prefix voor specifieke component tokens bij gebruik van andere componenten">
@@ -159,27 +157,6 @@ Zorg dat de prefix van de componenten en tokens herkenbaar en herleidbaar is. De
 }
 ```
 </Guideline>
-
-<!--
-
-Niet toegestaan, als een `small`-variant van `nl-button` nodig is:
-
-```css
-.nl-button--small {
-  font-size: 16px;
-}
-```
-
-Wanneer de developers later een nieuwe versie uitbrengen met dezelfde naam, moet de code worden aangepast om veilig te kunnen updaten.
-
-Verplicht:
-
-````css
-.example-button--small {
-  font-size: 16px;
-}
-```
--->
 
 ## Herbruikbare mixins
 
@@ -238,21 +215,21 @@ Een project dat de mixin tijdelijk gebruikt tijdens een migratie van oude class 
 Schrijf robuuste CSS die niet afhankelijk is van een algemene `reset.css`. Wanneer een HTML-element zoals `<ul>` wordt gebruikt voor een navigatiecomponent, worden browser-standaardstijlen — zoals `padding-inline-start` in [Firefox](https://hg.mozilla.org/mozilla-central/file/tip/layout/style/res/html.css) of [Safari](https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css) — expliciet gereset.
 
 <Guideline appearance="do" title="Reset CSS in de component zelf">
-  ```css
-  ul.example-nav {
-    padding-inline-start: 0;
-    /* …other styles… */
-  }
-  ```
+```css
+ul.example-nav {
+  padding-inline-start: 0;
+  /* …other styles… */
+}
+```
 </Guideline>
 
 Ook als het project een [`reset.css`-variant](https://meyerweb.com/eric/tools/css/reset/) gebruikt, blijft deze reset aanwezig in de componentcode zodat het ook werkt voor projecten zonder die `reset.css`.
 
 <Guideline appearance="dont" title="Globale CSS reset">
-  ```css
-  * {
-    padding: 0;
-  }
+```css
+* {
+  padding: 0;
+}
 ```
 </Guideline>
 
@@ -261,17 +238,14 @@ Ook als het project een [`reset.css`-variant](https://meyerweb.com/eric/tools/cs
 Wanneer een property is ingesteld op de _initial value_ (zoals `0` voor padding), kan dit eruitzien als overbodige code. Als reset-code in een losse mixin staat, ontbreekt de context dat het bedoeld is als browser-reset.
 
 <Guideline appearance="do" title="Reset in een mixin" description="Om te voorkomen dat de code later als dode code wordt verwijderd, staat reset-code in een eigen mixin">
-
 ```scss
-@mixin reset-ul {
-  padding-inline-start: 0;
-  /* …other styles… */
-}
-
-@mixin example-nav {
-  @include reset-ul;
-  /* …other styles… */
-}
+  @mixin reset-ul {
+    padding-inline-start: 0;
+    /* …other styles… */
+  }
+  @mixin example-nav {
+    @include reset-ul;
+    /* …other styles… */
+  }
 ```
-
 </Guideline>
