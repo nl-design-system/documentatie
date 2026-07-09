@@ -25,6 +25,7 @@ export function SearchForm(props: SearchFormProps) {
     <search className="ma-search-form">
       <form className="ma-search-form__form" action="/zoeken" onSubmit={handleSubmit}>
         <Textbox
+          aria-label="zoekveld"
           name="query"
           required
           autoFocus={props.autoFocus}
