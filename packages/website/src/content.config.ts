@@ -100,7 +100,6 @@ const docs = defineCollection({
       'richtlijnen/**/*.{md,mdx}',
       'voorbeelden/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
-      'CHANGELOG.md',
       '!**/_*/**',
       '!**/_*.{md,mdx}',
     ],
@@ -136,7 +135,16 @@ const overviewPages = defineCollection({
   schema,
 });
 
-export const collections = { docs, wcag, components, overviewPages };
+const changelog = defineCollection({
+  loader: customGlob({
+    base: './../../docs',
+    pattern: ['CHANGELOG.md'],
+    generateId,
+  }),
+  schema: z.object({ title: z.string().default('Changelog') }),
+});
+
+export const collections = { docs, wcag, components, overviewPages, changelog };
 
 export const getAllCollections = async () => {
   const collectionPromises = await Promise.all([
@@ -144,6 +152,7 @@ export const getAllCollections = async () => {
     getCollection('docs'),
     getCollection('wcag'),
     getCollection('overviewPages'),
+    getCollection('changelog'),
   ]);
 
   return collectionPromises.flat();
