@@ -1,5 +1,11 @@
 # @nl-design-system-unstable/documentation
 
+## 1.11.0
+
+### Minor Changes
+
+- 9562a54: Update baseline voor juli 2026.
+
 ## 1.10.0
 
 ### Minor Changes
