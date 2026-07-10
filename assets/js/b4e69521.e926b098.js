@@ -2,14 +2,14 @@
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [92477],
  {
-  18439(e, n, t) {
-   t.d(n, { R: () => d, x: () => s });
-   var o = t(30758);
+  18439(e, n, o) {
+   o.d(n, { R: () => d, x: () => s });
+   var t = o(30758);
    const a = {},
-    i = o.createContext(a);
+    i = t.createContext(a);
    function d(e) {
-    const n = o.useContext(i);
-    return o.useMemo(
+    const n = t.useContext(i);
+    return t.useMemo(
      function () {
       return 'function' == typeof e ? e(n) : { ...n, ...e };
      },
@@ -18,15 +18,15 @@
    }
    function s(e) {
     let n;
-    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : d(e.components)), o.createElement(i.Provider, { value: n }, e.children));
+    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(a) : e.components || a) : d(e.components)), t.createElement(i.Provider, { value: n }, e.children));
    }
   },
-  98080(e, n, t) {
-   (t.r(n), t.d(n, { assets: () => r, contentTitle: () => s, default: () => m, frontMatter: () => d, metadata: () => o, toc: () => l }));
-   const o = JSON.parse('{"id":"handboek/definition-of-done/hall-of-fame-stappenplan/index","title":"Overzicht","description":"Overzicht van de Definition of Done voor Hall of Fame componenten","source":"@site/docs/handboek/definition-of-done/hall-of-fame-stappenplan/index.md","sourceDirName":"handboek/definition-of-done/hall-of-fame-stappenplan","slug":"/handboek/estafettemodel/componenten/hall-of-fame","permalink":"/handboek/estafettemodel/componenten/hall-of-fame","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/hall-of-fame-stappenplan/index.md","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Overzicht","title_sm":"Hall of Fame","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Overzicht","sidebar_position":1,"navigation_order":4,"pagination_label":"Overzicht","description":"Overzicht van de Definition of Done voor Hall of Fame componenten","slug":"/handboek/estafettemodel/componenten/hall-of-fame","keywords":["componenten","design system","estafettemodel","definition of done"]},"sidebar":"handboek","previous":{"title":"5. Publicatiefase","permalink":"/handboek/estafettemodel/componenten/candidate/publicatiefase"},"next":{"title":"Overzicht","permalink":"/handboek/estafettemodel/componenten/hall-of-fame"}}');
-   var a = t(86070),
-    i = t(18439);
-   const d = { title: 'Overzicht', title_sm: 'Hall of Fame', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Overzicht', sidebar_position: 1, navigation_order: 4, pagination_label: 'Overzicht', description: 'Overzicht van de Definition of Done voor Hall of Fame componenten', slug: '/handboek/estafettemodel/componenten/hall-of-fame', keywords: ['componenten', 'design system', 'estafettemodel', 'definition of done'] },
+  98080(e, n, o) {
+   (o.r(n), o.d(n, { assets: () => r, contentTitle: () => s, default: () => m, frontMatter: () => d, metadata: () => t, toc: () => l }));
+   const t = JSON.parse('{"id":"handboek/definition-of-done/hall-of-fame-stappenplan/index","title":"Overzicht van de Hall of Fame Definition of Done voor componenten","description":"Overzicht van de Definition of Done voor Hall of Fame componenten","source":"@site/docs/handboek/definition-of-done/hall-of-fame-stappenplan/index.md","sourceDirName":"handboek/definition-of-done/hall-of-fame-stappenplan","slug":"/handboek/estafettemodel/componenten/hall-of-fame","permalink":"/handboek/estafettemodel/componenten/hall-of-fame","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/definition-of-done/hall-of-fame-stappenplan/index.md","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Overzicht van de Hall of Fame Definition of Done voor componenten","title_sm":"Hall of Fame","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Overzicht","sidebar_position":1,"navigation_order":4,"pagination_label":"Overzicht","description":"Overzicht van de Definition of Done voor Hall of Fame componenten","slug":"/handboek/estafettemodel/componenten/hall-of-fame","keywords":["componenten","design system","estafettemodel","definition of done"]},"sidebar":"handboek","previous":{"title":"5. Publicatiefase","permalink":"/handboek/estafettemodel/componenten/candidate/publicatiefase"},"next":{"title":"Overzicht","permalink":"/handboek/estafettemodel/componenten/hall-of-fame"}}');
+   var a = o(86070),
+    i = o(18439);
+   const d = { title: 'Overzicht van de Hall of Fame Definition of Done voor componenten', title_sm: 'Hall of Fame', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Overzicht', sidebar_position: 1, navigation_order: 4, pagination_label: 'Overzicht', description: 'Overzicht van de Definition of Done voor Hall of Fame componenten', slug: '/handboek/estafettemodel/componenten/hall-of-fame', keywords: ['componenten', 'design system', 'estafettemodel', 'definition of done'] },
     s = 'Hall of Fame stappenplan',
     r = {},
     l = [

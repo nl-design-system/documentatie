@@ -1,4 +1,4 @@
-/*! For license information please see ba4d52e4.9171bc4a.js.LICENSE.txt */
+/*! For license information please see ba4d52e4.09f3b235.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [81830],
@@ -103,8 +103,8 @@
        : null,
       S = a.useMemo(() => e.thumbnail || j || `https://i.ytimg.com/${w}/${e.playlist ? g : c}/${u}.${f}`, [e.thumbnail, j, w, e.playlist, g, c, u, f]),
       x = e.activatedClass || 'lyt-activated',
-      T = e.adNetwork || !1,
-      D = e.aspectHeight || 9,
+      D = e.adNetwork || !1,
+      T = e.aspectHeight || 9,
       E = e.aspectWidth || 16,
       z = e.iframeClass || '',
       L = e.playerClass || 'lty-playbtn',
@@ -213,7 +213,7 @@
       (0, t.jsxs)(t.Fragment, {
        children: [
         !e.lazyLoad && (0, t.jsx)('link', { rel: C, href: S, as: 'image' }),
-        (0, t.jsx)(t.Fragment, { children: i && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: k }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), T && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
+        (0, t.jsx)(t.Fragment, { children: i && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: k }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), D && (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, t.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
         e.seo && !e.playlist && (0, t.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: o(e.id, m, S, k, e.seo) } }),
         H && !e.playlist && (0, t.jsx)('noscript', { children: (0, t.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${m} on YouTube`, children: ['Watch "', m, '" on YouTube'] }) }),
         (0, t.jsxs)(A, {
@@ -225,7 +225,7 @@
          'data-title': m,
          role: l || e.lazyLoad ? void 0 : 'img',
          'aria-label': l ? void 0 : `${m} - YouTube video preview`,
-         style: { ...(!e.lazyLoad && { backgroundImage: `url(${S})` }), '--aspect-ratio': (D / E) * 100 + '%', ...(e.style || {}) },
+         style: { ...(!e.lazyLoad && { backgroundImage: `url(${S})` }), '--aspect-ratio': (T / E) * 100 + '%', ...(e.style || {}) },
          children: [e.lazyLoad && !l && (0, t.jsx)('img', { src: S, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !l && (0, t.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && l) && (0, t.jsx)('button', { type: 'button', className: L, 'aria-label': `${h} ${m}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, onClick: P, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: h }) }), l && (0, t.jsx)('iframe', { ref: n, className: z, title: m, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: v, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
@@ -239,14 +239,14 @@
   },
   88071(e, n, i) {
    (i.r(n), i.d(n, { assets: () => m, contentTitle: () => g, default: () => p, frontMatter: () => c, metadata: () => t, toc: () => u }));
-   const t = JSON.parse('{"id":"community/events/design-systems-week/en/previous-editions/2025","title":"Videos","description":"Recordings of talks that are in English for Design Systems Week 2025.","source":"@site/docs/community/events/design-systems-week/en/previous-editions/2025.mdx","sourceDirName":"community/events/design-systems-week/en/previous-editions","slug":"/events/design-systems-week-2025/en/program","permalink":"/events/design-systems-week-2025/en/program","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/previous-editions/2025.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Videos","title_sm":"2025","description":"Recordings of talks that are in English for Design Systems Week 2025.","lang":"en","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"2025","sidebar_position":1,"navigation_order":1,"pagination_label":"Videos 2025","slug":"/events/design-systems-week-2025/en/program","image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png","image_alt":"NL Design System Design Systems Week 2024 27-30 October, online"},"sidebar":"community","previous":{"title":"About Design Systems Week","permalink":"/events/design-systems-week/en"},"next":{"title":"Videos 2025","permalink":"/events/design-systems-week-2025/en/program"}}');
+   const t = JSON.parse('{"id":"community/events/design-systems-week/en/previous-editions/2025","title":"Videos van Design Systems Week 2025","description":"Recordings of talks that are in English for Design Systems Week 2025.","source":"@site/docs/community/events/design-systems-week/en/previous-editions/2025.mdx","sourceDirName":"community/events/design-systems-week/en/previous-editions","slug":"/events/design-systems-week-2025/en/program","permalink":"/events/design-systems-week-2025/en/program","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/previous-editions/2025.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Videos van Design Systems Week 2025","title_sm":"2025","description":"Recordings of talks that are in English for Design Systems Week 2025.","lang":"en","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"2025","sidebar_position":1,"navigation_order":1,"pagination_label":"Videos 2025","slug":"/events/design-systems-week-2025/en/program","image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png","image_alt":"NL Design System Design Systems Week 2024 27-30 October, online"},"sidebar":"community","previous":{"title":"About Design Systems Week","permalink":"/events/design-systems-week/en"},"next":{"title":"Videos 2025","permalink":"/events/design-systems-week-2025/en/program"}}');
    var a = i(86070),
     s = i(18439),
     o = i(46447),
     r = i(2397),
     l = i(82702),
     d = i(10664);
-   const c = { title: 'Videos', title_sm: '2025', description: 'Recordings of talks that are in English for Design Systems Week 2025.', lang: 'en', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2025, sidebar_position: 1, navigation_order: 1, pagination_label: 'Videos 2025', slug: '/events/design-systems-week-2025/en/program', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png', image_alt: 'NL Design System Design Systems Week 2024 27-30 October, online' },
+   const c = { title: 'Videos van Design Systems Week 2025', title_sm: '2025', description: 'Recordings of talks that are in English for Design Systems Week 2025.', lang: 'en', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2025, sidebar_position: 1, navigation_order: 1, pagination_label: 'Videos 2025', slug: '/events/design-systems-week-2025/en/program', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png', image_alt: 'NL Design System Design Systems Week 2024 27-30 October, online' },
     g = 'Design Systems Week 2025',
     m = {},
     u = [{ value: 'Videos', id: 'videos', level: 2 }];

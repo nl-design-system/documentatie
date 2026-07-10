@@ -23,10 +23,10 @@
   },
   86091(e, n, i) {
    (i.r(n), i.d(n, { assets: () => l, contentTitle: () => a, default: () => g, frontMatter: () => r, metadata: () => t, toc: () => s }));
-   const t = JSON.parse('{"id":"footer/coc","title":"Code of Conduct","description":"Wij streven ernaar om iedereen een vriendelijke, veilige en gastvrije omgeving te bieden.","source":"@site/docs/footer/coc.md","sourceDirName":"footer","slug":"/coc","permalink":"/coc","draft":false,"unlisted":true,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/footer/coc.md","tags":[],"version":"current","frontMatter":{"title":"Code of Conduct","hide_title":true,"hide_table_of_contents":true,"pagination_label":"Code of Conduct","slug":"/coc","unlisted":true}}');
+   const t = JSON.parse('{"id":"footer/coc","title":"Code of Conduct - Nederlands","description":"Wij streven ernaar om iedereen een vriendelijke, veilige en gastvrije omgeving te bieden.","source":"@site/docs/footer/coc.md","sourceDirName":"footer","slug":"/coc","permalink":"/coc","draft":false,"unlisted":true,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/footer/coc.md","tags":[],"version":"current","frontMatter":{"title":"Code of Conduct - Nederlands","hide_title":true,"hide_table_of_contents":true,"pagination_label":"Code of Conduct","slug":"/coc","unlisted":true}}');
    var o = i(86070),
     d = i(18439);
-   const r = { title: 'Code of Conduct', hide_title: !0, hide_table_of_contents: !0, pagination_label: 'Code of Conduct', slug: '/coc', unlisted: !0 },
+   const r = { title: 'Code of Conduct - Nederlands', hide_title: !0, hide_table_of_contents: !0, pagination_label: 'Code of Conduct', slug: '/coc', unlisted: !0 },
     a = 'Code of Conduct',
     l = {},
     s = [

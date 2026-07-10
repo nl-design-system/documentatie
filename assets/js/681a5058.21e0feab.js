@@ -14,12 +14,12 @@
     c = r(30734),
     p = r(30758),
     u = r(31186),
-    h = r(86070);
-   const m = ({ children: e }) => (0, h.jsx)(t.ui, { className: 'nlds-canvas__example-surface', children: (0, h.jsx)(t.yo, { className: (0, i.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, h.jsx)(t.fz, { className: 'nlds-canvas__example-paragraph', children: e }) }) });
-   m.displayName = 'ParagraphContainer';
-   const v = ({ children: e }) => (0, h.jsx)(t.ui, { className: 'nlds-canvas__example-surface', children: (0, h.jsx)(t.yo, { className: (0, i.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: e }) });
-   v.displayName = 'DocumentContainer';
-   const g = ({ children: e }) => (0, h.jsx)(t.ui, { className: 'nlds-canvas__example-surface', children: e });
+    v = r(86070);
+   const h = ({ children: e }) => (0, v.jsx)(t.ui, { className: 'nlds-canvas__example-surface', children: (0, v.jsx)(t.yo, { className: (0, i.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, v.jsx)(t.fz, { className: 'nlds-canvas__example-paragraph', children: e }) }) });
+   h.displayName = 'ParagraphContainer';
+   const m = ({ children: e }) => (0, v.jsx)(t.ui, { className: 'nlds-canvas__example-surface', children: (0, v.jsx)(t.yo, { className: (0, i.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: e }) });
+   m.displayName = 'DocumentContainer';
+   const g = ({ children: e }) => (0, v.jsx)(t.ui, { className: 'nlds-canvas__example-surface', children: e });
    g.displayName = 'SurfaceContainer';
    const j = ({ code: e, copy: n = !0, defaultExpandedCode: r = !1, displayCode: j = !0, children: b, container: k = 'document', language: x, designTokens: f }) => {
     const y = 'function' == typeof b ? b() : b,
@@ -36,15 +36,15 @@
     const S = (0, p.useId)();
     let D = p.Fragment;
     return (
-     'paragraph' === k ? (D = m) : 'document' === k ? (D = v) : 'surface' === k && (D = g),
-     (0, h.jsxs)('div', {
+     'paragraph' === k ? (D = h) : 'document' === k ? (D = m) : 'surface' === k && (D = g),
+     (0, v.jsxs)('div', {
       className: (0, i.A)('nlds-canvas'),
       children: [
-       y && (0, h.jsx)('div', { className: (0, i.A)('nlds-canvas__example'), children: (0, h.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, h.jsx)(D, { children: (0, h.jsx)(t.v$, { children: y }) }) }) }),
+       y && (0, v.jsx)('div', { className: (0, i.A)('nlds-canvas__example'), children: (0, v.jsx)('div', { className: 'voorbeeld-theme', style: f, children: (0, v.jsx)(D, { children: (0, v.jsx)(t.v$, { children: y }) }) }) }),
        j &&
-        (0, h.jsx)('div', {
+        (0, v.jsx)('div', {
          className: (0, i.A)('nlds-canvas__toolbar'),
-         children: (0, h.jsx)(t.$n, {
+         children: (0, v.jsx)(t.$n, {
           className: (0, i.A)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
           appearance: 'subtle-button',
           onClick: () => {
@@ -56,16 +56,16 @@
          }),
         }),
        j &&
-        (0, h.jsxs)('div', {
+        (0, v.jsxs)('div', {
          className: (0, i.A)('nlds-canvas__code-block', !n && 'nlds-canvas__code-block--user-select-none'),
          id: S,
          hidden: !A,
          children: [
-          (0, h.jsx)(o.M, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: z, trim: !0 }),
+          (0, v.jsx)(o.M, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: z, trim: !0 }),
           n &&
-           (0, h.jsx)('div', {
+           (0, v.jsx)('div', {
             className: (0, i.A)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
-            children: (0, h.jsx)(t.$n, {
+            children: (0, v.jsx)(t.$n, {
              className: (0, i.A)('nlds-canvas__button', 'nlds-canvas__copy-button'),
              appearance: 'subtle-button',
              onClick: () => {
@@ -101,8 +101,8 @@
    }
   },
   36298(e, n, r) {
-   (r.r(n), r.d(n, { assets: () => j, contentTitle: () => g, default: () => x, frontMatter: () => v, metadata: () => o, toc: () => b }));
-   const o = JSON.parse('{"id":"richtlijnen/formulieren/help/avoid-input-mask/index","title":"Maak het mogelijk een inzending te controleren, te wijzigen of ongedaan te maken","description":"Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.","source":"@site/docs/richtlijnen/formulieren/help/8-avoid-input-mask/index.mdx","sourceDirName":"richtlijnen/formulieren/help/8-avoid-input-mask","slug":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","permalink":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/help/8-avoid-input-mask/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Maak het mogelijk een inzending te controleren, te wijzigen of ongedaan te maken","title_sm":"Vermijd invoerpatronen","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Vermijd invoerpatronen","pagination_label":"Vermijd invoerpatronen","description":"Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.","slug":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","keywords":["labels","formulier","design","code"]},"sidebar":"richtlijnen","previous":{"title":"Controleren en aanpassen","permalink":"/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen"},"next":{"title":"Wanneer gebruik je welk formulierelement","permalink":"/richtlijnen/formulieren/wanneer-welk-form-element/"}}');
+   (r.r(n), r.d(n, { assets: () => j, contentTitle: () => g, default: () => x, frontMatter: () => m, metadata: () => o, toc: () => b }));
+   const o = JSON.parse('{"id":"richtlijnen/formulieren/help/avoid-input-mask/index","title":"Maak het makkelijk om flexibel een veld in te voeren","description":"Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.","source":"@site/docs/richtlijnen/formulieren/help/8-avoid-input-mask/index.mdx","sourceDirName":"richtlijnen/formulieren/help/8-avoid-input-mask","slug":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","permalink":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/help/8-avoid-input-mask/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Maak het makkelijk om flexibel een veld in te voeren","title_sm":"Vermijd invoerpatronen","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Vermijd invoerpatronen","pagination_label":"Vermijd invoerpatronen","description":"Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.","slug":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","keywords":["labels","formulier","design","code"]},"sidebar":"richtlijnen","previous":{"title":"Controleren en aanpassen","permalink":"/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen"},"next":{"title":"Wanneer gebruik je welk formulierelement","permalink":"/richtlijnen/formulieren/wanneer-welk-form-element/"}}');
    var t = r(86070),
     i = r(18439),
     l = r(78734);
@@ -124,20 +124,20 @@
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
     return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(p, { ...e }) }) : p(e);
    }
-   function h(e) {
+   function v(e) {
     const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
     return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, t.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/wcag/2.4.6/', children: 'Succescriterium 2.4.6 Koppen en labels' }) }), '\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/wcag/3.3.1/', children: 'Succescriterium 3.3.1 Foutidentificatie' }) }), '\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/wcag/3.3.2/', children: 'Succescriterium 3.3.2 Labels of instructies' }) }), '\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/wcag/3.3.3/', children: 'Succescriterium 3.3.3 Foutsuggestie' }) }), '\n'] })] });
    }
-   function m(e = {}) {
+   function h(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
-    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(h, { ...e }) }) : h(e);
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(v, { ...e }) }) : v(e);
    }
-   const v = { title: 'Maak het mogelijk een inzending te controleren, te wijzigen of ongedaan te maken', title_sm: 'Vermijd invoerpatronen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Vermijd invoerpatronen', pagination_label: 'Vermijd invoerpatronen', description: 'Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.', slug: '/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen', keywords: ['labels', 'formulier', 'design', 'code'] },
+   const m = { title: 'Maak het makkelijk om flexibel een veld in te voeren', title_sm: 'Vermijd invoerpatronen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Vermijd invoerpatronen', pagination_label: 'Vermijd invoerpatronen', description: 'Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.', slug: '/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen', keywords: ['labels', 'formulier', 'design', 'code'] },
     g = void 0,
     j = {},
     b = [{ value: 'Wat is een patroon op een invoerveld?', id: 'wat-is-een-patroon-op-een-invoerveld', level: 2 }, { value: 'De problemen met de gebruikerservaring en de toegankelijkheid van invoerpatronen', id: 'de-problemen-met-de-gebruikerservaring-en-de-toegankelijkheid-van-invoerpatronen', level: 2 }, { value: 'Voorbeelden', id: 'voorbeelden', level: 2 }, { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...l.RM];
    function k(e) {
-    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', (0, t.jsx)(s, {}), '\n', (0, t.jsx)(u, {}), '\n', (0, t.jsx)(m, {}), '\n', (0, t.jsx)(l.Ay, {})] });
+    return (0, t.jsxs)(t.Fragment, { children: ['\n', '\n', (0, t.jsx)(s, {}), '\n', (0, t.jsx)(u, {}), '\n', (0, t.jsx)(h, {}), '\n', (0, t.jsx)(l.Ay, {})] });
    }
    function x(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
@@ -170,10 +170,10 @@
    const c = (0, s.createContext)({}),
     p = ({ title: e, appearance: n, description: r, children: s, figure: p }) => {
      const u = { do: 'Doen', dont: 'Niet doen' },
-      h = p ? 'figure' : 'div',
-      m = p ? 'figcaption' : 'div',
-      v = 'string' == typeof r ? (0, d.jsx)(a.oz, { children: r }) : r;
-     return (0, d.jsxs)(h, { className: (0, l.A)('nlds-guideline', `nlds-guideline--${n}`), id: 'string' == typeof e ? e?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, d.jsxs)(m, { className: 'nlds-guideline__description', children: ['dont' === n ? (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(i.fz, { className: (0, l.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, d.jsx)(t.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, d.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, d.jsx)(i.fz, { children: e })] }) : (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(i.fz, { className: (0, l.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, d.jsx)(o.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, d.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, d.jsx)(i.fz, { children: e })] }), v] }), (0, d.jsx)('div', { className: 'nlds-guideline__example', children: (0, d.jsx)(c.Provider, { value: { title: e, type: u[n] }, children: s }) })] });
+      v = p ? 'figure' : 'div',
+      h = p ? 'figcaption' : 'div',
+      m = 'string' == typeof r ? (0, d.jsx)(a.oz, { children: r }) : r;
+     return (0, d.jsxs)(v, { className: (0, l.A)('nlds-guideline', `nlds-guideline--${n}`), id: 'string' == typeof e ? e?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, d.jsxs)(h, { className: 'nlds-guideline__description', children: ['dont' === n ? (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(i.fz, { className: (0, l.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, d.jsx)(t.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, d.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, d.jsx)(i.fz, { children: e })] }) : (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(i.fz, { className: (0, l.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, d.jsx)(o.A, { 'aria-hidden': 'true', role: 'presentation', className: 'nlds-guideline__icon' }), (0, d.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, d.jsx)(i.fz, { children: e })] }), m] }), (0, d.jsx)('div', { className: 'nlds-guideline__example', children: (0, d.jsx)(c.Provider, { value: { title: e, type: u[n] }, children: s }) })] });
     };
   },
   95822(e, n, r) {
@@ -223,8 +223,8 @@
    function d({ lineNumber: e, syntax: n, textContent: r, trim: d }) {
     let c = r;
     const { title: p, type: u } = (0, i.useContext)(l.x),
-     h = (0, i.useId)();
-    return (d && (c = c.trim()), (0, s.jsx)(t.f4, { theme: a, code: c, language: n || '', children: ({ style: n, tokens: r, getLineProps: t, getTokenProps: i }) => (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)('span', { hidden: !0, id: h, children: ['codevoorbeeld ', u ? `\u201c${u}\u201d` : '', ' ', p ? ': ' : ' ', p] }), (0, s.jsx)(o.NG, { tabIndex: 0, role: p ? 'region' : void 0, 'aria-labelledby': h, style: n, children: r.map((n, r) => (0, s.jsxs)('span', { ...t({ line: n }), children: [e && (0, s.jsx)('span', { children: r + 1 }), n.map((e, n) => (0, s.jsx)('span', { ...i({ token: e }) }, n)), '\n'] }, r)) })] }) }));
+     v = (0, i.useId)();
+    return (d && (c = c.trim()), (0, s.jsx)(t.f4, { theme: a, code: c, language: n || '', children: ({ style: n, tokens: r, getLineProps: t, getTokenProps: i }) => (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)('span', { hidden: !0, id: v, children: ['codevoorbeeld ', u ? `\u201c${u}\u201d` : '', ' ', p ? ': ' : ' ', p] }), (0, s.jsx)(o.NG, { tabIndex: 0, role: p ? 'region' : void 0, 'aria-labelledby': v, style: n, children: r.map((n, r) => (0, s.jsxs)('span', { ...t({ line: n }), children: [e && (0, s.jsx)('span', { children: r + 1 }), n.map((e, n) => (0, s.jsx)('span', { ...i({ token: e }) }, n)), '\n'] }, r)) })] }) }));
    }
   },
  },

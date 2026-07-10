@@ -79,8 +79,8 @@
       D = e.aspectHeight || 9,
       C = e.aspectWidth || 16,
       N = e.iframeClass || '',
-      _ = e.playerClass || 'lty-playbtn',
-      E = e.wrapperClass || 'yt-lite',
+      E = e.playerClass || 'lty-playbtn',
+      _ = e.wrapperClass || 'yt-lite',
       L = o.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
       P = e.rel ? 'prefetch' : 'preload',
       B = e.containerElement || 'article',
@@ -193,12 +193,12 @@
           i || a(!0);
          },
          onClick: O,
-         className: `${E} ${l ? S : ''}`,
+         className: `${_} ${l ? S : ''}`,
          'data-title': u,
          role: l || e.lazyLoad ? void 0 : 'img',
          'aria-label': l ? void 0 : `${u} - YouTube video preview`,
          style: { ...(!e.lazyLoad && { backgroundImage: `url(${w})` }), '--aspect-ratio': (D / C) * 100 + '%', ...(e.style || {}) },
-         children: [e.lazyLoad && !l && (0, t.jsx)('img', { src: w, alt: `${u} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !l && (0, t.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && l) && (0, t.jsx)('button', { type: 'button', className: _, 'aria-label': `${j} ${u}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, onClick: O, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: j }) }), l && (0, t.jsx)('iframe', { ref: n, className: N, title: u, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+         children: [e.lazyLoad && !l && (0, t.jsx)('img', { src: w, alt: `${u} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !l && (0, t.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && l) && (0, t.jsx)('button', { type: 'button', className: E, 'aria-label': `${j} ${u}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, onClick: O, children: (0, t.jsx)('span', { className: 'lty-visually-hidden', children: j }) }), l && (0, t.jsx)('iframe', { ref: n, className: N, title: u, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
       })
@@ -208,11 +208,11 @@
   },
   78123(e, n, i) {
    (i.r(n), i.d(n, { assets: () => d, contentTitle: () => l, default: () => u, frontMatter: () => a, metadata: () => t, toc: () => c }));
-   const t = JSON.parse('{"id":"handboek/huisstijl-vastleggen/design-tokens","title":"Design tokens","description":"Design tokens introductie","source":"@site/docs/handboek/huisstijl-vastleggen/design-tokens.mdx","sourceDirName":"handboek/huisstijl-vastleggen","slug":"/handboek/huisstijl/design-tokens","permalink":"/handboek/huisstijl/design-tokens","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/huisstijl-vastleggen/design-tokens.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Design tokens","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Design tokens","sidebar_position":1,"navigation_order":1,"pagination_label":"Design tokens - Introductie","description":"Design tokens introductie","slug":"/handboek/huisstijl/design-tokens","keywords":["design token","design tokens","introductie"]},"sidebar":"handboek","previous":{"title":"Huisstijl vastleggen","permalink":"/handboek/huisstijl-vastleggen/overzicht"},"next":{"title":"Basis-tokens","permalink":"/handboek/huisstijl/basis-tokens"}}');
+   const t = JSON.parse('{"id":"handboek/huisstijl-vastleggen/design-tokens","title":"Design tokens - Introductie","description":"Design tokens introductie","source":"@site/docs/handboek/huisstijl-vastleggen/design-tokens.mdx","sourceDirName":"handboek/huisstijl-vastleggen","slug":"/handboek/huisstijl/design-tokens","permalink":"/handboek/huisstijl/design-tokens","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/huisstijl-vastleggen/design-tokens.mdx","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"title":"Design tokens - Introductie","hide_table_of_contents":false,"sidebar_label":"Design tokens","sidebar_position":1,"navigation_order":1,"pagination_label":"Design tokens - Introductie","description":"Design tokens introductie","slug":"/handboek/huisstijl/design-tokens","keywords":["design token","design tokens","introductie"]},"sidebar":"handboek","previous":{"title":"Huisstijl vastleggen","permalink":"/handboek/huisstijl-vastleggen/overzicht"},"next":{"title":"Basis-tokens","permalink":"/handboek/huisstijl/basis-tokens"}}');
    var o = i(86070),
     s = i(18439),
     r = i(72863);
-   const a = { title: 'Design tokens', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Design tokens', sidebar_position: 1, navigation_order: 1, pagination_label: 'Design tokens - Introductie', description: 'Design tokens introductie', slug: '/handboek/huisstijl/design-tokens', keywords: ['design token', 'design tokens', 'introductie'] },
+   const a = { title: 'Design tokens - Introductie', hide_table_of_contents: !1, sidebar_label: 'Design tokens', sidebar_position: 1, navigation_order: 1, pagination_label: 'Design tokens - Introductie', description: 'Design tokens introductie', slug: '/handboek/huisstijl/design-tokens', keywords: ['design token', 'design tokens', 'introductie'] },
     l = 'Design tokens',
     d = {},
     c = [
