@@ -23,10 +23,10 @@
   },
   50775(e, n, i) {
    (i.r(n), i.d(n, { assets: () => s, contentTitle: () => c, default: () => h, frontMatter: () => t, metadata: () => a, toc: () => d }));
-   const a = JSON.parse('{"id":"CHANGELOG","title":"Changelog","description":"De changelog van de nldesignsystem.nl website","source":"@site/docs/CHANGELOG.md","sourceDirName":".","slug":"/CHANGELOG","permalink":"/CHANGELOG","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/CHANGELOG.md","tags":[],"version":"current","frontMatter":{"title":"Changelog","description":"De changelog van de nldesignsystem.nl website"},"sidebar":"richtlijnen","previous":{"title":"WCAG-succescriterium 4.1.3 Statusberichten","permalink":"/wcag/4.1.3"}}');
+   const a = JSON.parse('{"id":"CHANGELOG","title":"@nl-design-system-unstable/documentation","description":"1.9.0","source":"@site/docs/CHANGELOG.md","sourceDirName":".","slug":"/CHANGELOG","permalink":"/CHANGELOG","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/CHANGELOG.md","tags":[],"version":"current","frontMatter":{},"sidebar":"richtlijnen","previous":{"title":"WCAG-succescriterium 4.1.3 Statusberichten","permalink":"/wcag/4.1.3"}}');
    var r = i(86070),
     l = i(18439);
-   const t = { title: 'Changelog', description: 'De changelog van de nldesignsystem.nl website' },
+   const t = {},
     c = '@nl-design-system-unstable/documentation',
     s = {},
     d = [
