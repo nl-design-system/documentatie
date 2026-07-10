@@ -12,6 +12,7 @@ import { isValidElement, useEffect, useId, useState } from 'react';
 import { Fragment } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import './Canvas.css';
+import { CanvasAstro } from './CanvasAstro';
 
 export type CanvasContainerType = 'document' | 'paragraph' | 'surface';
 
@@ -38,7 +39,7 @@ const SurfaceContainer = ({ children }: PropsWithChildren<object>) => (
 
 SurfaceContainer.displayName = 'SurfaceContainer';
 
-interface CanvasProps {
+export interface CanvasProps {
   defaultExpandedCode?: boolean;
   displayCode?: boolean;
   code?: string | ReactNode | (() => ReactNode);
@@ -49,109 +50,112 @@ interface CanvasProps {
   designTokens?: CSSProperties;
 }
 
-export const Canvas = ({
-  code,
-  copy = true,
-  defaultExpandedCode = false,
-  displayCode = true,
-  children,
-  container = 'document',
-  language,
-  designTokens,
-}: CanvasProps) => {
-  // By default the `children` argument is converted to code.
-  const jsxTree = typeof children === 'function' ? children() : children;
-  // You can override the code from `children` with the `code` argument.
-  // The code argument can be a string, or JSX, or a function that generates JSX.
-  const codeJsxTree = typeof code === 'function' ? code() : isValidElement(code) ? code : undefined;
-  const unformattedCode = typeof code === 'string' ? code : ReactDOMServer.renderToStaticMarkup(codeJsxTree || jsxTree);
-  const [exampleSourceCode, setExampleSourceCode] = useState(unformattedCode);
-  const [expandedSourceCode, setExpandedSourceCode] = useState(defaultExpandedCode);
+export const Canvas = globalThis.isAstro
+  ? CanvasAstro
+  : ({
+      code,
+      copy = true,
+      defaultExpandedCode = false,
+      displayCode = true,
+      children,
+      container = 'document',
+      language,
+      designTokens,
+    }: CanvasProps) => {
+      // By default the `children` argument is converted to code.
+      const jsxTree = typeof children === 'function' ? children() : children;
+      // You can override the code from `children` with the `code` argument.
+      // The code argument can be a string, or JSX, or a function that generates JSX.
+      const codeJsxTree = typeof code === 'function' ? code() : isValidElement(code) ? code : undefined;
+      const unformattedCode =
+        typeof code === 'string' ? code : ReactDOMServer.renderToStaticMarkup(codeJsxTree || jsxTree);
+      const [exampleSourceCode, setExampleSourceCode] = useState(unformattedCode);
+      const [expandedSourceCode, setExpandedSourceCode] = useState(defaultExpandedCode);
 
-  const toggleExpanded = () => {
-    setExpandedSourceCode(!expandedSourceCode);
-  };
+      const toggleExpanded = () => {
+        setExpandedSourceCode(!expandedSourceCode);
+      };
 
-  useEffect(() => {
-    const formatWithPrettier = async () => {
-      const exampleSourceCode = await prettier.format(unformattedCode, {
-        parser: language,
-        plugins: [prettierBabel, prettierESTree, prettierHTML, prettierPostcss],
-        semi: false,
-        singleAttributePerLine: true,
-        embeddedLanguageFormatting: 'off',
-        htmlWhitespaceSensitivity: 'ignore',
-      });
-      setExampleSourceCode(exampleSourceCode);
-    };
-    formatWithPrettier();
-  }, [unformattedCode]);
+      useEffect(() => {
+        const formatWithPrettier = async () => {
+          const exampleSourceCode = await prettier.format(unformattedCode, {
+            parser: language,
+            plugins: [prettierBabel, prettierESTree, prettierHTML, prettierPostcss],
+            semi: false,
+            singleAttributePerLine: true,
+            embeddedLanguageFormatting: 'off',
+            htmlWhitespaceSensitivity: 'ignore',
+          });
+          setExampleSourceCode(exampleSourceCode);
+        };
+        formatWithPrettier();
+      }, [unformattedCode]);
 
-  const codeBlockId = useId();
+      const codeBlockId = useId();
 
-  const copyCode = () => {
-    navigator.clipboard.writeText(exampleSourceCode).catch((err) => console.error('Copy code failed', err));
-  };
+      const copyCode = () => {
+        navigator.clipboard.writeText(exampleSourceCode).catch((err) => console.error('Copy code failed', err));
+      };
 
-  let Container: ElementType = Fragment;
+      let Container: ElementType = Fragment;
 
-  if (container === 'paragraph') {
-    Container = ParagraphContainer;
-  } else if (container === 'document') {
-    Container = DocumentContainer;
-  } else if (container === 'surface') {
-    Container = SurfaceContainer;
-  }
+      if (container === 'paragraph') {
+        Container = ParagraphContainer;
+      } else if (container === 'document') {
+        Container = DocumentContainer;
+      } else if (container === 'surface') {
+        Container = SurfaceContainer;
+      }
 
-  return (
-    <div className={clsx('nlds-canvas')}>
-      {jsxTree && (
-        <div className={clsx('nlds-canvas__example')}>
-          <div className="voorbeeld-theme" style={designTokens}>
-            <Container>
-              <HTMLContent>{jsxTree}</HTMLContent>
-            </Container>
-          </div>
-        </div>
-      )}
-      {displayCode && (
-        <div className={clsx('nlds-canvas__toolbar')}>
-          <Button
-            className={clsx('nlds-canvas__button', 'nlds-canvas__toggle-code-button')}
-            appearance="subtle-button"
-            onClick={toggleExpanded}
-            aria-expanded={expandedSourceCode}
-            aria-controls={codeBlockId}
-          >
-            {!expandedSourceCode ? 'Bekijk code' : 'Verberg code'}
-          </Button>
-        </div>
-      )}
-      {displayCode && (
-        <div
-          className={clsx('nlds-canvas__code-block', !copy && 'nlds-canvas__code-block--user-select-none')}
-          id={codeBlockId}
-          hidden={!expandedSourceCode}
-        >
-          <CodeBlockSyntaxHighlighting
-            codeBlockLabel={'Codevoorbeeld'}
-            syntax={language}
-            textContent={exampleSourceCode}
-            trim
-          />
-          {copy && (
-            <div className={clsx('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy')}>
+      return (
+        <div className={clsx('nlds-canvas')}>
+          {jsxTree && (
+            <div className={clsx('nlds-canvas__example')}>
+              <div className="voorbeeld-theme" style={designTokens}>
+                <Container>
+                  <HTMLContent>{jsxTree}</HTMLContent>
+                </Container>
+              </div>
+            </div>
+          )}
+          {displayCode && (
+            <div className={clsx('nlds-canvas__toolbar')}>
               <Button
-                className={clsx('nlds-canvas__button', 'nlds-canvas__copy-button')}
+                className={clsx('nlds-canvas__button', 'nlds-canvas__toggle-code-button')}
                 appearance="subtle-button"
-                onClick={copyCode}
+                onClick={toggleExpanded}
+                aria-expanded={expandedSourceCode}
+                aria-controls={codeBlockId}
               >
-                Kopieer
+                {!expandedSourceCode ? 'Bekijk code' : 'Verberg code'}
               </Button>
             </div>
           )}
+          {displayCode && (
+            <div
+              className={clsx('nlds-canvas__code-block', !copy && 'nlds-canvas__code-block--user-select-none')}
+              id={codeBlockId}
+              hidden={!expandedSourceCode}
+            >
+              <CodeBlockSyntaxHighlighting
+                codeBlockLabel={'Codevoorbeeld'}
+                syntax={language}
+                textContent={exampleSourceCode}
+                trim
+              />
+              {copy && (
+                <div className={clsx('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy')}>
+                  <Button
+                    className={clsx('nlds-canvas__button', 'nlds-canvas__copy-button')}
+                    appearance="subtle-button"
+                    onClick={copyCode}
+                  >
+                    Kopieer
+                  </Button>
+                </div>
+              )}
+            </div>
+          )}
         </div>
-      )}
-    </div>
-  );
-};
+      );
+    };
