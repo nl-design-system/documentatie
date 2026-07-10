@@ -31,11 +31,238 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ove
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 15.0.0
+
+10 juli 2026
+
+### Community componenten Icon Button en Side Navigation van Den Haag toegevoegd en aangepast
+
+Community componenten Icon Button en Side Navigation van Den Haag zijn toegevoegd en aangepast in de bibliotheek.
+
+- [Bekijk Icon Button in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=33357-6551&t=sOz1nkZqzJNkDOVK-4).
+- [Bekijk Side Navigation in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1670-10258).
+- Hieronder vind je de bijbehorende design tokens.
+- [Bekijk de video 'Changelog: Icon Button en Side Navigation'](https://youtu.be/2dPkYxAUjlQ) waarin wordt uitgelegd hoe je deze componenten overneemt.
+
+```json
+{
+  "denhaag": {
+    "icon-button": {
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.action-1.color-default}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.lg}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.lg}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.lg}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.lg}"
+      },
+      "focus": {
+        "outline-color": {
+          "$type": "color",
+          "$value": "{basis.focus.outline-color}"
+        },
+        "outline-offset": {
+          "$type": "dimension",
+          "$value": "{basis.focus.outline-offset}"
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": "{basis.focus.outline-style}"
+        },
+        "outline-width": {
+          "$type": "dimension",
+          "$value": "{basis.focus.outline-width}"
+        }
+      },
+      "hover": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-hover}"
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "denhaag": {
+    "side-navigation": {
+      "display": {
+        "$type": "other",
+        "$value": "flex"
+      },
+      "flex-direction": {
+        "$type": "other",
+        "$value": "column"
+      },
+      "min-width": {
+        "$type": "dimension",
+        "$value": "240px"
+      },
+      "row-gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.row.3xl}"
+      },
+      "mobile": {
+        "display": {
+          "$type": "other",
+          "$value": "None"
+        }
+      },
+      "expand-button": {
+        "block-size": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-block-size}"
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-block-size}"
+        },
+        "transform": {
+          "$type": "other",
+          "$value": "rotate(0deg)"
+        },
+        "transition": {
+          "$type": "other",
+          "$value": "None"
+        },
+        "expanded": {
+          "transform": {
+            "$type": "other",
+            "$value": "rotate(180deg)"
+          }
+        }
+      },
+      "expand-separator": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.border-subtle}"
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.md}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.md}"
+        }
+      },
+      "item": {
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        }
+      },
+      "link": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "active": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-active}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          }
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          }
+        },
+        "label": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.column.md}"
+          }
+        }
+      },
+      "list": {
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.4xl}"
+        }
+      }
+    }
+  }
+}
+```
+
 ## 14.8.0
 
 1 juli 2026
 
-### Community componenten Grid van Amsterdam toegevoegd
+### Community component Grid van Amsterdam toegevoegd
 
 Community component 'Grid' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
 
