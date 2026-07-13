@@ -1,1 +1,1 @@
-Heb je gebruikersonderzoek gedaan dat betrekking heeft op dit succescriterium en wil je dit delen? Kijk eens bij [Gebruikersonderzoeken delen](https://gebruikersonderzoeken.nl/docs/onderzoek-delen/) op gebruikersonderzoeken.nl.
+Heb je gebruikersonderzoek hierover gedaan en wil je het delen? Kijk eens bij [Gebruikersonderzoeken delen](https://gebruikersonderzoeken.nl/docs/onderzoek-delen/) op gebruikersonderzoeken.nl.

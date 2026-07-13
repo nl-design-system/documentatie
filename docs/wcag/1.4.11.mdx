@@ -5,25 +5,30 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.11 Contrast van niet-tekstuele content
 pagination_label: WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content
-description: Het contrast van essentiele onderdelen van componenten en de directe omgeving moet sterk genoeg zijn, zodat de onderdelen herkenbaar zijn.
+description: Niet-tekstuele onderdelen die nodig zijn om de website te bedienen en te begrijpen, moeten een contrast van minimaal 3:1 hebben met de achtergrond.
 slug: 1.4.11
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - waarneembaar
   - onderscheidbaar
   - perceivable
   - distinguishable
   - non-text contrast
+  - contrast
+  - iconen
+  - invoervelden
+  - focusindicator
+  - WCAG 1.4.11
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.4.11-summary.md";
 
@@ -31,64 +36,497 @@ import Summary from "./summaries/_1.4.11-summary.md";
   {"WCAG-succescriterium 1.4.11 Contrast van niet-tekstuele content"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+Voorbeelden van zulke niet-tekstuele onderdelen:
+
+- Grafische elementen die informatie geven, bijvoorbeeld een hamburgericoon voor een menu, een driehoek voor een waarschuwing of een vinkje voor succes. Ook de onderstreping van links valt hieronder, net als iconen die een dropdown of accordion aangeven zoals een pijltje.
+- Invoervelden van alle typen: tekstvelden, checkboxen, radiobuttons en dropdowns.
+- Aangepaste focusindicatoren voor toetsenbordfocus. Als je de standaard browserfocus vervangt door een eigen stijl, moet die eigen stijl voldoende contrast hebben.
+- Lijnen en balken in grafieken en gebieden op kaarten.
+
+### Uitzonderingen
+
+Bevat een UI-component tekst? Dan hoeft het grafische element zelf niet aan het contrast van 3:1 te voldoen. De tekst moet dan wel voldoen aan [SC 1.4.3 Contrast (minimum)](/wcag/1.4.3/).
+
+Bijvoorbeeld: een knop met een vergrootglasicoon naast het woord "Zoeken". Omdat de knop tekst bevat, wordt het contrast van de tekst gemeten. Het icoon is dan decoratief.
+
+Elementen die door de browser worden gestyled en die je als developer niet kunt aanpassen, hoeven niet te worden getest.
+
+### Dunne lijnen en anti-aliasing
+
+Een 1px-rand of dunne stroke oogt vaak lichter dan de berekende contrastwaarde. Dat komt door anti-aliasing: de browser tekent de rand met semi-transparante pixels om hem soepel weer te geven, waardoor de kleur visueel mengt met de achtergrond. Een rand van `#767676` op wit haalt rekenkundig 4,6:1, maar bij 1px lijkt hij dichter bij de 3:1-grens. Houd daarom een marge aan voor dunne randen, focusringen en icoon-strokes, en meet niet op de zachte rand maar in het midden van een vlakke kleur.
+
+## Veelgemaakte fouten
+
+### Informatief icoon heeft onvoldoende contrast met de achtergrond
+
+Een hamburgericoon, een avatar of een pijltjesicoon dat informatie geeft, moet minimaal een contrast van 3:1 hebben met de achtergrond. Let op: de achtergrondkleur kan veranderen bij een andere schermgrootte of in dark mode.
+
+**Hoe te testen:** meet het contrast van de icoonfill of -stroke met de achtergrond. Gebruik een Colour Contrast Analyser of een pipet in de DevTools.
+
+<Guideline appearance="dont" title="Lichtgrijs icoon op witte achtergrond, contrast 2,3:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button aria-label="Menu">
+        <svg fill="#BBBBBB" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" />
+        </svg>
+      </button>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Donkerder icoon, contrast 4,6:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button aria-label="Menu">
+        <svg fill="#767676" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" />
+        </svg>
+      </button>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een designer kiest een donkerdere kleur voor het icoon. Een developer past de fill- of stroke-kleur aan.
+
+### Invoerveld heeft onvoldoende contrast met de achtergrond
+
+Als er geen placeholdertekst met voldoende contrast aanwezig is, moet de rand van het invoerveld minimaal 3:1 contrast hebben met de achtergrond. Zonder die rand is het voor veel bezoekers niet zichtbaar waar ze gegevens moeten invoeren.
+
+**Hoe te testen:** meet het contrast van de randkleur van het invoerveld met de achtergrond. Als er placeholdertekst is met een contrast van minimaal 4,5:1, hoeft de rand niet gemeten te worden.
+
+<Guideline appearance="dont" title="Lichtgrijze rand op wit, contrast 1,5:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <label style={{ display: "block", fontFamily: "system-ui", color: "#1a1a1a" }}>
+        <span style={{ display: "block", marginBottom: "0.25rem" }}>Naam</span>
+        <input
+          type="text"
+          style={{
+            border: "1px solid #d9d9d9",
+            backgroundColor: "#ffffff",
+            padding: "0.5rem",
+            fontSize: "1rem",
+            borderRadius: "4px",
+            width: "240px",
+            boxSizing: "border-box",
+          }}
+        />
+      </label>
+    )}
+  </Canvas>
+
+```css
+.invoerveld {
+  border: 1px solid #d9d9d9;
+  background-color: #ffffff;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Donkerdere rand, contrast 3,1:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <label style={{ display: "block", fontFamily: "system-ui", color: "#1a1a1a" }}>
+        <span style={{ display: "block", marginBottom: "0.25rem" }}>Naam</span>
+        <input
+          type="text"
+          style={{
+            border: "1px solid #767676",
+            backgroundColor: "#ffffff",
+            padding: "0.5rem",
+            fontSize: "1rem",
+            borderRadius: "4px",
+            width: "240px",
+            boxSizing: "border-box",
+          }}
+        />
+      </label>
+    )}
+  </Canvas>
+
+```css
+.invoerveld {
+  border: 1px solid #767676;
+  background-color: #ffffff;
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een designer kiest een donkerdere randkleur. Een developer past de border-kleur aan in CSS.
+
+### Actieve link in het menu heeft een onderstreping met onvoldoende contrast
+
+Als de onderstreping de enige manier is om aan te geven welke pagina actief is, moet die onderstreping een contrast van minimaal 3:1 hebben met de achtergrond. Een alternatief is een vetgedrukte tekst of een icoon naast de link.
+
+**Hoe te testen:** meet het contrast van de onderstreping met de achtergrond.
+
+<Guideline appearance="dont" title="Lichtblauwe onderstreping op wit, contrast 2,5:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <nav style={{ display: "flex", gap: "1.5rem", fontFamily: "system-ui", padding: "0.5rem 0" }}>
+        <a href="#" style={{ color: "#1a1a1a", textDecoration: "none" }}>Home</a>
+        <a href="#" style={{ color: "#1a1a1a", textDecoration: "none", paddingBottom: "0.25rem", borderBottom: "3px solid #8ab4f8" }}>Contact</a>
+        <a href="#" style={{ color: "#1a1a1a", textDecoration: "none" }}>Over ons</a>
+      </nav>
+    )}
+  </Canvas>
+
+```css
+.nav-link--actief {
+  border-bottom: 3px solid #8ab4f8;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Donkere onderstreping, contrast 4,6:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <nav style={{ display: "flex", gap: "1.5rem", fontFamily: "system-ui", padding: "0.5rem 0" }}>
+        <a href="#" style={{ color: "#1a1a1a", textDecoration: "none" }}>Home</a>
+        <a href="#" aria-current="true" style={{ color: "#1a1a1a", textDecoration: "none", paddingBottom: "0.25rem", borderBottom: "3px solid #2056a5" }}>Contact</a>
+        <a href="#" style={{ color: "#1a1a1a", textDecoration: "none" }}>Over ons</a>
+      </nav>
+    )}
+  </Canvas>
+
+```css
+.nav-link--actief {
+  border-bottom: 3px solid #2056a5;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Combineer meerdere visuele aanwijzingen.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <nav style={{ display: "flex", gap: "1.5rem", fontFamily: "system-ui", padding: "0.5rem 0" }}>
+        <a href="#" style={{ color: "#1a1a1a", textDecoration: "none" }}>Home</a>
+        <a href="#" aria-current="true" style={{ color: "#1a1a1a", textDecoration: "none", paddingBottom: "0.25rem", borderBottom: "3px solid #2056a5", fontWeight: "bold" }}>Contact</a>
+        <a href="#" style={{ color: "#1a1a1a", textDecoration: "none" }}>Over ons</a>
+      </nav>
+    )}
+  </Canvas>
+
+```css
+.nav-link--actief {
+  border-bottom: 3px solid #2056a5;
+  font-weight: bold;
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een designer kiest een donkerdere kleur voor de onderstreping of voegt een extra visuele aanduiding toe. Een developer past de CSS aan.
+
+### Zelfgemaakte focusindicator heeft onvoldoende contrast
+
+Als je de standaard browserfocus vervangt door een eigen focusindicator, moet het contrast op alle achtergronden minimaal 3:1 zijn. De standaard browserfocus hoeft niet te worden getest.
+
+**Hoe te testen:** ga met de Tab-toets door de pagina. Meet het contrast van de focusindicator met de achtergrond op alle plekken waar focus terechtkomt.
+
+<Guideline appearance="dont" title="Lichtblauwe outline op wit, contrast 1,8:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{ padding: "0.75rem 0" }}>
+        <button style={{
+          padding: "0.5rem 1rem",
+          fontSize: "1rem",
+          outline: "none",
+          boxShadow: "0 0 0 3px #99ccff",
+          border: "1px solid #1a1a1a",
+          backgroundColor: "#ffffff",
+          color: "#1a1a1a",
+          borderRadius: "4px",
+          cursor: "pointer",
+          fontFamily: "system-ui",
+        }}>
+          Verzenden
+        </button>
+      </div>
+    )}
+  </Canvas>
+
+```css
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #99ccff;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Contrastrijke focusring, contrast 4,6:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{ padding: "0.75rem 0" }}>
+        <button style={{
+          padding: "0.5rem 1rem",
+          fontSize: "1rem",
+          outline: "none",
+          boxShadow: "0 0 0 3px #2056a5",
+          border: "1px solid #1a1a1a",
+          backgroundColor: "#ffffff",
+          color: "#1a1a1a",
+          borderRadius: "4px",
+          cursor: "pointer",
+          fontFamily: "system-ui",
+        }}>
+          Verzenden
+        </button>
+      </div>
+    )}
+  </Canvas>
+
+```css
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #2056a5;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Twee kleuren om op zowel lichte als donkere achtergronden te werken.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{ padding: "0.75rem 0" }}>
+        <button style={{
+          padding: "0.5rem 1rem",
+          fontSize: "1rem",
+          outline: "2px solid #2056a5",
+          outlineOffset: "2px",
+          boxShadow: "0 0 0 4px #ffffff",
+          border: "1px solid #1a1a1a",
+          backgroundColor: "#ffffff",
+          color: "#1a1a1a",
+          borderRadius: "4px",
+          cursor: "pointer",
+          fontFamily: "system-ui",
+        }}>
+          Verzenden
+        </button>
+      </div>
+    )}
+  </Canvas>
+
+```css
+button:focus-visible {
+  outline: 2px solid #2056a5;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px #ffffff;
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een designer kiest een focusringkleur met voldoende contrast op alle achtergronden. Een developer past de focusstijl aan in CSS.
+
+### Contrast van balken of lijnen in een grafiek is lager dan 3:1
+
+Als je alleen kleur gebruikt om informatie in een grafiek te tonen en het contrast met aangrenzende elementen is lager dan 3:1, dan is de informatie niet voor iedereen zichtbaar. Aangrenzende balken, lijnen of gebieden moeten onderling en met de achtergrond voldoende contrasteren.
+
+**Hoe te testen:** meet het contrast van aangrenzende balken, lijnen of gebieden, zowel onderling als met de achtergrond.
+
+<Guideline appearance="dont" title="Twee lichte kleuren naast elkaar, contrast onderling 1,3:1.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{ display: "flex", alignItems: "flex-end", height: "100px", gap: "2px" }}>
+        <div className="staaf" style={{ backgroundColor: "#90CAF9", height: "60%", width: "40px" }}></div>
+        <div className="staaf" style={{ backgroundColor: "#A5D6A7", height: "40%", width: "40px" }}></div>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Voldoende contrast en randen als extra onderscheid.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div style={{ display: "flex", alignItems: "flex-end", height: "100px", gap: "2px" }}>
+        <div className="staaf" style={{ backgroundColor: "#1565C0", height: "60%", width: "40px" }}></div>
+        <div className="staaf" style={{ backgroundColor: "#2E7D32", height: "40%", width: "40px" }}></div>
+      </div>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een designer kiest kleuren met voldoende contrast. Een developer past de kleuren aan en voegt eventueel randen toe.
+
+### Screenshot met cirkel of markering die onvoldoende contrast heeft
+
+Op screenshots worden vaak gekleurde cirkels of pijlen gebruikt om aandacht te trekken. Veelgebruikte kleuren als geel of rood hebben op een lichte achtergrond vaak een contrast lager dan 3:1.
+
+**Hoe te testen:** meet het contrast van de markering met de achtergrond van de screenshot.
+
+**Wie kan dit oplossen:** een contentmaker kiest een donkerdere kleur voor de markering, of voegt een rand toe.
+
+### Checkbox of radiobutton heeft onvoldoende contrast
+
+Als je de standaard browser-checkboxen of -radiobuttons vervangt door eigen ontwerpen, moeten de randen en de selectie-indicatoren minimaal 3:1 contrast hebben met de achtergrond.
+
+**Hoe te testen:** meet het contrast van de rand van de checkbox of radiobutton met de achtergrond. Meet ook het contrast van het vinkje of de vulling in de aangevinkte staat.
+
+<Guideline appearance="dont" title="Lichtgrijze rand, contrast 1,9:1 op wit.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "system-ui", color: "#1a1a1a" }}>
+        <span style={{
+          width: "20px",
+          height: "20px",
+          border: "2px solid #c0c0c0",
+          borderRadius: "3px",
+          display: "inline-block",
+          backgroundColor: "#ffffff",
+          flexShrink: 0,
+        }}></span>
+        Akkoord met de voorwaarden
+      </label>
+    )}
+  </Canvas>
+
+```css
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c0c0c0;
+  border-radius: 3px;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Rand met voldoende contrast, 4,6:1 op wit.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "system-ui", color: "#1a1a1a" }}>
+        <span style={{
+          width: "20px",
+          height: "20px",
+          border: "2px solid #767676",
+          borderRadius: "3px",
+          display: "inline-block",
+          backgroundColor: "#ffffff",
+          flexShrink: 0,
+        }}></span>
+        Akkoord met de voorwaarden
+      </label>
+    )}
+  </Canvas>
+
+```css
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #767676;
+  border-radius: 3px;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Aangevinkte staat: het vinkje moet ook voldoende contrast hebben.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "system-ui", color: "#1a1a1a" }}>
+        <span style={{
+          width: "20px",
+          height: "20px",
+          border: "2px solid #2056a5",
+          borderRadius: "3px",
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#2056a5",
+          color: "#ffffff",
+          fontSize: "14px",
+          fontWeight: "bold",
+          lineHeight: "1",
+          flexShrink: 0,
+        }}>✓</span>
+        Akkoord met de voorwaarden
+      </label>
+    )}
+  </Canvas>
+
+```css
+.checkbox-custom--checked {
+  background-color: #2056a5;
+  border-color: #2056a5;
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een designer kiest kleuren met voldoende contrast voor zowel de rand als de aangevinkte staat. Een developer past de CSS aan.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Kijk naar informatieve iconen, invoervelden, knoppen en andere UI-elementen. Zijn ze duidelijk zichtbaar?
+2. Controleer of je invoervelden goed kunt onderscheiden van de achtergrond. Weet je waar je moet klikken om tekst in te voeren?
+3. Ga met de Tab-toets door de pagina. Is de focusindicator op elk element duidelijk zichtbaar?
+4. Bekijk de pagina op verschillende schermformaten. Controleer ook de mobiele weergave.
+5. Test in dark mode als de website dat aanbiedt.
+6. Controleer de verschillende statussen van knoppen en links: met toetsenbordfocus, bij hover, ingedrukt en al eerder bezocht.
+
+### Voor developers
+
+1. Gebruik de Colour Contrast Analyser of de DevTools contrastchecker om de kleuren van niet-tekstuele elementen te meten. Meet de kleur van het element en de kleur van de achtergrond en controleer of de verhouding minimaal 3:1 is. Let op anti-aliasing: een color picker die op de rand van een icoon, stroke of dunne lijn klikt, meet een mengkleur door de semi-transparante pixels die anti-aliasing toevoegt. Klik in een vlakke binnenkleur of zoom eerst in tot 400% voor een schoner meetpunt.
+2. Controleer aangepaste focusindicatoren. Zoek in je CSS naar `outline`, `box-shadow` of `border` op `:focus` en `:focus-visible`. Meet het contrast van die kleuren op alle achtergronden.
+3. Controleer aangepaste formuliervelden. Heb je checkboxen, radiobuttons of dropdowns opnieuw vormgegeven? Meet het contrast van de randen en selectie-indicatoren.
+4. Controleer invoervelden zonder placeholdertekst. Meet het contrast van de rand met de achtergrond.
+5. Controleer informatieve iconen. Meet het contrast van de icoonfill of -stroke met de achtergrond.
+6. Controleer grafieken en diagrammen. Meet het contrast van aangrenzende balken, lijnen of gebieden, zowel onderling als met de achtergrond.
+7. Controleer of inactieve elementen daadwerkelijk `disabled` zijn in de HTML. Alleen dan geldt de uitzondering.
+8. Zoom in tot 400% vanaf een schermbreedte van 1280px. Controleer of het contrast voldoende blijft.
+
+### Wat test je niet?
+
+- Het contrast van uitgeschakelde elementen (`disabled` in de HTML).
+- Decoratieve elementen, zoals een scheidingslijn tussen secties.
+- Iconen die naast tekst staan op een knop, link of als label bij een invoerveld. Die iconen zijn een aanvulling op de tekst en hoeven niet apart te voldoen.
+- De rand van een invoerveld als de placeholdertekst een contrast hoger dan 4,5:1 heeft.
+- UI-elementen die door de browser worden toegevoegd, zoals het kruisje in een invoerveld van het type `search`.
+- De standaard browserfocus. Alleen aangepaste focusindicatoren moeten worden getest.
+
+## Gerelateerde succescriteria
+
+- [1.4.1 Gebruik van kleur](/wcag/1.4.1/): kleur mag niet het enige middel zijn om informatie over te brengen.
+- [1.4.3 Contrast (minimum)](/wcag/1.4.3/): tekst moet voldoende contrasteren met de achtergrond (4,5:1).
+- [2.4.7 Focus zichtbaar](/wcag/2.4.7/): interactieve elementen moeten een zichtbare focusindicator hebben.
+- [2.4.11 Focus niet bedekt](/wcag/2.4.11/): de focusindicator mag niet volledig bedekt worden door andere content.
 
 ## Gerelateerde NL Design System-richtlijnen
 
-- Stijl: [Kleuren](/richtlijnen/stijl/iconen).
+- Stijl: [Iconen](/richtlijnen/stijl/iconen).
 - Formulieren: [Visueel ontwerp](/richtlijnen/formulieren/visueel-ontwerp).
 - Content: [Afbeeldingen](/richtlijnen/content/afbeeldingen).
 - Content: [Kleurgebruik in tekst](/richtlijnen/content/tekstopmaak/kleurgebruik-in-tekst).
 
-## Bronnen en tools
+## Relevante bronnen
 
-- Een overzicht van goede bronnen en tools voor kleurcontrast staat bij [Richtlijnen NL Design System voor kleuren](/richtlijnen/stijl/kleuren/).
-- [Figma contrast accessibility plugin tools](https://www.figma.com/community/accessibility/contrast).
-- [axe DevTools browser add-on](https://www.deque.com/axe/browser-extensions/).
-- [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/).
-- [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/).
-- [Contrast van kleuren - NL Design System](https://nldesignsystem.nl/contrast/).
-
-## Hoe te testen
-
-Naast tekst ([WCAG-succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3)) moet ook andere essentiele content goed zichtbaar zijn.
-
-Dit kan bijvoorbeeld gaan om grafische objecten, zoals iconen en delen van complexe diagrammen. Het contrast van het (deel van het) icoon dat nodig is voor begrip, moet een contrast van 3:1 hebben met de directe omgeving.
-
-Het kan ook gaan om een component van de gebruikersinterface, zoals een link, een knop of een formulier element. Dan moet de visuele informatie die nodig is om de component (of de status ervan) te identificeren een contrast van 3:1 hebben met de directe omgeving.
-
-**Let op:** Als een component van de gebruikersinterface een tekst bevat, dan moet deze tekst ([WCAG-succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3)) voldoen aan de contrasteisen van tekst, en mag de knop onopvallend zijn. Als deze een afbeelding bevat, dan is successcriterium 1.4.11 van toepassing op de afbeelding. Bevat de component niks dat de component identificeert? Dan moet de component zelf contrastrijk genoeg zijn.
-
-**Let op:** Controleer het kleurcontrast altijd in de gegenereerde webpagina in een browser en niet alleen in de code zelf. Linters kunnen helpen om laaghangend fruit te ondervangen, maar de eindtest voor kleurcontrast moet gebeuren op de webpagina zelf als alle componenten worden samengevoegd tot één geheel.
-
-Controleer in de volgende situaties of het kleurcontrast van de componenten voldoende blijft:
-
-- Verschillende gebruikelijke schermgroottes inclusief mobiele weergave.
-- Verschillend oriëntaties: _portrait_ en _landscape_.
-- Vergroot de tekst alleen tot 200%.
-- Zoom in tot 400% vanaf schermbreedte van 1280px (of zet de schermbreedte op 320px).
-- Is er een dark mode aanwezig? Test ook hier het kleurcontrast van de componenten.
-- Controleer de verschillende weergaves en statussen van buttons, menus en de links zoals: met toetsenbordfocus, als je er overheen hovert met de muis, ingedrukt, en al eerder bezocht.
-- Vergeet ook de skiplinks niet.
+- [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/) — tool om het contrast tussen twee kleuren te meten (TPGi, gratis).
+- [Contrast van kleuren - NL Design System](/contrast/) — overzicht van contrastregels en tools.
+- [Figma contrast accessibility plugins](https://www.figma.com/community/accessibility/contrast) — contrastplugins voor Figma (Engels).
+- [axe DevTools](https://www.deque.com/axe/browser-extensions/) — browserextensie die contrastproblemen automatisch herkent (Deque, Engels).
+- [WAVE](https://wave.webaim.org/) — browserextensie voor toegankelijkheidsevaluatie (WebAIM, Engels).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## W3C referenties
+## W3C-referenties
 
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.4.11 Non-text Contrast</span>](https://www.w3.org/TR/WCAG22/#non-text-contrast).
-- Nederlandse vertaling van het WCAG-succescriterium: [1.4.11 Contrast van niet-tekstuele content](https://www.w3.org/Translations/WCAG22-nl/#non-text-contrast).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.11 Non-text Contrast</span>](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.11 Non-text Contrast</span>](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- [WCAG 2.2: Succescriterium 1.4.11 Contrast van niet-tekstuele content](https://www.w3.org/Translations/WCAG22-nl/#non-text-contrast) — de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 1.4.11: Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Quick Reference 1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) — snelreferentie met technieken (Engels).
 
 ## Help richtlijn verbeteren
 
