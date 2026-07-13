@@ -523,6 +523,9 @@ importers:
       '@utrecht/accordion-css':
         specifier: 4.0.1
         version: 4.0.1
+      '@utrecht/action-group-css':
+        specifier: 4.0.1
+        version: 4.0.1
       '@utrecht/blockquote-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -538,6 +541,9 @@ importers:
       '@utrecht/button-css':
         specifier: 4.0.1
         version: 4.0.1
+      '@utrecht/button-group-css':
+        specifier: 3.0.1
+        version: 3.0.1
       '@utrecht/checkbox-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -4869,6 +4875,9 @@ packages:
   '@utrecht/action-group-css@3.0.1':
     resolution: {integrity: sha512-IFOWCIMgcr44MuqotyY7wC3KXOMaxvcn8ZoDtCISK+5uG5NjbSsdI9DyegrWBq8M7fGPLnjDMdWCmIVFM2lgCA==}
 
+  '@utrecht/action-group-css@4.0.1':
+    resolution: {integrity: sha512-sOIQgEd1fnPG5e4k8NlYn1jEGv3XoTDeGpFSv+p20b8t5Et53mi1jV2eKw9TQFbnFIPWBsGYh/k7yy5ZIiOfXA==}
+
   '@utrecht/action-group-react@1.1.4':
     resolution: {integrity: sha512-W+0+x2wJ9058wNDYnK1dCfUKCFfNVsDcezm/MmBgmOW/vUnX/095TVzhPboL6vVdHQTESY4uaCjinmvwI/sx6A==}
     peerDependencies:
@@ -4939,6 +4948,9 @@ packages:
 
   '@utrecht/button-group-css@2.0.1':
     resolution: {integrity: sha512-Zby6G9b1KX6aKECBobzVeVuNcvsknpwUwCVZXN7gzxLzNpJXwPC92XYia0mDIhxUcq8rKCQF+ABzZtxeZKqx9A==}
+
+  '@utrecht/button-group-css@3.0.1':
+    resolution: {integrity: sha512-Riw8fMht4t/aYiwHfxQnhTp5ryLI40U7m+zK4PMBq0H735EgT4uCSBvFxzNhCehYuU38247Xdat9ZNZhIN28qQ==}
 
   '@utrecht/button-group-react@1.1.3':
     resolution: {integrity: sha512-eDVLaDEgUlkNIzTa4jSQt9AHNoo+GHah7vv8HywMAqRMwYaAFUkTF71XiqLkARIBQMgp6+SxqgyR+kLFxXSGrQ==}
@@ -17612,6 +17624,8 @@ snapshots:
 
   '@utrecht/action-group-css@3.0.1': {}
 
+  '@utrecht/action-group-css@4.0.1': {}
+
   '@utrecht/action-group-react@1.1.4(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
@@ -17665,6 +17679,8 @@ snapshots:
   '@utrecht/button-css@4.0.1': {}
 
   '@utrecht/button-group-css@2.0.1': {}
+
+  '@utrecht/button-group-css@3.0.1': {}
 
   '@utrecht/button-group-react@1.1.3(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
