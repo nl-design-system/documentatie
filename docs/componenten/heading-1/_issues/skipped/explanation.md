@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-De tekst is niet goed leesbaar omdat de kleur van de tekst te weinig contrasteert met de kleur van de achtergrond. Mensen die kleurenblind of slechtziend zijn kunnen de tekst hierdoor niet goed lezen.
+Er worden kopniveaus overgeslagen. De kopniveaus op een pagina geven structuur aan de content op de pagina en zijn daarom een belangrijk navigatiemiddel voor bezoekers die gebruik maken van hulpsoftware.
