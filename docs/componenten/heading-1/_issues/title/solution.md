@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Pas de kleur van de tekst of achtergrond aan, zodat de contrastratio tenminste 4,5:1 is.
+Zorg ervoor dat de paginatitel en de koptekst in de Heading 1 hetzelfde zijn.
