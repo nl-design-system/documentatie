@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Pas de kleur van de tekst of achtergrond aan, zodat de contrastratio tenminste 4,5:1 is.
+Geef aan welke taal dit stuk tekst heeft, of vertaal de tekst naar de hoofdtaal van de pagina.
