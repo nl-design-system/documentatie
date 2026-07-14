@@ -62,9 +62,21 @@ export interface Props {
   keywords?: string[];
   index?: boolean;
   follow?: boolean;
+  class?: string;
 }
 
-const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
+const {
+  title,
+  titleSm,
+  description,
+  lang = 'nl',
+  keywords,
+  seoImage,
+  seoImageAlt,
+  index = true,
+  follow,
+  class: className,
+} = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
@@ -124,7 +136,7 @@ const footerNavigationItems = [
     <slot name="head" />
   </head>
 
-  <body>
+  <body class={className}>
     <SkipLink href="#main">Naar de inhoud</SkipLink>
     <PageLayout>
       <PageHeader />
