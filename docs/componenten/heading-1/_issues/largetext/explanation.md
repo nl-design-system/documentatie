@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-De tekst is niet goed leesbaar omdat de kleur van de tekst te weinig contrasteert met de kleur van de achtergrond. Mensen die kleurenblind of slechtziend zijn kunnen de tekst hierdoor niet goed lezen.
+De tekst is geen kop voor de content eronder, maar is wel met een Heading 1 opgemaakt. Dit is verwarrend voor bezoekers die gebruik maken van een screenreader, want de tekst wordt wel voorgelezen als koptekst.
