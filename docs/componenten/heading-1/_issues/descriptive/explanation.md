@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-De tekst is niet goed leesbaar omdat de kleur van de tekst te weinig contrasteert met de kleur van de achtergrond. Mensen die kleurenblind of slechtziend zijn kunnen de tekst hierdoor niet goed lezen.
+De tekst in de Heading 1 beschrijft de inhoud van de pagina niet (voldoende). De Heading 1 is de belangrijkste koptekst op de pagina en helpt bezoekers inschatten welke content er op de pagina staat.
