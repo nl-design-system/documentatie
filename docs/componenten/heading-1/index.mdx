@@ -56,6 +56,7 @@ import SkippedSolution from "@nl-design-system-unstable/documentation/componente
 import TitleMeta from "@nl-design-system-unstable/documentation/componenten/heading-1/_issues/title/metadata.json";
 import TitleExplanation from "@nl-design-system-unstable/documentation/componenten/heading-1/_issues/title/explanation.md";
 import TitleSolution from "@nl-design-system-unstable/documentation/componenten/heading-1/_issues/title/solution.md";
+import { Heading } from "@nl-design-system-candidate/heading-react/css";
 
 import {
   DefinitionOfDone,
@@ -87,6 +88,84 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+## Veel gemaakte fouten bij het inzetten van Heading 1
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{ContrastMeta.title}</Heading>
+
+<ContrastExplanation />
+
+#### Oplossing
+
+<ContrastSolution />
+
+<Heading level={3}>{DescriptiveMeta.title}</Heading>
+
+<DescriptiveExplanation />
+
+#### Oplossing
+
+<DescriptiveSolution />
+
+<Heading level={3}>{EmptyMeta.title}</Heading>
+
+<EmptyExplanation />
+
+#### Oplossing
+
+<EmptySolution />
+
+<Heading level={3}>{LanguageMeta.title}</Heading>
+
+<LanguageExplanation />
+
+#### Oplossing
+
+<LanguageSolution />
+
+<Heading level={3}>{LargeTextMeta.title}</Heading>
+
+<LargeTextExplanation />
+
+#### Oplossing
+
+<LargeTextSolution />
+
+<LargeTextSolutionQuote />
+
+<Heading level={3}>{MultipleMeta.title}</Heading>
+
+<MultipleExplanation />
+
+#### Oplossing
+
+<MultipleSolution />
+
+<Heading level={3}>{NoneMeta.title}</Heading>
+
+<NoneExplanation />
+
+#### Oplossing
+
+<NoneSolution />
+
+<Heading level={3}>{SkippedMeta.title}</Heading>
+
+<SkippedExplanation />
+
+#### Oplossing
+
+<SkippedSolution />
+
+<Heading level={3}>{TitleMeta.title}</Heading>
+
+<TitleExplanation />
+
+#### Oplossing
+
+<TitleSolution />
 
 <Related component={component} />
 
