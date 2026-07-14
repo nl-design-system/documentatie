@@ -2,6 +2,12 @@
 
 /* Tweaks to components for the home page */
 .ma-home .utrecht-page-body__content {
+  /*
+   * Set the initial column count to 6 so that cards fill the page on narrow
+   * viewports
+  */
+  --ams-grid-column-count: 6;
+
   /* remove gap between the sections and the page-header / footer */
   padding-block: 0;
 
