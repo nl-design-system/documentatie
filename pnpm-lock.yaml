@@ -554,6 +554,9 @@ importers:
       '@utrecht/button-group-css':
         specifier: 3.0.1
         version: 3.0.1
+      '@utrecht/button-link-css':
+        specifier: 3.0.1
+        version: 3.0.1
       '@utrecht/checkbox-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -4985,6 +4988,9 @@ packages:
 
   '@utrecht/button-link-css@2.0.1':
     resolution: {integrity: sha512-XHVWxMpBRnvuM6x5ak0wdMqC8ueUFCnLBqPiVr/Dsppa/wDC9ZlLBIGbFfPM22x88xYUVcSIAZcrPc1HjBB1/A==}
+
+  '@utrecht/button-link-css@3.0.1':
+    resolution: {integrity: sha512-7MSPxIvaS0VTxIZAaTGcTmomdYE6v4ny5+5pDa1trhCMZIhxQyjWpdcXqX5ttsZi/4ageG/FxcojQvScn52B9g==}
 
   '@utrecht/button-react@2.0.10':
     resolution: {integrity: sha512-UWrIsT5OG82LQLD8sGhng1P4aJ4KfixjnZFScGJiSySBGczW7TdqMgyjK9/ROKzAxyrMnXUKkq7RBRqT238nrg==}
@@ -17688,6 +17694,8 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
 
   '@utrecht/button-link-css@2.0.1': {}
+
+  '@utrecht/button-link-css@3.0.1': {}
 
   '@utrecht/button-react@2.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
