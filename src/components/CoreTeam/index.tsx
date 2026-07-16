@@ -33,10 +33,11 @@ const coreteam = [
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
   return coreteam.map(({ name, role, Description, slack }) => {
+    const headingId = name.replace(' ', '-').toLowerCase();
     return (
       <section key="name" className={clsx('ma-core-team__item')} id="name">
         <HeadingGroup className={clsx('ma-core-team__heading')}>
-          <Heading level={headingLevel} className={clsx('ma-core-team__heading-title')}>
+          <Heading id={headingId} level={headingLevel} className={clsx('ma-core-team__heading-title')}>
             {name}
           </Heading>
           <Paragraph className={clsx('ma-core-team__heading-subtitle')}>{role}</Paragraph>
