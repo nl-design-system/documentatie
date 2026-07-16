@@ -6,7 +6,6 @@ import OverviewLayout from '@layouts/overview.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
-import { Paragraph } from '@components/paragraph/paragraph';
 import '../../../../src/components/ComponentPage.css';
 import '../../../../src/components/EstafetteBadge.css';
 import './[...component].css';
@@ -43,7 +42,6 @@ const components = await MDXComponents();
   <Grid slot="header">
     <Grid.Cell span="all">
       <Heading level={1}>{page.data.title}</Heading>
-      <Paragraph purpose="lead">{page.data.description}</Paragraph>
     </Grid.Cell>
   </Grid>
 

@@ -7,7 +7,6 @@ import { OverviewPage } from '@components/overview-page/overview-page';
 import { navigation } from 'src/navigation.config';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
-import { Paragraph } from '@components/paragraph/paragraph';
 
 export async function getStaticPaths() {
   const pages = await getCollection('overviewPages');
@@ -41,7 +40,6 @@ pages = await Promise.all(pages);
   <Grid slot="header">
     <Grid.Cell span="all">
       <Heading level={1}>{page.data.title}</Heading>
-      <Paragraph purpose="lead">{page.data.description}</Paragraph>
     </Grid.Cell>
   </Grid>
 
