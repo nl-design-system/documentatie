@@ -38,7 +38,8 @@ We verwachten dat repositories aansluiten op de standaard build- en releaseketen
 We automatiseren zoveel mogelijk, voor transparantie in het proces en om de kans op fouten te minimaliseren.
 
 - Sluit aan op tooling zoals pnpm en TypeScript.
-- Implementeer een CI/CD pipeline met GitHub Actions; publiceren van packages gebeurt alleen via een GitHub Actions workflow.
+- Implementeer een CI/CD pipeline die via de code in de repository zelf wordt beheerd; publiceren van packages gebeurt alleen via een CI/CD workflow.
+  Gebruik bijvoorbeeld GitHub Actions, Forgejo Actions of GitLab Pipelines.
 - Changesets worden gebruikt om automatisch de changelog bij te werken.
 
 Door packages of componenten te publiceren, kunnen anderen hiervan afhankelijk worden, en dat brengt verantwoordelijkheid met zich mee.
@@ -54,7 +55,7 @@ Release early, release often: kleine, regelmatige releases zijn eenvoudiger te t
 We verwachten dat maintainers bekende bugs zichtbaar maken, feature requests transparent beheren en duidelijk communiceren over breaking changes.
 Door gebruikers ook tijdig te informeren wanneer functionaliteit wordt uitgefaseerd zorgen we voor een voorspelbare upgrade-ervaring.
 
-Organiseer een veilige werkomgeving door onze Code of Conduct (link) zichtbaar te maken en toe te passen.
+Organiseer een veilige werkomgeving door onze [Code of Conduct](/coc/) zichtbaar te maken en toe te passen.
 
 ## Vers & veilig houden van de repository en dependencies
 
