@@ -68,6 +68,10 @@
 
 .ma-layout-detail__main-body {
   grid-area: body;
+
+  a.nl-button .nl-button__label {
+    display: inline-flex;
+  }
 }
 
 @media (--medium-and-up) {
