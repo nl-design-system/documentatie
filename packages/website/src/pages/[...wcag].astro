@@ -4,6 +4,7 @@ import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
+import { Paragraph } from '@components/paragraph/paragraph';
 import { MDXComponents } from '@utils/mdx-components.astro';
 
 export async function getStaticPaths() {
@@ -25,8 +26,8 @@ const components = await MDXComponents();
 ---
 
 <DetailLayout
-  title={page.data.title}
-  titleSm={page.data.title_sm}
+  title={`WCAG: ${page.data.title}`}
+  titleSm={`WCAG: ${page.data.title_sm}`}
   description={description}
   lang={page.data.lang}
   seoImage={page.data.image}
@@ -37,6 +38,7 @@ const components = await MDXComponents();
   <Grid slot="header">
     <Grid.Cell span="all">
       <Heading level={1}>{page.data.title}</Heading>
+      {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
     </Grid.Cell>
   </Grid>
 
