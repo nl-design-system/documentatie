@@ -292,7 +292,7 @@
     i = r(18439);
    function a(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, i.R)(), ...e.components };
-    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Componenten en elementen die niet interactief zijn, komen niet voor in de normale toetsenbord-focusvolgorde van de pagina.' }), '\n', (0, t.jsx)(n.p, { children: 'Een uitzondering geldt voor situaties waarbij een interactief component een Skip Link of een Link in een Side Navigation, de bezoeker direct naar de component of het element stuurt.' }), '\n', (0, t.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/', children: 'Toetsenbordtoegankelijkheid' }) }), '\n'] })] });
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.p, { children: 'Componenten en elementen die niet interactief zijn, komen niet voor in de normale toetsenbord-focusvolgorde van de pagina.' }), '\n', (0, t.jsx)(n.p, { children: 'Een uitzondering geldt voor situaties waarbij een interactief component, zoals een Skip Link of een Link in een Side Navigation, de bezoeker direct naar de component of het element stuurt.' }), '\n', (0, t.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, t.jsxs)(n.ul, { children: ['\n', (0, t.jsx)(n.li, { children: (0, t.jsx)(n.a, { href: '/richtlijnen/formulieren/toetsenbord/', children: 'Toetsenbordtoegankelijkheid' }) }), '\n'] })] });
    }
    function o(e = {}) {
     const { wrapper: n } = { ...(0, i.R)(), ...e.components };
@@ -393,7 +393,7 @@
       tags: ['developer'],
      },
     ],
-    S = [
+    z = [
      {
       title: 'De Form Field Error Message kan aan een element voor formulierinvoer gekoppeld worden',
       sc: '1.3.1',
@@ -418,7 +418,7 @@
       tags: ['developer'],
      },
     ];
-   var z = r(12761);
+   var S = r(12761);
    const L = { title: 'Form Field Error Message', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Error Message', pagination_label: 'Form Field Error Message', description: 'Toont een foutmelding die informeert wat er is fout gegaan en hoe dit is op te lossen.', slug: '/form-field-error-message', keywords: ['danger', 'error', 'error message', 'form', 'form error', 'form field', 'form field error message', 'formulier', 'formulierelement', 'fout', 'foutmelding', 'invalid', 'ongeldig', 'onjuist', 'problem', 'validatie', 'validation', 'waarschuwing'] },
     T = void 0,
     C = {},
@@ -430,7 +430,7 @@
    function E(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, a.R)(), ...e.components },
      { Checklist: r, ChecklistItem: t } = n;
-    return (r || I('Checklist', !0), t || I('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(z.Fc, { component: M, headingLevel: 1, description: R }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(d.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(s.Ay, {}), '\n', (0, i.jsx)(r, { headingLevel: '4', children: y.map(({ component: e, ...n }) => (0, i.jsx)(t, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(r, { headingLevel: '4', children: S.map(({ component: e, ...n }) => (0, i.jsx)(t, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(z.VK, { component: M, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(z.mu, { component: M, headingLevel: 3 }), '\n', (0, i.jsx)(z.K_, { component: M }), '\n', (0, i.jsx)(z.$9, { component: M, headingLevel: 2 })] }));
+    return (r || I('Checklist', !0), t || I('ChecklistItem', !0), (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(S.Fc, { component: M, headingLevel: 1, description: R }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(d.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(s.Ay, {}), '\n', (0, i.jsx)(r, { headingLevel: '4', children: y.map(({ component: e, ...n }) => (0, i.jsx)(t, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(r, { headingLevel: '4', children: z.map(({ component: e, ...n }) => (0, i.jsx)(t, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(S.VK, { component: M, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(S.mu, { component: M, headingLevel: 3 }), '\n', (0, i.jsx)(S.K_, { component: M }), '\n', (0, i.jsx)(S.$9, { component: M, headingLevel: 2 })] }));
    }
    function G(e = {}) {
     const { wrapper: n } = { ...(0, a.R)(), ...e.components };
