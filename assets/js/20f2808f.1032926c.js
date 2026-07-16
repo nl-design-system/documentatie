@@ -22,14 +22,14 @@
    }
   },
   94032(e, n, i) {
-   (i.r(n), i.d(n, { assets: () => d, contentTitle: () => s, default: () => m, frontMatter: () => o, metadata: () => r, toc: () => l }));
-   const r = JSON.parse('{"id":"handboek/leverancier/introductie","title":"Voor leveranciers","description":"Waarom zou je als leverancier meedoen aan NL Design System? - leverancier - waarom NL Design System - waarom een design system","source":"@site/docs/handboek/leverancier/introductie.md","sourceDirName":"handboek/leverancier","slug":"/handboek/leverancier/introductie","permalink":"/handboek/leverancier/introductie","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/leverancier/introductie.md","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Voor leveranciers","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Voor leveranciers","sidebar_position":2,"navigation_order":2,"pagination_label":"Voor leveranciers","description":"Waarom zou je als leverancier meedoen aan NL Design System? - leverancier - waarom NL Design System - waarom een design system"},"sidebar":"handboek","previous":{"title":"Aanbestedingen","permalink":"/handboek/organisatie/vragen-over-aanbestedingen"},"next":{"title":"Voor managers","permalink":"/handboek/manager/introductie"}}');
+   (i.r(n), i.d(n, { assets: () => l, contentTitle: () => s, default: () => m, frontMatter: () => o, metadata: () => r, toc: () => d }));
+   const r = JSON.parse('{"id":"handboek/leverancier/introductie","title":"Voor leveranciers","description":"Waarom zou je als leverancier meedoen aan NL Design System? - leverancier - waarom NL Design System - waarom een design system","source":"@site/docs/handboek/leverancier/introductie.md","sourceDirName":"handboek/leverancier","slug":"/handboek/leverancier/introductie","permalink":"/handboek/leverancier/introductie","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/handboek/leverancier/introductie.md","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Voor leveranciers","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Voor leveranciers","sidebar_position":2,"navigation_order":2,"pagination_label":"Voor leveranciers","description":"Waarom zou je als leverancier meedoen aan NL Design System? - leverancier - waarom NL Design System - waarom een design system"},"sidebar":"handboek","previous":{"title":"Beheren van een repository","permalink":"/handboek/organisatie/beheren-van-een-community-repository"},"next":{"title":"Voor managers","permalink":"/handboek/manager/introductie"}}');
    var a = i(86070),
     t = i(18439);
    const o = { title: 'Voor leveranciers', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Voor leveranciers', sidebar_position: 2, navigation_order: 2, pagination_label: 'Voor leveranciers', description: 'Waarom zou je als leverancier meedoen aan NL Design System? - leverancier - waarom NL Design System - waarom een design system' },
     s = 'Voor leveranciers',
-    d = {},
-    l = [
+    l = {},
+    d = [
      { value: 'Voorbeelden van leveranciers', id: 'voorbeelden-van-leveranciers', level: 2 },
      { value: 'Wat heb je aan NL Design System?', id: 'wat-heb-je-aan-nl-design-system', level: 2 },
      { value: 'Open Source werken', id: 'open-source-werken', level: 2 },
