@@ -36,6 +36,8 @@
     "@nl-design-system-candidate/code-block-react": "1.4.0",
     "@nl-design-system-candidate/code-css": "3.0.0",
     "@nl-design-system-candidate/code-react": "1.2.7",
+    "@nl-design-system-candidate/data-badge-css": "1.0.5",
+    "@nl-design-system-candidate/data-badge-react": "1.1.7",
     "@nl-design-system-candidate/heading-css": "1.1.3",
     "@nl-design-system-candidate/heading-react": "1.1.7",
     "@nl-design-system-candidate/link-css": "2.0.3",

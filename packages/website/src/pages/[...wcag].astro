@@ -6,10 +6,12 @@ import OverviewLayout from '@layouts/overview.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
+import { DataBadge } from '@component/data-badge/data-badge';
 import { MDXComponents } from '@utils/mdx-components.astro';
 import { navigation } from '../navigation.config';
 import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
 import { isNavigationGroup } from 'src/navigation';
+import { DataBadge } from '@nl-design-system-candidate/data-badge-react';
 
 export async function getStaticPaths() {
   const wcag = await getCollection('wcag');
@@ -48,7 +50,7 @@ const Layout =
   <Grid slot="header">
     <Grid.Cell span="all">
       <Heading level={1}>{page.data.title}</Heading>
-      {page.data.conformance_level && <p>{page.data.conformance_level}</p>}
+      {page.data.conformance_level && <DataBadge>{page.data.conformance_level}</DataBadge>}
       {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
     </Grid.Cell>
   </Grid>
