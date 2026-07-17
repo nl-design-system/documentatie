@@ -39,6 +39,24 @@
   --nl-code-block-background-color: var(--prism-a11y-color-background); /* stylelint-disable-line */
 }
 
+.nlds-guideline--do {
+  border-color: var(--basis-color-positive-border-default);
+
+  .nlds-guideline__description {
+    background-color: var(--basis-color-positive-bg-default);
+    color: var(--basis-color-positive-color-default);
+  }
+}
+
+.nlds-guideline--dont {
+  border-color: var(--basis-color-negative-border-default);
+
+  .nlds-guideline__description {
+    background-color: var(--basis-color-negative-bg-default);
+    color: var(--basis-color-negative-color-default);
+  }
+}
+
 /**
  * Below are all tweaks to existing community components that we want to give
  * back to the community. Usually these are missing tokens with their proposed

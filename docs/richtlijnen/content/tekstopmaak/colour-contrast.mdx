@@ -63,22 +63,18 @@ Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebr
 
 <Guideline appearance="dont" title="Kleur gebruiken om tekst nadruk te geven">
   <Canvas language="html">
-    {() => {
-      const basisColorErrorBg1 = "#ce2c31";
-
-      return (
+    {() => (
         <>
           Je kunt op eigen gelegenheid oversteken.{" "}
-          <span style={{ color: basisColorErrorBg1 }}>
+          <span style={{ color: "#ce2c31" }}>
             Pas op!
           </span>{" "}
           Dit is{" "}
-          <span style={{ color: basisColorErrorBg1 }}>
+          <span style={{ color: "#ce2c31" }}>
             erg gevaarlijk
           </span>
         </>
-      );
-    }}
+    )}
 
   </Canvas>
 </Guideline>
@@ -94,7 +90,7 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
         <div
           style={{
             background:
-              'center center no-repeat url("https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg")',
+              "center center no-repeat url('https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg')",
           }}
         >
           <h2 style={{ padding: "50px", color: "white" }}>Kaarten van Nederland</h2>
@@ -111,10 +107,10 @@ Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is
         <div
           style={{
             background:
-              'center center no-repeat url("https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg")',
+              "center center no-repeat url('https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg')",
           }}
         >
-          <h2 style={{ padding: "50px", color: "white", backgroundColor: "rgba(0,0,0,0.5)" }}>Kaarten van Nederland</h2>
+          <h2 style={{ padding: "50px", color: "white", backgroundColor: "#00000088" }}>Kaarten van Nederland</h2>
         </div>
       </>
     )}
