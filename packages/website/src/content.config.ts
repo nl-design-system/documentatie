@@ -102,6 +102,8 @@ const docs = defineCollection({
       'richtlijnen/**/*.{md,mdx}',
       'voorbeelden/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
+      'componenten/index.mdx',
+      'wcag/index.mdx',
       '!**/_*/**',
       '!**/_*.{md,mdx}',
     ],
@@ -125,7 +127,7 @@ const wcag = defineCollection({
     pattern: ['wcag/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema: schema.extend({ conformance_level: z.string() }),
+  schema: schema.extend({ conformance_level: z.string().optional() }),
 });
 
 const overviewPages = defineCollection({
