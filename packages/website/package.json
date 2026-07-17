@@ -112,7 +112,7 @@
     "@utrecht/page-header-css": "3.0.0",
     "@utrecht/page-header-react": "1.0.10",
     "algoliasearch": "5.55.1",
-    "astro": "6.2.2",
+    "astro": "6.4.6",
     "cheerio": "1.2.0",
     "hast-util-is-element": "3.0.0",
     "hast-util-select": "6.0.4",
