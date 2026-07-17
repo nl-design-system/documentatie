@@ -1,3 +1,7 @@
+.ma-layout-detail__header .ma-flex {
+  --ma-flex-gap: 1em;
+}
+
 .ma-criteria-list + .ma-criteria-list {
   --ma-flow-space: calc(-1 * var(--utrecht-accordion-section-border-width));
 }
