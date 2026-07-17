@@ -103,7 +103,6 @@ const docs = defineCollection({
       'voorbeelden/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
       'componenten/index.mdx',
-      'wcag/index.mdx',
       '!**/_*/**',
       '!**/_*.{md,mdx}',
     ],
@@ -115,10 +114,13 @@ const docs = defineCollection({
 const components = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['componenten/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
+    pattern: ['componenten/**/*.{md,mdx}', '!componenten/index.mdx', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
+  schema: schema.extend({
+    page_layout: z.enum(['overview', 'detail']).optional(),
+    issue_number: z.number(),
+  }),
 });
 
 const wcag = defineCollection({
