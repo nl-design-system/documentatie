@@ -2,10 +2,14 @@
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
+import OverviewLayout from '@layouts/overview.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
 import { MDXComponents } from '@utils/mdx-components.astro';
+import { navigation } from '../navigation.config';
+import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
+import { isNavigationGroup } from 'src/navigation';
 
 export async function getStaticPaths() {
   const wcag = await getCollection('wcag');
@@ -22,10 +26,16 @@ const { Content } = await render(page);
 const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
 
-const components = await MDXComponents();
+const { navigationList } = (await navigation)();
+const navigationElement = getNavigationElement(navigationList, Astro.url.pathname);
+const navigationGroup = isNavigationGroup(navigationElement) ? navigationElement : navigationElement?.parent;
+
+const components = await MDXComponents({ navigationItems: navigationGroup?.items });
+const Layout =
+  page.data?.page_layout === 'overview' || page.data?.hide_table_of_contents ? OverviewLayout : DetailLayout;
 ---
 
-<DetailLayout
+<Layout
   title={`WCAG: ${page.data.title}`}
   titleSm={`WCAG: ${page.data.title_sm}`}
   description={description}
@@ -38,6 +48,7 @@ const components = await MDXComponents();
   <Grid slot="header">
     <Grid.Cell span="all">
       <Heading level={1}>{page.data.title}</Heading>
+      {page.data.conformance_level && <p>{page.data.conformance_level}</p>}
       {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
     </Grid.Cell>
   </Grid>
@@ -47,4 +58,4 @@ const components = await MDXComponents();
       <Content components={components} />
     </Grid.Cell>
   </Grid>
-</DetailLayout>
+</Layout>

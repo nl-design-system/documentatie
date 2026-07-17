@@ -26,7 +26,8 @@ const { Content } = await render(page);
 const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
 
-const Layout = page.data?.page_layout === 'overview' ? OverviewLayout : DetailLayout;
+const Layout =
+  page.data?.page_layout === 'overview' || page.data?.hide_table_of_contents ? OverviewLayout : DetailLayout;
 const components = await MDXComponents();
 ---
 
