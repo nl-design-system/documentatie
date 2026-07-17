@@ -77,6 +77,7 @@ const schema = z.object({
   title: z.string(),
   title_sm: z.string().max(65).optional(),
   description: z.string().optional(),
+  hide_table_of_contents: z.boolean().optional(),
   lead: z.string().optional(),
   lang: z.enum(['nl', 'en']).optional(),
   slug: z.string().optional(),
@@ -124,7 +125,7 @@ const wcag = defineCollection({
     pattern: ['wcag/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema,
+  schema: schema.extend({ conformance_level: z.string() }),
 });
 
 const overviewPages = defineCollection({
