@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Plaats een beschrijvende koptekst voor de pagina in Heading 1.
+Zorg ervoor dat de kop de inhoud eronder beschrijft.

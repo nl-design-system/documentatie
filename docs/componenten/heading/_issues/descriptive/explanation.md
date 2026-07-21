@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-De tekst in de Heading 1 beschrijft de inhoud van de pagina niet (voldoende). De Heading 1 is de belangrijkste koptekst op de pagina en helpt bezoekers inschatten welke content er op de pagina staat.
+De tekst in de Heading beschrijft de inhoud van de pagina niet (voldoende). Goede koppen zijn belangrijk om snel in te kunnen schatten of de informatie die de bezoeker zoekt op de pagina staat.

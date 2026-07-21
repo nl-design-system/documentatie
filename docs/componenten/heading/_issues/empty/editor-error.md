@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Er is een Heading 1-component zonder inhoud.
+Er is een Heading component zonder inhoud.
