@@ -59,10 +59,11 @@ import ContrastSolution from "@nl-design-system-unstable/documentation/component
 import DescriptiveMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/metadata.json";
 import DescriptiveExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/explanation.md";
 import DescriptiveSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/solution.md";
+import DescriptiveSolutionH1 from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/solution-h1.md";
 import EmptyMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/metadata.json";
 import EmptyExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/explanation.md";
 import EmptySolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/solution.md";
-import EmptySolutionNone from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/solution.md";
+import EmptySolutionH1 from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/solution-emptyh1.md";
 import LanguageMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/language/metadata.json";
 import LanguageExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/language/explanation.md";
 import LanguageSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/language/solution.md";
@@ -70,12 +71,12 @@ import LargeTextMeta from "@nl-design-system-unstable/documentation/componenten/
 import LargeTextExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/explanation.md";
 import LargeTextSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/solution.md";
 import LargeTextSolutionQuote from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/solution-quote.md";
-import MultipleMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multiple/metadata.json";
-import MultipleExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multiple/explanation.md";
-import MultipleSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multiple/solution.md";
-import NoneMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/none/metadata.json";
-import NoneExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/none/explanation.md";
-import NoneSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/none/solution.md";
+import MultipleH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/metadata.json";
+import MultipleH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/explanation.md";
+import MultipleH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/solution.md";
+import NoH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/none/metadata.json";
+import NoH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/none/explanation.md";
+import NoH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/none/solution.md";
 import SkippedMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/metadata.json";
 import SkippedExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/explanation.md";
 import SkippedSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/solution.md";
@@ -157,7 +158,7 @@ export const component = componentProgress.find((item) => item.number === issueN
   ))}
 </Checklist>
 
-## Veel gemaakte fouten bij het inzetten van Heading 1
+## Veel gemaakte fouten bij het inzetten van Heading
 
 Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
 
@@ -177,6 +178,8 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <DescriptiveSolution />
 
+<DescriptiveSolutionH1 />
+
 <Heading level={3}>{EmptyMeta.title}</Heading>
 
 <EmptyExplanation />
@@ -184,6 +187,8 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 #### Oplossing
 
 <EmptySolution />
+
+<EmptySolutionH1 />
 
 <Heading level={3}>{LanguageMeta.title}</Heading>
 
@@ -203,21 +208,21 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <LargeTextSolutionQuote />
 
-<Heading level={3}>{MultipleMeta.title}</Heading>
+<Heading level={3}>{MultipleH1Meta.title}</Heading>
 
-<MultipleExplanation />
-
-#### Oplossing
-
-<MultipleSolution />
-
-<Heading level={3}>{NoneMeta.title}</Heading>
-
-<NoneExplanation />
+<MultipleH1Explanation />
 
 #### Oplossing
 
-<NoneSolution />
+<MultipleH1Solution />
+
+<Heading level={3}>{NoH1Meta.title}</Heading>
+
+<NoH1Explanation />
+
+#### Oplossing
+
+<NoH1Solution />
 
 <Heading level={3}>{SkippedMeta.title}</Heading>
 

@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-De tekst in de Heading 1 beschrijft de inhoud van de pagina niet (voldoende).
+De tekst in de Heading beschrijft de inhoud van de pagina niet (voldoende).
