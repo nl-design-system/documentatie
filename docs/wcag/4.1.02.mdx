@@ -5,21 +5,29 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 4.1.2 Naam, rol, waarde
 pagination_label: WCAG-succescriterium 4.1.2 Naam, rol, waarde
-description: Geef interactieve elementen een toegankelijke naam en een rol. Geef daarnaast, afhankelijk van de functionaliteit, het element een toestand (state), eigenschappen en een waarde mee.
+description: Alle interactieve elementen op een webpagina hebben een naam, rol en eventueel een waarde of staat nodig voor hulpsoftware.
 slug: 4.1.2
 conformance_level: Niveau A
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - robuust
   - compatibel
   - robust
   - compatible
-  - name, role, value
+  - name role value
+  - naam rol waarde
+  - ARIA
+  - toegankelijke naam
+  - screenreader
+  - hulpsoftware
+  - WCAG 4.1.2
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -32,129 +40,495 @@ import Summary from "./summaries/_4.1.2-summary.md";
   {"WCAG-succescriterium 4.1.2 Naam, rol, waarde"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-Deze informatie kun je ook terugvinden in de zogenaamde [accessibility tree](https://www.internetacademy.nl/ebooks/wcag-in-de-praktijk/html-dom-accessibility-tree-en-wai-aria). Naast een 'DOM tree' maken browsers ook een 'accessibility tree' van een webpagina. Hulpmiddelen gebruiken deze gegevens.
+### De rol: wat voor soort element is dit?
 
-**Let op**: Bij het gebruik van HTML is de rol al gedefinieerd en hoef je geen rol toe te voegen.
+De rol geeft aan welke functie een element heeft: knop, link, invoerveld, selectievak, enzovoort. Bij standaard HTML-elementen is de rol automatisch goed ingesteld. Een `<button>` heeft de rol "button" en een `<a>` heeft de rol "link".
 
-De regel is om de rol van een element niet aan te passen, maar er zijn uitzonderingen. Sommige roles voegen informatie toe en vervangen niet de functie. De oorspronkelijke functionaliteit blijft dan intact.
+Maak je zelf een bedieningselement, bijvoorbeeld door een `<div>` klikbaar te maken, dan moet je de rol handmatig toevoegen met het ARIA-attribuut `role`. Dat kost meer tijd, is foutgevoeliger en vereist uitgebreid testen. Gebruik daarom waar mogelijk standaard HTML-elementen.
 
-Bijvoorbeeld.
+Let op: een handmatig toegevoegde ARIA-rol overschrijft de standaardrol. Een `<ul role="menu">` heeft dan niet meer de rol van een lijst.
 
-- `<form role="search">` voegt toe dat dit een zoekformulier is.
-- `<button type="button" role="switch" aria-checked="true">` voegt toe dat deze button een aan/uit-schakelaar is.
+### De naam: wat doet het element?
 
-We geven een paar voorbeelden.
+De naam beschrijft wat een element doet, zoals "Zoeken", "Verwijderen" of "E-mailadres". De naam kan zichtbaar zijn op de pagina of onzichtbaar, maar moet altijd beschikbaar zijn voor hulpsoftware.
 
-### Radiobutton
+Er zijn meerdere manieren om een naam toe te voegen:
 
-In een formulier kun je je favoriete kleur kiezen uit een paar kleuren.
-Een geselecteerde radiobutton (keuzerondje) heeft de naam 'Blauw', de rol van 'radio' en de state is 'checked'.
-De naam komt van het label, de rol komt door het invoerveld `type="radio"` te geven en de state `checked` wordt door de browser gezet als de gebruiker 'Blauw' selecteert.
+- Een `aria-labelledby`-attribuut dat verwijst naar een ander element.
+- Een `aria-label`-attribuut.
+- Een zichtbaar label gekoppeld aan een invoerveld met `<label>`.
+- Een tekstalternatief bij een afbeelding met `alt`, genest in een link.
+- De tekst in het element zelf, zoals de tekst op een knop.
 
-In code:
+### De waarde, staat en eigenschappen: wat kan de bezoeker zelf aanpassen?
+
+Dit geldt alleen voor elementen waarbij de bezoeker zelf iets kan wijzigen. De waarde is wat een bezoeker invult of selecteert in een invoerelement, zoals een tekstveld, een slider of een keuzelijst. De staat geeft aan hoe een element er op dat moment voor staat: of een checkbox aangevinkt is, of een accordeon ingeklapt is, of een optie geselecteerd is. Eigenschappen liggen dicht bij de staat en zijn daar soms moeilijk van te onderscheiden. Bijvoorbeeld `aria-expanded`, `aria-checked`, `aria-selected` en `disabled`.
+
+### Over ARIA
+
+Drie belangrijke regels voor het gebruik van ARIA:
+
+- Gebruik standaard HTML als dat kan, ARIA alleen als het niet anders kan.
+- Verander de standaardrol van een HTML-element niet zonder reden.
+- Test ARIA altijd met een screenreader en met het toetsenbord, want het is foutgevoelig.
+
+ARIA is bedoeld om niet-toegankelijke elementen toegankelijker te maken. Onjuist gebruik werkt averechts en kan een website juist minder toegankelijk maken. Het meeste wat ARIA kan, kan ook met standaard HTML. Alleen voor het aangeven van statussen en het laten voorlezen van statusberichten is ARIA echt nodig.
+
+## Veelgemaakte fouten
+
+### Interactief element heeft geen toegankelijke naam
+
+Een knop, link of invoerveld zonder naam is onbruikbaar voor screenreadergebruikers. Ze horen dan alleen de rol ("knop" of "link") maar niet wat het element doet.
+
+**Hoe te testen:** beweeg met een screenreader langs knoppen, links en invoervelden. Wordt elk element aangekondigd met een duidelijke naam?
+
+<Guideline appearance="dont" title="Knop met alleen een icoon, zonder toegankelijke naam.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button>
+        <svg viewBox="0 0 24 24">
+          <path d="M3 6h18v2H3z" />
+        </svg>
+      </button>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Knop met een aria-label als toegankelijke naam.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <button aria-label="Menu openen">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M3 6h18v2H3z" />
+        </svg>
+      </button>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Invoerveld zonder label.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <input type="email" placeholder="E-mailadres" />}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Invoerveld met een gekoppeld label.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <label htmlFor="email">E-mailadres</label>
+        <input id="email" type="email" />
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Link met alleen een afbeelding, zonder toegankelijke naam.">
 
 ```html
-<input id="kleur1" type="radio" /> <label for="kleur1">Blauw</label>
+<a href="/home">
+  <img src="logo.png" alt="" />
+</a>
 ```
 
-De [screenreader](/woordenlijst/#screenreader) VoiceOver leest dan voor: 'Blauw, geselecteerd, keuzerondje'.
+</Guideline>
 
-![Screenshot van de screenreader VoiceOver met de tekst Blauw, geselecteerd, keuzerondje](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_4_1_2_vo_blauw_geselecteerd_keuzerondje.png)
-
-De accessibility tree van Chrome vermeldt voor het inputveld:
-
-- Name: Blauw
-- From label (for=attribute): label Blauw
-- Role: radio
-- Checked: true
-
-![Screenshot van de accessibility tree van Chrome voor het inputveld](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_4_1_2_chome_a11y_tree.png)
-
-### Link
-
-Een link naar bijvoorbeeld de contactpagina bevat de volgende informatie: de toegankelijke naam is 'Contact', de rol is 'link' en de waarde is de url, in dit geval https://nldesignsystem.nl/project/kernteam.
-
-In code:
+<Guideline appearance="do" title="Link met een alt-tekst als toegankelijke naam.">
 
 ```html
-<a href="https://nldesignsystem.nl/project/kernteam">Contact</a>
+<a href="/home">
+  <img src="logo.png" alt="Naar de homepagina" />
+</a>
 ```
 
-De screenreader VoiceOver leest voor: 'Link, contact'. En als de link al een keer aangeklikt is: 'Bezocht, Link, contact'
+</Guideline>
 
-![Screenshot van de screenreader VoiceOver met de tekst Bezocht, Link, contact](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_4_1_2_vo_bezocht_link_contact.png)
+**Wie kan dit oplossen:** een developer voegt een toegankelijke naam toe via `aria-label`, `aria-labelledby`, een `<label>` of een `alt`-tekst.
 
-### Een button voor het openen en sluiten van een ander element.
+### Interactief element heeft geen toegankelijke rol
 
-Hoe geef je aan of een menu, modal of accordeon open of dicht is? Met `aria-expanded`.
+Bij een zelfgemaakt bedieningselement ontbreekt de rol. Hulpsoftware kan dan niet aangeven wat het element is.
 
-In onderstaan voorbeeld heeft de button (knop) de toegankelijke naam 'Menu', de rol van button en de state expanded (open) of collapsed (gesloten).
+**Hoe te testen:** inspecteer het element in de accessibility tree van je browser. Heeft het element de juiste rol?
 
-Code voor het gesloten menu:
+<Guideline appearance="dont" title="Een div als knop, zonder toegankelijke rol.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div className="knop" onClick={() => {}}>
+        Versturen
+      </div>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Een echt button-element, of een div met role='button'.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <button onClick={() => {}}>Versturen</button>
+        <div className="knop" role="button" tabIndex="0" onClick={() => {}} onKeyDown={() => {}}>
+          Versturen
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Een zelfgemaakt selectievakje zonder toegankelijke rol.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <div className="checkbox" onClick={() => {}}>
+        <span className="vinkje">✓</span> Ik ga akkoord
+      </div>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Een echt checkbox-element.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <label>
+        <input type="checkbox" /> Ik ga akkoord
+      </label>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de zelfgemaakte elementen door standaard HTML-elementen, of voegt de juiste `role` en toetsenbordafhandeling toe.
+
+### Interactief element heeft een verkeerde rol
+
+Een element met de verkeerde rol geeft misleidende informatie aan screenreadergebruikers. Een knop die naar een andere pagina leidt, moet een link zijn. Een link die een actie uitvoert, moet een knop zijn.
+
+**Hoe te testen:** controleer of het gedrag van het element past bij de rol. Als het naar een andere pagina leidt, hoort het een link te zijn. Als het een actie uitvoert, hoort het een knop te zijn.
+
+<Guideline appearance="dont" title="Een knop die naar een andere pagina leidt.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <button onClick={() => {}}>Contact</button>}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Een link voor navigatie naar een andere pagina.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <a href="/contact">Contact</a>}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Een link die een actie uitvoert.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <a href="#" onClick={() => {}}>
+        Verwijderen
+      </a>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Een knop voor het uitvoeren van een actie.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => <button onClick={() => {}}>Verwijderen</button>}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer kiest het juiste HTML-element: `<a>` voor navigatie, `<button>` voor acties.
+
+### ARIA-attribuut heeft een ongeldige waarde of is verkeerd gespeld
+
+Als een attribuut of rol verkeerd is geschreven, negeert de browser het. Het element wordt dan niet correct doorgegeven aan hulpsoftware.
+
+**Hoe te testen:** gebruik axe DevTools of de accessibility tree in je browser. Ongeldige ARIA-attributen worden automatisch herkend.
+
+<Guideline appearance="dont" title="Een ARIA-attribuut verkeerd gespeld.">
 
 ```html
-<button aria-expanded="false">Menu</button>
+<button aria-expandd="true">Menu</button>
+<div role="nagivation">
+  <p>Navigatie</p>
+</div>
 ```
 
-De screenreader VoiceOver leest dan voor: 'Menu, samengevouwen, knop'.
-![Screenshot van de screenreader VoiceOver met de tekst Menu, samengevouwen, knop](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_4_1_2_vo_menu_samengevouwen_knop.png)
+</Guideline>
 
-Code voor het open menu:
+<Guideline appearance="do" title="Een ARIA-attribuut correct gespeld.">
+
+```html
+<button aria-expanded="true">Menu</button>
+<div role="navigation">
+  <p>Navigatie</p>
+</div>
+```
+
+</Guideline>
+
+<Guideline appearance="dont" title="Een ARIA-attribuut met een ongeldige waarde.">
+
+```html
+<button aria-expanded="yes">Menu</button>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Een ARIA-attribuut met een geldige waarde.">
 
 ```html
 <button aria-expanded="true">Menu</button>
 ```
 
-De screenreader VoiceOver leest dan voor: 'Menu, uitgevouwen, knop'.
-![Screenshot van de screenreader VoiceOver met de tekst Menu, uitgevouwen, knop](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/wcag_4_1_2_vo_menu_uitgegevouwen_knop.png)
+</Guideline>
 
-De accessibility tree van Chrome vermeldt voor de button:
+**Wie kan dit oplossen:** een developer controleert de spelling en geldige waarden van ARIA-attributen aan de hand van de [WAI-ARIA specificatie](https://www.w3.org/TR/wai-aria-1.2/).
 
-- Name: Menu
-- Contents: "Menu"
-- Role: button
-- Expanded: true
+### ARIA-attributen zijn toegepast op elementen die deze niet ondersteunen
 
-### Wat is de huidige pagina of stap?
+Sommige combinaties van rollen en attributen zijn niet toegestaan. Zo mag je `aria-label` niet toepassen op elementen met `role="generic"`, zoals `<div>` of `<span>` zonder rol.
 
-Met [aria-current](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current) kun je aangeven wat de huidige pagina is of de huidige stap in een proces is. Een screenreader leest dit voor bij de link of stap.
+**Hoe te testen:** gebruik axe DevTools of de accessibility tree in je browser. Controleer of ARIA-attributen worden ondersteund door het element waarop ze staan.
 
-Bijvoorbeeld bij het menu, als de huidige pagina voor de contactpagina is, in code:
+<Guideline appearance="dont" title="aria-label op een div zonder rol.">
 
 ```html
-<ul>
-  <li><a href="url">Home</a></li>
-  <li><a href="url">About us</a></li>
-  <li><a href="url" aria-current="page">Contact</a></li>
-</ul>
+<div aria-label="Zoekresultaten">
+  <p>3 resultaten gevonden</p>
+</div>
 ```
 
-En om aan te geven in welke stap de gebruiker is in een meerstappenformulier:
+</Guideline>
+
+<Guideline appearance="do" title="Een rol toevoegen, of een semantisch element gebruiken.">
 
 ```html
-<ul>
-  <li>Stap 1</li>
-  <li aria-current="step">Stap 2</li>
-  <li>Stap 3</li>
-</ul>
+<div role="region" aria-label="Zoekresultaten">
+  <p>3 resultaten gevonden</p>
+</div>
+
+<!-- Of een semantisch element: -->
+<section aria-label="Zoekresultaten">
+  <p>3 resultaten gevonden</p>
+</section>
 ```
 
-Het voordeel hiervan is ook dat je CSS aan aria-current states kunt toekennen.
-Je hebt dan geen speciale "active" CSS-class meer nodig.
+</Guideline>
 
-In CSS:
+**Wie kan dit oplossen:** een developer voegt een passende rol toe aan het element, of gebruikt een semantisch HTML-element.
 
-```css
-[aria-current]:not([aria-current="false"]) {
-  font-weight: bold;
-}
+### ARIA-rol is niet compleet
+
+Sommige ARIA-rollen hebben verplichte ouder- of kindrollen, of verplichte attributen. Als die ontbreken, werkt het element niet correct met hulpsoftware.
+
+**Hoe te testen:** gebruik axe DevTools. Controleer of alle verplichte ouder- en kindrollen aanwezig zijn en of verplichte attributen zijn ingevuld.
+
+<Guideline appearance="dont" title="Tabs zonder tablist als ouder-element.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <div role="tab">Tab 1</div>
+        <div role="tab">Tab 2</div>
+        <div role="tabpanel">Inhoud van tab 1</div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Tabs met tablist als ouder-element en gekoppelde tabpanels.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <div role="tablist">
+          <button role="tab" aria-selected="true" aria-controls="panel-1">
+            Tab 1
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="panel-2">
+            Tab 2
+          </button>
+        </div>
+        <div id="panel-1" role="tabpanel">
+          Inhoud van tab 1
+        </div>
+        <div id="panel-2" role="tabpanel" hidden>
+          Inhoud van tab 2
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt de ontbrekende ouder- of kindrollen en verplichte attributen toe volgens het [ARIA-patroon](https://www.w3.org/WAI/ARIA/apg/patterns/).
+
+### Status van een interactief element is onbekend voor hulpsoftware
+
+Bij zelfgemaakte bedieningselementen moet de status worden doorgegeven met ARIA-attributen. Zonder die attributen weet de screenreader niet of een element is geselecteerd, ingedrukt of aangevinkt.
+
+**Hoe te testen:** activeer het element en luister met een screenreader. Wordt de statusverandering aangekondigd?
+
+<Guideline appearance="dont" title="Een toggle-knop zonder aria-pressed.">
+
+```html
+<button class="toggle active">Donkere modus</button>
 ```
 
-Dus in plaats van alleen visueel de state aan te geven met bijvoorbeeld `class="active"`, maak je nu voor iedereen duidelijk wat het actieve menu-item is, door de CSS alleen aan aria-current toe te kennen.
+</Guideline>
+
+<Guideline appearance="do" title="Een toggle-knop met aria-pressed.">
+
+```html
+<button class="toggle" aria-pressed="true">Donkere modus</button>
+```
+
+</Guideline>
+
+<Guideline appearance="dont" title="Een zelfgemaakt selectievakje zonder aria-checked.">
+
+```html
+<div role="checkbox" tabindex="0">Onthoud mij</div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Een zelfgemaakt selectievakje met aria-checked.">
+
+```html
+<div role="checkbox" tabindex="0" aria-checked="false">Onthoud mij</div>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt de juiste ARIA-statusattributen toe (`aria-pressed`, `aria-checked`, `aria-selected`) en werkt de waarden bij via JavaScript bij interactie.
+
+### Uitklapbare content geeft niet aan of deze open of gesloten is
+
+Als een element content uitklapt of inklapt, moet de status worden doorgegeven met `aria-expanded`. Zonder dit attribuut weet een screenreadergebruiker niet of de content zichtbaar is.
+
+**Hoe te testen:** open en sluit het uitklapbare element. Luister met een screenreader of de status ("uitgevouwen" / "samengevouwen") wordt aangekondigd.
+
+<Guideline appearance="dont" title="Een accordion-knop zonder aria-expanded.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <button className="accordion-trigger">Meer informatie</button>
+        <div className="accordion-panel">
+          <p>Hier staat de extra informatie.</p>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Een accordion-knop met aria-expanded.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <>
+        <button className="accordion-trigger" aria-expanded="false" aria-controls="panel-1">
+          Meer informatie
+        </button>
+        <div id="panel-1" className="accordion-panel" hidden>
+          <p>Hier staat de extra informatie.</p>
+        </div>
+      </>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Een submenu-knop zonder aria-expanded.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <ul>
+        <li>
+          <button>Producten</button>
+          <ul className="submenu">
+            <li>
+              <a href="/laptops">Laptops</a>
+            </li>
+            <li>
+              <a href="/telefoons">Telefoons</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    )}
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="do" title="Een submenu-knop met aria-expanded.">
+  <Canvas language="html" defaultExpandedCode>
+    {() => (
+      <ul>
+        <li>
+          <button aria-expanded="false" aria-controls="submenu-producten">
+            Producten
+          </button>
+          <ul id="submenu-producten" className="submenu" hidden>
+            <li>
+              <a href="/laptops">Laptops</a>
+            </li>
+            <li>
+              <a href="/telefoons">Telefoons</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    )}
+  </Canvas>
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `aria-expanded` toe aan de knop die de content opent en sluit, en werkt de waarde bij via JavaScript.
+
+### Video- of audio-element heeft geen toegankelijke naam
+
+Als een `<video>` of `<audio>` het `controls`-attribuut heeft, moet het element een toegankelijke naam hebben. Zonder naam weet een screenreadergebruiker niet welke media wordt afgespeeld.
+
+**Hoe te testen:** beweeg met een screenreader langs het media-element. Wordt het aangekondigd met een duidelijke naam?
+
+<Guideline appearance="dont" title="Een video zonder toegankelijke naam.">
+
+```html
+<video controls src="instructie.mp4"></video>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Een video met een toegankelijke naam via aria-label of aria-labelledby.">
+
+```html
+<video controls src="instructie.mp4" aria-label="Instructievideo: account aanmaken"></video>
+
+<!-- Of met aria-labelledby: -->
+<h2 id="video-titel">Instructievideo: account aanmaken</h2>
+<video controls src="instructie.mp4" aria-labelledby="video-titel"></video>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een `aria-label` of `aria-labelledby` toe aan het media-element.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Ga met de <kbd>Tab</kbd>-toets langs alle interactieve elementen op de pagina. Wordt elk element aangekondigd door een screenreader met een duidelijke naam en rol?
+2. Activeer knoppen, links en andere bedieningselementen. Wordt de statusverandering aangekondigd? Bijvoorbeeld het openen van een accordion, het selecteren van een tab of het aanvinken van een selectievakje.
+3. Controleer of zelfgemaakte bedieningselementen dezelfde informatie geven als standaard HTML-elementen.
+4. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Beweeg met <kbd>Tab</kbd> en de pijltjestoetsen door de pagina en controleer of elk element begrijpelijk wordt aangekondigd.
+
+### Voor developers
+
+1. Open de accessibility tree in je browser. In Chrome en Firefox: inspecteer een element, ga naar het tabblad <span lang="en">"Accessibility"</span>. Controleer of naam, rol, waarde en status kloppen.
+2. Controleer alle knoppen en links. Heeft elk element een toegankelijke naam? Zoek naar `<button>` en `<a>` elementen zonder tekst, zonder `aria-label` en zonder `aria-labelledby`.
+3. Controleer alle invoervelden. Is elk veld gekoppeld aan een `<label>` of heeft het een `aria-label`?
+4. Controleer zelfgemaakte bedieningselementen. Heeft elk element de juiste `role`, `tabindex` en toetsenbordafhandeling?
+5. Controleer ARIA-attributen. Zijn ze correct gespeld? Hebben ze geldige waarden? Gebruik de [WAI-ARIA specificatie](https://www.w3.org/TR/wai-aria-1.2/) om te verifiëren welke attributen bij welke rollen horen.
+6. Controleer uitklapbare elementen. Is `aria-expanded` aanwezig en wordt de waarde bijgewerkt bij interactie?
+7. Controleer of `<button>` en `<summary>` geen semantische kindelementen bevatten zoals headings of links.
+8. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Beweeg met <kbd>Tab</kbd> en de pijltjestoetsen door de pagina en controleer of elk element begrijpelijk wordt aangekondigd.
+
+## Gerelateerde succescriteria
+
+- [1.1.1 Niet-tekstuele content](/wcag/1.1.1/): afbeeldingen en iconen hebben een tekstalternatief nodig.
+- [1.3.1 Info en relaties](/wcag/1.3.1/): de structuur van de pagina moet programmatisch bepaalbaar zijn.
+- [2.4.6 Koppen en labels](/wcag/2.4.6/): labels en koppen moeten het onderwerp of doel beschrijven.
+- [2.5.3 Label in naam](/wcag/2.5.3/): de toegankelijke naam moet de zichtbare tekst bevatten.
+- [4.1.3 Statusberichten](/wcag/4.1.3/): statusberichten moeten programmatisch bepaalbaar zijn zonder focuswijziging.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -162,110 +536,22 @@ Dus in plaats van alleen visueel de state aan te geven met bijvoorbeeld `class="
 - Formulieren: [Geef een formulierveld toegankelijke naam met een label](/richtlijnen/formulieren/labels/toegankelijke-naam).
 - Formulieren: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
 
+## Relevante bronnen
+
+- [axe DevTools](https://www.deque.com/axe/browser-extensions/): browserextensie die ontbrekende namen, rollen en ongeldige ARIA automatisch herkent (Deque, Engels).
+- [WAI-ARIA-gebruik van TPGi](https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html): overzicht van correct ARIA-gebruik per rol (TPGi, Engels).
+- [NVDA](https://www.nvaccess.org/download/): gratis screenreader voor Windows (NV Access, Engels).
+- [VoiceOver](https://support.apple.com/nl-nl/guide/voiceover/welcome/mac): ingebouwde screenreader op macOS (Apple).
+
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
+## W3C-referenties
 
-Goede tools voor het controleren voor dit succescriterium:
-
-- De accessibility tree van je browser.
-- Een screenreader, bijvoorbeeld [NVDA voor Windows](https://www.nvaccess.org/download/) of [VoiceOver/Safari](https://support.apple.com/nl-nl/guide/voiceover/welcome/mac) voor MacOS.
-- [axe Devtools](https://www.deque.com/axe/browser-extensions/).
-- [WAI-ARIA usage](https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html) van
-  TPGi.
-
-### Controleer de toegankelijke naam
-
-Elk interactief element moet een toegankelijke naam hebben. Een link vertelt waar deze naar toe gaat, een button beschrijft wat er gebeurt als je erop klikt en een formulierveld vertelt wat je moet invullen.
-
-Een aria-label overschrijft alle tekstuele inhoud in een interactief element. Klopt deze informatie met de zichtbare tekst?
-In onderstaand voorbeeld hoort de screenreadergebruiker 'Ga verder' en ziet een ziende gebruiker 'Stop'.
-
-```html
-<!-- Dit is fout, niet gebruiken -->
-<button onclick="doe-iets" aria-label="Ga verder">Stop</button>
-```
-
-Zijn de aria-labels goed vertaald? Aria-labels moeten in de taal van de pagina geschreven zijn. Bij een meertalige website moeten dus ook de aria-labels vertaald zijn.
-
-```html
-<!-- Dit is fout als de website in het Nederlands is  -->
-<button onclick="doe-iets" class="fa fa-search" aria-label="Search this site"></button>
-```
-
-### Check de semantische rol en waarde
-
-Een HTML-element heeft van zichzelf al een rol en indien van toepassing een waarde.
-Controleer of HTML van interactieve elementen goed gebruikt wordt. Vaak worden bijvoorbeeld links en buttons door elkaar gehaald.
-
-Bijvoorbeeld: verkeerd gebruik van een link, in plaats van een button:
-
-```html
-<!-- Dit is fout, niet gebruiken -->
-<a onclick="doe-iets">Klik hier</a>
-```
-
-Wordt er een rol toegekend aan een element dat een totaal andere rol heeft?
-
-```html
-<!-- Dit is fout, niet gebruiken -->
-<h1 role="button">Klik hier</h1>
-```
-
-### Controleer of een state dynamisch wordt aangepast
-
-Controleer of niet is vergeten om een state van een element ook in de ARIA-attributen aan te passen.
-
-Een paar voorbeelden:
-
-- Staat er het attribuut `aria-expanded` in een button, verandert de waarde van `false` naar `true` en weer terug bij het openen en sluiten van het gerelateerde element?
-- Wordt de waarde van `aria-current="page"` aangepast als de link niet meer de huidige pagina is?
-
-### Controleer bij webcomponenten of ARIA goed is toegepast
-
-Het toekennen van een rol betekent niet dat alle toetsenbord- en screenreader-interactie meteen goed werkt.
-
-Bijvoorbeeld:
-`<div role="button">Klik hier</div>` alleen is onvoldoende om de div als button te laten werken. De benodigde ARIA om screenreadergebruikers te informeren over de state en ook de toetsenbord-interactie moet zijn toegevoegd.
-
-### Controleer op typefouten en ongeldige waardes voor ARIA-attributen
-
-Typefouten zoals `aria-lable`, `treu`, `role="presenational"` zijn niet ongewoon. [axe Devtools](https://www.deque.com/axe/browser-extensions/) markeert deze fouten.
-
-## Veelgemaakte fouten
-
-Dit WCAG-succescriterium gaat over toegankelijke code voor onder andere de naam. Niet alle fouten in de naam zijn alleen een fout in de categorie "Naam, rol, waarde".
-Dit zijn bijvoorbeeld andere succescriteria die ook te maken hebben met de naam:
-
-- [2.4.4 Linkdoel (in context)](/wcag/2.4.4) en [2.4.9 Linkdoel (alleen doel)](https://www.w3.org/Translations/WCAG21-nl/#linkdoel-alleen-link): schrijf een duidelijke linktekst, dat is de toegankelijke naam van `link`-rol.
-- [2.4.6 Koppen en labels](/wcag/2.4.6) zegt bijvoorbeeld dat alle formulier-elementen vindbaar moeten zijn met een label. Als er helemaal geen label is, dan is dit een ook fout voor succescriterium 2.4.6.
-
-### Fout: aria-expanded toggle staat niet op de button, maar op het gerelateerde element
-
-Het ARIA-attribuut `aria-expanded` is bedoeld om aan te geven of een menu, dialog of accordeon open of dicht is.
-Een veel voorkomende fout is dat deze toggle op de component zelf staat en niet op de button die het open of sluit. Dit lijkt logisch want dat element is al dan niet zichtbaar. Maar een blinde screenreadergebruiker kan zo nooit ontdekken wat de state is.
-
-```html
-<!-- Dit is fout, niet gebruiken -->
-<button>Menu</button>
-<div id="hamburger" aria-expanded="false">[...]</div>
-```
-
-Oplossing: zet de toggle `aria-expanded="true/false"` op de button, omdat deze state bij de button wordt voorgelezen.
-
-```html
-<button aria-expanded="false">Menu</button>
-<div id="hamburger">[...]</div>
-```
-
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">4.1.2 Name, role, value</span>](https://www.w3.org/TR/WCAG22/#name-role-value).
-- Nederlandse vertaling van het WCAG-succescriterium: [4.1.2 Naam, rol, waarde](https://www.w3.org/Translations/WCAG22-nl/#name-role-value).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 4.1.2 Name, role, value</span>](https://www.w3.org/WAI/WCAG22/quickref/#name-role-value).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 4.1.2 Name, role, value</span>](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html).
+- [WCAG 2.2: Succescriterium 4.1.2 Naam, rol, waarde](https://www.w3.org/Translations/WCAG22-nl/#name-role-value): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 4.1.2: Name, Role, Value</span>](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 4.1.2 Name, Role, Value</span>](https://www.w3.org/WAI/WCAG22/quickref/#name-role-value): snelreferentie met technieken (Engels).
 
 <SpotlightSection>
   <Markdown omitH1 headinglevel={3}>
