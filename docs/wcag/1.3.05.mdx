@@ -5,72 +5,280 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.3.5 Identificeer het doel van de input
 pagination_label: WCAG-succescriterium 1.3.5 Identificeer het doel van de input
-description: Zorg dat de browser kan begrijpen wat een gebruiker moet invoeren, zodat die kan helpen en het makkelijker kan maken.
+description: Invoervelden voor persoonlijke gegevens hebben een autocomplete-attribuut zodat de browser ze automatisch kan invullen.
 slug: 1.3.5
 conformance_level: Niveau AA
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - waarneembaar
   - aanpasbaar
   - perceivable
   - adaptable
   - identify input purpose
+  - autocomplete
+  - invoerdoel
+  - formulier
+  - persoonlijke gegevens
+  - autofill
+  - adres
+  - naam
+  - WCAG 1.3.5
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
+import { Guideline } from "@site/src/components/Guideline";
 import Summary from "./summaries/_1.3.5-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
   {"WCAG-succescriterium 1.3.5 Identificeer het doel van de input"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-## Gerelateerde NL Design System-richtlijn
+Op basis van het `type`-attribuut, bijvoorbeeld `type="email"` of `type="tel"`, kan een browser al raden welk soort gegevens een veld vraagt. Om specifieke persoonlijke gegevens goed in te vullen, zoals voornaam, huisnummer of postcode, heeft de browser een `autocomplete`-attribuut met de juiste waarde nodig. Pas dan weet de browser welke opgeslagen gegevens in welk veld horen. Het `autocomplete`-attribuut maakt het ook mogelijk om iconen of labels bij velden te tonen die de bezoeker helpen begrijpen wat het veld vraagt, onafhankelijk van de taal van de pagina.
 
-Formulieren: [Autocomplete in een formulier](/richtlijnen/formulieren/voorkom-fouten/autocomplete).
+Alleen invoervelden die persoonlijke gegevens van de bezoeker verzamelen, hebben dit attribuut nodig. Bekijk de volledige [lijst met geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
 
-## Bronnen
+## Veelgemaakte fouten
 
-- WCAG bevat een volledige lijst van [waarden voor autocomplete](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
-- Jules Ernst van 200 OK heeft van deze lijst een [Nederlandse interpretatie van autocomplete](https://www.200ok.nl/tips/autocomplete/)gemaakt.
+### Invoerveld voor persoonlijke gegevens mist een autocomplete-attribuut
+
+Een formulier vraagt om naam, adres, e-mailadres of andere persoonlijke gegevens, maar de velden hebben geen `autocomplete`-attribuut. De browser kan de velden niet automatisch invullen. De bezoeker moet alles handmatig typen, ook als de browser de gegevens al heeft opgeslagen.
+
+**Hoe te testen:** inspecteer het veld in de <span lang="en">DevTools</span> en controleer of het `autocomplete`-attribuut aanwezig is.
+
+<Guideline appearance="dont" title="Adresvelden zonder autocomplete">
+    ```html
+    <label for="naam">Volledige naam</label>
+    <input type="text" id="naam" />
+
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" />
+
+    <label for="straat">Straat en huisnummer</label>
+    <input type="text" id="straat" />
+
+    <label for="postcode">Postcode</label>
+    <input type="text" id="postcode" />
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Adresvelden met autocomplete">
+    ```html
+    <label for="naam">Volledige naam</label>
+    <input type="text" id="naam" autocomplete="name" />
+
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" autocomplete="email" />
+
+    <label for="straat">Straat en huisnummer</label>
+    <input type="text" id="straat" autocomplete="street-address" />
+
+    <label for="postcode">Postcode</label>
+    <input type="text" id="postcode" autocomplete="postal-code" />
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur voegt het `autocomplete`-attribuut toe via het CMS, als het contentmanagementsysteem dat ondersteunt. Een developer voegt het juiste `autocomplete`-attribuut toe aan elk veld dat persoonlijke gegevens verzamelt.
+
+### Autocomplete-waarde is onjuist
+
+Een veld heeft een `autocomplete`-attribuut, maar met een verkeerde waarde. Een veld voor het e-mailadres heeft `autocomplete="e-mail"`, of een veld voor de achternaam heeft `autocomplete="given-name"`. De browser vult dan de verkeerde gegevens in.
+
+**Hoe te testen:** klik in een veld en accepteer de autocomplete-suggestie van de browser. Worden de juiste gegevens ingevuld? Inspecteer het veld in de <span lang="en">DevTools</span> en controleer of de `autocomplete`-waarde overeenkomt met wat het veld vraagt.
+
+<Guideline appearance="dont" title="Verkeerde autocomplete-waarde">
+    ```html
+    <!-- Veld vraagt om achternaam, maar autocomplete verwijst naar voornaam -->
+    <label for="achternaam">Achternaam</label>
+    <input type="text" id="achternaam" autocomplete="given-name" />
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Correcte autocomplete-waarde">
+  ```html
+  <label for="achternaam">Achternaam</label>
+  <input type="text" id="achternaam" autocomplete="family-name" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer controleert de `autocomplete`-waarde van elk veld aan de hand van de [lijst met geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
+
+### Autocomplete is uitgeschakeld op velden voor persoonlijke gegevens
+
+Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vragen, of op het `<form>`-element zelf. Een waarde op het `<form>`-element geldt voor alle velden in dat formulier. De browser mag de velden dan niet automatisch invullen. De bezoeker moet alles handmatig typen. Developers schakelen autocomplete uit om beveiligingsredenen. Voor de meeste velden is dat niet nodig en het maakt het formulier onnodig moeilijk te gebruiken.
+
+**Hoe te testen:** inspecteer de velden én het omhullende `<form>`-element in de <span lang="en">DevTools</span>. Staat er `autocomplete="off"` op velden voor naam, adres, e-mail of telefoonnummer of op het hele formulier?
+
+<Guideline appearance="dont" title="Autocomplete uitgeschakeld op een naamveld">
+  ```html
+  <label for="naam">Volledige naam</label>
+  <input type="text" id="naam" autocomplete="off" />
+  ```
+</Guideline>
+
+<Guideline appearance="dont" title="Autocomplete uitgeschakeld op het hele formulier">
+  ```html
+  <form autocomplete="off">
+    <label for="naam">Volledige naam</label>
+    <input type="text" id="naam" />
+
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" />
+
+  </form>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Autocomplete ingeschakeld met de juiste waarde">
+  ```html
+  <label for="naam">Volledige naam</label>
+  <input type="text" id="naam" autocomplete="name" />
+  ```
+</Guideline>
+
+Bij wachtwoordvelden voor een nieuw wachtwoord gebruik je `autocomplete="new-password"`. Dat signaleert aan de browser en wachtwoordmanagers dat het om een nieuw wachtwoord gaat, niet om een bestaand wachtwoord.
+
+**Wie kan dit oplossen:** een developer verwijdert `autocomplete="off"` van het `<form>`-element en vervangt `autocomplete="off"` op de individuele velden door de juiste `autocomplete`-waarde.
+
+### Betaalvelden missen autocomplete
+
+Een betaalformulier vraagt om kaartnummer, vervaldatum en naam op de kaart. Zonder `autocomplete` moet de bezoeker de gegevens handmatig invoeren. Wachtwoordmanagers en browsers kunnen betaalgegevens automatisch invullen als de juiste `autocomplete`-waarden aanwezig zijn.
+
+**Hoe te testen:** klik in het kaartnummerveld. Biedt de browser of wachtwoordmanager aan om de betaalgegevens in te vullen?
+
+<Guideline appearance="dont" title="Betaalvelden zonder autocomplete">
+    ```html
+    <label for="kaartnummer">Kaartnummer</label>
+    <input type="text" id="kaartnummer" />
+
+    <label for="vervaldatum">Vervaldatum</label>
+    <input type="text" id="vervaldatum" />
+
+    <label for="naam-kaart">Naam op de kaart</label>
+    <input type="text" id="naam-kaart" />
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Betaalvelden met autocomplete">
+    ```html
+    <label for="kaartnummer">Kaartnummer</label>
+    <input type="text" id="kaartnummer" autocomplete="cc-number" />
+
+    <label for="vervaldatum">Vervaldatum</label>
+    <input type="text" id="vervaldatum" autocomplete="cc-exp" />
+
+    <label for="naam-kaart">Naam op de kaart</label>
+    <input type="text" id="naam-kaart" autocomplete="cc-name" />
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt de juiste `autocomplete`-waarden toe aan de betaalvelden.
+
+### Inlogvelden missen autocomplete
+
+Een inlogformulier vraagt om een e-mailadres en wachtwoord. De velden hebben geen `autocomplete`-attribuut. De browser en wachtwoordmanagers kunnen de opgeslagen inloggegevens niet automatisch invullen.
+
+**Hoe te testen:** open een inlogpagina. Inspecteer de invoervelden in de <span lang="en">DevTools</span>.
+
+<Guideline appearance="dont" title="Inlogvelden zonder autocomplete">
+    ```html
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" />
+
+    <label for="wachtwoord">Wachtwoord</label>
+    <input type="password" id="wachtwoord" />
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Inlogvelden met autocomplete">
+    ```html
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" autocomplete="username" />
+
+    <label for="wachtwoord">Wachtwoord</label>
+    <input type="password" id="wachtwoord" autocomplete="current-password" />
+    ```
+
+</Guideline>
+
+Bij een registratieformulier gebruik je `autocomplete="new-password"` voor het wachtwoordveld. Dat signaleert aan de browser dat het om een nieuw wachtwoord gaat en biedt aan om een sterk wachtwoord te genereren.
+
+**Wie kan dit oplossen:** een developer voegt `autocomplete="username"` en `autocomplete="current-password"` toe aan het inlogformulier en `autocomplete="new-password"` aan het registratieformulier.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Open een formulier dat persoonlijke gegevens vraagt, zoals naam, adres, e-mail, telefoon en betaalgegevens. Klik in de velden. Biedt de browser aan om ze automatisch in te vullen? Dat de browser iets aanbiedt, betekent nog niet dat het attribuut aanwezig en correct ingesteld is.
+2. Accepteer de suggestie van de browser. Worden de juiste gegevens in de juiste velden ingevuld?
+3. Test een inlogpagina. Biedt de browser of wachtwoordmanager de opgeslagen gegevens aan?
+
+### Voor developers
+
+1. Inspecteer elk invoerveld dat persoonlijke gegevens verzamelt in de <span lang="en">DevTools</span>. Heeft het veld een `autocomplete`-attribuut met een geldige waarde?
+2. Controleer of de `autocomplete`-waarde overeenkomt met wat het veld vraagt. Vergelijk met de [lijst met geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
+3. Zoek in de broncode naar `autocomplete="off"` op velden voor persoonlijke gegevens. Vervang die door de juiste waarde.
+4. Gebruik <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> voor een eerste scan. Die tools herkennen ontbrekende `autocomplete`-attributen op veelvoorkomende veldtypen automatisch.
+
+## Veelgebruikte autocomplete-waarden
+
+| Waarde             | Veld                                          |
+| ------------------ | --------------------------------------------- |
+| `name`             | Volledige naam                                |
+| `given-name`       | Voornaam                                      |
+| `family-name`      | Achternaam                                    |
+| `email`            | E-mailadres                                   |
+| `tel`              | Telefoonnummer                                |
+| `street-address`   | Straat en huisnummer                          |
+| `postal-code`      | Postcode                                      |
+| `country-name`     | Land                                          |
+| `organization`     | Organisatie                                   |
+| `username`         | Gebruikersnaam of e-mailadres bij inlog       |
+| `current-password` | Huidig wachtwoord bij inlog                   |
+| `new-password`     | Nieuw wachtwoord bij registratie of wijziging |
+| `cc-number`        | Creditcardnummer                              |
+| `cc-exp`           | Vervaldatum creditcard                        |
+| `cc-name`          | Naam op de creditcard                         |
+| `bday`             | Geboortedatum                                 |
+
+## Gerelateerde succescriteria
+
+- [1.3.1 Info en relaties](/wcag/1.3.1/): labels zijn in de code gekoppeld aan hun invoerveld. Autocomplete voegt daar het doel van het veld aan toe.
+- [3.3.2 Labels of instructies](/wcag/3.3.2/): zichtbare labels beschrijven wat de bezoeker in een veld moet invullen. Autocomplete helpt de browser om het veld automatisch in te vullen op basis van die beschrijving.
+- [3.3.7 Overbodige invoer](/wcag/3.3.7/): informatie die de bezoeker eerder heeft ingevuld, wordt automatisch aangeboden. Autocomplete is een van de manieren om dat te doen.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren: [Autocomplete in een formulier](/richtlijnen/formulieren/voorkom-fouten/autocomplete).
+
+## Relevante bronnen
+
+- WCAG bevat een volledige lijst met [waarden voor autocomplete](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
+- Jules Ernst van 200 OK heeft van deze lijst een [Nederlandse interpretatie van autocomplete](https://www.200ok.nl/tips/autocomplete/) gemaakt.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
-
-[Axe DevTools](https://www.deque.com/axe/browser-extensions/) kan controleren op ongeldige waarden (typefouten) voor autocomplete.
-
-Inspecteer daarna in de gegenereerde HTML-code van de webpagina de invoervelden, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
-
-Controleer of de invoervelden van formulieren een autocomplete-attribuut hebben met een juiste waarde.
-
-**Let op:** dit geldt alleen voor invoervelden waarin persoonlijke gegevens worden uitgevraagd en niet voor bijvoorbeeld een formulier om op de website te zoeken.
-
-## W3C referenties
+## W3C-referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.3.5 Identify Input Purpose</span>](https://www.w3.org/TR/WCAG22/#identify-input-purpose).
 - Nederlandse vertaling van het WCAG-succescriterium: [1.3.5 Identificeer het doel van de input](https://www.w3.org/Translations/WCAG22-nl/#identify-input-purpose).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.5 Identify Input Purpose</span>](https://www.w3.org/WAI/WCAG22/quickref/#identify-input-purpose).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.5 Identify Input Purpose</span>](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
