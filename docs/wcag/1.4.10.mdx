@@ -5,26 +5,33 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.10 Reflow
 pagination_label: WCAG-succescriterium 1.4.10 Reflow
-description: De gebruiker moet de webpagina tot 400% kunnen vergroten in de browser. Dezelfde inhoud moet aanwezig zijn, en alles moet nog op eenzelfde manier werken.
+description: De gebruiker moet de webpagina tot 400% kunnen vergroten in de browser. Dezelfde inhoud moet aanwezig zijn, en alles moet nog op dezelfde manier werken.
 slug: 1.4.10
 conformance_level: Niveau AA
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - waarneembaar
   - onderscheidbaar
   - perceivable
   - distinguishable
   - reflow
+  - content herschalen WCAG
+  - WCAG 1.4.10 reflow
+  - WCAG Reflow
+  - responsive toegankelijkheid
+  - toegankelijk responsive design
+  - 400% zoom WCAG
+  - mobiel toegankelijk ontwerp
+  - layout aanpassen bij zoom
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.4.10-summary.md";
 
@@ -32,41 +39,443 @@ import Summary from "./summaries/_1.4.10-summary.md";
   {"WCAG-succescriterium 1.4.10 Reflow"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+Zonder reflow moet iemand die inzoomt constant heen en weer scrollen om een zin te lezen. Dat maakt de content praktisch onbruikbaar. Reflow zorgt ervoor dat ingezoomde content net zo leesbaar is als op een smal mobiel scherm.
+
+De eis geldt voor twee richtingen:
+
+- **Verticaal scrollende content** (de meeste webpagina's): de content past binnen een breedte van 320 CSS-pixels, zonder horizontaal scrollen waarmee de hele pagina scrolt.
+- **Horizontaal scrollende content** (zoals tabellen die van links naar rechts werken): de content past binnen een hoogte van 256 CSS-pixels, zonder tegelijkertijd verticaal en horizontaal te hoeven scrollen.
+
+Sommige content heeft twee dimensies nodig om begrijpelijk te blijven en is uitgezonderd: datatabellen, complexe afbeeldingen zoals kaarten en diagrammen, werkbalken met veel bedieningselementen, video en andere embedded media, en geneste lijsten waarbij de inspringing de structuur communiceert. Uitgezonderde content mag horizontaal scrollen binnen het eigen element, zonder dat de hele pagina meescrolt.
+
+## Veelgemaakte fouten
+
+### Elementen met een vaste breedte passen zich niet aan
+
+Elementen op een webpagina passen zich aan de beschikbare breedte aan. Bij inzoomen wordt de breedte kleiner en schuift de content onder elkaar. Elementen met een vaste breedte in pixels doen dat niet: ze vallen buiten het scherm en zijn alleen bereikbaar door horizontaal te scrollen.
+
+**Hoe te testen:** zoom in tot 400% of stel de browserbreedte in op 320 pixels. Valt er content buiten het scherm?
+
+<Guideline appearance="dont" title="Vaste breedte in pixels.">
+    ```css
+    .container {
+      width: 960px;
+    }
+
+    .kaart {
+      width: 350px;
+    }
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Flexibele breedte met max-width.">
+    ```css
+    .container {
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .kaart {
+      max-width: 350px;
+      width: 100%;
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt vaste breedtes door flexibele waarden.
+
+### Content verdwijnt door overflow hidden
+
+Als content buiten een container valt en `overflow: hidden` is ingesteld, verdwijnt die content. De bezoeker kan het niet lezen en kan er niet naartoe scrollen. Bij inzoomen valt content sneller buiten een container, waardoor dit probleem pas bij hoge zoomniveaus zichtbaar wordt.
+
+**Hoe te testen:** zoom in tot 400%. Verdwijnt er tekst of worden elementen afgesneden? Inspecteer verdachte containers in de DevTools en controleer de `overflow`-waarde.
+
+<Guideline appearance="dont" title="Content verdwijnt bij inzoomen door overflow hidden.">
+    ```css
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Content mag wrappen en de container groeit mee.">
+    ```css
+    .container {
+      width: 100%;
+      overflow: visible;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Scrollen toestaan als het niet anders kan.">
+    ```css
+    .container {
+      width: 100%;
+      overflow-x: auto;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer past de `overflow`-waarde aan of zorgt dat de container meegroeit.
+
+### Tekst wordt afgesneden in een element met een vaste hoogte
+
+Een element met een vaste hoogte in pixels kan de tekst niet bevatten wanneer die bij inzoomen groter wordt. De tekst wordt afgesneden of overlapt andere elementen. Gebruik `min-height` in plaats van `height`, zodat het element meegroeit met de content.
+
+**Hoe te testen:** zoom in tot 400%. Wordt tekst afgesneden of overlapt deze andere elementen? Controleer in de DevTools of een `height` met `overflow: hidden` de oorzaak is.
+
+<Guideline appearance="dont" title="Vaste hoogte knipt tekst af.">
+    ```css
+    .banner {
+      height: 200px;
+      overflow: hidden;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Minimale hoogte, element groeit mee met de content.">
+    ```css
+    .banner {
+      min-height: 200px;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt `height` door `min-height`.
+
+### Kolommen blijven naast elkaar staan bij smalle schermen
+
+Een layout met meerdere kolommen past zich aan bij een smal scherm: de kolommen gaan onder elkaar staan. Als dat niet gebeurt, moet de bezoeker horizontaal scrollen. Dit speelt bij sidebars, kaartgrids en andere meerkoloms-layouts.
+
+**Hoe te testen:** stel de browserbreedte in op 320 pixels. Staan alle kolommen onder elkaar?
+
+<Guideline appearance="dont" title="Kolommen blijven altijd naast elkaar.">
+    ```css
+    .layout {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 300px;
+      flex-shrink: 0;
+    }
+
+    .content {
+      flex: 1;
+    }
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Kolommen gaan onder elkaar bij smalle schermen met flex-wrap.">
+    ```css
+    .layout {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sidebar {
+      flex: 1 1 300px;
+    }
+
+    .content {
+      flex: 1 1 100%;
+    }
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Kolommen gaan onder elkaar bij smalle schermen met een media query.">
+    ```css
+    @media (max-width: 320px) {
+      .layout {
+        flex-direction: column;
+      }
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `flex-wrap` of een media query toe aan de layout.
+
+### Navigatiemenu verdwijnt bij inzoomen
+
+Een horizontaal navigatiemenu dat bij 400% zoom niet meer past, verdwijnt deels buiten het scherm. Zonder een hamburgermenu of ander alternatief kan de bezoeker niet meer alle pagina's bereiken. Ook een link die deels buiten beeld valt is niet bruikbaar.
+
+**Hoe te testen:** zoom in tot 400%. Is het volledige navigatiemenu zichtbaar en bruikbaar? Kun je alle links lezen en activeren?
+
+<Guideline appearance="dont" title="Horizontale navigatie zonder mobiel alternatief.">
+  ```html
+  <nav>
+    <ul class="nav-horizontal">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/over-ons">Over ons</a>
+      </li>
+      <li>
+        <a href="/diensten">Diensten</a>
+      </li>
+      <li>
+        <a href="/projecten">Projecten</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Responsief menu dat bij smalle weergave een toggle wordt.">
+  ```html
+  <nav>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="hoofdmenu">
+      Menu
+    </button>
+    <ul id="hoofdmenu" class="nav">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/over-ons">Over ons</a>
+      </li>
+      <li>
+        <a href="/diensten">Diensten</a>
+      </li>
+      <li>
+        <a href="/projecten">Projecten</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="CSS voor een responsief menu dat verticaal wordt bij smalle weergave.">
+    ```css
+    @media (max-width: 320px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav {
+        display: none;
+        flex-direction: column;
+      }
+
+      .nav.open {
+        display: flex;
+      }
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer bouwt een responsieve menuvariant.
+
+### Vast gepositioneerde elementen overlappen content bij inzoomen
+
+Elementen met `position: fixed`, zoals een cookiemelding of chatwidget, nemen bij inzoomen een steeds groter deel van het scherm in. Bij 400% zoom kan zo'n element de halve pagina bedekken. Als het element ook nog een vaste hoogte heeft, is de eigen content ervan mogelijk niet volledig leesbaar.
+
+**Hoe te testen:** zoom in tot 400%. Overlappen vaste elementen de content? Is de content van het vaste element zelf nog leesbaar?
+
+<Guideline appearance="dont" title="Vast gepositioneerde cookiemelding met vaste hoogte overlapt content.">
+    ```css
+    .cookiemelding {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Cookiemelding past zich aan bij inzoomen.">
+    ```css
+    .cookiemelding {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      min-height: auto;
+      max-height: 50vh;
+      overflow-y: auto;
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de vaste hoogte door een flexibele maximale hoogte.
+
+### Vaste header en footer in een dialoogvenster laten geen ruimte voor de inhoud
+
+Een dialoogvenster of drawer heeft een vaste header en footer met `position: fixed` of `position: sticky`. Op een groot scherm werkt dat prima. Bij 400% zoom nemen de header en footer samen het grootste deel van het scherm in beslag. Voor de eigenlijke inhoud van het venster blijft zo weinig ruimte over dat de bezoeker nauwelijks kan lezen of bedienen.
+
+**Hoe te testen:** open een dialoogvenster of drawer en zoom in tot 400%. Hoeveel ruimte is er over voor de inhoud? Kun je door de inhoud scrollen zonder dat de header en footer in de weg zitten?
+
+<Guideline appearance="dont" title="Vaste header en footer in een dialoogvenster die bij inzoomen de inhoud verdringen.">
+    ```css
+    .dialog-header {
+      position: sticky;
+      top: 0;
+      height: 60px;
+    }
+
+    .dialog-footer {
+      position: sticky;
+      bottom: 0;
+      height: 80px;
+    }
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Header en footer met flexibele hoogte die meeschalen.">
+    ```css
+    .dialog {
+      display: flex;
+      flex-direction: column;
+      max-height: 100vh;
+    }
+
+    .dialog-header {
+      flex-shrink: 0;
+    }
+
+    .dialog-body {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .dialog-footer {
+      flex-shrink: 0;
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt vaste hoogtes door een flexibele layout waarin de body van het dialoogvenster het resterende schermoppervlak benut.
+
+### Viewport meta-tag schakelt inzoomen uit
+
+De viewport meta-tag met `maximum-scale=1` of `user-scalable=no` voorkomt dat bezoekers kunnen inzoomen. Een bezoeker die afhankelijk is van zoom kan de pagina niet lezen. De meeste mobiele browsers negeren deze instelling inmiddels, maar niet allemaal.
+
+**Hoe te testen:** inspecteer de `<head>` van de pagina in de DevTools. Zoek naar `maximum-scale`, `minimum-scale` of `user-scalable=no` in de viewport meta-tag.
+
+<Guideline appearance="dont" title="Viewport meta-tag schakelt inzoomen uit.">
+  ```html
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Viewport meta-tag zonder zoombeperkingen.">
+  ```html
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer verwijdert de zoombeperkende attributen uit de viewport meta-tag.
+
+### Eenvoudige tabel scrollt horizontaal in plaats van zich aan te passen
+
+Een tabel met twee of drie kolommen hoeft niet horizontaal te scrollen. De content kan bij smalle schermen worden omgezet naar een lijstweergave. Complexe tabellen met veel kolommen vallen onder de uitzondering en mogen horizontaal scrollen.
+
+**Hoe te testen:** bekijk de tabel bij 320 pixels breedte. Heeft de tabel maar twee of drie kolommen? Dan kan een lijstweergave beter werken.
+
+<Guideline appearance="dont" title="Tabel is altijd een tabel, ook op smal scherm.">
+    ```css
+    .tabel {
+      width: 100%;
+      overflow-x: auto;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Eenvoudige tabel wordt een lijst bij smalle weergave.">
+    ```css
+    @media (max-width: 320px) {
+      .tabel thead {
+        display: none;
+      }
+
+      .tabel tr {
+        display: block;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .tabel td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem 0;
+      }
+
+      .tabel td::before {
+        content: attr(data-label);
+        font-weight: bold;
+      }
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer bouwt een responsieve tabelvariant.
+
+### Zoekbalk in een tabel wordt afgesneden
+
+Een tabel valt onder de uitzondering en mag horizontaal scrollen. Maar een zoekbalk of filterveld boven of in de tabel is geen tabelcontent: die moet bij 320 pixels breedte volledig zichtbaar en bruikbaar blijven.
+
+**Hoe te testen:** zoom in tot 400%. Is de zoekbalk volledig zichtbaar? Kun je er tekst in typen en een zoekopdracht uitvoeren?
+
+**Wie kan dit oplossen:** een developer zorgt dat de zoekbalk buiten het scrollbare tabelgebied staat en zich aanpast aan de beschikbare breedte.
 
 ## Hoe te testen
 
-Er zijn minimaal 2 manieren om tot 400% te vergroten en dit criterium te testen.
+### Voor iedereen
 
-1. Stel de schermbreedte van de browser op 1280 pixels breedte. Dit kan vaak via de developer tools. Zoom vervolgens in in de browser naar een percentage van 400%.
-2. Stel de schermbreedte van de browser in op 320 pixels breedte. Dit komt overeen met 1280 pixels en 4 maal vergroten.
+1. Zoom in tot 400% (gebruik <kbd>Ctrl</kbd> + <kbd>+</kbd> of <kbd>Cmd</kbd> + <kbd>+</kbd>). Lees de pagina door alleen verticaal te scrollen. Is horizontaal scrollen nodig? Dan voldoet de pagina niet.
+2. Controleer of alle tekst, knoppen, links en formuliervelden zichtbaar en bruikbaar zijn.
+3. Controleer of er geen content overlapt of wordt afgesneden.
+4. Maak je browservenster 320 pixels breed. Dit simuleert hetzelfde als 400% zoom. Is alle content bereikbaar?
+5. Test ook in landscape-oriëntatie bij horizontaal scrollende content.
 
-Als de browser op 1 van deze 2 manieren ingesteld is, controleer dan het volgende:
+### Voor developers
 
-- Er mogen geen horizontale scrollbars zijn.
-- Alle content moet bereikbaar en leesbaar zijn. Het hoeft niet meteen zichtbaar te zijn. Dit mag ook in accordions of andere uitklapbare delen zijn.
-- Alle functionaliteit moet ook bereikbaar en bruikbaar zijn. Een ingeklapt menu is een voldoende alternatief voor een zichtbaar menu.
+1. Open de DevTools en schakel de responsive modus in. Stel de breedte in op 320 pixels. Controleer of de layout zich aanpast.
+2. Zoek in de CSS naar vaste breedtes in pixels (`width: ...px`) zonder bijbehorende `max-width` of flexibele alternatieven.
+3. Zoek naar containers met een vaste afmeting in combinatie met `overflow: hidden`. Controleer de volgende CSS properties: `height`, `width`, `block-size`, `inline-size`, en vervang ze waar mogelijk door de `min-` variant.
+4. Controleer de viewport meta-tag. Verwijder `maximum-scale`, `minimum-scale` en `user-scalable=no`.
+5. Controleer of navigatiemenu's een mobiele variant hebben die ook bij 400% zoom werkt.
+6. Test de layout met `flex-wrap: wrap` of CSS Grid met `auto-fit`/`auto-fill` zodat kolommen vanzelf onder elkaar springen.
+7. Controleer vast gepositioneerde elementen. Overlappen ze content bij 320 pixels breedte?
+8. Controleer modals, tooltips en dropdowns. Zijn ze volledig zichtbaar en bruikbaar bij 320 pixels breedte?
 
-Er is een uitzondering voor content die voor het gebruik of de betekenis een tweedimensionale lay-out vereist. Denk hierbij aan bepaalde tabellen, kaarten en datavisualizaties die niet gesplitst en gescheiden kunnen worden. In die gevallen kunnen er lokaal scrollbars aanwezig zijn.
+## Gerelateerde succescriteria
+
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): tekst moet tot 200% vergroot kunnen worden. Reflow gaat een stap verder en eist dat de layout zich aanpast bij 400% zoom.
+- [1.4.12 Tekstafstand](/wcag/1.4.12/): aangepaste tekstafstand kan ervoor zorgen dat tekst buiten containers valt. Veel van dezelfde CSS-oplossingen (flexibele breedtes, geen vaste hoogtes) helpen bij beide criteria.
+- [1.3.4 Oriëntatie](/wcag/1.3.4/): content mag niet beperkt zijn tot één schermoriëntatie. Relevant als je responsive layouts bouwt die zowel bij inzoomen als bij draaien moeten werken.
+- [2.4.7 Focus zichtbaar](/wcag/2.4.7/): de focusindicator moet ook bij inzoomen zichtbaar blijven. Controleer of de focusindicator niet buiten beeld valt bij 400% zoom.
+- [2.4.11 Focus niet bedekt](/wcag/2.4.11/): sticky headers en footers die bij inzoomen een groot deel van het scherm innemen, kunnen het gefocuste element bedekken.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## W3C referenties
+## W3C-referenties
 
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.4.10 Reflow</span>](https://www.w3.org/TR/WCAG22/#reflow).
-- Nederlandse vertaling van het WCAG-succescriterium: [1.4.10 Reflow](https://www.w3.org/Translations/WCAG22-nl/#reflow).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.10 Reflow</span>](https://www.w3.org/WAI/WCAG22/quickref/#reflow).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.10 Reflow</span>](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html).
-
-  <SpotlightSection>
-    <Markdown omitH1 headinglevel={3}>
-      <Disclaimer />
-    </Markdown>
-  </SpotlightSection>
+- [WCAG 2.2: Succescriterium 1.4.10 Reflow](https://www.w3.org/Translations/WCAG22-nl/#reflow): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 1.4.10: Reflow</span>](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 1.4.10 Reflow</span>](https://www.w3.org/WAI/WCAG22/quickref/#reflow): snelreferentie met technieken (Engels).
 
 ## Help richtlijn verbeteren
 
