@@ -1,8 +1,9 @@
 import { visit } from 'unist-util-visit';
 
-const TYPES = { tip: 'tip', note: 'note', caution: 'caution', danger: 'danger', warning: 'warning' };
+const TYPES = { tip: 'tip', info: 'info', note: 'note', caution: 'caution', danger: 'danger', warning: 'warning' };
 const MAP = {
   [TYPES.tip]: 'ok',
+  [TYPES.info]: 'info',
   [TYPES.note]: 'info',
   [TYPES.danger]: 'error',
   [TYPES.caution]: 'warning',

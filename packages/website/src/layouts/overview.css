@@ -20,10 +20,12 @@
 
 .ma-layout-overview__content {
   box-sizing: border-box;
+  column-gap: var(--ma-layout-column-gap);
   display: grid;
   grid-template-areas:
     "side-nav"
     "breadcrumb-nav"
+    "header"
     "body";
   inline-size: 100%;
   margin-inline: auto;
@@ -48,6 +50,11 @@
 
 .ma-layout-overview__header {
   grid-area: header;
+  .ams-grid__cell {
+    display: flex;
+    flex-direction: column;
+    gap: var(--basis-space-row-xl);
+  }
 }
 
 .ma-layout-overview__main {
@@ -58,43 +65,32 @@
   grid-area: body;
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value felt right.
- */
-@container ma-layout-overview (width >= 768px) {
+@media (--medium-and-up) {
   .ma-layout-overview__content {
     grid-template-areas:
       "breadcrumb-nav"
+      "header"
       "body";
     grid-template-columns: minmax(var(--ma-layout-overview-min-inline-size), var(--basis-page-max-inline-size));
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
   }
 }
 
-/*
- * Temporary value until the design is thought through with a designer.
- * Value based on --basis-page-max-inline.
- */
-@container ma-layout-overview (width >= 1140px) {
+@media (--large-and-up) {
   .ma-layout-overview__side-nav {
     display: block;
     position: relative;
   }
   .ma-layout-overview__content {
     grid-template-areas:
-      "side-nav . breadcrumb-nav"
-      "side-nav . body";
+      "side-nav breadcrumb-nav"
+      "side-nav header"
+      "side-nav body";
     grid-template-columns:
       /* side-nav */
-      minmax(var(--ma-layout-overview-side-nav-min-inline-size), var(--ma-layout-overview-side-nav-max-inline-size))
-      /* side-nav gutter */
-      var(--basis-space-inline-2xl)
+      var(--ma-layout-side-bar-inline-size)
       /* page body */
-      minmax(
-        var(--ma-layout-overview-min-inline-size),
-        calc(var(--basis-page-max-inline-size) + var(--ma-layout-detail-side-nav-max-inline-size))
-      );
-    grid-template-rows: auto 1fr;
+      1fr;
+    grid-template-rows: auto auto 1fr;
   }
 }

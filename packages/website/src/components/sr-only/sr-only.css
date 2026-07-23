@@ -1,0 +1,16 @@
+/** Taken from https://kittygiraudel.com/snippets/sr-only-class/ */
+.ma-sr-only {
+  block-size: 1px !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  inline-size: 1px !important;
+  margin-block: -1px !important;
+  margin-inline: -1px !important;
+  overflow: hidden !important;
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+}
