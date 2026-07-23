@@ -42,15 +42,19 @@ import Summary from "./summaries/_2.2.1-summary.md";
 
 <Summary />
 
-Niet iedereen werkt even snel. Mensen die schermvergroting of een schermlezer gebruiken, mensen met dyslexie, een cognitieve beperking of een motorische beperking hebben meer tijd nodig om een formulier in te vullen of een pagina te lezen. Ook externe afleidingen, zoals een telefoon die gaat of een kind dat aandacht vraagt, kunnen ervoor zorgen dat een taak langer duurt dan gepland. Een tijdslimiet die voor de gemiddelde bezoeker ruim is, kan voor anderen onhaalbaar zijn.
+Niet iedereen werkt even snel. Mensen die schermvergroting of een screenreader gebruiken, mensen met dyslexie, een cognitieve beperking of een motorische beperking hebben meer tijd nodig om een formulier in te vullen of een pagina te lezen. Ook externe afleidingen, zoals een telefoon die gaat of een kind dat aandacht vraagt, kunnen ervoor zorgen dat een taak langer duurt dan gepland. Een tijdslimiet die voor de gemiddelde bezoeker ruim is, kan voor anderen onhaalbaar zijn.
 
-In een paar situaties hoeft de tijd niet aangepast te kunnen worden: een live veiling waarbij iedereen tegelijk biedt, een examen waar de beschikbare tijd onderdeel is van de opdracht, of een tijdslimiet die langer is dan 20 uur.
+In een paar situaties hoeft de tijd niet aangepast te kunnen worden:
+
+- Een live veiling waarbij iedereen tegelijk biedt.
+- Een examen waar de beschikbare tijd onderdeel is van de opdracht.
+- Een tijdslimiet die langer is dan 20 uur.
 
 ## Veelgemaakte fouten
 
 ### Sessie verloopt zonder waarschuwing
 
-De sessie loopt na een vast aantal minuten af zonder dat de bezoeker iets merkt. Bij het versturen van een formulier of het opslaan van een wijziging blijkt de sessie verlopen en is de ingevulde informatie weg. Iemand die langer doet over invullen, bijvoorbeeld met een schermlezer of na een onderbreking, verliest werk dat een snellere bezoeker wel zou hebben opgeslagen.
+De sessie loopt na een vast aantal minuten af zonder dat de bezoeker iets merkt. Bij het versturen van een formulier of het opslaan van een wijziging blijkt de sessie verlopen en is de ingevulde informatie weg. Iemand die langer doet over invullen, bijvoorbeeld met een screenreader of na een onderbreking, verliest werk dat een snellere bezoeker wel zou hebben opgeslagen.
 
 **Hoe te testen:** vul een formulier in en laat de pagina lang genoeg openstaan om de time-out te overschrijden. Krijg je vóór de time-out een waarschuwing met de mogelijkheid om door te gaan?
 
@@ -66,14 +70,16 @@ De sessie loopt na een vast aantal minuten af zonder dat de bezoeker iets merkt.
 
 <Guideline appearance="do" title="Waarschuwing voordat de sessie verloopt, met optie om te verlengen">
   ```html
-  <div role="alertdialog" aria-labelledby="sessie-titel" aria-describedby="sessie-uitleg">
+  <dialog role="alertdialog" aria-labelledby="sessie-titel" aria-describedby="sessie-uitleg">
     <h2 id="sessie-titel">Je sessie verloopt over 2 minuten</h2>
     <p id="sessie-uitleg">Je wordt automatisch uitgelogd om je gegevens te beschermen. Wil je doorgaan met invullen?</p>
     <button type="button">Doorgaan</button>
     <button type="button">Uitloggen</button>
-  </div>
+  </dialog>
   ```
 </Guideline>
+
+Gebruik het `<dialog>`-element en open het met `showModal()`. De browser regelt dan de focus, schermt de achterliggende pagina af en sluit het venster met <kbd>Escape</kbd>. Voeg `role="alertdialog"` toe omdat het om een waarschuwing gaat: een screenreader leest de tekst dan meteen voor in plaats van pas als de bezoeker erheen navigeert.
 
 **Wie kan dit oplossen:** een developer voegt een waarschuwing toe die ruim vóór het verlopen van de sessie verschijnt, met een knop waarmee de bezoeker de sessie kan verlengen.
 
@@ -85,31 +91,31 @@ De bezoeker krijgt wel een melding dat de sessie bijna verloopt, maar er is geen
 
 <Guideline appearance="dont" title="Waarschuwing zonder verlengoptie">
   ```html
-  <div role="alertdialog" aria-labelledby="sessie-titel">
+  <dialog role="alertdialog" aria-labelledby="sessie-titel">
     <h2 id="sessie-titel">Je wordt zo uitgelogd</h2>
     <button type="button">Oké</button>
-  </div>
+  </dialog>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Waarschuwing met een duidelijke knop om door te gaan">
   ```html
-  <div role="alertdialog" aria-labelledby="sessie-titel" aria-describedby="sessie-uitleg">
+  <dialog role="alertdialog" aria-labelledby="sessie-titel" aria-describedby="sessie-uitleg">
     <h2 id="sessie-titel">Je sessie verloopt over 2 minuten</h2>
     <p id="sessie-uitleg">Kies "Doorgaan" om je sessie met 15 minuten te verlengen.</p>
     <button type="button">Doorgaan</button>
     <button type="button">Uitloggen</button>
-  </div>
+  </dialog>
   ```
 </Guideline>
 
 **Wie kan dit oplossen:** een developer voegt een knop toe waarmee de bezoeker de sessie verlengt met een eenvoudige handeling.
 
-### Tijdelijke melding verdwijnt voordat ze gelezen is
+### Tijdelijke melding verdwijnt voordat de bezoeker die heeft gelezen
 
-Een succes- of foutmelding verschijnt als toast onderaan of bovenaan de pagina en verdwijnt na drie of vier seconden vanzelf. Voor wie het bericht snel kan lezen werkt dat. Voor iemand die schermvergroting gebruikt en de melding eerst moet opzoeken, voor iemand die langer leest, of voor een schermlezergebruiker die op dat moment iets anders aan het beluisteren is, is de melding al weg voordat die in beeld komt.
+Een succes- of foutmelding verschijnt als toast onderaan of bovenaan de pagina en verdwijnt na drie of vier seconden vanzelf. Voor wie het bericht snel kan lezen werkt dat. Voor iemand die schermvergroting gebruikt en de melding eerst moet opzoeken, voor iemand die langzamer leest, of voor een screenreadergebruiker die op dat moment iets anders aan het beluisteren is, is de melding al weg voordat de bezoeker weet dat er een melding is.
 
-**Hoe te testen:** voer een actie uit die een toast-melding oproept. Blijft de melding staan totdat je die zelf sluit, of staat er minimaal een knop om de melding langer te tonen?
+**Hoe te testen:** voer een actie uit die een melding oproept. Blijft de melding staan totdat je zelf iets anders doet, of verdwijnt die na een paar seconden vanzelf?
 
 <Guideline appearance="dont" title="Toast die na enkele seconden vanzelf verdwijnt">
     ```javascript
@@ -122,24 +128,23 @@ Een succes- of foutmelding verschijnt als toast onderaan of bovenaan de pagina e
     ```
 </Guideline>
 
-<Guideline appearance="do" title="Toast met een sluitknop, geen auto-verdwijn">
+<Guideline appearance="do" title="Melding staat in de pagina en verdwijnt niet uit zichzelf">
   ```html
-  <div id="toast" role="status" hidden>
-    <p>Wijziging opgeslagen</p>
-    <button type="button" aria-label="Melding sluiten">
-      Sluiten
-    </button>
+  <div role="status">
+    <p>Wijziging opgeslagen.</p>
   </div>
   ```
 </Guideline>
 
-Een auto-verdwijnende toast is alleen een probleem als de bezoeker het resultaat van de actie niet ergens anders kan zien. Toont het formulier na opslaan een "Laatst opgeslagen"-tijd, of blijft de nieuwe status van een item zichtbaar in de lijst, dan kan de bezoeker ook zonder de toast controleren of de actie is gelukt. Ontbreekt zo'n bevestiging elders, dan moet de melding blijven staan tot de bezoeker die zelf sluit.
+Zet de melding in de pagina zelf, op de plek waar de bezoeker de actie uitvoerde. Gebruik `role="status"` voor een bevestiging en `role="alert"` voor een fout: een screenreader leest de melding dan voor zodra die verschijnt. Zonder timer verdwijnt de melding niet te vroeg en hoeft de bezoeker hem ook niet weg te klikken.
 
-**Wie kan dit oplossen:** een developer laat tijdelijke meldingen staan totdat de bezoeker ze zelf sluit, of biedt een instelling waarmee de bezoeker de tijd kan verlengen.
+Kies je toch voor een toast, laat die dan staan tot de bezoeker hem zelf sluit. Geef de sluitknop zichtbare tekst als "Sluiten"; een `aria-label` is dan niet nodig en zou de zichtbare tekst juist overschrijven. Een toast die vanzelf verdwijnt kan alleen als het resultaat van de actie ergens anders zichtbaar blijft, bijvoorbeeld een "Laatst opgeslagen"-tijd bij het formulier of de nieuwe status van een item in de lijst.
+
+**Wie kan dit oplossen:** een developer zet de melding als tekst in de pagina met `role="status"` of `role="alert"`, en haalt de timer weg die de melding verbergt.
 
 ### Validatiebericht van de browser verdwijnt te snel om te lezen
 
-Een formulier gebruikt HTML5-validatie via attributen als `required`, `type="email"` of `pattern`. Bij een fout toont de browser een korte tooltip, bijvoorbeeld "Vul dit veld in" of "Voer een geldig e-mailadres in". Zodra de bezoeker in het veld begint te typen of ergens anders klikt, verdwijnt die tooltip. Iemand die de melding niet meteen kan lezen, bijvoorbeeld met een schermlezer die eerst de veldnaam voorleest of met schermvergroting die de tooltip niet direct in beeld heeft, kan het bericht niet opnieuw oproepen zonder het formulier weer te versturen.
+Een formulier gebruikt HTML5-validatie via attributen als `required`, `type="email"` of `pattern`. Bij een fout toont de browser een korte tooltip, bijvoorbeeld "Vul dit veld in" of "Voer een geldig e-mailadres in". Zodra de bezoeker in het veld begint te typen of ergens anders klikt, verdwijnt die tooltip. Iemand die de melding niet meteen kan lezen, bijvoorbeeld met een screenreader die eerst de veldnaam voorleest of met schermvergroting die de tooltip niet direct in beeld heeft, kan het bericht niet opnieuw oproepen zonder het formulier weer te versturen.
 
 **Hoe te testen:** verstuur een formulier met een fout, bijvoorbeeld een leeg verplicht veld of een ongeldig e-mailadres. Verschijnt de foutmelding als tekst in de pagina, en blijft die staan totdat de bezoeker de fout heeft opgelost?
 
@@ -172,7 +177,7 @@ Behoud `type="email"`, `required` en andere HTML5-attributen: die zorgen voor he
 
 ### Eenmalige code verloopt te snel zonder eenvoudige verlengmogelijkheid
 
-Een code wordt per SMS of authenticatie-app gestuurd en is dertig seconden geldig. Iemand die langzaam beweegt, dyslexie heeft, of een schermlezer gebruikt om de code voor te lezen, heeft die tijd niet. Een knop om opnieuw een code aan te vragen ontbreekt of is verstopt achter de volgende foutmelding.
+Een code wordt per SMS of authenticatie-app gestuurd en is dertig seconden geldig. Iemand die langzaam beweegt, dyslexie heeft, of een screenreader gebruikt om de code voor te lezen, heeft die tijd niet. Een knop om opnieuw een code aan te vragen ontbreekt of is verstopt achter de volgende foutmelding.
 
 **Hoe te testen:** vraag een eenmalige code aan en wacht net iets langer dan de geldigheidsduur. Kun je daarna gemakkelijk een nieuwe code aanvragen, of moet je het hele inlogproces opnieuw doorlopen?
 
@@ -199,11 +204,11 @@ Houd rekening met de balans tussen toegankelijkheid en beveiliging. Een geldighe
 
 **Wie kan dit oplossen:** een developer verlengt de geldigheidsduur van de code in overleg met security, of zorgt dat de bezoeker met één klik een nieuwe code kan aanvragen zonder het inlogproces opnieuw te starten.
 
-### Een stappenplan gaat automatisch door naar de volgende stap
+### De pagina gaat na een aantal seconden vanzelf verder
 
-Een wizard, formulier of presentatie schakelt na een vast aantal seconden door naar de volgende stap. Het bevestigingsscherm "Je afspraak is gepland" verdwijnt na vijf seconden en de bezoeker komt terug op de homepage. Wie meer tijd nodig heeft om te lezen of om de bevestiging op te schrijven, mist die informatie.
+Dit gebeurt op twee plekken. Binnen een meerstappenformulier springt de pagina na een vast aantal seconden naar de volgende stap, terwijl de bezoeker nog met de huidige stap bezig is. En aan het einde van een proces verdwijnt het bevestigingsscherm "Je afspraak is gepland" na vijf seconden vanzelf, waarna de bezoeker op de homepage belandt. Wie meer tijd nodig heeft om te lezen, of het afspraaknummer eerst wil opschrijven, mist die informatie.
 
-**Hoe te testen:** voltooi een stap in een wizard of formulier en wacht zonder te klikken. Gaat de pagina vanzelf door, of bepaalt de bezoeker zelf wanneer de volgende stap begint?
+**Hoe te testen:** rond een stap of een heel proces af en wacht zonder te klikken. Gaat de pagina vanzelf verder, of bepaalt de bezoeker zelf wanneer de volgende stap begint?
 
 <Guideline appearance="dont" title="Automatisch doorklikken naar de volgende stap">
     ```javascript
@@ -225,45 +230,9 @@ Een wizard, formulier of presentatie schakelt na een vast aantal seconden door n
 
 **Wie kan dit oplossen:** een developer vervangt de automatische doorverwijzing door een knop of link die de bezoeker zelf activeert.
 
-### Carrousel schakelt door voordat de bezoeker de slide heeft gelezen
-
-Een carrousel toont aanbiedingen, nieuws of afbeeldingen en wisselt na een paar seconden naar de volgende slide. Voor iemand die snel leest werkt dat. Voor een schermlezergebruiker die de tekst laat voorlezen, voor een bezoeker met dyslexie, of voor iemand die schermvergroting gebruikt en de slide eerst in beeld moet krijgen, verdwijnt de content voordat die is verwerkt. Een pauzeknop of een knop om zelf te navigeren ontbreekt.
-
-**Hoe te testen:** open een pagina met een carrousel en probeer een slide te lezen. Blijft de content staan tot je zelf verder klikt, of gaat de carrousel vanzelf door? Is er een knop om te pauzeren of terug te gaan?
-
-<Guideline appearance="dont" title="Carrousel wisselt automatisch, geen pauze- of navigatieknoppen">
-    ```html
-    <div class="carrousel">
-      <div class="slide">
-        <h2>Wintersale: 40% korting</h2>
-        <p>Nog tot en met zondag.</p>
-      </div>
-      <!-- JavaScript wisselt elke 5 seconden naar de volgende slide. -->
-    </div>
-    ```
-</Guideline>
-
-<Guideline appearance="do" title="Carrousel met pauze- en navigatieknoppen">
-  ```html
-  <div class="carrousel" role="region" aria-label="Aanbiedingen">
-    <div class="slide">
-      <h2>Wintersale: 40% korting</h2>
-      <p>Nog tot en met zondag.</p>
-    </div>
-    <button type="button">Vorige</button>
-    <button type="button">Pauzeer</button>
-    <button type="button">Volgende</button>
-  </div>
-  ```
-</Guideline>
-
-Een automatisch doorlopende carrousel raakt ook succescriterium 2.2.2 Pauzeren, stoppen, verbergen. Een pauzeknop en navigatieknoppen lossen beide criteria op.
-
-**Wie kan dit oplossen:** een developer voegt navigatie- en pauzeknoppen toe, of vervangt de carrousel door een lay-out waarin alle content direct zichtbaar is.
-
 ### Pagina ververst zichzelf via een meta-refresh
 
-Een pagina bevat een `<meta http-equiv="refresh">` waardoor de browser na een aantal seconden vanzelf herlaadt of doorlinkt. Een schermlezergebruiker die halverwege de content is, wordt onderbroken door de refresh en begint opnieuw bovenaan. Een bezoeker die schermvergroting of een cognitieve ondersteuningstool gebruikt, verliest de plek waar die was.
+Een pagina bevat een `<meta http-equiv="refresh">` waardoor de browser na een aantal seconden vanzelf herlaadt of doorlinkt. Een screenreadergebruiker die halverwege de content is, wordt onderbroken door de refresh en begint opnieuw bovenaan. Een bezoeker die schermvergroting of een cognitieve ondersteuningstool gebruikt, verliest de plek waar die was.
 
 **Hoe te testen:** open de broncode van de pagina. Staat er een `<meta http-equiv="refresh">` in de `<head>`? Of ververst de pagina uit zichzelf terwijl je hem openhoudt?
 
@@ -292,9 +261,9 @@ Een pagina bevat een `<meta http-equiv="refresh">` waardoor de browser na een aa
 
 1. Vul een formulier of dashboard in en laat de pagina open staan. Krijg je een waarschuwing voordat je wordt uitgelogd?
 2. Wacht op de waarschuwing dat je sessie bijna afloopt. Kun je met één klik doorgaan, zonder opnieuw te hoeven inloggen?
-3. Voer een actie uit die een tijdelijke melding oproept. Blijft de melding staan totdat je die zelf sluit?
+3. Voer een actie uit die een melding oproept. Blijft de melding staan totdat je zelf iets anders doet, of verdwijnt die na een paar seconden vanzelf?
 4. Vraag een eenmalige code aan via SMS of authenticatie-app. Heb je genoeg tijd om de code in te vullen? Kun je gemakkelijk een nieuwe code aanvragen als die is verlopen?
-5. Voltooi een stap in een wizard en wacht zonder te klikken. Bepaal jij wanneer de volgende stap begint?
+5. Voltooi een stap in een meerstappenformulier en wacht zonder te klikken. Bepaal jij wanneer de volgende stap begint?
 
 ### Voor developers
 
