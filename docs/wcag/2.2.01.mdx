@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.2.1 Timing aanpasbaar
 pagination_label: WCAG-succescriterium 2.2.1 Timing aanpasbaar
-description: Tijdslimieten zijn aan te passen.
+description: Een bezoeker kan een tijdslimiet uitzetten, verlengen of aanpassen voordat de tijd om is, zodat iedereen genoeg tijd heeft om een taak af te ronden.
 slug: 2.2.1
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,22 @@ keywords:
   - operable
   - enough time
   - timing adjustable
+  - timing
+  - tijdslimiet
+  - sessie
+  - time-out
+  - sessietime-out
+  - automatisch uitloggen
+  - WCAG 2.2.1
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.2.1-summary.md";
 
@@ -32,44 +39,248 @@ import Summary from "./summaries/_2.2.1-summary.md";
   {"WCAG-succescriterium 2.2.1 Timing aanpasbaar"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Bezoekers hebben de tijd om taken af te ronden.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Laat bezoekers tijdslimieten uitzetten of aanpassen.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Mensen met beperkingen kunnen meer tijd nodig hebben om taken af te ronden.</dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-Soms zijn er tijdslimieten op een pagina. Denk bijvoorbeeld aan websites die je na een bepaalde tijd uitloggen, mededelingen die tijdelijke zichtbaar zijn of een stroom van berichten.
+Niet iedereen werkt even snel. Mensen die schermvergroting of een screenreader gebruiken, mensen met dyslexie, een cognitieve beperking of een motorische beperking hebben meer tijd nodig om een formulier in te vullen of een pagina te lezen. Ook externe afleidingen, zoals een telefoon die gaat of een kind dat aandacht vraagt, kunnen ervoor zorgen dat een taak langer duurt dan gepland. Een tijdslimiet die voor de gemiddelde bezoeker ruim is, kan voor anderen onhaalbaar zijn.
 
-Als er een tijdslimiet is dan moet de bezoeker het volgende kunnen:
+In een paar situaties hoeft de tijd niet aangepast te kunnen worden:
 
-- de tijdslimiet uitzetten voordat de tijd verstrijkt;
-- of de tijdslimiet minstens 10 keer langer kunnen maken;
-- of de tijdslimiet minstens 10 keer kunnen uitstellen.
+- Een live veiling waarbij iedereen tegelijk biedt.
+- Een examen waar de beschikbare tijd onderdeel is van de opdracht.
+- Een tijdslimiet die langer is dan 20 uur.
 
-Waarschuw de gebruiker tenminste 20 seconden voor het verstrijken van de tijdslimiet en zorg ervoor dat verlengen gemakkelijk is.
+## Veelgemaakte fouten
+
+### Sessie verloopt zonder waarschuwing
+
+De sessie loopt na een vast aantal minuten af zonder dat de bezoeker iets merkt. Bij het versturen van een formulier of het opslaan van een wijziging blijkt de sessie verlopen en is de ingevulde informatie weg. Iemand die langer doet over invullen, bijvoorbeeld met een screenreader of na een onderbreking, verliest werk dat een snellere bezoeker wel zou hebben opgeslagen.
+
+**Hoe te testen:** vul een formulier in en laat de pagina lang genoeg openstaan om de time-out te overschrijden. Krijg je vóór de time-out een waarschuwing met de mogelijkheid om door te gaan?
+
+<Guideline appearance="dont" title="Bezoeker wordt zonder waarschuwing uitgelogd">
+    ```html
+    <!-- Na 15 minuten inactiviteit logt de server de bezoeker uit. -->
+    <!-- Pas bij de volgende handeling verschijnt: -->
+    <div role="alert">
+      Je sessie is verlopen. Log opnieuw in.
+    </div>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Waarschuwing voordat de sessie verloopt, met optie om te verlengen">
+  ```html
+  <dialog role="alertdialog" aria-labelledby="sessie-titel" aria-describedby="sessie-uitleg">
+    <h2 id="sessie-titel">Je sessie verloopt over 2 minuten</h2>
+    <p id="sessie-uitleg">Je wordt automatisch uitgelogd om je gegevens te beschermen. Wil je doorgaan met invullen?</p>
+    <button type="button">Doorgaan</button>
+    <button type="button">Uitloggen</button>
+  </dialog>
+  ```
+</Guideline>
+
+Gebruik het `<dialog>`-element en open het met `showModal()`. De browser regelt dan de focus, schermt de achterliggende pagina af en sluit het venster met <kbd>Escape</kbd>. Voeg `role="alertdialog"` toe omdat het om een waarschuwing gaat: een screenreader leest de tekst dan meteen voor in plaats van pas als de bezoeker erheen navigeert.
+
+**Wie kan dit oplossen:** een developer voegt een waarschuwing toe die ruim vóór het verlopen van de sessie verschijnt, met een knop waarmee de bezoeker de sessie kan verlengen.
+
+### Waarschuwing zonder mogelijkheid om de sessie te verlengen
+
+De bezoeker krijgt wel een melding dat de sessie bijna verloopt, maar er is geen knop om door te gaan. De enige opties zijn "Oké", waarna de sessie alsnog vervalt, of "Opnieuw inloggen". Het effect is hetzelfde als bij geen waarschuwing: de bezoeker raakt het werk kwijt.
+
+**Hoe te testen:** wacht op de waarschuwing dat de sessie afloopt. Staat er een knop waarmee je verder kunt zonder opnieuw in te loggen?
+
+<Guideline appearance="dont" title="Waarschuwing zonder verlengoptie">
+  ```html
+  <dialog role="alertdialog" aria-labelledby="sessie-titel">
+    <h2 id="sessie-titel">Je wordt zo uitgelogd</h2>
+    <button type="button">Oké</button>
+  </dialog>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Waarschuwing met een duidelijke knop om door te gaan">
+  ```html
+  <dialog role="alertdialog" aria-labelledby="sessie-titel" aria-describedby="sessie-uitleg">
+    <h2 id="sessie-titel">Je sessie verloopt over 2 minuten</h2>
+    <p id="sessie-uitleg">Kies "Doorgaan" om je sessie met 15 minuten te verlengen.</p>
+    <button type="button">Doorgaan</button>
+    <button type="button">Uitloggen</button>
+  </dialog>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een knop toe waarmee de bezoeker de sessie verlengt met een eenvoudige handeling.
+
+### Tijdelijke melding verdwijnt voordat de bezoeker die heeft gelezen
+
+Een succes- of foutmelding verschijnt als toast onderaan of bovenaan de pagina en verdwijnt na drie of vier seconden vanzelf. Voor wie het bericht snel kan lezen werkt dat. Voor iemand die schermvergroting gebruikt en de melding eerst moet opzoeken, voor iemand die langzamer leest, of voor een screenreadergebruiker die op dat moment iets anders aan het beluisteren is, is de melding al weg voordat de bezoeker weet dat er een melding is.
+
+**Hoe te testen:** voer een actie uit die een melding oproept. Blijft de melding staan totdat je zelf iets anders doet, of verdwijnt die na een paar seconden vanzelf?
+
+<Guideline appearance="dont" title="Toast die na enkele seconden vanzelf verdwijnt">
+    ```javascript
+    function toonMelding(tekst) {
+      const toast = document.querySelector("#toast");
+      toast.textContent = tekst;
+      toast.hidden = false;
+      setTimeout(() => { toast.hidden = true; }, 3000);
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Melding staat in de pagina en verdwijnt niet uit zichzelf">
+  ```html
+  <div role="status">
+    <p>Wijziging opgeslagen.</p>
+  </div>
+  ```
+</Guideline>
+
+Zet de melding in de pagina zelf, op de plek waar de bezoeker de actie uitvoerde. Gebruik `role="status"` voor een bevestiging en `role="alert"` voor een fout: een screenreader leest de melding dan voor zodra die verschijnt. Zonder timer verdwijnt de melding niet te vroeg en hoeft de bezoeker hem ook niet weg te klikken.
+
+Kies je toch voor een toast, laat die dan staan tot de bezoeker hem zelf sluit. Geef de sluitknop zichtbare tekst als "Sluiten"; een `aria-label` is dan niet nodig en zou de zichtbare tekst juist overschrijven. Een toast die vanzelf verdwijnt kan alleen als het resultaat van de actie ergens anders zichtbaar blijft, bijvoorbeeld een "Laatst opgeslagen"-tijd bij het formulier of de nieuwe status van een item in de lijst.
+
+**Wie kan dit oplossen:** een developer zet de melding als tekst in de pagina met `role="status"` of `role="alert"`, en haalt de timer weg die de melding verbergt.
+
+### Validatiebericht van de browser verdwijnt te snel om te lezen
+
+Een formulier gebruikt HTML5-validatie via attributen als `required`, `type="email"` of `pattern`. Bij een fout toont de browser een korte tooltip, bijvoorbeeld "Vul dit veld in" of "Voer een geldig e-mailadres in". Zodra de bezoeker in het veld begint te typen of ergens anders klikt, verdwijnt die tooltip. Iemand die de melding niet meteen kan lezen, bijvoorbeeld met een screenreader die eerst de veldnaam voorleest of met schermvergroting die de tooltip niet direct in beeld heeft, kan het bericht niet opnieuw oproepen zonder het formulier weer te versturen.
+
+**Hoe te testen:** verstuur een formulier met een fout, bijvoorbeeld een leeg verplicht veld of een ongeldig e-mailadres. Verschijnt de foutmelding als tekst in de pagina, en blijft die staan totdat de bezoeker de fout heeft opgelost?
+
+<Guideline appearance="dont" title="Formulier vertrouwt op de browser-tooltip die vanzelf verdwijnt">
+  ```html
+  <form>
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" required />
+    <button type="submit">Versturen</button>
+  </form>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Eigen foutmelding die in de pagina blijft staan tot de fout is opgelost">
+  ```html
+  <form novalidate>
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" required aria-describedby="email-fout" aria-invalid="true" />
+    <p id="email-fout" role="alert">
+      Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.
+    </p>
+    <button type="submit">Versturen</button>
+  </form>
+  ```
+</Guideline>
+
+Behoud `type="email"`, `required` en andere HTML5-attributen: die zorgen voor het juiste mobiele toetsenbord en helpen browsers met invulhulp. Zet met `novalidate` op het formulier alleen de standaardtooltip van de browser uit, en toon zelf een foutmelding die zichtbaar blijft.
+
+**Wie kan dit oplossen:** een developer zet de standaardvalidatie van de browser uit met `novalidate` en toont een eigen foutmelding die aan het veld is gekoppeld via `aria-describedby` en zichtbaar blijft tot de fout is opgelost.
+
+### Eenmalige code verloopt te snel zonder eenvoudige verlengmogelijkheid
+
+Een code wordt per SMS of authenticatie-app gestuurd en is dertig seconden geldig. Iemand die langzaam beweegt, dyslexie heeft, of een screenreader gebruikt om de code voor te lezen, heeft die tijd niet. Een knop om opnieuw een code aan te vragen ontbreekt of is verstopt achter de volgende foutmelding.
+
+**Hoe te testen:** vraag een eenmalige code aan en wacht net iets langer dan de geldigheidsduur. Kun je daarna gemakkelijk een nieuwe code aanvragen, of moet je het hele inlogproces opnieuw doorlopen?
+
+<Guideline appearance="dont" title="Code verloopt snel en de bezoeker moet helemaal opnieuw inloggen">
+  ```html
+  <p>Vul de code in die je per SMS hebt ontvangen.</p>
+  <label for="code">Code</label>
+  <input type="text" id="code" />
+  <p>De code is 30 seconden geldig.</p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Code blijft langer geldig en er is een directe knop om een nieuwe aan te vragen">
+  ```html
+  <p>Vul de code in die je per SMS hebt ontvangen.</p>
+  <label for="code">Code</label>
+  <input type="text" id="code" />
+  <p>De code is 5 minuten geldig.</p>
+  <button type="button">Stuur een nieuwe code</button>
+  ```
+</Guideline>
+
+Houd rekening met de balans tussen toegankelijkheid en beveiliging. Een geldigheidsduur van enkele minuten is voor de meeste tweefactor-systemen acceptabel. Maak de knop om een nieuwe code aan te vragen altijd direct zichtbaar, zodat een bezoeker die net te laat is niet vastloopt.
+
+**Wie kan dit oplossen:** een developer verlengt de geldigheidsduur van de code in overleg met security, of zorgt dat de bezoeker met één klik een nieuwe code kan aanvragen zonder het inlogproces opnieuw te starten.
+
+### De pagina gaat na een aantal seconden vanzelf verder
+
+Dit gebeurt op twee plekken. Binnen een meerstappenformulier springt de pagina na een vast aantal seconden naar de volgende stap, terwijl de bezoeker nog met de huidige stap bezig is. En aan het einde van een proces verdwijnt het bevestigingsscherm "Je afspraak is gepland" na vijf seconden vanzelf, waarna de bezoeker op de homepage belandt. Wie meer tijd nodig heeft om te lezen, of het afspraaknummer eerst wil opschrijven, mist die informatie.
+
+**Hoe te testen:** rond een stap of een heel proces af en wacht zonder te klikken. Gaat de pagina vanzelf verder, of bepaalt de bezoeker zelf wanneer de volgende stap begint?
+
+<Guideline appearance="dont" title="Automatisch doorklikken naar de volgende stap">
+    ```javascript
+    setTimeout(() => {
+      window.location.href = "/volgende-stap";
+    }, 5000);
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Bezoeker bepaalt zelf wanneer de volgende stap begint">
+  ```html
+  <h1>Je afspraak is gepland</h1>
+  <p>Je ontvangt een bevestiging per e-mail.</p>
+  <a href="/volgende-stap" class="knop">
+    Naar volgende stap
+  </a>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de automatische doorverwijzing door een knop of link die de bezoeker zelf activeert.
+
+### Pagina ververst zichzelf via een meta-refresh
+
+Een pagina bevat een `<meta http-equiv="refresh">` waardoor de browser na een aantal seconden vanzelf herlaadt of doorlinkt. Een screenreadergebruiker die halverwege de content is, wordt onderbroken door de refresh en begint opnieuw bovenaan. Een bezoeker die schermvergroting of een cognitieve ondersteuningstool gebruikt, verliest de plek waar die was.
+
+**Hoe te testen:** open de broncode van de pagina. Staat er een `<meta http-equiv="refresh">` in de `<head>`? Of ververst de pagina uit zichzelf terwijl je hem openhoudt?
+
+<Guideline appearance="dont" title="Pagina ververst automatisch elke 30 seconden">
+    ```html
+    <head>
+      <meta http-equiv="refresh" content="30">
+    </head>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Handmatige verversknop met live-region voor updates">
+  ```html
+  <div aria-live="polite" id="status">
+    Wachten op verwerking. Deze status wordt automatisch bijgewerkt.
+  </div>
+  <button type="button">Ververs status</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer verwijdert de `<meta http-equiv="refresh">` en werkt updates bij via een `aria-live`-region of een knop die de bezoeker zelf activeert.
 
 ## Hoe te testen
 
-Het testen van dit succescriterium kan erg veel tijd kosten. Ga in gesprek met de makers van de pagina en ga naar of er tijdslimieten zijn, en hoe ze werken.
+### Voor iedereen
 
-## Tips
+1. Vul een formulier of dashboard in en laat de pagina open staan. Krijg je een waarschuwing voordat je wordt uitgelogd?
+2. Wacht op de waarschuwing dat je sessie bijna afloopt. Kun je met één klik doorgaan, zonder opnieuw te hoeven inloggen?
+3. Voer een actie uit die een melding oproept. Blijft de melding staan totdat je zelf iets anders doet, of verdwijnt die na een paar seconden vanzelf?
+4. Vraag een eenmalige code aan via SMS of authenticatie-app. Heb je genoeg tijd om de code in te vullen? Kun je gemakkelijk een nieuwe code aanvragen als die is verlopen?
+5. Voltooi een stap in een meerstappenformulier en wacht zonder te klikken. Bepaal jij wanneer de volgende stap begint?
 
-- Gebruik geen verdwijnende berichten zoals een zogenaamde toast, snackbar of alert. Deze berichten zijn enorm makkelijk te missen. Als de inhoud niet belangrijk is, kan deze alsnog stress veroorzaken bij die gebruiker die dit niet weet. Als er deelbare informatie is, plaatst deze dan op een relevante plek en laat deze niet verdwijnen.
+### Voor developers
+
+1. Inventariseer alle tijdslimieten in de applicatie: sessietime-outs, geldigheidsduur van eenmalige codes, vervaltijden van reserveringen, automatische doorverwijzingen, auto-verdwijnende meldingen.
+2. Controleer per limiet of de bezoeker die kan uitzetten, aanpassen, of met een eenvoudige handeling kan verlengen.
+3. Toon de waarschuwing ruim voor het verlopen van de tijd, bijvoorbeeld 1 of 2 minuten van tevoren, en bied minimaal 20 seconden om te reageren.
+4. Zorg dat de bezoeker de sessie meerdere keren achter elkaar kan verlengen, niet slechts één keer.
+5. Zorg dat de knop om de tijd te verlengen toetsenbordbereikbaar is en de focus krijgt zodra het dialoogvenster opent.
+6. Vermeld in de waarschuwing hoe lang de bezoeker nog heeft en wat er gebeurt als de tijd verstrijkt.
+7. Vermijd `setTimeout` voor automatische doorverwijzingen of voor het verbergen van meldingen, en gebruik geen `<meta http-equiv="refresh">`. Laat de bezoeker zelf bepalen wanneer iets verdwijnt, herlaadt of doorklikt.
+
+## Gerelateerde succescriteria
+
+- [2.2.2 Pauzeren, stoppen, verbergen](/wcag/2.2.2/): gaat over bewegende, knipperende of automatisch ververste content. Timing aanpasbaar gaat over tijdslimieten waarbinnen een taak moet worden voltooid; Pauzeren, stoppen, verbergen over content die uit zichzelf beweegt.
+- [2.2.4 Onderbrekingen](/wcag/2.2.4/): de bezoeker kan niet-essentiële meldingen, zoals een chatpop-up of een banner, uitstellen of uitzetten.
+- [2.2.6 Time-outs](/wcag/2.2.6/): bij een time-out wordt de bezoeker vooraf gewaarschuwd dat data verloren kan gaan, tenzij de data minstens 20 uur bewaard blijft. Dit AAA-criterium bouwt voort op Timing aanpasbaar.
 
 ## Gebruikersonderzoek
 
@@ -81,12 +292,6 @@ Het testen van dit succescriterium kan erg veel tijd kosten. Ga in gesprek met d
 - Nederlandse vertaling van het WCAG-succescriterium: [2.2.1 Timing aanpasbaar](https://www.w3.org/Translations/WCAG22-nl/#timing-adjustable).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.2.1 Timing Adjustable</span>](https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.2.1 Timing Adjustable</span>](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
