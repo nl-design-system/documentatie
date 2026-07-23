@@ -1,5 +1,11 @@
 # @nl-design-system-unstable/documentation
 
+## 1.12.0
+
+### Minor Changes
+
+- 7af1437: Toevoeging acceptatiecriteria voor toegankelijkheid voor Alert.
+
 ## 1.11.0
 
 ### Minor Changes
