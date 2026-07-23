@@ -1,21 +1,22 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import type { TeamMember } from './TeamMember';
+import { Link } from '../Link';
 
 const Robbert: TeamMember = {
   name: 'Robbert Broersma',
-  role: 'Design System lead & Developer Relations',
+  role: 'Design System lead',
   slack: { mention: '@Robbert', id: 'U019X17U5HQ' },
   Description: () => (
     <>
       <Paragraph>
-        Robbert is design system lead van NL Design System. Met zijn ervaring bij andere design systems kent hij zowel
-        de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele,
-        toegankelijke componenten.
+        Robbert helpt organisaties bij het complexe vraagstukken waarbij NL Design System gebruikt wordt. Hij verbindt
+        verschillende organisaties en initiatieven aan elkaar en stimuleert samenwerking en kennisdeling binnen de
+        community.
       </Paragraph>
       <Paragraph>
-        In de rol van developer relations werkt hij graag online samen met developers van verschillende organisaties om
-        dit community gedragen design system neer te zetten. Zijn passie voor keukengerei is daarbij niet te missen! RVS
-        met een haakje? Dan kun je het waarschijnlijk op zijn achtergrond vinden.
+        Je kunt via <Link href="/slack/">#nl-design-system-designers en #nl-design-system-developers</Link> en tijdens{' '}
+        <Link href="/events/developer-open-hour/">Developer Open Hour</Link> bij hem terecht voor vragen over de
+        architectuur, de werkwijze en het Estafettemodel van NL Design System.
       </Paragraph>
     </>
   ),

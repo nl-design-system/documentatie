@@ -8,7 +8,7 @@ const isHeading = (object: { type?: string; depth?: number }): object is Heading
 export function removeH1FromMarkdown({ filter }: { filter?: string } = {}) {
   return function plugin() {
     return function (tree: Root, file: VFile) {
-      if (file?.dirname?.includes(filter) === false) return;
+      if (filter && file?.dirname?.includes(filter) === false) return;
 
       tree.children = tree.children.filter((child) => isHeading(child) === false);
     };

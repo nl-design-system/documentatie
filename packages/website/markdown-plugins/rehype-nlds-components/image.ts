@@ -7,4 +7,6 @@ export function image(element: Element) {
 
   addClassName('utrecht-img', element);
   addClassName('utrecht-img--scale-down', element);
+
+  element.properties['loading'] = 'lazy';
 }

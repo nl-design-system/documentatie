@@ -77,6 +77,8 @@ const schema = z.object({
   title: z.string(),
   title_sm: z.string().max(65).optional(),
   description: z.string().optional(),
+  hide_table_of_contents: z.boolean().optional(),
+  lead: z.string().optional(),
   lang: z.enum(['nl', 'en']).optional(),
   slug: z.string().optional(),
   unlisted: z.boolean().optional(),
@@ -100,7 +102,7 @@ const docs = defineCollection({
       'richtlijnen/**/*.{md,mdx}',
       'voorbeelden/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
-      'CHANGELOG.md',
+      'componenten/index.mdx',
       '!**/_*/**',
       '!**/_*.{md,mdx}',
     ],
@@ -112,10 +114,13 @@ const docs = defineCollection({
 const components = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['componenten/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
+    pattern: ['componenten/**/*.{md,mdx}', '!componenten/index.mdx', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
+  schema: schema.extend({
+    page_layout: z.enum(['overview', 'detail']).optional(),
+    issue_number: z.number(),
+  }),
 });
 
 const wcag = defineCollection({
@@ -124,7 +129,7 @@ const wcag = defineCollection({
     pattern: ['wcag/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema,
+  schema: schema.extend({ conformance_level: z.string().optional() }),
 });
 
 const overviewPages = defineCollection({
@@ -136,7 +141,16 @@ const overviewPages = defineCollection({
   schema,
 });
 
-export const collections = { docs, wcag, components, overviewPages };
+const changelog = defineCollection({
+  loader: customGlob({
+    base: './../../docs',
+    pattern: ['CHANGELOG.md'],
+    generateId,
+  }),
+  schema: z.object({ title: z.string().default('Changelog') }),
+});
+
+export const collections = { docs, wcag, components, overviewPages, changelog };
 
 export const getAllCollections = async () => {
   const collectionPromises = await Promise.all([
@@ -144,6 +158,7 @@ export const getAllCollections = async () => {
     getCollection('docs'),
     getCollection('wcag'),
     getCollection('overviewPages'),
+    getCollection('changelog'),
   ]);
 
   return collectionPromises.flat();

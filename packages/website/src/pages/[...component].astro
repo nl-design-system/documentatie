@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import componentProgress from '@nl-design-system/component-progress/dist/index.json';
 import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
 import OverviewLayout from '@layouts/overview.astro';
@@ -7,8 +8,11 @@ import { MDXComponents } from '@utils/mdx-components.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
+import { Flex } from '@components/flex/flex';
+import { EstafetteBadge } from '../../../../src/components/EstafetteBadge';
 import '../../../../src/components/ComponentPage.css';
 import '../../../../src/components/EstafetteBadge.css';
+import './[...component].css';
 
 export async function getStaticPaths() {
   const components = await getCollection('components');
@@ -22,10 +26,20 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 const { Content } = await render(page);
 
+const selectedStatusOptions = {
+  HELP_WANTED: 'Help Wanted',
+  COMMUNITY: 'Community',
+  CANDIDATE: 'Candidate',
+  HALL_OF_FAME: 'Hall of Fame',
+};
+const component = componentProgress.find((item) => item.number === page.data.issue_number);
+const status = selectedStatusOptions[component.relayStep];
+
 const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
 
-const Layout = page.data?.page_layout === 'overview' ? OverviewLayout : DetailLayout;
+const Layout =
+  page.data?.page_layout === 'overview' || page.data?.hide_table_of_contents ? OverviewLayout : DetailLayout;
 const components = await MDXComponents();
 ---
 
@@ -41,13 +55,18 @@ const components = await MDXComponents();
 >
   <Grid slot="header">
     <Grid.Cell span="all">
-      <Heading level={1}>{page.data.title}</Heading>
-      <Paragraph purpose="lead">{page.data.description}</Paragraph>
+      <Flex align="center">
+        <Heading level={1}>{page.data.title}</Heading>
+        <div>
+          <EstafetteBadge state={status} />
+        </div>
+      </Flex>
+      {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
     </Grid.Cell>
   </Grid>
 
   <Grid>
-    <Grid.Cell span="all">
+    <Grid.Cell className="ma-flow" span="all">
       <Content components={components} />
     </Grid.Cell>
   </Grid>

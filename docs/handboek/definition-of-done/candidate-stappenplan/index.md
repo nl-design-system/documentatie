@@ -1,5 +1,5 @@
 ---
-title: Overzicht
+title: Overzicht van de Candidate Definition of Done voor componenten
 title_sm: Candidate
 hide_title: true
 hide_table_of_contents: false
