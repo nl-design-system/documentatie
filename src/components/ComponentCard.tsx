@@ -1,5 +1,7 @@
 import { Link } from '@site/src/components/Link';
-import { BadgeList, DataBadge, Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { BadgeList, DataBadge } from '@utrecht/component-library-react/dist/css-module';
+import { Heading } from '@nl-design-system-candidate/heading-react/css';
+import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 import { Card, CardContent, CardIllustration } from './CardGroup';
@@ -40,7 +42,7 @@ export const ComponentCard = ({
       </CardIllustration>
       <CardContent>
         <div>
-          <Heading level={headingLevel} className="ma-component-card__title">
+          <Heading level={headingLevel as 1 | 2 | 3 | 4 | 5 | 6} className="ma-component-card__title">
             {name}
           </Heading>
           {relayStep && (

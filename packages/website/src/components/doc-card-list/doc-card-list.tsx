@@ -31,9 +31,11 @@ export const DocCardList = (props: DocCardListProps) => {
           description = <span lang={page.descriptionLang}>{description}</span>;
         }
 
+        const metadata = (page as { metadata?: string })?.metadata;
+
         return (
           <UnorderedList.Item key={href}>
-            <Card heading={heading} description={description} href={href} />
+            <Card heading={heading} description={description} href={href} metadata={metadata} />
           </UnorderedList.Item>
         );
       })}

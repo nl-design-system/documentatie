@@ -9,7 +9,7 @@ const { ...props } = Astro.props;
 
 <Document {...props}>
   <PageBody className="ma-layout-center-column">
-    <main id="main">
+    <main id="main" class="ma-flow" lang={props.lang === 'en' ? 'en' : null}>
       <slot />
     </main>
   </PageBody>

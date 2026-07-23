@@ -10,27 +10,27 @@
 }
 
 .ma-component-illustration--help-wanted {
-  --ma-component-illustration-background-color: var(--nlds-status-help-wanted-subtle-background-color);
-  --ma-component-illustration-grid-color: var(--nlds-status-help-wanted-border-color);
-  --ma-component-illustration-color: var(--nlds-status-help-wanted-color);
+  --ma-component-illustration-background-color: var(--ma-color-help-wanted-bg-default);
+  --ma-component-illustration-grid-color: var(--ma-color-help-wanted-border-default);
+  --ma-component-illustration-color: var(--ma-color-help-wanted-color-default);
 }
 
 .ma-component-illustration--community {
-  --ma-component-illustration-background-color: var(--nlds-status-community-subtle-background-color);
-  --ma-component-illustration-grid-color: var(--nlds-status-community-border-color);
-  --ma-component-illustration-color: var(--nlds-status-community-color);
+  --ma-component-illustration-background-color: var(--ma-color-community-bg-default);
+  --ma-component-illustration-grid-color: var(--ma-color-help-community-border-color-default);
+  --ma-component-illustration-color: var(--ma-color-community-color-default);
 }
 
 .ma-component-illustration--candidate {
-  --ma-component-illustration-background-color: var(--nlds-status-candidate-subtle-background-color);
-  --ma-component-illustration-grid-color: var(--nlds-status-candidate-border-color);
-  --ma-component-illustration-color: var(--nlds-status-candidate-color);
+  --ma-component-illustration-background-color: var(--ma-color-candidate-bg-default);
+  --ma-component-illustration-grid-color: var(--ma-color-candidate-border-color-default);
+  --ma-component-illustration-color: var(--ma-color-candidate-border-default);
 }
 
 .ma-component-illustration--hall-of-fame {
-  --ma-component-illustration-background-color: var(--nlds-status-hall-of-fame-subtle-background-color);
-  --ma-component-illustration-grid-color: var(--nlds-status-hall-of-fame-border-color);
-  --ma-component-illustration-color: var(--nlds-status-hall-of-fame-color);
+  --ma-component-illustration-background-color: var(--ma-color-hall-of-fame-bg-default);
+  --ma-component-illustration-grid-color: var(--ma-color-hall-of-fame-border-color-default);
+  --ma-component-illustration-color: var(--ma-color-hall-of-fame-color-default);
 }
 
 .ma-component-illustration__caption {

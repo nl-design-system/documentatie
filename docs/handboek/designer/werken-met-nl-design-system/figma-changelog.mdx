@@ -31,6 +31,371 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ove
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 15.2.0
+
+20 juli 2026
+
+### Slot toegepast op componenten
+
+De Slot functionaliteit is toegepast op meerdere componenten, zodat de opbouw beter aansluit op de implementatie in code. Het betreft de componenten: Accordion, Action Group, Alert, Breadcrumb Navigation, Data Summary, Description List, Drawer, Figure, Form Field en Form Field Description.
+
+[Bekijk de video 'Changelog: Slot toepassen op componenten (deel 1)'](https://youtu.be/X7KGJEpAmME) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Tip: Heb je een Figma-bestand waarin je deze componenten gebruikt? Zorg er dan voor dat je de huidige versie van dat bestand opslaat voordat je de update met wijzigingen vanuit de bibliotheek accepteert. Dit doe je door de huidige versie toe te voegen aan de Version History en deze een duidelijke naam te geven, bijvoorbeeld: 'Vooraf aan release 15.2.0'. Daarna kun je zonder zorgen de update accepteren en je bestand up-to-date brengen met de nieuwe versie.
+
+## 15.1.1
+
+13 juli 2026
+
+### Community component 'Blockquote' van Utrecht aangepast
+
+De layernamen zijn gelijkgetrokken met de implementatie in code.
+
+- [Ga naar de component](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1349-6340&p=f&t=Ae5canKDLoNSjrxs-11).
+- Klik de component aan.
+- Hernoem layer 'content' naar 'quote'.
+- Hernoem layer 'attribution' naar 'caption'.
+
+## 15.1.0
+
+13 juli 2026
+
+### Community component 'Action Group' van Utrecht aangepast
+
+De volgende wijzigingen zijn doorgevoerd aan Community component 'Action Group' van Utrecht:
+
+- Property 'Vertical' hernoemd naar 'Direction'.
+- Property values hernoemd naar 'Row' en 'Column Stretched'.
+- Property value 'Column' toegevoegd.
+
+[Bekijk de video 'Changelog: Action Group aanpassen'](https://youtu.be/hpRugw6W9VY) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 15.0.0
+
+10 juli 2026
+
+### Community componenten Icon Button en Side Navigation van Den Haag toegevoegd en aangepast
+
+Community componenten Icon Button en Side Navigation van Den Haag zijn toegevoegd en aangepast in de bibliotheek.
+
+- [Bekijk Icon Button in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=33357-6551&t=sOz1nkZqzJNkDOVK-4).
+- [Bekijk Side Navigation in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1670-10258).
+- Hieronder vind je de bijbehorende design tokens.
+
+[Bekijk de video 'Changelog: Icon Button en Side Navigation'](https://youtu.be/2dPkYxAUjlQ) waarin wordt uitgelegd hoe je deze componenten overneemt.
+
+Tip: Heb je een Figma-bestand waarin je deze componenten gebruikt? Zorg er dan voor dat je de huidige versie van dat bestand opslaat voordat je de update met wijzigingen vanuit de bibliotheek accepteert. Dit doe je door de huidige versie toe te voegen aan de Version History en deze een duidelijke naam te geven, bijvoorbeeld: 'Vooraf aan release 15.0.0'. Daarna kun je zonder zorgen de update accepteren en je bestand up-to-date brengen met de nieuwe versie.
+
+```json
+{
+  "denhaag": {
+    "icon-button": {
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.action-1.color-default}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.lg}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.lg}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.lg}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.lg}"
+      },
+      "focus": {
+        "outline-color": {
+          "$type": "color",
+          "$value": "{basis.focus.outline-color}"
+        },
+        "outline-offset": {
+          "$type": "dimension",
+          "$value": "{basis.focus.outline-offset}"
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": "{basis.focus.outline-style}"
+        },
+        "outline-width": {
+          "$type": "dimension",
+          "$value": "{basis.focus.outline-width}"
+        }
+      },
+      "hover": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-hover}"
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "denhaag": {
+    "side-navigation": {
+      "display": {
+        "$type": "other",
+        "$value": "flex"
+      },
+      "flex-direction": {
+        "$type": "other",
+        "$value": "column"
+      },
+      "min-width": {
+        "$type": "dimension",
+        "$value": "240px"
+      },
+      "row-gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.row.3xl}"
+      },
+      "mobile": {
+        "display": {
+          "$type": "other",
+          "$value": "None"
+        }
+      },
+      "expand-button": {
+        "block-size": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-block-size}"
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-block-size}"
+        },
+        "transform": {
+          "$type": "other",
+          "$value": "rotate(0deg)"
+        },
+        "transition": {
+          "$type": "other",
+          "$value": "None"
+        },
+        "expanded": {
+          "transform": {
+            "$type": "other",
+            "$value": "rotate(180deg)"
+          }
+        }
+      },
+      "expand-separator": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.border-subtle}"
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.md}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.md}"
+        }
+      },
+      "item": {
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        }
+      },
+      "link": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "active": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-active}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          }
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          }
+        },
+        "label": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.column.md}"
+          }
+        }
+      },
+      "list": {
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.4xl}"
+        }
+      }
+    }
+  }
+}
+```
+
+## 14.8.0
+
+1 juli 2026
+
+### Community component Grid van Amsterdam toegevoegd
+
+Community component 'Grid' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Grid in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=33228-134).
+- Hieronder vind je de bijbehorende design tokens.
+
+[Bekijk de video 'Changelog: Grid'](https://youtu.be/yA2cT8cQuxI) waarin wordt uitgelegd hoe je dit component overneemt.
+
+```json
+{
+  "ams": {
+    "grid": {
+      "column-count": {
+        "$type": "number",
+        "$value": 12
+      },
+      "column-gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.column.xl}"
+      },
+      "padding-block": {
+        "l": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.3xl}"
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.6xl}"
+        }
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.space.none}"
+      },
+      "row-gap": {
+        "l": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.xl}"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.3xl}"
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.5xl}"
+        }
+      },
+      "vi-medium": {
+        "column-count": {
+          "$type": "number",
+          "$value": 12
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      },
+      "vi-wide": {
+        "column-count": {
+          "$type": "number",
+          "$value": 12
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      },
+      "cell": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      }
+    }
+  }
+}
+```
+
 ## 14.7.0
 
 22 juni 2026

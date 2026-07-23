@@ -3,17 +3,20 @@ import type { TeamMember } from './TeamMember';
 
 const Astrid: TeamMember = {
   name: 'Astrid Brantjes',
-  role: 'Projectmanager',
+  role: 'Project Manager',
   slack: { mention: '@Astrid Brantjes', id: 'U06S00GPXC7' },
   Description: () => (
     <>
       <Paragraph>
-        Voor veel mensen is Astrid geen onbekende, want vanuit haar vorige baan bij de gemeente Utrecht hield ze zich al
-        bezig met verschillende landelijke innovaties. Hierdoor heeft ze kennis van het ontwikkelen van open source
-        systemen.
+        Astrid is het aanspreekpunt voor vragen over de opdracht van het NL Design System en voor het verkennen van
+        nieuwe samenwerkingen vanuit beleid.
       </Paragraph>
       <Paragraph>
-        In haar vrije tijd vind je Astrid in haar atelier, op de squashbaan en bij mooi weer op de racefiets.
+        Ze stemt af met betrokken organisaties om te werken aan gemeenschappelijke doelen en bewaakt daarbij de
+        opdracht.
+      </Paragraph>
+      <Paragraph>
+        Risico's, escalaties, feedback en zaken rondom de Code of Conduct bij haar of Yolijn worden gemeld.
       </Paragraph>
     </>
   ),

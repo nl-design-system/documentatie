@@ -1,5 +1,20 @@
 ma-table-of-contents {
+  --ma-table-of-contents-highlighted: 0;
+
+  container-name: table-of-contents;
+  container-type: inline-size;
+}
+
+.ma-table-of-contents__content {
   display: flex;
   flex-direction: column;
   gap: var(--basis-space-row-xl);
+
+  @container style(--ma-table-of-contents-highlighted: 1) {
+    background-color: var(--ma-table-of-contents-highlighted-background-color);
+    padding-block-end: var(--ma-table-of-contents-highlighted-padding-block-end);
+    padding-block-start: var(--ma-table-of-contents-highlighted-padding-block-start);
+    padding-inline-end: var(--ma-table-of-contents-highlighted-padding-inline-end);
+    padding-inline-start: var(--ma-table-of-contents-highlighted-padding-inline-start);
+  }
 }

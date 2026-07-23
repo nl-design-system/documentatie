@@ -1,4 +1,6 @@
 import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
+import '@utrecht/data-badge-css/dist/index.css';
+import '@utrecht/badge-list-css/dist/index.css';
 import clsx from 'clsx';
 import { toKebabCase } from '../utils';
 import './EstafetteBadge.css';
