@@ -1,0 +1,8 @@
+@media (--medium-down) {
+  .utrecht-nav-bar {
+    block-size: var(--basis-border-width-lg);
+  }
+  .utrecht-nav-bar__content {
+    display: none;
+  }
+}

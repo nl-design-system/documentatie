@@ -1,16 +1,19 @@
 ---
-// The list can not be filled in the template since Astro is not aware of
-// headings added in components. Therefore the list is being filled in
-// middleware when the whole page is rendered
+import { UnorderedList } from '@components/unordered-list/unordered-list';
+import { Heading } from '@nl-design-system-candidate/heading-react';
+import './table-of-contents.css';
+import '@nl-design-system-candidate/heading-css/heading.css';
+import '@nl-design-system-candidate/link-css/link.css';
 ---
 
 <ma-table-of-contents scope="main" heading-level="2">
-  <h2 id="toc-label">Inhoudsopgave</h2>
-  <ul aria-labelledby="toc-label">
-    <li><span>Definition of Done</span></li>
-    <li><a href="#community-implementaties">Community implementaties</a></li>
-    <li><a href="#not-there">Missing Heading</a></li>
-  </ul>
+  <div class="ma-table-of-contents__content">
+    <Heading level={2} appearance="level-4" id="toc-label">Inhoudsopgave</Heading>
+
+    <!-- The list can not be filled in the template since Astro is not aware of headings added in components. Therefore the list is being filled in middleware when the whole page is rendered -->
+
+    <UnorderedList aria-labelledby="toc-label" />
+  </div>
 </ma-table-of-contents>
 
 <script src="./table-of-content.client.ts"></script>
