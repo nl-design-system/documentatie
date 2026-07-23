@@ -2,56 +2,59 @@
  * These are all values yet to be included in the MA Design Tokens
  */
 :root {
-  --denhaag-focus-border: 2px dashed var(--basis-focus-outline-color);
-  --denhaag-icon-button-color: var(--basis-color-action-2-color-default);
   --ams-unordered-list-gap: var(--basis-space-row-lg);
   --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-xl);
-  --rhc-card-heading-font-size: var(--basis-text-font-size-lg);
-  --rhc-card-background-color: var(--basis-color-default-bg-document);
-  --rhc-card-border-color: var(--basis-color-default-border-subtle);
-  --rhc-card-border-width: var(--basis-border-width-sm);
-  --rhc-card-border-radius: var(--basis-border-radius-md);
-  --rhc-card-row-gap: var(--basis-space-row-sm);
-  --rhc-card-padding-block-end: var(--basis-space-block-3xl);
-  --rhc-card-padding-block-start: var(--basis-space-block-xl);
-  --rhc-card-padding-inline-end: var(--basis-space-inline-xl);
-  --rhc-card-padding-inline-start: var(--basis-space-inline-xl);
-  --ma-color-help-wanted-bg-default: #ffeee0;
-  --ma-color-help-wanted-bg-hover: #ffe7d4;
-  --ma-color-help-wanted-bg-active: #ffe0c7;
-  --ma-color-help-wanted-border-default: #834c1a;
-  --ma-color-help-wanted-border-hover: #6e4018;
-  --ma-color-help-wanted-border-active: #593516;
-  --ma-color-help-wanted-color-default: #834c1a;
-  --ma-color-help-wanted-color-hover: #6e4018;
-  --ma-color-help-wanted-color-active: #593516;
-  --ma-color-community-bg-default: #f6eef9;
-  --ma-color-community-bg-hover: #f3e7f7;
-  --ma-color-community-bg-active: #efe0f4;
-  --ma-color-community-border-default: #803d95;
-  --ma-color-community-border-hover: #6c337e;
-  --ma-color-community-border-active: #592a67;
-  --ma-color-community-color-default: #803d95;
-  --ma-color-community-color-hover: #6c337e;
-  --ma-color-community-color-active: #592a67;
-  --ma-color-candidate-bg-default: #e9f2f9;
-  --ma-color-candidate-bg-hover: #e1edf7;
-  --ma-color-candidate-bg-active: #d8e7f5;
-  --ma-color-candidate-border-default: #255d8d;
-  --ma-color-candidate-border-hover: #1f4e77;
-  --ma-color-candidate-border-active: #1a4061;
-  --ma-color-candidate-color-default: #255d8d;
-  --ma-color-candidate-color-hover: #1f4e77;
-  --ma-color-candidate-color-active: #1a4061;
-  --ma-color-hall-of-fame-bg-default: #e7f4e5;
-  --ma-color-hall-of-fame-bg-hover: #ddf0da;
-  --ma-color-hall-of-fame-bg-active: #d4ecd0;
-  --ma-color-hall-of-fame-border-default: #32652a;
-  --ma-color-hall-of-fame-border-hover: #2a5523;
-  --ma-color-hall-of-fame-border-active: #23451d;
-  --ma-color-hall-of-fame-color-default: #32652a;
-  --ma-color-hall-of-fame-color-hover: #2a5523;
-  --ma-color-hall-of-fame-color-active: #23451d;
+  --rhc-card-inline-size: 100% !important;
+  --ma-estafette-badge-border-width: 1px;
+  --ma-mobile-menu-max-inline-size: 300px;
+  --ma-space-relative-block-6xl: 4em; /* 64px; */
+  --ma-space-relative-block-5xl: 3em; /* 48px; */
+  --ma-space-relative-block-4xl: 2em; /* 32px; */
+  --ma-space-relative-block-3xl: 1.5em; /* 24px; */
+  --ma-space-relative-block-2xl: 1.25em; /* 20px; */
+  --ma-space-relative-block-xl: 1em; /* 16px; */
+  --ma-space-relative-block-lg: 0.75em; /* 12px; */
+  --ma-space-relative-block-md: 0.5em; /* 8px; */
+  --ma-space-relative-block-sm: 0.25em; /* 4px; */
+  --ma-space-relative-block-xs: 0.125em; /* 2px; */
+  --ma-space-relative-block-2xs: 0.0625em; /* 1px; */
+  --ma-layout-side-bar-inline-size: 300px;
+  --ma-layout-column-gap: var(--basis-space-column-4xl);
+  --ma-table-of-contents-highlighted-background-color: var(--basis-color-accent-1-bg-subtle);
+  --ma-table-of-contents-highlighted-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-table-of-contents-highlighted-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
+  --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
+  --ma-body-copy-items-max-inline-size: 65ch;
+}
+
+/**
+ * These are tweaks to docusaurus components that break in Astro
+ */
+.ma-component-illustration {
+  box-sizing: border-box;
+}
+
+.nl-code-block {
+  --nl-code-block-background-color: var(--prism-a11y-color-background); /* stylelint-disable-line */
+}
+
+.nlds-guideline--do {
+  border-color: var(--basis-color-positive-border-default);
+
+  .nlds-guideline__description {
+    background-color: var(--basis-color-positive-bg-default);
+    color: var(--basis-color-positive-color-default);
+  }
+}
+
+.nlds-guideline--dont {
+  border-color: var(--basis-color-negative-border-default);
+
+  .nlds-guideline__description {
+    background-color: var(--basis-color-negative-bg-default);
+    color: var(--basis-color-negative-color-default);
+  }
 }
 
 /**
@@ -76,6 +79,29 @@
 
   /* utrecht.nav-bar.content.padding-inline-start */
   padding-inline-start: var(--basis-space-inline-xl);
+}
+
+.utrecht-checkbox {
+  margin-block-end: var(--basis-space-row-lg);
+}
+
+/* The alignment of icons is off without the option to fix is via tokens */
+.utrecht-link-list__item .utrecht-link-list__link {
+  align-items: unset;
+}
+
+.utrecht-nav-list__item .utrecht-link:any-link {
+  text-decoration-line: none;
+
+  &:focus {
+    background-color: var(--utrecht-nav-bar-content-hover-background-color);
+  }
+}
+
+@media (forced-colors: active) {
+  .utrecht-nav-bar .utrecht-nav-list__item:not(:has([aria-current])) {
+    border-block-end-style: none;
+  }
 }
 
 .denhaag-side-navigation__link {
