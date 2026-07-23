@@ -42,7 +42,7 @@ import Summary from "./summaries/_1.2.2-summary.md";
 
 <Summary />
 
-Ondertitels voor doven en slechthorenden zijn meer dan een uitgeschreven dialoog. Ze benoemen ook de spreker als die niet in beeld is, en geluiden die betekenis dragen: een telefoon die rinkelt, applaus, dreigende muziek, een plotselinge stilte. De tekst loopt synchroon met de video, zodat de ondertitel op het juiste moment in beeld komt.
+Ondertitels voor doven en slechthorenden zijn meer dan een uitgeschreven dialoog. Ze benoemen ook de spreker als die niet in beeld is, en geluiden die betekenis hebben: een telefoon die rinkelt, applaus, dreigende muziek, een plotselinge stilte. De tekst loopt synchroon met de video, zodat de ondertitel op het juiste moment in beeld komt.
 
 Let op het verschil met vertaalde ondertitels. Een vertaling toont alleen de gesproken tekst in een andere taal, zonder de geluiden en zonder te benoemen wie er praat. Een vertaling vervangt dus geen ondertitels voor doven en slechthorenden. Dit geldt ook voor een los transcript onder de video: dat is nuttig, maar het loopt niet mee met de beelden en telt daarom niet als ondertiteling.
 
@@ -56,24 +56,7 @@ Een video met dialoog of voice-over heeft geen ondertitels. Wie de audio niet ka
 
 **Hoe te testen:** zet het geluid uit en speel de video af. Begrijp je nog wat er gezegd wordt? Kun je ondertitels aanzetten in de videospeler?
 
-<Guideline appearance="dont" title="Video zonder ondertitelspoor">
-  ```html
-  <video controls>
-    <source src="uitleg.mp4" type="video/mp4" />
-  </video>
-  ```
-</Guideline>
-
-<Guideline appearance="do" title="Video met een ondertitelspoor voor doven en slechthorenden">
-  ```html
-  <video controls>
-    <source src="uitleg.mp4" type="video/mp4" />
-    <track kind="captions" src="uitleg-nl.vtt" srclang="nl" label="Nederlands" />
-  </video>
-  ```
-</Guideline>
-
-**Wie kan dit oplossen:** een contentmaker maakt een ondertitelbestand en koppelt dat aan de video.
+**Wie kan dit oplossen:** een contentmaker maakt een ondertitelbestand en koppelt dat aan de video. Bij een extern videoplatform upload je dat bestand zelf bij de video. Bij een eigen videospeler koppelt een developer het met een `<track kind="captions">`-element.
 
 ### Automatisch gegenereerde ondertitels zonder controle
 
@@ -85,7 +68,7 @@ De ondertitels komen rechtstreeks uit de automatische spraakherkenning van een v
 
 ### Ondertitels tonen alleen de dialoog, niet de belangrijke geluiden
 
-De ondertitels geven de gesproken tekst weer, maar laten de geluiden weg die betekenis dragen. Een telefoon die rinkelt, muziek die de sfeer bepaalt, gelach op de achtergrond: het staat er niet in. Wie niet kan horen, mist die context.
+De ondertitels geven de gesproken tekst weer, maar laten de geluiden weg die betekenis hebben. Een telefoon die rinkelt, muziek die de sfeer bepaalt, gelach op de achtergrond: het staat er niet in. Wie niet kan horen, mist die context.
 
 **Hoe te testen:** luister naar de video en let op niet-gesproken geluiden. Komen die belangrijke geluiden terug in de ondertitels, bijvoorbeeld als "[telefoon rinkelt]"?
 
@@ -93,7 +76,7 @@ De ondertitels geven de gesproken tekst weer, maar laten de geluiden weg die bet
 
 ### Niet duidelijk wie er aan het woord is
 
-In een video met meerdere sprekers hoort iemand die het geluid hoort het verschil tussen de stemmen, ook als de spreker niet in beeld is. Wie de ondertitels leest, hoort dat verschil niet. Tonen de ondertitels dan alleen de tekst zonder te benoemen wie wat zegt, dan kan een horende bezoeker het gesprek nog volgen en een dove of slechthorende bezoeker niet. De ondertitels brengen dezelfde informatie over als de audio, en daar hoort bij wie er praat.
+In een video met meerdere sprekers is aan de stemmen te horen wie er praat, ook als de spreker niet in beeld is. Tonen de ondertitels alleen de tekst zonder te benoemen wie wat zegt, dan mist de bezoeker die meeleest dat onderscheid en is het gesprek niet meer te volgen.
 
 **Hoe te testen:** zet het geluid uit bij een fragment met meerdere sprekers van wie er minstens één niet in beeld is. Is op basis van de ondertitels te volgen wie wat zegt?
 
@@ -103,7 +86,7 @@ In een video met meerdere sprekers hoort iemand die het geluid hoort het verschi
 
 De ondertitels verschijnen te vroeg of te laat, of ze staan zo kort in beeld dat je ze niet kunt lezen. Wie de tekst nodig heeft om de video te volgen, kan de inhoud niet bijhouden.
 
-**Hoe te testen:** speel de video af en let op de timing. Verschijnt elke ondertitel op het moment dat de tekst klinkt? Blijft hij lang genoeg staan om te lezen?
+**Hoe te testen:** speel de video af en let op de timing. Verschijnt elke ondertitel op het moment dat de tekst klinkt? Blijft de tekst lang genoeg staan om te lezen?
 
 **Wie kan dit oplossen:** een contentmaker of developer corrigeert de tijdcodes in het ondertitelbestand.
 
@@ -140,7 +123,7 @@ Onder de video staat een uitgeschreven transcript, maar de video zelf heeft geen
 
 Een pagina toont eerst een artikel in tekst en daarna een video waarin dezelfde inhoud wordt verteld. De video is bedoeld als extra optie voor wie liever kijkt dan leest. In dat geval geldt de uitzondering en zijn ondertitels niet nodig. Maar dan vermeld je wel duidelijk bij de video dat het om een alternatief voor de tekst gaat. Zonder die toelichting weet een bezoeker niet dat dezelfde inhoud al in de tekst erboven staat.
 
-**Hoe te testen:** staat er bij de video een duidelijke vermelding dat het om een videoversie van de tekst gaat, bijvoorbeeld "Liever kijken dan lezen? Dit artikel staat hierboven ook als tekst."?
+**Hoe te testen:** staat er bij de video een duidelijke vermelding dat het om een videoversie van de tekst gaat, bijvoorbeeld "Deze video bevat dezelfde informatie als het artikel op deze pagina."?
 
 **Wie kan dit oplossen:** een contentmaker voegt een duidelijke vermelding toe bij de video.
 
@@ -149,8 +132,8 @@ Een pagina toont eerst een artikel in tekst en daarna een video waarin dezelfde 
 ### Voor iedereen
 
 1. Zet het geluid uit en speel de video af. Krijg je alle gesproken informatie mee via de ondertitels?
-2. Let op de timing. Verschijnt elke ondertitel op het juiste moment en blijft hij lang genoeg staan om te lezen?
-3. Lees mee bij een fragment met meerdere sprekers. Is duidelijk wie wat zegt?
+2. Let op de timing. Verschijnt elke ondertitel op het juiste moment en blijft de tekst lang genoeg staan om te lezen?
+3. Lees mee bij een fragment met meerdere sprekers. Is het duidelijk wie er aan het woord is?
 4. Let op niet-gesproken geluiden, zoals muziek of een rinkelende telefoon. Staan de belangrijke geluiden in de ondertitels?
 5. Controleer bij automatische ondertitels of de tekst klopt met wat er gezegd wordt.
 
