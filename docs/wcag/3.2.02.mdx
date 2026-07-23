@@ -64,6 +64,28 @@ Een keuzelijst waarmee je een land, taal of categorie kiest, voert direct een ac
   ```
 </Guideline>
 
+<Guideline appearance="do" title="Taalkeuze als een lijst met links">
+  ```html
+  <ul>
+    <li>
+      <a href="/nl/" lang="nl">
+        Nederlands
+      </a>
+    </li>
+    <li>
+      <a href="/en/" lang="en">
+        English
+      </a>
+    </li>
+    <li>
+      <a href="/de/" lang="de">
+        Deutsch
+      </a>
+    </li>
+  </ul>
+  ```
+</Guideline>
+
 <Guideline appearance="do" title="Keuzelijst met aparte bevestigingsknop">
   ```html
   <label for="taal">Kies een taal</label>
@@ -76,34 +98,55 @@ Een keuzelijst waarmee je een land, taal of categorie kiest, voert direct een ac
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer zorgt dat de pagina niet automatisch verandert en voegt een knop toe waarmee de bezoeker de keuze bevestigt.
+**Wie kan dit oplossen:** een webredacteur vervangt de keuzelijst door een lijst met links, één link per taal of per categorie. Dat is de eenvoudigste oplossing: van een link verwacht de bezoeker dat er een andere pagina opent. Zijn er zoveel opties dat een lijst met links onwerkbaar wordt, bijvoorbeeld bij een keuze uit alle landen, dan houdt een developer de keuzelijst en voegt een knop toe waarmee de bezoeker de keuze bevestigt.
 
 ### Formulier wordt automatisch ingediend bij invoer
 
-Een zoekformulier of postcodecheck verstuurt zichzelf zodra een veld een bepaalde lengte heeft, of zodra een veld de focus verliest. De bezoeker is nog niet klaar met invullen of controleren, maar het formulier reageert al. Mensen die langzamer typen of die het ingevulde willen nakijken, kunnen dat niet meer doen voordat het formulier wordt verstuurd.
+Een formulier verstuurt zichzelf zodra een veld een bepaalde lengte heeft, of zodra een veld de focus verliest. Bij een inlogcode van 6 cijfers gebeurt dat al zodra het laatste cijfer is getypt. De bezoeker is dan nog bezig met controleren of de code klopt, maar de pagina is al weg. Wie een cijfer verkeerd typt, kan dat niet meer corrigeren en moet een nieuwe code aanvragen. Mensen die langzamer typen, die ingezoomd werken of die een screenreader gebruiken, merken pas achteraf dat de pagina is veranderd.
 
 **Hoe te testen:** vul een veld in en wacht. Wordt het formulier verstuurd zonder dat je op een knop drukt of op <kbd>Enter</kbd>?
 
-<Guideline appearance="dont" title="Formulier dat zichzelf indient zodra de postcode 6 tekens heeft">
+<Guideline appearance="dont" title="Formulier dat zichzelf verstuurt zodra de code 6 cijfers heeft">
   ```html
-  <label for="postcode">Postcode</label>
-  <input id="postcode" type="text" maxlength="6" oninput="if (this.value.length === 6) this.form.submit()" />
+  <label for="code">Inlogcode</label>
+  <input
+    id="code"
+    type="text"
+    inputmode="numeric"
+    autocomplete="one-time-code"
+    oninput="if (this.value.length === 6) this.form.submit()"
+  />
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Formulier dat pas verstuurt nadat de bezoeker op een knop drukt">
   ```html
-  <label for="postcode">Postcode</label>
-  <input id="postcode" type="text" maxlength="6" />
-  <button type="submit">Zoek adres</button>
+  <label for="code">Inlogcode</label>
+  <input id="code" type="text" inputmode="numeric" autocomplete="one-time-code" />
+  <button type="submit">Inloggen</button>
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer zorgt dat het formulier niet automatisch wordt verstuurd. De bezoeker bepaalt zelf wanneer het formulier wordt verstuurd.
+<Guideline appearance="do" title="Formulier dat zichzelf verstuurt, met uitleg vooraf bij het veld">
+  ```html
+  <label for="code">Inlogcode</label>
+  <p id="code-uitleg">Als de code klopt, word je meteen ingelogd en naar je profiel gestuurd.</p>
+  <input
+    id="code"
+    type="text"
+    inputmode="numeric"
+    autocomplete="one-time-code"
+    aria-describedby="code-uitleg"
+    oninput="if (this.value.length === 6) this.form.submit()"
+  />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur zet een uitleg bij het veld en koppelt die met `aria-describedby`, zodat de bezoeker vooraf weet dat het formulier zichzelf verstuurt. Een developer haalt het automatisch versturen weg en voegt een knop toe, zodat de bezoeker zelf bepaalt wanneer het formulier verstuurt.
 
 ### Focus springt automatisch naar het volgende veld
 
-Bij verificatiecodes, telefoonnummers of postcodes in losse vakjes wordt de focus automatisch verplaatst naar het volgende veld zodra het huidige veld vol is. Dat lijkt handig, maar is voor veel mensen niet toegankelijk. Iemand die per ongeluk een verkeerd cijfer typt, kan niet terug zonder eerst met <kbd>Shift</kbd> + <kbd>Tab</kbd> naar het vorige veld te gaan. De focus verspringt zonder dat de screenreadergebruiker daar zelf om vroeg, en het is niet altijd duidelijk in welk vakje de focus nu staat. Mensen die typen met één hand of met een ander hulpmiddel, kunnen door de automatische focuswisseling per ongeluk in het verkeerde vakje typen.
+Bij inlogcodes, telefoonnummers of postcodes in losse vakjes wordt de focus automatisch verplaatst naar het volgende veld zodra het huidige veld vol is. Dat lijkt handig, maar is voor veel mensen niet toegankelijk. Iemand die per ongeluk een verkeerd cijfer typt, kan niet terug zonder eerst met <kbd>Shift</kbd> + <kbd>Tab</kbd> naar het vorige veld te gaan. De focus verspringt zonder dat de screenreadergebruiker daar zelf om vroeg, en het is niet altijd duidelijk in welk vakje de focus nu staat. Mensen die typen met één hand of met een ander hulpmiddel, kunnen door de automatische focuswisseling per ongeluk in het verkeerde vakje typen.
 
 **Hoe te testen:** vul een veld met losse vakjes voor een code. Wordt de focus automatisch verplaatst zodra een veld vol is? Lukt het je om met <kbd>Shift</kbd> + <kbd>Tab</kbd> terug te gaan zonder verwarring?
 
@@ -117,8 +160,8 @@ Bij verificatiecodes, telefoonnummers of postcodes in losse vakjes wordt de focu
 
 <Guideline appearance="do" title="Eén invoerveld voor de hele code">
   ```html
-  <label for="code">Verificatiecode van 6 cijfers</label>
-  <input id="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" />
+  <label for="code">Inlogcode van 6 cijfers</label>
+  <input id="code" type="text" inputmode="numeric" autocomplete="one-time-code" />
   ```
 </Guideline>
 
@@ -180,7 +223,7 @@ Een wijziging die binnen een duidelijk afgebakend gebied blijft en die vooraf is
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentbeheerder zet een korte uitleg vóór het onderdeel, zodat de bezoeker weet dat de keuze de pagina aanpast. Een developer kan de wijziging beperken tot een afgebakend gebied, of een aparte bevestigingsknop toevoegen waarmee de bezoeker de keuze zelf toepast.
+**Wie kan dit oplossen:** de eenvoudigste oplossing is twee aparte pagina's met een link ernaartoe, één voor particulieren en één voor zakelijke bezoekers. Een webredacteur kan die links zelf plaatsen. Blijft de keuze in een keuzelijst staan, dan zet een webredacteur er een korte uitleg vóór, zodat de bezoeker weet dat de keuze de pagina aanpast. Een developer kan de wijziging beperken tot een afgebakend gebied, of een aparte knop toevoegen waarmee de bezoeker de keuze zelf toepast.
 
 ## Hoe te testen
 
@@ -190,15 +233,15 @@ Een wijziging die binnen een duidelijk afgebakend gebied blijft en die vooraf is
 2. Vul een veld in een formulier in en wacht. Wordt het formulier verstuurd zonder dat je op een knop drukt?
 3. Vul een veld met losse vakjes voor een code. Wordt de focus automatisch verplaatst zodra een veld vol is? Lukt het je om met <kbd>Shift</kbd> + <kbd>Tab</kbd> terug te gaan?
 4. Selecteer een radio button of vink een checkbox aan. Opent er een nieuw venster, tabblad of overlay zonder dat je daarop hebt geklikt?
-5. Selecteer een filter of optie. Verandert alleen het verwachte gebied, of wijzigt de hele pagina-indeling?
-6. Als er wel een automatische actie is, staat er dan een uitleg vóór het onderdeel dat dit gaat gebeuren?
+5. Zet een filter, een tabblad of een weergave aan, met een keuzelijst, een button of een link. Verandert alleen het verwachte gebied, of wijzigt de hele pagina-indeling?
+6. Als er wel een automatische actie is, staat er dan vóór het onderdeel een uitleg dat dit gaat gebeuren?
 
 ### Voor developers
 
 1. Controleer in de broncode of er `onchange`-handlers op `<select>`, `<input type="radio">` of `<input type="checkbox">` staan die naar een andere pagina gaan, een formulier indienen of een nieuw venster openen.
 2. Zoek naar `oninput`- of `onblur`-handlers die een formulier indienen of de focus verplaatsen op basis van veldlengte.
 3. Test met een screenreader en toetsenbord. Loop met <kbd>Tab</kbd> door alle formuliercomponenten en let op of de focus onverwacht verspringt of de content op de pagina ingrijpend verandert.
-4. Gebruik één invoerveld voor codes in plaats van losse vakjes. Voeg `autocomplete="one-time-code"` toe voor sms-verificatiecodes.
+4. Gebruik één invoerveld voor codes in plaats van losse vakjes. Voeg `autocomplete="one-time-code"` toe bij een inlogcode die per sms of e-mail binnenkomt.
 5. Bij filters of dynamische lijsten: beperk de wijziging tot een afgebakend gebied en kondig de update aan met `aria-live="polite"`.
 6. Voeg een uitleg toe vóór een onderdeel dat een automatische actie uitvoert, of vervang de automatische actie door een bevestigingsknop.
 
@@ -211,7 +254,7 @@ Een wijziging die binnen een duidelijk afgebakend gebied blijft en die vooraf is
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 3.2.2 Bij invoer](https://www.w3.org/Translations/WCAG22-nl/#bij-invoer): de officiële Nederlandstalige vertaling van het succescriterium.
+- [WCAG 2.2: Succescriterium 3.2.2 Bij invoer](https://www.w3.org/Translations/WCAG22-nl/#bij-invoer): de Nederlandse vertaling van het succescriterium.
 - [Understanding SC 3.2.2: On Input](https://www.w3.org/WAI/WCAG22/Understanding/on-input.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden. Engelstalig.
 - [Definitie: verandering van context](https://www.w3.org/TR/WCAG22/#dfn-changes-of-context): beschrijft welke wijzigingen wel of niet als verandering van context tellen. Engelstalig, van W3C.
 
