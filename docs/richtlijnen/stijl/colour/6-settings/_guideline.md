@@ -39,7 +39,7 @@ In CSS kun je de namen van systeemkleuren ([`system-color`](https://developer.mo
 
 | CSS system-color naam | Naam in contrastthema                     |
 | --------------------- | ----------------------------------------- |
-| AccentColor           | Geselecteerde tekst (achtergrond)         |
+| AccentColor           | Geselecteerde tekst (achtergrondkleur)    |
 | AccentColorText       | Achtergrond                               |
 | ActiveText            | Hyperlink                                 |
 | ButtonBorder          | Knop (tekstkleur)                         |
