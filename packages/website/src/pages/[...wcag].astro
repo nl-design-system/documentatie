@@ -2,7 +2,16 @@
 import { getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
+import OverviewLayout from '@layouts/overview.astro';
+import { Grid } from '@components/grid/grid';
+import { Heading } from '@components/heading/heading';
+import { Paragraph } from '@components/paragraph/paragraph';
+import { DataBadge } from '@component/data-badge/data-badge';
 import { MDXComponents } from '@utils/mdx-components.astro';
+import { navigation } from '../navigation.config';
+import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
+import { isNavigationGroup } from 'src/navigation';
+import { DataBadge } from '@nl-design-system-candidate/data-badge-react';
 
 export async function getStaticPaths() {
   const wcag = await getCollection('wcag');
@@ -19,12 +28,18 @@ const { Content } = await render(page);
 const description =
   page.data.title && page.data.description ? `${page.data.title}: ${page.data.description}` : page.data.description;
 
-const components = await MDXComponents();
+const { navigationList } = (await navigation)();
+const navigationElement = getNavigationElement(navigationList, Astro.url.pathname);
+const navigationGroup = isNavigationGroup(navigationElement) ? navigationElement : navigationElement?.parent;
+
+const components = await MDXComponents({ navigationItems: navigationGroup?.items });
+const Layout =
+  page.data?.page_layout === 'overview' || page.data?.hide_table_of_contents ? OverviewLayout : DetailLayout;
 ---
 
-<DetailLayout
-  title={page.data.title}
-  titleSm={page.data.title_sm}
+<Layout
+  title={`WCAG: ${page.data.title}`}
+  titleSm={`WCAG: ${page.data.title_sm}`}
   description={description}
   lang={page.data.lang}
   seoImage={page.data.image}
@@ -32,5 +47,17 @@ const components = await MDXComponents();
   keywords={['wcag', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
   index={page.data.unlisted !== true}
 >
-  <Content components={components} />
-</DetailLayout>
+  <Grid slot="header">
+    <Grid.Cell span="all">
+      <Heading level={1}>{page.data.title}</Heading>
+      {page.data.conformance_level && <DataBadge>{page.data.conformance_level}</DataBadge>}
+      {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
+    </Grid.Cell>
+  </Grid>
+
+  <Grid>
+    <Grid.Cell span="all" className="ma-flow">
+      <Content components={components} />
+    </Grid.Cell>
+  </Grid>
+</Layout>

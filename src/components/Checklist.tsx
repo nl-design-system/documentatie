@@ -134,7 +134,7 @@ export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
     <div>
       <div className="ma-filter-block">
         <Fieldset aria-describedby="filter-results" aria-labelledby={fieldsetLabelId}>
-          <Heading level={headingLevel} id={fieldsetLabelId}>
+          <Heading level={Number(headingLevel)} id={fieldsetLabelId}>
             Filter acceptatiecriteria voor:
           </Heading>
           {Array.from(allTags.values()).map((tag) => (

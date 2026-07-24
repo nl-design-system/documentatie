@@ -21,7 +21,7 @@ const { ...props } = Astro.props;
 <Document {...props}>
   <div class="ma-layout-overview">
     <div class="ma-layout-overview__content">
-      <div class="ma-layout-overview__side-bar">
+      <div class="ma-layout-overview__side-nav">
         <SideNavigation items={[items.items || []]} client:load />
       </div>
 
@@ -34,7 +34,7 @@ const { ...props } = Astro.props;
             <BreadcrumbNav>
               {breadcrumbPath.map((item, index, list) => (
                 <>
-                  <BreadcrumbNavLink href={item.href || ''} disabled={!item.href}>
+                  <BreadcrumbNavLink index={index} href={item.href || ''} disabled={!item.href}>
                     {item.label}
                   </BreadcrumbNavLink>
                   {index < list.length - 1 ? (
@@ -49,8 +49,9 @@ const { ...props } = Astro.props;
         )
       }
 
-      <main id="main" class="ma-layout-overview__main">
-        <div class="ma-layout-overview__main-body">
+      <main id="main" class="ma-layout-overview__main ma-flow" lang={props.lang === 'en' ? 'en' : null}>
+        <header class="ma-layout-overview__header ma-flow"><slot name="header" /></header>
+        <div class="ma-layout-overview__main-body ma-flow">
           <slot />
         </div>
       </main>
