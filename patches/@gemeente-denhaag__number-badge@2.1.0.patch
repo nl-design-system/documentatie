@@ -1,0 +1,52 @@
+diff --git a/dist/cjs/index.js b/dist/cjs/index.js
+index 6ca5f45cfb0490dd362ab56ee099b7cd132fb717..ac0d4ac5f465a13caecdc3d20784352bda064512 100644
+--- a/dist/cjs/index.js
++++ b/dist/cjs/index.js
+@@ -95,20 +95,6 @@ var NumberBadge = /*#__PURE__*/react.forwardRef(function NumberBadge(props, ref)
+   }));
+ });
+ NumberBadge.displayName = 'NumberBadge';var css_248z = ".nl-number-badge{align-items:center;background-color:var(--nl-number-badge-background-color);border-color:var(--nl-number-badge-border-color);border-radius:var(--nl-number-badge-border-radius);border-style:solid;border-width:var(--nl-number-badge-border-width,1px);box-sizing:border-box;color:var(--nl-number-badge-color);display:inline-flex;font-family:var(--nl-number-badge-font-family);font-size:max(var(--nl-number-badge-font-size),1rem);font-style:normal;font-variant-numeric:lining-nums tabular-nums;font-weight:var(--nl-number-badge-font-weight);justify-content:center;line-height:1;max-block-size:max-content;max-inline-size:max-content;min-block-size:var(--nl-number-badge-min-block-size);min-inline-size:var(--nl-number-badge-min-inline-size);padding-block:var(--nl-number-badge-padding-block);padding-inline:var(--nl-number-badge-padding-inline);white-space:nowrap}.nl-number-badge__hidden-label{block-size:1px!important;border:0!important;clip-path:inset(50%)!important;inline-size:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;white-space:nowrap!important}.nl-number-badge__visible-label{display:inline}@media screen and (forced-colors:active){.nl-number-badge{border-color:currentColor!important;border-width:max(var(--nl-number-badge-min-border-width,0),1px)!important;color:currentColor!important}}";
+-        if (typeof document !== 'undefined') { 
++        if (typeof document !== 'undefined') {
+ 
+-          const head = document.head || document.getElementsByTagName('head')[0];
+-          const style = document.createElement('style');
+-          style.type = 'text/css';
+-          style.nonce = window.NONCE;
+-        
+-          {
+-            head.appendChild(style);
+-          }
+-        
+-          if (style.styleSheet) {
+-            style.styleSheet.cssText = css_248z;
+-          } else {
+-            style.appendChild(document.createTextNode(css_248z));
+-          }
+         }exports.NumberBadge=NumberBadge;//# sourceMappingURL=index.js.map
+diff --git a/dist/mjs/index.js b/dist/mjs/index.js
+index 80ececfb137c7746d99b845bfa74183e341e1241..78d0285857427db3016458c3231a911708564ac1 100644
+--- a/dist/mjs/index.js
++++ b/dist/mjs/index.js
+@@ -95,20 +95,6 @@ var NumberBadge = /*#__PURE__*/forwardRef(function NumberBadge(props, ref) {
+   }));
+ });
+ NumberBadge.displayName = 'NumberBadge';var css_248z = ".nl-number-badge{align-items:center;background-color:var(--nl-number-badge-background-color);border-color:var(--nl-number-badge-border-color);border-radius:var(--nl-number-badge-border-radius);border-style:solid;border-width:var(--nl-number-badge-border-width,1px);box-sizing:border-box;color:var(--nl-number-badge-color);display:inline-flex;font-family:var(--nl-number-badge-font-family);font-size:max(var(--nl-number-badge-font-size),1rem);font-style:normal;font-variant-numeric:lining-nums tabular-nums;font-weight:var(--nl-number-badge-font-weight);justify-content:center;line-height:1;max-block-size:max-content;max-inline-size:max-content;min-block-size:var(--nl-number-badge-min-block-size);min-inline-size:var(--nl-number-badge-min-inline-size);padding-block:var(--nl-number-badge-padding-block);padding-inline:var(--nl-number-badge-padding-inline);white-space:nowrap}.nl-number-badge__hidden-label{block-size:1px!important;border:0!important;clip-path:inset(50%)!important;inline-size:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;white-space:nowrap!important}.nl-number-badge__visible-label{display:inline}@media screen and (forced-colors:active){.nl-number-badge{border-color:currentColor!important;border-width:max(var(--nl-number-badge-min-border-width,0),1px)!important;color:currentColor!important}}";
+-        if (typeof document !== 'undefined') { 
++        if (typeof document !== 'undefined') {
+ 
+-          const head = document.head || document.getElementsByTagName('head')[0];
+-          const style = document.createElement('style');
+-          style.type = 'text/css';
+-          style.nonce = window.NONCE;
+-        
+-          {
+-            head.appendChild(style);
+-          }
+-        
+-          if (style.styleSheet) {
+-            style.styleSheet.cssText = css_248z;
+-          } else {
+-            style.appendChild(document.createTextNode(css_248z));
+-          }
+         }export{NumberBadge};//# sourceMappingURL=index.js.map

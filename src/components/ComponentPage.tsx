@@ -1,12 +1,4 @@
-import {
-  AccordionProvider,
-  Heading,
-  Link,
-  LinkList,
-  Paragraph,
-  UnorderedList,
-  UnorderedListItem,
-} from '@utrecht/component-library-react';
+import { Heading, Link, LinkList, Paragraph, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
@@ -27,6 +19,8 @@ import {
 import './ComponentPage.css';
 import relationMap from './relations.json';
 import type { HeadingLevel } from '@nl-design-system-candidate/heading-react';
+import { Accordion, AccordionSection } from '../../packages/website/src/components/accordion/accordion';
+import '../../packages/website/src/components/accordion/accordion.css';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
@@ -35,13 +29,15 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
 
   return (
     component && (
-      <AccordionProvider
-        sections={relayOrderedProjects.map((project) => ({
-          className: clsx('ma-definition-of-done', project && `ma-definition-of-done--${toKebabCase(project.title)}`),
-          headingLevel: headingLevel,
-          expanded: false,
-          label: project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : '',
-          body: project && (
+      <Accordion>
+        {relayOrderedProjects.map((project) => (
+          <AccordionSection
+            key={project.title}
+            className={clsx('ma-definition-of-done', project && `ma-definition-of-done--${toKebabCase(project.title)}`)}
+            heading={project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : ''}
+            headingLevel={headingLevel as 1 | 2 | 3 | 4 | 5 | 6}
+            headingApperance="level-5"
+          >
             <>
               <TaskList>
                 {project.tasks.map(({ checked, name, id }) => (
@@ -60,9 +56,9 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
                 </Link>
               </Paragraph>
             </>
-          ),
-        }))}
-      />
+          </AccordionSection>
+        ))}
+      </Accordion>
     )
   );
 };

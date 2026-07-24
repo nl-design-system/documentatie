@@ -1,18 +1,23 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Link } from '../Link';
 import type { TeamMember } from './TeamMember';
 
 const Rozerin: TeamMember = {
   name: 'Rozerin Ayerdem',
-  role: 'Designer',
+  role: 'Designer Relations & Design System Designer',
   slack: { mention: '@Rozerin', id: 'D038ABXNAG3' },
   Description: () => (
     <>
       <Paragraph>
-        Als ontwerper is Rozerin bezig met het verzamelen, toevoegen en documenteren van interactiepatronen, componenten
-        en richtlijnen. Ze werkte vanuit haar eerdere rol bij de gemeente Den Haag al samen met het kernteam van NL
-        Design System.
+        Rozerin verbindt designers uit verschillende organisaties, stimuleert samenwerking en kennisdeling binnen de
+        community en heeft altijd wel een handig linkje paraat.
       </Paragraph>
-      <Paragraph>Naast haar werk is Rozerin gepassioneerd door reizen, natuur, fotografie en architectuur.</Paragraph>
+      <Paragraph>
+        Je kunt bij haar terecht voor designvragen rondom: huisstijl, design tokens, componenten, patronen, templates en
+        richtlijnen. Je vindt haar in het Slack kanaal <Link href="/slack/">#nl-design-system-designers</Link>, tijdens{' '}
+        <Link href="/events/design-open-hour/">Design Open Hours</Link> en bij{' '}
+        <Link href="/events/design-open-dag/">Design Open Dagen</Link>.
+      </Paragraph>
     </>
   ),
 };

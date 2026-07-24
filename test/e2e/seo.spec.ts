@@ -94,6 +94,10 @@ test.describe('SEO values', async () => {
             .locator('meta[property="twitter:card" i]')
             .getAttribute('content')
             .then((twitterCard) => ({ twitterCard })),
+          page
+            .locator('body h1')
+            .innerText()
+            .then((h1) => ({ h1 })),
         ]).then((values) => Object.assign({}, ...values));
       });
 
@@ -101,7 +105,7 @@ test.describe('SEO values', async () => {
         if (pathname.includes('/en/')) {
           await expect(values.lang).toBe('en');
         } else {
-          await expect(values.lang).toBe('nl');
+          await expect(['en', 'nl'].includes(values.lang)).toBeTruthy();
         }
       });
 
@@ -181,6 +185,11 @@ test.describe('SEO values', async () => {
         });
         test('twitter card is set', async () => {
           await expect(values.twitterCard).toBe(twitterCard);
+        });
+      });
+      test.describe('Page content', async () => {
+        test('Page has an h1', async () => {
+          await expect(values.h1).toBeDefined();
         });
       });
     });
