@@ -1,11 +1,11 @@
 ---
 title: WCAG-succescriterium 2.1.4 Enkel teken sneltoetsen
-title_sm: 2.1.4 Enkel teken sneltoetsen
+title_sm: WCAG 2.1.4
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.4 Enkel teken sneltoetsen
 pagination_label: WCAG-succescriterium 2.1.4 Enkel teken sneltoetsen
-description: Bied geen sneltoetsen aan die bestaan uit één teken.
+description: Sneltoetsen die uit één of meer afdrukbare tekens bestaan moeten uit te zetten zijn, opnieuw toe te kennen, of alleen actief zijn bij focus. Zo voorkom je onbedoelde activatie, vooral bij spraakbesturing.
 slug: 2.1.4
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,20 @@ keywords:
   - operable
   - keyboard accessible
   - character key shortcuts
+  - sneltoetsen
+  - lettertekens
+  - spraakbesturing
+  - keyboard shortcuts
+  - toetscombinaties
+  - WCAG 2.1.4
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.1.4-summary.md";
 
@@ -32,57 +37,203 @@ import Summary from "./summaries/_2.1.4-summary.md";
   {"WCAG-succescriterium 2.1.4 Enkel teken sneltoetsen"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Verminder onbedoeld gebruik van sneltoetsen.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Zorg ervoor dat sneltoetsen uitgeschakeld of aangepast kunnen worden.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Sneltoetsen met één teken zijn makkelijk onbedoeld te activeren, vooral met spraakbediening.
-    </dd>
-  </div>
-</dl>
-
-## Uitleg
-
 <Summary />
 
-Voor een sneltoets van één teken houden we rekening met hoofdletters, kleine letters, leestekens, cijfers en symbolen. Dit soort sneltoetsen zijn makkelijk onbedoeld te activeren. Denk hierbij bijvoorbeeld aan bezoekers met een [screenreader](/woordenlijst/#screenreader) en spraakbediening. Bezoekers kunnen hun eigen sneltoetsen hebben die conflicteren met de sneltoetsen op de website. Invoer van spraakbediening bereikt een website vaak als losse tekens die ook deze sneltoetsen kunnen activeren.
+Bied je zulke sneltoetsen aan, dan moet minstens één van deze drie dingen waar zijn:
 
-Mochten dit soort sneltoetsen toch aanwezig zijn, dan zijn ze tenminste:
+- De sneltoetsen kunnen worden **uitgezet**.
+- De sneltoetsen kunnen worden **opnieuw toegekend** aan een combinatie met minstens één niet-afdrukbaar teken, zoals Ctrl, Alt of een functietoets.
+- De sneltoets is **alleen actief wanneer het bijbehorende bedieningselement focus heeft**. Met bedieningselement bedoelen we hier één knop, één invoerveld of één los element dat focus kan krijgen, niet een heel paneel met meerdere knoppen.
 
-- Uit te schakelen of,
-- Toe te wijzen aan andere tekens of toetsen of,
-- Alleen actief bij focus op een relevant component.
+Sneltoetsen die standaard al een niet-afdrukbare toets bevatten, zoals <kbd>Ctrl</kbd>+<kbd>S</kbd> of <kbd>Alt</kbd>+<kbd>F</kbd>, geven dit probleem niet. Spraakinvoer of een per ongeluk aangeraakte toets activeert ze niet.
+
+Kan een sneltoets geen van die drie dingen, dan gaat hij af zonder dat de gebruiker dat wil. Voor mensen die met spraakbesturing werken is dat een specifiek probleem: de software vertaalt gesproken woorden naar letterreeksen, en die letterreeksen activeren de sneltoetsen. Iemand die hardop "Hey Kim" zegt, activeert in een mailclient met enkele-letter-sneltoetsen ongemerkt drie acties achter elkaar: <kbd>Y</kbd> archiveert een bericht, <kbd>K</kbd> gaat naar de volgende conversatie en <kbd>M</kbd> dempt een thread.
+
+## Veelgemaakte fouten
+
+### Een enkele lettertoets activeert een functie zonder dat de gebruiker hem kan aanpassen
+
+Eén lettertoets voert overal in de applicatie meteen een actie uit, waar je ook op de pagina bent. Er is geen instelling om de sneltoetsen uit te zetten, en je kunt ze ook niet opnieuw toekennen aan een combinatie met Ctrl of Alt. Een gebruiker van spraaksoftware activeert dan ongewild functies tijdens het dicteren. Een toetsenbordgebruiker die per ongeluk een toets aanraakt, krijgt hetzelfde probleem.
+
+**Hoe te testen:** open de instellingen en zoek naar een optie om sneltoetsen uit te zetten of opnieuw toe te kennen. Vind je niets? Druk dan willekeurige lettertoetsen in terwijl je geen tekstveld in focus hebt. Activeren ze functies?
+
+<Guideline appearance="dont" title="Globale letter-sneltoets zonder uitzet- of aanpasoptie">
+    ```js
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "k") {
+        gaNaarVolgendeBericht();
+      }
+      if (event.key === "y") {
+        archiveerBericht();
+      }
+    });
+    // Geen instelling om uit te zetten, niet aan te passen.
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Sneltoets achter een instelling die de gebruiker kan uitzetten">
+    ```js
+    document.addEventListener("keydown", (event) => {
+      if (!instellingen.sneltoetsenAan) return;
+      if (event.key === instellingen.toetsVolgende) {
+        gaNaarVolgendeBericht();
+      }
+      if (event.key === instellingen.toetsArchiveren) {
+        archiveerBericht();
+      }
+    });
+    // In de instellingen kan de gebruiker sneltoetsen uitzetten
+    // of een combinatie met Ctrl of Alt kiezen.
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een instelling toe om sneltoetsen uit te zetten, of bouwt een scherm waarin de gebruiker de sneltoetsen opnieuw kan toekennen aan combinaties met Ctrl, Alt of Shift.
+
+### De sneltoets werkt op de hele pagina, niet alleen op het bedieningselement
+
+De sneltoets hoort bij één specifiek bedieningselement, bijvoorbeeld een `<video>`-element dat met de toets <kbd>K</kbd> pauzeert. Maar de sneltoets is aan de hele pagina gekoppeld in plaats van aan dat ene bedieningselement. Daardoor reageert de toets overal in de applicatie, ook als de gebruiker met een ander deel van de pagina bezig is. De sneltoets is pas écht "alleen actief bij focus" als hij begrensd is tot dat ene bedieningselement en niet ook elders op de pagina reageert.
+
+Het bedieningspaneel van een videospeler bestaat zelf uit meerdere bedieningselementen: een play-knop, een volumeschuif, een knop voor ondertiteling. Een sneltoets hoort bij één van die elementen. Of bij het `<video>`-element zelf als dat als één geheel werkt en focus kan krijgen.
+
+Het maakt uit wie de bediening levert. Gebruik je de ingebouwde bediening van de browser met `<video controls>`, dan regelt de browser zelf welke toetsen de video bedienen. Die sneltoetsen kun je niet aanpassen, en dat hoeft ook niet. Bouw je je eigen bediening, dan laat je `controls` weg en koppel je de sneltoetsen zelf. De enkele-teken-sneltoetsen die je dan toevoegt, moet je wél uit kunnen zetten, opnieuw kunnen toekennen of kunnen beperken tot het bedieningselement.
+
+**Hoe te testen:** klik in een ander gedeelte van de pagina, bijvoorbeeld in een tekstveld buiten de videospeler. Druk daarna op de sneltoets. Reageert de video?
+
+<Guideline appearance="dont" title="Globale keydown-handler op document">
+    ```js
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "k") {
+        video.paused ? video.play() : video.pause();
+      }
+    });
+    // K pauzeert de video, óók wanneer iemand in een
+    // formulierveld typt of buiten de videospeler is.
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Keydown-handler op het bedieningselement zelf">
+    ```js
+    video.addEventListener("keydown", (event) => {
+      if (event.key === "k") {
+        video.paused ? video.play() : video.pause();
+      }
+    });
+    // K werkt alleen wanneer het video-element focus heeft.
+    // Andere knoppen van de speler, zoals voor volume,
+    // krijgen hun eigen sneltoets op de eigen knop.
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer hangt de event-handler aan het specifieke bedieningselement, bijvoorbeeld het `<video>`-element of een knop, in plaats van aan `document` of `window`. Zorg dat het element focus kan krijgen, bijvoorbeeld via `tabindex`.
+
+### De instelling om sneltoetsen aan te passen laat alleen andere afdrukbare tekens toe
+
+De applicatie biedt wel een instelling om sneltoetsen opnieuw toe te kennen, maar in dat scherm kun je alleen kiezen tussen losse lettertoetsen. Daarmee is het kernprobleem niet opgelost: alle opties zijn afdrukbare tekens. De gebruiker kan de sneltoets dan nog steeds onbedoeld activeren. Een instelling lost het pas op als de gebruiker ook een niet-afdrukbare toets kan kiezen, zoals Ctrl, Alt of een functietoets.
+
+**Hoe te testen:** open het scherm waarin je sneltoetsen kunt aanpassen. Kun je een sneltoets toewijzen aan een combinatie zoals Ctrl+letter, Alt+letter of een functietoets, of kun je alleen losse lettertoetsen kiezen?
+
+<Guideline appearance="dont" title="Instelling die alleen afdrukbare tekens accepteert">
+  ```html
+  <label for="sneltoets-archiveren">Sneltoets voor archiveren</label>
+  <select id="sneltoets-archiveren">
+    <option>A</option>
+    <option>Y</option>
+    <option>Z</option>
+  </select>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Instelling die combinaties met niet-afdrukbare toetsen toelaat">
+    ```html
+    <label for="sneltoets-archiveren">Sneltoets voor archiveren</label>
+    <input
+      type="text"
+      id="sneltoets-archiveren"
+      placeholder="Druk de gewenste toetscombinatie in"
+    />
+    <!-- Het veld vangt toetsdrukken op en accepteert combinaties
+         als Ctrl+Y, Alt+A of F2. Een lege waarde betekent: uit. -->
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer breidt de instelling uit zodat de gebruiker een combinatie met Ctrl, Alt of een functietoets kan kiezen, en biedt ook de optie om een sneltoets helemaal leeg te laten.
+
+### Een sneltoets van meerdere letters achter elkaar werkt overal en is niet aan te passen
+
+Intranetten, ticketingsystemen, klantenbeheersystemen en mailprogramma's kunnen een sequentie-sneltoets gebruiken om snel naar een andere pagina te gaan. Eerst <kbd>g</kbd>, dan <kbd>i</kbd> opent de inbox. Eerst <kbd>g</kbd>, dan <kbd>c</kbd> opent de agenda. Voor sommige gebruikers is dat snel. Voor iemand die met spraakbesturing werkt levert dat juist problemen op. Zodra er geen tekstveld in focus is, bijvoorbeeld na het sluiten van een dialoog of het opslaan van een formulier, kunnen gedicteerde woorden ongemerkt een sequentie starten. Iemand die "Gisteren had ik..." dicteert, opent zo in het systeem een onverwachte pagina.
+
+Ook voor mensen die langzaam typen of motorische problemen hebben werkt dit slecht. Een per ongeluk aangeraakte <kbd>g</kbd> start een sequentie waarvan ze het bestaan niet kennen. De volgende toetsaanslag opent een onbedoelde pagina.
+
+**Hoe te testen:** klik op een leeg vlak buiten een tekstveld in de webapp. Druk een paar willekeurige opeenvolgende lettertoetsen in. Open je per ongeluk andere pagina's van de webapp?
+
+<Guideline appearance="dont" title="Sequentie-sneltoets die overal werkt, zonder optie om uit te zetten of aan te passen">
+    ```js
+    let vorigeToets = null;
+    document.addEventListener("keydown", (event) => {
+      if (vorigeToets === "g" && event.key === "i") {
+        navigeerNaar("/inbox");
+      }
+      if (vorigeToets === "g" && event.key === "c") {
+        navigeerNaar("/agenda");
+      }
+      vorigeToets = event.key;
+    });
+    // Geen instelling om uit te zetten, niet aan te passen.
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Sequentie-sneltoetsen achter een instelling die de gebruiker kan uitzetten">
+    ```js
+    let vorigeToets = null;
+    document.addEventListener("keydown", (event) => {
+      if (!instellingen.sneltoetsenAan) return;
+      if (event.target.matches("input, textarea")) return;
+
+      const sequentie = `${vorigeToets} ${event.key}`;
+      const actie = instellingen.sneltoetsen[sequentie];
+      if (actie) actie();
+      vorigeToets = event.key;
+    });
+    // In de instellingen kan de gebruiker sequenties uitzetten,
+    // of vervangen door een combinatie met Ctrl, Alt of Shift.
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt aan de instellingen van de webapp een schakelaar toe om sneltoetsen uit te zetten, inclusief sequenties, en een aanpasoptie die ook combinaties met Ctrl, Alt of Shift accepteert. Documenteer in een sneltoetsenoverzicht waar de instelling te vinden is.
 
 ## Hoe te testen
 
-1. Zorg ervoor dat niks focus heeft. Dit kan vaak door op de achtergrond te klikken.
-2. Gebruik de [<span lang="en">Character key shortcut bookmarklet</span>](http://3needs.org/en/testing/code/kb-shortcuts.html) en controleer of er niks geactiveerd wordt.
+### Voor iedereen
 
-**Let op**: Als er tijdens de test iets de focus krijgt, dan moet de focus eerst verwijderd worden voordat de test verder kan gaan.
+1. Vraag de maker van het platform een lijst van alle sneltoetsen die de applicatie aanbiedt. Vaak staan ze in een help-pagina of in een sneltoetsenoverzicht, bijvoorbeeld bereikbaar via <kbd>?</kbd> of via "Sneltoetsen" in het menu.
+2. Schrap uit die lijst alle sneltoetsen die al een niet-afdrukbare toets bevatten, zoals Ctrl, Alt, Cmd of een functietoets. Die kunnen niet per ongeluk worden geactiveerd, dus die hoef je niet te controleren.
+3. Wat overblijft zijn sneltoetsen die uit afdrukbare tekens bestaan. Controleer voor die sneltoetsen of minstens één van de drie eisen waar is: uit te zetten, opnieuw toe te kennen met een niet-afdrukbare toets, of alleen actief bij focus.
+4. Klik buiten een tekstveld op een leeg gebied van de pagina. Typ daarna een willekeurige reeks letters. Worden er onbedoeld functies geactiveerd?
+5. Een hulpmiddel om sneltoetsen op te sporen is de [<span lang="en">Character key shortcut bookmarklet</span>](http://3needs.org/en/testing/code/kb-shortcuts.html): die maakt zichtbaar welke enkele-teken-sneltoetsen een pagina gebruikt.
 
-## Tips
+### Voor developers
 
-- Dit criterium gaat meestal fout bij het gebruik van externe videospelers. Let bij het toevoegen van externe video op of dit goed gaat. Bij YouTube kan de parameter `disablekb=1` toegevoegd worden aan de URL van de video. Voor Vimeo is dit `keyboard=false`.
-- Een teken dat op het ene toetsenbord een losse knop is, kan op een ander toetsenbord een combinatie van knoppen zijn. Uiteindelijk gaat om het aantal tekens en niet het aantal knoppen.
-- Ook sneltoetsen die in een reeks gebruikt moeten worden kunnen dit succescriterium doen falen.
+1. Zoek in de codebase naar `addEventListener("keydown"`, `onkeydown`, of vergelijkbare patronen. Hangt de handler aan `document` of `window`? Dan is de sneltoets globaal actief, ook buiten het bedieningselement waar hij bij hoort.
+2. Controleer voor elke sneltoets met een afdrukbaar teken of er een instelling is om de sneltoets uit te zetten of opnieuw toe te kennen. Zoek deze instelling in een "Voorkeuren"- of "Toegankelijkheid"-scherm.
+3. Test de instelling: kun je een sneltoets toewijzen aan een combinatie met Ctrl, Alt of een functietoets? Of accepteert het veld alleen losse afdrukbare tekens?
+4. Test met spraakbesturing. Dicteer een paar zinnen naar het scherm en let op of er onbedoeld functies worden geactiveerd. Tools: <span lang="en">Voice Control</span> op macOS, <span lang="en">Voice Access</span> op Windows, of <span lang="en">Dragon NaturallySpeaking</span>.
+5. Automatische tools zoals <span lang="en">axe DevTools</span> of <span lang="en">WAVE</span> herkennen dit probleem niet betrouwbaar. Handmatige inventarisatie van sneltoetsen blijft nodig.
+
+## Gerelateerde succescriteria
+
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): hiermee kun je alles op een pagina met het toetsenbord bedienen. Succescriterium 2.1.4 gaat een stap verder en voorkomt dat die bediening ongewenst wordt geactiveerd.
+- [2.1.2 Geen toetsenbordval](/wcag/2.1.2/): je mag bij toetsenbordnavigatie niet vast komen te zitten in een onderdeel. Dat speelt mee bij sneltoetsen die de focus verplaatsen.
+- [2.5.4 Bewegingsactivering](/wcag/2.5.4/): hetzelfde principe voor invoer via beweging, die ook uit te zetten moet zijn om onbedoelde activatie te voorkomen.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 2.1.4 Sneltoetsen voor lettertekens](https://www.w3.org/Translations/WCAG22-nl/#sneltoetsen-voor-lettertekens): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 2.1.4: Character Key Shortcuts](https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
-
-## Bronnen en tools
-
-- [<span lang="en">Character key shortcut bookmarklet</span>](http://3needs.org/en/testing/code/kb-shortcuts.html)
 
 ## W3C referenties
 
@@ -90,12 +241,6 @@ Mochten dit soort sneltoetsen toch aanwezig zijn, dan zijn ze tenminste:
 - Nederlandse vertaling van het WCAG-succescriterium: [2.1.4 Enkel teken sneltoetsen](https://www.w3.org/Translations/WCAG22-nl/#character-key-shortcuts).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.1.4 Character Key Shortcuts</span>](https://www.w3.org/WAI/WCAG22/quickref/#character-key-shortcuts).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.1.4 Character Key Shortcuts</span>](https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
