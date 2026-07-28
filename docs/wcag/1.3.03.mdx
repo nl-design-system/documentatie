@@ -74,7 +74,7 @@ Woorden als "links", "rechts", "bovenin", "onderaan" of "hiernaast" beschrijven 
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentbeheerder herschrijft de instructie en zet de naam van het element erin. Staat de tekst in een template of in een component, dan past een developer die aan.
+**Wie kan dit oplossen:** een webredacteur herschrijft de instructie en zet de naam van het element erin. Staat de tekst in een template of in een component, dan past een developer die aan.
 
 ### De instructie beschrijft hoe een icoon eruitziet
 
@@ -102,13 +102,13 @@ Instructies als "klik op de drie streepjes rechtsboven", "klik op het blauwe pot
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentbeheerder gebruikt in de instructie de tekst die op de knop staat. Heeft de knop alleen een icoon, dan zorgt een developer eerst voor een tekst die de functie beschrijft, zichtbaar naast het icoon of als toegankelijke naam.
+**Wie kan dit oplossen:** een webredacteur gebruikt in de instructie de tekst die op de knop staat. Heeft de knop alleen een icoon, dan zorgt een developer eerst voor een tekst die de functie beschrijft, zichtbaar naast het icoon of als toegankelijke naam.
 
 ### De instructie verwijst naar kleur
 
 Aanwijzingen als "de rode velden zijn verplicht", "klik op de blauwe informatieballonnetjes" of "de groene gebieden op de kaart zijn beschikbaar" werken alleen voor wie die kleuren ziet en van elkaar kan onderscheiden. Iemand met kleurenblindheid ziet geen verschil tussen de rode en de gewone velden. Een screenreadergebruiker hoort de kleur helemaal niet. De bezoeker weet dan niet welke velden verplicht zijn en komt daar pas achter bij een foutmelding.
 
-**Hoe te testen:** bekijk de pagina in grijstinten met een grijsfilter of een kleurenblindheidsimulator in je browser. Kun je nog steeds aanwijzen welke elementen de instructie bedoelt?
+**Hoe te testen:** bekijk de pagina in grijstinten met een grijsfilter of een simulator voor kleurenblindheid in je browser. Kun je nog steeds aanwijzen welke elementen de instructie bedoelt?
 
 <Guideline appearance="dont" title="Alleen de kleur geeft aan welke velden verplicht zijn">
     ```html
@@ -128,7 +128,7 @@ Aanwijzingen als "de rode velden zijn verplicht", "klik op de blauwe informatieb
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentbeheerder haalt de kleur uit de instructie en zet er een naam, label of tekst voor in de plaats. Bij een kaart of grafiek voegt een developer naast kleur ook een patroon of een label toe.
+**Wie kan dit oplossen:** een webredacteur haalt de kleur uit de instructie en zet er een naam, label of tekst voor in de plaats. Bij een kaart of grafiek voegt een developer naast kleur ook een patroon of een label toe.
 
 ### De instructie verwijst naar de grootte van een element
 
@@ -150,7 +150,7 @@ Aanwijzingen als "kies de grote knop onderaan" of "de voorwaarden staan in de kl
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentbeheerder vervangt de aanduiding van het formaat door de tekst die op het element staat.
+**Wie kan dit oplossen:** een webredacteur vervangt de aanduiding van het formaat door de tekst die op het element staat.
 
 ### De instructie verwijst naar de richting van een lijst of balk
 
@@ -175,7 +175,7 @@ Zinnen als "kies een onderwerp uit de verticale lijst" of "gebruik de horizontal
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentbeheerder verwijst naar de kop of het label van de lijst. Staat er geen kop of label boven, dan voegt een developer die toe.
+**Wie kan dit oplossen:** een webredacteur verwijst naar de kop of het label van de lijst. Staat er geen kop of label boven, dan voegt een developer die toe.
 
 ### De instructie verwijst naar een geluidssignaal
 
@@ -198,7 +198,7 @@ Een aanwijzing als "wacht tot je een pieptoon hoort en kies dan Verder" komt all
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentbeheerder herschrijft de instructie zodat die naar de zichtbare melding verwijst. Een developer zorgt dat die melding er is en dat een screenreader hem voorleest, bijvoorbeeld met een statusbericht.
+**Wie kan dit oplossen:** een webredacteur herschrijft de instructie zodat die naar de zichtbare melding verwijst. Een developer zorgt dat die melding er is en dat een screenreader hem voorleest, bijvoorbeeld met een statusbericht.
 
 ## Hoe te testen
 
@@ -225,7 +225,7 @@ Een aanwijzing als "wacht tot je een pieptoon hoort en kies dan Verder" komt all
 
 ## Gerelateerde succescriteria
 
-- [1.4.1 Gebruik van kleur](/wcag/1.4.1/): gaat over informatie die uitsluitend met kleur wordt overgebracht, zoals een status of een categorie. Een instructie die naar kleur verwijst, raakt allebei de succescriteria. Lees dit als je met kleurcodering in tabellen, grafieken of formulieren werkt.
+- [1.4.1 Gebruik van kleur](/wcag/1.4.1/): gaat over informatie die uitsluitend met kleur wordt overgebracht, zoals een status of een categorie. Een instructie die naar kleur verwijst, raakt beide succescriteria. Lees dit als je met kleurcodering in tabellen, grafieken of formulieren werkt.
 - [1.3.4 Weergavestand](/wcag/1.3.4/): gaat over een pagina die alleen staand of alleen liggend te gebruiken is. Dat is iets anders dan een instructie die naar de richting van elementen op het scherm verwijst.
 - [1.4.4 Herschalen van tekst](/wcag/1.4.4/): tekst kan tot 200% groter worden gezet zonder dat er informatie verdwijnt. Lees dit als je wilt weten waarom het formaat van een element geen vast gegeven is.
 - [1.4.10 Reflow](/wcag/1.4.10/): op een smal scherm verschuift content naar een andere plek. Lees dit als je wilt weten waarom een aanduiding als "links in het menu" op een telefoon niet meer klopt.
