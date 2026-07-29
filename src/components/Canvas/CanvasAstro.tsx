@@ -11,7 +11,6 @@ export const CanvasAstro = ({ children, language }: CanvasProps) => {
   const formattedCode = code
     .replaceAll(/&quot;/g, '"')
     .replaceAll(/\sclass="[\w-\s]+"/g, '')
-    .replaceAll(/\sid="[\w-\s]+"/g, '')
     .replace('<astro-static-slot>', '')
     .replace('</astro-static-slot>', '')
     .replaceAll(/{"\s"}/g, '')
