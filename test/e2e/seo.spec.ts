@@ -95,7 +95,7 @@ test.describe('SEO values', async () => {
             .getAttribute('content')
             .then((twitterCard) => ({ twitterCard })),
           page
-            .locator('body h1:not(.nlds-guideline h1)') // exclude h1's that are used in guideline do/don't blocks
+            .locator('body h1:not(.nlds-not-accessible h1)')
             .innerText()
             .then((h1) => ({ h1 })),
         ]).then((values) => Object.assign({}, ...values));

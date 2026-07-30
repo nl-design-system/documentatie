@@ -1,11 +1,12 @@
 import type { CanvasProps } from './Canvas';
 import Prism from 'prismjs';
+import clsx from 'clsx';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { Accordion, AccordionSection } from '../../../packages/website/src/components/accordion/accordion';
 import './CanvasAstro.css';
 import '@utrecht/component-library-css/dist/html.css';
 
-export const CanvasAstro = ({ children, language }: CanvasProps) => {
+export const CanvasAstro = ({ children, language, className }: CanvasProps) => {
   const _children = typeof children === 'function' ? children() : children;
   const code = renderToStaticMarkup(_children);
   const formattedCode = code
@@ -22,7 +23,7 @@ export const CanvasAstro = ({ children, language }: CanvasProps) => {
   const highlighed = Prism.highlight(formattedCode, Prism.languages[language], language);
 
   return (
-    <div className="ma-canvas-astro">
+    <div className={clsx('ma-canvas-astro', className)}>
       <div
         className="ma-canvas-astro__example utrecht-html ma-flow"
         dangerouslySetInnerHTML={{ __html: formattedCode }}
