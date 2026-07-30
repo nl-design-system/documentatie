@@ -19,7 +19,9 @@
     "dev": "astro dev",
     "//": "The public folder comes from the Docusaurus version. There the sitemap is not included in robots.txt. We can not add it there yet since the filename is different from Docusaurus",
     "build": "astro build && echo '\nSitemap: https://nldesignsystem.nl/sitemap-index.xml' >> ./dist/robots.txt",
-    "generate-guideline-pages": "node scripts/generate-guideline-pages.mjs",
+    "generate": "pnpm run generate:guideline-pages && pnpm run generate:component-issues",
+    "generate:guideline-pages": "node scripts/generate-guideline-pages.mjs",
+    "generate:component-issues": "node scripts/generate-component-issues.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

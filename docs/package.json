@@ -19,9 +19,10 @@
   },
   "files": [
     "**/*.md",
-    "dist/guideline-pages.json"
+    "dist/guideline-pages.json",
+    "dist/component-issues.json"
   ],
   "scripts": {
-    "prepublishOnly": "pnpm --filter @nl-design-system/website-astro run build && pnpm --filter @nl-design-system/website-astro run generate-guideline-pages"
+    "prepublishOnly": "pnpm --filter @nl-design-system/website-astro run build && pnpm --filter @nl-design-system/website-astro run generate"
   }
 }

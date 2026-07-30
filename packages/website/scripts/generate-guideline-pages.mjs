@@ -91,7 +91,6 @@ const pages = (
 
 const output = {
   site: SITE_URL,
-  count: pages.length,
   pages,
 };
 
