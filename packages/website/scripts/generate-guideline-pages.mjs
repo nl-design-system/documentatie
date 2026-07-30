@@ -46,7 +46,7 @@ const docsDistDir = fileURLToPath(new URL('../../../docs/dist', import.meta.url)
 async function findHtmlFiles(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
   const files = await Promise.all(
-    entries.map((entry) => {
+    entries.map(async (entry) => {
       const fullPath = join(dir, entry.name);
       if (entry.isDirectory()) {
         return findHtmlFiles(fullPath);

@@ -87,13 +87,13 @@ async function readIssue(issueDir) {
   };
 }
 
-const componentNames = (await readDirNames(componentenDir)).sort();
+const componentNames = (await readDirNames(componentenDir)).sort((a, b) => a.localeCompare(b));
 
 const components = (
   await Promise.all(
     componentNames.map(async (component) => {
       const issuesDir = join(componentenDir, component, '_issues');
-      const slugs = (await readDirNames(issuesDir)).sort();
+      const slugs = (await readDirNames(issuesDir)).sort((a, b) => a.localeCompare(b));
       if (slugs.length === 0) {
         return null;
       }
