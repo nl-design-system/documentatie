@@ -9,14 +9,40 @@ pagination_label: About Design Systems Week
 sidebar_position: 1
 navigation_order: 1
 slug: /events/design-systems-week/en
-image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2025.png
-image_alt: NL Design System Design Systems Week 2024 27-30 October, online
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2026.png
+image_alt: NL Design System Design Systems Week 2026 26-29 October, online
 ---
 
 import { IconChevronRight } from "@tabler/icons-react";
 import { ButtonLink, ButtonGroup as ActionGroup, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import settings from "../settings.json";
+
+export const isUpcomingOrHappening = settings.isUpcoming || settings.isHappening;
 
 # Design Systems Week
+
+{!!settings.isUpcomingOrHappening && (<>
+
+<Paragraph lead>
+  NL Design System is organising the Design Systems Week for the {settings.en.edition} time. It will feature a number of short talks
+  about the how and why of design systems. All online. From {settings.en.dateRange}, we will cover subjects like
+  managing design systems, integrating accessibility, user research and code.
+</Paragraph>
+
+<ActionGroup>
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/sign-up`} appearance="primary-action-button">
+    {"Sign up"}
+    <IconChevronRight />
+  </ButtonLink>
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="secondary-action-button">
+    {"View the Program"}
+    <IconChevronRight />
+  </ButtonLink>
+</ActionGroup>
+
+</>)}
+
+{!settings.isUpcomingOrHappening && (<>
 
 <Paragraph lead>
   Design Systems Week is an online event organized by NL Design System. During this week, several short sessions are
@@ -25,11 +51,15 @@ import { ButtonLink, ButtonGroup as ActionGroup, Paragraph } from "@utrecht/comp
   and best practices.
 </Paragraph>
 
+</>)}
+
 ---
 
 ## Previous editions
 
-Check out the videos from previous years.
+{!!settings.isUpcomingOrHappening && (`This is the ${settings.en.edition} year that NL Design System is organizing Design Systems Week. Can't wait? Then check out the videos from previous years!`)}
+
+{!settings.isUpcomingOrHappening && ("Check out the videos from previous years.")}
 
 - [Design Systems Week 2025](/events/design-systems-week-2025/en/program)
 - [Design Systems Week 2024](/events/design-systems-week-2024/en/program)
@@ -41,10 +71,10 @@ Design Systems Week is organised by the NL Design System core team.
 
 At NL Design System, web professionals from across the government collaborate on building blocks for websites and applications, like code, design and guidelines. The project is managed by ICTU for the Dutch Ministry of the Interior and Kingdom Relations.
 
-## Accessibility
-
-We do our best to organise Design Systems Week accessibly. If you have specific questions or requests, please do reach to the NL Design System core team at i[info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).
-
 ## Code of Conduct
 
 All participants of Design Systems Week are expected to abide by our [NL Design System Code of Conduct](https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.md) van toepassing. By signing up for one or more sessions you've agreed to these terms.
+
+## Accessibility
+
+We do our best to organise Design Systems Week accessibly. If you have specific questions or requests, please do reach to the NL Design System core team at i[info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).
