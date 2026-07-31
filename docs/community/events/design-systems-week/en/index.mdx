@@ -17,11 +17,11 @@ import { IconChevronRight } from "@tabler/icons-react";
 import { ButtonLink, ButtonGroup as ActionGroup, Paragraph } from "@utrecht/component-library-react/dist/css-module";
 import settings from "../settings.json";
 
-export const isUpcomingOrHappening = settings.isUpcoming || settings.isHappening;
+export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappening;
 
 # Design Systems Week
 
-{!!settings.isUpcomingOrHappening && (<>
+{!!isUpComingOrHappening && (<>
 
 <Paragraph lead>
   NL Design System is organising the Design Systems Week for the {settings.en.edition} time. It will feature a number of
@@ -42,7 +42,7 @@ export const isUpcomingOrHappening = settings.isUpcoming || settings.isHappening
 
 </>)}
 
-{!settings.isUpcomingOrHappening && (<>
+{!isUpComingOrHappening && (<>
 
 <Paragraph lead>
   Design Systems Week is an online event organized by NL Design System. During this week, several short sessions are
@@ -57,9 +57,9 @@ export const isUpcomingOrHappening = settings.isUpcoming || settings.isHappening
 
 ## Previous editions
 
-{!!settings.isUpcomingOrHappening && (`This is the ${settings.en.edition} year that NL Design System is organizing Design Systems Week. Can't wait? Then check out the videos from previous years!`)}
+{!!isUpComingOrHappening && (`This is the ${settings.en.edition} year that NL Design System is organizing Design Systems Week. Can't wait? Then check out the videos from previous years!`)}
 
-{!settings.isUpcomingOrHappening && ("Check out the videos from previous years.")}
+{!isUpComingOrHappening && ("Check out the videos from previous years.")}
 
 - [Design Systems Week 2025](/events/design-systems-week-2025/en/program)
 - [Design Systems Week 2024](/events/design-systems-week-2024/en/program)
