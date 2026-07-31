@@ -1,61 +1,46 @@
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { glob, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as cheerio from 'cheerio';
 
 /**
- * @typedef {{ label: string, id?: string }} Heading
+ * @typedef {{ label: string, id?: string, type: 'heading' }} Fragment
  */
 
 /**
  * Extract every `<h2>` heading inside `main` from a loaded cheerio document, in
- * document order. Skips the "Inhoudsopgave" heading and keeps each heading's
- * label and (optional) id.
+ * document order, as page fragments. Skips the "Inhoudsopgave" heading and keeps
+ * each fragment's label, (optional) id and type.
+ *
+ * The `type` field keeps the format open for growth: other kinds of in-page
+ * fragments can be added later, and consumers (e.g. a dead-link checker) can
+ * filter on it.
  *
  * NOTE: keep this in sync with the heading extraction in
  * `src/middleware/table-of-contents.ts` — both must select and filter headings
  * the same way so the generated pages match the on-page table of contents.
  * @param {import('cheerio').CheerioAPI} $
- * @returns {Heading[]}
+ * @returns {Fragment[]}
  */
-function extractHeadings($) {
+function extractFragments($) {
   /**
-   * @type {Heading[]}
+   * @type {Fragment[]}
    */
-  const headings = [];
+  const fragments = [];
   $('main h2').each((_index, element) => {
     const label = $(element).text();
     const id = $(element).attr('id');
     if (label.toLowerCase() !== 'inhoudsopgave') {
-      headings.push({ label, id });
+      fragments.push({ label, id, type: 'heading' });
     }
   });
-  return headings;
+  return fragments;
 }
 
 const SITE_URL = 'https://nldesignsystem.nl';
 const distDir = fileURLToPath(new URL('../dist', import.meta.url));
 // Output ships with the `@nl-design-system-unstable/documentation` package.
 const docsDistDir = fileURLToPath(new URL('../../../docs/dist', import.meta.url));
-
-/**
- * Recursively collect every `*.html` file below `dir`.
- * @param {string} dir
- * @returns {Promise<string[]>}
- */
-async function findHtmlFiles(dir) {
-  const entries = await readdir(dir, { withFileTypes: true });
-  const files = await Promise.all(
-    entries.map(async (entry) => {
-      const fullPath = join(dir, entry.name);
-      if (entry.isDirectory()) {
-        return findHtmlFiles(fullPath);
-      }
-      return entry.isFile() && entry.name.endsWith('.html') ? [fullPath] : [];
-    }),
-  );
-  return files.flat();
-}
 
 /**
  * Turn a dist-relative html file path into a clean site route.
@@ -70,9 +55,14 @@ function toRoute(htmlFile) {
   return '/' + route;
 }
 
-const allHtmlFiles = await findHtmlFiles(distDir);
-// Only generate routes and anchors for the `/richtlijnen` path.
-const htmlFiles = allHtmlFiles.filter((htmlFile) => toRoute(htmlFile).startsWith('/richtlijnen'));
+const htmlFiles = [];
+for await (const relPath of glob('**/*.html', { cwd: distDir })) {
+  const htmlFile = join(distDir, relPath);
+  // Only generate routes and anchors for the `/richtlijnen` path.
+  if (toRoute(htmlFile).startsWith('/richtlijnen')) {
+    htmlFiles.push(htmlFile);
+  }
+}
 
 const pages = (
   await Promise.all(
@@ -83,13 +73,14 @@ const pages = (
         path,
         url: new URL(path, SITE_URL).href,
         file: relative(distDir, htmlFile).split(sep).join('/'),
-        headings: extractHeadings(cheerio.load(html)),
+        fragments: extractFragments(cheerio.load(html)),
       };
     }),
   )
 ).sort((a, b) => a.path.localeCompare(b.path));
 
 const output = {
+  $comment: 'This file is currently incomplete, it only contains some pages, not all pages.',
   site: SITE_URL,
   pages,
 };

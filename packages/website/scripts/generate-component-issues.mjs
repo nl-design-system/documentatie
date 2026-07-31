@@ -1,52 +1,21 @@
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { basename, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { remark } from 'remark';
+import { readMarkdownAsText } from './lib/markdown-to-text.mjs';
 
 // Source markdown lives in the documentation package; output ships with it too.
 const componentenDir = fileURLToPath(new URL('../../../docs/componenten', import.meta.url));
 const docsDistDir = fileURLToPath(new URL('../../../docs/dist', import.meta.url));
 
 /**
- * Flatten an mdast tree to plain text: inline nodes are concatenated, block-level
- * siblings are separated by newlines, and raw HTML (e.g. `<!-- @license -->`
- * comments) is dropped.
- * @param {import('mdast').Nodes} node
+ * Turn a kebab-case directory name into a human-readable label.
+ * `font-family` -> `Font family`.
+ * @param {string} name
  * @returns {string}
  */
-function mdastToPlainText(node) {
-  switch (node.type) {
-    case 'text':
-    case 'inlineCode':
-    case 'code':
-      return node.value;
-    case 'break':
-      return '\n';
-    case 'html':
-      // Skip raw HTML such as the license/author comments at the top of each file.
-      return '';
-    default:
-      break;
-  }
-  if (!('children' in node) || !Array.isArray(node.children)) {
-    return '';
-  }
-  // Separate block-level children (list items, paragraphs) by a newline so lists
-  // don't collapse into a single run-on line; keep inline children glued together.
-  const blockContainers = new Set(['root', 'list', 'listItem', 'blockquote']);
-  const separator = blockContainers.has(node.type) ? '\n' : '';
-  return node.children.map(mdastToPlainText).join(separator);
-}
-
-/**
- * Read a markdown file and return its content as trimmed plain text.
- * @param {string} file
- * @returns {Promise<string>}
- */
-async function readMarkdownAsText(file) {
-  const markdown = await readFile(file, 'utf8');
-  const text = mdastToPlainText(remark().parse(markdown));
-  return text.replace(/\n{3,}/g, '\n\n').trim();
+function humanize(name) {
+  const spaced = name.replace(/-/g, ' ');
+  return spaced.charAt(0).toUpperCase() + spaced.slice(1);
 }
 
 /**
@@ -60,12 +29,14 @@ async function readDirNames(dir) {
 }
 
 /**
- * Build the issue object for a single `_issues/<slug>` folder: metadata id/title
- * plus one key per markdown file (`solution`, `explanation`, `editor-error`, …).
+ * Build the issue object for a single `_issues/<slug>` folder: a reference to its
+ * `subject`, the metadata id/title, plus one key per markdown file (`solution`,
+ * `explanation`, `editor-error`, …).
  * @param {string} issueDir
+ * @param {string} subject id of the subject this issue belongs to
  * @returns {Promise<Record<string, string>>}
  */
-async function readIssue(issueDir) {
+async function readIssue(issueDir, subject) {
   const metadata = JSON.parse(await readFile(join(issueDir, 'metadata.json'), 'utf8'));
 
   const entries = await readdir(issueDir, { withFileTypes: true });
@@ -81,6 +52,7 @@ async function readIssue(issueDir) {
   );
 
   return {
+    subject,
     id: metadata.id,
     title: metadata.title,
     ...texts,
@@ -89,7 +61,9 @@ async function readIssue(issueDir) {
 
 const componentNames = (await readDirNames(componentenDir)).sort((a, b) => a.localeCompare(b));
 
-const components = (
+// Each component is a `subject`; the `type` field keeps the format open so other
+// kinds of subjects (templates, guidelines, …) can be added later.
+const subjectGroups = (
   await Promise.all(
     componentNames.map(async (component) => {
       const issuesDir = join(componentenDir, component, '_issues');
@@ -97,22 +71,24 @@ const components = (
       if (slugs.length === 0) {
         return null;
       }
-      const issues = await Promise.all(slugs.map((slug) => readIssue(join(issuesDir, slug))));
-      return { component, issues };
+      const issues = await Promise.all(slugs.map((slug) => readIssue(join(issuesDir, slug), component)));
+      return {
+        subject: { id: component, label: humanize(component), type: 'component' },
+        issues,
+      };
     }),
   )
 ).filter(Boolean);
 
 const output = {
-  components,
+  subjects: subjectGroups.map((group) => group.subject),
+  issues: subjectGroups.flatMap((group) => group.issues),
 };
-
-const totalIssues = components.reduce((total, { issues }) => total + issues.length, 0);
 
 const outFile = join(docsDistDir, 'component-issues.json');
 await mkdir(docsDistDir, { recursive: true });
 await writeFile(outFile, JSON.stringify(output, null, 2) + '\n', 'utf8');
 
 console.log(
-  `Wrote ${totalIssues} issues across ${components.length} components to ${relative(process.cwd(), outFile)}`,
+  `Wrote ${output.issues.length} issues across ${output.subjects.length} subjects to ${relative(process.cwd(), outFile)}`,
 );
