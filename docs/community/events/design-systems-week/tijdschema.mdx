@@ -26,9 +26,9 @@ import settings from "./settings.json";
 # Tijdschema Design Systems Week {settings.year}
 
 <Paragraph lead>
-  NL Design System organiseert in {settings.year} voor de 6e keer de Design Systems Week. Van **{settings.nl.dateRange}
-  ** zijn er dagelijks meerdere korte sessies van diverse organisaties online te volgen over het **hoe en waarom van
-  design systems**.
+  NL Design System organiseert in {settings.year} voor de 6e keer de Design Systems Week. Van{" "}
+  <strong>{settings.nl.dateRange}</strong> zijn er dagelijks meerdere korte sessies van diverse organisaties online te
+  volgen over het **hoe en waarom van design systems**.
 </Paragraph>
 
 {!settings.isHappening && (
@@ -56,9 +56,11 @@ import settings from "./settings.json";
   )}
 </ActionGroup>
 
+</>)}
+
 {/* Vul in per dag */}
 
-<Heading2>Maandag 26 oktober</Heading2>
+## Maandag 26 oktober
 
 <SessionTable
   lang="nl-NL"
@@ -66,7 +68,7 @@ import settings from "./settings.json";
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-26`))}
 />
 
-<Heading2>Dinsdag 27 oktober</Heading2>
+## Dinsdag 27 oktober
 
 <SessionTable
   lang="nl-NL"
@@ -74,7 +76,7 @@ import settings from "./settings.json";
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-27`))}
 />
 
-<Heading2>Woensdag 28 oktober</Heading2>
+## Woensdag 28 oktober
 
 <SessionTable
   lang="nl-NL"
@@ -82,13 +84,15 @@ import settings from "./settings.json";
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-28`))}
 />
 
-<Heading2>Donderdag 29 oktober</Heading2>
+## Donderdag 29 oktober
 
 <SessionTable
   lang="nl-NL"
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-29`))}
 />
+
+{!!settings.isHappening && (<>
 
 <hr></hr>
 
