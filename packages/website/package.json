@@ -22,7 +22,7 @@
     "build:guideline-pages": "node scripts/generate-guideline-pages.mjs",
     "build:component-issues": "node scripts/generate-component-issues.mjs",
     "preview": "astro preview",
-    "test": "node --test 'scripts/**/*.test.mjs'",
+    "test": "vitest run",
     "astro": "astro"
   },
   "dependencies": {
@@ -132,6 +132,7 @@
     "remark-custom-header-id": "1.0.0",
     "remark-directive": "4.0.0",
     "unified": "11.0.5",
-    "vfile": "6.0.3"
+    "vfile": "6.0.3",
+    "vitest": "4.1.10"
   }
 }
