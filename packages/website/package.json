@@ -18,8 +18,11 @@
     "clean": "rimraf .astro/ dist/",
     "dev": "astro dev",
     "//": "The public folder comes from the Docusaurus version. There the sitemap is not included in robots.txt. We can not add it there yet since the filename is different from Docusaurus",
-    "build": "astro build && echo '\nSitemap: https://nldesignsystem.nl/sitemap-index.xml' >> ./dist/robots.txt",
+    "build": "astro build && echo '\nSitemap: https://nldesignsystem.nl/sitemap-index.xml' >> ./dist/robots.txt && pnpm run build:guideline-pages && pnpm run build:component-issues",
+    "build:guideline-pages": "node scripts/generate-guideline-pages.mjs",
+    "build:component-issues": "node scripts/generate-component-issues.mjs",
     "preview": "astro preview",
+    "test": "vitest run",
     "astro": "astro"
   },
   "dependencies": {
@@ -129,6 +132,7 @@
     "remark-custom-header-id": "1.0.0",
     "remark-directive": "4.0.0",
     "unified": "11.0.5",
-    "vfile": "6.0.3"
+    "vfile": "6.0.3",
+    "vitest": "4.1.10"
   }
 }
