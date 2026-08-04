@@ -46,10 +46,10 @@ import { Guideline } from "@site/src/components/Guideline";
 >
   <Canvas language="html">
     {() => (
-      // Only the double datatest-id="exclude-axe" seems to work
-      <div datatest-id="exclude-axe">
+      // Only the double data-test-axe="false" seems to work
+      <div data-test-axe="false">
         <div htmlFor="kleur5">Wat is je lievelingskleur?</div>
-        <input type="text" id="kleur5" name="lievelingskleur" datatest-id="exclude-axe" />
+        <input type="text" id="kleur5" name="lievelingskleur" data-test-axe="false" />
       </div>
     )}
   </Canvas>
@@ -61,13 +61,13 @@ import { Guideline } from "@site/src/components/Guideline";
 >
   <Canvas language="html">
     {() => (
-      // Only the double datatest-id="exclude-axe" seems to work
-      <div datatest-id="exclude-axe">
+      // Only the double data-test-axe="false" seems to work
+      <div data-test-axe="false">
         <p>
           <label>Wat is je lievelingskleur?</label>
         </p>
         <p>
-          <select datatest-id="exclude-axe" name="lievelingskleur">
+          <select data-test-axe="false" name="lievelingskleur">
             <option>Rood</option>
             <option>Blauw</option>
             <option>Wit</option>
