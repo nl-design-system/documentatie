@@ -1,9 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "pnpm install --frozen-lockfile",
-  "buildCommand": "pnpm run build:docusaurus",
+  "buildCommand": "cd ../.. && pnpm --filter @nl-design-system/website-astro run build",
   "framework": null,
-  "outputDirectory": "build",
+  "outputDirectory": "dist",
   "git": {
     "deploymentEnabled": {
       "dependabot/*": false,

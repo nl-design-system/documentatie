@@ -25,6 +25,7 @@ const cspConnectSrcSources = ['https://*.algolia.net', 'https://*.algolianet.com
 const cspImgSrcSources = [
   'https://raw.githubusercontent.com',
   'https://i.ytimg.com',
+  'https://img.youtube.com',
   'https://www.toegankelijkheidsverklaring.nl',
   'https://github.com',
   'https://www.gebruikercentraal.nl',
