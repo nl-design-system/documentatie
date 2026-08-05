@@ -29,6 +29,13 @@ module.exports = {
         parser: 'astro',
       },
     },
+    {
+      // match pnpm CLI-driven changes behavior
+      files: ['pnpm-workspace.yaml'],
+      options: {
+        singleQuote: true,
+      },
+    },
   ],
   plugins: ['prettier-plugin-astro'],
 };
