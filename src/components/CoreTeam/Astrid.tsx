@@ -16,7 +16,7 @@ const Astrid: TeamMember = {
         opdracht.
       </Paragraph>
       <Paragraph>
-        Risico's, escalaties, feedback en zaken rondom de Code of Conduct bij haar of Yolijn worden gemeld.
+        Risico's, escalaties, feedback en zaken rondom de Code of Conduct bij haar worden gemeld.
       </Paragraph>
     </>
   ),
