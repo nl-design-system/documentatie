@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.3.4 Weergavestand
 pagination_label: WCAG-succescriterium 1.3.4 Weergavestand
-description: Een website is staand en liggend gelijkwaardig.
+description: Een webpagina werkt zowel staand als liggend, zodat een bezoeker het apparaat niet hoeft te draaien om de pagina te kunnen gebruiken.
 slug: 1.3.4
 conformance_level: Niveau AA
 keywords:
@@ -16,15 +16,23 @@ keywords:
   - perceivable
   - adaptable
   - orientation
+  - weergavestand
+  - oriëntatie
+  - staand
+  - liggend
+  - scherm draaien
+  - schermrotatie
+  - telefoon kantelen
+  - toegankelijkheid
+  - WCAG 1.3.4
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.3.4-summary.md";
 
@@ -36,10 +44,140 @@ import Summary from "./summaries/_1.3.4-summary.md";
 
 <Summary />
 
+Niet iedereen die het apparaat kan draaien, doet dat ook. Sommige bezoekers zetten de automatische schermrotatie uit, omdat de weergave anders bij elke beweging omklapt. Anderen gebruiken een tablet op een standaard en houden zo hun handen vrij om te typen.
+
+Voor een enkel onderdeel is één stand wel nodig. Een piano-app heeft de breedte van de liggende stand nodig om alle toetsen te tonen, en een foto maken van een identiteitsbewijs lukt alleen in de stand die bij het document past. In die gevallen is de stand essentieel: zonder die stand werkt het onderdeel niet. Dat geldt dan voor dat ene onderdeel, niet voor een hele pagina.
+
+## Veelgemaakte fouten
+
+### De pagina vraagt de bezoeker om het apparaat te draaien
+
+Een pagina toont in de staande stand een melding als "Draai je telefoon naar de liggende stand om verder te gaan" en verbergt de content tot de bezoeker draait. Wie het apparaat niet kan draaien, ziet alleen die melding en komt niet bij de content. Voor iemand met een apparaat dat vastzit aan een rolstoel of een standaard is de pagina daarmee onbruikbaar.
+
+**Hoe te testen:** open de pagina op een telefoon en draai het apparaat naar beide standen. Verschijnt er een melding die je dwingt om te draaien voordat je verder kunt?
+
+<Guideline appearance="dont" title="De pagina verbergt de content in de staande stand">
+  ```css
+  @media (orientation: portrait) {
+    .content {
+      display: none;
+    }
+    .draai-melding {
+      display: block;
+    }
+  }
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De content is in beide standen te zien">
+  ```css
+  .draai-melding {
+    display: none;
+  }
+  .content {
+    display: block;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een designer maakt een ontwerp voor beide standen, zodat de melding niet meer nodig is.
+- Een developer haalt de melding weg en zorgt dat de opmaak in beide standen werkt. Is de liggende stand handiger voor bijvoorbeeld een brede tabel, stel die stand dan voor in plaats van hem te verplichten.
+
+### De weergave draait niet mee als de bezoeker het apparaat draait
+
+Een webapp kan de weergave op één stand vastzetten, via de eigenschap `orientation` in het manifest of via `screen.orientation.lock()`. Het scherm blijft dan in dezelfde stand, ook als de bezoeker het apparaat draait terwijl de automatische rotatie aanstaat. De app bepaalt zo de stand, en de bezoeker kan daar niets aan veranderen.
+
+**Hoe te testen:** zet de automatische schermrotatie van je apparaat aan, open de pagina en draai het apparaat. Draait de weergave mee, of blijft die in één stand staan?
+
+<Guideline appearance="dont" title="Het manifest zet de weergave op één stand vast">
+  ```json
+  {
+    "name": "Mijn app",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De weergave volgt de stand van het apparaat">
+  ```json
+  {
+    "name": "Mijn app",
+    "display": "standalone",
+    "orientation": "any"
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zet `orientation` in het manifest op `any` of laat de eigenschap weg, en verwijdert aanroepen van `screen.orientation.lock()`. Is een vaste stand echt essentieel voor een onderdeel, bijvoorbeeld een spel dat je met bewegingen bestuurt, leg dan vast waarom en beperk het tot dat onderdeel.
+
+### De opmaak is maar voor één weergavestand gemaakt
+
+De pagina draait wel mee met het apparaat, maar de opmaak is op één stand afgestemd. In de andere stand is content niet meer te zien, overlappen elementen elkaar of staat een knop buiten beeld. De bezoeker ziet dan wel iets, maar kan de taak niet afmaken. Dit gebeurt bij een vaste hoogte of breedte die uitgaat van één stand.
+
+**Hoe te testen:** bekijk de pagina in beide standen en loop een taak van begin tot eind door, zoals een formulier invullen of afrekenen. Kun je elke stap zien en bedienen, of komt er iets buiten beeld te staan?
+
+<Guideline appearance="dont" title="Alleen de liggende stand krijgt opmaak">
+  ```css
+  @media (orientation: landscape) {
+    .stappen {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+  .knop-volgende {
+    position: absolute;
+    left: 900px;
+  }
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De opmaak past zich aan de beschikbare ruimte aan">
+  ```css
+  .stappen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .knop-volgende {
+    margin-top: 1rem;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een designer en een developer maken de opmaak flexibel, zodat content zich naar de beschikbare ruimte voegt in plaats van uit te gaan van een vaste breedte of hoogte. Stuur daarbij op `min-height` en `min-width`, of op de logische varianten `min-block-size` en `min-inline-size`, in plaats van op vaste maten. Een opmaak die meebeweegt met het scherm werkt meteen in beide standen.
+
 ## Hoe te testen
 
-- Open een webpagina in een browser op een computer en pas de verhoudingen van het venster aan. Controleer of dezelfde inhoud en functionaliteit aanwezig is als de verhoudingen liggend en staand zijn.
-- Deze test kan ook op een mobiel apparaat gedaan worden. Stel op het apparaat in dat het scherm gedraaid kan worden. Draai het scherm en controleer of dezelfde inhoud en functionaliteit aanwezig is als de verhoudingen liggend en staand zijn.
+### Voor iedereen
+
+1. Open de pagina op een telefoon of tablet en draai het apparaat van staand naar liggend en terug.
+2. Zet de automatische schermrotatie van je apparaat aan. Draait de weergave mee met het apparaat?
+3. Let op meldingen die je vragen om te draaien voordat je verder kunt.
+4. Loop een hele taak door in de staande stand en daarna in de liggende stand: een formulier invullen, een video bekijken, een bestelling afronden. Kun je elke stap in beide standen zien en bedienen?
+5. Werkt een onderdeel maar in één stand, ga dan na of het zonder die stand echt niet kan werken.
+
+### Voor developers
+
+1. Open de pagina in de DevTools, zet de apparaatsimulatie aan en gebruik de draaiknop om tussen de staande en de liggende stand te wisselen. Blijft alle content zichtbaar en bruikbaar?
+2. Controleer het web-app-manifest. Staat `orientation` op `portrait` of `landscape`, dan zet dat de stand vast. Gebruik `any` of laat de eigenschap weg.
+3. Doorzoek je JavaScript-code op `screen.orientation.lock` en `lockOrientation`. Deze aanroepen houden de weergave in één stand.
+4. Doorzoek de CSS op `@media (orientation: portrait)` en `@media (orientation: landscape)`. Controleer bij elke vindplaats of de andere stand ook bruikbare opmaak krijgt.
+5. Automatische testtools herkennen dit niet betrouwbaar. Een vastgezette of eenzijdig opgemaakte weergavestand vind je door de pagina in beide standen met de hand te bekijken.
+
+## Gerelateerde succescriteria
+
+- [1.3.3 Zintuiglijke eigenschappen](/wcag/1.3.3/): gaat over instructies die naar de richting van elementen verwijzen, zoals "de horizontale balk bovenaan". Dat is iets anders dan succescriterium 1.3.4, waar het om de stand van het hele scherm gaat. Lees dit als je instructies schrijft over waar iets op de pagina staat.
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): een bezoeker kan tekst 2 keer zo groot instellen en kan dan nog steeds alles op de pagina lezen en bedienen. Lees dit als je wilt weten waarom content bij een vaste breedte of hoogte buiten beeld komt te staan.
+- [1.4.10 Reflow](/wcag/1.4.10/): content past in één kolom op een smal scherm, zonder dat de bezoeker twee kanten op moet scrollen. Reflow en de weergavestand hangen samen: een opmaak die meebeweegt met de beschikbare ruimte, werkt in beide standen. Lees dit als je de opmaak flexibel wilt maken.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 1.3.4 Weergavestand](https://www.w3.org/Translations/WCAG22-nl/#weergavestand): de officiële Nederlandse vertaling van het succescriterium. Gebruik dit als referentie voor de exacte tekst.
+- [<span lang="en">Understanding SC 1.3.4: Orientation</span>](https://www.w3.org/WAI/WCAG22/Understanding/orientation.html): de uitleg van het W3C, met technieken en voorbeelden. Engelstalig, bedoeld voor wie de achtergrond en de randgevallen wil kennen.
+- [<span lang="en">MDN: manifest orientation</span>](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation): de documentatie bij de eigenschap `orientation` van het web-app-manifest, met de toegestane waarden. Engelstalig. Lees dit als je een progressive web app bouwt en de stand niet wilt vastzetten.
 
 ## Gebruikersonderzoek
 
@@ -51,12 +189,6 @@ import Summary from "./summaries/_1.3.4-summary.md";
 - Nederlandse vertaling van het WCAG-succescriterium: [1.3.4 Weergavestand](https://www.w3.org/Translations/WCAG22-nl/#orientation).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.4 Orientation</span>](https://www.w3.org/WAI/WCAG22/quickref/#orientation).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.4 Orientation</span>](https://www.w3.org/WAI/WCAG22/Understanding/orientation.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
