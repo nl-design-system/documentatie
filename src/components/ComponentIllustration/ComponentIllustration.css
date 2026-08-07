@@ -1,5 +1,5 @@
 .ma-component-illustration {
-  --ma-component-illustration-background-color: var(--basis-color-default-bg-subtle);
+  --ma-component-illustration-grid-background-color: var(--basis-color-default-bg-subtle);
   --ma-component-illustration-grid-color: var(--basis-color-default-border-subtle);
 
   block-size: auto;
@@ -13,18 +13,22 @@
 }
 
 .ma-component-illustration--help-wanted {
+  --ma-component-illustration-background-color: var(--ma-color-help-wanted-bg-default);
   --ma-component-illustration-color: var(--ma-color-help-wanted-color-default);
 }
 
 .ma-component-illustration--community {
+  --ma-component-illustration-background-color: var(--ma-color-community-bg-default);
   --ma-component-illustration-color: var(--ma-color-community-color-default);
 }
 
 .ma-component-illustration--candidate {
+  --ma-component-illustration-background-color: var(--ma-color-candidate-bg-default);
   --ma-component-illustration-color: var(--ma-color-candidate-border-default);
 }
 
 .ma-component-illustration--hall-of-fame {
+  --ma-component-illustration-background-color: var(--ma-color-hall-of-fame-bg-default);
   --ma-component-illustration-color: var(--ma-color-hall-of-fame-color-default);
 }
 
