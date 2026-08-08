@@ -18,6 +18,11 @@
     "directory": "docs"
   },
   "files": [
-    "**/*.md"
-  ]
+    "**/*.md",
+    "dist/guideline-pages.json",
+    "dist/component-issues.json"
+  ],
+  "scripts": {
+    "prepublishOnly": "pnpm --filter @nl-design-system/website-astro run build"
+  }
 }
