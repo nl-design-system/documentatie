@@ -12,6 +12,7 @@ import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
 import { remarkUnwrapDiv } from './markdown-plugins/remark-unwrap-div';
 import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
 import { videoplayerClientLoadPlugin } from './markdown-plugins/remark-videoplayer-client-load';
+import { unified } from '@astrojs/markdown-remark';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -80,6 +81,7 @@ export default defineConfig({
     build: {
       // prevent vite from inlining assets as data:* attributes because it violates csp rules
       assetsInlineLimit: 0,
+      cssMinify: 'esbuild',
     },
     ssr: {
       noExternal: [/@rijkshuisstijl-community\/.*/],
@@ -90,23 +92,33 @@ export default defineConfig({
   },
 
   markdown: {
-    remarkPlugins: [remarkUnwrapDiv, remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
-    rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+    processor: unified({
+      remarkPlugins: [
+        remarkUnwrapDiv,
+        remarkCustomHeaderId,
+        remarkDirective,
+        remarkAdmonitions,
+        removeH1FromMarkdown(),
+      ],
+      rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+    }),
     syntaxHighlight: 'prism',
   },
 
   integrations: [
     mdx({
-      remarkPlugins: [
-        remarkCanvasFix,
-        remarkUnwrapDiv,
-        remarkCustomHeaderId,
-        remarkDirective,
-        remarkAdmonitions,
-        videoplayerClientLoadPlugin,
-        removeH1FromMarkdown(),
-      ],
-      rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+      processor: unified({
+        remarkPlugins: [
+          remarkCanvasFix,
+          remarkUnwrapDiv,
+          remarkCustomHeaderId,
+          remarkDirective,
+          remarkAdmonitions,
+          videoplayerClientLoadPlugin,
+          removeH1FromMarkdown(),
+        ],
+        rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+      }),
       syntaxHighlight: 'prism',
     }),
     react(),
