@@ -40,8 +40,8 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.69e1e616.css" />
-  <script src="/assets/js/runtime~main.b7d6c61e.js" defer="defer"></script>
-  <script src="/assets/js/main.6500f85a.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.a97ed01e.js" defer="defer"></script>
+  <script src="/assets/js/main.117849e8.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -242,9 +242,208 @@
               <h2 id="aangepast-contrast" class="utrecht-heading-2">Aangepast contrast</h2>
               <p>Sommige mensen bekijken webpagina’s liever met meer of juist minder contrast. Zij kunnen deze voorkeur aangeven via een instelling van het besturingssysteem.</p>
               <p>
-               Door de media query <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">prefers-contrast</code></a> is dit te detecteren en kun je deze mensen passend kleurenthema aanbieden. Maar ze zouden ook gebruik kunnen maken van <a href="https://support.microsoft.com/en-us/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696" class="utrecht-link utrecht-link--html-a">Windows high contrast mode</a>.
+               Door de media query <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">prefers-contrast</code></a> is dit te detecteren en kun je deze mensen een passend kleurenthema aanbieden. Maar ze zouden ook gebruik kunnen maken van <a href="https://support.microsoft.com/en-us/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696" class="utrecht-link utrecht-link--html-a">Windows high contrast mode</a>.
               </p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_kleuren_voorkeursinstellingen.png" alt="Afgebeeld zijn drie schermen met dezelfde inhoud. Het eerste voorbeeld toont een lichte modus. Het tweede voorbeeld toont een donkere modus. Het derde voorbeeld tot een hoog contrast voorbeeld." class="utrecht-img" /></p>
+              <h3 id="contrastthemas-in-windows-en-systeemkleuren" class="utrecht-heading-3">Contrastthema&#x27;s in Windows en systeemkleuren</h3>
+              <p>In Windows high contrast mode kunnen gebruikers systeemkleuren instellen. Deze kleuren worden dan gebruikt voor het hele besturingssysteem en alle programma&#x27;s die daarop draaien. Er zijn 4 vooraf ingestelde contrastthema&#x27;s beschikbaar. Door een thema te bewerken, kan een gebruiker zijn of haar voorkeursinstellingen opslaan in een nieuw thema.</p>
+              <p>Binnen een thema kan een bezoeker 8 kleuren kiezen:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Achtergrond</li>
+               <li>Tekst</li>
+               <li>Hyperlink</li>
+               <li>Inactieve tekst</li>
+               <li>Knop (tekstkleur)</li>
+               <li>Knop (achtergrondkleur)</li>
+               <li>Geselecteerde tekst (tekstkleur)</li>
+               <li>Geselecteerde tekst (achtergrondkleur)</li>
+              </ul>
+              <p>
+               Als een gebruiker high contrast modus heeft ingeschakeld, past de browser deze kleuren automatisch toe op alle websites. Met de media query <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/forced-colors" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">forced-colors: active</code></a> kun je rekening houden met bezoekers die hier gebruik van maken, bijvoorbeeld door te zorgen dat belangrijke informatie niet verloren gaat wanneer de browser kleuren overschrijft.
+              </p>
+              <p>
+               In CSS kun je de namen van systeemkleuren (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/system-color" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">system-color</code></a
+               >) gebruiken. In deze tabel lees je welke Windows systeemkleur daaraan gekoppeld is:
+              </p>
+              <table>
+               <thead>
+                <tr>
+                 <th>CSS system-color naam</th>
+                 <th>Naam in contrastthema</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>AccentColor</td>
+                 <td>Geselecteerde tekst (achtergrondkleur)</td>
+                </tr>
+                <tr>
+                 <td>AccentColorText</td>
+                 <td>Achtergrond</td>
+                </tr>
+                <tr>
+                 <td>ActiveText</td>
+                 <td>Hyperlink</td>
+                </tr>
+                <tr>
+                 <td>ButtonBorder</td>
+                 <td>Knop (tekstkleur)</td>
+                </tr>
+                <tr>
+                 <td>ButtonFace</td>
+                 <td>Knop (achtergrondkleur)</td>
+                </tr>
+                <tr>
+                 <td>ButtonText</td>
+                 <td>Knop (tekstkleur)</td>
+                </tr>
+                <tr>
+                 <td>Canvas</td>
+                 <td>Achtergrond</td>
+                </tr>
+                <tr>
+                 <td>CanvasText</td>
+                 <td>Tekst</td>
+                </tr>
+                <tr>
+                 <td>Field</td>
+                 <td>Achtergrond</td>
+                </tr>
+                <tr>
+                 <td>FieldText</td>
+                 <td>Chrome: Tekst, Firefox: Knop (tekstkleur)</td>
+                </tr>
+                <tr>
+                 <td>GrayText</td>
+                 <td>Inactieve tekst</td>
+                </tr>
+                <tr>
+                 <td>Highlight</td>
+                 <td>Geselecteerde tekst (achtergrondkleur)</td>
+                </tr>
+                <tr>
+                 <td>HighlightText</td>
+                 <td>Geselecteerde tekst (tekstkleur)</td>
+                </tr>
+                <tr>
+                 <td>LinkText</td>
+                 <td>Hyperlink</td>
+                </tr>
+                <tr>
+                 <td>Mark</td>
+                 <td>Hyperlink</td>
+                </tr>
+                <tr>
+                 <td>MarkText</td>
+                 <td>Achtergrond</td>
+                </tr>
+                <tr>
+                 <td>SelectedItem</td>
+                 <td>Geselecteerde tekst (achtergrondkleur)</td>
+                </tr>
+                <tr>
+                 <td>SelectedItemText</td>
+                 <td>Geselecteerde tekst (tekstkleur)</td>
+                </tr>
+                <tr>
+                 <td>VisitedText</td>
+                 <td>Hyperlink</td>
+                </tr>
+               </tbody>
+              </table>
+              <p>In sommige gevallen gebruikt een browser een andere kleur dan een ingestelde systeemkleur:</p>
+              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+               <li>Voor SelectedItem gebruikt Chrome een eigen kleur, afhankelijk van welk Chrome-thema de gebruiker heeft ingesteld.</li>
+               <li>Voor VisitedText gebruikt Firefox een eigen kleur, afhankelijk van welk Firefox-thema de gebruiker heeft ingesteld.</li>
+              </ul>
+              <h3 id="css-system-color-voorbeelden" class="utrecht-heading-3">CSS system-color voorbeelden</h3>
+              <p>De kleuren in deze tabel veranderen mee met de ingestelde kleurthema&#x27;s.</p>
+              <table>
+               <thead>
+                <tr>
+                 <th>CSS system-color</th>
+                 <th>Voorbeeld</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>AccentColor</td>
+                 <td><div role="img" aria-label="Kleurblok AccentColor" style="display: block; width: 50px; height: 50px; background: AccentColor; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>AccentColorText</td>
+                 <td><div role="img" aria-label="Kleurblok AccentColorText" style="display: block; width: 50px; height: 50px; background: AccentColorText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>ActiveText</td>
+                 <td><div role="img" aria-label="Kleurblok ActiveText" style="display: block; width: 50px; height: 50px; background: ActiveText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>ButtonBorder</td>
+                 <td><div role="img" aria-label="Kleurblok ButtonBorder" style="display: block; width: 50px; height: 50px; background: ButtonBorder; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>ButtonFace</td>
+                 <td><div role="img" aria-label="Kleurblok ButtonFace" style="display: block; width: 50px; height: 50px; background: ButtonFace; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>ButtonText</td>
+                 <td><div role="img" aria-label="Kleurblok ButtonText" style="display: block; width: 50px; height: 50px; background: ButtonText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>Canvas</td>
+                 <td><div role="img" aria-label="Kleurblok Canvas" style="display: block; width: 50px; height: 50px; background: Canvas; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>CanvasText</td>
+                 <td><div role="img" aria-label="Kleurblok CanvasText" style="display: block; width: 50px; height: 50px; background: CanvasText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>Field</td>
+                 <td><div role="img" aria-label="Kleurblok Field" style="display: block; width: 50px; height: 50px; background: Field; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>FieldText</td>
+                 <td><div role="img" aria-label="Kleurblok FieldText" style="display: block; width: 50px; height: 50px; background: FieldText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>GrayText</td>
+                 <td><div role="img" aria-label="Kleurblok GrayText" style="display: block; width: 50px; height: 50px; background: GrayText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>Highlight</td>
+                 <td><div role="img" aria-label="Kleurblok Highlight" style="display: block; width: 50px; height: 50px; background: Highlight; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>HighlightText</td>
+                 <td><div role="img" aria-label="Kleurblok HighlightText" style="display: block; width: 50px; height: 50px; background: HighlightText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>LinkText</td>
+                 <td><div role="img" aria-label="Kleurblok LinkText" style="display: block; width: 50px; height: 50px; background: LinkText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>Mark</td>
+                 <td><div role="img" aria-label="Kleurblok Mark" style="display: block; width: 50px; height: 50px; background: Mark; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>MarkText</td>
+                 <td><div role="img" aria-label="Kleurblok MarkText" style="display: block; width: 50px; height: 50px; background: MarkText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>SelectedItem</td>
+                 <td><div role="img" aria-label="Kleurblok SelectedItem" style="display: block; width: 50px; height: 50px; background: SelectedItem; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>SelectedItemText</td>
+                 <td><div role="img" aria-label="Kleurblok SelectedItemText" style="display: block; width: 50px; height: 50px; background: SelectedItemText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+                <tr>
+                 <td>VisitedText</td>
+                 <td><div role="img" aria-label="Kleurblok VisitedText" style="display: block; width: 50px; height: 50px; background: VisitedText; border: ButtonBorder solid 2px"></div></td>
+                </tr>
+               </tbody>
+              </table>
               <h2 id="gerelateerde-wcag-succescriteria" class="utrecht-heading-2">Gerelateerde WCAG-succescriteria:</h2>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><a href="/wcag/1.4.1/" class="utrecht-link utrecht-link--html-a">1.3.3 Zintuiglijke eigenschappen</a></li>
@@ -252,7 +451,6 @@
                <li><a href="/wcag/1.4.3/" class="utrecht-link utrecht-link--html-a">1.4.3 Contrast (minimum)</a></li>
                <li><a href="/wcag/1.4.11/" class="utrecht-link utrecht-link--html-a">1.4.11 Contrast van niet-tekstuele content</a></li>
               </ul>
-              <!-- -->
               <h2 id="over-deze-richtlijnen" class="utrecht-heading-2">Over deze richtlijnen</h2>
               <p>Deze richtlijnen worden onderhouden door NL Design System en zijn op dit moment in <em class="utrecht-emphasis utrecht-emphasis--stressed">beta</em>.</p>
               <p>We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues" class="utrecht-link utrecht-link--html-a">Open een issue op GitHub</a> en deel je mening.</p>
