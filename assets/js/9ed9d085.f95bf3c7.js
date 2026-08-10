@@ -22,18 +22,18 @@
    }
   },
   26655(e, n, t) {
-   t.d(n, { AC: () => d, Fu: () => o, Wu: () => a, Zp: () => m });
+   t.d(n, { AC: () => l, Fu: () => o, Wu: () => a, Zp: () => m });
    var i = t(46447),
     r = t(13526),
     s = t(86070);
    const o = ({ background: e, children: n, className: t, ...i }) => (0, s.jsx)('div', { className: (0, r.A)('ma-card__illustration', e && `ma-card__illustration--${e}`, t), ...i, children: n }),
     a = (e) => (0, s.jsx)('div', { className: 'ma-card__content', ...e }),
     m = ({ href: e, appearance: n, className: t, component: o = 'div', background: a, children: m }) => {
-     const d = (e) => ('article' === o ? (0, s.jsx)('article', { ...e }) : 'section' === o ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
-      l = (0, s.jsx)(d, { className: (0, r.A)('ma-cardgroup__card', a && 'ma-cardgroup__card--light-purple', `ma-cardgroup__card--${n}`, t), children: m });
-     return e ? (0, s.jsx)(i.N_, { href: e, boxContent: !0, className: 'ma-cardgroup__link', children: l }) : l;
+     const l = (e) => ('article' === o ? (0, s.jsx)('article', { ...e }) : 'section' === o ? (0, s.jsx)('section', { ...e }) : (0, s.jsx)('div', { ...e })),
+      d = (0, s.jsx)(l, { className: (0, r.A)('ma-cardgroup__card', a && 'ma-cardgroup__card--light-purple', `ma-cardgroup__card--${n}`, t), children: m });
+     return e ? (0, s.jsx)(i.N_, { href: e, boxContent: !0, className: 'ma-cardgroup__link', children: d }) : d;
     },
-    d = ({ appearance: e = 'large', children: n, className: t }) => (0, s.jsx)('div', { className: (0, r.A)('ma-cardgroup', `ma-cardgroup--${e}`, t), children: n });
+    l = ({ appearance: e = 'large', children: n, className: t }) => (0, s.jsx)('div', { className: (0, r.A)('ma-cardgroup', `ma-cardgroup--${e}`, t), children: n });
   },
   53538(e, n, t) {
    t.d(n, { F: () => o, N: () => a });
@@ -49,15 +49,15 @@
     a = ({ className: e, ...n }) => (0, s.jsx)(o, { className: (0, i.$)('utrecht-link', 'utrecht-link--html-a', e), ...n });
   },
   75344(e, n, t) {
-   (t.r(n), t.d(n, { assets: () => c, contentTitle: () => l, default: () => h, frontMatter: () => d, metadata: () => i, toc: () => u }));
-   const i = JSON.parse('{"id":"community/community-sprints/index","title":"Community Sprints","description":"Uitleg over de NL Design System Community Sprints","source":"@site/docs/community/community-sprints/index.mdx","sourceDirName":"community/community-sprints","slug":"/community/community-sprints/","permalink":"/community/community-sprints/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/community-sprints/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Community Sprints","hide_title":true,"hide_table_of_contents":false,"navigation_order":3,"sidebar_label":"Community Sprints","pagination_label":"Community Sprints","description":"Uitleg over de NL Design System Community Sprints","slug":"/community/community-sprints/","keywords":["nl design system","community sprints","rijkshuisstijl community","mijn services community","mijnservices community","overheidsbrede portalen community"]},"sidebar":"community","previous":{"title":"Wie doet mee?","permalink":"/community/wie-doet-mee"},"next":{"title":"Over MijnServices Community","permalink":"/community/community-sprints/mijn-services-community/"}}');
+   (t.r(n), t.d(n, { assets: () => c, contentTitle: () => d, default: () => h, frontMatter: () => l, metadata: () => i, toc: () => u }));
+   const i = JSON.parse('{"id":"community/community-sprints/index","title":"Community Sprints","description":"Uitleg over de NL Design System Community Sprints","source":"@site/docs/community/community-sprints/index.mdx","sourceDirName":"community/community-sprints","slug":"/community/community-sprints/","permalink":"/community/community-sprints/","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/community-sprints/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Community Sprints","hide_title":true,"hide_table_of_contents":false,"navigation_order":3,"sidebar_label":"Community Sprints","pagination_label":"Community Sprints","description":"Uitleg over de NL Design System Community Sprints","slug":"/community/community-sprints/","keywords":["nl design system","community sprints","rijkshuisstijl community","mijn services community","mijnservices community","overheidsbrede portalen community"]},"sidebar":"community","previous":{"title":"Community in cijfers","permalink":"/community/wie-doet-mee"},"next":{"title":"Over MijnServices Community","permalink":"/community/community-sprints/mijn-services-community/"}}');
    var r = t(86070),
     s = t(18439),
     o = t(46447),
     a = t(26655),
     m = t(53538);
-   const d = { title: 'Community Sprints', hide_title: !0, hide_table_of_contents: !1, navigation_order: 3, sidebar_label: 'Community Sprints', pagination_label: 'Community Sprints', description: 'Uitleg over de NL Design System Community Sprints', slug: '/community/community-sprints/', keywords: ['nl design system', 'community sprints', 'rijkshuisstijl community', 'mijn services community', 'mijnservices community', 'overheidsbrede portalen community'] },
-    l = 'Over Community Sprints',
+   const l = { title: 'Community Sprints', hide_title: !0, hide_table_of_contents: !1, navigation_order: 3, sidebar_label: 'Community Sprints', pagination_label: 'Community Sprints', description: 'Uitleg over de NL Design System Community Sprints', slug: '/community/community-sprints/', keywords: ['nl design system', 'community sprints', 'rijkshuisstijl community', 'mijn services community', 'mijnservices community', 'overheidsbrede portalen community'] },
+    d = 'Over Community Sprints',
     c = {},
     u = [
      { value: 'Voordelen', id: 'voordelen', level: 2 },
@@ -81,21 +81,21 @@
     o = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
     a = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
     m = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
-    d = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
-   function l(e) {
+    l = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
+   function d(e) {
     return Array.from(new Set(e));
    }
-   const c = (e) => [...e].sort((e, n) => d.indexOf(e) - d.indexOf(n)),
+   const c = (e) => [...e].sort((e, n) => l.indexOf(e) - l.indexOf(n)),
     u = (e) => {
      const n = e.flatMap(({ projects: e }) => e).flatMap((e) => h(e));
-     return c(l(n));
+     return c(d(n));
     },
     p = (e, n) => v(e).includes(n),
     h = (e) => {
      const n = / URL \(([^)]+)\)/;
-     return c(l(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
+     return c(d(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
     },
-    v = (e) => c(l(e.projects.flatMap((e) => h(e)))),
+    v = (e) => c(d(e.projects.flatMap((e) => h(e)))),
     g = (e) => {
      const n = h(e),
       t = ((e) => {
