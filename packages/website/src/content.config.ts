@@ -150,7 +150,19 @@ const changelog = defineCollection({
   schema: z.object({ title: z.string().default('Changelog') }),
 });
 
-export const collections = { docs, wcag, components, overviewPages, changelog };
+const contentTest = defineCollection({
+  loader: customGlob({
+    base: './../../test/docs',
+    pattern: ['**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
+    generateId: (options) => `/private/content-test/${generateId(options)}`,
+  }),
+  schema: schema.extend({
+    unlisted: z.literal(true),
+    page_layout: z.enum(['overview', 'detail']).optional(),
+  }),
+});
+
+export const collections = { docs, wcag, components, overviewPages, changelog, contentTest };
 
 export const getAllCollections = async () => {
   const collectionPromises = await Promise.all([
