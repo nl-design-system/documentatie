@@ -1,11 +1,11 @@
 ---
-title: WCAG-succescriterium 3.2.2 Bij input
-title_sm: 3.2.2 Bij input
+title: WCAG-succescriterium 3.2.2 Bij invoer
+title_sm: 3.2.2 Bij invoer
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: 3.2.2 Bij input
-pagination_label: WCAG-succescriterium 3.2.2 Bij input
-description: Verras een gebruiker niet, maar maak functionaliteit voorspelbaar en daardoor goed te begrijpen. Als een gebruiker een formuliercomponent of -optie selecteert of een invoerveld invult met het toetsenbord of met de muis, veroorzaakt dit niet automatisch een contextwijziging.
+sidebar_label: 3.2.2 Bij invoer
+pagination_label: WCAG-succescriterium 3.2.2 Bij invoer
+description: Een keuze in een formulier of een filter verandert de pagina niet ingrijpend, tenzij de bezoeker dat vooraf weet. Zo blijft invullen voorspelbaar.
 slug: 3.2.2
 conformance_level: Niveau A
 keywords:
@@ -16,25 +16,246 @@ keywords:
   - understandable
   - predictable
   - on input
+  - bij invoer
+  - verandering van context
+  - dropdown
+  - select
+  - autosubmit
+  - automatische focus
+  - formulier
+  - WCAG 3.2.2
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.2.2-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
-  {"WCAG-succescriterium 3.2.2 Bij input"}
+  {"WCAG-succescriterium 3.2.2 Bij invoer"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+Een ingrijpende wijziging is bijvoorbeeld een nieuw venster of tabblad dat opent, een pagina die volledig wordt vervangen, focus die automatisch naar een ander onderdeel springt, of een groot deel van de pagina-inhoud dat verandert. Een keuzelijst die automatisch een andere pagina opent zodra je een optie kiest, is daarvan het bekendste voorbeeld. Toetsenbordgebruikers en mensen met een screenreader bladeren met de pijltjestoetsen door de opties, en openen bij elke optie een andere pagina.
+
+Een automatische wijziging is geen probleem, zolang de bezoeker vooraf weet dat die gaat gebeuren. Een korte uitleg vooraf, of een knop "Toepassen" achter de keuze, helpt daarbij.
+
+## Veelgemaakte fouten
+
+### Keuzelijst opent automatisch een andere pagina bij selectie
+
+Een keuzelijst waarmee je een land, taal of categorie kiest, voert direct een actie uit zodra je een optie selecteert. De bezoeker wilde alleen een waarde instellen, maar wordt zonder waarschuwing naar een andere pagina gestuurd. Voor wie met de pijltjestoetsen door de opties bladert, gebeurt dit al bij elke optie, nog voordat een keuze is bevestigd. Een screenreadergebruiker hoort daarbij telkens een nieuwe pagina inladen en weet niet meer waar de focus is.
+
+**Hoe te testen:** open een keuzelijst met <kbd>Tab</kbd> en blader met de pijltjestoetsen door de opties. Verandert de pagina, opent er iets, of springt de focus weg voordat je <kbd>Enter</kbd> hebt gedrukt?
+
+<Guideline appearance="dont" title="Keuzelijst die automatisch een andere pagina opent bij wijzigen van de selectie">
+  ```html
+  <label for="taal">Kies een taal</label>
+  <select id="taal" onchange="window.location.href = this.value">
+    <option value="/nl/">Nederlands</option>
+    <option value="/en/">English</option>
+    <option value="/de/">Deutsch</option>
+  </select>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Taalkeuze als een lijst met links">
+  ```html
+  <ul>
+    <li>
+      <a href="/nl/" lang="nl">
+        Nederlands
+      </a>
+    </li>
+    <li>
+      <a href="/en/" lang="en">
+        English
+      </a>
+    </li>
+    <li>
+      <a href="/de/" lang="de">
+        Deutsch
+      </a>
+    </li>
+  </ul>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Keuzelijst met aparte bevestigingsknop">
+  ```html
+  <label for="taal">Kies een taal</label>
+  <select id="taal">
+    <option value="/nl/">Nederlands</option>
+    <option value="/en/">English</option>
+    <option value="/de/">Deutsch</option>
+  </select>
+  <button type="submit">Taal wijzigen</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur vervangt de keuzelijst door een lijst met links, één link per taal of per categorie. Dat is de eenvoudigste oplossing: van een link verwacht de bezoeker dat er een andere pagina opent. Zijn er zoveel opties dat een lijst met links onwerkbaar wordt, bijvoorbeeld bij een keuze uit alle landen, dan houdt een developer de keuzelijst en voegt een knop toe waarmee de bezoeker de keuze bevestigt.
+
+### Formulier wordt automatisch ingediend bij invoer
+
+Een formulier verstuurt zichzelf zodra een veld een bepaalde lengte heeft, of zodra een veld de focus verliest. Bij een inlogcode van 6 cijfers gebeurt dat al zodra het laatste cijfer is getypt. De bezoeker is dan nog bezig met controleren of de code klopt, maar de pagina is al weg. Wie een cijfer verkeerd typt, kan dat niet meer corrigeren en moet een nieuwe code aanvragen. Mensen die langzamer typen, die ingezoomd werken of die een screenreader gebruiken, merken pas achteraf dat de pagina is veranderd.
+
+**Hoe te testen:** vul een veld in en wacht. Wordt het formulier verstuurd zonder dat je op een knop drukt of op <kbd>Enter</kbd>?
+
+<Guideline appearance="dont" title="Formulier dat zichzelf verstuurt zodra de code 6 cijfers heeft">
+  ```html
+  <label for="code">Inlogcode</label>
+  <input
+    id="code"
+    type="text"
+    inputmode="numeric"
+    autocomplete="one-time-code"
+    oninput="if (this.value.length === 6) this.form.submit()"
+  />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Formulier dat pas verstuurt nadat de bezoeker op een knop drukt">
+  ```html
+  <label for="code">Inlogcode</label>
+  <input id="code" type="text" inputmode="numeric" autocomplete="one-time-code" />
+  <button type="submit">Inloggen</button>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Formulier dat zichzelf verstuurt, met uitleg vooraf bij het veld">
+  ```html
+  <label for="code">Inlogcode</label>
+  <p id="code-uitleg">Als de code klopt, word je meteen ingelogd en naar je profiel gestuurd.</p>
+  <input
+    id="code"
+    type="text"
+    inputmode="numeric"
+    autocomplete="one-time-code"
+    aria-describedby="code-uitleg"
+    oninput="if (this.value.length === 6) this.form.submit()"
+  />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur zet een uitleg bij het veld en koppelt die met `aria-describedby`, zodat de bezoeker vooraf weet dat het formulier zichzelf verstuurt. Een developer haalt het automatisch versturen weg en voegt een knop toe, zodat de bezoeker zelf bepaalt wanneer het formulier verstuurt.
+
+### Focus springt automatisch naar het volgende veld
+
+Bij inlogcodes, telefoonnummers of postcodes in losse vakjes wordt de focus automatisch verplaatst naar het volgende veld zodra het huidige veld vol is. Dat lijkt handig, maar is voor veel mensen niet toegankelijk. Iemand die per ongeluk een verkeerd cijfer typt, kan niet terug zonder eerst met <kbd>Shift</kbd> + <kbd>Tab</kbd> naar het vorige veld te gaan. De focus verspringt zonder dat de screenreadergebruiker daar zelf om vroeg, en het is niet altijd duidelijk in welk vakje de focus nu staat. Mensen die typen met één hand of met een ander hulpmiddel, kunnen door de automatische focuswisseling per ongeluk in het verkeerde vakje typen.
+
+**Hoe te testen:** vul een veld met losse vakjes voor een code. Wordt de focus automatisch verplaatst zodra een veld vol is? Lukt het je om met <kbd>Shift</kbd> + <kbd>Tab</kbd> terug te gaan zonder verwarring?
+
+<Guideline appearance="dont" title="Focus die automatisch verspringt bij maximale lengte">
+  ```html
+  <input type="text" maxlength="1" oninput="if (this.value) this.nextElementSibling.focus()" />
+  <input type="text" maxlength="1" />
+  <input type="text" maxlength="1" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Eén invoerveld voor de hele code">
+  ```html
+  <label for="code">Inlogcode van 6 cijfers</label>
+  <input id="code" type="text" inputmode="numeric" autocomplete="one-time-code" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer gebruikt één invoerveld voor de hele code. Is een ontwerp met losse vakjes echt nodig, dan moet de bezoeker zelf met <kbd>Tab</kbd> tussen de vakjes kunnen wisselen.
+
+### Nieuw venster opent bij selectie van een optie
+
+Een radio button of checkbox opent een nieuw venster of tabblad zodra de bezoeker een keuze maakt. De bezoeker verwacht alleen dat de optie wordt geselecteerd. In plaats daarvan verschijnt er een ander venster. Op mobiel of bij geblokkeerde pop-ups verschijnt dat venster op de achtergrond, en mensen hebben dat niet door.
+
+**Hoe te testen:** selecteer een radio button of vink een checkbox aan. Opent er een nieuw venster, tabblad of overlay?
+
+<Guideline appearance="dont" title="Checkbox die een nieuw venster opent bij aanvinken">
+  ```html
+  <label>
+    <input type="checkbox" onchange="if (this.checked) window.open('/voorwaarden')" />
+    Ik ga akkoord met de voorwaarden
+  </label>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Checkbox naast een aparte link naar de voorwaarden">
+  ```html
+  <label>
+    <input type="checkbox" />
+    Ik ga akkoord met de <a href="/voorwaarden">voorwaarden</a>
+  </label>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zorgt dat het venster niet automatisch opent. De bezoeker beslist zelf of en wanneer er een nieuw venster opent, door op een link of knop te klikken.
+
+### Pagina-inhoud verandert ingrijpend bij invoer
+
+Een radio button of keuzelijst voor de doelgroep, bijvoorbeeld "particulier" of "zakelijk", past na de selectie niet alleen de hoofdinhoud van de pagina aan. Ook de header, het menu en de footer veranderen mee. Een screenreadergebruiker hoort niet wat er gebeurt en moet de pagina opnieuw verkennen. Mensen die inzoomen, weten niet meer waar ze op de pagina waren.
+
+Een wijziging die binnen een duidelijk afgebakend gebied blijft en die vooraf is aangekondigd, is geen ingrijpende wijziging. Maar als de hele pagina-indeling wijzigt zonder dat de bezoeker dat wist, is dat niet toegankelijk.
+
+**Hoe te testen:** selecteer een optie die de pagina aanpast. Verandert alleen een afgebakend gebied zoals een lijst met resultaten, of veranderen ook de header, het menu of de footer mee?
+
+<Guideline appearance="dont" title="Doelgroep-keuze die de hele pagina verandert zonder waarschuwing">
+  ```html
+  <label for="doelgroep">Bekijk site voor</label>
+  <select id="doelgroep" onchange="wisselDoelgroep(this.value)">
+    <option value="particulier">Particulier</option>
+    <option value="zakelijk">Zakelijk</option>
+  </select>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Doelgroep-keuze met uitleg vooraf en aparte bevestigingsknop">
+  ```html
+  <p>Kies voor welke doelgroep je de site wilt bekijken. De hele pagina past zich aan.</p>
+  <label for="doelgroep">Bekijk site voor</label>
+  <select id="doelgroep">
+    <option value="particulier">Particulier</option>
+    <option value="zakelijk">Zakelijk</option>
+  </select>
+  <button type="submit">Toon site</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** de eenvoudigste oplossing is twee aparte pagina's met een link ernaartoe, één voor particulieren en één voor zakelijke bezoekers. Een webredacteur kan die links zelf plaatsen. Blijft de keuze in een keuzelijst staan, dan zet een webredacteur er een korte uitleg vóór, zodat de bezoeker weet dat de keuze de pagina aanpast. Een developer kan de wijziging beperken tot een afgebakend gebied, of een aparte knop toevoegen waarmee de bezoeker de keuze zelf toepast.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Open een keuzelijst met <kbd>Tab</kbd> en blader met de pijltjestoetsen door de opties. Verandert de pagina, opent er iets, of springt de focus weg voordat je <kbd>Enter</kbd> hebt gedrukt?
+2. Vul een veld in een formulier in en wacht. Wordt het formulier verstuurd zonder dat je op een knop drukt?
+3. Vul een veld met losse vakjes voor een code. Wordt de focus automatisch verplaatst zodra een veld vol is? Lukt het je om met <kbd>Shift</kbd> + <kbd>Tab</kbd> terug te gaan?
+4. Selecteer een radio button of vink een checkbox aan. Opent er een nieuw venster, tabblad of overlay zonder dat je daarop hebt geklikt?
+5. Zet een filter, een tabblad of een weergave aan, met een keuzelijst, een button of een link. Verandert alleen het verwachte gebied, of wijzigt de hele pagina-indeling?
+6. Als er wel een automatische actie is, staat er dan vóór het onderdeel een uitleg dat dit gaat gebeuren?
+
+### Voor developers
+
+1. Controleer in de broncode of er `onchange`-handlers op `<select>`, `<input type="radio">` of `<input type="checkbox">` staan die naar een andere pagina gaan, een formulier indienen of een nieuw venster openen.
+2. Zoek naar `oninput`- of `onblur`-handlers die een formulier indienen of de focus verplaatsen op basis van veldlengte.
+3. Test met een screenreader en toetsenbord. Loop met <kbd>Tab</kbd> door alle formuliercomponenten en let op of de focus onverwacht verspringt of de content op de pagina ingrijpend verandert.
+4. Gebruik één invoerveld voor codes in plaats van losse vakjes. Voeg `autocomplete="one-time-code"` toe bij een inlogcode die per sms of e-mail binnenkomt.
+5. Bij filters of dynamische lijsten: beperk de wijziging tot een afgebakend gebied en kondig de update aan met `aria-live="polite"`.
+6. Voeg een uitleg toe vóór een onderdeel dat een automatische actie uitvoert, of vervang de automatische actie door een bevestigingsknop.
+
+## Gerelateerde succescriteria
+
+- [3.2.1 Bij focus](/wcag/3.2.1/): voorkomt verandering van context wanneer een onderdeel focus krijgt. Succescriterium 3.2.1 gaat over focus, succescriterium 3.2.2 over het wijzigen van een instelling.
+- [3.2.5 Verandering op verzoek](/wcag/3.2.5/): gaat verder dan succescriterium 3.2.2. Op AAA-niveau mogen veranderingen van context alleen op uitdrukkelijk verzoek van de bezoeker plaatsvinden.
+- [3.3.2 Labels of instructies](/wcag/3.3.2/): zorgt dat er instructies bij invoervelden staan. Zo'n instructie kan ook waarschuwen voor een automatische actie.
+- [2.4.3 Focusvolgorde](/wcag/2.4.3/): de focusvolgorde moet logisch zijn. Een focus die automatisch verspringt bij invoer, verstoort die volgorde.
+
+## Relevante bronnen
+
+- [Definitie: verandering van context](https://www.w3.org/TR/WCAG22/#dfn-changes-of-context): beschrijft welke wijzigingen wel of niet als verandering van context tellen. Engelstalig, van W3C.
 
 ## Gerelateerde NL Design System-richtlijn
 
@@ -44,29 +265,12 @@ Formulieren: [Verstuur een formulier niet automatisch na het wijzigen of invulle
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
-
-Bepaal eerst of er interactieve componenten op de pagina zijn, zoals invoervelden, radiobuttons, selects en checkboxes. En dan:
-
-- Selecteer/activeer elk formulierelement.
-- Indien van toepassing: vul een formulierveld in en verlaat het veld weer (haal de focus weg).
-- Test of er geen onverwachte dingen gebeuren zoals het verzenden van het formulier, het verplaatsen van de focus of het openen van een nieuw venster of tab.
-- Test dit met de muis en daarna ook met het toetsenbord.
-
-**Let op**: Buttons en links zijn uitgesloten van deze test, hierbij is een verandering van context bij het selecteren/aanklikken verwacht gedrag.
-
 ## W3C referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.2.2: On Input</span>](https://www.w3.org/TR/WCAG22/#on-input).
-- Nederlandse vertaling van het WCAG-succescriterium: [3.2.2 Bij input](https://www.w3.org/Translations/WCAG22-nl/#on-input).
+- Nederlandse vertaling van het WCAG-succescriterium: [3.2.2 Bij invoer](https://www.w3.org/Translations/WCAG22-nl/#bij-invoer).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.2.2 On Input</span>](https://www.w3.org/WAI/WCAG22/quickref/#on-input).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.2.2: On Input</span>](https://www.w3.org/WAI/WCAG22/Understanding/on-input.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
