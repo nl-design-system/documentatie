@@ -1,0 +1,21 @@
+---
+title: Component met tekst expressie
+description: Test of een tekst expressie als child van een component correct gerenderd wordt
+unlisted: true
+---
+
+{/* @license CC0-1.0 */}
+
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { IconChevronRight } from "@tabler/icons-react";
+
+Wordt een tekst expressie als child van een component correct gerenderd
+
+:::info[testpagina]
+Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
+Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
+:::
+
+<ButtonLink href="/community/community-sprints/mijn-services-community/aanmelden" appearance="primary-action">
+  {"Meld je aan"} <IconChevronRight />
+</ButtonLink>

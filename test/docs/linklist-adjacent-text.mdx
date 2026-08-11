@@ -1,0 +1,24 @@
+---
+title: Linklist adjacent text
+description: Test of tekst naast een icon in een LinkListLink correct gerenderd wordt
+unlisted: true
+---
+
+{/* @license CC0-1.0 */}
+
+import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
+import { IconChevronRight } from "@tabler/icons-react";
+
+Wordt tekst naast een icon in een LinkListLink correct gerenderd
+
+:::info[testpagina]
+Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
+Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
+:::
+
+<LinkList>
+  <LinkListLink href="https://example.com/">
+    <IconChevronRight />
+    Voorbeeld link tekst
+  </LinkListLink>
+</LinkList>

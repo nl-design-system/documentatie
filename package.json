@@ -67,6 +67,7 @@
     "test-e2e": "playwright test test/e2e/ --workers=8",
     "test-visual": "playwright test test/visual/",
     "test-csp": "playwright test test/csp/",
+    "test-content": "playwright test test/docs/",
     "test-unlisted-pages": "playwright test test/e2e/unlisted-pages.spec.ts",
     "publish:argos": "argos upload ./tmp/screenshots",
     "test-update": "npm-run-all --sequential clean lint build",
