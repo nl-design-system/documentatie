@@ -1,4 +1,4 @@
-/*! For license information please see b6e302a5.b10f2278.js.LICENSE.txt */
+/*! For license information please see b6e302a5.ad1556ff.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [40415],
@@ -27,7 +27,7 @@
    var t = i(30758),
     s = { outline: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' }, filled: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'currentColor', stroke: 'none' } };
    const r = (e, n, i, r) => {
-    const o = (0, t.forwardRef)(({ color: i = 'currentColor', size: o = 24, stroke: a = 2, title: d, className: l, children: c, ...m }, h) => (0, t.createElement)('svg', { ref: h, ...s[e], width: o, height: o, className: ['tabler-icon', `tabler-icon-${n}`, l].join(' '), ...('filled' === e ? { fill: i } : { strokeWidth: a, stroke: i }), ...m }, [d && (0, t.createElement)('title', { key: 'svg-title' }, d), ...r.map(([e, n]) => (0, t.createElement)(e, n)), ...(Array.isArray(c) ? c : [c])]));
+    const o = (0, t.forwardRef)(({ color: i = 'currentColor', size: o = 24, stroke: a = 2, title: d, className: c, children: l, ...m }, h) => (0, t.createElement)('svg', { ref: h, ...s[e], width: o, height: o, className: ['tabler-icon', `tabler-icon-${n}`, c].join(' '), ...('filled' === e ? { fill: i } : { strokeWidth: a, stroke: i }), ...m }, [d && (0, t.createElement)('title', { key: 'svg-title' }, d), ...r.map(([e, n]) => (0, t.createElement)(e, n)), ...(Array.isArray(l) ? l : [l])]));
     return ((o.displayName = `${i}`), o);
    };
   },
@@ -69,21 +69,21 @@
     o = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
     a = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
     d = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
-    l = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
-   function c(e) {
+    c = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
+   function l(e) {
     return Array.from(new Set(e));
    }
-   const m = (e) => [...e].sort((e, n) => l.indexOf(e) - l.indexOf(n)),
+   const m = (e) => [...e].sort((e, n) => c.indexOf(e) - c.indexOf(n)),
     h = (e) => {
      const n = e.flatMap(({ projects: e }) => e).flatMap((e) => u(e));
-     return m(c(n));
+     return m(l(n));
     },
     v = (e, n) => p(e).includes(n),
     u = (e) => {
      const n = / URL \(([^)]+)\)/;
-     return m(c(e.tasks.filter(({ name: e, value: i }) => '' !== i && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
+     return m(l(e.tasks.filter(({ name: e, value: i }) => '' !== i && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
     },
-    p = (e) => m(c(e.projects.flatMap((e) => u(e)))),
+    p = (e) => m(l(e.projects.flatMap((e) => u(e)))),
     g = (e) => {
      const n = u(e),
       i = ((e) => {
@@ -133,15 +133,15 @@
     };
   },
   89152(e, n, i) {
-   (i.r(n), i.d(n, { assets: () => m, contentTitle: () => c, default: () => u, frontMatter: () => l, metadata: () => t, toc: () => h }));
-   const t = JSON.parse('{"id":"community/events/mijn-services-check-in","title":"MijnServices Check-in","description":"Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.","source":"@site/docs/community/events/mijn-services-check-in.mdx","sourceDirName":"community/events","slug":"/events/mijn-services-check-in","permalink":"/events/mijn-services-check-in","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/mijn-services-check-in.mdx","tags":[],"version":"current","frontMatter":{"title":"MijnServices Check-in","hide_title":true,"hide_table_of_contents":false,"navigation_order":4,"sidebar_label":"MijnServices Check-in","pagination_label":"Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt.","description":"Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.","slug":"/events/mijn-services-check-in","keywords":["nl design system","community sprints","mijn services community","mijnservices community","mijn services community afstemming","mijn services community check-in","overheidsbrede portalen community"]},"sidebar":"community","previous":{"title":"Aanmelden","permalink":"/events/developer-open-hour/aanmelden"},"next":{"title":"Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl.","permalink":"/events/rijkshuisstijl-community-open-hour"}}');
+   (i.r(n), i.d(n, { assets: () => m, contentTitle: () => l, default: () => u, frontMatter: () => c, metadata: () => t, toc: () => h }));
+   const t = JSON.parse('{"id":"community/events/mijn-services-check-in","title":"MijnServices Check-in","description":"Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.","source":"@site/docs/community/events/mijn-services-check-in.mdx","sourceDirName":"community/events","slug":"/events/mijn-services-check-in","permalink":"/events/mijn-services-check-in","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/mijn-services-check-in.mdx","tags":[],"version":"current","frontMatter":{"title":"MijnServices Check-in","hide_title":true,"hide_table_of_contents":false,"navigation_order":4,"sidebar_label":"MijnServices Check-in","pagination_label":"Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt.","description":"Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.","slug":"/events/mijn-services-check-in","keywords":["nl design system","community sprints","mijn services community","mijnservices community","mijn services community afstemming","mijn services community check-in","overheidsbrede portalen community"]},"sidebar":"community","previous":{"title":"Product Owner Open Hour","permalink":"/events/product-owner-open-hour"},"next":{"title":"Tijdens de Rijkshuisstijl Community Open Hour wisselen verschillende organisaties informatie, inzichten en tips uit over de Rijkshuisstijl.","permalink":"/events/rijkshuisstijl-community-open-hour"}}');
    var s = i(86070),
     r = i(18439),
     o = i(27843),
     a = i(64249),
     d = i(46447);
-   const l = { title: 'MijnServices Check-in', hide_title: !0, hide_table_of_contents: !1, navigation_order: 4, sidebar_label: 'MijnServices Check-in', pagination_label: 'Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt.', description: 'Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.', slug: '/events/mijn-services-check-in', keywords: ['nl design system', 'community sprints', 'mijn services community', 'mijnservices community', 'mijn services community afstemming', 'mijn services community check-in', 'overheidsbrede portalen community'] },
-    c = 'MijnServices Check-in',
+   const c = { title: 'MijnServices Check-in', hide_title: !0, hide_table_of_contents: !1, navigation_order: 4, sidebar_label: 'MijnServices Check-in', pagination_label: 'Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt.', description: 'Tijdens de MijnServices Check-in delen we inzichten, idee\xebn en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.', slug: '/events/mijn-services-check-in', keywords: ['nl design system', 'community sprints', 'mijn services community', 'mijnservices community', 'mijn services community afstemming', 'mijn services community check-in', 'overheidsbrede portalen community'] },
+    l = 'MijnServices Check-in',
     m = {},
     h = [
      { value: 'Ben je erbij?', id: 'ben-je-erbij', level: 2 },
