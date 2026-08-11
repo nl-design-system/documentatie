@@ -192,9 +192,10 @@ Redirect 301 "/handboek/developer/component-uitbreiden/" "/handboek/developer/in
 Redirect 301 "/handboek/developer/componenten-maken/" "/handboek/developer/introductie/"
 Redirect 301 "/handboek/developer/bijdragen/" "/handboek/developer/introductie/"
 Redirect 301 "/handboek/developer/component-testen/" "/handboek/developer/introductie/"
-
-# Temporary redirects until we have multiple factsheets and turn /factsheets into an overview page
-RedirectMatch 307 "^/factsheets/?$" "/factsheets/managers"
+Redirect 301 "/factsheets/managers/" "/project/over-nl-design-system/"
+Redirect 301 "/handboek/leverancier/introductie/" "/handboek/organisatie/overzicht/"
+Redirect 301 "/handboek/manager/introductie/" "/handboek/organisatie/overzicht/"
+RedirectMatch 301 "^/factsheets/?$" "/project/over-nl-design-system/"
 
 # Temporary redirects until the component is part of help-wanted board
 Redirect 307 "/character-count" "/componenten"
