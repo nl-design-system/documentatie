@@ -80,6 +80,7 @@ export function mapHeadingsToListItems(
  */
 export function createListItemsForHeading(heading: HTMLHeadingElement, listItem?: HTMLLIElement) {
   const li: HTMLLIElement = listItem || document.createElement('li');
+  li.classList.add('ams-unordered-list__item');
 
   if (heading.id) {
     const link = li.querySelector('a') || document.createElement('a');

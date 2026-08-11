@@ -4,6 +4,14 @@ import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import remarkCustomHeaderId from 'remark-custom-header-id';
+import remarkDirective from 'remark-directive';
+import { remarkAdmonitions } from './markdown-plugins/admonitions';
+import { nldsComponentsPlugin } from './markdown-plugins/rehype-nlds-components';
+import { addTrailingSlashPlugin } from './markdown-plugins/rehype-trailing-slash';
+import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
+import { remarkUnwrapDiv } from './markdown-plugins/remark-unwrap-div';
+import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
+import { videoplayerClientLoadPlugin } from './markdown-plugins/remark-videoplayer-client-load';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -17,6 +25,7 @@ const cspConnectSrcSources = ['https://*.algolia.net', 'https://*.algolianet.com
 const cspImgSrcSources = [
   'https://raw.githubusercontent.com',
   'https://i.ytimg.com',
+  'https://img.youtube.com',
   'https://www.toegankelijkheidsverklaring.nl',
   'https://github.com',
   'https://www.gebruikercentraal.nl',
@@ -72,16 +81,33 @@ export default defineConfig({
       // prevent vite from inlining assets as data:* attributes because it violates csp rules
       assetsInlineLimit: 0,
     },
+    ssr: {
+      noExternal: [/@rijkshuisstijl-community\/.*/],
+    },
+    resolve: {
+      noExternal: [/@rijkshuisstijl-community\/.*/],
+    },
   },
 
   markdown: {
-    syntaxHighlight: false,
+    remarkPlugins: [remarkUnwrapDiv, remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
+    rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+    syntaxHighlight: 'prism',
   },
 
   integrations: [
     mdx({
-      remarkPlugins: [remarkCustomHeaderId],
-      syntaxHighlight: false,
+      remarkPlugins: [
+        remarkCanvasFix,
+        remarkUnwrapDiv,
+        remarkCustomHeaderId,
+        remarkDirective,
+        remarkAdmonitions,
+        videoplayerClientLoadPlugin,
+        removeH1FromMarkdown(),
+      ],
+      rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+      syntaxHighlight: 'prism',
     }),
     react(),
     sitemap({
