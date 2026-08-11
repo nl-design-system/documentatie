@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.1.2 Taal van onderdelen
 pagination_label: WCAG-succescriterium 3.1.2 Taal van onderdelen
-description: Passages of zinnen in een andere taal dan de hoofdtaal van de pagina zijn gemarkeerd met een lang-attribuut, zodat screenreaders de uitspraak aanpassen.
+description: Een zin in een andere taal dan de rest van de pagina wordt voorgelezen met de uitspraak van die taal, zodat een bezoeker de tekst kan verstaan.
 slug: 3.1.2
 keywords:
   - WCAG
@@ -37,19 +37,33 @@ import Summary from "./summaries/\_3.1.2-summary.md";
   {"WCAG-succescriterium 3.1.2 Taal van onderdelen"}
 </WcagHeadingGroup>
 
+## Uitleg
+
 <Summary />
 
-Een Nederlandstalige pagina bevat een Engels citaat. Die Engelse passage krijgt een `lang`-attribuut, zodat een screenreader de juiste uitspraak gebruikt. Dat kan op elk HTML-element, bijvoorbeeld op een `<span>`, `<p>`, `<blockquote>` of `<section>`.
+Dit geldt voor elke taal die op de pagina voorkomt, en voor elke hoofdtaal die de pagina heeft. Bijvoorbeeld een Nederlandstalige pagina met een Engels citaat: dat citaat krijgt in de code de taal Engels mee, zodat een screenreader de Engelse uitspraak gebruikt. Een Engelstalige pagina met een Nederlandse zin werkt op dezelfde manier, en zo ook Fries op een Nederlandse pagina of Arabisch op een Engelse pagina.
+
+Je stelt de taal in met het `lang`-attribuut. Dat kan op elk HTML-element, bijvoorbeeld op een `<span>`, `<p>`, `<blockquote>` of `<section>`.
+
+## Wie zorgt hiervoor
+
+Taal van onderdelen komt op meerdere plekken in een website terecht, dus meerdere rollen hebben er werk aan:
+
+- Front-end developers nemen de taal van content over uit de database. Staat er een overzicht met artikelen op de pagina, dan stelt elk item in dat overzicht zijn eigen taal in wanneer die afwijkt van de taal van de pagina.
+- Front-end developers zorgen ook dat elk onderdeel van een meertalige website vertaald kan worden. Teksten die vast in een template of een component staan, kunnen niet vertaald worden en houden daarmee de verkeerde taal.
+- Back-end developers maken het mogelijk om de taal van een onderdeel in de database vast te leggen, zodra een website meer dan 1 taal gebruikt.
+- Bouwers van een contentmanagementsysteem maken het mogelijk om een deel van een tekst op een andere taal te zetten, en helpen contentmakers daarbij. Zonder die hulp gebeurt het niet.
+- Krijgt de interface van een website nieuwe teksten, dan zijn de vertalingen compleet voordat de nieuwe versie online gaat.
 
 ## Veelgemaakte fouten
 
 ### Screenreader leest anderstalige tekst in de verkeerde taal voor
 
-Een tekst in een andere taal staat op de pagina zonder dat de taal is aangegeven. De screenreader leest de passage voor met de uitspraakregels van de hoofdtaal. Een Engels citaat op een Nederlandstalige pagina klinkt dan alsof iemand Engels probeert te lezen met een Nederlandse uitspraak.
+Een tekst in een andere taal staat op de pagina zonder dat de taal is aangegeven. De screenreader leest die tekst voor met de uitspraakregels van de hoofdtaal. Een Engels citaat op een Nederlandstalige pagina klinkt dan alsof iemand Engels probeert te lezen met een Nederlandse uitspraak.
 
 **Hoe te testen:** zoek op de pagina naar tekst in een andere taal. Inspecteer het element in de <span lang="en">DevTools</span> en controleer of er een `lang`-attribuut op staat en of de waarde klopt.
 
-<Guideline appearance="dont" title="Engelse zin zonder taalmarkering op een Nederlandstalige pagina">
+<Guideline appearance="dont" title="Bij de Engelse zin staat niet dat die Engels is">
   ```html
   <html lang="nl">
     <body>
@@ -59,13 +73,11 @@ Een tekst in een andere taal staat op de pagina zonder dat de taal is aangegeven
   ```
 </Guideline>
 
-<Guideline appearance="do" title="Engelse zin met lang-attribuut">
+<Guideline appearance="do" title="Bij de Engelse zin staat de taal Engels">
   ```html
   <html lang="nl">
     <body>
-      <p>
-        Ons motto is: <q lang="en">Work hard in silence, let success make the noise.</q>
-      </p>
+      <p>Ons motto is: <span lang="en">"Work hard in silence, let success make the noise."</span></p>
     </body>
   </html>
   ```
@@ -75,7 +87,7 @@ Een tekst in een andere taal staat op de pagina zonder dat de taal is aangegeven
 
 ### Screenreader wisselt te vroeg naar een andere taal
 
-Het `lang`-attribuut staat op een parent-element dat meer content bevat dan alleen de anderstalige passage. Hierdoor wordt ook de Nederlandstalige tekst eromheen als Engels gemarkeerd. De screenreader schakelt te vroeg naar de Engelse stem en leest de Nederlandse tekst verkeerd voor.
+Het `lang`-attribuut staat op een element dat meer content bevat dan alleen de anderstalige tekst. Daardoor krijgt ook de Nederlandstalige tekst eromheen de taal Engels. De screenreader schakelt te vroeg naar de Engelse stem en leest de Nederlandse tekst verkeerd voor.
 
 **Hoe te testen:** inspecteer het element met het `lang`-attribuut in de <span lang="en">DevTools</span>. Bevat het element alleen de anderstalige tekst, of ook tekst in de hoofdtaal?
 
@@ -97,7 +109,7 @@ Het `lang`-attribuut staat op een parent-element dat meer content bevat dan alle
 
 ### Screenreader herkent de taalcode niet
 
-Het `lang`-attribuut op een anderstalige passage bevat een ongeldige taalcode. De screenreader herkent de code niet en valt terug op de hoofdtaal van de pagina. Het effect is hetzelfde als wanneer het `lang`-attribuut ontbreekt.
+Het `lang`-attribuut op een anderstalige tekst bevat een ongeldige taalcode. De screenreader herkent de code niet en valt terug op de hoofdtaal van de pagina. Het effect is hetzelfde als wanneer het `lang`-attribuut ontbreekt.
 
 **Hoe te testen:** inspecteer anderstalige elementen in de <span lang="en">DevTools</span>. Controleer of de taalcode geldig is volgens de BCP 47-standaard.
 
@@ -128,29 +140,38 @@ Niet elke anderstalige tekst heeft een `lang`-attribuut nodig. Je hoeft geen `la
 
 ## Hoe te testen
 
+Een screenreader spreekt een andere taal alleen goed uit als de stem voor die taal op het apparaat staat. Je installeert die stemmen per taal: een stem voor Engels installeer je los van een stem voor Frans. Ontbreekt de stem, dan leest de screenreader de tekst voor met de stem van de hoofdtaal en hoor je geen verschil, ook al staat de taal correct in de code. Je test met een screenreader dus alleen de talen die je zelf hebt geïnstalleerd. Voor de andere talen kijk je in de code.
+
+Zo stel je stemmen in bij de screenreaders uit de [NL Design System Baseline](/baseline):
+
+- [Automatisch wisselen van taal in NVDA](https://www.nvaccess.org/files/nvda/documentation/userGuide.html#SpeechSettingsLanguageSwitching) op Windows. Engelstalig.
+- [Stemmen toevoegen in VoiceOver op de Mac](https://support.apple.com/nl-nl/guide/voiceover/cpvouspvoices/mac), in het paneel "Stemmen" van de categorie "Spraak".
+- [VoiceOver op de iPhone](https://support.apple.com/nl-nl/guide/iphone/iph3e2e415f/ios): stemmen voor extra talen stel je in bij de instellingen voor toegankelijkheid.
+
 ### Voor iedereen
 
-1. Lees de pagina en let op passages in een andere taal dan de hoofdtaal. Bijvoorbeeld: citaten, slogans, technische termen en namen van organisaties.
-2. Gebruik een screenreader en luister of anderstalige passages correct worden uitgesproken. Een verkeerde uitspraak herken je aan een onnatuurlijke klank, alsof iemand de tekst in de verkeerde taal voorleest.
-3. Controleer of veelgebruikte Engelstalige termen op een Nederlandstalige pagina correct worden voorgelezen. Niet elk Engels woord hoeft gemarkeerd te worden, maar volledige zinnen en passages wel.
+1. Lees de pagina en let op tekst in een andere taal dan de hoofdtaal. Bijvoorbeeld citaten, slogans, technische termen en namen van organisaties.
+2. Kijk ook naar de interface zelf: knoppen, labels, foutmeldingen en items in een menu. Op een meertalige website staan daar teksten die nog niet vertaald zijn.
+3. Gebruik een screenreader en luister of anderstalige tekst goed wordt uitgesproken. Een verkeerde uitspraak herken je aan een onnatuurlijke klank, alsof iemand de tekst in de verkeerde taal voorleest.
+4. Controleer of veelgebruikte Engelstalige termen op een Nederlandstalige pagina goed worden voorgelezen. Niet elk Engels woord heeft een taal in de code nodig, hele zinnen wel.
 
 ### Voor developers
 
 1. Zoek in de broncode naar tekst in een andere taal. Controleer of die tekst in een element staat met een `lang`-attribuut.
 2. Controleer of de taalcode geldig is. Gebruik de BCP 47-standaard: `en` voor Engels, `fr` voor Frans, `de` voor Duits, `fy` voor Fries.
 3. Controleer of het `lang`-attribuut op het juiste element staat. Het element bevat alleen de anderstalige tekst, niet de omringende tekst in de hoofdtaal.
-4. Test met een screenreader of de stemmodule correct wisselt bij anderstalige passages. In <span lang="en">VoiceOver</span> hoor je een hoorbare wisseling van stem.
-5. Controleer het CMS: kunnen contentbeheerders een taal toewijzen aan een passage? Als dat niet kan, overweeg dan een taaloptie toe te voegen aan de rich text editor.
-6. Geautomatiseerde tools zoals <span lang="en">axe DevTools</span> herkennen ontbrekende `lang`-attributen op het `<html>`-element, maar niet op onderdelen van de pagina. Het markeren van anderstalige passages controleer je handmatig.
+4. Test met een screenreader of de stem wisselt bij anderstalige tekst. In <span lang="en">VoiceOver</span> hoor je die wisseling.
+5. Controleer het contentmanagementsysteem: kunnen contentbeheerders een taal toewijzen aan een stuk tekst? Als dat niet kan, voeg dan een taaloptie toe aan de tekstverwerker in het systeem.
+6. Geautomatiseerde tools zoals <span lang="en">axe DevTools</span> herkennen ontbrekende `lang`-attributen op het `<html>`-element, maar niet op onderdelen van de pagina. Of anderstalige tekst de juiste taal heeft, controleer je met de hand.
 
 ## Gerelateerde succescriteria
 
 - [3.1.1 Taal van de pagina](/wcag/3.1.1/): de hoofdtaal van de hele pagina is aangegeven in het `lang`-attribuut op `<html>`. Dit criterium is de basis: zonder een correcte hoofdtaal kan een screenreader ook de taalwisselingen binnen de pagina niet goed verwerken.
-- [1.3.1 Info en relaties](/wcag/1.3.1/): de taalmarkering is een vorm van programmatisch bepaalde informatie. Als de taal niet is aangegeven, gaat structurele informatie verloren.
+- [1.3.1 Info en relaties](/wcag/1.3.1/): de taal van een stuk tekst is informatie die software moet kunnen uitlezen. Als de taal niet is aangegeven, gaat structurele informatie verloren.
 
 ## Demo taalwisseling met VoiceOver
 
-In deze video hoor je hoe de screenreader VoiceOver wisselt van stem en taal voor teksten die met het `lang`-attribuut zijn gemarkeerd.
+In deze video hoor je hoe de screenreader VoiceOver wisselt van stem en taal voor teksten die met het `lang`-attribuut een eigen taal hebben gekregen.
 
 <VideoPlayer id="2UAjJ_5nxqw" title="Demo taalwisseling met VoiceOver" />
 
