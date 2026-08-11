@@ -1,7 +1,7 @@
 /**
  * @type {import('prettier').Config}
  */
-module.exports = {
+export default {
   printWidth: 120,
   singleQuote: true,
   overrides: [
@@ -27,6 +27,13 @@ module.exports = {
       files: '*.astro',
       options: {
         parser: 'astro',
+      },
+    },
+    {
+      // match pnpm CLI-driven changes behavior
+      files: ['pnpm-workspace.yaml'],
+      options: {
+        singleQuote: true,
       },
     },
   ],
