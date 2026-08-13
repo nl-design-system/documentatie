@@ -59,7 +59,9 @@ import ContrastSolution from "@nl-design-system-unstable/documentation/component
 import DescriptiveMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/metadata.json";
 import DescriptiveExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/explanation.md";
 import DescriptiveSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/solution.md";
-import DescriptiveSolutionH1 from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/solution-h1.md";
+import DescriptiveH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/descriptive/metadata.json";
+import DescriptiveH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/descriptive/explanation.md";
+import DescriptiveH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/descriptive/solution.md";
 import EmptyMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/metadata.json";
 import EmptyExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/explanation.md";
 import EmptySolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/solution.md";
@@ -178,8 +180,6 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <DescriptiveSolution />
 
-<DescriptiveSolutionH1 />
-
 <Heading level={3}>{EmptyMeta.title}</Heading>
 
 <EmptyExplanation />
@@ -187,8 +187,6 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 #### Oplossing
 
 <EmptySolution />
-
-<EmptySolutionH1 />
 
 <Heading level={3}>{LanguageMeta.title}</Heading>
 
@@ -216,7 +214,7 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <SkippedSolution />
 
-## Veelgemaakte fouten bih het inzetten van Heading 1
+## Veelgemaakte fouten bij het inzetten van Heading 1
 
 <Heading level={3}>{NoH1Meta.title}</Heading>
 
@@ -233,6 +231,14 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 #### Oplossing
 
 <MultipleH1Solution />
+
+<Heading level={3}>{DescriptiveH1Meta.title}</Heading>
+
+<DescriptiveH1Explanation />
+
+#### Oplossing
+
+<DescriptiveH1Solution />
 
 <Heading level={3}>{TitleMeta.title}</Heading>
 
