@@ -22,7 +22,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_component.md";
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/\_component_gebruiken_intro.md";
@@ -38,12 +37,6 @@ export const componentName = "note";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Checklist voor toegankelijkheid
 

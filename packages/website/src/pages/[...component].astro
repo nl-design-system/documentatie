@@ -9,6 +9,7 @@ import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
 import { Flex } from '@components/flex/flex';
+import { ComponentIllustration } from '@components/component-illustration/component-illustration';
 import { EstafetteBadge } from '../../../../src/components/EstafetteBadge';
 import '../../../../src/components/ComponentPage.css';
 import '../../../../src/components/EstafetteBadge.css';
@@ -63,6 +64,17 @@ const components = await MDXComponents();
       </Flex>
       {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
     </Grid.Cell>
+    {
+      ['Help Wanted', 'Community'].includes(status) && (
+        <Grid.Cell span="all">
+          <ComponentIllustration
+            relayStep={status}
+            description={`Schets van de ${page.data.title} component`}
+            name={page.data.title}
+          />
+        </Grid.Cell>
+      )
+    }
   </Grid>
 
   <Grid>
