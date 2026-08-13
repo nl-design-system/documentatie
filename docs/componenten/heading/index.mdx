@@ -71,18 +71,18 @@ import LargeTextMeta from "@nl-design-system-unstable/documentation/componenten/
 import LargeTextExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/explanation.md";
 import LargeTextSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/solution.md";
 import LargeTextSolutionQuote from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/solution-quote.md";
-import MultipleH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/metadata.json";
-import MultipleH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/explanation.md";
-import MultipleH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/solution.md";
-import NoH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/noH1/metadata.json";
-import NoH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/noH1/explanation.md";
-import NoH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/noH1/solution.md";
+import MultipleH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/multipleH1/metadata.json";
+import MultipleH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/multipleH1/explanation.md";
+import MultipleH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/multipleH1/solution.md";
+import NoH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/noH1/metadata.json";
+import NoH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/noH1/explanation.md";
+import NoH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/noH1/solution.md";
 import SkippedMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/metadata.json";
 import SkippedExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/explanation.md";
 import SkippedSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/solution.md";
-import TitleMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/title/metadata.json";
-import TitleExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/title/explanation.md";
-import TitleSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/title/solution.md";
+import TitleMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/title/metadata.json";
+import TitleExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/title/explanation.md";
+import TitleSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/heading1/title/solution.md";
 
 import {
   DefinitionOfDone,
@@ -208,13 +208,15 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <LargeTextSolutionQuote />
 
-<Heading level={3}>{MultipleH1Meta.title}</Heading>
+<Heading level={3}>{SkippedMeta.title}</Heading>
 
-<MultipleH1Explanation />
+<SkippedExplanation />
 
 #### Oplossing
 
-<MultipleH1Solution />
+<SkippedSolution />
+
+## Veelgemaakte fouten bih het inzetten van Heading 1
 
 <Heading level={3}>{NoH1Meta.title}</Heading>
 
@@ -224,13 +226,13 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <NoH1Solution />
 
-<Heading level={3}>{SkippedMeta.title}</Heading>
+<Heading level={3}>{MultipleH1Meta.title}</Heading>
 
-<SkippedExplanation />
+<MultipleH1Explanation />
 
 #### Oplossing
 
-<SkippedSolution />
+<MultipleH1Solution />
 
 <Heading level={3}>{TitleMeta.title}</Heading>
 
