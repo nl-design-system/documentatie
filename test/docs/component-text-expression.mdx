@@ -1,6 +1,6 @@
 ---
-title: Component met tekst expressie
-description: Test of een tekst expressie als child van een component correct gerenderd wordt
+title: Component with text expression
+description: Test that a text expression as a child of a component renders correctly
 unlisted: true
 ---
 
@@ -8,14 +8,12 @@ unlisted: true
 
 import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
+import TestPageNote from "./_test-page-note.md";
 
-Wordt een tekst expressie als child van een component correct gerenderd
+Tests whether a text expression as a child of a component renders correctly
 
-:::info[testpagina]
-Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
-Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
-:::
+<TestPageNote />
 
 <ButtonLink href="/community/community-sprints/mijn-services-community/aanmelden" appearance="primary-action">
-  {"Meld je aan"} <IconChevronRight />
+  {"Sign up"} <IconChevronRight />
 </ButtonLink>

@@ -1,18 +1,16 @@
 ---
-title: Component met JSON props
-description: Test of een component met JSON props correct gerenderd wordt
+title: Component with JSON props
+description: Test that a component with JSON props renders correctly
 unlisted: true
 ---
 
 {/* @license CC0-1.0 */}
 
-import { Paragraph } from "@utrecht/component-library-react";
+import { Paragraph } from "@components/paragraph/paragraph";
+import TestPageNote from "./_test-page-note.md";
 
-Wordt een component met JSON props correct gerenderd
+Tests whether a component with JSON props renders correctly
 
-:::info[testpagina]
-Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
-Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
-:::
+<TestPageNote />
 
-<Paragraph style={{ color: "rgb(206, 44, 49)" }}>Deze tekst is rood</Paragraph>
+<Paragraph style={{ color: "rgb(206, 44, 49)" }}>This text is red</Paragraph>

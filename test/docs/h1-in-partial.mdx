@@ -1,18 +1,17 @@
 ---
 title: H1 in partial
-description: Test of een H1 in een geimporteerde partial verwijderd wordt
+description: Test that an H1 in an imported partial is removed
 unlisted: true
 ---
+
+import TestPageNote from "./_test-page-note.md";
 
 {/* @license CC0-1.0 */}
 
 import Partial from "./_partial-h1.md";
 
-Wordt een H1 in een geimporteerde partial verwijderd
+Tests whether an H1 in an imported partial is removed
 
-:::info[testpagina]
-Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
-Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
-:::
+<TestPageNote />
 
 <Partial />

@@ -1,6 +1,6 @@
 ---
 title: Linklist adjacent text
-description: Test of tekst naast een icon in een LinkListLink correct gerenderd wordt
+description: Test that text adjacent to an icon in a LinkListLink renders correctly
 unlisted: true
 ---
 
@@ -8,17 +8,15 @@ unlisted: true
 
 import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { IconChevronRight } from "@tabler/icons-react";
+import TestPageNote from "./_test-page-note.md";
 
-Wordt tekst naast een icon in een LinkListLink correct gerenderd
+Tests whether text adjacent to an icon in a LinkListLink renders correctly
 
-:::info[testpagina]
-Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
-Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
-:::
+<TestPageNote />
 
 <LinkList>
   <LinkListLink href="https://example.com/">
     <IconChevronRight />
-    Voorbeeld link tekst
+    Example link text
   </LinkListLink>
 </LinkList>

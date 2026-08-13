@@ -1,6 +1,6 @@
 ---
-title: Content test overzicht
-description: Overzicht van alle content test pagina's
+title: Content test overview
+description: Overview of all content test pages
 unlisted: true
 hide_table_of_contents: true
 ---
@@ -9,14 +9,12 @@ hide_table_of_contents: true
 
 import { getCollection } from "astro:content";
 import { ContentTestOverview } from "./ContentTestOverview";
+import TestPageNote from "./_test-page-note.md";
 
 export const pages = await getCollection("contentTest");
 
-Overzicht van alle content test pagina's
+Overview of all content test pages
 
-:::info[testpagina]
-Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
-Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
-:::
+<TestPageNote />
 
 <ContentTestOverview pages={pages} />

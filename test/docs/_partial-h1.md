@@ -1,3 +1,3 @@
-# Heading die verdwijnt {#test-h1}
+# Heading that disappears {#test-h1}
 
-Body tekst van de partial.
+Body text of the partial.

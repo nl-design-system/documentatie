@@ -1,27 +1,25 @@
 ---
 title: Markdown as children
-description: Test of markdown als children voor een component correct gerenderd wordt
+description: Test that markdown as children of a component renders correctly
 unlisted: true
 ---
 
 {/* @license CC0-1.0 */}
 
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import TestPageNote from "./_test-page-note.md";
 
-Wordt de markdown als children van een component gerenderd als markdown
+Tests whether the markdown as children of a component is rendered as markdown
 
-:::info[testpagina]
-Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
-Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
-:::
+<TestPageNote />
 
 <SpotlightSection appearance="info">
 
-## Dit wordt een h2 heading
+## This is an h2 heading
 
-Dit is een paragraaf
+This is a paragraph
 
-- dit is een lijst
-- met 2 items
+- this is a list
+- with 2 items
 
 </SpotlightSection>

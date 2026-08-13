@@ -1,18 +1,17 @@
 ---
 title: Anchor link
-description: Test of een anchor link met custom header id correct werkt
+description: Test that an anchor link with a custom header id works correctly
 unlisted: true
 ---
 
-Wordt een anchor link met custom header id correct gerenderd
+import TestPageNote from './\_test-page-note.md'
 
-:::info[testpagina]
-Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
-Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
-:::
+Tests whether an anchor link with a custom header id renders correctly
 
-Zie de [sectie over testen](#test-sectie).
+<TestPageNote />
 
-## Test sectie {#test-sectie}
+See the [section about testing](#custom-id).
 
-Inhoud van de test sectie.
+## Test section {#custom-id}
+
+Content of the test section.

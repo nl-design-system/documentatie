@@ -1,18 +1,17 @@
 ---
 title: Canvas arrow function
-description: Test of een Canvas met arrow function children correct gerenderd wordt
+description: Test that a Canvas with arrow function children renders correctly
 unlisted: true
 ---
+
+import TestPageNote from "./_test-page-note.md";
 
 {/* @license CC0-1.0 */}
 
 import { Canvas } from "@site/src/components/Canvas/Canvas";
 
-Wordt een Canvas met arrow function children correct gerenderd
+Tests whether a Canvas with arrow function children renders correctly
 
-:::info[testpagina]
-Dit is een interne test pagina. Bedoeld om de werking van de website geisoleerd te kunnen testen.
-Deze pagina is bedoeld voor developers en wordt niet getest op toegankelijkheid
-:::
+<TestPageNote />
 
 <Canvas language="html">{() => <p>Hello from Canvas</p>}</Canvas>
