@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Websites en webapplicaties
 pagination_label: Websites en webapplicaties
 description: Als developer Websites en webapplicaties maken met NL Design System
+slug: /handboek/developer/productie/
 ---
 
 # Websites en webapplicaties maken met NL Design System

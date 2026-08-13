@@ -2,7 +2,7 @@
   "label": "Tekstopmaak",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/content/tekstopmaak/README"
+    "id": "richtlijnen/content/tekstopmaak/index"
   },
   "customProps": {
     "showLinkedDoc": true

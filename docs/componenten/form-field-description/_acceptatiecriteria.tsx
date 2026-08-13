@@ -7,17 +7,22 @@ import Wcag143 from '@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag144 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md';
 import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md';
 import Wcag133 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.3.3-summary.md';
+import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md';
+import Wcag211NLDSNI from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.1.1-nlds-noninteractives.md';
+import Wcag243NLDSNI from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.4.3-nlds-noninteractives.md';
+import Wcag211NI from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.1.1-noninteractives.md';
+import Wcag243NI from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.3-noninteractives.md';
 
 export const usage = [
   {
-    title: 'De Form Field Description is gekoppeld aan het bijbehorende element voor formulierinvoer',
+    title: 'De Form Field Description is gekoppeld aan het bijbehorende element voor formulierinvoer.',
     sc: '1.3.1',
     status: '',
     component: Wcag131FormFieldDescription,
     tags: ['developer'],
   },
   {
-    title: 'De Form Field Description staat op een logische plek',
+    title: 'De Form Field Description staat op een logische plek.',
     sc: '1.3.2',
     status: '',
     component: Wcag132FormFieldDescription,
@@ -28,6 +33,14 @@ export const usage = [
     sc: '1.3.3',
     status: '',
     component: Wcag133,
+    tags: ['designer', 'contentmaker'],
+  },
+  {
+    title:
+      'De kleur van de Form Field Description geeft geen informatie die niet ook op minimaal 1 andere manier wordt gegeven.',
+    sc: '1.4.1',
+    status: '',
+    component: Wcag141,
     tags: ['designer', 'contentmaker'],
   },
   {
@@ -53,6 +66,20 @@ export const usage = [
     tags: ['developer', 'designer'],
   },
   {
+    title: 'De Form Field Description is niet bereikbaar en bedienbaar met het toetsenbord.',
+    sc: '2.1.1',
+    status: '',
+    component: Wcag211NI,
+    tags: ['developer'],
+  },
+  {
+    title: 'De Form Field Description komt niet voor in de normale focusvolgorde van de pagina.',
+    sc: '2.4.3',
+    status: '',
+    component: Wcag243NI,
+    tags: ['developer'],
+  },
+  {
     title:
       'Als de Form Field Description in een andere taal is dan de taal van de pagina, dan heeft het een lang-attribuut met de juiste taalcode.',
     sc: '3.1.2',
@@ -75,6 +102,20 @@ export const component = [
     sc: '1.4.12',
     status: '',
     component: Wcag1412,
+    tags: ['developer'],
+  },
+  {
+    title: 'De Form Field Description is standaard niet bereikbaar en bedienbaar met het toetsenbord.',
+    sc: '2.1.1',
+    status: '',
+    component: Wcag211NLDSNI,
+    tags: ['developer'],
+  },
+  {
+    title: 'De Form Field Description komt standaard niet voor in de focusvolgorde van de pagina.',
+    sc: '2.4.3',
+    status: '',
+    component: Wcag243NLDSNI,
     tags: ['developer'],
   },
 ];

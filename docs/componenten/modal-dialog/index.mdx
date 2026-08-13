@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Modal Dialog
 pagination_label: Modal Dialog
 description: Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina wordt geblokkeerd.
+issue_number: 66
 slug: /modal-dialog
 keywords:
   - dialog
@@ -34,6 +35,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
@@ -45,11 +47,6 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <Introduction component={component} headingLevel={1} description={description} />
 
-<p>
-  Gerelateerde componenten: <a href="/alert-dialog/">Alert Dialog</a>, <a href="/drawer/">Drawer</a>,{" "}
-  <a href="/dialog/">Dialog</a>.
-</p>
-
 ## Definition of Done
 
 <DefinitionOfDone component={component} headingLevel={3} />
@@ -57,5 +54,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 <HelpImproveComponent component={component} headingLevel={2} />

@@ -1,32 +1,122 @@
 ---
 import { siteName, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { generateDocumentTitle } from '@utils/document-title';
+import { PageHeader } from '@components/page-header/page-header';
+import { PageFooter } from '@components/page-footer/page-footer';
+import { NavBar } from '@components/nav-bar/nav-bar';
+import { PageLayout } from '@components/page-layout/page-layout';
+import { SkipLink } from '@components/skip-link/skip-link.tsx';
+import { NavList } from '@components/nav-list/nav-list';
+import { NavListLink } from '@components/nav-list/nav-list';
+import { LinkList, LinkListLink } from '@components/link-list/link-list';
+import { MobileMenu } from '@components/mobile-menu/mobile-menu';
+import { IconChevronRight } from '@tabler/icons-react';
+import { SideNavigation } from '@components/side-navigation/side-navigation.tsx';
+import { getMainNavigation } from '../navigation';
+import { navigation } from '../navigation.config.ts';
 
-interface Props {
-  title?: string;
+import '@fontsource/fira-code';
+import '@fontsource/fira-sans/700';
+import '@fontsource/source-sans-pro';
+import '@fontsource/source-sans-pro/700.css';
+import '@utrecht/root-css/dist/index.css';
+import '@components/flow/flow.css';
+
+// NLDS markdown components
+import '@utrecht/button-css/dist/index.css';
+import '@utrecht/button-group-css/dist/index.css';
+import '@utrecht/button-link-css/dist/index.css';
+import '@utrecht/blockquote-css/dist/index.css';
+import '@utrecht/custom-checkbox-css/dist/index.css';
+import '@utrecht/checkbox-css/dist/index.css';
+import '@utrecht/emphasis-css/dist/index.css';
+import '@utrecht/figure-css/dist/index.css';
+import '@utrecht/form-label-css/dist/index.css';
+import '@utrecht/form-field-css/dist/index.css';
+import '@utrecht/form-fieldset-css/dist/index.css';
+import '@utrecht/form-field-description-css/dist/index.css';
+import '@utrecht/separator-css/dist/index.css';
+import '@utrecht/ordered-list-css/dist/index.css';
+import '@utrecht/table-css/dist/index.css';
+import '@utrecht/textarea-css/dist/index.css';
+import '@utrecht/textbox-css/dist/index.css';
+import '@utrecht/img-css/dist/index.css';
+import '@utrecht/spotlight-section-css/dist/index.css';
+import '@nl-design-system-candidate/paragraph-css/paragraph.css';
+import '@nl-design-system-candidate/code-css/code.css';
+import '@nl-design-system-candidate/code-block-css/code-block.css';
+import '@utrecht/component-library-css/dist/html.css';
+
+import 'a11y-syntax-highlighting/dist/prism/a11y-dark.css';
+import '../../src/styles/missing-tokens.css';
+import './document.css';
+import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
+import { withCurrentIndication } from 'src/navigation/with-current-indication.ts';
+import '@components/sr-only/sr-only.css';
+import '@components/body-copy/body-copy.css';
+import '../../../../src/components/Guideline.css';
+import '../../../../src/components/Canvas/CanvasAstro.css';
+
+export interface Props {
+  title: string;
+  titleSm?: string;
   description?: string;
   lang?: 'nl' | 'en';
   seoImage?: string;
   seoImageAlt?: string;
   keywords?: string[];
   index?: boolean;
+  follow?: boolean;
+  class?: string;
 }
 
-const { title, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true } = Astro.props;
+const {
+  title,
+  titleSm,
+  description,
+  lang = 'nl',
+  keywords,
+  seoImage,
+  seoImageAlt,
+  index = true,
+  follow,
+  class: className,
+} = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = 'Logo van NL Design System';
 
+const documentTitle = generateDocumentTitle(titleSm || title);
 const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
 const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
 const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
 const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
+const _follow = follow === undefined ? index : follow;
+const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
+
+const { navigationTree } = await withCurrentIndication(navigation, Astro.url.pathname);
+const items = serialiseNavigationTree(navigationTree);
+const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
+
+const footerNavigationItems = [
+  { href: '/blog/', label: 'Blog' },
+  { href: '/project/kernteam/', label: 'Contact' },
+  { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid' },
+  { href: '/privacyverklaring/', label: 'Privacyverklaring' },
+  { href: '/colofon/', label: 'Colofon' },
+  { href: '/github/', label: 'GitHub' },
+  { href: '/slack/', label: 'Slack' },
+  { href: '/figma/', label: 'Figma' },
+  { href: 'https://www.linkedin.com/company/nl-design-system/', label: 'LinkedIn', external: true },
+  { href: '/sitemap', label: 'Sitemap' },
+];
 ---
 
-<html lang={lang} dir="ltr">
+<html class="utrecht-root" lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
+    <title>{documentTitle}</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
@@ -37,14 +127,14 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
     <link rel="canonical" href={canonicalUrl} />
     <meta name="description" content={description} />
     <meta name="keywords" content={[..._keywords].join(', ')} />
-    <meta name="robots" content={index ? 'index' : 'noindex'} />
+    <meta name="robots" content={_robots} />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:image" content={_seoImage} />
     <meta property="og:image:alt" content={_seoImageAlt} />
     <meta property="og:description" content={description} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={documentTitle} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:locale" content={lang} />
     <meta property="twitter:card" content={twitterCard} />
@@ -52,22 +142,62 @@ const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
     <slot name="head" />
   </head>
 
-  <body>
-    <header>
-      TODO: PageHeader
-      <h2 id="hoofdnavigatie-label">Hoofdmenu</h2>
-      <nav aria-labelledby="hoofdnavigatie-label">TODO: Hoofd navigatie</nav>
-    </header>
-    <h2 id="breadcrumb-label">Kruimelpad</h2>
-    <nav aria-labelledby="breadcrumb-label">TODO: Breadcrumb navigatie</nav>
-    <main>
+  <body class={className}>
+    <SkipLink href="#main">Naar de inhoud</SkipLink>
+    <PageLayout>
+      <PageHeader />
+      <NavBar>
+        <nav aria-labelledby="hoofdnavigatie-label">
+          <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
+          <NavList>
+            {
+              mainNavigationItems.map(({ href, label, expanded, current }) => (
+                <NavListLink href={href} aria-current={expanded || current ? 'page' : null}>
+                  {label}
+                </NavListLink>
+              ))
+            }
+          </NavList>
+        </nav>
+      </NavBar>
+
       <slot />
-    </main>
-    <footer>
-      TODO: PageFooter
-      <h2 id="site-navigatie-label">Submenu</h2>
-      <nav aria-labelledby="site-navigatie-label">TODO: Footer navigatie</nav>
-    </footer>
+
+      <PageFooter>
+        <nav aria-labelledby="site-navigatie-label">
+          <h2 hidden id="site-navigatie-label">Submenu</h2>
+          <LinkList>
+            {
+              footerNavigationItems.map(({ href, label }) => (
+                <LinkListLink href={href}>
+                  {label}
+                  <span class="utrecht-icon" slot="icon">
+                    <IconChevronRight />
+                  </span>
+                </LinkListLink>
+              ))
+            }
+          </LinkList>
+        </nav>
+      </PageFooter>
+    </PageLayout>
+
+    <MobileMenu>
+      <SideNavigation items={[items.items]} client:load />
+    </MobileMenu>
+
+    <script>
+      import 'invokers-polyfill';
+    </script>
+    <script>
+      import { UpdateDocumentTitleEvent } from '@utils/document-title.js';
+
+      document.addEventListener(UpdateDocumentTitleEvent.eventName, (event: Event) => {
+        if (event instanceof UpdateDocumentTitleEvent) {
+          document.title = event.newTitle;
+        }
+      });
+    </script>
   </body>
 </html>
 

@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Superscript
 pagination_label: Superscript
 description: Toont tekst met een kleiner lettertype met een verhoogde letterlijn.
+issue_number: 337
 slug: /superscript
 keywords:
   - exponent
@@ -33,6 +34,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
@@ -60,5 +62,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 <HelpImproveComponent component={component} headingLevel={2} />

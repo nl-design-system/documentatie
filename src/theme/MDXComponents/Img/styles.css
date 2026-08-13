@@ -1,3 +1,4 @@
+/* stylelint-disable-next-line selector-class-pattern */
 .img {
-  height: auto;
+  block-size: auto;
 }

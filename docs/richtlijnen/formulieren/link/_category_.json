@@ -2,7 +2,7 @@
   "label": "Links",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/formulieren/link/README"
+    "id": "richtlijnen/formulieren/link/index"
   },
   "customProps": {
     "showLinkedDoc": true

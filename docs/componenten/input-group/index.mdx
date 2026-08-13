@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Input Group
 pagination_label: Input Group
 description: Formulierveld waarmee je een waarde kunt bewerken in een groep van meerdere invoervelden.
+issue_number: 178
 slug: /input-group
 keywords:
   - combinatie
@@ -38,6 +39,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
@@ -65,5 +67,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 <HelpImproveComponent component={component} headingLevel={2} />

@@ -35,7 +35,7 @@ fs.readdirSync(sitemapDirDocusaurus)
   .forEach((fileContents) => {
     const $ = cheerio.load(fileContents, { xml: true });
     const data = $.extract({ loc: ['url loc'] });
-    data.loc.forEach(addToSet(docusaurusUrls));
+    data.loc.filter((loc) => loc.includes('/blog/') === false).forEach(addToSet(docusaurusUrls));
   });
 
 const missingUrls = docusaurusUrls.difference(astroUrls);

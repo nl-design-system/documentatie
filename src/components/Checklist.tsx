@@ -57,20 +57,20 @@ export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChil
   return (
     <li
       className={clsx(
-        'new-checklist__item',
-        tags.map((tag) => `new-checklist__item--${tag}`),
+        'ma-new-checklist__item',
+        tags.map((tag) => `ma-new-checklist__item--${tag}`),
       )}
     >
-      {/* <Checkbox className="new-checklist__checkbox" aria-labelledby={labelId} /> */}
+      {/* <Checkbox className="ma-new-checklist__checkbox" aria-labelledby={labelId} /> */}
       <details>
         <summary>
-          <span className="new-checklist__title" id={labelId}>
+          <span className="ma-new-checklist__title" id={labelId}>
             {title}
           </span>
         </summary>
-        <div className="new-checklist__content">
+        <div className="ma-new-checklist__content">
           {children && <div>{children}</div>}
-          <BadgeList className="new-checklist__badge-list">
+          <BadgeList className="ma-new-checklist__badge-list">
             {badgeTags.map((tag, index) => {
               let badge = <DataBadge key={index}>{tag}</DataBadge>;
 
@@ -134,7 +134,7 @@ export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
     <div>
       <div className="ma-filter-block">
         <Fieldset aria-describedby="filter-results" aria-labelledby={fieldsetLabelId}>
-          <Heading level={headingLevel} id={fieldsetLabelId}>
+          <Heading level={Number(headingLevel)} id={fieldsetLabelId}>
             Filter acceptatiecriteria voor:
           </Heading>
           {Array.from(allTags.values()).map((tag) => (
@@ -170,7 +170,7 @@ export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
         </div>
       </div>
 
-      <ul className="new-checklist" role="list">
+      <ul className="ma-new-checklist" role="list">
         {filteredChildren}
       </ul>
     </div>

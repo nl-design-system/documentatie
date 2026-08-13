@@ -102,7 +102,7 @@ Exporteer de typedefinities voor parameters, zodat andere ontwikkelaars deze gem
 ```jsx
 export type TextboxTypes = "password" | "text";
 
-export interface TextboxProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface TextboxProps extends ComponentPropsWithoutRef<'input'> {
   type?: TextboxTypes;
 }
 
@@ -169,20 +169,17 @@ Gebruik `restProps` om front-end developers in staat te stellen intrinsieke elem
 export const MyComponent = ({ children, ...restProps }) => <div {...restProps}>{children}</div>;
 ```
 
-Met TypeScript moet je de interface uitbreiden met de `HTMLAttributes` van het buitenste element, en dat ziet er als volgt uit:
+Met TypeScript moet je de interface uitbreiden met de HTML attributen van het buitenste element, en dat ziet er als volgt uit:
 
 ```jsx
-import type { HTMLAttributes, PropsWithChildren } from "react";
+import type { ComponentPropsWithoutRefs } from "react";
 
-export interface MyComponentProps extends HTMLAttributes<HTMLDivElement> {}
+export interface MyComponentProps extends ComponentPropsWithoutRef<'div'> {}
 
 export const MyComponent = ({ children, ...restProps }) => (
   <div {...restProps}>{children}</div>
 );
 ```
-
-Voor verschillende elementen moet je verschillende types `HTMLAttributes` importeren, daarvoor zou je kunnen kijken in de [veelgebruikte typings voor React](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/ff41535d2d84f62f459fa56a9c462182ed9d1ab3/types/react/index.d.ts#L4100-L4282).
-Op de Mozilla Developer website (MDN) kun je voor elk HTML element terugvinden wat daarvan de DOM Interface is onder "Technical Summary". Als voorbeeld [div](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div).
 
 ## Voorkom dubbele ID's
 

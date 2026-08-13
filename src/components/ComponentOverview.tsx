@@ -99,7 +99,7 @@ export const ComponentOverview = () => {
 
   return (
     <>
-      <div className="filter-accordion">
+      <div className="ma-filter-accordion">
         <AccordionProvider
           sections={[
             {

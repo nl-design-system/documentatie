@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Contact Timeline
 pagination_label: Contact Timeline
 description: Toont een chronologische lijst van contactmomenten, met de mogelijkheid om aanvullende details per contactmoment te bekijken.
+issue_number: 352
 slug: /contact-timeline
 keywords:
   - activiteit
@@ -39,6 +40,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
@@ -66,5 +68,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 <HelpImproveComponent component={component} headingLevel={2} />

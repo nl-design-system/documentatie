@@ -30,9 +30,9 @@ export const ComponentAnatomy = ({
 
   return (
     <Suspense fallback={null}>
-      <figure className={clsx('component-anatomy')}>
+      <figure className={clsx('ma-component-anatomy')}>
         {AnatomyIllustration && (
-          <AnatomyIllustration height={null} className={clsx('component-anatomy__illustration')} />
+          <AnatomyIllustration height={null} className={clsx('ma-component-anatomy__illustration')} />
         )}
         {AnatomyIllustration && AnatomyLegend && (
           <figcaption>

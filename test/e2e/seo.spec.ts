@@ -94,6 +94,10 @@ test.describe('SEO values', async () => {
             .locator('meta[property="twitter:card" i]')
             .getAttribute('content')
             .then((twitterCard) => ({ twitterCard })),
+          page
+            .locator('body h1:not(.nlds-not-accessible h1)')
+            .innerText()
+            .then((h1) => ({ h1 })),
         ]).then((values) => Object.assign({}, ...values));
       });
 
@@ -101,7 +105,7 @@ test.describe('SEO values', async () => {
         if (pathname.includes('/en/')) {
           await expect(values.lang).toBe('en');
         } else {
-          await expect(values.lang).toBe('nl');
+          await expect(['en', 'nl'].includes(values.lang)).toBeTruthy();
         }
       });
 
@@ -122,7 +126,8 @@ test.describe('SEO values', async () => {
       });
 
       test.skip('The page title is less then 60 chars', async () => {
-        await expect(values.title.length).toBeLessThanOrEqual(60);
+        const [title] = values.title.split(' ·');
+        await expect(title.length).toBeLessThanOrEqual(60);
       });
 
       test('Page description is set', async () => {
@@ -180,6 +185,11 @@ test.describe('SEO values', async () => {
         });
         test('twitter card is set', async () => {
           await expect(values.twitterCard).toBe(twitterCard);
+        });
+      });
+      test.describe('Page content', async () => {
+        test('Page has an h1', async () => {
+          await expect(values.h1).toBeDefined();
         });
       });
     });

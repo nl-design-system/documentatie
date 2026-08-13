@@ -2,6 +2,6 @@
   "label": "Label bevat alleen tekst",
   "link": {
     "type": "doc",
-    "id": "README"
+    "id": "index"
   }
 }

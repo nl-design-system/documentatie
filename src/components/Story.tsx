@@ -11,7 +11,7 @@ export const Story = ({ label, href }: StoryProps) => {
   const iframeSrc = href.replace('?path=/docs/', 'iframe.html?id=') + '&viewMode=story';
 
   return (
-    <div className="story">
+    <div className="ma-story">
       <IframeResizer
         src={iframeSrc}
         style={{ width: '1px', minWidth: '100%' }}
@@ -22,7 +22,7 @@ export const Story = ({ label, href }: StoryProps) => {
         // @ts-expect-error heightCalculationMethod is missing in the `index.d.ts` file
         heightCalculationMethod="lowestElement"
       />
-      <a className="story__link" href={storySrc} target="_blank" rel="noreferrer">
+      <a className="ma-story__link" href={storySrc} target="_blank" rel="noreferrer">
         {label}
       </a>
     </div>

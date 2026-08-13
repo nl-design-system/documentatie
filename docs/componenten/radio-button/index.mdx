@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Radio Button
 pagination_label: Radio Button
 description: "Invoerveld voor het kiezen van een enkele optie uit een groep van opties."
+issue_number: 65
 slug: /radio-button
 keywords:
   - form
@@ -29,6 +30,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
@@ -47,5 +49,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 <HelpImproveComponent component={component} headingLevel={2} />

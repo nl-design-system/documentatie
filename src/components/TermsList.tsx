@@ -42,7 +42,7 @@ export const TermsList = ({ terms }: TermsListProps) => {
     <div>
       <dl>
         {terms.map(({ term, slug, synonyms, definitions, sources }, index) => (
-          <div className="terms-list__item" key={index}>
+          <div className="ma-terms-list__item" key={index}>
             <dt id={slug}>
               <h3>{term}</h3>
             </dt>
@@ -54,13 +54,13 @@ export const TermsList = ({ terms }: TermsListProps) => {
               </>
             )}
 
-            <dd className="terms-list__definition">
+            <dd className="ma-terms-list__definition">
               {definitions.map((definition, index) => (
                 <Definition key={index} {...definition} />
               ))}
               {sources && sources.length && (
                 <>
-                  <div className="terms-list__definition__sources">
+                  <div className="ma-terms-list__definition__sources">
                     <span>Verder lezen:</span>
                     <ul role="list">
                       {sources.map((source, index) => (

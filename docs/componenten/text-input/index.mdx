@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Text Input
 pagination_label: Text Input
 description: Biedt de mogelijkheid om één regel aan tekens in te vullen.
+issue_number: 200
 slug: /text-input
 keywords:
   - editable textfield
@@ -45,6 +46,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
@@ -93,3 +95,5 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />

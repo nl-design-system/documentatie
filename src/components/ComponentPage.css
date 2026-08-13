@@ -1,45 +1,63 @@
-.definition-of-done {
+.ma-definition-of-done {
   --utrecht-heading-3-margin-block-end: 0;
+  --nl-button-subtle-border-width: 0;
+
   fill: var(--utrecht-accordion-button-color);
 }
 
-.definition-of-done--help-wanted {
-  --utrecht-accordion-button-background-color: var(--nlds-status-help-wanted-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-help-wanted-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-help-wanted-background-color);
+.ma-definition-of-done--help-wanted {
+  --nl-button-subtle-background-color: var(--ma-color-help-wanted-bg-default);
+  --nl-button-subtle-color: var(--ma-color-help-wanted-color-default);
+  --nl-button-subtle-hover-background-color: var(--ma-color-help-wanted-bg-hover);
+  --nl-button-subtle-hover-color: var(--ma-color-help-wanted-color-hover);
+  --nl-button-subtle-active-background-color: var(--ma-color-help-wanted-bg-active);
+  --nl-button-subtle-active-color: var(--ma-color-help-wanted-color-active);
+  --utrecht-accordion-panel-border-color: var(--ma-color-help-wanted-bg-default);
 }
 
-.definition-of-done--community {
-  --utrecht-accordion-button-background-color: var(--nlds-status-community-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-community-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-community-background-color);
+.ma-definition-of-done--community {
+  --nl-button-subtle-background-color: var(--ma-color-community-bg-default);
+  --nl-button-subtle-color: var(--ma-color-community-color-default);
+  --nl-button-subtle-hover-background-color: var(--ma-color-community-bg-hover);
+  --nl-button-subtle-hover-color: var(--ma-color-community-color-hover);
+  --nl-button-subtle-active-background-color: var(--ma-color-community-bg-active);
+  --nl-button-subtle-active-color: var(--ma-color-community-color-active);
+  --utrecht-accordion-panel-border-color: var(--ma-color-community-bg-default);
 }
 
-.definition-of-done--candidate {
-  --utrecht-accordion-button-background-color: var(--nlds-status-candidate-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-candidate-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-candidate-background-color);
+.ma-definition-of-done--candidate {
+  --nl-button-subtle-background-color: var(--ma-color-candidate-bg-default);
+  --nl-button-subtle-color: var(--ma-color-candidate-color-default);
+  --nl-button-subtle-hover-background-color: var(--ma-color-candidate-bg-hover);
+  --nl-button-subtle-hover-color: var(--ma-color-candidate-color-hover);
+  --nl-button-subtle-active-background-color: var(--ma-color-candidate-bg-active);
+  --nl-button-subtle-active-color: var(--ma-color-candidate-color-active);
+  --utrecht-accordion-panel-border-color: var(--ma-color-candidate-bg-default);
 }
 
-.definition-of-done--hall-of-fame {
-  --utrecht-accordion-button-background-color: var(--nlds-status-hall-of-fame-background-color);
-  --utrecht-accordion-button-color: var(--nlds-status-hall-of-fame-color);
-  --utrecht-accordion-panel-border-color: var(--nlds-status-hall-of-fame-background-color);
+.ma-definition-of-done--hall-of-fame {
+  --nl-button-subtle-background-color: var(--ma-color-hall-of-fame-bg-default);
+  --nl-button-subtle-color: var(--ma-color-hall-of-fame-color-default);
+  --nl-button-subtle-hover-background-color: var(--ma-color-hall-of-fame-bg-hover);
+  --nl-button-subtle-hover-color: var(--ma-color-hall-of-fame-color-hover);
+  --nl-button-subtle-active-background-color: var(--ma-color-hall-of-fame-bg-active);
+  --nl-button-subtle-active-color: var(--ma-color-hall-of-fame-color-active);
+  --utrecht-accordion-panel-border-color: var(--ma-color-hall-of-fame-bg-default);
 }
 
-.implementation-card-group {
-  --cardgroup-large-padding-block-start: 0;
-  --cardgroup-large-padding-block-end: 0;
+.ma-implementation-card-group {
+  --ma-cardgroup-large-padding-block-start: 0;
+  --ma-cardgroup-large-padding-block-end: 0;
 }
 
-.implementation-card {
-  --component-progress-background-color--checked: var(--nlds-status-community-background-color);
-  --component-progress-background-color--unchecked: var(--nlds-status-community-color);
+.ma-implementation-card {
+  --ma-component-progress-background-color--checked: var(--ma-color-community-bg-default);
+  --ma-component-progress-background-color--unchecked: var(--ma-color-community-color-default);
   --utrecht-link-list-link-column-gap: 0.25em;
   --utrecht-link-list-icon-inset-block-start: 0.25em;
   --nl-heading-level-4-margin-block-start: 1.25rem;
 }
 
-.implementation-card .nl-heading--level-4:first-of-type {
+.ma-implementation-card .nl-heading--level-4:first-of-type {
   --nl-heading-level-4-margin-block-start: 0;
 }

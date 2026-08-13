@@ -2,7 +2,7 @@
   "label": "Video",
   "link": {
     "type": "doc",
-    "id": "richtlijnen/content/video/README"
+    "id": "richtlijnen/content/video/index"
   },
   "customProps": {
     "showLinkedDoc": true

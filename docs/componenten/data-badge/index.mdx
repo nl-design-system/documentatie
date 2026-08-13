@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Data Badge
 pagination_label: Data Badge
 description: Label met extra informatie, zoals een categorie of een eigenschap.
+issue_number: 94
 slug: /data-badge
 keywords:
   - annotatie
@@ -64,6 +65,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
@@ -80,7 +82,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 
 <ComponentAliases component={component} />
 
-<Card className="implementation-card">
+<Card className="ma-implementation-card">
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
@@ -149,3 +151,5 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />

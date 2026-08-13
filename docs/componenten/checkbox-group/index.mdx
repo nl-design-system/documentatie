@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Checkbox Group
 pagination_label: Checkbox Group
 description: Biedt de mogelijkheid om geen, één of meerdere opties te selecteren uit een lijst.
+issue_number: 128
 slug: /checkbox-group
 keywords:
   - aankruisen
@@ -65,6 +66,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
@@ -92,5 +94,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 <HelpImproveComponent component={component} headingLevel={2} />

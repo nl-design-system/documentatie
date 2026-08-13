@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Form Field Description
 pagination_label: Form Field Description
 description: Toont ondersteunende tekst en biedt extra context over de in te vullen informatie.
+issue_number: 174
 slug: /form-field-description
 keywords:
   - beschrijving
@@ -36,6 +37,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
@@ -46,6 +48,10 @@ export const issueNumber = 174;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+## Checklist voor toegankelijkheid
+
+<IntroGebruik />
 
 ### Acceptatiecriteria bij gebruik
 
@@ -78,5 +84,7 @@ export const component = componentProgress.find((item) => item.number === issueN
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
 
 <HelpImproveComponent component={component} headingLevel={2} />

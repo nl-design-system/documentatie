@@ -9,10 +9,10 @@ export interface ContrastRatioProps {
 }
 
 export const ContrastRatio = ({ backgroundColor, color, contrastRatio }: ContrastRatioProps) => (
-  <dl className="contrast-ratio">
-    <div className="contrast-ratio__result">
-      <dt className="contrast-ratio__result-key">Contrast ratio:</dt>
-      <dd className="contrast-ratio__result-value">
+  <dl className="ma-contrast-ratio">
+    <div className="ma-contrast-ratio__result">
+      <dt className="ma-contrast-ratio__result-key">Contrast ratio:</dt>
+      <dd className="ma-contrast-ratio__result-value">
         <NumberData>
           {new Intl.NumberFormat('nl', { maximumSignificantDigits: 3, roundingMode: 'floor' } as unknown).format(
             contrastRatio,
@@ -21,11 +21,11 @@ export const ContrastRatio = ({ backgroundColor, color, contrastRatio }: Contras
         </NumberData>
       </dd>
     </div>
-    <div className={clsx('contrast-ratio__sample', 'contrast-ratio__sample--background-color')}>
-      <dt className="contrast-ratio__sample-key">Achtergrond:</dt>
-      <dd className="contrast-ratio__sample-value">
+    <div className={clsx('ma-contrast-ratio__sample', 'ma-contrast-ratio__sample--background-color')}>
+      <dt className="ma-contrast-ratio__sample-key">Achtergrond:</dt>
+      <dd className="ma-contrast-ratio__sample-value">
         <ColorSample
-          className="contrast-ratio__color-sample"
+          className="ma-contrast-ratio__color-sample"
           color={backgroundColor}
           role="img"
           aria-label={`voorbeeld van: ${backgroundColor}`}
@@ -33,11 +33,11 @@ export const ContrastRatio = ({ backgroundColor, color, contrastRatio }: Contras
         <Code>{backgroundColor}</Code>
       </dd>
     </div>
-    <div className={clsx('contrast-ratio__sample', 'contrast-ratio__sample--color')}>
-      <dt className="contrast-ratio__sample-key">Voorgrond:</dt>
-      <dd className="contrast-ratio__sample-value">
+    <div className={clsx('ma-contrast-ratio__sample', 'ma-contrast-ratio__sample--color')}>
+      <dt className="ma-contrast-ratio__sample-key">Voorgrond:</dt>
+      <dd className="ma-contrast-ratio__sample-value">
         <ColorSample
-          className="contrast-ratio__color-sample"
+          className="ma-contrast-ratio__color-sample"
           color={color}
           role="img"
           aria-label={`voorbeeld van: ${backgroundColor}`}

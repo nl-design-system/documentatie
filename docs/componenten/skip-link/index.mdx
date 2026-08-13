@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Skip Link
 pagination_label: Skip Link
 description: Verborgen mogelijkheid om snel naar een ander deel van de pagina te navigeren zonder gebruik te maken van een muis of touchscreen.
+issue_number: 74
 slug: /skip-link
 keywords:
   - anchor link
@@ -62,6 +63,7 @@ import {
   HelpImproveComponent,
   Implementations,
   Introduction,
+  Related,
 } from "@site/src/components/ComponentPage";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
@@ -81,7 +83,7 @@ Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkel
 
 <ComponentAliases component={component} />
 
-<Card className="implementation-card">
+<Card className="ma-implementation-card">
   <CardContent>
     <Heading level={2} appearance="level-4">Figma</Heading>
     <LinkList>
@@ -149,3 +151,5 @@ Gebruik de Skip Link zodat gebruikers met een toetsenbord of hulpsoftware makkel
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
+
+<Related component={component} />

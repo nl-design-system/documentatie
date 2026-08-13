@@ -1,0 +1,52 @@
+diff --git a/dist/cjs/index.js b/dist/cjs/index.js
+index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..f02167b7378deb7ab2c54159db57d6d85ea093f7 100644
+--- a/dist/cjs/index.js
++++ b/dist/cjs/index.js
+@@ -1,20 +1,6 @@
+ 'use strict';var React=require('react'),clsx=require('clsx'),iconbutton=require('@gemeente-denhaag/iconbutton'),icons=require('@gemeente-denhaag/icons'),numberBadge=require('@gemeente-denhaag/number-badge');var css_248z = ".denhaag-side-navigation{display:var(--denhaag-side-navigation-display);flex-direction:var(--denhaag-side-navigation-flex-direction);min-width:var(--denhaag-side-navigation-min-width);row-gap:var(--denhaag-side-navigation-row-gap)}@media (width <= 1023px){.denhaag-side-navigation{display:var(--denhaag-side-navigation-mobile-display)}}.denhaag-side-navigation__list{list-style:none;margin-block-end:0;margin-block-start:0;padding-block-end:0;padding-block-start:0;padding-inline-start:0}.denhaag-side-navigation__item{align-items:center;display:flex;flex-direction:row;font-family:var(--denhaag-side-navigation-item-font-family,sans-serif);font-size:var(--denhaag-side-navigation-item-font-size);font-weight:var(--denhaag-side-navigation-item-font-weight,normal);line-height:1.5}.denhaag-side-navigation__item:has(>.denhaag-side-navigation__list){flex-wrap:wrap}.denhaag-side-navigation__item>.denhaag-side-navigation__list{flex-basis:100%;margin-inline-start:var(--denhaag-side-navigation-list-margin-inline-start)}.denhaag-side-navigation__tree-item-label-wrapper{align-items:center;display:flex;flex-basis:100%;flex-direction:row}.denhaag-side-navigation__link{align-items:center;color:var(--denhaag-side-navigation-link-color);column-gap:16px;display:flex;flex-direction:row;flex-grow:1;padding-block-end:var(--denhaag-side-navigation-link-padding-block-end);padding-block-start:var(--denhaag-side-navigation-link-padding-block-start);text-decoration:none}.denhaag-side-navigation__link-label{align-items:center;display:flex;gap:var(--denhaag-side-navigation-link-label-gap)}.denhaag-side-navigation__link--hover,.denhaag-side-navigation__link:hover{color:var(--denhaag-side-navigation-link-hover-color);cursor:pointer}.denhaag-side-navigation__link--focus,.denhaag-side-navigation__link:focus-visible{outline:var(--denhaag-focus-border)}.denhaag-side-navigation__link--current{color:var(--denhaag-side-navigation-link-active-color);font-weight:var(--denhaag-side-navigation-link-active-font-weight)}.denhaag-side-navigation__expand-button{align-items:center;block-size:var(--denhaag-side-navigation-expand-button-inline-size);display:inline-flex;inline-size:var(--denhaag-side-navigation-expand-button-inline-size);justify-content:center;transform:var(--denhaag-side-navigation-expand-button-transform,rotate(0deg));transition:var(--denhaag-side-navigation-expand-button-transition,\"transform 200ms ease-in-out\")}@media (prefers-reduced-motion){.denhaag-side-navigation__expand-button{transition:none}}.denhaag-side-navigation__expand-button--expanded,.denhaag-side-navigation__expand-button[aria-expanded=true]{transform:var(--denhaag-side-navigation-expand-button-expanded-transform,rotate(180deg))}.denhaag-side-navigation__expand-separator{background-color:currentColor;color:var(--denhaag-side-navigation-expand-separator-color);display:inline-block;flex-shrink:0;inline-size:var(--denhaag-side-navigation-expand-separator-inline-size,1px);margin-inline-end:var(--denhaag-side-navigation-expand-separator-margin-block-end,8px);margin-inline-start:var(--denhaag-side-navigation-expand-separator-margin-block-start,8px);padding-block-end:var(--denhaag-side-navigation-expand-separator-padding-block-end,8px);padding-block-start:var(--denhaag-side-navigation-expand-separator-padding-block-start,8px)}";
+-        if (typeof document !== 'undefined') { 
++        if (typeof document !== 'undefined') {
+ 
+-          const head = document.head || document.getElementsByTagName('head')[0];
+-          const style = document.createElement('style');
+-          style.type = 'text/css';
+-          style.nonce = window.NONCE;
+-        
+-          {
+-            head.appendChild(style);
+-          }
+-        
+-          if (style.styleSheet) {
+-            style.styleSheet.cssText = css_248z;
+-          } else {
+-            style.appendChild(document.createTextNode(css_248z));
+-          }
+         }/******************************************************************************
+ Copyright (c) Microsoft Corporation.
+ 
+diff --git a/dist/mjs/index.js b/dist/mjs/index.js
+index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..e145f62d60530722c7f9d6d5259117ab6cc80a50 100644
+--- a/dist/mjs/index.js
++++ b/dist/mjs/index.js
+@@ -1,20 +1,6 @@
+ import React,{useId,useRef,useState}from'react';import clsx from'clsx';import {IconButton}from'@gemeente-denhaag/iconbutton';import {ChevronDownIcon}from'@gemeente-denhaag/icons';import {NumberBadge}from'@gemeente-denhaag/number-badge';var css_248z = ".denhaag-side-navigation{display:var(--denhaag-side-navigation-display);flex-direction:var(--denhaag-side-navigation-flex-direction);min-width:var(--denhaag-side-navigation-min-width);row-gap:var(--denhaag-side-navigation-row-gap)}@media (width <= 1023px){.denhaag-side-navigation{display:var(--denhaag-side-navigation-mobile-display)}}.denhaag-side-navigation__list{list-style:none;margin-block-end:0;margin-block-start:0;padding-block-end:0;padding-block-start:0;padding-inline-start:0}.denhaag-side-navigation__item{align-items:center;display:flex;flex-direction:row;font-family:var(--denhaag-side-navigation-item-font-family,sans-serif);font-size:var(--denhaag-side-navigation-item-font-size);font-weight:var(--denhaag-side-navigation-item-font-weight,normal);line-height:1.5}.denhaag-side-navigation__item:has(>.denhaag-side-navigation__list){flex-wrap:wrap}.denhaag-side-navigation__item>.denhaag-side-navigation__list{flex-basis:100%;margin-inline-start:var(--denhaag-side-navigation-list-margin-inline-start)}.denhaag-side-navigation__tree-item-label-wrapper{align-items:center;display:flex;flex-basis:100%;flex-direction:row}.denhaag-side-navigation__link{align-items:center;color:var(--denhaag-side-navigation-link-color);column-gap:16px;display:flex;flex-direction:row;flex-grow:1;padding-block-end:var(--denhaag-side-navigation-link-padding-block-end);padding-block-start:var(--denhaag-side-navigation-link-padding-block-start);text-decoration:none}.denhaag-side-navigation__link-label{align-items:center;display:flex;gap:var(--denhaag-side-navigation-link-label-gap)}.denhaag-side-navigation__link--hover,.denhaag-side-navigation__link:hover{color:var(--denhaag-side-navigation-link-hover-color);cursor:pointer}.denhaag-side-navigation__link--focus,.denhaag-side-navigation__link:focus-visible{outline:var(--denhaag-focus-border)}.denhaag-side-navigation__link--current{color:var(--denhaag-side-navigation-link-active-color);font-weight:var(--denhaag-side-navigation-link-active-font-weight)}.denhaag-side-navigation__expand-button{align-items:center;block-size:var(--denhaag-side-navigation-expand-button-inline-size);display:inline-flex;inline-size:var(--denhaag-side-navigation-expand-button-inline-size);justify-content:center;transform:var(--denhaag-side-navigation-expand-button-transform,rotate(0deg));transition:var(--denhaag-side-navigation-expand-button-transition,\"transform 200ms ease-in-out\")}@media (prefers-reduced-motion){.denhaag-side-navigation__expand-button{transition:none}}.denhaag-side-navigation__expand-button--expanded,.denhaag-side-navigation__expand-button[aria-expanded=true]{transform:var(--denhaag-side-navigation-expand-button-expanded-transform,rotate(180deg))}.denhaag-side-navigation__expand-separator{background-color:currentColor;color:var(--denhaag-side-navigation-expand-separator-color);display:inline-block;flex-shrink:0;inline-size:var(--denhaag-side-navigation-expand-separator-inline-size,1px);margin-inline-end:var(--denhaag-side-navigation-expand-separator-margin-block-end,8px);margin-inline-start:var(--denhaag-side-navigation-expand-separator-margin-block-start,8px);padding-block-end:var(--denhaag-side-navigation-expand-separator-padding-block-end,8px);padding-block-start:var(--denhaag-side-navigation-expand-separator-padding-block-start,8px)}";
+-        if (typeof document !== 'undefined') { 
++        if (typeof document !== 'undefined') {
+ 
+-          const head = document.head || document.getElementsByTagName('head')[0];
+-          const style = document.createElement('style');
+-          style.type = 'text/css';
+-          style.nonce = window.NONCE;
+-        
+-          {
+-            head.appendChild(style);
+-          }
+-        
+-          if (style.styleSheet) {
+-            style.styleSheet.cssText = css_248z;
+-          } else {
+-            style.appendChild(document.createTextNode(css_248z));
+-          }
+         }/******************************************************************************
+ Copyright (c) Microsoft Corporation.
+ 

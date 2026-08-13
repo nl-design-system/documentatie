@@ -34,14 +34,39 @@ Omdat het in de praktijk niet mogelijk is om snel genoeg alle branches van alle 
 
 ## Betere versies installeren
 
-Vaak is het probleem al opgelost in een nieuwe versie, en dan is de oplossing om een update te installeren. De makkelijkste manier is om met de command-line de volgende commando's uit te voeren.
+Vaak is het probleem al opgelost in een nieuwe versie, en dan is de oplossing om een update te installeren.
+Met pnpm 11 kun je kwetsbaarheden op twee manieren oplossen.
+
+### Lockfile bijwerken (aanbevolen)
+
+Zo los je critical vulnerabilities op door, waar mogelijk, geüpdatete, veiligere versies in de lockfile te zetten.
 
 ```shell
-pnpm audit --fix
+pnpm audit --fix update --audit-level critical
 pnpm install --ignore-scripts
 ```
 
-Het eerste commando past de configuratie van pnpm aan, om alleen bepaalde veiligere versies te gebruiken. Het tweede commando installeert de aangepaste dependencies, en past de "lockfile" aan.
+Met `--fix=update` worden kwetsbare packages in de lockfile bijgewerkt, zonder overrides in `pnpm-workspace.yaml`.
+Wil je zelf kiezen welke kwetsbaarheden je oplost?
+Gebruik dan `--interactive` (of `-i`):
+
+```shell
+pnpm audit --fix update --interactive
+```
+
+### Overrides toevoegen
+
+```shell
+pnpm audit --fix override
+pnpm install --ignore-scripts
+```
+
+Dit voegt overrides toe aan `pnpm-workspace.yaml` om veiligere versies af te dwingen.
+Gebruik deze aanpak wanneer `--fix=update` niet volstaat: de kwetsbare package komt dan indirect binnen via een andere dependency (transitieve dependency), of de semver-range in `package.json` staat een update naar de gepatchte versie niet toe.
+
+Wanneer `minimumReleaseAge` is ingesteld, voegt `--fix` de minimale gepatchte versie ook toe aan `minimumReleaseAgeExclude`, zodat security fixes direct geïnstalleerd kunnen worden zonder te wachten op de release age.
+
+Het tweede commando installeert de aangepaste dependencies en past de lockfile aan.
 
 Controleer of met deze wijzigingen de belangrijkste security vulnerabilities zijn opgelost:
 
@@ -57,4 +82,8 @@ Commit de wijzigingen aan `pnpm-lock.yaml` en `pnpm-workspace.yaml` en maak een 
 
 Wanneer je GitHub Action niet meer werkt door een critical security vulnerability dan kan het zijn dat je werk geblokkeerd wordt, als er nog geen betere versie beschikbaar is.
 
-Als je zeker weet dat de security vulnerability niet op jouw project van toepassing is, dan kun je het risco accepteren en een specifieke security vulnerability (een zogenaamde "[<span lang="en">CVE</span>](https://www.cve.org/About/Overview)") negeren. Lees hiervoor de documentatie over de [ignore CVE ID's van `pnpm`](https://pnpm.io/settings#auditconfigignorecves).
+Als je zeker weet dat de security vulnerability niet op jouw project van toepassing is, dan kun je het risico accepteren en een specifieke advisory negeren.
+Vanaf pnpm 11 gebruikt `pnpm audit` GitHub Security Advisory ID's ([GHSA](https://github.com/advisories)) in plaats van CVE-nummers.
+De GHSA-code staat in de kolom "More info" van de `pnpm audit`-uitvoer.
+Zet die code in `auditConfig.ignoreGhsas` in `pnpm-workspace.yaml`.
+Lees hiervoor de documentatie over [ignoreGhsas van `pnpm`](https://pnpm.io/cli/audit#auditconfigignoreghsas).

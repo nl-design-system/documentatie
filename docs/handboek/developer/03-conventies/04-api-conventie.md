@@ -146,6 +146,46 @@ import { clsx } from "clsx";
 const ExampleButton = ({ children, className }) => <p className={clsx("example-button", className)}>{children}</p>;
 ```
 
+### Gebruik union types voor props met een vaste set opties
+
+Als een prop een vaste set geldige waarden heeft, gebruik dan een union type in plaats van `string`. Dit geeft gebruikers directe feedback van de editor (autocomplete, typechecking) en voorkomt ongeldige waarden.
+
+**Vermijd:**
+
+```tsx
+interface ButtonProps {
+  size?: string; // te breed: accepteert alles
+}
+```
+
+**Gebruik dit:**
+
+```tsx
+type ButtonSize = "sm" | "md" | "lg";
+
+interface ButtonProps {
+  size?: ButtonSize;
+}
+```
+
+### Props typen met uitbreiding van HTML-attributen
+
+Combineer je eigen props met de standaard HTML-attributen van het onderliggende element via `React.ComponentPropsWithoutRef`. Zo hoef je geen native attributen (zoals `disabled`, `aria-*`, `data-*`) zelf te herhalen:
+
+```tsx
+type ButtonSize = "sm" | "md" | "lg";
+
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
+  size?: ButtonSize;
+}
+
+const ExampleButton = ({ size = "md", className, ...restProps }: ButtonProps) => (
+  <button className={clsx("example-button", `example-button--${size}`, className)} {...restProps} />
+);
+```
+
+Wanneer je refs doorgeeft, kun je de tegenhanger `React.ComponentPropsWithRef` gebruiken.
+
 ## Termen uit het Web Platform
 
 De volgende termen worden al voor APIs gebruikt in het Web Platform. Hergebruik zoveel mogelijk termen uit deze lijst, voor dingen die hetzelfde betekenen.

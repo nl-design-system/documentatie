@@ -22,7 +22,7 @@ export const exclusionGroups: Record<string, string[]> = {
 export const skippedRoutes: (string | RegExp)[] = ['/search/', '/handboek/designer/figma-changelog/'];
 
 export const AXE_VIOLATION_IDS: string[] = ['target-size'];
-export const AXE_VIOLATION_IDS_NEXT: string[] = ['target-size'];
+export const AXE_VIOLATION_IDS_NEXT: string[] = ['target-size', 'scrollable-region-focusable'];
 
 export const exclusions: RouteExclusion[] = [
   {

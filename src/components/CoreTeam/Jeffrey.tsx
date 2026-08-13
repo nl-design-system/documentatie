@@ -1,18 +1,22 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Link } from '../Link';
 import type { TeamMember } from './TeamMember';
 
 const Jeffrey: TeamMember = {
   name: 'Jeffrey Lauwers',
-  role: 'Designer',
+  role: 'Designer Relations & Design System Designer',
   slack: { mention: '@Jeffrey Lauwers', id: 'U0412KZ9TV1' },
   Description: () => (
     <>
       <Paragraph>
-        Jeffrey vervult binnen NL Design System de designrol. Eerder realiseerde hij design systems voor het Ministerie
-        van VWS, Nederlandse Spoorwegen, Nationale Nederlanden en Randstad.
+        Rozerin verbindt designers uit verschillende organisaties, stimuleert samenwerking en kennisdeling binnen de
+        community en heeft altijd wel een handig linkje paraat.
       </Paragraph>
       <Paragraph>
-        Naast een passie voor Design Systems en Ajax heeft Jeffrey een passie voor toegankelijkheid.
+        Je kunt bij hem terecht voor designvragen rondom: huisstijl, design tokens, componenten, patronen, templates en
+        richtlijnen. Je vindt hem in het Slack kanaal <Link href="/slack/">#nl-design-system-designers</Link>, tijdens{' '}
+        <Link href="/events/design-open-hour/">Design Open Hours</Link> en bij{' '}
+        <Link href="/events/design-open-dag/">Design Open Dagen</Link>.
       </Paragraph>
     </>
   ),

@@ -2,6 +2,6 @@
   "label": "Toegankelijke naam label",
   "link": {
     "type": "doc",
-    "id": "README"
+    "id": "index"
   }
 }
