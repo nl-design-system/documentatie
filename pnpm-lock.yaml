@@ -259,8 +259,8 @@ importers:
         specifier: 3.4.0
         version: 3.4.0
       '@nl-design-system/component-progress':
-        specifier: 1.0.18
-        version: 1.0.18
+        specifier: 1.1.2
+        version: 1.1.2
       '@nl-design-system/eslint-config':
         specifier: 1.0.0
         version: 1.0.0(eslint@9.39.2(jiti@1.21.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)
@@ -3811,6 +3811,9 @@ packages:
 
   '@nl-design-system/component-progress@1.0.18':
     resolution: {integrity: sha512-vspluDCPOheX8IZaIW+Z4pHtsm033ZtiUgFnGT9r5YthKc4PP/M7uISoYHzxcIplCXM4sg8H/p06Y6GzjOlLvw==}
+
+  '@nl-design-system/component-progress@1.1.2':
+    resolution: {integrity: sha512-VnQSqPV7SKf/etaa9/DVFhIklUJteBLfruKAosikDlUIyvaeEDsquuQz6IsUgkyBFCZA0WJaRRwFaQ5MCuM/nw==}
 
   '@nl-design-system/eslint-config@1.0.0':
     resolution: {integrity: sha512-ypsu7zBN26tVLdnbcK2+He2l+QK33qNtHGlBY0CY5x8wWkCQULSH+10E+rUIAf+kBHKdQkgr5+W60qyj97a66Q==}
@@ -16442,6 +16445,8 @@ snapshots:
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0': {}
 
   '@nl-design-system/component-progress@1.0.18': {}
+
+  '@nl-design-system/component-progress@1.1.2': {}
 
   '@nl-design-system/eslint-config@1.0.0(eslint@9.39.2(jiti@1.21.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)':
     dependencies:
