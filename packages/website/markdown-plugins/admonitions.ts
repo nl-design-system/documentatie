@@ -23,6 +23,7 @@ export function remarkAdmonitions() {
       const data = node.data || (node.data = {});
       data.hName = 'div';
       data.hProperties = {
+        ...node.attributes,
         className: ['utrecht-spotlight-section', `utrecht-spotlight-section--${MAP[node.name]}`],
       };
 
