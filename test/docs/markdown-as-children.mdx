@@ -1,0 +1,25 @@
+---
+title: Markdown as children
+description: Test that markdown as children of a component renders correctly
+unlisted: true
+---
+
+{/* @license CC0-1.0 */}
+
+import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
+import TestPageNote from "./_test-page-note.md";
+
+Tests whether the markdown as children of a component is rendered as markdown
+
+<TestPageNote />
+
+<SpotlightSection appearance="info">
+
+## This is an h2 heading
+
+This is a paragraph
+
+- this is a list
+- with 2 items
+
+</SpotlightSection>
