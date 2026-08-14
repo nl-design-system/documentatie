@@ -11,6 +11,7 @@ import { addTrailingSlashPlugin } from './markdown-plugins/rehype-trailing-slash
 import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
 import { remarkUnwrapDiv } from './markdown-plugins/remark-unwrap-div';
 import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
+import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inline-directives';
 import { videoplayerClientLoadPlugin } from './markdown-plugins/remark-videoplayer-client-load';
 const siteUrl = 'https://nldesignsystem.nl';
 
@@ -90,7 +91,14 @@ export default defineConfig({
   },
 
   markdown: {
-    remarkPlugins: [remarkUnwrapDiv, remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
+    remarkPlugins: [
+      remarkUnwrapDiv,
+      remarkCustomHeaderId,
+      remarkDirective,
+      remarkUndoInlineDirectives,
+      remarkAdmonitions,
+      removeH1FromMarkdown(),
+    ],
     rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
     syntaxHighlight: 'prism',
   },
@@ -102,6 +110,7 @@ export default defineConfig({
         remarkUnwrapDiv,
         remarkCustomHeaderId,
         remarkDirective,
+        remarkUndoInlineDirectives,
         remarkAdmonitions,
         videoplayerClientLoadPlugin,
         removeH1FromMarkdown(),
