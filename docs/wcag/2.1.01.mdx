@@ -55,7 +55,7 @@ Een `<div>` of `<span>` met een `onclick`-handler is niet bereikbaar met het toe
 <Guideline appearance="dont" title="Klikbare div is niet bereikbaar met het toetsenbord.">
 
 ```html
-<div class="knop" onclick="verstuur()">Versturen</div>
+<div class="example-button" onclick="submitForm()">Versturen</div>
 ```
 
 </Guideline>
@@ -63,7 +63,7 @@ Een `<div>` of `<span>` met een `onclick`-handler is niet bereikbaar met het toe
 <Guideline appearance="do" title="Een button is bereikbaar met het toetsenbord.">
 
 ```html
-<button type="button" onclick="verstuur()">Versturen</button>
+<button type="button">Versturen</button>
 ```
 
 </Guideline>
@@ -80,7 +80,7 @@ Interactie die alleen werkt via `onmouseover`, `onmousedown` of `ondblclick` is 
 <Guideline appearance="dont" title="Alleen een muisgebeurtenis, geen toetsenbordgebeurtenis.">
 
 ```javascript
-element.addEventListener("mouseover", toonTooltip);
+element.addEventListener("mouseover", showTooltip);
 ```
 
 </Guideline>
@@ -89,10 +89,10 @@ element.addEventListener("mouseover", toonTooltip);
 <Guideline appearance="do" title="Zowel muis- als toetsenbordgebeurtenissen.">
 
 ```javascript
-element.addEventListener("mouseover", toonTooltip);
-element.addEventListener("focus", toonTooltip);
-element.addEventListener("mouseout", verbergTooltip);
-element.addEventListener("blur", verbergTooltip);
+element.addEventListener("mouseover", showTooltip);
+element.addEventListener("focus", showTooltip);
+element.addEventListener("mouseout", hideTooltip);
+element.addEventListener("blur", hideTooltip);
 ```
 
 </Guideline>
@@ -108,11 +108,11 @@ Een dropdown moet te openen zijn met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>, 
 <Guideline appearance="dont" title="Zelfgemaakte dropdown zonder toetsenbordondersteuning.">
 
 ```html
-<div class="dropdown" onclick="toggleMenu()">
+<div class="example-dropdown" onclick="toggleMenu()">
   <span>Kies een optie</span>
-  <ul class="dropdown-opties" style="display:none;">
-    <li onclick="selecteer('a')">Optie A</li>
-    <li onclick="selecteer('b')">Optie B</li>
+  <ul class="example-dropdown-options" style="display: none;">
+    <li onclick="selectOption('a')">Optie A</li>
+    <li onclick="selectOption('b')">Optie B</li>
   </ul>
 </div>
 ```
@@ -122,8 +122,8 @@ Een dropdown moet te openen zijn met <kbd>Enter</kbd> of <kbd>Spatiebalk</kbd>, 
 <Guideline appearance="do" title="Native select-element is toetsenbordtoegankelijk.">
 
 ```html
-<label for="keuze">Kies een optie</label>
-<select id="keuze">
+<label for="choice">Kies een optie</label>
+<select id="choice">
   <option value="a">Optie A</option>
   <option value="b">Optie B</option>
 </select>
@@ -142,7 +142,7 @@ Bij een sorteerbare lijst moet elke bezoeker items kunnen verplaatsen, ook zonde
 <Guideline appearance="dont" title="Alleen drag-and-drop, geen toetsenbordalternatief.">
 
 ```html
-<ul id="sorteerlijst">
+<ul id="example-sortable-list">
   <li draggable="true">Item 1</li>
   <li draggable="true">Item 2</li>
 </ul>
@@ -180,10 +180,10 @@ Informatie die alleen verschijnt als je erover hovert met de muis is onbereikbaa
 <Guideline appearance="dont" title="Content alleen zichtbaar bij hover, niet bij focus.">
 
 ```css
-.tooltip {
+.example-tooltip {
   display: none;
 }
-.trigger:hover .tooltip {
+.example-trigger:hover .example-tooltip {
   display: block;
 }
 ```
@@ -193,12 +193,12 @@ Informatie die alleen verschijnt als je erover hovert met de muis is onbereikbaa
 <Guideline appearance="do" title="Content ook zichtbaar bij toetsenbordfocus.">
 
 ```css
-.tooltip {
+.example-tooltip {
   display: none;
 }
-.trigger:hover .tooltip,
-.trigger:focus .tooltip,
-.trigger:focus-within .tooltip {
+.example-trigger:hover .example-tooltip,
+.example-trigger:focus .example-tooltip,
+.example-trigger:focus-within .example-tooltip {
   display: block;
 }
 ```
@@ -216,8 +216,8 @@ Carrousels die alleen via <span lang="en">swipe</span> of klikken op pijltjes we
 <Guideline appearance="dont" title="Pijltjes als niet-focusbare divs.">
 
 ```html
-<div class="pijl-links" onclick="vorigeSlide()">&#8249;</div>
-<div class="pijl-rechts" onclick="volgendeSlide()">&#8250;</div>
+<div class="example-arrow-previous" onclick="previousSlide()">&#8249;</div>
+<div class="example-arrow-next" onclick="nextSlide()">&#8250;</div>
 ```
 
 </Guideline>
@@ -225,8 +225,7 @@ Carrousels die alleen via <span lang="en">swipe</span> of klikken op pijltjes we
 <Guideline appearance="do" title="Pijltjes als focusbare knoppen.">
 
 ```html
-<button aria-label="Vorige slide" onclick="vorigeSlide()">&#8249;</button>
-<button aria-label="Volgende slide" onclick="volgendeSlide()">&#8250;</button>
+<button aria-label="Vorige slide">&#8249;</button> <button aria-label="Volgende slide">&#8250;</button>
 ```
 
 </Guideline>
@@ -242,8 +241,9 @@ Bij <span lang="en">infinite scroll</span> verdwijnt de footer en worden steeds 
 <Guideline appearance="dont" title="Eindeloos scrollen zonder navigatiealternatief.">
 
 ```html
-<div class="resultaten" onscroll="laadMeer()">
-  <!-- eindeloze lijst -->
+<div class="example-results" onscroll="loadMore()">
+  <article>Zoekresultaat 1</article>
+  <article>Zoekresultaat 2</article>
 </div>
 ```
 
@@ -252,10 +252,11 @@ Bij <span lang="en">infinite scroll</span> verdwijnt de footer en worden steeds 
 <Guideline appearance="do" title="Paginering of een laad-meer-knop als alternatief.">
 
 ```html
-<div class="resultaten">
-  <!-- beperkte lijst -->
+<div class="example-results">
+  <article>Zoekresultaat 1</article>
+  <article>Zoekresultaat 2</article>
 </div>
-<button onclick="laadMeer()">Meer resultaten laden</button>
+<button type="button">Meer resultaten laden</button>
 ```
 
 </Guideline>
@@ -271,8 +272,8 @@ Eigen mediaspelers waarvan de knoppen niet focusbaar of activeerbaar zijn met he
 <Guideline appearance="dont" title="Mediaspeler met divs als knoppen.">
 
 ```html
-<div class="play-knop" onclick="speel()">&#9654;</div>
-<div class="volume" onclick="volume()">&#128266;</div>
+<div class="example-play-button" onclick="play()">&#9654;</div>
+<div class="example-volume-button" onclick="changeVolume()">&#128266;</div>
 ```
 
 </Guideline>
@@ -280,8 +281,8 @@ Eigen mediaspelers waarvan de knoppen niet focusbaar of activeerbaar zijn met he
 <Guideline appearance="do" title="Mediaspeler met echte knoppen.">
 
 ```html
-<button aria-label="Afspelen" onclick="speel()">&#9654;</button>
-<button aria-label="Volume aanpassen" onclick="volume()">&#128266;</button>
+<button type="button" aria-label="Afspelen">&#9654;</button>
+<button type="button" aria-label="Volume aanpassen">&#128266;</button>
 ```
 
 </Guideline>
