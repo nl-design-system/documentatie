@@ -58,17 +58,17 @@ Een bezoeker verstuurt een formulier en er verschijnt een bevestiging op de pagi
 
 <Guideline appearance="dont" title="Bevestigingsmelding zonder ARIA-markering">
   ```html
-  <p class="bevestiging">Je bericht is verstuurd</p>
+  <p class="example-confirmation">Je bericht is verstuurd</p>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Lege container met role=status staat al in de HTML, tekst wordt later ingevuld">
     ```html
-    <p class="bevestiging" role="status"></p>
+    <p class="example-confirmation" role="status"></p>
     ```
     ```javascript
-    function bevestigVerzending() {
-      document.querySelector(".bevestiging").textContent =
+    function confirmSubmission() {
+      document.querySelector(".example-confirmation").textContent =
         "Je bericht is verstuurd";
     }
     ```
@@ -84,39 +84,39 @@ Een bezoeker verstuurt een formulier en de server geeft fouten terug: verplichte
 
 <Guideline appearance="dont" title="Foutmelding zonder ARIA-markering of focusverplaatsing">
   ```html
-  <div class="foutmelding">Er zijn 2 fouten gevonden. Controleer de gemarkeerde velden.</div>
+  <div class="example-error-summary">Er zijn 2 fouten gevonden. Controleer de gemarkeerde velden.</div>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Foutmelding krijgt focus zodat de screenreader hem voorleest">
     ```html
-    <div id="foutmelding" tabindex="-1" hidden>
+    <div id="example-error-summary" tabindex="-1" hidden>
       <h2>Er zijn 2 fouten gevonden. Controleer de gemarkeerde velden.</h2>
       <ul>
         <li><a href="#email">Vul een e-mailadres in</a></li>
-        <li><a href="#datum">Kies een datum in de toekomst</a></li>
+        <li><a href="#date">Kies een datum in de toekomst</a></li>
       </ul>
     </div>
     ```
     ```javascript
-    function toonFoutmelding() {
-      const foutmelding = document.getElementById("foutmelding");
-      foutmelding.hidden = false;
-      foutmelding.focus();
+    function showErrorSummary() {
+      const errorSummary = document.getElementById("example-error-summary");
+      errorSummary.hidden = false;
+      errorSummary.focus();
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Lege live region met role=alert staat al in de HTML, foutmelding wordt erin geplaatst">
     ```html
-    <div id="foutmelding" role="alert"></div>
+    <div id="example-error-summary" role="alert"></div>
     ```
     ```javascript
-    function toonFoutmelding() {
-      document.getElementById("foutmelding").innerHTML =
+    function showErrorSummary() {
+      document.getElementById("example-error-summary").innerHTML =
         "<h2>Er zijn 2 fouten gevonden. Controleer de gemarkeerde velden.</h2>" +
         '<ul><li><a href="#email">Vul een e-mailadres in</a></li>' +
-        '<li><a href="#datum">Kies een datum in de toekomst</a></li></ul>';
+        '<li><a href="#date">Kies een datum in de toekomst</a></li></ul>';
     }
     ```
 </Guideline>
@@ -133,17 +133,17 @@ Een sessie verloopt over twee minuten. Een betaling is mislukt. Het netwerk valt
 
 <Guideline appearance="dont" title="Urgente melding zonder ARIA-markering">
   ```html
-  <p class="waarschuwing">Je sessie verloopt over 2 minuten</p>
+  <p class="example-warning">Je sessie verloopt over 2 minuten</p>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Lege container met role=alert staat al in de HTML, tekst wordt later ingevuld">
     ```html
-    <p class="waarschuwing" role="alert"></p>
+    <p class="example-warning" role="alert"></p>
     ```
     ```javascript
-    function waarschuwSessie() {
-      document.querySelector(".waarschuwing").textContent =
+    function warnSessionExpiry() {
+      document.querySelector(".example-warning").textContent =
         "Je sessie verloopt over 2 minuten";
     }
     ```
@@ -159,25 +159,25 @@ Een betaal- of inlogpagina toont een QR-code die na een paar minuten verloopt. V
 
 <Guideline appearance="dont" title="QR-code verloopt zonder melding">
     ```javascript
-    function vernieuwQRCode() {
-      document.getElementById("qr-code").src = genereerNieuweQR();
+    function refreshQRCode() {
+      document.getElementById("example-qr-code").src = generateNewQRCode();
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Melding bij verlopen QR-code met een directe link als alternatief">
     ```html
-    <p id="qr-status" role="alert"></p>
-    <img id="qr-code" src="qr.png" alt="QR-code om in te loggen" />
-    <a href="https://example.com/login" id="qr-link">
+    <p id="example-qr-status" role="alert"></p>
+    <img id="example-qr-code" src="qr.png" alt="QR-code om in te loggen" />
+    <a href="https://example.com/login" id="example-qr-link">
       Of open de inlogpagina direct in je browser
     </a>
     ```
     ```javascript
-    function vernieuwQRCode() {
-      document.getElementById("qr-code").src = genereerNieuweQR();
-      document.getElementById("qr-link").href = genereerNieuweLink();
-      document.getElementById("qr-status").textContent =
+    function refreshQRCode() {
+      document.getElementById("example-qr-code").src = generateNewQRCode();
+      document.getElementById("example-qr-link").href = generateNewLoginLink();
+      document.getElementById("example-qr-status").textContent =
         "De QR-code is verlopen. Er is een nieuwe QR-code gegenereerd.";
     }
     ```
@@ -195,10 +195,10 @@ Een bezoeker gebruikt een livechat met klantenservice. De medewerker stuurt een 
 
 <Guideline appearance="dont" title="Nieuw chatbericht zonder live region">
     ```javascript
-    function ontvangBericht(bericht) {
+    function receiveMessage(message) {
       const el = document.createElement("div");
-      el.className = "chat-bericht";
-      el.textContent = bericht.tekst;
+      el.className = "example-chat-message";
+      el.textContent = message.text;
       chatContainer.appendChild(el);
     }
     ```
@@ -206,15 +206,15 @@ Een bezoeker gebruikt een livechat met klantenservice. De medewerker stuurt een 
 
 <Guideline appearance="do" title="Chatcontainer als live region zodat nieuwe berichten worden voorgelezen">
     ```html
-    <div id="chat-berichten" role="log" aria-live="polite" aria-label="Chatberichten">
+    <div id="example-chat-messages" role="log" aria-live="polite" aria-label="Chatberichten">
     </div>
     ```
     ```javascript
-    function ontvangBericht(bericht) {
+    function receiveMessage(message) {
       const el = document.createElement("div");
-      el.className = "chat-bericht";
-      el.textContent = bericht.afzender + ": " + bericht.tekst;
-      document.getElementById("chat-berichten").appendChild(el);
+      el.className = "example-chat-message";
+      el.textContent = message.sender + ": " + message.text;
+      document.getElementById("example-chat-messages").appendChild(el);
     }
     ```
 </Guideline>
@@ -231,24 +231,24 @@ Een bezoeker klikt op "Toevoegen aan winkelwagen". Het aantal in het winkelwagen
 
 <Guideline appearance="dont" title="Winkelwagen-update zonder statusbericht">
     ```javascript
-    function voegToeAanWinkelwagen(product) {
-      winkelwagen.push(product);
-      document.querySelector(".wagen-aantal").textContent = winkelwagen.length;
-      document.querySelector(".melding").textContent = "Product toegevoegd";
+    function addToCart(product) {
+      cart.push(product);
+      document.querySelector(".example-cart-count").textContent = cart.length;
+      document.querySelector(".example-notification").textContent = "Product toegevoegd";
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Winkelwagen-update met een live region">
     ```html
-    <p class="melding" role="status" aria-live="polite"></p>
+    <p class="example-notification" role="status" aria-live="polite"></p>
     ```
     ```javascript
-    function voegToeAanWinkelwagen(product) {
-      winkelwagen.push(product);
-      document.querySelector(".wagen-aantal").textContent = winkelwagen.length;
-      document.querySelector(".melding").textContent =
-        product.naam + " is toegevoegd aan je winkelwagen";
+    function addToCart(product) {
+      cart.push(product);
+      document.querySelector(".example-cart-count").textContent = cart.length;
+      document.querySelector(".example-notification").textContent =
+        product.name + " is toegevoegd aan je winkelwagen";
     }
     ```
 </Guideline>
@@ -265,22 +265,22 @@ Een bezoeker typt in een zoekveld en de resultaten verschijnen direct op de pagi
 
 <Guideline appearance="dont" title="Zoekresultaten zonder statusbericht">
     ```javascript
-    function toonResultaten(resultaten) {
-      container.innerHTML = resultaten.map(r => `<li>${r.titel}</li>`).join("");
+    function showResults(results) {
+      container.innerHTML = results.map((r) => `<li>${r.title}</li>`).join("");
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Zoekresultaten met een statusbericht over het aantal">
     ```html
-    <p id="zoek-status" role="status" aria-live="polite"></p>
-    <ul id="resultaten"></ul>
+    <p id="example-search-status" role="status" aria-live="polite"></p>
+    <ul id="example-results"></ul>
     ```
     ```javascript
-    function toonResultaten(resultaten) {
-      container.innerHTML = resultaten.map(r => `<li>${r.titel}</li>`).join("");
-      document.getElementById("zoek-status").textContent =
-        resultaten.length + " resultaten gevonden";
+    function showResults(results) {
+      container.innerHTML = results.map((r) => `<li>${r.title}</li>`).join("");
+      document.getElementById("example-search-status").textContent =
+        results.length + " resultaten gevonden";
     }
     ```
 </Guideline>
@@ -295,24 +295,24 @@ Een bezoeker selecteert een filter, bijvoorbeeld "Maat M" of "Kleur: blauw", en 
 
 <Guideline appearance="dont" title="Filterresultaten bijwerken zonder statusbericht">
     ```javascript
-    function pasFilterToe(filter) {
-      const resultaten = producten.filter(p => p.kleur === filter);
-      toonProducten(resultaten);
+    function applyFilter(filter) {
+      const results = products.filter((p) => p.color === filter);
+      showProducts(results);
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Filterresultaten met een statusbericht">
     ```html
-    <p id="filter-status" role="status" aria-live="polite"></p>
-    <ul id="producten"></ul>
+    <p id="example-filter-status" role="status" aria-live="polite"></p>
+    <ul id="example-products"></ul>
     ```
     ```javascript
-    function pasFilterToe(filter) {
-      const resultaten = producten.filter(p => p.kleur === filter);
-      toonProducten(resultaten);
-      document.getElementById("filter-status").textContent =
-        resultaten.length + " producten gevonden";
+    function applyFilter(filter) {
+      const results = products.filter((p) => p.color === filter);
+      showProducts(results);
+      document.getElementById("example-filter-status").textContent =
+        results.length + " producten gevonden";
     }
     ```
 </Guideline>
@@ -328,33 +328,35 @@ Een bezoeker klikt op een knop en er verschijnt een draaiend icoon. Visueel begr
 **Hoe te testen:** klik op een knop die content laadt en luister met een screenreader. Wordt de laadstatus voorgelezen? Wordt het einde van het laden gemeld?
 
 <Guideline appearance="dont" title="Laadanimatie zonder statusbericht">
-    ```html
-    <button onclick="laadData()">Zoek beschikbaarheid</button>
-    <div class="spinner" style="display: none;">
-      <svg class="draaiend-icoon"><!-- animatie --></svg>
-    </div>
-    ```
+  ```html
+  <button onclick="loadData()">Zoek beschikbaarheid</button>
+  <div class="example-spinner" style="display: none;">
+    <svg class="example-spinner-icon"></svg>
+  </div>
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Laadstatus met een live region die begin en einde meldt">
     ```html
-    <button onclick="laadData()">Zoek beschikbaarheid</button>
-    <div class="spinner" style="display: none;" aria-hidden="true">
-      <svg class="draaiend-icoon"><!-- animatie --></svg>
+    <button type="button">Zoek beschikbaarheid</button>
+    <div class="example-spinner" style="display: none;" aria-hidden="true">
+      <svg class="example-spinner-icon"></svg>
     </div>
-    <p id="laad-status" role="status" aria-live="polite"></p>
+    <p id="example-loading-status" role="status" aria-live="polite"></p>
     ```
     ```javascript
-    function laadData() {
-      document.querySelector(".spinner").style.display = "block";
-      document.getElementById("laad-status").textContent = "Beschikbaarheid wordt geladen";
+    function loadData() {
+      document.querySelector(".example-spinner").style.display = "block";
+      document.getElementById("example-loading-status").textContent =
+        "Beschikbaarheid wordt geladen";
 
-      fetch("/api/beschikbaarheid")
-        .then(response => response.json())
-        .then(data => {
-          document.querySelector(".spinner").style.display = "none";
-          toonResultaten(data);
-          document.getElementById("laad-status").textContent = "Beschikbaarheid geladen";
+      fetch("/api/availability")
+        .then((response) => response.json())
+        .then((data) => {
+          document.querySelector(".example-spinner").style.display = "none";
+          showResults(data);
+          document.getElementById("example-loading-status").textContent =
+            "Beschikbaarheid geladen";
         });
     }
     ```
@@ -373,8 +375,8 @@ Een bezoeker uploadt een bestand en een voortgangsbalk vult zich. Visueel is dui
 
 <Guideline appearance="dont" title="Voortgangsbalk die alleen visueel is">
   ```html
-  <div class="voortgang">
-    <div class="balk" style="width: 60%"></div>
+  <div class="example-progress">
+    <div class="example-progress-bar" style="width: 60%"></div>
   </div>
   ```
 </Guideline>
@@ -382,16 +384,16 @@ Een bezoeker uploadt een bestand en een voortgangsbalk vult zich. Visueel is dui
 <Guideline appearance="do" title="Voortgangsbalk met een progressbar-rol en een statusbericht">
     ```html
     <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Bestand uploaden">
-      <div class="balk" style="width: 0%"></div>
+      <div class="example-progress-bar" style="width: 0%"></div>
     </div>
-    <p id="upload-status" role="status" aria-live="polite"></p>
+    <p id="example-upload-status" role="status" aria-live="polite"></p>
     ```
     ```javascript
-    function updateVoortgang(percent) {
+    function updateProgress(percent) {
       const progressbar = document.querySelector('[role="progressbar"]');
       progressbar.setAttribute("aria-valuenow", percent);
-      document.querySelector(".balk").style.width = percent + "%";
-      document.getElementById("upload-status").textContent =
+      document.querySelector(".example-progress-bar").style.width = percent + "%";
+      document.getElementById("example-upload-status").textContent =
         percent + "% geüpload";
     }
     ```
@@ -409,12 +411,12 @@ Een live region die te vaak wordt bijgewerkt is net zo problematisch als een ont
 
 <Guideline appearance="dont" title="Tekenteller als live region die bij elke toetsaanslag wordt bijgewerkt">
     ```html
-    <textarea id="bericht" maxlength="150"></textarea>
-    <p id="teller" role="status" aria-live="polite">0 van 150 tekens</p>
+    <textarea id="example-message" maxlength="150"></textarea>
+    <p id="example-counter" role="status" aria-live="polite">0 van 150 tekens</p>
     ```
     ```javascript
-    bericht.addEventListener("input", function () {
-      document.getElementById("teller").textContent =
+    messageField.addEventListener("input", function () {
+      document.getElementById("example-counter").textContent =
         this.value.length + " van 150 tekens";
     });
     ```
@@ -422,21 +424,21 @@ Een live region die te vaak wordt bijgewerkt is net zo problematisch als een ont
 
 <Guideline appearance="do" title="Tekenteller die alleen meldt wanneer de limiet nadert">
     ```html
-    <textarea id="bericht" maxlength="150" aria-describedby="teller"></textarea>
-    <p id="teller">0 van 150 tekens</p>
-    <p id="teller-waarschuwing" role="status" aria-live="polite"></p>
+    <textarea id="example-message" maxlength="150" aria-describedby="example-counter"></textarea>
+    <p id="example-counter">0 van 150 tekens</p>
+    <p id="example-counter-warning" role="status" aria-live="polite"></p>
     ```
     ```javascript
-    bericht.addEventListener("input", function () {
-      const resterend = 150 - this.value.length;
-      document.getElementById("teller").textContent =
+    messageField.addEventListener("input", function () {
+      const remaining = 150 - this.value.length;
+      document.getElementById("example-counter").textContent =
         this.value.length + " van 150 tekens";
 
-      if (resterend === 20) {
-        document.getElementById("teller-waarschuwing").textContent =
+      if (remaining === 20) {
+        document.getElementById("example-counter-warning").textContent =
           "Nog 20 tekens over";
-      } else if (resterend === 0) {
-        document.getElementById("teller-waarschuwing").textContent =
+      } else if (remaining === 0) {
+        document.getElementById("example-counter-warning").textContent =
           "Tekenlimiet bereikt";
       }
     });
@@ -456,24 +458,24 @@ Een bezoeker voltooit een CAPTCHA. Visueel verschijnt een groen vinkje of de tek
 
 <Guideline appearance="dont" title="CAPTCHA-resultaat zonder statusbericht">
   ```html
-  <div class="captcha-resultaat">
-    <span class="vinkje">&#10003;</span> Verificatie geslaagd
+  <div class="example-captcha-result">
+    <span class="example-checkmark">&#10003;</span> Verificatie geslaagd
   </div>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Lege live regions voor geslaagde en mislukte verificatie staan al in de HTML">
     ```html
-    <div class="captcha-status" role="status"></div>
-    <div class="captcha-fout" role="alert"></div>
+    <div class="example-captcha-status" role="status"></div>
+    <div class="example-captcha-error" role="alert"></div>
     ```
     ```javascript
-    function toonCaptchaResultaat(geslaagd) {
-      if (geslaagd) {
-        document.querySelector(".captcha-status").innerHTML =
+    function showCaptchaResult(success) {
+      if (success) {
+        document.querySelector(".example-captcha-status").innerHTML =
           '<span aria-hidden="true">&#10003;</span> Verificatie geslaagd';
       } else {
-        document.querySelector(".captcha-fout").textContent =
+        document.querySelector(".example-captcha-error").textContent =
           "Verificatie mislukt. Los de nieuwe CAPTCHA op om door te gaan.";
       }
     }
@@ -492,10 +494,10 @@ Een toast-notificatie verschijnt kort in beeld en verdwijnt na een paar seconden
 
 <Guideline appearance="dont" title="Toast die na 2 seconden verdwijnt zonder ARIA-markering">
     ```javascript
-    function toonToast(melding) {
+    function showToast(message) {
       const toast = document.createElement("div");
-      toast.className = "toast";
-      toast.textContent = melding;
+      toast.className = "example-toast";
+      toast.textContent = message;
       document.body.appendChild(toast);
       setTimeout(() => toast.remove(), 2000);
     }
@@ -504,14 +506,14 @@ Een toast-notificatie verschijnt kort in beeld en verdwijnt na een paar seconden
 
 <Guideline appearance="do" title="Toast-container met role=status staat al in de HTML, toasts verschijnen erin">
     ```html
-    <div id="toast-container" role="status" aria-live="polite"></div>
+    <div id="example-toast-container" role="status" aria-live="polite"></div>
     ```
     ```javascript
-    function toonToast(melding) {
-      const container = document.getElementById("toast-container");
+    function showToast(message) {
+      const container = document.getElementById("example-toast-container");
       const toast = document.createElement("div");
-      toast.className = "toast";
-      toast.textContent = melding;
+      toast.className = "example-toast";
+      toast.textContent = message;
       container.appendChild(toast);
       setTimeout(() => toast.remove(), 8000);
     }
@@ -532,23 +534,22 @@ Het element met `role="status"` of `aria-live` staat al in de HTML bij het laden
 
 <Guideline appearance="dont" title="Live region en tekst worden tegelijk toegevoegd">
     ```javascript
-    function toonMelding(tekst) {
-      const melding = document.createElement("p");
-      melding.setAttribute("role", "status");
-      melding.textContent = tekst;
-      document.body.appendChild(melding);
+    function showNotification(text) {
+      const notification = document.createElement("p");
+      notification.setAttribute("role", "status");
+      notification.textContent = text;
+      document.body.appendChild(notification);
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Live region staat al in de HTML, tekst wordt later ingevuld">
     ```html
-    <!-- Element staat al in de HTML bij het laden van de pagina -->
-    <p id="melding" role="status"></p>
+    <p id="example-notification" role="status"></p>
     ```
     ```javascript
-    function toonMelding(tekst) {
-      document.getElementById("melding").textContent = tekst;
+    function showNotification(text) {
+      document.getElementById("example-notification").textContent = text;
     }
     ```
 </Guideline>
