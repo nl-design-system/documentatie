@@ -98,6 +98,11 @@
   }
 }
 
+:where(.utrecht-card .utrecht-card__heading .utrecht-link) {
+  display: inline-block;
+  min-height: 24px;
+}
+
 @media (forced-colors: active) {
   .utrecht-nav-bar .utrecht-nav-list__item:not(:has([aria-current])) {
     border-block-end-style: none;
