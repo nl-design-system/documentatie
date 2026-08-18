@@ -99,7 +99,10 @@ export default defineConfig({
       remarkAdmonitions,
       removeH1FromMarkdown(),
     ],
-    rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+    rehypePlugins: [
+      nldsComponentsPlugin,
+      addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
+    ],
     syntaxHighlight: 'prism',
   },
 
@@ -115,7 +118,10 @@ export default defineConfig({
         videoplayerClientLoadPlugin,
         removeH1FromMarkdown(),
       ],
-      rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+      rehypePlugins: [
+        nldsComponentsPlugin,
+        addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
+      ],
       syntaxHighlight: 'prism',
     }),
     react(),
