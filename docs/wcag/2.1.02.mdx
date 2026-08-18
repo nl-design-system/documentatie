@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.2 Geen toetsenbordval
 pagination_label: WCAG-succescriterium 2.1.2 Geen toetsenbordval
-description: Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.
+description: Wie met het toetsenbord op een onderdeel komt, kan daar met het toetsenbord ook weer weg, zodat de rest van de pagina bereikbaar blijft.
 slug: 2.1.2
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,21 @@ keywords:
   - operable
   - keyboard accessible
   - no keyboard trap
+  - toetsenbordval
+  - toetsenbord
+  - focus
+  - focusmanagement
+  - dialoogvenster
+  - WCAG 2.1.2
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.1.2-summary.md";
 
@@ -32,49 +38,296 @@ import Summary from "./summaries/_2.1.2-summary.md";
   {"WCAG-succescriterium 2.1.2 Geen toetsenbordval"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Bezoekers die een toetsenbord gebruiken komen niet vast te zitten.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Zorg ervoor dat bezoekers altijd weg kunnen navigeren van onderdelen.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Mensen die leunen op toetsenbordgebruik kunnen vaak niet op een andere manier navigeren.
-    </dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-[WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1) vereist dat alle interactieve onderdelen van een pagina, waar je acties mee uit kan voeren, te bedienen zijn met een toetsenbord. Dit succescriterium vereist dat de bezoeker een component niet alleen kan bereiken, maar ook verder of terug kan navigeren.
+Je gaat met de <kbd>Tab</kbd>-toets van het ene interactieve onderdeel naar het volgende, en met <kbd>Shift</kbd>+<kbd>Tab</kbd> weer terug. Kom je bij een dialoogvenster, een menu of een kalender, dan brengt diezelfde <kbd>Tab</kbd>-toets je er ook weer uit. Werkt dat niet, dan blijft de focus in dat ene onderdeel en is de rest van de pagina onbereikbaar. Zo'n onderdeel heet een toetsenbordval.
 
-Als de focus niet te verplaatsen is met standaardtoetsen zoals escape-, pijltjes- of tabtoetsen, geef dan aan hoe het wel kan. Een onderdeel wat wel te bereiken is maar waar men niet meer weg kan, wordt ook toetsenbordval genoemd.
+Wie geen muis gebruikt, komt hierdoor niet verder. Dat geldt voor toetsenbordgebruikers en voor screenreadergebruikers. Het gevolg is groter dan bij een knop die niet werkt: ze kunnen niet alleen dat ene onderdeel niet gebruiken, ze bereiken ook niets meer van wat erna komt. Dan blijft alleen de pagina opnieuw laden of sluiten over, en daarmee zijn ingevulde gegevens weg.
+
+In sommige onderdelen verlaat je het onderdeel met een andere toets dan <kbd>Tab</kbd>. Een tekstverwerker gebruikt <kbd>Tab</kbd> bijvoorbeeld om in te springen. Dat mag, op één voorwaarde: op de pagina staat met welke toets je het onderdeel wel verlaat, bijvoorbeeld met <kbd>Escape</kbd>. Ontbreekt die uitleg, dan komt de bezoeker alsnog niet verder.
+
+## Veelgemaakte fouten
+
+### Dialoogvenster dat je niet met het toetsenbord kunt sluiten
+
+Een dialoogvenster of popup opent bovenop de pagina, bijvoorbeeld een bevestiging, een detailvenster of een zoekresultaat. Je komt er met <kbd>Tab</kbd> naartoe, maar je verlaat het niet meer: <kbd>Escape</kbd> sluit het venster niet en de sluitknop ontbreekt of kan geen focus krijgen. De focus blijft in het venster en je komt niet terug op de pagina eronder.
+
+**Hoe te testen:** open het venster met het toetsenbord en probeer het te sluiten met <kbd>Escape</kbd>. Lukt dat niet, druk dan door op <kbd>Tab</kbd>. Kom je uit het venster, of blijft de focus erin?
+
+Een `<span>` krijgt zonder extra code geen focus. Wie geen muis gebruikt, bereikt de sluitknop in dit voorbeeld dus niet.
+
+<Guideline appearance="dont" title="Popup met een sluitknop die geen focus kan krijgen">
+  ```html
+  <div class="example-popup">
+    <p>Weet je zeker dat je dit wilt verwijderen?</p>
+    <span class="example-close" onclick="closeDialog()">
+      &times;
+    </span>
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Dialoogvenster met een focusbare sluitknop en Escape">
+  ```html
+  <dialog aria-labelledby="bevestigen-titel">
+    <h2 id="bevestigen-titel">Verwijderen bevestigen</h2>
+    <p>Weet je zeker dat je dit wilt verwijderen?</p>
+    <button type="button">Verwijderen</button>
+    <button type="button">Annuleren</button>
+  </dialog>
+  ```
+</Guideline>
+
+Gebruik het `<dialog>`-element en open het met `showModal()`. De browser plaatst de focus dan in het venster, schermt de achterliggende pagina af en sluit het venster met <kbd>Escape</kbd>. Bouw je het venster zelf, laat <kbd>Escape</kbd> dan sluiten en zet de focus daarna terug op de knop waarmee het venster is geopend.
+
+**Wie kan dit oplossen:** een developer gebruikt de [Dialog-component](/dialog/) of het `<dialog>`-element in plaats van zelf een venster te bouwen, en maakt van de sluitknop een `<button>` die focus kan krijgen.
+
+### Menu of werkbalk waar je met de Tab-toets niet uit komt
+
+Een menubalk of werkbalk laat je met de pijltjestoetsen van knop naar knop gaan. Dat is een goed patroon. Het gaat mis als de code ook <kbd>Tab</kbd> onderschept om binnen het menu te springen. De bezoeker verwacht met <kbd>Tab</kbd> het menu te verlaten, maar komt bij het volgende menu-item terecht. Dit gebeurt ook bij een uitklapmenu of een hamburgermenu dat na openen de focus binnen het menu houdt.
+
+**Hoe te testen:** ga het menu in en druk op <kbd>Tab</kbd>. Verlaat je het menu, of springt de focus naar het volgende menu-item?
+
+<Guideline appearance="dont" title="Tab wordt onderschept om binnen het menu te bewegen">
+    ```js
+    menu.addEventListener("keydown", (event) => {
+      if (event.key === "Tab") {
+        event.preventDefault();
+        focusNextItem();
+      }
+    });
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Pijltjestoetsen bewegen binnen het menu, Tab verlaat het">
+    ```js
+    menu.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") focusNextItem();
+      if (event.key === "ArrowLeft") focusPreviousItem();
+    });
+    ```
+</Guideline>
+
+In het goede voorbeeld komt <kbd>Tab</kbd> niet voor. De browser doet daarmee wat de bezoeker verwacht: de focus verlaat het menu.
+
+**Wie kan dit oplossen:** een developer laat de pijltjestoetsen binnen het menu bewegen en onderschept <kbd>Tab</kbd> niet, zodat de focus het menu kan verlaten. Volg het toetsenbordpatroon voor menu's en werkbalken uit de [<span lang="en">WAI-ARIA Authoring Practices</span>](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/).
+
+### Cookiemelding die je alleen met de muis weg kunt klikken
+
+Een cookiemelding, nieuwsbriefvenster of andere overlay verschijnt over de pagina en houdt de focus vast tot je een keuze maakt. Dat is redelijk, zolang je die keuze ook met het toetsenbord kunt maken. Kun je de knoppen niet met <kbd>Tab</kbd> bereiken en werkt <kbd>Escape</kbd> niet, dan blijft de melding staan en is de hele pagina onbruikbaar.
+
+**Hoe te testen:** laad de pagina en gebruik alleen het toetsenbord. Kun je bij de knoppen van de overlay komen en er een kiezen, zodat de melding verdwijnt?
+
+<Guideline appearance="dont" title="Overlay met knoppen die geen focus kunnen krijgen">
+  ```html
+  <div class="example-cookie-overlay">
+    <span onclick="acceptCookies()">Accepteren</span>
+    <span onclick="declineCookies()">Weigeren</span>
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Overlay met echte knoppen die focus kunnen krijgen">
+  ```html
+  <div class="example-cookie-overlay" role="dialog" aria-label="Cookievoorkeuren">
+    <button type="button">Accepteren</button>
+    <button type="button">Weigeren</button>
+  </div>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** komt de melding uit een externe tool, dan controleert een webredacteur in de instellingen van die tool of de knoppen met het toetsenbord werken, en meldt het bij de leverancier als dat niet zo is. Is de melding zelf gebouwd, dan vervangt een developer de klikbare `<span>`-elementen door `<button>`-elementen die focus kunnen krijgen.
+
+### Ingesloten kaart of widget waar je niet voorbij komt
+
+Een interactieve kaart, een dashboard of een chatvenster van een andere partij staat ingesloten op de pagina. Zodra je er met <kbd>Tab</kbd> in gaat, gaat de focus telkens langs alle interne knoppen, zoals in- en uitzoomen, lagen en markeringen. Je komt niet voorbij de widget naar de rest van de pagina. Omdat een andere partij de widget heeft gebouwd, bepaal je de toetsenbordbediening niet zelf.
+
+**Hoe te testen:** ga met <kbd>Tab</kbd> de widget in en blijf op <kbd>Tab</kbd> drukken. Keert de focus terug naar de pagina, of blijft die in de widget?
+
+Aan de code op je eigen pagina is niet te zien of de widget de focus teruggeeft. Dat blijkt pas als je hem met het toetsenbord bedient.
+
+<Guideline appearance="dont" title="Ingesloten kaart als enige manier om de locaties te bekijken">
+  ```html
+  <iframe src="https://example.com/kaart" title="Kaart met onze locaties"></iframe>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Dezelfde locaties ook als lijst naast de kaart">
+  ```html
+  <iframe src="https://example.com/kaart" title="Kaart met onze locaties"></iframe>
+  <p>
+    <a href="https://example.com/locaties">Bekijk alle locaties als lijst</a>
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker biedt dezelfde informatie ook buiten de widget aan, bijvoorbeeld als lijst of tabel, zodat niemand de widget nodig heeft. Een developer test de widget met het toetsenbord voordat die live gaat en kiest een versie waar de focus weer uit komt. Werkt geen van beide, meld het probleem dan bij de leverancier van de widget.
+
+### Video in een popup die je niet kunt stoppen of sluiten
+
+Je activeert een knop of een afbeelding en er start een video in een popup boven de pagina. De focus komt in de popup terecht, of blijft juist op de pagina eronder staan terwijl de video speelt. Je kunt de video niet stoppen en de popup niet sluiten met het toetsenbord. Dit gebeurt bij video's die automatisch starten en bij een video die opent vanuit een afbeelding of een omslagveld.
+
+**Hoe te testen:** start de video met het toetsenbord. Kun je de video stoppen en de popup sluiten met <kbd>Escape</kbd> of een sluitknop, en kom je daarna terug op de pagina?
+
+Zonder `controls` en zonder sluitknop is er in het foute voorbeeld niets in de popup dat focus kan krijgen.
+
+<Guideline appearance="dont" title="Video die automatisch start in een popup zonder uitgang">
+  ```html
+  <button type="button" onclick="openVideo()">
+    Bekijk de video
+  </button>
+  <div class="example-video-popup">
+    <video src="rondleiding.mp4" autoplay></video>
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Video in een dialoogvenster met bediening en Escape">
+  ```html
+  <dialog aria-labelledby="video-titel">
+    <h2 id="video-titel">Rondleiding door het museum</h2>
+    <video src="rondleiding.mp4" controls></video>
+    <button type="button">Sluiten</button>
+  </dialog>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur zet automatisch afspelen uit in de instellingen van de videospeler of het CMS, zodat de bezoeker zelf start. Een developer zet de video in een `<dialog>` met bedieningsknoppen die focus kunnen krijgen, laat <kbd>Escape</kbd> de popup sluiten en de video stoppen, en zet de focus daarna terug op de knop waarmee de video is geopend.
+
+### Tekstverwerker die je niet met de Tab-toets kunt verlaten
+
+In een tekstverwerker met opmaakknoppen springt de <kbd>Tab</kbd>-toets in, of verplaatst de focus binnen de editor, in plaats van naar het volgende onderdeel te gaan. Een onderdeel mag <kbd>Tab</kbd> voor iets anders gebruiken, maar dan moet op de pagina staan hoe je de editor wel verlaat. Ontbreekt die uitleg en werkt <kbd>Escape</kbd> ook niet, dan komt een toetsenbordgebruiker niet meer uit het tekstvak. Dit gebeurt bijvoorbeeld bij een tekstverwerker in een formulier, zoals een motivatieveld.
+
+**Hoe te testen:** typ iets in het tekstvak en probeer het te verlaten met <kbd>Tab</kbd>. Lukt dat niet, staat er dan een zichtbare uitleg welke toets je wel gebruikt? Werkt die toets?
+
+In het foute voorbeeld springt <kbd>Tab</kbd> in het tekstvak in, en nergens op de pagina staat met welke toets je het veld verlaat.
+
+<Guideline appearance="dont" title="Editor die Tab onderschept zonder uitleg">
+  ```html
+  <p id="motivatie-label">Motivatie</p>
+  <div contenteditable="true" role="textbox" aria-labelledby="motivatie-label"></div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Editor met een uitweg en een zichtbare uitleg">
+    ```html
+    <p id="motivatie-label">Motivatie</p>
+    <div
+      contenteditable="true"
+      role="textbox"
+      aria-labelledby="motivatie-label"
+      aria-describedby="motivatie-uitleg"
+    ></div>
+    <p id="motivatie-uitleg">Druk op Escape om het tekstvak te verlaten.</p>
+    ```
+
+    ```js
+    editor.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") nextElement.focus();
+    });
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een toets toe waarmee je het tekstvak verlaat, bijvoorbeeld <kbd>Escape</kbd>, en zet er een zichtbare uitleg bij die met `aria-describedby` aan het veld is gekoppeld.
+
+### Tabbladen waaruit je niet terug bij de tabs komt
+
+Een reeks tabbladen toont per tab een eigen paneel. Je gaat met <kbd>Tab</kbd> een tabpaneel in, maar je komt daarna niet meer terug bij de tabrij of bij de rest van de pagina. De focus blijft in het paneel.
+
+**Hoe te testen:** kies een tab, ga met <kbd>Tab</kbd> het tabpaneel in en druk door op <kbd>Tab</kbd> en <kbd>Shift</kbd>+<kbd>Tab</kbd>. Kom je terug bij de tabs en de rest van de pagina, of blijft de focus in het paneel?
+
+<Guideline appearance="dont" title="Tabpaneel dat de focus binnen het paneel houdt">
+    ```js
+    tabPanel.addEventListener("keydown", (event) => {
+      if (event.key === "Tab") {
+        event.preventDefault();
+        focusFirstElementInPanel();
+      }
+    });
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Tabpaneel waar de focus met Tab weer uit komt">
+  ```html
+  <div role="tablist">
+    <button type="button" role="tab" aria-selected="true" aria-controls="paneel-introductie">
+      Introductie
+    </button>
+    <button type="button" role="tab" aria-selected="false" aria-controls="paneel-verhalen">
+      Verhalen
+    </button>
+  </div>
+  <div role="tabpanel" id="paneel-introductie">
+    <p>Deze tentoonstelling laat zien hoe de stad in honderd jaar veranderde.</p>
+  </div>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer laat de focus met <kbd>Tab</kbd> uit het tabpaneel komen en onderschept <kbd>Tab</kbd> niet. Volg het toetsenbordpatroon voor tabs uit de [<span lang="en">WAI-ARIA Authoring Practices</span>](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/).
+
+### Zelfgemaakte datumkiezer of keuzelijst die je niet kunt sluiten
+
+Bij een zelfgemaakte datumkiezer of keuzelijst opent er een kalender of een lijst met opties onder het veld. Zolang die openstaat, blijven <kbd>Tab</kbd> en de pijltjestoetsen binnen dat onderdeel. <kbd>Escape</kbd> sluit het niet en je komt niet bij het volgende veld. De bezoeker kan het formulier niet afmaken.
+
+**Hoe te testen:** open de kalender of de lijst met het toetsenbord en probeer met <kbd>Tab</kbd> naar het volgende veld te gaan, of te sluiten met <kbd>Escape</kbd>. Kom je verder, of blijft de focus in het onderdeel?
+
+Een `readonly`-veld dat alleen op een klik reageert, opent de kalender niet voor wie een toetsenbord gebruikt.
+
+<Guideline appearance="dont" title="Kalender die alleen met de muis opengaat en niet sluit">
+  ```html
+  <label for="datum">Datum</label>
+  <input id="datum" readonly onclick="openCalendar()" />
+  <div class="example-calendar"></div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Kalender die je met Escape verlaat">
+    ```js
+    calendar.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeCalendar();
+        dateField.focus();
+      }
+    });
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer gebruikt `<input type="date">` of de [Date Picker-component](/date-picker/) in plaats van zelf een kalender te bouwen. Bouw je hem toch zelf, laat <kbd>Escape</kbd> dan het onderdeel sluiten en de focus teruggeven aan het invoerveld, en onderschep <kbd>Tab</kbd> niet. Volg voor een keuzelijst het [combobox-patroon uit de <span lang="en">WAI-ARIA Authoring Practices</span>](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/).
 
 ## Hoe te testen
 
-- Navigeer door de pagina met het toetsenbord zoals bij [WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1)
-- Als je niet verder kan navigeren, controleer dan of er instructies zijn hoe dit wel kan.
+### Voor iedereen
 
-Als je niet de hele pagina doorkan met standaardnavigatie én er zijn geen alternatieve instructies, dan faalt dit criterium.
+1. Gebruik alleen je toetsenbord, niet je muis, om over de pagina te navigeren.
+2. Druk herhaald op <kbd>Tab</kbd> om vooruit te gaan en op <kbd>Shift</kbd>+<kbd>Tab</kbd> om terug te gaan. Ga zo de hele pagina door, van boven naar beneden.
+3. Let op of je ergens niet verder komt: een onderdeel waar je met <kbd>Tab</kbd> in komt, maar niet meer uit.
+4. Kom je bij een venster, kalender, menu, tabblad of ingesloten widget, probeer die dan te verlaten met <kbd>Tab</kbd> en te sluiten met <kbd>Escape</kbd>.
+5. Kom je ergens niet verder, kijk dan of er een zichtbare uitleg staat met welke toets je het onderdeel wel verlaat. Werkt die toets?
 
-## Tips
+### Voor developers
 
-- Beïnvloed zo min mogelijk de focus van de gebruiker met JavaScript, het `autofocus`-attribuut of het `tabindex`-attribuut. Door er niet aan te komen kun je het ook niet slechter maken.
+1. Navigeer met het toetsenbord over de pagina en let op plekken waar de focus binnen een onderdeel blijft.
+2. Test elk zelfgemaakt onderdeel apart: dialoogvensters, kalenders, keuzelijsten, menu's, tabbladen, tekstverwerkers en mediaspelers. Ga erin en probeer eruit te komen met <kbd>Tab</kbd> en <kbd>Escape</kbd>.
+3. Zoek in de code naar `preventDefault` in een `keydown`-handler die op <kbd>Tab</kbd> reageert. Zonder een uitweg veroorzaakt dat een toetsenbordval.
+4. Controleer bij dialoogvensters of de code die de focus binnen het venster houdt weer wordt uitgezet zodra het venster sluit, en of de focus teruggaat naar het openende onderdeel.
+5. Test ingesloten content van andere partijen, zoals kaarten, dashboards en chatvensters. Ga er met <kbd>Tab</kbd> in en controleer of de focus terugkeert naar de pagina.
+6. Test dit handmatig met het toetsenbord. Automatische controles herkennen een toetsenbordval niet.
 
-## Gerelateerde NL Design System-richtlijnen
+## Gerelateerde succescriteria
 
-- Formulieren - Toetsenbord: [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/).
-- Formulieren - Toetsenbord: [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex).
-- Formulieren - Wanneer gebruik je welk formulierelement: [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen).
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): alles op de pagina moet met het toetsenbord te bedienen zijn. Succescriterium 2.1.1 gaat erover of je een onderdeel kunt gebruiken, succescriterium 2.1.2 of je er ook weer uit komt.
+- [2.1.4 Enkel teken sneltoetsen](/wcag/2.1.4/): sneltoetsen van één letter, cijfer of leesteken moeten uit te zetten of aan te passen zijn. Lees verder zodra een onderdeel eigen toetsen gebruikt.
+- [2.4.3 Focus volgorde](/wcag/2.4.3/): de volgorde waarin de focus over de pagina beweegt, moet logisch zijn.
+- [2.4.7 Focus zichtbaar](/wcag/2.4.7/): je moet kunnen zien welk onderdeel op dat moment de focus heeft. Zonder zichtbare focus merk je een toetsenbordval pas laat.
+
+## Relevante bronnen
+
+- [Zorg dat het formulier werkt met een toetsenbord](/richtlijnen/formulieren/toetsenbord/toetsenbordnavigatie): de richtlijn van NL Design System voor toetsenbordbediening in formulieren.
+- [Gebruik geen positieve tabindex](/richtlijnen/formulieren/toetsenbord/tabindex): een positieve `tabindex` maakt de focusvolgorde onvoorspelbaar en maakt een toetsenbordval waarschijnlijker.
+- [<span lang="en">WAI-ARIA Authoring Practices: Dialog (Modal) Pattern</span>](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/): lees hier hoe je een dialoogvenster bouwt waarin de focus goed wordt geplaatst en dat met <kbd>Escape</kbd> sluit. Deze pagina is Engelstalig.
 
 ## Gebruikersonderzoek
 
@@ -82,16 +335,10 @@ Als je niet de hele pagina doorkan met standaardnavigatie én er zijn geen alter
 
 ## W3C referenties
 
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.1.2 No Keyboard Trap</span>](https://www.w3.org/TR/WCAG22/#content-on-hover-or-focus).
-- Nederlandse vertaling van het WCAG-succescriterium: [2.1.2 Geen toetsenbordval](https://www.w3.org/Translations/WCAG22-nl/#content-on-hover-or-focus).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.1.2 No Keyboard Trap</span>](https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 2.1.2 No Keyboard Trap</span>](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.1.2 No Keyboard Trap</span>](https://www.w3.org/TR/WCAG22/#no-keyboard-trap).
+- Nederlandse vertaling van het WCAG-succescriterium: [2.1.2 Geen toetsenbordval](https://www.w3.org/Translations/WCAG22-nl/#no-keyboard-trap).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.1.2 No Keyboard Trap</span>](https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 2.1.2 No Keyboard Trap</span>](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html).
 
 ## Help richtlijn verbeteren
 
