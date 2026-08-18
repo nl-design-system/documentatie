@@ -69,8 +69,8 @@ Een `<span>` krijgt zonder extra code geen focus. Wie geen muis gebruikt, bereik
 
 <Guideline appearance="do" title="Dialoogvenster met een focusbare sluitknop en Escape">
   ```html
-  <dialog aria-labelledby="bevestigen-titel">
-    <h2 id="bevestigen-titel">Verwijderen bevestigen</h2>
+  <dialog aria-labelledby="confirm-title">
+    <h2 id="confirm-title">Verwijderen bevestigen</h2>
     <p>Weet je zeker dat je dit wilt verwijderen?</p>
     <button type="button">Verwijderen</button>
     <button type="button">Annuleren</button>
@@ -180,20 +180,18 @@ Zonder `controls` en zonder sluitknop is er in het foute voorbeeld niets in de p
 
 <Guideline appearance="dont" title="Video die automatisch start in een popup zonder uitgang">
   ```html
-  <button type="button" onclick="openVideo()">
-    Bekijk de video
-  </button>
+  <button type="button">Bekijk de video</button>
   <div class="example-video-popup">
-    <video src="rondleiding.mp4" autoplay></video>
+    <video src="museum-tour.mp4" autoplay></video>
   </div>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Video in een dialoogvenster met bediening en Escape">
   ```html
-  <dialog aria-labelledby="video-titel">
-    <h2 id="video-titel">Rondleiding door het museum</h2>
-    <video src="rondleiding.mp4" controls></video>
+  <dialog aria-labelledby="video-title">
+    <h2 id="video-title">Rondleiding door het museum</h2>
+    <video src="museum-tour.mp4" controls></video>
     <button type="button">Sluiten</button>
   </dialog>
   ```
@@ -214,21 +212,21 @@ In het foute voorbeeld springt <kbd>Tab</kbd> in het tekstvak in, en nergens op 
 
 <Guideline appearance="dont" title="Editor die Tab onderschept zonder uitleg">
   ```html
-  <p id="motivatie-label">Motivatie</p>
-  <div contenteditable="true" role="textbox" aria-labelledby="motivatie-label"></div>
+  <p id="motivation-label">Motivatie</p>
+  <div contenteditable="true" role="textbox" aria-labelledby="motivation-label"></div>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Editor met een uitweg en een zichtbare uitleg">
     ```html
-    <p id="motivatie-label">Motivatie</p>
+    <p id="motivation-label">Motivatie</p>
     <div
       contenteditable="true"
       role="textbox"
-      aria-labelledby="motivatie-label"
-      aria-describedby="motivatie-uitleg"
+      aria-labelledby="motivation-label"
+      aria-describedby="motivation-hint"
     ></div>
-    <p id="motivatie-uitleg">Druk op Escape om het tekstvak te verlaten.</p>
+    <p id="motivation-hint">Druk op Escape om het tekstvak te verlaten.</p>
     ```
 
     ```js
@@ -261,18 +259,20 @@ Een reeks tabbladen toont per tab een eigen paneel. Je gaat met <kbd>Tab</kbd> e
 <Guideline appearance="do" title="Tabpaneel waar de focus met Tab weer uit komt">
   ```html
   <div role="tablist">
-    <button type="button" role="tab" aria-selected="true" aria-controls="paneel-introductie">
+    <button type="button" role="tab" aria-selected="true" aria-controls="panel-introduction">
       Introductie
     </button>
-    <button type="button" role="tab" aria-selected="false" aria-controls="paneel-verhalen">
+    <button type="button" role="tab" aria-selected="false" aria-controls="panel-stories">
       Verhalen
     </button>
   </div>
-  <div role="tabpanel" id="paneel-introductie">
+  <div role="tabpanel" id="panel-introduction">
     <p>Deze tentoonstelling laat zien hoe de stad in honderd jaar veranderde.</p>
   </div>
   ```
 </Guideline>
+
+In dit voorbeeld staat alleen het eerste tabpaneel; het tweede paneel hoort er in een werkende versie ook bij.
 
 **Wie kan dit oplossen:** een developer laat de focus met <kbd>Tab</kbd> uit het tabpaneel komen en onderschept <kbd>Tab</kbd> niet. Volg het toetsenbordpatroon voor tabs uit de [<span lang="en">WAI-ARIA Authoring Practices</span>](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/).
 
@@ -286,8 +286,8 @@ Een `readonly`-veld dat alleen op een klik reageert, opent de kalender niet voor
 
 <Guideline appearance="dont" title="Kalender die alleen met de muis opengaat en niet sluit">
   ```html
-  <label for="datum">Datum</label>
-  <input id="datum" readonly onclick="openCalendar()" />
+  <label for="date">Datum</label>
+  <input id="date" readonly onclick="openCalendar()" />
   <div class="example-calendar"></div>
   ```
 </Guideline>
