@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.3.4 Foutpreventie (wettelijk, financieel, gegevens)
 pagination_label: WCAG-succescriterium 3.3.4 Foutpreventie (wettelijk, financieel, gegevens)
-description: Wanneer een gebruiker een formulier invult met juridische, financiële of persoonlijke gegevens, zorg er dan voor dat gebruiker de ingevulde gegevens kan controleren en corrigeren.
+description: Bij een bestelling, een aanvraag of het verwijderen van gegevens kan de bezoeker de invoer nakijken en corrigeren voordat die definitief wordt.
 slug: 3.3.4
 conformance_level: Niveau AA
 keywords:
@@ -16,15 +16,24 @@ keywords:
   - understandable
   - input assistance
   - error prevention (legal, finance, data)
+  - foutpreventie
+  - bevestiging
+  - overzichtsstap
+  - bestelling
+  - transactie
+  - verwijderen
+  - annuleren
+  - formulier
+  - WCAG 3.3.4
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.3.4-summary.md";
 
@@ -32,20 +41,359 @@ import Summary from "./summaries/_3.3.4-summary.md";
   {"WCAG-succescriterium 3.3.4 Foutpreventie (wettelijk, financieel, gegevens)"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-## Gerelateerde NL Design System-richtlijn
+Iedereen maakt typefouten en klikt weleens verkeerd, maar niet iedereen merkt dat even snel. Wie de pagina sterk vergroot, ziet maar een deel van het scherm tegelijk. Wie de gegevens laat voorlezen met een [screenreader](/woordenlijst/#screenreader), hoort ze één voor één en niet allemaal naast elkaar. Wie de knop niet precies kan aanwijzen, klikt sneller naast de bedoelde knop. Een overzichtsstap of een manier om de handeling terug te draaien geeft de bezoeker de kans om dat te herstellen.
 
-Formulieren: [Richtlijnen voor foutmeldingen in een formulier](/richtlijnen/formulieren/foutmeldingen).
+## Veelgemaakte fouten
 
-## Bronnen
+### De laatste knop voert de transactie meteen uit
 
-Op GOV.UK:
+De knop onder het laatste formulier schrijft het geld af, sluit het contract of verstuurt de aanvraag. Er is geen moment waarop de bezoeker nog kan stoppen, en achteraf is de handeling niet meer terug te draaien. Wie de knop per ongeluk aanraakt of aanstuurt met spraakbediening, verstuurt de transactie zonder dat te willen.
 
-- [<span lang="en">Help users to Check answers</span>](https://design-system.service.gov.uk/patterns/check-answers/).
-- [<span lang="en">Wiki 3.3.4 Error Prevention (Legal, Financial, Data)</span>](https://github.com/alphagov/wcag-primer/wiki/3.3.4).
+**Hoe te testen:** klik op de knop die de transactie uitvoert. Zit er een stap tussen waarin je nog kunt stoppen? Kun je de transactie achteraf nog annuleren?
+
+<Guideline appearance="dont" title="De laatste knop rekent direct af">
+  ```html
+  <h1>Betaalgegevens</h1>
+  <form action="/checkout/payment" method="post">
+    <label for="card-number">Kaartnummer</label>
+    <input id="card-number" name="card-number" />
+    <button type="submit">Betalen</button>
+  </form>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een tussenstap waarin de bezoeker nog kan stoppen">
+  ```html
+  <h1>Bevestig je betaling</h1>
+  <form action="/checkout/payment" method="post">
+    <p>Je betaalt € 49,95 aan Bureau Voorbeeld.</p>
+    <button type="submit">Betaling bevestigen</button>
+    <a href="/checkout/summary">Terug zonder te betalen</a>
+  </form>
+  ```
+</Guideline>
+
+Een annuleermogelijkheid achteraf mag ook. Kan de bezoeker de bestelling zelf annuleren, dan is een tussenstap niet nodig.
+
+**Wie kan dit oplossen:**
+
+- Een developer richt een annuleermogelijkheid in voor na afloop, zodat de bezoeker de bestelling zelf kan terugdraaien.
+- Een developer bouwt een tussenstap in voor de definitieve verzending, met een overzicht van wat er gaat gebeuren.
+
+### De ingevulde gegevens zijn nergens terug te zien voor het verzenden
+
+Er is wel een bevestigingsstap, maar de gegevens zelf staan er niet bij. De bezoeker krijgt alleen een vraag of een akkoordvinkje, en moet uit het hoofd weten wat er eerder is ingevuld. Wie de gegevens over meerdere stappen heeft ingevuld, of ze één voor één heeft laten voorlezen, kan ze zo niet nalopen. Een fout in de invoer blijkt dan pas na het verzenden.
+
+**Hoe te testen:** doorloop een aanvraag tot de laatste stap. Zie je daar terug wat je hebt ingevuld, of moet je erop vertrouwen dat het goed staat?
+
+<Guideline appearance="dont" title="Bevestigen zonder de gegevens te tonen">
+  ```html
+  <h1>Bevestig je bestelling</h1>
+  <form action="/checkout/order" method="post">
+    <p>Weet je zeker dat je deze bestelling wilt plaatsen?</p>
+    <button type="submit">Ja, plaats de bestelling</button>
+  </form>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een overzicht van de ingevulde gegevens voor de betaling">
+  ```html
+  <h1>Controleer je bestelling</h1>
+  <form action="/checkout/order" method="post">
+    <h2>Bezorgadres</h2>
+    <p>
+      Jan de Vries
+      <br />
+      Lange Voorhout 12
+      <br />
+      2514 EA Den Haag
+    </p>
+    <h2>Betaalmethode</h2>
+    <p>iDEAL, ING</p>
+    <h2>Totaal</h2>
+    <p>€ 49,95 inclusief btw en verzendkosten</p>
+    <button type="submit">Bestelling plaatsen en betalen</button>
+  </form>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer toont op de laatste stap de gegevens die de bezoeker heeft ingevuld, in plaats van alleen een bevestigingsvraag.
+
+### Het overzicht is er wel, maar de gegevens zijn er niet uit te lezen
+
+De gegevens staan er wel, maar in de vorm van het achterliggende systeem: veldnamen, codes en waarden onder elkaar. De bezoeker moet de aanvraag goedkeuren zonder te kunnen zien of de eigen naam, het adres en het bedrag kloppen.
+
+**Hoe te testen:** lees de overzichtsstap alsof je de aanvraag voor het eerst ziet. Kun je je eigen gegevens terugvinden en nalopen zonder te weten hoe het achterliggende systeem is opgebouwd?
+
+<Guideline appearance="dont" title="De gegevens in de vorm van het achterliggende systeem">
+  ```html
+  <h1>Controleer je aanvraag</h1>
+  <pre>AANVR_NM: J. de Vries AANVR_ADR1: Lange Voorhout 12 AANVR_PC: 2514EA OBJ_ID: 4821-F-02 BDR_EX: 4995</pre>
+  <button type="submit">Versturen</button>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De gegevens in leesbare tekst, met een label per gegeven">
+  ```html
+  <h1>Controleer je aanvraag</h1>
+  <h2>Aanvrager</h2>
+  <p>
+    J. de Vries
+    <br />
+    Lange Voorhout 12
+    <br />
+    2514 EA Den Haag
+  </p>
+  <h2>Bedrag</h2>
+  <p>€ 49,95 exclusief btw</p>
+  <button type="submit">Aanvraag versturen</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer toont de gegevens als leesbare tekst met een label per gegeven, bijvoorbeeld met het [Data Summary-component](/data-summary/).
+
+### Het overzicht toont niet alle ingevulde gegevens
+
+Er is wel een overzichtsstap, maar die laat maar een deel zien. Wat de bezoeker in een eerdere stap heeft gekozen of aangevinkt, staat er niet bij. De bezoeker controleert dan alleen wat zichtbaar is en gaat ervan uit dat de rest klopt. Bij een keuze die afwijkt van de standaardinstelling gaat dat mis.
+
+**Hoe te testen:** doorloop een aanvraag en wijk bij elke stap af van de standaardkeuze. Staan al die keuzes daarna op de overzichtsstap?
+
+<Guideline appearance="dont" title="Overzicht met alleen het adres en het totaalbedrag">
+  ```html
+  <h1>Controleer je bestelling</h1>
+  <p>Jan de Vries, Lange Voorhout 12, 2514 EA Den Haag</p>
+  <p>Totaal: € 74,95</p>
+  <button type="submit">Bestelling plaatsen</button>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Overzicht met alle keuzes die de bezoeker heeft gemaakt">
+  ```html
+  <h1>Controleer je bestelling</h1>
+  <h2>Producten</h2>
+  <ul>
+    <li>Bureaulamp zwart, 2 stuks, € 49,95</li>
+  </ul>
+  <h2>Bezorging</h2>
+  <p>Bezorgadres: Jan de Vries, Lange Voorhout 12, 2514 EA Den Haag</p>
+  <p>Bezorgdag: dinsdag 4 augustus, tussen 9.00 en 12.00 uur</p>
+  <p>Extra: verzekerd verzenden, € 4,95</p>
+  <h2>Facturering</h2>
+  <p>Factuuradres: Postbus 220, 2501 CE Den Haag</p>
+  <p>Totaal: € 74,95 inclusief btw</p>
+  <button type="submit">Bestelling plaatsen</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer toont op de overzichtsstap elk gegeven dat de bezoeker heeft ingevuld of gekozen, ook de standaardwaarden die de bezoeker niet heeft aangepast.
+
+### Vanaf de overzichtsstap kun je niets meer wijzigen
+
+De overzichtsstap laat alles zien, maar er staat geen enkele manier bij om iets aan te passen. Ziet de bezoeker een fout, dan blijft alleen de terugknop van de browser over, of helemaal opnieuw beginnen. Wie het scherm laat voorlezen of sterk vergroot, moet daarvoor het hele formulier nog een keer doorlopen.
+
+**Hoe te testen:** ga naar de overzichtsstap en probeer één gegeven te corrigeren. Kun je vanaf de overzichtsstap naar dat veld en daarna terug?
+
+<Guideline appearance="dont" title="Overzicht zonder wijzigmogelijkheid">
+  ```html
+  <h2>Bezorgadres</h2>
+  <p>Jan de Vries, Lange Voorhout 12, 2514 EA Den Haag</p>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Per onderdeel een link met een beschrijvende linktekst">
+  ```html
+  <h2>Bezorgadres</h2>
+  <p>Jan de Vries, Lange Voorhout 12, 2514 EA Den Haag</p>
+  <a href="/checkout/address?return=summary">Bezorgadres wijzigen</a>
+  ```
+</Guideline>
+
+Gebruik per onderdeel een aparte link en zet in de linktekst waar die heen gaat. Een rij links die allemaal "Wijzig" heten, maakt voor een screenreadergebruiker die de lijst met links opvraagt niet duidelijk welk onderdeel erbij hoort.
+
+**Wie kan dit oplossen:** een developer voegt per blok op de overzichtsstap een wijziglink toe die naar de juiste stap gaat en daarna terugkeert naar de overzichtsstap.
+
+### Verwijderen gebeurt meteen na één klik
+
+Een knop "Verwijderen" bij een document, een afspraak of een account voert de handeling direct uit. Eén verkeerde klik of één verkeerde <kbd>Enter</kbd> is genoeg. Wie de knop met spraakbediening aanstuurt of met een tremor bedient, verliest zo gegevens die niet terugkomen.
+
+**Hoe te testen:** klik op elke verwijderknop in de omgeving. Krijg je een bevestigingsvenster, of kun je de handeling achteraf terugdraaien?
+
+<Guideline appearance="dont" title="Verwijderen zonder bevestiging of herstel">
+  ```html
+  <form action="/documents/delete" method="post">
+    <button type="submit" name="document" value="42">
+      Verwijderen
+    </button>
+  </form>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Verwijderen met een herstelmogelijkheid">
+  ```html
+  <form action="/documents/trash" method="post">
+    <button type="submit" name="document" value="42">
+      Document verwijderen
+    </button>
+  </form>
+  <p role="status">
+    "Jaarverslag 2025" staat in de prullenbak.
+    <a href="/documents/trash">Document terugzetten</a>
+  </p>
+  ```
+</Guideline>
+
+Het tweede voorbeeld laat 2 momenten na elkaar zien: de knop, en de melding die na het verwijderen verschijnt.
+
+**Wie kan dit oplossen:** een developer bouwt een herstelmogelijkheid of een bevestigingsstap in bij elke handeling die gegevens wijzigt of wist.
+
+### Het bevestigingsvenster benoemt niet wat er gebeurt
+
+Er verschijnt wel een bevestigingsvenster, maar er staat alleen "Weet je het zeker?" met de knoppen "OK" en "Annuleren". Wie de vraag laat voorlezen, hoort niet welk item is aangeklikt. En "OK" zegt niet of je nu bevestigt of afbreekt. Wie de pagina sterk vergroot en de knop niet in beeld heeft, mist de context helemaal.
+
+**Hoe te testen:** open het bevestigingsvenster en lees alleen de tekst die erin staat. Weet je daaruit wat er gaat gebeuren en wat elke knop doet?
+
+<Guideline appearance="dont" title="Bevestiging zonder context en met nietszeggende knoptekst">
+  ```html
+  <div role="dialog" aria-modal="true" aria-label="Bevestigen">
+    <p>Weet je het zeker?</p>
+    <button type="button">OK</button>
+    <button type="button">Annuleren</button>
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Bevestiging die benoemt wat er gebeurt en wat elke knop doet">
+  ```html
+  <div role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+    <h2 id="confirm-title">Account van Jan de Vries verwijderen?</h2>
+    <p>Je bestellingen, opgeslagen adressen en facturen worden gewist. Dit kun je niet terugdraaien.</p>
+    <button type="button">Ja, verwijder mijn account</button>
+    <button type="button">Nee, ga terug</button>
+  </div>
+  ```
+</Guideline>
+
+De voorbeelden tonen alleen de inhoud van het venster. Gebruik voor de werking het [Alert Dialog-component](/alert-dialog/): dat regelt ook de focus en de bediening met het toetsenbord.
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur schrijft per bevestiging wat er precies gebeurt en geeft de knoppen een tekst die de handeling benoemt.
+- Een developer koppelt de titel van het venster aan het venster zelf, zodat een screenreader die voorleest bij het openen.
+
+### De deelnemer kan de antwoorden van een toets niet nakijken voor het verzenden
+
+Bij een online toets of examen stuurt de knop "Verzenden" de antwoorden meteen definitief in. De deelnemer kan niet zien welke vragen zijn overgeslagen en kan een antwoord niet meer nalezen. Wie de vragen één voor één laat voorlezen, heeft geen overzicht van het geheel.
+
+**Hoe te testen:** maak een toets en sla één vraag over. Krijg je voor het definitief verzenden een overzicht van je antwoorden, en zie je daarin dat die vraag nog niet beantwoord is?
+
+<Guideline appearance="dont" title="Direct verzenden zonder overzicht">
+  ```html
+  <form action="/exam/submit" method="post">
+    <button type="submit">Toets verzenden</button>
+  </form>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een overzicht met de gegeven antwoorden en de openstaande vragen">
+  ```html
+  <h1>Controleer je antwoorden</h1>
+  <ol>
+    <li>
+      Vraag 1: In welk jaar werd de Grondwet herzien?
+      <strong>Jouw antwoord: 1848</strong>
+      <a href="/exam/question-1">Antwoord op vraag 1 wijzigen</a>
+    </li>
+    <li>
+      Vraag 2: Wie benoemt de burgemeester?
+      <strong>Nog niet beantwoord</strong>
+      <a href="/exam/question-2">Vraag 2 beantwoorden</a>
+    </li>
+  </ol>
+  <form action="/exam/submit" method="post">
+    <button type="submit">Antwoorden definitief verzenden</button>
+  </form>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer bouwt een overzichtsstap voor het verzenden, met per vraag het gegeven antwoord en een link om het te wijzigen.
+
+### De mogelijkheid om te annuleren staat alleen in de algemene voorwaarden
+
+Een aanvraag of een abonnement is achteraf te annuleren, maar dat staat alleen in een apart document achter een link. Op het moment van bevestigen leest de bezoeker niet dat het nog terug te draaien is. Wie twijfelt over een fout in de aanvraag, weet dan niet dat die nog te herstellen valt.
+
+**Hoe te testen:** lees de laatste stap van een aanvraag of abonnement. Staat er bij de bevestigknop binnen welke termijn en op welke manier je kunt annuleren?
+
+<Guideline appearance="dont" title="De annuleertermijn staat alleen in een apart document">
+  ```html
+  <p>
+    Door te bevestigen ga je akkoord met de <a href="/terms">algemene voorwaarden</a>.
+  </p>
+  <button type="submit">Aanvraag bevestigen</button>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De termijn en de manier van annuleren staan bij de knop">
+  ```html
+  <p>
+    Je kunt deze aanvraag tot 14 dagen na bevestiging kosteloos annuleren via{" "}
+    <a href="/account/requests">Mijn aanvragen</a>.
+  </p>
+  <button type="submit">Aanvraag bevestigen</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur zet de annuleertermijn en de manier van annuleren in de tekst bij de bevestigknop.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Doorloop een bestelling, aanvraag of inschrijving tot de knop die de transactie uitvoert. Zit er een stap tussen waarin je nog kunt stoppen, of kun je de transactie achteraf annuleren?
+2. Kijk op die laatste stap of je in leesbare tekst terugziet wat je hebt ingevuld en gekozen. Wijk onderweg bij elke stap af van de standaardkeuze, zodat je kunt zien of ook die keuzes op de overzichtsstap staan.
+3. Zoek op de overzichtsstap een fout op en corrigeer die. Kun je dat zonder helemaal opnieuw te beginnen, en staan de andere gegevens er daarna nog?
+4. Klik op elke knop die gegevens wijzigt of verwijdert. Krijg je een bevestigingsvenster, of kun je de handeling terugdraaien?
+5. Lees de tekst in een bevestigingsvenster. Staat er wat er precies gebeurt en wat elke knop doet?
+6. Kijk of bij een aanvraag of abonnement de annuleertermijn bij de bevestigknop staat en niet alleen in de voorwaarden.
+
+### Voor developers
+
+1. Vergelijk de overzichtsstap met de gegevens die je hebt ingevuld. Staat elk gegeven erop, ook de standaardwaarden die je niet hebt aangepast?
+2. Laat de overzichtsstap voorlezen met een screenreader. Zet NVDA of VoiceOver aan, ga met de pijltoetsen van boven naar beneden door de stap en vraag daarna de lijst met links op. Worden alle gegevens voorgelezen, en maken de linkteksten in die lijst duidelijk welk onderdeel je wijzigt? Deze test doe je het best samen met iemand die dagelijks met een screenreader werkt.
+3. Kijk in de code welke handelingen een transactie uitvoeren of gegevens verwijderen. Heeft elk van die handelingen een herstelmogelijkheid, een controle op fouten of een bevestigingsstap?
+
+Deze punten zijn niet automatisch te controleren met een testtool. Een scan als <span lang="en">axe DevTools</span> vindt wel losse problemen in een bevestigingsvenster, zoals een ontbrekende toegankelijke naam, maar niet of de overzichtsstap er is.
+
+## Gerelateerde succescriteria
+
+- [3.3.1 Foutidentificatie](/wcag/3.3.1/): het formulier meldt welk veld fout is en wat er mis is. Lees hier meer als je de controle op de invoer zelf wilt inrichten.
+- [3.3.2 Labels of instructies](/wcag/3.3.2/): duidelijke labels en instructies voorkomen fouten voordat ze ontstaan. Lees hier meer als bezoekers fouten maken doordat een veld onduidelijk is.
+- [3.3.3 Foutsuggestie](/wcag/3.3.3/): als het systeem weet hoe een fout gecorrigeerd kan worden, biedt het die suggestie aan. Lees hier meer over de teksten van je foutmeldingen.
+- [3.3.6 Foutpreventie (alle)](/wcag/3.3.6/): dezelfde bescherming, maar dan bij elk formulier en niet alleen bij transacties. Lees hier meer als je dit ook wilt bieden bij een contactformulier of een inschrijving.
+- [3.3.7 Overbodige invoer](/wcag/3.3.7/): gegevens die je in hetzelfde proces al hebt ingevuld, hoef je niet nog een keer in te vullen. Lees hier meer als de velden leeg zijn zodra de bezoeker een stap teruggaat.
+- [2.2.1 Timing aanpasbaar](/wcag/2.2.1/): een sessie die verloopt tijdens het invullen wist de ingevulde gegevens. Lees hier meer als het invullen aan een tijdslimiet gebonden is.
+- [3.2.2 Bij input](/wcag/3.2.2/): een formulier wacht op de bezoeker en verstuurt zichzelf niet zodra die een keuze maakt. Lees hier meer als een keuzelijst of checkbox direct een handeling start.
+- [4.1.3 Statusberichten](/wcag/4.1.3/): een melding dat iets is opgeslagen of verwijderd, wordt aan screenreaders doorgegeven. Lees hier meer over de terugkoppeling na een bevestiging.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- [Bied als laatste stap een opsomming aan van alle ingevoerde gegevens](/richtlijnen/formulieren/meerdere-stappen/samenvatting): maak de laatste stap een overzicht van alles wat de bezoeker heeft ingevuld, met een manier om het te wijzigen.
+- [Geef duidelijk aan wanneer het formulier verzonden gaat worden](/richtlijnen/formulieren/meerdere-stappen/verzenden-aangeven): laat de bezoeker weten welke knop de aanvraag definitief verstuurt.
+- [Foutmeldingen in een formulier](/richtlijnen/formulieren/foutmeldingen/): controleer de invoer op fouten en laat de bezoeker die corrigeren, de tweede van de 3 manieren.
+
+## Gerelateerde componenten
+
+- [Form Summary](/form-summary/): toon hiermee op de laatste stap een overzicht van de ingevoerde gegevens.
+- [Data Summary](/data-summary/): zet hiermee per gegeven een label naast de waarde, zodat de bezoeker zijn eigen gegevens terugvindt.
+- [Alert Dialog](/alert-dialog/): vraag hiermee om een bevestiging bij een handeling die de bezoeker niet kan terugdraaien.
+- [Alert](/alert/): meld hiermee dat de handeling is uitgevoerd, met een link om die terug te draaien.
+
+## Relevante bronnen
+
+- [<span lang="en">Check answers pattern</span>](https://design-system.service.gov.uk/patterns/check-answers/): bekijk hoe een overzichtsstap met wijziglinks is opgebouwd, inclusief de opbouw van de linkteksten. Van GOV.UK, Engelstalig.
+- [<span lang="en">Wiki 3.3.4 Error Prevention (Legal, Financial, Data)</span>](https://github.com/alphagov/wcag-primer/wiki/3.3.4): de uitleg van GOV.UK bij dit succescriterium, met testaanwijzingen. Engelstalig.
+- [<span lang="en">Confirmation Dialogs Can Prevent User Errors</span>](https://www.nngroup.com/articles/confirmation-dialog/): lees wanneer een bevestigingsvenster helpt, en wanneer bezoekers het zonder lezen wegklikken. Van Nielsen Norman Group, Engelstalig.
 
 ## Gebruikersonderzoek
 
@@ -53,24 +401,12 @@ Op GOV.UK:
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
-
-Controleer of de gebruiker de mogelijkheid heeft ingevoerde gegevens te bekijken en te wijzigen voordat deze het formulier verzendt.
-
-Als deze optie niet beschikbaar is, controleer dan of het mogelijk is een inzending of transactie terug te draaien of te annuleren.
-
-## W3C referenties
+## W3C-referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.3.4 Error Prevention (Legal, Financial, Data)</span>](https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data).
 - Nederlandse vertaling van het WCAG-succescriterium: [3.3.4 Foutpreventie (wettelijk, financieel, gegevens)](https://www.w3.org/Translations/WCAG22-nl/#error-prevention-legal-financial-data).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.3.4 Error Prevention (Legal, Financial, Data)</span>](https://www.w3.org/WAI/WCAG22/quickref/#error-prevention-legal-financial-data).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 3.3.4:Error Prevention (Legal, Financial, Data)</span>](https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- Engelstalige toelichting: [<span lang="en">Understanding SC 3.3.4 Error Prevention (Legal, Financial, Data)</span>](https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data.html).
 
 ## Help richtlijn verbeteren
 
