@@ -3,7 +3,8 @@
  */
 :root {
   --ams-unordered-list-gap: var(--basis-space-row-lg);
-  --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-xl);
+  --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
+  --ams-unordered-list-list-style-type: disc;
   --rhc-card-inline-size: 100% !important;
   --ma-estafette-badge-border-width: 1px;
   --ma-mobile-menu-max-inline-size: 300px;
@@ -100,7 +101,7 @@
 
 :where(.utrecht-card .utrecht-card__heading .utrecht-link) {
   display: inline-block;
-  min-height: 24px;
+  min-block-size: 24px;
 }
 
 @media (forced-colors: active) {
