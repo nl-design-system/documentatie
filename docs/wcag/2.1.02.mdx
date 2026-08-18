@@ -50,7 +50,7 @@ Werken die toetsen niet, dan is dat voor toetsenbordgebruikers en screenreaderge
 
 ### Dialoogvenster dat je niet met het toetsenbord kunt sluiten
 
-Een dialoogvenster of popup opent bovenop de pagina, bijvoorbeeld een bevestiging, een detailvenster of een zoekresultaat. Je komt er met <kbd>Tab</kbd> naartoe, maar je verlaat het niet meer: <kbd>Escape</kbd> sluit het venster niet en de sluitknop ontbreekt of kan geen focus krijgen. De focus blijft in het venster en je komt niet terug op de pagina eronder.
+Een dialoogvenster of popup opent bovenop de pagina, bijvoorbeeld een bevestiging of een detailvenster. Je komt er met <kbd>Tab</kbd> naartoe, maar je verlaat het niet meer: <kbd>Escape</kbd> sluit het venster niet en de sluitknop ontbreekt of kan geen focus krijgen. De focus blijft in het venster en je komt niet terug op de pagina eronder.
 
 **Hoe te testen:** open het venster met het toetsenbord en probeer het te sluiten met <kbd>Escape</kbd>. Lukt dat niet, druk dan door op <kbd>Tab</kbd>. Kom je uit het venster, of blijft de focus erin?
 
@@ -136,7 +136,10 @@ Een cookiemelding, nieuwsbriefvenster of andere overlay verschijnt over de pagin
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** komt de melding uit een externe tool, dan controleert een webredacteur in de instellingen van die tool of de knoppen met het toetsenbord werken, en meldt het bij de leverancier als dat niet zo is. Is de melding zelf gebouwd, dan vervangt een developer de klikbare `<span>`-elementen door `<button>`-elementen die focus kunnen krijgen.
+**Wie kan dit oplossen:**
+
+- Een webredacteur controleert in de instellingen van de externe tool of de knoppen met het toetsenbord werken, en meldt het bij de leverancier als dat niet zo is.
+- Een developer vervangt de klikbare `<span>`-elementen door `<button>`-elementen die focus kunnen krijgen.
 
 ### Ingesloten kaart of widget waar je niet voorbij komt
 
@@ -161,7 +164,11 @@ Aan de code op je eigen pagina is niet te zien of de widget de focus teruggeeft.
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentmaker biedt dezelfde informatie ook buiten de widget aan, bijvoorbeeld als lijst of tabel, zodat niemand de widget nodig heeft. Een developer test de widget met het toetsenbord voordat die live gaat en kiest een versie waar de focus weer uit komt. Werkt geen van beide, meld het probleem dan bij de leverancier van de widget.
+**Wie kan dit oplossen:**
+
+- Een contentmaker biedt dezelfde informatie ook buiten de widget aan, bijvoorbeeld als lijst of tabel, zodat niemand de widget nodig heeft.
+- Een developer test de widget met het toetsenbord voordat die live gaat en kiest een versie waar de focus weer uit komt.
+- Lukt geen van beide, meld het probleem dan bij de leverancier van de widget.
 
 ### Video in een popup die je niet kunt stoppen of sluiten
 
@@ -192,7 +199,10 @@ Zonder `controls` en zonder sluitknop is er in het foute voorbeeld niets in de p
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een webredacteur zet automatisch afspelen uit in de instellingen van de videospeler of het CMS, zodat de bezoeker zelf start. Een developer zet de video in een `<dialog>` met bedieningsknoppen die focus kunnen krijgen, laat <kbd>Escape</kbd> de popup sluiten en de video stoppen, en zet de focus daarna terug op de knop waarmee de video is geopend.
+**Wie kan dit oplossen:**
+
+- Een webredacteur zet automatisch afspelen uit in de instellingen van de videospeler of het contentmanagementsysteem, zodat de bezoeker zelf start.
+- Een developer zet de video in een `<dialog>` met bedieningsknoppen die focus kunnen krijgen, laat <kbd>Escape</kbd> de popup sluiten en de video stoppen, en zet de focus daarna terug op de knop waarmee de video is geopend.
 
 ### Tekstverwerker die je niet met de Tab-toets kunt verlaten
 
@@ -293,7 +303,11 @@ Een `readonly`-veld dat alleen op een klik reageert, opent de kalender niet voor
     ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer gebruikt `<input type="date">` of de [Date Picker-component](/date-picker/) in plaats van zelf een kalender te bouwen. Bouw je hem toch zelf, laat <kbd>Escape</kbd> dan het onderdeel sluiten en de focus teruggeven aan het invoerveld, en onderschep <kbd>Tab</kbd> niet. Volg voor een keuzelijst het [combobox-patroon uit de <span lang="en">WAI-ARIA Authoring Practices</span>](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/).
+**Wie kan dit oplossen:**
+
+- Een developer gebruikt `<input type="date">` of de [Date Picker-component](/date-picker/) in plaats van zelf een kalender te bouwen.
+- Bouwt een developer de kalender toch zelf, dan sluit <kbd>Escape</kbd> het onderdeel en gaat de focus terug naar het invoerveld, en wordt <kbd>Tab</kbd> niet onderschept.
+- Volg voor een keuzelijst het [combobox-patroon uit de <span lang="en">WAI-ARIA Authoring Practices</span>](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/).
 
 ## Hoe te testen
 
