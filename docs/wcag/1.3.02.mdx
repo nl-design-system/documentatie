@@ -56,8 +56,8 @@ Alle inhoud die onder een kop staat, hoort bij die kop. Bezoekers die een screen
 <Guideline appearance="dont" title="Datum en categorie staan boven de kop">
   ```html
   <article>
-    <span class="datum">15 maart 2026</span>
-    <span class="categorie">Workshops</span>
+    <span class="example-date">15 maart 2026</span>
+    <span class="example-category">Workshops</span>
     <h3>Toegankelijkheid voor developers</h3>
     <p>Leer hoe je toegankelijke componenten bouwt.</p>
   </article>
@@ -68,8 +68,8 @@ Alle inhoud die onder een kop staat, hoort bij die kop. Bezoekers die een screen
   ```html
   <article>
     <h3>Toegankelijkheid voor developers</h3>
-    <span class="datum">15 maart 2026</span>
-    <span class="categorie">Workshops</span>
+    <span class="example-date">15 maart 2026</span>
+    <span class="example-category">Workshops</span>
     <p>Leer hoe je toegankelijke componenten bouwt.</p>
   </article>
   ```
@@ -85,7 +85,7 @@ Een pagina met twee kolommen groepeert de afbeelding en de beschrijving per kolo
 
 <Guideline appearance="dont" title="Alle afbeeldingen eerst, dan alle beschrijvingen">
   ```html
-  <div class="kolommen">
+  <div class="example-columns">
     <img src="project-a.jpg" alt="Screenshot van Project A" />
     <img src="project-b.jpg" alt="Screenshot van Project B" />
     <p>Project A is een webapplicatie voor gemeenten.</p>
@@ -96,12 +96,12 @@ Een pagina met twee kolommen groepeert de afbeelding en de beschrijving per kolo
 
 <Guideline appearance="do" title="Afbeelding en beschrijving bij elkaar">
   ```html
-  <div class="kolommen">
-    <div class="kolom">
+  <div class="example-columns">
+    <div class="example-column">
       <img src="project-a.jpg" alt="Screenshot van Project A" />
       <p>Project A is een webapplicatie voor gemeenten.</p>
     </div>
-    <div class="kolom">
+    <div class="example-column">
       <img src="project-b.jpg" alt="Screenshot van Project B" />
       <p>Project B is een designsysteem voor de overheid.</p>
     </div>
@@ -119,7 +119,7 @@ Met CSS Grid en Flexbox kun je elementen visueel herschikken zonder de HTML aan 
 
 <Guideline appearance="dont" title="HTML-volgorde wijkt af door CSS order">
   ```html
-  <div class="stappen">
+  <div class="example-steps">
     <div style="order: 2;">Stap 2: Kies een template</div>
     <div style="order: 3;">Stap 3: Publiceer</div>
     <div style="order: 1;">Stap 1: Maak een account</div>
@@ -131,7 +131,7 @@ Een screenreader leest hier: "Stap 2", "Stap 3", "Stap 1".
 
 <Guideline appearance="do" title="HTML-volgorde komt overeen met de betekenisvolle volgorde">
   ```html
-  <div class="stappen">
+  <div class="example-steps">
     <div>Stap 1: Maak een account</div>
     <div>Stap 2: Kies een template</div>
     <div>Stap 3: Publiceer</div>
@@ -150,18 +150,22 @@ Een tabel koppelt gegevens aan elkaar: een dag aan een openingstijd, een naam aa
 <Guideline appearance="do" title="Correcte tabel behoudt de koppeling tussen gegevens">
   ```html
   <table>
-    <tr>
-      <th>Dag</th>
-      <th>Openingstijden</th>
-    </tr>
-    <tr>
-      <td>Maandag</td>
-      <td>09:00 - 17:00</td>
-    </tr>
-    <tr>
-      <td>Dinsdag</td>
-      <td>09:00 - 17:00</td>
-    </tr>
+    <thead>
+      <tr>
+        <th scope="col">Dag</th>
+        <th scope="col">Openingstijden</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maandag</td>
+        <td>09:00 tot 17:00</td>
+      </tr>
+      <tr>
+        <td>Dinsdag</td>
+        <td>09:00 tot 17:00</td>
+      </tr>
+    </tbody>
   </table>
   ```
 </Guideline>
@@ -176,18 +180,18 @@ De inhoud van een carrousel is belangrijk voor de bezoeker. Staan de vorige- en 
 
 <Guideline appearance="dont" title="Knoppen staan voor de content">
   ```html
-  <div class="carrousel">
+  <div class="example-carousel">
     <button>Vorige</button>
     <button>Volgende</button>
-    <div class="slide">Slide 1: Onze diensten</div>
+    <div class="example-slide">Slide 1: Onze diensten</div>
   </div>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Content eerst, dan de knoppen">
   ```html
-  <div class="carrousel">
-    <div class="slide">Slide 1: Onze diensten</div>
+  <div class="example-carousel">
+    <div class="example-slide">Slide 1: Onze diensten</div>
     <button>Vorige</button>
     <button>Volgende</button>
   </div>
@@ -212,13 +216,13 @@ Content die verschijnt na interactie staat direct na het element dat de content 
 
 <Guideline appearance="do" title="Accordion met content direct na de knop">
   ```html
-  <div class="accordion">
+  <div class="example-accordion">
     <h3>
-      <button aria-expanded="true" aria-controls="paneel-1">
+      <button aria-expanded="true" aria-controls="panel-1">
         Veelgestelde vragen
       </button>
     </h3>
-    <div id="paneel-1">
+    <div id="panel-1">
       <p>Hier staat het antwoord dat direct na de knop wordt voorgelezen.</p>
     </div>
   </div>
@@ -256,16 +260,30 @@ Een mobiel menu dat visueel verborgen is, is ook verborgen voor screenreaders. V
 
 <Guideline appearance="dont" title="Menu verborgen met alleen opacity">
   ```html
-  <nav class="mobiel-menu" style="opacity: 0; position: absolute; left: -9999px;">
-    <!-- screenreader vindt dit alsnog -->
+  <nav class="example-mobile-menu" style="opacity: 0; position: absolute; left: -9999px;" aria-label="Hoofdmenu">
+    <ul>
+      <li>
+        <a href="/services">Diensten</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
   </nav>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="display: none verbergt het voor iedereen">
   ```html
-  <nav class="mobiel-menu" style="display: none;">
-    <!-- ... -->
+  <nav class="example-mobile-menu" style="display: none;" aria-label="Hoofdmenu">
+    <ul>
+      <li>
+        <a href="/services">Diensten</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
   </nav>
   ```
 </Guideline>
