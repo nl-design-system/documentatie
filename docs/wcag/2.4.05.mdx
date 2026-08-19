@@ -67,10 +67,10 @@ De enige manier om een pagina te vinden is via de hoofdnavigatie. Er is geen zoe
     <nav aria-label="Hoofdmenu">
       <ul>
         <li>
-          <a href="/diensten">Diensten</a>
+          <a href="/services">Diensten</a>
         </li>
         <li>
-          <a href="/over-ons">Over ons</a>
+          <a href="/about">Over ons</a>
         </li>
         <li>
           <a href="/contact">Contact</a>
@@ -87,19 +87,19 @@ De enige manier om een pagina te vinden is via de hoofdnavigatie. Er is geen zoe
     <nav aria-label="Hoofdmenu">
       <ul>
         <li>
-          <a href="/diensten">Diensten</a>
+          <a href="/services">Diensten</a>
         </li>
         <li>
-          <a href="/over-ons">Over ons</a>
+          <a href="/about">Over ons</a>
         </li>
         <li>
           <a href="/contact">Contact</a>
         </li>
       </ul>
     </nav>
-    <form role="search" action="/zoeken">
-      <label for="zoekveld">Zoeken</label>
-      <input type="search" id="zoekveld" name="q" />
+    <form role="search" action="/search">
+      <label for="site-search">Zoeken</label>
+      <input type="search" id="site-search" name="q" />
       <button type="submit">Zoek</button>
     </form>
   </header>
@@ -115,31 +115,29 @@ Het zoekveld is wel aanwezig, maar alleen op de homepage. Bezoekers die op een a
 **Hoe te testen:** open een willekeurige detailpagina, bijvoorbeeld een blogartikel of productpagina. Controleer of het zoekveld ook daar in beeld is.
 
 <Guideline appearance="dont" title="Zoekveld alleen in de homepage-template">
-    ```html
-    <!-- homepage.html -->
-    <main>
-      <h1>Welkom</h1>
-      <form role="search" action="/zoeken">
-        <label for="zoek">Zoeken op de site</label>
-        <input type="search" id="zoek" name="q" />
-        <button type="submit">Zoek</button>
-      </form>
-    </main>
-    ```
+  ```html
+  <main>
+    <h1>Welkom</h1>
+    <form role="search" action="/search">
+      <label for="site-search">Zoeken op de site</label>
+      <input type="search" id="site-search" name="q" />
+      <button type="submit">Zoek</button>
+    </form>
+  </main>
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Zoekveld in de gedeelde header op elke pagina">
-    ```html
-    <!-- header.html (gedeeld over alle pagina's) -->
-    <header>
-      <a href="/">Naar de homepage</a>
-      <form role="search" action="/zoeken">
-        <label for="zoek">Zoeken op de site</label>
-        <input type="search" id="zoek" name="q" />
-        <button type="submit">Zoek</button>
-      </form>
-    </header>
-    ```
+  ```html
+  <header>
+    <a href="/">Naar de homepage</a>
+    <form role="search" action="/search">
+      <label for="site-search">Zoeken op de site</label>
+      <input type="search" id="site-search" name="q" />
+      <button type="submit">Zoek</button>
+    </form>
+  </header>
+  ```
 </Guideline>
 
 **Wie kan dit oplossen:**
@@ -153,26 +151,46 @@ Een sitemap die handmatig wordt bijgehouden, raakt makkelijk verouderd. Recente 
 
 **Hoe te testen:** vergelijk het aantal pagina's in de sitemap met het aantal pagina's in het CMS of de inhoudsstructuur. Klik daarna een aantal willekeurige links aan en controleer of ze nog werken.
 
+De sitemap hieronder wordt met de hand bijgehouden en is jaren niet bijgewerkt. Pagina's van na die laatste keer staan er niet in, en het product dat inmiddels weg is staat er nog wel: die link is kapot.
+
 <Guideline appearance="dont" title="Handmatig bijgehouden sitemap die achterloopt">
-    ```html
-    <!-- sitemap.html, voor het laatst bijgewerkt in 2022 -->
-    <ul>
-      <li><a href="/diensten">Diensten</a></li>
-      <li><a href="/diensten/oud-product">Oud product (kapotte link)</a></li>
-      <!-- nieuwe pagina's uit 2024 en 2025 ontbreken -->
-    </ul>
-    ```
+  ```html
+  <ul>
+    <li>
+      <a href="/services">Diensten</a>
+    </li>
+    <li>
+      <a href="/services/old-product">Warmtepomp Comfort</a>
+    </li>
+    <li>
+      <a href="/contact">Contact</a>
+    </li>
+  </ul>
+  ```
 </Guideline>
 
-<Guideline appearance="do" title="Sitemap die automatisch uit het CMS wordt gegenereerd">
-    ```html
-    <!-- sitemap wordt bij elke deploy opnieuw opgebouwd uit het CMS -->
-    <ul>
-      {pages.map((page) => (
-        <li><a href={page.url}>{page.title}</a></li>
-      ))}
-    </ul>
-    ```
+De sitemap hieronder wordt bij elke publicatie opnieuw opgebouwd uit de pagina's in het CMS.
+
+<Guideline appearance="do" title="Sitemap die automatisch uit het CMS wordt gemaakt">
+  ```html
+  <ul>
+    <li>
+      <a href="/services">Diensten</a>
+    </li>
+    <li>
+      <a href="/services/heat-pumps">Warmtepompen</a>
+    </li>
+    <li>
+      <a href="/services/insulation">Isolatie</a>
+    </li>
+    <li>
+      <a href="/news/annual-report-2026">Jaarverslag 2026</a>
+    </li>
+    <li>
+      <a href="/contact">Contact</a>
+    </li>
+  </ul>
+  ```
 </Guideline>
 
 **Wie kan dit oplossen:** een developer zorgt dat de sitemap automatisch wordt gemaakt, zodat nieuwe pagina's vanzelf verschijnen en er geen kapotte links zijn.
@@ -185,9 +203,9 @@ Naast het hoofdmenu biedt de site een zoekveld aan, als tweede manier om pagina'
 
 <Guideline appearance="dont" title="Zoekveld dat maar een deel van de site doorzoekt">
   ```html
-  <form role="search" action="/nieuws/zoeken">
-    <label for="zoek">Zoek in het nieuws</label>
-    <input type="search" id="zoek" name="q" />
+  <form role="search" action="/news/search">
+    <label for="news-search">Zoek in het nieuws</label>
+    <input type="search" id="news-search" name="q" />
     <button type="submit">Zoek</button>
   </form>
   ```
@@ -195,9 +213,9 @@ Naast het hoofdmenu biedt de site een zoekveld aan, als tweede manier om pagina'
 
 <Guideline appearance="do" title="Zoekfunctie die de hele site doorzoekt">
   ```html
-  <form role="search" action="/zoeken">
-    <label for="zoek">Zoek op de hele site</label>
-    <input type="search" id="zoek" name="q" />
+  <form role="search" action="/search">
+    <label for="site-search">Zoek op de hele site</label>
+    <input type="search" id="site-search" name="q" />
     <button type="submit">Zoek</button>
   </form>
   ```
@@ -211,28 +229,32 @@ De sitemap bestaat wel, maar de link ernaartoe staat ergens diep weggestopt of a
 
 **Hoe te testen:** open een willekeurige pagina op de site en zoek naar een link met de tekst "Sitemap" of "Overzicht". Staat die op een voorspelbare plek zoals de footer?
 
-<Guideline appearance="dont" title="Sitemap-link alleen op één losse pagina">
-    ```html
-    <!-- Alleen op de contactpagina, niet op andere pagina's -->
-    <p>Zie ook onze <a href="/sitemap">sitemap</a> voor een overzicht.</p>
-    ```
+<Guideline appearance="dont" title="Sitemap-link alleen op de contactpagina">
+  ```html
+  <p>
+    Zie ook onze <a href="/sitemap">sitemap</a> voor een overzicht.
+  </p>
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Sitemap-link in de footer op elke pagina">
-    ```html
-    <!-- footer.html (gedeeld over alle pagina's) -->
-    <footer>
-      <nav aria-label="Footernavigatie">
-        <ul>
-          <li><a href="/sitemap">Sitemap</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li>
-            <a href="/toegankelijkheidsverklaring">Toegankelijkheidsverklaring</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-    ```
+  ```html
+  <footer>
+    <nav aria-label="Footernavigatie">
+      <ul>
+        <li>
+          <a href="/sitemap">Sitemap</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+        <li>
+          <a href="/accessibility-statement">Toegankelijkheidsverklaring</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  ```
 </Guideline>
 
 **Wie kan dit oplossen:** een developer plaatst de link naar de sitemap in de footer of een andere gedeelde sectie, zodat de link op elke pagina aanwezig is.
