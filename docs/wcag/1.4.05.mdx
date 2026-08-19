@@ -5,28 +5,34 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.5 Afbeeldingen van tekst
 pagination_label: WCAG-succescriterium 1.4.5 Afbeeldingen van tekst
-description: Laat tekst buiten afbeeldingen.
+description: Tekst staat als echte tekst in de pagina, niet als afbeelding. Zo kunnen bezoekers de tekst vergroten, andere kleuren kiezen, laten voorlezen en doorzoeken.
 slug: 1.4.5
 conformance_level: Niveau AA
 keywords:
   - WCAG
-  - AA
+  - Niveau AA
   - waarneembaar
   - onderscheidbaar
   - perceivable
   - distinguishable
   - images of text
+  - afbeeldingen van tekst
+  - tekst in afbeelding
+  - SVG-tekst
+  - hero-banner
+  - alt-tekst
+  - logo
+  - WCAG 1.4.5
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
-
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
-import Summary from "./summaries/_1.4.5-summary.md";
+import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
+import WCAGFooterInfo from "./\_wcag_footer_info.md";
+import Summary from "./summaries/\_1.4.5-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
   {"WCAG-succescriterium 1.4.5 Afbeeldingen van tekst"}
@@ -36,17 +42,276 @@ import Summary from "./summaries/_1.4.5-summary.md";
 
 <Summary />
 
+Bezoekers kunnen tekst alleen vergroten, andere kleuren kiezen, doorzoeken, laten voorlezen of laten vertalen als het echte tekst is. Echte tekst blijft ook scherp bij elke zoomstand. Gebruik daarom geen afbeeldingen van tekst, behalve voor logo's en in zeldzame gevallen. Dat laatste geldt als de bezoeker de afbeelding zelf kan aanpassen, zoals lettergrootte, kleur en achtergrond, of als de exacte presentatie van de tekst essentieel is.
+
+Met "afbeelding van tekst" bedoelen we tekst die als pixels in een afbeelding staat: een JPG, PNG, GIF of een afbeelding in een ander bitmap-formaat. SVG met `<text>`-elementen telt niet als afbeelding van tekst, want die tekst is echte tekst en schaalt mee.
+
+De uitzondering "essentieel" geldt maar zelden. Een specifieke presentatie is essentieel als de tekst alleen iets betekent in die vorm: een voorbeeld van een handschrift, een screenshot waarmee je iets uitlegt, een citaat uit een historisch document. Een banner waarin de marketingafdeling een mooi lettertype wilde gebruiken, valt daar niet onder.
+
+Vuistregel: als je hetzelfde visuele effect met echte tekst kunt bereiken, doe dat dan. Een afbeelding van tekst is pas verantwoord in drie situaties. De eerste: het visuele effect is met opmaak niet te maken. De tweede: het effect kan wel, maar wordt niet betrouwbaar weergegeven in de browsers en hulpsoftware die bezoekers gebruiken. De derde: een techniek die dit criterium oplost zou een ander criterium breken, bijvoorbeeld als de tekst daardoor niet meer tot 2 keer zo groot kan worden zoals [1.4.4 Herschalen van tekst](/wcag/1.4.4/) eist. Buiten die drie gevallen is echte tekst de juiste keuze.
+
+Logo's en merknamen vallen onder een aparte uitzondering. Een logo is per definitie essentieel: het is de visuele identiteit van een merk. Je hoeft het logo dus niet als HTML-tekst op te bouwen, zelfs niet als de merknaam erin staat.
+
+Voor grafieken, screenshots en diagrammen dragen de lijnen, kleuren, vormen en posities net zoveel betekenis over als de woorden. Zo'n afbeelding hoef je niet om te bouwen naar HTML-tekst om aan dit criterium te voldoen. Wel moet je de informatie via [1.1.1 Niet-tekstuele content](/wcag/1.1.1/) op een andere manier beschikbaar maken, bijvoorbeeld met een uitgebreide beschrijving of een datatabel.
+
+## Veelgemaakte fouten
+
+### Hero-banner met de hoofdboodschap als afbeelding
+
+De homepage opent met een grote banner. De titel en subtitel staan in een PNG met een opvallend lettertype. De bezoeker kan de tekst niet vergroten, niet selecteren en niet vertalen via een browservertaling. Bij browserzoom wordt de tekst korrelig.
+
+**Hoe te testen:** klik en sleep over de tekst in de banner. Kun je de woorden selecteren? Zo niet, dan is het waarschijnlijk een afbeelding. Inspecteer in de <span lang="en">DevTools</span> of het element een `<img>` of een `background-image` is.
+
+<Guideline appearance="dont" title="Hero-banner met tekst in een afbeelding">
+  ```html
+  <section class="hero">
+    <img src="/images/hero-welkom.png" alt="Welkom bij onze dienstverlening. Vraag direct een offerte aan." />
+  </section>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Hero-banner met echte tekst en een achtergrondafbeelding">
+    ```html
+    <section class="hero">
+      <h1>Welkom bij onze dienstverlening</h1>
+      <p>Vraag direct een offerte aan.</p>
+      <a href="/offerte" class="knop">Offerte aanvragen</a>
+    </section>
+    ```
+
+    ```css
+    .hero {
+      background-image: url("/images/hero-achtergrond.jpg");
+      background-size: cover;
+      padding: 4rem 2rem;
+      color: white;
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een designer levert het ontwerp aan met aparte tekstlagen en een aparte achtergrondafbeelding. Een developer bouwt de banner met echte HTML-tekst over een achtergrondafbeelding.
+
+### Knoppen ontworpen als afbeelding
+
+De ontwerper heeft een knop met een speciaal lettertype en een gradient gemaakt. Om het uiterlijk exact te behouden, exporteert de developer de knop als afbeelding. De tekst op de knop schaalt niet mee met de browserinstelling, kan niet vertaald worden en wordt minder scherp bij browserzoom.
+
+**Hoe te testen:** zet de tekstgrootte in de browser op 200%. Wordt de tekst op de knop groter? Probeer de tekst op de knop te selecteren. Lukt het niet? Dan is het waarschijnlijk een afbeelding van tekst.
+
+<Guideline appearance="dont" title="Knop als afbeelding">
+  ```html
+  <a href="/aanmelden">
+    <img src="/images/knop-aanmelden.png" alt="Aanmelden" />
+  </a>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Knop met echte tekst en CSS-styling">
+    ```html
+    <a href="/aanmelden" class="knop-primair">Aanmelden</a>
+    ```
+
+    ```css
+    .knop-primair {
+      display: inline-block;
+      padding: 0.75em 1.5em;
+      background: linear-gradient(135deg, #004050, #1F2937);
+      color: white;
+      font-weight: 600;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de afbeelding door een knop of link met echte tekst en bouwt de styling na in CSS.
+
+### Citaat in een speciaal lettertype als afbeelding
+
+Een artikel bevat een groot uitgelicht citaat in een handgeschreven lettertype. De redactie exporteert het citaat als afbeelding. De tekst in het citaat staat niet in de HTML en is dus niet aan te passen aan de behoeften van de bezoeker.
+
+**Hoe te testen:** zoek met <kbd>Ctrl</kbd> + <kbd>F</kbd> (of <kbd>Cmd</kbd> + <kbd>F</kbd>) naar een woord uit het citaat. Wordt het gevonden in de tekst van de pagina? Zo niet, dan staat het citaat als afbeelding op de pagina.
+
+<Guideline appearance="dont" title="Citaat als afbeelding">
+  ```html
+  <figure>
+    <img src="/images/citaat-jansen.png" alt="Toegankelijkheid is geen extra, het is de basis." />
+    <figcaption>Jansen, designer</figcaption>
+  </figure>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Citaat als echte tekst met een webfont">
+    ```html
+    <figure class="citaat">
+      <blockquote>
+        <p>Toegankelijkheid is geen extra, het is de basis.</p>
+      </blockquote>
+      <figcaption>Jansen, designer</figcaption>
+    </figure>
+    ```
+
+    ```css
+    .citaat blockquote p {
+      font-family: "Caveat", cursive;
+      font-size: 2rem;
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer laadt het lettertype als webfont (bijvoorbeeld via Google Fonts) en gebruikt echte tekst voor het citaat.
+
+### Tabel als screenshot in plaats van een echte tabel
+
+Een rapport bevat een vergelijkingstabel uit Excel. De auteur kopieert de tabel als afbeelding naar de webpagina. De waarden in de tabel zijn niet doorzoekbaar, niet vergrotbaar zonder kwaliteitsverlies en niet door een screenreader voor te lezen als tabel.
+
+**Hoe te testen:** klik op een cel in de tabel. Selecteert hij alleen de cel of de hele afbeelding? Vergroot de pagina tot 200%. Blijven de getallen scherp leesbaar?
+
+<Guideline appearance="dont" title="Tabel als screenshot">
+  ```html
+  <img src="/images/vergelijkingstabel.png" alt="Vergelijkingstabel pakketten" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Tabel als echte HTML-tabel">
+  ```html
+  <table>
+    <caption>Vergelijking van pakketten</caption>
+    <thead>
+      <tr>
+        <th>Functie</th>
+        <th>Basis</th>
+        <th>Plus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Gebruikers</th>
+        <td>5</td>
+        <td>Onbeperkt</td>
+      </tr>
+    </tbody>
+  </table>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker plaatst de tabel als HTML-tabel. Een developer zorgt voor de juiste tabelstructuur met `<th>` en `<caption>`.
+
+### Koppen of sectie-titels als bitmap-afbeelding
+
+Een designer wil een kop in een speciaal lettertype, een gradient en een schaduw. Om het uiterlijk exact te behouden, exporteert hij de kop als PNG. De bezoeker kan de tekst niet selecteren, niet vergroten via de browserinstelling en niet laten vertalen. Een screenreader leest alleen de alt-tekst voor, niet de kop als koprol.
+
+**Hoe te testen:** inspecteer de kop in de <span lang="en">DevTools</span>. Staat er een `<h1>`, `<h2>` of `<h3>` met echte tekst, of een `<img>`? Zoek met <kbd>Ctrl</kbd> + <kbd>F</kbd> naar een woord uit de kop. Wordt het gevonden?
+
+<Guideline appearance="dont" title="Kop als PNG">
+  ```html
+  <img src="/images/kop-onze-aanpak.png" alt="Onze aanpak" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Kop als echte HTML met CSS-styling">
+    ```html
+    <h2 class="kop-uitgelicht">Onze aanpak</h2>
+    ```
+
+    ```css
+    .kop-uitgelicht {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #A30D4B, #004050);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    ```
+
+</Guideline>
+
+Met CSS kun je vrijwel elk visueel effect bereiken: gradients, schaduwen, kleurverlopen, custom letterspacing. Een afbeelding is niet nodig.
+
+**Wie kan dit oplossen:** een designer en developer bouwen het effect na in CSS. Het lettertype wordt als webfont geladen.
+
+### Navigatie-items als afbeelding voor een vast uiterlijk
+
+Een hoofdmenu heeft items met een uniek lettertype, een specifieke kleur en een hover-effect. De developer levert elk menu-item als losse PNG met een eigen "hover"-versie. De tekst in het menu is niet selecteerbaar, schaalt niet mee met de browserinstelling en wordt niet vertaald door een browservertaling.
+
+**Hoe te testen:** klik en sleep over een menu-item. Kun je de tekst selecteren? Vergroot de tekstgrootte in de browser tot 200%. Groeit het menu mee? Zo niet, dan zijn het waarschijnlijk afbeeldingen.
+
+<Guideline appearance="dont" title="Menu met afbeeldingen voor elk item">
+  ```html
+  <nav>
+    <a href="/diensten">
+      <img src="/images/menu-diensten.png" alt="Diensten" />
+    </a>
+    <a href="/over">
+      <img src="/images/menu-over.png" alt="Over ons" />
+    </a>
+    <a href="/contact">
+      <img src="/images/menu-contact.png" alt="Contact" />
+    </a>
+  </nav>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Menu met echte tekst en CSS-styling">
+    ```html
+    <nav>
+      <a href="/diensten">Diensten</a>
+      <a href="/over">Over ons</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    ```
+
+    ```css
+    nav a {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 700;
+      padding: 0.5em 1em;
+      color: #1F2937;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: #A30D4B;
+    }
+    ```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de menu-afbeeldingen door links met echte tekst en bouwt het uiterlijk en de hover- en focus-states na in CSS.
+
 ## Hoe te testen
 
-- Controleer voor alle tekst dat deze niet (alleen) in een afbeelding zit. Losse tekst herken je aan:
-  - Vaak kan losse tekst geselecteerd worden. Tekst in afbeeldingen kun je niet selecteren. Een afbeelding kun je mogelijk wel slepen.
-  - Losse tekst is terug te vinden in de HTML-code. Tekst in een afbeelding is daar niet te vinden.
-  - Losse tekst kan aangepast worden met een vertaaltool, met eigen CSS of met instellingen van je computer of browser. Tekst in een afbeelding is niet aan te passen.
+### Voor iedereen
 
-## Tips
+1. Klik en sleep over tekst op de pagina. Kun je de woorden selecteren? Als je een vierkant selecteert in plaats van losse woorden, is het waarschijnlijk een afbeelding.
+2. Zoek met <kbd>Ctrl</kbd> + <kbd>F</kbd> (of <kbd>Cmd</kbd> + <kbd>F</kbd>) naar een woord dat je op de pagina ziet. Wordt het gevonden? Zo niet, dan staat het mogelijk in een afbeelding.
+3. Zet browserzoom op 400%. Wordt tekst korrelig of pixelig? Echte tekst blijft scherp.
 
-- Als de tekst in een afbeelding zit maar toch aangepast kan worden hoe deze eruit ziet, dan voldoet het ook.
-- Dit succescriterium klinkt mogelijk strenger dan het is. Het geldt niet voor afbeeldingen waar tekst niet het hoofdonderwerp is zoals screenshots, grafieken en foto's van objecten met tekst.
+### Voor developers
+
+1. Inspecteer banners, koppen, knoppen en menu-items in de <span lang="en">DevTools</span>. Zoek naar `<img>`-elementen of `background-image` met tekst erin.
+2. Open elke afbeelding op de pagina en controleer of er tekst in staat die ook in de HTML hoort.
+3. Controleer of speciale lettertypes als webfont worden geladen in plaats van als afbeelding worden geëxporteerd.
+4. Schakel afbeeldingen uit, via de browserinstellingen of via de <span lang="en">DevTools</span>. Welke teksten verdwijnen? Die staan in afbeeldingen. Controleer of die informatie elders op de pagina als tekst beschikbaar is.
+5. Geautomatiseerde tools herkennen dit criterium maar beperkt. Een handmatige check blijft nodig, vooral op banners, koppen, navigatie en uitgelichte secties.
+
+## Gerelateerde succescriteria
+
+- [1.1.1 Niet-tekstuele content](/wcag/1.1.1/): elke afbeelding heeft een tekstalternatief nodig. Als je tóch een afbeelding van tekst gebruikt (bijvoorbeeld een logo), zorg dan voor een correcte alt-tekst.
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): echte tekst moet 2 keer zo groot ingesteld kunnen worden. Afbeeldingen van tekst voldoen daar niet aan, omdat ze korrelig worden bij vergroting.
+- [1.4.10 Reflow](/wcag/1.4.10/): bij 4 keer zo groot moet de layout zich aanpassen. Brede afbeeldingen van tekst dwingen tot horizontaal scrollen en breken reflow.
+- [1.4.9 Afbeeldingen van tekst (geen uitzondering)](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception.html): de strengere variant op AAA-niveau. Daar geldt de uitzondering "essentieel" alleen voor logo's, niet voor presentatie.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 1.4.5 Afbeeldingen van tekst](https://www.w3.org/Translations/WCAG22-nl/#afbeeldingen-van-tekst): de officiële Nederlandstalige vertaling. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding 1.4.5 Images of Text](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html): de toelichting van het W3C, met technieken en voorbeelden (Engels).
+- [NL Design System: Tekst in een afbeelding](/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/): de contentrichtlijn van NL Design System over wanneer je tekst wel en niet in een afbeelding zet.
 
 ## Gebruikersonderzoek
 
@@ -54,16 +319,10 @@ import Summary from "./summaries/_1.4.5-summary.md";
 
 ## W3C referenties
 
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.4.5 Images of Text</span>](https://www.w3.org/TR/WCAG22/#resize-text).
-- Nederlandse vertaling van het WCAG-succescriterium: [1.4.5 Afbeeldingen van tekst](https://www.w3.org/Translations/WCAG22-nl/#resize-text).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.5 Images of Text</span>](https://www.w3.org/WAI/WCAG22/quickref/#resize-text).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.5 Images of Text</span>](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.4.5 Images of Text</span>](https://www.w3.org/TR/WCAG22/#images-of-text).
+- Nederlandse vertaling van het WCAG-succescriterium: [1.4.5 Afbeeldingen van tekst](https://www.w3.org/Translations/WCAG22-nl/#afbeeldingen-van-tekst).
+- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.5 Images of Text</span>](https://www.w3.org/WAI/WCAG22/quickref/#images-of-text).
+- Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.5 Images of Text</span>](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html).
 
 ## Help richtlijn verbeteren
 
