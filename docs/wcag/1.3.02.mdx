@@ -120,23 +120,23 @@ Met CSS Grid en Flexbox kun je elementen visueel herschikken zonder de HTML aan 
 
 <Guideline appearance="dont" title="HTML-volgorde wijkt af door CSS order">
   ```html
-  <div class="example-steps">
-    <div style="order: 2;">Stap 2: Kies een template</div>
-    <div style="order: 3;">Stap 3: Publiceer</div>
-    <div style="order: 1;">Stap 1: Maak een account</div>
-  </div>
+  <ol class="example-steps">
+    <li style="order: 2;">Kies een template</li>
+    <li style="order: 3;">Publiceer</li>
+    <li style="order: 1;">Maak een account</li>
+  </ol>
   ```
 </Guideline>
 
-Een screenreader leest hier: "Stap 2", "Stap 3", "Stap 1".
+Op het scherm staat "Maak een account" bovenaan, maar een screenreader leest de stappen voor in de volgorde van de HTML: eerst "Kies een template", dan "Publiceer" en pas daarna "Maak een account".
 
 <Guideline appearance="do" title="HTML-volgorde komt overeen met de betekenisvolle volgorde">
   ```html
-  <div class="example-steps">
-    <div>Stap 1: Maak een account</div>
-    <div>Stap 2: Kies een template</div>
-    <div>Stap 3: Publiceer</div>
-  </div>
+  <ol class="example-steps">
+    <li>Maak een account</li>
+    <li>Kies een template</li>
+    <li>Publiceer</li>
+  </ol>
   ```
 </Guideline>
 
@@ -238,9 +238,9 @@ Een dialoogvenster dat de pagina bedekt, beperkt de screenreader tot de inhoud v
 
 **Hoe te testen:** open het dialoogvenster en ga met een screenreader door de pagina. Kun je content achter het venster bereiken? Zo ja, dan is het venster niet goed afgeschermd.
 
-<Guideline appearance="do" title="Dialog met aria-modal voorkomt dat de achtergrond wordt gelezen">
+<Guideline appearance="do" title="Dialoogvenster dat met showModal wordt geopend">
   ```html
-  <dialog aria-modal="true" aria-label="Bevestig verwijdering">
+  <dialog aria-label="Bevestig verwijdering">
     <h2>Weet je het zeker?</h2>
     <p>Dit item wordt permanent verwijderd.</p>
     <button>Annuleren</button>
@@ -249,7 +249,7 @@ Een dialoogvenster dat de pagina bedekt, beperkt de screenreader tot de inhoud v
   ```
 </Guideline>
 
-Gebruik het `<dialog>`-element met `aria-modal="true"`, of beheer de focus handmatig en gebruik `aria-hidden="true"` op de achterliggende content.
+Open het venster met `showModal()`. De browser schermt de rest van de pagina dan zelf af, dus `aria-modal="true"` hoeft er niet bij. Bouw je het venster zonder het `<dialog>`-element, dan beheer je de focus zelf en zet je `aria-hidden="true"` op de achterliggende content.
 
 **Wie kan dit oplossen:** een developer implementeert het dialoogvenster met het `<dialog>`-element of met correcte focus- en ARIA-afhandeling.
 
