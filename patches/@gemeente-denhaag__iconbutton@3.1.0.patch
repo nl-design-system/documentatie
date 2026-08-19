@@ -1,0 +1,56 @@
+diff --git a/dist/cjs/index.js b/dist/cjs/index.js
+index 3babfb3c363c8bbead51685b4533ab99d3adf425..6f5cab5c3779049456d07497d757a0f12f83f76d 100644
+--- a/dist/cjs/index.js
++++ b/dist/cjs/index.js
+@@ -42,22 +42,8 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
+     var e = new Error(message);
+     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+ };var css_248z = ".denhaag-icon-button{appearance:none;background-color:transparent;border:0;border-radius:0;color:var(--denhaag-icon-button-color);cursor:pointer;display:inline-flex;outline:0;padding-block-end:var(--denhaag-icon-button-padding-block-end);padding-block-start:var(--denhaag-icon-button-padding-block-start);padding-inline-end:var(--denhaag-icon-button-padding-inline-end);padding-inline-start:var(--denhaag-icon-button-padding-inline-start)}.denhaag-icon-button--hover,.denhaag-icon-button:hover{color:var(--denhaag-icon-button-hover-color)}.denhaag-icon-button--focus,.denhaag-icon-button:focus-visible{color:var(--denhaag-icon-button-focus-color);outline-color:var(--denhaag-icon-button-focus-outline-color);outline-offset:var(--denhaag-icon-button-focus-outline-offset);outline-style:var(--denhaag-icon-button-focus-outline-style);outline-width:var(--denhaag-icon-button-focus-outline-width)}";
+-        if (typeof document !== 'undefined') { 
++        if (typeof document !== 'undefined') {
+ 
+-          const head = document.head || document.getElementsByTagName('head')[0];
+-          const style = document.createElement('style');
+-          style.type = 'text/css';
+-          style.nonce = window.NONCE;
+-        
+-          {
+-            head.appendChild(style);
+-          }
+-        
+-          if (style.styleSheet) {
+-            style.styleSheet.cssText = css_248z;
+-          } else {
+-            style.appendChild(document.createTextNode(css_248z));
+-          }
+         }/**
+  * Displays a Button with an Icon as content.
+  * @param props The properties of an IconButton component.
+diff --git a/dist/mjs/index.js b/dist/mjs/index.js
+index 2f9191a27370d23148da8eceb5c45740295b43b2..7d5481e5403419a215fc59ef293497e0b7e7ddec 100644
+--- a/dist/mjs/index.js
++++ b/dist/mjs/index.js
+@@ -42,22 +42,8 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
+     var e = new Error(message);
+     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+ };var css_248z = ".denhaag-icon-button{appearance:none;background-color:transparent;border:0;border-radius:0;color:var(--denhaag-icon-button-color);cursor:pointer;display:inline-flex;outline:0;padding-block-end:var(--denhaag-icon-button-padding-block-end);padding-block-start:var(--denhaag-icon-button-padding-block-start);padding-inline-end:var(--denhaag-icon-button-padding-inline-end);padding-inline-start:var(--denhaag-icon-button-padding-inline-start)}.denhaag-icon-button--hover,.denhaag-icon-button:hover{color:var(--denhaag-icon-button-hover-color)}.denhaag-icon-button--focus,.denhaag-icon-button:focus-visible{color:var(--denhaag-icon-button-focus-color);outline-color:var(--denhaag-icon-button-focus-outline-color);outline-offset:var(--denhaag-icon-button-focus-outline-offset);outline-style:var(--denhaag-icon-button-focus-outline-style);outline-width:var(--denhaag-icon-button-focus-outline-width)}";
+-        if (typeof document !== 'undefined') { 
++        if (typeof document !== 'undefined') {
+ 
+-          const head = document.head || document.getElementsByTagName('head')[0];
+-          const style = document.createElement('style');
+-          style.type = 'text/css';
+-          style.nonce = window.NONCE;
+-        
+-          {
+-            head.appendChild(style);
+-          }
+-        
+-          if (style.styleSheet) {
+-            style.styleSheet.cssText = css_248z;
+-          } else {
+-            style.appendChild(document.createTextNode(css_248z));
+-          }
+         }/**
+  * Displays a Button with an Icon as content.
+  * @param props The properties of an IconButton component.

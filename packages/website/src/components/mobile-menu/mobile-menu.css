@@ -1,0 +1,33 @@
+.ma-mobile-menu-drawer {
+  --utrecht-drawer-padding-block-start: 0;
+  --utrecht-drawer-min-inline-size: min(
+    calc(100vw - var(--basis-pointer-target-min-inline-size)),
+    var(--ma-mobile-menu-max-inline-size)
+  );
+
+  transition:
+    translate 250ms ease-out,
+    display 250ms ease-out allow-discrete;
+  translate: -100%;
+}
+
+.ma-mobile-menu-drawer:open {
+  translate: 0;
+}
+
+@starting-style {
+  .ma-mobile-menu-drawer:open {
+    translate: -100%;
+  }
+}
+
+.ma-mobile-menu-drawer__header {
+  background-color: var(--utrecht-drawer-background-color);
+  display: flex;
+  inset-block-start: 0;
+  justify-content: flex-end;
+  padding-block-end: var(--basis-space-row-xl);
+  padding-block-start: var(--basis-space-row-xl);
+  position: sticky;
+  z-index: 1;
+}
