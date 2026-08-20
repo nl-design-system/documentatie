@@ -29,8 +29,18 @@ const isFile = (url: URL) => url.pathname.split('/').reverse()?.[0]?.includes('.
  * pathname can be modified separate from the hash or search parts of the url.
  * Later the origin is removed to preserve the link as written
  */
-export function addTrailingSlash(href: string, options: { siteURL: URL; stripOrigin?: boolean }): string {
+export function addTrailingSlash(
+  href: string,
+  options: { siteURL: URL; stripOrigin?: boolean; stripExtensions?: string[] },
+): string {
   const url = new URL(href, options.siteURL);
+
+  // Remove extensions from the stripExtensions list before further parsing
+  (options?.stripExtensions || []).forEach((extension) => {
+    if (url.pathname.endsWith(extension)) {
+      url.pathname = url.pathname.replace(extension, '');
+    }
+  });
 
   // Leave external links or links to other protocols untouched
   if (isHttpProtocol(url) === false || isExternalLink(url, options.siteURL) || isFile(url)) return href;
@@ -61,7 +71,11 @@ export function addTrailingSlash(href: string, options: { siteURL: URL; stripOri
  * Rehype plugin looping over every link and appending a trailing slash if it
  * is an internal link.
  */
-export function addTrailingSlashPlugin(options: { siteUrl: string; stripOrigin?: boolean }) {
+export function addTrailingSlashPlugin(options: {
+  siteUrl: string;
+  stripOrigin?: boolean;
+  stripExtensions?: string[];
+}) {
   const { siteUrl, ..._options } = options;
   const siteURL = new URL(siteUrl);
 
