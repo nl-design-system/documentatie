@@ -563,6 +563,9 @@ importers:
       '@utrecht/button-link-css':
         specifier: 3.0.1
         version: 3.0.1
+      '@utrecht/card-css':
+        specifier: 2.0.1
+        version: 2.0.1
       '@utrecht/checkbox-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -4884,6 +4887,9 @@ packages:
 
   '@utrecht/card-css@1.0.1':
     resolution: {integrity: sha512-zklTHHTxmQ++/AYSLk5O7NRxNvd6Mzmch6vBcuts2Nj78UeGB2xvjzPlNnr5/FQV65Dm1QpP8bE71K2SANz7eA==}
+
+  '@utrecht/card-css@2.0.1':
+    resolution: {integrity: sha512-gLvEVM7c2dj6qCkmWz8yOi6fO30vzZeMGi0W3YsfnvY26V26sQPtljuMGypfB+AV1gBkw9qF6SU0tsaVOlriIQ==}
 
   '@utrecht/card-react@0.0.4':
     resolution: {integrity: sha512-+1hsXn6k4ixXmeWZsi1GPRyErlcXzaN0cgLk5L1iQNVWnUBbkvYqbn76jF95MX2Jg4aiv6/zNdC59f10S/+g7Q==}
@@ -17558,6 +17564,10 @@ snapshots:
   '@utrecht/card-css@1.0.1':
     dependencies:
       '@utrecht/img-css': 2.0.1
+
+  '@utrecht/card-css@2.0.1':
+    dependencies:
+      '@utrecht/img-css': 3.0.1
 
   '@utrecht/card-react@0.0.4(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
