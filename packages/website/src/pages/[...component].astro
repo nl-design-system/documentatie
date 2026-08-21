@@ -18,13 +18,26 @@ import './[...component].css';
 export async function getStaticPaths() {
   const components = await getCollection('components');
 
-  return components.map((page) => ({
-    params: { component: page.id },
-    props: { page },
-  }));
+  // Find all modules with aliases for the components
+  const aliasesModules = import.meta.glob(
+    '../../../../node_modules/@nl-design-system-candidate/*-docs/docs/aliases.md',
+    { eager: true },
+  ) as Record<string, { default: any }>;
+
+  return components.map((page) => {
+    const aliasModuleKey = Object.keys(aliasesModules).find((key) => key.includes(page.id + '-docs'));
+
+    // Aliases component dymaically imported for current component file
+    const Aliases = aliasModuleKey ? aliasesModules[aliasModuleKey].default : null;
+
+    return {
+      params: { component: page.id },
+      props: { page, Aliases },
+    };
+  });
 }
 
-const { page } = Astro.props;
+const { page, Aliases } = Astro.props;
 const { Content } = await render(page);
 
 const selectedStatusOptions = {
@@ -64,6 +77,15 @@ const components = await MDXComponents();
       </Flex>
       {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
     </Grid.Cell>
+
+    {
+      Aliases ? (
+        <Grid.Cell span="all">
+          <Aliases />
+        </Grid.Cell>
+      ) : null
+    }
+
     {
       ['Help Wanted', 'Community'].includes(status) && (
         <Grid.Cell span="all">
