@@ -17,3 +17,12 @@ import '@nl-design-system-candidate/link-css/link.css';
 </ma-table-of-contents>
 
 <script src="./table-of-content.client.ts"></script>
+<script>
+  const toc = document.querySelector('ma-table-of-contents');
+  const codeExampleHeadings = new Set(
+    document.querySelectorAll(
+      '.nlds-guideline h1, .nlds-guideline h2, .nlds-guideline h3, .nlds-guideline h4, .nlds-guideline h5,.nlds-guideline h6',
+    ),
+  );
+  toc.headingsToIgnore = toc.headingsToIgnore.union(codeExampleHeadings);
+</script>
