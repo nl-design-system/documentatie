@@ -41,7 +41,7 @@ export const navigation = navigationRoot(
           navigationItem('docs/community/community-sprints/index.mdx'),
           navigationGroup({ filePath: 'docs/community/community-sprints/mijn-services-community' }),
           navigationGroup({ filePath: 'docs/community/community-sprints/rijkshuisstijl-community' }),
-          navigationItem('docs/community/expertteam-digitale-toegankelijkheid/index.mdx'),
+          navigationGroup({ filePath: 'docs/community/expertteam-digitale-toegankelijkheid' }),
           navigationGroup({
             label: 'Bijeenkomsten',
             filePath: 'docs/community/events',
