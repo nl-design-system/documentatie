@@ -1,0 +1,64 @@
+---
+title: Programma
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Programma
+pagination_label: Programma
+sidebar_position: 2
+slug: /events/design-systems-week-2026/programma
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2026.png
+image_alt: NL Design System Design Systems Week 2026 26-29 Oktober, online
+---
+
+import {
+  ButtonGroup as ActionGroup,
+  ButtonLink,
+  Paragraph,
+  Link,
+} from "@utrecht/component-library-react/dist/css-module";
+import { IconChevronRight } from "@tabler/icons-react";
+import sessions from "./\_2026/sessions.json";
+import speakers from "./\_2026/speakers.json";
+import { DSWSession } from "@site/src/components/DSWSession";
+import settings from "./settings.json";
+
+# Programma Design Systems Week {settings.year}
+
+<Paragraph lead>
+  NL Design System organiseert in {settings.year} voor de {settings.nl.edition} keer de Design Systems Week. Van{" "}
+  <strong>{settings.nl.dateRange}</strong> zijn er dagelijks meerdere korte sessies van diverse organisaties online te
+  volgen over het **hoe en waarom van design systems**.
+</Paragraph>
+
+<ActionGroup>
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/tijdschema`} appearance="primary-action-button">
+    {"Bekijk het tijdschema"}
+    <IconChevronRight />
+  </ButtonLink>
+  {!!settings.miro && (
+    <ButtonLink href={settings.miro} appearance="secondary-action-button">
+      {"Gebruik Miro"}
+      <IconChevronRight />
+    </ButtonLink>
+  )}
+</ActionGroup>
+
+{/* Vul in per sessie */}
+{/* prettier-ignore */}
+{/*
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="74d8600f-b404-4e3d-a41e-9f652d8f9455"
+  headingLevel={2}
+>
+
+  <Paragraph>
+    Hoe kunnen steden hun design systems transparanter, consistenter en gebruiksvriendelijker maken voor developers? De stad Wenen vond een antwoord in het Custom Elements Manifest (CEM) — een bestandsformaat dat custom elements beschrijft en web components makkelijker documenteerbaar en bruikbaar maakt in code editors.
+  </Paragraph>
+  <Paragraph>
+    In deze sessie laat Manuel Matuzović zien hoe Wenen CEM toepast om hun pattern library te documenteren en te onderhouden. Hij demonstreert hoe deze aanpak de bruikbaarheid, toegankelijkheid en samenwerking tussen teams verbetert.  
+  </Paragraph>
+</DSWSession>
+*/}

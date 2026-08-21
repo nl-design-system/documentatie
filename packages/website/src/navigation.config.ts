@@ -50,10 +50,18 @@ export const navigation = navigationRoot(
           navigationGroup({
             index: navigationItem('docs/community/events/design-systems-week/index.mdx'),
             items: [
+              navigationItem('docs/community/events/design-systems-week/programma.mdx'),
+              navigationItem('docs/community/events/design-systems-week/tijdschema.mdx'),
               navigationGroup({
                 label: 'English',
-                filePath: 'docs/community/events/design-systems-week/en',
-                ignoredFiles: ['call-for-speakers.mdx', 'sign-up.mdx'],
+                index: navigationItem('docs/community/events/design-systems-week/en/index.mdx'),
+                items: [
+                  navigationItem('docs/community/events/design-systems-week/en/program.mdx'),
+                  navigationItem('docs/community/events/design-systems-week/en/timetable.mdx'),
+                  navigationGroup({
+                    filePath: 'docs/community/events/design-systems-week/en/previous-editions',
+                  }),
+                ],
               }),
               navigationGroup({
                 filePath: 'docs/community/events/design-systems-week/eerdere-edities',
