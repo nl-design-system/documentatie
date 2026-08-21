@@ -58,35 +58,44 @@ import settings from "../settings.json";
   )}
 </ActionGroup>
 
+</>)}
+
 {/* Vul in per dag */}
 
-<Heading2>Monday, October 26</Heading2>
+{/* prettier-ignore */}
+{/*
+
+## Monday, October 26
 
 <SessionTable
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-26`))}
 />
 
-<Heading2>Tuesday, October 27</Heading2>
+## Tuesday, October 27
 
 <SessionTable
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-27`))}
 />
 
-<Heading2>Wednesday, October 28</Heading2>
+## Wednesday, October 28
 
 <SessionTable
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-28`))}
 />
 
-<Heading2>Thursday, October 29</Heading2>
+## Thursday, October 29
 
 <SessionTable
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-29`))}
 />
+
+\*/}
+
+{!!settings.isHappening && (<>
 
 <hr></hr>
 
