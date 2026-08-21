@@ -10,4 +10,6 @@ test('renders markdown as children of a component', async ({ page }) => {
   await expect(page.locator('p').filter({ hasText: /This is a paragraph/i })).toBeVisible();
 
   await expect(page.locator('li').filter({ hasText: /this is a list/i })).toBeVisible();
+
+  await expect(page.locator('a').filter({ hasText: /A link/i })).toHaveClass('nl-link');
 });
