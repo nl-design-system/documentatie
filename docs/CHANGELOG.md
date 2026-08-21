@@ -1,5 +1,19 @@
 # @nl-design-system-unstable/documentation
 
+## 1.12.0
+
+### Minor Changes
+
+- ae5a617: Acceptatiecriteria voor toegankelijkheid aan Note toegevoegd.
+- 501eefc: Baseline augustus 2026 update.
+- 2a73c89: Toevoeging informatie forced colors aan stijl-richtlijnen.
+- 614dc40: Toevoegen succescriterium 1.4.1 Gebruik van kleur aan Form Field Description.
+- 8c9f3a0: Veelgemaakte fouten en oplossingen daarvoor voor de Heading 1 component.
+
+  Oud changeset in verkeerd bestandsformaat verwijderd over wijzigingen aan succescriterium 2.5.2.
+
+- 7af1437: Toevoeging acceptatiecriteria voor toegankelijkheid voor Alert.
+
 ## 1.11.0
 
 ### Minor Changes
