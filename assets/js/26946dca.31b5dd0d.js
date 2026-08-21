@@ -354,6 +354,7 @@
     s = t(32385),
     r = t(86070);
    const i = ({ component: e }) => {
+    if (globalThis.isAstro) return null;
     const { title: n } = e,
      i = (0, s.fX)(n),
      l = o.lazy(() => t(82839)(`./${i}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
@@ -393,7 +394,7 @@
   },
   70903(e, n, t) {
    'use strict';
-   t.d(n, { B: () => T });
+   t.d(n, { B: () => F });
    var a = t(96547),
     o = t(79889),
     s = t(32385),
@@ -439,10 +440,10 @@
      const n = Object.hasOwn(C, e) ? e : 'other';
      return (0, m.jsx)(u.In, { children: (0, S.createElement)(C[n]) });
     };
-   var F = t(76223);
-   function T({ tokens: e }) {
+   var T = t(76223);
+   function F({ tokens: e }) {
     const n = (0, s.kD)(e),
-     t = (0, F.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     t = (0, T.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      i = (0, s.GT)(n),
      l = i.map((e) => (0, s.B_)(e) + ': ;').join('\n'),
      d = JSON.stringify(t);
@@ -509,7 +510,7 @@
   },
   88257(e, n, t) {
    'use strict';
-   (t.r(n), t.d(n, { assets: () => T, component: () => B, contentTitle: () => F, default: () => P, description: () => _, frontMatter: () => N, issueNumber: () => L, metadata: () => a, title: () => H, toc: () => R }));
+   (t.r(n), t.d(n, { assets: () => F, component: () => B, contentTitle: () => T, default: () => P, description: () => _, frontMatter: () => N, issueNumber: () => L, metadata: () => a, title: () => H, toc: () => R }));
    const a = JSON.parse('{"id":"componenten/code-block/index","title":"Code Block","description":"Blok met \xe9\xe9n of meerdere regels computercode.","source":"@site/docs/componenten/code-block/index.mdx","sourceDirName":"componenten/code-block","slug":"/code-block","permalink":"/code-block","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/code-block/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Code Block","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Code Block","pagination_label":"Code Block","description":"Blok met \xe9\xe9n of meerdere regels computercode.","issue_number":329,"slug":"/code-block","keywords":["code","code block","code blok","code container","code example","code fences","code memo","code snippet","code snippet blok","code voorbeeld","code wrapper","codeblock","codepen","copy paste blok","css voorbeeld","html voorbeeld","inline code","monospace","monotype","pre","snippet","source code","source doc","toepassing","voorbeeld blok","Code Snippet","Code Blok","Code Example"]},"sidebar":"componenten","previous":{"title":"Code","permalink":"/code"},"next":{"title":"Color Sample","permalink":"/color-sample"}}');
    var o = t(86070),
     s = t(18439),
@@ -562,8 +563,8 @@
    }
    var C = t(89019);
    const N = { title: 'Code Block', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Code Block', pagination_label: 'Code Block', description: 'Blok met \xe9\xe9n of meerdere regels computercode.', issue_number: 329, slug: '/code-block', keywords: ['code', 'code block', 'code blok', 'code container', 'code example', 'code fences', 'code memo', 'code snippet', 'code snippet blok', 'code voorbeeld', 'code wrapper', 'codeblock', 'codepen', 'copy paste blok', 'css voorbeeld', 'html voorbeeld', 'inline code', 'monospace', 'monotype', 'pre', 'snippet', 'source code', 'source doc', 'toepassing', 'voorbeeld blok', 'Code Snippet', 'Code Blok', 'Code Example'] },
-    F = void 0,
-    T = {},
+    T = void 0,
+    F = {},
     H = 'Code Block',
     _ = 'Blok met \xe9\xe9n of meerdere regels computercode.',
     L = 329,

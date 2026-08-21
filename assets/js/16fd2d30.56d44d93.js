@@ -1,5 +1,5 @@
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [50537],
+ [32139],
  {
   10645(e, n, a) {
    'use strict';
@@ -15,13 +15,13 @@
     i = a(13526),
     l = a(40889),
     s = a(21530),
-    r = a(45186);
-   function o(e) {
-    return (0, r.c)() ? e.children() : null;
+    o = a(45186);
+   function r(e) {
+    return (0, o.c)() ? e.children() : null;
    }
    var d = a(86070);
    const g = ({ checked: e, unchecked: n }) =>
-    (0, d.jsx)(o, {
+    (0, d.jsx)(r, {
      children: () => {
       const t = a(83294).V6;
       return (0, d.jsx)(t, {
@@ -63,12 +63,12 @@
           .map((e) => {
            const a = e.tasks.find(({ name: e }) => 'Naam' === e),
             i = a?.value,
-            r = (0, h.Pv)(e),
-            o = new Map([
+            o = (0, h.Pv)(e),
+            r = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${i} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
             ]),
-            u = e.tasks.filter(({ name: e, value: n }) => o.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
+            u = e.tasks.filter(({ name: e, value: n }) => r.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
            return (0, d.jsx)(
             s.Zp,
             {
@@ -77,19 +77,19 @@
               children: [
                (0, d.jsx)(t.DZ, { level: n, children: e.title.replace(/^Community/i, '') }),
                (0, d.jsxs)(t.fz, { children: [(0, d.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(t.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               (u.length > 0 || r.length > 0) && (0, d.jsx)(t.DZ, { level: n + 1, children: 'Snel aan de slag' }),
+               (u.length > 0 || o.length > 0) && (0, d.jsx)(t.DZ, { level: n + 1, children: 'Snel aan de slag' }),
                u.length > 0 &&
                 (0, d.jsx)(d.Fragment, {
                  children: (0, d.jsx)(t.dk, {
                   links: u
-                   .filter((e) => !!o.get(e.name))
+                   .filter((e) => !!r.get(e.name))
                    .map((e) => {
-                    const n = o.get(e.name);
+                    const n = r.get(e.name);
                     return { children: n.desciption, icon: (0, d.jsx)(l.r, { brand: n.brand }), href: e.value };
                    }),
                  }),
                 }),
-               r.length > 0 && (0, d.jsx)(d.Fragment, { children: r.map(({ frameworkName: e, tasks: a }) => (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.DZ, { level: n + 2, children: [i, ' in ', e] }), (0, d.jsx)(t.dk, { links: a.map((e) => ({ children: e.description, icon: (0, d.jsx)(l.r, { brand: e.brand }), href: e.value })) })] })) }),
+               o.length > 0 && (0, d.jsx)(d.Fragment, { children: o.map(({ frameworkName: e, tasks: a }) => (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.DZ, { level: n + 2, children: [i, ' in ', e] }), (0, d.jsx)(t.dk, { links: a.map((e) => ({ children: e.description, icon: (0, d.jsx)(l.r, { brand: e.brand }), href: e.value })) })] })) }),
               ],
              }),
             },
@@ -115,28 +115,28 @@
   },
   21530(e, n, a) {
    'use strict';
-   a.d(n, { AC: () => d, Fu: () => s, Wu: () => r, Zp: () => o });
+   a.d(n, { AC: () => d, Fu: () => s, Wu: () => o, Zp: () => r });
    var t = a(46447),
     i = a(13526),
     l = a(86070);
    const s = ({ background: e, children: n, className: a, ...t }) => (0, l.jsx)('div', { className: (0, i.A)('ma-card__illustration', e && `ma-card__illustration--${e}`, a), ...t, children: n }),
-    r = (e) => (0, l.jsx)('div', { className: 'ma-card__content', ...e }),
-    o = ({ href: e, appearance: n, className: a, component: s = 'div', background: r, children: o }) => {
+    o = (e) => (0, l.jsx)('div', { className: 'ma-card__content', ...e }),
+    r = ({ href: e, appearance: n, className: a, component: s = 'div', background: o, children: r }) => {
      const d = (e) => ('article' === s ? (0, l.jsx)('article', { ...e }) : 'section' === s ? (0, l.jsx)('section', { ...e }) : (0, l.jsx)('div', { ...e })),
-      g = (0, l.jsx)(d, { className: (0, i.A)('ma-cardgroup__card', r && 'ma-cardgroup__card--light-purple', `ma-cardgroup__card--${n}`, a), children: o });
+      g = (0, l.jsx)(d, { className: (0, i.A)('ma-cardgroup__card', o && 'ma-cardgroup__card--light-purple', `ma-cardgroup__card--${n}`, a), children: r });
      return e ? (0, l.jsx)(t.N_, { href: e, boxContent: !0, className: 'ma-cardgroup__link', children: g }) : g;
     },
     d = ({ appearance: e = 'large', children: n, className: a }) => (0, l.jsx)('div', { className: (0, i.A)('ma-cardgroup', `ma-cardgroup--${e}`, a), children: n });
   },
   32385(e, n, a) {
    'use strict';
-   a.d(n, { bo: () => i, KF: () => m, mJ: () => p, VZ: () => T, cR: () => j, Pv: () => v, qZ: () => s, kD: () => b, QQ: () => H, B2: () => c, Pc: () => o, f4: () => r, GT: () => k, fX: () => l, eQ: () => q, B_: () => x, o_: () => f });
+   a.d(n, { bo: () => i, KF: () => m, mJ: () => p, VZ: () => T, cR: () => j, Pv: () => v, qZ: () => s, kD: () => b, QQ: () => H, B2: () => c, Pc: () => r, f4: () => o, GT: () => k, fX: () => l, eQ: () => q, B_: () => x, o_: () => f });
    const t = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     l = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
-    r = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    o = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
+    o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    r = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
     d = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
    function g(e) {
     return Array.from(new Set(e));
@@ -163,8 +163,8 @@
        .filter(({ name: e, value: a }) => '' !== a && e.includes(n))
        .map(({ name: t, id: i, value: l }) => {
         const s = /^(.+) URL/.exec(t)[1],
-         r = 'Storybook' === s ? `${a} (${n}) in Storybook van ${e.title}` : `${a} (${n}) op ${s}`;
-        return { brand: s.toLowerCase(), name: t, id: i, value: l, description: r };
+         o = 'Storybook' === s ? `${a} (${n}) in Storybook van ${e.title}` : `${a} (${n}) op ${s}`;
+        return { brand: s.toLowerCase(), name: t, id: i, value: l, description: o };
        });
       return { frameworkName: n, tasks: t };
      });
@@ -202,12 +202,12 @@
   },
   39569(e, n, a) {
    'use strict';
-   a.d(n, { D: () => r });
+   a.d(n, { D: () => o });
    var t = a(46447),
     i = a(13526),
     l = a(32385),
     s = a(86070);
-   const r = ({ state: e }) => {
+   const o = ({ state: e }) => {
     const n = (0, l.fX)(e);
     return (0, s.jsx)(t.KE, { className: (0, i.A)('ma-estafette-badge', n && `ma-estafette-badge--${n}`), children: e });
    };
@@ -219,11 +219,11 @@
     i = a(74172),
     l = a(15089),
     s = a(28377),
-    r = a(33648),
-    o = a(83386),
+    o = a(33648),
+    r = a(83386),
     d = a(86070);
-   const g = { figma: (0, d.jsx)(i.A, {}), github: (0, d.jsx)(l.A, {}), npm: (0, d.jsx)(s.A, {}), storybook: (0, d.jsx)(r.A, {}) },
-    u = ({ brand: e }) => (0, d.jsx)(t.In, { children: g[e] || (0, d.jsx)(o.A, {}) });
+   const g = { figma: (0, d.jsx)(i.A, {}), github: (0, d.jsx)(l.A, {}), npm: (0, d.jsx)(s.A, {}), storybook: (0, d.jsx)(o.A, {}) },
+    u = ({ brand: e }) => (0, d.jsx)(t.In, { children: g[e] || (0, d.jsx)(r.A, {}) });
   },
   45186(e, n, a) {
    'use strict';
@@ -248,84 +248,41 @@
      }
      return a.toString();
     },
-    r = { 1: {}, 2: { h1: i.fV, h2: i._B, h3: i.f_, h4: i.mM, h5: i.TT }, 3: { h1: i._B, h2: i.f_, h3: i.mM, h4: i.TT, h5: i.TT }, 4: { h1: i.f_, h2: i.mM, h3: i.TT, h4: i.TT, h5: i.TT }, 5: { h1: i.mM, h2: i.TT, h3: i.TT, h4: i.TT, h5: i.TT }, 6: { h1: i.TT, h2: i.TT, h3: i.TT, h4: i.TT, h5: i.TT } },
-    o = (e) => ({ img: ({ src: n, ...a }) => (0, l.jsx)('img', { ...a, src: s(e, n), className: 'utrecht-img utrecht-img--fit' }) }),
+    o = { 1: {}, 2: { h1: i.fV, h2: i._B, h3: i.f_, h4: i.mM, h5: i.TT }, 3: { h1: i._B, h2: i.f_, h3: i.mM, h4: i.TT, h5: i.TT }, 4: { h1: i.f_, h2: i.mM, h3: i.TT, h4: i.TT, h5: i.TT }, 5: { h1: i.mM, h2: i.TT, h3: i.TT, h4: i.TT, h5: i.TT }, 6: { h1: i.TT, h2: i.TT, h3: i.TT, h4: i.TT, h5: i.TT } },
+    r = (e) => ({ img: ({ src: n, ...a }) => (0, l.jsx)('img', { ...a, src: s(e, n), className: 'utrecht-img utrecht-img--fit' }) }),
     d = (e, n) => {
      if (e) {
-      const e = { ...r[n - 1] };
+      const e = { ...o[n - 1] };
       return ((e.h1 = () => null), e);
      }
-     return r[n];
+     return o[n];
     },
-    g = ({ children: e, omitH1: n = !1, headingLevel: a = 1, baseUrl: i = '', components: s = {} }) => (0, l.jsx)(t.x, { components: { ...d(n, a), ...o(i), ...s }, children: e });
+    g = ({ children: e, omitH1: n = !1, headingLevel: a = 1, baseUrl: i = '', components: s = {} }) => (0, l.jsx)(t.x, { components: { ...d(n, a), ...r(i), ...s }, children: e });
   },
   59778(e, n, a) {
    'use strict';
-   a.d(n, { e: () => r });
+   a.d(n, { e: () => o });
    var t = a(51582),
     i = a(30758),
     l = a(32385),
     s = a(86070);
-   const r = ({ component: e }) => {
+   const o = ({ component: e }) => {
+    if (globalThis.isAstro) return null;
     const { title: n } = e,
-     r = (0, l.fX)(n),
-     o = i.lazy(() => a(82839)(`./${r}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
-    return (0, s.jsx)(i.Suspense, { fallback: null, children: (0, s.jsx)(t.o, { omitH1: !0, headingLevel: 1, children: (0, s.jsx)(o, {}) }) });
+     o = (0, l.fX)(n),
+     r = i.lazy(() => a(82839)(`./${o}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
+    return (0, s.jsx)(i.Suspense, { fallback: null, children: (0, s.jsx)(t.o, { omitH1: !0, headingLevel: 1, children: (0, s.jsx)(r, {}) }) });
    };
   },
-  70348(e, n, a) {
-   'use strict';
-   a.d(n, { K: () => o, n: () => r });
-   var t = a(13526),
-    i = a(96345),
-    l = a(37168),
-    s = a(86070);
-   const r = ({ className: e, ...n }) => {
-     const a = (0, t.A)('ma-utrecht-accordion', 'utrecht-accordion', e);
-     return (0, s.jsx)('div', { className: a, children: n.children });
-    },
-    o = ({ className: e, label: n, heading: a, headingLevel: r, headingApperance: o, ...d }) => {
-     const g = (0, t.A)('utrecht-accordion__section', e);
-     return (0, s.jsxs)('details', { className: g, ...d, children: [(0, s.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, s.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, s.jsx)('span', { className: 'nl-button__icon-start', children: (0, s.jsx)(i.A, {}) }), (0, s.jsxs)('span', { className: 'nl-button__label', children: [a && (0, s.jsx)(l.D, { level: r, appearance: o, children: a }), n] })] }) }), (0, s.jsx)('div', { className: 'utrecht-accordion__panel', children: d.children })] });
-    };
-  },
-  82839(e, n, a) {
-   var t = { './button-docs/docs/aliases.md': [62620, 62620], './code-block-docs/docs/aliases.md': [23021, 23021], './code-docs/docs/aliases.md': [39021, 39021], './color-sample-docs/docs/aliases.md': [24518, 24518], './data-badge-docs/docs/aliases.md': [99976, 99976], './heading-1-docs/docs/aliases.md': [16918, 16918], './heading-2-docs/docs/aliases.md': [5138, 5138], './heading-3-docs/docs/aliases.md': [70342, 70342], './heading-4-docs/docs/aliases.md': [67426, 67426], './heading-docs/docs/aliases.md': [5895, 5895], './link-docs/docs/aliases.md': [56551, 56551], './mark-docs/docs/aliases.md': [18569, 18569], './number-badge-docs/docs/aliases.md': [57569, 57569], './paragraph-docs/docs/aliases.md': [26183, 26183], './skip-link-docs/docs/aliases.md': [39927, 39927] };
-   function i(e) {
-    if (!a.o(t, e))
-     return Promise.resolve().then(() => {
-      var n = new Error("Cannot find module '" + e + "'");
-      throw ((n.code = 'MODULE_NOT_FOUND'), n);
-     });
-    var n = t[e],
-     i = n[0];
-    return a.e(n[1]).then(() => a(i));
-   }
-   ((i.keys = () => Object.keys(t)), (i.id = 82839), (e.exports = i));
-  },
-  85162(e, n, a) {
-   'use strict';
-   a.d(n, { s: () => o });
-   var t = a(29181),
-    i = a(13526),
-    l = a(32385),
-    s = a(86070);
-   const r = { 'Heading 1': 'Heading', 'Heading 2': 'Heading', 'Heading 3': 'Heading', 'Heading 4': 'Heading', 'Heading 5': 'Heading', 'Heading 6': 'Heading' },
-    o = ({ name: e, relayStep: n, description: a }) => {
-     const o = (0, l.fX)(n),
-      d = r[e] ?? e;
-     return (0, s.jsxs)(t.WK, { children: [(0, s.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, i.A)('ma-component-illustration', `ma-component-illustration--${o}`), fill: 'none', children: [(0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-background-color, white)', children: [(0, s.jsx)('rect', { width: '960', height: '540' }), (0, s.jsx)('rect', { width: '960', height: '540' })] }), (0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-grid-color, #eee)', children: [(0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, s.jsx)('use', { href: `/svg/componenten_overzicht_${(0, l.fX)(d)}.svg#component-illustration` })] }), (0, s.jsx)(t.$P, { className: 'ma-component-illustration__caption', children: a })] });
-    };
-  },
-  95838(e, n, a) {
+  63936(e, n, a) {
    'use strict';
    (a.r(n), a.d(n, { assets: () => k, component: () => H, contentTitle: () => b, default: () => _, description: () => T, frontMatter: () => q, issueNumber: () => D, metadata: () => t, title: () => j, toc: () => F }));
-   const t = JSON.parse('{"id":"componenten/heading-3/index","title":"Heading 3","description":"Koptekst die in de koppenstructuur op het derde niveau staat.","source":"@site/docs/componenten/heading-3/index.mdx","sourceDirName":"componenten/heading-3","slug":"/heading-3","permalink":"/heading-3","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading-3/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Heading 3","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Heading 3","pagination_label":"Heading 3","description":"Koptekst die in de koppenstructuur op het derde niveau staat.","issue_number":259,"slug":"/heading-3","keywords":["caption","content","h3","heading","heading level","headline","kop","paginakop","sectie","section","structure","titel","title"]},"sidebar":"componenten","previous":{"title":"Heading 2","permalink":"/heading-2"},"next":{"title":"Heading 4","permalink":"/heading-4"}}');
+   const t = JSON.parse('{"id":"componenten/heading-2/index","title":"Heading 2","description":"Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.","source":"@site/docs/componenten/heading-2/index.mdx","sourceDirName":"componenten/heading-2","slug":"/heading-2","permalink":"/heading-2","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading-2/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Heading 2","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Heading 2","pagination_label":"Heading 2","description":"Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.","issue_number":258,"slug":"/heading-2","keywords":["caption","content","h2","heading","heading level","headline","kop","paginakop","sectie","section","structure","titel","title"]},"sidebar":"componenten","previous":{"title":"Heading 1","permalink":"/heading-1"},"next":{"title":"Heading 3","permalink":"/heading-3"}}');
    var i,
     l,
     s,
-    r,
     o,
+    r,
     d,
     g,
     u = a(86070),
@@ -346,15 +303,15 @@
      p.apply(null, arguments)
     );
    }
-   const v = ({ title: e, titleId: n, ...a }) => h.createElement('svg', p({ xmlns: 'http://www.w3.org/2000/svg', width: 960, height: 540, fill: 'none', 'aria-label': 'Een tekst die iets groter is dan gebruikelijk, in bold. De hele tekst is aangeduid met het cijfer 1. De tekst: \\u201CDit is een voorbeeld van een heading.\\u201D.', viewBox: '0 0 960 540', role: 'img', 'aria-labelledby': n }, a), e ? h.createElement('title', { id: n }, e) : null, i || (i = h.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), l || (l = h.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = h.createElement('path', { stroke: '#DE00A4', strokeLinecap: 'square', strokeWidth: 2, d: 'M307.762 240v60' })), r || (r = h.createElement('path', { stroke: '#DE00A4', strokeLinecap: 'square', strokeLinejoin: 'bevel', strokeWidth: 2, d: 'M268 270h39' })), o || (o = h.createElement('rect', { width: 32, height: 32, x: 236, y: 254, fill: '#DE00A4', rx: 16 })), d || (d = h.createElement('path', { fill: '#fff', d: 'M254.502 264.368V276.5H252v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43z' })), g || (g = h.createElement('path', { fill: '#0A2750', d: 'M322.672 254.464v3.096l.048 3.048h.792q2.064 0 3.24-1.68 1.2-1.704 1.2-4.824 0-3.168-1.2-4.824-1.176-1.656-3.216-1.656h-.816l-.048 3v3.84m-5.88-6.936v-1.296h7.128q2.568 0 4.392.96a6.6 6.6 0 0 1 2.808 2.688q.984 1.752.984 4.2 0 2.496-1.056 4.272t-3 2.712q-1.92.936-4.56.936h-6.696v-1.296l1.8-.192q.048-1.464.048-2.976v-6.84q0-1.512-.048-2.976zM333.642 262v-1.128l1.296-.288q.024-.864.024-1.872v-2.904q0-.984-.024-1.632 0-.672-.048-1.392l-1.488-.216v-.936l5.04-1.608.408.264-.072 3.48v4.968q0 1.008.024 1.896l1.2.24V262zm3.192-13.752q-.84 0-1.44-.528-.6-.552-.6-1.368 0-.84.6-1.368.6-.552 1.44-.552t1.44.552q.6.528.6 1.368 0 .816-.6 1.368-.6.528-1.44.528m8.914 14.112q-1.608 0-2.52-.768-.912-.792-.912-2.568v-1.152q.024-.552.024-1.248v-4.584h-1.56v-1.416l1.776-.24 1.2-3.36h2.448l-.048 3.384h2.52v1.632h-2.52v6.72q0 .84.336 1.248.36.384.888.384.624 0 1.296-.528l.6.576a3.5 3.5 0 0 1-1.344 1.416q-.84.504-2.184.504m9.222-.36v-1.128l1.296-.288q.024-.864.024-1.872v-2.904q0-.984-.024-1.632 0-.672-.048-1.392l-1.488-.216v-.936l5.04-1.608.408.264-.072 3.48v4.968q0 1.008.024 1.896l1.2.24V262zm3.192-13.752q-.84 0-1.44-.528-.6-.552-.6-1.368 0-.84.6-1.368.6-.552 1.44-.552t1.44.552q.6.528.6 1.368 0 .816-.6 1.368-.6.528-1.44.528m8.578 14.112q-2.28 0-4.176-1.104l.072-2.928h1.92l.408 2.376q.432.168.864.264.432.072.936.072 1.032 0 1.584-.336.552-.36.552-1.08 0-.552-.408-.96t-1.608-.744l-1.296-.384q-1.392-.408-2.16-1.32-.744-.912-.744-2.256 0-1.656 1.296-2.784 1.296-1.152 3.72-1.152a6.8 6.8 0 0 1 1.944.264q.912.24 1.848.72l-.168 2.616h-1.92l-.48-2.064q-.504-.192-1.32-.192t-1.32.336q-.48.336-.48 1.008 0 .48.384.864.384.36 1.632.744l1.176.336q1.704.504 2.448 1.44t.744 2.28q0 1.896-1.464 2.952-1.44 1.032-3.984 1.032m17.782-11.088q-.672 0-1.248.84-.552.816-.624 3.024h2.04q.864 0 1.152-.336.312-.36.312-1.176 0-1.2-.48-1.776t-1.152-.576m.048 11.088q-1.752 0-3.096-.72a5.36 5.36 0 0 1-2.112-2.112q-.768-1.392-.768-3.312 0-2.016.888-3.384.912-1.392 2.328-2.088a6.4 6.4 0 0 1 2.952-.72q1.584 0 2.688.672a4.35 4.35 0 0 1 1.704 1.824q.576 1.128.576 2.592 0 .696-.144 1.272h-6.936q.12 1.896 1.032 2.808.936.888 2.184.888.984 0 1.68-.36a5 5 0 0 0 1.224-.936l.84.768q-.744 1.416-2.016 2.112t-3.024.696m12.468-11.088q-.672 0-1.248.84-.552.816-.624 3.024h2.04q.864 0 1.152-.336.312-.36.312-1.176 0-1.2-.48-1.776t-1.152-.576m.048 11.088q-1.752 0-3.096-.72a5.36 5.36 0 0 1-2.112-2.112q-.768-1.392-.768-3.312 0-2.016.888-3.384.912-1.392 2.328-2.088a6.4 6.4 0 0 1 2.952-.72q1.584 0 2.688.672a4.35 4.35 0 0 1 1.704 1.824q.576 1.128.576 2.592 0 .696-.144 1.272h-6.936q.12 1.896 1.032 2.808.936.888 2.184.888.984 0 1.68-.36a5 5 0 0 0 1.224-.936l.84.768q-.744 1.416-2.016 2.112t-3.024.696m6.516-.36v-1.128l1.296-.288q.024-.864.024-1.872v-3.144q0-.984-.024-1.512 0-.552-.048-1.272l-1.464-.216v-.936l4.728-1.608.432.264.144 1.728q.936-1.104 1.848-1.536a4.5 4.5 0 0 1 1.992-.456q1.56 0 2.496 1.032.96 1.032.96 3.096v4.608q0 .984.024 1.872l1.2.24V262h-6.336v-1.128l1.248-.264q.024-.888.024-1.872v-4.296q0-1.152-.312-1.608-.312-.48-1.008-.48-.936 0-2.064.864v5.52q0 1.008.024 1.896l1.128.24V262zm27.218-10.536v-1.056h4.536v1.056l-1.392.264-3.96 10.32h-1.824l-4.32-10.344-1.176-.24v-1.056h6.816v1.056l-1.512.312 2.256 6.144 2.088-6.168zm10.824 10.896q-1.872 0-3.24-.768a5.44 5.44 0 0 1-2.112-2.184q-.744-1.416-.744-3.264t.792-3.216a5.8 5.8 0 0 1 2.208-2.136q1.392-.768 3.096-.768t3.072.744a5.56 5.56 0 0 1 2.208 2.136q.816 1.368.816 3.24t-.744 3.264a5.44 5.44 0 0 1-2.112 2.184q-1.368.768-3.24.768m0-1.248q1.008 0 1.512-1.176t.504-3.72q0-2.568-.504-3.744t-1.512-1.176q-1.032 0-1.536 1.176t-.504 3.744q0 2.544.504 3.72t1.536 1.176m13.734 1.248q-1.872 0-3.24-.768a5.44 5.44 0 0 1-2.112-2.184q-.744-1.416-.744-3.264t.792-3.216a5.8 5.8 0 0 1 2.208-2.136q1.392-.768 3.096-.768t3.072.744a5.56 5.56 0 0 1 2.208 2.136q.816 1.368.816 3.24t-.744 3.264a5.44 5.44 0 0 1-2.112 2.184q-1.368.768-3.24.768m0-1.248q1.008 0 1.512-1.176t.504-3.72q0-2.568-.504-3.744t-1.512-1.176q-1.032 0-1.536 1.176t-.504 3.744q0 2.544.504 3.72t1.536 1.176m7.426.888v-1.128l1.32-.264q.024-.888.024-1.896v-3.168q0-.672-.024-1.104 0-.432-.024-.792 0-.384-.024-.864l-1.464-.216v-.936l4.728-1.608.432.264.216 2.832q.504-1.536 1.416-2.304.912-.792 1.8-.792.792 0 1.368.456.576.432.72 1.32-.024.936-.504 1.464-.48.504-1.2.504-1.008 0-1.848-1.128l-.144-.192a6 6 0 0 0-.984 1.272 6 6 0 0 0-.624 1.608v3.336q0 .96.024 1.8l1.896.408V262zm10.619.024v-1.128l1.272-.264q.024-.864.024-1.872v-11.904l-1.488-.192v-1.008l4.968-1.08.384.24-.096 3.36v3.384q1.512-1.536 3.48-1.536 1.32 0 2.376.696 1.056.672 1.68 2.04.648 1.344.648 3.336 0 1.944-.72 3.36-.72 1.392-1.896 2.16a4.55 4.55 0 0 1-2.52.744q-1.968 0-3.168-1.416l-.408 1.392zm6.792-9.912q-.456 0-.864.192a4 4 0 0 0-.792.504v6.864q.744.672 1.632.672 1.056 0 1.728-1.032.696-1.032.696-3.144 0-2.136-.672-3.096-.648-.96-1.728-.96m13.948-.84q-.672 0-1.248.84-.552.816-.624 3.024h2.04q.864 0 1.152-.336.312-.36.312-1.176 0-1.2-.48-1.776t-1.152-.576m.048 11.088q-1.752 0-3.096-.72a5.36 5.36 0 0 1-2.112-2.112q-.768-1.392-.768-3.312 0-2.016.888-3.384.912-1.392 2.328-2.088a6.4 6.4 0 0 1 2.952-.72q1.584 0 2.688.672a4.35 4.35 0 0 1 1.704 1.824q.576 1.128.576 2.592 0 .696-.144 1.272h-6.936q.12 1.896 1.032 2.808.936.888 2.184.888.984 0 1.68-.36a5 5 0 0 0 1.224-.936l.84.768q-.744 1.416-2.016 2.112t-3.024.696m12.468-11.088q-.672 0-1.248.84-.552.816-.624 3.024h2.04q.864 0 1.152-.336.312-.36.312-1.176 0-1.2-.48-1.776t-1.152-.576m.048 11.088q-1.752 0-3.096-.72a5.36 5.36 0 0 1-2.112-2.112q-.768-1.392-.768-3.312 0-2.016.888-3.384.912-1.392 2.328-2.088a6.4 6.4 0 0 1 2.952-.72q1.584 0 2.688.672a4.35 4.35 0 0 1 1.704 1.824q.576 1.128.576 2.592 0 .696-.144 1.272h-6.936q.12 1.896 1.032 2.808.936.888 2.184.888.984 0 1.68-.36a5 5 0 0 0 1.224-.936l.84.768q-.744 1.416-2.016 2.112t-3.024.696m6.069-.36v-1.128l1.32-.288q.024-.912.024-1.824a68 68 0 0 0 .024-1.8v-10.056l-1.488-.24v-1.008l5.04-1.08.384.24-.096 3.36v10.608l.048 1.824 1.32.264V262zm11.886-5.736q0 1.968.696 3 .696 1.008 1.8 1.008.816 0 1.488-.552v-7.152a2.26 2.26 0 0 0-1.416-.504q-1.104 0-1.848 1.032-.72 1.032-.72 3.168m4.296 6-.192-1.368q-1.392 1.464-3.384 1.464a4.5 4.5 0 0 1-2.448-.696q-1.08-.696-1.704-2.04-.624-1.368-.624-3.312 0-1.968.744-3.36.768-1.416 1.968-2.16 1.224-.768 2.568-.768.936 0 1.632.336.696.312 1.272.936v-4.392l-1.68-.24v-1.008l5.064-1.08.384.24-.096 3.36v12.456l1.176.24V262zm18.303-10.8v-1.056h4.536v1.056l-1.392.264-3.96 10.32h-1.824l-4.32-10.344-1.177-.24v-1.056h6.817v1.056l-1.512.312 2.256 6.144 2.088-6.168zm14.015 10.872q-2.088 0-2.64-1.728-.768.816-1.488 1.296-.696.456-1.944.456-1.392 0-2.28-.792-.864-.792-.864-2.28 0-.864.384-1.56t1.392-1.296 2.856-1.128q.36-.12.84-.24t.984-.24v-.792q0-1.608-.408-2.184-.384-.576-1.536-.576h-.312q-.144 0-.336.024l-.12 1.056q-.024 1.176-.552 1.704-.504.528-1.2.528-1.32 0-1.608-1.2.096-1.488 1.512-2.424t4.008-.936q2.304 0 3.288 1.056 1.008 1.056 1.008 3.48v5.376q0 .696.528.696a.7.7 0 0 0 .36-.096q.168-.12.36-.432l.648.432q-.432.96-1.128 1.392-.672.408-1.752.408m-5.664-3.672q0 .888.408 1.32a1.41 1.41 0 0 0 1.584.312q.288-.12.912-.552v-3.888a10 10 0 0 0-.624.216q-.288.096-.504.192-.816.336-1.296.96-.48.6-.48 1.44m9.126 3.336v-1.128l1.296-.288q.024-.864.024-1.872v-3.144q0-.984-.024-1.512 0-.552-.048-1.272l-1.464-.216v-.936l4.728-1.608.432.264.144 1.728q.936-1.104 1.848-1.536a4.5 4.5 0 0 1 1.992-.456q1.56 0 2.496 1.032.96 1.032.96 3.096v4.608q0 .984.024 1.872l1.2.24V262h-6.336v-1.128l1.248-.264q.024-.888.024-1.872v-4.296q0-1.152-.312-1.608-.312-.48-1.008-.48-.936 0-2.064.864v5.52q0 1.008.024 1.896l1.128.24V262zm25.874-10.728q-.672 0-1.248.84-.552.816-.624 3.024h2.04q.864 0 1.152-.336.312-.36.312-1.176 0-1.2-.48-1.776t-1.152-.576m.048 11.088q-1.752 0-3.096-.72a5.36 5.36 0 0 1-2.112-2.112q-.768-1.392-.768-3.312 0-2.016.888-3.384.912-1.392 2.328-2.088a6.4 6.4 0 0 1 2.952-.72q1.584 0 2.688.672a4.35 4.35 0 0 1 1.704 1.824q.576 1.128.576 2.592 0 .696-.144 1.272h-6.936q.12 1.896 1.032 2.808.936.888 2.184.888.984 0 1.68-.36a5 5 0 0 0 1.224-.936l.84.768q-.744 1.416-2.016 2.112t-3.024.696m12.467-11.088q-.672 0-1.248.84-.552.816-.624 3.024h2.04q.864 0 1.152-.336.312-.36.312-1.176 0-1.2-.48-1.776t-1.152-.576m.048 11.088q-1.752 0-3.096-.72a5.36 5.36 0 0 1-2.112-2.112q-.768-1.392-.768-3.312 0-2.016.888-3.384.912-1.392 2.328-2.088a6.4 6.4 0 0 1 2.952-.72q1.584 0 2.688.672a4.35 4.35 0 0 1 1.704 1.824q.576 1.128.576 2.592 0 .696-.144 1.272h-6.936q.12 1.896 1.032 2.808.936.888 2.184.888.984 0 1.68-.36a5 5 0 0 0 1.224-.936l.84.768q-.744 1.416-2.016 2.112t-3.024.696m6.516-.36v-1.128l1.296-.288q.024-.864.024-1.872v-3.144q0-.984-.024-1.512 0-.552-.048-1.272l-1.464-.216v-.936l4.728-1.608.432.264.144 1.728q.936-1.104 1.848-1.536a4.5 4.5 0 0 1 1.992-.456q1.56 0 2.496 1.032.96 1.032.96 3.096v4.608q0 .984.024 1.872l1.2.24V262h-6.336v-1.128l1.248-.264q.024-.888.024-1.872v-4.296q0-1.152-.312-1.608-.312-.48-1.008-.48-.936 0-2.064.864v5.52q0 1.008.024 1.896l1.128.24V262zm-293.039 30v-1.128l1.296-.288q.024-.864.024-1.872v-11.808l-1.488-.24v-1.008l4.968-1.08.384.24-.096 3.36v3.864q.96-1.128 1.848-1.56a4.34 4.34 0 0 1 1.968-.456q1.584 0 2.544 1.032t.96 3.096v4.608q0 .984.024 1.872l1.2.24V292h-6.312v-1.128l1.248-.264q.024-.888.024-1.872v-4.296q0-1.176-.288-1.632-.264-.456-1.008-.456-.48 0-1.032.288a4.9 4.9 0 0 0-1.104.816v5.28q0 1.008.024 1.896l1.128.24V292zm20.765-10.728q-.672 0-1.248.84-.552.816-.624 3.024h2.04q.864 0 1.152-.336.312-.36.312-1.176 0-1.2-.48-1.776t-1.152-.576m.048 11.088q-1.752 0-3.096-.72a5.36 5.36 0 0 1-2.112-2.112q-.768-1.392-.768-3.312 0-2.016.887-3.384.913-1.392 2.329-2.088a6.4 6.4 0 0 1 2.952-.72q1.584 0 2.688.672a4.35 4.35 0 0 1 1.704 1.824q.576 1.128.576 2.592 0 .696-.144 1.272h-6.936q.12 1.896 1.032 2.808.936.888 2.184.888.984 0 1.68-.36a5 5 0 0 0 1.224-.936l.84.768q-.744 1.416-2.016 2.112t-3.024.696m15.733-.024q-2.088 0-2.64-1.728-.768.816-1.488 1.296-.696.456-1.944.456-1.392 0-2.28-.792-.864-.792-.864-2.28 0-.864.384-1.56t1.392-1.296 2.856-1.128q.36-.12.84-.24t.984-.24v-.792q0-1.608-.408-2.184-.384-.576-1.536-.576h-.312q-.144 0-.336.024l-.12 1.056q-.024 1.176-.552 1.704-.504.528-1.2.528-1.32 0-1.608-1.2.096-1.488 1.512-2.424t4.008-.936q2.304 0 3.288 1.056 1.008 1.056 1.008 3.48v5.376q0 .696.528.696a.7.7 0 0 0 .36-.096q.168-.12.36-.432l.648.432q-.432.96-1.128 1.392-.672.408-1.752.408m-5.664-3.672q0 .888.408 1.32a1.41 1.41 0 0 0 1.584.312q.288-.12.912-.552v-3.888a10 10 0 0 0-.624.216q-.288.096-.504.192-.816.336-1.296.96-.48.6-.48 1.44m13.206-2.4q0 1.968.696 3 .696 1.008 1.8 1.008.816 0 1.488-.552v-7.152a2.26 2.26 0 0 0-1.416-.504q-1.104 0-1.848 1.032-.72 1.032-.72 3.168m4.296 6-.192-1.368q-1.392 1.464-3.384 1.464a4.5 4.5 0 0 1-2.448-.696q-1.08-.696-1.704-2.04-.624-1.368-.624-3.312 0-1.968.744-3.36.768-1.416 1.968-2.16 1.224-.768 2.568-.768.936 0 1.632.336.696.312 1.272.936v-4.392l-1.68-.24v-1.008l5.064-1.08.384.24-.096 3.36v12.456l1.176.24V292zm5.922-.264v-1.128l1.296-.288q.024-.864.024-1.872v-2.904q0-.984-.024-1.632 0-.672-.048-1.392l-1.488-.216v-.936l5.04-1.608.408.264-.072 3.48v4.968q0 1.008.024 1.896l1.2.24V292zm3.192-13.752q-.84 0-1.44-.528-.6-.552-.6-1.368 0-.84.6-1.368.6-.552 1.44-.552t1.44.552q.6.528.6 1.368 0 .816-.6 1.368-.6.528-1.44.528M378.524 292v-1.128l1.296-.288q.024-.864.024-1.872v-3.144q0-.984-.024-1.512 0-.552-.048-1.272l-1.464-.216v-.936l4.728-1.608.432.264.144 1.728q.936-1.104 1.848-1.536a4.5 4.5 0 0 1 1.992-.456q1.56 0 2.496 1.032.96 1.032.96 3.096v4.608q0 .984.024 1.872l1.2.24V292h-6.336v-1.128l1.248-.264q.024-.888.024-1.872v-4.296q0-1.152-.312-1.608-.312-.48-1.008-.48-.936 0-2.064.864v5.52q0 1.008.024 1.896l1.128.24V292zm19.997-5.376q.84 0 1.248-.744.432-.744.432-2.016t-.432-1.968q-.408-.72-1.2-.72-.816 0-1.224.72t-.408 1.992.384 2.016q.384.72 1.2.72m-3.192 7.368q0 1.056.792 1.536.792.504 2.424.504 1.8 0 2.712-.528t.912-1.32q0-.528-.384-.96-.384-.408-1.368-.408h-2.52q-1.32 0-2.184-.216-.192.336-.288.648a2.6 2.6 0 0 0-.096.744m3.216-6.24q-1.248 0-2.184-.288a2.2 2.2 0 0 0-.288 1.104q0 .408.312.672.312.24 1.08.24h2.808q1.824 0 2.904.456 1.08.432 1.536 1.224.48.768.48 1.824 0 1.2-.792 2.208-.792 1.032-2.376 1.632-1.56.624-3.864.624-1.992 0-3.12-.408-1.128-.384-1.584-1.032t-.456-1.368q0-1.536 1.992-2.472-.744-.312-1.08-.816a2.06 2.06 0 0 1-.312-1.104q0-.84.48-1.584.504-.768 1.392-1.536-.984-.504-1.464-1.344a3.7 3.7 0 0 1-.48-1.872q0-1.68 1.224-2.784 1.248-1.104 3.792-1.104 1.296 0 2.256.288t1.56.816l2.688-1.152.384.24v1.848h-2.28q.432.792.432 1.848 0 1.608-1.248 2.736-1.224 1.104-3.792 1.104' })));
+   const v = ({ title: e, titleId: n, ...a }) => h.createElement('svg', p({ xmlns: 'http://www.w3.org/2000/svg', width: 960, height: 540, fill: 'none', 'aria-label': 'Een tekst die iets groter is dan gebruikelijk, in bold. De hele tekst is aangeduid met het cijfer 1. De tekst: \\u201CDit is een voorbeeld van een heading.\\u201D.', viewBox: '0 0 960 540', role: 'img', 'aria-labelledby': n }, a), e ? h.createElement('title', { id: n }, e) : null, i || (i = h.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), l || (l = h.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = h.createElement('path', { stroke: '#DE00A4', strokeLinecap: 'square', strokeWidth: 2, d: 'M307.762 230v80' })), o || (o = h.createElement('path', { stroke: '#DE00A4', strokeLinecap: 'square', strokeLinejoin: 'bevel', strokeWidth: 2, d: 'M268 270h39' })), r || (r = h.createElement('rect', { width: 32, height: 32, x: 236, y: 254, fill: '#DE00A4', rx: 16 })), d || (d = h.createElement('path', { fill: '#fff', d: 'M254.502 264.368V276.5H252v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43z' })), g || (g = h.createElement('path', { fill: '#0A2750', d: 'M324.896 248.952v4.128l.064 4.064h1.056q2.752 0 4.32-2.24 1.6-2.272 1.6-6.432 0-4.224-1.6-6.432-1.568-2.208-4.288-2.208h-1.088l-.064 4v5.12m-7.84-9.248v-1.728h9.504q3.425 0 5.856 1.28 2.431 1.248 3.744 3.584 1.312 2.336 1.312 5.6 0 3.328-1.408 5.696t-4 3.616q-2.56 1.248-6.08 1.248h-8.928v-1.728l2.4-.256q.064-1.952.064-3.968v-9.12q0-2.016-.064-3.968zM339.523 259v-1.504l1.728-.384q.032-1.152.032-2.496v-3.872q0-1.312-.032-2.176 0-.896-.064-1.856l-1.984-.288v-1.248l6.72-2.144.544.352-.096 4.64v6.624q0 1.344.032 2.528l1.6.32V259zm4.256-18.336q-1.12 0-1.92-.704a2.38 2.38 0 0 1-.8-1.824q0-1.12.8-1.824.8-.736 1.92-.736t1.92.736q.8.704.8 1.824a2.38 2.38 0 0 1-.8 1.824q-.801.704-1.92.704m11.885 18.816q-2.145 0-3.36-1.024-1.216-1.056-1.216-3.424v-1.536q.032-.736.032-1.664v-6.112h-2.08v-1.888l2.368-.32 1.6-4.48h3.264l-.064 4.512h3.36v2.176h-3.36v8.96q0 1.12.448 1.664.48.512 1.184.512.831 0 1.728-.704l.8.768a4.64 4.64 0 0 1-1.792 1.888q-1.12.672-2.912.672m12.296-.48v-1.504l1.728-.384q.032-1.152.032-2.496v-3.872q0-1.312-.032-2.176 0-.896-.064-1.856l-1.984-.288v-1.248l6.72-2.144.544.352-.096 4.64v6.624q0 1.344.032 2.528l1.6.32V259zm4.256-18.336q-1.12 0-1.92-.704a2.38 2.38 0 0 1-.8-1.824q0-1.12.8-1.824.8-.736 1.92-.736t1.92.736q.8.704.8 1.824a2.38 2.38 0 0 1-.8 1.824q-.8.704-1.92.704m11.437 18.816q-3.04 0-5.568-1.472l.096-3.904h2.56l.544 3.168q.576.224 1.152.352.576.096 1.248.096 1.375 0 2.112-.448.736-.48.736-1.44a1.75 1.75 0 0 0-.544-1.28q-.544-.544-2.144-.992l-1.728-.512q-1.856-.544-2.88-1.76-.992-1.216-.992-3.008 0-2.208 1.728-3.712 1.728-1.536 4.96-1.536 1.409 0 2.592.352 1.216.32 2.464.96l-.224 3.488h-2.56l-.64-2.752q-.672-.256-1.76-.256t-1.76.448q-.64.449-.64 1.344 0 .64.512 1.152.512.48 2.176.992l1.568.448q2.272.672 3.264 1.92t.992 3.04q0 2.528-1.952 3.936-1.92 1.376-5.312 1.376m23.71-14.784q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368-.639-.768-1.536-.768m.064 14.784q-2.336 0-4.128-.96a7.16 7.16 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.217-1.855 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.112 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.528 1.376 3.744 1.248 1.184 2.912 1.184 1.313 0 2.24-.48a6.7 6.7 0 0 0 1.632-1.248l1.12 1.024q-.991 1.888-2.688 2.816-1.695.928-4.032.928m16.624-14.784q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368t-1.536-.768m.064 14.784q-2.337 0-4.128-.96a7.14 7.14 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.215-1.855 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.111 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.528 1.376 3.744 1.248 1.184 2.912 1.184 1.311 0 2.24-.48a6.8 6.8 0 0 0 1.632-1.248l1.12 1.024q-.993 1.888-2.688 2.816-1.697.928-4.032.928m8.687-.48v-1.504l1.728-.384q.033-1.152.032-2.496v-4.192q0-1.312-.032-2.016a26 26 0 0 0-.064-1.696l-1.952-.288v-1.248l6.304-2.144.576.352.192 2.304q1.248-1.472 2.464-2.048a6 6 0 0 1 2.656-.608q2.08 0 3.328 1.376 1.28 1.375 1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V259h-8.448v-1.504l1.664-.352q.032-1.184.032-2.496v-5.728q0-1.536-.416-2.144-.415-.64-1.344-.64-1.248 0-2.752 1.152v7.36q0 1.344.032 2.528l1.504.32V259zm36.291-14.048v-1.408h6.048v1.408l-1.856.352-5.28 13.76h-2.432l-5.76-13.792-1.568-.32v-1.408h9.088v1.408l-2.016.416 3.008 8.192 2.784-8.224zm14.432 14.528q-2.496 0-4.32-1.024a7.25 7.25 0 0 1-2.816-2.912q-.992-1.888-.992-4.352t1.056-4.288a7.7 7.7 0 0 1 2.944-2.848q1.856-1.024 4.128-1.024t4.096.992a7.4 7.4 0 0 1 2.944 2.848q1.088 1.824 1.088 4.32t-.992 4.352a7.26 7.26 0 0 1-2.816 2.912q-1.824 1.024-4.32 1.024m0-1.664q1.344 0 2.016-1.568t.672-4.96q0-3.424-.672-4.992t-2.016-1.568q-1.377 0-2.048 1.568-.672 1.567-.672 4.992 0 3.392.672 4.96.671 1.568 2.048 1.568m18.312 1.664q-2.496 0-4.32-1.024a7.26 7.26 0 0 1-2.816-2.912q-.992-1.888-.992-4.352t1.056-4.288a7.7 7.7 0 0 1 2.944-2.848q1.857-1.024 4.128-1.024t4.096.992a7.4 7.4 0 0 1 2.944 2.848q1.089 1.824 1.088 4.32t-.992 4.352a7.25 7.25 0 0 1-2.816 2.912q-1.824 1.024-4.32 1.024m0-1.664q1.344 0 2.016-1.568t.672-4.96q0-3.424-.672-4.992t-2.016-1.568q-1.376 0-2.048 1.568-.672 1.567-.672 4.992 0 3.392.672 4.96t2.048 1.568m9.902 1.184v-1.504l1.76-.352q.032-1.184.032-2.528v-4.224q0-.896-.032-1.472 0-.576-.032-1.056 0-.512-.032-1.152l-1.952-.288v-1.248l6.304-2.144.576.352.288 3.776q.672-2.047 1.888-3.072 1.216-1.056 2.4-1.056 1.056 0 1.824.608.768.576.96 1.76-.032 1.248-.672 1.952-.64.672-1.6.672-1.344 0-2.464-1.504l-.192-.256q-.704.672-1.312 1.696a8 8 0 0 0-.832 2.144v4.448q0 1.28.032 2.4l2.528.544V259zm14.158.032v-1.504l1.696-.352q.032-1.152.032-2.496v-15.872l-1.984-.256v-1.344l6.624-1.44.512.32-.128 4.48v4.512q2.016-2.048 4.64-2.048 1.76 0 3.168.928 1.407.896 2.24 2.72.864 1.792.864 4.448 0 2.592-.96 4.48-.96 1.856-2.528 2.88a6.07 6.07 0 0 1-3.36.992q-2.625 0-4.224-1.888l-.544 1.856zm9.056-13.216q-.609 0-1.152.256a5.2 5.2 0 0 0-1.056.672v9.152q.991.896 2.176.896 1.407 0 2.304-1.376.928-1.376.928-4.192 0-2.849-.896-4.128-.864-1.28-2.304-1.28m18.598-1.12q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368t-1.536-.768m.064 14.784q-2.337 0-4.128-.96a7.14 7.14 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.215-1.855 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.111 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.528 1.376 3.744 1.247 1.184 2.912 1.184 1.311 0 2.24-.48a6.8 6.8 0 0 0 1.632-1.248l1.12 1.024q-.993 1.888-2.688 2.816t-4.032.928m16.623-14.784q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.417-.48.416-1.568 0-1.6-.64-2.368-.639-.768-1.536-.768m.064 14.784q-2.336 0-4.128-.96a7.16 7.16 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.217-1.855 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.112 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.528 1.376 3.744 1.248 1.184 2.912 1.184 1.313 0 2.24-.48a6.7 6.7 0 0 0 1.632-1.248l1.12 1.024q-.991 1.888-2.688 2.816-1.695.928-4.032.928m8.093-.48v-1.504l1.76-.384q.032-1.216.032-2.432.032-1.216.032-2.4v-13.408l-1.984-.32v-1.344l6.72-1.44.512.32-.128 4.48v14.144l.064 2.432 1.76.352V259zm15.847-7.648q0 2.624.928 4 .929 1.344 2.4 1.344 1.089 0 1.984-.736v-9.536q-.864-.672-1.888-.672-1.471 0-2.464 1.376-.96 1.375-.96 4.224m5.728 8-.256-1.824q-1.856 1.952-4.512 1.952a6 6 0 0 1-3.264-.928q-1.44-.928-2.272-2.72-.832-1.824-.832-4.416 0-2.624.992-4.48 1.025-1.888 2.624-2.88 1.632-1.024 3.424-1.024 1.248 0 2.176.448a5.2 5.2 0 0 1 1.696 1.248v-5.856l-2.24-.32v-1.344l6.752-1.44.512.32-.128 4.48v16.608l1.568.32V259zm-273.346 25.6v-1.408h6.048v1.408l-1.856.352-5.28 13.76h-2.432l-5.76-13.792-1.568-.32v-1.408h9.088v1.408l-2.016.416 3.008 8.192 2.784-8.224zm18.687 14.496q-2.784 0-3.52-2.304-1.023 1.087-1.984 1.728-.927.608-2.592.608-1.855 0-3.04-1.056-1.152-1.056-1.152-3.04 0-1.152.512-2.08t1.856-1.728 3.808-1.504q.48-.16 1.12-.32t1.312-.32v-1.056q0-2.144-.544-2.912-.512-.768-2.048-.768h-.416q-.192 0-.448.032l-.16 1.408q-.031 1.568-.736 2.272-.672.704-1.6.704-1.76 0-2.144-1.6.129-1.984 2.016-3.232t5.344-1.248q3.072 0 4.384 1.408 1.344 1.408 1.344 4.64v7.168q0 .928.704.928a.95.95 0 0 0 .48-.128q.225-.16.48-.576l.864.576q-.576 1.28-1.504 1.856-.896.544-2.336.544m-7.552-4.896q0 1.184.544 1.76a1.88 1.88 0 0 0 2.112.416q.384-.16 1.216-.736v-5.184a13 13 0 0 0-.832.288 8 8 0 0 0-.672.256q-1.088.448-1.728 1.28-.64.8-.64 1.92M349.927 299v-1.504l1.728-.384q.033-1.152.032-2.496v-4.192q0-1.312-.032-2.016a26 26 0 0 0-.064-1.696l-1.952-.288v-1.248l6.304-2.144.576.352.192 2.304q1.248-1.472 2.464-2.048a6 6 0 0 1 2.656-.608q2.08 0 3.328 1.376 1.28 1.375 1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V299h-8.448v-1.504l1.664-.352q.032-1.183.032-2.496v-5.728q0-1.536-.416-2.144-.415-.64-1.344-.64-1.248 0-2.752 1.152v7.36q0 1.344.032 2.528l1.504.32V299zm34.499-14.304q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368t-1.536-.768m.064 14.784q-2.337 0-4.128-.96a7.14 7.14 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.215-1.856 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.111 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.527 1.376 3.744 1.248 1.184 2.912 1.184 1.311 0 2.24-.48a6.8 6.8 0 0 0 1.632-1.248l1.12 1.024q-.993 1.888-2.688 2.816-1.697.928-4.032.928m16.623-14.784q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368-.639-.768-1.536-.768m.064 14.784q-2.336 0-4.128-.96a7.16 7.16 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.217-1.856 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.112 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.527 1.376 3.744 1.248 1.184 2.912 1.184 1.313 0 2.24-.48a6.7 6.7 0 0 0 1.632-1.248l1.12 1.024q-.991 1.888-2.688 2.816-1.695.928-4.032.928m8.688-.48v-1.504l1.728-.384q.032-1.152.032-2.496v-4.192q0-1.312-.032-2.016 0-.736-.064-1.696l-1.952-.288v-1.248l6.304-2.144.576.352.192 2.304q1.248-1.472 2.464-2.048a6 6 0 0 1 2.656-.608q2.08 0 3.328 1.376 1.28 1.375 1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V299h-8.448v-1.504l1.664-.352q.032-1.183.032-2.496v-5.728q0-1.536-.416-2.144-.417-.64-1.344-.64-1.248 0-2.752 1.152v7.36q0 1.344.032 2.528l1.504.32V299zm26.562 0v-1.504l1.728-.384q.033-1.152.032-2.496v-15.744l-1.984-.32v-1.344l6.624-1.44.512.32-.128 4.48v5.152q1.28-1.504 2.464-2.08a5.8 5.8 0 0 1 2.624-.608q2.112 0 3.392 1.376t1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V299h-8.416v-1.504l1.664-.352q.032-1.183.032-2.496v-5.728q0-1.568-.384-2.176-.351-.608-1.344-.608-.64 0-1.376.384t-1.472 1.088v7.04q0 1.344.032 2.528l1.504.32V299zm27.686-14.304q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368-.639-.768-1.536-.768m.064 14.784q-2.336 0-4.128-.96a7.16 7.16 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.217-1.856 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.112 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.527 1.376 3.744 1.248 1.184 2.912 1.184 1.313 0 2.24-.48a6.7 6.7 0 0 0 1.632-1.248l1.12 1.024q-.991 1.888-2.688 2.816-1.695.928-4.032.928m20.978-.032q-2.784 0-3.52-2.304-1.024 1.087-1.984 1.728-.929.608-2.592.608-1.856 0-3.04-1.056-1.152-1.056-1.152-3.04 0-1.152.512-2.08t1.856-1.728 3.808-1.504q.48-.16 1.12-.32t1.312-.32v-1.056q0-2.144-.544-2.912-.512-.768-2.048-.768h-.416q-.192 0-.448.032l-.16 1.408q-.032 1.568-.736 2.272-.672.704-1.6.704-1.76 0-2.144-1.6.128-1.984 2.016-3.232t5.344-1.248q3.072 0 4.384 1.408 1.344 1.408 1.344 4.64v7.168q0 .928.704.928a.95.95 0 0 0 .48-.128q.224-.16.48-.576l.864.576q-.576 1.28-1.504 1.856-.896.544-2.336.544m-7.552-4.896q0 1.184.544 1.76a1.88 1.88 0 0 0 2.112.416q.384-.16 1.216-.736v-5.184q-.416.127-.832.288a8 8 0 0 0-.672.256q-1.088.448-1.728 1.28-.64.8-.64 1.92m17.608-3.2q0 2.624.928 4 .928 1.344 2.4 1.344 1.088 0 1.984-.736v-9.536q-.864-.672-1.888-.672-1.472 0-2.464 1.376-.96 1.375-.96 4.224m5.728 8-.256-1.824q-1.856 1.952-4.512 1.952a6 6 0 0 1-3.264-.928q-1.44-.928-2.272-2.72-.832-1.824-.832-4.416 0-2.624.992-4.48 1.024-1.888 2.624-2.88 1.632-1.024 3.424-1.024 1.248 0 2.176.448a5.2 5.2 0 0 1 1.696 1.248v-5.856l-2.24-.32v-1.344l6.752-1.44.512.32-.128 4.48v16.608l1.568.32V299zm7.896-.352v-1.504l1.728-.384q.032-1.152.032-2.496v-3.872q0-1.312-.032-2.176 0-.896-.064-1.856l-1.984-.288v-1.248l6.72-2.144.544.352-.096 4.64v6.624q0 1.344.032 2.528l1.6.32V299zm4.256-18.336q-1.12 0-1.92-.704a2.38 2.38 0 0 1-.8-1.824q0-1.12.8-1.824.8-.736 1.92-.736t1.92.736q.8.703.8 1.824a2.38 2.38 0 0 1-.8 1.824q-.8.704-1.92.704M518.896 299v-1.504l1.728-.384q.032-1.152.032-2.496v-4.192q0-1.312-.032-2.016a26 26 0 0 0-.064-1.696l-1.952-.288v-1.248l6.304-2.144.576.352.192 2.304q1.248-1.472 2.464-2.048a6 6 0 0 1 2.656-.608q2.08 0 3.328 1.376 1.28 1.375 1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V299h-8.448v-1.504l1.664-.352q.032-1.183.032-2.496v-5.728q0-1.536-.416-2.144-.415-.64-1.344-.64-1.248 0-2.752 1.152v7.36q0 1.344.032 2.528l1.504.32V299zm26.663-7.168q1.12 0 1.664-.992.576-.992.576-2.688t-.576-2.624q-.544-.96-1.6-.96-1.089 0-1.632.96-.544.96-.544 2.656t.512 2.688q.511.96 1.6.96m-4.256 9.824q0 1.408 1.056 2.048 1.056.672 3.232.672 2.4 0 3.616-.704t1.216-1.76q0-.704-.512-1.28-.513-.544-1.824-.544h-3.36q-1.76 0-2.912-.288a4.3 4.3 0 0 0-.384.864 3.4 3.4 0 0 0-.128.992m4.288-8.32q-1.665 0-2.912-.384a2.9 2.9 0 0 0-.384 1.472q0 .544.416.896.416.32 1.44.32h3.744q2.432 0 3.872.608 1.44.576 2.048 1.632.64 1.024.64 2.432 0 1.6-1.056 2.944-1.056 1.376-3.168 2.176-2.08.832-5.152.832-2.657 0-4.16-.544-1.505-.512-2.112-1.376t-.608-1.824q0-2.048 2.656-3.296-.993-.416-1.44-1.088a2.74 2.74 0 0 1-.416-1.472q0-1.12.64-2.112.672-1.024 1.856-2.048-1.313-.672-1.952-1.792-.64-1.12-.64-2.496 0-2.24 1.632-3.712 1.663-1.472 5.056-1.472 1.728 0 3.008.384t2.08 1.088l3.584-1.536.512.32v2.464h-3.04q.576 1.056.576 2.464 0 2.143-1.664 3.648-1.632 1.472-5.056 1.472' })));
    var f = a(59778),
     x = a(21034);
-   const q = { title: 'Heading 3', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading 3', pagination_label: 'Heading 3', description: 'Koptekst die in de koppenstructuur op het derde niveau staat.', issue_number: 259, slug: '/heading-3', keywords: ['caption', 'content', 'h3', 'heading', 'heading level', 'headline', 'kop', 'paginakop', 'sectie', 'section', 'structure', 'titel', 'title'] },
+   const q = { title: 'Heading 2', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading 2', pagination_label: 'Heading 2', description: 'Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.', issue_number: 258, slug: '/heading-2', keywords: ['caption', 'content', 'h2', 'heading', 'heading level', 'headline', 'kop', 'paginakop', 'sectie', 'section', 'structure', 'titel', 'title'] },
     b = void 0,
     k = {},
-    j = 'Heading 3',
-    T = 'Koptekst die in de koppenstructuur op het derde niveau staat.',
-    D = 259,
+    j = 'Heading 2',
+    T = 'Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.',
+    D = 258,
     H = c.find((e) => e.number === D),
     F = [
      { value: 'Anatomie', id: 'anatomie', level: 2 },
@@ -376,6 +333,50 @@
     const { wrapper: n } = { ...(0, m.R)(), ...e.components };
     return n ? (0, u.jsx)(n, { ...e, children: (0, u.jsx)(N, { ...e }) }) : N(e);
    }
+  },
+  70348(e, n, a) {
+   'use strict';
+   a.d(n, { K: () => r, n: () => o });
+   var t = a(13526),
+    i = a(96345),
+    l = a(37168),
+    s = a(86070);
+   const o = ({ className: e, ...n }) => {
+     const a = (0, t.A)('ma-utrecht-accordion', 'utrecht-accordion', e);
+     return (0, s.jsx)('div', { className: a, children: n.children });
+    },
+    r = ({ className: e, label: n, heading: a, headingLevel: o, headingApperance: r, ...d }) => {
+     const g = (0, t.A)('utrecht-accordion__section', e);
+     return (0, s.jsxs)('details', { className: g, ...d, children: [(0, s.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, s.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, s.jsx)('span', { className: 'nl-button__icon-start', children: (0, s.jsx)(i.A, {}) }), (0, s.jsxs)('span', { className: 'nl-button__label', children: [a && (0, s.jsx)(l.D, { level: o, appearance: r, children: a }), n] })] }) }), (0, s.jsx)('div', { className: 'utrecht-accordion__panel', children: d.children })] });
+    };
+  },
+  82839(e, n, a) {
+   var t = { './button-docs/docs/aliases.md': [62620, 62620], './code-block-docs/docs/aliases.md': [23021, 23021], './code-docs/docs/aliases.md': [39021, 39021], './color-sample-docs/docs/aliases.md': [24518, 24518], './data-badge-docs/docs/aliases.md': [99976, 99976], './heading-1-docs/docs/aliases.md': [16918, 16918], './heading-2-docs/docs/aliases.md': [5138, 5138], './heading-3-docs/docs/aliases.md': [70342, 70342], './heading-4-docs/docs/aliases.md': [67426, 67426], './heading-docs/docs/aliases.md': [5895, 5895], './link-docs/docs/aliases.md': [56551, 56551], './mark-docs/docs/aliases.md': [18569, 18569], './number-badge-docs/docs/aliases.md': [57569, 57569], './paragraph-docs/docs/aliases.md': [26183, 26183], './skip-link-docs/docs/aliases.md': [39927, 39927] };
+   function i(e) {
+    if (!a.o(t, e))
+     return Promise.resolve().then(() => {
+      var n = new Error("Cannot find module '" + e + "'");
+      throw ((n.code = 'MODULE_NOT_FOUND'), n);
+     });
+    var n = t[e],
+     i = n[0];
+    return a.e(n[1]).then(() => a(i));
+   }
+   ((i.keys = () => Object.keys(t)), (i.id = 82839), (e.exports = i));
+  },
+  85162(e, n, a) {
+   'use strict';
+   a.d(n, { s: () => r });
+   var t = a(29181),
+    i = a(13526),
+    l = a(32385),
+    s = a(86070);
+   const o = { 'Heading 1': 'Heading', 'Heading 2': 'Heading', 'Heading 3': 'Heading', 'Heading 4': 'Heading', 'Heading 5': 'Heading', 'Heading 6': 'Heading' },
+    r = ({ name: e, relayStep: n, description: a }) => {
+     const r = (0, l.fX)(n),
+      d = o[e] ?? e;
+     return (0, s.jsxs)(t.WK, { children: [(0, s.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, i.A)('ma-component-illustration', `ma-component-illustration--${r}`), fill: 'none', children: [(0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-background-color, white)', children: [(0, s.jsx)('rect', { width: '960', height: '540' }), (0, s.jsx)('rect', { width: '960', height: '540' })] }), (0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-grid-color, #eee)', children: [(0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, s.jsx)('use', { href: `/svg/componenten_overzicht_${(0, l.fX)(d)}.svg#component-illustration` })] }), (0, s.jsx)(t.$P, { className: 'ma-component-illustration__caption', children: a })] });
+    };
   },
  },
 ]);

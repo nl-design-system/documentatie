@@ -267,6 +267,7 @@
     i = a(32385),
     s = a(86070);
    const r = ({ component: e }) => {
+    if (globalThis.isAstro) return null;
     const { title: n } = e,
      r = (0, i.fX)(n),
      o = l.lazy(() => a(82839)(`./${r}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));

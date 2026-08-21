@@ -240,12 +240,12 @@
     return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.p, { children: 'Het label van de button maakt kort en bondig duidelijk waar de button voor dient. Een label kan bestaan uit tekst of uit een icoon. Als je een icoon gebruikt, heeft het de voorkeur om ook een beschrijvende tekst in de button op te nemen.' }), '\n', (0, a.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/duidelijk-buttontekst/', children: 'Duidelijke buttontekst die beschrijft wat de button doet' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Respecteer conventies' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Gebruik SVG voor iconen en geen font' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/richtlijnen/formulieren/meerdere-stappen/consistente-benaming/', children: 'Zorg voor een consistente navigatie en benaming van links en buttons' }) }), '\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/richtlijnen/formulieren/buttons/toegankelijke-naam/', children: 'De toegankelijke naam van een button' }) }), '\n'] })] });
    }
    var F = t(81500),
-    H = t(26012);
-   function R(e) {
+    T = t(26012);
+   function H(e) {
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, r.R)(), ...e.components };
     return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.p, { children: 'De zichtbare naam van de button is gelijk aan de toegankelijke naam.' }), '\n', (0, a.jsxs)(n.p, { children: ['Dit is het eenvoudigst te realiseren door een ', (0, a.jsx)(n.code, { children: 'button' }), '-element te gebruiken met daarin tekst:'] }), '\n', (0, a.jsx)(n.pre, { children: (0, a.jsx)(n.code, { className: 'language-html', children: '<button>Ga naar stap 2</button>\n' }) }), '\n', (0, a.jsxs)(n.p, { children: ['Pas op met het gebruik van ', (0, a.jsx)(n.code, { children: 'aria-label' }), ' om een naam te geven aan een button. Een ', (0, a.jsx)(n.code, { children: 'aria-label' }), ' overschrijft de tekstinhoud van een button. Zodoende kan een button een toegankelijke naam krijgen die anders is dan de zichtbare naam, waardoor mensen die hulpsoftware gebruiken moeilijkheden kunnen krijgen met het bedienen van de button. Als je echt een ', (0, a.jsx)(n.code, { children: 'aria-label' }), ' nodig hebt, zorg dan dat de waarde van het ', (0, a.jsx)(n.code, { children: 'aria-label' }), ' begint met de exacte tekst die zichtbaar is in de button.'] }), '\n', (0, a.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, a.jsxs)(n.ul, { children: ['\n', (0, a.jsx)(n.li, { children: (0, a.jsx)(n.a, { href: '/richtlijnen/formulieren/labels/zichtbare-naam/', children: 'De zichtbare naam moet overeenkomen met de toegankelijke naam' }) }), '\n'] })] });
    }
-   var T = t(21389),
+   var R = t(21389),
     L = t(76703),
     C = t(32712);
    function _(e) {
@@ -336,11 +336,11 @@
       status: '',
       component: function (e = {}) {
        const { wrapper: n } = { ...(0, r.R)(), ...e.components };
-       return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(R, { ...e }) }) : R(e);
+       return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(H, { ...e }) }) : H(e);
       },
       tags: ['developer'],
      },
-     { title: 'De button heeft een minimale grootte van 44 bij 44 pixels.', sc: '2.5.5', status: '', component: T.Ay, tags: ['designer', 'developer'] },
+     { title: 'De button heeft een minimale grootte van 44 bij 44 pixels.', sc: '2.5.5', status: '', component: R.Ay, tags: ['designer', 'developer'] },
      { title: 'Als een buttontekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: L.Ay, tags: ['developer', 'contentmaker'] },
      { title: 'De button activeert niet al bij toetsenbordfocus.', sc: '3.2.1', status: '', component: G.Ay, tags: ['developer'] },
      { title: 'Buttons met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.', sc: '3.2.4', status: '', component: C.Ay, tags: ['designer', 'developer'] },
@@ -370,7 +370,7 @@
      { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: k.Ay, tags: ['developer'] },
      { title: 'Je kunt de button focussen met de tabtoets en activeren met de spatiebalk en de entertoets.', sc: '2.1.1', status: '', component: y.Ay, tags: ['developer'] },
      { title: 'Wanneer een button de toetsenbordfocus krijgt is de focus zichtbaar.', sc: '2.4.7', status: '', component: F.Ay, tags: ['developer'] },
-     { title: 'Als de gebruiker een button indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.', sc: '2.5.2', status: '', component: H.Ay, tags: ['developer'] },
+     { title: 'Als de gebruiker een button indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.', sc: '2.5.2', status: '', component: T.Ay, tags: ['developer'] },
      { title: 'De button heeft een rol van button en het type is instelbaar.', sc: '4.1.2', status: '', component: B.Ay, tags: ['developer'] },
     ];
    var V = t(51582);
@@ -659,6 +659,7 @@
     r = t(32385),
     s = t(86070);
    const o = ({ component: e }) => {
+    if (globalThis.isAstro) return null;
     const { title: n } = e,
      o = (0, r.fX)(n),
      l = a.lazy(() => t(82839)(`./${o}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
@@ -698,7 +699,7 @@
   },
   70903(e, n, t) {
    'use strict';
-   t.d(n, { B: () => H });
+   t.d(n, { B: () => T });
    var i = t(96547),
     a = t(79889),
     r = t(32385),
@@ -745,7 +746,7 @@
      return (0, h.jsx)(g.In, { children: (0, z.createElement)(N[n]) });
     };
    var F = t(76223);
-   function H({ tokens: e }) {
+   function T({ tokens: e }) {
     const n = (0, r.kD)(e),
      t = (0, F.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      o = (0, r.GT)(n),

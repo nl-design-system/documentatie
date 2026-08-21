@@ -1,5 +1,5 @@
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [32139],
+ [93787],
  {
   10645(e, n, a) {
    'use strict';
@@ -10,18 +10,18 @@
   },
   21034(e, n, a) {
    'use strict';
-   a.d(n, { VK: () => x, $9: () => b, mu: () => q, Fc: () => k, K_: () => j });
+   a.d(n, { VK: () => x, $9: () => q, mu: () => b, Fc: () => k, K_: () => j });
    var t = a(29181),
     i = a(13526),
     l = a(40889),
     s = a(21530),
-    o = a(45186);
-   function r(e) {
-    return (0, o.c)() ? e.children() : null;
+    r = a(45186);
+   function o(e) {
+    return (0, r.c)() ? e.children() : null;
    }
    var d = a(86070);
    const g = ({ checked: e, unchecked: n }) =>
-    (0, d.jsx)(r, {
+    (0, d.jsx)(o, {
      children: () => {
       const t = a(83294).V6;
       return (0, d.jsx)(t, {
@@ -48,7 +48,7 @@
       l = a && h.f4.map((e) => a.find((n) => n.id === e)).filter(Boolean);
      return e && (0, d.jsx)(v.n, { children: l.map((a) => (0, d.jsx)(v.K, { className: (0, i.A)('ma-definition-of-done', a && `ma-definition-of-done--${(0, h.fX)(a.title)}`), heading: a ? `${a.title} - ${a.progress.value} van ${a.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(c._, { children: a.tasks.map(({ checked: e, name: a, id: t }) => (0, d.jsx)(c.Z, { headingLevel: n + 1, checked: e, heading: a, description: (0, h.qZ)(t) }, t)) }), (0, d.jsx)(t.fz, { children: (0, d.jsxs)(t.N_, { href: `${a.url}?filterQuery=${e.title}`, children: [a.title, ' projectbord op GitHub'] }) })] }) }, a.title)) });
     },
-    q = ({ component: e, headingLevel: n }) => {
+    b = ({ component: e, headingLevel: n }) => {
      const a = e && e.projects.filter((e) => !h.f4.includes(e.id));
      return e && a.length
       ? (0, d.jsx)(s.AC, {
@@ -63,12 +63,12 @@
           .map((e) => {
            const a = e.tasks.find(({ name: e }) => 'Naam' === e),
             i = a?.value,
-            o = (0, h.Pv)(e),
-            r = new Map([
+            r = (0, h.Pv)(e),
+            o = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${i} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${i} voor visuele regressie tests` }],
             ]),
-            u = e.tasks.filter(({ name: e, value: n }) => r.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
+            u = e.tasks.filter(({ name: e, value: n }) => o.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
            return (0, d.jsx)(
             s.Zp,
             {
@@ -77,19 +77,19 @@
               children: [
                (0, d.jsx)(t.DZ, { level: n, children: e.title.replace(/^Community/i, '') }),
                (0, d.jsxs)(t.fz, { children: [(0, d.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, d.jsxs)(t.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
-               (u.length > 0 || o.length > 0) && (0, d.jsx)(t.DZ, { level: n + 1, children: 'Snel aan de slag' }),
+               (u.length > 0 || r.length > 0) && (0, d.jsx)(t.DZ, { level: n + 1, children: 'Snel aan de slag' }),
                u.length > 0 &&
                 (0, d.jsx)(d.Fragment, {
                  children: (0, d.jsx)(t.dk, {
                   links: u
-                   .filter((e) => !!r.get(e.name))
+                   .filter((e) => !!o.get(e.name))
                    .map((e) => {
-                    const n = r.get(e.name);
+                    const n = o.get(e.name);
                     return { children: n.desciption, icon: (0, d.jsx)(l.r, { brand: n.brand }), href: e.value };
                    }),
                  }),
                 }),
-               o.length > 0 && (0, d.jsx)(d.Fragment, { children: o.map(({ frameworkName: e, tasks: a }) => (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.DZ, { level: n + 2, children: [i, ' in ', e] }), (0, d.jsx)(t.dk, { links: a.map((e) => ({ children: e.description, icon: (0, d.jsx)(l.r, { brand: e.brand }), href: e.value })) })] })) }),
+               r.length > 0 && (0, d.jsx)(d.Fragment, { children: r.map(({ frameworkName: e, tasks: a }) => (0, d.jsxs)(d.Fragment, { children: [(0, d.jsxs)(t.DZ, { level: n + 2, children: [i, ' in ', e] }), (0, d.jsx)(t.dk, { links: a.map((e) => ({ children: e.description, icon: (0, d.jsx)(l.r, { brand: e.brand }), href: e.value })) })] })) }),
               ],
              }),
             },
@@ -99,7 +99,7 @@
         })
       : (0, d.jsx)(t.fz, { children: 'Er zijn nog geen implementaties' });
     },
-    b = ({ component: e, headingLevel: n }) => {
+    q = ({ component: e, headingLevel: n }) => {
      const a = e?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = a?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
      return e && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(t.DZ, { id: 'help-component-verbeteren', level: n, children: 'Help om deze component te verbeteren' }), (0, d.jsxs)(t.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, d.jsxs)(t.Xy, { children: [i ? (0, d.jsxs)(t.Er, { children: ['Vul de ', (0, d.jsx)(t.N_, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, d.jsxs)(t.Er, { children: [(0, d.jsxs)(t.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, d.jsxs)(t.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, d.jsx)(t.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, d.jsx)(t.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
@@ -115,28 +115,28 @@
   },
   21530(e, n, a) {
    'use strict';
-   a.d(n, { AC: () => d, Fu: () => s, Wu: () => o, Zp: () => r });
+   a.d(n, { AC: () => d, Fu: () => s, Wu: () => r, Zp: () => o });
    var t = a(46447),
     i = a(13526),
     l = a(86070);
    const s = ({ background: e, children: n, className: a, ...t }) => (0, l.jsx)('div', { className: (0, i.A)('ma-card__illustration', e && `ma-card__illustration--${e}`, a), ...t, children: n }),
-    o = (e) => (0, l.jsx)('div', { className: 'ma-card__content', ...e }),
-    r = ({ href: e, appearance: n, className: a, component: s = 'div', background: o, children: r }) => {
+    r = (e) => (0, l.jsx)('div', { className: 'ma-card__content', ...e }),
+    o = ({ href: e, appearance: n, className: a, component: s = 'div', background: r, children: o }) => {
      const d = (e) => ('article' === s ? (0, l.jsx)('article', { ...e }) : 'section' === s ? (0, l.jsx)('section', { ...e }) : (0, l.jsx)('div', { ...e })),
-      g = (0, l.jsx)(d, { className: (0, i.A)('ma-cardgroup__card', o && 'ma-cardgroup__card--light-purple', `ma-cardgroup__card--${n}`, a), children: r });
+      g = (0, l.jsx)(d, { className: (0, i.A)('ma-cardgroup__card', r && 'ma-cardgroup__card--light-purple', `ma-cardgroup__card--${n}`, a), children: o });
      return e ? (0, l.jsx)(t.N_, { href: e, boxContent: !0, className: 'ma-cardgroup__link', children: g }) : g;
     },
     d = ({ appearance: e = 'large', children: n, className: a }) => (0, l.jsx)('div', { className: (0, i.A)('ma-cardgroup', `ma-cardgroup--${e}`, a), children: n });
   },
   32385(e, n, a) {
    'use strict';
-   a.d(n, { bo: () => i, KF: () => m, mJ: () => p, VZ: () => T, cR: () => j, Pv: () => v, qZ: () => s, kD: () => b, QQ: () => H, B2: () => c, Pc: () => r, f4: () => o, GT: () => k, fX: () => l, eQ: () => q, B_: () => x, o_: () => f });
+   a.d(n, { bo: () => i, KF: () => m, mJ: () => p, VZ: () => T, cR: () => j, Pv: () => v, qZ: () => s, kD: () => q, QQ: () => H, B2: () => c, Pc: () => o, f4: () => r, GT: () => k, fX: () => l, eQ: () => b, B_: () => x, o_: () => f });
    const t = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     l = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
-    o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    r = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
+    r = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    o = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
     d = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
    function g(e) {
     return Array.from(new Set(e));
@@ -163,17 +163,17 @@
        .filter(({ name: e, value: a }) => '' !== a && e.includes(n))
        .map(({ name: t, id: i, value: l }) => {
         const s = /^(.+) URL/.exec(t)[1],
-         o = 'Storybook' === s ? `${a} (${n}) in Storybook van ${e.title}` : `${a} (${n}) op ${s}`;
-        return { brand: s.toLowerCase(), name: t, id: i, value: l, description: o };
+         r = 'Storybook' === s ? `${a} (${n}) in Storybook van ${e.title}` : `${a} (${n}) op ${s}`;
+        return { brand: s.toLowerCase(), name: t, id: i, value: l, description: r };
        });
       return { frameworkName: n, tasks: t };
      });
     },
     f = (e) => e.join('.'),
     x = (e) => '--' + e.join('-'),
-    q = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function b(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((a) => ('object' == typeof e[a] && null !== e[a] ? b(e[a], [...n, a]) : []));
+    b = (e, n) => n.reduce((e, n) => e?.[n], e);
+   function q(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((a) => ('object' == typeof e[a] && null !== e[a] ? q(e[a], [...n, a]) : []));
    }
    function k(e) {
     const n = new Map();
@@ -202,12 +202,12 @@
   },
   39569(e, n, a) {
    'use strict';
-   a.d(n, { D: () => o });
+   a.d(n, { D: () => r });
    var t = a(46447),
     i = a(13526),
     l = a(32385),
     s = a(86070);
-   const o = ({ state: e }) => {
+   const r = ({ state: e }) => {
     const n = (0, l.fX)(e);
     return (0, s.jsx)(t.KE, { className: (0, i.A)('ma-estafette-badge', n && `ma-estafette-badge--${n}`), children: e });
    };
@@ -219,11 +219,71 @@
     i = a(74172),
     l = a(15089),
     s = a(28377),
-    o = a(33648),
-    r = a(83386),
+    r = a(33648),
+    o = a(83386),
     d = a(86070);
-   const g = { figma: (0, d.jsx)(i.A, {}), github: (0, d.jsx)(l.A, {}), npm: (0, d.jsx)(s.A, {}), storybook: (0, d.jsx)(o.A, {}) },
-    u = ({ brand: e }) => (0, d.jsx)(t.In, { children: g[e] || (0, d.jsx)(r.A, {}) });
+   const g = { figma: (0, d.jsx)(i.A, {}), github: (0, d.jsx)(l.A, {}), npm: (0, d.jsx)(s.A, {}), storybook: (0, d.jsx)(r.A, {}) },
+    u = ({ brand: e }) => (0, d.jsx)(t.In, { children: g[e] || (0, d.jsx)(o.A, {}) });
+  },
+  44314(e, n, a) {
+   'use strict';
+   (a.r(n), a.d(n, { assets: () => k, component: () => H, contentTitle: () => q, default: () => _, description: () => T, frontMatter: () => b, issueNumber: () => D, metadata: () => t, title: () => j, toc: () => F }));
+   const t = JSON.parse('{"id":"componenten/heading-6/index","title":"Heading 6","description":"Koptekst die in de koppenstructuur op het zesde niveau staat.","source":"@site/docs/componenten/heading-6/index.mdx","sourceDirName":"componenten/heading-6","slug":"/heading-6","permalink":"/heading-6","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading-6/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Heading 6","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Heading 6","pagination_label":"Heading 6","description":"Koptekst die in de koppenstructuur op het zesde niveau staat.","issue_number":262,"slug":"/heading-6","keywords":["caption","content","h6","heading","heading level","headline","kop","paginakop","sectie","section","structure","titel","title"]},"sidebar":"componenten","previous":{"title":"Heading 5","permalink":"/heading-5"},"next":{"title":"Heading Group","permalink":"/heading-group"}}');
+   var i,
+    l,
+    s,
+    r,
+    o,
+    d,
+    g,
+    u = a(86070),
+    m = a(18439),
+    c = a(24155),
+    h = a(30758);
+   function p() {
+    return (
+     (p = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+         for (var n = 1; n < arguments.length; n++) {
+          var a = arguments[n];
+          for (var t in a) ({}).hasOwnProperty.call(a, t) && (e[t] = a[t]);
+         }
+         return e;
+        }),
+     p.apply(null, arguments)
+    );
+   }
+   const v = ({ title: e, titleId: n, ...a }) => h.createElement('svg', p({ xmlns: 'http://www.w3.org/2000/svg', width: 960, height: 540, fill: 'none', 'aria-label': 'Een tekst, in bold. De hele tekst is aangeduid met het cijfer 1. De tekst: \\u201CDit is een voorbeeld van een heading.\\u201D.', viewBox: '0 0 960 540', role: 'img', 'aria-labelledby': n }, a), e ? h.createElement('title', { id: n }, e) : null, i || (i = h.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), l || (l = h.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = h.createElement('path', { stroke: '#DE00A4', strokeLinecap: 'square', strokeWidth: 2, d: 'M307.762 259v22' })), r || (r = h.createElement('path', { stroke: '#DE00A4', strokeLinecap: 'square', strokeLinejoin: 'bevel', strokeWidth: 2, d: 'M268 270h39' })), o || (o = h.createElement('rect', { width: 32, height: 32, x: 236, y: 254, fill: '#DE00A4', rx: 16 })), d || (d = h.createElement('path', { fill: '#fff', d: 'M254.502 264.368V276.5H252v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43z' })), g || (g = h.createElement('path', { fill: '#0A2750', d: 'M319.892 270.104v1.806l.028 1.778h.462q1.204 0 1.89-.98.7-.995.7-2.814 0-1.848-.7-2.814-.686-.966-1.876-.966h-.476l-.028 1.75v2.24m-3.43-4.046v-.756h4.158q1.499 0 2.562.56a3.86 3.86 0 0 1 1.638 1.568q.574 1.022.574 2.45 0 1.456-.616 2.492a4 4 0 0 1-1.75 1.582q-1.12.546-2.66.546h-3.906v-.756l1.05-.112q.028-.854.028-1.736v-3.99q0-.882-.028-1.736zm9.829 8.442v-.658l.756-.168q.014-.504.014-1.092v-1.694q0-.574-.014-.952 0-.392-.028-.812l-.868-.126v-.546l2.94-.938.238.154-.042 2.03v2.898q0 .588.014 1.106l.7.14v.658zm1.862-8.022q-.49 0-.84-.308a1.04 1.04 0 0 1-.35-.798q0-.49.35-.798.35-.322.84-.322t.84.322q.35.307.35.798 0 .476-.35.798a1.23 1.23 0 0 1-.84.308m5.2 8.232q-.939 0-1.47-.448-.532-.462-.532-1.498v-.672q.014-.322.014-.728v-2.674h-.91v-.826l1.036-.14.7-1.96h1.428l-.028 1.974h1.47v.952h-1.47v3.92q0 .49.196.728.21.224.518.224.363 0 .756-.308l.35.336q-.28.532-.784.826-.49.294-1.274.294m5.38-.21v-.658l.756-.168q.014-.504.014-1.092v-1.694q0-.574-.014-.952 0-.392-.028-.812l-.868-.126v-.546l2.94-.938.238.154-.042 2.03v2.898q0 .588.014 1.106l.7.14v.658zm1.862-8.022q-.49 0-.84-.308a1.04 1.04 0 0 1-.35-.798q0-.49.35-.798.35-.322.84-.322.489 0 .84.322.35.307.35.798 0 .476-.35.798a1.23 1.23 0 0 1-.84.308m5.003 8.232a4.76 4.76 0 0 1-2.436-.644l.042-1.708h1.12l.238 1.386q.252.098.504.154.252.042.546.042.603 0 .924-.196.322-.21.322-.63a.77.77 0 0 0-.238-.56q-.237-.238-.938-.434l-.756-.224q-.811-.238-1.26-.77-.434-.532-.434-1.316 0-.966.756-1.624.757-.672 2.17-.672.616 0 1.134.154.532.14 1.078.42l-.098 1.526h-1.12l-.28-1.204q-.294-.112-.77-.112t-.77.196q-.28.197-.28.588 0 .28.224.504.225.21.952.434l.686.196q.995.294 1.428.84.434.546.434 1.33 0 1.106-.854 1.722-.84.602-2.324.602m10.373-6.468q-.392 0-.728.49-.321.476-.364 1.764h1.19q.504 0 .672-.196.183-.21.182-.686 0-.7-.28-1.036-.279-.336-.672-.336m.028 6.468q-1.021 0-1.806-.42a3.13 3.13 0 0 1-1.232-1.232q-.447-.812-.448-1.932 0-1.176.518-1.974a3.4 3.4 0 0 1 1.358-1.218 3.75 3.75 0 0 1 1.722-.42q.924 0 1.568.392.658.392.994 1.064.336.659.336 1.512 0 .406-.084.742h-4.046q.07 1.106.602 1.638.546.518 1.274.518.575 0 .98-.21.406-.224.714-.546l.49.448q-.434.826-1.176 1.232-.741.406-1.764.406m7.273-6.468q-.392 0-.728.49-.322.476-.364 1.764h1.19q.504 0 .672-.196.183-.21.182-.686 0-.7-.28-1.036-.279-.336-.672-.336m.028 6.468q-1.022 0-1.806-.42a3.13 3.13 0 0 1-1.232-1.232q-.447-.812-.448-1.932 0-1.176.518-1.974a3.4 3.4 0 0 1 1.358-1.218 3.75 3.75 0 0 1 1.722-.42q.924 0 1.568.392.658.392.994 1.064.336.659.336 1.512 0 .406-.084.742h-4.046q.07 1.106.602 1.638.546.518 1.274.518.575 0 .98-.21.406-.224.714-.546l.49.448q-.433.826-1.176 1.232-.741.406-1.764.406m3.801-.21v-.658l.756-.168q.014-.504.014-1.092v-1.834q0-.575-.014-.882 0-.322-.028-.742l-.854-.126v-.546l2.758-.938.252.154.084 1.008q.546-.644 1.078-.896a2.6 2.6 0 0 1 1.162-.266q.91 0 1.456.602.56.601.56 1.806v2.688q0 .575.014 1.092l.7.14v.658h-3.696v-.658l.728-.154q.014-.518.014-1.092v-2.506q0-.672-.182-.938-.182-.28-.588-.28-.546 0-1.204.504v3.22q0 .588.014 1.106l.658.14v.658zm15.877-6.146v-.616h2.646v.616l-.812.154-2.31 6.02h-1.064l-2.52-6.034-.686-.14v-.616h3.976v.616l-.882.182 1.316 3.584 1.218-3.598zm6.314 6.356q-1.092 0-1.89-.448a3.17 3.17 0 0 1-1.232-1.274q-.434-.826-.434-1.904t.462-1.876a3.4 3.4 0 0 1 1.288-1.246 3.67 3.67 0 0 1 1.806-.448q.994 0 1.792.434a3.24 3.24 0 0 1 1.288 1.246q.476.798.476 1.89t-.434 1.904-1.232 1.274q-.798.448-1.89.448m0-.728q.588 0 .882-.686t.294-2.17q0-1.498-.294-2.184t-.882-.686q-.602 0-.896.686t-.294 2.184q0 1.484.294 2.17t.896.686m8.012.728q-1.092 0-1.89-.448a3.17 3.17 0 0 1-1.232-1.274q-.435-.826-.434-1.904 0-1.078.462-1.876a3.37 3.37 0 0 1 1.288-1.246 3.67 3.67 0 0 1 1.806-.448q.994 0 1.792.434.811.434 1.288 1.246.476.798.476 1.89t-.434 1.904-1.232 1.274q-.798.448-1.89.448m0-.728q.588 0 .882-.686t.294-2.17q0-1.498-.294-2.184t-.882-.686q-.602 0-.896.686t-.294 2.184q0 1.484.294 2.17.293.686.896.686m4.332.518v-.658l.77-.154q.014-.518.014-1.106v-1.848q0-.392-.014-.644 0-.252-.014-.462 0-.224-.014-.504l-.854-.126v-.546l2.758-.938.252.154.126 1.652q.294-.895.826-1.344.531-.462 1.05-.462.462 0 .798.266.336.252.42.77-.015.546-.294.854a.93.93 0 0 1-.7.294q-.589 0-1.078-.658l-.084-.112a3.4 3.4 0 0 0-.574.742 3.5 3.5 0 0 0-.364.938v1.946q0 .56.014 1.05l1.106.238v.658zm6.194.014v-.658l.742-.154q.014-.504.014-1.092v-6.944l-.868-.112v-.588l2.898-.63.224.14-.056 1.96v1.974q.882-.896 2.03-.896.77 0 1.386.406.615.392.98 1.19.378.784.378 1.946 0 1.134-.42 1.96-.42.811-1.106 1.26a2.66 2.66 0 0 1-1.47.434q-1.149 0-1.848-.826l-.238.812zm3.962-5.782a1.2 1.2 0 0 0-.504.112 2.3 2.3 0 0 0-.462.294v4.004q.433.392.952.392.615 0 1.008-.602.405-.602.406-1.834 0-1.247-.392-1.806-.378-.56-1.008-.56m8.136-.49q-.392 0-.728.49-.322.476-.364 1.764h1.19q.504 0 .672-.196.183-.21.182-.686 0-.7-.28-1.036-.279-.336-.672-.336m.028 6.468q-1.022 0-1.806-.42a3.13 3.13 0 0 1-1.232-1.232q-.447-.812-.448-1.932 0-1.176.518-1.974a3.4 3.4 0 0 1 1.358-1.218 3.75 3.75 0 0 1 1.722-.42q.924 0 1.568.392.658.392.994 1.064.336.659.336 1.512 0 .406-.084.742h-4.046q.07 1.106.602 1.638.546.518 1.274.518.575 0 .98-.21.407-.224.714-.546l.49.448q-.433.826-1.176 1.232-.741.406-1.764.406m7.273-6.468q-.392 0-.728.49-.322.476-.364 1.764h1.19q.504 0 .672-.196.183-.21.182-.686 0-.7-.28-1.036-.279-.336-.672-.336m.028 6.468q-1.022 0-1.806-.42a3.13 3.13 0 0 1-1.232-1.232q-.447-.812-.448-1.932 0-1.176.518-1.974a3.4 3.4 0 0 1 1.358-1.218 3.75 3.75 0 0 1 1.722-.42q.924 0 1.568.392.658.392.994 1.064.336.659.336 1.512 0 .406-.084.742h-4.046q.07 1.106.602 1.638.546.518 1.274.518.575 0 .98-.21.406-.224.714-.546l.49.448q-.433.826-1.176 1.232-.741.406-1.764.406m3.541-.21v-.658l.77-.168q.014-.532.014-1.064.014-.532.014-1.05v-5.866l-.868-.14v-.588l2.94-.63.224.14-.056 1.96v6.188l.028 1.064.77.154v.658zm6.933-3.346q0 1.148.406 1.75.406.588 1.05.588.476 0 .868-.322v-4.172a1.3 1.3 0 0 0-.826-.294q-.644 0-1.078.602-.42.602-.42 1.848m2.506 3.5-.112-.798q-.812.854-1.974.854-.785 0-1.428-.406-.63-.406-.994-1.19-.364-.798-.364-1.932 0-1.148.434-1.96.448-.827 1.148-1.26a2.77 2.77 0 0 1 1.498-.448q.546 0 .952.196.406.181.742.546v-2.562l-.98-.14v-.588l2.954-.63.224.14-.056 1.96v7.266l.686.14v.658zm10.677-6.3v-.616h2.646v.616l-.812.154-2.31 6.02h-1.064l-2.52-6.034-.686-.14v-.616h3.976v.616l-.882.182 1.316 3.584 1.218-3.598zm8.175 6.342q-1.218 0-1.54-1.008a5 5 0 0 1-.868.756q-.405.266-1.134.266-.811 0-1.33-.462-.504-.462-.504-1.33 0-.504.224-.91.225-.406.812-.756t1.666-.658q.21-.07.49-.14t.574-.14v-.462q0-.938-.238-1.274-.224-.336-.896-.336h-.182a2 2 0 0 0-.196.014l-.07.616q-.013.686-.322.994a.94.94 0 0 1-.7.308q-.77 0-.938-.7.057-.868.882-1.414.826-.546 2.338-.546 1.345 0 1.918.616.588.616.588 2.03v3.136q0 .406.308.406a.4.4 0 0 0 .21-.056.9.9 0 0 0 .21-.252l.378.252q-.252.56-.658.812-.392.238-1.022.238m-3.304-2.142q0 .518.238.77a.82.82 0 0 0 .924.182q.168-.07.532-.322v-2.268a5 5 0 0 0-.364.126q-.168.056-.294.112a1.8 1.8 0 0 0-.756.56q-.28.35-.28.84m5.324 1.946v-.658l.756-.168q.014-.504.014-1.092v-1.834q0-.575-.014-.882 0-.322-.028-.742l-.854-.126v-.546l2.758-.938.252.154.084 1.008q.546-.644 1.078-.896a2.6 2.6 0 0 1 1.162-.266q.91 0 1.456.602.56.601.56 1.806v2.688q0 .575.014 1.092l.7.14v.658h-3.696v-.658l.728-.154q.014-.518.014-1.092v-2.506q0-.672-.182-.938-.183-.28-.588-.28-.547 0-1.204.504v3.22q0 .588.014 1.106l.658.14v.658zm15.093-6.258q-.392 0-.728.49-.322.476-.364 1.764h1.19q.504 0 .672-.196.182-.21.182-.686 0-.7-.28-1.036t-.672-.336m.028 6.468q-1.022 0-1.806-.42a3.13 3.13 0 0 1-1.232-1.232q-.448-.812-.448-1.932 0-1.176.518-1.974a3.4 3.4 0 0 1 1.358-1.218 3.75 3.75 0 0 1 1.722-.42q.924 0 1.568.392.658.392.994 1.064.336.659.336 1.512 0 .406-.084.742h-4.046q.07 1.106.602 1.638.546.518 1.274.518.574 0 .98-.21.407-.224.714-.546l.49.448q-.434.826-1.176 1.232-.743.406-1.764.406m7.273-6.468q-.392 0-.728.49-.322.476-.364 1.764h1.19q.504 0 .672-.196.182-.21.182-.686 0-.7-.28-1.036t-.672-.336m.028 6.468q-1.023 0-1.806-.42a3.1 3.1 0 0 1-1.232-1.232q-.448-.812-.448-1.932 0-1.176.518-1.974a3.4 3.4 0 0 1 1.358-1.218q.825-.42 1.722-.42.923 0 1.568.392.658.392.994 1.064.336.659.336 1.512 0 .406-.084.742h-4.046q.07 1.106.602 1.638.546.518 1.274.518.573 0 .98-.21.405-.224.714-.546l.49.448q-.435.826-1.176 1.232-.743.406-1.764.406m3.8-.21v-.658l.756-.168q.014-.504.014-1.092v-1.834q0-.575-.014-.882 0-.322-.028-.742l-.854-.126v-.546l2.758-.938.252.154.084 1.008q.546-.644 1.078-.896a2.6 2.6 0 0 1 1.162-.266q.91 0 1.456.602.56.601.56 1.806v2.688q0 .575.014 1.092l.7.14v.658h-3.696v-.658l.728-.154q.014-.518.014-1.092v-2.506q0-.672-.182-.938-.181-.28-.588-.28-.546 0-1.204.504v3.22q0 .588.014 1.106l.658.14v.658zm11.622 0v-.658l.756-.168q.014-.504.014-1.092v-6.888l-.868-.14v-.588l2.898-.63.224.14-.056 1.96v2.254q.56-.658 1.078-.91a2.5 2.5 0 0 1 1.148-.266q.924 0 1.484.602.56.601.56 1.806v2.688q0 .575.014 1.092l.7.14v.658h-3.682v-.658l.728-.154q.014-.518.014-1.092v-2.506q0-.686-.168-.952-.154-.266-.588-.266-.28 0-.602.168-.323.168-.644.476v3.08q0 .588.014 1.106l.658.14v.658zm12.112-6.258q-.392 0-.728.49-.322.476-.364 1.764h1.19q.504 0 .672-.196.183-.21.182-.686 0-.7-.28-1.036-.279-.336-.672-.336m.028 6.468q-1.022 0-1.806-.42a3.13 3.13 0 0 1-1.232-1.232q-.447-.812-.448-1.932 0-1.176.518-1.974a3.4 3.4 0 0 1 1.358-1.218 3.75 3.75 0 0 1 1.722-.42q.924 0 1.568.392.658.392.994 1.064.336.659.336 1.512 0 .406-.084.742h-4.046q.07 1.106.602 1.638.546.518 1.274.518.575 0 .98-.21.407-.224.714-.546l.49.448q-.433.826-1.176 1.232-.741.406-1.764.406m9.178-.014q-1.218 0-1.54-1.008a5.2 5.2 0 0 1-.868.756q-.406.266-1.134.266-.812 0-1.33-.462-.504-.462-.504-1.33 0-.504.224-.91t.812-.756 1.666-.658q.21-.07.49-.14t.574-.14v-.462q0-.938-.238-1.274-.224-.336-.896-.336h-.182a2 2 0 0 0-.196.014l-.07.616q-.014.686-.322.994a.94.94 0 0 1-.7.308q-.77 0-.938-.7.056-.868.882-1.414t2.338-.546q1.344 0 1.918.616.588.616.588 2.03v3.136q0 .406.308.406a.4.4 0 0 0 .21-.056.9.9 0 0 0 .21-.252l.378.252q-.252.56-.658.812-.392.238-1.022.238m-3.304-2.142q0 .518.238.77a.82.82 0 0 0 .924.182 3.5 3.5 0 0 0 .532-.322v-2.268a5 5 0 0 0-.364.126q-.168.056-.294.112a1.8 1.8 0 0 0-.756.56 1.3 1.3 0 0 0-.28.84m7.703-1.4q0 1.148.406 1.75.406.588 1.05.588.477 0 .868-.322v-4.172a1.3 1.3 0 0 0-.826-.294q-.643 0-1.078.602-.42.602-.42 1.848m2.506 3.5-.112-.798q-.812.854-1.974.854-.783 0-1.428-.406-.63-.406-.994-1.19-.364-.798-.364-1.932 0-1.148.434-1.96.449-.827 1.148-1.26a2.78 2.78 0 0 1 1.498-.448q.547 0 .952.196.406.181.742.546v-2.562l-.98-.14v-.588l2.954-.63.224.14-.056 1.96v7.266l.686.14v.658zm3.455-.154v-.658l.756-.168q.014-.504.014-1.092v-1.694q0-.574-.014-.952 0-.392-.028-.812l-.868-.126v-.546l2.94-.938.238.154-.042 2.03v2.898q0 .588.014 1.106l.7.14v.658zm1.862-8.022q-.49 0-.84-.308a1.04 1.04 0 0 1-.35-.798q0-.49.35-.798.35-.322.84-.322t.84.322q.35.307.35.798 0 .476-.35.798a1.23 1.23 0 0 1-.84.308m2.54 8.022v-.658l.756-.168q.014-.504.014-1.092v-1.834q0-.575-.014-.882 0-.322-.028-.742l-.854-.126v-.546l2.758-.938.252.154.084 1.008q.546-.644 1.078-.896a2.6 2.6 0 0 1 1.162-.266q.91 0 1.456.602.56.601.56 1.806v2.688q0 .575.014 1.092l.7.14v.658h-3.696v-.658l.728-.154q.014-.518.014-1.092v-2.506q0-.672-.182-.938-.183-.28-.588-.28-.546 0-1.204.504v3.22q0 .588.014 1.106l.658.14v.658zm11.665-3.136a.78.78 0 0 0 .728-.434q.252-.434.252-1.176t-.252-1.148q-.238-.42-.7-.42a.77.77 0 0 0-.714.42q-.238.42-.238 1.162 0 .743.224 1.176a.74.74 0 0 0 .7.42m-1.862 4.298q0 .616.462.896.462.294 1.414.294 1.05 0 1.582-.308t.532-.77a.83.83 0 0 0-.224-.56q-.225-.238-.798-.238h-1.47q-.77 0-1.274-.126a2 2 0 0 0-.168.378 1.5 1.5 0 0 0-.056.434m1.876-3.64q-.729 0-1.274-.168a1.3 1.3 0 0 0-.168.644q0 .238.182.392.182.14.63.14h1.638q1.064 0 1.694.266.63.252.896.714.28.448.28 1.064 0 .7-.462 1.288-.462.602-1.386.952-.91.364-2.254.364-1.163 0-1.82-.238-.658-.224-.924-.602a1.36 1.36 0 0 1-.266-.798q0-.896 1.162-1.442-.435-.182-.63-.476a1.2 1.2 0 0 1-.182-.644q0-.49.28-.924.293-.448.812-.896-.575-.294-.854-.784a2.16 2.16 0 0 1-.28-1.092q0-.98.714-1.624.727-.644 2.212-.644.755 0 1.316.168.56.168.91.476l1.568-.672.224.14v1.078h-1.33q.252.462.252 1.078 0 .938-.728 1.596-.715.644-2.212.644' })));
+   var f = a(59778),
+    x = a(21034);
+   const b = { title: 'Heading 6', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading 6', pagination_label: 'Heading 6', description: 'Koptekst die in de koppenstructuur op het zesde niveau staat.', issue_number: 262, slug: '/heading-6', keywords: ['caption', 'content', 'h6', 'heading', 'heading level', 'headline', 'kop', 'paginakop', 'sectie', 'section', 'structure', 'titel', 'title'] },
+    q = void 0,
+    k = {},
+    j = 'Heading 6',
+    T = 'Koptekst die in de koppenstructuur op het zesde niveau staat.',
+    D = 262,
+    H = c.find((e) => e.number === D),
+    F = [
+     { value: 'Anatomie', id: 'anatomie', level: 2 },
+     { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
+     { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
+    ];
+   function N(e) {
+    const n = { h2: 'h2', ...(0, m.R)(), ...e.components },
+     { ComponentAnatomy: a } = n;
+    return (
+     a ||
+      (function (e, n) {
+       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
+      })('ComponentAnatomy', !0),
+     (0, u.jsxs)(u.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, u.jsx)(x.Fc, { component: H, headingLevel: 1, description: T }), '\n', (0, u.jsx)(f.e, { component: H }), '\n', (0, u.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }), '\n', (0, u.jsx)(a, { component: H, illustration: v }), '\n', (0, u.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, u.jsx)(x.VK, { component: H, headingLevel: 3 }), '\n', (0, u.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, u.jsx)(x.mu, { component: H, headingLevel: 3 }), '\n', (0, u.jsx)(x.K_, { component: H }), '\n', (0, u.jsx)(x.$9, { component: H, headingLevel: 2 })] })
+    );
+   }
+   function _(e = {}) {
+    const { wrapper: n } = { ...(0, m.R)(), ...e.components };
+    return n ? (0, u.jsx)(n, { ...e, children: (0, u.jsx)(N, { ...e }) }) : N(e);
+   }
   },
   45186(e, n, a) {
    'use strict';
@@ -248,105 +308,46 @@
      }
      return a.toString();
     },
-    o = { 1: {}, 2: { h1: i.fV, h2: i._B, h3: i.f_, h4: i.mM, h5: i.TT }, 3: { h1: i._B, h2: i.f_, h3: i.mM, h4: i.TT, h5: i.TT }, 4: { h1: i.f_, h2: i.mM, h3: i.TT, h4: i.TT, h5: i.TT }, 5: { h1: i.mM, h2: i.TT, h3: i.TT, h4: i.TT, h5: i.TT }, 6: { h1: i.TT, h2: i.TT, h3: i.TT, h4: i.TT, h5: i.TT } },
-    r = (e) => ({ img: ({ src: n, ...a }) => (0, l.jsx)('img', { ...a, src: s(e, n), className: 'utrecht-img utrecht-img--fit' }) }),
+    r = { 1: {}, 2: { h1: i.fV, h2: i._B, h3: i.f_, h4: i.mM, h5: i.TT }, 3: { h1: i._B, h2: i.f_, h3: i.mM, h4: i.TT, h5: i.TT }, 4: { h1: i.f_, h2: i.mM, h3: i.TT, h4: i.TT, h5: i.TT }, 5: { h1: i.mM, h2: i.TT, h3: i.TT, h4: i.TT, h5: i.TT }, 6: { h1: i.TT, h2: i.TT, h3: i.TT, h4: i.TT, h5: i.TT } },
+    o = (e) => ({ img: ({ src: n, ...a }) => (0, l.jsx)('img', { ...a, src: s(e, n), className: 'utrecht-img utrecht-img--fit' }) }),
     d = (e, n) => {
      if (e) {
-      const e = { ...o[n - 1] };
+      const e = { ...r[n - 1] };
       return ((e.h1 = () => null), e);
      }
-     return o[n];
+     return r[n];
     },
-    g = ({ children: e, omitH1: n = !1, headingLevel: a = 1, baseUrl: i = '', components: s = {} }) => (0, l.jsx)(t.x, { components: { ...d(n, a), ...r(i), ...s }, children: e });
+    g = ({ children: e, omitH1: n = !1, headingLevel: a = 1, baseUrl: i = '', components: s = {} }) => (0, l.jsx)(t.x, { components: { ...d(n, a), ...o(i), ...s }, children: e });
   },
   59778(e, n, a) {
    'use strict';
-   a.d(n, { e: () => o });
+   a.d(n, { e: () => r });
    var t = a(51582),
     i = a(30758),
     l = a(32385),
     s = a(86070);
-   const o = ({ component: e }) => {
+   const r = ({ component: e }) => {
+    if (globalThis.isAstro) return null;
     const { title: n } = e,
-     o = (0, l.fX)(n),
-     r = i.lazy(() => a(82839)(`./${o}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
-    return (0, s.jsx)(i.Suspense, { fallback: null, children: (0, s.jsx)(t.o, { omitH1: !0, headingLevel: 1, children: (0, s.jsx)(r, {}) }) });
+     r = (0, l.fX)(n),
+     o = i.lazy(() => a(82839)(`./${r}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
+    return (0, s.jsx)(i.Suspense, { fallback: null, children: (0, s.jsx)(t.o, { omitH1: !0, headingLevel: 1, children: (0, s.jsx)(o, {}) }) });
    };
-  },
-  63936(e, n, a) {
-   'use strict';
-   (a.r(n), a.d(n, { assets: () => k, component: () => H, contentTitle: () => b, default: () => _, description: () => T, frontMatter: () => q, issueNumber: () => D, metadata: () => t, title: () => j, toc: () => F }));
-   const t = JSON.parse('{"id":"componenten/heading-2/index","title":"Heading 2","description":"Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.","source":"@site/docs/componenten/heading-2/index.mdx","sourceDirName":"componenten/heading-2","slug":"/heading-2","permalink":"/heading-2","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/heading-2/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Heading 2","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Heading 2","pagination_label":"Heading 2","description":"Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.","issue_number":258,"slug":"/heading-2","keywords":["caption","content","h2","heading","heading level","headline","kop","paginakop","sectie","section","structure","titel","title"]},"sidebar":"componenten","previous":{"title":"Heading 1","permalink":"/heading-1"},"next":{"title":"Heading 3","permalink":"/heading-3"}}');
-   var i,
-    l,
-    s,
-    o,
-    r,
-    d,
-    g,
-    u = a(86070),
-    m = a(18439),
-    c = a(24155),
-    h = a(30758);
-   function p() {
-    return (
-     (p = Object.assign
-      ? Object.assign.bind()
-      : function (e) {
-         for (var n = 1; n < arguments.length; n++) {
-          var a = arguments[n];
-          for (var t in a) ({}).hasOwnProperty.call(a, t) && (e[t] = a[t]);
-         }
-         return e;
-        }),
-     p.apply(null, arguments)
-    );
-   }
-   const v = ({ title: e, titleId: n, ...a }) => h.createElement('svg', p({ xmlns: 'http://www.w3.org/2000/svg', width: 960, height: 540, fill: 'none', 'aria-label': 'Een tekst die iets groter is dan gebruikelijk, in bold. De hele tekst is aangeduid met het cijfer 1. De tekst: \\u201CDit is een voorbeeld van een heading.\\u201D.', viewBox: '0 0 960 540', role: 'img', 'aria-labelledby': n }, a), e ? h.createElement('title', { id: n }, e) : null, i || (i = h.createElement('path', { fill: '#fff', d: 'M.5.5h959v539H.5z' })), l || (l = h.createElement('path', { stroke: '#CCC', d: 'M.5.5h959v539H.5z' })), s || (s = h.createElement('path', { stroke: '#DE00A4', strokeLinecap: 'square', strokeWidth: 2, d: 'M307.762 230v80' })), o || (o = h.createElement('path', { stroke: '#DE00A4', strokeLinecap: 'square', strokeLinejoin: 'bevel', strokeWidth: 2, d: 'M268 270h39' })), r || (r = h.createElement('rect', { width: 32, height: 32, x: 236, y: 254, fill: '#DE00A4', rx: 16 })), d || (d = h.createElement('path', { fill: '#fff', d: 'M254.502 264.368V276.5H252v-9.612l-2.664 1.638-1.116-1.728 4.032-2.43z' })), g || (g = h.createElement('path', { fill: '#0A2750', d: 'M324.896 248.952v4.128l.064 4.064h1.056q2.752 0 4.32-2.24 1.6-2.272 1.6-6.432 0-4.224-1.6-6.432-1.568-2.208-4.288-2.208h-1.088l-.064 4v5.12m-7.84-9.248v-1.728h9.504q3.425 0 5.856 1.28 2.431 1.248 3.744 3.584 1.312 2.336 1.312 5.6 0 3.328-1.408 5.696t-4 3.616q-2.56 1.248-6.08 1.248h-8.928v-1.728l2.4-.256q.064-1.952.064-3.968v-9.12q0-2.016-.064-3.968zM339.523 259v-1.504l1.728-.384q.032-1.152.032-2.496v-3.872q0-1.312-.032-2.176 0-.896-.064-1.856l-1.984-.288v-1.248l6.72-2.144.544.352-.096 4.64v6.624q0 1.344.032 2.528l1.6.32V259zm4.256-18.336q-1.12 0-1.92-.704a2.38 2.38 0 0 1-.8-1.824q0-1.12.8-1.824.8-.736 1.92-.736t1.92.736q.8.704.8 1.824a2.38 2.38 0 0 1-.8 1.824q-.801.704-1.92.704m11.885 18.816q-2.145 0-3.36-1.024-1.216-1.056-1.216-3.424v-1.536q.032-.736.032-1.664v-6.112h-2.08v-1.888l2.368-.32 1.6-4.48h3.264l-.064 4.512h3.36v2.176h-3.36v8.96q0 1.12.448 1.664.48.512 1.184.512.831 0 1.728-.704l.8.768a4.64 4.64 0 0 1-1.792 1.888q-1.12.672-2.912.672m12.296-.48v-1.504l1.728-.384q.032-1.152.032-2.496v-3.872q0-1.312-.032-2.176 0-.896-.064-1.856l-1.984-.288v-1.248l6.72-2.144.544.352-.096 4.64v6.624q0 1.344.032 2.528l1.6.32V259zm4.256-18.336q-1.12 0-1.92-.704a2.38 2.38 0 0 1-.8-1.824q0-1.12.8-1.824.8-.736 1.92-.736t1.92.736q.8.704.8 1.824a2.38 2.38 0 0 1-.8 1.824q-.8.704-1.92.704m11.437 18.816q-3.04 0-5.568-1.472l.096-3.904h2.56l.544 3.168q.576.224 1.152.352.576.096 1.248.096 1.375 0 2.112-.448.736-.48.736-1.44a1.75 1.75 0 0 0-.544-1.28q-.544-.544-2.144-.992l-1.728-.512q-1.856-.544-2.88-1.76-.992-1.216-.992-3.008 0-2.208 1.728-3.712 1.728-1.536 4.96-1.536 1.409 0 2.592.352 1.216.32 2.464.96l-.224 3.488h-2.56l-.64-2.752q-.672-.256-1.76-.256t-1.76.448q-.64.449-.64 1.344 0 .64.512 1.152.512.48 2.176.992l1.568.448q2.272.672 3.264 1.92t.992 3.04q0 2.528-1.952 3.936-1.92 1.376-5.312 1.376m23.71-14.784q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368-.639-.768-1.536-.768m.064 14.784q-2.336 0-4.128-.96a7.16 7.16 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.217-1.855 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.112 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.528 1.376 3.744 1.248 1.184 2.912 1.184 1.313 0 2.24-.48a6.7 6.7 0 0 0 1.632-1.248l1.12 1.024q-.991 1.888-2.688 2.816-1.695.928-4.032.928m16.624-14.784q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368t-1.536-.768m.064 14.784q-2.337 0-4.128-.96a7.14 7.14 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.215-1.855 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.111 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.528 1.376 3.744 1.248 1.184 2.912 1.184 1.311 0 2.24-.48a6.8 6.8 0 0 0 1.632-1.248l1.12 1.024q-.993 1.888-2.688 2.816-1.697.928-4.032.928m8.687-.48v-1.504l1.728-.384q.033-1.152.032-2.496v-4.192q0-1.312-.032-2.016a26 26 0 0 0-.064-1.696l-1.952-.288v-1.248l6.304-2.144.576.352.192 2.304q1.248-1.472 2.464-2.048a6 6 0 0 1 2.656-.608q2.08 0 3.328 1.376 1.28 1.375 1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V259h-8.448v-1.504l1.664-.352q.032-1.184.032-2.496v-5.728q0-1.536-.416-2.144-.415-.64-1.344-.64-1.248 0-2.752 1.152v7.36q0 1.344.032 2.528l1.504.32V259zm36.291-14.048v-1.408h6.048v1.408l-1.856.352-5.28 13.76h-2.432l-5.76-13.792-1.568-.32v-1.408h9.088v1.408l-2.016.416 3.008 8.192 2.784-8.224zm14.432 14.528q-2.496 0-4.32-1.024a7.25 7.25 0 0 1-2.816-2.912q-.992-1.888-.992-4.352t1.056-4.288a7.7 7.7 0 0 1 2.944-2.848q1.856-1.024 4.128-1.024t4.096.992a7.4 7.4 0 0 1 2.944 2.848q1.088 1.824 1.088 4.32t-.992 4.352a7.26 7.26 0 0 1-2.816 2.912q-1.824 1.024-4.32 1.024m0-1.664q1.344 0 2.016-1.568t.672-4.96q0-3.424-.672-4.992t-2.016-1.568q-1.377 0-2.048 1.568-.672 1.567-.672 4.992 0 3.392.672 4.96.671 1.568 2.048 1.568m18.312 1.664q-2.496 0-4.32-1.024a7.26 7.26 0 0 1-2.816-2.912q-.992-1.888-.992-4.352t1.056-4.288a7.7 7.7 0 0 1 2.944-2.848q1.857-1.024 4.128-1.024t4.096.992a7.4 7.4 0 0 1 2.944 2.848q1.089 1.824 1.088 4.32t-.992 4.352a7.25 7.25 0 0 1-2.816 2.912q-1.824 1.024-4.32 1.024m0-1.664q1.344 0 2.016-1.568t.672-4.96q0-3.424-.672-4.992t-2.016-1.568q-1.376 0-2.048 1.568-.672 1.567-.672 4.992 0 3.392.672 4.96t2.048 1.568m9.902 1.184v-1.504l1.76-.352q.032-1.184.032-2.528v-4.224q0-.896-.032-1.472 0-.576-.032-1.056 0-.512-.032-1.152l-1.952-.288v-1.248l6.304-2.144.576.352.288 3.776q.672-2.047 1.888-3.072 1.216-1.056 2.4-1.056 1.056 0 1.824.608.768.576.96 1.76-.032 1.248-.672 1.952-.64.672-1.6.672-1.344 0-2.464-1.504l-.192-.256q-.704.672-1.312 1.696a8 8 0 0 0-.832 2.144v4.448q0 1.28.032 2.4l2.528.544V259zm14.158.032v-1.504l1.696-.352q.032-1.152.032-2.496v-15.872l-1.984-.256v-1.344l6.624-1.44.512.32-.128 4.48v4.512q2.016-2.048 4.64-2.048 1.76 0 3.168.928 1.407.896 2.24 2.72.864 1.792.864 4.448 0 2.592-.96 4.48-.96 1.856-2.528 2.88a6.07 6.07 0 0 1-3.36.992q-2.625 0-4.224-1.888l-.544 1.856zm9.056-13.216q-.609 0-1.152.256a5.2 5.2 0 0 0-1.056.672v9.152q.991.896 2.176.896 1.407 0 2.304-1.376.928-1.376.928-4.192 0-2.849-.896-4.128-.864-1.28-2.304-1.28m18.598-1.12q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368t-1.536-.768m.064 14.784q-2.337 0-4.128-.96a7.14 7.14 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.215-1.855 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.111 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.528 1.376 3.744 1.247 1.184 2.912 1.184 1.311 0 2.24-.48a6.8 6.8 0 0 0 1.632-1.248l1.12 1.024q-.993 1.888-2.688 2.816t-4.032.928m16.623-14.784q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.417-.48.416-1.568 0-1.6-.64-2.368-.639-.768-1.536-.768m.064 14.784q-2.336 0-4.128-.96a7.16 7.16 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.217-1.855 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.112 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.528 1.376 3.744 1.248 1.184 2.912 1.184 1.313 0 2.24-.48a6.7 6.7 0 0 0 1.632-1.248l1.12 1.024q-.991 1.888-2.688 2.816-1.695.928-4.032.928m8.093-.48v-1.504l1.76-.384q.032-1.216.032-2.432.032-1.216.032-2.4v-13.408l-1.984-.32v-1.344l6.72-1.44.512.32-.128 4.48v14.144l.064 2.432 1.76.352V259zm15.847-7.648q0 2.624.928 4 .929 1.344 2.4 1.344 1.089 0 1.984-.736v-9.536q-.864-.672-1.888-.672-1.471 0-2.464 1.376-.96 1.375-.96 4.224m5.728 8-.256-1.824q-1.856 1.952-4.512 1.952a6 6 0 0 1-3.264-.928q-1.44-.928-2.272-2.72-.832-1.824-.832-4.416 0-2.624.992-4.48 1.025-1.888 2.624-2.88 1.632-1.024 3.424-1.024 1.248 0 2.176.448a5.2 5.2 0 0 1 1.696 1.248v-5.856l-2.24-.32v-1.344l6.752-1.44.512.32-.128 4.48v16.608l1.568.32V259zm-273.346 25.6v-1.408h6.048v1.408l-1.856.352-5.28 13.76h-2.432l-5.76-13.792-1.568-.32v-1.408h9.088v1.408l-2.016.416 3.008 8.192 2.784-8.224zm18.687 14.496q-2.784 0-3.52-2.304-1.023 1.087-1.984 1.728-.927.608-2.592.608-1.855 0-3.04-1.056-1.152-1.056-1.152-3.04 0-1.152.512-2.08t1.856-1.728 3.808-1.504q.48-.16 1.12-.32t1.312-.32v-1.056q0-2.144-.544-2.912-.512-.768-2.048-.768h-.416q-.192 0-.448.032l-.16 1.408q-.031 1.568-.736 2.272-.672.704-1.6.704-1.76 0-2.144-1.6.129-1.984 2.016-3.232t5.344-1.248q3.072 0 4.384 1.408 1.344 1.408 1.344 4.64v7.168q0 .928.704.928a.95.95 0 0 0 .48-.128q.225-.16.48-.576l.864.576q-.576 1.28-1.504 1.856-.896.544-2.336.544m-7.552-4.896q0 1.184.544 1.76a1.88 1.88 0 0 0 2.112.416q.384-.16 1.216-.736v-5.184a13 13 0 0 0-.832.288 8 8 0 0 0-.672.256q-1.088.448-1.728 1.28-.64.8-.64 1.92M349.927 299v-1.504l1.728-.384q.033-1.152.032-2.496v-4.192q0-1.312-.032-2.016a26 26 0 0 0-.064-1.696l-1.952-.288v-1.248l6.304-2.144.576.352.192 2.304q1.248-1.472 2.464-2.048a6 6 0 0 1 2.656-.608q2.08 0 3.328 1.376 1.28 1.375 1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V299h-8.448v-1.504l1.664-.352q.032-1.183.032-2.496v-5.728q0-1.536-.416-2.144-.415-.64-1.344-.64-1.248 0-2.752 1.152v7.36q0 1.344.032 2.528l1.504.32V299zm34.499-14.304q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368t-1.536-.768m.064 14.784q-2.337 0-4.128-.96a7.14 7.14 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.215-1.856 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.111 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.527 1.376 3.744 1.248 1.184 2.912 1.184 1.311 0 2.24-.48a6.8 6.8 0 0 0 1.632-1.248l1.12 1.024q-.993 1.888-2.688 2.816-1.697.928-4.032.928m16.623-14.784q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368-.639-.768-1.536-.768m.064 14.784q-2.336 0-4.128-.96a7.16 7.16 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.217-1.856 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.112 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.527 1.376 3.744 1.248 1.184 2.912 1.184 1.313 0 2.24-.48a6.7 6.7 0 0 0 1.632-1.248l1.12 1.024q-.991 1.888-2.688 2.816-1.695.928-4.032.928m8.688-.48v-1.504l1.728-.384q.032-1.152.032-2.496v-4.192q0-1.312-.032-2.016 0-.736-.064-1.696l-1.952-.288v-1.248l6.304-2.144.576.352.192 2.304q1.248-1.472 2.464-2.048a6 6 0 0 1 2.656-.608q2.08 0 3.328 1.376 1.28 1.375 1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V299h-8.448v-1.504l1.664-.352q.032-1.183.032-2.496v-5.728q0-1.536-.416-2.144-.417-.64-1.344-.64-1.248 0-2.752 1.152v7.36q0 1.344.032 2.528l1.504.32V299zm26.562 0v-1.504l1.728-.384q.033-1.152.032-2.496v-15.744l-1.984-.32v-1.344l6.624-1.44.512.32-.128 4.48v5.152q1.28-1.504 2.464-2.08a5.8 5.8 0 0 1 2.624-.608q2.112 0 3.392 1.376t1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V299h-8.416v-1.504l1.664-.352q.032-1.183.032-2.496v-5.728q0-1.568-.384-2.176-.351-.608-1.344-.608-.64 0-1.376.384t-1.472 1.088v7.04q0 1.344.032 2.528l1.504.32V299zm27.686-14.304q-.896 0-1.664 1.12-.736 1.088-.832 4.032h2.72q1.152 0 1.536-.448.416-.48.416-1.568 0-1.6-.64-2.368-.639-.768-1.536-.768m.064 14.784q-2.336 0-4.128-.96a7.16 7.16 0 0 1-2.816-2.816q-1.024-1.856-1.024-4.416 0-2.688 1.184-4.512 1.217-1.856 3.104-2.784a8.6 8.6 0 0 1 3.936-.96q2.112 0 3.584.896a5.8 5.8 0 0 1 2.272 2.432q.768 1.504.768 3.456a7 7 0 0 1-.192 1.696h-9.248q.16 2.527 1.376 3.744 1.248 1.184 2.912 1.184 1.313 0 2.24-.48a6.7 6.7 0 0 0 1.632-1.248l1.12 1.024q-.991 1.888-2.688 2.816-1.695.928-4.032.928m20.978-.032q-2.784 0-3.52-2.304-1.024 1.087-1.984 1.728-.929.608-2.592.608-1.856 0-3.04-1.056-1.152-1.056-1.152-3.04 0-1.152.512-2.08t1.856-1.728 3.808-1.504q.48-.16 1.12-.32t1.312-.32v-1.056q0-2.144-.544-2.912-.512-.768-2.048-.768h-.416q-.192 0-.448.032l-.16 1.408q-.032 1.568-.736 2.272-.672.704-1.6.704-1.76 0-2.144-1.6.128-1.984 2.016-3.232t5.344-1.248q3.072 0 4.384 1.408 1.344 1.408 1.344 4.64v7.168q0 .928.704.928a.95.95 0 0 0 .48-.128q.224-.16.48-.576l.864.576q-.576 1.28-1.504 1.856-.896.544-2.336.544m-7.552-4.896q0 1.184.544 1.76a1.88 1.88 0 0 0 2.112.416q.384-.16 1.216-.736v-5.184q-.416.127-.832.288a8 8 0 0 0-.672.256q-1.088.448-1.728 1.28-.64.8-.64 1.92m17.608-3.2q0 2.624.928 4 .928 1.344 2.4 1.344 1.088 0 1.984-.736v-9.536q-.864-.672-1.888-.672-1.472 0-2.464 1.376-.96 1.375-.96 4.224m5.728 8-.256-1.824q-1.856 1.952-4.512 1.952a6 6 0 0 1-3.264-.928q-1.44-.928-2.272-2.72-.832-1.824-.832-4.416 0-2.624.992-4.48 1.024-1.888 2.624-2.88 1.632-1.024 3.424-1.024 1.248 0 2.176.448a5.2 5.2 0 0 1 1.696 1.248v-5.856l-2.24-.32v-1.344l6.752-1.44.512.32-.128 4.48v16.608l1.568.32V299zm7.896-.352v-1.504l1.728-.384q.032-1.152.032-2.496v-3.872q0-1.312-.032-2.176 0-.896-.064-1.856l-1.984-.288v-1.248l6.72-2.144.544.352-.096 4.64v6.624q0 1.344.032 2.528l1.6.32V299zm4.256-18.336q-1.12 0-1.92-.704a2.38 2.38 0 0 1-.8-1.824q0-1.12.8-1.824.8-.736 1.92-.736t1.92.736q.8.703.8 1.824a2.38 2.38 0 0 1-.8 1.824q-.8.704-1.92.704M518.896 299v-1.504l1.728-.384q.032-1.152.032-2.496v-4.192q0-1.312-.032-2.016a26 26 0 0 0-.064-1.696l-1.952-.288v-1.248l6.304-2.144.576.352.192 2.304q1.248-1.472 2.464-2.048a6 6 0 0 1 2.656-.608q2.08 0 3.328 1.376 1.28 1.375 1.28 4.128v6.144q0 1.313.032 2.496l1.6.32V299h-8.448v-1.504l1.664-.352q.032-1.183.032-2.496v-5.728q0-1.536-.416-2.144-.415-.64-1.344-.64-1.248 0-2.752 1.152v7.36q0 1.344.032 2.528l1.504.32V299zm26.663-7.168q1.12 0 1.664-.992.576-.992.576-2.688t-.576-2.624q-.544-.96-1.6-.96-1.089 0-1.632.96-.544.96-.544 2.656t.512 2.688q.511.96 1.6.96m-4.256 9.824q0 1.408 1.056 2.048 1.056.672 3.232.672 2.4 0 3.616-.704t1.216-1.76q0-.704-.512-1.28-.513-.544-1.824-.544h-3.36q-1.76 0-2.912-.288a4.3 4.3 0 0 0-.384.864 3.4 3.4 0 0 0-.128.992m4.288-8.32q-1.665 0-2.912-.384a2.9 2.9 0 0 0-.384 1.472q0 .544.416.896.416.32 1.44.32h3.744q2.432 0 3.872.608 1.44.576 2.048 1.632.64 1.024.64 2.432 0 1.6-1.056 2.944-1.056 1.376-3.168 2.176-2.08.832-5.152.832-2.657 0-4.16-.544-1.505-.512-2.112-1.376t-.608-1.824q0-2.048 2.656-3.296-.993-.416-1.44-1.088a2.74 2.74 0 0 1-.416-1.472q0-1.12.64-2.112.672-1.024 1.856-2.048-1.313-.672-1.952-1.792-.64-1.12-.64-2.496 0-2.24 1.632-3.712 1.663-1.472 5.056-1.472 1.728 0 3.008.384t2.08 1.088l3.584-1.536.512.32v2.464h-3.04q.576 1.056.576 2.464 0 2.143-1.664 3.648-1.632 1.472-5.056 1.472' })));
-   var f = a(59778),
-    x = a(21034);
-   const q = { title: 'Heading 2', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Heading 2', pagination_label: 'Heading 2', description: 'Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.', issue_number: 258, slug: '/heading-2', keywords: ['caption', 'content', 'h2', 'heading', 'heading level', 'headline', 'kop', 'paginakop', 'sectie', 'section', 'structure', 'titel', 'title'] },
-    b = void 0,
-    k = {},
-    j = 'Heading 2',
-    T = 'Koptekst die volgt na de hoofdkop en in de koppenstructuur op het tweede niveau staat.',
-    D = 258,
-    H = c.find((e) => e.number === D),
-    F = [
-     { value: 'Anatomie', id: 'anatomie', level: 2 },
-     { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
-     { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
-    ];
-   function N(e) {
-    const n = { h2: 'h2', ...(0, m.R)(), ...e.components },
-     { ComponentAnatomy: a } = n;
-    return (
-     a ||
-      (function (e, n) {
-       throw new Error('Expected ' + (n ? 'component' : 'object') + ' `' + e + '` to be defined: you likely forgot to import, pass, or provide it.');
-      })('ComponentAnatomy', !0),
-     (0, u.jsxs)(u.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, u.jsx)(x.Fc, { component: H, headingLevel: 1, description: T }), '\n', (0, u.jsx)(f.e, { component: H }), '\n', (0, u.jsx)(n.h2, { id: 'anatomie', children: 'Anatomie' }), '\n', (0, u.jsx)(a, { component: H, illustration: v }), '\n', (0, u.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, u.jsx)(x.VK, { component: H, headingLevel: 3 }), '\n', (0, u.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, u.jsx)(x.mu, { component: H, headingLevel: 3 }), '\n', (0, u.jsx)(x.K_, { component: H }), '\n', (0, u.jsx)(x.$9, { component: H, headingLevel: 2 })] })
-    );
-   }
-   function _(e = {}) {
-    const { wrapper: n } = { ...(0, m.R)(), ...e.components };
-    return n ? (0, u.jsx)(n, { ...e, children: (0, u.jsx)(N, { ...e }) }) : N(e);
-   }
   },
   70348(e, n, a) {
    'use strict';
-   a.d(n, { K: () => r, n: () => o });
+   a.d(n, { K: () => o, n: () => r });
    var t = a(13526),
     i = a(96345),
     l = a(37168),
     s = a(86070);
-   const o = ({ className: e, ...n }) => {
+   const r = ({ className: e, ...n }) => {
      const a = (0, t.A)('ma-utrecht-accordion', 'utrecht-accordion', e);
      return (0, s.jsx)('div', { className: a, children: n.children });
     },
-    r = ({ className: e, label: n, heading: a, headingLevel: o, headingApperance: r, ...d }) => {
+    o = ({ className: e, label: n, heading: a, headingLevel: r, headingApperance: o, ...d }) => {
      const g = (0, t.A)('utrecht-accordion__section', e);
-     return (0, s.jsxs)('details', { className: g, ...d, children: [(0, s.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, s.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, s.jsx)('span', { className: 'nl-button__icon-start', children: (0, s.jsx)(i.A, {}) }), (0, s.jsxs)('span', { className: 'nl-button__label', children: [a && (0, s.jsx)(l.D, { level: o, appearance: r, children: a }), n] })] }) }), (0, s.jsx)('div', { className: 'utrecht-accordion__panel', children: d.children })] });
+     return (0, s.jsxs)('details', { className: g, ...d, children: [(0, s.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, s.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, s.jsx)('span', { className: 'nl-button__icon-start', children: (0, s.jsx)(i.A, {}) }), (0, s.jsxs)('span', { className: 'nl-button__label', children: [a && (0, s.jsx)(l.D, { level: r, appearance: o, children: a }), n] })] }) }), (0, s.jsx)('div', { className: 'utrecht-accordion__panel', children: d.children })] });
     };
   },
   82839(e, n, a) {
@@ -365,16 +366,16 @@
   },
   85162(e, n, a) {
    'use strict';
-   a.d(n, { s: () => r });
+   a.d(n, { s: () => o });
    var t = a(29181),
     i = a(13526),
     l = a(32385),
     s = a(86070);
-   const o = { 'Heading 1': 'Heading', 'Heading 2': 'Heading', 'Heading 3': 'Heading', 'Heading 4': 'Heading', 'Heading 5': 'Heading', 'Heading 6': 'Heading' },
-    r = ({ name: e, relayStep: n, description: a }) => {
-     const r = (0, l.fX)(n),
-      d = o[e] ?? e;
-     return (0, s.jsxs)(t.WK, { children: [(0, s.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, i.A)('ma-component-illustration', `ma-component-illustration--${r}`), fill: 'none', children: [(0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-background-color, white)', children: [(0, s.jsx)('rect', { width: '960', height: '540' }), (0, s.jsx)('rect', { width: '960', height: '540' })] }), (0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-grid-color, #eee)', children: [(0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, s.jsx)('use', { href: `/svg/componenten_overzicht_${(0, l.fX)(d)}.svg#component-illustration` })] }), (0, s.jsx)(t.$P, { className: 'ma-component-illustration__caption', children: a })] });
+   const r = { 'Heading 1': 'Heading', 'Heading 2': 'Heading', 'Heading 3': 'Heading', 'Heading 4': 'Heading', 'Heading 5': 'Heading', 'Heading 6': 'Heading' },
+    o = ({ name: e, relayStep: n, description: a }) => {
+     const o = (0, l.fX)(n),
+      d = r[e] ?? e;
+     return (0, s.jsxs)(t.WK, { children: [(0, s.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, i.A)('ma-component-illustration', `ma-component-illustration--${o}`), fill: 'none', children: [(0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-background-color, white)', children: [(0, s.jsx)('rect', { width: '960', height: '540' }), (0, s.jsx)('rect', { width: '960', height: '540' })] }), (0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-grid-color, #eee)', children: [(0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, s.jsx)('use', { href: `/svg/componenten_overzicht_${(0, l.fX)(d)}.svg#component-illustration` })] }), (0, s.jsx)(t.$P, { className: 'ma-component-illustration__caption', children: a })] });
     };
   },
  },
