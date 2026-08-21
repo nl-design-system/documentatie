@@ -31,6 +31,36 @@ Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg ove
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
 
+## 18.0.0
+
+21 augustus 2026
+
+### Community component 'utrecht-spotlight-section' is hernoemd naar 'utrecht-note'.
+
+Utrecht heeft hun component Spotlight-section in lijn gebracht met de naamgeving die vanuit NL Design System is gekozen. Daarnaast is type 'OK' hernoemd naar 'Success'.
+
+Wat moet je doen?
+
+- [Ga naar de pagina van Note](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=22323-35711).
+- Open Tokens Studio.
+- Ga naar de tokenset 'note'.
+- Wijzig de naam van `todo.spotlight-section.row-gap` naar `utrecht.spotlight-section.row-gap`.
+- Kies voor de optie 'Page' om deze wijziging op de pagina door te voeren.
+- Positioneer `utrecht.note.row-gap` op de juiste positie in de JSON code. Let hierbij goed op de komma's.
+- Klik op 'Save JSON'.
+- Wijzig de groepsnaam van `utrecht.spotlight-section.*` naar `utrecht.note.*`. Doe dit zowel bij Color als bij Dimension.
+- Kies voor de optie 'Page' om deze wijziging op de pagina door te voeren.
+- Wijzig de groepsnaam van `utrecht.note.ok*` naar `utrecht.note.success*`. Doe dit zowel bij Color als bij Dimension.
+- Kies voor de optie 'Page' om deze wijziging op de pagina door te voeren.
+- Klik op 'Apply to page' zodat de wijziging op de hele pagina wordt doorgevoerd.
+- Verwijder de notitie naast de paginatitel.
+- Wijzig de naam van de Figma component van `utrecht-spotlight-section` naar `utrecht-note`.
+- Wijzig de naam van de component-variant `OK` naar `Success`.
+- Wijzig de tekst in het documentatie-frame van `OK` naar `Success`.
+- Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+[Bekijk de video 'Changelog: Spotlight-section wordt Note'](https://youtu.be/dM-4LwCuH7g) (zonder geluid) waar bovenstaande stappen ook uitgevoerd worden.
+
 ## 17.0.0
 
 20 augustus 2026
@@ -1151,7 +1181,7 @@ Community component 'Grid' van gemeente Amsterdam is toegevoegd aan de bibliothe
     "grid": {
       "column-count": {
         "$type": "number",
-        "$value": 12
+        "$value": "12"
       },
       "column-gap": {
         "$type": "dimension",
@@ -1192,7 +1222,7 @@ Community component 'Grid' van gemeente Amsterdam is toegevoegd aan de bibliothe
       "vi-medium": {
         "column-count": {
           "$type": "number",
-          "$value": 12
+          "$value": "12"
         },
         "padding-inline": {
           "$type": "dimension",
@@ -1202,7 +1232,7 @@ Community component 'Grid' van gemeente Amsterdam is toegevoegd aan de bibliothe
       "vi-wide": {
         "column-count": {
           "$type": "number",
-          "$value": 12
+          "$value": "12"
         },
         "padding-inline": {
           "$type": "dimension",
