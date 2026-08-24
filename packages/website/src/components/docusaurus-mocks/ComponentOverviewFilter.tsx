@@ -4,14 +4,13 @@ import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
 import { UnorderedList } from '@components/unordered-list/unordered-list';
 import { useEffect, useState, type SyntheticEvent } from 'react';
-import { COMPONENT_STATES } from '../../../../../src/utils';
+import { COMPONENT_STATES } from '@site/src/utils';
 import { EstafetteBadge } from '@site/src/components/EstafetteBadge';
 import './ComponentOverviewFilter.css';
 import { Button } from '@components/button/button';
 
 const SEARCH_PARAM_FRAMEWORK = 'framework';
 const SEARCH_PARAM_STATUS = 'status';
-let params: URLSearchParams;
 
 export const ComponentOverviewFilter = () => {
   const [shownCards, setShownCards] = useState<number>(0);
@@ -22,7 +21,6 @@ export const ComponentOverviewFilter = () => {
   const [frameworkFilters, setFrameworkFilters] = useState<string[]>([]);
 
   useEffect(() => {
-    params = new URLSearchParams(location.search);
     const cards: HTMLDivElement[] = [];
     const frameworkNames = new Set<string>();
     document.querySelectorAll('.ma-cardgroup .ma-component-overview-list-item').forEach((item: HTMLDivElement) => {
@@ -32,8 +30,15 @@ export const ComponentOverviewFilter = () => {
     setFrameworkNames([...frameworkNames].filter(Boolean));
     setCards(cards);
 
-    setStatusFilters(params.get(SEARCH_PARAM_STATUS)?.split(',') || []);
-    setFrameworkFilters(params.get(SEARCH_PARAM_FRAMEWORK)?.split(',') || []);
+    function getFiltersFromParams() {
+      const params = new URLSearchParams(location.search);
+      setStatusFilters(params.get(SEARCH_PARAM_STATUS)?.split(',') || []);
+      setFrameworkFilters(params.get(SEARCH_PARAM_FRAMEWORK)?.split(',') || []);
+    }
+    getFiltersFromParams();
+
+    window.addEventListener('popstate', getFiltersFromParams);
+    return () => window.removeEventListener('popstate', getFiltersFromParams);
   }, []);
 
   useEffect(() => {
@@ -53,10 +58,8 @@ export const ComponentOverviewFilter = () => {
 
     if (frameworkFilters.length) {
       cardsToShow.forEach((card) => {
-        const cardFrameworks: string = card.dataset['frameworkNames'] || '';
-        const keep = frameworkFilters.some((framework) => {
-          return cardFrameworks.includes(framework);
-        });
+        const cardFrameworks: string[] = (card.dataset['frameworkNames'] || '').split(',').filter(Boolean);
+        const keep = frameworkFilters.some((framework) => cardFrameworks.includes(framework));
         if (keep === false) {
           cardsToShow.delete(card);
         }
@@ -71,7 +74,7 @@ export const ComponentOverviewFilter = () => {
 
   function changeStatusFilter(event: SyntheticEvent<HTMLInputElement>) {
     const url = new URL(location.href);
-    const value = event.target.id;
+    const value = event.currentTarget.id;
 
     const newStatusArray = statusFilters.includes(value)
       ? statusFilters.filter((name) => name !== value)
@@ -90,7 +93,7 @@ export const ComponentOverviewFilter = () => {
 
   function changeFrameworkFilter(event: SyntheticEvent<HTMLInputElement>) {
     const url = new URL(location.href);
-    const value = event.target.id;
+    const value = event.currentTarget.id;
 
     const newFrameworkArray = frameworkFilters.includes(value)
       ? frameworkFilters.filter((name) => name !== value)
@@ -108,21 +111,31 @@ export const ComponentOverviewFilter = () => {
   }
 
   function resetFilter() {
-    setFrameworkFilters([]);
+    const url = new URL(location.href);
+
     setStatusFilters([]);
+    url.searchParams.delete(SEARCH_PARAM_STATUS);
+
+    setFrameworkFilters([]);
+    url.searchParams.delete(SEARCH_PARAM_FRAMEWORK);
+
+    history.replaceState({}, '', url);
   }
 
   return (
     <div className="ma-component-overview-filter ma-flow">
       <Accordion>
         <AccordionSection
-          heading="Filter componenten"
+          heading={<span id="filter-results-label">Filter componenten</span>}
           headingLevel={2}
           headingApperance="level-5"
           classNamePanel="ma-flow"
         >
-          <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
-            <Heading level={3} appearance="level-6">
+          <Fieldset
+            aria-describedby="filter-results"
+            aria-labelledby="filter-results-label filter-results-status-label"
+          >
+            <Heading id="filter-results-status-label" level={3} appearance="level-6">
               Status
             </Heading>
             <UnorderedList markers={false}>
@@ -130,8 +143,8 @@ export const ComponentOverviewFilter = () => {
                 .filter(([key]) => key !== 'UNKNOWN')
                 .map(([key, value]) => (
                   <UnorderedList.Item key={key}>
-                    <FormField key={key} type="checkbox">
-                      <Checkbox id={key} defaultChecked={statusFilters.includes(key)} onChange={changeStatusFilter} />
+                    <FormField type="checkbox">
+                      <Checkbox id={key} checked={statusFilters.includes(key)} onChange={changeStatusFilter} />
                       <FormLabel htmlFor={key}>
                         <EstafetteBadge state={value} />
                       </FormLabel>
@@ -140,19 +153,18 @@ export const ComponentOverviewFilter = () => {
                 ))}
             </UnorderedList>
           </Fieldset>
-          <Fieldset aria-describedby="filter-results" aria-labelledby="filter-results-label">
-            <Heading level={3} appearance="level-6">
+          <Fieldset
+            aria-describedby="filter-results"
+            aria-labelledby="filter-results-label filter-results-implementation-label"
+          >
+            <Heading id="filter-results-implementation-label" level={3} appearance="level-6">
               Implementatie
             </Heading>
             <UnorderedList markers={false}>
               {frameworkNames.map((name) => (
                 <UnorderedList.Item key={name}>
-                  <FormField key={name} type="checkbox">
-                    <Checkbox
-                      id={name}
-                      defaultChecked={frameworkFilters.includes(name)}
-                      onChange={changeFrameworkFilter}
-                    />
+                  <FormField type="checkbox">
+                    <Checkbox id={name} checked={frameworkFilters.includes(name)} onChange={changeFrameworkFilter} />
                     <FormLabel htmlFor={name}>{name}</FormLabel>
                   </FormField>
                 </UnorderedList.Item>
