@@ -10094,6 +10094,34 @@ body :lang(ar) {
 .ma-terms-list__definition__sources {
  margin-block-start: calc(var(--utrecht-space-around, 0) * var(--utrecht-paragraph-margin-block-start, 0));
 }
+.ma-session-table-container {
+ max-inline-size: 90vw;
+ overflow-x: auto;
+}
+.ma-session-table {
+ --utrecht-icon-size: 1em;
+ --utrecht-icon-inset-block-start: 0.1em;
+ display: table;
+ inline-size: 100%;
+ table-layout: auto;
+}
+.ma-session-table__speakers {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+}
+.ma-session-table__speaker {
+ --utrecht-icon-margin-inline-end: 4px;
+ inline-size: max-content;
+ padding-inline-start: calc(var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end));
+}
+.ma-speaker__icon {
+ margin-inline-end: var(--utrecht-icon-margin-inline-end);
+ margin-inline-start: calc((var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end)) * -1);
+}
+.ma-speaker__organisation {
+ font-size: 16px;
+}
 .nlds-icon-ext {
  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSIgYXJpYS1oaWRkZW49InRydWUiIHZpZXdCb3g9IjAgMCAyMiAyMiI+PHBhdGggc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTEwIDVIOC4yYy0xLjEyIDAtMS42OCAwLTIuMTA4LjIxOGEyIDIgMCAwIDAtLjg3NC44NzRDNSA2LjUyIDUgNy4wOCA1IDguMnY3LjZjMCAxLjEyIDAgMS42OC4yMTggMi4xMDhhMiAyIDAgMCAwIC44NzQuODc0Yy40MjcuMjE4Ljk4Ny4yMTggMi4xMDUuMjE4aDcuNjA2YzEuMTE4IDAgMS42NzcgMCAyLjEwNC0uMjE4LjM3Ny0uMTkyLjY4My0uNDk4Ljg3NS0uODc0LjIxOC0uNDI4LjIxOC0uOTg3LjIxOC0yLjEwNVYxNG0xLTVWNG0wIDBoLTVtNSAwLTcgNyIvPjwvc3ZnPg==);
  background-position: 100%;
@@ -10128,34 +10156,6 @@ body :lang(ar) {
  opacity: 1;
  transform: scale(1);
  visibility: visible;
-}
-.ma-session-table-container {
- max-inline-size: 90vw;
- overflow-x: auto;
-}
-.ma-session-table {
- --utrecht-icon-size: 1em;
- --utrecht-icon-inset-block-start: 0.1em;
- display: table;
- inline-size: 100%;
- table-layout: auto;
-}
-.ma-session-table__speakers {
- display: flex;
- flex-direction: column;
- gap: 16px;
-}
-.ma-session-table__speaker {
- --utrecht-icon-margin-inline-end: 4px;
- inline-size: max-content;
- padding-inline-start: calc(var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end));
-}
-.ma-speaker__icon {
- margin-inline-end: var(--utrecht-icon-margin-inline-end);
- margin-inline-start: calc((var(--utrecht-icon-size) + var(--utrecht-icon-margin-inline-end)) * -1);
-}
-.ma-speaker__organisation {
- font-size: 16px;
 }
 :root {
  --docsearch-primary-color: #003dff;
