@@ -30,6 +30,25 @@
 }
 
 /**
+ * Docusaurus overrides these values, but it should not.
+ */
+.nl-data-badge {
+  --nl-data-badge-padding-inline: var(--basis-space-inline-sm);
+  --nl-data-badge-padding-block: var(--basis-space-none);
+  --nl-data-badge-min-inline-size: var(--basis-size-sm);
+  --nl-data-badge-min-block-size: var(--basis-size-xs);
+  --nl-data-badge-line-height: var(--basis-text-line-height-md);
+  --nl-data-badge-font-weight: var(--basis-text-font-weight-bold);
+  --nl-data-badge-font-size: var(--basis-text-font-size-md);
+  --nl-data-badge-font-family: var(--basis-text-font-family-default);
+  --nl-data-badge-color: var(--basis-color-default-color-default);
+  --nl-data-badge-border-width: var(--basis-border-width-sm);
+  --nl-data-badge-border-radius: var(--basis-border-radius-sm);
+  --nl-data-badge-border-color: var(--basis-color-transparent);
+  --nl-data-badge-background-color: var(--basis-color-default-bg-default);
+}
+
+/**
  * These are tweaks to docusaurus components that break in Astro
  */
 .ma-component-illustration {
