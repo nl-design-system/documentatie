@@ -89,15 +89,10 @@ Het `lang`-attribuut moet een geldige taalcode bevatten volgens de BCP 47-standa
     ```
 </Guideline>
 
-<Guideline appearance="do" title="Geldige BCP 47-taalcodes.">
+<Guideline appearance="do" title="Geldige BCP 47-taalcodes voor Nederlands, Engels en Fries.">
     ```html
-    <!-- Nederlands -->
     <html lang="nl">
-
-    <!-- Engels -->
     <html lang="en">
-
-    <!-- Fries -->
     <html lang="fy">
     ```
 
@@ -147,11 +142,12 @@ In een <span lang="en">single-page</span> applicatie verandert de content zonder
 
 **Hoe te testen:** wissel van taal in de applicatie. Open de DevTools console en controleer de waarde van `document.documentElement.lang`. Komt die overeen met de geselecteerde taal?
 
+Het voorbeeld hieronder laat alleen zien hoe het `lang`-attribuut wordt bijgewerkt. Het laden van de content in de nieuwe taal staat er niet in.
+
 <Guideline appearance="do" title="Lang-attribuut bijwerken bij taalwissel.">
     ```javascript
-    function wisselTaal(taalcode) {
-      document.documentElement.lang = taalcode;
-      // ... content laden in de nieuwe taal ...
+    function switchLanguage(languageCode) {
+      document.documentElement.lang = languageCode;
     }
     ```
 </Guideline>
@@ -164,9 +160,8 @@ Frameworks zoals React, Angular en Vue genereren een standaard `index.html` met 
 
 **Hoe te testen:** open de DevTools en inspecteer het `<html>`-element. Staat er `lang="en"` terwijl de content in een andere taal is?
 
-<Guideline appearance="dont" title="Standaard Engelse taalcode uit een framework-template.">
+<Guideline appearance="dont" title="Standaard Engelse taalcode in de gegenereerde index.html van create-react-app.">
     ```html
-    <!-- Gegenereerd door create-react-app -->
     <html lang="en">
     ```
 </Guideline>
@@ -191,7 +186,7 @@ Frameworks zoals React, Angular en Vue genereren een standaard `index.html` met 
 1. Inspecteer het `<html>`-element in de DevTools. Controleer of een `lang`-attribuut aanwezig is met een geldige BCP 47-taalcode.
 2. Controleer of het `lang`-attribuut via JavaScript wordt bijgewerkt bij meertalige websites en <span lang="en">single-page</span> applicaties.
 3. Zoek in je templates naar hardcoded `lang="en"` uit framework-generators. Pas deze aan naar de juiste taal.
-4. Gebruik een geautomatiseerde tool zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span>. Een ontbrekend `lang`-attribuut wordt automatisch gedetecteerd. Of de taalcode overeenkomt met de daadwerkelijke content moet je handmatig controleren.
+4. Gebruik een geautomatiseerde tool zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span>. Een ontbrekend `lang`-attribuut wordt automatisch herkend. Of de taalcode overeenkomt met de daadwerkelijke content moet je handmatig controleren.
 
 ## Gerelateerde succescriteria
 
