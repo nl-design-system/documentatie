@@ -259,8 +259,8 @@ importers:
         specifier: 3.4.0
         version: 3.4.0
       '@nl-design-system/component-progress':
-        specifier: 1.0.18
-        version: 1.0.18
+        specifier: 1.1.2
+        version: 1.1.2
       '@nl-design-system/eslint-config':
         specifier: 1.0.0
         version: 1.0.0(eslint@9.39.2(jiti@1.21.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)
@@ -563,6 +563,9 @@ importers:
       '@utrecht/button-link-css':
         specifier: 3.0.1
         version: 3.0.1
+      '@utrecht/card-css':
+        specifier: 2.0.1
+        version: 2.0.1
       '@utrecht/checkbox-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -3812,6 +3815,9 @@ packages:
   '@nl-design-system/component-progress@1.0.18':
     resolution: {integrity: sha512-vspluDCPOheX8IZaIW+Z4pHtsm033ZtiUgFnGT9r5YthKc4PP/M7uISoYHzxcIplCXM4sg8H/p06Y6GzjOlLvw==}
 
+  '@nl-design-system/component-progress@1.1.2':
+    resolution: {integrity: sha512-VnQSqPV7SKf/etaa9/DVFhIklUJteBLfruKAosikDlUIyvaeEDsquuQz6IsUgkyBFCZA0WJaRRwFaQ5MCuM/nw==}
+
   '@nl-design-system/eslint-config@1.0.0':
     resolution: {integrity: sha512-ypsu7zBN26tVLdnbcK2+He2l+QK33qNtHGlBY0CY5x8wWkCQULSH+10E+rUIAf+kBHKdQkgr5+W60qyj97a66Q==}
     peerDependencies:
@@ -4881,6 +4887,9 @@ packages:
 
   '@utrecht/card-css@1.0.1':
     resolution: {integrity: sha512-zklTHHTxmQ++/AYSLk5O7NRxNvd6Mzmch6vBcuts2Nj78UeGB2xvjzPlNnr5/FQV65Dm1QpP8bE71K2SANz7eA==}
+
+  '@utrecht/card-css@2.0.1':
+    resolution: {integrity: sha512-gLvEVM7c2dj6qCkmWz8yOi6fO30vzZeMGi0W3YsfnvY26V26sQPtljuMGypfB+AV1gBkw9qF6SU0tsaVOlriIQ==}
 
   '@utrecht/card-react@0.0.4':
     resolution: {integrity: sha512-+1hsXn6k4ixXmeWZsi1GPRyErlcXzaN0cgLk5L1iQNVWnUBbkvYqbn76jF95MX2Jg4aiv6/zNdC59f10S/+g7Q==}
@@ -16443,6 +16452,8 @@ snapshots:
 
   '@nl-design-system/component-progress@1.0.18': {}
 
+  '@nl-design-system/component-progress@1.1.2': {}
+
   '@nl-design-system/eslint-config@1.0.0(eslint@9.39.2(jiti@1.21.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)':
     dependencies:
       '@eslint/js': 9.19.0
@@ -17553,6 +17564,10 @@ snapshots:
   '@utrecht/card-css@1.0.1':
     dependencies:
       '@utrecht/img-css': 2.0.1
+
+  '@utrecht/card-css@2.0.1':
+    dependencies:
+      '@utrecht/img-css': 3.0.1
 
   '@utrecht/card-react@0.0.4(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:

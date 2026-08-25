@@ -60,6 +60,7 @@
     "@utrecht/button-css": "4.0.1",
     "@utrecht/button-group-css": "3.0.1",
     "@utrecht/button-link-css": "3.0.1",
+    "@utrecht/card-css": "2.0.1",
     "@utrecht/checkbox-css": "3.0.1",
     "@utrecht/custom-checkbox-css": "3.0.1",
     "@utrecht/drawer-css": "3.0.1",
