@@ -1,0 +1,41 @@
+.ma-utrecht-accordion {
+  grid-template-columns: minmax(0, 1fr);
+
+  .utrecht-accordion__section .nl-button__icon-start {
+    transition: rotate 400ms ease-in-out;
+  }
+
+  .utrecht-accordion__section[open] .nl-button__icon-start {
+    rotate: 180deg;
+
+    :dir(rtl) & {
+      rotate: -180deg;
+    }
+  }
+
+  .utrecht-accordion__header {
+    display: flex;
+
+    .nl-button {
+      --nl-button-border-radius: 0;
+
+      flex: 1;
+      justify-content: start;
+    }
+
+    .nl-button__label {
+      margin-block: 0;
+    }
+
+    .nl-heading {
+      color: inherit;
+    }
+
+    &:focus-visible {
+      .nl-button {
+        background-color: var(--basis-focus-background-color);
+        color: var(--basis-focus-color);
+      }
+    }
+  }
+}
