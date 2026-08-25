@@ -81,6 +81,7 @@ const schema = z.object({
   hide_table_of_contents: z.boolean().optional(),
   lead: z.string().optional(),
   lang: z.enum(['nl', 'en']).default('nl'),
+  translations: z.record(z.string(), z.string()).optional(),
   slug: z.string().optional(),
   unlisted: z.boolean().optional(),
   image: z.httpUrl().optional(),

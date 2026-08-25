@@ -1,5 +1,5 @@
 ---
-import { siteName, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { siteName, siteBaseUrl, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
 import { generateDocumentTitle } from '@utils/document-title';
 import { PageHeader } from '@components/page-header/page-header';
 import { PageFooter } from '@components/page-footer/page-footer';
@@ -65,7 +65,8 @@ export interface Props {
   title: string;
   titleSm?: string;
   description?: string;
-  lang: I18nLanguages;
+  lang?: I18nLanguages;
+  translations?: Partial<Record<I18nLanguages, string>>;
   seoImage?: string;
   seoImageAlt?: string;
   keywords?: string[];
@@ -79,6 +80,7 @@ const {
   titleSm,
   description,
   lang = 'nl',
+  translations,
   keywords,
   seoImage,
   seoImageAlt,
@@ -91,7 +93,16 @@ const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = i18n[lang].logoAlt;
 
 const documentTitle = generateDocumentTitle(titleSm || title);
-const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
+const canonicalUrl = new URL(Astro.url.pathname, siteBaseUrl);
+const pageAlternates = new Map<string, string>();
+pageAlternates.set(lang, canonicalUrl.toString());
+if (translations) {
+  for (const [altLang, path] of Object.entries(translations)) {
+    const normalized = path.endsWith('/') ? path : `${path}/`;
+    pageAlternates.set(altLang, new URL(normalized, `${siteBaseUrl}/`).toString());
+  }
+}
+const xDefault = pageAlternates.get('nl') ?? canonicalUrl.toString();
 const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
 const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
 const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
@@ -103,7 +114,6 @@ const items = serialiseNavigationTree(navigationTree);
 const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
 
 const footerNavigationItems = [
-  //{ href: '/blog/', label: 'Blog', lang: 'en' },
   { href: '/project/kernteam/', label: 'Contact', lang: 'nl' },
   { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid', lang: 'nl' },
   { href: '/privacyverklaring/', label: 'Privacyverklaring', lang: 'nl' },
@@ -129,6 +139,12 @@ const footerNavigationItems = [
 
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="canonical" href={canonicalUrl} />
+    {
+      Array.from(pageAlternates.entries()).map(([hreflang, href]) => (
+        <link rel="alternate" hreflang={hreflang} href={href} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={xDefault} />
     <meta name="description" content={description} />
     <meta name="keywords" content={[..._keywords].join(', ')} />
     <meta name="robots" content={_robots} />
