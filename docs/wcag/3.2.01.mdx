@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.2.1 Bij focus
 pagination_label: WCAG-succescriterium 3.2.1 Bij focus
-description: Een link, knop of formulierveld krijgt de focus zonder dat er verder iets verandert. Er opent geen nieuw venster, er verschijnt geen andere pagina en de focus blijft staan waar de bezoeker naartoe ging.
+description: Een link, knop of formulierveld krijgt de focus zonder dat er een grote verandering volgt. Er opent geen nieuw venster, er verschijnt geen andere pagina en de focus blijft staan waar de bezoeker naartoe ging.
 slug: 3.2.1
 conformance_level: Niveau A
 keywords:
@@ -42,24 +42,26 @@ import Summary from "./summaries/_3.2.1-summary.md";
 
 <Summary />
 
-Niet elke reactie op focus is een probleem. Alleen focus krijgen mag geen ingrijpende verandering opleveren. Een tooltip of een submenu tonen mag, zolang de focus blijft staan waar het was en de rest van de pagina hetzelfde blijft. Een bezoeker die een link of knop activeert, met een klik of met <kbd>Enter</kbd> of <kbd>Spatie</kbd>, verwacht juist wel dat er iets gebeurt.
+Niet elke reactie op focus is een probleem. Een tooltip die verschijnt, een submenu dat openklapt of resultaten die bijwerken in een lijst die er al staat: daarbij verandert de inhoud van de pagina. Dat mag, zolang de focus blijft staan waar die was en de rest van de pagina hetzelfde blijft.
 
-Dit geldt ook voor wie de muis gebruikt. Klikken in een tekstveld of een keuzelijst openen geeft dat onderdeel focus, terwijl de bezoeker nog niets heeft ingevuld of gekozen. De pagina mag niet door deze selectie veranderen.
+Een grote verandering is iets anders. De bezoeker komt op een andere pagina, er opent een nieuw venster, de focus staat ineens op een ander onderdeel, of de indeling van de pagina wisselt zo ingrijpend dat de bezoeker opnieuw moet uitzoeken waar alles staat. Zo'n verandering hoort bij een actie van de bezoeker zelf. Wie een link of knop activeert, met de muis of met het toetsenbord, verwacht juist wel dat er iets gebeurt.
+
+Dit geldt ook voor wie de muis gebruikt. Klikken in een tekstveld of een keuzelijst openen geeft dat onderdeel focus, terwijl de bezoeker nog niets heeft ingevuld of gekozen. Ook dan mag de pagina niet ingrijpend veranderen.
 
 ## Veelgemaakte fouten
 
-### Een keuzelijst of filter reageert al terwijl je langs de opties gaat
+### Een optie doet al iets terwijl je alleen langs de lijst gaat
 
-In een keuzelijst, een sorteermenu of een filter ga je met de pijltoetsen langs de opties om te zien wat er is. Bij elke optie die de focus krijgt, voert de pagina de keuze meteen uit: de sorteervolgorde wisselt, de resultaten worden opnieuw geladen of de bezoeker komt op een andere pagina. De bezoeker heeft nog niets bevestigd en kan de opties niet rustig langsgaan. Wie de muis gebruikt, ziet de lijst gewoon openstaan en kiest daarna pas.
+In een zelfgemaakte keuzelijst, een sorteermenu of een filter gaat de bezoeker met de pijltoetsen langs de opties om te zien wat er is. Elke optie krijgt daarbij de focus, terwijl er nog niets is gekozen. Voert de pagina die optie meteen uit, dan komt de bezoeker op een andere pagina of in een nieuw venster terecht. De opties rustig langsgaan lukt dan niet. Wie de muis gebruikt, ziet de lijst gewoon openstaan en kiest daarna pas.
 
-Hetzelfde probleem ontstaat als de lijst dichtklapt zodra de focus verandert, bijvoorbeeld bij het teruggaan met <kbd>Shift</kbd> + <kbd>Tab</kbd>. De bezoeker kan de opties dan met het toetsenbord niet bekijken.
+Twee dingen zijn hier iets anders. Resultaten die bijwerken terwijl de bezoeker in de lijst blijft staan, veranderen alleen de inhoud van de pagina. En in een keuzelijst die met het HTML-element `select` is gemaakt, hoort het langsgaan van de opties bij het kiezen van een waarde: verandert de pagina op dat moment, kijk dan bij [succescriterium 3.2.2 Bij invoer](/wcag/3.2.2/).
 
-**Hoe te testen:** open een keuzelijst of een filter met het toetsenbord en ga met de pijltoetsen langs de opties. Blijft de pagina hetzelfde totdat je een optie bevestigt met <kbd>Enter</kbd>? Blijft de lijst open als je met <kbd>Shift</kbd> + <kbd>Tab</kbd> teruggaat naar het vorige onderdeel?
+**Hoe te testen:** open een zelfgemaakte keuzelijst met het toetsenbord en ga met de pijltoetsen langs de opties, zonder er een te bevestigen. Blijf je op dezelfde pagina en blijft de focus in de lijst staan?
 
-<Guideline appearance="dont" title="Elke optie die de focus krijgt, wordt meteen toegepast">
+<Guideline appearance="dont" title="Een optie die de focus krijgt, stuurt de bezoeker meteen door">
     ```js
-    optie.addEventListener("focus", () => {
-      pasSorteringToe(optie.value);
+    option.addEventListener("focus", () => {
+      window.location.href = option.dataset.url;
     });
     ```
 </Guideline>
@@ -67,10 +69,10 @@ Hetzelfde probleem ontstaat als de lijst dichtklapt zodra de focus verandert, bi
 <Guideline appearance="do" title="De keuze wordt pas toegepast als de bezoeker die bevestigt">
   ```html
   <form action="/overzicht">
-    <label for="sorteer">Sorteer op</label>
-    <select id="sorteer" name="sorteer">
-      <option value="datum">Datum</option>
-      <option value="titel">Titel</option>
+    <label for="sort">Sorteer op</label>
+    <select id="sort" name="sort">
+      <option value="date">Datum</option>
+      <option value="title">Titel</option>
     </select>
     <button type="submit">Toepassen</button>
   </form>
@@ -90,18 +92,18 @@ Zodra een veld of een knop de focus krijgt, gaat de focus automatisch door naar 
 
 <Guideline appearance="dont" title="Een hulpvenster dat de focus overneemt">
     ```js
-    postcode.addEventListener("focus", () => {
-      openHulpvenster();
-      hulpvenster.focus();
+    postalCode.addEventListener("focus", () => {
+      openHelpDialog();
+      helpDialog.focus();
     });
     ```
 </Guideline>
 
 <Guideline appearance="do" title="De uitleg staat er altijd en de focus blijft staan">
   ```html
-  <label for="postcode">Postcode</label>
-  <input id="postcode" aria-describedby="postcode-hint" />
-  <p id="postcode-hint">Bijvoorbeeld 1234 AB.</p>
+  <label for="postal-code">Postcode</label>
+  <input id="postal-code" aria-describedby="postal-code-hint" />
+  <p id="postal-code-hint">Bijvoorbeeld 1234 AB.</p>
   ```
 </Guideline>
 
@@ -119,7 +121,7 @@ Een formulier laat bij een veld zien dat er iets mis is. Zodra de bezoeker naar 
 <Guideline appearance="dont" title="De foutmelding verdwijnt zodra het veld de focus krijgt">
     ```js
     email.addEventListener("focus", () => {
-      foutmelding.remove();
+      errorMessage.remove();
     });
     ```
 </Guideline>
@@ -127,8 +129,8 @@ Een formulier laat bij een veld zien dat er iets mis is. Zodra de bezoeker naar 
 <Guideline appearance="do" title="De foutmelding blijft staan en hoort bij het veld">
   ```html
   <label for="email">E-mailadres</label>
-  <input id="email" type="email" aria-describedby="email-fout" aria-invalid="true" />
-  <p id="email-fout">Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.</p>
+  <input id="email" type="email" aria-describedby="email-error" aria-invalid="true" />
+  <p id="email-error">Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.</p>
   ```
 </Guideline>
 
@@ -136,21 +138,21 @@ Een formulier laat bij een veld zien dat er iets mis is. Zodra de bezoeker naar 
 
 ### De pagina verandert ingrijpend zodra een onderdeel focus krijgt
 
-Een zoekveld, een keuzelijst of een keuzevakje in een filter verandert een groot deel van de pagina op het moment dat het de focus krijgt. De inhoud, het menu of de indeling wisselt, terwijl de bezoeker nog niets heeft getypt of gekozen: het onderdeel heeft alleen de focus gekregen. Een screenreadergebruiker hoort de pagina veranderen zonder te weten waarom en weet niet meer waar de focus staat.
+Een zoekveld, een keuzelijst of een keuzevakje in een filter verandert de pagina ingrijpend op het moment dat het de focus krijgt. De bezoeker komt op een andere pagina, de indeling wisselt of het menu ziet er anders uit, terwijl er nog niets is getypt of gekozen. Een screenreadergebruiker hoort de pagina veranderen zonder te weten waarom en weet niet meer waar de focus staat.
 
-Ook een functie die uit zichzelf begint hoort hierbij. Een voorleesfunctie die gaat praten zodra de knop de focus krijgt, of een zoekopdracht die draait voordat de bezoeker iets heeft ingetypt, overvalt de bezoeker op dezelfde manier.
+Het gaat om een verandering waardoor de bezoeker opnieuw moet uitzoeken waar alles staat. Resultaten die bijwerken in een lijst die er al staat, horen daar niet bij: de bezoeker blijft op dezelfde pagina en de focus blijft staan.
 
-**Hoe te testen:** druk op de <kbd>Tab</kbd>-toets tot je bij een zoekveld of een keuzelijst bent, en typ of kies niets. Verandert de pagina alleen doordat het onderdeel focus krijgt?
+**Hoe te testen:** druk op de <kbd>Tab</kbd>-toets tot je bij een zoekveld of een keuzelijst bent, en typ of kies niets. Kom je op een andere pagina, wisselt de indeling van de pagina of staat de focus ergens anders?
 
-<Guideline appearance="dont" title="Een zoekveld dat de pagina verandert zodra het focus krijgt">
+<Guideline appearance="dont" title="Een zoekveld dat de bezoeker doorstuurt zodra het focus krijgt">
     ```js
-    zoekveld.addEventListener("focus", () => {
-      laadZoekresultaten();
+    searchField.addEventListener("focus", () => {
+      window.location.href = "/zoeken";
     });
     ```
 </Guideline>
 
-<Guideline appearance="do" title="De pagina verandert pas als de bezoeker zoekt">
+<Guideline appearance="do" title="De bezoeker komt pas op de zoekpagina als die zelf zoekt">
   ```html
   <form role="search" action="/zoeken">
     <label for="q">Zoeken</label>
@@ -191,10 +193,10 @@ Een link of knop opent een nieuw browservenster of een nieuw tabblad zodra die d
 1. Leg je muis weg en druk herhaaldelijk op de <kbd>Tab</kbd>-toets om door de pagina te gaan.
 2. Gebeurt er iets ingrijpends, alleen doordat het onderdeel focus krijgt?
 3. Let op nieuwe vensters of tabbladen die opengaan zonder dat je op <kbd>Enter</kbd> of <kbd>Spatie</kbd> hebt gedrukt.
-4. Druk op de <kbd>Tab</kbd>-toets tot je bij een zoekveld of een keuzelijst bent, en typ of kies niets. Verandert de pagina alleen doordat het onderdeel focus krijgt?
+4. Druk op de <kbd>Tab</kbd>-toets tot je bij een zoekveld of een keuzelijst bent, en typ of kies niets. Kom je op een andere pagina of wisselt de indeling van de pagina?
 5. Let op of de focus blijft waar je naartoe ging, of dat die ergens anders naartoe gaat.
-6. Klik met de muis in een tekstveld en open een keuzelijst, zonder iets in te vullen of te kiezen. Verandert de pagina alleen doordat het onderdeel focus krijgt?
-7. Open een keuzelijst, een sorteermenu of een filter en ga met de pijltoetsen langs de opties. Blijft de pagina hetzelfde totdat je een optie bevestigt?
+6. Klik met de muis in een tekstveld en open een keuzelijst, zonder iets in te vullen of te kiezen. Kom je op een andere pagina of wisselt de indeling van de pagina?
+7. Open een zelfgemaakte keuzelijst, een sorteermenu of een filter en ga met de pijltoetsen langs de opties, zonder er een te bevestigen. Blijf je op dezelfde pagina en blijft de focus in de lijst staan?
 8. Verstuur een formulier met een fout erin en ga daarna naar het veld met de fout. Blijft de foutmelding staan terwijl het veld de focus heeft?
 
 ### Voor developers
