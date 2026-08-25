@@ -1,0 +1,29 @@
+@property --ma-flow-space {
+  inherits: false;
+  initial-value: 16px;
+  syntax: "<length-percentage>";
+}
+
+/**
+ * Taken from https://piccalil.li/blog/flow-utility/
+ * Adds content aware spacing to all children in a container
+ */
+.ma-flow > * + * {
+  margin-block-start: var(--ma-flow-space, var(--ma-space-relative-block-xl)) !important;
+}
+
+.ma-flow--on-content {
+  > .rhc-card__content,
+  > .ma-card__content,
+  > .utrecht-page-header__content,
+  > .utrecht-page-footer__content,
+  > .utrecht-nav-bar__content {
+    > * + * {
+      margin-block-start: var(--ma-flow-space, var(--ma-space-relative-block-xl)) !important;
+    }
+  }
+}
+
+.ma-flow > .nl-heading {
+  --ma-flow-space: var(--ma-space-relative-block-3xl);
+}

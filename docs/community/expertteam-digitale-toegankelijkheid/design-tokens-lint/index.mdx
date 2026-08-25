@@ -1,0 +1,68 @@
+---
+title: Design Tokens valideren
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Design Tokens valideren
+pagination_label: Design Tokens valideren
+description: Linten en valideren van bestaande thema tokens JSON bestanden
+slug: /project/expertteam-digitale-toegankelijkheid/design-tokens-lint
+keywords:
+  - Expertteam
+  - deelproject
+  - nl design system
+  - componenten
+  - design system
+  - design tokens
+  - basis tokens
+  - thema's
+---
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Design Tokens valideren
+
+<Paragraph appearance="lead">
+  Gebruik de `design-tokens-lint` CLI tool om automatisch de Design Tokens JSON bestanden te valideren.
+</Paragraph>
+
+## Installatie
+
+```shell
+pnpm add --save-dev @nl-design-system-community/design-tokens-lint
+```
+
+## Valideer een tokens-bestand
+
+```shell
+design-tokens-lint src/tokens.json
+```
+
+Meerdere bestanden worden voor validatie in volgorde samengevoegd. Bij conflicten overschrijven latere bestanden eerdere.
+
+```shell
+design-tokens-lint theme.tokens.json dark-mode.tokens.json
+```
+
+## Valideer een Tokens Studio-bestand
+
+Bij gebruik van een tokens.json die door Tokens Studio is gegenereerd moeten we 1 laag van de JSON afhalen.
+
+```shell
+design-tokens-lint --exclude-parent-keys figma/figma.tokens.json
+```
+
+## Verbeteringen opslaan
+
+Sla het resultaat op in een bestand, in plaats van alleen het resultaat zien in de terminal. Dit werkt voor zowel geslaagde als mislukte validaties. Bij succes wordt de volledige tokens-tree geschreven, inclusief aanvullende NL Design System-extensies en geüpgradede tokens die overeenkomen met [het Design Tokens JSON-formaat](https://www.designtokens.org/tr/2025.10/format/). Bij een fout worden de problemen als JSON naar het bestand geschreven.
+
+```shell
+design-tokens-lint --out result.json src/tokens.json
+```
+
+## Command line opties
+
+Gebruik `--help` om alle opties te bekijken:
+
+```shell
+design-tokens-lint --help
+```
