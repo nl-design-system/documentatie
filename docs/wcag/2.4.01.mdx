@@ -31,9 +31,7 @@ import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
-import Disclaimer from "./\_wcag-disclaimer.md";
 import WCAGFooterInfo from "./\_wcag_footer_info.md";
 import Summary from "./summaries/\_2.4.1-summary.md";
 
@@ -145,10 +143,11 @@ De `href` van de skiplink verwijst naar een `id` die niet op de pagina staat, of
 
 **Hoe te testen:** activeer de skiplink met <kbd>Enter</kbd> en druk op <kbd>Tab</kbd>. Bevindt de focus zich in de hoofdcontent?
 
+In de twee voorbeelden hieronder staan alleen de skiplink en het doelelement. De rest van de pagina is weggelaten.
+
 <Guideline appearance="dont" title="Skiplink verwijst naar een id dat niet bestaat">
     ```html
     <a href="#content">Ga naar inhoud</a>
-    <!-- ... -->
     <main id="main">
       <h1>Welkom</h1>
     </main>
@@ -158,7 +157,6 @@ De `href` van de skiplink verwijst naar een `id` die niet op de pagina staat, of
 <Guideline appearance="do" title="Skiplink en doel-id komen overeen">
     ```html
     <a href="#main">Ga naar inhoud</a>
-    <!-- ... -->
     <main id="main" tabindex="-1">
       <h1>Welkom</h1>
     </main>
@@ -173,6 +171,8 @@ Niet alleen de navigatie bovenaan de pagina is een herhaald blok. Een zijkolom m
 
 **Hoe te testen:** ga met <kbd>Tab</kbd> door de pagina. Zijn er filters of navigaties in de zijkolom die je bij elke pagina opnieuw moet doorlopen?
 
+Het voorbeeld hieronder is ingekort: er staan in de praktijk meer filters en meer resultaten op de pagina.
+
 <Guideline appearance="do" title="Filterbalk in een gelabeld nav-element dat overgeslagen kan worden via landmarks">
     ```html
     <main id="main" tabindex="-1">
@@ -181,11 +181,9 @@ Niet alleen de navigatie bovenaan de pagina is een herhaald blok. Een zijkolom m
         <button>Categorie</button>
         <button>Prijs</button>
         <button>Beoordeling</button>
-        <!-- ... nog meer filters -->
       </nav>
       <section aria-label="Resultaten">
         <h2>12 resultaten</h2>
-        <!-- ... -->
       </section>
     </main>
     ```
@@ -227,7 +225,7 @@ Landmarkregio's zoals `<main>`, `<nav>`, `<header>` en `<footer>` geven screenre
 
 ### Geef elk navigatieblok een eigen beschrijving
 
-Een pagina kan meerdere `<nav>`-elementen bevatten — bijvoorbeeld een hoofdnavigatie, een broodkruimelpad en een footernavigatie. Geef elk daarvan een `aria-label` dat de functie beschrijft. In de landmarklijst van een screenreader is dan duidelijk welke navigatie wat is.
+Een pagina kan meerdere `<nav>`-elementen bevatten: een hoofdnavigatie, een broodkruimelpad en een footernavigatie. Geef elk daarvan een `aria-label` dat de functie beschrijft. In de landmarklijst van een screenreader is dan duidelijk welke navigatie wat is.
 
 **Hoe te testen:** open de landmarklijst in een screenreader. Zijn de navigatieregio's van elkaar te onderscheiden?
 
@@ -282,20 +280,20 @@ Een pagina kan meerdere `<nav>`-elementen bevatten — bijvoorbeeld een hoofdnav
 - [1.3.1 Info en relaties](/wcag/1.3.1/): landmarkregio's en koppen zijn programmatisch bepaald. Zonder correcte HTML-structuur werken deze mechanismen niet.
 - [2.4.2 Paginatitel](/wcag/2.4.2/): de paginatitel is het eerste wat een screenreader voorleest. Samen met de skiplink en landmarks helpt het bij snelle oriëntatie.
 
-## NLDS-componenten
+## Gerelateerde componenten
 
-- [Skip-link](/componenten/skip-link/) — de standaardimplementatie van het mechanisme om herhaalde blokken over te slaan.
-- [Navigation-bar](/componenten/navigation-bar/) — voor de hoofdnavigatie als landmark met een eigen label.
-- [Page-header](/componenten/page-header/) — semantische `<header>` rond logo, hoofdnavigatie en zoekbalk.
-- [Page-footer](/componenten/page-footer/) — semantische `<footer>` rond herhaalde voettekstinhoud.
-- [Breadcrumb-navigation](/componenten/breadcrumb-navigation/) — extra nav-blok dat naast de hoofdnavigatie een eigen `aria-label` nodig heeft.
-- [Side-navigation](/componenten/side-navigation/) — herhaalde zijkolomnavigatie die ook overgeslagen moet kunnen worden.
-- [Heading-group](/componenten/heading-group/) — koppenstructuur die screenreadergebruikers als alternatief skip-mechanisme gebruiken.
+- [Skip-link](/componenten/skip-link/): de standaardimplementatie van het mechanisme om herhaalde blokken over te slaan.
+- [Navigation-bar](/componenten/navigation-bar/): voor de hoofdnavigatie als landmark met een eigen label.
+- [Page-header](/componenten/page-header/): semantische `<header>` rond logo, hoofdnavigatie en zoekbalk.
+- [Page-footer](/componenten/page-footer/): semantische `<footer>` rond herhaalde voettekstinhoud.
+- [Breadcrumb-navigation](/componenten/breadcrumb-navigation/): extra nav-blok dat naast de hoofdnavigatie een eigen `aria-label` nodig heeft.
+- [Side-navigation](/componenten/side-navigation/): herhaalde zijkolomnavigatie die ook overgeslagen moet kunnen worden.
+- [Heading-group](/componenten/heading-group/): koppenstructuur die screenreadergebruikers als alternatief skip-mechanisme gebruiken.
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 2.4.1 Blokken omzeilen](https://www.w3.org/Translations/WCAG22-nl/#blokken-omzeilen) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 2.4.1: Bypass Blocks](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [WCAG 2.2: Succescriterium 2.4.1 Blokken omzeilen](https://www.w3.org/Translations/WCAG22-nl/#blokken-omzeilen): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 2.4.1: Bypass Blocks](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 - [Zo zet je skiplinks in voor een optimale navigatie](https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie) van Stichting Accessibility.
 - [<span lang="en">Understanding skip link</span>](https://tatiana-fokina-blog.ru/en/articles/understanding-a-skip-link/) van Tatiana Fokina.
 - [<span lang="en">How To Avoid Breaking Web Pages For Keyboard Users</span>](https://www.tpgi.com/how-to-avoid-breaking-web-pages-for-keyboard-users/) van Andrew Nevins.
@@ -315,12 +313,6 @@ WebAIM publiceert elk jaar de [<span lang="en">Screen Reader User Survey</span>]
 - Nederlandse vertaling van het WCAG-succescriterium: [2.4.1 Blokken omzeilen](https://www.w3.org/Translations/WCAG22-nl/#bypass-blocks).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.1 Bypass Blocks</span>](https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.1 Bypass Blocks</span>](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
