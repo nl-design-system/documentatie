@@ -6,11 +6,10 @@ import { Paragraph } from '../../packages/website/src/components/paragraph/parag
 import { Button } from '../../packages/website/src/components/button/button';
 import { Accordion, AccordionSection } from '../../packages/website/src/components/accordion/accordion';
 import { Heading, type HeadingProps } from '../../packages/website/src/components/heading/heading';
-import { DataBadge } from '@nl-design-system-candidate/data-badge-react/css';
+import { DataBadge } from '@nl-design-system-candidate/data-badge-react';
 import clsx from 'clsx';
 import { useId, useState } from 'react';
-import './Checklist.css';
-import { Checkbox, Fieldset, FormField, FormLabel } from '@utrecht/component-library-react/css-module';
+import { Checkbox, Fieldset, FormField, FormLabel } from '@utrecht/component-library-react';
 
 /**
  * ChecklistItemProps defines expected variables for the item to test.
