@@ -55,9 +55,10 @@ Het hoofdmenu bevat op elke pagina dezelfde links, maar de volgorde verschilt. O
 
 **Hoe te testen:** open een paar pagina's van de website naast elkaar en vergelijk de volgorde van de menu-items. Staat elk item overal op dezelfde plaats in de volgorde?
 
+In het foute voorbeeld hieronder staat eerst het menu van de homepage en daarna hetzelfde menu van de productpagina. Contact staat op de homepage achteraan en op de productpagina tussen de andere items in.
+
 <Guideline appearance="dont" title="Hetzelfde menu in een andere volgorde per pagina">
     ```html
-    <!-- pagina A -->
     <nav aria-label="Hoofdmenu">
       <ul>
         <li><a href="/">Home</a></li>
@@ -66,7 +67,6 @@ Het hoofdmenu bevat op elke pagina dezelfde links, maar de volgorde verschilt. O
       </ul>
     </nav>
 
-    <!-- pagina B: andere volgorde -->
     <nav aria-label="Hoofdmenu">
       <ul>
         <li><a href="/">Home</a></li>
@@ -79,16 +79,21 @@ Het hoofdmenu bevat op elke pagina dezelfde links, maar de volgorde verschilt. O
 </Guideline>
 
 <Guideline appearance="do" title="Hetzelfde menu in dezelfde volgorde op elke pagina">
-    ```html
-    <!-- op elke pagina gelijk -->
-    <nav aria-label="Hoofdmenu">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/producten">Producten</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-    ```
+  ```html
+  <nav aria-label="Hoofdmenu">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/producten">Producten</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  ```
 </Guideline>
 
 Op een pagina waar een menu-item niet van toepassing is, valt dat item weg. De bezoeker vindt de andere items dan nog steeds terug, zolang die hun onderlinge volgorde houden.
@@ -104,15 +109,15 @@ De zoekfunctie staat op de homepage vóór het hoofdmenu, maar op een subpagina 
 
 **Hoe te testen:** ga van pagina naar pagina en let op de volgorde van de zoekfunctie, het menu en de inlogknop. Kom je ze op elke pagina in dezelfde volgorde tegen, ook als je met <kbd>Tab</kbd> door de pagina gaat?
 
+In het foute voorbeeld hieronder staat de zoekfunctie op de eerste pagina in de header vóór het hoofdmenu, en op de tweede pagina pas onderaan in de footer.
+
 <Guideline appearance="dont" title="De zoekfunctie op een andere plaats in de volgorde per pagina">
     ```html
-    <!-- pagina A: zoeken vóór het menu -->
     <header>
       <form role="search"><input type="search" /></form>
       <nav aria-label="Hoofdmenu">...</nav>
     </header>
 
-    <!-- pagina B: zoeken pas onderaan, na de inhoud -->
     <header>
       <nav aria-label="Hoofdmenu">...</nav>
     </header>
@@ -124,13 +129,14 @@ De zoekfunctie staat op de homepage vóór het hoofdmenu, maar op een subpagina 
 </Guideline>
 
 <Guideline appearance="do" title="De zoekfunctie op elke pagina op dezelfde plaats in de volgorde">
-    ```html
-    <!-- op elke pagina gelijk -->
-    <header>
-      <form role="search"><input type="search" /></form>
-      <nav aria-label="Hoofdmenu">...</nav>
-    </header>
-    ```
+  ```html
+  <header>
+    <form role="search">
+      <input type="search" />
+    </form>
+    <nav aria-label="Hoofdmenu">...</nav>
+  </header>
+  ```
 </Guideline>
 
 **Wie kan dit oplossen:**
@@ -148,13 +154,12 @@ De indeling verandert mee met de schermbreedte. Onderdelen die op een breed sche
 
 <Guideline appearance="dont" title="CSS die de volgorde op een smal scherm omdraait">
     ```css
-    /* op een smal scherm springt zoeken naar boven en verandert de volgorde */
     @media (max-width: 600px) {
       .nav {
         display: flex;
         flex-direction: column;
       }
-      .nav__zoeken {
+      .nav__search {
         order: -1;
       }
     }
@@ -163,7 +168,6 @@ De indeling verandert mee met de schermbreedte. Onderdelen die op een breed sche
 
 <Guideline appearance="do" title="Dezelfde volgorde op elke schermbreedte">
     ```css
-    /* de onderdelen houden op elke schermbreedte dezelfde volgorde */
     @media (max-width: 600px) {
       .nav {
         display: flex;
@@ -184,13 +188,13 @@ Een broodkruimelpad laat zien waar je bent, bijvoorbeeld "Home > Producten > Fie
 
 **Hoe te testen:** bekijk het broodkruimelpad op verschillende pagina's die het gebruiken. Staat het overal op dezelfde plaats: steeds boven of steeds onder de titel?
 
+In het foute voorbeeld hieronder staat het broodkruimelpad op de eerste pagina boven de titel en op de tweede pagina eronder.
+
 <Guideline appearance="dont" title="Het broodkruimelpad op een wisselende plaats in de pagina">
     ```html
-    <!-- pagina A: broodkruimelpad boven de titel -->
     <nav aria-label="Broodkruimelpad">...</nav>
     <h1>Fietsen</h1>
 
-    <!-- pagina B: broodkruimelpad onder de titel -->
     <h1>Onderdelen</h1>
     <nav aria-label="Broodkruimelpad">...</nav>
     ```
@@ -198,11 +202,10 @@ Een broodkruimelpad laat zien waar je bent, bijvoorbeeld "Home > Producten > Fie
 </Guideline>
 
 <Guideline appearance="do" title="Het broodkruimelpad overal op dezelfde plaats in de pagina">
-    ```html
-    <!-- op elke pagina gelijk -->
-    <nav aria-label="Broodkruimelpad">...</nav>
-    <h1>Fietsen</h1>
-    ```
+  ```html
+  <nav aria-label="Broodkruimelpad">...</nav>
+  <h1>Fietsen</h1>
+  ```
 </Guideline>
 
 **Wie kan dit oplossen:** een developer plaatst het broodkruimelpad op elke pagina op dezelfde plaats in de opbouw, bij voorkeur vanuit één gedeeld sjabloon.
