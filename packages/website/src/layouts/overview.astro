@@ -8,6 +8,7 @@ import { getBreadcrumbsForElement } from '../navigation/get-breadcrumbs-for-elem
 import './overview.css';
 import { withCurrentIndication } from 'src/navigation/with-current-indication';
 import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
+import { i18n } from 'src/i18n';
 
 export type Props = DocumentProps;
 
@@ -29,7 +30,7 @@ const { ...props } = Astro.props;
         breadcrumbPath.length > 0 && (
           <nav class="ma-layout-overview__breadcrumb-nav" aria-labelledby="breadcrumb-label">
             <h2 hidden id="breadcrumb-label">
-              Kruimelpad
+              {i18n[props.lang].breadcrumbLabel}
             </h2>
             <BreadcrumbNav>
               {breadcrumbPath.map((item, index, list) => (

@@ -14,6 +14,7 @@ import { IconChevronRight } from '@tabler/icons-react';
 import { SideNavigation } from '@components/side-navigation/side-navigation.tsx';
 import { getMainNavigation } from '../navigation';
 import { navigation } from '../navigation.config.ts';
+import { i18n, type I18nLanguages } from '../i18n';
 
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
@@ -64,7 +65,7 @@ export interface Props {
   title: string;
   titleSm?: string;
   description?: string;
-  lang?: 'nl' | 'en';
+  lang: I18nLanguages;
   seoImage?: string;
   seoImageAlt?: string;
   keywords?: string[];
@@ -87,7 +88,7 @@ const {
 } = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
-const fallbackSeoImageAlt = 'Logo van NL Design System';
+const fallbackSeoImageAlt = i18n[lang].logoAlt;
 
 const documentTitle = generateDocumentTitle(titleSm || title);
 const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
@@ -146,12 +147,12 @@ const footerNavigationItems = [
   </head>
 
   <body class={className}>
-    <SkipLink href="#main">Naar de inhoud</SkipLink>
+    <SkipLink href="#main">{i18n[lang].skipLink}</SkipLink>
     <PageLayout>
-      <PageHeader />
+      <PageHeader lang={lang} />
       <NavBar>
         <nav aria-labelledby="hoofdnavigatie-label">
-          <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
+          <h2 hidden id="hoofdnavigatie-label">{i18n[lang].mainNavLabel}</h2>
           <NavList>
             {
               mainNavigationItems.map(({ href, label, expanded, current, lang }) => (
@@ -168,7 +169,7 @@ const footerNavigationItems = [
 
       <PageFooter>
         <nav aria-labelledby="site-navigatie-label">
-          <h2 hidden id="site-navigatie-label">Submenu</h2>
+          <h2 hidden id="site-navigatie-label">{i18n[lang].footerNavLabel}</h2>
           <LinkList>
             {
               footerNavigationItems.map(({ href, label, lang }) => (
@@ -185,7 +186,7 @@ const footerNavigationItems = [
       </PageFooter>
     </PageLayout>
 
-    <MobileMenu>
+    <MobileMenu lang={lang}>
       <SideNavigation items={[items.items]} client:load />
     </MobileMenu>
 
