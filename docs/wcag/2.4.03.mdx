@@ -108,7 +108,7 @@ function openDialog() {
 <header>...</header>
 <main>...</main>
 <footer>...</footer>
-<div class="cookiebanner">
+<div class="example-cookie-banner">
   <p>Wij gebruiken cookies.</p>
   <button>Accepteren</button>
   <button>Weigeren</button>
@@ -120,7 +120,7 @@ function openDialog() {
 <Guideline appearance="do" title="Cookiebanner bovenaan de HTML of met focusmanagement.">
 
 ```html
-<dialog class="cookiebanner" aria-label="Cookiemelding">
+<dialog class="example-cookie-banner" aria-label="Cookiemelding">
   <p>Wij gebruiken cookies.</p>
   <button>Accepteren</button>
   <button>Weigeren</button>
@@ -152,7 +152,7 @@ function trapFocus(dialog) {
 
   dialog.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      sluitDialog();
+      closeDialog();
       return;
     }
     if (e.key !== "Tab") return;
@@ -181,9 +181,8 @@ Na het sluiten van een modal dialoogvenster keert de focus terug naar de knop di
 <Guideline appearance="dont" title="Focus verdwijnt na het sluiten van een modal dialoogvenster.">
 
 ```javascript
-function sluitDialog() {
+function closeDialog() {
   document.getElementById("dialog").style.display = "none";
-  // Focus gaat nergens naartoe en belandt op <body>
 }
 ```
 
@@ -199,7 +198,7 @@ function openDialog(trigger) {
   document.getElementById("dialog").showModal();
 }
 
-function sluitDialog() {
+function closeDialog() {
   document.getElementById("dialog").close();
   triggerElement?.focus();
 }
@@ -218,14 +217,14 @@ Bij een accordion of tabstructuur staat de content van een geopend paneel direct
 <Guideline appearance="dont" title="Geopend paneel staat na alle knoppen in de HTML.">
 
 ```html
-<button aria-expanded="true" aria-controls="paneel-1">Sectie 1</button>
-<button aria-expanded="false" aria-controls="paneel-2">Sectie 2</button>
-<button aria-expanded="false" aria-controls="paneel-3">Sectie 3</button>
-<div id="paneel-1">
-  <a href="/link-in-paneel-1">Link in paneel 1</a>
+<button aria-expanded="true" aria-controls="panel-1">Sectie 1</button>
+<button aria-expanded="false" aria-controls="panel-2">Sectie 2</button>
+<button aria-expanded="false" aria-controls="panel-3">Sectie 3</button>
+<div id="panel-1">
+  <a href="/jaarverslag">Jaarverslag 2025</a>
 </div>
-<div id="paneel-2" hidden>...</div>
-<div id="paneel-3" hidden>...</div>
+<div id="panel-2" hidden>...</div>
+<div id="panel-3" hidden>...</div>
 ```
 
 </Guideline>
@@ -233,14 +232,14 @@ Bij een accordion of tabstructuur staat de content van een geopend paneel direct
 <Guideline appearance="do" title="Paneel staat direct na de bijbehorende knop.">
 
 ```html
-<button aria-expanded="true" aria-controls="paneel-1">Sectie 1</button>
-<div id="paneel-1" role="region">
-  <a href="/link-in-paneel-1">Link in paneel 1</a>
+<button aria-expanded="true" aria-controls="panel-1">Sectie 1</button>
+<div id="panel-1" role="region">
+  <a href="/jaarverslag">Jaarverslag 2025</a>
 </div>
-<button aria-expanded="false" aria-controls="paneel-2">Sectie 2</button>
-<div id="paneel-2" role="region" hidden>...</div>
-<button aria-expanded="false" aria-controls="paneel-3">Sectie 3</button>
-<div id="paneel-3" role="region" hidden>...</div>
+<button aria-expanded="false" aria-controls="panel-2">Sectie 2</button>
+<div id="panel-2" role="region" hidden>...</div>
+<button aria-expanded="false" aria-controls="panel-3">Sectie 3</button>
+<div id="panel-3" role="region" hidden>...</div>
 ```
 
 </Guideline>
@@ -256,11 +255,10 @@ Na het verzenden van een formulier met fouten verplaatst de focus zich naar de e
 <Guideline appearance="dont" title="Foutmeldingen tonen zonder de focus te verplaatsen.">
 
 ```javascript
-function valideerFormulier() {
-  const fouten = vindFouten();
-  if (fouten.length > 0) {
-    toonFoutmeldingen(fouten);
-    // Focus blijft op de verzendknop
+function validateForm() {
+  const errors = findErrors();
+  if (errors.length > 0) {
+    showErrorMessages(errors);
   }
 }
 ```
@@ -270,11 +268,11 @@ function valideerFormulier() {
 <Guideline appearance="do" title="Focus verplaatsen naar de eerste foutmelding.">
 
 ```javascript
-function valideerFormulier() {
-  const fouten = vindFouten();
-  if (fouten.length > 0) {
-    toonFoutmeldingen(fouten);
-    document.querySelector(".foutmelding")?.focus();
+function validateForm() {
+  const errors = findErrors();
+  if (errors.length > 0) {
+    showErrorMessages(errors);
+    document.querySelector(".example-error-message")?.focus();
   }
 }
 ```
@@ -321,14 +319,15 @@ Een inhoudsopgave of "scroll naar boven"-link scrollt de pagina naar de juiste p
 
 **Hoe te testen:** klik op een in-page link en druk op <kbd>Tab</kbd>. Gaat de focus verder vanaf het doel van de link, of springt die terug naar de inhoudsopgave?
 
+In de voorbeelden hieronder staan alleen de link en de kop waar die naartoe gaat. De inhoud ertussen is weggelaten.
+
 <Guideline appearance="dont" title="In-page link verwijst naar een heading die niet focusbaar is.">
 
 ```html
 <nav>
-  <a href="#sectie-2">Hoofdstuk 2</a>
+  <a href="#chapter-2">Hoofdstuk 2</a>
 </nav>
-...
-<h2 id="sectie-2">Hoofdstuk 2</h2>
+<h2 id="chapter-2">Hoofdstuk 2</h2>
 ```
 
 </Guideline>
@@ -337,10 +336,9 @@ Een inhoudsopgave of "scroll naar boven"-link scrollt de pagina naar de juiste p
 
 ```html
 <nav>
-  <a href="#sectie-2">Hoofdstuk 2</a>
+  <a href="#chapter-2">Hoofdstuk 2</a>
 </nav>
-...
-<h2 id="sectie-2" tabindex="-1">Hoofdstuk 2</h2>
+<h2 id="chapter-2" tabindex="-1">Hoofdstuk 2</h2>
 ```
 
 </Guideline>
@@ -353,6 +351,8 @@ De focusvolgorde volgt de HTML-volgorde. Een positieve `tabindex` (zoals `tabind
 
 **Hoe te testen:** zoek in de broncode naar `tabindex` met een waarde hoger dan 0. Elk voorkomen is een risico.
 
+In het foute voorbeeld hieronder krijgt de knop Verzenden als eerste focus, daarna het zoekveld, en pas daarna de navigatielinks.
+
 <Guideline appearance="dont" title="Positieve tabindex verstoort de focusvolgorde van de hele pagina.">
 
 ```html
@@ -363,8 +363,6 @@ De focusvolgorde volgt de HTML-volgorde. Een positieve `tabindex` (zoals `tabind
 <main>
   <input tabindex="2" type="text" placeholder="Zoeken" />
   <button tabindex="1">Verzenden</button>
-  <!-- Focus gaat eerst naar Verzenden (1), dan Zoeken (2),
-       dan pas de navigatielinks (0) -->
 </main>
 ```
 
@@ -396,7 +394,7 @@ Een card die als geheel klikbaar is én een link bevat met dezelfde bestemming, 
 <Guideline appearance="dont" title="Card en link erin zijn allebei focusbaar met dezelfde bestemming.">
 
 ```html
-<a href="/artikel" class="card">
+<a href="/artikel" class="example-card">
   <h3>Nieuw artikel</h3>
   <p>Korte beschrijving van het artikel.</p>
   <a href="/artikel">Lees meer</a>
@@ -408,7 +406,7 @@ Een card die als geheel klikbaar is én een link bevat met dezelfde bestemming, 
 <Guideline appearance="do" title="Eén focusbaar element per card.">
 
 ```html
-<div class="card">
+<div class="example-card">
   <h3><a href="/artikel">Nieuw artikel</a></h3>
   <p>Korte beschrijving van het artikel.</p>
 </div>
@@ -427,9 +425,8 @@ Als JavaScript de `innerHTML` van een container overschrijft, worden alle elemen
 <Guideline appearance="dont" title="Focus verdwijnt doordat innerHTML de hele container overschrijft.">
 
 ```javascript
-function updateResultaten(data) {
-  document.getElementById("resultaten").innerHTML = renderResultaten(data);
-  // Het element dat focus had is verwijderd. Focus valt terug naar <body>
+function updateResults(data) {
+  document.getElementById("results").innerHTML = renderResults(data);
 }
 ```
 
