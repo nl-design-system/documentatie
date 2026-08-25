@@ -56,15 +56,12 @@ In een meerstappenformulier heet de knop die je naar de volgende stap brengt op 
 
 **Hoe te testen:** loop een proces met meerdere stappen door en noteer de tekst van de knop die je verder brengt. Is die op elke stap hetzelfde?
 
+In de voorbeelden hieronder staan de knoppen van stap 1, stap 2 en stap 3 onder elkaar.
+
 <Guideline appearance="dont" title="Dezelfde functie met verschillende knopteksten">
     ```html
-    <!-- stap 1 -->
     <button type="button">Volgende</button>
-
-    <!-- stap 2 -->
     <button type="button">Verder</button>
-
-    <!-- stap 3 -->
     <button type="button">Ga door</button>
     ```
 
@@ -72,13 +69,8 @@ In een meerstappenformulier heet de knop die je naar de volgende stap brengt op 
 
 <Guideline appearance="do" title="Dezelfde functie met dezelfde knoptekst">
     ```html
-    <!-- stap 1 -->
     <button type="button">Volgende</button>
-
-    <!-- stap 2 -->
     <button type="button">Volgende</button>
-
-    <!-- stap 3 -->
     <button type="button">Volgende</button>
     ```
 
@@ -94,16 +86,16 @@ Een zoekknop met een vergrootglas heeft op de ene pagina de toegankelijke naam "
 
 **Hoe te testen:** zoek dezelfde icoonknop op verschillende pagina's op en controleer de toegankelijke naam in de <span lang="en">Accessibility</span>-tab van de DevTools. Is die overal gelijk?
 
+In de voorbeelden hieronder staat eerst de zoekknop op de ene pagina en daarna dezelfde zoekknop op een andere pagina.
+
 <Guideline appearance="dont" title="Dezelfde icoonknop met verschillende toegankelijke namen">
     ```html
-    <!-- pagina A -->
     <button type="button" aria-label="Zoeken">
-      <svg aria-hidden="true"><!-- vergrootglas --></svg>
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-search" /></svg>
     </button>
 
-    <!-- pagina B -->
     <button type="button" aria-label="Vergrootglas">
-      <svg aria-hidden="true"><!-- vergrootglas --></svg>
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-search" /></svg>
     </button>
     ```
 
@@ -111,14 +103,12 @@ Een zoekknop met een vergrootglas heeft op de ene pagina de toegankelijke naam "
 
 <Guideline appearance="do" title="Dezelfde icoonknop met dezelfde toegankelijke naam">
     ```html
-    <!-- pagina A -->
     <button type="button" aria-label="Zoeken">
-      <svg aria-hidden="true"><!-- vergrootglas --></svg>
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-search" /></svg>
     </button>
 
-    <!-- pagina B -->
     <button type="button" aria-label="Zoeken">
-      <svg aria-hidden="true"><!-- vergrootglas --></svg>
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-search" /></svg>
     </button>
     ```
 
@@ -134,16 +124,16 @@ Een ster staat op de ene pagina voor "Toevoegen aan favorieten" en op de andere 
 
 **Hoe te testen:** maak een lijst van de iconen op de website. Gebruik je een icoon op meerdere plekken voor verschillende functies?
 
+In het foute voorbeeld hieronder staat de ster eerst voor favorieten en daarna voor een beoordeling. In het goede voorbeeld krijgt favorieten een hart en blijft de ster bij de beoordeling.
+
 <Guideline appearance="dont" title="Eén icoon voor twee verschillende functies">
     ```html
-    <!-- ster betekent hier: favoriet -->
     <button type="button" aria-label="Toevoegen aan favorieten">
-      <svg aria-hidden="true"><!-- ster --></svg>
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-star" /></svg>
     </button>
 
-    <!-- ster betekent hier: beoordeling -->
     <span aria-label="Beoordeling: 4 van de 5 sterren">
-      <svg aria-hidden="true"><!-- 4 van de 5 sterren --></svg>
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-star" /></svg>
     </span>
     ```
 
@@ -151,14 +141,12 @@ Een ster staat op de ene pagina voor "Toevoegen aan favorieten" en op de andere 
 
 <Guideline appearance="do" title="Verschillende functies met een eigen, herkenbaar icoon">
     ```html
-    <!-- favoriet: hart -->
     <button type="button" aria-label="Toevoegen aan favorieten">
-      <svg aria-hidden="true"><!-- hart --></svg>
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-heart" /></svg>
     </button>
 
-    <!-- beoordeling: sterren -->
     <span aria-label="Beoordeling: 4 van de 5 sterren">
-      <svg aria-hidden="true"><!-- 4 van de 5 sterren --></svg>
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-star" /></svg>
     </span>
     ```
 
