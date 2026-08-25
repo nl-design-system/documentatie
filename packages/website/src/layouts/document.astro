@@ -102,16 +102,16 @@ const items = serialiseNavigationTree(navigationTree);
 const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
 
 const footerNavigationItems = [
-  { href: '/blog/', label: 'Blog' },
-  { href: '/project/kernteam/', label: 'Contact' },
-  { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid' },
-  { href: '/privacyverklaring/', label: 'Privacyverklaring' },
-  { href: '/colofon/', label: 'Colofon' },
-  { href: '/github/', label: 'GitHub' },
-  { href: '/slack/', label: 'Slack' },
-  { href: '/figma/', label: 'Figma' },
-  { href: 'https://www.linkedin.com/company/nl-design-system/', label: 'LinkedIn', external: true },
-  { href: '/sitemap', label: 'Sitemap' },
+  //{ href: '/blog/', label: 'Blog', lang: 'en' },
+  { href: '/project/kernteam/', label: 'Contact', lang: 'nl' },
+  { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid', lang: 'nl' },
+  { href: '/privacyverklaring/', label: 'Privacyverklaring', lang: 'nl' },
+  { href: '/colofon/', label: 'Colofon', lang: 'nl' },
+  { href: '/github/', label: 'GitHub', lang: 'en' },
+  { href: '/slack/', label: 'Slack', lang: 'en' },
+  { href: '/figma/', label: 'Figma', lang: 'en' },
+  { href: 'https://www.linkedin.com/company/nl-design-system/', label: 'LinkedIn', lang: 'en', external: true },
+  { href: '/sitemap', label: 'Sitemap', lang: 'en' },
 ];
 ---
 
@@ -154,8 +154,8 @@ const footerNavigationItems = [
           <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
           <NavList>
             {
-              mainNavigationItems.map(({ href, label, expanded, current }) => (
-                <NavListLink href={href} aria-current={expanded || current ? 'page' : null}>
+              mainNavigationItems.map(({ href, label, expanded, current, lang }) => (
+                <NavListLink href={href} aria-current={expanded || current ? 'page' : null} lang={lang}>
                   {label}
                 </NavListLink>
               ))
@@ -171,8 +171,8 @@ const footerNavigationItems = [
           <h2 hidden id="site-navigatie-label">Submenu</h2>
           <LinkList>
             {
-              footerNavigationItems.map(({ href, label }) => (
-                <LinkListLink href={href}>
+              footerNavigationItems.map(({ href, label, lang }) => (
+                <LinkListLink href={href} lang={lang}>
                   {label}
                   <span class="utrecht-icon" slot="icon">
                     <IconChevronRight />
