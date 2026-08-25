@@ -8,10 +8,8 @@ const sidebars: SidebarsConfig = {
       collapsible: false,
       className: 'sidebar__main-category',
       link: {
-        type: 'generated-index',
-        title: 'Handboek',
-        slug: 'handboek',
-        keywords: ['Handboek', 'Meedoen', 'overzicht'],
+        type: 'doc',
+        id: 'handboek/index',
       },
       items: [
         { type: 'doc', id: 'handboek/introductie' },
