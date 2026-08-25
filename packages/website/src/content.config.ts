@@ -80,7 +80,7 @@ const schema = z.object({
   description: z.string().optional(),
   hide_table_of_contents: z.boolean().optional(),
   lead: z.string().optional(),
-  lang: z.enum(['nl', 'en']).optional(),
+  lang: z.enum(['nl', 'en']).default('nl'),
   slug: z.string().optional(),
   unlisted: z.boolean().optional(),
   image: z.httpUrl().optional(),
