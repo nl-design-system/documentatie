@@ -1,0 +1,117 @@
+/* stylelint-disable no-descending-specificity, selector-class-pattern */
+
+/* Tweaks to components for the home page */
+.ma-home .utrecht-page-body__content {
+  /*
+   * Set the initial column count to 6 so that cards fill the page on narrow
+   * viewports
+  */
+  --ams-grid-column-count: 6;
+
+  /* remove gap between the sections and the page-header / footer */
+  padding-block: 0;
+
+  /* limit the video player size */
+  .yt-lite {
+    max-inline-size: 960px;
+  }
+
+  /* Uniformly size the participants icons */
+  .ma-homepage__participant-link {
+    block-size: var(--basis-space-block-6xl);
+    display: inline-flex;
+    justify-content: center;
+
+    .utrecht-img {
+      block-size: unset;
+      inline-size: unset;
+      max-block-size: 100%;
+      max-inline-size: 100%;
+    }
+  }
+
+  /* Make all cells in a group the same height */
+  .ams-grid__cell {
+    block-size: 100%;
+
+    .rhc-card {
+      block-size: 100%;
+    }
+  }
+
+  /* Tweak card styling */
+  .rhc-card {
+    /* Give hover border to participant logo cards */
+    &:has(.ma-homepage__participant-link:hover) {
+      --rhc-card-border-color: var(--basis-color-action-1-border-hover);
+    }
+
+    /* Give all cards a background color except the participant logos */
+    &:not(:has(.ma-homepage__participant-link)) {
+      --rhc-card-background-color: var(--basis-color-action-2-bg-default);
+      --rhc-card-border-color: transparent;
+    }
+
+    /* Tweak the spacing between the icons and heading when a card has an icon */
+    &:has(.rhc-card__image) {
+      .rhc-card__image {
+        padding-block-start: var(--rhc-card-padding-block-start);
+        padding-inline-end: var(--rhc-card-padding-inline-end);
+        padding-inline-start: var(--rhc-card-padding-inline-start);
+      }
+
+      .rhc-card__content {
+        padding-block-start: 0;
+      }
+    }
+
+    /* remove empty headings from a11y tree */
+    .rhc-card__heading:empty {
+      display: none;
+    }
+  }
+}
+
+/* (highlighted) sections with a viewport wide background  */
+.ma-homepage-section {
+  --ma-flow-space: 0;
+
+  padding-block: var(--basis-space-row-5xl);
+  position: relative;
+  z-index: 0;
+
+  &.ma-homepage-section--highlight::before,
+  &.ma-homepage-section--highlight-dark::before {
+    background-color: var(--basis-color-accent-1-bg-subtle);
+    content: "";
+    display: block;
+    inline-size: 100vw;
+    inset: 0;
+    inset-inline-start: 50%;
+    position: absolute;
+    translate: -50%;
+    z-index: -1;
+  }
+
+  &.ma-homepage-section--hero {
+    /* Tweak the list in the hero section to not wrap as easily */
+    --ma-body-copy-items-max-inline-size: 75ch;
+  }
+
+  /* Tweak text color in dark highlighted section */
+  &.ma-homepage-section--highlight.ma-homepage-section--highlight-dark {
+    --nl-heading-level-2-color: var(--basis-color-default-inverse-color-default);
+
+    .rhc-card {
+      --rhc-card-background-color: var(--basis-color-accent-1-inverse-bg-default);
+      --rhc-card-color: var(--basis-color-default-inverse-color-default);
+      --nl-link-color: var(--basis-color-default-inverse-color-default);
+      --nl-link-hover-color: var(--basis-color-default-inverse-color-default);
+      --nl-link-active-color: var(--basis-color-default-inverse-color-default);
+    }
+
+    &::before {
+      background-color: var(--basis-color-accent-1-inverse-bg-document);
+    }
+  }
+}

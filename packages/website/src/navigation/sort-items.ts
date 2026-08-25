@@ -13,14 +13,22 @@ function sortByFilePath(a: NavigationElement, b: NavigationElement) {
 
 /**
  * Comparator function to sort based on `order`. When both items share the same
- * order value, fallback to sorting by `filePath`
+ * order value, fallback to sorting by `filePath`.
+ *
+ * When both values are negative, reverse the order. This fixes an issue with
+ * the reinjection order in `sortItems`
  */
 function sortByOrder(a: NavigationElement, b: NavigationElement) {
   const orderA = a.order || 0;
   const orderB = b.order || 0;
 
-  if (orderA < orderB) return -1;
-  if (orderA > orderB) return 1;
+  if (orderA < 0 && orderB < 0) {
+    if (orderA > orderB) return -1;
+    if (orderA < orderB) return 1;
+  } else {
+    if (orderA < orderB) return -1;
+    if (orderA > orderB) return 1;
+  }
 
   return sortByFilePath(a, b);
 }
