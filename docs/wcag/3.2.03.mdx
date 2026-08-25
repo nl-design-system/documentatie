@@ -53,6 +53,8 @@ Dat scheelt het meest voor mensen die maar een deel van de pagina tegelijk zien.
 
 Het hoofdmenu bevat op elke pagina dezelfde links, maar de volgorde verschilt. Op de homepage staat "Contact" achteraan, op een andere pagina staat "Contact" tussen de andere items in. Een bezoeker die op de eerste pagina heeft geleerd waar een menu-item staat, vindt het op de volgende pagina op een andere plaats in de volgorde. Voor iemand die inzoomt of met een screenreader werkt, kost dat elke keer opnieuw zoektijd.
 
+Dit gebeurt op websites waar het menu per pagina wordt samengesteld. Er zijn CMS'en waarin je per pagina of per deel van de website zelf kiest welke links in het menu staan en in welke volgorde. Voegt iemand later een link toe of zet iemand een link op een andere plaats, dan verandert de volgorde op die ene pagina en blijft de rest van de website staan zoals die was.
+
 **Hoe te testen:** open een paar pagina's van de website naast elkaar en vergelijk de volgorde van de menu-items. Staat elk item overal op dezelfde plaats in de volgorde?
 
 In het foute voorbeeld hieronder staat eerst het menu van de homepage en daarna hetzelfde menu van de productpagina. Contact staat op de homepage achteraan en op de productpagina tussen de andere items in.
@@ -101,7 +103,7 @@ Op een pagina waar een menu-item niet van toepassing is, valt dat item weg. De b
 **Wie kan dit oplossen:**
 
 - Een webredacteur zet de menu-items in het CMS op elke pagina in dezelfde volgorde. Hetzelfde geldt voor de links in de footer.
-- Een developer plaatst de navigatie in één gedeeld sjabloon of navigatiecomponent die op elke pagina terugkomt. Dan is de volgorde overal vanzelf gelijk.
+- Een developer plaatst de navigatie in één gedeelde template of navigatiecomponent die op elke pagina terugkomt. Dan is de volgorde overal vanzelf gelijk.
 
 ### De zoekfunctie heeft op een andere pagina een andere plek
 
@@ -142,7 +144,7 @@ In het foute voorbeeld hieronder staat de zoekfunctie op de eerste pagina in de 
 **Wie kan dit oplossen:**
 
 - Een webredacteur die de blokken op een pagina zelf plaatst, zet de zoekfunctie, het menu en de inlogknop op elke pagina in dezelfde volgorde.
-- Een developer geeft die onderdelen in het sjabloon dezelfde plaats. Dan komt de bezoeker ze ook in dezelfde volgorde tegen bij het lezen van boven naar beneden en bij het gaan met <kbd>Tab</kbd> door de pagina.
+- Een developer geeft die onderdelen in de template dezelfde plaats. Dan komt de bezoeker ze ook in dezelfde volgorde tegen bij het lezen van boven naar beneden en bij het gaan met <kbd>Tab</kbd> door de pagina.
 
 ### In het menu op een smal scherm staan de onderdelen in een andere volgorde
 
@@ -180,7 +182,7 @@ De indeling verandert mee met de schermbreedte. Onderdelen die op een breed sche
 **Wie kan dit oplossen:**
 
 - Een designer tekent het menu voor smalle schermen in dezelfde volgorde als het menu voor brede schermen.
-- Een developer houdt die volgorde aan in de CSS en gebruikt `order` en `flex-direction: row-reverse` niet om onderdelen om te wisselen.
+- Een developer houdt die volgorde aan in de CSS. Met `order`, `flex-direction: row-reverse`, `flex-direction: column-reverse`, `grid-auto-flow: dense` en losse waarden voor `grid-row` of `grid-column` komen onderdelen op het scherm op een andere plaats te staan dan in de code. Gebruik ze niet om onderdelen om te wisselen.
 
 ### Het broodkruimelpad verandert van plek
 
@@ -208,7 +210,7 @@ In het foute voorbeeld hieronder staat het broodkruimelpad op de eerste pagina b
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer plaatst het broodkruimelpad op elke pagina op dezelfde plaats in de opbouw, bij voorkeur vanuit één gedeeld sjabloon.
+**Wie kan dit oplossen:** een developer plaatst het broodkruimelpad op elke pagina op dezelfde plaats in de opbouw, bij voorkeur vanuit één gedeelde template.
 
 ## Hoe te testen
 
@@ -221,10 +223,10 @@ In het foute voorbeeld hieronder staat het broodkruimelpad op de eerste pagina b
 
 ### Voor developers
 
-1. Controleer of de navigatie, de zoekfunctie en de footer uit één gedeeld sjabloon of component komen. Losse kopieën per pagina gaan na verloop van tijd van elkaar verschillen.
+1. Controleer of de navigatie, de zoekfunctie en de footer uit één gedeelde template of component komen. Losse kopieën per pagina gaan na verloop van tijd van elkaar verschillen.
 2. Vergelijk de HTML-opbouw van de navigatie op meerdere pagina's. Staan de onderdelen in dezelfde volgorde in de broncode?
 3. Ga met <kbd>Tab</kbd> over meerdere pagina's door de navigatie en let op de volgorde waarin je de onderdelen bereikt. Is die volgorde overal gelijk?
-4. Zoek in de CSS bij de navigatie naar `order` en `flex-direction: row-reverse`. Die kunnen de volgorde op een smal scherm anders maken dan op een breed scherm.
+4. Zoek in de CSS bij de navigatie naar `order`, `flex-direction: row-reverse`, `flex-direction: column-reverse`, `grid-auto-flow: dense` en losse waarden voor `grid-row` of `grid-column`. Die kunnen de volgorde op een smal scherm anders maken dan op een breed scherm.
 
 ## Gerelateerde succescriteria
 
