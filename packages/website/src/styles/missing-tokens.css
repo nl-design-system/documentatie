@@ -91,6 +91,17 @@
   --rhc-card-active-text-decoration: none;
 }
 
+.rhc-card:has(.rhc-link) {
+  position: relative;
+  z-index: 0;
+
+  .rhc-link::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+  }
+}
+
 .utrecht-nav-bar__content {
   box-sizing: border-box;
 
