@@ -87,6 +87,16 @@ export default defineConfig({
     },
     resolve: {
       noExternal: [/@rijkshuisstijl-community\/.*/],
+      alias: [
+        {
+          find: '@utrecht/component-library-react/dist/css-module',
+          replacement: '@utrecht/component-library-react',
+        },
+        {
+          find: '@utrecht/component-library-react/css-module',
+          replacement: '@utrecht/component-library-react',
+        },
+      ],
     },
   },
 
