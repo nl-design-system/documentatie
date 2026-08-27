@@ -58,7 +58,8 @@ export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChil
     }
   }
   return (
-    <li
+    <div
+      role="listitem"
       data-tags={tags.join(',')}
       className={clsx(
         'ma-new-checklist__item',
@@ -101,7 +102,7 @@ export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChil
           </BadgeList>
         </div>
       </AccordionSection>
-    </li>
+    </div>
   );
 };
 
@@ -195,7 +196,7 @@ export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
         </div>
       </div>
 
-      <Accordion as="ul" className="ma-new-checklist" role="list" ref={listRef}>
+      <Accordion className="ma-new-checklist" role="list" ref={listRef}>
         {children}
       </Accordion>
     </div>
