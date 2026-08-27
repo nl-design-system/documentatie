@@ -8,4 +8,6 @@ declare global {
    * generation of the content collections.
    */
   var unlistedPages: Set<string>;
+
+  var isAstro: boolean | undefined;
 }

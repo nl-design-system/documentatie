@@ -11,6 +11,7 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  timeout: Number(process.env.E2E_TEST_TIMEOUT_S ?? 30) * 1000,
   testDir: './test',
   outputDir: './tmp/playwright-results/',
   /* Run tests in files in parallel */

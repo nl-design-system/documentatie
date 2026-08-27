@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Drawer
 pagination_label: Drawer
 description: "Een paneel aan de zijkant van een scherm, die geopend kan worden voor gerelateerde informatie, formulieren of acties."
+issue_number: 256
 slug: /drawer
 keywords:
   - drawer
@@ -26,7 +27,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Drawer";
@@ -38,12 +38,6 @@ export const componentName = "drawer";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 
