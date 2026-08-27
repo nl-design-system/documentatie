@@ -56,8 +56,8 @@ Een foutmelding bij een invoerveld beschrijft wat er mis is en hoe de bezoeker h
 <Guideline appearance="dont" title="Generieke foutmelding die niets zegt over het probleem.">
   ```html
   <label for="email">E-mailadres</label>
-  <input type="email" id="email" aria-describedby="email-fout" aria-invalid="true" />
-  <p id="email-fout" class="fout">
+  <input type="email" id="email" aria-describedby="email-error" aria-invalid="true" />
+  <p id="email-error" class="example-error">
     Ongeldige invoer
   </p>
   ```
@@ -66,9 +66,9 @@ Een foutmelding bij een invoerveld beschrijft wat er mis is en hoe de bezoeker h
 <Guideline appearance="do" title="Specifieke foutmelding die beschrijft wat er mis is.">
   ```html
   <label for="email">E-mailadres</label>
-  <input type="email" id="email" aria-describedby="email-fout" aria-invalid="true" />
-  <p id="email-fout" class="fout">
-    E-mailadres is niet geldig. Gebruik het formaat naam@voorbeeld.nl
+  <input type="email" id="email" aria-describedby="email-error" aria-invalid="true" />
+  <p id="email-error" class="example-error">
+    E-mailadres is niet geldig. Gebruik het formaat naam@example.com
   </p>
   ```
 </Guideline>
@@ -83,21 +83,23 @@ Een invoerveld met een fout heeft alleen een rode rand of een rood label. Iemand
 
 <Guideline appearance="dont" title="Fout alleen aangegeven met een rode rand.">
     ```css
-    input.fout {
+    input.example-error {
       border-color: red;
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Fout aangegeven met kleur, tekst en een icoon.">
-    ```html
-    <label for="naam">Naam</label>
-    <input type="text" id="naam" class="fout" aria-describedby="naam-fout" aria-invalid="true" />
-    <p id="naam-fout" class="fout">
-      <svg aria-hidden="true" class="fout-icoon"><!-- waarschuwingsicoon --></svg>
-      Naam is niet ingevuld
-    </p>
-    ```
+  ```html
+  <label for="name">Naam</label>
+  <input type="text" id="name" class="example-error" aria-describedby="name-error" aria-invalid="true" />
+  <p id="name-error" class="example-error">
+    <svg aria-hidden="true" focusable="false" class="example-error-icon">
+      <use href="assets/svg/icons-core-set.svg#icon-warning"></use>
+    </svg>
+    Naam is niet ingevuld
+  </p>
+  ```
 </Guideline>
 
 **Wie kan dit oplossen:** een developer voegt een tekstuele foutmelding toe naast de kleurverandering.
@@ -109,37 +111,45 @@ Een samenvatting van fouten bovenaan de pagina laat de bezoeker snel zien hoevee
 **Hoe te testen:** verstuur een formulier met meerdere fouten. Staan de foutmeldingen ook bij de individuele velden? Verwijzen de links in de samenvatting naar het juiste veld?
 
 <Guideline appearance="dont" title="Foutmeldingen alleen in een samenvatting bovenaan.">
-    ```html
-    <div class="fout-samenvatting">
-      <p>Er zijn 3 fouten gevonden:</p>
-      <ul>
-        <li>Naam is verplicht</li>
-        <li>E-mailadres is ongeldig</li>
-        <li>Postcode is verplicht</li>
-      </ul>
-    </div>
-    <!-- Velden verderop zonder foutmeldingen -->
-    <label for="naam">Naam</label>
-    <input type="text" id="naam" />
-    ```
+  ```html
+  <div class="example-error-summary">
+    <p>Er zijn 3 fouten gevonden:</p>
+    <ul>
+      <li>Naam is verplicht</li>
+      <li>E-mailadres is ongeldig</li>
+      <li>Postcode is verplicht</li>
+    </ul>
+  </div>
+  <label for="name">Naam</label>
+  <input type="text" id="name" />
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Samenvatting bovenaan én foutmeldingen bij de velden.">
-    ```html
-    <div class="fout-samenvatting" role="alert">
-      <p>Er zijn 3 fouten gevonden:</p>
-      <ul>
-        <li><a href="#naam">Naam is niet ingevuld</a></li>
-        <li><a href="#email">E-mailadres is niet ingevuld</a></li>
-        <li><a href="#postcode">Postcode is niet ingevuld</a></li>
-      </ul>
-    </div>
-    <!-- Foutmelding ook bij het veld zelf -->
-    <label for="naam">Naam</label>
-    <input type="text" id="naam" aria-describedby="naam-fout" aria-invalid="true" />
-    <p id="naam-fout" class="fout">Naam is niet ingevuld</p>
-    ```
+  ```html
+  <div class="example-error-summary" role="alert">
+    <p>Er zijn 3 fouten gevonden:</p>
+    <ul>
+      <li>
+        <a href="#name">Naam is niet ingevuld</a>
+      </li>
+      <li>
+        <a href="#email">E-mailadres is niet ingevuld</a>
+      </li>
+      <li>
+        <a href="#postal-code">Postcode is niet ingevuld</a>
+      </li>
+    </ul>
+  </div>
+  <label for="name">Naam</label>
+  <input type="text" id="name" aria-describedby="name-error" aria-invalid="true" />
+  <p id="name-error" class="example-error">
+    Naam is niet ingevuld
+  </p>
+  ```
 </Guideline>
+
+Beide voorbeelden zijn ingekort tot het eerste veld. In het foute voorbeeld hebben ook de velden verderop geen foutmelding bij het veld zelf.
 
 De links in de samenvatting verwijzen naar de velden, zodat de bezoeker direct naar het juiste veld kan springen.
 
