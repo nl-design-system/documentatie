@@ -57,9 +57,9 @@ Het formulier weet welk formaat het verwacht, maar deelt dat niet met de bezoeke
 
 <Guideline appearance="dont" title="Foutmelding zonder het verwachte formaat.">
   ```html
-  <label for="datum">Geboortedatum</label>
-  <input type="text" id="datum" aria-describedby="datum-fout" aria-invalid="true" />
-  <p id="datum-fout" class="fout">
+  <label for="birth-date">Geboortedatum</label>
+  <input type="text" id="birth-date" aria-describedby="birth-date-error" aria-invalid="true" />
+  <p id="birth-date-error" class="example-error">
     Ongeldige datum
   </p>
   ```
@@ -67,10 +67,10 @@ Het formulier weet welk formaat het verwacht, maar deelt dat niet met de bezoeke
 
 <Guideline appearance="do" title="Foutmelding met het verwachte formaat en een voorbeeld.">
   ```html
-  <label for="datum">Geboortedatum</label>
-  <input type="text" id="datum" aria-describedby="datum-fout" aria-invalid="true" />
-  <p id="datum-fout" class="fout">
-    Vul de datum in als dd-mm-jjjj, bijvoorbeeld 15-03-1990
+  <label for="birth-date">Geboortedatum</label>
+  <input type="text" id="birth-date" aria-describedby="birth-date-error" aria-invalid="true" />
+  <p id="birth-date-error" class="example-error">
+    Vul de birth-date in als dd-mm-jjjj, bijvoorbeeld 15-03-1990
   </p>
   ```
 </Guideline>
@@ -85,20 +85,20 @@ Een invoerveld kan een description hebben: een korte uitleg die bij het veld hoo
 
 <Guideline appearance="dont" title="Het verwachte formaat staat alleen in de foutmelding.">
   ```html
-  <label for="datum">Geboortedatum</label>
-  <input type="text" id="datum" aria-describedby="datum-fout" aria-invalid="true" />
-  <p id="datum-fout" class="fout">
-    Vul de datum in als dd-mm-jjjj, bijvoorbeeld 15-03-1990
+  <label for="birth-date">Geboortedatum</label>
+  <input type="text" id="birth-date" aria-describedby="birth-date-error" aria-invalid="true" />
+  <p id="birth-date-error" class="example-error">
+    Vul de birth-date in als dd-mm-jjjj, bijvoorbeeld 15-03-1990
   </p>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Het verwachte formaat staat in de description, de foutmelding kan kort.">
   ```html
-  <label for="datum">Geboortedatum</label>
-  <p id="datum-uitleg">Gebruik dd-mm-jjjj, bijvoorbeeld 15-03-1990</p>
-  <input type="text" id="datum" aria-describedby="datum-uitleg datum-fout" aria-invalid="true" />
-  <p id="datum-fout" class="fout">
+  <label for="birth-date">Geboortedatum</label>
+  <p id="birth-date-hint">Gebruik dd-mm-jjjj, bijvoorbeeld 15-03-1990</p>
+  <input type="text" id="birth-date" aria-describedby="birth-date-hint birth-date-error" aria-invalid="true" />
+  <p id="birth-date-error" class="example-error">
     Datum is niet in het juiste formaat
   </p>
   ```
@@ -114,9 +114,9 @@ Een Nederlandse postcode bestaat uit 4 cijfers en 2 letters. Bezoekers schrijven
 
 <Guideline appearance="dont" title="Postcode afgekeurd zonder suggestie.">
   ```html
-  <label for="postcode">Postcode</label>
-  <input type="text" id="postcode" value="3512 JE" aria-describedby="postcode-fout" aria-invalid="true" />
-  <p id="postcode-fout" class="fout">
+  <label for="postal-code">Postcode</label>
+  <input type="text" id="postal-code" value="3512 JE" aria-describedby="postal-code-error" aria-invalid="true" />
+  <p id="postal-code-error" class="example-error">
     Ongeldige postcode
   </p>
   ```
@@ -132,10 +132,10 @@ Een Nederlandse postcode bestaat uit 4 cijfers en 2 letters. Bezoekers schrijven
 
 <Guideline appearance="do" title="Suggestie met het verwachte formaat als je maar één formaat accepteert.">
   ```html
-  <label for="postcode">Postcode</label>
-  <input type="text" id="postcode" value="3512 JE" aria-describedby="postcode-fout" aria-invalid="true" />
-  <p id="postcode-fout" class="fout">
-    Vul de postcode in zonder spatie, bijvoorbeeld 3512JE
+  <label for="postal-code">Postcode</label>
+  <input type="text" id="postal-code" value="3512 JE" aria-describedby="postal-code-error" aria-invalid="true" />
+  <p id="postal-code-error" class="example-error">
+    Vul de postal-code in zonder spatie, bijvoorbeeld 3512JE
   </p>
   ```
 </Guideline>
@@ -150,9 +150,9 @@ Een datumveld accepteert alleen datums binnen een bepaald bereik, maar meldt nie
 
 <Guideline appearance="dont" title="Geen vermelding van het geldige bereik.">
   ```html
-  <label for="afspraak">Datum afspraak</label>
-  <input type="date" id="afspraak" aria-describedby="afspraak-fout" aria-invalid="true" />
-  <p id="afspraak-fout" class="fout">
+  <label for="appointment">Datum afspraak</label>
+  <input type="date" id="appointment" aria-describedby="appointment-error" aria-invalid="true" />
+  <p id="appointment-error" class="example-error">
     Datum buiten bereik
   </p>
   ```
@@ -160,10 +160,10 @@ Een datumveld accepteert alleen datums binnen een bepaald bereik, maar meldt nie
 
 <Guideline appearance="do" title="Foutmelding met het geldige bereik.">
   ```html
-  <label for="afspraak">Datum afspraak</label>
-  <input type="date" id="afspraak" aria-describedby="afspraak-fout" aria-invalid="true" />
-  <p id="afspraak-fout" class="fout">
-    Kies een datum tussen 1 april 2026 en 30 juni 2026
+  <label for="appointment">Datum afspraak</label>
+  <input type="date" id="appointment" aria-describedby="appointment-error" aria-invalid="true" />
+  <p id="appointment-error" class="example-error">
+    Kies een birth-date tussen 1 april 2026 en 30 juni 2026
   </p>
   ```
 </Guideline>
@@ -178,9 +178,9 @@ Een datumveld accepteert alleen datums binnen een bepaald bereik, maar meldt nie
 
 <Guideline appearance="dont" title="Generieke melding die alleen de regel herhaalt.">
   ```html
-  <label for="naam">Naam</label>
-  <input type="text" id="naam" aria-describedby="naam-fout" aria-invalid="true" />
-  <p id="naam-fout" class="fout">
+  <label for="name">Naam</label>
+  <input type="text" id="name" aria-describedby="name-error" aria-invalid="true" />
+  <p id="name-error" class="example-error">
     Dit veld is verplicht
   </p>
   ```
@@ -188,9 +188,9 @@ Een datumveld accepteert alleen datums binnen een bepaald bereik, maar meldt nie
 
 <Guideline appearance="do" title="Specifieke melding die beschrijft wat je moet invullen.">
   ```html
-  <label for="naam">Naam</label>
-  <input type="text" id="naam" aria-describedby="naam-fout" aria-invalid="true" />
-  <p id="naam-fout" class="fout">
+  <label for="name">Naam</label>
+  <input type="text" id="name" aria-describedby="name-error" aria-invalid="true" />
+  <p id="name-error" class="example-error">
     Vul je voor- en achternaam in
   </p>
   ```
@@ -206,9 +206,9 @@ Een wachtwoordveld heeft meerdere eisen: een minimale lengte, een hoofdletter, e
 
 <Guideline appearance="dont" title="Generieke melding zonder specifieke eisen.">
   ```html
-  <label for="wachtwoord">Wachtwoord</label>
-  <input type="password" id="wachtwoord" aria-describedby="ww-fout" aria-invalid="true" />
-  <p id="ww-fout" class="fout">
+  <label for="password">Wachtwoord</label>
+  <input type="password" id="password" aria-describedby="password-error" aria-invalid="true" />
+  <p id="password-error" class="example-error">
     Wachtwoord voldoet niet aan de eisen
   </p>
   ```
@@ -216,9 +216,9 @@ Een wachtwoordveld heeft meerdere eisen: een minimale lengte, een hoofdletter, e
 
 <Guideline appearance="do" title="Specifieke melding per eis die niet is gehaald.">
   ```html
-  <label for="wachtwoord">Wachtwoord</label>
-  <input type="password" id="wachtwoord" aria-describedby="ww-fout" aria-invalid="true" />
-  <ul id="ww-fout" class="fout">
+  <label for="password">Wachtwoord</label>
+  <input type="password" id="password" aria-describedby="password-error" aria-invalid="true" />
+  <ul id="password-error" class="example-error">
     <li>Minimaal 8 tekens, je hebt er nu 5</li>
     <li>Minimaal één cijfer</li>
   </ul>
