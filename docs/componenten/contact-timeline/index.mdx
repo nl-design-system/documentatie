@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Contact Timeline
 pagination_label: Contact Timeline
 description: Toont een chronologische lijst van contactmomenten, met de mogelijkheid om aanvullende details per contactmoment te bekijken.
+issue_number: 352
 slug: /contact-timeline
 keywords:
   - activiteit
@@ -41,7 +42,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Contact Timeline";
@@ -53,12 +53,6 @@ export const componentName = "contact-timeline";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

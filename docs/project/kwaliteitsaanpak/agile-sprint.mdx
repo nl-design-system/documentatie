@@ -1,0 +1,58 @@
+---
+title: Agile sprint
+sidebar_label: Agile sprint
+pagination_label: Agile sprint
+sidebar_position: 7
+description: Aanpak voor het voorbereiden van agile sprints voor mensen die de NL Design System kwaliteitsaanpak gebruiken.
+---
+
+{/* @license CC0-1.0 */}
+
+import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+
+# Agile sprint
+
+<Paragraph lead>
+  Elke twee weken wordt een sprint gepland, waar prioriteit wordt gegeven aan werkzaamheden binnen het open source
+  project.
+</Paragraph>
+
+## Sprint planning in GitHub Projects
+
+Gebruik een GitHub Project om de sprint backlog te maken die issues bevat uit 1 of meerdere repositories. Lees meer over hoe dit werkt in deze blog post: [Getting started with project planning on GitHub](https://github.blog/developer-skills/github/getting-started-with-project-planning-on-github/).
+
+De planning van het kernteam is publiek: [NL Design System kernteam 2026](https://github.com/orgs/nl-design-system/projects/94).
+
+Deelprojecten van NL Design System maken een eigen GitHub Project, bijvoorbeeld: [Expertteam Digitale Toegankelijkheid 2025](https://github.com/orgs/nl-design-system/projects/70).
+
+Elk werkplan krijgt een eigen project, in de praktijk betekent dat elk jaar een nieuw GitHub Project voor NL Design System.
+
+Maak in de "Project settings" een Custom field voor "Sprint", met als type "Iteration". Hernoem de eerste sprint in de iteratie naar het sprintnummer waar het project is gebleven, bijvoorbeeld "Sprint 42" die begint op 1 januari. Hierna kun je sprints aanmaken tot het einde van het jaar of het einddatum van het project.
+
+Voor het sprintbord maken we een "Board" met de filter `sprint:@current`. Om de volgende sprint te plannen maken we een Board met de filter `sprint:@next`. Om te controleren of er nog items uit de vorige sprint verplaatst moeten worden, maken we een Board met de filter `sprint:@previous`.
+
+Voor de sprints kun je een burn-up chart maken: [GitHub: About insights for Projects - About historical charts](https://docs.github.com/en/issues/planning-and-tracking-with-projects/viewing-insights-from-your-project/about-insights-for-projects#about-historical-charts).
+
+## Vertrouwelijke issues
+
+Sommige items op de backlog kunnen vertrouwelijke gegevens bevatten. Gebruik hiervoor de GitHub Issues in de private repository van het project.
+
+## Sprint planning
+
+### Voorbereiding
+
+Een gedeelte van de werkzaamheden in de sprint zijn gebaseerd op de jaardoelen en kwartaaldoelen die de product manager heeft gepresenteerd aan het team. De doelen zijn vastgelegd als "Milestone" in het GitHub Project. (We gebruiken geen GitHub Milestones, omdat die beperkt zijn tot 1 repository.)
+
+Een ander gedeelte zijn periodieke werkzaamheden, zoals het organiseren van events of het onderhouden van infrastructuur.
+
+Een ander gedeelte is voor incidentele werkzaamheden, gebaseerd op de actualiteit in de community.
+
+Iedereen in het team zet als voorbereiding van de volgende sprint alvast GitHub Issues op de volgende sprint. Zorg eerst dat het issue in het GitHub Project staat. Selecteer daarna als "Sprint" de eerstvolgende optie na "Current".
+
+### Sprint capaciteit
+
+Zorg bij de sprint planning dat er voldoende capaciteit is om aan de volledige [Definition of Done](./definition-of-done.mdx) te voldoen. Er moet voldoende tijd zijn voor [code reviews](./code-review.mdx), en eventuele software releases.
+
+## Resultaten opleveren
+
+Deel het resultaat van de sprint met de belangrijkste stakeholders in de [sprint review](./sprint-review.mdx).
