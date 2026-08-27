@@ -60,20 +60,18 @@ De sessie loopt na een vast aantal minuten af zonder dat de bezoeker iets merkt.
 **Hoe te testen:** vul een formulier in en laat de pagina lang genoeg openstaan om de time-out te overschrijden. Krijg je vóór de time-out een waarschuwing met de mogelijkheid om door te gaan?
 
 <Guideline appearance="dont" title="Bezoeker wordt zonder waarschuwing uitgelogd">
-    ```html
-    <!-- Na 15 minuten inactiviteit logt de server de bezoeker uit. -->
-    <!-- Pas bij de volgende handeling verschijnt: -->
-    <div role="alert">
-      Je sessie is verlopen. Log opnieuw in.
-    </div>
-    ```
+  ```html
+  <div role="alert">Je sessie is verlopen. Log opnieuw in.</div>
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Waarschuwing voordat de sessie verloopt, met optie om te verlengen">
   ```html
-  <dialog role="alertdialog" aria-labelledby="sessie-titel" aria-describedby="sessie-uitleg">
-    <h2 id="sessie-titel">Je sessie verloopt over 2 minuten</h2>
-    <p id="sessie-uitleg">Je wordt automatisch uitgelogd om je gegevens te beschermen. Wil je doorgaan met invullen?</p>
+  <dialog role="alertdialog" aria-labelledby="session-title" aria-describedby="session-description">
+    <h2 id="session-title">Je sessie verloopt over 2 minuten</h2>
+    <p id="session-description">
+      Je wordt automatisch uitgelogd om je gegevens te beschermen. Wil je doorgaan met invullen?
+    </p>
     <button type="button">Doorgaan</button>
     <button type="button">Uitloggen</button>
   </dialog>
@@ -92,8 +90,8 @@ De bezoeker krijgt wel een melding dat de sessie bijna verloopt, maar er is geen
 
 <Guideline appearance="dont" title="Waarschuwing zonder verlengoptie">
   ```html
-  <dialog role="alertdialog" aria-labelledby="sessie-titel">
-    <h2 id="sessie-titel">Je wordt zo uitgelogd</h2>
+  <dialog role="alertdialog" aria-labelledby="session-title">
+    <h2 id="session-title">Je wordt zo uitgelogd</h2>
     <button type="button">Oké</button>
   </dialog>
   ```
@@ -101,9 +99,9 @@ De bezoeker krijgt wel een melding dat de sessie bijna verloopt, maar er is geen
 
 <Guideline appearance="do" title="Waarschuwing met een duidelijke knop om door te gaan">
   ```html
-  <dialog role="alertdialog" aria-labelledby="sessie-titel" aria-describedby="sessie-uitleg">
-    <h2 id="sessie-titel">Je sessie verloopt over 2 minuten</h2>
-    <p id="sessie-uitleg">Kies "Doorgaan" om je sessie met 15 minuten te verlengen.</p>
+  <dialog role="alertdialog" aria-labelledby="session-title" aria-describedby="session-description">
+    <h2 id="session-title">Je sessie verloopt over 2 minuten</h2>
+    <p id="session-description">Kies "Doorgaan" om je sessie met 15 minuten te verlengen.</p>
     <button type="button">Doorgaan</button>
     <button type="button">Uitloggen</button>
   </dialog>
@@ -120,12 +118,12 @@ Een succes- of foutmelding verschijnt als toast onderaan of bovenaan de pagina e
 
 <Guideline appearance="dont" title="Toast die na enkele seconden vanzelf verdwijnt">
     ```javascript
-    function toonMelding(tekst) {
+    const showMessage = (text) => {
       const toast = document.querySelector("#toast");
-      toast.textContent = tekst;
+      toast.textContent = text;
       toast.hidden = false;
       setTimeout(() => { toast.hidden = true; }, 3000);
-    }
+    };
     ```
 </Guideline>
 
@@ -163,9 +161,9 @@ Een formulier gebruikt HTML5-validatie via attributen als `required`, `type="ema
   ```html
   <form novalidate>
     <label for="email">E-mailadres</label>
-    <input type="email" id="email" required aria-describedby="email-fout" aria-invalid="true" />
-    <p id="email-fout" role="alert">
-      Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.
+    <input type="email" id="email" required aria-describedby="email-error" aria-invalid="true" />
+    <p id="email-error" role="alert">
+      Vul een geldig e-mailadres in, bijvoorbeeld naam@example.com.
     </p>
     <button type="submit">Versturen</button>
   </form>
@@ -214,7 +212,7 @@ Dit gebeurt op twee plekken. Binnen een meerstappenformulier springt de pagina n
 <Guideline appearance="dont" title="Automatisch doorklikken naar de volgende stap">
     ```javascript
     setTimeout(() => {
-      window.location.href = "/volgende-stap";
+      window.location.href = "/next-step";
     }, 5000);
     ```
 </Guideline>
@@ -223,7 +221,7 @@ Dit gebeurt op twee plekken. Binnen een meerstappenformulier springt de pagina n
   ```html
   <h1>Je afspraak is gepland</h1>
   <p>Je ontvangt een bevestiging per e-mail.</p>
-  <a href="/volgende-stap" class="knop">
+  <a href="/next-step" class="example-button">
     Naar volgende stap
   </a>
   ```
