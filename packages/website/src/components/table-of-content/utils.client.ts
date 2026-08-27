@@ -86,6 +86,7 @@ export function createListItemsForHeading(heading: HTMLHeadingElement, listItem?
     const link = li.querySelector('a') || document.createElement('a');
     link.href = `#${heading.id}`;
     link.innerText = heading.innerText;
+    link.classList.add('nl-link');
     li.replaceChildren(link);
   } else {
     li.innerText = heading.innerText;

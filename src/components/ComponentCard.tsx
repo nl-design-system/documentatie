@@ -5,7 +5,7 @@ import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 import { Card, CardContent, CardIllustration } from './CardGroup';
-import { ComponentIllustration } from './ComponentIllustration';
+import { ComponentIllustration } from '../../packages/website/src/components/component-illustration/component-illustration';
 import { EstafetteBadge } from './EstafetteBadge';
 import './ComponentCard.css';
 

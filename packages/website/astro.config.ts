@@ -11,6 +11,7 @@ import { addTrailingSlashPlugin } from './markdown-plugins/rehype-trailing-slash
 import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
 import { remarkUnwrapDiv } from './markdown-plugins/remark-unwrap-div';
 import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
+import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inline-directives';
 import { videoplayerClientLoadPlugin } from './markdown-plugins/remark-videoplayer-client-load';
 const siteUrl = 'https://nldesignsystem.nl';
 
@@ -25,6 +26,7 @@ const cspConnectSrcSources = ['https://*.algolia.net', 'https://*.algolianet.com
 const cspImgSrcSources = [
   'https://raw.githubusercontent.com',
   'https://i.ytimg.com',
+  'https://img.youtube.com',
   'https://www.toegankelijkheidsverklaring.nl',
   'https://github.com',
   'https://www.gebruikercentraal.nl',
@@ -89,8 +91,18 @@ export default defineConfig({
   },
 
   markdown: {
-    remarkPlugins: [remarkUnwrapDiv, remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
-    rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+    remarkPlugins: [
+      remarkUnwrapDiv,
+      remarkCustomHeaderId,
+      remarkDirective,
+      remarkUndoInlineDirectives,
+      remarkAdmonitions,
+      removeH1FromMarkdown(),
+    ],
+    rehypePlugins: [
+      nldsComponentsPlugin,
+      addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
+    ],
     syntaxHighlight: 'prism',
   },
 
@@ -101,11 +113,15 @@ export default defineConfig({
         remarkUnwrapDiv,
         remarkCustomHeaderId,
         remarkDirective,
+        remarkUndoInlineDirectives,
         remarkAdmonitions,
         videoplayerClientLoadPlugin,
         removeH1FromMarkdown(),
       ],
-      rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+      rehypePlugins: [
+        nldsComponentsPlugin,
+        addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
+      ],
       syntaxHighlight: 'prism',
     }),
     react(),
