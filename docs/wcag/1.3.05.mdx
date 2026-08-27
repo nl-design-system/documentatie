@@ -55,34 +55,34 @@ Een formulier vraagt om naam, adres, e-mailadres of andere persoonlijke gegevens
 
 <Guideline appearance="dont" title="Adresvelden zonder autocomplete">
     ```html
-    <label for="naam">Volledige naam</label>
-    <input type="text" id="naam" />
+    <label for="name">Volledige naam</label>
+    <input type="text" id="name" />
 
     <label for="email">E-mailadres</label>
     <input type="email" id="email" />
 
-    <label for="straat">Straat en huisnummer</label>
-    <input type="text" id="straat" />
+    <label for="street-address">Straat en huisnummer</label>
+    <input type="text" id="street-address" />
 
-    <label for="postcode">Postcode</label>
-    <input type="text" id="postcode" />
+    <label for="postal-code">Postcode</label>
+    <input type="text" id="postal-code" />
     ```
 
 </Guideline>
 
 <Guideline appearance="do" title="Adresvelden met autocomplete">
     ```html
-    <label for="naam">Volledige naam</label>
-    <input type="text" id="naam" autocomplete="name" />
+    <label for="name">Volledige naam</label>
+    <input type="text" id="name" autocomplete="name" />
 
     <label for="email">E-mailadres</label>
     <input type="email" id="email" autocomplete="email" />
 
-    <label for="straat">Straat en huisnummer</label>
-    <input type="text" id="straat" autocomplete="street-address" />
+    <label for="street-address">Straat en huisnummer</label>
+    <input type="text" id="street-address" autocomplete="street-address" />
 
-    <label for="postcode">Postcode</label>
-    <input type="text" id="postcode" autocomplete="postal-code" />
+    <label for="postal-code">Postcode</label>
+    <input type="text" id="postal-code" autocomplete="postal-code" />
     ```
 
 </Guideline>
@@ -97,20 +97,19 @@ Een veld heeft een `autocomplete`-attribuut, maar met een verkeerde waarde. Een 
 
 <Guideline appearance="dont" title="Verkeerde autocomplete-waarde">
     ```html
-    <!-- Veld vraagt om achternaam, maar autocomplete verwijst naar voornaam -->
-    <label for="achternaam">Achternaam</label>
-    <input type="text" id="achternaam" autocomplete="given-name" />
+    <label for="family-name">Achternaam</label>
+    <input type="text" id="family-name" autocomplete="given-name" />
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Correcte autocomplete-waarde">
   ```html
-  <label for="achternaam">Achternaam</label>
-  <input type="text" id="achternaam" autocomplete="family-name" />
+  <label for="family-name">Achternaam</label>
+  <input type="text" id="family-name" autocomplete="family-name" />
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer controleert de `autocomplete`-waarde van elk veld aan de hand van de [lijst met geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
+**Wie kan dit oplossen:** een developer controleert de `autocomplete`-waarde van elk veld met de [lijst met geldige waarden](https://www.w3.org/Translations/WCAG22-nl/#input-purposes).
 
 ### Autocomplete is uitgeschakeld op velden voor persoonlijke gegevens
 
@@ -120,16 +119,16 @@ Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vra
 
 <Guideline appearance="dont" title="Autocomplete uitgeschakeld op een naamveld">
   ```html
-  <label for="naam">Volledige naam</label>
-  <input type="text" id="naam" autocomplete="off" />
+  <label for="name">Volledige naam</label>
+  <input type="text" id="name" autocomplete="off" />
   ```
 </Guideline>
 
 <Guideline appearance="dont" title="Autocomplete uitgeschakeld op het hele formulier">
   ```html
   <form autocomplete="off">
-    <label for="naam">Volledige naam</label>
-    <input type="text" id="naam" />
+    <label for="name">Volledige naam</label>
+    <input type="text" id="name" />
 
     <label for="email">E-mailadres</label>
     <input type="email" id="email" />
@@ -140,8 +139,8 @@ Een formulier heeft `autocomplete="off"` op velden die persoonlijke gegevens vra
 
 <Guideline appearance="do" title="Autocomplete ingeschakeld met de juiste waarde">
   ```html
-  <label for="naam">Volledige naam</label>
-  <input type="text" id="naam" autocomplete="name" />
+  <label for="name">Volledige naam</label>
+  <input type="text" id="name" autocomplete="name" />
   ```
 </Guideline>
 
@@ -157,28 +156,28 @@ Een betaalformulier vraagt om kaartnummer, vervaldatum en naam op de kaart. Zond
 
 <Guideline appearance="dont" title="Betaalvelden zonder autocomplete">
     ```html
-    <label for="kaartnummer">Kaartnummer</label>
-    <input type="text" id="kaartnummer" />
+    <label for="card-number">Kaartnummer</label>
+    <input type="text" id="card-number" />
 
-    <label for="vervaldatum">Vervaldatum</label>
-    <input type="text" id="vervaldatum" />
+    <label for="expiry-date">Vervaldatum</label>
+    <input type="text" id="expiry-date" />
 
-    <label for="naam-kaart">Naam op de kaart</label>
-    <input type="text" id="naam-kaart" />
+    <label for="card-holder-name">Naam op de kaart</label>
+    <input type="text" id="card-holder-name" />
     ```
 
 </Guideline>
 
 <Guideline appearance="do" title="Betaalvelden met autocomplete">
     ```html
-    <label for="kaartnummer">Kaartnummer</label>
-    <input type="text" id="kaartnummer" autocomplete="cc-number" />
+    <label for="card-number">Kaartnummer</label>
+    <input type="text" id="card-number" autocomplete="cc-number" />
 
-    <label for="vervaldatum">Vervaldatum</label>
-    <input type="text" id="vervaldatum" autocomplete="cc-exp" />
+    <label for="expiry-date">Vervaldatum</label>
+    <input type="text" id="expiry-date" autocomplete="cc-exp" />
 
-    <label for="naam-kaart">Naam op de kaart</label>
-    <input type="text" id="naam-kaart" autocomplete="cc-name" />
+    <label for="card-holder-name">Naam op de kaart</label>
+    <input type="text" id="card-holder-name" autocomplete="cc-name" />
     ```
 
 </Guideline>
@@ -196,8 +195,8 @@ Een inlogformulier vraagt om een e-mailadres en wachtwoord. De velden hebben gee
     <label for="email">E-mailadres</label>
     <input type="email" id="email" />
 
-    <label for="wachtwoord">Wachtwoord</label>
-    <input type="password" id="wachtwoord" />
+    <label for="password">Wachtwoord</label>
+    <input type="password" id="password" />
     ```
 
 </Guideline>
@@ -207,8 +206,8 @@ Een inlogformulier vraagt om een e-mailadres en wachtwoord. De velden hebben gee
     <label for="email">E-mailadres</label>
     <input type="email" id="email" autocomplete="username" />
 
-    <label for="wachtwoord">Wachtwoord</label>
-    <input type="password" id="wachtwoord" autocomplete="current-password" />
+    <label for="password">Wachtwoord</label>
+    <input type="password" id="password" autocomplete="current-password" />
     ```
 
 </Guideline>
