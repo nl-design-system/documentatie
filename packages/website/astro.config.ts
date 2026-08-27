@@ -89,6 +89,12 @@ export default defineConfig({
       noExternal: [/@rijkshuisstijl-community\/.*/],
       alias: [
         {
+          // dev SSR resolves @babel/runtime/helpers/* to CJS (node condition) and
+          // serves it raw, leaking `require` into ESM. Force the ESM helpers.
+          find: /^@babel\/runtime\/helpers\/(?!esm\/)/,
+          replacement: '@babel/runtime/helpers/esm/',
+        },
+        {
           find: '@utrecht/component-library-react/dist/css-module',
           replacement: '@utrecht/component-library-react',
         },
