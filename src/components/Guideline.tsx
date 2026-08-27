@@ -1,5 +1,5 @@
 import { IconMoodHappy, IconMoodSad } from '@tabler/icons-react';
-import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Paragraph, Link } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import Markdown from 'react-markdown';
@@ -26,7 +26,8 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
   const ContainerElement = figure ? 'figure' : 'div';
   const CaptionElement = figure ? 'figcaption' : 'div';
 
-  const _description = typeof description === 'string' ? <Markdown>{description}</Markdown> : description;
+  const _description =
+    typeof description === 'string' ? <Markdown components={{ a: Link }}>{description}</Markdown> : description;
 
   return (
     <ContainerElement

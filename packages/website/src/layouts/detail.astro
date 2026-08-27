@@ -35,7 +35,12 @@ const { ...props } = Astro.props;
             <BreadcrumbNav>
               {breadcrumbPath.map((item, index, list) => (
                 <>
-                  <BreadcrumbNavLink index={index} href={item.href || ''} disabled={!item.href}>
+                  <BreadcrumbNavLink
+                    index={index}
+                    href={item.href || ''}
+                    disabled={!item.href || item.href === Astro.url.pathname}
+                    aria-current={item.href === Astro.url.pathname ? 'page' : null}
+                  >
                     {item.label}
                   </BreadcrumbNavLink>
                   {index < list.length - 1 ? (

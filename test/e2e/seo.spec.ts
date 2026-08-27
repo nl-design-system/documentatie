@@ -95,7 +95,7 @@ test.describe('SEO values', async () => {
             .getAttribute('content')
             .then((twitterCard) => ({ twitterCard })),
           page
-            .locator('body h1')
+            .locator('body h1:not(.nlds-not-accessible h1)')
             .innerText()
             .then((h1) => ({ h1 })),
         ]).then((values) => Object.assign({}, ...values));

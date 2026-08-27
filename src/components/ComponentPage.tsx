@@ -21,6 +21,7 @@ import relationMap from './relations.json';
 import type { HeadingLevel } from '@nl-design-system-candidate/heading-react';
 import { Accordion, AccordionSection } from '../../packages/website/src/components/accordion/accordion';
 import '../../packages/website/src/components/accordion/accordion.css';
+import { ComponentIllustration } from '../../packages/website/src/components/component-illustration/component-illustration';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
@@ -206,6 +207,13 @@ export const Introduction = ({ component, headingLevel, description }: Introduct
           {component.title}
         </InlineHeadingGroup>
         <Paragraph lead>{description}</Paragraph>
+        {['Help Wanted', 'Community'].includes(relayStep) && (
+          <ComponentIllustration
+            relayStep={relayStep}
+            description={`Schets van de ${component.title} component`}
+            name={component.title}
+          />
+        )}
       </>
     )
   );

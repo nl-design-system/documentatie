@@ -9,8 +9,8 @@ const Jeffrey: TeamMember = {
   Description: () => (
     <>
       <Paragraph>
-        Rozerin verbindt designers uit verschillende organisaties, stimuleert samenwerking en kennisdeling binnen de
-        community en heeft altijd wel een handig linkje paraat.
+        Jeffrey verbindt designers uit verschillende organisaties, stimuleert samenwerking en kennisdeling binnen de
+        community.
       </Paragraph>
       <Paragraph>
         Je kunt bij hem terecht voor designvragen rondom: huisstijl, design tokens, componenten, patronen, templates en

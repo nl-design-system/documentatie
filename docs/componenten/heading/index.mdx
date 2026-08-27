@@ -53,6 +53,36 @@ import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/cs
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import ContrastMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/contrast/metadata.json";
+import ContrastExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/contrast/explanation.md";
+import ContrastSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/contrast/solution.md";
+import DescriptiveMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/metadata.json";
+import DescriptiveExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/explanation.md";
+import DescriptiveSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/solution.md";
+import DescriptiveSolutionH1 from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/descriptive/solution-h1.md";
+import EmptyMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/metadata.json";
+import EmptyExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/explanation.md";
+import EmptySolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/solution.md";
+import EmptySolutionH1 from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/empty/solution-emptyh1.md";
+import LanguageMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/language/metadata.json";
+import LanguageExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/language/explanation.md";
+import LanguageSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/language/solution.md";
+import LargeTextMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/metadata.json";
+import LargeTextExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/explanation.md";
+import LargeTextSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/solution.md";
+import LargeTextSolutionQuote from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/largetext/solution-quote.md";
+import MultipleH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/metadata.json";
+import MultipleH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/explanation.md";
+import MultipleH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/multipleH1/solution.md";
+import NoH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/noH1/metadata.json";
+import NoH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/noH1/explanation.md";
+import NoH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/noH1/solution.md";
+import SkippedMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/metadata.json";
+import SkippedExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/explanation.md";
+import SkippedSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/skipped/solution.md";
+import TitleMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/title/metadata.json";
+import TitleExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/title/explanation.md";
+import TitleSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_issues/title/solution.md";
 
 import {
   DefinitionOfDone,
@@ -127,6 +157,88 @@ export const component = componentProgress.find((item) => item.number === issueN
     </ChecklistItem>
   ))}
 </Checklist>
+
+## Veel gemaakte fouten bij het inzetten van Heading
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{ContrastMeta.title}</Heading>
+
+<ContrastExplanation />
+
+#### Oplossing
+
+<ContrastSolution />
+
+<Heading level={3}>{DescriptiveMeta.title}</Heading>
+
+<DescriptiveExplanation />
+
+#### Oplossing
+
+<DescriptiveSolution />
+
+<DescriptiveSolutionH1 />
+
+<Heading level={3}>{EmptyMeta.title}</Heading>
+
+<EmptyExplanation />
+
+#### Oplossing
+
+<EmptySolution />
+
+<EmptySolutionH1 />
+
+<Heading level={3}>{LanguageMeta.title}</Heading>
+
+<LanguageExplanation />
+
+#### Oplossing
+
+<LanguageSolution />
+
+<Heading level={3}>{LargeTextMeta.title}</Heading>
+
+<LargeTextExplanation />
+
+#### Oplossing
+
+<LargeTextSolution />
+
+<LargeTextSolutionQuote />
+
+<Heading level={3}>{MultipleH1Meta.title}</Heading>
+
+<MultipleH1Explanation />
+
+#### Oplossing
+
+<MultipleH1Solution />
+
+<Heading level={3}>{NoH1Meta.title}</Heading>
+
+<NoH1Explanation />
+
+#### Oplossing
+
+<NoH1Solution />
+
+<Heading level={3}>{SkippedMeta.title}</Heading>
+
+<SkippedExplanation />
+
+#### Oplossing
+
+<SkippedSolution />
+
+<Heading level={3}>{TitleMeta.title}</Heading>
+
+<TitleExplanation />
+
+#### Oplossing
+
+<TitleSolution />
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />

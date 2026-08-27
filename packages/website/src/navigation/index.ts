@@ -92,9 +92,9 @@ export interface NavigationGroup {
   unlisted?: boolean;
 }
 
-type NavigationElementResolved = NavigationItem | NavigationGroupResolved;
+export type NavigationElementResolved = NavigationItem | NavigationGroupResolved;
 
-interface NavigationGroupResolved extends NavigationGroup {
+export interface NavigationGroupResolved extends NavigationGroup {
   items: NavigationElementResolved[];
 }
 
