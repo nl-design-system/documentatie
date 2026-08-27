@@ -66,7 +66,7 @@ Dit is de meest voorkomende fout. "Lees meer" zegt niets over de bestemming van 
 
 ```html
 <p>We hebben een nieuw retourbeleid.</p>
-<a href="/retourbeleid">Lees meer</a>.
+<a href="/returns-policy">Lees meer</a>.
 ```
 
 </Guideline>
@@ -74,7 +74,7 @@ Dit is de meest voorkomende fout. "Lees meer" zegt niets over de bestemming van 
 <Guideline appearance="do" title="Linktekst met context in dezelfde zin.">
 
 ```html
-<p><a href="/retourbeleid">Lees meer</a> over de retourvoorwaarden.</p>
+<p><a href="/returns-policy">Lees meer</a> over de retourvoorwaarden.</p>
 ```
 
 </Guideline>
@@ -90,7 +90,7 @@ Als een link alleen een afbeelding bevat en die afbeelding geen alt-tekst heeft,
 <Guideline appearance="dont" title="Afbeelding als link zonder alt-tekst.">
 
 ```html
-<a href="/winkelwagen">
+<a href="/cart">
   <img src="cart-icon.svg" />
 </a>
 ```
@@ -100,7 +100,7 @@ Als een link alleen een afbeelding bevat en die afbeelding geen alt-tekst heeft,
 <Guideline appearance="dont" title="Alt-tekst beschrijft de afbeelding in plaats van het linkdoel.">
 
 ```html
-<a href="/winkelwagen">
+<a href="/cart">
   <img src="cart-icon.svg" alt="Icoon van een winkelwagen" />
 </a>
 ```
@@ -110,7 +110,7 @@ Als een link alleen een afbeelding bevat en die afbeelding geen alt-tekst heeft,
 <Guideline appearance="do" title="Alt-tekst beschrijft het linkdoel.">
 
 ```html
-<a href="/winkelwagen">
+<a href="/cart">
   <img src="cart-icon.svg" alt="Winkelwagen" />
 </a>
 ```
@@ -121,15 +121,15 @@ Als een link alleen een afbeelding bevat en die afbeelding geen alt-tekst heeft,
 
 ### Link opent in een nieuw venster zonder indicatie
 
-Als een link in een nieuw venster opent (`target="_blank"`), moeten alle bezoekers dat weten. Een icoontje alleen is niet voldoende: geef de informatie ook door aan hulpsoftware.
+Als een link in een nieuw venster opent (`target="_blank"`), moeten alle bezoekers dat weten. Een icoon alleen is niet voldoende: geef de informatie ook door aan hulpsoftware.
 
 **Hoe te testen:** zoek in de code naar `target="_blank"`. Staat er in de linktekst of via visueel verborgen tekst dat de link in een nieuw venster opent?
 
 <Guideline appearance="dont" title="Link opent in nieuw venster zonder indicatie.">
 
 ```html
-<a href="https://extern.nl/artikel" target="_blank">
-  <svg aria-hidden="true" class="icoon-extern"></svg>
+<a href="https://example.com/article" target="_blank">
+  <svg aria-hidden="true" class="example-external-icon"></svg>
   Lees het artikel
 </a>
 ```
@@ -139,16 +139,21 @@ Als een link in een nieuw venster opent (`target="_blank"`), moeten alle bezoeke
 <Guideline appearance="do" title="Informatie over nieuw venster in de linktekst.">
 
 ```html
-<a href="https://extern.nl/artikel" target="_blank">
-  <svg aria-hidden="true" class="icoon-extern"></svg>
+<a href="https://example.com/article" target="_blank">
+  <svg aria-hidden="true" class="example-external-icon"></svg>
   Lees het artikel (opent in nieuw venster)
 </a>
+```
 
-<!-- Of met visueel verborgen tekst: -->
-<a href="https://extern.nl/artikel" target="_blank">
+</Guideline>
+
+<Guideline appearance="do" title="Informatie over nieuw venster als visueel verborgen tekst.">
+
+```html
+<a href="https://example.com/article" target="_blank">
   Lees het artikel
   <span class="sr-only">(opent in nieuw venster)</span>
-  <svg aria-hidden="true" class="icoon-extern"></svg>
+  <svg aria-hidden="true" class="example-external-icon"></svg>
 </a>
 ```
 
@@ -165,7 +170,7 @@ Als je een heel tekstblok klikbaar maakt, leest de screenreader de volledige tek
 <Guideline appearance="dont" title="Hele alinea als link.">
 
 ```html
-<a href="/product/jas">
+<a href="/product/coat">
   <p>
     Deze prachtige winterjas is gemaakt van gerecycled materiaal en houdt je warm tot -20 graden. Verkrijgbaar in drie
     kleuren. Nu met 20% korting.
@@ -179,7 +184,7 @@ Als je een heel tekstblok klikbaar maakt, leest de screenreader de volledige tek
 
 ```html
 <p>
-  Deze prachtige <a href="/product/jas">winterjas van gerecycled materiaal</a> houdt je warm tot -20 graden.
+  Deze prachtige <a href="/product/coat">winterjas van gerecycled materiaal</a> houdt je warm tot -20 graden.
   Verkrijgbaar in drie kleuren. Nu met 20% korting.
 </p>
 ```
@@ -197,7 +202,7 @@ Een lege link heeft geen toegankelijke naam. Bijvoorbeeld een `<a>`-element met 
 <Guideline appearance="dont" title="Lege link zonder toegankelijke naam.">
 
 ```html
-<a href="/home" class="logo-link"></a>
+<a href="/home" class="example-logo-link"></a>
 ```
 
 </Guideline>
@@ -205,7 +210,7 @@ Een lege link heeft geen toegankelijke naam. Bijvoorbeeld een `<a>`-element met 
 <Guideline appearance="do" title="Link met visueel verborgen tekst voor screenreaders.">
 
 ```html
-<a href="/home" class="logo-link">
+<a href="/home" class="example-logo-link">
   <span class="sr-only">Acme company</span>
 </a>
 ```
@@ -223,7 +228,7 @@ Als je linktekst verbergt met `display: none` of `visibility: hidden`, dan is di
 <Guideline appearance="dont" title="Linktekst verborgen met display:none.">
 
 ```html
-<a href="/acties">
+<a href="/promotions">
   <span style="display: none">Bekijk onze acties</span>
 </a>
 ```
@@ -233,7 +238,7 @@ Als je linktekst verbergt met `display: none` of `visibility: hidden`, dan is di
 <Guideline appearance="do" title="Visueel verborgen maar beschikbaar voor screenreaders.">
 
 ```html
-<a href="/acties">
+<a href="/promotions">
   <span class="sr-only">Bekijk onze acties</span>
 </a>
 ```
@@ -253,13 +258,13 @@ Als paginering alleen uit cijfers bestaat zonder verdere context, is het linkdoe
 ```html
 <ul>
   <li>
-    <a href="?pagina=1">1</a>
+    <a href="?page=1">1</a>
   </li>
   <li>
-    <a href="?pagina=2">2</a>
+    <a href="?page=2">2</a>
   </li>
   <li>
-    <a href="?pagina=3">3</a>
+    <a href="?page=3">3</a>
   </li>
 </ul>
 ```
@@ -272,13 +277,13 @@ Als paginering alleen uit cijfers bestaat zonder verdere context, is het linkdoe
 <nav aria-label="Paginering">
   <ul>
     <li>
-      <a href="?pagina=1" aria-label="Pagina 1">1</a>
+      <a href="?page=1" aria-label="Pagina 1">1</a>
     </li>
     <li>
-      <a href="?pagina=2" aria-label="Pagina 2">2</a>
+      <a href="?page=2" aria-label="Pagina 2">2</a>
     </li>
     <li>
-      <a href="?pagina=3" aria-label="Pagina 3">3</a>
+      <a href="?page=3" aria-label="Pagina 3">3</a>
     </li>
   </ul>
 </nav>
@@ -325,7 +330,7 @@ Als een link zowel een afbeelding met alt-tekst als zichtbare tekst bevat, voegt
 <Guideline appearance="dont" title="Alt-tekst en zichtbare tekst zeggen hetzelfde.">
 
 ```html
-<a href="/winkelwagen">
+<a href="/cart">
   <img src="cart.svg" alt="Winkelwagen" />
   Winkelwagen
 </a>
@@ -336,7 +341,7 @@ Als een link zowel een afbeelding met alt-tekst als zichtbare tekst bevat, voegt
 <Guideline appearance="do" title="Lege alt zodat alleen de zichtbare tekst meetelt.">
 
 ```html
-<a href="/winkelwagen">
+<a href="/cart">
   <img src="cart.svg" alt="" />
   Winkelwagen
 </a>
@@ -355,7 +360,15 @@ Tekens als `>` en `>>` leest een screenreader voor als "groter dan". "Lees meer 
 <Guideline appearance="dont" title="Decoratieve tekens in de linktekst.">
 
 ```html
-<a href="/aanbiedingen">Bekijk aanbiedingen &gt;&gt;</a>
+<a href="/offers">Bekijk aanbiedingen &gt;&gt;</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Linktekst zonder decoratieve tekens.">
+
+```html
+<a href="/offers">Bekijk aanbiedingen</a>
 ```
 
 </Guideline>
@@ -363,10 +376,7 @@ Tekens als `>` en `>>` leest een screenreader voor als "groter dan". "Lees meer 
 <Guideline appearance="do" title="Decoratief pijltje verborgen voor screenreaders.">
 
 ```html
-<a href="/aanbiedingen">Bekijk aanbiedingen</a>
-
-<!-- Of met een decoratief pijltje: -->
-<a href="/aanbiedingen">
+<a href="/offers">
   Bekijk aanbiedingen
   <span aria-hidden="true"> &rarr;</span>
 </a>
@@ -385,10 +395,10 @@ Als een link met "Download" in een tabel staat maar die tabel mist de juiste HTM
 <Guideline appearance="dont" title="Linkcontext alleen visueel herkenbaar door div-opmaak.">
 
 ```html
-<div class="rij">
-  <div class="cel">Jaarverslag 2024</div>
-  <div class="cel">
-    <a href="/jaarverslag.pdf">Download</a>
+<div class="example-row">
+  <div class="example-cell">Jaarverslag 2024</div>
+  <div class="example-cell">
+    <a href="/annual-report.pdf">Download</a>
   </div>
 </div>
 ```
@@ -403,7 +413,7 @@ Als een link met "Download" in een tabel staat maar die tabel mist de juiste HTM
     <tr>
       <th>Jaarverslag 2024</th>
       <td>
-        <a href="/jaarverslag.pdf">Download</a>
+        <a href="/annual-report.pdf">Download</a>
       </td>
     </tr>
   </tbody>
@@ -423,7 +433,7 @@ Links naar PDF's, Word-documenten, spreadsheets of andere bestanden moeten het b
 <Guideline appearance="dont" title="Link naar bestand zonder bestandstype.">
 
 ```html
-<a href="/voorwaarden.pdf">Algemene voorwaarden</a>
+<a href="/terms.pdf">Algemene voorwaarden</a>
 ```
 
 </Guideline>
@@ -431,7 +441,7 @@ Links naar PDF's, Word-documenten, spreadsheets of andere bestanden moeten het b
 <Guideline appearance="do" title="Bestandstype en -grootte vermeld in de linktekst.">
 
 ```html
-<a href="/voorwaarden.pdf">Algemene voorwaarden (PDF, 340 KB)</a>
+<a href="/terms.pdf">Algemene voorwaarden (PDF, 340 KB)</a>
 ```
 
 </Guideline>
@@ -447,7 +457,7 @@ Een kale URL als linktekst is niet informatief. Een screenreader leest de URL ka
 <Guideline appearance="dont" title="URL als zichtbare linktekst.">
 
 ```html
-<a href="https://www.example.com/rapport-2024.pdf">https://www.example.com/rapport-2024.pdf</a>
+<a href="https://example.com/annual-report-2024.pdf">https://example.com/annual-report-2024.pdf</a>
 ```
 
 </Guideline>
@@ -455,7 +465,7 @@ Een kale URL als linktekst is niet informatief. Een screenreader leest de URL ka
 <Guideline appearance="do" title="Beschrijvende linktekst.">
 
 ```html
-<a href="https://www.example.com/rapport-2024.pdf">Jaarrapport 2024 (PDF, 2,3 MB)</a>
+<a href="https://example.com/annual-report-2024.pdf">Jaarrapport 2024 (PDF, 2,3 MB)</a>
 ```
 
 </Guideline>
