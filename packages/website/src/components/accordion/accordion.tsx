@@ -12,11 +12,22 @@ export interface AccordionProps {
   className?: string;
 }
 
-export interface AccordionSectionProps extends HTMLAttributes<HTMLDetailsElement> {
-  heading: ReactNode;
-  headingLevel: HeadingProps['level'];
-  headingApperance?: HeadingProps['appearance'];
-}
+export type AccordionLabelProps =
+  | {
+      label?: never;
+      heading: ReactNode;
+      headingLevel: HeadingProps['level'];
+      headingApperance?: HeadingProps['appearance'];
+    }
+  | {
+      label: ReactNode;
+      heading?: never;
+      headingLevel?: never;
+      headingApperance?: never;
+    };
+
+export type AccordionSectionProps = HTMLAttributes<HTMLDetailsElement> &
+  AccordionLabelProps & { classNamePanel?: string };
 
 export const Accordion = ({ className, ...props }: AccordionProps) => {
   const _className = clsx('ma-utrecht-accordion', 'utrecht-accordion', className);
@@ -26,12 +37,15 @@ export const Accordion = ({ className, ...props }: AccordionProps) => {
 
 export const AccordionSection = ({
   className,
+  classNamePanel,
+  label,
   heading,
   headingLevel,
   headingApperance,
   ...props
 }: AccordionSectionProps) => {
   const _className = clsx('utrecht-accordion__section', className);
+  const _classNamePanel = clsx('utrecht-accordion__panel', classNamePanel);
 
   return (
     <details className={_className} {...props}>
@@ -41,14 +55,17 @@ export const AccordionSection = ({
             <IconChevronDown />
           </span>
           <span className="nl-button__label">
-            <Heading level={headingLevel} appearance={headingApperance}>
-              {heading}
-            </Heading>
+            {heading && (
+              <Heading level={headingLevel} appearance={headingApperance}>
+                {heading}
+              </Heading>
+            )}
+            {label}
           </span>
         </span>
       </summary>
 
-      <div className="utrecht-accordion__panel">{props.children}</div>
+      <div className={_classNamePanel}>{props.children}</div>
     </details>
   );
 };

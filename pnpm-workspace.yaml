@@ -3,7 +3,7 @@ packages:
   - packages/*
 
 allowBuilds:
-  "@parcel/watcher": true
+  '@parcel/watcher': true
   core-js: false
   core-js-pure: false
   esbuild: true
@@ -16,30 +16,34 @@ engineStrict: true
 minimumReleaseAge: 1440
 
 minimumReleaseAgeExclude:
-  - "@amsterdam/*"
-  - "@gemeente-denhaag/*"
-  - "@gemeente-rotterdam/*"
-  - "@nl-design-system/*"
-  - "@nl-design-system-candidate/*"
-  - "@nl-design-system-community/*"
-  - "@nl-design-system-unstable/*"
-  - "@nl-rvo/*"
-  - "@rijkshuisstijl-community/*"
-  - "@utrecht/*"
+  - '@amsterdam/*'
+  - '@gemeente-denhaag/*'
+  - '@gemeente-rotterdam/*'
+  - '@nl-design-system/*'
+  - '@nl-design-system-candidate/*'
+  - '@nl-design-system-community/*'
+  - '@nl-design-system-unstable/*'
+  - '@nl-rvo/*'
+  - '@rijkshuisstijl-community/*'
+  - '@utrecht/*'
   - shell-quote@1.8.4
 
 overrides:
-  "@isaacs/brace-expansion@<=5.0.0": ">=5.0.1"
-  form-data@>=4.0.0 <4.0.4: ">=4.0.4"
+  '@isaacs/brace-expansion@<=5.0.0': '>=5.0.1'
+  form-data@>=4.0.0 <4.0.4: '>=4.0.4'
   shell-quote@>=1.1.0 <=1.8.3: ^1.8.4
 
 patchedDependencies:
-  "@rijkshuisstijl-community/card-react": patches/@rijkshuisstijl-community__card-react.patch
+  '@gemeente-denhaag/iconbutton@3.1.0': patches/@gemeente-denhaag__iconbutton@3.1.0.patch
+  '@gemeente-denhaag/icons@4.0.1': patches/@gemeente-denhaag__icons@4.0.1.patch
+  '@gemeente-denhaag/number-badge@2.1.0': patches/@gemeente-denhaag__number-badge@2.1.0.patch
+  '@gemeente-denhaag/side-navigation@4.1.0': patches/@gemeente-denhaag__side-navigation@4.1.0.patch
+  '@rijkshuisstijl-community/card-react': patches/@rijkshuisstijl-community__card-react.patch
 
 provenance: true
 
 saveExact: true
 
-savePrefix: ""
+savePrefix: ''
 
 strictPeerDependencies: false

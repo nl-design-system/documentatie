@@ -7,11 +7,22 @@ import '@nl-design-system-candidate/link-css/link.css';
 ---
 
 <ma-table-of-contents scope="main" heading-level="2">
-  <Heading level={2} appearance="level-4" id="toc-label">Inhoudsopgave</Heading>
+  <div class="ma-table-of-contents__content">
+    <Heading level={2} appearance="level-4" id="toc-label">Inhoudsopgave</Heading>
 
-  <!-- The list can not be filled in the template since Astro is not aware of headings added in components. Therefore the list is being filled in middleware when the whole page is rendered -->
+    <!-- The list can not be filled in the template since Astro is not aware of headings added in components. Therefore the list is being filled in middleware when the whole page is rendered -->
 
-  <UnorderedList aria-labelledby="toc-label" />
+    <UnorderedList aria-labelledby="toc-label" />
+  </div>
 </ma-table-of-contents>
 
 <script src="./table-of-content.client.ts"></script>
+<script>
+  const toc = document.querySelector('ma-table-of-contents');
+  const codeExampleHeadings = new Set(
+    document.querySelectorAll(
+      '.nlds-guideline h1, .nlds-guideline h2, .nlds-guideline h3, .nlds-guideline h4, .nlds-guideline h5,.nlds-guideline h6',
+    ),
+  );
+  toc.headingsToIgnore = toc.headingsToIgnore.union(codeExampleHeadings);
+</script>

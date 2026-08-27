@@ -34,7 +34,12 @@ const { ...props } = Astro.props;
             <BreadcrumbNav>
               {breadcrumbPath.map((item, index, list) => (
                 <>
-                  <BreadcrumbNavLink index={index} href={item.href || ''} disabled={!item.href}>
+                  <BreadcrumbNavLink
+                    index={index}
+                    href={item.href || ''}
+                    disabled={!item.href || item.href === Astro.url.pathname}
+                    aria-current={item.href === Astro.url.pathname ? 'page' : null}
+                  >
                     {item.label}
                   </BreadcrumbNavLink>
                   {index < list.length - 1 ? (
@@ -49,8 +54,9 @@ const { ...props } = Astro.props;
         )
       }
 
-      <main id="main" class="ma-layout-overview__main">
-        <div class="ma-layout-overview__main-body">
+      <main id="main" class="ma-layout-overview__main ma-flow" lang={props.lang === 'en' ? 'en' : null}>
+        <header class="ma-layout-overview__header ma-flow"><slot name="header" /></header>
+        <div class="ma-layout-overview__main-body ma-flow">
           <slot />
         </div>
       </main>
