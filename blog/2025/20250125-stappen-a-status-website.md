@@ -38,7 +38,7 @@ Met de [Web Content Accessibility Guidelines](https://nldesignsystem.nl/wcag) (W
 
 Zijn er uitzonderingen op deze richtlijnen, zoals het gebruik van een navigatiekaart? Leg dit ook van tevoren vast en denk alvast na over toegankelijke alternatieven.
 
-Het [NL Design System schrijft richtlijnen](https://nldesignsystem.nl/richtlijnen) die uitleggen hoe te voldoen aan WCAG, maar ze gaan ook een stapje verder. Bevindingen uit gebruikersonderzoek zijn ook meegenomen bij onze richtlijnen.
+Het [NL Design System schrijft richtlijnen](https://nldesignsystem.nl/richtlijnen/) die uitleggen hoe te voldoen aan WCAG, maar ze gaan ook een stapje verder. Bevindingen uit gebruikersonderzoek zijn ook meegenomen bij onze richtlijnen.
 
 De combinatie WCAG en de NL Design System richtlijnen helpen je om een toegankelijke en gebruiksvriendelijke website op te leveren die de A-status verdient.
 

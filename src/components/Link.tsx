@@ -1,6 +1,6 @@
 import type { Props } from '@docusaurus/Link';
 import { clsx } from 'clsx';
-
+import { hasFileExtension } from '../utils';
 import type { PropsWithChildren } from 'react';
 
 /**
@@ -15,8 +15,11 @@ export const BareLink = ({ children, ...props }: PropsWithChildren<Props>) => {
 
   // Internal link
   if (url.origin === 'https://nldesignsystem.nl') {
-    // add trailing slash
-    url.pathname = url.pathname.endsWith('/') ? url.pathname : `${url.pathname}/`;
+    // guarantee trailing slash if it is a pathname without file extension
+    // (e.g. /docs/index/ or /docs/index vs /docs/index.html or /docs/file.ics)
+    if (!url.pathname.endsWith('/') && !hasFileExtension(url.pathname)) {
+      url.pathname = `${url.pathname}/`;
+    }
 
     // keep internal links relative
     dest = url.toString().replace('https://nldesignsystem.nl', '');

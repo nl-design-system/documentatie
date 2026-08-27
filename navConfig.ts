@@ -31,7 +31,7 @@ const navbar: Navbar = {
     },
     {
       type: 'doc',
-      docId: 'voorbeelden/introductie',
+      docId: 'voorbeelden/index',
       position: 'left',
       label: 'Voorbeelden',
       className: 'utrecht-link utrecht-link--html-a ma-navigation-bar-item',

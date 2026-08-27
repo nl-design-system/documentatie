@@ -1,13 +1,14 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm run build:docusaurus",
+  "framework": null,
+  "outputDirectory": "build",
   "git": {
     "deploymentEnabled": {
-      "assets": false,
-      "gh-pages": false
+      "dependabot/*": false,
+      "gh-pages": false,
+      "assets": false
     }
-  },
-  "github": {
-    "autoJobCancellation": true
-  },
-  "ignoreCommand": "[[ $(git log -1 --pretty=%an) == 'dependabot[bot]' ]]"
+  }
 }

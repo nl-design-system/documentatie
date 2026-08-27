@@ -8,6 +8,8 @@ interface ComponentAliasesProps {
 }
 
 export const ComponentAliases = ({ component }: PropsWithChildren<ComponentAliasesProps>) => {
+  if (globalThis.isAstro) return null; // handled in [...component].astro
+
   const { title } = component;
   const slug = toKebabCase(title);
   const Aliases = React.lazy(() =>

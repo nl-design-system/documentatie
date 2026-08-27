@@ -1,0 +1,50 @@
+.utrecht-page-header__content {
+  display: grid;
+  grid-template-columns: 1fr 52px 1fr; /* 52px = logo visual size */
+
+  .ma-search-form {
+    display: none;
+  }
+
+  .ma-page-header__end {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (--medium-down) {
+    padding-block-end: var(--basis-space-block-sm);
+    padding-inline: var(--basis-space-inline-md);
+
+    .nl-button {
+      padding-inline: var(--basis-space-inline-md);
+    }
+  }
+}
+
+@media (--medium-and-up) {
+  .utrecht-page-header__content {
+    grid-template-columns: max-content 1fr;
+
+    .ma-page-header__start {
+      display: none;
+    }
+
+    .ma-logo {
+      inline-size: 179px; /* 179px is logo viewport size */
+    }
+
+    .ma-to-search-link {
+      display: none;
+    }
+
+    .ma-search-form {
+      display: flex;
+      inline-size: var(--basis-form-control-max-inline-size);
+      justify-content: flex-end;
+    }
+
+    .ma-search-form__form {
+      inline-size: unset;
+    }
+  }
+}
