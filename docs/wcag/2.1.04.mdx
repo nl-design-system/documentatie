@@ -66,31 +66,30 @@ Eén lettertoets voert overal in de applicatie meteen een actie uit, waar je ook
     ```js
     document.addEventListener("keydown", (event) => {
       if (event.key === "k") {
-        gaNaarVolgendeBericht();
+        goToNextMessage();
       }
       if (event.key === "y") {
-        archiveerBericht();
+        archiveMessage();
       }
     });
-    // Geen instelling om uit te zetten, niet aan te passen.
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Sneltoets achter een instelling die de gebruiker kan uitzetten">
     ```js
     document.addEventListener("keydown", (event) => {
-      if (!instellingen.sneltoetsenAan) return;
-      if (event.key === instellingen.toetsVolgende) {
-        gaNaarVolgendeBericht();
+      if (!settings.shortcutsEnabled) return;
+      if (event.key === settings.nextMessageKey) {
+        goToNextMessage();
       }
-      if (event.key === instellingen.toetsArchiveren) {
-        archiveerBericht();
+      if (event.key === settings.archiveKey) {
+        archiveMessage();
       }
     });
-    // In de instellingen kan de gebruiker sneltoetsen uitzetten
-    // of een combinatie met Ctrl of Alt kiezen.
     ```
 </Guideline>
+
+In het goede voorbeeld leest de handler twee instellingen uit: een schakelaar om alle sneltoetsen uit te zetten, en per actie de toets die de gebruiker zelf koos. Die toets mag ook een combinatie met Ctrl of Alt zijn.
 
 **Wie kan dit oplossen:** een developer voegt een instelling toe om sneltoetsen uit te zetten, of bouwt een scherm waarin de gebruiker de sneltoetsen kan aanpassen naar combinaties met Ctrl, Alt of Shift.
 
@@ -111,23 +110,20 @@ Het maakt uit wie de bediening levert. Gebruik je `<video controls>`, dan levert
         video.paused ? video.play() : video.pause();
       }
     });
-    // K pauzeert de video, óók wanneer iemand in een
-    // formulierveld typt of buiten de videospeler is.
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Keydown-handler op de videospeler zelf">
     ```js
-    videospeler.addEventListener("keydown", (event) => {
+    videoPlayer.addEventListener("keydown", (event) => {
       if (event.key === "k") {
         video.paused ? video.play() : video.pause();
       }
     });
-    // K werkt alleen zolang de focus in de videospeler ligt,
-    // ook als die focus op de volumeschuif of een knop staat.
-    // Buiten de speler doet de toets niets.
     ```
 </Guideline>
+
+In het foute voorbeeld pauzeert <kbd>K</kbd> de video ook wanneer iemand in een formulierveld typt of ergens anders op de pagina is. In het goede voorbeeld werkt de toets alleen zolang de focus in de speler ligt, ook als die op de volumeschuif of een knop staat.
 
 **Wie kan dit oplossen:** een developer hangt de event-handler aan de videospeler zelf in plaats van aan `document` of `window`. Zorg dat de speler focus kan krijgen, bijvoorbeeld met `tabindex="0"`.
 
@@ -139,8 +135,8 @@ De applicatie biedt wel een instelling om sneltoetsen aan te passen, maar in dat
 
 <Guideline appearance="dont" title="Instelling die alleen afdrukbare tekens accepteert">
   ```html
-  <label for="sneltoets-archiveren">Sneltoets voor archiveren</label>
-  <select id="sneltoets-archiveren">
+  <label for="archive-shortcut">Sneltoets voor archiveren</label>
+  <select id="archive-shortcut">
     <option>A</option>
     <option>Y</option>
     <option>Z</option>
@@ -149,17 +145,13 @@ De applicatie biedt wel een instelling om sneltoetsen aan te passen, maar in dat
 </Guideline>
 
 <Guideline appearance="do" title="Instelling die combinaties met niet-afdrukbare toetsen toelaat">
-    ```html
-    <label for="sneltoets-archiveren">Sneltoets voor archiveren</label>
-    <input
-      type="text"
-      id="sneltoets-archiveren"
-      placeholder="Druk de gewenste toetscombinatie in"
-    />
-    <!-- Het veld vangt toetsdrukken op en accepteert combinaties
-         als Ctrl+Y, Alt+A of F2. Een lege waarde betekent: uit. -->
-    ```
+  ```html
+  <label for="archive-shortcut">Sneltoets voor archiveren</label>
+  <input type="text" id="archive-shortcut" placeholder="Druk de gewenste toetscombinatie in" />
+  ```
 </Guideline>
+
+Het veld in het goede voorbeeld vangt de toetsdruk zelf op en accepteert combinaties als Ctrl+Y, Alt+A of F2. Laat de gebruiker het veld leeg, dan staat de sneltoets uit.
 
 **Wie kan dit oplossen:** een developer breidt de instelling uit zodat de gebruiker een combinatie met Ctrl, Alt of een functietoets kan kiezen, en biedt ook de optie om een sneltoets helemaal leeg te laten.
 
@@ -173,34 +165,31 @@ Ook voor mensen die langzaam typen of motorische problemen hebben werkt dit slec
 
 <Guideline appearance="dont" title="Sequentie-sneltoets die overal werkt, zonder optie om uit te zetten of aan te passen">
     ```js
-    let vorigeToets = null;
+    let previousKey = null;
     document.addEventListener("keydown", (event) => {
-      if (vorigeToets === "g" && event.key === "i") {
-        navigeerNaar("/inbox");
+      if (previousKey === "g" && event.key === "i") {
+        navigateTo("/inbox");
       }
-      if (vorigeToets === "g" && event.key === "c") {
-        navigeerNaar("/agenda");
+      if (previousKey === "g" && event.key === "c") {
+        navigateTo("/calendar");
       }
-      vorigeToets = event.key;
+      previousKey = event.key;
     });
-    // Geen instelling om uit te zetten, niet aan te passen.
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Sequentie-sneltoetsen achter een instelling die de gebruiker kan uitzetten">
     ```js
-    let vorigeToets = null;
+    let previousKey = null;
     document.addEventListener("keydown", (event) => {
-      if (!instellingen.sneltoetsenAan) return;
+      if (!settings.shortcutsEnabled) return;
       if (event.target.matches("input, textarea")) return;
 
-      const sequentie = `${vorigeToets} ${event.key}`;
-      const actie = instellingen.sneltoetsen[sequentie];
-      if (actie) actie();
-      vorigeToets = event.key;
+      const sequence = `${previousKey} ${event.key}`;
+      const action = settings.shortcuts[sequence];
+      if (action) action();
+      previousKey = event.key;
     });
-    // In de instellingen kan de gebruiker sequenties uitzetten,
-    // of vervangen door een combinatie met Ctrl, Alt of Shift.
     ```
 
 </Guideline>
