@@ -1,0 +1,10 @@
+.ma-flow > * + * {
+  margin-block-start: 1em !important;
+}
+
+.rhc-card__content:has(+ .rhc-card__footer) {
+  padding-block-end: 0;
+}
+.rhc-card__footer {
+  padding-block-start: 0;
+}

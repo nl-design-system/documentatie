@@ -12,6 +12,8 @@ export const WcagHeadingGroup = ({
   conformanceLevel,
   ...restProps
 }: PropsWithChildren<WcagHeadingGroupProps>) => {
+  if (globalThis.isAstro) return null;
+
   return (
     <InlineHeadingGroup
       className="nlds-inline-heading-group--wcag-heading-group"

@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import { siteDescription, siteTitle } from '../../seo.config.ts';
+import CenterColumnLayout from '@layouts/center-column.astro';
+import { Grid } from '@components/grid/grid';
+
+const docs = await getCollection('docs');
+
+type DocsArray = typeof docs;
+
+const getDuplicateTitles = (docs: DocsArray) => {
+  type CountMap = { [index: string]: any[] };
+  const titles: CountMap = {};
+  docs.reduce((map, doc) => {
+    const title = doc.data.title ?? '';
+    if (Object.hasOwn(map, title)) {
+      map[title].push(doc);
+    } else {
+      map[title] = [doc];
+    }
+    return map;
+  }, titles);
+
+  return Object.values(titles).filter((x) => x.length > 1);
+};
+
+const duplicates = getDuplicateTitles(docs);
+const placeholderTitle = '(geen paginatitel)';
+---
+
+<CenterColumnLayout title={siteTitle} description={siteDescription} showBreadcrumbs={false}>
+  <Grid>
+    <Grid.Cell span="all">
+      <h1>Duplicate Page Titles</h1>
+    </Grid.Cell>
+  </Grid>
+
+  <Grid>
+    <Grid.Cell span="all">
+      {
+        duplicates.length > 1 ? (
+          <aside>
+            <h2>Warning: Page Titles Must Be Unique</h2>
+            <p>There are page titles used for multiple pages. Adjust page titles to be unique within this website.</p>
+            <ul>
+              {duplicates.map((group) => (
+                <li>
+                  {group[0].data.title ?? placeholderTitle}
+                  <ul>
+                    {group.map((doc) => (
+                      <li>
+                        <a href={doc.id}>{doc.data.title ?? placeholderTitle}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        ) : null
+      }
+    </Grid.Cell>
+  </Grid>
+</CenterColumnLayout>
