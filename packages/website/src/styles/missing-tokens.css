@@ -134,6 +134,10 @@
   min-block-size: 24px;
 }
 
+html .utrecht-link--html-a:any-link:focus {
+  background-color: unset;
+}
+
 @media (forced-colors: active) {
   .utrecht-nav-bar .utrecht-nav-list__item:not(:has([aria-current])) {
     border-block-end-style: none;
