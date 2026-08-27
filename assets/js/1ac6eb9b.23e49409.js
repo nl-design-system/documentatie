@@ -36,7 +36,7 @@
    }
    function a(e) {
     const n = { a: 'a', img: 'img', p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Bij functionele iconen is het belangrijk dat ze simpel van vorm zijn. Hierdoor kun je ze klein toepassen en blijven ze toch herkenbaar. Denk bijvoorbeeld aan een icoon voor een button of foutmelding.' }), '\n', (0, o.jsx)(n.p, { children: (0, o.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_functioneel.png', alt: 'Button met pijl icoon, foutmelding met uitroepteken icoon, en link met potloot icoon.' }) }), '\n', (0, o.jsxs)(n.p, { children: ["Voor het 'Start-thema' maken we gebruik van een selectie uit de ", (0, o.jsx)(n.a, { href: 'https://tabler-icons.io/', children: 'Tabler iconenset' }), '.'] })] });
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.p, { children: 'Bij functionele iconen is het belangrijk dat ze simpel van vorm zijn. Hierdoor kun je ze klein toepassen en blijven ze toch herkenbaar. Denk bijvoorbeeld aan een icoon voor een button of foutmelding.' }), '\n', (0, o.jsx)(n.p, { children: (0, o.jsx)(n.img, { src: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_functioneel.png', alt: 'Button met pijl icoon, foutmelding met uitroepteken icoon, en link met potloot icoon.' }) }), '\n', (0, o.jsxs)(n.p, { children: ["Voor het 'Start-thema' maken we gebruik van een selectie uit de ", (0, o.jsx)(n.a, { href: 'https://tabler.io/icons', children: 'Tabler iconenset' }), '.'] })] });
    }
    function u(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
