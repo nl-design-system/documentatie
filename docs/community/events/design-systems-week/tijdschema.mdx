@@ -7,26 +7,101 @@ pagination_label: Tijdschema
 sidebar_position: 3
 navigation_order: 3
 slug: /events/design-systems-week-2026/tijdschema/
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2026.png
+image_alt: NL Design System Design Systems Week 2026 26-29 Oktober, online
 ---
 
-import { ButtonGroup as ActionGroup, ButtonLink, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import {
+  ButtonGroup as ActionGroup,
+  ButtonLink,
+  Heading2,
+  Paragraph,
+} from "@utrecht/component-library-react/dist/css-module";
 import { IconChevronRight } from "@tabler/icons-react";
+import sessions from "./\_2026/sessions.json";
+import speakers from "./\_2026/speakers.json";
 import { SessionTable } from "@site/src/components/SessionTable";
+import settings from "./settings.json";
 
-# Tijdschema Design Systems Week 2026
+# Tijdschema Design Systems Week {settings.year}
 
 <Paragraph lead>
-  NL Design System organiseert in 2026 voor de 6e keer de Design Systems Week. Van **26 tot en met 29 oktober** zijn er
-  dagelijks meerdere korte sessies van diverse organisaties online te volgen over het **hoe en waarom van design
-  systems**.
+  NL Design System organiseert in {settings.year} voor de {settings.nl.edition} keer de Design Systems Week. Van{" "}
+  <strong>{settings.nl.dateRange}</strong> zijn er dagelijks meerdere korte sessies van diverse organisaties online te
+  volgen over het **hoe en waarom van design systems**.
 </Paragraph>
+
+{!settings.isHappening && (
 
 <ActionGroup>
   <ButtonLink href="/events/design-systems-week/" appearance="primary-action-button">
-    {"Over design systems week"}
+    {"Over Design Systems Week"}
     <IconChevronRight />
   </ButtonLink>
 </ActionGroup>
+)}
+
+{!!settings.isHappening && (<>
+
+<ActionGroup>
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/programma`} appearance="primary-action-button">
+    {"Bekijk het programma"}
+    <IconChevronRight />
+  </ButtonLink>
+  {!!settings.miro && (
+    <ButtonLink href={settings.miro} appearance="secondary-action-button">
+      {"Gebruik Miro"}
+      <IconChevronRight />
+    </ButtonLink>
+  )}
+</ActionGroup>
+
+</>)}
+
+{/* Vul in per dag */}
+
+{/* prettier-ignore */}
+{/*
+
+## Maandag 26 oktober
+
+<SessionTable
+  lang="nl-NL"
+  speakers={speakers}
+  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-26`))}
+/>
+
+## Dinsdag 27 oktober
+
+<SessionTable
+  lang="nl-NL"
+  speakers={speakers}
+  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-27`))}
+/>
+
+## Woensdag 28 oktober
+
+<SessionTable
+  lang="nl-NL"
+  speakers={speakers}
+  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-28`))}
+/>
+
+## Donderdag 29 oktober
+
+<SessionTable
+  lang="nl-NL"
+  speakers={speakers}
+  sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-29`))}
+/>
+
+\*/}
+
+{!!settings.isHappening && (<>
+
+<hr></hr>
+
+</>)}
 
 ## Organisatie
 

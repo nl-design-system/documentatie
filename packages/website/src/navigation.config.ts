@@ -16,8 +16,6 @@ export const navigation = navigationRoot(
           navigationGroup({ filePath: 'docs/handboek/designer', label: 'Voor designers' }),
           navigationGroup({ filePath: 'docs/handboek/developer', label: 'Voor developers' }),
           navigationGroup({ filePath: 'docs/handboek/organisatie', label: 'Voor organisaties' }),
-          navigationItem('docs/handboek/leverancier/introductie.md'),
-          navigationItem('docs/handboek/manager/introductie.md'),
           navigationGroup({ filePath: 'docs/baseline' }),
           navigationItem('docs/woordenlijst/index.mdx'),
         ],
@@ -43,7 +41,7 @@ export const navigation = navigationRoot(
           navigationItem('docs/community/community-sprints/index.mdx'),
           navigationGroup({ filePath: 'docs/community/community-sprints/mijn-services-community' }),
           navigationGroup({ filePath: 'docs/community/community-sprints/rijkshuisstijl-community' }),
-          navigationItem('docs/community/expertteam-digitale-toegankelijkheid/index.mdx'),
+          navigationGroup({ filePath: 'docs/community/expertteam-digitale-toegankelijkheid' }),
           navigationGroup({
             label: 'Bijeenkomsten',
             filePath: 'docs/community/events',
@@ -52,10 +50,18 @@ export const navigation = navigationRoot(
           navigationGroup({
             index: navigationItem('docs/community/events/design-systems-week/index.mdx'),
             items: [
+              navigationItem('docs/community/events/design-systems-week/programma.mdx'),
+              navigationItem('docs/community/events/design-systems-week/tijdschema.mdx'),
               navigationGroup({
                 label: 'English',
-                filePath: 'docs/community/events/design-systems-week/en',
-                ignoredFiles: ['call-for-speakers.mdx', 'sign-up.mdx'],
+                index: navigationItem('docs/community/events/design-systems-week/en/index.mdx'),
+                items: [
+                  navigationItem('docs/community/events/design-systems-week/en/program.mdx'),
+                  navigationItem('docs/community/events/design-systems-week/en/timetable.mdx'),
+                  navigationGroup({
+                    filePath: 'docs/community/events/design-systems-week/en/previous-editions',
+                  }),
+                ],
               }),
               navigationGroup({
                 filePath: 'docs/community/events/design-systems-week/eerdere-edities',

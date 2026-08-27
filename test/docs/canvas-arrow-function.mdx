@@ -1,0 +1,17 @@
+---
+title: Canvas arrow function
+description: Test that a Canvas with arrow function children renders correctly
+unlisted: true
+---
+
+import TestPageNote from "./_test-page-note.md";
+
+{/* @license CC0-1.0 */}
+
+import { Canvas } from "@site/src/components/Canvas/Canvas";
+
+Tests whether a Canvas with arrow function children renders correctly
+
+<TestPageNote />
+
+<Canvas language="html">{() => <p>Hello from Canvas</p>}</Canvas>

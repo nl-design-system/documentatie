@@ -1,8 +1,6 @@
 <svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
 <symbol id="component-illustration">
-<g clip-path="url(#clip0_1978_3364)">
-<rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)"/>
-<g clip-path="url(#clip1_1978_3364)">
+<rect width="960" height="540" fill="var(--ma-component-illustration-grid-background-color, #AAA)"/>
 <rect width="2" height="540" transform="translate(69)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
 <rect width="2" height="540" transform="translate(151)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
 <rect width="2" height="540" transform="translate(233)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
@@ -20,7 +18,6 @@
 <rect width="960" height="2" transform="translate(0 310)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
 <rect width="960" height="2" transform="translate(0 392)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
 <rect width="960" height="2" transform="translate(0 474)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
-</g>
 <path d="M65 58H895C896.105 58 897 58.8954 897 60V480C897 481.105 896.105 482 895 482H65C63.8954 482 63 481.105 63 480V60L63.0107 59.7959C63.113 58.7872 63.9643 58 65 58Z" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"/>
 <path d="M73 66H887C888.105 66 889 66.8954 889 68V472C889 473.105 888.105 474 887 474H73C71.8954 474 71 473.105 71 472V68C71 66.8954 71.8954 66 73 66Z" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"/>
 <rect x="112" y="107" width="736" height="326" rx="2" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"/>
@@ -38,7 +35,6 @@
 <line x1="2" y1="-2" x2="91.2858" y2="-2" transform="matrix(0.89773 -0.440547 0.529143 0.848533 151.258 169)" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4" stroke-linecap="round"/>
 </g>
 <rect x="153" y="129" width="80" height="38" rx="2" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"/>
-</g>
 <defs>
 <clipPath id="clip0_1978_3364">
 <rect width="960" height="540" fill="white"/>

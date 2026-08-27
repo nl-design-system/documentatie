@@ -10,7 +10,7 @@ export function orderedList(element: Element) {
 
   element.properties['role'] = 'list';
 
-  selectAll('li', element).forEach(addClassName('utrecht-ordered-list__item'));
+  selectAll(':scope > li', element).forEach(addClassName('utrecht-ordered-list__item'));
 
-  selectAll('li > ul', element).forEach(addClassName('utrecht-ordered-list--nested'));
+  selectAll(':scope > li > ol', element).forEach(addClassName('utrecht-ordered-list--nested'));
 }

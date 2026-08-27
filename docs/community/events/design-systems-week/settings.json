@@ -1,0 +1,14 @@
+{
+  "year": "2026",
+  "isUpComing": true,
+  "isHappening": false,
+  "miro": false,
+  "nl": {
+    "dateRange": "26 tot en met 29 oktober",
+    "edition": "5e"
+  },
+  "en": {
+    "dateRange": "October 26 to October 29",
+    "edition": "5th"
+  }
+}

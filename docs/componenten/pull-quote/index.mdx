@@ -25,7 +25,6 @@ import {
   Related,
 } from "@site/src/components/ComponentPage";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Pull Quote";
@@ -39,12 +38,6 @@ export const component = componentProgress.find((item) => item.number === issueN
 <Introduction component={component} headingLevel={1} description={description} />
 
 Ook bekend als: Streamer.
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

@@ -48,6 +48,7 @@ export interface CanvasProps {
   copy?: boolean;
   container?: string | CanvasContainerType;
   designTokens?: CSSProperties;
+  className?: string;
 }
 
 export const Canvas = globalThis.isAstro

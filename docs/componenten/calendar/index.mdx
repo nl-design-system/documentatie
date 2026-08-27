@@ -36,7 +36,6 @@ keywords:
 {/* @license CC0-1.0 */}
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
 import { DefinitionOfDone, HelpImproveComponent, Implementations, Introduction, Related } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Calendar";
@@ -48,12 +47,6 @@ export const componentName = "calendar";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

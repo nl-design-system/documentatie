@@ -11,10 +11,11 @@ displayed_sidebar: community
 ---
 
 import { NewsletterSignUp } from "@site/src/components/NewsletterSignUp";
+import settings from "./settings.json";
 
-# Sprekers gezocht voor de Design Systems Week 2026
+# Sprekers gezocht voor de Design Systems Week {settings.year}
 
-Van 26 tot en met 29 oktober 2026 organiseren we opnieuw een week vol sessies over design systems. Een week waarin we ervaringen uitwisselen, laten zien wat werkt in de praktijk en samen leren over ontwerp, code, richtlijnen en samenwerking.
+Van {settings.nl.dateRange} {settings.year} organiseren we opnieuw een week vol sessies over design systems. Een week waarin we ervaringen uitwisselen, laten zien wat werkt in de praktijk en samen leren over ontwerp, code, richtlijnen en samenwerking.
 
 Werk je als ontwerper, ontwikkelaar of contentmaker met een design system? Of heb je een mooi idee om te spreken over het belang van een toegankelijk design system? Dan is de Design Systems Week een mooi moment om kennis te delen met vakgenoten.
 
@@ -30,11 +31,12 @@ Werk je als ontwerper, ontwikkelaar of contentmaker met een design system? Of he
   orgId="kdCftAyRgW"
   laPostaId="iyihtuzpiq"
   language={{ id: "x95hFD1RX5", value: "1" /* 1=nl */ }}
+  thanksPage="https://nldesignsystem.nl/events/design-systems-week/sessie-voorstellen/bedankt"
 />
 
 ---
 
-Dit is het 5e jaar dat NL Design System de Design Systems Week organiseert.
+Dit is het {settings.nl.edition} jaar dat NL Design System de Design Systems Week organiseert.
 Meer weten over eerdere edities? Kijk dan de video's van voorgaande jaren terug!
 
 - [Design Systems Week 2025](/events/design-systems-week-2025/programma)
