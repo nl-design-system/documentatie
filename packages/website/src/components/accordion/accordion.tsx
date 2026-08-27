@@ -26,7 +26,8 @@ export type AccordionLabelProps =
       headingApperance?: never;
     };
 
-export type AccordionSectionProps = HTMLAttributes<HTMLDetailsElement> & AccordionLabelProps;
+export type AccordionSectionProps = HTMLAttributes<HTMLDetailsElement> &
+  AccordionLabelProps & { classNamePanel?: string };
 
 export const Accordion = ({ className, ...props }: AccordionProps) => {
   const _className = clsx('ma-utrecht-accordion', 'utrecht-accordion', className);
@@ -36,6 +37,7 @@ export const Accordion = ({ className, ...props }: AccordionProps) => {
 
 export const AccordionSection = ({
   className,
+  classNamePanel,
   label,
   heading,
   headingLevel,
@@ -43,6 +45,7 @@ export const AccordionSection = ({
   ...props
 }: AccordionSectionProps) => {
   const _className = clsx('utrecht-accordion__section', className);
+  const _classNamePanel = clsx('utrecht-accordion__panel', classNamePanel);
 
   return (
     <details className={_className} {...props}>
@@ -62,7 +65,7 @@ export const AccordionSection = ({
         </span>
       </summary>
 
-      <div className="utrecht-accordion__panel">{props.children}</div>
+      <div className={_classNamePanel}>{props.children}</div>
     </details>
   );
 };

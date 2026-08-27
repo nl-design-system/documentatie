@@ -41,7 +41,7 @@ export const navigation = navigationRoot(
           navigationItem('docs/community/community-sprints/index.mdx'),
           navigationGroup({ filePath: 'docs/community/community-sprints/mijn-services-community' }),
           navigationGroup({ filePath: 'docs/community/community-sprints/rijkshuisstijl-community' }),
-          navigationItem('docs/community/expertteam-digitale-toegankelijkheid/index.mdx'),
+          navigationGroup({ filePath: 'docs/community/expertteam-digitale-toegankelijkheid' }),
           navigationGroup({
             label: 'Bijeenkomsten',
             filePath: 'docs/community/events',
@@ -50,10 +50,18 @@ export const navigation = navigationRoot(
           navigationGroup({
             index: navigationItem('docs/community/events/design-systems-week/index.mdx'),
             items: [
+              navigationItem('docs/community/events/design-systems-week/programma.mdx'),
+              navigationItem('docs/community/events/design-systems-week/tijdschema.mdx'),
               navigationGroup({
                 label: 'English',
-                filePath: 'docs/community/events/design-systems-week/en',
-                ignoredFiles: ['call-for-speakers.mdx', 'sign-up.mdx'],
+                index: navigationItem('docs/community/events/design-systems-week/en/index.mdx'),
+                items: [
+                  navigationItem('docs/community/events/design-systems-week/en/program.mdx'),
+                  navigationItem('docs/community/events/design-systems-week/en/timetable.mdx'),
+                  navigationGroup({
+                    filePath: 'docs/community/events/design-systems-week/en/previous-editions',
+                  }),
+                ],
               }),
               navigationGroup({
                 filePath: 'docs/community/events/design-systems-week/eerdere-edities',
