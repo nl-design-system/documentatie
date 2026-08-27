@@ -43,6 +43,7 @@ const cspProdConfig: AstroUserConfig = {
         "default-src 'self'",
         "font-src 'self'",
         "form-action 'self'",
+        "frame-src 'self' https://www.youtube-nocookie.com",
         `img-src 'self' ${cspImgSrcSources} blob: data:`,
         "object-src 'none'",
         'worker-src blob:',
