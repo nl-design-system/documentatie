@@ -72,6 +72,9 @@ import EmphasisExplanation from "@nl-design-system-unstable/documentation/compon
 import EmphasisSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution.md";
 import EmphasisSolutionLead from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution-lead.md";
 import EmphasisSolutionQuote from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/emphasis/solution-quote.md";
+import UnderlineMeta from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/underline/metadata.json";
+import UnderlineExplanation from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/underline/explanation.md";
+import UnderlineSolution from "@nl-design-system-unstable/documentation/componenten/paragraph/_issues/underline/solution.md";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
 import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
 import { Heading } from "@nl-design-system-candidate/heading-react/css";
@@ -212,6 +215,14 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 <EmphasisSolutionLead />
 
 <EmphasisSolutionQuote />
+
+<Heading level={3}>{UnderlineMeta.title}</Heading>
+
+<UnderlineExplanation />
+
+#### Oplossing
+
+<UnderlineSolution />
 
 <Markdown omitH1 headingLevel={2}>
   <Usage />
