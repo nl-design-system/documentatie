@@ -124,7 +124,9 @@ Dit geldt ook voor knoppen met alleen een icoon. Het icoon zelf is een zichtbaar
 <Guideline appearance="dont" title="Onzichtbaar label beschrijft het icoon in plaats van de functie">
     ```html
     <button aria-label="Oog">
-      <svg aria-hidden="true"><!-- oog-icoon --></svg>
+      <svg aria-hidden="true" focusable="false">
+        <use href="assets/svg/icons-core-set.svg#icon-eye"></use>
+      </svg>
     </button>
     ```
 </Guideline>
@@ -132,7 +134,9 @@ Dit geldt ook voor knoppen met alleen een icoon. Het icoon zelf is een zichtbaar
 <Guideline appearance="do" title="Onzichtbaar label beschrijft de functie">
     ```html
     <button aria-label="Wachtwoord tonen">
-      <svg aria-hidden="true"><!-- oog-icoon --></svg>
+      <svg aria-hidden="true" focusable="false">
+        <use href="assets/svg/icons-core-set.svg#icon-eye"></use>
+      </svg>
     </button>
     ```
 </Guideline>
@@ -145,19 +149,19 @@ Een formulierlabel als "Veld 1" of "Invoer" vertelt niet wat je moet invullen. E
 
 <Guideline appearance="dont" title="Labels die niet beschrijven wat er verwacht wordt">
     ```html
-    <label for="veld1">Veld 1</label>
-    <input id="veld1" type="text" />
+    <label for="field-1">Veld 1</label>
+    <input id="field-1" type="text" />
 
-    <label for="veld2">Invoer</label>
-    <input id="veld2" type="text" />
+    <label for="field-2">Invoer</label>
+    <input id="field-2" type="text" />
     ```
 
 </Guideline>
 
 <Guideline appearance="do" title="Beschrijvende labels">
     ```html
-    <label for="voornaam">Voornaam</label>
-    <input id="voornaam" type="text" />
+    <label for="first-name">Voornaam</label>
+    <input id="first-name" type="text" />
 
     <label for="email">E-mailadres</label>
     <input id="email" type="email" />
@@ -175,22 +179,22 @@ Twee velden hebben hetzelfde label, zoals twee keer "Naam" of twee keer "Datum".
 
 <Guideline appearance="dont" title="Twee velden met hetzelfde label">
     ```html
-    <label for="naam1">Naam</label>
-    <input id="naam1" type="text" />
+    <label for="name-1">Naam</label>
+    <input id="name-1" type="text" />
 
-    <label for="naam2">Naam</label>
-    <input id="naam2" type="text" />
+    <label for="name-2">Naam</label>
+    <input id="name-2" type="text" />
     ```
 
 </Guideline>
 
 <Guideline appearance="do" title="Unieke labels die het verschil aangeven">
     ```html
-    <label for="naam-aanvrager">Naam aanvrager</label>
-    <input id="naam-aanvrager" type="text" />
+    <label for="applicant-name">Naam aanvrager</label>
+    <input id="applicant-name" type="text" />
 
-    <label for="naam-partner">Naam partner</label>
-    <input id="naam-partner" type="text" />
+    <label for="partner-name">Naam partner</label>
+    <input id="partner-name" type="text" />
     ```
 
 </Guideline>
@@ -290,10 +294,10 @@ Paginering werkt op een vergelijkbare manier. Een rij met knoppen "1", "2", "3" 
 <Guideline appearance="dont" title="Paginering met alleen cijfers en zonder groepering">
     ```html
     <div>
-      <a href="?pagina=1">1</a>
-      <a href="?pagina=2">2</a>
-      <a href="?pagina=3">3</a>
-      <a href="?pagina=3">Volgende</a>
+      <a href="?page=1">1</a>
+      <a href="?page=2">2</a>
+      <a href="?page=3">3</a>
+      <a href="?page=3">Volgende</a>
     </div>
     ```
 
@@ -302,10 +306,10 @@ Paginering werkt op een vergelijkbare manier. Een rij met knoppen "1", "2", "3" 
 <Guideline appearance="do" title="Paginering in een gelabelde nav met beschrijvende knopteksten">
     ```html
     <nav aria-label="Paginering zoekresultaten">
-      <a href="?pagina=1" aria-label="Pagina 1">1</a>
-      <a href="?pagina=2" aria-current="page" aria-label="Pagina 2">2</a>
-      <a href="?pagina=3" aria-label="Pagina 3">3</a>
-      <a href="?pagina=3" aria-label="Volgende pagina">Volgende</a>
+      <a href="?page=1" aria-label="Pagina 1">1</a>
+      <a href="?page=2" aria-current="page" aria-label="Pagina 2">2</a>
+      <a href="?page=3" aria-label="Pagina 3">3</a>
+      <a href="?page=3" aria-label="Volgende pagina">Volgende</a>
     </nav>
     ```
 
@@ -319,13 +323,13 @@ Een `<iframe>` heeft een `title`-attribuut dat beschrijft wat het iframe bevat. 
 
 <Guideline appearance="dont" title="Iframe-titel zonder type inhoud">
   ```html
-  <iframe src="https://www.youtube.com/embed/abc123" title="Productdemo keukenmachine"></iframe>
+  <iframe src="https://example.com/embed/product-demo" title="Productdemo keukenmachine"></iframe>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Iframe-titel met type inhoud">
   ```html
-  <iframe src="https://www.youtube.com/embed/abc123" title="Video: productdemo keukenmachine"></iframe>
+  <iframe src="https://example.com/embed/product-demo" title="Video: productdemo keukenmachine"></iframe>
   ```
 </Guideline>
 
@@ -354,7 +358,7 @@ Een `<th>`-element in een tabel werkt als label voor de cellen eronder of ernaas
         <td>Paspoort</td>
         <td>€ 83,85</td>
         <td>
-          <a href="/aanvragen">Aanvragen</a>
+          <a href="/apply">Aanvragen</a>
         </td>
       </tr>
     </tbody>
@@ -377,7 +381,7 @@ Een `<th>`-element in een tabel werkt als label voor de cellen eronder of ernaas
         <td>Paspoort</td>
         <td>€ 83,85</td>
         <td>
-          <a href="/aanvragen">Aanvragen</a>
+          <a href="/apply">Aanvragen</a>
         </td>
       </tr>
     </tbody>
