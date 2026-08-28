@@ -5,6 +5,7 @@ import ComponentOverview from '@components/docusaurus-mocks/ComponentOverview.as
 import ComponentAnatomy from '@components/docusaurus-mocks/ComponentAnatomy.astro';
 import { CriteriaList } from '@components/criteria-list/criteria-list';
 import { CriteriaListItem } from '@components/criteria-list/criteria-list-item';
+import { RelayModel, RelaySection } from '@components/docusaurus-mocks/RelayModel.astro';
 
 export const MDXComponents = async ({ navigationItems, navigationList } = {}) => {
   return {
@@ -17,6 +18,8 @@ export const MDXComponents = async ({ navigationItems, navigationList } = {}) =>
     },
     OverviewPage: (props) => OverviewPage({ ...props, pages: navigationItems || [] }),
     DocCardList,
+    RelayModel,
+    RelaySection,
   };
 };
 ---
