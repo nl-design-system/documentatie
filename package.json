@@ -22,9 +22,9 @@
     "prepare": "husky",
     "docusaurus": "docusaurus",
     "start": "pnpm run start:docusaurus",
-    "start:docusaurus": "pnpm run dev",
+    "start:docusaurus": "docusaurus start",
     "start:astro": "pnpm run dev:astro",
-    "dev": "pnpm run dev:docusaurus",
+    "dev": "npm-run-all dev:**",
     "dev:docusaurus": "docusaurus start",
     "dev:astro": "pnpm --filter @nl-design-system/website-astro run dev",
     "build": "npm-run-all --sequential build:docusaurus build:astro",
@@ -129,6 +129,8 @@
     "stylelint-use-logical": "2.1.3"
   },
   "devDependencies": {
+    "@amsterdam/design-system-css": "4.1.0",
+    "@amsterdam/design-system-react": "4.1.0",
     "@argos-ci/cli": "5.0.4",
     "@argos-ci/playwright": "7.0.5",
     "@astrojs/markdown-remark": "7.0.1",

@@ -1,0 +1,108 @@
+---
+title: NL Design System
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: NL Design System
+sidebar_position: 2
+navigation_order: 2
+pagination_label: NL Design System
+description: "Een design system bevat componenten, patronen, templates en richtlijnen: basisonderdelen waarover je samen afspraken maakt. Met die afspraken verbeter je de gebruiksvriendelijkheid en toegankelijkheid van je website."
+keywords:
+  - design system
+  - introductie
+---
+
+import {
+  GuidelineSVG,
+  ComponentSVG,
+  TemplateSVG,
+  PatternSVG,
+  UserResearchSVG,
+  ThemesSVG,
+} from "@site/src/components/Icons";
+import { Card } from "@utrecht/card-react/css";
+import { Grid } from "@amsterdam/design-system-react";
+import "@amsterdam/design-system-css/dist/grid/grid.css";
+import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
+import { Markdown } from "@site/src/components/Markdown";
+
+{/* @license CC0-1.0 */}
+
+# NL Design System
+
+NL Design System bevat componenten, patronen, templates en richtlijnen: basisonderdelen waarover je samen afspraken maakt. Met die afspraken verbeter je de gebruiksvriendelijkheid en toegankelijkheid van je website.
+
+## Onderdelen van NL Design System
+
+Componenten en templates ontwikkeld volgens het [Estafettemodel](./estafettemodel.mdx) aangevuld met richtlijnen en patronen. Ontwikkeld op basis van gebruikersonderzoek door [het kernteam en de community](./kernteam-community.mdx) om herbruikbare, toegankelijke en gebruiksvriendelijke websites en webapplicaties te maken.
+
+<Grid>
+  <Grid.Cell span="all">
+    <Card
+      body="Componenten zijn herbruikbare elementen zoals knoppen, formuliervelden of menu."
+      heading="Componenten"
+      headingLevel={3}
+      href="/componenten/"
+      image={<ComponentSVG />}
+    ></Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      body="Patronen laten zien hoe componenten samen op een toegankelijke en gebruiksvriendelijk manier gebruikt kunnen worden."
+      heading="Patronen"
+      headingLevel={3}
+      href="/voorbeelden/patronen-en-templates/"
+      image={<PatternSVG />}
+    ></Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      body="Voorbeeldpagina's die opgebouwd zijn met componenten en patronen die overgenomen kunnen worden voor een consistente gebruikerservaring."
+      heading="Templates"
+      headingLevel={3}
+      href="/voorbeelden/patronen-en-templates/"
+      image={<TemplateSVG />}
+    ></Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      body="Richtlijnen zorgen voor consistente, gebruiksvriendelijke en toegankelijke digitale ervaringen."
+      heading="Richtlijnen"
+      headingLevel={3}
+      href="/richtlijnen/"
+      image={<GuidelineSVG />}
+    ></Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      body="Validatie met eindgebruikers als onderbouwing van ontwikkelingen binnen het design system."
+      heading="Gebruikersonderzoek"
+      headingLevel={3}
+      href="https://gebruikersonderzoeken.nl"
+      image={<UserResearchSVG />}
+    ></Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card
+      body="Verschillende huisstijlen worden vastgelegd als thema bij NL Design System. Zo kan dezelfde toegankelijke logica worden hergebruikt op verschillende plekken, met behoud van de eigen identiteit."
+      heading="Thema's"
+      headingLevel={3}
+      href="/handboek/huisstijl-vastleggen/overzicht/"
+      image={<ThemesSVG />}
+    ></Card>
+  </Grid.Cell>
+</Grid>
+
+## Wat maakt NL Design System uniek?
+
+Waar veel design systems een specifieke organisatie bedienen, werkt NL Design System met organisaties verspreid over de hele overheid: van gemeenten tot Rijk.
+
+Juist deze organisaties hebben baat bij een duidelijke set herbruikbare basisonderdelen. Hierdoor kunnen vele kleinere organisaties meeliften op het onderzoek en de ontwikkeling door anderen, en iedereen kan een bijdrage leveren door bijvoorbeeld kleine verbeteringen aan te dragen.
+
+Als ook nieuwe inzichten en gebruikersonderzoek gedeeld worden, kunnen we daar met z'n allen betere richtlijnen, componenten en thema's mee maken. Deze nieuwe versies kunnen vervolgens gebruikt worden in alle applicaties die met NL Design System zijn gebouwd en zo direct de gebruikerservaring van vele eindgebruikers verbeteren.
+
+[Bekijk de community](/community/)
+
+<Markdown headingLevel={2}>
+  <HulpSnippet />
+</Markdown>
