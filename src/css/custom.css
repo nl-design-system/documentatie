@@ -135,6 +135,11 @@
   --nl-button-padding-inline-end: var(--basis-space-inline-md);
   --nl-button-padding-inline-start: var(--basis-space-inline-md);
 
+  /* tmp fix for background-color and color */
+  background-color: var(--basis-color-default-bg-document);
+  color: var(--basis-color-default-color-document);
+
+  /* until utrecht-root is used */
   font-size-adjust: 0.5;
 
   /* reset `font-smoothing: antialiasing`, prefer automatic (`subpixel-antialiasing`) behavior for high-dpi screens */
@@ -492,7 +497,7 @@ aside button[title="Zijbalk inklappen"],
 
 .utrecht-card--link:hover {
   --utrecht-card-background-color: var(--utrecht-card-link-hover-background-color) !important;
-  --utrecht-link-text-decoration: none !important;
+  --utrecht-link-text-decoration-color: currentColor;
 }
 
 .utrecht-card__link {
