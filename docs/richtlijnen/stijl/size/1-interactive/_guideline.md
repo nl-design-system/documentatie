@@ -15,7 +15,7 @@ Gebruik voor interactieve elementen een minimaal aanwijsgebied van 48px bij 48px
 
 Deze succescriteria beschrijven een minimum. Voor een prettigere bediening is het aan te raden om interactieve elementen groter te maken.
 
-Google adviseert binnen Material Design een aanwijsgebied van minimaal 48dp bij 48dp. [Onderzoek naar het selecteren van aanwijsgebieden](https://youtu.be/nTNwZXVRGdY?si=G_XSNEPZTB5oepGx&t=163) laat zien dat de nauwkeurigheid toeneemt naarmate een doel groter wordt. Bij tweedimensionale aanwijsgebieden bereikt de nauwkeurigheid rond 48dp een plateau. (ResearchGate)
+Google adviseert binnen Material Design een aanwijsgebied van minimaal 48dp bij 48dp. Dit komt in CSS overeen met 48px bij 48px. [Uit onderzoek](https://youtu.be/nTNwZXVRGdY?si=G_XSNEPZTB5oepGx&t=163) blijkt dat grotere aanwijsgebieden makkelijker te raken zijn. Rond 48dp wordt de nauwkeurigheid nauwelijks nog beter.
 
 ## Het zichtbare element hoeft niet 48px groot te zijn
 
