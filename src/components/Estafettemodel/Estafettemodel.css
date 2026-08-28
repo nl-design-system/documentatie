@@ -1,0 +1,212 @@
+.ma-estafettemodel-container {
+  container-name: estafettemodel;
+  container-type: inline-size;
+}
+
+.ma-estafettemodel {
+  --nl-heading-level-1-color: currentColor;
+  --nl-heading-level-2-color: currentColor;
+  --nl-heading-level-3-color: currentColor;
+  --nl-heading-level-4-color: currentColor;
+  --nl-heading-level-5-color: currentColor;
+  --nl-heading-level-6-color: currentColor;
+  --nl-link-color: currentColor;
+  --utrecht-link-color: currentColor;
+  --utrecht-link-text-decoration-color: currentColor;
+
+  border-color: var(--basis-color-default-bg-document);
+  border-start-end-radius: var(--basis-border-radius-lg);
+  border-start-start-radius: var(--basis-border-radius-lg);
+  border-style: solid;
+  border-width: var(--basis-border-width-sm);
+  display: grid;
+  grid-template-areas: "help-wanted" "community" "candidate" "hall-of-fame";
+  grid-template-columns: 1fr;
+  margin-block-end: var(--basis-space-block-3xl);
+  position: relative;
+}
+
+.ma-estafettemodel__cell {
+  align-items: center;
+  border-color: var(--basis-color-default-bg-document);
+  border-style: solid;
+  border-width: var(--basis-border-width-md);
+  padding-block-end: var(--basis-space-block-5xl);
+  padding-block-start: var(--basis-space-block-6xl);
+  padding-inline: var(--basis-space-inline-5xl);
+  position: relative;
+}
+
+.ma-estafettemodel__cell::after {
+  block-size: var(--basis-size-xs);
+  border-block-end-width: var(--basis-border-width-md);
+  border-block-start-width: var(--basis-border-width-none);
+  border-color: var(--basis-color-default-bg-document);
+  border-inline-end-width: var(--basis-border-width-md);
+  border-inline-start-width: var(--basis-border-width-none);
+  border-radius: var(--basis-border-radius-none);
+  border-style: solid;
+  content: "";
+  inline-size: var(--basis-size-xs);
+  inset-block-end: calc(-0.5 * var(--basis-size-sm) + var(--basis-border-width-md));
+  inset-inline-start: 50%;
+  position: absolute;
+  rotate: 45deg;
+  translate: -50%;
+  z-index: 2;
+}
+
+.ma-estafettemodel__label {
+  font-size: var(--basis-text-font-size-xl);
+  font-weight: var(--basis-text-font-weight-bold);
+}
+
+.ma-estafettemodel__cell--help-wanted {
+  --nl-link-hover-color: var(--ma-color-help-wanted-color-hover);
+  --utrecht-link-hover-color: var(--ma-color-help-wanted-color-hover);
+
+  background-color: var(--ma-color-help-wanted-bg-default);
+  border-color: var(--ma-color-help-wanted-border-default);
+  color: var(--ma-color-help-wanted-color-default);
+  grid-area: help-wanted;
+}
+
+.ma-estafettemodel__cell--help-wanted::after {
+  background-color: var(--ma-color-help-wanted-bg-default);
+  border-color: var(--ma-color-help-wanted-border-default);
+}
+
+.ma-estafettemodel__cell--community {
+  background-color: var(--ma-color-community-bg-default);
+  border-color: var(--ma-color-community-border-default);
+  color: var(--ma-color-community-color-default);
+  grid-area: community;
+}
+
+.ma-estafettemodel__cell--community::after {
+  background-color: var(--ma-color-community-bg-default);
+  border-color: var(--ma-color-community-border-default);
+}
+
+.ma-estafettemodel__cell--candidate {
+  background-color: var(--ma-color-candidate-bg-default);
+  border-color: var(--ma-color-candidate-border-default);
+  color: var(--ma-color-candidate-color-default);
+  grid-area: candidate;
+}
+
+.ma-estafettemodel__cell--candidate::after {
+  background-color: var(--ma-color-candidate-bg-default);
+  border-color: var(--ma-color-candidate-border-default);
+}
+
+.ma-estafettemodel__cell--hall-of-fame {
+  background-color: var(--ma-color-hall-of-fame-bg-default);
+  border-color: var(--ma-color-hall-of-fame-border-default);
+  color: var(--ma-color-hall-of-fame-color-default);
+  grid-area: hall-of-fame;
+}
+
+.ma-estafettemodel__cell--hall-of-fame::after {
+  display: none;
+}
+
+@container estafettemodel (inline-size <= 40rem) {
+  .ma-estafettemodel__cell:not(:first-of-type) {
+    border-block-start-width: var(--basis-border-width-none);
+  }
+}
+
+@container estafettemodel (inline-size > 40rem) {
+  /* Styles for horizontal article */
+  .ma-estafettemodel {
+    grid-template-areas: "help-wanted community" "hall-of-fame candidate";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .ma-estafettemodel__cell--help-wanted {
+    border-end-start-radius: var(--basis-border-radius-lg);
+    margin-block-end: var(--basis-space-block-xl);
+    padding-block-end: 0;
+  }
+
+  .ma-estafettemodel__cell--help-wanted::after {
+    border-block-end-width: var(--basis-border-width-none);
+    border-block-start-width: var(--basis-border-width-md);
+    border-inline-end-width: var(--basis-border-width-md);
+    border-start-end-radius: var(--basis-border-radius-sm);
+    inset-block-start: var(--basis-space-block-6xl);
+    inset-inline-start: calc(100% + (0.5 * var(--basis-border-width-md)));
+  }
+
+  .ma-estafettemodel__cell--community {
+    border-inline-start-width: var(--basis-border-width-none);
+    border-start-end-radius: var(--basis-border-radius-lg);
+  }
+
+  .ma-estafettemodel__cell--community::after {
+    border-block-end-width: var(--basis-border-width-md);
+    border-end-end-radius: var(--basis-border-radius-sm);
+    border-inline-end-width: var(--basis-border-width-md);
+    inset-block-end: calc(-1 * var(--basis-space-block-xl) + var(--basis-border-width-md));
+    inset-inline-start: 50%;
+  }
+
+  .ma-estafettemodel__cell--community::before {
+    background-color: var(--basis-color-default-bg-document);
+    block-size: var(--basis-size-2xs);
+    border-block-end-width: var(--basis-border-width-none);
+    border-block-start-width: var(--basis-border-width-md);
+    border-color: currentColor;
+    border-inline-end-width: var(--basis-border-width-md);
+    border-inline-start-width: var(--basis-border-width-none);
+    border-start-end-radius: var(--basis-border-radius-lg);
+    border-style: solid;
+    content: "";
+    inline-size: var(--basis-size-xs);
+    inset-block-end: calc(-1 * var(--basis-border-width-md));
+    inset-inline-start: calc(-1 * var(--basis-border-width-md));
+    position: absolute;
+    z-index: 2;
+  }
+
+  .ma-estafettemodel__cell--candidate {
+    border-block-start-width: var(--basis-border-width-none);
+    border-end-end-radius: var(--basis-border-radius-lg);
+    padding-block-start: calc(var(--basis-space-block-6xl) + var(--basis-space-block-xl));
+  }
+
+  .ma-estafettemodel__cell--candidate::after {
+    border-block-end-width: var(--basis-border-width-md);
+    border-end-start-radius: var(--basis-border-radius-sm);
+    border-inline-end-width: var(--basis-border-width-none);
+    border-inline-start-width: var(--basis-border-width-md);
+    inset-block-start: calc(var(--basis-space-block-6xl) + var(--basis-space-block-2xl));
+    inset-inline-start: calc(-0.5 * var(--basis-border-width-md));
+  }
+
+  .ma-estafettemodel__cell--candidate::before {
+    background-color: var(--basis-color-default-bg-document);
+    block-size: var(--basis-size-2xs);
+    border-block-end-width: var(--basis-border-width-md);
+    border-block-start-width: var(--basis-border-width-none);
+    border-color: currentColor;
+    border-end-end-radius: var(--basis-border-radius-lg);
+    border-inline-end-width: var(--basis-border-width-md);
+    border-inline-start-width: var(--basis-border-width-none);
+    border-style: solid;
+    content: "";
+    inline-size: var(--basis-size-xs);
+    inset-block-start: 0;
+    inset-inline-start: calc(-2 * var(--basis-border-width-md));
+    position: absolute;
+    z-index: 2;
+  }
+
+  .ma-estafettemodel__cell--hall-of-fame {
+    border-inline-end-width: var(--basis-border-width-none);
+    border-start-start-radius: var(--basis-border-radius-lg);
+    margin-block-start: var(--basis-space-block-xl);
+  }
+}
