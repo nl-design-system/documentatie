@@ -13,18 +13,19 @@ keywords:
 ---
 
 import {
+  ThemesSVG,
   GuidelineSVG,
   ComponentSVG,
   TemplateSVG,
   PatternSVG,
   UserResearchSVG,
-  ThemesSVG,
 } from "@site/src/components/Icons";
-import { Card } from "@utrecht/card-react/css";
 import { Grid } from "@amsterdam/design-system-react";
+import { Paragraph } from "@nl-design-system-candidate/paragraph-react";
 import "@amsterdam/design-system-css/dist/grid/grid.css";
 import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
 import { Markdown } from "@site/src/components/Markdown";
+import { Card } from "@site/src/components/Card/Card";
 
 {/* @license CC0-1.0 */}
 
@@ -38,58 +39,86 @@ Componenten en templates ontwikkeld volgens het [Estafettemodel](./estafettemode
 
 <Grid>
   <Grid.Cell span="all">
-    <Card
-      body="Componenten zijn herbruikbare elementen zoals knoppen, formuliervelden of menu."
-      heading="Componenten"
-      headingLevel={3}
-      href="/componenten/"
-      image={<ComponentSVG />}
-    ></Card>
+    <Card>
+      <ComponentSVG />
+      <Card.HeadingGroup>
+        <Card.Heading level={3}>
+          <Card.Link href="/componenten/">Componenten</Card.Link>
+        </Card.Heading>
+      </Card.HeadingGroup>
+      <Paragraph>Componenten zijn herbruikbare elementen zoals knoppen, formuliervelden of menu.</Paragraph>
+    </Card>
   </Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <PatternSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={3}>
+        <Card.Link href="/voorbeelden/patronen-en-templates/">Patronen</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Patronen laten zien hoe componenten samen op een toegankelijke en gebruiksvriendelijk manier gebruikt kunnen
+      worden.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <TemplateSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={3}>
+        <Card.Link href="/voorbeelden/patronen-en-templates/">Templates</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Voorbeeldpagina's die opgebouwd zijn met componenten en patronen die overgenomen kunnen worden voor een
+      consistente gebruikerservaring.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <GuidelineSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={3}>
+        <Card.Link href="/richtlijnen/">Richtlijnen</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Richtlijnen zorgen voor consistente, gebruiksvriendelijke en toegankelijke digitale ervaringen.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <UserResearchSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={3}>
+        <Card.Link href="https://gebruikersonderzoeken.nl">Gebruikersonderzoek</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>Validatie met eindgebruikers als onderbouwing van ontwikkelingen binnen het design system.</Paragraph>
+  </Card>
+</Grid.Cell>
+
   <Grid.Cell span="all">
-    <Card
-      body="Patronen laten zien hoe componenten samen op een toegankelijke en gebruiksvriendelijk manier gebruikt kunnen worden."
-      heading="Patronen"
-      headingLevel={3}
-      href="/voorbeelden/patronen-en-templates/"
-      image={<PatternSVG />}
-    ></Card>
-  </Grid.Cell>
-  <Grid.Cell span="all">
-    <Card
-      body="Voorbeeldpagina's die opgebouwd zijn met componenten en patronen die overgenomen kunnen worden voor een consistente gebruikerservaring."
-      heading="Templates"
-      headingLevel={3}
-      href="/voorbeelden/patronen-en-templates/"
-      image={<TemplateSVG />}
-    ></Card>
-  </Grid.Cell>
-  <Grid.Cell span="all">
-    <Card
-      body="Richtlijnen zorgen voor consistente, gebruiksvriendelijke en toegankelijke digitale ervaringen."
-      heading="Richtlijnen"
-      headingLevel={3}
-      href="/richtlijnen/"
-      image={<GuidelineSVG />}
-    ></Card>
-  </Grid.Cell>
-  <Grid.Cell span="all">
-    <Card
-      body="Validatie met eindgebruikers als onderbouwing van ontwikkelingen binnen het design system."
-      heading="Gebruikersonderzoek"
-      headingLevel={3}
-      href="https://gebruikersonderzoeken.nl"
-      image={<UserResearchSVG />}
-    ></Card>
-  </Grid.Cell>
-  <Grid.Cell span="all">
-    <Card
-      body="Verschillende huisstijlen worden vastgelegd als thema bij NL Design System. Zo kan dezelfde toegankelijke logica worden hergebruikt op verschillende plekken, met behoud van de eigen identiteit."
-      heading="Thema's"
-      headingLevel={3}
-      href="/handboek/huisstijl-vastleggen/overzicht/"
-      image={<ThemesSVG />}
-    ></Card>
+    <Card>
+      <ThemesSVG />
+      <Card.HeadingGroup>
+        <Card.Heading level={3}>
+          <Card.Link href="/handboek/huisstijl-vastleggen/overzicht/">Thema's</Card.Link>
+        </Card.Heading>
+      </Card.HeadingGroup>
+      <Paragraph>
+        Verschillende huisstijlen worden vastgelegd als thema bij NL Design System. Zo kan dezelfde toegankelijke logica
+        worden hergebruikt op verschillende plekken, met behoud van de eigen identiteit.
+      </Paragraph>
+    </Card>
   </Grid.Cell>
 </Grid>
 

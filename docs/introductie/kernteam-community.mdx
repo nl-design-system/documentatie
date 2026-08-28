@@ -15,7 +15,7 @@ keywords:
 import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
 import { Markdown } from "@site/src/components/Markdown";
 import { CoreTeamSVG, CommunitySVG } from "@site/src/components/Icons";
-import { Card } from "@utrecht/card-react/css";
+import { Card } from "@site/src/components/Card/Card";
 import { Grid } from "@amsterdam/design-system-react";
 import "@amsterdam/design-system-css/dist/grid/grid.css";
 import { Paragraph } from "@nl-design-system-candidate/paragraph-react";
@@ -28,18 +28,32 @@ NL Design System wordt gebouwd door een actieve community onder regie van een ke
 
 <Grid>
   <Grid.Cell span="all">
-    <Card
-      body={() => (
-        <Paragraph>
-          Faciliteert samenwerking in de community, voert regie op de kwaliteit van het design system en werkt toe naar
-          standaardisatie.
-        </Paragraph>
-      )}
-      heading="Kernteam"
-      headingLevel={2}
-      href="/contact/"
-      image={<CoreTeamSVG />}
-    ></Card>
+    <Card>
+      <CommunitySVG />
+      <Card.HeadingGroup>
+        <Card.Heading level={3}>
+          <Card.Link href="/community/overzicht/">Community</Card.Link>
+        </Card.Heading>
+      </Card.HeadingGroup>
+      <Paragraph>
+        Designers, developers en toegankelijkheidsspecialisten werken samen aan de beste richtlijnen, componenten,
+        patronen en voorbeelden om robuuste websites voor de digitale overheid te bouwen.
+      </Paragraph>
+    </Card>
+  </Grid.Cell>
+  <Grid.Cell span="all">
+    <Card>
+      <CoreTeamSVG />
+      <Card.HeadingGroup>
+        <Card.Heading level={3}>
+          <Card.Link href="/contact/">Kernteam</Card.Link>
+        </Card.Heading>
+      </Card.HeadingGroup>
+      <Paragraph>
+        Faciliteert samenwerking in de community, voert regie op de kwaliteit van het design system en werkt toe naar
+        standaardisatie.
+      </Paragraph>
+    </Card>
   </Grid.Cell>
 </Grid>
 
