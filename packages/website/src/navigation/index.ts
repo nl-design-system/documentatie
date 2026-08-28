@@ -133,7 +133,7 @@ type NavigationItemInput =
  *
  * @example
  * ```js
- * navigationItem("docs/handboek/estafettemodel.mdx");
+ * navigationItem("docs/introductie/estafettemodel.mdx");
  * // or
  * navigationItem({ label: "Home", href: "/" });
  * ```

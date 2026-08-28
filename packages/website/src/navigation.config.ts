@@ -5,11 +5,13 @@ export const navigation = navigationRoot(
     index: navigationItem({ href: '/', label: 'Home' }),
     items: [
       navigationGroup({
+        label: 'Introductie',
+        filePath: 'docs/introductie',
+      }),
+      navigationGroup({
         label: 'Handboek',
         index: navigationItem('docs/handboek/index.mdx'),
         items: [
-          navigationItem('docs/handboek/introductie.md'),
-          navigationItem('docs/handboek/estafettemodel.mdx'),
           navigationItem('docs/handboek/componenten-vinden.mdx'),
           navigationGroup({ filePath: 'docs/handboek/definition-of-done' }),
           navigationGroup({ filePath: 'docs/handboek/huisstijl-vastleggen' }),

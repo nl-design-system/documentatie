@@ -22,7 +22,7 @@ import {
   ManagerSVG,
   GuidelineSVG,
   ComponentSVG,
-  ExamplesSVG,
+  TemplateSVG,
   UserResearchSVG,
 } from '@site/src/components/Icons';
 import { HeartbeatEpisode } from '../components/HeartbeatEpisode';
@@ -161,7 +161,7 @@ export default function Home() {
                 heading="Voorbeelden"
                 headingLevel={3}
                 href="/voorbeelden/"
-                image={<ExamplesSVG />}
+                image={<TemplateSVG />}
                 className="utrecht-card--ma-info"
               ></Card>
               <Card
