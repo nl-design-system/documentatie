@@ -848,11 +848,6 @@ pre {
   padding-block: 0.5rem;
 }
 
-ams-page-header,
-ams-page-footer {
-  inline-size: 100%;
-}
-
 .nl-skip-link {
   z-index: 10000;
 }

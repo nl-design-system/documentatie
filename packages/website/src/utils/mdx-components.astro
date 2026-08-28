@@ -7,9 +7,13 @@ import { CriteriaList } from '@components/criteria-list/criteria-list';
 import { CriteriaListItem } from '@components/criteria-list/criteria-list-item';
 import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
 import { RelayModel, RelaySection } from '@components/docusaurus-mocks/RelayModel.astro';
+import * as Amsterdam from '@components/docusaurus-mocks/AmsterdamComponents.astro';
+import * as Card from '@components/docusaurus-mocks/Card.astro';
 
 export const MDXComponents = async ({ navigationItems } = {}) => {
   return {
+    ...Amsterdam,
+    Card,
     Checklist,
     ChecklistItem,
     ComponentOverview,
