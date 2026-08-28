@@ -30,9 +30,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.eafb80a2.css" />
-  <script src="/assets/js/runtime~main.2b00f6e9.js" defer="defer"></script>
-  <script src="/assets/js/main.91b08b09.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.fb18f1ad.css" />
+  <script src="/assets/js/runtime~main.d756928a.js" defer="defer"></script>
+  <script src="/assets/js/main.d04105c8.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -479,294 +479,393 @@
               <div>
                <div class="ma-filter-block">
                 <div class="utrecht-form-fieldset">
-                 <fieldset aria-describedby="filter-results" aria-labelledby=":R8a7dalbah:" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset">
-                  <h4 class="utrecht-heading-4" id=":R8a7dalbah:">Filter acceptatiecriteria voor:</h4>
-                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="developer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="developer" class="utrecht-form-label">developer</label></div>
-                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="contentmaker" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="contentmaker" class="utrecht-form-label">contentmaker</label></div>
-                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="designer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="designer" class="utrecht-form-label">designer</label></div>
-                 </fieldset>
+                 <fieldset aria-describedby="filter-results" aria-labelledby=":R8a7dalbah:" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset"><h4 class="nl-heading nl-heading--level-4" id=":R8a7dalbah:">Filter acceptatiecriteria voor:</h4></fieldset>
                 </div>
                 <div>
-                 <p role="status">
-                  13<!-- -->
+                 <p class="nl-paragraph" role="status">
+                  0<!-- -->
                   van de
-                  <!-- -->13<!-- -->
+                  <!-- -->0<!-- -->
                   items zijn nu zichtbaar.
                  </p>
                 </div>
                </div>
-               <ul class="ma-new-checklist" role="list">
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer ma-new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":Rd8a7dalbah:">Informatieve Icons hebben een beschrijvende alternatieve tekst.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Een informatief icon is een visueel symbool dat ontworpen is om snel en intuïtief specifieke informatie over te brengen, zonder dat daar tekst voor nodig is.</p>
-                    <p>Als een informatief icon géén onderdeel is van een interactief component, zoals een <code class="utrecht-code">button</code> of <code class="utrecht-code">link</code>, heeft het icon een alternatieve tekst nodig.</p>
-                    <p>Dit kan bijvoorbeeld door een <code class="utrecht-code">aria-label</code> toe te voegen aan een <code class="utrecht-code">svg</code> icon met <code class="utrecht-code">role=&quot;img&quot;</code>.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.1.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer ma-new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":Rl8a7dalbah:">Decoratieve Icons zijn verborgen voor hulpsoftware.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Een icon is decoratief als er een beschrijvende tekst boven, naast of onder staat. Een icon is ook decoratief als het onderdeel is van een interactief component met een eigen toegankelijke naam, zoals een <code class="utrecht-code">button</code> of een <code class="utrecht-code">link</code>.</p>
-                    <p>Het is daarom niet nodig dat gebruikers die hulpsoftware gebruiken, zoals een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>, weten dat er een icon aanwezig is. Verberg decoratieve icons, bijvoorbeeld met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> op de component.</p>
-                    <p>Let op: VoiceOver in combinatie met Safari (in de <a href="/baseline/2025-07/" class="utrecht-link utrecht-link--html-a">NL Design System Baseline van juli 2025</a>) negeert Unicode-emoji&#x27;s met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> wél in voorleesmodus, maar niet wanneer de bezoeker alleen met de pijltoetsen (virtuele cursor) navigeert. Dit is een <a href="https://bugs.webkit.org/show_bug.cgi?id=161740" class="utrecht-link utrecht-link--html-a">bug in WebKit</a>. Gebruik daarom liever SVG icons.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Decoratieve afbeeldingen</a></li>
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.1.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
+               <div class="ma-utrecht-accordion utrecht-accordion ma-new-checklist" role="list">
+                <div role="listitem" data-tags="developer,contentmaker" class="ma-new-checklist__item ma-new-checklist__item--developer ma-new-checklist__item--contentmaker">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":Rd8a7dalbah:">Informatieve Icons hebben een beschrijvende alternatieve tekst.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Een informatief icon is een visueel symbool dat ontworpen is om snel en intuïtief specifieke informatie over te brengen, zonder dat daar tekst voor nodig is.</p>
+                     <p>Als een informatief icon géén onderdeel is van een interactief component, zoals een <code class="utrecht-code">button</code> of <code class="utrecht-code">link</code>, heeft het icon een alternatieve tekst nodig.</p>
+                     <p>Dit kan bijvoorbeeld door een <code class="utrecht-code">aria-label</code> toe te voegen aan een <code class="utrecht-code">svg</code> icon met <code class="utrecht-code">role=&quot;img&quot;</code>.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.1.1</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--designer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":Rt8a7dalbah:">Als een Icon een status aangeeft, is die informatie niet alleen afhankelijk van kleur.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.</p>
-                    <p>Bijvoorbeeld: geef een foutmelding niet alleen aan met een rood randje, maar ook in tekst en eventueel met een icoontje dat een foutmelding markeert.</p>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">designer</span><a href="/wcag/1.4.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.1 Gebruik van kleur" style="line-height: 1"><span class="nl-data-badge">WCAG 1.4.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R158a7dalbah:">Gebruik geen Icons om teksten te vormen.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Een icon kan uit een afbeelding van een letter bestaan (bijvoorbeeld B voor dikgedrukte tekst). Gebruik geen icons van letters om woorden of teksten te maken.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/formulieren/buttons/afbeelding-als-button/" class="utrecht-link utrecht-link--html-a">Afbeeldingen als buttons</a></li>
-                     <li><a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/" class="utrecht-link utrecht-link--html-a">Tekst in een afbeelding</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/1.4.5/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.5 Afbeeldingen van tekst" style="line-height: 1"><span class="nl-data-badge">WCAG 1.4.5</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
+                </div>
+                <div role="listitem" data-tags="developer,contentmaker" class="ma-new-checklist__item ma-new-checklist__item--developer ma-new-checklist__item--contentmaker">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":Rl8a7dalbah:">Decoratieve Icons zijn verborgen voor hulpsoftware.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Een icon is decoratief als er een beschrijvende tekst boven, naast of onder staat. Een icon is ook decoratief als het onderdeel is van een interactief component met een eigen toegankelijke naam, zoals een <code class="utrecht-code">button</code> of een <code class="utrecht-code">link</code>.</p>
+                     <p>Het is daarom niet nodig dat gebruikers die hulpsoftware gebruiken, zoals een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>, weten dat er een icon aanwezig is. Verberg decoratieve icons, bijvoorbeeld met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> op de component.</p>
+                     <p>Let op: VoiceOver in combinatie met Safari (in de <a href="/baseline/2025-07/" class="utrecht-link utrecht-link--html-a">NL Design System Baseline van juli 2025</a>) negeert Unicode-emoji&#x27;s met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> wél in voorleesmodus, maar niet wanneer de bezoeker alleen met de pijltoetsen (virtuele cursor) navigeert. Dit is een <a href="https://bugs.webkit.org/show_bug.cgi?id=161740" class="utrecht-link utrecht-link--html-a">bug in WebKit</a>. Gebruik daarom liever SVG icons.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Decoratieve afbeeldingen</a></li>
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.1.1</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R1d8a7dalbah:">Bij zoom overlapt een Icon niet met andere content.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.</p>
-                    <p>Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).</p>
-                    <p>Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video&#x27;s en landkaarten.</p>
-                    <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">overflow-wrap: break-word; hyphens: auto;</code> eventueel in combinatie met <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op <code class="utrecht-code">:root</code> niveau.</p>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">designer</span><span class="nl-data-badge">developer</span><a href="/wcag/1.4.10/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.10 Reflow" style="line-height: 1"><span class="nl-data-badge">WCAG 1.4.10</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R1l8a7dalbah:">Een informatief Icon heeft een contrastratio van minimaal 3:1 met de achtergrond.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Zorg voor voldoende kleurcontrast tussen de kleur van componenten die visueel betekenis hebben en hun directe omgeving.</p>
-                    <p>Bijvoorbeeld:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li>Een icoon dat betekenis heeft, zoals de 3 streepjes voor een menu of een pijltje naar rechts voor de volgende pagina.</li>
-                     <li>Een icoon dat de status aangeeft van een bericht zoals een oranje driehoek voor een waarschuwing en een groen vinkje voor succes.</li>
-                    </ul>
-                    <p>Het gemeten kleurcontrast tussen het element en de achtergrond moet minstens 3:1 zijn. Dit is te controleren met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a>.</p>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/1.4.11/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.11 Contrast van niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.4.11</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
+                </div>
+                <div role="listitem" data-tags="designer" class="ma-new-checklist__item ma-new-checklist__item--designer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":Rt8a7dalbah:">Als een Icon een status aangeeft, is die informatie niet alleen afhankelijk van kleur.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Zorg ervoor dat kleur niet het enige visuele middel is om informatie over te brengen, een actie aan te geven, tot een reactie op te roepen of een visueel element te onderscheiden. Niet iedereen kan kleuren zien of verandering in kleur of kleurcontrast opmerken.</p>
+                     <p>Bijvoorbeeld: geef een foutmelding niet alleen aan met een rood randje, maar ook in tekst en eventueel met een icoontje dat een foutmelding markeert.</p>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">designer</span><a href="/wcag/1.4.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.1 Gebruik van kleur" style="line-height: 1"><span class="nl-data-badge">WCAG 1.4.1</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R1t8a7dalbah:">De Icon is niet bereikbaar en bedienbaar met het toetsenbord.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Componenten en elementen die niet interactief zijn, zijn niet bereikbaar en bedienbaar met het toetsenbord.</p>
-                    <p>Een uitzondering geldt voor situaties waarbij een interactief element zoals een Skip Link of een Link in een Side Navigation, de bezoeker direct naar de component of het element stuurt.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Toetsenbordtoegankelijkheid</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a href="/wcag/2.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.1.1 Toetsenbord" style="line-height: 1"><span class="nl-data-badge">WCAG 2.1.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R258a7dalbah:">De Icon komt niet voor in de normale focusvolgorde van de pagina.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Componenten en elementen die niet interactief zijn, komen niet voor in de normale toetsenbord-focusvolgorde van de pagina.</p>
-                    <p>Een uitzondering geldt voor situaties waarbij een interactief component, zoals een Skip Link of een Link in een Side Navigation, de bezoeker direct naar de component of het element stuurt.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Toetsenbordtoegankelijkheid</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.4.3 Focus volgorde" style="line-height: 1"><span class="nl-data-badge">WCAG 2.4.3</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
+                </div>
+                <div role="listitem" data-tags="designer,contentmaker" class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--contentmaker">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R158a7dalbah:">Gebruik geen Icons om teksten te vormen.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Een icon kan uit een afbeelding van een letter bestaan (bijvoorbeeld B voor dikgedrukte tekst). Gebruik geen icons van letters om woorden of teksten te maken.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/formulieren/buttons/afbeelding-als-button/" class="utrecht-link utrecht-link--html-a">Afbeeldingen als buttons</a></li>
+                      <li><a href="/richtlijnen/content/afbeeldingen/tekst-in-afbeelding/" class="utrecht-link utrecht-link--html-a">Tekst in een afbeelding</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/1.4.5/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.5 Afbeeldingen van tekst" style="line-height: 1"><span class="nl-data-badge">WCAG 1.4.5</span></a
+                     ><span class="nl-data-badge">Niveau AA</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer ma-new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R2d8a7dalbah:">Als een Icon onderdeel is van een link, beschrijft de alternatieve tekst het doel van de Icon.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Icons zijn regelmatig onderdeel van een link, mét of zonder begeleidende linktekst.</p>
-                    <p>Zorg er voor dat het duidelijk is waar de link naar verwijst, in plaats van dat het uiterlijk van het icon beschreven wordt. Dit is belangrijk voor gebruikers die gebruik maken van hulpsoftware, zoals een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>.</p>
-                    <p>Bijvoorbeeld: Een link met een icon dat aangeeft dat een link naar een externe website verwijst heeft als beschrijving in de accessibility tree &#x27;Gemeente Den Haag (externe website)&#x27; en niet &#x27;Gemeente Den Haag klein vierkantje met een pijl die naar rechtsboven wijst&#x27;.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/content/tekstopmaak/linkteksten/" class="utrecht-link utrecht-link--html-a">Toegankelijke linkteksten</a></li>
-                     <li><a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Functionele afbeeldingen</a></li>
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/2.4.4/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.4.4 Linkdoel (in context)" style="line-height: 1"><span class="nl-data-badge">WCAG 2.4.4</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R2l8a7dalbah:">Als een Icon wordt gebruikt als visueel label, is het duidelijk wat de betekenis is.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Als een icon een alternatief is voor een tekstuele kop of label, moet het voor de doelgroep duidelijk zijn wat het icon vertegenwoordigt.</p>
-                    <p>Bijvoorbeeld:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li>Een zoekfunctie gebruikt een vergrootglas icon.</li>
-                     <li>De link naar de homepage in een broodkruimelpad is een huis icon.</li>
-                     <li>Een knop om een dialoogvenster te sluiten gebruikt een kruis (x) icon.</li>
-                    </ul>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                     <li><a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Functionele afbeeldingen</a></li>
-                     <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/2.4.6/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.4.6 Koppen en labels" style="line-height: 1"><span class="nl-data-badge">WCAG 2.4.6</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
+                </div>
+                <div role="listitem" data-tags="designer,developer" class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R1d8a7dalbah:">Bij zoom overlapt een Icon niet met andere content.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>De gebruiker moet de webpagina 400% kunnen vergroten in de browser. Het gaat hierbij om alle elementen van een webpagina.</p>
+                     <p>Er mag geen inhoud buiten beeld vallen, onbereikbaar of verborgen zijn of gedeeltelijk verborgen worden door andere inhoud wanneer de gebruiker 400% inzoomt of op een buitengewoon klein scherm werkt (320 bij 256 pixels).</p>
+                     <p>Zorg ervoor dat er geen horizontale scrollbar nodig is. Uitzonderingen zijn voor onderdelen die in essentie twee-dimensionaal zijn, zoals tabellen, grafieken, video&#x27;s en landkaarten.</p>
+                     <p>Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld <code class="utrecht-code">overflow-wrap: break-word; hyphens: auto;</code> eventueel in combinatie met <code class="utrecht-code">text-wrap-style: balance</code>. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op <code class="utrecht-code">:root</code> niveau.</p>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">designer</span><span class="nl-data-badge">developer</span><a href="/wcag/1.4.10/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.10 Reflow" style="line-height: 1"><span class="nl-data-badge">WCAG 1.4.10</span></a
+                     ><span class="nl-data-badge">Niveau AA</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R2t8a7dalbah:">Als de alternatieve tekst van een Icon in een andere taal is dan de hoofdtaal van de pagina, is dat duidelijk aangegeven.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
-                    <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/content/tekstopmaak/taal/" class="utrecht-link utrecht-link--html-a">De juiste taal instellen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a href="/wcag/3.1.2/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 3.1.2 Taal van onderdelen" style="line-height: 1"><span class="nl-data-badge">WCAG 3.1.2</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer ma-new-checklist__item--designer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R358a7dalbah:">Een component met dezelfde functionaliteit die op meerdere pagina&#x27;s voorkomt, heeft op alle pagina&#x27;s dezelfde Icon.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Componenten of functionaliteiten die op meerdere pagina&#x27;s voorkomen en die gebruik maken van icons, maken overal gebruik van dezelfde icons. Wees ook zoveel mogelijk consistent in het gebruik van icons. Als je in een component op de ene pagina gebruik maakt van een icon, doe dat dan in datzelfde component op een andere pagina ook.</p>
-                    <p>Dit is belangrijk om snel te navigeren en snel belangrijke functionaliteiten terug te kunnen vinden, zeker voor gebruikers met bijvoorbeeld een cognitieve beperking.</p>
-                    <p>Denk aan:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li>Zoekfuncties die consistent gebruik maken van een vergrootglas icon.</li>
-                     <li>Waarschuwingen die consistent gebruik maken van een uitroepteken icon.</li>
-                     <li>Informatie-opties, zoals bij mogelijk moeilijke termen, die consistent gebruik maken van een vraagteken icon.</li>
-                     <li>De optie om vooruit of achteruit te gaan in een proces, die consistent gebruik maakt van pijl-icons.</li>
-                     <li>De optie om een dialoogvenster te sluiten, maakt overal gebruik van een kruisje.</li>
-                     <li>Bij een goed ingevuld formulierveld staat overal een vinkje.</li>
-                    </ul>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><span class="nl-data-badge">designer</span><a href="/wcag/3.2.4/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 3.2.4 Consistente identificatie" style="line-height: 1"><span class="nl-data-badge">WCAG 3.2.4</span></a
-                    ><span class="nl-data-badge">Niveau AA</span>
+                </div>
+                <div role="listitem" data-tags="designer,contentmaker" class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--contentmaker">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R1l8a7dalbah:">Een informatief Icon heeft een contrastratio van minimaal 3:1 met de achtergrond.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Zorg voor voldoende kleurcontrast tussen de kleur van componenten die visueel betekenis hebben en hun directe omgeving.</p>
+                     <p>Bijvoorbeeld:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li>Een icoon dat betekenis heeft, zoals de 3 streepjes voor een menu of een pijltje naar rechts voor de volgende pagina.</li>
+                      <li>Een icoon dat de status aangeeft van een bericht zoals een oranje driehoek voor een waarschuwing en een groen vinkje voor succes.</li>
+                     </ul>
+                     <p>Het gemeten kleurcontrast tussen het element en de achtergrond moet minstens 3:1 zijn. Dit is te controleren met de <a href="/contrast/" class="utrecht-link utrecht-link--html-a">Contrast checker</a>.</p>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/1.4.11/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.4.11 Contrast van niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.4.11</span></a
+                     ><span class="nl-data-badge">Niveau AA</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--contentmaker">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R3d8a7dalbah:">Als een Icon wordt gebruikt als visueel label van een invoermogelijkheid, is het duidelijk welke invoer gevraagd wordt. </span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Als een icon een alternatief is voor een tekstueel label bij een invoerveld, moet het duidelijk zijn wat de gebruiker moet doen of moet invullen.</p>
-                    <p>Bijvoorbeeld:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li>Een icon van een slot in een inlogformulier vraagt om een wachtwoord.</li>
-                     <li>Een icon van een vergrootglas in een zoekfunctie vraagt om een zoekterm.</li>
-                    </ul>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                     <li><a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Functionele afbeeldingen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/3.3.2/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 3.3.2 Labels of instructies" style="line-height: 1"><span class="nl-data-badge">WCAG 3.3.2</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
+                </div>
+                <div role="listitem" data-tags="developer" class="ma-new-checklist__item ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R1t8a7dalbah:">De Icon is niet bereikbaar en bedienbaar met het toetsenbord.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Componenten en elementen die niet interactief zijn, zijn niet bereikbaar en bedienbaar met het toetsenbord.</p>
+                     <p>Een uitzondering geldt voor situaties waarbij een interactief element zoals een Skip Link of een Link in een Side Navigation, de bezoeker direct naar de component of het element stuurt.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Toetsenbordtoegankelijkheid</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><a href="/wcag/2.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.1.1 Toetsenbord" style="line-height: 1"><span class="nl-data-badge">WCAG 2.1.1</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-               </ul>
+                </div>
+                <div role="listitem" data-tags="developer" class="ma-new-checklist__item ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R258a7dalbah:">De Icon komt niet voor in de normale focusvolgorde van de pagina.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Componenten en elementen die niet interactief zijn, komen niet voor in de normale toetsenbord-focusvolgorde van de pagina.</p>
+                     <p>Een uitzondering geldt voor situaties waarbij een interactief component, zoals een Skip Link of een Link in een Side Navigation, de bezoeker direct naar de component of het element stuurt.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Toetsenbordtoegankelijkheid</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.4.3 Focus volgorde" style="line-height: 1"><span class="nl-data-badge">WCAG 2.4.3</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
+                   </div>
+                  </div>
+                 </details>
+                </div>
+                <div role="listitem" data-tags="developer,contentmaker" class="ma-new-checklist__item ma-new-checklist__item--developer ma-new-checklist__item--contentmaker">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R2d8a7dalbah:">Als een Icon onderdeel is van een link, beschrijft de alternatieve tekst het doel van de Icon.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Icons zijn regelmatig onderdeel van een link, mét of zonder begeleidende linktekst.</p>
+                     <p>Zorg er voor dat het duidelijk is waar de link naar verwijst, in plaats van dat het uiterlijk van het icon beschreven wordt. Dit is belangrijk voor gebruikers die gebruik maken van hulpsoftware, zoals een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>.</p>
+                     <p>Bijvoorbeeld: Een link met een icon dat aangeeft dat een link naar een externe website verwijst heeft als beschrijving in de accessibility tree &#x27;Gemeente Den Haag (externe website)&#x27; en niet &#x27;Gemeente Den Haag klein vierkantje met een pijl die naar rechtsboven wijst&#x27;.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/content/tekstopmaak/linkteksten/" class="utrecht-link utrecht-link--html-a">Toegankelijke linkteksten</a></li>
+                      <li><a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Functionele afbeeldingen</a></li>
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/2.4.4/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.4.4 Linkdoel (in context)" style="line-height: 1"><span class="nl-data-badge">WCAG 2.4.4</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
+                   </div>
+                  </div>
+                 </details>
+                </div>
+                <div role="listitem" data-tags="designer,contentmaker" class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--contentmaker">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R2l8a7dalbah:">Als een Icon wordt gebruikt als visueel label, is het duidelijk wat de betekenis is.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Als een icon een alternatief is voor een tekstuele kop of label, moet het voor de doelgroep duidelijk zijn wat het icon vertegenwoordigt.</p>
+                     <p>Bijvoorbeeld:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li>Een zoekfunctie gebruikt een vergrootglas icon.</li>
+                      <li>De link naar de homepage in een broodkruimelpad is een huis icon.</li>
+                      <li>Een knop om een dialoogvenster te sluiten gebruikt een kruis (x) icon.</li>
+                     </ul>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                      <li><a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Functionele afbeeldingen</a></li>
+                      <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/2.4.6/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.4.6 Koppen en labels" style="line-height: 1"><span class="nl-data-badge">WCAG 2.4.6</span></a
+                     ><span class="nl-data-badge">Niveau AA</span>
+                    </div>
+                   </div>
+                  </div>
+                 </details>
+                </div>
+                <div role="listitem" data-tags="developer" class="ma-new-checklist__item ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R2t8a7dalbah:">Als de alternatieve tekst van een Icon in een andere taal is dan de hoofdtaal van de pagina, is dat duidelijk aangegeven.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Als een tekst in een andere taal is dan de taal van de pagina, dan heeft het element een <code class="utrecht-code">lang</code>-attribuut met de juiste taalcode.</p>
+                     <p>Denk bijvoorbeeld aan buttons voor het veranderen van de taal van een pagina, bij meertalige websites. Of aan een citaat in het Engels, op een Nederlandstalige pagina.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/content/tekstopmaak/taal/" class="utrecht-link utrecht-link--html-a">De juiste taal instellen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><a href="/wcag/3.1.2/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 3.1.2 Taal van onderdelen" style="line-height: 1"><span class="nl-data-badge">WCAG 3.1.2</span></a
+                     ><span class="nl-data-badge">Niveau AA</span>
+                    </div>
+                   </div>
+                  </div>
+                 </details>
+                </div>
+                <div role="listitem" data-tags="developer,designer" class="ma-new-checklist__item ma-new-checklist__item--developer ma-new-checklist__item--designer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R358a7dalbah:">Een component met dezelfde functionaliteit die op meerdere pagina&#x27;s voorkomt, heeft op alle pagina&#x27;s dezelfde Icon.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Componenten of functionaliteiten die op meerdere pagina&#x27;s voorkomen en die gebruik maken van icons, maken overal gebruik van dezelfde icons. Wees ook zoveel mogelijk consistent in het gebruik van icons. Als je in een component op de ene pagina gebruik maakt van een icon, doe dat dan in datzelfde component op een andere pagina ook.</p>
+                     <p>Dit is belangrijk om snel te navigeren en snel belangrijke functionaliteiten terug te kunnen vinden, zeker voor gebruikers met bijvoorbeeld een cognitieve beperking.</p>
+                     <p>Denk aan:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li>Zoekfuncties die consistent gebruik maken van een vergrootglas icon.</li>
+                      <li>Waarschuwingen die consistent gebruik maken van een uitroepteken icon.</li>
+                      <li>Informatie-opties, zoals bij mogelijk moeilijke termen, die consistent gebruik maken van een vraagteken icon.</li>
+                      <li>De optie om vooruit of achteruit te gaan in een proces, die consistent gebruik maakt van pijl-icons.</li>
+                      <li>De optie om een dialoogvenster te sluiten, maakt overal gebruik van een kruisje.</li>
+                      <li>Bij een goed ingevuld formulierveld staat overal een vinkje.</li>
+                     </ul>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><span class="nl-data-badge">designer</span><a href="/wcag/3.2.4/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 3.2.4 Consistente identificatie" style="line-height: 1"><span class="nl-data-badge">WCAG 3.2.4</span></a
+                     ><span class="nl-data-badge">Niveau AA</span>
+                    </div>
+                   </div>
+                  </div>
+                 </details>
+                </div>
+                <div role="listitem" data-tags="designer,contentmaker" class="ma-new-checklist__item ma-new-checklist__item--designer ma-new-checklist__item--contentmaker">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R3d8a7dalbah:">Als een Icon wordt gebruikt als visueel label van een invoermogelijkheid, is het duidelijk welke invoer gevraagd wordt. </span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Als een icon een alternatief is voor een tekstueel label bij een invoerveld, moet het duidelijk zijn wat de gebruiker moet doen of moet invullen.</p>
+                     <p>Bijvoorbeeld:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li>Een icon van een slot in een inlogformulier vraagt om een wachtwoord.</li>
+                      <li>Een icon van een vergrootglas in een zoekfunctie vraagt om een zoekterm.</li>
+                     </ul>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                      <li><a href="/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Functionele afbeeldingen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">designer</span><span class="nl-data-badge">contentmaker</span><a href="/wcag/3.3.2/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 3.3.2 Labels of instructies" style="line-height: 1"><span class="nl-data-badge">WCAG 3.3.2</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
+                   </div>
+                  </div>
+                 </details>
+                </div>
+               </div>
               </div>
               <h4 id="icons-uit-icon-fonts" class="utrecht-heading-4">Icons uit icon fonts</h4>
               <p>Gebruik je een icon font in plaats van SVG afbeeldingen? Houdt er dan rekening mee dat niet iedereen de iconen kan zien. Sommige gebruikers kiezen ervoor om altijd een eigen font te gebruiken, of schakelen web fonts uit om data te besparen. Wij raden daarom aan om SVG te gebruiken in plaats van een icon font. Als je wel een icon font gebruikt, probeer dan Unicode-karakters te gebruiken. Deze icons werken ook als de gebruiker een systeem font gebruikt.</p>
@@ -775,117 +874,154 @@
               <div>
                <div class="ma-filter-block">
                 <div class="utrecht-form-fieldset">
-                 <fieldset aria-describedby="filter-results" aria-labelledby=":Rda7dalbah:" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset">
-                  <h4 class="utrecht-heading-4" id=":Rda7dalbah:">Filter acceptatiecriteria voor:</h4>
-                  <div class="utrecht-form-field utrecht-form-field--checkbox"><input id="developer" type="checkbox" class="utrecht-checkbox utrecht-checkbox--html-input utrecht-checkbox--custom" checked="" /><label for="developer" class="utrecht-form-label">developer</label></div>
-                 </fieldset>
+                 <fieldset aria-describedby="filter-results" aria-labelledby=":Rda7dalbah:" class="utrecht-form-fieldset__fieldset utrecht-form-fieldset--html-fieldset"><h4 class="nl-heading nl-heading--level-4" id=":Rda7dalbah:">Filter acceptatiecriteria voor:</h4></fieldset>
                 </div>
                 <div>
-                 <p role="status">
-                  5<!-- -->
+                 <p class="nl-paragraph" role="status">
+                  0<!-- -->
                   van de
-                  <!-- -->5<!-- -->
+                  <!-- -->0<!-- -->
                   items zijn nu zichtbaar.
                  </p>
                 </div>
                </div>
-               <ul class="ma-new-checklist" role="list">
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":Rdda7dalbah:">Informatieve Icons kunnen een alternatieve tekst hebben.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Informatieve icons kunnen worden voorzien van een beschrijvende alternatieve tekst, doordat <code class="utrecht-code">aria-label</code> of <code class="utrecht-code">aria-labelledby</code> in de component gebruikt kan worden.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.1.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":Rlda7dalbah:">Decoratieve Icons kunnen verborgen worden voor hulpsoftware.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Decoratieve icons kunnen verborgen worden voor hulpsoftware, doordat het <code class="utrecht-code">aria-hidden</code> attribuut gebruikt kan worden in de component.</p>
-                    <p>Let op: VoiceOver in combinatie met Safari (in de <a href="/baseline/2025-07/" class="utrecht-link utrecht-link--html-a">NL Design System Baseline van juli 2025</a>) negeert Unicode-emoji&#x27;s met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> wél in voorleesmodus, maar niet wanneer de bezoeker alleen met de pijltoetsen (virtuele cursor) navigeert. Dit is een <a href="https://bugs.webkit.org/show_bug.cgi?id=161740" class="utrecht-link utrecht-link--html-a">bug in WebKit</a>. Gebruik daarom liever SVG icons.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Decoratieve afbeeldingen</a></li>
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.1.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
+               <div class="ma-utrecht-accordion utrecht-accordion ma-new-checklist" role="list">
+                <div role="listitem" data-tags="developer" class="ma-new-checklist__item ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":Rdda7dalbah:">Informatieve Icons kunnen een alternatieve tekst hebben.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Informatieve icons kunnen worden voorzien van een beschrijvende alternatieve tekst, doordat <code class="utrecht-code">aria-label</code> of <code class="utrecht-code">aria-labelledby</code> in de component gebruikt kan worden.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.1.1</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":Rtda7dalbah:">Informatieve Icons hebben de rol van afbeelding in de accessibility tree.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Informatieve icons moeten herkenbaar zijn als afbeelding voor gebruikers die hulpsoftware, zoals een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>, gebruiken.</p>
-                    <p>Bijvoorbeeld: een <code class="utrecht-code">svg</code> icon heeft <code class="utrecht-code">role=&quot;img&quot;</code> als attribuut.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
-                     <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a href="/wcag/1.3.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.3.1 Info en relaties" style="line-height: 1"><span class="nl-data-badge">WCAG 1.3.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
-                   </div>
-                  </div>
-                 </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R15da7dalbah:">De Icon is standaard niet bereikbaar en bedienbaar met het toetsenbord.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Niet-interactieve componenten en elementen zijn standaard niet bereikbaar en bedienbaar met het toetsenbord.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Toetsenbordtoegankelijkheid</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a href="/wcag/2.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.1.1 Toetsenbord" style="line-height: 1"><span class="nl-data-badge">WCAG 2.1.1</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
+                </div>
+                <div role="listitem" data-tags="developer" class="ma-new-checklist__item ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":Rlda7dalbah:">Decoratieve Icons kunnen verborgen worden voor hulpsoftware.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Decoratieve icons kunnen verborgen worden voor hulpsoftware, doordat het <code class="utrecht-code">aria-hidden</code> attribuut gebruikt kan worden in de component.</p>
+                     <p>Let op: VoiceOver in combinatie met Safari (in de <a href="/baseline/2025-07/" class="utrecht-link utrecht-link--html-a">NL Design System Baseline van juli 2025</a>) negeert Unicode-emoji&#x27;s met <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> wél in voorleesmodus, maar niet wanneer de bezoeker alleen met de pijltoetsen (virtuele cursor) navigeert. Dit is een <a href="https://bugs.webkit.org/show_bug.cgi?id=161740" class="utrecht-link utrecht-link--html-a">bug in WebKit</a>. Gebruik daarom liever SVG icons.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/content/afbeeldingen/decoratieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Decoratieve afbeeldingen</a></li>
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><a href="/wcag/1.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.1.1 Niet-tekstuele content" style="line-height: 1"><span class="nl-data-badge">WCAG 1.1.1</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-                <li class="ma-new-checklist__item ma-new-checklist__item--developer">
-                 <details>
-                  <summary><span class="ma-new-checklist__title" id=":R1dda7dalbah:">De Icon komt standaard niet voor in de focusvolgorde van de pagina.</span></summary>
-                  <div class="ma-new-checklist__content">
-                   <div>
-                    <p>Niet-interactieve componenten en elementen komen standaard niet voor in de toetsenbord-focusvolgorde van de pagina.</p>
-                    <p>NL Design System richtlijnen:</p>
-                    <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-                     <li><a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Toetsenbordtoegankelijkheid</a></li>
-                    </ul>
-                   </div>
-                   <div class="utrecht-badge-list ma-new-checklist__badge-list">
-                    <span class="nl-data-badge">developer</span><a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.4.3 Focus volgorde" style="line-height: 1"><span class="nl-data-badge">WCAG 2.4.3</span></a
-                    ><span class="nl-data-badge">Niveau A</span>
+                </div>
+                <div role="listitem" data-tags="developer" class="ma-new-checklist__item ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":Rtda7dalbah:">Informatieve Icons hebben de rol van afbeelding in de accessibility tree.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Informatieve icons moeten herkenbaar zijn als afbeelding voor gebruikers die hulpsoftware, zoals een <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreader</a>, gebruiken.</p>
+                     <p>Bijvoorbeeld: een <code class="utrecht-code">svg</code> icon heeft <code class="utrecht-code">role=&quot;img&quot;</code> als attribuut.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/content/afbeeldingen/informatieve-afbeeldingen/" class="utrecht-link utrecht-link--html-a">Informatieve afbeeldingen</a></li>
+                      <li><a href="/richtlijnen/stijl/iconen/" class="utrecht-link utrecht-link--html-a">Richtlijnen voor iconen</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><a href="/wcag/1.3.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 1.3.1 Info en relaties" style="line-height: 1"><span class="nl-data-badge">WCAG 1.3.1</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
                    </div>
                   </div>
                  </details>
-                </li>
-               </ul>
+                </div>
+                <div role="listitem" data-tags="developer" class="ma-new-checklist__item ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R15da7dalbah:">De Icon is standaard niet bereikbaar en bedienbaar met het toetsenbord.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Niet-interactieve componenten en elementen zijn standaard niet bereikbaar en bedienbaar met het toetsenbord.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Toetsenbordtoegankelijkheid</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><a href="/wcag/2.1.1/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.1.1 Toetsenbord" style="line-height: 1"><span class="nl-data-badge">WCAG 2.1.1</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
+                   </div>
+                  </div>
+                 </details>
+                </div>
+                <div role="listitem" data-tags="developer" class="ma-new-checklist__item ma-new-checklist__item--developer">
+                 <details class="utrecht-accordion__section">
+                  <summary class="utrecht-accordion__header">
+                   <span class="nl-button nl-button--subtle"
+                    ><span class="nl-button__icon-start"
+                     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"><path d="M6 9l6 6l6 -6"></path></svg></span
+                    ><span class="nl-button__label"><span class="ma-new-checklist__title" id=":R1dda7dalbah:">De Icon komt standaard niet voor in de focusvolgorde van de pagina.</span></span></span
+                   >
+                  </summary>
+                  <div class="utrecht-accordion__panel">
+                   <div class="ma-new-checklist__content ma-flow">
+                    <div class="ma-flow">
+                     <p>Niet-interactieve componenten en elementen komen standaard niet voor in de toetsenbord-focusvolgorde van de pagina.</p>
+                     <p>NL Design System richtlijnen:</p>
+                     <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
+                      <li><a href="/richtlijnen/formulieren/toetsenbord/" class="utrecht-link utrecht-link--html-a">Toetsenbordtoegankelijkheid</a></li>
+                     </ul>
+                    </div>
+                    <div class="utrecht-badge-list ma-new-checklist__badge-list">
+                     <span class="nl-data-badge">developer</span><a href="/wcag/2.4.3/" class="utrecht-link utrecht-link--html-a" aria-label="WCAG Succescriterium 2.4.3 Focus volgorde" style="line-height: 1"><span class="nl-data-badge">WCAG 2.4.3</span></a
+                     ><span class="nl-data-badge">Niveau A</span>
+                    </div>
+                   </div>
+                  </div>
+                 </details>
+                </div>
+               </div>
               </div>
               <h2 id="richtlijnen" class="utrecht-heading-2">Richtlijnen</h2>
               <header></header>
