@@ -199,6 +199,20 @@ html .utrecht-link--html-a:any-link:focus {
   color: var(--basis-focus-color);
 }
 
+.denhaag-side-navigation__expand-button {
+  svg {
+    transition: transform 250ms ease-in-out;
+  }
+}
+
+.denhaag-side-navigation__expand-button--expanded {
+  transform: none !important;
+
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
 kbd {
   background-color: var(--basis-color-default-bg-default);
   border: 1px solid var(--basis-color-default-border-default);
