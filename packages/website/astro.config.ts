@@ -12,7 +12,7 @@ import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
 import { remarkUnwrapDiv } from './markdown-plugins/remark-unwrap-div';
 import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
 import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inline-directives';
-import { videoplayerClientLoadPlugin } from './markdown-plugins/remark-videoplayer-client-load';
+import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -132,7 +132,7 @@ export default defineConfig({
         remarkDirective,
         remarkUndoInlineDirectives,
         remarkAdmonitions,
-        videoplayerClientLoadPlugin,
+        clientLoadPlugin(['Videoplayer', 'VideoPlayer', 'Checklist']),
         removeH1FromMarkdown(),
       ],
       rehypePlugins: [
