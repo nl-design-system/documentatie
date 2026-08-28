@@ -1,0 +1,48 @@
+---
+title: Kernteam en de community
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Kernteam en de community
+sidebar_position: 4
+navigation_order: 4
+pagination_label: Kernteam en de community
+description: Een actieve community werkt samen met het kernteam om NL Design System steeds beter te maken.
+keywords:
+  - design system
+  - introductie
+---
+
+import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
+import { Markdown } from "@site/src/components/Markdown";
+import { CoreTeamSVG, CommunitySVG } from "@site/src/components/Icons";
+import { Card } from "@utrecht/card-react/css";
+import { Grid } from "@amsterdam/design-system-react";
+import "@amsterdam/design-system-css/dist/grid/grid.css";
+import { Paragraph } from "@nl-design-system-candidate/paragraph-react";
+
+{/* @license CC0-1.0 */}
+
+# Kernteam en de community
+
+NL Design System wordt gebouwd door een actieve community onder regie van een kernteam. De community maakt wat zij zelf nodig hebben, gebruikt de conventies en richtlijnen van het design system en draagt dit bij voor hergebruik door anderen. Het kernteam. Het kernteam bestaat uit diverse experts die de samenwerking faciliteren, zorgen voor uitgebreide documentatie en beschikbaar zijn voor kennisdeling voor andere specialisten die bijdragen aan het design system.
+
+<Grid>
+  <Grid.Cell span="all">
+    <Card
+      body={() => (
+        <Paragraph>
+          Faciliteert samenwerking in de community, voert regie op de kwaliteit van het design system en werkt toe naar
+          standaardisatie.
+        </Paragraph>
+      )}
+      heading="Kernteam"
+      headingLevel={2}
+      href="/contact/"
+      image={<CoreTeamSVG />}
+    ></Card>
+  </Grid.Cell>
+</Grid>
+
+<Markdown headingLevel={2}>
+  <HulpSnippet />
+</Markdown>

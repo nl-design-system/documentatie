@@ -10,6 +10,13 @@ const navbar: Navbar = {
   items: [
     {
       type: 'doc',
+      docId: 'introductie/index',
+      position: 'left',
+      label: 'Introductie',
+      className: 'utrecht-link utrecht-link--html-a ma-navigation-bar-item',
+    },
+    {
+      type: 'doc',
       docId: 'handboek/index',
       position: 'left',
       label: 'Handboek',
