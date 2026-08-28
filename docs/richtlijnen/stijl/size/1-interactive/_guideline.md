@@ -44,7 +44,7 @@ In het [Start-thema](/handboek/huisstijl/themas/start-thema) zijn beide tokens i
 
 Gebruik deze tokens wanneer je de minimale grootte van het aanwijsgebied instelt. Zo blijft de minimale grootte consistent tussen componenten en thema’s en kan je de waarde centraal aanpassen.
 
-## Meer informatie:
+## Bronnen:
 
 - [2.5.8 Grootte van het aanwijsgebied (minimum)](/wcag/2.5.8) (niveau AA)
 - [2.5.5 Grootte van het aanwijsgebied (uitgebreid)](/wcag/2.5.5) (niveau AAA)
