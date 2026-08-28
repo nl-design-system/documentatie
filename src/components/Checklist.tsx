@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from '@site/src/components/Link';
 import { successCriteriaMap } from '@site/src/components/wcag22';
-import { BadgeList } from '@utrecht/component-library-react';
+import { BadgeList, Checkbox, Fieldset, FormField, FormLabel } from '@utrecht/component-library-react';
 import { Paragraph } from '../../packages/website/src/components/paragraph/paragraph';
 import { Button } from '../../packages/website/src/components/button/button';
 import { Accordion, AccordionSection } from '../../packages/website/src/components/accordion/accordion';
@@ -9,7 +9,6 @@ import { Heading, type HeadingProps } from '../../packages/website/src/component
 import { DataBadge } from '@nl-design-system-candidate/data-badge-react';
 import clsx from 'clsx';
 import { useId, useState } from 'react';
-import { Checkbox, Fieldset, FormField, FormLabel } from '@utrecht/component-library-react';
 
 /**
  * ChecklistItemProps defines expected variables for the item to test.
@@ -66,7 +65,6 @@ export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChil
         tags.map((tag) => `ma-new-checklist__item--${tag}`),
       )}
     >
-      {/* <Checkbox className="ma-new-checklist__checkbox" aria-labelledby={labelId} /> */}
       <AccordionSection
         label={
           <span className="ma-new-checklist__title" id={labelId}>
