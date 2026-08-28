@@ -1,9 +1,9 @@
 # Community
 
-Voorkomt dubbel werk doordat de ene organisatie beschikbaar maakt wat ze zelf nodig hebben en andere organisaties dit hergebruiken en verbeteren.
+Voorkomt dubbel werk doordat de ene organisatie beschikbaar maakt wat ze zelf nodig hebben en andere organisaties dit gebruiken en verbeteren.
 
-Community componenten en templates zijn bijgedragen door teams in de community. Deze versie is gebouwd volgens de gedeelde architectuur, maar hoeft niet compleet te zijn.
+De component of template is bijgedragen door een team in de community. Gebouwd volgens de gedeelde architectuur, maar mogelijk nog niet compleet.
 
-Teams die de component of template daarna gebruiken, helpen deze zonodig completer te maken en geven feedback. Uiteindelijk ontstaat zo een versie die op meerdere plekken is gebruikt, getest en verbeterd.
+Andere teams die de component of template gebruiken helpen deze steeds beter te werken zodat hij in diverse situaties lekker werkt.
 
 [Bekijk alle Community componenten](/componenten/?status=COMMUNITY)
