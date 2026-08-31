@@ -30,9 +30,7 @@ keywords:
 import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.3.1-summary.md";
 
@@ -95,7 +93,7 @@ Een `role="presentation"` of `role="none"` op een element verwijdert de standaar
 ```html
 <ul role="navigation">
   <li><a href="/">Home</a></li>
-  <li><a href="/over-ons">Over ons</a></li>
+  <li><a href="/about-us">Over ons</a></li>
 </ul>
 ```
 
@@ -107,7 +105,7 @@ Een `role="presentation"` of `role="none"` op een element verwijdert de standaar
 <nav aria-label="Hoofdnavigatie">
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/over-ons">Over ons</a></li>
+    <li><a href="/about-us">Over ons</a></li>
   </ul>
 </nav>
 ```
@@ -178,7 +176,7 @@ Tekst die inhoudelijk een kop is, is niet als kop gemarkeerd in de code. Screenr
 <Guideline appearance="dont" title="Visueel een kop, maar geen kop-element.">
 
 ```html
-<p class="kop-stijl">Onze diensten</p>
+<p class="example-heading-style">Onze diensten</p>
 ```
 
 </Guideline>
@@ -303,13 +301,13 @@ Inhoud die in tabelvorm wordt getoond om relaties duidelijk te maken, mist de ju
 <Guideline appearance="dont" title="Tabel nagebouwd met divs.">
 
 ```html
-<div class="rij">
-  <div class="cel kop">Naam</div>
-  <div class="cel kop">Functie</div>
+<div class="example-row">
+  <div class="example-cell example-heading-cell">Naam</div>
+  <div class="example-cell example-heading-cell">Functie</div>
 </div>
-<div class="rij">
-  <div class="cel">Maria</div>
-  <div class="cel">Designer</div>
+<div class="example-row">
+  <div class="example-cell">Maria</div>
+  <div class="example-cell">Designer</div>
 </div>
 ```
 
@@ -450,10 +448,10 @@ Een screenreader moet de relatie tussen een vraag en de bijbehorende radiobutton
 
 ```html
 <p>Hoe wil je benaderd worden?</p>
-<input type="radio" name="contact" id="tel" />
-<label for="tel">Telefoon</label>
-<input type="radio" name="contact" id="mail" />
-<label for="mail">E-mail</label>
+<input type="radio" name="contact" id="phone" />
+<label for="phone">Telefoon</label>
+<input type="radio" name="contact" id="email" />
+<label for="email">E-mail</label>
 ```
 
 </Guideline>
@@ -463,10 +461,10 @@ Een screenreader moet de relatie tussen een vraag en de bijbehorende radiobutton
 ```html
 <fieldset>
   <legend>Hoe wil je benaderd worden?</legend>
-  <input type="radio" name="contact" id="tel" />
-  <label for="tel">Telefoon</label>
-  <input type="radio" name="contact" id="mail" />
-  <label for="mail">E-mail</label>
+  <input type="radio" name="contact" id="phone" />
+  <label for="phone">Telefoon</label>
+  <input type="radio" name="contact" id="email" />
+  <label for="email">E-mail</label>
 </fieldset>
 ```
 
@@ -483,9 +481,9 @@ Foutmeldingen bij formuliervelden worden niet op het juiste moment voorgelezen a
 <Guideline appearance="dont" title="Foutmelding niet gekoppeld aan het invoerveld.">
 
 ```html
-<label for="naam">Naam</label>
-<input type="text" id="naam" />
-<p class="fout">Vul je naam in.</p>
+<label for="name">Naam</label>
+<input type="text" id="name" />
+<p class="example-error">Vul je name in.</p>
 ```
 
 </Guideline>
@@ -493,9 +491,9 @@ Foutmeldingen bij formuliervelden worden niet op het juiste moment voorgelezen a
 <Guideline appearance="do" title="Foutmelding gekoppeld via aria-describedby.">
 
 ```html
-<label for="naam">Naam</label>
-<input type="text" id="naam" aria-describedby="fout-naam" aria-invalid="true" />
-<p id="fout-naam" class="fout">Vul je naam in.</p>
+<label for="name">Naam</label>
+<input type="text" id="name" aria-describedby="name-error" aria-invalid="true" />
+<p id="name-error" class="example-error">Vul je name in.</p>
 ```
 
 </Guideline>
@@ -511,8 +509,8 @@ Als de voortgang in een proces alleen via CSS wordt weergegeven, ontbreekt die i
 <Guideline appearance="dont" title="Voortgang alleen visueel.">
 
 ```html
-<div class="voortgang">
-  <div class="balk" style="width: 66%;"></div>
+<div class="example-progress">
+  <div class="example-bar" style="width: 66%;"></div>
 </div>
 ```
 
@@ -522,7 +520,7 @@ Als de voortgang in een proces alleen via CSS wordt weergegeven, ontbreekt die i
 
 ```html
 <div role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" aria-label="Voortgang: stap 2 van 3">
-  <div class="balk" style="width: 66%;"></div>
+  <div class="example-bar" style="width: 66%;"></div>
 </div>
 ```
 
@@ -541,7 +539,7 @@ Als de actieve link in een menu alleen visueel verschilt (onderstreping of kleur
 ```html
 <nav>
   <a href="/">Home</a>
-  <a href="/over-ons" class="actief">Over ons</a>
+  <a href="/about-us" class="example-active">Over ons</a>
 </nav>
 ```
 
@@ -552,7 +550,7 @@ Als de actieve link in een menu alleen visueel verschilt (onderstreping of kleur
 ```html
 <nav>
   <a href="/">Home</a>
-  <a href="/over-ons" aria-current="page" class="actief">Over ons</a>
+  <a href="/about-us" aria-current="page" class="example-active">Over ons</a>
 </nav>
 ```
 
@@ -630,15 +628,9 @@ De rapportage van het 'Onderzoek online meldingen' geeft het belang van goede in
 
 ## W3C-referenties
 
-- [WCAG 2.2: Succescriterium 1.3.1 Info en relaties](https://www.w3.org/Translations/WCAG22-nl/#info-and-relationships) — de officiële Nederlandstalige vertaling van het succescriterium.
-- [Understanding SC 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Quick Reference 1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) — snelreferentie met technieken (Engels).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- [WCAG 2.2: Succescriterium 1.3.1 Info en relaties](https://www.w3.org/Translations/WCAG22-nl/#info-and-relationships): de officiële Nederlandstalige vertaling van het succescriterium.
+- [Understanding SC 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Quick Reference 1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships): snelreferentie met technieken (Engels).
 
 ## Help richtlijn verbeteren
 
