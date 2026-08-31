@@ -5,6 +5,7 @@ import { Accordion, AccordionSection } from '../../../packages/website/src/compo
 import { Button } from '../../../packages/website/src/components/button/button';
 import './CanvasAstro.css';
 import '@utrecht/component-library-css/dist/html.css';
+import type { CSSProperties } from 'react';
 
 export interface CanvasAstroProps extends CanvasProps {
   code?: string;
@@ -17,17 +18,18 @@ export const CanvasAstro = ({
   code = '<p>No code provided</p>',
   copyCode,
   defaultExpandedCode,
+  designTokens,
 }: CanvasAstroProps) => {
   const highlighed = Prism.highlight(code, Prism.languages[language], language);
 
   return (
-    <div className={clsx('ma-canvas-astro', className)}>
+    <div className={clsx('ma-canvas-astro', 'voorbeeld-theme', className)} style={designTokens as CSSProperties}>
       {/* Live preview */}
       <div className="ma-canvas-astro__example utrecht-html ma-flow" dangerouslySetInnerHTML={{ __html: code }} />
 
       {/* Highlighted code example */}
       <Accordion>
-        <AccordionSection label="Code" open={defaultExpandedCode}>
+        <AccordionSection label="Code" className="utrecht-html" open={defaultExpandedCode}>
           <pre className="language-html nl-code-block">
             <code className="language-html nl-code-block__code" dangerouslySetInnerHTML={{ __html: highlighed }} />
           </pre>
