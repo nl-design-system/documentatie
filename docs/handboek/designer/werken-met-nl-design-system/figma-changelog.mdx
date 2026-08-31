@@ -24,12 +24,1848 @@ Op deze pagina vind je een overzicht van alle wijzigingen in onze Figma biblioth
 
 Ben je afnemer van de bibliotheken? Dan zie je hier welke updates zijn doorgevoerd, zodat je ze waar nodig ook kunt doorvoeren in de bibliotheek van jouw organisatie. Zo blijf je up-to-date met de laatste versie van de bibliotheek.
 
-Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg over de changelog voor Figma bibliotheken](/handboek/designer/werken-met-figma-changelog). En wil je weten wat de versienummers precies betekenen? Lees dan over [versiebeheer](/handboek/designer/design-tokens-versiebeheer).
+Wil je meer weten over hoe je deze changelog gebruikt? Bekijk dan de [uitleg over de changelog voor Figma bibliotheken](/handboek/designer/werken-met-figma-changelog). En wil je weten wat de versienummers precies betekenen? Lees dan over [versiebeheer](/handboek/designer/design-tokens-versiebeheer).
 
 **Hulpvideo's**
 
 - [Component met design tokens overnemen in Figma](https://youtu.be/RZA4WtAGK1Y)
 - [Versienummer wijzigen in Figma](https://youtu.be/PPPT6oxIdWo)
+
+## 18.0.0
+
+21 augustus 2026
+
+### Community component 'utrecht-spotlight-section' is hernoemd naar 'utrecht-note'.
+
+Utrecht heeft hun component Spotlight-section in lijn gebracht met de naamgeving die vanuit NL Design System is gekozen. Daarnaast is type 'OK' hernoemd naar 'Success'.
+
+Wat moet je doen?
+
+- [Ga naar de pagina van Note](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=22323-35711).
+- Open Tokens Studio.
+- Ga naar de tokenset 'note'.
+- Wijzig de naam van `todo.spotlight-section.row-gap` naar `utrecht.spotlight-section.row-gap`.
+- Kies voor de optie 'Page' om deze wijziging op de pagina door te voeren.
+- Positioneer `utrecht.note.row-gap` op de juiste positie in de JSON code. Let hierbij goed op de komma's.
+- Klik op 'Save JSON'.
+- Wijzig de groepsnaam van `utrecht.spotlight-section.*` naar `utrecht.note.*`. Doe dit zowel bij Color als bij Dimension.
+- Kies voor de optie 'Page' om deze wijziging op de pagina door te voeren.
+- Wijzig de groepsnaam van `utrecht.note.ok*` naar `utrecht.note.success*`. Doe dit zowel bij Color als bij Dimension.
+- Kies voor de optie 'Page' om deze wijziging op de pagina door te voeren.
+- Klik op 'Apply to page' zodat de wijziging op de hele pagina wordt doorgevoerd.
+- Verwijder de notitie naast de paginatitel.
+- Wijzig de naam van de Figma component van `utrecht-spotlight-section` naar `utrecht-note`.
+- Wijzig de naam van de component-variant `OK` naar `Success`.
+- Wijzig de tekst in het documentatie-frame van `OK` naar `Success`.
+- Voer daarna de gebruikelijke stappen uit: Pull Request maken, Versienummer wijzigen, Bibliotheek publiceren en de wijzigingen accepteren in de relevante Figma bestanden.
+
+[Bekijk de video 'Changelog: Spotlight-section wordt Note'](https://youtu.be/dM-4LwCuH7g) (zonder geluid) waar bovenstaande stappen ook uitgevoerd worden.
+
+## 17.0.0
+
+20 augustus 2026
+
+### Help Wanted component 'Card as Link' is bijgewerkt in de ToDo Bibliotheek
+
+Help Wanted-component ‘Card as Link’ is bijgewerkt in de ToDo bibliotheek. Met deze nieuwe Card as Link zijn de componenten Case Card en Listbox in de ToDo bibliotheek overbodig geworden en kunnen ze worden verwijderd.
+
+[Bekijk de video 'Changelog: Card as Link bijwerken'](https://youtu.be/fesq6EQh6-I) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+- [Bekijk Card as Link in de NL Design System - ToDo Bibliotheek](https://www.figma.com/design/42KfIBw43pwLxv2tE7oRzg/NL-Design-System---ToDo-Bibliotheek?node-id=472-1420).
+- Hieronder vind je de bijbehorende design tokens.
+
+```json
+{
+  "todo": {
+    "card-as-link": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.bg-document}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.color.default.border-subtle}"
+      },
+      "border-radius": {
+        "$type": "dimension",
+        "$value": "{basis.border-radius.md}"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.border-width.sm}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.default.color-document}"
+      },
+      "max-inline-size": {
+        "$type": "dimension",
+        "$value": "48rem"
+      },
+      "min-block-size": {
+        "$type": "dimension",
+        "$value": "{basis.pointer-target.min-block-size}"
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-active}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{todo.card-as-link.border-color}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.focus.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.focus.color}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-hover}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{todo.card-as-link.border-color}"
+        }
+      },
+      "body": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        }
+      },
+      "description": {
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        }
+      },
+      "footer": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        }
+      },
+      "header": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        }
+      },
+      "heading": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.heading.color}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.heading.font-family}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.xl}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.heading.font-weight}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.xl}"
+        },
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": "None"
+        },
+        "hover": {
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
+        }
+      },
+      "icon": {
+        "color": {
+          "$type": "color",
+          "$value": "{todo.card-as-link.color}"
+        },
+        "size": {
+          "$type": "dimension",
+          "$value": "{basis.size.icon.md}"
+        }
+      },
+      "label": {
+        "color": {
+          "$type": "color",
+          "$value": "{todo.card-as-link.color}"
+        },
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.bold}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "text-decoration": {
+          "$type": "textDecoration",
+          "$value": "None"
+        },
+        "hover": {
+          "text-decoration": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
+        }
+      },
+      "link-icon": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "size": {
+          "$type": "dimension",
+          "$value": "{basis.size.icon.md}"
+        }
+      },
+      "pre-header": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.md}"
+        }
+      },
+      "status-banner": {
+        "column-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "info": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.info.bg-default}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.info.color-default}"
+          }
+        },
+        "success": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.positive.bg-default}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.positive.color-default}"
+          }
+        },
+        "warning": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.warning.bg-default}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.warning.color-default}"
+          }
+        },
+        "error": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.negative.bg-default}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.negative.color-default}"
+          }
+        }
+      },
+      "case": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "min-block-size": {
+          "$type": "dimension",
+          "$value": "12rem"
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.bg-active}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{todo.card-as-link.case.border-color}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.bg-hover}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{todo.card-as-link.case.border-color}"
+          }
+        },
+        "decoration": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.bg-active}"
+          },
+          "paper": {
+            "background-color": {
+              "$type": "color",
+              "$value": "#FFFFFF"
+            },
+            "border-radius": {
+              "$type": "dimension",
+              "$value": "{basis.border-radius.none}"
+            }
+          }
+        },
+        "heading": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.heading.color}"
+          }
+        },
+        "link-icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{todo.card-as-link.link-icon.color}"
+          }
+        },
+        "archived": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-default}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-document}"
+          },
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-active}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "{todo.card-as-link.case.border-color}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-hover}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "{todo.card-as-link.case.border-color}"
+            }
+          },
+          "decoration": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-active}"
+            }
+          },
+          "heading": {
+            "color": {
+              "$type": "color",
+              "$value": "{basis.heading.color}"
+            }
+          },
+          "link-icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{basis.color.default.color-default}"
+            }
+          }
+        }
+      },
+      "plan": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1.bg-active}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.lg}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.color-document}"
+        },
+        "min-block-size": {
+          "$type": "dimension",
+          "$value": "12rem"
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.bg-active}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.bg-active}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.bg-hover}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.bg-active}"
+          }
+        },
+        "body": {
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          }
+        },
+        "decoration": {
+          "clip": {
+            "color": {
+              "$type": "color",
+              "$value": "{basis.color.accent-1.border-subtle}"
+            }
+          }
+        },
+        "footer": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.xl}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          }
+        },
+        "header": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.xl}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          }
+        },
+        "heading": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.heading.color}"
+          }
+        },
+        "link-icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{todo.card-as-link.link-icon.color}"
+          }
+        },
+        "archived": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-default}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.default.bg-active}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.default.color-document}"
+          },
+          "active": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-active}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-active}"
+            }
+          },
+          "hover": {
+            "background-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-hover}"
+            },
+            "border-color": {
+              "$type": "color",
+              "$value": "{basis.color.default.bg-active}"
+            }
+          },
+          "decoration": {
+            "clip": {
+              "color": {
+                "$type": "color",
+                "$value": "{basis.color.default.border-subtle}"
+              }
+            }
+          },
+          "heading": {
+            "color": {
+              "$type": "color",
+              "$value": "{basis.heading.color}"
+            }
+          },
+          "link-icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{basis.color.default.color-default}"
+            }
+          }
+        }
+      },
+      "product": {
+        "border-block-start-color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1.border-default}"
+        },
+        "border-block-start-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.lg}"
+        },
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{basis.border-radius.none}"
+        }
+      },
+      "task": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{basis.border-radius.none}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        },
+        "max-inline-size": {
+          "$type": "dimension",
+          "$value": "None"
+        },
+        "body": {
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.xl}"
+          }
+        },
+        "footer": {
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.none}"
+          }
+        },
+        "pre-header": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.xl}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.xl}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          }
+        },
+        "checked": {
+          "icon": {
+            "color": {
+              "$type": "color",
+              "$value": "{basis.color.positive.color-default}"
+            }
+          }
+        }
+      },
+      "topic": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{basis.border-radius.none}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        },
+        "icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.color-default}"
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{basis.size.icon.xl}"
+          }
+        },
+        "footer": {
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.none}"
+          }
+        },
+        "pre-header": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.xl}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.xl}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          }
+        }
+      },
+      "toptask": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1-inverse.bg-default}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.accent-1-inverse.color-default}"
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1-inverse.bg-active}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{todo.card-as-link.toptask.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1-inverse.color-active}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1-inverse.bg-hover}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{todo.card-as-link.toptask.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1-inverse.color-hover}"
+          }
+        },
+        "icon": {
+          "size": {
+            "$type": "dimension",
+            "$value": "{basis.size.icon.4xl}"
+          }
+        },
+        "label": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1-inverse.color-default}"
+          }
+        },
+        "pre-header": {
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.block.xl}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{basis.space.inline.xl}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+Tip: Heb je een Figma-bestand waarin je deze componenten gebruikt? Zorg er dan voor dat je de huidige versie van dat bestand opslaat voordat je de update met wijzigingen vanuit de bibliotheek accepteert. Dit doe je door de huidige versie toe te voegen aan de Version History en deze een duidelijke naam te geven, bijvoorbeeld: 'Vooraf aan release 17.0.0'. Daarna kun je zonder zorgen de update accepteren en je bestand up-to-date brengen met de nieuwe versie.
+
+## 16.0.0
+
+17 augustus 2026
+
+### Slot toegepast op componenten
+
+De Slot functionaliteit is toegepast op meerdere componenten, zodat de opbouw beter aansluit op de implementatie in code. Het betreft de componenten: Fieldset, Checkbox Group, Radio Group, Link List, Navigation Bar, Navigation List en Note.
+
+[Bekijk de video 'Changelog: Slot toepassen op componenten (deel 2)'](https://youtu.be/LqjlfP0qL70) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Tip: Heb je een Figma-bestand waarin je deze componenten gebruikt? Zorg er dan voor dat je de huidige versie van dat bestand opslaat voordat je de update met wijzigingen vanuit de bibliotheek accepteert. Dit doe je door de huidige versie toe te voegen aan de Version History en deze een duidelijke naam te geven, bijvoorbeeld: 'Vooraf aan release 16.0.0'. Daarna kun je zonder zorgen de update accepteren en je bestand up-to-date brengen met de nieuwe versie.
+
+## 15.4.1
+
+3 augustus 2026
+
+### Documentatie over 'Form Field Label Suffix' aangevuld
+
+In het Documentatie frame van Form Field is bij de sectie 'Suffix' een notitie toegevoegd die duidelijk maakt dat deze component momenteel alleen beschikbaar is in de ToDo Bibliotheek en nog niet in code bestaat.
+
+Wat moet je doen?
+
+- [Ga in het documentatie frame naar de sectie Suffix](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1081-4198&t=YKbpFWcjpEJcJIte-11).
+- Voeg vanuit Assets de component 'Note' (Spotlight Section) toe met het type 'Info'.
+- Plaats de Note op dezelfde positie en met dezelfde inhoud als in de algemene bibliotheek.
+
+## 15.4.0
+
+29 juli 2026
+
+### Community component 'Login Link' van Logius aangepast
+
+De volgende wijzigingen zijn doorgevoerd aan Community component 'Login Link' van Logius:
+
+- Het eIDAS logo is toegevoegd aan de ToDo Bibliotheek.
+- De Login Link maakt nu gebruik van de nieuwe sub-component '\_\_icon-logo'.
+- De documentatie is uitgebreid.
+
+[Bekijk de video 'Changelog: Login Link aanpassen'](https://youtu.be/F_PjfRhNbQU) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 15.3.0
+
+28 juli 2026
+
+### Community component 'Task Card' van Den Haag aangepast
+
+De call-to-action in de Community component 'Task Card' van gemeente Den Haag is vervangen door de 'nl-button'.
+
+Daarnaast is de documentatie van de Task Card uitgebreid met een toelichting over de call-to-action.
+
+[Bekijk de video 'Changelog: Call-to-action in Task Card vervangen'](https://youtu.be/ADvc7OnHauc) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 15.2.0
+
+20 juli 2026
+
+### Slot toegepast op componenten
+
+De Slot functionaliteit is toegepast op meerdere componenten, zodat de opbouw beter aansluit op de implementatie in code. Het betreft de componenten: Accordion, Action Group, Alert, Breadcrumb Navigation, Data Summary, Description List, Drawer, Figure, Form Field en Form Field Description.
+
+[Bekijk de video 'Changelog: Slot toepassen op componenten (deel 1)'](https://youtu.be/X7KGJEpAmME) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Tip: Heb je een Figma-bestand waarin je deze componenten gebruikt? Zorg er dan voor dat je de huidige versie van dat bestand opslaat voordat je de update met wijzigingen vanuit de bibliotheek accepteert. Dit doe je door de huidige versie toe te voegen aan de Version History en deze een duidelijke naam te geven, bijvoorbeeld: 'Vooraf aan release 15.2.0'. Daarna kun je zonder zorgen de update accepteren en je bestand up-to-date brengen met de nieuwe versie.
+
+## 15.1.1
+
+13 juli 2026
+
+### Community component 'Blockquote' van Utrecht aangepast
+
+De layernamen zijn gelijkgetrokken met de implementatie in code.
+
+- [Ga naar de component](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1349-6340&p=f&t=Ae5canKDLoNSjrxs-11).
+- Klik de component aan.
+- Hernoem layer 'content' naar 'quote'.
+- Hernoem layer 'attribution' naar 'caption'.
+
+## 15.1.0
+
+13 juli 2026
+
+### Community component 'Action Group' van Utrecht aangepast
+
+De volgende wijzigingen zijn doorgevoerd aan Community component 'Action Group' van Utrecht:
+
+- Property 'Vertical' hernoemd naar 'Direction'.
+- Property values hernoemd naar 'Row' en 'Column Stretched'.
+- Property value 'Column' toegevoegd.
+
+[Bekijk de video 'Changelog: Action Group aanpassen'](https://youtu.be/hpRugw6W9VY) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 15.0.0
+
+10 juli 2026
+
+### Community componenten Icon Button en Side Navigation van Den Haag toegevoegd en aangepast
+
+Community componenten Icon Button en Side Navigation van Den Haag zijn toegevoegd en aangepast in de bibliotheek.
+
+- [Bekijk Icon Button in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=33357-6551&t=sOz1nkZqzJNkDOVK-4).
+- [Bekijk Side Navigation in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=1670-10258).
+- Hieronder vind je de bijbehorende design tokens.
+
+[Bekijk de video 'Changelog: Icon Button en Side Navigation'](https://youtu.be/2dPkYxAUjlQ) waarin wordt uitgelegd hoe je deze componenten overneemt.
+
+Tip: Heb je een Figma-bestand waarin je deze componenten gebruikt? Zorg er dan voor dat je de huidige versie van dat bestand opslaat voordat je de update met wijzigingen vanuit de bibliotheek accepteert. Dit doe je door de huidige versie toe te voegen aan de Version History en deze een duidelijke naam te geven, bijvoorbeeld: 'Vooraf aan release 15.0.0'. Daarna kun je zonder zorgen de update accepteren en je bestand up-to-date brengen met de nieuwe versie.
+
+```json
+{
+  "denhaag": {
+    "icon-button": {
+      "color": {
+        "$type": "color",
+        "$value": "{basis.color.action-1.color-default}"
+      },
+      "padding-block-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.lg}"
+      },
+      "padding-block-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.block.lg}"
+      },
+      "padding-inline-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.lg}"
+      },
+      "padding-inline-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.lg}"
+      },
+      "focus": {
+        "outline-color": {
+          "$type": "color",
+          "$value": "{basis.focus.outline-color}"
+        },
+        "outline-offset": {
+          "$type": "dimension",
+          "$value": "{basis.focus.outline-offset}"
+        },
+        "outline-style": {
+          "$type": "other",
+          "$value": "{basis.focus.outline-style}"
+        },
+        "outline-width": {
+          "$type": "dimension",
+          "$value": "{basis.focus.outline-width}"
+        }
+      },
+      "hover": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1.color-hover}"
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "denhaag": {
+    "side-navigation": {
+      "display": {
+        "$type": "other",
+        "$value": "flex"
+      },
+      "flex-direction": {
+        "$type": "other",
+        "$value": "column"
+      },
+      "min-width": {
+        "$type": "dimension",
+        "$value": "240px"
+      },
+      "row-gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.row.3xl}"
+      },
+      "mobile": {
+        "display": {
+          "$type": "other",
+          "$value": "None"
+        }
+      },
+      "expand-button": {
+        "block-size": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-block-size}"
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.pointer-target.min-block-size}"
+        },
+        "transform": {
+          "$type": "other",
+          "$value": "rotate(0deg)"
+        },
+        "transition": {
+          "$type": "other",
+          "$value": "None"
+        },
+        "expanded": {
+          "transform": {
+            "$type": "other",
+            "$value": "rotate(180deg)"
+          }
+        }
+      },
+      "expand-separator": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.default.border-subtle}"
+        },
+        "inline-size": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.column.md}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.md}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.md}"
+        }
+      },
+      "item": {
+        "font-family": {
+          "$type": "fontFamilies",
+          "$value": "{basis.text.font-family.default}"
+        },
+        "font-size": {
+          "$type": "fontSizes",
+          "$value": "{basis.text.font-size.md}"
+        },
+        "font-weight": {
+          "$type": "fontWeights",
+          "$value": "{basis.text.font-weight.default}"
+        },
+        "line-height": {
+          "$type": "lineHeights",
+          "$value": "{basis.text.line-height.md}"
+        },
+        "margin-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        },
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}",
+          "$description": "[code-only]"
+        }
+      },
+      "link": {
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-2.color-default}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.lg}"
+        },
+        "active": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-active}"
+          },
+          "font-weight": {
+            "$type": "fontWeights",
+            "$value": "{basis.text.font-weight.bold}"
+          }
+        },
+        "hover": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-2.color-hover}"
+          }
+        },
+        "label": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.column.md}"
+          }
+        }
+      },
+      "list": {
+        "margin-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.4xl}"
+        }
+      }
+    }
+  }
+}
+```
+
+## 14.8.0
+
+1 juli 2026
+
+### Community component Grid van Amsterdam toegevoegd
+
+Community component 'Grid' van gemeente Amsterdam is toegevoegd aan de bibliotheek.
+
+- [Bekijk Grid in de NL Design System - Bibliotheek](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=33228-134).
+- Hieronder vind je de bijbehorende design tokens.
+
+[Bekijk de video 'Changelog: Grid'](https://youtu.be/yA2cT8cQuxI) waarin wordt uitgelegd hoe je dit component overneemt.
+
+```json
+{
+  "ams": {
+    "grid": {
+      "column-count": {
+        "$type": "number",
+        "$value": "12"
+      },
+      "column-gap": {
+        "$type": "dimension",
+        "$value": "{basis.space.column.xl}"
+      },
+      "padding-block": {
+        "l": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.3xl}"
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.6xl}"
+        }
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{basis.space.none}"
+      },
+      "row-gap": {
+        "l": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.xl}"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.3xl}"
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.5xl}"
+        }
+      },
+      "vi-medium": {
+        "column-count": {
+          "$type": "number",
+          "$value": "12"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      },
+      "vi-wide": {
+        "column-count": {
+          "$type": "number",
+          "$value": "12"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      },
+      "cell": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "padding-block": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        },
+        "padding-inline": {
+          "$type": "dimension",
+          "$value": "{basis.space.none}"
+        }
+      }
+    }
+  }
+}
+```
+
+## 14.7.0
+
+22 juni 2026
+
+### Community component 'Heading Group' van Utrecht aangepast
+
+De volgende wijzigingen zijn doorgevoerd aan Community component 'Heading Group' van gemeente Utrecht:
+
+- De component is meer in lijn gebracht met de toepassing in code, door gebruik te maken van de Slot functionaliteit.
+- Een bug die samenhing met eerder aangemaakte varianten is opgelost.
+- De documentatie is verbeterd.
+
+[Bekijk de video 'Changelog: Heading Group aangepast'](https://youtu.be/31y-blRLGoA) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 14.6.0
+
+2 juni 2026
+
+### Design tokens toegevoegd aan Community component 'Task Card' van Den Haag
+
+De volgende tokens zijn toegevoegd:
+
+- `denhaag.action.border-radius`
+- `denhaag.action.font-family`
+
+Deze tokens zijn toegepast op zowel de componenten Task Card als Task Navigation van gemeente Den Haag.
+
+[Bekijk de video 'Changelog: Aanvullende design tokens Task Card component'](https://youtu.be/a1XUHdzRHks) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 14.5.0
+
+1 juni 2026
+
+### Drie nieuwe basis-token en een type wijziging
+
+De volgende basis-tokens zijn toegevoegd:
+
+- `basis.form-color.focus.accent-color`
+- `basis.form-color.invalid.accent-color`
+- `basis.form-color.read-only.accent-color`
+
+Het type van basis-token `basis.focus.outline-offset` is aangepast van `other` naar `dimension`.
+
+[Bekijk de video 'Changelog: Drie nieuwe basis-token en een type wijziging'](https://youtu.be/4DdRzBEZpkY) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+Daarnaast zijn de waarden van de volgende component-tokens gewijzigd. Controleer of deze wijzigingen ook wenselijk zijn voor het thema van jouw organisatie. Zo niet, dan hoef je deze niet over te nemen.
+
+#### Checkbox
+
+- Waarde van token `utrecht.checkbox.checked.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-default}`.
+- Waarde van token `utrecht.checkbox.indeterminate.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-default}`.
+- Waarde van token `todo.checkbox.checked.active.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-active}`.
+- Waarde van token `todo.checkbox.checked.focus-visible.background-color` is gewijzigd van `{basis.form-control.focus.background-color}` naar common token `{basis.form-control.focus.accent-color}`.
+- Waarde van token `todo.checkbox.checked.hover.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-hover}`.
+- Waarde van token `todo.checkbox.indeterminate.active.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-active}`.
+- Waarde van token `todo.checkbox.indeterminate.focus-visible.background-color` is gewijzigd van `{basis.form-control.focus.background-color}` naar common token `{basis.form-control.focus.accent-color}`.
+- Waarde van token `todo.checkbox.indeterminate.hover.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-hover}`.
+
+Heb je de design token waarden van de Checkbox nooit aangepast? Dan zou je ook simpelweg onderstaande JSON-code kunnen overnemen.
+
+```json
+{
+  "utrecht": {
+    "checkbox": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.background-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.border-color}"
+      },
+      "border-radius": {
+        "$type": "dimension",
+        "$value": "{basis.border-radius.none}"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.form-control.border-width}"
+      },
+      "margin-inline-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.md}"
+      },
+      "size": {
+        "$type": "dimension",
+        "$value": "{basis.size.xs}"
+      },
+      "icon": {
+        "size": {
+          "$type": "dimension",
+          "$value": "{basis.size.icon.md}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.active.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.active.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.active.border-width}"
+        }
+      },
+      "disabled": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.border-color}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.focus.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.focus.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.focus.border-width}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.hover.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.hover.border-width}"
+        }
+      },
+      "invalid": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.invalid.border-width}"
+        }
+      },
+      "checked": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.accent-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1-inverse.color-default}"
+        }
+      },
+      "indeterminate": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.accent-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1-inverse.color-default}"
+        }
+      }
+    }
+  },
+  "todo": {
+    "checkbox": {
+      "checked": {
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.active.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.active.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-active}"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.color}"
+          }
+        },
+        "focus-visible": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.border-color}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.focus.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.color}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.hover.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.hover.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-hover}"
+          }
+        }
+      },
+      "indeterminate": {
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.active.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.active.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-active}"
+          }
+        },
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.color}"
+          }
+        },
+        "focus-visible": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.border-color}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.focus.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.color}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.hover.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.hover.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-hover}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Radio Button
+
+- Waarde van token `utrecht.radio-button.checked.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-default}`.
+- Waarde van token `utrecht.radio-button.checked.active.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-active}`.
+- Waarde van token `utrecht.radio-button.checked.focus.background-color` is gewijzigd van `{basis.form-control.focus.background-color}` naar common token `{basis.form-control.focus.accent-color}`.
+- Waarde van token `utrecht.radio-button.checked.hover.color` is gewijzigd van `{basis.color.default.bg-document}` naar common token `{basis.color.action-1-inverse.color-hover}`.
+
+Heb je de design token waarden van de Radio Button nooit aangepast? Dan zou je ook simpelweg onderstaande JSON-code kunnen overnemen.
+
+```json
+{
+  "utrecht": {
+    "radio-button": {
+      "background-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.background-color}"
+      },
+      "border-color": {
+        "$type": "color",
+        "$value": "{basis.form-control.border-color}"
+      },
+      "border-width": {
+        "$type": "dimension",
+        "$value": "{basis.form-control.border-width}"
+      },
+      "color": {
+        "$type": "color",
+        "$value": "{utrecht.radio-button.border-color}"
+      },
+      "margin-block-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.none}",
+        "$description": "[code-only]"
+      },
+      "margin-block-start": {
+        "$type": "dimension",
+        "$value": "{basis.space.none}",
+        "$description": "[code-only]"
+      },
+      "margin-inline-end": {
+        "$type": "dimension",
+        "$value": "{basis.space.inline.md}"
+      },
+      "size": {
+        "$type": "dimension",
+        "$value": "{basis.size.xs}"
+      },
+      "icon": {
+        "size": {
+          "$type": "dimension",
+          "$value": "{basis.size.3xs}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.active.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.active.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.active.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.active.border-color}"
+        }
+      },
+      "focus": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.focus.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.focus.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.focus.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.focus.border-color}"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.hover.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.hover.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.hover.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.hover.border-color}"
+        }
+      },
+      "disabled": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.disabled.border-color}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.disabled.border-color}"
+        }
+      },
+      "invalid": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.background-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.invalid.border-color}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.invalid.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{utrecht.radio-button.invalid.border-color}"
+        }
+      },
+      "checked": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.form-control.accent-color}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.transparent}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.form-control.border-width}"
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{basis.color.action-1-inverse.color-default}"
+        },
+        "active": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.active.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.active.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-active}"
+          }
+        },
+        "focus": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.border-color}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.focus.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.focus.color}"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.hover.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.color.transparent}"
+          },
+          "border-width": {
+            "$type": "dimension",
+            "$value": "{basis.form-control.hover.border-width}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.action-1-inverse.color-hover}"
+          }
+        }
+      }
+    }
+  },
+  "todo": {
+    "radio-button": {
+      "checked": {
+        "disabled": {
+          "background-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.accent-color}"
+          },
+          "border-color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.border-color}"
+          },
+          "color": {
+            "$type": "color",
+            "$value": "{basis.form-control.disabled.color}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## 14.4.0
+
+11 mei 2026
+
+### Meerdere updates doorgevoerd aan Community component 'File' van Den Haag
+
+Aan de File component van gemeente Den Haag zijn de volgende updates doorgevoerd:
+
+- Token `denhaag.file.border-radius` is toegevoegd.
+- Description `[code-only]` is toegevoegd aan token `denhaag.file.border-style`.
+- Tokens zijn in het 'Tokens' frame en in de JSON in de juiste volgorde gezet.
+
+[Bekijk de video 'Changelog: File component updaten'](https://youtu.be/x0vWbHtlyDE) waarin wordt uitgelegd hoe je dit zelf kunt doen.
+
+## 14.3.1
+
+7 mei 2026
+
+### Bugfix: voorbeelden in Documentatie frame van Candidate component 'Number Badge' aangepast
+
+In het Documentatie-frame werd niet de Candidate component maar de Community component van Utrecht gebruikt.
+
+Wat moet je doen?
+
+- Ga naar het [Documentatie-frame van Candidate component 'Number Badge'](https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=16036-18153&t=aqUU0UlUIYiEYKY1-4).
+- Selecteer de voorbeelden die hier worden getoond.
+- Gebruik de 'Swap instance' functie van Figma om 'utecht-number-badge' in te wisselen voor 'nl-number-badge'.
 
 ## 14.3.0
 

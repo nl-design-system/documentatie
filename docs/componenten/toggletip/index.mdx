@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Toggletip
 pagination_label: Toggletip
 description: Een knop die tijdelijke informatie toont en deze automatisch verbergt wanneer iets anders dan de knop wordt gebruikt.
+issue_number: 170
 slug: /toggletip
 keywords:
   - callout
@@ -29,7 +30,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Toggletip";
@@ -41,12 +41,6 @@ export const componentName = "toggletip";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

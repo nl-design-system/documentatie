@@ -3,20 +3,22 @@ import type { TeamMember } from './TeamMember';
 
 const Yolijn: TeamMember = {
   name: 'Yolijn van der Kolk',
-  role: 'Productmanager & Developer Relations',
+  role: 'Productmanager',
   slack: { mention: '@Yolijn', id: 'U01B7T1F24S' },
   Description: () => (
     <>
       <Paragraph>
-        Als productmanager is Yolijn graag de schakel tussen de verschillende stakeholders en het kernteam van NL Design
-        System. Ze combineert graag het uitwerken van een lange termijn visie met het opknippen van grote mijlpalen naar
-        kleine, toetsbare onderdelen.
+        Yolijn is het aanspreekpunt voor vragen over de product backlog en prioritering binnen NL Design System en voor
+        het verkennen van nieuwe samenwerkingen.
       </Paragraph>
       <Paragraph>
-        Bij eerdere projecten bleek al dat ze graag de schakel is tussen de makers van een component en de
-        verscheidenheid aan organisaties die het white-label design system afnemen en aanpassen naar hun eigen Design
-        Tokens. In de rol van Developer Relations ontdekt ze graag na een lekker kopje koffie wat de gemene deler is
-        tussen componenten en stijlen bij verschillende applicaties.
+        Hierbij helpt ze nieuwe organisaties aansluiting te vinden bij NL Design System, helpt bij complexe vraagstukken
+        en geeft uitleg over de werkwijze, zoals het Estafettemodel met bijbehorende Definition of Done.
+      </Paragraph>
+      <Paragraph>
+        Ze verbindt verschillende organisaties en initiatieven aan elkaar en stimuleert samenwerking en kennisdeling
+        binnen de community. Risico's, escalaties, feedback en zaken rondom de Code of Conduct kunnen bij haar worden
+        gemeld.
       </Paragraph>
     </>
   ),

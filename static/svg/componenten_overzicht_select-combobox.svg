@@ -1,9 +1,7 @@
 <svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
 <symbol id="component-illustration">
-<g clip-path="url(#clip0_1338_2890)">
-<rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)"/>
-<g clip-path="url(#clip1_1338_2890)">
-<rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)"/>
+<rect width="960" height="540" fill="var(--ma-component-illustration-grid-background-color, #AAA)"/>
+<rect width="960" height="540" fill="var(--ma-component-illustration-grid-background-color, #AAA)"/>
 <rect width="2" height="540" transform="translate(69)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
 <rect width="2" height="540" transform="translate(151)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
 <rect width="2" height="540" transform="translate(233)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
@@ -21,7 +19,6 @@
 <rect width="960" height="2" transform="translate(0 310)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
 <rect width="960" height="2" transform="translate(0 392)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
 <rect width="960" height="2" transform="translate(0 474)" fill="var(--ma-component-illustration-grid-color, #EEE)"/>
-</g>
 <rect x="235" y="165" width="490" height="309" rx="2" fill="var(--ma-component-illustration-background-color, white)"/>
 <rect x="235" y="165" width="490" height="309" rx="2" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"/>
 <rect x="273" y="211" width="349" height="16" rx="8" fill="var(--ma-component-illustration-color, #666)"/>
@@ -33,7 +30,6 @@
 <rect x="257" y="98" width="81" height="16" rx="8" fill="var(--ma-component-illustration-color, #666)"/>
 <g clip-path="url(#clip2_1338_2890)">
 <path d="M348 86L348 126" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4" stroke-linecap="round"/>
-</g>
 </g>
 <defs>
 <clipPath id="clip0_1338_2890">
