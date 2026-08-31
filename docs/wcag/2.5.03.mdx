@@ -60,12 +60,17 @@ Een knop heeft de zichtbare tekst "Zoeken", maar in het `aria-label` staat een a
 
 </Guideline>
 
-<Guideline appearance="do" title="aria-label bevat de zichtbare tekst, of wordt helemaal weggelaten.">
+<Guideline appearance="do" title="aria-label bevat de zichtbare tekst.">
 
 ```html
 <button aria-label="Zoeken op de website">Zoeken</button>
+```
 
-<!-- Beste: geen aria-label nodig als de zichtbare tekst voldoende is -->
+</Guideline>
+
+<Guideline appearance="do" title="Geen aria-label, want de zichtbare tekst is al genoeg.">
+
+```html
 <button>Zoeken</button>
 ```
 
@@ -106,9 +111,9 @@ Als `aria-labelledby` verwijst naar een element dat andere tekst bevat dan wat e
 <Guideline appearance="dont" title="aria-labelledby verwijst naar andere tekst dan het zichtbare label.">
 
 ```html
-<span id="verborgen-label">Voer uw elektronische postadres in</span>
+<span id="hidden-label">Voer je elektronische postadres in</span>
 <label>E-mailadres</label>
-<input type="email" aria-labelledby="verborgen-label" />
+<input type="email" aria-labelledby="hidden-label" />
 ```
 
 </Guideline>
@@ -133,7 +138,9 @@ Een knop bevat zowel een icoon als tekst, maar een `aria-label` vervangt de zich
 
 ```html
 <button aria-label="Sla het huidige document op naar de server">
-  <svg aria-hidden="true"><!-- icoon --></svg>
+  <svg aria-hidden="true" focusable="false">
+    <use href="assets/svg/icons-core-set.svg#icon-save"></use>
+  </svg>
   Opslaan
 </button>
 ```
@@ -144,7 +151,9 @@ Een knop bevat zowel een icoon als tekst, maar een `aria-label` vervangt de zich
 
 ```html
 <button>
-  <svg aria-hidden="true"><!-- icoon --></svg>
+  <svg aria-hidden="true" focusable="false">
+    <use href="assets/svg/icons-core-set.svg#icon-save"></use>
+  </svg>
   Opslaan
 </button>
 ```
@@ -162,7 +171,7 @@ Een knop of link bevat een afbeelding met tekst erin. De `alt`-tekst wijkt af va
 <Guideline appearance="dont" title="alt-tekst wijkt af van de tekst in de afbeelding.">
 
 ```html
-<input type="image" src="inschrijven-knop.png" alt="Registreer voor de nieuwsbrief" />
+<input type="image" src="subscribe-button.png" alt="Registreer voor de nieuwsbrief" />
 ```
 
 </Guideline>
@@ -170,7 +179,7 @@ Een knop of link bevat een afbeelding met tekst erin. De `alt`-tekst wijkt af va
 <Guideline appearance="do" title="alt-tekst komt overeen met de tekst in de afbeelding.">
 
 ```html
-<input type="image" src="inschrijven-knop.png" alt="Inschrijven" />
+<input type="image" src="subscribe-button.png" alt="Inschrijven" />
 ```
 
 </Guideline>
@@ -191,11 +200,17 @@ De zichtbare knoptekst is <span lang="en">"Submit"</span>, maar het `aria-label`
 
 </Guideline>
 
-<Guideline appearance="do" title="Talen komen overeen, of het aria-label wordt weggelaten.">
+<Guideline appearance="do" title="Zichtbare tekst en toegankelijke naam in dezelfde taal.">
 
 ```html
 <button>Verzenden</button>
-<!-- Of als het Engels moet blijven: -->
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Engelse knoptekst met een aria-label in dezelfde taal.">
+
+```html
 <button aria-label="Submit form">Submit</button>
 ```
 
@@ -212,18 +227,18 @@ Als de zichtbare tekst van een element deels uit CSS `::before` of `::after` con
 <Guideline appearance="dont" title="CSS voegt zichtbare tekst toe die niet in de toegankelijke naam staat.">
 
 ```css
-.knop-verwijderen::after {
+.example-delete-button::after {
   content: " definitief";
 }
 ```
 
 ```html
-<!-- De bezoeker ziet "Verwijderen definitief",
-     maar de toegankelijke naam is alleen "Verwijderen" -->
-<button class="knop-verwijderen">Verwijderen</button>
+<button class="example-delete-button">Verwijderen</button>
 ```
 
 </Guideline>
+
+In het foute voorbeeld ziet de bezoeker "Verwijderen definitief" staan, terwijl de toegankelijke naam alleen "Verwijderen" is.
 
 <Guideline appearance="do" title="Alle zichtbare tekst staat in de HTML.">
 
