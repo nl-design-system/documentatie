@@ -12,6 +12,24 @@ import type { MdxJsxAttribute, MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
  */
 export function remarkCanvasFix() {
   return async (tree: Root) => {
+    visit(tree, 'mdxJsxFlowElement', (node, _, parent) => {
+      if (node.name !== 'Canvas' && parent.name !== 'Guideline') return;
+
+      const parentNode = parent as MdxJsxFlowElement;
+
+      if (
+        parentNode.attributes.some(
+          (attr) => attr.type === 'mdxJsxAttribute' && attr.name === 'appearance' && attr.value === 'do',
+        )
+      ) {
+        node.attributes.push({
+          type: 'mdxJsxAttribute',
+          name: 'copyCode',
+          value: 'allow',
+        });
+      }
+    });
+
     visit(tree, 'mdxFlowExpression', (node, _, parent) => {
       if (parent.type !== 'mdxJsxFlowElement' || parent.name !== 'Canvas') return;
 

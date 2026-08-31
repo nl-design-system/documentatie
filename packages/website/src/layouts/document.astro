@@ -218,5 +218,12 @@ const footerNavigationItems = [
         }
       });
     </script>
+    <script>
+      document.addEventListener('click', (event) => {
+        const button = (event.target as HTMLElement)?.closest<HTMLElement>('[data-copy-code]');
+        if (!button) return;
+        navigator.clipboard.writeText(button.dataset['copyCode'] ?? '').catch(() => {});
+      });
+    </script>
   </body>
 </html>
