@@ -1,33 +1,26 @@
 import type { CanvasProps } from './Canvas';
 import Prism from 'prismjs';
 import clsx from 'clsx';
-import { renderToStaticMarkup } from 'react-dom/server';
 import { Accordion, AccordionSection } from '../../../packages/website/src/components/accordion/accordion';
 import './CanvasAstro.css';
 import '@utrecht/component-library-css/dist/html.css';
 
-export const CanvasAstro = ({ children, language, className }: CanvasProps) => {
-  const _children = typeof children === 'function' ? children() : children;
-  const code = renderToStaticMarkup(_children);
-  const formattedCode = code
-    .replaceAll(/&quot;/g, '"')
-    .replaceAll(/\sclass="[\w-\s]+"/g, '')
-    .replace('<astro-static-slot>', '')
-    .replace('</astro-static-slot>', '')
-    .replaceAll(/{"\s"}/g, '')
-    .replaceAll(/\n{2,}/g, '\n')
-    .replaceAll(/^\s\s/gm, '')
-    .replaceAll(/\salt\s/g, ' alt="" ')
-    .replaceAll(' loading="lazy"', ' ');
+export interface CanvasAstroProps extends CanvasProps {
+  code?: string;
+}
 
-  const highlighed = Prism.highlight(formattedCode, Prism.languages[language], language);
+export const CanvasAstro = ({ language, className, code = '<p>No code provided</p>' }: CanvasAstroProps) => {
+  const highlighed = Prism.highlight(code, Prism.languages[language], language);
 
   return (
     <div className={clsx('ma-canvas-astro', className)}>
-      <div
-        className="ma-canvas-astro__example utrecht-html ma-flow"
-        dangerouslySetInnerHTML={{ __html: formattedCode }}
-      />
+      {/* Code to be copied with the copy button. */}
+      <template dangerouslySetInnerHTML={{ __html: code }}></template>
+
+      {/* Live preview */}
+      <div className="ma-canvas-astro__example utrecht-html ma-flow" dangerouslySetInnerHTML={{ __html: code }} />
+
+      {/* Highlighted code example */}
       <Accordion>
         <AccordionSection label="Code">
           <pre className="language-html nl-code-block">
