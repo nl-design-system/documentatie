@@ -9,6 +9,7 @@ const CONFIG = {
   sitemap: '/sitemap-index.xml',
 };
 
+// A selection of urls coverig all different templates configurations. A minimal set of paths to cover all template paths so all combinations are testable without testing every single page
 const pathnamesSelection = [
   // Homepage
   '/',
@@ -36,9 +37,10 @@ const pathnamesSelection = [
 ];
 
 test.describe('SEO values', async () => {
-  const pathnames = process.env.FULL_SEO
-    ? getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`)
-    : pathnamesSelection;
+  const pathnames =
+    process.env.E2E_SEO_ALL_PAGES === '1'
+      ? getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`)
+      : pathnamesSelection;
 
   pathnames.forEach(async (pathname) => {
     test.describe(pathname, async () => {
