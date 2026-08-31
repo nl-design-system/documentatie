@@ -27,7 +27,7 @@ export type AccordionLabelProps =
     };
 
 export type AccordionSectionProps = HTMLAttributes<HTMLDetailsElement> &
-  AccordionLabelProps & { classNamePanel?: string };
+  AccordionLabelProps & { classNamePanel?: string; open?: boolean };
 
 export const Accordion = forwardRef<HTMLDivElement, AccordionProps>(({ as, className, children, ...props }, ref) => {
   const Component = (as || 'div') as ElementType;
