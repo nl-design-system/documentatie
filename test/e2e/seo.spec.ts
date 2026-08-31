@@ -9,8 +9,36 @@ const CONFIG = {
   sitemap: '/sitemap-index.xml',
 };
 
+const pathnamesSelection = [
+  // Homepage
+  '/',
+
+  // [...slug].astro - DetailLayout - nl - No Image
+  '/handboek/introductie/',
+
+  // [...slug].astro - OverviewLayout - nl
+  '/componenten/',
+
+  // [...slug].astro - OverviewLayout - en - Image
+  '/events/design-systems-week/en/',
+
+  // [...component].astro - keyword/description
+  '/accordion/',
+
+  // [...overview].astro - OverviewLayout - index.json
+  '/handboek/organisatie/overzicht/',
+
+  // [...wcag].astro - conformance-level
+  '/wcag/1.1.1/',
+
+  // .astro page (not a template)
+  '/zoeken/',
+];
+
 test.describe('SEO values', async () => {
-  const pathnames = await getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`);
+  const pathnames = process.env.FULL_SEO
+    ? getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`)
+    : pathnamesSelection;
 
   pathnames.forEach(async (pathname) => {
     test.describe(pathname, async () => {
