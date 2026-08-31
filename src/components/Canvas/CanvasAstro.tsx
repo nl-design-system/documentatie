@@ -11,7 +11,13 @@ export interface CanvasAstroProps extends CanvasProps {
   copyCode?: 'allow' | 'deny';
 }
 
-export const CanvasAstro = ({ language, className, code = '<p>No code provided</p>', copyCode }: CanvasAstroProps) => {
+export const CanvasAstro = ({
+  language,
+  className,
+  code = '<p>No code provided</p>',
+  copyCode,
+  defaultExpandedCode,
+}: CanvasAstroProps) => {
   const highlighed = Prism.highlight(code, Prism.languages[language], language);
 
   return (
@@ -21,7 +27,7 @@ export const CanvasAstro = ({ language, className, code = '<p>No code provided</
 
       {/* Highlighted code example */}
       <Accordion>
-        <AccordionSection label="Code">
+        <AccordionSection label="Code" open={defaultExpandedCode}>
           <pre className="language-html nl-code-block">
             <code className="language-html nl-code-block__code" dangerouslySetInnerHTML={{ __html: highlighed }} />
           </pre>
