@@ -13,7 +13,8 @@ import type { MdxJsxAttribute, MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
 export function remarkCanvasFix() {
   return async (tree: Root) => {
     visit(tree, 'mdxJsxFlowElement', (node, _, parent) => {
-      if (node.name !== 'Canvas' && (parent as MdxJsxFlowElement).name !== 'Guideline') return;
+      if (node.name !== 'Canvas') return;
+      if (!parent || parent.type !== 'mdxJsxFlowElement' || parent.name !== 'Guideline') return;
 
       const parentNode = parent as MdxJsxFlowElement;
 

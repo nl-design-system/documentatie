@@ -9,6 +9,7 @@ import type { CSSProperties } from 'react';
 
 export interface CanvasAstroProps extends CanvasProps {
   code?: string;
+  rawCode?: string;
   copyCode?: 'allow' | 'deny';
 }
 
@@ -16,27 +17,35 @@ export const CanvasAstro = ({
   language,
   className,
   code = '<p>No code provided</p>',
+  rawCode,
   copyCode,
   defaultExpandedCode,
   designTokens,
 }: CanvasAstroProps) => {
-  const highlighed = typeof code === 'string' ? Prism.highlight(code, Prism.languages[language], language) : code;
+  const _code = typeof code === 'string' ? code : rawCode || '';
+
+  const highlighed =
+    typeof code === 'string'
+      ? Prism.highlight(code, Prism.languages[language], language)
+      : Prism.highlight(rawCode || '', Prism.languages[language], language);
 
   return (
-    <div className={clsx('ma-canvas-astro', 'voorbeeld-theme', className)} style={designTokens as CSSProperties}>
+    <div className={clsx('ma-canvas-astro', className)}>
       {/* Live preview */}
-      <div className="ma-canvas-astro__example utrecht-html ma-flow" dangerouslySetInnerHTML={{ __html: code }} />
+      <div className="voorbeeld-theme" style={designTokens as CSSProperties}>
+        <div className="ma-canvas-astro__example utrecht-html ma-flow" dangerouslySetInnerHTML={{ __html: _code }} />
+      </div>
 
       {/* Highlighted code example */}
       <Accordion>
-        <AccordionSection label="Code" className="utrecht-html" open={defaultExpandedCode}>
-          <pre className="language-html nl-code-block">
+        <AccordionSection label="Code" open={defaultExpandedCode}>
+          <pre className="language-html nl-code-block" tabIndex={0}>
             <code className="language-html nl-code-block__code" dangerouslySetInnerHTML={{ __html: highlighed }} />
           </pre>
 
           {/* Because of the arrow function syntax, the <Canvas> element can not be clientside rendered with client:load. therefore, the javascript allowing to copy the code is included in the `document.astro` file as a <script> element */}
           {copyCode === 'allow' && (
-            <Button data-copy-code={code} purpose="secondary">
+            <Button data-copy-code={_code} purpose="secondary">
               Kopieer code
             </Button>
           )}
