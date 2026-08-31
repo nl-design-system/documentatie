@@ -1,5 +1,5 @@
 ---
-title: Overzicht
+title: Overzicht van de Hall of Fame Definition of Done voor componenten
 title_sm: Hall of Fame
 hide_title: true
 hide_table_of_contents: false
