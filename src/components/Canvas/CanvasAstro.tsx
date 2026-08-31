@@ -20,7 +20,7 @@ export const CanvasAstro = ({
   defaultExpandedCode,
   designTokens,
 }: CanvasAstroProps) => {
-  const highlighed = Prism.highlight(code, Prism.languages[language], language);
+  const highlighed = typeof code === 'string' ? Prism.highlight(code, Prism.languages[language], language) : code;
 
   return (
     <div className={clsx('ma-canvas-astro', 'voorbeeld-theme', className)} style={designTokens as CSSProperties}>
