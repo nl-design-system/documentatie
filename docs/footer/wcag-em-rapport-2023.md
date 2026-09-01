@@ -13,7 +13,7 @@ Dit is het [WCAG EM Auditrapport](https://www.w3.org/WAI/test-evaluate/conforman
 
 Gerelateerd: [toegankelijkheidsverklaring NLDesignSystem.nl](/toegankelijkheidsverklaring).
 
-<div class="wcag-em">
+<div class="wcag-em utrecht-html">
   <h2>Over deze evaluatie</h2>
 
   <dl>
