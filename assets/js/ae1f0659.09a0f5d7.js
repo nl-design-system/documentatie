@@ -1,4 +1,4 @@
-/*! For license information please see ae1f0659.4e4623c9.js.LICENSE.txt */
+/*! For license information please see ae1f0659.09a0f5d7.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [29732],
@@ -80,8 +80,8 @@
         n
        );
       }, [e.muted, p, e.enableJsApi, e.playlist, g, e.params]),
-      b = t.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
-      v = t.useMemo(() => (e.playlist ? `${b}/embed/videoseries?${k.toString()}` : `${b}/embed/${g}?${k.toString()}`), [e.playlist, b, g, k]),
+      v = t.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
+      b = t.useMemo(() => (e.playlist ? `${v}/embed/videoseries?${k.toString()}` : `${v}/embed/${g}?${k.toString()}`), [e.playlist, v, g, k]),
       j = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
       w = e.webp ? 'webp' : 'jpg',
       y = e.webp ? 'vi_webp' : 'vi',
@@ -216,8 +216,8 @@
       (0, s.jsxs)(s.Fragment, {
        children: [
         !e.lazyLoad && (0, s.jsx)('link', { rel: I, href: z, as: 'image' }),
-        (0, s.jsx)(s.Fragment, { children: i && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)('link', { rel: 'preconnect', href: b }), (0, s.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), S && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, s.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
-        e.seo && !e.playlist && (0, s.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: r(e.id, m, z, b, e.seo) } }),
+        (0, s.jsx)(s.Fragment, { children: i && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)('link', { rel: 'preconnect', href: v }), (0, s.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), S && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, s.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
+        e.seo && !e.playlist && (0, s.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: r(e.id, m, z, v, e.seo) } }),
         T && !e.playlist && (0, s.jsx)('noscript', { children: (0, s.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${m} on YouTube`, children: ['Watch "', m, '" on YouTube'] }) }),
         (0, s.jsxs)(N, {
          onPointerOver: () => {
@@ -229,7 +229,7 @@
          role: d || e.lazyLoad ? void 0 : 'img',
          'aria-label': d ? void 0 : `${m} - YouTube video preview`,
          style: { ...(!e.lazyLoad && { backgroundImage: `url(${z})` }), '--aspect-ratio': (D / C) * 100 + '%', ...(e.style || {}) },
-         children: [e.lazyLoad && !d && (0, s.jsx)('img', { src: z, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !d && (0, s.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && d) && (0, s.jsx)('button', { type: 'button', className: L, 'aria-label': `${u} ${m}`, 'aria-hidden': d || void 0, tabIndex: d ? -1 : 0, onClick: F, children: (0, s.jsx)('span', { className: 'lty-visually-hidden', children: u }) }), d && (0, s.jsx)('iframe', { ref: n, className: A, title: m, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: v, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+         children: [e.lazyLoad && !d && (0, s.jsx)('img', { src: z, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !d && (0, s.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && d) && (0, s.jsx)('button', { type: 'button', className: L, 'aria-label': `${u} ${m}`, 'aria-hidden': d || void 0, tabIndex: d ? -1 : 0, onClick: F, children: (0, s.jsx)('span', { className: 'lty-visually-hidden', children: u }) }), d && (0, s.jsx)('iframe', { ref: n, className: A, title: m, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: b, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
         }),
        ],
       })
@@ -249,14 +249,14 @@
   },
   94067(e, n, i) {
    (i.r(n), i.d(n, { assets: () => m, contentTitle: () => c, default: () => p, frontMatter: () => g, metadata: () => s, toc: () => h }));
-   const s = JSON.parse('{"id":"community/events/design-systems-week/eerdere-edities/2024","title":"Video\'s van Design Systems Week 2024","description":"Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code","source":"@site/docs/community/events/design-systems-week/eerdere-edities/2024.mdx","sourceDirName":"community/events/design-systems-week/eerdere-edities","slug":"/events/design-systems-week-2024/programma","permalink":"/events/design-systems-week-2024/programma","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2024.mdx","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Video\'s van Design Systems Week 2024","title_sm":"2024","description":"Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"2024","pagination_label":"Design Systems Week 2024","sidebar_position":2,"navigation_order":2,"slug":"/events/design-systems-week-2024/programma","image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png","image_alt":"NL Design System Design Systems Week 2024 14-17 oktober, online"},"sidebar":"community","previous":{"title":"Design Systems Week 2025","permalink":"/events/design-systems-week-2025/programma"},"next":{"title":"Videos 2023","permalink":"/events/design-systems-week-2023/programma"}}');
+   const s = JSON.parse('{"id":"community/events/design-systems-week/eerdere-edities/2024","title":"Video\'s van Design Systems Week 2024","description":"Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code","source":"@site/docs/community/events/design-systems-week/eerdere-edities/2024.mdx","sourceDirName":"community/events/design-systems-week/eerdere-edities","slug":"/events/design-systems-week-2024/programma","permalink":"/events/design-systems-week-2024/programma","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/eerdere-edities/2024.mdx","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Video\'s van Design Systems Week 2024","title_sm":"2024","description":"Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"2024","pagination_label":"Design Systems Week 2024","sidebar_position":2,"navigation_order":2,"slug":"/events/design-systems-week-2024/programma","translations":{"en":"/events/design-systems-week-2024/en/program/"},"image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png","image_alt":"NL Design System Design Systems Week 2024 14-17 oktober, online"},"sidebar":"community","previous":{"title":"Design Systems Week 2025","permalink":"/events/design-systems-week-2025/programma"},"next":{"title":"Videos 2023","permalink":"/events/design-systems-week-2023/programma"}}');
    var t = i(86070),
     a = i(18439),
     r = i(46447),
     o = i(56796),
     d = i(48419),
     l = i(31439);
-   const g = { title: "Video's van Design Systems Week 2024", title_sm: '2024', description: 'Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2024, pagination_label: 'Design Systems Week 2024', sidebar_position: 2, navigation_order: 2, slug: '/events/design-systems-week-2024/programma', image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png', image_alt: 'NL Design System Design Systems Week 2024 14-17 oktober, online' },
+   const g = { title: "Video's van Design Systems Week 2024", title_sm: '2024', description: 'Opnames van nationale en internationale sprekers over managen van design systems, toegankelijkheid, gebruikersonderzoek en code', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 2024, pagination_label: 'Design Systems Week 2024', sidebar_position: 2, navigation_order: 2, slug: '/events/design-systems-week-2024/programma', translations: { en: '/events/design-systems-week-2024/en/program/' }, image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24.png', image_alt: 'NL Design System Design Systems Week 2024 14-17 oktober, online' },
     c = 'Design Systems Week 2024 terugkijken',
     m = {},
     h = [{ value: 'Videos', id: 'videos', level: 2 }];

@@ -2,34 +2,34 @@
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [72139],
  {
-  18439(e, n, i) {
-   i.d(n, { R: () => r, x: () => a });
-   var t = i(30758);
+  18439(e, n, t) {
+   t.d(n, { R: () => a, x: () => r });
+   var i = t(30758);
    const o = {},
-    d = t.createContext(o);
-   function r(e) {
-    const n = t.useContext(d);
-    return t.useMemo(
+    d = i.createContext(o);
+   function a(e) {
+    const n = i.useContext(d);
+    return i.useMemo(
      function () {
       return 'function' == typeof e ? e(n) : { ...n, ...e };
      },
      [n, e],
     );
    }
-   function a(e) {
+   function r(e) {
     let n;
-    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(o) : e.components || o) : r(e.components)), t.createElement(d.Provider, { value: n }, e.children));
+    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(o) : e.components || o) : a(e.components)), i.createElement(d.Provider, { value: n }, e.children));
    }
   },
-  94701(e, n, i) {
-   (i.r(n), i.d(n, { assets: () => l, contentTitle: () => a, default: () => g, frontMatter: () => r, metadata: () => t, toc: () => s }));
-   const t = JSON.parse('{"id":"footer/coc","title":"Code of Conduct - Nederlands","description":"Wij streven ernaar om iedereen een vriendelijke, veilige en gastvrije omgeving te bieden.","source":"@site/docs/footer/coc.md","sourceDirName":"footer","slug":"/coc","permalink":"/coc","draft":false,"unlisted":true,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/footer/coc.md","tags":[],"version":"current","frontMatter":{"title":"Code of Conduct - Nederlands","hide_title":true,"hide_table_of_contents":true,"pagination_label":"Code of Conduct","slug":"/coc","unlisted":true}}');
-   var o = i(86070),
-    d = i(18439);
-   const r = { title: 'Code of Conduct - Nederlands', hide_title: !0, hide_table_of_contents: !0, pagination_label: 'Code of Conduct', slug: '/coc', unlisted: !0 },
-    a = 'Code of Conduct',
-    l = {},
-    s = [
+  94701(e, n, t) {
+   (t.r(n), t.d(n, { assets: () => s, contentTitle: () => r, default: () => g, frontMatter: () => a, metadata: () => i, toc: () => l }));
+   const i = JSON.parse('{"id":"footer/coc","title":"Code of Conduct - Nederlands","description":"Wij streven ernaar om iedereen een vriendelijke, veilige en gastvrije omgeving te bieden.","source":"@site/docs/footer/coc.md","sourceDirName":"footer","slug":"/coc","permalink":"/coc","draft":false,"unlisted":true,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/footer/coc.md","tags":[],"version":"current","frontMatter":{"title":"Code of Conduct - Nederlands","hide_title":true,"hide_table_of_contents":true,"pagination_label":"Code of Conduct","slug":"/coc","translations":{"en":"/coc-en/"},"unlisted":true}}');
+   var o = t(86070),
+    d = t(18439);
+   const a = { title: 'Code of Conduct - Nederlands', hide_title: !0, hide_table_of_contents: !0, pagination_label: 'Code of Conduct', slug: '/coc', translations: { en: '/coc-en/' }, unlisted: !0 },
+    r = 'Code of Conduct',
+    s = {},
+    l = [
      { value: 'Gedragscode', id: 'gedragscode', level: 2 },
      { value: 'Veiligheid', id: 'veiligheid', level: 2 },
      { value: 'Gevolgen van overtredingen', id: 'gevolgen-van-overtredingen', level: 2 },

@@ -23,10 +23,10 @@
   },
   52033(e, t, i) {
    (i.r(t), i.d(t, { assets: () => l, contentTitle: () => r, default: () => h, frontMatter: () => s, metadata: () => o, toc: () => d }));
-   const o = JSON.parse('{"id":"footer/privacy-policy","title":"Privacy policy","description":"For various activities of NL Design System you provide personal data. On this page you can find what we do with this data","source":"@site/docs/footer/privacy-policy.mdx","sourceDirName":"footer","slug":"/privacy-policy","permalink":"/privacy-policy","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/footer/privacy-policy.mdx","tags":[],"version":"current","frontMatter":{"title":"Privacy policy","description":"For various activities of NL Design System you provide personal data. On this page you can find what we do with this data","lang":"en","hide_title":true,"hide_table_of_contents":true,"pagination_label":"Privacy policy","slug":"/privacy-policy"}}');
+   const o = JSON.parse('{"id":"footer/privacy-policy","title":"Privacy policy","description":"For various activities of NL Design System you provide personal data. On this page you can find what we do with this data","source":"@site/docs/footer/privacy-policy.mdx","sourceDirName":"footer","slug":"/privacy-policy","permalink":"/privacy-policy","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/footer/privacy-policy.mdx","tags":[],"version":"current","frontMatter":{"title":"Privacy policy","description":"For various activities of NL Design System you provide personal data. On this page you can find what we do with this data","lang":"en","hide_title":true,"hide_table_of_contents":true,"pagination_label":"Privacy policy","slug":"/privacy-policy","translations":{"nl":"/privacyverklaring/"}}}');
    var n = i(86070),
     a = i(18439);
-   const s = { title: 'Privacy policy', description: 'For various activities of NL Design System you provide personal data. On this page you can find what we do with this data', lang: 'en', hide_title: !0, hide_table_of_contents: !0, pagination_label: 'Privacy policy', slug: '/privacy-policy' },
+   const s = { title: 'Privacy policy', description: 'For various activities of NL Design System you provide personal data. On this page you can find what we do with this data', lang: 'en', hide_title: !0, hide_table_of_contents: !0, pagination_label: 'Privacy policy', slug: '/privacy-policy', translations: { nl: '/privacyverklaring/' } },
     r = 'Privacy policy',
     l = {},
     d = [

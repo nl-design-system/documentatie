@@ -22,14 +22,14 @@
    }
   },
   63951(e, n, i) {
-   (i.r(n), i.d(n, { assets: () => c, contentTitle: () => s, default: () => h, frontMatter: () => a, metadata: () => o, toc: () => l }));
-   const o = JSON.parse('{"id":"footer/coc-en","title":"Code of Conduct - English","description":"Our Pledge","source":"@site/docs/footer/coc-en.md","sourceDirName":"footer","slug":"/coc-en","permalink":"/coc-en","draft":false,"unlisted":true,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/footer/coc-en.md","tags":[],"version":"current","frontMatter":{"title":"Code of Conduct - English","hide_title":true,"hide_table_of_contents":true,"pagination_label":"Code of Conduct","slug":"/coc-en","unlisted":true}}');
+   (i.r(n), i.d(n, { assets: () => l, contentTitle: () => s, default: () => h, frontMatter: () => a, metadata: () => o, toc: () => c }));
+   const o = JSON.parse('{"id":"footer/coc-en","title":"Code of Conduct - English","description":"Our Pledge","source":"@site/docs/footer/coc-en.md","sourceDirName":"footer","slug":"/coc-en","permalink":"/coc-en","draft":false,"unlisted":true,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/footer/coc-en.md","tags":[],"version":"current","frontMatter":{"title":"Code of Conduct - English","lang":"en","hide_title":true,"hide_table_of_contents":true,"pagination_label":"Code of Conduct","slug":"/coc-en","translations":{"nl":"/coc/"},"unlisted":true}}');
    var t = i(86070),
     r = i(18439);
-   const a = { title: 'Code of Conduct - English', hide_title: !0, hide_table_of_contents: !0, pagination_label: 'Code of Conduct', slug: '/coc-en', unlisted: !0 },
+   const a = { title: 'Code of Conduct - English', lang: 'en', hide_title: !0, hide_table_of_contents: !0, pagination_label: 'Code of Conduct', slug: '/coc-en', translations: { nl: '/coc/' }, unlisted: !0 },
     s = 'Code of Conduct',
-    c = {},
-    l = [
+    l = {},
+    c = [
      { value: 'Our Pledge', id: 'our-pledge', level: 2 },
      { value: 'Our Standards', id: 'our-standards', level: 2 },
      { value: 'Enforcement Responsibilities', id: 'enforcement-responsibilities', level: 2 },
