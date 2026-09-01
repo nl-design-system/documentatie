@@ -132,7 +132,7 @@ export default defineConfig({
         remarkDirective,
         remarkUndoInlineDirectives,
         remarkAdmonitions,
-        clientLoadPlugin(['Videoplayer', 'VideoPlayer', 'Checklist']),
+        clientLoadPlugin(['Videoplayer', 'VideoPlayer', 'Checklist', 'DesignTokens']),
         removeH1FromMarkdown(),
       ],
       rehypePlugins: [
