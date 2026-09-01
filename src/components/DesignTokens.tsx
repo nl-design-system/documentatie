@@ -55,7 +55,7 @@ export function DesignTokens({ tokens }: Props) {
   const cssCustomPropertiesString = sortedTokenPaths
     .map((tokenPath) => tokenPathToCSSCustomProperty(tokenPath) + ': ;')
     .join('\n');
-  const jsonString = JSON.stringify(cleanTokens);
+  const jsonString = JSON.stringify(cleanTokens, null, 2);
 
   return (
     <div className="ma-flow">
@@ -90,12 +90,8 @@ export function DesignTokens({ tokens }: Props) {
       </Table>
 
       <ActionGroup>
-        <CopyButton content={jsonString} language="json">
-          Kopieer als JSON
-        </CopyButton>
-        <CopyButton content={cssCustomPropertiesString} language="css">
-          Kopieer als CSS
-        </CopyButton>
+        <CopyButton content={jsonString}>Kopieer als JSON</CopyButton>
+        <CopyButton content={cssCustomPropertiesString}>Kopieer als CSS</CopyButton>
       </ActionGroup>
     </div>
   );
