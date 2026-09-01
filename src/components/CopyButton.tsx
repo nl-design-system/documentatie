@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes } from 'react';
+import { useEffect, useState, type ButtonHTMLAttributes } from 'react';
 import { IconCopy } from '@tabler/icons-react';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import { Icon } from '@utrecht/component-library-react';
@@ -8,6 +8,8 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function CopyButton({ children, content }: Props) {
+  const [canCopy, setCanCopy] = useState(false);
+
   async function onClick() {
     try {
       await navigator.clipboard.writeText(content);
@@ -16,12 +18,21 @@ export function CopyButton({ children, content }: Props) {
     }
   }
 
+  useEffect(() => {
+    if (!('clipboard' in navigator)) return;
+    setCanCopy(true);
+  }, []);
+
   return (
-    <Button type="button" appearance="secondary-action-button" onClick={onClick}>
-      {children}
-      <Icon>
-        <IconCopy />
-      </Icon>
-    </Button>
+    <>
+      {canCopy && (
+        <Button type="button" appearance="secondary-action-button" onClick={onClick}>
+          {children}
+          <Icon>
+            <IconCopy />
+          </Icon>
+        </Button>
+      )}
+    </>
   );
 }
