@@ -58,7 +58,7 @@ export function DesignTokens({ tokens }: Props) {
   const jsonString = JSON.stringify(cleanTokens);
 
   return (
-    <>
+    <div className="ma-flow">
       <Table>
         <TableHeader>
           <TableRow>
@@ -97,6 +97,6 @@ export function DesignTokens({ tokens }: Props) {
           Kopieer als CSS
         </CopyButton>
       </ActionGroup>
-    </>
+    </div>
   );
 }
