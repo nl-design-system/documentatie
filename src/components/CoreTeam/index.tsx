@@ -1,5 +1,5 @@
-import { Heading, HeadingGroup, Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
-import clsx from 'clsx';
+import { Card } from '../../../packages/website/src/components/card/card';
+import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import Ali from './Ali';
 import Astrid from './Astrid';
 import Charlotte from './Charlotte';
@@ -32,25 +32,20 @@ const coreteam = [
 ];
 
 export const CoreTeam = ({ headingLevel }: { headingLevel: number }) => {
-  return coreteam.map(({ name, role, Description, slack }) => {
-    const headingId = name.replace(' ', '-').toLowerCase();
-    return (
-      <section key="name" className={clsx('ma-core-team__item')} id="name">
-        <HeadingGroup className={clsx('ma-core-team__heading')}>
-          <Heading id={headingId} level={headingLevel} className={clsx('ma-core-team__heading-title')}>
-            {name}
-          </Heading>
-          <Paragraph className={clsx('ma-core-team__heading-subtitle')}>{role}</Paragraph>
-        </HeadingGroup>
-        <div className={clsx('ma-core-team__description')}>
-          <Description />
-        </div>
-        <Paragraph>
-          Slack: <Link href={`https://codefornl.slack.com/team/${slack.id}`}>{slack.mention}</Link>
-        </Paragraph>
-      </section>
-    );
-  });
+  return (
+    <div className="ma-core-team">
+      {coreteam.map(({ name, role, Description, slack }) => {
+        return (
+          <Card key={name} heading={name} headingLevel={headingLevel as 1 | 2 | 3 | 4 | 5 | 6} subheading={role}>
+            <Description />{' '}
+            <Paragraph>
+              Slack: <Link href={`https://codefornl.slack.com/team/${slack.id}`}>{slack.mention}</Link>
+            </Paragraph>
+          </Card>
+        );
+      })}
+    </div>
+  );
 };
 
 export default CoreTeam;

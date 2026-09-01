@@ -1,26 +1,7 @@
 .ma-core-team {
-  align-items: baseline;
-  align-items: center;
-  display: grid;
-  gap: 8px;
-  grid-auto-flow: column;
-  inline-size: 100%;
-  margin-block-start: 30px;
-  max-block-size: 200px;
-}
+  --rhc-card-inline-size: 100%;
 
-.ma-core-team__item {
-  margin-block-end: 24px;
-}
-
-.ma-core-team__heading {
-  padding-block-end: 8px;
-}
-
-.ma-core-team__heading-subtitle {
-  font-size: 20px;
-  padding-block-start: 8px;
-}
-.ma-core-team__description {
-  padding-block-end: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
