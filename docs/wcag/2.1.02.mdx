@@ -44,7 +44,7 @@ import Summary from "./summaries/_2.1.2-summary.md";
 
 Je gaat met de <kbd>Tab</kbd>-toets van het ene interactieve onderdeel naar het volgende, en met <kbd>Shift</kbd>+<kbd>Tab</kbd> weer terug. Dat geldt ook binnen een dialoogvenster, een menu of een kalender: dezelfde twee toetsen brengen je er weer uit.
 
-Werken die toetsen niet, dan is dat voor toetsenbordgebruikers en screenreadergebruikers erger dan een knop die niet werkt: ze kunnen niet alleen dat ene onderdeel niet gebruiken, ze bereiken ook niets meer van wat erna komt. Dan blijft alleen de pagina opnieuw laden of sluiten over.
+Reageert een onderdeel niet op die twee toetsen, dan is dat voor toetsenbordgebruikers en screenreadergebruikers erger dan een knop die niet werkt: ze kunnen niet alleen dat ene onderdeel niet gebruiken, ze bereiken ook niets meer van wat erna komt. Dan blijft alleen de pagina opnieuw laden of sluiten over.
 
 ## Veelgemaakte fouten
 
@@ -78,13 +78,13 @@ Een `<span>` krijgt zonder extra code geen focus. Wie geen muis gebruikt, bereik
   ```
 </Guideline>
 
-Gebruik het `<dialog>`-element en open het met `showModal()`. De browser plaatst de focus dan in het venster, schermt de achterliggende pagina af en sluit het venster met <kbd>Escape</kbd>. Bouw je het venster zelf, laat <kbd>Escape</kbd> dan sluiten en zet de focus daarna terug op de knop waarmee het venster is geopend.
+Gebruik het `<dialog>`-element en open het met `showModal()`. De browser plaatst de focus dan in het venster en sluit het venster met <kbd>Escape</kbd>. Die uitweg met <kbd>Escape</kbd> voorkomt de toetsenbordval. Let op wat `showModal()` niet doet: de focus zit niet vast in het venster. Met <kbd>Tab</kbd> ga je ook langs de knoppen en de adresbalk van de browser, en kom je daarna weer in het venster terug. Bouw je het venster zelf, laat <kbd>Escape</kbd> dan sluiten en zet de focus daarna terug op de knop waarmee het venster is geopend.
 
 **Wie kan dit oplossen:** een developer gebruikt de [Dialog-component](/dialog/) of het `<dialog>`-element in plaats van zelf een venster te bouwen, en maakt van de sluitknop een `<button>` die focus kan krijgen.
 
 ### Menu of werkbalk waar je met de Tab-toets niet uit komt
 
-Een menubalk of werkbalk laat je met de pijltjestoetsen van knop naar knop gaan. Dat is een goed patroon. Het gaat mis als de code ook <kbd>Tab</kbd> onderschept om binnen het menu te springen. De bezoeker verwacht met <kbd>Tab</kbd> het menu te verlaten, maar komt bij het volgende menu-item terecht. Dit gebeurt ook bij een uitklapmenu of een hamburgermenu dat na openen de focus binnen het menu houdt.
+Een menubalk of werkbalk laat je met de pijltjestoetsen van knop naar knop gaan. Dat is een goed patroon. Het gaat mis als de code ook <kbd>Tab</kbd> onderschept om binnen het menu te springen. De bezoeker verwacht met <kbd>Tab</kbd> het menu te verlaten, maar komt bij het volgende menu-item terecht. Hetzelfde geldt voor een uitklapmenu of een hamburgermenu waarin code de focus na het openen binnen het menu houdt. Een browser doet dat niet uit zichzelf: het is telkens een keuze in de code.
 
 **Hoe te testen:** ga het menu in en druk op <kbd>Tab</kbd>. Verlaat je het menu, of springt de focus naar het volgende menu-item?
 
@@ -114,7 +114,7 @@ In het goede voorbeeld komt <kbd>Tab</kbd> niet voor. De browser doet daarmee wa
 
 ### Cookiemelding die je alleen met de muis weg kunt klikken
 
-Een cookiemelding, nieuwsbriefvenster of andere overlay verschijnt over de pagina en houdt de focus vast tot je een keuze maakt. Dat is redelijk, zolang je die keuze ook met het toetsenbord kunt maken. Kun je de knoppen niet met <kbd>Tab</kbd> bereiken en werkt <kbd>Escape</kbd> niet, dan blijft de melding staan en is de hele pagina onbruikbaar.
+Een cookiemelding, nieuwsbriefvenster of andere overlay verschijnt over de pagina en houdt de focus vast tot je een keuze maakt. Kun je de knoppen niet met <kbd>Tab</kbd> bereiken en werkt <kbd>Escape</kbd> niet, dan blijft de melding staan en is de hele pagina onbruikbaar.
 
 **Hoe te testen:** laad de pagina en gebruik alleen het toetsenbord. Kun je bij de knoppen van de overlay komen en er een kiezen, zodat de melding verdwijnt?
 
@@ -149,26 +149,31 @@ Een interactieve kaart, een dashboard of een chatvenster van een andere partij s
 
 Aan de code op je eigen pagina is niet te zien of de widget de focus teruggeeft. Dat blijkt pas als je hem met het toetsenbord bedient.
 
-<Guideline appearance="dont" title="Ingesloten kaart als enige manier om de locaties te bekijken">
+Kun je de widget zelf niet aanpassen, zet er dan een link vóór waarmee je naar de inhoud erna springt.
+
+<Guideline appearance="dont" title="Ingesloten kaart zonder link om eroverheen te springen">
   ```html
   <iframe src="https://example.com/kaart" title="Kaart met onze locaties"></iframe>
+  <h2>Onze locaties</h2>
   ```
 </Guideline>
 
-<Guideline appearance="do" title="Dezelfde locaties ook als lijst naast de kaart">
+<Guideline appearance="do" title="Link vóór de kaart waarmee je de kaart overslaat">
   ```html
+  <a href="#example-locations">Sla de kaart over</a>
   <iframe src="https://example.com/kaart" title="Kaart met onze locaties"></iframe>
-  <p>
-    <a href="https://example.com/locaties">Bekijk alle locaties als lijst</a>
-  </p>
+  <h2 id="example-locations">Onze locaties</h2>
   ```
 </Guideline>
+
+De link staat vóór de widget, zodat je eroverheen kunt springen voordat de focus erin terechtkomt. Zit de focus er eenmaal in, dan helpt de link niet meer. De toetsenbordval zelf verdwijnt pas als de widget de focus weer loslaat.
 
 **Wie kan dit oplossen:**
 
-- Een contentmaker biedt dezelfde informatie ook buiten de widget aan, bijvoorbeeld als lijst of tabel, zodat niemand de widget nodig heeft.
+- Een developer zet vóór de widget een link waarmee je naar de inhoud erna springt, op dezelfde manier als de [Skip Link-component](/skip-link/) bovenaan een pagina werkt.
 - Een developer test de widget met het toetsenbord voordat die live gaat en kiest een versie waar de focus weer uit komt.
-- Lukt geen van beide, meld het probleem dan bij de leverancier van de widget.
+- Lukt dat allebei niet, meld het probleem dan bij de leverancier van de widget.
+- Een contentmaker biedt dezelfde informatie ook buiten de widget aan, bijvoorbeeld als lijst of tabel. Dat haalt de toetsenbordval niet weg, maar zorgt wel dat niemand de widget nodig heeft.
 
 ### Video in een popup die je niet kunt stoppen of sluiten
 
@@ -239,11 +244,11 @@ In het foute voorbeeld springt <kbd>Tab</kbd> in het tekstvak in, en nergens op 
 
 **Wie kan dit oplossen:** een developer voegt een toets toe waarmee je het tekstvak verlaat, bijvoorbeeld <kbd>Escape</kbd>, en zet er een zichtbare uitleg bij die met `aria-describedby` aan het veld is gekoppeld.
 
-### Tabbladen waaruit je niet terug bij de tabs komt
+### Tabbladen waar je met de Tab-toets niet meer uit komt
 
-Een reeks tabbladen toont per tab een eigen paneel. Je gaat met <kbd>Tab</kbd> een tabpaneel in, maar je komt daarna niet meer terug bij de tabrij of bij de rest van de pagina. De focus blijft in het paneel.
+Een reeks tabbladen toont per tabblad een eigen paneel. Je gaat met <kbd>Tab</kbd> een tabpaneel in, maar je komt daarna niet meer terug bij de tabrij of bij de rest van de pagina. De focus blijft in het paneel.
 
-**Hoe te testen:** kies een tab, ga met <kbd>Tab</kbd> het tabpaneel in en druk door op <kbd>Tab</kbd> en <kbd>Shift</kbd>+<kbd>Tab</kbd>. Kom je terug bij de tabs en de rest van de pagina, of blijft de focus in het paneel?
+**Hoe te testen:** kies een tabblad, ga met <kbd>Tab</kbd> het tabpaneel in en druk door op <kbd>Tab</kbd> en <kbd>Shift</kbd>+<kbd>Tab</kbd>. Kom je terug bij de tabbladen en de rest van de pagina, of blijft de focus in het paneel?
 
 <Guideline appearance="dont" title="Tabpaneel dat de focus binnen het paneel houdt">
     ```js
