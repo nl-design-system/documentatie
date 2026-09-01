@@ -11,7 +11,8 @@ import { addTrailingSlashPlugin } from './markdown-plugins/rehype-trailing-slash
 import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
 import { remarkUnwrapDiv } from './markdown-plugins/remark-unwrap-div';
 import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
-import { videoplayerClientLoadPlugin } from './markdown-plugins/remark-videoplayer-client-load';
+import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inline-directives';
+import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -42,6 +43,7 @@ const cspProdConfig: AstroUserConfig = {
         "default-src 'self'",
         "font-src 'self'",
         "form-action 'self'",
+        "frame-src 'self' https://www.youtube-nocookie.com",
         `img-src 'self' ${cspImgSrcSources} blob: data:`,
         "object-src 'none'",
         'worker-src blob:',
@@ -86,12 +88,38 @@ export default defineConfig({
     },
     resolve: {
       noExternal: [/@rijkshuisstijl-community\/.*/],
+      alias: [
+        {
+          // dev SSR resolves @babel/runtime/helpers/* to CJS (node condition) and
+          // serves it raw, leaking `require` into ESM. Force the ESM helpers.
+          find: /^@babel\/runtime\/helpers\/(?!esm\/)/,
+          replacement: '@babel/runtime/helpers/esm/',
+        },
+        {
+          find: '@utrecht/component-library-react/dist/css-module',
+          replacement: '@utrecht/component-library-react',
+        },
+        {
+          find: '@utrecht/component-library-react/css-module',
+          replacement: '@utrecht/component-library-react',
+        },
+      ],
     },
   },
 
   markdown: {
-    remarkPlugins: [remarkUnwrapDiv, remarkCustomHeaderId, remarkDirective, remarkAdmonitions, removeH1FromMarkdown()],
-    rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+    remarkPlugins: [
+      remarkUnwrapDiv,
+      remarkCustomHeaderId,
+      remarkDirective,
+      remarkUndoInlineDirectives,
+      remarkAdmonitions,
+      removeH1FromMarkdown(),
+    ],
+    rehypePlugins: [
+      nldsComponentsPlugin,
+      addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
+    ],
     syntaxHighlight: 'prism',
   },
 
@@ -102,11 +130,15 @@ export default defineConfig({
         remarkUnwrapDiv,
         remarkCustomHeaderId,
         remarkDirective,
+        remarkUndoInlineDirectives,
         remarkAdmonitions,
-        videoplayerClientLoadPlugin,
+        clientLoadPlugin(['Videoplayer', 'VideoPlayer', 'Checklist', 'DesignTokens']),
         removeH1FromMarkdown(),
       ],
-      rehypePlugins: [nldsComponentsPlugin, addTrailingSlashPlugin({ siteUrl, stripOrigin: true })],
+      rehypePlugins: [
+        nldsComponentsPlugin,
+        addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
+      ],
       syntaxHighlight: 'prism',
     }),
     react(),

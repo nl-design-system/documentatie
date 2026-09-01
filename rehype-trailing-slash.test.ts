@@ -33,6 +33,12 @@ test('/foo/bar?query=value', '/foo/bar/?query=value');
 test('https://example.com/foo/bar', '/foo/bar/', { stripOrigin: true });
 test('/foo/bar', '/foo/bar/', { stripOrigin: true });
 
+// Treat .md / .mdx as pages and strip the extensions
+test('/foo/bar.md', '/foo/bar/', { stripOrigin: false, stripExtensions: ['.md', '.mdx'] });
+test('/foo/bar.mdx', '/foo/bar/', { stripExtensions: ['.md', '.mdx'] });
+test('/foo/bar.md#baz', '/foo/bar/#baz', { stripExtensions: ['.md', '.mdx'] });
+test('/foo/bar.mdx#baz', '/foo/bar/#baz', { stripExtensions: ['.md', '.mdx'] });
+
 // Do not touch in page links
 test('#hash', '#hash');
 
