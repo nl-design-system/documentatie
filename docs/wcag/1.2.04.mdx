@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.2.4 Ondertitels voor doven en slechthorenden (live)
 pagination_label: WCAG-succescriterium 1.2.4 Ondertitels voor doven en slechthorenden (live)
-description: Voor alle live audio-streams zijn ondertitels beschikbaar.
+description: Bij een live-uitzending met geluid bied je ondertiteling die tijdens de uitzending meeloopt, zodat wie de audio niet kan horen live kan meekijken.
 slug: 1.2.4
 conformance_level: Niveau AA
 keywords:
@@ -18,29 +18,120 @@ keywords:
   - captions (live)
   - live
   - captions
+  - ondertitels
+  - ondertiteling
+  - doven
+  - slechthorenden
+  - livestream
+  - webinar
+  - gesynchroniseerde media
+  - WCAG 1.2.4
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.2.4-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
-  {" WCAG-succescriterium 1.2.4 Ondertitels voor doven en slechthorenden (live)"}
+  {"WCAG-succescriterium 1.2.4 Ondertitels voor doven en slechthorenden (live)"}
 </WcagHeadingGroup>
 
 ## Uitleg
 
 <Summary />
 
-## Opgelet
+Live-ondertiteling maak je terwijl de uitzending loopt. Een schrijftolk typt mee, of een spraakherkenningssysteem zet het geluid direct om in tekst. De ondertitels lopen synchroon met wat er gezegd wordt en zijn er op het moment zelf.
 
-Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en informatie over hoe te testen.
+Dat is het verschil met succescriterium [1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)](/wcag/1.2.2/): daar maak je de ondertitels van tevoren en koppel je ze aan de video.
+
+## Veelgemaakte fouten
+
+### Live-uitzending met geluid zonder ondertiteling
+
+Een webinar of livestream met spraak heeft geen ondertiteling. Wie de audio niet kan horen, mist de inhoud terwijl de uitzending loopt en kan niet meelezen.
+
+**Hoe te testen:** volg een live-uitzending met het geluid uit. Verschijnt er ondertiteling die meeloopt met wat er gezegd wordt?
+
+**Wie kan dit oplossen:**
+
+- Een contentmaker of organisator zet een spraakherkenningsdienst in en laat iemand de tekst tijdens de uitzending corrigeren.
+- Een contentmaker of organisator huurt een schrijftolk in die tijdens de uitzending meetypt.
+
+### Ondertiteling pas beschikbaar in de opname achteraf
+
+De uitzending krijgt ondertitels, maar pas nadat hij is afgelopen, in de opname die later online komt. Wie live meekijkt, heeft er op dat moment niets aan.
+
+**Hoe te testen:** kijk of de ondertiteling tijdens de live-uitzending zelf te zien is, of pas verschijnt in de opname achteraf.
+
+**Wie kan dit oplossen:** een contentmaker of organisator zorgt dat de ondertiteling al tijdens de uitzending meeloopt. De opname die je daarna publiceert, ondertitel je apart, zoals beschreven bij succescriterium [1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)](/wcag/1.2.2/).
+
+### Automatische live-ondertiteling met te veel fouten
+
+De ondertiteling komt rechtstreeks uit automatische spraakherkenning, zonder dat iemand meekijkt of corrigeert. Bij eigennamen, vaktermen en meerdere sprekers ontstaan zo veel fouten dat de tekst niet meer klopt met wat er gezegd wordt. Wie meeleest, krijgt een onbetrouwbare versie van de uitzending.
+
+**Hoe te testen:** volg de live-ondertiteling en luister mee. Komt de tekst overeen met wat er gezegd wordt? Staan er zo veel fouten in dat de betekenis verandert?
+
+**Wie kan dit oplossen:**
+
+- Een organisator laat iemand de automatische ondertiteling tijdens de uitzending corrigeren.
+- Een organisator kiest voor een schrijftolk die de ondertiteling zelf typt.
+
+### Ondertiteling loopt te ver achter op het geluid
+
+Bij live-ondertiteling zit altijd een kleine vertraging. Wordt die vertraging te groot, dan hoort de ondertitel bij iets wat al een tijd eerder is gezegd. Wie de uitzending via de tekst volgt, kan het gesprek niet meer bijhouden.
+
+**Hoe te testen:** volg de uitzending en let op de vertraging tussen het gesproken woord en de ondertitel. Kun je het gesprek nog volgen?
+
+**Wie kan dit oplossen:** een organisator kiest een ondertitelvoorziening die de vertraging klein houdt.
+
+### Niet duidelijk wie er aan het woord is
+
+In een live-uitzending met meerdere sprekers, zoals een panelgesprek of een vergadering, is niet iedereen steeds in beeld. Wie het geluid hoort, herkent de stemmen. Wie de ondertiteling leest en alleen de tekst ziet zonder de naam van de spreker, kan niet volgen wie wat zegt.
+
+**Hoe te testen:** lees de ondertiteling mee bij een fragment met meerdere sprekers die niet allemaal in beeld zijn. Is te volgen wie aan het woord is?
+
+**Wie kan dit oplossen:** een schrijftolk of ondertitelaar geeft aan wie er spreekt op de momenten dat de spreker niet zichtbaar is.
+
+### Alleen een gebarentolk in plaats van ondertiteling
+
+Bij de uitzending staat een gebarentolk in beeld, maar er is geen ondertiteling. Een gebarentolk helpt wie die gebarentaal beheerst. Niet iedereen die doof of slechthorend is, gebruikt gebarentaal. Wie op tekst is aangewezen, mist de inhoud alsnog.
+
+**Hoe te testen:** is een gebarentolk het enige alternatief bij de live-uitzending? Dan ontbreekt de ondertiteling nog.
+
+**Wie kan dit oplossen:** een organisator voegt ondertiteling toe, naast de eventuele gebarentolk.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Ga na of de uitzending live is. Wordt de content op het moment zelf uitgezonden, dan hoort de ondertiteling tijdens de uitzending mee te lopen.
+2. Volg de live-uitzending met het geluid uit. Verschijnt er ondertiteling die meeloopt met wat er gezegd wordt?
+3. Let op de vertraging tussen het gesproken woord en de ondertitel. Kun je het gesprek nog volgen?
+4. Let bij meerdere sprekers op of duidelijk is wie aan het woord is.
+5. Controleer bij automatische ondertiteling of de tekst klopt met wat er gezegd wordt.
+
+### Voor developers
+
+1. Controleer of het streamingplatform of de videospeler een live ondertitelspoor kan tonen, en of een bezoeker dat spoor zelf kan aanzetten.
+2. Zorg dat de ondertiteling in dezelfde speler zichtbaar is als de uitzending, en niet alleen via een losse externe dienst.
+3. Live-ondertiteling komt van een schrijftolk of een spraakherkenningsdienst tijdens de uitzending, niet uit een vast ondertitelbestand zoals bij een opname.
+4. Automatische tools zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> kunnen live-ondertiteling niet beoordelen. Test dit tijdens een echte uitzending.
+
+## Gerelateerde succescriteria
+
+- [1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)](/wcag/1.2.2/): voor een video die je van tevoren opneemt, voeg je de ondertitels vooraf toe. Niveau A.
+- [1.2.9 Louter-geluid (live)](/wcag/1.2.9/): voor een live-uitzending met alleen geluid en geen beeld geldt een apart criterium. Niveau AAA.
+- [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/): ondertiteling hoort echte tekst te zijn, geen ingebrande afbeelding, zodat een bezoeker de grootte en weergave kan aanpassen.
+
+## Relevante bronnen
+
+- [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/): W3C-handleiding over toegankelijke audio en video, inclusief live ondertiteling (Engels).
+- [Understanding SC 1.2.4: Captions (Live)](https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -56,12 +147,6 @@ Deze inhoud wordt binnenkort aangevuld met uitgebreidere uitleg, bronnen en info
 - Nederlandse vertaling van het WCAG-succescriterium: [1.2.4 Ondertitels voor doven en slechthorenden (live)](https://www.w3.org/Translations/WCAG22-nl/#captions-live).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.2.4 Captions (Live)</span>](https://www.w3.org/WAI/WCAG22/quickref/#captions-live).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.2.4 Captions (Live)</span>](https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
