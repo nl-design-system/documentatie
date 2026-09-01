@@ -26,7 +26,7 @@
    }
   },
   32385(e, n, s) {
-   s.d(n, { bo: () => a, KF: () => b, mJ: () => k, VZ: () => x, cR: () => _, Pv: () => m, qZ: () => o, kD: () => v, QQ: () => y, B2: () => p, Pc: () => r, f4: () => l, GT: () => f, fX: () => i, eQ: () => A, B_: () => j, o_: () => g });
+   s.d(n, { bo: () => a, KF: () => b, mJ: () => k, VZ: () => x, cR: () => _, Pv: () => m, qZ: () => o, kD: () => v, QQ: () => T, B2: () => p, Pc: () => r, f4: () => l, GT: () => f, fX: () => i, eQ: () => A, B_: () => j, o_: () => g });
    const t = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     a = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -90,81 +90,85 @@
      return n ? n[1] : e.replace(/^[\^~>=<]+/, '');
     },
     S = new Set(['ics', 'json', 'pdf']),
-    y = (e) => {
+    T = (e) => {
      const n = e.split('/').pop() ?? '',
       s = n.split('.').pop()?.toLowerCase();
      return void 0 !== s && S.has(s);
     };
   },
   70903(e, n, s) {
-   s.d(n, { B: () => N });
+   s.d(n, { B: () => y });
    var t = s(96547),
     a = s(38295),
     i = s(32385),
     o = s(46447),
-    l = s(68148),
-    r = s(9016),
-    d = s(91635),
-    c = s(30734),
-    h = s(4603),
-    b = s(29181),
-    p = s(86070);
-   function u({ children: e, content: n, language: s }) {
-    return 'clipboard' in navigator
-     ? (0, p.jsxs)(o.$n, {
+    l = s(30758),
+    r = s(4603),
+    d = s(29181),
+    c = s(86070);
+   function h({ children: e, content: n }) {
+    const [s, t] = (0, l.useState)(!1);
+    return (
+     (0, l.useEffect)(() => {
+      'clipboard' in navigator && t(!0);
+     }, []),
+     (0, c.jsx)(c.Fragment, {
+      children:
+       s &&
+       (0, c.jsxs)(o.$n, {
         type: 'button',
         appearance: 'secondary-action-button',
         onClick: async function () {
          try {
-          const e = await c.Ay.format(n, { parser: s, plugins: [l.A, r.Ay, d.Ay] });
-          await navigator.clipboard.writeText(e);
+          await navigator.clipboard.writeText(n);
          } catch (e) {
           console.error(e);
          }
         },
-        children: [e, (0, p.jsx)(b.In, { children: (0, p.jsx)(h.A, {}) })],
-       })
-     : null;
+        children: [e, (0, c.jsx)(d.In, { children: (0, c.jsx)(r.A, {}) })],
+       }),
+     })
+    );
    }
-   var k = s(43864),
-    m = s(35193),
-    g = s(82999),
-    j = s(13088),
-    A = s(91525),
-    v = s(24214),
-    f = s(92081),
-    _ = s(1375),
-    x = s(73563),
-    S = s(23436),
-    y = s(79532),
-    T = s(30758);
-   const O = { boxShadow: k.A, color: m.A, cursor: g.A, dimension: j.A, fontFamily: A.A, fontFamilies: A.A, fontSize: v.A, fontSizes: v.A, fontWeight: f.A, fontWeights: f.A, lineHeight: _.A, lineHeights: _.A, number: x.A, other: S.A, textDecoration: y.A },
-    w = ({ type: e }) => {
-     const n = Object.hasOwn(O, e) ? e : 'other';
-     return (0, p.jsx)(b.In, { children: (0, T.createElement)(O[n]) });
+   var b = s(43864),
+    p = s(35193),
+    u = s(82999),
+    k = s(13088),
+    m = s(91525),
+    g = s(24214),
+    j = s(92081),
+    A = s(1375),
+    v = s(73563),
+    f = s(23436),
+    _ = s(79532);
+   const x = { boxShadow: b.A, color: p.A, cursor: u.A, dimension: k.A, fontFamily: m.A, fontFamilies: m.A, fontSize: g.A, fontSizes: g.A, fontWeight: j.A, fontWeights: j.A, lineHeight: A.A, lineHeights: A.A, number: v.A, other: f.A, textDecoration: _.A },
+    S = ({ type: e }) => {
+     const n = Object.hasOwn(x, e) ? e : 'other';
+     return (0, c.jsx)(d.In, { children: (0, l.createElement)(x[n]) });
     };
-   var M = s(76223);
-   function N({ tokens: e }) {
+   var T = s(76223);
+   function y({ tokens: e }) {
     const n = (0, i.kD)(e),
-     s = (0, M.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     s = (0, T.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      l = (0, i.GT)(n),
      r = l.map((e) => (0, i.B_)(e) + ': ;').join('\n'),
-     d = JSON.stringify(s);
-    return (0, p.jsxs)(p.Fragment, {
+     d = JSON.stringify(s, null, 2);
+    return (0, c.jsxs)('div', {
+     className: 'ma-flow',
      children: [
-      (0, p.jsxs)(o.XI, {
+      (0, c.jsxs)(o.XI, {
        children: [
-        (0, p.jsx)(o.A0, { children: (0, p.jsxs)(o.Hj, { children: [(0, p.jsx)(o.M_, { children: 'name' }), (0, p.jsx)(o.M_, { children: 'type' })] }) }),
-        (0, p.jsx)(o.BF, {
+        (0, c.jsx)(o.A0, { children: (0, c.jsxs)(o.Hj, { children: [(0, c.jsx)(o.M_, { children: 'name' }), (0, c.jsx)(o.M_, { children: 'type' })] }) }),
+        (0, c.jsx)(o.BF, {
          children: l.map((n) => {
           const s = (0, i.o_)(n),
            l = (0, i.eQ)(e, n).$type;
-          return (0, p.jsxs)(o.Hj, { children: [(0, p.jsx)(o.nA, { children: (0, p.jsx)(t.C, { children: (0, p.jsx)(o.kf, { children: s }) }) }), (0, p.jsx)(o.nA, { children: (0, p.jsxs)(a.K, { children: [(0, p.jsx)(w, { type: l }), ' ', l] }) })] }, s);
+          return (0, c.jsxs)(o.Hj, { children: [(0, c.jsx)(o.nA, { children: (0, c.jsx)(t.C, { children: (0, c.jsx)(o.kf, { children: s }) }) }), (0, c.jsx)(o.nA, { children: (0, c.jsxs)(a.K, { children: [(0, c.jsx)(S, { type: l }), ' ', l] }) })] }, s);
          }),
         }),
        ],
       }),
-      (0, p.jsxs)(o.e2, { children: [(0, p.jsx)(u, { content: d, language: 'json', children: 'Kopieer als JSON' }), (0, p.jsx)(u, { content: r, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, c.jsxs)(o.e2, { children: [(0, c.jsx)(h, { content: d, children: 'Kopieer als JSON' }), (0, c.jsx)(h, { content: r, children: 'Kopieer als CSS' })] }),
      ],
     });
    }

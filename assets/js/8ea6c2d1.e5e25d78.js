@@ -39,7 +39,7 @@
   },
   21034(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => j, $9: () => v, mu: () => w, Fc: () => x, K_: () => A });
+   t.d(n, { VK: () => j, $9: () => v, mu: () => w, Fc: () => x, K_: () => k });
    var a = t(29181),
     i = t(13526),
     r = t(40889),
@@ -137,7 +137,7 @@
      const i = e && h.bo[e.relayStep];
      return globalThis.isAstro ? null : e && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(u.p, { level: n, suffix: i && (0, d.jsx)(g.D, { state: i }), children: e.title }), (0, d.jsx)(a.fz, { lead: !0, children: t }), ['Help Wanted', 'Community'].includes(i) && (0, d.jsx)(f.s, { relayStep: i, description: `Schets van de ${e.title} component`, name: e.title })] });
     },
-    A = ({ component: e }) => {
+    k = ({ component: e }) => {
      const n = (e && p[e.title]) || [];
      return n.length > 0 && (0, d.jsxs)(a.fz, { children: ['Gerelateerde componenten:', ' ', n.map((e, t) => (0, d.jsxs)(d.Fragment, { children: [e.slug ? (0, d.jsx)(a.N_, { href: `/${e.slug}/`, children: e.name }) : e.name, t < n.length - 1 ? ', ' : '.'] }))] });
     };
@@ -316,7 +316,7 @@
   },
   32385(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => i, KF: () => u, mJ: () => p, VZ: () => k, cR: () => A, Pv: () => b, qZ: () => s, kD: () => v, QQ: () => T, B2: () => m, Pc: () => o, f4: () => l, GT: () => x, fX: () => r, eQ: () => w, B_: () => j, o_: () => f });
+   t.d(n, { bo: () => i, KF: () => u, mJ: () => p, VZ: () => A, cR: () => k, Pv: () => b, qZ: () => s, kD: () => v, QQ: () => T, B2: () => m, Pc: () => o, f4: () => l, GT: () => x, fX: () => r, eQ: () => w, B_: () => j, o_: () => f });
    const a = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     r = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -368,12 +368,12 @@
     }
     return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
    }
-   const A = () => {
+   const k = () => {
      const e = a.sP?.pnpm;
      if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
      return e.replace(/^[\^~>=<]+/, '');
     },
-    k = () => {
+    A = () => {
      const e = a.sP?.node;
      if (!e) throw new Error('No node version found in package.json#engines.node');
      const n = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
@@ -608,12 +608,12 @@
        w = e.busy,
        v = e.type,
        x = void 0 === v ? 'button' : v,
-       A = e.label,
-       k = e.toggle,
+       k = e.label,
+       A = e.toggle,
        y = (0, i.A)(e, o),
        T = Boolean(m || g),
        C = (l.Children.toArray(t).some(l.isValidElement) && T) || d;
-      return (0, r.jsxs)('button', c(c({ ref: n, type: x, className: (0, s.$)('nl-button', a, { 'nl-button--pressed': j, 'nl-button--busy': w, 'nl-button--disabled': b || f, 'nl-button--primary': 'primary' === h, 'nl-button--secondary': 'secondary' === h, 'nl-button--subtle': 'subtle' === h, 'nl-button--positive': u(h) && 'positive' === p, 'nl-button--negative': u(h) && 'negative' === p, 'nl-button--icon-only': d }), 'aria-pressed': k ? String(Boolean(j)) : void 0, 'aria-disabled': b || w ? 'true' : void 0, disabled: f }, y), {}, { children: [m && (0, r.jsx)('span', { className: 'nl-button__icon-start', children: m }), A && (0, r.jsx)('span', { className: 'nl-button__label', children: A }), C ? (0, r.jsx)('span', { className: d ? 'nl-button__label' : '', children: t }) : t, g && (0, r.jsx)('span', { className: 'nl-button__icon-end', children: g })] }));
+      return (0, r.jsxs)('button', c(c({ ref: n, type: x, className: (0, s.$)('nl-button', a, { 'nl-button--pressed': j, 'nl-button--busy': w, 'nl-button--disabled': b || f, 'nl-button--primary': 'primary' === h, 'nl-button--secondary': 'secondary' === h, 'nl-button--subtle': 'subtle' === h, 'nl-button--positive': u(h) && 'positive' === p, 'nl-button--negative': u(h) && 'negative' === p, 'nl-button--icon-only': d }), 'aria-pressed': A ? String(Boolean(j)) : void 0, 'aria-disabled': b || w ? 'true' : void 0, disabled: f }, y), {}, { children: [m && (0, r.jsx)('span', { className: 'nl-button__icon-start', children: m }), k && (0, r.jsx)('span', { className: 'nl-button__label', children: k }), C ? (0, r.jsx)('span', { className: d ? 'nl-button__label' : '', children: t }) : t, g && (0, r.jsx)('span', { className: 'nl-button__icon-end', children: g })] }));
      }));
    m.displayName = 'Button';
   },
@@ -767,74 +767,78 @@
   },
   70903(e, n, t) {
    'use strict';
-   t.d(n, { B: () => S });
+   t.d(n, { B: () => C });
    var a = t(96547),
     i = t(38295),
     r = t(32385),
     s = t(46447),
-    l = t(68148),
-    o = t(9016),
-    d = t(91635),
-    c = t(30734),
-    g = t(4603),
-    u = t(29181),
-    m = t(86070);
-   function h({ children: e, content: n, language: t }) {
-    return 'clipboard' in navigator
-     ? (0, m.jsxs)(s.$n, {
+    l = t(30758),
+    o = t(4603),
+    d = t(29181),
+    c = t(86070);
+   function g({ children: e, content: n }) {
+    const [t, a] = (0, l.useState)(!1);
+    return (
+     (0, l.useEffect)(() => {
+      'clipboard' in navigator && a(!0);
+     }, []),
+     (0, c.jsx)(c.Fragment, {
+      children:
+       t &&
+       (0, c.jsxs)(s.$n, {
         type: 'button',
         appearance: 'secondary-action-button',
         onClick: async function () {
          try {
-          const e = await c.Ay.format(n, { parser: t, plugins: [l.A, o.Ay, d.Ay] });
-          await navigator.clipboard.writeText(e);
+          await navigator.clipboard.writeText(n);
          } catch (e) {
           console.error(e);
          }
         },
-        children: [e, (0, m.jsx)(u.In, { children: (0, m.jsx)(g.A, {}) })],
-       })
-     : null;
+        children: [e, (0, c.jsx)(d.In, { children: (0, c.jsx)(o.A, {}) })],
+       }),
+     })
+    );
    }
-   var p = t(43864),
-    b = t(35193),
-    f = t(82999),
-    j = t(13088),
-    w = t(91525),
-    v = t(24214),
-    x = t(92081),
-    A = t(1375),
-    k = t(73563),
-    y = t(23436),
-    T = t(79532),
-    C = t(30758);
-   const N = { boxShadow: p.A, color: b.A, cursor: f.A, dimension: j.A, fontFamily: w.A, fontFamilies: w.A, fontSize: v.A, fontSizes: v.A, fontWeight: x.A, fontWeights: x.A, lineHeight: A.A, lineHeights: A.A, number: k.A, other: y.A, textDecoration: T.A },
-    R = ({ type: e }) => {
-     const n = Object.hasOwn(N, e) ? e : 'other';
-     return (0, m.jsx)(u.In, { children: (0, C.createElement)(N[n]) });
+   var u = t(43864),
+    m = t(35193),
+    h = t(82999),
+    p = t(13088),
+    b = t(91525),
+    f = t(24214),
+    j = t(92081),
+    w = t(1375),
+    v = t(73563),
+    x = t(23436),
+    k = t(79532);
+   const A = { boxShadow: u.A, color: m.A, cursor: h.A, dimension: p.A, fontFamily: b.A, fontFamilies: b.A, fontSize: f.A, fontSizes: f.A, fontWeight: j.A, fontWeights: j.A, lineHeight: w.A, lineHeights: w.A, number: v.A, other: x.A, textDecoration: k.A },
+    y = ({ type: e }) => {
+     const n = Object.hasOwn(A, e) ? e : 'other';
+     return (0, c.jsx)(d.In, { children: (0, l.createElement)(A[n]) });
     };
-   var G = t(76223);
-   function S({ tokens: e }) {
+   var T = t(76223);
+   function C({ tokens: e }) {
     const n = (0, r.kD)(e),
-     t = (0, G.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     t = (0, T.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      l = (0, r.GT)(n),
      o = l.map((e) => (0, r.B_)(e) + ': ;').join('\n'),
-     d = JSON.stringify(t);
-    return (0, m.jsxs)(m.Fragment, {
+     d = JSON.stringify(t, null, 2);
+    return (0, c.jsxs)('div', {
+     className: 'ma-flow',
      children: [
-      (0, m.jsxs)(s.XI, {
+      (0, c.jsxs)(s.XI, {
        children: [
-        (0, m.jsx)(s.A0, { children: (0, m.jsxs)(s.Hj, { children: [(0, m.jsx)(s.M_, { children: 'name' }), (0, m.jsx)(s.M_, { children: 'type' })] }) }),
-        (0, m.jsx)(s.BF, {
+        (0, c.jsx)(s.A0, { children: (0, c.jsxs)(s.Hj, { children: [(0, c.jsx)(s.M_, { children: 'name' }), (0, c.jsx)(s.M_, { children: 'type' })] }) }),
+        (0, c.jsx)(s.BF, {
          children: l.map((n) => {
           const t = (0, r.o_)(n),
            l = (0, r.eQ)(e, n).$type;
-          return (0, m.jsxs)(s.Hj, { children: [(0, m.jsx)(s.nA, { children: (0, m.jsx)(a.C, { children: (0, m.jsx)(s.kf, { children: t }) }) }), (0, m.jsx)(s.nA, { children: (0, m.jsxs)(i.K, { children: [(0, m.jsx)(R, { type: l }), ' ', l] }) })] }, t);
+          return (0, c.jsxs)(s.Hj, { children: [(0, c.jsx)(s.nA, { children: (0, c.jsx)(a.C, { children: (0, c.jsx)(s.kf, { children: t }) }) }), (0, c.jsx)(s.nA, { children: (0, c.jsxs)(i.K, { children: [(0, c.jsx)(y, { type: l }), ' ', l] }) })] }, t);
          }),
         }),
        ],
       }),
-      (0, m.jsxs)(s.e2, { children: [(0, m.jsx)(h, { content: d, language: 'json', children: 'Kopieer als JSON' }), (0, m.jsx)(h, { content: o, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, c.jsxs)(s.e2, { children: [(0, c.jsx)(g, { content: d, children: 'Kopieer als JSON' }), (0, c.jsx)(g, { content: o, children: 'Kopieer als CSS' })] }),
      ],
     });
    }
@@ -900,8 +904,8 @@
      { title: 'De Number Badge is standaard niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: f.Ay, tags: ['developer'] },
      { title: 'De Number Badge komt standaard niet voor in de focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: j.Ay, tags: ['developer'] },
     ];
-   var A = t(21530),
-    k = t(46447),
+   var k = t(21530),
+    A = t(46447),
     y = t(56421),
     T = t(40889),
     C = t(59778),
@@ -928,7 +932,7 @@
     I = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...o.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...l.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'Number badge als data component', id: 'number-badge-als-data-component', level: 3 }, { value: 'Number badge met een toegankelijk label', id: 'number-badge-met-een-toegankelijk-label', level: 3 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
    function $(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, r.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, i.jsx)(N.Fc, { component: O, headingLevel: 1, description: B }), '\n', (0, i.jsx)(C.e, { component: O }), '\n', (0, i.jsx)(A.Zp, { className: 'ma-implementation-card', children: (0, i.jsxs)(A.Wu, { children: [(0, i.jsx)(y.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(k.dk, { children: [(0, i.jsxs)(k.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, i.jsx)(T.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(k.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, i.jsx)(T.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(y.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(k.dk, { children: [(0, i.jsxs)(k.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-number-badge--documentatie', children: [(0, i.jsx)(T.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(k.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/number-badge--documentatie', children: [(0, i.jsx)(T.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(y.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(k.dk, { children: [(0, i.jsxs)(k.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-css'] }), (0, i.jsxs)(k.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-react'] }), (0, i.jsxs)(k.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-tokens', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-tokens'] })] })] }) }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(d.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(o.Ay, {}), '\n', (0, i.jsx)(R.b, { headingLevel: '4', children: v.map(({ component: e, ...n }) => (0, i.jsx)(R.e, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(R.b, { headingLevel: '4', children: x.map(({ component: e, ...n }) => (0, i.jsx)(R.e, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(S.o, { omitH1: !0, headingLevel: 3, children: (0, i.jsx)(F, {}) }), '\n', (0, i.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, i.jsx)(G.B, { tokens: L }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(N.VK, { component: O, headingLevel: 3 }), '\n', (0, i.jsx)(N.$9, { component: O, headingLevel: 2 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(N.mu, { component: O, headingLevel: 3 }), '\n', (0, i.jsx)(N.K_, { component: O })] });
+    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, i.jsx)(N.Fc, { component: O, headingLevel: 1, description: B }), '\n', (0, i.jsx)(C.e, { component: O }), '\n', (0, i.jsx)(k.Zp, { className: 'ma-implementation-card', children: (0, i.jsxs)(k.Wu, { children: [(0, i.jsx)(y.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(A.dk, { children: [(0, i.jsxs)(A.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, i.jsx)(T.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(A.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, i.jsx)(T.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(y.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(A.dk, { children: [(0, i.jsxs)(A.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-number-badge--documentatie', children: [(0, i.jsx)(T.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(A.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/number-badge--documentatie', children: [(0, i.jsx)(T.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(y.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(A.dk, { children: [(0, i.jsxs)(A.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-css', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-css'] }), (0, i.jsxs)(A.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-react', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-react'] }), (0, i.jsxs)(A.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/number-badge-tokens', children: [(0, i.jsx)(T.r, { brand: 'npm' }), ' @nl-design-system-candidate/number-badge-tokens'] })] })] }) }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(d.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(o.Ay, {}), '\n', (0, i.jsx)(R.b, { headingLevel: '4', children: v.map(({ component: e, ...n }) => (0, i.jsx)(R.e, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(l.Ay, {}), '\n', (0, i.jsx)(R.b, { headingLevel: '4', children: x.map(({ component: e, ...n }) => (0, i.jsx)(R.e, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(S.o, { omitH1: !0, headingLevel: 3, children: (0, i.jsx)(F, {}) }), '\n', (0, i.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, i.jsx)(G.B, { tokens: L }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(N.VK, { component: O, headingLevel: 3 }), '\n', (0, i.jsx)(N.$9, { component: O, headingLevel: 2 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(N.mu, { component: O, headingLevel: 3 }), '\n', (0, i.jsx)(N.K_, { component: O })] });
    }
    function M(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };

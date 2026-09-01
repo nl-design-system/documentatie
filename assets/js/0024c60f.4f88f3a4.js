@@ -67,8 +67,8 @@
      },
     });
    var g = t(39569),
-    u = t(10645),
-    m = t(58876),
+    m = t(10645),
+    u = t(58876),
     h = t(32385);
    const p = JSON.parse('{"Notification Banner":[{"name":"Alert","slug":"alert"},{"name":"Note","slug":"note"}],"Note":[{"name":"Alert","slug":"alert"},{"name":"Notification Banner","slug":"notification-banner"}],"Modal Dialog":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Drawer","slug":"drawer"},{"name":"Dialog","slug":"dialog"}],"Drawer":[{"name":"Modal Dialog","slug":"modal-dialog"},{"name":"Dialog","slug":"dialog"}],"Dialog":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Drawer","slug":"drawer"},{"name":"Modal Dialog","slug":"modal-dialog"}],"Alert Dialog":[{"name":"Alert","slug":"alert"},{"name":"Modal Dialog","slug":"modal-dialog"},{"name":"Dialog","slug":"dialog"}],"Alert":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Invalid Form Alert","slug":null},{"name":"Notification Banner","slug":"notification-banner"},{"name":"Note","slug":"note"}],"Unordered List":[{"name":"Ordered List","slug":"ordered-list"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Link List","slug":"link-list"},{"name":"Task List","slug":"task-list"}],"Ordered List":[{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Unordered List","slug":"unordered-list"}],"Link":[{"name":"Link List","slug":"link-list"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Button":[{"name":"Action Group","slug":"action-group"},{"name":"Login Link","slug":"login-link"}],"Mark":[{"name":"Strong","slug":"strong"}],"Code Block":[{"name":"Code","slug":"code"}],"Number Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Dot Badge","slug":"dot-badge"},{"name":"Status Badge","slug":"status-badge"}],"Heading":[{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Heading Group","slug":"heading-group"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Data Badge":[{"name":"Dot Badge","slug":"dot-badge"},{"name":"Number Badge","slug":"number-badge"},{"name":"Status Badge","slug":"status-badge"}],"Color Sample":[],"Code":[{"name":"Code Block","slug":"code-block"}],"Paragraph":[{"name":"Lead Paragraph","slug":"paragraph"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Strong","slug":"strong"}],"Form Field Error Message":[{"name":"Invalid Form Alert","slug":null}],"File":[{"name":"File Input","slug":"file-input"}],"Page Footer":[{"name":"Root","slug":null},{"name":"Body","slug":null},{"name":"Page Layout","slug":null},{"name":"Page Header","slug":"page-header"},{"name":"Page Body","slug":null}],"Page Header":[{"name":"Root","slug":null},{"name":"Body","slug":null},{"name":"Page Layout","slug":null},{"name":"Page Body","slug":null},{"name":"Page Footer","slug":"page-footer"},{"name":"Navigation Bar","slug":"navigation-bar"}],"Text Input":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Password Input","slug":"password-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input Group","slug":null}],"Date Input":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input Group","slug":"date-input-group"},{"name":"Date Picker","slug":"date-picker"}],"Description List":[{"name":"Data Summary","slug":"data-summary"},{"name":"Form Summary","slug":"form-summary"},{"name":"Table","slug":"table"}],"Fieldset":[{"name":"Date Input Group","slug":"date-input-group"},{"name":"Text Input Group","slug":null},{"name":"Radio Group","slug":"radio-group"},{"name":"Checkbox Group","slug":"checkbox-group"}],"Dot Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Number Badge","slug":"number-badge"},{"name":"Status Badge","slug":"status-badge"}],"Figure":[{"name":"Image","slug":"image"},{"name":"Video","slug":"video"}],"File Input":[{"name":"Form Field","slug":"form-field"},{"name":"File","slug":"file"}],"Password Input":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input","slug":"text-input"},{"name":"Text Input Group","slug":null}],"Status Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Dot Badge","slug":"dot-badge"},{"name":"Number Badge","slug":"number-badge"}],"Form Field Description":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Form Field Label Suffix","slug":"form-field-label-suffix"},{"name":"Form Field Error Message","slug":"form-field-error-message"}],"Breadcrumb Navigation":[],"Form Field Label":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Description","slug":"form-field-description"},{"name":"Form Field Label Suffix","slug":"form-field-label-suffix"},{"name":"Legend","slug":null}],"Table":[{"name":"Description List","slug":"description-list"},{"name":"Form Summary","slug":"form-summary"}],"Login Link":[{"name":"Button","slug":"button"}],"Link List":[{"name":"Link","slug":"link"},{"name":"Unordered List","slug":"unordered-list"}],"Select":[{"name":"Select Combobox","slug":"select-combobox"},{"name":"Radio Group","slug":"radio-group"}],"Image":[{"name":"Figure","slug":"figure"}],"Form Summary":[{"name":"Data Summary","slug":"data-summary"},{"name":"Description List","slug":"description-list"},{"name":"Table","slug":"table"}],"Card as Link":[{"name":"Case Card","slug":"case-card"}],"Text Area":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Description","slug":"form-field-description"},{"name":"Form Field Error Message","slug":"form-field-error-message"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Text Input","slug":"text-input"}],"Radio Button":[{"name":"Radio Group","slug":"radio-group"},{"name":"Checkbox","slug":"checkbox"},{"name":"Switch","slug":"switch"}],"Checkbox":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Radio Button","slug":"radio-button"},{"name":"Switch","slug":"switch"}],"Action Group":[{"name":"Button","slug":"button"}],"Side Navigation":[{"name":"Navigation Bar","slug":"navigation-bar"}],"Icon":[],"Accordion":[{"name":"Details","slug":null},{"name":"Tabs","slug":"tabs"}],"Skip Link":[],"Blockquote":[{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Pull Quote","slug":"pull-quote"}],"Heading Group":[{"name":"Heading","slug":"heading"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Subheading","slug":null},{"name":"Pre-heading","slug":null}],"Form Field":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Password Input","slug":"password-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Range","slug":"range"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input","slug":"text-input"},{"name":"Text Input Group","slug":null}],"Separator":[],"Heading 6":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 5":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 4":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 3":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 2":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 1":[{"name":"Heading","slug":"heading"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Form Field Label Suffix":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Form Field Description","slug":"form-field-description"}],"Progress List":[{"name":"Form Navigation","slug":"form-navigation"}],"Task Navigation":[{"name":"Topic Navigation","slug":null}],"Language Navigation":[],"Avatar":[{"name":"Figure","slug":"figure"}],"Calendar":[{"name":"Date Input","slug":"date-input"},{"name":"Date Input Group","slug":"date-input-group"},{"name":"Date Picker","slug":"date-picker"}],"Contact Timeline":[],"Switch":[{"name":"Checkbox","slug":"checkbox"},{"name":"Radio Button","slug":"radio-button"}],"Tabs":[{"name":"Accordion","slug":"accordion"}],"Navigation Bar":[{"name":"Side Navigation","slug":"side-navigation"}],"Select Combobox":[{"name":"Select","slug":"select"},{"name":"Search Input","slug":null}],"Case Card":[{"name":"Card as link","slug":"card-as-link"}],"Page Number Navigation":[],"Rich Text Content":[{"name":"Blockquote","slug":"blockquote"},{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Lead Paragraph","slug":"paragraph"},{"name":"Link","slug":"link"},{"name":"Ordered List","slug":"ordered-list"},{"name":"Paragraph","slug":"paragraph"},{"name":"Pre-heading","slug":"pre-heading"},{"name":"Strong","slug":"strong"},{"name":"Unordered List","slug":"unordered-list"}],"Range":[{"name":"Number Input","slug":"number-input"}],"Toggletip":[],"Logo":[],"Spinner":[{"name":"Progress Bar","slug":"progress-bar"}],"Checkbox Group":[{"name":"Checkbox","slug":"checkbox"},{"name":"Fieldset","slug":"fieldset"},{"name":"Radio Group","slug":"radio-group"}],"Date Input Group":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input","slug":"date-input"},{"name":"Date Picker","slug":"date-picker"},{"name":"Input Group","slug":"input-group"}],"Date Picker":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input","slug":"date-input"},{"name":"Date Input Group","slug":"date-input-group"}],"Radio Group":[{"name":"Radio Button","slug":"radio-button"},{"name":"Fieldset","slug":"fieldset"},{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Select","slug":"select"}],"Task List":[{"name":"Unordered List","slug":"unordered-list"}],"Progress Bar":[{"name":"Spinner","slug":"spinner"}],"Input Group":[{"name":"Date Input Group","slug":"date-input-group"},{"name":"Form Field Partial","slug":null},{"name":"Form Field","slug":"form-field"},{"name":"Text Input","slug":"text-input"}],"Form Navigation":[{"name":"Progress List","slug":"progress-list"}],"YouTube Video":[{"name":"Video","slug":"video"}],"Data Summary":[{"name":"Description List","slug":"description-list"},{"name":"Form Summary","slug":"form-summary"}],"Video":[{"name":"Youtube Video","slug":"youtube-video"},{"name":"Figure","slug":"figure"}],"Strong":[{"name":"Paragraph","slug":"paragraph"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Pull Quote":[{"name":"Blockquote","slug":"blockquote"}]}');
    var f = t(70348),
@@ -76,7 +76,7 @@
    const v = ({ component: e, headingLevel: n }) => {
      const t = e && e.projects.filter((e) => h.f4.includes(e.id)),
       l = t && h.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
-     return e && (0, c.jsx)(f.n, { children: l.map((t) => (0, c.jsx)(f.K, { className: (0, i.A)('ma-definition-of-done', t && `ma-definition-of-done--${(0, h.fX)(t.title)}`), heading: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(m._, { children: t.tasks.map(({ checked: e, name: t, id: r }) => (0, c.jsx)(m.Z, { headingLevel: n + 1, checked: e, heading: t, description: (0, h.qZ)(r) }, r)) }), (0, c.jsx)(r.fz, { children: (0, c.jsxs)(r.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) }, t.title)) });
+     return e && (0, c.jsx)(f.n, { children: l.map((t) => (0, c.jsx)(f.K, { className: (0, i.A)('ma-definition-of-done', t && `ma-definition-of-done--${(0, h.fX)(t.title)}`), heading: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(u._, { children: t.tasks.map(({ checked: e, name: t, id: r }) => (0, c.jsx)(u.Z, { headingLevel: n + 1, checked: e, heading: t, description: (0, h.qZ)(r) }, r)) }), (0, c.jsx)(r.fz, { children: (0, c.jsxs)(r.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) }, t.title)) });
     },
     w = ({ component: e, headingLevel: n }) => {
      const t = e && e.projects.filter((e) => !h.f4.includes(e.id));
@@ -136,7 +136,7 @@
     },
     x = ({ component: e, headingLevel: n, description: t }) => {
      const i = e && h.bo[e.relayStep];
-     return globalThis.isAstro ? null : e && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(u.p, { level: n, suffix: i && (0, c.jsx)(g.D, { state: i }), children: e.title }), (0, c.jsx)(r.fz, { lead: !0, children: t }), ['Help Wanted', 'Community'].includes(i) && (0, c.jsx)(j.s, { relayStep: i, description: `Schets van de ${e.title} component`, name: e.title })] });
+     return globalThis.isAstro ? null : e && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(m.p, { level: n, suffix: i && (0, c.jsx)(g.D, { state: i }), children: e.title }), (0, c.jsx)(r.fz, { lead: !0, children: t }), ['Help Wanted', 'Community'].includes(i) && (0, c.jsx)(j.s, { relayStep: i, description: `Schets van de ${e.title} component`, name: e.title })] });
     },
     k = ({ component: e }) => {
      const n = (e && p[e.title]) || [];
@@ -184,8 +184,8 @@
     c = t(70348),
     d = t(37168),
     g = t(86070);
-   const u = (e) => (0, g.jsx)(d.D, { ...e });
-   var m = t(6360),
+   const m = (e) => (0, g.jsx)(d.D, { ...e });
+   var u = t(6360),
     h = t(13526);
    const p = ({ title: e, sc: n, children: t, tags: a }) => {
      const o = (0, r.useId)(),
@@ -211,10 +211,10 @@
          (0, g.jsx)(s._Q, {
           className: 'ma-new-checklist__badge-list',
           children: d.map((e, n) => {
-           let t = (0, g.jsx)(m.KE, { children: e }, n);
+           let t = (0, g.jsx)(u.KE, { children: e }, n);
            if (/^[0-9]+\.[0-9]+\.[0-9]+$/.test(e)) {
             const r = l.pI.get(e);
-            t = (0, g.jsx)(i.N, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${r.sc} ${r.nl.title}`, style: { lineHeight: 1 }, children: (0, g.jsx)(m.KE, { children: `WCAG ${e}` }) }, n);
+            t = (0, g.jsx)(i.N, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${r.sc} ${r.nl.title}`, style: { lineHeight: 1 }, children: (0, g.jsx)(u.KE, { children: `WCAG ${e}` }) }, n);
            }
            return t;
           }),
@@ -227,7 +227,7 @@
     f = ({ children: e, headingLevel: n }) => {
      const t = r.useRef(null),
       [i, l] = (0, r.useState)([]),
-      [d, m] = (0, r.useState)([]),
+      [d, u] = (0, r.useState)([]),
       [h, p] = (0, r.useState)([]),
       [f, j] = (0, r.useState)(0),
       [v, w] = (0, r.useState)(0),
@@ -243,7 +243,7 @@
         e.dataset.tags?.split(',')?.forEach((e) => e && n.add(e));
        }),
         l(r),
-        m([...n]),
+        u([...n]),
         j(r.length),
         p([...n]));
       }, []),
@@ -267,7 +267,7 @@
            'aria-describedby': 'filter-results',
            'aria-labelledby': x,
            children: [
-            (0, g.jsx)(u, { level: n, id: x, children: 'Filter acceptatiecriteria voor:' }),
+            (0, g.jsx)(m, { level: n, id: x, children: 'Filter acceptatiecriteria voor:' }),
             Array.from(d).map((e) =>
              (0, g.jsxs)(
               s.zB,
@@ -317,7 +317,7 @@
   },
   32385(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => i, KF: () => u, mJ: () => p, VZ: () => A, cR: () => k, Pv: () => f, qZ: () => s, kD: () => b, QQ: () => C, B2: () => m, Pc: () => o, f4: () => a, GT: () => x, fX: () => l, eQ: () => w, B_: () => v, o_: () => j });
+   t.d(n, { bo: () => i, KF: () => m, mJ: () => p, VZ: () => A, cR: () => k, Pv: () => f, qZ: () => s, kD: () => b, QQ: () => C, B2: () => u, Pc: () => o, f4: () => a, GT: () => x, fX: () => l, eQ: () => w, B_: () => v, o_: () => j });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     l = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -329,11 +329,11 @@
     return Array.from(new Set(e));
    }
    const g = (e) => [...e].sort((e, n) => c.indexOf(e) - c.indexOf(n)),
-    u = (e) => {
+    m = (e) => {
      const n = e.flatMap(({ projects: e }) => e).flatMap((e) => h(e));
      return g(d(n));
     },
-    m = (e, n) => p(e).includes(n),
+    u = (e, n) => p(e).includes(n),
     h = (e) => {
      const n = / URL \(([^)]+)\)/;
      return g(d(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
@@ -539,7 +539,7 @@
   },
   50805(e, n, t) {
    'use strict';
-   t.d(n, { $n: () => m });
+   t.d(n, { $n: () => u });
    var r = t(15540),
     i = t(69967),
     l = t(86070),
@@ -578,15 +578,15 @@
       return e.includes(n);
      };
     },
-    u = g(['primary', 'secondary', 'subtle']),
-    m =
+    m = g(['primary', 'secondary', 'subtle']),
+    u =
      (g(['positive', 'negative']),
      (0, a.forwardRef)(function (e, n) {
       var t = e.children,
        r = e.className,
        c = e.iconOnly,
        g = e.iconEnd,
-       m = e.iconStart,
+       u = e.iconStart,
        h = e.purpose,
        p = e.hint,
        f = e.disabled,
@@ -598,11 +598,11 @@
        k = e.label,
        A = e.toggle,
        y = (0, i.A)(e, o),
-       C = Boolean(m || g),
+       C = Boolean(u || g),
        T = (a.Children.toArray(t).some(a.isValidElement) && C) || c;
-      return (0, l.jsxs)('button', d(d({ ref: n, type: x, className: (0, s.$)('nl-button', r, { 'nl-button--pressed': v, 'nl-button--busy': w, 'nl-button--disabled': f || j, 'nl-button--primary': 'primary' === h, 'nl-button--secondary': 'secondary' === h, 'nl-button--subtle': 'subtle' === h, 'nl-button--positive': u(h) && 'positive' === p, 'nl-button--negative': u(h) && 'negative' === p, 'nl-button--icon-only': c }), 'aria-pressed': A ? String(Boolean(v)) : void 0, 'aria-disabled': f || w ? 'true' : void 0, disabled: j }, y), {}, { children: [m && (0, l.jsx)('span', { className: 'nl-button__icon-start', children: m }), k && (0, l.jsx)('span', { className: 'nl-button__label', children: k }), T ? (0, l.jsx)('span', { className: c ? 'nl-button__label' : '', children: t }) : t, g && (0, l.jsx)('span', { className: 'nl-button__icon-end', children: g })] }));
+      return (0, l.jsxs)('button', d(d({ ref: n, type: x, className: (0, s.$)('nl-button', r, { 'nl-button--pressed': v, 'nl-button--busy': w, 'nl-button--disabled': f || j, 'nl-button--primary': 'primary' === h, 'nl-button--secondary': 'secondary' === h, 'nl-button--subtle': 'subtle' === h, 'nl-button--positive': m(h) && 'positive' === p, 'nl-button--negative': m(h) && 'negative' === p, 'nl-button--icon-only': c }), 'aria-pressed': A ? String(Boolean(v)) : void 0, 'aria-disabled': f || w ? 'true' : void 0, disabled: j }, y), {}, { children: [u && (0, l.jsx)('span', { className: 'nl-button__icon-start', children: u }), k && (0, l.jsx)('span', { className: 'nl-button__label', children: k }), T ? (0, l.jsx)('span', { className: c ? 'nl-button__label' : '', children: t }) : t, g && (0, l.jsx)('span', { className: 'nl-button__icon-end', children: g })] }));
      }));
-   m.displayName = 'Button';
+   u.displayName = 'Button';
   },
   51582(e, n, t) {
    'use strict';
@@ -732,8 +732,8 @@
     c = t(33691),
     d = t(21530),
     g = t(46447),
-    u = t(56421),
-    m = t(40889),
+    m = t(56421),
+    u = t(40889),
     h = t(59778);
    function p(e) {
     const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, l.R)(), ...e.components };
@@ -863,7 +863,7 @@
     $ = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...c.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...o.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
    function V(e) {
     const n = { h2: 'h2', h3: 'h3', ...(0, l.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, i.jsx)(G.Fc, { component: E, headingLevel: 1, description: I }), '\n', (0, i.jsx)(h.e, { component: E }), '\n', (0, i.jsx)(d.Zp, { className: 'ma-implementation-card', children: (0, i.jsxs)(d.Wu, { children: [(0, i.jsx)(u.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(g.dk, { children: [(0, i.jsxs)(g.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, i.jsx)(m.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(g.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, i.jsx)(m.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(u.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(g.dk, { children: [(0, i.jsxs)(g.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-color-sample--documentatie', children: [(0, i.jsx)(m.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(g.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/color-sample--documentatie', children: [(0, i.jsx)(m.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(u.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(g.dk, { children: [(0, i.jsxs)(g.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-css', children: [(0, i.jsx)(m.r, { brand: 'npm' }), ' @nl-design-system-candidate/color-sample-css'] }), (0, i.jsxs)(g.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-react', children: [(0, i.jsx)(m.r, { brand: 'npm' }), ' @nl-design-system-candidate/color-sample-react'] }), (0, i.jsxs)(g.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-tokens', children: [(0, i.jsx)(m.r, { brand: 'npm' }), ' @nl-design-system-candidate/color-sample-tokens'] })] })] }) }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(c.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(o.Ay, {}), '\n', (0, i.jsx)(D.b, { headingLevel: '4', children: N.map(({ component: e, ...n }) => (0, i.jsx)(D.e, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(D.b, { headingLevel: '4', children: N.map(({ component: e, ...n }) => (0, i.jsx)(D.e, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(L.o, { omitH1: !0, headingLevel: 2, children: (0, i.jsx)(H, {}) }), '\n', (0, i.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, i.jsx)(F.B, { tokens: _ }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(G.VK, { component: E, headingLevel: 3 }), '\n', (0, i.jsx)(G.$9, { component: E, headingLevel: 2 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(G.mu, { component: E, headingLevel: 3 }), '\n', (0, i.jsx)(G.K_, { component: E })] });
+    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, i.jsx)(G.Fc, { component: E, headingLevel: 1, description: I }), '\n', (0, i.jsx)(h.e, { component: E }), '\n', (0, i.jsx)(d.Zp, { className: 'ma-implementation-card', children: (0, i.jsxs)(d.Wu, { children: [(0, i.jsx)(m.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, i.jsxs)(g.dk, { children: [(0, i.jsxs)(g.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, i.jsx)(u.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, i.jsxs)(g.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, i.jsx)(u.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, i.jsx)(m.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, i.jsxs)(g.dk, { children: [(0, i.jsxs)(g.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-color-sample--documentatie', children: [(0, i.jsx)(u.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, i.jsxs)(g.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/color-sample--documentatie', children: [(0, i.jsx)(u.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, i.jsx)(m.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, i.jsxs)(g.dk, { children: [(0, i.jsxs)(g.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-css', children: [(0, i.jsx)(u.r, { brand: 'npm' }), ' @nl-design-system-candidate/color-sample-css'] }), (0, i.jsxs)(g.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-react', children: [(0, i.jsx)(u.r, { brand: 'npm' }), ' @nl-design-system-candidate/color-sample-react'] }), (0, i.jsxs)(g.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/color-sample-tokens', children: [(0, i.jsx)(u.r, { brand: 'npm' }), ' @nl-design-system-candidate/color-sample-tokens'] })] })] }) }), '\n', (0, i.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, i.jsx)(c.Ay, {}), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, i.jsx)(o.Ay, {}), '\n', (0, i.jsx)(D.b, { headingLevel: '4', children: N.map(({ component: e, ...n }) => (0, i.jsx)(D.e, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, i.jsx)(a.Ay, {}), '\n', (0, i.jsx)(D.b, { headingLevel: '4', children: N.map(({ component: e, ...n }) => (0, i.jsx)(D.e, { ...n, children: (0, i.jsx)(e, {}) })) }), '\n', (0, i.jsx)(L.o, { omitH1: !0, headingLevel: 2, children: (0, i.jsx)(H, {}) }), '\n', (0, i.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, i.jsx)(F.B, { tokens: _ }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(G.VK, { component: E, headingLevel: 3 }), '\n', (0, i.jsx)(G.$9, { component: E, headingLevel: 2 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(G.mu, { component: E, headingLevel: 3 }), '\n', (0, i.jsx)(G.K_, { component: E })] });
    }
    function U(e = {}) {
     const { wrapper: n } = { ...(0, l.R)(), ...e.components };
@@ -885,8 +885,8 @@
     }),
     c = ({ className: e, classNamePanel: n, label: t, heading: i, headingLevel: o, headingApperance: c, ...d }) => {
      const g = (0, r.A)('utrecht-accordion__section', e),
-      u = (0, r.A)('utrecht-accordion__panel', n);
-     return (0, a.jsxs)('details', { className: g, ...d, children: [(0, a.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, a.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, a.jsx)('span', { className: 'nl-button__icon-start', children: (0, a.jsx)(l.A, {}) }), (0, a.jsxs)('span', { className: 'nl-button__label', children: [i && (0, a.jsx)(s.D, { level: o, appearance: c, children: i }), t] })] }) }), (0, a.jsx)('div', { className: u, children: d.children })] });
+      m = (0, r.A)('utrecht-accordion__panel', n);
+     return (0, a.jsxs)('details', { className: g, ...d, children: [(0, a.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, a.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, a.jsx)('span', { className: 'nl-button__icon-start', children: (0, a.jsx)(l.A, {}) }), (0, a.jsxs)('span', { className: 'nl-button__label', children: [i && (0, a.jsx)(s.D, { level: o, appearance: c, children: i }), t] })] }) }), (0, a.jsx)('div', { className: m, children: d.children })] });
     };
   },
   70561(e, n, t) {
@@ -906,74 +906,78 @@
   },
   70903(e, n, t) {
    'use strict';
-   t.d(n, { B: () => G });
+   t.d(n, { B: () => T });
    var r = t(96547),
     i = t(38295),
     l = t(32385),
     s = t(46447),
-    a = t(68148),
-    o = t(9016),
-    c = t(91635),
-    d = t(30734),
-    g = t(4603),
-    u = t(29181),
-    m = t(86070);
-   function h({ children: e, content: n, language: t }) {
-    return 'clipboard' in navigator
-     ? (0, m.jsxs)(s.$n, {
+    a = t(30758),
+    o = t(4603),
+    c = t(29181),
+    d = t(86070);
+   function g({ children: e, content: n }) {
+    const [t, r] = (0, a.useState)(!1);
+    return (
+     (0, a.useEffect)(() => {
+      'clipboard' in navigator && r(!0);
+     }, []),
+     (0, d.jsx)(d.Fragment, {
+      children:
+       t &&
+       (0, d.jsxs)(s.$n, {
         type: 'button',
         appearance: 'secondary-action-button',
         onClick: async function () {
          try {
-          const e = await d.Ay.format(n, { parser: t, plugins: [a.A, o.Ay, c.Ay] });
-          await navigator.clipboard.writeText(e);
+          await navigator.clipboard.writeText(n);
          } catch (e) {
           console.error(e);
          }
         },
-        children: [e, (0, m.jsx)(u.In, { children: (0, m.jsx)(g.A, {}) })],
-       })
-     : null;
+        children: [e, (0, d.jsx)(c.In, { children: (0, d.jsx)(o.A, {}) })],
+       }),
+     })
+    );
    }
-   var p = t(43864),
-    f = t(35193),
-    j = t(82999),
-    v = t(13088),
-    w = t(91525),
-    b = t(24214),
-    x = t(92081),
-    k = t(1375),
-    A = t(73563),
-    y = t(23436),
-    C = t(79532),
-    T = t(30758);
-   const R = { boxShadow: p.A, color: f.A, cursor: j.A, dimension: v.A, fontFamily: w.A, fontFamilies: w.A, fontSize: b.A, fontSizes: b.A, fontWeight: x.A, fontWeights: x.A, lineHeight: k.A, lineHeights: k.A, number: A.A, other: y.A, textDecoration: C.A },
-    S = ({ type: e }) => {
-     const n = Object.hasOwn(R, e) ? e : 'other';
-     return (0, m.jsx)(u.In, { children: (0, T.createElement)(R[n]) });
+   var m = t(43864),
+    u = t(35193),
+    h = t(82999),
+    p = t(13088),
+    f = t(91525),
+    j = t(24214),
+    v = t(92081),
+    w = t(1375),
+    b = t(73563),
+    x = t(23436),
+    k = t(79532);
+   const A = { boxShadow: m.A, color: u.A, cursor: h.A, dimension: p.A, fontFamily: f.A, fontFamilies: f.A, fontSize: j.A, fontSizes: j.A, fontWeight: v.A, fontWeights: v.A, lineHeight: w.A, lineHeights: w.A, number: b.A, other: x.A, textDecoration: k.A },
+    y = ({ type: e }) => {
+     const n = Object.hasOwn(A, e) ? e : 'other';
+     return (0, d.jsx)(c.In, { children: (0, a.createElement)(A[n]) });
     };
-   var N = t(76223);
-   function G({ tokens: e }) {
+   var C = t(76223);
+   function T({ tokens: e }) {
     const n = (0, l.kD)(e),
-     t = (0, N.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     t = (0, C.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      a = (0, l.GT)(n),
      o = a.map((e) => (0, l.B_)(e) + ': ;').join('\n'),
-     c = JSON.stringify(t);
-    return (0, m.jsxs)(m.Fragment, {
+     c = JSON.stringify(t, null, 2);
+    return (0, d.jsxs)('div', {
+     className: 'ma-flow',
      children: [
-      (0, m.jsxs)(s.XI, {
+      (0, d.jsxs)(s.XI, {
        children: [
-        (0, m.jsx)(s.A0, { children: (0, m.jsxs)(s.Hj, { children: [(0, m.jsx)(s.M_, { children: 'name' }), (0, m.jsx)(s.M_, { children: 'type' })] }) }),
-        (0, m.jsx)(s.BF, {
+        (0, d.jsx)(s.A0, { children: (0, d.jsxs)(s.Hj, { children: [(0, d.jsx)(s.M_, { children: 'name' }), (0, d.jsx)(s.M_, { children: 'type' })] }) }),
+        (0, d.jsx)(s.BF, {
          children: a.map((n) => {
           const t = (0, l.o_)(n),
            a = (0, l.eQ)(e, n).$type;
-          return (0, m.jsxs)(s.Hj, { children: [(0, m.jsx)(s.nA, { children: (0, m.jsx)(r.C, { children: (0, m.jsx)(s.kf, { children: t }) }) }), (0, m.jsx)(s.nA, { children: (0, m.jsxs)(i.K, { children: [(0, m.jsx)(S, { type: a }), ' ', a] }) })] }, t);
+          return (0, d.jsxs)(s.Hj, { children: [(0, d.jsx)(s.nA, { children: (0, d.jsx)(r.C, { children: (0, d.jsx)(s.kf, { children: t }) }) }), (0, d.jsx)(s.nA, { children: (0, d.jsxs)(i.K, { children: [(0, d.jsx)(y, { type: a }), ' ', a] }) })] }, t);
          }),
         }),
        ],
       }),
-      (0, m.jsxs)(s.e2, { children: [(0, m.jsx)(h, { content: c, language: 'json', children: 'Kopieer als JSON' }), (0, m.jsx)(h, { content: o, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, d.jsxs)(s.e2, { children: [(0, d.jsx)(g, { content: c, children: 'Kopieer als JSON' }), (0, d.jsx)(g, { content: o, children: 'Kopieer als CSS' })] }),
      ],
     });
    }

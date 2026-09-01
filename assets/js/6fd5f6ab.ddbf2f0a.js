@@ -626,74 +626,78 @@
   },
   70903(e, n, t) {
    'use strict';
-   t.d(n, { B: () => H });
+   t.d(n, { B: () => C });
    var i = t(96547),
     s = t(38295),
     a = t(32385),
     r = t(46447),
-    o = t(68148),
-    l = t(9016),
-    d = t(91635),
-    c = t(30734),
-    g = t(4603),
-    u = t(29181),
-    h = t(86070);
-   function p({ children: e, content: n, language: t }) {
-    return 'clipboard' in navigator
-     ? (0, h.jsxs)(r.$n, {
+    o = t(30758),
+    l = t(4603),
+    d = t(29181),
+    c = t(86070);
+   function g({ children: e, content: n }) {
+    const [t, i] = (0, o.useState)(!1);
+    return (
+     (0, o.useEffect)(() => {
+      'clipboard' in navigator && i(!0);
+     }, []),
+     (0, c.jsx)(c.Fragment, {
+      children:
+       t &&
+       (0, c.jsxs)(r.$n, {
         type: 'button',
         appearance: 'secondary-action-button',
         onClick: async function () {
          try {
-          const e = await c.Ay.format(n, { parser: t, plugins: [o.A, l.Ay, d.Ay] });
-          await navigator.clipboard.writeText(e);
+          await navigator.clipboard.writeText(n);
          } catch (e) {
           console.error(e);
          }
         },
-        children: [e, (0, h.jsx)(u.In, { children: (0, h.jsx)(g.A, {}) })],
-       })
-     : null;
+        children: [e, (0, c.jsx)(d.In, { children: (0, c.jsx)(l.A, {}) })],
+       }),
+     })
+    );
    }
-   var m = t(43864),
-    j = t(35193),
-    x = t(82999),
-    f = t(13088),
-    k = t(91525),
-    v = t(24214),
-    w = t(92081),
-    b = t(1375),
-    A = t(73563),
-    y = t(23436),
-    R = t(79532),
-    C = t(30758);
-   const T = { boxShadow: m.A, color: j.A, cursor: x.A, dimension: f.A, fontFamily: k.A, fontFamilies: k.A, fontSize: v.A, fontSizes: v.A, fontWeight: w.A, fontWeights: w.A, lineHeight: b.A, lineHeights: b.A, number: A.A, other: y.A, textDecoration: R.A },
-    D = ({ type: e }) => {
-     const n = Object.hasOwn(T, e) ? e : 'other';
-     return (0, h.jsx)(u.In, { children: (0, C.createElement)(T[n]) });
+   var u = t(43864),
+    h = t(35193),
+    p = t(82999),
+    m = t(13088),
+    j = t(91525),
+    x = t(24214),
+    f = t(92081),
+    k = t(1375),
+    v = t(73563),
+    w = t(23436),
+    b = t(79532);
+   const A = { boxShadow: u.A, color: h.A, cursor: p.A, dimension: m.A, fontFamily: j.A, fontFamilies: j.A, fontSize: x.A, fontSizes: x.A, fontWeight: f.A, fontWeights: f.A, lineHeight: k.A, lineHeights: k.A, number: v.A, other: w.A, textDecoration: b.A },
+    y = ({ type: e }) => {
+     const n = Object.hasOwn(A, e) ? e : 'other';
+     return (0, c.jsx)(d.In, { children: (0, o.createElement)(A[n]) });
     };
-   var G = t(76223);
-   function H({ tokens: e }) {
+   var R = t(76223);
+   function C({ tokens: e }) {
     const n = (0, a.kD)(e),
-     t = (0, G.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     t = (0, R.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      o = (0, a.GT)(n),
      l = o.map((e) => (0, a.B_)(e) + ': ;').join('\n'),
-     d = JSON.stringify(t);
-    return (0, h.jsxs)(h.Fragment, {
+     d = JSON.stringify(t, null, 2);
+    return (0, c.jsxs)('div', {
+     className: 'ma-flow',
      children: [
-      (0, h.jsxs)(r.XI, {
+      (0, c.jsxs)(r.XI, {
        children: [
-        (0, h.jsx)(r.A0, { children: (0, h.jsxs)(r.Hj, { children: [(0, h.jsx)(r.M_, { children: 'name' }), (0, h.jsx)(r.M_, { children: 'type' })] }) }),
-        (0, h.jsx)(r.BF, {
+        (0, c.jsx)(r.A0, { children: (0, c.jsxs)(r.Hj, { children: [(0, c.jsx)(r.M_, { children: 'name' }), (0, c.jsx)(r.M_, { children: 'type' })] }) }),
+        (0, c.jsx)(r.BF, {
          children: o.map((n) => {
           const t = (0, a.o_)(n),
            o = (0, a.eQ)(e, n).$type;
-          return (0, h.jsxs)(r.Hj, { children: [(0, h.jsx)(r.nA, { children: (0, h.jsx)(i.C, { children: (0, h.jsx)(r.kf, { children: t }) }) }), (0, h.jsx)(r.nA, { children: (0, h.jsxs)(s.K, { children: [(0, h.jsx)(D, { type: o }), ' ', o] }) })] }, t);
+          return (0, c.jsxs)(r.Hj, { children: [(0, c.jsx)(r.nA, { children: (0, c.jsx)(i.C, { children: (0, c.jsx)(r.kf, { children: t }) }) }), (0, c.jsx)(r.nA, { children: (0, c.jsxs)(s.K, { children: [(0, c.jsx)(y, { type: o }), ' ', o] }) })] }, t);
          }),
         }),
        ],
       }),
-      (0, h.jsxs)(r.e2, { children: [(0, h.jsx)(p, { content: d, language: 'json', children: 'Kopieer als JSON' }), (0, h.jsx)(p, { content: l, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, c.jsxs)(r.e2, { children: [(0, c.jsx)(g, { content: d, children: 'Kopieer als JSON' }), (0, c.jsx)(g, { content: l, children: 'Kopieer als CSS' })] }),
      ],
     });
    }

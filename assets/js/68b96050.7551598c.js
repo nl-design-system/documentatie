@@ -53,18 +53,18 @@
     });
    var g = t(39569),
     u = t(10645),
-    p = t(58876),
-    m = t(32385);
+    m = t(58876),
+    p = t(32385);
    const h = JSON.parse('{"Notification Banner":[{"name":"Alert","slug":"alert"},{"name":"Note","slug":"note"}],"Note":[{"name":"Alert","slug":"alert"},{"name":"Notification Banner","slug":"notification-banner"}],"Modal Dialog":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Drawer","slug":"drawer"},{"name":"Dialog","slug":"dialog"}],"Drawer":[{"name":"Modal Dialog","slug":"modal-dialog"},{"name":"Dialog","slug":"dialog"}],"Dialog":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Drawer","slug":"drawer"},{"name":"Modal Dialog","slug":"modal-dialog"}],"Alert Dialog":[{"name":"Alert","slug":"alert"},{"name":"Modal Dialog","slug":"modal-dialog"},{"name":"Dialog","slug":"dialog"}],"Alert":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Invalid Form Alert","slug":null},{"name":"Notification Banner","slug":"notification-banner"},{"name":"Note","slug":"note"}],"Unordered List":[{"name":"Ordered List","slug":"ordered-list"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Link List","slug":"link-list"},{"name":"Task List","slug":"task-list"}],"Ordered List":[{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Unordered List","slug":"unordered-list"}],"Link":[{"name":"Link List","slug":"link-list"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Button":[{"name":"Action Group","slug":"action-group"},{"name":"Login Link","slug":"login-link"}],"Mark":[{"name":"Strong","slug":"strong"}],"Code Block":[{"name":"Code","slug":"code"}],"Number Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Dot Badge","slug":"dot-badge"},{"name":"Status Badge","slug":"status-badge"}],"Heading":[{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Heading Group","slug":"heading-group"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Data Badge":[{"name":"Dot Badge","slug":"dot-badge"},{"name":"Number Badge","slug":"number-badge"},{"name":"Status Badge","slug":"status-badge"}],"Color Sample":[],"Code":[{"name":"Code Block","slug":"code-block"}],"Paragraph":[{"name":"Lead Paragraph","slug":"paragraph"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Strong","slug":"strong"}],"Form Field Error Message":[{"name":"Invalid Form Alert","slug":null}],"File":[{"name":"File Input","slug":"file-input"}],"Page Footer":[{"name":"Root","slug":null},{"name":"Body","slug":null},{"name":"Page Layout","slug":null},{"name":"Page Header","slug":"page-header"},{"name":"Page Body","slug":null}],"Page Header":[{"name":"Root","slug":null},{"name":"Body","slug":null},{"name":"Page Layout","slug":null},{"name":"Page Body","slug":null},{"name":"Page Footer","slug":"page-footer"},{"name":"Navigation Bar","slug":"navigation-bar"}],"Text Input":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Password Input","slug":"password-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input Group","slug":null}],"Date Input":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input Group","slug":"date-input-group"},{"name":"Date Picker","slug":"date-picker"}],"Description List":[{"name":"Data Summary","slug":"data-summary"},{"name":"Form Summary","slug":"form-summary"},{"name":"Table","slug":"table"}],"Fieldset":[{"name":"Date Input Group","slug":"date-input-group"},{"name":"Text Input Group","slug":null},{"name":"Radio Group","slug":"radio-group"},{"name":"Checkbox Group","slug":"checkbox-group"}],"Dot Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Number Badge","slug":"number-badge"},{"name":"Status Badge","slug":"status-badge"}],"Figure":[{"name":"Image","slug":"image"},{"name":"Video","slug":"video"}],"File Input":[{"name":"Form Field","slug":"form-field"},{"name":"File","slug":"file"}],"Password Input":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input","slug":"text-input"},{"name":"Text Input Group","slug":null}],"Status Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Dot Badge","slug":"dot-badge"},{"name":"Number Badge","slug":"number-badge"}],"Form Field Description":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Form Field Label Suffix","slug":"form-field-label-suffix"},{"name":"Form Field Error Message","slug":"form-field-error-message"}],"Breadcrumb Navigation":[],"Form Field Label":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Description","slug":"form-field-description"},{"name":"Form Field Label Suffix","slug":"form-field-label-suffix"},{"name":"Legend","slug":null}],"Table":[{"name":"Description List","slug":"description-list"},{"name":"Form Summary","slug":"form-summary"}],"Login Link":[{"name":"Button","slug":"button"}],"Link List":[{"name":"Link","slug":"link"},{"name":"Unordered List","slug":"unordered-list"}],"Select":[{"name":"Select Combobox","slug":"select-combobox"},{"name":"Radio Group","slug":"radio-group"}],"Image":[{"name":"Figure","slug":"figure"}],"Form Summary":[{"name":"Data Summary","slug":"data-summary"},{"name":"Description List","slug":"description-list"},{"name":"Table","slug":"table"}],"Card as Link":[{"name":"Case Card","slug":"case-card"}],"Text Area":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Description","slug":"form-field-description"},{"name":"Form Field Error Message","slug":"form-field-error-message"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Text Input","slug":"text-input"}],"Radio Button":[{"name":"Radio Group","slug":"radio-group"},{"name":"Checkbox","slug":"checkbox"},{"name":"Switch","slug":"switch"}],"Checkbox":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Radio Button","slug":"radio-button"},{"name":"Switch","slug":"switch"}],"Action Group":[{"name":"Button","slug":"button"}],"Side Navigation":[{"name":"Navigation Bar","slug":"navigation-bar"}],"Icon":[],"Accordion":[{"name":"Details","slug":null},{"name":"Tabs","slug":"tabs"}],"Skip Link":[],"Blockquote":[{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Pull Quote","slug":"pull-quote"}],"Heading Group":[{"name":"Heading","slug":"heading"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Subheading","slug":null},{"name":"Pre-heading","slug":null}],"Form Field":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Password Input","slug":"password-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Range","slug":"range"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input","slug":"text-input"},{"name":"Text Input Group","slug":null}],"Separator":[],"Heading 6":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 5":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 4":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 3":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 2":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 1":[{"name":"Heading","slug":"heading"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Form Field Label Suffix":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Form Field Description","slug":"form-field-description"}],"Progress List":[{"name":"Form Navigation","slug":"form-navigation"}],"Task Navigation":[{"name":"Topic Navigation","slug":null}],"Language Navigation":[],"Avatar":[{"name":"Figure","slug":"figure"}],"Calendar":[{"name":"Date Input","slug":"date-input"},{"name":"Date Input Group","slug":"date-input-group"},{"name":"Date Picker","slug":"date-picker"}],"Contact Timeline":[],"Switch":[{"name":"Checkbox","slug":"checkbox"},{"name":"Radio Button","slug":"radio-button"}],"Tabs":[{"name":"Accordion","slug":"accordion"}],"Navigation Bar":[{"name":"Side Navigation","slug":"side-navigation"}],"Select Combobox":[{"name":"Select","slug":"select"},{"name":"Search Input","slug":null}],"Case Card":[{"name":"Card as link","slug":"card-as-link"}],"Page Number Navigation":[],"Rich Text Content":[{"name":"Blockquote","slug":"blockquote"},{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Lead Paragraph","slug":"paragraph"},{"name":"Link","slug":"link"},{"name":"Ordered List","slug":"ordered-list"},{"name":"Paragraph","slug":"paragraph"},{"name":"Pre-heading","slug":"pre-heading"},{"name":"Strong","slug":"strong"},{"name":"Unordered List","slug":"unordered-list"}],"Range":[{"name":"Number Input","slug":"number-input"}],"Toggletip":[],"Logo":[],"Spinner":[{"name":"Progress Bar","slug":"progress-bar"}],"Checkbox Group":[{"name":"Checkbox","slug":"checkbox"},{"name":"Fieldset","slug":"fieldset"},{"name":"Radio Group","slug":"radio-group"}],"Date Input Group":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input","slug":"date-input"},{"name":"Date Picker","slug":"date-picker"},{"name":"Input Group","slug":"input-group"}],"Date Picker":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input","slug":"date-input"},{"name":"Date Input Group","slug":"date-input-group"}],"Radio Group":[{"name":"Radio Button","slug":"radio-button"},{"name":"Fieldset","slug":"fieldset"},{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Select","slug":"select"}],"Task List":[{"name":"Unordered List","slug":"unordered-list"}],"Progress Bar":[{"name":"Spinner","slug":"spinner"}],"Input Group":[{"name":"Date Input Group","slug":"date-input-group"},{"name":"Form Field Partial","slug":null},{"name":"Form Field","slug":"form-field"},{"name":"Text Input","slug":"text-input"}],"Form Navigation":[{"name":"Progress List","slug":"progress-list"}],"YouTube Video":[{"name":"Video","slug":"video"}],"Data Summary":[{"name":"Description List","slug":"description-list"},{"name":"Form Summary","slug":"form-summary"}],"Video":[{"name":"Youtube Video","slug":"youtube-video"},{"name":"Figure","slug":"figure"}],"Strong":[{"name":"Paragraph","slug":"paragraph"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Pull Quote":[{"name":"Blockquote","slug":"blockquote"}]}');
    var j = t(70348),
     x = t(85162);
    const f = ({ component: e, headingLevel: n }) => {
-     const t = e && e.projects.filter((e) => m.f4.includes(e.id)),
-      s = t && m.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
-     return e && (0, d.jsx)(j.n, { children: s.map((t) => (0, d.jsx)(j.K, { className: (0, r.A)('ma-definition-of-done', t && `ma-definition-of-done--${(0, m.fX)(t.title)}`), heading: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(p._, { children: t.tasks.map(({ checked: e, name: t, id: a }) => (0, d.jsx)(p.Z, { headingLevel: n + 1, checked: e, heading: t, description: (0, m.qZ)(a) }, a)) }), (0, d.jsx)(a.fz, { children: (0, d.jsxs)(a.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) }, t.title)) });
+     const t = e && e.projects.filter((e) => p.f4.includes(e.id)),
+      s = t && p.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
+     return e && (0, d.jsx)(j.n, { children: s.map((t) => (0, d.jsx)(j.K, { className: (0, r.A)('ma-definition-of-done', t && `ma-definition-of-done--${(0, p.fX)(t.title)}`), heading: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(m._, { children: t.tasks.map(({ checked: e, name: t, id: a }) => (0, d.jsx)(m.Z, { headingLevel: n + 1, checked: e, heading: t, description: (0, p.qZ)(a) }, a)) }), (0, d.jsx)(a.fz, { children: (0, d.jsxs)(a.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) }, t.title)) });
     },
     w = ({ component: e, headingLevel: n }) => {
-     const t = e && e.projects.filter((e) => !m.f4.includes(e.id));
+     const t = e && e.projects.filter((e) => !p.f4.includes(e.id));
      return e && t.length
       ? (0, d.jsx)(i.AC, {
          appearance: 'large',
@@ -78,7 +78,7 @@
           .map((e) => {
            const t = e.tasks.find(({ name: e }) => 'Naam' === e),
             r = t?.value,
-            o = (0, m.Pv)(e),
+            o = (0, p.Pv)(e),
             l = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${r} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${r} voor visuele regressie tests` }],
@@ -120,7 +120,7 @@
      return e && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(a.DZ, { id: 'help-component-verbeteren', level: n, children: 'Help om deze component te verbeteren' }), (0, d.jsxs)(a.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, d.jsxs)(a.Xy, { children: [r ? (0, d.jsxs)(a.Er, { children: ['Vul de ', (0, d.jsx)(a.N_, { href: r, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, d.jsxs)(a.Er, { children: [(0, d.jsxs)(a.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, d.jsxs)(a.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, d.jsx)(a.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, d.jsx)(a.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
     b = ({ component: e, headingLevel: n, description: t }) => {
-     const r = e && m.bo[e.relayStep];
+     const r = e && p.bo[e.relayStep];
      return globalThis.isAstro ? null : e && (0, d.jsxs)(d.Fragment, { children: [(0, d.jsx)(u.p, { level: n, suffix: r && (0, d.jsx)(g.D, { state: r }), children: e.title }), (0, d.jsx)(a.fz, { lead: !0, children: t }), ['Help Wanted', 'Community'].includes(r) && (0, d.jsx)(x.s, { relayStep: r, description: `Schets van de ${e.title} component`, name: e.title })] });
     },
     v = ({ component: e }) => {
@@ -170,8 +170,8 @@
     c = t(37168),
     g = t(86070);
    const u = (e) => (0, g.jsx)(c.D, { ...e });
-   var p = t(6360),
-    m = t(13526);
+   var m = t(6360),
+    p = t(13526);
    const h = ({ title: e, sc: n, children: t, tags: o }) => {
      const l = (0, a.useId)(),
       c = [...o];
@@ -183,7 +183,7 @@
      return (0, g.jsx)('div', {
       role: 'listitem',
       'data-tags': o.join(','),
-      className: (0, m.A)(
+      className: (0, p.A)(
        'ma-new-checklist__item',
        o.map((e) => `ma-new-checklist__item--${e}`),
       ),
@@ -196,10 +196,10 @@
          (0, g.jsx)(i._Q, {
           className: 'ma-new-checklist__badge-list',
           children: c.map((e, n) => {
-           let t = (0, g.jsx)(p.KE, { children: e }, n);
+           let t = (0, g.jsx)(m.KE, { children: e }, n);
            if (/^[0-9]+\.[0-9]+\.[0-9]+$/.test(e)) {
             const a = s.pI.get(e);
-            t = (0, g.jsx)(r.N, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${a.sc} ${a.nl.title}`, style: { lineHeight: 1 }, children: (0, g.jsx)(p.KE, { children: `WCAG ${e}` }) }, n);
+            t = (0, g.jsx)(r.N, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${a.sc} ${a.nl.title}`, style: { lineHeight: 1 }, children: (0, g.jsx)(m.KE, { children: `WCAG ${e}` }) }, n);
            }
            return t;
           }),
@@ -212,11 +212,11 @@
     j = ({ children: e, headingLevel: n }) => {
      const t = a.useRef(null),
       [r, s] = (0, a.useState)([]),
-      [c, p] = (0, a.useState)([]),
-      [m, h] = (0, a.useState)([]),
+      [c, m] = (0, a.useState)([]),
+      [p, h] = (0, a.useState)([]),
       [j, x] = (0, a.useState)(0),
       [f, w] = (0, a.useState)(0),
-      k = (e) => m.includes(e),
+      k = (e) => p.includes(e),
       b = (0, a.useId)();
      return (
       a.useEffect(() => {
@@ -228,12 +228,12 @@
         e.dataset.tags?.split(',')?.forEach((e) => e && n.add(e));
        }),
         s(a),
-        p([...n]),
+        m([...n]),
         x(a.length),
         h([...n]));
       }, []),
       a.useEffect(() => {
-       const e = m,
+       const e = p,
         n = [],
         t = [];
        (r.forEach((a) => {
@@ -242,7 +242,7 @@
         n.forEach((e) => (e.hidden = !1)),
         t.forEach((e) => (e.hidden = !0)),
         w(n.length));
-      }, [m]),
+      }, [p]),
       (0, g.jsxs)('div', {
        children: [
         (0, g.jsxs)('div', {
@@ -264,7 +264,7 @@
                  id: e,
                  onChange: () =>
                   ((e, n) => {
-                   const t = ('boolean' == typeof n ? n : !k(e)) ? [...m, e] : m.filter((n) => n !== e);
+                   const t = ('boolean' == typeof n ? n : !k(e)) ? [...p, e] : p.filter((n) => n !== e);
                    h(t);
                   })(e),
                 }),
@@ -302,7 +302,7 @@
   },
   32385(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => r, KF: () => u, mJ: () => h, VZ: () => A, cR: () => v, Pv: () => j, qZ: () => i, kD: () => k, QQ: () => T, B2: () => p, Pc: () => l, f4: () => o, GT: () => b, fX: () => s, eQ: () => w, B_: () => f, o_: () => x });
+   t.d(n, { bo: () => r, KF: () => u, mJ: () => h, VZ: () => A, cR: () => v, Pv: () => j, qZ: () => i, kD: () => k, QQ: () => T, B2: () => m, Pc: () => l, f4: () => o, GT: () => b, fX: () => s, eQ: () => w, B_: () => f, o_: () => x });
    const a = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     s = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -315,17 +315,17 @@
    }
    const g = (e) => [...e].sort((e, n) => d.indexOf(e) - d.indexOf(n)),
     u = (e) => {
-     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => m(e));
+     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => p(e));
      return g(c(n));
     },
-    p = (e, n) => h(e).includes(n),
-    m = (e) => {
+    m = (e, n) => h(e).includes(n),
+    p = (e) => {
      const n = / URL \(([^)]+)\)/;
      return g(c(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
     },
-    h = (e) => g(c(e.projects.flatMap((e) => m(e)))),
+    h = (e) => g(c(e.projects.flatMap((e) => p(e)))),
     j = (e) => {
-     const n = m(e),
+     const n = p(e),
       t = ((e) => {
        const n = e.tasks.find(({ name: e }) => 'Naam' === e);
        return n?.value || '';
@@ -404,15 +404,15 @@
    }
    var g = t(81165),
     u = t(82209),
-    p = t(44293),
-    m = t(51604),
+    m = t(44293),
+    p = t(51604),
     h = t(76703),
     j = t(72954),
     x = t(46422),
     f = t(89445),
     w = t(27823);
    const k = [
-     { title: 'De contrastverhouding van de tekstkleur van de paragraaf met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: p.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'De contrastverhouding van de tekstkleur van de paragraaf met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: m.Ay, tags: ['designer', 'contentmaker'] },
      { title: 'Als een paragraaftekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: h.Ay, tags: ['developer', 'contentmaker'] },
      { title: 'Als je de hele webpagina inzoomt tot 400% blijft de paragraaftekst leesbaar.', sc: '1.4.10', status: '', component: g.Ay, tags: ['developer'] },
      { title: 'De Paragraph is niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: j.Ay, tags: ['developer'] },
@@ -429,7 +429,7 @@
       },
       tags: ['developer'],
      },
-     { title: 'Als je de paragraaftekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: m.Ay, tags: ['developer'] },
+     { title: 'Als je de paragraaftekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: p.Ay, tags: ['developer'] },
      { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: u.Ay, tags: ['developer'] },
      { title: 'De Paragraph is standaard niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: x.Ay, tags: ['developer'] },
      { title: 'De Paragraph komt standaard niet voor in de focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: f.Ay, tags: ['developer'] },
@@ -587,8 +587,8 @@
    }
    var ge = t(21530),
     ue = t(46447),
-    pe = t(56421),
-    me = t(40889),
+    me = t(56421),
+    pe = t(40889),
     he = t(59778),
     je = t(21034),
     xe = t(30400),
@@ -613,7 +613,7 @@
     Ne = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...o.RM, { value: 'Veel gemaakte fouten bij het inzetten van Paragraph', id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', level: 2 }, { value: 'Oplossing', id: 'oplossing', level: 4 }, { value: 'Oplossing', id: 'oplossing-1', level: 4 }, { value: 'Oplossing', id: 'oplossing-2', level: 4 }, { value: 'Oplossing', id: 'oplossing-3', level: 4 }, { value: 'Oplossing', id: 'oplossing-4', level: 4 }, { value: 'Oplossing', id: 'oplossing-5', level: 4 }, { value: 'Oplossing', id: 'oplossing-6', level: 4 }, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
    function Se(e) {
     const n = { h2: 'h2', h3: 'h3', h4: 'h4', p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(je.Fc, { component: Ge, headingLevel: 1, description: Re }), '\n', (0, r.jsx)(he.e, { component: Ge }), '\n', (0, r.jsx)(ge.Zp, { className: 'ma-implementation-card', children: (0, r.jsxs)(ge.Wu, { children: [(0, r.jsx)(pe.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, r.jsxs)(ue.dk, { children: [(0, r.jsxs)(ue.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, r.jsx)(me.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, r.jsxs)(ue.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, r.jsx)(me.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, r.jsx)(pe.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, r.jsxs)(ue.dk, { children: [(0, r.jsxs)(ue.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie', children: [(0, r.jsx)(me.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, r.jsxs)(ue.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/paragraph--documentatie', children: [(0, r.jsx)(me.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, r.jsx)(pe.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, r.jsxs)(ue.dk, { children: [(0, r.jsxs)(ue.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: [(0, r.jsx)(me.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-css'] }), (0, r.jsxs)(ue.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: [(0, r.jsx)(me.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-react'] }), (0, r.jsxs)(ue.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-tokens', children: [(0, r.jsx)(me.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-tokens'] })] })] }) }), '\n', (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, r.jsx)(d.Ay, {}), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, r.jsx)(l.Ay, {}), '\n', (0, r.jsx)(xe.b, { headingLevel: '4', children: k.map(({ component: e, ...n }) => (0, r.jsx)(xe.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, r.jsx)(o.Ay, {}), '\n', (0, r.jsx)(xe.b, { headingLevel: '4', children: b.map(({ component: e, ...n }) => (0, r.jsx)(xe.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h2, { id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', children: 'Veel gemaakte fouten bij het inzetten van Paragraph' }), '\n', (0, r.jsx)(n.p, { children: 'Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.' }), '\n', (0, r.jsx)(pe.D, { level: 3, children: v.D }), '\n', (0, r.jsx)(y, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing', children: 'Oplossing' }), '\n', (0, r.jsx)(C, {}), '\n', (0, r.jsx)(pe.D, { level: 3, children: R.D }), '\n', (0, r.jsx)(G, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-1', children: 'Oplossing' }), '\n', (0, r.jsx)(S, {}), '\n', (0, r.jsx)(pe.D, { level: 3, children: F.D }), '\n', (0, r.jsx)(z, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-2', children: 'Oplossing' }), '\n', (0, r.jsx)(W, {}), '\n', (0, r.jsx)(pe.D, { level: 3, children: H.D }), '\n', (0, r.jsx)(B, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-3', children: 'Oplossing' }), '\n', (0, r.jsx)(I, {}), '\n', (0, r.jsx)(pe.D, { level: 3, children: M.D }), '\n', (0, r.jsx)(V, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-4', children: 'Oplossing' }), '\n', (0, r.jsx)(U, {}), '\n', (0, r.jsx)(J, {}), '\n', (0, r.jsx)(X, {}), '\n', (0, r.jsx)(pe.D, { level: 3, children: q.D }), '\n', (0, r.jsx)(Y, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-5', children: 'Oplossing' }), '\n', (0, r.jsx)(ne, {}), '\n', (0, r.jsx)(ae, {}), '\n', (0, r.jsx)(se, {}), '\n', (0, r.jsx)(pe.D, { level: 3, children: ie.D }), '\n', (0, r.jsx)(le, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-6', children: 'Oplossing' }), '\n', (0, r.jsx)(ce, {}), '\n', (0, r.jsx)(we.o, { omitH1: !0, headingLevel: 2, children: (0, r.jsx)(be, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, r.jsx)(fe.B, { tokens: ve }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(je.VK, { component: Ge, headingLevel: 3 }), '\n', (0, r.jsx)(je.$9, { component: Ge, headingLevel: 2 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(je.mu, { component: Ge, headingLevel: 3 }), '\n', (0, r.jsx)(je.K_, { component: Ge })] });
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(je.Fc, { component: Ge, headingLevel: 1, description: Re }), '\n', (0, r.jsx)(he.e, { component: Ge }), '\n', (0, r.jsx)(ge.Zp, { className: 'ma-implementation-card', children: (0, r.jsxs)(ge.Wu, { children: [(0, r.jsx)(me.D, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, r.jsxs)(ue.dk, { children: [(0, r.jsxs)(ue.Pt, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, r.jsx)(pe.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, r.jsxs)(ue.Pt, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, r.jsx)(pe.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, r.jsx)(me.D, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, r.jsxs)(ue.dk, { children: [(0, r.jsxs)(ue.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie', children: [(0, r.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, r.jsxs)(ue.Pt, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/paragraph--documentatie', children: [(0, r.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, r.jsx)(me.D, { level: 2, appearance: 'level-4', children: 'npm' }), (0, r.jsxs)(ue.dk, { children: [(0, r.jsxs)(ue.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-css'] }), (0, r.jsxs)(ue.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-react'] }), (0, r.jsxs)(ue.Pt, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-tokens', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-tokens'] })] })] }) }), '\n', (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, r.jsx)(d.Ay, {}), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, r.jsx)(l.Ay, {}), '\n', (0, r.jsx)(xe.b, { headingLevel: '4', children: k.map(({ component: e, ...n }) => (0, r.jsx)(xe.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, r.jsx)(o.Ay, {}), '\n', (0, r.jsx)(xe.b, { headingLevel: '4', children: b.map(({ component: e, ...n }) => (0, r.jsx)(xe.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h2, { id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', children: 'Veel gemaakte fouten bij het inzetten van Paragraph' }), '\n', (0, r.jsx)(n.p, { children: 'Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.' }), '\n', (0, r.jsx)(me.D, { level: 3, children: v.D }), '\n', (0, r.jsx)(y, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing', children: 'Oplossing' }), '\n', (0, r.jsx)(C, {}), '\n', (0, r.jsx)(me.D, { level: 3, children: R.D }), '\n', (0, r.jsx)(G, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-1', children: 'Oplossing' }), '\n', (0, r.jsx)(S, {}), '\n', (0, r.jsx)(me.D, { level: 3, children: F.D }), '\n', (0, r.jsx)(z, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-2', children: 'Oplossing' }), '\n', (0, r.jsx)(W, {}), '\n', (0, r.jsx)(me.D, { level: 3, children: H.D }), '\n', (0, r.jsx)(B, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-3', children: 'Oplossing' }), '\n', (0, r.jsx)(I, {}), '\n', (0, r.jsx)(me.D, { level: 3, children: M.D }), '\n', (0, r.jsx)(V, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-4', children: 'Oplossing' }), '\n', (0, r.jsx)(U, {}), '\n', (0, r.jsx)(J, {}), '\n', (0, r.jsx)(X, {}), '\n', (0, r.jsx)(me.D, { level: 3, children: q.D }), '\n', (0, r.jsx)(Y, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-5', children: 'Oplossing' }), '\n', (0, r.jsx)(ne, {}), '\n', (0, r.jsx)(ae, {}), '\n', (0, r.jsx)(se, {}), '\n', (0, r.jsx)(me.D, { level: 3, children: ie.D }), '\n', (0, r.jsx)(le, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-6', children: 'Oplossing' }), '\n', (0, r.jsx)(ce, {}), '\n', (0, r.jsx)(we.o, { omitH1: !0, headingLevel: 2, children: (0, r.jsx)(be, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, r.jsx)(fe.B, { tokens: ve }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(je.VK, { component: Ge, headingLevel: 3 }), '\n', (0, r.jsx)(je.$9, { component: Ge, headingLevel: 2 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(je.mu, { component: Ge, headingLevel: 3 }), '\n', (0, r.jsx)(je.K_, { component: Ge })] });
    }
    function Fe(e = {}) {
     const { wrapper: n } = { ...(0, s.R)(), ...e.components };
@@ -859,74 +859,78 @@
   },
   70903(e, n, t) {
    'use strict';
-   t.d(n, { B: () => N });
+   t.d(n, { B: () => C });
    var a = t(96547),
     r = t(38295),
     s = t(32385),
     i = t(46447),
-    o = t(68148),
-    l = t(9016),
-    d = t(91635),
-    c = t(30734),
-    g = t(4603),
-    u = t(29181),
-    p = t(86070);
-   function m({ children: e, content: n, language: t }) {
-    return 'clipboard' in navigator
-     ? (0, p.jsxs)(i.$n, {
+    o = t(30758),
+    l = t(4603),
+    d = t(29181),
+    c = t(86070);
+   function g({ children: e, content: n }) {
+    const [t, a] = (0, o.useState)(!1);
+    return (
+     (0, o.useEffect)(() => {
+      'clipboard' in navigator && a(!0);
+     }, []),
+     (0, c.jsx)(c.Fragment, {
+      children:
+       t &&
+       (0, c.jsxs)(i.$n, {
         type: 'button',
         appearance: 'secondary-action-button',
         onClick: async function () {
          try {
-          const e = await c.Ay.format(n, { parser: t, plugins: [o.A, l.Ay, d.Ay] });
-          await navigator.clipboard.writeText(e);
+          await navigator.clipboard.writeText(n);
          } catch (e) {
           console.error(e);
          }
         },
-        children: [e, (0, p.jsx)(u.In, { children: (0, p.jsx)(g.A, {}) })],
-       })
-     : null;
+        children: [e, (0, c.jsx)(d.In, { children: (0, c.jsx)(l.A, {}) })],
+       }),
+     })
+    );
    }
-   var h = t(43864),
-    j = t(35193),
-    x = t(82999),
-    f = t(13088),
-    w = t(91525),
-    k = t(24214),
-    b = t(92081),
-    v = t(1375),
-    A = t(73563),
-    y = t(23436),
-    T = t(79532),
-    C = t(30758);
-   const R = { boxShadow: h.A, color: j.A, cursor: x.A, dimension: f.A, fontFamily: w.A, fontFamilies: w.A, fontSize: k.A, fontSizes: k.A, fontWeight: b.A, fontWeights: b.A, lineHeight: v.A, lineHeights: v.A, number: A.A, other: y.A, textDecoration: T.A },
-    D = ({ type: e }) => {
-     const n = Object.hasOwn(R, e) ? e : 'other';
-     return (0, p.jsx)(u.In, { children: (0, C.createElement)(R[n]) });
+   var u = t(43864),
+    m = t(35193),
+    p = t(82999),
+    h = t(13088),
+    j = t(91525),
+    x = t(24214),
+    f = t(92081),
+    w = t(1375),
+    k = t(73563),
+    b = t(23436),
+    v = t(79532);
+   const A = { boxShadow: u.A, color: m.A, cursor: p.A, dimension: h.A, fontFamily: j.A, fontFamilies: j.A, fontSize: x.A, fontSizes: x.A, fontWeight: f.A, fontWeights: f.A, lineHeight: w.A, lineHeights: w.A, number: k.A, other: b.A, textDecoration: v.A },
+    y = ({ type: e }) => {
+     const n = Object.hasOwn(A, e) ? e : 'other';
+     return (0, c.jsx)(d.In, { children: (0, o.createElement)(A[n]) });
     };
-   var G = t(76223);
-   function N({ tokens: e }) {
+   var T = t(76223);
+   function C({ tokens: e }) {
     const n = (0, s.kD)(e),
-     t = (0, G.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     t = (0, T.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
      o = (0, s.GT)(n),
      l = o.map((e) => (0, s.B_)(e) + ': ;').join('\n'),
-     d = JSON.stringify(t);
-    return (0, p.jsxs)(p.Fragment, {
+     d = JSON.stringify(t, null, 2);
+    return (0, c.jsxs)('div', {
+     className: 'ma-flow',
      children: [
-      (0, p.jsxs)(i.XI, {
+      (0, c.jsxs)(i.XI, {
        children: [
-        (0, p.jsx)(i.A0, { children: (0, p.jsxs)(i.Hj, { children: [(0, p.jsx)(i.M_, { children: 'name' }), (0, p.jsx)(i.M_, { children: 'type' })] }) }),
-        (0, p.jsx)(i.BF, {
+        (0, c.jsx)(i.A0, { children: (0, c.jsxs)(i.Hj, { children: [(0, c.jsx)(i.M_, { children: 'name' }), (0, c.jsx)(i.M_, { children: 'type' })] }) }),
+        (0, c.jsx)(i.BF, {
          children: o.map((n) => {
           const t = (0, s.o_)(n),
            o = (0, s.eQ)(e, n).$type;
-          return (0, p.jsxs)(i.Hj, { children: [(0, p.jsx)(i.nA, { children: (0, p.jsx)(a.C, { children: (0, p.jsx)(i.kf, { children: t }) }) }), (0, p.jsx)(i.nA, { children: (0, p.jsxs)(r.K, { children: [(0, p.jsx)(D, { type: o }), ' ', o] }) })] }, t);
+          return (0, c.jsxs)(i.Hj, { children: [(0, c.jsx)(i.nA, { children: (0, c.jsx)(a.C, { children: (0, c.jsx)(i.kf, { children: t }) }) }), (0, c.jsx)(i.nA, { children: (0, c.jsxs)(r.K, { children: [(0, c.jsx)(y, { type: o }), ' ', o] }) })] }, t);
          }),
         }),
        ],
       }),
-      (0, p.jsxs)(i.e2, { children: [(0, p.jsx)(m, { content: d, language: 'json', children: 'Kopieer als JSON' }), (0, p.jsx)(m, { content: l, language: 'css', children: 'Kopieer als CSS' })] }),
+      (0, c.jsxs)(i.e2, { children: [(0, c.jsx)(g, { content: d, children: 'Kopieer als JSON' }), (0, c.jsx)(g, { content: l, children: 'Kopieer als CSS' })] }),
      ],
     });
    }
