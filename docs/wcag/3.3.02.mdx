@@ -91,17 +91,17 @@ Een invoerveld heeft een `aria-label` of een visueel verborgen `<label>`, maar g
 
 <Guideline appearance="dont" title="Label visueel verborgen met sr-only">
   ```html
-  <label for="zoek" class="sr-only">
+  <label for="search" class="sr-only">
     Zoekterm
   </label>
-  <input type="text" id="zoek" placeholder="Zoeken..." />
+  <input type="text" id="search" placeholder="Zoeken..." />
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Zichtbaar label voor iedereen">
   ```html
-  <label for="zoek">Zoekterm</label>
-  <input type="text" id="zoek" />
+  <label for="search">Zoekterm</label>
+  <input type="text" id="search" />
   ```
 </Guideline>
 
@@ -137,14 +137,14 @@ Placeholders zijn niet bedoeld als vervanging van een label.
     {() => (
       <>
         <p>
-          <label htmlFor="vis-voornaam">Voornaam</label>
+          <label htmlFor="vis-first-name">Voornaam</label>
           <br />
-          <input type="text" id="vis-voornaam" placeholder="bijvoorbeeld Fatima" />
+          <input type="text" id="vis-first-name" placeholder="bijvoorbeeld Fatima" />
         </p>
         <p>
-          <label htmlFor="vis-achternaam">Achternaam</label>
+          <label htmlFor="vis-last-name">Achternaam</label>
           <br />
-          <input type="text" id="vis-achternaam" placeholder="bijvoorbeeld De Vries" />
+          <input type="text" id="vis-last-name" placeholder="bijvoorbeeld De Vries" />
         </p>
         <p>
           <label htmlFor="vis-email2">E-mailadres</label>
@@ -166,16 +166,16 @@ Een veld verwacht een specifiek formaat, maar dat staat nergens vermeld. Een dat
 
 <Guideline appearance="dont" title="Datumveld zonder formaatinstructie">
   ```html
-  <label for="geboortedatum">Geboortedatum</label>
-  <input type="text" id="geboortedatum" />
+  <label for="birth-date">Geboortedatum</label>
+  <input type="text" id="birth-date" />
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Datumveld met formaatinstructie">
   ```html
-  <label for="geboortedatum">Geboortedatum</label>
-  <input type="text" id="geboortedatum" aria-describedby="datum-hint" placeholder="dd-mm-jjjj" />
-  <p id="datum-hint" class="hint">
+  <label for="birth-date">Geboortedatum</label>
+  <input type="text" id="birth-date" aria-describedby="birth-date-hint" placeholder="dd-mm-jjjj" />
+  <p id="birth-date-hint" class="example-hint">
     Gebruik het formaat dd-mm-jjjj, bijvoorbeeld 15-03-1990
   </p>
   ```
@@ -195,9 +195,9 @@ Een formulier heeft verplichte en optionele velden, maar er is geen aanduiding w
   <Canvas language="html">
     {() => (
       <p>
-        <label htmlFor="vis-naam1">Naam</label>
+        <label htmlFor="vis-name1">Naam</label>
         <br />
-        <input type="text" id="vis-naam1" />
+        <input type="text" id="vis-name1" />
       </p>
     )}
   </Canvas>
@@ -207,11 +207,11 @@ Een formulier heeft verplichte en optionele velden, maar er is geen aanduiding w
   <Canvas language="html">
     {() => (
       <p>
-        <label htmlFor="vis-naam2">
+        <label htmlFor="vis-name2">
           Naam <span aria-hidden="true">*</span>
         </label>
         <br />
-        <input type="text" id="vis-naam2" required />
+        <input type="text" id="vis-name2" required />
       </p>
     )}
   </Canvas>
@@ -221,9 +221,9 @@ Een formulier heeft verplichte en optionele velden, maar er is geen aanduiding w
   <Canvas language="html">
     {() => (
       <p>
-        <label htmlFor="vis-naam3">Naam (verplicht)</label>
+        <label htmlFor="vis-name3">Naam (verplicht)</label>
         <br />
-        <input type="text" id="vis-naam3" required />
+        <input type="text" id="vis-name3" required />
       </p>
     )}
   </Canvas>
@@ -243,25 +243,26 @@ Een formulier begint met een blok instructietekst dat uitlegt hoe de bezoeker he
     ```html
     <p>Vul alle datums in als dd-mm-jjjj. Telefoonnummers zonder spaties.</p>
 
-    <!-- Verderop in het formulier, zonder herhaling: -->
-    <label for="startdatum">Startdatum</label>
-    <input type="text" id="startdatum" />
+    <label for="start-date">Startdatum</label>
+    <input type="text" id="start-date" />
 
-    <label for="telefoon">Telefoonnummer</label>
-    <input type="tel" id="telefoon" />
+    <label for="phone">Telefoonnummer</label>
+    <input type="tel" id="phone" />
     ```
 
 </Guideline>
 
+In het foute voorbeeld staan de velden verderop in het formulier, ver onder de instructie, en herhalen ze die instructie niet.
+
 <Guideline appearance="do" title="Instructies bij de individuele velden">
     ```html
-    <label for="startdatum">Startdatum</label>
-    <input type="text" id="startdatum" aria-describedby="startdatum-hint" />
-    <p id="startdatum-hint" class="hint">Gebruik het formaat dd-mm-jjjj</p>
+    <label for="start-date">Startdatum</label>
+    <input type="text" id="start-date" aria-describedby="start-date-hint" />
+    <p id="start-date-hint" class="example-hint">Gebruik het formaat dd-mm-jjjj</p>
 
-    <label for="telefoon">Telefoonnummer</label>
-    <input type="tel" id="telefoon" aria-describedby="telefoon-hint" />
-    <p id="telefoon-hint" class="hint">10 cijfers, zonder spaties</p>
+    <label for="phone">Telefoonnummer</label>
+    <input type="tel" id="phone" aria-describedby="phone-hint" />
+    <p id="phone-hint" class="example-hint">10 cijfers, zonder spaties</p>
     ```
 
 </Guideline>
@@ -281,19 +282,19 @@ Hetzelfde geldt voor een betalingsformulier met kaartnummer, vervaldatum en CVC,
     {() => (
       <>
         <p>
-          <label htmlFor="vis-straat1">Straat</label>
+          <label htmlFor="vis-street1">Straat</label>
           <br />
-          <input type="text" id="vis-straat1" />
+          <input type="text" id="vis-street1" />
         </p>
         <p>
-          <label htmlFor="vis-huisnummer1">Huisnummer</label>
+          <label htmlFor="vis-house-number1">Huisnummer</label>
           <br />
-          <input type="text" id="vis-huisnummer1" />
+          <input type="text" id="vis-house-number1" />
         </p>
         <p>
-          <label htmlFor="vis-postcode1">Postcode</label>
+          <label htmlFor="vis-postal-code1">Postcode</label>
           <br />
-          <input type="text" id="vis-postcode1" />
+          <input type="text" id="vis-postal-code1" />
         </p>
       </>
     )}
@@ -306,19 +307,19 @@ Hetzelfde geldt voor een betalingsformulier met kaartnummer, vervaldatum en CVC,
       <fieldset>
         <legend>Factuuradres</legend>
         <p>
-          <label htmlFor="vis-straat2">Straat</label>
+          <label htmlFor="vis-street2">Straat</label>
           <br />
-          <input type="text" id="vis-straat2" />
+          <input type="text" id="vis-street2" />
         </p>
         <p>
-          <label htmlFor="vis-huisnummer2">Huisnummer</label>
+          <label htmlFor="vis-house-number2">Huisnummer</label>
           <br />
-          <input type="text" id="vis-huisnummer2" />
+          <input type="text" id="vis-house-number2" />
         </p>
         <p>
-          <label htmlFor="vis-postcode2">Postcode</label>
+          <label htmlFor="vis-postal-code2">Postcode</label>
           <br />
-          <input type="text" id="vis-postcode2" />
+          <input type="text" id="vis-postal-code2" />
         </p>
       </fieldset>
     )}
@@ -337,7 +338,6 @@ Daarnaast heeft elk icoon een toegankelijke naam nodig zodat een screenreader he
 
 <Guideline appearance="dont" title="Onduidelijk icoon zonder tekst als label">
     ```html
-    <!-- Trechter-icoon: betekent dit filteren, sorteren of iets anders? -->
     <label for="filter">
       <svg aria-hidden="true"><use href="#icon-funnel" /></svg>
     </label>
@@ -395,7 +395,7 @@ Als er geen ruimte is voor zichtbare tekst naast het icoon, zorg dan dat het ico
 - [2.4.6 Koppen en labels](/wcag/2.4.6/): labels beschrijven het onderwerp of doel van het veld. Hier gaat het erom dát er een label is; bij 2.4.6 gaat het erom dat het label ook beschrijvend is.
 - [2.5.3 Label in naam](/wcag/2.5.3/): de zichtbare tekst van een label komt overeen met de toegankelijke naam. Relevant als je `aria-label` gebruikt dat afwijkt van het zichtbare label.
 - [1.4.3 Contrast (minimum)](/wcag/1.4.3/): labels en instructietekst voldoen aan de minimale contrasteis van 4,5:1. Lichtgrijze placeholders halen die eis niet.
-- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): een icoon dat als label dient, moet een contrast van minimaal 3:1 hebben ten opzichte van de achtergrond.
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): een icoon dat als label dient, moet een contrast van minimaal 3:1 hebben tegenover de achtergrond.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -405,9 +405,9 @@ Als er geen ruimte is voor zichtbare tekst naast het icoon, zorg dan dat het ico
 
 ## Relevante bronnen
 
-- [WCAG 2.2: Succescriterium 3.3.2 Labels of instructies](https://www.w3.org/Translations/WCAG22-nl/#labels-of-instructies) — de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
-- [Understanding SC 3.3.2: Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) — de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
-- [Accessible form validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/) — uitgebreide gids van Smashing Magazine over toegankelijke formulieren, inclusief labels en instructies (Engels).
+- [WCAG 2.2: Succescriterium 3.3.2 Labels of instructies](https://www.w3.org/Translations/WCAG22-nl/#labels-of-instructies): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 3.3.2: Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [Accessible form validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/): uitgebreide gids van Smashing Magazine over toegankelijke formulieren, inclusief labels en instructies (Engels).
 
 ## Gebruikersonderzoek
 
