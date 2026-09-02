@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.5.4 Bewegingsactivering
 pagination_label: WCAG-succescriterium 2.5.4 Bewegingsactivering
-description: Acties waarbij men een apparaat of zichzelf moeten bewegen, werken ook zonder die beweging. De mogelijkheid om te bewegen is ook uit te schakelen.
+description: Alles wat werkt door het apparaat te bewegen, werkt ook met een knop op het scherm. Je kunt de reactie op beweging ook uitzetten.
 slug: 2.5.4
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,25 @@ keywords:
   - operable
   - input modalities
   - motion actuation
+  - bewegingsactivering
+  - schudden
+  - kantelen
+  - bewegingssensor
+  - devicemotion
+  - deviceorientation
+  - gyroscoop
+  - accelerometer
+  - onbedoelde activering
+  - WCAG 2.5.4
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.5.4-summary.md";
 
@@ -32,46 +42,119 @@ import Summary from "./summaries/_2.5.4-summary.md";
   {"WCAG-succescriterium 2.5.4 Bewegingsactivering"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Een pagina leunt niet op de beweging van de gebruiker.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">
-      Als een actie met een beweging uitgevoerd kan worden, zorg dan ook voor een manier zonder beweging.
-    </dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Niet iedereen kan (een apparaat) bewegen.</dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-Bij bewegen kun je denken aan verschillende patronen:
+Sommige sites en apps gebruiken de bewegingssensor van een telefoon of tablet. Je schudt het apparaat om iets ongedaan te maken, of je kantelt het om een productfoto rond te draaien. Wie een apparaat op een rolstoel of een standaard heeft, houdt het op één plek en kan het niet schudden of kantelen. Iemand met tremor of met beperkte handfunctie kan het apparaat niet gecontroleerd bewegen. Daarom heeft elke functie die op beweging reageert ook een gewone bediening nodig, zoals een knop.
 
-- Schudden om iets ongedaan te maken.
-- Beweging bestuurt een karakter of camera in een digitale omgeving.
-- Schudden activeert de mogelijkheden voor feedback of hulp.
+Beweging komt ook voor zonder dat iemand het wil. Wie het apparaat niet stil kan houden, of onderweg is in een bus of trein, beweegt het per ongeluk. Als de pagina daarop reageert, gebeurt er steeds iets wat de bezoeker niet bedoelde. Daarom kun je de reactie op beweging uitzetten.
 
-Voor al deze situaties moet er ook een manier zijn om hetzelfde te doen, maar dan zonder te bewegen. Denk bijvoorbeeld aan een knop waarmee je hetzelfde kan doen.
+Er is een uitzondering. Is de beweging zelf de kern van de functie, dan hoeft er geen knop bij. Een stappenteller telt je stappen door de beweging van het apparaat. Zonder die beweging is er niets te tellen. De volledige tekst met alle uitzonderingen staat in de [Nederlandse vertaling van succescriterium 2.5.4 Bewegingsactivering](https://www.w3.org/Translations/WCAG22-nl/#motion-actuation).
 
-Er is een uitzondering als beweging noodzakelijk is. Dit is bijvoorbeeld bij een stappenteller.
+## Veelgemaakte fouten
 
-Vergeet niet dat er een instelling moet zijn om er voor te zorgen dat beweging niks doet. Zo voorkom je dat beweging per ongeluk iets doet.
+### Schudden is de enige manier om een actie uit te voeren
+
+Een app laat je iets ongedaan maken of wissen door het apparaat te schudden. Er staat geen knop op het scherm die hetzelfde doet. Wie het apparaat op een standaard of een rolstoel heeft, of wie niet kan schudden, kan de actie niet uitvoeren. Wie in een rijdende bus zit, schudt het apparaat per ongeluk en maakt zo iets ongedaan zonder dat te willen.
+
+**Hoe te testen:** probeer de actie uit te voeren zonder het apparaat te bewegen. Staat er een knop op het scherm die hetzelfde doet?
+
+In het voorbeeld hieronder koppelt de code de actie alleen aan het schudden van het apparaat en voegt die geen knop toe.
+
+<Guideline appearance="dont" title="Ongedaan maken kan alleen door te schudden">
+
+```javascript
+window.addEventListener("devicemotion", undoLastAction);
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Een knop die hetzelfde doet als het schudden">
+
+```html
+<button type="button">Maak ongedaan</button>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een knop toe die dezelfde actie uitvoert als het schudden.
+
+### Content bekijken of bedienen kan alleen door het apparaat te kantelen
+
+Een productweergave, een 360-gradenbeeld of een kaart reageert alleen op het kantelen van het apparaat. Je draait het beeld door de telefoon schuin te houden. Er zijn geen knoppen en je kunt het beeld ook niet met een vinger verslepen. Wie het apparaat op een vaste plek heeft of niet kan kantelen, ziet altijd maar één kant en komt niet bij de rest. Hetzelfde geldt voor een spel dat je alleen door kantelen bestuurt.
+
+**Hoe te testen:** probeer het beeld te draaien of te verschuiven zonder het apparaat te kantelen. Zijn er knoppen, of kun je het beeld met één vinger verslepen?
+
+In het voorbeeld hieronder koppelt de code het draaien alleen aan de bewegingssensor en biedt die geen knoppen of bediening met slepen.
+
+<Guideline appearance="dont" title="Productweergave reageert alleen op kantelen">
+
+```javascript
+window.addEventListener("deviceorientation", rotateProduct);
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Knoppen om het product te draaien">
+
+```html
+<button type="button">Draai naar links</button> <button type="button">Draai naar rechts</button>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt knoppen toe om het beeld te draaien, en staat bediening met één vinger toe.
+
+### De reactie op beweging kun je niet uitzetten
+
+De pagina reageert op elke beweging van het apparaat en er is geen manier om dat uit te zetten. Wie het apparaat niet stil kan houden, bijvoorbeeld door tremor, of wie onderweg is, activeert steeds iets zonder dat te willen.
+
+**Hoe te testen:** zoek naar een instelling om de bewegingsbediening uit te zetten. Beweeg daarna het apparaat en kijk of er acties gebeuren die je niet bedoelde.
+
+In het voorbeeld hieronder laat de code de pagina op beweging reageren en biedt die geen instelling om dat uit te zetten.
+
+<Guideline appearance="dont" title="Beweging is altijd aan, zonder instelling om het uit te zetten">
+
+```javascript
+window.addEventListener("devicemotion", handleDeviceMotion);
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Een instelling om de bewegingsbediening uit te zetten">
+
+```html
+<label>
+  <input type="checkbox" name="motion" />
+  Reageer op beweging van het apparaat
+</label>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een instelling toe waarmee de bezoeker de reactie op beweging uitzet.
 
 ## Hoe te testen
 
-- Gebruik een apparaat met een bewegingssensor, zoals een mobiele telefoon.
-- Probeer op elke pagina te schudden, draaien en andere bewegingen te maken.
-- Gebeurt er iets door de beweging? Kijk of het ook anders kan, en of het ook uitgeschakeld kan worden
+### Voor iedereen
+
+1. Zoek naar functies die op beweging reageren, zoals schudden om iets ongedaan te maken of kantelen om een beeld te draaien. Kun je die functies ook met een knop op het scherm gebruiken?
+2. Kijk of er een instelling is om de reactie op beweging uit te zetten.
+3. Laat functies waarbij de beweging zelf de taak is buiten beschouwing, zoals een stappenteller. Die hoeven geen knop als alternatief te hebben.
+
+### Voor developers
+
+1. Zoek in de code naar `devicemotion` en `deviceorientation`, en naar bibliotheken die de bewegingssensor gebruiken. Elke functie die daarop reageert heeft een knop of een andere bediening op het scherm nodig.
+2. Controleer per functie of je hetzelfde resultaat bereikt zonder het apparaat te bewegen. Een knop is de eenvoudigste vorm.
+3. Voeg een instelling toe waarmee de bezoeker de reactie op beweging uitzet, zodat een onbedoelde beweging niets activeert.
+4. Ga na of de beweging echt de kern van de functie is. Alleen dan is een knop niet nodig. In alle andere gevallen wel.
+
+## Gerelateerde succescriteria
+
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): alles wat met een aanwijzer of beweging werkt, moet ook met het toetsenbord kunnen. Een knop naast de beweging helpt daarbij.
+- [2.5.1 Aanwijzergebaren](/wcag/2.5.1/): gaat over veeg- en knijpgebaren op het scherm. Ook die hebben een bediening met één tik of klik als alternatief nodig.
+- [2.5.2 Aanwijzerannulering](/wcag/2.5.2/): gaat over het kunnen afbreken van een aanwijzeractie, zodat een per ongeluk gestarte tik geen gevolgen heeft.
 
 ## Gebruikersonderzoek
 
@@ -83,12 +166,6 @@ Vergeet niet dat er een instelling moet zijn om er voor te zorgen dat beweging n
 - Nederlandse vertaling van het WCAG-succescriterium: [2.5.4 Bewegingsactivering](https://www.w3.org/Translations/WCAG22-nl/#motion-actuation).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.5.4 Motion Actuation</span>](https://www.w3.org/WAI/WCAG22/quickref/#motion-actuation).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.5.4 Motion Actuation</span>](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
