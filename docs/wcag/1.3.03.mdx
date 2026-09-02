@@ -87,7 +87,9 @@ Instructies als "klik op de drie streepjes rechtsboven", "klik op het blauwe pot
     <p>Open het menu via de drie streepjes rechtsboven.</p>
 
     <button type="button" aria-label="Menu">
-      <svg aria-hidden="true"><!-- icoon met drie streepjes --></svg>
+      <svg aria-hidden="true" focusable="false">
+        <use href="assets/svg/icons-core-set.svg#icon-menu"></use>
+      </svg>
     </button>
     ```
 </Guideline>
@@ -97,7 +99,9 @@ Instructies als "klik op de drie streepjes rechtsboven", "klik op het blauwe pot
     <p>Open het menu met de knop Menu, rechtsboven op de pagina.</p>
 
     <button type="button" aria-label="Menu">
-      <svg aria-hidden="true"><!-- icoon met drie streepjes --></svg>
+      <svg aria-hidden="true" focusable="false">
+        <use href="assets/svg/icons-core-set.svg#icon-menu"></use>
+      </svg>
     </button>
     ```
 </Guideline>
@@ -114,8 +118,8 @@ Aanwijzingen als "de rode velden zijn verplicht", "klik op de blauwe informatieb
     ```html
     <p>De rode velden zijn verplicht.</p>
 
-    <label for="naam" class="verplicht-rood">Naam</label>
-    <input id="naam" type="text" required />
+    <label for="name" class="example-required-red">Naam</label>
+    <input id="name" type="text" required />
     ```
 </Guideline>
 
@@ -123,8 +127,8 @@ Aanwijzingen als "de rode velden zijn verplicht", "klik op de blauwe informatieb
     ```html
     <p>Achter verplichte velden staat het woord verplicht.</p>
 
-    <label for="naam">Naam, verplicht</label>
-    <input id="naam" type="text" required />
+    <label for="name">Naam, verplicht</label>
+    <input id="name" type="text" required />
     ```
 </Guideline>
 
@@ -168,8 +172,8 @@ Zinnen als "kies een onderwerp uit de verticale lijst" of "gebruik de horizontal
     ```html
     <p>Kies je gemeente in de lijst Gemeenten.</p>
 
-    <h2 id="gemeenten">Gemeenten</h2>
-    <ul aria-labelledby="gemeenten">
+    <h2 id="municipalities">Gemeenten</h2>
+    <ul aria-labelledby="municipalities">
       ...
     </ul>
     ```
