@@ -8,10 +8,10 @@ import {
   FormFieldDescription,
   FormFieldErrorMessage,
   FormLabel,
-  Paragraph,
   Textarea,
   Textbox,
 } from '@utrecht/component-library-react';
+import { Paragraph } from '@nl-design-system-candidate/paragraph-react';
 import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
@@ -102,6 +102,7 @@ export const NewsletterSignUp = ({
 
   return (
     <form
+      className="ma-flow"
       method="post"
       action="https://nl-design-system.email-provider.eu/subscribe/post/index.php"
       noValidate
@@ -254,7 +255,9 @@ export const NewsletterSignUp = ({
                 value={interestsValues[index]}
                 id={`${interestsId}-${interestsValues[index]}`}
               />
-              <FormLabel htmlFor={`${interestsId}-${interestsValues[index]}`}>{interest}</FormLabel>
+              <FormLabel type="checkbox" htmlFor={`${interestsId}-${interestsValues[index]}`}>
+                {interest}
+              </FormLabel>
             </FormField>
           ))}
         </Fieldset>
@@ -272,7 +275,9 @@ export const NewsletterSignUp = ({
           {roles.map((role, index) => (
             <FormField type="checkbox" key={role}>
               <Checkbox name={`${roleId}[]`} id={`${roleId}-${index}`} />
-              <FormLabel htmlFor={`${roleId}-${index}`}>{role}</FormLabel>
+              <FormLabel type="checkbox" htmlFor={`${roleId}-${index}`}>
+                {role}
+              </FormLabel>
             </FormField>
           ))}
         </Fieldset>
@@ -294,13 +299,20 @@ export const NewsletterSignUp = ({
         <FormField type="text">
           <FormFieldDescription id={`${privacyPolicyId}-description`}>
             {IS_ENGLISH ? (
-              <p>
-                The <a href="/privacy-policy/">privacy policy</a> of NL Design System applies to our activities.
+              <p className="nl-paragraph">
+                The{' '}
+                <a className="nl-link" href="/privacy-policy/">
+                  privacy policy
+                </a>{' '}
+                of NL Design System applies to our activities.
               </p>
             ) : (
-              <p>
-                Op onze activiteiten is de <a href="/privacyverklaring/">privacyverklaring van NL Design System</a> van
-                toepassing.
+              <p className="nl-paragraph">
+                Op onze activiteiten is de{' '}
+                <a className="nl-link" href="/privacyverklaring/">
+                  privacyverklaring van NL Design System
+                </a>{' '}
+                van toepassing.
               </p>
             )}
           </FormFieldDescription>
@@ -320,7 +332,7 @@ export const NewsletterSignUp = ({
               })}
               invalid={!!errors[`${privacyPolicyId}[]`]}
             />
-            <FormLabel htmlFor={`${privacyPolicyId}-1`}>
+            <FormLabel type="checkbox" htmlFor={`${privacyPolicyId}-1`}>
               {IS_ENGLISH
                 ? 'I agree to the use of my data in accordance with the privacy policy'
                 : 'Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring'}
@@ -349,7 +361,7 @@ export const NewsletterSignUp = ({
         id="email"
         name="email"
         placeholder="Your e-mail here"
-        className="sr-only"
+        className="sr-only ma-sr-only"
         aria-hidden="true"
         tabIndex={-1}
       />

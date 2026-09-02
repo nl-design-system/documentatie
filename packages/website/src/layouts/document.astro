@@ -1,5 +1,6 @@
 ---
-import { siteName, siteTitle, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { siteName, siteBaseUrl, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
+import { generateDocumentTitle } from '@utils/document-title';
 import { PageHeader } from '@components/page-header/page-header';
 import { PageFooter } from '@components/page-footer/page-footer';
 import { NavBar } from '@components/nav-bar/nav-bar';
@@ -7,54 +8,121 @@ import { PageLayout } from '@components/page-layout/page-layout';
 import { SkipLink } from '@components/skip-link/skip-link.tsx';
 import { NavList } from '@components/nav-list/nav-list';
 import { NavListLink } from '@components/nav-list/nav-list';
-import { Logo } from '@components/logo/logo';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
+import { MobileMenu } from '@components/mobile-menu/mobile-menu';
 import { IconChevronRight } from '@tabler/icons-react';
+import { SideNavigation } from '@components/side-navigation/side-navigation.tsx';
 import { getMainNavigation } from '../navigation';
+import { navigation } from '../navigation.config.ts';
+import { i18n, type I18nLanguages } from '../i18n';
 
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
 import '@fontsource/source-sans-pro';
 import '@fontsource/source-sans-pro/700.css';
 import '@utrecht/root-css/dist/index.css';
+import '@components/flow/flow.css';
+
+// NLDS markdown components
+import '@utrecht/button-css/dist/index.css';
+import '@utrecht/button-group-css/dist/index.css';
+import '@utrecht/button-link-css/dist/index.css';
+import '@utrecht/blockquote-css/dist/index.css';
+import '@utrecht/card-css/dist/index.css';
+import '@utrecht/custom-checkbox-css/dist/index.css';
+import '@utrecht/checkbox-css/dist/index.css';
+import '@utrecht/emphasis-css/dist/index.css';
+import '@utrecht/figure-css/dist/index.css';
+import '@utrecht/form-label-css/dist/index.css';
+import '@utrecht/form-field-css/dist/index.css';
+import '@utrecht/form-fieldset-css/dist/index.css';
+import '@utrecht/form-field-description-css/dist/index.css';
+import '@utrecht/separator-css/dist/index.css';
+import '@utrecht/ordered-list-css/dist/index.css';
+import '@utrecht/table-css/dist/index.css';
+import '@utrecht/textarea-css/dist/index.css';
+import '@utrecht/textbox-css/dist/index.css';
+import '@utrecht/img-css/dist/index.css';
+import '@utrecht/spotlight-section-css/dist/index.css';
+import '@nl-design-system-candidate/paragraph-css/paragraph.css';
+import '@nl-design-system-candidate/code-css/code.css';
+import '@nl-design-system-candidate/code-block-css/code-block.css';
+import '@utrecht/component-library-css/dist/html.css';
+
+import 'a11y-syntax-highlighting/dist/prism/a11y-dark.css';
+import '../../src/styles/missing-tokens.css';
+import './document.css';
+import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
+import { withCurrentIndication } from 'src/navigation/with-current-indication.ts';
+import '@components/sr-only/sr-only.css';
+import '@components/body-copy/body-copy.css';
+import '../../../../src/components/Guideline.css';
+import '../../../../src/components/Checklist.css';
+import '@nl-design-system-candidate/data-badge-css/data-badge.css';
+import '../../../../src/components/Canvas/CanvasAstro.css';
 
 export interface Props {
   title: string;
   titleSm?: string;
   description?: string;
-  lang?: 'nl' | 'en';
+  lang?: I18nLanguages;
+  translations?: Partial<Record<I18nLanguages, string>>;
   seoImage?: string;
   seoImageAlt?: string;
   keywords?: string[];
   index?: boolean;
   follow?: boolean;
+  class?: string;
 }
 
-const { title, titleSm, description, lang = 'nl', keywords, seoImage, seoImageAlt, index = true, follow } = Astro.props;
+const {
+  title,
+  titleSm,
+  description,
+  lang = 'nl',
+  translations,
+  keywords,
+  seoImage,
+  seoImageAlt,
+  index = true,
+  follow,
+  class: className,
+} = Astro.props;
 
 const fallbackSeoImage = '/social-image_nl-design-system.png';
-const fallbackSeoImageAlt = 'Logo van NL Design System';
+const fallbackSeoImageAlt = i18n[lang].logoAlt;
 
-const documentTitle = `${titleSm || title} · ${siteTitle}`;
-const canonicalUrl = new URL(Astro.url.pathname, 'https://nldesignsystem.nl');
+const documentTitle = generateDocumentTitle(titleSm || title);
+const canonicalUrl = new URL(Astro.url.pathname, siteBaseUrl);
+const pageAlternates = new Map<string, string>();
+pageAlternates.set(lang, canonicalUrl.toString());
+if (translations) {
+  for (const [altLang, path] of Object.entries(translations)) {
+    const normalized = path.endsWith('/') ? path : `${path}/`;
+    pageAlternates.set(altLang, new URL(normalized, `${siteBaseUrl}/`).toString());
+  }
+}
+const xDefault = pageAlternates.get('nl') ?? canonicalUrl.toString();
 const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
 const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
 const _keywords = new Set([...siteKeywords, ...(keywords || [])]);
 const _follow = follow === undefined ? index : follow;
 const _robots = `${index ? 'index' : 'noindex'} ${_follow ? 'follow' : 'nofollow'}`;
 
-const mainNavigationItems = await getMainNavigation();
+const { navigationTree } = await withCurrentIndication(navigation, Astro.url.pathname);
+const items = serialiseNavigationTree(navigationTree);
+const mainNavigationItems = await getMainNavigation(navigation, Astro.url.pathname);
 
 const footerNavigationItems = [
-  { href: '/blog/', label: 'Blog' },
-  { href: '/project/kernteam/', label: 'Contact' },
-  { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid' },
-  { href: '/privacyverklaring/', label: 'Privacyverklaring' },
-  { href: '/colofon/', label: 'Colofon' },
-  { href: '/github/', label: 'GitHub' },
-  { href: '/slack/', label: 'Slack' },
-  { href: '/figma/', label: 'Figma' },
-  { href: 'https://www.linkedin.com/company/nl-design-system/', label: 'LinkedIn', external: true },
+  { href: '/project/kernteam/', label: 'Contact', lang: 'nl' },
+  { href: '/toegankelijkheidsverklaring/', label: 'Toegankelijkheid', lang: 'nl' },
+  { href: '/privacyverklaring/', label: 'Privacyverklaring', lang: 'nl' },
+  { href: '/colofon/', label: 'Colofon', lang: 'nl' },
+  { href: '/github/', label: 'GitHub', lang: 'en' },
+  { href: '/slack/', label: 'Slack', lang: 'en' },
+  { href: '/figma/', label: 'Figma', lang: 'en' },
+  { href: 'https://www.linkedin.com/company/nl-design-system/', label: 'LinkedIn', lang: 'en', external: true },
+  { href: '/sitemap', label: 'Sitemap', lang: 'en' },
 ];
 ---
 
@@ -71,6 +139,12 @@ const footerNavigationItems = [
 
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="canonical" href={canonicalUrl} />
+    {
+      Array.from(pageAlternates.entries()).map(([hreflang, href]) => (
+        <link rel="alternate" hreflang={hreflang} href={href} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={xDefault} />
     <meta name="description" content={description} />
     <meta name="keywords" content={[..._keywords].join(', ')} />
     <meta name="robots" content={_robots} />
@@ -88,17 +162,21 @@ const footerNavigationItems = [
     <slot name="head" />
   </head>
 
-  <body>
-    <SkipLink href="#main">Naar de inhoud</SkipLink>
+  <body class={className}>
+    <SkipLink href="#main">{i18n[lang].skipLink}</SkipLink>
     <PageLayout>
-      <PageHeader>
-        <a href="/" aria-label="Link naar Homepagina"><Logo /></a>
-      </PageHeader>
+      <PageHeader lang={lang} />
       <NavBar>
         <nav aria-labelledby="hoofdnavigatie-label">
-          <h2 hidden id="hoofdnavigatie-label">Hoofdmenu</h2>
+          <h2 hidden id="hoofdnavigatie-label">{i18n[lang].mainNavLabel}</h2>
           <NavList>
-            {mainNavigationItems.map(({ href, label }) => <NavListLink href={href}>{label}</NavListLink>)}
+            {
+              mainNavigationItems.map(({ href, label, expanded, current, lang }) => (
+                <NavListLink href={href} aria-current={expanded || current ? 'page' : null} lang={lang}>
+                  {label}
+                </NavListLink>
+              ))
+            }
           </NavList>
         </nav>
       </NavBar>
@@ -107,13 +185,15 @@ const footerNavigationItems = [
 
       <PageFooter>
         <nav aria-labelledby="site-navigatie-label">
-          <h2 hidden id="site-navigatie-label">Submenu</h2>
+          <h2 hidden id="site-navigatie-label">{i18n[lang].footerNavLabel}</h2>
           <LinkList>
             {
-              footerNavigationItems.map(({ href, label }) => (
-                <LinkListLink href={href}>
+              footerNavigationItems.map(({ href, label, lang }) => (
+                <LinkListLink href={href} lang={lang}>
                   {label}
-                  <IconChevronRight slot="icon" />
+                  <span class="utrecht-icon" slot="icon">
+                    <IconChevronRight />
+                  </span>
                 </LinkListLink>
               ))
             }
@@ -121,16 +201,22 @@ const footerNavigationItems = [
         </nav>
       </PageFooter>
     </PageLayout>
+
+    <MobileMenu lang={lang}>
+      <SideNavigation items={[items.items]} client:load />
+    </MobileMenu>
+
+    <script>
+      import 'invokers-polyfill';
+    </script>
+    <script>
+      import { UpdateDocumentTitleEvent } from '@utils/document-title.js';
+
+      document.addEventListener(UpdateDocumentTitleEvent.eventName, (event: Event) => {
+        if (event instanceof UpdateDocumentTitleEvent) {
+          document.title = event.newTitle;
+        }
+      });
+    </script>
   </body>
 </html>
-
-<style is:global>
-  /* These styles are temporary to let axe pass. When actual components are
-  being implemented, these styles will be removed */
-  a,
-  input,
-  summary {
-    display: inline-block;
-    min-height: 24px;
-  }
-</style>

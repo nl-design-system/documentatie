@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Case Card
 pagination_label: Case Card
 description: Toont meta-informatie over een zaak en biedt de mogelijkheid hier naartoe te navigeren.
+issue_number: 253
 slug: /case-card
 keywords:
   - aanvraag
@@ -60,7 +61,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Case Card";
@@ -72,12 +72,6 @@ export const componentName = "case-card";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 
