@@ -63,6 +63,7 @@ function generateId(options) {
   // Make index.json's the overview page
   filename = filename.replace(/\/index.json$/i, '');
   filename = filename.replace('/index', '');
+  filename = filename.replace(/^index$/, '');
 
   // remove leading ordering number in file segment
   filename = filename
@@ -77,7 +78,10 @@ const schema = z.object({
   title: z.string(),
   title_sm: z.string().max(65).optional(),
   description: z.string().optional(),
-  lang: z.enum(['nl', 'en']).optional(),
+  hide_table_of_contents: z.boolean().optional(),
+  lead: z.string().optional(),
+  lang: z.enum(['nl', 'en']).default('nl'),
+  translations: z.record(z.string(), z.string()).optional(),
   slug: z.string().optional(),
   unlisted: z.boolean().optional(),
   image: z.httpUrl().optional(),
@@ -100,22 +104,25 @@ const docs = defineCollection({
       'richtlijnen/**/*.{md,mdx}',
       'voorbeelden/**/*.{md,mdx}',
       'woordenlijst/**/*.{md,mdx}',
-      'CHANGELOG.md',
+      'componenten/index.mdx',
       '!**/_*/**',
       '!**/_*.{md,mdx}',
     ],
     generateId,
   }),
-  schema,
+  schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
 });
 
 const components = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['componenten/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
+    pattern: ['componenten/**/*.{md,mdx}', '!componenten/index.mdx', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema: schema.extend({ page_layout: z.enum(['overview', 'detail']).optional() }),
+  schema: schema.extend({
+    page_layout: z.enum(['overview', 'detail']).optional(),
+    issue_number: z.number(),
+  }),
 });
 
 const wcag = defineCollection({
@@ -124,7 +131,7 @@ const wcag = defineCollection({
     pattern: ['wcag/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema,
+  schema: schema.extend({ conformance_level: z.string().optional() }),
 });
 
 const overviewPages = defineCollection({
@@ -136,7 +143,28 @@ const overviewPages = defineCollection({
   schema,
 });
 
-export const collections = { docs, wcag, components, overviewPages };
+const changelog = defineCollection({
+  loader: customGlob({
+    base: './../../docs',
+    pattern: ['CHANGELOG.md'],
+    generateId,
+  }),
+  schema: z.object({ title: z.string().default('Changelog') }),
+});
+
+const contentTest = defineCollection({
+  loader: customGlob({
+    base: './../../test/docs',
+    pattern: ['**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
+    generateId: (options) => `/private/content-test/${generateId(options)}`,
+  }),
+  schema: schema.extend({
+    unlisted: z.literal(true),
+    page_layout: z.enum(['overview', 'detail']).optional(),
+  }),
+});
+
+export const collections = { docs, wcag, components, overviewPages, changelog, contentTest };
 
 export const getAllCollections = async () => {
   const collectionPromises = await Promise.all([
@@ -144,6 +172,7 @@ export const getAllCollections = async () => {
     getCollection('docs'),
     getCollection('wcag'),
     getCollection('overviewPages'),
+    getCollection('changelog'),
   ]);
 
   return collectionPromises.flat();
