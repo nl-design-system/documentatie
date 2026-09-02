@@ -50,7 +50,7 @@ Sommige websites gebruiken de bewegingssensor van een telefoon of tablet. Je sch
 
 Beweging komt ook voor zonder dat iemand het wil. Wie het apparaat niet stil kan houden, of onderweg is in een bus of trein, beweegt het per ongeluk. Als de pagina daarop reageert, gebeurt er steeds iets wat de bezoeker niet bedoelde. Daarom kun je de reactie op beweging uitzetten.
 
-Er is een uitzondering. Is de beweging zelf de kern van de functie, dan hoeft er geen knop bij. Een stappenteller telt je stappen door de beweging van het apparaat. Zonder die beweging is er niets te tellen. De volledige tekst met alle uitzonderingen staat in de [Nederlandse vertaling van succescriterium 2.5.4 Bewegingsactivering](https://www.w3.org/Translations/WCAG22-nl/#motion-actuation).
+Niet elke functie heeft een knop nodig. Is de beweging zelf de kern van de functie, dan hoeft er geen knop bij. Een stappenteller telt je stappen door de beweging van het apparaat. Zonder die beweging is er niets te tellen. De uitzonderingen staan volledig beschreven in de [Nederlandse vertaling van succescriterium 2.5.4 Bewegingsactivering](https://www.w3.org/Translations/WCAG22-nl/#motion-actuation).
 
 ## Veelgemaakte fouten
 
@@ -125,10 +125,7 @@ window.addEventListener("devicemotion", handleDeviceMotion);
 <Guideline appearance="do" title="Een instelling om de bewegingsbediening uit te zetten">
 
 ```html
-<label>
-  <input type="checkbox" name="motion" />
-  Reageer op beweging van het apparaat
-</label>
+<label for="motion">Reageer op beweging van het apparaat</label> <input type="checkbox" id="motion" name="motion" />
 ```
 
 </Guideline>
