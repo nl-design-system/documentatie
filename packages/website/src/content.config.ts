@@ -63,6 +63,7 @@ function generateId(options) {
   // Make index.json's the overview page
   filename = filename.replace(/\/index.json$/i, '');
   filename = filename.replace('/index', '');
+  filename = filename.replace(/^index$/, '');
 
   // remove leading ordering number in file segment
   filename = filename
@@ -79,7 +80,8 @@ const schema = z.object({
   description: z.string().optional(),
   hide_table_of_contents: z.boolean().optional(),
   lead: z.string().optional(),
-  lang: z.enum(['nl', 'en']).optional(),
+  lang: z.enum(['nl', 'en']).default('nl'),
+  translations: z.record(z.string(), z.string()).optional(),
   slug: z.string().optional(),
   unlisted: z.boolean().optional(),
   image: z.httpUrl().optional(),
@@ -150,7 +152,19 @@ const changelog = defineCollection({
   schema: z.object({ title: z.string().default('Changelog') }),
 });
 
-export const collections = { docs, wcag, components, overviewPages, changelog };
+const contentTest = defineCollection({
+  loader: customGlob({
+    base: './../../test/docs',
+    pattern: ['**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
+    generateId: (options) => `/private/content-test/${generateId(options)}`,
+  }),
+  schema: schema.extend({
+    unlisted: z.literal(true),
+    page_layout: z.enum(['overview', 'detail']).optional(),
+  }),
+});
+
+export const collections = { docs, wcag, components, overviewPages, changelog, contentTest };
 
 export const getAllCollections = async () => {
   const collectionPromises = await Promise.all([

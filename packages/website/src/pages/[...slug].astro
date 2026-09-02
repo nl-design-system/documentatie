@@ -14,8 +14,9 @@ import '../../../../src/components/EstafetteBadge.css';
 
 export async function getStaticPaths() {
   const docs = await getCollection('docs');
+  const contentTest = await getCollection('contentTest');
 
-  return docs.map((page) => ({
+  return [...docs, ...contentTest].map((page) => ({
     params: { slug: page.id },
     props: { page },
   }));
@@ -38,6 +39,7 @@ const Layout =
   titleSm={page.data.title_sm}
   description={page.data.description}
   lang={page.data.lang}
+  translations={page.data.translations}
   seoImage={page.data.image}
   seoImageAlt={page.data.image_alt}
   keywords={page.data.keywords}

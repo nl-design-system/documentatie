@@ -9,7 +9,9 @@ import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
 import { Flex } from '@components/flex/flex';
+import { ComponentIllustration } from '@components/component-illustration/component-illustration';
 import { EstafetteBadge } from '../../../../src/components/EstafetteBadge';
+import { navigation } from '../navigation.config';
 import '../../../../src/components/ComponentPage.css';
 import '../../../../src/components/EstafetteBadge.css';
 import './[...component].css';
@@ -17,13 +19,27 @@ import './[...component].css';
 export async function getStaticPaths() {
   const components = await getCollection('components');
 
-  return components.map((page) => ({
-    params: { component: page.id },
-    props: { page },
-  }));
+  // Find all modules with aliases for the components
+  const aliasesModules = import.meta.glob(
+    '../../../../node_modules/@nl-design-system-candidate/*-docs/docs/aliases.md',
+    { eager: true },
+  ) as Record<string, { default: any }>;
+
+  return components.map((page) => {
+    const aliasModuleKey = Object.keys(aliasesModules).find((key) => key.includes(page.id + '-docs'));
+
+    // Aliases component dymaically imported for current component file
+    const Aliases = aliasModuleKey ? aliasesModules[aliasModuleKey].default : null;
+
+    return {
+      params: { component: page.id },
+      props: { page, Aliases },
+    };
+  });
 }
 
-const { page } = Astro.props;
+const { navigationList } = (await navigation)();
+const { page, Aliases } = Astro.props;
 const { Content } = await render(page);
 
 const selectedStatusOptions = {
@@ -40,7 +56,7 @@ const description =
 
 const Layout =
   page.data?.page_layout === 'overview' || page.data?.hide_table_of_contents ? OverviewLayout : DetailLayout;
-const components = await MDXComponents();
+const components = await MDXComponents({ navigationList });
 ---
 
 <Layout
@@ -48,6 +64,7 @@ const components = await MDXComponents();
   titleSm={page.data.title_sm}
   description={description}
   lang={page.data.lang}
+  translations={page.data.translations}
   seoImage={page.data.image}
   seoImageAlt={page.data.image_alt}
   keywords={['component', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}
@@ -63,6 +80,26 @@ const components = await MDXComponents();
       </Flex>
       {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
     </Grid.Cell>
+
+    {
+      Aliases ? (
+        <Grid.Cell span="all">
+          <Aliases />
+        </Grid.Cell>
+      ) : null
+    }
+
+    {
+      ['Help Wanted', 'Community'].includes(status) && (
+        <Grid.Cell span="all">
+          <ComponentIllustration
+            relayStep={status}
+            description={`Schets van de ${page.data.title} component`}
+            name={page.data.title}
+          />
+        </Grid.Cell>
+      )
+    }
   </Grid>
 
   <Grid>

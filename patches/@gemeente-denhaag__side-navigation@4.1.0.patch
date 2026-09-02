@@ -1,5 +1,5 @@
 diff --git a/dist/cjs/index.js b/dist/cjs/index.js
-index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..f02167b7378deb7ab2c54159db57d6d85ea093f7 100644
+index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..66bd5ff7db7a2b8ad18389b8047b9cbc7f0f00bc 100644
 --- a/dist/cjs/index.js
 +++ b/dist/cjs/index.js
 @@ -1,20 +1,6 @@
@@ -24,8 +24,17 @@ index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..f02167b7378deb7ab2c54159db57d6d8
          }/******************************************************************************
  Copyright (c) Microsoft Corporation.
  
+@@ -106,7 +92,7 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
+     };
+     return (React.createElement(SideNavigationItem, null,
+         React.createElement("span", { className: "denhaag-side-navigation__tree-item-label-wrapper" },
+-            React.createElement(SideNavigationLink, { href: props.href, current: props.current, onKeyDown: handleEscapeOnLink },
++            React.createElement(SideNavigationLink, { href: props.href, current: props.current, onKeyDown: handleEscapeOnLink, lang: props.lang },
+                 props.icon,
+                 props.counter && props.counter > 0 ? (React.createElement(SideNavigationLinkLabel, null,
+                     props.label,
 diff --git a/dist/mjs/index.js b/dist/mjs/index.js
-index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..e145f62d60530722c7f9d6d5259117ab6cc80a50 100644
+index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..91846b59bcfc999e84df86ecfbb0570ba4c669cc 100644
 --- a/dist/mjs/index.js
 +++ b/dist/mjs/index.js
 @@ -1,20 +1,6 @@
@@ -50,3 +59,12 @@ index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..e145f62d60530722c7f9d6d5259117ab
          }/******************************************************************************
  Copyright (c) Microsoft Corporation.
  
+@@ -106,7 +92,7 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
+     };
+     return (React.createElement(SideNavigationItem, null,
+         React.createElement("span", { className: "denhaag-side-navigation__tree-item-label-wrapper" },
+-            React.createElement(SideNavigationLink, { href: props.href, current: props.current, onKeyDown: handleEscapeOnLink },
++            React.createElement(SideNavigationLink, { href: props.href, current: props.current, onKeyDown: handleEscapeOnLink, lang: props.lang },
+                 props.icon,
+                 props.counter && props.counter > 0 ? (React.createElement(SideNavigationLinkLabel, null,
+                     props.label,

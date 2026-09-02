@@ -19,7 +19,7 @@ function whenUnorderdList(element: Element) {
 
   element.properties['role'] = 'list';
 
-  selectAll('li', element).forEach(addClassName('ams-unordered-list__item'));
+  selectAll(':scope > li', element).forEach(addClassName('ams-unordered-list__item'));
 }
 
 function whenTaskList(element: Element) {
