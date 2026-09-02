@@ -6,12 +6,11 @@ import OverviewLayout from '@layouts/overview.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
-import { DataBadge } from '@component/data-badge/data-badge';
+import { DataBadge } from '@components/data-badge/data-badge';
 import { MDXComponents } from '@utils/mdx-components.astro';
 import { navigation } from '../navigation.config';
 import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
 import { isNavigationGroup } from 'src/navigation';
-import { DataBadge } from '@nl-design-system-candidate/data-badge-react';
 
 export async function getStaticPaths() {
   const wcag = await getCollection('wcag');
@@ -42,6 +41,7 @@ const Layout =
   titleSm={`WCAG: ${page.data.title_sm}`}
   description={description}
   lang={page.data.lang}
+  translations={page.data.translations}
   seoImage={page.data.image}
   seoImageAlt={page.data.image_alt}
   keywords={['wcag', page.data.title?.toLowerCase() || '', ...(page.data.keywords || [])]}

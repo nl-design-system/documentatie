@@ -9,8 +9,38 @@ const CONFIG = {
   sitemap: '/sitemap-index.xml',
 };
 
+// A selection of urls coverig all different templates configurations. A minimal set of paths to cover all template paths so all combinations are testable without testing every single page
+const pathnamesSelection = [
+  // Homepage
+  '/',
+
+  // [...slug].astro - DetailLayout - nl - No Image
+  '/handboek/introductie/',
+
+  // [...slug].astro - OverviewLayout - nl
+  '/componenten/',
+
+  // [...slug].astro - OverviewLayout - en - Image
+  '/events/design-systems-week/en/',
+
+  // [...component].astro - keyword/description
+  '/accordion/',
+
+  // [...overview].astro - OverviewLayout - index.json
+  '/handboek/organisatie/overzicht/',
+
+  // [...wcag].astro - conformance-level
+  '/wcag/1.1.1/',
+
+  // .astro page (not a template)
+  '/zoeken/',
+];
+
 test.describe('SEO values', async () => {
-  const pathnames = await getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`);
+  const pathnames =
+    process.env.E2E_SEO_ALL_PAGES === '1'
+      ? getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`)
+      : pathnamesSelection;
 
   pathnames.forEach(async (pathname) => {
     test.describe(pathname, async () => {
@@ -95,7 +125,7 @@ test.describe('SEO values', async () => {
             .getAttribute('content')
             .then((twitterCard) => ({ twitterCard })),
           page
-            .locator('body h1')
+            .locator('body h1:not(.nlds-not-accessible h1)')
             .innerText()
             .then((h1) => ({ h1 })),
         ]).then((values) => Object.assign({}, ...values));

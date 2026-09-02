@@ -3,7 +3,8 @@
  */
 :root {
   --ams-unordered-list-gap: var(--basis-space-row-lg);
-  --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-xl);
+  --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
+  --ams-unordered-list-list-style-type: disc;
   --rhc-card-inline-size: 100% !important;
   --ma-estafette-badge-border-width: 1px;
   --ma-mobile-menu-max-inline-size: 300px;
@@ -26,6 +27,25 @@
   --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
   --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
   --ma-body-copy-items-max-inline-size: 65ch;
+}
+
+/**
+ * Docusaurus overrides these values, but it should not.
+ */
+.nl-data-badge {
+  --nl-data-badge-padding-inline: var(--basis-space-inline-sm);
+  --nl-data-badge-padding-block: var(--basis-space-none);
+  --nl-data-badge-min-inline-size: var(--basis-size-sm);
+  --nl-data-badge-min-block-size: var(--basis-size-xs);
+  --nl-data-badge-line-height: var(--basis-text-line-height-md);
+  --nl-data-badge-font-weight: var(--basis-text-font-weight-bold);
+  --nl-data-badge-font-size: var(--basis-text-font-size-md);
+  --nl-data-badge-font-family: var(--basis-text-font-family-default);
+  --nl-data-badge-color: var(--basis-color-default-color-default);
+  --nl-data-badge-border-width: var(--basis-border-width-sm);
+  --nl-data-badge-border-radius: var(--basis-border-radius-sm);
+  --nl-data-badge-border-color: var(--basis-color-transparent);
+  --nl-data-badge-background-color: var(--basis-color-default-bg-default);
 }
 
 /**
@@ -71,6 +91,17 @@
   --rhc-card-active-text-decoration: none;
 }
 
+.rhc-card:has(.rhc-link) {
+  position: relative;
+  z-index: 0;
+
+  .rhc-link::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+  }
+}
+
 .utrecht-nav-bar__content {
   box-sizing: border-box;
 
@@ -96,6 +127,15 @@
   &:focus {
     background-color: var(--utrecht-nav-bar-content-hover-background-color);
   }
+}
+
+:where(.utrecht-card .utrecht-card__heading .utrecht-link) {
+  display: inline-block;
+  min-block-size: 24px;
+}
+
+html .utrecht-link--html-a:any-link:focus {
+  background-color: unset;
 }
 
 @media (forced-colors: active) {
@@ -157,4 +197,29 @@
 
   /* denhaag.side-navigation.expand-button.focus.color */
   color: var(--basis-focus-color);
+}
+
+.denhaag-side-navigation__expand-button {
+  svg {
+    transition: transform 250ms ease-in-out;
+  }
+}
+
+.denhaag-side-navigation__expand-button--expanded {
+  transform: none !important;
+
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
+kbd {
+  background-color: var(--basis-color-default-bg-default);
+  border: 1px solid var(--basis-color-default-border-default);
+  border-radius: 0.2rem;
+  box-shadow: inset 0 -1px 0 var(--basis-color-default-border-default);
+  color: var(--basis-color-default-color-document);
+  font: 80% var(--basis-text-font-family-monospace);
+  padding-block: 0.15rem;
+  padding-inline: 0.3rem;
 }
