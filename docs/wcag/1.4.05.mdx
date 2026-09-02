@@ -63,18 +63,18 @@ De homepage opent met een grote banner. De titel en subtitel staan in een PNG me
 
 <Guideline appearance="dont" title="Hero-banner met tekst in een afbeelding">
   ```html
-  <section class="hero">
-    <img src="/images/hero-welkom.png" alt="Welkom bij onze dienstverlening. Vraag direct een offerte aan." />
+  <section class="example-hero">
+    <img src="/images/hero-welcome.png" alt="Welkom bij onze dienstverlening. Vraag direct een offerte aan." />
   </section>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Hero-banner met echte tekst en een achtergrondafbeelding">
     ```html
-    <section class="hero">
+    <section class="example-hero">
       <h1>Welkom bij onze dienstverlening</h1>
       <p>Vraag direct een offerte aan.</p>
-      <a href="/offerte" class="knop">Offerte aanvragen</a>
+      <a href="/quote" class="example-button">Offerte aanvragen</a>
     </section>
     ```
 
@@ -99,15 +99,15 @@ De ontwerper heeft een knop met een speciaal lettertype en een gradient gemaakt.
 
 <Guideline appearance="dont" title="Knop als afbeelding">
   ```html
-  <a href="/aanmelden">
-    <img src="/images/knop-aanmelden.png" alt="Aanmelden" />
+  <a href="/register">
+    <img src="/images/button-register.png" alt="Aanmelden" />
   </a>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Knop met echte tekst en CSS-styling">
     ```html
-    <a href="/aanmelden" class="knop-primair">Aanmelden</a>
+    <a href="/register" class="example-button example-button--primary">Aanmelden</a>
     ```
 
     ```css
@@ -135,7 +135,7 @@ Een artikel bevat een groot uitgelicht citaat in een handgeschreven lettertype. 
 <Guideline appearance="dont" title="Citaat als afbeelding">
   ```html
   <figure>
-    <img src="/images/citaat-jansen.png" alt="Toegankelijkheid is geen extra, het is de basis." />
+    <img src="/images/quote-jansen.png" alt="Toegankelijkheid is geen extra, het is de basis." />
     <figcaption>Jansen, designer</figcaption>
   </figure>
   ```
@@ -143,7 +143,7 @@ Een artikel bevat een groot uitgelicht citaat in een handgeschreven lettertype. 
 
 <Guideline appearance="do" title="Citaat als echte tekst met een webfont">
     ```html
-    <figure class="citaat">
+    <figure class="example-quote">
       <blockquote>
         <p>Toegankelijkheid is geen extra, het is de basis.</p>
       </blockquote>
@@ -170,7 +170,7 @@ Een rapport bevat een vergelijkingstabel uit Excel. De auteur kopieert de tabel 
 
 <Guideline appearance="dont" title="Tabel als screenshot">
   ```html
-  <img src="/images/vergelijkingstabel.png" alt="Vergelijkingstabel pakketten" />
+  <img src="/images/comparison-table.png" alt="Vergelijkingstabel pakketten" />
   ```
 </Guideline>
 
@@ -206,13 +206,13 @@ Een designer wil een kop in een speciaal lettertype, een gradient en een schaduw
 
 <Guideline appearance="dont" title="Kop als PNG">
   ```html
-  <img src="/images/kop-onze-aanpak.png" alt="Onze aanpak" />
+  <img src="/images/heading-our-approach.png" alt="Onze aanpak" />
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Kop als echte HTML met CSS-styling">
     ```html
-    <h2 class="kop-uitgelicht">Onze aanpak</h2>
+    <h2 class="example-featured-heading">Onze aanpak</h2>
     ```
 
     ```css
@@ -242,11 +242,11 @@ Een hoofdmenu heeft items met een uniek lettertype, een specifieke kleur en een 
 <Guideline appearance="dont" title="Menu met afbeeldingen voor elk item">
   ```html
   <nav>
-    <a href="/diensten">
-      <img src="/images/menu-diensten.png" alt="Diensten" />
+    <a href="/services">
+      <img src="/images/menu-services.png" alt="Diensten" />
     </a>
-    <a href="/over">
-      <img src="/images/menu-over.png" alt="Over ons" />
+    <a href="/about">
+      <img src="/images/menu-about.png" alt="Over ons" />
     </a>
     <a href="/contact">
       <img src="/images/menu-contact.png" alt="Contact" />
@@ -258,8 +258,8 @@ Een hoofdmenu heeft items met een uniek lettertype, een specifieke kleur en een 
 <Guideline appearance="do" title="Menu met echte tekst en CSS-styling">
     ```html
     <nav>
-      <a href="/diensten">Diensten</a>
-      <a href="/over">Over ons</a>
+      <a href="/services">Diensten</a>
+      <a href="/about">Over ons</a>
       <a href="/contact">Contact</a>
     </nav>
     ```
