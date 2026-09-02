@@ -51,7 +51,7 @@ In een paar situaties hoeft de bezoeker beweging niet te kunnen stopzetten: als 
 
 ## Veelgemaakte fouten
 
-### Carrousel schuift vanzelf door zonder pauzeknop
+### Carrousel scrollt vanzelf door zonder pauzeknop
 
 Een carrousel toont aanbiedingen, nieuws of afbeeldingen en wisselt elke paar seconden naar de volgende slide. Er is geen knop om de beweging te pauzeren. Voor iemand die snel leest werkt dat. Voor een screenreadergebruiker die de tekst laat voorlezen, voor iemand met dyslexie, of voor iemand die schermvergroting gebruikt en de slide eerst in beeld moet krijgen, verdwijnt de content voordat die verwerkt is. Wie zich moeilijk concentreert, blijft naar de wisselende slides kijken en komt niet toe aan de rest van de pagina.
 
@@ -59,19 +59,18 @@ Een carrousel toont aanbiedingen, nieuws of afbeeldingen en wisselt elke paar se
 
 <Guideline appearance="dont" title="Carrousel wisselt automatisch, geen pauzeknop">
     ```html
-    <div class="carrousel">
-      <div class="slide">
+    <div class="example-carousel">
+      <div class="example-slide">
         <h2>Wintersale: 40% korting</h2>
         <p>Nog tot en met zondag.</p>
       </div>
     </div>
     ```
     ```javascript
-    const carrousel = document.querySelector(".carrousel");
+    const carousel = document.querySelector(".example-carousel");
 
-    // Schuift elke 5 seconden vanzelf door en blijft dat oneindig doen.
     setInterval(() => {
-      toonVolgendeSlide(carrousel);
+      showNextSlide(carousel);
     }, 5000);
     ```
 
@@ -79,8 +78,8 @@ Een carrousel toont aanbiedingen, nieuws of afbeeldingen en wisselt elke paar se
 
 <Guideline appearance="do" title="Carrousel met pauze- en navigatieknoppen">
   ```html
-  <div class="carrousel" role="region" aria-label="Aanbiedingen">
-    <div class="slide">
+  <div class="example-carousel" role="region" aria-label="Aanbiedingen">
+    <div class="example-slide">
       <h2>Wintersale: 40% korting</h2>
       <p>Nog tot en met zondag.</p>
     </div>
@@ -104,43 +103,38 @@ Een video speelt automatisch af als achtergrond achter een kop of tekst, en herh
 <Guideline appearance="dont" title="Video speelt automatisch af en loopt eindeloos door zonder bediening">
   ```html
   <video autoplay loop muted>
-    <source src="/video/achtergrond.mp4" type="video/mp4" />
+    <source src="/video/background.mp4" type="video/mp4" />
   </video>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Video met zichtbare bediening en respect voor de voorkeur voor minder beweging">
-    ```html
-    <video controls muted>
-      <source src="/video/achtergrond.mp4" type="video/mp4" />
-    </video>
-    ```
-    ```css
-    @media (prefers-reduced-motion: reduce) {
-      video[autoplay] {
-        /* Toon een stilstaand beeld in plaats van de bewegende video. */
-      }
-    }
-    ```
+  ```html
+  <video controls muted>
+    <source src="/video/background.mp4" type="video/mp4" />
+  </video>
+  ```
 </Guideline>
+
+Zet je de video toch op `autoplay`, respecteer dan `prefers-reduced-motion` en toon een stilstaand beeld in plaats van de bewegende video.
 
 **Wie kan dit oplossen:** een webredacteur kan de video via het CMS vervangen door een stilstaande afbeelding of het automatisch afspelen uitzetten. Een developer geeft de video zichtbare bedieningsknoppen, of laat de video pas afspelen nadat de bezoeker die zelf start.
 
-### Tekst schuift als een ticker over het scherm
+### Tekst scrollt als een ticker over het scherm
 
-Een balk met nieuws, aandelenkoersen of aankondigingen schuift horizontaal over het scherm. De tekst is alleen leesbaar op het moment dat die voorbijkomt. Iemand die langzamer leest, mist zinnen. Wie schermvergroting gebruikt, ziet de tekst het scherm uit schuiven voordat die gelezen is. Een screenreader leest bewegende tekst onvoorspelbaar of helemaal niet voor.
+Een balk met nieuws, aandelenkoersen of aankondigingen scrollt horizontaal over het scherm. De tekst is alleen leesbaar op het moment dat die voorbijkomt. Iemand die langzamer leest, mist zinnen. Wie schermvergroting gebruikt, ziet de tekst het scherm uit schuiven voordat die gelezen is. Een screenreader leest bewegende tekst onvoorspelbaar of helemaal niet voor.
 
-**Hoe te testen:** zoek op de pagina naar tekst die vanzelf horizontaal of verticaal schuift. Kun je die tekst stilzetten om hem rustig te lezen?
+**Hoe te testen:** zoek op de pagina naar tekst die vanzelf horizontaal of verticaal scrollt. Kun je die tekst stilzetten om hem rustig te lezen?
 
-<Guideline appearance="dont" title="Tekst schuift onophoudelijk voorbij zonder stopknop">
+<Guideline appearance="dont" title="Tekst scrollt onophoudelijk voorbij zonder stopknop">
     ```html
-    <div class="ticker">
+    <div class="example-ticker">
       <p>Laatste nieuws: nieuwe openingstijden vanaf maandag ...</p>
     </div>
     ```
     ```css
-    .ticker p {
-      animation: schuif 15s linear infinite;
+    .example-ticker p {
+      animation: scroll 15s linear infinite;
     }
     ```
 </Guideline>
@@ -164,11 +158,11 @@ Een tijdlijn, berichtenlijst of nieuwsoverzicht werkt zichzelf om de paar second
 
 **Hoe te testen:** open een pagina met een live bijgewerkte lijst en begin een item te lezen. Verspringt de inhoud vanzelf? Kun je het verversen pauzeren of zelf bepalen wanneer nieuwe items verschijnen?
 
-<Guideline appearance="dont" title="Lijst schuift automatisch door zodra er nieuwe items binnenkomen">
+<Guideline appearance="dont" title="Lijst scrollt automatisch door zodra er nieuwe items binnenkomen">
     ```javascript
     setInterval(() => {
-      const lijst = document.querySelector("#tijdlijn");
-      lijst.prepend(maakNieuwItem());
+      const list = document.querySelector("#timeline");
+      list.prepend(createNewItem());
     }, 5000);
     ```
 </Guideline>
@@ -178,7 +172,7 @@ Een tijdlijn, berichtenlijst of nieuwsoverzicht werkt zichzelf om de paar second
   <button type="button" aria-live="polite">
     3 nieuwe berichten. Toon
   </button>
-  <ul id="tijdlijn">
+  <ul id="timeline">
     <li>Bericht van 14:02</li>
     <li>Bericht van 13:58</li>
   </ul>
@@ -197,14 +191,14 @@ Een geanimeerde GIF herhaalt zichzelf zonder te stoppen. De bezoeker kan de bewe
 
 <Guideline appearance="dont" title="Geanimeerde afbeelding die eindeloos doorloopt">
   ```html
-  <img src="/images/mascotte-animatie.gif" alt="Mascotte die zwaait" />
+  <img src="/images/mascot-animation.gif" alt="Mascotte die zwaait" />
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Video met bediening in plaats van een eindeloze GIF">
   ```html
   <video controls muted loop poster="/images/mascotte-still.jpg">
-    <source src="/video/mascotte.mp4" type="video/mp4" />
+    <source src="/video/mascot.mp4" type="video/mp4" />
   </video>
   ```
 </Guideline>
@@ -215,27 +209,26 @@ Een GIF die maar één keer of een paar seconden speelt en daarna stilstaat, is 
 
 ### Kleine animatie naast een kop of icoon blijft doorlopen
 
-Naast een titel of icoon staat een klein bewegend element: een pulserend icoon, een animatie naast de kop van een pagina, een bewegend beeld bij een kaart. Het lijkt onschuldig omdat het klein en decoratief is, maar het beweegt vanzelf en blijft langer dan 5 seconden herhalen. De beweging trekt steeds de aandacht weg van de tekst ernaast. Voor iemand met een concentratie- of aandachtsstoornis maakt juist zo'n klein, herhalend element de kop moeilijk te lezen.
+Naast een titel of icoon staat een klein bewegend element: een pulsed icoon, een animatie naast de kop van een pagina, een bewegend beeld bij een kaart. Het lijkt onschuldig omdat het klein en decoratief is, maar het beweegt vanzelf en blijft langer dan 5 seconden herhalen. De beweging trekt steeds de aandacht weg van de tekst ernaast. Voor iemand met een concentratie- of aandachtsstoornis maakt juist zo'n klein, herhalend element de kop moeilijk te lezen.
 
 **Hoe te testen:** kijk naast koppen, iconen en titels of daar iets vanzelf beweegt. Duurt de beweging langer dan 5 seconden en blijft die herhalen? Kun je de beweging stopzetten?
 
 <Guideline appearance="dont" title="Icoontje naast een kop pulseert eindeloos door">
     ```css
-    .kop-icoon {
-      animation: pulseren 1.5s ease-in-out infinite;
+    .example-heading-icon {
+      animation: pulse 1.5s ease-in-out infinite;
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Animatie speelt kort en stopt vanzelf, en respecteert de voorkeur voor minder beweging">
     ```css
-    .kop-icoon {
-      /* Speelt 2 keer, samen 3 seconden, en staat daarna stil. */
-      animation: pulseren 1.5s ease-in-out 2;
+    .example-heading-icon {
+      animation: pulse 1.5s ease-in-out 2;
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .kop-icoon {
+      .example-heading-icon {
         animation: none;
       }
     }
@@ -243,32 +236,32 @@ Naast een titel of icoon staat een klein bewegend element: een pulserend icoon, 
 
 </Guideline>
 
-Een decoratieve animatie hoeft niet helemaal weg. Zorg dat de beweging binnen 5 seconden stopt, of geef de bezoeker een manier om die te pauzeren.
+Een decoratieve animatie hoeft niet helemaal weg. Zorg dat de beweging binnen 5 seconden stopt, of geef de bezoeker een manier om die te pauzeren. In het goede voorbeeld speelt de animatie 2 keer, samen 3 seconden, en staat daarna stil.
 
 **Wie kan dit oplossen:** voor een puur decoratieve animatie kan een ontwerper of contentmaker kiezen die weg te laten. Een developer laat de animatie anders na een paar seconden stoppen, of biedt een pauzemogelijkheid, en respecteert de systeemvoorkeur voor minder beweging.
 
 ### Animaties negeren de systeemvoorkeur voor minder beweging
 
-De bezoeker heeft in het besturingssysteem ingesteld dat de pagina beweging moet beperken, maar de pagina laat toch alles bewegen: elementen die in beeld schuiven, een pulserende knop, een parallax-effect. Juist mensen die last hebben van beweging kiezen deze instelling, precies de groep die de animaties hindert.
+De bezoeker heeft in het besturingssysteem ingesteld dat de pagina beweging moet beperken, maar de pagina laat toch alles bewegen: elementen die in beeld schuiven, een pulsede knop, een parallax-effect. Juist mensen die last hebben van beweging kiezen deze instelling, precies de groep die de animaties hindert.
 
 **Hoe te testen:** zet in de systeeminstellingen "beweging verminderen" aan. Op macOS vind je dit onder Systeeminstellingen, Toegankelijkheid, Weergave; op Windows onder Instellingen, Toegankelijkheid, Visuele effecten. Herlaad de pagina. Zijn de animaties nu uit of veel rustiger?
 
 <Guideline appearance="dont" title="Animatie draait altijd, ongeacht de voorkeur van de bezoeker">
     ```css
-    .kaart {
-      animation: opduiken 0.6s ease-out;
+    .example-card {
+      animation: appear 0.6s ease-out;
     }
     ```
 </Guideline>
 
 <Guideline appearance="do" title="Animatie houdt rekening met de voorkeur voor minder beweging">
     ```css
-    .kaart {
-      animation: opduiken 0.6s ease-out;
+    .example-card {
+      animation: appear 0.6s ease-out;
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .kaart {
+      .example-card {
         animation: none;
       }
     }
@@ -284,7 +277,7 @@ De systeemvoorkeur respecteren neemt beweging weg voor de mensen die daarom vrag
 
 ### Voor iedereen
 
-1. Open de pagina en wacht zonder te klikken. Beweegt, knippert of schuift er iets langer dan 5 seconden vanzelf?
+1. Open de pagina en wacht zonder te klikken. Beweegt, knippert of scrollt er iets langer dan 5 seconden vanzelf?
 2. Zoek bij elk bewegend element naar een knop om te pauzeren, te stoppen of het element te verbergen.
 3. Probeer een carrousel of ticker stil te zetten en de inhoud rustig te lezen.
 4. Begin een live bijgewerkte lijst te lezen. Verspringt de inhoud onder je ogen, of bepaal jij wanneer nieuwe items verschijnen?
