@@ -103,6 +103,10 @@ export default defineConfig({
           find: '@utrecht/component-library-react/css-module',
           replacement: '@utrecht/component-library-react',
         },
+        {
+          find: /^@nl-design-system-candidate\/(.+)-react\/css$/,
+          replacement: '@nl-design-system-candidate/$1-react',
+        },
       ],
     },
   },

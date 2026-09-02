@@ -11,6 +11,7 @@ import { Paragraph } from '@components/paragraph/paragraph';
 import { Flex } from '@components/flex/flex';
 import { ComponentIllustration } from '@components/component-illustration/component-illustration';
 import { EstafetteBadge } from '../../../../src/components/EstafetteBadge';
+import { navigation } from '../navigation.config';
 import '../../../../src/components/ComponentPage.css';
 import '../../../../src/components/EstafetteBadge.css';
 import './[...component].css';
@@ -37,6 +38,7 @@ export async function getStaticPaths() {
   });
 }
 
+const { navigationList } = (await navigation)();
 const { page, Aliases } = Astro.props;
 const { Content } = await render(page);
 
@@ -54,7 +56,7 @@ const description =
 
 const Layout =
   page.data?.page_layout === 'overview' || page.data?.hide_table_of_contents ? OverviewLayout : DetailLayout;
-const components = await MDXComponents();
+const components = await MDXComponents({ navigationList });
 ---
 
 <Layout
