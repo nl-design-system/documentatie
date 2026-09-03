@@ -223,3 +223,10 @@ kbd {
   padding-block: 0.15rem;
   padding-inline: 0.3rem;
 }
+
+.nlds-icon-ext {
+  background-image: url("../../../../src/icons/external-link.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-inline-end: 24px;
+}

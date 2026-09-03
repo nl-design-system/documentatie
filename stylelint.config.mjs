@@ -67,7 +67,7 @@ export default {
       '^(ams|rhc|denhaag|docusaurus|example|ifm|nl|nlds|utrecht|ma|basis|pra|docsearch)-[a-z0-9-]+|DocSearch-.+$',
     'selector-attribute-quotes': ['always'],
     'selector-class-pattern':
-      '^(ams|rhc|denhaag|docusaurus|example|ifm|nl|nlds|utrecht|ma|basis|pra|docsearch)-[a-z0-9_-]+|DocSearch-.+$',
+      '^(ams|rhc|denhaag|docusaurus|example|ifm|nl|nlds|utrecht|ma|basis|pra|docsearch|sr)-[a-z0-9_-]+|DocSearch-.+$',
     'selector-max-id': [0],
     'selector-pseudo-class-no-unknown': [true],
     'selector-pseudo-element-no-unknown': [true],
