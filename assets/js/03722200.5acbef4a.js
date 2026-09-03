@@ -21,7 +21,91 @@
     return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(i) : e.components || i) : a(e.components)), r.createElement(s.Provider, { value: n }, e.children));
    }
   },
-  18792(e, n, t) {
+  32385(e, n, t) {
+   t.d(n, { bo: () => i, KF: () => h, mJ: () => u, VZ: () => D, cR: () => y, Pv: () => v, qZ: () => a, kD: () => b, QQ: () => S, B2: () => g, Pc: () => l, f4: () => o, GT: () => x, fX: () => s, eQ: () => f, B_: () => k, o_: () => j });
+   const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
+    i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
+    s = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
+    a = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
+    o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    l = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
+    d = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
+   function c(e) {
+    return Array.from(new Set(e));
+   }
+   const m = (e) => [...e].sort((e, n) => d.indexOf(e) - d.indexOf(n)),
+    h = (e) => {
+     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => p(e));
+     return m(c(n));
+    },
+    g = (e, n) => u(e).includes(n),
+    p = (e) => {
+     const n = / URL \(([^)]+)\)/;
+     return m(c(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
+    },
+    u = (e) => m(c(e.projects.flatMap((e) => p(e)))),
+    v = (e) => {
+     const n = p(e),
+      t = ((e) => {
+       const n = e.tasks.find(({ name: e }) => 'Naam' === e);
+       return n?.value || '';
+      })(e);
+     return n.map((n) => {
+      const r = e.tasks
+       .filter(({ name: e, value: t }) => '' !== t && e.includes(n))
+       .map(({ name: r, id: i, value: s }) => {
+        const a = /^(.+) URL/.exec(r)[1],
+         o = 'Storybook' === a ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${a}`;
+        return { brand: a.toLowerCase(), name: r, id: i, value: s, description: o };
+       });
+      return { frameworkName: n, tasks: r };
+     });
+    },
+    j = (e) => e.join('.'),
+    k = (e) => '--' + e.join('-'),
+    f = (e, n) => n.reduce((e, n) => e?.[n], e);
+   function b(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? b(e[t], [...n, t]) : []));
+   }
+   function x(e) {
+    const n = new Map();
+    function t(e) {
+     return (n.has(e) || n.set(e, j(e)), n.get(e));
+    }
+    return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
+   }
+   const y = () => {
+     const e = r.sP?.pnpm;
+     if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
+     return e.replace(/^[\^~>=<]+/, '');
+    },
+    D = () => {
+     const e = r.sP?.node;
+     if (!e) throw new Error('No node version found in package.json#engines.node');
+     const n = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
+     return n ? n[1] : e.replace(/^[\^~>=<]+/, '');
+    },
+    N = new Set(['ics', 'json', 'pdf']),
+    S = (e) => {
+     const n = e.split('/').pop() ?? '',
+      t = n.split('.').pop()?.toLowerCase();
+     return void 0 !== t && N.has(t);
+    };
+  },
+  94309(e, n, t) {
+   t.d(n, { F: () => a, N: () => o });
+   var r = t(13526),
+    i = t(32385),
+    s = t(86070);
+   const a = ({ children: e, ...n }) => {
+     const { to: t, href: r, ...a } = n;
+     let o = t || r;
+     const l = new URL(o, 'https://nldesignsystem.nl');
+     return ('https://nldesignsystem.nl' === l.origin ? (l.pathname.endsWith('/') || (0, i.QQ)(l.pathname) || (l.pathname = `${l.pathname}/`), (o = l.toString().replace('https://nldesignsystem.nl', ''))) : ((a.target = '_blank'), (a.rel = 'noopener noreferrer')), (0, s.jsx)('a', { href: o, ...a, children: e }));
+    },
+    o = ({ className: e, ...n }) => (0, s.jsx)(a, { className: (0, r.$)('utrecht-link', 'utrecht-link--html-a', e), ...n });
+  },
+  95310(e, n, t) {
    (t.r(n), t.d(n, { assets: () => z, contentTitle: () => w, default: () => C, frontMatter: () => _, metadata: () => r, toc: () => O }));
    const r = JSON.parse('{"id":"project/kernteam","title":"Kernteam","description":"Contact met NL Design System Kernteam","source":"@site/docs/project/kernteam.mdx","sourceDirName":"project","slug":"/project/kernteam","permalink":"/project/kernteam","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/project/kernteam.mdx","tags":[],"version":"current","frontMatter":{"title":"Kernteam","hide_title":true,"hide_table_of_contents":true,"navigation_order":3,"sidebar_label":"Kernteam","pagination_label":"Kernteam","description":"Contact met NL Design System Kernteam","keywords":["kernteam","over ons","nl design system","contact"]},"sidebar":"project","previous":{"title":"Veelgestelde vragen","permalink":"/project/faq"},"next":{"title":"Op de hoogte blijven","permalink":"/project/blijf-op-de-hoogte"}}');
    var i = t(86070),
@@ -127,90 +211,6 @@
     const { wrapper: n } = { ...(0, s.R)(), ...e.components };
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(L, { ...e }) }) : L(e);
    }
-  },
-  32385(e, n, t) {
-   t.d(n, { bo: () => i, KF: () => h, mJ: () => u, VZ: () => D, cR: () => y, Pv: () => v, qZ: () => a, kD: () => b, QQ: () => S, B2: () => g, Pc: () => l, f4: () => o, GT: () => x, fX: () => s, eQ: () => f, B_: () => k, o_: () => j });
-   const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
-    i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
-    s = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
-    a = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
-    o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
-    l = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
-    d = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
-   function c(e) {
-    return Array.from(new Set(e));
-   }
-   const m = (e) => [...e].sort((e, n) => d.indexOf(e) - d.indexOf(n)),
-    h = (e) => {
-     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => p(e));
-     return m(c(n));
-    },
-    g = (e, n) => u(e).includes(n),
-    p = (e) => {
-     const n = / URL \(([^)]+)\)/;
-     return m(c(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
-    },
-    u = (e) => m(c(e.projects.flatMap((e) => p(e)))),
-    v = (e) => {
-     const n = p(e),
-      t = ((e) => {
-       const n = e.tasks.find(({ name: e }) => 'Naam' === e);
-       return n?.value || '';
-      })(e);
-     return n.map((n) => {
-      const r = e.tasks
-       .filter(({ name: e, value: t }) => '' !== t && e.includes(n))
-       .map(({ name: r, id: i, value: s }) => {
-        const a = /^(.+) URL/.exec(r)[1],
-         o = 'Storybook' === a ? `${t} (${n}) in Storybook van ${e.title}` : `${t} (${n}) op ${a}`;
-        return { brand: a.toLowerCase(), name: r, id: i, value: s, description: o };
-       });
-      return { frameworkName: n, tasks: r };
-     });
-    },
-    j = (e) => e.join('.'),
-    k = (e) => '--' + e.join('-'),
-    f = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function b(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? b(e[t], [...n, t]) : []));
-   }
-   function x(e) {
-    const n = new Map();
-    function t(e) {
-     return (n.has(e) || n.set(e, j(e)), n.get(e));
-    }
-    return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
-   }
-   const y = () => {
-     const e = r.sP?.pnpm;
-     if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
-     return e.replace(/^[\^~>=<]+/, '');
-    },
-    D = () => {
-     const e = r.sP?.node;
-     if (!e) throw new Error('No node version found in package.json#engines.node');
-     const n = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
-     return n ? n[1] : e.replace(/^[\^~>=<]+/, '');
-    },
-    N = new Set(['ics', 'json', 'pdf']),
-    S = (e) => {
-     const n = e.split('/').pop() ?? '',
-      t = n.split('.').pop()?.toLowerCase();
-     return void 0 !== t && N.has(t);
-    };
-  },
-  94309(e, n, t) {
-   t.d(n, { F: () => a, N: () => o });
-   var r = t(13526),
-    i = t(32385),
-    s = t(86070);
-   const a = ({ children: e, ...n }) => {
-     const { to: t, href: r, ...a } = n;
-     let o = t || r;
-     const l = new URL(o, 'https://nldesignsystem.nl');
-     return ('https://nldesignsystem.nl' === l.origin ? (l.pathname.endsWith('/') || (0, i.QQ)(l.pathname) || (l.pathname = `${l.pathname}/`), (o = l.toString().replace('https://nldesignsystem.nl', ''))) : ((a.target = '_blank'), (a.rel = 'noopener noreferrer')), (0, s.jsx)('a', { href: o, ...a, children: e }));
-    },
-    o = ({ className: e, ...n }) => (0, s.jsx)(a, { className: (0, r.$)('utrecht-link', 'utrecht-link--html-a', e), ...n });
   },
  },
 ]);
