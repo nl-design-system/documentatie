@@ -678,6 +678,9 @@ importers:
       '@nl-design-system-unstable/postcss-remove-unused-design-tokens':
         specifier: 0.0.2
         version: 0.0.2
+      '@nl-design-system/component-progress':
+        specifier: 1.1.5
+        version: 1.1.5
       '@nl-design-system/tsconfig':
         specifier: 1.0.5
         version: 1.0.5(typescript@5.9.3)
