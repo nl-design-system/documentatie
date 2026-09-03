@@ -42,7 +42,7 @@ const cspProdConfig: AstroUserConfig = {
         `connect-src 'self' ${cspConnectSrcSources} blob: data:`,
         "default-src 'self'",
         "font-src 'self'",
-        "form-action 'self'",
+        "form-action 'self' https://nl-design-system.email-provider.eu",
         "frame-src 'self' https://www.youtube-nocookie.com",
         `img-src 'self' ${cspImgSrcSources} blob: data:`,
         "object-src 'none'",
