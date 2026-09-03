@@ -1,0 +1,77 @@
+---
+title: Customizable Text Input
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Customizable Text Input
+pagination_label: Customizable Text Input
+description: Uitbreiding voor iconen, knoppen of tekst aan het begin of einde van een invoerveld.
+issue_number: 448
+slug: /customizable-text-input
+keywords:
+  - input adornment
+  - input group
+  - input addon
+  - input add-on
+  - prefix
+  - suffix
+  - start-decoration
+  - end-decoration
+  - editable textfield
+  - form
+  - form control
+  - formulier
+  - formulierelement
+  - formfield
+  - form field
+  - form input
+  - formulier-stap
+  - input
+  - input field
+  - inputfield
+  - invoerveld
+  - invulveld
+  - tekstveld
+  - tekstinvoer
+  - text box
+  - textbox
+  - text entry
+  - text field
+  - text input
+  - textinput
+  - veld
+  - combobox
+---
+
+{/* @license CC0-1.0 */}
+
+import componentProgress from "@nl-design-system/component-progress/dist/index.json";
+import {
+  DefinitionOfDone,
+  HelpImproveComponent,
+  Implementations,
+  Introduction,
+  Related,
+} from "@site/src/components/ComponentPage";
+
+{/* Add name and description for the component */}
+export const title = "Customizable Text Input";
+export const description = "Uitbreiding voor iconen, knoppen of tekst aan het begin of einde van een invoerveld.";
+export const issueNumber = 448;
+export const relayStep = "help wanted";
+export const componentName = "customizable-text-input";
+
+export const component = componentProgress.find((item) => item.number === issueNumber);
+
+<Introduction component={component} headingLevel={1} description={description} />
+
+## Definition of Done
+
+<DefinitionOfDone component={component} headingLevel={3} />
+
+## Community implementaties
+
+<Implementations component={component} headingLevel={3} />
+
+<Related component={component} />
+
+<HelpImproveComponent component={component} headingLevel={2} />
