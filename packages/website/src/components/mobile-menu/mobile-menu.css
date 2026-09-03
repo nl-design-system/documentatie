@@ -1,8 +1,8 @@
 .ma-mobile-menu-drawer {
   --utrecht-drawer-padding-block-start: 0;
   --utrecht-drawer-min-inline-size: auto;
-  inline-size: min(calc(100vw - var(--basis-pointer-target-min-inline-size)), var(--ma-mobile-menu-max-inline-size));
 
+  inline-size: min(calc(100vw - var(--basis-pointer-target-min-inline-size)), var(--ma-mobile-menu-max-inline-size));
   transition:
     translate 250ms ease-out,
     display 250ms ease-out allow-discrete;

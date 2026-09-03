@@ -11,7 +11,7 @@
     justify-content: flex-end;
   }
 
-  @media (--medium-down) {
+  @media (--large-down) {
     padding-block-end: var(--basis-space-block-sm);
     padding-inline: var(--basis-space-inline-md);
 
@@ -30,6 +30,7 @@
     }
 
     .ma-logo {
+      display: flex;
       inline-size: 179px; /* 179px is logo viewport size */
     }
 
