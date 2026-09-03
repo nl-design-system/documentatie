@@ -135,7 +135,7 @@
     "@argos-ci/playwright": "7.0.5",
     "@astrojs/markdown-remark": "7.0.1",
     "@axe-core/playwright": "4.11.0",
-    "@changesets/cli": "2.29.8",
+    "@changesets/cli": "3.0.1",
     "@docsearch/react": "4.6.3",
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/plugin-content-blog": "3.9.2",
