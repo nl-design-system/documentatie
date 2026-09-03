@@ -525,8 +525,8 @@ importers:
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-community/ma-design-tokens':
-        specifier: 5.5.0
-        version: 5.5.0
+        specifier: 7.0.0
+        version: 7.0.0
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
@@ -3804,6 +3804,9 @@ packages:
 
   '@nl-design-system-community/ma-design-tokens@5.5.0':
     resolution: {integrity: sha512-oJQ4bx9HPnpn2iM25Rel/fN/MtHIQ9DUP3ZngQh0CJsf+PX5x0diqDhZjDc8www3Hvr5bTH1k01ME5S+SenW+Q==}
+
+  '@nl-design-system-community/ma-design-tokens@7.0.0':
+    resolution: {integrity: sha512-HN5e2Kcn0EtqVdXMiyTq9IfAgVtdFuyG4x+TcECqFi0XatCpEMPXZmSEGCQZ8KO2NuS6D9Hb8zrqROiQ3gBfQg==}
 
   '@nl-design-system-community/ma-task-list-css@0.0.3':
     resolution: {integrity: sha512-v87Cf65wWxtSSb4yhICFei/SppKJ79ozNaVov/4NGcbQ2U4eo8EFg3swP8GP83PM+QzC5AuUWQLjtK9D2hzXQA==}
@@ -16360,6 +16363,8 @@ snapshots:
       prosemirror-model: 1.25.4
 
   '@nl-design-system-community/ma-design-tokens@5.5.0': {}
+
+  '@nl-design-system-community/ma-design-tokens@7.0.0': {}
 
   '@nl-design-system-community/ma-task-list-css@0.0.3': {}
 
