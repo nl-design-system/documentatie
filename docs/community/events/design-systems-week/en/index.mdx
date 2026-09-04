@@ -16,7 +16,7 @@ image_alt: NL Design System Design Systems Week 2026 26-29 October, online
 ---
 
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonLink } from "@utrecht/component-library-react/dist/css-module";
+import { ButtonLink } from "@site/src/components/ButtonLink";
 import { ActionGroup } from "@components/action-group/action-group";
 import { Paragraph } from "@components/paragraph/paragraph";
 import settings from "../settings.json";
@@ -34,11 +34,11 @@ export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappe
 </Paragraph>
 
 <ActionGroup>
-  <ButtonLink href={`/events/design-systems-week/en/sign-up`} appearance="primary-action-button">
+  <ButtonLink href={`/events/design-systems-week/en/sign-up`} appearance="primary-action">
     {"Sign up"}
     <IconChevronRight />
   </ButtonLink>
-  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="secondary-action-button">
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="secondary-action">
     {"View the Program"}
     <IconChevronRight />
   </ButtonLink>
