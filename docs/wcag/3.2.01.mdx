@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.2.1 Bij focus
 pagination_label: WCAG-succescriterium 3.2.1 Bij focus
-description: Maak functionaliteit voorspelbaar en daardoor goed te begrijpen. Als een gebruiker een component focus geeft met het toetsenbord of door erop te klikken met de muis, zorg dan dat die actie niet automatisch een contextwijziging veroorzaakt.
+description: Een link, knop of formulierveld krijgt de focus zonder dat er een grote verandering volgt. Er opent geen nieuw venster, er verschijnt geen andere pagina en de focus blijft staan waar de bezoeker naartoe ging.
 slug: 3.2.1
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,21 @@ keywords:
   - understandable
   - predictable
   - on focus
+  - bij focus
+  - focus
+  - verandering van context
+  - nieuw venster
+  - automatisch verzenden
+  - WCAG 3.2.1
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.2.1-summary.md";
 
@@ -36,36 +42,189 @@ import Summary from "./summaries/_3.2.1-summary.md";
 
 <Summary />
 
-**Let op**: Als er onverwacht een dialog opent met bijvoorbeeld een advertentie of oproep om je aan te melden voor de nieuwsbrief, valt dit niet onder dit succescriterium. Dit omdat het openen niet het gevolg is van een actie van de gebruiker, maar door de website zelf wordt gestart.
+Niet elke reactie op focus is een probleem. Een tooltip die verschijnt, een submenu dat openklapt of resultaten die bijwerken in een lijst die er al staat: daarbij verandert de inhoud van de pagina. Dat mag, zolang de focus blijft staan waar die was en de rest van de pagina hetzelfde blijft.
 
-Ook een onverwachte actie wanneer een gebruiker met de muis over een element gaat, valt niet onder dit succescriterium. Bijvoorbeeld door het openen van een modal als een gebruiker alleen over een button hovert en het geen focus geeft.
+Een grote verandering is iets anders. De bezoeker komt op een andere pagina, er opent een nieuw venster, de focus staat ineens op een ander onderdeel, of de indeling van de pagina wisselt zo ingrijpend dat de bezoeker opnieuw moet uitzoeken waar alles staat. Zo'n verandering hoort bij een actie van de bezoeker zelf. Wie een link of knop activeert, met de muis of met het toetsenbord, verwacht juist wel dat er iets gebeurt.
 
-Onverwacht gedrag door de website zelf of muisbeweging valt strict genomen niet onder dit WCAG-succescriterium. We raden wel aan om ook in die gevallen onverwacht gedrag te vermijden, in lijn met de intentie van WCAG-richtlijn 3.2 Voorspelbaar: 'Maak het uiterlijk en de bediening van webpagina's voorspelbaar'.
+Dit geldt ook voor wie de muis gebruikt. Klikken in een tekstveld of een keuzelijst openen geeft dat onderdeel focus, terwijl de bezoeker nog niets heeft ingevuld of gekozen. Ook dan mag de pagina niet ingrijpend veranderen.
+
+## Veelgemaakte fouten
+
+### Een optie doet al iets terwijl je alleen langs de lijst gaat
+
+In een zelfgemaakte keuzelijst, een sorteermenu of een filter gaat de bezoeker met de pijltoetsen langs de opties om te zien wat er is. Elke optie krijgt daarbij de focus, terwijl er nog niets is gekozen. Voert de pagina die optie meteen uit, dan komt de bezoeker op een andere pagina of in een nieuw venster terecht. De opties rustig langsgaan lukt dan niet. Wie de muis gebruikt, ziet de lijst gewoon openstaan en kiest daarna pas.
+
+Twee dingen zijn hier iets anders. Resultaten die bijwerken terwijl de bezoeker in de lijst blijft staan, veranderen alleen de inhoud van de pagina. En in een keuzelijst die met het HTML-element `select` is gemaakt, hoort het langsgaan van de opties bij het kiezen van een waarde: verandert de pagina op dat moment, kijk dan bij [succescriterium 3.2.2 Bij invoer](/wcag/3.2.2/).
+
+**Hoe te testen:** open een zelfgemaakte keuzelijst met het toetsenbord en ga met de pijltoetsen langs de opties, zonder er een te bevestigen. Blijf je op dezelfde pagina en blijft de focus in de lijst staan?
+
+<Guideline appearance="dont" title="Een optie die de focus krijgt, stuurt de bezoeker meteen door">
+    ```js
+    option.addEventListener("focus", () => {
+      window.location.href = option.dataset.url;
+    });
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="De keuze wordt pas toegepast als de bezoeker die bevestigt">
+  ```html
+  <form action="/overzicht">
+    <label for="sort">Sorteer op</label>
+    <select id="sort" name="sort">
+      <option value="date">Datum</option>
+      <option value="title">Titel</option>
+    </select>
+    <button type="submit">Toepassen</button>
+  </form>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur kiest in het contentmanagementsysteem de variant van het filter met een knop "Toepassen", als die er is.
+- Een developer koppelt het toepassen aan het bevestigen van de keuze en niet aan de focus, en gebruikt daarvoor het [Select-component](/select/) met een knop ernaast.
+
+### De focus verspringt vanzelf naar een ander onderdeel
+
+Zodra een veld of een knop de focus krijgt, gaat de focus automatisch door naar een ander onderdeel. De bezoeker weet niet meer waar de focus staat en moet dat opnieuw uitzoeken.
+
+**Hoe te testen:** druk op de <kbd>Tab</kbd>-toets om naar het volgende onderdeel te gaan en wacht even. Blijft de focus op het onderdeel waar je naartoe ging, of staat die ergens anders?
+
+<Guideline appearance="dont" title="Een hulpvenster dat de focus overneemt">
+    ```js
+    postalCode.addEventListener("focus", () => {
+      openHelpDialog();
+      helpDialog.focus();
+    });
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="De uitleg staat er altijd en de focus blijft staan">
+  ```html
+  <label for="postal-code">Postcode</label>
+  <input id="postal-code" aria-describedby="postal-code-hint" />
+  <p id="postal-code-hint">Bijvoorbeeld 1234 AB.</p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur zet de uitleg die een bezoeker nodig heeft als gewone tekst bij het veld, zodat er geen hulpvenster meer nodig is.
+- Een developer verplaatst de focus niet als reactie op focus en koppelt die uitleg aan het veld met `aria-describedby`.
+
+### De foutmelding verdwijnt zodra het veld de focus krijgt
+
+Een formulier laat bij een veld zien dat er iets mis is. Zodra de bezoeker naar dat veld gaat om de fout te herstellen, verdwijnt de melding. Wie met het toetsenbord werkt, komt altijd eerst in het veld en leest de tekst dus nooit. Een screenreadergebruiker die van de foutmelding naar het veld gaat, hoort de melding wegvallen op het moment dat die nodig is. De bezoeker weet nu wel dat er een fout is, maar niet meer welke.
+
+**Hoe te testen:** verstuur een formulier met een fout erin, bijvoorbeeld een leeg verplicht veld. Ga daarna met de <kbd>Tab</kbd>-toets naar het veld met de fout. Blijft de foutmelding staan terwijl het veld de focus heeft?
+
+<Guideline appearance="dont" title="De foutmelding verdwijnt zodra het veld de focus krijgt">
+    ```js
+    email.addEventListener("focus", () => {
+      errorMessage.remove();
+    });
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="De foutmelding blijft staan en hoort bij het veld">
+  ```html
+  <label for="email">E-mailadres</label>
+  <input id="email" type="email" aria-describedby="email-error" aria-invalid="true" />
+  <p id="email-error">Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.</p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer laat de foutmelding staan totdat de invoer klopt, en koppelt die aan het veld met `aria-describedby`. Het component [Form field error message](/form-field-error-message/) doet dat al.
+
+### De pagina verandert ingrijpend zodra een onderdeel focus krijgt
+
+Een zoekveld, een keuzelijst of een keuzevakje in een filter verandert de pagina ingrijpend op het moment dat het de focus krijgt. De bezoeker komt op een andere pagina, de indeling wisselt of het menu ziet er anders uit, terwijl er nog niets is getypt of gekozen. Een screenreadergebruiker hoort de pagina veranderen zonder te weten waarom en weet niet meer waar de focus staat.
+
+Het gaat om een verandering waardoor de bezoeker opnieuw moet uitzoeken waar alles staat. Resultaten die bijwerken in een lijst die er al staat, horen daar niet bij: de bezoeker blijft op dezelfde pagina en de focus blijft staan.
+
+**Hoe te testen:** druk op de <kbd>Tab</kbd>-toets tot je bij een zoekveld of een keuzelijst bent, en typ of kies niets. Kom je op een andere pagina, wisselt de indeling van de pagina of staat de focus ergens anders?
+
+<Guideline appearance="dont" title="Een zoekveld dat de bezoeker doorstuurt zodra het focus krijgt">
+    ```js
+    searchField.addEventListener("focus", () => {
+      window.location.href = "/zoeken";
+    });
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="De bezoeker komt pas op de zoekpagina als die zelf zoekt">
+  ```html
+  <form role="search" action="/zoeken">
+    <label for="q">Zoeken</label>
+    <input id="q" type="search" name="q" />
+    <button type="submit">Zoeken</button>
+  </form>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer koppelt een verandering van de pagina aan een actie van de bezoeker, bijvoorbeeld typen en daarna op de knop drukken, en niet aan het krijgen van focus.
+
+### Er opent een nieuw venster zodra een onderdeel focus krijgt
+
+Een link of knop opent een nieuw browservenster of een nieuw tabblad zodra die de focus krijgt, dus nog voordat de bezoeker hem activeert. Wie met het toetsenbord langs het onderdeel gaat, krijgt ineens een nieuw venster of ziet de focus daarnaartoe verspringen. De bezoeker wilde alleen naar het volgende onderdeel.
+
+**Hoe te testen:** druk herhaaldelijk op de <kbd>Tab</kbd>-toets om langs de links en knoppen op de pagina te gaan. Opent er een nieuw venster of tabblad terwijl je er alleen langsgaat, zonder op <kbd>Enter</kbd> te drukken?
+
+<Guideline appearance="dont" title="Een nieuw venster dat opent zodra de link focus krijgt">
+  ```html
+  <a href="/voorwaarden" onfocus="window.open('/voorwaarden')">
+    Voorwaarden
+  </a>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een gewone link die de bezoeker zelf activeert">
+  ```html
+  <a href="/voorwaarden">Voorwaarden</a>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer koppelt het openen van een venster aan het activeren van de link of de knop, niet aan de focus. Een gewone link naar de pagina is genoeg.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Leg je muis weg en druk herhaaldelijk op de <kbd>Tab</kbd>-toets om door de pagina te gaan.
+2. Gebeurt er iets ingrijpends, alleen doordat het onderdeel focus krijgt?
+3. Let op nieuwe vensters of tabbladen die opengaan zonder dat je op <kbd>Enter</kbd> of <kbd>Spatie</kbd> hebt gedrukt.
+4. Druk op de <kbd>Tab</kbd>-toets tot je bij een zoekveld of een keuzelijst bent, en typ of kies niets. Kom je op een andere pagina of wisselt de indeling van de pagina?
+5. Let op of de focus blijft waar je naartoe ging, of dat die ergens anders naartoe gaat.
+6. Klik met de muis in een tekstveld en open een keuzelijst, zonder iets in te vullen of te kiezen. Kom je op een andere pagina of wisselt de indeling van de pagina?
+7. Open een zelfgemaakte keuzelijst, een sorteermenu of een filter en ga met de pijltoetsen langs de opties, zonder er een te bevestigen. Blijf je op dezelfde pagina en blijft de focus in de lijst staan?
+8. Verstuur een formulier met een fout erin en ga daarna naar het veld met de fout. Blijft de foutmelding staan terwijl het veld de focus heeft?
+
+### Voor developers
+
+1. Zoek in de code naar `onfocus` en naar `addEventListener("focus", ...)`, en controleer wat er in die afhandeling gebeurt. Opent daar een venster, verspringt de focus of verandert de pagina?
+2. Zoek naar `.focus()`-aanroepen die in de afhandeling van een focus-gebeurtenis staan. Dat is de meest voorkomende oorzaak van een focus die wegspringt.
+3. Controleer keuzelijsten, sorteermenu's, filters en zoekvelden. Reageren ze pas op het bevestigen van een keuze, en niet zodra een optie de focus krijgt?
+4. Bouw een keuzelijst met `<select>` of met het [Select-component](/select/) in plaats van met `<div>`-elementen en eigen toetsenbordafhandeling. Bij een zelfgemaakte lijst moet je het verschil tussen focus en keuze zelf regelen.
+5. Test met alleen het toetsenbord en met een screenreader. Een verandering die met de muis niet opvalt, merk je bij toetsenbordbediening wel.
+6. Zet uitleg en hulp in de pagina als tekst die altijd zichtbaar is, gekoppeld met `aria-describedby`, in plaats van in een venster dat opent zodra een veld focus krijgt.
+7. Laat foutmeldingen staan zolang de fout er is. Verwijder ze niet in de afhandeling van een focus-gebeurtenis, maar pas als de invoer klopt.
+
+## Gerelateerde succescriteria
+
+- [3.2.2 Bij invoer](/wcag/3.2.2/): een instelling wijzigen mag ook geen onverwachte verandering veroorzaken. Succescriterium 3.2.2 gaat over het wijzigen van een waarde, dit succescriterium over het krijgen van focus.
+- [2.4.3 Focusvolgorde](/wcag/2.4.3/): de focus gaat in een logische volgorde over de pagina. Een focus die vanzelf verspringt, verstoort die volgorde.
+- [2.4.7 Focus zichtbaar](/wcag/2.4.7/): je ziet welk onderdeel de focus heeft. Daardoor merk je het ook wanneer de focus onverwacht verspringt.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
-
-Bepaal eerst of er interactieve elementen op de pagina zijn, zoals formuliervelden, buttons of links. En dan:
-
-- Tab met het toetsenbord door elk interactief element, geef ook aanwezige radiobuttons en select-opties toetsenbordfocus.
-- Klik met de muis interactieve elementen aan, ook aanwezige select-opties.
-- Test of er geen onverwachte dingen gebeuren zoals het verzenden van het formulier, het verplaatsen van de focus of het openen van een nieuw venster of tab.
-
 ## W3C referenties
 
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.2.1 On focus</span>](https://www.w3.org/TR/WCAG22/#on-focus)
-- Nederlandse vertaling van het WCAG-succescriterium: [3.2.2 Bij focus](https://www.w3.org/Translations/WCAG22-nl/#on-focus).
+- Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.2.1 On Focus</span>](https://www.w3.org/TR/WCAG22/#on-focus).
+- Nederlandse vertaling van het WCAG-succescriterium: [3.2.1 Bij focus](https://www.w3.org/Translations/WCAG22-nl/#on-focus).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.2.1 On Focus</span>](https://www.w3.org/WAI/WCAG22/quickref/#on-focus).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 3.2.1: On Focus</span>](https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- Engelstalige toelichting: [<span lang="en">Understanding SC 3.2.1 On Focus</span>](https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html).
 
 ## Help richtlijn verbeteren
 
