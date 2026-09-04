@@ -38,7 +38,7 @@ import settings from "../settings.json";
 {!settings.isHappening && (
 
 <ActionGroup>
-  <ButtonLink href="/events/design-systems-week/en" appearance="primary-action-button">
+  <ButtonLink href="/events/design-systems-week/en" appearance="primary-action">
     {"About Design Systems Week"}
     <IconChevronRight />
   </ButtonLink>
@@ -49,12 +49,12 @@ import settings from "../settings.json";
 {!!settings.isHappening && (<>
 
 <ActionGroup>
-  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="primary-action-button">
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="primary-action">
     {"See the program"}
     <IconChevronRight />
   </ButtonLink>
   {!!settings.miro && (
-    <ButtonLink href={settings.miro} appearance="secondary-action-button">
+    <ButtonLink href={settings.miro} appearance="secondary-action">
       {"Use Miro"}
       <IconChevronRight />
     </ButtonLink>
