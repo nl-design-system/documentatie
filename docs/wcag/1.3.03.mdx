@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.3.3 Zintuiglijke eigenschappen
 pagination_label: WCAG-succescriterium 1.3.3 Zintuiglijke eigenschappen
-description: Geef instructies op een inclusieve manier. De instructies kunnen begrijpen moet niet afhankelijk zijn van eigenschappen die sommige gebruikers niet ervaren, zoals vorm, kleur, afmeting, locatie op het scherm, richting, of geluid.
+description: Een instructie werkt voor iedereen als die verwijst naar de tekst op een knop, link of veld, en niet alleen naar de vorm, kleur, grootte, plek op het scherm, richting of een geluid.
 slug: 1.3.3
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,25 @@ keywords:
   - perceivable
   - adaptable
   - sensory characteristics
+  - zintuiglijke eigenschappen
+  - instructies
+  - kleur
+  - vorm
+  - icoon
+  - grootte
+  - richting
+  - geluidssignaal
+  - plek op het scherm
+  - WCAG 1.3.3
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.3.3-summary.md";
 
@@ -36,35 +46,202 @@ import Summary from "./summaries/_1.3.3-summary.md";
 
 <Summary />
 
-Dit succescriterium gaat dus niet alleen over het waarnemen van kleur, zoals WCAG-succescriterium [1.4.1 Gebruik van kleur](/wcag/1.4.1), maar ook over de andere zintuigen.
+Een instructie op een webpagina werkt voor iedereen als die naar tekst verwijst. "Vul je gegevens in en kies Verzenden" kan iedereen volgen. Bij "Klik op de groene knop rechtsonder" lukt dat alleen als je de knop ziet, de kleur kunt onderscheiden en de pagina op hetzelfde formaat bekijkt als de schrijver.
 
-Geef naast een aanduiding in kleur, locatie of vorm ook tekstuele informatie.
+Zintuiglijke eigenschappen zijn kenmerken die je moet kunnen zien of horen: vorm, kleur, grootte, plek op het scherm, richting en geluid. Een instructie die alleen zulke kenmerken noemt, sluit een deel van de bezoekers uit. Iemand die een screenreader gebruikt, krijgt de pagina in leesvolgorde te horen en weet niet wat er rechtsboven staat. Iemand die kleuren niet of niet goed ziet, vindt de rode velden niet terug. Ook wie het scherm prima ziet, kan vastlopen: een bezoeker die een symbool niet herkent, weet niet welke knop met "het pijltje" bedoeld wordt. Wie schermvergroting gebruikt, ziet maar een klein deel van het scherm, dus "linksboven" is een andere plek dan bedoeld. Op een telefoon staat alles onder elkaar, waardoor het linkermenu bovenaan is beland. En een aanwijzing als "wacht tot je een pieptoon hoort" bereikt een dove bezoeker niet.
 
-- Schrijf [foutmeldingen ook uit in tekst](/richtlijnen/formulieren/foutmeldingen/duidelijk), bijvoorbeeld: 'De geldigheidsdatum van uw paspoort moet in de toekomst liggen'.
-- Verwijs naar de tekst van een knop, bijvoorbeeld: 'Kies Volgende stap'.
-- Geef naast een geluidje ook een statusmelding in tekst: 'Over 5 minuten word je uitgelogd'.
+Vorm, kleur en plek mogen wel in een instructie staan, zolang de tekst van het element er ook bij staat. "Kies Verzenden, de groene knop rechtsonder in het formulier" werkt voor iedereen. Wie de knop ziet, vindt hem sneller door de kleur en de plek. Wie de knop niet ziet, zoekt op de tekst Verzenden.
 
-## Gerelateerde NL Design System-richtlijnen
+## Veelgemaakte fouten
 
-- Stijl: [Vertrouw niet alleen op kleur](/richtlijnen/stijl/kleuren/niet-kleur-alleen)
-- Formulieren: [Schrijf een duidelijke foutmelding](/richtlijnen/formulieren/foutmeldingen/duidelijk/)
-- Formulieren: [Geef fouten weer met meer dan alleen kleur](/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur)
+### De instructie verwijst naar de plek op het scherm
+
+Woorden als "links", "rechts", "bovenin", "onderaan" of "hiernaast" beschrijven waar iets staat in één specifieke weergave. Een screenreadergebruiker hoort de pagina in leesvolgorde en krijgt daarbij geen beeld van links of rechts. Op een smal scherm klopt de plek sowieso niet meer: het menu dat op een laptop links staat, zit op een telefoon achter een knop bovenaan. De bezoeker zoekt naar iets wat op die plek niet te vinden is.
+
+**Hoe te testen:** zoek in de tekst van de pagina naar de woorden "links", "rechts", "bovenin", "onderaan" en "hiernaast". Staat er bij elke vindplaats ook de tekst van het element waar de instructie naar verwijst?
+
+<Guideline appearance="dont" title="Instructie noemt alleen de plek op het scherm">
+    ```html
+    <p>Heb je een vraag? Klik op de chatknop rechts onderaan de pagina.</p>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Instructie noemt de naam van de knop, de plek is extra informatie">
+    ```html
+    <p>Heb je een vraag? Kies de knop Chat met ons, rechts onderaan de pagina.</p>
+
+    <button type="button">Chat met ons</button>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur herschrijft de instructie en zet de naam van het element erin. Staat de tekst in een template of in een component, dan past een developer die aan.
+
+### De instructie beschrijft hoe een icoon eruitziet
+
+Instructies als "klik op de drie streepjes rechtsboven", "klik op het blauwe potloodje" of "klik voor meer informatie op de paperclip" beschrijven hoe een knop eruitziet. Dat werkt alleen voor wie het icoon ziet én herkent. Een ziende bezoeker die het symbool niet als menuknop herkent, komt er met deze instructie niet uit. Wie een screenreader gebruikt, hoort niet dat er streepjes staan maar hoort de tekst op de knop, bijvoorbeeld "Menu" of "Bewerken", en zoekt tevergeefs naar streepjes.
+
+**Hoe te testen:** zoek in de instructietekst naar beschrijvingen van iconen, zoals "streepjes", "puntjes", "pijltje", "vergrootglas" of "potloodje". Kun je bij elke vindplaats de knop aanwijzen zonder de beschrijving van het icoon te gebruiken? Staat de tekst die bij de knop hoort ook in de instructie?
+
+<Guideline appearance="dont" title="Instructie beschrijft het uiterlijk van de knop">
+    ```html
+    <p>Open het menu via de drie streepjes rechtsboven.</p>
+
+    <button type="button" aria-label="Menu">
+      <svg aria-hidden="true" focusable="false">
+        <use href="assets/svg/icons-core-set.svg#icon-menu"></use>
+      </svg>
+    </button>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Instructie noemt de tekst die bij de knop hoort">
+    ```html
+    <p>Open het menu met de knop Menu, rechtsboven op de pagina.</p>
+
+    <button type="button" aria-label="Menu">
+      <svg aria-hidden="true" focusable="false">
+        <use href="assets/svg/icons-core-set.svg#icon-menu"></use>
+      </svg>
+    </button>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur gebruikt in de instructie de tekst die op de knop staat. Heeft de knop alleen een icoon, dan zorgt een developer eerst voor een tekst die de functie beschrijft, zichtbaar naast het icoon of als toegankelijke naam.
+
+### De instructie verwijst naar kleur
+
+Aanwijzingen als "de rode velden zijn verplicht", "klik op de blauwe informatieballonnetjes" of "de groene gebieden op de kaart zijn beschikbaar" werken alleen voor wie die kleuren ziet en van elkaar kan onderscheiden. Iemand met kleurenblindheid ziet geen verschil tussen de rode en de gewone velden. Een screenreadergebruiker hoort de kleur helemaal niet. De bezoeker weet dan niet welke velden verplicht zijn en komt daar pas achter bij een foutmelding.
+
+**Hoe te testen:** bekijk de pagina in grijstinten met een grijsfilter of een simulator voor kleurenblindheid in je browser. Kun je nog steeds aanwijzen welke elementen de instructie bedoelt?
+
+<Guideline appearance="dont" title="Alleen de kleur geeft aan welke velden verplicht zijn">
+    ```html
+    <p>De rode velden zijn verplicht.</p>
+
+    <label for="name" class="example-required-red">Naam</label>
+    <input id="name" type="text" required />
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Het label zelf zegt dat het veld verplicht is">
+    ```html
+    <p>Achter verplichte velden staat het woord verplicht.</p>
+
+    <label for="name">Naam, verplicht</label>
+    <input id="name" type="text" required />
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur haalt de kleur uit de instructie en zet er een naam, label of tekst voor in de plaats. Bij een kaart of grafiek voegt een developer naast kleur ook een patroon of een label toe.
+
+### De instructie verwijst naar de grootte van een element
+
+Aanwijzingen als "kies de grote knop onderaan" of "de voorwaarden staan in de kleine letters" gaan uit van verhoudingen die niet vastliggen. Wie de tekst vergroot of een eigen lettergrootte instelt, ziet andere verhoudingen dan de schrijver van de tekst. Zodra knoppen op een smal scherm de volle breedte krijgen, is er geen grote knop meer. Een screenreadergebruiker hoort geen verschil in grootte en heeft aan de aanwijzing niets.
+
+**Hoe te testen:** zet de tekstgrootte in je browser op 200% en bekijk de pagina daarna op een telefoon. Is het verschil in grootte waar de instructie op leunt er dan nog?
+
+<Guideline appearance="dont" title="Instructie leunt op het formaat van de knop">
+    ```html
+    <p>Kies de grote knop onderaan om je aanvraag te versturen.</p>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Instructie noemt de tekst op de knop">
+    ```html
+    <p>Kies Aanvraag versturen.</p>
+
+    <button type="button">Aanvraag versturen</button>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur vervangt de aanduiding van het formaat door de tekst die op het element staat.
+
+### De instructie verwijst naar de richting van een lijst of balk
+
+Zinnen als "kies een onderwerp uit de verticale lijst" of "gebruik de horizontale balk bovenaan" beschrijven in welke richting elementen naast of onder elkaar staan. Die richting is een keuze in de opmaak en verandert mee met het scherm: op een telefoon staat een horizontale balk als een rij onder elkaar. Wie een screenreader gebruikt, hoort een lijst met onderwerpen en niet of die naast of onder elkaar staat.
+
+**Hoe te testen:** bekijk de pagina op een telefoon of in een venster van 320 pixels breed. Staan de elementen daar nog in de richting die de instructie noemt?
+
+<Guideline appearance="dont" title="Instructie leunt op de richting van de lijst">
+    ```html
+    <p>Kies je gemeente in de verticale lijst.</p>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Instructie noemt de naam van de lijst">
+    ```html
+    <p>Kies je gemeente in de lijst Gemeenten.</p>
+
+    <h2 id="municipalities">Gemeenten</h2>
+    <ul aria-labelledby="municipalities">
+      ...
+    </ul>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur verwijst naar de kop of het label van de lijst. Staat er geen kop of label boven, dan voegt een developer die toe.
+
+### De instructie verwijst naar een geluidssignaal
+
+Een aanwijzing als "wacht tot je een pieptoon hoort en kies dan Verder" komt alleen aan bij wie dat geluid hoort. Een dove of slechthorende bezoeker mist het signaal en weet niet wanneer de volgende stap aan de beurt is. Hetzelfde geldt voor wie het geluid heeft uitgezet, geen luidsprekers heeft of in een lawaaiige omgeving werkt. Geef daarom naast het geluid ook een zichtbare aanwijzing, bijvoorbeeld een tekst die op het scherm verschijnt.
+
+**Hoe te testen:** zet het geluid van je computer uit en doorloop de taak van begin tot eind. Kun je elke stap afmaken zonder een signaal te horen?
+
+<Guideline appearance="dont" title="Alleen een geluid geeft aan wanneer de volgende stap kan">
+    ```html
+    <p>De opname start zodra je een pieptoon hoort.</p>
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Naast het geluid verschijnt een zichtbare melding">
+    ```html
+    <p>De opname start zodra de melding Opname bezig verschijnt.
+       Je hoort dan ook een pieptoon.</p>
+
+    <p role="status">Opname bezig</p>
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur herschrijft de instructie zodat die naar de zichtbare melding verwijst. Een developer zorgt dat die melding er is en dat een screenreader hem voorleest, bijvoorbeeld met een statusbericht.
 
 ## Hoe te testen
 
-Bekijk en lees de pagina en controleer of alle informatie ook beschikbaar is als je een of meerdere zintuigen mist.
+### Voor iedereen
 
-Let bijvoorbeeld op:
+1. Zoek in de tekst van de pagina naar plaatsaanduidingen: "links", "rechts", "bovenin", "onderaan", "hiernaast" en "in de rechterkolom".
+2. Zoek naar kleuren en vormen in instructies: "rode", "blauwe", "groene", "streepjes", "puntjes" en "pijltje".
+3. Zoek naar aanduidingen van formaat en richting: "grote", "kleine", "brede", "verticale", "horizontale" en "rij".
+4. Lees elke instructie hardop zonder naar het scherm te kijken. Kan iemand anders op basis daarvan het juiste element vinden?
+5. Bekijk de pagina in grijstinten. Zijn de elementen waar de instructie naar verwijst nog aan te wijzen?
+6. Verklein het browservenster tot 320 pixels breed of bekijk de pagina op een telefoon. Kloppen de aanduidingen "links", "rechts", "grote" en "horizontale" dan nog?
+7. Zet de tekstgrootte in je browser op 200%. Klopt een verwijzing naar het formaat van een element daarna nog?
+8. Zet het geluid uit en doorloop taken met opname, betaling of een wachttijd. Kun je elke stap afmaken zonder een signaal te horen?
+9. Controleer of de tekst uit de instructie letterlijk op de knop, link of het veld staat.
 
-- het aangeven van foutmeldingen bij formulieren, alleen een rood randje of een geluidje is niet voldoende;
-- de weergave van data in grafieken, kan iemand die blind of kleurenblind is dit ook begrijpen;
-- de weergave van links in de tekst, deze moet liefst onderstreept zijn;
-- het aangeven van een status (succes, waarschuwing, fout) in een statusmelding: alleen een groene, gele of rode achtergrond of het laten horen van een geluidje is onvoldoende, er moet ook in tekst staan wat de status is;
-- verwijzingen naar kleur, vorm of locatie in de tekst, bijvoorbeeld 'druk op de vierkante groene knop rechts om door te gaan' is voor blinde, slechtziende en kleurenblinde bezoekers een probleem.
+### Voor developers
 
-Het is voldoende als de informatie ergens anders op de pagina makkelijk vindbaar is en goed wordt uitgelegd, of als de betekenis volgt uit het gebruik of plek van een element. Een link in een menu hoeft bijvoorbeeld niet onderstreept te zijn.
+1. Doorzoek de content in het contentmanagementsysteem en de teksten in templates en componenten op de woorden uit de test voor iedereen. Zo vind je in één keer alle instructies die op zicht leunen.
+2. Open een screenreader, laat de instructie voorlezen en probeer het bedoelde element te vinden via de elementenlijst. Lukt dat zonder naar het scherm te kijken?
+3. Vergelijk de naam uit de instructie met de toegankelijke naam van het element. Open de Accessibility-tab in de DevTools en bekijk de waarde bij "Name".
+4. Bekijk de pagina zonder eigen opmaak, bijvoorbeeld met CSS uitgeschakeld via de instelling Pagina-stijl in Firefox. Alles staat dan in één kolom en alle tekst is even groot. Elke instructie die naar links, rechts, een kolom, een formaat of een richting verwijst, klopt in die weergave niet meer.
+5. Controleer bij een geluidssignaal of er tegelijk een zichtbare melding verschijnt, en of die melding via een statusbericht wordt doorgegeven aan een screenreader.
+6. Automatische testtools herkennen dit niet. Een instructie die naar vorm, kleur, formaat, plek, richting of geluid verwijst, is alleen met de hand te vinden.
 
-De verwijzing naar "boven" of "onder" is voldoende, mits het element waarnaar verwezen wordt, ook in die volgorde door een [screenreader](/woordenlijst/#screenreader) wordt voorgelezen. Bijvoorbeeld in "Kies een van de onderstaande links".
+## Gerelateerde succescriteria
+
+- [1.4.1 Gebruik van kleur](/wcag/1.4.1/): gaat over informatie die uitsluitend met kleur wordt overgebracht, zoals een status of een categorie. Een instructie die naar kleur verwijst, raakt beide succescriteria. Lees dit als je met kleurcodering in tabellen, grafieken of formulieren werkt.
+- [1.3.4 Weergavestand](/wcag/1.3.4/): gaat over een pagina die alleen staand of alleen liggend te gebruiken is. Dat is iets anders dan een instructie die naar de richting van elementen op het scherm verwijst.
+- [1.4.4 Herschalen van tekst](/wcag/1.4.4/): tekst kan tot 200% groter worden gezet zonder dat er informatie verdwijnt. Lees dit als je wilt weten waarom het formaat van een element geen vast gegeven is.
+- [1.4.10 Reflow](/wcag/1.4.10/): op een smal scherm verschuift content naar een andere plek. Lees dit als je wilt weten waarom een aanduiding als "links in het menu" op een telefoon niet meer klopt.
+- [2.4.6 Koppen en labels](/wcag/2.4.6/): je kunt alleen naar een element verwijzen met een naam als die naam de functie beschrijft. Lees dit als de knoppen in je interface nog "Open widget" of "Meer" heten.
+- [2.5.3 Label in naam](/wcag/2.5.3/): de zichtbare tekst op een knop en de naam die een screenreader voorleest, horen overeen te komen. Dat is de basis waarop een instructie met een naam kan bouwen.
+- [4.1.3 Statusberichten](/wcag/4.1.3/): een melding die op het scherm verschijnt zonder dat de focus verspringt, hoort ook bij een screenreader aan te komen. Lees dit als je een geluidssignaal vervangt door een zichtbare melding.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Stijl: [Vertrouw niet alleen op kleur](/richtlijnen/stijl/kleuren/niet-kleur-alleen). Lees dit als een instructie of een status nu alleen met kleur wordt overgebracht.
+- Formulieren: [Schrijf een duidelijke foutmelding](/richtlijnen/formulieren/foutmeldingen/duidelijk/). Lees dit als je foutmeldingen niet alleen met een rood randje wilt tonen.
+- Formulieren: [Geef fouten weer met meer dan alleen kleur](/richtlijnen/formulieren/visueel-ontwerp/fout-niet-alleen-met-kleur). Lees dit als je verplichte of foute velden herkenbaar wilt maken zonder alleen op kleur te leunen.
 
 ## Gebruikersonderzoek
 
@@ -76,12 +253,6 @@ De verwijzing naar "boven" of "onder" is voldoende, mits het element waarnaar ve
 - Nederlandse vertaling van het WCAG-succescriterium: [1.3.3 Zintuiglijke eigenschappen](https://www.w3.org/Translations/WCAG22-nl/#sensory-characteristics).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.3.3 Sensory Characteristics</span>](https://www.w3.org/WAI/WCAG22/quickref/#sensory-characteristics).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.3.3 Sensory Characteristics</span>](https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
