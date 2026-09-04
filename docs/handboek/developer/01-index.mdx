@@ -14,7 +14,7 @@ keywords:
 ---
 
 import { CardGroup } from "@site/src/components/CardGroup";
-import { Card } from "@utrecht/card-react/css";
+import { Card } from "@components/card/card";
 
 # Introductie voor developers
 
@@ -34,31 +34,31 @@ Combineer componenten van verschillende organisaties tot jouw perfecte oplossing
 
 <CardGroup>
   <Card
-    body="Bekijk de onboarding sessie voor developers op YouTube"
+    description="Bekijk de onboarding sessie voor developers op YouTube"
     heading="Onboarding video"
     headingLevel={3}
     href="https://youtu.be/Yh4NqpphJQ4?si=gN0J3IllC_eoevu7&t=2809"
   ></Card>
   <Card
-    body="Leer hoe je NL Design System kunt gebruiken voor een snel prototype."
+    description="Leer hoe je NL Design System kunt gebruiken voor een snel prototype."
     heading="Prototypes"
     headingLevel={3}
     href="/handboek/developer/prototypes/"
   ></Card>
   {/* <Card
-    body="Zet NL Design System succesvol in voor websites en webapplicaties"
+    description="Zet NL Design System succesvol in voor websites en webapplicaties"
     heading="Websites en webapplicaties"
     headingLevel={3}
     href="/handboek/developer/productie/"
   ></Card>
   <Card
-    body="Maak en onderhoud een design system met NL Design System"
+    description="Maak en onderhoud een design system met NL Design System"
     heading="Design Systems"
     headingLevel={3}
     href="/handboek/developer/design-systems/"
   ></Card>
   <Card
-    body="Gebruik NL Design System in CMS-en zoals WordPress, Drupal, Typo3 en Strapi"
+    description="Gebruik NL Design System in CMS-en zoals WordPress, Drupal, Typo3 en Strapi"
     heading="CMS-en"
     headingLevel={3}
     href="/handboek/developer/cms/"
@@ -71,25 +71,25 @@ NL Design System componenten zijn huisstijl onafhankelijk. Applicaties die hierm
 
 <CardGroup appearance="medium">
   <Card
-    body="Leer hoe je je huisstijl kunt vastleggen als NL Design System thema met Design Tokens JSON"
+    description="Leer hoe je je huisstijl kunt vastleggen als NL Design System thema met Design Tokens JSON"
     heading="Thema maken"
     headingLevel={3}
     href="/handboek/developer/thema-maken/"
   ></Card>
   <Card
-    body="Lees meer over design tokens bij NL Design System"
+    description="Lees meer over design tokens bij NL Design System"
     heading="Design Tokens"
     headingLevel={3}
     href="/handboek/huisstijl/design-tokens/"
   ></Card>
   <Card
-    body="Gebruik het start-thema om sneller te starten met de huisstijl vastleggen met basis-tokens."
+    description="Gebruik het start-thema om sneller te starten met de huisstijl vastleggen met basis-tokens."
     heading="Start thema"
     headingLevel={3}
     href="/handboek/huisstijl/themas/start-thema/"
   ></Card>
   <Card
-    body="Gebruik het voorbeeld-thema voor prototypes zonder huisstijl"
+    description="Gebruik het voorbeeld-thema voor prototypes zonder huisstijl"
     heading="Voorbeeld thema"
     headingLevel={3}
     href="/handboek/huisstijl/themas/voorbeeld-thema/"
@@ -111,61 +111,61 @@ De HTML structuur en design beslissingen van NL Design System componenten worden
 <>
   {/* <CardGroup appearance="medium">
   <Card
-    body="CSS componenten gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
+    description="CSS componenten gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
     heading="CSS"
     headingLevel={3}
     href="/handboek/developer/componenten/css"
   ></Card>
   <Card
-    body="React componenten gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
+    description="React componenten gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
     heading="React"
     headingLevel={3}
     href="/handboek/developer/componenten/react"
   ></Card>
   <Card
-    body="Web Components gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
+    description="Web Components gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
     heading="Web Components"
     headingLevel={3}
     href="/handboek/developer/componenten/web-component"
   ></Card>
   <Card
-    body="Angular componenten gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
+    description="Angular componenten gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
     heading="Angular"
     headingLevel={3}
     href="/handboek/developer/componenten/angular"
   ></Card>
   <Card
-    body="Vue.js componenten gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
+    description="Vue.js componenten gebruiken, uitbreiden, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
     heading="Vue.js"
     headingLevel={3}
     href="/handboek/developer/componenten/vue"
   ></Card>
   <Card
-    body="HTML componenten gebruiken, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
+    description="HTML componenten gebruiken, maken, testen en bijdragen? Onder code vind je alle informatie die je nodig hebt."
     heading="HTML"
     headingLevel={3}
     href="/handboek/developer/componenten/html"
   ></Card>
   <Card
-    body="SCSS gebruiken, uitbreiden en maken? Onder code vind je alle informatie die je nodig hebt."
+    description="SCSS gebruiken, uitbreiden en maken? Onder code vind je alle informatie die je nodig hebt."
     heading="SCSS"
     headingLevel={3}
     href="/handboek/developer/componenten/scss"
   ></Card>
   <Card
-    body="Twig componenten gebruiken, maken en bijdragen? Onder code vind je alle informatie die je nodig hebt."
+    description="Twig componenten gebruiken, maken en bijdragen? Onder code vind je alle informatie die je nodig hebt."
     heading="Twig"
     headingLevel={3}
     href="/handboek/developer/componenten/twig"
   ></Card>
   <Card
-    body="TipTap componenten gebruiken, maken en bijdragen? Onder code vind je alle informatie die je nodig hebt."
+    description="TipTap componenten gebruiken, maken en bijdragen? Onder code vind je alle informatie die je nodig hebt."
     heading="TipTap"
     headingLevel={3}
     href="/handboek/developer/componenten/tiptap"
   ></Card>
   <Card
-    body="Componenten gebruiken in Mendix? Onder code vind je alle informatie die je nodig hebt."
+    description="Componenten gebruiken in Mendix? Onder code vind je alle informatie die je nodig hebt."
     heading="Mendix"
     headingLevel={3}
     href="/handboek/developer/componenten/mendix"
@@ -183,19 +183,19 @@ Een gedeelde aanpak zorgt ervoor dat componenten binnen NL Design System er cons
 
 <CardGroup appearance="medium">
   <Card
-    body="Lees wat de NL Design System conventies zijn voor White Label componenten, Design Tokens, herbruikbare CSS, een API conventie, geautomatiseerde tests en versionering."
+    description="Lees wat de NL Design System conventies zijn voor White Label componenten, Design Tokens, herbruikbare CSS, een API conventie, geautomatiseerde tests en versionering."
     heading="Conventies"
     headingLevel={3}
     href="/handboek/developer/conventies/"
   ></Card>
   <Card
-    body="Leer hoe de infrastructuur van NL Design System helpt om samen met andere organisaties te werken in een open source design system ecosysteem"
+    description="Leer hoe de infrastructuur van NL Design System helpt om samen met andere organisaties te werken in een open source design system ecosysteem"
     heading="Infrastructuur"
     headingLevel={3}
     href="/handboek/developer/infrastructuur/"
   ></Card>
   <Card
-    body="Bekijk het Estafettemodel en leer hoe deze helpt om samen met verschillende organisaties toe te werken naar gestandaardiseerde componenten, patronen en templates met ruimte voor innovatie."
+    description="Bekijk het Estafettemodel en leer hoe deze helpt om samen met verschillende organisaties toe te werken naar gestandaardiseerde componenten, patronen en templates met ruimte voor innovatie."
     heading="Estafettemodel"
     headingLevel={3}
     href="/handboek/estafettemodel/"
