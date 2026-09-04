@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.5.1 Aanwijzergebaren
 pagination_label: WCAG-succescriterium 2.5.1 Aanwijzergebaren
-description: Acties waarbij je ingewikkelde aanwijsgebaren moet gebruiken, kunnen ook op een eenvoudige manier.
+description: Alles wat met een veeg- of knijpgebaar werkt, kun je ook met één tik of klik doen. Zo werkt de pagina zonder ingewikkelde gebaren.
 slug: 2.5.1
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,26 @@ keywords:
   - operable
   - input modalities
   - pointer gestures
+  - aanwijzergebaren
+  - vegen
+  - swipe
+  - knijpen
+  - pinch-zoom
+  - multipoint-gebaar
+  - pad-gebaar
+  - enkele aanwijzer
+  - carrousel
+  - kaart
+  - WCAG 2.5.1
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.5.1-summary.md";
 
@@ -32,52 +43,134 @@ import Summary from "./summaries/_2.5.1-summary.md";
   {"WCAG-succescriterium 2.5.1 Aanwijzergebaren"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Laat gebruikers touchscreens bedienen met één vinger en eenvoudige gebaren.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Alle functies zijn ook met één aanwijzer te bedienen.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Niet iedereen kan ingewikkelde gebaren uitvoeren.</dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-Aanwijsgebaren zijn bijvoorbeeld:
+Bij sommige gebaren bepaalt de route die je vinger aflegt wat er gebeurt. Vegen naar links of rechts is er een, net als een vorm of een letter tekenen op het scherm. Zo'n gebaar heet een pad-gebaar. Bij andere gebaren gebruik je twee of meer vingers tegelijk, bijvoorbeeld knijpen om te zoomen of met twee vingers draaien. Dat heet een multipoint-gebaar.
 
-- Het slepen van inhoud binnen bepaalde kaders.
-- Het swipen van foto's.
-- Het vergroten van een kaart met twee vingers.
-- Een slider of carousel waar je doorheen kunt swipen.
+Niet iedereen kan zulke gebaren maken. Wie een hoofdstok, een oogbesturing of een aangepaste muis gebruikt, heeft maar één aanwijspunt en volgt geen precieze route. Iemand met tremor of met één werkende hand kan twee vingers niet tegelijk op het scherm gebruiken.
 
-Een simpele beweging is bijvoorbeeld de beweging van een vinger van het ene punt naar het andere (zoals swipen zonder specifieke).
-Zodra er meerdere vingers nodig zijn is de beweging te complex. Ook al de route van het ene punt naar het andere gaat, maar via een ander punt of een specifieke route, dan is het te complex (zoals een swipe via een specifieke route).
+De oplossing is steeds hetzelfde: naast het gebaar bied je een bediening die met één tik, klik of lange druk werkt. Bijvoorbeeld een knop voor vorige en volgende naast een carrousel, of een plus- en minknop naast een kaart. Het gebaar zelf kan blijven bestaan, zolang er ook zo'n enkelvoudige bediening is. Op websites gaat het vooral om carrousels en interactieve kaarten.
 
-Zorg ervoor dat de gebruiker deze acties ook kan doen met één aanwijzer zoals een muis of een vinger zonder deze extra gebaren te hoeven maken.
+Bij twee soorten gebaren is een alternatief met één tik of klik niet nodig. Het eerste is slepen: een beweging waarbij alleen telt waar je begint en waar je loslaat, en niet welke route je vinger ertussen aflegt. Voor een schuifregelaar of een rij die je versleept om de volgorde te wijzigen, lees je succescriterium [2.5.7 Slepen](/wcag/2.5.7/). Het tweede is een gebaar dat de handeling zelf is. Bij een handtekening of een vrije tekening zit de betekenis in de beweging die je maakt. Haal je die beweging weg, dan is er geen handtekening meer.
 
-Je hoeft hierbij geen rekening te houden met de aanwijzergebaren in de software van de gebruiker. Een screenreader die een gebaar met 3 vingers vereist is niet de verantwoordelijkheid van de website.
-Gebaren die niet anders kunnen zijn ook uitgezonderd. Denk bijvoorbeeld aan het zetten van een digitale handtekening.
+## Veelgemaakte fouten
+
+### Een kaart is alleen met vingergebaren te bedienen
+
+Een interactieve kaart laat je alleen in- en uitzoomen met een knijpgebaar, twee vingers die je uit elkaar of naar elkaar toe beweegt. Soms is de kaart ook alleen met twee vingers tegelijk te verschuiven. Er staan geen knoppen bij. Wie maar één aanwijspunt heeft of geen twee vingers kan gebruiken, kan niet inzoomen en komt niet bij het deel van de kaart dat buiten beeld ligt.
+
+**Hoe te testen:** probeer op de kaart in en uit te zoomen zonder knijpgebaar, en de kaart te verschuiven met één vinger. Zijn er losse knoppen om te zoomen? Staat de belangrijke informatie ook als tekst op de pagina?
+
+<Guideline appearance="dont" title="Kaart reageert alleen op vingergebaren">
+  ```html
+  <div class="example-map" aria-label="Kaart met onze vestigingen"></div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Kaart met zoomknoppen en het adres als tekst erbij">
+  ```html
+  <div class="example-map" aria-label="Kaart met onze vestigingen"></div>
+  <button type="button">Inzoomen</button>
+  <button type="button">Uitzoomen</button>
+  <p>Adres: Marktplein 1, 1234 AB Voorbeeldstad.</p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur zet de belangrijke informatie van de kaart, zoals het adres, ook als gewone tekst op de pagina.
+- Een developer zet de zoomknoppen van de kaart aan en staat bediening met één vinger toe. De meeste kaartbibliotheken hebben die bediening al ingebouwd.
+
+### Een carrousel is alleen met vegen te bedienen
+
+Een carrousel toont aanbiedingen, nieuws of foto's en reageert alleen op een veeg naar links of rechts. Er zijn geen knoppen om naar de vorige of volgende slide te gaan. Wie met een muis werkt, komt niet verder dan de eerste slide. Wie een hoofdstok of oogbesturing gebruikt, kan de veegbeweging niet maken en ziet de rest van de inhoud nooit.
+
+**Hoe te testen:** probeer de carrousel te bedienen met alleen een muisklik of één tik. Kom je bij de volgende slide zonder te vegen? Is er een knop voor vorige en volgende?
+
+In het voorbeeld hieronder koppelt de code alleen een veeggebaar aan de carrousel en voegt die geen knoppen toe.
+
+<Guideline appearance="dont" title="Carrousel reageert alleen op een veeggebaar">
+    ```html
+    <div class="example-carousel" aria-label="Laatste nieuws">
+      <article class="example-slide">
+        <h2>Nieuwe subsidieregeling open</h2>
+      </article>
+    </div>
+    ```
+
+    ```javascript
+    carousel.addEventListener("touchmove", onSwipe);
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Carrousel met knoppen voor vorige en volgende">
+  ```html
+  <div class="example-carousel" role="region" aria-label="Laatste nieuws">
+    <article class="example-slide">
+      <h2>Nieuwe subsidieregeling open</h2>
+    </article>
+    <button type="button">Vorig bericht</button>
+    <button type="button">Volgend bericht</button>
+  </div>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt knoppen voor vorige en volgende toe die hetzelfde doen als de veeg.
+
+### Op een kaart tekenen kan alleen met de muis
+
+Op een kaart kun je een lijn of een gebied tekenen om een resultaat te krijgen, bijvoorbeeld een doorsnede of een selectie. Dat tekenen kan alleen door met de muis een pad te volgen. Wie geen precieze muisbeweging kan maken of met het toetsenbord werkt, kan de functie niet gebruiken. Anders dan bij een kaart die je alleen inzoomt, helpt een knop hier niet. Je hebt een andere manier nodig om hetzelfde resultaat te krijgen.
+
+**Hoe te testen:** probeer de lijn of selectie te maken zonder een pad met de muis te tekenen. Kun je hetzelfde bereiken door een plaats, straat of coördinaten in te vullen?
+
+<Guideline appearance="dont" title="Doorsnede tekenen kan alleen met een muispad">
+  ```html
+  <div class="example-map" aria-label="Teken een doorsnede op de kaart"></div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Zelfde resultaat via invoervelden">
+  ```html
+  <form>
+    <label for="example-start">Startpunt met straat, plaats of coördinaten</label>
+    <input id="example-start" name="start" type="text" />
+
+    <label for="example-eind">Eindpunt met straat, plaats of coördinaten</label>
+    <input id="example-eind" name="eind" type="text" />
+
+    <button type="submit">Toon de doorsnede</button>
+
+  </form>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer biedt een manier om hetzelfde resultaat te krijgen zonder te tekenen, bijvoorbeeld velden voor straatnamen, plaatsen of coördinaten.
 
 ## Hoe te testen
 
-Voor alle acties die met een aanwijzergebaar uit te voeren zijn, test of een van de volgende dingen klopt:
+### Voor iedereen
 
-- Het gebaar is eenvoudig en kan met één aanwijzer uitgevoerd worden.
-- Het gebaar is niet eenvoudig of heeft meerdere aanwijzers nodig, maar het kan ook eenvoudig en met één aanwijzer.
+1. Bedien de pagina met alleen een muis, of met één vinger op een aanraakscherm. Werkt alles zonder dat je hoeft te vegen of te knijpen?
+2. Zoek naar kaarten. Kun je in- en uitzoomen en de kaart verschuiven met knoppen of met één vinger?
+3. Zoek naar carrousels en slideshows. Kun je die ook met een knop bedienen, zonder te vegen?
+4. Laat handtekeningvelden en tekenvlakken buiten beschouwing. Daar is het gebaar zelf de taak, dus die hoeven geen alternatief te hebben.
 
-## Tips
+### Voor developers
 
-- Als je twijfelt of je aanwijzergebaar niet te complex is. Bijvoorbeeld omdat het veel precisie vereist. Voeg dan voor de zekerheid een alternatief toe.
+1. Zoek alle plekken op waar je `touchmove`, `gesturechange`, `pointermove` of een gebarenbibliotheek gebruikt. Elk pad-gebaar en elk multipoint-gebaar heeft een enkelvoudig alternatief nodig.
+2. Controleer per onderdeel of je de functie ook bereikt met één tik, klik of lange druk. Een knop is de eenvoudigste vorm. Bij tekenen op een kaart is een knop niet genoeg. Bied dan een manier om hetzelfde resultaat te krijgen met tekst, zoals plaatsnamen of coördinaten.
+3. Let op het verschil met slepen. Telt alleen het begin- en eindpunt en niet de route ertussen, dan gaat het om slepen. Lees daarvoor succescriterium [2.5.7 Slepen](/wcag/2.5.7/).
+4. Test met alleen een muis en met één vinger. Kom je overal met een enkele aanwijzer, dan hoeft niemand een ingewikkeld gebaar te maken.
+
+## Gerelateerde succescriteria
+
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): alles wat met een aanwijzer werkt, moet ook met het toetsenbord kunnen. Een knop naast een gebaar helpt bij beide.
+- [2.5.2 Aanwijzerannulering](/wcag/2.5.2/): gaat over het kunnen afbreken van een aanwijzeractie, zodat een per ongeluk gestarte tik geen gevolgen heeft.
+- [2.5.4 Bewegingsactivering](/wcag/2.5.4/): gaat over functies die je bedient door het apparaat te bewegen of te schudden. Ook die hebben een gewone bediening als alternatief nodig.
+- [2.5.7 Slepen](/wcag/2.5.7/): gaat over bedieningen die je versleept. Bij slepen telt alleen het begin- en eindpunt, bij Aanwijzergebaren telt de route van het gebaar.
 
 ## Gebruikersonderzoek
 
@@ -89,12 +182,6 @@ Voor alle acties die met een aanwijzergebaar uit te voeren zijn, test of een van
 - Nederlandse vertaling van het WCAG-succescriterium: [2.5.1 Aanwijzergebaren](https://www.w3.org/Translations/WCAG22-nl/#pointer-gestures).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.5.1 Pointer Gestures</span>](https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.5.1 Pointer Gestures</span>](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
