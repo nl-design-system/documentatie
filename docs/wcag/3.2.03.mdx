@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.2.3 Consistente navigatie
 pagination_label: WCAG-succescriterium 3.2.3 Consistente navigatie
-description: Delen van de navigatie staan overal in dezelfde volgorde.
+description: Navigatie die op meerdere pagina's terugkomt, staat overal in dezelfde volgorde. Zo vindt een bezoeker het menu en de zoekfunctie op elke pagina op dezelfde plaats terug.
 slug: 3.2.3
 conformance_level: Niveau AA
 keywords:
@@ -13,19 +13,25 @@ keywords:
   - AA
   - begrijpelijk
   - voorspelbaar
-  - navigatie
   - understandable
   - predictable
-  - consistent identification
+  - consistent navigation
+  - consistente navigatie
+  - navigatie
+  - menu
+  - footer
+  - zoekfunctie
+  - broodkruimelpad
+  - WCAG 3.2.3
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.2.3-summary.md";
 
@@ -33,41 +39,207 @@ import Summary from "./summaries/_3.2.3-summary.md";
   {"WCAG-succescriterium 3.2.3 Consistente navigatie"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Navigatie is meer voorspelbaar.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Geef delen van de navigatie overal dezelfde volgorde.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Voorspelbare inhoud is extra belangrijk voor mensen met beperkingen.</dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-Geef onderdelen die vaker voorkomen op een website, zoals navigatiemenu's en zoekfuncties, een vaste volgorde. Dit geeft bezoekers de kans om een beeld te vormen van een website. Hierdoor wordt de website makkelijker te gebruiken. Het voorkomt verrassingen en helpt navigeren. De gebruiker kan beter inschatten waar informatie te vinden is.
+Wie een website voor het eerst bezoekt, leert waar het menu staat, waar de zoekfunctie zit en welke links in de footer staan. Blijft die volgorde op elke pagina gelijk, dan hoeft een bezoeker dat maar één keer te leren.
 
-Als de gebruiker de volgorde aan kan passen, dan telt dit succescriterium niet.
+Dat scheelt het meest voor mensen die maar een deel van de pagina tegelijk zien. Iemand die ver inzoomt, ziet een klein stuk van het scherm. Iemand met een [screenreader](/woordenlijst/#screenreader) hoort de pagina van boven naar beneden. Zij vinden de zoekfunctie terug door te onthouden hoeveel onderdelen daar vóór komen. Verandert die volgorde per pagina, dan moet iedereen op elke pagina opnieuw uitzoeken hoe de website is ingedeeld.
+
+## Veelgemaakte fouten
+
+### De menu-items staan op verschillende pagina's in een andere volgorde
+
+Het hoofdmenu bevat op elke pagina dezelfde links, maar de volgorde verschilt. Op de homepage staat "Contact" achteraan, op een andere pagina staat "Contact" tussen de andere items in. Een bezoeker die op de eerste pagina heeft geleerd waar een menu-item staat, vindt het op de volgende pagina op een andere plaats in de volgorde. Voor iemand die inzoomt of met een screenreader werkt, kost dat elke keer opnieuw zoektijd.
+
+Dit gebeurt op websites waar het menu per pagina wordt samengesteld. Er zijn CMS'en waarin je per pagina of per deel van de website zelf kiest welke links in het menu staan en in welke volgorde. Voegt iemand later een link toe of zet iemand een link op een andere plaats, dan verandert de volgorde op die ene pagina en blijft de rest van de website staan zoals die was.
+
+**Hoe te testen:** open een paar pagina's van de website naast elkaar en vergelijk de volgorde van de menu-items. Staat elk item overal op dezelfde plaats in de volgorde?
+
+In het foute voorbeeld hieronder staat eerst het menu van de homepage en daarna hetzelfde menu van de productpagina. Contact staat op de homepage achteraan en op de productpagina tussen de andere items in.
+
+<Guideline appearance="dont" title="Hetzelfde menu in een andere volgorde per pagina">
+    ```html
+    <nav aria-label="Hoofdmenu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/producten">Producten</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Hoofdmenu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/producten">Producten</a></li>
+      </ul>
+    </nav>
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Hetzelfde menu in dezelfde volgorde op elke pagina">
+  ```html
+  <nav aria-label="Hoofdmenu">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/producten">Producten</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+</Guideline>
+
+Op een pagina waar een menu-item niet van toepassing is, valt dat item weg. De bezoeker vindt de andere items dan nog steeds terug, zolang die hun onderlinge volgorde houden.
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur zet de menu-items in het CMS op elke pagina in dezelfde volgorde. Hetzelfde geldt voor de links in de footer.
+- Een developer plaatst de navigatie in één gedeelde template of navigatiecomponent die op elke pagina terugkomt. Dan is de volgorde overal vanzelf gelijk.
+
+### De zoekfunctie heeft op een andere pagina een andere plek
+
+De zoekfunctie staat op de homepage vóór het hoofdmenu, maar op een subpagina staat die erna, of pas onderaan in de footer. Hetzelfde gebeurt met een inlogknop of een taalwissel. De bezoeker verwacht de zoekfunctie op de plaats waar die eerder stond, en moet nu opnieuw zoeken. Ook als je de pagina van boven naar beneden leest of er met <kbd>Tab</kbd> doorheen gaat, kom je het onderdeel op een ander moment tegen.
+
+**Hoe te testen:** ga van pagina naar pagina en let op de volgorde van de zoekfunctie, het menu en de inlogknop. Kom je ze op elke pagina in dezelfde volgorde tegen, ook als je met <kbd>Tab</kbd> door de pagina gaat?
+
+In het foute voorbeeld hieronder staat de zoekfunctie op de eerste pagina in de header vóór het hoofdmenu, en op de tweede pagina pas onderaan in de footer.
+
+<Guideline appearance="dont" title="De zoekfunctie op een andere plaats in de volgorde per pagina">
+    ```html
+    <header>
+      <form role="search"><input type="search" /></form>
+      <nav aria-label="Hoofdmenu">...</nav>
+    </header>
+
+    <header>
+      <nav aria-label="Hoofdmenu">...</nav>
+    </header>
+    <footer>
+      <form role="search"><input type="search" /></form>
+    </footer>
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="De zoekfunctie op elke pagina op dezelfde plaats in de volgorde">
+  ```html
+  <header>
+    <form role="search">
+      <input type="search" />
+    </form>
+    <nav aria-label="Hoofdmenu">...</nav>
+  </header>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur die de blokken op een pagina zelf plaatst, zet de zoekfunctie, het menu en de inlogknop op elke pagina in dezelfde volgorde.
+- Een developer geeft die onderdelen in de template dezelfde plaats. Dan komt de bezoeker ze ook in dezelfde volgorde tegen bij het lezen van boven naar beneden en bij het gaan met <kbd>Tab</kbd> door de pagina.
+
+### In het menu op een smal scherm staan de onderdelen in een andere volgorde
+
+Op een breed scherm staat de navigatie in een bepaalde volgorde, maar in het uitklapmenu op een smal scherm staan dezelfde onderdelen in een andere volgorde. Wie de website op een telefoon heeft leren kennen en later op een laptop kijkt, vindt de navigatie op een andere plaats in de volgorde.
+
+De indeling verandert mee met de schermbreedte. Onderdelen die op een breed scherm naast elkaar staan, komen op een smal scherm onder elkaar te staan, en de bezoeker herkent ze daar terug. Het probleem ontstaat pas als de onderdelen daarbij van volgorde wisselen.
+
+**Hoe te testen:** bekijk de pagina op een breed scherm en verklein daarna het browservenster tot het menu voor smalle schermen verschijnt. Staan de onderdelen in dat menu in dezelfde volgorde als op het brede scherm?
+
+<Guideline appearance="dont" title="CSS die de volgorde op een smal scherm omdraait">
+    ```css
+    @media (max-width: 600px) {
+      .nav {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav__search {
+        order: -1;
+      }
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Dezelfde volgorde op elke schermbreedte">
+    ```css
+    @media (max-width: 600px) {
+      .nav {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    ```
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een designer tekent het menu voor smalle schermen in dezelfde volgorde als het menu voor brede schermen.
+- Een developer houdt die volgorde aan in de CSS. Met `order`, `flex-direction: row-reverse`, `flex-direction: column-reverse`, `grid-auto-flow: dense` en losse waarden voor `grid-row` of `grid-column` komen onderdelen op het scherm op een andere plaats te staan dan in de code. Gebruik ze niet om onderdelen om te wisselen.
+
+### Het broodkruimelpad verandert van plek
+
+Een broodkruimelpad laat zien waar je bent, bijvoorbeeld "Home > Producten > Fietsen". Laat verder niets op de pagina zien in welk deel van de website deze pagina staat, dan is het broodkruimelpad het enige onderdeel waar de bezoeker dat kan aflezen. Staat het broodkruimelpad op de ene pagina boven de titel en op de andere eronder, dan moet de bezoeker elke keer opnieuw zoeken naar de informatie die nergens anders staat. Ook de links binnen het broodkruimelpad houden overal dezelfde volgorde.
+
+**Hoe te testen:** bekijk het broodkruimelpad op verschillende pagina's die het gebruiken. Staat het overal op dezelfde plaats: steeds boven of steeds onder de titel?
+
+In het foute voorbeeld hieronder staat het broodkruimelpad op de eerste pagina boven de titel en op de tweede pagina eronder.
+
+<Guideline appearance="dont" title="Het broodkruimelpad op een wisselende plaats in de pagina">
+    ```html
+    <nav aria-label="Broodkruimelpad">...</nav>
+    <h1>Fietsen</h1>
+
+    <h1>Onderdelen</h1>
+    <nav aria-label="Broodkruimelpad">...</nav>
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Het broodkruimelpad overal op dezelfde plaats in de pagina">
+  ```html
+  <nav aria-label="Broodkruimelpad">...</nav>
+  <h1>Fietsen</h1>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst het broodkruimelpad op elke pagina op dezelfde plaats in de opbouw, bij voorkeur vanuit één gedeelde template.
 
 ## Hoe te testen
 
-- Kijk op één pagina waar alle navigatie is.
-- Kijk op elke volgende pagina of de navigatie dezelfde volgorde heeft. Heeft een pagina navigatie met meer onderdelen? Neem dit in de vergelijking mee.
+### Voor iedereen
 
-## Tips
+1. Open een paar verschillende pagina's van de website. Staat het hoofdmenu overal in dezelfde volgorde?
+2. Kijk waar de zoekfunctie staat. Kom je die op elke pagina op dezelfde plaats tegen?
+3. Bekijk de footer op meerdere pagina's. Staan de links overal in dezelfde volgorde?
+4. Verklein het browservenster tot het menu voor smalle schermen verschijnt. Staan de onderdelen in dezelfde volgorde als op het brede scherm?
 
-- Geef navigatie ook altijd hetzelfde uiterlijk en dezelfde plek op de pagina's.
-- Navigatie die overal dezelfde onderdelen heeft is ook meer voorspelbaar.
-- Denk aan [3.2.6 Consistente hulp](/wcag/3.2.6) en haal zo min mogelijk navigatie weg.
+### Voor developers
+
+1. Controleer of de navigatie, de zoekfunctie en de footer uit één gedeelde template of component komen. Losse kopieën per pagina gaan na verloop van tijd van elkaar verschillen.
+2. Vergelijk de HTML-opbouw van de navigatie op meerdere pagina's. Staan de onderdelen in dezelfde volgorde in de broncode?
+3. Ga met <kbd>Tab</kbd> over meerdere pagina's door de navigatie en let op de volgorde waarin je de onderdelen bereikt. Is die volgorde overal gelijk?
+4. Zoek in de CSS bij de navigatie naar `order`, `flex-direction: row-reverse`, `flex-direction: column-reverse`, `grid-auto-flow: dense` en losse waarden voor `grid-row` of `grid-column`. Die kunnen de volgorde op een smal scherm anders maken dan op een breed scherm.
+
+## Gerelateerde succescriteria
+
+- [1.3.2 Betekenisvolle volgorde](/wcag/1.3.2/): de leesvolgorde in de code klopt met de bedoelde volgorde. Succescriterium 3.2.3 vraagt daarbovenop dat die volgorde op elke pagina gelijk blijft.
+- [2.4.1 Blokken omzeilen](/wcag/2.4.1/): een manier om herhaalde navigatie over te slaan, bijvoorbeeld met een skiplink. Die skiplinks staan op elke pagina in dezelfde volgorde.
+- [2.4.5 Meerdere manieren](/wcag/2.4.5/): vraagt om meer dan één manier om een pagina te vinden, zoals een menu en een zoekfunctie. Succescriterium 3.2.3 vraagt dat die manieren overal in dezelfde volgorde staan.
+- [3.2.4 Consistente identificatie](/wcag/3.2.4/): onderdelen met dezelfde functie krijgen overal dezelfde naam. Succescriterium 3.2.4 gaat over de naam en de vormgeving, succescriterium 3.2.3 over de volgorde.
+- [3.2.6 Consistente hulp](/wcag/3.2.6/): hulp zoals een contactlink of een chat staat op elke pagina in dezelfde volgorde tussen de andere onderdelen.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Formulieren: [Zorg voor een consistente navigatie en benaming van links en buttons](/richtlijnen/formulieren/meerdere-stappen/consistente-benaming/)
+- Formulieren: [Plaats de informatie over waar de gebruiker is in de stappen boven het formulier](/richtlijnen/formulieren/meerdere-stappen/plaatsing-voortgang/)
 
 ## Gebruikersonderzoek
 
@@ -79,12 +251,6 @@ Als de gebruiker de volgorde aan kan passen, dan telt dit succescriterium niet.
 - Nederlandse vertaling van het WCAG-succescriterium: [3.2.3 Consistente navigatie](https://www.w3.org/Translations/WCAG22-nl/#consistent-navigation).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.2.3 Consistent Navigation</span>](https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.2.3 Consistent Navigation</span>](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
