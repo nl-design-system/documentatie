@@ -14,12 +14,9 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/co
 image_alt: NL Design System Design Systems Week 2026 26-29 October, online
 ---
 
-import {
-  ButtonGroup as ActionGroup,
-  ButtonLink,
-  Paragraph,
-  Link,
-} from "@utrecht/component-library-react/dist/css-module";
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ActionGroup } from "@components/action-group/action-group";
+import { Paragraph } from "@components/paragraph/paragraph";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../\_2026/sessions.json";
 import speakers from "../\_2026/speakers.json";
@@ -30,21 +27,21 @@ import settings from "../settings.json";
 
 # Design Systems Week {settings.year}
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   NL Design System is organising the Design Systems Week for the fifth time. It will feature a number of short talks
   about the how and why of design systems. All online. From {settings.en.dateRange}, we will cover subjects like
   managing design systems, integrating accessibility, user research and code.
 </Paragraph>
 
 <ActionGroup>
-  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/timetable`} appearance="primary-action-button">
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/timetable`} appearance="primary-action">
     {"View the timetable"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
   {!!settings.miro && (
-    <ButtonLink href={settings.miro} appearance="secondary-action-button">
+    <ButtonLink href={settings.miro} appearance="secondary-action">
       {"Use Miro"}
-      <IconChevronRight />
+      <IconChevronRight slot="icon-end" />
     </ButtonLink>
   )}
 </ActionGroup>

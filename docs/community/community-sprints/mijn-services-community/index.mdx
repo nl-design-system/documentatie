@@ -21,7 +21,7 @@ keywords:
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { ActionGroup } from "@components/action-group/action-group";
 
 # Community Sprint: MijnServices Community
 
@@ -99,7 +99,7 @@ Elke even week op donderdag van 10:00 tot 11:00 kan je meedoen aan de [MijnServi
 
 <ActionGroup>
   <ButtonLink href="/community/community-sprints/mijn-services-community/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight />
+    {"Meld je aan"} <IconChevronRight slot="icon-end" />
   </ButtonLink>
 </ActionGroup>
 

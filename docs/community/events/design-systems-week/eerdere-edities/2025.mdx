@@ -15,14 +15,15 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/co
 image_alt: NL Design System Design Systems Week 2024 27-30 Oktober, online
 ---
 
-import { Link, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { Link } from "@components/link/link";
+import { Paragraph } from "@components/paragraph/paragraph";
 import sessions from "../\_2025/sessions.json";
 import speakers from "../\_2025/speakers.json";
 import { DSWSession } from "@site/src/components/DSWSession";
 
 # Design Systems Week 2025 terugkijken
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   Tijdens Design Systems Week kon je 4 dagen lang meerdere korte talks per dag volgen. Bijvoorbeeld over het TEDI:
   Estlands nieuwe design system, toegankelijkheid, AI, gebruikersonderzoek en praktische tests voor het beoordelen van
   toegankelijkheid. Gelukkig hebben we de video's nog!
