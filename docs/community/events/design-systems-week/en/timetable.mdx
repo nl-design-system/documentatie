@@ -19,8 +19,8 @@ import {
   ButtonLink,
   Link,
   Heading2,
-  Paragraph,
 } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@components/paragraph/paragraph";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../\_2026/sessions.json";
 import speakers from "../\_2026/speakers.json";
@@ -29,7 +29,7 @@ import settings from "../settings.json";
 
 # Design Systems Week {settings.year} Timetable
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   NL Design System is organising the Design Systems Week for the {settings.en.edition} time. It will feature a number of
   short talks about the how and why of design systems. All online. From {settings.en.dateRange}, we will cover subjects
   like managing design systems, integrating accessibility, user research and code.

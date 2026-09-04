@@ -13,12 +13,8 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/co
 image_alt: NL Design System Design Systems Week 2026 26-29 Oktober, online
 ---
 
-import {
-  ButtonGroup as ActionGroup,
-  ButtonLink,
-  Heading2,
-  Paragraph,
-} from "@utrecht/component-library-react/dist/css-module";
+import { ButtonGroup as ActionGroup, ButtonLink, Heading2 } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@components/paragraph/paragraph";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "./\_2026/sessions.json";
 import speakers from "./\_2026/speakers.json";
@@ -27,7 +23,7 @@ import settings from "./settings.json";
 
 # Tijdschema Design Systems Week {settings.year}
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   NL Design System organiseert in {settings.year} voor de {settings.nl.edition} keer de Design Systems Week. Van{" "}
   <strong>{settings.nl.dateRange}</strong> zijn er dagelijks meerdere korte sessies van diverse organisaties online te
   volgen over het **hoe en waarom van design systems**.

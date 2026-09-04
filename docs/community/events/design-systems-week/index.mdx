@@ -15,7 +15,8 @@ image_alt: NL Design System Design Systems Week 2026 26-29 Oktober, online
 ---
 
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonLink, ButtonGroup as ActionGroup, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { ButtonLink, ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@components/paragraph/paragraph";
 import settings from "./settings.json";
 
 export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappening;
@@ -24,7 +25,7 @@ export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappe
 
 {!!isUpComingOrHappening && (<>
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   NL Design System organiseert in {settings.year} voor de {settings.nl.edition} keer de Design Systems Week. Van{" "}
   <strong>{settings.nl.dateRange}</strong> zijn er dagelijks meerdere korte sessies van diverse organisaties online te
   volgen over het <strong>hoe en waarom van design systems</strong>.
@@ -45,7 +46,7 @@ export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappe
 
 {!isUpComingOrHappening && (<>
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   Design Systems Week is een online evenement georganiseerd door NL Design System. Tijdens deze week worden meerdere
   korte sessies aangeboden waarin diverse (internationale) organisaties delen hoe en waarom ze design systems inzetten.
   Het doel is om designers, developers of andere professionals die werken aan digitale diensten voor de overheid samen

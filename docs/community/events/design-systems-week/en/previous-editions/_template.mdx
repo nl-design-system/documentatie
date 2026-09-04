@@ -14,7 +14,8 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/co
 image_alt: NL Design System Design Systems Week PLACEHOLDER_YEAR PLACEHOLDER_DATERANGE, online
 ---
 
-import { Link, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { Link } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@components/paragraph/paragraph";
 import sessions from "../../\_PLACEHOLDER_YEAR/sessions.json";
 import speakers from "../../\_PLACEHOLDER_YEAR/speakers.json";
 import { DSWSession } from "@site/src/components/DSWSession";
@@ -23,7 +24,7 @@ import { DSWSession } from "@site/src/components/DSWSession";
 
 # Design Systems Week PLACEHOLDER_YEAR
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   During Design Systems Week, you could follow several short talks each day for four days. Topics included TEDI,
   Estonia’s new design system, accessibility, AI, user research, and practical tests for evaluating accessibility.
   Luckily, we still have the videos!

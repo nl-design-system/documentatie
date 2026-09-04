@@ -16,12 +16,8 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/ds
 image_alt: NL Design System Design Systems Week 2024 27-30 October, online
 ---
 
-import {
-  ButtonGroup as ActionGroup,
-  ButtonLink,
-  Link,
-  Paragraph,
-} from "@utrecht/component-library-react/dist/css-module";
+import { ButtonGroup as ActionGroup, ButtonLink, Link } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@components/paragraph/paragraph";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../../\_2025/sessions.json";
 import speakers from "../../\_2025/speakers.json";
@@ -31,7 +27,7 @@ import { DSWSession } from "@site/src/components/DSWSession";
 
 # Design Systems Week 2025
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   During Design Systems Week, you could follow several short talks each day for four days. Topics included TEDI,
   Estonia’s new design system, accessibility, AI, user research, and practical tests for evaluating accessibility.
   Luckily, we still have the videos!
