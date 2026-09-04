@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.2.2 Pauzeren, stoppen, verbergen
 pagination_label: WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen
-description: Beweging mag niet storen.
+description: Content die vanzelf beweegt, knippert of ververst, kan de bezoeker zelf pauzeren, stoppen of verbergen, zodat afleidende beweging de pagina voor niemand onbruikbaar maakt.
 slug: 2.2.2
 conformance_level: Niveau A
 keywords:
@@ -17,15 +17,23 @@ keywords:
   - enough time
   - pause, stop, hide
   - non-interferentie
+  - beweging
+  - carrousel
+  - animatie
+  - autoplay
+  - ticker
+  - automatisch verversen
+  - prefers-reduced-motion
+  - WCAG 2.2.2
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.2.2-summary.md";
 
@@ -33,47 +41,264 @@ import Summary from "./summaries/_2.2.2-summary.md";
   {"WCAG-succescriterium 2.2.2 Pauzeren, stoppen, verbergen"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Minder bezoekers worden afgeleid door inhoud die vernieuwt of beweegt.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Geef gebruikers controle over inhoud die verandert.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Mensen met cognitieve beperkingen kunnen afgeleid raken.</dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-**Let op**: Dit succescriterium kan een bezoeker verhinderen om een pagina te gebruiken. Het is niet mogelijk om een alternatief aan te bieden. Meer informatie hierover is te vinden op de W3-pagina [ Conformiteitseis 5: Non-interferentie.](https://www.w3.org/Translations/WCAG22-nl/#cc5)
+Beweging naast tekst trekt de aandacht weg van wat de bezoeker aan het lezen is. Voor iemand met een concentratie- of aandachtsstoornis, zoals ADHD, trekt een bewegend element voortdurend de aandacht. Iemand die een [screenreader](/woordenlijst/#screenreader) gebruikt, raakt de plek kwijt als content onder de cursor verandert. Wie schermvergroting gebruikt, ziet maar een klein deel van het scherm en wordt door beweging buiten beeld gestoord. Voor mensen met een vestibulaire aandoening kan bewegende content zelfs misselijkheid of duizeligheid veroorzaken. Een bewegend element dat de maker leuk vindt, kan de pagina voor anderen onbruikbaar maken.
 
-Zorg ervoor dat gebruikers zich op de inhoud van de website kunnen concentreren. Ze mogen niet worden afgeleid door bewegingen of automatische vernieuwingen.
+In een paar situaties hoeft de bezoeker beweging niet te kunnen stopzetten: als de beweging niet langer dan 5 seconden duurt, als de beweging essentieel is voor de taak, of als de content op zichzelf staat en niet naast andere content verschijnt. Een voortgangsbalk die laat zien dat een upload nog bezig is, of een scorebord dat de actuele stand toont, is zulke essentiële content en mag dus vanzelf bijwerken.
 
-Voorkom inhoud die vanzelf 5 seconden of langer beweegt of knippert. Anders moet de bezoeker deze kunnen pauzeren, stoppen of verbergen.
-Voor inhoud die automatisch vernieuwt geldt hetzelfde, tenzij de bezoeker zelf kan bepalen hoe vaak dat gebeurt.
+## Veelgemaakte fouten
+
+### Carrousel scrollt vanzelf door zonder pauzeknop
+
+Een carrousel toont aanbiedingen, nieuws of afbeeldingen en wisselt elke paar seconden naar de volgende slide. Er is geen knop om de beweging te pauzeren. Voor iemand die snel leest werkt dat. Voor een screenreadergebruiker die de tekst laat voorlezen, voor iemand met dyslexie, of voor iemand die schermvergroting gebruikt en de slide eerst in beeld moet krijgen, verdwijnt de content voordat die verwerkt is. Wie zich moeilijk concentreert, blijft naar de wisselende slides kijken en komt niet toe aan de rest van de pagina.
+
+**Hoe te testen:** open een pagina met een carrousel en wacht zonder te klikken. Blijft die langer dan 5 seconden vanzelf doorschuiven? Is er een knop om te pauzeren of te stoppen?
+
+<Guideline appearance="dont" title="Carrousel wisselt automatisch, geen pauzeknop">
+    ```html
+    <div class="example-carousel">
+      <div class="example-slide">
+        <h2>Wintersale: 40% korting</h2>
+        <p>Nog tot en met zondag.</p>
+      </div>
+    </div>
+    ```
+    ```javascript
+    const carousel = document.querySelector(".example-carousel");
+
+    setInterval(() => {
+      showNextSlide(carousel);
+    }, 5000);
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Carrousel met pauze- en navigatieknoppen">
+  ```html
+  <div class="example-carousel" role="region" aria-label="Aanbiedingen">
+    <div class="example-slide">
+      <h2>Wintersale: 40% korting</h2>
+      <p>Nog tot en met zondag.</p>
+    </div>
+    <button type="button">Vorige</button>
+    <button type="button">Pauzeer</button>
+    <button type="button">Volgende</button>
+  </div>
+  ```
+</Guideline>
+
+De eenvoudigste oplossing is een carrousel die niet vanzelf beweegt. Toon de slides pas als de bezoeker zelf op "Vorige" of "Volgende" klikt, dan is er geen pauzeknop nodig.
+
+**Wie kan dit oplossen:** een contentmaker of webredacteur kan in het CMS instellen dat de carrousel niet automatisch draait. Een developer voegt een pauzeknop en navigatieknoppen toe, of vervangt de automatische wisseling door navigatie die de bezoeker zelf bedient.
+
+### Achtergrondvideo speelt automatisch en blijft doorlopen
+
+Een video speelt automatisch af als achtergrond achter een kop of tekst, en herhaalt zichzelf eindeloos. De bezoeker heeft geen knop om de video te pauzeren. De constante beweging achter de tekst maakt lezen moeilijk voor mensen met dyslexie of een concentratiestoornis, en kan voor mensen met een vestibulaire aandoening klachten veroorzaken. Speelt de video ook geluid af, dan komt daar de overlast van onverwacht geluid bij.
+
+**Hoe te testen:** open een pagina met een automatisch afspelende video en wacht zonder te klikken. Blijft de video langer dan 5 seconden bewegen? Kun je de video pauzeren of stoppen?
+
+<Guideline appearance="dont" title="Video speelt automatisch af en loopt eindeloos door zonder bediening">
+  ```html
+  <video autoplay loop muted>
+    <source src="/video/background.mp4" type="video/mp4" />
+  </video>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Video met zichtbare bediening en respect voor de voorkeur voor minder beweging">
+  ```html
+  <video controls muted>
+    <source src="/video/background.mp4" type="video/mp4" />
+  </video>
+  ```
+</Guideline>
+
+Zet je de video toch op `autoplay`, respecteer dan `prefers-reduced-motion` en toon een stilstaand beeld in plaats van de bewegende video.
+
+**Wie kan dit oplossen:** een webredacteur kan de video via het CMS vervangen door een stilstaande afbeelding of het automatisch afspelen uitzetten. Een developer geeft de video zichtbare bedieningsknoppen, of laat de video pas afspelen nadat de bezoeker die zelf start.
+
+### Tekst scrollt als een ticker over het scherm
+
+Een balk met nieuws, aandelenkoersen of aankondigingen scrollt horizontaal over het scherm. De tekst is alleen leesbaar op het moment dat die voorbijkomt. Iemand die langzamer leest, mist zinnen. Wie schermvergroting gebruikt, ziet de tekst het scherm uit schuiven voordat die gelezen is. Een screenreader leest bewegende tekst onvoorspelbaar of helemaal niet voor.
+
+**Hoe te testen:** zoek op de pagina naar tekst die vanzelf horizontaal of verticaal scrollt. Kun je die tekst stilzetten om hem rustig te lezen?
+
+<Guideline appearance="dont" title="Tekst scrollt onophoudelijk voorbij zonder stopknop">
+    ```html
+    <div class="example-ticker">
+      <p>Laatste nieuws: nieuwe openingstijden vanaf maandag ...</p>
+    </div>
+    ```
+    ```css
+    .example-ticker p {
+      animation: scroll 15s linear infinite;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Stilstaande lijst die de bezoeker in eigen tempo leest">
+  ```html
+  <section aria-label="Laatste nieuws">
+    <ul>
+      <li>Nieuwe openingstijden vanaf maandag.</li>
+      <li>Onderhoud aan de webshop op zaterdagavond.</li>
+    </ul>
+  </section>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de schuivende balk door een stilstaande lijst, of voegt een knop toe waarmee de bezoeker de beweging stopt.
+
+### Een overzicht ververst zichzelf terwijl de bezoeker leest
+
+Een tijdlijn, berichtenlijst of nieuwsoverzicht werkt zichzelf om de paar seconden bij en zet nieuwe items bovenaan. De inhoud waar de bezoeker net naar keek, verspringt naar beneden. Wie een screenreader gebruikt, wordt teruggezet naar het begin. Wie schermvergroting gebruikt, is de gelezen plek kwijt. Er is geen knop om het verversen te pauzeren of het ritme te vertragen.
+
+**Hoe te testen:** open een pagina met een live bijgewerkte lijst en begin een item te lezen. Verspringt de inhoud vanzelf? Kun je het verversen pauzeren of zelf bepalen wanneer nieuwe items verschijnen?
+
+<Guideline appearance="dont" title="Lijst scrollt automatisch door zodra er nieuwe items binnenkomen">
+    ```javascript
+    setInterval(() => {
+      const list = document.querySelector("#timeline");
+      list.prepend(createNewItem());
+    }, 5000);
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Nieuwe items wachten tot de bezoeker ze zelf oproept">
+  ```html
+  <button type="button" aria-live="polite">
+    3 nieuwe berichten. Toon
+  </button>
+  <ul id="timeline">
+    <li>Bericht van 14:02</li>
+    <li>Bericht van 13:58</li>
+  </ul>
+  ```
+</Guideline>
+
+Anders dan bij bewegende of schuivende content geldt hier geen grens van 5 seconden. Ook een lijst die zichzelf elke paar seconden ververst, moet de bezoeker kunnen pauzeren, verbergen of vertragen.
+
+**Wie kan dit oplossen:** een developer voegt nieuwe items pas toe nadat de bezoeker daarop klikt, of biedt een knop waarmee de bezoeker het automatisch verversen pauzeert of vertraagt.
+
+### Een bewegende afbeelding blijft eindeloos herhalen
+
+Een geanimeerde GIF herhaalt zichzelf zonder te stoppen. De bezoeker kan de beweging niet uitzetten. Naast tekst leidt de herhaling constant af, en voor mensen met een vestibulaire aandoening kan aanhoudende beweging klachten geven.
+
+**Hoe te testen:** zoek op de pagina naar afbeeldingen die blijven bewegen. Duurt de beweging langer dan 5 seconden en blijft die herhalen? Kun je de beweging stopzetten?
+
+<Guideline appearance="dont" title="Geanimeerde afbeelding die eindeloos doorloopt">
+  ```html
+  <img src="/images/mascot-animation.gif" alt="Mascotte die zwaait" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Video met bediening in plaats van een eindeloze GIF">
+  ```html
+  <video controls muted loop poster="/images/mascotte-still.jpg">
+    <source src="/video/mascot.mp4" type="video/mp4" />
+  </video>
+  ```
+</Guideline>
+
+Een GIF die maar één keer of een paar seconden speelt en daarna stilstaat, is geen probleem. Alleen beweging die langer dan 5 seconden doorgaat en naast andere content staat, moet stopgezet kunnen worden.
+
+**Wie kan dit oplossen:** een contentmaker of webredacteur kan de GIF vervangen door een afbeelding die na een korte animatie stilstaat. Een developer vervangt de eindeloze GIF door een video met bediening.
+
+### Kleine animatie naast een kop of icoon blijft doorlopen
+
+Naast een titel of icoon staat een klein bewegend element: een pulsed icoon, een animatie naast de kop van een pagina, een bewegend beeld bij een kaart. Het lijkt onschuldig omdat het klein en decoratief is, maar het beweegt vanzelf en blijft langer dan 5 seconden herhalen. De beweging trekt steeds de aandacht weg van de tekst ernaast. Voor iemand met een concentratie- of aandachtsstoornis maakt juist zo'n klein, herhalend element de kop moeilijk te lezen.
+
+**Hoe te testen:** kijk naast koppen, iconen en titels of daar iets vanzelf beweegt. Duurt de beweging langer dan 5 seconden en blijft die herhalen? Kun je de beweging stopzetten?
+
+<Guideline appearance="dont" title="Icoontje naast een kop pulseert eindeloos door">
+    ```css
+    .example-heading-icon {
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Animatie speelt kort en stopt vanzelf, en respecteert de voorkeur voor minder beweging">
+    ```css
+    .example-heading-icon {
+      animation: pulse 1.5s ease-in-out 2;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .example-heading-icon {
+        animation: none;
+      }
+    }
+    ```
+
+</Guideline>
+
+Een decoratieve animatie hoeft niet helemaal weg. Zorg dat de beweging binnen 5 seconden stopt, of geef de bezoeker een manier om die te pauzeren. In het goede voorbeeld speelt de animatie 2 keer, samen 3 seconden, en staat daarna stil.
+
+**Wie kan dit oplossen:** voor een puur decoratieve animatie kan een ontwerper of contentmaker kiezen die weg te laten. Een developer laat de animatie anders na een paar seconden stoppen, of biedt een pauzemogelijkheid, en respecteert de systeemvoorkeur voor minder beweging.
+
+### Animaties negeren de systeemvoorkeur voor minder beweging
+
+De bezoeker heeft in het besturingssysteem ingesteld dat de pagina beweging moet beperken, maar de pagina laat toch alles bewegen: elementen die in beeld schuiven, een pulsede knop, een parallax-effect. Juist mensen die last hebben van beweging kiezen deze instelling, precies de groep die de animaties hindert.
+
+**Hoe te testen:** zet in de systeeminstellingen "beweging verminderen" aan. Op macOS vind je dit onder Systeeminstellingen, Toegankelijkheid, Weergave; op Windows onder Instellingen, Toegankelijkheid, Visuele effecten. Herlaad de pagina. Zijn de animaties nu uit of veel rustiger?
+
+<Guideline appearance="dont" title="Animatie draait altijd, ongeacht de voorkeur van de bezoeker">
+    ```css
+    .example-card {
+      animation: appear 0.6s ease-out;
+    }
+    ```
+</Guideline>
+
+<Guideline appearance="do" title="Animatie houdt rekening met de voorkeur voor minder beweging">
+    ```css
+    .example-card {
+      animation: appear 0.6s ease-out;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .example-card {
+        animation: none;
+      }
+    }
+    ```
+
+</Guideline>
+
+De systeemvoorkeur respecteren neemt beweging weg voor de mensen die daarom vragen, maar het vervangt geen pauzeknop. Content die uit zichzelf langer dan 5 seconden blijft bewegen naast andere content, moet ook te pauzeren zijn voor bezoekers die deze instelling niet gebruiken.
+
+**Wie kan dit oplossen:** een developer voegt een `prefers-reduced-motion`-regel toe die animaties uitzet of vertraagt, naast een zichtbare pauzemogelijkheid voor doorlopende beweging.
 
 ## Hoe te testen
 
-Voor alle inhoud die vernieuwt of beweegt:
+### Voor iedereen
 
-- Controleer of deze niet automatisch start,
-- Controleer of deze niet langer dan 5 seconden duurt,
-- Controleer of deze te pauzeren, stoppen of verbergen is,
-- Als de inhoud automatisch vernieuwt, controleer dan of de bezoeker zelf kan bepalen hoe vaak dat gebeurt.
+1. Open de pagina en wacht zonder te klikken. Beweegt, knippert of scrollt er iets langer dan 5 seconden vanzelf?
+2. Zoek bij elk bewegend element naar een knop om te pauzeren, te stoppen of het element te verbergen.
+3. Probeer een carrousel of ticker stil te zetten en de inhoud rustig te lezen.
+4. Begin een live bijgewerkte lijst te lezen. Verspringt de inhoud onder je ogen, of bepaal jij wanneer nieuwe items verschijnen?
+5. Zet in je systeeminstellingen "beweging verminderen" aan, herlaad de pagina en kijk of de animaties rustiger worden.
 
-## Tips
+### Voor developers
 
-- Zorg dat er geen inhoud is automatisch verandert of beweegt. Zo voorkom je problemen met dit succescriterium en zoek je niet de grenzen op van wat bezoekers fijn vinden.
-- De CSS-functie `prefers-reduced-motion` is een manier om beweging te beperken. De veilige aanpak is om standaard geen beweging te tonen. Toon bewegende inhoud alleen aan mensen die expliciet een voorkeur hebben voor beweging.
+1. Inventariseer alle bewegende en automatisch bijgewerkte content: carrousels, achtergrondvideo's, tickers, geanimeerde afbeeldingen, live feeds en animaties bij het scrollen.
+2. Voor bewegende, knipperende of schuivende content: controleer of de beweging langer dan 5 seconden duurt en naast andere content staat. Alleen dan is een pauze-, stop- of verbergmogelijkheid nodig.
+3. Voor content die zichzelf ververst: hier geldt geen grens van 5 seconden. Start de update automatisch en staat die naast andere content, dan moet de bezoeker die kunnen pauzeren, verbergen of het ritme kunnen aanpassen.
+4. Geef doorlopende beweging een zichtbare knop om te pauzeren of te stoppen, en zorg dat die knop toetsenbordbereikbaar is.
+5. Laat automatisch bijgewerkte content pas verspringen nadat de bezoeker dat zelf oproept, of bied een knop om het ritme te vertragen of te pauzeren.
+6. Voeg een `@media (prefers-reduced-motion: reduce)`-regel toe die niet-essentiële animaties uitzet of vertraagt.
+7. Overweeg beweging helemaal weg te laten. Content die niet uit zichzelf beweegt, heeft geen pauzeknop nodig en werkt voor iedereen.
+
+## Gerelateerde succescriteria
+
+- [2.2.1 Timing aanpasbaar](/wcag/2.2.1/): gaat over tijdslimieten waarbinnen een taak moet worden voltooid. Timing aanpasbaar draait om tijd die wegloopt; Pauzeren, stoppen, verbergen om content die uit zichzelf in beweging is. Een automatisch doorlopende carrousel raakt beide.
+- [2.3.1 Drie flitsen of beneden drempelwaarde](/wcag/2.3.1/): gaat over knipperende content die epileptische aanvallen kan veroorzaken. Bij snel knipperen of flitsen is dat criterium belangrijker dan de vraag of de beweging te pauzeren is.
+- [2.3.3 Animatie uit interacties](/wcag/2.3.3/): dit AAA-criterium gaat over beweging die door een handeling van de bezoeker ontstaat, zoals een schuivend overgangseffect. Daar is de systeemvoorkeur voor minder beweging het uitgangspunt.
+- [1.4.2 Geluidsbediening](/wcag/1.4.2/): als automatisch afspelende media langer dan 3 seconden geluid maakt, moet de bezoeker dat geluid kunnen pauzeren of het volume apart kunnen regelen.
 
 ## Gebruikersonderzoek
 
@@ -85,12 +310,6 @@ Voor alle inhoud die vernieuwt of beweegt:
 - Nederlandse vertaling van het WCAG-succescriterium: [2.2.2 Pauzeren, stoppen, verbergen](https://www.w3.org/Translations/WCAG22-nl/#pause-stop-hide).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.2.2 Pause, Stop, Hide</span>](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.2.2 Pause, Stop, Hide</span>](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
