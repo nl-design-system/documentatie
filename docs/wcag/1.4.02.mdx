@@ -5,26 +5,35 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.4.2 Geluidsbediening
 pagination_label: WCAG-succescriterium 1.4.2 Geluidsbediening
-description: Geluiden moet je kunnen pauzeren, stoppen of dempen.
+description: Geluid dat vanzelf begint, kan een bezoeker zelf pauzeren, stoppen of zachter zetten.
 slug: 1.4.2
 conformance_level: Niveau A
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - onderscheidbaar
   - perceivable
   - distinguishable
   - audio control
+  - geluid
+  - audio
+  - automatisch afspelen
+  - autoplay
+  - achtergrondmuziek
+  - video met geluid
+  - screenreader
+  - geluidsbediening
+  - toegankelijkheid
+  - WCAG 1.4.2
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_1.4.2-summary.md";
 
@@ -36,19 +45,131 @@ import Summary from "./summaries/_1.4.2-summary.md";
 
 <Summary />
 
-**Let op**: Dit succescriterium kan een bezoeker verhinderen om een pagina te gebruiken. Het is niet mogelijk om een alternatief aan te bieden. Meer informatie hierover is te vinden op de W3-pagina [ Conformiteitseis 5: Non-interferentie.](https://www.w3.org/Translations/WCAG22-nl/#cc5)
+Wie een screenreader gebruikt, heeft last van automatisch geluid. De screenreader spreekt zelf ook via de geluidsuitvoer van het apparaat. Speelt er tegelijk muziek of een video, dan hoort de bezoeker dat geluid op hetzelfde moment als de stem van de screenreader en is de voorlezing niet meer te verstaan. Het apparaat helemaal dempen is geen oplossing, want dan is ook de screenreader niet meer te horen.
+
+Daarom staat de bediening op de pagina zelf en regelt die het volume los van het systeemvolume. Ook mensen die zich moeilijk kunnen concentreren als er geluid speelt, hebben baat bij een knop om het geluid te stoppen.
+
+**Let op**: automatisch geluid kan een bezoeker verhinderen om de hele pagina te gebruiken. Een alternatieve versie van de pagina lost dat niet op. Meer hierover staat op de W3C-pagina [Conformiteitseis 5: Non-interferentie](https://www.w3.org/Translations/WCAG22-nl/#cc5).
+
+## Veelgemaakte fouten
+
+### Een video met geluid start automatisch bij het laden van de pagina
+
+Een grote video bovenaan de pagina of een video achter de tekst begint vanzelf met geluid, zonder knop om te pauzeren of te stoppen. Voor een screenreadergebruiker klinkt het geluid tegelijk met de voorlezing. Iemand die zich moeilijk concentreert, raakt afgeleid door het onverwachte geluid.
+
+**Hoe te testen:** zet het geluid van je apparaat aan en open de pagina. Begint er vanzelf video-geluid dat langer dan 3 seconden duurt?
+
+<Guideline appearance="dont" title="Autoplay-video met een geluidsspoor en zonder bediening">
+  ```html
+  <video src="museum-tour.mp4" autoplay loop></video>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Decoratieve achtergrondvideo zonder geluid">
+  ```html
+  <video src="museum-tour.mp4" autoplay loop muted></video>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zet een decoratieve achtergrondvideo op `muted`. Moet de bezoeker het geluid juist horen, laat de video dan niet automatisch starten en voeg bedieningsknoppen toe zodat de bezoeker zelf begint.
+
+### Achtergrondmuziek start automatisch bij het openen van de pagina
+
+Een geluidsfragment of muziek begint zodra de pagina laadt. De enige manier om het te stoppen is het apparaat dempen. Een screenreadergebruiker dempt daarmee ook de eigen voorlezing en kan de pagina niet meer gebruiken.
+
+**Hoe te testen:** open de pagina met het geluid aan. Start er muziek of een geluidsfragment zonder dat je daarop klikte?
+
+<Guideline appearance="dont" title="Geluid dat vanzelf begint, zonder afspeelknop">
+  ```html
+  <audio src="background-music.mp3" autoplay loop></audio>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Geluid dat pas start als de bezoeker erop klikt">
+  ```html
+  <audio src="background-music.mp3" controls></audio>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer laat het geluid pas afspelen op verzoek van de bezoeker, met een afspeelknop. Het geluid begint dan niet vanzelf.
+
+### Ingesloten media van een andere partij speelt automatisch geluid af
+
+Een `<iframe>` met een video of advertentie van een externe partij start vanzelf met geluid. Dat gebeurt door een `autoplay`-parameter in de URL. De bediening van zo'n externe speler kun je zelf niet aanpassen. Een bezoeker die de pagina opent, hoort dat geluid tegelijk met de voorlezing van de screenreader.
+
+**Hoe te testen:** bekijk de URL van elke embed. Staat er een parameter als `autoplay=1` in?
+
+<Guideline appearance="dont" title="Ingesloten video die automatisch met geluid start">
+  ```html
+  <iframe src="https://example.com/embed/kitchen-machine?autoplay=1" title="Video: productdemo keukenmachine"></iframe>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Ingesloten video die de bezoeker zelf start">
+  ```html
+  <iframe src="https://example.com/embed/kitchen-machine" title="Video: productdemo keukenmachine"></iframe>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer verwijdert de `autoplay`-parameter zodat de bezoeker de media zelf start. Laat de externe tool geen bediening toe en start hij toch vanzelf met geluid, bied die embed dan niet aan.
+
+### De knop om het geluid te stoppen staat niet aan het begin van de pagina
+
+Er is wel een knop om het geluid te stoppen, maar die staat verderop of onderaan de pagina. Een screenreadergebruiker gaat van boven naar beneden door de pagina en hoort het geluid tegelijk met de voorlezing, en moet eerst langs alle content om de knop te bereiken. Het geluid stoort dan al die tijd.
+
+**Hoe te testen:** druk vanaf het begin van de pagina op <kbd>Tab</kbd>. Bereik je de stopknop bij de eerste paar tabstops, of pas na veel andere elementen?
+
+In dit voorbeeld staat de stopknop pas na de rest van de content:
+
+<Guideline appearance="dont" title="Stopknop pas na de rest van de content">
+  ```html
+  <audio src="background-music.mp3" autoplay></audio>
+  <h1>Welkom bij het Openluchtmuseum</h1>
+  <p>Bekijk onze rondleidingen en openingstijden.</p>
+  <button>Geluid stoppen</button>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Stopknop als een van de eerste elementen op de pagina">
+  ```html
+  <button>Geluid stoppen</button>
+  <audio src="background-music.mp3" autoplay></audio>
+  <h1>Welkom bij het Openluchtmuseum</h1>
+  <p>Bekijk onze rondleidingen en openingstijden.</p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst de bedieningsknop vooraan in de volgorde van de pagina, zodat een screenreadergebruiker of toetsenbordgebruiker die als eerste bereikt.
 
 ## Hoe te testen
 
-- Zorg ervoor dat je geluid niet gedempt is.
-- Laad een pagina en luister. Voor elke geluid dat langer dan 3 seconden duurt, moet het volgende kloppen:
-  - Het geluid is te pauzeren, stoppen of het volume is te veranderen.
-  - De manier om te pauzeren, stoppen of dempen is zelf toegankelijk.
-  - De verandering van volume is niet voor het algemene volume van het apparaat van de bezoeker.
+### Voor iedereen
 
-## Tips
+1. Zet het geluid van je apparaat aan en open de pagina. Begint er vanzelf geluid?
+2. Duurt dat geluid langer dan 3 seconden?
+3. Zoek een knop op de pagina om het geluid te pauzeren of te stoppen, of om het volume apart te regelen.
+4. Staat die knop vooraan, zodat je hem snel bereikt?
+5. Controleer video's, achtergrondmuziek, carrousels en ingesloten content zoals embeds en advertenties allemaal apart.
 
-- Zorg dat geluiden niet automatisch afspelen. Dat voorkomt problemen met dit succescriterium en is gebruiksvriendelijker dan geluiden kunnen pauzeren, stoppen of dempen.
+### Voor developers
+
+1. Zoek in de code naar `autoplay` bij `<video>`- en `<audio>`-elementen.
+2. Heeft een autoplay-video een geluidsspoor? Een decoratieve achtergrondvideo hoort `muted` te zijn.
+3. Controleer ingesloten content op autoplay-parameters in de URL, zoals `autoplay=1`.
+4. Speelt er automatisch geluid, controleer dan of er een bedieningsknop is die alleen het geluid van de pagina regelt, los van het systeemvolume.
+5. Test met het toetsenbord: bereik je de stopknop bij de eerste tabstops? Test de knop ook met een screenreader. Heeft die een duidelijke naam?
+6. Automatische scans zoals <span lang="en">axe DevTools</span> of <span lang="en">WAVE</span> herkennen automatisch geluid niet betrouwbaar. Controleer dit handmatig.
+
+## Gerelateerde succescriteria
+
+- [Succescriterium 2.2.2 Pauzeren, stoppen, verbergen](/wcag/2.2.2/): over content die automatisch beweegt, knippert of ververst. Succescriterium 1.4.2 gaat over automatisch geluid, succescriterium 2.2.2 over automatisch bewegende of bijwerkende content.
+- [Succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1/): de knop om het geluid te stoppen moet met het toetsenbord te bedienen zijn.
+- [Succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2/): de bedieningsknop heeft een naam die voor een screenreader duidelijk maakt wat hij doet.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 1.4.2 Geluidsbediening](https://www.w3.org/Translations/WCAG22-nl/#audio-control): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 1.4.2: Audio Control</span>](https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html): de Engelstalige uitleg van het W3C bij het succescriterium, met technieken en voorbeelden.
 
 ## Gebruikersonderzoek
 
@@ -60,12 +181,6 @@ import Summary from "./summaries/_1.4.2-summary.md";
 - Nederlandse vertaling van het WCAG-succescriterium: [1.4.2 Geluidsbediening](https://www.w3.org/Translations/WCAG22-nl/#audio-control).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.4.2 Audio Control</span>](https://www.w3.org/WAI/WCAG22/quickref/#audio-control).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 1.4.2 Audio Control</span>](https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
