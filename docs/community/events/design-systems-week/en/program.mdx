@@ -36,12 +36,12 @@ import settings from "../settings.json";
 <ActionGroup>
   <ButtonLink href={`/events/design-systems-week-${settings.year}/en/timetable`} appearance="primary-action">
     {"View the timetable"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
   {!!settings.miro && (
     <ButtonLink href={settings.miro} appearance="secondary-action">
       {"Use Miro"}
-      <IconChevronRight />
+      <IconChevronRight slot="icon-end" />
     </ButtonLink>
   )}
 </ActionGroup>

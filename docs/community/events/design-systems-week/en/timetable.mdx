@@ -14,12 +14,9 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/co
 image_alt: NL Design System Design Systems Week 2026 26-29 October, online
 ---
 
-import {
-  ButtonGroup as ActionGroup,
-  ButtonLink,
-  Link,
-  Heading2,
-} from "@utrecht/component-library-react/dist/css-module";
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ActionGroup } from "@components/action-group/action-group";
+import { Link } from "@components/link/link";
 import { Paragraph } from "@components/paragraph/paragraph";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../\_2026/sessions.json";
@@ -40,7 +37,7 @@ import settings from "../settings.json";
 <ActionGroup>
   <ButtonLink href="/events/design-systems-week/en" appearance="primary-action">
     {"About Design Systems Week"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
 </ActionGroup>
 
@@ -51,12 +48,12 @@ import settings from "../settings.json";
 <ActionGroup>
   <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="primary-action">
     {"See the program"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
   {!!settings.miro && (
     <ButtonLink href={settings.miro} appearance="secondary-action">
       {"Use Miro"}
-      <IconChevronRight />
+      <IconChevronRight slot="icon-end" />
     </ButtonLink>
   )}
 </ActionGroup>
