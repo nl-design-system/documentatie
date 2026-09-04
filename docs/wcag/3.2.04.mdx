@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.2.4 Consistente identificatie
 pagination_label: WCAG-succescriterium 3.2.4 Consistente identificatie
-description: Onderdelen die hetzelfde doen moeten ook hetzelfde te herkennen zijn.
+description: Een knop, link of icoon met dezelfde functie heet op elke pagina hetzelfde en ziet er op elke pagina hetzelfde uit, zodat een bezoeker die functie meteen terugherkent.
 slug: 3.2.4
 conformance_level: Niveau AA
 keywords:
@@ -16,15 +16,21 @@ keywords:
   - understandable
   - predictable
   - consistent identification
+  - consistente identificatie
+  - consistentie
+  - toegankelijke naam
+  - iconen
+  - linktekst
+  - WCAG 3.2.4
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.2.4-summary.md";
 
@@ -32,36 +38,189 @@ import Summary from "./summaries/_3.2.4-summary.md";
   {"WCAG-succescriterium 3.2.4 Consistente identificatie"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Acties zijn meer voorspelbaar.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Zorg dat functies die herhalen hetzelfde te herkennen zijn.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Herhaalde herkenning is extra belangrijk voor mensen met een beperking.</dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-Er zijn verschillende manieren om functies te herkennen. Dit kan door middel van de tekst die je ziet, de naam van het element (die je mogelijk niet ziet), maar ook door kenmerken die geen tekst zijn zoals iconen, kleur of vormgeving.
+Een zoekknop heet op elke pagina "Zoeken". Een link naar de voorpagina heet overal "Home", ook in het menu en in de footer. Een icoon betekent op elke plek hetzelfde. Zo herkent een bezoeker een functie terug zonder er opnieuw over na te denken.
 
-Voorbeelden van onderdelen met functies zijn links, buttons, accordions en iconen maar ook labels en buttons in formulieren.
+Screenreadergebruikers herkennen een knop of link aan de naam die ze horen, de toegankelijke naam. Klinkt dezelfde knop op elke pagina anders, dan is het voor hen een andere knop. Mensen met een cognitieve beperking of een leerbeperking gebruiken patronen om een website te begrijpen. Heet dezelfde functie telkens anders, dan moeten zij op elke pagina opnieuw uitzoeken wat een onderdeel doet. Dat kost extra moeite en leidt tot fouten.
 
-Praktisch betekent dit:
+Onderdelen die iets anders doen, mogen anders heten. Het gaat erom dat dezelfde functie overal op dezelfde manier te herkennen is. Kleine verschillen in tekst mogen, zolang de bezoeker de functie nog als dezelfde herkent. Consistentie telt het zwaarst op plekken met veel vergelijkbare pagina's, zoals een meerstappenformulier of een portaal met veel deelpagina's.
 
-- Gebruik dezelfde tekst voor een verzendbutton bij de formulieren in een website. Niet in het ene formulier 'Verzenden' en in een ander formulier 'Versturen'.
-- Gebruik hetzelfde icoon voor een button om invoer te verwijderen. Niet eerst een prullenbak icoon, terwijl een andere button een kruis als icoon heeft.
-- Noem de link naar de voorpagina altijd hetzelfde binnen de website. Niet eerst 'Home', dan 'Voorpagina' en dan 'Start'.
+## Veelgemaakte fouten
+
+### Dezelfde knop heet op verschillende pagina's anders
+
+In een meerstappenformulier heet de knop die je naar de volgende stap brengt op de ene pagina "Volgende", op de andere "Verder" en op de derde "Ga door". Het is telkens dezelfde functie, maar de bezoeker moet op elke stap opnieuw uitzoeken welke knop naar de volgende stap gaat. Voor een screenreadergebruiker klinkt het elke keer als een andere knop.
+
+**Hoe te testen:** loop een proces met meerdere stappen door en noteer de tekst van de knop die je verder brengt. Is die op elke stap hetzelfde?
+
+In de voorbeelden hieronder staan de knoppen van stap 1, stap 2 en stap 3 onder elkaar.
+
+<Guideline appearance="dont" title="Dezelfde functie met verschillende knopteksten">
+    ```html
+    <button type="button">Volgende</button>
+    <button type="button">Verder</button>
+    <button type="button">Ga door</button>
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Dezelfde functie met dezelfde knoptekst">
+    ```html
+    <button type="button">Volgende</button>
+    <button type="button">Volgende</button>
+    <button type="button">Volgende</button>
+    ```
+
+</Guideline>
+
+Dit geldt voor elke functie die op meerdere pagina's terugkomt, zoals de zoekknop, de taalwissel of de knop voor hoog contrast. Kies één naam en gebruik die overal.
+
+**Wie kan dit oplossen:** een contentmaker kiest één tekst voor de knop en gebruikt die op elke stap. Staat de knoptekst in de code in plaats van in het CMS, dan past een developer die aan.
+
+### Icoonknoppen met dezelfde functie hebben verschillende toegankelijke namen
+
+Een zoekknop met een vergrootglas heeft op de ene pagina de toegankelijke naam "Zoeken" en op de andere "Vergrootglas". Het icoon ziet er hetzelfde uit, maar een screenreader leest een andere naam voor. De bezoeker kan niet horen dat het om dezelfde functie gaat.
+
+**Hoe te testen:** zoek dezelfde icoonknop op verschillende pagina's op en controleer de toegankelijke naam in de <span lang="en">Accessibility</span>-tab van de DevTools. Is die overal gelijk?
+
+In de voorbeelden hieronder staat eerst de zoekknop op de ene pagina en daarna dezelfde zoekknop op een andere pagina.
+
+<Guideline appearance="dont" title="Dezelfde icoonknop met verschillende toegankelijke namen">
+    ```html
+    <button type="button" aria-label="Zoeken">
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-search" /></svg>
+    </button>
+
+    <button type="button" aria-label="Vergrootglas">
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-search" /></svg>
+    </button>
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Dezelfde icoonknop met dezelfde toegankelijke naam">
+    ```html
+    <button type="button" aria-label="Zoeken">
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-search" /></svg>
+    </button>
+
+    <button type="button" aria-label="Zoeken">
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-search" /></svg>
+    </button>
+    ```
+
+</Guideline>
+
+Dit speelt ook bij deelknoppen voor sociale media. Zo'n knop heet op de ene pagina "Deel op LinkedIn" en op de andere "LinkedIn" of "Delen". Kies één naam en gebruik die overal.
+
+**Wie kan dit oplossen:** een contentmaker spreekt per functie één naam af. Een developer zet die naam in elke icoonknop, het liefst vanuit één gedeelde component zodat de naam op elke pagina gelijk blijft.
+
+### Hetzelfde icoon betekent op verschillende plekken iets anders
+
+Een ster staat op de ene pagina voor "Toevoegen aan favorieten" en op de andere voor een beoordeling met sterren. Of een pijl betekent op de ene plek "Volgende" en op de andere "Openen". De bezoeker leert de betekenis van een icoon op één pagina en gaat er daarna van uit dat het elders hetzelfde betekent.
+
+**Hoe te testen:** maak een lijst van de iconen op de website. Gebruik je een icoon op meerdere plekken voor verschillende functies?
+
+In het foute voorbeeld hieronder staat de ster eerst voor favorieten en daarna voor een beoordeling. In het goede voorbeeld krijgt favorieten een hart en blijft de ster bij de beoordeling.
+
+<Guideline appearance="dont" title="Eén icoon voor twee verschillende functies">
+    ```html
+    <button type="button" aria-label="Toevoegen aan favorieten">
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-star" /></svg>
+    </button>
+
+    <span aria-label="Beoordeling: 4 van de 5 sterren">
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-star" /></svg>
+    </span>
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Verschillende functies met een eigen, herkenbaar icoon">
+    ```html
+    <button type="button" aria-label="Toevoegen aan favorieten">
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-heart" /></svg>
+    </button>
+
+    <span aria-label="Beoordeling: 4 van de 5 sterren">
+      <svg aria-hidden="true"><use href="/assets/icons.svg#icon-star" /></svg>
+    </span>
+    ```
+
+</Guideline>
+
+Andersom geldt het ook: geef onderdelen die er hetzelfde uitzien ook dezelfde functie.
+
+**Wie kan dit oplossen:** een designer kiest per functie een eigen icoon en legt vast wat elk icoon betekent. Een developer voert die keuze door in de iconenset, zodat één icoon niet twee betekenissen krijgt.
+
+### Links naar dezelfde bestemming hebben verschillende linktekst
+
+Drie plekken op de website linken naar de contactpagina, maar de linktekst is telkens anders: "Contact", "Neem contact op" en "Contactgegevens". De bezoeker weet niet zeker of die links naar dezelfde plek gaan. Een screenreadergebruiker die een lijst van links opvraagt, ziet drie verschillende teksten voor dezelfde bestemming.
+
+**Hoe te testen:** zoek de links die naar dezelfde pagina gaan. Hebben ze dezelfde linktekst, of twijfel je door het verschil over de bestemming?
+
+<Guideline appearance="dont" title="Dezelfde bestemming met verschillende linktekst">
+  ```html
+  <a href="/contact">Contact</a>
+  <a href="/contact">Neem contact op</a>
+  <a href="/contact">Contactgegevens</a>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Dezelfde bestemming met dezelfde linktekst">
+  ```html
+  <a href="/contact">Contact</a>
+  <a href="/contact">Contact</a>
+  <a href="/contact">Contact</a>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker gebruikt dezelfde linktekst voor links die naar dezelfde bestemming gaan. Vraagt de context echt om een andere formulering, houd de bestemming dan herkenbaar in de linktekst.
+
+### Links naar hetzelfde soort document worden verschillend benoemd
+
+De link om een document te downloaden heet op de ene pagina "Download het formulier", op de andere "Bevestigingsdocument" en ergens anders "Bekijk document". Het gaat telkens om dezelfde actie: een document openen of downloaden. Door de wisselende tekst weet een bezoeker niet dat het steeds om hetzelfde soort link gaat.
+
+**Hoe te testen:** verzamel de links naar documenten op de website. Beschrijven ze dezelfde actie op dezelfde manier?
+
+<Guideline appearance="dont" title="Dezelfde actie met wisselende tekst">
+  ```html
+  <a href="/aanvraagformulier">Download het formulier</a>
+  <a href="/bevestiging">Bevestigingsdocument</a>
+  <a href="/voorwaarden">Bekijk document</a>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Dezelfde actie met een vast patroon">
+  ```html
+  <a href="/aanvraagformulier">Aanvraagformulier downloaden</a>
+  <a href="/bevestiging">Bevestiging downloaden</a>
+  <a href="/voorwaarden">Voorwaarden downloaden</a>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker spreekt een vast patroon af voor deze links, bijvoorbeeld "naam van het document downloaden", en past dat overal toe.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Loop een proces met meerdere stappen door, zoals een formulier of een aanvraag. Let op de knoppen die terugkomen, zoals verder, terug en verzenden. Heten ze op elke stap hetzelfde?
+2. Bekijk onderdelen die op elke pagina staan, zoals de zoekfunctie, de taalwissel en deelknoppen. Hebben ze overal dezelfde tekst?
+3. Let op iconen. Betekent een icoon overal hetzelfde, en heeft dezelfde functie overal hetzelfde icoon?
+4. Volg links die naar dezelfde pagina lijken te gaan. Hebben ze dezelfde linktekst?
+5. Controleer of links naar documenten overal op dezelfde manier zijn geschreven.
+
+### Voor developers
+
+1. Maak een overzicht van de terugkerende onderdelen, zoals knoppen, iconen en zoekvelden. Vergelijk hun tekst en toegankelijke naam over meerdere pagina's.
+2. Controleer de toegankelijke naam van icoonknoppen in de <span lang="en">Accessibility</span>-tab van de DevTools. Heeft dezelfde functie overal dezelfde naam?
+3. Zoek in de code naar knoppen en links met dezelfde functie die los van elkaar zijn opgebouwd. Onderdelen die uit één gedeelde component komen, blijven vanzelf consistent.
+4. Let op links die naar dezelfde `href` wijzen maar verschillende linktekst hebben.
+5. Vergelijk de onderdelen handmatig of met een eigen overzicht. Automatische controles herkennen dit bijna niet, omdat consistentie over meerdere pagina's gaat.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -69,16 +228,13 @@ Praktisch betekent dit:
 - Formulieren: [Duidelijke buttontekst die beschrijft wat de button doet](/richtlijnen/formulieren/buttons/duidelijk-buttontekst/)
 - Content: [Toegankelijke linkteksten](/richtlijnen/content/tekstopmaak/linkteksten/)
 
-## Hoe te testen
+## Gerelateerde succescriteria
 
-- Ga door een website en identificeer herhalende onderdelen.
-- Controleer of onderdelen die hetzelfde doen, ook hetzelfde herkenbaar zijn. Controleer daarbij zowel de tekst die je ziet, wat in de code staat en visuele kenmerken zoals iconen, kleur en vormgeving.
-
-## Tips
-
-- Deze richtlijn kan ook omgedraaid worden. Zorg ervoor dat onderdelen die hetzelfde te herkennen zijn ook zo veel mogelijk dezelfde functie hebben!
-- Namen hoeven niet letterlijk gekopieerd te worden. Soms is het belangrijk dat het patroon herhaald wordt. Pagina 1 heeft misschien een link genaamd "Lees pagina 2". Pagina 2 hoeft niet letterlijk diezelfde link te hebben, maar een link terug naar pagina 1 moet dan wel hetzelfde patroon volgen: "Lees pagina 1". Zo wil je bijvoorbeeld ook overal kiezen voor het werkwoord printen of afdrukken. Dit is beter dan deze werkwoorden door elkaar heen gebruiken.
-- Laat de naam die je ziet overeenkomen met de naam in de code. Dat maakt controleren niet alleen makkelijker, maar is ook praktisch voor [2.5.3 Label in Naam](/wcag/2.5.3/)
+- [2.4.4 Linkdoel (in context)](/wcag/2.4.4/): de linktekst maakt duidelijk waar de link heen gaat. Consistente identificatie vraagt daarbovenop dat dezelfde bestemming overal dezelfde linktekst krijgt.
+- [2.4.6 Koppen en labels](/wcag/2.4.6/): koppen en labels beschrijven het onderwerp of het doel. Consistente identificatie vraagt dat zo'n beschrijvende naam voor dezelfde functie overal gelijk blijft.
+- [2.5.3 Label in Naam](/wcag/2.5.3/): de zichtbare tekst van een knop of link komt terug in de toegankelijke naam. Houd beide namen gelijk, dan is consistentie ook makkelijker te controleren.
+- [3.2.3 Consistente navigatie](/wcag/3.2.3/): navigatie die op meerdere pagina's terugkomt, staat overal in dezelfde volgorde. Consistente navigatie gaat over de plek van onderdelen, consistente identificatie over hun naam en vormgeving.
+- [4.1.2 Naam, rol, waarde](/wcag/4.1.2/): elk onderdeel heeft een toegankelijke naam en een rol die hulpsoftware kan doorgeven. Consistente identificatie vraagt dat die naam voor dezelfde functie overal hetzelfde is.
 
 ## Gebruikersonderzoek
 
@@ -90,12 +246,6 @@ Praktisch betekent dit:
 - Nederlandse vertaling van het WCAG-succescriterium: [3.2.4 Consistente identificatie](https://www.w3.org/Translations/WCAG22-nl/#consistent-identification).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.2.4 Consistent Identification</span>](https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.2.4 Consistent Identification</span>](https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
