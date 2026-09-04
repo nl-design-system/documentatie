@@ -5,21 +5,27 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 1.1.1 Niet-tekstuele content
 pagination_label: WCAG-succescriterium 1.1.1 Niet-tekstuele content
-description: Zorg bij niet-tekstuele content voor een tekstalternatief.
+description: Alles wat geen tekst is, heeft een tekstalternatief nodig dat hetzelfde doel dient.
 slug: 1.1.1
 conformance_level: Niveau A
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - waarneembaar
   - tekstalternatieven
   - perceivable
   - text alternatives
   - non-text content
+  - alt-tekst
+  - afbeelding
+  - icoon
+  - screenreader
+  - decoratief
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
@@ -32,9 +38,334 @@ import Summary from "./summaries/_1.1.1-summary.md";
   {"WCAG-succescriterium 1.1.1 Niet-tekstuele content"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
+
+Er zijn een paar uitzonderingen. Decoratieve afbeeldingen hoeven geen tekstalternatief te hebben. Bijvoorbeeld sierlijnen, achtergrondpatronen of sfeerbeelden die geen informatie toevoegen. Markeer ze wel zo dat een screenreader ze negeert.
+
+Bij formulierelementen en knoppen die een afbeelding of icoon bevatten, moet het tekstalternatief het doel beschrijven. Schrijf dus niet "afbeelding van een vergrootglas", maar "Zoeken".
+
+Voor <span lang="en">CAPTCHA's</span> gelden aanvullende eisen. Het tekstalternatief beschrijft het doel, en er moet een alternatieve vorm zijn voor wie de primaire variant niet kan gebruiken. Bijvoorbeeld een audio-alternatief naast een visuele test.
+
+## Veelgemaakte fouten
+
+### Afbeelding heeft geen alt-attribuut
+
+Als een `<img>` geen `alt`-attribuut heeft, leest een screenreader vaak de bestandsnaam voor. Dat levert onbegrijpelijke resultaten op zoals "DSC_0042.jpg" of "header-banner-v3-final.png". De bezoeker heeft dan geen idee wat er op de afbeelding staat.
+
+**Hoe te testen:** inspecteer de afbeelding in DevTools. Heeft het element een `alt`-attribuut? Een ontbrekend `alt`-attribuut is altijd een fout. Let op: `alt=""` is iets anders. Dat is bewust leeg voor decoratieve afbeeldingen.
+
+<Guideline appearance="dont" title="Afbeelding zonder alt-attribuut.">
+
+```html
+<img src="team-foto.jpg" />
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Afbeelding met een beschrijvende alt-tekst.">
+
+```html
+<img src="team-foto.jpg" alt="Het ontwikkelteam tijdens de hackathon van 2024" />
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur vult de alt-tekst in via het CMS.
+- Een developer zorgt dat het `alt`-attribuut altijd in de template staat, zodat het CMS er een waarde aan kan koppelen.
+
+### Alt-tekst beschrijft de afbeelding niet
+
+Een alt-tekst als "afbeelding" of "foto" is niet zinvol. De screenreader meldt al dat het een afbeelding is. De alt-tekst moet beschrijven wat er op de afbeelding te zien is, of welk doel de afbeelding dient in de context van de pagina.
+
+**Hoe te testen:** lees de alt-tekst zonder de afbeelding te bekijken. Begrijp je wat de afbeelding laat zien en waarom die op de pagina staat?
+
+<Guideline appearance="dont" title="Alt-tekst beschrijft de afbeelding niet.">
+
+```html
+<img src="grafiek-omzet.png" alt="afbeelding" />
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Alt-tekst beschrijft de inhoud van de afbeelding.">
+
+```html
+<img src="grafiek-omzet.png" alt="Staafdiagram van de kwartaalomzet 2024: Q1 €2,1M, Q2 €2,4M, Q3 €1,9M, Q4 €3,0M" />
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur schrijft een alt-tekst die past bij de context van de pagina.
+
+### Decoratieve afbeelding heeft een beschrijvende alt-tekst
+
+Sfeerbeelden en decoratieve elementen die geen informatie toevoegen, krijgen een lege alt-tekst met `alt=""`. Als je er toch een beschrijving aan geeft, leest de screenreader die voor. Dat leidt de bezoeker af van de inhoud die er wél toe doet.
+
+**Hoe te testen:** stel jezelf de vraag: als ik deze afbeelding weglaat, mist de bezoeker dan informatie? Zo niet, dan is de afbeelding decoratief en hoort `alt=""` leeg te zijn.
+
+<Guideline appearance="dont" title="Decoratieve afbeelding met een beschrijvende alt-tekst.">
+
+```html
+<img src="scheidingslijn.svg" alt="decoratieve lijn" />
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Decoratieve afbeelding met een lege alt-tekst.">
+
+```html
+<img src="scheidingslijn.svg" alt="" />
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur of developer maakt de alt-tekst leeg.
+
+### Icoonknop zonder toegankelijke naam
+
+Een knop die alleen een icoon bevat, heeft geen zichtbare tekst. Bijvoorbeeld een hamburgermenu, een kruisje om te sluiten of een prullenbak om te verwijderen. Zonder een toegankelijke naam weet iemand met een screenreader niet wat de knop doet.
+
+**Hoe te testen:** open de Accessibility-tab in DevTools en inspecteer de knop. Heeft het element een toegankelijke naam die het doel beschrijft?
+
+<Guideline appearance="dont" title="Icoonknop zonder toegankelijke naam.">
+
+```html
+<button>
+  <svg viewBox="0 0 24 24">
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+  </svg>
+</button>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Icoonknop met aria-label als toegankelijke naam.">
+
+```html
+<button aria-label="Menu openen">
+  <svg aria-hidden="true" viewBox="0 0 24 24">
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+  </svg>
+</button>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een `aria-label` toe aan de knop en markeert de SVG met `aria-hidden="true"`.
+
+### Informatieve SVG zonder tekstalternatief
+
+<span lang="en">Inline</span> SVG's die informatie overbrengen, worden standaard niet door screenreaders beschreven. Bijvoorbeeld diagrammen, iconen met betekenis en illustraties. Zonder `role="img"` en een `aria-label` of `<title>` kondigt een screenreader de SVG niet aan.
+
+**Hoe te testen:** inspecteer de SVG in de Accessibility-tab van DevTools. Heeft het element een toegankelijke naam?
+
+<Guideline appearance="dont" title="Informatieve SVG zonder role en aria-label.">
+
+```html
+<svg viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="40" fill="green" />
+</svg>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Informatieve SVG met role='img' en aria-label.">
+
+```html
+<svg viewBox="0 0 100 100" role="img" aria-label="Status: actief">
+  <circle cx="50" cy="50" r="40" fill="green" />
+</svg>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt `role="img"` en een `aria-label` toe aan de SVG.
+
+### Informatieve afbeelding ingeladen via CSS
+
+Afbeeldingen die via CSS `background-image` worden ingeladen, komen niet in de HTML voor. Een screenreader kondigt ze niet aan en de bezoeker mist die informatie. Bijvoorbeeld bij een logo, een kaart of een infographic.
+
+**Hoe te testen:** schakel CSS uit in de browser. Verdwijnt er informatie van de pagina? Dan is die informatie niet beschikbaar voor screenreaders.
+
+<Guideline appearance="dont" title="Logo als CSS-achtergrondafbeelding zonder alternatief.">
+
+```html
+<div class="logo" style="background-image: url('logo.png'); width: 100px; height: 50px;"></div>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Informatieve afbeelding als img-element met alt-tekst.">
+
+```html
+<img src="logo.png" alt="Logo gemeente Amsterdam" />
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de CSS-achtergrondafbeelding door een `<img>`-element met een `alt`-tekst.
+
+### Afbeelding van tekst zonder volledige alt-tekst
+
+Als tekst als afbeelding wordt weergegeven, moet de volledige tekst in het `alt`-attribuut staan. Bijvoorbeeld bij een flyer, een menu of een screenshot met tekst. Iemand met een screenreader kan de tekst in de afbeelding niet lezen.
+
+**Hoe te testen:** vergelijk de tekst in de afbeelding met de alt-tekst. Staat alle zichtbare tekst in het `alt`-attribuut?
+
+<Guideline appearance="dont" title="Afbeelding van tekst met onvolledige alt-tekst.">
+
+```html
+<img src="aanbieding.jpg" alt="aanbieding" />
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Afbeelding van tekst met de volledige tekst als alt-tekst.">
+
+```html
+<img src="aanbieding.jpg" alt="Weekaanbieding: 20% korting op alle winterjassen, geldig t/m 31 januari" />
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur schrijft de volledige tekst uit de afbeelding als alt-tekst.
+
+### Complexe grafiek met alleen een korte alt-tekst
+
+Een grafiek, diagram of infographic bevat vaak te veel informatie voor een kort `alt`-attribuut. Een korte beschrijving als alt-tekst is een begin. De volledige data moet ook beschikbaar zijn, bijvoorbeeld in een tabel direct na de grafiek.
+
+**Hoe te testen:** lees alleen de alt-tekst. Bevat die genoeg informatie om de grafiek te begrijpen? Zo niet, is er een uitgebreidere beschrijving beschikbaar op de pagina?
+
+<Guideline appearance="dont" title="Complexe grafiek met alleen een vage alt-tekst.">
+
+```html
+<img src="resultaten.png" alt="Grafiek met onderzoeksresultaten" />
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Korte alt-tekst en uitgebreide beschrijving in een tabel.">
+
+```html
+<figure>
+  <img
+    src="resultaten.png"
+    alt="Staafdiagram: tevredenheidsscores per afdeling, zie tabel hieronder"
+    aria-describedby="tev-tabel"
+  />
+</figure>
+<table id="tev-tabel">
+  <caption>
+    Tevredenheidsscores per afdeling
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Afdeling</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Verkoop</td>
+      <td>8,2</td>
+    </tr>
+    <tr>
+      <td>Ontwikkeling</td>
+      <td>7,6</td>
+    </tr>
+    <tr>
+      <td>Support</td>
+      <td>6,9</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur schrijft een korte alt-tekst die verwijst naar de tabel onder de afbeelding.
+- Een developer biedt de data als tabel aan in de HTML, zodat de webredacteur er via de alt-tekst aan kan refereren.
+
+### Gelinkte afbeelding beschrijft de afbeelding in plaats van de bestemming
+
+Als een afbeelding het enige element in een link is, moet de alt-tekst beschrijven waar de link naartoe gaat. Beschrijf niet wat er op de afbeelding staat. De afbeelding dient hier als interactief element, niet als informatief element.
+
+**Hoe te testen:** lees de alt-tekst. Begrijp je waar de link naartoe gaat, zonder de afbeelding te zien?
+
+<Guideline appearance="dont" title="Alt-tekst beschrijft de afbeelding, niet de bestemming van de link.">
+
+```html
+<a href="/producten/schoenen">
+  <img src="sneakers.jpg" alt="Foto van witte sneakers" />
+</a>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Alt-tekst beschrijft de bestemming van de link.">
+
+```html
+<a href="/producten/schoenen">
+  <img src="sneakers.jpg" alt="Bekijk onze schoenen" />
+</a>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een webredacteur past de alt-tekst aan zodat die het linkdoel beschrijft.
+
+### Video of audio zonder beschrijving van het doel
+
+<span lang="en">Embedded</span> video- en audiospelers zonder beschrijving worden door een screenreader alleen
+aangekondigd als "video" of "audio". De bezoeker weet dan niet wat erin staat. Het tekstalternatief hoeft niet de
+volledige inhoud te beschrijven. Dat valt onder [1.2.1 Louter-geluid en louter-videobeeld (vooraf
+opgenomen)](/wcag/1.2.1/) en [1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](/wcag/1.2.3/). Het
+tekstalternatief moet wel aangeven wat de media bevat.
+
+**Hoe te testen:** inspecteer het video- of audio-element in de Accessibility-tab van DevTools. Heeft het element een toegankelijke naam die beschrijft wat de media bevat?
+
+<Guideline appearance="dont" title="Video zonder toegankelijke naam.">
+
+```html
+<video src="introductie.mp4"></video>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Video met een aria-label als toegankelijke naam.">
+
+```html
+<video src="introductie.mp4" aria-label="Introductievideo: rondleiding door de applicatie"></video>
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een `aria-label` toe aan het media-element. Zie ook [Videobeschrijving](/richtlijnen/content/video/beschrijving/).
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Bekijk elke afbeelding op de pagina. Klik met de rechtermuisknop en kies "Inspecteren". Heeft de afbeelding een `alt`-attribuut? Beschrijft de tekst wat je op de afbeelding ziet?
+2. Bekijk knoppen en links met alleen een icoon. Wijs erop met je muis: verschijnt er een tooltip met een beschrijving? Zo niet, controleer in DevTools of het element een toegankelijke naam heeft.
+3. Gebruik de [alt-beslisboom](https://www.200ok.nl/tips/afbeeldingen/) van 200 OK om te bepalen welk type alt-tekst bij een afbeelding past.
+
+### Voor developers
+
+1. Inspecteer alle `<img>`-elementen in DevTools. Controleer of elk element een `alt`-attribuut heeft.
+2. Inspecteer <span lang="en">inline</span> SVG's. Informatieve SVG's hebben `role="img"` en een `aria-label` of `<title>` nodig. Decoratieve SVG's krijgen `aria-hidden="true"`.
+3. Zoek naar `background-image` in de CSS. Controleer of afbeeldingen die via CSS worden ingeladen geen informatie overbrengen. Zo ja, vervang ze door een `<img>`-element.
+4. Controleer icoonknoppen en icoonlinks in de Accessibility-tab van DevTools. Heeft elk interactief element een toegankelijke naam?
+5. Gebruik een geautomatiseerde tool zoals <span lang="en">axe DevTools</span>, <span lang="en">WAVE</span> of <span lang="en">Lighthouse</span>. Deze vinden ontbrekende alt-attributen. Of de alt-tekst inhoudelijk klopt, moet je handmatig controleren.
+6. Test met een screenreader (<span lang="en">VoiceOver</span> op macOS, <span lang="en">NVDA</span> op Windows). Beweeg door de pagina met <kbd>Tab</kbd> en de pijltjestoetsen, en luister of afbeeldingen en iconen zinvol worden beschreven.
+
+## Gerelateerde succescriteria
+
+- [1.4.5 Afbeeldingen van tekst](/wcag/1.4.5/): als tekst als afbeelding wordt weergegeven, gelden aanvullende eisen.
+- [4.1.2 Naam, rol, waarde](/wcag/4.1.2/): interactieve elementen moeten een toegankelijke naam, rol en waarde hebben.
 
 ## Gerelateerde NL Design System-richtlijnen
 
@@ -42,70 +373,21 @@ import Summary from "./summaries/_1.1.1-summary.md";
 - Formulieren: [De toegankelijke naam van een button](/richtlijnen/formulieren/buttons/toegankelijke-naam).
 - Content: [Afbeeldingen](/richtlijnen/content/afbeeldingen/).
 - Content: [Kantoorbestanden](/richtlijnen/content/kantoorbestanden).
-- Content: [Video beschrijving](/richtlijnen/content/video/beschrijving).
+- Content: [Videobeschrijving](/richtlijnen/content/video/beschrijving).
 
-## Bronnen
+## Relevante bronnen
 
-- De [alt-beslisboom](https://www.200ok.nl/tips/afbeeldingen/) van 200 OK: wanneer en hoe kun je een alternatieve tekst toevoegen aan een afbeelding.
+- [alt-beslisboom van 200 OK](https://www.200ok.nl/tips/afbeeldingen/): wanneer en hoe je een alternatieve tekst toevoegt aan een afbeelding.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## Hoe te testen
+## W3C-referenties
 
-### Alternatieve teksten op afbeeldingen
-
-Inspecteer in de gegenereerde HTML-code van de webpagina de `<img>`-elementen, bijvoorbeeld met een [browser inspector](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
-
-Check voor afbeeldingen:
-
-- het `alt`-attribuut moet altijd aanwezig zijn, het kan zonder waarde (leeg) zijn:
-  ```html
-  <img src="img-url" alt="" />
-  ```
-  of met een alt-tekst
-  ```html
-  <img src="img-url" alt="wit konijn" />
-  ```
-- als een afbeelding betekenisvol is, moet de alt-tekst het doel ervan beschrijven.
-- als een afbeelding decoratief is, kan het alt-attribuut leeg zijn: `alt=""`. Een alt-tekst toevoegen voor een afbeelding die decoratief is leidt niet tot afkeuring, een afbeelding kan naast tekst ook emotie overdragen. Lees hierover, de post van [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-emotion-rich-images/) van Léonie Watson en het bericht van [Eric Eggert op Mastodon](https://yatil.social/@yatil/111974572979919177).
-- het alt-attribuut kan leeg zijn als de betekenis van de afbeelding vlak bij de afbeelding in tekst staat.
-- bevat een afbeelding tekst, die informatie toevoegt aan de content, dan moet deze tekst opgenomen zijn in de alt-tekst.
-
-Controleer voor afbeeldingen in links en buttons:
-
-- de alt-tekst van een afbeelding in een link moet het **doel van de link** beschrijven.
-- de alt-tekst van een afbeelding in een button moet **de actie** beschrijven.
-- als zowel de inhoud van de afbeelding als het doel of de actie even belangrijk zijn, moet de alternatieve tekst **beide** beschrijven. Bijvoorbeeld bij een link op een logo.
-- als een afbeelding decoratief is, kan het alt-attribuut leeg zijn: `alt=""`, maar de toegankelijke naam van een link of button moet volledig betekenisvol zijn. Bijvoorbeeld:
-
-```html
-<a href="url">
-  Meer informatie over de intocht van Sinterklaas
-  <img src="pijltje-rechts.svg" alt="" />
-</a>
-```
-
-Niet doen:
-
-```html
-<!-- Foute code, niet gebruiken -->
-<a href="url">
-  <img src="iDEAL.svg" alt="" />
-</a>
-```
-
-### Benoem waar een video of audio over gaat
-
-Geef tekstalternatief voor een video of audio zodat de bezoeker weet waar deze over gaat. Dan kan de bezoeker al dan niet besluiten de video of audio af te spelen. Dit door bijvoorbeeld een `title`-attribuut te geven aan de iframe-embed. Of door het onderwerp te beschrijven in de begeleidende tekst of een kopje erboven.
-
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">1.1.1 Non-text Content</span>](https://www.w3.org/TR/WCAG22/#non-text-content).
-- Nederlandse vertaling van het WCAG-succescriterium: [1.1.1 Niet-tekstuele content](https://www.w3.org/Translations/WCAG22-nl/#non-text-content).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 1.1.1 Non-text Content</span>](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 1.1.1: Non-text Content</span>](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html).
+- [WCAG 2.2: Succescriterium 1.1.1 Niet-tekstuele content](https://www.w3.org/Translations/WCAG22-nl/#non-text-content): de officiële Nederlandstalige vertaling van het succescriterium.
+- [<span lang="en">Understanding SC 1.1.1: Non-text Content</span>](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html): de W3C-uitleg bij het succescriterium, met technieken en voorbeelden (Engels).
+- [<span lang="en">Quick Reference 1.1.1 Non-text Content</span>](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content): snelreferentie met technieken (Engels).
 
 <SpotlightSection>
   <Markdown omitH1 headinglevel={3}>
