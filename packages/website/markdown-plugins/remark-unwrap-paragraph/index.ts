@@ -8,10 +8,12 @@ import { visit, SKIP } from 'unist-util-visit';
  * the text flows directly into the component's `<p>`.
  */
 export function remarkUnwrapParagraph() {
-  const tagName = 'Paragraph';
+  const tagNames = ['Paragraph', 'Link'];
 
   function matchesParent(parent) {
-    return (parent.type === 'mdxJsxFlowElement' || parent.type === 'mdxJsxTextElement') && parent.name === tagName;
+    return (
+      (parent.type === 'mdxJsxFlowElement' || parent.type === 'mdxJsxTextElement') && tagNames.includes(parent.name)
+    );
   }
 
   return (tree) => {
