@@ -2,9 +2,7 @@
   {
     "uuid": "1bfd50e8-d845-492b-9553-51cae7dafd5b",
     "isoDateTime": "2026-10-26T12:00:00.000Z",
-    "speakers": [
-      "DrStephDriver"
-    ],
+    "speakers": ["DrStephDriver"],
     "subject": "Tracking conformance data within the code-base",
     "language": {
       "abbr": "EN",
@@ -16,10 +14,7 @@
   {
     "uuid": "b919f274-381c-41db-9d1d-cc3b6934ce93",
     "isoDateTime": "2026-10-26T14:00:00.000Z",
-    "speakers": [
-      "EricVanMullekom",
-      "MiekeTenDam"
-    ],
+    "speakers": ["EricVanMullekom", "MiekeTenDam"],
     "subject": "Digitale toegankelijkheid van kaartviewers",
     "language": {
       "abbr": "NL",
@@ -31,9 +26,7 @@
   {
     "uuid": "a23217db-b17d-4e97-ad46-1fd7d113c567",
     "isoDateTime": "2026-10-27T14:00:00.000Z",
-    "speakers": [
-      "MarionCouesnon"
-    ],
+    "speakers": ["MarionCouesnon"],
     "subject": "Switching design systems without compromising accessibility",
     "language": {
       "abbr": "EN",
