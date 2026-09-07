@@ -10,7 +10,8 @@
       "abbr": "EN",
       "description": "English"
     },
-    "videoId": null
+    "videoId": null,
+    "icalLink": null
   },
   {
     "uuid": "b919f274-381c-41db-9d1d-cc3b6934ce93",
@@ -24,7 +25,8 @@
       "abbr": "NL",
       "description": "Nederlands"
     },
-    "videoId": null
+    "videoId": null,
+    "icalLink": null
   },
   {
     "uuid": "a23217db-b17d-4e97-ad46-1fd7d113c567",
@@ -37,6 +39,7 @@
       "abbr": "EN",
       "description": "English"
     },
-    "videoId": null
+    "videoId": null,
+    "icalLink": null
   }
 ]
