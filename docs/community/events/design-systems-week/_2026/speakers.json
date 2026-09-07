@@ -1,6 +1,6 @@
 {
   "DrStephDriver": {
-    "name": "Dr Steph Driver - Publishing Technologies Developer",
+    "name": "Dr Steph Driver",
     "organisation": "Open Library of Humanities",
     "image": {
       "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-DrStephDriver.jpg",
@@ -13,7 +13,7 @@
     "language": "en"
   },
   "MarionCouesnon": {
-    "name": "Marion Couesnon - Accessibility designer (CPWA)",
+    "name": "Marion Couesnon",
     "organisation": "Digitalservice GmbH des Bundes",
     "image": {
       "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MarionCouesnon.jpg",
@@ -26,7 +26,7 @@
     "language": "en"
   },
   "EricVanMullekom": {
-    "name": "Eric van Mullekom - Product Owner Generic Geo Services",
+    "name": "Eric van Mullekom",
     "organisation": "Kadaster",
     "image": {
       "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-EricVanMullekom.jpg",
@@ -38,7 +38,7 @@
     "language": "nl"
   },
   "MiekeTenDam": {
-    "name": "Mieke ten Dam - Software Engineer",
+    "name": "Mieke ten Dam",
     "organisation": "Kadaster",
     "image": {
       "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MiekeTenDam.jpg",
