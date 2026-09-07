@@ -46,6 +46,15 @@ import settings from "../settings.json";
   )}
 </ActionGroup>
 
+{!settings.sessionsAreFinal && (<>
+
+<Paragraph>
+  The timetable is not yet final. The sessions will be further developed and added in the coming weeks. Keep an eye on this
+  page for updates.
+</Paragraph>
+
+</>)}
+
 {/* Vul in per sessie */}
 
 <DSWSession
