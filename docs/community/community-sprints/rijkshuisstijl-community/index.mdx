@@ -17,7 +17,7 @@ keywords:
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { ActionGroup } from "@components/action-group/action-group";
 
 # Community Sprint: Rijkshuisstijl Community
 
@@ -141,7 +141,7 @@ We organiseren de volgende vaste momenten om samen te komen:
 
 <ActionGroup>
   <ButtonLink href="/community/community-sprints/rijkshuisstijl-community/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight />
+    {"Meld je aan"} <IconChevronRight slot="icon-end" />
   </ButtonLink>
 </ActionGroup>
 

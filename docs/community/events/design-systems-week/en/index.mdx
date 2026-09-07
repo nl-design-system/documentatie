@@ -16,7 +16,9 @@ image_alt: NL Design System Design Systems Week 2026 26-29 October, online
 ---
 
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonLink, ButtonGroup as ActionGroup, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ActionGroup } from "@components/action-group/action-group";
+import { Paragraph } from "@components/paragraph/paragraph";
 import settings from "../settings.json";
 
 export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappening;
@@ -25,20 +27,20 @@ export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappe
 
 {!!isUpComingOrHappening && (<>
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   NL Design System is organising the Design Systems Week for the {settings.en.edition} time. It will feature a number of
   short talks about the how and why of design systems. All online. From {settings.en.dateRange}, we will cover subjects
   like managing design systems, integrating accessibility, user research and code.
 </Paragraph>
 
 <ActionGroup>
-  <ButtonLink href={`/events/design-systems-week/en/sign-up`} appearance="primary-action-button">
+  <ButtonLink href={`/events/design-systems-week/en/sign-up`} appearance="primary-action">
     {"Sign up"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
-  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="secondary-action-button">
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="secondary-action">
     {"View the Program"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
 </ActionGroup>
 
@@ -46,7 +48,7 @@ export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappe
 
 {!isUpComingOrHappening && (<>
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   Design Systems Week is an online event organized by NL Design System. During this week, several short sessions are
   offered in which various (international) organizations share how and why they use design systems. The goal is to bring
   together designers, developers, and other professionals working on digital government services to exchange experiences

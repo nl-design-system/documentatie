@@ -1,0 +1,20 @@
+---
+title: Paragraph unwrap
+description: Test that markdown inside a Paragraph component is unwrapped to avoid nested p tags
+unlisted: true
+---
+
+import { Paragraph } from "@nl-design-system-candidate/paragraph-react";
+import TestPageNote from "./_test-page-note.md";
+
+{/* @license CC0-1.0 */}
+
+Tests whether a paragraph inside a Paragraph component is unwrapped to avoid nested p tags
+
+<TestPageNote />
+
+<Paragraph purpose="lead">
+
+This text should not be wrapped in a nested paragraph.
+
+</Paragraph>
