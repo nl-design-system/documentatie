@@ -1,1 +1,52 @@
-{}
+{
+  "StephDriver": {
+    "name": "Dr Steph Driver - Publishing Technologies Developer",
+    "organisation": "Open Library of Humanities",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-StephDriver.png",
+      "alt": "Steph Driver"
+    },
+    "description": {
+      "en": "Steph is the accessibility-specialist developer at the Open Library of Humanities.  As an assistive technology user herself, she is passionate about making open access truly accessible for everyone. She combines deep technical expertise with a passion for education, helping teams develop smarter workflows and innovative accessibility solutions. With a background spanning natural sciences, creative writing, technology and disability-activism, Steph brings a unique perspective to inclusive digital design.",
+      "nl": "Steph is ontwikkelaar en specialist op het gebied van toegankelijkheid bij de Open Library of Humanities. Als gebruiker van ondersteunende technologie zet zij zich vol passie in om open access voor iedereen werkelijk toegankelijk te maken. Ze combineert diepgaande technische expertise met een passie voor onderwijs en helpt teams bij het ontwikkelen van slimmere werkprocessen en innovatieve oplossingen voor toegankelijkheid. Met een achtergrond in de natuurwetenschappen, creatief schrijven, technologie en activisme rondom handicaps brengt Steph een uniek perspectief in op inclusief digitaal ontwerp."
+    },
+    "language": "en"
+  },
+  "MarionCouesnon": {
+    "name": "Marion Couesnon - Accessibility designer (CPWA)",
+    "organisation": "Digitalservice GmbH des Bundes",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MarionCouesnon.png",
+      "alt": "Marion Couesnon"
+    },
+    "description": {
+      "en": "Marion is an accessibility designer based in Berlin. She has been passionate about design since 2011 and has specialised in accessibility since 2019. She currently works for DigitalService, a company owned by the German federal government. Within the organisation, she implements accessibility practices whilst contributing to the design of services, including the <a target=\"blank\" href=\"https://service.justiz.de\">Ministry of Justice’s online portal</a>. Outside of work, you might spot Marion at her boxing club or knitting on her sofa.",
+      "nl": "Marion is een ontwerper gespecialiseerd in toegankelijkheid, gevestigd in Berlijn. Ze is sinds 2011 gepassioneerd door design en heeft zich sinds 2019 toegelegd op toegankelijkheid. Momenteel werkt ze bij DigitalService, een bedrijf dat eigendom is van de Duitse federale overheid. Binnen de organisatie implementeert ze toegankelijkheidsmaatregelen en draagt ze bij aan het ontwerp van diensten, waaronder het <a target=\"blank\" href=\"https://service.justiz.de\">online portaal van het ministerie van Justitie</a>. Buiten haar werk kun je Marion tegenkomen bij haar boksclub of breiend op de bank."
+    },
+    "language": "en"
+  },
+  "EricVanMullekom": {
+    "name": "Eric van Mullekom - Product Owner Generic Geo Services",
+    "organisation": "Kadaster",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-EricVanMullekom.png",
+      "alt": "Eric van Mullekom"
+    },
+    "description": {
+      "nl": "Erik is sinds 2000 als projectmanager/product owner betrokken bij softwareontwikkeling, met oog voor techniek en gebruikersgemak. Bij het Kadaster is hij als Product Owner verantwoordelijk voor <a target=\"blank\" href=\"https://generiekegeocomponenten.nl\">generiekegeocomponenten.nl</a>, <a target=\"blank\" href=\"https://kaartenvannederland.nl\">kaartenvannederland.nl</a> en <a target=\"blank\" href=\"https://verbeterdekaart.nl\">terugmeldsysteem (o.a. verbeterdekaart.nl)</a>."
+    },
+    "language": "nl"
+  },
+  "MiekeTenDam": {
+    "name": "Mieke ten Dam - Software Engineer",
+    "organisation": "Kadaster",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MiekeTenDam.png",
+      "alt": "Mieke ten Dam"
+    },
+    "description": {
+      "nl": "Mieke werkt sinds 2019 bij het Kadaster als software engineer, met digitale toegankelijkheid als specialisme. Haar scrumteam ontwikkelt en beheert diverse websites, portals en applicaties, waaronder <a target=\"blank\" href=\"https://www.kadaster.nl\">www.kadaster.nl</a>, <a target=\"blank\" href=\"https://topokaarten.kadaster.nl\">topokaarten.kadaster.nl</a> en de zakelijke <a target=\"blank\" href=\"https://mijn.kadaster.nl\">mijn.kadaster.nl</a> omgeving."
+    },
+    "language": "nl"
+  }
+}
