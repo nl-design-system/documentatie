@@ -1,10 +1,10 @@
 {
-  "StephDriver": {
+  "DrStephDriver": {
     "name": "Dr Steph Driver - Publishing Technologies Developer",
     "organisation": "Open Library of Humanities",
     "image": {
-      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-StephDriver.jpg",
-      "alt": "Steph Driver"
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-DrStephDriver.jpg",
+      "alt": "Dr Steph Driver"
     },
     "description": {
       "en": "Steph is the accessibility-specialist developer at the Open Library of Humanities.  As an assistive technology user herself, she is passionate about making open access truly accessible for everyone. She combines deep technical expertise with a passion for education, helping teams develop smarter workflows and innovative accessibility solutions. With a background spanning natural sciences, creative writing, technology and disability-activism, Steph brings a unique perspective to inclusive digital design.",
