@@ -1,0 +1,80 @@
+---
+title: Code block
+description: Test colours of a code block
+unlisted: true
+---
+
+import TestPageNote from "./_test-page-note.md";
+
+{/* @license CC0-1.0 */}
+
+Tests the colours of a code block
+
+<TestPageNote />
+
+```js
+// js
+const x = 42; // the answer
+const isTrue = true;
+const string = "string";
+const url = new URL("https://nldesignsystem.nl");
+const regex = /^[foo|bar]$/;
+
+class Foo extends Bar {
+  run() {
+    return this.x + 1;
+  }
+}
+```
+
+```css
+/* css */
+:root {
+  --nl-variable: var(--nl-value);
+}
+
+a {
+  color: red;
+  margin: 0;
+}
+
+@media (width < 100px) {
+  a:hover {
+    color: green !important;
+  }
+}
+```
+
+```markup
+<!-- markup -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns:svg="http://www.w3.org/2000/svg">
+  <svg:rect width="100" alt="r &amp; d" />
+  <![CDATA[ raw <text> ]]>
+</html>
+```
+
+```typescript
+// typescript
+let n: number = Promise.resolve(0);
+
+interface MyInterface {
+  property: string;
+}
+
+export type MyType = Record<string, any>;
+```
+
+```tsx
+{
+  /* tsx */
+}
+<MyButton onClick={handleClick} />;
+```
+
+```diff
+  diff
+- const old = 1;
++ const new = 2;
+```
