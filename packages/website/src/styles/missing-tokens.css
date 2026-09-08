@@ -88,6 +88,11 @@
  * back to the community. Usually these are missing tokens with their proposed
  * value.
  */
+.nl-code,
+.nl-code-block {
+  font-variant-ligatures: none;
+}
+
 .rhc-card {
   /* rhc-card.inline-size */
   inline-size: 100%;
