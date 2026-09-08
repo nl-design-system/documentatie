@@ -27,6 +27,7 @@
   --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
   --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
   --ma-body-copy-items-max-inline-size: 65ch;
+  --utrecht-separator-block-size: var(--basis-size-5xs);
 }
 
 /**

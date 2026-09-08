@@ -60,7 +60,7 @@ export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappe
 
 ## Eerdere edities
 
-{!!isUpComingOrHappening && (`Dit is het ${settings.nl.edition} jaar dat NL Design System de Design Systems Week organiseert. Kun je niet wachten? Kijk dan de video's van voorgaande jaren terug!`)}
+{!!isUpComingOrHappening && <Paragraph>Dit is het {settings.nl.edition} jaar dat NL Design System de Design Systems Week organiseert. Kun je niet wachten? Kijk dan de video's van voorgaande jaren terug!</Paragraph>}
 
 {!isUpComingOrHappening && ("Kijk de video's van afgelopen jaren terug.")}
 
