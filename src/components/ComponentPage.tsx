@@ -1,7 +1,10 @@
 import { Heading, Link, LinkList, Paragraph, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import { Heading as NLHeading } from '@components/heading/heading';
+import { Paragraph as NLParagraph } from '@components/paragraph/paragraph';
 import clsx from 'clsx';
 import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
+import { Card as RhcCard } from '@components/card/card';
 import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
@@ -89,7 +92,61 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
             ({ name, value }) => urlMap.has(name) && URL.canParse(value) && new URL(value).protocol === 'https:',
           );
 
-          return (
+          return globalThis.isAstro ? (
+            <RhcCard
+              key={project.title}
+              heading={project.title.replace(/^Community/i, '')}
+              headingLevel={headingLevel as 1 | 2 | 3 | 4 | 5 | 6}
+              description={
+                <div className="ma-flow">
+                  <NLParagraph>
+                    <ComponentProgress
+                      checked={project.progress.value}
+                      unchecked={project.progress.max - project.progress.value}
+                    />
+                    {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
+                    <Link href={project.url}>{project.title} projectbord</Link>
+                  </NLParagraph>
+                  <div>
+                    {(links.length > 0 || frameworks.length > 0) && (
+                      <NLHeading level={Math.min(headingLevel + 1, 6) as 1 | 2 | 3 | 4 | 5 | 6}>
+                        Snel aan de slag
+                      </NLHeading>
+                    )}
+                    {links.length > 0 && (
+                      <LinkList
+                        links={links
+                          .filter((item) => !!urlMap.get(item.name))
+                          .map((item) => {
+                            const url = urlMap.get(item.name);
+                            return {
+                              children: url.desciption,
+                              icon: <BrandIcon brand={url.brand} />,
+                              href: item.value,
+                            };
+                          })}
+                      />
+                    )}
+                  </div>
+                  {frameworks.length > 0 &&
+                    frameworks.map(({ frameworkName, tasks }) => (
+                      <section key={frameworkName}>
+                        <NLHeading level={Math.min(headingLevel + 2, 6) as 1 | 2 | 3 | 4 | 5 | 6}>
+                          {alias} in {frameworkName}
+                        </NLHeading>
+                        <LinkList
+                          links={tasks.map((frameworkTask) => ({
+                            children: frameworkTask.description,
+                            icon: <BrandIcon brand={frameworkTask.brand} />,
+                            href: frameworkTask.value,
+                          }))}
+                        />
+                      </section>
+                    ))}
+                </div>
+              }
+            />
+          ) : (
             <Card key={project.title} className="ma-implementation-card">
               <CardContent>
                 <Heading level={headingLevel}>{project.title.replace(/^Community/i, '')}</Heading>
