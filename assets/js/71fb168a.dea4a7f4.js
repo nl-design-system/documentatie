@@ -1,4 +1,4 @@
-/*! For license information please see 71fb168a.174ea318.js.LICENSE.txt */
+/*! For license information please see 71fb168a.dea4a7f4.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [31399],
@@ -204,7 +204,7 @@
    s.d(n, { A: () => r });
   },
   51130(e) {
-   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"MX":false,"nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
+   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":false,"nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
   },
   59292(e, n, s) {
    s.d(n, { f: () => t.f });

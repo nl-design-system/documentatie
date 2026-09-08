@@ -13542,6 +13542,9 @@ html:not([data-theme]) .themedComponent--light_eHfq {
  inline-size: 100%;
  table-layout: auto;
 }
+.ma-session-table__header-cell {
+ word-break: normal;
+}
 .ma-session-table__speakers {
  display: flex;
  flex-direction: column;

@@ -11,7 +11,7 @@
    }
   },
   51130(e) {
-   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"MX":false,"nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
+   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":false,"nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
   },
   67106(e, s, i) {
    (i.r(s), i.d(s, { assets: () => c, contentTitle: () => d, default: () => u, frontMatter: () => o, metadata: () => t, toc: () => h }));
