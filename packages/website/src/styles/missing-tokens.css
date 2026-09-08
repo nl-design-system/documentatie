@@ -35,7 +35,7 @@
  */
 .nl-data-badge {
   --nl-data-badge-padding-inline: var(--basis-space-inline-sm);
-  --nl-data-badge-padding-block: var(--basis-space-none);
+  --nl-data-badge-padding-block: var(--basis-space-block-sm);
   --nl-data-badge-min-inline-size: var(--basis-size-sm);
   --nl-data-badge-min-block-size: var(--basis-size-xs);
   --nl-data-badge-line-height: var(--basis-text-line-height-md);
@@ -47,6 +47,10 @@
   --nl-data-badge-border-radius: var(--basis-border-radius-sm);
   --nl-data-badge-border-color: var(--basis-color-transparent);
   --nl-data-badge-background-color: var(--basis-color-default-bg-default);
+
+  align-items: center;
+  display: inline-flex !important;
+  gap: var(--basis-space-text-sm);
 }
 
 /**
@@ -119,7 +123,7 @@
 }
 
 /* The alignment of icons is off without the option to fix is via tokens */
-.utrecht-link-list__item .utrecht-link-list__link {
+.utrecht-page-footer .utrecht-link-list__item .utrecht-link-list__link {
   align-items: unset;
 }
 
