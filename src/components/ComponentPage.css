@@ -56,6 +56,8 @@
   --utrecht-link-list-link-column-gap: 0.25em;
   --utrecht-link-list-icon-inset-block-start: 0.25em;
   --nl-heading-level-4-margin-block-start: 1.25rem;
+  --utrecht-heading-4-margin-block-start: 1.25rem;
+  --utrecht-heading-5-margin-block-start: 1.25rem;
 }
 
 .ma-implementation-card .nl-heading--level-4:first-of-type {

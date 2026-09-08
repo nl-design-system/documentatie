@@ -123,7 +123,7 @@
 }
 
 /* The alignment of icons is off without the option to fix is via tokens */
-.utrecht-page-footer .utrecht-link-list__item .utrecht-link-list__link {
+.utrecht-link-list__item .utrecht-link-list__link {
   align-items: unset;
 }
 
