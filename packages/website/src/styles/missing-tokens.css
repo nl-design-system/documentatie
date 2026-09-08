@@ -56,7 +56,8 @@
 }
 
 .nl-code-block {
-  --nl-code-block-background-color: var(--prism-a11y-color-background); /* stylelint-disable-line */
+  --nl-code-block-background-color: var(--nlds-code-block-background-color);
+  --nl-code-block-color: var(--nlds-code-block-color);
 }
 
 .nlds-guideline--do {
