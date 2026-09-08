@@ -57,10 +57,16 @@ import settings from "./settings.json";
 
 </>)}
 
-{/* Vul in per dag */}
+{!settings.sessionsAreFinal && (<>
 
-{/* prettier-ignore */}
-{/*
+<Paragraph>
+  Het tijdschema is nog niet definitief. De sessies worden de komende weken verder uitgewerkt en toegevoegd. Houd deze
+  pagina in de gaten voor updates.
+</Paragraph>
+
+</>)}
+
+{/* Vul in per dag */}
 
 ## Maandag 26 oktober
 
@@ -93,8 +99,6 @@ import settings from "./settings.json";
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-29`))}
 />
-
-\*/}
 
 {!!settings.isHappening && (<>
 
