@@ -60,10 +60,16 @@ import settings from "../settings.json";
 
 </>)}
 
-{/* Vul in per dag */}
+{!settings.sessionsAreFinal && (<>
 
-{/* prettier-ignore */}
-{/*
+<Paragraph>
+  The timetable is not yet final. The sessions will be further developed and added in the coming weeks. Keep an eye on
+  this page for updates.
+</Paragraph>
+
+</>)}
+
+{/* Vul in per dag */}
 
 ## Monday, October 26
 
@@ -92,8 +98,6 @@ import settings from "../settings.json";
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-29`))}
 />
-
-\*/}
 
 {!!settings.isHappening && (<>
 
