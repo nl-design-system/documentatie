@@ -608,6 +608,12 @@ importers:
       '@utrecht/nav-list-css':
         specifier: 2.0.0
         version: 2.0.0
+      '@utrecht/note-css':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@utrecht/note-react':
+        specifier: 1.0.0
+        version: 1.0.0(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/ordered-list-css':
         specifier: 4.0.1
         version: 4.0.1
@@ -5299,6 +5305,16 @@ packages:
 
   '@utrecht/navigation-css@1.1.0':
     resolution: {integrity: sha512-2dOXz7RyCNgkouRiIsPYZoa6zPI0PrQP905ym8g9gNvUDu5yJ3qUucRyAS04hF+vatfUp0eKIKghDvUNoKbmyw==}
+
+  '@utrecht/note-css@1.0.0':
+    resolution: {integrity: sha512-muRBccnBatzi8yb7+oIOkmcdzbuzL5wBzWU1jdTn5O+RHlx3k5wbhtAEJs7oo9CDmbM/B8fVSQlr8kkKIr9pGw==}
+
+  '@utrecht/note-react@1.0.0':
+    resolution: {integrity: sha512-ITpmQ2F4s6Ey+tkPokD8HIrfQURtkrkQumjDRafKMlzu4IOcYtq1vW6JMoC1MhPEHWqb6rIyX7rzvxll69EHTA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/number-badge-css@3.0.1':
     resolution: {integrity: sha512-t1HwU+bRlerdFicFZa4w5xyZh00ihITUb2kxU11e9Vxb2D32VU1jBOMW8qtKpuiya5mPZJjGF0uc6ZyGPAdXTw==}
@@ -18329,6 +18345,16 @@ snapshots:
   '@utrecht/nav-list-css@2.0.0': {}
 
   '@utrecht/navigation-css@1.1.0': {}
+
+  '@utrecht/note-css@1.0.0': {}
+
+  '@utrecht/note-react@1.0.0(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/note-css': 1.0.0
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@utrecht/number-badge-css@3.0.1': {}
 

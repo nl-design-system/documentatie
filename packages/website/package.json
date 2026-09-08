@@ -75,6 +75,8 @@
     "@utrecht/link-css": "3.0.1",
     "@utrecht/link-list-css": "4.0.0",
     "@utrecht/nav-list-css": "2.0.0",
+    "@utrecht/note-css": "1.0.0",
+    "@utrecht/note-react": "1.0.0",
     "@utrecht/ordered-list-css": "4.0.1",
     "@utrecht/page-body-css": "2.0.0",
     "@utrecht/page-body-react": "1.0.11",
