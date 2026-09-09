@@ -7,7 +7,7 @@
   --ams-unordered-list-list-style-type: disc;
   --rhc-card-inline-size: 100% !important;
   --ma-estafette-badge-border-width: 1px;
-  --ma-mobile-menu-max-inline-size: 300px;
+  --ma-mobile-menu-max-inline-size: 400px;
   --ma-space-relative-block-6xl: 4em; /* 64px; */
   --ma-space-relative-block-5xl: 3em; /* 48px; */
   --ma-space-relative-block-4xl: 2em; /* 32px; */
@@ -27,6 +27,7 @@
   --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
   --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
   --ma-body-copy-items-max-inline-size: 65ch;
+  --utrecht-separator-block-size: var(--basis-size-5xs);
 }
 
 /**
@@ -34,7 +35,7 @@
  */
 .nl-data-badge {
   --nl-data-badge-padding-inline: var(--basis-space-inline-sm);
-  --nl-data-badge-padding-block: var(--basis-space-none);
+  --nl-data-badge-padding-block: var(--basis-space-block-sm);
   --nl-data-badge-min-inline-size: var(--basis-size-sm);
   --nl-data-badge-min-block-size: var(--basis-size-xs);
   --nl-data-badge-line-height: var(--basis-text-line-height-md);
@@ -46,6 +47,10 @@
   --nl-data-badge-border-radius: var(--basis-border-radius-sm);
   --nl-data-badge-border-color: var(--basis-color-transparent);
   --nl-data-badge-background-color: var(--basis-color-default-bg-default);
+
+  align-items: center;
+  display: inline-flex !important;
+  gap: var(--basis-space-text-sm);
 }
 
 /**
@@ -56,7 +61,8 @@
 }
 
 .nl-code-block {
-  --nl-code-block-background-color: var(--prism-a11y-color-background); /* stylelint-disable-line */
+  --nl-code-block-background-color: var(--nlds-code-block-background-color);
+  --nl-code-block-color: var(--nlds-code-block-color);
 }
 
 .nlds-guideline--do {
@@ -82,6 +88,11 @@
  * back to the community. Usually these are missing tokens with their proposed
  * value.
  */
+.nl-code,
+.nl-code-block {
+  font-variant-ligatures: none;
+}
+
 .rhc-card {
   /* rhc-card.inline-size */
   inline-size: 100%;
@@ -89,6 +100,17 @@
 
 .rhc-card__heading:not(:has(a)) {
   --rhc-card-active-text-decoration: none;
+}
+
+.rhc-card:has(.rhc-link) {
+  position: relative;
+  z-index: 0;
+
+  .rhc-link::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+  }
 }
 
 .utrecht-nav-bar__content {
@@ -121,6 +143,10 @@
 :where(.utrecht-card .utrecht-card__heading .utrecht-link) {
   display: inline-block;
   min-block-size: 24px;
+}
+
+html .utrecht-link--html-a:any-link:focus {
+  background-color: unset;
 }
 
 @media (forced-colors: active) {
@@ -158,6 +184,13 @@
   color: var(--basis-focus-color);
 }
 
+/* The proper fix would be to change the Den Haag component to not render a <a> element when there is no href in the data */
+.denhaag-side-navigation__link:not([href]) {
+  color: unset !important;
+  cursor: default !important;
+  text-decoration: none !important;
+}
+
 .denhaag-side-navigation__expand-button:hover {
   /* denhaag.side-navigation.expand-button.hover.color */
   --denhaag-icon-button-hover-color: var(--basis-color-action-2-color-hover);
@@ -182,4 +215,36 @@
 
   /* denhaag.side-navigation.expand-button.focus.color */
   color: var(--basis-focus-color);
+}
+
+.denhaag-side-navigation__expand-button {
+  svg {
+    transition: transform 250ms ease-in-out;
+  }
+}
+
+.denhaag-side-navigation__expand-button--expanded {
+  transform: none !important;
+
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
+kbd {
+  background-color: var(--basis-color-default-bg-default);
+  border: 1px solid var(--basis-color-default-border-default);
+  border-radius: 0.2rem;
+  box-shadow: inset 0 -1px 0 var(--basis-color-default-border-default);
+  color: var(--basis-color-default-color-document);
+  font: 80% var(--basis-text-font-family-monospace);
+  padding-block: 0.15rem;
+  padding-inline: 0.3rem;
+}
+
+.nlds-icon-ext {
+  background-image: url("../../../../src/icons/external-link.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-inline-end: 24px;
 }

@@ -1,10 +1,16 @@
+import type { ReactNode } from 'react';
 import { Button } from '@components/button/button';
 import { Drawer } from '@utrecht/component-library-react';
 import { IconX, IconMenu2 } from '@tabler/icons-react';
+import { i18n, type I18nLanguages } from '../../i18n';
 import '@utrecht/drawer-css/dist/index.css';
 import './mobile-menu.css';
 
-export const MobileMenuTrigger = () => {
+export interface MobileMenuTriggerProps {
+  lang: I18nLanguages;
+}
+
+export const MobileMenuTrigger = ({ lang }: MobileMenuTriggerProps) => {
   return (
     <Button
       className="ma-mobile-menu-trigger"
@@ -14,12 +20,17 @@ export const MobileMenuTrigger = () => {
       commandfor="ma-mobile-menu-drawer"
       command="show-modal"
     >
-      Menu
+      {i18n[lang].menu}
     </Button>
   );
 };
 
-export const MobileMenu = ({ children }) => {
+export interface MobileMenuProps {
+  children?: ReactNode;
+  lang: I18nLanguages;
+}
+
+export const MobileMenu = ({ children, lang }: MobileMenuProps) => {
   return (
     <Drawer id="ma-mobile-menu-drawer" className="ma-mobile-menu-drawer" modal={true}>
       <header className="ma-mobile-menu-drawer__header">
@@ -31,7 +42,7 @@ export const MobileMenu = ({ children }) => {
           iconStart={<IconX />}
           iconOnly
         >
-          Sluiten
+          {i18n[lang].close}
         </Button>
       </header>
       {children}

@@ -1,4 +1,4 @@
-import { Heading as NLHeading, type HeadingProps } from '@nl-design-system-candidate/heading-react';
+import { Heading as NLHeading, type HeadingProps as NLHeadingProps } from '@nl-design-system-candidate/heading-react';
 import '@nl-design-system-candidate/heading-css/heading.css';
 
 export const Heading = (props: HeadingProps) => <NLHeading {...props} />;
@@ -8,3 +8,5 @@ export const Heading3 = (props: HeadingProps) => <NLHeading {...props} level={3}
 export const Heading4 = (props: HeadingProps) => <NLHeading {...props} level={4} />;
 export const Heading5 = (props: HeadingProps) => <NLHeading {...props} level={5} />;
 export const Heading6 = (props: HeadingProps) => <NLHeading {...props} level={6} />;
+
+export type HeadingProps = NLHeadingProps;

@@ -27,3 +27,7 @@
 .ma-flow > .nl-heading {
   --ma-flow-space: var(--ma-space-relative-block-3xl);
 }
+
+.ma-flow > .utrecht-separator {
+  --ma-flow-space: var(--basis-space-block-5xl);
+}

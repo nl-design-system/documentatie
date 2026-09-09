@@ -2,7 +2,7 @@ import { visit } from 'unist-util-visit';
 
 const TYPES = { tip: 'tip', info: 'info', note: 'note', caution: 'caution', danger: 'danger', warning: 'warning' };
 const MAP = {
-  [TYPES.tip]: 'ok',
+  [TYPES.tip]: 'success',
   [TYPES.info]: 'info',
   [TYPES.note]: 'info',
   [TYPES.danger]: 'error',
@@ -24,7 +24,7 @@ export function remarkAdmonitions() {
       data.hName = 'div';
       data.hProperties = {
         ...node.attributes,
-        className: ['utrecht-spotlight-section', `utrecht-spotlight-section--${MAP[node.name]}`],
+        className: ['utrecht-note', `utrecht-note--${MAP[node.name]}`],
       };
 
       if (node.children[0]?.data?.directiveLabel) {

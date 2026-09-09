@@ -1,0 +1,154 @@
+/* stylelint-disable */
+/*
+ * Mirrors the Docusaurus prism theme (nldsPrism.ts) + the --nlds-code-block-* variables from src/css/custom.css.
+ */
+pre {
+  --nlds-code-block-color: #fff;
+  --nlds-code-block-background-color: #011627;
+  --nlds-code-block-maybe-class-name-color: rgb(255 139 216);
+  --nlds-code-block-comment-color: rgb(130 155 155);
+  --nlds-code-block-prolog-color: rgb(130 155 155);
+  --nlds-code-block-cdata-color: rgb(130 155 155);
+  --nlds-code-block-punctuation-color: rgb(199 146 234);
+  --nlds-code-block-namespace-color: rgb(178 204 214);
+  --nlds-code-block-deleted-color: rgb(255 88 116);
+  --nlds-code-block-symbol-color: rgb(128 203 196);
+  --nlds-code-block-property-color: rgb(128 203 196);
+  --nlds-code-block-tag-color: rgb(127 219 202);
+  --nlds-code-block-operator-color: rgb(127 219 202);
+  --nlds-code-block-keyword-color: rgb(214 222 235);
+  --nlds-code-block-boolean-color: rgb(255 88 116);
+  --nlds-code-block-number-color: rgb(247 140 108);
+  --nlds-code-block-constant-color: rgb(130 170 255);
+  --nlds-code-block-function-color: rgb(130 170 255);
+  --nlds-code-block-builtin-color: rgb(130 170 255);
+  --nlds-code-block-char-color: rgb(130 170 255);
+  --nlds-code-block-selector-color: rgb(199 146 234);
+  --nlds-code-block-doctype-color: rgb(199 146 234);
+  --nlds-code-block-attr-name-color: rgb(173 219 103);
+  --nlds-code-block-inserted-color: rgb(173 219 103);
+  --nlds-code-block-string-color: rgb(111 211 206);
+  --nlds-code-block-url-color: rgb(173 219 103);
+  --nlds-code-block-entity-color: rgb(173 219 103);
+  --nlds-code-block-class-name-color: rgb(139 214 255);
+  --nlds-code-block-atrule-color: rgb(189 139 255);
+  --nlds-code-block-attr-value-color: rgb(255 203 139);
+  --nlds-code-block-regex-color: rgb(214 222 235);
+  --nlds-code-block-important-color: rgb(214 222 235);
+  --nlds-code-block-variable-color: rgb(214 222 235);
+}
+
+/* namespace is styled via CSS in Docusaurus (not in the prism theme object),
+   so declare it first — any themed type declared below wins, matching the
+   inline-style-overrides-CSS behaviour of prism-react-renderer. */
+.token.namespace {
+  color: var(--nlds-code-block-namespace-color);
+}
+
+.token.maybe-class-name {
+  color: var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color));
+}
+.token.comment,
+.token.prolog,
+.token.cdata {
+  font-style: italic;
+}
+.token.comment {
+  color: var(--nlds-code-block-comment-color);
+}
+.token.prolog {
+  color: var(--nlds-code-block-prolog-color);
+}
+.token.cdata {
+  color: var(--nlds-code-block-cdata-color);
+}
+.token.punctuation {
+  color: var(--nlds-code-block-punctuation-color);
+}
+.token.deleted {
+  color: var(--nlds-code-block-deleted-color);
+  font-style: italic;
+}
+.token.symbol {
+  color: var(--nlds-code-block-symbol-color);
+}
+.token.property {
+  color: var(--nlds-code-block-property-color);
+}
+.token.tag {
+  color: var(--nlds-code-block-tag-color);
+}
+.token.operator {
+  color: var(--nlds-code-block-operator-color);
+}
+.token.keyword {
+  color: var(--nlds-code-block-keyword-color);
+}
+.token.boolean {
+  color: var(--nlds-code-block-boolean-color);
+}
+.token.number {
+  color: var(--nlds-code-block-number-color);
+}
+.token.constant {
+  color: var(--nlds-code-block-constant-color);
+}
+.token.function {
+  color: var(--nlds-code-block-function-color);
+}
+.token.builtin {
+  color: var(--nlds-code-block-builtin-color);
+}
+.token.char {
+  color: var(--nlds-code-block-char-color);
+}
+.token.selector {
+  color: var(--nlds-code-block-selector-color);
+  font-style: italic;
+}
+.token.doctype {
+  color: var(--nlds-code-block-doctype-color);
+  font-style: italic;
+}
+.token.attr-name {
+  color: var(--nlds-code-block-attr-name-color);
+  font-style: italic;
+}
+.token.inserted {
+  color: var(--nlds-code-block-inserted-color);
+  font-style: italic;
+}
+.token.string {
+  color: var(--nlds-code-block-string-color);
+}
+.token.url {
+  color: var(--nlds-code-block-url-color);
+}
+.token.entity {
+  color: var(--nlds-code-block-entity-color);
+}
+.token.class-name {
+  color: var(--nlds-code-block-class-name-color);
+}
+.token.atrule {
+  color: var(--nlds-code-block-atrule-color);
+}
+.token.attr-value {
+  color: var(--nlds-code-block-attr-value-color);
+}
+.token.regex {
+  color: var(--nlds-code-block-regex-color);
+}
+.token.important {
+  color: var(--nlds-code-block-important-color);
+  font-weight: bold;
+}
+.token.variable {
+  color: var(--nlds-code-block-variable-color);
+}
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}

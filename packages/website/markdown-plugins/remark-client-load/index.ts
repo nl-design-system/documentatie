@@ -2,15 +2,19 @@ import type { Root } from 'mdast';
 import type { MdxJsxFlowElement, MdxJsxAttribute } from 'mdast-util-mdx-jsx';
 import { visit } from 'unist-util-visit';
 
-/* The <VideoPlayer /> component needs client side logic to function. In Astro
-it (thus) needs the `client:load` prop. Instead of placing this burden on the
-author, lets add it automatically for each instance */
-export function videoplayerClientLoadPlugin() {
-  return (tree: Root) => {
-    visit(tree, 'mdxJsxFlowElement', (node: MdxJsxFlowElement) => {
-      if (!node.name || !node.attributes) return;
+/* Some components need client side logic to function. In Astro they need the
+`client:load` prop. Instead of placing this burden on the author, add it
+automatically for each instance. Pass the list of component names that need
+hydration. */
+export function clientLoadPlugin(componentNames: string[]) {
+  const nameSet = new Set(componentNames);
+  return function plugin() {
+    return (tree: Root) => {
+      visit(tree, 'mdxJsxFlowElement', (node: MdxJsxFlowElement) => {
+        if (!node.name || !node.attributes) return;
 
-      if (node.name === 'Videoplayer' || node.name === 'VideoPlayer') {
+        if (!nameSet.has(node.name)) return;
+
         // Check if client:load attribute already exists
         const hasClientLoad = node.attributes.some(
           (attr): attr is MdxJsxAttribute => attr.type === 'mdxJsxAttribute' && attr.name === 'client:load',
@@ -25,7 +29,7 @@ export function videoplayerClientLoadPlugin() {
           };
           node.attributes.push(newAttr);
         }
-      }
-    });
+      });
+    };
   };
 }

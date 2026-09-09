@@ -1,4 +1,5 @@
 /** Taken from https://kittygiraudel.com/snippets/sr-only-class/ */
+.sr-only,
 .ma-sr-only {
   block-size: 1px !important;
   border: 0 !important;

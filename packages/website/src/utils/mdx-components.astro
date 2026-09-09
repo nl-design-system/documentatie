@@ -5,16 +5,16 @@ import ComponentOverview from '@components/docusaurus-mocks/ComponentOverview.as
 import ComponentAnatomy from '@components/docusaurus-mocks/ComponentAnatomy.astro';
 import { CriteriaList } from '@components/criteria-list/criteria-list';
 import { CriteriaListItem } from '@components/criteria-list/criteria-list-item';
-import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
 
-export const MDXComponents = async ({ navigationItems } = {}) => {
+export const MDXComponents = async ({ navigationItems, navigationList } = {}) => {
   return {
-    Checklist,
-    ChecklistItem,
     ComponentOverview,
     ComponentAnatomy,
     CriteriaList,
-    CriteriaListItem,
+    CriteriaListItem: (props) => {
+      const scPage = navigationList.find((item) => item.href?.startsWith(`/wcag/${props.sc}`));
+      return CriteriaListItem({ ...props, scLabel: scPage.label });
+    },
     OverviewPage: (props) => OverviewPage({ ...props, pages: navigationItems || [] }),
     DocCardList,
   };

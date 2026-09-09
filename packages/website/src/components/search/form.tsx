@@ -1,6 +1,7 @@
 import { Button } from '@components/button/button';
 import { Textbox } from '@utrecht/component-library-react';
 import { IconSearch } from '@tabler/icons-react';
+import { i18n, type I18nLanguages } from '../../i18n';
 import { useEffect, useState, type ChangeEvent, type FormEvent, type FormEventHandler } from 'react';
 import '@utrecht/textbox-css/dist/index.css';
 import './form.css';
@@ -9,6 +10,7 @@ export interface SearchFormProps {
   value?: string | null;
   onChange?: (_value: string | undefined | null) => void;
   autoFocus?: boolean;
+  lang: I18nLanguages;
 }
 
 export function SearchForm(props: SearchFormProps) {
@@ -25,7 +27,7 @@ export function SearchForm(props: SearchFormProps) {
     <search className="ma-search-form">
       <form className="ma-search-form__form" action="/zoeken" onSubmit={handleSubmit}>
         <Textbox
-          aria-label="zoekveld"
+          aria-label={i18n[props.lang].searchAriaLabel}
           name="query"
           required
           autoFocus={props.autoFocus}
@@ -33,7 +35,7 @@ export function SearchForm(props: SearchFormProps) {
           onChange={(event: ChangeEvent<HTMLInputElement>) => setValue(event.target.value)}
         />
         <Button type="submit" purpose="secondary" iconStart={<IconSearch />}>
-          Zoeken
+          {i18n[props.lang].search}
         </Button>
       </form>
     </search>

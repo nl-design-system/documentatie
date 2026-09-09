@@ -7,6 +7,9 @@ import { PageLayout } from '@utrecht/page-layout-react/css';
 
 import '@utrecht/root-css/dist/html/index.css';
 import '@utrecht/document-css/dist/html/index.css';
+import '@utrecht/component-library-css/dist/html.css';
+import '@utrecht/data-badge-css/dist/index.css';
+import '../components/Checklist.css';
 
 // Default implementation, that you can customize
 function Root({ children }: PropsWithChildren<object>) {

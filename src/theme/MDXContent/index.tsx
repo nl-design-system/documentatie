@@ -21,7 +21,6 @@ import { isValidElement } from 'react';
 import { OverviewPage } from '@site/src/components/OverviewPage';
 import DocCardList from '@theme/DocCardList';
 import { ComponentOverview } from '@site/src/components/ComponentOverview';
-import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
 import { ComponentAnatomy } from '@site/src/components/ComponentAnatomy';
 import { CriteriaList, CriteriaListItem } from '@site/src/components/ComponentCriteriaList';
 import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
@@ -76,8 +75,6 @@ export default function MDXContent({ children }: Props): ReactElement {
         OverviewPage,
         DocCardList,
         ComponentOverview,
-        Checklist,
-        ChecklistItem,
         ComponentAnatomy,
         CriteriaList,
         CriteriaListItem,
