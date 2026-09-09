@@ -35,10 +35,10 @@
     "videoId": null,
     "icalLink": null
   },
-    {
+  {
     "uuid": "6b1d8785-cf2b-4c38-a4c1-b65458456728",
     "isoDateTime": "2026-10-28T12:00:00.000Z",
-    "speakers": ["FrederiqueSchimmelpenninckvanderOije"],
+    "speakers": ["FrederiqueSchimmelpenninckVanDerOije"],
     "subject": "Toegankelijke en herkenbare huisstijl",
     "language": {
       "abbr": "NL",
