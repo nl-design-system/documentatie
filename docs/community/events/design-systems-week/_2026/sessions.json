@@ -37,8 +37,8 @@
   },
     {
     "uuid": "6b1d8785-cf2b-4c38-a4c1-b65458456728",
-    "isoDateTime": "2026-10-28T13:00:00.000Z",
-    "speakers": ["FrédériqueSchimmelpenninckvanderOije"],
+    "isoDateTime": "2026-10-28T12:00:00.000Z",
+    "speakers": ["FrederiqueSchimmelpenninckvanderOije"],
     "subject": "Toegankelijke en herkenbare huisstijl",
     "language": {
       "abbr": "NL",
@@ -49,7 +49,7 @@
   },
   {
     "uuid": "5c426f34-76eb-44c3-a951-277b49e6b442",
-    "isoDateTime": "2026-10-28T15:00:00.000Z",
+    "isoDateTime": "2026-10-28T14:00:00.000Z",
     "speakers": ["JavierCuello"],
     "subject": "The renaissance of design tooling",
     "language": {
