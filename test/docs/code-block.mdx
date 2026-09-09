@@ -78,3 +78,13 @@ export type MyType = Record<string, any>;
 - const old = 1;
 + const new = 2;
 ```
+
+## Code ligiatures are disabled in code examples
+
+```typescript
+if (true !== false && 10 <= 5) {
+  console.log({ profit: true });
+}
+```
+
+in inline code, ligiatures are also disabled `true !== false && 10 <= 5`
