@@ -46,11 +46,13 @@ import Summary from "./summaries/_2.5.4-summary.md";
 
 <Summary />
 
-Sommige websites gebruiken de bewegingssensor van een telefoon of tablet. Je schudt het apparaat om iets ongedaan te maken, of je kantelt het om een productfoto rond te draaien. Wie een apparaat op een rolstoel of een standaard heeft, houdt het op één plek en kan het niet schudden of kantelen. Iemand met tremor of met beperkte handfunctie kan het apparaat niet gecontroleerd bewegen. Daarom heeft elke functie die op beweging reageert ook een gewone bediening nodig, zoals een knop.
+Sommige websites gebruiken de bewegingssensor van een telefoon of tablet. Het komt weinig voor. Je schudt het apparaat om iets ongedaan te maken, of je kantelt het om een productfoto rond te draaien. Een website kan ook reageren op een beweging van de bezoeker zelf, zoals een handgebaar voor de camera. Wie een apparaat op een rolstoel of een standaard heeft, houdt het op één plek en kan het niet schudden of kantelen. Iemand met tremor of met beperkte handfunctie kan het apparaat niet gecontroleerd bewegen. Daarom heeft elke functie die op beweging reageert ook een gewone bediening nodig, zoals een knop.
 
 Beweging komt ook voor zonder dat iemand het wil. Wie het apparaat niet stil kan houden, of onderweg is in een bus of trein, beweegt het per ongeluk. Als de pagina daarop reageert, gebeurt er steeds iets wat de bezoeker niet bedoelde. Daarom kun je de reactie op beweging uitzetten.
 
 Niet elke functie heeft een knop nodig. Is de beweging zelf de kern van de functie, dan hoeft er geen knop bij. Een stappenteller telt je stappen door de beweging van het apparaat. Zonder die beweging is er niets te tellen. De uitzonderingen staan volledig beschreven in de [Nederlandse vertaling van succescriterium 2.5.4 Bewegingsactivering](https://www.w3.org/Translations/WCAG22-nl/#motion-actuation).
+
+Schudden om iets ongedaan te maken zit op een iPhone in iOS zelf. Dat is geen functie van de website. De bezoeker zet het uit in de instellingen van het apparaat, onder Toegankelijkheid en dan Aanraken. Apple beschrijft de instelling Herstel door schudden op de pagina [De reactie van de iPhone op aanraking aanpassen](https://support.apple.com/nl-nl/guide/iphone/iph77bcdd132/ios).
 
 ## Veelgemaakte fouten
 
@@ -125,7 +127,8 @@ window.addEventListener("devicemotion", handleDeviceMotion);
 <Guideline appearance="do" title="Een instelling om de bewegingsbediening uit te zetten">
 
 ```html
-<label for="motion">Reageer op beweging van het apparaat</label> <input type="checkbox" id="motion" name="motion" />
+<label for="motion">Reageer op beweging van het apparaat</label>
+<input type="checkbox" id="motion" name="motion" />
 ```
 
 </Guideline>
@@ -142,8 +145,8 @@ window.addEventListener("devicemotion", handleDeviceMotion);
 
 ### Voor developers
 
-1. Zoek in de code naar `devicemotion` en `deviceorientation`, en naar library's die de bewegingssensor gebruiken. Elke functie die daarop reageert heeft een knop of een andere bediening op het scherm nodig.
-2. Controleer per functie of je hetzelfde resultaat bereikt zonder het apparaat te bewegen. Een knop is de eenvoudigste vorm.
+1. Zoek in de code naar `devicemotion` en `deviceorientation`, en naar libraries die de bewegingssensor gebruiken. Elke functie die daarop reageert heeft een knop of een andere bediening op het scherm nodig.
+2. Controleer per functie of je hetzelfde resultaat bereikt zonder het apparaat te bewegen. Een knop of een invoerveld is de eenvoudigste vorm.
 3. Voeg een instelling toe waarmee de bezoeker de reactie op beweging uitzet, zodat een onbedoelde beweging niets activeert.
 4. Ga na of de beweging echt de kern van de functie is. Alleen dan is een knop niet nodig. In alle andere gevallen wel.
 
@@ -152,6 +155,7 @@ window.addEventListener("devicemotion", handleDeviceMotion);
 - [2.1.1 Toetsenbord](/wcag/2.1.1/): alles wat met een aanwijzer of beweging werkt, moet ook met het toetsenbord kunnen. Een knop naast de beweging helpt daarbij.
 - [2.5.1 Aanwijzergebaren](/wcag/2.5.1/): gaat over veeg- en knijpgebaren op het scherm. Ook die hebben een bediening met één tik of klik als alternatief nodig.
 - [2.5.2 Aanwijzerannulering](/wcag/2.5.2/): gaat over het kunnen afbreken van een aanwijzeractie, zodat een per ongeluk gestarte tik geen gevolgen heeft.
+- [2.5.8 Grootte van het aanwijsgebied (minimum)](/wcag/2.5.8/): een knop die de beweging vervangt is groot genoeg om aan te wijzen, ten minste 24 bij 24 pixels.
 
 ## Gerelateerde NL Design System-richtlijnen
 
