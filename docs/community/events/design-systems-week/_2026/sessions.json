@@ -34,5 +34,29 @@
     },
     "videoId": null,
     "icalLink": null
+  },
+    {
+    "uuid": "6b1d8785-cf2b-4c38-a4c1-b65458456728",
+    "isoDateTime": "2026-10-28T13:00:00.000Z",
+    "speakers": ["FrédériqueSchimmelpenninckvanderOije"],
+    "subject": "Toegankelijke en herkenbare huisstijl",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": null,
+    "icalLink": null
+  },
+  {
+    "uuid": "5c426f34-76eb-44c3-a951-277b49e6b442",
+    "isoDateTime": "2026-10-28T15:00:00.000Z",
+    "speakers": ["JavierCuello"],
+    "subject": "The renaissance of design tooling",
+    "language": {
+      "abbr": "EN",
+      "description": "English"
+    },
+    "videoId": null,
+    "icalLink": null
   }
 ]
