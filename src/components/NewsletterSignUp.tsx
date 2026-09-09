@@ -1,5 +1,4 @@
 import {
-  Button,
   ButtonGroup,
   Checkbox,
   Fieldset,
@@ -11,6 +10,7 @@ import {
   Textarea,
   Textbox,
 } from '@utrecht/component-library-react';
+import { Button } from '@components/button/button';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react';
 import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
@@ -345,7 +345,7 @@ export const NewsletterSignUp = ({
       {language?.id && <input type="hidden" name={language.id} value={language.value} />}
 
       <ButtonGroup>
-        <Button type="submit" appearance="primary-action-button">
+        <Button type="submit" purpose="primary">
           {submitText ? submitText : IS_ENGLISH ? 'Sign up' : 'Aanmelden'}
         </Button>
       </ButtonGroup>

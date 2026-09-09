@@ -32,6 +32,7 @@ import '@utrecht/card-css/dist/index.css';
 import '@utrecht/custom-checkbox-css/dist/index.css';
 import '@utrecht/checkbox-css/dist/index.css';
 import '@utrecht/emphasis-css/dist/index.css';
+import '@utrecht/icon-css/dist/index.css';
 import '@utrecht/figure-css/dist/index.css';
 import '@utrecht/form-label-css/dist/index.css';
 import '@utrecht/form-field-css/dist/index.css';
@@ -42,6 +43,7 @@ import '@utrecht/ordered-list-css/dist/index.css';
 import '@utrecht/table-css/dist/index.css';
 import '@utrecht/textarea-css/dist/index.css';
 import '@utrecht/textbox-css/dist/index.css';
+import '@utrecht/note-css/dist/index.css';
 import '@utrecht/img-css/dist/index.css';
 import '@utrecht/spotlight-section-css/dist/index.css';
 import '@nl-design-system-candidate/paragraph-css/paragraph.css';
@@ -49,7 +51,7 @@ import '@nl-design-system-candidate/code-css/code.css';
 import '@nl-design-system-candidate/code-block-css/code-block.css';
 import '@utrecht/component-library-css/dist/html.css';
 
-import 'a11y-syntax-highlighting/dist/prism/a11y-dark.css';
+import '../../src/styles/prism-theme.css';
 import '../../src/styles/missing-tokens.css';
 import './document.css';
 import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
@@ -216,6 +218,13 @@ const footerNavigationItems = [
         if (event instanceof UpdateDocumentTitleEvent) {
           document.title = event.newTitle;
         }
+      });
+    </script>
+    <script>
+      document.addEventListener('click', (event) => {
+        const button = (event.target as HTMLElement)?.closest<HTMLElement>('[data-copy-code]');
+        if (!button) return;
+        navigator.clipboard.writeText(button.dataset['copyCode'] ?? '').catch(() => {});
       });
     </script>
   </body>

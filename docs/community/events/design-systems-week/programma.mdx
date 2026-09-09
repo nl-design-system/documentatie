@@ -13,12 +13,9 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/co
 image_alt: NL Design System Design Systems Week 2026 26-29 Oktober, online
 ---
 
-import {
-  ButtonGroup as ActionGroup,
-  ButtonLink,
-  Paragraph,
-  Link,
-} from "@utrecht/component-library-react/dist/css-module";
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ActionGroup } from "@components/action-group/action-group";
+import { Paragraph } from "@components/paragraph/paragraph";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "./\_2026/sessions.json";
 import speakers from "./\_2026/speakers.json";
@@ -27,41 +24,111 @@ import settings from "./settings.json";
 
 # Programma Design Systems Week {settings.year}
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   NL Design System organiseert in {settings.year} voor de {settings.nl.edition} keer de Design Systems Week. Van{" "}
   <strong>{settings.nl.dateRange}</strong> zijn er dagelijks meerdere korte sessies van diverse organisaties online te
   volgen over het **hoe en waarom van design systems**.
 </Paragraph>
 
 <ActionGroup>
-  <ButtonLink href={`/events/design-systems-week-${settings.year}/tijdschema`} appearance="primary-action-button">
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/tijdschema`} appearance="primary-action">
     {"Bekijk het tijdschema"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
   {!!settings.miro && (
-    <ButtonLink href={settings.miro} appearance="secondary-action-button">
+    <ButtonLink href={settings.miro} appearance="secondary-action">
       {"Gebruik Miro"}
-      <IconChevronRight />
+      <IconChevronRight slot="icon-end" />
     </ButtonLink>
   )}
 </ActionGroup>
 
+{!settings.sessionsAreFinal && (<>
+
+<Paragraph>
+  Het tijdschema is nog niet definitief. De sessies worden de komende weken verder uitgewerkt en toegevoegd. Houd deze
+  pagina in de gaten voor updates.
+</Paragraph>
+
+</>)}
+
 {/* Vul in per sessie */}
-{/* prettier-ignore */}
-{/*
 
 <DSWSession
   allSpeakers={speakers}
   allSessions={sessions}
-  sessionId="74d8600f-b404-4e3d-a41e-9f652d8f9455"
+  sessionId="1bfd50e8-d845-492b-9553-51cae7dafd5b"
   headingLevel={2}
 >
-
   <Paragraph>
-    Hoe kunnen steden hun design systems transparanter, consistenter en gebruiksvriendelijker maken voor developers? De stad Wenen vond een antwoord in het Custom Elements Manifest (CEM) — een bestandsformaat dat custom elements beschrijft en web components makkelijker documenteerbaar en bruikbaar maakt in code editors.
+    Informatie over toegankelijkheidsconformiteit wordt vaak vastgelegd in aparte rapporten die snel verouderen. Maar
+    wat als toegankelijkheidsgegevens direct naast je code zouden staan?
   </Paragraph>
   <Paragraph>
-    In deze sessie laat Manuel Matuzović zien hoe Wenen CEM toepast om hun pattern library te documenteren en te onderhouden. Hij demonstreert hoe deze aanpak de bruikbaarheid, toegankelijkheid en samenwerking tussen teams verbetert.  
+    In deze sessie ontdek je hoe het open-source publicatieplatform Janeway zijn toegankelijkheidsproces opnieuw heeft
+    ingericht door gegevens over conformiteit rechtstreeks in de codebase te integreren. Elke bevinding op het gebied
+    van toegankelijkheid is gekoppeld aan de specifieke commit waarop de audit betrekking had, en wordt in verband
+    gebracht met de werkzaamheden die nodig zijn voor verbetering. Dit vormt de basis voor een continu proces van
+    gerichte toegankelijkheidsaudits en verbeteringen, in plaats van te vertrouwen op audits die slechts eens in de paar
+    jaar plaatsvinden.
+  </Paragraph>
+  <Paragraph>
+    Steph vertelt over de beweegredenen achter deze aanpak, de implementatie ervan en de lessen die gaandeweg zijn
+    geleerd. Of je nu ontwikkelaar of toegankelijkheidsspecialist bent, of simpelweg geïnteresseerd bent in het
+    verbeteren van workflows rondom toegankelijkheid: deze sessie biedt praktische inzichten in een duurzamere manier om
+    conformiteitsgegevens te beheren.
+  </Paragraph>
+  <Paragraph>
+    De implementatie is open source, waardoor je na de sessie eenvoudig in de technische details kunt duiken.
   </Paragraph>
 </DSWSession>
-*/}
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="b919f274-381c-41db-9d1d-cc3b6934ce93"
+  headingLevel={2}
+>
+  <Paragraph>
+    Hoe maak je interactieve kaarten toegankelijk voor iedereen? Dat is een vraag waar het Kadaster dagelijks aan werkt.
+  </Paragraph>
+  <Paragraph>
+    Op de websites van het Kadaster wordt veel ruimtelijke informatie via kaartviewers aangeboden. Juist deze
+    interactieve toepassingen brengen unieke uitdagingen met zich mee op het gebied van digitale toegankelijkheid.
+  </Paragraph>
+  <Paragraph>
+    In deze sessie delen Eric en Mieke hoe het Kadaster deze vraagstukken multidisciplinair aanpakt. Aan de hand van
+    praktijkvoorbeelden laten zij zien welke uitdagingen zij tegenkwamen, welke oplossingen zij hebben ontwikkeld en
+    welke lessen zij onderweg hebben geleerd.
+  </Paragraph>
+  <Paragraph>
+    Een inspirerende sessie voor iedereen die werkt aan toegankelijke digitale dienstverlening, interactieve interfaces
+    of complexe gebruikerservaringen.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="a23217db-b17d-4e97-ad46-1fd7d113c567"
+  headingLevel={2}
+>
+  <Paragraph>
+    Wat gebeurt er als je je eigen design-systeem vervangt door een nieuwe, gedeelde standaard? Hoe zorg je ervoor dat
+    de toegankelijkheid er niet op achteruitgaat?
+  </Paragraph>
+  <Paragraph>
+    In deze sessie deelt Marion Couesnon van het 'Access to Justice'-team haar ervaringen met de migratie van hun eigen
+    design-systeem naar het KERN Design System, dat zij zien als de toekomstige standaard voor Duitse overheidsdiensten.
+  </Paragraph>
+  <Paragraph>
+    Je leert hoe het team de migratie vanuit het oogpunt van toegankelijkheid aanpakte, welke controles en beslissingen
+    ze onderweg namen en welke onverwachte uitdagingen ze toch nog tegenkwamen. Want zelfs als een design-systeem met
+    toegankelijkheid in gedachten is ontwikkeld, biedt de implementatie ervan niet automatisch garantie op een
+    toegankelijk resultaat.
+  </Paragraph>
+  <Paragraph>
+    Een praktische sessie vol geleerde lessen, valkuilen om te vermijden en tips voor teams die een soortgelijke
+    overstap plannen.
+  </Paragraph>
+</DSWSession>

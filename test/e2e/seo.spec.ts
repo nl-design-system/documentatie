@@ -9,7 +9,7 @@ const CONFIG = {
   sitemap: '/sitemap-index.xml',
 };
 
-// A selection of urls coverig all different templates configurations. A minimal set of paths to cover all template paths so all combinations are testable without testing every single page
+// A selection of urls covering all different templates configurations. A minimal set of paths to cover all template paths so all combinations are testable without testing every single page
 const pathnamesSelection = [
   // Homepage
   '/',

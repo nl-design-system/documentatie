@@ -12,6 +12,7 @@ import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
 import { remarkUnwrapDiv } from './markdown-plugins/remark-unwrap-div';
 import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
 import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inline-directives';
+import { remarkUnwrapParagraph } from './markdown-plugins/remark-unwrap-paragraph';
 import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
 const siteUrl = 'https://nldesignsystem.nl';
 
@@ -42,7 +43,7 @@ const cspProdConfig: AstroUserConfig = {
         `connect-src 'self' ${cspConnectSrcSources} blob: data:`,
         "default-src 'self'",
         "font-src 'self'",
-        "form-action 'self'",
+        "form-action 'self' https://nl-design-system.email-provider.eu",
         "frame-src 'self' https://www.youtube-nocookie.com",
         `img-src 'self' ${cspImgSrcSources} blob: data:`,
         "object-src 'none'",
@@ -118,6 +119,7 @@ export default defineConfig({
       remarkDirective,
       remarkUndoInlineDirectives,
       remarkAdmonitions,
+      remarkUnwrapParagraph,
       removeH1FromMarkdown(),
     ],
     rehypePlugins: [
@@ -136,6 +138,7 @@ export default defineConfig({
         remarkDirective,
         remarkUndoInlineDirectives,
         remarkAdmonitions,
+        remarkUnwrapParagraph,
         clientLoadPlugin(['Videoplayer', 'VideoPlayer', 'Checklist', 'DesignTokens']),
         removeH1FromMarkdown(),
       ],
