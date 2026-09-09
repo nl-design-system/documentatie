@@ -48,5 +48,30 @@
       "nl": "Mieke werkt sinds 2019 bij het Kadaster als software engineer, met digitale toegankelijkheid als specialisme. Haar scrumteam ontwikkelt en beheert diverse websites, portals en applicaties, waaronder <a target=\"blank\" href=\"https://www.kadaster.nl\">www.kadaster.nl</a>, <a target=\"blank\" href=\"https://topokaarten.kadaster.nl\">topokaarten.kadaster.nl</a> en de zakelijke <a target=\"blank\" href=\"https://mijn.kadaster.nl\">mijn.kadaster.nl</a> omgeving."
     },
     "language": "nl"
+  },
+  "FrederiqueSchimmelpenninckVanDerOije": {
+    "name": "Frédérique Schimmelpenninck van der Oije",
+    "organisation": "UWV",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-FrederiqueSchimmelpenninck.jpg",
+      "alt": "Frédérique Schimmelpenninck van der Oije"
+    },
+    "description": {
+      "nl": "Frédérique Schimmelpenninck van der Oije is grafisch ontwerper, zij werkte eerder als ontwerper en beeldredacteur voor onder andere de Volkskrant en Het Financieele Dagblad en is nu Designmanager bij UWV. Daarnaast werkt zij als parttime docent op het Amsterdam Fashion Institute. Helder, herkenbaar en vooral toegankelijke communicatie zijn een belangrijke leidraad in haar werk en werkwijze. Bij UWV werkt zij aan een integrale aanpak van de huisstijl, van mobiel tot bewegwijzering en van beachflag tot formulier."
+    },
+    "language": "nl"
+  },
+  "JavierCuello": {
+    "name": "Javier Cuello",
+    "organisation": "Fuller",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-JavierCuello.png",
+      "alt": "Javier Cuello"
+    },
+    "description": {
+      "en": "Javier is a product designer specialising in design systems. Originally from Argentina, he has spent nearly 20 years in Europe working with companies like Wise, UEFA, Telefónica and Zara. He now runs his own independent design practice, helping teams build and scale their design systems.",
+      "nl": "Javier is een productontwerper die gespecialiseerd is in designsystemen. Hij komt oorspronkelijk uit Argentinië en heeft bijna twintig jaar in Europa gewerkt voor bedrijven als Wise, UEFA, Telefónica en Zara. Tegenwoordig runt hij zijn eigen onafhankelijke ontwerppraktijk, waarin hij teams helpt bij het opzetten en opschalen van hun designsystemen."
+    },
+    "language": "en"
   }
 }
