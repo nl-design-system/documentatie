@@ -81,7 +81,7 @@ Een interactieve kaart laat je alleen in- en uitzoomen met een knijpgebaar, twee
 **Wie kan dit oplossen:**
 
 - Een webredacteur zet de belangrijke informatie van de kaart, zoals het adres, ook als gewone tekst op de pagina.
-- Een developer zet de zoomknoppen van de kaart aan en staat bediening met één vinger toe. De meeste kaartbibliotheken hebben die bediening al ingebouwd.
+- Een developer zet de zoomknoppen van de kaart aan en staat bediening met één vinger toe. De meeste kaart-library's hebben die bediening al ingebouwd.
 
 ### Een carrousel is alleen met vegen te bedienen
 
@@ -160,7 +160,7 @@ Op een kaart kun je een lijn of een gebied tekenen om een resultaat te krijgen, 
 
 ### Voor developers
 
-1. Zoek alle plekken op waar je `touchmove`, `gesturechange`, `pointermove` of een gebarenbibliotheek gebruikt. Elk pad-gebaar en elk multipoint-gebaar heeft een enkelvoudig alternatief nodig.
+1. Zoek alle plekken op waar je `touchmove`, `gesturechange`, `pointermove` of een library voor gebaren gebruikt. Elk pad-gebaar en elk multipoint-gebaar heeft een enkelvoudig alternatief nodig.
 2. Controleer per onderdeel of je de functie ook bereikt met één tik, klik of lange druk. Een knop is de eenvoudigste vorm. Bij tekenen op een kaart is een knop niet genoeg. Bied dan een manier om hetzelfde resultaat te krijgen met tekst, zoals plaatsnamen of coördinaten.
 3. Let op het verschil met slepen. Telt alleen het begin- en eindpunt en niet de route ertussen, dan gaat het om slepen. Lees daarvoor succescriterium [2.5.7 Slepen](/wcag/2.5.7/).
 4. Test met alleen een muis en met één vinger. Kom je overal met een enkele aanwijzer, dan hoeft niemand een ingewikkeld gebaar te maken.
