@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Task List
 pagination_label: Task List
 description: Lijst met taken die zijn gemarkeerd als voltooid of onvoltooid.
+issue_number: 263
 slug: /task-list
 keywords:
   - checklist
@@ -31,7 +32,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Task List";
@@ -43,12 +43,6 @@ export const componentName = "task-list";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

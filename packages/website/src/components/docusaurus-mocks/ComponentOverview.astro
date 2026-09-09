@@ -2,11 +2,14 @@
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
 import { CardGroup } from '@site/src/components/CardGroup';
 import { ComponentCard } from '@site/src/components/ComponentCard';
+import { ComponentOverviewFilter } from './ComponentOverviewFilter';
 import { getCollection } from 'astro:content';
 import { COMPONENT_STATES, getComponentFrameworkNames, type Component } from '@site/src/utils.ts';
 
 const components = await getCollection('components');
 ---
+
+<ComponentOverviewFilter client:load />
 
 <CardGroup>
   {
@@ -23,14 +26,20 @@ const components = await getCollection('components');
       const frameworkNames = getComponentFrameworkNames(component);
 
       return (
-        <ComponentCard
-          name={title}
-          headingLevel={2}
-          href={item.id}
-          description={description}
-          relayStep={relayStep}
-          frameworkNames={frameworkNames}
-        />
+        <div
+          class="ma-component-overview-list-item"
+          data-status={relayStep.replace(' ', '_').toUpperCase()}
+          data-framework-names={frameworkNames}
+        >
+          <ComponentCard
+            name={title}
+            headingLevel={2}
+            href={item.id}
+            description={description}
+            relayStep={relayStep}
+            frameworkNames={frameworkNames}
+          />
+        </div>
       );
     })
   }

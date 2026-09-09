@@ -4,9 +4,9 @@
 
     <!-- Use variables to set backgroundcolors so they can change with the status of the component without modififying this file -->
         <g clip-path="url(#clip0_632_1855)">
-        <rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)"/>
+        <rect width="960" height="540" fill="var(--ma-component-illustration-grid-background-color, #AAA)"/>
         <g clip-path="url(#clip1_632_1855)">
-        <rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)"/>
+        <rect width="960" height="540" fill="var(--ma-component-illustration-grid-background-color, #AAA)"/>
         <rect width="2" height="540" transform="translate(69)" fill="var(--ma-component-illustration-grid-color, #eee)"/>
         <rect width="2" height="540" transform="translate(151)" fill="var(--ma-component-illustration-grid-color, #eee)"/>
         <rect width="2" height="540" transform="translate(233)" fill="var(--ma-component-illustration-grid-color, #eee)"/>

@@ -28,7 +28,9 @@ export const HeartbeatEpisode = ({ id, headingLevel }: HeartbeatEpisodeProps) =>
         </Heading>
       )}
       {episode.description.map((description) => (
-        <Markdown key={description}>{description}</Markdown>
+        <Markdown key={description} components={{ a: Link }}>
+          {description}
+        </Markdown>
       ))}
       {episode.youtubeId ? (
         <VideoPlayer id={episode.youtubeId} title={episode.title} />

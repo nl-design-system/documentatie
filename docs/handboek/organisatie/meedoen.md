@@ -8,6 +8,7 @@ sidebar_position: 2
 navigation_order: 2
 pagination_label: Meedoen
 description: Meedoen als organisatie
+keywords:
   - leverancier
   - waarom NL Design System
   - waarom een design system

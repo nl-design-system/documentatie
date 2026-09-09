@@ -1,5 +1,6 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import type { TeamMember } from './TeamMember';
+import { Link } from '../Link';
 
 const Renate: TeamMember = {
   name: 'Renate Roke',
@@ -8,14 +9,11 @@ const Renate: TeamMember = {
   Description: () => (
     <>
       <Paragraph>
-        Als Specialist Webtoegankelijkheid beschrijft Renate onder andere acceptatiecriteria voor componenten in het NL
-        Design System en helpt ze de community op weg met tips over toegankelijkheid. Hiervoor gebruikt ze haar
-        jarenlange kennis in toegankelijkheidsonderzoeken en haar passie om kennis over te dragen. Ze denkt vooral graag
-        mee over wat er wél kan.
+        Julia onderzoekt en schrijft richtlijnen voor het toegankelijk inzetten van NL Design System componenten.
       </Paragraph>
       <Paragraph>
-        In haar vrije tijd is Renate graag buiten: aan het wandelen, aan het kamperen of op het terras. Daarnaast leest
-        ze heel veel boeken en heeft ze veel creatieve hobbies.
+        Je kunt via <Link href="/slack/">#nl-design-system-designers en #nl-design-system-developers</Link> bij haar
+        terecht met vragen rondom toegankelijkheid. Bijvoorbeeld over semantische HTML, ARIA, en focusmanagement.
       </Paragraph>
     </>
   ),

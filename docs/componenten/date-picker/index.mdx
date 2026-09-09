@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Date Picker
 pagination_label: Date Picker
 description: Invoerveld om een beschikbare datum te kiezen via een op maat gemaakte kalender.
+issue_number: 35
 slug: /date-picker
 keywords:
   - calendar
@@ -42,7 +43,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Date Picker";
@@ -54,12 +54,6 @@ export const componentName = "date-picker";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

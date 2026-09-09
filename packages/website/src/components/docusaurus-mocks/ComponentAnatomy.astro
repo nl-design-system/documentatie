@@ -1,3 +1,44 @@
-<div data-docusaurus-mock="component-anatomy">
-  <p>COMPONENT ANATOMY NOT IMPLEMENTED</p>
-</div>
+---
+import { toKebabCase } from '@site/src/utils';
+import './ComponentAnatomy.css';
+
+// This component needs to be an Astro component because of the import of .md
+// files. If this was an .tsx file, the import would not work because the
+// resulting component file would not match what the Astro parser expects
+
+// Load all anatomy markdown files at build time
+const anatomyMdModules = import.meta.glob(
+  '../../../../../node_modules/@nl-design-system-candidate/*-docs/docs/anatomy/anatomy.md',
+  { eager: true },
+) as Record<string, { default: any }>;
+
+// Load all anatomy SVG files at build time
+const anatomySvgModules = import.meta.glob(
+  '../../../../../node_modules/@nl-design-system-candidate/*-docs/docs/anatomy/anatomy.svg',
+  { query: '?raw', import: 'default', eager: true },
+) as Record<string, string>;
+
+interface Props {
+  component?: { title: string };
+}
+
+const { component } = Astro.props;
+
+const slug = component ? toKebabCase(component.title) : '';
+const mdKey = Object.keys(anatomyMdModules).find((key) => key.includes(`${slug}-docs`));
+const svgKey = Object.keys(anatomySvgModules).find((key) => key.includes(`${slug}-docs`));
+
+const AnatomyLegend = mdKey ? anatomyMdModules[mdKey].default : null;
+const anatomySvg = svgKey ? anatomySvgModules[svgKey] : null;
+---
+
+<figure class="ma-component-anatomy">
+  {anatomySvg && <Fragment set:html={anatomySvg} />}
+  {
+    anatomySvg && AnatomyLegend && (
+      <figcaption>
+        <AnatomyLegend />
+      </figcaption>
+    )
+  }
+</figure>

@@ -1,0 +1,10 @@
+.ma-canvas-astro__example {
+  padding-block-end: var(--basis-space-block-xl);
+  padding-block-start: var(--basis-space-block-xl);
+  padding-inline-end: var(--basis-space-inline-3xl);
+  padding-inline-start: var(--basis-space-inline-3xl);
+
+  img {
+    max-inline-size: 100%;
+  }
+}

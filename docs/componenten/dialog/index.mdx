@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Dialog
 pagination_label: Dialog
 description: Toont een venster over de pagina om de aandacht op een enkele taak of bericht te vestigen. Interactie met onderliggende pagina blijft mogelijk.
+issue_number: 181
 slug: /dialog
 keywords:
   - dialog
@@ -29,7 +30,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Dialog";
@@ -41,12 +41,6 @@ export const componentName = "dialog";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

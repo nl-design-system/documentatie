@@ -1,0 +1,11 @@
+.ma-component-overview-filter {
+  margin-block-start: var(--basis-space-block-xl);
+
+  .utrecht-accordion__panel {
+    --utrecht-accordion-panel-padding-block-start: 0;
+  }
+
+  .ams-unordered-list {
+    --ams-unordered-list-gap: var(--basis-space-block-sm);
+  }
+}

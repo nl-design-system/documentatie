@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Number Badge
 pagination_label: Number Badge
 description: Toont een klein label dat de aandacht trekt en informeert over een aantal.
+issue_number: 7
 slug: /number-badge
 keywords:
   - aantal
@@ -35,8 +36,8 @@ import AcImplementatie from "@nl-design-system-unstable/documentation/componente
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/_component_gebruiken_intro.md";
 import * as Acceptatiecriteria from "./_acceptatiecriteria.tsx";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
-import { Heading } from "@nl-design-system-candidate/heading-react/css";
+import { LinkList, LinkListLink } from "@components/link-list/link-list";
+import { Heading } from "@components/heading/heading";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
 
@@ -47,6 +48,7 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
+import { Checklist, ChecklistItem } from "@site/src/components/Checklist";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
 import Usage from "./_usage.md";

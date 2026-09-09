@@ -1,55 +1,7 @@
 .ma-core-team {
-  align-items: baseline;
-  align-items: center;
-  display: grid;
-  gap: 8px;
-  grid-auto-flow: column;
-  inline-size: 100%;
-  margin-block-start: 30px;
-  max-block-size: 200px;
-}
+  --rhc-card-inline-size: 100%;
 
-.ma-core-team__card {
-  --ma-cardgroup-card-box-shadow: none;
-  --ma-cardgroup-card-border-width: 1px;
-  --ma-cardgroup-card-large-padding-block-start: 0;
-  --ma-cardgroup-card-large-padding-block-end: 0;
-}
-
-.ma-core-team__content {
-  padding-block-end: 36px;
-  padding-block-start: 24px;
-  padding-inline-end: 24px;
-  padding-inline-start: 24px;
-}
-
-.ma-core-team__heading {
-  padding-block-end: 24px;
-}
-
-.ma-core-team__heading-subtitle {
-  font-size: 20px;
-  padding-block-start: 8px;
-}
-.ma-core-team__description {
-  padding-block-end: 24px;
-}
-
-.ma-core-team__illustration {
-  --ma-card-illustration-background-color: var(--nlds-document-inverse-background-color);
-
-  align-items: flex-end;
   display: flex;
-}
-
-.ma-core-team__avatar {
-  block-size: 150px;
-  padding-block-start: 24px;
-  padding-inline: 8px;
-}
-
-@media (width <= 768px) {
-  .ma-core-team__card {
-    --ma-cardgroup-card-max-width: auto;
-  }
+  flex-direction: column;
+  gap: 1rem;
 }

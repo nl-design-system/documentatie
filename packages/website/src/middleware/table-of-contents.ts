@@ -6,7 +6,9 @@ interface Item {
 }
 
 function buildTocItem(item: Item) {
-  return item.id ? `<li><a href="#${item.id}">${item.label}</a></li>` : `<li>${item.label}</li>`;
+  return item.id
+    ? `<li class="ams-unordered-list__item"><a class="nl-link" href="#${item.id}">${item.label}</a></li>`
+    : `<li class="ams-unordered-list__item">${item.label}</li>`;
 }
 
 function buildToc(items: Item[]) {

@@ -1,0 +1,20 @@
+---
+title: Content test overview
+description: Overview of all content test pages
+unlisted: true
+hide_table_of_contents: true
+---
+
+{/* @license CC0-1.0 */}
+
+import { getCollection } from "astro:content";
+import { ContentTestOverview } from "./ContentTestOverview";
+import TestPageNote from "./_test-page-note.md";
+
+export const pages = await getCollection("contentTest");
+
+Overview of all content test pages
+
+<TestPageNote />
+
+<ContentTestOverview pages={pages} />
