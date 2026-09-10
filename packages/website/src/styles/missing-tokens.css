@@ -29,6 +29,7 @@
   --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
   --ma-body-copy-items-max-inline-size: 65ch;
   --utrecht-separator-block-size: var(--basis-size-5xs);
+  --denhaag-side-navigation-link-active-font-weight: 400;
 }
 
 /**
@@ -162,15 +163,26 @@ html .utrecht-link--html-a:any-link:focus {
 
   /* denhaag.side-navigation.link.padding-inline-start */
   padding-inline-start: var(--basis-space-inline-xl);
+
+  @media (forced-colors: none) {
+    border-color: transparent;
+    border-inline-start-style: solid;
+    border-inline-start-width: var(--basis-border-width-lg);
+    translate: calc(var(--basis-border-width-lg) * -1);
+  }
 }
 
 .denhaag-side-navigation__link--current {
   /* denhaag.side-navigation.link.current.border-color */
   border-color: var(--basis-color-accent-1-border-default);
-  border-inline-start-style: solid;
 
-  /* denhaag.side-navigation.link.current.border-inline-start.width */
-  border-inline-start-width: var(--basis-border-width-lg);
+  /* denhaag.side-navigation.link.current.background-color */
+  background-color: var(--basis-color-accent-1-bg-default);
+
+  @media (forced-colors: active) {
+    border-inline-start-style: solid;
+    border-inline-start-width: var(--basis-border-width-lg);
+  }
 }
 
 .denhaag-side-navigation__link:hover {
