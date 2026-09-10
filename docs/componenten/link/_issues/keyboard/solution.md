@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor de Link duidelijk herkenbaar is als Link, bijvoorbeeld door de Link te onderstrepen.
+Zorg ervoor de link bereikbaar en bedienbaar met het toetsenbord is.

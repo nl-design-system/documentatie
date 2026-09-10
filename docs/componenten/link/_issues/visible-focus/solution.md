@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor de Link duidelijk herkenbaar is als Link, bijvoorbeeld door de Link te onderstrepen.
+Zorg ervoor dat de link een duidelijke focusrand of focusstijl heeft.
