@@ -173,11 +173,11 @@ html .utrecht-link--html-a:any-link:focus {
 }
 
 .denhaag-side-navigation__link--current {
-  /* denhaag.side-navigation.link.current.border-color */
-  border-color: var(--basis-color-accent-1-border-default);
-
   /* denhaag.side-navigation.link.current.background-color */
   background-color: var(--basis-color-accent-1-bg-default);
+
+  /* denhaag.side-navigation.link.current.border-color */
+  border-color: var(--basis-color-accent-1-border-default);
 
   @media (forced-colors: active) {
     border-inline-start-style: solid;
@@ -206,18 +206,18 @@ html .utrecht-link--html-a:any-link:focus {
 
 .denhaag-side-navigation__expand-button:hover {
   /* denhaag.side-navigation.expand-button.hover.color */
-  --denhaag-icon-button-hover-color: var(--basis-color-action-2-color-hover);
+  --denhaag-icon-button-hover-color: var(--basis-color-action-1-color-hover);
 
   /* denhaag.side-navigation.expand-button.hover.color */
-  background-color: var(--basis-color-action-2-bg-hover);
+  background-color: var(--basis-color-action-1-bg-hover);
 }
 
 .denhaag-side-navigation__expand-button:active {
   /* denhaag.side-navigation.expand-button.active.color */
-  --denhaag-icon-button-hover-color: var(--basis-color-action-2-color-active);
+  --denhaag-icon-button-hover-color: var(--basis-color-action-1-color-active);
 
   /* denhaag.side-navigation.expand-button.active.background-color */
-  background-color: var(--basis-color-action-2-bg-active);
+  background-color: var(--basis-color-action-1-bg-active);
 }
 .denhaag-side-navigation__expand-button:focus-visible {
   /* denhaag.side-navigation.expand-button.focus.background-color */
