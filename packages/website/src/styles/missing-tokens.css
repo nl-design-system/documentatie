@@ -232,6 +232,8 @@ html .utrecht-link--html-a:any-link:focus {
 
 .denhaag-side-navigation__expand-button {
   svg {
+    block-size: var(--basis-size-icon-md);
+    inline-size: var(--basis-size-icon-md);
     transition: transform 250ms ease-in-out;
   }
 }
