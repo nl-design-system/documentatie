@@ -47,10 +47,10 @@ Een proces is een reeks stappen die samen één taak afmaken: een bestelling, ee
 In 3 gevallen is opnieuw invullen wel logisch:
 
 - Het opnieuw invoeren is het doel zelf, bijvoorbeeld bij een oefening die het geheugen test.
-- De herhaling is nodig voor de beveiliging, zoals het 2 keer invoeren van een nieuw wachtwoord dat je niet kunt tonen.
+- De herhaling is nodig voor de beveiliging, zoals het 2 keer invoeren van een nieuw wachtwoord.
 - De eerder ingevoerde gegevens zijn niet meer geldig.
 
-2 dingen zorgen geregeld voor verwarring. Wat de browser zelf invult, telt niet mee: de site zelf moet de gegevens aanbieden. En het gaat alleen over één doorlopend proces. Sluit de bezoeker de site af en komt die later terug, dan begint er een nieuw proces en hoeft de site niets te onthouden.
+Op 2 punten ontstaat geregeld verwarring. Wat de browser zelf invult, telt niet mee: de site zelf moet de gegevens aanbieden. En het gaat alleen over één doorlopend proces. Sluit de bezoeker de site af en komt die later terug, dan begint er een nieuw proces en hoeft de site niets te onthouden.
 
 Wie moeite heeft met onthouden, wie de pagina laat voorlezen en daardoor niet even terug kan bladeren, of wie typen zwaar of pijnlijk vindt, geeft het op bij elke stap die om herhaling vraagt. Voorvullen scheelt hun de meeste moeite, en het scheelt iedereen typefouten.
 
@@ -58,7 +58,7 @@ Wie moeite heeft met onthouden, wie de pagina laat voorlezen en daardoor niet ev
 
 ### Het formulier is leeg na een foutmelding
 
-De bezoeker verstuurt het formulier, één veld wordt afgekeurd en de pagina komt terug met alle velden leeg. Alles moet opnieuw, inclusief de velden die goed waren ingevuld. Bij een lang formulier is dat het punt waarop iemand de aanvraag niet afmaakt.
+De bezoeker verstuurt het formulier, de site keurt één veld af en de pagina komt terug met alle velden leeg. Alles moet opnieuw, inclusief de velden die goed waren ingevuld. Bij een lang formulier is dat het punt waarop iemand de aanvraag niet afmaakt.
 
 **Hoe te testen:** vul een formulier volledig in, maak in één veld bewust een fout en verstuur het. Staan de andere waarden er na de foutmelding nog?
 
@@ -98,7 +98,7 @@ De bezoeker verstuurt het formulier, één veld wordt afgekeurd en de pagina kom
 
 ### Teruggaan naar een eerdere stap wist de ingevulde velden
 
-De bezoeker gaat in een meerstappenformulier een stap terug om iets te corrigeren en vindt daar lege velden. Om één cijfer aan te passen vult de bezoeker de hele stap opnieuw in. Dat gebeurt zowel met een terugknop in het formulier als met de terugknop van de browser.
+De bezoeker gaat in een meerstappenformulier een stap terug om iets te corrigeren en vindt daar lege velden. Om één cijfer aan te passen vult de bezoeker de hele stap opnieuw in. Dat gebeurt met een terugknop in het formulier en met de terugknop van de browser.
 
 **Hoe te testen:** vul een stap in, ga naar de volgende stap en dan weer terug. Doe dat met de terugknop in het formulier én met die van de browser. Staan de waarden er nog?
 
@@ -140,7 +140,7 @@ In stap 1 vult de bezoeker een kenmerk in, in stap 3 staat datzelfde veld leeg. 
   ```
 </Guideline>
 
-Voorvullen is geen dwang: de bezoeker moet de waarde kunnen aanpassen.
+De bezoeker moet de voorgevulde waarde kunnen aanpassen.
 
 **Wie kan dit oplossen:** een developer geeft de waarde uit de eerdere stap mee aan het veld in de latere stap.
 
@@ -173,7 +173,7 @@ Eén formulier heeft 2 velden voor hetzelfde e-mailadres, en beide moet je zelf 
   ```
 </Guideline>
 
-Heb je toch een tweede veld nodig, bijvoorbeeld omdat de kopie naar iemand anders mag, vul het dan voor met het eerste adres en laat de bezoeker het aanpassen.
+Heb je toch een tweede veld nodig, bijvoorbeeld omdat de kopie naar iemand anders gaat, vul het dan voor met het eerste adres en laat de bezoeker het aanpassen.
 
 **Wie kan dit oplossen:**
 
@@ -182,7 +182,7 @@ Heb je toch een tweede veld nodig, bijvoorbeeld omdat de kopie naar iemand ander
 
 ### Je typt het bezorgadres nog een keer over als factuuradres
 
-Na het bezorgadres volgt een tweede adresblok voor de facturering. Voor de meeste bezoekers zijn die 2 gelijk, maar er is geen manier om dat aan te geven. Ze typen 5 velden nog een keer.
+Na het bezorgadres volgt een tweede adresblok voor de facturering. Zijn die 2 adressen gelijk, dan is er geen manier om dat aan te geven. De bezoeker typt 5 velden nog een keer.
 
 **Hoe te testen:** vul een bezorgadres in en ga naar de factuurgegevens. Kun je aangeven dat het adres hetzelfde is, of moet je alles opnieuw typen?
 
@@ -208,13 +208,13 @@ Na het bezorgadres volgt een tweede adresblok voor de facturering. Voor de meest
 
 ### Je typt een kenmerk over dat de site zelf heeft aangemaakt
 
-De site toont een referentienummer, een reserveringscode of een betalingskenmerk en vraagt de bezoeker om dat in een volgende stap in te tikken. Zo'n kenmerk controleert niets: de site heeft het zelf aangemaakt en weet het al. Wie het scherm laat voorlezen, moet het onthouden of steeds terugspringen naar de vorige stap.
+De site toont een referentienummer, een reserveringscode of een betalingskenmerk en vraagt de bezoeker om dat in een volgende stap in te typen. Zo'n kenmerk controleert niets: de site heeft het zelf aangemaakt en weet het al. Wie het scherm laat voorlezen, moet het onthouden of steeds terugspringen naar de vorige stap.
 
-Dit geldt niet voor een code die er juist is om iets te controleren. Een CAPTCHA en een code die je per sms of e-mail krijgt, vallen onder de uitzonderingen: vul je die automatisch in, dan controleren ze niets meer. De CAPTCHA zelf brengt andere problemen mee, maar niet dit.
+Dit geldt niet voor een code die er juist is om iets te controleren. Een CAPTCHA en een code die je per sms of e-mail krijgt, typ je wel zelf in. Vult de site ze voor, dan controleren ze niets meer. Een CAPTCHA brengt voor de bezoeker wel andere problemen mee.
 
 **Hoe te testen:** kijk of je in een proces een kenmerk moet overtypen dat je een stap eerder op het scherm kreeg. Controleert dat kenmerk iets, of heeft de site het zelf bedacht?
 
-<Guideline appearance="dont" title="De bezoeker tikt het getoonde kenmerk zelf in">
+<Guideline appearance="dont" title="De bezoeker typt het getoonde kenmerk zelf in">
   ```html
   <p>
     Je reserveringscode is <strong>RSV-8241</strong>. Vul deze hieronder in.
@@ -238,7 +238,7 @@ Dit geldt niet voor een code die er juist is om iets te controleren. Een CAPTCHA
 
 ### De zoekopdracht of filterkeuze is weg als je terugkomt
 
-De bezoeker zoekt iets op, stelt filters in, opent een resultaat en gaat terug naar de lijst. De zoekterm en de filters zijn gewist. Om het volgende resultaat te bekijken moet alles opnieuw worden ingesteld.
+De bezoeker zoekt iets op, stelt filters in, opent een resultaat en gaat terug naar de lijst. De zoekterm en de filters zijn gewist. Om het volgende resultaat te bekijken stelt de bezoeker alles opnieuw in.
 
 **Hoe te testen:** zoek iets op met een filter erbij, open een resultaat en ga terug naar de resultatenlijst. Staan de zoekterm en de filters er nog?
 
@@ -260,9 +260,9 @@ De bezoeker zoekt iets op, stelt filters in, opent een resultaat en gaat terug n
 
 ### De site laat het voorvullen aan de browser over
 
-Het formulier laat de velden leeg en vertrouwt erop dat de browser ze aanvult. Dat werkt alleen bij bezoekers die eerder dezelfde gegevens hebben ingevuld, die het bewaren aan hebben staan en die op hetzelfde apparaat zitten. Voor de rest blijft het veld leeg. De site moet de gegevens zelf aanbieden.
+Het formulier laat de velden leeg en vertrouwt erop dat de browser ze aanvult. Dat werkt alleen bij bezoekers die eerder dezelfde gegevens hebben ingevuld, die het bewaren aan hebben staan en die hetzelfde apparaat gebruiken. Voor de rest blijft het veld leeg. De site moet de gegevens zelf aanbieden.
 
-**Hoe te testen:** doorloop het proces in een browser zonder opgeslagen gegevens, bijvoorbeeld in een privévenster. Wordt de eerdere invoer dan nog steeds aangeboden?
+**Hoe te testen:** doorloop het proces in een browser zonder opgeslagen gegevens, bijvoorbeeld in een privévenster. Biedt de site de eerdere invoer dan nog aan?
 
 <Guideline appearance="dont" title="Alleen op de browser vertrouwen">
   ```html
