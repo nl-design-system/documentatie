@@ -7,6 +7,6 @@ export const siteDescription =
 export const siteKeywords = ['nl design system', 'design system'];
 
 export const siteThemeColor = '#ffffff';
-export const siteColorScheme = 'light';
+export const siteColorScheme = 'light dark';
 
 export const twitterCard = 'summary_large_image';
