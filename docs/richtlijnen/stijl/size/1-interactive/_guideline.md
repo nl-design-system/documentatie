@@ -1,6 +1,8 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor dat interactieve elementen zoals buttons, links en formuliervelden groot genoeg zijn om makkelijk aan te wijzen met een muis, vinger of andere aanwijzer. Een groter aanwijsgebied maakt het makkelijker om een element te selecteren en verkleint de kans dat iemand per ongeluk een ander element activeert.
+Geef interactieve elementen een groot aanwijzergebied van tenminste 48 bij 48 pixels, zodat gebruikers gemakkelijk het juiste onderdeel kunnen activeren. Uit onderzoek blijkt dat de 2 keer het minimum van WCAG het meest gebruiksvriendelijk is voor bijvoorbeeld buttons, links en formuliervelden.
+
+<!-- technically is het "4 keer het minimum van WCAG" omdat het een oppervlakte is, maar ik denk dat 2 keer duidelijker is: 2 x 24px = 48px -->
 
 Het aanwijsgebied (target size) hoeft niet gelijk te zijn aan de zichtbare grootte van een element. Een icoon van 24px kan bijvoorbeeld onderdeel zijn van een groter interactief element. Door rondom het icoon ruimte toe te voegen, kan het aanwijsgebied groter worden zonder dat het icoon zelf groter wordt.
 
