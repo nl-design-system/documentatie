@@ -4,6 +4,7 @@
 :root {
   --ams-unordered-list-gap: var(--basis-space-row-lg);
   --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
+  --ams-unordered-list-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
   --ams-unordered-list-list-style-type: disc;
   --rhc-card-inline-size: 100% !important;
   --ma-estafette-badge-border-width: 1px;
@@ -229,6 +230,20 @@ html .utrecht-link--html-a:any-link:focus {
   svg {
     transform: rotate(-180deg);
   }
+}
+
+.ams-unordered-list:not(.ams-unordered-list--no-markers) .ams-unordered-list__item {
+  margin-block-end: var(--basis-space-block-sm);
+  margin-block-start: var(--basis-space-block-sm);
+}
+
+.ams-unordered-list {
+  gap: unset !important;
+}
+
+.ams-unordered-list__item > .ams-unordered-list,
+.utrecht-ordered-list__item > .ams-unordered-list {
+  margin-block-start: var(--basis-space-block-sm);
 }
 
 kbd {
