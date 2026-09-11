@@ -92,7 +92,7 @@ export default {
       designTokens: {
         ...missingFluidTokens,
       },
-    }),
+    }) as unknown,
     customMedia(),
   ],
 };
