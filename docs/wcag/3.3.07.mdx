@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.3.7 Overbodige invoer
 pagination_label: WCAG-succescriterium 3.3.7 Overbodige invoer
-description: Zorg ervoor dat een gebruiker geen informatie dubbel hoeft in te vullen in een formulier.
+description: Gegevens die de bezoeker binnen hetzelfde proces al heeft ingevuld, staan al in het veld of zijn te kiezen. Niemand hoeft dezelfde informatie 2 keer te typen.
 slug: 3.3.7
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,23 @@ keywords:
   - understandable
   - input assistance
   - redundant entry
+  - overbodige invoer
+  - voorvullen
+  - formulier
+  - meerstappenformulier
+  - proces
+  - autofill
+  - e-mailadres
+  - WCAG 3.3.7
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@components/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.3.7-summary.md";
 
@@ -32,78 +40,297 @@ import Summary from "./summaries/_3.3.7-summary.md";
   {"WCAG-succescriterium 3.3.7 Overbodige invoer"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">
-      Maak het gemakkelijker om een [proces](/woordenlijst/#proces) van meerdere stappen te doorlopen.
-    </dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Vraag geen dubbele informatie in dezelfde sessie.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Mensen met cognitieve beperkingen kunnen moeite hebben met het onthouden van eerdere invoer.
-    </dd>
-  </div>
-</dl>
-
-## Uitleg
-
 <Summary />
 
-In een proces kan dezelfde informatie op meerdere momenten handig zijn. Informatie is soms eerder ingevoerd door de gebruiker, of eerder aangeboden aan de gebruiker. Als deze informatie opnieuw moet worden ingevoerd is:
+Een proces is een reeks stappen die samen één taak afmaken: een bestelling, een aanvraag, een registratie. Zo'n proces kan over meerdere pagina's en zelfs over meerdere websites lopen, bijvoorbeeld als het afrekenen bij een betaaldienst gebeurt. Het proces stopt zodra de bezoeker de taak afrondt of de site verlaat.
 
-- de informatie automatisch ingevuld, of
-- beschikbaar voor de gebruiker om te selecteren.
+In 3 gevallen is opnieuw invullen wel logisch:
 
-Behalve wanneer:
+- Het opnieuw invoeren is het doel zelf, bijvoorbeeld bij een oefening die het geheugen test.
+- De herhaling is nodig voor de beveiliging, zoals het 2 keer invoeren van een nieuw wachtwoord.
+- De eerder ingevoerde gegevens zijn niet meer geldig.
 
-- opnieuw invoeren van de informatie essentieel is (bijvoorbeeld bij een geheugenspelletje),
-- de dubbele informatie nodig is om de veiligheid te waarborgen (zoals bevestiging van een wachtwoord), of
-- eerder ingevoerde informatie niet langer geldig is.
+Op 2 punten ontstaat geregeld verwarring. Wat de browser zelf invult, telt niet mee: de site zelf moet de gegevens aanbieden. En het gaat alleen over één doorlopend proces. Sluit de bezoeker de site af en komt die later terug, dan begint er een nieuw proces en hoeft de site niets te onthouden.
 
-Dit maakt het voor alle gebruikers makkelijker om gegevens door te geven, maar speciaal voor mensen die moeite hebben met lezen, typen of onthouden.
+Wie moeite heeft met onthouden, wie de pagina laat voorlezen en daardoor niet even terug kan bladeren, of wie typen zwaar of pijnlijk vindt, geeft het op bij elke stap die om herhaling vraagt. Voorvullen scheelt hun de meeste moeite, en het scheelt iedereen typefouten.
 
-## Gerelateerde NL Design System-richtlijnens
+## Veelgemaakte fouten
 
-- Formulieren: [Uit te vragen informatie](/richtlijnen/formulieren/vragen)
-- Formulieren: [Meerdere stappen](/richtlijnen/formulieren/meerdere-stappen/)
+### Het formulier is leeg na een foutmelding
+
+De bezoeker verstuurt het formulier, de site keurt één veld af en de pagina komt terug met alle velden leeg. Alles moet opnieuw, inclusief de velden die goed waren ingevuld. Bij een lang formulier is dat het punt waarop iemand de aanvraag niet afmaakt.
+
+**Hoe te testen:** vul een formulier volledig in, maak in één veld bewust een fout en verstuur het. Staan de andere waarden er na de foutmelding nog?
+
+<Guideline appearance="dont" title="Alle velden leeg na een afgekeurd veld">
+  ```html
+  <p class="example-error">Het telefoonnummer klopt niet.</p>
+
+<label for="name">Naam</label>
+<input type="text" id="name" name="name" value="" />
+
+  <label for="phone">Telefoonnummer</label>
+  <input type="tel" id="phone" name="phone" value="" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De goede waarden blijven staan, alleen het foute veld is gemarkeerd">
+  ```html
+  <label for="name">Naam</label>
+  <input type="text" id="name" name="name" value="Jan de Vries" />
+
+  <label for="phone">Telefoonnummer</label>
+  <input
+    type="tel"
+    id="phone"
+    name="phone"
+    value="06 1234 567"
+    aria-invalid="true"
+    aria-describedby="phone-error"
+  />
+  <p id="phone-error" class="example-error">
+    Vul 10 cijfers in, bijvoorbeeld 0612345678.
+  </p>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer geeft bij het opnieuw tonen van het formulier alle eerder ingevulde waarden terug mee.
+
+### Teruggaan naar een eerdere stap wist de ingevulde velden
+
+De bezoeker gaat in een meerstappenformulier een stap terug om iets te corrigeren en vindt daar lege velden. Om één cijfer aan te passen vult de bezoeker de hele stap opnieuw in. Dat gebeurt met een terugknop in het formulier en met de terugknop van de browser.
+
+**Hoe te testen:** vul een stap in, ga naar de volgende stap en dan weer terug. Doe dat met de terugknop in het formulier én met die van de browser. Staan de waarden er nog?
+
+<Guideline appearance="dont" title="Lege velden na een stap terug">
+  ```html
+  <label for="house-number">Huisnummer</label>
+  <input type="text" id="house-number" name="house-number" value="" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De eerder ingevulde waarde staat er nog">
+  ```html
+  <label for="house-number">Huisnummer</label>
+  <input type="text" id="house-number" name="house-number" value="12" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer bewaart de ingevulde gegevens in de sessie of op de server en vult de velden daarmee als de bezoeker terugkeert.
+
+### Je typt gegevens uit een eerdere stap later nog een keer in
+
+In stap 1 vult de bezoeker een kenmerk in, in stap 3 staat datzelfde veld leeg. De site heeft de waarde, maar biedt die niet aan. De bezoeker moet terugbladeren of het uit het hoofd intypen.
+
+**Hoe te testen:** loop een proces van begin tot eind door en noteer welk gegeven je meer dan één keer intypt. Is dat gegeven bij de tweede keer voorgevuld of te kiezen?
+
+<Guideline appearance="dont" title="Hetzelfde veld opnieuw leeg in een latere stap">
+  ```html
+  <h1>Stap 3: controle</h1>
+  <label for="reference">Kenmerk van de aanvraag</label>
+  <input type="text" id="reference" name="reference" value="" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De eerdere waarde staat er en blijft aanpasbaar">
+  ```html
+  <h1>Stap 3: controle</h1>
+  <label for="reference">Kenmerk van de aanvraag</label>
+  <input type="text" id="reference" name="reference" value="AV-2026-0481" />
+  ```
+</Guideline>
+
+De bezoeker moet de voorgevulde waarde kunnen aanpassen.
+
+**Wie kan dit oplossen:** een developer geeft de waarde uit de eerdere stap mee aan het veld in de latere stap.
+
+### Je typt hetzelfde gegeven 2 keer in één formulier
+
+Eén formulier heeft 2 velden voor hetzelfde e-mailadres, en beide moet je zelf vullen. Het tweede veld kan ook pas verschijnen na een keuze, bijvoorbeeld bij een optie om een kopie van het formulier te ontvangen. Dat veld is leeg en biedt geen manier om de eerder ingevulde waarde over te nemen.
+
+**Hoe te testen:** vink in een formulier elke optie aan die een extra veld laat verschijnen. Vraagt zo'n veld om iets wat je hierboven al hebt ingevuld?
+
+<Guideline appearance="dont" title="Een tweede leeg veld voor hetzelfde gegeven">
+  ```html
+  <label for="email">E-mailadres</label>
+  <input type="email" id="email" name="email" value="jan@example.com" />
+
+<input type="checkbox" id="copy" name="copy" />
+<label for="copy">Ik wil een kopie van dit formulier ontvangen</label>
+
+  <label for="email-copy">E-mailadres voor de kopie</label>
+  <input type="email" id="email-copy" name="email-copy" value="" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De keuze zelf is genoeg, zonder tweede veld">
+  ```html
+  <label for="email">E-mailadres</label>
+  <input type="email" id="email" name="email" value="jan@example.com" />
+
+  <input type="checkbox" id="copy" name="copy" />
+  <label for="copy">Stuur een kopie naar jan@example.com</label>
+  ```
+</Guideline>
+
+Heb je toch een tweede veld nodig, bijvoorbeeld omdat de kopie naar iemand anders gaat, vul het dan voor met het eerste adres en laat de bezoeker het aanpassen.
+
+**Wie kan dit oplossen:**
+
+- Een webredacteur haalt het tweede veld uit het formulier als de keuze zelf genoeg is.
+- Een developer vult het tweede veld met de waarde uit het eerste veld en laat de bezoeker die aanpassen.
+
+### Je typt het bezorgadres nog een keer over als factuuradres
+
+Na het bezorgadres volgt een tweede adresblok voor de facturering. Zijn die 2 adressen gelijk, dan is er geen manier om dat aan te geven. De bezoeker typt 5 velden nog een keer.
+
+**Hoe te testen:** vul een bezorgadres in en ga naar de factuurgegevens. Kun je aangeven dat het adres hetzelfde is, of moet je alles opnieuw typen?
+
+<Guideline appearance="dont" title="Een tweede adresblok zonder overnamemogelijkheid">
+  ```html
+  <h2>Factuuradres</h2>
+  <label for="billing-street">Straat</label>
+  <input type="text" id="billing-street" name="billing-street" value="" />
+  <label for="billing-postal-code">Postcode</label>
+  <input type="text" id="billing-postal-code" name="billing-postal-code" value="" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een keuze om het bezorgadres over te nemen">
+  ```html
+  <h2>Factuuradres</h2>
+  <input type="checkbox" id="same-address" name="same-address" checked />
+  <label for="same-address">Mijn factuuradres is hetzelfde als mijn bezorgadres</label>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een keuze toe waarmee de bezoeker het eerdere adres overneemt.
+
+### Je typt een kenmerk over dat de site zelf heeft aangemaakt
+
+De site toont een referentienummer, een reserveringscode of een betalingskenmerk en vraagt de bezoeker om dat in een volgende stap in te typen. Zo'n kenmerk controleert niets: de site heeft het zelf aangemaakt en weet het al. Wie het scherm laat voorlezen, moet het onthouden of steeds terugspringen naar de vorige stap.
+
+Dit geldt niet voor een code die er juist is om iets te controleren. Een CAPTCHA en een code die je per sms of e-mail krijgt, typ je wel zelf in. Vult de site ze voor, dan controleren ze niets meer. Een CAPTCHA brengt voor de bezoeker wel andere problemen mee.
+
+**Hoe te testen:** kijk of je in een proces een kenmerk moet overtypen dat je een stap eerder op het scherm kreeg. Controleert dat kenmerk iets, of heeft de site het zelf bedacht?
+
+<Guideline appearance="dont" title="De bezoeker typt het getoonde kenmerk zelf in">
+  ```html
+  <p>
+    Je reserveringscode is <strong>RSV-8241</strong>. Vul deze hieronder in.
+  </p>
+  <label for="reservation-code">Reserveringscode</label>
+  <input type="text" id="reservation-code" name="reservation-code" value="" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Het kenmerk staat al in het veld">
+  ```html
+  <label for="reservation-code">Reserveringscode</label>
+  <input type="text" id="reservation-code" name="reservation-code" value="RSV-8241" readonly />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:**
+
+- Een developer laat het veld helemaal weg als de site het kenmerk toch al kent.
+- Een developer vult het kenmerk in het veld als het veld moet blijven.
+
+### De zoekopdracht of filterkeuze is weg als je terugkomt
+
+De bezoeker zoekt iets op, stelt filters in, opent een resultaat en gaat terug naar de lijst. De zoekterm en de filters zijn gewist. Om het volgende resultaat te bekijken stelt de bezoeker alles opnieuw in.
+
+**Hoe te testen:** zoek iets op met een filter erbij, open een resultaat en ga terug naar de resultatenlijst. Staan de zoekterm en de filters er nog?
+
+<Guideline appearance="dont" title="Een leeg zoekveld na terugkeer">
+  ```html
+  <label for="search">Zoek in het archief</label>
+  <input type="search" id="search" name="search" value="" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De zoekterm en de filters staan er nog">
+  ```html
+  <label for="search">Zoek in het archief</label>
+  <input type="search" id="search" name="search" value="vergunning 2025" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zet de zoekterm en de filters in de URL of in de sessie en vult ze bij terugkeer opnieuw in.
+
+### De site laat het voorvullen aan de browser over
+
+Het formulier laat de velden leeg en vertrouwt erop dat de browser ze aanvult. Dat werkt alleen bij bezoekers die eerder dezelfde gegevens hebben ingevuld, die het bewaren aan hebben staan en die hetzelfde apparaat gebruiken. Voor de rest blijft het veld leeg. De site moet de gegevens zelf aanbieden.
+
+**Hoe te testen:** doorloop het proces in een browser zonder opgeslagen gegevens, bijvoorbeeld in een privévenster. Biedt de site de eerdere invoer dan nog aan?
+
+<Guideline appearance="dont" title="Alleen op de browser vertrouwen">
+  ```html
+  <label for="email">E-mailadres</label>
+  <input type="email" id="email" name="email" autocomplete="email" value="" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="De site vult de eerdere invoer in, met autocomplete als extra">
+  ```html
+  <label for="email">E-mailadres</label>
+  <input type="email" id="email" name="email" autocomplete="email" value="jan@example.com" />
+  ```
+</Guideline>
+
+Het `autocomplete`-attribuut blijft nuttig, want het helpt bezoekers die hun gegevens in de browser hebben staan. Zet het erbij, maar reken er niet op.
+
+**Wie kan dit oplossen:** een developer vult het veld met de waarde die de site al heeft, en houdt `autocomplete` als aanvulling.
 
 ## Hoe te testen
 
-Controleer voor alle plekken waar gebruikers informatie in kunnen voeren.
+### Voor iedereen
 
-Is de informatie eerder ingevuld? Dan moet deze:
+1. Doorloop een proces van begin tot eind: een bestelling, een aanvraag of een registratie. Noteer elk gegeven dat je meer dan één keer intypt.
+2. Kijk per herhaling of het veld al gevuld was, of dat je de eerdere waarde kon kiezen. Is dat niet zo, ga dan na of een van de 3 uitzonderingen geldt.
+3. Maak in één veld bewust een fout en verstuur het formulier. Staan de andere waarden er na de foutmelding nog?
+4. Ga een stap terug in het proces, met de knop in het formulier en met die van de browser. Staan de waarden er nog?
+5. Vink elke optie aan die een extra veld laat verschijnen. Vraagt zo'n veld om iets wat je al hebt ingevuld?
+6. Kijk of je ergens een code moet overtypen die je een stap eerder op het scherm kreeg.
 
-- automatisch worden ingevuld, of
-- beschikbaar zijn voor de gebruiker om te selecteren.
+### Voor developers
 
-Een browser die informatie in kan vullen is prettig (en soms essentieel: [WCAG succescriterium 1.3.5 Identificeer het doel van de input](/wcag/1.3.5)) maar is niet voldoende voor goedkeuring van dit criterium.
+1. Doe de hele test in een privévenster of een schoon profiel. Zonder opgeslagen browsergegevens zie je wat de site zelf aanbiedt en wat van de browser komt.
+2. Bekijk per stap welke waarden de server al heeft. Komt een van die waarden verderop terug als leeg veld, dan hoort daar een `value` of een keuzelijst.
+3. Controleer het gedrag na een validatiefout aan de serverkant. Krijgt het opnieuw getoonde formulier alle eerder ingevulde waarden mee?
+4. Loop de uitzonderingen na voor elk veld dat je bewust 2 keer vraagt. Bij een nieuw wachtwoord is dat terecht, bij een e-mailadres niet.
 
-**Let op**: Het proces kan over meerdere domeinen verdeeld zijn.
+Dit is niet met een testtool te vinden. Een scan ziet wel een leeg veld, maar niet dat de bezoeker die waarde 2 stappen eerder al heeft ingevuld.
+
+## Gerelateerde succescriteria
+
+- [3.3.4 Foutpreventie (wettelijk, financieel, gegevens)](/wcag/3.3.4/): bij een transactie of het verwijderen van gegevens kan de bezoeker de invoer nakijken en corrigeren. Lees hier meer over de overzichtsstap aan het eind van een proces.
+- [3.3.1 Foutidentificatie](/wcag/3.3.1/): het formulier meldt welk veld fout is en wat er mis is. Lees hier meer als je het gedrag na een foutmelding verbetert.
+- [3.3.2 Labels of instructies](/wcag/3.3.2/): duidelijke labels en instructies bij invoervelden. Lees hier meer als een voorgevuld veld uitleg nodig heeft.
+- [1.3.5 Identificeer het doel van de input](/wcag/1.3.5/): met `autocomplete` leg je vast wat een veld over de bezoeker vraagt. Lees hier meer over het juiste attribuut per veld.
+- [3.3.8 Toegankelijke authenticatie (minimum)](/wcag/3.3.8/): inloggen lukt zonder iets te onthouden of uit te puzzelen. Lees hier meer als je proces een CAPTCHA of een andere test bevat.
+- [2.2.1 Timing aanpasbaar](/wcag/2.2.1/): een sessie die verloopt tijdens het invullen wist de ingevulde gegevens. Lees hier meer als je proces een tijdslimiet heeft.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- [Vraag niet meerdere keren dezelfde informatie uit](/richtlijnen/formulieren/vragen/voorkom-dubbel-werk): stel elke vraag één keer, ook als het formulier uit meerdere stappen bestaat.
+- [Bied als laatste stap een opsomming aan van alle ingevoerde gegevens](/richtlijnen/formulieren/meerdere-stappen/samenvatting): laat de bezoeker aan het eind alles nakijken en aanpassen, zonder opnieuw in te vullen.
+
+## Relevante bronnen
+
+- [<span lang="en">G221: Provide data from a previous step in a process</span>](https://www.w3.org/WAI/WCAG22/Techniques/general/G221): de techniek die W3C aandraagt, met codevoorbeelden van voorvullen en laten kiezen. Engelstalig.
+- [<span lang="en">Check answers pattern</span>](https://design-system.service.gov.uk/patterns/check-answers/): bekijk hoe je gegevens uit eerdere stappen terugtoont en aanpasbaar houdt. Van GOV.UK, Engelstalig.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## W3C referenties
+## W3C-referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.3.7 Redundant Entry</span>](https://www.w3.org/TR/WCAG22/#redundant-entry).
 - Nederlandse vertaling van het WCAG-succescriterium: [3.3.7 Overbodige invoer](https://www.w3.org/Translations/WCAG22-nl/#redundant-entry).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.3.7 Redundant Entry</span>](https://www.w3.org/WAI/WCAG22/quickref/#redundant-entry).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.3.7 Redundant Entry</span>](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
