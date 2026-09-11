@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor de link bereikbaar en bedienbaar is met het toetsenbord.
+Zorg ervoor dat de link bereikbaar en bedienbaar is met het toetsenbord.
