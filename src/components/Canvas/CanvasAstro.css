@@ -1,3 +1,176 @@
+/*
+ * Dark mode fix: the live preview must always render in the light color scheme,
+ * even when the site itself is in dark mode, because guideline text describes
+ * exact contrast ratios that only hold against a fixed light background.
+ *
+ * `color-scheme: light` alone doesn't achieve this — it only affects native UA
+ * rendering, not the `--basis-*`/`--utrecht-*` design tokens, which get resolved
+ * once in dark mode's `:root` override and inherit down unchanged from there. So
+ * every token used by .utrecht-html content is redeclared below, pinned back to
+ * its light value: first the `--basis-*` primitives, then the `--utrecht-*`
+ * tokens, derived from them using the same formula as ma-design-tokens' theme.css.
+ *
+ * This is a workaround. The real fix belongs upstream in ma-design-tokens: if its
+ * dark values were applied via `light-dark()` keyed off the inherited `color-scheme`
+ * property instead of an unconditional `@media (prefers-color-scheme: dark)` import
+ * at `:root`, `color-scheme: light` here would be enough on its own, and none of
+ * this token list would need to exist.
+ */
+/* stylelint-disable-next-line selector-class-pattern */
+.voorbeeld-theme {
+  --basis-color-action-1-inverse-color-active: #fff;
+  --basis-color-action-1-inverse-color-default: #fff;
+  --basis-color-action-1-inverse-color-hover: #fff;
+  --basis-color-action-2-color-active: #1a4061;
+  --basis-color-action-2-color-default: #255d8d;
+  --basis-color-action-2-color-hover: #1f4e77;
+  --basis-color-default-bg-active: #e5e5e6;
+  --basis-color-default-bg-default: #f0f1f1;
+  --basis-color-default-bg-hover: #eaebec;
+  --basis-color-default-border-active: #3c3e41;
+  --basis-color-default-border-default: #575a5e;
+  --basis-color-default-border-hover: #494b4f;
+  --basis-color-default-color-active: #3c3e41;
+  --basis-color-default-color-default: #575a5e;
+  --basis-color-default-color-document: #1b1c1d;
+  --basis-color-default-color-hover: #494b4f;
+  --basis-color-disabled-bg-default: #f0f1f1;
+  --basis-color-disabled-border-subtle: #c2c4c6;
+  --basis-color-disabled-color-subtle: #616368;
+  --basis-color-highlight-inverse-bg-default: #6a5723;
+  --basis-color-highlight-inverse-color-default: #fff;
+  --basis-focus-inverse-outline-color: #fff;
+  --basis-form-control-accent-color: #803d95;
+  --basis-form-control-active-accent-color: #592a67;
+  --basis-form-control-active-background-color: #e5e5e6;
+  --basis-form-control-active-border-color: #3c3e41;
+  --basis-form-control-background-color: #fcfcfc;
+  --basis-form-control-border-color: #575a5e;
+  --basis-form-control-color: #1b1c1d;
+  --basis-form-control-disabled-background-color: #f0f1f1;
+  --basis-form-control-disabled-border-color: #c2c4c6;
+  --basis-form-control-disabled-color: #616368;
+  --basis-form-control-focus-accent-color: #fcfcfc;
+  --basis-form-control-focus-background-color: #fcfcfc;
+  --basis-form-control-focus-border-color: #3c3e41;
+  --basis-form-control-focus-color: #1b1c1d;
+  --basis-form-control-hover-accent-color: #6c337e;
+  --basis-form-control-hover-background-color: #eaebec;
+  --basis-form-control-hover-border-color: #494b4f;
+  --basis-form-control-hover-color: #1b1c1d;
+  --basis-form-control-invalid-background-color: #faeeef;
+  --basis-form-control-invalid-border-color: #a1313c;
+  --basis-form-control-placeholder-color: #616368;
+  --basis-form-control-read-only-background-color: #f6f6f7;
+  --basis-form-control-read-only-color: #1b1c1d;
+  --basis-heading-color: #1b1c1d;
+  --utrecht-blockquote-content-color: var(--basis-color-default-color-document);
+  --utrecht-button-active-background-color: var(--basis-color-default-bg-active);
+  --utrecht-button-active-border-color: var(--basis-color-default-border-active);
+  --utrecht-button-active-color: var(--basis-color-default-color-active);
+  --utrecht-button-border-color: var(--basis-color-default-border-default);
+  --utrecht-button-color: var(--basis-color-default-color-default);
+  --utrecht-button-disabled-background-color: var(--basis-color-disabled-bg-default);
+  --utrecht-button-disabled-border-color: var(--basis-color-disabled-border-subtle);
+  --utrecht-button-disabled-color: var(--basis-color-disabled-color-subtle);
+  --utrecht-button-hover-background-color: var(--basis-color-default-bg-hover);
+  --utrecht-button-hover-border-color: var(--basis-color-default-border-hover);
+  --utrecht-button-hover-color: var(--basis-color-default-color-hover);
+  --utrecht-button-pressed-background-color: var(--basis-color-default-bg-active);
+  --utrecht-button-pressed-border-color: var(--basis-color-default-border-active);
+  --utrecht-button-pressed-color: var(--basis-color-default-color-active);
+  --utrecht-code-background-color: var(--basis-color-default-bg-default);
+  --utrecht-code-block-background-color: var(--basis-color-default-bg-default);
+  --utrecht-code-block-color: var(--basis-color-default-color-document);
+  --utrecht-code-color: var(--basis-color-default-color-document);
+  --utrecht-figure-caption-color: var(--basis-color-default-color-document);
+  --utrecht-focus-inverse-outline-color: var(--basis-focus-inverse-outline-color);
+  --utrecht-form-fieldset-legend-color: var(--basis-color-default-color-document);
+  --utrecht-form-fieldset-legend-disabled-color: var(--basis-color-disabled-color-subtle);
+  --utrecht-form-label-checkbox-color: var(--basis-color-default-color-document);
+  --utrecht-form-label-color: var(--basis-color-default-color-document);
+  --utrecht-heading-1-color: var(--basis-heading-color);
+  --utrecht-heading-2-color: var(--basis-heading-color);
+  --utrecht-heading-3-color: var(--basis-heading-color);
+  --utrecht-heading-4-color: var(--basis-heading-color);
+  --utrecht-heading-5-color: var(--basis-heading-color);
+  --utrecht-heading-6-color: var(--basis-heading-color);
+  --utrecht-link-active-color: var(--basis-color-action-2-color-active);
+  --utrecht-link-color: var(--basis-color-action-2-color-default);
+  --utrecht-link-hover-color: var(--basis-color-action-2-color-hover);
+  --utrecht-link-visited-color: var(--basis-color-action-2-color-default);
+  --utrecht-mark-background-color: var(--basis-color-highlight-inverse-bg-default);
+  --utrecht-mark-color: var(--basis-color-highlight-inverse-color-default);
+  --utrecht-paragraph-color: var(--basis-color-default-color-document);
+  --utrecht-radio-button-active-background-color: var(--basis-form-control-active-background-color);
+  --utrecht-radio-button-active-border-color: var(--basis-form-control-active-border-color);
+  --utrecht-radio-button-active-color: var(--utrecht-radio-button-active-border-color);
+  --utrecht-radio-button-background-color: var(--basis-form-control-background-color);
+  --utrecht-radio-button-border-color: var(--basis-form-control-border-color);
+  --utrecht-radio-button-checked-active-background-color: var(--basis-form-control-active-accent-color);
+  --utrecht-radio-button-checked-active-color: var(--basis-color-action-1-inverse-color-active);
+  --utrecht-radio-button-checked-background-color: var(--basis-form-control-accent-color);
+  --utrecht-radio-button-checked-color: var(--basis-color-action-1-inverse-color-default);
+  --utrecht-radio-button-checked-focus-background-color: var(--basis-form-control-focus-accent-color);
+  --utrecht-radio-button-checked-focus-border-color: var(--basis-form-control-focus-border-color);
+  --utrecht-radio-button-checked-focus-color: var(--basis-form-control-focus-color);
+  --utrecht-radio-button-checked-hover-background-color: var(--basis-form-control-hover-accent-color);
+  --utrecht-radio-button-checked-hover-color: var(--basis-color-action-1-inverse-color-hover);
+  --utrecht-radio-button-color: var(--utrecht-radio-button-border-color);
+  --utrecht-radio-button-disabled-background-color: var(--basis-form-control-disabled-background-color);
+  --utrecht-radio-button-disabled-border-color: var(--basis-form-control-disabled-border-color);
+  --utrecht-radio-button-disabled-color: var(--utrecht-radio-button-disabled-border-color);
+  --utrecht-radio-button-focus-background-color: var(--basis-form-control-focus-background-color);
+  --utrecht-radio-button-focus-border-color: var(--basis-form-control-focus-border-color);
+  --utrecht-radio-button-focus-color: var(--utrecht-radio-button-focus-border-color);
+  --utrecht-radio-button-hover-background-color: var(--basis-form-control-hover-background-color);
+  --utrecht-radio-button-hover-border-color: var(--basis-form-control-hover-border-color);
+  --utrecht-radio-button-hover-color: var(--utrecht-radio-button-hover-border-color);
+  --utrecht-radio-button-invalid-border-color: var(--basis-form-control-invalid-border-color);
+  --utrecht-radio-button-invalid-color: var(--utrecht-radio-button-invalid-border-color);
+  --utrecht-select-background-color: var(--basis-form-control-background-color);
+  --utrecht-select-color: var(--basis-form-control-color);
+  --utrecht-select-disabled-background-color: var(--basis-form-control-disabled-background-color);
+  --utrecht-select-disabled-color: var(--basis-form-control-disabled-color);
+  --utrecht-select-focus-background-color: var(--basis-form-control-focus-background-color);
+  --utrecht-select-focus-color: var(--basis-form-control-focus-color);
+  --utrecht-select-hover-background-color: var(--basis-form-control-hover-background-color);
+  --utrecht-select-hover-color: var(--basis-form-control-hover-color);
+  --utrecht-select-invalid-background-color: var(--basis-form-control-invalid-background-color);
+  --utrecht-table-caption-color: var(--basis-color-default-color-document);
+  --utrecht-table-header-cell-color: var(--basis-color-default-color-document);
+  --utrecht-table-header-color: var(--basis-color-default-color-document);
+  --utrecht-table-row-alternate-even-color: var(--basis-color-default-color-document);
+  --utrecht-table-row-alternate-odd-color: var(--basis-color-default-color-document);
+  --utrecht-textarea-background-color: var(--basis-form-control-background-color);
+  --utrecht-textarea-color: var(--basis-form-control-color);
+  --utrecht-textarea-disabled-background-color: var(--basis-form-control-disabled-background-color);
+  --utrecht-textarea-disabled-color: var(--basis-form-control-disabled-color);
+  --utrecht-textarea-focus-background-color: var(--basis-form-control-focus-background-color);
+  --utrecht-textarea-focus-color: var(--basis-form-control-focus-color);
+  --utrecht-textarea-invalid-background-color: var(--basis-form-control-invalid-background-color);
+  --utrecht-textarea-invalid-color: var(--basis-form-control-color);
+  --utrecht-textarea-placeholder-color: var(--basis-form-control-placeholder-color);
+  --utrecht-textarea-read-only-background-color: var(--basis-form-control-read-only-background-color);
+  --utrecht-textarea-read-only-color: var(--basis-form-control-read-only-color);
+  --utrecht-textbox-background-color: var(--basis-form-control-background-color);
+  --utrecht-textbox-color: var(--basis-form-control-color);
+  --utrecht-textbox-disabled-background-color: var(--basis-form-control-disabled-background-color);
+  --utrecht-textbox-disabled-color: var(--basis-form-control-disabled-color);
+  --utrecht-textbox-focus-background-color: var(--basis-form-control-focus-background-color);
+  --utrecht-textbox-focus-color: var(--basis-form-control-focus-color);
+  --utrecht-textbox-invalid-background-color: var(--basis-form-control-invalid-background-color);
+  --utrecht-textbox-invalid-color: var(--basis-form-control-color);
+  --utrecht-textbox-placeholder-color: var(--basis-form-control-placeholder-color);
+  --utrecht-textbox-read-only-background-color: var(--basis-form-control-read-only-background-color);
+  --utrecht-textbox-read-only-color: var(--basis-form-control-read-only-color);
+  --utrecht-unordered-list-marker-color: var(--basis-color-default-color-document);
+
+  background-color: #fff;
+  color: #1b1c1d;
+  color-scheme: light;
+}
+
 .ma-canvas-astro__example {
   padding-block-end: var(--basis-space-block-xl);
   padding-block-start: var(--basis-space-block-xl);
