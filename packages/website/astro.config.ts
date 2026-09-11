@@ -14,6 +14,7 @@ import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
 import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inline-directives';
 import { remarkUnwrapParagraph } from './markdown-plugins/remark-unwrap-paragraph';
 import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
+import { fileURLToPath } from 'node:url';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const cspDevConfig: AstroUserConfig = {
@@ -107,6 +108,10 @@ export default defineConfig({
         {
           find: /^@nl-design-system-candidate\/(.+)-react\/css$/,
           replacement: '@nl-design-system-candidate/$1-react',
+        },
+        {
+          find: '@site/src/components/Markdown',
+          replacement: fileURLToPath(new URL('./src/components/markdown/markdown.ts', import.meta.url)),
         },
       ],
     },
