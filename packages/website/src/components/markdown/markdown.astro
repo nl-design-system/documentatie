@@ -5,17 +5,10 @@ import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeRaw from 'rehype-raw';
 
-import { remarkUnwrapDiv } from '../../../markdown-plugins/remark-unwrap-div';
-import remarkCustomHeaderId from 'remark-custom-header-id';
-import remarkDirective from 'remark-directive';
-import { remarkUndoInlineDirectives } from '../../../markdown-plugins/remark-undo-inline-directives';
-import { remarkAdmonitions } from '../../../markdown-plugins/admonitions';
-import { remarkUnwrapParagraph } from '../../../markdown-plugins/remark-unwrap-paragraph';
-
-import { nldsComponentsPlugin } from '../../../markdown-plugins/rehype-nlds-components';
 import { shiftHeadings } from './shift-headings.ts';
-import { addTrailingSlashPlugin } from '../../../markdown-plugins/rehype-trailing-slash';
+import { sharedPlugins } from '../../../markdown-plugins/shared-plugins';
 
+import { removeH1FromMarkdown } from '../../../markdown-plugins/remark-remove-h1/index';
 export interface MarkdownProps {
   headingLevel?: number;
   omitH1?: boolean;
@@ -24,25 +17,17 @@ export interface MarkdownProps {
 
 const { content, omitH1, headingLevel } = Astro.props;
 
+const remarkPlugins = sharedPlugins.remarkPlugins
+  // filter out the `removeH1FromMarkdown` plugin because `shiftHeadings` already does that
+  .filter((plugin) => plugin !== removeH1FromMarkdown);
+
 const file = await unified()
   .use(remarkParse)
   .use(shiftHeadings({ headingLevel, omitH1 }))
-  .use(remarkUnwrapDiv)
-  .use(remarkCustomHeaderId)
-  .use(remarkDirective)
-  .use(remarkUndoInlineDirectives)
-  .use(remarkAdmonitions)
-  .use(remarkUnwrapParagraph)
+  .use(remarkPlugins)
   .use(remarkRehype, { allowDangerousHtml: true })
   .use(rehypeRaw) // *Parse* the raw HTML strings embedded in the tree
-  .use(nldsComponentsPlugin)
-  .use(
-    addTrailingSlashPlugin({
-      siteUrl: 'https://nldesignsystem.nl',
-      stripOrigin: true,
-      stripExtensions: ['.md', '.mdx'],
-    }),
-  )
+  .use(sharedPlugins.rehypePlugins)
   .use(rehypeStringify)
   .process(content);
 
