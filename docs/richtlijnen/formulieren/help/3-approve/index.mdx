@@ -18,23 +18,19 @@ keywords:
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/_footer_info.md";
 import { Markdown } from "@site/src/components/Markdown";
 import EmailCode from "./_email-code.mdx";
-import Email from "./_email.md";
+import email from "./_email.md?raw";
 import Guideline from "./_guideline.md";
 import MixedInputCode from "./_mixed-input-code.mdx";
-import MixedInput from "./_mixed-input.md";
+import mixedInput from "./_mixed-input.md?raw";
 import WCAG from "./_wcag.md";
 
 <Guideline />
 
-<Markdown headingLevel={2}>
-  <Email />
-</Markdown>
+<Markdown headingLevel={2} content={email} />
 
 <EmailCode />
 
-<Markdown headingLevel={2}>
-  <MixedInput />
-</Markdown>
+<Markdown headingLevel={2} content={mixedInput} />
 
 <MixedInputCode />
 

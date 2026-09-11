@@ -23,9 +23,9 @@ keywords:
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@components/spotlight-section/spotlight-section";
-import AAAMessage from "./_wcag-aaa-message.md";
-import Disclaimer from "./_wcag-disclaimer.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
+import aaaMessage from "./_wcag-aaa-message.md?raw";
+import disclaimer from "./_wcag-disclaimer.md?raw";
+import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_3.3.6-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AAA">
@@ -33,9 +33,7 @@ import Summary from "./summaries/_3.3.6-summary.md";
 </WcagHeadingGroup>
 
 <SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <AAAMessage />
-  </Markdown>
+  <Markdown omitH1 headinglevel={3} content={aaaMessage} />
 </SpotlightSection>
 
 ## Uitleg
@@ -52,13 +50,9 @@ Informatie over bronnen, gebruikersonderzoek en hoe te testen kun je vinden op d
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.3.6: Error Prevention (All)</span>](https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-all.html).
 
 <SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
+  <Markdown omitH1 headinglevel={3} content={disclaimer} />
 </SpotlightSection>
 
 ## Help richtlijn verbeteren
 
-<Markdown omitH1 headinglevel={3}>
-  <WCAGFooterInfo />
-</Markdown>
+<Markdown omitH1 headinglevel={3} content={wcagFooterInfo} />
