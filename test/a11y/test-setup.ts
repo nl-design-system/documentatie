@@ -1,6 +1,6 @@
 import { AxeBuilder } from '@axe-core/playwright';
 import { writeFile } from 'fs/promises';
-import { readFileSync } from 'fs';
+import { readFileSync } from 'node:fs';
 import * as cheerio from 'cheerio';
 import { exclusions, exclusionGroups, skippedRoutes, type RouteExclusion } from './a11y-exclusions';
 import type { Page } from '@playwright/test';
