@@ -33,13 +33,13 @@
 
 .ma-cardgroup__card {
   align-content: var(--ma-cardgroup-card-align-content, center);
-  background-color: var(--ma-cardgroup-card-background-color, var(--nlds-document-background-color, white));
+  background-color: var(--ma-cardgroup-card-background-color, var(--basis-color-default-bg-default, white));
   border-color: var(--ma-cardgroup-card-border-color, #cfd5dd);
   border-radius: var(--ma-cardgroup-card-border-radius, 8px);
   border-style: var(--ma-cardgroup-card-border-style, solid);
   border-width: var(--ma-cardgroup-card-border-width, 1px);
   box-sizing: border-box;
-  color: var(--ma-cardgroup-card-color, var(--nlds-document-color));
+  color: var(--ma-cardgroup-card-color, var(--basis-color-default-color-document));
   display: flex;
   flex-direction: var(--ma-cardgroup-card-flex-direction, column);
   justify-content: var(--ma-cardgroup-card-justify-content, space-between);

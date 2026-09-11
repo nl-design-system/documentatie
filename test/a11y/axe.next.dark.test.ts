@@ -7,15 +7,16 @@ const CONFIG = {
   baseUrl: 'http://localhost:4321',
   sitemapDir: './packages/website/dist',
   sitemap: '/sitemap-index.xml',
-  reportPath: './tmp/axe.next.json',
+  reportPath: './tmp/axe.next.dark.json',
   failOnImpact: ['critical', 'serious', 'moderate'],
 };
 
 const violations: AxeResults[] = [];
 
-test.describe('Accessibility features', () => {
+test.use({ colorScheme: 'dark' });
+
+test.describe('Accessibility features (dark mode)', () => {
   const pathnames = getPathnamesFromSitemap(CONFIG.sitemapDir, CONFIG.sitemap);
-  // .filter((pathname) => !shouldSkipRoute(pathname));
 
   pathnames.forEach((pathname) => {
     test(pathname, async ({ page }) => {
