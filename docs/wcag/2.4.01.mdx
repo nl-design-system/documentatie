@@ -25,8 +25,8 @@ import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@components/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
+import disclaimer from "./_wcag-disclaimer.md?raw";
+import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_2.4.1-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
@@ -188,13 +188,9 @@ Correcte code: verwijs naar een element met een id.
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.1 Bypass Blocks</span>](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html).
 
 <SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
+  <Markdown omitH1 headinglevel={3} content={disclaimer} />
 </SpotlightSection>
 
 ## Help richtlijn verbeteren
 
-<Markdown omitH1 headinglevel={3}>
-  <WCAGFooterInfo />
-</Markdown>
+<Markdown omitH1 headinglevel={3} content={wcagFooterInfo} />
