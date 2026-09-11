@@ -1,5 +1,7 @@
 import { AxeBuilder } from '@axe-core/playwright';
 import { writeFile } from 'fs/promises';
+import { readFileSync } from 'fs';
+import * as cheerio from 'cheerio';
 import { exclusions, exclusionGroups, skippedRoutes, type RouteExclusion } from './a11y-exclusions';
 import type { Page } from '@playwright/test';
 
@@ -78,6 +80,37 @@ export function getExcludedViolationIds(pathname: string): RegExp[] {
   }
 
   return excluded;
+}
+
+export function getPathnamesFromSitemap(sitemapDir: string, sitemapPath: string): string[] {
+  const paths: string[] = [];
+
+  try {
+    const sitemapIndex = readFileSync(`${sitemapDir}${sitemapPath}`, 'utf8');
+    const $ = cheerio.load(sitemapIndex, { xmlMode: true });
+
+    $('sitemap loc')
+      .map((_, element) => $(element).text())
+      .toArray()
+      .map((url) => new URL(url).pathname)
+      .forEach((path) => {
+        getPathnamesFromSitemap(sitemapDir, path).forEach((p) => paths.push(p));
+      });
+
+    $('url loc')
+      .map((_, element) => $(element).text())
+      .toArray()
+      .map((url) => new URL(url).pathname)
+      .forEach((path) => paths.push(path));
+
+    return Array.from(new Set(paths));
+  } catch (error) {
+    console.warn(
+      `Could not read sitemap at ${sitemapDir}${sitemapPath}, skipping accessibility tests generation.`,
+      error,
+    );
+    return [];
+  }
 }
 
 export function shouldSkipRoute(pathname: string): boolean {
