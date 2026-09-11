@@ -91,7 +91,7 @@ import {
 import { Checklist, ChecklistItem } from "@site/src/components/Checklist";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
-import Usage from "./_usage.md";
+import usage from "./_usage.md?raw";
 import tokens from "@nl-design-system-candidate/paragraph-tokens";
 
 {/* Add name and description for the component */}
@@ -225,9 +225,7 @@ Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktis
 
 <UnderlineSolution />
 
-<Markdown omitH1 headingLevel={2}>
-  <Usage />
-</Markdown>
+<Markdown omitH1 headingLevel={2} content={usage} />
 
 ## Design tokens
 
