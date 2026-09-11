@@ -92,7 +92,10 @@
     "@utrecht/unordered-list-css": "3.1.1",
     "dompurify": "3.4.11",
     "hast": "1.0.0",
-    "invokers-polyfill": "1.0.3"
+    "invokers-polyfill": "1.0.3",
+    "rehype-raw": "7.0.0",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.1.2"
   },
   "devDependencies": {
     "@astrojs/mdx": "5.0.4",
