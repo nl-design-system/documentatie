@@ -1,5 +1,3 @@
-@import "@nl-design-system-community/ma-design-tokens/dist/color-scheme-dark/variables.css" (prefers-color-scheme: dark);
-
 :root {
   color-scheme: light dark;
 }
