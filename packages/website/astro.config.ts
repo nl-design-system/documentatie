@@ -3,16 +3,8 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import remarkCustomHeaderId from 'remark-custom-header-id';
-import remarkDirective from 'remark-directive';
-import { remarkAdmonitions } from './markdown-plugins/admonitions';
-import { nldsComponentsPlugin } from './markdown-plugins/rehype-nlds-components';
-import { addTrailingSlashPlugin } from './markdown-plugins/rehype-trailing-slash';
-import { removeH1FromMarkdown } from './markdown-plugins/remark-remove-h1';
-import { remarkUnwrapDiv } from './markdown-plugins/remark-unwrap-div';
 import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
-import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inline-directives';
-import { remarkUnwrapParagraph } from './markdown-plugins/remark-unwrap-paragraph';
+import { sharedPlugins } from './markdown-plugins/shared-plugins';
 import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
 import { fileURLToPath } from 'node:url';
 const siteUrl = 'https://nldesignsystem.nl';
@@ -118,39 +110,19 @@ export default defineConfig({
   },
 
   markdown: {
-    remarkPlugins: [
-      remarkUnwrapDiv,
-      remarkCustomHeaderId,
-      remarkDirective,
-      remarkUndoInlineDirectives,
-      remarkAdmonitions,
-      remarkUnwrapParagraph,
-      removeH1FromMarkdown(),
-    ],
-    rehypePlugins: [
-      nldsComponentsPlugin,
-      addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
-    ],
+    remarkPlugins: sharedPlugins.remarkPlugins,
+    rehypePlugins: sharedPlugins.rehypePlugins,
     syntaxHighlight: 'prism',
   },
 
   integrations: [
     mdx({
       remarkPlugins: [
+        ...sharedPlugins.remarkPlugins,
         remarkCanvasFix,
-        remarkUnwrapDiv,
-        remarkCustomHeaderId,
-        remarkDirective,
-        remarkUndoInlineDirectives,
-        remarkAdmonitions,
-        remarkUnwrapParagraph,
         clientLoadPlugin(['Videoplayer', 'VideoPlayer', 'Checklist', 'DesignTokens']),
-        removeH1FromMarkdown(),
       ],
-      rehypePlugins: [
-        nldsComponentsPlugin,
-        addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
-      ],
+      rehypePlugins: sharedPlugins.rehypePlugins,
       syntaxHighlight: 'prism',
     }),
     react(),
