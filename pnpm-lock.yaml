@@ -542,6 +542,9 @@ importers:
       '@utrecht/action-group-css':
         specifier: 4.0.1
         version: 4.0.1
+      '@utrecht/action-group-react':
+        specifier: 1.1.6
+        version: 1.1.6(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/blockquote-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -4787,6 +4790,13 @@ packages:
 
   '@utrecht/action-group-react@1.1.4':
     resolution: {integrity: sha512-W+0+x2wJ9058wNDYnK1dCfUKCFfNVsDcezm/MmBgmOW/vUnX/095TVzhPboL6vVdHQTESY4uaCjinmvwI/sx6A==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
+  '@utrecht/action-group-react@1.1.6':
+    resolution: {integrity: sha512-hkSyYspYiwrIWRIdtyUlR+lrstyxuhYkhUynVwQQigM/d6ANBf/pJ6jW2GW/EA2GzCkSOU2lHcab0ZJRxuq+Lw==}
     peerDependencies:
       '@babel/runtime': '*'
       react: ^18.0.0 || ^19.0.0
@@ -17398,6 +17408,14 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.28.6
       '@utrecht/action-group-css': 3.0.1
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/action-group-react@1.1.6(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/action-group-css': 4.0.1
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)

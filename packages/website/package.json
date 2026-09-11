@@ -20,6 +20,7 @@
     "//": "The public folder comes from the Docusaurus version. There the sitemap is not included in robots.txt. We can not add it there yet since the filename is different from Docusaurus",
     "build": "astro build && echo '\nSitemap: https://nldesignsystem.nl/sitemap-index.xml' >> ./dist/robots.txt",
     "preview": "astro preview",
+    "start": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
@@ -53,6 +54,7 @@
     "@tabler/icons-react": "3.36.1",
     "@utrecht/accordion-css": "4.0.1",
     "@utrecht/action-group-css": "4.0.1",
+    "@utrecht/action-group-react": "1.1.6",
     "@utrecht/blockquote-css": "3.0.1",
     "@utrecht/body-css": "4.0.0",
     "@utrecht/body-react": "0.0.11",
