@@ -17,7 +17,7 @@ keywords:
 import { Markdown } from "@site/src/components/Markdown";
 import { SpotlightSection } from "@components/spotlight-section/spotlight-section";
 import { Paragraph } from "@components/paragraph/paragraph";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
+import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import { successCriteria } from "@site/src/components/wcag22";
 
 # Introductie WCAG-pagina's
@@ -71,6 +71,4 @@ Wil je weten waar je volgens de wet aan moet voldoen? Ga dan naar naar de websit
 
 ## Help richtlijnen verbeteren
 
-<Markdown omitH1 headinglevel={3}>
-  <WCAGFooterInfo />
-</Markdown>
+<Markdown omitH1 headinglevel={3} content={wcagFooterInfo} />
