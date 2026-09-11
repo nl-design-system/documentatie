@@ -45,6 +45,7 @@ export interface MarkdownProps {
   headingLevel?: number;
   omitH1?: boolean;
   components?: { [index: string]: (_props: PropsWithChildren<object>) => ReactNode };
+  content?: string;
 }
 
 export const Markdown = ({
@@ -53,8 +54,9 @@ export const Markdown = ({
   headingLevel = 1,
   baseUrl = '',
   components = {},
+  content,
 }: PropsWithChildren<MarkdownProps>) => (
   <MDXProvider components={{ ...setHeadings(omitH1, headingLevel), ...addBaseUrl(baseUrl), ...components }}>
-    {children}
+    {content || children}
   </MDXProvider>
 );
