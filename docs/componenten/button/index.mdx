@@ -64,7 +64,7 @@ import { Checklist, ChecklistItem } from "@site/src/components/Checklist";
 import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
 
 import { Markdown } from "@site/src/components/Markdown";
-import Usage from "./\_usage.md";
+import usage from "./\_usage.md?raw";
 
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
 import { DesignTokens } from "@site/src/components/DesignTokens";
@@ -132,9 +132,7 @@ export const component = componentProgress.find((item) => item.number === issueN
   ))}
 </Checklist>
 
-<Markdown omitH1 headingLevel={3}>
-  <Usage />
-</Markdown>
+<Markdown omitH1 headingLevel={3} content={usage} />
 
 ## Design tokens
 

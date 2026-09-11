@@ -15,13 +15,11 @@ keywords:
 import { Markdown } from "@site/src/components/Markdown";
 import FooterInfo from "@nl-design-system-unstable/documentation/richtlijnen/_footer_info.md";
 import Code from "./_code.mdx";
-import Guideline from "./_guideline.md";
+import guideline from "./_guideline.md?raw";
 
 # Uitlijning
 
-<Markdown omitH1>
-  <Guideline />
-</Markdown>
+<Markdown omitH1 content={guideline} />
 
 ## Voorbeelden
 

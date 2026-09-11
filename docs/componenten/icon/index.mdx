@@ -44,7 +44,7 @@ import {
 import { Checklist, ChecklistItem } from "@site/src/components/Checklist";
 import * as Acceptatiecriteria from "./_acceptatiecriteria.tsx";
 import { Markdown } from "@site/src/components/Markdown";
-import Guidelines from "./\_guidelines.md";
+import guidelines from "./\_guidelines.md?raw";
 
 {/* Add name and description for the component */}
 export const title = "Icon";
@@ -92,9 +92,7 @@ Deze icons werken ook als de gebruiker een systeem font gebruikt.
 
 ## Richtlijnen
 
-<Markdown omitH1 headingLevel={3}>
-  <Guidelines />
-</Markdown>
+<Markdown omitH1 headingLevel={3} content={guidelines} />
 
 ## Definition of Done
 

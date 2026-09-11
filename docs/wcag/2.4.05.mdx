@@ -24,8 +24,8 @@ import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
 import { SpotlightSection } from "@components/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
+import disclaimer from "./_wcag-disclaimer.md?raw";
+import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_2.4.5-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
@@ -87,13 +87,9 @@ Als er meerdere manieren aangeboden worden dan kan de bezoeker kiezen.
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.5 Multiple Ways</span>](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html).
 
 <SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
+  <Markdown omitH1 headinglevel={3} content={disclaimer} />
 </SpotlightSection>
 
 ## Help richtlijn verbeteren
 
-<Markdown omitH1 headinglevel={3}>
-  <WCAGFooterInfo />
-</Markdown>
+<Markdown omitH1 headinglevel={3} content={wcagFooterInfo} />
