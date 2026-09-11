@@ -16,6 +16,7 @@ import { remarkUnwrapParagraph } from './markdown-plugins/remark-unwrap-paragrap
 import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
 import { siteBaseUrl } from './src/seo.config';
 import { appendCSPToHTAccess } from './append-csp-to-htaccess';
+import { fileURLToPath } from 'node:url';
 
 const cspDevConfig: AstroUserConfig = {
   security: {
@@ -120,6 +121,10 @@ export default defineConfig({
         {
           find: /^@nl-design-system-candidate\/(.+)-react\/css$/,
           replacement: '@nl-design-system-candidate/$1-react',
+        },
+        {
+          find: '@site/src/components/Markdown',
+          replacement: fileURLToPath(new URL('./src/components/markdown/markdown.ts', import.meta.url)),
         },
       ],
     },
