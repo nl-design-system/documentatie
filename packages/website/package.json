@@ -104,7 +104,10 @@
     "dompurify": "3.4.11",
     "hast": "1.0.0",
     "invokers-polyfill": "1.0.3",
-    "unist-util-remove": "4.0.0"
+    "unist-util-remove": "4.0.0",
+    "rehype-raw": "7.0.0",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.1.2"
   },
   "devDependencies": {
     "@astrojs/markdown-remark": "7.3.0",

@@ -1,0 +1,52 @@
+---
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import rehypeStringify from 'rehype-stringify';
+import rehypeRaw from 'rehype-raw';
+
+import { remarkUnwrapDiv } from '../../../markdown-plugins/remark-unwrap-div';
+import remarkCustomHeaderId from 'remark-custom-header-id';
+import remarkDirective from 'remark-directive';
+import { remarkUndoInlineDirectives } from '../../../markdown-plugins/remark-undo-inline-directives';
+import { remarkAdmonitions } from '../../../markdown-plugins/admonitions';
+import { remarkUnwrapParagraph } from '../../../markdown-plugins/remark-unwrap-paragraph';
+
+import { nldsComponentsPlugin } from '../../../markdown-plugins/rehype-nlds-components';
+import { shiftHeadings } from './shift-headings.ts';
+import { addTrailingSlashPlugin } from '../../../markdown-plugins/rehype-trailing-slash';
+
+export interface MarkdownProps {
+  headingLevel?: number;
+  omitH1?: boolean;
+  content?: string;
+}
+
+const { content, omitH1, headingLevel } = Astro.props;
+
+const file = await unified()
+  .use(remarkParse)
+  .use(shiftHeadings({ headingLevel, omitH1 }))
+  .use(remarkUnwrapDiv)
+  .use(remarkCustomHeaderId)
+  .use(remarkDirective)
+  .use(remarkUndoInlineDirectives)
+  .use(remarkAdmonitions)
+  .use(remarkUnwrapParagraph)
+  .use(remarkRehype, { allowDangerousHtml: true })
+  .use(rehypeRaw) // *Parse* the raw HTML strings embedded in the tree
+  .use(nldsComponentsPlugin)
+  .use(
+    addTrailingSlashPlugin({
+      siteUrl: 'https://nldesignsystem.nl',
+      stripOrigin: true,
+      stripExtensions: ['.md', '.mdx'],
+    }),
+  )
+  .use(rehypeStringify)
+  .process(content);
+
+const parsedContent = String(file);
+---
+
+<Fragment set:html={parsedContent} />
