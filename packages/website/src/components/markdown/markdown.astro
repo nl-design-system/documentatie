@@ -1,9 +1,12 @@
 ---
 import { unified } from 'unified';
+import remarkGfm from 'remark-gfm';
+import remarkSmartypants from 'remark-smartypants';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeRaw from 'rehype-raw';
+import { rehypePrism, rehypeHeadingIds } from '@astrojs/markdown-remark';
 
 import { shiftHeadings } from './shift-headings.ts';
 import { sharedPlugins } from '../../../markdown-plugins/shared-plugins';
@@ -23,12 +26,16 @@ const remarkPlugins = sharedPlugins.remarkPlugins
 
 const file = await unified()
   .use(remarkParse)
+  .use(remarkGfm)
+  .use(remarkSmartypants)
   .use(shiftHeadings({ headingLevel, omitH1 }))
   .use(remarkPlugins)
-  .use(remarkRehype, { allowDangerousHtml: true })
-  .use(rehypeRaw) // *Parse* the raw HTML strings embedded in the tree
+  .use(remarkRehype, { allowDangerousHtml: true, passThrough: [] })
+  .use(rehypePrism)
   .use(sharedPlugins.rehypePlugins)
-  .use(rehypeStringify)
+  .use(rehypeHeadingIds)
+  .use(rehypeRaw) // *Parse* the raw HTML strings embedded in the tree
+  .use(rehypeStringify, { allowDangerousHtml: true })
   .process(content);
 
 const parsedContent = String(file);
