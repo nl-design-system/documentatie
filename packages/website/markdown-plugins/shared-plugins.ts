@@ -10,19 +10,32 @@ import { remarkUnwrapParagraph } from './remark-unwrap-paragraph';
 import remarkCustomHeaderId from 'remark-custom-header-id';
 import remarkDirective from 'remark-directive';
 
+export const plugins = {
+  remarkUnwrapDiv,
+  remarkCustomHeaderId,
+  remarkDirective,
+  remarkUndoInlineDirectives,
+  remarkAdmonitions,
+  remarkUnwrapParagraph,
+  removeH1FromMarkdown: removeH1FromMarkdown(),
+  nldsComponentsPlugin,
+  addTrailingSlashPlugin: addTrailingSlashPlugin({
+    siteUrl: siteBaseUrl,
+    stripOrigin: true,
+    stripExtensions: ['.md', '.mdx'],
+  }),
+};
+
 export const sharedPlugins = {
   remarkPlugins: [
-    remarkUnwrapDiv,
-    remarkCustomHeaderId,
-    remarkDirective,
-    remarkUndoInlineDirectives,
-    remarkAdmonitions,
-    remarkUnwrapParagraph,
-    removeH1FromMarkdown(),
+    plugins.remarkUnwrapDiv,
+    plugins.remarkCustomHeaderId,
+    plugins.remarkDirective,
+    plugins.remarkUndoInlineDirectives,
+    plugins.remarkAdmonitions,
+    plugins.remarkUnwrapParagraph,
+    plugins.removeH1FromMarkdown,
   ],
 
-  rehypePlugins: [
-    nldsComponentsPlugin,
-    addTrailingSlashPlugin({ siteUrl: siteBaseUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
-  ],
+  rehypePlugins: [plugins.nldsComponentsPlugin, plugins.addTrailingSlashPlugin],
 };
