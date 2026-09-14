@@ -94,8 +94,10 @@
     "hast": "1.0.0",
     "invokers-polyfill": "1.0.3",
     "rehype-raw": "7.0.0",
+    "remark-gfm": "4.0.1",
     "remark-parse": "11.0.0",
-    "remark-rehype": "11.1.2"
+    "remark-rehype": "11.1.2",
+    "remark-smartypants": "3.0.3"
   },
   "devDependencies": {
     "@astrojs/mdx": "5.0.4",
