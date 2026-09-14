@@ -26,8 +26,8 @@
 .ma-theme {
   --ma-viewport-width: 100vw;
   --ma-viewport-inline-size: 100vi;
-  --_ma-viewport-min-inline-size: tan(atan2(var(--ma-viewport-min-inline-size, 400px), 1px));
-  --_ma-viewport-max-inline-size: tan(atan2(var(--ma-viewport-max-inline-size, 1200px), 1px));
+  --_ma-viewport-min-inline-size: tan(atan2(var(--ma-viewport-min-inline-size, 320px), 1px));
+  --_ma-viewport-max-inline-size: tan(atan2(var(--ma-viewport-max-inline-size, 1280px), 1px));
   --ma-viewport-size: tan(atan2(var(--ma-viewport-inline-size, var(--ma-viewport-width)), 1px));
   --ma-viewport-scale: calc(
     (
