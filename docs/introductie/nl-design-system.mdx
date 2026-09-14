@@ -1,0 +1,137 @@
+---
+title: NL Design System
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: NL Design System
+sidebar_position: 2
+navigation_order: 2
+pagination_label: NL Design System
+description: "Een design system bevat componenten, patronen, templates en richtlijnen: basisonderdelen waarover je samen afspraken maakt. Met die afspraken verbeter je de gebruiksvriendelijkheid en toegankelijkheid van je website."
+keywords:
+  - design system
+  - introductie
+---
+
+import {
+  ThemesSVG,
+  GuidelineSVG,
+  ComponentSVG,
+  TemplateSVG,
+  PatternSVG,
+  UserResearchSVG,
+} from "@site/src/components/Icons";
+import { Grid } from "@amsterdam/design-system-react";
+import { Paragraph } from "@nl-design-system-candidate/paragraph-react";
+import "@amsterdam/design-system-css/dist/grid/grid.css";
+import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
+import { Markdown } from "@site/src/components/Markdown";
+import { Card } from "@site/src/components/Card/Card";
+
+{/* @license CC0-1.0 */}
+
+# NL Design System
+
+NL Design System bevat componenten, patronen, templates en richtlijnen: basisonderdelen waarover je samen afspraken maakt. Met die afspraken verbeter je de gebruiksvriendelijkheid en toegankelijkheid van je website.
+
+## Onderdelen van NL Design System
+
+Componenten en templates ontwikkeld volgens het [Estafettemodel](./estafettemodel.mdx) aangevuld met richtlijnen en patronen. Ontwikkeld op basis van gebruikersonderzoek door [het kernteam en de community](./kernteam-community.mdx) om herbruikbare, toegankelijke en gebruiksvriendelijke websites en webapplicaties te maken.
+
+<Grid>
+  <Grid.Cell span="all">
+    <Card>
+      <ComponentSVG />
+      <Card.HeadingGroup>
+        <Card.Heading level={3}>
+          <Card.Link href="/componenten/">Componenten</Card.Link>
+        </Card.Heading>
+      </Card.HeadingGroup>
+      <Paragraph>Componenten zijn herbruikbare elementen zoals knoppen, formuliervelden of menu.</Paragraph>
+    </Card>
+  </Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <PatternSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={3}>
+        <Card.Link href="/voorbeelden/patronen-en-templates/">Patronen</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Patronen laten zien hoe componenten samen op een toegankelijke en gebruiksvriendelijk manier gebruikt kunnen
+      worden.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <TemplateSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={3}>
+        <Card.Link href="/voorbeelden/patronen-en-templates/">Templates</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Voorbeeldpagina's die opgebouwd zijn met componenten en patronen die overgenomen kunnen worden voor een
+      consistente gebruikerservaring.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <GuidelineSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={3}>
+        <Card.Link href="/richtlijnen/">Richtlijnen</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Richtlijnen zorgen voor consistente, gebruiksvriendelijke en toegankelijke digitale ervaringen.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <UserResearchSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={3}>
+        <Card.Link href="https://gebruikersonderzoeken.nl">Gebruikersonderzoek</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>Validatie met eindgebruikers als onderbouwing van ontwikkelingen binnen het design system.</Paragraph>
+  </Card>
+</Grid.Cell>
+
+  <Grid.Cell span="all">
+    <Card>
+      <ThemesSVG />
+      <Card.HeadingGroup>
+        <Card.Heading level={3}>
+          <Card.Link href="/handboek/huisstijl-vastleggen/overzicht/">Thema's</Card.Link>
+        </Card.Heading>
+      </Card.HeadingGroup>
+      <Paragraph>
+        Verschillende huisstijlen worden vastgelegd als thema bij NL Design System. Zo kan dezelfde toegankelijke logica
+        worden hergebruikt op verschillende plekken, met behoud van de eigen identiteit.
+      </Paragraph>
+    </Card>
+  </Grid.Cell>
+</Grid>
+
+## Wat maakt NL Design System uniek?
+
+Waar veel design systems een specifieke organisatie bedienen, werkt NL Design System met organisaties verspreid over de hele overheid: van gemeenten tot Rijk.
+
+Juist deze organisaties hebben baat bij een duidelijke set herbruikbare basisonderdelen. Hierdoor kunnen vele kleinere organisaties meeliften op het onderzoek en de ontwikkeling door anderen, en iedereen kan een bijdrage leveren door bijvoorbeeld kleine verbeteringen aan te dragen.
+
+Als ook nieuwe inzichten en gebruikersonderzoek gedeeld worden, kunnen we daar met z'n allen betere richtlijnen, componenten en thema's mee maken. Deze nieuwe versies kunnen vervolgens gebruikt worden in alle applicaties die met NL Design System zijn gebouwd en zo direct de gebruikerservaring van vele eindgebruikers verbeteren.
+
+[Bekijk de community](/community/)
+
+<Markdown headingLevel={2}>
+  <HulpSnippet />
+</Markdown>

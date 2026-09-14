@@ -1,0 +1,65 @@
+---
+title: Open source samenwerken
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Open source samenwerken
+sidebar_position: 3
+navigation_order: 3
+pagination_label: Open source samenwerken
+description: Het Estafettemodel als aanpak voor standaardisatie met ruimte voor innovatie. Zo wordt open source samengewerkt aan componenten, patronen en templates die uiteindelijk het NL Design System vormen.
+keywords:
+  - design token
+  - design tokens
+  - naamgeving
+---
+
+import { StatusVisual } from "@site/src/components/StatusVisual";
+import { Paragraph } from "@utrecht/component-library-react";
+import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
+import { Markdown } from "@site/src/components/Markdown";
+import { RelayModel, RelaySection } from "@site/src/components/RelayModel";
+import HelpWantedMd from "@site/docs/introductie/_estafettemodel/_help-wanted.md";
+import CommunityMd from "@site/docs/introductie/_estafettemodel/_community.md";
+import CandidateMd from "@site/docs/introductie/_estafettemodel/_candidate.md";
+import HallOfFameMd from "@site/docs/introductie/_estafettemodel/_hall-of-fame.md";
+
+{/* @license CC0-1.0 */}
+
+# Open source samenwerken
+
+<Paragraph appearance="lead">
+  Het Estafettemodel is een door NL Design System ontwikkelde aanpak die samenwerken aan open source makkelijk maakt.
+</Paragraph>
+
+De community rondom NL Design System bestaat uit 900+ specialisten van verschillende overheidsorganisaties en hun leveranciers. Hiermee wordt toegewerkt naar een gezamelijk design system met ruimte voor innovatie en maatwerk.
+
+Belangrijk hierbij is om niet steeds opnieuw te beginnen, maar elkaar ook niet vertragen bij de ontwikkeling van nieuwe applicaties. Daarom werken we met het Estafettemodel.
+
+## Estafettemodel
+
+<RelayModel>
+  <RelaySection relayLevel="help-wanted" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <HelpWantedMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="community" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <CommunityMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="candidate" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <CandidateMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="hall-of-fame" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <HallOfFameMd />
+    </Markdown>
+  </RelaySection>
+</RelayModel>
+
+<Markdown headingLevel={2}>
+  <HulpSnippet />
+</Markdown>
