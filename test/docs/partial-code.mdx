@@ -1,0 +1,17 @@
+---
+title: Partial Code
+description: Test the rendering of code from a partial
+unlisted: true
+---
+
+{/* @license CC0-1.0 */}
+
+import TestPageNote from "./_test-page-note.md";
+import code from "./_code-partial.md?raw";
+import { Markdown } from "@site/src/components/Markdown";
+
+Test the rendering of code from a partial
+
+<TestPageNote />
+
+<Markdown content={code} />
