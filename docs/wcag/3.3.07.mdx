@@ -50,9 +50,7 @@ In 3 gevallen is opnieuw invullen wel logisch:
 - De herhaling is nodig voor de beveiliging, zoals het 2 keer invoeren van een nieuw wachtwoord.
 - De eerder ingevoerde gegevens zijn niet meer geldig.
 
-Op 2 punten ontstaat geregeld verwarring. Wat de browser zelf invult, telt niet mee: de site zelf moet de gegevens aanbieden. En het gaat alleen over één doorlopend proces. Sluit de bezoeker de site af en komt die later terug, dan begint er een nieuw proces en hoeft de site niets te onthouden.
-
-Wie moeite heeft met onthouden, wie de pagina laat voorlezen en daardoor niet even terug kan bladeren, of wie typen zwaar of pijnlijk vindt, geeft het op bij elke stap die om herhaling vraagt. Voorvullen scheelt hun de meeste moeite, en het scheelt iedereen typefouten.
+De site biedt de eerder ingevulde informatie zelf aan. Dat een browser de bezoeker kan helpen met het invullen van persoonlijke gegevens, is niet genoeg. En het gaat alleen over één doorlopend proces. Sluit de bezoeker de site af en komt die later terug, dan begint er een nieuw proces en hoeft de site niets te onthouden.
 
 ## Veelgemaakte fouten
 
@@ -116,7 +114,7 @@ De bezoeker gaat in een meerstappenformulier een stap terug om iets te corrigere
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer bewaart de ingevulde gegevens in de sessie of op de server en vult de velden daarmee als de bezoeker terugkeert.
+**Wie kan dit oplossen:** een developer slaat de ingevulde gegevens op tijdens de sessie, zodat de velden nog gevuld zijn als de bezoeker een stap teruggaat.
 
 ### Je typt gegevens uit een eerdere stap later nog een keer in
 
@@ -146,7 +144,7 @@ De bezoeker moet de voorgevulde waarde kunnen aanpassen.
 
 ### Je typt hetzelfde gegeven 2 keer in één formulier
 
-Eén formulier heeft 2 velden voor hetzelfde e-mailadres, en beide moet je zelf vullen. Het tweede veld kan ook pas verschijnen na een keuze, bijvoorbeeld bij een optie om een kopie van het formulier te ontvangen. Dat veld is leeg en biedt geen manier om de eerder ingevulde waarde over te nemen.
+Eén formulier heeft 2 velden voor hetzelfde e-mailadres, en beide moet je zelf vullen. Het tweede veld verhindert het plakken van het e-mailadres. Dat veld is leeg en biedt geen manier om de eerder ingevulde waarde over te nemen.
 
 **Hoe te testen:** vink in een formulier elke optie aan die een extra veld laat verschijnen. Vraagt zo'n veld om iets wat je hierboven al hebt ingevuld?
 
