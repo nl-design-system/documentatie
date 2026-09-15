@@ -251,7 +251,7 @@ html .utrecht-link--html-a:any-link:focus {
   margin-block-start: var(--basis-space-block-sm);
 }
 
-.ams-unordered-list {
+.ams-unordered-list:not(.ams-unordered-list--no-markers) {
   gap: unset !important;
 }
 
