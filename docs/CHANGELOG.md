@@ -1,5 +1,12 @@
 # @nl-design-system-unstable/documentation
 
+## 1.13.0
+
+### Minor Changes
+
+- 5f1e57f: Veelgemaakte fouten aan de Link componentpagina toegevoegd.
+- a5d0ef4: Update van de baseline voor september 2026.
+
 ## 1.12.0
 
 ### Minor Changes
