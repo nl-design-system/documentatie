@@ -1,2 +1,2 @@
-export { ButtonGroup as ActionGroup } from '@utrecht/component-library-react';
-import '@utrecht/button-group-css/dist/index.css';
+export { ActionGroup } from '@utrecht/action-group-react';
+import '@utrecht/action-group-css/dist/index.css';

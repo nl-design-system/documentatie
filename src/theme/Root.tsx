@@ -15,7 +15,7 @@ import '../components/Checklist.css';
 function Root({ children }: PropsWithChildren<object>) {
   return (
     <>
-      <PageLayout className="ma-theme">{children}</PageLayout>
+      <PageLayout className="ma-theme ma-theme--fluid">{children}</PageLayout>
     </>
   );
 }

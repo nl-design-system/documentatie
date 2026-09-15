@@ -1,7 +1,7 @@
 /**
  * These are all values yet to be included in the MA Design Tokens
  */
-:root {
+.ma-theme {
   --ams-unordered-list-gap: var(--basis-space-row-lg);
   --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
   --ams-unordered-list-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
@@ -276,4 +276,76 @@ kbd {
   background-position: right center;
   background-repeat: no-repeat;
   padding-inline-end: 24px;
+}
+
+.utrecht-nav-list__link {
+  padding-block-end: var(--basis-space-block-md) !important;
+  padding-block-start: var(--basis-space-block-md) !important;
+}
+
+.ma-theme {
+  --basis-form-control-padding-block-start: var(--basis-space-block-sm) !important;
+  --basis-form-control-padding-block-end: var(--basis-space-block-sm) !important;
+  --basis-form-control-padding-inline-start: var(--basis-space-inline-md) !important;
+  --basis-form-control-padding-inline-end: var(--basis-space-inline-md) !important;
+  --nl-skip-link-padding-inline: var(--basis-space-inline-lg);
+  --nl-skip-link-padding-block: var(--basis-space-block-md);
+  --utrecht-breadcrumb-nav-item-padding-block-start: var(--basis-space-block-sm);
+  --utrecht-breadcrumb-nav-item-padding-block-end: var(--basis-space-block-sm);
+  --denhaag-side-navigation-list-margin-inline-start: var(--basis-space-inline-xl);
+  --nl-button-padding-inline-end: var(--basis-space-inline-md);
+  --nl-button-padding-inline-start: var(--basis-space-inline-md);
+  --nl-button-padding-block-end: var(--basis-space-block-md);
+  --nl-button-padding-block-start: var(--basis-space-block-md);
+  --utrecht-button-padding-inline-end: var(--nl-button-padding-inline-end);
+  --utrecht-button-padding-inline-start: var(--nl-button-padding-inline-start);
+  --utrecht-button-padding-block-end: var(--nl-button-padding-block-end);
+  --utrecht-button-padding-block-start: var(--nl-button-padding-block-start);
+  --denhaag-side-navigation-mobile-display: block;
+  --nl-button-icon-only-padding-inline-end: var(--basis-space-inline-sm);
+  --nl-button-icon-only-padding-block-start: var(--basis-space-block-sm);
+}
+
+.denhaag-side-navigation__link {
+  padding-inline-end: var(--basis-space-inline-md) !important;
+  padding-inline-start: var(--basis-space-inline-md) !important;
+  padding-block-start: var(--basis-space-block-sm) !important;
+  padding-block-end: var(--basis-space-block-sm) !important;
+  min-block-size: 44px;
+  min-inline-size: 44px;
+}
+
+.denhaag-icon {
+  /* for inside denhaag-side-navigation__expand-button */
+  /* copied implementation of utrecht-icon */
+  block-size: var(--utrecht-icon-size);
+  color: var(--utrecht-icon-color);
+  display: inline-block;
+  font-size: var(--utrecht-icon-size);
+  inline-size: var(--utrecht-icon-size);
+  inset-block-start: var(--utrecht-icon-inset-block-start, 0);
+  position: relative;
+
+  /* additional min-* properties to ensure it stays this size instead of 0x0px inside a box of fixed dimensions
+  for example: <div style="width: 48px; height: 48px; padding: 16px; box-sizing: border-box;"> icon </div>
+  */
+
+  min-block-size: var(--utrecht-icon-size);
+  min-inline-size: var(--utrecht-icon-size);
+}
+
+.utrecht-accordion__header:focus-visible {
+  /* ensure focus ring floats over adjacent content */
+  z-index: 1;
+  position: relative;
+}
+
+.ma-mobile-menu-drawer {
+  --utrecht-drawer-padding-inline-start: 0;
+  --utrecht-drawer-padding-inline-end: 0;
+}
+
+.denhaag-icon-button {
+  min-inline-size: 48px;
+  min-block-size: 48px;
 }

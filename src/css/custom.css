@@ -20,7 +20,7 @@
   word-wrap: normal;
 }
 
-:root {
+.ma-theme {
   /* docsearch tokens */
   --ma-docsearch-button-background-color: white;
   --ma-docsearch-button-border-color: var(--utrecht-button-secondary-action-border-color);
@@ -48,7 +48,9 @@
   --ma-docsearch-modal-hit-background-color: var(--basis-color-accent-1-bg-hover);
   --ma-docsearch-modal-hit-color: var(--basis-color-accent-1-color-default);
   --ma-docsearch-modal-hit-mark-font-weight: var(--basis-text-font-weight-bold);
+}
 
+:root {
   -webkit-hyphenate-limit-after: 4;
   -webkit-hyphenate-limit-before: 8;
   hyphenate-limit-chars: 12 8 4;
@@ -101,6 +103,8 @@
   --utrecht-code-font-size: 1em;
 
   /* TODO add to ma-design-tokens */
+  --utrecht-action-group-margin-block-end: 20px;
+  --utrecht-action-group-margin-block-start: 40px;
   --utrecht-card-background-color: var(--basis-color-action-2-bg-default);
   --utrecht-card-color: var(--basis-color-action-2-default);
   --utrecht-card-border-radius: 4px;
