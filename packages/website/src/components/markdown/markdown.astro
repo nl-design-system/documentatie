@@ -1,4 +1,14 @@
 ---
+/**
+ * This component is used to render markdown partials inside another markdown file.
+ * This is done by accepting an raw markdown string as content, applying a
+ * remark / rehype transformation on it and rendering the output.
+ * The remark / rehype plugins added mirror the markdown pipeline from Astro 6.2.2.
+ * The `sharedPlugins` contains all remark/rehype plugins also included in the
+ * Astro config. The `shiftHeadings` plugin is introduced here since it only
+ * makes sense in this context, and not in the general Astro config
+ */
+
 import { unified } from 'unified';
 import remarkGfm from 'remark-gfm';
 import remarkSmartypants from 'remark-smartypants';
@@ -32,7 +42,7 @@ const file = await unified()
   .use(remarkRehype, { allowDangerousHtml: true, passThrough: [] })
   .use(rehypePrism)
   .use(sharedPlugins.rehypePlugins)
-  .use(rehypeRaw) // *Parse* the raw HTML strings embedded in the tree
+  .use(rehypeRaw)
   .use(rehypeHeadingIds)
   .use(rehypeStringify, { allowDangerousHtml: true })
   .process(content);
