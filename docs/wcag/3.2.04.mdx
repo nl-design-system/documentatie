@@ -44,7 +44,7 @@ import Summary from "./summaries/_3.2.4-summary.md";
 
 Een zoekknop heet op elke pagina "Zoeken". Een link naar de voorpagina heet overal "Home", ook in het menu en in de footer. Een icoon betekent op elke plek hetzelfde. Zo herkent een bezoeker een functie terug zonder er opnieuw over na te denken.
 
-Screenreadergebruikers herkennen een knop of link aan de toegankelijke naam, die ze horen of in braille lezen. Heeft dezelfde knop op elke pagina een andere naam, dan is het voor hen een andere knop. Mensen die spraakbediening gebruiken, zeggen de naam van een knop om hem te activeren. Wisselt de naam, dan weten ze niet welk woord ze moeten zeggen. Mensen met een cognitieve beperking of een leerbeperking gebruiken patronen om een website te begrijpen. Heet dezelfde functie telkens anders, dan moeten zij op elke pagina opnieuw uitzoeken wat een onderdeel doet. Dat kost extra moeite en leidt tot fouten.
+Screenreadergebruikers herkennen een knop of link aan de [toegankelijke naam](/woordenlijst/#toegankelijke-naam), die ze horen of in braille lezen. De toegankelijke naam is de naam die hulpsoftware van een onderdeel doorgeeft. Vaak is dat de zichtbare tekst. Bij een knop met alleen een icoon staat de naam alleen in de code. Heeft dezelfde knop op elke pagina een andere naam, dan is het voor hen een andere knop. Mensen die spraakbediening gebruiken, zeggen de naam van een knop om hem te activeren. Wisselt de naam, dan weten ze niet welk woord ze moeten zeggen. Mensen met een cognitieve beperking of een leerbeperking gebruiken patronen om een website te begrijpen. Heet dezelfde functie telkens anders, dan moeten zij op elke pagina opnieuw uitzoeken wat een onderdeel doet. Dat kost extra moeite en leidt tot fouten.
 
 Onderdelen die iets anders doen, mogen anders heten. Het gaat erom dat dezelfde functie overal op dezelfde manier te herkennen is. Kleine verschillen in tekst mogen, zolang de bezoeker de functie nog als dezelfde herkent. Consistentie telt het zwaarst op plekken met veel vergelijkbare pagina's, zoals een meerstappenformulier of een portaal met veel deelpagina's.
 
@@ -208,7 +208,10 @@ In de voorbeelden hieronder staat eerst het veld uit het formulier voor een acco
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een contentmaker spreekt per gegeven één label af en gebruikt dat in elk formulier. Komt het label uit de code, dan past een developer het aan.
+**Wie kan dit oplossen:**
+
+- Een contentmaker spreekt per gegeven één label af en gebruikt dat in elk formulier.
+- Een developer past het label aan als dat in de code staat. Het liefst bouwt de developer het veld vanuit één gedeelde component, zodat het label in elk formulier gelijk blijft.
 
 ### Links naar hetzelfde soort document worden verschillend benoemd
 
@@ -241,7 +244,7 @@ Vergelijk de onderdelen handmatig of met een eigen overzicht. Automatische contr
 ### Voor iedereen
 
 1. Loop een proces met meerdere stappen door, zoals een formulier of een aanvraag. Let op de knoppen die terugkomen, zoals verder, terug en verzenden. Heten ze op elke stap hetzelfde? Vergelijk ook de formuliervelden die op meerdere stappen of in meerdere formulieren terugkomen. Hebben ze overal hetzelfde label?
-2. Bekijk onderdelen die op elke pagina staan, zoals de zoekfunctie, de taalwissel en deelknoppen. Hebben ze overal dezelfde toegankelijke naam?
+2. Bekijk onderdelen die op elke pagina staan, zoals de zoekfunctie, de taalwissel en deelknoppen. Hebben ze overal dezelfde toegankelijke naam? Dat is de naam die een screenreader voorleest. Bij een knop met alleen een icoon zie je die naam niet. Zet dan een screenreader aan en ga met <kbd>Tab</kbd> naar de knop, dan hoor je de naam.
 3. Let op iconen. Betekent een icoon overal hetzelfde, en heeft dezelfde functie overal hetzelfde icoon?
 4. Volg links die naar dezelfde pagina lijken te gaan. Hebben ze dezelfde linktekst?
 5. Controleer of links naar documenten overal op dezelfde manier zijn geschreven.
