@@ -50,9 +50,9 @@ Sommige websites gebruiken de bewegingssensor van een telefoon of tablet. Het ko
 
 Beweging komt ook voor zonder dat iemand het wil. Wie het apparaat niet stil kan houden, of onderweg is in een bus of trein, beweegt het per ongeluk. Als de pagina daarop reageert, gebeurt er steeds iets wat de bezoeker niet bedoelde. Daarom kun je de reactie op beweging uitzetten.
 
-Niet elke functie heeft een knop nodig. Is de beweging zelf de kern van de functie, dan hoeft er geen knop bij. Een stappenteller telt je stappen door de beweging van het apparaat. Zonder die beweging is er niets te tellen. De uitzonderingen staan volledig beschreven in de [Nederlandse vertaling van succescriterium 2.5.4 Bewegingsactivering](https://www.w3.org/Translations/WCAG22-nl/#motion-actuation).
+Staat de beweging centraal in een functie, dan hoeft er geen knop bij. Een stappenteller telt je stappen door de beweging van het apparaat. Zonder die beweging is er niets te tellen. De uitzonderingen staan volledig beschreven in de [Nederlandse vertaling van succescriterium 2.5.4 Bewegingsactivering](https://www.w3.org/Translations/WCAG22-nl/#motion-actuation).
 
-Schudden om iets ongedaan te maken zit op een iPhone in iOS zelf. Dat is geen functie van de website. De bezoeker zet het uit in de instellingen van het apparaat, onder Toegankelijkheid en dan Aanraken. Apple beschrijft de instelling Herstel door schudden op de pagina [De reactie van de iPhone op aanraking aanpassen](https://support.apple.com/nl-nl/guide/iphone/iph77bcdd132/ios).
+Een functie van het apparaat zelf die op beweging reageert, hoeft de website niet op te lossen. iPhones hebben bijvoorbeeld een ingebouwde functie om acties ongedaan te maken door de telefoon te schudden. Je kunt dit zelf uitzetten in de instellingen van het apparaat, onder Toegankelijkheid en dan Aanraken. Apple beschrijft de instelling Herstel door schudden op de pagina [De reactie van de iPhone op aanraking aanpassen](https://support.apple.com/nl-nl/guide/iphone/iph77bcdd132/ios).
 
 ## Veelgemaakte fouten
 
@@ -84,7 +84,7 @@ window.addEventListener("devicemotion", undoLastAction);
 
 ### Content bekijken of bedienen kan alleen door het apparaat te kantelen
 
-Een productweergave, een 360-gradenbeeld of een kaart reageert alleen op het kantelen van het apparaat. Je draait het beeld door de telefoon schuin te houden. Er zijn geen knoppen en je kunt het beeld ook niet met een vinger verslepen. Wie het apparaat op een vaste plek heeft of niet kan kantelen, ziet altijd maar één kant en komt niet bij de rest. Hetzelfde geldt voor een spel dat je alleen door kantelen bestuurt.
+Een productweergave, een 360-gradenbeeld of een kaart reageert alleen op het kantelen van het apparaat. Je draait het beeld door de telefoon schuin te houden. Er zijn geen knoppen en je kunt het beeld ook niet met een vinger verslepen. Wie het apparaat op een vaste plek heeft of niet kan kantelen, ziet altijd maar één kant en komt niet bij de rest. Niet elk apparaat reageert bovendien op kantelen: op een apparaat zonder bewegingssensor kan niemand het beeld draaien. Hetzelfde geldt voor een spel dat je alleen door kantelen bestuurt.
 
 **Hoe te testen:** probeer het beeld te draaien of te verschuiven zonder het apparaat te kantelen. Zijn er knoppen, of kun je het beeld met één vinger verslepen?
 
