@@ -141,21 +141,21 @@ De `href` van de skiplink verwijst naar een `id` die niet op de pagina staat, of
 In de twee voorbeelden hieronder staan alleen de skiplink en het doelelement. De rest van de pagina is weggelaten.
 
 <Guideline appearance="dont" title="Skiplink verwijst naar een id dat niet bestaat">
-    ```html
-    <a href="#content">Ga naar inhoud</a>
-    <main id="main">
-      <h1>Welkom</h1>
-    </main>
-    ```
+  ```html
+  <a href="#content">Ga naar inhoud</a>
+  <main id="main">
+    <h1>Welkom</h1>
+  </main>
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Skiplink en doel-id komen overeen">
-    ```html
-    <a href="#main">Ga naar inhoud</a>
-    <main id="main" tabindex="-1">
-      <h1>Welkom</h1>
-    </main>
-    ```
+  ```html
+  <a href="#main">Ga naar inhoud</a>
+  <main id="main" tabindex="-1">
+    <h1>Welkom</h1>
+  </main>
+  ```
 </Guideline>
 
 **Wie kan dit oplossen:** een developer controleert of het `href`-attribuut van de skiplink overeenkomt met het `id` van het doelelement.
@@ -169,22 +169,22 @@ Niet alleen de navigatie bovenaan de pagina is een herhaald blok. Een zijkolom m
 Het voorbeeld hieronder is ingekort: er staan in de praktijk meer filters en meer resultaten op de pagina.
 
 <Guideline appearance="do" title="Skiplink vóór de filterbalk springt naar de resultaten">
-    ```html
-    <main id="main" tabindex="-1">
-      <h1>Zoekresultaten</h1>
-      <a href="#results" class="skiplink">
-        Filters overslaan
-      </a>
-      <nav aria-label="Filters">
-        <button>Categorie</button>
-        <button>Prijs</button>
-        <button>Beoordeling</button>
-      </nav>
-      <section id="results" tabindex="-1" aria-label="Resultaten">
-        <h2>12 resultaten</h2>
-      </section>
-    </main>
-    ```
+  ```html
+  <main id="main" tabindex="-1">
+    <h1>Zoekresultaten</h1>
+    <a href="#results" class="skiplink">
+      Filters overslaan
+    </a>
+    <nav aria-label="Filters">
+      <button>Categorie</button>
+      <button>Prijs</button>
+      <button>Beoordeling</button>
+    </nav>
+    <section id="results" tabindex="-1" aria-label="Resultaten">
+      <h2>12 resultaten</h2>
+    </section>
+  </main>
+  ```
 </Guideline>
 
 **Wie kan dit oplossen:** een developer zet een skiplink vóór het herhaalde blok, die naar de content direct na het blok springt.
