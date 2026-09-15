@@ -138,27 +138,15 @@ Een Nederlandstalige pagina toont in een iframe een pagina in een andere taal, b
 
 **Hoe te testen:** open de <span lang="en">DevTools</span> en klap het `<iframe>`-element open. Staat er op het `<html>`-element binnen het iframe een `lang`-attribuut met de taal van de ingesloten inhoud?
 
-In de voorbeelden hieronder staat eerst de pagina met het iframe en daarna de ingesloten pagina.
+Het eerste voorbeeld hieronder komt uit de pagina met het iframe. Het tweede voorbeeld is de ingesloten pagina zelf.
 
-<Guideline appearance="dont" title="Taal staat alleen op het iframe, niet in de ingesloten pagina">
+<Guideline appearance="dont" title="Taal staat alleen op het iframe in de pagina eromheen">
   ```html
   <iframe lang="en" src="https://example.com/video" title="Video: zo vraag je een vergunning aan"></iframe>
   ```
-
-  ```html
-  <html>
-    <body>
-      <h1>How to apply for a permit</h1>
-    </body>
-  </html>
-  ```
 </Guideline>
 
-<Guideline appearance="do" title="Ingesloten pagina heeft de taal Engels op het html-element">
-  ```html
-  <iframe src="https://example.com/video" title="Video: zo vraag je een vergunning aan"></iframe>
-  ```
-
+<Guideline appearance="do" title="Ingesloten pagina heeft zelf de taal Engels op het html-element">
   ```html
   <html lang="en">
     <body>
