@@ -132,6 +132,44 @@ Het `lang`-attribuut op een anderstalige tekst bevat een ongeldige taalcode. De 
 
 **Wie kan dit oplossen:** een developer past de taalcode aan naar een geldige BCP 47-code.
 
+### Ingesloten pagina in een iframe heeft geen eigen taal
+
+Een Nederlandstalige pagina toont in een iframe een pagina in een andere taal, bijvoorbeeld een Engelstalige video of een kaart. Een `lang`-attribuut op het `<iframe>`-element geldt niet voor die ingesloten pagina. De browser bepaalt de taal binnen de ingesloten pagina met de elementen in die pagina zelf. Staat er geen `lang`-attribuut op het `<html>`-element van de ingesloten pagina, dan neemt de browser de taal niet over van de pagina eromheen. Dat staat in de Engelstalige [HTML-standaard over het `lang`-attribuut](https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes).
+
+**Hoe te testen:** open de <span lang="en">DevTools</span> en klap het `<iframe>`-element open. Staat er op het `<html>`-element binnen het iframe een `lang`-attribuut met de taal van de ingesloten inhoud?
+
+In de voorbeelden hieronder staat eerst de pagina met het iframe en daarna de ingesloten pagina.
+
+<Guideline appearance="dont" title="Taal staat alleen op het iframe, niet in de ingesloten pagina">
+  ```html
+  <iframe lang="en" src="https://example.com/video" title="Video: zo vraag je een vergunning aan"></iframe>
+  ```
+
+  ```html
+  <html>
+    <body>
+      <h1>How to apply for a permit</h1>
+    </body>
+  </html>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Ingesloten pagina heeft de taal Engels op het html-element">
+  ```html
+  <iframe src="https://example.com/video" title="Video: zo vraag je een vergunning aan"></iframe>
+  ```
+
+  ```html
+  <html lang="en">
+    <body>
+      <h1>How to apply for a permit</h1>
+    </body>
+  </html>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** de developer van de ingesloten pagina zet de taal op het `<html>`-element. Komt de ingesloten pagina van een externe partij, dan vraag je die partij om dit aan te passen.
+
 ## Uitzonderingen
 
 Niet elke anderstalige tekst heeft een `lang`-attribuut nodig. Je hoeft geen `lang`-attribuut te gebruiken bij:
@@ -150,6 +188,7 @@ Zo stel je stemmen in bij de screenreaders uit de [NL Design System Baseline](/b
 - [Automatisch wisselen van taal in NVDA](https://www.nvaccess.org/files/nvda/documentation/userGuide.html#SpeechSettingsLanguageSwitching) op Windows. Engelstalig.
 - [Stemmen toevoegen in VoiceOver op de Mac](https://support.apple.com/nl-nl/guide/voiceover/cpvouspvoices/mac), in het paneel "Stemmen" van de categorie "Spraak".
 - [VoiceOver op de iPhone](https://support.apple.com/nl-nl/guide/iphone/iph3e2e415f/ios): stemmen voor extra talen stel je in bij de instellingen voor toegankelijkheid.
+- [Tekst-naar-spraak-uitvoer bij TalkBack op Android](https://support.google.com/accessibility/android/answer/6006983?hl=nl): via "Spraakgegevens installeren" voeg je een taal toe.
 
 ### Voor iedereen
 
