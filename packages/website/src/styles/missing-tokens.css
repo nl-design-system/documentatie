@@ -157,6 +157,18 @@ html .utrecht-link--html-a:any-link:focus {
   }
 }
 
+.utrecht-table__cell--align-left {
+  text-align: start;
+}
+
+.utrecht-table__cell--align-center {
+  text-align: center;
+}
+
+.utrecht-table__cell--align-right {
+  text-align: end;
+}
+
 .denhaag-side-navigation__link {
   /* denhaag.side-navigation.link.padding-inline-end */
   padding-inline-end: var(--basis-space-inline-xl);
