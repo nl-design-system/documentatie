@@ -13,6 +13,7 @@ import { paragraph } from './paragraph';
 import { pre } from './pre';
 import { strong } from './strong';
 import { unorderedList } from './unordered-list';
+import { table } from './table';
 import { isElement } from 'hast-util-is-element';
 
 /**
@@ -41,6 +42,7 @@ export function nldsComponentsPlugin() {
       pre(node);
       strong(node);
       unorderedList(node);
+      table(node);
     });
   };
 }
