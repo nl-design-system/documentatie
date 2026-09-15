@@ -44,7 +44,7 @@ import Summary from "./summaries/_3.1.1-summary.md";
 
 <Summary />
 
-Als het `lang`-attribuut correct is ingesteld, leest een screenreader de tekst voor met de juiste uitspraak en tonen zoekmachines de pagina in de juiste taalversie van zoekresultaten. Zonder `lang="nl"` op een Nederlandstalige pagina kan een screenreader de tekst met een Engelse stem voorlezen. Het resultaat is onverstaanbaar.
+Als het `lang`-attribuut correct is ingesteld, leest een screenreader de tekst voor met de juiste uitspraak en tonen zoekmachines de pagina in de juiste taalversie van zoekresultaten. Zonder `lang="nl"` op een Nederlandstalige pagina leest de screenreader de Nederlandse tekst voor in de ingestelde taal van de screenreader. Als dat een andere taal is, zoals Engels, is de tekst onverstaanbaar.
 
 ## Veelgemaakte fouten
 
@@ -78,7 +78,7 @@ Elke webpagina heeft een `lang`-attribuut op het `<html>`-element dat de hoofdta
 
 ### Taalcode is onjuist of ongeldig
 
-Het `lang`-attribuut moet een geldige taalcode bevatten volgens de BCP 47-standaard. Voor Nederlands is dat `nl`, voor Engels `en`, voor Fries `fy`. Codes zoals `lang="dutch"` of `lang="ned"` worden door browsers en screenreaders niet herkend. Ze vallen dan terug op een standaardtaal, waardoor de uitspraak niet klopt.
+Het `lang`-attribuut moet een geldige taalcode bevatten volgens de [BCP 47-standaard](https://www.rfc-editor.org/info/bcp47). Voor Nederlands is dat `nl`, voor Engels `en`, voor Fries `fy`. Alle geldige codes staan in het [<span lang="en">Language Subtag Registry</span> van IANA](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). Codes zoals `lang="dutch"` of `lang="ned"` worden door browsers en screenreaders niet herkend. Ze vallen dan terug op een standaardtaal, waardoor de uitspraak niet klopt.
 
 **Hoe te testen:** inspecteer het `<html>`-element in de DevTools. Controleer of de taalcode geldig is. Voor Nederlands is dat `nl`, voor Engels `en`, voor Fries `fy`.
 
@@ -104,6 +104,8 @@ Het `lang`-attribuut moet een geldige taalcode bevatten volgens de BCP 47-standa
 ### Taalcode komt niet overeen met de daadwerkelijke taal
 
 Het `lang`-attribuut geeft een andere taal aan dan waarin de pagina geschreven is. Dit gebeurt als een website in meerdere talen beschikbaar is, maar het `lang`-attribuut niet mee verandert bij het wisselen van taal. Een screenreader leest dan bijvoorbeeld een Nederlandstalige pagina voor met een Engelse stem.
+
+Dezelfde fout ontstaat bij frameworks zoals React, Angular en Vue. Die genereren een standaard `index.html` met `lang="en"`. Past niemand die waarde aan, dan meldt een Nederlandstalige website zich als Engels.
 
 **Hoe te testen:** bekijk de taal van de content op de pagina. Open de DevTools en controleer of het `lang`-attribuut op `<html>` overeenkomt met die taal. Wissel van taal op de website en controleer of het `lang`-attribuut mee verandert.
 
@@ -135,7 +137,7 @@ Het `lang`-attribuut geeft een andere taal aan dan waarin de pagina geschreven i
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer laat de waarde van het `lang`-attribuut automatisch veranderen wanneer een andere taal is gekozen.
+**Wie kan dit oplossen:** een developer past de taalcode aan in het template, bijvoorbeeld in `index.html`. Bij een meertalige website laat de developer de waarde van het `lang`-attribuut automatisch veranderen wanneer een andere taal is gekozen.
 
 ### Taal verandert niet mee in een single-page applicatie
 
@@ -155,36 +157,17 @@ Het voorbeeld hieronder laat alleen zien hoe het `lang`-attribuut wordt bijgewer
 
 **Wie kan dit oplossen:** een developer voegt taallogica toe aan de taalwisselfunctie van de applicatie.
 
-### Template van een framework heeft een standaard Engelse taalcode
-
-Frameworks zoals React, Angular en Vue genereren een standaard `index.html` met `lang="en"`. Bij een Nederlandstalige website wordt die standaardwaarde niet aangepast. De pagina meldt zich als Engels terwijl de content Nederlands is.
-
-**Hoe te testen:** open de DevTools en inspecteer het `<html>`-element. Staat er `lang="en"` terwijl de content in een andere taal is?
-
-<Guideline appearance="dont" title="Standaard Engelse taalcode in de gegenereerde index.html van create-react-app.">
-    ```html
-    <html lang="en">
-    ```
-</Guideline>
-
-<Guideline appearance="do" title="Taalcode aangepast aan de daadwerkelijke taal.">
-    ```html
-    <html lang="nl">
-    ```
-</Guideline>
-
-**Wie kan dit oplossen:** een developer past het `lang`-attribuut aan in het template (`index.html`, `app.component.html` of equivalent).
-
 ## Hoe te testen
 
 ### Voor iedereen
 
-1. Gebruik een screenreader om een stuk tekst te laten voorlezen. Klinkt de uitspraak correct voor de taal van de pagina? Een verkeerde taalinstelling herken je aan een onnatuurlijke, buitenlandse uitspraak.
-2. Als de website meertalig is: wissel van taal en controleer of de uitspraak van de screenreader mee verandert.
+1. Klik in Chrome, Edge of Firefox met de rechtermuisknop op de pagina en kies "Paginabron weergeven".
+2. Zoek bovenaan naar het `<html>`-element. Staat daar een `lang`-attribuut met de taal van de pagina, bijvoorbeeld `lang="nl"`?
+3. Is de website meertalig? Open een pagina in een andere taal en controleer de paginabron opnieuw.
 
 ### Voor developers
 
-1. Inspecteer het `<html>`-element in de DevTools. Controleer of een `lang`-attribuut aanwezig is met een geldige BCP 47-taalcode.
+1. Inspecteer het `<html>`-element in de DevTools. Controleer of een `lang`-attribuut aanwezig is met een geldige taalcode volgens de [BCP 47-standaard](https://www.rfc-editor.org/info/bcp47).
 2. Controleer of het `lang`-attribuut via JavaScript wordt bijgewerkt bij meertalige websites en <span lang="en">single-page</span> applicaties.
 3. Zoek in je templates naar hardcoded `lang="en"` uit framework-generators. Pas deze aan naar de juiste taal.
 4. Gebruik een geautomatiseerde tool zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span>. Een ontbrekend `lang`-attribuut wordt automatisch herkend. Of de taalcode overeenkomt met de daadwerkelijke content moet je handmatig controleren.
@@ -192,6 +175,10 @@ Frameworks zoals React, Angular en Vue genereren een standaard `index.html` met 
 ## Gerelateerde succescriteria
 
 - [3.1.2 Taal van onderdelen](/wcag/3.1.2/): als een passage in een andere taal is geschreven dan de rest van de pagina, geeft een `lang`-attribuut op dat element de afwijkende taal aan. Lees hier meer als je pagina's hebt met gemengde talen.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Content - Tekstopmaak: [De juiste taal instellen](/richtlijnen/content/tekstopmaak/taal).
 
 ## Relevante bronnen
 
