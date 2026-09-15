@@ -44,7 +44,7 @@ import Summary from "./summaries/_3.2.4-summary.md";
 
 Een zoekknop heet op elke pagina "Zoeken". Een link naar de voorpagina heet overal "Home", ook in het menu en in de footer. Een icoon betekent op elke plek hetzelfde. Zo herkent een bezoeker een functie terug zonder er opnieuw over na te denken.
 
-Screenreadergebruikers herkennen een knop of link aan de naam die ze horen, de toegankelijke naam. Klinkt dezelfde knop op elke pagina anders, dan is het voor hen een andere knop. Mensen met een cognitieve beperking of een leerbeperking gebruiken patronen om een website te begrijpen. Heet dezelfde functie telkens anders, dan moeten zij op elke pagina opnieuw uitzoeken wat een onderdeel doet. Dat kost extra moeite en leidt tot fouten.
+Screenreadergebruikers herkennen een knop of link aan de toegankelijke naam, die ze horen of in braille lezen. Heeft dezelfde knop op elke pagina een andere naam, dan is het voor hen een andere knop. Mensen die spraakbediening gebruiken, zeggen de naam van een knop om hem te activeren. Wisselt de naam, dan weten ze niet welk woord ze moeten zeggen. Mensen met een cognitieve beperking of een leerbeperking gebruiken patronen om een website te begrijpen. Heet dezelfde functie telkens anders, dan moeten zij op elke pagina opnieuw uitzoeken wat een onderdeel doet. Dat kost extra moeite en leidt tot fouten.
 
 Onderdelen die iets anders doen, mogen anders heten. Het gaat erom dat dezelfde functie overal op dezelfde manier te herkennen is. Kleine verschillen in tekst mogen, zolang de bezoeker de functie nog als dezelfde herkent. Consistentie telt het zwaarst op plekken met veel vergelijkbare pagina's, zoals een meerstappenformulier of een portaal met veel deelpagina's.
 
@@ -52,7 +52,7 @@ Onderdelen die iets anders doen, mogen anders heten. Het gaat erom dat dezelfde 
 
 ### Dezelfde knop heet op verschillende pagina's anders
 
-In een meerstappenformulier heet de knop die je naar de volgende stap brengt op de ene pagina "Volgende", op de andere "Verder" en op de derde "Ga door". Het is telkens dezelfde functie, maar de bezoeker moet op elke stap opnieuw uitzoeken welke knop naar de volgende stap gaat. Voor een screenreadergebruiker klinkt het elke keer als een andere knop.
+In een meerstappenformulier heet de knop die je naar de volgende stap brengt op de ene pagina "Volgende", op de andere "Verder" en op de derde "Ga door". Het is telkens dezelfde functie, maar de bezoeker moet op elke stap opnieuw uitzoeken welke knop naar de volgende stap gaat. Een screenreadergebruiker krijgt op elke stap een andere naam te horen of in braille te lezen.
 
 **Hoe te testen:** loop een proces met meerdere stappen door en noteer de tekst van de knop die je verder brengt. Is die op elke stap hetzelfde?
 
@@ -139,7 +139,7 @@ In het foute voorbeeld hieronder staat de ster eerst voor favorieten en daarna v
 
 </Guideline>
 
-<Guideline appearance="do" title="Verschillende functies met een eigen, herkenbaar icoon">
+<Guideline appearance="do" title="Verschillende functies met een eigen, herkenbaar icoon: een hart voor favorieten, een ster voor de beoordeling">
     ```html
     <button type="button" aria-label="Toevoegen aan favorieten">
       <svg aria-hidden="true"><use href="/assets/icons.svg#icon-heart" /></svg>
@@ -158,27 +158,57 @@ Andersom geldt het ook: geef onderdelen die er hetzelfde uitzien ook dezelfde fu
 
 ### Links naar dezelfde bestemming hebben verschillende linktekst
 
-Drie plekken op de website linken naar de contactpagina, maar de linktekst is telkens anders: "Contact", "Neem contact op" en "Contactgegevens". De bezoeker weet niet zeker of die links naar dezelfde plek gaan. Een screenreadergebruiker die een lijst van links opvraagt, ziet drie verschillende teksten voor dezelfde bestemming.
+Drie plekken op de website linken naar de voorpagina, maar de linktekst is telkens anders: "Home", "Startpagina" en "Beginpagina". De bezoeker weet niet zeker of die links naar dezelfde plek gaan. Een screenreadergebruiker die een lijst van links opvraagt, krijgt drie verschillende teksten voor dezelfde bestemming.
 
 **Hoe te testen:** zoek de links die naar dezelfde pagina gaan. Hebben ze dezelfde linktekst, of twijfel je door het verschil over de bestemming?
 
 <Guideline appearance="dont" title="Dezelfde bestemming met verschillende linktekst">
   ```html
-  <a href="/contact">Contact</a>
-  <a href="/contact">Neem contact op</a>
-  <a href="/contact">Contactgegevens</a>
+  <a href="/">Home</a>
+  <a href="/">Startpagina</a>
+  <a href="/">Beginpagina</a>
   ```
 </Guideline>
 
 <Guideline appearance="do" title="Dezelfde bestemming met dezelfde linktekst">
   ```html
-  <a href="/contact">Contact</a>
-  <a href="/contact">Contact</a>
-  <a href="/contact">Contact</a>
+  <a href="/">Home</a>
+  <a href="/">Home</a>
+  <a href="/">Home</a>
   ```
 </Guideline>
 
 **Wie kan dit oplossen:** een contentmaker gebruikt dezelfde linktekst voor links die naar dezelfde bestemming gaan. Vraagt de context echt om een andere formulering, houd de bestemming dan herkenbaar in de linktekst.
+
+### Hetzelfde invoerveld heeft op verschillende pagina's een ander label
+
+Bij het aanmaken van een account heet het veld voor het e-mailadres "E-mailadres". In het contactformulier heet hetzelfde veld "Mailadres". De bezoeker vult telkens hetzelfde gegeven in, maar moet bij elk formulier opnieuw bedenken of het om hetzelfde gaat. Wie spraakbediening gebruikt, moet per formulier een ander woord zeggen om in het veld te komen.
+
+**Hoe te testen:** zoek invoervelden die op meerdere pagina's om hetzelfde gegeven vragen, zoals naam, e-mailadres of postcode. Hebben ze overal hetzelfde label?
+
+In de voorbeelden hieronder staat eerst het veld uit het formulier voor een account en daarna het veld uit het contactformulier.
+
+<Guideline appearance="dont" title="Hetzelfde invoerveld met verschillende labels">
+  ```html
+  <label for="account-email">E-mailadres</label>
+  <input type="email" id="account-email" name="email" autocomplete="email" />
+
+  <label for="contact-email">Mailadres</label>
+  <input type="email" id="contact-email" name="email" autocomplete="email" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Hetzelfde invoerveld met hetzelfde label">
+  ```html
+  <label for="account-email">E-mailadres</label>
+  <input type="email" id="account-email" name="email" autocomplete="email" />
+
+  <label for="contact-email">E-mailadres</label>
+  <input type="email" id="contact-email" name="email" autocomplete="email" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een contentmaker spreekt per gegeven één label af en gebruikt dat in elk formulier. Komt het label uit de code, dan past een developer het aan.
 
 ### Links naar hetzelfde soort document worden verschillend benoemd
 
@@ -206,10 +236,12 @@ De link om een document te downloaden heet op de ene pagina "Download het formul
 
 ## Hoe te testen
 
+Vergelijk de onderdelen handmatig of met een eigen overzicht. Automatische controles herkennen dit bijna niet, omdat consistentie over meerdere pagina's gaat.
+
 ### Voor iedereen
 
-1. Loop een proces met meerdere stappen door, zoals een formulier of een aanvraag. Let op de knoppen die terugkomen, zoals verder, terug en verzenden. Heten ze op elke stap hetzelfde?
-2. Bekijk onderdelen die op elke pagina staan, zoals de zoekfunctie, de taalwissel en deelknoppen. Hebben ze overal dezelfde tekst?
+1. Loop een proces met meerdere stappen door, zoals een formulier of een aanvraag. Let op de knoppen die terugkomen, zoals verder, terug en verzenden. Heten ze op elke stap hetzelfde? Vergelijk ook de formuliervelden die op meerdere stappen of in meerdere formulieren terugkomen. Hebben ze overal hetzelfde label?
+2. Bekijk onderdelen die op elke pagina staan, zoals de zoekfunctie, de taalwissel en deelknoppen. Hebben ze overal dezelfde toegankelijke naam?
 3. Let op iconen. Betekent een icoon overal hetzelfde, en heeft dezelfde functie overal hetzelfde icoon?
 4. Volg links die naar dezelfde pagina lijken te gaan. Hebben ze dezelfde linktekst?
 5. Controleer of links naar documenten overal op dezelfde manier zijn geschreven.
@@ -218,9 +250,7 @@ De link om een document te downloaden heet op de ene pagina "Download het formul
 
 1. Maak een overzicht van de terugkerende onderdelen, zoals knoppen, iconen en zoekvelden. Vergelijk hun tekst en toegankelijke naam over meerdere pagina's.
 2. Controleer de toegankelijke naam van icoonknoppen in de <span lang="en">Accessibility</span>-tab van de DevTools. Heeft dezelfde functie overal dezelfde naam?
-3. Zoek in de code naar knoppen en links met dezelfde functie die los van elkaar zijn opgebouwd. Onderdelen die uit één gedeelde component komen, blijven vanzelf consistent.
-4. Let op links die naar dezelfde `href` wijzen maar verschillende linktekst hebben.
-5. Vergelijk de onderdelen handmatig of met een eigen overzicht. Automatische controles herkennen dit bijna niet, omdat consistentie over meerdere pagina's gaat.
+3. Zoek naar functionaliteit die op meerdere plekken apart is gebouwd, zonder dezelfde code te hergebruiken. Daar kan dit probleem voorkomen.
 
 ## Gerelateerde NL Design System-richtlijnen
 
