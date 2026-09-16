@@ -424,19 +424,6 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
-  project: [
-    {
-      type: 'category',
-      label: 'Project',
-      collapsible: false,
-      className: 'sidebar__main-category',
-      link: {
-        type: 'doc',
-        id: 'project/index',
-      },
-      items: [{ type: 'doc', id: 'project/faq' }],
-    },
-  ],
 };
 
 export default sidebars;
