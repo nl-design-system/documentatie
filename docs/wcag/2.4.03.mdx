@@ -57,7 +57,7 @@ Consistentie tussen viewports kan zwaarder wegen dan de visuele volgorde op éé
 
 Bij twijfel of discussie over wat een logische volgorde is: doe een gebruikerstest. Laat toetsenbordgebruikers de pagina bedienen en observeer waar ze vastlopen. Dat geeft betere antwoorden dan een theoretische discussie.
 
-Bij modal dialoogvensters, zoals een cookiebanner of mobiel menu, verplaatst de focus zich naar het venster zodra het opent en keert terug naar de oorspronkelijke plek zodra het sluit.
+Bij modal dialoogvensters, zoals een cookiebanner of mobiel menu, verplaatst de focus zich naar het venster zodra het opent. Bij het sluiten gaat de focus terug naar de knop die het venster opende, of naar het element daarna.
 
 ## Veelgemaakte fouten
 
@@ -77,6 +77,8 @@ Een modal dialoogvenster verschijnt boven de pagina en blokkeert de interactie m
 
 Dit geldt voor alle modale elementen: dialoogvensters, <span lang="en">lightboxes</span>, mobiele menu's, cookiebanners en videomodals. Bij een cookiebanner die bij het laden van de pagina verschijnt, gaat de focus direct naar de banner zodat de bezoeker de keuze kan maken.
 
+Waar de focus binnen het venster terechtkomt, mag je zelf kiezen. Bij een venster met een paar knoppen ligt de eerste knop voor de hand. Staat er veel tekst in, zoals de uitleg in een cookiebanner, dan is de kop van het venster een betere plek: een screenreadergebruiker hoort dan eerst waar het venster over gaat, in plaats van meteen een knop. Geef die kop `tabindex="-1"` zodat een script hem focus kan geven zonder dat hij in de tabvolgorde komt.
+
 **Hoe te testen:** open een modal dialoogvenster of laad een pagina met een cookiebanner. Druk op <kbd>Tab</kbd>. Bevindt de focus zich in het venster? Of beweeg je door elementen achter het venster?
 
 <Guideline appearance="dont" title="Modal dialoogvenster openen zonder focus te verplaatsen.">
@@ -92,12 +94,36 @@ function openDialog() {
 
 <Guideline appearance="do" title="Focus verplaatsen naar het modal dialoogvenster bij openen.">
 
+Hier krijgt het eerste interactieve element de focus. Dat past bij een venster met een paar knoppen.
+
 ```javascript
 function openDialog() {
   const dialog = document.getElementById("dialog");
   dialog.style.display = "block";
   document.getElementById("overlay").style.display = "block";
   dialog.querySelector("button, [href], input")?.focus();
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Focus op de kop van een dialoogvenster met veel tekst.">
+
+De kop staat met `tabindex="-1"` niet in de tabvolgorde, maar kan wel focus krijgen van een script.
+
+```html
+<dialog id="cookie-dialog">
+  <h2 id="cookie-heading" tabindex="-1">Cookies op deze website</h2>
+  <p>We gebruiken cookies om de website te verbeteren.</p>
+  <button type="button">Alleen noodzakelijke cookies</button>
+  <button type="button">Alle cookies toestaan</button>
+</dialog>
+```
+
+```javascript
+function openDialog() {
+  document.getElementById("cookie-dialog").showModal();
+  document.getElementById("cookie-heading").focus();
 }
 ```
 
@@ -177,7 +203,9 @@ function trapFocus(dialog) {
 
 Na het sluiten van een modal dialoogvenster keert de focus terug naar de knop die het venster heeft geopend. Gebeurt dat niet, dan belandt de focus op `<body>` en moet de bezoeker opnieuw vanaf het begin door de pagina gaan met <kbd>Tab</kbd>.
 
-**Hoe te testen:** open een dialoogvenster, sluit het en druk op <kbd>Tab</kbd>. Gaat de focus verder vanaf de knop die het venster opende?
+De focus mag ook naar het element ná die knop. Dat is bruikbaar als de knop na het sluiten verdwijnt, of als de bezoeker in het venster een taak heeft afgerond en verder moet met de stap daarna. Wat niet mag, is de focus ergens anders op de pagina laten belanden.
+
+**Hoe te testen:** open een dialoogvenster, sluit het en druk op <kbd>Tab</kbd>. Gaat de focus verder vanaf de knop die het venster opende, of vanaf het element daarna?
 
 <Guideline appearance="dont" title="Focus verdwijnt na het sluiten van een modal dialoogvenster.">
 
@@ -207,7 +235,7 @@ function closeDialog() {
 
 </Guideline>
 
-**Wie kan dit oplossen:** een developer slaat het trigger-element op bij het openen en herstelt de focus bij het sluiten.
+**Wie kan dit oplossen:** een developer slaat het trigger-element op bij het openen en herstelt de focus bij het sluiten. Verdwijnt die knop na het sluiten, dan gaat de focus naar het element dat erop volgde.
 
 ### Content van een accordion of tabpaneel staat niet direct na de bijbehorende knop
 
