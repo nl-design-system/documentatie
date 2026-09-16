@@ -160,15 +160,15 @@ De content mag alleen sluiten op drie momenten: de bezoeker verplaatst de aanwij
 
 1. Inventariseer eerst welke pop-ups onder 1.4.13 vallen. Sluit uit: native browser-tooltips uit `title=`, modale dialogen, content die geen pagina-inhoud bedekt, foutmeldingen, en zelfstandige content zoals skiplinks.
 2. Beweeg de muis over knoppen, links en menu-items. Bij elk niet-modaal venster dat verschijnt:
-   - Beweeg de muis op het venster zelf: blijft het zichtbaar? (aanwijsbaar)
-   - Druk op <kbd>Escape</kbd>: sluit het zonder de muis te verplaatsen? (afsluitbaar)
-   - Laat de muis stilstaan op trigger of venster: blijft het zichtbaar? (aanhoudend)
+   - Aanwijsbaar: beweeg de muis op het venster zelf. Blijft het zichtbaar?
+   - Afsluitbaar: druk op <kbd>Escape</kbd>. Sluit het venster zonder dat je de muis verplaatst?
+   - Aanhoudend: laat de muis stilstaan op de trigger of op het venster. Blijft het zichtbaar?
 3. Ga met <kbd>Tab</kbd> door de pagina. Bij elk niet-modaal venster dat op focus verschijnt, doe dezelfde controles met het toetsenbord.
 4. Zoom de pagina tot 200%. Bedekken pop-ups en submenu's nu een groot deel van het scherm? Werkt <kbd>Escape</kbd> nog?
 
 ### Voor developers
 
-1. Inventariseer in de code alle plekken waar content op `:hover` of `:focus` (of `mouseenter`/`focus`-listeners) verschijnt.
+1. Inventariseer in de code alle plekken waar content verschijnt op `:hover`, `:focus` of op een listener voor `mouseenter` en `focus`.
 2. Per geval: bedekt het venster andere pagina-inhoud? Zo ja, voeg een `keydown`-handler toe op `document`-niveau die <kbd>Escape</kbd> afvangt en het venster sluit.
 3. Controleer dat de hover-state op een wrapper rondom trigger én venster staat, of gebruik `:focus-within`. Zo blijft het venster open als de muis of focus van trigger naar venster gaat.
 4. Test specifiek op 200% zoom: daar wordt duidelijk welke vensters in de praktijk pagina-inhoud bedekken.
@@ -178,14 +178,14 @@ De content mag alleen sluiten op drie momenten: de bezoeker verplaatst de aanwij
 
 - [2.1.1 Toetsenbord](/wcag/2.1.1/): aanvullende content die alleen op hover verschijnt en niet op focus, is voor toetsenbordgebruikers onbereikbaar. Dat is een 2.1.1-probleem, niet 1.4.13.
 - [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom kunnen niet-modale pop-ups groter worden dan het zichtbare gebied, waardoor ze meer pagina-inhoud bedekken.
-- [4.1.2 Naam, rol, waarde](/wcag/4.1.2/): de ARIA-koppeling van een tooltip aan zijn trigger (via `aria-describedby` en `role="tooltip"`) en de toegankelijke naam vallen onder 4.1.2, niet onder 1.4.13.
+- [4.1.2 Naam, rol, waarde](/wcag/4.1.2/): de ARIA-koppeling van een tooltip aan zijn trigger met `aria-describedby` en `role="tooltip"` valt onder 4.1.2, net als de toegankelijke naam. Dat hoort dus niet bij 1.4.13.
 
 ## Relevante bronnen
 
 - [WCAG 2.2: Succescriterium 1.4.13 Content bij hover of focus](https://www.w3.org/Translations/WCAG22-nl/#content-bij-aanwijzen-met-de-aanwijzer-of-focus): de officiële Nederlandstalige vertaling.
 - [Understanding 1.4.13 Content on Hover or Focus](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html): de toelichting van het W3C met technieken en voorbeelden (Engels).
 - [APG: Tooltip pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/): de ARIA Authoring Practices Guide voor toegankelijke tooltips, met code-voorbeelden en toetsenbordverwachtingen.
-- [Inclusive Components: Tooltips & Toggletips](https://inclusive-components.design/tooltips-toggletips/): uitleg van Heydon Pickering over het verschil tussen tooltips (puur uitleg) en toggletips (uitleg op klik), met patronen voor beide.
+- [Inclusive Components: Tooltips & Toggletips](https://inclusive-components.design/tooltips-toggletips/): uitleg van Heydon Pickering over het verschil tussen een tooltip die alleen uitleg geeft en een toggletip die de uitleg pas op een klik toont, met patronen voor beide.
 - [Floating UI](https://floating-ui.com/): een JavaScript-library die tooltips en popovers automatisch positioneert zodat ze niet buiten beeld vallen.
 
 ## Gebruikersonderzoek
