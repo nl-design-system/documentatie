@@ -434,12 +434,7 @@ const sidebars: SidebarsConfig = {
         type: 'doc',
         id: 'project/index',
       },
-      items: [
-        { type: 'doc', id: 'project/faq' },
-        { type: 'doc', id: 'project/kernteam' },
-        { type: 'doc', id: 'project/blijf-op-de-hoogte' },
-        { type: 'doc', id: 'project/klachten' },
-      ],
+      items: [{ type: 'doc', id: 'project/faq' }],
     },
   ],
 };
