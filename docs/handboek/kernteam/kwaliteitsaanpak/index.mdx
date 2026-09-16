@@ -52,7 +52,7 @@ We werken samen via Git om de software te reviewen, te testen en later te releas
 Controleren van de kwaliteit:
 
 - [Continuous Integration](./continuous-integration)
-- [Code reviews](/kwaliteitsaanpak/code-review/)
+- [Code reviews](./code-review)
 - [Definition of Done](./definition-of-done)
 - [Sprint review](./sprint-review/)
 
@@ -66,3 +66,14 @@ Software releases doen:
 Beheer:
 
 - [Backups](./backup): van de broncode moet een backup zijn.
+
+## Hoe de beveiliging geregeld is
+
+Het kernteam helpt de community om hun [repository's](https://github.com/orgs/nl-design-system/repositories) vers en veilig te houden, zodat iedereen gerust gebruik kan maken van de componenten en thema's. Samengevat:
+
+- Alle code wordt verplicht door een tweede teamlid gecontroleerd. Zie [Code reviews](./code-review).
+- Elke dag worden backups gemaakt van de NL Design System projecten op GitHub. Zie [Backups](./backup).
+- Elke maand worden updates geïnstalleerd. Die gaan niet automatisch: alle wijzigingen worden door twee personen gecontroleerd. Zie [Software supply chain](./supply-chain/).
+- Twee-factor-authenticatie is verplicht voor alle bijdragen aan NL Design System. Zie [Veilig werken](./veilig-werken).
+- Alle code wordt automatisch gecontroleerd op secure coding practices, en voldoen aan die regels is verplicht. Zie [Broncodekwaliteit](./broncodekwaliteit).
+- Organisaties die werken op [github.com/nl-design-system](https://github.com/nl-design-system) worden [geholpen met infrastructuur](https://github.com/nl-design-system/terraform) die de toegang tot de code en de integriteit ervan bewaakt.
