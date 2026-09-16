@@ -1,0 +1,111 @@
+---
+title: Onderdelen van NL Design System
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Onderdelen van NL Design System
+sidebar_position: 3
+navigation_order: 3
+pagination_label: Onderdelen van NL Design System
+description: "Componenten, patronen en templates, richtlijnen, thema's en gebruikersonderzoek: de 5 soorten onderdelen waaruit NL Design System is opgebouwd."
+keywords:
+  - componenten
+  - patronen
+  - templates
+  - richtlijnen
+  - design system
+---
+
+import { ThemesSVG, GuidelineSVG, ComponentSVG, PatternSVG, UserResearchSVG } from "@site/src/components/Icons";
+import { Grid } from "@components/grid/grid";
+import { Paragraph } from "@components/paragraph/paragraph";
+import { Markdown } from "@site/src/components/Markdown";
+import { Card } from "@site/src/components/Card/Card";
+import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
+
+{/* @license CC0-1.0 */}
+
+# Onderdelen van NL Design System
+
+<Paragraph purpose="lead">
+  NL Design System bestaat uit verschillende onderdelen: componenten, patronen en templates, richtlijnen, thema's en
+  gebruikersonderzoek. Samen vormt dit de basis voor een toegankelijke en herkenbare website of applicatie.
+</Paragraph>
+
+De [community](./kernteam-community.mdx) ontwikkelt deze onderdelen op basis van richtlijnen, gebruikersonderzoek en praktijkervaring. Zo kan iedereen herbruikbare, toegankelijke en gebruiksvriendelijke websites en webapplicaties maken op basis van alles wat eerder door anderen is uitgezocht.
+
+<Grid>
+  <Grid.Cell span="all">
+    <Card>
+      <ComponentSVG />
+      <Card.HeadingGroup>
+        <Card.Heading level={2}>
+          <Card.Link href="/componenten/">Componenten</Card.Link>
+        </Card.Heading>
+      </Card.HeadingGroup>
+      <Paragraph>Componenten zijn herbruikbare elementen, zoals een knop, een invoerveld of een menu.</Paragraph>
+    </Card>
+  </Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <PatternSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={2}>
+        <Card.Link href="/voorbeelden/patronen-en-templates/">Patronen en templates</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Patronen laten zien hoe componenten samenwerken bij een taak die een gebruiker wil uitvoeren. Templates zijn
+      complete voorbeeldpagina's die je kunt overnemen.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <GuidelineSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={2}>
+        <Card.Link href="/richtlijnen/">Richtlijnen</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Richtlijnen geven concrete adviezen over stijl, content en formulieren, met uitleg waarom iets zo werkt.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+<Grid.Cell span="all">
+  <Card>
+    <ThemesSVG />
+    <Card.HeadingGroup>
+      <Card.Heading level={2}>
+        <Card.Link href="/handboek/huisstijl-vastleggen/overzicht/">Thema's</Card.Link>
+      </Card.Heading>
+    </Card.HeadingGroup>
+    <Paragraph>
+      Elke deelnemende organisatie legt de eigen huisstijl vast als thema. Daardoor draait dezelfde toegankelijke logica
+      op verschillende plekken, met behoud van de eigen identiteit.
+    </Paragraph>
+  </Card>
+</Grid.Cell>
+
+  <Grid.Cell span="all">
+    <Card>
+      <UserResearchSVG />
+      <Card.HeadingGroup>
+        <Card.Heading level={2}>
+          <Card.Link href="https://gebruikersonderzoeken.nl">Gebruikersonderzoek</Card.Link>
+        </Card.Heading>
+      </Card.HeadingGroup>
+      <Paragraph>
+        Op gebruikersonderzoeken.nl staan onderzoeken van overheidsorganisaties. Die onderbouwen de keuzes in het design
+        system.
+      </Paragraph>
+    </Card>
+  </Grid.Cell>
+</Grid>
+
+<Markdown headingLevel={2}>
+  <HulpSnippet />
+</Markdown>
