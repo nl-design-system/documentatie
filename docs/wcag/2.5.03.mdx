@@ -45,6 +45,10 @@ Het is niet nodig om bij alle interactieve elementen zichtbare tekst te plaatsen
 
 Met "tekst" wordt hier een [reeks karakters](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html#dfn-text) bedoeld die iets uitdrukken in menselijke taal. Een enkele letter, zoals een "A" om tekst te vergroten, valt hier niet onder.
 
+De toegankelijke naam mag langer zijn dan de zichtbare tekst. "Zoeken in deze website" is goed bij een knop met de tekst "Zoeken", want de zichtbare tekst zit er letterlijk in. Zet die zichtbare tekst bij voorkeur vooraan, zodat een spraakcommando zonder omwegen werkt.
+
+Een tooltip is geen label. Verschijnt er bij een icoonknop een tooltip met andere woorden dan de toegankelijke naam, dan is dat geen fout onder dit succescriterium. De Understanding noemt een tooltip aanvullende content, en het zichtbare label is de tekst die zonder aanwijzen of focus al naast de bediening staat.
+
 ## Veelgemaakte fouten
 
 ### aria-label komt niet overeen met de zichtbare tekst
@@ -251,6 +255,68 @@ In het foute voorbeeld ziet de bezoeker "Verwijderen definitief" staan, terwijl 
 
 **Wie kan dit oplossen:** een developer plaatst alle zichtbare tekst in de HTML in plaats van in CSS.
 
+### Een invoerveld met alleen een placeholder als zichtbare tekst
+
+Een invoerveld heeft geen zichtbaar label, alleen een placeholder zoals "E-mailadres". Iemand met spraakbesturing leest die tekst van het scherm en zegt "Klik op E-mailadres". Heeft het veld een toegankelijke naam die die tekst niet bevat, bijvoorbeeld `aria-label="Contactgegevens"`, dan gebeurt er niets.
+
+Staat er geen andere tekst bij het veld, dan telt de placeholder als het zichtbare label. Voor spraakbesturing is dat immers het enige waar iemand naar kan verwijzen. Dat betekent niet dat een placeholder een label vervangt: de [HTML Standard](https://html.spec.whatwg.org/multipage/input.html#the-placeholder-attribute) raadt dat af, en zonder zichtbaar label vallen velden ook onder [3.3.2 Labels of instructies](/wcag/3.3.2/). De placeholder verdwijnt bovendien zodra de bezoeker begint te typen.
+
+**Hoe te testen:** zoek velden zonder zichtbaar label. Vergelijk de placeholdertekst met de toegankelijke naam in de Accessibility-tab van DevTools. Komt de placeholdertekst daarin voor?
+
+<Guideline appearance="dont" title="De toegankelijke naam bevat de placeholdertekst niet.">
+
+```html
+<input type="email" aria-label="Contactgegevens" placeholder="E-mailadres" />
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Een zichtbaar label, gekoppeld aan het veld.">
+
+```html
+<label for="email">E-mailadres</label> <input type="email" id="email" placeholder="naam@example.com" />
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer geeft het veld een zichtbaar `<label>`. Blijft de placeholder de enige zichtbare tekst, dan zorgt de developer dat de toegankelijke naam die tekst bevat.
+
+### Zichtbare tekst bij een bediening die geen toegankelijke naam heeft
+
+Boven een invoerveld staat "Naam", maar die tekst is geen `<label>` en er is ook geen `aria-label` of `aria-labelledby`. Het veld heeft dan helemaal geen toegankelijke naam. Iemand met spraakbesturing ziet "Naam" staan, maar er valt niets te vinden dat zo heet.
+
+Dit is de uiterste vorm van dit succescriterium: als de toegankelijke naam leeg is, kan de zichtbare tekst er per definitie niet in staan. Het valt tegelijk onder [1.3.1 Info en relaties](/wcag/1.3.1/) en [4.1.2 Naam, rol, waarde](/wcag/4.1.2/), en staat beschreven in [F111](https://www.w3.org/WAI/WCAG22/Techniques/failures/F111).
+
+**Hoe te testen:** klik op het veld in de Accessibility-tab van DevTools. Staat er bij <span lang="en">Name</span> niets? Terwijl er wel tekst bij het veld staat?
+
+<Guideline appearance="dont" title="Tekst naast het veld, zonder koppeling.">
+
+```html
+<p>Naam</p>
+<input type="text" />
+```
+
+</Guideline>
+
+<Guideline appearance="dont" title="aria-labelledby verwijst naar een id die niet bestaat.">
+
+```html
+<p id="nameEntry">Naam</p>
+<input type="text" aria-labelledby="name-entry" />
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Label gekoppeld met for en id.">
+
+```html
+<label for="name">Naam</label> <input type="text" id="name" />
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer koppelt de tekst aan het veld met `<label for>` en een `id`, of controleert of een `aria-labelledby` naar een bestaande `id` verwijst.
+
 ## Hoe te testen
 
 ### Voor iedereen
@@ -265,6 +331,8 @@ In het foute voorbeeld ziet de bezoeker "Verwijderen definitief" staan, terwijl 
 3. Controleer afbeeldingen in knoppen en links. Komt de `alt`-tekst overeen met de zichtbare tekst in de afbeelding?
 4. Controleer of CSS `::before` of `::after` zichtbare tekst toevoegt aan interactieve elementen. Zo ja, verplaats die tekst naar de HTML.
 5. Let op framework-componenten met automatisch gegenereerde labels. Controleer of die overeenkomen met de zichtbare tekst.
+6. Zoek velden zonder zichtbaar label. Staat er alleen een placeholder, controleer dan of die tekst in de toegankelijke naam voorkomt.
+7. Controleer of elke bediening met zichtbare tekst ook een toegankelijke naam heeft. Een leeg veld bij <span lang="en">Name</span> in de Accessibility-tab is een fout.
 
 ## Gerelateerde succescriteria
 
