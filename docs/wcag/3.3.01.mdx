@@ -197,6 +197,43 @@ Hetzelfde geldt voor de opmaak die de fout aangeeft. De CSS-selector `:invalid` 
 
 **Wie kan dit oplossen:** een developer wijzigt de validatietrigger van `input` naar `blur` of `submit`, en vervangt `:invalid` in de CSS door `:user-invalid`.
 
+### De foutmelding komt alleen van de browser zelf
+
+Een formulier gebruikt `required`, `type="email"` of `pattern` en laat de rest aan de browser over. Die blokkeert het verzenden, zet de focus op het eerste veld dat fout is en toont daar een bel met een korte tekst. In de meeste combinaties van browser en screenreader wordt die tekst voorgelezen, en daarmee is de fout in tekst beschreven. De [toelichting van het W3C](https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html) noemt daarbij een rij nadelen die in de praktijk zwaar wegen:
+
+- De bel verdwijnt in Chrome zodra je hem uit beeld scrolt, en komt niet terug als je terugscrolt. In Firefox blijft de bel op zijn plek staan terwijl de velden meebewegen, en omdat de tekst het veld niet bij naam noemt, is niet meer te zien waar de fout bij hoort. Dit is de stand van juni 2025, beschreven in [issue 961](https://github.com/w3c/wcag/issues/961).
+- Firefox met VoiceOver leest de melding niet voor. Chrome met VoiceOver doet dat sinds 2025 wel.
+- De tekst in de bel schaalt niet mee als de bezoeker inzoomt. Die blijft even groot als de rest van de browserinterface, en is daarmee voor een deel van de bezoekers te klein.
+- Alleen de eerste fout verschijnt. Wie drie velden verkeerd invult, moet drie keer verzenden en corrigeren.
+- De teksten zijn algemeen, zoals "Vul dit veld in". Ze zeggen zelden wat er precies moet veranderen, wat een probleem is voor [3.3.3 Foutsuggestie](/wcag/3.3.3/).
+
+Of dit voldoet, hangt dus af van de browser en de hulpsoftware die je bezoekers gebruiken. Met eigen foutmeldingen in de pagina heb je dat zelf in de hand.
+
+**Hoe te testen:** verzend het formulier met meerdere velden leeg. Verschijnt er een bel van de browser in plaats van een melding in de pagina? Scrol de bel uit beeld en weer terug: staat hij er nog, en bij het goede veld? Vul daarna één veld goed in en verzend opnieuw: komt de volgende fout pas nu tevoorschijn?
+
+<Guideline appearance="dont" title="Alleen de validatie van de browser.">
+  ```html
+  <form action="/aanmelden" method="post">
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" name="email" required />
+    <button type="submit">Aanmelden</button>
+  </form>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Eigen foutmeldingen in de pagina.">
+  ```html
+  <form action="/aanmelden" method="post" novalidate>
+    <label for="email">E-mailadres</label>
+    <p id="email-error">Vul een e-mailadres in, bijvoorbeeld naam@example.com.</p>
+    <input type="email" id="email" name="email" aria-describedby="email-error" aria-invalid="true" />
+    <button type="submit">Aanmelden</button>
+  </form>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zet `novalidate` op het formulier en toont de foutmeldingen in de pagina zelf, gekoppeld aan het veld met `aria-describedby`. De attributen `required` en `type="email"` blijven staan: die geven hulpsoftware informatie over het veld en helpen bij het valideren aan de serverkant.
+
 ## Hoe te testen
 
 ### Voor iedereen
@@ -209,7 +246,8 @@ Hetzelfde geldt voor de opmaak die de fout aangeeft. De CSS-selector `:invalid` 
 1. Inspecteer velden met fouten in de DevTools. Heeft elk veld met een fout een `aria-invalid="true"` en een `aria-describedby` dat verwijst naar de foutmelding?
 2. Test met een screenreader. Navigeer naar een veld met een fout. Wordt de foutmelding voorgelezen samen met het label?
 3. Controleer of inline validatie niet triggert terwijl de bezoeker nog aan het typen is.
-4. Als er een foutsamenvatting bovenaan staat: controleer of de links naar de individuele velden verwijzen. Controleer ook of de samenvatting na het verzenden door een screenreader wordt aangekondigd: dat kan via `role="alert"` op de samenvatting, of door de focus na het verzenden naar de samenvatting te verplaatsen.
+4. Zoek formulieren die de foutafhandeling aan de browser overlaten. Staat er geen `novalidate` op het `<form>` en is er geen eigen foutmelding in de pagina, dan hangt het van de browser en de hulpsoftware van de bezoeker af of de fout overkomt.
+5. Als er een foutsamenvatting bovenaan staat: controleer of de links naar de individuele velden verwijzen. Controleer ook of de samenvatting na het verzenden door een screenreader wordt aangekondigd: dat kan via `role="alert"` op de samenvatting, of door de focus na het verzenden naar de samenvatting te verplaatsen.
 
 ## Gerelateerde succescriteria
 
