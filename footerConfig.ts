@@ -9,7 +9,11 @@ const footer: Footer = {
     },
     {
       label: 'Contact',
-      to: '/project/kernteam',
+      to: '/introductie/contact/',
+    },
+    {
+      label: 'Klachten',
+      to: '/klachten',
     },
     {
       label: 'Toegankelijkheid',

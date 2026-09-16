@@ -158,4 +158,4 @@ Hou in gedachten: mensen willen een formulier graag snel invullen en daarna door
 
 ## Op de hoogte blijven van het NL Design System?
 
-Ben je benieuwd naar de ontwikkelingen van het NL Design System? [Meld je dan aan voor de maandelijkse nieuwsbrief](https://nldesignsystem.nl/project/blijf-op-de-hoogte/#nieuwsbrief) of [schuif aan tijdens de 2-wekelijkse update (Heartbeat)](https://nldesignsystem.nl/events/heartbeat/aanmelden/). Hierin delen we alle relevante updates.
+Ben je benieuwd naar de ontwikkelingen van het NL Design System? [Meld je dan aan voor de maandelijkse nieuwsbrief](https://nldesignsystem.nl/introductie/blijf-op-de-hoogte/#nieuwsbrief) of [schuif aan tijdens de 2-wekelijkse update (Heartbeat)](https://nldesignsystem.nl/events/heartbeat/aanmelden/). Hierin delen we alle relevante updates.

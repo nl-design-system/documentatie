@@ -262,7 +262,7 @@ export default function Home() {
                   body="Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL Design System."
                   heading="Nieuwsbrief"
                   headingLevel={3}
-                  href="/project/blijf-op-de-hoogte/#nieuwsbrief"
+                  href="/introductie/blijf-op-de-hoogte/#nieuwsbrief"
                 ></Card>
                 <Card
                   body="Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit te wisselen."
