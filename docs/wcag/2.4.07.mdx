@@ -102,9 +102,11 @@ In dit voorbeeld wordt de focusindicator verwijderd voor `:focus`, maar door de 
 
 **Wie kan dit oplossen:** een developer vervangt `outline: none` door een `:focus-visible`-stijl.
 
-### Focusindicator heeft te weinig contrast met de achtergrond
+### Focusindicator valt niet op tegen de achtergrond
 
-De focusindicator moet goed zichtbaar zijn in combinatie met elke achtergrondkleur op de website. Het contrast tussen de focusindicator en de achtergrond is minimaal 3:1. Pas de kleur van de focusindicator aan, of de achtergrondkleur.
+Een lichtgrijze omlijning op een witte achtergrond is er wel, maar valt niet op. Wie met het toetsenbord door de pagina beweegt, ziet dan nog steeds niet waar de focus staat. De indicator tekent zich af tegen elke achtergrondkleur die op de website voorkomt. Pas daarvoor de kleur van de focusindicator aan, of de achtergrondkleur.
+
+Het getal waarmee je dit meet, staat in een ander succescriterium. Een focusindicator is niet-tekstuele content en heeft daarom 3:1 contrast met de achtergrond nodig volgens [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/). De grootte en de vorm van de indicator komen aan bod in [2.4.13 Focusweergave](/wcag/2.4.13/) op niveau AAA. Voor 2.4.7 telt of je kunt zien waar de focus staat.
 
 **Hoe te testen:** ga met <kbd>Tab</kbd> naar een element en bekijk of de focusindicator opvalt. Test op alle achtergrondkleuren die op de website voorkomen. Gebruik een contrasttool om het contrast te meten.
 
@@ -295,18 +297,21 @@ Een script roept `blur()` aan op elementen die focus ontvangen, of zet de `outli
 **Hoe te testen:** zoek in de JavaScript-broncode naar `.blur()` en `outline = 'none'`.
 
 <Guideline appearance="dont" title="Focus weghalen uit een zoekveld na het verzenden.">
-    ```javascript
-    zoekFormulier.addEventListener("submit", () => {
-      zoekVeld.blur();
-      // De gebruiker weet nu niet meer waar de focus is
-    });
-    ```
+
+Na deze regel staat de focus nergens meer, en weet de bezoeker niet waar hij is gebleven.
+
+```javascript
+searchForm.addEventListener("submit", () => {
+  searchField.blur();
+});
+```
+
 </Guideline>
 
 <Guideline appearance="dont" title="Outline via JavaScript verwijderen op een invoerveld.">
     ```javascript
-    invoerVeld.addEventListener("focus", () => {
-      invoerVeld.style.outline = "none";
+    searchField.addEventListener("focus", () => {
+      searchField.style.outline = "none";
     });
     ```
 </Guideline>
@@ -367,7 +372,7 @@ Als je met <kbd>Tab</kbd> door de pagina beweegt en bij elk onderdeel direct kun
 3. Ga met <kbd>Tab</kbd> naar een element, open de <span lang="en">Styles</span>-tab in de DevTools en controleer welke focusstijlen actief zijn. Let op regels die de omlijning overschrijven.
 4. Zoek in de CSS naar containers met `overflow: hidden`, zoals kaarten met afgeronde hoeken. Ga met <kbd>Tab</kbd> naar de interactieve elementen erin en controleer of de focusindicator niet wordt afgesneden door de rand van de container.
 5. Zoek in JavaScript naar `.blur()` en `outline = 'none'`. Als `.blur()` wordt aangeroepen zonder dat de focus naar een ander element wordt verplaatst, verdwijnt de focus. Als `outline` op `'none'` wordt gezet zonder dat er een zichtbaar alternatief is, verdwijnt de focusindicator. Ga met <kbd>Tab</kbd> in de browser naar het betreffende element en controleer of de focus zichtbaar blijft.
-6. Test in elke browser van je <span lang="en">accessibility support baseline</span>. Elke browser toont focusindicatoren anders en eigen stijlen kunnen per browser afwijken. Zie de [NL Design System Baseline](https://nldesignsystem.nl/baseline/) als voorbeeld.
+6. Test in elke browser van je <span lang="en">accessibility support baseline</span>. Elke browser toont focusindicatoren anders en eigen stijlen kunnen per browser afwijken. Zie de [NL Design System Baseline](/baseline/) als voorbeeld.
 
 ### Test meteen ook
 
@@ -376,15 +381,16 @@ Als je toch met het toetsenbord door de pagina beweegt, kun je tegelijk een aant
 - [2.1.1 Toetsenbord](/wcag/2.1.1/): kun je elk interactief element bereiken en activeren met het toetsenbord?
 - [2.4.3 Focusvolgorde](/wcag/2.4.3/): springt de focus in een logische volgorde door de pagina?
 - [2.4.11 Focus niet bedekt](/wcag/2.4.11/): wordt het gefocuste element bedekt door een sticky header, footer of ander element?
-- [2.4.12 Focusweergave](/wcag/2.4.12/): is de focusindicator groot genoeg en heeft die voldoende contrast? (Dit gaat verder dan 2.4.7 en stelt eisen aan de minimale grootte en het contrast van de indicator zelf.)
-- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): heeft de focusindicator een contrast van minimaal 3:1 ten opzichte van de achtergrond?
+- [2.4.13 Focusweergave](/wcag/2.4.13/): is de focusindicator groot genoeg en heeft die voldoende contrast? Dit gaat op niveau AAA verder dan 2.4.7 en stelt eisen aan de grootte en de vorm van de indicator zelf.
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): heeft de focusindicator een contrast van minimaal 3:1 tegen de achtergrond?
 
 ## Gerelateerde succescriteria
 
 - [2.1.1 Toetsenbord](/wcag/2.1.1/): alle interactieve elementen zijn bereikbaar met het toetsenbord. Een zichtbare focusindicator helpt alleen als elementen ook daadwerkelijk focus kunnen ontvangen.
 - [2.4.3 Focusvolgorde](/wcag/2.4.3/): de volgorde waarin elementen focus krijgen is logisch. Lees hier meer als de focus in een onverwachte volgorde door de pagina springt.
-- [2.4.11 Focus niet bedekt](/wcag/2.4.11/): aanvullende eisen aan de focusindicator in WCAG 2.2, zoals minimale grootte en contrast. Lees hier meer als je een eigen focusindicator ontwerpt.
-- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): de focusindicator is niet-tekstuele content en heeft een contrast van minimaal 3:1 nodig ten opzichte van de achtergrond.
+- [2.4.11 Focus niet bedekt (minimum)](/wcag/2.4.11/): het onderdeel met de focus wordt niet volledig bedekt door iets anders op de pagina, zoals een sticky header. Lees hier meer als je pagina een balk heeft die blijft staan bij het scrollen.
+- [2.4.13 Focusweergave](/wcag/2.4.13/): eisen aan de grootte en de vorm van de focusindicator, op niveau AAA. Lees hier meer als je een eigen focusindicator ontwerpt.
+- [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11/): de focusindicator is niet-tekstuele content en heeft een contrast van minimaal 3:1 nodig tegen de achtergrond.
 
 ## Relevante bronnen
 
