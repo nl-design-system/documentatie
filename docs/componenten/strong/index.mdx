@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Strong
 pagination_label: Strong
 description: Korte belangrijke tekst die vetgedrukt wordt weergegeven.
+issue_number: 138
 slug: /strong
 keywords:
   - bold
@@ -27,7 +28,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Strong";
@@ -39,12 +39,6 @@ export const componentName = "strong";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

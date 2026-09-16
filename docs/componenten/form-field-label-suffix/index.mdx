@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Form Field Label Suffix
 pagination_label: Form Field Label Suffix
 description: Toont een tekstlabel dat aangeeft dat de in te vullen informatie wel of niet verplicht is.
+issue_number: 417
 slug: /form-field-label-suffix
 keywords:
   - suffix
@@ -31,7 +32,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Form Field Label Suffix";
@@ -43,12 +43,6 @@ export const componentName = "form-field-label-suffix";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

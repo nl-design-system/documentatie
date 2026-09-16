@@ -40,6 +40,11 @@ export interface NavigationItem {
 
   /** Indicating that an NavigationItem is to be unlisted in visible menus */
   unlisted?: boolean;
+
+  metadata?: string;
+
+  /* Indicating the page language */
+  lang?: 'nl' | 'en';
 }
 
 /**
@@ -88,11 +93,14 @@ export interface NavigationGroup {
 
   /** Indicating that an NavigationGroup is to be unlisted in visible menus */
   unlisted?: boolean;
+
+  /* Indicating the index page language */
+  lang?: 'nl' | 'en';
 }
 
-type NavigationElementResolved = NavigationItem | NavigationGroupResolved;
+export type NavigationElementResolved = NavigationItem | NavigationGroupResolved;
 
-interface NavigationGroupResolved extends NavigationGroup {
+export interface NavigationGroupResolved extends NavigationGroup {
   items: NavigationElementResolved[];
 }
 
@@ -163,6 +171,8 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
     href: `/${entry?.id || options?.href}/`.replaceAll(/\/{2,}/g, '/'),
     order: entry?.data?.navigation_order,
     unlisted: entry?.data?.unlisted,
+    metadata: entry?.data?.conformance_level,
+    lang: entry?.data?.lang,
   };
 
   return item;
@@ -283,6 +293,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
     filePath: options.filePath,
     href: index?.href,
     order: index?.order,
+    lang: index?.lang,
   };
 
   // Add the resulting NavigationGroup to each item as a parent
