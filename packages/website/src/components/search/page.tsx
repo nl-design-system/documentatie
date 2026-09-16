@@ -11,6 +11,7 @@ import { SearchError } from './error';
 import { SearchResults } from './results';
 import './page.css';
 import '@nl-design-system-candidate/mark-css/mark.css';
+import type { I18nLanguages } from '../../i18n';
 
 function pageTitle(query?: string | null) {
   return query ? `Zoeken naar: "${query}"` : 'Zoeken';
@@ -29,7 +30,11 @@ function updateUrlParameter(name: string, value?: string | null) {
   window.history.pushState({}, '', url.toString());
 }
 
-export const SearchPage = () => {
+export interface SearchPageProps {
+  lang: I18nLanguages;
+}
+
+export const SearchPage = ({ lang }: SearchPageProps) => {
   const [searchQuery, setSearchQuery] = useState<string | undefined | null>(null);
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<SearchResult>();
@@ -71,7 +76,12 @@ export const SearchPage = () => {
         </Grid.Cell>
 
         <Grid.Cell span="all">
-          <SearchForm autoFocus={autoFocus} value={searchQuery} onChange={(value) => setSearchQuery(value)} />
+          <SearchForm
+            lang={lang}
+            autoFocus={autoFocus}
+            value={searchQuery}
+            onChange={(value) => setSearchQuery(value)}
+          />
         </Grid.Cell>
 
         <Grid.Cell span="all" className="ma-flow">

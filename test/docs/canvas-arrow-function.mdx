@@ -14,4 +14,95 @@ Tests whether a Canvas with arrow function children renders correctly
 
 <TestPageNote />
 
-<Canvas language="html">{() => <p>Hello from Canvas</p>}</Canvas>
+## Simple example
+
+<Canvas language="html">
+  {() => (
+    <p>
+      Hello <strong>from</strong> Canvas
+    </p>
+  )}
+</Canvas>
+
+## Code attr wins over children
+
+<Canvas language="html" code="<p>existing <em>code</em> attr</p>">
+  {() => (
+    <p>
+      Hello <strong>from</strong> Canvas
+    </p>
+  )}
+</Canvas>
+
+## Authored attributes are being preserved, elements won't receive `.nl-*` classes
+
+<Canvas language="html">
+  {() => (
+    <>
+      <p>
+        <label htmlFor="first-name">Voornaam (een of meerdere)</label>
+      </p>
+      <p id="first-name-description">Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.</p>
+      <p>
+        <input
+          autoComplete="given-name"
+          type="text"
+          name="first_name"
+          id="first-name"
+          aria-describedby="first-name-description"
+        />
+      </p>
+    </>
+  )}
+</Canvas>
+
+## JSX artifacts do not show up
+
+<Canvas language="html">
+  {() => (
+    <p id="desc">
+      {
+        "Wij hebben jouw toestemming nodig om je e-mailadres op te slaan zodat we je onze nieuwsbrief kunnen sturen. Lees onze "
+      }
+      <a href="#" target="_blank">
+        {"privacybeleid (opent in een nieuw venster)"}
+      </a>
+      {"."}
+    </p>
+  )}
+</Canvas>
+
+## Headings do not show up in table of contents
+
+<Canvas language="html">{() => <h2>This is an heading</h2>}</Canvas>
+
+## External icon is rendered
+
+<Canvas language="html">
+  {() => (
+    <p>
+      <a href="#" target="_blank" className="nlds-icon-ext">
+        Lees het privacybeleid
+        <span className="sr-only">, opent in een nieuwe tab</span>
+      </a>
+      .
+    </p>
+  )}
+</Canvas>
+
+## Multiline style tags are being rendered correctly
+
+<Canvas language="html">
+  {() => (
+    <>
+      <div
+        style={{
+          background:
+            "center center no-repeat url('https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg')",
+        }}
+      >
+        <h2 style={{ padding: "50px", color: "white", backgroundColor: "#00000088" }}>Kaarten van Nederland</h2>
+      </div>
+    </>
+  )}
+</Canvas>

@@ -10,9 +10,7 @@ export function pre(element: Element) {
 
   element.properties['dir'] = element.properties['dir'] || 'ltr';
   element.properties['translate'] = element.properties['translate'] || 'no';
+  element.properties['tabIndex'] = '0';
 
   selectAll('code', element).forEach(addClassName('nl-code-block__code'));
-  selectAll('code', element).forEach(
-    (element) => (element.properties['tabIndex'] = element.properties['tabIndex'] || '0'),
-  );
 }

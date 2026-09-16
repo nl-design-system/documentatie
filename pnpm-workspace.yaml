@@ -29,7 +29,10 @@ minimumReleaseAgeExclude:
   - shell-quote@1.8.4
 
 overrides:
+  '@astrojs/markdown-remark': 7.3.0
+  '@astrojs/mdx': 8.0.0
   '@isaacs/brace-expansion@<=5.0.0': '>=5.0.1'
+  astro: 7.2.8
   form-data@>=4.0.0 <4.0.4: '>=4.0.4'
   shell-quote@>=1.1.0 <=1.8.3: ^1.8.4
 

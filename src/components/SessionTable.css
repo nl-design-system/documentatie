@@ -13,6 +13,10 @@
   table-layout: auto;
 }
 
+.ma-session-table__header-cell {
+  word-break: initial;
+}
+
 .ma-session-table__speakers {
   display: flex;
   flex-direction: column;

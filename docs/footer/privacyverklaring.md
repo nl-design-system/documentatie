@@ -5,6 +5,8 @@ hide_title: true
 hide_table_of_contents: true
 pagination_label: Privacyverklaring
 slug: /privacyverklaring
+translations:
+  en: /privacy-policy/
 ---
 
 # Privacyverklaring

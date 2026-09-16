@@ -42,6 +42,9 @@ export interface NavigationItem {
   unlisted?: boolean;
 
   metadata?: string;
+
+  /* Indicating the page language */
+  lang?: 'nl' | 'en';
 }
 
 /**
@@ -90,6 +93,9 @@ export interface NavigationGroup {
 
   /** Indicating that an NavigationGroup is to be unlisted in visible menus */
   unlisted?: boolean;
+
+  /* Indicating the index page language */
+  lang?: 'nl' | 'en';
 }
 
 export type NavigationElementResolved = NavigationItem | NavigationGroupResolved;
@@ -166,6 +172,7 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
     order: entry?.data?.navigation_order,
     unlisted: entry?.data?.unlisted,
     metadata: entry?.data?.conformance_level,
+    lang: entry?.data?.lang,
   };
 
   return item;
@@ -286,6 +293,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
     filePath: options.filePath,
     href: index?.href,
     order: index?.order,
+    lang: index?.lang,
   };
 
   // Add the resulting NavigationGroup to each item as a parent

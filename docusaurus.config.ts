@@ -2,6 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 import type { Config } from '@docusaurus/types';
+import path from 'node:path';
 import footer from './footerConfig';
 import navbar from './navConfig';
 import nldsPrismTheme from './nldsPrism';
@@ -11,6 +12,19 @@ import remarkCustomHeaderId from 'remark-custom-header-id';
 const siteUrl = 'https://nldesignsystem.nl';
 
 const config: Config = {
+  plugins: [
+    () => ({
+      name: 'alias-components',
+      configureWebpack: () => ({
+        resolve: {
+          alias: {
+            // These are the component in the Astro website.
+            '@components': path.resolve(__dirname, 'packages/website/src/components'),
+          },
+        },
+      }),
+    }),
+  ],
   title: 'NL Design System',
   titleDelimiter: '·',
   tagline: 'Eén design system voor alle huisstijlen',
