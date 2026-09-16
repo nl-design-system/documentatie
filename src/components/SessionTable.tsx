@@ -32,6 +32,7 @@ export interface Session {
 }
 
 interface SessionTableProps extends HTMLAttributes<HTMLTableElement> {
+  year: number;
   lang?: string;
   sessions: Session[];
   speakers: { [key: string]: Speaker };
@@ -48,7 +49,7 @@ const SpeakerData = ({ name, organisation }: Speaker) => (
   </Paragraph>
 );
 
-export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className, ...props }: SessionTableProps) => (
+export const SessionTable = ({ year, lang, sessions, speakers: allSpeakers, className, ...props }: SessionTableProps) => (
   <div className={clsx('ma-session-table-container', className)}>
     <Table className={clsx('ma-session-table', className)} {...props}>
       <TableHeader>
@@ -102,7 +103,7 @@ export const SessionTable = ({ lang, sessions, speakers: allSpeakers, className,
                 <TableCell className="ma-session-table__subject">
                   <Paragraph lang={language.abbr}>
                     <Link
-                      href={`/events/design-systems-week-2025/${lang === 'nl-NL' ? 'programma' : language.abbr === 'EN' ? 'en/program' : 'programma'}#${subject.toLowerCase().replace(/\s/gi, '-')}`}
+                      href={`/events/design-systems-week-${year}/${lang === 'nl-NL' ? 'programma' : language.abbr === 'EN' ? 'en/program' : 'programma'}#${subject.toLowerCase().replace(/\s/gi, '-')}`}
                     >
                       {subject}
                     </Link>
