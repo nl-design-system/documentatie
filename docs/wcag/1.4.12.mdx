@@ -176,7 +176,9 @@ Een knop heeft een vaste hoogte en een vaste lettergrootte. De tekst past daar p
 
 De bezoeker past de afstanden aan via een bookmarklet of extensie, maar de site negeert die aanpassingen. Dat komt doordat op `line-height`, `letter-spacing` of `word-spacing` `!important` staat: de stijlregel van de site wint van die van de bezoeker.
 
-**Hoe te testen:** zoek in de CSS naar `!important` op `line-height`, `letter-spacing`, `word-spacing` of `margin-bottom` op alinea's.
+`!important` in de code is op zichzelf geen fout, en sommige testtools melden dat ten onrechte als één. Zie het als een reden om handmatig te kijken: lukt het de bezoeker om de afstanden te verruimen, dan is er niets aan de hand.
+
+**Hoe te testen:** zoek in de CSS naar `!important` op `line-height`, `letter-spacing`, `word-spacing` of `margin-bottom` op alinea's. Probeer daarna de afstanden te verruimen en kijk of dat lukt.
 
 <Guideline appearance="dont" title="!important blokkeert bezoekerstijl">
     <div aria-hidden="true" style={demoSurface}>
@@ -208,6 +210,44 @@ De bezoeker past de afstanden aan via een bookmarklet of extensie, maar de site 
 </Guideline>
 
 **Wie kan dit oplossen:** een developer verwijdert `!important` van tekstafstand-eigenschappen.
+
+### Een script rekent de ruimte alleen bij het laden van de pagina uit
+
+Een script meet bij het laden hoeveel ruimte een tekst nodig heeft en zet de containers daarop. Verruimt de bezoeker daarna de tekstafstand, dan rekent het script niet opnieuw en blijven de oude maten staan. De tekst valt buiten zijn container, overlapt een ander onderdeel of verdwijnt achter de rand.
+
+Dit valt op omdat het resultaat per testmethode verschilt. Een gebruikersstijlblad werkt al bij het laden, dus daar klopt de opbouw. Een bookmarklet of extensie verandert de afstanden pas daarna, en dan gaat het mis.
+
+**Hoe te testen:** verruim de tekstafstand met een bookmarklet of extensie op een pagina die al geladen is. Breekt de opbouw, laad de pagina dan opnieuw met een gebruikersstijlblad dat dezelfde waarden zet. Ziet die tweede versie er wel goed uit, dan rekent een script alleen bij het laden.
+
+<Guideline appearance="dont" title="De hoogte wordt één keer berekend">
+
+```javascript
+window.addEventListener("load", () => {
+  card.style.height = `${card.scrollHeight}px`;
+});
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="De hoogte volgt de inhoud, ook na een wijziging">
+
+```css
+.example-card {
+  min-block-size: 8rem;
+}
+```
+
+Moet de maat toch met JavaScript worden gezet, laat een `ResizeObserver` het script dan opnieuw rekenen zodra de inhoud van maat verandert.
+
+```javascript
+new ResizeObserver(() => {
+  card.style.height = `${card.scrollHeight}px`;
+}).observe(card);
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer laat de hoogte over aan CSS met `min-block-size`, of laat het script opnieuw rekenen als de inhoud van maat verandert.
 
 ### Tekst wordt na een vast aantal regels afgekapt
 
@@ -481,18 +521,20 @@ Een datatabel heeft rijen met een vaste hoogte voor een strak ontwerp. Bij ruime
 ### Voor iedereen
 
 1. Gebruik de [tekstafstand-bookmarklet van Steve Faulkner](https://codepen.io/stevef/full/YLMqbo) of een vergelijkbare tool. Die zet in één klik de vier waarden op het minimum dat het succescriterium vereist.
-2. Bekijk de pagina. Is alle tekst nog zichtbaar? Wordt er niets afgesneden, afgekapt of verborgen?
-3. Controleer knoppen, labels, navigatie en tooltips. Is alles nog bereikbaar en leesbaar?
-4. Controleer of alle functies nog werken: formulieren, menu's, zoeken.
+2. Werkt de bookmarklet niet, kies dan een andere manier. Binnen een `<iframe>` en op een site met een strikt beveiligingsbeleid voor scripts komt de bookmarklet er niet in. Gebruik dan een gebruikersstijlblad in de browser of de Stylus-extensie: die werken ook in een `<iframe>`. Dat de bookmarklet zelf niet werkt, is geen fout van de website. Het succescriterium zegt niets over de manier waarop de bezoeker de afstanden aanpast, alleen dat de pagina blijft werken als dat lukt.
+3. Bekijk de pagina. Is alle tekst nog zichtbaar? Wordt er niets afgesneden, afgekapt of verborgen?
+4. Controleer knoppen, labels, navigatie en tooltips. Is alles nog bereikbaar en leesbaar?
+5. Controleer of alle functies nog werken: formulieren, menu's, zoeken.
 
 ### Voor developers
 
 1. Zoek in de CSS naar vaste afmetingen in combinatie met `overflow: hidden`. Controleer de eigenschappen `height`, `width`, `block-size` en `inline-size`, en vervang ze waar mogelijk door de `min`-variant.
-2. Zoek naar `!important` op `line-height`, `letter-spacing`, `word-spacing` en `margin`. Verwijder tenzij er een goede reden voor is.
-3. Zoek naar `-webkit-line-clamp`. Overweeg om de tekst zelf in te korten in plaats van met CSS af te kappen.
-4. Zoek naar tekst in afbeeldingen. Vervang door echte HTML-tekst.
-5. Controleer elementen met `position: absolute` of `position: fixed`. Passen ze nog in de layout bij ruimere tekst?
-6. Automatische tools zoals <span lang="en">axe DevTools</span> herkennen dit succescriterium niet. Handmatig testen is nodig.
+2. Zoek naar `!important` op `line-height`, `letter-spacing`, `word-spacing` en `margin`. Dat is geen fout op zichzelf, maar wel een plek om handmatig te controleren of de bezoeker de afstanden nog kan verruimen.
+3. Zoek naar scripts die een hoogte of breedte uitrekenen bij het laden van de pagina. Laat ze opnieuw rekenen als de inhoud van maat verandert, bijvoorbeeld met een `ResizeObserver`.
+4. Zoek naar `-webkit-line-clamp`. Overweeg om de tekst zelf in te korten in plaats van met CSS af te kappen.
+5. Zoek naar tekst in afbeeldingen. Vervang door echte HTML-tekst.
+6. Controleer elementen met `position: absolute` of `position: fixed`. Passen ze nog in de layout bij ruimere tekst?
+7. Automatische tools zoals <span lang="en">axe DevTools</span> herkennen dit succescriterium niet. Handmatig testen is nodig.
 
 ## Gerelateerde succescriteria
 
