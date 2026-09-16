@@ -39,6 +39,9 @@ Redirect 301 "/onderzoek" "/voorbeelden/onderzoek/"
 Redirect 301 "/pagination" "/page-number-navigation"
 Redirect 301 "/project/global-design-system/" "/community/global-design-system/"
 Redirect 301 "/project/links/" "/community/design-systems/"
+# Kwaliteitsaanpak en schrijfwijzer verhuisd naar het handboek
+RedirectMatch 301 "^/project/schrijfwijzer(/.*)?$" "/handboek/kernteam/schrijfwijzer$1"
+RedirectMatch 301 "^/project/kwaliteitsaanpak(/.*)?$" "/handboek/kernteam/kwaliteitsaanpak$1"
 # Algemene informatie verhuisd naar de introductie-sectie
 RedirectMatch 301 "^/handboek/estafettemodel/?$" "/introductie/estafettemodel/"
 RedirectMatch 301 "^/handboek/introductie/?$" "/introductie/"
