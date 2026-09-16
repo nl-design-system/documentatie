@@ -5,9 +5,17 @@ import ComponentOverview from '@components/docusaurus-mocks/ComponentOverview.as
 import ComponentAnatomy from '@components/docusaurus-mocks/ComponentAnatomy.astro';
 import { CriteriaList } from '@components/criteria-list/criteria-list';
 import { CriteriaListItem } from '@components/criteria-list/criteria-list-item';
+import Checklist from '@components/docusaurus-mocks/Checklist.astro';
+import ChecklistItem from '@components/docusaurus-mocks/ChecklistItem.astro';
+import * as Amsterdam from '@components/docusaurus-mocks/AmsterdamComponents.astro';
+import * as Card from '@components/docusaurus-mocks/Card.astro';
 
 export const MDXComponents = async ({ navigationItems, navigationList } = {}) => {
   return {
+    ...Amsterdam,
+    Card,
+    Checklist,
+    ChecklistItem,
     ComponentOverview,
     ComponentAnatomy,
     CriteriaList,
