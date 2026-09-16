@@ -13,4 +13,4 @@ Plaats de uitleg over wel of niet verplichte velden altijd boven het formulier, 
 
 Maak de markering ook onderdeel van de labeltekst.
 
-Gebruikers van [screenreaders](/woordenlijst/#screenreader) krijgen deze informatie daarnaast ook voorgelezen door `aria-required` of `required` in de code op te nemen bij de verplichte velden.
+Gebruikers van screenreaders krijgen deze informatie daarnaast ook voorgelezen door `aria-required` of `required` in de code op te nemen bij de verplichte velden.

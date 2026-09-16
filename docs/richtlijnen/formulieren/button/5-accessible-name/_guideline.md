@@ -2,7 +2,7 @@
 
 # De toegankelijke naam van een button
 
-Maak de buttontekst voor iedereen beschikbaar, zorg dus voor een toegankelijke naam. Dan kunnen gebruikers van [screenreaders](/woordenlijst/#screenreader) deze tekst ook lezen en weten ze wat er gaat gebeuren als ze op de button klikken.
+Maak de buttontekst voor iedereen beschikbaar, zorg dus voor een toegankelijke naam. Dan kunnen gebruikers van screenreaders deze tekst ook lezen en weten ze wat er gaat gebeuren als ze op de button klikken.
 
 We beschrijven hieronder een aantal technieken om een button een toegankelijke naam te geven.
 
