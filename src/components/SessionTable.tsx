@@ -49,7 +49,14 @@ const SpeakerData = ({ name, organisation }: Speaker) => (
   </Paragraph>
 );
 
-export const SessionTable = ({ year, lang, sessions, speakers: allSpeakers, className, ...props }: SessionTableProps) => (
+export const SessionTable = ({
+  year,
+  lang,
+  sessions,
+  speakers: allSpeakers,
+  className,
+  ...props
+}: SessionTableProps) => (
   <div className={clsx('ma-session-table-container', className)}>
     <Table className={clsx('ma-session-table', className)} {...props}>
       <TableHeader>
