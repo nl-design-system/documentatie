@@ -1,86 +1,87 @@
 ---
-title: Meedoen als organisatie
-title_sm: Meedoen
+title: Doe mee
 hide_title: true
-hide_table_of_contents: true
+hide_table_of_contents: false
 sidebar_label: Doe mee
 sidebar_position: 6
 navigation_order: 6
-pagination_label: Meedoen
-description: Meedoen als organisatie
+pagination_label: Doe mee
+description: Overheidsorganisaties lossen dezelfde problemen op. Door ze samen op te lossen profiteert iedereen, en meedoen kan klein beginnen.
 keywords:
+  - design system
+  - introductie
+  - meedoen
+  - community
+  - organisatie
   - leverancier
-  - waarom NL Design System
-  - waarom een design system
 ---
 
-# Meedoen als organisatie
+import {
+  DeveloperSVG,
+  DesignerSVG,
+  ContentSVG,
+  AccessibilitySVG,
+  ManagerSVG,
+  CommunitySVG,
+} from "@site/src/components/Icons";
+import { Grid } from "@components/grid/grid";
+import { Card } from "@site/src/components/Card/Card";
+import { Paragraph } from "@components/paragraph/paragraph";
+import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
+import { Markdown } from "@site/src/components/Markdown";
 
-Organisaties en hun leveranciers kunnen op verschillende niveaus meedoen met NL Design System.
+{/* @license CC0-1.0 */}
 
-## Niveau 1. Online meedoen
+# Doe mee
 
-### Bewijs
+<Paragraph purpose="lead">
+  Gebruik slim wat er al is en draag bij wat er nog mist. Met NL Design System ontdekken verschillende teams samen wat
+  in de praktijk goed werkt, zonder dat elke organisatie hetzelfde probleem apart oplost.
+</Paragraph>
 
-- personen [schrijven zich in](/community/sluit-je-aan) als lid van de community.
-- personen zijn af en toe aanwezig bij de [NL Design System Heartbeat](/events/heartbeat).
-- designers zijn af en toe aanwezig bij de [Design Open Hour](/events/design-open-hour).
-- developers zijn af en toe aanwezig bij de Developer Open Hour.
-- developers en designers zijn aanwezig op [Slack](/slack) in het kanaal `nl-design-system`.
-- vragen worden gesteld in publieke chatkanalen of in GitHub.
-- werkzaamheden en plannen zijn publiek gedeeld in de NL Design System community.
+Een actieve community deelt regelmatig kennis, ervaring, updates en verbeteringen. Organisaties dragen ontbrekende onderdelen bij en testen die met eindgebruikers. Zodra zo'n onderdeel aantoonbaar werkt voor eindgebruikers, developers en designers van verschillende organisaties, groeit het uit tot een gestandaardiseerd voorstel.
 
-## Niveau 2. Richtlijnen gebruiken
+## Wat samenwerken oplevert
 
-Onder [Richtlijnen](/richtlijnen/) verzamelen we richtlijnen voor het maken van digitale diensten, bijvoorbeeld voor het maken van formulieren.
+Overheidsorganisaties bieden vaak vergelijkbare diensten aan: eenvoudige en complexe formulieren, zaaksystemen, Mijn omgevingen en kaarten. Die overlap maakt samenwerken logisch, want niet elke organisatie hoeft dezelfde uitdaging opnieuw op te lossen.
 
-### Bewijs
+- **Specialisten** zoals developers, designers en contentmakers nemen bestaande bouwblokken over en dragen uitbreidingen bij.
+- **Leveranciers** bedienen hun overheidsklanten makkelijker en consistenter, en zijn voorbereid op uiteenlopende huisstijlen.
+- **Managers en beslissers** laten hun teams bouwen op wat zich elders al bewezen heeft, en maken budget vrij om zelf bij te dragen.
 
-Het opgeleverde werk voldoet aan de richtlijnen van NL Design System. Vraag de leverancier dit mee te nemen en ga achteraf zo goed mogelijk na of dit is gebeurd. Vraag om uitleg als er is afgeweken.
+Waar veel design systems 1 organisatie bedienen, werkt NL Design System over organisatiegrenzen heen: van gemeenten tot Rijk. Kleinere organisaties kunnen daarmee makkelijk gebruikmaken van het onderzoek en de ontwikkeling van anderen.
 
-## Niveau 3. Eigen NL Design System thema maken en onderhouden
+Nieuwe inzichten komen via nieuwe versies terecht in alle applicaties die met NL Design System gebouwd zijn, en verbeteren zo direct de ervaring van veel eindgebruikers.
 
-NL Design System thema's bestaan uit organisatiespecifieke ontwerpbeslissingen, die zijn vastgelegd als [Design Tokens](/handboek/huisstijl/design-tokens/).
+## Manieren om mee te doen
 
-### Bewijs
+Meedoen is gratis en kan gefaseerd. De code is beschikbaar met een open source licentie en is voor iedereen beschikbaar. De kosten zitten in het beschikbaar stellen van mensen en de tijd waarin zij samenwerken.
 
-Er staat een thema voor jouw organisatie in de [Thema Storybook](https://nl-design-system.github.io/themes/). De leverancier heeft in hun werkwijze opgenomen om dit thema te gebruiken en waar nodig uit te breiden. Bekijk in de [Thema Storybook](https://nl-design-system.github.io/themes/) of de gebruikte componenten in de huisstijl van jouw organisatie beschikbaar zijn.
+- **Sluit je aan bij de community.** Mensen uit je organisatie [schrijven zich in](/community/sluit-je-aan/), komen af en toe naar de [Heartbeat](/events/heartbeat/) of een Open Hour, en stellen hun vragen op [Slack](/slack/) of in GitHub. Dit kost weinig en levert direct contact op met organisaties die voor dezelfde opgaven staan.
 
-## Niveau 4. Componenten hergebruiken uit de community
+- **Gebruik de richtlijnen.** De [richtlijnen](/richtlijnen/) helpen bij het maken van digitale diensten, bijvoorbeeld voor [formulieren](/richtlijnen/formulieren/). Ze verbeteren de toegankelijkheid en gebruiksvriendelijkheid, ook zonder dat je één component overneemt.
 
-### Bewijs
+- **Leg je huisstijl vast als thema.** De identiteit van je organisatie leg je vast in een thema, opgebouwd uit [design tokens](/handboek/huisstijl/design-tokens/). Daarmee werken de componenten van NL Design System in je eigen huisstijl, en krijgen ook nieuwe componenten die huisstijl meteen mee.
 
-Bij het maken van prototypes is gebruik gemaakt van de Figma-bibliotheek van NL Design System, of er zijn onderdelen van community prototypes hergebruikt. In code worden zoveel mogelijk componenten met de status “Community” of hoger gebruikt.
+- **Gebruik bestaande componenten.** In prototypes en in productie gebruik je [componenten](/componenten/) uit de Figma-bibliotheek en uit code. Past een component niet, dan is een eigen weg kiezen prima, maar het helpt de community om te laten weten waarom het niet paste.
 
-**Altijd**: je maakt voor zover mogelijk gebruik van “Community”, “Candidate” en “Hall of Fame” componenten.
+- **Verbeter wat er al is.** Voldoet een component niet helemaal, bouw dan door op de bestaande code in plaats van opnieuw te beginnen, en deel de verbetering. Het liefst samen met de organisatie die het component maakte, zodat andere projecten er ook van profiteren.
 
-**Minimale optie**: Wanneer de component niet bruikbaar is, dan kies je een eigen weg.
+- **Draag bij wat er mist.** Ontbreekt er iets, maak het dan volgens de architectuur van NL Design System en draag het bij via het [Community stappenplan](/handboek/estafettemodel/componenten/community/voor-organisaties/). Lees hoe bijdragen uitgroeien tot een gedragen standaard bij [open source samenwerken](./estafettemodel.mdx).
 
-**Ideale optie**: Deel het met de community wanneer je een bestaande component niet kan hergebruiken. Dat kan bijvoorbeeld in de GitHub Discussion over de component, of door een GitHub Issue aan te maken bij de maker van de component.
+## Werken met een leverancier
 
-**Tip**: We raden leveranciers aan om deel te nemen aan designer en developer open hours zodat vragen gesteld kunnen worden en samengewerkt kan worden met de bestaande community.
+Veel organisaties werken met NL Design System via hun leveranciers. Maak in een uitvraag duidelijk wat je precies verwacht, dan weet een leverancier waar die aan toe is.
 
-## Niveau 5. Componenten verbeteren uit de community
+Wanneer NL Design System wordt opgenomen in een aanbesteding is het advies om duidelijk te zijn richting leveranciers op welke manier je dat bedoelt. Gebruik hiervoor de [Manieren om mee te doen](#manieren-om-mee-te-doen) uit de sectie hierboven.
 
-### Bewijs
+Ervaring met de gebruikte technieken van NL Design System is voor de uitvoering daarvan waardevol. Denk hierbij aan:
 
-Wanneer een component uit de community niet helemaal voldoet aan de eisen, is gebruik gemaakt van bestaande code om op door te bouwen.
+- Ervaring met Design Systems
+- Ervaring met herbruikbare componenten in Figma
+- Ervaring met Design Tokens JSON
+- Ervaring met Storybook en Chromatic
 
-**Minimale optie**: De nieuwe component is zoveel mogelijk opgebouwd op dezelfde manier als de bestaande component en de community is van deze nieuwe variant op de hoogte gesteld.
-
-**Ideale optie**: Er is samengewerkt met de oorspronkelijke organisatie om de verbetering daar door te voeren.
-
-## Niveau 6. Componenten bijdragen aan de community
-
-### Bewijs
-
-Nieuwe componenten zijn opgeleverd volgens de aanpak van NL Design System. Dat betekent:
-
-- De component is aangemaakt als GitHub Discussion voor Help Wanted.
-- De [eerste stappen voor “Community component”](https://nldesignsystem.nl/handboek/component-bijdragen/community-stappenplan) zijn gevolgd.
-- De component is gebouwd volgens de NL Design System architectuur.
-- De component is beschikbaar gemaakt in de thema Storybook website van NL Design System.
-
-Daarnaast is het van belang dat het doel van de component duidelijk is, en kan worden aangenomen dat het ook bruikbaar is voor de rest van Nederland. Bij componenten die waarschijnlijk niet bruikbaar zijn voor de rest van Nederland, maar wel binnen eigen websites en apps, kiezen organisaties soms om ze alleen in hun eigen design system op te nemen, als zogenaamde ‘snowflake’.
-
-**Ideale optie**: De component is ook in Figma beschikbaar volgens de Figma architectuur.
+<Markdown headingLevel={2}>
+  <HulpSnippet />
+</Markdown>
