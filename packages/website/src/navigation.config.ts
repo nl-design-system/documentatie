@@ -10,7 +10,7 @@ export const navigation = navigationRoot(
       }),
       navigationGroup({
         label: 'Handboek',
-        index: navigationItem('docs/handboek/index.json'),
+        index: navigationItem('docs/handboek/index.mdx'),
         items: [
           navigationItem('docs/handboek/componenten-vinden.mdx'),
           navigationGroup({ filePath: 'docs/handboek/bijdragen' }),
