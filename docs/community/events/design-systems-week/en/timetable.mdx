@@ -8,17 +8,16 @@ pagination_label: Timetable
 sidebar_position: 3
 navigation_order: 3
 slug: /events/design-systems-week-2026/en/timetable
+translations:
+  nl: /events/design-systems-week-2026/tijdschema/
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2026.png
 image_alt: NL Design System Design Systems Week 2026 26-29 October, online
 ---
 
-import {
-  ButtonGroup as ActionGroup,
-  ButtonLink,
-  Link,
-  Heading2,
-  Paragraph,
-} from "@utrecht/component-library-react/dist/css-module";
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ActionGroup } from "@components/action-group/action-group";
+import { Link } from "@components/link/link";
+import { Paragraph } from "@components/paragraph/paragraph";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../\_2026/sessions.json";
 import speakers from "../\_2026/speakers.json";
@@ -27,7 +26,7 @@ import settings from "../settings.json";
 
 # Design Systems Week {settings.year} Timetable
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   NL Design System is organising the Design Systems Week for the {settings.en.edition} time. It will feature a number of
   short talks about the how and why of design systems. All online. From {settings.en.dateRange}, we will cover subjects
   like managing design systems, integrating accessibility, user research and code.
@@ -36,9 +35,9 @@ import settings from "../settings.json";
 {!settings.isHappening && (
 
 <ActionGroup>
-  <ButtonLink href="/events/design-systems-week/en" appearance="primary-action-button">
+  <ButtonLink href="/events/design-systems-week/en" appearance="primary-action">
     {"About Design Systems Week"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
 </ActionGroup>
 
@@ -47,24 +46,30 @@ import settings from "../settings.json";
 {!!settings.isHappening && (<>
 
 <ActionGroup>
-  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="primary-action-button">
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="primary-action">
     {"See the program"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
   {!!settings.miro && (
-    <ButtonLink href={settings.miro} appearance="secondary-action-button">
+    <ButtonLink href={settings.miro} appearance="secondary-action">
       {"Use Miro"}
-      <IconChevronRight />
+      <IconChevronRight slot="icon-end" />
     </ButtonLink>
   )}
 </ActionGroup>
 
 </>)}
 
-{/* Vul in per dag */}
+{!settings.sessionsAreFinal && (<>
 
-{/* prettier-ignore */}
-{/*
+<Paragraph>
+  The timetable is not yet final. The sessions will be further developed and added in the coming weeks. Keep an eye on
+  this page for updates.
+</Paragraph>
+
+</>)}
+
+{/* Vul in per dag */}
 
 ## Monday, October 26
 
@@ -93,8 +98,6 @@ import settings from "../settings.json";
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-29`))}
 />
-
-\*/}
 
 {!!settings.isHappening && (<>
 

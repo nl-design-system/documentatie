@@ -1,4 +1,5 @@
 .ma-search-form {
+  align-items: center;
   container-name: search-form;
   container-type: inline-size;
   display: flex;

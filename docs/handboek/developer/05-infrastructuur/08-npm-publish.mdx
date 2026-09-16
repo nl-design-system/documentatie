@@ -20,11 +20,11 @@ keywords:
 {/* - Als developer/maintainer wil ik weten hoe ik mijn repository moet inrichten om packages te publiceren via Changesets */}
 {/* - Als DevOps Engineer wil ik dat de community kan troubleshooten bij publiceren, omdat eventuele foutmeldingen bij problemen vaak onduidelijk zijn */}
 
-import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@components/paragraph/paragraph";
 
 # Publiceren van npm packages
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   Het publiceren van NL Design System packages gaat altijd via CI/CD pipelines. Dat is handig en veiliger dan handmatig
   publiceren. We volgen hierbij de Changesets-workflow: bij elke wijziging die je wilt publiceren voorzie je die gelijk
   van de tekst voor de changelog, en je publiceert op een goed moment één of meerdere wijzigingen door een Pull Request
