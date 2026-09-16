@@ -44,7 +44,13 @@ import Summary from "./summaries/_1.2.5-summary.md";
 
 <Summary />
 
-Wie de beelden van een video niet kan zien, krijgt de visuele informatie via een audiodescriptie: een extra audiospoor dat meeloopt met de video en beschrijft wat in beeld gebeurt. De beschrijvingen passen in de stiltes tussen de dialogen, of aan het begin of het einde van de video.
+Wie de beelden van een video niet kan zien, krijgt de visuele informatie via een audiodescriptie: een verteller die beschrijft wat er in beeld gebeurt. Dat gebeurt meestal met een extra audiospoor dat meeloopt met de video. De beschrijvingen passen in de stiltes tussen de dialogen, of aan het begin of het einde van de video.
+
+Een apart spoor is geen eis. Zit alle belangrijke visuele informatie al in de gewone audio, dan hoeft er niets bij. Een spreker die zegt "op deze grafiek zie je de omzet verdubbelen tussen 2024 en 2026" brengt die informatie net zo goed over als een beschrijving achteraf. De Understanding zegt het zo:
+
+> For 1.2.3, 1.2.5, and 1.2.7, if all of the important information in the video track is already conveyed in the audio track, no additional audio description is necessary.
+
+Deze aanpak heeft een eigen techniek: [G226: Providing audio descriptions by incorporating narration in the soundtrack](https://www.w3.org/WAI/WCAG22/Techniques/general/G226). Het scheelt werk om er bij het maken van een video al rekening mee te houden, want beschrijvingen die achteraf in de stiltes moeten passen, zijn lastiger te maken dan een script waarin de spreker meteen benoemt wat er te zien is.
 
 Op niveau A mag een transcript onder succescriterium [1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)](/wcag/1.2.3/) nog volstaan; op niveau AA niet meer. Er moet dan een audiodescriptie zijn die je tegelijk met de video kunt horen.
 
@@ -58,7 +64,7 @@ Een bedrijfsvideo toont een rondleiding door een kantoor of een productdemonstra
 
 **Hoe te testen:** zet de video aan en sluit je ogen. Begrijp je het verhaal nog? Als je belangrijke dingen mist, heeft de video audiodescriptie nodig.
 
-**Wie kan dit oplossen:** een contentmaker laat een audiodescriptie schrijven en inspreken. De developer zorgt dat de videospeler het extra spoor kan afspelen, of plaatst een tweede versie van de video met de audiodescriptie ingemixt.
+**Wie kan dit oplossen:** een contentmaker laat een audiodescriptie schrijven en inspreken. De developer zorgt dat de videospeler het extra spoor kan afspelen, of plaatst een tweede versie van de video met de audiodescriptie ingemixt. Gaat de video nog gemaakt worden, dan is er een derde weg: laat de spreker in het script benoemen wat er te zien is. Dan is een apart spoor niet nodig.
 
 ### Een transcript aanbieden in plaats van audiodescriptie
 
@@ -106,15 +112,15 @@ Bij een video met meerdere talen, bijvoorbeeld een Nederlandse documentaire met 
 
 ### Voor iedereen
 
-1. Zet de video aan met geluid en sluit je ogen. Begrijp je nog wat er gebeurt? Krijg je de essentiële informatie mee?
-2. Zoek in de videospeler naar een optie voor audiodescriptie of een extra audiospoor.
+1. Zet de video aan met geluid en sluit je ogen. Begrijp je nog wat er gebeurt? Krijg je de essentiële informatie mee? Zo ja, dan voldoet de video, ook als er geen apart spoor met beschrijvingen is.
+2. Mis je informatie, zoek dan in de videospeler naar een optie voor audiodescriptie of een extra audiospoor.
 3. Zet de audiodescriptie aan en beluister de video opnieuw. Krijg je nu wel het volledige verhaal?
 4. Let op tekst die in beeld verschijnt: namen, bedrijfsnamen of andere tekst. Hoor je ze terug?
 5. Controleer of de audiodescriptie in dezelfde taal is als de video.
 
 ### Voor developers
 
-1. Inspecteer het `<video>`-element. Is er een `<track kind="descriptions">` aanwezig, of een tweede videobestand met de audiodescriptie ingemixt?
+1. Inspecteer het `<video>`-element. Is er een `<track kind="descriptions">` aanwezig, of een tweede videobestand met de audiodescriptie ingemixt? Ontbreken die allebei, dan is dat geen fout zolang de gewone audio alles benoemt wat in beeld belangrijk is. Dat beoordeel je door te luisteren, niet in de code.
 2. Controleer of de videospeler een knop of optie biedt om het audiodescriptie-spoor aan of uit te zetten.
 3. Automatische tools zoals <span lang="en">axe DevTools</span> of <span lang="en">Lighthouse</span> controleren niet of de audiodescriptie inhoudelijk volledig en relevant is. Dit is een handmatige controle.
 
@@ -130,6 +136,7 @@ Bij een video met meerdere talen, bijvoorbeeld een Nederlandse documentaire met 
 
 - [WCAG 2.2: Succescriterium 1.2.5 Audiodescriptie (vooraf opgenomen)](https://www.w3.org/Translations/WCAG22-nl/#audiodescriptie-vooraf-opgenomen): de officiële Nederlandstalige vertaling van het succescriterium.
 - [Understanding SC 1.2.5: Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html): de Engelstalige W3C-uitleg bij het succescriterium, met technieken en voorbeelden.
+- [G226: Providing audio descriptions by incorporating narration in the soundtrack](https://www.w3.org/WAI/WCAG22/Techniques/general/G226): de Engelstalige W3C-techniek voor het verwerken van de beschrijvingen in de gewone audio, in plaats van in een apart spoor.
 - [How to Make Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/): de Engelstalige W3C-handleiding over toegankelijke audio en video, inclusief uitleg over audiodescriptie.
 - [HTMLMediaElement: `<track>` kind="descriptions"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track): de Engelstalige MDN-documentatie over het `<track>`-element en de beschikbare kinds.
 
