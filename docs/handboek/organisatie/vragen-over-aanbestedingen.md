@@ -33,7 +33,7 @@ De niveau's om uit te kiezen zijn:
 5. **Help componenten verbeteren**: Zorg dat verbeteringen en uitbreidingen aan bestaande componenten worden bijgedragen aan de Community. Zo kunnen andere projecten en organisaties ook van deze verbeteringen profiteren.
 6. **Draag nieuwe componenten bij**: Maak nieuwe componenten in GitHub en Figma volgens de NL Design System aanpak, draag deze bij volgens het Community stappenplan en zorg voor beheer van deze componenten.
 
-Bij  [meedoen met je organisatie](/handboek/organisatie/meedoen/)  is opgenomen hoe NL Design System de niveaus beoordeeld.
+Bij  [meedoen met je organisatie](/introductie/meedoen/)  is opgenomen hoe NL Design System de niveaus beoordeeld.
 
 ## Stel ervaring met NL Design System niet verplicht
 
