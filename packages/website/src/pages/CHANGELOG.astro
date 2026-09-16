@@ -1,0 +1,30 @@
+---
+import CenterColumnLayout from '@layouts/center-column.astro';
+import { MDXComponents } from '@utils/mdx-components.astro';
+import { Grid } from '@components/grid/grid';
+import { Heading } from '@components/heading/heading';
+import { Paragraph } from '@components/paragraph/paragraph';
+import { getEntry, render } from 'astro:content';
+
+const page = await getEntry('changelog', 'CHANGELOG');
+const { Content } = await render(page);
+const components = await MDXComponents();
+
+const title = 'Changelog';
+const description = 'De changelog van de nldesignsystem.nl website';
+---
+
+<CenterColumnLayout title={title} description={description}>
+  <Grid>
+    <Grid.Cell span="all" className="ma-flow">
+      <Heading level={1}>{title}</Heading>
+      <Paragraph purpose="lead">{description}</Paragraph>
+    </Grid.Cell>
+  </Grid>
+
+  <Grid>
+    <Grid.Cell className="ma-flow" span="all">
+      <Content components={components} />
+    </Grid.Cell>
+  </Grid>
+</CenterColumnLayout>

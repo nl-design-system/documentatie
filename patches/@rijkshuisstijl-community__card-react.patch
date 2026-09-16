@@ -1,0 +1,10 @@
+diff --git a/dist/index.esm.js b/dist/index.esm.js
+index 93f4642e074f282b7d40fa95b8709692eef1d48e..4c91583a826406dbe1407390e26fdbdfe0cef45b 100644
+--- a/dist/index.esm.js
++++ b/dist/index.esm.js
+@@ -1,5 +1,4 @@
+ 'use client';
+-import '@rijkshuisstijl-community/card-css';
+ import { jsxs, jsx } from 'react/jsx-runtime';
+ import { Link } from '@rijkshuisstijl-community/link-react';
+ import React, { forwardRef } from 'react';

@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Switch
 pagination_label: Switch
 description: Invoerveld om een optie aan of uit te zetten, waarbij de actie direct wordt doorgevoerd.
+issue_number: 33
 slug: /switch
 keywords:
   - aan uit
@@ -35,24 +36,16 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Switch";
 export const description = "Invoerveld om een optie aan of uit te zetten, waarbij de actie direct wordt doorgevoerd.";
 export const issueNumber = 33;
-export const relayStep = "help wanted";
 export const componentName = "switch";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

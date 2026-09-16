@@ -1,0 +1,23 @@
+---
+import { navigation } from '../navigation.config';
+import { SitemapList } from './_sitemap-list';
+import CenterColumnLayout from '@layouts/center-column.astro';
+import { Grid } from '@components/grid/grid';
+import { Heading } from '@components/heading/heading';
+import '@nl-design-system-candidate/link-css/link.css';
+
+const { navigationTree } = (await navigation)();
+---
+
+<CenterColumnLayout
+  title="Sitemap"
+  description="Een compleet overzicht van alle pagina's in deze website"
+  index={false}
+>
+  <Grid>
+    <Grid.Cell span="all" className="ma-flow">
+      <Heading level={1}>Sitemap</Heading>
+      {navigationTree.items.map((navigationGroup) => <SitemapList navigationGroup={navigationGroup} />)}
+    </Grid.Cell>
+  </Grid>
+</CenterColumnLayout>

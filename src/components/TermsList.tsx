@@ -33,7 +33,9 @@ const Definition = ({ paragraph }: DefinitionProps) => <Paragraph>{paragraph}</P
 
 const Source = ({ name, url }: SourceProps) => (
   <li>
-    <a href={url}>{name}</a>
+    <a className="nl-link" href={url}>
+      {name}
+    </a>
   </li>
 );
 

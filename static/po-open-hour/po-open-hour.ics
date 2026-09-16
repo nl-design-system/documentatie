@@ -1,0 +1,73 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Beleid en Product Owner Open Hour NL Design System\nDe Product 
+ Owner Open Hour vindt elke 3e maandag van de maand plaats op maandag van 1
+ 3:00 tot 13:45. We gebruiken hiervoor de video-bel functie van Slack<https
+ ://nldesignsystem.nl/slack/> in het kanaal #nl-design-system.\n\nOver de P
+ roduct Owner Open Hour\n\nDe Product Owner Open Hour<https://nldesignsyste
+ m.nl/events/product-owner-open-hour> gebruiken we om kennis te delen en sa
+ men te werken aan beleids-of productkeuzes rondom ontwikkeling met NL Desi
+ gn System. Ook het delen van work-in-progress\, tips of interessante inzic
+ hten bij het werken met NL Design System wordt gewaardeerd!\n\nBen jij Pro
+ duct Owner\, Projectleider of Beleidsmaker? In dit overleg kun je vragen s
+ tellen en ervaring uitwisselen over samenwerken\, adoptie en ontwikkelen m
+ et NL Design System. Dit helpt het kernteam de juiste dingen te prioritere
+ n en samenwerking succesvol te faciliteren.\n\n\nIedereen kan onderwerpen 
+ inbrengen. Er is vooraf geen vaste agenda. Die stellen we samen op aan het
+  begin van de Product Owner Open Hour. Wil je alvast iets inbrengen of je 
+ voorbereiden? Bekijk dan de agenda in Slack<https://nldesignsystem.nl/even
+ ts/po-open-hour#agenda> en vul deze waar nodig vast aan.\n\n\n
+RRULE:FREQ=MONTHLY;INTERVAL=1;BYDAY=3MO
+UID:040000008200E00074C5B7101A82E00800000000B0C1E0B98126DD01000000000000000
+ 010000000705906A1F6B0F346A14A952DA9F0FDD2
+SUMMARY:Product Owner Open Hour
+DTSTART:20260921T110000Z
+DTEND:20260921T114500Z
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20260807T154339Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION:Slack Huddle
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:1
+X-MICROSOFT-ONLINEMEETINGEXTERNALLINK:
+X-MICROSOFT-ONLINEMEETINGCONFLINK:
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Slack Huddle
+X-MICROSOFT-LOCATIONSOURCE:LocationServices
+X-MICROSOFT-LATITUDE:0
+X-MICROSOFT-LONGITUDE:0
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Slack Huddle"\,"LocationAnnotation":
+ ""\,"LocationSource":1\,"LocationUri":""\,"Latitude":0.0\,"Longitude":0.0\
+ ,"LocationStreet":""\,"LocationCity":""\,"LocationState":""\,"LocationCoun
+ try":""\,"LocationPostalCode":""\,"LocationFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
