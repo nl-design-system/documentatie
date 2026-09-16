@@ -1,4 +1,4 @@
-/*! For license information please see fddd8b30.61d0dfe3.js.LICENSE.txt */
+/*! For license information please see fddd8b30.d0e19e5b.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [21242],
@@ -33,7 +33,7 @@
     ];
    function j(e) {
     const n = { a: 'a', h1: 'h1', h2: 'h2', header: 'header', p: 'p', strong: 'strong', ...(0, t.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.header, { children: (0, i.jsxs)(n.h1, { id: 'tijdschema-design-systems-week-settingsyear', children: ['Tijdschema Design Systems Week ', h.Ok] }) }), '\n', (0, i.jsx)(l.f, { purpose: 'lead', children: (0, i.jsxs)(n.p, { children: ['NL Design System organiseert in ', h.Ok, ' voor de ', h.nl.Z, ' keer de Design Systems Week. Van', ' ', '\n', (0, i.jsx)('strong', { children: h.nl.M }), ' zijn er dagelijks meerdere korte sessies van diverse organisaties online te\nvolgen over het ', (0, i.jsx)(n.strong, { children: 'hoe en waarom van design systems' }), '.'] }) }), '\n', !h.dF && (0, i.jsx)(o.K, { children: (0, i.jsxs)(r.v, { href: '/events/design-systems-week/', appearance: 'primary-action', children: ['Over Design Systems Week', (0, i.jsx)(d.A, { slot: 'icon-end' })] }) }), '\n', !!h.dF && (0, i.jsx)(i.Fragment, { children: (0, i.jsxs)(o.K, { children: [(0, i.jsxs)(r.v, { href: `/events/design-systems-week-${h.Ok}/programma`, appearance: 'primary-action', children: ['Bekijk het programma', (0, i.jsx)(d.A, { slot: 'icon-end' })] }), !!h.MX && (0, i.jsxs)(r.v, { href: h.MX, appearance: 'secondary-action', children: ['Gebruik Miro', (0, i.jsx)(d.A, { slot: 'icon-end' })] })] }) }), '\n', !h.Ic && (0, i.jsx)(i.Fragment, { children: (0, i.jsx)(l.f, { children: 'Het tijdschema is nog niet definitief. De sessies worden de komende weken verder uitgewerkt en toegevoegd. Houd deze pagina in de gaten voor updates.' }) }), '\n', '\n', (0, i.jsx)(n.h2, { id: 'maandag-26-oktober', children: 'Maandag 26 oktober' }), '\n', (0, i.jsx)(g.F, { lang: 'nl-NL', speakers: m, sessions: c.filter(({ isoDateTime: e }) => e.startsWith(`${h.Ok}-10-26`)) }), '\n', (0, i.jsx)(n.h2, { id: 'dinsdag-27-oktober', children: 'Dinsdag 27 oktober' }), '\n', (0, i.jsx)(g.F, { lang: 'nl-NL', speakers: m, sessions: c.filter(({ isoDateTime: e }) => e.startsWith(`${h.Ok}-10-27`)) }), '\n', (0, i.jsx)(n.h2, { id: 'woensdag-28-oktober', children: 'Woensdag 28 oktober' }), '\n', (0, i.jsx)(g.F, { lang: 'nl-NL', speakers: m, sessions: c.filter(({ isoDateTime: e }) => e.startsWith(`${h.Ok}-10-28`)) }), '\n', (0, i.jsx)(n.h2, { id: 'donderdag-29-oktober', children: 'Donderdag 29 oktober' }), '\n', (0, i.jsx)(g.F, { lang: 'nl-NL', speakers: m, sessions: c.filter(({ isoDateTime: e }) => e.startsWith(`${h.Ok}-10-29`)) }), '\n', !!h.dF && (0, i.jsx)(i.Fragment, { children: (0, i.jsx)('hr', {}) }), '\n', (0, i.jsx)(n.h2, { id: 'organisatie', children: 'Organisatie' }), '\n', (0, i.jsx)(n.p, { children: 'Design Systems Week wordt georganiseerd door het kernteam van NL Design System, vanuit Stichting ICTU, met dank aan het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.' }), '\n', (0, i.jsx)(n.h2, { id: 'code-of-conduct', children: 'Code of Conduct' }), '\n', (0, i.jsxs)(n.p, { children: ['Op Design Systems Week is de ', (0, i.jsx)(n.a, { href: 'https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.nl.md', children: 'NL Design System Code of Conduct' }), ' van toepassing. Je gaat daarmee akkoord als je je aanmeldt of spreekt.'] }), '\n', (0, i.jsx)(n.h2, { id: 'toegankelijkheid', children: 'Toegankelijkheid' }), '\n', (0, i.jsxs)(n.p, { children: ['We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op ', (0, i.jsx)(n.a, { href: 'mailto:info@nldesignsystem.nl', children: 'info@nldesignsystem.nl' }), '.'] })] });
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.header, { children: (0, i.jsxs)(n.h1, { id: 'tijdschema-design-systems-week-settingsyear', children: ['Tijdschema Design Systems Week ', h.Ok] }) }), '\n', (0, i.jsx)(l.f, { purpose: 'lead', children: (0, i.jsxs)(n.p, { children: ['NL Design System organiseert in ', h.Ok, ' voor de ', h.nl.Z, ' keer de Design Systems Week. Van', ' ', '\n', (0, i.jsx)('strong', { children: h.nl.M }), ' zijn er dagelijks meerdere korte sessies van diverse organisaties online te\nvolgen over het ', (0, i.jsx)(n.strong, { children: 'hoe en waarom van design systems' }), '.'] }) }), '\n', !h.dF && (0, i.jsx)(o.K, { children: (0, i.jsxs)(r.v, { href: '/events/design-systems-week/', appearance: 'primary-action', children: ['Over Design Systems Week', (0, i.jsx)(d.A, { slot: 'icon-end' })] }) }), '\n', !!h.dF && (0, i.jsx)(i.Fragment, { children: (0, i.jsxs)(o.K, { children: [(0, i.jsxs)(r.v, { href: `/events/design-systems-week-${h.Ok}/programma`, appearance: 'primary-action', children: ['Bekijk het programma', (0, i.jsx)(d.A, { slot: 'icon-end' })] }), !!h.MX && (0, i.jsxs)(r.v, { href: h.MX, appearance: 'secondary-action', children: ['Gebruik Miro', (0, i.jsx)(d.A, { slot: 'icon-end' })] })] }) }), '\n', !h.Ic && (0, i.jsx)(i.Fragment, { children: (0, i.jsx)(l.f, { children: 'Het tijdschema is nog niet definitief. De sessies worden de komende weken verder uitgewerkt en toegevoegd. Houd deze pagina in de gaten voor updates.' }) }), '\n', '\n', (0, i.jsx)(n.h2, { id: 'maandag-26-oktober', children: 'Maandag 26 oktober' }), '\n', (0, i.jsx)(g.F, { year: h.Ok, lang: 'nl-NL', speakers: m, sessions: c.filter(({ isoDateTime: e }) => e.startsWith(`${h.Ok}-10-26`)) }), '\n', (0, i.jsx)(n.h2, { id: 'dinsdag-27-oktober', children: 'Dinsdag 27 oktober' }), '\n', (0, i.jsx)(g.F, { year: h.Ok, lang: 'nl-NL', speakers: m, sessions: c.filter(({ isoDateTime: e }) => e.startsWith(`${h.Ok}-10-27`)) }), '\n', (0, i.jsx)(n.h2, { id: 'woensdag-28-oktober', children: 'Woensdag 28 oktober' }), '\n', (0, i.jsx)(g.F, { year: h.Ok, lang: 'nl-NL', speakers: m, sessions: c.filter(({ isoDateTime: e }) => e.startsWith(`${h.Ok}-10-28`)) }), '\n', (0, i.jsx)(n.h2, { id: 'donderdag-29-oktober', children: 'Donderdag 29 oktober' }), '\n', (0, i.jsx)(g.F, { year: h.Ok, lang: 'nl-NL', speakers: m, sessions: c.filter(({ isoDateTime: e }) => e.startsWith(`${h.Ok}-10-29`)) }), '\n', !!h.dF && (0, i.jsx)(i.Fragment, { children: (0, i.jsx)('hr', {}) }), '\n', (0, i.jsx)(n.h2, { id: 'organisatie', children: 'Organisatie' }), '\n', (0, i.jsx)(n.p, { children: 'Design Systems Week wordt georganiseerd door het kernteam van NL Design System, vanuit Stichting ICTU, met dank aan het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.' }), '\n', (0, i.jsx)(n.h2, { id: 'code-of-conduct', children: 'Code of Conduct' }), '\n', (0, i.jsxs)(n.p, { children: ['Op Design Systems Week is de ', (0, i.jsx)(n.a, { href: 'https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.nl.md', children: 'NL Design System Code of Conduct' }), ' van toepassing. Je gaat daarmee akkoord als je je aanmeldt of spreekt.'] }), '\n', (0, i.jsx)(n.h2, { id: 'toegankelijkheid', children: 'Toegankelijkheid' }), '\n', (0, i.jsxs)(n.p, { children: ['We doen ons best Design Systems Week zo toegankelijk als mogelijk te organiseren. Indien je specifieke toegankelijkheidsvragen- of behoeften hebt, schroom niet te mailen met het NL Design System kernteam op ', (0, i.jsx)(n.a, { href: 'mailto:info@nldesignsystem.nl', children: 'info@nldesignsystem.nl' }), '.'] })] });
    }
    function v(e = {}) {
     const { wrapper: n } = { ...(0, t.R)(), ...e.components };
@@ -51,38 +51,38 @@
     r = s(13526),
     o = s(86070);
    const l = ({ name: e, organisation: n }) => (0, o.jsxs)(t.fz, { className: (0, r.A)('ma-session-table__speaker', 'ma-speaker'), children: [(0, o.jsx)(t.In, { className: 'ma-speaker__icon', children: (0, o.jsx)(a, {}) }), (0, o.jsx)('span', { className: 'ma-speaker__name', children: e }), (0, o.jsx)('br', {}), (0, o.jsx)('span', { className: 'ma-speaker__organisation', children: n })] }),
-    d = ({ lang: e, sessions: n, speakers: s, className: a, ...d }) =>
+    d = ({ year: e, lang: n, sessions: s, speakers: a, className: d, ...c }) =>
      (0, o.jsx)('div', {
-      className: (0, r.A)('ma-session-table-container', a),
+      className: (0, r.A)('ma-session-table-container', d),
       children: (0, o.jsxs)(t.XI, {
-       className: (0, r.A)('ma-session-table', a),
-       ...d,
+       className: (0, r.A)('ma-session-table', d),
+       ...c,
        children: [
-        (0, o.jsx)(t.A0, { children: (0, o.jsxs)(t.Hj, { className: 'ma-session-table__row', children: [(0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === e ? 'Tijd' : 'Time' }), (0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === e ? 'Taal' : 'Language' }), (0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === e ? 'Spreker' : 'Speaker' }), (0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === e ? 'Onderwerp' : 'Subject' }), (0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === e ? 'Agenda' : 'Calendar' })] }) }),
+        (0, o.jsx)(t.A0, { children: (0, o.jsxs)(t.Hj, { className: 'ma-session-table__row', children: [(0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Tijd' : 'Time' }), (0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Taal' : 'Language' }), (0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Spreker' : 'Speaker' }), (0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Onderwerp' : 'Subject' }), (0, o.jsx)(t.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Agenda' : 'Calendar' })] }) }),
         (0, o.jsx)(t.BF, {
-         children: n.map(
-          ({ isoDateTime: n, speakers: a, subject: r, icalLink: d, language: c, cancelled: m }, g) =>
-           !m &&
+         children: s.map(
+          ({ isoDateTime: s, speakers: r, subject: d, icalLink: c, language: m, cancelled: g }, h) =>
+           !g &&
            (0, o.jsxs)(
             t.Hj,
             {
              className: 'ma-session-table__row',
              children: [
-              (0, o.jsx)(t.nA, { className: 'ma-session-table__time', children: (0, o.jsx)(t.fz, { children: (0, o.jsx)('time', { dateTime: n, children: new Intl.DateTimeFormat(e, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== e ? 'short' : void 0 }).format(new Date(n)) }) }) }),
-              (0, o.jsx)(t.nA, { className: 'ma-session-table__language', children: (0, o.jsx)('abbr', { title: c.description, children: c.abbr }) }),
+              (0, o.jsx)(t.nA, { className: 'ma-session-table__time', children: (0, o.jsx)(t.fz, { children: (0, o.jsx)('time', { dateTime: s, children: new Intl.DateTimeFormat(n, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== n ? 'short' : void 0 }).format(new Date(s)) }) }) }),
+              (0, o.jsx)(t.nA, { className: 'ma-session-table__language', children: (0, o.jsx)('abbr', { title: m.description, children: m.abbr }) }),
               (0, o.jsx)(t.nA, {
                children: (0, o.jsx)('div', {
                 className: 'ma-session-table__speakers',
-                children: Object.entries(s)
-                 .filter(([e]) => a.includes(e))
+                children: Object.entries(a)
+                 .filter(([e]) => r.includes(e))
                  .map(([e, n], s) => (0, o.jsx)(l, { ...n }, s)),
                }),
               }),
-              (0, o.jsx)(t.nA, { className: 'ma-session-table__subject', children: (0, o.jsx)(t.fz, { lang: c.abbr, children: (0, o.jsx)(t.N_, { href: `/events/design-systems-week-2025/${'nl-NL' === e ? 'programma' : 'EN' === c.abbr ? 'en/program' : 'programma'}#${r.toLowerCase().replace(/\s/gi, '-')}`, children: r }) }) }),
-              (0, o.jsx)(t.nA, { className: 'ma-session-table__time', children: d && (0, o.jsxs)(t.vx, { href: d, download: d, 'aria-labelledby': 'ical-description', children: [(0, o.jsx)(t.In, { children: (0, o.jsx)(i.A, {}) }), ' ', (0, o.jsxs)('span', { id: 'ical-description', className: 'sr-only', children: ['iCal file for ', (0, o.jsx)('span', { lang: c.abbr, children: r }), '(download)'] })] }) }),
+              (0, o.jsx)(t.nA, { className: 'ma-session-table__subject', children: (0, o.jsx)(t.fz, { lang: m.abbr, children: (0, o.jsx)(t.N_, { href: `/events/design-systems-week-${e}/${'nl-NL' === n ? 'programma' : 'EN' === m.abbr ? 'en/program' : 'programma'}#${d.toLowerCase().replace(/\s/gi, '-')}`, children: d }) }) }),
+              (0, o.jsx)(t.nA, { className: 'ma-session-table__time', children: c && (0, o.jsxs)(t.vx, { href: c, download: c, 'aria-labelledby': 'ical-description', children: [(0, o.jsx)(t.In, { children: (0, o.jsx)(i.A, {}) }), ' ', (0, o.jsxs)('span', { id: 'ical-description', className: 'sr-only', children: ['iCal file for ', (0, o.jsx)('span', { lang: m.abbr, children: d }), '(download)'] })] }) }),
              ],
             },
-            g,
+            h,
            ),
          ),
         }),
@@ -204,7 +204,7 @@
    var a = s(56561);
   },
   84471(e, n, s) {
-   s.d(n, { bo: () => i, KF: () => g, mJ: () => k, VZ: () => x, cR: () => y, Pv: () => u, qZ: () => r, kD: () => f, QQ: () => D, B2: () => h, Pc: () => l, f4: () => o, GT: () => w, fX: () => t, eQ: () => v, B_: () => j, o_: () => b });
+   s.d(n, { bo: () => i, KF: () => g, mJ: () => k, VZ: () => x, cR: () => w, Pv: () => u, qZ: () => r, kD: () => f, QQ: () => D, B2: () => h, Pc: () => l, f4: () => o, GT: () => y, fX: () => t, eQ: () => v, B_: () => j, o_: () => b });
    const a = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     t = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -249,14 +249,14 @@
    function f(e, n = []) {
     return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((s) => ('object' == typeof e[s] && null !== e[s] ? f(e[s], [...n, s]) : []));
    }
-   function w(e) {
+   function y(e) {
     const n = new Map();
     function s(e) {
      return (n.has(e) || n.set(e, b(e)), n.get(e));
     }
     return e.sort((e, n) => e.length - n.length || s(e).localeCompare(s(n)));
    }
-   const y = () => {
+   const w = () => {
      const e = a.sP?.pnpm;
      if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
      return e.replace(/^[\^~>=<]+/, '');
