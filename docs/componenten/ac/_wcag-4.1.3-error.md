@@ -1,7 +1,7 @@
 <!-- @license CC0-1.0 -->
 
 Een foutmelding vertelt de bezoeker dat er iets fout is gegaan.
-Zorg ervoor dat deze informatie ook meteen beschikbaar is voor bezoekers die een [screenreader](/woordenlijst/#:~:text=Nederlandstalige%20WCAG%20definitie-,Screenreader,-screen%20reader) gebruiken.
+Zorg ervoor dat deze informatie ook meteen beschikbaar is voor bezoekers die een screenreader gebruiken.
 
 Dit kun je op verschillende manieren doen:
 
