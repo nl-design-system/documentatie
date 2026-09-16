@@ -189,7 +189,7 @@ De documentatie bij de [componenten van het NL Design System](https://nldesignsy
 
 Veel van onze componenten zijn nu (2025) nog in volop ontwikkeling, maar je kunt al meekijken in de keuken. Samen met [onze community](https://nldesignsystem.nl/community) ontwikkelen we componenten die herbruikbaar, functioneel en toegankelijk zijn en ondersteund worden door gebruikersonderzoek.
 
-Het doel is om alle componenten volgens het [estafettemodel](https://nldesignsystem.nl/handboek/estafettemodel) stap voor stap in de 'Hall of Fame' te krijgen, waarna ze voor iedereen te gebruiken zijn. Zodat jouw team het wiel niet opnieuw hoeft uit te vinden.
+Het doel is om alle componenten volgens het [estafettemodel](https://nldesignsystem.nl/introductie/estafettemodel/) stap voor stap in de 'Hall of Fame' te krijgen, waarna ze voor iedereen te gebruiken zijn. Zodat jouw team het wiel niet opnieuw hoeft uit te vinden.
 
 ## Stap 6: Inhoud vullen
 
