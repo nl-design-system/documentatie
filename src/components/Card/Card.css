@@ -1,0 +1,14 @@
+.ams-card--ma-style {
+  background-color: var(--basis-color-action-2-bg-subtle);
+  border-color: var(--basis-color-action-2-border-subtle);
+  border-radius: var(--basis-border-radius-sm);
+  border-style: solid;
+  border-width: var(--basis-border-width-sm);
+  padding-block: var(--basis-space-block-xl);
+  padding-inline: var(--basis-space-inline-xl);
+}
+
+.ams-card--ma-style:hover {
+  background-color: var(--basis-color-action-2-bg-hover);
+  border-color: var(--basis-color-action-2-border-hover);
+}
