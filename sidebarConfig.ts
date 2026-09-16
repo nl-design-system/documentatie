@@ -21,18 +21,15 @@ const sidebars: SidebarsConfig = {
       collapsible: false,
       className: 'sidebar__main-category',
       link: {
-        type: 'generated-index',
-        title: 'Handboek',
-        slug: 'handboek',
-        keywords: ['Handboek', 'Meedoen', 'overzicht'],
+        type: 'doc',
+        id: 'handboek/index',
       },
       items: [
-        { type: 'doc', id: 'handboek/componenten-vinden' },
         {
           type: 'category',
-          label: 'Definition of Done',
+          label: 'Bijdragen',
           description:
-            'Hier vind je waar we op letten en hoe je met een stappenplan aan de Definition of Done voor elke status in het Estafettemodel kan voldoen.',
+            'Bijdragen aan NL Design System system en helpen componenten en templates door de verschillende statussen in het Estafettemodel te brengen.',
           link: {
             type: 'doc',
             id: 'handboek/bijdragen/index',
