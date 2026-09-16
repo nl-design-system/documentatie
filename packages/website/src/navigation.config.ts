@@ -27,7 +27,6 @@ export const navigation = navigationRoot(
             ],
           }),
           navigationGroup({ filePath: 'docs/baseline' }),
-          navigationItem('docs/woordenlijst/index.mdx'),
         ],
       }),
       navigationGroup({

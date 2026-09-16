@@ -2,7 +2,7 @@
 
 # Geef feedback aan screenreadergebruikers
 
-We geven je 3 extra manieren om feedback te geven over foutmeldingen voor gebruikers van [screenreaders](/woordenlijst/#screenreader). Met `aria-required`, `aria-invalid` in het formulierveld en het `<title>` element in de `<head>` van de webpagina.
+We geven je 3 extra manieren om feedback te geven over foutmeldingen voor gebruikers van screenreaders. Met `aria-required`, `aria-invalid` in het formulierveld en het `<title>` element in de `<head>` van de webpagina.
 
 ## Gebruik ARIA voor feedback
 
