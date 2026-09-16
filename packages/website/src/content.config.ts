@@ -98,6 +98,7 @@ const docs = defineCollection({
       'community/**/*.{md,mdx}',
       'footer/**/*.{md,mdx}',
       'handboek/**/*.{md,mdx}',
+      'introductie/**/*.{md,mdx}',
       'open-source/**/*.{md,mdx}',
       'private/**/*.{md,mdx}',
       'project/**/*.{md,mdx}',

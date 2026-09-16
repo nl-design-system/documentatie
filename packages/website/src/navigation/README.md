@@ -37,7 +37,7 @@ Astro.
 
 ```js
 // example
-navigationItem("docs/handboek/estafettemodel.mdx");
+navigationItem("docs/introductie/estafettemodel.mdx");
 ```
 
 If you want to include a page rendered by an Astro Page component, you can

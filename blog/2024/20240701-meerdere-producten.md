@@ -46,7 +46,7 @@ Het gaat hier om de [Button login](https://nl-design-system.github.io/lux/?path=
 
 ![screenshot van stickervel in Figma, met daarin een lijst van buttons met verschillende login opties zoals digid en eherkenning](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logius-stickervel.png) _Het [button login component](https://nl-design-system.github.io/lux/?path=/docs/web-components-button-login--docs) in Figma_
 
-De community van NL Design System is voor Aline dé plek om hun ideeën te toetsen en te testen. Aline: “Het is zo fijn dat mensen vanuit de community er echt mee aan de slag gaan. Het is een makkelijke manier om gelijkgestemde professionals te vinden die willen helpen en feedback geven. Het kernteam begeleidt ons hierbij, zodat de component door [het estafettemodel](/handboek/estafettemodel) van het NL Design System gaat. Uiteindelijk is het de bedoeling om de component ‘overheidsbreed’ te kunnen gebruiken.”
+De community van NL Design System is voor Aline dé plek om hun ideeën te toetsen en te testen. Aline: “Het is zo fijn dat mensen vanuit de community er echt mee aan de slag gaan. Het is een makkelijke manier om gelijkgestemde professionals te vinden die willen helpen en feedback geven. Het kernteam begeleidt ons hierbij, zodat de component door [het estafettemodel](/introductie/estafettemodel/) van het NL Design System gaat. Uiteindelijk is het de bedoeling om de component ‘overheidsbreed’ te kunnen gebruiken.”
 
 ## Componenten en gebruikersonderzoeken
 
