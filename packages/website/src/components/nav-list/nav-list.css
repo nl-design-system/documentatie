@@ -1,0 +1,37 @@
+.utrecht-nav-bar .utrecht-nav-list__item {
+  --ma-navigation-bar-item-border-block-end-width: 4px;
+
+  background-color: var(--ma-navigation-bar-item-background-color);
+  border-block-end-style: solid;
+  border-block-end-width: var(--ma-navigation-bar-item-border-block-end-width);
+  border-color: var(--ma-navigation-bar-item-border-color);
+  color: var(--ma-navigation-bar-item-color);
+  font-family: var(--ma-navigation-bar-font-family);
+  font-weight: var(--ma-navigation-bar-font-weight);
+
+  &:has([aria-current="page"]) {
+    --ma-navigation-bar-item-border-color: var(--ma-navigation-bar-item-current-border-color);
+  }
+
+  &:has(.utrecht-link:active) {
+    --ma-navigation-bar-item-background-color: var(--ma-navigation-bar-item-active-background-color);
+    --ma-navigation-bar-item-color: var(--ma-navigation-bar-item-active-color);
+  }
+
+  &:has(.utrecht-link:hover) {
+    --ma-navigation-bar-item-background-color: var(--ma-navigation-bar-item-hover-background-color);
+    --ma-navigation-bar-item-color: var(--ma-navigation-bar-item-hover-color);
+  }
+
+  &:has(.utrecht-link:focus-visible) {
+    --ma-navigation-bar-item-background-color: var(--ma-navigation-bar-item-focus-visible-background-color);
+    --ma-navigation-bar-item-color: var(--ma-navigation-bar-item-focus-visible-color);
+  }
+
+  .utrecht-link {
+    color: currentColor;
+    padding-block-end: calc(
+      var(--utrecht-nav-bar-link-padding-block-end) - var(--ma-navigation-bar-item-border-block-end-width)
+    );
+  }
+}

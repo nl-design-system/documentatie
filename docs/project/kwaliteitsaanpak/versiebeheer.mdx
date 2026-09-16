@@ -13,13 +13,13 @@ keywords:
   - versiebeheer
 ---
 
-import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@components/paragraph/paragraph";
 
 {/* @license CC0-1.0 */}
 
 # Versiebeheer
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   Gebruik Git om code te delen met anderen, samen te werken aan code, vorige implementaties te vinden, de evolutie van
   de code te begrijpen, nieuwe releases uit te brengen en open source samenwerkingen aan te gaan.
 </Paragraph>
@@ -32,7 +32,7 @@ Gebruik terraform om nieuwe repositories aan te maken in GitHub, en om de instel
 
 ## Pull Requests
 
-Maak wijzigingen in Git altijd via Pull Requests, zodat de kwaliteit gecontroleerd kan worden met [continuous integration](./continous-integration) en [code reviews](./code-reviews).
+Maak wijzigingen in Git altijd via Pull Requests, zodat de kwaliteit gecontroleerd kan worden met [continuous integration](./continous-integration) en [code reviews](/kwaliteitsaanpak/code-review/).
 
 Maak Pull Requests door een branch te maken in de orginele repository, maak niet vanuit een fork een Pull Request. Omdat forks geen volledige toegang hebben tot continuous integration, kunnen Pull Requests vanuit forks niet gemerged worden.
 

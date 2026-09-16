@@ -1,5 +1,5 @@
 ---
-title: Videos
+title: Videos van Design Systems Week 2025
 title_sm: "2025"
 description: Recordings of talks that are in English for Design Systems Week 2025.
 lang: en
@@ -10,16 +10,15 @@ sidebar_position: 1
 navigation_order: 1
 pagination_label: Videos 2025
 slug: /events/design-systems-week-2025/en/program
+translations:
+  nl: /events/design-systems-week-2025/programma/
 image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/dsw-24-en.png
 image_alt: NL Design System Design Systems Week 2024 27-30 October, online
 ---
 
-import {
-  ButtonGroup as ActionGroup,
-  ButtonLink,
-  Link,
-  Paragraph,
-} from "@utrecht/component-library-react/dist/css-module";
+import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ActionGroup } from "@components/action-group/action-group";
+import { Paragraph } from "@components/paragraph/paragraph";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../../\_2025/sessions.json";
 import speakers from "../../\_2025/speakers.json";
@@ -29,7 +28,7 @@ import { DSWSession } from "@site/src/components/DSWSession";
 
 # Design Systems Week 2025
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   During Design Systems Week, you could follow several short talks each day for four days. Topics included TEDI,
   Estonia’s new design system, accessibility, AI, user research, and practical tests for evaluating accessibility.
   Luckily, we still have the videos!

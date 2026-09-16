@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Number Input
 pagination_label: Number Input
 description: Invoerveld voor een heel getal of een getal met decimalen.
+issue_number: 194
 slug: /number-input
 keywords:
   - cijferinvoer
@@ -37,7 +38,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Number Input";
@@ -49,12 +49,6 @@ export const componentName = "number-input";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

@@ -18,26 +18,26 @@
 
 .ma-status-visual__title.ma-status-visual--help-wanted,
 .ma-status-visual__description.ma-status-visual--help-wanted {
-  background-color: var(--nlds-status-help-wanted-background-color);
-  color: var(--nlds-status-help-wanted-color);
+  background-color: var(--ma-color-help-wanted-bg-default);
+  color: var(--ma-color-help-wanted-color-default);
 }
 
 .ma-status-visual__title.ma-status-visual--community,
 .ma-status-visual__description.ma-status-visual--community {
-  background-color: var(--nlds-status-community-background-color);
-  color: var(--nlds-status-community-color);
+  background-color: var(--ma-color-community-bg-default);
+  color: var(--ma-color-community-color-default);
 }
 
 .ma-status-visual__title.ma-status-visual--unstable,
 .ma-status-visual__description.ma-status-visual--unstable {
-  background-color: var(--nlds-status-candidate-background-color);
-  color: var(--nlds-status-candidate-color);
+  background-color: var(--ma-color-candidate-bg-default);
+  color: var(--ma-color-candidate-border-default);
 }
 
 .ma-status-visual__title.ma-status-visual--stable,
 .ma-status-visual__description.ma-status-visual--stable {
-  background-color: var(--nlds-status-hall-of-fame-background-color);
-  color: var(--nlds-status-hall-of-fame-color);
+  background-color: var(--ma-color-hall-of-fame-bg-default);
+  color: var(--ma-color-hall-of-fame-color-default);
 }
 
 .ma-status-visual__title {

@@ -11,13 +11,13 @@ keywords:
   - editorconfig
 ---
 
-import { Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@components/paragraph/paragraph";
 
 {/* @license CC0-1.0 */}
 
 # Broncodekwaliteit
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   Broncodekwaliteit moet zoveel mogelijk automatisch gecontroleerd en verbeterd worden. Continuous integration checks
   garanderen de kwaliteit van code die wordt gemerged in de `main` branch. Effectieve integratie in de workflow van
   developers verhoogt de snelheid van werken en zorgt voor draagvlak van rigide kwaliteitseisen.
@@ -94,7 +94,7 @@ De pre-commit hook gebaseerd op `lint-staged` is ook extra gebruiksvriendelijk, 
 
 ## Continuous integration \{#continuous-integration\}
 
-Gebruik `pnpm run --if-present lint` als verplichte check in je continuous integration pipeline, zoals in GitHub Actions om Pull Requests te controleren. Lees meer in het artikel over [continuous integration](./ci-cd.md).
+Gebruik `pnpm run --if-present lint` als verplichte check in je continuous integration pipeline, zoals in GitHub Actions om Pull Requests te controleren. Lees meer in het artikel over [continuous integration](/project/kwaliteitsaanpak/continuous-integration/).
 
 - Gebruik `prettier --check` voor Continuous Integration, om te garanderen dat alle code consistente opmaak heeft.
 - Gebruik `stylelint --allow-empty-input '**/*.{css,scss}'` om CSS en SCSS te controleren.

@@ -465,11 +465,11 @@
     },
     {
       "name": "Form Field Label Suffix",
-      "slug": "form-field-label suffix"
+      "slug": "form-field-label-suffix"
     },
     {
       "name": "Form Field Error Message",
-      "slug": "form-field-error message"
+      "slug": "form-field-error-message"
     }
   ],
   "Breadcrumb Navigation": [],
@@ -484,7 +484,7 @@
     },
     {
       "name": "Form Field Label Suffix",
-      "slug": "form-field-label suffix"
+      "slug": "form-field-label-suffix"
     },
     {
       "name": "Legend",
@@ -564,7 +564,7 @@
     },
     {
       "name": "Form Field Error Message",
-      "slug": "form-field-error message"
+      "slug": "form-field-error-message"
     },
     {
       "name": "Form Field Label",

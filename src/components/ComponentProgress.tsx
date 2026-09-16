@@ -1,37 +1,35 @@
-import { BrowserOnly } from './BrowserOnly';
+import './ComponentProgress.css';
 
 interface ComponentProgressProps {
   checked: number;
   unchecked: number;
 }
 
-export const ComponentProgress = ({ checked, unchecked }: ComponentProgressProps) => (
-  <BrowserOnly>
-    {() => {
-      // eslint-disable-next-line @typescript-eslint/no-require-imports
-      const DonutChart = require('@persoonlijke-regelingen-assistent/components-react').DonutChart;
-      return (
-        <DonutChart
-          radius={20}
-          arcWidth={4}
-          data={[
-            {
-              fill: 'var(--basis-color-accent-1-inverse-bg-default)',
-              key: 'Done',
-              value: checked,
-              stroke: '2',
-            },
-            {
-              fill: 'var(--basis-color-disabled-bg-default)',
-              key: 'Todo',
-              value: unchecked,
-              stroke: '2',
-            },
-          ]}
-          donutValue={null}
-          showLabels={false}
-        />
-      );
-    }}
-  </BrowserOnly>
-);
+export const ComponentProgress = ({ checked, unchecked }: ComponentProgressProps) => {
+  const full = 250;
+  const filled = (checked / (checked + unchecked)) * full;
+
+  return (
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="ma-component-progress" aria-hidden="true">
+      <circle
+        className="ma-component-progress__background"
+        cx="50"
+        cy="50"
+        r="40"
+        fill="none"
+        stroke="none"
+        strokeWidth="20"
+      />
+      <circle
+        className="ma-component-progress__progress"
+        cx="50"
+        cy="50"
+        r="40"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="20"
+        strokeDasharray={filled}
+      />
+    </svg>
+  );
+};

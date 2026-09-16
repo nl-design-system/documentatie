@@ -13,9 +13,9 @@ keywords:
 
 import { getMinimumPnpmVersion } from "@site/src/utils";
 
-{/* De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd: */}  
-{/* - Als developer wil ik weten welke package manager ik moet gebruiken, zodat mijn code compatible is met NL Design System */}  
-{/* - Als Developer Relations engineer wil ik een link naar documentatie kunnen sturen, zodat mensen de juiste package manager gebruiken */}  
+{/* De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd: */}
+{/* - Als developer wil ik weten welke package manager ik moet gebruiken, zodat mijn code compatible is met NL Design System */}
+{/* - Als Developer Relations engineer wil ik een link naar documentatie kunnen sturen, zodat mensen de juiste package manager gebruiken */}
 {/* - Als Vers & Veilig Engineer wil ik dat de community de pnpm versie in hun hele codebase in sync houdt, en dit zoveel mogelijk zelf kan doen */}
 
 # Werken met pnpm
@@ -31,7 +31,7 @@ Bekijk de documentatie op de website van [pnpm](https://pnpm.io/pnpm-cli) voor u
 ## De juiste pnpm-versie installeren en gebruiken
 
 Tegenwoordig hoef je de package manager niet meer los te installeren, maar gebruik je [Corepack](https://github.com/nodejs/corepack).
-Dit is in recente versies van [Node.js](/developer/node) inbegrepen.
+Dit is in recente versies van [Node.js](/handboek/developer/node) inbegrepen.
 Corepack gebruikt automatisch de versie van pnpm die in `package.json` staat, zodat teams en CI dezelfde versie gebruiken.
 
 ```sh
@@ -53,9 +53,9 @@ Gebruik altijd de `corepack` CLI om de versie in `package.json` te upgraden zoda
 Dit is een beveiligingsmaatregel om te verifiëren dat exact dezelfde pnpm-binary wordt gebruikt op elke machine.
 
 ```sh
-# upgraden naar laatste versie in major range
+# upgraden naar laatste versie in de huidige major version range
 corepack up
 
 # of: upgraden naar specifieke versie
-corepack use pnpm@10
+corepack use pnpm@11
 ```
