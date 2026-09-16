@@ -12,12 +12,12 @@ const footer: Footer = {
       to: '/introductie/contact/',
     },
     {
-      label: 'Klachten',
-      to: '/klachten',
-    },
-    {
       label: 'Toegankelijkheid',
       to: '/toegankelijkheidsverklaring',
+    },
+    {
+      label: 'Klachten',
+      to: '/klachten',
     },
     {
       label: 'Privacyverklaring',
