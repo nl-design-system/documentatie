@@ -16,6 +16,8 @@ import { getMainNavigation } from '../navigation';
 import { navigation } from '../navigation.config.ts';
 import { i18n, type I18nLanguages } from '../i18n';
 
+import '@nl-design-system-community/ma-design-tokens/dist/variables.css';
+
 import '@fontsource/fira-code';
 import '@fontsource/fira-sans/700';
 import '@fontsource/source-sans-pro';
@@ -53,6 +55,7 @@ import '@utrecht/component-library-css/dist/html.css';
 
 import '../../src/styles/prism-theme.css';
 import '../../src/styles/missing-tokens.css';
+import '../../src/styles/fluid.css';
 import './document.css';
 import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
 import { withCurrentIndication } from 'src/navigation/with-current-indication.ts';
@@ -128,7 +131,7 @@ const footerNavigationItems = [
 ];
 ---
 
-<html class="utrecht-root" lang={lang} dir="ltr">
+<html class="utrecht-root ma-theme ma-theme--fluid" lang={lang} dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
