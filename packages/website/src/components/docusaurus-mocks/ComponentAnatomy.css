@@ -1,0 +1,54 @@
+/* This file is adapted from the ComponentAnatomy.css. Because the original
+React component could provide alternative components for the lists, that css
+did not rely on element selectors. However, the dynamic import of markdown
+and svg content, make it impossible to reuse these components in an Astro
+context. Compromising on the styling made for less complicated code */
+
+.ma-component-anatomy {
+  margin-block: 0;
+  margin-inline: 0;
+}
+.ma-component-anatomy > svg {
+  block-size: auto;
+  max-inline-size: 100%;
+}
+.ma-component-anatomy figcaption ol {
+  column-gap: 2rem;
+  counter-reset: count 0;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 0;
+  row-gap: 0.5rem;
+}
+.ma-component-anatomy figcaption li {
+  list-style: none;
+}
+.ma-component-anatomy figcaption li::before {
+  background-color: #de00a4;
+  border-radius: 100%;
+  border-width: var(--nl-number-badge-border-width, 1px);
+  box-sizing: border-box;
+  color: white;
+  content: counter(count);
+  counter-increment: count 1;
+  display: inline-flex;
+  font-family: var(--nl-number-badge-font-family);
+  font-size: max(var(--nl-number-badge-font-size), 1rem);
+  font-style: normal;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-weight: var(--nl-number-badge-font-weight, bold);
+  justify-content: center;
+  margin-inline-end: 1ch;
+  min-block-size: 32px;
+  min-inline-size: 32px;
+  padding-block: var(--nl-anatomy-marker-padding-block, 0.125rem);
+  padding-inline: var(--nl-anatomy-marker-padding-inline, 0.125rem);
+  vertical-align: middle;
+}
+@media screen and (forced-colors: active) {
+  .ma-component-anatomy figcaption li::before {
+    border-color: currentColor !important;
+    border-width: max(var(--nl-number-badge-min-border-width, 0), 1px) !important;
+    color: currentColor !important;
+  }
+}

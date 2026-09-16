@@ -1,0 +1,56 @@
+diff --git a/dist/cjs/index.js b/dist/cjs/index.js
+index e7eebf4f4e06c6a15b75da64bcf26cc200739d5e..036ab7670769a74ca09b923d38ced234eb987c22 100644
+--- a/dist/cjs/index.js
++++ b/dist/cjs/index.js
+@@ -48,22 +48,8 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
+     var Component = component;
+     return (React.createElement(Component, __assign({ className: iconClassName, focusable: focusable, "aria-hidden": (_b = props['aria-hidden']) !== null && _b !== void 0 ? _b : true, shapeRendering: shapeRendering }, props), props.children));
+ };var css_248z = ".denhaag-icon{fill:currentColor;display:inline-block;flex-shrink:0;font-size:1.5rem;height:1em;transition:fill .2s cubic-bezier(.4,0,.2,1) 0ms;width:1em}";
+-        if (typeof document !== 'undefined') { 
++        if (typeof document !== 'undefined') {
+ 
+-          const head = document.head || document.getElementsByTagName('head')[0];
+-          const style = document.createElement('style');
+-          style.type = 'text/css';
+-          style.nonce = window.NONCE;
+-        
+-          {
+-            head.appendChild(style);
+-          }
+-        
+-          if (style.styleSheet) {
+-            style.styleSheet.cssText = css_248z;
+-          } else {
+-            style.appendChild(document.createTextNode(css_248z));
+-          }
+         }var _path$$;
+ function _extends$12() { return _extends$12 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$12.apply(null, arguments); }
+ var SvgArrowLeft = function SvgArrowLeft(props) {
+diff --git a/dist/mjs/index.js b/dist/mjs/index.js
+index b8085bb733b9c2f6e8ee8dafbe13862cf41ca5d3..4efbd21b8bd8ab58b8e35f15b2b7f872921fd0a0 100644
+--- a/dist/mjs/index.js
++++ b/dist/mjs/index.js
+@@ -48,22 +48,8 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
+     var Component = component;
+     return (React__default.createElement(Component, __assign({ className: iconClassName, focusable: focusable, "aria-hidden": (_b = props['aria-hidden']) !== null && _b !== void 0 ? _b : true, shapeRendering: shapeRendering }, props), props.children));
+ };var css_248z = ".denhaag-icon{fill:currentColor;display:inline-block;flex-shrink:0;font-size:1.5rem;height:1em;transition:fill .2s cubic-bezier(.4,0,.2,1) 0ms;width:1em}";
+-        if (typeof document !== 'undefined') { 
++        if (typeof document !== 'undefined') {
+ 
+-          const head = document.head || document.getElementsByTagName('head')[0];
+-          const style = document.createElement('style');
+-          style.type = 'text/css';
+-          style.nonce = window.NONCE;
+-        
+-          {
+-            head.appendChild(style);
+-          }
+-        
+-          if (style.styleSheet) {
+-            style.styleSheet.cssText = css_248z;
+-          } else {
+-            style.appendChild(document.createTextNode(css_248z));
+-          }
+         }var _path$$;
+ function _extends$12() { return _extends$12 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$12.apply(null, arguments); }
+ var SvgArrowLeft = function SvgArrowLeft(props) {

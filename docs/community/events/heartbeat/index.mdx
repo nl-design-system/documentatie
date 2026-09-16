@@ -3,6 +3,7 @@ title: Heartbeat van NL Design System
 title_sm: Heartbeat
 hide_title: true
 hide_table_of_contents: false
+navigation_order: 1
 sidebar_label: Heartbeat
 pagination_label: Heartbeat
 description: Wat is de Heartbeat, hoe meld ik mij aan, en op welke momenten is het?
@@ -12,20 +13,20 @@ slug: /events/heartbeat
 import { ButtonLink } from "@site/src/components/ButtonLink";
 import { Link } from "@site/src/components/Link";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { ActionGroup } from "@components/action-group/action-group";
 
 # Heartbeat
 
 In de Heartbeat vertelt het kernteam van NL Design System elke twee weken wat de laatste stand van zaken is. Daarnaast laten we organisaties aan het woord die met/aan het NL Design System werken.
 
 <ActionGroup>
-  <ButtonLink href="/events/heartbeat/aanmelden" appearance="primary-action">
+  <ButtonLink href="/events/heartbeat/aanmelden/" appearance="primary-action">
     {"Meld je aan"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
-  <ButtonLink href="/events/heartbeat/videos" appearance="secondary-action">
+  <ButtonLink href="/events/heartbeat/videos/" appearance="secondary-action">
     {"Kijk de Heartbeat terug"}
-    <IconChevronRight />
+    <IconChevronRight slot="icon-end" />
   </ButtonLink>
 </ActionGroup>
 

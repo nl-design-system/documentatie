@@ -1,0 +1,17 @@
+---
+title: Escaped import
+description: Test that an import with an escaped underscore in the path resolves correctly
+unlisted: true
+---
+
+import TestPageNote from "./_test-page-note.md";
+
+{/* @license CC0-1.0 */}
+
+import Partial from "./\_escaped-partial.md";
+
+Tests whether an import with an escaped underscore in the path resolves correctly
+
+<TestPageNote />
+
+<Partial />

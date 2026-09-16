@@ -1,9 +1,7 @@
 <svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
 <symbol id="component-illustration">
-<g clip-path="url(#clip0_642_3473)">
-<rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)"/>
-<g clip-path="url(#clip1_642_3473)">
-<rect width="960" height="540" fill="var(--ma-component-illustration-background-color, white)"/>
+<rect width="960" height="540" fill="var(--ma-component-illustration-grid-background-color, #AAA)"/>
+<rect width="960" height="540" fill="var(--ma-component-illustration-grid-background-color, #AAA)"/>
 <rect width="2" height="540" transform="translate(69)" fill="var(--ma-component-illustration-grid-color, #eee)"/>
 <rect width="2" height="540" transform="translate(151)" fill="var(--ma-component-illustration-grid-color, #eee)"/>
 <rect width="2" height="540" transform="translate(233)" fill="var(--ma-component-illustration-grid-color, #eee)"/>
@@ -21,14 +19,10 @@
 <rect width="960" height="2" transform="translate(0 310)" fill="var(--ma-component-illustration-grid-color, #eee)"/>
 <rect width="960" height="2" transform="translate(0 392)" fill="var(--ma-component-illustration-grid-color, #eee)"/>
 <rect width="960" height="2" transform="translate(0 474)" fill="var(--ma-component-illustration-grid-color, #eee)"/>
-</g>
 <rect x="194" y="230" width="162" height="80" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"/>
 <rect x="376" y="230" width="162" height="80" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"/>
 <rect x="558" y="230" width="208" height="80" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4"/>
-<g clip-path="url(#clip2_642_3473)">
 <path d="M218 250L218 290" stroke="var(--ma-component-illustration-color, #666)" stroke-width="4" stroke-linecap="round"/>
-</g>
-</g>
 </symbol>
 <use href="#component-illustration"/>
 </svg>

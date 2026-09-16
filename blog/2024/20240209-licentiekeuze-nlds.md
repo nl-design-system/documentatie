@@ -31,4 +31,4 @@ En dan hebben we binnen design systems ook nog te maken met auteursrechten. Denk
 
 ## Blijf op de hoogte van NL Design System
 
-Vind je het leuk om op de hoogte te blijven van de dingen die het NL Design System doet? Dat kan op verschillende manieren. [Ontvang onze nieuwsbrief](https://nldesignsystem.nl/project/blijf-op-de-hoogte#nieuwsbrief) of [meld je aan voor onze ‘Heartbeat-sessies’](https://nldesignsystem.nl/events/heartbeat/aanmelden/). Op deze 2-wekelijkse online bijeenkomsten delen we de laatste updates. Ook komen leden uit de community aan het woord. Heb je vragen? [Stuur ons dan een mail](mailto:info@nldesignsystem.nl).
+Vind je het leuk om op de hoogte te blijven van de dingen die het NL Design System doet? Dat kan op verschillende manieren. [Ontvang onze nieuwsbrief](https://nldesignsystem.nl/project/blijf-op-de-hoogte/#nieuwsbrief) of [meld je aan voor onze ‘Heartbeat-sessies’](https://nldesignsystem.nl/events/heartbeat/aanmelden/). Op deze 2-wekelijkse online bijeenkomsten delen we de laatste updates. Ook komen leden uit de community aan het woord. Heb je vragen? [Stuur ons dan een mail](mailto:info@nldesignsystem.nl).

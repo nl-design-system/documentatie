@@ -67,7 +67,7 @@ Richtlijnen, handleidingen en voorbeelden staan direct in de GitHub-repositories
 
 Dankzij het versiebeheer van Git en GitHub kun je altijd oudere versies van componenten, richtlijnen en documentatie terugvinden.
 
-### Back-ups
+### Back-ups {#backup}
 
 De GitHub-omgeving krijgt dagelijks een back-up met de tool [Rewind](https://rewind.com/products/backups/github/).
 

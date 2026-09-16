@@ -7,6 +7,7 @@ import Wcag143 from '@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag144 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md';
 import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md';
 import Wcag133 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.3.3-summary.md';
+import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md';
 import Wcag211NLDSNI from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.1.1-nlds-noninteractives.md';
 import Wcag243NLDSNI from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.4.3-nlds-noninteractives.md';
 import Wcag211NI from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.1.1-noninteractives.md';
@@ -32,6 +33,14 @@ export const usage = [
     sc: '1.3.3',
     status: '',
     component: Wcag133,
+    tags: ['designer', 'contentmaker'],
+  },
+  {
+    title:
+      'De kleur van de Form Field Description geeft geen informatie die niet ook op minimaal 1 andere manier wordt gegeven.',
+    sc: '1.4.1',
+    status: '',
+    component: Wcag141,
     tags: ['designer', 'contentmaker'],
   },
   {

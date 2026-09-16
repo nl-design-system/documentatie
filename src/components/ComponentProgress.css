@@ -1,0 +1,21 @@
+.ma-component-progress {
+  inline-size: 1em;
+  margin-inline-end: 0.25em;
+}
+
+.ma-component-progress__background {
+  stroke: var(--basis-color-disabled-bg-default);
+}
+
+.ma-component-progress__progress {
+  stroke: var(--basis-color-accent-1-inverse-bg-default);
+}
+
+@media (forced-colors: active) {
+  .ma-component-progress__background {
+    stroke: none;
+  }
+  .ma-component-progress__progress {
+    stroke: currentColor;
+  }
+}

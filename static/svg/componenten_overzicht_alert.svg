@@ -3,7 +3,7 @@
     <symbol id="component-illustration" viewBox="0 0 960 540">
 
         <!-- Use variables to set backgroundcolors so they can change with the status of the component without modififying this file -->
-        <g fill="var(--ma-component-illustration-background-color, white)">
+        <g fill="var(--ma-component-illustration-grid-background-color, #AAA)">
             <rect width="960" height="540"/>
             <rect width="960" height="540"/>
         </g>

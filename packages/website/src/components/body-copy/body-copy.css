@@ -1,0 +1,16 @@
+/*
+ * The body-copy component gives an max inline size to phrasing content to
+ * limit the line length to 65 characters
+ */
+.ma-body-copy {
+  p:not(:has(img:only-child)),
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .ams-unordered-list:not(.ams-unordered-list--no-markers) {
+    max-inline-size: var(--ma-body-copy-items-max-inline-size);
+  }
+}

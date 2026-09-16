@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Superscript
 pagination_label: Superscript
 description: Toont tekst met een kleiner lettertype met een verhoogde letterlijn.
+issue_number: 337
 slug: /superscript
 keywords:
   - exponent
@@ -35,7 +36,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Superscript";
@@ -47,12 +47,6 @@ export const componentName = "superscript";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 
