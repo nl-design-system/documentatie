@@ -2,6 +2,7 @@
   "year": "2026",
   "isUpComing": true,
   "isHappening": false,
+  "sessionsAreFinal": false,
   "miro": false,
   "nl": {
     "dateRange": "26 tot en met 29 oktober",
