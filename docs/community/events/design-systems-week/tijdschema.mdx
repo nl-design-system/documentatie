@@ -71,6 +71,7 @@ import settings from "./settings.json";
 ## Maandag 26 oktober
 
 <SessionTable
+  year={settings.year}
   lang="nl-NL"
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-26`))}
@@ -79,6 +80,7 @@ import settings from "./settings.json";
 ## Dinsdag 27 oktober
 
 <SessionTable
+  year={settings.year}
   lang="nl-NL"
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-27`))}
@@ -87,6 +89,7 @@ import settings from "./settings.json";
 ## Woensdag 28 oktober
 
 <SessionTable
+  year={settings.year}
   lang="nl-NL"
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-28`))}
@@ -95,6 +98,7 @@ import settings from "./settings.json";
 ## Donderdag 29 oktober
 
 <SessionTable
+  year={settings.year}
   lang="nl-NL"
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-29`))}
