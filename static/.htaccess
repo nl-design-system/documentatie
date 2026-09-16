@@ -39,6 +39,8 @@ Redirect 301 "/onderzoek" "/voorbeelden/onderzoek/"
 Redirect 301 "/pagination" "/page-number-navigation"
 Redirect 301 "/project/global-design-system/" "/community/global-design-system/"
 Redirect 301 "/project/links/" "/community/design-systems/"
+# Losse CI/CD-pagina samengevoegd met continuous integration
+RedirectMatch 301 "^/handboek/kwaliteitsaanpak/ci-cd/?$" "/handboek/kernteam/kwaliteitsaanpak/continuous-integration/"
 # Woordenlijst opgeheven
 RedirectMatch 301 "^/woordenlijst(/.*)?$" "/introductie/"
 # Project-sectie opgeheven
