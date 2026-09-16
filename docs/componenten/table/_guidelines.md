@@ -20,7 +20,7 @@ Voor gebruikers van screenreaders is het voordeel van het `<caption>` element da
 
 ## Sorteer de tabelrijen {#sorteer-de-tabelrijen}
 
-Voor gebruikers van [screenreaders](/woordenlijst/#screenreader) is het belangrijk dat je de kolom kunt vinden waarop gesorteerd is, en dat je makkelijk vanuit die kolom naar de vorige of volgende rij kunt gaan om snel de relevante rij te vinden. Wanneer je informatie zoekt op een bepaalde datum dan is het belangrijk dat je met één druk op de knop naar de volgende datum kunt gaan, daarna nog een keer, enzovoorts.
+Voor gebruikers van screenreaders is het belangrijk dat je de kolom kunt vinden waarop gesorteerd is, en dat je makkelijk vanuit die kolom naar de vorige of volgende rij kunt gaan om snel de relevante rij te vinden. Wanneer je informatie zoekt op een bepaalde datum dan is het belangrijk dat je met één druk op de knop naar de volgende datum kunt gaan, daarna nog een keer, enzovoorts.
 
 Als je de informatie niet kan vinden bij de datum die je verwacht, dan is het belangrijk om te weten dat op datum is gesorteerd: alleen dan kun weet je zeker dat de informatie helemaal niet in de tabel staat.
 
