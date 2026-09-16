@@ -50,13 +50,6 @@ const navbar: Navbar = {
       label: 'Community',
       className: 'utrecht-link utrecht-link--html-a ma-navigation-bar-item',
     },
-    {
-      type: 'doc',
-      docId: 'project/index',
-      position: 'left',
-      label: 'Project',
-      className: 'utrecht-link utrecht-link--html-a ma-navigation-bar-item',
-    },
   ],
 };
 

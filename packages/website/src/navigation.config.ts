@@ -84,7 +84,6 @@ export const navigation = navigationRoot(
           navigationItem('docs/community/slack.mdx'),
         ],
       }),
-      navigationGroup({ filePath: 'docs/project' }),
     ],
   }),
 );
