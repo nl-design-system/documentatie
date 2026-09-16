@@ -52,11 +52,11 @@ Het gaat om vier soorten hulp:
 - Een zelfhulpoptie, zoals een pagina met veelgestelde vragen of een helppagina.
 - Een volledig geautomatiseerde manier van contact, zoals een chatbot.
 
-Je bent niet verplicht om hulp aan te bieden. Bied je hulp aan op meerdere pagina's, dan staat die op elke pagina op dezelfde plek. De hulp hoeft ook niet op de pagina zelf te staan: een link naar de contactpagina telt ook, en dan gaat het om de plek van die link.
+Je bent niet verplicht om hulp aan te bieden. Bied je hulp aan op meerdere pagina's, dan staat die op elke pagina op dezelfde plek. De hulp hoeft ook niet op de pagina zelf te staan: een link naar de contactpagina is ook hulp, en dan gaat het om de plek van die link.
 
 "Dezelfde plek in de volgorde" betekent dezelfde volgorde tegenover de andere onderdelen op de pagina, niet exact hetzelfde punt in beeld. Staat de hulplink op de ene pagina na het hoofdmenu, dan staat die op de volgende pagina ook na het hoofdmenu. Dat is dezelfde regel als bij [3.2.3 Consistente navigatie](/wcag/3.2.3/).
 
-Verandert de bezoeker zelf iets aan de weergave, dan mag de plek meebewegen. Zoomt iemand in, draait iemand het scherm, of maakt iemand het venster smaller, dan mag de hulp op een andere plek uitkomen. Wel vergelijk je pagina's met elkaar in dezelfde weergave: op een smal scherm staat de hulp op elke pagina op dezelfde plek, en op een breed scherm ook.
+Verandert de bezoeker zelf iets aan de weergave, dan mag de hulp op een andere plek staan. Dat geldt als iemand inzoomt, het scherm draait of het venster smaller maakt. Je vergelijkt de pagina's dus binnen dezelfde weergave: op een smal scherm staat de hulp op elke pagina op dezelfde plek, en op een breed scherm ook.
 
 Wie moeite heeft met zoeken, of tijdens een taak niet meer weet waar iets staat, is sneller klaar als de hulp elke keer op dezelfde plek staat. Staat de hulp per pagina ergens anders, dan moet iemand op elke pagina opnieuw uitzoeken waar die is. Juist als een taak lastig wordt, kost dat de meeste moeite.
 
@@ -64,7 +64,7 @@ Wie moeite heeft met zoeken, of tijdens een taak niet meer weet waar iets staat,
 
 ### De hulp staat op de ene pagina bovenaan en op de andere onderaan
 
-Op de ene pagina staat de link naar de hulp of de contactpagina bovenaan, op de andere pas onderaan. Hetzelfde gebeurt met een blok met het telefoonnummer, het e-mailadres en de openingstijden van de helpdesk. De hulp is er wel, maar niet op de plek waar de bezoeker die eerder tegenkwam, dus begint het zoeken opnieuw.
+Op de ene pagina staat de link naar de hulp of de contactpagina bovenaan, op de andere pas onderaan. Hetzelfde gebeurt met een blok met het telefoonnummer, het e-mailadres en de openingstijden van de helpdesk. De hulp is er wel, maar niet op de plek waar de bezoeker die eerder tegenkwam. Die moet dus opnieuw zoeken.
 
 **Hoe te testen:** ga van pagina naar pagina en let op waar de hulp staat. Staat die overal op dezelfde plek tegenover de andere onderdelen, ook als je er met <kbd>Tab</kbd> langskomt?
 
@@ -140,7 +140,7 @@ De tweede pagina laadt dezelfde knop pas na de inhoud.
 
 Op een breed scherm staat de hulplink overal bovenaan. Wordt het scherm smaller, dan schuift de link op de startpagina met CSS naar beneden, terwijl die op de andere pagina's bovenaan blijft. Wie de site op een telefoon gebruikt, vindt de hulp per pagina ergens anders.
 
-Dat de plek op een smal scherm anders is dan op een breed scherm, is geen fout: de bezoeker verandert zelf de weergave. De pagina's moeten wel binnen dezelfde weergave hetzelfde blijven.
+Dat de plek op een smal scherm anders is dan op een breed scherm, is geen fout: de bezoeker verandert zelf de weergave. Binnen dezelfde weergave staat de hulp wel op elke pagina op dezelfde plek.
 
 **Hoe te testen:** verklein het browservenster tot de mobiele weergave verschijnt en bekijk zo een paar pagina's achter elkaar. Staat de hulp in die weergave overal op dezelfde plek?
 
@@ -173,11 +173,11 @@ Dat de plek op een smal scherm anders is dan op een breed scherm, is geen fout: 
 
 ### Een deel van de site zet de hulp op een andere plek
 
-De hoofdwebsite heeft de hulp op een vaste plek, maar een aanvraagomgeving of een inlogportaal gebruikt een eigen sjabloon met de hulp ergens anders. Wie midden in een aanvraag zit en hulp zoekt, vindt die niet op de plek van de rest van de site. Dat is het moment waarop hulp het hardst nodig is.
+De hoofdwebsite heeft de hulp op een vaste plek, maar een aanvraagomgeving of een inlogportaal gebruikt een eigen sjabloon met de hulp ergens anders. Wie een aanvraag invult en hulp zoekt, vindt die niet op de plek van de rest van de site. Juist tijdens zo'n taak heeft iemand die hulp nodig.
 
 Hoort de aanvraagomgeving bij dezelfde reeks pagina's als de rest van de site, dan is dit een fout. Is het een losstaand deel met een eigen doel, zoals een campagnesite naast een webapplicatie, dan mag de plek verschillen. Ook dan blijft één vaste plek voor de bezoeker het makkelijkst.
 
-**Hoe te testen:** loop een taak door die je naar een ander deel van de site brengt, zoals een aanvraag of een inlogomgeving. Staat de hulp daar op dezelfde plek in de volgorde als op de pagina's ervoor?
+**Hoe te testen:** doorloop een taak die verdergaat in een ander deel van de site, zoals een aanvraag of een inlogomgeving. Staat de hulp daar op dezelfde plek in de volgorde als op de pagina's ervoor?
 
 <Guideline appearance="dont" title="De hoofdsite met de hulp bovenaan, de aanvraagomgeving met de hulp onderaan">
 
@@ -215,7 +215,7 @@ De aanvraagomgeving zet de link onderaan.
 
 1. Open een paar verschillende pagina's van de site. Staat de hulp, zoals een contactlink, een telefoonnummer of een chatknop, overal op dezelfde plek tegenover de andere onderdelen?
 2. Kijk waar de link naar de veelgestelde vragen of de helppagina staat. Is dat op elke pagina dezelfde plek?
-3. Loop een taak door die je naar een ander deel van de site brengt, zoals een aanvraag of een inlogomgeving. Blijft de hulp op dezelfde plek staan?
+3. Doorloop een taak die verdergaat in een ander deel van de site, zoals een aanvraag of een inlogomgeving. Staat de hulp daar nog op dezelfde plek?
 4. Verklein het browservenster tot de mobiele weergave verschijnt en bekijk zo een paar pagina's. Staat de hulp in die weergave overal op dezelfde plek?
 
 ### Voor developers
