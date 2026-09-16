@@ -21,8 +21,8 @@
     "**/*.tsx",
     "**/*.mdx",
     "*.ts",
-    "docs/handboek/definition-of-done/candidate-stappenplan/selectiefase.md",
-    "docs/handboek/definition-of-done/candidate-stappenplan/voorbereidingsfase.md"
+    "docs/handboek/bijdragen/candidate-stappenplan/selectiefase.md",
+    "docs/handboek/bijdragen/candidate-stappenplan/voorbereidingsfase.md"
   ],
   "exclude": ["**/node_modules/*"]
 }
