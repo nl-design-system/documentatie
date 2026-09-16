@@ -130,7 +130,10 @@ export const DSWSession = ({
         {speakers.map((speaker, index) => (
           <div key={index} className={clsx('ma-dsw-session__speaker', 'ma-dsw-speaker')}>
             <img className={clsx('ma-dsw-speaker__image')} src={speaker.image.src} alt={speaker.image.alt} />
-            <Paragraph className={clsx('ma-dsw-speaker__description')}>{speaker.description[lang]}</Paragraph>
+            <Paragraph
+              className={clsx('ma-dsw-speaker__description')}
+              dangerouslySetInnerHTML={{ __html: speaker.description[lang] as TrustedHTML }}
+            />
           </div>
         ))}
       </aside>

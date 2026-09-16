@@ -11,7 +11,7 @@ slug: /events/developer-open-hour
 
 import { ButtonLink } from "@site/src/components/ButtonLink";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { ActionGroup } from "@components/action-group/action-group";
 
 # Developer Open Hour
 
@@ -38,10 +38,10 @@ Door je aan te melden kunnen wij je op de hoogte houden van Developer Open Hours
 
 <ActionGroup>
   <ButtonLink href="/events/developer-open-hour/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight />
+    {"Meld je aan"} <IconChevronRight slot="icon-end" />
   </ButtonLink>
   <ButtonLink href="/slack/" appearance="secondary-action">
-    {"Doe mee op Slack"} <IconChevronRight />
+    {"Doe mee op Slack"} <IconChevronRight slot="icon-end" />
   </ButtonLink>
 </ActionGroup>
 

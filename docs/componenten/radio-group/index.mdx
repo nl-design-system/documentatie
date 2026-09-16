@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Radio Group
 pagination_label: Radio Group
 description: Biedt de mogelijkheid om één optie te selecteren uit een lijst.
+issue_number: 129
 slug: /radio-group
 keywords:
   - fieldset
@@ -33,7 +34,6 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
-import { ComponentIllustration } from "@site/src/components/ComponentIllustration";
 
 {/* Add name and description for the component */}
 export const title = "Radio Group";
@@ -45,12 +45,6 @@ export const componentName = "radio-group";
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
-
-<ComponentIllustration
-  relayStep={relayStep}
-  description={`Schets van de ${componentName} component`}
-  name={componentName}
-/>
 
 ## Definition of Done
 

@@ -142,7 +142,7 @@
   padding-inline: var(--ma-card-content-padding-inline, 24px);
 }
 
-@media (width => 768px) {
+@media (width >= 768px) {
   .ma-cardgroup--medium {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);

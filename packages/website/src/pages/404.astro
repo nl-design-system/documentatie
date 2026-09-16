@@ -1,0 +1,22 @@
+---
+import CenterColumnLayout from '@layouts/center-column.astro';
+import { Heading } from '@components/heading/heading';
+import { Paragraph } from '@components/paragraph/paragraph';
+import { Link } from '@components/link/link';
+
+const title = 'Pagina niet gevonden';
+const description = 'De pagina die je wilt bezoeken bestaat niet, of niet meer.';
+---
+
+<CenterColumnLayout title={title} description={description} index={false}>
+  <Heading level={1}>{title}</Heading>
+  <Paragraph>
+    De pagina die je wilt bezoeken bestaat niet, of niet meer. Maar we hebben wat tips voor je om alsnog te vinden wat
+    je zoekt: start bij de voorpagina, gebruik het menu, of gebruik de zoekoptie in de menubalk.
+  </Paragraph>
+  <Paragraph>
+    Denk je dat het een fout in de website is? Meld ons de gebroken link alsjeblieft door een e-mail te sturen naar: <Link
+      href="mailto:info@nldesignsystem.nl">info@nldesignsystem.nl</Link
+    >
+  </Paragraph>
+</CenterColumnLayout>

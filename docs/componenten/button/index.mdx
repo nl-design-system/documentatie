@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Button
 pagination_label: Button
 description: Biedt de mogelijkheid om een actie uit te voeren.
+issue_number: 38
 slug: /button
 keywords:
   - actie
@@ -48,8 +49,8 @@ import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/\_component_gebruiken_intro.md";
 import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, LinkListLink, Link } from "@utrecht/component-library-react/dist/css-module";
-import { Heading } from "@nl-design-system-candidate/heading-react/css";
+import { LinkList, LinkListLink } from "@components/link-list/link-list";
+import { Heading } from "@components/heading/heading";
 import { BrandIcon } from "@site/src/components/BrandIcon";
 
 import {
@@ -59,6 +60,7 @@ import {
   Introduction,
   Related,
 } from "@site/src/components/ComponentPage";
+import { Checklist, ChecklistItem } from "@site/src/components/Checklist";
 import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
 
 import { Markdown } from "@site/src/components/Markdown";

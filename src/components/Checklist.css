@@ -20,11 +20,6 @@
   padding-inline-start: 0;
 }
 
-.ma-new-checklist__title {
-  font-weight: 600;
-  margin-inline-start: 5px;
-}
-
 .ma-new-checklist__content {
   margin-block-end: 20px;
   margin-inline-start: 20px;
@@ -75,13 +70,22 @@
 
 .ma-filter-block {
   background-color: var(--basis-color-accent-1-bg-default);
-  border-color: var(--basis-color-accent-1-border-subtle);
+  border-color: transparent;
   border-style: solid;
   border-width: 1px;
   display: flex;
   flex-direction: column;
-  margin-block-end: var(--basis-space-row-xl);
-  padding-block: var(--basis-space-block-lg);
-  padding-inline: var(--basis-space-inline-lg);
+  margin-block-end: var(--basis-space-block-2xl);
+  margin-block-start: var(--basis-space-block-xl);
+  padding-block: var(--basis-space-block-xl);
+  padding-inline: var(--basis-space-inline-xl);
   row-gap: var(--basis-space-block-md);
+}
+
+.ma-filter-block .utrecht-form-field:first-of-type {
+  margin-block-start: var(--basis-space-block-lg);
+}
+
+.ma-filter-block + .ma-new-checklist .ma-new-checklist__item {
+  margin-block-start: -1px;
 }
