@@ -58,7 +58,7 @@ Voor elke bediening met een enkele [aanwijzer](/woordenlijst/#aanwijzer) geldt m
 - Het loslaten draait alles terug wat het indrukken in gang zette.
 - Het indrukken is de kern van de functie, en die werkt niet als je op het loslaten wacht.
 
-Standaardknoppen en links doen dit al goed. Een `<button>` of een `<a>` voert de actie uit op het loslaten, niet op het indrukken. Het probleem ontstaat vooral bij zelfgemaakte bedieningen, waar een developer de actie zelf aan het indrukken koppelt. In de code heet het indrukken het `down`-event en het loslaten het `up`-event.
+Knoppen en links van HTML doen dit al goed. Een `<button>` of een `<a>` voert de actie uit op het loslaten, niet op het indrukken. Het probleem ontstaat vooral bij zelfgemaakte bedieningen, waar een developer de actie zelf aan het indrukken koppelt. In de code heet het indrukken het `down`-event en het loslaten het `up`-event.
 
 Wachten op het loslaten is niet de enige oplossing. Je kunt de bezoeker de actie laten afbreken voordat die klaar is, of de actie achteraf laten terugdraaien. Bij slepen betekent dat bijvoorbeeld dat je een onderdeel op de oude plek terugzet als de bezoeker loslaat buiten een geldig vak.
 
@@ -86,13 +86,13 @@ button.addEventListener("pointerdown", deleteAccount);
 
 </Guideline>
 
-<Guideline appearance="do" title="Standaardknop die op het loslaten reageert">
+<Guideline appearance="do" title="Button uit HTML die op het loslaten reageert">
   ```html
   <button type="button">Verwijder account</button>
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer gebruikt een standaard-`<button>`, die de actie op het loslaten uitvoert. Moet het toch een zelfgemaakte bediening zijn, dan koppelt de developer de actie aan het loslaten en zorgt dat wegschuiven vóór het loslaten de actie afbreekt.
+**Wie kan dit oplossen:** een developer gebruikt de `<button>` uit HTML, die de actie op het loslaten uitvoert. Moet het toch een zelfgemaakte bediening zijn, dan koppelt de developer de actie aan het loslaten en zorgt dat wegschuiven vóór het loslaten de actie afbreekt.
 
 ### Slepen kun je niet afbreken of ongedaan maken
 
@@ -128,14 +128,14 @@ item.addEventListener("pointerup", moveItem);
 
 ### Voor developers
 
-1. Zoek in de code naar `pointerdown`, `mousedown` en `touchstart` die een actie uitvoeren. Verplaats die actie naar het loslaten met `pointerup`, `mouseup` of `touchend`, of gebruik een standaard-`<button>` die dat al doet.
+1. Zoek in de code naar `pointerdown`, `mousedown` en `touchstart` die een actie uitvoeren. Verplaats die actie naar het loslaten met `pointerup`, `mouseup` of `touchend`, of gebruik de `<button>` uit HTML die dat al doet.
 2. Controleer per zelfgemaakte bediening of wegschuiven vóór het loslaten de actie afbreekt.
 3. Bied bij slepen een manier om af te breken of ongedaan te maken. Zet het onderdeel terug bij loslaten buiten een geldig vak, of voeg een knop toe om de laatste verplaatsing terug te draaien.
 4. Ga na of het indrukken echt de kern van de functie is, zoals bij een piano of een schermtoetsenbord. Alleen dan mag de actie op het indrukken blijven.
 
 ## Gerelateerde succescriteria
 
-- [2.1.1 Toetsenbord](/wcag/2.1.1/): alles wat met een aanwijzer werkt, moet ook met het toetsenbord kunnen. Een standaardknop helpt bij beide.
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): alles wat met een aanwijzer werkt, moet ook met het toetsenbord kunnen. Een `<button>` uit HTML helpt bij beide.
 - [2.5.1 Aanwijzergebaren](/wcag/2.5.1/): gaat over veeg- en knijpgebaren op het scherm. Ook die hebben een bediening met één tik of klik als alternatief nodig.
 - [2.5.4 Bewegingsactivering](/wcag/2.5.4/): gaat over functies die je bedient door het apparaat te bewegen of te schudden. Ook daar wil je een onbedoelde activering voorkomen.
 - [2.5.7 Sleepbewegingen](/wcag/2.5.7/): gaat over bedieningen die je versleept en of daar een alternatief voor is. Bij dit succescriterium gaat het erom dat je een sleepactie kunt afbreken of terugdraaien.
