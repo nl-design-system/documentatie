@@ -1,63 +1,92 @@
-/*! For license information please see 861e17e8.168b44cf.js.LICENSE.txt */
+/*! For license information please see 8ee8c60b.e8626794.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [38384],
+ [49620],
  {
   3387(e, n, a) {
    a.d(n, { s: () => o });
    var t = a(29181),
-    i = a(13526),
-    r = a(84471),
+    r = a(13526),
+    i = a(84471),
     s = a(86070);
    const l = { 'Heading 1': 'Heading', 'Heading 2': 'Heading', 'Heading 3': 'Heading', 'Heading 4': 'Heading', 'Heading 5': 'Heading', 'Heading 6': 'Heading' },
     o = ({ name: e, relayStep: n, description: a }) => {
-     const o = (0, r.fX)(n),
+     const o = (0, i.fX)(n),
       d = l[e] ?? e;
-     return (0, s.jsxs)(t.WK, { children: [(0, s.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, i.A)('ma-component-illustration', `ma-component-illustration--${o}`), fill: 'none', children: [(0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-background-color, white)', children: [(0, s.jsx)('rect', { width: '960', height: '540' }), (0, s.jsx)('rect', { width: '960', height: '540' })] }), (0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-grid-color, #eee)', children: [(0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, s.jsx)('use', { href: `/svg/componenten_overzicht_${(0, r.fX)(d)}.svg#component-illustration` })] }), (0, s.jsx)(t.$P, { className: 'ma-component-illustration__caption', children: a })] });
+     return (0, s.jsxs)(t.WK, { children: [(0, s.jsxs)('svg', { width: '960', height: '540', viewBox: '0 0 960 540', xmlns: 'http://www.w3.org/2000/svg', className: (0, r.A)('ma-component-illustration', `ma-component-illustration--${o}`), fill: 'none', children: [(0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-background-color, white)', children: [(0, s.jsx)('rect', { width: '960', height: '540' }), (0, s.jsx)('rect', { width: '960', height: '540' })] }), (0, s.jsxs)('g', { fill: 'var(--ma-component-illustration-grid-color, #eee)', children: [(0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(69)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(151)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(233)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(315)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(397)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(479)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(561)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(643)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(725)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(807)' }), (0, s.jsx)('rect', { width: '2', height: '540', transform: 'translate(889)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 64)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 146)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 228)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 310)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 392)' }), (0, s.jsx)('rect', { width: '960', height: '2', transform: 'translate(0 474)' })] }), (0, s.jsx)('use', { href: `/svg/componenten_overzicht_${(0, i.fX)(d)}.svg#component-illustration` })] }), (0, s.jsx)(t.$P, { className: 'ma-component-illustration__caption', children: a })] });
     };
   },
   3446(e, n, a) {
    a.d(n, { r: () => c });
    var t = a(29181),
-    i = a(74172),
-    r = a(15089),
+    r = a(74172),
+    i = a(15089),
     s = a(28377),
     l = a(33648),
     o = a(83386),
     d = a(86070);
-   const g = { figma: (0, d.jsx)(i.A, {}), github: (0, d.jsx)(r.A, {}), npm: (0, d.jsx)(s.A, {}), storybook: (0, d.jsx)(l.A, {}) },
+   const g = { figma: (0, d.jsx)(r.A, {}), github: (0, d.jsx)(i.A, {}), npm: (0, d.jsx)(s.A, {}), storybook: (0, d.jsx)(l.A, {}) },
     c = ({ brand: e }) => (0, d.jsx)(t.In, { children: g[e] || (0, d.jsx)(o.A, {}) });
+  },
+  13327(e, n, a) {
+   (a.r(n), a.d(n, { assets: () => g, component: () => f, componentName: () => p, contentTitle: () => d, default: () => v, description: () => u, frontMatter: () => o, issueNumber: () => m, metadata: () => t, relayStep: () => h, title: () => c, toc: () => x }));
+   const t = JSON.parse('{"id":"componenten/description-list/index","title":"Description List","description":"Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.","source":"@site/docs/componenten/description-list/index.mdx","sourceDirName":"componenten/description-list","slug":"/description-list","permalink":"/description-list","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/description-list/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Description List","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Description List","pagination_label":"Description List","description":"Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.","issue_number":92,"slug":"/description-list"},"sidebar":"componenten","previous":{"title":"Date Picker","permalink":"/date-picker"},"next":{"title":"Dialog","permalink":"/dialog"}}');
+   var r = a(86070),
+    i = a(18439),
+    s = a(79447),
+    l = a(26877);
+   const o = { title: 'Description List', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Description List', pagination_label: 'Description List', description: 'Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.', issue_number: 92, slug: '/description-list' },
+    d = void 0,
+    g = {},
+    c = 'Description List',
+    u = 'Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.',
+    m = 92,
+    h = 'help wanted',
+    p = 'description-list',
+    f = s.find((e) => e.number === m),
+    x = [
+     { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
+     { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
+    ];
+   function b(e) {
+    const n = { h2: 'h2', ...(0, i.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, r.jsx)(l.Fc, { component: f, headingLevel: 1, description: u }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(l.VK, { component: f, headingLevel: 3 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(l.mu, { component: f, headingLevel: 3 }), '\n', (0, r.jsx)(l.K_, { component: f }), '\n', (0, r.jsx)(l.$9, { component: f, headingLevel: 2 })] });
+   }
+   function v(e = {}) {
+    const { wrapper: n } = { ...(0, i.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(b, { ...e }) }) : b(e);
+   }
   },
   14881(e, n, a) {
    a.d(n, { K: () => d, n: () => o });
    var t = a(13526),
-    i = a(30758),
-    r = a(96345),
+    r = a(30758),
+    i = a(96345),
     s = a(37168),
     l = a(86070);
-   const o = (0, i.forwardRef)(({ as: e, className: n, children: a, ...i }, r) => {
+   const o = (0, r.forwardRef)(({ as: e, className: n, children: a, ...r }, i) => {
      const s = e || 'div',
       o = (0, t.A)('ma-utrecht-accordion', 'utrecht-accordion', n);
-     return (0, l.jsx)(s, { ref: r, className: o, ...i, children: a });
+     return (0, l.jsx)(s, { ref: i, className: o, ...r, children: a });
     }),
-    d = ({ className: e, classNamePanel: n, label: a, heading: i, headingLevel: o, headingApperance: d, ...g }) => {
+    d = ({ className: e, classNamePanel: n, label: a, heading: r, headingLevel: o, headingApperance: d, ...g }) => {
      const c = (0, t.A)('utrecht-accordion__section', e),
       u = (0, t.A)('utrecht-accordion__panel', n);
-     return (0, l.jsxs)('details', { className: c, ...g, children: [(0, l.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, l.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, l.jsx)('span', { className: 'nl-button__icon-start', children: (0, l.jsx)(r.A, {}) }), (0, l.jsxs)('span', { className: 'nl-button__label', children: [i && (0, l.jsx)(s.D, { level: o, appearance: d, children: i }), a] })] }) }), (0, l.jsx)('div', { className: u, children: g.children })] });
+     return (0, l.jsxs)('details', { className: c, ...g, children: [(0, l.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, l.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, l.jsx)('span', { className: 'nl-button__icon-start', children: (0, l.jsx)(i.A, {}) }), (0, l.jsxs)('span', { className: 'nl-button__label', children: [r && (0, l.jsx)(s.D, { level: o, appearance: d, children: r }), a] })] }) }), (0, l.jsx)('div', { className: u, children: g.children })] });
     };
   },
   15089(e, n, a) {
    a.d(n, { A: () => s });
    var t = a(48907),
-    i = a(30758),
-    r = ['size', 'color'];
+    r = a(30758),
+    i = ['size', 'color'];
    function s(e) {
     var n = e.size,
      a = void 0 === n ? 24 : n,
      s = e.color,
      l = void 0 === s ? 'currentColor' : s,
-     o = (0, t.$i)(e, r);
-    return i.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-brand-github', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), i.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), i.createElement('path', { d: 'M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5' }));
+     o = (0, t.$i)(e, i);
+    return r.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-brand-github', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), r.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), r.createElement('path', { d: 'M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5' }));
    }
   },
   19707(e, n, a) {
@@ -67,22 +96,22 @@
   26165(e, n, a) {
    a.d(n, { AC: () => d, Fu: () => s, Wu: () => l, Zp: () => o });
    var t = a(46447),
-    i = a(13526),
-    r = a(86070);
-   const s = ({ background: e, children: n, className: a, ...t }) => (0, r.jsx)('div', { className: (0, i.A)('ma-card__illustration', e && `ma-card__illustration--${e}`, a), ...t, children: n }),
-    l = (e) => (0, r.jsx)('div', { className: 'ma-card__content', ...e }),
+    r = a(13526),
+    i = a(86070);
+   const s = ({ background: e, children: n, className: a, ...t }) => (0, i.jsx)('div', { className: (0, r.A)('ma-card__illustration', e && `ma-card__illustration--${e}`, a), ...t, children: n }),
+    l = (e) => (0, i.jsx)('div', { className: 'ma-card__content', ...e }),
     o = ({ href: e, appearance: n, className: a, component: s = 'div', background: l, children: o }) => {
-     const d = (e) => ('article' === s ? (0, r.jsx)('article', { ...e }) : 'section' === s ? (0, r.jsx)('section', { ...e }) : (0, r.jsx)('div', { ...e })),
-      g = (0, r.jsx)(d, { className: (0, i.A)('ma-cardgroup__card', l && 'ma-cardgroup__card--light-purple', `ma-cardgroup__card--${n}`, a), children: o });
-     return e ? (0, r.jsx)(t.N_, { href: e, boxContent: !0, className: 'ma-cardgroup__link', children: g }) : g;
+     const d = (e) => ('article' === s ? (0, i.jsx)('article', { ...e }) : 'section' === s ? (0, i.jsx)('section', { ...e }) : (0, i.jsx)('div', { ...e })),
+      g = (0, i.jsx)(d, { className: (0, r.A)('ma-cardgroup__card', l && 'ma-cardgroup__card--light-purple', `ma-cardgroup__card--${n}`, a), children: o });
+     return e ? (0, i.jsx)(t.N_, { href: e, boxContent: !0, className: 'ma-cardgroup__link', children: g }) : g;
     },
-    d = ({ appearance: e = 'large', children: n, className: a }) => (0, r.jsx)('div', { className: (0, i.A)('ma-cardgroup', `ma-cardgroup--${e}`, a), children: n });
+    d = ({ appearance: e = 'large', children: n, className: a }) => (0, i.jsx)('div', { className: (0, r.A)('ma-cardgroup', `ma-cardgroup--${e}`, a), children: n });
   },
   26877(e, n, a) {
    a.d(n, { VK: () => v, $9: () => k, mu: () => j, Fc: () => w, K_: () => N });
    var t = a(29181),
-    i = a(29857),
-    r = a(66153),
+    r = a(29857),
+    i = a(66153),
     s = a(13526),
     l = a(3446),
     o = a(26165),
@@ -101,8 +130,8 @@
     b = a(3387);
    const v = ({ component: e, headingLevel: n }) => {
      const a = e && e.projects.filter((e) => p.f4.includes(e.id)),
-      i = a && p.f4.map((e) => a.find((n) => n.id === e)).filter(Boolean);
-     return e && (0, g.jsx)(x.n, { children: i.map((a) => (0, g.jsx)(x.K, { className: (0, s.A)('ma-definition-of-done', a && `ma-definition-of-done--${(0, p.fX)(a.title)}`), heading: a ? `${a.title} - ${a.progress.value} van ${a.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, g.jsxs)(g.Fragment, { children: [(0, g.jsx)(h._, { children: a.tasks.map(({ checked: e, name: a, id: t }) => (0, g.jsx)(h.Z, { headingLevel: n + 1, checked: e, heading: a, description: (0, p.qZ)(t) }, t)) }), (0, g.jsx)(t.fz, { children: (0, g.jsxs)(t.N_, { href: `${a.url}?filterQuery=${e.title}`, children: [a.title, ' projectbord op GitHub'] }) })] }) }, a.title)) });
+      r = a && p.f4.map((e) => a.find((n) => n.id === e)).filter(Boolean);
+     return e && (0, g.jsx)(x.n, { children: r.map((a) => (0, g.jsx)(x.K, { className: (0, s.A)('ma-definition-of-done', a && `ma-definition-of-done--${(0, p.fX)(a.title)}`), heading: a ? `${a.title} - ${a.progress.value} van ${a.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, g.jsxs)(g.Fragment, { children: [(0, g.jsx)(h._, { children: a.tasks.map(({ checked: e, name: a, id: t }) => (0, g.jsx)(h.Z, { headingLevel: n + 1, checked: e, heading: a, description: (0, p.qZ)(t) }, t)) }), (0, g.jsx)(t.fz, { children: (0, g.jsxs)(t.N_, { href: `${a.url}?filterQuery=${e.title}`, children: [a.title, ' projectbord op GitHub'] }) })] }) }, a.title)) });
     },
     j = ({ component: e, headingLevel: n }) => {
      const a = e && e.projects.filter((e) => !p.f4.includes(e.id));
@@ -134,10 +163,10 @@
                 description: (0, g.jsxs)('div', {
                  className: 'ma-flow',
                  children: [
-                  (0, g.jsxs)(r.f, { children: [(0, g.jsx)(c, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, g.jsxs)(t.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
+                  (0, g.jsxs)(i.f, { children: [(0, g.jsx)(c, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, g.jsxs)(t.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
                   (0, g.jsxs)('div', {
                    children: [
-                    (h.length > 0 || u.length > 0) && (0, g.jsx)(i.DZ, { level: Math.min(n + 1, 6), children: 'Snel aan de slag' }),
+                    (h.length > 0 || u.length > 0) && (0, g.jsx)(r.DZ, { level: Math.min(n + 1, 6), children: 'Snel aan de slag' }),
                     h.length > 0 &&
                      (0, g.jsx)(t.dk, {
                       links: h
@@ -149,7 +178,7 @@
                      }),
                    ],
                   }),
-                  u.length > 0 && u.map(({ frameworkName: e, tasks: a }) => (0, g.jsxs)('section', { children: [(0, g.jsxs)(i.DZ, { level: Math.min(n + 2, 6), children: [s, ' in ', e] }), (0, g.jsx)(t.dk, { links: a.map((e) => ({ children: e.description, icon: (0, g.jsx)(l.r, { brand: e.brand }), href: e.value })) })] }, e)),
+                  u.length > 0 && u.map(({ frameworkName: e, tasks: a }) => (0, g.jsxs)('section', { children: [(0, g.jsxs)(r.DZ, { level: Math.min(n + 2, 6), children: [s, ' in ', e] }), (0, g.jsx)(t.dk, { links: a.map((e) => ({ children: e.description, icon: (0, g.jsx)(l.r, { brand: e.brand }), href: e.value })) })] }, e)),
                  ],
                 }),
                },
@@ -187,12 +216,12 @@
     },
     k = ({ component: e, headingLevel: n }) => {
      const a = e?.projects.find((e) => 'HELP_WANTED' === e.id),
-      i = a?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
-     return e && (0, g.jsxs)(g.Fragment, { children: [(0, g.jsx)(t.DZ, { id: 'help-component-verbeteren', level: n, children: 'Help om deze component te verbeteren' }), (0, g.jsxs)(t.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, g.jsxs)(t.Xy, { children: [i ? (0, g.jsxs)(t.Er, { children: ['Vul de ', (0, g.jsx)(t.N_, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, g.jsxs)(t.Er, { children: [(0, g.jsxs)(t.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, g.jsxs)(t.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, g.jsx)(t.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, g.jsx)(t.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
+      r = a?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
+     return e && (0, g.jsxs)(g.Fragment, { children: [(0, g.jsx)(t.DZ, { id: 'help-component-verbeteren', level: n, children: 'Help om deze component te verbeteren' }), (0, g.jsxs)(t.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, g.jsxs)(t.Xy, { children: [r ? (0, g.jsxs)(t.Er, { children: ['Vul de ', (0, g.jsx)(t.N_, { href: r, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, g.jsxs)(t.Er, { children: [(0, g.jsxs)(t.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, g.jsxs)(t.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, g.jsx)(t.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, g.jsx)(t.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
     w = ({ component: e, headingLevel: n, description: a }) => {
-     const i = e && p.bo[e.relayStep];
-     return globalThis.isAstro ? null : e && (0, g.jsxs)(g.Fragment, { children: [(0, g.jsx)(m.p, { level: n, suffix: i && (0, g.jsx)(u.D, { state: i }), children: e.title }), (0, g.jsx)(t.fz, { lead: !0, children: a }), ['Help Wanted', 'Community'].includes(i) && (0, g.jsx)(b.s, { relayStep: i, description: `Schets van de ${e.title} component`, name: e.title })] });
+     const r = e && p.bo[e.relayStep];
+     return globalThis.isAstro ? null : e && (0, g.jsxs)(g.Fragment, { children: [(0, g.jsx)(m.p, { level: n, suffix: r && (0, g.jsx)(u.D, { state: r }), children: e.title }), (0, g.jsx)(t.fz, { lead: !0, children: a }), ['Help Wanted', 'Community'].includes(r) && (0, g.jsx)(b.s, { relayStep: r, description: `Schets van de ${e.title} component`, name: e.title })] });
     },
     N = ({ component: e }) => {
      const n = (e && f[e.title]) || [];
@@ -202,43 +231,43 @@
   28377(e, n, a) {
    a.d(n, { A: () => s });
    var t = a(48907),
-    i = a(30758),
-    r = ['size', 'color'];
+    r = a(30758),
+    i = ['size', 'color'];
    function s(e) {
     var n = e.size,
      a = void 0 === n ? 24 : n,
      s = e.color,
      l = void 0 === s ? 'currentColor' : s,
-     o = (0, t.$i)(e, r);
-    return i.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-brand-npm', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), i.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), i.createElement('path', { d: 'M1 8h22v7h-12v2h-4v-2h-6z' }), i.createElement('path', { d: 'M7 8v7' }), i.createElement('path', { d: 'M14 8v7' }), i.createElement('path', { d: 'M17 11v4' }), i.createElement('path', { d: 'M4 11v4' }), i.createElement('path', { d: 'M11 11v1' }), i.createElement('path', { d: 'M20 11v4' }));
+     o = (0, t.$i)(e, i);
+    return r.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-brand-npm', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), r.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), r.createElement('path', { d: 'M1 8h22v7h-12v2h-4v-2h-6z' }), r.createElement('path', { d: 'M7 8v7' }), r.createElement('path', { d: 'M14 8v7' }), r.createElement('path', { d: 'M17 11v4' }), r.createElement('path', { d: 'M4 11v4' }), r.createElement('path', { d: 'M11 11v1' }), r.createElement('path', { d: 'M20 11v4' }));
    }
   },
   29857(e, n, a) {
-   a.d(n, { DZ: () => r, _B: () => s });
+   a.d(n, { DZ: () => i, _B: () => s });
    var t = a(37168),
-    i = a(86070);
-   const r = (e) => (0, i.jsx)(t.D, { ...e }),
-    s = (e) => (0, i.jsx)(t.D, { ...e, level: 3 });
+    r = a(86070);
+   const i = (e) => (0, r.jsx)(t.D, { ...e }),
+    s = (e) => (0, r.jsx)(t.D, { ...e, level: 3 });
   },
   33648(e, n, a) {
    a.d(n, { A: () => s });
    var t = a(48907),
-    i = a(30758),
-    r = ['size', 'color'];
+    r = a(30758),
+    i = ['size', 'color'];
    function s(e) {
     var n = e.size,
      a = void 0 === n ? 24 : n,
      s = e.color,
      l = void 0 === s ? 'currentColor' : s,
-     o = (0, t.$i)(e, r);
-    return i.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-brand-storybook', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), i.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), i.createElement('path', { d: 'M5 4l.5 16.5l13.5 .5v-18z' }), i.createElement('path', { d: 'M9 15c.6 1.5 1.639 2 3.283 2h-.283c1.8 0 3 -.974 3 -2.435c0 -1.194 -.831 -1.799 -2.147 -2.333l-1.975 -.802c-1.15 -.467 -1.878 -1.422 -1.878 -2.467c0 -.97 .899 -1.786 2.087 -1.893l.613 -.055c1.528 -.138 2.999 .762 3.3 1.985' }), i.createElement('path', { d: 'M16 3.5v1' }));
+     o = (0, t.$i)(e, i);
+    return r.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-brand-storybook', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), r.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), r.createElement('path', { d: 'M5 4l.5 16.5l13.5 .5v-18z' }), r.createElement('path', { d: 'M9 15c.6 1.5 1.639 2 3.283 2h-.283c1.8 0 3 -.974 3 -2.435c0 -1.194 -.831 -1.799 -2.147 -2.333l-1.975 -.802c-1.15 -.467 -1.878 -1.422 -1.878 -2.467c0 -.97 .899 -1.786 2.087 -1.893l.613 -.055c1.528 -.138 2.999 .762 3.3 1.985' }), r.createElement('path', { d: 'M16 3.5v1' }));
    }
   },
   46276(e, n, a) {
-   a.d(n, { p: () => r });
+   a.d(n, { p: () => i });
    var t = a(13526),
-    i = a(86070);
-   const r = ({ children: e, className: n, level: a = 1, suffix: r, ...s }) => (0, i.jsxs)('hgroup', { className: (0, t.A)('nlds-inline-heading-group', `utrecht-heading-${a}`, n), ...s, children: [(0, i.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: e }), r && (0, i.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [r ? ' ' : '', r] })] });
+    r = a(86070);
+   const i = ({ children: e, className: n, level: a = 1, suffix: i, ...s }) => (0, r.jsxs)('hgroup', { className: (0, t.A)('nlds-inline-heading-group', `utrecht-heading-${a}`, n), ...s, children: [(0, r.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: e }), i && (0, r.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [i ? ' ' : '', i] })] });
   },
   48907(e, n, a) {
    function t() {
@@ -255,48 +284,48 @@
      t.apply(this, arguments)
     );
    }
-   function i(e, n) {
+   function r(e, n) {
     if (null == e) return {};
     var a,
      t,
-     i = (function (e, n) {
+     r = (function (e, n) {
       if (null == e) return {};
       var a,
        t,
-       i = {},
-       r = Object.keys(e);
-      for (t = 0; t < r.length; t++) ((a = r[t]), n.indexOf(a) >= 0 || (i[a] = e[a]));
-      return i;
+       r = {},
+       i = Object.keys(e);
+      for (t = 0; t < i.length; t++) ((a = i[t]), n.indexOf(a) >= 0 || (r[a] = e[a]));
+      return r;
      })(e, n);
     if (Object.getOwnPropertySymbols) {
-     var r = Object.getOwnPropertySymbols(e);
-     for (t = 0; t < r.length; t++) ((a = r[t]), n.indexOf(a) >= 0 || (Object.prototype.propertyIsEnumerable.call(e, a) && (i[a] = e[a])));
+     var i = Object.getOwnPropertySymbols(e);
+     for (t = 0; t < i.length; t++) ((a = i[t]), n.indexOf(a) >= 0 || (Object.prototype.propertyIsEnumerable.call(e, a) && (r[a] = e[a])));
     }
-    return i;
+    return r;
    }
-   a.d(n, { $i: () => i, _P: () => t });
+   a.d(n, { $i: () => r, _P: () => t });
   },
   50172(e, n, a) {
    a.d(n, { Z: () => u });
    var t = a(86070),
-    i = a(63009);
-   function r(e) {
+    r = a(63009);
+   function i(e) {
     var n,
      a,
      t = '';
     if ('string' == typeof e || 'number' == typeof e) t += e;
     else if ('object' == typeof e)
      if (Array.isArray(e)) {
-      var i = e.length;
-      for (n = 0; n < i; n++) e[n] && (a = r(e[n])) && (t && (t += ' '), (t += a));
+      var r = e.length;
+      for (n = 0; n < r; n++) e[n] && (a = i(e[n])) && (t && (t += ' '), (t += a));
      } else for (a in e) e[a] && (t && (t += ' '), (t += a));
     return t;
    }
    function s() {
-    for (var e, n, a = 0, t = '', i = arguments.length; a < i; a++) (e = arguments[a]) && (n = r(e)) && (t && (t += ' '), (t += n));
+    for (var e, n, a = 0, t = '', r = arguments.length; a < r; a++) (e = arguments[a]) && (n = i(e)) && (t && (t += ' '), (t += n));
     return t;
    }
-   const l = ({ ref: e, children: n, className: a, inline: r, ...l }) => (0, t.jsx)(i.N, { ...l, className: s('rhc-link', { 'rhc-link--inline': r }, a), disabled: !1, ref: e, children: n });
+   const l = ({ ref: e, children: n, className: a, inline: i, ...l }) => (0, t.jsx)(r.N, { ...l, className: s('rhc-link', { 'rhc-link--inline': i }, a), disabled: !1, ref: e, children: n });
    l.displayName = 'Link';
    var o = a(30758);
    function d(e) {
@@ -306,27 +335,27 @@
     if ('string' == typeof e || 'number' == typeof e) t += e;
     else if ('object' == typeof e)
      if (Array.isArray(e)) {
-      var i = e.length;
-      for (n = 0; n < i; n++) e[n] && (a = d(e[n])) && (t && (t += ' '), (t += a));
+      var r = e.length;
+      for (n = 0; n < r; n++) e[n] && (a = d(e[n])) && (t && (t += ' '), (t += a));
      } else for (a in e) e[a] && (t && (t += ' '), (t += a));
     return t;
    }
    function g() {
-    for (var e, n, a = 0, t = '', i = arguments.length; a < i; a++) (e = arguments[a]) && (n = d(e)) && (t && (t += ' '), (t += n));
+    for (var e, n, a = 0, t = '', r = arguments.length; a < r; a++) (e = arguments[a]) && (n = d(e)) && (t && (t += ' '), (t += n));
     return t;
    }
    const c = ({ level: e = 2, children: n, ...a }) => {
      const t = `h${e}`;
      return o.createElement(t, a, n);
     },
-    u = (0, o.forwardRef)(({ heading: e, headingLevel: n = 2, subheading: a, description: i, metadata: r, image: s, href: o, target: d, linkLabel: u, title: m, className: h, children: p, ...f }, x) => (0, t.jsxs)('div', { className: g('rhc-card', 'rhc-card--default', h), ref: x, ...f, children: [s && (0, t.jsx)('div', { className: 'rhc-card__image', children: s }), (0, t.jsxs)('div', { className: 'rhc-card__content', children: [(0, t.jsx)(c, { className: 'rhc-card__heading', level: n, children: o ? (0, t.jsx)(l, { className: 'rhc-card__link', href: o, target: d, title: m, children: e }) : e }), a && (0, t.jsx)('p', { className: 'rhc-card__subheading', children: a }), i && (0, t.jsx)('p', { className: 'rhc-card__description', children: i }), r && (0, t.jsx)('p', { className: 'rhc-card__metadata', children: r }), p] }), u && (0, t.jsx)('div', { className: 'rhc-card__footer', children: (0, t.jsx)('div', { className: 'rhc-card__link', 'data-testid': 'rhc-card__link', children: (0, t.jsx)(l, { href: o, target: d, title: m, children: u }) }) })] }));
+    u = (0, o.forwardRef)(({ heading: e, headingLevel: n = 2, subheading: a, description: r, metadata: i, image: s, href: o, target: d, linkLabel: u, title: m, className: h, children: p, ...f }, x) => (0, t.jsxs)('div', { className: g('rhc-card', 'rhc-card--default', h), ref: x, ...f, children: [s && (0, t.jsx)('div', { className: 'rhc-card__image', children: s }), (0, t.jsxs)('div', { className: 'rhc-card__content', children: [(0, t.jsx)(c, { className: 'rhc-card__heading', level: n, children: o ? (0, t.jsx)(l, { className: 'rhc-card__link', href: o, target: d, title: m, children: e }) : e }), a && (0, t.jsx)('p', { className: 'rhc-card__subheading', children: a }), r && (0, t.jsx)('p', { className: 'rhc-card__description', children: r }), i && (0, t.jsx)('p', { className: 'rhc-card__metadata', children: i }), p] }), u && (0, t.jsx)('div', { className: 'rhc-card__footer', children: (0, t.jsx)('div', { className: 'rhc-card__link', 'data-testid': 'rhc-card__link', children: (0, t.jsx)(l, { href: o, target: d, title: m, children: u }) }) })] }));
    u.displayName = 'Card';
   },
   63009(e, n, a) {
    a.d(n, { N: () => c });
    var t = a(15540),
-    i = a(69967),
-    r = a(86070),
+    r = a(69967),
+    i = a(86070),
     s = a(13526),
     l = a(30758),
     o = ['children', 'className', 'current', 'disabled', 'href', 'inlineBox'];
@@ -364,8 +393,8 @@
      c = e.disabled,
      u = e.href,
      m = e.inlineBox,
-     h = (0, i.A)(e, o);
-    return (0, r.jsx)('a', g(g({ 'aria-current': d || void 0, 'aria-disabled': c, className: (0, s.$)('nl-link', (0, t.A)((0, t.A)((0, t.A)({}, 'nl-link--current', d), 'nl-link--disabled', c), 'nl-link--inline-box', m), l), href: c ? void 0 : u, role: c ? 'link' : void 0, ref: n, tabIndex: c ? 0 : void 0 }, h), {}, { children: a }));
+     h = (0, r.A)(e, o);
+    return (0, i.jsx)('a', g(g({ 'aria-current': d || void 0, 'aria-disabled': c, className: (0, s.$)('nl-link', (0, t.A)((0, t.A)((0, t.A)({}, 'nl-link--current', d), 'nl-link--disabled', c), 'nl-link--inline-box', m), l), href: c ? void 0 : u, role: c ? 'link' : void 0, ref: n, tabIndex: c ? 0 : void 0 }, h), {}, { children: a }));
    });
    c.displayName = 'Link';
   },
@@ -376,65 +405,36 @@
   74172(e, n, a) {
    a.d(n, { A: () => s });
    var t = a(48907),
-    i = a(30758),
-    r = ['size', 'color'];
+    r = a(30758),
+    i = ['size', 'color'];
    function s(e) {
     var n = e.size,
      a = void 0 === n ? 24 : n,
      s = e.color,
      l = void 0 === s ? 'currentColor' : s,
-     o = (0, t.$i)(e, r);
-    return i.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-brand-figma', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), i.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), i.createElement('circle', { cx: '15', cy: '12', r: '3' }), i.createElement('rect', { x: '6', y: '3', width: '12', height: '6', rx: '3' }), i.createElement('path', { d: 'M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15' }));
-   }
-  },
-  78481(e, n, a) {
-   (a.r(n), a.d(n, { assets: () => g, component: () => f, componentName: () => p, contentTitle: () => d, default: () => v, description: () => u, frontMatter: () => o, issueNumber: () => m, metadata: () => t, relayStep: () => h, title: () => c, toc: () => x }));
-   const t = JSON.parse('{"id":"componenten/definition-list/index","title":"Description List","description":"Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.","source":"@site/docs/componenten/definition-list/index.mdx","sourceDirName":"componenten/definition-list","slug":"/description-list","permalink":"/description-list","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/definition-list/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Description List","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Description List","pagination_label":"Description List","description":"Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.","issue_number":92,"slug":"/description-list"},"sidebar":"componenten","previous":{"title":"Date Picker","permalink":"/date-picker"},"next":{"title":"Dialog","permalink":"/dialog"}}');
-   var i = a(86070),
-    r = a(18439),
-    s = a(79447),
-    l = a(26877);
-   const o = { title: 'Description List', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Description List', pagination_label: 'Description List', description: 'Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.', issue_number: 92, slug: '/description-list' },
-    d = void 0,
-    g = {},
-    c = 'Description List',
-    u = 'Toont een lijst aan termen en hun beschrijving, bijvoorbeeld een woordenlijst.',
-    m = 92,
-    h = 'help wanted',
-    p = 'definition-list',
-    f = s.find((e) => e.number === m),
-    x = [
-     { value: 'Definition of Done', id: 'definition-of-done', level: 2 },
-     { value: 'Community implementaties', id: 'community-implementaties', level: 2 },
-    ];
-   function b(e) {
-    const n = { h2: 'h2', ...(0, r.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', (0, i.jsx)(l.Fc, { component: f, headingLevel: 1, description: u }), '\n', (0, i.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, i.jsx)(l.VK, { component: f, headingLevel: 3 }), '\n', (0, i.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, i.jsx)(l.mu, { component: f, headingLevel: 3 }), '\n', (0, i.jsx)(l.K_, { component: f }), '\n', (0, i.jsx)(l.$9, { component: f, headingLevel: 2 })] });
-   }
-   function v(e = {}) {
-    const { wrapper: n } = { ...(0, r.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(b, { ...e }) }) : b(e);
+     o = (0, t.$i)(e, i);
+    return r.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-brand-figma', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), r.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), r.createElement('circle', { cx: '15', cy: '12', r: '3' }), r.createElement('rect', { x: '6', y: '3', width: '12', height: '6', rx: '3' }), r.createElement('path', { d: 'M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15' }));
    }
   },
   83386(e, n, a) {
    a.d(n, { A: () => s });
    var t = a(48907),
-    i = a(30758),
-    r = ['size', 'color'];
+    r = a(30758),
+    i = ['size', 'color'];
    function s(e) {
     var n = e.size,
      a = void 0 === n ? 24 : n,
      s = e.color,
      l = void 0 === s ? 'currentColor' : s,
-     o = (0, t.$i)(e, r);
-    return i.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-external-link', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), i.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), i.createElement('path', { d: 'M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5' }), i.createElement('line', { x1: '10', y1: '14', x2: '20', y2: '4' }), i.createElement('polyline', { points: '15 4 20 4 20 9' }));
+     o = (0, t.$i)(e, i);
+    return r.createElement('svg', (0, t._P)({ xmlns: 'http://www.w3.org/2000/svg', className: 'icon icon-tabler icon-tabler-external-link', width: a, height: a, viewBox: '0 0 24 24', stroke: l, strokeWidth: '2', fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' }, o), r.createElement('path', { stroke: 'none', d: 'M0 0h24v24H0z', fill: 'none' }), r.createElement('path', { d: 'M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5' }), r.createElement('line', { x1: '10', y1: '14', x2: '20', y2: '4' }), r.createElement('polyline', { points: '15 4 20 4 20 9' }));
    }
   },
   84471(e, n, a) {
-   a.d(n, { bo: () => i, KF: () => u, mJ: () => p, VZ: () => N, cR: () => w, Pv: () => f, qZ: () => s, kD: () => j, QQ: () => D, B2: () => m, Pc: () => o, f4: () => l, GT: () => k, fX: () => r, eQ: () => v, B_: () => b, o_: () => x });
+   a.d(n, { bo: () => r, KF: () => u, mJ: () => p, VZ: () => N, cR: () => w, Pv: () => f, qZ: () => s, kD: () => j, QQ: () => D, B2: () => m, Pc: () => o, f4: () => l, GT: () => k, fX: () => i, eQ: () => v, B_: () => b, o_: () => x });
    const t = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
-    i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
-    r = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
+    r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
+    i = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
     s = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
     l = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
     o = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
@@ -462,10 +462,10 @@
      return n.map((n) => {
       const t = e.tasks
        .filter(({ name: e, value: a }) => '' !== a && e.includes(n))
-       .map(({ name: t, id: i, value: r }) => {
+       .map(({ name: t, id: r, value: i }) => {
         const s = /^(.+) URL/.exec(t)[1],
          l = 'Storybook' === s ? `${a} (${n}) in Storybook van ${e.title}` : `${a} (${n}) op ${s}`;
-        return { brand: s.toLowerCase(), name: t, id: i, value: r, description: l };
+        return { brand: s.toLowerCase(), name: t, id: r, value: i, description: l };
        });
       return { frameworkName: n, tasks: t };
      });
@@ -504,12 +504,12 @@
   87856(e, n, a) {
    a.d(n, { D: () => l });
    var t = a(46447),
-    i = a(13526),
-    r = a(84471),
+    r = a(13526),
+    i = a(84471),
     s = a(86070);
    const l = ({ state: e }) => {
-    const n = (0, r.fX)(e);
-    return (0, s.jsx)(t.KE, { className: (0, i.A)('ma-estafette-badge', n && `ma-estafette-badge--${n}`), children: e });
+    const n = (0, i.fX)(e);
+    return (0, s.jsx)(t.KE, { className: (0, r.A)('ma-estafette-badge', n && `ma-estafette-badge--${n}`), children: e });
    };
   },
   96345(e, n, a) {
