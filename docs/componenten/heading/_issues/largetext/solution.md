@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Verwijder de kop-opmaak en maak de tekst op een andere manier op.
+Verander de kop in een gewone alinea, of maak de tekst op een andere manier op.
