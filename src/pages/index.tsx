@@ -22,7 +22,7 @@ import {
   ManagerSVG,
   GuidelineSVG,
   ComponentSVG,
-  ExamplesSVG,
+  TemplateSVG,
   UserResearchSVG,
 } from '@site/src/components/Icons';
 import { HeartbeatEpisode } from '../components/HeartbeatEpisode';
@@ -67,7 +67,7 @@ export default function Home() {
                 </UnorderedListItem>
               </UnorderedList>
               <ActionGroup>
-                <ButtonLink href="/handboek/estafettemodel/" appearance="primary-action-button">
+                <ButtonLink href="/introductie/estafettemodel/" appearance="primary-action-button">
                   Bekijk hoe het werkt
                 </ButtonLink>
                 <ButtonLink href="/community/sluit-je-aan/" appearance="secondary-action-button">
@@ -161,7 +161,7 @@ export default function Home() {
                 heading="Voorbeelden"
                 headingLevel={3}
                 href="/voorbeelden/"
-                image={<ExamplesSVG />}
+                image={<TemplateSVG />}
                 className="utrecht-card--ma-info"
               ></Card>
               <Card
@@ -262,7 +262,7 @@ export default function Home() {
                   body="Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL Design System."
                   heading="Nieuwsbrief"
                   headingLevel={3}
-                  href="/project/blijf-op-de-hoogte/#nieuwsbrief"
+                  href="/introductie/blijf-op-de-hoogte/#nieuwsbrief"
                 ></Card>
                 <Card
                   body="Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit te wisselen."

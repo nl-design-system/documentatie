@@ -9,11 +9,15 @@ const footer: Footer = {
     },
     {
       label: 'Contact',
-      to: '/project/kernteam',
+      to: '/introductie/contact/',
     },
     {
       label: 'Toegankelijkheid',
       to: '/toegankelijkheidsverklaring',
+    },
+    {
+      label: 'Klachten',
+      to: '/klachten',
     },
     {
       label: 'Privacyverklaring',

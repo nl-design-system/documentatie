@@ -1,0 +1,84 @@
+---
+title: Open source samenwerken
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Open source samenwerken
+sidebar_position: 4
+navigation_order: 4
+pagination_label: Open source samenwerken
+description: Overheidsorganisaties dragen elk eigen componenten bij aan één gedeeld design system. Het Estafettemodel brengt die bijdragen naar een gedragen standaard.
+keywords:
+  - estafettemodel
+  - federatief
+  - open source
+  - samenwerken
+  - community
+---
+
+import { StatusVisual } from "@site/src/components/StatusVisual";
+import { Paragraph } from "@components/paragraph/paragraph";
+import HulpSnippet from "@nl-design-system-unstable/documentation/_hulp.md";
+import { Markdown } from "@site/src/components/Markdown";
+import { RelayModel, RelaySection } from "@components/relay-model/relay-model";
+import HelpWantedMd from "@site/docs/introductie/_estafettemodel/_help-wanted.md";
+import CommunityMd from "@site/docs/introductie/_estafettemodel/_community.md";
+import CandidateMd from "@site/docs/introductie/_estafettemodel/_candidate.md";
+import HallOfFameMd from "@site/docs/introductie/_estafettemodel/_hall-of-fame.md";
+
+{/* @license CC0-1.0 */}
+
+# Open source samenwerken
+
+<Paragraph purpose="lead">
+  Het Estafettemodel is een door NL Design System ontwikkelde aanpak die samenwerken aan open source makkelijk maakt.
+</Paragraph>
+
+De community rondom NL Design System bestaat uit meer dan 900 specialisten van verschillende overheidsorganisaties en hun leveranciers. Samen werken zij toe naar een gezamenlijk design system, met ruimte voor innovatie en maatwerk.
+
+Daarbij is het belangrijk om niet steeds opnieuw te beginnen, maar elkaar ook niet te vertragen bij de ontwikkeling van nieuwe applicaties. Het Estafettemodel maakt dat mogelijk.
+
+## Estafettemodel
+
+<RelayModel>
+  <RelaySection relayLevel="help-wanted" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <HelpWantedMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="community" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <CommunityMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="candidate" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <CandidateMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="hall-of-fame" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <HallOfFameMd />
+    </Markdown>
+  </RelaySection>
+</RelayModel>
+
+## Investeren wanneer het nodig is
+
+Een nieuw onderdeel begint bijna altijd bij één organisatie met een concrete vraag voor de eigen website of applicatie. Andere organisaties gebruiken dat bouwblok, lopen tegen nieuwe situaties aan en verbeteren het.
+
+Bij elke stap wegen gebruikersonderzoek, toegankelijkheid en bruikbaarheid binnen verschillende organisaties mee. Oplossingen die zich in de praktijk bewijzen, groeien zo uit tot breed inzetbare bouwblokken voor digitale dienstverlening.
+
+Het resultaat: minder dubbel werk, meer samenwerking en digitale diensten die voor gebruikers herkenbaarder, toegankelijker en eenvoudiger te gebruiken zijn.
+
+## Zekerheden bij elk onderdeel
+
+Doordat elk onderdeel deze stappen doorloopt, weet een organisatie die het overneemt waar zij op kan rekenen:
+
+- **Goed onderzocht**: gebruikersonderzoek vormt de basis voor de richtlijnen, componenten en patronen.
+- **Publiek beschikbaar**: alle code en documentatie staat online onder een open source licentie, waardoor iedereen kan meekijken en meedoen.
+- **Samen ontwikkeld**: een actieve community bouwt de oplossingen en gebruikt ze zelf.
+- **Breed gedragen**: bouwblokken zijn bij meerdere organisaties in gebruik en daarmee op veel verschillende situaties getest.
+
+<Markdown headingLevel={2}>
+  <HulpSnippet />
+</Markdown>

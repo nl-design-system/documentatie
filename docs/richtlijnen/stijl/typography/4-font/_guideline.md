@@ -174,4 +174,4 @@ Enkele Open Source lettertypes die voldoen aan de richtlijnen.
 - [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)
 - [Work Sans](https://fonts.google.com/specimen/Work+Sans)
 
-Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](/project/kernteam) dan vullen we de lijst verder aan.
+Ken jij een Open Source lettertype dat voldoet aan de richtlijnen? [Neem contact op met het kernteam](/introductie/contact/) dan vullen we de lijst verder aan.
