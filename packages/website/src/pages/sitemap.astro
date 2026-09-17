@@ -5,8 +5,9 @@ import CenterColumnLayout from '@layouts/center-column.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import '@nl-design-system-candidate/link-css/link.css';
+import { Paragraph } from '@components/paragraph/paragraph';
 
-const { navigationTree } = (await navigation)();
+const { navigationTree, navigationList } = (await navigation)();
 ---
 
 <CenterColumnLayout
@@ -17,6 +18,7 @@ const { navigationTree } = (await navigation)();
   <Grid>
     <Grid.Cell span="all" className="ma-flow">
       <Heading level={1}>Sitemap</Heading>
+      <Paragraph>In totaal heeft de website {navigationList.length} pagina's</Paragraph>
       {navigationTree.items.map((navigationGroup) => <SitemapList navigationGroup={navigationGroup} />)}
     </Grid.Cell>
   </Grid>
