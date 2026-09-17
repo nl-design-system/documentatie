@@ -170,239 +170,6 @@
    const c = { figma: (0, d.jsx)(r.A, {}), github: (0, d.jsx)(s.A, {}), npm: (0, d.jsx)(i.A, {}), storybook: (0, d.jsx)(o.A, {}) },
     g = ({ brand: e }) => (0, d.jsx)(a.In, { children: c[e] || (0, d.jsx)(l.A, {}) });
   },
-  9999(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => Te, component: () => Ge, contentTitle: () => ye, default: () => Fe, description: () => Re, frontMatter: () => Ae, issueNumber: () => De, metadata: () => a, title: () => Ce, toc: () => Ne }));
-   const a = JSON.parse('{"id":"componenten/paragraph/index","title":"Paragraph","description":"Toont een alinea aan tekst.","source":"@site/docs/componenten/paragraph/index.mdx","sourceDirName":"componenten/paragraph","slug":"/paragraph","permalink":"/paragraph","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/paragraph/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Paragraph","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Paragraph","pagination_label":"Paragraph","description":"Toont een alinea aan tekst.","issue_number":115,"slug":"/paragraph","keywords":["alinea","body","body copy","body text","bodytekst","broodtekst","content block","content blok","copy","gewone tekst","hoofdalinea","inleidende alinea","inleiding","introductory","lead","lead paragraph","lead text","paragraaf","paragraph","regular text","rich text","rte","sentence","tekst","tekst-item","tekstblok","text","text block","text block","text element","zin"]},"sidebar":"componenten","previous":{"title":"Page Number Navigation","permalink":"/page-number-navigation"},"next":{"title":"Password Input","permalink":"/password-input"}}');
-   var r = t(86070),
-    s = t(18439),
-    i = t(79447),
-    o = t(13839),
-    l = t(37674),
-    d = t(78134);
-   t(54401);
-   function c(e) {
-    const n = { code: 'code', p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsxs)(n.p, { children: ['Zorg dat een alinea in een paragraaf-element staat. Gebruik geen ', (0, r.jsx)(n.code, { children: '<div>' }), ' of ', (0, r.jsx)(n.code, { children: '<span>' }), ' voor op zichzelf staande teksten.\nZelfs als geen CSS geladen kan worden, blijft de tekst dan duidelijk weergegeven.'] });
-   }
-   var g = t(76306),
-    u = t(54672),
-    m = t(37166),
-    p = t(53971),
-    h = t(37888),
-    j = t(61629),
-    x = t(33201),
-    f = t(61962),
-    w = t(24908);
-   const k = [
-     { title: 'De contrastverhouding van de tekstkleur van de paragraaf met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: m.Ay, tags: ['designer', 'contentmaker'] },
-     { title: 'Als een paragraaftekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: h.Ay, tags: ['developer', 'contentmaker'] },
-     { title: 'Als je de hele webpagina inzoomt tot 400% blijft de paragraaftekst leesbaar.', sc: '1.4.10', status: '', component: g.Ay, tags: ['developer'] },
-     { title: 'De Paragraph is niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: j.Ay, tags: ['developer'] },
-     { title: 'De Paragraph komt niet voor in de normale focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: w.Ay, tags: ['developer'] },
-    ],
-    b = [
-     {
-      title: 'Gebruik het p-element voor paragraaftekst.',
-      sc: '1.3.1',
-      status: '',
-      component: function (e = {}) {
-       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(c, { ...e }) }) : c(e);
-      },
-      tags: ['developer'],
-     },
-     { title: 'Als je de paragraaftekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: p.Ay, tags: ['developer'] },
-     { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: u.Ay, tags: ['developer'] },
-     { title: 'De Paragraph is standaard niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: x.Ay, tags: ['developer'] },
-     { title: 'De Paragraph komt standaard niet voor in de focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: f.Ay, tags: ['developer'] },
-    ],
-    v = JSON.parse('{"D":"De tekst heeft een te laag contrast"}');
-   function A(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'De tekst is niet goed leesbaar omdat de kleur van de tekst te weinig contrasteert met de kleur van de achtergrond. Mensen die kleurenblind of slechtziend zijn kunnen de tekst hierdoor niet goed lezen.' });
-   }
-   function y(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(A, { ...e }) }) : A(e);
-   }
-   function T(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Pas de kleur van de tekst of achtergrond aan, zodat de contrastratio tenminste 4,5:1 is.' });
-   }
-   function C(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(T, { ...e }) }) : T(e);
-   }
-   const R = JSON.parse('{"D":"Paragraph heeft geen inhoud"}');
-   function D(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Er is een Paragraph-component zonder inhoud.' });
-   }
-   function G(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(D, { ...e }) }) : D(e);
-   }
-   function N(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Verwijder de lege Paragraph.' });
-   }
-   function S(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(N, { ...e }) }) : N(e);
-   }
-   const F = JSON.parse('{"D":"Tekst heeft een andere taal dan de taal die is aangegeven"}');
-   function L(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'De tekst heeft een andere taal dan de tekst er omheen, maar dat is niet aangegeven. Een screenreader leest de tekst daarom niet voor in de taal van de tekst.' });
-   }
-   function z(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(L, { ...e }) }) : L(e);
-   }
-   function P(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Geef aan welke taal dit stuk tekst heeft.' });
-   }
-   function W(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(P, { ...e }) }) : P(e);
-   }
-   const H = JSON.parse('{"D":"Meerdere alinea\'s in \xe9\xe9n Paragraph"}');
-   function _(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: "De Paragraph bevat meerdere alinea's die zijn gescheiden met witregels. Hierdoor is er in code geen onderscheid tussen de alinea's. Een screenreader mist daardoor natuurlijke pauze-momenten in de tekst tijdens het voorlezen. Daarnaast kan een screenreadergebruiker niet met een sneltoets naar de volgende paragraaf gaan, omdat de teksten niet zijn opgemaakt met losse Paragraphs." });
-   }
-   function B(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(_, { ...e }) }) : _(e);
-   }
-   function O(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Plaats elke alinea in een eigen Paragraph.' });
-   }
-   function I(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(O, { ...e }) }) : O(e);
-   }
-   const M = JSON.parse('{"D":"Hele tekst in Paragraph is dikgedrukt"}');
-   function E(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'De hele alinea is dikgedrukt. Hierdoor krijgt de tekst in code een andere betekenis, namelijk dat de tekst belangrijker is dan tekst die niet dikgedrukt is.' });
-   }
-   function V(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(E, { ...e }) }) : E(e);
-   }
-   function $(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Gebruik de optie om tekst dikgedrukt te maken alleen voor de woorden of zinnen die extra aandacht nodig hebben.' });
-   }
-   function Z(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)($, { ...e }) }) : $(e);
-   }
-   function U(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Wil je een kop toevoegen boven een sectie? Gebruik dan een Heading van het juiste niveau.' });
-   }
-   function J(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(U, { ...e }) }) : U(e);
-   }
-   function K(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Wil je de hele alinea een ander design geven omdat het de introductietekst is? Gebruik dan de Lead Paragraph variant.' });
-   }
-   function X(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(K, { ...e }) }) : K(e);
-   }
-   const q = JSON.parse('{"D":"Hele paragraaf is schuingedrukt"}');
-   function Q(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'De hele alinea is schuingedrukt. Hierdoor krijgt de tekst in code een andere betekenis, namelijk dat de tekst extra nadruk nodig heeft.' });
-   }
-   function Y(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(Q, { ...e }) }) : Q(e);
-   }
-   function ee(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Gebruik de optie om tekst schuingedrukt te maken alleen voor de belangrijkste woorden of zinnen die extra aandacht moeten krijgen.' });
-   }
-   function ne(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(ee, { ...e }) }) : ee(e);
-   }
-   function te(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Wil je de hele alinea anders stylen omdat het de introductie van de pagina is? Gebruik dan de Lead Paragraph variant.' });
-   }
-   function ae(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(te, { ...e }) }) : te(e);
-   }
-   function re(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Wil je de hele alinea anders vormgeven omdat de tekst een citaat is? Verwijder dan de schuingedrukte opmaak in de alinea en plaats de tekst ook boven of onder de Paragraph in een Pull Quote.' });
-   }
-   function se(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(re, { ...e }) }) : re(e);
-   }
-   const ie = JSON.parse('{"D":"Tekst in de Paragraph is onderstreept"}');
-   function oe(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'De tekst is onderstreept, maar geen link. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.' });
-   }
-   function le(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(oe, { ...e }) }) : oe(e);
-   }
-   function de(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsx)(n.p, { children: 'Benadruk tekst op een andere manier, bijvoorbeeld door de tekst dik- of schuingedrukt te maken.' });
-   }
-   function ce(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(de, { ...e }) }) : de(e);
-   }
-   var ge = t(26165),
-    ue = t(45009),
-    me = t(29857),
-    pe = t(3446),
-    he = t(56323),
-    je = t(26877),
-    xe = t(1866),
-    fe = t(48068),
-    we = t(24703);
-   function ke(e) {
-    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.header, { children: (0, r.jsx)(n.h1, { id: 'gebruik-paragraph', children: 'Gebruik Paragraph' }) }), '\n', (0, r.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, r.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, r.jsx)(n.p, { children: (0, r.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: '@nl-design-system-candidate/paragraph-css' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik de ', (0, r.jsx)(n.code, { children: 'nl-paragraph' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'p' }), ' element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<p class="nl-paragraph">Op brute w\u0133ze ving de schooljuf de quasi-kalme lynx.</p>\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Voor de Lead Paragraph gebruik je de extra class name ', (0, r.jsx)(n.code, { children: 'nl-paragraph--lead' }), ':'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<p class="nl-paragraph nl-paragraph--lead">\n  Op brute w\u0133ze ving de schooljuf de quasi-kalme lynx. Je gelooft nooit wat er toen gebeurde!\n</p>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/paragraph-css\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/paragraph-css@2/dist/paragraph.css"\n/>\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, r.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/paragraph-css/dist/paragraph.css" />\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/paragraph-css/paragraph.css";\n' }) }), '\n', (0, r.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, r.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, r.jsx)(n.p, { children: (0, r.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: '@nl-design-system-candidate/paragraph-react' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/paragraph-react\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-jsx', children: 'import { Paragraph } from "@nl-design-system-candidate/paragraph-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <Paragraph>Op brute w\u0133ze ving de schooljuf de quasi-kalme lynx.</Paragraph>\n      </body>\n    </html>\n  );\n};\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'De Lead Paragraph werkt zo:' }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-jsx', children: '<Paragraph purpose="lead">Op brute w\u0133ze ving de schooljuf de quasi-kalme lynx.</Paragraph>\n' }) })] });
-   }
-   function be(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(ke, { ...e }) }) : ke(e);
-   }
-   var ve = t(41467);
-   const Ae = { title: 'Paragraph', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Paragraph', pagination_label: 'Paragraph', description: 'Toont een alinea aan tekst.', issue_number: 115, slug: '/paragraph', keywords: ['alinea', 'body', 'body copy', 'body text', 'bodytekst', 'broodtekst', 'content block', 'content blok', 'copy', 'gewone tekst', 'hoofdalinea', 'inleidende alinea', 'inleiding', 'introductory', 'lead', 'lead paragraph', 'lead text', 'paragraaf', 'paragraph', 'regular text', 'rich text', 'rte', 'sentence', 'tekst', 'tekst-item', 'tekstblok', 'text', 'text block', 'text block', 'text element', 'zin'] },
-    ye = void 0,
-    Te = {},
-    Ce = 'Paragraph',
-    Re = 'De paragraph gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.',
-    De = 115,
-    Ge = i.find((e) => e.number === De),
-    Ne = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...o.RM, { value: 'Veel gemaakte fouten bij het inzetten van Paragraph', id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', level: 2 }, { value: 'Oplossing', id: 'oplossing', level: 4 }, { value: 'Oplossing', id: 'oplossing-1', level: 4 }, { value: 'Oplossing', id: 'oplossing-2', level: 4 }, { value: 'Oplossing', id: 'oplossing-3', level: 4 }, { value: 'Oplossing', id: 'oplossing-4', level: 4 }, { value: 'Oplossing', id: 'oplossing-5', level: 4 }, { value: 'Oplossing', id: 'oplossing-6', level: 4 }, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function Se(e) {
-    const n = { h2: 'h2', h3: 'h3', h4: 'h4', p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(je.Fc, { component: Ge, headingLevel: 1, description: Re }), '\n', (0, r.jsx)(he.e, { component: Ge }), '\n', (0, r.jsx)(ge.Zp, { className: 'ma-implementation-card', children: (0, r.jsxs)(ge.Wu, { children: [(0, r.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, r.jsxs)(ue.d, { children: [(0, r.jsxs)(ue.P, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, r.jsx)(pe.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, r.jsxs)(ue.P, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, r.jsx)(pe.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, r.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, r.jsxs)(ue.d, { children: [(0, r.jsxs)(ue.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie', children: [(0, r.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, r.jsxs)(ue.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/paragraph--documentatie', children: [(0, r.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, r.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'npm' }), (0, r.jsxs)(ue.d, { children: [(0, r.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-css'] }), (0, r.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-react'] }), (0, r.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-tokens', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-tokens'] })] })] }) }), '\n', (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, r.jsx)(d.Ay, {}), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, r.jsx)(l.Ay, {}), '\n', (0, r.jsx)(xe.b, { headingLevel: '4', children: k.map(({ component: e, ...n }) => (0, r.jsx)(xe.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, r.jsx)(o.Ay, {}), '\n', (0, r.jsx)(xe.b, { headingLevel: '4', children: b.map(({ component: e, ...n }) => (0, r.jsx)(xe.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h2, { id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', children: 'Veel gemaakte fouten bij het inzetten van Paragraph' }), '\n', (0, r.jsx)(n.p, { children: 'Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.' }), '\n', (0, r.jsx)(me.DZ, { level: 3, children: v.D }), '\n', (0, r.jsx)(y, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing', children: 'Oplossing' }), '\n', (0, r.jsx)(C, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: R.D }), '\n', (0, r.jsx)(G, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-1', children: 'Oplossing' }), '\n', (0, r.jsx)(S, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: F.D }), '\n', (0, r.jsx)(z, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-2', children: 'Oplossing' }), '\n', (0, r.jsx)(W, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: H.D }), '\n', (0, r.jsx)(B, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-3', children: 'Oplossing' }), '\n', (0, r.jsx)(I, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: M.D }), '\n', (0, r.jsx)(V, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-4', children: 'Oplossing' }), '\n', (0, r.jsx)(Z, {}), '\n', (0, r.jsx)(J, {}), '\n', (0, r.jsx)(X, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: q.D }), '\n', (0, r.jsx)(Y, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-5', children: 'Oplossing' }), '\n', (0, r.jsx)(ne, {}), '\n', (0, r.jsx)(ae, {}), '\n', (0, r.jsx)(se, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: ie.D }), '\n', (0, r.jsx)(le, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-6', children: 'Oplossing' }), '\n', (0, r.jsx)(ce, {}), '\n', (0, r.jsx)(we.o, { omitH1: !0, headingLevel: 2, children: (0, r.jsx)(be, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, r.jsx)(fe.B, { tokens: ve }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(je.VK, { component: Ge, headingLevel: 3 }), '\n', (0, r.jsx)(je.$9, { component: Ge, headingLevel: 2 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(je.mu, { component: Ge, headingLevel: 3 }), '\n', (0, r.jsx)(je.K_, { component: Ge })] });
-   }
-   function Fe(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(Se, { ...e }) }) : Se(e);
-   }
-  },
   12086(e, n, t) {
    'use strict';
    t.d(n, { NO: () => s, pI: () => i });
@@ -782,6 +549,239 @@
    function i(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  40105(e, n, t) {
+   'use strict';
+   (t.r(n), t.d(n, { assets: () => Te, component: () => Ge, contentTitle: () => ye, default: () => Fe, description: () => Re, frontMatter: () => Ae, issueNumber: () => De, metadata: () => a, title: () => Ce, toc: () => Ne }));
+   const a = JSON.parse('{"id":"componenten/paragraph/index","title":"Paragraph","description":"Toont een alinea aan tekst.","source":"@site/docs/componenten/paragraph/index.mdx","sourceDirName":"componenten/paragraph","slug":"/paragraph","permalink":"/paragraph","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/paragraph/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Paragraph","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Paragraph","pagination_label":"Paragraph","description":"Toont een alinea aan tekst.","issue_number":115,"slug":"/paragraph","keywords":["alinea","body","body copy","body text","bodytekst","broodtekst","content block","content blok","copy","gewone tekst","hoofdalinea","inleidende alinea","inleiding","introductory","lead","lead paragraph","lead text","paragraaf","paragraph","regular text","rich text","rte","sentence","tekst","tekst-item","tekstblok","text","text block","text block","text element","zin"]},"sidebar":"componenten","previous":{"title":"Page Number Navigation","permalink":"/page-number-navigation"},"next":{"title":"Password Input","permalink":"/password-input"}}');
+   var r = t(86070),
+    s = t(18439),
+    i = t(79447),
+    o = t(13839),
+    l = t(37674),
+    d = t(78134);
+   t(54401);
+   function c(e) {
+    const n = { code: 'code', p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsxs)(n.p, { children: ['Zorg dat een alinea in een paragraaf-element staat. Gebruik geen ', (0, r.jsx)(n.code, { children: '<div>' }), ' of ', (0, r.jsx)(n.code, { children: '<span>' }), ' voor op zichzelf staande teksten.\nZelfs als geen CSS geladen kan worden, blijft de tekst dan duidelijk weergegeven.'] });
+   }
+   var g = t(76306),
+    u = t(54672),
+    m = t(37166),
+    p = t(53971),
+    h = t(37888),
+    j = t(61629),
+    x = t(33201),
+    f = t(61962),
+    w = t(24908);
+   const k = [
+     { title: 'De contrastverhouding van de tekstkleur van de paragraaf met de achtergrondkleur is hoog genoeg.', sc: '1.4.3', status: '', component: m.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'Als een paragraaftekst in een andere taal is dan de taal van de pagina, dan heeft het element een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: h.Ay, tags: ['developer', 'contentmaker'] },
+     { title: 'Als je de hele webpagina inzoomt tot 400% blijft de paragraaftekst leesbaar.', sc: '1.4.10', status: '', component: g.Ay, tags: ['developer'] },
+     { title: 'De Paragraph is niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: j.Ay, tags: ['developer'] },
+     { title: 'De Paragraph komt niet voor in de normale focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: w.Ay, tags: ['developer'] },
+    ],
+    b = [
+     {
+      title: 'Gebruik het p-element voor paragraaftekst.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(c, { ...e }) }) : c(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'Als je de paragraaftekst vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: p.Ay, tags: ['developer'] },
+     { title: 'Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar.', sc: '1.4.12', status: '', component: u.Ay, tags: ['developer'] },
+     { title: 'De Paragraph is standaard niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: x.Ay, tags: ['developer'] },
+     { title: 'De Paragraph komt standaard niet voor in de focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: f.Ay, tags: ['developer'] },
+    ],
+    v = JSON.parse('{"D":"De tekst heeft een te laag contrast"}');
+   function A(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'De tekst is niet goed leesbaar omdat de kleur van de tekst te weinig contrasteert met de kleur van de achtergrond. Mensen die kleurenblind of slechtziend zijn kunnen de tekst hierdoor niet goed lezen.' });
+   }
+   function y(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(A, { ...e }) }) : A(e);
+   }
+   function T(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Pas de kleur van de tekst of achtergrond aan, zodat de contrastratio tenminste 4,5:1 is.' });
+   }
+   function C(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(T, { ...e }) }) : T(e);
+   }
+   const R = JSON.parse('{"D":"Paragraph heeft geen inhoud"}');
+   function D(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Er is een Paragraph-component zonder inhoud.' });
+   }
+   function G(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(D, { ...e }) }) : D(e);
+   }
+   function N(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Verwijder de lege Paragraph.' });
+   }
+   function S(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(N, { ...e }) }) : N(e);
+   }
+   const F = JSON.parse('{"D":"Tekst heeft een andere taal dan de taal die is aangegeven"}');
+   function L(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'De tekst heeft een andere taal dan de tekst er omheen, maar dat is niet aangegeven. Een screenreader leest de tekst daarom niet voor in de taal van de tekst.' });
+   }
+   function z(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(L, { ...e }) }) : L(e);
+   }
+   function P(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Geef aan welke taal dit stuk tekst heeft.' });
+   }
+   function W(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(P, { ...e }) }) : P(e);
+   }
+   const H = JSON.parse('{"D":"Meerdere alinea\'s in \xe9\xe9n Paragraph"}');
+   function _(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: "De Paragraph bevat meerdere alinea's die zijn gescheiden met witregels. Hierdoor is er in code geen onderscheid tussen de alinea's. Een screenreader mist daardoor natuurlijke pauze-momenten in de tekst tijdens het voorlezen. Daarnaast kan een screenreadergebruiker niet met een sneltoets naar de volgende paragraaf gaan, omdat de teksten niet zijn opgemaakt met losse Paragraphs." });
+   }
+   function B(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(_, { ...e }) }) : _(e);
+   }
+   function O(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Plaats elke alinea in een eigen Paragraph.' });
+   }
+   function I(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(O, { ...e }) }) : O(e);
+   }
+   const M = JSON.parse('{"D":"Hele tekst in Paragraph is dikgedrukt"}');
+   function E(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'De hele alinea is dikgedrukt. Hierdoor krijgt de tekst in code een andere betekenis, namelijk dat de tekst belangrijker is dan tekst die niet dikgedrukt is.' });
+   }
+   function V(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(E, { ...e }) }) : E(e);
+   }
+   function $(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Gebruik de optie om tekst dikgedrukt te maken alleen voor de woorden of zinnen die extra aandacht nodig hebben.' });
+   }
+   function Z(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)($, { ...e }) }) : $(e);
+   }
+   function U(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Wil je een kop toevoegen boven een sectie? Gebruik dan een Heading van het juiste niveau.' });
+   }
+   function J(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(U, { ...e }) }) : U(e);
+   }
+   function K(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Wil je de hele alinea een ander design geven omdat het de introductietekst is? Gebruik dan de Lead Paragraph variant.' });
+   }
+   function X(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(K, { ...e }) }) : K(e);
+   }
+   const q = JSON.parse('{"D":"Hele paragraaf is schuingedrukt"}');
+   function Q(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'De hele alinea is schuingedrukt. Hierdoor krijgt de tekst in code een andere betekenis, namelijk dat de tekst extra nadruk nodig heeft.' });
+   }
+   function Y(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(Q, { ...e }) }) : Q(e);
+   }
+   function ee(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Gebruik de optie om tekst schuingedrukt te maken alleen voor de belangrijkste woorden of zinnen die extra aandacht moeten krijgen.' });
+   }
+   function ne(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(ee, { ...e }) }) : ee(e);
+   }
+   function te(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Wil je de hele alinea anders stylen omdat het de introductie van de pagina is? Gebruik dan de Lead Paragraph variant.' });
+   }
+   function ae(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(te, { ...e }) }) : te(e);
+   }
+   function re(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Wil je de hele alinea anders vormgeven omdat de tekst een citaat is? Verwijder dan de schuingedrukte opmaak in de alinea en plaats de tekst ook boven of onder de Paragraph in een Pull Quote.' });
+   }
+   function se(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(re, { ...e }) }) : re(e);
+   }
+   const ie = JSON.parse('{"D":"Tekst in de Paragraph is onderstreept"}');
+   function oe(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'De tekst is onderstreept, maar geen link. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.' });
+   }
+   function le(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(oe, { ...e }) }) : oe(e);
+   }
+   function de(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsx)(n.p, { children: 'Benadruk tekst op een andere manier, bijvoorbeeld door de tekst dik- of schuingedrukt te maken.' });
+   }
+   function ce(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(de, { ...e }) }) : de(e);
+   }
+   var ge = t(26165),
+    ue = t(45009),
+    me = t(29857),
+    pe = t(3446),
+    he = t(56323),
+    je = t(26877),
+    xe = t(1866),
+    fe = t(48068),
+    we = t(24703);
+   function ke(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.header, { children: (0, r.jsx)(n.h1, { id: 'gebruik-paragraph', children: 'Gebruik Paragraph' }) }), '\n', (0, r.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, r.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, r.jsx)(n.p, { children: (0, r.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: '@nl-design-system-candidate/paragraph-css' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik de ', (0, r.jsx)(n.code, { children: 'nl-paragraph' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'p' }), ' element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<p class="nl-paragraph">Op brute w\u0133ze ving de schooljuf de quasi-kalme lynx.</p>\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Voor de Lead Paragraph gebruik je de extra class name ', (0, r.jsx)(n.code, { children: 'nl-paragraph--lead' }), ':'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<p class="nl-paragraph nl-paragraph--lead">\n  Op brute w\u0133ze ving de schooljuf de quasi-kalme lynx. Je gelooft nooit wat er toen gebeurde!\n</p>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/paragraph-css\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/paragraph-css@2/dist/paragraph.css"\n/>\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, r.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link rel="stylesheet" href="node_modules/@nl-design-system-candidate/paragraph-css/dist/paragraph.css" />\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/paragraph-css/paragraph.css";\n' }) }), '\n', (0, r.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, r.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, r.jsx)(n.p, { children: (0, r.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: '@nl-design-system-candidate/paragraph-react' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/paragraph-react\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-jsx', children: 'import { Paragraph } from "@nl-design-system-candidate/paragraph-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <Paragraph>Op brute w\u0133ze ving de schooljuf de quasi-kalme lynx.</Paragraph>\n      </body>\n    </html>\n  );\n};\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'De Lead Paragraph werkt zo:' }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-jsx', children: '<Paragraph purpose="lead">Op brute w\u0133ze ving de schooljuf de quasi-kalme lynx.</Paragraph>\n' }) })] });
+   }
+   function be(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(ke, { ...e }) }) : ke(e);
+   }
+   var ve = t(41467);
+   const Ae = { title: 'Paragraph', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Paragraph', pagination_label: 'Paragraph', description: 'Toont een alinea aan tekst.', issue_number: 115, slug: '/paragraph', keywords: ['alinea', 'body', 'body copy', 'body text', 'bodytekst', 'broodtekst', 'content block', 'content blok', 'copy', 'gewone tekst', 'hoofdalinea', 'inleidende alinea', 'inleiding', 'introductory', 'lead', 'lead paragraph', 'lead text', 'paragraaf', 'paragraph', 'regular text', 'rich text', 'rte', 'sentence', 'tekst', 'tekst-item', 'tekstblok', 'text', 'text block', 'text block', 'text element', 'zin'] },
+    ye = void 0,
+    Te = {},
+    Ce = 'Paragraph',
+    Re = 'De paragraph gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.',
+    De = 115,
+    Ge = i.find((e) => e.number === De),
+    Ne = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...o.RM, { value: 'Veel gemaakte fouten bij het inzetten van Paragraph', id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', level: 2 }, { value: 'Oplossing', id: 'oplossing', level: 4 }, { value: 'Oplossing', id: 'oplossing-1', level: 4 }, { value: 'Oplossing', id: 'oplossing-2', level: 4 }, { value: 'Oplossing', id: 'oplossing-3', level: 4 }, { value: 'Oplossing', id: 'oplossing-4', level: 4 }, { value: 'Oplossing', id: 'oplossing-5', level: 4 }, { value: 'Oplossing', id: 'oplossing-6', level: 4 }, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function Se(e) {
+    const n = { h2: 'h2', h3: 'h3', h4: 'h4', p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(je.Fc, { component: Ge, headingLevel: 1, description: Re }), '\n', (0, r.jsx)(he.e, { component: Ge }), '\n', (0, r.jsx)(ge.Zp, { className: 'ma-implementation-card', children: (0, r.jsxs)(ge.Wu, { children: [(0, r.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, r.jsxs)(ue.d, { children: [(0, r.jsxs)(ue.P, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, r.jsx)(pe.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, r.jsxs)(ue.P, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, r.jsx)(pe.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, r.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, r.jsxs)(ue.d, { children: [(0, r.jsxs)(ue.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie', children: [(0, r.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, r.jsxs)(ue.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/paragraph--documentatie', children: [(0, r.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, r.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'npm' }), (0, r.jsxs)(ue.d, { children: [(0, r.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-css'] }), (0, r.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-react'] }), (0, r.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-tokens', children: [(0, r.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-tokens'] })] })] }) }), '\n', (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, r.jsx)(d.Ay, {}), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, r.jsx)(l.Ay, {}), '\n', (0, r.jsx)(xe.b, { headingLevel: '4', children: k.map(({ component: e, ...n }) => (0, r.jsx)(xe.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, r.jsx)(o.Ay, {}), '\n', (0, r.jsx)(xe.b, { headingLevel: '4', children: b.map(({ component: e, ...n }) => (0, r.jsx)(xe.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h2, { id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', children: 'Veel gemaakte fouten bij het inzetten van Paragraph' }), '\n', (0, r.jsx)(n.p, { children: 'Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.' }), '\n', (0, r.jsx)(me.DZ, { level: 3, children: v.D }), '\n', (0, r.jsx)(y, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing', children: 'Oplossing' }), '\n', (0, r.jsx)(C, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: R.D }), '\n', (0, r.jsx)(G, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-1', children: 'Oplossing' }), '\n', (0, r.jsx)(S, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: F.D }), '\n', (0, r.jsx)(z, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-2', children: 'Oplossing' }), '\n', (0, r.jsx)(W, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: H.D }), '\n', (0, r.jsx)(B, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-3', children: 'Oplossing' }), '\n', (0, r.jsx)(I, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: M.D }), '\n', (0, r.jsx)(V, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-4', children: 'Oplossing' }), '\n', (0, r.jsx)(Z, {}), '\n', (0, r.jsx)(J, {}), '\n', (0, r.jsx)(X, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: q.D }), '\n', (0, r.jsx)(Y, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-5', children: 'Oplossing' }), '\n', (0, r.jsx)(ne, {}), '\n', (0, r.jsx)(ae, {}), '\n', (0, r.jsx)(se, {}), '\n', (0, r.jsx)(me.DZ, { level: 3, children: ie.D }), '\n', (0, r.jsx)(le, {}), '\n', (0, r.jsx)(n.h4, { id: 'oplossing-6', children: 'Oplossing' }), '\n', (0, r.jsx)(ce, {}), '\n', (0, r.jsx)(we.o, { omitH1: !0, headingLevel: 2, children: (0, r.jsx)(be, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, r.jsx)(fe.B, { tokens: ve }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(je.VK, { component: Ge, headingLevel: 3 }), '\n', (0, r.jsx)(je.$9, { component: Ge, headingLevel: 2 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(je.mu, { component: Ge, headingLevel: 3 }), '\n', (0, r.jsx)(je.K_, { component: Ge })] });
+   }
+   function Fe(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(Se, { ...e }) }) : Se(e);
    }
   },
   45009(e, n, t) {

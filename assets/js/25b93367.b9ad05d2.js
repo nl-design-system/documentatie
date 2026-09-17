@@ -582,7 +582,222 @@
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
    }
   },
-  41703(e, n, t) {
+  45009(e, n, t) {
+   'use strict';
+   t.d(n, { P: () => i.Pt, d: () => i.dk });
+   var i = t(29181);
+  },
+  46102(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => a });
+   var i = t(86070),
+    s = t(18439);
+   function r(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Als de inhoud van de link niet uit tekst bestaat, maar uit bijvoorbeeld een icoon of logo dan moet het aanklikbare gedeelte goed te onderscheiden zijn. Het contrast tussen een icoon, of kader rond een logo, en de achtergrond moet minimaal 3:1 zijn. Dit is te controleren met de ', (0, i.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
+   }
+   function a(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
+   }
+  },
+  46276(e, n, t) {
+   'use strict';
+   t.d(n, { p: () => r });
+   var i = t(13526),
+    s = t(86070);
+   const r = ({ children: e, className: n, level: t = 1, suffix: r, ...a }) => (0, s.jsxs)('hgroup', { className: (0, i.A)('nlds-inline-heading-group', `utrecht-heading-${t}`, n), ...a, children: [(0, s.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: e }), r && (0, s.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [r ? ' ' : '', r] })] });
+  },
+  46847(e, n, t) {
+   'use strict';
+   t.d(n, { $: () => i.$n });
+   var i = t(50805);
+  },
+  48068(e, n, t) {
+   'use strict';
+   t.d(n, { B: () => C });
+   var i = t(96547),
+    s = t(38295),
+    r = t(84471),
+    a = t(46447),
+    o = t(30758),
+    l = t(4603),
+    d = t(29181),
+    c = t(86070);
+   function g({ children: e, content: n }) {
+    const [t, i] = (0, o.useState)(!1);
+    return (
+     (0, o.useEffect)(() => {
+      'clipboard' in navigator && i(!0);
+     }, []),
+     (0, c.jsx)(c.Fragment, {
+      children:
+       t &&
+       (0, c.jsxs)(a.$n, {
+        type: 'button',
+        appearance: 'secondary-action-button',
+        onClick: async function () {
+         try {
+          await navigator.clipboard.writeText(n);
+         } catch (e) {
+          console.error(e);
+         }
+        },
+        children: [e, (0, c.jsx)(d.In, { children: (0, c.jsx)(l.A, {}) })],
+       }),
+     })
+    );
+   }
+   var u = t(43864),
+    m = t(35193),
+    h = t(82999),
+    p = t(13088),
+    j = t(91525),
+    k = t(24214),
+    x = t(92081),
+    f = t(1375),
+    w = t(73563),
+    b = t(23436),
+    v = t(79532);
+   const A = { boxShadow: u.A, color: m.A, cursor: h.A, dimension: p.A, fontFamily: j.A, fontFamilies: j.A, fontSize: k.A, fontSizes: k.A, fontWeight: x.A, fontWeights: x.A, lineHeight: f.A, lineHeights: f.A, number: w.A, other: b.A, textDecoration: v.A },
+    y = ({ type: e }) => {
+     const n = Object.hasOwn(A, e) ? e : 'other';
+     return (0, c.jsx)(d.In, { children: (0, o.createElement)(A[n]) });
+    };
+   var R = t(76223);
+   function C({ tokens: e }) {
+    const n = (0, r.kD)(e),
+     t = (0, R.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
+     o = (0, r.GT)(n),
+     l = o.map((e) => (0, r.B_)(e) + ': ;').join('\n'),
+     d = JSON.stringify(t, null, 2);
+    return (0, c.jsxs)('div', {
+     className: 'ma-flow',
+     children: [
+      (0, c.jsxs)(a.XI, {
+       children: [
+        (0, c.jsx)(a.A0, { children: (0, c.jsxs)(a.Hj, { children: [(0, c.jsx)(a.M_, { children: 'name' }), (0, c.jsx)(a.M_, { children: 'type' })] }) }),
+        (0, c.jsx)(a.BF, {
+         children: o.map((n) => {
+          const t = (0, r.o_)(n),
+           o = (0, r.eQ)(e, n).$type;
+          return (0, c.jsxs)(a.Hj, { children: [(0, c.jsx)(a.nA, { children: (0, c.jsx)(i.C, { children: (0, c.jsx)(a.kf, { children: t }) }) }), (0, c.jsx)(a.nA, { children: (0, c.jsxs)(s.K, { children: [(0, c.jsx)(y, { type: o }), ' ', o] }) })] }, t);
+         }),
+        }),
+       ],
+      }),
+      (0, c.jsxs)(a.e2, { children: [(0, c.jsx)(g, { content: d, children: 'Kopieer als JSON' }), (0, c.jsx)(g, { content: l, children: 'Kopieer als CSS' })] }),
+     ],
+    });
+   }
+  },
+  49925(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => o, RM: () => r });
+   var i = t(86070),
+    s = t(18439);
+   const r = [];
+   function a(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, i.jsx)(n.p, { children: 'Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.' });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(a, { ...e }) }) : a(e);
+   }
+  },
+  51363(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => a });
+   var i = t(86070),
+    s = t(18439);
+   function r(e) {
+    const n = { a: 'a', code: 'code', p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik hiervoor het ', (0, i.jsx)(n.code, { children: 'click' }), '-event. Dit is een apparaatonafhankelijke methode. Zo activeert de actie niet als de bezoeker de aanwijzer indrukt, maar pas als de bezoeker de aanwijzer weer loslaat. De bezoeker kan de aanwijzer nog verplaatsen naar buiten het element om de actie weer ongedaan te maken.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Voor knoppen waarbij het essentieel is dat ze activeren bij het indrukken (', (0, i.jsx)(n.code, { children: 'keydown' }), ') geldt een uitzondering. Dit geldt bijvoorbeeld voor knoppen in een ', (0, i.jsx)(n.a, { href: 'https://en.wikipedia.org/wiki/Virtual_keyboard', children: 'schermtoetsenbord' }), ' en pianotoetsen.'] })] });
+   }
+   function a(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
+   }
+  },
+  53971(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => a });
+   var i = t(86070),
+    s = t(18439);
+   function r(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.' }), '\n', (0, i.jsxs)(n.p, { children: ['Zorg ervoor dat de component meegroeit met de tekst. Definieer hoogte en de breedte niet in ', (0, i.jsx)(n.code, { children: 'px' }), ', maar gebruik een relatieve waarde als ', (0, i.jsx)(n.code, { children: 'em' }), ' of ', (0, i.jsx)(n.code, { children: 'rem' }), '.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'overflow-wrap: break-word; hyphens: auto;' }), ' eventueel in combinatie met ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op ', (0, i.jsx)(n.code, { children: ':root' }), ' niveau.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
+   }
+   function a(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
+   }
+  },
+  54672(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => a });
+   var i = t(86070),
+    s = t(18439);
+   function r(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea's, letterafstand en ruimte tussen woorden. Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier buttons voor te maken in de website zelf." }), '\n', (0, i.jsx)(n.p, { children: 'Zorg ervoor dat de component mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.' }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'overflow-wrap: break-word; hyphens: auto;' }), ' eventueel in combinatie met ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op ', (0, i.jsx)(n.code, { children: ':root' }), ' niveau.'] }), '\n', (0, i.jsx)(n.p, { children: 'Je moet de afstand kunnen vergroten naar deze waardes:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: 'Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte.' }), '\n', (0, i.jsx)(n.li, { children: "Afstand tussen alinea's naar ten minste 2 keer de lettergrootte." }), '\n', (0, i.jsx)(n.li, { children: 'Letterafstand (spati\xebren van letters) naar ten minste 0,12 keer de lettergrootte.' }), '\n', (0, i.jsx)(n.li, { children: 'Spati\xebren van woorden naar ten minste 0,16 keer de lettergrootte.' }), '\n'] }), '\n', (0, i.jsxs)(n.p, { children: ['Dit is te testen met een extensie zoals Stylus of User CSS, een ', (0, i.jsx)(n.a, { href: 'https://html5accessibility.com/tests/tsbookmarklet.html', children: 'bookmarklet' }), ' of door in de inspector van de browser de volgende code toe te voegen aan de ', (0, i.jsx)(n.code, { children: 'head' }), ' van de pagina:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-css', children: '<style>\nbody * {\n    line-height: 1.5 !important;\n    letter-spacing: 0.12em !important;\n    word-spacing: 0.16em !important;\n}\nbody p {\n    margin-bottom: 2em !important;\n}\n</style>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/regelafstand/', children: 'Zorg voor een comfortabele regelafstand' }) }), '\n'] })] });
+   }
+   function a(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
+   }
+  },
+  56323(e, n, t) {
+   'use strict';
+   t.d(n, { e: () => o });
+   var i = t(24703),
+    s = t(30758),
+    r = t(84471),
+    a = t(86070);
+   const o = ({ component: e }) => {
+    if (globalThis.isAstro) return null;
+    const { title: n } = e,
+     o = (0, r.fX)(n),
+     l = s.lazy(() => t(82839)(`./${o}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
+    return (0, a.jsx)(s.Suspense, { fallback: null, children: (0, a.jsx)(i.o, { omitH1: !0, headingLevel: 1, children: (0, a.jsx)(l, {}) }) });
+   };
+  },
+  66153(e, n, t) {
+   'use strict';
+   t.d(n, { f: () => i.f });
+   var i = t(56561);
+  },
+  68463(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => a });
+   var i = t(86070),
+    s = t(18439);
+   function r(e) {
+    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Elementen met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Respecteer conventies' }) }), '\n'] })] });
+   }
+   function a(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
+   }
+  },
+  78134(e, n, t) {
+   'use strict';
+   t.d(n, { Ay: () => o, RM: () => r });
+   var i = t(86070),
+    s = t(18439);
+   const r = [];
+   function a(e) {
+    const n = { p: 'p', ...(0, s.R)(), ...e.components };
+    return (0, i.jsx)(n.p, { children: 'Hier beschrijven we waar de component al aan voldoet en wat je zelf nog moet doen om de component toegankelijk \xe9n gebruiksvriendelijk in te zetten.' });
+   }
+   function o(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(a, { ...e }) }) : a(e);
+   }
+  },
+  78883(e, n, t) {
    'use strict';
    (t.r(n), t.d(n, { assets: () => ye, component: () => De, contentTitle: () => Ae, default: () => Ne, description: () => Ce, frontMatter: () => ve, issueNumber: () => Te, metadata: () => i, title: () => Re, toc: () => Le }));
    const i = JSON.parse('{"id":"componenten/link/index","title":"Link","description":"Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.","source":"@site/docs/componenten/link/index.mdx","sourceDirName":"componenten/link","slug":"/link","permalink":"/link","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/link/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Link","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Link","pagination_label":"Link","description":"Een verwijzing om een externe bron of bestand te openen of te navigeren binnen dezelfde pagina of website.","issue_number":118,"slug":"/link","keywords":["a","a tag","anchor","anchor element","anchor link","back link","button as link","call to action link","cta link","externe link","external link","href","hyper link","hyperlink","inline link","koppeling","label","link","link button","links","navigatie","navigation","navlink","ordinal","standalone","standalone link","text link","URL","url","verwijzing","web address"]},"sidebar":"componenten","previous":{"title":"Language Navigation","permalink":"/language-navigation"},"next":{"title":"Link List","permalink":"/link-list"}}');
@@ -807,221 +1022,6 @@
    function Ne(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(Ge, { ...e }) }) : Ge(e);
-   }
-  },
-  45009(e, n, t) {
-   'use strict';
-   t.d(n, { P: () => i.Pt, d: () => i.dk });
-   var i = t(29181);
-  },
-  46102(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => a });
-   var i = t(86070),
-    s = t(18439);
-   function r(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsxs)(n.p, { children: ['Als de inhoud van de link niet uit tekst bestaat, maar uit bijvoorbeeld een icoon of logo dan moet het aanklikbare gedeelte goed te onderscheiden zijn. Het contrast tussen een icoon, of kader rond een logo, en de achtergrond moet minimaal 3:1 zijn. Dit is te controleren met de ', (0, i.jsx)(n.a, { href: '/contrast/', children: 'Contrast checker' }), '.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content/', children: 'Zorg voor voldoende kleurcontrast voor niet-tekstuele content' }) }), '\n'] })] });
-   }
-   function a(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
-   }
-  },
-  46276(e, n, t) {
-   'use strict';
-   t.d(n, { p: () => r });
-   var i = t(13526),
-    s = t(86070);
-   const r = ({ children: e, className: n, level: t = 1, suffix: r, ...a }) => (0, s.jsxs)('hgroup', { className: (0, i.A)('nlds-inline-heading-group', `utrecht-heading-${t}`, n), ...a, children: [(0, s.jsx)('h1', { className: 'nlds-inline-heading-group__heading', children: e }), r && (0, s.jsxs)('p', { className: 'nlds-inline-heading-group__suffix', children: [r ? ' ' : '', r] })] });
-  },
-  46847(e, n, t) {
-   'use strict';
-   t.d(n, { $: () => i.$n });
-   var i = t(50805);
-  },
-  48068(e, n, t) {
-   'use strict';
-   t.d(n, { B: () => C });
-   var i = t(96547),
-    s = t(38295),
-    r = t(84471),
-    a = t(46447),
-    o = t(30758),
-    l = t(4603),
-    d = t(29181),
-    c = t(86070);
-   function g({ children: e, content: n }) {
-    const [t, i] = (0, o.useState)(!1);
-    return (
-     (0, o.useEffect)(() => {
-      'clipboard' in navigator && i(!0);
-     }, []),
-     (0, c.jsx)(c.Fragment, {
-      children:
-       t &&
-       (0, c.jsxs)(a.$n, {
-        type: 'button',
-        appearance: 'secondary-action-button',
-        onClick: async function () {
-         try {
-          await navigator.clipboard.writeText(n);
-         } catch (e) {
-          console.error(e);
-         }
-        },
-        children: [e, (0, c.jsx)(d.In, { children: (0, c.jsx)(l.A, {}) })],
-       }),
-     })
-    );
-   }
-   var u = t(43864),
-    m = t(35193),
-    h = t(82999),
-    p = t(13088),
-    j = t(91525),
-    k = t(24214),
-    x = t(92081),
-    f = t(1375),
-    w = t(73563),
-    b = t(23436),
-    v = t(79532);
-   const A = { boxShadow: u.A, color: m.A, cursor: h.A, dimension: p.A, fontFamily: j.A, fontFamilies: j.A, fontSize: k.A, fontSizes: k.A, fontWeight: x.A, fontWeights: x.A, lineHeight: f.A, lineHeights: f.A, number: w.A, other: b.A, textDecoration: v.A },
-    y = ({ type: e }) => {
-     const n = Object.hasOwn(A, e) ? e : 'other';
-     return (0, c.jsx)(d.In, { children: (0, o.createElement)(A[n]) });
-    };
-   var R = t(76223);
-   function C({ tokens: e }) {
-    const n = (0, r.kD)(e),
-     t = (0, R.sj)(e, (e) => (((e) => null !== e && 'object' == typeof e && Object.hasOwn(e, '$type') && 'string' == typeof e.$type)(e) ? { $type: e.$type, $value: '' } : void 0)),
-     o = (0, r.GT)(n),
-     l = o.map((e) => (0, r.B_)(e) + ': ;').join('\n'),
-     d = JSON.stringify(t, null, 2);
-    return (0, c.jsxs)('div', {
-     className: 'ma-flow',
-     children: [
-      (0, c.jsxs)(a.XI, {
-       children: [
-        (0, c.jsx)(a.A0, { children: (0, c.jsxs)(a.Hj, { children: [(0, c.jsx)(a.M_, { children: 'name' }), (0, c.jsx)(a.M_, { children: 'type' })] }) }),
-        (0, c.jsx)(a.BF, {
-         children: o.map((n) => {
-          const t = (0, r.o_)(n),
-           o = (0, r.eQ)(e, n).$type;
-          return (0, c.jsxs)(a.Hj, { children: [(0, c.jsx)(a.nA, { children: (0, c.jsx)(i.C, { children: (0, c.jsx)(a.kf, { children: t }) }) }), (0, c.jsx)(a.nA, { children: (0, c.jsxs)(s.K, { children: [(0, c.jsx)(y, { type: o }), ' ', o] }) })] }, t);
-         }),
-        }),
-       ],
-      }),
-      (0, c.jsxs)(a.e2, { children: [(0, c.jsx)(g, { content: d, children: 'Kopieer als JSON' }), (0, c.jsx)(g, { content: l, children: 'Kopieer als CSS' })] }),
-     ],
-    });
-   }
-  },
-  49925(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => o, RM: () => r });
-   var i = t(86070),
-    s = t(18439);
-   const r = [];
-   function a(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, i.jsx)(n.p, { children: 'Focus die met een toetsenbord geplaatst kan worden, moet ook met het toetsenbord weg te halen zijn.' });
-   }
-   function o(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(a, { ...e }) }) : a(e);
-   }
-  },
-  51363(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => a });
-   var i = t(86070),
-    s = t(18439);
-   function r(e) {
-    const n = { a: 'a', code: 'code', p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als de gebruiker een interactief element indrukt met een aanwijzer zoals een muis of vinger, is er de mogelijkheid om de actie te voorkomen of ongedaan te maken.' }), '\n', (0, i.jsxs)(n.p, { children: ['Gebruik hiervoor het ', (0, i.jsx)(n.code, { children: 'click' }), '-event. Dit is een apparaatonafhankelijke methode. Zo activeert de actie niet als de bezoeker de aanwijzer indrukt, maar pas als de bezoeker de aanwijzer weer loslaat. De bezoeker kan de aanwijzer nog verplaatsen naar buiten het element om de actie weer ongedaan te maken.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Voor knoppen waarbij het essentieel is dat ze activeren bij het indrukken (', (0, i.jsx)(n.code, { children: 'keydown' }), ') geldt een uitzondering. Dit geldt bijvoorbeeld voor knoppen in een ', (0, i.jsx)(n.a, { href: 'https://en.wikipedia.org/wiki/Virtual_keyboard', children: 'schermtoetsenbord' }), ' en pianotoetsen.'] })] });
-   }
-   function a(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
-   }
-  },
-  53971(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => a });
-   var i = t(86070),
-    s = t(18439);
-   function r(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.' }), '\n', (0, i.jsxs)(n.p, { children: ['Zorg ervoor dat de component meegroeit met de tekst. Definieer hoogte en de breedte niet in ', (0, i.jsx)(n.code, { children: 'px' }), ', maar gebruik een relatieve waarde als ', (0, i.jsx)(n.code, { children: 'em' }), ' of ', (0, i.jsx)(n.code, { children: 'rem' }), '.'] }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'overflow-wrap: break-word; hyphens: auto;' }), ' eventueel in combinatie met ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op ', (0, i.jsx)(n.code, { children: ':root' }), ' niveau.'] }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n'] })] });
-   }
-   function a(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
-   }
-  },
-  54672(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => a });
-   var i = t(86070),
-    s = t(18439);
-   function r(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: "Als je de tekstafstand vergroot blijft de tekst in zijn geheel zichtbaar. Dit gaat om regelhoogte, afstand tussen alinea's, letterafstand en ruimte tussen woorden. Gebruikers kunnen dit instellen vanuit hun browser. Het is niet nodig om hier buttons voor te maken in de website zelf." }), '\n', (0, i.jsx)(n.p, { children: 'Zorg ervoor dat de component mee kan groeien met de tekst. Geef de breedte en de hoogte dus niet hard op in pixels.' }), '\n', (0, i.jsxs)(n.p, { children: ['Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld ', (0, i.jsx)(n.code, { children: 'overflow-wrap: break-word; hyphens: auto;' }), ' eventueel in combinatie met ', (0, i.jsx)(n.code, { children: 'text-wrap-style: balance' }), '. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op ', (0, i.jsx)(n.code, { children: ':root' }), ' niveau.'] }), '\n', (0, i.jsx)(n.p, { children: 'Je moet de afstand kunnen vergroten naar deze waardes:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: 'Regelhoogte (regelafstand) naar ten minste 1,5 keer de lettergrootte.' }), '\n', (0, i.jsx)(n.li, { children: "Afstand tussen alinea's naar ten minste 2 keer de lettergrootte." }), '\n', (0, i.jsx)(n.li, { children: 'Letterafstand (spati\xebren van letters) naar ten minste 0,12 keer de lettergrootte.' }), '\n', (0, i.jsx)(n.li, { children: 'Spati\xebren van woorden naar ten minste 0,16 keer de lettergrootte.' }), '\n'] }), '\n', (0, i.jsxs)(n.p, { children: ['Dit is te testen met een extensie zoals Stylus of User CSS, een ', (0, i.jsx)(n.a, { href: 'https://html5accessibility.com/tests/tsbookmarklet.html', children: 'bookmarklet' }), ' of door in de inspector van de browser de volgende code toe te voegen aan de ', (0, i.jsx)(n.code, { children: 'head' }), ' van de pagina:'] }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-css', children: '<style>\nbody * {\n    line-height: 1.5 !important;\n    letter-spacing: 0.12em !important;\n    word-spacing: 0.16em !important;\n}\nbody p {\n    margin-bottom: 2em !important;\n}\n</style>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/voorkeur/', children: 'Let op voorkeursinstellingen voor typografie' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/lettergrootte/', children: 'Zorg ervoor dat letters groot genoeg zijn' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/typografie/regelafstand/', children: 'Zorg voor een comfortabele regelafstand' }) }), '\n'] })] });
-   }
-   function a(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
-   }
-  },
-  56323(e, n, t) {
-   'use strict';
-   t.d(n, { e: () => o });
-   var i = t(24703),
-    s = t(30758),
-    r = t(84471),
-    a = t(86070);
-   const o = ({ component: e }) => {
-    if (globalThis.isAstro) return null;
-    const { title: n } = e,
-     o = (0, r.fX)(n),
-     l = s.lazy(() => t(82839)(`./${o}-docs/docs/aliases.md`).catch(() => ({ default: () => null })));
-    return (0, a.jsx)(s.Suspense, { fallback: null, children: (0, a.jsx)(i.o, { omitH1: !0, headingLevel: 1, children: (0, a.jsx)(l, {}) }) });
-   };
-  },
-  66153(e, n, t) {
-   'use strict';
-   t.d(n, { f: () => i.f });
-   var i = t(56561);
-  },
-  68463(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => a });
-   var i = t(86070),
-    s = t(18439);
-   function r(e) {
-    const n = { a: 'a', li: 'li', p: 'p', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Elementen met gelijke functies hebben hetzelfde uiterlijk en hetzelfde label.' }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/stijl/iconen/respecteer-conventies/', children: 'Respecteer conventies' }) }), '\n'] })] });
-   }
-   function a(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(r, { ...e }) }) : r(e);
-   }
-  },
-  78134(e, n, t) {
-   'use strict';
-   t.d(n, { Ay: () => o, RM: () => r });
-   var i = t(86070),
-    s = t(18439);
-   const r = [];
-   function a(e) {
-    const n = { p: 'p', ...(0, s.R)(), ...e.components };
-    return (0, i.jsx)(n.p, { children: 'Hier beschrijven we waar de component al aan voldoet en wat je zelf nog moet doen om de component toegankelijk \xe9n gebruiksvriendelijk in te zetten.' });
-   }
-   function o(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(a, { ...e }) }) : a(e);
    }
   },
   82839(e, n, t) {
