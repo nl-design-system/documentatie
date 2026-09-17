@@ -1,6 +1,7 @@
-import type { NavigationElementResolved } from '../navigation';
+import type { NavigationElementResolved, NavigationGroupResolved } from '../navigation';
 import { Heading } from '@components/heading/heading';
 import { Link } from '@components/link/link';
+import { Paragraph } from '@components/paragraph/paragraph';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react/css-module';
 import '@utrecht/unordered-list-css/dist/index.css';
 
@@ -8,8 +9,26 @@ export interface SitemapListProps {
   navigationGroup: NavigationElementResolved;
 }
 
+function getAllSubItems(navigationGroup: NavigationGroupResolved, list: NavigationElementResolved[] = []) {
+  navigationGroup.items.forEach((item) => {
+    if (item.type === 'group') {
+      if (item.index && !item.index.unlisted) {
+        list.push(item.index);
+      }
+      getAllSubItems(item, list);
+    } else {
+      if (!item.unlisted) {
+        list.push(item);
+      }
+    }
+  });
+  return list.flat();
+}
+
 export const SitemapList = ({ navigationGroup }: SitemapListProps) => {
   if (navigationGroup.type !== 'group') throw new Error('navigationGroup is not the proper type');
+
+  const allSubItems = getAllSubItems(navigationGroup);
 
   return (
     <>
@@ -20,6 +39,7 @@ export const SitemapList = ({ navigationGroup }: SitemapListProps) => {
           navigationGroup.label
         )}
       </Heading>
+      <Paragraph>{allSubItems.length} pagina's</Paragraph>
       <SitemapListGroup items={navigationGroup.items} />
     </>
   );
