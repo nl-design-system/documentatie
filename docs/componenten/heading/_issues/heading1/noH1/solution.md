@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Voeg een kop van niveau 1 toe als eerste koptekst op de pagina.
+Voeg een koptekst van niveau 1 toe aan het begin van de pagina.
