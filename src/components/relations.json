@@ -15,6 +15,14 @@
       "slug": "alert"
     },
     {
+      "name": "Blockquote",
+      "slug": "blockquote"
+    },
+    {
+      "name": "Pull Quote",
+      "slug": "pull-quote"
+    },
+    {
       "name": "Notification Banner",
       "slug": "notification-banner"
     }
