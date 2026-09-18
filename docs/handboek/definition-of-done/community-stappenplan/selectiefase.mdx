@@ -1,0 +1,282 @@
+---
+title: 1. Selectiefase - Community
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: 1. Selectiefase
+sidebar_position: 1
+navigation_order: 1
+pagination_label: 1. Selectiefase
+description: Stappen voor de Selectiefase van de Definition of Done voor Community
+slug: /handboek/estafettemodel/componenten/community/selectiefase
+keywords:
+  - componenten
+  - design system
+  - estafettemodel
+  - definition of done
+  - community
+---
+
+import CommunityComponentAanmeldenDoel from "./community-component-aanmelden/_doel.md";
+import ApiPrefixKiezenDoel from "./api-prefix-kiezen/_doel.md";
+import CommunityComponentNaamKiezen from "./component-naam-kiezen/_doel.md";
+import WhiteLabelDoel from "./white-label-component/_doel.md";
+import DesignTokensConventieDoel from "./design-tokens-conventie/_doel.md";
+import CodeLicentieDoel from "./code-licentie/_doel.md";
+import DocumentatieLicentieDoel from "./documentatie-licentie/_doel.md";
+import DesignsCommunityComponentDoel from "./designers-community/_doel.md";
+import DevelopersCommunityComponentDoel from "./developers-community-component/_doel.md";
+import PublicRepoDoel from "./public-repo/_doel.md";
+import ComponentVisueleRegressieTestsDoel from "./component-visuele-regressie-tests/_doel.md";
+import LosseCssImplementationDoel from "./losse-css-implementatie/_doel.md";
+import StorybookDoel from "./storybook/_doel.md";
+import CommunityComponentKloptDoel from "./community-component-klopt/_doel.md";
+import CodeBackupDoel from "./code-backup/_doel.md";
+import ExternalContributionsDoel from "./external-contributions/_doel.md";
+
+{/* @license CC0-1.0 */}
+
+# Selectiefase voor Community componenten
+
+## Voeg de component toe aan de componenten bord
+
+### Doel
+
+<CommunityComponentAanmeldenDoel />
+
+### Acties
+
+Heb je nog geen eigen [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten)? Vraag dan aan het kernteam om er een aan te maken.
+
+1. Open het Communitybord via [Community Componenten bord op GitHub](https://github.com/orgs/nl-design-system/projects?query=is%3Aopen+Community+Componenten).
+2. Klik op de + icoon links onderaan de pagina om een component toe te voegen.
+3. Kies `Add item from repository`.
+4. Selecteer `backlog` en zoek op de naam van de component.
+5. Selecteer de component.
+6. Kies rechts onderin `Add selected items`.
+
+**🚩 Checkpoint**: Title
+
+## Prefix van de verantwoordelijke organisatie
+
+### Doel
+
+<ApiPrefixKiezenDoel />
+
+### Acties
+
+Vul de prefix van de organisatie in, bijvoorbeeld `utrecht` of `ams`.
+
+**🚩 Checkpoint**: Organisatie prefix
+
+## Naam van de component
+
+### Doel
+
+<CommunityComponentNaamKiezen />
+
+### Acties
+
+Vul de naam van het CSS component in, bijvoorbeeld `{prefix-organisatie}-{naam-component}`.
+
+**🚩 Checkpoint**: Naam
+
+## Implementatie voldoet aan naam en beschrijving uit de GitHub Discussion
+
+### Doel
+
+<CommunityComponentKloptDoel />
+
+### Actie
+
+In de GitHub Discussion van de component staan de naam en de beschrijving genoteerd. Check of de implementatie van de gekozen organisatie hieraan voldoet. Dit doe je door de component te bekijken via de 'Storybook URL (CSS)' die in het Communitybord is ingevuld.
+
+Vervolgens heb je twee opties:
+
+- Komt de naam van de component overeen met de naam uit de GitHub Discussion? Dan selecteer je 'Done'.
+- Komt de naam niet overeen maar voldoet de implementatie verder wel? Dan selecteer je 'Done met Alias'.
+
+**Tip!** Met implementatie bedoelen we bijvoorbeeld `utrecht-button` of `ams-button`. Een specifiek type van een implementatie, bijvoorbeeld `zonnedael-sparkly-button`, noemen we een variant.
+
+**🚩 Checkpoint**: Implementatie voldoet
+
+## Implementatie heeft minimaal kleur en typografie beslissingen met design tokens geïmplementeerd
+
+### Doel
+
+<WhiteLabelDoel />
+
+### Acties
+
+Door met [design tokens](/handboek/huisstijl/design-tokens/) te werken zorgen we ervoor dat meerdere organisaties de component van een eigen huisstijl kunnen voorzien. Minimaal zouden er design tokens beschikbaar moeten zijn om kleur en typografie beslissingen door te voeren.
+
+Zorg ervoor dat de component gebruik maakt van de minimale design tokens.
+
+**Tip!** Om te controleren of er design tokens zijn toegepast, kun je de 'Inspect' functie in je browser gebruiken. Wanneer je in de CSS verwijzingen ziet naar CSS-variabelen zoals bijvoorbeeld `--{prefix-organisatie}-button-primary-action-background-color` of `--{prefix-organisatie}-button-font-family` kun je ervan uitgaan dat er design tokens zijn gebruikt.
+
+**Tip!** Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
+
+**🚩 Checkpoint**: Minimale design tokens
+
+## Gebruikte design tokens voldoen aan naamgeving conventie van NL Design System
+
+### Doel
+
+<DesignTokensConventieDoel />
+
+### Acties
+
+Voor NL Design System zijn er afspraken gemaakt voor duidelijke en voorspelbare namen. De beschikbare design tokens van een component moeten voldoen aan [de naamgeving conventie van NL Design System](https://www.nldesignsystem.nl/handboek/huisstijl/design-tokens/#naamgeving). Zo is een component herbruikbaar voor alle verschillende thema's.
+
+Zorg ervoor dat de design tokens voldoen aan de naamgevingsconventie.
+
+**🚩 Checkpoint**: Naamgeving design tokens
+
+## EUPL-1.2 licentie toegepast
+
+### Doel
+
+<CodeLicentieDoel />
+
+### Acties
+
+Binnen het NL Design System werken we voor componenten met de [Openbare Licentie van de Europese Unie (EUPL-1.2)](https://nldesignsystem.nl/open-source/eupl/).
+
+Zorg ervoor dat de organisatie naar de EUPL-1.2 licentie verwijst op de onderstaande posities:
+
+- **GitHub repository**: Als één van de repository details onder 'About' in de sidebar.
+- **Package in npm**: Onder 'License' in de sidebar.
+- **Storybook**: Als een aparte pagina binnen de sidebar, of binnen de introductiepagina danwel README.
+- **Figma** (optioneel): Op de cover of direct naast de cover van de Figma bibliotheek.
+
+**🚩 Checkpoint**: Licentie component
+
+## Documentatie heeft de Creative Commons 0 licentie (CC0)
+
+### Doel
+
+<DocumentatieLicentieDoel />
+
+### Acties
+
+Binnen het NL Design System werken we voor de documentatie met de [Creative Commons 0 licentie (CC0)](https://nldesignsystem.nl/open-source/cc0).
+
+Zorg ervoor dat de organisatie de CC0 licentie benoemt in het README.md bestand van de component in GitHub.
+
+**Tip!** Door de 'Code' of 'Raw' weergave van het README.md bestand te bekijken zou je bovenaan `<!-- @license CC0-1.0 -->` moeten zien staan.
+
+**🚩 Checkpoint**: Licentie documentatie
+
+## Component te gebruiken door designers
+
+### Doel
+
+<DesignsCommunityComponentDoel />
+
+### Acties
+
+Kopieer de URL van de componentpagina door in Figma met de rechtermuisknop op de component in de sidebar te klikken en 'Copy link to page' te selecteren.
+
+**🚩 Checkpoint**: Figma URL
+
+## Beschikbaar in CSS
+
+### Doel
+
+<LosseCssImplementationDoel />
+
+### Actie
+
+De component moet beschikbaar zijn in code. Minimaal als HTML/CSS.
+
+Check of de gekozen organisatie hieraan voldoet. Dit doe je door de component te bekijken via de 'GitHub URL (CSS)' die in het Communitybord is ingevuld.
+
+De GitHub omgeving moet te bekijken zijn zonder dat je moet inloggen.
+
+**🚩 Checkpoint**: GitHub (CSS)
+
+## Component te installeren door developers
+
+### Doel
+
+<DevelopersCommunityComponentDoel />
+
+### Acties
+
+Vul de https://www.npmjs.com URL van het css component in. Is er geen losse package voor de component en is deze onderdeel van een css bibliotheek? Vul dan de url van de bibliotheek in.
+
+**Let op!** Is de component alleen beschikbaar in React? Dan kan deze stap helaas niet worden gechecked.
+
+**🚩 Checkpoint**: npm URL (CSS)
+
+## Git repository kan gebruikt worden voor doorontwikkeling
+
+### Doel
+
+<PublicRepoDoel />
+
+### Actie
+
+- Maak een clone van de Git repository.
+- Volg de instructies in de `README.md`.
+- Controleer dat je alle dependencies kunt installeren.
+- Controleer dat je de component kunt builden, indien er een buildproces is.
+- Controleer dat je de documentatie kan opstarten, indien aanwezig.
+- Controleer dat je de testautomatisering kunt gebruiken, indien aanwezig.
+- Controleer dat al bekende bugs publiek worden bijgehouden.
+- Ga in GitHub naar de CSS van de component toe en kopieer de URL.
+- Plak deze URL in het checkpoint veld.
+
+**🚩 Checkpoint**: GitHub URL (CSS)
+
+## Externe developers kunnen bijdragen
+
+### Doel
+
+<ExternalContributionsDoel />
+
+### Actie
+
+- Controleer dat een [Code of Conduct](/coc) wordt gebruikt die een veilige omgeving biedt.
+- Controleer dat er een `CONTRIBUTING.md` is.
+- Controleer dat je een Pull Request kan maken.
+- Controleer dat er issues gemeld kunnen worden in een publieke issue tracker.
+
+## Publiek beschikbaar in Storybook
+
+### Doel
+
+<StorybookDoel />
+
+### Actie
+
+De component moet publiek beschikbaar zijn in Storybook.
+
+Check of de component hieraan voldoet. Dit doe je door de component te bekijken via de 'Storybook URL (CSS)' die in het Communitybord is ingevuld.
+
+De Storybook omgeving moet te bekijken zijn zonder te hoeven inloggen.
+
+**🚩 Checkpoint**: Storybook (CSS)
+
+## Component heeft visuele regressietests
+
+### Doel
+
+<ComponentVisueleRegressieTestsDoel />
+
+### Acties
+
+Als de component wordt ontwikkeld met de NL Design System infrastructuur op [github.com/nl-design-system](https://github.com/nl-design-system), dan heb je automatisch toegang tot visuele regressietest met Chromatic.
+
+Controleer dan dat "Storybook Publish" en "UI Tests" bij de Pull Request checks staan.
+
+## Backup van de code
+
+### Doel
+
+<CodeBackupDoel />
+
+### Actie
+
+Als de component wordt ontwikkeld met de NL Design System infrastructuur op [github.com/nl-design-system](https://github.com/nl-design-system), dan wordt al automatisch een backup gemaakt van de code met Rewind.
+
+Als code van de component in eigen infrastructuur wordt ontwikkeld, dan moet handmatig een automatische backup ingesteld worden. Neem contact op met het kernteam, en vraag om een automatisch dagelijks een mirror te maken van jouw Git repository naar een repository bij NL Design System. De backup-repository zal private zijn, zodat geen verwarring ontstaat wat de originele repository is, en voorkom je dat de backup-repository hoger kan eindigen in zoekresultaten.
