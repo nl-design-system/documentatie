@@ -1,5 +1,18 @@
 # @nl-design-system-unstable/documentation
 
+## 2.0.0
+
+### Major Changes
+
+- ac59d82: Naamwijziging map voor snippets veelgemaakte fouten voor Heading, Link en Paragraph.
+- bc48afb: Verwijderen van ongebruikte editor error snippets van Paragraph voor de editor.
+
+### Minor Changes
+
+- 5f1e57f: Veelgemaakte fouten aan de Link componentpagina toegevoegd.
+- 01d9b2a: H1 specifieke issues verplaats naar Heading 1 map, update van teksten en verwijzingen.
+- a5d0ef4: Update van de baseline voor september 2026.
+
 ## 1.12.0
 
 ### Minor Changes
