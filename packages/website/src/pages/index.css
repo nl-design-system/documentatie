@@ -41,15 +41,31 @@
 
   /* Tweak card styling */
   .rhc-card {
-    /* Give hover border to participant logo cards */
+    /*
+     * Give hover border to participant logo cards. Pinned to its light value (not
+     * var(--basis-color-action-1-border-hover)) to match the fixed-light card
+     * background below — the dark-mode value is a light lavender meant to stand
+     * out against a dark card, which is nearly invisible against a light one.
+     */
     &:has(.ma-homepage__participant-link:hover) {
-      --rhc-card-border-color: var(--basis-color-action-1-border-hover);
+      --rhc-card-border-color: #6c337e;
     }
 
     /* Give all cards a background color except the participant logos */
     &:not(:has(.ma-homepage__participant-link)) {
       --rhc-card-background-color: var(--basis-color-action-2-bg-default);
       --rhc-card-border-color: transparent;
+    }
+
+    /*
+     * Participant logos are provided by third parties and assume a light backdrop
+     * (some are raster images with a baked-in white background). Keep their card
+     * light regardless of the site's color scheme so the logos stay legible and
+     * don't show a jarring white box in dark mode.
+     */
+    &:has(.ma-homepage__participant-link) {
+      --rhc-card-background-color: #fcfcfc;
+      --rhc-card-border-color: #c2c4c6;
     }
 
     /* Tweak the spacing between the icons and heading when a card has an icon */
