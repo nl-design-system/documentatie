@@ -681,9 +681,6 @@ importers:
       '@nl-design-system-unstable/postcss-remove-unused-design-tokens':
         specifier: 0.0.2
         version: 0.0.2
-      '@nl-design-system/component-progress':
-        specifier: 1.0.18
-        version: 1.0.18
       '@nl-design-system/tsconfig':
         specifier: 1.0.5
         version: 1.0.5(typescript@5.9.3)
@@ -4055,9 +4052,6 @@ packages:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0':
     resolution: {integrity: sha512-Ax1JW5KSUJUnfkFVDwzPHvpD61HMirn6Kp2Gu5QkHIEqwLjkD6P3/dtwKMJZq8dUGzoP/9XwMNcugLhB7Z0Qlg==}
-
-  '@nl-design-system/component-progress@1.0.18':
-    resolution: {integrity: sha512-vspluDCPOheX8IZaIW+Z4pHtsm033ZtiUgFnGT9r5YthKc4PP/M7uISoYHzxcIplCXM4sg8H/p06Y6GzjOlLvw==}
 
   '@nl-design-system/component-progress@1.1.6':
     resolution: {integrity: sha512-jvFF60JGGqLpv2HfF+r+wXfM4p5lmZcT2c5arrYCEUCbvu28jgi7vamsKMGdVY8T2qfv9+lsF8otnOJEANOD2Q==}
@@ -16610,8 +16604,6 @@ snapshots:
   '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2': {}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0': {}
-
-  '@nl-design-system/component-progress@1.0.18': {}
 
   '@nl-design-system/component-progress@1.1.6': {}
 
