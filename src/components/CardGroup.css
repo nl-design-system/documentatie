@@ -133,6 +133,7 @@
   --utrecht-heading-3-margin-block-start: 0;
 
   block-size: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   inline-size: var(--ma-card-content-inline-size);

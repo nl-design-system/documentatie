@@ -26,7 +26,6 @@
 @media screen and (width <= 768px) {
   .ma-component-card {
     --ma-component-illustration-svg-max-height: none;
-    --ma-cardgroup-card-max-width: 400px;
     --ma-card-content-inline-size: 100%;
   }
 }
