@@ -14339,6 +14339,7 @@ li.ma-doelen__item--almost-check:before {
 .ma-card__content {
  --utrecht-heading-2-margin-block-start: 0;
  block-size: 100%;
+ box-sizing: border-box;
  display: flex;
  flex-direction: column;
  inline-size: var(--ma-card-content-inline-size);
@@ -15206,7 +15207,6 @@ li.ma-doelen__item--almost-check:before {
 @media screen and (width <= 768px) {
  .ma-component-card {
   --ma-component-illustration-svg-max-height: none;
-  --ma-cardgroup-card-max-width: 400px;
   --ma-card-content-inline-size: 100%;
  }
 }
