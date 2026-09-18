@@ -19,12 +19,12 @@
       "slug": "blockquote"
     },
     {
-      "name": "Pull Quote",
-      "slug": "pull-quote"
-    },
-    {
       "name": "Notification Banner",
       "slug": "notification-banner"
+    },
+    {
+      "name": "Pull Quote",
+      "slug": "pull-quote"
     }
   ],
   "Modal Dialog": [
