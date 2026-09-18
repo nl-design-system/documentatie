@@ -50,6 +50,7 @@ import {
   Related,
 } from "@site/src/components/ComponentPage";
 import { Checklist, ChecklistItem } from "@site/src/components/Checklist";
+import { ComponentAliases } from "@site/src/components/ComponentAliases";
 
 {/* Add name and description for the component */}
 export const title = "Ordered List";
@@ -59,6 +60,8 @@ export const issueNumber = 117;
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentAliases component={component} />
 
 ## Checklist voor toegankelijkheid
 
