@@ -1,35 +1,63 @@
 /**
  * These are all values yet to be included in the MA Design Tokens
  */
-:root {
+.ma-theme {
   --ams-unordered-list-gap: var(--basis-space-row-lg);
   --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
-  --ams-unordered-list-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
   --ams-unordered-list-list-style-type: disc;
-  --rhc-card-inline-size: 100% !important;
+  --ams-unordered-list-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
+  --basis-form-control-padding-block-end: var(--basis-space-block-sm) !important;
+  --basis-form-control-padding-block-start: var(--basis-space-block-sm) !important;
+  --basis-form-control-padding-inline-end: var(--basis-space-inline-md) !important;
+  --basis-form-control-padding-inline-start: var(--basis-space-inline-md) !important;
+  --denhaag-side-navigation-link-active-font-weight: 400;
+  --denhaag-side-navigation-list-margin-inline-start: var(--basis-space-inline-xl);
+  --denhaag-side-navigation-mobile-display: block;
+  --denhaag-side-navigation-link-padding-block-end: var(--basis-space-block-sm);
+  --denhaag-side-navigation-link-padding-block-start: var(--basis-space-block-sm);
+  --denhaag-icon-button-padding-block-end: var(--basis-space-block-sm);
+  --denhaag-icon-button-padding-block-start: var(--basis-space-block-sm);
+  --denhaag-icon-button-padding-inline-end: var(--basis-space-inline-sm);
+  --denhaag-icon-button-padding-inline-start: var(--basis-space-inline-sm);
+  --ma-body-copy-items-max-inline-size: 65ch;
   --ma-estafette-badge-border-width: 1px;
+  --ma-layout-column-gap: var(--basis-space-column-4xl);
+  --ma-layout-side-bar-inline-size: 300px;
   --ma-mobile-menu-max-inline-size: 400px;
-  --ma-space-relative-block-6xl: 4em; /* 64px; */
-  --ma-space-relative-block-5xl: 3em; /* 48px; */
-  --ma-space-relative-block-4xl: 2em; /* 32px; */
-  --ma-space-relative-block-3xl: 1.5em; /* 24px; */
   --ma-space-relative-block-2xl: 1.25em; /* 20px; */
-  --ma-space-relative-block-xl: 1em; /* 16px; */
+  --ma-space-relative-block-2xs: 0.0625em; /* 1px; */
+  --ma-space-relative-block-3xl: 1.5em; /* 24px; */
+  --ma-space-relative-block-4xl: 2em; /* 32px; */
+  --ma-space-relative-block-5xl: 3em; /* 48px; */
+  --ma-space-relative-block-6xl: 4em; /* 64px; */
   --ma-space-relative-block-lg: 0.75em; /* 12px; */
   --ma-space-relative-block-md: 0.5em; /* 8px; */
   --ma-space-relative-block-sm: 0.25em; /* 4px; */
+  --ma-space-relative-block-xl: 1em; /* 16px; */
   --ma-space-relative-block-xs: 0.125em; /* 2px; */
-  --ma-space-relative-block-2xs: 0.0625em; /* 1px; */
-  --ma-layout-side-bar-inline-size: 300px;
-  --ma-layout-column-gap: var(--basis-space-column-4xl);
   --ma-table-of-contents-highlighted-background-color: var(--basis-color-accent-1-bg-subtle);
-  --ma-table-of-contents-highlighted-padding-inline-end: var(--basis-space-inline-xl);
-  --ma-table-of-contents-highlighted-padding-inline-start: var(--basis-space-inline-xl);
   --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
   --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
-  --ma-body-copy-items-max-inline-size: 65ch;
+  --ma-table-of-contents-highlighted-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-table-of-contents-highlighted-padding-inline-start: var(--basis-space-inline-xl);
+  --nl-button-icon-only-padding-block-start: var(--basis-space-block-sm);
+  --nl-button-icon-only-padding-inline-end: var(--basis-space-inline-sm);
+  --nl-button-padding-block-end: var(--basis-space-block-md);
+  --nl-button-padding-block-start: var(--basis-space-block-md);
+  --nl-button-padding-inline-end: var(--basis-space-inline-md);
+  --nl-button-padding-inline-start: var(--basis-space-inline-md);
+  --nl-skip-link-padding-block: var(--basis-space-block-md);
+  --nl-skip-link-padding-inline: var(--basis-space-inline-lg);
+  --rhc-card-inline-size: 100% !important;
+  --utrecht-breadcrumb-nav-item-padding-block-end: var(--basis-space-block-sm);
+  --utrecht-breadcrumb-nav-item-padding-block-start: var(--basis-space-block-sm);
+  --utrecht-button-padding-block-end: var(--nl-button-padding-block-end);
+  --utrecht-button-padding-block-start: var(--nl-button-padding-block-start);
+  --utrecht-button-padding-inline-end: var(--nl-button-padding-inline-end);
+  --utrecht-button-padding-inline-start: var(--nl-button-padding-inline-start);
+  --utrecht-nav-bar-link-padding-block-end: var(--basis-space-block-md);
+  --utrecht-nav-bar-link-padding-block-start: var(--basis-space-block-md);
   --utrecht-separator-block-size: var(--basis-size-5xs);
-  --denhaag-side-navigation-link-active-font-weight: 400;
 }
 
 /**
@@ -170,11 +198,19 @@ html .utrecht-link--html-a:any-link:focus {
 }
 
 .denhaag-side-navigation__link {
+  box-sizing: border-box;
+
+  /* denhaag.side-navigation.link.min-block-size */
+  min-block-size: 44px;
+
+  /* denhaag.side-navigation.link.min-inline-size */
+  min-inline-size: 44px;
+
   /* denhaag.side-navigation.link.padding-inline-end */
-  padding-inline-end: var(--basis-space-inline-xl);
+  padding-inline-end: var(--basis-space-inline-md);
 
   /* denhaag.side-navigation.link.padding-inline-start */
-  padding-inline-start: var(--basis-space-inline-xl);
+  padding-inline-start: var(--basis-space-inline-md);
 
   @media (forced-colors: none) {
     border-color: transparent;
