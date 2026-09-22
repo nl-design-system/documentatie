@@ -239,7 +239,11 @@ window.addEventListener("load", () => {
 }
 ```
 
+</Guideline>
+
 Moet de maat toch met JavaScript worden gezet, laat een `ResizeObserver` het script dan opnieuw rekenen zodra de inhoud van maat verandert.
+
+<Guideline appearance="do" title="Het script rekent opnieuw zodra de inhoud van maat verandert">
 
 ```javascript
 new ResizeObserver(() => {
