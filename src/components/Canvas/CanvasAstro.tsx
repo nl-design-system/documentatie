@@ -1,4 +1,6 @@
 import type { CanvasProps } from './Canvas';
+import { CodeExampleContext } from '../Guideline';
+import { useContext } from 'react';
 import Prism from 'prismjs';
 import clsx from 'clsx';
 import { Accordion, AccordionSection } from '../../../packages/website/src/components/accordion/accordion';
@@ -21,8 +23,13 @@ export const CanvasAstro = ({
   copyCode,
   defaultExpandedCode,
   designTokens,
+  hiddenExample,
 }: CanvasAstroProps) => {
   const _code = typeof code === 'string' ? code : rawCode || '';
+  const { appearance } = useContext(CodeExampleContext);
+  const isHiddenExample = hiddenExample ?? appearance === 'dont';
+  // React 18 kent `inert` nog niet als attribuut, vandaar de lege string en de spread.
+  const hiddenExampleAttributes = isHiddenExample ? { inert: '', 'aria-hidden': true } : {};
 
   const highlighed =
     typeof code === 'string'
@@ -33,7 +40,11 @@ export const CanvasAstro = ({
     <div className={clsx('ma-canvas-astro', className)}>
       {/* Live preview */}
       <div className="voorbeeld-theme" style={designTokens as CSSProperties}>
-        <div className="ma-canvas-astro__example utrecht-html ma-flow" dangerouslySetInnerHTML={{ __html: _code }} />
+        <div
+          className="ma-canvas-astro__example utrecht-html ma-flow"
+          dangerouslySetInnerHTML={{ __html: _code }}
+          {...hiddenExampleAttributes}
+        />
       </div>
 
       {/* Highlighted code example */}

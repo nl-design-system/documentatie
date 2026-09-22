@@ -14,6 +14,7 @@ interface GuidelineProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
 interface CodeExampleContextType {
   title?: ReactNode;
   type?: string;
+  appearance?: 'do' | 'dont';
 }
 
 export const CodeExampleContext = createContext<CodeExampleContextType>({});
@@ -55,7 +56,7 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
         {_description}
       </CaptionElement>
       <div className="nlds-guideline__example">
-        <CodeExampleContext.Provider value={{ title: title, type: guidelineLabel[appearance] }}>
+        <CodeExampleContext.Provider value={{ title: title, type: guidelineLabel[appearance], appearance }}>
           {children}
         </CodeExampleContext.Provider>
       </div>

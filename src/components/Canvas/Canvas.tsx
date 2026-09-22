@@ -1,4 +1,5 @@
 import { CodeBlockSyntaxHighlighting } from '@site/src/components/CodeBlockSyntaxHighlighting';
+import { CodeExampleContext } from '@site/src/components/Guideline';
 import { Button, Document, Paragraph, Surface } from '@utrecht/component-library-react/dist/css-module';
 import { HTMLContent } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
@@ -8,7 +9,7 @@ import prettierHTML from 'prettier/plugins/html.mjs';
 import prettierPostcss from 'prettier/plugins/postcss.mjs';
 import prettier from 'prettier/standalone';
 import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'react';
-import { isValidElement, useEffect, useId, useState } from 'react';
+import { isValidElement, useContext, useEffect, useId, useState } from 'react';
 import { Fragment } from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import './Canvas.css';
@@ -40,6 +41,14 @@ const SurfaceContainer = ({ children }: PropsWithChildren<object>) => (
 SurfaceContainer.displayName = 'SurfaceContainer';
 
 export interface CanvasProps {
+  /**
+   * Houd het gerenderde voorbeeld buiten de toegankelijkheidsboom en buiten de
+   * tabvolgorde. Standaard aan binnen een `<Guideline appearance="dont">`, want
+   * een voorbeeld van hoe het niet moet, hoort geen echte fout op de pagina te
+   * zetten. Zet `hiddenExample={false}` als een fout voorbeeld toch bedienbaar
+   * moet zijn, bijvoorbeeld omdat je moet kunnen ervaren wat er misgaat.
+   */
+  hiddenExample?: boolean;
   defaultExpandedCode?: boolean;
   displayCode?: boolean;
   code?: string | ReactNode | (() => ReactNode);
@@ -60,9 +69,18 @@ export const Canvas = globalThis.isAstro
       displayCode = true,
       children,
       container = 'document',
+      hiddenExample,
       language,
       designTokens,
     }: CanvasProps) => {
+      const { appearance } = useContext(CodeExampleContext);
+      // Binnen een "niet doen" staat er foute markup in het voorbeeld. Die hoort
+      // niet in de toegankelijkheidsboom en niet in de tabvolgorde van de pagina,
+      // anders is het voorbeeld zelf een fout op de pagina. Het codeblok ernaast
+      // blijft wel gewoon leesbaar en te bedienen.
+      const isHiddenExample = hiddenExample ?? appearance === 'dont';
+      // React 18 kent `inert` nog niet als attribuut, vandaar de lege string en de spread.
+      const hiddenExampleAttributes = isHiddenExample ? { inert: '', 'aria-hidden': true } : {};
       // By default the `children` argument is converted to code.
       const jsxTree = typeof children === 'function' ? children() : children;
       // You can override the code from `children` with the `code` argument.
@@ -111,7 +129,7 @@ export const Canvas = globalThis.isAstro
       return (
         <div className={clsx('nlds-canvas')}>
           {jsxTree && (
-            <div className={clsx('nlds-canvas__example')}>
+            <div className={clsx('nlds-canvas__example')} {...hiddenExampleAttributes}>
               <div className="voorbeeld-theme" style={designTokens}>
                 <Container>
                   <HTMLContent>{jsxTree}</HTMLContent>
