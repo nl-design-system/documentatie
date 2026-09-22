@@ -175,7 +175,7 @@
   min-block-size: 24px;
 }
 
-html .utrecht-link--html-a:any-link:focus {
+html .utrecht-link--html-a:any-link:active {
   background-color: unset;
 }
 
