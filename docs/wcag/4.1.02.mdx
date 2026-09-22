@@ -84,27 +84,27 @@ Een knop, link of invoerveld zonder naam is onbruikbaar voor screenreadergebruik
 **Hoe te testen:** beweeg met een screenreader langs knoppen, links en invoervelden. Wordt elk element aangekondigd met een duidelijke naam?
 
 <Guideline appearance="dont" title="Knop met alleen een icoon, zonder toegankelijke naam.">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <button>
-        <svg viewBox="0 0 24 24">
-          <path d="M3 6h18v2H3z" />
-        </svg>
-      </button>
-    )}
-  </Canvas>
+
+```html
+<button>
+  <svg viewBox="0 0 24 24">
+    <path d="M3 6h18v2H3z" />
+  </svg>
+</button>
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Knop met een aria-label als toegankelijke naam.">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <button aria-label="Menu openen">
-        <svg aria-hidden="true" viewBox="0 0 24 24">
-          <path d="M3 6h18v2H3z" />
-        </svg>
-      </button>
-    )}
-  </Canvas>
+
+```html
+<button aria-label="Menu openen">
+  <svg aria-hidden="true" viewBox="0 0 24 24">
+    <path d="M3 6h18v2H3z" />
+  </svg>
+</button>
+```
+
 </Guideline>
 
 <Guideline appearance="dont" title="Invoerveld zonder label.">
@@ -319,38 +319,26 @@ Sommige ARIA-rollen hebben verplichte ouder- of kindrollen, of verplichte attrib
 **Hoe te testen:** gebruik axe DevTools. Controleer of alle verplichte ouder- en kindrollen aanwezig zijn en of verplichte attributen zijn ingevuld.
 
 <Guideline appearance="dont" title="Tabs zonder tablist als ouder-element.">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <>
-        <div role="tab">Tab 1</div>
-        <div role="tab">Tab 2</div>
-        <div role="tabpanel">Inhoud van tab 1</div>
-      </>
-    )}
-  </Canvas>
+
+```html
+<div role="tab">Tab 1</div>
+<div role="tab">Tab 2</div>
+<div role="tabpanel">Inhoud van tab 1</div>
+```
+
 </Guideline>
 
 <Guideline appearance="do" title="Tabs met tablist als ouder-element en gekoppelde tabpanels.">
-  <Canvas language="html" defaultExpandedCode>
-    {() => (
-      <>
-        <div role="tablist">
-          <button role="tab" aria-selected="true" aria-controls="panel-1">
-            Tab 1
-          </button>
-          <button role="tab" aria-selected="false" aria-controls="panel-2">
-            Tab 2
-          </button>
-        </div>
-        <div id="panel-1" role="tabpanel">
-          Inhoud van tab 1
-        </div>
-        <div id="panel-2" role="tabpanel" hidden>
-          Inhoud van tab 2
-        </div>
-      </>
-    )}
-  </Canvas>
+
+```html
+<div role="tablist">
+  <button role="tab" aria-selected="true" aria-controls="panel-1">Tab 1</button>
+  <button role="tab" aria-selected="false" aria-controls="panel-2">Tab 2</button>
+</div>
+<div id="panel-1" role="tabpanel">Inhoud van tab 1</div>
+<div id="panel-2" role="tabpanel" hidden>Inhoud van tab 2</div>
+```
+
 </Guideline>
 
 **Wie kan dit oplossen:** een developer voegt de ontbrekende ouder- of kindrollen en verplichte attributen toe volgens het [ARIA-patroon](https://www.w3.org/WAI/ARIA/apg/patterns/).
