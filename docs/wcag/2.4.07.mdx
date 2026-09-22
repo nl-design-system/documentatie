@@ -142,19 +142,20 @@ Een element met een donkere achtergrondkleur, een achtergrondafbeelding of een v
 
 <Guideline appearance="dont" title="Zwarte outline op een element met zwarte achtergrond.">
 
-<a
-  href="#"
-  style={{
-    backgroundColor: "black",
-    color: "white",
-    padding: "8px 16px",
-    display: "inline-block",
-    outline: "2px solid black",
-    outlineOffset: "0px",
-  }}
->
-  Lees meer
-</a>
+<div aria-hidden="true">
+  <span
+    style={{
+      backgroundColor: "black",
+      color: "white",
+      padding: "8px 16px",
+      display: "inline-block",
+      outline: "2px solid black",
+      outlineOffset: "0px",
+    }}
+  >
+    Lees meer
+  </span>
+</div>
 
 ```css
 a:focus-visible {
@@ -168,19 +169,20 @@ a:focus-visible {
 
 <Guideline appearance="do" title="Witte outline met offset op een element met zwarte achtergrond.">
 
-<a
-  href="#"
-  style={{
-    backgroundColor: "black",
-    color: "white",
-    padding: "8px 16px",
-    display: "inline-block",
-    outline: "2px solid white",
-    outlineOffset: "2px",
-  }}
->
-  Lees meer
-</a>
+<div aria-hidden="true">
+  <span
+    style={{
+      backgroundColor: "black",
+      color: "white",
+      padding: "8px 16px",
+      display: "inline-block",
+      outline: "2px solid white",
+      outlineOffset: "2px",
+    }}
+  >
+    Lees meer
+  </span>
+</div>
 
 ```css
 a:focus-visible {
@@ -203,19 +205,20 @@ Een negatieve `outline-offset` duwt de outline naar binnen, onder de achtergrond
 
 <Guideline appearance="dont" title="Negatieve offset duwt de outline onder de achtergrondkleur van het element.">
 
-<a
-  href="#"
-  style={{
-    backgroundColor: "black",
-    color: "white",
-    padding: "8px 16px",
-    display: "inline-block",
-    outline: "2px solid black",
-    outlineOffset: "-4px",
-  }}
->
-  Lees meer
-</a>
+<div aria-hidden="true">
+  <span
+    style={{
+      backgroundColor: "black",
+      color: "white",
+      padding: "8px 16px",
+      display: "inline-block",
+      outline: "2px solid black",
+      outlineOffset: "-4px",
+    }}
+  >
+    Lees meer
+  </span>
+</div>
 
 ```css
 a:focus-visible {
@@ -230,19 +233,20 @@ a:focus-visible {
 
 <Guideline appearance="do" title="Positieve offset creëert ruimte zodat de outline zichtbaar is.">
 
-<a
-  href="#"
-  style={{
-    backgroundColor: "black",
-    color: "white",
-    padding: "8px 16px",
-    display: "inline-block",
-    outline: "2px solid black",
-    outlineOffset: "2px",
-  }}
->
-  Lees meer
-</a>
+<div aria-hidden="true">
+  <span
+    style={{
+      backgroundColor: "black",
+      color: "white",
+      padding: "8px 16px",
+      display: "inline-block",
+      outline: "2px solid black",
+      outlineOffset: "2px",
+    }}
+  >
+    Lees meer
+  </span>
+</div>
 
 ```css
 a:focus-visible {
