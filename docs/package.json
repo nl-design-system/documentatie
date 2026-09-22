@@ -19,7 +19,8 @@
   },
   "files": [
     "**/*.md",
-    "dist/guideline-pages.json"
+    "dist/guideline-pages.json",
+    "dist/component-rules.json"
   ],
   "scripts": {
     "prepublishOnly": "pnpm --filter @nl-design-system/website-astro run build"
