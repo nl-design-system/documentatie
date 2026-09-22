@@ -50,48 +50,43 @@ Links die niet onderstreept zijn en alleen door kleur verschillen van de omringe
 **Hoe te testen:** bekijk de pagina en controleer of links in lopende tekst ook zonder kleur herkenbaar zijn, bijvoorbeeld door een onderstreping of vetgedrukt lettertype.
 
 <Guideline appearance="dont" title="Link alleen door kleur te onderscheiden van de omringende tekst.">
-  <Canvas language="html">
-    {() => (
-      <p>
-        Lees meer over{" "}
-        <a href="#" style={{ color: "#2056a5", textDecoration: "none" }}>
-          de Waddenzee
-        </a>{" "}
-        en haar omgeving.
-      </p>
-    )}
-  </Canvas>
+
+```html
+<p>
+  Lees meer over
+  <a href="https://example.com/waddenzee" style="color: #2056a5; text-decoration: none;">de Waddenzee</a>
+  en haar omgeving.
+</p>
+```
+
 </Guideline>
 
-<Guideline appearance="do" title="Link met onderstreping ook zonder kleur herkenbaar.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          Lees meer over{" "}
-          <a href="#" style={{ color: "#2056a5", textDecoration: "underline" }}>
-            de Waddenzee
-          </a>{" "}
-          en haar omgeving.
-        </p>
-        <p>
-          Lees meer over{" "}
-          <a
-            href="#"
-            style={{
-              color: "#2056a5",
-              textDecoration: "none",
-              fontWeight: "bold",
-              borderBottom: "1px solid currentColor",
-            }}
-          >
-            de Waddenzee
-          </a>{" "}
-          en haar omgeving.
-        </p>
-      </>
-    )}
-  </Canvas>
+<Guideline appearance="do" title="Link met onderstreping, ook zonder kleur herkenbaar.">
+
+```html
+<p>
+  Lees meer over
+  <a href="https://example.com/waddenzee" style="color: #2056a5; text-decoration: underline;">de Waddenzee</a>
+  en haar omgeving.
+</p>
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Link vetgedrukt met een onderrand, ook zonder kleur herkenbaar.">
+
+```html
+<p>
+  Lees meer over
+  <a
+    href="https://example.com/waddenzee"
+    style="color: #2056a5; text-decoration: none; font-weight: bold; border-bottom: 1px solid currentColor;"
+    >de Waddenzee</a
+  >
+  en haar omgeving.
+</p>
+```
+
 </Guideline>
 
 **Wie kan dit oplossen:** een developer of designer voegt een onderstreping, vetgedrukt lettertype of andere visuele aanduiding toe aan links in lopende tekst.
@@ -146,7 +141,7 @@ Cellen in een tabel of items in een lijst die alleen een andere achtergrondkleur
         <tbody>
           <tr>
             <td>Project B</td>
-            <td style={{ backgroundColor: "green" }}>Project A</td>
+            <td style={{ backgroundColor: "#008000", color: "#ffffff" }}>Project A</td>
           </tr>
         </tbody>
       </table>
@@ -161,11 +156,11 @@ Cellen in een tabel of items in een lijst die alleen een andere achtergrondkleur
         <tbody>
           <tr>
             <td>Aanvraag 1</td>
-            <td style={{ backgroundColor: "green", color: "white" }}>✓ Goedgekeurd</td>
+            <td style={{ backgroundColor: "#008000", color: "#ffffff" }}>✓ Goedgekeurd</td>
           </tr>
           <tr>
             <td>Aanvraag 2</td>
-            <td style={{ backgroundColor: "red", color: "white" }}>✗ Afgewezen</td>
+            <td style={{ backgroundColor: "#cc0000", color: "#ffffff" }}>✗ Afgewezen</td>
           </tr>
         </tbody>
       </table>
