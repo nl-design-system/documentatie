@@ -54,9 +54,16 @@ Een container heeft een vaste hoogte in pixels. Bij een normale lettergrootte pa
 **Hoe te testen:** vergroot de tekst tot 200% via de browserinstellingen. Wordt er tekst afgesneden? Inspecteer verdachte elementen in de <span lang="en">DevTools</span> en controleer of een combinatie van `height` en `overflow: hidden` de oorzaak is.
 
 <Guideline appearance="dont" title="Vaste hoogte knipt vergrote tekst af">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<div class="card-beschrijving">
+  <h3>Aanmelden</h3>
+  <p>Volg de instructies en maak een account aan om gebruik te kunnen maken van alle functies.</p>
+</div>`}
+  >
     {() => (
-      <div style={{
+      <div aria-hidden="true" style={{
         height: "120px",
         overflow: "hidden",
         border: "1px solid #d0d0d0",
@@ -85,9 +92,16 @@ Een container heeft een vaste hoogte in pixels. Bij een normale lettergrootte pa
 </Guideline>
 
 <Guideline appearance="do" title="Minimale hoogte laat de container meegroeien">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<div class="card-beschrijving">
+  <h3>Aanmelden</h3>
+  <p>Volg de instructies en maak een account aan om gebruik te kunnen maken van alle functies.</p>
+</div>`}
+  >
     {() => (
-      <div style={{
+      <div aria-hidden="true" style={{
         minHeight: "120px",
         border: "1px solid #d0d0d0",
         padding: "0.75rem",
@@ -158,9 +172,17 @@ Bij 200% tekstvergroting wordt tekst groter, maar de omliggende elementen groeie
 **Hoe te testen:** vergroot de tekst tot 200%. Controleer of tekst, knoppen en labels nog steeds leesbaar zijn en niet over andere elementen heen vallen.
 
 <Guideline appearance="dont" title="Vaste afmetingen op een knop, tekst loopt over">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<button class="knop">Verzend formulier</button>`}
+  >
     {() => (
-      <button style={{
+      <span aria-hidden="true" style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        boxSizing: "border-box",
         width: "120px",
         height: "40px",
         overflow: "hidden",
@@ -172,10 +194,9 @@ Bij 200% tekstvergroting wordt tekst groter, maar de omliggende elementen groeie
         fontFamily: "system-ui",
         whiteSpace: "nowrap",
         textOverflow: "clip",
-        cursor: "pointer",
       }}>
         Verzend formulier
-      </button>
+      </span>
     )}
   </Canvas>
 
@@ -190,9 +211,17 @@ Bij 200% tekstvergroting wordt tekst groter, maar de omliggende elementen groeie
 </Guideline>
 
 <Guideline appearance="do" title="Knop groeit mee met de tekst">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<button class="knop">Verzend formulier</button>`}
+  >
     {() => (
-      <button style={{
+      <span aria-hidden="true" style={{
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        boxSizing: "border-box",
         minWidth: "120px",
         padding: "0.5em 1em",
         fontSize: "1.25rem",
@@ -201,10 +230,9 @@ Bij 200% tekstvergroting wordt tekst groter, maar de omliggende elementen groeie
         color: "#1a1a1a",
         borderRadius: "4px",
         fontFamily: "system-ui",
-        cursor: "pointer",
       }}>
         Verzend formulier
-      </button>
+      </span>
     )}
   </Canvas>
 
@@ -228,10 +256,18 @@ Een horizontale navigatiebalk heeft net genoeg ruimte voor de menu-items bij de 
 **Hoe te testen:** vergroot de tekst tot 200%. Kun je alle navigatie-items lezen en aanklikken? Valt er tekst buiten het scherm?
 
 <Guideline appearance="dont" title="Navigatie-items met een vaste breedte">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<nav class="nav">
+  <a class="nav-item" href="https://example.com/">Home</a>
+  <a class="nav-item" href="https://example.com/voorzieningen">Voorzieningen</a>
+  <a class="nav-item" href="https://example.com/diensten">Gemeentelijke diensten</a>
+</nav>`}
+  >
     {() => (
-      <nav style={{ display: "flex", gap: "0.5rem", fontFamily: "system-ui" }}>
-        <a href="#" style={{
+      <nav aria-hidden="true" style={{ display: "flex", gap: "0.5rem", fontFamily: "system-ui" }}>
+        <span style={{
           display: "inline-block",
           width: "150px",
           whiteSpace: "nowrap",
@@ -242,8 +278,8 @@ Een horizontale navigatiebalk heeft net genoeg ruimte voor de menu-items bij de 
           color: "#1a1a1a",
           textDecoration: "none",
           border: "1px solid #d0d0d0",
-        }}>Home</a>
-        <a href="#" style={{
+        }}>Home</span>
+        <span style={{
           display: "inline-block",
           width: "150px",
           whiteSpace: "nowrap",
@@ -254,8 +290,8 @@ Een horizontale navigatiebalk heeft net genoeg ruimte voor de menu-items bij de 
           color: "#1a1a1a",
           textDecoration: "none",
           border: "1px solid #d0d0d0",
-        }}>Voorzieningen</a>
-        <a href="#" style={{
+        }}>Voorzieningen</span>
+        <span style={{
           display: "inline-block",
           width: "150px",
           whiteSpace: "nowrap",
@@ -266,7 +302,7 @@ Een horizontale navigatiebalk heeft net genoeg ruimte voor de menu-items bij de 
           color: "#1a1a1a",
           textDecoration: "none",
           border: "1px solid #d0d0d0",
-        }}>Gemeentelijke diensten</a>
+        }}>Gemeentelijke diensten</span>
       </nav>
     )}
   </Canvas>
@@ -283,30 +319,38 @@ Een horizontale navigatiebalk heeft net genoeg ruimte voor de menu-items bij de 
 </Guideline>
 
 <Guideline appearance="do" title="Navigatie die wrapt bij vergrote tekst">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<nav class="nav">
+  <a class="nav-item" href="https://example.com/">Home</a>
+  <a class="nav-item" href="https://example.com/voorzieningen">Voorzieningen</a>
+  <a class="nav-item" href="https://example.com/diensten">Gemeentelijke diensten</a>
+</nav>`}
+  >
     {() => (
-      <nav style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", fontFamily: "system-ui", maxWidth: "480px" }}>
-        <a href="#" style={{
+      <nav aria-hidden="true" style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", fontFamily: "system-ui", maxWidth: "480px" }}>
+        <span style={{
           padding: "0.5em 1em",
           fontSize: "1.25rem",
           color: "#1a1a1a",
           textDecoration: "none",
           border: "1px solid #d0d0d0",
-        }}>Home</a>
-        <a href="#" style={{
+        }}>Home</span>
+        <span style={{
           padding: "0.5em 1em",
           fontSize: "1.25rem",
           color: "#1a1a1a",
           textDecoration: "none",
           border: "1px solid #d0d0d0",
-        }}>Voorzieningen</a>
-        <a href="#" style={{
+        }}>Voorzieningen</span>
+        <span style={{
           padding: "0.5em 1em",
           fontSize: "1.25rem",
           color: "#1a1a1a",
           textDecoration: "none",
           border: "1px solid #d0d0d0",
-        }}>Gemeentelijke diensten</a>
+        }}>Gemeentelijke diensten</span>
       </nav>
     )}
   </Canvas>
@@ -359,23 +403,32 @@ Een label staat links naast een invoerveld. Bij 200% tekstvergroting wordt het l
 **Hoe te testen:** vergroot de tekst tot 200%. Zijn alle labels bij hun invoervelden nog zichtbaar?
 
 <Guideline appearance="dont" title="Label en invoerveld naast elkaar met vaste breedtes">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<div class="form-groep">
+  <label for="straat">Straatnaam en huisnummer</label>
+  <input id="straat" type="text" />
+</div>`}
+  >
     {() => (
-      <div style={{ display: "flex", alignItems: "center", fontFamily: "system-ui", width: "320px", color: "#1a1a1a" }}>
-        <label htmlFor="straat-fout" style={{
+      <div aria-hidden="true" style={{ display: "flex", alignItems: "center", fontFamily: "system-ui", width: "320px", color: "#1a1a1a" }}>
+        <span style={{
           width: "150px",
           flexShrink: 0,
           fontSize: "1.25rem",
           overflow: "hidden",
           whiteSpace: "nowrap",
           textOverflow: "clip",
-        }}>Straatnaam en huisnummer</label>
-        <input id="straat-fout" type="text" style={{
+        }}>Straatnaam en huisnummer</span>
+        <span style={{
           flex: 1,
           padding: "0.5rem",
           fontSize: "1rem",
           border: "1px solid #767676",
           borderRadius: "4px",
+          backgroundColor: "#ffffff",
+          minHeight: "1.5em",
         }} />
       </div>
     )}
@@ -400,15 +453,24 @@ Een label staat links naast een invoerveld. Bij 200% tekstvergroting wordt het l
 </Guideline>
 
 <Guideline appearance="do" title="Label boven het invoerveld, groeit mee met de tekst">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<div class="form-groep">
+  <label for="straat">Straatnaam en huisnummer</label>
+  <input id="straat" type="text" />
+</div>`}
+  >
     {() => (
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.25rem", fontFamily: "system-ui", width: "320px", color: "#1a1a1a" }}>
-        <label htmlFor="straat-goed" style={{ fontSize: "1.25rem" }}>Straatnaam en huisnummer</label>
-        <input id="straat-goed" type="text" style={{
+      <div aria-hidden="true" style={{ display: "flex", flexDirection: "column", gap: "0.25rem", fontFamily: "system-ui", width: "320px", color: "#1a1a1a" }}>
+        <span style={{ fontSize: "1.25rem" }}>Straatnaam en huisnummer</span>
+        <span style={{
           padding: "0.5rem",
           fontSize: "1rem",
           border: "1px solid #767676",
           borderRadius: "4px",
+          backgroundColor: "#ffffff",
+          minHeight: "1.5em",
         }} />
       </div>
     )}
@@ -435,9 +497,15 @@ Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "vera
 **Hoe te testen:** vergroot de tekst tot 200% en bekijk smalle containers zoals zijbalken, tabelcellen en kaarten. Steekt er tekst uit? Houd ook rekening met andere talen: Duits en Fins kennen langere samenstellingen dan Nederlands.
 
 <Guideline appearance="dont" title="Geen woordafbreking, lange woorden steken uit de container">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<aside class="zijbalk">
+  <p>Bel met onze patiëntenvertegenwoordiger voor meer informatie.</p>
+</aside>`}
+  >
     {() => (
-      <aside style={{
+      <div aria-hidden="true" style={{
         width: "180px",
         border: "1px solid #d0d0d0",
         padding: "0.75rem",
@@ -449,7 +517,7 @@ Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "vera
         <p style={{ margin: 0 }}>
           Bel met onze patiëntenvertegenwoordiger voor meer informatie.
         </p>
-      </aside>
+      </div>
     )}
   </Canvas>
 
@@ -462,9 +530,15 @@ Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "vera
 </Guideline>
 
 <Guideline appearance="do" title="Lange woorden mogen afbreken op woordgrenzen of lettergrepen">
-  <Canvas language="html" defaultExpandedCode>
+  <Canvas
+    language="html"
+    defaultExpandedCode
+    code={`<aside class="zijbalk" lang="nl">
+  <p>Bel met onze patiëntenvertegenwoordiger voor meer informatie.</p>
+</aside>`}
+  >
     {() => (
-      <aside lang="nl" style={{
+      <div aria-hidden="true" lang="nl" style={{
         width: "180px",
         border: "1px solid #d0d0d0",
         padding: "0.75rem",
@@ -478,7 +552,7 @@ Bij 200% tekstvergroting nemen lange woorden meer ruimte in. Een woord als "vera
         <p style={{ margin: 0 }}>
           Bel met onze patiëntenvertegenwoordiger voor meer informatie.
         </p>
-      </aside>
+      </div>
     )}
   </Canvas>
 
