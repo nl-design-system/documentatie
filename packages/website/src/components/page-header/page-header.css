@@ -6,6 +6,13 @@
     display: none;
   }
 
+  .ma-page-header__center .utrecht-link:focus {
+    background-color: transparent;
+  }
+  .ma-page-header__center .utrecht-link:focus-within {
+    background-color: var(--utrecht-link-focus-background-color, transparent);
+  }
+
   .ma-page-header__end {
     display: flex;
     justify-content: flex-end;
