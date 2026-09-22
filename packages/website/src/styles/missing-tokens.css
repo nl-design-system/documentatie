@@ -325,3 +325,13 @@ kbd {
   background-repeat: no-repeat;
   padding-inline-end: 24px;
 }
+
+/* Poor man's margin-trim, block-start */
+:is(.utrecht-table__cell, .ma-session-table__speakers) > :first-child {
+  margin-block-start: 0;
+}
+
+/* Poor man's margin-trim, block-end */
+:is(.utrecht-table__cell, .ma-session-table__speakers) > :last-child {
+  margin-block-end: 0;
+}
