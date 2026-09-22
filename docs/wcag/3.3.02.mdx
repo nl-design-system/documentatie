@@ -55,13 +55,9 @@ Elk invoerveld heeft een zichtbaar label dat beschrijft wat de bezoeker moet inv
 **Hoe te testen:** bekijk het formulier. Heeft elk veld een zichtbaar label?
 
 <Guideline appearance="dont" title="Invoerveld zonder zichtbaar label">
-  <Canvas language="html">
-    {() => (
-      <p>
-        <input type="email" placeholder="E-mailadres" />
-      </p>
-    )}
-  </Canvas>
+  ```html
+  <input type="email" placeholder="E-mailadres" />
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Invoerveld met een zichtbaar en gekoppeld label">
@@ -116,21 +112,11 @@ Placeholders zijn niet bedoeld als vervanging van een label.
 **Hoe te testen:** begin met typen in een veld dat alleen een placeholder heeft. Verdwijnt de placeholder zodra je begint te typen?
 
 <Guideline appearance="dont" title="Placeholder als enige aanduiding van het veld">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <input type="text" placeholder="Voornaam" />
-        </p>
-        <p>
-          <input type="text" placeholder="Achternaam" />
-        </p>
-        <p>
-          <input type="email" placeholder="E-mailadres" />
-        </p>
-      </>
-    )}
-  </Canvas>
+  ```html
+  <input type="text" placeholder="Voornaam" />
+  <input type="text" placeholder="Achternaam" />
+  <input type="email" placeholder="E-mailadres" />
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Zichtbaar label met een placeholder als aanvullend voorbeeld">
