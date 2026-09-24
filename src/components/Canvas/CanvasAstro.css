@@ -1,9 +1,5 @@
 /* stylelint-disable-next-line selector-class-pattern */
 .voorbeeld-theme {
-  /* missing design tokens in voorbeeld-design-tokens for the new Utrecht Root component that replaces Utrecht Document */
-  --utrecht-root-background-color: var(--utrecht-document-background-color);
-  --utrecht-root-color: var(--utrecht-document-color);
-
   color-scheme: light;
 }
 
