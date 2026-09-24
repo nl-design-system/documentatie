@@ -219,6 +219,27 @@ html .utrecht-link--html-a:any-link:active {
   text-align: end;
 }
 
+.denhaag-side-navigation {
+  border-inline-end-color: var(--basis-color-accent-1-bg-active);
+  border-inline-end-style: solid;
+  border-inline-end-width: var(--basis-border-width-sm);
+}
+
+dialog .denhaag-side-navigation {
+  /* no border inside the drawer */
+  border-inline-end-style: none;
+}
+
+.denhaag-side-navigation__expand-separator {
+  display: none;
+}
+
+.denhaag-side-navigation__item:has(.denhaag-side-navigation__expand-button--expanded) {
+  border-inline-start-color: var(--basis-color-default-border-subtle);
+  border-inline-start-style: solid;
+  border-inline-start-width: var(--basis-border-width-sm);
+}
+
 .denhaag-side-navigation__link {
   box-sizing: border-box;
 
@@ -242,6 +263,18 @@ html .utrecht-link--html-a:any-link:active {
   }
 }
 
+@media (forced-colors: none) {
+  .denhaag-side-navigation__link {
+    padding-inline-start: calc(var(--basis-space-inline-md) - var(--basis-border-width-lg));
+    translate: 0;
+  }
+}
+
+.denhaag-icon-button {
+  min-block-size: 44px;
+  min-inline-size: 44px;
+}
+
 .denhaag-side-navigation__link--current {
   /* denhaag.side-navigation.link.current.background-color */
   background-color: var(--basis-color-accent-1-bg-default);
@@ -255,8 +288,11 @@ html .utrecht-link--html-a:any-link:active {
   }
 }
 
-.denhaag-side-navigation__link:hover {
-  text-decoration: underline;
+/* The proper fix would be to change the Den Haag component to not render a <a> element when there is no href in the data */
+.denhaag-side-navigation__link:not(:any-link) {
+  color: unset !important;
+  cursor: default !important;
+  text-decoration: none !important;
 }
 
 .denhaag-side-navigation__link:focus-visible {
@@ -267,11 +303,9 @@ html .utrecht-link--html-a:any-link:active {
   color: var(--basis-focus-color);
 }
 
-/* The proper fix would be to change the Den Haag component to not render a <a> element when there is no href in the data */
-.denhaag-side-navigation__link:not([href]) {
-  color: unset !important;
-  cursor: default !important;
-  text-decoration: none !important;
+.denhaag-side-navigation__link:any-link:hover {
+  background-color: var(--basis-color-action-1-bg-hover);
+  text-decoration: underline;
 }
 
 .denhaag-side-navigation__expand-button:hover {
@@ -289,12 +323,10 @@ html .utrecht-link--html-a:any-link:active {
   /* denhaag.side-navigation.expand-button.active.background-color */
   background-color: var(--basis-color-action-1-bg-active);
 }
+
 .denhaag-side-navigation__expand-button:focus-visible {
   /* denhaag.side-navigation.expand-button.focus.background-color */
   background-color: var(--basis-focus-background-color);
-
-  /* denhaag.side-navigation.expand-button.focus.border */
-  border: var(--denhaag-focus-border);
 
   /* denhaag.side-navigation.expand-button.focus.color */
   color: var(--basis-focus-color);
