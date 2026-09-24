@@ -1,4 +1,16 @@
 {
+  "KoenDeGreef": {
+    "name": "Koen de Greef",
+    "organisation": "FIDDS Design",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-KoenDeGreef.jpg",
+      "alt": "Koen de Greef"
+    },
+    "description": {
+      "nl": "Koen is Head of Design Services bij FIDDS Design en werkt op het snijvlak van design en AI. Met ruim tien jaar ervaring in Enterprise UX helpt hij organisaties om vanuit een menselijk perspectief te ontwerpen met en voor AI, zodat de technologie die ze bouwen ook echt gebruikt wordt. Daarvoor was hij design strateeg bij NS, waar hij werkte aan digitale toegankelijkheid en aan hoe design binnen de organisatie georganiseerd was. AI Design Systems zijn de nieuwste manier waarop hij teams helpt snel te bouwen zonder in te leveren op kwaliteit."
+    },
+    "language": "nl"
+  },
   "DrStephDriver": {
     "name": "Dr Steph Driver",
     "organisation": "Open Library of Humanities",
@@ -83,6 +95,19 @@
     "description": {
       "en": "Javier is a product designer specialising in design systems. Originally from Argentina, he has spent nearly 20 years in Europe working with companies like Wise, UEFA, Telefónica and Zara. He now runs his own independent design practice, helping teams build and scale their design systems.",
       "nl": "Javier is een productontwerper die gespecialiseerd is in designsystemen. Hij komt oorspronkelijk uit Argentinië en heeft bijna twintig jaar in Europa gewerkt voor bedrijven als Wise, UEFA, Telefónica en Zara. Tegenwoordig runt hij zijn eigen onafhankelijke ontwerppraktijk, waarin hij teams helpt bij het opzetten en opschalen van hun designsystemen."
+    },
+    "language": "en"
+  },
+  "EirikBacker": {
+    "name": "Eirik Backer",
+    "organisation": "Norwegian Digitalisation Agency",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-EirikBacker.jpeg",
+      "alt": "Eirik Backer"
+    },
+    "description": {
+      "en": "Eirik is a front-end developer and former designer with a passion for web standards and accessibility. He currently works at the Norwegian Digitalisation Agency.",
+      "nl": "Eirik is front-end developer en voormalig ontwerper met een passie voor webstandaarden en toegankelijkheid. Hij werkt momenteel bij het Noorse Agentschap voor Digitalisering."
     },
     "language": "en"
   }
