@@ -64,6 +64,7 @@
   --utrecht-button-padding-block-start: var(--nl-button-padding-block-start);
   --utrecht-button-padding-inline-end: var(--nl-button-padding-inline-end);
   --utrecht-button-padding-inline-start: var(--nl-button-padding-inline-start);
+  --utrecht-form-fieldset-legend-color: var(--utrecht-document-color);
   --utrecht-nav-bar-link-padding-block-end: var(--basis-space-block-md);
   --utrecht-nav-bar-link-padding-block-start: var(--basis-space-block-md);
   --utrecht-separator-block-size: var(--basis-size-5xs);
@@ -71,6 +72,7 @@
   --utrecht-table-cell-padding-block-start: var(--basis-space-block-sm);
   --utrecht-table-cell-padding-inline-end: var(--basis-space-inline-md);
   --utrecht-table-cell-padding-inline-start: var(--basis-space-inline-md);
+  --utrecht-table-header-cell-color: var(--utrecht-document-color);
 }
 
 /**
