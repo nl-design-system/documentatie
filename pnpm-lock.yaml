@@ -527,6 +527,9 @@ importers:
       '@nl-design-system-community/ma-design-tokens':
         specifier: 7.1.1
         version: 7.1.1
+      '@nl-design-system-unstable/voorbeeld-design-tokens':
+        specifier: 3.4.0
+        version: 3.4.0
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
