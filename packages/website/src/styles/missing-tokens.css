@@ -8,17 +8,17 @@
   --ams-unordered-list-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
   --basis-form-control-padding-block-end: var(--basis-space-block-sm) !important;
   --basis-form-control-padding-block-start: var(--basis-space-block-sm) !important;
-  --basis-form-control-padding-inline-end: var(--basis-space-inline-md) !important;
-  --basis-form-control-padding-inline-start: var(--basis-space-inline-md) !important;
-  --denhaag-side-navigation-link-active-font-weight: 400;
-  --denhaag-side-navigation-list-margin-inline-start: var(--basis-space-inline-xl);
-  --denhaag-side-navigation-mobile-display: block;
-  --denhaag-side-navigation-link-padding-block-end: var(--basis-space-block-sm);
-  --denhaag-side-navigation-link-padding-block-start: var(--basis-space-block-sm);
+  --basis-form-control-padding-inline-end: var(--basis-space-inline-2xs);
+  --basis-form-control-padding-inline-start: var(--basis-space-inline-2xs);
   --denhaag-icon-button-padding-block-end: var(--basis-space-block-sm);
   --denhaag-icon-button-padding-block-start: var(--basis-space-block-sm);
   --denhaag-icon-button-padding-inline-end: var(--basis-space-inline-sm);
   --denhaag-icon-button-padding-inline-start: var(--basis-space-inline-sm);
+  --denhaag-side-navigation-link-active-font-weight: 400;
+  --denhaag-side-navigation-link-padding-block-end: var(--basis-space-block-sm);
+  --denhaag-side-navigation-link-padding-block-start: var(--basis-space-block-sm);
+  --denhaag-side-navigation-list-margin-inline-start: var(--basis-space-inline-xl);
+  --denhaag-side-navigation-mobile-display: block;
   --ma-body-copy-items-max-inline-size: 65ch;
   --ma-estafette-badge-border-width: 1px;
   --ma-layout-column-gap: var(--basis-space-column-4xl);
@@ -40,24 +40,39 @@
   --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
   --ma-table-of-contents-highlighted-padding-inline-end: var(--basis-space-inline-xl);
   --ma-table-of-contents-highlighted-padding-inline-start: var(--basis-space-inline-xl);
+  --nl-button-column-gap: var(--basis-space-inline-xs);
   --nl-button-icon-only-padding-block-start: var(--basis-space-block-sm);
   --nl-button-icon-only-padding-inline-end: var(--basis-space-inline-sm);
   --nl-button-padding-block-end: var(--basis-space-block-md);
   --nl-button-padding-block-start: var(--basis-space-block-md);
   --nl-button-padding-inline-end: var(--basis-space-inline-md);
   --nl-button-padding-inline-start: var(--basis-space-inline-md);
+  --nl-code-block-padding-block: var(--basis-space-block-md);
+  --nl-code-block-padding-inline: var(--basis-space-inline-md);
   --nl-skip-link-padding-block: var(--basis-space-block-md);
   --nl-skip-link-padding-inline: var(--basis-space-inline-lg);
   --rhc-card-inline-size: 100% !important;
+  --rhc-card-padding-block-end: var(--basis-space-block-lg);
+  --rhc-card-padding-block-start: var(--basis-space-block-md);
+  --rhc-card-padding-inline-end: var(--basis-space-inline-lg);
+  --rhc-card-padding-inline-start: var(--basis-space-inline-lg);
   --utrecht-breadcrumb-nav-item-padding-block-end: var(--basis-space-block-sm);
   --utrecht-breadcrumb-nav-item-padding-block-start: var(--basis-space-block-sm);
+  --utrecht-breadcrumb-nav-item-padding-inline-end: var(--basis-space-inline-xs);
+  --utrecht-breadcrumb-nav-item-padding-inline-start: var(--basis-space-inline-xs);
   --utrecht-button-padding-block-end: var(--nl-button-padding-block-end);
   --utrecht-button-padding-block-start: var(--nl-button-padding-block-start);
   --utrecht-button-padding-inline-end: var(--nl-button-padding-inline-end);
   --utrecht-button-padding-inline-start: var(--nl-button-padding-inline-start);
+  --utrecht-form-fieldset-legend-color: var(--utrecht-document-color);
   --utrecht-nav-bar-link-padding-block-end: var(--basis-space-block-md);
   --utrecht-nav-bar-link-padding-block-start: var(--basis-space-block-md);
   --utrecht-separator-block-size: var(--basis-size-5xs);
+  --utrecht-table-cell-padding-block-end: var(--basis-space-block-sm);
+  --utrecht-table-cell-padding-block-start: var(--basis-space-block-sm);
+  --utrecht-table-cell-padding-inline-end: var(--basis-space-inline-md);
+  --utrecht-table-cell-padding-inline-start: var(--basis-space-inline-md);
+  --utrecht-table-header-cell-color: var(--utrecht-document-color);
 }
 
 /**
@@ -175,7 +190,7 @@
   min-block-size: 24px;
 }
 
-html .utrecht-link--html-a:any-link:focus {
+html .utrecht-link--html-a:any-link:active {
   background-color: unset;
 }
 
@@ -324,4 +339,14 @@ kbd {
   background-position: right center;
   background-repeat: no-repeat;
   padding-inline-end: 24px;
+}
+
+/* Poor man's margin-trim, block-start */
+:is(.utrecht-table__cell, .ma-session-table__speakers) > :first-child {
+  margin-block-start: 0;
+}
+
+/* Poor man's margin-trim, block-end */
+:is(.utrecht-table__cell, .ma-session-table__speakers) > :last-child {
+  margin-block-end: 0;
 }

@@ -38,6 +38,18 @@ export const BareLink = ({ children, ...props }: PropsWithChildren<Props>) => {
   );
 };
 
-export const Link = ({ className, ...props }: PropsWithChildren<Props>) => {
-  return <BareLink className={clsx('utrecht-link', 'utrecht-link--html-a', className)} {...props} />;
+export const Link = ({ className, boxContent, ...props }: PropsWithChildren<Props & { boxContent?: boolean }>) => {
+  return (
+    <BareLink
+      className={clsx(
+        'utrecht-link',
+        'utrecht-link--html-a',
+        {
+          'utrecht-link--box-content': boxContent,
+        },
+        className,
+      )}
+      {...props}
+    />
+  );
 };
