@@ -615,10 +615,10 @@
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(T, { ...e }) }) : T(e);
    }
-   const R = JSON.parse('{"D":"Paragraph heeft geen inhoud"}');
+   const R = JSON.parse('{"D":"Alinea heeft geen inhoud"}');
    function D(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, s.jsx)(n.p, { children: 'Er is een Paragraph-component zonder inhoud.' });
+    return (0, s.jsx)(n.p, { children: 'Er is een alinea zonder inhoud.' });
    }
    function G(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
@@ -626,7 +626,7 @@
    }
    function N(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, s.jsx)(n.p, { children: 'Verwijder de lege Paragraph.' });
+    return (0, s.jsx)(n.p, { children: 'Verwijder de lege alinea.' });
    }
    function S(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
@@ -641,18 +641,18 @@
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(L, { ...e }) }) : L(e);
    }
-   function P(e) {
+   function W(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
     return (0, s.jsx)(n.p, { children: 'Geef aan welke taal dit stuk tekst heeft.' });
    }
-   function W(e = {}) {
+   function P(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
-    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(P, { ...e }) }) : P(e);
+    return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(W, { ...e }) }) : W(e);
    }
-   const H = JSON.parse('{"D":"Meerdere alinea\'s in \xe9\xe9n Paragraph"}');
+   const H = JSON.parse('{"D":"Meerdere tekstblokken in \xe9\xe9n alinea"}');
    function _(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, s.jsx)(n.p, { children: "De Paragraph bevat meerdere alinea's die zijn gescheiden met witregels. Hierdoor is er in code geen onderscheid tussen de alinea's. Een screenreader mist daardoor natuurlijke pauze-momenten in de tekst tijdens het voorlezen. Daarnaast kan een screenreadergebruiker niet met een sneltoets naar de volgende paragraaf gaan, omdat de teksten niet zijn opgemaakt met losse Paragraphs." });
+    return (0, s.jsx)(n.p, { children: 'Meerdere tekstblokken zijn alleen gescheiden met witregels, in plaats van dat ze ieder als aparte alinea zijn opgemaakt. Hierdoor is er in code geen onderscheid tussen de tekstblokken. Een screenreader mist daardoor natuurlijke pauze-momenten in de tekst tijdens het voorlezen. Daarnaast kan een screenreadergebruiker niet met een sneltoets naar het volgende tekstblok gaan, omdat de tekstblokken samen als \xe9\xe9n alinea opgemaakt zijn.' });
    }
    function B(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
@@ -660,13 +660,13 @@
    }
    function O(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, s.jsx)(n.p, { children: 'Plaats elke alinea in een eigen Paragraph.' });
+    return (0, s.jsx)(n.p, { children: 'Plaats ieder tekstblok in een eigen alinea.' });
    }
    function I(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(O, { ...e }) }) : O(e);
    }
-   const M = JSON.parse('{"D":"Hele tekst in Paragraph is dikgedrukt"}');
+   const M = JSON.parse('{"D":"Hele alinea is dikgedrukt"}');
    function E(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
     return (0, s.jsx)(n.p, { children: 'De hele alinea is dikgedrukt. Hierdoor krijgt de tekst in code een andere betekenis, namelijk dat de tekst belangrijker is dan tekst die niet dikgedrukt is.' });
@@ -685,7 +685,7 @@
    }
    function U(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, s.jsx)(n.p, { children: 'Wil je een kop toevoegen boven een sectie? Gebruik dan een Heading van het juiste niveau.' });
+    return (0, s.jsx)(n.p, { children: 'Wil je een kop toevoegen boven een sectie? Gebruik dan een kop van het juiste niveau.' });
    }
    function J(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
@@ -699,7 +699,7 @@
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(K, { ...e }) }) : K(e);
    }
-   const q = JSON.parse('{"D":"Hele paragraaf is schuingedrukt"}');
+   const q = JSON.parse('{"D":"Hele alinea is schuingedrukt"}');
    function Q(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
     return (0, s.jsx)(n.p, { children: 'De hele alinea is schuingedrukt. Hierdoor krijgt de tekst in code een andere betekenis, namelijk dat de tekst extra nadruk nodig heeft.' });
@@ -726,13 +726,13 @@
    }
    function se(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, s.jsx)(n.p, { children: 'Wil je de hele alinea anders vormgeven omdat de tekst een citaat is? Verwijder dan de schuingedrukte opmaak in de alinea en plaats de tekst ook boven of onder de Paragraph in een Pull Quote.' });
+    return (0, s.jsx)(n.p, { children: 'Wil je de hele alinea anders vormgeven omdat de tekst een citaat is? Verwijder dan de schuingedrukte opmaak in de alinea en zet de tekst in een citaatblok.' });
    }
    function re(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, s.jsx)(n, { ...e, children: (0, s.jsx)(se, { ...e }) }) : se(e);
    }
-   const ie = JSON.parse('{"D":"Tekst in de Paragraph is onderstreept"}');
+   const ie = JSON.parse('{"D":"Tekst is onderstreept"}');
    function oe(e) {
     const n = { p: 'p', ...(0, r.R)(), ...e.components };
     return (0, s.jsx)(n.p, { children: 'De tekst is onderstreept, maar geen link. Bezoekers verwachten dat onderstreepte woorden in een zin links zijn waar ze op kunnen klikken.' });
@@ -777,7 +777,7 @@
     Ne = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...c.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...o.RM, { value: 'Veel gemaakte fouten bij het inzetten van Paragraph', id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', level: 2 }, { value: 'Oplossing', id: 'oplossing', level: 4 }, { value: 'Oplossing', id: 'oplossing-1', level: 4 }, { value: 'Oplossing', id: 'oplossing-2', level: 4 }, { value: 'Oplossing', id: 'oplossing-3', level: 4 }, { value: 'Oplossing', id: 'oplossing-4', level: 4 }, { value: 'Oplossing', id: 'oplossing-5', level: 4 }, { value: 'Oplossing', id: 'oplossing-6', level: 4 }, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
    function Se(e) {
     const n = { h2: 'h2', h3: 'h3', h4: 'h4', p: 'p', ...(0, r.R)(), ...e.components };
-    return (0, s.jsxs)(s.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, s.jsx)(je.Fc, { component: Ge, headingLevel: 1, description: Re }), '\n', (0, s.jsx)(he.e, { component: Ge }), '\n', (0, s.jsx)(ge.Zp, { className: 'ma-implementation-card', children: (0, s.jsxs)(ge.Wu, { children: [(0, s.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, s.jsxs)(ue.d, { children: [(0, s.jsxs)(ue.P, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, s.jsx)(pe.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, s.jsxs)(ue.P, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, s.jsx)(pe.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, s.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, s.jsxs)(ue.d, { children: [(0, s.jsxs)(ue.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie', children: [(0, s.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, s.jsxs)(ue.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/paragraph--documentatie', children: [(0, s.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, s.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'npm' }), (0, s.jsxs)(ue.d, { children: [(0, s.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: [(0, s.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-css'] }), (0, s.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: [(0, s.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-react'] }), (0, s.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-tokens', children: [(0, s.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-tokens'] })] })] }) }), '\n', (0, s.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, s.jsx)(c.Ay, {}), '\n', (0, s.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, s.jsx)(l.Ay, {}), '\n', (0, s.jsx)(xe.b, { headingLevel: '4', children: k.map(({ component: e, ...n }) => (0, s.jsx)(xe.e, { ...n, children: (0, s.jsx)(e, {}) })) }), '\n', (0, s.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, s.jsx)(o.Ay, {}), '\n', (0, s.jsx)(xe.b, { headingLevel: '4', children: b.map(({ component: e, ...n }) => (0, s.jsx)(xe.e, { ...n, children: (0, s.jsx)(e, {}) })) }), '\n', (0, s.jsx)(n.h2, { id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', children: 'Veel gemaakte fouten bij het inzetten van Paragraph' }), '\n', (0, s.jsx)(n.p, { children: 'Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.' }), '\n', (0, s.jsx)(me.DZ, { level: 3, children: v.D }), '\n', (0, s.jsx)(y, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing', children: 'Oplossing' }), '\n', (0, s.jsx)(C, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: R.D }), '\n', (0, s.jsx)(G, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-1', children: 'Oplossing' }), '\n', (0, s.jsx)(S, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: F.D }), '\n', (0, s.jsx)(z, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-2', children: 'Oplossing' }), '\n', (0, s.jsx)(W, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: H.D }), '\n', (0, s.jsx)(B, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-3', children: 'Oplossing' }), '\n', (0, s.jsx)(I, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: M.D }), '\n', (0, s.jsx)(V, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-4', children: 'Oplossing' }), '\n', (0, s.jsx)(Z, {}), '\n', (0, s.jsx)(J, {}), '\n', (0, s.jsx)(X, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: q.D }), '\n', (0, s.jsx)(Y, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-5', children: 'Oplossing' }), '\n', (0, s.jsx)(ne, {}), '\n', (0, s.jsx)(ae, {}), '\n', (0, s.jsx)(re, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: ie.D }), '\n', (0, s.jsx)(le, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-6', children: 'Oplossing' }), '\n', (0, s.jsx)(de, {}), '\n', (0, s.jsx)(we.o, { omitH1: !0, headingLevel: 2, children: (0, s.jsx)(be, {}) }), '\n', (0, s.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, s.jsx)(fe.B, { tokens: ve }), '\n', (0, s.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, s.jsx)(je.VK, { component: Ge, headingLevel: 3 }), '\n', (0, s.jsx)(je.$9, { component: Ge, headingLevel: 2 }), '\n', (0, s.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, s.jsx)(je.mu, { component: Ge, headingLevel: 3 }), '\n', (0, s.jsx)(je.K_, { component: Ge })] });
+    return (0, s.jsxs)(s.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', (0, s.jsx)(je.Fc, { component: Ge, headingLevel: 1, description: Re }), '\n', (0, s.jsx)(he.e, { component: Ge }), '\n', (0, s.jsx)(ge.Zp, { className: 'ma-implementation-card', children: (0, s.jsxs)(ge.Wu, { children: [(0, s.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, s.jsxs)(ue.d, { children: [(0, s.jsxs)(ue.P, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=2-4', children: [(0, s.jsx)(pe.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, s.jsxs)(ue.P, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=2-4', children: [(0, s.jsx)(pe.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, s.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, s.jsxs)(ue.d, { children: [(0, s.jsxs)(ue.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-paragraph--documentatie', children: [(0, s.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, s.jsxs)(ue.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/paragraph--documentatie', children: [(0, s.jsx)(pe.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, s.jsx)(me.DZ, { level: 2, appearance: 'level-4', children: 'npm' }), (0, s.jsxs)(ue.d, { children: [(0, s.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-css', children: [(0, s.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-css'] }), (0, s.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-react', children: [(0, s.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-react'] }), (0, s.jsxs)(ue.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/paragraph-tokens', children: [(0, s.jsx)(pe.r, { brand: 'npm' }), ' @nl-design-system-candidate/paragraph-tokens'] })] })] }) }), '\n', (0, s.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, s.jsx)(c.Ay, {}), '\n', (0, s.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, s.jsx)(l.Ay, {}), '\n', (0, s.jsx)(xe.b, { headingLevel: '4', children: k.map(({ component: e, ...n }) => (0, s.jsx)(xe.e, { ...n, children: (0, s.jsx)(e, {}) })) }), '\n', (0, s.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, s.jsx)(o.Ay, {}), '\n', (0, s.jsx)(xe.b, { headingLevel: '4', children: b.map(({ component: e, ...n }) => (0, s.jsx)(xe.e, { ...n, children: (0, s.jsx)(e, {}) })) }), '\n', (0, s.jsx)(n.h2, { id: 'veel-gemaakte-fouten-bij-het-inzetten-van-paragraph', children: 'Veel gemaakte fouten bij het inzetten van Paragraph' }), '\n', (0, s.jsx)(n.p, { children: 'Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.' }), '\n', (0, s.jsx)(me.DZ, { level: 3, children: v.D }), '\n', (0, s.jsx)(y, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing', children: 'Oplossing' }), '\n', (0, s.jsx)(C, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: R.D }), '\n', (0, s.jsx)(G, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-1', children: 'Oplossing' }), '\n', (0, s.jsx)(S, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: F.D }), '\n', (0, s.jsx)(z, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-2', children: 'Oplossing' }), '\n', (0, s.jsx)(P, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: H.D }), '\n', (0, s.jsx)(B, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-3', children: 'Oplossing' }), '\n', (0, s.jsx)(I, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: M.D }), '\n', (0, s.jsx)(V, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-4', children: 'Oplossing' }), '\n', (0, s.jsx)(Z, {}), '\n', (0, s.jsx)(J, {}), '\n', (0, s.jsx)(X, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: q.D }), '\n', (0, s.jsx)(Y, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-5', children: 'Oplossing' }), '\n', (0, s.jsx)(ne, {}), '\n', (0, s.jsx)(ae, {}), '\n', (0, s.jsx)(re, {}), '\n', (0, s.jsx)(me.DZ, { level: 3, children: ie.D }), '\n', (0, s.jsx)(le, {}), '\n', (0, s.jsx)(n.h4, { id: 'oplossing-6', children: 'Oplossing' }), '\n', (0, s.jsx)(de, {}), '\n', (0, s.jsx)(we.o, { omitH1: !0, headingLevel: 2, children: (0, s.jsx)(be, {}) }), '\n', (0, s.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, s.jsx)(fe.B, { tokens: ve }), '\n', (0, s.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, s.jsx)(je.VK, { component: Ge, headingLevel: 3 }), '\n', (0, s.jsx)(je.$9, { component: Ge, headingLevel: 2 }), '\n', (0, s.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, s.jsx)(je.mu, { component: Ge, headingLevel: 3 }), '\n', (0, s.jsx)(je.K_, { component: Ge })] });
    }
    function Fe(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
