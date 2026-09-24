@@ -25,13 +25,13 @@ Design tokens zijn ontwerpkeuzes die je vastlegt als data in de vorm van een 'na
 
 **Visueel voorbeeld**
 
-![De kleur #FA5757 verwijst naar 'color.red.500', het lettertype Oswald verwijst naar 'typography.primary.font-family'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_example.png)
+![De kleur #FA5757 verwijst naar 'example.color.red.500', het lettertype Oswald verwijst naar 'example.typography.primary.font-family'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_example.png)
 
 **Code voorbeeld**
 
 ```json
 {
-  "voorbeeld": {
+  "example": {
     "color": {
       "red": {
         "500": {
@@ -76,7 +76,7 @@ Bij NL Design System verdelen we design tokens over drie niveaus.
 
 Dit zijn alle visuele ‘opties’ van een huisstijl. Met een waarde zoals bijvoorbeeld de kleur rood, groen of blauw of een serif dan wel sans-serif font-family. Een breed scala aan opties waaruit je kunt kiezen voor de andere niveaus. Kortom, geen 50 tinten grijs meer. In de naamgeving van Brand tokens ben je helemaal vrij. Zo kun je aansluiten bij naamgeving die binnen je organisatie al bestaat.
 
-![De kleur #1B59A4 verwijst naar 'org.kleur.donkerblauw' met het label 'Brand'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_design-tokens_brand.png)
+![De kleur #1B59A4 verwijst naar 'example.color.donkerblauw' met het label 'Brand'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_design-tokens_brand.png)
 
 [Bekijk de richtlijnen voor stijl](/richtlijnen/stijl)
 
@@ -84,7 +84,7 @@ Dit zijn alle visuele ‘opties’ van een huisstijl. Met een waarde zoals bijvo
 
 Dit zijn vaak terugkerende visuele eigenschappen die niet aan één specifiek component gebonden zijn. Ze halen hun waarde uit de Brand tokens en hebben een semantische betekenis. Denk aan de font-familie voor kopteksten maar ook aan kleuren voor feedback of interactie. Die wil je consistent toepassen binnen je interface. Wat weer bijdraagt aan het WCAG-succescriterium [3.2.4 Consistente identificatie](/wcag/3.2.4). Die beschrijft dat componenten met dezelfde functionaliteit zich over verschillende pagina’s op dezelfde manier dienen te gedragen.
 
-![De kleur #1B59A4 verwijst naar 'org.kleur.donkerblauw' met het label 'Brand'. 'org.kleur.donkerblauw' verwijst naar 'basis.color.action-1-inverse.bg-default' met het label 'Common'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_design-tokens_common.png)
+![De kleur #1B59A4 verwijst naar 'example.color.donkerblauw' met het label 'Brand'. 'example.color.donkerblauw' verwijst naar 'basis.color.action-1-inverse.bg-default' met het label 'Common'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_design-tokens_common.png)
 
 :::tip[Tip]
 
@@ -98,7 +98,7 @@ Vanuit NL Design System bieden we organisaties een 'basis-set' van Common tokens
 
 Dit zijn alle tokens die nodig zijn voor een component. Ze verkrijgen hun waarde vanuit het Common niveau. Denk aan de achtergrondkleur van een button of de randkleur van een invulveld bij een foutmelding.
 
-![De kleur #1B59A4 verwijst naar 'org.kleur.donkerblauw' met het label 'Brand'. 'org.kleur.donkerblauw' verwijst naar 'basis.color.action-1-inverse.bg-default' met het label 'Common'. 'basis.color.action-1-inverse.bg-default' verwijst naar 'nl.button.primary.background-color' met het label 'Component'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_design-tokens_component.png)
+![De kleur #1B59A4 verwijst naar 'example.color.donkerblauw' met het label 'Brand'. 'example.color.donkerblauw' verwijst naar 'basis.color.action-1-inverse.bg-default' met het label 'Common'. 'basis.color.action-1-inverse.bg-default' verwijst naar 'nl.button.primary.background-color' met het label 'Component'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_design-tokens_component.png)
 
 [Bekijk het componenten overzicht](/componenten/)
 
@@ -190,49 +190,49 @@ En dezelfde design tokens in een JSON opmaak. Er zijn geen waardes ingesteld.
   "nl": {
     "button": {
       "border-radius": {
-        "value": "x"
+        "value": "basis-token-x"
       },
       "border-width": {
-        "value": "x"
+        "value": "basis-token-x"
       },
       "font-family": {
-        "value": "x"
+        "value": "basis-token-x"
       },
       "font-size": {
-        "value": "x"
+        "value": "basis-token-x"
       },
       "font-weight": {
-        "value": "x"
+        "value": "basis-token-x"
       },
       "line-height": {
-        "value": "x"
+        "value": "basis-token-x"
       },
       "icon": {
         "size": {
-          "value": "x"
+          "value": "basis-token-x"
         }
       },
       "primary": {
         "background-color": {
-          "value": "x"
+          "value": "basis-token-x"
         },
         "color": {
-          "value": "x"
+          "value": "basis-token-x"
         },
         "disabled": {
           "background-color": {
-            "value": "x"
+            "value": "basis-token-x"
           },
           "color": {
-            "value": "x"
+            "value": "basis-token-x"
           }
         },
         "hover": {
           "background-color": {
-            "value": "x"
+            "value": "basis-token-x"
           },
           "color": {
-            "value": "x"
+            "value": "basis-token-x"
           }
         }
       }
