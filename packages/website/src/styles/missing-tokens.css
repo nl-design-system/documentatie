@@ -73,6 +73,13 @@
   --utrecht-table-cell-padding-inline-end: var(--basis-space-inline-md);
   --utrecht-table-cell-padding-inline-start: var(--basis-space-inline-md);
   --utrecht-table-header-cell-color: var(--utrecht-document-color);
+  --nl-link-text-underline-offset: 0.3ex;
+  --nl-link-hover-text-decoration-thickness: 0.3ex;
+  --nl-link-hover-text-decoration-line: underline;
+  --utrecht-link-hover-text-decoration-thickness: var(--nl-link-hover-text-decoration-thickness);
+  --utrecht-link-hover-text-decoration: var(--nl-link-hover-text-decoration-line);
+  --utrecht-link-text-underline-offset: var(--nl-link-text-underline-offset);
+  --utrecht-breadcrumb-nav-link-hover-text-decoration: var(--nl-link-hover-text-decoration-line);
 }
 
 /**
@@ -349,4 +356,12 @@ kbd {
 /* Poor man's margin-trim, block-end */
 :is(.utrecht-table__cell, .ma-session-table__speakers) > :last-child {
   margin-block-end: 0;
+}
+
+:any-link {
+  text-underline-offset: var(--nl-link-text-underline-offset);
+}
+
+:any-link:hover {
+  text-decoration-thickness: var(--nl-link-hover-text-decoration-thickness);
 }
