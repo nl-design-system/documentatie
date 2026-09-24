@@ -28,7 +28,7 @@ Stel jezelf de volgende vragen:
 
 We geven per stap referenties naar de verschillende [richtlijnen voor formulieren](/richtlijnen/formulieren/) van het NL Design System die dieper ingaan op de verschillende onderwerpen.
 
-Bij deze richtlijnen staat ook uitgelegd hoe het technisch werkt om foutmeldingen ook goed aan te geven voor hulpmiddelen zoals een [screenreader](/woordenlijst/#screenreader).
+Bij deze richtlijnen staat ook uitgelegd hoe het technisch werkt om foutmeldingen ook goed aan te geven voor hulpmiddelen zoals een screenreader.
 
 Niemand vult een formulier graag in en alle hulp is nuttig, hou dat doel voor ogen. Jij wilt wat weten van je gebruiker of je gebruiker wil jou wat vertellen. Maak dit proces zo makkelijk mogelijk.
 
@@ -158,4 +158,4 @@ Hou in gedachten: mensen willen een formulier graag snel invullen en daarna door
 
 ## Op de hoogte blijven van het NL Design System?
 
-Ben je benieuwd naar de ontwikkelingen van het NL Design System? [Meld je dan aan voor de maandelijkse nieuwsbrief](https://nldesignsystem.nl/project/blijf-op-de-hoogte/#nieuwsbrief) of [schuif aan tijdens de 2-wekelijkse update (Heartbeat)](https://nldesignsystem.nl/events/heartbeat/aanmelden/). Hierin delen we alle relevante updates.
+Ben je benieuwd naar de ontwikkelingen van het NL Design System? [Meld je dan aan voor de maandelijkse nieuwsbrief](https://nldesignsystem.nl/introductie/blijf-op-de-hoogte/#nieuwsbrief) of [schuif aan tijdens de 2-wekelijkse update (Heartbeat)](https://nldesignsystem.nl/events/heartbeat/aanmelden/). Hierin delen we alle relevante updates.

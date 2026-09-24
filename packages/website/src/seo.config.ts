@@ -3,7 +3,7 @@ export const siteName = 'nldesignsystem.nl';
 export const siteTitle = 'NL Design System';
 export const siteTitleSeparator = '|';
 export const siteDescription =
-  'NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te ontdekken welke componenten écht werken in de praktijk.';
+  'NL Design System is een design system dat overheidsorganisaties samen bouwen: componenten, patronen en templates voor toegankelijke websites en applicaties.';
 export const siteKeywords = ['nl design system', 'design system'];
 
 export const siteThemeColor = '#ffffff';

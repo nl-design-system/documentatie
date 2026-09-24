@@ -22,7 +22,7 @@ import {
   ManagerSVG,
   GuidelineSVG,
   ComponentSVG,
-  ExamplesSVG,
+  TemplateSVG,
   UserResearchSVG,
 } from '@site/src/components/Icons';
 import { HeartbeatEpisode } from '../components/HeartbeatEpisode';
@@ -39,7 +39,7 @@ export default function Home() {
         <title>{`${siteConfig.title} - homepage`}</title>
         <meta
           name="description"
-          content="NL Design System samenwerken aan componenten en richtlijnen voor een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening"
+          content="NL Design System is een design system dat overheidsorganisaties samen bouwen: componenten, patronen en templates voor toegankelijke websites en applicaties."
         />
       </Head>
       <Layout>
@@ -48,30 +48,32 @@ export default function Home() {
             <div className="container">
               <Heading level={1}>Samen bouwen aan betere digitale dienstverlening</Heading>
               <Paragraph appearance="lead">
-                NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te
-                ontdekken welke componenten écht werken in de praktijk.
+                NL Design System is een design system dat overheidsorganisaties samen bouwen. Verschillende teams dragen
+                bij aan de bouwblokken voor toegankelijke en gebruiksvriendelijke websites en applicaties. Iedereen die
+                de bouwblokken gebruikt en verbetert, helpt ze uit te groeien tot een standaard. Het kernteam
+                faciliteert hierbij de samenwerking en bewaakt de kwaliteit.
               </Paragraph>
-              <Heading level={2}>Waarom meedoen?</Heading>
+              <Heading level={2}>Wat NL Design System je oplevert</Heading>
               <UnorderedList>
                 <UnorderedListItem>
-                  <Strong>Actieve community</Strong> die regelmatig kennis, ervaring en componenten deelt
+                  <Strong>Eigen huisstijl behouden:</Strong> Dezelfde bouwblokken werken in elke huisstijl, dus je
+                  organisatie blijft herkenbaar.
                 </UnorderedListItem>
                 <UnorderedListItem>
-                  <Strong>Groeiende bibliotheek</Strong> gebaseerd op gebruikersonderzoek en praktijkervaring
+                  <Strong>Toegankelijk bouwen:</Strong> Richtlijnen, gebruikersonderzoek en praktijkervaring helpen je
+                  om aan de toegankelijkheidseisen te voldoen.
                 </UnorderedListItem>
                 <UnorderedListItem>
-                  <Strong>Open source oplossingen</Strong> waar iedereen componenten kan gebruiken en bijdragen
-                </UnorderedListItem>
-                <UnorderedListItem>
-                  <Strong>Deelnemen op het niveau dat past</Strong>, stap voor stap, zonder licentiekosten
+                  <Strong>Open source hergebruiken:</Strong> Wat andere organisaties onderzoeken en verbeteren, komt via
+                  nieuwe versies ook in jouw website of applicatie terecht.
                 </UnorderedListItem>
               </UnorderedList>
               <ActionGroup>
-                <ButtonLink href="/handboek/estafettemodel/" appearance="primary-action-button">
-                  Bekijk hoe het werkt
-                </ButtonLink>
-                <ButtonLink href="/community/sluit-je-aan/" appearance="secondary-action-button">
+                <ButtonLink href="/introductie/meedoen/" appearance="primary-action-button">
                   Doe mee
+                </ButtonLink>
+                <ButtonLink href="/introductie/estafettemodel/" appearance="secondary-action-button">
+                  Lees hoe organisaties samenwerken
                 </ButtonLink>
               </ActionGroup>
             </div>
@@ -161,7 +163,7 @@ export default function Home() {
                 heading="Voorbeelden"
                 headingLevel={3}
                 href="/voorbeelden/"
-                image={<ExamplesSVG />}
+                image={<TemplateSVG />}
                 className="utrecht-card--ma-info"
               ></Card>
               <Card
@@ -262,7 +264,7 @@ export default function Home() {
                   body="Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL Design System."
                   heading="Nieuwsbrief"
                   headingLevel={3}
-                  href="/project/blijf-op-de-hoogte/#nieuwsbrief"
+                  href="/introductie/blijf-op-de-hoogte/#nieuwsbrief"
                 ></Card>
                 <Card
                   body="Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit te wisselen."
