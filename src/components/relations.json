@@ -15,8 +15,16 @@
       "slug": "alert"
     },
     {
+      "name": "Blockquote",
+      "slug": "blockquote"
+    },
+    {
       "name": "Notification Banner",
       "slug": "notification-banner"
+    },
+    {
+      "name": "Pull Quote",
+      "slug": "pull-quote"
     }
   ],
   "Modal Dialog": [
