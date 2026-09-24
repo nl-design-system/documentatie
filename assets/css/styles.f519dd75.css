@@ -14147,8 +14147,6 @@ p + .nlds-guideline {
  color: var(--basis-focus-color);
 }
 .voorbeeld-theme {
- --utrecht-root-background-color: var(--utrecht-document-background-color);
- --utrecht-root-color: var(--utrecht-document-color);
  --csstools-color-scheme--light: initial;
  color-scheme: light;
 }
