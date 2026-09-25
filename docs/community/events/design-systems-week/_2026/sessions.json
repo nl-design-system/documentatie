@@ -1,5 +1,17 @@
 [
   {
+    "uuid": "a5287a4e-fda6-45e9-b6da-5859daab3d3c",
+    "isoDateTime": "2026-10-26T10:00:00.000Z",
+    "speakers": ["KoenDeGreef"],
+    "subject": "AI Design Systems: van pixels naar regie",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": null,
+    "icalLink": null
+  },
+  {
     "uuid": "1bfd50e8-d845-492b-9553-51cae7dafd5b",
     "isoDateTime": "2026-10-26T12:00:00.000Z",
     "speakers": ["DrStephDriver"],
@@ -64,6 +76,18 @@
     "isoDateTime": "2026-10-28T14:00:00.000Z",
     "speakers": ["JavierCuello"],
     "subject": "The renaissance of design tooling",
+    "language": {
+      "abbr": "EN",
+      "description": "English"
+    },
+    "videoId": null,
+    "icalLink": null
+  },
+  {
+    "uuid": "aec41135-5d58-404d-a427-47dcb6730b20",
+    "isoDateTime": "2026-10-29T12:00:00.000Z",
+    "speakers": ["EirikBacker"],
+    "subject": "Designsystemet - What if we build less?",
     "language": {
       "abbr": "EN",
       "description": "English"
