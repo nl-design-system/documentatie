@@ -62,7 +62,7 @@ import {
 import { Checklist, ChecklistItem } from "@site/src/components/Checklist";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 import { Markdown } from "@site/src/components/Markdown";
-import Usage from "./_usage.md";
+import usage from "./_usage.md?raw";
 import tokens from "@nl-design-system-candidate/code-block-tokens";
 
 {/* Add name and description for the component */}
@@ -132,9 +132,7 @@ Gebruik de [Code](/code) component als de code in een regel met andere tekst sta
   ))}
 </Checklist>
 
-<Markdown omitH1 headingLevel={2}>
-  <Usage />
-</Markdown>
+<Markdown omitH1 headingLevel={2} content={usage} />
 
 ## Design tokens
 
