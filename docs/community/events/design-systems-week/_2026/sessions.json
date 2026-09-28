@@ -9,7 +9,7 @@
       "description": "Nederlands"
     },
     "videoId": null,
-    "icalLink": null
+    "icalLink": "/dsweek-2026/koen-de-greef.ics"
   },
   {
     "uuid": "1bfd50e8-d845-492b-9553-51cae7dafd5b",
@@ -21,7 +21,7 @@
       "description": "English"
     },
     "videoId": null,
-    "icalLink": null
+    "icalLink": "/dsweek-2026/dr-steph-driver.ics"
   },
   {
     "uuid": "b919f274-381c-41db-9d1d-cc3b6934ce93",
@@ -33,7 +33,7 @@
       "description": "Nederlands"
     },
     "videoId": null,
-    "icalLink": null
+    "icalLink": "/dsweek-2026/erik-van-mullekom-en-mieke-ten-dam.ics"
   },
   {
     "uuid": "a23217db-b17d-4e97-ad46-1fd7d113c567",
@@ -45,7 +45,7 @@
       "description": "English"
     },
     "videoId": null,
-    "icalLink": null
+    "icalLink": "/dsweek-2026/marion-couesnon.ics"
   },
   {
     "uuid": "dc60b53e-664e-4dac-badb-cb0754065ed7",
@@ -57,7 +57,7 @@
       "description": "Nederlands"
     },
     "videoId": null,
-    "icalLink": null
+    "icalLink": "/dsweek-2026/manon-van-keulen.ics"
   },
   {
     "uuid": "6b1d8785-cf2b-4c38-a4c1-b65458456728",
@@ -69,7 +69,7 @@
       "description": "Nederlands"
     },
     "videoId": null,
-    "icalLink": null
+    "icalLink": "dsweek-2026/frederique-schimmelpenninck-van-der-oijen.ics"
   },
   {
     "uuid": "5c426f34-76eb-44c3-a951-277b49e6b442",
@@ -81,7 +81,7 @@
       "description": "English"
     },
     "videoId": null,
-    "icalLink": null
+    "icalLink": "/dsweek-2026/javier-cuello.ics"
   },
   {
     "uuid": "aec41135-5d58-404d-a427-47dcb6730b20",
@@ -93,6 +93,6 @@
       "description": "English"
     },
     "videoId": null,
-    "icalLink": null
+    "icalLink": "/dsweek-2026/eirik-bacher.ics"
   }
 ]
