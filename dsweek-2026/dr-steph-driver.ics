@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION: In this session, you’ll discover how the open-source publishing platform Janeway rethought its accessibility process by integrating conformance data directly into its code-base. Every accessibility finding is linked to the commit it was audited against cross referenced with the work needed to improve it. This underpins a continuous workflow of targeted accessibility audits and improvements instead of relying on audits every few years.
+UID:b42ebfd6-d8dd-45dc-bba5-f118033bc107
+SUMMARY:Tracking conformance data within the code-base by Dr Steph Driver
+DTSTART;TZID=Europe/Amsterdam:20261026T130000
+DTEND;TZID=Europe/Amsterdam:20261026T134500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/meet/347769278349154?p=5HS1tOwpqJrAnP58Eo
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
