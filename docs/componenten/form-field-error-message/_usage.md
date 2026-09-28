@@ -64,9 +64,7 @@ export const MyPage = () => {
     <html>
       <body>
         <div>
-          <FormFieldErrorMessage>
-            Het veld "Naam" is verplicht.
-          </FormFieldErrorMessage>
+          <FormFieldErrorMessage>Het veld "Naam" is verplicht.</FormFieldErrorMessage>
         </div>
       </body>
     </html>
