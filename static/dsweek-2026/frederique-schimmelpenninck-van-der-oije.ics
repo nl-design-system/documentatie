@@ -17,10 +17,7 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
-DESCRIPTION:Hoe ontwikkel je een huisstijl die niet alleen herkenbaar is, maar ook toegankelijk en toepasbaar op alle kanalen? 
-In deze sessie neemt UWV je mee in de ontwikkeling van de vernieuwde huisstijl. Met een nieuw kleurenpalet, een nieuw lettertype en een eigentijdse vormtaal is gewerkt aan een visuele identiteit die zowel op mobiel, web als in print goed functioneert. 
-Frédérique vertelt over het ontwerptraject, de afwegingen die zijn gemaakt en de resultaten die zijn behaald. 
-Een interessante sessie voor designers, communicatieprofessionals en iedereen die werkt aan een toegankelijke en herkenbare digitale overheid. 
+DESCRIPTION:Hoe ontwikkel je een huisstijl die niet alleen herkenbaar is, maar ook toegankelijk en toepasbaar op alle kanalen? In deze sessie neemt UWV je mee in de ontwikkeling van de vernieuwde huisstijl. Met een nieuw kleurenpalet, een nieuw lettertype en een eigentijdse vormtaal is gewerkt aan een visuele identiteit die zowel op mobiel, web als in print goed functioneert. Frédérique vertelt over het ontwerptraject, de afwegingen die zijn gemaakt en de resultaten die zijn behaald. Een interessante sessie voor designers, communicatieprofessionals en iedereen die werkt aan een toegankelijke en herkenbare digitale overheid. 
 UID:2bbd51d7-16b4-41bb-978e-0f55bf5c89c7
 SUMMARY:Toegankelijke en herkenbare huisstijl door Frédérique Schimmelpenninck van der Oije
 DTSTART;TZID=Europe/Amsterdam:20261028T130000
