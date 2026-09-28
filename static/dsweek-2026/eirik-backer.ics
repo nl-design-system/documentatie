@@ -17,8 +17,7 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
-DESCRIPTION:Design systems often solve many of the same problems, over and over again. What if we could share the universal parts? What if sharing could not hinder, but enable uniqueness and identity. This talk covers the Norwegian project "Designsystemet" and its approach to building a framework agnostic, design agnostic, open-source toolkit to enable your design system. 
-We also take a deep dive into how prioritising native HTML, CSS and browser behaviour makes components more predictable, flexible and composable, and challenge what parts of a design system you actually need to own and maintain yourself. 
+DESCRIPTION:Design systems often solve many of the same problems, over and over again. What if we could share the universal parts? What if sharing could not hinder, but enable uniqueness and identity. This talk covers the Norwegian project "Designsystemet" and its approach to building a framework agnostic, design agnostic, open-source toolkit to enable your design system. We also take a deep dive into how prioritising native HTML, CSS and browser behaviour makes components more predictable, flexible and composable, and challenge what parts of a design system you actually need to own and maintain yourself. 
 UID:8ecefc50-df32-46e7-82c3-3c5eaee03e6c
 SUMMARY:Designsystemet – What if we build less? by Eirik Backer
 DTSTART;TZID=Europe/Amsterdam:20261029T130000
