@@ -1,0 +1,11 @@
+---
+import CenterColumnLayout from '@layouts/center-column.astro';
+import { ContrastTool } from '@site/src/components/ContrastTool';
+---
+
+<CenterColumnLayout
+  title="Contrast van kleuren"
+  description="Bereken het contrast tussen een voorgrond- en achtergrondkleur"
+>
+  <ContrastTool client:only="react" />
+</CenterColumnLayout>

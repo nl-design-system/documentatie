@@ -572,6 +572,9 @@ importers:
       '@utrecht/checkbox-css':
         specifier: 3.0.1
         version: 3.0.1
+      '@utrecht/color-sample-css':
+        specifier: 3.0.1
+        version: 3.0.1
       '@utrecht/custom-checkbox-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -656,6 +659,9 @@ importers:
       '@utrecht/unordered-list-css':
         specifier: 3.1.1
         version: 3.1.1
+      color:
+        specifier: 5.0.3
+        version: 5.0.3
       dompurify:
         specifier: 3.4.11
         version: 3.4.11
@@ -5218,6 +5224,9 @@ packages:
 
   '@utrecht/color-sample-css@2.0.1':
     resolution: {integrity: sha512-+ol3GlL8gsybZSsWn8sI1aOChCod5ppgZGRTjzcMP2zX3h3S7e9cKdU28mXfS7CqL6k+TsybIL0shtisH78Xrg==}
+
+  '@utrecht/color-sample-css@3.0.1':
+    resolution: {integrity: sha512-NmKI8MtFTbPfmCA4FekelW4TPOq2b+KsllppN5Ez/UiB9feGn/zmqfLxeBFKAEYJKGJ75o1MWjywBkUQaNKNAg==}
 
   '@utrecht/column-layout-css@2.0.1':
     resolution: {integrity: sha512-HqK7QuMyftLSRvV7j+zG8szXbXi73rkWR776DsWQDg/SwebLaasjGuCTOgg7J7YTR0EK2+fj7s61R+utx7CDhg==}
@@ -17759,6 +17768,8 @@ snapshots:
   '@utrecht/code-css@2.0.1': {}
 
   '@utrecht/color-sample-css@2.0.1': {}
+
+  '@utrecht/color-sample-css@3.0.1': {}
 
   '@utrecht/column-layout-css@2.0.1': {}
 
