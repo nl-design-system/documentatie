@@ -63,6 +63,7 @@
     "@utrecht/button-link-css": "3.0.1",
     "@utrecht/card-css": "2.0.1",
     "@utrecht/checkbox-css": "3.0.1",
+    "@utrecht/color-sample-css": "3.0.1",
     "@utrecht/custom-checkbox-css": "3.0.1",
     "@utrecht/drawer-css": "3.0.1",
     "@utrecht/emphasis-css": "3.0.1",
@@ -91,6 +92,7 @@
     "@utrecht/textbox-css": "4.0.1",
     "@utrecht/textbox-react": "1.0.16",
     "@utrecht/unordered-list-css": "3.1.1",
+    "color": "5.0.3",
     "dompurify": "3.4.11",
     "hast": "1.0.0",
     "invokers-polyfill": "1.0.3"
