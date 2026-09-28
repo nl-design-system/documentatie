@@ -19,7 +19,7 @@ BEGIN:VEVENT
 ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
 DESCRIPTION: Hoe maak je interactieve kaarten toegankelijk voor iedereen? Dat is een vraag waar het Kadaster dagelijks aan werkt. Op de websites van het Kadaster wordt veel ruimtelijke informatie via kaartviewers aangeboden. Juist deze interactieve toepassingen brengen unieke uitdagingen met zich mee op het gebied van digitale toegankelijkheid. In deze sessie delen Eric en Mieke hoe het Kadaster deze vraagstukken multidisciplinair aanpakt. Aan de hand van praktijkvoorbeelden laten zij zien welke uitdagingen zij tegenkwamen, welke oplossingen zij hebben ontwikkeld en welke lessen zij onderweg hebben geleerd.
 UID:09bed702-f680-4bc9-812c-a30ba496981e
-SUMMARY:Digitale toegankelijkheid van kaartviewers door Erik van Mullekom en Mieke ten Dam
+SUMMARY:Digitale toegankelijkheid van kaartviewers door Eric van Mullekom en Mieke ten Dam
 DTSTART;TZID=Europe/Amsterdam:20261026T150000
 DTEND;TZID=Europe/Amsterdam:20261026T154500
 CLASS:PUBLIC
