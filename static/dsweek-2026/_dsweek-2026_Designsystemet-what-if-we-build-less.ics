@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Design systems often solve many of the same problems, over and over again. What if we could share the universal parts? What if sharing could not hinder, but enable uniqueness and identity. This talk covers the Norwegian project "Designsystemet" and its approach to building a framework agnostic, design agnostic, open-source toolkit to enable your design system. 
+We also take a deep dive into how prioritising native HTML, CSS and browser behaviour makes components more predictable, flexible and composable, and challenge what parts of a design system you actually need to own and maintain yourself. 
+UID:8ecefc50-df32-46e7-82c3-3c5eaee03e6c
+SUMMARY:Designsystemet – What if we build less? by Eirik Backer
+DTSTART;TZID=Europe/Amsterdam:20261029T130000
+DTEND;TZID=Europe/Amsterdam:20261029T134500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/meet/347769278349154?p=5HS1tOwpqJrAnP58Eo
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
