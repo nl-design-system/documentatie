@@ -5,6 +5,7 @@ import { Accordion, AccordionSection } from '../../../packages/website/src/compo
 import { Button } from '../../../packages/website/src/components/button/button';
 import './CanvasAstro.css';
 import '@utrecht/component-library-css/dist/html.css';
+import '@utrecht/root-css/dist/index.css';
 import type { CSSProperties } from 'react';
 
 export interface CanvasAstroProps extends CanvasProps {
@@ -32,7 +33,8 @@ export const CanvasAstro = ({
   return (
     <div className={clsx('ma-canvas-astro', className)}>
       {/* Live preview */}
-      <div className="voorbeeld-theme" style={designTokens as CSSProperties}>
+      {/* TODO: Ideally replace the class name with the `<Root>` Utrecht component when it supports `<Root Component='div'>` */}
+      <div className="voorbeeld-theme utrecht-root" style={designTokens as CSSProperties}>
         <div className="ma-canvas-astro__example utrecht-html ma-flow" dangerouslySetInnerHTML={{ __html: _code }} />
       </div>
 

@@ -48,6 +48,7 @@
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
     "@nl-design-system-candidate/skip-link-react": "1.1.7",
     "@nl-design-system-community/ma-design-tokens": "7.1.1",
+    "@nl-design-system-unstable/voorbeeld-design-tokens": "13.1.0",
     "@rijkshuisstijl-community/card-css": "1.0.0",
     "@rijkshuisstijl-community/card-react": "1.0.0",
     "@tabler/icons-react": "3.36.1",
@@ -62,6 +63,7 @@
     "@utrecht/button-link-css": "3.0.1",
     "@utrecht/card-css": "2.0.1",
     "@utrecht/checkbox-css": "3.0.1",
+    "@utrecht/color-sample-css": "3.0.1",
     "@utrecht/custom-checkbox-css": "3.0.1",
     "@utrecht/drawer-css": "3.0.1",
     "@utrecht/emphasis-css": "3.0.1",
@@ -90,6 +92,7 @@
     "@utrecht/textbox-css": "4.0.1",
     "@utrecht/textbox-react": "1.0.16",
     "@utrecht/unordered-list-css": "3.1.1",
+    "color": "5.0.3",
     "dompurify": "3.4.11",
     "hast": "1.0.0",
     "invokers-polyfill": "1.0.3"

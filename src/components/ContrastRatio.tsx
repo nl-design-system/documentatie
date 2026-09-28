@@ -23,10 +23,12 @@ export const ContrastRatio = ({ backgroundColor, color, contrastRatio }: Contras
     </div>
     <div className={clsx('ma-contrast-ratio__sample', 'ma-contrast-ratio__sample--background-color')}>
       <dt className="ma-contrast-ratio__sample-key">Achtergrond:</dt>
-      <dd className="ma-contrast-ratio__sample-value">
+      <dd
+        className="ma-contrast-ratio__sample-value"
+        style={{ '--utrecht-color-sample-background-color': backgroundColor }}
+      >
         <ColorSample
           className="ma-contrast-ratio__color-sample"
-          color={backgroundColor}
           role="img"
           aria-label={`voorbeeld van: ${backgroundColor}`}
         />{' '}
@@ -35,12 +37,12 @@ export const ContrastRatio = ({ backgroundColor, color, contrastRatio }: Contras
     </div>
     <div className={clsx('ma-contrast-ratio__sample', 'ma-contrast-ratio__sample--color')}>
       <dt className="ma-contrast-ratio__sample-key">Voorgrond:</dt>
-      <dd className="ma-contrast-ratio__sample-value">
+      <dd className="ma-contrast-ratio__sample-value" style={{ '--utrecht-color-sample-background-color': color }}>
         <ColorSample
           className="ma-contrast-ratio__color-sample"
           color={color}
           role="img"
-          aria-label={`voorbeeld van: ${backgroundColor}`}
+          aria-label={`voorbeeld van: ${color}`}
         />{' '}
         <Code>{color}</Code>
       </dd>

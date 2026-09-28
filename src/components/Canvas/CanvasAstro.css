@@ -1,3 +1,8 @@
+/* stylelint-disable-next-line selector-class-pattern */
+.voorbeeld-theme {
+  color-scheme: light;
+}
+
 .ma-canvas-astro__example {
   padding-block-end: var(--basis-space-block-xl);
   padding-block-start: var(--basis-space-block-xl);

@@ -1,4 +1,6 @@
 .ma-contrast-ratio {
+  --utrecht-color-sample-border-radius: 0;
+
   inline-size: 100%;
   min-block-size: var(--basis-space-block-max);
   position: relative;

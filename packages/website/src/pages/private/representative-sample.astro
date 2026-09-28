@@ -1,0 +1,13 @@
+---
+import { siteDescription, siteTitle } from '../../seo.config.ts';
+import CenterColumnLayout from '@layouts/center-column.astro';
+import { RepresentativeSampleLinkList } from './_representative-sample-util';
+---
+
+<CenterColumnLayout title={siteTitle} description={siteDescription} showBreadcrumbs={false}>
+  <>
+    <h1>Representatieve steekproef</h1>
+    <p>Gebruik deze interne pagina als basis om de website te testen.</p>
+  </>
+  <RepresentativeSampleLinkList />
+</CenterColumnLayout>

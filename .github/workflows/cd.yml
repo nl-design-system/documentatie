@@ -157,6 +157,9 @@ jobs:
       - name: "Continuous Integration: a11y:next"
         run: pnpm run test-a11y:next
 
+      - name: "Continuous Integration: a11y:next-dark"
+        run: pnpm run test-a11y:next-dark
+
       - name: "Continuous Integration: a11y"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'ci/a11y')) }}
         run: pnpm run --if-present test-a11y
@@ -169,6 +172,7 @@ jobs:
           path: |
             tmp/axe.json
             tmp/axe.next.json
+            tmp/axe.next.dark.json
 
       - name: "Continuous Integration: make screenshots"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual regression test')) }}

@@ -1,0 +1,10 @@
+.nlds-form {
+  margin-block-start: 24px;
+}
+
+.nlds-example-rendering {
+  cursor: default;
+  forced-color-adjust: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

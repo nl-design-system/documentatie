@@ -9,9 +9,9 @@ const Robbert: TeamMember = {
   Description: () => (
     <>
       <Paragraph>
-        Robbert helpt organisaties bij het complexe vraagstukken waarbij NL Design System gebruikt wordt. Hij verbindt
-        verschillende organisaties en initiatieven aan elkaar en stimuleert samenwerking en kennisdeling binnen de
-        community.
+        Robbert helpt organisaties bij het oplossen van complexe vraagstukken waarbij NL Design System gebruikt wordt.
+        Hij verbindt verschillende organisaties en initiatieven aan elkaar en stimuleert samenwerking en kennisdeling
+        binnen de community.
       </Paragraph>
       <Paragraph>
         Je kunt via <Link href="/slack/">#nl-design-system-designers en #nl-design-system-developers</Link> en tijdens{' '}

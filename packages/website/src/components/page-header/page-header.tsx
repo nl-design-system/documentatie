@@ -1,5 +1,6 @@
 import '@utrecht/page-header-css/dist/index.css';
 import { PageHeader as UtrechtPageHeader } from '@utrecht/page-header-react';
+import { Link } from '@site/src/components/Link';
 import { Logo } from '@components/logo/logo';
 import { ToSearchLink } from '@components/search/to-search-link';
 import { SearchForm } from '@components/search/form';
@@ -18,9 +19,9 @@ export const PageHeader = ({ lang }: PageHeaderProps) => {
         <MobileMenuTrigger lang={lang} />
       </div>
       <div className="ma-page-header__center">
-        <a href="/" aria-label={i18n[lang].logoLinkAlt}>
+        <Link href="/" aria-label={i18n[lang].logoLinkAlt} boxContent>
           <Logo />
-        </a>
+        </Link>
       </div>
       <div className="ma-page-header__end">
         <ToSearchLink lang={lang} />
