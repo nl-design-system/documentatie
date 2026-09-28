@@ -223,10 +223,10 @@ html .utrecht-link--html-a:any-link:active {
   box-sizing: border-box;
 
   /* denhaag.side-navigation.link.min-block-size */
-  min-block-size: 44px;
+  min-block-size: var(--basis-pointer-target-min-block-size);
 
   /* denhaag.side-navigation.link.min-inline-size */
-  min-inline-size: 44px;
+  min-inline-size: var(--basis-pointer-target-min-inline-size);
 
   /* denhaag.side-navigation.link.padding-inline-end */
   padding-inline-end: var(--basis-space-inline-md);
