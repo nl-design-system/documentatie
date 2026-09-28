@@ -23,7 +23,7 @@ Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/skip-link-css@1/dist/skip-link.css"
+  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/skip-link-css/dist/skip-link.css"
 />
 ```
 

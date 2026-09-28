@@ -23,7 +23,7 @@ Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/number-badge-css@1/dist/number-badge.css"
+  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/number-badge-css/dist/number-badge.css"
 />
 ```
 

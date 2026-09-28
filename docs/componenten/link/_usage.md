@@ -21,7 +21,7 @@ npm install --save-dev @nl-design-system-candidate/link-css
 Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/link-css@1/dist/link.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/link-css/dist/link.css" />
 ```
 
 Gebruik je geen CDN, dan kun je de CSS uit `node_modules/` importeren:
