@@ -1,0 +1,438 @@
+/*! For license information please see 89ab4fc1.d337b2ca.js.LICENSE.txt */
+'use strict';
+(globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
+ [9289],
+ {
+  790(e) {
+   e.exports = JSON.parse('[{"uuid":"a5287a4e-fda6-45e9-b6da-5859daab3d3c","isoDateTime":"2026-10-26T10:00:00.000Z","speakers":["KoenDeGreef"],"subject":"AI Design Systems: van pixels naar regie","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/koen-de-greef.ics"},{"uuid":"1bfd50e8-d845-492b-9553-51cae7dafd5b","isoDateTime":"2026-10-26T12:00:00.000Z","speakers":["DrStephDriver"],"subject":"Tracking conformance data within the code-base","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/dr-steph-driver.ics"},{"uuid":"b919f274-381c-41db-9d1d-cc3b6934ce93","isoDateTime":"2026-10-26T14:00:00.000Z","speakers":["EricVanMullekom","MaartenSchut"],"subject":"Digitale toegankelijkheid van kaartviewers","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/eric-van-mullekom-en-maarten-schut.ics"},{"uuid":"b94a7d82-2641-446d-ad36-eafca20ec7fb","isoDateTime":"2026-10-27T10:00:00.000Z","speakers":["CarolineDahl","PierreOrsander","RobinWhittleton"],"subject":"Design Systems as a Lever for Accessibility Culture","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/caroline-dahl-pierre-orsander-robin-whittleton.ics"},{"uuid":"a23217db-b17d-4e97-ad46-1fd7d113c567","isoDateTime":"2026-10-27T14:00:00.000Z","speakers":["MarionCouesnon"],"subject":"Switching design systems without compromising accessibility","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/marion-couesnon.ics"},{"uuid":"dc60b53e-664e-4dac-badb-cb0754065ed7","isoDateTime":"2026-10-27T15:30:00.000Z","speakers":["ManonVanKeulen"],"subject":"Toegankelijkheid begint bij ontwerp","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/manon-van-keulen.ics"},{"uuid":"6b1d8785-cf2b-4c38-a4c1-b65458456728","isoDateTime":"2026-10-28T12:00:00.000Z","speakers":["FrederiqueSchimmelpenninckVanDerOije"],"subject":"Toegankelijke en herkenbare huisstijl","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/frederique-schimmelpenninck-van-der-oije.ics"},{"uuid":"5c426f34-76eb-44c3-a951-277b49e6b442","isoDateTime":"2026-10-28T14:00:00.000Z","speakers":["JavierCuello"],"subject":"The renaissance of design tooling","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/javier-cuello.ics"},{"uuid":"aec41135-5d58-404d-a427-47dcb6730b20","isoDateTime":"2026-10-29T12:00:00.000Z","speakers":["EirikBacker"],"subject":"Designsystemet - What if we build less?","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/eirik-backer.ics"}]');
+  },
+  18439(e, n, a) {
+   a.d(n, { R: () => r, x: () => o });
+   var i = a(30758);
+   const t = {},
+    s = i.createContext(t);
+   function r(e) {
+    const n = i.useContext(s);
+    return i.useMemo(
+     function () {
+      return 'function' == typeof e ? e(n) : { ...n, ...e };
+     },
+     [n, e],
+    );
+   }
+   function o(e) {
+    let n;
+    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(t) : e.components || t) : r(e.components)), i.createElement(s.Provider, { value: n }, e.children));
+   }
+  },
+  18652(e, n, a) {
+   a.d(n, { A: () => s });
+   var i = a(30758),
+    t = { outline: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' }, filled: { xmlns: 'http://www.w3.org/2000/svg', width: 24, height: 24, viewBox: '0 0 24 24', fill: 'currentColor', stroke: 'none' } };
+   const s = (e, n, a, s) => {
+    const r = (0, i.forwardRef)(({ color: a = 'currentColor', size: r = 24, stroke: o = 2, title: l, className: d, children: c, ...g }, m) => (0, i.createElement)('svg', { ref: m, ...t[e], width: r, height: r, className: ['tabler-icon', `tabler-icon-${n}`, d].join(' '), ...('filled' === e ? { fill: a } : { strokeWidth: o, stroke: a }), ...g }, [l && (0, i.createElement)('title', { key: 'svg-title' }, l), ...s.map(([e, n]) => (0, i.createElement)(e, n)), ...(Array.isArray(c) ? c : [c])]));
+    return ((r.displayName = `${a}`), r);
+   };
+  },
+  19472(e, n, a) {
+   a.d(n, { L: () => s });
+   var i = a(20201),
+    t = a(86070);
+   const s = ({ id: e, title: n, ...a }) => (0, t.jsx)(i.Ay, { lazyLoad: !0, adNetwork: !1, announce: 'Bekijk', cookie: !1, containerElement: 'div', id: e, title: n, poster: 'maxresdefault', ...a });
+  },
+  20201(e, n, a) {
+   a.d(n, { Ay: () => o });
+   var i = a(86070),
+    t = a(30758);
+   const s = { default: 120, mqdefault: 320, hqdefault: 480, sddefault: 640, maxresdefault: 1280 };
+   function r(e, n, a, i, t) {
+    const s = { '@context': 'https://schema.org', '@type': 'VideoObject', name: t?.name || n, thumbnailUrl: [t?.thumbnailUrl || a], embedUrl: t?.embedUrl || `${i}/embed/${e}`, contentUrl: t?.contentUrl || `https://www.youtube.com/watch?v=${e}`, ...(t?.description && { description: t.description }), ...(t?.uploadDate && { uploadDate: t.uploadDate }), ...(t?.duration && { duration: t.duration }) };
+    return JSON.stringify(s);
+   }
+   const o = t.forwardRef(function (e, n) {
+    const [a, o] = t.useState(!1),
+     [l, d] = t.useState(e.alwaysLoadIframe || !1),
+     c = encodeURIComponent(e.id),
+     g = 'string' == typeof e.playlistCoverId ? encodeURIComponent(e.playlistCoverId) : null,
+     m = e.title,
+     h = e.poster || 'hqdefault',
+     p = e.announce || 'Watch',
+     u = !e.alwaysLoadIframe || (e.autoplay && e.muted),
+     k = t.useMemo(() => {
+      const n = new URLSearchParams({ ...(e.muted ? { mute: '1' } : {}), ...(u ? { autoplay: '1' } : {}), ...(e.enableJsApi ? { enablejsapi: '1' } : {}), ...(e.enableJsApi && typeof window < 'u' ? { origin: window.location.origin } : {}), ...(e.playlist ? { list: c } : {}) });
+      return (
+       e.params &&
+        new URLSearchParams(e.params.startsWith('&') ? e.params.slice(1) : e.params).forEach((e, a) => {
+         n.append(a, e);
+        }),
+       n
+      );
+     }, [e.muted, u, e.enableJsApi, e.playlist, c, e.params]),
+     b = t.useMemo(() => (e.cookie ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com'), [e.cookie]),
+     j = t.useMemo(() => (e.playlist ? `${b}/embed/videoseries?${k.toString()}` : `${b}/embed/${c}?${k.toString()}`), [e.playlist, b, c, k]),
+     v = !e.thumbnail && !e.playlist && 'maxresdefault' === h,
+     w = e.webp ? 'webp' : 'jpg',
+     f = e.webp ? 'vi_webp' : 'vi',
+     y = v
+      ? ((e, n, a, i = 'maxresdefault') => {
+         const [r, o] = (0, t.useState)('');
+         return (
+          (0, t.useEffect)(() => {
+           const t = `https://img.youtube.com/${n}/${e}/${i}.${a}`,
+            r = `https://img.youtube.com/${n}/${e}/hqdefault.${a}`,
+            l = s[i],
+            d = new Image();
+           ((d.onload = () => {
+            d.width < l ? o(r) : o(t);
+           }),
+            (d.onerror = () => o(r)),
+            (d.src = t));
+          }, [e, n, a, i]),
+          r
+         );
+        })(e.id, f, w, h)
+      : null,
+     x = t.useMemo(() => e.thumbnail || y || `https://i.ytimg.com/${f}/${e.playlist ? g : c}/${h}.${w}`, [e.thumbnail, y, f, e.playlist, g, c, h, w]),
+     S = e.activatedClass || 'lyt-activated',
+     D = e.adNetwork || !1,
+     z = e.aspectHeight || 9,
+     A = e.aspectWidth || 16,
+     E = e.iframeClass || '',
+     N = e.playerClass || 'lty-playbtn',
+     O = e.wrapperClass || 'yt-lite',
+     M = t.useCallback(e.onIframeAdded || function () {}, [e.onIframeAdded]),
+     T = e.rel ? 'prefetch' : 'preload',
+     C = e.containerElement || 'article',
+     I = !1 !== e.noscriptFallback,
+     L = () => {
+      l || d(!0);
+     };
+    return (
+     t.useEffect(() => {
+      l && (M(), e.focusOnLoad && 'object' == typeof n && n?.current && n.current.focus());
+     }, [l, M, e.focusOnLoad, n]),
+     t.useEffect(() => {
+      if (!l || !e.enableJsApi || !(e.onReady || e.onStateChange || e.onError || e.onPlay || e.onPause || e.onEnd || e.onBuffering || e.onPlaybackRateChange || e.onPlaybackQualityChange)) return;
+      let a = !1,
+       i = !1;
+      const t = (i) => {
+       if ('https://www.youtube.com' !== i.origin && 'https://www.youtube-nocookie.com' !== i.origin) return;
+       let t;
+       try {
+        t = 'string' == typeof i.data ? JSON.parse(i.data) : i.data;
+       } catch {
+        return;
+       }
+       switch (t.event) {
+        case 'onReady':
+         a || ((a = !0), e.onReady && e.onReady({ videoId: e.id, title: m }));
+         break;
+        case 'infoDelivery':
+         if (void 0 !== t.info?.playerState) {
+          const a = t.info.playerState;
+          switch ((e.onStateChange && e.onStateChange({ state: a, currentTime: t.info.currentTime, duration: t.info.duration }), a)) {
+           case 1:
+            e.onPlay?.();
+            break;
+           case 2:
+            e.onPause?.();
+            break;
+           case 0:
+            (e.onEnd?.(), e.stopOnEnd && 'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*'));
+            break;
+           case 3:
+            e.onBuffering?.();
+          }
+         }
+         (void 0 !== t.info?.playbackRate && e.onPlaybackRateChange?.(t.info.playbackRate), void 0 !== t.info?.playbackQuality && e.onPlaybackQualityChange?.(t.info.playbackQuality));
+         break;
+        case 'onStateChange':
+         if (void 0 !== t.info?.playerState) {
+          const a = t.info.playerState;
+          switch ((e.onStateChange && e.onStateChange({ state: a, currentTime: t.info.currentTime, duration: t.info.duration }), a)) {
+           case 1:
+            e.onPlay?.();
+            break;
+           case 2:
+            e.onPause?.();
+            break;
+           case 0:
+            (e.onEnd?.(), e.stopOnEnd && 'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*'));
+            break;
+           case 3:
+            e.onBuffering?.();
+          }
+         }
+         break;
+        case 'onError':
+         if (t.info && 'errorCode' in t.info) {
+          const n = t.info.errorCode;
+          e.onError && e.onError(n);
+         }
+         break;
+        case 'onPlaybackRateChange':
+         void 0 !== t.info?.playbackRate && e.onPlaybackRateChange?.(t.info.playbackRate);
+         break;
+        case 'onPlaybackQualityChange':
+         void 0 !== t.info?.playbackQuality && e.onPlaybackQualityChange?.(t.info.playbackQuality);
+       }
+      };
+      window.addEventListener('message', t);
+      const s = [],
+       r = () => {
+        'object' == typeof n && n?.current?.contentWindow && n.current.contentWindow.postMessage('{"event":"listening","id":"' + c + '"}', '*');
+       },
+       o = () => {
+        i ||
+         ((i = !0),
+         r(),
+         [100, 300, 600, 1200, 2400].forEach((e) => {
+          s.push(setTimeout(r, e));
+         }));
+       };
+      return (
+       'object' == typeof n && n?.current
+        ? (n.current.addEventListener('load', o), 'complete' === n.current.contentDocument?.readyState && o())
+        : [200, 500, 1e3, 2e3, 3e3].forEach((e) => {
+           s.push(setTimeout(r, e));
+          }),
+       () => {
+        (window.removeEventListener('message', t), s.forEach(clearTimeout), 'object' == typeof n && n?.current && n.current.removeEventListener('load', o));
+       }
+      );
+     }, [l, e.enableJsApi, e.onReady, e.onStateChange, e.onError, e.onPlay, e.onPause, e.onEnd, e.onBuffering, e.onPlaybackRateChange, e.onPlaybackQualityChange, e.stopOnEnd, e.id, c, m, n]),
+     (0, i.jsxs)(i.Fragment, {
+      children: [
+       !e.lazyLoad && (0, i.jsx)('link', { rel: T, href: x, as: 'image' }),
+       (0, i.jsx)(i.Fragment, { children: a && (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)('link', { rel: 'preconnect', href: b }), (0, i.jsx)('link', { rel: 'preconnect', href: 'https://www.google.com' }), D && (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)('link', { rel: 'preconnect', href: 'https://static.doubleclick.net' }), (0, i.jsx)('link', { rel: 'preconnect', href: 'https://googleads.g.doubleclick.net' })] })] }) }),
+       e.seo && !e.playlist && (0, i.jsx)('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: r(e.id, m, x, b, e.seo) } }),
+       I && !e.playlist && (0, i.jsx)('noscript', { children: (0, i.jsxs)('a', { href: `https://www.youtube.com/watch?v=${e.id}`, 'aria-label': `Watch ${m} on YouTube`, children: ['Watch "', m, '" on YouTube'] }) }),
+       (0, i.jsxs)(C, {
+        onPointerOver: () => {
+         a || o(!0);
+        },
+        onClick: L,
+        className: `${O} ${l ? S : ''}`,
+        'data-title': m,
+        role: l || e.lazyLoad ? void 0 : 'img',
+        'aria-label': l ? void 0 : `${m} - YouTube video preview`,
+        style: { ...(!e.lazyLoad && { backgroundImage: `url(${x})` }), '--aspect-ratio': (z / A) * 100 + '%', ...(e.style || {}) },
+        children: [e.lazyLoad && !l && (0, i.jsx)('img', { src: x, alt: `${m} - YouTube thumbnail`, className: 'lty-thumbnail', loading: 'lazy' }), e.playlist && !l && (0, i.jsx)('div', { className: 'lty-playlist-icon', 'aria-hidden': 'true' }), !(e.hideButtonOnActivate && l) && (0, i.jsx)('button', { type: 'button', className: N, 'aria-label': `${p} ${m}`, 'aria-hidden': l || void 0, tabIndex: l ? -1 : 0, onClick: L, children: (0, i.jsx)('span', { className: 'lty-visually-hidden', children: p }) }), l && (0, i.jsx)('iframe', { ref: n, className: E, title: m, width: '560', height: '315', allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: !0, src: j, referrerPolicy: e.referrerPolicy || 'strict-origin-when-cross-origin' })],
+       }),
+      ],
+     })
+    );
+   });
+  },
+  24456(e, n, a) {
+   a.d(n, { F: () => r, N: () => o });
+   var i = a(13526),
+    t = a(84471),
+    s = a(86070);
+   const r = ({ children: e, ...n }) => {
+     const { to: a, href: i, ...r } = n;
+     let o = a || i;
+     const l = new URL(o, 'https://nldesignsystem.nl');
+     return ('https://nldesignsystem.nl' === l.origin ? (l.pathname.endsWith('/') || (0, t.QQ)(l.pathname) || (l.pathname = `${l.pathname}/`), (o = l.toString().replace('https://nldesignsystem.nl', ''))) : ((r.target = '_blank'), (r.rel = 'noopener noreferrer')), (0, s.jsx)('a', { href: o, ...r, children: e }));
+    },
+    o = ({ className: e, boxContent: n, ...a }) => (0, s.jsx)(r, { className: (0, i.$)('utrecht-link', 'utrecht-link--html-a', { 'utrecht-link--box-content': n }, e), ...a });
+  },
+  24658(e, n, a) {
+   a.d(n, { H: () => d });
+   var i = a(90578),
+    t = a(46447),
+    s = a(13526),
+    r = a(19472),
+    o = a(86070);
+   const l = new Date().toISOString(),
+    d = ({ lang: e = 'nl', headingLevel: n = 3, allSpeakers: a, videoId: d, children: c, allSessions: g, sessionId: m }) => {
+     const h = g?.find(({ uuid: e }) => m === e),
+      p = h && h.speakers.map((e) => a[e]).filter(Boolean),
+      u = [d, h?.videoId, ...(h?.videoIds ?? [])].filter(Boolean);
+     return h ? (0, o.jsxs)('article', { className: (0, s.A)('ma-dsw-session'), children: [(0, o.jsx)(t.DZ, { level: n, className: 'ma-dsw-session__title', id: h.subject.toLowerCase().replace(/\s/gi, '-'), children: h.subject }), (0, o.jsx)(t.fz, { className: 'ma-dsw-session__subtitle', lead: !0, children: p && p.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }), u.length > 0 && u.map((e) => (0, o.jsx)(r.L, { id: e, title: h.subject, style: { marginBlock: '20px' } }, e)), h && h.isoDateTime && h.isoDateTime > l ? (0, o.jsx)(t.fz, { children: (0, o.jsx)('time', { dateTime: h.isoDateTime, children: new Intl.DateTimeFormat(e, { dateStyle: 'full', timeStyle: 'nl' === e ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(h.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}), c, 'nl' === e && p.find(({ language: e }) => 'nl' !== e) && (0, o.jsxs)(t.fz, { children: [(0, o.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }), h.captioned ? (h.captionId ? (0, o.jsx)(o.Fragment, { children: (0, o.jsxs)(t.fz, { children: ['nl' === e ? (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Bij deze sessie is een schrijftolk aanwezig: ' }) }) : (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Live captioning is available for this session: ' }) }), (0, o.jsxs)('a', { href: `https://text-on-tap.live/#e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === e ? 'in de browser' : 'in the browser'] }), 'nl' === e ? ' of ' : ' or ', (0, o.jsxs)('a', { href: `https://text-on-tap.live/openoverlay.html?e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === e ? 'met de Overlay tool' : 'with the de Overlay tool'] })] }) }) : 'nl' === e ? (0, o.jsx)(t.fz, { children: 'Voor deze sessie hebben we nog geen schrijftolk gevonden' }) : (0, o.jsx)(o.Fragment, {})) : (0, o.jsx)(o.Fragment, {}), (0, o.jsx)('aside', { className: (0, s.A)('ma-dsw-session__speakers'), children: p.map((n, a) => (0, o.jsxs)('div', { className: (0, s.A)('ma-dsw-session__speaker', 'ma-dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, s.A)('ma-dsw-speaker__image'), src: n.image.src, alt: n.image.alt }), (0, o.jsx)(t.fz, { className: (0, s.A)('ma-dsw-speaker__description'), dangerouslySetInnerHTML: { __html: n.description[e] } })] }, a)) }), h && h.icalLink && !d ? (0, o.jsx)(t.fz, { children: (0, o.jsxs)(t.vx, { href: h.icalLink, download: h.icalLink, appearance: 'primary-action-button', children: [(0, o.jsx)(t.In, { children: (0, o.jsx)(i.A, {}) }), (0, o.jsx)('span', { children: 'nl' === e ? (0, o.jsxs)(o.Fragment, { children: ['Zet', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' in je agenda'] }) : (0, o.jsxs)(o.Fragment, { children: ['Add', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' to your calendar'] }) })] }) }) : null] }) : (0, o.jsx)(o.Fragment, {});
+    };
+  },
+  29680(e, n, a) {
+   a.d(n, { v: () => o });
+   var i = a(24456),
+    t = a(13526),
+    s = a(86070);
+   const r = ({ className: e, children: n, purpose: a, iconStart: i, iconEnd: r, href: o }) => (0, s.jsxs)('a', { className: (0, t.A)('nl-button', e, { 'nl-button--primary': 'primary' === a, 'nl-button--secondary': 'secondary' === a, 'nl-button--subtle': 'subtle' === a }), href: o, children: [i && (0, s.jsx)('span', { className: 'nl-button__icon-start', children: i }), (0, s.jsx)('span', { className: 'nl-button__label', children: n }), r && (0, s.jsx)('span', { className: 'nl-button__icon-end', children: r })] }),
+    o = globalThis.isAstro
+     ? ({ appearance: e, href: n, ...a }) => {
+        let i = 'primary';
+        return ((i = 'secondary-action' === e ? 'secondary' : i), (0, s.jsx)(r, { purpose: i, href: n, ...a }));
+       }
+     : ({ appearance: e, ...n }) => (0, s.jsx)(i.F, { className: (0, t.$)('utrecht-button-link', `utrecht-button-link--${e}`), ...n });
+  },
+  35683(e, n, a) {
+   a.d(n, { K: () => i.e2 });
+   var i = a(29181);
+  },
+  51130(e) {
+   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":false,"nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
+  },
+  56561(e, n, a) {
+   a.d(n, { f: () => g });
+   var i = a(15540),
+    t = a(69967),
+    s = a(86070),
+    r = a(13526),
+    o = a(30758),
+    l = ['children', 'className', 'purpose'];
+   function d(e, n) {
+    var a = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+     var i = Object.getOwnPropertySymbols(e);
+     (n &&
+      (i = i.filter(function (n) {
+       return Object.getOwnPropertyDescriptor(e, n).enumerable;
+      })),
+      a.push.apply(a, i));
+    }
+    return a;
+   }
+   function c(e) {
+    for (var n = 1; n < arguments.length; n++) {
+     var a = null != arguments[n] ? arguments[n] : {};
+     n % 2
+      ? d(Object(a), !0).forEach(function (n) {
+         (0, i.A)(e, n, a[n]);
+        })
+      : Object.getOwnPropertyDescriptors
+        ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+        : d(Object(a)).forEach(function (n) {
+           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(a, n));
+          });
+    }
+    return e;
+   }
+   var g = (0, o.forwardRef)(function (e, n) {
+    var a = e.children,
+     o = e.className,
+     d = e.purpose,
+     g = (0, t.A)(e, l);
+    return (0, s.jsx)('p', c(c({ className: (0, r.$)('nl-paragraph', (0, i.A)({}, 'nl-paragraph--lead', 'lead' === d), o), ref: n }, g), {}, { children: 'lead' === d ? (0, s.jsx)('b', { className: 'nl-paragraph__lead', children: a }) : a }));
+   });
+   g.displayName = 'Paragraph';
+  },
+  64249(e, n, a) {
+   a.d(n, { A: () => i });
+   const i = (0, a(18652).A)('outline', 'chevron-right', 'ChevronRight', [['path', { d: 'M9 6l6 6l-6 6', key: 'svg-0' }]]);
+  },
+  66153(e, n, a) {
+   a.d(n, { f: () => i.f });
+   var i = a(56561);
+  },
+  84471(e, n, a) {
+   a.d(n, { bo: () => t, KF: () => m, mJ: () => u, VZ: () => x, cR: () => y, Pv: () => k, qZ: () => r, kD: () => w, QQ: () => D, B2: () => h, Pc: () => l, f4: () => o, GT: () => f, fX: () => s, eQ: () => v, B_: () => j, o_: () => b });
+   const i = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
+    t = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
+    s = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
+    r = (e) => ({ PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.', PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in \xe9\xe9n zin beschreven.', PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.', PVTSSF_lADOBGdlVM4AdX8lzgTDAP0: 'Staat in de publieke backlog van NL Design System.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-Ug': 'Bewijs verzameld dat de component algemeen bruikbaar is.', PVTSSF_lADOBGdlVM4AdX8lzgasBms: 'Aangemaakt als een GitHub Discussion.', PVTSSF_lADOBGdlVM4AdX8lzgTC95M: 'Link beschikbaar naar component in Figma of Storybook met alle belangrijke states en varianten.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-BI': 'Naam en doel van benodigde varianten beschreven.', 'PVTSSF_lADOBGdlVM4AdX8lzgTC-1c': 'Nut van component is onderbouwd door gebruikersonderzoek.', PVTSSF_lADOBGdlVM4AdX8lzgTC_5o: 'Kernteam verwacht dat dit component tot Hall of Fame kan komen.', PVTSSF_lADOBGdlVM4AdX8lzgTC_W0: 'Vindbaar op de NL Design System website.' })[e],
+    o = Object.keys({ HELP_WANTED: 'UNKNOWN', COMMUNITY: 'HELP_WANTED', CANDIDATE: 'COMMUNITY', HALL_OF_FAME: 'CANDIDATE' }),
+    l = (e) => e.toLowerCase().replace(/(\s|-)+/, ''),
+    d = ['CSS', 'HTML', 'Web Component', 'React', 'Vue', 'Angular', 'Twig'];
+   function c(e) {
+    return Array.from(new Set(e));
+   }
+   const g = (e) => [...e].sort((e, n) => d.indexOf(e) - d.indexOf(n)),
+    m = (e) => {
+     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => p(e));
+     return g(c(n));
+    },
+    h = (e, n) => u(e).includes(n),
+    p = (e) => {
+     const n = / URL \(([^)]+)\)/;
+     return g(c(e.tasks.filter(({ name: e, value: a }) => '' !== a && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
+    },
+    u = (e) => g(c(e.projects.flatMap((e) => p(e)))),
+    k = (e) => {
+     const n = p(e),
+      a = ((e) => {
+       const n = e.tasks.find(({ name: e }) => 'Naam' === e);
+       return n?.value || '';
+      })(e);
+     return n.map((n) => {
+      const i = e.tasks
+       .filter(({ name: e, value: a }) => '' !== a && e.includes(n))
+       .map(({ name: i, id: t, value: s }) => {
+        const r = /^(.+) URL/.exec(i)[1],
+         o = 'Storybook' === r ? `${a} (${n}) in Storybook van ${e.title}` : `${a} (${n}) op ${r}`;
+        return { brand: r.toLowerCase(), name: i, id: t, value: s, description: o };
+       });
+      return { frameworkName: n, tasks: i };
+     });
+    },
+    b = (e) => e.join('.'),
+    j = (e) => '--' + e.join('-'),
+    v = (e, n) => n.reduce((e, n) => e?.[n], e);
+   function w(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((a) => ('object' == typeof e[a] && null !== e[a] ? w(e[a], [...n, a]) : []));
+   }
+   function f(e) {
+    const n = new Map();
+    function a(e) {
+     return (n.has(e) || n.set(e, b(e)), n.get(e));
+    }
+    return e.sort((e, n) => e.length - n.length || a(e).localeCompare(a(n)));
+   }
+   const y = () => {
+     const e = i.sP?.pnpm;
+     if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
+     return e.replace(/^[\^~>=<]+/, '');
+    },
+    x = () => {
+     const e = i.sP?.node;
+     if (!e) throw new Error('No node version found in package.json#engines.node');
+     const n = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
+     return n ? n[1] : e.replace(/^[\^~>=<]+/, '');
+    },
+    S = new Set(['ics', 'json', 'pdf']),
+    D = (e) => {
+     const n = e.split('/').pop() ?? '',
+      a = n.split('.').pop()?.toLowerCase();
+     return void 0 !== a && S.has(a);
+    };
+  },
+  86109(e) {
+   e.exports = JSON.parse('{"KoenDeGreef":{"name":"Koen de Greef","organisation":"FIDDS Design","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-KoenDeGreef.jpg","alt":"Koen de Greef"},"description":{"nl":"Koen is Head of Design Services bij FIDDS Design en werkt op het snijvlak van design en AI. Met ruim tien jaar ervaring in Enterprise UX helpt hij organisaties om vanuit een menselijk perspectief te ontwerpen met en voor AI, zodat de technologie die ze bouwen ook echt gebruikt wordt. Daarvoor was hij design strateeg bij NS, waar hij werkte aan digitale toegankelijkheid en aan hoe design binnen de organisatie georganiseerd was. AI Design Systems zijn de nieuwste manier waarop hij teams helpt snel te bouwen zonder in te leveren op kwaliteit."},"language":"nl"},"DrStephDriver":{"name":"Dr Steph Driver","organisation":"Open Library of Humanities","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-DrStephDriver.jpg","alt":"Dr Steph Driver"},"description":{"en":"Steph is the accessibility-specialist developer at the Open Library of Humanities.  As an assistive technology user herself, she is passionate about making open access truly accessible for everyone. She combines deep technical expertise with a passion for education, helping teams develop smarter workflows and innovative accessibility solutions. With a background spanning natural sciences, creative writing, technology and disability-activism, Steph brings a unique perspective to inclusive digital design.","nl":"Steph is ontwikkelaar en specialist op het gebied van toegankelijkheid bij de Open Library of Humanities. Als gebruiker van ondersteunende technologie zet zij zich vol passie in om open access voor iedereen werkelijk toegankelijk te maken. Ze combineert diepgaande technische expertise met een passie voor onderwijs en helpt teams bij het ontwikkelen van slimmere werkprocessen en innovatieve oplossingen voor toegankelijkheid. Met een achtergrond in de natuurwetenschappen, creatief schrijven, technologie en activisme rondom handicaps brengt Steph een uniek perspectief in op inclusief digitaal ontwerp."},"language":"en"},"EricVanMullekom":{"name":"Eric van Mullekom","organisation":"Kadaster","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-EricVanMullekom.jpg","alt":"Eric van Mullekom"},"description":{"nl":"Eric is sinds 2000 als projectmanager/product owner betrokken bij softwareontwikkeling, met oog voor techniek en gebruikersgemak. Bij het Kadaster is hij als Product Owner verantwoordelijk voor <a target=\\"blank\\" href=\\"https://generiekegeocomponenten.nl\\">generiekegeocomponenten.nl</a>, <a target=\\"blank\\" href=\\"https://kaartenvannederland.nl\\">kaartenvannederland.nl</a> en <a target=\\"blank\\" href=\\"https://verbeterdekaart.nl\\">terugmeldsysteem (o.a. verbeterdekaart.nl)</a>."},"language":"nl"},"MaartenSchut":{"name":"Maarten Schut","organisation":"Kadaster","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MaartenSchut.jpg","alt":"Maarten Schut"},"description":{"nl":"Maarten werkt sinds 2025 bij het Kadaster als product owner. Samen met het dev-team ontwikkelt en beheert hij diverse websites, portals en applicaties, waaronder <a target=\\"blank\\" href=\\"https://www.kadaster.nl\\">www.kadaster.nl</a>, <a target=\\"blank\\" href=\\"https://topokaarten.kadaster.nl\\">topokaarten.kadaster.nl</a> en het zakelijke portaal <a target=\\"blank\\" href=\\"https://mijn.kadaster.nl\\">mijn.kadaster.nl</a>. "},"language":"nl"},"MarionCouesnon":{"name":"Marion Couesnon","organisation":"Digitalservice GmbH des Bundes","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MarionCouesnon.jpg","alt":"Marion Couesnon"},"description":{"en":"Marion is an accessibility designer based in Berlin. She has been passionate about design since 2011 and has specialised in accessibility since 2019. She currently works for DigitalService, a company owned by the German federal government. Within the organisation, she implements accessibility practices whilst contributing to the design of services, including the <a target=\\"blank\\" href=\\"https://service.justiz.de\\">Ministry of Justice\u2019s online portal</a>. Outside of work, you might spot Marion at her boxing club or knitting on her sofa.","nl":"Marion is een ontwerper gespecialiseerd in toegankelijkheid, gevestigd in Berlijn. Ze is sinds 2011 gepassioneerd door design en heeft zich sinds 2019 toegelegd op toegankelijkheid. Momenteel werkt ze bij DigitalService, een bedrijf dat eigendom is van de Duitse federale overheid. Binnen de organisatie implementeert ze toegankelijkheidsmaatregelen en draagt ze bij aan het ontwerp van diensten, waaronder het <a target=\\"blank\\" href=\\"https://service.justiz.de\\">online portaal van het ministerie van Justitie</a>. Buiten haar werk kun je Marion tegenkomen bij haar boksclub of breiend op de bank."},"language":"en"},"ManonVanKeulen":{"name":"Manon van Keulen","organisation":"Digitaal Toegankelijk","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-ManonVanKeulen.jpg","alt":"Manon van Keulen"},"description":{"nl":"Het werk van Manon kreeg, na in 2020 omgeschoold te zijn naar Webdeveloper, al snel een focus op digitale toegankelijkheid. Tegenwoordig werkt zij als consultant bij Digitaal Toegankelijk. Via trainingen en adviestrajecten ondersteunt zij bedrijven om hun diensten toegankelijker te maken. Haar missie is te laten zien hoe meer aandacht voor de toegankelijkheid ook leidt tot een betere ervaring voor andere eindgebruikers. En hoe de eerste beslissingen tijdens het design daar al een grote invloed op kunnen hebben."},"language":"nl"},"FrederiqueSchimmelpenninckVanDerOije":{"name":"Fr\xe9d\xe9rique Schimmelpenninck van der Oije","organisation":"UWV","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-FrederiqueSchimmelpenninck.jpg","alt":"Fr\xe9d\xe9rique Schimmelpenninck van der Oije"},"description":{"nl":"Fr\xe9d\xe9rique Schimmelpenninck van der Oije is grafisch ontwerper, zij werkte eerder als ontwerper en beeldredacteur voor onder andere de Volkskrant en Het Financieele Dagblad en is nu Designmanager bij UWV. Daarnaast werkt zij als parttime docent op het Amsterdam Fashion Institute. Helder, herkenbaar en vooral toegankelijke communicatie zijn een belangrijke leidraad in haar werk en werkwijze. Bij UWV werkt zij aan een integrale aanpak van de huisstijl, van mobiel tot bewegwijzering en van beachflag tot formulier."},"language":"nl"},"JavierCuello":{"name":"Javier Cuello","organisation":"Fuller","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-JavierCuello.png","alt":"Javier Cuello"},"description":{"en":"Javier is a product designer specialising in design systems. Originally from Argentina, he has spent nearly 20 years in Europe working with companies like Wise, UEFA, Telef\xf3nica and Zara. He now runs his own independent design practice, helping teams build and scale their design systems.","nl":"Javier is een productontwerper die gespecialiseerd is in designsystemen. Hij komt oorspronkelijk uit Argentini\xeb en heeft bijna twintig jaar in Europa gewerkt voor bedrijven als Wise, UEFA, Telef\xf3nica en Zara. Tegenwoordig runt hij zijn eigen onafhankelijke ontwerppraktijk, waarin hij teams helpt bij het opzetten en opschalen van hun designsystemen."},"language":"en"},"EirikBacker":{"name":"Eirik Backer","organisation":"Norwegian Digitalisation Agency","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-EirikBacker.jpeg","alt":"Eirik Backer"},"description":{"en":"Eirik is a front-end developer and former designer with a passion for web standards and accessibility. He currently works at the Norwegian Digitalisation Agency.","nl":"Eirik is front-end developer en voormalig ontwerper met een passie voor webstandaarden en toegankelijkheid. Hij werkt momenteel bij het Noorse Agentschap voor Digitalisering."},"language":"en"},"CarolineDahl":{"name":"Caroline Dahl","organisation":"IKEA","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-CarolineDahl.jpg","alt":"Caroline Dahl"},"description":{"en":"Caroline is a product owner with 10 years of experience in digital product development at IKEA. With a background in marketing and brand management, she combines business, technology, and human-centered design to create products that deliver real value. Leading the design system team at IKEA, Caroline is passionate about making accessibility and inclusivity a natural part of how digital products are designed and built.","nl":"Caroline is een product owner met 10 jaar ervaring in de ontwikkeling van digitale producten bij IKEA. Met een achtergrond in marketing en brandmanagement combineert ze business, technologie en mensgericht ontwerp om producten te cre\xebren die echt waarde toevoegen. Als leider van het designsystem-team bij IKEA zet ze zich gepassioneerd in om toegankelijkheid en inclusiviteit een integraal onderdeel te maken van het ontwerp- en ontwikkelproces van digitale producten."},"language":"en"},"PierreOrsander":{"name":"Pierre Orsander","organisation":"IKEA","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-PierreOrsander.jpg","alt":"Pierre Orsander"},"description":{"en":"Pierre is a digital product designer with 18+ years of experience creating well-designed digital solutions for global companies, governments, service providers, and startups. Over the past six years at IKEA, he has specialised in building the digital design system, Skapa, developing deep expertise in accessibility and inclusive user experiences.","nl":"Pierre is een digital product designer met meer dan 18 jaar ervaring in het ontwerpen van hoogwaardige digitale oplossingen voor wereldwijde bedrijven, overheidsinstanties, dienstverleners en startups. De afgelopen zes jaar heeft hij zich bij IKEA gespecialiseerd in de opzet van het digitale designsystem \'Skapa\', waarbij hij diepgaande expertise heeft opgebouwd op het gebied van toegankelijkheid en inclusieve gebruikerservaringen."},"language":"en"},"RobinWhittleton":{"name":"Robin Whittleton","organisation":"IKEA","image":{"src":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-RobinWhittleton.jpg","alt":"Robin Whittleton"},"description":{"en":"Robin is an accessibility specialist with a background in front-end development. Originally from the UK \u2013 where he helped to start the GOV.UK Design System \u2013 he moved to Sweden nearly a decade ago and was in the right place and time to help to start the IKEA design system. His focus is on making design and technology work for everyone regardless of need.","nl":"Robin is een toegankelijkheidsspecialist met een achtergrond in front-end development. Hij is afkomstig uit het Verenigd Koninkrijk \u2013 waar hij meewerkte aan de start van het GOV.UK Design System \u2013 en verhuisde bijna tien jaar geleden naar Zweden; daar was hij op het juiste moment op de juiste plek om te helpen bij de opzet van het IKEA-designsystem. Zijn focus ligt op het zodanig inzetten van ontwerp en technologie dat ze voor iedereen werken, ongeacht individuele behoeften."},"language":"en"}}');
+  },
+  89396(e, n, a) {
+   (a.r(n), a.d(n, { assets: () => k, contentTitle: () => u, default: () => v, frontMatter: () => p, metadata: () => i, toc: () => b }));
+   const i = JSON.parse('{"id":"community/events/design-systems-week/programma","title":"Programma","description":"Programma voor de Design Systems Week 2026","source":"@site/docs/community/events/design-systems-week/programma.mdx","sourceDirName":"community/events/design-systems-week","slug":"/events/design-systems-week-2026/programma","permalink":"/events/design-systems-week-2026/programma","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/programma.mdx","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Programma","description":"Programma voor de Design Systems Week 2026","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"Programma","pagination_label":"Programma","sidebar_position":2,"slug":"/events/design-systems-week-2026/programma","translations":{"en":"/events/design-systems-week-2026/en/program/"},"image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2026.png","image_alt":"NL Design System Design Systems Week 2026 26-29 Oktober, online"},"sidebar":"community","previous":{"title":"Over Design Systems Week","permalink":"/events/design-systems-week"},"next":{"title":"Tijdschema","permalink":"/events/design-systems-week-2026/tijdschema/"}}');
+   var t = a(86070),
+    s = a(18439),
+    r = a(29680),
+    o = a(35683),
+    l = a(66153),
+    d = a(64249),
+    c = a(790),
+    g = a(86109),
+    m = a(24658),
+    h = a(51130);
+   const p = { title: 'Programma', description: 'Programma voor de Design Systems Week 2026', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Programma', pagination_label: 'Programma', sidebar_position: 2, slug: '/events/design-systems-week-2026/programma', translations: { en: '/events/design-systems-week-2026/en/program/' }, image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2026.png', image_alt: 'NL Design System Design Systems Week 2026 26-29 Oktober, online' },
+    u = 'Programma Design Systems Week settings.year',
+    k = {},
+    b = [];
+   function j(e) {
+    const n = { h1: 'h1', header: 'header', p: 'p', strong: 'strong', ...(0, s.R)(), ...e.components };
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.header, { children: (0, t.jsxs)(n.h1, { id: 'programma-design-systems-week-settingsyear', children: ['Programma Design Systems Week ', h.Ok] }) }), '\n', (0, t.jsx)(l.f, { purpose: 'lead', children: (0, t.jsxs)(n.p, { children: ['NL Design System organiseert in ', h.Ok, ' voor de ', h.nl.Z, ' keer de Design Systems Week. Van', ' ', '\n', (0, t.jsx)('strong', { children: h.nl.M }), ' zijn er dagelijks meerdere korte sessies van diverse organisaties online te\nvolgen over het ', (0, t.jsx)(n.strong, { children: 'hoe en waarom van design systems' }), '.'] }) }), '\n', (0, t.jsxs)(o.K, { children: [(0, t.jsxs)(r.v, { href: `/events/design-systems-week-${h.Ok}/tijdschema`, appearance: 'primary-action', children: ['Bekijk het tijdschema', (0, t.jsx)(d.A, { slot: 'icon-end' })] }), !!h.MX && (0, t.jsxs)(r.v, { href: h.MX, appearance: 'secondary-action', children: ['Gebruik Miro', (0, t.jsx)(d.A, { slot: 'icon-end' })] })] }), '\n', !h.Ic && (0, t.jsx)(t.Fragment, { children: (0, t.jsx)(l.f, { children: 'Het tijdschema is nog niet definitief. De sessies worden de komende weken verder uitgewerkt en toegevoegd. Houd deze pagina in de gaten voor updates.' }) }), '\n', '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'a5287a4e-fda6-45e9-b6da-5859daab3d3c', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Wat gebeurt er met tien jaar aan zorgvuldig opgebouwde standaarden op het moment dat iedereen in een paar prompts\neen werkende interface kan neerzetten?' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'AI democratiseert het maken van software. Dat is goed nieuws voor de snelheid, maar slecht nieuws voor consistentie,\ntoegankelijkheid en merk. Een design system dat AI niet kan lezen, bestaat voor AI niet. Het resultaat is dan het\ngemiddelde van het internet, geverfd in jouw kleuren.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'In deze sessie kijken we hoe de rol van ontwerpers verschuift van maker naar regisseur, waarom het design system\ndaarmee belangrijker is dan ooit, en hoe je het de bron van waarheid maakt voor zowel mens als machine. Aan de hand\nvan een klant-case zie je van begin tot eind hoe een AI Design System je grip laat houden op de kwaliteit van je\nproducten, wat je met AI oppakt en wat je bewust bij mensen laat.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Een praktische sessie voor designers, developers en design system teams die willen weten hoe ze de regie houden als\nhet tempo van bouwen omhooggaat.' }) })] }), '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: '1bfd50e8-d845-492b-9553-51cae7dafd5b', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Informatie over toegankelijkheidsconformiteit wordt vaak vastgelegd in aparte rapporten die snel verouderen. Maar\nwat als toegankelijkheidsgegevens direct naast je code zouden staan?' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'In deze sessie ontdek je hoe het open-source publicatieplatform Janeway zijn toegankelijkheidsproces opnieuw heeft\ningericht door gegevens over conformiteit rechtstreeks in de codebase te integreren. Elke bevinding op het gebied\nvan toegankelijkheid is gekoppeld aan de specifieke commit waarop de audit betrekking had, en wordt in verband\ngebracht met de werkzaamheden die nodig zijn voor verbetering. Dit vormt de basis voor een continu proces van\ngerichte toegankelijkheidsaudits en verbeteringen, in plaats van te vertrouwen op audits die slechts eens in de paar\njaar plaatsvinden.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Steph vertelt over de beweegredenen achter deze aanpak, de implementatie ervan en de lessen die gaandeweg zijn\ngeleerd. Of je nu ontwikkelaar of toegankelijkheidsspecialist bent, of simpelweg ge\xefnteresseerd bent in het\nverbeteren van workflows rondom toegankelijkheid: deze sessie biedt praktische inzichten in een duurzamere manier om\nconformiteitsgegevens te beheren.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'De implementatie is open source, waardoor je na de sessie eenvoudig in de technische details kunt duiken.' }) })] }), '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'b919f274-381c-41db-9d1d-cc3b6934ce93', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Hoe maak je interactieve kaarten toegankelijk voor iedereen? Dat is een vraag waar het Kadaster dagelijks aan werkt.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Op de websites van het Kadaster wordt veel ruimtelijke informatie via kaartviewers aangeboden. Juist deze\ninteractieve toepassingen brengen unieke uitdagingen met zich mee op het gebied van digitale toegankelijkheid.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'In deze sessie delen Eric en Maarten hoe het Kadaster deze vraagstukken multidisciplinair aanpakt. Aan de hand van\npraktijkvoorbeelden laten zij zien welke uitdagingen zij tegenkwamen, welke oplossingen zij hebben ontwikkeld en\nwelke lessen zij onderweg hebben geleerd.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Een inspirerende sessie voor iedereen die werkt aan toegankelijke digitale dienstverlening, interactieve interfaces\nof complexe gebruikerservaringen.' }) })] }), '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'b94a7d82-2641-446d-ad36-eafca20ec7fb', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Toegankelijkheid vormt een kernaspect van Skapa \u2013 het digitale designsysteem van IKEA \u2013 sinds de oprichting ervan in\n2019.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Tijdens deze sessie laten we zien hoe we toegankelijkheid hebben verankerd in de opzet en het onderhoud van ons\ndesignsysteem. Ook bespreken we hoe dit fundament heeft bijgedragen aan een bredere cultuur van toegankelijkheid\nbinnen de organisatie, wat van invloed is op zowel de product- als de merkervaring.' }) })] }), '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'a23217db-b17d-4e97-ad46-1fd7d113c567', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Wat gebeurt er als je je eigen design-systeem vervangt door een nieuwe, gedeelde standaard? Hoe zorg je ervoor dat\nde toegankelijkheid er niet op achteruitgaat?' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: "In deze sessie deelt Marion Couesnon van het 'Access to Justice'-team haar ervaringen met de migratie van hun eigen\ndesign-systeem naar het KERN Design System, dat zij zien als de toekomstige standaard voor Duitse overheidsdiensten." }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Je leert hoe het team de migratie vanuit het oogpunt van toegankelijkheid aanpakte, welke controles en beslissingen\nze onderweg namen en welke onverwachte uitdagingen ze toch nog tegenkwamen. Want zelfs als een design-systeem met\ntoegankelijkheid in gedachten is ontwikkeld, biedt de implementatie ervan niet automatisch garantie op een\ntoegankelijk resultaat.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Een praktische sessie vol geleerde lessen, valkuilen om te vermijden en tips voor teams die een soortgelijke\noverstap plannen.' }) })] }), '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'dc60b53e-664e-4dac-badb-cb0754065ed7', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Hoe maak je niet een ontwerp toegankelijk, maar ontwerp je vanaf het begin toegankelijk? Digitale toegankelijkheid\nis geen aanpassing achteraf, maar begint bij de keuzes die je maakt tijdens het ontwerpen.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'In deze sessie ontdek je hoe je toegankelijkheid als uitgangspunt kunt meenemen in ontwerpkeuzes en design systems.\nAan de hand van praktijkvoorbeelden zie je welke interactiepatronen goed werken en waar het in de praktijk vaak\nmisgaat. Denk aan verkeerd gebruikte tabellen, complexe formulieren en interactieve elementen waarvan niet duidelijk\nis hoe je ze moet gebruiken.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Geen pleisters plakken met ARIA achteraf, maar vanaf de start kiezen voor logische interacties en passende\nsemantiek. Zo ondersteunen vorm en interactie de gebruiker in plaats van een belemmering te vormen.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Een praktische sessie voor iedereen die betrokken is bij het ontwerpen, ontwikkelen en verbeteren van digitale\ndienstverlening.' }) })] }), '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: '6b1d8785-cf2b-4c38-a4c1-b65458456728', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Hoe ontwikkel je een huisstijl die niet alleen herkenbaar is, maar ook toegankelijk en toepasbaar op alle kanalen?' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'In deze sessie neemt UWV je mee in de ontwikkeling van de vernieuwde huisstijl. Met een nieuw kleurenpalet, een\nnieuw lettertype en een eigentijdse vormtaal is gewerkt aan een visuele identiteit die zowel op mobiel, web als in\nprint goed functioneert.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Fr\xe9d\xe9rique vertelt over het ontwerptraject, de afwegingen die zijn gemaakt en de resultaten die zijn behaald.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Een interessante sessie voor designers, communicatieprofessionals en iedereen die werkt aan een toegankelijke en\nherkenbare digitale overheid.' }) })] }), '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: '5c426f34-76eb-44c3-a951-277b49e6b442', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Wat als je precies de designtools zou kunnen bouwen die jouw team nodig heeft, in plaats van je workflow aan te\npassen aan de beschikbare tools?' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Het ontwikkelen van op maat gemaakte designtools is eenvoudiger dan ooit. In plaats van uitsluitend te vertrouwen op\nalgemene plug-ins en frameworks, kunnen teams nu kleine, doelgerichte tools bouwen die inspelen op de specifieke\nbehoeften van hun projecten en designsystemen.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Tijdens deze sessie deelt Javier Cuello praktijkvoorbeelden van hoe hij op maat gemaakte mini-plug-ins en\ndesigntools cre\xebert en gebruikt om problemen op te lossen die voorheen lastig aan te pakken leken. Hij laat zien wat\ner mogelijk is, waar deze tools waarde toevoegen en hoe ze de dagelijkse designworkflows kunnen verbeteren.' }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'Een praktische en inspirerende sessie voor designers die hun tooling opnieuw willen bekijken, maar ook met volop\nnuttige inzichten voor developers.' }) })] }), '\n', (0, t.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'aec41135-5d58-404d-a427-47dcb6730b20', headingLevel: 2, children: [(0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: "Designsystemen lossen vaak keer op keer dezelfde problemen op. Wat als we de universele onderdelen zouden kunnen\ndelen? Wat als delen geen belemmering vormt, maar juist ruimte biedt voor uniciteit en identiteit? Deze presentatie\ngaat over het Noorse project 'Designsystemet' en de aanpak om een \u200b\u200bframework- en design-agnostische open-source\ntoolkit te bouwen die de basis vormt voor je designsysteem." }) }), (0, t.jsx)(l.f, { children: (0, t.jsx)(n.p, { children: 'We duiken ook dieper in de vraag hoe het prioriteren van native HTML, CSS en browsergedrag componenten\nvoorspelbaarder, flexibeler en beter combineerbaar maakt. Daarnaast kijken we kritisch naar welke onderdelen van een\ndesignsysteem je daadwerkelijk zelf moet beheren en onderhouden.' }) })] })] });
+   }
+   function v(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(j, { ...e }) }) : j(e);
+   }
+  },
+  90578(e, n, a) {
+   a.d(n, { A: () => i });
+   const i = (0, a(18652).A)('outline', 'calendar-event', 'CalendarEvent', [
+    ['path', { d: 'M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12', key: 'svg-0' }],
+    ['path', { d: 'M16 3l0 4', key: 'svg-1' }],
+    ['path', { d: 'M8 3l0 4', key: 'svg-2' }],
+    ['path', { d: 'M4 11l16 0', key: 'svg-3' }],
+    ['path', { d: 'M8 15h2v2h-2l0 -2', key: 'svg-4' }],
+   ]);
+  },
+ },
+]);
