@@ -36,15 +36,15 @@
     },
     "language": "nl"
   },
-  "MiekeTenDam": {
-    "name": "Mieke ten Dam",
+  "MaartenSchut": {
+    "name": "Maarten Schut",
     "organisation": "Kadaster",
     "image": {
-      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MiekeTenDam.jpg",
-      "alt": "Mieke ten Dam"
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MaartenSchut.jpg",
+      "alt": "Maarten Schut"
     },
     "description": {
-      "nl": "Mieke werkt sinds 2019 bij het Kadaster als software engineer, met digitale toegankelijkheid als specialisme. Haar scrumteam ontwikkelt en beheert diverse websites, portals en applicaties, waaronder <a target=\"blank\" href=\"https://www.kadaster.nl\">www.kadaster.nl</a>, <a target=\"blank\" href=\"https://topokaarten.kadaster.nl\">topokaarten.kadaster.nl</a> en de zakelijke <a target=\"blank\" href=\"https://mijn.kadaster.nl\">mijn.kadaster.nl</a> omgeving."
+      "nl": "Maarten werkt sinds 2025 bij het Kadaster als product owner. Samen met het dev-team ontwikkelt en beheert hij diverse websites, portals en applicaties, waaronder <a target=\"blank\" href=\"https://www.kadaster.nl\">www.kadaster.nl</a>, <a target=\"blank\" href=\"https://topokaarten.kadaster.nl\">topokaarten.kadaster.nl</a> en het zakelijke portaal <a target=\"blank\" href=\"https://mijn.kadaster.nl\">mijn.kadaster.nl</a>. "
     },
     "language": "nl"
   },
@@ -108,6 +108,45 @@
     "description": {
       "en": "Eirik is a front-end developer and former designer with a passion for web standards and accessibility. He currently works at the Norwegian Digitalisation Agency.",
       "nl": "Eirik is front-end developer en voormalig ontwerper met een passie voor webstandaarden en toegankelijkheid. Hij werkt momenteel bij het Noorse Agentschap voor Digitalisering."
+    },
+    "language": "en"
+  },
+  "CarolineDahl": {
+    "name": "Caroline Dahl",
+    "organisation": "Fuller",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-CarolineDahl.png",
+      "alt": "Caroline Dahl"
+    },
+    "description": {
+      "en": "Caroline is a product owner with 10 years of experience in digital product development at IKEA. With a background in marketing and brand management, she combines business, technology, and human-centered design to create products that deliver real value. Leading the design system team at IKEA, Caroline is passionate about making accessibility and inclusivity a natural part of how digital products are designed and built.",
+      "nl": "Caroline is een product owner met 10 jaar ervaring in de ontwikkeling van digitale producten bij IKEA. Met een achtergrond in marketing en brandmanagement combineert ze business, technologie en mensgericht ontwerp om producten te creëren die echt waarde toevoegen. Als leider van het designsystem-team bij IKEA zet ze zich gepassioneerd in om toegankelijkheid en inclusiviteit een integraal onderdeel te maken van het ontwerp- en ontwikkelproces van digitale producten."
+    },
+    "language": "en"
+  },
+  "PierreOrsander": {
+    "name": "Pierre Orsander",
+    "organisation": "Fuller",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-PierreOrsander.png",
+      "alt": "Pierre Orsander"
+    },
+    "description": {
+      "en": "Pierre is a digital product designer with 18+ years of experience creating well-designed digital solutions for global companies, governments, service providers, and startups. Over the past six years at IKEA, he has specialised in building the digital design system, Skapa, developing deep expertise in accessibility and inclusive user experiences.",
+      "nl": "Pierre is een digital product designer met meer dan 18 jaar ervaring in het ontwerpen van hoogwaardige digitale oplossingen voor wereldwijde bedrijven, overheidsinstanties, dienstverleners en startups. De afgelopen zes jaar heeft hij zich bij IKEA gespecialiseerd in de opzet van het digitale designsystem 'Skapa', waarbij hij diepgaande expertise heeft opgebouwd op het gebied van toegankelijkheid en inclusieve gebruikerservaringen."
+    },
+    "language": "en"
+  },
+  "RobinWhittleton": {
+    "name": "Robin Whittleton",
+    "organisation": "Fuller",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-RobinWhittleton.png",
+      "alt": "Robin Whittleton"
+    },
+    "description": {
+      "en": "Robin is an accessibility specialist with a background in front-end development. Originally from the UK – where he helped to start the GOV.UK Design System – he moved to Sweden nearly a decade ago and was in the right place and time to help to start the IKEA design system. His focus is on making design and technology work for everyone regardless of need.",
+      "nl": "Robin is een toegankelijkheidsspecialist met een achtergrond in front-end development. Hij is afkomstig uit het Verenigd Koninkrijk – waar hij meewerkte aan de start van het GOV.UK Design System – en verhuisde bijna tien jaar geleden naar Zweden; daar was hij op het juiste moment op de juiste plek om te helpen bij de opzet van het IKEA-designsystem. Zijn focus ligt op het zodanig inzetten van ontwerp en technologie dat ze voor iedereen werken, ongeacht individuele behoeften."
     },
     "language": "en"
   }
