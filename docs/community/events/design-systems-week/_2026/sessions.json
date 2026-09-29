@@ -26,14 +26,26 @@
   {
     "uuid": "b919f274-381c-41db-9d1d-cc3b6934ce93",
     "isoDateTime": "2026-10-26T14:00:00.000Z",
-    "speakers": ["EricVanMullekom", "MiekeTenDam"],
+    "speakers": ["EricVanMullekom", "MaartenSchut"],
     "subject": "Digitale toegankelijkheid van kaartviewers",
     "language": {
       "abbr": "NL",
       "description": "Nederlands"
     },
     "videoId": null,
-    "icalLink": "/dsweek-2026/eric-van-mullekom-en-mieke-ten-dam.ics"
+    "icalLink": "/dsweek-2026/eric-van-mullekom-en-maarten-schut.ics"
+  },
+  {
+    "uuid": "b94a7d82-2641-446d-ad36-eafca20ec7fb",
+    "isoDateTime": "2026-10-27T10:00:00.000Z",
+    "speakers": ["CarolineDahl", "PierreOrsander", "RobinWhittleton"],
+    "subject": "Design Systems as a Lever for Accessibility Culture",
+    "language": {
+      "abbr": "EN",
+      "description": "English"
+    },
+    "videoId": null,
+    "icalLink": "/dsweek-2026/caroline-dahl-pierre-orsander-robin-whittleton.ics"
   },
   {
     "uuid": "a23217db-b17d-4e97-ad46-1fd7d113c567",
