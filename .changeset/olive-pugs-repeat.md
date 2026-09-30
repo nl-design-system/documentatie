@@ -2,9 +2,22 @@
 "@nl-design-system-unstable/documentation": minor
 ---
 
-De teksten in `dist/component-rules.json` zijn nu HTML in plaats van platte tekst.
-Lijsten en links blijven daardoor behouden: in de platte tekst verdwenen de
-URL's van links volledig.
+Het package bevat twee nieuwe bestanden, zodat andere tools dan de website de
+documentatie als data kunnen gebruiken:
+
+- `dist/guideline-pages.json` beschrijft de richtlijnenpagina's van
+  nldesignsystem.nl: per pagina het `path`, de `url` en de `fragments` (de `h2`
+  koppen met hun `id`) waar je naartoe kunt linken. Handig om links naar de
+  website te controleren. Het `$comment` in het bestand waarschuwt dat de lijst
+  nog niet compleet is: alleen `/richtlijnen/` staat erin, nog niet de rest van
+  de site.
+- `dist/component-rules.json` beschrijft de veelgemaakte fouten per component:
+  `subjects` (de componenten) en `rules`, met per regel een `id`, een `title` en
+  de teksten uit de markdown (`explanation`, `solution`, `relatedguidelines`, …).
+
+De teksten in `component-rules.json` zijn HTML in plaats van platte tekst, zodat
+lijsten en links behouden blijven: in platte tekst verdwijnen de URL's van links
+volledig.
 
 De HTML gebruikt de class names van NL Design System componenten, dus de
 bijbehorende CSS is nodig om het er goed uit te laten zien:
