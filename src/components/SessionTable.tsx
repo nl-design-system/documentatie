@@ -120,7 +120,7 @@ export const SessionTable = ({
                   {icalLink && (
                     <ButtonLink href={icalLink} download={icalLink} aria-labelledby="ical-description">
                       <Icon>
-                        <IconCalendarEvent />
+                        <IconCalendarEvent className="ma-session-table__icon--calendar" />
                       </Icon>{' '}
                       <span id="ical-description" className="sr-only">
                         iCal file for <span lang={language.abbr}>{subject}</span>(download)
