@@ -21,6 +21,7 @@
 .ma-layout-detail__content {
   box-sizing: border-box;
   column-gap: var(--ma-layout-column-gap);
+  row-gap: var(--ma-layout-row-gap);
   display: grid;
   grid-template-areas:
     "side-nav"

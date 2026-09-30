@@ -21,7 +21,8 @@
   /* --denhaag-side-navigation-mobile-display: block; */
   /* --ma-body-copy-items-max-inline-size: 65ch; */
   --ma-estafette-badge-border-width: 1px; /* --> Hele tokenset mist. Pak ik apart op. */
-  --ma-layout-column-gap: var(--basis-space-column-4xl); /* --> Zien we dit als een component of common token? */
+  --ma-layout-column-gap: var(--basis-space-column-5xl); /* --> Zien we dit als een component of common token? */
+  --ma-layout-row-gap: var(--basis-space-row-3xl); /* --> Zien we dit als een component of common token? */
   --ma-layout-side-bar-inline-size: 300px; /* --> Zien we dit als een component of common token? */
   --ma-mobile-menu-max-inline-size: 400px; /* --> Zien we dit als een component of common token? */
   /* --ma-space-relative-block-2xl: 1.25em; 20px; */
