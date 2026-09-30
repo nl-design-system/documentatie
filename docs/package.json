@@ -21,5 +21,11 @@
     "**/*.md",
     "dist/guideline-pages.json",
     "dist/component-rules.json"
-  ]
+  ],
+  "exports": {
+    "./guideline-pages.json": "./dist/guideline-pages.json",
+    "./component-rules.json": "./dist/component-rules.json",
+    "./package.json": "./package.json",
+    "./*": "./*"
+  }
 }
