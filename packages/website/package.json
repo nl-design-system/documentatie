@@ -20,7 +20,7 @@
     "//": "The public folder comes from the Docusaurus version. There the sitemap is not included in robots.txt. We can not add it there yet since the filename is different from Docusaurus",
     "build": "astro build && echo '\nSitemap: https://nldesignsystem.nl/sitemap-index.xml' >> ./dist/robots.txt && pnpm run build:guideline-pages && pnpm run build:component-rules",
     "build:guideline-pages": "node scripts/generate-guideline-pages.mjs",
-    "build:component-rules": "node scripts/generate-component-rules.mjs",
+    "build:component-rules": "tsx scripts/generate-component-rules.ts",
     "preview": "astro preview",
     "test": "vitest run",
     "astro": "astro"
@@ -101,6 +101,7 @@
     "invokers-polyfill": "1.0.3"
   },
   "devDependencies": {
+    "@astrojs/markdown-remark": "7.3.0",
     "@astrojs/mdx": "8.0.0",
     "@astrojs/react": "5.0.4",
     "@astrojs/sitemap": "3.7.2",
@@ -138,6 +139,7 @@
     "remark-directive": "4.0.0",
     "unified": "11.0.5",
     "vfile": "6.0.3",
+    "tsx": "4.21.0",
     "vitest": "4.1.10"
   }
 }

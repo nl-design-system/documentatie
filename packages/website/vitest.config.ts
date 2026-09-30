@@ -6,7 +6,7 @@ import { getViteConfig } from 'astro/config';
 // container API. See https://docs.astro.build/en/guides/testing/#vitest
 export default getViteConfig({
   test: {
-    include: ['{scripts,src}/**/*.{test,spec}.{js,mjs,ts,tsx}'],
+    include: ['{markdown-plugins,scripts,src}/**/*.{test,spec}.{js,mjs,ts,tsx}'],
     environment: 'node',
   },
 });
