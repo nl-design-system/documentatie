@@ -1,7 +1,7 @@
 import { glob, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readMarkdownAsText } from './lib/markdown-to-text.mjs';
+import { readMarkdownAsHtml } from './lib/markdown-to-html';
 
 // Source markdown lives in the documentation package; output ships with it too.
 const componentenDir = fileURLToPath(new URL('../../../docs/componenten', import.meta.url));
@@ -10,20 +10,16 @@ const docsDistDir = fileURLToPath(new URL('../../../docs/dist', import.meta.url)
 /**
  * Turn a kebab-case directory name into a human-readable label.
  * `font-family` -> `Font family`.
- * @param {string} name
- * @returns {string}
  */
-function humanize(name) {
+function humanize(name: string): string {
   const spaced = name.replace(/-/g, ' ');
   return spaced.charAt(0).toUpperCase() + spaced.slice(1);
 }
 
 /**
  * List the immediate subdirectory names of `dir` (empty when `dir` is missing).
- * @param {string} dir
- * @returns {Promise<string[]>}
  */
-async function readDirNames(dir) {
+async function readDirNames(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true }).catch(() => []);
   return entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name);
 }
@@ -32,12 +28,9 @@ async function readDirNames(dir) {
  * List the rule slugs inside a `_rules` folder, relative to that folder. A rule is
  * any directory containing a `metadata.json`, at any depth: rules can be grouped in
  * a subfolder (`heading1/noH1`) as well as live directly in `_rules` (`contrast`).
- * @param {string} rulesDir
- * @returns {Promise<string[]>}
  */
-async function readRuleSlugs(rulesDir) {
-  /** @type {string[]} */
-  const slugs = [];
+async function readRuleSlugs(rulesDir: string): Promise<string[]> {
+  const slugs: string[] = [];
   try {
     for await (const relPath of glob('**/metadata.json', { cwd: rulesDir })) {
       slugs.push(dirname(relPath));
@@ -49,26 +42,34 @@ async function readRuleSlugs(rulesDir) {
   return slugs.sort((a, b) => a.localeCompare(b));
 }
 
+// Keys the rule object itself uses. A markdown file may not claim one of these,
+// because the markdown keys are spread last and would overwrite the metadata.
+const reservedKeys = new Set(['subject', 'id', 'title']);
+
 /**
  * Build the rule object for a single `_rules/<slug>` folder: a reference to its
  * `subject`, the metadata id/title, plus one key per markdown file (`solution`,
- * `explanation`, `editor-error`, …).
- * @param {string} ruleDir
- * @param {string} subject id of the subject this rule belongs to
- * @returns {Promise<Record<string, string>>}
+ * `explanation`, `editor-error`, …). Every markdown file is rendered to HTML that
+ * uses NL Design System components.
+ *
+ * @param subject id of the subject this rule belongs to
  */
-async function readRule(ruleDir, subject) {
+async function readRule(ruleDir: string, subject: string): Promise<Record<string, string>> {
   const metadata = JSON.parse(await readFile(join(ruleDir, 'metadata.json'), 'utf8'));
 
   const entries = await readdir(ruleDir, { withFileTypes: true });
-  const markdownFiles = entries.filter((entry) => entry.isFile() && entry.name.endsWith('.md'));
+  // Sorted so the key order of the generated file is the same on every run.
+  const markdownFiles = entries
+    .filter((entry) => entry.isFile() && entry.name.endsWith('.md'))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-  /** @type {Record<string, string>} */
-  const texts = {};
-  await Promise.all(
+  const rendered = await Promise.all(
     markdownFiles.map(async (entry) => {
       const key = basename(entry.name, '.md');
-      texts[key] = await readMarkdownAsText(join(ruleDir, entry.name));
+      if (reservedKeys.has(key)) {
+        throw new Error(`${join(ruleDir, entry.name)} uses the reserved name "${key}", rename the file`);
+      }
+      return [key, await readMarkdownAsHtml(join(ruleDir, entry.name))] as const;
     }),
   );
 
@@ -76,7 +77,7 @@ async function readRule(ruleDir, subject) {
     subject,
     id: metadata.id,
     title: metadata.title,
-    ...texts,
+    ...Object.fromEntries(rendered),
   };
 }
 
@@ -99,7 +100,7 @@ const subjectGroups = (
       };
     }),
   )
-).filter(Boolean);
+).filter((group) => group !== null);
 
 const output = {
   subjects: subjectGroups.map((group) => group.subject),
