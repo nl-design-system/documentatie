@@ -24,5 +24,6 @@
     "docs/handboek/definition-of-done/candidate-stappenplan/selectiefase.md",
     "docs/handboek/definition-of-done/candidate-stappenplan/voorbereidingsfase.md"
   ],
-  "exclude": ["**/node_modules/*"]
+  "//": "Astro components can only be resolved by Astro's own toolchain, not by plain `tsc`, so the Vitest tests that import them are type checked through the Astro language tooling instead.",
+  "exclude": ["**/node_modules/*", "packages/website/**/*.test.ts"]
 }

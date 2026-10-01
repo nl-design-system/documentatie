@@ -1,3 +1,4 @@
+import type { MiddlewareHandler } from 'astro';
 import * as cheerio from 'cheerio';
 
 interface Item {
@@ -15,7 +16,7 @@ function buildToc(items: Item[]) {
   return items.map(buildTocItem).join('');
 }
 
-export async function onRequest(context, next) {
+export const onRequest: MiddlewareHandler = async (context, next) => {
   const response = await next();
   const html = await response.text();
   const $ = cheerio.load(html);
@@ -23,9 +24,9 @@ export async function onRequest(context, next) {
   const tableOfContentsElement = $('ma-table-of-contents');
 
   if (tableOfContentsElement.length) {
-    const h2List = [];
+    const h2List: Item[] = [];
 
-    $('main h2').each((index, element) => {
+    $('main h2').each((_index, element) => {
       const label = $(element).text();
       const id = $(element).attr('id');
       if (label.toLowerCase() !== 'inhoudsopgave') {
@@ -40,4 +41,4 @@ export async function onRequest(context, next) {
     status: 200,
     headers: response.headers,
   });
-}
+};
