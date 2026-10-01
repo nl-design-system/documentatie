@@ -118,7 +118,6 @@
 @media (--x-large-and-up) {
   .ma-layout-detail__anchor-nav > * {
     inset-block-start: 0;
-    position: sticky;
   }
 
   .ma-layout-detail__content {
