@@ -13,7 +13,7 @@ export function SearchResults({ results }: SearchResultsProps) {
   return Object.entries(results).map(([lvl0, hits]) => (
     <>
       <Heading level={2}>{lvl0}</Heading>
-      <UnorderedList markers={false}>
+      <UnorderedList markers={false} role="list">
         {hits
           .filter((hit) => hit.type === 'lvl1' || hit.type === 'lvl2' || hit.type === 'content')
           .map((hit) => {

@@ -160,7 +160,7 @@ export const ComponentOverviewFilter = () => {
             <Heading id="filter-results-implementation-label" level={3} appearance="level-6">
               Implementatie
             </Heading>
-            <UnorderedList markers={false}>
+            <UnorderedList markers={false} role="list">
               {frameworkNames.map((name) => (
                 <UnorderedList.Item key={name}>
                   <FormField type="checkbox">

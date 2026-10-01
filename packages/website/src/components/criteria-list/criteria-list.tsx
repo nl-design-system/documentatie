@@ -19,7 +19,9 @@ export const CriteriaList = ({
     <div className="ma-criteria-list">
       <Accordion>
         <AccordionSection heading={testCategory} headingLevel={headingLevel} headingApperance={headingApperance}>
-          <UnorderedList markers={false}>{children}</UnorderedList>
+          <UnorderedList markers={false} role="list">
+            {children}
+          </UnorderedList>
         </AccordionSection>
       </Accordion>
     </div>
