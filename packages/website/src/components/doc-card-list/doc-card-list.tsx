@@ -8,7 +8,7 @@ export interface DocCardListProps {
 
 export const DocCardList = (props: DocCardListProps) => {
   return (
-    <UnorderedList markers={false}>
+    <UnorderedList markers={false} role="list">
       {(props.items || []).map((page) => {
         let heading, description, href, lang;
 
