@@ -13,6 +13,7 @@ export interface MobileMenuTriggerProps {
 export const MobileMenuTrigger = ({ lang }: MobileMenuTriggerProps) => {
   return (
     <Button
+      id="ma-mobile-menu-trigger"
       className="ma-mobile-menu-trigger"
       purpose="subtle"
       iconStart={<IconMenu2 />}

@@ -228,6 +228,24 @@ const footerNavigationItems = [
         }
       });
     </script>
+
+    <script>
+      const mobileMenuTrigger = document.getElementById('ma-mobile-menu-trigger');
+      const mobileMenuDialog = document.getElementById('ma-mobile-menu-drawer');
+
+      if (mobileMenuDialog && mobileMenuTrigger) {
+        mobileMenuTrigger.ariaExpanded = 'false';
+
+        mobileMenuTrigger.addEventListener('click', () => {
+          mobileMenuTrigger.ariaExpanded = 'true';
+        });
+
+        mobileMenuDialog.addEventListener('close', () => {
+          mobileMenuTrigger.ariaExpanded = 'false';
+        });
+      }
+    </script>
+
     <script>
       document.addEventListener('click', (event) => {
         const button = (event.target as HTMLElement)?.closest<HTMLElement>('[data-copy-code]');
