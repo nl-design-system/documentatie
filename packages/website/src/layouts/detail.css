@@ -35,6 +35,7 @@
   padding-block-start: var(--ma-layout-detail-content-padding-block-start);
   padding-inline-end: var(--ma-layout-detail-content-padding-inline-end);
   padding-inline-start: var(--ma-layout-detail-content-padding-inline-start);
+  row-gap: var(--ma-layout-row-gap);
 }
 
 .ma-layout-detail__side-nav {
@@ -117,7 +118,6 @@
 @media (--x-large-and-up) {
   .ma-layout-detail__anchor-nav > * {
     inset-block-start: 0;
-    position: sticky;
   }
 
   .ma-layout-detail__content {

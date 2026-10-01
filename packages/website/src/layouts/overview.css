@@ -34,6 +34,7 @@
   padding-block-start: var(--ma-layout-overview-content-padding-block-start);
   padding-inline-end: var(--ma-layout-overview-content-padding-inline-end);
   padding-inline-start: var(--ma-layout-overview-content-padding-inline-start);
+  row-gap: var(--ma-layout-row-gap);
 }
 
 .ma-layout-overview__side-nav {

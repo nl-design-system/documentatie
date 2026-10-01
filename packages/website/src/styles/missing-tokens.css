@@ -2,84 +2,12 @@
  * These are all values yet to be included in the MA Design Tokens
  */
 .ma-theme {
-  --ams-unordered-list-gap: var(--basis-space-row-lg);
-  --ams-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
-  --ams-unordered-list-list-style-type: disc;
-  --ams-unordered-list-unordered-list-item-margin-inline-start: var(--basis-space-inline-2xl);
-  --basis-form-control-padding-block-end: var(--basis-space-block-sm) !important;
-  --basis-form-control-padding-block-start: var(--basis-space-block-sm) !important;
-  --basis-form-control-padding-inline-end: var(--basis-space-inline-2xs);
-  --basis-form-control-padding-inline-start: var(--basis-space-inline-2xs);
-  --denhaag-icon-button-padding-block-end: var(--basis-space-block-sm);
-  --denhaag-icon-button-padding-block-start: var(--basis-space-block-sm);
-  --denhaag-icon-button-padding-inline-end: var(--basis-space-inline-sm);
-  --denhaag-icon-button-padding-inline-start: var(--basis-space-inline-sm);
-  --denhaag-side-navigation-link-active-font-weight: 400;
-  --denhaag-side-navigation-link-padding-block-end: var(--basis-space-block-sm);
-  --denhaag-side-navigation-link-padding-block-start: var(--basis-space-block-sm);
-  --denhaag-side-navigation-list-margin-inline-start: var(--basis-space-inline-xl);
-  --denhaag-side-navigation-mobile-display: block;
-  --ma-body-copy-items-max-inline-size: 65ch;
-  --ma-estafette-badge-border-width: 1px;
-  --ma-layout-column-gap: var(--basis-space-column-4xl);
-  --ma-layout-side-bar-inline-size: 300px;
-  --ma-mobile-menu-max-inline-size: 400px;
-  --ma-space-relative-block-2xl: 1.25em; /* 20px; */
-  --ma-space-relative-block-2xs: 0.0625em; /* 1px; */
-  --ma-space-relative-block-3xl: 1.5em; /* 24px; */
-  --ma-space-relative-block-4xl: 2em; /* 32px; */
-  --ma-space-relative-block-5xl: 3em; /* 48px; */
-  --ma-space-relative-block-6xl: 4em; /* 64px; */
-  --ma-space-relative-block-lg: 0.75em; /* 12px; */
-  --ma-space-relative-block-md: 0.5em; /* 8px; */
-  --ma-space-relative-block-sm: 0.25em; /* 4px; */
-  --ma-space-relative-block-xl: 1em; /* 16px; */
-  --ma-space-relative-block-xs: 0.125em; /* 2px; */
-  --ma-table-of-contents-highlighted-background-color: var(--basis-color-accent-1-bg-subtle);
-  --ma-table-of-contents-highlighted-padding-block-end: var(--basis-space-block-4xl);
-  --ma-table-of-contents-highlighted-padding-block-start: var(--basis-space-block-2xl);
-  --ma-table-of-contents-highlighted-padding-inline-end: var(--basis-space-inline-xl);
-  --ma-table-of-contents-highlighted-padding-inline-start: var(--basis-space-inline-xl);
-  --nl-button-column-gap: var(--basis-space-inline-xs);
-  --nl-button-icon-only-padding-block-start: var(--basis-space-block-sm);
-  --nl-button-icon-only-padding-inline-end: var(--basis-space-inline-sm);
-  --nl-button-padding-block-end: var(--basis-space-block-md);
-  --nl-button-padding-block-start: var(--basis-space-block-md);
-  --nl-button-padding-inline-end: var(--basis-space-inline-md);
-  --nl-button-padding-inline-start: var(--basis-space-inline-md);
-  --nl-code-block-padding-block: var(--basis-space-block-md);
-  --nl-code-block-padding-inline: var(--basis-space-inline-md);
-  --nl-skip-link-padding-block: var(--basis-space-block-md);
-  --nl-skip-link-padding-inline: var(--basis-space-inline-lg);
-  --rhc-card-inline-size: 100% !important;
-  --rhc-card-padding-block-end: var(--basis-space-block-lg);
-  --rhc-card-padding-block-start: var(--basis-space-block-md);
-  --rhc-card-padding-inline-end: var(--basis-space-inline-lg);
-  --rhc-card-padding-inline-start: var(--basis-space-inline-lg);
-  --utrecht-breadcrumb-nav-item-padding-block-end: var(--basis-space-block-sm);
-  --utrecht-breadcrumb-nav-item-padding-block-start: var(--basis-space-block-sm);
-  --utrecht-breadcrumb-nav-item-padding-inline-end: var(--basis-space-inline-xs);
-  --utrecht-breadcrumb-nav-item-padding-inline-start: var(--basis-space-inline-xs);
-  --utrecht-button-padding-block-end: var(--nl-button-padding-block-end);
-  --utrecht-button-padding-block-start: var(--nl-button-padding-block-start);
-  --utrecht-button-padding-inline-end: var(--nl-button-padding-inline-end);
-  --utrecht-button-padding-inline-start: var(--nl-button-padding-inline-start);
-  --utrecht-form-fieldset-legend-color: var(--utrecht-document-color);
-  --utrecht-nav-bar-link-padding-block-end: var(--basis-space-block-md);
-  --utrecht-nav-bar-link-padding-block-start: var(--basis-space-block-md);
-  --utrecht-separator-block-size: var(--basis-size-5xs);
-  --utrecht-table-cell-padding-block-end: var(--basis-space-block-sm);
-  --utrecht-table-cell-padding-block-start: var(--basis-space-block-sm);
-  --utrecht-table-cell-padding-inline-end: var(--basis-space-inline-md);
-  --utrecht-table-cell-padding-inline-start: var(--basis-space-inline-md);
-  --utrecht-table-header-cell-color: var(--utrecht-document-color);
-  --nl-link-text-underline-offset: 0.3ex;
-  --nl-link-hover-text-decoration-thickness: 0.3ex;
-  --nl-link-hover-text-decoration-line: underline;
-  --utrecht-link-hover-text-decoration-thickness: var(--nl-link-hover-text-decoration-thickness);
-  --utrecht-link-hover-text-decoration: var(--nl-link-hover-text-decoration-line);
-  --utrecht-link-text-underline-offset: var(--nl-link-text-underline-offset);
-  --utrecht-breadcrumb-nav-link-hover-text-decoration: var(--nl-link-hover-text-decoration-line);
+  --ma-estafette-badge-border-width: 1px; /* --> Hele tokenset mist. Pak ik apart op. */
+  --ma-layout-column-gap: var(--basis-space-column-4xl); /* --> Zien we dit als een component of common token? */
+  --ma-layout-row-gap: var(--basis-space-row-3xl); /* --> Zien we dit als een component of common token? */
+  --ma-layout-side-bar-inline-size: 300px; /* --> Zien we dit als een component of common token? */
+  --ma-mobile-menu-max-inline-size: 400px; /* --> Zien we dit als een component of common token? */
+  --nl-button-column-gap: var(--basis-space-inline-xs); /* --> Zou een basis.space.text.* token moeten zijn. */
 }
 
 /**
@@ -207,6 +135,11 @@ html .utrecht-link--html-a:any-link:active {
   }
 }
 
+.utrecht-html th,
+.utrecht-html td {
+  color: unset !important;
+}
+
 .utrecht-table__cell--align-left {
   text-align: start;
 }
@@ -219,14 +152,18 @@ html .utrecht-link--html-a:any-link:active {
   text-align: end;
 }
 
+.utrecht-breadcrumb-nav__list {
+  align-items: center;
+}
+
 .denhaag-side-navigation__link {
   box-sizing: border-box;
 
   /* denhaag.side-navigation.link.min-block-size */
-  min-block-size: 44px;
+  min-block-size: var(--basis-pointer-target-min-block-size);
 
   /* denhaag.side-navigation.link.min-inline-size */
-  min-inline-size: 44px;
+  min-inline-size: var(--basis-pointer-target-min-inline-size);
 
   /* denhaag.side-navigation.link.padding-inline-end */
   padding-inline-end: var(--basis-space-inline-md);
