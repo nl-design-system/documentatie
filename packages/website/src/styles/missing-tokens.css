@@ -135,6 +135,11 @@ html .utrecht-link--html-a:any-link:active {
   }
 }
 
+.utrecht-html th,
+.utrecht-html td {
+  color: unset !important;
+}
+
 .utrecht-table__cell--align-left {
   text-align: start;
 }
