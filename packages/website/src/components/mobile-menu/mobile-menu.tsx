@@ -33,7 +33,13 @@ export interface MobileMenuProps {
 
 export const MobileMenu = ({ children, lang }: MobileMenuProps) => {
   return (
-    <Drawer id="ma-mobile-menu-drawer" className="ma-mobile-menu-drawer" modal={true}>
+    <Drawer
+      id="ma-mobile-menu-drawer"
+      className="ma-mobile-menu-drawer"
+      modal={true}
+      aria-labelledby="ma-mobile-menu-drawer__label"
+    >
+      <span id="ma-mobile-menu-drawer__label">Hoofdmenu</span>
       <header className="ma-mobile-menu-drawer__header">
         <Button
           purpose="subtle"
