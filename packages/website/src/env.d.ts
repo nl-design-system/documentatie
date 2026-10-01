@@ -1,4 +1,5 @@
 /// <reference types="astro/client" />
+import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 export {};
 
@@ -10,4 +11,12 @@ declare global {
   var unlistedPages: Set<string>;
 
   var isAstro: boolean | undefined;
+}
+
+declare module 'react' {
+  namespace JSX {
+    interface IntrinsicElements {
+      'ma-mobile-menu-trigger': DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+    }
+  }
 }

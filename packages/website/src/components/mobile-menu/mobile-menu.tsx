@@ -12,16 +12,18 @@ export interface MobileMenuTriggerProps {
 
 export const MobileMenuTrigger = ({ lang }: MobileMenuTriggerProps) => {
   return (
-    <Button
-      className="ma-mobile-menu-trigger"
-      purpose="subtle"
-      iconStart={<IconMenu2 />}
-      /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
-      commandfor="ma-mobile-menu-drawer"
-      command="show-modal"
-    >
-      {i18n[lang].menu}
-    </Button>
+    <ma-mobile-menu-trigger>
+      <Button
+        className="ma-mobile-menu-trigger"
+        purpose="subtle"
+        iconStart={<IconMenu2 />}
+        /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
+        commandfor="ma-mobile-menu-drawer"
+        command="show-modal"
+      >
+        {i18n[lang].menu}
+      </Button>
+    </ma-mobile-menu-trigger>
   );
 };
 
