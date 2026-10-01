@@ -2,5 +2,9 @@
   .utrecht-icon,
   .utrecht-link {
     color: currentColor;
+
+    &:focus {
+      color: var(--basis-focus-color);
+    }
   }
 }
