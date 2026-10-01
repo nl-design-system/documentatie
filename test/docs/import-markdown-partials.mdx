@@ -1,0 +1,33 @@
+---
+title: Markdown partials
+description: Test if markdown partials are properly rendered
+unlisted: true
+hide_table_of_contents: true
+---
+
+{/* @license CC0-1.0 */}
+
+import TestPageNote from "./_test-page-note.md";
+import { Markdown } from "@site/src/components/Markdown";
+import partial from "./_partial-with-headings.md?raw";
+import { Accordion, AccordionSection } from "@components/accordion/accordion";
+
+<TestPageNote />
+
+<Accordion>
+  <AccordionSection label="This partial is rendered without modification" open>
+    <Markdown content={partial} />
+  </AccordionSection>
+
+<AccordionSection label="This partial should not have an Heading level 1">
+  <Markdown omitH1 content={partial} />
+</AccordionSection>
+
+<AccordionSection label="This partial should render all the headings as level 3 and up">
+  <Markdown headingLevel={3} content={partial} />
+</AccordionSection>
+
+  <AccordionSection label="This partial should render all the headings as level 3 and up and not have the (original) heading level 1">
+    <Markdown omitH1 headingLevel={3} content={partial} />
+  </AccordionSection>
+</Accordion>
