@@ -18,9 +18,18 @@
     justify-content: flex-end;
   }
 
+  .utrecht-link:has(.ma-logo):focus .ma-logo {
+    color: black;
+  }
+
   @media (--large-down) {
     padding-block-end: var(--basis-space-block-sm);
     padding-inline: var(--basis-space-inline-md);
+
+    .utrecht-link:has(.ma-logo) {
+      block-size: var(--basis-size-md);
+      inline-size: var(--basis-size-lg);
+    }
 
     .nl-button {
       padding-inline: var(--basis-space-inline-md);
@@ -36,6 +45,10 @@
       display: none;
     }
 
+    .utrecht-link:has(.ma-logo) {
+      block-size: unset;
+      inline-size: unset;
+    }
     .ma-logo {
       display: flex;
       inline-size: 179px; /* 179px is logo viewport size */

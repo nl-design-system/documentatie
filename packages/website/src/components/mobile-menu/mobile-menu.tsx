@@ -13,6 +13,7 @@ export interface MobileMenuTriggerProps {
 export const MobileMenuTrigger = ({ lang }: MobileMenuTriggerProps) => {
   return (
     <Button
+      id="ma-mobile-menu-trigger"
       className="ma-mobile-menu-trigger"
       purpose="subtle"
       iconStart={<IconMenu2 />}
@@ -32,7 +33,13 @@ export interface MobileMenuProps {
 
 export const MobileMenu = ({ children, lang }: MobileMenuProps) => {
   return (
-    <Drawer id="ma-mobile-menu-drawer" className="ma-mobile-menu-drawer" modal={true}>
+    <Drawer
+      id="ma-mobile-menu-drawer"
+      className="ma-mobile-menu-drawer"
+      modal={true}
+      aria-labelledby="ma-mobile-menu-drawer__label"
+    >
+      <span id="ma-mobile-menu-drawer__label">Hoofdmenu</span>
       <header className="ma-mobile-menu-drawer__header">
         <Button
           purpose="subtle"

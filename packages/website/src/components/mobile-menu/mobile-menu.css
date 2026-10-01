@@ -29,3 +29,8 @@
   position: sticky;
   z-index: 1;
 }
+
+/* stylelint-disable-next-line selector-id-pattern, selector-max-id */
+#ma-mobile-menu-drawer__label {
+  display: none;
+}
