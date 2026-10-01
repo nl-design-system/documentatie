@@ -525,11 +525,11 @@ importers:
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-community/ma-design-tokens':
-        specifier: 7.1.1
-        version: 7.1.1
+        specifier: 8.0.1
+        version: 8.0.1
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 13.1.0
-        version: 13.1.0
+        specifier: 14.0.1
+        version: 14.0.1
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
@@ -4035,8 +4035,8 @@ packages:
   '@nl-design-system-community/ma-design-tokens@5.5.0':
     resolution: {integrity: sha512-oJQ4bx9HPnpn2iM25Rel/fN/MtHIQ9DUP3ZngQh0CJsf+PX5x0diqDhZjDc8www3Hvr5bTH1k01ME5S+SenW+Q==}
 
-  '@nl-design-system-community/ma-design-tokens@7.1.1':
-    resolution: {integrity: sha512-vqdmAjtTjPMlrd2Be4R2lpSH8VUxprJO82ZdqoSFySr7w3M7307lyJUUU1QL8Ycsu7uOscxyMGgSqniI5Bx/Lg==}
+  '@nl-design-system-community/ma-design-tokens@8.0.1':
+    resolution: {integrity: sha512-2NzXtc3WbwUbg/YIJaaRUK1IANX8RpMFjNtR2rGqecSFpyOlUyDtqAQdq3EJAvYQ4M1m9Hk/vtqq166PNAVcJQ==}
 
   '@nl-design-system-community/ma-task-list-css@0.0.3':
     resolution: {integrity: sha512-v87Cf65wWxtSSb4yhICFei/SppKJ79ozNaVov/4NGcbQ2U4eo8EFg3swP8GP83PM+QzC5AuUWQLjtK9D2hzXQA==}
@@ -4053,8 +4053,8 @@ packages:
   '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2':
     resolution: {integrity: sha512-nIgtDusYF1UpiefHojQCJ7BhT3dlH5xBDGfB0j4MG9WlJaFK4rXuSpZMWlpmxe6KgRotUXL6k5QLbJ6aGCVZxg==}
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@13.1.0':
-    resolution: {integrity: sha512-jby0jMYqCALr8zfbezAoGX376Ad+BfpZ+//Bm6BsXQAoDtgM3CotKCdkm0ekla3QM4yUBIOtm1uptcD+XN76IQ==}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@14.0.1':
+    resolution: {integrity: sha512-a5HuEqczeXqfg1nR3sVJe/N71EKa77Zvsm9ov8qwGGeAAgAGeKzQMc867XchZ2lrAMa7lY7QrnjwpjOFUmbaDw==}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0':
     resolution: {integrity: sha512-Ax1JW5KSUJUnfkFVDwzPHvpD61HMirn6Kp2Gu5QkHIEqwLjkD6P3/dtwKMJZq8dUGzoP/9XwMNcugLhB7Z0Qlg==}
@@ -16594,7 +16594,7 @@ snapshots:
 
   '@nl-design-system-community/ma-design-tokens@5.5.0': {}
 
-  '@nl-design-system-community/ma-design-tokens@7.1.1': {}
+  '@nl-design-system-community/ma-design-tokens@8.0.1': {}
 
   '@nl-design-system-community/ma-task-list-css@0.0.3': {}
 
@@ -16609,7 +16609,7 @@ snapshots:
 
   '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2': {}
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@13.1.0': {}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@14.0.1': {}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0': {}
 
