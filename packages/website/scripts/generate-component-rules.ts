@@ -12,7 +12,7 @@ const docsDistDir = fileURLToPath(new URL('../../../docs/dist', import.meta.url)
  * `font-family` -> `Font family`.
  */
 function humanize(name: string): string {
-  const spaced = name.replace(/-/g, ' ');
+  const spaced = name.replaceAll('-', ' ');
   return spaced.charAt(0).toUpperCase() + spaced.slice(1);
 }
 
@@ -55,9 +55,12 @@ const reservedKeys = new Set(['subject', 'id', 'title']);
  * @param subject id of the subject this rule belongs to
  */
 async function readRule(ruleDir: string, subject: string): Promise<Record<string, string>> {
-  const metadata = JSON.parse(await readFile(join(ruleDir, 'metadata.json'), 'utf8'));
+  const [metadataText, entries] = await Promise.all([
+    readFile(join(ruleDir, 'metadata.json'), 'utf8'),
+    readdir(ruleDir, { withFileTypes: true }),
+  ]);
+  const metadata = JSON.parse(metadataText);
 
-  const entries = await readdir(ruleDir, { withFileTypes: true });
   // Sorted so the key order of the generated file is the same on every run.
   const markdownFiles = entries
     .filter((entry) => entry.isFile() && entry.name.endsWith('.md'))

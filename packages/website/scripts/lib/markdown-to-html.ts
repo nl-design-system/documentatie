@@ -45,7 +45,10 @@ let processor: Promise<MarkdownRenderer> | undefined;
  */
 export async function markdownToHtml(markdown: string): Promise<string> {
   processor ??= createProcessor();
-  const { code } = await (await processor).render(markdown);
+
+  const instance = await processor;
+  const { code } = await instance.render(markdown);
+
   return code.trim();
 }
 
