@@ -221,6 +221,10 @@ html .utrecht-link--html-a:any-link:active {
   text-align: end;
 }
 
+.utrecht-breadcrumb-nav__list {
+  align-items: center;
+}
+
 .denhaag-side-navigation__link {
   box-sizing: border-box;
 
