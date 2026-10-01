@@ -21,7 +21,6 @@
 .ma-layout-detail__content {
   box-sizing: border-box;
   column-gap: var(--ma-layout-column-gap);
-  row-gap: var(--ma-layout-row-gap);
   display: grid;
   grid-template-areas:
     "side-nav"
@@ -36,6 +35,7 @@
   padding-block-start: var(--ma-layout-detail-content-padding-block-start);
   padding-inline-end: var(--ma-layout-detail-content-padding-inline-end);
   padding-inline-start: var(--ma-layout-detail-content-padding-inline-start);
+  row-gap: var(--ma-layout-row-gap);
 }
 
 .ma-layout-detail__side-nav {
