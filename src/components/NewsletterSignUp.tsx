@@ -244,7 +244,7 @@ export const NewsletterSignUp = ({
           </Paragraph>
           {errors[orgId] && <FormFieldErrorMessage>{errors[orgId].message}</FormFieldErrorMessage>}
           <Paragraph>
-            <Textbox id={orgId} name={orgId} type="text" />
+            <Textbox id={orgId} name={orgId} type="text" autoComplete="organization" />
           </Paragraph>
         </FormField>
       )}
