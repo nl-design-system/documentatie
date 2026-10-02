@@ -184,7 +184,7 @@ export const NewsletterSignUp = ({
             <FormLabel htmlFor={talkTitleId}>
               {IS_ENGLISH ? 'Title of your talk' : 'Titel van je presentatie'}
             </FormLabel>
-            <FormFieldDescription>
+            <FormFieldDescription id={`${talkTitleId}-description`}>
               {IS_ENGLISH ? 'What would you name your talk?' : 'Hoe zou jij je presentatie noemen?'}
             </FormFieldDescription>
           </Paragraph>
@@ -192,6 +192,7 @@ export const NewsletterSignUp = ({
             <Textbox
               id={talkTitleId}
               name={talkTitleId}
+              aria-describedby={`${talkTitleId}-description`}
               {...register(talkTitleId, {
                 required: {
                   value: true,
@@ -211,7 +212,7 @@ export const NewsletterSignUp = ({
             <FormLabel htmlFor={talkDescriptionId}>
               {IS_ENGLISH ? 'Descibe your talk' : 'Beschrijf je presentatie'}
             </FormLabel>
-            <FormFieldDescription>
+            <FormFieldDescription id={`${talkDescriptionId}-description`}>
               {IS_ENGLISH
                 ? 'What is it about? Who would be your intended audience? Have you spoken about this topic before?'
                 : 'Waar gaat het over? Voor wie is het interessant? Heb je al vaker over dit onderwerp gesproken?'}
@@ -222,6 +223,7 @@ export const NewsletterSignUp = ({
               id={talkDescriptionId}
               name={talkDescriptionId}
               rows={12}
+              aria-describedby={`${talkDescriptionId}-description`}
               {...register(talkDescriptionId, {
                 required: {
                   value: true,
@@ -250,12 +252,12 @@ export const NewsletterSignUp = ({
       )}
 
       {interestsId && (
-        <Fieldset>
+        <Fieldset aria-describedby={`${interestsId}-description`}>
           <FieldsetLegend>
             {interestsLegend}
             {!interestsRequired && ' (niet verplicht)'}
           </FieldsetLegend>
-          <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
+          <FormFieldDescription id={`${interestsId}-description`}>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {interests.map((interest, index) => (
             <FormField type="checkbox" key={interest}>
               <Checkbox
@@ -272,12 +274,12 @@ export const NewsletterSignUp = ({
       )}
 
       {roleId && (
-        <Fieldset>
+        <Fieldset aria-describedby={`${roleId}-description`}>
           <FieldsetLegend>
             {roleLegend}
             {!roleRequired && ' (niet verplicht)'}
           </FieldsetLegend>
-          <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
+          <FormFieldDescription id={`${roleId}-description`}>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {roles.map((role, index) => (
             <FormField type="checkbox" key={role}>
               <Checkbox name={`${roleId}[]`} id={`${roleId}-${index}`} />
@@ -293,10 +295,12 @@ export const NewsletterSignUp = ({
         <FormField type="text">
           <Paragraph>
             <FormLabel htmlFor={workAreasId}>Aan wat voor projecten werk je? (niet verplicht)</FormLabel>
-            <FormFieldDescription>Denk aan mijn-omgevingen, formulieren en/of kaarten.</FormFieldDescription>
+            <FormFieldDescription id={`${workAreasId}-description`}>
+              Denk aan mijn-omgevingen, formulieren en/of kaarten.
+            </FormFieldDescription>
           </Paragraph>
           <Paragraph>
-            <Textarea id={workAreasId} name={workAreasId}></Textarea>
+            <Textarea id={workAreasId} name={workAreasId} aria-describedby={`${workAreasId}-description`}></Textarea>
           </Paragraph>
         </FormField>
       )}
