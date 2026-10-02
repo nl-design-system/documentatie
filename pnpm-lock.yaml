@@ -138,11 +138,11 @@ importers:
         specifier: 1.0.4
         version: 1.0.4
       '@nl-design-system-community/ma-task-list-css':
-        specifier: 0.0.3
-        version: 0.0.3
+        specifier: 0.1.0
+        version: 0.1.0
       '@nl-design-system-community/ma-task-list-react':
-        specifier: 0.0.5
-        version: 0.0.5(@babel/runtime@7.28.6)(react@18.3.1)
+        specifier: 0.1.0
+        version: 0.1.0(@babel/runtime@7.28.6)(react@18.3.1)
       '@tabler/icons-react':
         specifier: 3.36.1
         version: 3.36.1(react@18.3.1)
@@ -4059,11 +4059,11 @@ packages:
   '@nl-design-system-community/ma-design-tokens@8.0.1':
     resolution: {integrity: sha512-2NzXtc3WbwUbg/YIJaaRUK1IANX8RpMFjNtR2rGqecSFpyOlUyDtqAQdq3EJAvYQ4M1m9Hk/vtqq166PNAVcJQ==}
 
-  '@nl-design-system-community/ma-task-list-css@0.0.3':
-    resolution: {integrity: sha512-v87Cf65wWxtSSb4yhICFei/SppKJ79ozNaVov/4NGcbQ2U4eo8EFg3swP8GP83PM+QzC5AuUWQLjtK9D2hzXQA==}
+  '@nl-design-system-community/ma-task-list-css@0.1.0':
+    resolution: {integrity: sha512-JeMeiYGys0MlP6FF2P9972lmCLNXVdea0qoOfyyI+USCC7kPo3beUp3rCucfapifO3/Zy6XmjazbNN3S82jR3Q==}
 
-  '@nl-design-system-community/ma-task-list-react@0.0.5':
-    resolution: {integrity: sha512-cZYTkIO14zr/VfSU+FYAhnUF072XspaQ0AHrasqCzoTnnpmGImaUaEIdI+FnAyxjVgvbirNJ8NVIY7JHrhCoNQ==}
+  '@nl-design-system-community/ma-task-list-react@0.1.0':
+    resolution: {integrity: sha512-ZovC7unLg/wq6ncwqQIgMdu8QQjA3PXJwhnMgr48reNPRjcATzoEUmD+HoHL1ymnl5earh+EsIuLK6VQjDYDYA==}
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18 || ^19
@@ -16621,9 +16621,9 @@ snapshots:
 
   '@nl-design-system-community/ma-design-tokens@8.0.1': {}
 
-  '@nl-design-system-community/ma-task-list-css@0.0.3': {}
+  '@nl-design-system-community/ma-task-list-css@0.1.0': {}
 
-  '@nl-design-system-community/ma-task-list-react@0.0.5(@babel/runtime@7.28.6)(react@18.3.1)':
+  '@nl-design-system-community/ma-task-list-react@0.1.0(@babel/runtime@7.28.6)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@nl-design-system-candidate/heading-react': 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
