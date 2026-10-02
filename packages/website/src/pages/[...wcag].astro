@@ -34,11 +34,19 @@ const navigationGroup = isNavigationGroup(navigationElement) ? navigationElement
 const components = await MDXComponents({ navigationItems: navigationGroup?.items });
 const Layout =
   page.data?.page_layout === 'overview' || page.data?.hide_table_of_contents ? OverviewLayout : DetailLayout;
+
+const pageTitle =
+  Astro.url.pathname === '/wcag/' || Astro.url.pathname === '/wcag' ? page.data?.title : `WCAG: ${page.data?.title}`;
+
+const pageTitleSm =
+  Astro.url.pathname === '/wcag/' || Astro.url.pathname === '/wcag'
+    ? page.data?.title_sm
+    : `WCAG: ${page.data?.title_sm}`;
 ---
 
 <Layout
-  title={`WCAG: ${page.data.title}`}
-  titleSm={`WCAG: ${page.data.title_sm}`}
+  title={pageTitle}
+  titleSm={pageTitleSm}
   description={description}
   lang={page.data.lang}
   translations={page.data.translations}
