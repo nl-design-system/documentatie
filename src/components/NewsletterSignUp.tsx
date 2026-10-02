@@ -89,7 +89,7 @@ export const NewsletterSignUp = ({
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<{ [key: string]: string }>();
+  } = useForm<{ [key: string]: string }>({ mode: 'onBlur' });
   const form = useRef(null);
   const IS_ENGLISH = language?.value === '2';
   const isBrowser = useIsBrowser();
@@ -116,7 +116,11 @@ export const NewsletterSignUp = ({
         <Paragraph>
           <FormLabel htmlFor={`id-${emailFieldId}`}>{IS_ENGLISH ? 'Email address ' : 'E-mailadres'}</FormLabel>
         </Paragraph>
-        {errors[emailFieldId] && <FormFieldErrorMessage>{errors[emailFieldId].message}</FormFieldErrorMessage>}
+        {errors[emailFieldId] && (
+          <FormFieldErrorMessage role="alert" id={`${emailFieldId}-error`}>
+            {errors[emailFieldId].message}
+          </FormFieldErrorMessage>
+        )}
         <Paragraph>
           <Textbox
             id={`id-${emailFieldId}`}
@@ -125,6 +129,7 @@ export const NewsletterSignUp = ({
             autoComplete="email"
             defaultValue={prefillEmail}
             aria-required="true"
+            aria-describedby={`${emailFieldId}-error`}
             {...register(`${emailFieldId}`, {
               required: {
                 value: true,
@@ -146,7 +151,11 @@ export const NewsletterSignUp = ({
         <Paragraph>
           <FormLabel htmlFor={firstNameFieldId}>{IS_ENGLISH ? 'Name' : 'Naam'}</FormLabel>
         </Paragraph>
-        {errors[firstNameFieldId] && <FormFieldErrorMessage>{errors[firstNameFieldId].message}</FormFieldErrorMessage>}
+        {errors[firstNameFieldId] && (
+          <FormFieldErrorMessage role="alert" id={`${firstNameFieldId}-error`}>
+            {errors[firstNameFieldId].message}
+          </FormFieldErrorMessage>
+        )}
         <Paragraph>
           <Textbox
             id={firstNameFieldId}
@@ -155,6 +164,7 @@ export const NewsletterSignUp = ({
             defaultValue={prefillName}
             autoComplete="given-name"
             aria-required="true"
+            aria-describedby={`${firstNameFieldId}-error`}
             {...register(`${firstNameFieldId}`, {
               required: {
                 value: true,
@@ -320,7 +330,7 @@ export const NewsletterSignUp = ({
             <Checkbox
               value="1"
               id={`${privacyPolicyId}-1`}
-              aria-describedby={`${privacyPolicyId}-description`}
+              aria-describedby={`${privacyPolicyId}-description ${privacyPolicyId}-error`}
               aria-required="true"
               {...register(`${privacyPolicyId}[]`, {
                 required: {
@@ -338,7 +348,11 @@ export const NewsletterSignUp = ({
                 : 'Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring'}
             </FormLabel>
           </FormField>
-          {errors[privacyPolicyId] && <FormFieldErrorMessage>{errors[privacyPolicyId].message}</FormFieldErrorMessage>}
+          {errors[`${privacyPolicyId}[]`] && (
+            <FormFieldErrorMessage role="alert" id={`${privacyPolicyId}-error`}>
+              {errors[`${privacyPolicyId}[]`].message}
+            </FormFieldErrorMessage>
+          )}
         </FormField>
       )}
 
