@@ -105,6 +105,7 @@ export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChil
 };
 
 export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
+  const checklistId = useId();
   const listRef = React.useRef<HTMLDivElement>(null);
 
   const [allChildren, setAllChildren] = useState<HTMLLIElement[]>([]);
@@ -166,12 +167,15 @@ export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
           <Heading level={headingLevel} id={fieldsetLabelId}>
             Filter acceptatiecriteria voor:
           </Heading>
-          {Array.from(allTheTags).map((tag) => (
-            <FormField key={tag} type="checkbox">
-              <Checkbox checked={isSelectedTag(tag)} id={tag} onChange={() => toggleTag(tag)} />
-              <FormLabel htmlFor={tag}>{tag}</FormLabel>
-            </FormField>
-          ))}
+          {Array.from(allTheTags).map((tag) => {
+            const key = `${checklistId}-${tag}`;
+            return (
+              <FormField key={key} type="checkbox">
+                <Checkbox checked={isSelectedTag(tag)} id={key} onChange={() => toggleTag(tag)} />
+                <FormLabel htmlFor={key}>{tag}</FormLabel>
+              </FormField>
+            );
+          })}
         </Fieldset>
         <div>
           <>
