@@ -83,12 +83,11 @@ export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChil
               if (isSuccessCriterium(tag)) {
                 const data = successCriteriaMap.get(tag);
 
-                // TODO: Use aria-label with SC title
                 badge = (
                   <Link
                     key={index}
                     href={`/wcag/${tag}`}
-                    aria-label={`WCAG Succescriterium ${data.sc} ${data.nl.title}`}
+                    aria-label={`WCAG ${tag} ${data.nl.title}`}
                     style={{ lineHeight: 1 }}
                   >
                     <DataBadge>{`WCAG ${tag}`}</DataBadge>
