@@ -251,12 +251,10 @@ export const NewsletterSignUp = ({
 
       {interestsId && (
         <Fieldset>
-          <Paragraph>
-            <FieldsetLegend>
-              {interestsLegend}
-              {!interestsRequired && ' (niet verplicht)'}
-            </FieldsetLegend>
-          </Paragraph>
+          <FieldsetLegend>
+            {interestsLegend}
+            {!interestsRequired && ' (niet verplicht)'}
+          </FieldsetLegend>
           <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {interests.map((interest, index) => (
             <FormField type="checkbox" key={interest}>
@@ -275,12 +273,10 @@ export const NewsletterSignUp = ({
 
       {roleId && (
         <Fieldset>
-          <Paragraph>
-            <FieldsetLegend>
-              {roleLegend}
-              {!roleRequired && ' (niet verplicht)'}
-            </FieldsetLegend>
-          </Paragraph>
+          <FieldsetLegend>
+            {roleLegend}
+            {!roleRequired && ' (niet verplicht)'}
+          </FieldsetLegend>
           <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {roles.map((role, index) => (
             <FormField type="checkbox" key={role}>
