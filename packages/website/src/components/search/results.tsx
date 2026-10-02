@@ -28,6 +28,7 @@ export function SearchResults({ results }: SearchResultsProps) {
                 <>
                   <Card
                     heading={heading && <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(heading) }} />}
+                    headingLevel={3}
                     description={
                       description && <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description) }} />
                     }
