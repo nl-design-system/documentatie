@@ -136,6 +136,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  row-gap: var(--ma-card-content-row-gap, 24px);
   inline-size: var(--ma-card-content-inline-size);
   justify-content: space-between;
   padding-block-end: var(--ma-card-content-padding-block-end, 36px);
