@@ -16,6 +16,7 @@ import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { useIsBrowser } from '../hooks/use-is-browser';
+import clsx from 'clsx';
 
 interface NewsletterSignUpProps {
   listId: string;
@@ -129,7 +130,7 @@ export const NewsletterSignUp = ({
             autoComplete="email"
             defaultValue={prefillEmail}
             aria-required="true"
-            aria-describedby={`${emailFieldId}-error`}
+            aria-describedby={errors[emailFieldId] && `${emailFieldId}-error`}
             {...register(`${emailFieldId}`, {
               required: {
                 value: true,
@@ -164,7 +165,7 @@ export const NewsletterSignUp = ({
             defaultValue={prefillName}
             autoComplete="given-name"
             aria-required="true"
-            aria-describedby={`${firstNameFieldId}-error`}
+            aria-describedby={errors[firstNameFieldId] && `${firstNameFieldId}-error`}
             {...register(`${firstNameFieldId}`, {
               required: {
                 value: true,
@@ -184,7 +185,7 @@ export const NewsletterSignUp = ({
             <FormLabel htmlFor={talkTitleId}>
               {IS_ENGLISH ? 'Title of your talk' : 'Titel van je presentatie'}
             </FormLabel>
-            <FormFieldDescription>
+            <FormFieldDescription id={`${talkTitleId}-description`}>
               {IS_ENGLISH ? 'What would you name your talk?' : 'Hoe zou jij je presentatie noemen?'}
             </FormFieldDescription>
           </Paragraph>
@@ -192,6 +193,7 @@ export const NewsletterSignUp = ({
             <Textbox
               id={talkTitleId}
               name={talkTitleId}
+              aria-describedby={errors[talkTitleId] && `${talkTitleId}-description`}
               {...register(talkTitleId, {
                 required: {
                   value: true,
@@ -211,7 +213,7 @@ export const NewsletterSignUp = ({
             <FormLabel htmlFor={talkDescriptionId}>
               {IS_ENGLISH ? 'Descibe your talk' : 'Beschrijf je presentatie'}
             </FormLabel>
-            <FormFieldDescription>
+            <FormFieldDescription id={`${talkDescriptionId}-description`}>
               {IS_ENGLISH
                 ? 'What is it about? Who would be your intended audience? Have you spoken about this topic before?'
                 : 'Waar gaat het over? Voor wie is het interessant? Heb je al vaker over dit onderwerp gesproken?'}
@@ -222,6 +224,7 @@ export const NewsletterSignUp = ({
               id={talkDescriptionId}
               name={talkDescriptionId}
               rows={12}
+              aria-describedby={errors[talkDescriptionId] && `${talkDescriptionId}-description`}
               {...register(talkDescriptionId, {
                 required: {
                   value: true,
@@ -250,12 +253,12 @@ export const NewsletterSignUp = ({
       )}
 
       {interestsId && (
-        <Fieldset>
+        <Fieldset aria-describedby={errors[interestsId] && `${interestsId}-description`}>
           <FieldsetLegend>
             {interestsLegend}
             {!interestsRequired && ' (niet verplicht)'}
           </FieldsetLegend>
-          <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
+          <FormFieldDescription id={`${interestsId}-description`}>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {interests.map((interest, index) => (
             <FormField type="checkbox" key={interest}>
               <Checkbox
@@ -272,12 +275,12 @@ export const NewsletterSignUp = ({
       )}
 
       {roleId && (
-        <Fieldset>
+        <Fieldset aria-describedby={errors[roleId] && `${roleId}-description`}>
           <FieldsetLegend>
             {roleLegend}
             {!roleRequired && ' (niet verplicht)'}
           </FieldsetLegend>
-          <FormFieldDescription>Meerdere antwoorden mogelijk.</FormFieldDescription>
+          <FormFieldDescription id={`${roleId}-description`}>Meerdere antwoorden mogelijk.</FormFieldDescription>
           {roles.map((role, index) => (
             <FormField type="checkbox" key={role}>
               <Checkbox name={`${roleId}[]`} id={`${roleId}-${index}`} />
@@ -293,10 +296,16 @@ export const NewsletterSignUp = ({
         <FormField type="text">
           <Paragraph>
             <FormLabel htmlFor={workAreasId}>Aan wat voor projecten werk je? (niet verplicht)</FormLabel>
-            <FormFieldDescription>Denk aan mijn-omgevingen, formulieren en/of kaarten.</FormFieldDescription>
+            <FormFieldDescription id={`${workAreasId}-description`}>
+              Denk aan mijn-omgevingen, formulieren en/of kaarten.
+            </FormFieldDescription>
           </Paragraph>
           <Paragraph>
-            <Textarea id={workAreasId} name={workAreasId}></Textarea>
+            <Textarea
+              id={workAreasId}
+              name={workAreasId}
+              aria-describedby={errors[workAreasId] && `${workAreasId}-description`}
+            ></Textarea>
           </Paragraph>
         </FormField>
       )}
@@ -326,7 +335,10 @@ export const NewsletterSignUp = ({
             <Checkbox
               value="1"
               id={`${privacyPolicyId}-1`}
-              aria-describedby={`${privacyPolicyId}-description ${privacyPolicyId}-error`}
+              aria-describedby={clsx({
+                [`${privacyPolicyId}-description`]: errors[privacyPolicyId],
+                [`${privacyPolicyId}-error`]: errors[privacyPolicyId],
+              })}
               aria-required="true"
               {...register(`${privacyPolicyId}[]`, {
                 required: {
@@ -336,7 +348,7 @@ export const NewsletterSignUp = ({
                     : 'Je kunt je alleen aanmelden als je akkoord gaat met de privacyverklaring.',
                 },
               })}
-              invalid={!!errors[`${privacyPolicyId}[]`]}
+              invalid={!!errors[`${privacyPolicyId}`]}
             />
             <FormLabel type="checkbox" htmlFor={`${privacyPolicyId}-1`}>
               {IS_ENGLISH
@@ -344,9 +356,9 @@ export const NewsletterSignUp = ({
                 : 'Ik ga akkoord met het gebruik van mijn gegevens volgens de privacyverklaring'}
             </FormLabel>
           </FormField>
-          {errors[`${privacyPolicyId}[]`] && (
+          {errors[`${privacyPolicyId}`] && (
             <FormFieldErrorMessage role="alert" id={`${privacyPolicyId}-error`}>
-              {errors[`${privacyPolicyId}[]`].message}
+              {errors[`${privacyPolicyId}`].message}
             </FormFieldErrorMessage>
           )}
         </FormField>
