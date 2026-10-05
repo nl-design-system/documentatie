@@ -240,6 +240,9 @@ importers:
       '@nl-design-system-candidate/button-tokens':
         specifier: 1.0.0
         version: 1.0.0
+      '@nl-design-system-candidate/form-field-error-message-tokens':
+        specifier: 1.0.0
+        version: 1.0.0
       '@nl-design-system-community/design-tokens-schema':
         specifier: 2.1.0
         version: 2.1.0
@@ -3929,6 +3932,9 @@ packages:
 
   '@nl-design-system-candidate/data-badge-tokens@2.0.3':
     resolution: {integrity: sha512-W2SB4PTND45OEJeXLSeYjA+RT2cyLRFXKcZu1rDTh5Q3n6EED65HsocFmOu6uRK7pAb6WwU6W14X4EAD47QOUA==}
+
+  '@nl-design-system-candidate/form-field-error-message-tokens@1.0.0':
+    resolution: {integrity: sha512-AaB01FovjSamfTob3ZbcRR5qzo2No/XqtUqsLe7dTHFq6y6c+O31hFyZX4Z0jzMRk4962uckbnOw/FBzhJIkvg==}
 
   '@nl-design-system-candidate/heading-1-docs@1.0.2':
     resolution: {integrity: sha512-r6N8WYLey3REimgVtvTUxtjVC/nwsjc1Vh66qziuq5F6XQ3YqvptmogUaip4Kx59hE+n98IkI2DpEuCVQYoVhA==}
@@ -16483,6 +16489,8 @@ snapshots:
       react: 18.3.1
 
   '@nl-design-system-candidate/data-badge-tokens@2.0.3': {}
+
+  '@nl-design-system-candidate/form-field-error-message-tokens@1.0.0': {}
 
   '@nl-design-system-candidate/heading-1-docs@1.0.2': {}
 
