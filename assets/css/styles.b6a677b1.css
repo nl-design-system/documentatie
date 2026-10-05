@@ -14384,6 +14384,7 @@ li.ma-doelen__item--almost-check:before {
  padding-block-end: var(--ma-card-content-padding-block-end, 36px);
  padding-block-start: var(--ma-card-content-padding-block-start, 36px);
  padding-inline: var(--ma-card-content-padding-inline, 24px);
+ row-gap: var(--ma-card-content-row-gap, 24px);
 }
 .utrecht-link-list--html-ul {
  margin-block-end: 0;
@@ -14833,8 +14834,8 @@ li.ma-doelen__item--almost-check:before {
 }
 .ma-component-card {
  --ma-cardgroup-card-mobile-max-width: 300px;
- --ma-cardgroup-card-padding-block-start: 36px;
- --ma-cardgroup-card-padding-block-end: 36px;
+ --ma-cardgroup-card-padding-block-start: 24px;
+ --ma-cardgroup-card-padding-block-end: 40px;
  --ma-card-content-padding-block-end: 0;
  --ma-card-content-padding-block-start: 0;
  --ma-component-illustration-svg-max-height: 185px;
