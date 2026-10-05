@@ -29,7 +29,7 @@ interface DSWSpeaker {
 export const OldSession = ({
   children,
   title,
-  headingLevel = 2,
+  headingLevel = 3,
   speakers,
   videoId,
 }: PropsWithChildren<OldSessionProps>) => (
