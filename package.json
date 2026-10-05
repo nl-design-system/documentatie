@@ -159,7 +159,7 @@
     "@nl-design-system-unstable/documentation": "workspace:*",
     "@nl-design-system-unstable/nlds-design-tokens": "workspace:*",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "3.4.0",
-    "@nl-design-system/component-progress": "1.1.6",
+    "@nl-design-system/component-progress": "1.1.7",
     "@nl-design-system/eslint-config": "1.0.0",
     "@playwright/test": "1.60.0",
     "@prettier/sync": "0.6.1",
