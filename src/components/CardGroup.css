@@ -136,12 +136,12 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  row-gap: var(--ma-card-content-row-gap, 24px);
   inline-size: var(--ma-card-content-inline-size);
   justify-content: space-between;
   padding-block-end: var(--ma-card-content-padding-block-end, 36px);
   padding-block-start: var(--ma-card-content-padding-block-start, 36px);
   padding-inline: var(--ma-card-content-padding-inline, 24px);
+  row-gap: var(--ma-card-content-row-gap, 24px);
 }
 
 @media (width >= 768px) {
