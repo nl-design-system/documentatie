@@ -152,6 +152,7 @@
     "@mdx-js/react": "3.1.1",
     "@nl-design-system-candidate/button-docs": "1.0.2",
     "@nl-design-system-candidate/button-tokens": "1.0.0",
+    "@nl-design-system-candidate/form-field-description-tokens": "1.0.0",
     "@nl-design-system-candidate/form-field-error-message-tokens": "1.0.0",
     "@nl-design-system-community/design-tokens-schema": "2.1.0",
     "@nl-design-system-community/editor-react": "1.2.0",
