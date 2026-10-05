@@ -54,8 +54,7 @@ import Usage from "./\_usage.md";
 import { ComponentAliases } from "@site/src/components/ComponentAliases";
 import { DesignTokens } from "@site/src/components/DesignTokens";
 
-{/* TODO: Deze stap kan pas zodra de package gepublished is. Dit werken we nog uit in het Candidate proces. Losse subissue voor gemaakt: https://github.com/nl-design-system/candidate/issues/1514 */}
-{/* // import tokens from "@nl-design-system-candidate/form-field-error-message-tokens"; */}
+import tokens from "@nl-design-system-candidate/form-field-error-message-tokens";
 
 export const title = "Form Field Error Message";
 export const description = "Foutmelding bij een invoerveld die informeert wat de fout is en wat de oplossing is.";
@@ -81,13 +80,12 @@ export const component = componentProgress.find((item) => item.number === issueN
       <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/form-field-error-message--documentatie"><BrandIcon brand='storybook' />Storybook - React</LinkListLink>
     </LinkList>
 
-    {/* TODO: Deze stap kan pas zodra de packages gepublished zijn. Dit werken we nog uit in het Candidate proces. Losse subissue voor gemaakt: https://github.com/nl-design-system/candidate/issues/1514 */}
-    {/* <Heading level={2} appearance="level-4">npm</Heading>
+    <Heading level={2} appearance="level-4">npm</Heading>
     <LinkList>
       <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/form-field-error-message-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/form-field-error-message-css</LinkListLink>
       <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/form-field-error-message-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/form-field-error-message-react</LinkListLink>
       <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/form-field-error-message-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/form-field-error-message-tokens</LinkListLink>
-    </LinkList> */}
+    </LinkList>
 
   </CardContent>
 </Card>
@@ -120,15 +118,13 @@ export const component = componentProgress.find((item) => item.number === issueN
   ))}
 </Checklist>
 
-{/* TODO: Deze stap kan pas zodra de package gepublished is. Dit werken we nog uit in het Candidate proces. Losse subissue voor gemaakt: https://github.com/nl-design-system/candidate/issues/1514 */}
-{/* <Markdown omitH1 headingLevel={3}> */}
-{/* <Usage /> */}
-{/* </Markdown> */}
+<Markdown omitH1 headingLevel={3}>
+  <Usage />
+</Markdown>
 
-{/* TODO: Deze stap kan pas zodra de package gepublished is. Dit werken we nog uit in het Candidate proces. Losse subissue voor gemaakt: https://github.com/nl-design-system/candidate/issues/1514 */}
-{/* ## Design tokens */}
+## Design tokens
 
-{/* <DesignTokens tokens={tokens} /> */}
+<DesignTokens tokens={tokens} />
 
 ## Definition of Done
 
