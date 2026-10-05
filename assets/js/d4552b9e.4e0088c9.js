@@ -59,8 +59,8 @@
       [h, p] = (0, r.useState)([]),
       [f, j] = (0, r.useState)(0),
       [w, x] = (0, r.useState)(0),
-      b = (e) => h.includes(e),
-      v = (0, r.useId)();
+      v = (e) => h.includes(e),
+      b = (0, r.useId)();
      return (
       r.useEffect(() => {
        const e = t.current;
@@ -93,9 +93,9 @@
          children: [
           (0, u.jsxs)(s.LB, {
            'aria-describedby': 'filter-results',
-           'aria-labelledby': v,
+           'aria-labelledby': b,
            children: [
-            (0, u.jsx)(c.DZ, { level: n, id: v, children: 'Filter acceptatiecriteria voor:' }),
+            (0, u.jsx)(c.DZ, { level: n, id: b, children: 'Filter acceptatiecriteria voor:' }),
             Array.from(g).map((e) =>
              (0, u.jsxs)(
               s.zB,
@@ -103,11 +103,11 @@
                type: 'checkbox',
                children: [
                 (0, u.jsx)(s.Sc, {
-                 checked: b(e),
+                 checked: v(e),
                  id: e,
                  onChange: () =>
                   ((e, n) => {
-                   const t = ('boolean' == typeof n ? n : !b(e)) ? [...h, e] : h.filter((n) => n !== e);
+                   const t = ('boolean' == typeof n ? n : !v(e)) ? [...h, e] : h.filter((n) => n !== e);
                    p(t);
                   })(e),
                 }),
@@ -395,7 +395,7 @@
   },
   26877(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => x, $9: () => v, mu: () => b, Fc: () => k, K_: () => A });
+   t.d(n, { VK: () => x, $9: () => b, mu: () => v, Fc: () => k, K_: () => A });
    var r = t(29181),
     i = t(29857),
     o = t(66153),
@@ -420,7 +420,7 @@
       i = t && p.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
      return e && (0, c.jsx)(j.n, { children: i.map((t) => (0, c.jsx)(j.K, { className: (0, s.A)('ma-definition-of-done', t && `ma-definition-of-done--${(0, p.fX)(t.title)}`), heading: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(h._, { children: t.tasks.map(({ checked: e, name: t, id: r }) => (0, c.jsx)(h.Z, { headingLevel: n + 1, checked: e, heading: t, description: (0, p.qZ)(r) }, r)) }), (0, c.jsx)(r.fz, { children: (0, c.jsxs)(r.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) }, t.title)) });
     },
-    b = ({ component: e, headingLevel: n }) => {
+    v = ({ component: e, headingLevel: n }) => {
      const t = e && e.projects.filter((e) => !p.f4.includes(e.id));
      return e && t.length
       ? (0, c.jsx)(l.AC, {
@@ -501,7 +501,7 @@
         })
       : (0, c.jsx)(r.fz, { children: 'Er zijn nog geen implementaties' });
     },
-    v = ({ component: e, headingLevel: n }) => {
+    b = ({ component: e, headingLevel: n }) => {
      const t = e?.projects.find((e) => 'HELP_WANTED' === e.id),
       i = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
      return e && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(r.DZ, { id: 'help-component-verbeteren', level: n, children: 'Help om deze component te verbeteren' }), (0, c.jsxs)(r.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, c.jsxs)(r.Xy, { children: [i ? (0, c.jsxs)(r.Er, { children: ['Vul de ', (0, c.jsx)(r.N_, { href: i, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, c.jsxs)(r.Er, { children: [(0, c.jsxs)(r.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, c.jsxs)(r.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, c.jsx)(r.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, c.jsx)(r.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
@@ -640,10 +640,10 @@
     j = t(24214),
     w = t(92081),
     x = t(1375),
-    b = t(73563),
-    v = t(23436),
+    v = t(73563),
+    b = t(23436),
     k = t(79532);
-   const A = { boxShadow: m.A, color: u.A, cursor: h.A, dimension: p.A, fontFamily: f.A, fontFamilies: f.A, fontSize: j.A, fontSizes: j.A, fontWeight: w.A, fontWeights: w.A, lineHeight: x.A, lineHeights: x.A, number: b.A, other: v.A, textDecoration: k.A },
+   const A = { boxShadow: m.A, color: u.A, cursor: h.A, dimension: p.A, fontFamily: f.A, fontFamilies: f.A, fontSize: j.A, fontSizes: j.A, fontWeight: w.A, fontWeights: w.A, lineHeight: x.A, lineHeights: x.A, number: v.A, other: b.A, textDecoration: k.A },
     y = ({ type: e }) => {
      const n = Object.hasOwn(A, e) ? e : 'other';
      return (0, c.jsx)(d.In, { children: (0, a.createElement)(A[n]) });
@@ -797,7 +797,7 @@
   },
   84471(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => i, KF: () => m, mJ: () => p, VZ: () => A, cR: () => k, Pv: () => f, qZ: () => s, kD: () => b, QQ: () => T, B2: () => u, Pc: () => l, f4: () => a, GT: () => v, fX: () => o, eQ: () => x, B_: () => w, o_: () => j });
+   t.d(n, { bo: () => i, KF: () => m, mJ: () => p, VZ: () => A, cR: () => k, Pv: () => f, qZ: () => s, kD: () => v, QQ: () => T, B2: () => u, Pc: () => l, f4: () => a, GT: () => b, fX: () => o, eQ: () => x, B_: () => w, o_: () => j });
    const r = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     i = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     o = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -839,10 +839,10 @@
     j = (e) => e.join('.'),
     w = (e) => '--' + e.join('-'),
     x = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function b(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? b(e[t], [...n, t]) : []));
+   function v(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? v(e[t], [...n, t]) : []));
    }
-   function v(e) {
+   function b(e) {
     const n = new Map();
     function t(e) {
      return (n.has(e) || n.set(e, j(e)), n.get(e));
@@ -882,7 +882,7 @@
   96603(e, n, t) {
    'use strict';
    (t.r(n), t.d(n, { assets: () => M, component: () => I, contentTitle: () => _, default: () => $, description: () => B, frontMatter: () => H, issueNumber: () => E, metadata: () => r, title: () => P, toc: () => O }));
-   const r = JSON.parse('{"id":"componenten/form-field-error-message/index","title":"Form Field Error Message","description":"Toont een foutmelding die informeert wat er is fout gegaan en hoe dit is op te lossen.","source":"@site/docs/componenten/form-field-error-message/index.mdx","sourceDirName":"componenten/form-field-error-message","slug":"/form-field-error-message","permalink":"/form-field-error-message","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-error-message/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Form Field Error Message","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Form Field Error Message","pagination_label":"Form Field Error Message","description":"Toont een foutmelding die informeert wat er is fout gegaan en hoe dit is op te lossen.","issue_number":122,"slug":"/form-field-error-message","keywords":["danger","error","error message","form","form error","form field","form field error message","formulier","formulierelement","fout","foutmelding","invalid","ongeldig","onjuist","problem","validatie","validation","waarschuwing"]},"sidebar":"componenten","previous":{"title":"Form Field Description","permalink":"/form-field-description"},"next":{"title":"Form Field Label","permalink":"/form-field-label"}}');
+   const r = JSON.parse('{"id":"componenten/form-field-error-message/index","title":"Form Field Error Message","description":"Foutmelding bij een invoerveld die informeert wat de fout is en wat de oplossing is.","source":"@site/docs/componenten/form-field-error-message/index.mdx","sourceDirName":"componenten/form-field-error-message","slug":"/form-field-error-message","permalink":"/form-field-error-message","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-error-message/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Form Field Error Message","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Form Field Error Message","pagination_label":"Form Field Error Message","description":"Foutmelding bij een invoerveld die informeert wat de fout is en wat de oplossing is.","issue_number":122,"slug":"/form-field-error-message","keywords":["danger","error","error message","form","form error","form field","form field error message","formulier","formulierelement","fout","foutmelding","invalid","ongeldig","onjuist","problem","validatie","validation","waarschuwing"]},"sidebar":"componenten","previous":{"title":"Form Field Description","permalink":"/form-field-description"},"next":{"title":"Form Field Label","permalink":"/form-field-label"}}');
    var i = t(86070),
     o = t(18439),
     s = t(79447),
@@ -911,8 +911,8 @@
     const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, o.R)(), ...e.components };
     return (0, i.jsxs)(i.Fragment, { children: [(0, i.jsx)(n.p, { children: 'Zorg ervoor dat foutmeldingen op een logische plek staan en gekoppeld zijn aan het element voor formulierinvoer.' }), '\n', (0, i.jsx)(n.p, { children: 'De meest gebruiksvriendelijke plek voor foutmeldingen is tussen het label en het element voor formulierinvoer. Als foutmeldingen onder de formulierinvoer staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.' }), '\n', (0, i.jsxs)(n.p, { children: ['Een ', (0, i.jsx)(n.a, { href: '/woordenlijst/#:~:text=Nederlandstalige%20WCAG%20definitie-,Screenreader,-screen%20reader', children: 'screenreader' }), ' schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna foutmeldingen t\xfassen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Koppel foutmeldingen daarom ook aan het element voor formulierinvoer met ', (0, i.jsx)(n.code, { children: 'aria-describedby' }), '. Op die manier wordt de foutmeldingen voorgelezen wanneer de toetsenbordfocus op dat element staat.'] }), '\n', (0, i.jsx)(n.p, { children: 'Voorbeeld:' }), '\n', (0, i.jsx)(n.pre, { children: (0, i.jsx)(n.code, { className: 'language-html', children: '<p><label for="name">Naam</label></p>\n<p id="description-name">Vul je voor- en achternaam in.</p>\n<p id="error-name">Het veld \'Naam\' is een verplicht veld.</p>\n<p><input id="name" aria-describedby="description-name error-name" autocomplete="name" type="text" /></p>\n' }) }), '\n', (0, i.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, i.jsxs)(n.ul, { children: ['\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/foutmeldingen/', children: 'Toegankelijke foutmeldingen bij formuliervelden' }) }), '\n', (0, i.jsx)(n.li, { children: (0, i.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
    }
-   var b = t(3678),
-    v = t(54672),
+   var v = t(3678),
+    b = t(54672),
     k = t(37166),
     A = t(53971),
     y = t(61629),
@@ -965,7 +965,7 @@
      { title: 'Als kleuren worden gebruikt om aan te geven dat er een fout gemaakt is, dan is er ook ten minste \xe9\xe9n andere manier om de foutmelding te herkennen.', sc: '1.4.1', status: '', component: R.Ay, tags: ['designer'] },
      { title: 'De tekst in de Form Field Error Message heeft een contrastratio van minimaal 4,5:1 met de achtergrondkleur.', sc: '1.4.3', status: '', component: k.Ay, tags: ['designer'] },
      { title: 'Als je de tekst van de Form Field Error Message vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: A.Ay, tags: ['developer'] },
-     { title: 'De bezoeker kan de Form Field Error Message tot 400% vergroten zonder verlies van functionaliteit of informatie.', sc: '1.4.10', status: '', component: b.Ay, tags: ['developer', 'designer'] },
+     { title: 'De bezoeker kan de Form Field Error Message tot 400% vergroten zonder verlies van functionaliteit of informatie.', sc: '1.4.10', status: '', component: v.Ay, tags: ['developer', 'designer'] },
      { title: 'De Form Field Error Message is niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: y.Ay, tags: ['developer'] },
      { title: 'De Form Field Error Message komt niet voor in de normale focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: T.Ay, tags: ['developer'] },
      { title: 'Als de Form Field Error Message in een andere taal is dan de taal van de pagina, dan heeft het een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: C.Ay, tags: ['developer'] },
@@ -991,7 +991,7 @@
       },
       tags: ['developer'],
      },
-     { title: 'Tekst in de Form Field Error Message blijft leesbaar wanneer de tekstafstand vergroot wordt. ', sc: '1.4.12', status: '', component: v.Ay, tags: ['developer'] },
+     { title: 'Tekst in de Form Field Error Message blijft leesbaar wanneer de tekstafstand vergroot wordt. ', sc: '1.4.12', status: '', component: b.Ay, tags: ['developer'] },
      { title: 'De Form Field Error Message is standaard niet bereikbaar en bedienbaar met het toetsenbord. ', sc: '2.1.1', status: '', component: D.Ay, tags: ['developer'] },
      { title: 'De Form Field Error Message komt standaard niet voor in de focusvolgorde van de pagina. ', sc: '2.4.3', status: '', component: G.Ay, tags: ['developer'] },
      {
@@ -1008,11 +1008,11 @@
    t(24703);
    var z = t(56323);
    t(48068);
-   const H = { title: 'Form Field Error Message', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Error Message', pagination_label: 'Form Field Error Message', description: 'Toont een foutmelding die informeert wat er is fout gegaan en hoe dit is op te lossen.', issue_number: 122, slug: '/form-field-error-message', keywords: ['danger', 'error', 'error message', 'form', 'form error', 'form field', 'form field error message', 'formulier', 'formulierelement', 'fout', 'foutmelding', 'invalid', 'ongeldig', 'onjuist', 'problem', 'validatie', 'validation', 'waarschuwing'] },
+   const H = { title: 'Form Field Error Message', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Error Message', pagination_label: 'Form Field Error Message', description: 'Foutmelding bij een invoerveld die informeert wat de fout is en wat de oplossing is.', issue_number: 122, slug: '/form-field-error-message', keywords: ['danger', 'error', 'error message', 'form', 'form error', 'form field', 'form field error message', 'formulier', 'formulierelement', 'fout', 'foutmelding', 'invalid', 'ongeldig', 'onjuist', 'problem', 'validatie', 'validation', 'waarschuwing'] },
     _ = void 0,
     M = {},
     P = 'Form Field Error Message',
-    B = 'Toont een foutmelding die informeert wat er is fout gegaan en hoe dit is op te lossen.',
+    B = 'Foutmelding bij een invoerveld die informeert wat de fout is en wat de oplossing is.',
     E = 122,
     I = s.find((e) => e.number === E),
     O = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
