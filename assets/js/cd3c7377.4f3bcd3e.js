@@ -3,7 +3,7 @@
  {
   1866(e, n, t) {
    'use strict';
-   t.d(n, { b: () => p, e: () => h });
+   t.d(n, { b: () => h, e: () => p });
    var i = t(30758),
     r = t(24456),
     s = t(12086),
@@ -12,10 +12,10 @@
     l = t(46847),
     d = t(14881),
     c = t(29857),
-    g = t(6360),
-    u = t(13526),
-    m = t(86070);
-   const h = ({ title: e, sc: n, children: t, tags: a }) => {
+    m = t(6360),
+    g = t(13526),
+    u = t(86070);
+   const p = ({ title: e, sc: n, children: t, tags: a }) => {
      const l = (0, i.useId)(),
       c = [...a];
      if (n) {
@@ -23,26 +23,26 @@
       const e = s.pI.get(n);
       e?.conformance && c.push(`Niveau ${e.conformance}`);
      }
-     return (0, m.jsx)('div', {
+     return (0, u.jsx)('div', {
       role: 'listitem',
       'data-tags': a.join(','),
-      className: (0, u.A)(
+      className: (0, g.A)(
        'ma-new-checklist__item',
        a.map((e) => `ma-new-checklist__item--${e}`),
       ),
-      children: (0, m.jsx)(d.K, {
-       label: (0, m.jsx)('span', { className: 'ma-new-checklist__title', id: l, children: e }),
-       children: (0, m.jsxs)('div', {
+      children: (0, u.jsx)(d.K, {
+       label: (0, u.jsx)('span', { className: 'ma-new-checklist__title', id: l, children: e }),
+       children: (0, u.jsxs)('div', {
         className: 'ma-new-checklist__content ma-flow',
         children: [
-         t && (0, m.jsx)('div', { className: 'ma-flow', children: t }),
-         (0, m.jsx)(o._Q, {
+         t && (0, u.jsx)('div', { className: 'ma-flow', children: t }),
+         (0, u.jsx)(o._Q, {
           className: 'ma-new-checklist__badge-list',
           children: c.map((e, n) => {
-           let t = (0, m.jsx)(g.KE, { children: e }, n);
+           let t = (0, u.jsx)(m.KE, { children: e }, n);
            if (/^[0-9]+\.[0-9]+\.[0-9]+$/.test(e)) {
             const i = s.pI.get(e);
-            t = (0, m.jsx)(r.N, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${i.sc} ${i.nl.title}`, style: { lineHeight: 1 }, children: (0, m.jsx)(g.KE, { children: `WCAG ${e}` }) }, n);
+            t = (0, u.jsx)(r.N, { href: `/wcag/${e}`, 'aria-label': `WCAG Succescriterium ${i.sc} ${i.nl.title}`, style: { lineHeight: 1 }, children: (0, u.jsx)(m.KE, { children: `WCAG ${e}` }) }, n);
            }
            return t;
           }),
@@ -52,14 +52,14 @@
       }),
      });
     },
-    p = ({ children: e, headingLevel: n }) => {
+    h = ({ children: e, headingLevel: n }) => {
      const t = i.useRef(null),
       [r, s] = (0, i.useState)([]),
-      [g, u] = (0, i.useState)([]),
-      [h, p] = (0, i.useState)([]),
+      [m, g] = (0, i.useState)([]),
+      [p, h] = (0, i.useState)([]),
       [f, j] = (0, i.useState)(0),
-      [w, x] = (0, i.useState)(0),
-      b = (e) => h.includes(e),
+      [x, w] = (0, i.useState)(0),
+      b = (e) => p.includes(e),
       v = (0, i.useId)();
      return (
       i.useEffect(() => {
@@ -71,12 +71,12 @@
         e.dataset.tags?.split(',')?.forEach((e) => e && n.add(e));
        }),
         s(i),
-        u([...n]),
+        g([...n]),
         j(i.length),
-        p([...n]));
+        h([...n]));
       }, []),
       i.useEffect(() => {
-       const e = h,
+       const e = p,
         n = [],
         t = [];
        (r.forEach((i) => {
@@ -84,34 +84,34 @@
        }),
         n.forEach((e) => (e.hidden = !1)),
         t.forEach((e) => (e.hidden = !0)),
-        x(n.length));
-      }, [h]),
-      (0, m.jsxs)('div', {
+        w(n.length));
+      }, [p]),
+      (0, u.jsxs)('div', {
        children: [
-        (0, m.jsxs)('div', {
+        (0, u.jsxs)('div', {
          className: 'ma-filter-block',
          children: [
-          (0, m.jsxs)(o.LB, {
+          (0, u.jsxs)(o.LB, {
            'aria-describedby': 'filter-results',
            'aria-labelledby': v,
            children: [
-            (0, m.jsx)(c.DZ, { level: n, id: v, children: 'Filter acceptatiecriteria voor:' }),
-            Array.from(g).map((e) =>
-             (0, m.jsxs)(
+            (0, u.jsx)(c.DZ, { level: n, id: v, children: 'Filter acceptatiecriteria voor:' }),
+            Array.from(m).map((e) =>
+             (0, u.jsxs)(
               o.zB,
               {
                type: 'checkbox',
                children: [
-                (0, m.jsx)(o.Sc, {
+                (0, u.jsx)(o.Sc, {
                  checked: b(e),
                  id: e,
                  onChange: () =>
                   ((e, n) => {
-                   const t = ('boolean' == typeof n ? n : !b(e)) ? [...h, e] : h.filter((n) => n !== e);
-                   p(t);
+                   const t = ('boolean' == typeof n ? n : !b(e)) ? [...p, e] : p.filter((n) => n !== e);
+                   h(t);
                   })(e),
                 }),
-                (0, m.jsx)(o.lR, { htmlFor: e, children: e }),
+                (0, u.jsx)(o.lR, { htmlFor: e, children: e }),
                ],
               },
               e,
@@ -119,25 +119,25 @@
             ),
            ],
           }),
-          (0, m.jsx)('div', {
-           children: (0, m.jsxs)(m.Fragment, {
+          (0, u.jsx)('div', {
+           children: (0, u.jsxs)(u.Fragment, {
             children: [
-             (0, m.jsxs)(a.f, { role: 'status', children: [w, ' van de ', f, ' items zijn nu zichtbaar.'] }),
-             w < f
-              ? (0, m.jsx)(l.$, {
+             (0, u.jsxs)(a.f, { role: 'status', children: [x, ' van de ', f, ' items zijn nu zichtbaar.'] }),
+             x < f
+              ? (0, u.jsx)(l.$, {
                  purpose: 'secondary',
                  onClick: () => {
-                  p(g);
+                  h(m);
                  },
                  children: 'Toon alles',
                 })
-              : (0, m.jsx)(m.Fragment, {}),
+              : (0, u.jsx)(u.Fragment, {}),
             ],
            }),
           }),
          ],
         }),
-        (0, m.jsx)(d.n, { className: 'ma-new-checklist', role: 'list', ref: t, children: e }),
+        (0, u.jsx)(d.n, { className: 'ma-new-checklist', role: 'list', ref: t, children: e }),
        ],
       })
      );
@@ -159,7 +159,7 @@
   },
   3446(e, n, t) {
    'use strict';
-   t.d(n, { r: () => g });
+   t.d(n, { r: () => m });
    var i = t(29181),
     r = t(74172),
     s = t(15089),
@@ -168,7 +168,7 @@
     l = t(83386),
     d = t(86070);
    const c = { figma: (0, d.jsx)(r.A, {}), github: (0, d.jsx)(s.A, {}), npm: (0, d.jsx)(o.A, {}), storybook: (0, d.jsx)(a.A, {}) },
-    g = ({ brand: e }) => (0, d.jsx)(i.In, { children: c[e] || (0, d.jsx)(l.A, {}) });
+    m = ({ brand: e }) => (0, d.jsx)(i.In, { children: c[e] || (0, d.jsx)(l.A, {}) });
   },
   3678(e, n, t) {
    'use strict';
@@ -315,9 +315,9 @@
      return (0, a.jsx)(o, { ref: s, className: l, ...r, children: t });
     }),
     d = ({ className: e, classNamePanel: n, label: t, heading: r, headingLevel: l, headingApperance: d, ...c }) => {
-     const g = (0, i.A)('utrecht-accordion__section', e),
-      u = (0, i.A)('utrecht-accordion__panel', n);
-     return (0, a.jsxs)('details', { className: g, ...c, children: [(0, a.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, a.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, a.jsx)('span', { className: 'nl-button__icon-start', children: (0, a.jsx)(s.A, {}) }), (0, a.jsxs)('span', { className: 'nl-button__label', children: [r && (0, a.jsx)(o.D, { level: l, appearance: d, children: r }), t] })] }) }), (0, a.jsx)('div', { className: u, children: c.children })] });
+     const m = (0, i.A)('utrecht-accordion__section', e),
+      g = (0, i.A)('utrecht-accordion__panel', n);
+     return (0, a.jsxs)('details', { className: m, ...c, children: [(0, a.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, a.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, a.jsx)('span', { className: 'nl-button__icon-start', children: (0, a.jsx)(s.A, {}) }), (0, a.jsxs)('span', { className: 'nl-button__label', children: [r && (0, a.jsx)(o.D, { level: l, appearance: d, children: r }), t] })] }) }), (0, a.jsx)('div', { className: g, children: c.children })] });
     };
   },
   19707(e, n, t) {
@@ -378,110 +378,6 @@
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(s, { ...e }) }) : s(e);
    }
   },
-  26061(e, n, t) {
-   'use strict';
-   (t.r(n), t.d(n, { assets: () => _, component: () => B, contentTitle: () => W, default: () => E, description: () => z, frontMatter: () => L, issueNumber: () => P, metadata: () => i, title: () => H, toc: () => I }));
-   const i = JSON.parse('{"id":"componenten/form-field-description/index","title":"Form Field Description","description":"Extra tekst bij een invoerveld die helpt bij het invullen van een formulier door een beschrijving, instructies of suggesties.","source":"@site/docs/componenten/form-field-description/index.mdx","sourceDirName":"componenten/form-field-description","slug":"/form-field-description","permalink":"/form-field-description","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-description/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Form Field Description","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Form Field Description","pagination_label":"Form Field Description","description":"Extra tekst bij een invoerveld die helpt bij het invullen van een formulier door een beschrijving, instructies of suggesties.","issue_number":174,"slug":"/form-field-description","keywords":["beschrijving","description","form","form field","form field description","form field help text","form field hint","formulier","formulierelement","helper","help text","hint","hint label","hint tekst","hint text"]},"sidebar":"componenten","previous":{"title":"Form Field","permalink":"/form-field"},"next":{"title":"Form Field Error Message","permalink":"/form-field-error-message"}}');
-   var r = t(86070),
-    s = t(18439),
-    o = t(43306),
-    a = t(13839),
-    l = t(37674),
-    d = t(78134),
-    c = t(26165),
-    g = t(45009),
-    u = t(29857),
-    m = t(3446),
-    h = t(26877),
-    p = t(1866);
-   function f(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Koppel de Form Field Description met ', (0, r.jsx)(n.code, { children: 'aria-describedby' }), ' aan het bijbehorende element voor formulierinvoer:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Zorg ervoor dat de tekst in de Form Field Description niet ingeklapt is, zoals het geval is in een ', (0, r.jsx)(n.code, { children: 'details' }), ' en ', (0, r.jsx)(n.code, { children: 'summary' }), ' combinatie. De verborgen tekst wordt in de browsers Firefox en Safari (', (0, r.jsx)(n.a, { href: '/baseline/2026-03/', children: 'NL Design System baseline maart 2026' }), ') niet door ', (0, r.jsx)(n.a, { href: '/woordenlijst/#:~:text=Nederlandstalige%20WCAG%20definitie-,Screenreader,-screen%20reader', children: 'screenreaders' }), ' voorgelezen.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke instructies en beschrijvingen' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function j(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['De Form Field Description kan met ', (0, r.jsx)(n.code, { children: 'aria-describedby' }), ' aan het bijbehorende element voor formulierinvoer worden gekoppeld.'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke descriptions bij formuliervelden' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   function w(e) {
-    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat instructies die nodig zijn om te begrijpen wat er van de bezoeker verwacht wordt op een logische plek staan en gekoppeld zijn aan het element voor formulierinvoer.' }), '\n', (0, r.jsx)(n.p, { children: 'De meest gebruiksvriendelijke plek voor instructies is tussen het label en het element voor formulierinvoer. Als instructies er \xf3nder staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.' }), '\n', (0, r.jsxs)(n.p, { children: ['Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna instructies t\xfassen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Koppel instructies daarom ook aan het element voor formulierinvoer met ', (0, r.jsx)(n.code, { children: 'aria-describedby' }), '. Op die manier wordt de beschrijving voorgelezen wanneer de toetsenbordfocus op dat element staat.'] }), '\n', (0, r.jsx)(n.p, { children: 'Voorbeeld:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke instructies en beschrijvingen' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
-   }
-   var x = t(3678),
-    b = t(54672),
-    v = t(37166),
-    A = t(53971),
-    k = t(37888),
-    y = t(12941),
-    T = t(64862),
-    C = t(33201),
-    F = t(61962),
-    R = t(61629),
-    D = t(24908);
-   const G = [
-     {
-      title: 'De Form Field Description is gekoppeld aan het bijbehorende element voor formulierinvoer.',
-      sc: '1.3.1',
-      status: '',
-      component: function (e = {}) {
-       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(f, { ...e }) }) : f(e);
-      },
-      tags: ['developer'],
-     },
-     {
-      title: 'De Form Field Description staat op een logische plek.',
-      sc: '1.3.2',
-      status: '',
-      component: function (e = {}) {
-       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(w, { ...e }) }) : w(e);
-      },
-      tags: ['designer', 'developer'],
-     },
-     { title: 'Instructies in de Form Field Description zijn op een inclusieve manier beschreven.', sc: '1.3.3', status: '', component: y.Ay, tags: ['designer', 'contentmaker'] },
-     { title: 'De kleur van de Form Field Description geeft geen informatie die niet ook op minimaal 1 andere manier wordt gegeven.', sc: '1.4.1', status: '', component: T.Ay, tags: ['designer', 'contentmaker'] },
-     { title: 'De tekst in de Form Field Description heeft een contrastratio van minimaal 4,5:1 met de achtergrondkleur.', sc: '1.4.3', status: '', component: v.Ay, tags: ['designer'] },
-     { title: 'Als je de tekst van de Form Field Description vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: A.Ay, tags: ['developer'] },
-     { title: 'De bezoeker kan de Form Field Description tot 400% vergroten zonder verlies van functionaliteit of informatie.', sc: '1.4.10', status: '', component: x.Ay, tags: ['developer', 'designer'] },
-     { title: 'De Form Field Description is niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: R.Ay, tags: ['developer'] },
-     { title: 'De Form Field Description komt niet voor in de normale focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: D.Ay, tags: ['developer'] },
-     { title: 'Als de Form Field Description in een andere taal is dan de taal van de pagina, dan heeft het een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: k.Ay, tags: ['developer'] },
-    ],
-    N = [
-     {
-      title: 'De Form Field Description kan aan een element voor formulierinvoer gekoppeld worden.',
-      sc: '1.3.1',
-      status: '',
-      component: function (e = {}) {
-       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(j, { ...e }) }) : j(e);
-      },
-      tags: ['developer'],
-     },
-     { title: 'Tekst in de Form Field Description blijft leesbaar wanneer de tekstafstand vergroot wordt. ', sc: '1.4.12', status: '', component: b.Ay, tags: ['developer'] },
-     { title: 'De Form Field Description is standaard niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: C.Ay, tags: ['developer'] },
-     { title: 'De Form Field Description komt standaard niet voor in de focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: F.Ay, tags: ['developer'] },
-    ];
-   t(24703);
-   var S = t(56323);
-   t(48068);
-   const L = { title: 'Form Field Description', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Description', pagination_label: 'Form Field Description', description: 'Extra tekst bij een invoerveld die helpt bij het invullen van een formulier door een beschrijving, instructies of suggesties.', issue_number: 174, slug: '/form-field-description', keywords: ['beschrijving', 'description', 'form', 'form field', 'form field description', 'form field help text', 'form field hint', 'formulier', 'formulierelement', 'helper', 'help text', 'hint', 'hint label', 'hint tekst', 'hint text'] },
-    W = void 0,
-    _ = {},
-    H = 'Form Field Description',
-    z = 'Extra tekst bij een invoerveld die helpt bij het invullen van een formulier door een beschrijving, instructies of suggesties.',
-    P = 174,
-    B = o.find((e) => e.number === P),
-    I = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
-   function M(e) {
-    const n = { h2: 'h2', h3: 'h3', ...(0, s.R)(), ...e.components };
-    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(h.Fc, { component: B, headingLevel: 1, description: z }), '\n', (0, r.jsx)(S.e, { component: B }), '\n', (0, r.jsx)(c.Zp, { className: 'ma-implementation-card', children: (0, r.jsxs)(c.Wu, { children: [(0, r.jsx)(u.DZ, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, r.jsxs)(g.d, { children: [(0, r.jsxs)(g.P, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=851-924', children: [(0, r.jsx)(m.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, r.jsxs)(g.P, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=851-924', children: [(0, r.jsx)(m.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, r.jsx)(u.DZ, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, r.jsxs)(g.d, { children: [(0, r.jsxs)(g.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-form-field-description--documentatie', children: [(0, r.jsx)(m.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, r.jsxs)(g.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/form-field-description--documentatie', children: [(0, r.jsx)(m.r, { brand: 'storybook' }), 'Storybook - React'] })] })] }) }), '\n', (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, r.jsx)(d.Ay, {}), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, r.jsx)(l.Ay, {}), '\n', (0, r.jsx)(p.b, { headingLevel: '4', children: G.map(({ component: e, ...n }) => (0, r.jsx)(p.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, r.jsx)(a.Ay, {}), '\n', (0, r.jsx)(p.b, { headingLevel: '4', children: N.map(({ component: e, ...n }) => (0, r.jsx)(p.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(h.VK, { component: B, headingLevel: 3 }), '\n', (0, r.jsx)(h.$9, { component: B, headingLevel: 2 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(h.mu, { component: B, headingLevel: 3 }), '\n', (0, r.jsx)(h.K_, { component: B })] });
-   }
-   function E(e = {}) {
-    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
-    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(M, { ...e }) }) : M(e);
-   }
-  },
   26165(e, n, t) {
    'use strict';
    t.d(n, { AC: () => d, Fu: () => o, Wu: () => a, Zp: () => l });
@@ -499,7 +395,7 @@
   },
   26877(e, n, t) {
    'use strict';
-   t.d(n, { VK: () => x, $9: () => v, mu: () => b, Fc: () => A, K_: () => k });
+   t.d(n, { VK: () => w, $9: () => v, mu: () => b, Fc: () => k, K_: () => A });
    var i = t(29181),
     r = t(29857),
     s = t(66153),
@@ -508,24 +404,24 @@
     l = t(26165),
     d = t(19707),
     c = t(86070);
-   const g = ({ checked: e, unchecked: n }) => {
+   const m = ({ checked: e, unchecked: n }) => {
     const t = (e / (e + n)) * 250;
     return (0, c.jsxs)('svg', { viewBox: '0 0 100 100', xmlns: 'http://www.w3.org/2000/svg', className: 'ma-component-progress', 'aria-hidden': 'true', children: [(0, c.jsx)('circle', { className: 'ma-component-progress__background', cx: '50', cy: '50', r: '40', fill: 'none', stroke: 'none', strokeWidth: '20' }), (0, c.jsx)('circle', { className: 'ma-component-progress__progress', cx: '50', cy: '50', r: '40', fill: 'none', stroke: 'currentColor', strokeWidth: '20', strokeDasharray: t })] });
    };
-   var u = t(87856),
-    m = t(46276),
-    h = t(58876),
-    p = t(84471);
+   var g = t(87856),
+    u = t(46276),
+    p = t(58876),
+    h = t(84471);
    const f = JSON.parse('{"Notification Banner":[{"name":"Alert","slug":"alert"},{"name":"Note","slug":"note"}],"Note":[{"name":"Alert","slug":"alert"},{"name":"Blockquote","slug":"blockquote"},{"name":"Notification Banner","slug":"notification-banner"},{"name":"Pull Quote","slug":"pull-quote"}],"Modal Dialog":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Drawer","slug":"drawer"},{"name":"Dialog","slug":"dialog"}],"Drawer":[{"name":"Modal Dialog","slug":"modal-dialog"},{"name":"Dialog","slug":"dialog"}],"Dialog":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Drawer","slug":"drawer"},{"name":"Modal Dialog","slug":"modal-dialog"}],"Alert Dialog":[{"name":"Alert","slug":"alert"},{"name":"Modal Dialog","slug":"modal-dialog"},{"name":"Dialog","slug":"dialog"}],"Alert":[{"name":"Alert Dialog","slug":"alert-dialog"},{"name":"Invalid Form Alert","slug":null},{"name":"Notification Banner","slug":"notification-banner"},{"name":"Note","slug":"note"}],"Unordered List":[{"name":"Ordered List","slug":"ordered-list"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Link List","slug":"link-list"},{"name":"Task List","slug":"task-list"}],"Ordered List":[{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Unordered List","slug":"unordered-list"}],"Link":[{"name":"Link List","slug":"link-list"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Button":[{"name":"Action Group","slug":"action-group"},{"name":"Login Link","slug":"login-link"}],"Mark":[{"name":"Strong","slug":"strong"}],"Code Block":[{"name":"Code","slug":"code"}],"Number Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Dot Badge","slug":"dot-badge"},{"name":"Status Badge","slug":"status-badge"}],"Heading":[{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Heading Group","slug":"heading-group"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Data Badge":[{"name":"Dot Badge","slug":"dot-badge"},{"name":"Number Badge","slug":"number-badge"},{"name":"Status Badge","slug":"status-badge"}],"Color Sample":[],"Code":[{"name":"Code Block","slug":"code-block"}],"Paragraph":[{"name":"Lead Paragraph","slug":"paragraph"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Strong","slug":"strong"}],"Form Field Error Message":[{"name":"Invalid Form Alert","slug":null}],"File":[{"name":"File Input","slug":"file-input"}],"Page Footer":[{"name":"Root","slug":null},{"name":"Body","slug":null},{"name":"Page Layout","slug":null},{"name":"Page Header","slug":"page-header"},{"name":"Page Body","slug":null}],"Page Header":[{"name":"Root","slug":null},{"name":"Body","slug":null},{"name":"Page Layout","slug":null},{"name":"Page Body","slug":null},{"name":"Page Footer","slug":"page-footer"},{"name":"Navigation Bar","slug":"navigation-bar"}],"Text Input":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Password Input","slug":"password-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input Group","slug":null}],"Date Input":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input Group","slug":"date-input-group"},{"name":"Date Picker","slug":"date-picker"}],"Description List":[{"name":"Data Summary","slug":"data-summary"},{"name":"Form Summary","slug":"form-summary"},{"name":"Table","slug":"table"}],"Fieldset":[{"name":"Date Input Group","slug":"date-input-group"},{"name":"Text Input Group","slug":null},{"name":"Radio Group","slug":"radio-group"},{"name":"Checkbox Group","slug":"checkbox-group"}],"Dot Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Number Badge","slug":"number-badge"},{"name":"Status Badge","slug":"status-badge"}],"Figure":[{"name":"Image","slug":"image"},{"name":"Video","slug":"video"}],"File Input":[{"name":"Form Field","slug":"form-field"},{"name":"File","slug":"file"}],"Password Input":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input","slug":"text-input"},{"name":"Text Input Group","slug":null}],"Status Badge":[{"name":"Data Badge","slug":"data-badge"},{"name":"Dot Badge","slug":"dot-badge"},{"name":"Number Badge","slug":"number-badge"}],"Form Field Description":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Form Field Label Suffix","slug":"form-field-label-suffix"},{"name":"Form Field Error Message","slug":"form-field-error-message"}],"Breadcrumb Navigation":[],"Form Field Label":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Description","slug":"form-field-description"},{"name":"Form Field Label Suffix","slug":"form-field-label-suffix"},{"name":"Legend","slug":null}],"Table":[{"name":"Description List","slug":"description-list"},{"name":"Form Summary","slug":"form-summary"}],"Login Link":[{"name":"Button","slug":"button"}],"Link List":[{"name":"Link","slug":"link"},{"name":"Unordered List","slug":"unordered-list"}],"Select":[{"name":"Select Combobox","slug":"select-combobox"},{"name":"Radio Group","slug":"radio-group"}],"Image":[{"name":"Figure","slug":"figure"}],"Form Summary":[{"name":"Data Summary","slug":"data-summary"},{"name":"Description List","slug":"description-list"},{"name":"Table","slug":"table"}],"Card as Link":[{"name":"Case Card","slug":"case-card"}],"Text Area":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Description","slug":"form-field-description"},{"name":"Form Field Error Message","slug":"form-field-error-message"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Text Input","slug":"text-input"}],"Radio Button":[{"name":"Radio Group","slug":"radio-group"},{"name":"Checkbox","slug":"checkbox"},{"name":"Switch","slug":"switch"}],"Checkbox":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Radio Button","slug":"radio-button"},{"name":"Switch","slug":"switch"}],"Action Group":[{"name":"Button","slug":"button"}],"Side Navigation":[{"name":"Navigation Bar","slug":"navigation-bar"}],"Icon":[],"Accordion":[{"name":"Details","slug":null},{"name":"Tabs","slug":"tabs"}],"Skip Link":[],"Blockquote":[{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Pull Quote","slug":"pull-quote"}],"Heading Group":[{"name":"Heading","slug":"heading"},{"name":"Rich Text Content","slug":"rich-text-content"},{"name":"Subheading","slug":null},{"name":"Pre-heading","slug":null}],"Form Field":[{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Date Input","slug":"date-input"},{"name":"File Input","slug":"file-input"},{"name":"Number Input","slug":"number-input"},{"name":"Password Input","slug":"password-input"},{"name":"Radio Group","slug":"radio-group"},{"name":"Range","slug":"range"},{"name":"Text Area","slug":"text-area"},{"name":"Text Input","slug":"text-input"},{"name":"Text Input Group","slug":null}],"Separator":[],"Heading 6":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 5":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 4":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 3":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 2":[{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Heading 1":[{"name":"Heading","slug":"heading"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Form Field Label Suffix":[{"name":"Form Field","slug":"form-field"},{"name":"Form Field Label","slug":"form-field-label"},{"name":"Form Field Description","slug":"form-field-description"}],"Progress List":[{"name":"Form Navigation","slug":"form-navigation"}],"Task Navigation":[{"name":"Topic Navigation","slug":null}],"Language Navigation":[],"Avatar":[{"name":"Figure","slug":"figure"}],"Calendar":[{"name":"Date Input","slug":"date-input"},{"name":"Date Input Group","slug":"date-input-group"},{"name":"Date Picker","slug":"date-picker"}],"Contact Timeline":[],"Switch":[{"name":"Checkbox","slug":"checkbox"},{"name":"Radio Button","slug":"radio-button"}],"Tabs":[{"name":"Accordion","slug":"accordion"}],"Navigation Bar":[{"name":"Side Navigation","slug":"side-navigation"}],"Select Combobox":[{"name":"Select","slug":"select"},{"name":"Search Input","slug":null}],"Case Card":[{"name":"Card as link","slug":"card-as-link"}],"Page Number Navigation":[],"Rich Text Content":[{"name":"Blockquote","slug":"blockquote"},{"name":"Heading","slug":"heading"},{"name":"Heading 1","slug":"heading-1"},{"name":"Heading 2","slug":"heading-2"},{"name":"Heading 3","slug":"heading-3"},{"name":"Heading 4","slug":"heading-4"},{"name":"Heading 5","slug":"heading-5"},{"name":"Heading 6","slug":"heading-6"},{"name":"Lead Paragraph","slug":"paragraph"},{"name":"Link","slug":"link"},{"name":"Ordered List","slug":"ordered-list"},{"name":"Paragraph","slug":"paragraph"},{"name":"Pre-heading","slug":"pre-heading"},{"name":"Strong","slug":"strong"},{"name":"Unordered List","slug":"unordered-list"}],"Range":[{"name":"Number Input","slug":"number-input"}],"Toggletip":[],"Logo":[],"Spinner":[{"name":"Progress Bar","slug":"progress-bar"}],"Checkbox Group":[{"name":"Checkbox","slug":"checkbox"},{"name":"Fieldset","slug":"fieldset"},{"name":"Radio Group","slug":"radio-group"}],"Date Input Group":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input","slug":"date-input"},{"name":"Date Picker","slug":"date-picker"},{"name":"Input Group","slug":"input-group"}],"Date Picker":[{"name":"Calendar","slug":"calendar"},{"name":"Date Input","slug":"date-input"},{"name":"Date Input Group","slug":"date-input-group"}],"Radio Group":[{"name":"Radio Button","slug":"radio-button"},{"name":"Fieldset","slug":"fieldset"},{"name":"Checkbox Group","slug":"checkbox-group"},{"name":"Select","slug":"select"}],"Task List":[{"name":"Unordered List","slug":"unordered-list"}],"Progress Bar":[{"name":"Spinner","slug":"spinner"}],"Input Group":[{"name":"Date Input Group","slug":"date-input-group"},{"name":"Form Field Partial","slug":null},{"name":"Form Field","slug":"form-field"},{"name":"Text Input","slug":"text-input"}],"Form Navigation":[{"name":"Progress List","slug":"progress-list"}],"YouTube Video":[{"name":"Video","slug":"video"}],"Data Summary":[{"name":"Description List","slug":"description-list"},{"name":"Form Summary","slug":"form-summary"}],"Video":[{"name":"Youtube Video","slug":"youtube-video"},{"name":"Figure","slug":"figure"}],"Strong":[{"name":"Paragraph","slug":"paragraph"},{"name":"Rich Text Content","slug":"rich-text-content"}],"Pull Quote":[{"name":"Blockquote","slug":"blockquote"}]}');
    var j = t(14881),
-    w = t(3387);
-   const x = ({ component: e, headingLevel: n }) => {
-     const t = e && e.projects.filter((e) => p.f4.includes(e.id)),
-      r = t && p.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
-     return e && (0, c.jsx)(j.n, { children: r.map((t) => (0, c.jsx)(j.K, { className: (0, o.A)('ma-definition-of-done', t && `ma-definition-of-done--${(0, p.fX)(t.title)}`), heading: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(h._, { children: t.tasks.map(({ checked: e, name: t, id: i }) => (0, c.jsx)(h.Z, { headingLevel: n + 1, checked: e, heading: t, description: (0, p.qZ)(i) }, i)) }), (0, c.jsx)(i.fz, { children: (0, c.jsxs)(i.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) }, t.title)) });
+    x = t(3387);
+   const w = ({ component: e, headingLevel: n }) => {
+     const t = e && e.projects.filter((e) => h.f4.includes(e.id)),
+      r = t && h.f4.map((e) => t.find((n) => n.id === e)).filter(Boolean);
+     return e && (0, c.jsx)(j.n, { children: r.map((t) => (0, c.jsx)(j.K, { className: (0, o.A)('ma-definition-of-done', t && `ma-definition-of-done--${(0, h.fX)(t.title)}`), heading: t ? `${t.title} - ${t.progress.value} van ${t.progress.max}` : '', headingLevel: n, headingApperance: 'level-5', children: (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(p._, { children: t.tasks.map(({ checked: e, name: t, id: i }) => (0, c.jsx)(p.Z, { headingLevel: n + 1, checked: e, heading: t, description: (0, h.qZ)(i) }, i)) }), (0, c.jsx)(i.fz, { children: (0, c.jsxs)(i.N_, { href: `${t.url}?filterQuery=${e.title}`, children: [t.title, ' projectbord op GitHub'] }) })] }) }, t.title)) });
     },
     b = ({ component: e, headingLevel: n }) => {
-     const t = e && e.projects.filter((e) => !p.f4.includes(e.id));
+     const t = e && e.projects.filter((e) => !h.f4.includes(e.id));
      return e && t.length
       ? (0, c.jsx)(l.AC, {
          appearance: 'large',
@@ -539,12 +435,12 @@
           .map((e) => {
            const t = e.tasks.find(({ name: e }) => 'Naam' === e),
             o = t?.value,
-            u = (0, p.Pv)(e),
-            m = new Map([
+            g = (0, h.Pv)(e),
+            u = new Map([
              ['Figma URL', { brand: 'figma', desciption: `${o} in Figma` }],
              ['Theme Storybook URL', { brand: 'storybook', desciption: `${o} voor visuele regressie tests` }],
             ]),
-            h = e.tasks.filter(({ name: e, value: n }) => m.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
+            p = e.tasks.filter(({ name: e, value: n }) => u.has(e) && URL.canParse(n) && 'https:' === new URL(n).protocol);
            return globalThis.isAstro
             ? (0, c.jsx)(
                d.Z,
@@ -554,22 +450,22 @@
                 description: (0, c.jsxs)('div', {
                  className: 'ma-flow',
                  children: [
-                  (0, c.jsxs)(s.f, { children: [(0, c.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, c.jsxs)(i.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
+                  (0, c.jsxs)(s.f, { children: [(0, c.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, c.jsxs)(i.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
                   (0, c.jsxs)('div', {
                    children: [
-                    (h.length > 0 || u.length > 0) && (0, c.jsx)(r.DZ, { level: Math.min(n + 1, 6), children: 'Snel aan de slag' }),
-                    h.length > 0 &&
+                    (p.length > 0 || g.length > 0) && (0, c.jsx)(r.DZ, { level: Math.min(n + 1, 6), children: 'Snel aan de slag' }),
+                    p.length > 0 &&
                      (0, c.jsx)(i.dk, {
-                      links: h
-                       .filter((e) => !!m.get(e.name))
+                      links: p
+                       .filter((e) => !!u.get(e.name))
                        .map((e) => {
-                        const n = m.get(e.name);
+                        const n = u.get(e.name);
                         return { children: n.desciption, icon: (0, c.jsx)(a.r, { brand: n.brand }), href: e.value };
                        }),
                      }),
                    ],
                   }),
-                  u.length > 0 && u.map(({ frameworkName: e, tasks: t }) => (0, c.jsxs)('section', { children: [(0, c.jsxs)(r.DZ, { level: Math.min(n + 2, 6), children: [o, ' in ', e] }), (0, c.jsx)(i.dk, { links: t.map((e) => ({ children: e.description, icon: (0, c.jsx)(a.r, { brand: e.brand }), href: e.value })) })] }, e)),
+                  g.length > 0 && g.map(({ frameworkName: e, tasks: t }) => (0, c.jsxs)('section', { children: [(0, c.jsxs)(r.DZ, { level: Math.min(n + 2, 6), children: [o, ' in ', e] }), (0, c.jsx)(i.dk, { links: t.map((e) => ({ children: e.description, icon: (0, c.jsx)(a.r, { brand: e.brand }), href: e.value })) })] }, e)),
                  ],
                 }),
                },
@@ -582,20 +478,20 @@
                 children: (0, c.jsxs)(l.Wu, {
                  children: [
                   (0, c.jsx)(i.DZ, { level: n, children: e.title.replace(/^Community/i, '') }),
-                  (0, c.jsxs)(i.fz, { children: [(0, c.jsx)(g, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, c.jsxs)(i.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
-                  (h.length > 0 || u.length > 0) && (0, c.jsx)(i.DZ, { level: n + 1, children: 'Snel aan de slag' }),
-                  h.length > 0 &&
+                  (0, c.jsxs)(i.fz, { children: [(0, c.jsx)(m, { checked: e.progress.value, unchecked: e.progress.max - e.progress.value }), e.progress.value, ' van ', e.progress.max, ' stappen gedocumenteerd op het', ' ', (0, c.jsxs)(i.N_, { href: e.url, children: [e.title, ' projectbord'] })] }),
+                  (p.length > 0 || g.length > 0) && (0, c.jsx)(i.DZ, { level: n + 1, children: 'Snel aan de slag' }),
+                  p.length > 0 &&
                    (0, c.jsx)(c.Fragment, {
                     children: (0, c.jsx)(i.dk, {
-                     links: h
-                      .filter((e) => !!m.get(e.name))
+                     links: p
+                      .filter((e) => !!u.get(e.name))
                       .map((e) => {
-                       const n = m.get(e.name);
+                       const n = u.get(e.name);
                        return { children: n.desciption, icon: (0, c.jsx)(a.r, { brand: n.brand }), href: e.value };
                       }),
                     }),
                    }),
-                  u.length > 0 && (0, c.jsx)(c.Fragment, { children: u.map(({ frameworkName: e, tasks: t }) => (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(i.DZ, { level: n + 2, children: [o, ' in ', e] }), (0, c.jsx)(i.dk, { links: t.map((e) => ({ children: e.description, icon: (0, c.jsx)(a.r, { brand: e.brand }), href: e.value })) })] })) }),
+                  g.length > 0 && (0, c.jsx)(c.Fragment, { children: g.map(({ frameworkName: e, tasks: t }) => (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(i.DZ, { level: n + 2, children: [o, ' in ', e] }), (0, c.jsx)(i.dk, { links: t.map((e) => ({ children: e.description, icon: (0, c.jsx)(a.r, { brand: e.brand }), href: e.value })) })] })) }),
                  ],
                 }),
                },
@@ -610,11 +506,11 @@
       r = t?.tasks.find((e) => 'PVTF_lADOBGdlVM4AdX8lzgcig7o' === e.id)?.value;
      return e && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(i.DZ, { id: 'help-component-verbeteren', level: n, children: 'Help om deze component te verbeteren' }), (0, c.jsxs)(i.fz, { children: ['We vinden het belangrijk dat de component ', e.title, ' goed te gebruiken is door iedereen. Help je mee?'] }), (0, c.jsxs)(i.Xy, { children: [r ? (0, c.jsxs)(i.Er, { children: ['Vul de ', (0, c.jsx)(i.N_, { href: r, children: 'GitHub Discussion' }), ' aan met de eisen en wensen voor jouw project of organisatie.'] }) : (0, c.jsxs)(i.Er, { children: [(0, c.jsxs)(i.N_, { href: 'https://github.com/orgs/nl-design-system/discussions/categories/component-suggestions', children: ['Start een GitHub Discussion voor ', e.title] }), ' ', 'en voeg de eisen en wensen voor jouw project of organisatie toe.'] }), (0, c.jsxs)(i.Er, { children: ['Draag bij aan de voortgang van ', e.title, ' door te zorgen dat deze aan meer checkpoints van de', ' ', (0, c.jsx)(i.N_, { href: '#definition-of-done', children: 'Definition of Done' }), ' voldoet. Deze houden we bij in de projectborden bij de ', (0, c.jsx)(i.N_, { href: e.backlog, children: 'publieke GitHub Backlog' }), '.', ' '] })] })] });
     },
-    A = ({ component: e, headingLevel: n, description: t }) => {
-     const r = e && p.bo[e.relayStep];
-     return globalThis.isAstro ? null : e && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(m.p, { level: n, suffix: r && (0, c.jsx)(u.D, { state: r }), children: e.title }), (0, c.jsx)(i.fz, { lead: !0, children: t }), ['Help Wanted', 'Community'].includes(r) && (0, c.jsx)(w.s, { relayStep: r, description: `Schets van de ${e.title} component`, name: e.title })] });
+    k = ({ component: e, headingLevel: n, description: t }) => {
+     const r = e && h.bo[e.relayStep];
+     return globalThis.isAstro ? null : e && (0, c.jsxs)(c.Fragment, { children: [(0, c.jsx)(u.p, { level: n, suffix: r && (0, c.jsx)(g.D, { state: r }), children: e.title }), (0, c.jsx)(i.fz, { lead: !0, children: t }), ['Help Wanted', 'Community'].includes(r) && (0, c.jsx)(x.s, { relayStep: r, description: `Schets van de ${e.title} component`, name: e.title })] });
     },
-    k = ({ component: e }) => {
+    A = ({ component: e }) => {
      const n = (e && f[e.title]) || [];
      return n.length > 0 && (0, c.jsxs)(i.fz, { children: ['Gerelateerde componenten:', ' ', n.map((e, t) => (0, c.jsxs)(c.Fragment, { children: [e.slug ? (0, c.jsx)(i.N_, { href: `/${e.slug}/`, children: e.name }) : e.name, t < n.length - 1 ? ', ' : '.'] }))] });
     };
@@ -712,7 +608,7 @@
     l = t(4603),
     d = t(29181),
     c = t(86070);
-   function g({ children: e, content: n }) {
+   function m({ children: e, content: n }) {
     const [t, i] = (0, a.useState)(!1);
     return (
      (0, a.useEffect)(() => {
@@ -736,21 +632,21 @@
      })
     );
    }
-   var u = t(43864),
-    m = t(35193),
-    h = t(82999),
-    p = t(13088),
+   var g = t(43864),
+    u = t(35193),
+    p = t(82999),
+    h = t(13088),
     f = t(91525),
     j = t(24214),
-    w = t(92081),
-    x = t(1375),
+    x = t(92081),
+    w = t(1375),
     b = t(73563),
     v = t(23436),
-    A = t(79532);
-   const k = { boxShadow: u.A, color: m.A, cursor: h.A, dimension: p.A, fontFamily: f.A, fontFamilies: f.A, fontSize: j.A, fontSizes: j.A, fontWeight: w.A, fontWeights: w.A, lineHeight: x.A, lineHeights: x.A, number: b.A, other: v.A, textDecoration: A.A },
+    k = t(79532);
+   const A = { boxShadow: g.A, color: u.A, cursor: p.A, dimension: h.A, fontFamily: f.A, fontFamilies: f.A, fontSize: j.A, fontSizes: j.A, fontWeight: x.A, fontWeights: x.A, lineHeight: w.A, lineHeights: w.A, number: b.A, other: v.A, textDecoration: k.A },
     y = ({ type: e }) => {
-     const n = Object.hasOwn(k, e) ? e : 'other';
-     return (0, c.jsx)(d.In, { children: (0, a.createElement)(k[n]) });
+     const n = Object.hasOwn(A, e) ? e : 'other';
+     return (0, c.jsx)(d.In, { children: (0, a.createElement)(A[n]) });
     };
    var T = t(76223);
    function C({ tokens: e }) {
@@ -774,7 +670,7 @@
         }),
        ],
       }),
-      (0, c.jsxs)(o.e2, { children: [(0, c.jsx)(g, { content: d, children: 'Kopieer als JSON' }), (0, c.jsx)(g, { content: l, children: 'Kopieer als CSS' })] }),
+      (0, c.jsxs)(o.e2, { children: [(0, c.jsx)(m, { content: d, children: 'Kopieer als JSON' }), (0, c.jsx)(m, { content: l, children: 'Kopieer als CSS' })] }),
      ],
     });
    }
@@ -791,6 +687,119 @@
    function o(e = {}) {
     const { wrapper: n } = { ...(0, r.R)(), ...e.components };
     return n ? (0, i.jsx)(n, { ...e, children: (0, i.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+  54111(e, n, t) {
+   'use strict';
+   (t.r(n), t.d(n, { assets: () => I, component: () => O, contentTitle: () => B, default: () => U, description: () => $, frontMatter: () => P, issueNumber: () => E, metadata: () => i, title: () => M, toc: () => V }));
+   const i = JSON.parse('{"id":"componenten/form-field-description/index","title":"Form Field Description","description":"Extra tekst bij een invoerveld die helpt bij het invullen van een formulier door een beschrijving, instructies of suggesties.","source":"@site/docs/componenten/form-field-description/index.mdx","sourceDirName":"componenten/form-field-description","slug":"/form-field-description","permalink":"/form-field-description","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-description/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Form Field Description","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Form Field Description","pagination_label":"Form Field Description","description":"Extra tekst bij een invoerveld die helpt bij het invullen van een formulier door een beschrijving, instructies of suggesties.","issue_number":174,"slug":"/form-field-description","keywords":["beschrijving","description","form","form field","form field description","form field help text","form field hint","formulier","formulierelement","helper","help text","hint","hint label","hint tekst","hint text"]},"sidebar":"componenten","previous":{"title":"Form Field","permalink":"/form-field"},"next":{"title":"Form Field Error Message","permalink":"/form-field-error-message"}}');
+   var r = t(86070),
+    s = t(18439),
+    o = t(43306),
+    a = t(13839),
+    l = t(37674),
+    d = t(78134),
+    c = t(26165),
+    m = t(45009),
+    g = t(29857),
+    u = t(3446),
+    p = t(26877),
+    h = t(1866);
+   function f(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['Koppel de Form Field Description met ', (0, r.jsx)(n.code, { children: 'aria-describedby' }), ' aan het bijbehorende element voor formulierinvoer:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Zorg ervoor dat de tekst in de Form Field Description niet ingeklapt is, zoals het geval is in een ', (0, r.jsx)(n.code, { children: 'details' }), ' en ', (0, r.jsx)(n.code, { children: 'summary' }), ' combinatie. De verborgen tekst wordt in de browsers Firefox en Safari (', (0, r.jsx)(n.a, { href: '/baseline/2026-03/', children: 'NL Design System baseline maart 2026' }), ') niet door ', (0, r.jsx)(n.a, { href: '/woordenlijst/#:~:text=Nederlandstalige%20WCAG%20definitie-,Screenreader,-screen%20reader', children: 'screenreaders' }), ' voorgelezen.'] }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke instructies en beschrijvingen' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   function j(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsxs)(n.p, { children: ['De Form Field Description kan met ', (0, r.jsx)(n.code, { children: 'aria-describedby' }), ' aan het bijbehorende element voor formulierinvoer worden gekoppeld.'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke descriptions bij formuliervelden' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   function x(e) {
+    const n = { a: 'a', code: 'code', li: 'li', p: 'p', pre: 'pre', ul: 'ul', ...(0, s.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.p, { children: 'Zorg ervoor dat instructies die nodig zijn om te begrijpen wat er van de bezoeker verwacht wordt op een logische plek staan en gekoppeld zijn aan het element voor formulierinvoer.' }), '\n', (0, r.jsx)(n.p, { children: 'De meest gebruiksvriendelijke plek voor instructies is tussen het label en het element voor formulierinvoer. Als instructies er \xf3nder staan, worden ze mogelijk bedekt door de autocomplete-functionaliteit van de browser.' }), '\n', (0, r.jsxs)(n.p, { children: ['Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodus. Als een bezoeker daarna instructies t\xfassen de velden wil lezen, moet diegene weer handmatig terugschakelen naar de leesmodus. Koppel instructies daarom ook aan het element voor formulierinvoer met ', (0, r.jsx)(n.code, { children: 'aria-describedby' }), '. Op die manier wordt de beschrijving voorgelezen wanneer de toetsenbordfocus op dat element staat.'] }), '\n', (0, r.jsx)(n.p, { children: 'Voorbeeld:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<label for="name">Naam</label>\n<p id="description-name">Vul je voornaam en achternaam in.</p>\n<input id="name" aria-describedby="description-name" autocomplete="name" />\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'NL Design System richtlijnen:' }), '\n', (0, r.jsxs)(n.ul, { children: ['\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/descriptions/', children: 'Toegankelijke instructies en beschrijvingen' }) }), '\n', (0, r.jsx)(n.li, { children: (0, r.jsx)(n.a, { href: '/richtlijnen/formulieren/', children: 'Toegankelijke formulieren' }) }), '\n'] })] });
+   }
+   var w = t(3678),
+    b = t(54672),
+    v = t(37166),
+    k = t(53971),
+    A = t(37888),
+    y = t(12941),
+    T = t(64862),
+    C = t(33201),
+    F = t(61962),
+    R = t(61629),
+    D = t(24908);
+   const N = [
+     {
+      title: 'De Form Field Description is gekoppeld aan het bijbehorende element voor formulierinvoer.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(f, { ...e }) }) : f(e);
+      },
+      tags: ['developer'],
+     },
+     {
+      title: 'De Form Field Description staat op een logische plek.',
+      sc: '1.3.2',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(x, { ...e }) }) : x(e);
+      },
+      tags: ['designer', 'developer'],
+     },
+     { title: 'Instructies in de Form Field Description zijn op een inclusieve manier beschreven.', sc: '1.3.3', status: '', component: y.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'De kleur van de Form Field Description geeft geen informatie die niet ook op minimaal 1 andere manier wordt gegeven.', sc: '1.4.1', status: '', component: T.Ay, tags: ['designer', 'contentmaker'] },
+     { title: 'De tekst in de Form Field Description heeft een contrastratio van minimaal 4,5:1 met de achtergrondkleur.', sc: '1.4.3', status: '', component: v.Ay, tags: ['designer'] },
+     { title: 'Als je de tekst van de Form Field Description vergroot tot 200% blijft deze in zijn geheel zichtbaar.', sc: '1.4.4', status: '', component: k.Ay, tags: ['developer'] },
+     { title: 'De bezoeker kan de Form Field Description tot 400% vergroten zonder verlies van functionaliteit of informatie.', sc: '1.4.10', status: '', component: w.Ay, tags: ['developer', 'designer'] },
+     { title: 'De Form Field Description is niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: R.Ay, tags: ['developer'] },
+     { title: 'De Form Field Description komt niet voor in de normale focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: D.Ay, tags: ['developer'] },
+     { title: 'Als de Form Field Description in een andere taal is dan de taal van de pagina, dan heeft het een lang-attribuut met de juiste taalcode.', sc: '3.1.2', status: '', component: A.Ay, tags: ['developer'] },
+    ],
+    G = [
+     {
+      title: 'De Form Field Description kan aan een element voor formulierinvoer gekoppeld worden.',
+      sc: '1.3.1',
+      status: '',
+      component: function (e = {}) {
+       const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+       return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(j, { ...e }) }) : j(e);
+      },
+      tags: ['developer'],
+     },
+     { title: 'Tekst in de Form Field Description blijft leesbaar wanneer de tekstafstand vergroot wordt. ', sc: '1.4.12', status: '', component: b.Ay, tags: ['developer'] },
+     { title: 'De Form Field Description is standaard niet bereikbaar en bedienbaar met het toetsenbord.', sc: '2.1.1', status: '', component: C.Ay, tags: ['developer'] },
+     { title: 'De Form Field Description komt standaard niet voor in de focusvolgorde van de pagina.', sc: '2.4.3', status: '', component: F.Ay, tags: ['developer'] },
+    ];
+   var S = t(24703);
+   function L(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', p: 'p', pre: 'pre', ...(0, s.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(n.header, { children: (0, r.jsx)(n.h1, { id: 'gebruik-form-field-description', children: 'Gebruik Form Field Description' }) }), '\n', (0, r.jsx)(n.h2, { id: 'css', children: 'CSS' }), '\n', (0, r.jsx)(n.p, { children: 'De CSS van deze component is gepubliceerd in een npm package:' }), '\n', (0, r.jsx)(n.p, { children: (0, r.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/form-field-description-css', children: '@nl-design-system-candidate/form-field-description-css' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik de ', (0, r.jsx)(n.code, { children: 'nl-form-field-description' }), ' class name op een ', (0, r.jsx)(n.code, { children: 'div' }), ' element:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<div class="nl-form-field-description">Voer uw volledige naam in, zoals vermeld op uw identiteitsbewijs.</div>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de CSS zo in je project installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/form-field-description-css\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je een CDN gebruikt, dan kun je de CSS zo importeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/form-field-description-css/dist/form-field-description.css"\n/>\n' }) }), '\n', (0, r.jsxs)(n.p, { children: ['Gebruik je geen CDN, dan kun je de CSS uit ', (0, r.jsx)(n.code, { children: 'node_modules/' }), ' importeren:'] }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-html', children: '<link\n  rel="stylesheet"\n  href="node_modules/@nl-design-system-candidate/form-field-description-css/dist/form-field-description.css"\n/>\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Als je CSS imports gebruikt vanuit JavaScript:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-js', children: 'import "@nl-design-system-candidate/form-field-description-css/form-field-description.css";\n' }) }), '\n', (0, r.jsx)(n.h2, { id: 'react', children: 'React' }), '\n', (0, r.jsx)(n.p, { children: 'De React component is gepubliceerd in een npm package:' }), '\n', (0, r.jsx)(n.p, { children: (0, r.jsx)(n.a, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/form-field-description-react', children: '@nl-design-system-candidate/form-field-description-react' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de npm package zo installeren:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-sh', children: 'npm install --save-dev @nl-design-system-candidate/form-field-description-react\n' }) }), '\n', (0, r.jsx)(n.p, { children: 'Je kunt de React component zo gebruiken:' }), '\n', (0, r.jsx)(n.pre, { children: (0, r.jsx)(n.code, { className: 'language-jsx', children: 'import { FormFieldDescription } from "@nl-design-system-candidate/form-field-description-react";\n\nexport const MyPage = () => {\n  return (\n    <html>\n      <body>\n        <div>\n          <FormFieldDescription>Voer uw volledige naam in, zoals vermeld op uw identiteitsbewijs.</FormFieldDescription>\n        </div>\n      </body>\n    </html>\n  );\n};\n' }) })] });
+   }
+   function W(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(L, { ...e }) }) : L(e);
+   }
+   var z = t(56323),
+    _ = t(48068);
+   const H = JSON.parse('{"nl":{"form-field-description":{"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"},"font-family":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<family-name>","<generic-name>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontFamilies"},"font-size":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<percentage>"],"nl.nldesignsystem.figma-implementation":true},"$type":"fontSizes"},"font-weight":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<number>","nl.nldesignsystem.figma-implementation":true},"$type":"fontWeights"},"line-height":{"$extensions":{"nl.nldesignsystem.css-property-syntax":["<length>","<number>"],"nl.nldesignsystem.figma-implementation":true},"$type":"lineHeights"},"margin-block-end":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"},"margin-block-start":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<length>","nl.nldesignsystem.figma-implementation":false},"$type":"dimension"},"disabled":{"color":{"$extensions":{"nl.nldesignsystem.css-property-syntax":"<color>","nl.nldesignsystem.figma-implementation":true},"$type":"color"}}}}}'),
+    P = { title: 'Form Field Description', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Description', pagination_label: 'Form Field Description', description: 'Extra tekst bij een invoerveld die helpt bij het invullen van een formulier door een beschrijving, instructies of suggesties.', issue_number: 174, slug: '/form-field-description', keywords: ['beschrijving', 'description', 'form', 'form field', 'form field description', 'form field help text', 'form field hint', 'formulier', 'formulierelement', 'helper', 'help text', 'hint', 'hint label', 'hint tekst', 'hint text'] },
+    B = void 0,
+    I = {},
+    M = 'Form Field Description',
+    $ = 'Extra tekst bij een invoerveld die helpt bij het invullen van een formulier door een beschrijving, instructies of suggesties.',
+    E = 174,
+    O = o.find((e) => e.number === E),
+    V = [{ value: 'Checklist voor toegankelijkheid', id: 'checklist-voor-toegankelijkheid', level: 2 }, ...d.RM, { value: 'Acceptatiecriteria bij gebruik', id: 'acceptatiecriteria-bij-gebruik', level: 3 }, ...l.RM, { value: 'Acceptatiecriteria van de component', id: 'acceptatiecriteria-van-de-component', level: 3 }, ...a.RM, { value: 'CSS', id: 'css', level: 2 }, { value: 'React', id: 'react', level: 2 }, { value: 'Design tokens', id: 'design-tokens', level: 2 }, { value: 'Definition of Done', id: 'definition-of-done', level: 2 }, { value: 'Community implementaties', id: 'community-implementaties', level: 2 }];
+   function Z(e) {
+    const n = { h2: 'h2', h3: 'h3', ...(0, s.R)(), ...e.components };
+    return (0, r.jsxs)(r.Fragment, { children: ['\n', '\n', '\n', '\n', '\n', '\n', '\n', (0, r.jsx)(p.Fc, { component: O, headingLevel: 1, description: $ }), '\n', (0, r.jsx)(z.e, { component: O }), '\n', (0, r.jsx)(c.Zp, { className: 'ma-implementation-card', children: (0, r.jsxs)(c.Wu, { children: [(0, r.jsx)(g.DZ, { level: 2, appearance: 'level-4', children: 'Figma' }), (0, r.jsxs)(m.d, { children: [(0, r.jsxs)(m.P, { href: 'https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=851-924', children: [(0, r.jsx)(u.r, { brand: 'figma' }), 'Figma - Start bibliotheek'] }), (0, r.jsxs)(m.P, { href: 'https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=851-924', children: [(0, r.jsx)(u.r, { brand: 'figma' }), 'Figma - Voorbeeld bibliotheek'] })] }), (0, r.jsx)(g.DZ, { level: 2, appearance: 'level-4', children: 'Storybook' }), (0, r.jsxs)(m.d, { children: [(0, r.jsxs)(m.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/css-form-field-description--documentatie', children: [(0, r.jsx)(u.r, { brand: 'storybook' }), 'Storybook - CSS'] }), (0, r.jsxs)(m.P, { href: 'https://nl-design-system.github.io/candidate/?path=/docs/form-field-description--documentatie', children: [(0, r.jsx)(u.r, { brand: 'storybook' }), 'Storybook - React'] })] }), (0, r.jsx)(g.DZ, { level: 2, appearance: 'level-4', children: 'npm' }), (0, r.jsxs)(m.d, { children: [(0, r.jsxs)(m.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/form-field-description-css', children: [(0, r.jsx)(u.r, { brand: 'npm' }), ' @nl-design-system-candidate/form-field-description-css'] }), (0, r.jsxs)(m.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/form-field-description-react', children: [(0, r.jsx)(u.r, { brand: 'npm' }), ' @nl-design-system-candidate/form-field-description-react'] }), (0, r.jsxs)(m.P, { href: 'https://www.npmjs.com/package/@nl-design-system-candidate/form-field-description-tokens', children: [(0, r.jsx)(u.r, { brand: 'npm' }), ' @nl-design-system-candidate/form-field-description-tokens'] })] })] }) }), '\n', (0, r.jsx)(n.h2, { id: 'checklist-voor-toegankelijkheid', children: 'Checklist voor toegankelijkheid' }), '\n', (0, r.jsx)(d.Ay, {}), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-bij-gebruik', children: 'Acceptatiecriteria bij gebruik' }), '\n', (0, r.jsx)(l.Ay, {}), '\n', (0, r.jsx)(h.b, { headingLevel: '4', children: N.map(({ component: e, ...n }) => (0, r.jsx)(h.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(n.h3, { id: 'acceptatiecriteria-van-de-component', children: 'Acceptatiecriteria van de component' }), '\n', (0, r.jsx)(a.Ay, {}), '\n', (0, r.jsx)(h.b, { headingLevel: '4', children: G.map(({ component: e, ...n }) => (0, r.jsx)(h.e, { ...n, children: (0, r.jsx)(e, {}) })) }), '\n', (0, r.jsx)(S.o, { omitH1: !0, headingLevel: 3, children: (0, r.jsx)(W, {}) }), '\n', (0, r.jsx)(n.h2, { id: 'design-tokens', children: 'Design tokens' }), '\n', (0, r.jsx)(_.B, { tokens: H }), '\n', (0, r.jsx)(n.h2, { id: 'definition-of-done', children: 'Definition of Done' }), '\n', (0, r.jsx)(p.VK, { component: O, headingLevel: 3 }), '\n', (0, r.jsx)(p.$9, { component: O, headingLevel: 2 }), '\n', (0, r.jsx)(n.h2, { id: 'community-implementaties', children: 'Community implementaties' }), '\n', (0, r.jsx)(p.mu, { component: O, headingLevel: 3 }), '\n', (0, r.jsx)(p.K_, { component: O })] });
+   }
+   function U(e = {}) {
+    const { wrapper: n } = { ...(0, s.R)(), ...e.components };
+    return n ? (0, r.jsx)(n, { ...e, children: (0, r.jsx)(Z, { ...e }) }) : Z(e);
    }
   },
   54672(e, n, t) {
@@ -901,7 +910,7 @@
   },
   84471(e, n, t) {
    'use strict';
-   t.d(n, { bo: () => r, KF: () => u, mJ: () => p, VZ: () => k, cR: () => A, Pv: () => f, qZ: () => o, kD: () => b, QQ: () => T, B2: () => m, Pc: () => l, f4: () => a, GT: () => v, fX: () => s, eQ: () => x, B_: () => w, o_: () => j });
+   t.d(n, { bo: () => r, KF: () => g, mJ: () => h, VZ: () => A, cR: () => k, Pv: () => f, qZ: () => o, kD: () => b, QQ: () => T, B2: () => u, Pc: () => l, f4: () => a, GT: () => v, fX: () => s, eQ: () => w, B_: () => x, o_: () => j });
    const i = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     r = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     s = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -912,19 +921,19 @@
    function c(e) {
     return Array.from(new Set(e));
    }
-   const g = (e) => [...e].sort((e, n) => d.indexOf(e) - d.indexOf(n)),
-    u = (e) => {
-     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => h(e));
-     return g(c(n));
+   const m = (e) => [...e].sort((e, n) => d.indexOf(e) - d.indexOf(n)),
+    g = (e) => {
+     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => p(e));
+     return m(c(n));
     },
-    m = (e, n) => p(e).includes(n),
-    h = (e) => {
+    u = (e, n) => h(e).includes(n),
+    p = (e) => {
      const n = / URL \(([^)]+)\)/;
-     return g(c(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
+     return m(c(e.tasks.filter(({ name: e, value: t }) => '' !== t && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
     },
-    p = (e) => g(c(e.projects.flatMap((e) => h(e)))),
+    h = (e) => m(c(e.projects.flatMap((e) => p(e)))),
     f = (e) => {
-     const n = h(e),
+     const n = p(e),
       t = ((e) => {
        const n = e.tasks.find(({ name: e }) => 'Naam' === e);
        return n?.value || '';
@@ -941,8 +950,8 @@
      });
     },
     j = (e) => e.join('.'),
-    w = (e) => '--' + e.join('-'),
-    x = (e, n) => n.reduce((e, n) => e?.[n], e);
+    x = (e) => '--' + e.join('-'),
+    w = (e, n) => n.reduce((e, n) => e?.[n], e);
    function b(e, n = []) {
     return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((t) => ('object' == typeof e[t] && null !== e[t] ? b(e[t], [...n, t]) : []));
    }
@@ -953,12 +962,12 @@
     }
     return e.sort((e, n) => e.length - n.length || t(e).localeCompare(t(n)));
    }
-   const A = () => {
+   const k = () => {
      const e = i.sP?.pnpm;
      if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
      return e.replace(/^[\^~>=<]+/, '');
     },
-    k = () => {
+    A = () => {
      const e = i.sP?.node;
      if (!e) throw new Error('No node version found in package.json#engines.node');
      const n = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
