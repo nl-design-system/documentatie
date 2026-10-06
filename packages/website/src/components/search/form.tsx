@@ -34,7 +34,7 @@ export function SearchForm(props: SearchFormProps) {
           value={value || ''}
           onChange={(event: ChangeEvent<HTMLInputElement>) => setValue(event.target.value)}
         />
-        <Button type="submit" purpose="secondary" iconStart={<IconSearch />}>
+        <Button type="submit" purpose="secondary" iconStart={<IconSearch aria-hidden="true" />}>
           {i18n[props.lang].search}
         </Button>
       </form>

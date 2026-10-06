@@ -16,7 +16,7 @@ export const MobileMenuTrigger = ({ lang }: MobileMenuTriggerProps) => {
       <Button
         className="ma-mobile-menu-trigger"
         purpose="subtle"
-        iconStart={<IconMenu2 />}
+        iconStart={<IconMenu2 aria-hidden="true" />}
         /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
         commandfor="ma-mobile-menu-drawer"
         command="show-modal"
@@ -49,7 +49,7 @@ export const MobileMenu = ({ children, lang }: MobileMenuProps) => {
           /* @ts-expect-error -- commandfor is not defined in react. Polyfill is included */
           commandfor="ma-mobile-menu-drawer"
           command="request-close"
-          iconStart={<IconX />}
+          iconStart={<IconX aria-hidden="true" />}
           iconOnly
         >
           {i18n[lang].close}
