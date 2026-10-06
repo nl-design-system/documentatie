@@ -230,7 +230,7 @@ const footerNavigationItems = [
     </PageFooter>
 
     <MobileMenu lang={lang}>
-      <SideNavigation items={[items.items]} client:load />
+      <SideNavigation items={[items.items]} closeLabel={i18n[lang].close} client:load />
     </MobileMenu>
 
     <script src="@components/mobile-menu/mobile-menu.client.ts"></script>
