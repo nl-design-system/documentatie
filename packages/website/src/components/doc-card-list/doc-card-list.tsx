@@ -3,6 +3,7 @@ import { Card } from '../card/card';
 import { isNavigationGroup, isNavigationItem, type NavigationElement } from '../../navigation';
 
 export interface DocCardListProps {
+  cardHeadingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
   items: (NavigationElement & { labelLang?: string; descriptionLang?: string })[];
 }
 
@@ -37,7 +38,14 @@ export const DocCardList = (props: DocCardListProps) => {
 
         return (
           <UnorderedList.Item key={href}>
-            <Card heading={heading} description={description} href={href} metadata={metadata} lang={lang} />
+            <Card
+              heading={heading}
+              headingLevel={props.cardHeadingLevel}
+              description={description}
+              href={href}
+              metadata={metadata}
+              lang={lang}
+            />
           </UnorderedList.Item>
         );
       })}
