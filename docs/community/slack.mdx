@@ -23,6 +23,7 @@ keywords:
 ---
 
 import { ButtonLink } from "@site/src/components/ButtonLink";
+import { Icon } from "@components/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
 import { ActionGroup } from "@components/action-group/action-group";
 
@@ -33,7 +34,9 @@ NL Design System werkt met de [Slack van de Code for NL community](https://codef
 <ActionGroup>
   <ButtonLink href="https://praatmee.codefor.nl/" appearance="primary-action">
     {"Doe mee op Slack"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
