@@ -2,6 +2,7 @@ import '@utrecht/page-header-css/dist/index.css';
 import { PageHeader as UtrechtPageHeader } from '@utrecht/page-header-react';
 import { Link } from '@site/src/components/Link';
 import { Logo } from '@components/logo/logo';
+import { LogoSmall } from '@components/logo/logo-small';
 import { ToSearchLink } from '@components/search/to-search-link';
 import { SearchForm } from '@components/search/form';
 import { MobileMenuTrigger } from '@components/mobile-menu/mobile-menu';
@@ -21,6 +22,7 @@ export const PageHeader = ({ lang }: PageHeaderProps) => {
       <div className="ma-page-header__center">
         <Link href="/" aria-label={i18n[lang].logoLinkAlt} boxContent>
           <Logo />
+          <LogoSmall />
         </Link>
       </div>
       <div className="ma-page-header__end">
