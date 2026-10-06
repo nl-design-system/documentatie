@@ -16,6 +16,7 @@ keywords:
 
 import { VideoPlayer } from "@site/src/components/VideoPlayer";
 import { ButtonLink } from "@site/src/components/ButtonLink";
+import { Icon } from "@components/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
 import { ActionGroup } from "@components/action-group/action-group";
 
@@ -141,7 +142,10 @@ We organiseren de volgende vaste momenten om samen te komen:
 
 <ActionGroup>
   <ButtonLink href="/community/community-sprints/rijkshuisstijl-community/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight slot="icon-end" />
+    {"Meld je aan"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
