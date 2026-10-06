@@ -8,6 +8,8 @@
   --ma-layout-side-bar-inline-size: 300px; /* --> Zien we dit als een component of common token? */
   --ma-mobile-menu-max-inline-size: 400px; /* --> Zien we dit als een component of common token? */
   --nl-button-column-gap: var(--basis-space-inline-xs); /* --> Zou een basis.space.text.* token moeten zijn. */
+  --utrecht-page-header-content-padding-block-start: var(--basis-space-block-lg);
+  --utrecht-page-header-content-padding-block-end: var(--basis-space-block-lg);
 }
 
 /**
