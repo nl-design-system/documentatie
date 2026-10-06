@@ -59,6 +59,7 @@ export const navigation = navigationRoot(
                   navigationItem('docs/community/events/design-systems-week/en/program.mdx'),
                   navigationItem('docs/community/events/design-systems-week/en/timetable.mdx'),
                   navigationGroup({
+                    lang: 'en',
                     filePath: 'docs/community/events/design-systems-week/en/previous-editions',
                   }),
                 ],
