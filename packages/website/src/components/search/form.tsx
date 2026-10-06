@@ -41,6 +41,7 @@ export function SearchForm(props: SearchFormProps) {
         )}
         <Textbox
           aria-label={i18n[props.lang].searchAriaLabel}
+          placeholder={i18n[props.lang].searchAriaLabel}
           aria-describedby={error ? 'search-form-error' : undefined}
           name="query"
           required={props.required}
