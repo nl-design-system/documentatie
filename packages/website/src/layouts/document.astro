@@ -216,6 +216,7 @@ const footerNavigationItems = [
       <SideNavigation items={[items.items]} client:load />
     </MobileMenu>
 
+    <script src="@components/mobile-menu/mobile-menu.client.ts"></script>
     <script>
       import 'invokers-polyfill';
     </script>
@@ -228,6 +229,7 @@ const footerNavigationItems = [
         }
       });
     </script>
+
     <script>
       document.addEventListener('click', (event) => {
         const button = (event.target as HTMLElement)?.closest<HTMLElement>('[data-copy-code]');
