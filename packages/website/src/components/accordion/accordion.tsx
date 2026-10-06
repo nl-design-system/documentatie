@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { forwardRef } from 'react';
 import type { HTMLAttributes, ReactNode, ElementType } from 'react';
 import { IconChevronDown } from '@components/functional-icon';
+import { Icon } from '@components/icon/icon';
 import { Heading, type HeadingProps } from '@nl-design-system-candidate/heading-react';
 import './accordion.css';
 
@@ -57,7 +58,9 @@ export const AccordionSection = ({
       <summary className="utrecht-accordion__header">
         <span className="nl-button nl-button--subtle">
           <span className="nl-button__icon-start">
-            <IconChevronDown />
+            <Icon>
+              <IconChevronDown />
+            </Icon>
           </span>
           <span className="nl-button__label">
             {heading && (

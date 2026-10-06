@@ -12,6 +12,7 @@ slug: /events/heartbeat
 
 import { ButtonLink } from "@site/src/components/ButtonLink";
 import { Link } from "@site/src/components/Link";
+import { Icon } from "@components/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
 import { ActionGroup } from "@components/action-group/action-group";
 
@@ -22,11 +23,15 @@ In de Heartbeat vertelt het kernteam van NL Design System elke twee weken wat de
 <ActionGroup>
   <ButtonLink href="/events/heartbeat/aanmelden/" appearance="primary-action">
     {"Meld je aan"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
   <ButtonLink href="/events/heartbeat/videos/" appearance="secondary-action">
     {"Kijk de Heartbeat terug"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 

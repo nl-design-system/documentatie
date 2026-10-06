@@ -1,4 +1,5 @@
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
+import { Icon } from '@components/icon/icon';
 import { IconChevronRight } from '@components/functional-icon';
 
 const representativeSample = [
@@ -63,7 +64,16 @@ const representativeSample = [
 export const RepresentativeSampleLinkList = () => (
   <LinkList>
     {representativeSample.map(({ href, label, hrefLang }) => (
-      <LinkListLink key={href} href={href} hrefLang={hrefLang} icon={<IconChevronRight />}>
+      <LinkListLink
+        key={href}
+        href={href}
+        hrefLang={hrefLang}
+        icon={
+          <Icon>
+            <IconChevronRight />
+          </Icon>
+        }
+      >
         {label}
       </LinkListLink>
     ))}
