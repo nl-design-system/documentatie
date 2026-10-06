@@ -23,7 +23,7 @@ const { ...props } = Astro.props;
   <div class="ma-layout-overview">
     <div class="ma-layout-overview__content">
       <div class="ma-layout-overview__side-nav">
-        <SideNavigation items={[items.items || []]} client:load />
+        <SideNavigation items={[items.items || []]} closeLabel={i18n[props.lang || 'nl'].close} client:load />
       </div>
 
       {

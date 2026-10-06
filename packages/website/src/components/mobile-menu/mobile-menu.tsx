@@ -41,7 +41,7 @@ export const MobileMenu = ({ children, lang }: MobileMenuProps) => {
       aria-labelledby="mobile-menu-label"
     >
       <span className="ma-mobile-menu-drawer__label" id="mobile-menu-label">
-        Hoofdmenu
+        {i18n[lang].mainNavLabel}
       </span>
       <header className="ma-mobile-menu-drawer__header">
         <Button
