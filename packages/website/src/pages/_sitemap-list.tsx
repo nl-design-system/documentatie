@@ -34,9 +34,11 @@ export const SitemapList = ({ navigationGroup }: SitemapListProps) => {
     <>
       <Heading level={2}>
         {navigationGroup.index?.href ? (
-          <Link href={navigationGroup?.index?.href}>{navigationGroup.label}</Link>
+          <Link href={navigationGroup?.index?.href} lang={navigationGroup?.index?.lang}>
+            {navigationGroup.label}
+          </Link>
         ) : (
-          navigationGroup.label
+          <span lang={navigationGroup.lang}>{navigationGroup.label}</span>
         )}
       </Heading>
       <Paragraph>{allSubItems.length} pagina's</Paragraph>
@@ -56,7 +58,13 @@ export const SitemapListGroup = ({ items }: SitemapListGroupProps) => {
         (item, index) =>
           !item.unlisted && (
             <UnorderedListItem key={`item-${index}`}>
-              {item.href ? <Link href={item.href}>{item.label}</Link> : item.label}
+              {item.href ? (
+                <Link href={item.href} lang={item.lang}>
+                  {item.label}
+                </Link>
+              ) : (
+                <span lang={item.lang}>{item.label}</span>
+              )}
               {item.type === 'group' && <SitemapListGroup items={item.items} />}
             </UnorderedListItem>
           ),
