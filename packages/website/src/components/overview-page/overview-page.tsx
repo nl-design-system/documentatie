@@ -4,6 +4,7 @@ import type { NavigationElement } from '../../navigation';
 export interface OverviewPageProps {
   pages: NavigationElement[];
   excludeDocIDs: string[];
+  cardHeadingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
 }
 
 /**
@@ -24,5 +25,5 @@ export const OverviewPage = (props: OverviewPageProps) => {
     return Boolean(docIDs.includes(filePath)) === false;
   });
 
-  return <DocCardList items={filteredPages} />;
+  return <DocCardList items={filteredPages} cardHeadingLevel={props.cardHeadingLevel} />;
 };
