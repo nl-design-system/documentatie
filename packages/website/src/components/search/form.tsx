@@ -33,6 +33,7 @@ export function SearchForm(props: SearchFormProps) {
           autoFocus={props.autoFocus}
           value={value || ''}
           onChange={(event: ChangeEvent<HTMLInputElement>) => setValue(event.target.value)}
+          type="search"
         />
         <Button type="submit" purpose="secondary" iconStart={<IconSearch aria-hidden="true" />}>
           {i18n[props.lang].search}
