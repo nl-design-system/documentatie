@@ -63,7 +63,7 @@ const representativeSample = [
 export const RepresentativeSampleLinkList = () => (
   <LinkList>
     {representativeSample.map(({ href, label, hrefLang }) => (
-      <LinkListLink key={href} href={href} hrefLang={hrefLang} icon={<IconChevronRight />}>
+      <LinkListLink key={href} href={href} hrefLang={hrefLang} icon={<IconChevronRight aria-hidden="true" />}>
         {label}
       </LinkListLink>
     ))}

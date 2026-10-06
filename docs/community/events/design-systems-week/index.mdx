@@ -35,11 +35,11 @@ export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappe
 <ActionGroup>
   <ButtonLink href="/events/design-systems-week/aanmelden" appearance="primary-action">
     Meld je aan
-    <IconChevronRight slot="icon-end" />
+    <IconChevronRight slot="icon-end" aria-hidden="true" />
   </ButtonLink>
   <ButtonLink href={`/events/design-systems-week-${settings.year}/programma`} appearance="secondary-action">
     Bekijk het programma
-    <IconChevronRight slot="icon-end" />
+    <IconChevronRight slot="icon-end" aria-hidden="true" />
   </ButtonLink>
 </ActionGroup>
 

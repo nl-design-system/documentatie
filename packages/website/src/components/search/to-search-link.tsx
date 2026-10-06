@@ -10,7 +10,7 @@ export const ToSearchLink = ({ lang }: ToSearchLinkProps) => {
   return (
     <a className="ma-to-search-link nl-button nl-button--subtle" href="/zoeken">
       <span className="nl-button__icon-start">
-        <IconSearch />
+        <IconSearch aria-hidden="true" />
       </span>
       <span className="nl-button__label">{i18n[lang].search}</span>
     </a>

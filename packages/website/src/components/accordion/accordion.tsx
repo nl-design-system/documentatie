@@ -57,7 +57,7 @@ export const AccordionSection = ({
       <summary className="utrecht-accordion__header">
         <span className="nl-button nl-button--subtle">
           <span className="nl-button__icon-start">
-            <IconChevronDown />
+            <IconChevronDown aria-hidden="true" />
           </span>
           <span className="nl-button__label">
             {heading && (
