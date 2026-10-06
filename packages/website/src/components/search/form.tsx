@@ -1,5 +1,6 @@
 import { Button } from '@components/button/button';
 import { Textbox } from '@utrecht/component-library-react';
+import { Icon } from '@components/icon/icon';
 import { IconSearch } from '@tabler/icons-react';
 import { i18n, type I18nLanguages } from '../../i18n';
 import { useEffect, useState, type ChangeEvent, type FormEvent, type FormEventHandler } from 'react';
@@ -34,7 +35,15 @@ export function SearchForm(props: SearchFormProps) {
           value={value || ''}
           onChange={(event: ChangeEvent<HTMLInputElement>) => setValue(event.target.value)}
         />
-        <Button type="submit" purpose="secondary" iconStart={<IconSearch />}>
+        <Button
+          type="submit"
+          purpose="secondary"
+          iconStart={
+            <Icon>
+              <IconSearch />
+            </Icon>
+          }
+        >
           {i18n[props.lang].search}
         </Button>
       </form>

@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Button } from '@components/button/button';
 import { Drawer } from '@utrecht/component-library-react';
+import { Icon } from '@components/icon/icon';
 import { IconX, IconMenu2 } from '@tabler/icons-react';
 import { i18n, type I18nLanguages } from '../../i18n';
 import '@utrecht/drawer-css/dist/index.css';
@@ -16,7 +17,11 @@ export const MobileMenuTrigger = ({ lang }: MobileMenuTriggerProps) => {
       <Button
         className="ma-mobile-menu-trigger"
         purpose="subtle"
-        iconStart={<IconMenu2 />}
+        iconStart={
+          <Icon>
+            <IconMenu2 />
+          </Icon>
+        }
         /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
         commandfor="ma-mobile-menu-drawer"
         command="show-modal"
@@ -49,7 +54,11 @@ export const MobileMenu = ({ children, lang }: MobileMenuProps) => {
           /* @ts-expect-error -- commandfor is not defined in react. Polyfill is included */
           commandfor="ma-mobile-menu-drawer"
           command="request-close"
-          iconStart={<IconX />}
+          iconStart={
+            <Icon>
+              <IconX />
+            </Icon>
+          }
           iconOnly
         >
           {i18n[lang].close}

@@ -533,8 +533,8 @@ importers:
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
       '@nl-design-system-community/ma-design-tokens':
-        specifier: 8.1.0
-        version: 8.1.0
+        specifier: 9.0.0
+        version: 9.0.0
       '@nl-design-system-unstable/voorbeeld-design-tokens':
         specifier: 14.0.1
         version: 14.0.1
@@ -4079,8 +4079,8 @@ packages:
   '@nl-design-system-community/ma-design-tokens@5.5.0':
     resolution: {integrity: sha512-oJQ4bx9HPnpn2iM25Rel/fN/MtHIQ9DUP3ZngQh0CJsf+PX5x0diqDhZjDc8www3Hvr5bTH1k01ME5S+SenW+Q==}
 
-  '@nl-design-system-community/ma-design-tokens@8.1.0':
-    resolution: {integrity: sha512-2ZeA68jF6xqQBuvUbtl+SD9lieJfwnoGaEdvMkvBK4kKfN0B6GL8LaKiufkAgUWNkO7QL1viAOoMF5Igj3v3+Q==}
+  '@nl-design-system-community/ma-design-tokens@9.0.0':
+    resolution: {integrity: sha512-dtfAOhbih4KfDcep4obVKIg+WMDGwRRundLh8SfB814tOHjF0Wg0fkW2tXHXcrqmQJyaRHZWuqykMVdZswB6Fw==}
 
   '@nl-design-system-community/ma-task-list-css@0.1.0':
     resolution: {integrity: sha512-JeMeiYGys0MlP6FF2P9972lmCLNXVdea0qoOfyyI+USCC7kPo3beUp3rCucfapifO3/Zy6XmjazbNN3S82jR3Q==}
@@ -16760,7 +16760,7 @@ snapshots:
 
   '@nl-design-system-community/ma-design-tokens@5.5.0': {}
 
-  '@nl-design-system-community/ma-design-tokens@8.1.0': {}
+  '@nl-design-system-community/ma-design-tokens@9.0.0': {}
 
   '@nl-design-system-community/ma-task-list-css@0.1.0': {}
 
