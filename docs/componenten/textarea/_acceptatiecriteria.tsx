@@ -1,8 +1,8 @@
-import Wcag131 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.1-textinput.md';
-import Wcag132 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.2-textinput.md';
-import Wcag135 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.5-textinput.md';
+import Wcag131 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.1-textarea.md';
+import Wcag132 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.2-textarea.md';
+import Wcag135 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.3.5-textarea.md';
 import Wcag1410 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.10.md';
-import Wcag1411 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.11-textinput.md';
+import Wcag1411 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.11-textarea.md';
 import Wcag1412 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.12.md';
 import Wcag143 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.3.md';
 import Wcag144 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-1.4.4.md';
@@ -15,7 +15,7 @@ import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag324 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.2.4-form.md';
 import Wcag332 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.3.2-form.md';
 import Wcag337 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.3.7-form.md';
-import Wcag412 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-4.1.2-textinput.md';
+import Wcag412 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-4.1.2-textarea.md';
 import Wcag412NLDS from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-4.1.2-nlds.md';
 import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md';
 import Wcag212 from '@nl-design-system-unstable/documentation/wcag/summaries/_2.1.2-summary.md';
@@ -119,7 +119,7 @@ export const usage = [
   },
   {
     title:
-      'Als de placeholdertekst en invoertekst in een andere taal is dan de taal van de pagina, dan heeft het `textarea`-element een lang-attribuut met de juiste taalcode.',
+      'Als de placeholdertekst en invoertekst in een andere taal is dan de taal van de pagina, dan heeft het HTML-element textarea een lang-attribuut met de juiste taalcode.',
     sc: '3.1.2',
     status: '',
     component: Wcag312,
