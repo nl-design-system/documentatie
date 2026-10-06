@@ -196,11 +196,16 @@ const footerNavigationItems = [
       <NavigationLandmark heading={i18n[lang].mainNavLabel} headingId="hoofdnavigatie-label" headingLevel={2}>
         <NavList>
           {
-            mainNavigationItems.map(({ href, label, expanded, current, lang }) => (
-              <NavListLink href={href} aria-current={expanded || current ? 'page' : null} lang={lang}>
-                {label}
-              </NavListLink>
-            ))
+            mainNavigationItems.map(({ href, label, expanded, current, lang }) => {
+              let isCurrent: true | 'page' | undefined;
+              if (expanded) isCurrent = true;
+              if (current) isCurrent = 'page';
+              return (
+                <NavListLink href={href} aria-current={isCurrent} lang={lang}>
+                  {label}
+                </NavListLink>
+              );
+            })
           }
         </NavList>
       </NavigationLandmark>
