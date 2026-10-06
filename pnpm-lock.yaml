@@ -11,6 +11,8 @@ overrides:
   astro: 7.2.8
   form-data@>=4.0.0 <4.0.4: '>=4.0.4'
   shell-quote@>=1.1.0 <=1.8.3: ^1.8.4
+  tinypool@<2.1.2: ^2.1.2
+  tinypool@<=2.1.0: ^2.1.1
 
 patchedDependencies:
   '@gemeente-denhaag/iconbutton@3.1.0': da0c7ecd733b2ae3ddf6302d79a2a23ac35ac3678ce602d97406281ba2b6bb8d
@@ -11610,9 +11612,9 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
-  tinypool@1.1.1:
-    resolution: {integrity: sha512-Zba82s87IFq9A9XmjiX5uZA/ARWDrB03OHlq+Vw1fSdt0I+4/Kutwy8BP4Y/y/aORMo61FQ0vIb5j44vSo5Pkg==}
-    engines: {node: ^18.0.0 || >=20.0.0}
+  tinypool@2.2.0:
+    resolution: {integrity: sha512-jBrmx4lYmaC9k/mgPbylxs7kBUxHtD8256up+HjLaDFfXScKJQyil+SWXSvhAtT7XHo+yTVlpB81PGmHP8oLSQ==}
+    engines: {node: ^20.0.0 || >=22.0.0}
 
   tinyrainbow@2.0.0:
     resolution: {integrity: sha512-op4nsTR47R6p0vMUUoYl/a+ljLFVtlfaXkLQmqfLR1qHma1h/ysYk4hEXZ880bf2CYgTskvTa/e196Vd5dDQXw==}
@@ -15034,7 +15036,7 @@ snapshots:
       react-router-dom: 5.3.4(react@18.3.1)
       semver: 7.6.3
       serve-handler: 6.1.6
-      tinypool: 1.1.1
+      tinypool: 2.2.0
       tslib: 2.6.2
       update-notifier: 6.0.2
       webpack: 5.104.1(esbuild@0.28.2)
@@ -25942,7 +25944,7 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
 
-  tinypool@1.1.1: {}
+  tinypool@2.2.0: {}
 
   tinyrainbow@2.0.0: {}
 
