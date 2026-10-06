@@ -461,11 +461,11 @@ importers:
   packages/website:
     dependencies:
       '@amsterdam/design-system-css':
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.4.0
+        version: 4.4.0
       '@amsterdam/design-system-react':
-        specifier: 4.1.0
-        version: 4.1.0(@amsterdam/design-system-css@4.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 4.4.0
+        version: 4.4.0(@amsterdam/design-system-css@4.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@fontsource/fira-code':
         specifier: 5.2.7
         version: 5.2.7
@@ -955,22 +955,22 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@amsterdam/design-system-css@4.1.0':
-    resolution: {integrity: sha512-AfR2vCwOTnbpv1P6oaa8CPcwJSi6NNtBfExszqxSob5EWg0+o/mvdBah6GddItEg8sGrXctSvnYGM/I00q3chQ==}
+  '@amsterdam/design-system-css@4.4.0':
+    resolution: {integrity: sha512-cxvTcdpNkwUo6y+PZwS4c8NKeClyQH1qWWld78lsezVGEL7YBi0O0MlEumrRBx0nC+8K76S8cB4Q4TIpoLK6hQ==}
     peerDependencies:
-      '@amsterdam/design-system-assets': 2.3.0
-      '@amsterdam/design-system-tokens': 4.0.1
+      '@amsterdam/design-system-assets': 2.6.0
+      '@amsterdam/design-system-tokens': 4.3.0
 
-  '@amsterdam/design-system-react-icons@2.0.0':
-    resolution: {integrity: sha512-yMQ7aABGOTcPdOANypG9EGeHB5vBv/syX8E+La/tmsfY++CtahRylIIVuRpMq3s6g03+vbWan/ANuRA5Eu0NFg==}
+  '@amsterdam/design-system-react-icons@2.2.0':
+    resolution: {integrity: sha512-sE6tEN9wXYJMiGlznwCuGob3m2HoqMPc41JOEFUlGhg26lvBT/TejxERqeclHErdA5OsZIXihfi8fEEBFEW8xg==}
     peerDependencies:
       react: 16 - 19
       react-dom: 16 - 19
 
-  '@amsterdam/design-system-react@4.1.0':
-    resolution: {integrity: sha512-IOmo5FwtXWGxISrOnwl/oM6BaGjdVLNjAUMJYDF5cIEp1TGGBvfK5jQ4yr/AbH+Udb91QvGfE4J2CJk7H47xRw==}
+  '@amsterdam/design-system-react@4.4.0':
+    resolution: {integrity: sha512-SrPQNvNkXCllCPAuO5RR1y73lI6/VGGvS2IQSLndwXU1abx6fNdQa5YmYbGdCkcU0oGKod/P8LzXO/+n+hQDSQ==}
     peerDependencies:
-      '@amsterdam/design-system-css': 4.1.0
+      '@amsterdam/design-system-css': 4.4.0
       react: 16 - 19
       react-dom: 16 - 19
 
@@ -2262,8 +2262,8 @@ packages:
     resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/runtime@7.29.2':
-    resolution: {integrity: sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==}
+  '@babel/runtime@7.29.7':
+    resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -12811,18 +12811,18 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@amsterdam/design-system-css@4.1.0': {}
+  '@amsterdam/design-system-css@4.4.0': {}
 
-  '@amsterdam/design-system-react-icons@2.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@amsterdam/design-system-react-icons@2.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@amsterdam/design-system-react@4.1.0(@amsterdam/design-system-css@4.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@amsterdam/design-system-react@4.4.0(@amsterdam/design-system-css@4.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@amsterdam/design-system-css': 4.1.0
-      '@amsterdam/design-system-react-icons': 2.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@babel/runtime': 7.29.2
+      '@amsterdam/design-system-css': 4.4.0
+      '@amsterdam/design-system-react-icons': 2.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@babel/runtime': 7.29.7
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -14503,7 +14503,7 @@ snapshots:
 
   '@babel/runtime@7.28.6': {}
 
-  '@babel/runtime@7.29.2': {}
+  '@babel/runtime@7.29.7': {}
 
   '@babel/template@7.27.2':
     dependencies:
