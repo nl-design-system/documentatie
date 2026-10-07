@@ -4,7 +4,7 @@ import { rehypeAbsoluteUrls } from '../../markdown-plugins/rehype-absolute-urls'
 import { nldsComponentsPlugin } from '../../markdown-plugins/rehype-nlds-components';
 import { remarkStripHtmlComments } from '../../markdown-plugins/remark-strip-html-comments';
 
-const siteUrl = 'https://nldesignsystem.nl';
+const siteUrl = 'https://nldesignsystem.nl/';
 
 /**
  * The website renders markdown with a longer plugin list (see `astro.config.ts`).

@@ -17,10 +17,12 @@
   "scripts": {
     "clean": "rimraf .astro/ dist/",
     "dev": "astro dev",
-    "//": "The public folder comes from the Docusaurus version. There the sitemap is not included in robots.txt. We can not add it there yet since the filename is different from Docusaurus",
-    "build": "astro build && echo '\nSitemap: https://nldesignsystem.nl/sitemap-index.xml' >> ./dist/robots.txt && pnpm run build:guideline-pages && pnpm run build:component-rules",
-    "build:guideline-pages": "node scripts/generate-guideline-pages.mjs",
+    "//": "`build` runs the `build:` scripts one by one in alphabetical order, so `build:astro` goes first and the other steps can read its `dist/` output. The public folder comes from the Docusaurus version. There the sitemap is not included in robots.txt. We can not add it there yet since the filename is different from Docusaurus",
+    "build": "pnpm run --sequential \"/^build:/\"",
+    "build:astro": "astro build",
     "build:component-rules": "tsx scripts/generate-component-rules.ts",
+    "build:guideline-pages": "node scripts/generate-guideline-pages.mjs",
+    "build:sitemap": "echo '\nSitemap: https://nldesignsystem.nl/sitemap-index.xml' >> ./dist/robots.txt",
     "preview": "astro preview",
     "test": "vitest run",
     "astro": "astro"
