@@ -1,0 +1,14 @@
+<!-- @license CC0-1.0 -->
+
+Als je de tekst vergroot tot 200%, via browserzoom of via de browserinstellingen voor tekstgrootte, blijft de tekst volledig zichtbaar.
+
+Zorg ervoor dat de component meegroeit met de tekst. Definieer hoogte en de breedte niet in `px`, maar gebruik een relatieve waarde als `em` of `rem`.
+
+Definieer in de CSS een wijze om lange woorden af te breken en te laten doorlopen op de volgende regel. Gebruik hiervoor bijvoorbeeld `overflow-wrap: break-word; hyphens: auto;` eventueel in combinatie met `text-wrap-style: balance`. Zo ontstaat er geen horizontale scrollbar en wordt tekst niet onleesbaar. Doe dit bij voorkeur op `:root` niveau.
+
+Gebruik daarnaast geen `resize: none` in CSS. Hiermee verdwijnt de resize handle, waardoor bezoekers het tekstveld niet meer zelf groter kunnen maken. Met een vergrootbaar veld hoeven bezoekers niet te scrollen om langere teksten na te lezen en te controleren.
+
+NL Design System richtlijnen:
+
+- [Let op voorkeursinstellingen voor typografie](/richtlijnen/stijl/typografie/voorkeur)
+- [Zorg ervoor dat letters groot genoeg zijn](/richtlijnen/stijl/typografie/lettergrootte)
