@@ -4,7 +4,7 @@ Hoewel een iconenset op een bepaald grid wordt ontworpen kan het icoon wel op ve
 
 ![Een lijstje van 3 labels met voor elk label een kalender icoon. De labels worden groter en het kalender icoon schaalt mee.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_grootte.png)
 
-Functionele iconen worden vaak ontworpen en toegepast op een formaat van 16×16, 24×24 of 32×32. Deze formaten sluiten mooi aan bij het veelal toegepaste 8pt grid voor ruimte en de standaard browser lettergroote van 16px. Een evenwichtige balans van icoon en lettergrootte zou dan kunnen zijn lettergrootte 16px met een icoon van 24px. Of een lettergrootte 26px met een icoon van 32px.
+Functionele iconen worden vaak ontworpen en toegepast op een formaat van 16×16, 24×24 of 32×32. Deze formaten sluiten mooi aan bij het veelal toegepaste 8pt grid voor ruimte en de standaard browser lettergrootte van 16px. Een evenwichtige balans van icoon en lettergrootte zou dan kunnen zijn lettergrootte 16px met een icoon van 24px. Of een lettergrootte 26px met een icoon van 32px.
 
 **Grootte als design token**
 
