@@ -18,6 +18,12 @@
     "directory": "docs"
   },
   "files": [
-    "**/*.md"
-  ]
+    "**/*.md",
+    "dist/guideline-pages.json",
+    "dist/component-rules.json"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./*": "./*"
+  }
 }

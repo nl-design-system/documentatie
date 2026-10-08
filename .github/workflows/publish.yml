@@ -41,6 +41,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # `@nl-design-system-unstable/documentation` ships generated files from
+      # `docs/dist/`, which are not in git. They have to exist before changesets
+      # runs `npm publish`: a missing file in `files` is silently left out of the
+      # tarball instead of failing the publish.
+      - name: Build
+        run: pnpm run build
+
       - name: Publish to the npm Registry
         uses: changesets/action@8488615a623b1b9c987934bb89eae8af6a946ac1 # v2.1.1
         env:
