@@ -1,5 +1,32 @@
 # @nl-design-system-unstable/documentation
 
+## 2.0.0
+
+### Major Changes
+
+- ac59d82: Naamwijziging map voor snippets veelgemaakte fouten voor Heading, Link en Paragraph.
+- bc48afb: Verwijderen van ongebruikte editor error snippets van Paragraph voor de editor.
+
+### Minor Changes
+
+- a5d0ef4: Toevoeging aan de schrijfwijzer over alinea.
+- f4abfec: Wijziging veelgemaakte fouten Paragraph component snippets.
+- 5f1e57f: Veelgemaakte fouten aan de Link componentpagina toegevoegd.
+- 01d9b2a: H1 specifieke issues verplaats naar Heading 1 map, update van teksten en verwijzingen.
+- a7df4b2: Twee nieuwe bestanden maken de documentatie als data beschikbaar:
+  
+  - `@nl-design-system-unstable/documentation/dist/guideline-pages.json`: de
+    richtlijnenpagina's van nldesignsystem.nl met hun `url` en koppen. De lijst is
+    nog niet compleet, zie het `$comment` in het bestand.
+  - `@nl-design-system-unstable/documentation/dist/component-rules.json`: de
+    veelgemaakte fouten per component, met per regel een `id`, een `title` en de
+    naar HTML geconverteerde markdown-teksten met NL Design system class names.
+- a5d0ef4: Update van de baseline voor september 2026.
+
+### Patch Changes
+
+- f7bbc58: Corrigeren naam op kernteampagina.
+
 ## 1.12.0
 
 ### Minor Changes
