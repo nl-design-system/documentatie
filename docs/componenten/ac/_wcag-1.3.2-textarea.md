@@ -9,10 +9,10 @@ Een screenreader schakelt in een formulierveld over van leesmodus naar focusmodu
 Voorbeeld:
 
 ```html
-<label for="message">Je bericht</label>
-<p id="description-message">Wat is je vraag, opmerking of klacht?</p>
-<p id="error">Invoerfout: Het veld Je bericht is niet ingevuld. Vul hier iets in.</p>
-<textarea id="message" aria-describedby="description-message error"></textarea>
+<p><label for="message">Je bericht</label></p>
+<p id="message-description">Wat is je vraag, opmerking of klacht?</p>
+<p id="message-error">Invoerfout: Het veld Je bericht is niet ingevuld. Vul hier iets in.</p>
+<p><textarea id="message" aria-describedby="message-description message-error"></textarea></p>
 ```
 
 NL Design System richtlijnen:
