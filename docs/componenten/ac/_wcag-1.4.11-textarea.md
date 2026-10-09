@@ -4,7 +4,7 @@ Zorg voor voldoende kleurcontrast tussen de kleuren van componenten die visueel 
 
 Kleuren die van toepassing zijn bij de Text Area zijn bijvoorbeeld:
 
-- De rand van de Text Area, zodat de bezoeker weet waar het veld is. Vergeet hierbij ook niet de kleur van de rand wanneer de Text Area `invalid` is.
+- De rand van de Text Area, zodat de bezoeker weet waar het veld is. Dit geldt ook voor de kleur van de rand wanneer de Text Area `invalid` is.
 - De focusrand om de Text Area.
 - Het uiterlijk van de `resizer` waarmee je de grootte van de Text Area kunt aanpassen. Wanneer je het uiterlijk van de `resizer` niet aanpast, gaat dit standaard goed.
 
