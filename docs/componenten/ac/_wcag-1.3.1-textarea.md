@@ -11,7 +11,7 @@ Op die manier is het label expliciet gekoppeld met de Text Area, ook als het inv
 Koppel instructies en foutmeldingen ook aan de Text Area met het `aria-describedby` attribuut:
 
 ```html
-<label for="message">Je bericht</label>
+<p><label for="message">Je bericht</label></p>
 <p id="description-message">Wat is je vraag, opmerking of klacht?</p>
 <p id="error">Invoerfout: Het veld Je bericht is niet ingevuld. Vul hier iets in.</p>
 <textarea id="message" aria-describedby="description-message error"></textarea>
