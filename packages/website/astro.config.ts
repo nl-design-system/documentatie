@@ -133,7 +133,15 @@ export default defineConfig({
       remarkPlugins: [
         ...sharedPlugins.remarkPlugins,
         remarkCanvasFix,
-        clientLoadPlugin(['Videoplayer', 'VideoPlayer', 'Checklist', 'DesignTokens', 'NewsletterSignUp']),
+        clientLoadPlugin([
+          'Videoplayer',
+          'VideoPlayer',
+          'Checklist',
+          'DesignTokens',
+          'NewsletterSignUp',
+          'DSWSession',
+          'HeartbeatEpisode',
+        ]),
       ],
       rehypePlugins: sharedPlugins.rehypePlugins,
       syntaxHighlight: 'prism',
