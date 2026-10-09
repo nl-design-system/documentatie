@@ -5,3 +5,5 @@
 Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.
 
 - [Succescriterium 3.2.6 Consistente hulp](/wcag/3.2.6/)
+
+Succescriterium 3.2.6 Consistente hulp vraagt niet dat je hulp aanbiedt. Het vraagt dat hulp die op meerdere pagina's terugkomt, elke keer op dezelfde plek in de volgorde van de pagina staat. Vertellen wat de vervolgstappen zijn is een aanbeveling van NL Design System.
