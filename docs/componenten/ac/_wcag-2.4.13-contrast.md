@@ -5,4 +5,4 @@ Er is een goed zichtbare focusindicator met een minimaal contrast van 3:1 ten op
 NL Design System richtlijnen:
 
 - [Let op voorkeursinstellingen voor kleur](/richtlijnen/stijl/kleuren/voorkeuren)
-- [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](/richtlijnen/stijl/typografie/voorkeur)
+- [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content)
