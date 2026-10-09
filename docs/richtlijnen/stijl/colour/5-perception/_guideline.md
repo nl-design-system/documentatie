@@ -6,7 +6,7 @@ Vergeet niet dat mensen kleur op verschillende manieren kunnen waarnemen en erva
 
 ### Iets niet kunnen zien als er tussen twee tinten te weinig contrast is
 
-Lees meer over kleurcontrast op[Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst) en [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content).
+Lees meer over kleurcontrast op [Zorg voor voldoende kleurcontrast voor tekst tegen de achtergrond](/richtlijnen/stijl/kleuren/contrast-tekst) en [Zorg voor voldoende kleurcontrast voor niet-tekstuele content](/richtlijnen/stijl/kleuren/contrast-niet-tekstuele-content).
 
 ### Geen verschil kunnen zien tussen kleuren
 
@@ -18,7 +18,7 @@ En als je kleur gebruikt om de status van de component duidelijk te maken (bijvo
 
 Gebruik daarom geen puur zwarte tekst op een puur witte achtergrond. Zo’n sterk contrast (21:1) kan ertoe leiden dat mensen tekst wazig, bewegend of flikkerend ervaren.
 
-Dit staat bekend als het [Irlen-syndroom](https://en.m.wikipedia.org/wiki/Irlen_syndrome). Overweeg daarom het contrast te beperken tot bijvoorbeeld 17:1. Kies als tekstkleur bijvoorbeeld niet zwart, maar donker grijs.
+Dit staat bekend als het [Irlen-syndroom](https://en.wikipedia.org/wiki/Irlen_syndrome). Overweeg daarom het contrast te beperken tot bijvoorbeeld 17:1. Kies als tekstkleur bijvoorbeeld niet zwart, maar donker grijs.
 
 ### Last ervaren van heldere kleuren en hoog contrast
 
