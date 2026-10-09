@@ -3,7 +3,8 @@
 Als de Text Area een tekstueel label heeft, gebruik dan een `label`-element en koppel het met de attributen `for` en `id` aan de Text Area.
 
 ```html
-<label for="voorbeeld">Ik ben een Text Area</label> <textarea id="voorbeeld" />
+<p><label for="example">Ik ben een Text Area</label></p>
+<p><textarea id="example"></textarea></p>
 ```
 
 Op die manier is het label expliciet gekoppeld met de Text Area, ook als het invoerveld niet binnen een `label`-element genest is.
