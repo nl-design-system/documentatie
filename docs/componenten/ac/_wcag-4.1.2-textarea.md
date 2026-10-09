@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor dat de Text Area een toegankelijke naam en een kloppende rol heeft.
+Zorg ervoor dat de Text Area een toegankelijke naam heeft, door een Form Label te gebruiken en die te koppelen aan de Text Area met het HTML-element `label` of via het HTML-attribuut `aria-labelledby`.
 
 Zorg dat de Text Area een `textbox` rol heeft, door het HTML-element `textarea` te gebruiken.
 
