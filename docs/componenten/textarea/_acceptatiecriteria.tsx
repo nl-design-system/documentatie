@@ -11,6 +11,7 @@ import Wcag243 from '@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag246 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.6-form.md';
 import Wcag247 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.7.md';
 import Wcag253 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.5.3-form.md';
+import Wcag258 from '@nl-design-system-unstable/documentation//componenten/ac/_wcag-2.5.8-textarea.md';
 import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md';
 import Wcag324 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.2.4-form.md';
 import Wcag332 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.3.2-form.md';
@@ -19,7 +20,6 @@ import Wcag412 from '@nl-design-system-unstable/documentation/componenten/ac/_wc
 import Wcag412NLDS from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-4.1.2-nlds.md';
 import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md';
 import Wcag212 from '@nl-design-system-unstable/documentation/wcag/summaries/_2.1.2-summary.md';
-import Wcag258 from '@nl-design-system-unstable/documentation/wcag/summaries/_2.5.8-summary.md';
 import Wcag321 from '@nl-design-system-unstable/documentation/wcag/summaries/_3.2.1-summary.md';
 import Wcag322 from '@nl-design-system-unstable/documentation/wcag/summaries/_3.2.2-summary.md';
 import Wcag2411 from '@nl-design-system-unstable/documentation/wcag/summaries/_2.4.11-summary.md';
@@ -111,7 +111,7 @@ export const usage = [
     tags: ['developer'],
   },
   {
-    title: 'De Text Area heeft een minimale grootte van 24 bij 24 pixels.',
+    title: 'De Text Area is groot genoeg.',
     sc: '2.5.8',
     status: '',
     component: Wcag258,
