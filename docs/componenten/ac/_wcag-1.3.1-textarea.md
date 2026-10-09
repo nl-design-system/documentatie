@@ -12,9 +12,9 @@ Koppel instructies en foutmeldingen ook aan de Text Area met het `aria-described
 
 ```html
 <p><label for="message">Je bericht</label></p>
-<p id="description-message">Wat is je vraag, opmerking of klacht?</p>
-<p id="error">Invoerfout: Het veld Je bericht is niet ingevuld. Vul hier iets in.</p>
-<textarea id="message" aria-describedby="description-message error"></textarea>
+<p id="message-description">Wat is je vraag, opmerking of klacht?</p>
+<p id="message-error">Invoerfout: Het veld Je bericht is niet ingevuld. Vul hier iets in.</p>
+<textarea id="message" aria-describedby="message-description message-error"></textarea>
 ```
 
 Geef zowel in tekst als in code aan of een veld verplicht ingevuld moet worden. In code doe je dit doe je met het `required` attribuut of met het `aria-required` attribuut.
