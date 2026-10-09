@@ -2,7 +2,7 @@
 
 Zorg ervoor dat de Text Area een toegankelijke naam en een kloppende rol heeft.
 
-Zorg dat de Text Area een kloppende rol heeft, door het HTML-element `textarea` te gebruiken.
+Zorg dat de Text Area een `textbox` rol heeft, door het HTML-element `textarea` te gebruiken.
 
 Daarnaast moeten de staat en eigenschappen waar bezoekers zelf invloed op hebben, zoals de ingevulde waarde, beschikbaar zijn voor hulpsoftware.
 
