@@ -7,7 +7,7 @@ Als de Text Area een tekstueel label heeft, gebruik dan een `label`-element en k
 <p><textarea id="example"></textarea></p>
 ```
 
-Koppel instructies en foutmeldingen ook aan de Text Area met het `aria-describedby` attribuut:
+Koppel alle zichtbare instructies en foutmeldingen ook aan de Text Area met het `aria-describedby` attribuut:
 
 ```html
 <p><label for="message">Je bericht</label></p>
