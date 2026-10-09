@@ -4,4 +4,4 @@ Gebruik een lettergrootte ofwel `font-size` die groot genoeg is voor de [`body t
 
 Hoewel we `16px` aangeven als minimale `font-size` is het beter om géén gebruik te maken van ‘fixed-size units’ zoals `px`. Gebruik liever een relatieve waarde als `em` of `rem`.
 
-Waarom? Browsers bieden de mogelijkheid om de standaard `font-size` aan te passen. Handig voor iemand die slechtziend is. Wanneer je relatieve waardes gebruikt schaalt alles netjes mee. Maar een pixel blijft een pixel en zodoende verandert er niks.
+Waarom? Browsers bieden de mogelijkheid om de standaard `font-size` aan te passen. Handig voor iemand die slechtziend is. Wanneer je relatieve waardes gebruikt schaalt alles netjes mee met die instelling. Tekst in pixels verandert niet mee als iemand de standaardlettergrootte van de browser aanpast. Bij inzoomen op de pagina schaalt tekst in pixels wel mee.
