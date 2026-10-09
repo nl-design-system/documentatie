@@ -18,7 +18,13 @@ interface CodeExampleContextType {
 
 export const CodeExampleContext = createContext<CodeExampleContextType>({});
 
-export const Guideline = ({ title, appearance, description, children, figure }: PropsWithChildren<GuidelineProps>) => {
+export const Guideline = ({
+  title,
+  appearance,
+  description,
+  children,
+  figure = true,
+}: PropsWithChildren<GuidelineProps>) => {
   const guidelineLabel = {
     do: 'Doen',
     dont: 'Niet doen',
