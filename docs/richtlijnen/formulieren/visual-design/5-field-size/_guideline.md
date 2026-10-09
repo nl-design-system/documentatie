@@ -2,9 +2,11 @@
 
 # Maak interactieve elementen groot genoeg
 
-Zorg dat het aanwijsgebied (aanklikbare deel) van radio buttons, checkboxes en icons tenminste 24 bij 24 pixels groot is.
+Zorg dat het aanwijsgebied (aanklikbare deel) van radio buttons, checkboxes en icons tenminste 24 bij 24 CSS-pixels groot is.
 
-Maar een aanklikbaar gebied van 44 bij 44 pixels, voor het aanklikbare deel, is veel gebruiksvriendelijker voor mensen met dikke vingers of een trillende hand. Houdt daarom een aanklikbaar gedeelte aan van tenminste 44 bij 44 pixels.
+[Succescriterium 2.5.8 Grootte van het aanwijsgebied (minimum)](/wcag/2.5.8) kent uitzonderingen, waaronder de onderlinge afstand tussen kleine aanwijsgebieden en besturingselementen waarvan de browser de grootte bepaalt. Een niet-gestylede checkbox of radio button valt vaak onder die laatste.
+
+Maar een aanklikbaar gebied van 44 bij 44 pixels, voor het aanklikbare deel, is veel gebruiksvriendelijker voor mensen met dikke vingers of een trillende hand. Houdt daarom een aanklikbaar gedeelte aan van tenminste 44 bij 44 pixels. Dat is de eis van [succescriterium 2.5.5 Grootte van het aanwijsgebied (uitgebreid)](/wcag/2.5.5), niveau AAA.
 
 Adrian Roselli over doelgrootte in [<span lang="en">Target Size and 2.5.5</span>](https://adrianroselli.com/2019/06/target-size-and-2-5-5.html): "Ongeacht het toegankelijkheidsniveau dat je wilt aanhouden, probeer ervoor te zorgen dat interactieve besturingselementen minimaal 44 bij 44 pixels groot zijn. Links in tekstblokken zijn uitgezonderd.".
 
