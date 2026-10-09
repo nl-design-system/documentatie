@@ -35,7 +35,12 @@ export const CanvasAstro = ({
       {/* Live preview */}
       {/* TODO: Ideally replace the class name with the `<Root>` Utrecht component when it supports `<Root Component='div'>` */}
       <div className="voorbeeld-theme utrecht-root" style={designTokens as CSSProperties}>
-        <div className="ma-canvas-astro__example utrecht-html ma-flow" dangerouslySetInnerHTML={{ __html: _code }} />
+        <div
+          className="ma-canvas-astro__example utrecht-html ma-flow"
+          dangerouslySetInnerHTML={{ __html: _code }}
+          inert="true"
+          aria-hidden="true"
+        />
       </div>
 
       {/* Highlighted code example */}
