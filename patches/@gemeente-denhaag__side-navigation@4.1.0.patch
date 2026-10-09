@@ -1,5 +1,5 @@
 diff --git a/dist/cjs/index.js b/dist/cjs/index.js
-index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..66bd5ff7db7a2b8ad18389b8047b9cbc7f0f00bc 100644
+index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..0496957c00cc33f8adbfd7fe4560e69b2ff86601 100644
 --- a/dist/cjs/index.js
 +++ b/dist/cjs/index.js
 @@ -1,20 +1,6 @@
@@ -33,8 +33,17 @@ index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..66bd5ff7db7a2b8ad18389b8047b9cbc
                  props.icon,
                  props.counter && props.counter > 0 ? (React.createElement(SideNavigationLinkLabel, null,
                      props.label,
+@@ -114,7 +100,7 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
+             ((_a = props.items) === null || _a === void 0 ? void 0 : _a.length) && (React.createElement(React.Fragment, null,
+                 React.createElement(SideNavigationExpandSeparator, null),
+                 React.createElement(SideNavigationExpandButton, { ref: toggleRef, onClick: togglePanel, "aria-label": "".concat(isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open', " submenu ").concat(props.label), "aria-expanded": isExpanded, onKeyDown: handleEscapeOnToggle })))),
+-        ((_b = props.items) === null || _b === void 0 ? void 0 : _b.length) && isExpanded && (React.createElement(SideNavigationList, { id: id }, props.items.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { closeParent: closePanel }))); })))));
++        ((_b = props.items) === null || _b === void 0 ? void 0 : _b.length) && isExpanded && (React.createElement(SideNavigationList, { id: id }, props.items.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { closeParent: closePanel, openLabel: props.openLabel, closeLabel: props.closeLabel }))); })))));
+ };var SideNavigation = function (_a) {
+     var items = _a.items, openLabel = _a.openLabel, closeLabel = _a.closeLabel;
+     return (React.createElement(SideNavigationBase, null, items.map(function (item, index) { return (React.createElement(SideNavigationList, { key: index }, item.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { openLabel: openLabel, closeLabel: closeLabel }))); }))); })));
 diff --git a/dist/mjs/index.js b/dist/mjs/index.js
-index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..91846b59bcfc999e84df86ecfbb0570ba4c669cc 100644
+index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..0907e132c0b4422fc6f92534778abe0cac327d27 100644
 --- a/dist/mjs/index.js
 +++ b/dist/mjs/index.js
 @@ -1,20 +1,6 @@
@@ -68,3 +77,12 @@ index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..91846b59bcfc999e84df86ecfbb0570b
                  props.icon,
                  props.counter && props.counter > 0 ? (React.createElement(SideNavigationLinkLabel, null,
                      props.label,
+@@ -114,7 +100,7 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
+             ((_a = props.items) === null || _a === void 0 ? void 0 : _a.length) && (React.createElement(React.Fragment, null,
+                 React.createElement(SideNavigationExpandSeparator, null),
+                 React.createElement(SideNavigationExpandButton, { ref: toggleRef, onClick: togglePanel, "aria-label": "".concat(isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open', " submenu ").concat(props.label), "aria-expanded": isExpanded, onKeyDown: handleEscapeOnToggle })))),
+-        ((_b = props.items) === null || _b === void 0 ? void 0 : _b.length) && isExpanded && (React.createElement(SideNavigationList, { id: id }, props.items.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { closeParent: closePanel }))); })))));
++        ((_b = props.items) === null || _b === void 0 ? void 0 : _b.length) && isExpanded && (React.createElement(SideNavigationList, { id: id }, props.items.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { closeParent: closePanel, openLabel: props.openLabel, closeLabel: props.closeLabel }))); })))));
+ };var SideNavigation = function (_a) {
+     var items = _a.items, openLabel = _a.openLabel, closeLabel = _a.closeLabel;
+     return (React.createElement(SideNavigationBase, null, items.map(function (item, index) { return (React.createElement(SideNavigationList, { key: index }, item.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { openLabel: openLabel, closeLabel: closeLabel }))); }))); })));

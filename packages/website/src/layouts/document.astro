@@ -181,11 +181,16 @@ const footerNavigationItems = [
           <h2 hidden id="hoofdnavigatie-label">{i18n[lang].mainNavLabel}</h2>
           <NavList>
             {
-              mainNavigationItems.map(({ href, label, expanded, current, lang }) => (
-                <NavListLink href={href} aria-current={expanded || current ? 'page' : null} lang={lang}>
-                  {label}
-                </NavListLink>
-              ))
+              mainNavigationItems.map(({ href, label, expanded, current, lang }) => {
+                let isCurrent = null;
+                if (expanded) isCurrent = 'true';
+                if (current) isCurrent = 'page';
+                return (
+                  <NavListLink href={href} aria-current={isCurrent} lang={lang}>
+                    {label}
+                  </NavListLink>
+                );
+              })
             }
           </NavList>
         </nav>
@@ -213,9 +218,10 @@ const footerNavigationItems = [
     </PageLayout>
 
     <MobileMenu lang={lang}>
-      <SideNavigation items={[items.items]} client:load />
+      <SideNavigation items={[items.items]} closeLabel={i18n[lang].close} client:load />
     </MobileMenu>
 
+    <script src="@components/mobile-menu/mobile-menu.client.ts"></script>
     <script>
       import 'invokers-polyfill';
     </script>
@@ -228,6 +234,7 @@ const footerNavigationItems = [
         }
       });
     </script>
+
     <script>
       document.addEventListener('click', (event) => {
         const button = (event.target as HTMLElement)?.closest<HTMLElement>('[data-copy-code]');

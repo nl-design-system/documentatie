@@ -12,16 +12,18 @@ export interface MobileMenuTriggerProps {
 
 export const MobileMenuTrigger = ({ lang }: MobileMenuTriggerProps) => {
   return (
-    <Button
-      className="ma-mobile-menu-trigger"
-      purpose="subtle"
-      iconStart={<IconMenu2 />}
-      /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
-      commandfor="ma-mobile-menu-drawer"
-      command="show-modal"
-    >
-      {i18n[lang].menu}
-    </Button>
+    <ma-mobile-menu-trigger>
+      <Button
+        className="ma-mobile-menu-trigger"
+        purpose="subtle"
+        iconStart={<IconMenu2 />}
+        /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
+        commandfor="ma-mobile-menu-drawer"
+        command="show-modal"
+      >
+        {i18n[lang].menu}
+      </Button>
+    </ma-mobile-menu-trigger>
   );
 };
 
@@ -32,7 +34,15 @@ export interface MobileMenuProps {
 
 export const MobileMenu = ({ children, lang }: MobileMenuProps) => {
   return (
-    <Drawer id="ma-mobile-menu-drawer" className="ma-mobile-menu-drawer" modal={true}>
+    <Drawer
+      id="ma-mobile-menu-drawer"
+      className="ma-mobile-menu-drawer"
+      modal={true}
+      aria-labelledby="mobile-menu-label"
+    >
+      <span className="ma-mobile-menu-drawer__label" id="mobile-menu-label">
+        {i18n[lang].mainNavLabel}
+      </span>
       <header className="ma-mobile-menu-drawer__header">
         <Button
           purpose="subtle"

@@ -172,13 +172,15 @@ export async function navigationItem(input: NavigationItemInput): Promise<Naviga
     order: entry?.data?.navigation_order,
     unlisted: entry?.data?.unlisted,
     metadata: entry?.data?.conformance_level,
-    lang: entry?.data?.lang,
+    lang: options?.lang || entry?.data?.lang || 'nl',
   };
 
   return item;
 }
 
-type NavigationGroupOptions = Partial<Pick<NavigationGroup, 'label' | 'filePath' | 'ignoredFiles' | 'items'>> & {
+type NavigationGroupOptions = Partial<
+  Pick<NavigationGroup, 'label' | 'filePath' | 'ignoredFiles' | 'items' | 'lang'>
+> & {
   index?: Promise<NavigationItem>;
 };
 
@@ -293,7 +295,7 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
     filePath: options.filePath,
     href: index?.href,
     order: index?.order,
-    lang: index?.lang,
+    lang: options?.lang || index?.lang || 'nl',
   };
 
   // Add the resulting NavigationGroup to each item as a parent

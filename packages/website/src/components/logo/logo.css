@@ -1,14 +1,4 @@
 .ma-logo {
   color: var(--basis-color-accent-1-color-default);
-  container-name: logo;
-  container-type: inline-size;
   display: inline;
-
-  .ma-logo__letter {
-    display: none;
-
-    @container logo (width > 50px) {
-      display: unset;
-    }
-  }
 }
