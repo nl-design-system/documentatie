@@ -7,8 +7,6 @@ Als de Text Area een tekstueel label heeft, gebruik dan een `label`-element en k
 <p><textarea id="example"></textarea></p>
 ```
 
-Op die manier is het label expliciet gekoppeld met de Text Area, ook als het invoerveld niet binnen een `label`-element genest is.
-
 Koppel instructies en foutmeldingen ook aan de Text Area met het `aria-describedby` attribuut:
 
 ```html
