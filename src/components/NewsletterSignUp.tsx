@@ -193,7 +193,7 @@ export const NewsletterSignUp = ({
             <Textbox
               id={talkTitleId}
               name={talkTitleId}
-              aria-describedby={errors[talkTitleId] && `${talkTitleId}-description`}
+              aria-describedby={`${talkTitleId}-description`}
               {...register(talkTitleId, {
                 required: {
                   value: true,
@@ -224,7 +224,7 @@ export const NewsletterSignUp = ({
               id={talkDescriptionId}
               name={talkDescriptionId}
               rows={12}
-              aria-describedby={errors[talkDescriptionId] && `${talkDescriptionId}-description`}
+              aria-describedby={`${talkDescriptionId}-description`}
               {...register(talkDescriptionId, {
                 required: {
                   value: true,
@@ -253,7 +253,7 @@ export const NewsletterSignUp = ({
       )}
 
       {interestsId && (
-        <Fieldset aria-describedby={errors[interestsId] && `${interestsId}-description`}>
+        <Fieldset aria-describedby={`${interestsId}-description`}>
           <FieldsetLegend>
             {interestsLegend}
             {!interestsRequired && ' (niet verplicht)'}
@@ -275,7 +275,7 @@ export const NewsletterSignUp = ({
       )}
 
       {roleId && (
-        <Fieldset aria-describedby={errors[roleId] && `${roleId}-description`}>
+        <Fieldset aria-describedby={`${roleId}-description`}>
           <FieldsetLegend>
             {roleLegend}
             {!roleRequired && ' (niet verplicht)'}
@@ -301,11 +301,7 @@ export const NewsletterSignUp = ({
             </FormFieldDescription>
           </Paragraph>
           <Paragraph>
-            <Textarea
-              id={workAreasId}
-              name={workAreasId}
-              aria-describedby={errors[workAreasId] && `${workAreasId}-description`}
-            ></Textarea>
+            <Textarea id={workAreasId} name={workAreasId} aria-describedby={`${workAreasId}-description`}></Textarea>
           </Paragraph>
         </FormField>
       )}
@@ -336,7 +332,7 @@ export const NewsletterSignUp = ({
               value="1"
               id={`${privacyPolicyId}-1`}
               aria-describedby={clsx({
-                [`${privacyPolicyId}-description`]: errors[privacyPolicyId],
+                [`${privacyPolicyId}-description`]: true,
                 [`${privacyPolicyId}-error`]: errors[privacyPolicyId],
               })}
               aria-required="true"
