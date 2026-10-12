@@ -73,36 +73,36 @@ import settings from "./settings.json";
 
 {/* Vul in per dag */}
 
-## Maandag 26 oktober
-
 <SessionTable
+  heading="Maandag 26 oktober"
+  headingLevel={2}
   year={settings.year}
   lang="nl-NL"
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-26`))}
 />
 
-## Dinsdag 27 oktober
-
 <SessionTable
+  heading="Dinsdag 27 oktober"
+  headingLevel={2}
   year={settings.year}
   lang="nl-NL"
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-27`))}
 />
 
-## Woensdag 28 oktober
-
 <SessionTable
+  heading="Woensdag 28 oktober"
+  headingLevel={2}
   year={settings.year}
   lang="nl-NL"
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-28`))}
 />
 
-## Donderdag 29 oktober
-
 <SessionTable
+  heading="Donderdag 29 oktober"
+  headingLevel={2}
   year={settings.year}
   lang="nl-NL"
   speakers={speakers}
