@@ -9,6 +9,7 @@
   font-family: var(--ma-navigation-bar-font-family);
   font-weight: var(--ma-navigation-bar-font-weight);
 
+  &:has([aria-current="true"]),
   &:has([aria-current="page"]) {
     --ma-navigation-bar-item-border-color: var(--ma-navigation-bar-item-current-border-color);
   }
