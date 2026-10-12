@@ -218,7 +218,12 @@ const footerNavigationItems = [
     </PageLayout>
 
     <MobileMenu lang={lang}>
-      <SideNavigation items={[items.items]} closeLabel={i18n[lang].close} client:load />
+      <SideNavigation
+        aria-labelledby="mobile-menu-label"
+        items={[items.items]}
+        closeLabel={i18n[lang].close}
+        client:load
+      />
     </MobileMenu>
 
     <script src="@components/mobile-menu/mobile-menu.client.ts"></script>
