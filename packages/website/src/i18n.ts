@@ -14,6 +14,7 @@ export const i18n = {
     logoAlt: 'Logo van NL Design System',
     logoLinkAlt: 'Logo van NL Design System, naar de homepage',
     watch: 'Bekijk',
+    subnavigation: 'subnavigatie',
   },
 
   en: {
@@ -29,5 +30,6 @@ export const i18n = {
     logoAlt: 'Logo of NL Design System',
     logoLinkAlt: 'Logo of NL Design System, to the homepage',
     watch: 'Watch',
+    subnavigation: 'subnavigation',
   },
 };
