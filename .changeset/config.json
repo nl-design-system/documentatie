@@ -7,5 +7,6 @@
   "access": "restricted",
   "updateInternalDependencies": "patch",
   "ignore": [],
-  "privatePackages": false
+  "privatePackages": false,
+  "format": false
 }
