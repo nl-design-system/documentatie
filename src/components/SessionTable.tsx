@@ -61,19 +61,19 @@ export const SessionTable = ({
     <Table className={clsx('ma-session-table', className)} {...props}>
       <TableHeader>
         <TableRow className="ma-session-table__row">
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Tijd' : 'Time'}
           </TableHeaderCell>
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Taal' : 'Language'}
           </TableHeaderCell>
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Spreker' : 'Speaker'}
           </TableHeaderCell>
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Onderwerp' : 'Subject'}
           </TableHeaderCell>
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Agenda' : 'Calendar'}
           </TableHeaderCell>
         </TableRow>
