@@ -16,6 +16,8 @@
   --ma-user-input-badge-padding-block: 0.15rem;
   --ma-user-input-badge-padding-inline: 0.3rem;
   --nl-button-column-gap: var(--basis-space-inline-xs); /* --> Zou een basis.space.text.* token moeten zijn. */
+  --utrecht-page-header-content-padding-block-start: var(--basis-space-block-lg);
+  --utrecht-page-header-content-padding-block-end: var(--basis-space-block-lg);
 }
 
 /**
