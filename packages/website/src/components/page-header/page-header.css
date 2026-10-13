@@ -44,12 +44,18 @@
       display: none;
     }
 
+    .ma-page-header__center {
+      display: flex;
+    }
+
     .ma-logo--small {
       display: none;
     }
 
     .ma-logo--full {
-      display: unset;
+      align-items: center;
+      block-size: 100%;
+      display: flex;
     }
 
     .ma-to-search-link {

@@ -79,6 +79,7 @@ export const SearchPage = ({ lang }: SearchPageProps) => {
           <SearchForm
             lang={lang}
             autoFocus={autoFocus}
+            required
             value={searchQuery}
             onChange={(value) => setSearchQuery(value)}
           />
