@@ -23,6 +23,7 @@
     "build:component-rules": "tsx scripts/generate-component-rules.ts",
     "build:guideline-pages": "node scripts/generate-guideline-pages.mjs",
     "build:sitemap": "echo '\nSitemap: https://nldesignsystem.nl/sitemap-index.xml' >> ./dist/robots.txt",
+    "lint": "tsc --project tsconfig.json --noEmit",
     "preview": "astro preview",
     "test": "vitest run",
     "astro": "astro"
