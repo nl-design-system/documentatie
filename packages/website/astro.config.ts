@@ -40,7 +40,7 @@ const getCspSource = (arg: string) => {
 // https://vercel.com/docs/environment-variables/system-environment-variables#VERCEL_URL
 const selfHostname =
   typeof process.env['VERCEL_URL'] === 'string'
-    ? process.env['VERCEL_URL']
+    ? `https://${process.env['VERCEL_URL']}`
     : isAbsoluteURL(process.env['ASTRO_BASE_URL'])
       ? getCspSource(process.env['ASTRO_BASE_URL'])
       : '';
@@ -71,6 +71,9 @@ const cspProdConfig: AstroUserConfig = {
   security: {
     csp: {
       styleDirective: {
+        resources: ["'self'", selfHostname].filter(Boolean),
+      },
+      scriptDirective: {
         resources: ["'self'", selfHostname].filter(Boolean),
       },
       directives: [
