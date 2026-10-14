@@ -15,7 +15,7 @@ export interface PageHeaderProps {
 export const PageHeader = ({ lang }: PageHeaderProps) => {
   return (
     <UtrechtPageHeader className="ma-page-header">
-      <div className="ma-page-header__start">
+      <div className="ma-page-header__start ma-page-header__start--visible-with-css" hidden>
         <MobileMenuTrigger lang={lang} />
       </div>
       <div className="ma-page-header__center">
