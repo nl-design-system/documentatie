@@ -1,5 +1,5 @@
 import { IconMoodHappy, IconMoodSad } from '@components/functional-icon';
-import { Paragraph, Link } from '@utrecht/component-library-react/dist/css-module';
+import { Icon, Paragraph, Link } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import Markdown from 'react-markdown';
@@ -38,7 +38,9 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
         {appearance === 'dont' ? (
           <>
             <Paragraph className={clsx('nlds-guideline__badge', `nlds-guideline__badge--${appearance}`)}>
-              <IconMoodSad aria-hidden="true" role="presentation" className="nlds-guideline__icon" />
+              <Icon aria-hidden="true" className="nlds-guideline__icon">
+                <IconMoodSad />
+              </Icon>
               <span className="nlds-guideline__title">{guidelineLabel['dont']}</span>
             </Paragraph>
             <Paragraph>{title}</Paragraph>
@@ -46,7 +48,9 @@ export const Guideline = ({ title, appearance, description, children, figure }: 
         ) : (
           <>
             <Paragraph className={clsx('nlds-guideline__badge', `nlds-guideline__badge--${appearance}`)}>
-              <IconMoodHappy aria-hidden="true" role="presentation" className="nlds-guideline__icon" />
+              <Icon aria-hidden="true" className="nlds-guideline__icon">
+                <IconMoodHappy />
+              </Icon>
               <span className="nlds-guideline__title">{guidelineLabel['do']}</span>
             </Paragraph>
             <Paragraph>{title}</Paragraph>
