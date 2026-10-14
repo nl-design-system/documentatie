@@ -96,6 +96,18 @@
     "icalLink": "/dsweek-2026/javier-cuello.ics"
   },
   {
+    "uuid": "45b2c5ee-4176-4752-b440-dfb16e7f14d3",
+    "isoDateTime": "2026-10-29T10:00:00.000Z",
+    "speakers": ["JeffreyGeleijn"],
+    "subject": "Achter de schermen bij het design system van HVC",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": null,
+    "icalLink": "/dsweek-2026/jeffrey-geleijn.ics"
+  },
+  {
     "uuid": "aec41135-5d58-404d-a427-47dcb6730b20",
     "isoDateTime": "2026-10-29T12:00:00.000Z",
     "speakers": ["EirikBacker"],
