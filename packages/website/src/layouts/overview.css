@@ -96,3 +96,12 @@
     grid-template-rows: auto auto 1fr;
   }
 }
+
+@media (forced-colors: active) and (--x-large-down) {
+  /* In forced colors mode, make a clear separation between the table of contents and the main content */
+  .ma-table-of-contents__content {
+    border-color: currentColor;
+    border-style: solid;
+    border-width: 1px;
+  }
+}
