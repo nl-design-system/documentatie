@@ -46,6 +46,8 @@ jobs:
 
       - name: "Continuous Integration: build"
         run: pnpm run --if-present build
+        env:
+          ASTRO_BASE_URL: "https://nldesignsystem.nl/private/next/"
 
       - name: "Continuous Integration: test"
         run: pnpm run --if-present test
