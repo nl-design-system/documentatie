@@ -1,5 +1,5 @@
 import { useEffect, useState, type ButtonHTMLAttributes } from 'react';
-import { IconCopy } from '@tabler/icons-react';
+import { IconCopy } from '@components/functional-icon';
 import { Button } from '@utrecht/component-library-react/dist/css-module';
 import { Icon } from '@utrecht/component-library-react';
 

@@ -1,5 +1,5 @@
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
-import { IconChevronRight } from '@tabler/icons-react';
+import { IconChevronRight } from '@components/functional-icon';
 
 const representativeSample = [
   { label: 'Homepage', href: '/' },

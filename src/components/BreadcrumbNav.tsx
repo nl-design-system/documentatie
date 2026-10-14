@@ -1,7 +1,7 @@
 import { Link } from '@site/src/components/Link';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { IconChevronLeft } from '@tabler/icons-react';
+import { IconChevronLeft } from '@components/functional-icon';
 import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,

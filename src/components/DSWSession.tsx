@@ -1,4 +1,4 @@
-import { IconCalendarEvent } from '@tabler/icons-react';
+import { IconCalendarEvent } from '@components/functional-icon';
 import { ButtonLink, Heading, Icon, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';

@@ -1,4 +1,4 @@
-import { IconCalendarEvent, IconUser } from '@tabler/icons-react';
+import { IconCalendarEvent, IconUser } from '@components/functional-icon';
 import {
   ButtonLink,
   Icon,

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { Button } from '@components/button/button';
 import { Drawer } from '@utrecht/component-library-react';
-import { IconX, IconMenu2 } from '@tabler/icons-react';
+import { IconX, IconMenu2 } from '@components/functional-icon';
 import { i18n, type I18nLanguages } from '../../i18n';
 import '@utrecht/drawer-css/dist/index.css';
 import './mobile-menu.css';
