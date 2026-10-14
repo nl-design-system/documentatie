@@ -22,6 +22,35 @@ const cspDevConfig: AstroUserConfig = {
   },
 };
 
+const isAbsoluteURL = (arg: unknown): arg is string => {
+  try {
+    return typeof arg === 'string' && new URL(arg) && true;
+  } catch {
+    return false;
+  }
+};
+
+const getCspSource = (arg: string) => {
+  const url = new URL(arg);
+
+  // Exclude username, password and portname, pathname, query and fragment
+  return `${url.protocol}//${url.hostname}`;
+};
+
+// https://vercel.com/docs/environment-variables/system-environment-variables#VERCEL_URL
+const selfHostname =
+  typeof process.env['VERCEL_URL'] === 'string'
+    ? process.env['VERCEL_URL']
+    : isAbsoluteURL(process.env['ASTRO_BASE_URL'])
+      ? getCspSource(process.env['ASTRO_BASE_URL'])
+      : '';
+
+const deploymentPath = isAbsoluteURL(process.env['ASTRO_BASE_URL'])
+  ? new URL(process.env['ASTRO_BASE_URL']).pathname
+  : typeof process.env['ASTRO_BASE_URL'] === 'string'
+    ? process.env['ASTRO_BASE_URL']
+    : '';
+
 const cspConnectSrcSources = ['https://*.algolia.net', 'https://*.algolianet.com', 'https://*.algolia.io'].join(' ');
 
 const cspImgSrcSources = [
@@ -33,18 +62,24 @@ const cspImgSrcSources = [
   'https://www.gebruikercentraal.nl',
   'https://designsystem.gebruikercentraal.nl',
   'https://media.licdn.com',
-].join(' ');
+  selfHostname,
+]
+  .filter(Boolean)
+  .join(' ');
 
 const cspProdConfig: AstroUserConfig = {
   security: {
     csp: {
+      styleDirective: {
+        resources: ["'self'", selfHostname].filter(Boolean),
+      },
       directives: [
-        "base-uri 'self'",
-        `connect-src 'self' ${cspConnectSrcSources} blob: data:`,
-        "default-src 'self'",
-        "font-src 'self'",
-        "form-action 'self' https://nl-design-system.email-provider.eu",
-        "frame-src 'self' https://www.youtube-nocookie.com",
+        `base-uri 'self' ${selfHostname}`,
+        `connect-src 'self' ${selfHostname} ${cspConnectSrcSources} blob: data:`,
+        `default-src 'self' ${selfHostname}`,
+        `font-src 'self' ${selfHostname}`,
+        `form-action 'self' ${selfHostname} https://nl-design-system.email-provider.eu`,
+        `frame-src 'self' ${selfHostname} https://www.youtube-nocookie.com`,
         `img-src 'self' ${cspImgSrcSources} blob: data:`,
         "object-src 'none'",
         'worker-src blob:',
@@ -64,6 +99,7 @@ globalThis.isAstro = true;
 // https://astro.build/config
 export default defineConfig({
   publicDir: '../../static',
+  base: deploymentPath,
 
   build: {
     inlineStylesheets: 'never',
