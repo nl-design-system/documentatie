@@ -1,4 +1,4 @@
-/*! For license information please see 1503e3ad.74dd8f45.js.LICENSE.txt */
+/*! For license information please see 1503e3ad.40387ee9.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [18545],
@@ -389,16 +389,16 @@
   },
   77212(e, n, a) {
    (a.r(n), a.d(n, { assets: () => g, component: () => h, contentTitle: () => d, default: () => x, description: () => c, frontMatter: () => o, issueNumber: () => m, metadata: () => t, title: () => u, toc: () => p }));
-   const t = JSON.parse('{"id":"componenten/form-field-status/index","title":"Form Field Status","description":"Statusmelding over de waarde van een formulierveld, bijvoorbeeld of deze voldoet aan de eisen of het aantal resterende tekens.","source":"@site/docs/componenten/form-field-status/index.mdx","sourceDirName":"componenten/form-field-status","slug":"/form-field-status","permalink":"/form-field-status","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-status/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Form Field Status","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Form Field Status","pagination_label":"Form Field Status","description":"Statusmelding over de waarde van een formulierveld, bijvoorbeeld of deze voldoet aan de eisen of het aantal resterende tekens.","issue_number":425,"slug":"/form-field-status","keywords":["character count","character counter","karakter teller","text limit","password strength indicator","wachtwoord sterkte","requirement","requirement status","checklist","field status","form field status","feedback","field feedback","helper status"]},"sidebar":"componenten","previous":{"title":"Form Field Label Suffix","permalink":"/form-field-label-suffix"},"next":{"title":"Form Navigation","permalink":"/form-navigation"}}');
+   const t = JSON.parse('{"id":"componenten/form-field-status/index","title":"Form Field Status","description":"Statusmelding bij een onderdeel van een formulier die feedback geeft over wat er goed of fout gaat, eventueel met een actie.","source":"@site/docs/componenten/form-field-status/index.mdx","sourceDirName":"componenten/form-field-status","slug":"/form-field-status","permalink":"/form-field-status","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/componenten/form-field-status/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Form Field Status","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Form Field Status","pagination_label":"Form Field Status","description":"Statusmelding bij een onderdeel van een formulier die feedback geeft over wat er goed of fout gaat, eventueel met een actie.","issue_number":425,"slug":"/form-field-status","keywords":["character count","character counter","karakter teller","text limit","password strength indicator","wachtwoord sterkte","requirement","requirement status","checklist","field status","form field status","feedback","field feedback","helper status"]},"sidebar":"componenten","previous":{"title":"Form Field Label Suffix","permalink":"/form-field-label-suffix"},"next":{"title":"Form Navigation","permalink":"/form-navigation"}}');
    var r = a(86070),
     i = a(18439),
     s = a(43306),
     l = a(26877);
-   const o = { title: 'Form Field Status', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Status', pagination_label: 'Form Field Status', description: 'Statusmelding over de waarde van een formulierveld, bijvoorbeeld of deze voldoet aan de eisen of het aantal resterende tekens.', issue_number: 425, slug: '/form-field-status', keywords: ['character count', 'character counter', 'karakter teller', 'text limit', 'password strength indicator', 'wachtwoord sterkte', 'requirement', 'requirement status', 'checklist', 'field status', 'form field status', 'feedback', 'field feedback', 'helper status'] },
+   const o = { title: 'Form Field Status', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Form Field Status', pagination_label: 'Form Field Status', description: 'Statusmelding bij een onderdeel van een formulier die feedback geeft over wat er goed of fout gaat, eventueel met een actie.', issue_number: 425, slug: '/form-field-status', keywords: ['character count', 'character counter', 'karakter teller', 'text limit', 'password strength indicator', 'wachtwoord sterkte', 'requirement', 'requirement status', 'checklist', 'field status', 'form field status', 'feedback', 'field feedback', 'helper status'] },
     d = void 0,
     g = {},
     u = 'Form Field Status',
-    c = 'Statusmelding over de waarde van een formulierveld, bijvoorbeeld of deze voldoet aan de eisen of het aantal resterende tekens.',
+    c = 'Statusmelding bij een onderdeel van een formulier die feedback geeft over wat er goed of fout gaat, eventueel met een actie.',
     m = 425,
     h = s.find((e) => e.number === m),
     p = [
