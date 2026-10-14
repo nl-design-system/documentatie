@@ -1,6 +1,6 @@
 import { Button } from '@components/button/button';
 import { Textbox } from '@utrecht/component-library-react';
-import { IconSearch } from '@tabler/icons-react';
+import { IconSearch } from '@components/functional-icon';
 import { i18n, type I18nLanguages } from '../../i18n';
 import { useEffect, useState, type ChangeEvent, type FormEvent, type FormEventHandler } from 'react';
 import '@utrecht/textbox-css/dist/index.css';

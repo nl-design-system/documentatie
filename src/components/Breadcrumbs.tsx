@@ -2,7 +2,8 @@ import { Link } from '@site/src/components/Link';
 import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
+import { IconChevronLeft, IconSlash } from '@components/functional-icon';
+import { Icon } from '@components/icon/icon';
 import clsx from 'clsx';
 import { Fragment } from 'react';
 import type { HTMLAttributes } from 'react';
@@ -53,7 +54,11 @@ export const Breadcrumbs = ({ breadcrumbs = [], className }: BreadcrumbsProps) =
                   </Link>
                 )}
               </li>
-              {!isLast && <IconSlash className={clsx('breadcrumbs__separator')} />}
+              {!isLast && (
+                <Icon className={clsx('breadcrumbs__separator')}>
+                  <IconSlash />
+                </Icon>
+              )}
             </Fragment>
           );
         })}

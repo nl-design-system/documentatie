@@ -1,4 +1,4 @@
-import { IconMoodHappy, IconMoodSad } from '@tabler/icons-react';
+import { IconMoodHappy, IconMoodSad } from '@components/functional-icon';
 import { Paragraph, Link } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
