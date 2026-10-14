@@ -4,3 +4,14 @@
     color: currentColor;
   }
 }
+
+@media (forced-colors: active) {
+  /* In forced colors mode, make a clear separation between the main content and the page footer content */
+
+  /* TODO: Consider contributing this to the Utrecht Page Footer component */
+  .utrecht-page-footer {
+    border-block-start-color: currentColor;
+    border-block-start-style: solid;
+    border-block-start-width: 1px;
+  }
+}
