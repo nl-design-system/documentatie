@@ -149,5 +149,17 @@
       "nl": "Robin is een toegankelijkheidsspecialist met een achtergrond in front-end development. Hij is afkomstig uit het Verenigd Koninkrijk – waar hij meewerkte aan de start van het GOV.UK Design System – en verhuisde bijna tien jaar geleden naar Zweden; daar was hij op het juiste moment op de juiste plek om te helpen bij de opzet van het IKEA-designsystem. Zijn focus ligt op het zodanig inzetten van ontwerp en technologie dat ze voor iedereen werken, ongeacht individuele behoeften."
     },
     "language": "en"
+  },
+    "JeffreyGeleijn": {
+    "name": "Jeffrey Geleijn",
+    "organisation": "Unc Inc",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-JeffreyGeleijn.png",
+      "alt": "Jeffrey Geleijn"
+    },
+    "description": {
+      "nl": "Jeffrey is Product Design lead bij Unc Inc, waar hij sinds 2016 werkt aan digitale producten voor organisaties als HVC en AHTI. In multidisciplinaire teams brengt hij structuur in het ontwerpproces: hij bouwt toegankelijke design systems en zet zich in om de kloof tussen design en development zo klein mogelijk te maken. Hij denkt graag mee over het grote plaatje, maar wordt net zo blij van de kleinste details."
+    },
+    "language": "nl"
   }
 }
