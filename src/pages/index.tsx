@@ -14,7 +14,7 @@ import {
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react';
-import { IconChevronRight } from '@tabler/icons-react';
+import { IconChevronRight } from '@components/functional-icon';
 import {
   DeveloperSVG,
   DesignerSVG,
