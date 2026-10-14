@@ -1,9 +1,9 @@
 # Community
 
-Voorkomt dubbel werk doordat de ene organisatie beschikbaar maakt wat ze zelf nodig hebben en andere organisaties dit hergebruiken en verbeteren.
+Voorkomt dubbel werk doordat organisaties bouwblokken kunnen bijdragen, hergebruiken en verbeteren voordat deze Hall of Fame zijn.
 
-Community componenten en templates zijn bijgedragen door teams in de community. Deze versie is gebouwd volgens de gedeelde architectuur, maar hoeft niet compleet te zijn.
+Community bouwblokken zijn bijgedragen door teams in de community en is gebouwd volgens de gedeelde architectuur. Teams die een bouwblok gebruiken, helpen het eventueel completer te maken en geven feedback.
 
-Teams die de component of template daarna gebruiken, helpen deze zonodig completer te maken en geven feedback. Uiteindelijk ontstaat zo een versie die op meerdere plekken is gebruikt, getest en verbeterd.
+Zodra een bouwblok op meerdere plekken in de praktijk is gebruikt, getest en van feedback is voorzien vormt deze de basis voor een standaard Hall of Fame component.
 
 [Bekijk alle Community componenten](/componenten/?status=COMMUNITY)
