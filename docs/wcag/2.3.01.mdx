@@ -5,17 +5,26 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.3.1 Drie flitsen of beneden drempelwaarde
 pagination_label: WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde
-description: Maximaal drie flitsen in een seconde.
+description: Niets op de pagina flitst meer dan 3 keer per seconde. Zo kan iedereen de pagina bekijken zonder een epileptische aanval te krijgen.
 slug: 2.3.1
 conformance_level: Niveau A
 keywords:
   - WCAG
-  - A
+  - Niveau A
   - bedienbaar
   - toevallen en fysieke reacties
   - operable
   - seizures and physical reactions
   - three flashes or below threshold
+  - drie flitsen
+  - flitsen
+  - flitsdrempel
+  - rode flits
+  - fotosensitieve epilepsie
+  - epileptische aanval
+  - video
+  - animatie
+  - PEAT
   - non-interferentie
 ---
 
@@ -23,9 +32,8 @@ keywords:
 
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@components/spotlight-section/spotlight-section";
+import { Guideline } from "@site/src/components/Guideline";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.3.1-summary.md";
 
@@ -33,50 +41,76 @@ import Summary from "./summaries/_2.3.1-summary.md";
   {"WCAG-succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-**Let op**: Dit succescriterium kan een bezoeker verhinderen om een pagina te gebruiken. Het is niet mogelijk om een alternatief aan te bieden. Meer informatie hierover is te vinden op de W3-pagina [ Conformiteitseis 5: Non-interferentie.](https://www.w3.org/Translations/WCAG22-nl/#cc5)
+Een flits is een snelle wisseling van licht naar donker en terug. Bij mensen met fotosensitieve epilepsie kan zo'n wisseling een epileptische aanval veroorzaken. Flitsend beeld kan ook migraine, duizeligheid en misselijkheid geven. Een aanval kan sneller komen dan iemand de video kan stoppen. Een pauzeknop is dus geen oplossing: de flits mag er niet zijn.
 
-Zorg ervoor dat een website geen onderdelen bevat met meer dan drie flitsen binnen één seconde. Het tonen van meer dan drie flitsen binnen één seconde kan een epileptische aanval veroorzaken bij gebruikers die hiervoor gevoelig zijn. Dit geldt voor alle onderdelen van de website, zoals animaties, video's en de overgang tussen pagina's.
+Dit geldt voor alles op de pagina. Ook voor een video die je van een andere website insluit, en ook als er naast de flitsende versie een versie zonder flitsen staat.
+
+Flitst iets hooguit 3 keer per seconde, dan hoef je niets te meten. Gaat het sneller, dan kijk je naar 2 grenzen. De eerste is de grootte: alle flitsen die tegelijk te zien zijn, beslaan samen niet meer dan een vlak van 341 bij 256 CSS-pixels. De tweede is de kleur: voor verzadigd rood geldt een aparte grens, want mensen zijn gevoeliger voor rode flitsen dan voor andere kleuren. Die grenzen meet je met een tool.
+
+Er is 1 uitzondering: een fijn, gelijkmatig patroon dat flikkert, zoals beeldruis of een schaakbord met heel kleine vakjes.
+
+## Veelgemaakte fouten
+
+### Een video wisselt snel tussen licht en donker
+
+In een video volgen lichte en donkere beelden elkaar zo snel op dat het beeld flitst. Dat gebeurt bij snelle montage, zoals korte overgangen tussen shots aan het einde van een wervingsvideo. Het gebeurt ook bij wat er gefilmd is: vlammen, lichtflitsen van een camera, podiumlicht, of voorwerpen die snel door een fel verlicht beeld gaan. Wie gevoelig is voor flitsen, kan een aanval krijgen zodra de video op dat punt komt. Staat dezelfde video op meerdere pagina's, dan geldt het probleem op al die pagina's.
+
+**Hoe te testen:** bekijk de hele video op volledig scherm. Zie je ergens beelden die meer dan 3 keer per seconde wisselen tussen licht en donker? Controleer dat stuk dan met een tool die flitsen meet.
+
+<Guideline appearance="dont" title="Video met overgangen die meer dan 3 keer per seconde flitsen">
+  Een video eindigt met een reeks shots van een halve seconde of korter, afgewisseld met een wit beeld. Het beeld
+  wisselt meer dan 3 keer per seconde tussen licht en donker, over het hele scherm.
+</Guideline>
+
+<Guideline appearance="do" title="Video zonder flitsende overgangen">
+  Dezelfde video eindigt met rustige overgangen. Het beeld wisselt niet meer dan 3 keer per seconde tussen licht en
+  donker.
+</Guideline>
+
+**Wie kan dit oplossen:** de maker van de video past de montage aan. Die haalt de flitsende overgangen weg, of knipt de scènes met snel wisselend licht eruit. Kan een scène niet weg, dan maakt de maker het flitsende deel zo klein dat het onder de grens blijft, of brengt het aantal flitsen terug tot hooguit 3 per seconde. Een contentbeheerder zet de video pas online als die is gecontroleerd.
+
+Dit geldt ook voor een video van een andere partij die je op de pagina insluit. Wisselt de inhoud daarvan, zoals bij een nieuwspagina, dan controleer je elke nieuwe video.
 
 ## Hoe te testen
 
-- Bekijk op elke pagina of er flitsen aanwezig zijn.
-- Mocht er inhoud zijn die flitst, kijk of deze binnen de eisen valt. [PEAT](#bronnen-en-tools) kan hiervoor gebruikt worden.
+### Voor iedereen
 
-## Tips
+1. Zoek alles op de pagina dat beweegt: video's, animaties, bewegende afbeeldingen en banners.
+2. Bekijk elke video helemaal, van begin tot eind. Een flitsend stuk kan ook halverwege of aan het einde zitten.
+3. Bekijk een video op het grootste formaat waarop een bezoeker hem kan zien. Kan de video op volledig scherm, test hem dan op volledig scherm. Hoe groter het beeld, hoe groter het flitsende vlak.
+4. Laat een bewegende afbeelding die zich herhaalt een paar keer achter elkaar afspelen. Test hem terwijl hij herhaalt.
+5. Tel hoe vaak het beeld per seconde wisselt tussen licht en donker, of tussen verzadigd rood en een andere kleur. Is dat meer dan 3 keer, geef het dan door aan iemand die het met een tool kan meten.
 
-- Dit succescriterium kan falen op onverwachtse momenten. Probeer ook te testen wat er gebeurt als een onderdeel niet of traag laadt. Dit kan zorgen voor flitsen.
-- Er is in de officiële richtlijn een uitzondering voor flitsen die erg klein zijn.
-- Epilepsie kan niet alleen door flitsen veroorzaakt worden, maar ook door statische afbeeldingen en patronen. Denk bijvoorbeeld aan een strepenpatroon dat afwisselend zwart en wit is, waar langs gescrolld word. Dit kan ervaren worden als flitsen. De pagina [<span lang="en">Web accessibility for seizures and physical reactions</span>](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Seizure_disorders) van MDN gaat hier dieper op in.
-- Denk bij het controleren van bewegend beeld ook aan [WCAG-succescriterium 2.2.2 Pauzeren, stoppen verbergen](/wcag/2.2.2) dat aansluit bij dit succescriterium.
+### Voor developers
+
+1. Controleer animaties die je zelf maakt met CSS of JavaScript. Laat geen onderdeel meer dan 3 keer per seconde wisselen tussen licht en donker. Een animatie van 1 wisseling heen en terug die korter duurt dan 333 milliseconden en zich herhaalt, flitst al te vaak.
+2. Meet video's en animaties die sneller wisselen met een tool, zoals PEAT van het Trace Center. PEAT staat voor <span lang="en">Photosensitive Epilepsy Analysis Tool</span>. Die tool controleert de algemene flitsgrens en de grens voor rode flitsen.
+3. Moet een flitsend deel blijven, controleer dan de grootte. Alle flitsen die tegelijk in beeld zijn, passen samen in een vlak van 341 bij 256 CSS-pixels, gemeten op volledig scherm.
+4. Controleer video's en animaties van andere partijen die je insluit op dezelfde manier als je eigen content.
+
+## Gerelateerde succescriteria
+
+- [2.2.2 Pauzeren, stoppen, verbergen](/wcag/2.2.2/): gaat over content die knippert of beweegt en die je moet kunnen stoppen. Knippert iets sneller dan 3 keer per seconde, dan telt het als flits en is stoppen niet genoeg.
 
 ## Gerelateerde NL Design System-richtlijnen
 
 - Content: [Flitsen in video](/richtlijnen/content/video/flitsen).
 
+## Relevante bronnen
+
+- [<span lang="en">Photosensitive Epilepsy Analysis Tool (PEAT)</span>](https://trace.umd.edu/peat/): gebruik de tool van het Trace Center om video's en animaties te controleren op flitsen (Engels).
+
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## Bronnen en tools
+## W3C-referenties
 
-- [<span lang="en">Photosensitive Epilepsy Analysis Tool (PEAT)</span>](https://trace.umd.edu/peat/)
-
-## W3C referenties
-
-- Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.3.1 Three Flashes or Below Threshold</span>](https://www.w3.org/TR/WCAG22/#three-flashes-or-below-threshold).
-- Nederlandse vertaling van het WCAG-succescriterium: [2.3.1 Drie flitsen of beneden drempelwaarde](https://www.w3.org/Translations/WCAG22-nl/#three-flashes-or-below-threshold).
-- Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.3.1 Three Flashes or Below Threshold</span>](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold).
-- Engelstalige toelichting: [<span lang="en">Understanding SC 2.3.1 Three Flashes or Below Threshold</span>](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
+- [WCAG 2.2: Succescriterium 2.3.1 Drie flitsen of beneden drempelwaarde](https://www.w3.org/Translations/WCAG22-nl/#three-flashes-or-below-threshold): de officiële Nederlandstalige vertaling van het succescriterium, met de definitie van de flitsgrenzen. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 2.3.1: Three Flashes or Below Threshold</span>](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html): de W3C-uitleg bij het succescriterium, met de berekening van de grenzen en de technieken om te meten (Engels).
+- [<span lang="en">Quick Reference 2.3.1 Three Flashes or Below Threshold</span>](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold): snelreferentie met technieken (Engels).
 
 ## Help richtlijn verbeteren
 
