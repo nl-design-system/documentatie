@@ -1,5 +1,11 @@
 # @nl-design-system-unstable/documentation
 
+## 2.1.0
+
+### Minor Changes
+
+- e02016c: Baseline oktober 2026.
+
 ## 2.0.0
 
 ### Major Changes
