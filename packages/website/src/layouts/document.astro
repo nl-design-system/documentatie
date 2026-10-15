@@ -6,6 +6,7 @@ import { PageFooter } from '@components/page-footer/page-footer';
 import { NavBar } from '@components/nav-bar/nav-bar';
 import { PageLayout } from '@components/page-layout/page-layout';
 import { SkipLink } from '@components/skip-link/skip-link.tsx';
+import { NavigationLandmark } from '@components/navigation-landmark';
 import { NavList } from '@components/nav-list/nav-list';
 import { NavListLink } from '@components/nav-list/nav-list';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
@@ -177,8 +178,7 @@ const footerNavigationItems = [
     <PageLayout>
       <PageHeader lang={lang} />
       <NavBar>
-        <nav aria-labelledby="hoofdnavigatie-label">
-          <h2 hidden id="hoofdnavigatie-label">{i18n[lang].mainNavLabel}</h2>
+        <NavigationLandmark heading={i18n[lang].mainNavLabel} headingId="main-navigation-label" headingLevel={2}>
           <NavList>
             {
               mainNavigationItems.map(({ href, label, expanded, current, lang }) => (
@@ -188,14 +188,13 @@ const footerNavigationItems = [
               ))
             }
           </NavList>
-        </nav>
+        </NavigationLandmark>
       </NavBar>
 
       <slot />
 
       <PageFooter>
-        <nav aria-labelledby="site-navigatie-label">
-          <h2 hidden id="site-navigatie-label">{i18n[lang].footerNavLabel}</h2>
+        <NavigationLandmark heading={i18n[lang].footerNavLabel} headingId="site-navigatie-label" headingLevel={2}>
           <LinkList>
             {
               footerNavigationItems.map(({ href, label, lang }) => (
@@ -208,7 +207,7 @@ const footerNavigationItems = [
               ))
             }
           </LinkList>
-        </nav>
+        </NavigationLandmark>
       </PageFooter>
     </PageLayout>
 
