@@ -1,4 +1,4 @@
-import { IconSearch } from '@tabler/icons-react';
+import { IconSearch } from '@components/functional-icon';
 import '@nl-design-system-candidate/button-css/button.css';
 import { i18n, type I18nLanguages } from '../../i18n';
 

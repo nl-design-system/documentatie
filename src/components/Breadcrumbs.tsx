@@ -2,7 +2,7 @@ import { Link } from '@site/src/components/Link';
 import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { IconChevronLeft, IconSlash } from '@tabler/icons-react';
+import { IconChevronLeft, IconSlash } from '@components/functional-icon';
 import clsx from 'clsx';
 import { Fragment } from 'react';
 import type { HTMLAttributes } from 'react';

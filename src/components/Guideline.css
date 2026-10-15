@@ -39,8 +39,9 @@ p + .nlds-guideline {
 }
 
 .nlds-guideline__icon {
-  block-size: 20px;
-  inline-size: 20px;
+  --utrecht-icon-color: currentColor;
+  --utrecht-icon-size: 20px;
+
   margin-inline-end: 8px;
   vertical-align: middle;
 }
