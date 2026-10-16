@@ -15,7 +15,7 @@ index bf4f654bb6f5326222f5eaa9039d91a3354203a1..de16935266ea7093050fe5a6760173cd
 -export declare const SideNavigation: ({ items, openLabel, closeLabel }: SideNavigationProps) => React.JSX.Element;
 +export declare const SideNavigation: (props: SideNavigationProps) => React.JSX.Element;
 diff --git a/dist/cjs/index.js b/dist/cjs/index.js
-index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..ab8cf0800df197f0bddd979593417357b985f2c8 100644
+index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..1dffac9a22dc5b2e2f7db3b46a5a7db33b4d6346 100644
 --- a/dist/cjs/index.js
 +++ b/dist/cjs/index.js
 @@ -1,20 +1,6 @@
@@ -40,7 +40,7 @@ index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..ab8cf0800df197f0bddd979593417357
          }/******************************************************************************
  Copyright (c) Microsoft Corporation.
  
-@@ -106,7 +92,7 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
+@@ -106,16 +92,16 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
      };
      return (React.createElement(SideNavigationItem, null,
          React.createElement("span", { className: "denhaag-side-navigation__tree-item-label-wrapper" },
@@ -49,11 +49,12 @@ index fe502fcbc43ace133c9d99297dd8dfcf38a3bc09..ab8cf0800df197f0bddd979593417357
                  props.icon,
                  props.counter && props.counter > 0 ? (React.createElement(SideNavigationLinkLabel, null,
                      props.label,
-@@ -114,8 +100,8 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
+                     React.createElement(numberBadge.NumberBadge, null, props.counter))) : (props.label)),
              ((_a = props.items) === null || _a === void 0 ? void 0 : _a.length) && (React.createElement(React.Fragment, null,
                  React.createElement(SideNavigationExpandSeparator, null),
-                 React.createElement(SideNavigationExpandButton, { ref: toggleRef, onClick: togglePanel, "aria-label": "".concat(isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open', " submenu ").concat(props.label), "aria-expanded": isExpanded, onKeyDown: handleEscapeOnToggle })))),
+-                React.createElement(SideNavigationExpandButton, { ref: toggleRef, onClick: togglePanel, "aria-label": "".concat(isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open', " submenu ").concat(props.label), "aria-expanded": isExpanded, onKeyDown: handleEscapeOnToggle })))),
 -        ((_b = props.items) === null || _b === void 0 ? void 0 : _b.length) && isExpanded && (React.createElement(SideNavigationList, { id: id }, props.items.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { closeParent: closePanel }))); })))));
++                React.createElement(SideNavigationExpandButton, { ref: toggleRef, onClick: togglePanel, "aria-label": "".concat(isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open', " submenu"), "aria-expanded": isExpanded, onKeyDown: handleEscapeOnToggle })))),
 +        ((_b = props.items) === null || _b === void 0 ? void 0 : _b.length) && isExpanded && (React.createElement(SideNavigationList, { id: id }, props.items.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { closeParent: closePanel, openLabel: props.openLabel, closeLabel: props.closeLabel }))); })))));
  };var SideNavigation = function (_a) {
 -    var items = _a.items, openLabel = _a.openLabel, closeLabel = _a.closeLabel;
@@ -78,7 +79,7 @@ index bf4f654bb6f5326222f5eaa9039d91a3354203a1..de16935266ea7093050fe5a6760173cd
 -export declare const SideNavigation: ({ items, openLabel, closeLabel }: SideNavigationProps) => React.JSX.Element;
 +export declare const SideNavigation: (props: SideNavigationProps) => React.JSX.Element;
 diff --git a/dist/mjs/index.js b/dist/mjs/index.js
-index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..ef7dad562f4f8e3c91c5b1b7f1b6e0742fee911b 100644
+index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..92c3612c1e00bdf1f45f3abf3ca75ba9e8247369 100644
 --- a/dist/mjs/index.js
 +++ b/dist/mjs/index.js
 @@ -1,20 +1,6 @@
@@ -103,7 +104,7 @@ index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..ef7dad562f4f8e3c91c5b1b7f1b6e074
          }/******************************************************************************
  Copyright (c) Microsoft Corporation.
  
-@@ -106,7 +92,7 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
+@@ -106,16 +92,16 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
      };
      return (React.createElement(SideNavigationItem, null,
          React.createElement("span", { className: "denhaag-side-navigation__tree-item-label-wrapper" },
@@ -112,11 +113,12 @@ index 12607aa888987a5d93dc1cf1a2ee835f49347f0d..ef7dad562f4f8e3c91c5b1b7f1b6e074
                  props.icon,
                  props.counter && props.counter > 0 ? (React.createElement(SideNavigationLinkLabel, null,
                      props.label,
-@@ -114,8 +100,8 @@ SideNavigationExpandButton.displayName = 'SideNavigationExpandButton';var SideNa
+                     React.createElement(NumberBadge, null, props.counter))) : (props.label)),
              ((_a = props.items) === null || _a === void 0 ? void 0 : _a.length) && (React.createElement(React.Fragment, null,
                  React.createElement(SideNavigationExpandSeparator, null),
-                 React.createElement(SideNavigationExpandButton, { ref: toggleRef, onClick: togglePanel, "aria-label": "".concat(isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open', " submenu ").concat(props.label), "aria-expanded": isExpanded, onKeyDown: handleEscapeOnToggle })))),
+-                React.createElement(SideNavigationExpandButton, { ref: toggleRef, onClick: togglePanel, "aria-label": "".concat(isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open', " submenu ").concat(props.label), "aria-expanded": isExpanded, onKeyDown: handleEscapeOnToggle })))),
 -        ((_b = props.items) === null || _b === void 0 ? void 0 : _b.length) && isExpanded && (React.createElement(SideNavigationList, { id: id }, props.items.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { closeParent: closePanel }))); })))));
++                React.createElement(SideNavigationExpandButton, { ref: toggleRef, onClick: togglePanel, "aria-label": "".concat(isExpanded ? props.closeLabel || 'Sluit' : props.openLabel || 'Open', " submenu"), "aria-expanded": isExpanded, onKeyDown: handleEscapeOnToggle })))),
 +        ((_b = props.items) === null || _b === void 0 ? void 0 : _b.length) && isExpanded && (React.createElement(SideNavigationList, { id: id }, props.items.map(function (subItem, subIndex) { return (React.createElement(SideNavigationTreeItem, __assign({ key: subIndex }, subItem, { closeParent: closePanel, openLabel: props.openLabel, closeLabel: props.closeLabel }))); })))));
  };var SideNavigation = function (_a) {
 -    var items = _a.items, openLabel = _a.openLabel, closeLabel = _a.closeLabel;
