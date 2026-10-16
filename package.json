@@ -72,6 +72,7 @@
     "test-csp": "playwright test test/csp/",
     "test-content": "playwright test test/docs/",
     "test-unlisted-pages": "playwright test test/e2e/unlisted-pages.spec.ts",
+    "test-lighthouse": "lhci autorun",
     "publish:argos": "argos upload ./tmp/screenshots",
     "test-update": "npm-run-all --sequential clean lint build",
     "test": "npm-run-all test:**",
