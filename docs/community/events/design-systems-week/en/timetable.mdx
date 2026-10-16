@@ -18,6 +18,7 @@ import { ButtonLink } from "@site/src/components/ButtonLink";
 import { ActionGroup } from "@components/action-group/action-group";
 import { Link } from "@components/link/link";
 import { Paragraph } from "@components/paragraph/paragraph";
+import { Icon } from "@components/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../\_2026/sessions.json";
 import speakers from "../\_2026/speakers.json";
@@ -37,7 +38,9 @@ import settings from "../settings.json";
 <ActionGroup>
   <ButtonLink href="/events/design-systems-week/en" appearance="primary-action">
     {"About Design Systems Week"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
@@ -48,12 +51,16 @@ import settings from "../settings.json";
 <ActionGroup>
   <ButtonLink href={`/events/design-systems-week-${settings.year}/en/program`} appearance="primary-action">
     {"See the program"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
   {!!settings.miro && (
     <ButtonLink href={settings.miro} appearance="secondary-action">
       {"Use Miro"}
-      <IconChevronRight slot="icon-end" />
+      <Icon slot="icon-end">
+        <IconChevronRight />
+      </Icon>
     </ButtonLink>
   )}
 </ActionGroup>
@@ -69,35 +76,37 @@ import settings from "../settings.json";
 
 </>)}
 
+All times listed are Netherlands local time (CET/CEST).
+
 {/* Vul in per dag */}
 
-## Monday, October 26
-
 <SessionTable
+  heading="Monday, October 26"
+  headingLevel={2}
   year={settings.year}
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-26`))}
 />
 
-## Tuesday, October 27
-
 <SessionTable
+  heading="Tuesday, October 27"
+  headingLevel={2}
   year={settings.year}
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-27`))}
 />
 
-## Wednesday, October 28
-
 <SessionTable
+  heading="Wednesday, October 28"
+  headingLevel={2}
   year={settings.year}
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-28`))}
 />
 
-## Thursday, October 29
-
 <SessionTable
+  heading="Thursday, October 29"
+  headingLevel={2}
   year={settings.year}
   speakers={speakers}
   sessions={sessions.filter(({ isoDateTime }) => isoDateTime.startsWith(`${settings.year}-10-29`))}

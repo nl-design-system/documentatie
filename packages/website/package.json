@@ -28,8 +28,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@amsterdam/design-system-css": "4.1.0",
-    "@amsterdam/design-system-react": "4.1.0",
+    "@amsterdam/design-system-css": "4.4.0",
+    "@amsterdam/design-system-react": "4.4.0",
     "@fontsource/fira-code": "5.2.7",
     "@fontsource/fira-sans": "5.2.7",
     "@fontsource/source-sans-pro": "5.2.5",
@@ -52,7 +52,7 @@
     "@nl-design-system-candidate/paragraph-react": "2.2.2",
     "@nl-design-system-candidate/skip-link-css": "1.0.5",
     "@nl-design-system-candidate/skip-link-react": "1.1.7",
-    "@nl-design-system-community/ma-design-tokens": "8.1.0",
+    "@nl-design-system-community/ma-design-tokens": "9.0.0",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "14.0.1",
     "@rijkshuisstijl-community/card-css": "1.0.0",
     "@rijkshuisstijl-community/card-react": "1.0.0",
@@ -100,7 +100,12 @@
     "color": "5.0.3",
     "dompurify": "3.4.11",
     "hast": "1.0.0",
-    "invokers-polyfill": "1.0.3"
+    "invokers-polyfill": "1.0.3",
+    "rehype-raw": "7.0.0",
+    "remark-gfm": "4.0.1",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.1.2",
+    "remark-smartypants": "3.0.3"
   },
   "devDependencies": {
     "@astrojs/markdown-remark": "7.3.0",
@@ -139,9 +144,9 @@
     "remark": "15.0.1",
     "remark-custom-header-id": "1.0.0",
     "remark-directive": "4.0.0",
+    "tsx": "4.21.0",
     "unified": "11.0.5",
     "vfile": "6.0.3",
-    "tsx": "4.21.0",
     "vitest": "4.1.10"
   }
 }

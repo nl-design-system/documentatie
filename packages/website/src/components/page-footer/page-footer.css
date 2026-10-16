@@ -1,6 +1,7 @@
 .utrecht-page-footer {
-  .utrecht-icon,
-  .utrecht-link {
+  --utrecht-link-focus-color: var(--basis-focus-color);
+
+  .utrecht-icon {
     color: currentColor;
   }
 }

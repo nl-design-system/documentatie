@@ -16,6 +16,7 @@ image_alt: NL Design System Design Systems Week 2026 26-29 Oktober, online
 import { ButtonLink } from "@site/src/components/ButtonLink";
 import { ActionGroup } from "@components/action-group/action-group";
 import { Paragraph } from "@components/paragraph/paragraph";
+import { Icon } from "@components/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "./\_2026/sessions.json";
 import speakers from "./\_2026/speakers.json";
@@ -33,12 +34,16 @@ import settings from "./settings.json";
 <ActionGroup>
   <ButtonLink href={`/events/design-systems-week-${settings.year}/tijdschema`} appearance="primary-action">
     {"Bekijk het tijdschema"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
   {!!settings.miro && (
     <ButtonLink href={settings.miro} appearance="secondary-action">
       {"Gebruik Miro"}
-      <IconChevronRight slot="icon-end" />
+      <Icon slot="icon-end">
+        <IconChevronRight />
+      </Icon>
     </ButtonLink>
   )}
 </ActionGroup>

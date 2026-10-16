@@ -10,6 +10,7 @@ slug: /events/rijkshuisstijl-community-open-hour
 ---
 
 import { ButtonLink } from "@site/src/components/ButtonLink";
+import { Icon } from "@components/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
 import { ActionGroup } from "@components/action-group/action-group";
 
@@ -39,10 +40,16 @@ Door je aan te melden voor de Rijkshuisstijl Community kunnen wij je op de hoogt
 
 <ActionGroup>
   <ButtonLink href="/community/community-sprints/rijkshuisstijl-community/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight slot="icon-end" />
+    {"Meld je aan"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
   <ButtonLink href="/slack/" appearance="secondary-action">
-    {"Doe mee op Slack"} <IconChevronRight slot="icon-end" />
+    {"Doe mee op Slack"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
@@ -54,7 +61,10 @@ Organisaties van de centrale overheid van Nederland (bijvoorbeeld: Belastingdien
 
 <ActionGroup>
   <ButtonLink href="/community/community-sprints/rijkshuisstijl-community" appearance="primary-action">
-    {"Lees meer over de Rijkshuisstijl Community"} <IconChevronRight slot="icon-end" />
+    {"Lees meer over de Rijkshuisstijl Community"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 

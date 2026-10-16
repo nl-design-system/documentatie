@@ -6,8 +6,9 @@ import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
 import { UnorderedList } from '@components/unordered-list/unordered-list';
-import { Strong } from '@components/strong/strong';
+import { Bold } from '@components/bold/bold';
 import { ButtonLink } from '@components/button-link/button-link';
+import { Icon } from '@components/icon/icon';
 import { ActionGroup } from '@components/action-group/action-group';
 import { Image } from '@components/image/image';
 import { Card } from '@components/card/card';
@@ -56,16 +57,16 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
       <Heading level={2}>Waarom meedoen?</Heading>
       <UnorderedList>
         <UnorderedList.Item>
-          <Strong>Actieve community</Strong> die regelmatig kennis, ervaring en componenten deelt
+          <Bold>Actieve community</Bold> die regelmatig kennis, ervaring en componenten deelt
         </UnorderedList.Item>
         <UnorderedList.Item>
-          <Strong>Groeiende bibliotheek</Strong> gebaseerd op gebruikersonderzoek en praktijkervaring
+          <Bold>Groeiende bibliotheek</Bold> gebaseerd op gebruikersonderzoek en praktijkervaring
         </UnorderedList.Item>
         <UnorderedList.Item>
-          <Strong>Open source oplossingen</Strong> waar iedereen componenten kan gebruiken en bijdragen
+          <Bold>Open source oplossingen</Bold> waar iedereen componenten kan gebruiken en bijdragen
         </UnorderedList.Item>
         <UnorderedList.Item>
-          <Strong>Deelnemen op het niveau dat past</Strong>, stap voor stap, zonder licentiekosten
+          <Bold>Deelnemen op het niveau dat past</Bold>, stap voor stap, zonder licentiekosten
         </UnorderedList.Item>
       </UnorderedList>
       <ActionGroup>
@@ -93,7 +94,9 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         description="Meedoen met code? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Storybook en design tokens."
         href="/handboek/developer/introductie/"
       >
-        <DeveloperSVG slot="image" />
+        <Icon slot="image">
+          <DeveloperSVG />
+        </Icon>
       </Card>
     </Grid.Cell>
     <Grid.Cell span={6}>
@@ -103,7 +106,9 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         description="Meedoen met Figma? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
         href="/handboek/designer/introductie/"
       >
-        <DesignerSVG slot="image" />
+        <Icon slot="image">
+          <DesignerSVG />
+        </Icon>
       </Card>
     </Grid.Cell>
     <Grid.Cell span={6}>
@@ -113,7 +118,9 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         description="Meedoen als contentmaker? Gebruik vandaag nog onze content richtlijnen bij het maken van toegankelijke webcontent."
         href="/richtlijnen/content/"
       >
-        <ContentSVG slot="image" />
+        <Icon slot="image">
+          <ContentSVG />
+        </Icon>
       </Card>
     </Grid.Cell>
     <Grid.Cell span={6}>
@@ -123,7 +130,9 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         description="Meedoen als manager? Herbruikbare oplossingen die tijd en budget besparen, met business cases en implementatiestrategieën"
         href="/handboek/manager/introductie/"
       >
-        <ManagerSVG slot="image" />
+        <Icon slot="image">
+          <ManagerSVG />
+        </Icon>
       </Card>
     </Grid.Cell>
   </Grid>
@@ -136,11 +145,15 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
       <ActionGroup>
         <ButtonLink href="/events/heartbeat/aanmelden/" purpose="primary">
           Meld je aan voor de Heartbeat
-          <IconChevronRight slot="iconEnd" />
+          <Icon slot="iconEnd">
+            <IconChevronRight />
+          </Icon>
         </ButtonLink>
         <ButtonLink href="/events/heartbeat/videos/" purpose="secondary">
           Bekijk andere Heartbeats
-          <IconChevronRight slot="iconEnd" />
+          <Icon slot="iconEnd">
+            <IconChevronRight />
+          </Icon>
         </ButtonLink>
       </ActionGroup>
     </Grid.Cell>
@@ -158,7 +171,9 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         description="Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen."
         href="/richtlijnen/"
       >
-        <GuidelineSVG slot="image" />
+        <Icon slot="image">
+          <GuidelineSVG />
+        </Icon>
       </Card>
     </Grid.Cell>
     <Grid.Cell span={6}>
@@ -168,7 +183,9 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         description="Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer."
         href="/componenten/"
       >
-        <ComponentSVG slot="image" />
+        <Icon slot="image">
+          <ComponentSVG />
+        </Icon>
       </Card>
     </Grid.Cell>
     <Grid.Cell span={6}>
@@ -178,7 +195,9 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         description="Een overzicht van patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te lossen."
         href="/voorbeelden/"
       >
-        <ExamplesSVG slot="image" />
+        <Icon slot="image">
+          <ExamplesSVG />
+        </Icon>
       </Card>
     </Grid.Cell>
     <Grid.Cell span={6}>
@@ -188,7 +207,9 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         description="NL Design System verzamelt en publiceert gebruikersonderzoeken en faciliteert de community om samen te werken aan nieuwe onderzoeken."
         href="/voorbeelden/onderzoek/"
       >
-        <UserResearchSVG slot="image" />
+        <Icon slot="image">
+          <UserResearchSVG slot="image" aria-hidden="true" />
+        </Icon>
       </Card>
     </Grid.Cell>
   </Grid>
@@ -263,7 +284,7 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
         <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/lux">
           <Image
             src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.png"
-            alt="Logius logo, naar LUX op GitHub"
+            alt="Logius (Ministerie van Binnenlandse Zaken en Koninkrijksrelaties) logo, naar LUX op GitHub"
           />
         </Link>
       </Card>
