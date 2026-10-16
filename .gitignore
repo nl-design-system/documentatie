@@ -9,6 +9,7 @@ dist/
 # Generated files
 .docusaurus
 .cache-loader
+.lighthouseci/
 tmp/
 
 # Misc
