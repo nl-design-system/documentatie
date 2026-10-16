@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.5.2 Aanwijzerannulering
 pagination_label: WCAG-succescriterium 2.5.2 Aanwijzerannulering
-description: Het annuleren van acties die je met een aanwijzer uitvoert is voorspelbaar.
+description: Alles wat je met een muis of een vinger bedient, voert de actie pas uit bij het loslaten. Druk je de verkeerde knop in, dan schuif je weg voor je loslaat en gebeurt er niets.
 slug: 2.5.2
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,28 @@ keywords:
   - operable
   - input modalities
   - pointer cancellation
+  - aanwijzerannulering
+  - down-event
+  - up-event
+  - indrukken
+  - loslaten
+  - onbedoelde activering
+  - annuleren
+  - ongedaan maken
+  - pointerdown
+  - mousedown
+  - touchstart
+  - slepen
+  - WCAG 2.5.2
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@components/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_2.5.2-summary.md";
 
@@ -32,49 +45,106 @@ import Summary from "./summaries/_2.5.2-summary.md";
   {"WCAG-succescriterium 2.5.2 Aanwijzerannulering"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Verminder acties die per ongeluk zijn.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Maak het annuleren van acties voorspelbaar en consistent.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Maakt het voor iedereen gemakkelijker om een actie die per ongeluk was ongedaan te maken.
-    </dd>
-  </div>
-</dl>
-
 ## Uitleg
 
 <Summary />
 
-Voor alle acties die je kunt uitvoeren met een [aanwijzer](/woordenlijst/#aanwijzer), moet één van de volgende dingen kloppen:
+Wie een knop indrukt en dan pas ziet dat het de verkeerde is, kan de actie zo nog afbreken. Dat helpt iedereen die het aanwijspunt niet precies stuurt. Iemand met tremor raakt makkelijk eerst een verkeerde plek. Wie een hoofdstok of oogbesturing gebruikt, of het aanwijspunt met de hand niet stil kan houden, raakt makkelijk de verkeerde knop. Gebeurt de actie al bij het indrukken, dan is er geen weg meer terug en voert de website iets uit wat de bezoeker niet bedoelde.
 
-- De actie wordt niet uitgevoerd door de start van de activering. Bijvoorbeeld: alleen de muisknop indrukken of het scherm aanraken mag nog geen actie uitvoeren.
-- De actie wordt pas uitgevoerd bij het afmaken van de activering. Daarnaast kan de actie afgebroken worden voor het afmaken, of erna ongedaan gemaakt worden. Bijvoorbeeld: je kunt iets verslepen, maar door het item weer los te laten buiten het doelgebied, verschuift het item weer naar zijn oorspronkelijke plek. Een andere optie om iets weer ongedaan te maken, is door bevestiging te vragen ('Weet u zeker dat...?') of door een knop toe te voegen waarmee de actie weer ongedaan gemaakt kan worden.
-- Het afmaken van de activering annuleert de actie aan de start. Bijvoorbeeld: als er iets verschijnt zodra een muisknop ingedrukt wordt, maar dit verdwijnt als de knop losgelaten wordt.
+Voor elke bediening met een enkele [aanwijzer](/woordenlijst/#aanwijzer) geldt minstens één van deze vier dingen:
+
+- Het indrukken voert geen enkel onderdeel van de functie uit.
+- De functie is klaar bij het loslaten, en de bezoeker kan hem afbreken voordat hij klaar is of achteraf ongedaan maken.
+- Het loslaten draait alles terug wat het indrukken in gang zette.
+- Het indrukken is de kern van de functie, en die werkt niet als je op het loslaten wacht.
+
+De HTML-elementen zoals knoppen, links, checkboxes en keuzelijsten doen dit al goed. Een `<button>`, een `<a>`, een `<input type="checkbox">` of een `<select>` voert de actie uit op het loslaten, niet op het indrukken. Het probleem ontstaat vooral bij zelfgemaakte bedieningen, zoals een tab, een menu-item of een schuifregelaar die een developer zelf bouwt en aan het indrukken koppelt. In de code heet het indrukken het `down`-event en het loslaten het `up`-event.
+
+Wachten op het loslaten is niet de enige oplossing. Je kunt de bezoeker de actie laten afbreken voordat die klaar is, of de actie achteraf laten terugdraaien. Bij slepen betekent dat bijvoorbeeld dat je een onderdeel op de oude plek terugzet als de bezoeker loslaat buiten een geldig vak.
+
+Soms moet de actie juist wel meteen bij het indrukken gebeuren, omdat dat de kern van de functie is. Een piano op het scherm speelt de toon op het moment dat je de toets indrukt. Een schermtoetsenbord werkt op dezelfde manier: een letter verschijnt bij het indrukken. Dan is bediening op het indrukken toegestaan.
+
+## Veelgemaakte fouten
+
+### De actie gebeurt al bij het indrukken, niet bij het loslaten
+
+Een zelfgemaakte knop, tab of menu-item voert de actie al uit op het moment dat je hem indrukt. De developer heeft de actie gekoppeld aan het indrukken van de aanwijzer in plaats van aan het loslaten. Wie de verkeerde knop indrukt en dat merkt, kan niet meer wegschuiven om de actie af te breken. Voor iemand met tremor of met een beperkte handfunctie is dat een dagelijks probleem: elke onbedoelde aanraking voert meteen iets uit.
+
+**Hoe te testen:** druk de knop in en let op of er al iets gebeurt. Schuif daarna je vinger of muis van de knop af en laat pas dan los. Blijft het resultaat staan, dan reageert de bediening op het indrukken.
+
+<Guideline appearance="dont" title="Actie gekoppeld aan het indrukken van de aanwijzer">
+
+```html
+<div class="example-button" role="button" tabindex="0">Verwijder account</div>
+```
+
+De volgende code voert de actie al uit zodra de bezoeker de knop indrukt.
+
+```javascript
+button.addEventListener("pointerdown", deleteAccount);
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Button uit HTML die op het loslaten reageert">
+  ```html
+  <button type="button">Verwijder account</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer gebruikt de `<button>` uit HTML, die de actie op het loslaten uitvoert. Moet het toch een zelfgemaakte bediening zijn, dan koppelt de developer de actie aan het loslaten en zorgt dat wegschuiven vóór het loslaten de actie afbreekt.
+
+### Slepen kun je niet afbreken of ongedaan maken
+
+Bij een lijst of bord dat je met slepen op volgorde zet, staat het onderdeel vast zodra je loslaat. Er is geen manier om het slepen halverwege af te breken en er is geen knop om de verplaatsing ongedaan te maken. Wie tijdens het slepen merkt dat het onderdeel naar de verkeerde plek gaat, of het per ongeluk loslaat, kan de fout niet herstellen. Voor iemand die het aanwijspunt niet nauwkeurig stuurt, belandt het onderdeel zo op een plek die niet klopt.
+
+**Hoe te testen:** begin met slepen en laat los buiten een geldig vak. Gaat het onderdeel terug naar de oude plek? Of staat er na het loslaten een knop om de verplaatsing ongedaan te maken?
+
+<Guideline appearance="dont" title="Verplaatsing is definitief zodra je loslaat">
+
+De volgende code legt het onderdeel vast op de plek waar de bezoeker loslaat, zonder een manier om dat terug te draaien.
+
+```javascript
+item.addEventListener("pointerup", moveItem);
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Een knop om de verplaatsing ongedaan te maken">
+  ```html
+  <button type="button">Verplaatsing ongedaan maken</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer zet het onderdeel terug op de oude plek als de bezoeker loslaat buiten een geldig vak, of voegt een knop toe om de laatste verplaatsing ongedaan te maken.
 
 ## Hoe te testen
 
-Voor alle acties die met een aanwijzer uit te voeren zijn, test of een van de volgende dingen klopt:
+### Voor iedereen
 
-- De actie wordt niet uitgevoerd aan de start van de activering.
-- De actie wordt pas gedaan bij het afmaken van de activering en kan afgebroken worden.
-- De actie wordt pas gedaan bij het afmaken van de activering en kan erna ongedaan gemaakt worden.
-- De actie wordt uitgevoerd bij de start van de activering, maar het einde annuleert deze weer.
+1. Druk knoppen, tabs en menu-items in en kijk of er al iets gebeurt voordat je loslaat. Schuif daarna je vinger of muis van de knop af en laat pas dan los. Blijft alles zoals het was, dan reageert de bediening op het loslaten.
+2. Zoek naar onderdelen die je met slepen verplaatst. Kun je het slepen afbreken door buiten een geldig vak los te laten, of de verplaatsing achteraf ongedaan maken?
+3. Laat bedieningen waarbij het indrukken zelf de taak is buiten beschouwing, zoals een piano of een toetsenbord op het scherm. Daar mag de actie op het indrukken gebeuren.
 
-Bij acties kun je aan veel interactieve onderdelen denken. Deze kunnen relatief simpel zijn, zoals links en buttons, maar ook ingewikkelder zoals sliders en patronen voor drag-and-drop.
+### Voor developers
 
-## Tips
+1. Zoek in de code naar `pointerdown`, `mousedown` en `touchstart` die een actie uitvoeren. Verplaats die actie naar het loslaten met `pointerup`, `mouseup` of `touchend`, of gebruik de `<button>` uit HTML die dat al doet.
+2. Controleer per zelfgemaakte bediening of wegschuiven vóór het loslaten de actie afbreekt.
+3. Bied bij slepen een manier om af te breken of ongedaan te maken. Zet het onderdeel terug bij loslaten buiten een geldig vak, of voeg een knop toe om de laatste verplaatsing terug te draaien.
+4. Ga na of het indrukken echt de kern van de functie is, zoals bij een piano of een schermtoetsenbord. Alleen dan mag de actie op het indrukken blijven.
 
-Gebruik het `click`-event. Dit is apparaatonafhankelijk.
+## Gerelateerde succescriteria
+
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): alles wat met een aanwijzer werkt, moet ook met het toetsenbord kunnen. Een `<button>` uit HTML helpt bij beide.
+- [2.5.1 Aanwijzergebaren](/wcag/2.5.1/): gaat over veeg- en knijpgebaren op het scherm. Ook die hebben een bediening met één tik of klik als alternatief nodig.
+- [2.5.4 Bewegingsactivering](/wcag/2.5.4/): gaat over functies die je bedient door het apparaat te bewegen of te schudden. Ook daar wil je een onbedoelde activering voorkomen.
+- [2.5.7 Sleepbewegingen](/wcag/2.5.7/): gaat over bedieningen die je versleept en of daar een alternatief voor is. Bij dit succescriterium gaat het erom dat je een sleepactie kunt afbreken of terugdraaien.
+
+## Gerelateerde NL Design System-richtlijnen
+
+- Component: [Button](/button).
+- Formulieren - Buttons: [Toetsenbordbediening van een button](/richtlijnen/formulieren/buttons/toetsenbordbediening).
+- Formulieren - Buttons: [Duidelijk buttontekst die beschrijft wat de button doet](/richtlijnen/formulieren/buttons/duidelijk-buttontekst).
 
 ## Gebruikersonderzoek
 
@@ -86,12 +156,6 @@ Gebruik het `click`-event. Dit is apparaatonafhankelijk.
 - Nederlandse vertaling van het WCAG-succescriterium: [2.5.2 Aanwijzerannulering](https://www.w3.org/Translations/WCAG22-nl/#pointer-cancellation).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.5.2 Pointer Cancellation</span>](https://www.w3.org/WAI/WCAG22/quickref/#pointer-cancellation).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.5.2 Pointer Cancellation</span>](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
