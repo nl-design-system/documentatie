@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Als de Text Area een tekstueel label heeft, gebruik dan een `label`-element en koppel het met de attributen `for` en `id` aan de Text Area.
+Als de Text Area een zichtbaar label heeft, gebruik dan een `label`-element en koppel het met de attributen `for` en `id` aan de Text Area.
 
 ```html
 <p><label for="example">Ik ben een Text Area</label></p>
