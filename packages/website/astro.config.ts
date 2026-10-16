@@ -14,7 +14,7 @@ import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
 import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inline-directives';
 import { remarkUnwrapParagraph } from './markdown-plugins/remark-unwrap-paragraph';
 import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
-const siteUrl = 'https://nldesignsystem.nl';
+import { siteBaseUrl } from './src/seo.config';
 
 const cspDevConfig: AstroUserConfig = {
   security: {
@@ -38,14 +38,20 @@ const cspImgSrcSources = [
 const cspProdConfig: AstroUserConfig = {
   security: {
     csp: {
+      styleDirective: {
+        resources: ["'self'", siteBaseUrl],
+      },
+      scriptDirective: {
+        resources: ["'self'", siteBaseUrl],
+      },
       directives: [
-        "base-uri 'self'",
-        `connect-src 'self' ${cspConnectSrcSources} blob: data:`,
-        "default-src 'self'",
-        "font-src 'self'",
-        "form-action 'self' https://nl-design-system.email-provider.eu",
-        "frame-src 'self' https://www.youtube-nocookie.com",
-        `img-src 'self' ${cspImgSrcSources} blob: data:`,
+        `base-uri 'self' ${siteBaseUrl}`,
+        `connect-src 'self' ${siteBaseUrl} ${cspConnectSrcSources} blob: data:`,
+        `default-src 'self' ${siteBaseUrl}`,
+        `font-src 'self' ${siteBaseUrl}`,
+        `form-action 'self' ${siteBaseUrl} https://nl-design-system.email-provider.eu`,
+        `frame-src 'self' ${siteBaseUrl} https://www.youtube-nocookie.com`,
+        `img-src 'self' ${siteBaseUrl} ${cspImgSrcSources} blob: data:`,
         "object-src 'none'",
         'worker-src blob:',
       ],
@@ -77,7 +83,7 @@ export default defineConfig({
     csp: cspConfig.security?.csp,
   },
 
-  site: siteUrl,
+  site: siteBaseUrl,
 
   vite: {
     build: {
@@ -124,7 +130,7 @@ export default defineConfig({
     ],
     rehypePlugins: [
       nldsComponentsPlugin,
-      addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
+      addTrailingSlashPlugin({ siteUrl: siteBaseUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
     ],
     syntaxHighlight: 'prism',
   },
@@ -144,7 +150,7 @@ export default defineConfig({
       ],
       rehypePlugins: [
         nldsComponentsPlugin,
-        addTrailingSlashPlugin({ siteUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
+        addTrailingSlashPlugin({ siteUrl: siteBaseUrl, stripOrigin: true, stripExtensions: ['.md', '.mdx'] }),
       ],
       syntaxHighlight: 'prism',
     }),
