@@ -1,0 +1,10 @@
+{
+  "label": "Grootte",
+  "link": {
+    "type": "doc",
+    "id": "richtlijnen/stijl/size/index"
+  },
+  "customProps": {
+    "showLinkedDoc": true
+  }
+}
