@@ -8,6 +8,7 @@
   --ma-layout-side-bar-inline-size: 300px; /* --> Zien we dit als een component of common token? */
   --ma-mobile-menu-max-inline-size: 400px; /* --> Zien we dit als een component of common token? */
   --nl-button-column-gap: var(--basis-space-inline-xs); /* --> Zou een basis.space.text.* token moeten zijn. */
+  --denhaag-side-navigation-list-margin-inline-start: var(--basis-space-inline-lg);
 }
 
 /**
@@ -156,6 +157,10 @@ html .utrecht-link--html-a:any-link:active {
   align-items: center;
 }
 
+.denhaag-side-navigation__list {
+  position: relative;
+}
+
 .denhaag-side-navigation__link {
   box-sizing: border-box;
 
@@ -178,6 +183,11 @@ html .utrecht-link--html-a:any-link:active {
     translate: calc(var(--basis-border-width-lg) * -1);
   }
 }
+
+/* .denhaag-side-navigation__tree-item-label-wrapper:has(~ .denhaag-side-navigation__list [aria-current="page"]) */
+/* > .denhaag-side-navigation__link { */
+/* font-weight: 600; */
+/* } */
 
 .denhaag-side-navigation__link--current {
   /* denhaag.side-navigation.link.current.background-color */
@@ -238,6 +248,8 @@ html .utrecht-link--html-a:any-link:active {
 }
 
 .denhaag-side-navigation__expand-button {
+  min-inline-size: var(--denhaag-side-navigation-expand-button-inline-size);
+
   svg {
     block-size: var(--basis-size-icon-md);
     inline-size: var(--basis-size-icon-md);
@@ -251,6 +263,16 @@ html .utrecht-link--html-a:any-link:active {
   svg {
     transform: rotate(-180deg);
   }
+}
+
+.denhaag-side-navigation__item > .denhaag-side-navigation__list::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  background-color: var(--basis-color-default-border-subtle);
+  left: -4px;
 }
 
 .ams-unordered-list:not(.ams-unordered-list--no-markers) .ams-unordered-list__item {
