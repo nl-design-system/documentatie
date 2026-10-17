@@ -61,4 +61,4 @@ Welke optie je kiest, is afhankelijk van de context. Wat vraag je uit? En wat ga
 
 Lees hierover meer op [Ask users for Dates](https://design-system.service.gov.uk/patterns/dates/) van GOV.UK.
 
-De regel is altijd: Je kunt een ontoegankelijke component aanbieden, mits je ook een goed toegankelijk alternatief aanbiedt.
+Werkt een component niet voor iedereen, bied dan een alternatief dat wel voor iedereen werkt. Let op: een alternatief naast een component dat zelf niet voldoet, maakt de pagina niet conform. WCAG kijkt naar de hele pagina, zie paragraaf [5.2.2 <span lang="en">Full pages</span>](https://www.w3.org/TR/WCAG22/#cc2). Alleen waar een succescriterium het zelf toestaat, zoals de uitzondering <span lang="en">Equivalent</span> bij [succescriterium 2.5.8](/wcag/2.5.8), telt een tweede besturingselement mee.

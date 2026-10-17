@@ -23,5 +23,5 @@ Deze richtlijn is een aanbevolen werkwijze, gebaseerd op gebruikersonderzoek:
 Een paar praktische tips als de bestaande situatie niet gelijk aangepast kan worden:
 
 - Gebruik voor de tekst van de disabled buttons voldoende kleurcontrast, zodat de tekst wel goed leesbaar is. Bijvoorbeeld: `#767676` tegen een witte achtergrond.
-- Gebruik `tabindex="0"` zodat de button wel ontdekt kan worden door screenreadergebruikers.
+- Vervang `disabled` door `aria-disabled="true"`. De button houdt dan zijn plaats in de tabvolgorde en een screenreader meldt de staat. Vang de klik en de Enter-toets zelf af, zodat het formulier niet wordt verzonden.
 - Leg uit wat je moet doen om zodat de button niet meer disabled is, koppel die tekst met `aria-describedby` aan de button.

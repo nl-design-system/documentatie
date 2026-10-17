@@ -2,7 +2,9 @@
 
 # Gebruik geen positieve tabindex
 
-Het eerste formulierveld automatisch de focus te geven is een veelgebruikte constructie. Dit kan door het eerste veld een [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) te geven met een waarde groter dan nul, bijvoorbeeld `tabindex="1"` of met gebruik van `autofocus`. De gebruiker is meteen klaar om het formulier in te gaan vullen.
+Een [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) met een waarde groter dan nul, bijvoorbeeld `tabindex="1"`, zet een element vooraan in de tabvolgorde. Het komt dan vóór alle elementen zonder tabindex, en de tabvolgorde loopt niet meer gelijk met de leesvolgorde.
+
+Het eerste formulierveld automatisch de focus geven is een veelgebruikte constructie. Dat doe je met `autofocus`: het veld krijgt dan focus zodra de pagina laadt. De gebruiker is meteen klaar om het formulier in te gaan vullen.
 
 Maar dit levert problemen op voor gebruikers van [screenreaders](/woordenlijst/#screenreader) en toetsenborden. Stel je voor dat je het formulier helemaal niet wilt invullen, maar naar het menu wilt, of de tekst boven het formulier wilt lezen. Dan zul je terug naar boven moeten navigeren.
 

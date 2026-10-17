@@ -19,9 +19,9 @@ Ook kan een icoon bij een icoon-font gekoppeld zijn aan één bepaald teken. Zo 
 
 ## Toepassen van een SVG in code
 
-Iconen moeten altijd vergezeld worden door een, eventueel visueel verborgen, tekstlabel.
+Elk icoon dat betekenis draagt, moet vergezeld worden door een, eventueel visueel verborgen, tekstlabel.
 
-Het icoon zelf moet het attribuut `focusable="false"` hebben om het uit de focus-volgorde te verwijderen. Dit is een standaardinstelling in sommige versies van Internet Explorer en Edge.
+Het icoon zelf moet het attribuut `focusable="false"` hebben om het uit de focus-volgorde te verwijderen. Internet Explorer en de oude versie van Edge maakten een `<svg>` standaard focusbaar. Dit is dus alleen nodig voor die verouderde browsers. Internet Explorer wordt sinds juni 2022 niet meer ondersteund.
 
 Het is niet nodig een alternatieve tekst aan te bieden voor iconen waarbij de tekst al beschikbaar is. In dit geval geef je het icoon in de code `aria-hidden="true"` mee. Zo is het tekstlabel "Verwijderen" in het volgende voorbeeld voldoende, en is het niet nodig om het icoon te identificeren.
 
@@ -44,6 +44,7 @@ Ook `aria-label` kan dit voor elkaar krijgen maar [`aria-label` kan voor vertaal
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
