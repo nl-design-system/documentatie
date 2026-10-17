@@ -7,11 +7,13 @@ Voldoende contrast zorgt ervoor dat teksten goed leesbaar zijn. Ook wanneer iema
 Het W3C is voor [WCAG 3.0](https://www.w3.org/TR/wcag-3.0/#visual-contrast-of-text) aan het kijken naar een algoritme om kleurcontrast accurater te berekenen.
 **Let wel**: voorlopig zul je je aan de huidige contrast richtlijnen moeten houden.
 
-De criteria voor kleurcontrast zijn:
+De eisen voor kleurcontrast van [succescriterium 1.4.3 Contrast (minimum)](/wcag/1.4.3), niveau AA:
 
-- 4,5:1 contrast voor normale tekst.
-- 3:1 contrast voor grotere letters (vanaf 24 pixels).
-- 3:1 contrast voor vette letters (vet en groter of gelijk aan 19 pixels).
+- 4,5:1 voor normale tekst.
+- 3:1 voor grote tekst, vanaf 18 punten of ongeveer 24 pixels.
+- 3:1 voor vette grote tekst, vanaf 14 punten vet of ongeveer 18,5 pixels.
+
+Tekst in een logo of merknaam heeft geen contrasteis. Dat geldt ook voor tekst in een uitgeschakeld element, tekst die puur decoratief is en tekst in een afbeelding met veel andere visuele inhoud. Wil je verder gaan dan AA, dan vraagt [succescriterium 1.4.6 Contrast (versterkt)](/wcag/1.4.6), niveau AAA, 7:1 voor normale tekst en 4,5:1 voor grote tekst.
 
 ## Kleurenpalet
 
