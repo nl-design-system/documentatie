@@ -8,13 +8,14 @@ import { getBreadcrumbsForElement } from '../navigation/get-breadcrumbs-for-elem
 import './overview.css';
 import { withCurrentIndication } from 'src/navigation/with-current-indication';
 import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
+import { getSideNavigationItems } from 'src/navigation/get-sidenavigation-items';
 import { i18n } from 'src/i18n';
 
 export type Props = DocumentProps;
 
 const { navigationTree, navigationList } = await withCurrentIndication(navigation, Astro.url.pathname);
 const breadcrumbPath = getBreadcrumbsForElement(navigationList, Astro.url.pathname);
-const treeLevelOne = navigationTree.items.find((item) => item.expanded || item.current);
+const treeLevelOne = getSideNavigationItems(navigationTree, Astro.url.pathname);
 const items = serialiseNavigationTree(treeLevelOne);
 const { ...props } = Astro.props;
 ---
@@ -23,7 +24,7 @@ const { ...props } = Astro.props;
   <div class="ma-layout-overview">
     <div class="ma-layout-overview__content">
       <div class="ma-layout-overview__side-nav">
-        <SideNavigation items={[items.items || []]} client:load />
+        <SideNavigation items={items} client:load />
       </div>
 
       {
