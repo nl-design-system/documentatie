@@ -10,3 +10,5 @@ Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakt
 - [Succescriterium 2.4.3 Focus volgorde](/wcag/2.4.3/)
 - [Succescriterium 3.3.2 Labels of instructies](/wcag/3.3.2/)
 - [Succescriterium 4.1.2 Naam, rol, waarde](/wcag/4.1.2/)
+
+Succescriterium 1.4.3 Contrast (minimum) stelt geen contrasteis aan tekst in een inactief element, zoals een disabled button. Het advies om voor die tekst toch voldoende kleurcontrast te gebruiken, is daarom een aanbeveling van NL Design System en geen eis uit WCAG.
