@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { createMarkdownProcessor, type MarkdownRenderer } from '@astrojs/markdown-remark';
+import remarkCustomHeaderId from 'remark-custom-header-id';
 import { rehypeAbsoluteUrls } from '../../markdown-plugins/rehype-absolute-urls';
 import { nldsComponentsPlugin } from '../../markdown-plugins/rehype-nlds-components';
 import { remarkStripHtmlComments } from '../../markdown-plugins/remark-strip-html-comments';
@@ -22,7 +23,10 @@ const siteUrl = 'https://nldesignsystem.nl/';
  * - `remarkUnwrapDiv`, `remarkUnwrapParagraph`, `remarkCanvasFix` and
  *   `clientLoadPlugin`: these all act on MDX nodes, which plain markdown never
  *   produces.
- * - `remarkCustomHeaderId`: only does something for headings.
+ * `remarkCustomHeaderId` IS included: rule solutions use headings for their
+ * variants, and two rules can use the same heading text (`Lead paragraph`
+ * appears under both `strong` and `emphasis`). Without explicit ids the
+ * generated slugs collide on a page that embeds both.
  *
  * `syntaxHighlight` is turned off explicitly: the default is Shiki, which adds
  * inline `style` attributes and its own class names to the published HTML. With
@@ -31,7 +35,7 @@ const siteUrl = 'https://nldesignsystem.nl/';
  */
 async function createProcessor(): Promise<MarkdownRenderer> {
   return createMarkdownProcessor({
-    remarkPlugins: [remarkStripHtmlComments],
+    remarkPlugins: [remarkStripHtmlComments, remarkCustomHeaderId],
     rehypePlugins: [nldsComponentsPlugin, rehypeAbsoluteUrls({ siteUrl })],
     syntaxHighlight: false,
   });
