@@ -1,6 +1,15 @@
 ---
-import { siteName, siteBaseUrl, siteThemeColor, siteColorScheme, siteKeywords, twitterCard } from '../seo.config.ts';
-import { generateDocumentTitle } from '@utils/document-title';
+import {
+  siteName,
+  siteBaseUrl,
+  siteThemeColor,
+  siteColorScheme,
+  siteKeywords,
+  twitterCard,
+  siteTitle,
+  siteTitleSeparator,
+} from '../seo.config.ts';
+import { formatTitle } from '@components/page-title/format';
 import { PageHeader } from '@components/page-header/page-header';
 import { PageFooter } from '@components/page-footer/page-footer';
 import { NavBar } from '@components/nav-bar/nav-bar';
@@ -102,7 +111,7 @@ const {
 const fallbackSeoImage = '/social-image_nl-design-system.png';
 const fallbackSeoImageAlt = i18n[lang].logoAlt;
 
-const documentTitle = generateDocumentTitle(titleSm || title);
+const documentTitle = formatTitle({ titleSm, title, siteTitleSeparator, siteTitle });
 const canonicalUrl = new URL(Astro.url.pathname, siteBaseUrl);
 const pageAlternates = new Map<string, string>();
 pageAlternates.set(lang, canonicalUrl.toString());

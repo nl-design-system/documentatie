@@ -1,21 +1,12 @@
 import { siteTitle, siteTitleSeparator } from '../seo.config';
-
-/**
- * Generate a document title. The `siteTitle` will be appended to
- * the title. If no title is present, it will default to `NL Design System`
- */
-export const generateDocumentTitle = (title?: string) => {
-  if (title?.endsWith(` ${siteTitleSeparator} ${siteTitle}`)) return title;
-
-  return title ? `${title} ${siteTitleSeparator} ${siteTitle}` : siteTitle;
-};
+import { formatTitle } from '@components/page-title/format';
 
 /**
  * Dispatch an `update-document-title` event. Once dispatched, the document
  * will update the title.
  */
 export const updateDocumentTitle = (newTitle: string) => {
-  const newPageTitle = generateDocumentTitle(newTitle);
+  const newPageTitle = formatTitle({ title: newTitle, siteTitle, siteTitleSeparator });
   document.dispatchEvent(new UpdateDocumentTitleEvent(newPageTitle));
 };
 
