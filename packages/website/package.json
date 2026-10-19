@@ -101,7 +101,8 @@
     "color": "5.0.3",
     "dompurify": "3.4.11",
     "hast": "1.0.0",
-    "invokers-polyfill": "1.0.3"
+    "invokers-polyfill": "1.0.3",
+    "unist-util-remove": "4.0.0"
   },
   "devDependencies": {
     "@astrojs/markdown-remark": "7.3.0",
@@ -141,9 +142,9 @@
     "remark": "15.0.1",
     "remark-custom-header-id": "1.0.0",
     "remark-directive": "4.0.0",
+    "tsx": "4.21.0",
     "unified": "11.0.5",
     "vfile": "6.0.3",
-    "tsx": "4.21.0",
     "vitest": "4.1.10"
   }
 }

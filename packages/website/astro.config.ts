@@ -15,6 +15,7 @@ import { remarkUndoInlineDirectives } from './markdown-plugins/remark-undo-inlin
 import { remarkUnwrapParagraph } from './markdown-plugins/remark-unwrap-paragraph';
 import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
 import { siteBaseUrl } from './src/seo.config';
+import { appendCSPToHTAccess } from './append-csp-to-htaccess';
 
 const cspDevConfig: AstroUserConfig = {
   security: {
@@ -169,5 +170,6 @@ export default defineConfig({
         return globalThis.unlistedPages.has(url.pathname) === false;
       },
     }),
+    appendCSPToHTAccess(),
   ],
 });
