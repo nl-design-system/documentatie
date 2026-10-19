@@ -2,7 +2,7 @@
 
 # Controleer op het juiste moment op fouten
 
-Het is van belang _wanneer_ een veld op fouten wordt gecheckt.
+Het is van belang **wanneer** een veld op fouten wordt gecheckt.
 
 Stel, je typt een e-mailadres en na het invoeren van het eerste karakter verschijnt al een foutmelding "Ongeldig e-mailadres".
 
