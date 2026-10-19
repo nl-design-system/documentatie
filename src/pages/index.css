@@ -4,7 +4,7 @@
 
 .ma-homepage-spotlight-section {
   --utrecht-spotlight-section-border-width: 0;
-  --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-bg-subtle);
+  --utrecht-spotlight-section-background-color: var(--basis-color-accent-1-bg-default);
 }
 
 .ma-homepage-spotlight-section--hero {
