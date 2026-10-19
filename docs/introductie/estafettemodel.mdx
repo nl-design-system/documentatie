@@ -1,0 +1,72 @@
+---
+title: Open source samenwerken
+hide_title: true
+hide_table_of_contents: false
+sidebar_label: Open source samenwerken
+sidebar_position: 4
+navigation_order: 4
+pagination_label: Open source samenwerken
+description: Overheidsorganisaties dragen elk eigen componenten bij aan het federatieve design system. Het Estafettemodel brengt die bijdragen naar een gedragen standaard.
+keywords:
+  - estafettemodel
+  - federatief
+  - open source
+  - samenwerken
+  - community
+---
+
+import { StatusVisual } from "@site/src/components/StatusVisual";
+import { Paragraph } from "@components/paragraph/paragraph";
+import { RelayModel, RelaySection } from "@components/relay-model/relay-model";
+import HelpWantedMd from "@site/docs/introductie/_estafettemodel/_help-wanted.md";
+import CommunityMd from "@site/docs/introductie/_estafettemodel/_community.md";
+import CandidateMd from "@site/docs/introductie/_estafettemodel/_candidate.md";
+import HallOfFameMd from "@site/docs/introductie/_estafettemodel/_hall-of-fame.md";
+import { Markdown } from "@site/src/components/Markdown";
+
+{/* @license CC0-1.0 */}
+
+# Open source samenwerken
+
+<Paragraph purpose="lead">
+  Het Estafettemodel is een door NL Design System ontwikkelde aanpak die samenwerken aan open source makkelijk maakt.
+</Paragraph>
+
+Doordat elk bouwblok deze stappen doorloopt, weet een organisatie die het overneemt waar zij op kan rekenen:
+
+- **Goed onderzocht**: gebruikersonderzoek en toegankelijkheidsonderzoek van verschillende organisaties wordt gedeeld.
+- **Publiek beschikbaar**: alle code, designs en documentatie staan online onder een open source licentie, waardoor iedereen kan meekijken en meedoen.
+- **Investering door de community**: een actieve community bouwt de oplossingen en gebruikt ze zelf, het kernteam helpt hierbij deze te standaardiseren.
+- **Breed gedragen**: bouwblokken zijn bij meerdere organisaties in gebruik en daarmee op veel verschillende situaties in de praktijk getest.
+- **Ruimte voor innovatie en maatwerk**: bouwblokken zijn huisstijl onafhankelijk en makkelijk uitbreidbaar.
+
+Het resultaat: minder dubbel werk, meer samenwerking tussen verschillende organisatie en digitale diensten die voor gebruikers herkenbaarder, toegankelijker en makkelijker te gebruiken zijn.
+
+## Estafettemodel
+
+Het kernteam en de community werken samen aan een design system dat voor iedereen werkt. Daarbij is het het belangrijk om niet steeds opnieuw te beginnen, maar elkaar ook niet te vertragen bij de ontwikkeling van nieuwe applicaties.
+
+Het Estafettemodel maakt dat mogelijk. Oplossingen die zich in de praktijk bewijzen, groeien hiermee uit tot breed inzetbare bouwblokken voor digitale dienstverlening.
+
+<RelayModel>
+  <RelaySection relayLevel="help-wanted" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <HelpWantedMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="community" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <CommunityMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="candidate" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <CandidateMd />
+    </Markdown>
+  </RelaySection>
+  <RelaySection relayLevel="hall-of-fame" headingLevel={3}>
+    <Markdown omitH1 headingLevel={4}>
+      <HallOfFameMd />
+    </Markdown>
+  </RelaySection>
+</RelayModel>

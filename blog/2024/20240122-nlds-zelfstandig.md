@@ -32,7 +32,7 @@ In 2019 werd de naam omgedoopt in NL Design System. Volgens Victor omdat de naam
 
 Het NL Design System is geen standaard design system, zoals je wellicht in andere organisaties ziet. Victor vertelt: ”Het unieke aan het NL Design System is dat het op een hele andere manier werkt. Er is geen eigen portaal, maar het bestaat uit een samenwerking tussen verschillende overheidsorganisaties en leveranciers. Iedereen draagt zijn steentje bij.”
 
-Projectleider Angela Imhof stond samen met [het kernteam](https://nldesignsystem.nl/project/kernteam), bestaande uit Yolijn van der Kolk en Robbert Broersma, al vanaf de start van het NL Design System project aan het roer. Fast forward naar 2023: Angela droeg het stokje over aan Peter Berrevoets, die haar rol als projectleider overnam.
+Projectleider Angela Imhof stond samen met [het kernteam](/introductie/contact/), bestaande uit Yolijn van der Kolk en Robbert Broersma, al vanaf de start van het NL Design System project aan het roer. Fast forward naar 2023: Angela droeg het stokje over aan Peter Berrevoets, die haar rol als projectleider overnam.
 
 Toen Peter begin 2023 aansloot, was hij gelijk enthousiast. “De naam van het programma 'Gebruiker Centraal' sprak me erg aan. Want dáár draait het natuurlijk om: we doen het voor de gebruiker, voor de inwoner, de burger. De mate waarin NL Design System bijdraagt aan de toegankelijkheidsopgave van veel overheidsorganisaties misschien nog wel meer! Dus ik stapte maar wat graag aan boord en het voelde gelijk goed om hier iets aan te mogen bijdragen.”
 
@@ -52,4 +52,4 @@ In de ‘ideale wereld’ zou Victor graag zien dat de hele overheid automatisch
 
 ## Op de hoogte blijven van het NL Design System?
 
-Ben je benieuwd naar de ontwikkelingen van het NL Design System? [Meld je dan aan voor de maandelijkse nieuwsbrief](https://nldesignsystem.nl/project/blijf-op-de-hoogte/#nieuwsbrief) of [schuif aan tijdens de 2-wekelijkse update (Heartbeat)](https://nldesignsystem.nl/events/heartbeat/aanmelden/). Hierin delen we alle relevante updates.
+Ben je benieuwd naar de ontwikkelingen van het NL Design System? [Meld je dan aan voor de maandelijkse nieuwsbrief](https://nldesignsystem.nl/introductie/blijf-op-de-hoogte/#nieuwsbrief) of [schuif aan tijdens de 2-wekelijkse update (Heartbeat)](https://nldesignsystem.nl/events/heartbeat/aanmelden/). Hierin delen we alle relevante updates.

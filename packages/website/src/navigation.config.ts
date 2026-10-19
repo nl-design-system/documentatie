@@ -5,19 +5,28 @@ export const navigation = navigationRoot(
     index: navigationItem({ href: '/', label: 'Home' }),
     items: [
       navigationGroup({
+        label: 'Introductie',
+        filePath: 'docs/introductie',
+      }),
+      navigationGroup({
         label: 'Handboek',
-        index: navigationItem('docs/handboek/index.json'),
+        index: navigationItem('docs/handboek/index.mdx'),
         items: [
-          navigationItem('docs/handboek/introductie.md'),
-          navigationItem('docs/handboek/estafettemodel.mdx'),
           navigationItem('docs/handboek/componenten-vinden.mdx'),
-          navigationGroup({ filePath: 'docs/handboek/definition-of-done' }),
+          navigationGroup({ filePath: 'docs/handboek/bijdragen' }),
           navigationGroup({ filePath: 'docs/handboek/huisstijl-vastleggen' }),
           navigationGroup({ filePath: 'docs/handboek/designer', label: 'Voor designers' }),
           navigationGroup({ filePath: 'docs/handboek/developer', label: 'Voor developers' }),
           navigationGroup({ filePath: 'docs/handboek/organisatie', label: 'Voor organisaties' }),
+          navigationGroup({
+            label: 'Voor het kernteam',
+            index: navigationItem('docs/handboek/kernteam/index.mdx'),
+            items: [
+              navigationGroup({ filePath: 'docs/handboek/kernteam/kwaliteitsaanpak' }),
+              navigationGroup({ filePath: 'docs/handboek/kernteam/schrijfwijzer' }),
+            ],
+          }),
           navigationGroup({ filePath: 'docs/baseline' }),
-          navigationItem('docs/woordenlijst/index.mdx'),
         ],
       }),
       navigationGroup({
@@ -74,7 +83,6 @@ export const navigation = navigationRoot(
           navigationItem('docs/community/slack.mdx'),
         ],
       }),
-      navigationGroup({ filePath: 'docs/project' }),
     ],
   }),
 );

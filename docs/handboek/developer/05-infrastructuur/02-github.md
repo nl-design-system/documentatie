@@ -30,7 +30,7 @@ De [candidate repository](https://github.com/nl-design-system/candidate) dient v
 
 ### Community repositories
 
-Dit zijn design systems die organisaties uit de community zelf maken en onderhouden. Ze werken hierbij volgens het [estafettemodel](/handboek/estafettemodel). Groeit een component door naar de 'Candidate'- of 'Hall of Fame'-fase? Dan kan de community dit hergebruiken zonder dat er grote aanpassingen nodig zijn.
+Dit zijn design systems die organisaties uit de community zelf maken en onderhouden. Ze werken hierbij volgens het [estafettemodel](/introductie/estafettemodel/). Groeit een component door naar de 'Candidate'- of 'Hall of Fame'-fase? Dan kan de community dit hergebruiken zonder dat er grote aanpassingen nodig zijn.
 
 ### Terraform
 

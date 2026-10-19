@@ -46,7 +46,7 @@ Het gaat hier om de [Button login](https://nl-design-system.github.io/lux/?path=
 
 ![screenshot van stickervel in Figma, met daarin een lijst van buttons met verschillende login opties zoals digid en eherkenning](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/logius-stickervel.png) _Het [button login component](https://nl-design-system.github.io/lux/?path=/docs/web-components-button-login--docs) in Figma_
 
-De community van NL Design System is voor Aline dé plek om hun ideeën te toetsen en te testen. Aline: “Het is zo fijn dat mensen vanuit de community er echt mee aan de slag gaan. Het is een makkelijke manier om gelijkgestemde professionals te vinden die willen helpen en feedback geven. Het kernteam begeleidt ons hierbij, zodat de component door [het estafettemodel](/handboek/estafettemodel) van het NL Design System gaat. Uiteindelijk is het de bedoeling om de component ‘overheidsbreed’ te kunnen gebruiken.”
+De community van NL Design System is voor Aline dé plek om hun ideeën te toetsen en te testen. Aline: “Het is zo fijn dat mensen vanuit de community er echt mee aan de slag gaan. Het is een makkelijke manier om gelijkgestemde professionals te vinden die willen helpen en feedback geven. Het kernteam begeleidt ons hierbij, zodat de component door [het estafettemodel](/introductie/estafettemodel/) van het NL Design System gaat. Uiteindelijk is het de bedoeling om de component ‘overheidsbreed’ te kunnen gebruiken.”
 
 ## Componenten en gebruikersonderzoeken
 
@@ -54,4 +54,4 @@ Momenteel hebben we een aantal community componenten voorbereid voor de verschil
 
 Raoul benadrukt dat Logius ook graag een bijdrage levert aan het NL Design System zodat andere overheidsorganisaties daar uiteindelijk ook van kunnen profiteren: “We doen bij Logius regelmatig gebruikersonderzoeken. Met producten als MijnOverheid en DigiD zijn we ook erg zichtbaar. We krijgen daarom regelmatig de vraag of we de onderzoeksresultaten en onze designs kunnen delen. We zien het NL Design System als de geschikte plek om dat te kunnen doen.” Raoul ziet voor zich dat in de toekomst kennis en componenten vanuit de NL Design System community in Lux gebruikt worden, en vanuit Lux weer kennis en componenten in de community gedeeld worden.
 
-Wil je op de hoogte blijven van alles rondom NL Design System? [Meld je dan aan](/project/blijf-op-de-hoogte/#nieuwsbrief) voor onze nieuwsbrief.
+Wil je op de hoogte blijven van alles rondom NL Design System? [Meld je dan aan](/introductie/blijf-op-de-hoogte/#nieuwsbrief) voor onze nieuwsbrief.
