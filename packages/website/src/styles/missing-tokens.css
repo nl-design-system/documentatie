@@ -7,6 +7,14 @@
   --ma-layout-row-gap: var(--basis-space-row-3xl); /* --> Zien we dit als een component of common token? */
   --ma-layout-side-bar-inline-size: 300px; /* --> Zien we dit als een component of common token? */
   --ma-mobile-menu-max-inline-size: 400px; /* --> Zien we dit als een component of common token? */
+  --ma-user-input-badge-background-color: var(--basis-color-default-bg-default);
+  --ma-user-input-badge-border-color: var(--basis-color-default-border-default);
+  --ma-user-input-badge-border-radius: 0.2rem;
+  --ma-user-input-badge-color: var(--basis-color-default-color-document);
+  --ma-user-input-badge-font-family: var(--basis-text-font-family-monospace);
+  --ma-user-input-badge-font-size: 80%;
+  --ma-user-input-badge-padding-block: 0.15rem;
+  --ma-user-input-badge-padding-inline: 0.3rem;
   --nl-button-column-gap: var(--basis-space-inline-xs); /* --> Zou een basis.space.text.* token moeten zijn. */
 }
 
@@ -265,17 +273,6 @@ html .utrecht-link--html-a:any-link:active {
 .ams-unordered-list__item > .ams-unordered-list,
 .utrecht-ordered-list__item > .ams-unordered-list {
   margin-block-start: var(--basis-space-block-sm);
-}
-
-kbd {
-  background-color: var(--basis-color-default-bg-default);
-  border: 1px solid var(--basis-color-default-border-default);
-  border-radius: 0.2rem;
-  box-shadow: inset 0 -1px 0 var(--basis-color-default-border-default);
-  color: var(--basis-color-default-color-document);
-  font: 80% var(--basis-text-font-family-monospace);
-  padding-block: 0.15rem;
-  padding-inline: 0.3rem;
 }
 
 .nlds-icon-ext {
