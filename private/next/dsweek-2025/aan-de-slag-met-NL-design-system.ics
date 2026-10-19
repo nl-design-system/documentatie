@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Robbert Broersma sluit Design Systems Week traditiegetrouw af met een live coding sessie. Hij bouwt iets nieuws met componenten uit NL Design System, laat zien hoe web components werken in de praktijk, en gaat ongetwijfeld de uitdaging aan om te laten zien wat er allemaal mogelijk is. Wat hij precies gaat bouwen? Dat weet hij zelf ook nog niet. Maar één ding is zeker: het wordt spectaculair. De perfecte afsluiter van een week vol design systems. \n\nEnglish: \nRobbert Broersma will conclude Design Systems Week in traditional fashion with a live coding session. He will build something new using components from NL Design System, demonstrate how web components work in practice, and undoubtedly take on the challenge of showing what is possible. What exactly will he build? He doesn't know yet himself. But one thing is certain: it will be spectacular. The perfect ending to a week full of design systems.
+UID:d81bb962-6edb-4bb8-81c5-3c11cd2db365
+SUMMARY:Aan de slag met NL Design System - door Robbert Broersma
+DTSTART;TZID=Europe/Amsterdam:20251030T163000
+DTEND;TZID=Europe/Amsterdam:20251030T171500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmU4YzE3MjktOGMxNi00Yjc4LWI2ZDctOTRiZTcxYTliZTgz%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

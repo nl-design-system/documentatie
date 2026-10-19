@@ -1,0 +1,1 @@
+document.addEventListener(`click`,e=>{let t=e.target?.closest(`[data-copy-code]`);t&&navigator.clipboard.writeText(t.dataset.copyCode??``).catch(()=>{})});

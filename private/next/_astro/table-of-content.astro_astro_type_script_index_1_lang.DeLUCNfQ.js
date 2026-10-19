@@ -1,0 +1,1 @@
+var e=document.querySelector(`ma-table-of-contents`),t=new Set(document.querySelectorAll(`.ma-canvas-astro h1, .ma-canvas-astro h2, .ma-canvas-astro h3, .ma-canvas-astro h4, .ma-canvas-astro h5,.ma-canvas-astro h6`));e.headingsToIgnore=e.headingsToIgnore.union(t);

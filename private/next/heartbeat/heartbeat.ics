@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+VERSION:2.0
+X-WR-CALNAME:Heartbeat - NL Design System
+METHOD:PUBLISH
+PRODID:-//Apple Inc.//macOS 14.1.1//EN
+BEGIN:VTIMEZONE
+TZID:Europe/Amsterdam
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+DTSTART:19810329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZNAME:CEST
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+DTSTART:19961027T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZNAME:CET
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=Europe/Amsterdam:20260106T134500
+X-APPLE-CREATOR-TEAM-IDENTITY:0000000000
+UID:e5a95495-7e7a-49e5-bf83-9f8dae57371d
+DTSTAMP:20240710T075509Z
+LOCATION:http://nldesignsystem.nl/events/heartbeat/deelnemen
+DESCRIPTION:In de Heartbeat vertelt het kernteam van NL Design System el
+ ke twee weken wat de laatste stand van zaken is. Daarnaast laten we orga
+ nisaties aan het woord die met/aan het NL Design System werken.\n\nDe ve
+ rgadering staat in de agenda voor 45 minuten\, maar duurt doorgaans niet
+  langer dan een half uurtje.\n\n\nGraag tot ziens!\n\nWe gebruiken elke
+  sessie dezelfde\, vaste\, vergaderlink:\n_______________________________
+ _________________________________________________\nMicrosoft Teams-verga
+ dering\nNeem deel via uw computer of mobiele app\nKlik hier om aan de ve
+ rgadering deel te nemen http://nldesignsystem.nl/events/heartbeat/deelnemen
+SEQUENCE:5
+SUMMARY:Heartbeat - NL Design System
+DTSTART;TZID=Europe/Amsterdam:20260106T130000
+LAST-MODIFIED:20250121T075507Z
+CREATED:20240709T143910Z
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:19760401T005545Z
+ACTION:NONE
+END:VALARM
+END:VEVENT
+END:VCALENDAR

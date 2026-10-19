@@ -1,0 +1,70 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Tijdens Design Systems Week vertellen diverse organisaties over
+  het hoe en waarom van design systems.\n\nVan maandag 27 oktober tot en me
+ t donderdag 30 oktober zijn er dagelijks meerdere korte sessies van ongeve
+ er 30 minuten. Er zijn sessies in het Engels en in het Nederlands.\n\n\n\n
+ Kijk voor meer informatie en het programma op de website van NL Design Sys
+ tem https://nldesignsystem.nl/events/design-systems-week-2025<https://eur0
+ 3.safelinks.protection.outlook.com/?url=https%3A%2F%2Fnldesignsystem.nl%2F
+ events%2Fdesign-systems-week-2025&data=05%7C02%7Csandra.dejong%40ictu.nl%7
+ Ca996f4657dc2414adde308dde47ba0b6%7C6b1d3da237514e3db3c9e6784c8bad70%7C0%7
+ C0%7C638917941810400645%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIl
+ YiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%
+ 7C%7C&sdata=7CAQsWWRUAp01MuHIK7Y%2Bb9HiGPjQA8Ms%2FgAzXu2VP8%3D&reserved=0>
+ \n\n\n\nEnglish\n\nDuring Design Systems Week\, various organizations will
+  talk about the how and why of design systems.\n\nFrom Monday 27 October t
+ o Thursday 30 October\, there will be several short sessions of approximat
+ ely 30 minutes every day. There will be sessions in both English and Dutch
+ .\n\n\n\nFor more information and the program\, visit the NL Design System
+  website https://nldesignsystem.nl/events/design-systems-week-2025/en<http
+ s://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fnldesignsyst
+ em.nl%2Fevents%2Fdesign-systems-week-2025%2Fen&data=05%7C02%7Csandra.dejon
+ g%40ictu.nl%7Ca996f4657dc2414adde308dde47ba0b6%7C6b1d3da237514e3db3c9e6784
+ c8bad70%7C0%7C0%7C638917941810422861%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hc
+ GkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%
+ 3D%3D%7C0%7C%7C%7C&sdata=oY0yr%2F8iM2n3SqINb5pnaTg%2B2mNpStMUDcZ%2BgcN5lMA
+ %3D&reserved=0>\n\n\n
+UID:10f8b53e-dbe7-434d-9c7f-2b0d882d5568
+SUMMARY:Design Systems Week 2025
+DTSTART;VALUE=DATE:20251027
+DTEND;VALUE=DATE:20251031
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION:
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Loes deelt hoe het design system van de ANWB volledig is herbouwd en waarom dat nodig was. Ze vertelt over de fouten en kansen die daarbij aan het licht kwamen, en hoe het team ervoor heeft gezorgd dat het nieuwe design system toegankelijk is én bruikbaar voor
+ klanten. Een inspirerend kijkje achter de schermen bij het vernieuwingsproces van een groot en vertrouwd merk. \n\nLoes shares how the ANWB's design system was completely rebuilt and why this was necessary. She talks about the mistakes and opportunities that came to light in the process, and how the team ensured that the new design system is accessible and usable for customers.
+ An inspiring look behind the scenes at the renewal process of a large and trusted brand.
+UID:d64f95d1-0f53-40c0-b0b5-75a22a9a0d1a
+SUMMARY: Het ANWB Design System herbouwd: toegankelijk en toekomstgericht - door Loes Kockelmans
+DTSTART;TZID=Europe/Amsterdam:20251029T163000
+DTEND;TZID=Europe/Amsterdam:20251029T171500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjVhODYyNjMtMDM2ZS00ZTM2LThmZGItYWYxOGRjNGQ0OWRm%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

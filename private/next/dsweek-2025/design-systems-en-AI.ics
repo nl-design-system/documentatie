@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Egor neemt ons mee in de wereld van AI en ontwerpsystemen. Wat kunnen Design Systems al wél met AI en wat (nog) niet? Hij verkent hoe AI  kan helpen bij creatie en coderen en waar we als ontwerpers en ontwikkelaars zelf de regie moeten houden. Van prototyping
+ tot componentgeneratie: hoe scheiden we het kaf van het koren? Egor sluit af met een blik op de toekomst: hoe AI ons kan versterken in plaats van vervangen en wat dat betekent voor design systems van morgen. \n\nEnglish: \nEgor takes us on a journey into the world of AI and design systems. What can Design Systems already do with AI, and what can't they do (yet)? He explores how AI can help with creation and coding, and where we as designers and developers need to stay in control. From prototyping to component generation: how do we separate the wheat from the chaff? Egor concludes with a look to the future: how AI can strengthen us rather than replace us, and what that means for the design systems of tomorrow.
+UID:879f4395-f6fd-40d8-91e2-10d68bb88e1f
+SUMMARY:Design Systems & AI - door Egor Kloos
+DTSTART;TZID=Europe/Amsterdam:20251028T150000
+DTEND;TZID=Europe/Amsterdam:20251028T154500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzIwOTk5NDYtZWRhYy00MGU3LWIxMTQtYWNlZWI0NjcyNDYz%40thread.v2/0?context=%7b%22Tid%22%3a%226b1d3da2-3751-4e3d-b3c9-e6784c8bad70%22%2c%22Oid%22%3a%22108230a7-049d-492d-bb45-e5c79122252e%22%7d
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
