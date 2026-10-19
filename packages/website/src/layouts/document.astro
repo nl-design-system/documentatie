@@ -187,45 +187,43 @@ const footerNavigationItems = [
     <slot name="head" />
   </head>
 
-  <body class={className}>
+  <PageLayout Component="body" className={className}>
     <SkipLink href="#main">{i18n[lang].skipLink}</SkipLink>
-    <PageLayout>
-      <PageHeader lang={lang} />
-      <NavBar>
-        <nav aria-labelledby="hoofdnavigatie-label">
-          <h2 hidden id="hoofdnavigatie-label">{i18n[lang].mainNavLabel}</h2>
-          <NavList>
-            {
-              mainNavigationItems.map(({ href, label, expanded, current, lang }) => (
-                <NavListLink href={href} aria-current={expanded || current ? 'page' : null} lang={lang}>
-                  {label}
-                </NavListLink>
-              ))
-            }
-          </NavList>
-        </nav>
-      </NavBar>
+    <PageHeader lang={lang} />
+    <NavBar>
+      <nav aria-labelledby="hoofdnavigatie-label">
+        <h2 hidden id="hoofdnavigatie-label">{i18n[lang].mainNavLabel}</h2>
+        <NavList>
+          {
+            mainNavigationItems.map(({ href, label, expanded, current, lang }) => (
+              <NavListLink href={href} aria-current={expanded || current ? 'page' : null} lang={lang}>
+                {label}
+              </NavListLink>
+            ))
+          }
+        </NavList>
+      </nav>
+    </NavBar>
 
-      <slot />
+    <slot />
 
-      <PageFooter>
-        <nav aria-labelledby="site-navigatie-label">
-          <h2 hidden id="site-navigatie-label">{i18n[lang].footerNavLabel}</h2>
-          <LinkList>
-            {
-              footerNavigationItems.map(({ href, label, lang }) => (
-                <LinkListLink href={href} lang={lang}>
-                  {label}
-                  <span class="utrecht-icon" slot="icon">
-                    <IconChevronRight />
-                  </span>
-                </LinkListLink>
-              ))
-            }
-          </LinkList>
-        </nav>
-      </PageFooter>
-    </PageLayout>
+    <PageFooter>
+      <nav aria-labelledby="site-navigatie-label">
+        <h2 hidden id="site-navigatie-label">{i18n[lang].footerNavLabel}</h2>
+        <LinkList>
+          {
+            footerNavigationItems.map(({ href, label, lang }) => (
+              <LinkListLink href={href} lang={lang}>
+                {label}
+                <span class="utrecht-icon" slot="icon">
+                  <IconChevronRight />
+                </span>
+              </LinkListLink>
+            ))
+          }
+        </LinkList>
+      </nav>
+    </PageFooter>
 
     <MobileMenu lang={lang}>
       <SideNavigation items={[items.items]} client:load />
@@ -250,5 +248,5 @@ const footerNavigationItems = [
         navigator.clipboard.writeText(button.dataset['copyCode'] ?? '').catch(() => {});
       });
     </script>
-  </body>
+  </PageLayout>
 </Root>
