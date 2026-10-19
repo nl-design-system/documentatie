@@ -54,9 +54,10 @@ export const appendCSPToHTAccess: () => AstroIntegration = () => {
       if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
     }
 
-    if (existingContents.includes('mod_headers.c')) throw new Error(`${filename} already contains mod_headers.c`);
+    if (existingContents.includes('Header set Content-Security-Policy'))
+      throw new Error(`${filename} already contains mod_headers.c`);
 
-    return `${existingContents}\n\n<IfModule mod_headers.c>\n  Header always set Content-Security-Policy ${JSON.stringify(cspValue)}\n</IfModule>`;
+    return `${existingContents}\n\nHeader set Content-Security-Policy ${JSON.stringify(cspValue)}\n`;
   }
 
   /** Remove the CSP rule from the html document and return the value via a callback */
