@@ -204,7 +204,7 @@ jobs:
     needs: continuous-integration
     if: github.ref == 'refs/heads/main'
     permissions:
-      contents: write
+      contents: read # since GH_TOKEN is provided, we only need 'read'
 
     steps:
       - name: Checkout release branch
@@ -223,3 +223,4 @@ jobs:
         with:
           branch: gh-pages
           folder: build/
+          token: ${{ secrets.GH_TOKEN }}
