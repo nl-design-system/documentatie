@@ -44,6 +44,13 @@
   }
 }
 
+@media (--large-down) {
+  .utrecht-page-header {
+    --utrecht-page-header-border-block-end-width: var(--basis-border-width-md);
+    --utrecht-page-header-border-block-end-color: var(--basis-color-accent-1-border-default);
+  }
+}
+
 @media (--large-and-up) {
   .utrecht-page-header__content {
     grid-template-columns: auto 1fr;
