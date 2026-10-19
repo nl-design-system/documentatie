@@ -8,6 +8,8 @@ import {
   twitterCard,
   siteTitle,
   siteTitleSeparator,
+  siteLang,
+  siteDir,
 } from '../seo.config.ts';
 import { formatTitle } from '@components/page-title/format';
 import { PageHeader } from '@components/page-header/page-header';
@@ -24,6 +26,7 @@ import { SideNavigation } from '@components/side-navigation/side-navigation.tsx'
 import { getMainNavigation } from '../navigation';
 import { navigation } from '../navigation.config.ts';
 import { i18n, type I18nLanguages } from '../i18n';
+import { Root } from '@components/root';
 
 import '@nl-design-system-community/ma-design-tokens/dist/variables.css';
 
@@ -85,6 +88,7 @@ export interface Props {
   titleSm?: string;
   description?: string;
   lang?: I18nLanguages;
+  dir?: HTMLElement['dir'];
   translations?: Partial<Record<I18nLanguages, string>>;
   seoImage?: string;
   seoImageAlt?: string;
@@ -98,7 +102,8 @@ const {
   title,
   titleSm,
   description,
-  lang = 'nl',
+  lang = siteLang,
+  dir = siteDir,
   translations,
   keywords,
   seoImage,
@@ -145,7 +150,7 @@ const footerNavigationItems = [
 ];
 ---
 
-<html class="utrecht-root ma-theme ma-theme--fluid" lang={lang} dir="ltr">
+<Root className="ma-theme ma-theme--fluid" lang={lang} dir={dir}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -245,4 +250,4 @@ const footerNavigationItems = [
       });
     </script>
   </body>
-</html>
+</Root>

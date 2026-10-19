@@ -740,6 +740,9 @@ importers:
       '@utrecht/page-header-react':
         specifier: 1.0.10
         version: 1.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/root-react':
+        specifier: 1.0.17
+        version: 1.0.17(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       algoliasearch:
         specifier: 5.55.1
         version: 5.55.1
@@ -5788,6 +5791,16 @@ packages:
 
   '@utrecht/root-css@4.1.0':
     resolution: {integrity: sha512-n2W52d/mSBgscTClpytczKSafdW8SBt1FiO7ysQRVXgDWgUFAzSUZ0M4ZGoTxzq/0oDYB0ol7j0pTUqHh6mQYg==}
+
+  '@utrecht/root-css@4.1.2':
+    resolution: {integrity: sha512-z1JqIjlJGbkZxr25JXSR+p12uMfmLQjRrlGx78454RF3FoRvIOj8jU0UfndWnzHNQyzTpjtCo/ly4dWNYPmLkQ==}
+
+  '@utrecht/root-react@1.0.17':
+    resolution: {integrity: sha512-NaEWjxlmsDthYcP0X0nFVoe+BaA9yBgBVfFJucfI4z6U4TaeZIAWfa+j5ECYEtqWWkw4wp6j7ME4tKt3BwRc3g==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   '@utrecht/search-bar-css@3.0.1':
     resolution: {integrity: sha512-ix/dUg05HIUhUptSvCmxghQ7MhXa2ryYj+PWAk/3aWlxmF/jrxx/l2fiqaroBotTfIJrjxBAVuZn5mVQwW0cfg==}
@@ -19319,6 +19332,16 @@ snapshots:
   '@utrecht/root-css@2.0.1': {}
 
   '@utrecht/root-css@4.1.0': {}
+
+  '@utrecht/root-css@4.1.2': {}
+
+  '@utrecht/root-react@1.0.17(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/root-css': 4.1.2
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@utrecht/search-bar-css@3.0.1': {}
 

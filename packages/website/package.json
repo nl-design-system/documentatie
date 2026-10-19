@@ -122,6 +122,7 @@
     "@utrecht/page-footer-react": "1.0.11",
     "@utrecht/page-header-css": "3.0.0",
     "@utrecht/page-header-react": "1.0.10",
+    "@utrecht/root-react": "1.0.17",
     "algoliasearch": "5.55.1",
     "astro": "7.2.8",
     "cheerio": "1.2.0",
