@@ -21,6 +21,7 @@ import { NavList } from '@components/nav-list/nav-list';
 import { NavListLink } from '@components/nav-list/nav-list';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
 import { MobileMenu } from '@components/mobile-menu/mobile-menu';
+import { Icon } from '@components/icon/icon';
 import { IconChevronRight } from '@tabler/icons-react';
 import { PageTitle } from '@components/page-title';
 import { SideNavigation } from '@components/side-navigation/side-navigation.tsx';
@@ -215,9 +216,9 @@ const footerNavigationItems = [
             footerNavigationItems.map(({ href, label, lang }) => (
               <LinkListLink href={href} lang={lang}>
                 {label}
-                <span class="utrecht-icon" slot="icon">
+                <Icon slot="icon">
                   <IconChevronRight />
-                </span>
+                </Icon>
               </LinkListLink>
             ))
           }
