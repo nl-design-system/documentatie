@@ -22,6 +22,7 @@ import { NavListLink } from '@components/nav-list/nav-list';
 import { LinkList, LinkListLink } from '@components/link-list/link-list';
 import { MobileMenu } from '@components/mobile-menu/mobile-menu';
 import { IconChevronRight } from '@tabler/icons-react';
+import { PageTitle } from '@components/page-title';
 import { SideNavigation } from '@components/side-navigation/side-navigation.tsx';
 import { getMainNavigation } from '../navigation';
 import { navigation } from '../navigation.config.ts';
@@ -154,7 +155,7 @@ const footerNavigationItems = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{documentTitle}</title>
+    <PageTitle {...{ titleSm, title, siteTitleSeparator, siteTitle }} />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
