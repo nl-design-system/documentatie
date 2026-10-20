@@ -28,7 +28,7 @@ Soms wordt een icoon gebruikt om een status aan te geven. Denk bijvoorbeeld aan 
 
 ![Twee keer een lijstje van twee labels met een icoon ervoor. Links 'Geluid aan' en 'Geluid uit' waarbij een speaker icoon per label van vorm verschilt. Rechts 'Toon wachtwoord' en 'Verberg wachtwoord' waarbij een oog icoon van vorm verschilt.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_iconen_status.png)
 
-## Gerelateerde WCAG Richtlijnen
+## Gerelateerde WCAG-succescriteria
 
 - [1.1.1 Niet-tekstuele content](/wcag/1.1.1/)
 - [1.4.11 Contrast van niet-tekstuele content](/wcag/1.4.11)
