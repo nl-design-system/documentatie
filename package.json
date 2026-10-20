@@ -123,6 +123,7 @@
     "@nl-design-system-community/ma-task-list-react": "0.1.0",
     "@tabler/icons-react": "3.36.1",
     "@utrecht/design-tokens": "2.5.1",
+    "@utrecht/root-react": "1.0.17",
     "clsx": "2.1.1",
     "eslint-plugin-astro": "1.6.0",
     "glob": "11.1.0",

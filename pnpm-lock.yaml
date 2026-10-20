@@ -151,6 +151,9 @@ importers:
       '@utrecht/design-tokens':
         specifier: 2.5.1
         version: 2.5.1
+      '@utrecht/root-react':
+        specifier: 1.0.17
+        version: 1.0.17(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -682,9 +685,6 @@ importers:
       invokers-polyfill:
         specifier: 1.0.3
         version: 1.0.3
-      unist-util-remove:
-        specifier: 4.0.0
-        version: 4.0.0
       rehype-raw:
         specifier: 7.0.0
         version: 7.0.0
@@ -700,6 +700,9 @@ importers:
       remark-smartypants:
         specifier: 3.0.3
         version: 3.0.3
+      unist-util-remove:
+        specifier: 4.0.0
+        version: 4.0.0
     devDependencies:
       '@astrojs/markdown-remark':
         specifier: 7.3.0
@@ -9672,9 +9675,6 @@ packages:
 
   mdast-util-find-and-replace@3.0.1:
     resolution: {integrity: sha512-SG21kZHGC3XRTSUhtofZkBzZTJNM5ecCi0SK2IMKmSXR8vO3peL+kb1O0z7Zl83jKtutG4k5Wv/W7V3/YHvzPA==}
-
-  mdast-util-from-markdown@2.0.0:
-    resolution: {integrity: sha512-n7MTOr/z+8NAX/wmhhDji8O3bRvPTV/U0oTCaZJkjhPSKTPhS3xufVhKGF8s1pJ7Ox4QgoIU7KHseh09S+9rTA==}
 
   mdast-util-from-markdown@2.0.3:
     resolution: {integrity: sha512-W4mAWTvSlKvf8L6J+VN9yLSqQ9AOAAvHuoDAmPkz4dHf553m5gVj2ejadHJhoJmcmxEnOv6Pa8XJhpxE93kb8Q==}
@@ -24196,23 +24196,6 @@ snapshots:
       escape-string-regexp: 5.0.0
       unist-util-is: 6.0.0
       unist-util-visit-parents: 6.0.2
-
-  mdast-util-from-markdown@2.0.0(supports-color@8.1.1):
-    dependencies:
-      '@types/mdast': 4.0.4
-      '@types/unist': 3.0.3
-      decode-named-character-reference: 1.0.2
-      devlop: 1.1.0
-      mdast-util-to-string: 4.0.0
-      micromark: 4.0.0(supports-color@8.1.1)
-      micromark-util-decode-numeric-character-reference: 2.0.1
-      micromark-util-decode-string: 2.0.0
-      micromark-util-normalize-identifier: 2.0.0
-      micromark-util-symbol: 2.0.0
-      micromark-util-types: 2.0.0
-      unist-util-stringify-position: 4.0.0
-    transitivePeerDependencies:
-      - supports-color
 
   mdast-util-from-markdown@2.0.3(supports-color@8.1.1):
     dependencies:
