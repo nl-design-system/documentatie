@@ -27,10 +27,10 @@ Het is niet nodig een alternatieve tekst aan te bieden voor iconen waarbij de te
 
 ```html
 <button>
-  <svg class="nl-icon nl-icon--text" focusable="false" aria-hidden="true">
-    <use xlink:href="assets/svg/icons-core-set.svg#-icon-trashcan"></use>
+  <svg class="example-icon" focusable="false" aria-hidden="true">
+    <use href="assets/svg/icons-core-set.svg#-icon-trashcan"></use>
   </svg>
-  <span>Delete</span>
+  <span>Verwijderen</span>
 </button>
 ```
 
