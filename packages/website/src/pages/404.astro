@@ -1,5 +1,5 @@
 ---
-import CenterColumnLayout from '@layouts/center-column.astro';
+import PageBodyContentLayout from '@layouts/page-body-content.astro';
 import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
 import { Link } from '@components/link/link';
@@ -8,7 +8,7 @@ const title = 'Pagina niet gevonden';
 const description = 'De pagina die je wilt bezoeken bestaat niet, of niet meer.';
 ---
 
-<CenterColumnLayout title={title} description={description} index={false}>
+<PageBodyContentLayout title={title} description={description} index={false}>
   <Heading level={1}>{title}</Heading>
   <Paragraph>
     De pagina die je wilt bezoeken bestaat niet, of niet meer. Maar we hebben wat tips voor je om alsnog te vinden wat
@@ -19,4 +19,4 @@ const description = 'De pagina die je wilt bezoeken bestaat niet, of niet meer.'
       href="mailto:info@nldesignsystem.nl">info@nldesignsystem.nl</Link
     >
   </Paragraph>
-</CenterColumnLayout>
+</PageBodyContentLayout>

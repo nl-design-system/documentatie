@@ -1,7 +1,7 @@
 ---
 import { navigation } from '../navigation.config';
 import { SitemapList } from './_sitemap-list';
-import CenterColumnLayout from '@layouts/center-column.astro';
+import PageBodyContentLayout from '@layouts/page-body-content.astro';
 import { Grid } from '@components/grid/grid';
 import { Heading } from '@components/heading/heading';
 import '@nl-design-system-candidate/link-css/link.css';
@@ -10,7 +10,7 @@ import { Paragraph } from '@components/paragraph/paragraph';
 const { navigationTree, navigationList } = (await navigation)();
 ---
 
-<CenterColumnLayout
+<PageBodyContentLayout
   title="Sitemap"
   description="Een compleet overzicht van alle pagina's in deze website"
   index={false}
@@ -22,4 +22,4 @@ const { navigationTree, navigationList } = (await navigation)();
       {navigationTree.items.map((navigationGroup) => <SitemapList navigationGroup={navigationGroup} />)}
     </Grid.Cell>
   </Grid>
-</CenterColumnLayout>
+</PageBodyContentLayout>
