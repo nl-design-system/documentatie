@@ -140,7 +140,7 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
   <Grid className="ma-homepage-section ma-homepage-section--highlight">
     <Grid.Cell span="all" className="ma-flow">
       <Heading level={2}>Bekijk de laatste updates</Heading>
-      <HeartbeatEpisode headingLevel={3} />
+      <HeartbeatEpisode headingLevel={3} client:load />
 
       <ActionGroup>
         <ButtonLink href="/events/heartbeat/aanmelden/" purpose="primary">
