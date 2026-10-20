@@ -1,8 +1,8 @@
 <!-- @license CC0-1.0 -->
 
-Wanneer je alleen kleur gebruikt om informatie over te brengen kan iemand die kleurenblind is de dit soms niet goed interpreteren. Maak daarom gebruik van tekst, iconen en/of andere visuele elementen om de intentie van de boodschap te versterken.
+Wanneer je alleen kleur gebruikt om informatie over te brengen kan iemand die kleurenblind is dit soms niet goed interpreteren. Maak daarom gebruik van tekst, iconen en/of andere visuele elementen om de intentie van de boodschap te versterken.
 
-![Afgebeeld is een formulier bestaande uit twee tekstvelden en een button. Het tweede tekstveld heeft een rode border. Het formulier staat daarnaast nogmaals afgebeeld maar dan is de rode kleur vervangen voor een beide grijstint.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_kleuren_deuteranoop.png)
+![Afgebeeld is een formulier bestaande uit twee tekstvelden en een button. Het tweede tekstveld heeft een rode border. Het formulier staat daarnaast nogmaals afgebeeld maar dan is de rode kleur vervangen voor een bleke grijstint.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_stijl_kleuren_deuteranoop.png)
 
 In de afbeelding hierboven zie je een formulier waarbij het tekstveld 'E-mailadres' een rode border heeft. Daarnaast staat het formulier nogmaals afgebeeld, maar dan zoals een kleurenblind persoon dit kan ervaren (in dit voorbeeld deuteranoop).
 
