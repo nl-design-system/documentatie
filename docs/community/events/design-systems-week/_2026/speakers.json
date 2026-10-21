@@ -161,5 +161,29 @@
       "nl": "Jeffrey is Product Design lead bij Unc Inc, waar hij sinds 2016 werkt aan digitale producten voor organisaties als HVC en AHTI. In multidisciplinaire teams brengt hij structuur in het ontwerpproces: hij bouwt toegankelijke design systems en zet zich in om de kloof tussen design en development zo klein mogelijk te maken. Hij denkt graag mee over het grote plaatje, maar wordt net zo blij van de kleinste details."
     },
     "language": "nl"
+  },
+  "RobbertBroersma": {
+    "name": "Robbert Broersma",
+    "organisation": "NL Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-RobbertBroersma.png",
+      "alt": "Robbert Broersma"
+    },
+    "description": {
+      "nl": "Robbert is design system lead van NL Design System. Met zijn ervaring bij andere design systems kent hij zowel de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele, toegankelijke componenten en een actieve community."
+    },
+    "language": "nl"
+  },
+  "YolijnVanDerKolk": {
+    "name": "Yolijn van der Kolk",
+    "organisation": "NL Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-YolijnVanDerKolk.png",
+      "alt": "Yolijn van der Kolk"
+    },
+    "description": {
+      "nl": "Yolijn is productmanager van NL Design System. Hierbij helpt ze nieuwe organisaties aansluiting te vinden en stimuleert ze samenwerking en kennisdeling binnen de community. Met haar ervaring als developer bij andere design systems weet ze hoe waardevol een betrokken community is voor een effectief design system."
+    },
+    "language": "nl"
   }
 }

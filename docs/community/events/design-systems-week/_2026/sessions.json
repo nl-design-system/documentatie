@@ -72,6 +72,18 @@
     "icalLink": "/dsweek-2026/manon-van-keulen.ics"
   },
   {
+    "uuid": "0f818ea3-38cb-4dd3-aee4-84774acc27fd",
+    "isoDateTime": "2026-10-28T10:00:00.000Z",
+    "speakers": ["YolijnVanDerKolk"],
+    "subject": "Een federatief design system begeleiden naar een landelijke standaard",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": null,
+    "icalLink": "/dsweek-2026/yolijn-van-der-kolk.ics"
+  },
+  {
     "uuid": "6b1d8785-cf2b-4c38-a4c1-b65458456728",
     "isoDateTime": "2026-10-28T12:00:00.000Z",
     "speakers": ["FrederiqueSchimmelpenninckVanDerOije"],
@@ -118,5 +130,17 @@
     },
     "videoId": null,
     "icalLink": "/dsweek-2026/eirik-backer.ics"
+  },
+  {
+    "uuid": "a11aea51-e2a7-40c6-85ba-506971bc3cd4",
+    "isoDateTime": "2026-10-29T14:00:00.000Z",
+    "speakers": ["RobbertBroersma"],
+    "subject": "Hoe bouw je een actieve open source community?",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": null,
+    "icalLink": "/dsweek-2026/robbert-broersma.ics"
   }
 ]
