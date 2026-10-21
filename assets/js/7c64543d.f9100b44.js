@@ -1,41 +1,55 @@
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
- [50186],
+ [89033],
  {
   790(e) {
    e.exports = JSON.parse('[{"uuid":"a5287a4e-fda6-45e9-b6da-5859daab3d3c","isoDateTime":"2026-10-26T10:00:00.000Z","speakers":["KoenDeGreef"],"subject":"AI Design Systems: van pixels naar regie","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/koen-de-greef.ics"},{"uuid":"1bfd50e8-d845-492b-9553-51cae7dafd5b","isoDateTime":"2026-10-26T12:00:00.000Z","speakers":["DrStephDriver"],"subject":"Tracking conformance data within the code-base","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/dr-steph-driver.ics"},{"uuid":"b919f274-381c-41db-9d1d-cc3b6934ce93","isoDateTime":"2026-10-26T14:00:00.000Z","speakers":["EricVanMullekom","MaartenSchut"],"subject":"Digitale toegankelijkheid van kaartviewers","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/eric-van-mullekom-en-maarten-schut.ics"},{"uuid":"b94a7d82-2641-446d-ad36-eafca20ec7fb","isoDateTime":"2026-10-27T10:00:00.000Z","speakers":["CarolineDahl","PierreOrsander","RobinWhittleton"],"subject":"Design Systems as a Lever for Accessibility Culture","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/caroline-dahl-pierre-orsander-robin-whittleton.ics"},{"uuid":"a23217db-b17d-4e97-ad46-1fd7d113c567","isoDateTime":"2026-10-27T14:00:00.000Z","speakers":["MarionCouesnon"],"subject":"Switching design systems without compromising accessibility","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/marion-couesnon.ics"},{"uuid":"dc60b53e-664e-4dac-badb-cb0754065ed7","isoDateTime":"2026-10-27T15:30:00.000Z","speakers":["ManonVanKeulen"],"subject":"Toegankelijkheid begint bij ontwerp","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/manon-van-keulen.ics"},{"uuid":"0f818ea3-38cb-4dd3-aee4-84774acc27fd","isoDateTime":"2026-10-28T10:00:00.000Z","speakers":["YolijnVanDerKolk"],"subject":"Een federatief design system begeleiden naar een landelijke standaard","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/yolijn-van-der-kolk.ics"},{"uuid":"6b1d8785-cf2b-4c38-a4c1-b65458456728","isoDateTime":"2026-10-28T12:00:00.000Z","speakers":["FrederiqueSchimmelpenninckVanDerOije"],"subject":"Toegankelijke en herkenbare huisstijl","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/frederique-schimmelpenninck-van-der-oije.ics"},{"uuid":"5c426f34-76eb-44c3-a951-277b49e6b442","isoDateTime":"2026-10-28T14:00:00.000Z","speakers":["JavierCuello"],"subject":"The renaissance of design tooling","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/javier-cuello.ics"},{"uuid":"45b2c5ee-4176-4752-b440-dfb16e7f14d3","isoDateTime":"2026-10-29T10:00:00.000Z","speakers":["JeffreyGeleijn"],"subject":"Achter de schermen bij het design system van HVC","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/jeffrey-geleijn.ics"},{"uuid":"aec41135-5d58-404d-a427-47dcb6730b20","isoDateTime":"2026-10-29T12:00:00.000Z","speakers":["EirikBacker"],"subject":"Designsystemet - What if we build less?","language":{"abbr":"EN","description":"English"},"videoId":null,"icalLink":"/dsweek-2026/eirik-backer.ics"},{"uuid":"a11aea51-e2a7-40c6-85ba-506971bc3cd4","isoDateTime":"2026-10-29T14:00:00.000Z","speakers":["RobbertBroersma"],"subject":"Hoe bouw je een actieve open source community?","language":{"abbr":"NL","description":"Nederlands"},"videoId":null,"icalLink":"/dsweek-2026/robbert-broersma.ics"}]');
   },
-  6726(e, n, s) {
-   (s.r(n), s.d(n, { assets: () => b, contentTitle: () => u, default: () => w, frontMatter: () => p, metadata: () => i, toc: () => k }));
-   const i = JSON.parse('{"id":"community/events/design-systems-week/en/program","title":"Program","description":"Program for the Design Systems Week 2026 organised by NL Design System","source":"@site/docs/community/events/design-systems-week/en/program.mdx","sourceDirName":"community/events/design-systems-week/en","slug":"/events/design-systems-week-2026/en/program","permalink":"/events/design-systems-week-2026/en/program","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/program.mdx","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Program","lang":"en","description":"Program for the Design Systems Week 2026 organised by NL Design System","hide_title":true,"hide_table_of_contents":true,"sidebar_label":"Program","pagination_label":"Design Systems Week 2026","sidebar_position":2,"slug":"/events/design-systems-week-2026/en/program","translations":{"nl":"/events/design-systems-week-2026/programma/"},"image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2026.png","image_alt":"NL Design System Design Systems Week 2026 26-29 October, online"},"sidebar":"community","previous":{"title":"About Design Systems Week","permalink":"/events/design-systems-week/en"},"next":{"title":"Timetable","permalink":"/events/design-systems-week-2026/en/timetable"}}');
-   var a = s(86070),
-    t = s(18439),
-    r = s(29680),
-    o = s(35683),
-    l = s(66153),
-    d = s(64249),
-    c = s(790),
-    g = s(86109),
-    m = s(24658),
-    h = s(51130);
-   const p = { title: 'Program', lang: 'en', description: 'Program for the Design Systems Week 2026 organised by NL Design System', hide_title: !0, hide_table_of_contents: !0, sidebar_label: 'Program', pagination_label: 'Design Systems Week 2026', sidebar_position: 2, slug: '/events/design-systems-week-2026/en/program', translations: { nl: '/events/design-systems-week-2026/programma/' }, image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2026.png', image_alt: 'NL Design System Design Systems Week 2026 26-29 October, online' },
-    u = 'Design Systems Week settings.year',
-    b = {},
-    k = [];
-   function j(e) {
-    const n = { h1: 'h1', header: 'header', p: 'p', ...(0, t.R)(), ...e.components };
-    return (0, a.jsxs)('div', { lang: 'en', children: [(0, a.jsx)(n.header, { children: (0, a.jsxs)(n.h1, { id: 'design-systems-week-settingsyear', children: ['Design Systems Week ', h.Ok] }) }), (0, a.jsx)(l.f, { purpose: 'lead', children: (0, a.jsxs)(n.p, { children: ['NL Design System is organising the Design Systems Week for the fifth time. It will feature a number of short talks\nabout the how and why of design systems. All online. From ', h.en.M, ', we will cover subjects like\nmanaging design systems, integrating accessibility, user research and code.'] }) }), (0, a.jsxs)(o.K, { children: [(0, a.jsxs)(r.v, { href: `/events/design-systems-week-${h.Ok}/en/timetable`, appearance: 'primary-action', children: ['View the timetable', (0, a.jsx)(d.A, { slot: 'icon-end' })] }), !!h.MX && (0, a.jsxs)(r.v, { href: h.MX, appearance: 'secondary-action', children: ['Use Miro', (0, a.jsx)(d.A, { slot: 'icon-end' })] })] }), !h.Ic && (0, a.jsx)(a.Fragment, { children: (0, a.jsx)(l.f, { children: 'The timetable is not yet final. The sessions will be further developed and added in the coming weeks. Keep an eye on this page for updates.' }) }), (0, a.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: '1bfd50e8-d845-492b-9553-51cae7dafd5b', headingLevel: 2, lang: 'en', children: [(0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'Accessibility conformance is often documented in separate reports that quickly become outdated. But what if\naccessibility data lived alongside your code instead?' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'In this session, you\u2019ll discover how the open-source publishing platform Janeway rethought its accessibility process\nby integrating conformance data directly into its code-base. Every accessibility finding is linked to the commit it\nwas audited against cross referenced with the work needed to improve it. This underpins a continuous workflow of\ntargeted accessibility audits and improvements instead of relying on audits every few years.' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'Steph shares the motivation behind this approach, how it was implemented, and the lessons learned along the way.\nWhether you\u2019re a developer, accessibility specialist, or simply curious about improving accessibility workflows,\nthis session offers practical insights into a more sustainable way of managing conformance data.' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'The implementation is open source, making it easy to dive into the technical details after the session.' }) })] }), (0, a.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'b94a7d82-2641-446d-ad36-eafca20ec7fb', headingLevel: 2, lang: 'en', children: [(0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'Accessibility has been a core focus of Skapa, the digital design system at IKEA, since it was established in 2019.' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'In this session, we\u2019ll share how we embedded accessibility into the way our design system is built and maintained,\nand how that foundation helped foster a broader accessibility culture across the organisation, influencing both\nproduct and brand experiences.' }) })] }), (0, a.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'a23217db-b17d-4e97-ad46-1fd7d113c567', headingLevel: 2, lang: 'en', children: [(0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: "What happens when you replace your own design system with a new, shared standard? How do you make sure accessibility\ndoesn't take a step backwards?" }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'In this session, Marion Couesnon from the Access to Justice team shares their experience of migrating from their\nin-house design system to the KERN Design System, which they see as the future standard for German public services.' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: "You'll learn how the team approached the migration from an accessibility perspective, the checks and decisions they\nmade along the way, and the unexpected challenges they still encountered. Because even when a design system is built\nwith accessibility in mind, adopting it doesn't automatically guarantee an accessible result." }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'A practical session packed with lessons learned, pitfalls to avoid, and tips for teams planning a similar\ntransition.' }) })] }), (0, a.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: '5c426f34-76eb-44c3-a951-277b49e6b442', headingLevel: 2, lang: 'en', children: [(0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'What if you could build exactly the design tools your team needs, instead of adapting your workflow to the tools\navailable?' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'Creating custom design tooling has become easier than ever. Instead of relying solely on generic plugins and\nframeworks, teams can now build small, purpose-made tools that address the specific needs of their projects and\ndesign systems.' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'In this session, Javier Cuello shares practical examples of how he has been creating and using custom mini plugins\nand design tools to solve problems that previously seemed difficult to tackle. He\u2019ll show what\u2019s possible, where\nthese tools can add value, and how they can improve everyday design workflows.' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'A practical and inspiring session for designers who want to rethink their tooling, with plenty of useful insights\nfor developers too.' }) })] }), (0, a.jsxs)(m.H, { allSpeakers: g, allSessions: c, sessionId: 'aec41135-5d58-404d-a427-47dcb6730b20', headingLevel: 2, lang: 'en', children: [(0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'Design systems often solve many of the same problems, over and over again. What if we could share the universal\nparts? What if sharing could not hinder, but enable uniqueness and identity. This talk covers the Norwegian project\n"Designsystemet" and its approach to building a framework agnostic, design agnostic, open-source toolkit to enable\nyour design system.' }) }), (0, a.jsx)(l.f, { children: (0, a.jsx)(n.p, { children: 'We also take a deep dive into how prioritising native HTML, CSS and browser behaviour makes components more\npredictable, flexible and composable, and challenge what parts of a design system you actually need to own and\nmaintain yourself.' }) })] })] });
-   }
-   function w(e = {}) {
-    const { wrapper: n } = { ...(0, t.R)(), ...e.components };
-    return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(j, { ...e }) }) : j(e);
-   }
-  },
-  19472(e, n, s) {
-   s.d(n, { L: () => t });
-   var i = s(20201),
-    a = s(86070);
-   const t = ({ id: e, title: n, ...s }) => (0, a.jsx)(i.Ay, { lazyLoad: !0, adNetwork: !1, announce: 'Bekijk', cookie: !1, containerElement: 'div', id: e, title: n, poster: 'maxresdefault', ...s });
+  19336(e, n, s) {
+   s.d(n, { F: () => l });
+   var i = s(30662),
+    a = s(46447),
+    t = s(13526),
+    r = s(86070);
+   const o = ({ name: e, organisation: n }) => (0, r.jsxs)(a.fz, { className: (0, t.A)('ma-session-table__speaker', 'ma-speaker'), children: [(0, r.jsx)(a.In, { className: 'ma-speaker__icon', children: (0, r.jsx)(i.vg, {}) }), (0, r.jsx)('span', { className: 'ma-speaker__name', children: e }), (0, r.jsx)('br', {}), (0, r.jsx)('span', { className: 'ma-speaker__organisation', children: n })] }),
+    l = ({ year: e, lang: n, sessions: s, speakers: l, className: d, ...c }) =>
+     (0, r.jsx)('div', {
+      className: (0, t.A)('ma-session-table-container', d),
+      children: (0, r.jsxs)(a.XI, {
+       className: (0, t.A)('ma-session-table', d),
+       ...c,
+       children: [
+        (0, r.jsx)(a.A0, { children: (0, r.jsxs)(a.Hj, { className: 'ma-session-table__row', children: [(0, r.jsx)(a.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Tijd' : 'Time' }), (0, r.jsx)(a.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Taal' : 'Language' }), (0, r.jsx)(a.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Spreker' : 'Speaker' }), (0, r.jsx)(a.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Onderwerp' : 'Subject' }), (0, r.jsx)(a.M_, { className: 'ma-session-table__header-cell', children: 'nl-NL' === n ? 'Agenda' : 'Calendar' })] }) }),
+        (0, r.jsx)(a.BF, {
+         children: s.map(
+          ({ isoDateTime: s, speakers: t, subject: d, icalLink: c, language: g, cancelled: m }, h) =>
+           !m &&
+           (0, r.jsxs)(
+            a.Hj,
+            {
+             className: 'ma-session-table__row',
+             children: [
+              (0, r.jsx)(a.nA, { className: 'ma-session-table__time', children: (0, r.jsx)(a.fz, { children: (0, r.jsx)('time', { dateTime: s, children: new Intl.DateTimeFormat(n, { hour: 'numeric', minute: 'numeric', timeZone: 'Europe/Amsterdam', timeZoneName: 'nl-NL' !== n ? 'short' : void 0 }).format(new Date(s)) }) }) }),
+              (0, r.jsx)(a.nA, { className: 'ma-session-table__language', children: (0, r.jsx)('abbr', { title: g.description, children: g.abbr }) }),
+              (0, r.jsx)(a.nA, {
+               children: (0, r.jsx)('div', {
+                className: 'ma-session-table__speakers',
+                children: Object.entries(l)
+                 .filter(([e]) => t.includes(e))
+                 .map(([e, n], s) => (0, r.jsx)(o, { ...n }, s)),
+               }),
+              }),
+              (0, r.jsx)(a.nA, { className: 'ma-session-table__subject', children: (0, r.jsx)(a.fz, { lang: g.abbr, children: (0, r.jsx)(a.N_, { href: `/events/design-systems-week-${e}/${'nl-NL' === n ? 'programma' : 'EN' === g.abbr ? 'en/program' : 'programma'}#${d.toLowerCase().replace(/\s/gi, '-')}`, children: d }) }) }),
+              (0, r.jsx)(a.nA, { className: 'ma-session-table__time', children: c && (0, r.jsxs)(a.vx, { href: c, download: c, 'aria-labelledby': 'ical-description', children: [(0, r.jsx)(a.In, { children: (0, r.jsx)(i.GP, {}) }), ' ', (0, r.jsxs)('span', { id: 'ical-description', className: 'sr-only', children: ['iCal file for ', (0, r.jsx)('span', { lang: g.abbr, children: d }), '(download)'] })] }) }),
+             ],
+            },
+            h,
+           ),
+         ),
+        }),
+       ],
+      }),
+     });
   },
   24456(e, n, s) {
    s.d(n, { F: () => r, N: () => o });
@@ -49,21 +63,6 @@
      return ('https://nldesignsystem.nl' === l.origin ? (l.pathname.endsWith('/') || (0, a.QQ)(l.pathname) || (l.pathname = `${l.pathname}/`), (o = l.toString().replace('https://nldesignsystem.nl', ''))) : ((r.target = '_blank'), (r.rel = 'noopener noreferrer')), (0, t.jsx)('a', { href: o, ...r, children: e }));
     },
     o = ({ className: e, boxContent: n, ...s }) => (0, t.jsx)(r, { className: (0, i.$)('utrecht-link', 'utrecht-link--html-a', { 'utrecht-link--box-content': n }, e), ...s });
-  },
-  24658(e, n, s) {
-   s.d(n, { H: () => d });
-   var i = s(30662),
-    a = s(46447),
-    t = s(13526),
-    r = s(19472),
-    o = s(86070);
-   const l = new Date().toISOString(),
-    d = ({ lang: e = 'nl', headingLevel: n = 3, allSpeakers: s, videoId: d, children: c, allSessions: g, sessionId: m }) => {
-     const h = g?.find(({ uuid: e }) => m === e),
-      p = h && h.speakers.map((e) => s[e]).filter(Boolean),
-      u = [d, h?.videoId, ...(h?.videoIds ?? [])].filter(Boolean);
-     return h ? (0, o.jsxs)('article', { className: (0, t.A)('ma-dsw-session'), children: [(0, o.jsx)(a.DZ, { level: n, className: 'ma-dsw-session__title', id: h.subject.toLowerCase().replace(/\s/gi, '-'), children: h.subject }), (0, o.jsx)(a.fz, { className: 'ma-dsw-session__subtitle', lead: !0, children: p && p.map((e) => (e?.organisation ? `${e.name} - ${e.organisation}` : e.name)).join(' & ') }), u.length > 0 && u.map((e) => (0, o.jsx)(r.L, { id: e, title: h.subject, style: { marginBlock: '20px' } }, e)), h && h.isoDateTime && h.isoDateTime > l ? (0, o.jsx)(a.fz, { children: (0, o.jsx)('time', { dateTime: h.isoDateTime, children: new Intl.DateTimeFormat(e, { dateStyle: 'full', timeStyle: 'nl' === e ? 'short' : 'full', timeZone: 'Europe/Amsterdam' }).format(new Date(h.isoDateTime)) }) }) : (0, o.jsx)(o.Fragment, {}), c, 'nl' === e && p.find(({ language: e }) => 'nl' !== e) && (0, o.jsxs)(a.fz, { children: [(0, o.jsx)('b', { children: 'Goed te weten:' }), ' Deze sessie is in het Engels.'] }), h.captioned ? (h.captionId ? (0, o.jsx)(o.Fragment, { children: (0, o.jsxs)(a.fz, { children: ['nl' === e ? (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Bij deze sessie is een schrijftolk aanwezig: ' }) }) : (0, o.jsx)(o.Fragment, { children: (0, o.jsx)('b', { children: 'Live captioning is available for this session: ' }) }), (0, o.jsxs)('a', { href: `https://text-on-tap.live/#e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === e ? 'in de browser' : 'in the browser'] }), 'nl' === e ? ' of ' : ' or ', (0, o.jsxs)('a', { href: `https://text-on-tap.live/openoverlay.html?e=${h.captionId}`, children: [(0, o.jsxs)('span', { className: 'sr-only', children: [h.subject, ' '] }), 'nl' === e ? 'met de Overlay tool' : 'with the de Overlay tool'] })] }) }) : 'nl' === e ? (0, o.jsx)(a.fz, { children: 'Voor deze sessie hebben we nog geen schrijftolk gevonden' }) : (0, o.jsx)(o.Fragment, {})) : (0, o.jsx)(o.Fragment, {}), (0, o.jsx)('aside', { className: (0, t.A)('ma-dsw-session__speakers'), children: p.map((n, s) => (0, o.jsxs)('div', { className: (0, t.A)('ma-dsw-session__speaker', 'ma-dsw-speaker'), children: [(0, o.jsx)('img', { className: (0, t.A)('ma-dsw-speaker__image'), src: n.image.src, alt: n.image.alt }), (0, o.jsx)(a.fz, { className: (0, t.A)('ma-dsw-speaker__description'), dangerouslySetInnerHTML: { __html: n.description[e] } })] }, s)) }), h && h.icalLink && !d ? (0, o.jsx)(a.fz, { children: (0, o.jsxs)(a.vx, { href: h.icalLink, download: h.icalLink, appearance: 'primary-action-button', children: [(0, o.jsx)(a.In, { children: (0, o.jsx)(i.GP, {}) }), (0, o.jsx)('span', { children: 'nl' === e ? (0, o.jsxs)(o.Fragment, { children: ['Zet', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' in je agenda'] }) : (0, o.jsxs)(o.Fragment, { children: ['Add', (0, o.jsx)('span', { className: 'sr-only', children: h.subject }), ' to your calendar'] }) })] }) }) : null] }) : (0, o.jsx)(o.Fragment, {});
-    };
   },
   29680(e, n, s) {
    s.d(n, { v: () => o });
@@ -79,7 +78,7 @@
      : ({ appearance: e, ...n }) => (0, t.jsx)(i.F, { className: (0, a.$)('utrecht-button-link', `utrecht-button-link--${e}`), ...n });
   },
   30662(e, n, s) {
-   s.d(n, { D4: () => E, GP: () => D, KC: () => C, Nd: () => x, Rt: () => T, Vj: () => A, Wk: () => V, bz: () => N, cB: () => z, e5: () => F, hY: () => O, jK: () => L, jP: () => I, ob: () => K, rI: () => S, t4: () => _, vP: () => M, vg: () => B });
+   s.d(n, { D4: () => C, GP: () => x, KC: () => I, Nd: () => D, Rt: () => T, Vj: () => A, Wk: () => F, bz: () => S, cB: () => _, e5: () => V, hY: () => E, jK: () => M, jP: () => L, ob: () => K, rI: () => N, t4: () => z, vP: () => O, vg: () => W });
    var i = s(92081),
     a = s(90578),
     t = s(96345),
@@ -91,47 +90,86 @@
     g = s(4077),
     m = s(58315),
     h = s(73563),
-    p = s(35193),
-    u = s(82999),
+    u = s(35193),
+    p = s(82999),
     b = s(13088),
     k = s(43864),
     j = s(24214),
-    w = s(79532),
-    v = s(60529),
-    y = s(86070);
+    v = s(79532),
+    y = s(60529),
+    w = s(86070);
    const f = { width: '1em', height: '1em' },
-    x = () => (0, y.jsx)(i.A, { ...f }),
-    D = () => (0, y.jsx)(a.A, { ...f }),
-    S = () => (0, y.jsx)(t.A, { ...f }),
-    A = () => (0, y.jsx)(r.A, { ...f }),
-    N = () => (0, y.jsx)(o.A, { ...f }),
-    T = () => (0, y.jsx)(l.A, { ...f }),
-    z = () => (0, y.jsx)(d.A, { ...f }),
-    M = () => (0, y.jsx)(c.A, { ...f }),
-    L = () => (0, y.jsx)(g.A, { ...f }),
-    I = () => (0, y.jsx)(m.A, { ...f }),
-    _ = () => (0, y.jsx)(h.A, { ...f }),
-    E = () => (0, y.jsx)(p.A, { ...f }),
-    O = () => (0, y.jsx)(u.A, { ...f }),
-    C = () => (0, y.jsx)(b.A, { ...f }),
-    V = () => (0, y.jsx)(k.A, { ...f }),
-    F = () => (0, y.jsx)(j.A, { ...f }),
-    K = () => (0, y.jsx)(w.A, { ...f }),
-    B = () => (0, y.jsx)(v.A, { ...f });
+    D = () => (0, w.jsx)(i.A, { ...f }),
+    x = () => (0, w.jsx)(a.A, { ...f }),
+    N = () => (0, w.jsx)(t.A, { ...f }),
+    A = () => (0, w.jsx)(r.A, { ...f }),
+    S = () => (0, w.jsx)(o.A, { ...f }),
+    T = () => (0, w.jsx)(l.A, { ...f }),
+    _ = () => (0, w.jsx)(d.A, { ...f }),
+    O = () => (0, w.jsx)(c.A, { ...f }),
+    M = () => (0, w.jsx)(g.A, { ...f }),
+    L = () => (0, w.jsx)(m.A, { ...f }),
+    z = () => (0, w.jsx)(h.A, { ...f }),
+    C = () => (0, w.jsx)(u.A, { ...f }),
+    E = () => (0, w.jsx)(p.A, { ...f }),
+    I = () => (0, w.jsx)(b.A, { ...f }),
+    F = () => (0, w.jsx)(k.A, { ...f }),
+    V = () => (0, w.jsx)(j.A, { ...f }),
+    K = () => (0, w.jsx)(v.A, { ...f }),
+    W = () => (0, w.jsx)(y.A, { ...f });
   },
   35683(e, n, s) {
    s.d(n, { K: () => i.e2 });
    var i = s(29181);
   },
   51130(e) {
-   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":false,"nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
+   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":"/miro","nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
+  },
+  65839(e, n, s) {
+   s.d(n, { N: () => i.N });
+   var i = s(63009);
   },
   66153(e, n, s) {
    s.d(n, { f: () => i.f });
    var i = s(56561);
   },
+  70758(e, n, s) {
+   (s.r(n), s.d(n, { assets: () => k, contentTitle: () => b, default: () => y, frontMatter: () => p, metadata: () => i, toc: () => j }));
+   const i = JSON.parse('{"id":"community/events/design-systems-week/en/timetable","title":"Timetable","description":"Timetable for the Design Systems Week 2026 organised by NL Design System","source":"@site/docs/community/events/design-systems-week/en/timetable.mdx","sourceDirName":"community/events/design-systems-week/en","slug":"/events/design-systems-week-2026/en/timetable","permalink":"/events/design-systems-week-2026/en/timetable","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/community/events/design-systems-week/en/timetable.mdx","tags":[],"version":"current","sidebarPosition":3,"frontMatter":{"title":"Timetable","description":"Timetable for the Design Systems Week 2026 organised by NL Design System","lang":"en","hide_table_of_contents":true,"sidebar_label":"Timetable","pagination_label":"Timetable","sidebar_position":3,"navigation_order":3,"slug":"/events/design-systems-week-2026/en/timetable","translations":{"nl":"/events/design-systems-week-2026/tijdschema/"},"image":"https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2026.png","image_alt":"NL Design System Design Systems Week 2026 26-29 October, online"},"sidebar":"community","previous":{"title":"Design Systems Week 2026","permalink":"/events/design-systems-week-2026/en/program"},"next":{"title":"Videos 2025","permalink":"/events/design-systems-week-2025/en/program"}}');
+   var a = s(86070),
+    t = s(18439),
+    r = s(29680),
+    o = s(35683),
+    l = s(65839),
+    d = s(66153),
+    c = s(64249),
+    g = s(790),
+    m = s(86109),
+    h = s(19336),
+    u = s(51130);
+   const p = { title: 'Timetable', description: 'Timetable for the Design Systems Week 2026 organised by NL Design System', lang: 'en', hide_table_of_contents: !0, sidebar_label: 'Timetable', pagination_label: 'Timetable', sidebar_position: 3, navigation_order: 3, slug: '/events/design-systems-week-2026/en/timetable', translations: { nl: '/events/design-systems-week-2026/tijdschema/' }, image: 'https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-en-2026.png', image_alt: 'NL Design System Design Systems Week 2026 26-29 October, online' },
+    b = 'Design Systems Week settings.year Timetable',
+    k = {},
+    j = [
+     { value: 'Monday, October 26', id: 'monday-october-26', level: 2 },
+     { value: 'Tuesday, October 27', id: 'tuesday-october-27', level: 2 },
+     { value: 'Wednesday, October 28', id: 'wednesday-october-28', level: 2 },
+     { value: 'Thursday, October 29', id: 'thursday-october-29', level: 2 },
+     { value: 'Organisation', id: 'organisation', level: 2 },
+     { value: 'Code of Conduct', id: 'code-of-conduct', level: 2 },
+     { value: 'Accessibility', id: 'accessibility', level: 2 },
+    ];
+   function v(e) {
+    const n = { a: 'a', h1: 'h1', h2: 'h2', header: 'header', p: 'p', ...(0, t.R)(), ...e.components };
+    return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(n.header, { children: (0, a.jsxs)(n.h1, { id: 'design-systems-week-settingsyear-timetable', children: ['Design Systems Week ', u.Ok, ' Timetable'] }) }), '\n', (0, a.jsx)(d.f, { purpose: 'lead', children: (0, a.jsxs)(n.p, { children: ['NL Design System is organising the Design Systems Week for the ', u.en.Z, ' time. It will feature a number of\nshort talks about the how and why of design systems. All online. From ', u.en.M, ', we will cover subjects\nlike managing design systems, integrating accessibility, user research and code.'] }) }), '\n', !u.dF && (0, a.jsx)(o.K, { children: (0, a.jsxs)(r.v, { href: '/events/design-systems-week/en', appearance: 'primary-action', children: ['About Design Systems Week', (0, a.jsx)(c.A, { slot: 'icon-end' })] }) }), '\n', !!u.dF && (0, a.jsx)(a.Fragment, { children: (0, a.jsxs)(o.K, { children: [(0, a.jsxs)(r.v, { href: `/events/design-systems-week-${u.Ok}/en/program`, appearance: 'primary-action', children: ['See the program', (0, a.jsx)(c.A, { slot: 'icon-end' })] }), !!u.MX && (0, a.jsxs)(r.v, { href: u.MX, appearance: 'secondary-action', children: ['Use Miro', (0, a.jsx)(c.A, { slot: 'icon-end' })] })] }) }), '\n', !u.Ic && (0, a.jsx)(a.Fragment, { children: (0, a.jsx)(d.f, { children: 'The timetable is not yet final. The sessions will be further developed and added in the coming weeks. Keep an eye on this page for updates.' }) }), '\n', '\n', (0, a.jsx)(n.h2, { id: 'monday-october-26', children: 'Monday, October 26' }), '\n', (0, a.jsx)(h.F, { year: u.Ok, speakers: m, sessions: g.filter(({ isoDateTime: e }) => e.startsWith(`${u.Ok}-10-26`)) }), '\n', (0, a.jsx)(n.h2, { id: 'tuesday-october-27', children: 'Tuesday, October 27' }), '\n', (0, a.jsx)(h.F, { year: u.Ok, speakers: m, sessions: g.filter(({ isoDateTime: e }) => e.startsWith(`${u.Ok}-10-27`)) }), '\n', (0, a.jsx)(n.h2, { id: 'wednesday-october-28', children: 'Wednesday, October 28' }), '\n', (0, a.jsx)(h.F, { year: u.Ok, speakers: m, sessions: g.filter(({ isoDateTime: e }) => e.startsWith(`${u.Ok}-10-28`)) }), '\n', (0, a.jsx)(n.h2, { id: 'thursday-october-29', children: 'Thursday, October 29' }), '\n', (0, a.jsx)(h.F, { year: u.Ok, speakers: m, sessions: g.filter(({ isoDateTime: e }) => e.startsWith(`${u.Ok}-10-29`)) }), '\n', !!u.dF && (0, a.jsx)(a.Fragment, { children: (0, a.jsx)('hr', {}) }), '\n', (0, a.jsx)(n.h2, { id: 'organisation', children: 'Organisation' }), '\n', (0, a.jsxs)(n.p, { children: ['Design Systems Week is organised by the NL Design System core team, thanks to the support of the Ministry of the Interior and Kingdom Relations (BZK) and ', (0, a.jsx)(l.N, { href: 'https://international.gebruikercentraal.nl', children: 'User Needs First' }), '.'] }), '\n', (0, a.jsx)(n.h2, { id: 'code-of-conduct', children: 'Code of Conduct' }), '\n', (0, a.jsxs)(n.p, { children: ['All participants of Design Systems Week are expected to abide by our ', (0, a.jsx)(n.a, { href: 'https://github.com/nl-design-system/.github/blob/main/CODE_OF_CONDUCT.md', children: 'NL Design System Code of Conduct' }), ". By signing up for one or more sessions you've agreed to these terms."] }), '\n', (0, a.jsx)(n.h2, { id: 'accessibility', children: 'Accessibility' }), '\n', (0, a.jsxs)(n.p, { children: ['We do our best to organise Design Systems Week accessibly. If you have specific questions or requests, please do reach to the NL Design System core team at ', (0, a.jsx)(n.a, { href: 'mailto:info@nldesignsystem.nl', children: 'info@nldesignsystem.nl' }), '.'] })] });
+   }
+   function y(e = {}) {
+    const { wrapper: n } = { ...(0, t.R)(), ...e.components };
+    return n ? (0, a.jsx)(n, { ...e, children: (0, a.jsx)(v, { ...e }) }) : v(e);
+   }
+  },
   84471(e, n, s) {
-   s.d(n, { bo: () => a, KF: () => m, mJ: () => u, VZ: () => x, cR: () => f, Pv: () => b, qZ: () => r, kD: () => v, QQ: () => S, B2: () => h, Pc: () => l, f4: () => o, GT: () => y, fX: () => t, eQ: () => w, B_: () => j, o_: () => k });
+   s.d(n, { bo: () => a, KF: () => m, mJ: () => p, VZ: () => D, cR: () => f, Pv: () => b, qZ: () => r, kD: () => y, QQ: () => N, B2: () => h, Pc: () => l, f4: () => o, GT: () => w, fX: () => t, eQ: () => v, B_: () => j, o_: () => k });
    const i = JSON.parse('{"sP":{"//":"Update @types/node to match the highest node version here","node":">=24 <=25","pnpm":"^11.4.0"}}'),
     a = { UNKNOWN: 'Todo', HELP_WANTED: 'Help Wanted', COMMUNITY: 'Community', CANDIDATE: 'Candidate', HALL_OF_FAME: 'Hall of fame' },
     t = (e) => e?.toLowerCase().replace(/\s+/gi, '-'),
@@ -144,17 +182,17 @@
    }
    const g = (e) => [...e].sort((e, n) => d.indexOf(e) - d.indexOf(n)),
     m = (e) => {
-     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => p(e));
+     const n = e.flatMap(({ projects: e }) => e).flatMap((e) => u(e));
      return g(c(n));
     },
-    h = (e, n) => u(e).includes(n),
-    p = (e) => {
+    h = (e, n) => p(e).includes(n),
+    u = (e) => {
      const n = / URL \(([^)]+)\)/;
      return g(c(e.tasks.filter(({ name: e, value: s }) => '' !== s && n.test(e)).map(({ name: e }) => n.exec(e)?.[1])));
     },
-    u = (e) => g(c(e.projects.flatMap((e) => p(e)))),
+    p = (e) => g(c(e.projects.flatMap((e) => u(e)))),
     b = (e) => {
-     const n = p(e),
+     const n = u(e),
       s = ((e) => {
        const n = e.tasks.find(({ name: e }) => 'Naam' === e);
        return n?.value || '';
@@ -172,11 +210,11 @@
     },
     k = (e) => e.join('.'),
     j = (e) => '--' + e.join('-'),
-    w = (e, n) => n.reduce((e, n) => e?.[n], e);
-   function v(e, n = []) {
-    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((s) => ('object' == typeof e[s] && null !== e[s] ? v(e[s], [...n, s]) : []));
+    v = (e, n) => n.reduce((e, n) => e?.[n], e);
+   function y(e, n = []) {
+    return Object.hasOwn(e, '$type') ? [n] : Object.keys(e).flatMap((s) => ('object' == typeof e[s] && null !== e[s] ? y(e[s], [...n, s]) : []));
    }
-   function y(e) {
+   function w(e) {
     const n = new Map();
     function s(e) {
      return (n.has(e) || n.set(e, k(e)), n.get(e));
@@ -188,17 +226,17 @@
      if (!e) throw new Error('No pnpm version found in package.json#engines.pnpm');
      return e.replace(/^[\^~>=<]+/, '');
     },
-    x = () => {
+    D = () => {
      const e = i.sP?.node;
      if (!e) throw new Error('No node version found in package.json#engines.node');
      const n = e.match(/^[>]=?\s*(\d+(?:\.\d+)*(?:\.\d+)?)/);
      return n ? n[1] : e.replace(/^[\^~>=<]+/, '');
     },
-    D = new Set(['ics', 'json', 'pdf']),
-    S = (e) => {
+    x = new Set(['ics', 'json', 'pdf']),
+    N = (e) => {
      const n = e.split('/').pop() ?? '',
       s = n.split('.').pop()?.toLowerCase();
-     return void 0 !== s && D.has(s);
+     return void 0 !== s && x.has(s);
     };
   },
   86109(e) {

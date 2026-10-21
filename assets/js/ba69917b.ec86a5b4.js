@@ -53,7 +53,7 @@
    var i = n(50805);
   },
   51130(e) {
-   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":false,"nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
+   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":"/miro","nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
   },
   84701(e, s, n) {
    (n.r(s), n.d(s, { assets: () => m, contentTitle: () => o, default: () => u, frontMatter: () => d, metadata: () => i, toc: () => c }));

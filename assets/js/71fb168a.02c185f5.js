@@ -1,4 +1,4 @@
-/*! For license information please see 71fb168a.80c971f8.js.LICENSE.txt */
+/*! For license information please see 71fb168a.02c185f5.js.LICENSE.txt */
 'use strict';
 (globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
  [31399],
@@ -62,7 +62,7 @@
    var t = n(29181);
   },
   51130(e) {
-   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":false,"nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
+   e.exports = JSON.parse('{"Ok":"2026","p$":true,"dF":false,"Ic":false,"MX":"/miro","nl":{"M":"26 tot en met 29 oktober","Z":"5e"},"en":{"M":"October 26 to October 29","Z":"5th"}}');
   },
   56282(e, s, n) {
    (n.r(s), n.d(s, { assets: () => h, contentTitle: () => g, default: () => b, frontMatter: () => m, isUpComingOrHappening: () => p, metadata: () => t, toc: () => u }));
