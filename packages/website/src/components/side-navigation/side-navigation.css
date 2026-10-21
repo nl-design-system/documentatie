@@ -1,0 +1,17 @@
+ma-side-navigation:defined .denhaag-side-navigation__tree-item-label-wrapper > button {
+  display: inline-flex;
+}
+
+.denhaag-side-navigation__item > details > summary,
+ma-side-navigation:defined .denhaag-side-navigation__tree-item-label-wrapper > details > summary {
+  display: none;
+}
+
+.denhaag-side-navigation__item {
+  display: block !important;
+}
+
+.denhaag-side-navigation__item .denhaag-side-navigation__list {
+  flex-basis: 100%;
+  margin-inline-start: var(--denhaag-side-navigation-list-margin-inline-start);
+}

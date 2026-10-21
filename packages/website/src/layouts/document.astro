@@ -232,15 +232,18 @@ const footerNavigationItems = [
     </PageFooter>
 
     <MobileMenu lang={lang}>
-      <SideNavigation
-        aria-labelledby="mobile-menu-label"
-        items={[items.items]}
-        closeLabel={i18n[lang].close}
-        client:load
-      />
+      <ma-side-navigation>
+        <SideNavigation
+          aria-labelledby="mobile-menu-label"
+          items={[items.items]}
+          closeLabel={i18n[lang].close}
+          openLabel={i18n[lang].open}
+        />
+      </ma-side-navigation>
     </MobileMenu>
 
     <script src="@components/mobile-menu/mobile-menu.client.ts"></script>
+    <script src="@components/side-navigation/side-navigation.client.ts"></script>
     <script>
       import 'invokers-polyfill';
     </script>
