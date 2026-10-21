@@ -3,7 +3,7 @@
   "isUpComing": true,
   "isHappening": false,
   "sessionsAreFinal": false,
-  "miro": false,
+  "miro": "/miro",
   "nl": {
     "dateRange": "26 tot en met 29 oktober",
     "edition": "5e"
