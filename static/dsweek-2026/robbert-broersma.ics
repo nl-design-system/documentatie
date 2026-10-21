@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:In een gezonde open source community legt niemand een ander deadlines op. Hoe voorkom je dan dat teams elkaar blokkeren? \n\nIn de afgelopen zes jaar groeide NL Design System uit tot een succesvolle samenwerking aan open source componenten. Teams dragen componenten bij die ze zelf nodig hebben, zodat deze daarna samen met de rest van de community gebruikt en verbeterd worden.\n\nRobbert deelt wat NL Design System doet om de energie hoog te houden, bijdragen makkelijk te maken, en ruimte te bieden voor feedback. Een praktische sessie voor iedereen die een open source project start, onderhoudt, of benieuwd is naar de manier hoe NL Design System open source werkt.
+UID:8d297704-8de1-402b-8eb9-deaf8c30140c
+SUMMARY:Hoe bouw je een actieve open source community? door Robbert Broersma
+DTSTART;TZID=Europe/Amsterdam:20261029T150000
+DTEND;TZID=Europe/Amsterdam:20261029T154500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/meet/347769278349154?p=5HS1tOwpqJrAnP58Eo
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
