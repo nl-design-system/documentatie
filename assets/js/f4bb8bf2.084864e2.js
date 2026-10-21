@@ -1,0 +1,302 @@
+'use strict';
+(globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
+ [30347],
+ {
+  14881(e, n, o) {
+   o.d(n, { K: () => i, n: () => c });
+   var t = o(13526),
+    l = o(30758),
+    r = o(30662),
+    s = o(37168),
+    a = o(86070);
+   const c = (0, l.forwardRef)(({ as: e, className: n, children: o, ...l }, r) => {
+     const s = e || 'div',
+      c = (0, t.A)('ma-utrecht-accordion', 'utrecht-accordion', n);
+     return (0, a.jsx)(s, { ref: r, className: c, ...l, children: o });
+    }),
+    i = ({ className: e, classNamePanel: n, label: o, heading: l, headingLevel: c, headingApperance: i, ...d }) => {
+     const u = (0, t.A)('utrecht-accordion__section', e),
+      h = (0, t.A)('utrecht-accordion__panel', n);
+     return (0, a.jsxs)('details', { className: u, ...d, children: [(0, a.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, a.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, a.jsx)('span', { className: 'nl-button__icon-start', children: (0, a.jsx)(r.rI, {}) }), (0, a.jsxs)('span', { className: 'nl-button__label', children: [l && (0, a.jsx)(s.D, { level: c, appearance: i, children: l }), o] })] }) }), (0, a.jsx)('div', { className: h, children: d.children })] });
+    };
+  },
+  18439(e, n, o) {
+   o.d(n, { R: () => s, x: () => a });
+   var t = o(30758);
+   const l = {},
+    r = t.createContext(l);
+   function s(e) {
+    const n = t.useContext(r);
+    return t.useMemo(
+     function () {
+      return 'function' == typeof e ? e(n) : { ...n, ...e };
+     },
+     [n, e],
+    );
+   }
+   function a(e) {
+    let n;
+    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(l) : e.components || l) : s(e.components)), t.createElement(r.Provider, { value: n }, e.children));
+   }
+  },
+  28369(e, n, o) {
+   o.d(n, { M: () => i });
+   var t = o(46447),
+    l = o(16194),
+    r = o(30758),
+    s = o(56528);
+   const a = {
+    plain: { color: 'var(--nlds-code-block-color)', backgroundColor: 'var(--nlds-code-block-background-color)' },
+    styles: [
+     { types: ['maybe-class-name'], style: { color: 'var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))' } },
+     { types: ['comment'], style: { color: 'var(--nlds-code-block-comment-color)', fontStyle: 'italic' } },
+     { types: ['prolog'], style: { color: 'var(--nlds-code-block-prolog-color)', fontStyle: 'italic' } },
+     { types: ['cdata'], style: { color: 'var(--nlds-code-block-cdata-color)', fontStyle: 'italic' } },
+     { types: ['punctuation'], style: { color: 'var(--nlds-code-block-punctuation-color)' } },
+     { types: ['deleted'], style: { color: 'var(--nlds-code-block-deleted-color)', fontStyle: 'italic' } },
+     { types: ['symbol'], style: { color: 'var(--nlds-code-block-symbol-color)' } },
+     { types: ['property'], style: { color: 'var(--nlds-code-block-property-color)' } },
+     { types: ['tag'], style: { color: 'var(--nlds-code-block-tag-color)' } },
+     { types: ['operator'], style: { color: 'var(--nlds-code-block-operator-color)' } },
+     { types: ['keyword'], style: { color: 'var(--nlds-code-block-keyword-color)' } },
+     { types: ['boolean'], style: { color: 'var(--nlds-code-block-boolean-color)' } },
+     { types: ['number'], style: { color: 'var(--nlds-code-block-number-color)' } },
+     { types: ['constant'], style: { color: 'var(--nlds-code-block-constant-color)' } },
+     { types: ['function'], style: { color: 'var(--nlds-code-block-function-color)' } },
+     { types: ['builtin'], style: { color: 'var(--nlds-code-block-builtin-color)' } },
+     { types: ['char'], style: { color: 'var(--nlds-code-block-char-color)' } },
+     { types: ['selector'], style: { color: 'var(--nlds-code-block-selector-color)', fontStyle: 'italic' } },
+     { types: ['doctype'], style: { color: 'var(--nlds-code-block-doctype-color)', fontStyle: 'italic' } },
+     { types: ['attr-name'], style: { color: 'var(--nlds-code-block-attr-name-color)', fontStyle: 'italic' } },
+     { types: ['inserted'], style: { color: 'var(--nlds-code-block-inserted-color)', fontStyle: 'italic' } },
+     { types: ['string'], style: { color: 'var(--nlds-code-block-string-color)' } },
+     { types: ['url'], style: { color: 'var(--nlds-code-block-url-color)' } },
+     { types: ['entity'], style: { color: 'var(--nlds-code-block-entity-color)' } },
+     { types: ['class-name'], style: { color: 'var(--nlds-code-block-class-name-color)' } },
+     { types: ['atrule'], style: { color: 'var(--nlds-code-block-atrule-color)' } },
+     { types: ['attr-value'], style: { color: 'var(--nlds-code-block-attr-value-color)' } },
+     { types: ['regex'], style: { color: 'var(--nlds-code-block-regex-color)' } },
+     { types: ['important'], style: { color: 'var(--nlds-code-block-important-color)', fontWeight: 'bold' } },
+     { types: ['variable'], style: { color: 'var(--nlds-code-block-variable-color)' } },
+     { types: ['bold'], style: { fontWeight: 'bold' } },
+     { types: ['italic'], style: { fontStyle: 'italic' } },
+    ],
+   };
+   var c = o(86070);
+   function i({ lineNumber: e, syntax: n, textContent: o, trim: i }) {
+    let d = o;
+    const { title: u, type: h } = (0, r.useContext)(s.x),
+     p = (0, r.useId)();
+    return (i && (d = d.trim()), (0, c.jsx)(l.f4, { theme: a, code: d, language: n || '', children: ({ style: n, tokens: o, getLineProps: l, getTokenProps: r }) => (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)('span', { hidden: !0, id: p, children: ['codevoorbeeld ', h ? `\u201c${h}\u201d` : '', ' ', u ? ': ' : ' ', u] }), (0, c.jsx)(t.NG, { tabIndex: 0, role: u ? 'region' : void 0, 'aria-labelledby': p, style: n, children: o.map((n, o) => (0, c.jsxs)('span', { ...l({ line: n }), children: [e && (0, c.jsx)('span', { children: o + 1 }), n.map((e, n) => (0, c.jsx)('span', { ...r({ token: e }) }, n)), '\n'] }, o)) })] }) }));
+   }
+  },
+  30662(e, n, o) {
+   o.d(n, { D4: () => T, GP: () => N, KC: () => D, Nd: () => _, Rt: () => C, Vj: () => w, Wk: () => P, bz: () => z, cB: () => F, e5: () => L, hY: () => $, jK: () => R, jP: () => I, ob: () => M, rI: () => A, t4: () => G, vP: () => S, vg: () => H });
+   var t = o(92081),
+    l = o(90578),
+    r = o(96345),
+    s = o(64249),
+    a = o(4603),
+    c = o(91525),
+    i = o(23436),
+    d = o(1375),
+    u = o(4077),
+    h = o(58315),
+    p = o(73563),
+    m = o(35193),
+    v = o(82999),
+    x = o(13088),
+    j = o(43864),
+    g = o(24214),
+    b = o(79532),
+    f = o(60529),
+    y = o(86070);
+   const k = { width: '1em', height: '1em' },
+    _ = () => (0, y.jsx)(t.A, { ...k }),
+    N = () => (0, y.jsx)(l.A, { ...k }),
+    A = () => (0, y.jsx)(r.A, { ...k }),
+    w = () => (0, y.jsx)(s.A, { ...k }),
+    z = () => (0, y.jsx)(a.A, { ...k }),
+    C = () => (0, y.jsx)(c.A, { ...k }),
+    F = () => (0, y.jsx)(i.A, { ...k }),
+    S = () => (0, y.jsx)(d.A, { ...k }),
+    R = () => (0, y.jsx)(u.A, { ...k }),
+    I = () => (0, y.jsx)(h.A, { ...k }),
+    G = () => (0, y.jsx)(p.A, { ...k }),
+    T = () => (0, y.jsx)(m.A, { ...k }),
+    $ = () => (0, y.jsx)(v.A, { ...k }),
+    D = () => (0, y.jsx)(x.A, { ...k }),
+    P = () => (0, y.jsx)(j.A, { ...k }),
+    L = () => (0, y.jsx)(g.A, { ...k }),
+    M = () => (0, y.jsx)(b.A, { ...k }),
+    H = () => (0, y.jsx)(f.A, { ...k });
+  },
+  38953(e, n, o) {
+   o.d(n, { H: () => y });
+   var t = o(28369),
+    l = o(46447),
+    r = o(13526),
+    s = o(68148),
+    a = o(9016),
+    c = o(69303),
+    i = o(91635),
+    d = o(30734),
+    u = o(30758),
+    h = o(31186),
+    p = o(65904),
+    m = o.n(p),
+    v = o(14881),
+    x = o(46847),
+    j = o(86070);
+   const g = ({ children: e }) => (0, j.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: (0, j.jsx)(l.yo, { className: (0, r.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, j.jsx)(l.fz, { className: 'nlds-canvas__example-paragraph', children: e }) }) });
+   g.displayName = 'ParagraphContainer';
+   const b = ({ children: e }) => (0, j.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: (0, j.jsx)(l.yo, { className: (0, r.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: e }) });
+   b.displayName = 'DocumentContainer';
+   const f = ({ children: e }) => (0, j.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: e });
+   f.displayName = 'SurfaceContainer';
+   const y = globalThis.isAstro
+    ? ({ language: e, className: n, code: o = '<p>No code provided</p>', rawCode: t, copyCode: l, defaultExpandedCode: s, designTokens: a }) => {
+       const c = 'string' == typeof o ? o : t || '',
+        i = 'string' == typeof o ? m().highlight(o, m().languages[e], e) : m().highlight(t || '', m().languages[e], e);
+       return (0, j.jsxs)('div', { className: (0, r.A)('ma-canvas-astro', n), children: [(0, j.jsx)('div', { className: 'voorbeeld-theme utrecht-root', style: a, children: (0, j.jsx)('div', { className: 'ma-canvas-astro__example utrecht-html ma-flow', dangerouslySetInnerHTML: { __html: c } }) }), (0, j.jsx)(v.n, { children: (0, j.jsxs)(v.K, { label: 'Code', open: s, children: [(0, j.jsx)('pre', { className: 'language-html nl-code-block', tabIndex: 0, children: (0, j.jsx)('code', { className: 'language-html nl-code-block__code', dangerouslySetInnerHTML: { __html: i } }) }), 'allow' === l && (0, j.jsx)(x.$, { 'data-copy-code': c, purpose: 'secondary', children: 'Kopieer code' })] }) })] });
+      }
+    : ({ code: e, copy: n = !0, defaultExpandedCode: o = !1, displayCode: p = !0, children: m, container: v = 'document', language: x, designTokens: y }) => {
+       const k = 'function' == typeof m ? m() : m,
+        _ = 'function' == typeof e ? e() : (0, u.isValidElement)(e) ? e : void 0,
+        N = 'string' == typeof e ? e : h.qV(_ || k),
+        [A, w] = (0, u.useState)(N),
+        [z, C] = (0, u.useState)(o);
+       (0, u.useEffect)(() => {
+        (async () => {
+         const e = await d.Ay.format(N, { parser: x, plugins: [s.A, a.Ay, c.Ay, i.Ay], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
+         w(e);
+        })();
+       }, [N]);
+       const F = (0, u.useId)();
+       let S = u.Fragment;
+       return (
+        'paragraph' === v ? (S = g) : 'document' === v ? (S = b) : 'surface' === v && (S = f),
+        (0, j.jsxs)('div', {
+         className: (0, r.A)('nlds-canvas'),
+         children: [
+          k && (0, j.jsx)('div', { className: (0, r.A)('nlds-canvas__example'), children: (0, j.jsx)('div', { className: 'voorbeeld-theme', style: y, children: (0, j.jsx)(S, { children: (0, j.jsx)(l.v$, { children: k }) }) }) }),
+          p &&
+           (0, j.jsx)('div', {
+            className: (0, r.A)('nlds-canvas__toolbar'),
+            children: (0, j.jsx)(l.$n, {
+             className: (0, r.A)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
+             appearance: 'subtle-button',
+             onClick: () => {
+              C(!z);
+             },
+             'aria-expanded': z,
+             'aria-controls': F,
+             children: z ? 'Verberg code' : 'Bekijk code',
+            }),
+           }),
+          p &&
+           (0, j.jsxs)('div', {
+            className: (0, r.A)('nlds-canvas__code-block', !n && 'nlds-canvas__code-block--user-select-none'),
+            id: F,
+            hidden: !z,
+            children: [
+             (0, j.jsx)(t.M, { codeBlockLabel: 'Codevoorbeeld', syntax: x, textContent: A, trim: !0 }),
+             n &&
+              (0, j.jsx)('div', {
+               className: (0, r.A)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
+               children: (0, j.jsx)(l.$n, {
+                className: (0, r.A)('nlds-canvas__button', 'nlds-canvas__copy-button'),
+                appearance: 'subtle-button',
+                onClick: () => {
+                 navigator.clipboard.writeText(A).catch((e) => console.error('Copy code failed', e));
+                },
+                children: 'Kopieer',
+               }),
+              }),
+            ],
+           }),
+         ],
+        })
+       );
+      };
+  },
+  46847(e, n, o) {
+   o.d(n, { $: () => t.$n });
+   var t = o(50805);
+  },
+  54336(e, n, o) {
+   (o.r(n), o.d(n, { assets: () => j, contentTitle: () => x, default: () => f, frontMatter: () => v, metadata: () => t, toc: () => g }));
+   const t = JSON.parse('{"id":"richtlijnen/formulieren/visual-design/field-contrast/index","title":"Geef duidelijk aan waar een invoerveld is","description":"Richtlijnen om met contrast duidelijk aan te geven waar een invoerveld is.","source":"@site/docs/richtlijnen/formulieren/visual-design/1-field-contrast/index.mdx","sourceDirName":"richtlijnen/formulieren/visual-design/1-field-contrast","slug":"/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar","permalink":"/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/visual-design/1-field-contrast/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Geef duidelijk aan waar een invoerveld is","title_sm":"Invoerveld goed zichtbaar","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Invoerveld goed zichtbaar","pagination_label":"Invoerveld goed zichtbaar","description":"Richtlijnen om met contrast duidelijk aan te geven waar een invoerveld is.","slug":"/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar","keywords":["labels","formulier","design","code"]},"sidebar":"richtlijnen","previous":{"title":"Visueel ontwerp van formulieren","permalink":"/richtlijnen/formulieren/visueel-ontwerp/"},"next":{"title":"Tekst goed zichtbaar","permalink":"/richtlijnen/formulieren/visueel-ontwerp/tekst-goed-zichtbaar"}}');
+   var l = o(86070),
+    r = o(18439),
+    s = o(56672),
+    a = o(38953),
+    c = o(56528);
+   function i(e) {
+    return (0, l.jsxs)(l.Fragment, { children: ['\n', '\n', (0, l.jsx)(c.$, { appearance: 'do', title: 'Geef invoerveld een duidelijke rand met voldoende contrast.', description: 'Dit voorbeeld heeft [een contrast van 5.54:1](/contrast/?color=%23006FA1&background-color=%23ffffff)', children: (0, l.jsx)(a.H, { language: 'html', designTokens: { '--utrecht-textbox-background-color': '#ffffff', '--utrecht-textbox-border-color': '#006FA1' }, children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('label', { htmlFor: 'contrast-input-goed', children: 'Voorbeeld invoerveld met goed contrast' }), (0, l.jsx)('input', { type: 'text', id: 'contrast-input-goed' })] }) }) }), '\n', (0, l.jsx)(c.$, { appearance: 'do', title: 'Geef een radiobutton voldoende kleurcontrast.', description: 'Dit voorbeeld heeft [een contrast van 5.54:1](/contrast/?color=%23006FA1&background-color=%23ffffff)', children: (0, l.jsx)(a.H, { language: 'html', designTokens: { '--utrecht-radio-button-background-color': '#FFFFFF', '--utrecht-radio-button-border-color': '#006FA1' }, children: () => (0, l.jsx)(l.Fragment, { children: (0, l.jsxs)('fieldset', { children: [(0, l.jsx)('legend', { children: 'Kies je kleur' }), (0, l.jsxs)('div', { children: [(0, l.jsx)('input', { type: 'radio', id: 'radio1', name: 'kleur' }), (0, l.jsx)('label', { htmlFor: 'radio1', children: 'Blauw' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)('input', { type: 'radio', id: 'radio2', name: 'kleur' }), (0, l.jsx)('label', { htmlFor: 'radio2', children: 'Groen' })] }), (0, l.jsxs)('div', { children: [(0, l.jsx)('input', { type: 'radio', id: 'radio3', name: 'kleur' }), (0, l.jsx)('label', { htmlFor: 'radio3', children: 'Rood' })] })] }) }) }) }), '\n', (0, l.jsx)(c.$, { appearance: 'dont', title: 'Geef invoerveld een slecht zichtbare rand met onvoldoende contrast.', description: 'Dit voorbeeld heeft [een contrast van 1.08:1](/contrast/?color=%23f8f5f1&background-color=%23ffffff)', children: (0, l.jsx)(a.H, { language: 'html', designTokens: { '--utrecht-textbox-background-color': '#ffffff', '--utrecht-textbox-border-color': '#f8f4f1' }, children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('label', { htmlFor: 'contrast-input-slecht', children: 'Voorbeeld invoerveld met slecht contrast' }), (0, l.jsx)('input', { type: 'text', id: 'contrast-input-slecht' })] }) }) })] });
+   }
+   function d(e = {}) {
+    const { wrapper: n } = { ...(0, r.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(i, { ...e }) }) : i();
+   }
+   function u(e) {
+    const n = { h1: 'h1', header: 'header', p: 'p', ...(0, r.R)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.header, { children: (0, l.jsx)(n.h1, { id: 'geef-duidelijk-aan-waar-een-invoerveld-is', children: 'Geef duidelijk aan waar een invoerveld is' }) }), '\n', (0, l.jsx)(n.p, { children: 'Gebruikers moeten herkennen waar en hoe groot het invoerveld, radiobutton of checkbox is.' }), '\n', (0, l.jsx)(n.p, { children: 'Het kleurcontrast van de randen (borders) ten opzichte van de achtergrondkleur moet daarom 3:1 of hoger zijn.' })] });
+   }
+   function h(e = {}) {
+    const { wrapper: n } = { ...(0, r.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(u, { ...e }) }) : u(e);
+   }
+   function p(e) {
+    const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, r.R)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, l.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/1.4.11/', children: 'Succescriterium 1.4.11 Contrast van niet-tekstuele content' }) }), '\n'] })] });
+   }
+   function m(e = {}) {
+    const { wrapper: n } = { ...(0, r.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(p, { ...e }) }) : p(e);
+   }
+   const v = { title: 'Geef duidelijk aan waar een invoerveld is', title_sm: 'Invoerveld goed zichtbaar', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Invoerveld goed zichtbaar', pagination_label: 'Invoerveld goed zichtbaar', description: 'Richtlijnen om met contrast duidelijk aan te geven waar een invoerveld is.', slug: '/richtlijnen/formulieren/visueel-ontwerp/invoerveld-goed-zichtbaar', keywords: ['labels', 'formulier', 'design', 'code'] },
+    x = void 0,
+    j = {},
+    g = [{ value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...s.RM];
+   function b(e) {
+    return (0, l.jsxs)(l.Fragment, { children: ['\n', '\n', (0, l.jsx)(h, {}), '\n', (0, l.jsx)(d, {}), '\n', (0, l.jsx)(m, {}), '\n', (0, l.jsx)(s.Ay, {})] });
+   }
+   function f(e = {}) {
+    const { wrapper: n } = { ...(0, r.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(b, { ...e }) }) : b();
+   }
+  },
+  56528(e, n, o) {
+   o.d(n, { $: () => d, x: () => i });
+   var t = o(30662),
+    l = o(46447),
+    r = o(13526),
+    s = o(94988),
+    a = o(30758),
+    c = o(86070);
+   const i = (0, a.createContext)({}),
+    d = ({ title: e, appearance: n, description: o, children: a, figure: d }) => {
+     const u = { do: 'Doen', dont: 'Niet doen' },
+      h = d ? 'figure' : 'div',
+      p = d ? 'figcaption' : 'div',
+      m = 'string' == typeof o ? (0, c.jsx)(s.oz, { components: { a: l.N_ }, children: o }) : o;
+     return (0, c.jsxs)(h, { className: (0, r.A)('nlds-guideline', `nlds-guideline--${n}`), id: 'string' == typeof e ? e?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, c.jsxs)(p, { className: 'nlds-guideline__description', children: ['dont' === n ? (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(l.fz, { className: (0, r.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(l.In, { 'aria-hidden': 'true', className: 'nlds-guideline__icon', children: (0, c.jsx)(t.jP, {}) }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.dont })] }), (0, c.jsx)(l.fz, { children: e })] }) : (0, c.jsxs)(c.Fragment, { children: [(0, c.jsxs)(l.fz, { className: (0, r.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, c.jsx)(l.In, { 'aria-hidden': 'true', className: 'nlds-guideline__icon', children: (0, c.jsx)(t.jK, {}) }), (0, c.jsx)('span', { className: 'nlds-guideline__title', children: u.do })] }), (0, c.jsx)(l.fz, { children: e })] }), m] }), (0, c.jsx)('div', { className: 'nlds-guideline__example', children: (0, c.jsx)(i.Provider, { value: { title: e, type: u[n] }, children: a }) })] });
+    };
+  },
+  56672(e, n, o) {
+   o.d(n, { Ay: () => a, RM: () => r });
+   var t = o(86070),
+    l = o(18439);
+   const r = [{ value: 'Over deze richtlijnen', id: 'over-deze-richtlijnen', level: 2 }];
+   function s(e) {
+    const n = { a: 'a', h2: 'h2', p: 'p', strong: 'strong', ...(0, l.R)(), ...e.components };
+    return (0, t.jsxs)(t.Fragment, { children: [(0, t.jsx)(n.h2, { id: 'over-deze-richtlijnen', children: 'Over deze richtlijnen' }), '\n', (0, t.jsxs)(n.p, { children: ['Deze richtlijnen worden onderhouden door NL Design System en zijn op dit moment in ', (0, t.jsx)(n.strong, { children: 'beta' }), '.'] }), '\n', (0, t.jsxs)(n.p, { children: ['We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen?\n', (0, t.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Open een issue op GitHub' }), ' en deel je mening.'] })] });
+   }
+   function a(e = {}) {
+    const { wrapper: n } = { ...(0, l.R)(), ...e.components };
+    return n ? (0, t.jsx)(n, { ...e, children: (0, t.jsx)(s, { ...e }) }) : s(e);
+   }
+  },
+ },
+]);

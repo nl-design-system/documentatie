@@ -31,7 +31,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b7c45ef1.css" />
-  <script src="/assets/js/runtime~main.3ee6ee53.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.f23b70e3.js" defer="defer"></script>
   <script src="/assets/js/main.caea6ebd.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -1457,7 +1457,7 @@
               <header></header>
               <p>Er zijn eindeloos veel varianten van de tabel, daarom is het niet mogelijk op één pagina een volledig overzicht te hebben met tips. Op deze pagina zullen we algemene tips geven. In de toekomst willen we losse pagina&#x27;s aanbieden voor speciale soorten tabellen.</p>
               <h3 id="duidelijke-koppen" class="utrecht-heading-3">Duidelijke koppen</h3>
-              <p>In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om snel informatie over te slaan die niet relevant is. De data in tabellen kan op drie niveaus koppen bevatten: kop van de tabel (<em class="utrecht-emphasis utrecht-emphasis--stressed">caption</em>), kop van de kolom (<em class="utrecht-emphasis utrecht-emphasis--stressed">column header</em>) en kop van de rij (<em class="utrecht-emphasis utrecht-emphasis--stressed">row header</em>). Het is belangrijk dat je precies de goede HTML gebruikt voor elke kop:</p>
+              <p>In tabellen staat vaak veel informatie en daarom helpen koppen gebruikers om snel informatie over te slaan die niet relevant is. De data in tabellen kan op drie niveaus koppen bevatten: kop van de tabel (<i lang="en">caption</i>), kop van de kolom (<i lang="en">column header</i>) en kop van de rij (<i lang="en">row header</i>). Het is belangrijk dat je precies de goede HTML gebruikt voor elke kop:</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">&lt;caption&gt;</code> voor de kop van de tabel</li>
                <li><code class="utrecht-code">&lt;th scope=&quot;col&quot;&gt;</code> voor de kop van de kolom</li>
@@ -1501,9 +1501,9 @@
                <li><code class="utrecht-code">aria-sort=&quot;ascending&quot;</code> voor &quot;oplopende volgorde&quot;, bijvoorbeeld namen van A tot Z (namen), van bedragen en aantallen van klein naar groot, geplande activiteiten van eerdere naar latere datums</li>
                <li><code class="utrecht-code">aria-sort=&quot;descending&quot;</code> voor &quot;aflopende volgorde&quot;, bijvoorbeeld namen van Z naar A, ontvangen berichten van nieuw naar oud, bedragen en aantallen van groot naar klein</li>
               </ul>
-              <h3 id="responsive-tabellen" class="utrecht-heading-3"><em class="utrecht-emphasis utrecht-emphasis--stressed">Responsive</em> tabellen</h3>
+              <h3 id="responsive-tabellen" class="utrecht-heading-3"><i lang="en">Responsive</i> tabellen</h3>
               <p>Volgens het <a href="/wcag/1.4.10/" class="utrecht-link utrecht-link--html-a">WCAG-succescriterium 1.4.10 Reflow</a> moeten pagina&#x27;s leesbaar zijn bij een breedte van 1280px met 400% zoom, zonder dat horizontaal scrollen nodig is. Datatabellen worden genoemd als uitzondering, maar een voor een betere gebruiksvriendelijkheid zijn er technieken om te herkennen dat een tabel niet goed bekeken kan worden en in die situaties een alternatieve layout te gebruiken. Met CSS media queries of container queries kun je herkennen dat er niet voldoende ruimte is voor een tabel, en vervolgens heb je twee opties:</p>
-              <p>Techniek 1: de bestaande <code class="utrecht-code">table</code>-HTML niet te tonen als tabel door met CSS een andere <code class="utrecht-code">display</code> te gebruiken voor <code class="utrecht-code">table</code>, <code class="utrecht-code">td</code> en alle andere tabel-elementen. <em class="utrecht-emphasis utrecht-emphasis--stressed">Tabel-elementen niet weergeven als tabel kan de toegankelijkheid van de informatie kapot maken.</em> Deze techniek gaat in de praktijk heel vaak mis. Gebruik deze techniek alleen als je vaak gebruikerstesten doet voor toegankelijkheid.</p>
+              <p>Techniek 1: de bestaande <code class="utrecht-code">table</code>-HTML niet te tonen als tabel door met CSS een andere <code class="utrecht-code">display</code> te gebruiken voor <code class="utrecht-code">table</code>, <code class="utrecht-code">td</code> en alle andere tabel-elementen. <strong>Tabel-elementen niet weergeven als tabel kan de toegankelijkheid van de informatie kapot maken.</strong> Deze techniek gaat in de praktijk heel vaak mis. Gebruik deze techniek alleen als je vaak gebruikerstesten doet voor toegankelijkheid.</p>
               <p>Techniek 2: HTML aanbieden in twee varianten. Naast de HTML <code class="utrecht-code">&lt;table&gt;</code> element, ook de gegevens tonen met HTML elementen die niet zoveel ruimte nodig hebben in twee dimensies, zoals koppen met daaronder een datalijst. Afhankelijk van de situatie verberg je de éne of de andere variant.</p>
               <h3 id="hoe-het-niet-moet" class="utrecht-heading-3">Hoe het niet moet</h3>
               <h4 id="koppen-niet-gekoppeld" class="utrecht-heading-4">Koppen van tabel niet gekoppeld aan datacellen</h4>
@@ -1596,9 +1596,9 @@
               <p>Je moet goed kunnen zien welke cellen bij elkaar horen. Een tabel die breed is en relatief weinig informatie bevat, is moeilijk te begrijpen als er veel lege ruimte zit tussen de cellen.</p>
               <p>Voorkom teveel lege ruimte: gebruik bijvoorbeeld niet <code class="utrecht-code">width: 100%</code> voor een tabel met openingstijden. Kies per tabel welke breedte het meest duidelijk is. Als er lege ruimte ontstaat, zorg dan dat die niet tussen kolommen is, maar plaats de lege ruimte aan het eind van de laatste kolom.</p>
               <h4 id="geen-eigen-css-display" class="utrecht-heading-4">Tabel niet toegankelijk door eigen CSS <code class="utrecht-code">display</code></h4>
-              <p>Screenreaders maken het begrijpen van HTML-tabellen makkelijk, want ze kunnen voor elke datacel de context geven. Hier voor is het belangrijk dat de automatische tools zoals screenreaders uit de code begrijpen wat de <em class="utrecht-emphasis utrecht-emphasis--stressed">column header</em> is en wat de <em class="utrecht-emphasis utrecht-emphasis--stressed">row header</em> is.</p>
-              <p>Wanneer je met CSS <code class="utrecht-code">display</code> aanpast om een tabel een andere layout te geven, dan is niet meer een tabel in de <em class="utrecht-emphasis utrecht-emphasis--stressed">accessibility tree</em> en maak je de relatie tussen de <em class="utrecht-emphasis utrecht-emphasis--stressed">data cell</em> en de <em class="utrecht-emphasis utrecht-emphasis--stressed">header cell</em> kapot. Tabellen waarvan de <code class="utrecht-code">display</code> wordt aangepast werken daarom niet meer in screenreaders, tenzij de <em class="utrecht-emphasis utrecht-emphasis--stressed">accessibility tree</em> door extra code wordt hersteld.</p>
-              <p>Je kunt voorkomen dat de <em class="utrecht-emphasis utrecht-emphasis--stressed">accessibility tree</em> anders wordt opgebouwd. Je moet dan op élk element van de tabel expliciet zeggen welke <code class="utrecht-code">role</code> het heeft. Omdat deze techniek veel extra werk geeft en foutgevoelig is, raden wij aan om alternatieven te kiezen zoals niet <code class="utrecht-code">display</code> aanpassen of twee varianten maken.</p>
+              <p>Screenreaders maken het begrijpen van HTML-tabellen makkelijk, want ze kunnen voor elke datacel de context geven. Hier voor is het belangrijk dat de automatische tools zoals screenreaders uit de code begrijpen wat de <i lang="en">column header</i> is en wat de <i lang="en">row header</i> is.</p>
+              <p>Wanneer je met CSS <code class="utrecht-code">display</code> aanpast om een tabel een andere layout te geven, dan is niet meer een tabel in de <i lang="en">accessibility tree</i> en maak je de relatie tussen de <i lang="en">data cell</i> en de <i lang="en">header cell</i> kapot. Tabellen waarvan de <code class="utrecht-code">display</code> wordt aangepast werken daarom niet meer in screenreaders, tenzij de <i lang="en">accessibility tree</i> door extra code wordt hersteld.</p>
+              <p>Je kunt voorkomen dat de <i lang="en">accessibility tree</i> anders wordt opgebouwd. Je moet dan op élk element van de tabel expliciet zeggen welke <code class="utrecht-code">role</code> het heeft. Omdat deze techniek veel extra werk geeft en foutgevoelig is, raden wij aan om alternatieven te kiezen zoals niet <code class="utrecht-code">display</code> aanpassen of twee varianten maken.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">&lt;caption id=&quot;unique-id-here&quot;&gt;</code> samen met <code class="utrecht-code">&lt;table aria-labelledby=&quot;unique-id-here&quot;&gt;</code></li>
                <li><code class="utrecht-code">&lt;table role=&quot;table&quot;&gt;</code></li>
@@ -1672,7 +1672,7 @@
              <li><a href="#duidelijke-koppen" class="table-of-contents__link toc-highlight">Duidelijke koppen</a></li>
              <li><a href="#sorteer-de-tabelrijen" class="table-of-contents__link toc-highlight">Sorteer de tabelrijen</a></li>
              <li>
-              <a href="#responsive-tabellen" class="table-of-contents__link toc-highlight"><em>Responsive</em> tabellen</a>
+              <a href="#responsive-tabellen" class="table-of-contents__link toc-highlight"><i>Responsive</i> tabellen</a>
              </li>
              <li><a href="#hoe-het-niet-moet" class="table-of-contents__link toc-highlight">Hoe het niet moet</a></li>
              <li><a href="#links" class="table-of-contents__link toc-highlight">Links</a></li>

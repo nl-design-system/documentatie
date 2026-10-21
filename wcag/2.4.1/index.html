@@ -39,7 +39,7 @@
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
   <link rel="stylesheet" href="/assets/css/styles.b7c45ef1.css" />
-  <script src="/assets/js/runtime~main.3ee6ee53.js" defer="defer"></script>
+  <script src="/assets/js/runtime~main.f23b70e3.js" defer="defer"></script>
   <script src="/assets/js/main.caea6ebd.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
@@ -551,7 +551,7 @@
                <li>Controleer ook het kleurcontrast van de zichtbare skiplink, dit wordt vaak vergeten.</li>
                <li>Controleer of na het aanklikken van de link, de toetsenbordfocus zich ook echt verplaats naar het linkdoel.</li>
               </ul>
-              <p>Het plaatsen van een skiplink binnen de header-landmark is <em class="utrecht-emphasis utrecht-emphasis--stressed">best practice</em>. Maar, staat de skiplink bovenaan de pagina als eerste focusable element en buiten een landmark, dat is dit <strong>geen</strong> overtreding van dit WCAG-succescriterium.</p>
+              <p>Het plaatsen van een skiplink binnen de header-landmark is <i lang="en">best practice</i>. Maar, staat de skiplink bovenaan de pagina als eerste focusable element en buiten een landmark, dat is dit <strong>geen</strong> overtreding van dit WCAG-succescriterium.</p>
               <h2 id="veelgemaakte-fouten" class="utrecht-heading-2">Veelgemaakte fouten</h2>
               <h3 id="fout-de-toetsenbordfocus-verplaatst-zich-niet-na-aanklikken-skiplink" class="utrecht-heading-3">Fout: de toetsenbordfocus verplaatst zich niet na aanklikken skiplink</h3>
               <p>Als een skiplink met alleen JavaScript wordt gebouwd, via bijvoorbeeld een <code class="utrecht-code">scrollIntoView()</code> method, verandert alleen de zichtbare focus, maar niet de toetsenbordfocus. Voeg tabindex=&quot;-1&quot; toe aan het doelelement om het de focus te kunnen geven met <code class="utrecht-code">tabIndex = -1</code>. Zorg ervoor dat ook de toetsenbordfocus zich verplaatst met <code class="utrecht-code">focus()</code>.</p>
