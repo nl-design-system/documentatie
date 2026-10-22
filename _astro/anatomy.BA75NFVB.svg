@@ -1,0 +1,9 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Een  gekleurd vierkantje, aangeduid met het cijfer 1.">
+<rect x="0.5" y="0.5" width="959" height="539" fill="white"/>
+<rect x="0.5" y="0.5" width="959" height="539" stroke="#CCCCCC"/>
+<rect x="463.5" y="253.5" width="33" height="33" fill="#5315F6"/>
+<rect x="463.5" y="253.5" width="33" height="33" stroke="#E4E7EC"/>
+<rect x="384" y="254" width="32" height="32" rx="16" fill="#DE00A4"/>
+<path d="M402.502 264.368V276.5H400V266.888L397.336 268.526L396.22 266.798L400.252 264.368H402.502Z" fill="white"/>
+<path d="M416 270H464" stroke="#DE00A4" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel"/>
+</svg>
