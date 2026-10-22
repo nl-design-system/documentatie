@@ -62,7 +62,7 @@ globalThis.unlistedPages = new Set();
 
 globalThis.isAstro = true;
 
-const mdxClientLoad = clientLoadPlugin(['Checklist', 'DesignTokens', 'NewsletterSignUp', 'DSWSession']);
+const mdxClientLoad = clientLoadPlugin(['Checklist', 'DesignTokens', 'NewsletterSignUp']);
 
 const markdownProcessor = unified({
   remarkPlugins: sharedPlugins.remarkPlugins,
