@@ -72,9 +72,7 @@ export const DSWSession = ({
             .join(' & ')}
       </Paragraph>
       {videoIds.length > 0 &&
-        videoIds.map((vidId) => (
-          <VideoPlayer key={vidId} id={vidId} title={session.subject} style={{ marginBlock: '20px' }} lang={lang} />
-        ))}
+        videoIds.map((vidId) => <VideoPlayer key={vidId} id={vidId} title={session.subject} lang={lang} />)}
       {session && session.isoDateTime && session.isoDateTime > dateNow ? (
         <Paragraph>
           <time dateTime={session.isoDateTime}>
