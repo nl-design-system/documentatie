@@ -517,9 +517,6 @@ importers:
       react-hook-form:
         specifier: 7.71.1
         version: 7.71.1(react@18.3.1)
-      react-lite-youtube-embed:
-        specifier: 3.5.1
-        version: 3.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-markdown:
         specifier: 10.1.0
         version: 10.1.0(@types/react@18.3.27)(react@18.3.1)(supports-color@7.2.0)
@@ -7640,12 +7637,6 @@ packages:
 
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
-
-  react-lite-youtube-embed@3.5.1:
-    resolution: {integrity: sha512-nUxkYNt0mLQhbUpwxTqrHVjM35MuE7d5s0ZQB+atzE4lweBi293cAQFirslYvFf0YGXAGeVhvm9PrRhHitx29A==}
-    peerDependencies:
-      react: '>=18.2.0'
-      react-dom: '>=18.2.0'
 
   react-markdown@10.1.0:
     resolution: {integrity: sha512-qKxVopLT/TyA6BX3Ue5NwabOsAzm0Q7kAPwq6L+wWDwisYs7R8vZ0nRXqq6rkueboxpkjvLGU9fWifiX/ZZFxQ==}
@@ -17449,11 +17440,6 @@ snapshots:
   react-is@16.13.1: {}
 
   react-is@17.0.2: {}
-
-  react-lite-youtube-embed@3.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
 
   react-markdown@10.1.0(@types/react@18.3.27)(react@18.3.1)(supports-color@7.2.0):
     dependencies:
