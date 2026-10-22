@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - release--website-next
   pull_request:
 
 concurrency:
