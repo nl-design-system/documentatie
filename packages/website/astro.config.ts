@@ -127,7 +127,7 @@ export default defineConfig({
       remarkPlugins: [
         ...sharedPlugins.remarkPlugins,
         remarkCanvasFix,
-        clientLoadPlugin(['Checklist', 'DesignTokens', 'NewsletterSignUp', 'DSWSession', 'HeartbeatEpisode']),
+        clientLoadPlugin(['Checklist', 'DesignTokens', 'NewsletterSignUp', 'DSWSession']),
       ],
       rehypePlugins: sharedPlugins.rehypePlugins,
       syntaxHighlight: 'prism',
