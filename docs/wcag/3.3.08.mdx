@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.3.8 Toegankelijke authenticatie (minimum)
 pagination_label: WCAG-succescriterium 3.3.8 Toegankelijke authenticatie (minimum)
-description: Zorg dat inloggen niet afhankelijk is van een cognitieve functietest, zoals het onthouden van een wachtwoord.
+description: Inloggen lukt zonder iets te onthouden, uit te rekenen of over te typen. Een wachtwoordmanager, plakken of een andere inlogmethode neemt dat werk over.
 slug: 3.3.8
 conformance_level: Niveau AA
 keywords:
@@ -16,15 +16,23 @@ keywords:
   - understandable
   - input assistance
   - accessible authentication (minimum)
+  - toegankelijke authenticatie
+  - inloggen
+  - wachtwoord
+  - wachtwoordmanager
+  - captcha
+  - tweefactor
+  - verificatiecode
+  - WCAG 3.3.8
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@site/src/components/Guideline";
 import { Markdown } from "@site/src/components/Markdown";
 import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@components/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import Disclaimer from "./_wcag-disclaimer.md";
 import WCAGFooterInfo from "./_wcag_footer_info.md";
 import Summary from "./summaries/_3.3.8-summary.md";
 
@@ -32,66 +40,275 @@ import Summary from "./summaries/_3.3.8-summary.md";
   {"WCAG-succescriterium 3.3.8 Toegankelijke authenticatie (minimum)"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Maak inloggen mogelijk met minder mentale inspanning.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Dwing mensen niet iets op te lossen, te onthouden of uit te schrijven.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Sommige mensen met cognitieve beperkingen kunnen geen puzzels oplossen, een wachtwoord of gebruikersnaam
-      onthouden, of eenmalige toegangscodes herhalen.
-    </dd>
-  </div>
-</dl>
-
-## Uitleg
-
 <Summary />
 
-Het onthouden van een wachtwoord of het doen van cognitieve test is bij geen enkele stap van een authenticatie [proces](/woordenlijst/#proces) verplicht, tenzij die stap het volgende biedt:
+Een **geheugen- of denktest** is elke stap waarin je informatie moet onthouden, bewerken of overtypen: een gebruikersnaam, wachtwoord, tekenreeks, afbeelding of patroon onthouden, tekens overtypen, foutloos spellen, een som maken of een puzzel oplossen.
 
-- Er is een alternatief, zoals de optie om een mail met een login-link te ontvangen.
-- Er is een manier beschikbaar om de bezoeker te helpen, zoals ondersteuning voor een wachtwoordmanager of een wachtwoord kunnen knippen en plakken.
-- Er is een test is gericht op het herkennen van objecten, zoals bij sommige CAPTCHAs.
-- Er is een test gericht op het identificeren van niet-tekstuele content, zoals afbeeldingen, die de bezoeker aan de website heeft verstrekt.
+Zit er toch zo'n test in een stap, dan moet de bezoeker die stap toch kunnen afronden. Dat kan op 4 manieren:
+
+- **Alternatief**: een andere manier van inloggen die geen geheugen- of denktest vraagt.
+- **Mechanisme**: iets wat de bezoeker helpt de test af te ronden, zoals plakken toestaan of een wachtwoordmanager het veld laten vullen.
+- **Objectherkenning**: de test bestaat uit het herkennen van objecten, bijvoorbeeld alle afbeeldingen met een bus aanwijzen.
+- **Persoonlijke content**: de test bestaat uit het herkennen van niet-tekstuele content die de bezoeker zelf aan de site heeft gegeven.
+
+Wie moeite heeft met onthouden of met concentreren, wie dyslexie heeft, wie het scherm niet of slecht ziet: zij komen niet voorbij een inlogscherm dat om geheugenwerk vraagt. En dan is niet alleen de site onbereikbaar, maar ook alles wat ze daar zouden willen regelen.
+
+## Veelgemaakte fouten
+
+### Je moet tekens uit een afbeelding overtypen
+
+Voor het inloggen of registreren staat een test met de opdracht om de tekens uit een plaatje over te nemen. Dat is een geheugen- en denktest in één: je leest, onthoudt en typt over. Wie het plaatje niet ziet, kan de test niet maken. Wie moeite heeft met spellen of met korte tekenreeksen, ook niet.
+
+**Hoe te testen:** doorloop het inloggen en het aanmaken van een account. Kom je een test tegen waarbij je tekens moet overnemen? Staat er een andere manier naast om verder te komen?
+
+<Guideline appearance="dont" title="Tekens uit een plaatje overtypen, zonder andere weg">
+  ```html
+  <img src="/captcha.png" alt="Typ de tekst in het plaatje over" />
+  <label for="captcha">Neem de tekst over</label>
+  <input type="text" id="captcha" name="captcha" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een weg zonder geheugen- of denktest">
+  ```html
+  <h1>Bevestig je aanmelding</h1>
+  <p>
+    We sturen een link naar jan@voorbeeld.nl. Klik op die link om je account aan te maken. Je hoeft niets over te typen.
+  </p>
+  <button type="submit">Stuur de link</button>
+  ```
+</Guideline>
+
+Een gesproken versie van dezelfde test lost dit niet op. Je luistert, onthoudt en typt nog steeds over, en daarmee blijft het een geheugen- en denktest. Een gesproken versie helpt wel tegen een ander probleem, namelijk dat de test alleen te zien is. Lees daarvoor [1.1.1 Niet-tekstuele content](/wcag/1.1.1/).
+
+Moet er per se een test blijven, laat die dan uit het herkennen van objecten bestaan. Dat vraagt geen geheugenwerk en geen spelling.
+
+**Wie kan dit oplossen:** een developer vervangt de test door een controle aan de serverkant of door een bevestiging per e-mail, of biedt een alternatief naast de test.
+
+### Je moet een rekensom of een puzzel oplossen om verder te komen
+
+Sommige inlogschermen vragen om een som uit te rekenen of een schuifpuzzel af te maken. Ook dat is een denktest. Bij een rekensom komen mensen met dyscalculie niet verder, bij een puzzel mensen die het scherm niet zien of die de muis niet nauwkeurig kunnen bedienen.
+
+**Hoe te testen:** kijk of het inloggen of registreren om een som, een puzzel of een spelletje vraagt. Kun je die stap ook overslaan via een andere route?
+
+<Guideline appearance="dont" title="Een rekensom voor het inloggen">
+  ```html
+  <label for="sum">Hoeveel is 7 + 5?</label>
+  <input type="text" id="sum" name="sum" required />
+  ```
+</Guideline>
+
+Controleer in plaats daarvan aan de serverkant op ongewoon gedrag, bijvoorbeeld het aantal pogingen per IP-adres en de tijd tussen de stappen. De bezoeker merkt daar niets van, en het formulier houdt alleen de knop over.
+
+<Guideline appearance="do" title="Een controle die de bezoeker niets vraagt">
+  ```html
+  <button type="submit">Inloggen</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer haalt de som of de puzzel weg en verplaatst de controle naar de serverkant.
+
+### Het alternatief bestaat wel, maar is zelf niet te gebruiken
+
+Er staat een tweede route naast de test, maar de bezoeker komt er niet bij. De knop ernaartoe toont alleen een envelopicoon en heeft geen toegankelijke naam, dus een screenreader kondigt hem niet aan. Of de route loopt via de site van de leverancier van de test, en daar moet je eerst zelf een account aanmaken. Dan staat het probleem alleen op een andere site. Een route die je niet kunt vinden of niet kunt gebruiken, telt niet mee.
+
+**Hoe te testen:** gebruik het alternatief zelf, met het toetsenbord en met een screenreader. Kom je ermee door de inlogstap heen zonder de site te verlaten en zonder ergens anders een account te maken?
+
+<Guideline appearance="dont" title="Een knop naar de andere route zonder toegankelijke naam">
+  ```html
+  <button type="button" class="example-alt">
+    <svg aria-hidden="true" focusable="false"></svg>
+  </button>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een route met een duidelijke knoptekst, op de site zelf">
+  ```html
+  <button type="button" class="example-alt">
+    <svg aria-hidden="true" focusable="false"></svg>
+    Stuur me een inloglink per e-mail
+  </button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer geeft de route een duidelijke knoptekst en zorgt dat die werkt zonder een account bij een andere partij.
+
+### Plakken is uitgezet in de inlogvelden
+
+Een veld weigert geplakte tekst, met als gedachte dat mensen hun gegevens dan "echt kennen". Het effect is omgekeerd: wie zijn gegevens in een wachtwoordmanager of een notitie bewaart, moet ze teken voor teken overtypen. Dat is precies het geheugenwerk dat hier niet nodig zou moeten zijn.
+
+Dit gebeurt niet alleen bij het wachtwoord. Ook een veld voor het e-mailadres, de gebruikersnaam of de verificatiecode kan plakken blokkeren, en juist daar zitten lange waarden waarin je makkelijk een teken mist.
+
+**Hoe te testen:** kopieer een waarde naar je klembord en plak die in elk veld van het inlogproces: het e-mailadres, de gebruikersnaam, het wachtwoord en de code. Verschijnt de tekst overal?
+
+<Guideline appearance="dont" title="Plakken geblokkeerd in de inlogvelden">
+  ```html
+  <input type="email" id="email" name="email" onpaste="return false" />
+  <input type="password" id="password" name="password" onpaste="return false" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Plakken gewoon toestaan">
+  ```html
+  <input type="email" id="email" name="email" autocomplete="username" />
+  <input type="password" id="password" name="password" autocomplete="current-password" />
+  ```
+</Guideline>
+
+Let ook op `user-select: none` in de CSS en op handlers voor `copy` en `contextmenu`. Die halen het kopiëren en het rechtermuisknopmenu weg, en dan helpt plakken alleen nog als de bezoeker de waarde ergens anders vandaan haalt.
+
+**Wie kan dit oplossen:** een developer haalt de code weg die plakken, kopiëren of het rechtermuisknopmenu blokkeert, op elk veld in het inlogproces.
+
+### Een wachtwoordmanager krijgt zijn gegevens er niet in
+
+Het inlogscherm gebruikt geen gewoon invoerveld. Je klikt de cijfers aan op een toetsenblok op het scherm, of het veld is een zelfgemaakt component dat geen `<input>` is. Een wachtwoordmanager kan er niets in zetten en plakken werkt er ook niet. De bezoeker moet de gegevens dan uit het hoofd weten.
+
+**Hoe te testen:** probeer je gegevens in het veld te krijgen zonder ze te typen: laat je wachtwoordmanager het invullen, en plak ze anders vanaf je klembord. Lukt minstens één van de twee?
+
+Het voorbeeld hieronder is ingekort: het toont 2 van de 10 knoppen.
+
+<Guideline appearance="dont" title="Een toetsenblok op het scherm in plaats van een invoerveld">
+  ```html
+  <p>Toets je pincode in</p>
+  <div class="example-pinpad">
+    <button type="button">1</button>
+    <button type="button">2</button>
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Een gewoon invoerveld dat een wachtwoordmanager kan vullen">
+  ```html
+  <label for="pin">Pincode</label>
+  <input type="password" id="pin" name="pin" inputmode="numeric" autocomplete="current-password" />
+  ```
+</Guideline>
+
+Het `autocomplete`-attribuut helpt de wachtwoordmanager het juiste veld te vinden. Ontbreekt het, dan is dat op zichzelf geen probleem voor het inloggen zolang plakken werkt. Wat je per veld moet invullen, staat bij [1.3.5 Identificeer het doel van de invoer](/wcag/1.3.5/).
+
+**Wie kan dit oplossen:** een developer gebruikt een gewoon invoerveld waarin de bezoeker kan plakken en dat een wachtwoordmanager kan vullen.
+
+### De verificatiecode is niet in het veld te plakken
+
+Na het wachtwoord volgt een code uit een sms of een e-mail. Het overtypen is het probleem. Het veld is opgeknipt in losse vakjes van één teken, waardoor van een geplakte code alleen het eerste teken in het eerste vakje komt. De bezoeker wisselt van app, leest de code, onthoudt hem en typt hem over, en bij een code die na een paar minuten verloopt is er weinig ruimte voor een tweede poging.
+
+Dat de code op je telefoon aankomt en je op je laptop inlogt, is op zichzelf geen probleem. Waar het om gaat is dat de code in het veld te plakken is zodra hij op het klembord staat.
+
+**Hoe te testen:** vraag een code aan, zet die op je klembord en plak die in het veld. Komt de hele code binnen? Biedt je telefoon de code aan boven het toetsenbord?
+
+Het voorbeeld hieronder is ingekort: het toont de eerste 2 vakjes.
+
+<Guideline appearance="dont" title="Losse vakjes waarin je niets kunt plakken">
+  ```html
+  <label for="c1">Code</label>
+  <input type="text" id="c1" maxlength="1" onpaste="return false" />
+  <input type="text" id="c2" maxlength="1" onpaste="return false" />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Eén veld dat de code zelf aanbiedt">
+  ```html
+  <label for="code">Vul de code in</label>
+  <input type="text" id="code" name="code" inputmode="numeric" autocomplete="one-time-code" />
+  ```
+</Guideline>
+
+Met `autocomplete="one-time-code"` biedt de telefoon de code uit de sms aan boven het toetsenbord. De bezoeker hoeft dan niets te onthouden. Wil je de losse vakjes houden, zorg dan dat een geplakte code zich vanzelf over de vakjes verdeelt.
+
+**Wie kan dit oplossen:** een developer gebruikt één invoerveld met `autocomplete="one-time-code"`, of laat een geplakte code zich over de losse vakjes verdelen.
+
+### Je moet losse tekens uit je wachtwoord opgeven
+
+Het inlogscherm vraagt niet om het hele wachtwoord, maar om het 3e en het 7e teken. Dat is niet met een wachtwoordmanager te doen: de bezoeker moet het wachtwoord opzoeken, de tekens tellen en de goede eruit halen. Dat is bewerken van informatie uit het geheugen, en daar helpt geen enkel hulpmiddel bij.
+
+**Hoe te testen:** kijk of een inlogstap om een deel van een gegeven vraagt in plaats van om het geheel.
+
+<Guideline appearance="dont" title="Losse tekens uit het wachtwoord">
+    ```html
+    <label for="char-3">3e teken van je wachtwoord</label>
+    <input type="text" id="char-3" maxlength="1" />
+
+    <label for="char-7">7e teken van je wachtwoord</label>
+    <input type="text" id="char-7" maxlength="1" />
+    ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Het hele wachtwoord in één veld">
+  ```html
+  <label for="password">Wachtwoord</label>
+  <input type="password" id="password" name="password" autocomplete="current-password" />
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vraagt om het hele wachtwoord in één veld en zoekt de extra zekerheid in een tweede factor.
+
+### Je moet een beveiligingsvraag uit je geheugen beantwoorden
+
+"Wat is de naam van je eerste huisdier?" is een geheugentest, en meteen ook een spellingstest: het antwoord moet teken voor teken hetzelfde zijn als bij het instellen. Wie het jaren geleden heeft ingevuld, weet het precieze antwoord niet meer. Een wachtwoordmanager lost het niet op, want zo'n veld herkent die niet.
+
+**Hoe te testen:** kijk of het herstellen van je wachtwoord om een beveiligingsvraag vraagt, en of er een andere route naast staat.
+
+<Guideline appearance="dont" title="Een beveiligingsvraag als enige weg">
+  ```html
+  <label for="security-question">Wat is de naam van je eerste huisdier?</label>
+  <input type="text" id="security-question" name="security-question" required />
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Herstellen via een link in de e-mail">
+  ```html
+  <h1>Wachtwoord vergeten</h1>
+  <label for="email">E-mailadres</label>
+  <input type="email" id="email" name="email" autocomplete="email" />
+  <button type="submit">Stuur een herstellink</button>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer vervangt de beveiligingsvraag door een herstellink per e-mail of door een tweede factor.
 
 ## Hoe te testen
 
-Bekijk voor elke stap in een authenticatie proces of het voldoet aan een van de volgende punten:
+### Voor iedereen
 
-- Er is geen test, tenzij deze is gericht op het herkennen van objecten, of het identificeren van niet-tekstuele content, zoals afbeeldingen, die de bezoeker aan de website heeft verstrekt.
-- Er wordt niet om een wachtwoord gevraagd, tenzij er een manier is om de bezoeker te helpen, zoals ondersteuning voor een wachtwoordmanager.
-- Of er is een alternatief, zoals de optie om een mail met een login-link te ontvangen.
+1. Doorloop het hele inlogproces: inloggen, een account aanmaken, een tweede factor bevestigen en een wachtwoord herstellen. Noteer elke stap waarin je iets moet onthouden, uitrekenen of overtypen.
+2. Kijk per stap of er een andere route naast staat, of iets wat je helpt. Objectherkenning en het herkennen van je eigen content mogen ook.
+3. Kopieer een wachtwoord naar je klembord en plak het in het wachtwoordveld. Verschijnt de tekst?
+4. Sla je gegevens op in de browser of in een wachtwoordmanager, log uit en ga terug. Kun je de velden laten vullen, of anders plakken?
+5. Vraag een code per sms of e-mail aan en probeer die te plakken.
+6. Kom je een test tegen, gebruik dan het alternatief. Werkt dat met het toetsenbord, en blijf je op de site zelf?
 
-## Tips
+### Voor developers
 
-- Zorg dat mensen alles kunnen kopieren op een website. Je weet nooit waarvoor het handig is!
-- Maak geen gebruik van korte tijdslimieten. Ook niet als er mails verstuurd worden.
+1. Controleer of elk inlogveld een echt invoerveld is. Een toetsenblok van knoppen, losse vakjes van één teken of een zelfgemaakt component zonder `<input>` sluit plakken en de wachtwoordmanager uit.
+2. Zoek in de code naar handlers op `paste`, `copy` en `contextmenu` bij de inlogvelden, en naar `user-select: none` in de CSS. Die blokkeren het plakken en de wachtwoordmanager.
+3. Test het inloggen met een wachtwoordmanager en met de ingebouwde opslag van 2 browsers. Vult die alle velden, ook die van de tweede factor?
+4. Gaat er een test aan het inloggen vooraf, controleer dan wat die van de bezoeker vraagt. Overtypen en spelling kosten de bezoeker werk, het herkennen van objecten niet. Deze test doe je het best samen met iemand die dagelijks met een screenreader werkt.
+
+Een testtool vindt dit niet. Een scan ziet wel losse problemen in een inlogscherm, zoals een knop zonder toegankelijke naam, maar niet of de bezoeker de inlogstap zonder geheugenwerk doorkomt.
+
+## Gerelateerde succescriteria
+
+- [3.3.7 Overbodige invoer](/wcag/3.3.7/): gegevens die je binnen hetzelfde proces al hebt ingevuld, hoef je niet nog een keer in te tikken. Lees hier meer over voorvullen in een proces met meerdere stappen.
+- [1.1.1 Niet-tekstuele content](/wcag/1.1.1/): elke afbeelding heeft een tekstalternatief, met een eigen regel voor tests die onderscheid maken tussen mens en machine. Lees hier meer als er een test op een pagina staat die niets met inloggen te maken heeft.
+- [1.3.5 Identificeer het doel van de invoer](/wcag/1.3.5/): met `autocomplete` leg je vast wat een veld over de bezoeker vraagt. Lees hier meer als de inlogvelden dat attribuut missen, want die eis staat daar.
+- [2.2.1 Timing aanpasbaar](/wcag/2.2.1/): een code of sessie die verloopt terwijl de bezoeker bezig is. Lees hier meer over de tijdslimiet op een verificatiecode.
+- [3.3.2 Labels of instructies](/wcag/3.3.2/): duidelijke labels en instructies bij invoervelden. Lees hier meer over de uitleg bij een wachtwoordveld.
+
+## Relevante bronnen
+
+- [<span lang="en">Inaccessibility of CAPTCHA</span>](https://www.w3.org/TR/turingtest/): het W3C-rapport over waarom tests die mens en machine onderscheiden zo lastig zijn, en welke alternatieven er zijn. Engelstalig.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## W3C referenties
+## W3C-referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">3.3.8 Accessible Authentication (Minimum)</span>](https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum).
 - Nederlandse vertaling van het WCAG-succescriterium: [3.3.8 Toegankelijke authenticatie (minimum)](https://www.w3.org/Translations/WCAG22-nl/#accessible-authentication-minimum).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.3.8 Accessible Authentication (Minimum)</span>](https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-minimum).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.3.8 Accessible Authentication (Minimum)</span>](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headinglevel={3}>
-    <Disclaimer />
-  </Markdown>
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
