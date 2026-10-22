@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /bingo/ /private/
+
+Sitemap: https://nldesignsystem.nl/sitemap-index.xml
