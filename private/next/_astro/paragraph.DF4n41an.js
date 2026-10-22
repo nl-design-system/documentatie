@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime.BW4-RLRh.js";import{t}from"./heading.BHTv0dy4.js";import"./paragraph.B7oSdT6O.js";var n=e(),r=e=>(0,n.jsx)(t,{...e});export{r as t};

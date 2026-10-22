@@ -39,9 +39,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.b7c45ef1.css" />
-  <script src="/assets/js/runtime~main.657444e5.js" defer="defer"></script>
-  <script src="/assets/js/main.caea6ebd.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.d65e6dba.css" />
+  <script src="/assets/js/runtime~main.dd005a1a.js" defer="defer"></script>
+  <script src="/assets/js/main.9224f705.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -314,26 +314,12 @@
               <p>Maak de markering ook onderdeel van de labeltekst.</p>
               <p>Gebruikers van <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a> krijgen deze informatie daarnaast ook voorgelezen door <code class="utrecht-code">aria-required</code> of <code class="utrecht-code">required</code> in de code op te nemen bij de verplichte velden.</p>
               <h2 id="optie-1-niet-verplichte-velden-markeren" class="utrecht-heading-2">Optie 1: &#x27;niet-verplichte&#x27; velden markeren</h2>
-              <header></header>
-              <p>Uitgaande van het gegeven dat je in formulieren enkel het broodnodige uitvraagt zullen de meeste velden verplicht zijn. Hierdoor vormen de niet-verplichte velden een uitzondering. Geef dit aan door bij de niet-verplichte velden de tekst &#x27;(niet verplicht)&#x27; in het label op te nemen.</p>
-              <p>Gebruikersonderzoek over de toepassing van &#x27;niet verplicht&#x27; versus &#x27;verplicht&#x27;:</p>
-              <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
-               <li>
-                <a href="https://adamsilver.io/blog/how-to-highlight-required-and-optional-form-fields/" class="utrecht-link utrecht-link--html-a"><span lang="en">4 common mistakes UI/UX designers make when trying to help users spot required form fields (and what user research shows is better)</span></a> van Adam Silver.
-               </li>
-               <li>
-                <a href="https://www.lukew.com/ff/entry.asp?725" class="utrecht-link utrecht-link--html-a"><span lang="en">Blog post: Marking Required vs. Optional form fields</span></a> van Luke Wroblewski.
-               </li>
-               <li>
-                <a href="https://ask.lukew.com/chat?id=f6862342-64d1-4de9-a28a-16f4fe614452" class="utrecht-link utrecht-link--html-a"><span lang="en">Chatbot answer: Required versus optional fields</span></a> van Luke Wroblewski.
-               </li>
-              </ul>
-              <p><strong>Let op</strong>: Het woord &#x27;optioneel&#x27; kan te moeilijk zijn voor mensen die laaggeletterd zijn. Gebruik dus &#x27;niet verplicht&#x27;.</p>
+              <!-- -->
               <!-- -->
               <!-- -->
               <h2 id="voorbeelden" class="utrecht-heading-2">Voorbeelden</h2>
-              <div class="nlds-guideline nlds-guideline--do" id="geef-boven-het-formulier-aan-hoe-niet-verplichte-velden-worden-aangegeven.">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="geef-boven-het-formulier-aan-hoe-niet-verplichte-velden-worden-aangegeven.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -344,7 +330,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Geef boven het formulier aan hoe niet-verplichte velden worden aangegeven.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <div class="nlds-canvas">
                  <div class="nlds-canvas__example">
@@ -379,9 +365,9 @@
                  </div>
                 </div>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--dont" id="de-gebruiker-laten-raden-wat-er-al-dan-niet-verplicht-is.">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--dont" id="de-gebruiker-laten-raden-wat-er-al-dan-niet-verplicht-is.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -392,7 +378,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">De gebruiker laten raden wat er al dan niet verplicht is.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <div class="nlds-canvas">
                  <div class="nlds-canvas__example">
@@ -426,18 +412,14 @@
                  </div>
                 </div>
                </div>
-              </div>
+              </figure>
               <h2 id="optie-2-verplichte-velden-markeren" class="utrecht-heading-2">Optie 2: &#x27;verplichte&#x27; velden markeren</h2>
-              <header></header>
-              <p>Zijn de meeste velden in een formulier &#x27;niet verplicht&#x27;? Of is het technisch niet mogelijk om de niet-verplichte velden te markeren? Geef dit dan aan door bij de verplichte velden de tekst &#x27;(verplicht)&#x27; in het label op te nemen.</p>
-              <p>Een populaire manier om verplichte velden aan te duiden is door in het label een asterisk &#x27;*&#x27; op te nemen. Dit heeft niet de voorkeur omdat dit een extra denkstap voor de gebruikers vergt, zoals blijkt uit bovenstaand gebruikersonderzoek.</p>
-              <p>Gebruik je deze constructie toch omdat je CMS of plug-in alleen deze mogelijkheid biedt, leg dan boven het formulier uit wat de asterisk betekent. Een asterisk alleen bij het formulierveld is niet voldoende, niet iedereen bezit deze voorkennis.</p>
-              <p>Uit onderzoek van Elevenways blijkt dat de asterisk goed wordt voorgelezen door <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a>: <a href="https://elevenways.be/nl/artikels/hoe-screen-readers-speciale-tekens-lezen" class="utrecht-link utrecht-link--html-a">Hoe screenreaders speciale tekens lezen: een update</a>. Dit is wel afhankelijk van hoe de asterisk geïmplementeerd is. De test baseert zich op platte tekst, en niet op afbeeldingen, iconen of tekst die door middel van CSS toegevoegd is.</p>
+              <!-- -->
               <!-- -->
               <!-- -->
               <h2 id="voorbeelden" class="utrecht-heading-2">Voorbeelden</h2>
-              <div class="nlds-guideline nlds-guideline--do" id="geef-boven-het-formulier-aan-hoe-verplichte-velden-worden-aangegeven.">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="geef-boven-het-formulier-aan-hoe-verplichte-velden-worden-aangegeven.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -448,7 +430,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Geef boven het formulier aan hoe verplichte velden worden aangegeven.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <div class="nlds-canvas">
                  <div class="nlds-canvas__example">
@@ -483,9 +465,9 @@
                  </div>
                 </div>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="geef-boven-het-formulier-aan-hoe-verplichte-velden-worden-aangegeven-en-leg-uit-wat-asterisk-betekent.">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="geef-boven-het-formulier-aan-hoe-verplichte-velden-worden-aangegeven-en-leg-uit-wat-asterisk-betekent.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -496,7 +478,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Geef boven het formulier aan hoe verplichte velden worden aangegeven en leg uit wat asterisk betekent.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <div class="nlds-canvas">
                  <div class="nlds-canvas__example">
@@ -525,9 +507,9 @@
                  </div>
                 </div>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--dont" id="bij-alle-velden-aangeven-of-het-al-dan-niet-verplicht-is.">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--dont" id="bij-alle-velden-aangeven-of-het-al-dan-niet-verplicht-is.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -538,7 +520,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Bij alle velden aangeven of het al dan niet verplicht is.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <div class="nlds-canvas">
                  <div class="nlds-canvas__example">
@@ -572,15 +554,13 @@
                  </div>
                 </div>
                </div>
-              </div>
-              <header><h1 id="screenreaderfeedback" class="utrecht-heading-1">Screenreaderfeedback</h1></header>
-              <p>Vertel een gebruiker van hulptechnologieën (zoals <a href="/woordenlijst/#screenreader" class="utrecht-link utrecht-link--html-a">screenreaders</a>) dat een veld verplicht is met het ARIA-attribuut <code class="utrecht-code">aria-required=&quot;true&quot;</code>.</p>
-              <p>Je kunt ook het HTML-attribuut <code class="utrecht-code">required</code> gebruiken in plaats van <code class="utrecht-code">aria-required</code>, maar dit vereist ook het attribuut <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#novalidate" class="utrecht-link utrecht-link--html-a">novalidate</a> in het <code class="utrecht-code">&lt;form&gt;</code> element. Novalidate voorkomt dat de formuliervalidatie van de browser in werking treedt. Voor aria-required=&quot;true&quot; hoeft dit niet. Alhoewel het gebruik van required in plaats van aria-required niet fout is, geven we daarom de voorkeur aan aria-required.</p>
+              </figure>
+              <!-- -->
               <!-- -->
               <!-- -->
               <h2 id="voorbeelden" class="utrecht-heading-2">Voorbeelden</h2>
-              <div class="nlds-guideline nlds-guideline--do" id="gebruik-aria-required-om-aan-te-geven-of-een-veld-verplicht-is.">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="gebruik-aria-required-om-aan-te-geven-of-een-veld-verplicht-is.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -591,7 +571,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Gebruik aria-required om aan te geven of een veld verplicht is.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <div class="nlds-canvas">
                  <div class="nlds-canvas__example">
@@ -623,9 +603,9 @@
                  </div>
                 </div>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="gebruik-required-om-aan-te-geven-of-een-veld-verplicht-is,-in-combinatie-met-novalidate.">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="gebruik-required-om-aan-te-geven-of-een-veld-verplicht-is,-in-combinatie-met-novalidate.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -636,7 +616,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Gebruik required om aan te geven of een veld verplicht is, in combinatie met novalidate.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <div class="nlds-canvas">
                  <div class="nlds-canvas__example">
@@ -668,9 +648,9 @@
                  </div>
                 </div>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--dont" id="geef-helemaal-niet-aan-of-een-veld-verplicht-is,-en-laat-de-gebruiker-dit-pas-weten-bij-de-foutmeldingen.">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--dont" id="geef-helemaal-niet-aan-of-een-veld-verplicht-is,-en-laat-de-gebruiker-dit-pas-weten-bij-de-foutmeldingen.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -681,7 +661,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Geef helemaal niet aan of een veld verplicht is, en laat de gebruiker dit pas weten bij de foutmeldingen.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <div class="nlds-canvas">
                  <div class="nlds-canvas__example">
@@ -714,7 +694,7 @@
                  </div>
                 </div>
                </div>
-              </div>
+              </figure>
               <h2 id="meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system" class="utrecht-heading-2">Meer lezen over gerelateerde WCAG-succescriteria op NL Design System</h2>
               <p>Op de WCAG succescriteria pagina&#x27;s op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet.</p>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">

@@ -38,9 +38,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.b7c45ef1.css" />
-  <script src="/assets/js/runtime~main.657444e5.js" defer="defer"></script>
-  <script src="/assets/js/main.caea6ebd.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.d65e6dba.css" />
+  <script src="/assets/js/runtime~main.dd005a1a.js" defer="defer"></script>
+  <script src="/assets/js/main.9224f705.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -451,8 +451,8 @@
               <h3 id="metadata-staat-boven-de-kop-van-een-artikel" class="utrecht-heading-3">Metadata staat boven de kop van een artikel</h3>
               <p>Alle inhoud die onder een kop staat, hoort bij die kop. Bezoekers die een screenreader gebruiken, navigeren van kop naar kop om de structuur van een pagina te begrijpen. Staat informatie zoals een datum of categorie boven de kop in de HTML, dan lijkt die informatie bij het vorige artikel te horen.</p>
               <p><strong>Hoe te testen:</strong> inspecteer de HTML-volgorde in de DevTools. Staat de kop bovenaan in elk artikel, gevolgd door metadata en inhoud?</p>
-              <div class="nlds-guideline nlds-guideline--dont" id="datum-en-categorie-staan-boven-de-kop">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--dont" id="datum-en-categorie-staan-boven-de-kop">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -463,7 +463,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Datum en categorie staan boven de kop</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R88q7dalbah:"
                  >codevoorbeeld
@@ -479,9 +479,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">article</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="kop-staat-bovenaan,-gevolgd-door-metadata">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="kop-staat-bovenaan,-gevolgd-door-metadata">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -492,7 +492,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Kop staat bovenaan, gevolgd door metadata</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R89q7dalbah:"
                  >codevoorbeeld
@@ -508,13 +508,13 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">article</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p><strong>Wie kan dit oplossen:</strong> een developer past de HTML-volgorde aan.</p>
               <h3 id="kolommen-waarvan-de-inhoud-door-elkaar-loopt" class="utrecht-heading-3">Kolommen waarvan de inhoud door elkaar loopt</h3>
               <p>Een pagina met twee kolommen groepeert de afbeelding en de beschrijving per kolom. De HTML bevat niet de afbeelding en de beschrijving, maar eerst alle afbeeldingen en daarna alle beschrijvingen. Dan begrijpt een screenreadergebruiker niet welke beschrijving bij welke afbeelding hoort.</p>
               <p><strong>Hoe te testen:</strong> schakel CSS uit in de browser (Firefox: View &gt; Page Style &gt; No Style). Staat de informatie die bij elkaar hoort ook bij elkaar in de HTML?</p>
-              <div class="nlds-guideline nlds-guideline--dont" id="alle-afbeeldingen-eerst,-dan-alle-beschrijvingen">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--dont" id="alle-afbeeldingen-eerst,-dan-alle-beschrijvingen">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -525,7 +525,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Alle afbeeldingen eerst, dan alle beschrijvingen</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R8eq7dalbah:"
                  >codevoorbeeld
@@ -541,9 +541,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="afbeelding-en-beschrijving-bij-elkaar">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="afbeelding-en-beschrijving-bij-elkaar">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -554,7 +554,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Afbeelding en beschrijving bij elkaar</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R8fq7dalbah:"
                  >codevoorbeeld
@@ -574,13 +574,13 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p><strong>Wie kan dit oplossen:</strong> een developer groepeert de content per kolom in de HTML.</p>
               <h3 id="visuele-volgorde-wijkt-af-van-de-code-door-css" class="utrecht-heading-3">Visuele volgorde wijkt af van de code door CSS</h3>
               <p>Met CSS Grid en Flexbox kun je elementen visueel herschikken zonder de HTML aan te passen. Een screenreader volgt de HTML-volgorde, niet de visuele volgorde. Als de volgorde betekenis heeft, pas je de HTML aan in plaats van CSS <code class="utrecht-code">order</code> te gebruiken.</p>
               <p><strong>Hoe te testen:</strong> zoek in de CSS naar <code class="utrecht-code">order</code>, <code class="utrecht-code">flex-direction: row-reverse</code>, <code class="utrecht-code">flex-direction: column-reverse</code> en <code class="utrecht-code">grid-row</code>/<code class="utrecht-code">grid-column</code>. Controleer of de HTML-volgorde logisch blijft.</p>
-              <div class="nlds-guideline nlds-guideline--dont" id="html-volgorde-wijkt-af-door-css-order">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--dont" id="html-volgorde-wijkt-af-door-css-order">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -591,7 +591,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">HTML-volgorde wijkt af door CSS order</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R8kq7dalbah:"
                  >codevoorbeeld
@@ -606,10 +606,10 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p>Een screenreader leest hier: &quot;Stap 2&quot;, &quot;Stap 3&quot;, &quot;Stap 1&quot;.</p>
-              <div class="nlds-guideline nlds-guideline--do" id="html-volgorde-komt-overeen-met-de-betekenisvolle-volgorde">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="html-volgorde-komt-overeen-met-de-betekenisvolle-volgorde">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -620,7 +620,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">HTML-volgorde komt overeen met de betekenisvolle volgorde</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R8mq7dalbah:"
                  >codevoorbeeld
@@ -635,13 +635,13 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p><strong>Wie kan dit oplossen:</strong> een developer past de HTML-volgorde aan zodat die overeenkomt met de betekenisvolle volgorde.</p>
               <h3 id="tabelgegevens-die-los-van-elkaar-worden-voorgelezen" class="utrecht-heading-3">Tabelgegevens die los van elkaar worden voorgelezen</h3>
               <p>Een tabel koppelt gegevens aan elkaar: een dag aan een openingstijd, een naam aan een functie. Een correcte <code class="utrecht-code">&lt;table&gt;</code> met <code class="utrecht-code">&lt;tr&gt;</code>, <code class="utrecht-code">&lt;th&gt;</code> en <code class="utrecht-code">&lt;td&gt;</code> behoudt die koppeling. Een tabel nagebouwd met <code class="utrecht-code">&lt;div&gt;</code>-elementen en CSS kan ertoe leiden dat een screenreader eerst alle dagen voorleest en daarna pas alle tijden.</p>
               <p><strong>Hoe te testen:</strong> gebruik de <span lang="en">Web Developer</span>-extensie (tab Miscellaneous &gt; Linearize Page) om de tabel te lineariseren. Klopt de koppeling tussen de gegevens nog?</p>
-              <div class="nlds-guideline nlds-guideline--do" id="correcte-tabel-behoudt-de-koppeling-tussen-gegevens">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="correcte-tabel-behoudt-de-koppeling-tussen-gegevens">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -652,7 +652,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Correcte tabel behoudt de koppeling tussen gegevens</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R8rq7dalbah:"
                  >codevoorbeeld
@@ -676,13 +676,13 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">table</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p><strong>Wie kan dit oplossen:</strong> een developer bouwt de tabel met correcte HTML-elementen.</p>
               <h3 id="navigatieknoppen-in-een-carrousel-staan-voor-de-inhoud" class="utrecht-heading-3">Navigatieknoppen in een carrousel staan voor de inhoud</h3>
               <p>De inhoud van een carrousel is belangrijk voor de bezoeker. Staan de vorige- en volgende-knoppen boven de slides in de HTML, dan leest een screenreader eerst &quot;vorige&quot;, &quot;volgende&quot; en daarna pas de inhoud. De bezoeker weet dan nog niet wat de slides bevatten.</p>
               <p><strong>Hoe te testen:</strong> inspecteer de HTML-volgorde in de DevTools. Staat de slide-content voor de navigatieknoppen?</p>
-              <div class="nlds-guideline nlds-guideline--dont" id="knoppen-staan-voor-de-content">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--dont" id="knoppen-staan-voor-de-content">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -693,7 +693,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Knoppen staan voor de content</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R90q7dalbah:"
                  >codevoorbeeld
@@ -708,9 +708,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="content-eerst,-dan-de-knoppen">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="content-eerst,-dan-de-knoppen">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -721,7 +721,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Content eerst, dan de knoppen</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R91q7dalbah:"
                  >codevoorbeeld
@@ -736,7 +736,7 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p><strong>Wie kan dit oplossen:</strong> een developer past de HTML-volgorde aan.</p>
               <h3 id="grafiek-of-diagram-wordt-in-een-onlogische-volgorde-voorgelezen" class="utrecht-heading-3">Grafiek of diagram wordt in een onlogische volgorde voorgelezen</h3>
               <p>SVG-elementen die tekst bevatten, worden voorgelezen in de volgorde waarin ze in de code staan. Dat kan betekenen: eerst de waarden van de X-as, dan de Y-as als losse getallen, en pas daarna de uitleg van de assen. Bied bij complexe grafieken een tekstueel alternatief aan, zoals een tabel met dezelfde data.</p>
@@ -745,8 +745,8 @@
               <h3 id="uitklapbare-content-verschijnt-op-de-verkeerde-plek" class="utrecht-heading-3">Uitklapbare content verschijnt op de verkeerde plek</h3>
               <p>Content die verschijnt na interactie staat direct na het element dat de content opent. Bij een <a href="/accordion/" class="utrecht-link utrecht-link--html-a">Accordion</a> staat de inhoud van een paneel direct na de knop die het paneel opent. Bij <a href="/tabs/" class="utrecht-link utrecht-link--html-a">Tabs</a> staat de inhoud van het actieve tabpaneel direct na de tablijst. Staat de content ergens anders in de HTML, dan leest een screenreader die op een onverwacht moment voor.</p>
               <p><strong>Hoe te testen:</strong> open een accordion, tabpaneel of ander uitklapbaar element. Inspecteer de HTML-volgorde in de DevTools. Staat de content direct na de bijbehorende trigger?</p>
-              <div class="nlds-guideline nlds-guideline--do" id="accordion-met-content-direct-na-de-knop">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="accordion-met-content-direct-na-de-knop">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -757,7 +757,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Accordion met content direct na de knop</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R9aq7dalbah:"
                  >codevoorbeeld
@@ -777,13 +777,13 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">div</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p><strong>Wie kan dit oplossen:</strong> een developer plaatst de content direct na de trigger in de HTML.</p>
               <h3 id="dialoogvenster-laat-de-achterliggende-pagina-voorlezen" class="utrecht-heading-3">Dialoogvenster laat de achterliggende pagina voorlezen</h3>
               <p>Een dialoogvenster dat de pagina bedekt, beperkt de screenreader tot de inhoud van dat venster. De achterliggende pagina wordt niet voorgelezen zolang het venster open is. Bij sluiten keert de focus terug naar het element dat het venster opende.</p>
               <p><strong>Hoe te testen:</strong> open het dialoogvenster en navigeer met een screenreader. Kun je content achter het venster bereiken? Zo ja, dan is het venster niet goed afgeschermd.</p>
-              <div class="nlds-guideline nlds-guideline--do" id="dialog-met-aria-modal-voorkomt-dat-de-achtergrond-wordt-gelezen">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="dialog-met-aria-modal-voorkomt-dat-de-achtergrond-wordt-gelezen">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -794,7 +794,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Dialog met aria-modal voorkomt dat de achtergrond wordt gelezen</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R9fq7dalbah:"
                  >codevoorbeeld
@@ -810,14 +810,14 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">dialog</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p>Gebruik het <code class="utrecht-code">&lt;dialog&gt;</code>-element met <code class="utrecht-code">aria-modal=&quot;true&quot;</code>, of beheer de focus handmatig en gebruik <code class="utrecht-code">aria-hidden=&quot;true&quot;</code> op de achterliggende content.</p>
               <p><strong>Wie kan dit oplossen:</strong> een developer implementeert het dialoogvenster met het <code class="utrecht-code">&lt;dialog&gt;</code>-element of met correcte focus- en ARIA-afhandeling.</p>
               <h3 id="verborgen-content-wordt-toch-voorgelezen" class="utrecht-heading-3">Verborgen content wordt toch voorgelezen</h3>
               <p>Een mobiel menu dat visueel verborgen is, is ook verborgen voor screenreaders. Verberg het met <code class="utrecht-code">display: none</code> of <code class="utrecht-code">visibility: hidden</code>. Gebruik niet alleen <code class="utrecht-code">opacity: 0</code> of een negatieve positie, want dan vindt een screenreader het menu alsnog.</p>
               <p><strong>Hoe te testen:</strong> navigeer met een screenreader door de pagina. Hoor je content die niet op het scherm zichtbaar is?</p>
-              <div class="nlds-guideline nlds-guideline--dont" id="menu-verborgen-met-alleen-opacity">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--dont" id="menu-verborgen-met-alleen-opacity">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -828,7 +828,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Menu verborgen met alleen opacity</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R9lq7dalbah:"
                  >codevoorbeeld
@@ -841,9 +841,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">nav</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="display:-none-verbergt-het-voor-iedereen">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="display:-none-verbergt-het-voor-iedereen">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -854,7 +854,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">display: none verbergt het voor iedereen</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R9mq7dalbah:"
                  >codevoorbeeld
@@ -867,7 +867,7 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">nav</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p><strong>Wie kan dit oplossen:</strong> een developer past de manier van verbergen aan.</p>
               <h3 id="demo-lees--en-focusvolgorde-in-de-screenreader-voiceover" class="utrecht-heading-3">Demo lees- en focusvolgorde in de screenreader VoiceOver</h3>
               <noscript
@@ -936,15 +936,8 @@
                 >.
                </li>
               </ul>
-              <section class="utrecht-spotlight-section">
-               <h2 id="belangrijk-de-richtlijnen-van-nl-design-system-zijn-geen-wettelijke-verplichting" class="utrecht-heading-2">Belangrijk: De richtlijnen van NL Design System zijn geen wettelijke verplichting</h2>
-               <p>De richtlijnen van NL Design System zijn niet wettelijk verplicht en zijn geen vervanging voor de <a href="https://www.w3.org/TR/WCAG21/" class="utrecht-link utrecht-link--html-a">wettelijk geldende WCAG 2.1 specificatie</a>.</p>
-               <p>Ons doel is om praktische uitleg en voorbeelden te geven die helpen bij het toegankelijk inzetten van de NL Design System componenten, patronen en richtlijnen. We doen dat op basis van een interpretatie van de <a href="https://www.w3.org/TR/WCAG22/" class="utrecht-link utrecht-link--html-a">nieuwe WCAG 2.2 specificatie</a>.</p>
-               <p>Weten waar je volgens de wet aan moet voldoen? Ga dan naar <a href="https://www.digitoegankelijk.nl/wetgeving/wat-is-verplicht" class="utrecht-link utrecht-link--html-a">wat is verplicht van DigiToegankelijk</a>.</p>
-              </section>
+              <section class="utrecht-spotlight-section"></section>
               <h2 id="help-richtlijn-verbeteren" class="utrecht-heading-2">Help richtlijn verbeteren</h2>
-              <header></header>
-              <p>Deze pagina&#x27;s over WCAG worden onderhouden door NL Design System. Heb je aanvullingen of opmerkingen? <a href="https://github.com/nl-design-system/documentatie/issues" class="utrecht-link utrecht-link--html-a">Deel je mening op GitHub</a>.</p>
              </div>
              <footer class="theme-doc-footer docusaurus-mt-lg">
               <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
@@ -980,7 +973,6 @@
              <li><a href="#gerelateerde-nl-design-system-richtlijnen" class="table-of-contents__link toc-highlight">Gerelateerde NL Design System-richtlijnen</a></li>
              <li><a href="#gebruikersonderzoek" class="table-of-contents__link toc-highlight">Gebruikersonderzoek</a></li>
              <li><a href="#w3c-referenties" class="table-of-contents__link toc-highlight">W3C referenties</a></li>
-             <li><a href="#belangrijk-de-richtlijnen-van-nl-design-system-zijn-geen-wettelijke-verplichting" class="table-of-contents__link toc-highlight">Belangrijk: De richtlijnen van NL Design System zijn geen wettelijke verplichting</a></li>
              <li><a href="#help-richtlijn-verbeteren" class="table-of-contents__link toc-highlight">Help richtlijn verbeteren</a></li>
             </ul>
            </div>

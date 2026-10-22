@@ -39,9 +39,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.b7c45ef1.css" />
-  <script src="/assets/js/runtime~main.657444e5.js" defer="defer"></script>
-  <script src="/assets/js/main.caea6ebd.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.d65e6dba.css" />
+  <script src="/assets/js/runtime~main.dd005a1a.js" defer="defer"></script>
+  <script src="/assets/js/main.9224f705.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -249,8 +249,8 @@
               <p>Dit document beschrijft de conventies voor het schrijven van herbruikbare CSS voor componenten en applicaties met NL Design System. Deze zijn bedoeld voor iedereen die nieuwe componenten ontwikkelt of bijdraagt aan gedeelde CSS-bibliotheken en voor iedereen die aanvullende CSS scrhijft in een herbruikbare applicatie.</p>
               <h2 id="huisstijl-onafhankelijk" class="utrecht-heading-2">Huisstijl onafhankelijk</h2>
               <p>Schrijf CSS die ook werkt voor anderen. Herbruikbare CSS gebruikt geen huisstijlcode. CSS-variabelen worden gebruikt voor <i lang="en">component design tokens</i> die ingevuld kunnen worden met de huisstijl van een organisatie. Dit is van belang wanneer componenten door anderen worden gebruikt, of wanneer software door meerdere organisaties met hun eigen huisstijl wordt geïnstalleerd, zoals een CMS voor gemeenten of <a href="http://commonground.nl" class="utrecht-link utrecht-link--html-a">Common Ground</a>-software.</p>
-              <div class="nlds-guideline nlds-guideline--do" id="gebruik-component-tokens-voor-de-design-beslissingen-die-per-huisstijl-verschillen.">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="gebruik-component-tokens-voor-de-design-beslissingen-die-per-huisstijl-verschillen.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -261,7 +261,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Gebruik component tokens voor de design beslissingen die per huisstijl verschillen.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R44q7dalbah:"
                  >codevoorbeeld
@@ -274,9 +274,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="gebruik-basis-tokens-voor-de-design-beslissingen-in-een-custom.css-of-componenten-die-niet-in-het-design-system-zitten.">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="gebruik-basis-tokens-voor-de-design-beslissingen-in-een-custom.css-of-componenten-die-niet-in-het-design-system-zitten.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -287,7 +287,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Gebruik basis tokens voor de design beslissingen in een custom.css of componenten die niet in het design system zitten.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R45q7dalbah:"
                  >codevoorbeeld
@@ -301,9 +301,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="gebruik-basis-tokens-als-fallback-voor-de-design-beslissingen-in-componenten-die-nog-niet-in-de-community-zitten.">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="gebruik-basis-tokens-als-fallback-voor-de-design-beslissingen-in-componenten-die-nog-niet-in-de-community-zitten.">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -314,7 +314,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Gebruik basis tokens als fallback voor de design beslissingen in componenten die nog niet in de community zitten.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R46q7dalbah:"
                  >codevoorbeeld
@@ -328,9 +328,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--dont" id="hardcoded-waardes-voor-design-beslissingen">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--dont" id="hardcoded-waardes-voor-design-beslissingen">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -341,7 +341,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Hardcoded waardes voor design beslissingen</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R47q7dalbah:"
                  >codevoorbeeld
@@ -354,9 +354,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--dont" id="huisstijl-tokens-van-jouw-organisatie-in-de-component">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--dont" id="huisstijl-tokens-van-jouw-organisatie-in-de-component">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -367,7 +367,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Huisstijl tokens van jouw organisatie in de component</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R48q7dalbah:"
                  >codevoorbeeld
@@ -380,11 +380,11 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <h2 id="geïsoleerde-theming" class="utrecht-heading-2">Geïsoleerde theming</h2>
               <p>Zorg dat de CSS van een thema niet de stylesheet van anderen in de weg zit. De huisstijlcode staat voor iedere organisatie in een apart thema-bestand. Gedeelde CSS wordt aangeboden zonder side-effects. De CSS heeft pas effect op een pagina nadat een expliciete CSS-class is toegepast. Zo kan hergebruik plaatsvinden zonder onbedoelde invloed op bestaande stylesheets.</p>
-              <div class="nlds-guideline nlds-guideline--do" id="gebruik-brand-tokens-in-je-thema">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="gebruik-brand-tokens-in-je-thema">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -396,7 +396,7 @@
                 </p>
                 <p class="utrecht-paragraph">Gebruik brand tokens in je thema</p>
                 <p>Daarin verwijst de <code>component design token</code> naar de <code>brand design token</code></p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R4bq7dalbah:"
                  >codevoorbeeld
@@ -411,10 +411,10 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p>Dit thema-bestand kan automatisch worden gegenereerd via een <a href="https://design-tokens.github.io/community-group/format/" class="utrecht-link utrecht-link--html-a">Design Tokens JSON-bestand</a> met <a href="https://styledictionary.com" class="utrecht-link utrecht-link--html-a">Style Dictionary</a>. Elke huisstijl kan een eigen design token JSON-bestand hebben dat in meerdere projecten wordt gebruikt.</p>
-              <div class="nlds-guideline nlds-guideline--do" id="huisstijl-inladen-met-een-eigen-class-name">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="huisstijl-inladen-met-een-eigen-class-name">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -425,7 +425,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Huisstijl inladen met een eigen class name</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R4dq7dalbah:"
                  >codevoorbeeld
@@ -450,9 +450,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&lt;/</span><span class="token tag" style="color:var(--nlds-code-block-tag-color)">html</span><span class="token tag punctuation" style="color:var(--nlds-code-block-punctuation-color)">&gt;</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--dont" id="huisstijl-inladen-in-de-:root">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--dont" id="huisstijl-inladen-in-de-:root">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -464,7 +464,7 @@
                 </p>
                 <p class="utrecht-paragraph">Huisstijl inladen in de :root</p>
                 <p>Zo kunnen andere stylesheets niet makkelijk worden ingeladen zonder mogelijke side-effects</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R4eq7dalbah:"
                  >codevoorbeeld
@@ -477,11 +477,11 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <h2 id="herleidbare-prefix" class="utrecht-heading-2">Herleidbare prefix</h2>
               <p>Zorg dat de prefix van de componenten en tokens herkenbaar en herleidbaar is. De componenten bij NL Design System worden bijgedragen door diverse organisaties. Om te herleiden waar een component vandaan komt en met wie je kan samenwerken om een verbetering door te voeren houden we de prefix van die organisatie aan. Ook in de applicatie van een organisatie met een andere naam. Het kan dus voorkomen dat een thema bestaat uit design tokens van diverse organisaties.</p>
-              <div class="nlds-guideline nlds-guideline--do" id="gebruik-de-prefix-van-de-organisatie-die-de-componenten-beheert">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="gebruik-de-prefix-van-de-organisatie-die-de-componenten-beheert">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -492,7 +492,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Gebruik de prefix van de organisatie die de componenten beheert</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R4hq7dalbah:"
                  >codevoorbeeld
@@ -508,9 +508,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="eigen-prefix-voor-nieuwe-componenten">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="eigen-prefix-voor-nieuwe-componenten">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -522,7 +522,7 @@
                 </p>
                 <p class="utrecht-paragraph">Eigen prefix voor nieuwe componenten</p>
                 <p>Alle namen in gedeelde CSS beginnen met een prefix die uniek is voor de organisatie. De prefix bestaat uitsluitend uit letters en cijfers, zonder koppelstreepjes of andere tekens.</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R4iq7dalbah:"
                  >codevoorbeeld
@@ -537,9 +537,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--do" id="eigen-prefix-voor-specifieke-component-tokens-bij-gebruik-van-andere-componenten">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--do" id="eigen-prefix-voor-specifieke-component-tokens-bij-gebruik-van-andere-componenten">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -550,7 +550,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Eigen prefix voor specifieke component tokens bij gebruik van andere componenten</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R4jq7dalbah:"
                  >codevoorbeeld
@@ -564,9 +564,9 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
-              <div class="nlds-guideline nlds-guideline--dont" id="eigen-css-om-de-tokens-of-css-van-een-andere-prefix-te-voorzien">
-               <div class="nlds-guideline__description">
+              </figure>
+              <figure class="nlds-guideline nlds-guideline--dont" id="eigen-css-om-de-tokens-of-css-van-een-andere-prefix-te-voorzien">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -577,7 +577,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Eigen CSS om de tokens of CSS van een andere prefix te voorzien</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R4kq7dalbah:"
                  >codevoorbeeld
@@ -598,7 +598,7 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <h2 id="herbruikbare-mixins" class="utrecht-heading-2">Herbruikbare mixins</h2>
               <p>Schrijf SCSS mixins voor gebruik met andere CSS selectors. CSS-onderdelen worden aangeboden als <a href="https://sass-lang.com/documentation/at-rules/mixin" class="utrecht-link utrecht-link--html-a">SCSS-mixin</a>, zodat andere projecten dezelfde stijlen kunnen toepassen op afwijkende selectors.</p>
               <p><code class="utrecht-code">_mixin.scss</code>:</p>
@@ -665,8 +665,8 @@
 </span></code></pre>
               <h2 id="robuuste-reset" class="utrecht-heading-2">Robuuste reset</h2>
               <p>Schrijf robuuste CSS die niet afhankelijk is van een algemene <code class="utrecht-code">reset.css</code>. Wanneer een HTML-element zoals <code class="utrecht-code">&lt;ul&gt;</code> wordt gebruikt voor een navigatiecomponent, worden browser-standaardstijlen — zoals <code class="utrecht-code">padding-inline-start</code> in <a href="https://hg.mozilla.org/mozilla-central/file/tip/layout/style/res/html.css" class="utrecht-link utrecht-link--html-a">Firefox</a> of <a href="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css" class="utrecht-link utrecht-link--html-a">Safari</a> — expliciet gereset.</p>
-              <div class="nlds-guideline nlds-guideline--do" id="reset-css-in-de-component-zelf">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="reset-css-in-de-component-zelf">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -677,7 +677,7 @@
                  ><span class="nlds-guideline__title">Doen</span>
                 </p>
                 <p class="utrecht-paragraph">Reset CSS in de component zelf</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R53q7dalbah:"
                  >codevoorbeeld
@@ -691,12 +691,12 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <p>
                Ook als het project een <a href="https://meyerweb.com/eric/tools/css/reset/" class="utrecht-link utrecht-link--html-a"><code class="utrecht-code">reset.css</code>-variant</a> gebruikt, blijft deze reset aanwezig in de componentcode zodat het ook werkt voor projecten zonder die <code class="utrecht-code">reset.css</code>.
               </p>
-              <div class="nlds-guideline nlds-guideline--dont" id="globale-css-reset">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--dont" id="globale-css-reset">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--dont">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-sad">
@@ -707,7 +707,7 @@
                  ><span class="nlds-guideline__title">Niet doen</span>
                 </p>
                 <p class="utrecht-paragraph">Globale CSS reset</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R55q7dalbah:"
                  >codevoorbeeld
@@ -720,11 +720,11 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain"></span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
               <h3 id="reset-in-een-scss-mixin" class="utrecht-heading-3">Reset in een SCSS mixin</h3>
               <p>Wanneer een property is ingesteld op de <i lang="en">initial value</i> (zoals <code class="utrecht-code">0</code> voor padding), kan dit eruitzien als overbodige code. Als reset-code in een losse mixin staat, ontbreekt de context dat het bedoeld is als browser-reset.</p>
-              <div class="nlds-guideline nlds-guideline--do" id="reset-in-een-mixin">
-               <div class="nlds-guideline__description">
+              <figure class="nlds-guideline nlds-guideline--do" id="reset-in-een-mixin">
+               <figcaption class="nlds-guideline__description">
                 <p class="utrecht-paragraph nlds-guideline__badge nlds-guideline__badge--do">
                  <span class="utrecht-icon nlds-guideline__icon" role="presentation" aria-hidden="true"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mood-happy">
@@ -736,7 +736,7 @@
                 </p>
                 <p class="utrecht-paragraph">Reset in een mixin</p>
                 <p>Om te voorkomen dat de code later als dode code wordt verwijderd, staat reset-code in een eigen mixin</p>
-               </div>
+               </figcaption>
                <div class="nlds-guideline__example">
                 <span hidden="" id=":R58q7dalbah:"
                  >codevoorbeeld
@@ -754,7 +754,7 @@
 </span><span class="token-line" style="color:var(--nlds-code-block-color)"><span class="token plain">  </span><span class="token punctuation" style="color:var(--nlds-code-block-punctuation-color)">}</span>
 </span></code></pre>
                </div>
-              </div>
+              </figure>
              </div>
              <footer class="theme-doc-footer docusaurus-mt-lg">
               <div class="row margin-top--sm theme-doc-footer-edit-meta-row">

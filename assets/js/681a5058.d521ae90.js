@@ -1,0 +1,311 @@
+'use strict';
+(globalThis.webpackChunk_nl_design_system_website = globalThis.webpackChunk_nl_design_system_website || []).push([
+ [56175],
+ {
+  12942(e, n, r) {
+   (r.r(n), r.d(n, { assets: () => j, contentTitle: () => g, default: () => k, frontMatter: () => v, metadata: () => o, toc: () => b }));
+   const o = JSON.parse('{"id":"richtlijnen/formulieren/help/avoid-input-mask/index","title":"Maak het makkelijk om flexibel een veld in te voeren","description":"Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.","source":"@site/docs/richtlijnen/formulieren/help/8-avoid-input-mask/index.mdx","sourceDirName":"richtlijnen/formulieren/help/8-avoid-input-mask","slug":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","permalink":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","draft":false,"unlisted":false,"editUrl":"https://github.com/nl-design-system/documentatie/tree/main/docs/richtlijnen/formulieren/help/8-avoid-input-mask/index.mdx","tags":[],"version":"current","frontMatter":{"title":"Maak het makkelijk om flexibel een veld in te voeren","title_sm":"Vermijd invoerpatronen","hide_title":true,"hide_table_of_contents":false,"sidebar_label":"Vermijd invoerpatronen","pagination_label":"Vermijd invoerpatronen","description":"Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.","slug":"/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen","keywords":["labels","formulier","design","code"]},"sidebar":"richtlijnen","previous":{"title":"Controleren en aanpassen","permalink":"/richtlijnen/formulieren/voorkom-fouten/controleren-en-aanpassen"},"next":{"title":"Wanneer gebruik je welk formulierelement","permalink":"/richtlijnen/formulieren/wanneer-welk-form-element/"}}');
+   var l = r(86070),
+    t = r(18439),
+    i = r(56672);
+   function a(e) {
+    const n = { a: 'a', code: 'code', h1: 'h1', h2: 'h2', header: 'header', li: 'li', p: 'p', pre: 'pre', strong: 'strong', ul: 'ul', ...(0, t.R)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.header, { children: (0, l.jsx)(n.h1, { id: 'vermijd-invoerpatroon-op-een-formulierveld', children: 'Vermijd invoerpatroon op een formulierveld' }) }), '\n', (0, l.jsx)(n.p, { children: 'Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.' }), '\n', (0, l.jsx)(n.p, { children: 'Wanneer je een gebruiker dwingt om volgens een vast patroon bijvoorbeeld van telefoonnummer in te voeren, kan dit leiden tot verwarring als ze alleen een mobiel nummer heeft.' }), '\n', (0, l.jsx)(n.p, { children: 'Een vast patroon kan ook een blokkade zijn om een formulier in te vullen. Bijvoorbeeld:' }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Het telefoonnummer past niet in het vereiste patroon: de gebruiker wil een buitenlands nummer invoeren, maar dat kan niet.' }), '\n', (0, l.jsx)(n.li, { children: "De gebruiker wil belangrijke informatie toevoegen zoals: 'alleen 's middags bellen' maar dat kan niet." }), '\n', (0, l.jsx)(n.li, { children: 'De gebruiker begrijpt niet wat er fout gaat omdat bijvoorbeeld letters niet kunnen worden ingevoerd en er geen goede feedback is over wat er fout gaat.' }), '\n'] }), '\n', (0, l.jsxs)(n.p, { children: [(0, l.jsx)(n.strong, { children: 'Let op' }), ': Er zijn situaties waar het precies invullen van een formulierveld vereist is, zoals bijvoorbeeld bij het invoeren van een wachtwoord. Geef in dat geval altijd duidelijk in de description aan ', (0, l.jsx)(n.a, { href: '/richtlijnen/formulieren/voorkom-fouten/geldige-waardes/', children: 'hoe een veld in te vullen' }), '.'] }), '\n', (0, l.jsx)(n.h2, { id: 'wat-is-een-patroon-op-een-invoerveld', children: 'Wat is een patroon op een invoerveld?' }), '\n', (0, l.jsx)(n.p, { children: 'Een patroon legt precies vast hoe een formulierveld moet worden ingevuld en staat geen andere invoer toe.' }), '\n', (0, l.jsxs)(n.p, { children: ['Dus kan door het gebruik van het ', (0, l.jsxs)(n.a, { href: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern', children: ['HTML-attribuut ', (0, l.jsx)(n.code, { children: 'pattern' })] }), ', in combinatie met JavaScript.'] }), '\n', (0, l.jsxs)(n.p, { children: ['Het ', (0, l.jsx)(n.code, { children: 'pattern' }), ' legt vast wat precies de waarde moet zijn, JavaScript controleert die waarde, past eventueel de layout aan en blokkeert niet-geldige invoer.'] }), '\n', (0, l.jsx)(n.p, { children: 'Hoe de gebruiker een veld moet invoeren volgens het gewenste patroon staat dan in de description of in een placeholder.' }), '\n', (0, l.jsx)(n.p, { children: 'Je kunt een invoerveld van een voornaam beperken tot bijvoorbeeld minimaal 3 en maximaal 12 karakters.\nDan heb je pech als je Jo of Claus-Casimir heet.' }), '\n', (0, l.jsx)(n.pre, { children: (0, l.jsx)(n.code, { className: 'language-html', children: '\x3c!-- Foute code, niet gebruiken --\x3e\n<input id="voornaam" name="voornaam" type="text" pattern="\\w{3,16}" autocomplete="given-name" />\n' }) }), '\n', (0, l.jsx)(n.p, { children: 'Je kunt een invoerveld voor een telefoonnummer een verplicht formaat geven.\nDan heb je pech als je geen vaste telefoon meer hebt of een buitenlands nummer wilt opgeven.' }), '\n', (0, l.jsx)(n.pre, { children: (0, l.jsx)(n.code, { className: 'language-html', children: '\x3c!-- Foute code, niet gebruiken --\x3e\n<input\n  type="tel"\n  id="telefoon"\n  name="telefoon"\n  pattern="[0-9]{3}-[0-9]{7}"\n  placeholder="___-_______"\n  autocomplete="tel"\n/>\n' }) }), '\n', (0, l.jsx)(n.h2, { id: 'de-problemen-met-de-gebruikerservaring-en-de-toegankelijkheid-van-invoerpatronen', children: 'De problemen met de gebruikerservaring en de toegankelijkheid van invoerpatronen' }), '\n', (0, l.jsxs)(n.p, { children: ['Adam Silver vat het goed samen in zijn artikel ', (0, l.jsx)(n.a, { href: 'https://adamsilver.io/blog/the-problem-with-input-masks-and-what-to-do-instead/', children: (0, l.jsx)('span', { lang: 'en', children: 'The problem with input masks and what to do instead' }) }), '.'] }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: 'Het patroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.' }), '\n', (0, l.jsx)(n.li, { children: "Afgedwongen patronen zijn verwarrend, de cursor verspringt automatisch naar een volgende positie en speciale tekens zoals '-', '(' of ')' kunnen niet worden verwijderd." }), '\n', (0, l.jsx)(n.li, { children: 'De placeholder met het voorbeeld kan lijken op een al ingevuld veld.' }), '\n', (0, l.jsx)(n.li, { children: 'De placeholder met het voorbeeld verdwijnt bij het invullen en je weet niet meer hoe de rest van de waarde in te vullen.' }), '\n', (0, l.jsx)(n.li, { children: 'Omdat de er tekens worden verwijderd of overgeslagen lijkt het alsof er wat fout gaat zonder dat er een meteen foutmelding verschijnt.' }), '\n'] }), '\n', (0, l.jsxs)(n.p, { children: ['In het artikel van Giovani Camara ', (0, l.jsx)(n.a, { href: 'https://giovanicamara.com/blog/accessible-input-masking/', children: (0, l.jsx)('span', { lang: 'en', children: 'Accessible input masking' }) }), ' laat hij de YouTube video ', (0, l.jsx)(n.a, { href: 'https://www.youtube.com/watch?v=rTk3XNSXJXY', children: (0, l.jsx)('span', { lang: 'en', children: 'Allow users to edit anywhere' }) }), ' zien wat er fout kan gaan als een gebruiker een waarde wil wijzigen. De cursus kan vanzelf naar het einde van de waarde springen, terwijl je het eerste karakter wilt aanpassen. Dit is voor iedereen irritant en leidt tot fouten.'] }), '\n', (0, l.jsxs)(n.p, { children: ['Het aangeven van invoerpatronen in de placeholder of in het value-attribute kan heel zijn onduidelijk voor gebruikers van ', (0, l.jsx)(n.a, { href: '/woordenlijst/#screenreader', children: 'screenreaders' }), '. Een opsomming van underscores is niet erg informatief. Kijk en luister naar de ', (0, l.jsx)(n.a, { href: 'https://www.youtube.com/watch?v=7WWQXGgRDLc', children: 'demo op YouTube van Giovani Camara' }), ' hiervan met VoiceOver.'] }), '\n', (0, l.jsxs)(n.p, { children: ['Is een exacte invoer nodig, bijvoorbeeld bij een geboortedatum, biedt dan een optie aan die iedereen makkelijk kan invullen. De richtlijn ', (0, l.jsx)(n.a, { href: '/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen/', children: 'Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief' }), ' gaat hier uitgebreid op in.'] }), '\n', (0, l.jsx)(n.p, { children: 'Daarnaast zijn een goede description en duidelijke foutmeldingen belangrijk. Help de gebruiker en laat deze niet puzzelen over hoe precies een veld in te vullen en wat er nu weer fout gaat.' })] });
+   }
+   function s(e = {}) {
+    const { wrapper: n } = { ...(0, t.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(a, { ...e }) }) : a(e);
+   }
+   var d = r(87682),
+    c = r(56528);
+   function h(e) {
+    const n = { h2: 'h2', ...(0, t.R)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: ['\n', '\n', (0, l.jsx)(n.h2, { id: 'voorbeelden', children: 'Voorbeelden' }), '\n', (0, l.jsx)(c.$, { appearance: 'do', title: 'Geef in de description aan hoe een veld kan worden ingevoerd.', children: (0, l.jsx)(d.H, { language: 'html', children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('p', { children: (0, l.jsx)('label', { htmlFor: 'bevestigingcode', children: 'Je bevestigingcode' }) }), (0, l.jsx)('p', { id: 'description-bevestigingcode', children: 'Vul een nummer van 8 cijfers in.' }), (0, l.jsx)('p', { children: (0, l.jsx)('input', { type: 'text', inputMode: 'numeric', id: 'bevestigingcode', name: 'bevestigingcode', 'aria-describedby': 'description-bevestigingcode' }) })] }) }) }), '\n', (0, l.jsx)(c.$, { appearance: 'dont', title: 'Gebruik het pattern-attribuut met het invoerpatroon en geef aan hoe een veld in te vullen met de placeholder.', description: 'Dit voorbeeld valideert de waarde niet met JavaScript en is alleen ter illustratie.', children: (0, l.jsx)(d.H, { language: 'html', children: () => (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)('p', { children: (0, l.jsx)('label', { htmlFor: 'postcode2', children: 'Je postcode' }) }), (0, l.jsx)('p', { children: (0, l.jsx)('input', { type: 'text', placeholder: '____ __', id: 'postcode2', name: 'postcode', pattern: '[1-9][0-9]{3}\\s?[a-zA-Z]{2}', autoComplete: 'postal-code' }) })] }) }) })] });
+   }
+   function m(e = {}) {
+    const { wrapper: n } = { ...(0, t.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(h, { ...e }) }) : h(e);
+   }
+   function p(e) {
+    const n = { a: 'a', h2: 'h2', li: 'li', p: 'p', ul: 'ul', ...(0, t.R)(), ...e.components };
+    return (0, l.jsxs)(l.Fragment, { children: [(0, l.jsx)(n.h2, { id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', children: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System' }), '\n', (0, l.jsx)(n.p, { children: "Op de WCAG succescriteria pagina's op deze website lees je meer over veelgemaakte fouten en hoe je kunt testen of jouw website aan de succescriteria voldoet." }), '\n', (0, l.jsxs)(n.ul, { children: ['\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/2.4.6/', children: 'Succescriterium 2.4.6 Koppen en labels' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/3.3.1/', children: 'Succescriterium 3.3.1 Foutidentificatie' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/3.3.2/', children: 'Succescriterium 3.3.2 Labels of instructies' }) }), '\n', (0, l.jsx)(n.li, { children: (0, l.jsx)(n.a, { href: '/wcag/3.3.3/', children: 'Succescriterium 3.3.3 Foutsuggestie' }) }), '\n'] })] });
+   }
+   function u(e = {}) {
+    const { wrapper: n } = { ...(0, t.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(p, { ...e }) }) : p(e);
+   }
+   const v = { title: 'Maak het makkelijk om flexibel een veld in te voeren', title_sm: 'Vermijd invoerpatronen', hide_title: !0, hide_table_of_contents: !1, sidebar_label: 'Vermijd invoerpatronen', pagination_label: 'Vermijd invoerpatronen', description: 'Maak het een gebruiker zo gemakkelijk mogelijk om flexibel een veld in te voeren. Een vast invoerpatroon kan niet geschikt zijn voor het antwoord wat de gebruiker wil geven.', slug: '/richtlijnen/formulieren/voorkom-fouten/geen-invoerpatronen', keywords: ['labels', 'formulier', 'design', 'code'] },
+    g = void 0,
+    j = {},
+    b = [{ value: 'Wat is een patroon op een invoerveld?', id: 'wat-is-een-patroon-op-een-invoerveld', level: 2 }, { value: 'De problemen met de gebruikerservaring en de toegankelijkheid van invoerpatronen', id: 'de-problemen-met-de-gebruikerservaring-en-de-toegankelijkheid-van-invoerpatronen', level: 2 }, { value: 'Voorbeelden', id: 'voorbeelden', level: 2 }, { value: 'Meer lezen over gerelateerde WCAG-succescriteria op NL Design System', id: 'meer-lezen-over-gerelateerde-wcag-succescriteria-op-nl-design-system', level: 2 }, ...i.RM];
+   function x(e) {
+    return (0, l.jsxs)(l.Fragment, { children: ['\n', '\n', (0, l.jsx)(s, {}), '\n', (0, l.jsx)(m, {}), '\n', (0, l.jsx)(u, {}), '\n', (0, l.jsx)(i.Ay, {})] });
+   }
+   function k(e = {}) {
+    const { wrapper: n } = { ...(0, t.R)(), ...e.components };
+    return n ? (0, l.jsx)(n, { ...e, children: (0, l.jsx)(x, { ...e }) }) : x();
+   }
+  },
+  14881(e, n, r) {
+   r.d(n, { K: () => c, n: () => d });
+   var o = r(13526),
+    l = r(30758),
+    t = r(30662),
+    i = r(32065),
+    a = r(37168),
+    s = r(86070);
+   const d = (0, l.forwardRef)(({ as: e, className: n, children: r, ...l }, t) => {
+     const i = e || 'div',
+      a = (0, o.A)('ma-utrecht-accordion', 'utrecht-accordion', n);
+     return (0, s.jsx)(i, { ref: t, className: a, ...l, children: r });
+    }),
+    c = ({ className: e, classNamePanel: n, label: r, heading: l, headingLevel: d, headingApperance: c, ...h }) => {
+     const m = (0, o.A)('utrecht-accordion__section', e),
+      p = (0, o.A)('utrecht-accordion__panel', n);
+     return (0, s.jsxs)('details', { className: m, ...h, children: [(0, s.jsx)('summary', { className: 'utrecht-accordion__header', children: (0, s.jsxs)('span', { className: 'nl-button nl-button--subtle', children: [(0, s.jsx)('span', { className: 'nl-button__icon-start', children: (0, s.jsx)(i.I, { children: (0, s.jsx)(t.rI, {}) }) }), (0, s.jsxs)('span', { className: 'nl-button__label', children: [l && (0, s.jsx)(a.D, { level: d, appearance: c, children: l }), r] })] }) }), (0, s.jsx)('div', { className: p, children: h.children })] });
+    };
+  },
+  18439(e, n, r) {
+   r.d(n, { R: () => i, x: () => a });
+   var o = r(30758);
+   const l = {},
+    t = o.createContext(l);
+   function i(e) {
+    const n = o.useContext(t);
+    return o.useMemo(
+     function () {
+      return 'function' == typeof e ? e(n) : { ...n, ...e };
+     },
+     [n, e],
+    );
+   }
+   function a(e) {
+    let n;
+    return ((n = e.disableParentContext ? ('function' == typeof e.components ? e.components(l) : e.components || l) : i(e.components)), o.createElement(t.Provider, { value: n }, e.children));
+   }
+  },
+  28369(e, n, r) {
+   r.d(n, { M: () => d });
+   var o = r(46447),
+    l = r(16194),
+    t = r(30758),
+    i = r(56528);
+   const a = {
+    plain: { color: 'var(--nlds-code-block-color)', backgroundColor: 'var(--nlds-code-block-background-color)' },
+    styles: [
+     { types: ['maybe-class-name'], style: { color: 'var(--nlds-code-block-maybe-class-name-color, var(--nlds-code-block-class-name-color))' } },
+     { types: ['comment'], style: { color: 'var(--nlds-code-block-comment-color)', fontStyle: 'italic' } },
+     { types: ['prolog'], style: { color: 'var(--nlds-code-block-prolog-color)', fontStyle: 'italic' } },
+     { types: ['cdata'], style: { color: 'var(--nlds-code-block-cdata-color)', fontStyle: 'italic' } },
+     { types: ['punctuation'], style: { color: 'var(--nlds-code-block-punctuation-color)' } },
+     { types: ['deleted'], style: { color: 'var(--nlds-code-block-deleted-color)', fontStyle: 'italic' } },
+     { types: ['symbol'], style: { color: 'var(--nlds-code-block-symbol-color)' } },
+     { types: ['property'], style: { color: 'var(--nlds-code-block-property-color)' } },
+     { types: ['tag'], style: { color: 'var(--nlds-code-block-tag-color)' } },
+     { types: ['operator'], style: { color: 'var(--nlds-code-block-operator-color)' } },
+     { types: ['keyword'], style: { color: 'var(--nlds-code-block-keyword-color)' } },
+     { types: ['boolean'], style: { color: 'var(--nlds-code-block-boolean-color)' } },
+     { types: ['number'], style: { color: 'var(--nlds-code-block-number-color)' } },
+     { types: ['constant'], style: { color: 'var(--nlds-code-block-constant-color)' } },
+     { types: ['function'], style: { color: 'var(--nlds-code-block-function-color)' } },
+     { types: ['builtin'], style: { color: 'var(--nlds-code-block-builtin-color)' } },
+     { types: ['char'], style: { color: 'var(--nlds-code-block-char-color)' } },
+     { types: ['selector'], style: { color: 'var(--nlds-code-block-selector-color)', fontStyle: 'italic' } },
+     { types: ['doctype'], style: { color: 'var(--nlds-code-block-doctype-color)', fontStyle: 'italic' } },
+     { types: ['attr-name'], style: { color: 'var(--nlds-code-block-attr-name-color)', fontStyle: 'italic' } },
+     { types: ['inserted'], style: { color: 'var(--nlds-code-block-inserted-color)', fontStyle: 'italic' } },
+     { types: ['string'], style: { color: 'var(--nlds-code-block-string-color)' } },
+     { types: ['url'], style: { color: 'var(--nlds-code-block-url-color)' } },
+     { types: ['entity'], style: { color: 'var(--nlds-code-block-entity-color)' } },
+     { types: ['class-name'], style: { color: 'var(--nlds-code-block-class-name-color)' } },
+     { types: ['atrule'], style: { color: 'var(--nlds-code-block-atrule-color)' } },
+     { types: ['attr-value'], style: { color: 'var(--nlds-code-block-attr-value-color)' } },
+     { types: ['regex'], style: { color: 'var(--nlds-code-block-regex-color)' } },
+     { types: ['important'], style: { color: 'var(--nlds-code-block-important-color)', fontWeight: 'bold' } },
+     { types: ['variable'], style: { color: 'var(--nlds-code-block-variable-color)' } },
+     { types: ['bold'], style: { fontWeight: 'bold' } },
+     { types: ['italic'], style: { fontStyle: 'italic' } },
+    ],
+   };
+   var s = r(86070);
+   function d({ lineNumber: e, syntax: n, textContent: r, trim: d }) {
+    let c = r;
+    const { title: h, type: m } = (0, t.useContext)(i.x),
+     p = (0, t.useId)();
+    return (d && (c = c.trim()), (0, s.jsx)(l.f4, { theme: a, code: c, language: n || '', children: ({ style: n, tokens: r, getLineProps: l, getTokenProps: t }) => (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)('span', { hidden: !0, id: p, children: ['codevoorbeeld ', m ? `\u201c${m}\u201d` : '', ' ', h ? ': ' : ' ', h] }), (0, s.jsx)(o.NG, { tabIndex: 0, role: h ? 'region' : void 0, 'aria-labelledby': p, style: n, children: r.map((n, r) => (0, s.jsxs)('span', { ...l({ line: n }), children: [e && (0, s.jsx)('span', { children: r + 1 }), n.map((e, n) => (0, s.jsx)('span', { ...t({ token: e }) }, n)), '\n'] }, r)) })] }) }));
+   }
+  },
+  30662(e, n, r) {
+   r.d(n, { D4: () => L, GP: () => w, KC: () => H, Nd: () => _, Rt: () => C, Vj: () => N, Wk: () => R, bz: () => z, cB: () => S, e5: () => V, hY: () => T, jK: () => M, jP: () => I, ob: () => W, rI: () => A, t4: () => F, vP: () => D, vg: () => E });
+   var o = r(92081),
+    l = r(90578),
+    t = r(96345),
+    i = r(64249),
+    a = r(4603),
+    s = r(91525),
+    d = r(23436),
+    c = r(1375),
+    h = r(4077),
+    m = r(58315),
+    p = r(73563),
+    u = r(35193),
+    v = r(82999),
+    g = r(13088),
+    j = r(43864),
+    b = r(24214),
+    x = r(79532),
+    k = r(60529),
+    f = r(86070);
+   const y = { width: '1em', height: '1em' },
+    _ = () => (0, f.jsx)(o.A, { ...y }),
+    w = () => (0, f.jsx)(l.A, { ...y }),
+    A = () => (0, f.jsx)(t.A, { ...y }),
+    N = () => (0, f.jsx)(i.A, { ...y }),
+    z = () => (0, f.jsx)(a.A, { ...y }),
+    C = () => (0, f.jsx)(s.A, { ...y }),
+    S = () => (0, f.jsx)(d.A, { ...y }),
+    D = () => (0, f.jsx)(c.A, { ...y }),
+    M = () => (0, f.jsx)(h.A, { ...y }),
+    I = () => (0, f.jsx)(m.A, { ...y }),
+    F = () => (0, f.jsx)(p.A, { ...y }),
+    L = () => (0, f.jsx)(u.A, { ...y }),
+    T = () => (0, f.jsx)(v.A, { ...y }),
+    H = () => (0, f.jsx)(g.A, { ...y }),
+    R = () => (0, f.jsx)(j.A, { ...y }),
+    V = () => (0, f.jsx)(b.A, { ...y }),
+    W = () => (0, f.jsx)(x.A, { ...y }),
+    E = () => (0, f.jsx)(k.A, { ...y });
+  },
+  32065(e, n, r) {
+   r.d(n, { I: () => o.In });
+   var o = r(29181);
+  },
+  46847(e, n, r) {
+   r.d(n, { $: () => o.$n });
+   var o = r(50805);
+  },
+  56528(e, n, r) {
+   r.d(n, { $: () => c, x: () => d });
+   var o = r(30662),
+    l = r(46447),
+    t = r(13526),
+    i = r(45795),
+    a = r(30758),
+    s = r(86070);
+   const d = (0, a.createContext)({}),
+    c = ({ title: e, appearance: n, description: r, children: a, figure: c = !0 }) => {
+     const h = { do: 'Doen', dont: 'Niet doen' },
+      m = c ? 'figure' : 'div',
+      p = c ? 'figcaption' : 'div',
+      u = 'string' == typeof r ? (0, s.jsx)(i.oz, { components: { a: l.N_ }, children: r }) : r;
+     return (0, s.jsxs)(m, { className: (0, t.A)('nlds-guideline', `nlds-guideline--${n}`), id: 'string' == typeof e ? e?.toLowerCase().replace(/\s/g, '-') : void 0, children: [(0, s.jsxs)(p, { className: 'nlds-guideline__description', children: ['dont' === n ? (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(l.fz, { className: (0, t.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, s.jsx)(l.In, { 'aria-hidden': 'true', className: 'nlds-guideline__icon', children: (0, s.jsx)(o.jP, {}) }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: h.dont })] }), (0, s.jsx)(l.fz, { children: e })] }) : (0, s.jsxs)(s.Fragment, { children: [(0, s.jsxs)(l.fz, { className: (0, t.A)('nlds-guideline__badge', `nlds-guideline__badge--${n}`), children: [(0, s.jsx)(l.In, { 'aria-hidden': 'true', className: 'nlds-guideline__icon', children: (0, s.jsx)(o.jK, {}) }), (0, s.jsx)('span', { className: 'nlds-guideline__title', children: h.do })] }), (0, s.jsx)(l.fz, { children: e })] }), u] }), (0, s.jsx)('div', { className: 'nlds-guideline__example', children: (0, s.jsx)(d.Provider, { value: { title: e, type: h[n] }, children: a }) })] });
+    };
+  },
+  56672(e, n, r) {
+   r.d(n, { Ay: () => a, RM: () => t });
+   var o = r(86070),
+    l = r(18439);
+   const t = [{ value: 'Over deze richtlijnen', id: 'over-deze-richtlijnen', level: 2 }];
+   function i(e) {
+    const n = { a: 'a', h2: 'h2', p: 'p', strong: 'strong', ...(0, l.R)(), ...e.components };
+    return (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)(n.h2, { id: 'over-deze-richtlijnen', children: 'Over deze richtlijnen' }), '\n', (0, o.jsxs)(n.p, { children: ['Deze richtlijnen worden onderhouden door NL Design System en zijn op dit moment in ', (0, o.jsx)(n.strong, { children: 'beta' }), '.'] }), '\n', (0, o.jsxs)(n.p, { children: ['We willen graag van de community horen of ze werkbaar en nuttig zijn. Heb je vragen, aanvullingen of opmerkingen?\n', (0, o.jsx)(n.a, { href: 'https://github.com/nl-design-system/documentatie/issues', children: 'Open een issue op GitHub' }), ' en deel je mening.'] })] });
+   }
+   function a(e = {}) {
+    const { wrapper: n } = { ...(0, l.R)(), ...e.components };
+    return n ? (0, o.jsx)(n, { ...e, children: (0, o.jsx)(i, { ...e }) }) : i(e);
+   }
+  },
+  87682(e, n, r) {
+   r.d(n, { H: () => _ });
+   var o = r(28369),
+    l = r(46447),
+    t = r(13526),
+    i = r(68148),
+    a = r(9016),
+    s = r(69303),
+    d = r(91635),
+    c = r(30734),
+    h = r(30758),
+    m = r(31186),
+    p = r(65904),
+    u = r.n(p),
+    v = r(14881),
+    g = r(46847),
+    j = r(86070);
+   const b = ({ label: e, labelId: n, className: r, colorScheme: o, forcedColorsAdjust: l = !1, children: i, dangerouslySetInnerHTML: a, ...s }) => (0, j.jsxs)('figure', { className: (0, t.A)('ma-html-image', r), role: e ? 'img' : void 0, 'aria-labelledby': e ? n : void 0, ...s, children: [e && (0, j.jsx)('figcaption', { className: 'ma-html-image__label', hidden: !0, id: n, children: e }), (0, j.jsx)('div', { className: (0, t.A)('ma-html-image__body', { 'ma-html-image__body--color-scheme-dark': 'dark' === o, 'ma-html-image__body--color-scheme-light': 'light' === o, 'ma-html-image__body--forced-colors-adjust': l }), inert: 'true', dangerouslySetInnerHTML: a, 'aria-hidden': 'true', children: i })] });
+   var x = r(68197);
+   const k = ({ children: e }) => (0, j.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: (0, j.jsx)(l.yo, { className: (0, t.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: (0, j.jsx)(l.fz, { className: 'nlds-canvas__example-paragraph', children: e }) }) });
+   k.displayName = 'ParagraphContainer';
+   const f = ({ children: e }) => (0, j.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: (0, j.jsx)(l.yo, { className: (0, t.A)('utrecht-document--surface', 'nlds-canvas__example-document'), children: e }) });
+   f.displayName = 'DocumentContainer';
+   const y = ({ children: e }) => (0, j.jsx)(l.ui, { className: 'nlds-canvas__example-surface', children: e });
+   y.displayName = 'SurfaceContainer';
+   const _ = globalThis.isAstro
+    ? ({ language: e, className: n, code: r = '<p>No code provided</p>', rawCode: o, copyCode: l, colorScheme: i, defaultExpandedCode: a, designTokens: s, forcedColorsAdjust: d = !0, label: c }) => {
+       const m = 'string' == typeof r ? r : o || '',
+        p = 'string' == typeof r ? u().highlight(r, u().languages[e], e) : u().highlight(o || '', u().languages[e], e),
+        k = (0, j.jsx)(x.b, { Component: 'div', className: (0, t.A)('ma-canvas-astro__example', 'voorbeeld-theme', 'utrecht-html', 'ma-flow', { 'ma-canvas-astro__example--color-scheme-dark': 'dark' === i, 'ma-canvas-astro__example--color-scheme-light': 'light' === i }), style: s, dangerouslySetInnerHTML: { __html: m } });
+       return (0, j.jsxs)('div', { className: (0, t.A)('ma-canvas-astro', n), children: [c ? (0, j.jsx)(b, { forcedColorsAdjust: d, label: c, labelId: c ? (0, h.useId)() : void 0, children: k }) : k, (0, j.jsx)(v.n, { children: (0, j.jsxs)(v.K, { label: 'Code', open: a, children: [(0, j.jsx)('pre', { className: 'language-html nl-code-block', tabIndex: 0, children: (0, j.jsx)('code', { className: 'language-html nl-code-block__code', dangerouslySetInnerHTML: { __html: p } }) }), 'allow' === l && (0, j.jsx)(g.$, { 'data-copy-code': m, purpose: 'secondary', children: 'Kopieer code' })] }) })] });
+      }
+    : ({ code: e, copy: n = !0, defaultExpandedCode: r = !1, displayCode: p = !0, children: u, container: v = 'document', language: g, designTokens: b }) => {
+       const x = 'function' == typeof u ? u() : u,
+        _ = 'function' == typeof e ? e() : (0, h.isValidElement)(e) ? e : void 0,
+        w = 'string' == typeof e ? e : m.qV(_ || x),
+        [A, N] = (0, h.useState)(w),
+        [z, C] = (0, h.useState)(r);
+       (0, h.useEffect)(() => {
+        (async () => {
+         const e = await c.Ay.format(w, { parser: g, plugins: [i.A, a.Ay, s.Ay, d.Ay], semi: !1, singleAttributePerLine: !0, embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' });
+         N(e);
+        })();
+       }, [w]);
+       const S = (0, h.useId)();
+       let D = h.Fragment;
+       return (
+        'paragraph' === v ? (D = k) : 'document' === v ? (D = f) : 'surface' === v && (D = y),
+        (0, j.jsxs)('div', {
+         className: (0, t.A)('nlds-canvas'),
+         children: [
+          x && (0, j.jsx)('div', { className: (0, t.A)('nlds-canvas__example'), children: (0, j.jsx)('div', { className: 'voorbeeld-theme', style: b, children: (0, j.jsx)(D, { children: (0, j.jsx)(l.v$, { children: x }) }) }) }),
+          p &&
+           (0, j.jsx)('div', {
+            className: (0, t.A)('nlds-canvas__toolbar'),
+            children: (0, j.jsx)(l.$n, {
+             className: (0, t.A)('nlds-canvas__button', 'nlds-canvas__toggle-code-button'),
+             appearance: 'subtle-button',
+             onClick: () => {
+              C(!z);
+             },
+             'aria-expanded': z,
+             'aria-controls': S,
+             children: z ? 'Verberg code' : 'Bekijk code',
+            }),
+           }),
+          p &&
+           (0, j.jsxs)('div', {
+            className: (0, t.A)('nlds-canvas__code-block', !n && 'nlds-canvas__code-block--user-select-none'),
+            id: S,
+            hidden: !z,
+            children: [
+             (0, j.jsx)(o.M, { codeBlockLabel: 'Codevoorbeeld', syntax: g, textContent: A, trim: !0 }),
+             n &&
+              (0, j.jsx)('div', {
+               className: (0, t.A)('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy'),
+               children: (0, j.jsx)(l.$n, {
+                className: (0, t.A)('nlds-canvas__button', 'nlds-canvas__copy-button'),
+                appearance: 'subtle-button',
+                onClick: () => {
+                 navigator.clipboard.writeText(A).catch((e) => console.error('Copy code failed', e));
+                },
+                children: 'Kopieer',
+               }),
+              }),
+            ],
+           }),
+         ],
+        })
+       );
+      };
+  },
+ },
+]);

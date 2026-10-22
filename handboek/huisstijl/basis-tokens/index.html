@@ -38,9 +38,9 @@
   <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="NL Design System Atom Feed" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="NL Design System" href="/opensearch.xml" />
-  <link rel="stylesheet" href="/assets/css/styles.b7c45ef1.css" />
-  <script src="/assets/js/runtime~main.657444e5.js" defer="defer"></script>
-  <script src="/assets/js/main.caea6ebd.js" defer="defer"></script>
+  <link rel="stylesheet" href="/assets/css/styles.d65e6dba.css" />
+  <script src="/assets/js/runtime~main.dd005a1a.js" defer="defer"></script>
+  <script src="/assets/js/main.9224f705.js" defer="defer"></script>
  </head>
  <body class="navigation-with-keyboard">
   <svg style="display: none">
@@ -216,7 +216,7 @@
              <div class="theme-doc-markdown markdown">
               <header><h1 id="basis-tokens" class="utrecht-heading-1">Basis-tokens</h1></header>
               <p>Basis-tokens bieden organisaties een &#x27;basis-set&#x27; van <a href="/handboek/huisstijl/design-tokens/#common-tokens" class="utrecht-link utrecht-link--html-a">&#x27;Common&#x27; tokens</a>. Door organisatieoverstijgend uit dezelfde bron te werken, worden componenten eenvoudig uitwisselbaar tussen organisaties.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_basis-tokens.png" alt="De afbeelding toont een blauwe en groene primaire knop. Daarboven staan de verwijzingen vanuit de verschillende token niveau&#x27;s." class="utrecht-img" /></p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_basis-tokens.png" alt="Schema van twee voorbeelden van design tokens. Design tokens opgebouwd uit drie lagen: Brand, Common en Component. In het eerste voorbeeld stroomt de hex kleur #1B59A4 (blauw) direct naar de Common token basis.color.action-1-inverse.bg-default en vervolgens naar Component token nl.button.primary.background-color, wat resulteert in een blauwe primaire knop. In tweede voorbeeld stroomt de hex kleur #157B31 naar de Brand token org.kleur.groen via de Common en Component token (met de zelfde namen als in het blauwe voorbeeld) naar een groene primaire knop." class="utrecht-img" /></p>
               <p>Omdat we verschillende huisstijlen willen ondersteunen, is de set bewust ruim opgezet. Het is makkelijker om ongebruikte tokens later te verwijderen dan telkens nieuwe toe te moeten voegen.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_basis-tokens_doel.png" alt="De afbeelding toont 4 knoppen. Ze verschillen van kleur, lettertype en de mate waarin de hoeken zijn afgerond." class="utrecht-img" /></p>
               <h2 id="goed-om-te-weten" class="utrecht-heading-2">Goed om te weten</h2>
@@ -255,7 +255,7 @@
               </ul>
               <h3 id="onderling-verwijzen" class="utrecht-heading-3">Onderling verwijzen</h3>
               <p>Omdat we uiteenlopende huisstijlen willen ondersteunen, is de set basis-tokens ruim opgezet. Maar als je een eenvoudig thema hebt, is het mogelijk om basis-tokens onderling naar elkaar te laten verwijzen. Dit gebeurt bijvoorbeeld ook bij het <a href="/handboek/huisstijl/themas/start-thema/" class="utrecht-link utrecht-link--html-a">Start-thema</a>.</p>
-              <p><strong>Voorbeeld A</strong></p>
+              <h4 id="voorbeeld-a" class="utrecht-heading-4">Voorbeeld A</h4>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">basis.text.font-family.default</code> heeft als waarde <code class="utrecht-code">IBM Plex Sans, sans-serif</code>.</li>
                <li><code class="utrecht-code">basis.heading.font-family</code> heeft als waarde <code class="utrecht-code">{basis.text.font-family.default}</code>.</li>
@@ -263,7 +263,7 @@
               <p>Gebruikt jouw organisatie één lettertype voor zowel tekst als koppen? Dan hoef je enkel de waarde van <code class="utrecht-code">basis.text.font-family.default</code> aan te passen.</p>
               <p>Wil je koppen een ander lettertype geven? Dan pas je <code class="utrecht-code">basis.heading.font-family</code> afzonderlijk aan.</p>
               <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_basis-tokens_voorbeeld-a.png" alt="De afbeelding toont 2 voorbeelden. Links wordt voor tekst en headings hetzelfde lettertype gebruikt. Rechts wordt voor de headings een ander lettertype gebruikt." class="utrecht-img" /></p>
-              <p><strong>Voorbeeld B</strong></p>
+              <h4 id="voorbeeld-b" class="utrecht-heading-4">Voorbeeld B</h4>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">basis.color.accent-1.color-default</code> heeft als waarde <code class="utrecht-code">#1B59A4</code>.</li>
                <li><code class="utrecht-code">basis.color.accent-2.color-default</code> heeft als waarde <code class="utrecht-code">{basis.color.accent-1.color-default}</code>.</li>
@@ -343,7 +343,7 @@
               </div>
               <h2 id="basis-tokens-voor-kleur" class="utrecht-heading-2">Basis-tokens voor kleur</h2>
               <p>Voor kleur (<code class="utrecht-code">color</code>) is een uitgebreide set basis-tokens beschikbaar, geïnspireerd op <a href="https://www.radix-ui.com/colors" class="utrecht-link utrecht-link--html-a">Radix</a>. De kleuren zijn volledig aanpasbaar naar wens van jouw organisatie.</p>
-              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_basis-tokens_colors.png" alt="De afbeelding toont een grid van verschillende kleuren, onder de kleuren staan de namen van de basis-tokens en hun waarde." class="utrecht-img" /></p>
+              <p><img src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/img_basis-tokens_colors.png" alt="De afbeelding toont een grid van verschillende kleuren, onder de kleuren staan de namen van de basis-tokens en hun waarde of verwijzing naar een andere basis-token." class="utrecht-img" /></p>
               <div class="theme-admonition theme-admonition-tip admonition_vzfL alert alert--success">
                <div class="admonitionHeading_W4bL">
                 <span class="admonitionIcon_yccl"
@@ -459,7 +459,7 @@
                <li>Kaders en lijnen</li>
               </ul>
               <p>Voor deze toepassingen gebruiken we de volgende termen, waarin ook status en hiërarchie zijn meegenomen:</p>
-              <p><strong>Achtergrond:</strong></p>
+              <h4 id="achtergrond" class="utrecht-heading-4">Achtergrond</h4>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">bg-document</code></li>
                <li><code class="utrecht-code">bg-subtle</code></li>
@@ -467,14 +467,14 @@
                <li><code class="utrecht-code">bg-hover</code></li>
                <li><code class="utrecht-code">bg-active</code></li>
               </ul>
-              <p><strong>Kaders en lijnen:</strong></p>
+              <h4 id="kaders-en-lijnen" class="utrecht-heading-4">Kaders en lijnen</h4>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">border-subtle</code></li>
                <li><code class="utrecht-code">border-default</code></li>
                <li><code class="utrecht-code">border-hover</code></li>
                <li><code class="utrecht-code">border-active</code></li>
               </ul>
-              <p><strong>Voorgrond:</strong></p>
+              <h4 id="voorgrond" class="utrecht-heading-4">Voorgrond</h4>
               <ul role="list" class="utrecht-unordered-list utrecht-unordered-list--html-content">
                <li><code class="utrecht-code">color-subtle</code></li>
                <li><code class="utrecht-code">color-default</code></li>
