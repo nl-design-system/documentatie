@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - release--website-next
   pull_request:
 
 concurrency:
@@ -225,3 +226,33 @@ jobs:
           branch: gh-pages
           folder: build/
           token: ${{ secrets.GH_TOKEN }}
+
+  # This is a temporary workflow to publish the release--website-next branch to
+  # a static assets branch, so both can be served in parallel.  When the
+  # release branch is merged into main, this workflow should be removed and the
+  # publish-website workflow should be updated to output the Astro build onto
+  # gh-pages.
+  publish-website-next:
+    runs-on: ubuntu-latest
+    needs: continuous-integration
+    if: github.ref == 'refs/heads/release--website-next'
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout release branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: "Restore build artifact: website-next"
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: website-next
+          path: packages/website/dist/
+
+      - name: Continuous Deployment to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4.9.0
+        with:
+          branch: gh-pages-next
+          folder: packages/website/dist/

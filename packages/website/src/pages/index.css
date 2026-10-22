@@ -71,6 +71,8 @@
     /* Tweak the spacing between the icons and heading when a card has an icon */
     &:has(.rhc-card__image) {
       .rhc-card__image {
+        --utrecht-icon-size: var(--basis-size-icon-4xl);
+
         padding-block-start: var(--rhc-card-padding-block-start);
         padding-inline-end: var(--rhc-card-padding-inline-end);
         padding-inline-start: var(--rhc-card-padding-inline-start);
@@ -93,20 +95,9 @@
   --ma-flow-space: 0;
 
   padding-block: var(--basis-space-row-5xl);
-  position: relative;
-  z-index: 0;
 
-  &.ma-homepage-section--highlight::before,
-  &.ma-homepage-section--highlight-dark::before {
+  &.ma-homepage-section--highlight {
     background-color: var(--basis-color-accent-1-bg-subtle);
-    content: "";
-    display: block;
-    inline-size: 100vw;
-    inset: 0;
-    inset-inline-start: 50%;
-    position: absolute;
-    translate: -50%;
-    z-index: -1;
   }
 
   &.ma-homepage-section--hero {
@@ -118,16 +109,14 @@
   &.ma-homepage-section--highlight.ma-homepage-section--highlight-dark {
     --nl-heading-level-2-color: var(--basis-color-default-inverse-color-default);
 
+    background-color: var(--basis-color-accent-1-inverse-bg-document);
+
     .rhc-card {
       --rhc-card-background-color: var(--basis-color-accent-1-inverse-bg-default);
       --rhc-card-color: var(--basis-color-default-inverse-color-default);
       --nl-link-color: var(--basis-color-default-inverse-color-default);
       --nl-link-hover-color: var(--basis-color-default-inverse-color-default);
       --nl-link-active-color: var(--basis-color-default-inverse-color-default);
-    }
-
-    &::before {
-      background-color: var(--basis-color-accent-1-inverse-bg-document);
     }
   }
 }

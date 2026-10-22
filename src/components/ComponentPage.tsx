@@ -21,7 +21,6 @@ import {
 } from '../utils';
 import './ComponentPage.css';
 import relationMap from './relations.json';
-import type { HeadingLevel } from '@nl-design-system-candidate/heading-react';
 import { Accordion, AccordionSection } from '../../packages/website/src/components/accordion/accordion';
 import '../../packages/website/src/components/accordion/accordion.css';
 import { ComponentIllustration } from '../../packages/website/src/components/component-illustration/component-illustration';
@@ -45,13 +44,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
             <>
               <TaskList>
                 {project.tasks.map(({ checked, name, id }) => (
-                  <TaskListItem
-                    headingLevel={(headingLevel + 1) as HeadingLevel}
-                    checked={checked}
-                    heading={name}
-                    key={id}
-                    description={getRelayBoardDescription(id)}
-                  />
+                  <TaskListItem checked={checked} title={name} key={id} description={getRelayBoardDescription(id)} />
                 ))}
               </TaskList>
               <Paragraph>

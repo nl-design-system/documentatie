@@ -1,6 +1,6 @@
 import './logo.css';
 export const Logo = () => (
-  <span className="ma-logo">
+  <span className="ma-logo ma-logo--full">
     <svg width="179" height="48" viewBox="0 0 179 52" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path className="ma-logo__letter" d="M140.709 0.0127563H145.28V3.18864H140.709V0.0127563Z" fill="currentColor" />
       <path

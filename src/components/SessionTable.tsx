@@ -6,11 +6,13 @@ import {
   Paragraph,
   Table,
   TableBody,
+  TableCaption,
   TableCell,
   TableHeader,
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react/dist/css-module';
+import { Heading, type HeadingProps } from '@components/heading/heading';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
 import './SessionTable.css';
@@ -36,6 +38,8 @@ interface SessionTableProps extends HTMLAttributes<HTMLTableElement> {
   lang?: string;
   sessions: Session[];
   speakers: { [key: string]: Speaker };
+  heading?: string;
+  headingLevel?: HeadingProps['level'];
 }
 
 const SpeakerData = ({ name, organisation }: Speaker) => (
@@ -55,25 +59,32 @@ export const SessionTable = ({
   sessions,
   speakers: allSpeakers,
   className,
+  heading,
+  headingLevel = 2,
   ...props
 }: SessionTableProps) => (
   <div className={clsx('ma-session-table-container', className)}>
     <Table className={clsx('ma-session-table', className)} {...props}>
+      {heading && (
+        <TableCaption>
+          <Heading level={headingLevel}>{heading}</Heading>
+        </TableCaption>
+      )}
       <TableHeader>
         <TableRow className="ma-session-table__row">
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Tijd' : 'Time'}
           </TableHeaderCell>
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Taal' : 'Language'}
           </TableHeaderCell>
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Spreker' : 'Speaker'}
           </TableHeaderCell>
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Onderwerp' : 'Subject'}
           </TableHeaderCell>
-          <TableHeaderCell className="ma-session-table__header-cell">
+          <TableHeaderCell className="ma-session-table__header-cell" scope="col">
             {lang === 'nl-NL' ? 'Agenda' : 'Calendar'}
           </TableHeaderCell>
         </TableRow>

@@ -1,8 +1,8 @@
 ---
-import CenterColumnLayout from '@layouts/center-column.astro';
+import PageBodyContentLayout from '@layouts/page-body-content.astro';
 import { SearchPage } from '@components/search/page';
 ---
 
-<CenterColumnLayout title="Zoeken" description="Zoeken in de NL Design System website">
+<PageBodyContentLayout title="Zoeken" description="Zoeken in de NL Design System website">
   <SearchPage lang="nl" client:load />
-</CenterColumnLayout>
+</PageBodyContentLayout>
