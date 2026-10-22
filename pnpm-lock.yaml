@@ -386,9 +386,6 @@ importers:
       react-hook-form:
         specifier: 7.71.1
         version: 7.71.1(react@18.3.1)
-      react-lite-youtube-embed:
-        specifier: 3.5.1
-        version: 3.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-markdown:
         specifier: 10.1.0
         version: 10.1.0(@types/react@18.3.27)(react@18.3.1)(supports-color@8.1.1)
@@ -11009,12 +11006,6 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
-
-  react-lite-youtube-embed@3.5.1:
-    resolution: {integrity: sha512-nUxkYNt0mLQhbUpwxTqrHVjM35MuE7d5s0ZQB+atzE4lweBi293cAQFirslYvFf0YGXAGeVhvm9PrRhHitx29A==}
-    peerDependencies:
-      react: '>=18.2.0'
-      react-dom: '>=18.2.0'
 
   react-loadable-ssr-addon-v5-slorber@1.0.1:
     resolution: {integrity: sha512-lq3Lyw1lGku8zUEJPDxsNm1AfYHBrO9Y1+olAYwpUJ2IGFBskM0DMKok97A6LWUpHm+o7IvQBOWu9MLenp9Z+A==}
@@ -25761,11 +25752,6 @@ snapshots:
   react-json-view-lite@2.5.0(react@18.3.1):
     dependencies:
       react: 18.3.1
-
-  react-lite-youtube-embed@3.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
 
   react-loadable-ssr-addon-v5-slorber@1.0.1(@docusaurus/react-loadable@6.0.0(react@18.3.1))(webpack@5.104.1(esbuild@0.27.4)):
     dependencies:
