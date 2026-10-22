@@ -10,6 +10,7 @@
   --nl-button-column-gap: var(--basis-space-inline-xs); /* --> Zou een basis.space.text.* token moeten zijn. */
   --utrecht-page-header-content-padding-block-start: var(--basis-space-block-lg);
   --utrecht-page-header-content-padding-block-end: var(--basis-space-block-lg);
+  --basis-text-font-family-default: "Source Sans 3 Variable", "Source Sans Pro", sans-serif !important;
 }
 
 /**
