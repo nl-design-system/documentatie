@@ -151,6 +151,9 @@ importers:
       '@utrecht/design-tokens':
         specifier: 2.5.1
         version: 2.5.1
+      '@utrecht/root-react':
+        specifier: 1.0.17
+        version: 1.0.17(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: 2.1.1
         version: 2.1.1

@@ -13,3 +13,11 @@
     max-inline-size: 100%;
   }
 }
+
+.ma-canvas-astro__example--color-scheme-dark {
+  color-scheme: only dark;
+}
+
+.ma-canvas-astro__example--color-scheme-light {
+  color-scheme: only light;
+}
