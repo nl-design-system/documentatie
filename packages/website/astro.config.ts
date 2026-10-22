@@ -63,8 +63,6 @@ globalThis.unlistedPages = new Set();
 globalThis.isAstro = true;
 
 const mdxClientLoad = clientLoadPlugin([
-  'Videoplayer',
-  'VideoPlayer',
   'Checklist',
   'DesignTokens',
   'NewsletterSignUp',
