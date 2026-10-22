@@ -167,7 +167,7 @@
     "@nl-design-system-unstable/voorbeeld-design-tokens": "3.4.0",
     "@nl-design-system/component-progress": "1.1.7",
     "@nl-design-system/eslint-config": "1.0.0",
-    "@playwright/test": "1.60.0",
+    "@playwright/test": "1.64.1",
     "@prettier/sync": "0.6.1",
     "@types/node": "24.10.9",
     "@types/react": "18.3.27",
