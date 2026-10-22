@@ -142,5 +142,17 @@
     },
     "videoId": null,
     "icalLink": "/dsweek-2026/robbert-broersma.ics"
+  },
+  {
+    "uuid": "5c3e74d2-1043-44f9-97c1-7b94c0832460",
+    "isoDateTime": "2026-10-27T12:00:00.000Z",
+    "speakers": ["KevinConsen", "RoelBerends", "RobbertBroersma"],
+    "subject": "Heartbeat - Design Systems Week editie",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": null,
+    "icalLink": "/heartbeat/heartbeat.ics"
   }
 ]

@@ -185,5 +185,29 @@
       "nl": "Yolijn is productmanager van NL Design System. Hierbij helpt ze nieuwe organisaties aansluiting te vinden en stimuleert ze samenwerking en kennisdeling binnen de community. Met haar ervaring als developer bij andere design systems weet ze hoe waardevol een betrokken community is voor een effectief design system."
     },
     "language": "nl"
+  },
+  "KevinConsen": {
+    "name": "Kevin Consen",
+    "organisation": "CAK",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-KevinConsen.jpeg",
+      "alt": "Kevin Consen"
+    },
+    "description": {
+      "nl": "Kevin is UX Designer en Scrum Enthousiasteling bij BBTG, waar hij complexe processen vertaalt naar begrijpelijke en gebruiksvriendelijke digitale oplossingen. Zo ontwierp hij callcentersoftware voor Coolblue die de afhandeling van gesprekken efficiënter maakte en dataverzameling verbeterde. Voor Alliander werkte hij aan een configurator waarmee oplossingen voor netcongestie gemodelleerd en doorgerekend konden worden. Momenteel helpt hij het CAK bij de overgang naar digitale post, waarbij hij met het NL Design System bijdraagt aan toegankelijke en consistente dienstverlening. In zijn werk zoekt hij de balans tussen gebruikersbehoeften, technische mogelijkheden en organisatiedoelen."
+    },
+    "language": "nl"
+  },
+  "RoelBerends": {
+    "name": "Roel Berends",
+    "organisation": "Gemeente Tilburg",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-RoelBerends.jpeg",
+      "alt": "Roel Berends"
+    },
+    "description": {
+      "nl": "Roel is een ontwikkelaar die na tien jaar ervaring bekend is met mobile (Java/Kotlin - Android - Home Automation), desktop (C# - WPF/XAML - Ziekenhuissoftware) en webontwikkeling (Typescript/HTML/SCSS - Angular). Altijd visueel ingesteld, werkt hij in zijn vrije tijd aan games (Gdscript - Godot) - en overdag bij DITP in Haarlem aan frontends voor diverse overheidsinstanties zoals de NVWA, RVO, DUO, JustID en SZW."
+    },
+    "language": "nl"
   }
 }
