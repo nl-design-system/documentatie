@@ -1,0 +1,8 @@
+.ma-video-player {
+  aspect-ratio: 16/9;
+}
+
+lite-youtube {
+  /* stylelint-disable-next-line custom-property-pattern */
+  --lite-youtube-frame-shadow-visible: no;
+}
