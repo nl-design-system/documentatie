@@ -1,11 +1,11 @@
-import { Link } from '@site/src/components/Link';
+import { Link } from './Link';
 import { BadgeList, DataBadge } from '@utrecht/component-library-react/dist/css-module';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 import { Card, CardContent, CardIllustration } from './CardGroup';
-import { ComponentIllustration } from '../../packages/website/src/components/component-illustration/component-illustration';
+import { ComponentIllustration } from '../../../website/src/components/component-illustration/component-illustration';
 import { EstafetteBadge } from './EstafetteBadge';
 import './ComponentCard.css';
 
@@ -61,7 +61,7 @@ export const ComponentCard = ({
         </div>
         {href && (
           <Paragraph>
-            <Link className="utrecht-link" to={appendTrailingSlash(href)}>
+            <Link className="utrecht-link" href={appendTrailingSlash(href)}>
               Bekijk <span className="w">{name}</span> component
             </Link>
           </Paragraph>

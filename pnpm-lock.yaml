@@ -227,6 +227,9 @@ importers:
       '@nl-design-system-community/design-tokens-schema':
         specifier: 2.1.0
         version: 2.1.0
+      '@nl-design-system-community/documentation-components':
+        specifier: workspace:*
+        version: link:packages/documentation-components
       '@nl-design-system-community/editor-react':
         specifier: 1.2.0
         version: 1.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -399,9 +402,22 @@ importers:
         specifier: 0.9.0
         version: 0.9.0
 
-  docs: {}
+  docs:
+    dependencies:
+      '@nl-design-system-community/documentation-components':
+        specifier: workspace:*
+        version: link:../packages/documentation-components
 
   packages/archimate: {}
+
+  packages/documentation-components:
+    dependencies:
+      '@prettier/sync':
+        specifier: 0.6.1
+        version: 0.6.1(prettier@3.8.1)
+      prettier:
+        specifier: 3.8.1
+        version: 3.8.1
 
   packages/nlds-design-tokens:
     dependencies:
@@ -508,6 +524,9 @@ importers:
       '@nl-design-system-candidate/skip-link-react':
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-community/documentation-components':
+        specifier: workspace:*
+        version: link:../documentation-components
       '@nl-design-system-community/ma-design-tokens':
         specifier: 9.0.0
         version: 9.0.0

@@ -1,12 +1,10 @@
+export { Link } from '../../../website/src/components/link/link';
+/*
 import type { Props } from '@docusaurus/Link';
 import { clsx } from 'clsx';
 import { hasFileExtension } from '../utils';
 import type { PropsWithChildren } from 'react';
 
-/**
- * Link component with stable trailing slash and target
- * @private - Only to be used in this file and ButtonLink
- */
 export const BareLink = ({ children, ...props }: PropsWithChildren<Props>) => {
   const { to, href, ..._props } = props;
   let dest = to || href;
@@ -53,3 +51,4 @@ export const Link = ({ className, boxContent, ...props }: PropsWithChildren<Prop
     />
   );
 };
+*/

@@ -1,7 +1,7 @@
-import { Canvas } from '@site/src/components/Canvas/Canvas';
-import type { CanvasContainerType } from '@site/src/components/Canvas/Canvas';
-import { ContrastRatio } from '@site/src/components/ContrastRatio';
-import { Guideline } from '@site/src/components/Guideline';
+import { Canvas } from './Canvas/Canvas';
+import type { CanvasContainerType } from './Canvas/Canvas';
+import { ContrastRatio } from './ContrastRatio';
+import { Guideline } from './Guideline';
 import {
   Button,
   ButtonGroup as ActionGroup,
@@ -17,7 +17,7 @@ import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import './contrast-tool.css';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { useIsBrowser } from '@site/src/hooks/use-is-browser';
+import { useIsBrowser } from '../hooks/use-is-browser';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>
