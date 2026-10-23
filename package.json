@@ -27,7 +27,7 @@
     "dev": "pnpm run dev:astro",
     "dev:docusaurus": "docusaurus start",
     "dev:astro": "pnpm --filter @nl-design-system/website-astro run dev",
-    "build": "pnpm --filter @nl-design-system/website-astro run build",
+    "build": "pnpm run --recursive build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clean": "npm-run-all clean:**",
