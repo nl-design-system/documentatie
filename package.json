@@ -136,6 +136,7 @@
     "@nl-design-system-candidate/form-field-description-tokens": "1.0.0",
     "@nl-design-system-candidate/form-field-error-message-tokens": "1.0.0",
     "@nl-design-system-community/design-tokens-schema": "2.1.0",
+    "@nl-design-system-community/documentation-components": "workspace:*",
     "@nl-design-system-community/editor-react": "1.2.0",
     "@nl-design-system-community/ma-design-tokens": "5.5.0",
     "@nl-design-system-unstable/basis-design-tokens": "3.1.1",

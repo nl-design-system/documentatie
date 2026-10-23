@@ -130,7 +130,7 @@ export default defineConfig({
           replacement: '@nl-design-system-candidate/$1-react',
         },
         {
-          find: '@site/src/components/Markdown',
+          find: '@nl-design-system-community/documentation-components/src/components/Markdown',
           replacement: fileURLToPath(new URL('./src/components/markdown/markdown.ts', import.meta.url)),
         },
       ],
