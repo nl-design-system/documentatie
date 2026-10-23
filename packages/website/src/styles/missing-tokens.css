@@ -166,6 +166,17 @@ html .utrecht-link--html-a:any-link:active {
   align-items: center;
 }
 
+/*
+ * The breadcrumb separator is a Tabler icon that renders at 1em, so it looks
+ * oversized next to the labels. It is not an `.utrecht-icon`, so the existing
+ * `--utrecht-breadcrumb-nav-separator-icon-size` token does not affect it;
+ * size the SVG directly instead.
+ */
+.utrecht-breadcrumb-nav__separator svg {
+  block-size: 0.75em;
+  inline-size: 0.75em;
+}
+
 .denhaag-side-navigation__link {
   box-sizing: border-box;
 
