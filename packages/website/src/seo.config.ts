@@ -2,9 +2,9 @@
 const selfHostname =
   typeof process.env['VERCEL_URL'] !== 'string'
     ? 'nldesignsystem.nl'
-    : process.env.VERCEL_ENV === 'production'
-      ? process.env.VERCEL_URL
-      : process.env.VERCEL_BRANCH_URL;
+    : process.env['VERCEL_ENV'] === 'production'
+      ? process.env['VERCEL_URL']
+      : process.env['VERCEL_BRANCH_URL'];
 
 export const siteBaseUrl = `https://${selfHostname}`;
 export const siteName = 'nldesignsystem.nl';

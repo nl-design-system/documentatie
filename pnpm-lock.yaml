@@ -278,6 +278,9 @@ importers:
       '@nl-design-system/eslint-config':
         specifier: 1.0.0
         version: 1.0.0(eslint@9.39.2(jiti@1.21.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)
+      '@nl-design-system/tsconfig':
+        specifier: 1.0.5
+        version: 1.0.5(typescript@5.9.3)
       '@playwright/test':
         specifier: 1.64.1
         version: 1.64.1

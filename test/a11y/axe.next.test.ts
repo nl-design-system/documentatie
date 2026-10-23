@@ -41,7 +41,7 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
   violations.push(results);
 
   const violationsWhichFail = results.violations
-    .filter((v) => CONFIG.failOnImpact.includes(v.impact))
+    .filter((v) => CONFIG.failOnImpact.includes(v.impact || ''))
     .map((violation) => `[${violation.id}] ${violation.description}`);
 
   expect(violationsWhichFail).toEqual([]);
