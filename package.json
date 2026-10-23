@@ -21,10 +21,10 @@
   "scripts": {
     "prepare": "husky",
     "docusaurus": "docusaurus",
-    "start": "pnpm run start:docusaurus",
+    "start": "pnpm run start:astro",
     "start:docusaurus": "pnpm run dev",
     "start:astro": "pnpm run dev:astro",
-    "dev": "pnpm run dev:docusaurus",
+    "dev": "pnpm run dev:astro",
     "dev:docusaurus": "docusaurus start",
     "dev:astro": "pnpm --filter @nl-design-system/website-astro run dev",
     "build": "npm-run-all --sequential build:docusaurus build:astro build:astro-preview",
