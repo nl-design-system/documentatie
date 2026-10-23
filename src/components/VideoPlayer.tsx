@@ -1,38 +1,23 @@
+import LiteYouTubeEmbed, { type LiteYouTubeProps } from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import { i18n } from '@site/packages/website/src/i18n';
-import { Image } from '@components/image/image';
-import './VideoPlayer.css';
 
-interface VideoPlayerProps {
-  id: string;
-  title: string;
+interface VideoPlayerProps extends LiteYouTubeProps {
   lang?: 'nl' | 'en';
-  thumbnail?: string;
-  playlist?: boolean;
 }
 
-declare module 'react' {
-  // eslint-disable-next-line @typescript-eslint/no-namespace -- JSX augmentation requires a namespace
-  namespace JSX {
-    interface IntrinsicElements {
-      'lite-youtube': DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
-        videoid?: string;
-        videotitle?: string;
-        videoplay?: string;
-        posterquality?: string;
-        nocookie?: boolean;
-      };
-    }
-  }
-}
-
-export const VideoPlayer = ({ id, title, lang = 'nl', thumbnail, playlist }: VideoPlayerProps) => {
-  const cover = thumbnail || `https://i.ytimg.com/vi_webp/${id}/maxresdefault.webp`;
-  const type = playlist ? { playlistid: id } : { videoid: id };
+export const VideoPlayer = ({ id, title, lang = 'nl', ...restProps }: VideoPlayerProps) => {
   return (
-    <div className="ma-video-player">
-      <lite-youtube nocookie {...type} videotitle={title} videoplay={i18n[lang].watch} posterquality="maxresdefault">
-        <Image src={cover} loading="lazy" width="100%" slot="image" alt={`${title} - YouTube Thumbnail`} />
-      </lite-youtube>
-    </div>
+    <LiteYouTubeEmbed
+      lazyLoad={true}
+      adNetwork={false}
+      announce={i18n[lang].watch}
+      cookie={false}
+      containerElement="div"
+      id={id}
+      title={title}
+      poster="maxresdefault"
+      {...restProps}
+    />
   );
 };
