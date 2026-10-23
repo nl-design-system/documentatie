@@ -1,29 +1,4 @@
 {
-  "extends": "@docusaurus/tsconfig",
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "jsx": "react-jsx",
-    "lib": ["DOM", "ESNext"],
-    "baseUrl": ".",
-    "skipLibCheck": true,
-    "verbatimModuleSyntax": true,
-    "resolveJsonModule": true,
-    "paths": {
-      "@docs/*": ["./docs/*"],
-      "@site/*": ["./*"],
-      "@theme/*": ["src/theme/*"],
-      "@utils/*": ["src/utils/*", "packages/website/src/utils/*"],
-      "@components/*": ["./packages/website/src/components/*"]
-    }
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.mdx",
-    "*.ts",
-    "docs/handboek/definition-of-done/candidate-stappenplan/selectiefase.md",
-    "docs/handboek/definition-of-done/candidate-stappenplan/voorbereidingsfase.md"
-  ],
-  "//": "Astro components can only be resolved by Astro's own toolchain, not by plain `tsc`, so the Vitest tests that import them are type checked through the Astro language tooling instead.",
-  "exclude": ["**/node_modules/*", "packages/website/**/*.test.ts"]
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": ["@nl-design-system/tsconfig"]
 }
