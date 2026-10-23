@@ -1,9 +1,11 @@
+export { ButtonLink } from '../../../website/src/components/button-link/button-link';
+/*
 import type { Props } from '@docusaurus/Link';
-import { BareLink } from '@site/src/components/Link';
+import { BareLink } from './Link';
 import {
   ButtonLink as AstroButtonLink,
   type ButtonLinkProps as AstroButtonLinkProps,
-} from '@site/packages/website/src/components/button-link/button-link';
+} from '../../../website/src/components/button-link/button-link';
 import { clsx } from 'clsx';
 
 import type { PropsWithChildren } from 'react';
@@ -21,3 +23,4 @@ export const ButtonLink = globalThis.isAstro
   : ({ appearance, ...props }: PropsWithChildren<ButtonLinkProps>) => (
       <BareLink className={clsx('utrecht-button-link', `utrecht-button-link--${appearance}`)} {...props} />
     );
+*/

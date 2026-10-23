@@ -1,4 +1,4 @@
-import { CodeBlockSyntaxHighlighting } from '@site/src/components/CodeBlockSyntaxHighlighting';
+import { CodeBlockSyntaxHighlighting } from '../CodeBlockSyntaxHighlighting';
 import { Button, Document, Paragraph, Surface } from '@utrecht/component-library-react/dist/css-module';
 import { HTMLContent } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';

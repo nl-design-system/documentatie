@@ -1,10 +1,14 @@
 ---
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
-import { CardGroup } from '@site/src/components/CardGroup';
-import { ComponentCard } from '@site/src/components/ComponentCard';
+import { CardGroup } from '@nl-design-system-community/documentation-components/src/components/CardGroup';
+import { ComponentCard } from '@nl-design-system-community/documentation-components/src/components/ComponentCard';
 import { ComponentOverviewFilter } from './ComponentOverviewFilter';
 import { getCollection } from 'astro:content';
-import { COMPONENT_STATES, getComponentFrameworkNames, type Component } from '@site/src/utils.ts';
+import {
+  COMPONENT_STATES,
+  getComponentFrameworkNames,
+  type Component,
+} from '@nl-design-system-community/documentation-components/src/utils.ts';
 
 const components = await getCollection('components');
 ---

@@ -1,3 +1,4 @@
+/*
 import type { PropSidebarItem, PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 import { useHistory } from '@docusaurus/router';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
@@ -183,3 +184,4 @@ export const ComponentOverview = () => {
     </>
   );
 };
+*/

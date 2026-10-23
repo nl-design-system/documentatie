@@ -1,3 +1,4 @@
+/*
 import type { PropSidebarItem, PropSidebarItemCategory } from '@docusaurus/plugin-content-docs';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import clsx from 'clsx';
@@ -32,3 +33,4 @@ export const OverviewPage = ({ excludeDocIDs = [], className, ...restProps }: Ov
     </div>
   );
 };
+*/

@@ -25,5 +25,8 @@
   "exports": {
     "./package.json": "./package.json",
     "./*": "./*"
+  },
+  "dependencies": {
+    "@nl-design-system-community/documentation-components": "workspace:*"
   }
 }
