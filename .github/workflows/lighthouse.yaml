@@ -46,7 +46,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build Astro website
-        run: pnpm run build:astro
+        run: pnpm run build
 
       - name: Run Lighthouse CI
         run: pnpm run test-lighthouse
