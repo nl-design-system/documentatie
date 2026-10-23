@@ -1,4 +1,5 @@
-import { Link } from '@site/src/components/Link';
+/*
+import { Link } from './Link';
 import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -72,3 +73,4 @@ export const Breadcrumbs = ({ breadcrumbs = [], className }: BreadcrumbsProps) =
     </nav>
   );
 };
+*/

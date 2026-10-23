@@ -31,10 +31,10 @@ export function remarkCanvasFix() {
       }
     });
 
-    visit(tree, 'mdxFlowExpression', (node, _, parent) => {
+    visit(tree, 'mdxFlowExpression', (node: Root, _, parent) => {
       if (parent.type !== 'mdxJsxFlowElement' || parent.name !== 'Canvas') return;
 
-      const parentNode = parent as MdxJsxFlowElement;
+      const parentNode = parent;
 
       if (node.value.startsWith('() => ')) {
         const code = node.value

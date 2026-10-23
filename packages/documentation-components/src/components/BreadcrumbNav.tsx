@@ -1,4 +1,5 @@
-import { Link } from '@site/src/components/Link';
+/*
+import { Link } from './Link';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { IconChevronLeft } from '@components/functional-icon';
@@ -71,3 +72,4 @@ export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps)
     </>
   );
 };
+*/

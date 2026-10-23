@@ -4,8 +4,8 @@ import { Heading } from '@components/heading/heading';
 import { Paragraph } from '@components/paragraph/paragraph';
 import { UnorderedList } from '@components/unordered-list/unordered-list';
 import { useEffect, useState, type SyntheticEvent } from 'react';
-import { COMPONENT_STATES } from '@site/src/utils';
-import { EstafetteBadge } from '@site/src/components/EstafetteBadge';
+import { COMPONENT_STATES } from '@nl-design-system-community/documentation-components/src/utils';
+import { EstafetteBadge } from '@nl-design-system-community/documentation-components/src/components/EstafetteBadge';
 import './ComponentOverviewFilter.css';
 import { Button } from '@components/button/button';
 

@@ -1,8 +1,8 @@
 import type { CanvasProps } from './Canvas';
 import Prism from 'prismjs';
 import clsx from 'clsx';
-import { Accordion, AccordionSection } from '../../../packages/website/src/components/accordion/accordion';
-import { Button } from '../../../packages/website/src/components/button/button';
+import { Accordion, AccordionSection } from '../../../../website/src/components/accordion/accordion';
+import { Button } from '../../../../website/src/components/button/button';
 import './CanvasAstro.css';
 import '@utrecht/component-library-css/dist/html.css';
 import '@utrecht/root-css/dist/index.css';
