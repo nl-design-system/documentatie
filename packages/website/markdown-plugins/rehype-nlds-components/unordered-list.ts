@@ -76,7 +76,7 @@ function whenTaskList(element: Element) {
           type: 'element',
         },
       ],
-      properties: { className: 'utrecht-icon' },
+      properties: { className: ['utrecht-icon'] },
       tagName: 'span',
       type: 'element',
     };
@@ -101,7 +101,7 @@ function whenTaskList(element: Element) {
           type: 'element',
         },
       ],
-      properties: { className: 'utrecht-icon' },
+      properties: { className: ['utrecht-icon'] },
       tagName: 'span',
       type: 'element',
     };

@@ -15,11 +15,10 @@ import type { Element } from 'hast';
  */
 export function addClassName(className: string, element?: Element) {
   function add(_element: Element) {
-    const existingClassNames = `${_element.properties['className'] ?? ''}`;
-    const classNames = new Set(existingClassNames.split(' '));
+    const classNames = new Set(_element.properties['className'] ?? []);
     classNames.add(className);
 
-    _element.properties['className'] = [...classNames].join(' ').trim();
+    _element.properties['className'] = [...classNames];
   }
 
   if (element) {
