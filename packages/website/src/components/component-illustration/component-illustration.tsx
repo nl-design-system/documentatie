@@ -1,7 +1,7 @@
 import { Figure, FigureCaption } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
-import { toKebabCase } from '@site/src/utils';
+import { toKebabCase } from '@nl-design-system-community/documentation-components/src/utils';
 import './component-illustration.css';
 
 interface ComponentIllustrationProps extends HTMLAttributes<HTMLElement> {

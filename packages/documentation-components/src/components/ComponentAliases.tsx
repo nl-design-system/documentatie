@@ -1,4 +1,4 @@
-import { Markdown } from '@site/src/components/Markdown';
+import { Markdown } from './Markdown';
 import React, { type PropsWithChildren, Suspense } from 'react';
 import { toKebabCase } from '../utils';
 import type { CleanComponentProgress as ComponentProgressObject } from '@nl-design-system/component-progress/dist/utils';
