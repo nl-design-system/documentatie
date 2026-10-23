@@ -55,10 +55,6 @@ const cspProdConfig: AstroUserConfig = {
 
 const cspConfig = process.env['NODE_ENV'] === 'development' ? cspDevConfig : cspProdConfig;
 
-const isPreview = process.env['ASTRO_PREVIEW'] === 'true';
-const basePath = isPreview ? '/private/next' : undefined;
-const outDir = isPreview ? './tmp/preview-dist' : './dist';
-
 // A global set of pages that are unlisted. This set is filled during the
 // generation of the content collections.
 globalThis.unlistedPages = new Set();
@@ -68,8 +64,6 @@ globalThis.isAstro = true;
 // https://astro.build/config
 export default defineConfig({
   publicDir: '../../static',
-  base: basePath,
-  outDir: outDir,
 
   build: {
     inlineStylesheets: 'never',
