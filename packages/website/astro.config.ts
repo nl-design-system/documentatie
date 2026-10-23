@@ -1,6 +1,7 @@
 import type { AstroUserConfig } from 'astro';
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import { unified } from '@astrojs/markdown-remark';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
@@ -61,6 +62,26 @@ globalThis.unlistedPages = new Set();
 
 globalThis.isAstro = true;
 
+const mdxClientLoad = clientLoadPlugin([
+  'Videoplayer',
+  'VideoPlayer',
+  'Checklist',
+  'DesignTokens',
+  'NewsletterSignUp',
+  'DSWSession',
+  'HeartbeatEpisode',
+]);
+
+const markdownProcessor = unified({
+  remarkPlugins: sharedPlugins.remarkPlugins,
+  rehypePlugins: sharedPlugins.rehypePlugins,
+});
+
+const mdxProcessor = unified({
+  remarkPlugins: [...sharedPlugins.remarkPlugins, remarkCanvasFix, mdxClientLoad],
+  rehypePlugins: sharedPlugins.rehypePlugins,
+});
+
 // https://astro.build/config
 export default defineConfig({
   publicDir: '../../static',
@@ -117,29 +138,12 @@ export default defineConfig({
   },
 
   markdown: {
-    remarkPlugins: sharedPlugins.remarkPlugins,
-    rehypePlugins: sharedPlugins.rehypePlugins,
+    processor: markdownProcessor,
     syntaxHighlight: 'prism',
   },
 
   integrations: [
-    mdx({
-      remarkPlugins: [
-        ...sharedPlugins.remarkPlugins,
-        remarkCanvasFix,
-        clientLoadPlugin([
-          'Videoplayer',
-          'VideoPlayer',
-          'Checklist',
-          'DesignTokens',
-          'NewsletterSignUp',
-          'DSWSession',
-          'HeartbeatEpisode',
-        ]),
-      ],
-      rehypePlugins: sharedPlugins.rehypePlugins,
-      syntaxHighlight: 'prism',
-    }),
+    mdx({ processor: mdxProcessor }),
     react(),
     sitemap({
       changefreq: 'weekly',
