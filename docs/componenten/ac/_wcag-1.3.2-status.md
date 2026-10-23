@@ -13,8 +13,15 @@ Voorbeeld:
 <p id="description-password">
   Een wachtwoord moet uit minimaal 16 karakters bestaan, waarvan minimaal 1 cijfer en 1 speciaal teken.
 </p>
-<p id="status-password" role="status">Nog 6 karakters over.</p>
-<p><input id="name" aria-describedby="description-password status-password" autocomplete="off" type="text" /></p>
+<p id="status-password" role="status">Nog 6 karakters nodig.</p>
+<p>
+  <input
+    id="name"
+    aria-describedby="description-password status-password"
+    autocomplete="new-password"
+    type="password"
+  />
+</p>
 ```
 
 NL Design System richtlijnen:

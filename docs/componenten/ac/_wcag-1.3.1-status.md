@@ -9,7 +9,12 @@ Koppel de Form Field Status met `aria-describedby` aan het bijbehorende element 
 </p>
 <p id="status-password" role="status">Nog 6 karakters nodig.</p>
 <p>
-  <input id="name" aria-describedby="description-password status-password" autocomplete="new-password" type="text" />
+  <input
+    id="name"
+    aria-describedby="description-password status-password"
+    autocomplete="new-password"
+    type="password"
+  />
 </p>
 ```
 
