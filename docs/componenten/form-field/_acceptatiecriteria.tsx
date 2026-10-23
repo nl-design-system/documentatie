@@ -5,6 +5,7 @@ import Wcag211NI from '@nl-design-system-unstable/documentation/componenten/ac/_
 import Wcag243NI from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-2.4.3-noninteractives.md';
 import Wcag312 from '@nl-design-system-unstable/documentation/componenten/ac/_wcag-3.1.2.md';
 import Wcag141 from '@nl-design-system-unstable/documentation/wcag/summaries/_1.4.1-summary.md';
+import Wcag132NLDS from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-1.3.2-nlds-field.md';
 import Wcag211NLDSNI from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.1.1-nlds-noninteractives.md';
 import Wcag243NLDSNI from '@nl-design-system-unstable/documentation/componenten/ac/NLDS/_wcag-2.4.3-nlds-noninteractives.md';
 
@@ -63,10 +64,10 @@ export const usage = [
 
 export const component = [
   {
-    title: 'Componenten in de Form Field staan standaard in een logische en gebruiksvriendelijke volgorde.',
+    title: 'Componenten in de Form Field kunnen in een logische, gebruiksvriendelijke volgorde worden gezet.',
     sc: '1.3.2',
     status: '',
-    component: Wcag132,
+    component: Wcag132NLDS,
     tags: ['designer', 'developer'],
   },
   {
