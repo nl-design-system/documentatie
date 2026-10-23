@@ -97,7 +97,8 @@ export const usage = [
     tags: ['developer'],
   },
   {
-    title: 'Het voorlezen van de Form Field Status onderbreekt een screenreadergebruiker niet.',
+    title:
+      'De informatie in de Form Field Status wordt voorgelezen door een screenreader zonder de bezoeker te onderbreken en zonder de focus te verplaatsen.',
     sc: '4.1.3',
     status: '',
     component: Wcag413,
