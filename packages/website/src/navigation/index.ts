@@ -240,7 +240,10 @@ export async function navigationGroup(options: NavigationGroupOptions): Promise<
         }
 
         if (file.isFile()) {
-          const filePath = relative('.', `${file.parentPath}/${file.name}`);
+          // `relative()` uses the OS path separator (backslashes on Windows),
+          // but Astro's `entry.filePath` always uses forward slashes. Normalize
+          // to forward slashes so the `endsWith()` lookups below match on Windows too.
+          const filePath = relative('.', `${file.parentPath}/${file.name}`).replaceAll(sep, '/');
           const contentCollectionEntry = await getEntryWithFilepath(filePath);
 
           // Treat index.md(x) files as the group index
