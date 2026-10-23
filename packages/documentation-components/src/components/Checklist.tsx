@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Link } from '@site/src/components/Link';
-import { successCriteriaMap } from '@site/src/components/wcag22';
+import { Link } from './Link';
+import { successCriteriaMap } from './wcag22';
 import { BadgeList, Checkbox, Fieldset, FormField, FormLabel } from '@utrecht/component-library-react';
-import { Paragraph } from '../../packages/website/src/components/paragraph/paragraph';
-import { Button } from '../../packages/website/src/components/button/button';
-import { Accordion, AccordionSection } from '../../packages/website/src/components/accordion/accordion';
-import { Heading, type HeadingProps } from '../../packages/website/src/components/heading/heading';
+import { Paragraph } from '../../../website/src/components/paragraph/paragraph';
+import { Button } from '../../../website/src/components/button/button';
+import { Accordion, AccordionSection } from '../../../website/src/components/accordion/accordion';
+import { Heading, type HeadingProps } from '../../../website/src/components/heading/heading';
 import { DataBadge } from '@nl-design-system-candidate/data-badge-react';
 import clsx from 'clsx';
 import { useId, useState } from 'react';

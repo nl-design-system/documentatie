@@ -4,7 +4,7 @@ import { Highlight } from 'prism-react-renderer';
 import { useContext, useId } from 'react';
 import type { PropsWithChildren, ReactNode } from 'react';
 import { CodeExampleContext } from './Guideline';
-import nldsPrismTheme from '../../nldsPrism';
+import nldsPrismTheme from '../nldsPrism';
 
 export interface CodeBlockSyntaxHighlightingProps extends CodeBlockProps {
   lineNumber?: boolean;

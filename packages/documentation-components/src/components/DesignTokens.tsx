@@ -1,13 +1,13 @@
 import { Code } from '@nl-design-system-candidate/code-react/css';
 import { DataBadge } from '@nl-design-system-candidate/data-badge-react/css';
-import type { TokenNode } from '@site/src/utils';
+import type { TokenNode } from '../utils';
 import {
   getTokenPaths,
   sortTokenPaths,
   tokenAtPath,
   tokenPathToCSSCustomProperty,
   tokenPathToDottedTokenPath,
-} from '@site/src/utils';
+} from '../utils';
 import {
   ButtonGroup as ActionGroup,
   PreserveData,
