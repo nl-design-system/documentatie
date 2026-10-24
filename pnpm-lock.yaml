@@ -415,12 +415,349 @@ importers:
 
   packages/documentation-components:
     dependencies:
+      '@amsterdam/design-system-css':
+        specifier: 4.4.0
+        version: 4.4.0
+      '@amsterdam/design-system-react':
+        specifier: 4.4.0
+        version: 4.4.0(@amsterdam/design-system-css@4.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/iconbutton':
+        specifier: 3.1.1
+        version: 3.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/side-navigation':
+        specifier: 4.1.0
+        version: 4.1.0(patch_hash=e37b966bd945cf3473a9512973bdcdb4b6e0e5536af7da8e523ea4a626025f20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nl-design-system-candidate/button-css':
+        specifier: 1.1.0
+        version: 1.1.0
+      '@nl-design-system-candidate/button-react':
+        specifier: 1.1.0
+        version: 1.1.0(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/code-block-css':
+        specifier: 1.2.0
+        version: 1.2.0
+      '@nl-design-system-candidate/code-block-react':
+        specifier: 1.4.0
+        version: 1.4.0(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/code-css':
+        specifier: 3.0.0
+        version: 3.0.0
+      '@nl-design-system-candidate/code-react':
+        specifier: 1.2.7
+        version: 1.2.7(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/data-badge-css':
+        specifier: 1.0.5
+        version: 1.0.5
+      '@nl-design-system-candidate/data-badge-react':
+        specifier: 1.1.7
+        version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/heading-css':
+        specifier: 1.1.3
+        version: 1.1.3
+      '@nl-design-system-candidate/heading-react':
+        specifier: 1.1.7
+        version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/link-css':
+        specifier: 2.0.3
+        version: 2.0.3
+      '@nl-design-system-candidate/link-react':
+        specifier: 1.1.8
+        version: 1.1.8(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/mark-css':
+        specifier: 1.0.5
+        version: 1.0.5
+      '@nl-design-system-candidate/paragraph-css':
+        specifier: 2.1.3
+        version: 2.1.3
+      '@nl-design-system-candidate/paragraph-react':
+        specifier: 2.2.2
+        version: 2.2.2(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-candidate/skip-link-css':
+        specifier: 1.0.5
+        version: 1.0.5
+      '@nl-design-system-candidate/skip-link-react':
+        specifier: 1.1.7
+        version: 1.1.7(@babel/runtime@7.28.6)(react@18.3.1)
+      '@nl-design-system-community/documentation-i18n':
+        specifier: workspace:*
+        version: link:../documentation-i18n
+      '@nl-design-system-community/documentation-index':
+        specifier: workspace:*
+        version: link:../documentation-index
       '@prettier/sync':
         specifier: 0.6.1
         version: 0.6.1(prettier@3.8.1)
+      '@rijkshuisstijl-community/card-css':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@rijkshuisstijl-community/card-react':
+        specifier: 1.0.0
+        version: 1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+      '@utrecht/accordion-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/action-group-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/blockquote-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/body-css':
+        specifier: 4.0.0
+        version: 4.0.0
+      '@utrecht/body-react':
+        specifier: 0.0.11
+        version: 0.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/breadcrumb-nav-css':
+        specifier: 3.0.0
+        version: 3.0.0
+      '@utrecht/button-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/button-group-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/button-link-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/card-css':
+        specifier: 2.0.1
+        version: 2.0.1
+      '@utrecht/checkbox-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/color-sample-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/custom-checkbox-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/drawer-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/emphasis-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/figure-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/form-field-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/form-field-description-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/form-fieldset-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/form-label-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/icon-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/img-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/link-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/link-list-css':
+        specifier: 4.0.0
+        version: 4.0.0
+      '@utrecht/nav-bar-css':
+        specifier: 3.1.0
+        version: 3.1.0
+      '@utrecht/nav-bar-react':
+        specifier: 1.1.0
+        version: 1.1.0(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/nav-list-css':
+        specifier: 2.0.0
+        version: 2.0.0
+      '@utrecht/note-css':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@utrecht/note-react':
+        specifier: 1.0.0
+        version: 1.0.0(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/ordered-list-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/page-body-css':
+        specifier: 2.0.0
+        version: 2.0.0
+      '@utrecht/page-body-react':
+        specifier: 1.0.11
+        version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/page-footer-css':
+        specifier: 4.0.0
+        version: 4.0.0
+      '@utrecht/page-footer-react':
+        specifier: 1.0.11
+        version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/page-header-css':
+        specifier: 3.0.0
+        version: 3.0.0
+      '@utrecht/page-header-react':
+        specifier: 1.0.10
+        version: 1.0.10(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/page-layout-css':
+        specifier: 4.0.0
+        version: 4.0.0
+      '@utrecht/page-layout-react':
+        specifier: 1.0.11
+        version: 1.0.11(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/root-css':
+        specifier: 4.1.0
+        version: 4.1.0
+      '@utrecht/root-react':
+        specifier: 1.0.17
+        version: 1.0.17(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/separator-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/spotlight-section-css':
+        specifier: 3.0.2
+        version: 3.0.2
+      '@utrecht/table-css':
+        specifier: 3.0.1
+        version: 3.0.1
+      '@utrecht/textarea-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/textbox-css':
+        specifier: 4.0.1
+        version: 4.0.1
+      '@utrecht/textbox-react':
+        specifier: 1.0.16
+        version: 1.0.16(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/unordered-list-css':
+        specifier: 3.1.1
+        version: 3.1.1
+      dompurify:
+        specifier: 3.4.17
+        version: 3.4.17
       prettier:
         specifier: 3.8.1
         version: 3.8.1
+      prismjs:
+        specifier: 1.30.0
+        version: 1.30.0
+    devDependencies:
+      '@astrojs/markdown-remark':
+        specifier: 7.3.4
+        version: 7.3.4(supports-color@7.2.0)
+      '@astrojs/react':
+        specifier: 7.1.1
+        version: 7.1.1(@types/node@24.10.9)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(esbuild@0.27.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
+      '@testing-library/dom':
+        specifier: 10.4.2
+        version: 10.4.2
+      '@testing-library/jest-dom':
+        specifier: 7.0.1
+        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+      '@testing-library/react':
+        specifier: 16.3.3
+        version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/mdast':
+        specifier: 4.0.4
+        version: 4.0.4
+      rehype:
+        specifier: 13.0.2
+        version: 13.0.2
+      rehype-parse:
+        specifier: 9.0.1
+        version: 9.0.1
+      rehype-raw:
+        specifier: 7.0.0
+        version: 7.0.0
+      rehype-stringify:
+        specifier: 10.0.1
+        version: 10.0.1
+      remark-gfm:
+        specifier: 4.0.1
+        version: 4.0.1(supports-color@7.2.0)
+      remark-parse:
+        specifier: 11.0.0
+        version: 11.0.0(supports-color@7.2.0)
+      remark-rehype:
+        specifier: 11.1.2
+        version: 11.1.2
+      remark-smartypants:
+        specifier: 3.0.3
+        version: 3.0.3
+      unified:
+        specifier: 11.0.5
+        version: 11.0.5
+      vitest:
+        specifier: 4.1.11
+        version: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
+
+  packages/documentation-i18n: {}
+
+  packages/documentation-index:
+    devDependencies:
+      astro:
+        specifier: 7.4.2
+        version: 7.4.2(@astrojs/markdown-remark@7.3.4(supports-color@7.2.0))(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
+
+  packages/documentation-markdown-plugins:
+    dependencies:
+      hast:
+        specifier: 1.0.0
+        version: 1.0.0
+      hast-util-is-element:
+        specifier: 3.0.0
+        version: 3.0.0
+      hast-util-select:
+        specifier: 6.0.4
+        version: 6.0.4
+      mdast-util-from-markdown:
+        specifier: 2.0.3
+        version: 2.0.3(supports-color@7.2.0)
+      mdast-util-mdx-jsx:
+        specifier: 3.2.0
+        version: 3.2.0(supports-color@7.2.0)
+      rehype:
+        specifier: 13.0.2
+        version: 13.0.2
+      rehype-parse:
+        specifier: 9.0.1
+        version: 9.0.1
+      rehype-stringify:
+        specifier: 10.0.1
+        version: 10.0.1
+      remark:
+        specifier: 15.0.1
+        version: 15.0.1(supports-color@7.2.0)
+      remark-custom-header-id:
+        specifier: 1.0.0
+        version: 1.0.0
+      remark-directive:
+        specifier: 4.0.0
+        version: 4.0.0(supports-color@7.2.0)
+      unified:
+        specifier: 11.0.5
+        version: 11.0.5
+    devDependencies:
+      '@astrojs/markdown-remark':
+        specifier: 7.3.4
+        version: 7.3.4(supports-color@7.2.0)
+      '@astrojs/mdx':
+        specifier: 8.1.1
+        version: 8.1.1(@astrojs/markdown-remark@7.3.4(supports-color@7.2.0))(astro@7.4.2(@astrojs/markdown-remark@7.3.4(supports-color@7.2.0))(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+      '@types/hast':
+        specifier: 3.0.5
+        version: 3.0.5
+      '@types/mdast':
+        specifier: 4.0.4
+        version: 4.0.4
+      vfile:
+        specifier: 6.0.3
+        version: 6.0.3
+      vitest:
+        specifier: 4.1.11
+        version: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
 
   packages/nlds-design-tokens:
     dependencies:
@@ -530,6 +867,9 @@ importers:
       '@nl-design-system-community/documentation-components':
         specifier: workspace:*
         version: link:../documentation-components
+      '@nl-design-system-community/documentation-index':
+        specifier: workspace:*
+        version: link:../documentation-index
       '@nl-design-system-community/ma-design-tokens':
         specifier: 9.0.0
         version: 9.0.0
@@ -541,7 +881,7 @@ importers:
         version: 1.0.0
       '@rijkshuisstijl-community/card-react':
         specifier: 1.0.0
-        version: 1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
+        version: 1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
       '@tabler/icons-react':
         specifier: 3.36.1
         version: 3.36.1(react@18.3.1)
@@ -714,6 +1054,12 @@ importers:
       '@csstools/postcss-global-data':
         specifier: 4.0.0
         version: 4.0.0(postcss@8.5.6)
+      '@nl-design-system-community/documentation-i18n':
+        specifier: workspace:*
+        version: link:../documentation-i18n
+      '@nl-design-system-community/documentation-markdown-plugins':
+        specifier: workspace:*
+        version: link:../documentation-markdown-plugins
       '@nl-design-system-unstable/postcss-remove-unused-design-tokens':
         specifier: 0.0.2
         version: 0.0.2
@@ -728,7 +1074,7 @@ importers:
         version: 10.4.2
       '@testing-library/jest-dom':
         specifier: 7.0.1
-        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
+        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
       '@testing-library/react':
         specifier: 16.3.3
         version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -833,7 +1179,7 @@ importers:
         version: 8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
       vitest:
         specifier: 4.1.11
-        version: 4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+        version: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
 
 packages:
 
@@ -6746,9 +7092,6 @@ packages:
   mdast-util-mdx-expression@2.0.0:
     resolution: {integrity: sha512-fGCu8eWdKUKNu5mohVGkhBXCXGnOTLuFqOvGMvdikr+J1w7lDJgxThOKpwRWzzbyXAU2hhSwsmssOY4yTokluw==}
 
-  mdast-util-mdx-jsx@3.0.0:
-    resolution: {integrity: sha512-XZuPPzQNBPAlaqsTTgRrcJnyFbSOBovSadFgbFu8SnuNgm+6Bdx1K+IWoitsmj6Lq6MNtI+ytOqwN70n//NaBA==}
-
   mdast-util-mdx-jsx@3.2.0:
     resolution: {integrity: sha512-lj/z8v0r6ZtsN/cGNNtemmmfoLAFZnjMbNyLzBafjzikOM+glrjNHPlf6lQDOTccj9n5b0PPihEBbhneMyGs1Q==}
 
@@ -9032,7 +9375,6 @@ packages:
       '@vitest/ui': 4.1.11
       happy-dom: '*'
       jsdom: '*'
-      vite: ^6.0.0 || ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       '@edge-runtime/vm':
         optional: true
@@ -11131,10 +11473,10 @@ snapshots:
 
   '@rijkshuisstijl-community/card-css@1.0.0': {}
 
-  '@rijkshuisstijl-community/card-react@1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))':
+  '@rijkshuisstijl-community/card-react@1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))':
     dependencies:
       '@rijkshuisstijl-community/card-css': 1.0.0
-      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
+      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
       '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -11150,12 +11492,12 @@ snapshots:
 
   '@rijkshuisstijl-community/link-css@1.0.1': {}
 
-  '@rijkshuisstijl-community/link-react@1.0.1(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))':
+  '@rijkshuisstijl-community/link-react@1.0.1(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))':
     dependencies:
       '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.28.6)(react@18.3.1)
       '@rijkshuisstijl-community/link-css': 1.0.1
       '@vitejs/plugin-react': 4.7.0(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
-      '@vitest/coverage-v8': 3.2.4(supports-color@7.2.0)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
+      '@vitest/coverage-v8': 3.2.4(supports-color@7.2.0)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -11310,7 +11652,7 @@ snapshots:
       picocolors: 1.1.1
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))':
+  '@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))':
     dependencies:
       '@adobe/css-tools': 4.5.0
       '@testing-library/dom': 10.4.2
@@ -11320,7 +11662,7 @@ snapshots:
       picocolors: 1.1.1
       redent: 3.0.0
     optionalDependencies:
-      vitest: 4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+      vitest: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
 
   '@testing-library/react@16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -12704,7 +13046,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.1
       vite: 8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
 
-  '@vitest/coverage-v8@3.2.4(supports-color@7.2.0)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))':
+  '@vitest/coverage-v8@3.2.4(supports-color@7.2.0)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 1.0.2
@@ -12719,7 +13061,7 @@ snapshots:
       std-env: 3.10.0
       test-exclude: 7.0.2
       tinyrainbow: 2.0.0
-      vitest: 4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+      vitest: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -15014,7 +15356,7 @@ snapshots:
       estree-util-is-identifier-name: 3.0.0
       hast-util-whitespace: 3.0.0
       mdast-util-mdx-expression: 2.0.0(supports-color@7.2.0)
-      mdast-util-mdx-jsx: 3.0.0(supports-color@7.2.0)
+      mdast-util-mdx-jsx: 3.2.0(supports-color@7.2.0)
       mdast-util-mdxjs-esm: 2.0.1(supports-color@7.2.0)
       property-information: 6.4.0
       space-separated-tokens: 2.0.2
@@ -15048,7 +15390,7 @@ snapshots:
       estree-util-is-identifier-name: 3.0.0
       hast-util-whitespace: 3.0.0
       mdast-util-mdx-expression: 2.0.0(supports-color@7.2.0)
-      mdast-util-mdx-jsx: 3.0.0(supports-color@7.2.0)
+      mdast-util-mdx-jsx: 3.2.0(supports-color@7.2.0)
       mdast-util-mdxjs-esm: 2.0.1(supports-color@7.2.0)
       property-information: 6.4.0
       space-separated-tokens: 2.0.2
@@ -16175,24 +16517,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdx-jsx@3.0.0(supports-color@7.2.0):
-    dependencies:
-      '@types/estree-jsx': 1.0.3
-      '@types/hast': 3.0.5
-      '@types/mdast': 4.0.4
-      '@types/unist': 3.0.3
-      ccount: 2.0.1
-      devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.3(supports-color@7.2.0)
-      mdast-util-to-markdown: 2.1.0
-      parse-entities: 4.0.1
-      stringify-entities: 4.0.3
-      unist-util-remove-position: 5.0.0
-      unist-util-stringify-position: 4.0.0
-      vfile-message: 4.0.2
-    transitivePeerDependencies:
-      - supports-color
-
   mdast-util-mdx-jsx@3.2.0(supports-color@7.2.0):
     dependencies:
       '@types/estree-jsx': 1.0.3
@@ -16214,7 +16538,7 @@ snapshots:
     dependencies:
       mdast-util-from-markdown: 2.0.3(supports-color@7.2.0)
       mdast-util-mdx-expression: 2.0.0(supports-color@7.2.0)
-      mdast-util-mdx-jsx: 3.0.0(supports-color@7.2.0)
+      mdast-util-mdx-jsx: 3.2.0(supports-color@7.2.0)
       mdast-util-mdxjs-esm: 2.0.1(supports-color@7.2.0)
       mdast-util-to-markdown: 2.1.0
     transitivePeerDependencies:
@@ -19065,7 +19389,7 @@ snapshots:
     optionalDependencies:
       vite: 8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
 
-  vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)):
+  vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1):
     dependencies:
       '@vitest/expect': 4.1.11
       '@vitest/mocker': 4.1.11(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
@@ -19091,7 +19415,18 @@ snapshots:
       '@types/node': 24.10.9
       jsdom: 30.1.2
     transitivePeerDependencies:
+      - '@vitejs/devtools'
+      - esbuild
+      - jiti
+      - less
       - msw
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - terser
+      - tsx
+      - yaml
 
   vscode-languageserver-textdocument@1.0.12: {}
 

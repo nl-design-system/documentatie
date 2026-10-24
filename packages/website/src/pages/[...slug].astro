@@ -4,12 +4,12 @@ import { render } from 'astro:content';
 import DetailLayout from '@layouts/detail.astro';
 import OverviewLayout from '@layouts/overview.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
-import { getNavigationElement } from 'src/navigation/get-navigation-element.ts';
-import { isNavigationGroup } from 'src/navigation';
-import { navigation } from '../navigation.config';
-import { Grid } from '@components/grid/grid';
-import { Heading } from '@components/heading/heading';
-import { Paragraph } from '@components/paragraph/paragraph';
+import { getNavigationElement } from '@nl-design-system-community/documentation-index/src/navigation/get-navigation-element.ts';
+import { isNavigationGroup } from '@nl-design-system-community/documentation-index/src/navigation/index.ts';
+import { navigation } from '../navigation.config.ts';
+import { Grid } from '@nl-design-system-community/documentation-components/src/grid/grid.tsx';
+import { Heading } from '@nl-design-system-community/documentation-components/src/heading/heading.tsx';
+import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph.tsx';
 import '@nl-design-system-community/documentation-components/src/components/EstafetteBadge.css';
 
 export async function getStaticPaths() {

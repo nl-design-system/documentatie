@@ -10,7 +10,7 @@ import {
   Textarea,
   Textbox,
 } from '@utrecht/component-library-react';
-import { Button } from '@components/button/button';
+import { Button } from '../button/button';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react';
 import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';

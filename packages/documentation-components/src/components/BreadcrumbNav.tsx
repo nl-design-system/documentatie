@@ -2,7 +2,7 @@
 import { Link } from './Link';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { IconChevronLeft } from '@components/functional-icon';
+import { IconChevronLeft } from '../functional-icon';
 import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,

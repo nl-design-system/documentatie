@@ -16,7 +16,7 @@ function buildToc(items: Item[]) {
   return items.map(buildTocItem).join('');
 }
 
-export const onRequest: MiddlewareHandler = async (context, next) => {
+export const onRequest: MiddlewareHandler = async (_context, next) => {
   const response = await next();
   const html = await response.text();
   const $ = cheerio.load(html);
