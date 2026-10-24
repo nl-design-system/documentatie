@@ -10,7 +10,7 @@ import {
   IconPointer,
   IconNumber,
   IconShadow,
-} from '@components/functional-icon';
+} from '../functional-icon';
 import { Icon } from '@utrecht/component-library-react';
 import { createElement } from 'react';
 

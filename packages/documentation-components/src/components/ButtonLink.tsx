@@ -1,11 +1,11 @@
-export { ButtonLink } from '../../../website/src/components/button-link/button-link';
+export { ButtonLink } from '../button-link/button-link';
 /*
 import type { Props } from '@docusaurus/Link';
 import { BareLink } from './Link';
 import {
   ButtonLink as AstroButtonLink,
   type ButtonLinkProps as AstroButtonLinkProps,
-} from '../../../website/src/components/button-link/button-link';
+} from '../button-link/button-link';
 import { clsx } from 'clsx';
 
 import type { PropsWithChildren } from 'react';

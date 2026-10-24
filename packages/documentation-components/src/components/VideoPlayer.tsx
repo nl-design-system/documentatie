@@ -1,6 +1,6 @@
 import LiteYouTubeEmbed, { type LiteYouTubeProps } from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
-import { i18n } from '@site/packages/website/src/i18n';
+import { i18n } from '@nl-design-system-community/documentation-i18n/src/index';
 
 interface VideoPlayerProps extends LiteYouTubeProps {
   lang?: 'nl' | 'en';
