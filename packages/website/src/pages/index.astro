@@ -2,17 +2,17 @@
 import { getCollection } from 'astro:content';
 import { siteDescription, siteTitle } from '../seo.config.ts';
 import PageBodySectionsLayout from '@layouts/page-body-sections.astro';
-import { Grid } from '@components/grid/grid';
-import { Heading } from '@components/heading/heading';
-import { Paragraph } from '@components/paragraph/paragraph';
-import { UnorderedList } from '@components/unordered-list/unordered-list';
-import { Bold } from '@components/bold/bold';
-import { ButtonLink } from '@components/button-link/button-link';
-import { ActionGroup } from '@components/action-group/action-group';
-import { Image } from '@components/image/image';
-import { Card } from '@components/card/card';
-import { Link } from '@components/link/link';
-import { IconChevronRight } from '@components/functional-icon';
+import { Grid } from '@nl-design-system-community/documentation-components/src/grid/grid';
+import { Heading } from '@nl-design-system-community/documentation-components/src/heading/heading';
+import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph';
+import { UnorderedList } from '@nl-design-system-community/documentation-components/src/unordered-list/unordered-list';
+import { Bold } from '@nl-design-system-community/documentation-components/src/bold/bold';
+import { ButtonLink } from '@nl-design-system-community/documentation-components/src/button-link/button-link';
+import { ActionGroup } from '@nl-design-system-community/documentation-components/src/action-group/action-group';
+import { Image } from '@nl-design-system-community/documentation-components/src/image/image';
+import { Card } from '@nl-design-system-community/documentation-components/src/card/card';
+import { Link } from '@nl-design-system-community/documentation-components/src/link/link';
+import { IconChevronRight } from '@nl-design-system-community/documentation-components/src/functional-icon';
 import { VideoPlayer } from '@nl-design-system-community/documentation-components/src/components/VideoPlayer';
 import { HeartbeatEpisode } from '@nl-design-system-community/documentation-components/src/components/HeartbeatEpisode';
 import {
@@ -26,7 +26,10 @@ import {
   UserResearchSVG,
 } from '@nl-design-system-community/documentation-components/src/components/Icons';
 import './index.css';
-import { PageBodySection, PageBodyContent } from '@components/page-body/page-body';
+import {
+  PageBodySection,
+  PageBodyContent,
+} from '@nl-design-system-community/documentation-components/src/page-body/page-body';
 
 const docs = await getCollection('docs');
 const wcag = await getCollection('wcag');

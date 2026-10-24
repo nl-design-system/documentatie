@@ -11,14 +11,14 @@
       "@docs/*": ["../../docs/*"],
       "@site/*": ["../../*"],
       "@theme/*": ["../../src/theme/*"],
-      "@components/*": ["src/components/*"],
+      "@nl-design-system-community/documentation-components/src/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
       "@utils/*": ["src/utils/*"]
     },
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
     "checkJs": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "skipLibCheck": true
   }
 }

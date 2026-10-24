@@ -1,10 +1,10 @@
 import { Heading, Link, LinkList, Paragraph, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { Heading as NLHeading } from '@components/heading/heading';
-import { Paragraph as NLParagraph } from '@components/paragraph/paragraph';
+import { Heading as NLHeading } from '../heading/heading';
+import { Paragraph as NLParagraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
 import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
-import { Card as RhcCard } from '@components/card/card';
+import { Card as RhcCard } from '../card/card';
 import { ComponentProgress } from './ComponentProgress';
 import { EstafetteBadge } from './EstafetteBadge';
 import { InlineHeadingGroup } from './InlineHeadingGroup';
@@ -21,9 +21,12 @@ import {
 } from '../utils';
 import './ComponentPage.css';
 import relationMap from './relations.json';
-import { Accordion, AccordionSection } from '../../../website/src/components/accordion/accordion';
-import '../../../website/src/components/accordion/accordion.css';
-import { ComponentIllustration } from '../../../website/src/components/component-illustration/component-illustration';
+import {
+  Accordion,
+  AccordionSection,
+} from '@nl-design-system-community/documentation-components/src/accordion/accordion';
+import '@nl-design-system-community/documentation-components/src/accordion/accordion.css';
+import { ComponentIllustration } from '@nl-design-system-community/documentation-components/src/component-illustration/component-illustration';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));

@@ -1,9 +1,9 @@
 ---
 import PageBodyContentLayout from '@layouts/page-body-content.astro';
 import { MDXComponents } from '@utils/mdx-components.astro';
-import { Grid } from '@components/grid/grid';
-import { Heading } from '@components/heading/heading';
-import { Paragraph } from '@components/paragraph/paragraph';
+import { Grid } from '@nl-design-system-community/documentation-components/src/grid/grid';
+import { Heading } from '@nl-design-system-community/documentation-components/src/heading/heading';
+import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph';
 import { getEntry, render } from 'astro:content';
 
 const page = await getEntry('changelog', 'CHANGELOG');

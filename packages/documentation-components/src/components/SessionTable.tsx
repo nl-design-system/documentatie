@@ -1,4 +1,4 @@
-import { IconCalendarEvent, IconUser } from '@components/functional-icon';
+import { IconCalendarEvent, IconUser } from '../functional-icon';
 import {
   ButtonLink,
   Icon,
@@ -12,7 +12,7 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react/dist/css-module';
-import { Heading, type HeadingProps } from '@components/heading/heading';
+import { Heading, type HeadingProps } from '../heading/heading';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
 import './SessionTable.css';
