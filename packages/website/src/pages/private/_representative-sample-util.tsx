@@ -1,6 +1,9 @@
-import { LinkList, LinkListLink } from '@components/link-list/link-list';
-import { Icon } from '@components/icon/icon';
-import { IconChevronRight } from '@components/functional-icon';
+import {
+  LinkList,
+  LinkListLink,
+} from '@nl-design-system-community/documentation-components/src/link-list/link-list.tsx';
+import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon.tsx';
+import { IconChevronRight } from '@nl-design-system-community/documentation-components/src/functional-icon/index.tsx';
 
 const representativeSample = [
   { label: 'Homepage', href: '/' },

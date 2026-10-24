@@ -1,4 +1,4 @@
-import { Card } from '../../../../website/src/components/card/card';
+import { Card } from '../../card/card';
 import { Link, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import Ali from './Ali';
 import Astrid from './Astrid';

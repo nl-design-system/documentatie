@@ -1,4 +1,4 @@
-export { Link } from '../../../website/src/components/link/link';
+export { Link } from '../link/link';
 /*
 import type { Props } from '@docusaurus/Link';
 import { clsx } from 'clsx';

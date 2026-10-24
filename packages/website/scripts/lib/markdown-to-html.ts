@@ -1,8 +1,8 @@
 import { readFile } from 'node:fs/promises';
 import { createMarkdownProcessor, type MarkdownRenderer } from '@astrojs/markdown-remark';
-import { rehypeAbsoluteUrls } from '../../markdown-plugins/rehype-absolute-urls';
-import { nldsComponentsPlugin } from '../../markdown-plugins/rehype-nlds-components';
-import { remarkStripHtmlComments } from '../../markdown-plugins/remark-strip-html-comments';
+import { rehypeAbsoluteUrls } from '@nl-design-system-community/documentation-markdown-plugins/src/rehype-absolute-urls/index.ts';
+import { nldsComponentsPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/rehype-nlds-components/index.ts';
+import { remarkStripHtmlComments } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-strip-html-comments/index.ts';
 
 const siteUrl = 'https://nldesignsystem.nl/';
 

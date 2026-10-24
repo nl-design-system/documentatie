@@ -1,7 +1,7 @@
 import { glob, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readMarkdownAsHtml } from './lib/markdown-to-html';
+import { readMarkdownAsHtml } from './lib/markdown-to-html.ts';
 
 // Source markdown lives in the documentation package; output ships with it too.
 const componentenDir = fileURLToPath(new URL('../../../docs/componenten', import.meta.url));

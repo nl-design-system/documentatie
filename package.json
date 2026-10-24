@@ -40,6 +40,7 @@
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
     "lint-fix:js": "eslint --fix",
     "lint-fix:prettier": "prettier --write .",
+    "lint-todo": "pnpm run --no-bail --recursive lint-todo",
     "changeset": "changeset add",
     "changeset:empty": "changeset --empty",
     "changeset:publish": "changeset publish",
@@ -63,7 +64,7 @@
     "test-update": "npm-run-all --sequential clean lint build",
     "test": "npm-run-all test:**",
     "test:rehype-plugin": "tsx rehype-trailing-slash.test.ts",
-    "test:website-astro": "pnpm --filter @nl-design-system/website-astro run test"
+    "test:workspace": "pnpm run --recursive test"
   },
   "dependencies": {
     "@babel/runtime": "7.28.6",
