@@ -1,0 +1,24 @@
+{
+  "version": "0.0.0",
+  "author": "Community for NL Design System",
+  "description": "Reusable text snippets for the documentation website of NL Design System",
+  "license": "EUPL-1.2",
+  "name": "@nl-design-system-community/documentation-i18n",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/documentatie.git",
+    "directory": "packages/documentation-i18n"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit"
+  }
+}

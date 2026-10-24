@@ -4,11 +4,11 @@ import mdx from '@astrojs/mdx';
 import { unified } from '@astrojs/markdown-remark';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import { remarkCanvasFix } from './markdown-plugins/remark-canvas-fix';
-import { sharedPlugins } from './markdown-plugins/shared-plugins';
-import { clientLoadPlugin } from './markdown-plugins/remark-client-load';
-import { siteBaseUrl } from './src/seo.config';
-import { appendCSPToHTAccess } from './append-csp-to-htaccess';
+import { remarkCanvasFix } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-canvas-fix/index.ts';
+import { sharedPlugins } from './src/markdown-plugins.ts';
+import { clientLoadPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-client-load/index.ts';
+import { siteBaseUrl } from './src/seo.config.ts';
+import { appendCSPToHTAccess } from './append-csp-to-htaccess.ts';
 import { fileURLToPath } from 'node:url';
 
 const cspDevConfig: AstroUserConfig = {
@@ -131,7 +131,7 @@ export default defineConfig({
         },
         {
           find: '@nl-design-system-community/documentation-components/src/components/Markdown',
-          replacement: fileURLToPath(new URL('./src/components/markdown/markdown.ts', import.meta.url)),
+          replacement: fileURLToPath(new URL('../documentation-components/src/markdown/markdown.ts', import.meta.url)),
         },
       ],
     },
