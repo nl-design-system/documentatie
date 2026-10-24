@@ -1,5 +1,5 @@
-import { Link } from '@components/link/link';
-import { UnorderedList } from '@components/unordered-list/unordered-list';
+import { Link } from '@nl-design-system-community/documentation-components/src/link/link';
+import { UnorderedList } from '@nl-design-system-community/documentation-components/src/unordered-list/unordered-list';
 
 interface ContentTestPage {
   id: string;

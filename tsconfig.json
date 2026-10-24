@@ -7,14 +7,7 @@
     "baseUrl": ".",
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
-    "resolveJsonModule": true,
-    "paths": {
-      "@docs/*": ["./docs/*"],
-      "@site/*": ["./*"],
-      "@theme/*": ["src/theme/*"],
-      "@utils/*": ["src/utils/*", "packages/website/src/utils/*"],
-      "@components/*": ["./packages/website/src/components/*"]
-    }
+    "resolveJsonModule": true
   },
   "include": [
     "**/*.ts",

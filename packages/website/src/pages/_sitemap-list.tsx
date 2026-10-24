@@ -1,7 +1,10 @@
-import type { NavigationElementResolved, NavigationGroupResolved } from '../navigation';
-import { Heading } from '@components/heading/heading';
-import { Link } from '@components/link/link';
-import { Paragraph } from '@components/paragraph/paragraph';
+import type {
+  NavigationElementResolved,
+  NavigationGroupResolved,
+} from '@nl-design-system-community/documentation-index/src/navigation';
+import { Heading } from '@nl-design-system-community/documentation-components/src/heading/heading';
+import { Link } from '@nl-design-system-community/documentation-components/src/link/link';
+import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react/css-module';
 import '@utrecht/unordered-list-css/dist/index.css';
 

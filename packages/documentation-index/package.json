@@ -1,0 +1,26 @@
+{
+  "version": "0.0.0",
+  "author": "Community for NL Design System",
+  "description": "Tools for analysing and organising the documentation of the website of NL Design System",
+  "license": "EUPL-1.2",
+  "name": "@nl-design-system-community/documentation-index",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/documentatie.git",
+    "directory": "packages/documentation-index"
+  },
+  "devDependencies": {
+    "astro": "7.4.2"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit"
+  }
+}

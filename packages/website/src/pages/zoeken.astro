@@ -1,8 +1,15 @@
 ---
 import PageBodyContentLayout from '@layouts/page-body-content.astro';
-import { SearchPage } from '@components/search/page';
+import { SearchPage } from '@nl-design-system-community/documentation-components/src/search/page';
+import { siteTitleSeparator, siteTitle, siteBaseUrl } from 'src/seo.config';
 ---
 
 <PageBodyContentLayout title="Zoeken" description="Zoeken in de NL Design System website">
-  <SearchPage lang="nl" client:load />
+  <SearchPage
+    lang="nl"
+    client:load
+    siteBaseUrl={siteBaseUrl}
+    siteTitle={siteTitle}
+    siteTitleSeparator={siteTitleSeparator}
+  />
 </PageBodyContentLayout>
