@@ -1,14 +1,18 @@
 ---
 import Document, { type Props as DocumentProps } from './document.astro';
-import { BreadcrumbNav, BreadcrumbNavLink, BreadcrumbNavSeparator } from '@components/breadcrumb-nav/breadcrumb-nav';
-import { IconChevronRight } from '@components/functional-icon';
-import { SideNavigation } from '@components/side-navigation/side-navigation.tsx';
+import {
+  BreadcrumbNav,
+  BreadcrumbNavLink,
+  BreadcrumbNavSeparator,
+} from '@nl-design-system-community/documentation-components/src/breadcrumb-nav/breadcrumb-nav';
+import { IconChevronRight } from '@nl-design-system-community/documentation-components/src/functional-icon';
+import { SideNavigation } from '@nl-design-system-community/documentation-components/src/side-navigation/side-navigation.tsx';
 import { navigation } from '../navigation.config.ts';
-import { getBreadcrumbsForElement } from '../navigation/get-breadcrumbs-for-element.ts';
+import { getBreadcrumbsForElement } from '@nl-design-system-community/documentation-index/src/navigation/get-breadcrumbs-for-element.ts';
 import './overview.css';
-import { withCurrentIndication } from 'src/navigation/with-current-indication';
-import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree';
-import { i18n } from 'src/i18n';
+import { withCurrentIndication } from '@nl-design-system-community/documentation-index/src/navigation/with-current-indication';
+import { serialiseNavigationTree } from '@nl-design-system-community/documentation-index/src/navigation/serialise-navigation-tree';
+import { i18n } from '@nl-design-system-community/documentation-i18n/src/index';
 
 export type Props = DocumentProps;
 

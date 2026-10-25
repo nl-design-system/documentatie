@@ -1,15 +1,19 @@
 ---
 import Document, { type Props as DocumentProps } from './document.astro';
-import { BreadcrumbNav, BreadcrumbNavLink, BreadcrumbNavSeparator } from '@components/breadcrumb-nav/breadcrumb-nav';
-import { IconChevronRight } from '@components/functional-icon';
-import TableOfContents from '@components/table-of-content/table-of-content.astro';
-import { SideNavigation } from '@components/side-navigation/side-navigation.tsx';
+import {
+  BreadcrumbNav,
+  BreadcrumbNavLink,
+  BreadcrumbNavSeparator,
+} from '@nl-design-system-community/documentation-components/src/breadcrumb-nav/breadcrumb-nav.tsx';
+import { IconChevronRight } from '@nl-design-system-community/documentation-components/src/functional-icon/index.tsx';
+import TableOfContents from '@nl-design-system-community/documentation-components/src/table-of-content/table-of-content.astro';
+import { SideNavigation } from '@nl-design-system-community/documentation-components/src/side-navigation/side-navigation.tsx';
 import { navigation } from '../navigation.config.ts';
-import { getBreadcrumbsForElement } from '../navigation/get-breadcrumbs-for-element.ts';
-import { withCurrentIndication } from 'src/navigation/with-current-indication.ts';
-import { serialiseNavigationTree } from 'src/navigation/serialise-navigation-tree.ts';
+import { getBreadcrumbsForElement } from '@nl-design-system-community/documentation-index/src/navigation/get-breadcrumbs-for-element.ts';
+import { withCurrentIndication } from '@nl-design-system-community/documentation-index/src/navigation/with-current-indication.ts';
+import { serialiseNavigationTree } from '@nl-design-system-community/documentation-index/src/navigation/serialise-navigation-tree.ts';
 import './detail.css';
-import { i18n } from 'src/i18n';
+import { i18n } from '@nl-design-system-community/documentation-i18n/src/index.ts';
 
 export type Props = DocumentProps;
 
