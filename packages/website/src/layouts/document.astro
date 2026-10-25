@@ -160,8 +160,13 @@ const footerNavigationItems = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <PageTitle {...{ titleSm, title, siteTitleSeparator, siteTitle }} />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    {
+      /* Avoid storing a favicon at `/favicon.ico`, because some browsers will pick it over the preferred SVG favicon. */
+      /* Add `sizes="32x32"` to avoid Chrome picking the bitmap icon over the SVG icon. */
+    }
+    <link rel="icon" href="/legacy-favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
     <meta name="theme-color" content={siteThemeColor} />
     <meta name="color-scheme" content={siteColorScheme} />
 
