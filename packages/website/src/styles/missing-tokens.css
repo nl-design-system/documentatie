@@ -7,6 +7,13 @@
   --ma-layout-row-gap: var(--basis-space-row-3xl); /* --> Zien we dit als een component of common token? */
   --ma-layout-side-bar-inline-size: 300px; /* --> Zien we dit als een component of common token? */
   --ma-mobile-menu-max-inline-size: 400px; /* --> Zien we dit als een component of common token? */
+  --ma-notification-banner-color: var(--basis-color-accent-1-color-default);
+  --ma-notification-banner-background-color: var(--basis-color-accent-1-bg-default);
+  --ma-notification-banner-content-max-inline-size: var(--utrecht-nav-bar-content-max-inline-size);
+  --ma-notification-banner-content-padding-block-end: 0;
+  --ma-notification-banner-content-padding-block-start: 0;
+  --ma-notification-banner-content-padding-inline-end: var(--ma-layout-overview-content-padding-inline-end);
+  --ma-notification-banner-content-padding-inline-start: var(--ma-layout-overview-content-padding-inline-start);
   --ma-user-input-badge-background-color: var(--basis-color-default-bg-default);
   --ma-user-input-badge-border-color: var(--basis-color-default-border-default);
   --ma-user-input-badge-border-radius: 0.2rem;
@@ -18,6 +25,16 @@
   --nl-button-column-gap: var(--basis-space-inline-xs); /* --> Zou een basis.space.text.* token moeten zijn. */
   --utrecht-page-header-content-padding-block-start: var(--basis-space-block-lg);
   --utrecht-page-header-content-padding-block-end: var(--basis-space-block-lg);
+
+  /* Temporary variables until the design is thought through with a designer */
+  --ma-layout-overview-side-nav-min-inline-size: 100px;
+  --ma-layout-overview-side-nav-max-inline-size: 300px;
+  --ma-layout-overview-min-inline-size: 220px;
+  --ma-layout-overview-content-max-inline-size: var(--basis-page-max-inline-size);
+  --ma-layout-overview-content-padding-inline-end: var(--basis-space-inline-xl);
+  --ma-layout-overview-content-padding-inline-start: var(--basis-space-inline-xl);
+  --ma-layout-overview-content-padding-block-end: var(--basis-space-block-6xl);
+  --ma-layout-overview-content-padding-block-start: var(--basis-space-block-xl);
 }
 
 /**
