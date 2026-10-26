@@ -16,6 +16,7 @@ patchedDependencies:
   '@gemeente-denhaag/icons@4.0.1': cc14f2ecdeabcc85e8c3394c30d1de582cfbeac741d17297e4abd43fbe161240
   '@gemeente-denhaag/number-badge@2.1.0': b675fd2f28efbeba50e82b29b6716822e040042eb2452174f3d2c70f8c3658c1
   '@gemeente-denhaag/side-navigation@4.1.0': e37b966bd945cf3473a9512973bdcdb4b6e0e5536af7da8e523ea4a626025f20
+  '@justinribeiro/lite-youtube@1.9.0': e1d785712233e2240c302b11984d5f5f2cebe6b2b14a9790bc940846163ecef1
   '@rijkshuisstijl-community/card-react': c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247
 
 importers:
@@ -30,7 +31,7 @@ importers:
         version: 5.5.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@justinribeiro/lite-youtube':
         specifier: 1.9.0
-        version: 1.9.0
+        version: 1.9.0(patch_hash=e1d785712233e2240c302b11984d5f5f2cebe6b2b14a9790bc940846163ecef1)
       '@nl-design-system-candidate/code-block-docs':
         specifier: 1.2.1
         version: 1.2.1
@@ -815,7 +816,7 @@ importers:
         version: 4.1.0(patch_hash=e37b966bd945cf3473a9512973bdcdb4b6e0e5536af7da8e523ea4a626025f20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@justinribeiro/lite-youtube':
         specifier: 1.9.0
-        version: 1.9.0
+        version: 1.9.0(patch_hash=e1d785712233e2240c302b11984d5f5f2cebe6b2b14a9790bc940846163ecef1)
       '@nl-design-system-candidate/button-css':
         specifier: 1.1.0
         version: 1.1.0
@@ -6816,8 +6817,15 @@ packages:
   launch-editor@2.14.1:
     resolution: {integrity: sha512-QWBrQsMpH7gPr965dsKD/3cKWiNoTjpATQf++Xq63N6sKRGMwlVXz41O1IZTMfZQgBctD/K5Zt06+/I6pP6+HA==}
 
+  launch-editor@2.6.1:
+    resolution: {integrity: sha512-eB/uXmFVpY4zezmGp5XtU21kwo7GBbKB+EQ+UZeWtGb9yAM5xt/Evk+lYH3eRNAtId+ej4u7TYPFZ07w4s7rRw==}
+
   legacy-javascript@0.0.4:
     resolution: {integrity: sha512-UTmeKBVxnfJcpmpOvzzNnLsQT99BXHpPlc/ZKddIRmWmrR0fw6335I3lq4+sJoP60UTbBNaYsGYVPc65YB1x3A==}
+
+  leven@3.1.0:
+    resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
+    engines: {node: '>=6'}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -11089,7 +11097,7 @@ snapshots:
       '@jsonjoy.com/codegen': 1.0.0(tslib@2.6.2)
       tslib: 2.6.2
 
-  '@justinribeiro/lite-youtube@1.9.0': {}
+  '@justinribeiro/lite-youtube@1.9.0(patch_hash=e1d785712233e2240c302b11984d5f5f2cebe6b2b14a9790bc940846163ecef1)': {}
 
   '@keyv/bigmap@1.3.1(keyv@5.6.0)':
     dependencies:
@@ -16178,7 +16186,14 @@ snapshots:
       picocolors: 1.1.1
       shell-quote: 1.12.0
 
+  launch-editor@2.6.1:
+    dependencies:
+      picocolors: 1.1.1
+      shell-quote: 1.12.0
+
   legacy-javascript@0.0.4: {}
+
+  leven@3.1.0: {}
 
   levn@0.4.1:
     dependencies:
