@@ -86,6 +86,8 @@ import '../../../../src/components/Checklist.css';
 import '@nl-design-system-candidate/data-badge-css/data-badge.css';
 import '../../../../src/components/Canvas/CanvasAstro.css';
 import '@utrecht/color-sample-css/dist/index.css';
+import { NotificationBanner } from '@components/notification-banner/notification-banner';
+import { Link } from '@site/src/components/Link';
 
 export interface Props {
   title: string;
@@ -211,6 +213,13 @@ const footerNavigationItems = [
         </NavList>
       </NavigationLandmark>
     </NavBar>
+    <NotificationBanner>
+      <p>
+        Vandaag zijn er 3 online presentaties van de Design Systems Week. <Link
+          href="/events/design-systems-week-2026/tijdschema/">Bekijk het tijdschema</Link
+        >!
+      </p>
+    </NotificationBanner>
 
     <slot />
 
