@@ -1,15 +1,15 @@
-export { Link } from '../link/link';
-/*
-import type { Props } from '@docusaurus/Link';
-import { clsx } from 'clsx';
+import { Link as LinkComponent, type LinkProps } from '../link/link';
 import { hasFileExtension } from '../utils';
 import type { PropsWithChildren } from 'react';
 
-export const BareLink = ({ children, ...props }: PropsWithChildren<Props>) => {
-  const { to, href, ..._props } = props;
-  let dest = to || href;
+export const improveLinkProps = ({ href }: Partial<LinkProps>) => {
+  const _props: Partial<LinkProps> = {};
 
-  const url = new URL(dest, 'https://nldesignsystem.nl');
+  if (typeof href !== 'string') {
+    return _props;
+  }
+
+  const url = new URL(href, 'https://nldesignsystem.nl');
 
   // Internal link
   if (url.origin === 'https://nldesignsystem.nl') {
@@ -20,7 +20,7 @@ export const BareLink = ({ children, ...props }: PropsWithChildren<Props>) => {
     }
 
     // keep internal links relative
-    dest = url.toString().replace('https://nldesignsystem.nl', '');
+    _props.href = url.toString().replace('https://nldesignsystem.nl', '');
   }
 
   // Exteral link
@@ -29,26 +29,9 @@ export const BareLink = ({ children, ...props }: PropsWithChildren<Props>) => {
     _props.rel = 'noopener noreferrer';
   }
 
-  return (
-    <a href={dest} {..._props}>
-      {children}
-    </a>
-  );
+  return _props;
 };
 
-export const Link = ({ className, boxContent, ...props }: PropsWithChildren<Props & { boxContent?: boolean }>) => {
-  return (
-    <BareLink
-      className={clsx(
-        'utrecht-link',
-        'utrecht-link--html-a',
-        {
-          'utrecht-link--box-content': boxContent,
-        },
-        className,
-      )}
-      {...props}
-    />
-  );
+export const Link = (props: PropsWithChildren<LinkProps>) => {
+  return <LinkComponent {...props} {...improveLinkProps(props)} />;
 };
-*/
