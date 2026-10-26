@@ -1,10 +1,7 @@
 import { Markdown } from './Markdown';
-import clsx from 'clsx';
-import React, { type PropsWithChildren, Suspense } from 'react';
-import { toKebabCase } from '../utils';
-import './ComponentAnatomy.css';
-import type { CleanComponentProgress as ComponentProgressObject } from '@nl-design-system/component-progress/dist/utils';
+import React, { type PropsWithChildren } from 'react';
 import { AnatomyList, AnatomyListItem } from './AnatomyList';
+import './ComponentAnatomy.css';
 
 interface IllustrationProps {
   className?: string;
@@ -12,43 +9,31 @@ interface IllustrationProps {
 }
 
 interface ComponentAnatomyProps {
-  component?: ComponentProgressObject;
   illustration?: React.ComponentType<IllustrationProps>;
+  anatomyMarkdown?: string;
 }
 
 export const ComponentAnatomy = ({
-  component,
   illustration: AnatomyIllustration,
+  anatomyMarkdown,
 }: PropsWithChildren<ComponentAnatomyProps>) => {
-  const { title } = component;
-  const slug = toKebabCase(title);
-  const AnatomyLegend = React.lazy(() =>
-    import(`@nl-design-system-candidate/${slug}-docs/docs/anatomy/anatomy.md`).catch(() => {
-      return { default: () => null };
-    }),
-  );
-
   return (
-    <Suspense fallback={null}>
-      <figure className={clsx('ma-component-anatomy')}>
-        {AnatomyIllustration && (
-          <AnatomyIllustration height={null} className={clsx('ma-component-anatomy__illustration')} />
-        )}
-        {AnatomyIllustration && AnatomyLegend && (
-          <figcaption>
-            <Markdown
-              omitH1
-              headingLevel={1}
-              components={{
-                ol: ({ children }) => <AnatomyList>{children}</AnatomyList>,
-                li: ({ children }) => <AnatomyListItem>{children}</AnatomyListItem>,
-              }}
-            >
-              <AnatomyLegend />
-            </Markdown>
-          </figcaption>
-        )}
-      </figure>
-    </Suspense>
+    <figure className="ma-component-anatomy">
+      {/* {AnatomyIllustration && <AnatomyIllustration height={null} className="ma-component-anatomy__illustration" />} */}
+      {AnatomyIllustration && anatomyMarkdown && (
+        <figcaption>
+          <pre>{anatomyMarkdown}</pre>
+          <Markdown
+            omitH1
+            headingLevel={1}
+            components={{
+              ol: ({ children }) => <AnatomyList>{children}</AnatomyList>,
+              li: ({ children }) => <AnatomyListItem>{children}</AnatomyListItem>,
+            }}
+            content={anatomyMarkdown}
+          />
+        </figcaption>
+      )}
+    </figure>
   );
 };
