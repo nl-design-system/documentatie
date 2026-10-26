@@ -1,1 +1,0 @@
-import{t as e}from"./document-title.slW5hNAA.js";document.addEventListener(e.eventName,t=>{t instanceof e&&(document.title=t.newTitle)});
