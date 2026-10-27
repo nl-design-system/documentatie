@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.5.7 Sleepbewegingen
 pagination_label: WCAG-succescriterium 2.5.7 Sleepbewegingen
-description: Acties waarbij men moet slepen, kunnen ook zonder slepen.
+description: Alles wat je op een website kunt verslepen, kun je ook met klikken of tikken doen. Zo kan ook wie niet kan slepen de website bedienen.
 slug: 2.5.7
 conformance_level: Niveau AA
 keywords:
@@ -13,19 +13,28 @@ keywords:
   - AA
   - bedienbaar
   - input modaliteiten
-  - slepen
   - operable
   - input modalities
   - dragging movements
+  - sleepbewegingen
+  - slepen
+  - drag-and-drop
+  - verslepen
+  - enkele aanwijzer
+  - carrousel
+  - slider
+  - volgorde wijzigen
+  - kaart
+  - WCAG 2.5.7
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
 import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
 import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@nl-design-system-community/documentation-components/src/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import disclaimer from "./_wcag-disclaimer.md?raw";
 import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_2.5.7-summary.md";
 
@@ -33,52 +42,186 @@ import Summary from "./summaries/_2.5.7-summary.md";
   {"WCAG-succescriterium 2.5.7 Sleepbewegingen"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Wees niet afhankelijk van slepen voor acties.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Als men moet slepen, zorg er ook een andere makkelijke manier is.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Niet iedereen kan slepen.</dd>
-  </div>
-</dl>
-
-## Uitleg
-
 <Summary />
 
-Slepen is bijvoorbeeld het indrukken van een muisknop op een plek, de muis bewegen, en op een tweede plek weer los laten. Dit kan ook met andere vormen van bediening zoals aanraken.
+Bij een sleepbeweging druk je op een onderdeel, houd je de muisknop of je vinger ingedrukt, beweeg je naar een andere plek en laat je daar los. Het onderdeel beweegt mee tot je loslaat. Dat vraagt om een precieze beweging terwijl je iets ingedrukt houdt. Wie een trackball, een hoofdaanwijzer, oogbesturing of een muis met spraakbesturing gebruikt, kan dat niet of maar met veel moeite. Hetzelfde geldt voor iemand met een tremor of weinig kracht in de handen.
 
-Bij slepen kun je denken aan verschillende patronen:
+Het alternatief is een bediening met één aanwijzer zonder slepen: een klik, een tik, een dubbelklik of een lange druk. Bijvoorbeeld knoppen om een item omhoog of omlaag te zetten, of klikken op de balk van een schuifregelaar om de waarde te kiezen. Het alternatief mag zelf geen veegbeweging zijn, want die is voor veel mensen net zo moeilijk.
 
-- Een plek vinden op een kaart.
-- Een slider waarmee je voor- en achteruit kan in een video, voor volume, of om aantallen in te voeren.
-- Objecten die van volgorde veranderd kunnen worden met een "drag and drop"-patroon.
-- Een onderdeel dat kan draaien of schuiven, bijvoorbeeld om een kleur uit te kiezen.
-- Notities of andere zelfgeschreven teksten die geordend kunnen worden.
-- Sliders en carousels die door slepen in een andere stand gaan.
+Een alternatief met alleen het toetsenbord is niet genoeg. Werkt een kaart met de pijltjestoetsen, dan helpt dat iemand met een hoofdaanwijzer niet. Het alternatief moet ook met een klik of tik te bedienen zijn.
 
-Voor al deze situaties moet er ook een manier zijn om hetzelfde te doen, maar dan zonder te slepen. Denk bijvoorbeeld aan een kaart met pijltjes knoppen die geactiveerd kunnen worden. Bij een slider kan ook op de balk geklikt worden, en voor gebruiksvriendelijkheid kunnen er ook knoppen toegevoegd worden die hetzelfde doen.
+Er zijn 2 uitzonderingen. De eerste is een functie die zonder slepen iets wezenlijk anders zou worden, en die je op geen andere manier kunt bereiken. De tweede is slepen dat de browser zelf regelt en dat de maker van de website niet heeft aangepast.
 
-Let op: De andere manier moet ook met een [aanwijzer](/woordenlijst) bediend kunnen worden, een andere manier via het toetsenbord is niet voldoende voor dit succescriterium.
+Het verschil met [2.5.1 Aanwijzergebaren](/wcag/2.5.1/): bij slepen telt alleen waar je begint en waar je loslaat. Bij een veeg of een ander gebaar met een pad telt ook de route die je vinger aflegt.
 
-Als slepen noodzakelijk is, of het gedrag van het onderdeel is niet door de bouwer bepaald, dan is er een uitzondering.
+## Veelgemaakte fouten
+
+### Een carrousel of slider kun je alleen verschuiven door te slepen
+
+Een rij met logo's, foto's of kaartjes loopt door buiten het scherm. Je ziet de rest door de rij met de muis vast te pakken en opzij te slepen. Er zijn geen knoppen voor vorige en volgende. Of er zijn wel knoppen, maar die verdwijnen op een smal scherm of als je inzoomt tot 200%. Wie niet kan slepen, ziet alleen de eerste logo's of foto's.
+
+**Hoe te testen:** probeer alle slides te bekijken met alleen klikken, zonder te slepen. Doe dat op normale grootte en bij 200% zoom. Zijn er knoppen om naar de vorige en volgende slide te gaan?
+
+<Guideline appearance="dont" title="Knoppen die verdwijnen op een smal scherm">
+  ```html
+  <section class="example-slider" aria-label="Onze partners">
+    <ul class="example-slider-list">
+      <li><img src="https://example.com/logo-waterschap.png" alt="Waterschap Voorbeeld" /></li>
+      <li><img src="https://example.com/logo-provincie.png" alt="Provincie Voorbeeld" /></li>
+    </ul>
+    <div class="example-slider-buttons">
+      <button type="button">Vorige partners</button>
+      <button type="button">Volgende partners</button>
+    </div>
+  </section>
+  ```
+
+  ```css
+  @media (max-width: 40em) {
+    .example-slider-buttons {
+      display: none;
+    }
+  }
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Knoppen die op elke schermbreedte zichtbaar blijven">
+  ```css
+  .example-slider-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt knoppen toe voor vorige en volgende, en laat die op elke schermbreedte en bij elke zoom zien. Slepen kan blijven bestaan als extra manier.
+
+Reageert een carrousel op een aanraakscherm alleen op een veeg, lees dan ook [2.5.1 Aanwijzergebaren](/wcag/2.5.1/).
+
+### De volgorde kun je alleen wijzigen door te slepen
+
+In een lijst, een tabel of een oefening zet je onderdelen op volgorde door ze te verslepen. Je pakt een item of een greep met puntjes vast en sleept het naar een andere plek. Er is geen andere manier om de volgorde te wijzigen. Wie niet kan slepen, kan de lijst niet op volgorde zetten of de oefening niet afmaken.
+
+**Hoe te testen:** probeer een item een plek omhoog of omlaag te zetten met alleen klikken. Lukt dat zonder te slepen?
+
+<Guideline appearance="dont" title="Lijst die je alleen door slepen op volgorde zet">
+  ```html
+  <ol class="example-sortable-list">
+    <li draggable="true">Huurtoeslag aanvragen</li>
+    <li draggable="true">Zorgtoeslag aanvragen</li>
+    <li draggable="true">Kinderopvangtoeslag aanvragen</li>
+  </ol>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Lijst met knoppen om een item te verplaatsen">
+  ```html
+  <ol class="example-sortable-list">
+    <li draggable="true">
+      Huurtoeslag aanvragen
+      <button type="button">Huurtoeslag aanvragen een plek omlaag</button>
+    </li>
+    <li draggable="true">
+      Zorgtoeslag aanvragen
+      <button type="button">Zorgtoeslag aanvragen een plek omhoog</button>
+      <button type="button">Zorgtoeslag aanvragen een plek omlaag</button>
+    </li>
+    <li draggable="true">
+      Kinderopvangtoeslag aanvragen
+      <button type="button">Kinderopvangtoeslag aanvragen een plek omhoog</button>
+    </li>
+  </ol>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt bij elk item knoppen toe om het een plek omhoog of omlaag te zetten. Een andere mogelijkheid is een veld waarin je het nummer van de nieuwe plek kiest.
+
+Hetzelfde geldt voor kolommen in een tabel die je alleen door slepen van plek wisselt of breder maakt.
+
+### Een venster kun je alleen verplaatsen of sluiten door te slepen
+
+Een pop-upvenster of het venster van een tool, zoals een voorleestool, staat over de tekst die je wilt lezen. Je verplaatst het venster door de bovenkant vast te pakken en te slepen. Of een uitgeklapt paneel sluit alleen als je het van het scherm af sleept. Wie niet kan slepen, kan het venster niet opzij zetten en de tekst eronder niet lezen.
+
+**Hoe te testen:** probeer het venster te verplaatsen of te sluiten met alleen klikken. Is er een knop om het venster te sluiten of op een andere plek te zetten?
+
+<Guideline appearance="dont" title="Venster dat je alleen verplaatst door de bovenkant te slepen">
+  ```html
+  <div class="example-dialog">
+    <div class="example-dialog-header">Vertalen</div>
+    <p>Kies de taal waarin je deze pagina wilt lezen.</p>
+  </div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Venster met knoppen om het te sluiten of te verplaatsen">
+  ```html
+  <div class="example-dialog" role="dialog" aria-labelledby="example-dialog-title">
+    <h2 id="example-dialog-title">Vertalen</h2>
+    <p>Kies de taal waarin je deze pagina wilt lezen.</p>
+    <button type="button">Venster naar de andere kant van het scherm</button>
+    <button type="button">Venster sluiten</button>
+  </div>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt een knop toe om het venster te sluiten, en een knop om het venster op een andere plek te zetten als het venster tekst bedekt. Komt het venster uit een tool van een andere partij, controleer dan of je die tool zo kunt instellen.
+
+### Een kaart of vergrote afbeelding kun je alleen verschuiven door te slepen
+
+Een kaart of een vergrote afbeelding, zoals een schema, is groter dan het vak waarin hij staat. Een ander deel zie je alleen door de kaart of afbeelding te verslepen. Soms werkt het ook met de pijltjestoetsen, maar er zijn geen knoppen om te verschuiven. Wie een muis, hoofdaanwijzer of oogbesturing gebruikt en niet kan slepen, komt niet bij het deel dat buiten beeld ligt.
+
+**Hoe te testen:** probeer een ander deel van de kaart of afbeelding te bekijken met alleen klikken. Zijn er knoppen om naar boven, beneden, links en rechts te gaan?
+
+<Guideline appearance="dont" title="Kaart die je alleen verschuift door te slepen">
+  ```html
+  <div class="example-map" role="application" aria-label="Kaart met onze vestigingen"></div>
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Kaart met knoppen om te verschuiven">
+  ```html
+  <div class="example-map" role="application" aria-label="Kaart met onze vestigingen"></div>
+  <div class="example-map-controls">
+    <button type="button">Kaart naar boven</button>
+    <button type="button">Kaart naar beneden</button>
+    <button type="button">Kaart naar links</button>
+    <button type="button">Kaart naar rechts</button>
+  </div>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer voegt knoppen toe waarmee je de kaart of afbeelding naar boven, beneden, links en rechts verschuift. Pijltjestoetsen alleen zijn niet genoeg.
 
 ## Hoe te testen
 
-- Vind alle plekken op een website waar je iets kan doen.
-- Als je iets kan doen door te slepen, controleer dan of het ook zonder slepen kan.
+### Voor iedereen
 
-## Tips
+1. Zoek alles op de pagina dat je kunt verslepen: carrousels en sliders, lijsten die je op volgorde zet, kolommen in een tabel, vensters, kaarten, vergrote afbeeldingen en schuifregelaars.
+2. Probeer elk onderdeel te bedienen met alleen klikken, zonder de muisknop ingedrukt te houden. Lukt alles wat je met slepen kunt doen?
+3. Klik bij een schuifregelaar, zoals de volumebalk van een video, op een plek op de balk. Verandert de waarde naar die plek?
+4. Herhaal de test bij 200% zoom. Controleer of knoppen die op normale grootte zichtbaar zijn, niet verdwijnen.
+5. Werkt het alternatief alleen met het toetsenbord, bijvoorbeeld met de pijltjestoetsen? Dan is het niet genoeg. Het alternatief moet ook met een klik werken.
 
-Slepen als enige optie is niet goed. Er moet een makkelijkere manier zijn die ook werkt met bijvoorbeeld muis of aanraking. Denk ook aan andere manieren om een apparaat te bedienen zoals een toetsenbord of screen reader. Dit heb je nodig voor [2.1.1 Keyboard](/wcag/2.1.1) (niveau A).
+### Voor developers
+
+1. Zoek in de code naar `draggable`, `dragstart`, en naar `pointermove` of `mousemove` die samen met `pointerdown` of `mousedown` een onderdeel verplaatsen. Zoek ook naar bibliotheken voor slepen, sorteren, sliders en kaarten.
+2. Controleer per functie of je hetzelfde resultaat bereikt met één klik of tik, zonder te slepen. Het alternatief mag geen veegbeweging zijn.
+3. Voeg knoppen toe, zoals vorige en volgende, een plek omhoog en omlaag, of verschuiven op een kaart. Laat die knoppen zien op elke schermbreedte.
+4. Een standaard `<input type="range">` kun je ook bedienen door op de balk te klikken. Bouw je een eigen schuifregelaar, zorg dan dat een klik op de balk de waarde naar die plek zet.
+5. Een alternatief met alleen toetsenbordbediening lost dit niet op. Test elk alternatief met de muis.
+
+## Gerelateerde succescriteria
+
+- [2.5.1 Aanwijzergebaren](/wcag/2.5.1/): gaat over veeggebaren en gebaren met meer vingers. Bij een veeg telt de route van je vinger, bij slepen alleen het begin- en eindpunt.
+- [2.1.1 Toetsenbord](/wcag/2.1.1/): alles wat met een muis werkt, moet ook met het toetsenbord werken. Knoppen als alternatief voor slepen helpen bij beide.
+- [2.5.2 Aanwijzerannulering](/wcag/2.5.2/): gaat over het afbreken of ongedaan maken van een actie met de aanwijzer, zoals een verplaatsing die je per ongeluk loslaat.
+- [2.5.8 Grootte van het aanwijsgebied (minimum)](/wcag/2.5.8/): de knoppen die je als alternatief voor slepen toevoegt, moeten groot genoeg zijn om te raken.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 2.5.7 Sleepbewegingen](https://www.w3.org/Translations/WCAG22-nl/#dragging-movements): de officiële Nederlandstalige vertaling van het succescriterium, met de definitie van een sleepbeweging. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 2.5.7: Dragging Movements</span>](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html): de W3C-uitleg bij het succescriterium, met voorbeelden van alternatieven voor kaarten, lijsten, taakborden en schuifregelaars (Engels).
+- [<span lang="en">Techniek G219: Ensuring that an alternative is available for dragging movements that operate on content</span>](https://www.w3.org/WAI/WCAG22/Techniques/general/G219): lees hoe je een lijst of taakbord ook zonder slepen laat bedienen (Engels).
 
 ## Gebruikersonderzoek
 
@@ -90,10 +233,6 @@ Slepen als enige optie is niet goed. Er moet een makkelijkere manier zijn die oo
 - Nederlandse vertaling van het WCAG-succescriterium: [2.5.7 Sleepbewegingen](https://www.w3.org/Translations/WCAG22-nl/#dragging-movements).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.5.7 Dragging Movements</span>](https://www.w3.org/WAI/WCAG22/quickref/#dragging-movements).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.5.7 Dragging Movements</span>](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headingLevel={3} content={disclaimer} />
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
