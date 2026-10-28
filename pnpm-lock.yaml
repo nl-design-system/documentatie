@@ -249,8 +249,8 @@ importers:
         specifier: 3.4.0
         version: 3.4.0
       '@nl-design-system/component-progress':
-        specifier: 1.1.7
-        version: 1.1.7
+        specifier: 1.1.8
+        version: 1.1.8
       '@nl-design-system/eslint-config':
         specifier: 1.0.0
         version: 1.0.0(eslint@9.39.2(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
@@ -2817,8 +2817,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0':
     resolution: {integrity: sha512-Ax1JW5KSUJUnfkFVDwzPHvpD61HMirn6Kp2Gu5QkHIEqwLjkD6P3/dtwKMJZq8dUGzoP/9XwMNcugLhB7Z0Qlg==}
 
-  '@nl-design-system/component-progress@1.1.7':
-    resolution: {integrity: sha512-+Qui5zGT4SLIFlq7+UfeGGIdvsu0b+oMxrWfOAXkds9dnlYlmMOnEDUCfIiLdTehRctV3wyOgPcdxxpHMf64DQ==}
+  '@nl-design-system/component-progress@1.1.8':
+    resolution: {integrity: sha512-+b2eSn0WpSrWvytBq47eMBsc4Qn0uYnF75KfAD4G9LBno3jWFAkREZwfQLbTNrY+LVtA4uFnwMuhIluw24dK4Q==}
 
   '@nl-design-system/eslint-config@1.0.0':
     resolution: {integrity: sha512-ypsu7zBN26tVLdnbcK2+He2l+QK33qNtHGlBY0CY5x8wWkCQULSH+10E+rUIAf+kBHKdQkgr5+W60qyj97a66Q==}
@@ -6774,8 +6774,8 @@ packages:
   launch-editor@2.14.1:
     resolution: {integrity: sha512-QWBrQsMpH7gPr965dsKD/3cKWiNoTjpATQf++Xq63N6sKRGMwlVXz41O1IZTMfZQgBctD/K5Zt06+/I6pP6+HA==}
 
-  legacy-javascript@0.0.3:
-    resolution: {integrity: sha512-1r6MT4dVaJyXt4G07Cm2cQ0AUaLJdefiEp4SmIAylA++gnEQ82YvmzE58RkM5EP0fk5hROLCslUPGnwIYdZQVA==}
+  legacy-javascript@0.0.4:
+    resolution: {integrity: sha512-UTmeKBVxnfJcpmpOvzzNnLsQT99BXHpPlc/ZKddIRmWmrR0fw6335I3lq4+sJoP60UTbBNaYsGYVPc65YB1x3A==}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -11322,7 +11322,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@3.4.0': {}
 
-  '@nl-design-system/component-progress@1.1.7': {}
+  '@nl-design-system/component-progress@1.1.8': {}
 
   '@nl-design-system/eslint-config@1.0.0(eslint@9.39.2(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
     dependencies:
@@ -11421,7 +11421,7 @@ snapshots:
 
   '@paulirish/trace_engine@0.0.53':
     dependencies:
-      legacy-javascript: 0.0.3
+      legacy-javascript: 0.0.4
       third-party-web: 0.30.0
 
   '@pkgjs/parseargs@0.11.0':
@@ -16091,7 +16091,7 @@ snapshots:
       picocolors: 1.1.1
       shell-quote: 1.12.0
 
-  legacy-javascript@0.0.3: {}
+  legacy-javascript@0.0.4: {}
 
   levn@0.4.1:
     dependencies:
