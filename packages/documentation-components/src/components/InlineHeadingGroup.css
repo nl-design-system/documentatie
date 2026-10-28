@@ -28,14 +28,9 @@
 }
 */
 
-.nlds-inline-heading-group__heading,
-.nlds-inline-heading-group__suffix {
-  display: inline;
-}
-
-.nlds-inline-heading-group__heading {
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+.nlds-inline-heading-group {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--basis-space-inline-sm);
 }
