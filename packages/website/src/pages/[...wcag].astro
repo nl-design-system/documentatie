@@ -9,6 +9,7 @@ import { Paragraph } from '@nl-design-system-community/documentation-components/
 import { DataBadge } from '@nl-design-system-community/documentation-components/src/data-badge/data-badge.tsx';
 import { MDXComponents } from '@utils/mdx-components.astro';
 import { navigation } from '../navigation.config.ts';
+import { InlineHeadingGroup } from '@nl-design-system-community/documentation-components/src/components/InlineHeadingGroup.tsx';
 import { getNavigationElement } from '@nl-design-system-community/documentation-index/src/navigation/get-navigation-element.ts';
 import { isNavigationGroup } from '@nl-design-system-community/documentation-index/src/navigation/index.ts';
 
@@ -49,8 +50,16 @@ const Layout =
 >
   <Grid slot="header">
     <Grid.Cell span="all">
-      <Heading level={1}>{page.data.title}</Heading>
-      {page.data.conformance_level && <DataBadge>{page.data.conformance_level}</DataBadge>}
+      <InlineHeadingGroup>
+        <Heading level={1}>{page.data.title}</Heading>
+        {
+          page.data.conformance_level && (
+            <Paragraph>
+              <DataBadge>{page.data.conformance_level}</DataBadge>
+            </Paragraph>
+          )
+        }
+      </InlineHeadingGroup>
       {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
     </Grid.Cell>
   </Grid>

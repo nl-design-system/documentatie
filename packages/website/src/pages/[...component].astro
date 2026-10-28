@@ -78,9 +78,9 @@ const components = await MDXComponents({ navigationList });
           <Heading level={1}>{component.title}</Heading>
           {
             status && (
-              <p>
+              <Paragraph>
                 <EstafetteBadge state={status} />
-              </p>
+              </Paragraph>
             )
           }
         </InlineHeadingGroup>
