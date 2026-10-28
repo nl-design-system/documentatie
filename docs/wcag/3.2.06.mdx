@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.2.6 Consistente hulp
 pagination_label: WCAG-succescriterium 3.2.6 Consistente hulp
-description: Hulp moet op elke pagina binnen de website op dezelfde plek terugkomen.
+description: "Hulp die op meerdere pagina's terugkomt, zoals een contactlink, een telefoonnummer, een chatvenster of een pagina met veelgestelde vragen, staat overal op dezelfde plek in de volgorde."
 slug: 3.2.6
 conformance_level: Niveau A
 keywords:
@@ -16,15 +16,21 @@ keywords:
   - understandable
   - predictable
   - consistent help
+  - consistente hulp
+  - hulp
+  - contact
+  - chat
+  - chatbot
+  - veelgestelde vragen
+  - WCAG 3.2.6
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
 import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
 import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@nl-design-system-community/documentation-components/src/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import disclaimer from "./_wcag-disclaimer.md?raw";
 import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_3.2.6-summary.md";
 
@@ -32,49 +38,183 @@ import Summary from "./summaries/_3.2.6-summary.md";
   {"WCAG-succescriterium 3.2.6 Consistente hulp"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Maak het gemakkelijker hulp en ondersteuning te vinden.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Plaats hulp op dezelfde plek wanneer deze op meerdere pagina's beschikbaar is.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">Mensen kunnen makkelijker hulp vinden als het op dezelfde plek beschikbaar is.</dd>
-  </div>
-</dl>
-
-## Uitleg
-
 <Summary />
 
-Denk hierbij aan:
+Het gaat om de volgorde: staat de hulplink op de ene pagina na het hoofdmenu, dan staat die op de andere pagina ook na het hoofdmenu. Verandert de bezoeker zelf iets, zoals de zoomstand, de weergavestand of de breedte van het venster, dan mag de plek meebewegen. Je vergelijkt de pagina's dus in dezelfde weergave. Dit is dezelfde regel als bij consistente navigatie.
 
-- Contactgegevens of een link naar de contactpagina, met bijvoorbeeld een telefoonnummer en e-mailadres.
-- Andere manieren van contact opnemen zoals de mogelijkheid tot chatten, een contactformulier of links naar social media.
-- Zelfhulpopties, zoals een pagina met veelgestelde vragen.
-- Een volledig geautomatiseerde manier van contact zoals een chat.
+Het gaat om vier soorten hulp:
 
-Zijn deze opties beschikbaar, zorg er dan voor dat deze consistent terugkomen. Bijvoorbeeld in de footer-navigatie, boven in de header of in het hoofdmenu. Dan is het voor gebruikers makkelijker om hulp te vinden en te vragen.
+- contactgegevens om een medewerker te bereiken, zoals een telefoonnummer, een e-mailadres of de openingstijden;
+- een manier om een medewerker te bereiken, zoals een contactformulier, een chat met een medewerker of een berichtenkanaal;
+- een zelfhulpoptie, zoals een pagina met veelgestelde vragen of een helppagina;
+- een volledig geautomatiseerde manier van contact, zoals een chatbot.
+
+De hulp hoeft niet op de pagina zelf te staan. Een link naar de contactpagina telt ook als hulp, en dan gaat het om de plek van die link.
+
+Wie moeite heeft met zoeken, of bij een taak snel niet meer weet waar iets staat, is sneller klaar als de hulp elke keer op dezelfde plek staat. Staat de hulp per pagina ergens anders, dan moet iemand op elke pagina opnieuw uitzoeken waar die is. Juist als een taak lastig wordt, kost dat de meeste moeite.
+
+Je bent niet verplicht om hulp aan te bieden. Maar bied je hulp aan, dan staat die op elke pagina op dezelfde plek.
+
+## Veelgemaakte fouten
+
+### De contactlink staat op verschillende pagina's op een andere plek in de volgorde
+
+Op de ene pagina staat de link naar de hulp of de contactpagina bovenaan de pagina, op de andere pas onderaan. De bezoeker verwacht de hulp op de plek waar die eerder stond, en moet nu opnieuw zoeken. Wie de pagina laat voorlezen of met de Tab-toets door de pagina gaat, komt de hulp op een ander moment tegen.
+
+**Hoe te testen:** ga van pagina naar pagina en let op waar de hulplink of de contactlink staat. Staat die overal op dezelfde plek in de volgorde, ook als je er met <kbd>Tab</kbd> langskomt?
+
+<Guideline appearance="dont" title="Dezelfde link bovenaan de ene pagina, onderaan de andere">
+  ```html
+  <header>
+    <a href="/contact">Hulp nodig?</a>
+    <nav aria-label="Hoofdmenu">...</nav>
+  </header>
+  ```
+
+  ```html
+  <header>
+    <nav aria-label="Hoofdmenu">...</nav>
+  </header>
+  <footer>
+    <a href="/contact">Hulp nodig?</a>
+  </footer>
+  ```
+
+</Guideline>
+
+<Guideline appearance="do" title="De contactlink op elke pagina op dezelfde plek bovenaan">
+  ```html
+  <header>
+    <a href="/contact">Hulp nodig?</a>
+    <nav aria-label="Hoofdmenu">...</nav>
+  </header>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst de hulplink vanuit één gedeeld sjabloon, zodat die op elke pagina op dezelfde plek in de opbouw staat.
+
+### De chatfunctie is op de ene pagina anders te bereiken dan op de andere
+
+De knop om een chat of chatbot te openen staat op de meeste pagina's bovenaan de pagina, maar in een deel van de site staat die alleen nog onderaan. Wie de chat op één plek heeft leren kennen, komt er op de volgende pagina niet op dezelfde manier bij. Voor een screenreadergebruiker verschuift de chat naar een ander punt in de leesvolgorde.
+
+**Hoe te testen:** open een paar pagina's en kijk waar de chatknop staat. Kom je er overal op dezelfde plek in de volgorde bij?
+
+<Guideline appearance="dont" title="De chatknop bovenaan de ene pagina, onderaan de andere">
+  ```html
+  <header>
+    <button type="button">Chat met ons</button>
+  </header>
+  ```
+
+  ```html
+  <footer>
+    <button type="button">Chat met ons</button>
+  </footer>
+  ```
+
+</Guideline>
+
+<Guideline appearance="do" title="De chatknop op elke pagina op dezelfde plek bovenaan">
+  ```html
+  <header>
+    <button type="button">Chat met ons</button>
+  </header>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer plaatst de chatknop op elke pagina op dezelfde plek in de opbouw, zodat een screenreader en de Tab-toets er ook op hetzelfde moment bij komen.
+
+### De contactgegevens staan op de ene pagina boven de inhoud en op de andere eronder
+
+Het telefoonnummer, het e-mailadres en de openingstijden van de helpdesk staan op de ene pagina boven de inhoud en op de andere pas helemaal onderaan. De gegevens zijn er wel, maar niet op de plek waar de bezoeker ze eerder tegenkwam.
+
+**Hoe te testen:** bekijk op meerdere pagina's waar de contactgegevens staan. Staan ze overal op dezelfde plek in de volgorde tussen de andere onderdelen?
+
+<Guideline appearance="dont" title="Het contactblok boven de inhoud op de ene pagina, eronder op de andere">
+  ```html
+  <address>Bel 070-333 44 44, of mail hulp@example.com</address>
+  <main>...</main>
+  ```
+
+  ```html
+  <main>...</main>
+  <address>Bel 070-333 44 44, of mail hulp@example.com</address>
+  ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Het contactblok overal op dezelfde plek boven de inhoud">
+  ```html
+  <address>Bel 070-333 44 44, of mail hulp@example.com</address>
+  <main>...</main>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer of contentbeheerder zet het contactblok op elke pagina op dezelfde plek, bij voorkeur vanuit één gedeeld sjabloon.
+
+### Een deel van de site gebruikt een eigen sjabloon waarin de hulp ergens anders staat
+
+De hoofdwebsite heeft de hulp op een vaste plek, maar een aanvraagomgeving, een inlogportaal of een campagnepagina gebruikt een eigen sjabloon. Daarin staat de hulp op een andere plek in de volgorde, of is die alleen via een ander onderdeel te vinden. De bezoeker gaat van het ene deel naar het andere en vindt de hulp niet meer op de vaste plek, precies als een taak lastiger wordt.
+
+**Hoe te testen:** loop een taak door die je naar een ander deel van de site brengt, zoals een aanvraag of een inlogomgeving. Staat de hulp daar op dezelfde plek in de volgorde als op de rest van de site?
+
+<Guideline appearance="dont" title="De hoofdsite met de hulp bovenaan, de aanvraagomgeving met de hulp onderaan">
+  ```html
+  <header>
+    <a href="/contact">Hulp nodig?</a>
+  </header>
+  ```
+
+  ```html
+  <footer>
+    <a href="/hulp">Hulp nodig?</a>
+  </footer>
+  ```
+
+</Guideline>
+
+<Guideline appearance="do" title="Elk deel van de site met de hulp op dezelfde plek bovenaan">
+  ```html
+  <header>
+    <a href="/contact">Hulp nodig?</a>
+  </header>
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer laat de deelomgevingen hetzelfde paginasjabloon gebruiken als de rest van de site, zodat de hulp overal op dezelfde plek staat.
+
+## Hoe te testen
+
+### Voor iedereen
+
+1. Open een paar verschillende pagina's van de site. Staat de hulp, zoals een contactlink, een telefoonnummer of een chatknop, overal op dezelfde plek in de volgorde?
+2. Kijk waar de link naar de veelgestelde vragen of de helppagina staat. Is dat op elke pagina dezelfde plek?
+3. Loop een taak door die je naar een ander deel van de site brengt, zoals een aanvraag of een inlogomgeving. Blijft de hulp op dezelfde plek staan?
+4. Verklein het browservenster tot de mobiele weergave verschijnt en doe stap 1 opnieuw. De hulp mag hier ergens anders staan dan op het brede scherm, maar staat wel op elke pagina op dezelfde plek.
+
+### Voor developers
+
+1. Controleer of de onderdelen bovenaan en onderaan de pagina, waar de hulp staat, uit één gedeeld sjabloon of component komen. Losse kopieën per pagina gaan na verloop van tijd verschillen.
+2. Vergelijk de opbouw van de hulp op meerdere pagina's. Staat de hulp overal op dezelfde plek in de broncode?
+3. Navigeer met <kbd>Tab</kbd> over meerdere pagina's en let op waar je bij de hulp aankomt. Is dat punt overal gelijk?
+4. Zoek in de CSS naar `order` of `flex-direction: row-reverse` bij de hulp. Verplaatsen ze de hulp op een klein scherm, controleer dan of dat op elke pagina op dezelfde manier gebeurt.
+5. Controleer deelsites en losse omgevingen apart. Die gebruiken geregeld een eigen sjabloon met de hulp op een andere plek.
+
+## Gerelateerde succescriteria
+
+- [3.2.3 Consistente navigatie](/wcag/3.2.3/): navigatie die op meerdere pagina's terugkomt, staat overal in dezelfde volgorde. 3.2.3 gaat over de navigatie, 3.2.6 over de hulp.
+- [3.2.4 Consistente identificatie](/wcag/3.2.4/): onderdelen met dezelfde functie krijgen overal dezelfde naam. 3.2.6 vraagt dat de hulp ook op dezelfde plek staat.
+- [2.4.5 Meerdere manieren](/wcag/2.4.5/): er is meer dan één manier om een pagina te vinden. 3.2.6 vraagt dat de hulp om verder te komen overal op dezelfde plek staat.
+- [1.3.2 Betekenisvolle volgorde](/wcag/1.3.2/): de leesvolgorde in de code klopt met de bedoelde volgorde. Een vaste plek voor de hulp vraagt om een vaste volgorde in de broncode.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 3.2.6 Consistente hulp](https://www.w3.org/Translations/WCAG22-nl/#consistent-help): de officiële Nederlandstalige vertaling van het succescriterium. Gebruik dit als referentie voor de exacte eisen.
+- [Understanding SC 3.2.6: Consistent Help](https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html): de uitleg van het W3C bij het succescriterium, met de vier soorten hulp en voorbeelden (Engels).
 
 ## Gerelateerde NL Design System-richtlijnen
 
 - Formulieren - Uit te vragen informatie: [Bied contactmogelijkheden](/richtlijnen/formulieren/vragen/manieren-voor-contact)
-
-## Hoe te testen
-
-1. Controleer of er hulp of ondersteuning aanwezig is op de pagina. Dit kan directe hulp zijn, of een van de variaties zoals aangegeven bij de kop Uitleg.
-2. Als er hulp of ondersteuning aanwezig is, controleer dan of deze ook op andere pagina's aanwezig is.
-3. Als deze ook op andere pagina's aanwezig is, controleer dan of deze overal op dezelfde plek op de pagina beschikbaar is.
-
-## Tips
-
-- Zorg dat er op elke pagina hulp beschikbaar is.
 
 ## Gebruikersonderzoek
 
@@ -86,10 +226,6 @@ Zijn deze opties beschikbaar, zorg er dan voor dat deze consistent terugkomen. B
 - Nederlandse vertaling van het WCAG-succescriterium: [3.2.6 Consistente hulp](https://www.w3.org/Translations/WCAG22-nl/#consistent-help).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.2.6 Consistent Help</span>](https://www.w3.org/WAI/WCAG22/quickref/#consistent-help).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.2.6 Consistent Help</span>](https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headingLevel={3} content={disclaimer} />
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
