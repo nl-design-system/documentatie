@@ -11,6 +11,7 @@ import { Paragraph } from '@nl-design-system-community/documentation-components/
 import { Flex } from '@nl-design-system-community/documentation-components/src/flex/flex.tsx';
 import { ComponentIllustration } from '@nl-design-system-community/documentation-components/src/component-illustration/component-illustration.tsx';
 import { EstafetteBadge } from '@nl-design-system-community/documentation-components/src/components/EstafetteBadge.tsx';
+import { InlineHeadingGroup } from '@nl-design-system-community/documentation-components/src/components/InlineHeadingGroup.tsx';
 import { navigation } from '../navigation.config.ts';
 import '@nl-design-system-community/documentation-components/src/components/ComponentPage.css';
 import '@nl-design-system-community/documentation-components/src/components/EstafetteBadge.css';
@@ -73,12 +74,18 @@ const components = await MDXComponents({ navigationList });
   <Grid slot="header">
     <Grid.Cell span="all">
       <Flex align="center">
-        <Heading level={1}>{page.data.title}</Heading>
-        <div>
-          <EstafetteBadge state={status} />
-        </div>
+        <InlineHeadingGroup>
+          <Heading level={1}>{component.title}</Heading>
+          {
+            status && (
+              <p>
+                <EstafetteBadge state={status} />
+              </p>
+            )
+          }
+        </InlineHeadingGroup>
       </Flex>
-      {page.data.lead && <Paragraph purpose="lead">{page.data.lead}</Paragraph>}
+      {page.data.description && <Paragraph purpose="lead">{page.data.description}</Paragraph>}
     </Grid.Cell>
 
     {
