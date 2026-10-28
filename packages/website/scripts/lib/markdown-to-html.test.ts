@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { markdownToHtml } from './markdown-to-html';
+import { markdownToHtml } from './markdown-to-html.ts';
 
 describe('markdownToHtml', () => {
   test('drops the license comment every documentation file starts with', async () => {

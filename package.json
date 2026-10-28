@@ -20,26 +20,16 @@
   },
   "scripts": {
     "prepare": "husky",
-    "docusaurus": "docusaurus",
-    "start": "pnpm run start:astro",
-    "start:docusaurus": "pnpm run dev",
-    "start:astro": "pnpm run dev:astro",
-    "dev": "pnpm run dev:astro",
-    "dev:docusaurus": "docusaurus start",
-    "dev:astro": "pnpm --filter @nl-design-system/website-astro run dev",
+    "start": "pnpm run dev",
+    "dev": "pnpm --filter @nl-design-system/website-astro run dev",
     "build": "pnpm run --recursive build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
     "clean": "npm-run-all clean:**",
-    "clean:docusaurus": "docusaurus clear",
     "clean:playwright": "playwright uninstall",
-    "clean:generated": "rimraf build/ dist/ tmp/",
+    "clean:generated": "rimraf .docusaurus/ build/ dist/ tmp/",
     "clean:workspaces": "pnpm run --recursive clean",
     "serve": "http-server --port 3000 build/",
     "serve:astro": "pnpm --filter @nl-design-system/website-astro run preview",
     "serve:test-report": "pnpm exec playwright show-report tmp/playwright-html-report",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
     "lint": "npm-run-all --continue-on-error lint:**",
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
     "lint:js": "eslint",
@@ -50,6 +40,7 @@
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
     "lint-fix:js": "eslint --fix",
     "lint-fix:prettier": "prettier --write .",
+    "lint-todo": "pnpm run --no-bail --recursive lint-todo",
     "changeset": "changeset add",
     "changeset:empty": "changeset --empty",
     "changeset:publish": "changeset publish",
@@ -73,14 +64,10 @@
     "test-update": "npm-run-all --sequential clean lint build",
     "test": "npm-run-all test:**",
     "test:rehype-plugin": "tsx rehype-trailing-slash.test.ts",
-    "test:website-astro": "pnpm --filter @nl-design-system/website-astro run test"
+    "test:workspace": "pnpm run --recursive test"
   },
   "dependencies": {
     "@babel/runtime": "7.28.6",
-    "@docusaurus/core": "3.9.2",
-    "@docusaurus/preset-classic": "3.9.2",
-    "@docusaurus/theme-common": "3.9.2",
-    "@docusaurus/theme-search-algolia": "3.9.2",
     "@iframe-resizer/react": "5.5.8",
     "@nl-design-system-candidate/code-block-docs": "1.2.1",
     "@nl-design-system-candidate/code-block-tokens": "2.0.3",
@@ -137,12 +124,7 @@
     "@axe-core/playwright": "4.11.0",
     "@changesets/cli": "3.0.1",
     "@docsearch/react": "4.6.3",
-    "@docusaurus/module-type-aliases": "3.9.2",
-    "@docusaurus/plugin-content-blog": "3.9.2",
-    "@docusaurus/plugin-content-docs": "3.9.2",
-    "@docusaurus/theme-classic": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
-    "@docusaurus/types": "3.9.2",
     "@eslint/js": "9.39.2",
     "@eslint/json": "0.14.0",
     "@fontsource/fira-sans": "5.2.7",
@@ -155,6 +137,7 @@
     "@nl-design-system-candidate/form-field-description-tokens": "1.0.0",
     "@nl-design-system-candidate/form-field-error-message-tokens": "1.0.0",
     "@nl-design-system-community/design-tokens-schema": "2.1.0",
+    "@nl-design-system-community/documentation-components": "workspace:*",
     "@nl-design-system-community/editor-react": "1.2.0",
     "@nl-design-system-community/ma-design-tokens": "5.5.0",
     "@nl-design-system-unstable/basis-design-tokens": "3.1.1",
@@ -215,14 +198,6 @@
     "yaml-loader": "0.9.0"
   },
   "overrides": {
-    "@docusaurus/core": {
-      "react": "^16 || ^17 || ^18",
-      "react-dom": "^16 || ^17 || ^18"
-    },
-    "@docusaurus/preset-classic": {
-      "react": "^16 || ^17 || ^18",
-      "react-dom": "^16 || ^17 || ^18"
-    },
     "flux": {
       "react": "^16 || ^17 || ^18",
       "react-dom": "^16 || ^17 || ^18"
