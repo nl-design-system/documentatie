@@ -34,13 +34,13 @@ export const isUpComingOrHappening = !!settings.isUpComing || !!settings.isHappe
 </Paragraph>
 
 <ActionGroup>
-  <ButtonLink href="/events/design-systems-week/aanmelden" appearance="primary-action">
+  <ButtonLink href="/events/design-systems-week/aanmelden" purpose="primary">
     Meld je aan
     <Icon slot="icon-end">
       <IconChevronRight />
     </Icon>
   </ButtonLink>
-  <ButtonLink href={`/events/design-systems-week-${settings.year}/programma`} appearance="secondary-action">
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/programma`} purpose="secondary">
     Bekijk het programma
     <Icon slot="icon-end">
       <IconChevronRight />
