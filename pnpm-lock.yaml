@@ -2554,42 +2554,6 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@jsonjoy.com/base64@1.1.2':
-    resolution: {integrity: sha512-q6XAnWQDIMA3+FTiOYajoYqySkO+JSat0ytXGSuRdq9uXE7o92gzuQwQM14xaCRlBLGq3v5miDGC4vkVTn54xA==}
-    engines: {node: '>=10.0'}
-    peerDependencies:
-      tslib: '2'
-
-  '@jsonjoy.com/buffers@1.2.1':
-    resolution: {integrity: sha512-12cdlDwX4RUM3QxmUbVJWqZ/mrK6dFQH4Zxq6+r1YXKXYBNgZXndx2qbCJwh3+WWkCSn67IjnlG3XYTvmvYtgA==}
-    engines: {node: '>=10.0'}
-    peerDependencies:
-      tslib: '2'
-
-  '@jsonjoy.com/codegen@1.0.0':
-    resolution: {integrity: sha512-E8Oy+08cmCf0EK/NMxpaJZmOxPqM+6iSe2S4nlSBrPZOORoDJILxtbSUEDKQyTamm/BVAhIGllOBNU79/dwf0g==}
-    engines: {node: '>=10.0'}
-    peerDependencies:
-      tslib: '2'
-
-  '@jsonjoy.com/json-pack@1.21.0':
-    resolution: {integrity: sha512-+AKG+R2cfZMShzrF2uQw34v3zbeDYUqnQ+jg7ORic3BGtfw9p/+N6RJbq/kkV8JmYZaINknaEQ2m0/f693ZPpg==}
-    engines: {node: '>=10.0'}
-    peerDependencies:
-      tslib: '2'
-
-  '@jsonjoy.com/json-pointer@1.0.2':
-    resolution: {integrity: sha512-Fsn6wM2zlDzY1U+v4Nc8bo3bVqgfNTGcn6dMgs6FjrEnt4ZCe60o6ByKRjOGlI2gow0aE/Q41QOigdTqkyK5fg==}
-    engines: {node: '>=10.0'}
-    peerDependencies:
-      tslib: '2'
-
-  '@jsonjoy.com/util@1.9.0':
-    resolution: {integrity: sha512-pLuQo+VPRnN8hfPqUTLTHk126wuYdXVxE6aDmjSeV4NCAgyxWbiOIeNJVtID3h1Vzpoi9m4jXezf73I6LgabgQ==}
-    engines: {node: '>=10.0'}
-    peerDependencies:
-      tslib: '2'
-
   '@justinribeiro/lite-youtube@1.9.0':
     resolution: {integrity: sha512-+VZutWCVEpXNGR00ch/8g8snexv5q8zN0NCJWrXdRBYQe0Oel1HKDl9BVEM7FzZbf/IWPGIdWs4WcGMxXITFKA==}
 
@@ -6817,15 +6781,8 @@ packages:
   launch-editor@2.14.1:
     resolution: {integrity: sha512-QWBrQsMpH7gPr965dsKD/3cKWiNoTjpATQf++Xq63N6sKRGMwlVXz41O1IZTMfZQgBctD/K5Zt06+/I6pP6+HA==}
 
-  launch-editor@2.6.1:
-    resolution: {integrity: sha512-eB/uXmFVpY4zezmGp5XtU21kwo7GBbKB+EQ+UZeWtGb9yAM5xt/Evk+lYH3eRNAtId+ej4u7TYPFZ07w4s7rRw==}
-
   legacy-javascript@0.0.4:
     resolution: {integrity: sha512-UTmeKBVxnfJcpmpOvzzNnLsQT99BXHpPlc/ZKddIRmWmrR0fw6335I3lq4+sJoP60UTbBNaYsGYVPc65YB1x3A==}
-
-  leven@3.1.0:
-    resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
-    engines: {node: '>=6'}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -8097,19 +8054,6 @@ packages:
 
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
-
-  react-json-view-lite@2.5.0:
-    resolution: {integrity: sha512-tk7o7QG9oYyELWHL8xiMQ8x4WzjCzbWNyig3uexmkLb54r8jO0yH3WCWx8UZS0c49eSA4QUmG5caiRJ8fAn58g==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      react: ^18.0.0 || ^19.0.0
-
-  react-loadable-ssr-addon-v5-slorber@1.0.1:
-    resolution: {integrity: sha512-lq3Lyw1lGku8zUEJPDxsNm1AfYHBrO9Y1+olAYwpUJ2IGFBskM0DMKok97A6LWUpHm+o7IvQBOWu9MLenp9Z+A==}
-    engines: {node: '>=10.13.0'}
-    peerDependencies:
-      react-loadable: '*'
-      webpack: '>=4.41.1 || 5.x'
 
   react-markdown@10.1.0:
     resolution: {integrity: sha512-qKxVopLT/TyA6BX3Ue5NwabOsAzm0Q7kAPwq6L+wWDwisYs7R8vZ0nRXqq6rkueboxpkjvLGU9fWifiX/ZZFxQ==}
@@ -11060,42 +11004,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.5.5
-
-  '@jsonjoy.com/base64@1.1.2(tslib@2.6.2)':
-    dependencies:
-      tslib: 2.6.2
-
-  '@jsonjoy.com/buffers@1.2.1(tslib@2.6.2)':
-    dependencies:
-      tslib: 2.6.2
-
-  '@jsonjoy.com/codegen@1.0.0(tslib@2.6.2)':
-    dependencies:
-      tslib: 2.6.2
-
-  '@jsonjoy.com/json-pack@1.21.0(tslib@2.6.2)':
-    dependencies:
-      '@jsonjoy.com/base64': 1.1.2(tslib@2.6.2)
-      '@jsonjoy.com/buffers': 1.2.1(tslib@2.6.2)
-      '@jsonjoy.com/codegen': 1.0.0(tslib@2.6.2)
-      '@jsonjoy.com/json-pointer': 1.0.2(tslib@2.6.2)
-      '@jsonjoy.com/util': 1.9.0(tslib@2.6.2)
-      hyperdyperid: 1.2.0
-      thingies: 2.5.0(tslib@2.6.2)
-      tree-dump: 1.1.0(tslib@2.6.2)
-      tslib: 2.6.2
-
-  '@jsonjoy.com/json-pointer@1.0.2(tslib@2.6.2)':
-    dependencies:
-      '@jsonjoy.com/codegen': 1.0.0(tslib@2.6.2)
-      '@jsonjoy.com/util': 1.9.0(tslib@2.6.2)
-      tslib: 2.6.2
-
-  '@jsonjoy.com/util@1.9.0(tslib@2.6.2)':
-    dependencies:
-      '@jsonjoy.com/buffers': 1.2.1(tslib@2.6.2)
-      '@jsonjoy.com/codegen': 1.0.0(tslib@2.6.2)
-      tslib: 2.6.2
 
   '@justinribeiro/lite-youtube@1.9.0(patch_hash=e1d785712233e2240c302b11984d5f5f2cebe6b2b14a9790bc940846163ecef1)': {}
 
@@ -16186,14 +16094,7 @@ snapshots:
       picocolors: 1.1.1
       shell-quote: 1.12.0
 
-  launch-editor@2.6.1:
-    dependencies:
-      picocolors: 1.1.1
-      shell-quote: 1.12.0
-
   legacy-javascript@0.0.4: {}
-
-  leven@3.1.0: {}
 
   levn@0.4.1:
     dependencies:
@@ -17854,17 +17755,7 @@ snapshots:
 
   react-is@17.0.2: {}
 
-  react-json-view-lite@2.5.0(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-
-  react-loadable-ssr-addon-v5-slorber@1.0.1(@docusaurus/react-loadable@6.0.0(react@18.3.1))(webpack@5.104.1(esbuild@0.27.4)):
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react-loadable: '@docusaurus/react-loadable@6.0.0(react@18.3.1)'
-      webpack: 5.104.1(esbuild@0.27.4)
-
-  react-markdown@10.1.0(@types/react@18.3.27)(react@18.3.1)(supports-color@8.1.1):
+  react-markdown@10.1.0(@types/react@18.3.27)(react@18.3.1)(supports-color@7.2.0):
     dependencies:
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
