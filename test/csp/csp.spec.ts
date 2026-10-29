@@ -1,6 +1,6 @@
-import { expect, test as base } from '@playwright/test';
-import * as cheerio from 'cheerio';
+import { expect, test, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+import { getPathnamesFromSitemap } from '../helpers/sitemap';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
@@ -8,56 +8,78 @@ const CONFIG = {
   sitemap: '/sitemap-index.xml',
 };
 
-export const test = base.extend({
-  page: async ({ page }, use) => {
-    const messages: string[] = [];
+declare global {
+  interface Window {
+    __cspViolations: string[];
+  }
+}
 
-    page.on('console', (msg) => {
-      if (msg.type() === 'error' && msg.text().includes('violates the following Content Security Policy directive')) {
-        messages.push(`[${msg.type()}] ${msg.text()}`);
-      }
+/**
+ * Setup an event listener to listen for CSP violations before page script runs.
+ */
+async function setupCspViolationCollector(page: Page): Promise<() => Promise<string[]>> {
+  await page.addInitScript(() => {
+    window.__cspViolations = [];
+    document.addEventListener('securitypolicyviolation', (e) => {
+      window.__cspViolations.push(e.violatedDirective);
     });
+  });
+  return () => page.evaluate(() => window.__cspViolations as string[]);
+}
 
-    await use(page);
-    expect(messages).toStrictEqual([]);
-  },
-});
+/**
+ * Read CSP rules from the route's .htaccess file. These CSP rules are then
+ * injected as response headers for the page request
+ */
+async function injectCspHeaders(page: Page, pathname: string) {
+  let csp = '';
+  const url = CONFIG.baseUrl + pathname;
+
+  try {
+    const htaccess = readFileSync(`${CONFIG.sitemapDir}${pathname}.htaccess`, { encoding: 'utf-8' });
+    csp = JSON.parse(htaccess.split('Content-Security-Policy')[1]?.trim());
+  } catch {
+    // JSON.parse fails are caught below this with a better error message
+  }
+
+  expect(csp).not.toBeFalsy();
+
+  await page.route(url, async (route) => {
+    const response = await route.fetch();
+    const headers = response.headers();
+    headers['content-security-policy'] = csp;
+    await route.fulfill({ response, headers });
+  });
+}
 
 test.describe('CSP issues', () => {
-  const pathnames = getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`);
+  // Validate that the test setup works. The test page contains two CSP violations
+  test('are thrown on test page', async ({ page }) => {
+    const pathname = '/private/content-test/csp-error/';
+    const url = CONFIG.baseUrl + pathname;
+    const collectViolatedDirectives = await setupCspViolationCollector(page);
 
+    await injectCspHeaders(page, pathname);
+    await page.goto(url, { waitUntil: 'networkidle' });
+    const violatedDirectives = await collectViolatedDirectives();
+
+    expect(violatedDirectives).toContainEqual('script-src-elem');
+    expect(violatedDirectives).toContainEqual('style-src-attr');
+    expect(violatedDirectives.length).toBe(2);
+  });
+
+  // Now that we know that the test set works, test each route in the sitemap
+  const pathnames = getPathnamesFromSitemap(CONFIG.sitemapDir, CONFIG.sitemap);
   pathnames.forEach((pathname) => {
     test(pathname, async ({ page }) => {
       const url = CONFIG.baseUrl + pathname;
+      const collectViolatedDirectives = await setupCspViolationCollector(page);
+
+      await injectCspHeaders(page, pathname);
       await page.goto(url, { waitUntil: 'networkidle' });
+      const violatedDirectives = await collectViolatedDirectives();
+
+      expect(violatedDirectives.length).toBe(0);
     });
   });
 });
-
-function getPathnamesFromSitemap(sitemapPath: string): string[] {
-  const paths: string[] = [];
-
-  try {
-    const sitemapIndex = readFileSync(sitemapPath, 'utf8');
-    const $ = cheerio.load(sitemapIndex, { xmlMode: true });
-
-    $('sitemap loc')
-      .map((_, element) => $(element).text())
-      .toArray()
-      .map((url) => new URL(url).pathname)
-      .forEach((sitemapPath) => {
-        getPathnamesFromSitemap(`${CONFIG.sitemapDir}${sitemapPath}`).forEach((path) => paths.push(path));
-      });
-
-    $('url loc')
-      .map((_, element) => $(element).text())
-      .toArray()
-      .map((url) => new URL(url).pathname)
-      .forEach((path) => paths.push(path));
-
-    return Array.from(new Set(paths));
-  } catch (error) {
-    console.warn(`Could not read sitemap at ${sitemapPath}, skipping accessibility tests generation.`, error);
-    return [];
-  }
-}
