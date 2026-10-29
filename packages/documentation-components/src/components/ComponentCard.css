@@ -1,0 +1,31 @@
+.ma-component-card {
+  --ma-cardgroup-card-mobile-max-width: 300px;
+  --ma-cardgroup-card-padding-block-start: 24px;
+  --ma-cardgroup-card-padding-block-end: 40px;
+  --ma-card-content-padding-block-end: 0;
+  --ma-card-content-padding-block-start: 0;
+  --ma-component-illustration-svg-max-height: 185px;
+  --ma-component-illustration-padding-inline: 24px;
+  --ma-card-content-inline-size: 60%;
+  --utrecht-badge-list-item-margin-block: 0.25em;
+  --utrecht-badge-list-item-margin-inline: 0.25em;
+}
+
+.ma-component-card--suggestion {
+  --utrecht-heading-color: #333;
+}
+
+.ma-component-name {
+  text-transform: lowercase;
+}
+
+.ma-component-card .utrecht-badge-list {
+  margin-block-start: 12px;
+}
+
+@media screen and (width <= 768px) {
+  .ma-component-card {
+    --ma-component-illustration-svg-max-height: none;
+    --ma-card-content-inline-size: 100%;
+  }
+}

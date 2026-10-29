@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import { siteDescription, siteTitle } from '../../seo.config.ts';
-import CenterColumnLayout from '@layouts/center-column.astro';
-import { Grid } from '@components/grid/grid';
+import PageBodyContentLayout from '@layouts/page-body-content.astro';
+import { Grid } from '@nl-design-system-community/documentation-components/src/grid/grid';
 
 const docs = await getCollection('docs');
 
@@ -28,7 +28,7 @@ const duplicates = getDuplicateTitles(docs);
 const placeholderTitle = '(geen paginatitel)';
 ---
 
-<CenterColumnLayout title={siteTitle} description={siteDescription} showBreadcrumbs={false}>
+<PageBodyContentLayout title={siteTitle} description={siteDescription} showBreadcrumbs={false}>
   <Grid>
     <Grid.Cell span="all">
       <h1>Duplicate Page Titles</h1>
@@ -61,4 +61,4 @@ const placeholderTitle = '(geen paginatitel)';
       }
     </Grid.Cell>
   </Grid>
-</CenterColumnLayout>
+</PageBodyContentLayout>

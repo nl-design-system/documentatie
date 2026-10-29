@@ -12,7 +12,7 @@ keywords:
   - componenten
 ---
 
-import { Guideline } from "@site/src/components/Guideline";
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
 
 # CSS conventie
 
@@ -20,7 +20,7 @@ Dit document beschrijft de conventies voor het schrijven van herbruikbare CSS vo
 
 ## Huisstijl onafhankelijk
 
-Schrijf CSS die ook werkt voor anderen. Herbruikbare CSS gebruikt geen huisstijlcode. CSS-variabelen worden gebruikt voor _component design tokens_ die ingevuld kunnen worden met de huisstijl van een organisatie. Dit is van belang wanneer componenten door anderen worden gebruikt, of wanneer software door meerdere organisaties met hun eigen huisstijl wordt geïnstalleerd, zoals een CMS voor gemeenten of [Common Ground](http://commonground.nl)-software.
+Schrijf CSS die ook werkt voor anderen. Herbruikbare CSS gebruikt geen huisstijlcode. CSS-variabelen worden gebruikt voor <i lang="en">component design tokens</i> die ingevuld kunnen worden met de huisstijl van een organisatie. Dit is van belang wanneer componenten door anderen worden gebruikt, of wanneer software door meerdere organisaties met hun eigen huisstijl wordt geïnstalleerd, zoals een CMS voor gemeenten of [Common Ground](http://commonground.nl)-software.
 
 <Guideline appearance="do" title="Gebruik component tokens voor de design beslissingen die per huisstijl verschillen.">
     ```css
@@ -235,7 +235,7 @@ Ook als het project een [`reset.css`-variant](https://meyerweb.com/eric/tools/cs
 
 ### Reset in een SCSS mixin
 
-Wanneer een property is ingesteld op de _initial value_ (zoals `0` voor padding), kan dit eruitzien als overbodige code. Als reset-code in een losse mixin staat, ontbreekt de context dat het bedoeld is als browser-reset.
+Wanneer een property is ingesteld op de <i lang="en">initial value</i> (zoals `0` voor padding), kan dit eruitzien als overbodige code. Als reset-code in een losse mixin staat, ontbreekt de context dat het bedoeld is als browser-reset.
 
 <Guideline appearance="do" title="Reset in een mixin" description="Om te voorkomen dat de code later als dode code wordt verwijderd, staat reset-code in een eigen mixin">
 ```scss

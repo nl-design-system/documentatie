@@ -72,7 +72,7 @@ Gebruik verder comments bij paden waar uit de naamgeving niet direct duidelijk w
 ### Review van code owners verplichten
 
 Code owners worden altijd aan pull requests toegevoegd als reviewer.
-Middels een _branch protection rule_ kun je verplichten dat een goedkeuring van één of meer code owners nodig is.
+Middels een <i lang="en">branch protection rule</i> kun je verplichten dat een goedkeuring van één of meer code owners nodig is.
 
 Standaard staat deze verplichting uit.
 We raden sterk aan om hier wel gebruik van te maken.

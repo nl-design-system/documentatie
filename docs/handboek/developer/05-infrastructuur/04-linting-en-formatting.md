@@ -23,7 +23,7 @@ De volgende user stories vormen de richtlijnen waarop deze pagina is gebaseerd:
 
 # Linting en code formatting
 
-In ons design system gebruiken we tools voor _linting_ en _code formatting_ om consistente en leesbare code te garanderen.
+In ons design system gebruiken we tools voor <i lang="en">linting</i> en <i lang="en">code formatting</i> om consistente en leesbare code te garanderen.
 Dit helpt bij samenwerken om:
 
 - kwaliteitsproblemen vroeg te signaleren;

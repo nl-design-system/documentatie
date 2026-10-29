@@ -1,0 +1,32 @@
+ma-time-sensitive-content {
+  display: contents;
+}
+
+.ma-notification-banner {
+  background-color: var(--ma-notification-banner-background-color);
+  box-sizing: border-box;
+  color: var(--ma-notification-banner-color);
+  inline-size: 100%;
+}
+
+.ma-notification-banner:not([hidden]) {
+  display: grid;
+}
+
+.ma-notification-banner__content {
+  align-items: stretch;
+  background-color: var(--ma-notification-banner-content-background-color);
+  box-sizing: border-box;
+  color: var(--ma-notification-banner-content-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  inline-size: 100%;
+  justify-content: space-between;
+  justify-self: center;
+  max-inline-size: var(--ma-notification-banner-content-max-inline-size);
+  padding-block-end: var(--ma-notification-banner-content-padding-block-end);
+  padding-block-start: var(--ma-notification-banner-content-padding-block-start);
+  padding-inline-end: var(--ma-notification-banner-content-padding-inline-end);
+  padding-inline-start: var(--ma-notification-banner-content-padding-inline-start);
+}

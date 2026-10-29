@@ -13,23 +13,28 @@ keywords:
   - nl design system
 ---
 
-import { RichTextEditor } from "@site/src/components/RichTextEditor";
-import { ButtonLink } from "@site/src/components/ButtonLink";
+import { RichTextEditor } from "@nl-design-system-community/documentation-components/src/components/RichTextEditor";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ActionGroup } from "@components/action-group/action-group";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
 
 # Toegankelijkheid door c met CMS-en
 
 Momenteel is de Clippy Rich Text Editor volop in ontwikkeling door het NL Design System Expertteam. De editor is een toegankelijke, framework-onafhankelijke teksteditor gebouwd met web components en TipTap voor het Nederlandse digitale overheidslandschap, welke zal voldoen aan ATAG en WCAG 2.2 Level AA-normen.
 
 <ActionGroup>
-  <ButtonLink href="https://editor.nl-design-system-community.nl/" appearance="primary-action">
+  <ButtonLink href="https://editor.nl-design-system-community.nl/" purpose="primary">
     {"Documentatie en demo"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
-  <ButtonLink href="https://github.com/nl-design-system/editor" appearance="secondary-action">
+  <ButtonLink href="https://github.com/nl-design-system/editor" purpose="secondary">
     {"Editor op GitHub"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 

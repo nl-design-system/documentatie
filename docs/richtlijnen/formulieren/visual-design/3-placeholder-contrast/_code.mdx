@@ -1,7 +1,7 @@
 {/* @license CC0-1.0 */}
 
-import { Canvas } from "@site/src/components/Canvas/Canvas";
-import { Guideline } from "@site/src/components/Guideline";
+import { Canvas } from "@nl-design-system-community/documentation-components/src/components/Canvas/Canvas";
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
 
 ## Voorbeelden
 
@@ -16,6 +16,8 @@ import { Guideline } from "@site/src/components/Guideline";
       "--utrecht-textbox-background-color": "#ffffff",
       "--utrecht-textbox-placeholder-color": "#606060",
     }}
+    forcedColorsAdjust={false}
+    label="Text Input met een Placeholder die voldoende contrast heeft"
   >
     {() => (
       <>
@@ -36,6 +38,8 @@ import { Guideline } from "@site/src/components/Guideline";
       "--utrecht-textbox-background-color": "#ffffff",
       "--utrecht-textbox-placeholder-color": "#888888",
     }}
+    forcedColorsAdjust={false}
+    label="Text Input met een Placeholder die niet goed zichtbaar is, door onvoldoende contrast"
   >
     {() => (
       <>

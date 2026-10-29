@@ -22,18 +22,21 @@ keywords:
   - Slack
 ---
 
-import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ActionGroup } from "@components/action-group/action-group";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
 
 # Slack voor NL Design System
 
 NL Design System werkt met de [Slack van de Code for NL community](https://codefornl.slack.com/). Je kunt jezelf aanmelden via het formulier op [praatmee.codefor.nl](https://praatmee.codefor.nl), iedereen is welkom!
 
 <ActionGroup>
-  <ButtonLink href="https://praatmee.codefor.nl/" appearance="primary-action">
+  <ButtonLink href="https://praatmee.codefor.nl/" purpose="primary">
     {"Doe mee op Slack"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 

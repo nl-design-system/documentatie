@@ -1,0 +1,90 @@
+/* The button is only meant to be `hidden` when CSS cannot be loaded,
+ * and the responsive layout implementation is missing.
+ */
+.ma-page-header__start--visible-with-css {
+  /* overwrite `display: block` from the `hidden` attribute */
+  display: block;
+}
+
+.utrecht-page-header__content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  .ma-search-form {
+    display: none;
+  }
+
+  .ma-page-header__center .utrecht-link:focus {
+    background-color: transparent;
+  }
+  .ma-page-header__center .utrecht-link:focus-within {
+    background-color: var(--utrecht-link-focus-background-color, transparent);
+  }
+
+  .ma-page-header__end {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ma-logo--full {
+    display: none;
+  }
+
+  .utrecht-link:has(.ma-logo):focus-visible .ma-logo {
+    color: black;
+  }
+
+  @media (--large-down) {
+    padding-block-end: var(--basis-space-block-sm);
+    padding-inline: var(--basis-space-inline-md);
+
+    .nl-button {
+      padding-inline: var(--basis-space-inline-md);
+    }
+  }
+}
+
+@media (--large-down) {
+  .utrecht-page-header {
+    --utrecht-page-header-border-block-end-width: var(--basis-border-width-md);
+    --utrecht-page-header-border-block-end-color: var(--basis-color-accent-1-border-default);
+  }
+}
+
+@media (--large-and-up) {
+  .utrecht-page-header__content {
+    grid-template-columns: auto 1fr;
+
+    .ma-page-header__start {
+      display: none;
+    }
+
+    .ma-page-header__center {
+      display: flex;
+    }
+
+    .ma-logo--small {
+      display: none;
+    }
+
+    .ma-logo--full {
+      align-items: center;
+      block-size: 100%;
+      display: flex;
+    }
+
+    .ma-to-search-link {
+      display: none;
+    }
+
+    .ma-search-form {
+      display: flex;
+      inline-size: var(--basis-form-control-max-inline-size);
+      justify-content: flex-end;
+    }
+
+    .ma-search-form__form {
+      inline-size: unset;
+    }
+  }
+}
