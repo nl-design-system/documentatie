@@ -145,7 +145,7 @@ Een knop heeft een vaste hoogte en een vaste lettergrootte. De tekst past daar p
 <Guideline appearance="dont" title="Vaste hoogte op een knop">
     <div aria-hidden="true" style={demoSurface}>
       <span style={{display: "inline-block", boxSizing: "border-box", height: 40, width: 220, padding: "0 16px", overflow: "hidden", background: "#1f2937", color: "#fff", borderRadius: 4, fontSize: 16, ...tekstafstand}}>
-        Plaats bestelling vandaag
+        {"Plaats bestelling vandaag"}
       </span>
     </div>
     ```css
@@ -159,7 +159,7 @@ Een knop heeft een vaste hoogte en een vaste lettergrootte. De tekst past daar p
 <Guideline appearance="do" title="Padding in em laat de knop meegroeien">
     <div aria-hidden="true" style={demoSurface}>
       <span style={{display: "inline-block", boxSizing: "border-box", padding: "0.5em 1em", maxWidth: 220, background: "#1f2937", color: "#fff", borderRadius: 4, fontSize: 16, ...tekstafstand}}>
-        Plaats bestelling vandaag
+        {"Plaats bestelling vandaag"}
       </span>
     </div>
     ```css
@@ -392,7 +392,7 @@ Een tooltip of pop-up heeft een vaste hoogte en breedte. De inhoud past bij stan
 <Guideline appearance="dont" title="Tooltip met vaste maten">
     <div aria-hidden="true" style={demoSurface}>
       <div style={{width: 200, height: 60, overflow: "hidden", background: "#1f2937", color: "#fff", padding: "0.5em 0.75em", borderRadius: 4, fontSize: 14, ...tekstafstand}}>
-        Tip: vul hier het bedrag in zoals het op je factuur staat, inclusief eurocenten.
+        {"Tip: vul hier het bedrag in zoals het op je factuur staat, inclusief eurocenten."}
       </div>
     </div>
     ```css
@@ -407,7 +407,7 @@ Een tooltip of pop-up heeft een vaste hoogte en breedte. De inhoud past bij stan
 <Guideline appearance="do" title="Tooltip met minimale maten">
     <div aria-hidden="true" style={demoSurface}>
       <div style={{minWidth: 200, maxWidth: 320, background: "#1f2937", color: "#fff", padding: "0.5em 0.75em", borderRadius: 4, fontSize: 14, ...tekstafstand}}>
-        Tip: vul hier het bedrag in zoals het op je factuur staat, inclusief eurocenten.
+        {"Tip: vul hier het bedrag in zoals het op je factuur staat, inclusief eurocenten."}
       </div>
     </div>
     ```css
