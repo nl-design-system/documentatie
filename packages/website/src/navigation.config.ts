@@ -1,4 +1,19 @@
-import { navigationRoot, navigationItem, navigationGroup } from './navigation';
+import {
+  navigationRoot,
+  navigationItem as _navigationItem,
+  navigationGroup as _navigationGroup,
+  type NavigationItemInput,
+  type NavigationGroupOptions,
+} from '@nl-design-system-community/documentation-index/src/navigation/index.ts';
+import { getAllCollections } from './content.config.ts';
+
+const entries = await getAllCollections();
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const navigationItem = (input: NavigationItemInput) => _navigationItem(entries as unknown as any, input);
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const navigationGroup = (options: NavigationGroupOptions) => _navigationGroup(entries as unknown as any, options);
 
 export const navigation = navigationRoot(
   navigationGroup({
@@ -16,8 +31,6 @@ export const navigation = navigationRoot(
           navigationGroup({ filePath: 'docs/handboek/designer', label: 'Voor designers' }),
           navigationGroup({ filePath: 'docs/handboek/developer', label: 'Voor developers' }),
           navigationGroup({ filePath: 'docs/handboek/organisatie', label: 'Voor organisaties' }),
-          navigationItem('docs/handboek/leverancier/introductie.md'),
-          navigationItem('docs/handboek/manager/introductie.md'),
           navigationGroup({ filePath: 'docs/baseline' }),
           navigationItem('docs/woordenlijst/index.mdx'),
         ],
@@ -43,7 +56,7 @@ export const navigation = navigationRoot(
           navigationItem('docs/community/community-sprints/index.mdx'),
           navigationGroup({ filePath: 'docs/community/community-sprints/mijn-services-community' }),
           navigationGroup({ filePath: 'docs/community/community-sprints/rijkshuisstijl-community' }),
-          navigationItem('docs/community/expertteam-digitale-toegankelijkheid/index.mdx'),
+          navigationGroup({ filePath: 'docs/community/expertteam-digitale-toegankelijkheid' }),
           navigationGroup({
             label: 'Bijeenkomsten',
             filePath: 'docs/community/events',
@@ -52,10 +65,19 @@ export const navigation = navigationRoot(
           navigationGroup({
             index: navigationItem('docs/community/events/design-systems-week/index.mdx'),
             items: [
+              navigationItem('docs/community/events/design-systems-week/programma.mdx'),
+              navigationItem('docs/community/events/design-systems-week/tijdschema.mdx'),
               navigationGroup({
                 label: 'English',
-                filePath: 'docs/community/events/design-systems-week/en',
-                ignoredFiles: ['call-for-speakers.mdx', 'sign-up.mdx'],
+                index: navigationItem('docs/community/events/design-systems-week/en/index.mdx'),
+                items: [
+                  navigationItem('docs/community/events/design-systems-week/en/program.mdx'),
+                  navigationItem('docs/community/events/design-systems-week/en/timetable.mdx'),
+                  navigationGroup({
+                    lang: 'en',
+                    filePath: 'docs/community/events/design-systems-week/en/previous-editions',
+                  }),
+                ],
               }),
               navigationGroup({
                 filePath: 'docs/community/events/design-systems-week/eerdere-edities',

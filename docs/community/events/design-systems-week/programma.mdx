@@ -1,0 +1,368 @@
+---
+title: Programma
+description: Programma voor de Design Systems Week 2026
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: Programma
+pagination_label: Programma
+sidebar_position: 2
+slug: /events/design-systems-week-2026/programma
+translations:
+  en: /events/design-systems-week-2026/en/program/
+image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/community-design-systems-week-2026.png
+image_alt: NL Design System Design Systems Week 2026 26-29 Oktober, online
+---
+
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Link } from "@nl-design-system-community/documentation-components/src/components/Link";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
+import { Paragraph } from "@nl-design-system-community/documentation-components/src/paragraph/paragraph";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
+import { IconChevronRight } from "@tabler/icons-react";
+import sessions from "./\_2026/sessions.json";
+import speakers from "./\_2026/speakers.json";
+import { DSWSession } from "@nl-design-system-community/documentation-components/src/components/DSWSession";
+import settings from "./settings.json";
+
+# Programma Design Systems Week {settings.year}
+
+<Paragraph purpose="lead">
+  NL Design System organiseert in {settings.year} voor de {settings.nl.edition} keer de Design Systems Week. Van{" "}
+  <strong>{settings.nl.dateRange}</strong> zijn er dagelijks meerdere korte sessies van diverse organisaties online te
+  volgen over het **hoe en waarom van design systems**.
+</Paragraph>
+
+<ActionGroup>
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/tijdschema`} purpose="primary">
+    {"Bekijk het tijdschema"}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
+  </ButtonLink>
+  {!!settings.miro && (
+    <ButtonLink href={settings.miro} purpose="secondary">
+      {"Gebruik Miro"}
+      <Icon slot="icon-end">
+        <IconChevronRight />
+      </Icon>
+    </ButtonLink>
+  )}
+</ActionGroup>
+
+{!settings.sessionsAreFinal && (<>
+
+<Paragraph>
+  Het tijdschema is nog niet definitief. De sessies worden de komende weken verder uitgewerkt en toegevoegd. Houd deze
+  pagina in de gaten voor updates.
+</Paragraph>
+
+</>)}
+
+{/* Vul in per sessie */}
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="a5287a4e-fda6-45e9-b6da-5859daab3d3c"
+  headingLevel={2}
+>
+  <Paragraph>
+    Wat gebeurt er met tien jaar aan zorgvuldig opgebouwde standaarden op het moment dat iedereen in een paar prompts
+    een werkende interface kan neerzetten?
+  </Paragraph>
+  <Paragraph>
+    AI democratiseert het maken van software. Dat is goed nieuws voor de snelheid, maar slecht nieuws voor consistentie,
+    toegankelijkheid en merk. Een design system dat AI niet kan lezen, bestaat voor AI niet. Het resultaat is dan het
+    gemiddelde van het internet, geverfd in jouw kleuren.
+  </Paragraph>
+  <Paragraph>
+    In deze sessie kijken we hoe de rol van ontwerpers verschuift van maker naar regisseur, waarom het design system
+    daarmee belangrijker is dan ooit, en hoe je het de bron van waarheid maakt voor zowel mens als machine. Aan de hand
+    van een klant-case zie je van begin tot eind hoe een AI Design System je grip laat houden op de kwaliteit van je
+    producten, wat je met AI oppakt en wat je bewust bij mensen laat.
+  </Paragraph>
+  <Paragraph>
+    Een praktische sessie voor designers, developers en design system teams die willen weten hoe ze de regie houden als
+    het tempo van bouwen omhooggaat.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="1bfd50e8-d845-492b-9553-51cae7dafd5b"
+  headingLevel={2}
+>
+  <Paragraph>
+    Informatie over toegankelijkheidsconformiteit wordt vaak vastgelegd in aparte rapporten die snel verouderen. Maar
+    wat als toegankelijkheidsgegevens direct naast je code zouden staan?
+  </Paragraph>
+  <Paragraph>
+    In deze sessie ontdek je hoe het open-source publicatieplatform Janeway zijn toegankelijkheidsproces opnieuw heeft
+    ingericht door gegevens over conformiteit rechtstreeks in de codebase te integreren. Elke bevinding op het gebied
+    van toegankelijkheid is gekoppeld aan de specifieke commit waarop de audit betrekking had, en wordt in verband
+    gebracht met de werkzaamheden die nodig zijn voor verbetering. Dit vormt de basis voor een continu proces van
+    gerichte toegankelijkheidsaudits en verbeteringen, in plaats van te vertrouwen op audits die slechts eens in de paar
+    jaar plaatsvinden.
+  </Paragraph>
+  <Paragraph>
+    Steph vertelt over de beweegredenen achter deze aanpak, de implementatie ervan en de lessen die gaandeweg zijn
+    geleerd. Of je nu ontwikkelaar of toegankelijkheidsspecialist bent, of simpelweg geïnteresseerd bent in het
+    verbeteren van workflows rondom toegankelijkheid: deze sessie biedt praktische inzichten in een duurzamere manier om
+    conformiteitsgegevens te beheren.
+  </Paragraph>
+  <Paragraph>
+    De implementatie is open source, waardoor je na de sessie eenvoudig in de technische details kunt duiken.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="b919f274-381c-41db-9d1d-cc3b6934ce93"
+  headingLevel={2}
+>
+  <Paragraph>
+    Hoe maak je interactieve kaarten toegankelijk voor iedereen? Dat is een vraag waar het Kadaster dagelijks aan werkt.
+  </Paragraph>
+  <Paragraph>
+    Op de websites van het Kadaster wordt veel ruimtelijke informatie via kaartviewers aangeboden. Juist deze
+    interactieve toepassingen brengen unieke uitdagingen met zich mee op het gebied van digitale toegankelijkheid.
+  </Paragraph>
+  <Paragraph>
+    In deze sessie delen Eric en Maarten hoe het Kadaster deze vraagstukken multidisciplinair aanpakt. Aan de hand van
+    praktijkvoorbeelden laten zij zien welke uitdagingen zij tegenkwamen, welke oplossingen zij hebben ontwikkeld en
+    welke lessen zij onderweg hebben geleerd.
+  </Paragraph>
+  <Paragraph>
+    Een inspirerende sessie voor iedereen die werkt aan toegankelijke digitale dienstverlening, interactieve interfaces
+    of complexe gebruikerservaringen.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="b94a7d82-2641-446d-ad36-eafca20ec7fb"
+  headingLevel={2}
+>
+  <Paragraph>
+    Toegankelijkheid vormt een kernaspect van Skapa – het digitale designsysteem van IKEA – sinds de oprichting ervan in
+    2019.
+  </Paragraph>
+  <Paragraph>
+    Tijdens deze sessie laten we zien hoe we toegankelijkheid hebben verankerd in de opzet en het onderhoud van ons
+    designsysteem. Ook bespreken we hoe dit fundament heeft bijgedragen aan een bredere cultuur van toegankelijkheid
+    binnen de organisatie, wat van invloed is op zowel de product- als de merkervaring.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="5c3e74d2-1043-44f9-97c1-7b94c0832460"
+  headingLevel={2}
+>
+  <Paragraph>
+    NL Design System organiseert elke 2 weken een <Link href="/events/heartbeat/">Heartbeat</Link> waar de laatste
+    updates van het kernteam en uit de community worden gedeeld. Dit keer de Design Systems Week editie waarin de
+    community vertelt waar zij aan samenwerken en waarom.
+  </Paragraph>
+  <Paragraph>
+    Vanuit Gemeente Tilburg kwam in 2024 de vraag of er een nieuwe frontend voor de Tilburg Winkel opgezet kon worden.
+    Het werken met het NL Design System zou hierin een belangrijke rol spelen. Daarbij was de wens om Tilburg NLDS te
+    gebruiken in de staat waarin het zich toen bevond en tegelijkertijd bij te dragen aan het NLDS. Roel deelt wat de
+    beginstaat was, welke knelpunten er zijn tegengekomen, wat er is toegevoegd, welke lessen zijn geleerd en wat er is
+    gedaan om sommige struikelpunten in de toekomst voor andere ontwikkelaars gedeeltelijk weg te nemen.
+  </Paragraph>
+  <Paragraph>
+    Hoe is het om voor het eerst met het NL Design System aan de slag te gaan? Bij het CAK vormde de digitalisering van
+    post het startpunt voor de adoptie van NLDS, met de ambitie om dit uiteindelijk breder binnen de organisatie toe te
+    passen. Kevin neemt ons mee in zijn ervaringen: van de eerste kennismaking en het leren werken met bestaande
+    componenten, richtlijnen en een token set waar je U tegen zegt, tot de uitdagingen waar zij tegenaan liepen en de
+    voordelen die zij ontdekten. Een praktijkverhaal over wat goed werkte, wat soms schuurde en wat er onderweg is
+    geleerd.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="a23217db-b17d-4e97-ad46-1fd7d113c567"
+  headingLevel={2}
+>
+  <Paragraph>
+    Wat gebeurt er als je je eigen design-systeem vervangt door een nieuwe, gedeelde standaard? Hoe zorg je ervoor dat
+    de toegankelijkheid er niet op achteruitgaat?
+  </Paragraph>
+  <Paragraph>
+    In deze sessie deelt Marion Couesnon van het 'Access to Justice'-team haar ervaringen met de migratie van hun eigen
+    design-systeem naar het KERN Design System, dat zij zien als de toekomstige standaard voor Duitse overheidsdiensten.
+  </Paragraph>
+  <Paragraph>
+    Je leert hoe het team de migratie vanuit het oogpunt van toegankelijkheid aanpakte, welke controles en beslissingen
+    ze onderweg namen en welke onverwachte uitdagingen ze toch nog tegenkwamen. Want zelfs als een design-systeem met
+    toegankelijkheid in gedachten is ontwikkeld, biedt de implementatie ervan niet automatisch garantie op een
+    toegankelijk resultaat.
+  </Paragraph>
+  <Paragraph>
+    Een praktische sessie vol geleerde lessen, valkuilen om te vermijden en tips voor teams die een soortgelijke
+    overstap plannen.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="dc60b53e-664e-4dac-badb-cb0754065ed7"
+  headingLevel={2}
+>
+  <Paragraph>
+    Hoe maak je niet een ontwerp toegankelijk, maar ontwerp je vanaf het begin toegankelijk? Digitale toegankelijkheid
+    is geen aanpassing achteraf, maar begint bij de keuzes die je maakt tijdens het ontwerpen.
+  </Paragraph>
+  <Paragraph>
+    In deze sessie ontdek je hoe je toegankelijkheid als uitgangspunt kunt meenemen in ontwerpkeuzes en design systems.
+    Aan de hand van praktijkvoorbeelden zie je welke interactiepatronen goed werken en waar het in de praktijk vaak
+    misgaat. Denk aan verkeerd gebruikte tabellen, complexe formulieren en interactieve elementen waarvan niet duidelijk
+    is hoe je ze moet gebruiken.
+  </Paragraph>
+  <Paragraph>
+    Geen pleisters plakken met ARIA achteraf, maar vanaf de start kiezen voor logische interacties en passende
+    semantiek. Zo ondersteunen vorm en interactie de gebruiker in plaats van een belemmering te vormen.
+  </Paragraph>
+  <Paragraph>
+    Een praktische sessie voor iedereen die betrokken is bij het ontwerpen, ontwikkelen en verbeteren van digitale
+    dienstverlening.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="0f818ea3-38cb-4dd3-aee4-84774acc27fd"
+  headingLevel={2}
+>
+  <Paragraph>
+    Bij NL Design System werken verschillende overheidsorganisaties samen aan één design system, terwijl iedereen een
+    eigen huisstijl, techniek en wensen heeft. Een actieve community en het kernteam werken hieraan samen met behulp een
+    governancemodel: het Estafettemodel.
+  </Paragraph>
+  <Paragraph>
+    Hoe werkt het Estafettemodel in de praktijk? Yolijn laat zien hoe het door NL Design System ontwikkelde proces
+    werkt. Aan de hand van praktijkvoorbeelden ontdek je hoe ideeën uit de community kunnen uitgroeien tot
+    gestandaardiseerde oplossingen.
+  </Paragraph>
+  <Paragraph>
+    Nieuw bij NL Design System of al langer betrokken bij de community? Deze sessie biedt een heldere introductie én een
+    frisse blik op hoe we samen bouwen, kennis delen en elkaar verder helpen.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="6b1d8785-cf2b-4c38-a4c1-b65458456728"
+  headingLevel={2}
+>
+  <Paragraph>
+    Hoe ontwikkel je een huisstijl die niet alleen herkenbaar is, maar ook toegankelijk en toepasbaar op alle kanalen?
+  </Paragraph>
+  <Paragraph>
+    In deze sessie neemt UWV je mee in de ontwikkeling van de vernieuwde huisstijl. Met een nieuw kleurenpalet, een
+    nieuw lettertype en een eigentijdse vormtaal is gewerkt aan een visuele identiteit die zowel op mobiel, web als in
+    print goed functioneert.
+  </Paragraph>
+  <Paragraph>
+    Frédérique vertelt over het ontwerptraject, de afwegingen die zijn gemaakt en de resultaten die zijn behaald.
+  </Paragraph>
+  <Paragraph>
+    Een interessante sessie voor designers, communicatieprofessionals en iedereen die werkt aan een toegankelijke en
+    herkenbare digitale overheid.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="5c426f34-76eb-44c3-a951-277b49e6b442"
+  headingLevel={2}
+>
+  <Paragraph>
+    Wat als je precies de designtools zou kunnen bouwen die jouw team nodig heeft, in plaats van je workflow aan te
+    passen aan de beschikbare tools?
+  </Paragraph>
+  <Paragraph>
+    Het ontwikkelen van op maat gemaakte designtools is eenvoudiger dan ooit. In plaats van uitsluitend te vertrouwen op
+    algemene plug-ins en frameworks, kunnen teams nu kleine, doelgerichte tools bouwen die inspelen op de specifieke
+    behoeften van hun projecten en designsystemen.
+  </Paragraph>
+  <Paragraph>
+    Tijdens deze sessie deelt Javier Cuello praktijkvoorbeelden van hoe hij op maat gemaakte mini-plug-ins en
+    designtools creëert en gebruikt om problemen op te lossen die voorheen lastig aan te pakken leken. Hij laat zien wat
+    er mogelijk is, waar deze tools waarde toevoegen en hoe ze de dagelijkse designworkflows kunnen verbeteren.
+  </Paragraph>
+  <Paragraph>
+    Een praktische en inspirerende sessie voor designers die hun tooling opnieuw willen bekijken, maar ook met volop
+    nuttige inzichten voor developers.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="45b2c5ee-4176-4752-b440-dfb16e7f14d3"
+  headingLevel={2}
+>
+  <Paragraph>
+    Afval- en energiebedrijf HVC werkt met één centraal design system voor meerdere digitale kanalen: de website, de
+    app, de werkenbij-site en verschillende campagnesites, voor de inwoners van 54 gemeenten. Maar hoe houd je al die
+    kanalen consistent? En hoe laat je designers, developers en communicatieteams vanuit dezelfde basis werken?
+  </Paragraph>
+  <Paragraph>
+    Aan de hand van deze case laat Jeffrey zien hoe de Figma-bestanden zijn opgezet, hoe nieuwe componenten via een
+    eigen proposal-workflow in het systeem terechtkomen en hoe ze vervolgens in Storybook landen. Na afloop is er ruim
+    tijd voor vragen.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="aec41135-5d58-404d-a427-47dcb6730b20"
+  headingLevel={2}
+>
+  <Paragraph>
+    Designsystemen lossen vaak keer op keer dezelfde problemen op. Wat als we de universele onderdelen zouden kunnen
+    delen? Wat als delen geen belemmering vormt, maar juist ruimte biedt voor uniciteit en identiteit? Deze presentatie
+    gaat over het Noorse project 'Designsystemet' en de aanpak om een ​​framework- en design-agnostische open-source
+    toolkit te bouwen die de basis vormt voor je designsysteem.
+  </Paragraph>
+  <Paragraph>
+    We duiken ook dieper in de vraag hoe het prioriteren van native HTML, CSS en browsergedrag componenten
+    voorspelbaarder, flexibeler en beter combineerbaar maakt. Daarnaast kijken we kritisch naar welke onderdelen van een
+    designsysteem je daadwerkelijk zelf moet beheren en onderhouden.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="a11aea51-e2a7-40c6-85ba-506971bc3cd4"
+  headingLevel={2}
+>
+  <Paragraph>
+    In een gezonde open source community legt niemand een ander deadlines op. Hoe voorkom je dan dat teams elkaar
+    blokkeren?
+  </Paragraph>
+  <Paragraph>
+    In de afgelopen zes jaar groeide NL Design System uit tot een succesvolle samenwerking aan open source componenten.
+    Teams dragen componenten bij die ze zelf nodig hebben, zodat deze daarna samen met de rest van de community gebruikt
+    en verbeterd worden.
+  </Paragraph>
+  <Paragraph>
+    Robbert deelt wat NL Design System doet om de energie hoog te houden, bijdragen makkelijk te maken, en ruimte te
+    bieden voor feedback. Een praktische sessie voor iedereen die een open source project start, onderhoudt, of benieuwd
+    is naar de manier hoe NL Design System open source werkt.
+  </Paragraph>
+</DSWSession>

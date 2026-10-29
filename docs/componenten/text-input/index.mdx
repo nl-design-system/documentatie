@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Text Input
 pagination_label: Text Input
-description: Biedt de mogelijkheid om één regel aan tekens in te vullen.
+description: Invoerveld voor het bewerken van één regel tekst.
 issue_number: 200
 slug: /text-input
 keywords:
@@ -47,11 +47,15 @@ import {
   Implementations,
   Introduction,
   Related,
-} from "@site/src/components/ComponentPage";
+} from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
+import {
+  Checklist,
+  ChecklistItem,
+} from "@nl-design-system-community/documentation-components/src/components/Checklist";
 
 {/* Add name and description for the component */}
 export const title = "Text Input";
-export const description = "Biedt de mogelijkheid om één regel aan tekens in te vullen.";
+export const description = "Invoerveld voor het bewerken van één regel tekst.";
 export const issueNumber = 200;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);

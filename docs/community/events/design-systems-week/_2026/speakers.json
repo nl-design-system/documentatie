@@ -1,0 +1,213 @@
+{
+  "KoenDeGreef": {
+    "name": "Koen de Greef",
+    "organisation": "FIDDS Design",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-KoenDeGreef.jpg",
+      "alt": "Koen de Greef"
+    },
+    "description": {
+      "nl": "Koen is Head of Design Services bij FIDDS Design en werkt op het snijvlak van design en AI. Met ruim tien jaar ervaring in Enterprise UX helpt hij organisaties om vanuit een menselijk perspectief te ontwerpen met en voor AI, zodat de technologie die ze bouwen ook echt gebruikt wordt. Daarvoor was hij design strateeg bij NS, waar hij werkte aan digitale toegankelijkheid en aan hoe design binnen de organisatie georganiseerd was. AI Design Systems zijn de nieuwste manier waarop hij teams helpt snel te bouwen zonder in te leveren op kwaliteit."
+    },
+    "language": "nl"
+  },
+  "DrStephDriver": {
+    "name": "Dr Steph Driver",
+    "organisation": "Open Library of Humanities",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-DrStephDriver.jpg",
+      "alt": "Dr Steph Driver"
+    },
+    "description": {
+      "en": "Steph is the accessibility-specialist developer at the Open Library of Humanities.  As an assistive technology user herself, she is passionate about making open access truly accessible for everyone. She combines deep technical expertise with a passion for education, helping teams develop smarter workflows and innovative accessibility solutions. With a background spanning natural sciences, creative writing, technology and disability-activism, Steph brings a unique perspective to inclusive digital design.",
+      "nl": "Steph is ontwikkelaar en specialist op het gebied van toegankelijkheid bij de Open Library of Humanities. Als gebruiker van ondersteunende technologie zet zij zich vol passie in om open access voor iedereen werkelijk toegankelijk te maken. Ze combineert diepgaande technische expertise met een passie voor onderwijs en helpt teams bij het ontwikkelen van slimmere werkprocessen en innovatieve oplossingen voor toegankelijkheid. Met een achtergrond in de natuurwetenschappen, creatief schrijven, technologie en activisme rondom handicaps brengt Steph een uniek perspectief in op inclusief digitaal ontwerp."
+    },
+    "language": "en"
+  },
+  "EricVanMullekom": {
+    "name": "Eric van Mullekom",
+    "organisation": "Kadaster",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-EricVanMullekom.jpg",
+      "alt": "Eric van Mullekom"
+    },
+    "description": {
+      "nl": "Eric is sinds 2000 als projectmanager/product owner betrokken bij softwareontwikkeling, met oog voor techniek en gebruikersgemak. Bij het Kadaster is hij als Product Owner verantwoordelijk voor <a target=\"blank\" href=\"https://generiekegeocomponenten.nl\">generiekegeocomponenten.nl</a>, <a target=\"blank\" href=\"https://kaartenvannederland.nl\">kaartenvannederland.nl</a> en <a target=\"blank\" href=\"https://verbeterdekaart.nl\">terugmeldsysteem (o.a. verbeterdekaart.nl)</a>."
+    },
+    "language": "nl"
+  },
+  "MaartenSchut": {
+    "name": "Maarten Schut",
+    "organisation": "Kadaster",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MaartenSchut.jpg",
+      "alt": "Maarten Schut"
+    },
+    "description": {
+      "nl": "Maarten werkt sinds 2025 bij het Kadaster als product owner. Samen met het dev-team ontwikkelt en beheert hij diverse websites, portals en applicaties, waaronder <a target=\"blank\" href=\"https://www.kadaster.nl\">www.kadaster.nl</a>, <a target=\"blank\" href=\"https://topokaarten.kadaster.nl\">topokaarten.kadaster.nl</a> en het zakelijke portaal <a target=\"blank\" href=\"https://mijn.kadaster.nl\">mijn.kadaster.nl</a>. "
+    },
+    "language": "nl"
+  },
+  "MarionCouesnon": {
+    "name": "Marion Couesnon",
+    "organisation": "Digitalservice GmbH des Bundes",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-MarionCouesnon.jpg",
+      "alt": "Marion Couesnon"
+    },
+    "description": {
+      "en": "Marion is an accessibility designer based in Berlin. She has been passionate about design since 2011 and has specialised in accessibility since 2019. She currently works for DigitalService, a company owned by the German federal government. Within the organisation, she implements accessibility practices whilst contributing to the design of services, including the <a target=\"blank\" href=\"https://service.justiz.de\">Ministry of Justice’s online portal</a>. Outside of work, you might spot Marion at her boxing club or knitting on her sofa.",
+      "nl": "Marion is een ontwerper gespecialiseerd in toegankelijkheid, gevestigd in Berlijn. Ze is sinds 2011 gepassioneerd door design en heeft zich sinds 2019 toegelegd op toegankelijkheid. Momenteel werkt ze bij DigitalService, een bedrijf dat eigendom is van de Duitse federale overheid. Binnen de organisatie implementeert ze toegankelijkheidsmaatregelen en draagt ze bij aan het ontwerp van diensten, waaronder het <a target=\"blank\" href=\"https://service.justiz.de\">online portaal van het ministerie van Justitie</a>. Buiten haar werk kun je Marion tegenkomen bij haar boksclub of breiend op de bank."
+    },
+    "language": "en"
+  },
+  "ManonVanKeulen": {
+    "name": "Manon van Keulen",
+    "organisation": "Digitaal Toegankelijk",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-ManonVanKeulen.jpg",
+      "alt": "Manon van Keulen"
+    },
+    "description": {
+      "nl": "Het werk van Manon kreeg, na in 2020 omgeschoold te zijn naar Webdeveloper, al snel een focus op digitale toegankelijkheid. Tegenwoordig werkt zij als consultant bij Digitaal Toegankelijk. Via trainingen en adviestrajecten ondersteunt zij bedrijven om hun diensten toegankelijker te maken. Haar missie is te laten zien hoe meer aandacht voor de toegankelijkheid ook leidt tot een betere ervaring voor andere eindgebruikers. En hoe de eerste beslissingen tijdens het design daar al een grote invloed op kunnen hebben."
+    },
+    "language": "nl"
+  },
+  "FrederiqueSchimmelpenninckVanDerOije": {
+    "name": "Frédérique Schimmelpenninck van der Oije",
+    "organisation": "UWV",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-FrederiqueSchimmelpenninck.jpg",
+      "alt": "Frédérique Schimmelpenninck van der Oije"
+    },
+    "description": {
+      "nl": "Frédérique Schimmelpenninck van der Oije is grafisch ontwerper, zij werkte eerder als ontwerper en beeldredacteur voor onder andere de Volkskrant en Het Financieele Dagblad en is nu Designmanager bij UWV. Daarnaast werkt zij als parttime docent op het Amsterdam Fashion Institute. Helder, herkenbaar en vooral toegankelijke communicatie zijn een belangrijke leidraad in haar werk en werkwijze. Bij UWV werkt zij aan een integrale aanpak van de huisstijl, van mobiel tot bewegwijzering en van beachflag tot formulier."
+    },
+    "language": "nl"
+  },
+  "JavierCuello": {
+    "name": "Javier Cuello",
+    "organisation": "Fuller",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-JavierCuello.png",
+      "alt": "Javier Cuello"
+    },
+    "description": {
+      "en": "Javier is a product designer specialising in design systems. Originally from Argentina, he has spent nearly 20 years in Europe working with companies like Wise, UEFA, Telefónica and Zara. He now runs his own independent design practice, helping teams build and scale their design systems.",
+      "nl": "Javier is een productontwerper die gespecialiseerd is in designsystemen. Hij komt oorspronkelijk uit Argentinië en heeft bijna twintig jaar in Europa gewerkt voor bedrijven als Wise, UEFA, Telefónica en Zara. Tegenwoordig runt hij zijn eigen onafhankelijke ontwerppraktijk, waarin hij teams helpt bij het opzetten en opschalen van hun designsystemen."
+    },
+    "language": "en"
+  },
+  "EirikBacker": {
+    "name": "Eirik Backer",
+    "organisation": "Norwegian Digitalisation Agency",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-EirikBacker.jpeg",
+      "alt": "Eirik Backer"
+    },
+    "description": {
+      "en": "Eirik is a front-end developer and former designer with a passion for web standards and accessibility. He currently works at the Norwegian Digitalisation Agency.",
+      "nl": "Eirik is front-end developer en voormalig ontwerper met een passie voor webstandaarden en toegankelijkheid. Hij werkt momenteel bij het Noorse Agentschap voor Digitalisering."
+    },
+    "language": "en"
+  },
+  "CarolineDahl": {
+    "name": "Caroline Dahl",
+    "organisation": "IKEA",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-CarolineDahl.jpg",
+      "alt": "Caroline Dahl"
+    },
+    "description": {
+      "en": "Caroline is a product owner with 10 years of experience in digital product development at IKEA. With a background in marketing and brand management, she combines business, technology, and human-centered design to create products that deliver real value. Leading the design system team at IKEA, Caroline is passionate about making accessibility and inclusivity a natural part of how digital products are designed and built.",
+      "nl": "Caroline is een product owner met 10 jaar ervaring in de ontwikkeling van digitale producten bij IKEA. Met een achtergrond in marketing en brandmanagement combineert ze business, technologie en mensgericht ontwerp om producten te creëren die echt waarde toevoegen. Als leider van het designsystem-team bij IKEA zet ze zich gepassioneerd in om toegankelijkheid en inclusiviteit een integraal onderdeel te maken van het ontwerp- en ontwikkelproces van digitale producten."
+    },
+    "language": "en"
+  },
+  "PierreOrsander": {
+    "name": "Pierre Orsander",
+    "organisation": "IKEA",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-PierreOrsander.jpg",
+      "alt": "Pierre Orsander"
+    },
+    "description": {
+      "en": "Pierre is a digital product designer with 18+ years of experience creating well-designed digital solutions for global companies, governments, service providers, and startups. Over the past six years at IKEA, he has specialised in building the digital design system, Skapa, developing deep expertise in accessibility and inclusive user experiences.",
+      "nl": "Pierre is een digital product designer met meer dan 18 jaar ervaring in het ontwerpen van hoogwaardige digitale oplossingen voor wereldwijde bedrijven, overheidsinstanties, dienstverleners en startups. De afgelopen zes jaar heeft hij zich bij IKEA gespecialiseerd in de opzet van het digitale designsystem 'Skapa', waarbij hij diepgaande expertise heeft opgebouwd op het gebied van toegankelijkheid en inclusieve gebruikerservaringen."
+    },
+    "language": "en"
+  },
+  "RobinWhittleton": {
+    "name": "Robin Whittleton",
+    "organisation": "IKEA",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-RobinWhittleton.jpg",
+      "alt": "Robin Whittleton"
+    },
+    "description": {
+      "en": "Robin is an accessibility specialist with a background in front-end development. Originally from the UK – where he helped to start the GOV.UK Design System – he moved to Sweden nearly a decade ago and was in the right place and time to help to start the IKEA design system. His focus is on making design and technology work for everyone regardless of need.",
+      "nl": "Robin is een toegankelijkheidsspecialist met een achtergrond in front-end development. Hij is afkomstig uit het Verenigd Koninkrijk – waar hij meewerkte aan de start van het GOV.UK Design System – en verhuisde bijna tien jaar geleden naar Zweden; daar was hij op het juiste moment op de juiste plek om te helpen bij de opzet van het IKEA-designsystem. Zijn focus ligt op het zodanig inzetten van ontwerp en technologie dat ze voor iedereen werken, ongeacht individuele behoeften."
+    },
+    "language": "en"
+  },
+  "JeffreyGeleijn": {
+    "name": "Jeffrey Geleijn",
+    "organisation": "Unc Inc",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-JeffreyGeleijn.png",
+      "alt": "Jeffrey Geleijn"
+    },
+    "description": {
+      "nl": "Jeffrey is Product Design lead bij Unc Inc, waar hij sinds 2016 werkt aan digitale producten voor organisaties als HVC en AHTI. In multidisciplinaire teams brengt hij structuur in het ontwerpproces: hij bouwt toegankelijke design systems en zet zich in om de kloof tussen design en development zo klein mogelijk te maken. Hij denkt graag mee over het grote plaatje, maar wordt net zo blij van de kleinste details."
+    },
+    "language": "nl"
+  },
+  "RobbertBroersma": {
+    "name": "Robbert Broersma",
+    "organisation": "NL Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-RobbertBroersma.png",
+      "alt": "Robbert Broersma"
+    },
+    "description": {
+      "nl": "Robbert is design system lead van NL Design System. Met zijn ervaring bij andere design systems kent hij zowel de valkuilen van een team overstijgend design system als de waarde van het hergebruik van stabiele, toegankelijke componenten en een actieve community."
+    },
+    "language": "nl"
+  },
+  "YolijnVanDerKolk": {
+    "name": "Yolijn van der Kolk",
+    "organisation": "NL Design System",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-YolijnVanDerKolk.png",
+      "alt": "Yolijn van der Kolk"
+    },
+    "description": {
+      "nl": "Yolijn is productmanager van NL Design System. Hierbij helpt ze nieuwe organisaties aansluiting te vinden en stimuleert ze samenwerking en kennisdeling binnen de community. Met haar ervaring als developer bij andere design systems weet ze hoe waardevol een betrokken community is voor een effectief design system."
+    },
+    "language": "nl"
+  },
+  "KevinConsen": {
+    "name": "Kevin Consen",
+    "organisation": "CAK",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-KevinConsen.jpg",
+      "alt": "Kevin Consen"
+    },
+    "description": {
+      "nl": "Kevin is UX Designer en Scrum Enthousiasteling bij BBTG, waar hij complexe processen vertaalt naar begrijpelijke en gebruiksvriendelijke digitale oplossingen. Zo ontwierp hij callcentersoftware voor Coolblue die de afhandeling van gesprekken efficiënter maakte en dataverzameling verbeterde. Voor Alliander werkte hij aan een configurator waarmee oplossingen voor netcongestie gemodelleerd en doorgerekend konden worden. Momenteel helpt hij het CAK bij de overgang naar digitale post, waarbij hij met het NL Design System bijdraagt aan toegankelijke en consistente dienstverlening. In zijn werk zoekt hij de balans tussen gebruikersbehoeften, technische mogelijkheden en organisatiedoelen."
+    },
+    "language": "nl"
+  },
+  "RoelBerends": {
+    "name": "Roel Berends",
+    "organisation": "Gemeente Tilburg",
+    "image": {
+      "src": "https://raw.githubusercontent.com/nl-design-system/documentatie/assets/design-systems-week-2026-RoelBerends.jpeg",
+      "alt": "Roel Berends"
+    },
+    "description": {
+      "nl": "Roel is een ontwikkelaar die na tien jaar ervaring bekend is met mobile (Java/Kotlin - Android - Home Automation), desktop (C# - WPF/XAML - Ziekenhuissoftware) en webontwikkeling (Typescript/HTML/SCSS - Angular). Altijd visueel ingesteld, werkt hij in zijn vrije tijd aan games (Gdscript - Godot) - en overdag bij DITP in Haarlem aan frontends voor diverse overheidsinstanties zoals de NVWA, RVO, DUO, JustID en SZW."
+    },
+    "language": "nl"
+  }
+}

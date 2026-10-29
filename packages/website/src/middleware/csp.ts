@@ -7,7 +7,7 @@ import * as cheerio from 'cheerio';
  * @param {String} content
  * @returns {String}
  */
-function sha256(content) {
+function sha256(content: string) {
   return createHash('sha256').update(content).digest('base64');
 }
 
@@ -15,7 +15,7 @@ function sha256(content) {
  * This middleware calculates a sha256 hash of style attributes and adds them
  * to the csp header, allowing for inline styles within the source code
  */
-export async function onRequest(context, next) {
+export async function onRequest(_context, next) {
   const response = await next();
   const html = await response.text();
   const $ = cheerio.load(html);

@@ -14,10 +14,11 @@ keywords:
   - succescriteria
 ---
 
-import { Markdown } from "@site/src/components/Markdown";
-import { Paragraph, SpotlightSection } from "@utrecht/component-library-react/dist/css-module";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
-import { successCriteria } from "@site/src/components/wcag22";
+import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import { SpotlightSection } from "@nl-design-system-community/documentation-components/src/spotlight-section/spotlight-section";
+import { Paragraph } from "@nl-design-system-community/documentation-components/src/paragraph/paragraph";
+import wcagFooterInfo from "./_wcag_footer_info.md?raw";
+import { successCriteria } from "@nl-design-system-community/documentation-components/src/components/wcag22";
 
 # Introductie WCAG-pagina's
 
@@ -44,6 +45,7 @@ Wil je weten waar je volgens de wet aan moet voldoen? Ga dan naar naar de websit
 ### Niveau A en Niveau AA
 
 <OverviewPage
+  cardHeadingLevel={4}
   excludeDocIDs={[
     "wcag/README",
     ...successCriteria
@@ -57,6 +59,7 @@ Wil je weten waar je volgens de wet aan moet voldoen? Ga dan naar naar de websit
 ### Niveau AAA
 
 <OverviewPage
+  cardHeadingLevel={4}
   excludeDocIDs={[
     "wcag/README",
     "wcag/4.1.01",
@@ -70,6 +73,4 @@ Wil je weten waar je volgens de wet aan moet voldoen? Ga dan naar naar de websit
 
 ## Help richtlijnen verbeteren
 
-<Markdown omitH1 headinglevel={3}>
-  <WCAGFooterInfo />
-</Markdown>
+<Markdown omitH1 headingLevel={3} content={wcagFooterInfo} />

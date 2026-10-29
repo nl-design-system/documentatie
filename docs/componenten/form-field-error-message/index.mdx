@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: Form Field Error Message
 pagination_label: Form Field Error Message
-description: Toont een foutmelding die informeert wat er is fout gegaan en hoe dit is op te lossen.
+description: Foutmelding bij een invoerveld die informeert wat de fout is en wat de oplossing is.
 issue_number: 122
 slug: /form-field-error-message
 keywords:
@@ -34,23 +34,68 @@ import componentProgress from "@nl-design-system/component-progress/dist/index.j
 import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_component.md";
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/\_component_gebruiken_intro.md";
-import * as Acceptatiecriteria from "./_acceptatiecriteria.tsx";
+import {
+  Card,
+  CardContent,
+  CardIllustration,
+} from "@nl-design-system-community/documentation-components/src/components/CardGroup";
+import { LinkList, LinkListLink } from "@nl-design-system-community/documentation-components/src/link-list/link-list";
+import { Heading } from "@nl-design-system-community/documentation-components/src/heading/heading";
+import { BrandIcon } from "@nl-design-system-community/documentation-components/src/components/BrandIcon";
 import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
   Introduction,
   Related,
-} from "@site/src/components/ComponentPage";
+} from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
+import {
+  Checklist,
+  ChecklistItem,
+} from "@nl-design-system-community/documentation-components/src/components/Checklist";
+import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
 
-{/* Add name and description for the component */}
+import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import Usage from "./\_usage.md";
+
+import { ComponentAliases } from "@nl-design-system-community/documentation-components/src/components/ComponentAliases";
+import { DesignTokens } from "@nl-design-system-community/documentation-components/src/components/DesignTokens";
+
+import tokens from "@nl-design-system-candidate/form-field-error-message-tokens";
+
 export const title = "Form Field Error Message";
-export const description = "Toont een foutmelding die informeert wat er is fout gegaan en hoe dit is op te lossen.";
+export const description = "Foutmelding bij een invoerveld die informeert wat de fout is en wat de oplossing is.";
 export const issueNumber = 122;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
 
 <Introduction component={component} headingLevel={1} description={description} />
+
+<ComponentAliases component={component} />
+
+<Card className="ma-implementation-card">
+  <CardContent>
+    <Heading level={2} appearance="level-4">Figma</Heading>
+    <LinkList>
+      <LinkListLink href="https://www.figma.com/design/FqAr99wvrlHxTJYAHkFRQN/NL-Design-System---Bibliotheek?node-id=851-939"><BrandIcon brand='figma' />Figma - Start bibliotheek</LinkListLink>
+      <LinkListLink href="https://www.figma.com/design/0J3EiRpZH3LJ0cx396XLNC/NL-Design-System---Bibliotheek---Voorbeeld?node-id=851-939"><BrandIcon brand='figma' />Figma - Voorbeeld bibliotheek</LinkListLink>
+    </LinkList>
+
+    <Heading level={2} appearance="level-4">Storybook</Heading>
+    <LinkList>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/css-form-field-error-message--documentatie"><BrandIcon brand='storybook' />Storybook - CSS</LinkListLink>
+      <LinkListLink href="https://nl-design-system.github.io/candidate/?path=/docs/form-field-error-message--documentatie"><BrandIcon brand='storybook' />Storybook - React</LinkListLink>
+    </LinkList>
+
+    <Heading level={2} appearance="level-4">npm</Heading>
+    <LinkList>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/form-field-error-message-css"><BrandIcon brand='npm' /> @nl-design-system-candidate/form-field-error-message-css</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/form-field-error-message-react"><BrandIcon brand='npm' /> @nl-design-system-candidate/form-field-error-message-react</LinkListLink>
+      <LinkListLink href="https://www.npmjs.com/package/@nl-design-system-candidate/form-field-error-message-tokens"><BrandIcon brand='npm' /> @nl-design-system-candidate/form-field-error-message-tokens</LinkListLink>
+    </LinkList>
+
+  </CardContent>
+</Card>
 
 ## Checklist voor toegankelijkheid
 
@@ -80,14 +125,22 @@ export const component = componentProgress.find((item) => item.number === issueN
   ))}
 </Checklist>
 
+<Markdown omitH1 headingLevel={3}>
+  <Usage />
+</Markdown>
+
+## Design tokens
+
+<DesignTokens tokens={tokens} />
+
 ## Definition of Done
 
 <DefinitionOfDone component={component} headingLevel={3} />
+
+<HelpImproveComponent component={component} headingLevel={2} />
 
 ## Community implementaties
 
 <Implementations component={component} headingLevel={3} />
 
 <Related component={component} />
-
-<HelpImproveComponent component={component} headingLevel={2} />

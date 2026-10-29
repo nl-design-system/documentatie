@@ -7,5 +7,5 @@ Gebruikers lezen van boven naar beneden. Dan is het fijn als eerst de link met m
 Je kunt informatie ook boven het formulier vermelden, zodat gebruikers alvast voorbereid zijn.
 Bijvoorbeeld als de gebruiker een paspoort- of burgerservicenummer nodig heeft, of als er een tijdslimiet op het invullen van het formulier staat ingesteld.
 
-**Let op**: de link moet niet alleen visueel, maar ook in de DOM (Document Object Modal) in de goede volgorde staan.
+**Let op**: de link moet niet alleen visueel, maar ook in de DOM (Document Object Model) in de goede volgorde staan.
 Dus een link visueel verplaatsen via bijvoorbeeld flex-order is niet voldoende. De DOM-order is echt belangrijk voor gebruikers van [screenreaders](/woordenlijst/#screenreader).
