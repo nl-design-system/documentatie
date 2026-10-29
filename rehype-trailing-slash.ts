@@ -33,16 +33,19 @@ const isFile = (url: URL) => {
   return isAFile;
 };
 
+export interface TrailingSlashOptions {
+  siteURL: URL;
+  stripOrigin?: boolean;
+  stripExtensions?: string[];
+}
+
 /**
  * Append a trailing slash to the pathname portion of the href.
  * This is done by first building an URL object. With the URL object, the
  * pathname can be modified separate from the hash or search parts of the url.
  * Later the origin is removed to preserve the link as written
  */
-export function addTrailingSlash(
-  href: string,
-  options: { siteURL: URL; stripOrigin?: boolean; stripExtensions?: string[] },
-): string {
+export function addTrailingSlash(href: string, options: TrailingSlashOptions): string {
   const url = new URL(href, options.siteURL);
 
   // Remove extensions from the stripExtensions list before further parsing

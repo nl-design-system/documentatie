@@ -57,5 +57,5 @@ async function verifyPageAccessibility(page: Page, pathname: string): Promise<vo
 }
 
 function isDocusaurusHydrated(): boolean {
-  return document.documentElement.dataset.hasHydrated === 'true';
+  return document.documentElement.dataset['hasHydrated'] === 'true';
 }

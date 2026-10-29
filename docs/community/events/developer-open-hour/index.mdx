@@ -9,9 +9,10 @@ description: Tijdens Developer Open Hour kun je laagdrempelig vragen over develo
 slug: /events/developer-open-hour
 ---
 
-import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ActionGroup } from "@components/action-group/action-group";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
 
 # Developer Open Hour
 
@@ -37,11 +38,17 @@ De Developer Open Hour vindt plaats op [Slack](/slack) in het kanaal `#nl-design
 Door je aan te melden kunnen wij je op de hoogte houden van Developer Open Hours. Je ontvangt dan ook direct een kalenderbestandje, zodat je de Developer Open Hour makkelijk aan je agenda kan toevoegen.
 
 <ActionGroup>
-  <ButtonLink href="/events/developer-open-hour/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight slot="icon-end" />
+  <ButtonLink href="/events/developer-open-hour/aanmelden" purpose="primary">
+    {"Meld je aan"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
-  <ButtonLink href="/slack/" appearance="secondary-action">
-    {"Doe mee op Slack"} <IconChevronRight slot="icon-end" />
+  <ButtonLink href="/slack/" purpose="secondary">
+    {"Doe mee op Slack"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
