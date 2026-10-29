@@ -3,7 +3,6 @@ import * as cheerio from 'cheerio';
 
 export function getPathnamesFromSitemap(sitemapDir: string, sitemapPath: string): string[] {
   const paths: string[] = [];
-
   const sitemapIndex = readFileSync(`${sitemapDir}${sitemapPath}`, 'utf8');
   const $ = cheerio.load(sitemapIndex, { xmlMode: true });
 
