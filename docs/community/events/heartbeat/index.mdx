@@ -3,29 +3,35 @@ title: Heartbeat van NL Design System
 title_sm: Heartbeat
 hide_title: true
 hide_table_of_contents: false
+navigation_order: 1
 sidebar_label: Heartbeat
 pagination_label: Heartbeat
 description: Wat is de Heartbeat, hoe meld ik mij aan, en op welke momenten is het?
 slug: /events/heartbeat
 ---
 
-import { ButtonLink } from "@site/src/components/ButtonLink";
-import { Link } from "@site/src/components/Link";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Link } from "@nl-design-system-community/documentation-components/src/components/Link";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
 
 # Heartbeat
 
 In de Heartbeat vertelt het kernteam van NL Design System elke twee weken wat de laatste stand van zaken is. Daarnaast laten we organisaties aan het woord die met/aan het NL Design System werken.
 
 <ActionGroup>
-  <ButtonLink href="/events/heartbeat/aanmelden" appearance="primary-action">
+  <ButtonLink href="/events/heartbeat/aanmelden/" purpose="primary">
     {"Meld je aan"}
-    <IconChevronRight />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
-  <ButtonLink href="/events/heartbeat/videos" appearance="secondary-action">
+  <ButtonLink href="/events/heartbeat/videos/" purpose="secondary">
     {"Kijk de Heartbeat terug"}
-    <IconChevronRight />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 

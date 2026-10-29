@@ -1,0 +1,13 @@
+/* TODO: Remove global styling for `kbd` element */
+kbd,
+.ma-user-input-badge {
+  background-color: var(--ma-user-input-badge-background-color);
+  border: var(--ma-user-input-badge-border-width, 1px) solid var(--ma-user-input-badge-border-color);
+  border-radius: var(--ma-user-input-badge-border-radius);
+  box-shadow: inset 0 calc(-1 * var(--ma-user-input-badge-border-width, 1px)) 0 var(--ma-user-input-badge-border-color);
+  color: var(--ma-user-input-badge-color);
+  font-family: var(--ma-user-input-badge-font-family);
+  font-size: var(--ma-user-input-badge-font-size);
+  padding-block: var(--ma-user-input-badge-padding-block);
+  padding-inline: var(--ma-user-input-badge-padding-inline);
+}

@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-Hoewel WCAG wel een richtlijnen heeft voor de grootte van het aanwijsgebied (_target size_), wordt er niets vermeld over ruimte tussen interactieve elementen. Toch is het aan te raden om tussen interactieve elementen wat ruimte te reserveren. Op die manier neemt de kans om onbedoeld iets te activeren af.
+Hoewel WCAG wel een richtlijnen heeft voor de grootte van het aanwijsgebied (<i lang="en">target size</i>), wordt er niets vermeld over ruimte tussen interactieve elementen. Toch is het aan te raden om tussen interactieve elementen wat ruimte te reserveren. Op die manier neemt de kans om onbedoeld iets te activeren af.
 
 Voor iemand met een bevende hand kan een website lastiger te gebruiken zijn als grote delen van het scherm interactief (button of link) zijn.
 

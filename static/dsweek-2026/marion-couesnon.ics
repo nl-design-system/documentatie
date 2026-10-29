@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:What happens when you replace your own design system with a new, shared standard? How do you make sure accessibility doesn't take a step backwards? In this session, Marion Couesnon from the Access to Justice team shares their experience of migrating from their in-house design system to the KERN Design System, which they see as the future standard for German public services. You'll learn how the team approached the migration from an accessibility perspective, the checks and decisions they made along the way, and the unexpected challenges they still encountered. Because even when a design system is built with accessibility in mind, adopting it doesn't automatically guarantee an accessible result. A practical session packed with lessons learned, pitfalls to avoid, and tips for teams planning a similar transition.
+UID:7a314416-a047-416f-b5a8-d0fe3373d428
+SUMMARY:Switching system without compromising accessibility by Marion Couesnon
+DTSTART;TZID=Europe/Amsterdam:20261027T150000
+DTEND;TZID=Europe/Amsterdam:20261027T154500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/meet/347769278349154?p=5HS1tOwpqJrAnP58Eo
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,9 +1,9 @@
-import { addTrailingSlash } from './rehype-trailing-slash';
+import { addTrailingSlash, TrailingSlashOptions } from './rehype-trailing-slash';
 
 const siteURL = new URL('https://example.com');
 let exitCode = 0;
 
-function test(input, expectedResult, options = {}) {
+function test(input: string, expectedResult: string, options: Partial<TrailingSlashOptions> = {}) {
   const result = addTrailingSlash(input, { siteURL, ...options });
   if (result !== expectedResult) {
     console.log('---');
@@ -32,6 +32,12 @@ test('/foo/bar?query=value', '/foo/bar/?query=value');
 // Strip the origin when option is set
 test('https://example.com/foo/bar', '/foo/bar/', { stripOrigin: true });
 test('/foo/bar', '/foo/bar/', { stripOrigin: true });
+
+// Treat .md / .mdx as pages and strip the extensions
+test('/foo/bar.md', '/foo/bar/', { stripOrigin: false, stripExtensions: ['.md', '.mdx'] });
+test('/foo/bar.mdx', '/foo/bar/', { stripExtensions: ['.md', '.mdx'] });
+test('/foo/bar.md#baz', '/foo/bar/#baz', { stripExtensions: ['.md', '.mdx'] });
+test('/foo/bar.mdx#baz', '/foo/bar/#baz', { stripExtensions: ['.md', '.mdx'] });
 
 // Do not touch in page links
 test('#hash', '#hash');

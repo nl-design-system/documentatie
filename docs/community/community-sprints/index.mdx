@@ -2,6 +2,7 @@
 title: Community Sprints
 hide_title: true
 hide_table_of_contents: false
+navigation_order: 3
 sidebar_label: Community Sprints
 pagination_label: Community Sprints
 description: Uitleg over de NL Design System Community Sprints
@@ -17,9 +18,14 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
-import { Heading3, Paragraph } from "@utrecht/component-library-react/dist/css-module";
-import { Card, CardContent, CardGroup } from "@site/src/components/CardGroup";
-import { Link } from "@site/src/components/Link";
+import { Heading3 } from "@nl-design-system-community/documentation-components/src/heading/heading";
+import { Paragraph } from "@nl-design-system-community/documentation-components/src/paragraph/paragraph";
+import {
+  Card,
+  CardContent,
+  CardGroup,
+} from "@nl-design-system-community/documentation-components/src/components/CardGroup";
+import { Link } from "@nl-design-system-community/documentation-components/src/components/Link";
 
 # Over Community Sprints
 
@@ -49,7 +55,7 @@ Lees meer over de actieve Community Sprints. Hieronder vind je links naar pagina
         <Paragraph>Binnen de Rijkshuisstijl Community werken we toe naar componenten in verschillende frameworks welke voldoen aan de Rijkshuisstijl. Deze componenten zijn huisstijl-onafhankelijk en kunnen eenvoudig worden gestyled volgens de verschillende Rijkshuisstijl-deelidentiteiten.</Paragraph>
       </div>
       <Paragraph>
-        <Link to="/community/community-sprints/rijkshuisstijl-community">
+        <Link href="/community/community-sprints/rijkshuisstijl-community">
           {'Lees verder over de Rijkshuisstijl Community'}
         </Link>
       </Paragraph>
@@ -63,7 +69,7 @@ Lees meer over de actieve Community Sprints. Hieronder vind je links naar pagina
         <Paragraph>In deze Community Sprint ontwikkelen we aan een uitgebreide set van huisstijl-onafhankelijke templates voor Mijn Omgevingen en Formulieren die direct te gebruiken zijn voor websites en applicaties binnen de overheid.</Paragraph>
       </div>
       <Paragraph>
-        <Link to="/community/community-sprints/mijn-services-community">
+        <Link href="/community/community-sprints/mijn-services-community">
           {'Lees verder over de MijnServices Community'}
         </Link>
       </Paragraph>

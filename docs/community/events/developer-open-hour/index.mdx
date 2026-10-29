@@ -2,15 +2,17 @@
 title: Developer Open Hour
 hide_title: true
 hide_table_of_contents: false
+navigation_order: 3
 sidebar_label: Developer Open Hour
 pagination_label: In de Developer Open Hour wisselen developers informatie, inzichten en tips met elkaar uit.
 description: Tijdens Developer Open Hour kun je laagdrempelig vragen over development in de NL Design System community bespreken. Hier meld je je aan en zie je de planning.
 slug: /events/developer-open-hour
 ---
 
-import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
 
 # Developer Open Hour
 
@@ -36,14 +38,20 @@ De Developer Open Hour vindt plaats op [Slack](/slack) in het kanaal `#nl-design
 Door je aan te melden kunnen wij je op de hoogte houden van Developer Open Hours. Je ontvangt dan ook direct een kalenderbestandje, zodat je de Developer Open Hour makkelijk aan je agenda kan toevoegen.
 
 <ActionGroup>
-  <ButtonLink href="/events/developer-open-hour/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight />
+  <ButtonLink href="/events/developer-open-hour/aanmelden" purpose="primary">
+    {"Meld je aan"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
-  <ButtonLink href="/slack/" appearance="secondary-action">
-    {"Doe mee op Slack"} <IconChevronRight />
+  <ButtonLink href="/slack/" purpose="secondary">
+    {"Doe mee op Slack"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
 ## Vragen of ideeën
 
-Heb je vragen of ideeën voor de Developer Open Hour? Stuur ons dan een mailtje op [info@nldesignsystem.nl](info@nldesignsystem.nl).
+Heb je vragen of ideeën voor de Developer Open Hour? Stuur ons dan een mailtje op [info@nldesignsystem.nl](mailto:info@nldesignsystem.nl).

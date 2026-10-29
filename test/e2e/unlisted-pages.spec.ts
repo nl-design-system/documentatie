@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 import { readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import * as cheerio from 'cheerio';
-import { parseFrontmatter } from '@astrojs/markdown-remark';
+import { parseFrontmatter, ParseFrontmatterResult } from '@astrojs/markdown-remark';
 import { globSync } from 'glob';
 
 const sourcefiles = globSync('docs/**/*.{md,mdx}')
@@ -16,12 +16,12 @@ const CONFIG = {
   sitemap: '/sitemap-index.xml',
 };
 
-const toPathname = (slug, pathname) => {
+const toPathname = (slug: string, pathname: string) => {
   const result =
     slug ||
     pathname
       .replace('../../docs', '')
-      .replace('README')
+      .replace('README', '')
       .replace(/.md?(x)/, '');
 
   return `${result}/`.replace('undefined', '').replace('//', '/');
@@ -32,24 +32,24 @@ test.describe('Unlisted pages', () => {
 
   sourcefiles.forEach((sourcefile) => {
     test.describe(sourcefile, async () => {
-      let frontmatter;
-      let pathname;
+      let frontmatter: ParseFrontmatterResult['frontmatter'];
+      let pathname: string;
 
       test.beforeAll(async () => {
         const source = await readFile(resolve(__dirname, sourcefile), { encoding: 'utf8' });
         const { frontmatter: _frontmatter } = parseFrontmatter(source);
-        pathname = toPathname(_frontmatter?.slug, sourcefile);
+        pathname = toPathname(_frontmatter && _frontmatter['slug'], sourcefile);
         frontmatter = _frontmatter;
       });
 
       test('is removed from the sitemap when unlisted', () => {
-        if (frontmatter.unlisted) {
+        if (frontmatter['unlisted']) {
           expect(sitemapPathnames.includes(pathname)).toBe(false);
         }
       });
 
       test('prevents search engines from indexing', async ({ page }) => {
-        if (frontmatter.unlisted) {
+        if (frontmatter['unlisted']) {
           await page.goto(`${CONFIG.baseUrl}${pathname}`);
           const robots = await page.locator('meta[name="robots" i]').getAttribute('content');
 
@@ -62,7 +62,7 @@ test.describe('Unlisted pages', () => {
 });
 
 function getPathnamesFromSitemap(sitemapPath: string): string[] {
-  const paths = [];
+  const paths: string[] = [];
 
   try {
     const sitemapIndex = readFileSync(sitemapPath, 'utf8');

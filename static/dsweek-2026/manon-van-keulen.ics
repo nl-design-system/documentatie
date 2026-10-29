@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Hoe maak je niet een ontwerp toegankelijk, maar ontwerp je vanaf het begin toegankelijk? Digitale toegankelijkheid is geen aanpassing achteraf, maar begint bij de keuzes die je maakt tijdens het ontwerpen. In deze sessie ontdek je hoe je toegankelijkheid als uitgangspunt kunt meenemen in ontwerpkeuzes en design systems. Aan de hand van praktijkvoorbeelden zie je welke interactiepatronen goed werken en waar het in de praktijk vaak misgaat. Denk aan verkeerd gebruikte tabellen, complexe formulieren en interactieve elementen waarvan niet duidelijk is hoe je ze moet gebruiken. Geen pleisters plakken met ARIA achteraf, maar vanaf de start kiezen voor logische interacties en passende semantiek. Zo ondersteunen vorm en interactie de gebruiker in plaats van een belemmering te vormen. Een praktische sessie voor iedereen die betrokken is bij het ontwerpen, ontwikkelen en verbeteren van digitale dienstverlening. 
+UID:8b11f39f-6a13-49ba-a072-1cff3cfa6916
+SUMMARY:Toegankelijkheid begint bij ontwerp door Manon van Keulen
+DTSTART;TZID=Europe/Amsterdam:20261027T163000
+DTEND;TZID=Europe/Amsterdam:20261027T171500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/meet/347769278349154?p=5HS1tOwpqJrAnP58Eo
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

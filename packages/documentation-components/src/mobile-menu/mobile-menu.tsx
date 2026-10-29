@@ -1,0 +1,70 @@
+import type { ReactNode } from 'react';
+import { Button } from '../button/button';
+import { Drawer } from '@utrecht/component-library-react';
+import { Icon } from '../icon/icon';
+import { IconX, IconMenu2 } from '../functional-icon';
+import { i18n, type I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index';
+import '@utrecht/drawer-css/dist/index.css';
+import './mobile-menu.css';
+
+export interface MobileMenuTriggerProps {
+  lang: I18nLanguages;
+}
+
+export const MobileMenuTrigger = ({ lang }: MobileMenuTriggerProps) => {
+  return (
+    <ma-mobile-menu-trigger>
+      <Button
+        className="ma-mobile-menu-trigger"
+        purpose="subtle"
+        iconStart={
+          <Icon>
+            <IconMenu2 />
+          </Icon>
+        }
+        /* @ts-expect-error commandfor is not defined in React. Polyfill is included */
+        commandfor="ma-mobile-menu-drawer"
+        command="show-modal"
+      >
+        {i18n[lang].menu}
+      </Button>
+    </ma-mobile-menu-trigger>
+  );
+};
+
+export interface MobileMenuProps {
+  children?: ReactNode;
+  lang: I18nLanguages;
+}
+
+export const MobileMenu = ({ children, lang }: MobileMenuProps) => {
+  return (
+    <Drawer
+      id="ma-mobile-menu-drawer"
+      className="ma-mobile-menu-drawer"
+      modal={true}
+      aria-labelledby="mobile-menu-label"
+    >
+      <span className="ma-mobile-menu-drawer__label" id="mobile-menu-label">
+        {i18n[lang].mainNavLabel}
+      </span>
+      <header className="ma-mobile-menu-drawer__header">
+        <Button
+          purpose="subtle"
+          /* @ts-expect-error -- commandfor is not defined in react. Polyfill is included */
+          commandfor="ma-mobile-menu-drawer"
+          command="request-close"
+          iconStart={
+            <Icon>
+              <IconX />
+            </Icon>
+          }
+          iconOnly
+        >
+          {i18n[lang].close}
+        </Button>
+      </header>
+      {children}
+    </Drawer>
+  );
+};

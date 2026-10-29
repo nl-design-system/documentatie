@@ -1,0 +1,12 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 1,
+      "staticDistDir": "./packages/website/dist",
+      "url": ["/", "/richtlijnen/content/tekstopmaak/", "/accordion/"]
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}

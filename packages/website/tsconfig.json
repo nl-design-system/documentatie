@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": ["astro/tsconfigs/strict", "@nl-design-system/tsconfig"],
-  "include": [".astro/types.d.ts", "**/*"],
+  "include": [".astro/types.d.ts", "src/**/*", "scripts/**/*"],
   "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "baseUrl": ".",
@@ -11,7 +11,7 @@
       "@docs/*": ["../../docs/*"],
       "@site/*": ["../../*"],
       "@theme/*": ["../../src/theme/*"],
-      "@components/*": ["src/components/*"],
+      "@nl-design-system-community/documentation-components/src/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
       "@utils/*": ["src/utils/*"]

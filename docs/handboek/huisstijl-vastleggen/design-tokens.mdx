@@ -1,6 +1,5 @@
 ---
-title: Design tokens
-hide_title: true
+title: Design tokens - Introductie
 hide_table_of_contents: false
 sidebar_label: Design tokens
 sidebar_position: 1
@@ -16,7 +15,7 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
-import { VideoPlayer } from "@site/src/components/VideoPlayer";
+import { VideoPlayer } from "@nl-design-system-community/documentation-components/src/components/VideoPlayer";
 
 # Design tokens
 
@@ -89,9 +88,13 @@ Dit zijn vaak terugkerende visuele eigenschappen die niet aan één specifiek co
 
 ![De kleur #FA5757 verwijst naar 'color.red.500' met het label 'Brand'. 'color.red.500' verwijst naar 'feedback.invalid.color' met het label 'Common'.](https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen_design-tokens_common.png)
 
-{/* TODO: Linken naar de Common tokens van het voorbeeld thema */}
+:::tip[Tip]
 
-[Bekijk de richtlijnen voor stijl](/richtlijnen/stijl)
+Vanuit NL Design System bieden we organisaties een 'basis-set' van Common tokens aan genaamd 'Basis-tokens'. Door organisatieoverstijgend uit dezelfde bron te werken, worden componenten eenvoudig uitwisselbaar tussen organisaties.
+
+[Bekijk de basis-tokens documentatie](/handboek/huisstijl/basis-tokens)
+
+:::
 
 ### Component tokens
 
@@ -101,7 +104,7 @@ Dit zijn alle tokens die nodig zijn voor een component. Ze verkrijgen hun waarde
 
 {/* TODO: Linken naar de Component tokens van het voorbeeld thema */}
 
-[Bekijk het componenten overzicht](/componenten)
+[Bekijk het componenten overzicht](/componenten/)
 
 ## Naamgeving
 
@@ -256,7 +259,7 @@ Wanneer je design tokens voor documentatie uitschrijft en presenteert als lijst.
 
 ## Design tokens in CSS
 
-Front-end developers gebruiken design tokens als _CSS variable_, bijvoorbeeld:
+Front-end developers gebruiken design tokens als <i lang="en">CSS variable</i>, bijvoorbeeld:
 
 ```css
 .dark-theme {
@@ -301,7 +304,7 @@ Begin bijvoorbeeld met een `color.tokens.json` te maken:
 }
 ```
 
-Gebruik de _prefix_ van de organistatie voor je _brand design tokens_. Voor _autocomplete_ is het handig om je kleuren te groeperen onder `color`. Je mag helemaal zelf kiezen hoe je de kleuren en kleurtinten wilt noemen. Wij kiezen meestal een afgeronde _lightness_ waarde (zoals 40 voor 39%), zodat je in de praktijk makkelijk kan inschatten of twee tinten voldoende contrast hebben.
+Gebruik de <i lang="en">prefix</i> van de organistatie voor je <i lang="en">brand design tokens</i>. Voor <i lang="en">autocomplete</i> is het handig om je kleuren te groeperen onder `color`. Je mag helemaal zelf kiezen hoe je de kleuren en kleurtinten wilt noemen. Wij kiezen meestal een afgeronde <i lang="en">lightness</i> waarde (zoals 40 voor 39%), zodat je in de praktijk makkelijk kan inschatten of twee tinten voldoende contrast hebben.
 
 Niet gebruik maken van huisstijl design tokens in je CSS code gebruiken helpt om componenten herbruikbaar te maken voor onze open source community.
 
@@ -338,7 +341,7 @@ De CSS thema wordt dan automatisch gemaakt met de JSON als bron:
 }
 ```
 
-Gebruik alleen _component design tokens_ in je CSS om jouw component herbruikbaar te maken, in andere situaties en voor andere huisstijlen.
+Gebruik alleen <i lang="en">component design tokens</i> in je CSS om jouw component herbruikbaar te maken, in andere situaties en voor andere huisstijlen.
 
 ```css
 .rijkshuisstijl-button {

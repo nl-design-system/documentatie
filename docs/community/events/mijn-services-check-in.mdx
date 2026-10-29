@@ -2,6 +2,7 @@
 title: MijnServices Check-in
 hide_title: true
 hide_table_of_contents: false
+navigation_order: 4
 sidebar_label: MijnServices Check-in
 pagination_label: Tijdens de MijnServices Check-in delen we inzichten, ideeën en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt.
 description: Tijdens de MijnServices Check-in delen we inzichten, ideeën en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt. Lees hier hoe je mee kunt doen en wanneer het plaatsvindt.
@@ -16,31 +17,38 @@ keywords:
   - overheidsbrede portalen community
 ---
 
-import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
 
 # MijnServices Check-in
 
-De MijnServices Check-ins zijn laagdrempelige online bijeenkomsten waar ontwerpers en ontwikkelaars vanuit verschillende overheidsorganisaties samenkomen om te werken aan MijnOmgevingen, de persoonlijke, samenhangende digitale omgevingen van de overheid.
+De MijnServices Check-in is een laagdrempelige online bijeenkomst waar ontwerpers en ontwikkelaars vanuit verschillende overheidsorganisaties samenkomen om te werken aan MijnOmgevingen, de persoonlijke, samenhangende digitale omgevingen van de overheid.
 
 Tijdens deze sessies delen we inzichten, ideeën en voortgang rond de doorontwikkeling van NL Design System-componenten die binnen MijnOmgevingen worden gebruikt. We stemmen af, leren van elkaar en zorgen ervoor dat ontwerp en techniek elkaar versterken. Zo bouwen we samen stap voor stap aan een herkenbare, toegankelijke en betrouwbare digitale overheid.
 Iedereen die betrokken is bij de ontwikkeling van MijnOmgevingen is welkom om aan te sluiten, of je nu ontwerpt, ontwikkelt, test of implementeert.
 
 ## Ben je erbij?
 
-Iedereen kan aansluiten! Wekelijks of incidenteel, wanneer je vragen hebt of iets wilt bespreken.
+Iedereen kan aansluiten! Elke twee weken of incidenteel, wanneer je vragen hebt of iets wilt bespreken.
 
-De MijnServices Check-in vindt plaats op [Slack](/slack) in het kanaal `#nl-design-system-designers`. We gebruiken de Huddle-functie van dat kanaal om elkaar te spreken. In dat kanaal vind je ook de threads van eerdere sessies.
+De MijnServices Check-in is elke even week op donderdag van 10:00 tot 11:00. En vindt plaats op [Slack](/slack) in het kanaal `#nl-design-system-designers`. We gebruiken de Huddle-functie van dat kanaal om elkaar te spreken. In dat kanaal vind je ook de threads van eerdere sessies.
 
 Aanmelden is niet verplicht, maar door je aan te melden voor de MijnServices Check-in kunnen wij je op de hoogte houden van bijeenkomsten zoals de MijnServices Check-in. Je ontvangt dan ook direct een kalenderbestandje, zodat je de MijnServices Check-in makkelijk aan je agenda kan toevoegen.
 
 <ActionGroup>
-  <ButtonLink href="/community/community-sprints/mijn-services-community/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight />
+  <ButtonLink href="/community/community-sprints/mijn-services-community/aanmelden" purpose="primary">
+    {"Meld je aan"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
-  <ButtonLink href="/slack/" appearance="secondary-action">
-    {"Doe mee op Slack"} <IconChevronRight />
+  <ButtonLink href="/slack/" purpose="secondary">
+    {"Doe mee op Slack"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
@@ -51,8 +59,11 @@ In deze Community Sprint ontwikkelen we een uitgebreide set van huisstijl-onafha
 Of je nu werkt aan een pagina, een formulier of een specifieke flow, met deze templates werken we toe naar een éénduidige beleving voor inwoners en ondernemers.
 
 <ActionGroup>
-  <ButtonLink href="/community/community-sprints/mijn-services-community" appearance="primary-action">
-    {"Lees meer over de MijnServices Community"} <IconChevronRight />
+  <ButtonLink href="/community/community-sprints/mijn-services-community" purpose="primary">
+    {"Lees meer over de MijnServices Community"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
