@@ -1,8 +1,9 @@
 {
   "year": "2026",
-  "isUpComing": true,
-  "isHappening": false,
-  "miro": false,
+  "isUpComing": false,
+  "isHappening": true,
+  "sessionsAreFinal": true,
+  "miro": "/miro",
   "nl": {
     "dateRange": "26 tot en met 29 oktober",
     "edition": "5e"

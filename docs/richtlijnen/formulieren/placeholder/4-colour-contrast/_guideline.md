@@ -6,10 +6,10 @@ Kleurcontrast voor tekst ten opzichte van de achtergrond moet voldoen aan WCAG, 
 
 Sommige browsers zoals Firefox maken placeholdertekst standaard doorzichtiger. Voeg daarom in de CSS `opacity: 1` toe voor de placeholder.
 
-```css!
+```css
 ::placeholder {
-    opacity: 1;
-    color: #757575;
+  opacity: 1;
+  color: #757575;
 }
 ```
 

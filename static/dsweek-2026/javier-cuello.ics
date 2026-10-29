@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:What if you could build exactly the design tools your team needs, instead of adapting your workflow to the tools available? Creating custom design tooling has become easier than ever. Instead of relying solely on generic plugins and frameworks, teams can now build small, purpose-made tools that address the specific needs of their projects and design systems. In this session, Javier Cuello shares practical examples of how he has been creating and using custom mini plugins and design tools to solve problems that previously seemed difficult to tackle. He’ll show what’s possible, where these tools can add value, and how they can improve everyday design workflows. A practical and inspiring session for designers who want to rethink their tooling, with plenty of useful insights for developers too.
+UID:b790be71-e526-41d8-8ae5-9e81bf3b3802
+SUMMARY:The Renaissance of design tooling by Javier Cuello
+DTSTART;TZID=Europe/Amsterdam:20261028T150000
+DTEND;TZID=Europe/Amsterdam:20261028T154500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/meet/347769278349154?p=5HS1tOwpqJrAnP58Eo
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

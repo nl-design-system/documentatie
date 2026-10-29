@@ -1,20 +1,20 @@
 ---
 import { getCollection } from 'astro:content';
 import { siteDescription, siteTitle } from '../seo.config.ts';
-import CenterColumnLayout from '@layouts/center-column.astro';
-import { Grid } from '@components/grid/grid';
-import { Heading } from '@components/heading/heading';
-import { Paragraph } from '@components/paragraph/paragraph';
-import { UnorderedList } from '@components/unordered-list/unordered-list';
-import { Strong } from '@components/strong/strong';
-import { ButtonLink } from '@components/button-link/button-link';
-import { ActionGroup } from '@components/action-group/action-group';
-import { Image } from '@components/image/image';
-import { Card } from '@components/card/card';
-import { Link } from '@components/link/link';
-import { IconChevronRight } from '@tabler/icons-react';
-import { VideoPlayer } from '../../../../src/components/VideoPlayer';
-import { HeartbeatEpisode } from '../../../../src/components/HeartbeatEpisode';
+import PageBodySectionsLayout from '@layouts/page-body-sections.astro';
+import { Grid } from '@nl-design-system-community/documentation-components/src/grid/grid.tsx';
+import { Heading } from '@nl-design-system-community/documentation-components/src/heading/heading.tsx';
+import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph.tsx';
+import { UnorderedList } from '@nl-design-system-community/documentation-components/src/unordered-list/unordered-list.tsx';
+import { Bold } from '@nl-design-system-community/documentation-components/src/bold/bold.tsx';
+import { ButtonLink } from '@nl-design-system-community/documentation-components/src/button-link/button-link.tsx';
+import { ActionGroup } from '@nl-design-system-community/documentation-components/src/action-group/action-group.tsx';
+import { Image } from '@nl-design-system-community/documentation-components/src/image/image.tsx';
+import { Card } from '@nl-design-system-community/documentation-components/src/card/card.tsx';
+import { Link } from '@nl-design-system-community/documentation-components/src/link/link.tsx';
+import { IconChevronRight } from '@nl-design-system-community/documentation-components/src/functional-icon/index.tsx';
+import { VideoPlayer } from '@nl-design-system-community/documentation-components/src/components/VideoPlayer.tsx';
+import { HeartbeatEpisode } from '@nl-design-system-community/documentation-components/src/components/HeartbeatEpisode.tsx';
 import {
   DeveloperSVG,
   DesignerSVG,
@@ -24,8 +24,12 @@ import {
   ComponentSVG,
   ExamplesSVG,
   UserResearchSVG,
-} from '../../../../src/components/Icons';
+} from '@nl-design-system-community/documentation-components/src/components/Icons';
 import './index.css';
+import {
+  PageBodySection,
+  PageBodyContent,
+} from '@nl-design-system-community/documentation-components/src/page-body/page-body';
 
 const docs = await getCollection('docs');
 const wcag = await getCollection('wcag');
@@ -44,303 +48,331 @@ const sections: Record<string, { title: string; titleSm?: string; id: string }[]
 });
 ---
 
-<CenterColumnLayout class="ma-home ma-body-copy" title={siteTitle} description={siteDescription}>
-  <Grid className="ma-homepage-section ma-homepage-section--highlight ma-homepage-section--hero">
-    <Grid.Cell span="all" className="ma-flow">
-      <Heading level={1}>Samen bouwen aan betere digitale dienstverlening</Heading>
-      <Paragraph purpose="lead">
-        NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te ontdekken
-        welke componenten écht werken in de praktijk. Zo werken we toe naar een Hall of Fame van gebruiksvriendelijke,
-        toegankelijke componenten, patronen en templates.
-      </Paragraph>
-      <Heading level={2}>Waarom meedoen?</Heading>
-      <UnorderedList>
-        <UnorderedList.Item>
-          <Strong>Actieve community</Strong> die regelmatig kennis, ervaring en componenten deelt
-        </UnorderedList.Item>
-        <UnorderedList.Item>
-          <Strong>Groeiende bibliotheek</Strong> gebaseerd op gebruikersonderzoek en praktijkervaring
-        </UnorderedList.Item>
-        <UnorderedList.Item>
-          <Strong>Open source oplossingen</Strong> waar iedereen componenten kan gebruiken en bijdragen
-        </UnorderedList.Item>
-        <UnorderedList.Item>
-          <Strong>Deelnemen op het niveau dat past</Strong>, stap voor stap, zonder licentiekosten
-        </UnorderedList.Item>
-      </UnorderedList>
-      <ActionGroup>
-        <ButtonLink href="/handboek/estafettemodel/" purpose="primary"> Bekijk hoe het werkt </ButtonLink>
-        <ButtonLink href="/community/sluit-je-aan/" purpose="secondary"> Doe mee </ButtonLink>
-      </ActionGroup>
-    </Grid.Cell>
-  </Grid>
+<PageBodySectionsLayout class="ma-home ma-body-copy" title={siteTitle} description={siteDescription}>
+  <PageBodySection
+    appearance="breakout"
+    className="ma-homepage-section ma-homepage-section--highlight ma-homepage-section--hero"
+  >
+    <PageBodyContent appearance="breakout-content">
+      <Grid.Cell span="all" className="ma-flow">
+        <Heading level={1}>Samen bouwen aan betere digitale dienstverlening</Heading>
+        <Paragraph purpose="lead">
+          NL Design System is geen gewoon design system. Het is een verzameling van design systems om samen te ontdekken
+          welke componenten écht werken in de praktijk. Zo werken we toe naar een Hall of Fame van gebruiksvriendelijke,
+          toegankelijke componenten, patronen en templates.
+        </Paragraph>
+        <Heading level={2}>Waarom meedoen?</Heading>
+        <UnorderedList>
+          <UnorderedList.Item>
+            <Bold>Actieve community</Bold> die regelmatig kennis, ervaring en componenten deelt
+          </UnorderedList.Item>
+          <UnorderedList.Item>
+            <Bold>Groeiende bibliotheek</Bold> gebaseerd op gebruikersonderzoek en praktijkervaring
+          </UnorderedList.Item>
+          <UnorderedList.Item>
+            <Bold>Open source oplossingen</Bold> waar iedereen componenten kan gebruiken en bijdragen
+          </UnorderedList.Item>
+          <UnorderedList.Item>
+            <Bold>Deelnemen op het niveau dat past</Bold>, stap voor stap, zonder licentiekosten
+          </UnorderedList.Item>
+        </UnorderedList>
+        <ActionGroup>
+          <ButtonLink href="/handboek/estafettemodel/" purpose="primary"> Bekijk hoe het werkt </ButtonLink>
+          <ButtonLink href="/community/sluit-je-aan/" purpose="secondary"> Doe mee </ButtonLink>
+        </ActionGroup>
+      </Grid.Cell>
+    </PageBodyContent>
+  </PageBodySection>
 
-  <Grid className="ma-homepage-section">
-    <Grid.Cell span="all" className="ma-flow">
-      <Heading level={2}>Waar begin je?</Heading>
-      <Heading level={3}>Bekijk de onboarding sessie</Heading>
-      <VideoPlayer id="Yh4NqpphJQ4" title="Onboarding sessie voor NL Design System" client:load />
-      <Paragraph>
-        In de onboarding sessie legt het kernteam uit op welke manieren je mee kan doen met NL Design System, hoe je een
-        huisstijl vast kan leggen als thema en hoe je de componenten kunt gebruiken in code.
-      </Paragraph>
-      <Heading level={3}>Lees de documentatie</Heading>
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Als je websites bouwt"
-        headingLevel={4}
-        description="Meedoen met code? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Storybook en design tokens."
-        href="/handboek/developer/introductie/"
-      >
-        <DeveloperSVG slot="image" />
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Als je designs maakt"
-        headingLevel={4}
-        description="Meedoen met Figma? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
-        href="/handboek/designer/introductie/"
-      >
-        <DesignerSVG slot="image" />
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Als je content beheert"
-        headingLevel={4}
-        description="Meedoen als contentmaker? Gebruik vandaag nog onze content richtlijnen bij het maken van toegankelijke webcontent."
-        href="/richtlijnen/content/"
-      >
-        <ContentSVG slot="image" />
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Als je projecten leidt"
-        headingLevel={4}
-        description="Meedoen als manager? Herbruikbare oplossingen die tijd en budget besparen, met business cases en implementatiestrategieën"
-        href="/handboek/manager/introductie/"
-      >
-        <ManagerSVG slot="image" />
-      </Card>
-    </Grid.Cell>
-  </Grid>
+  <PageBodySection className="ma-homepage-section">
+    <PageBodyContent appearance="breakout-content">
+      <Grid>
+        <Grid.Cell span="all" className="ma-flow">
+          <Heading level={2}>Waar begin je?</Heading>
+          <Heading level={3}>Bekijk de onboarding sessie</Heading>
+          <VideoPlayer id="Yh4NqpphJQ4" title="Onboarding sessie voor NL Design System" client:load />
+          <Paragraph>
+            In de onboarding sessie legt het kernteam uit op welke manieren je mee kan doen met NL Design System, hoe je
+            een huisstijl vast kan leggen als thema en hoe je de componenten kunt gebruiken in code.
+          </Paragraph>
+          <Heading level={3}>Lees de documentatie</Heading>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Als je websites bouwt"
+            headingLevel={4}
+            description="Meedoen met code? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Storybook en design tokens."
+            href="/handboek/developer/introductie/"
+          >
+            <DeveloperSVG slot="image" />
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Als je designs maakt"
+            headingLevel={4}
+            description="Meedoen met Figma? In het Handboek vind je alle informatie die je nodig hebt om aan de slag te gaan met de componenten, Figma en design tokens."
+            href="/handboek/designer/introductie/"
+          >
+            <DesignerSVG slot="image" />
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Als je content beheert"
+            headingLevel={4}
+            description="Meedoen als contentmaker? Gebruik vandaag nog onze content richtlijnen bij het maken van toegankelijke webcontent."
+            href="/richtlijnen/content/"
+          >
+            <ContentSVG slot="image" />
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Als je projecten leidt"
+            headingLevel={4}
+            description="Meedoen als manager? Herbruikbare oplossingen die tijd en budget besparen, met business cases en implementatiestrategieën"
+            href="/handboek/manager/introductie/"
+          >
+            <ManagerSVG slot="image" />
+          </Card>
+        </Grid.Cell>
+      </Grid>
+    </PageBodyContent>
+  </PageBodySection>
 
-  <Grid className="ma-homepage-section ma-homepage-section--highlight">
-    <Grid.Cell span="all" className="ma-flow">
-      <Heading level={2}>Bekijk de laatste updates</Heading>
-      <HeartbeatEpisode headingLevel={3} />
+  <PageBodySection appearance="breakout-content" className="ma-homepage-section ma-homepage-section--highlight">
+    <PageBodyContent appearance="breakout-content">
+      <Grid>
+        <Grid.Cell span="all" className="ma-flow">
+          <Heading level={2}>Bekijk de laatste updates</Heading>
+          <HeartbeatEpisode headingLevel={3} client:load />
 
-      <ActionGroup>
-        <ButtonLink href="/events/heartbeat/aanmelden/" purpose="primary">
-          Meld je aan voor de Heartbeat
-          <IconChevronRight slot="iconEnd" />
-        </ButtonLink>
-        <ButtonLink href="/events/heartbeat/videos/" purpose="secondary">
-          Bekijk andere Heartbeats
-          <IconChevronRight slot="iconEnd" />
-        </ButtonLink>
-      </ActionGroup>
-    </Grid.Cell>
-  </Grid>
+          <ActionGroup>
+            <ButtonLink href="/events/heartbeat/aanmelden/" purpose="primary">
+              Meld je aan voor de Heartbeat
+              <IconChevronRight slot="iconEnd" />
+            </ButtonLink>
+            <ButtonLink href="/events/heartbeat/videos/" purpose="secondary">
+              Bekijk andere Heartbeats
+              <IconChevronRight slot="iconEnd" />
+            </ButtonLink>
+          </ActionGroup>
+        </Grid.Cell>
+      </Grid>
+    </PageBodyContent>
+  </PageBodySection>
 
-  <Grid className="ma-homepage-section">
-    <Grid.Cell span="all" className="ma-flow">
-      <Heading level={2}>Gebruik NL Design System</Heading>
-    </Grid.Cell>
+  <PageBodySection appearance="breakout-content" className="ma-homepage-section">
+    <PageBodyContent appearance="breakout-content">
+      <Grid>
+        <Grid.Cell span="all" className="ma-flow">
+          <Heading level={2}>Gebruik NL Design System</Heading>
+        </Grid.Cell>
 
-    <Grid.Cell span={6}>
-      <Card
-        heading="Richtlijnen"
-        headingLevel={3}
-        description="Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen."
-        href="/richtlijnen/"
-      >
-        <GuidelineSVG slot="image" />
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Componenten"
-        headingLevel={3}
-        description="Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer."
-        href="/componenten/"
-      >
-        <ComponentSVG slot="image" />
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Voorbeelden"
-        headingLevel={3}
-        description="Een overzicht van patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te lossen."
-        href="/voorbeelden/"
-      >
-        <ExamplesSVG slot="image" />
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Gebruikersonderzoek"
-        headingLevel={3}
-        description="NL Design System verzamelt en publiceert gebruikersonderzoeken en faciliteert de community om samen te werken aan nieuwe onderzoeken."
-        href="/voorbeelden/onderzoek/"
-      >
-        <UserResearchSVG slot="image" />
-      </Card>
-    </Grid.Cell>
-  </Grid>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Richtlijnen"
+            headingLevel={3}
+            description="Fundamentele richtlijnen voor het toepassen van stijl elementen zoals typografie, kleuren en iconen."
+            href="/richtlijnen/"
+          >
+            <GuidelineSVG slot="image" />
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Componenten"
+            headingLevel={3}
+            description="Een overzicht van herbruikbare, toegankelijke componenten voor formulieren, navigatie, tabellen en meer."
+            href="/componenten/"
+          >
+            <ComponentSVG slot="image" />
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Voorbeelden"
+            headingLevel={3}
+            description="Een overzicht van patronen en templates om vaak voorkomende scenario's op een consistente, weloverwogen manier op te lossen."
+            href="/voorbeelden/"
+          >
+            <ExamplesSVG slot="image" />
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Gebruikersonderzoek"
+            headingLevel={3}
+            description="NL Design System verzamelt en publiceert gebruikersonderzoeken en faciliteert de community om samen te werken aan nieuwe onderzoeken."
+            href="/voorbeelden/onderzoek/"
+          >
+            <UserResearchSVG slot="image" />
+          </Card>
+        </Grid.Cell>
+      </Grid>
+    </PageBodyContent>
+  </PageBodySection>
 
-  <Grid className="ma-homepage-section">
-    <Grid.Cell span="all">
-      <Heading level={2}>Wie doen er al mee?</Heading>
-    </Grid.Cell>
+  <PageBodySection appearance="breakout-content" className="ma-homepage-section">
+    <PageBodyContent appearance="breakout-content">
+      <Grid>
+        <Grid.Cell span="all">
+          <Heading level={2}>Wie doen er al mee?</Heading>
+        </Grid.Cell>
 
-    <Grid.Cell span={3}>
-      <Card>
-        <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/utrecht">
-          <Image
-            src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__utrecht.svg"
-            alt="Gemeente Utrecht logo, naar Gemeente Utrecht op GitHub"
+        <Grid.Cell span={3}>
+          <Card>
+            <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/utrecht">
+              <Image
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__utrecht.svg"
+                alt="Gemeente Utrecht logo, naar Gemeente Utrecht op GitHub"
+              />
+            </Link>
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={3}>
+          <Card>
+            <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/denhaag">
+              <Image
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg"
+                alt="Gemeente Den Haag logo, naar Gemeente Den Haag op GitHub"
+              />
+            </Link>
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={3}>
+          <Card>
+            <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/amsterdam">
+              <Image
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__amsterdam.svg"
+                alt="Gemeente Amsterdam logo, naar Gemeente Amsterdam op GitHub"
+              />
+            </Link>
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={3}>
+          <Card>
+            <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/rotterdam">
+              <Image
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rotterdam.svg"
+                alt="Gemeente Rotterdam logo, naar Gemeente Rotterdam op GitHub"
+              />
+            </Link>
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={3}>
+          <Card>
+            <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/tilburg">
+              <Image
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__tilburg.png"
+                alt="Gemeente Tilburg logo, naar Gemeente Tilburg op GitHub"
+              />
+            </Link>
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={3}>
+          <Card>
+            <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/rvo">
+              <Image
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg"
+                alt="Rijksdienst voor Ondernemend Nederland logo, naar RVO op GitHub"
+              />
+            </Link>
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={3}>
+          <Card>
+            <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/lux">
+              <Image
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.svg"
+                alt="Logius logo, naar LUX op GitHub"
+              />
+            </Link>
+          </Card>
+        </Grid.Cell>
+        <Grid.Cell span={3}>
+          <Card>
+            <Link
+              className="ma-homepage__participant-link"
+              href="https://github.com/nl-design-system/rijkshuisstijl-community"
+            >
+              <Image
+                src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rijkshuisstijl-community.svg"
+                alt="Rijkshuisstijl Community logo, naar Rijkshuisstijl Community op GitHub"
+              />
+            </Link>
+          </Card>
+        </Grid.Cell>
+
+        <Grid.Cell span="all">
+          <Paragraph className="homepage__paragraph">
+            Naast de organisaties die componenten bijdragen doen{' '}
+            <Link href="/community/wie-doet-mee">diverse andere organisaties</Link> mee in de community van NL Design System.
+          </Paragraph>
+        </Grid.Cell>
+      </Grid>
+    </PageBodyContent>
+  </PageBodySection>
+
+  <PageBodySection
+    appearance="breakout-content"
+    className="ma-homepage-section ma-homepage-section--highlight ma-homepage-section--highlight-dark"
+  >
+    <PageBodyContent appearance="breakout-content">
+      <Grid>
+        <Grid.Cell span="all">
+          <Heading level={2}>Blijf op de hoogte</Heading>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Heartbeat"
+            headingLevel={3}
+            description="Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System worden besproken."
+            href="/events/heartbeat/aanmelden/"
           />
-        </Link>
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={3}>
-      <Card>
-        <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/denhaag">
-          <Image
-            src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__denhaag.svg"
-            alt="Gemeente Den Haag logo, naar Gemeente Den Haag op GitHub"
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Nieuwsbrief"
+            headingLevel={3}
+            description="Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL Design System."
+            href="/project/blijf-op-de-hoogte/#nieuwsbrief"
           />
-        </Link>
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={3}>
-      <Card>
-        <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/amsterdam">
-          <Image
-            src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__amsterdam.svg"
-            alt="Gemeente Amsterdam logo, naar Gemeente Amsterdam op GitHub"
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Design Open Hour"
+            headingLevel={3}
+            description="Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit te wisselen."
+            href="/events/design-open-hour/aanmelden/"
           />
-        </Link>
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={3}>
-      <Card>
-        <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/rotterdam">
-          <Image
-            src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rotterdam.svg"
-            alt="Gemeente Rotterdam logo, naar Gemeente Rotterdam op GitHub"
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Developer Open Hour"
+            headingLevel={3}
+            description="Wees welkom bij de 2-wekelijkse online bijeenkomst waar developers vragen stellen, inzichten delen en tips uit te wisselen."
+            href="/events/developer-open-hour/aanmelden"
           />
-        </Link>
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={3}>
-      <Card>
-        <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/tilburg">
-          <Image
-            src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__tilburg.png"
-            alt="Gemeente Tilburg logo, naar Gemeente Tilburg op GitHub"
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="Rijkshuisstijl Community Open Hour"
+            headingLevel={3}
+            description="Tijdens de Rijkshuisstijl Community Open Hour gaan organisaties informatie, inzichten en tips uitwisselen."
+            href="/events/rijkshuisstijl-community-open-hour/"
           />
-        </Link>
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={3}>
-      <Card>
-        <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/rvo">
-          <Image
-            src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rvo.svg"
-            alt="Rijksdienst voor Ondernemend Nederland logo, naar RVO op GitHub"
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <Card
+            heading="LinkedIn"
+            headingLevel={3}
+            description="Volg NL Design System op LinkedIn voor het laatste nieuws, updates en om in contact te blijven met de community."
+            href="https://www.linkedin.com/company/nl-design-system/"
           />
-        </Link>
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={3}>
-      <Card>
-        <Link className="ma-homepage__participant-link" href="https://github.com/nl-design-system/lux">
-          <Image
-            src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__logius.png"
-            alt="Logius logo, naar LUX op GitHub"
-          />
-        </Link>
-      </Card>
-    </Grid.Cell>
-    <Grid.Cell span={3}>
-      <Card>
-        <Link
-          className="ma-homepage__participant-link"
-          href="https://github.com/nl-design-system/rijkshuisstijl-community"
-        >
-          <Image
-            src="https://raw.githubusercontent.com/nl-design-system/documentatie/assets/meedoen__rijkshuisstijl-community.png"
-            alt="Rijkshuisstijl Community logo, naar Rijkshuisstijl Community op GitHub"
-          />
-        </Link>
-      </Card>
-    </Grid.Cell>
-
-    <Grid.Cell span="all">
-      <Paragraph className="homepage__paragraph">
-        Naast de organisaties die componenten bijdragen doen{' '}
-        <Link href="/community/wie-doet-mee">diverse andere organisaties</Link> mee in de community van NL Design System.
-      </Paragraph>
-    </Grid.Cell>
-  </Grid>
-
-  <Grid className="ma-homepage-section ma-homepage-section--highlight ma-homepage-section--highlight-dark">
-    <Grid.Cell span="all">
-      <Heading level={2}>Blijf op de hoogte</Heading>
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Heartbeat"
-        headingLevel={3}
-        description="Sluit aan bij de 2-wekelijkse online bijeenkomst waarbij ontwikkelingen rondom het NL Design System worden besproken."
-        href="/events/heartbeat/aanmelden/"
-      />
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Nieuwsbrief"
-        headingLevel={3}
-        description="Meld je aan voor de nieuwsbrief en ontvang elke maand een update van de ontwikkelingen rondom het NL Design System."
-        href="/project/blijf-op-de-hoogte/#nieuwsbrief"
-      />
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Design Open Hour"
-        headingLevel={3}
-        description="Wees welkom bij de 2-wekelijkse online bijeenkomst waar designers informatie, inzichten en tips uit te wisselen."
-        href="/events/design-open-hour/aanmelden/"
-      />
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Developer Open Hour"
-        headingLevel={3}
-        description="Wees welkom bij de 2-wekelijkse online bijeenkomst waar developers vragen stellen, inzichten delen en tips uit te wisselen."
-        href="/events/developer-open-hour/aanmelden"
-      />
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="Rijkshuisstijl Community Open Hour"
-        headingLevel={3}
-        description="Tijdens de Rijkshuisstijl Community Open Hour gaan organisaties informatie, inzichten en tips uitwisselen."
-        href="/events/rijkshuisstijl-community-open-hour/"
-      />
-    </Grid.Cell>
-    <Grid.Cell span={6}>
-      <Card
-        heading="LinkedIn"
-        headingLevel={3}
-        description="Volg NL Design System op LinkedIn voor het laatste nieuws, updates en om in contact te blijven met de community."
-        href="https://www.linkedin.com/company/nl-design-system/"
-      />
-    </Grid.Cell>
-  </Grid>
-</CenterColumnLayout>
+        </Grid.Cell>
+      </Grid>
+    </PageBodyContent>
+  </PageBodySection>
+</PageBodySectionsLayout>

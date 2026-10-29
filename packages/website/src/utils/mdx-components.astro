@@ -1,20 +1,20 @@
 ---
-import { OverviewPage } from '@components/overview-page/overview-page.tsx';
-import { DocCardList } from '@components/doc-card-list/doc-card-list';
-import ComponentOverview from '@components/docusaurus-mocks/ComponentOverview.astro';
-import ComponentAnatomy from '@components/docusaurus-mocks/ComponentAnatomy.astro';
-import { CriteriaList } from '@components/criteria-list/criteria-list';
-import { CriteriaListItem } from '@components/criteria-list/criteria-list-item';
-import { Checklist, ChecklistItem } from '@site/src/components/Checklist';
+import { OverviewPage } from '@nl-design-system-community/documentation-components/src/overview-page/overview-page.tsx';
+import { DocCardList } from '@nl-design-system-community/documentation-components/src/doc-card-list/doc-card-list.tsx';
+import ComponentOverview from '@nl-design-system-community/documentation-components/src/docusaurus-mocks/ComponentOverview.astro';
+import ComponentAnatomy from '@nl-design-system-community/documentation-components/src/docusaurus-mocks/ComponentAnatomy.astro';
+import { CriteriaList } from '@nl-design-system-community/documentation-components/src/criteria-list/criteria-list.tsx';
+import { CriteriaListItem } from '@nl-design-system-community/documentation-components/src/criteria-list/criteria-list-item.tsx';
 
-export const MDXComponents = async ({ navigationItems } = {}) => {
+export const MDXComponents = async ({ navigationItems, navigationList } = {}) => {
   return {
-    Checklist,
-    ChecklistItem,
     ComponentOverview,
     ComponentAnatomy,
     CriteriaList,
-    CriteriaListItem,
+    CriteriaListItem: (props) => {
+      const scPage = navigationList.find((item) => item.href?.startsWith(`/wcag/${props.sc}`));
+      return CriteriaListItem({ ...props, scLabel: scPage.label });
+    },
     OverviewPage: (props) => OverviewPage({ ...props, pages: navigationItems || [] }),
     DocCardList,
   };

@@ -1,0 +1,18 @@
+/**
+ * Google Translate adds this class name when a page has `dir="rtl"`, but now
+ * is translated to a left-to-right script.
+ *
+ * Since the entire website is implemented using CSS Logical Properties,
+ * it is safe to adapt the layout to match the translation.
+ */
+.translated-ltr {
+  direction: ltr;
+}
+
+/**
+ * Google Translate adds this class name when a page has `dir="ltr"`, but now
+ * is translated to a right-to-left script.
+ */
+.translated-rtl {
+  direction: rtl;
+}
