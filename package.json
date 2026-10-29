@@ -69,6 +69,7 @@
   "dependencies": {
     "@babel/runtime": "7.28.6",
     "@iframe-resizer/react": "5.5.8",
+    "@justinribeiro/lite-youtube": "1.9.0",
     "@nl-design-system-candidate/code-block-docs": "1.2.1",
     "@nl-design-system-candidate/code-block-tokens": "2.0.3",
     "@nl-design-system-candidate/code-docs": "1.1.2",
@@ -182,7 +183,6 @@
     "prettier": "3.8.1",
     "prismjs": "1.30.0",
     "react-hook-form": "7.71.1",
-    "react-lite-youtube-embed": "3.5.1",
     "react-markdown": "10.1.0",
     "react-syntax-highlighter": "15.6.6",
     "rimraf": "6.1.2",

@@ -62,15 +62,7 @@ globalThis.unlistedPages = new Set();
 
 globalThis.isAstro = true;
 
-const mdxClientLoad = clientLoadPlugin([
-  'Videoplayer',
-  'VideoPlayer',
-  'Checklist',
-  'DesignTokens',
-  'NewsletterSignUp',
-  'DSWSession',
-  'HeartbeatEpisode',
-]);
+const mdxClientLoad = clientLoadPlugin(['Checklist', 'DesignTokens', 'NewsletterSignUp']);
 
 const markdownProcessor = unified({
   remarkPlugins: sharedPlugins.remarkPlugins,

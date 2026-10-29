@@ -79,7 +79,7 @@ test.describe('CSP issues', () => {
       await page.goto(url, { waitUntil: 'networkidle' });
       const violatedDirectives = await collectViolatedDirectives();
 
-      expect(violatedDirectives.length).toBe(0);
+      expect(violatedDirectives).toStrictEqual([]);
     });
   });
 });
