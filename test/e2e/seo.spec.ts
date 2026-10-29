@@ -1,7 +1,6 @@
 import { expect, test } from '@playwright/test';
-import { readFileSync } from 'node:fs';
-import * as cheerio from 'cheerio';
 import { siteBaseUrl, siteTitle, siteName, twitterCard } from '../../packages/website/src/seo.config';
+import { getPathnamesFromSitemap } from '../helpers/sitemap';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
@@ -39,7 +38,7 @@ const pathnamesSelection = [
 test.describe('SEO values', async () => {
   const pathnames =
     process.env['E2E_SEO_ALL_PAGES'] === '1'
-      ? getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`)
+      ? getPathnamesFromSitemap(CONFIG.sitemapDir, CONFIG.sitemap)
       : pathnamesSelection;
 
   pathnames.forEach(async (pathname) => {
@@ -245,31 +244,3 @@ test.describe('SEO values', async () => {
     });
   });
 });
-
-function getPathnamesFromSitemap(sitemapPath: string): string[] {
-  const paths: string[] = [];
-
-  try {
-    const sitemapIndex = readFileSync(sitemapPath, 'utf8');
-    const $ = cheerio.load(sitemapIndex, { xmlMode: true });
-
-    $('sitemap loc')
-      .map((_, element) => $(element).text())
-      .toArray()
-      .map((url) => new URL(url).pathname)
-      .forEach((sitemapPath) => {
-        getPathnamesFromSitemap(`${CONFIG.sitemapDir}${sitemapPath}`).forEach((path) => paths.push(path));
-      });
-
-    $('url loc')
-      .map((_, element) => $(element).text())
-      .toArray()
-      .map((url) => new URL(url).pathname)
-      .forEach((path) => paths.push(path));
-
-    return Array.from(new Set(paths));
-  } catch (error) {
-    console.warn(`Could not read sitemap at ${sitemapPath}, skipping accessibility tests generation.`, error);
-    return [];
-  }
-}
