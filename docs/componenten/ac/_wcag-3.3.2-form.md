@@ -16,7 +16,7 @@ NL Design System richtlijnen:
 
 - [Toegankelijke labels in formulieren](/richtlijnen/formulieren/labels/)
 - [Toegankelijke beschrijvingen en instructies in formulieren](/richtlijnen/formulieren/descriptions/)
-- [Placeholders in formulieren](richtlijnen/formulieren/placeholders/)
+- [Placeholders in formulieren](/richtlijnen/formulieren/placeholders/)
 - [Richtlijnen voor iconen](/richtlijnen/stijl/iconen/)
 - [Functionele afbeeldingen](/richtlijnen/content/afbeeldingen/functionele-afbeeldingen/)
 - [Toegankelijke formulieren](/richtlijnen/formulieren/)

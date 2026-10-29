@@ -78,7 +78,7 @@ Je kunt Git instellen om elke keer dat je een commit doet automatisch de code co
 
 Installeer de pre-commit hook met `pnpm run prepare`, nadat je `pnpm install` hebt gedaan. Hierna zul je zien dat `git commit` extra controles uitvoert voordat de commit wordt opgeslagen.
 
-Wanneer je geen tijd hebt om de fouten op te lossen, maar wel een backup wil committen, dan kun je met `git commit --no-verify` de commit doen zonder checks. [Continuous integration](./continuous-integration.mdx) checks zullen voorkomen dat deze onvoltooide code per ongeluk wordt gemerged.
+Wanneer je geen tijd hebt om de fouten op te lossen, maar wel een backup wil committen, dan kun je met `git commit --no-verify` de commit doen zonder checks. [Continuous integration](/project/kwaliteitsaanpak/continuous-integration) checks zullen voorkomen dat deze onvoltooide code per ongeluk wordt gemerged.
 
 Pre-commit hooks helpen ook te garanderen dat de code van elke atomic commit klopt, en niet alleen de code van de laatste commit in de branch. Hiermee wordt het makkelijker om met `git cherry-pick` alvast enkele commits te mergen naar de `main` branch, voordat de volledige branch klaar is.
 

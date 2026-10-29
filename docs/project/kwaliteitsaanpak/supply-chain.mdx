@@ -34,7 +34,7 @@ Vermijd installeren van onveilige dependencies. Wanneer kan dit gebeuren?
 Een dependency kan op meerdere manieren een onveilig zijn, bijvoorbeeld:
 
 - De dependency voert een aanval uit tijdens de installatie.
-- De dependency voert een aanval uit in de [continuous integration](./continuous-integration.mdx) of [continuous delivery](./continuous-delivery.mdx) pipeline.
+- De dependency voert een aanval uit in de [continuous integration](/project/kwaliteitsaanpak/continuous-integration) of [continuous delivery](/project/kwaliteitsaanpak/continuous-delivery) pipeline.
 - De dependency voert een aanval uit tijdens het uitvoeren van scripts door developers.
 - De dependency voert een aanval uit tijdens het uitvoeren van scripts in productie.
 
@@ -86,4 +86,4 @@ Bijvoorbeeld:
 
 - Gebruik `pnpm install` alleen in de buid pipeline, niet tijdens het uitvoeren van de software.
 - Installeer dependencies via npm, in plaats van bestanden inladen via een CDN.
-- [Wanneer een CDN gebruiken nodig is](../../handboek/developer/02-aan-de-slag/01-prototypes/02-cdn.mdx), gebruik dan in elk geval "version pinning" en bij voorkeur ook Subresource Integrity (SRI).
+- [Wanneer een CDN gebruiken nodig is](/handboek/developer/cdn), gebruik dan in elk geval "version pinning" en bij voorkeur ook Subresource Integrity (SRI).
