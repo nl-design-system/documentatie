@@ -1,0 +1,22 @@
+---
+title: CSP Errors on the page
+description: Tests that CSP errors are being thrown
+unlisted: true
+---
+
+import TestPageNote from "./_test-page-note.md";
+import { DivWithStyle } from "./csp-error.tsx";
+
+{/* @license CC0-1.0 */}
+
+Tests that CSP errors are being thrown
+
+<TestPageNote />
+
+<DivWithStyle client:only="react">
+  This text is marked up as being red, but according to the CSP rules, that should be prevented
+</DivWithStyle>
+
+There should not be a console log entry saying 'I should not be visible'.
+
+<script set:html="console.log('I should not be visible')"></script>
