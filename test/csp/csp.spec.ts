@@ -35,7 +35,7 @@ test.describe('CSP issues', () => {
 });
 
 function getPathnamesFromSitemap(sitemapPath: string): string[] {
-  const paths = [];
+  const paths: string[] = [];
 
   try {
     const sitemapIndex = readFileSync(sitemapPath, 'utf8');

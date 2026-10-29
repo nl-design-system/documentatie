@@ -1,0 +1,24 @@
+---
+import Document, { type Props as DocumentProps } from './document.astro';
+import { PageBodyWrapper } from '@nl-design-system-community/documentation-components/src/page-body/page-body';
+
+export interface Props extends DocumentProps {
+  main?: boolean;
+}
+
+/**
+ * This layout gives complete freedom to create your own page body sections.
+ * You can even decide to manage the `main` element yourself by using `main: false`
+ */
+const { lang, main = true, ...props } = Astro.props;
+---
+
+<Document {...props}>
+  <PageBodyWrapper
+    Component={main ? 'main' : undefined}
+    id={main ? 'main' : undefined}
+    lang={lang === 'en' ? 'en' : undefined}
+  >
+    <slot />
+  </PageBodyWrapper>
+</Document>

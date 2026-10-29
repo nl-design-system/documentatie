@@ -1,0 +1,46 @@
+{
+  "version": "0.0.0",
+  "author": "Community for NL Design System",
+  "description": "Markdown plugins for transforming and rendering the documentation of NL Design System",
+  "license": "EUPL-1.2",
+  "name": "@nl-design-system-community/documentation-markdown-plugins",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/documentatie.git",
+    "directory": "packages/documentation-markdown-plugins"
+  },
+  "type": "module",
+  "dependencies": {
+    "hast": "1.0.0",
+    "hast-util-is-element": "3.0.0",
+    "hast-util-select": "6.0.4",
+    "mdast-util-from-markdown": "2.0.3",
+    "mdast-util-mdx-jsx": "3.2.0",
+    "rehype": "13.0.2",
+    "rehype-parse": "9.0.1",
+    "rehype-stringify": "10.0.1",
+    "remark": "15.0.1",
+    "remark-custom-header-id": "1.0.0",
+    "remark-directive": "4.0.0",
+    "unified": "11.0.5"
+  },
+  "devDependencies": {
+    "@astrojs/markdown-remark": "7.3.4",
+    "@astrojs/mdx": "8.1.1",
+    "@types/hast": "3.0.5",
+    "@types/mdast": "4.0.4",
+    "vfile": "6.0.3",
+    "vitest": "4.1.11"
+  },
+  "scripts": {
+    "lint-todo": "tsc --noEmit"
+  }
+}
