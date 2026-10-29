@@ -60,7 +60,7 @@ Om de code van componenten vrij te houden van huisstijl (en zo hergebruik mogeli
 }
 ```
 
-Elke huisstijl kan op deze manier een eigen invulling geven aan de componenten, door de lijm van de middelste laag waarin de _brand identity design token_ worden gekoppeld aan _component design tokens_:
+Elke huisstijl kan op deze manier een eigen invulling geven aan de componenten, door de lijm van de middelste laag waarin de <i lang="en">brand identity design token</i> worden gekoppeld aan <i lang="en">component design tokens</i>:
 
 ```css
 :root {

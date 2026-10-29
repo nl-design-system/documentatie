@@ -37,7 +37,7 @@ Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/color-sample-css@1/dist/color-sample.css"
+  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/color-sample-css/dist/color-sample.css"
 />
 ```
 

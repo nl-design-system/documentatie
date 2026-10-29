@@ -1,6 +1,6 @@
 ---
 title: WCAG-succescriterium 2.1.4 Enkel teken sneltoetsen
-title_sm: 2.1.4 Enkel teken sneltoetsen
+title_sm: "WCAG 2.1.4: Enkel teken sneltoetsen"
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.1.4 Enkel teken sneltoetsen
@@ -26,11 +26,11 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
-import { Guideline } from "@site/src/components/Guideline";
-import { Markdown } from "@site/src/components/Markdown";
-import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
+import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
+import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_2.1.4-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
@@ -238,6 +238,4 @@ Ook voor mensen die langzaam typen of motorische problemen hebben werkt dit slec
 
 ## Help richtlijn verbeteren
 
-<Markdown omitH1 headinglevel={3}>
-  <WCAGFooterInfo />
-</Markdown>
+<Markdown omitH1 headingLevel={3} content={wcagFooterInfo} />

@@ -1,0 +1,11 @@
+.utrecht-page-body__section {
+  display: grid;
+}
+
+.utrecht-page-body__section--ma-breakout-content {
+  background-color: transparent;
+}
+
+.utrecht-page-body__content--ma-breakout-content {
+  background-color: transparent;
+}

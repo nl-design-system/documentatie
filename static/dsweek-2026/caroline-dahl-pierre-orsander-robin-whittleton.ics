@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:tzone://Microsoft/Utc
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=NL Design System:mailto:info@nldesignsystem.nl
+DESCRIPTION:Accessibility has been a core focus of Skapa, the digital design system at IKEA, since it was established in 2019. In this session, we’ll share how we embedded accessibility into the way our design system is built and maintained, and how that foundation helped foster a broader accessibility culture across the organisation, influencing both product and brand experiences.
+UID:7365a818-eabf-49c7-a6e6-6afdb1ba6ed9
+SUMMARY:Design Systems as a Lever for Accessibility Culture by Caroline Dahl, Pierre Orsander and Robin Whittleton
+DTSTART;TZID=Europe/Amsterdam:20261027T110000
+DTEND;TZID=Europe/Amsterdam:20261027T114500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20250929T104513Z
+TRANSP:TRANSPARENT
+SEQUENCE:0
+LOCATION:https://teams.microsoft.com/meet/347769278349154?p=5HS1tOwpqJrAnP58Eo
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT7H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -15,7 +15,7 @@ npm install --save-dev @nl-design-system-candidate/heading-css
 Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/heading-css@1/dist/heading.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/heading-css/dist/heading.css" />
 ```
 
 Gebruik je geen CDN, dan kun je de CSS uit `node_modules/` importeren:

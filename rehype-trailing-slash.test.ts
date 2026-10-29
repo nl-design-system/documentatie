@@ -1,9 +1,9 @@
-import { addTrailingSlash } from './rehype-trailing-slash';
+import { addTrailingSlash, TrailingSlashOptions } from './rehype-trailing-slash';
 
 const siteURL = new URL('https://example.com');
 let exitCode = 0;
 
-function test(input, expectedResult, options = {}) {
+function test(input: string, expectedResult: string, options: Partial<TrailingSlashOptions> = {}) {
   const result = addTrailingSlash(input, { siteURL, ...options });
   if (result !== expectedResult) {
     console.log('---');

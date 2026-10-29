@@ -1,4 +1,19 @@
-import { navigationRoot, navigationItem, navigationGroup } from './navigation';
+import {
+  navigationRoot,
+  navigationItem as _navigationItem,
+  navigationGroup as _navigationGroup,
+  type NavigationItemInput,
+  type NavigationGroupOptions,
+} from '@nl-design-system-community/documentation-index/src/navigation/index.ts';
+import { getAllCollections } from './content.config.ts';
+
+const entries = await getAllCollections();
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const navigationItem = (input: NavigationItemInput) => _navigationItem(entries as unknown as any, input);
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const navigationGroup = (options: NavigationGroupOptions) => _navigationGroup(entries as unknown as any, options);
 
 export const navigation = navigationRoot(
   navigationGroup({
@@ -59,6 +74,7 @@ export const navigation = navigationRoot(
                   navigationItem('docs/community/events/design-systems-week/en/program.mdx'),
                   navigationItem('docs/community/events/design-systems-week/en/timetable.mdx'),
                   navigationGroup({
+                    lang: 'en',
                     filePath: 'docs/community/events/design-systems-week/en/previous-editions',
                   }),
                 ],

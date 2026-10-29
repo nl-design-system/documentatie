@@ -1,6 +1,5 @@
 ---
 title: Video's van Design Systems Week PLACEHOLDER_YEAR
-title_sm: "PLACEHOLDER_YEAR"
 description: Opnames van nationale en internationale sprekers over design systems. Van community, testen, toegankelijkheid, gebruikersonderzoek tot AI
 hide_title: true
 hide_table_of_contents: true
@@ -13,14 +12,14 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/co
 image_alt: NL Design System Design Systems Week PLACEHOLDER_YEAR PLACEHOLDER_DATERANGE, online
 ---
 
-import { Link, Paragraph } from "@utrecht/component-library-react/dist/css-module";
+import { Paragraph } from "@nl-design-system-community/documentation-components/src/paragraph/paragraph";
 import sessions from "../\_PLACEHOLDER_YEAR/sessions.json";
 import speakers from "../\_PLACEHOLDER_YEAR/speakers.json";
-import { DSWSession } from "@site/src/components/DSWSession";
+import { DSWSession } from "@nl-design-system-community/documentation-components/src/components/DSWSession";
 
 # Design Systems Week PLACEHOLDER_YEAR terugkijken
 
-<Paragraph lead>
+<Paragraph purpose="lead">
   Tijdens Design Systems Week kon je 4 dagen lang meerdere korte talks per dag volgen. Bijvoorbeeld over
   PLACEHOLDER_TOPICS_SUMMARY. Gelukkig hebben we de video's nog!
 </Paragraph>
@@ -35,7 +34,6 @@ import { DSWSession } from "@site/src/components/DSWSession";
   allSpeakers={speakers}
   allSessions={sessions}
   sessionId="74d8600f-b404-4e3d-a41e-9f652d8f9455"
-  headingLevel={2}
 >
 
   <Paragraph>
