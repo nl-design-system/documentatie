@@ -29,13 +29,13 @@ test.describe('CSP issues', () => {
   pathnames.forEach((pathname) => {
     test(pathname, async ({ page }) => {
       const url = CONFIG.baseUrl + pathname;
-      await page.goto(url, { waitUntil: 'domcontentloaded' });
+      await page.goto(url, { waitUntil: 'networkidle' });
     });
   });
 });
 
 function getPathnamesFromSitemap(sitemapPath: string): string[] {
-  const paths = [];
+  const paths: string[] = [];
 
   try {
     const sitemapIndex = readFileSync(sitemapPath, 'utf8');

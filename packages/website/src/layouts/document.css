@@ -1,0 +1,16 @@
+@media (--large-down) {
+  .ma-page-header ~ .utrecht-nav-bar {
+    display: none;
+  }
+
+  @media (forced-colors: active) {
+    /* When there is no Utrecht NavBar component, the Page Header is responsible
+     * for making clear where the page header ends in forced colors mode.
+     */
+    .ma-page-header {
+      border-block-end-color: currentColor;
+      border-block-end-style: solid;
+      border-block-end-width: 1px;
+    }
+  }
+}

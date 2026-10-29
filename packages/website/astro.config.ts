@@ -1,10 +1,15 @@
 import type { AstroUserConfig } from 'astro';
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import { unified } from '@astrojs/markdown-remark';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import remarkCustomHeaderId from 'remark-custom-header-id';
-const siteUrl = 'https://nldesignsystem.nl';
+import { remarkCanvasFix } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-canvas-fix/index.ts';
+import { sharedPlugins } from './src/markdown-plugins.ts';
+import { clientLoadPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-client-load/index.ts';
+import { siteBaseUrl } from './src/seo.config.ts';
+import { appendCSPToHTAccess } from './append-csp-to-htaccess.ts';
+import { fileURLToPath } from 'node:url';
 
 const cspDevConfig: AstroUserConfig = {
   security: {
@@ -17,6 +22,7 @@ const cspConnectSrcSources = ['https://*.algolia.net', 'https://*.algolianet.com
 const cspImgSrcSources = [
   'https://raw.githubusercontent.com',
   'https://i.ytimg.com',
+  'https://img.youtube.com',
   'https://www.toegankelijkheidsverklaring.nl',
   'https://github.com',
   'https://www.gebruikercentraal.nl',
@@ -27,13 +33,20 @@ const cspImgSrcSources = [
 const cspProdConfig: AstroUserConfig = {
   security: {
     csp: {
+      styleDirective: {
+        resources: ["'self'", siteBaseUrl],
+      },
+      scriptDirective: {
+        resources: ["'self'", siteBaseUrl],
+      },
       directives: [
-        "base-uri 'self'",
-        `connect-src 'self' ${cspConnectSrcSources} blob: data:`,
-        "default-src 'self'",
-        "font-src 'self'",
-        "form-action 'self'",
-        `img-src 'self' ${cspImgSrcSources} blob: data:`,
+        `base-uri 'self' ${siteBaseUrl}`,
+        `connect-src 'self' ${siteBaseUrl} ${cspConnectSrcSources} blob: data:`,
+        `default-src 'self' ${siteBaseUrl}`,
+        `font-src 'self' ${siteBaseUrl}`,
+        `form-action 'self' ${siteBaseUrl} https://nl-design-system.email-provider.eu`,
+        `frame-src 'self' ${siteBaseUrl} https://www.youtube-nocookie.com`,
+        `img-src 'self' ${siteBaseUrl} ${cspImgSrcSources} blob: data:`,
         "object-src 'none'",
         'worker-src blob:',
       ],
@@ -48,6 +61,26 @@ const cspConfig = process.env['NODE_ENV'] === 'development' ? cspDevConfig : csp
 globalThis.unlistedPages = new Set();
 
 globalThis.isAstro = true;
+
+const mdxClientLoad = clientLoadPlugin([
+  'Videoplayer',
+  'VideoPlayer',
+  'Checklist',
+  'DesignTokens',
+  'NewsletterSignUp',
+  'DSWSession',
+  'HeartbeatEpisode',
+]);
+
+const markdownProcessor = unified({
+  remarkPlugins: sharedPlugins.remarkPlugins,
+  rehypePlugins: sharedPlugins.rehypePlugins,
+});
+
+const mdxProcessor = unified({
+  remarkPlugins: [...sharedPlugins.remarkPlugins, remarkCanvasFix, mdxClientLoad],
+  rehypePlugins: sharedPlugins.rehypePlugins,
+});
 
 // https://astro.build/config
 export default defineConfig({
@@ -65,7 +98,7 @@ export default defineConfig({
     csp: cspConfig.security?.csp,
   },
 
-  site: siteUrl,
+  site: siteBaseUrl,
 
   vite: {
     build: {
@@ -77,18 +110,40 @@ export default defineConfig({
     },
     resolve: {
       noExternal: [/@rijkshuisstijl-community\/.*/],
+      alias: [
+        {
+          // dev SSR resolves @babel/runtime/helpers/* to CJS (node condition) and
+          // serves it raw, leaking `require` into ESM. Force the ESM helpers.
+          find: /^@babel\/runtime\/helpers\/(?!esm\/)/,
+          replacement: '@babel/runtime/helpers/esm/',
+        },
+        {
+          find: '@utrecht/component-library-react/dist/css-module',
+          replacement: '@utrecht/component-library-react',
+        },
+        {
+          find: '@utrecht/component-library-react/css-module',
+          replacement: '@utrecht/component-library-react',
+        },
+        {
+          find: /^@nl-design-system-candidate\/(.+)-react\/css$/,
+          replacement: '@nl-design-system-candidate/$1-react',
+        },
+        {
+          find: '@nl-design-system-community/documentation-components/src/components/Markdown',
+          replacement: fileURLToPath(new URL('../documentation-components/src/markdown/markdown.ts', import.meta.url)),
+        },
+      ],
     },
   },
 
   markdown: {
-    syntaxHighlight: false,
+    processor: markdownProcessor,
+    syntaxHighlight: 'prism',
   },
 
   integrations: [
-    mdx({
-      remarkPlugins: [remarkCustomHeaderId],
-      syntaxHighlight: false,
-    }),
+    mdx({ processor: mdxProcessor }),
     react(),
     sitemap({
       changefreq: 'weekly',
@@ -98,5 +153,6 @@ export default defineConfig({
         return globalThis.unlistedPages.has(url.pathname) === false;
       },
     }),
+    appendCSPToHTAccess(),
   ],
 });

@@ -31,7 +31,7 @@ const pathnameToArgosName = (pathname: string): string => {
 // Docusaurus adds a <html data-has-hydrated="true"> once hydrated
 // See https://github.com/facebook/docusaurus/pull/9256
 const waitForDocusaurusHydration = () => {
-  return document.documentElement.dataset.hasHydrated === 'true';
+  return document.documentElement.dataset['hasHydrated'] === 'true';
 };
 
 const screenshotPathname = (pathname: string) => {
@@ -49,9 +49,6 @@ const screenshotPathname = (pathname: string) => {
 };
 
 test.describe('Docusaurus site screenshots', () => {
-  // Full-page screenshots of very long pages could exceed the default 30s timeout on CI
-  test.setTimeout(60_000);
-
   const pathnames = extractSitemapPathnames(sitemapPath);
   pathnames.forEach(screenshotPathname);
 });

@@ -1,5 +1,89 @@
 [
   {
+    "id": 135,
+    "date": "2026-10-27",
+    "description": [
+      "Design Systems Week editie van de Heartbeat",
+      "Roel Berends deelt zijn ervaring met het upgraden van Tilburg design system met de nieuwe versies van NL Design System.",
+      "Kevin Consen en Eileen Lopes delen hun ervaring om aan de slag te gaan met NL Design System voor CAK."
+    ],
+    "title": "Heartbeat van 27 oktober 2026.",
+    "youtubeId": "0rB-pwd3BQI"
+  },
+  {
+    "id": 134,
+    "date": "2026-10-13",
+    "description": [
+      "Jaap-Hein Wester presenteert de nieuwe Storybook van developer.overheid.nl waar sinds deze zomer de Register Site componenten te vinden zijn.",
+      "Charlotte van het kernteam geeft een recap van de estafettemodeldag van september bij ICTU in Den Haag."
+    ],
+    "title": "Heartbeat van 13 oktober 2026.",
+    "youtubeId": "j38jBkaVFGQ"
+  },
+  {
+    "id": 133,
+    "date": "2026-09-29",
+    "description": [
+      "Binnen het landelijke traject MijnServices werkt de gemeente Groningen aan MijnGesprek: een herkenbare en veilige manier voor inwoners om digitaal contact te hebben met de gemeente vanuit MijnGroningen. Jana nam ons mee in het gebruikersonderzoek waarin zij hebben onderzocht hoe deze functionaliteit aansluit bij de behoeften en verwachtingen van inwoners en deelt de belangrijkste resultaten en verbeterkansen."
+    ],
+    "title": "Heartbeat van 29 september 2026.",
+    "youtubeId": "LKrrQisO57Q"
+  },
+  {
+    "id": 132,
+    "date": "2026-09-15",
+    "description": [
+      "Wouter van het Expertteam Digitale Toegankelijkheid deelt de Integratie van de Clippy Editor in TYPO3.",
+      "Jeffrey laat zien dat er een nieuwe video Changelogs voor designers is die het makkelijker maakt om nieuwe versies van jouw thema of Figma uit te brengen.",
+      "Roos deelt dat de Figma bibliotheek nu Slots ondersteunt en laat zien hoe dat werkt.",
+      "Yolijn introduceert de eerste 4 sprekers van Design System Week 2026."
+    ],
+    "title": "Heartbeat van 15 september 2026.",
+    "youtubeId": "aK4oFRAG4RU"
+  },
+  {
+    "id": 131,
+    "date": "2026-09-01",
+    "description": [
+      "Thijs van Gemeente Den Haag laat een handig tooltje zijn dat hij heeft gemaakt om designers te helpen de juiste keuzes te maken bij het invullen van de tokens voor de NL Button."
+    ],
+    "title": "Heartbeat van 1 september 2026.",
+    "youtubeId": "yaMXqBrGgF8"
+  },
+  {
+    "id": 130,
+    "date": "2026-08-18",
+    "description": [
+      "Nieuwe kernteamleden Ali en Eelco stellen zich voor.",
+      "Bram van het Expertteam Digitale Toegankelijkheid laat zien hoe je toegankelijk iconen, labels en interactieve elementen toevoegt aan een text input met de Customizable Text Input.",
+      "Jeffrey neemt jullie mee in de wereld van Card as Link: hoe het begon, waarom we ermee bezig zijn, welke keuzes we hebben gemaakt en hoe de uitwerking er nu in Figma uitziet."
+    ],
+    "title": "Heartbeat van 18 augustus 2026.",
+    "youtubeId": "SzM-uqigwWc"
+  },
+  {
+    "id": 129,
+    "date": "2026-07-07",
+    "description": [
+      "Rozerin van het kernteam laat zien welk nieuwe gebruikersonderzoek online staat en hoe je geplande gebruikersonderzoeken kunt delen en terugvinden.",
+      "Vienna en Tijmen van Delta10 laten zien hoe Signalen WCAG is overgestapt van lange, handmatig beheerde thema-CSS naar compacte organisatie-thema's met NL Design System design tokens.",
+      "Charlotte doet een terugblik op de estafettemodeldag van juni in Utrecht."
+    ],
+    "title": "Heartbeat van 7 juli 2026.",
+    "youtubeId": "m01HJV04MuE"
+  },
+  {
+    "id": 128,
+    "date": "2026-06-23",
+    "description": [
+      "Tim van het Expertteam Digitale Toegankelijkheid geeft een update over de Editor die helpt bij het maken van toegankelijke content. Hij demonstreert de beginsels van integraties van de editor in Drupal.",
+      "Peter geeft een sneak peek van de nieuwe nldesignsystem.nl website en vertelt over de samenwerking met Den Haag aan de uitbreiding van hun Side Navigation component.",
+      "Jeffrey laat zien waar je vanaf nu de documentatie over de basis-tokens kan vinden."
+    ],
+    "title": "Heartbeat van 23 juni 2026.",
+    "youtubeId": "h9GJAa5U24o"
+  },
+  {
     "id": 127,
     "date": "2026-06-09",
     "description": [
@@ -713,7 +797,7 @@
     "id": 55,
     "date": "2023-04-04 ",
     "description": [
-      "Jeroen du Chatinier deelt zijn _hopes and dreams_ over [gebruikersonderzoek van iedereen](https://nl-design-system.github.io/gebruikersonderzoek/) (bij de overheid) te delen op een centrale plek, zodat het makkelijk te vinden is.",
+      "Jeroen du Chatinier deelt zijn <i lang=\"en\">hopes and dreams</i> over [gebruikersonderzoek van iedereen](https://nl-design-system.github.io/gebruikersonderzoek/) (bij de overheid) te delen op een centrale plek, zodat het makkelijk te vinden is.",
       "Jeffrey laat zien hoe het kernteam white-label Figma componenten maakt, voor componenten die al door de community zijn gemaakt als white-label front-end componenten."
     ],
     "title": "",

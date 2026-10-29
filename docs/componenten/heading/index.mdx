@@ -5,6 +5,7 @@ hide_table_of_contents: false
 sidebar_label: Heading
 pagination_label: Heading
 description: Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.
+issue_number: 114
 slug: /heading
 keywords:
   - bold-text
@@ -47,11 +48,42 @@ import HeadingIllustration from "@nl-design-system-candidate/heading-docs/docs/a
 import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_component.md";
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/\_component_gebruiken_intro.md";
-import { Card, CardContent, CardIllustration } from "@site/src/components/CardGroup";
-import { LinkList, LinkListLink } from "@utrecht/component-library-react/dist/css-module";
-import { Heading } from "@nl-design-system-candidate/heading-react/css";
-import { BrandIcon } from "@site/src/components/BrandIcon";
-import { ComponentAliases } from "@site/src/components/ComponentAliases";
+import { Card, CardContent, CardIllustration } from "@nl-design-system-community/documentation-components/src/components/CardGroup";
+import { LinkList, LinkListLink } from "@nl-design-system-community/documentation-components/src/link-list/link-list";
+import { Heading } from "@nl-design-system-community/documentation-components/src/heading/heading";
+import { BrandIcon } from "@nl-design-system-community/documentation-components/src/components/BrandIcon";
+import { ComponentAliases } from "@nl-design-system-community/documentation-components/src/components/ComponentAliases";
+import ContrastMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/contrast/metadata.json";
+import ContrastExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/contrast/explanation.md";
+import ContrastSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/contrast/solution.md";
+import DescriptiveMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/descriptive/metadata.json";
+import DescriptiveExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/descriptive/explanation.md";
+import DescriptiveSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/descriptive/solution.md";
+import DescriptiveH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/descriptive/metadata.json";
+import DescriptiveH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/descriptive/explanation.md";
+import DescriptiveH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/descriptive/solution.md";
+import EmptyMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/empty/metadata.json";
+import EmptyExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/empty/explanation.md";
+import EmptySolution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/empty/solution.md";
+import LanguageMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/language/metadata.json";
+import LanguageExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/language/explanation.md";
+import LanguageSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/language/solution.md";
+import LargeTextMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/largetext/metadata.json";
+import LargeTextExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/largetext/explanation.md";
+import LargeTextSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/largetext/solution.md";
+import LargeTextSolutionQuote from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/largetext/solution-quote.md";
+import MultipleH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/multipleH1/metadata.json";
+import MultipleH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/multipleH1/explanation.md";
+import MultipleH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/multipleH1/solution.md";
+import NoH1Meta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/noH1/metadata.json";
+import NoH1Explanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/noH1/explanation.md";
+import NoH1Solution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/noH1/solution.md";
+import SkippedMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/skipped/metadata.json";
+import SkippedExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/skipped/explanation.md";
+import SkippedSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/skipped/solution.md";
+import TitleMeta from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/title/metadata.json";
+import TitleExplanation from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/title/explanation.md";
+import TitleSolution from "@nl-design-system-unstable/documentation/componenten/heading/\_rules/heading1/title/solution.md";
 
 import {
   DefinitionOfDone,
@@ -59,11 +91,15 @@ import {
   Implementations,
   Introduction,
   Related,
-} from "@site/src/components/ComponentPage";
+} from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
+import {
+  Checklist,
+  ChecklistItem,
+} from "@nl-design-system-community/documentation-components/src/components/Checklist";
 import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
-import { DesignTokens } from "@site/src/components/DesignTokens";
-import { Markdown } from "@site/src/components/Markdown";
-import Usage from "./\_usage.md";
+import { DesignTokens } from "@nl-design-system-community/documentation-components/src/components/DesignTokens";
+import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import usage from "./\_usage.md?raw";
 import tokens from "@nl-design-system-candidate/heading-tokens";
 
 export const title = "Heading";
@@ -127,9 +163,95 @@ export const component = componentProgress.find((item) => item.number === issueN
   ))}
 </Checklist>
 
-<Markdown omitH1 headingLevel={2}>
-  <Usage />
-</Markdown>
+## Veel gemaakte fouten bij het inzetten van Heading
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{ContrastMeta.title}</Heading>
+
+<ContrastExplanation />
+
+#### Oplossing
+
+<ContrastSolution />
+
+<Heading level={3}>{DescriptiveMeta.title}</Heading>
+
+<DescriptiveExplanation />
+
+#### Oplossing
+
+<DescriptiveSolution />
+
+<Heading level={3}>{EmptyMeta.title}</Heading>
+
+<EmptyExplanation />
+
+#### Oplossing
+
+<EmptySolution />
+
+<Heading level={3}>{LanguageMeta.title}</Heading>
+
+<LanguageExplanation />
+
+#### Oplossing
+
+<LanguageSolution />
+
+<Heading level={3}>{LargeTextMeta.title}</Heading>
+
+<LargeTextExplanation />
+
+#### Oplossing
+
+<LargeTextSolution />
+
+<LargeTextSolutionQuote />
+
+<Heading level={3}>{SkippedMeta.title}</Heading>
+
+<SkippedExplanation />
+
+#### Oplossing
+
+<SkippedSolution />
+
+## Veelgemaakte fouten bij het inzetten van Heading 1
+
+<Heading level={3}>{NoH1Meta.title}</Heading>
+
+<NoH1Explanation />
+
+#### Oplossing
+
+<NoH1Solution />
+
+<Heading level={3}>{MultipleH1Meta.title}</Heading>
+
+<MultipleH1Explanation />
+
+#### Oplossing
+
+<MultipleH1Solution />
+
+<Heading level={3}>{DescriptiveH1Meta.title}</Heading>
+
+<DescriptiveH1Explanation />
+
+#### Oplossing
+
+<DescriptiveH1Solution />
+
+<Heading level={3}>{TitleMeta.title}</Heading>
+
+<TitleExplanation />
+
+#### Oplossing
+
+<TitleSolution />
+
+<Markdown omitH1 headingLevel={2} content={usage} />
 
 ## Design tokens
 

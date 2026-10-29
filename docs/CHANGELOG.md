@@ -1,9 +1,79 @@
----
-title: Changelog
-description: De changelog van de nldesignsystem.nl website
----
-
 # @nl-design-system-unstable/documentation
+
+## 2.0.0
+
+### Major Changes
+
+- ac59d82: Naamwijziging map voor snippets veelgemaakte fouten voor Heading, Link en Paragraph.
+- bc48afb: Verwijderen van ongebruikte editor error snippets van Paragraph voor de editor.
+
+### Minor Changes
+
+- a5d0ef4: Toevoeging aan de schrijfwijzer over alinea.
+- f4abfec: Wijziging veelgemaakte fouten Paragraph component snippets.
+- 5f1e57f: Veelgemaakte fouten aan de Link componentpagina toegevoegd.
+- 01d9b2a: H1 specifieke issues verplaats naar Heading 1 map, update van teksten en verwijzingen.
+- a7df4b2: Twee nieuwe bestanden maken de documentatie als data beschikbaar:
+  
+  - `@nl-design-system-unstable/documentation/dist/guideline-pages.json`: de
+    richtlijnenpagina's van nldesignsystem.nl met hun `url` en koppen. De lijst is
+    nog niet compleet, zie het `$comment` in het bestand.
+  - `@nl-design-system-unstable/documentation/dist/component-rules.json`: de
+    veelgemaakte fouten per component, met per regel een `id`, een `title` en de
+    naar HTML geconverteerde markdown-teksten met NL Design system class names.
+- a5d0ef4: Update van de baseline voor september 2026.
+
+### Patch Changes
+
+- f7bbc58: Corrigeren naam op kernteampagina.
+
+## 1.12.0
+
+### Minor Changes
+
+- ae5a617: Acceptatiecriteria voor toegankelijkheid aan Note toegevoegd.
+- 2a73c89: Baseline augustus 2026 update.
+- 2a73c89: Toevoeging informatie forced colors aan stijl-richtlijnen.
+- 614dc40: Toevoegen succescriterium 1.4.1 Gebruik van kleur aan Form Field Description.
+- 8c9f3a0: Veelgemaakte fouten en oplossingen daarvoor voor de Heading 1 component.
+  
+  Oud changeset in verkeerd bestandsformaat verwijderd over wijzigingen aan succescriterium 2.5.2.
+- 7af1437: Toevoeging acceptatiecriteria voor toegankelijkheid voor Alert.
+
+## 1.11.0
+
+### Minor Changes
+
+- 9562a54: Update baseline voor juli 2026.
+
+## 1.10.0
+
+### Minor Changes
+
+- 55a3840: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Form Field Description.
+- dfe2ef2: Toevoeging van acceptatiecriteria voor toegankelijkheid voor Form Field Error Message.
+- 9ea6f0b: Kleine wijziging schrijfwijzer voor code.
+- 8172ff7: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Data Badge.
+- 9b2d161: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Code.
+- 74b6d15: Baseline update voor juni 2026.
+- b18ea3a: Aanpassing WCAG Herschalen van tekst en Tekstafstand snippets naar non-deprecated CSS. Kleine tekstuele fix voor Reflow snippets.
+- 655ef1c: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Color Sample en omzetten checklist component voor Color Sample component pagina.
+- b35362d: Toevoeging acceptatiecriteria toegankelijkheid voor Ordered List.
+- a16a489: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Form Field Label.
+- a0bd4f5: Aanpassing WCAG Reflow snippets naar non-deprecated CSS.
+- b6d4697: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Number Badge.
+- 6df4a97: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Heading.
+- 4ad83b6: Paragraph documentation for usage in Editor
+- 5911c00: Baseline maart 2026 update.
+- 1193a95: Toevoeging Tekst van onderdelen aan acceptatiecriteria Icon.
+- 7a3d9fc: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Paragraph.
+- 607bbb6: NL Design System baseline update voor april 2026.
+- cb33ec8: Toevoeging acceptatiecriteria voor succescriteria 2.1.1 en 2.4.3 aan Icon.
+- 4f2c0d3: Toevoeging acceptatiecriteria voor toegankelijkheid voor Unordered List.
+- 9a4c303: Advies over ingeklapte teksten toegevoegd aan 1.3.1 voor Form Field Description.
+- 4c7beaa: NL Design System baseline update voor mei 2026.
+- 516b18d: Schrijfwijzer voor code-voorbeelden.
+- ede8614: Aanpassing baseline omtrent alternatieve versies en instellingen voor persoonlijke voorkeuren.
 
 ## 1.9.0
 

@@ -14,10 +14,11 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
-import { VideoPlayer } from "@site/src/components/VideoPlayer";
-import { ButtonLink } from "@site/src/components/ButtonLink";
+import { VideoPlayer } from "@nl-design-system-community/documentation-components/src/components/VideoPlayer";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
-import { ButtonGroup as ActionGroup } from "@utrecht/component-library-react/dist/css-module";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
 
 # Community Sprint: Rijkshuisstijl Community
 
@@ -140,8 +141,11 @@ We organiseren de volgende vaste momenten om samen te komen:
 - Elke oneven week op dinsdag om 16:00 uur een [Rijkshuisstijl Community Open Hour](/events/rijkshuisstijl-community-open-hour/).
 
 <ActionGroup>
-  <ButtonLink href="/community/community-sprints/rijkshuisstijl-community/aanmelden" appearance="primary-action">
-    {"Meld je aan"} <IconChevronRight />
+  <ButtonLink href="/community/community-sprints/rijkshuisstijl-community/aanmelden" purpose="primary">
+    {"Meld je aan"}{" "}
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
 </ActionGroup>
 
