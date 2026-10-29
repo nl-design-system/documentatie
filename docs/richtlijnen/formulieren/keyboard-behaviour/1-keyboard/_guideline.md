@@ -6,7 +6,7 @@ Sommige gebruikers navigeren door een formulier met hun toetsenbord. Zorg dat al
 
 Is het niet mogelijk een component met een toetsenbord te bedienen, zorg dan voor een toegankelijk alternatief. De richtlijn [Zorg dat iedereen een formulierelement kan bedienen of geef een alternatief](/richtlijnen/formulieren/wanneer-welk-form-element/iedereen-kan-invullen) gaat hier dieper op in.
 
-Dit ondersteunt toetsenbordgebruikers, maar ook gebruikers met andere randapparatuur die zich als toetsenbord presenteert, zoals een _switch control_.
+Dit ondersteunt toetsenbordgebruikers, maar ook gebruikers met andere randapparatuur die zich als toetsenbord presenteert, zoals een <i lang="en">switch control</i>.
 
 [Maak de toetsenbordfocus goed zichtbaar](/richtlijnen/formulieren/visueel-ontwerp/focus-goed-zichtbaar) en geef de focusring voldoende kleurcontrast.
 

@@ -1,7 +1,7 @@
 import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import { VideoPlayer } from '@site/src/components/VideoPlayer';
-import '@site/src/components/DSWSession.css';
+import { VideoPlayer } from '@nl-design-system-community/documentation-components/src/components/VideoPlayer';
+import '@nl-design-system-community/documentation-components/src/components/DSWSession.css';
 import type { PropsWithChildren } from 'react';
 
 interface OldSessionProps {
@@ -29,7 +29,7 @@ interface DSWSpeaker {
 export const OldSession = ({
   children,
   title,
-  headingLevel = 2,
+  headingLevel = 3,
   speakers,
   videoId,
 }: PropsWithChildren<OldSessionProps>) => (

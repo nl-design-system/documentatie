@@ -31,7 +31,7 @@ const pathnameToArgosName = (pathname: string): string => {
 // Docusaurus adds a <html data-has-hydrated="true"> once hydrated
 // See https://github.com/facebook/docusaurus/pull/9256
 const waitForDocusaurusHydration = () => {
-  return document.documentElement.dataset.hasHydrated === 'true';
+  return document.documentElement.dataset['hasHydrated'] === 'true';
 };
 
 const screenshotPathname = (pathname: string) => {

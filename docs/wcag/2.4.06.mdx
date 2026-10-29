@@ -1,6 +1,6 @@
 ---
 title: WCAG-succescriterium 2.4.6 Koppen en labels
-title_sm: 2.4.6 Koppen en labels
+title_sm: "WCAG 2.4.6: Koppen en labels"
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.6 Koppen en labels
@@ -27,12 +27,13 @@ keywords:
 ---
 
 {/* @license CC0-1.0 */}
-import { Guideline } from "@site/src/components/Guideline";
-import { Markdown } from "@site/src/components/Markdown";
-import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
-import CTAGebruikersonderzoek from "./\_cta_gebruikersonderzoek.md";
-import WCAGFooterInfo from "./\_wcag_footer_info.md";
-import Summary from "./summaries/\_2.4.6-summary.md";
+
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
+import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
+import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
+import wcagFooterInfo from "./_wcag_footer_info.md?raw";
+import Summary from "./summaries/_2.4.6-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau AA">
   {"WCAG-succescriterium 2.4.6 Koppen en labels"}
@@ -123,23 +124,23 @@ Een knop heeft een tekst die niet duidelijk maakt wat de knop doet. Een veelvoor
 Dit geldt ook voor knoppen met alleen een icoon. Het icoon zelf is een zichtbaar label, maar alleen voor wie het kan zien. Voor hulptechnologie is daarnaast een toegankelijke naam nodig, vaak in de vorm van een `aria-label`. Die toegankelijke naam is onzichtbaar voor mensen die geen hulptechnologie gebruiken. Vaak beschrijft het `aria-label` het uiterlijk van het icoon ("Oog") in plaats van de functie. Zowel het zichtbare als het onzichtbare label moeten de functie beschrijven, niet het uiterlijk.
 
 <Guideline appearance="dont" title="Onzichtbaar label beschrijft het icoon in plaats van de functie">
-    ```html
-    <button aria-label="Oog">
-      <svg aria-hidden="true" focusable="false">
-        <use href="assets/svg/icons-core-set.svg#icon-eye"></use>
-      </svg>
-    </button>
-    ```
+  ```html
+  <button aria-label="Oog">
+    <svg aria-hidden="true" focusable="false">
+      <use href="assets/svg/icons-core-set.svg#icon-eye"></use>
+    </svg>
+  </button>
+  ```
 </Guideline>
 
 <Guideline appearance="do" title="Onzichtbaar label beschrijft de functie">
-    ```html
-    <button aria-label="Wachtwoord tonen">
-      <svg aria-hidden="true" focusable="false">
-        <use href="assets/svg/icons-core-set.svg#icon-eye"></use>
-      </svg>
-    </button>
-    ```
+  ```html
+  <button aria-label="Wachtwoord tonen">
+    <svg aria-hidden="true" focusable="false">
+      <use href="assets/svg/icons-core-set.svg#icon-eye"></use>
+    </svg>
+  </button>
+  ```
 </Guideline>
 
 ### Labels die niet beschrijven wat er verwacht wordt
@@ -442,6 +443,4 @@ Een `<th>`-element in een tabel werkt als label voor de cellen eronder of ernaas
 
 ## Help richtlijn verbeteren
 
-<Markdown omitH1 headinglevel={3}>
-  <WCAGFooterInfo />
-</Markdown>
+<Markdown omitH1 headingLevel={3} content={wcagFooterInfo} />
