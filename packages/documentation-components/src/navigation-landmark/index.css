@@ -1,0 +1,7 @@
+/*
+ * The navigation landmark heading element is only available for when no CSS is loaded,
+ * and the meaning of the navigation cannot be deduced visually from the layout.
+ */
+.ma-navigation-landmark__heading {
+  display: none;
+}

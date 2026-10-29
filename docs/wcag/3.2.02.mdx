@@ -1,6 +1,6 @@
 ---
 title: WCAG-succescriterium 3.2.2 Bij invoer
-title_sm: 3.2.2 Bij invoer
+title_sm: "WCAG 3.2.2: Bij invoer"
 hide_title: true
 hide_table_of_contents: false
 sidebar_label: 3.2.2 Bij invoer
@@ -29,11 +29,11 @@ keywords:
 
 {/* @license CC0-1.0 */}
 
-import { Guideline } from "@site/src/components/Guideline";
-import { Markdown } from "@site/src/components/Markdown";
-import { WcagHeadingGroup } from "@site/src/components/WcagHeadingGroup";
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
+import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
+import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import WCAGFooterInfo from "./_wcag_footer_info.md";
+import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_3.2.2-summary.md";
 
 <WcagHeadingGroup level={1} conformanceLevel="Niveau A">
@@ -274,6 +274,4 @@ Formulieren: [Verstuur een formulier niet automatisch na het wijzigen of invulle
 
 ## Help richtlijn verbeteren
 
-<Markdown omitH1 headinglevel={3}>
-  <WCAGFooterInfo />
-</Markdown>
+<Markdown omitH1 headingLevel={3} content={wcagFooterInfo} />

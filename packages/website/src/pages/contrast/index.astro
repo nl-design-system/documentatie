@@ -1,0 +1,11 @@
+---
+import PageBodyContentLayout from '@layouts/page-body-content.astro';
+import { ContrastTool } from '@nl-design-system-community/documentation-components/src/components/ContrastTool';
+---
+
+<PageBodyContentLayout
+  title="Contrast van kleuren"
+  description="Bereken het contrast tussen een voorgrond- en achtergrondkleur"
+>
+  <ContrastTool client:only="react" />
+</PageBodyContentLayout>
