@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": ["./tsconfig.json"],
+  "include": ["test/**/*.ts", "test/**/*.tsx", "test/*.ts"],
+  "exclude": ["**/node_modules/*", "packages/website/**/*.test.ts", "test/docs/ContentTestOverview.tsx"],
+  "compilerOptions": {
+    "lib": ["DOM"]
+  }
+}

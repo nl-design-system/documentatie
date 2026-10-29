@@ -1,1 +1,158 @@
-[]
+[
+  {
+    "uuid": "a5287a4e-fda6-45e9-b6da-5859daab3d3c",
+    "isoDateTime": "2026-10-26T10:00:00.000Z",
+    "speakers": ["KoenDeGreef"],
+    "subject": "AI Design Systems: van pixels naar regie",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": "fnwGPkEZ8l4",
+    "icalLink": "/dsweek-2026/koen-de-greef.ics"
+  },
+  {
+    "uuid": "1bfd50e8-d845-492b-9553-51cae7dafd5b",
+    "isoDateTime": "2026-10-26T12:00:00.000Z",
+    "speakers": ["DrStephDriver"],
+    "subject": "Tracking conformance data within the code-base",
+    "language": {
+      "abbr": "EN",
+      "description": "English"
+    },
+    "videoId": "BhYfM3lX1cU",
+    "icalLink": "/dsweek-2026/dr-steph-driver.ics"
+  },
+  {
+    "uuid": "b919f274-381c-41db-9d1d-cc3b6934ce93",
+    "isoDateTime": "2026-10-26T14:00:00.000Z",
+    "speakers": ["EricVanMullekom", "MaartenSchut"],
+    "subject": "Digitale toegankelijkheid van kaartviewers",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": "keI7T2QsDOA",
+    "icalLink": "/dsweek-2026/eric-van-mullekom-en-maarten-schut.ics"
+  },
+  {
+    "uuid": "b94a7d82-2641-446d-ad36-eafca20ec7fb",
+    "isoDateTime": "2026-10-27T10:00:00.000Z",
+    "speakers": ["CarolineDahl", "PierreOrsander", "RobinWhittleton"],
+    "subject": "Design Systems as a Lever for Accessibility Culture",
+    "language": {
+      "abbr": "EN",
+      "description": "English"
+    },
+    "videoId": "NZ-2gSB-vNU",
+    "icalLink": "/dsweek-2026/caroline-dahl-pierre-orsander-robin-whittleton.ics"
+  },
+  {
+    "uuid": "5c3e74d2-1043-44f9-97c1-7b94c0832460",
+    "isoDateTime": "2026-10-27T12:00:00.000Z",
+    "speakers": ["KevinConsen", "RoelBerends"],
+    "subject": "Heartbeat - Design Systems Week editie",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": "0rB-pwd3BQI",
+    "icalLink": "/heartbeat/heartbeat.ics"
+  },
+  {
+    "uuid": "a23217db-b17d-4e97-ad46-1fd7d113c567",
+    "isoDateTime": "2026-10-27T14:00:00.000Z",
+    "speakers": ["MarionCouesnon"],
+    "subject": "Switching design systems without compromising accessibility",
+    "language": {
+      "abbr": "EN",
+      "description": "English"
+    },
+    "videoId": "rVZ71bN6I6c",
+    "icalLink": "/dsweek-2026/marion-couesnon.ics"
+  },
+  {
+    "uuid": "dc60b53e-664e-4dac-badb-cb0754065ed7",
+    "isoDateTime": "2026-10-27T15:30:00.000Z",
+    "speakers": ["ManonVanKeulen"],
+    "subject": "Toegankelijkheid begint bij ontwerp",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": "yNjn5WNnjkI",
+    "icalLink": "/dsweek-2026/manon-van-keulen.ics"
+  },
+  {
+    "uuid": "0f818ea3-38cb-4dd3-aee4-84774acc27fd",
+    "isoDateTime": "2026-10-28T10:00:00.000Z",
+    "speakers": ["YolijnVanDerKolk"],
+    "subject": "Een federatief design system begeleiden naar een landelijke standaard",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": "uOfbdug4nuc",
+    "icalLink": "/dsweek-2026/yolijn-van-der-kolk.ics"
+  },
+  {
+    "uuid": "6b1d8785-cf2b-4c38-a4c1-b65458456728",
+    "isoDateTime": "2026-10-28T12:00:00.000Z",
+    "speakers": ["FrederiqueSchimmelpenninckVanDerOije"],
+    "subject": "Toegankelijke en herkenbare huisstijl",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": "FFINvnxphDo",
+    "icalLink": "/dsweek-2026/frederique-schimmelpenninck-van-der-oije.ics"
+  },
+  {
+    "uuid": "5c426f34-76eb-44c3-a951-277b49e6b442",
+    "isoDateTime": "2026-10-28T14:00:00.000Z",
+    "speakers": ["JavierCuello"],
+    "subject": "The renaissance of design tooling",
+    "language": {
+      "abbr": "EN",
+      "description": "English"
+    },
+    "videoId": "O6kPCcIP-ds",
+    "icalLink": "/dsweek-2026/javier-cuello.ics"
+  },
+  {
+    "uuid": "45b2c5ee-4176-4752-b440-dfb16e7f14d3",
+    "isoDateTime": "2026-10-29T10:00:00.000Z",
+    "speakers": ["JeffreyGeleijn"],
+    "subject": "Achter de schermen bij het design system van HVC",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": null,
+    "icalLink": "/dsweek-2026/jeffrey-geleijn.ics"
+  },
+  {
+    "uuid": "aec41135-5d58-404d-a427-47dcb6730b20",
+    "isoDateTime": "2026-10-29T12:00:00.000Z",
+    "speakers": ["EirikBacker"],
+    "subject": "Designsystemet - What if we build less?",
+    "language": {
+      "abbr": "EN",
+      "description": "English"
+    },
+    "videoId": null,
+    "icalLink": "/dsweek-2026/eirik-backer.ics"
+  },
+  {
+    "uuid": "a11aea51-e2a7-40c6-85ba-506971bc3cd4",
+    "isoDateTime": "2026-10-29T14:00:00.000Z",
+    "speakers": ["RobbertBroersma"],
+    "subject": "Hoe bouw je een actieve open source community?",
+    "language": {
+      "abbr": "NL",
+      "description": "Nederlands"
+    },
+    "videoId": null,
+    "icalLink": "/dsweek-2026/robbert-broersma.ics"
+  }
+]

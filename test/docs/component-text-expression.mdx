@@ -6,7 +6,8 @@ unlisted: true
 
 {/* @license CC0-1.0 */}
 
-import { ButtonLink } from "@site/src/components/ButtonLink";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
 import TestPageNote from "./_test-page-note.md";
 
@@ -14,6 +15,9 @@ Tests whether a text expression as a child of a component renders correctly
 
 <TestPageNote />
 
-<ButtonLink href="/community/community-sprints/mijn-services-community/aanmelden" appearance="primary-action">
-  {"Sign up"} <IconChevronRight />
+<ButtonLink href="/community/community-sprints/mijn-services-community/aanmelden" purpose="primary">
+  {"Sign up"}{" "}
+  <Icon>
+    <IconChevronRight />
+  </Icon>
 </ButtonLink>

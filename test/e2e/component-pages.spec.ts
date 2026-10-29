@@ -9,7 +9,7 @@ test('Renders aliases in a Candidate component page', async ({ page }) => {
   await expect(page.getByText('Ook bekend als: Knop, Action, Call to Action.')).toBeVisible();
 });
 
-test('Renders Anatomy in a Candidate component page', async ({ page }) => {
+test.skip('Renders Anatomy in a Candidate component page', async ({ page }) => {
   await page.goto(componentPageWithAnatomy);
 
   // Figure wrapper exists

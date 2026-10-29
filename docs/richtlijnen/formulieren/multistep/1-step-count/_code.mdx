@@ -1,7 +1,7 @@
 {/* @license CC0-1.0 */}
 
-import { Canvas } from "@site/src/components/Canvas/Canvas";
-import { Guideline } from "@site/src/components/Guideline";
+import { Canvas } from "@nl-design-system-community/documentation-components/src/components/Canvas/Canvas";
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
 
 ## Voorbeelden
 
@@ -13,6 +13,7 @@ import { Guideline } from "@site/src/components/Guideline";
   <Canvas
     language="html"
     code={<title>Stap 2 van 3, uw gegevens - Gemeente voorbeeld</title>}
+    rawCode="<title>Stap 2 van 3, uw gegevens - Gemeente voorbeeld</title>"
     defaultCollapsed={false}
   ></Canvas>
 </Guideline>
@@ -22,7 +23,12 @@ import { Guideline } from "@site/src/components/Guideline";
   title="Voor elke (volgende) stap / dezelfde titel."
   description="Met de titel bedoelen we hier het title-element. Bekijk de code voor een voorbeeld in HTML."
 >
-<Canvas language="html" code={<title>Contact opnemen - Gemeente voorbeeld</title>} defaultCollapsed={false}></Canvas>
+<Canvas
+  language="html"
+  code={<title>Contact opnemen - Gemeente voorbeeld</title>}
+  rawCode="<title>Contact opnemen - Gemeente voorbeeld</title>"
+  defaultCollapsed={false}
+></Canvas>
 
 </Guideline>
 

@@ -27,7 +27,7 @@ Als je een CDN gebruikt, dan kun je de CSS zo importeren:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-block-css@1/dist/code-block.css"
+  href="https://cdn.jsdelivr.net/npm/@nl-design-system-candidate/code-block-css/dist/code-block.css"
 />
 ```
 
