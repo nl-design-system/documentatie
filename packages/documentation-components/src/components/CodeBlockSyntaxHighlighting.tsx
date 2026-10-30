@@ -1,5 +1,5 @@
-import { CodeBlock } from '@utrecht/component-library-react/dist/css-module';
-import type { CodeBlockProps } from '@utrecht/component-library-react/dist/css-module';
+import { CodeBlock } from '@utrecht/component-library-react';
+import type { CodeBlockProps } from '@utrecht/component-library-react';
 import { Highlight } from 'prism-react-renderer';
 import { useContext, useId } from 'react';
 import type { PropsWithChildren, ReactNode } from 'react';

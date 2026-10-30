@@ -9,8 +9,8 @@ import {
   ButtonGroup,
   Icon,
   BreadcrumbNav as UtrechtBreadcrumbNav,
-} from '@utrecht/component-library-react/dist/css-module';
-import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '@utrecht/component-library-react/dist/css-module';
+} from '@utrecht/component-library-react';
+import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import { Fragment } from 'react';
 import './Breadcrumbs.css';

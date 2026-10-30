@@ -1,5 +1,5 @@
 import { Accordion, AccordionSection } from '../accordion/accordion';
-import { Checkbox, FormField, FormLabel, Fieldset } from '@utrecht/component-library-react/dist/css-module';
+import { Checkbox, FormField, FormLabel, Fieldset } from '@utrecht/component-library-react';
 import { Heading } from '../heading/heading';
 import { Paragraph } from '../paragraph/paragraph';
 import { UnorderedList } from '../unordered-list/unordered-list';
