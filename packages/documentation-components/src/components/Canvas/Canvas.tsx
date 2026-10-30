@@ -1,6 +1,6 @@
 import { CodeBlockSyntaxHighlighting } from '../CodeBlockSyntaxHighlighting';
-import { Button, Document, Paragraph, Surface } from '@utrecht/component-library-react/dist/css-module';
-import { HTMLContent } from '@utrecht/component-library-react/dist/css-module';
+import { Button, Document, Paragraph, Surface } from '@utrecht/component-library-react';
+import { HTMLContent } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import prettierBabel from 'prettier/plugins/babel.mjs';
 import prettierESTree from 'prettier/plugins/estree.mjs';

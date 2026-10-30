@@ -1,6 +1,6 @@
 import { useEffect, useState, type ButtonHTMLAttributes } from 'react';
 import { IconCopy } from '../functional-icon';
-import { Button } from '@utrecht/component-library-react/dist/css-module';
+import { Button } from '@utrecht/component-library-react';
 import { Icon } from '@utrecht/component-library-react';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {

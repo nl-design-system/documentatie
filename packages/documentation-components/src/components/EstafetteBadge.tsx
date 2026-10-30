@@ -1,4 +1,4 @@
-import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
+import { DataBadge } from '@utrecht/component-library-react';
 import '@utrecht/data-badge-css/dist/index.css';
 import '@utrecht/badge-list-css/dist/index.css';
 import clsx from 'clsx';

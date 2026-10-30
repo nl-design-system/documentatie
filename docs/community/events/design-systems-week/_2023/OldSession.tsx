@@ -1,4 +1,4 @@
-import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Heading, Paragraph } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import { VideoPlayer } from '@nl-design-system-community/documentation-components/src/components/VideoPlayer';
 import '@nl-design-system-community/documentation-components/src/components/DSWSession.css';
