@@ -4,7 +4,7 @@ import { getPathnamesFromSitemap } from '../helpers/sitemap';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
-  sitemapDir: './packages/website/dist',
+  sitemapDir: './dist',
   sitemap: '/sitemap-index.xml',
 };
 

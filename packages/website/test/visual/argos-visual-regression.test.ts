@@ -5,7 +5,7 @@ import * as fs from 'fs';
 
 // Constants
 const siteUrl = 'http://localhost:3000';
-const sitemapPath = './build/sitemap.xml';
+const sitemapPath = './dist/sitemap.xml';
 // Screenshot path is relative to `/screenshots/` in the root
 const screenshotPath = '../tmp/screenshots/';
 
