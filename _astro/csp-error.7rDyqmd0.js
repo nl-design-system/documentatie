@@ -1,0 +1,1 @@
+import{i as e,t}from"./react.BQ7o4F5D.js";import{t as n}from"./jsx-runtime.CCjdxiVK.js";var r=e(t()),i=n(),a=({children:e})=>{let t=(0,r.useRef)(null);return(0,r.useEffect)(()=>{t.current?.setAttribute(`style`,`background-color: red`)},[]),(0,i.jsx)(`div`,{ref:t,children:e})};export{a as DivWithStyle};
