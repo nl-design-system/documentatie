@@ -1,10 +1,9 @@
 import { expect, test } from '@playwright/test';
 import { resolve } from 'node:path';
-import { readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
-import * as cheerio from 'cheerio';
 import { parseFrontmatter, ParseFrontmatterResult } from '@astrojs/markdown-remark';
 import { globSync } from 'glob';
+import { getPathnamesFromSitemap } from '../helpers/sitemap';
 
 const sourcefiles = globSync('docs/**/*.{md,mdx}')
   .filter((sourcefile) => sourcefile.includes('_') === false)
@@ -28,7 +27,7 @@ const toPathname = (slug: string, pathname: string) => {
 };
 
 test.describe('Unlisted pages', () => {
-  const sitemapPathnames = getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`);
+  const sitemapPathnames = getPathnamesFromSitemap(CONFIG.sitemapDir, CONFIG.sitemap);
 
   sourcefiles.forEach((sourcefile) => {
     test.describe(sourcefile, async () => {
@@ -60,31 +59,3 @@ test.describe('Unlisted pages', () => {
     });
   });
 });
-
-function getPathnamesFromSitemap(sitemapPath: string): string[] {
-  const paths: string[] = [];
-
-  try {
-    const sitemapIndex = readFileSync(sitemapPath, 'utf8');
-    const $ = cheerio.load(sitemapIndex, { xmlMode: true });
-
-    $('sitemap loc')
-      .map((_, element) => $(element).text())
-      .toArray()
-      .map((url) => new URL(url).pathname)
-      .forEach(async (sitemapPath) => {
-        getPathnamesFromSitemap(`${CONFIG.sitemapDir}${sitemapPath}`).forEach((path) => paths.push(path));
-      });
-
-    $('url loc')
-      .map((_, element) => $(element).text())
-      .toArray()
-      .map((url) => new URL(url).pathname)
-      .forEach((path) => paths.push(path));
-
-    return Array.from(new Set(paths));
-  } catch (error) {
-    console.warn(`Could not read sitemap at ${sitemapPath}, skipping accessibility tests generation.`, error);
-    return [];
-  }
-}

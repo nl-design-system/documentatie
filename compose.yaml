@@ -3,8 +3,8 @@ version: "3"
 services:
   www:
     volumes:
-      - ./build:/usr/local/apache2/htdocs/
-      - ./static/.htaccess:/usr/local/apache2/htdocs/.htaccess
+      - ./packages/website/dist:/usr/local/apache2/htdocs/
+      - ./packages/website/dist/.htaccess:/usr/local/apache2/htdocs/.htaccess
       - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
     build:
       dockerfile: httpd.Dockerfile
