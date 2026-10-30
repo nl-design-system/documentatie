@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.5.8 Grootte van het aanwijsgebied (minimum)
 pagination_label: WCAG-succescriterium 2.5.8 Grootte van het aanwijsgebied (minimum)
-description: Zorg ervoor dat de aanwijsbare elementen op een pagina groot genoeg zijn om makkelijk aan te wijzen met bijvoorbeeld een muis of vinger. Hierbij geldt dat het aan te wijzen gebied ten minste 24 bij 24 pixels groot is.
+description: Knoppen, links en andere bedieningselementen zijn groot genoeg, of staan ver genoeg uit elkaar. Zo raak je met je vinger of muis het onderdeel dat je bedoelt.
 slug: 2.5.8
 conformance_level: Niveau AA
 keywords:
@@ -16,15 +16,27 @@ keywords:
   - operable
   - input modalities
   - target size (minimum)
+  - target size
+  - grootte van het aanwijsgebied
+  - aanwijsgebied
+  - klikgebied
+  - raakgebied
+  - 24 bij 24 pixels
+  - tussenruimte
+  - carrousel
+  - icoonknop
+  - selectievakje
+  - radiobutton
+  - WCAG 2.5.8
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
 import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
 import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@nl-design-system-community/documentation-components/src/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import disclaimer from "./_wcag-disclaimer.md?raw";
 import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_2.5.8-summary.md";
 
@@ -32,29 +44,302 @@ import Summary from "./summaries/_2.5.8-summary.md";
   {"WCAG-succescriterium 2.5.8 Grootte van het aanwijsgebied (minimum)"}
 </WcagHeadingGroup>
 
-## Uitleg
-
 <Summary />
 
-Behalve in de volgende gevallen:
+Het aanwijsgebied is het deel van het scherm waar je kunt klikken of tikken om iets te bedienen. Is dat gebied klein en staat het dicht bij een ander aanwijsgebied, dan raak je al snel het verkeerde. Dat treft iemand met een tremor, spasticiteit of een andere beperking in de handen. Het treft ook wie een aangepast invoerapparaat gebruikt dat minder precies is dan een muis, wie een telefoon met één hand bedient, en wie in een schokkende trein of bus zit.
 
-- Het gebied is te klein, maar een cirkel met een diameter van 24 pixels, gecentreerd op het aanwijsbare element overlapt niet met andere (denkbeeldige) cirkels.
-- Er is op de pagina een alternatief voor dit element dat wel groot genoeg is.
-- Het aanwijsbare element, bijvoorbeeld een link, is onderdeel van een zin.
-- De browser bepaalt de grootte van het element en dit kan niet gewijzigd worden.
-- De kleine weergave is essentieel of wettelijk verplicht.
+Een onderdeel kleiner dan 24 bij 24 CSS-pixels mag, zolang het genoeg ruimte heeft. Dat meet je zo: teken een denkbeeldige cirkel van 24 CSS-pixels breed op het midden van het onderdeel. Doe dat ook bij de kleine onderdelen ernaast. Raakt geen enkele cirkel een ander onderdeel of een andere cirkel, dan is er genoeg ruimte. Knoppen van 20 bij 20 CSS-pixels met 4 CSS-pixels ruimte ertussen zijn dus in orde. Dezelfde knoppen zonder ruimte ertussen zijn te klein.
 
-## Bronnen en tools
+Bij een formulierveld hoort het gekoppelde label bij het aanwijsgebied. Klik of tik je op de tekst van het label, dan reageert het veld. Een selectievakje van 16 bij 16 CSS-pixels met het label "Ik wil de nieuwsbrief ontvangen" ernaast heeft daardoor een aanwijsgebied dat veel groter is dan het vakje zelf. Dat telt alleen als het label gekoppeld is: met een `for` die naar de `id` van het veld wijst, of doordat het veld in het label staat. Staat de tekst in een los element zonder koppeling, dan gebeurt er niets als je erop tikt. Die tekst telt dan ook niet mee.
 
-- [De bookmarklet van Adrian Roselli](https://adrianroselli.com/2022/05/24x24-pixel-cursor-bookmarklet.html)
+Een onderdeel is pas 24 bij 24 CSS-pixels groot als er een recht vierkant van die maat helemaal in past. Bij een knop van precies 24 bij 24 CSS-pixels met afgeronde hoeken past het vierkant er nooit in. Zo'n knop telt dan als klein onderdeel, en voldoet als er genoeg ruimte omheen is. Inzoomen telt niet mee: je meet op de normale grootte van de pagina.
+
+Er zijn nog 4 uitzonderingen. Een link in een zin hoeft niet 24 CSS-pixels hoog te zijn, omdat de regelhoogte van de tekst de grootte bepaalt. Die uitzondering geldt alleen als er tekst omheen staat die zelf geen link is. In een inhoudsopgave waarin elke regel een link is, geldt de uitzondering dus niet. Een klein onderdeel mag ook als er op dezelfde pagina een ander onderdeel is dat hetzelfde doet en wel groot genoeg is. Een bedieningselement met de standaardweergave van de browser valt er ook buiten, zolang je die weergave niet hebt aangepast. De laatste uitzondering is een weergave die je niet kunt veranderen zonder de informatie te veranderen, of een weergave die een wet voorschrijft. Een kaart met veel spelden dicht bij elkaar is daar een voorbeeld van: de plek van een speld is de informatie zelf.
+
+## Veelgemaakte fouten
+
+### Bolletjes onder een carrousel zijn klein en staan dicht op elkaar
+
+Onder een carrousel staan kleine bolletjes of streepjes waarmee je naar een andere slide gaat. Ze zijn 8 of 10 CSS-pixels groot en er zit weinig of geen ruimte tussen. Wie een tremor heeft of op een telefoon tikt, raakt het verkeerde bolletje of mist ze allemaal. Zijn de bolletjes de enige manier om zonder vegen naar een andere slide te gaan, dan kan zo iemand de andere slides niet bekijken.
+
+**Hoe te testen:** inspecteer een bolletje in de DevTools van je browser. Is het minstens 24 bij 24 CSS-pixels? Zo niet, is er dan 24 CSS-pixels ruimte van het midden van het ene bolletje tot het midden van het volgende?
+
+<Guideline appearance="dont" title="Bolletjes van 8 CSS-pixels zonder ruimte ertussen">
+  ```html
+  <div class="example-carousel-dots">
+    <button type="button" class="example-carousel-dot" aria-label="Slide 1"></button>
+    <button type="button" class="example-carousel-dot" aria-label="Slide 2"></button>
+    <button type="button" class="example-carousel-dot" aria-label="Slide 3"></button>
+  </div>
+  ```
+
+```css
+.example-carousel-dots {
+  display: flex;
+  gap: 0;
+}
+
+.example-carousel-dot {
+  width: 8px;
+  height: 8px;
+}
+```
+
+</Guideline>
+
+Het bolletje in het volgende voorbeeld blijft even klein, maar de knop eromheen is 24 bij 24 CSS-pixels.
+
+<Guideline appearance="do" title="Knoppen van 24 CSS-pixels met een klein bolletje erin">
+  ```css
+  .example-carousel-dots {
+    display: flex;
+    gap: 4px;
+  }
+
+.example-carousel-dot {
+min-width: 24px;
+min-height: 24px;
+}
+
+.example-carousel-dot::before {
+content: "";
+display: block;
+width: 8px;
+height: 8px;
+margin: auto;
+border-radius: 50%;
+background-color: currentColor;
+}
+
+````
+</Guideline>
+
+**Wie kan dit oplossen:** een developer maakt het aanwijsgebied van elk bolletje minstens 24 bij 24 CSS-pixels, of zet de bolletjes verder uit elkaar. Een designer kan het bolletje klein laten en er een groter aanwijsgebied omheen ontwerpen.
+
+### Links in een lijst staan te dicht onder elkaar
+
+Losse links onder elkaar zijn minder dan 24 CSS-pixels hoog en sluiten direct op elkaar aan. Dat zie je in de footer, in een lijst met documenten, in een menu of in een inhoudsopgave boven aan een lange pagina. Wie op een link tikt, raakt makkelijk de link erboven of eronder en opent een andere pagina dan bedoeld.
+
+Dit is iets anders dan een link in een zin. Daar bepaalt de tekst eromheen de regelhoogte, en die tekst is zelf geen link. In zo'n lijst is elke regel helemaal een link. Die tekst ontbreekt dus, en de uitzondering voor een link in een zin geldt niet.
+
+Een inhoudsopgave die zo compact is dat hij op één scherm past, voldoet ook niet aan dit succescriterium. Dat besliste de werkgroep die WCAG beheert in augustus 2026.
+
+**Hoe te testen:** inspecteer een link in de lijst in de DevTools. Is de link minstens 24 CSS-pixels hoog, of zit er genoeg ruimte tot de link erboven en eronder?
+
+<Guideline appearance="dont" title="Links van 18 CSS-pixels hoog die op elkaar aansluiten">
+```html
+<ul class="example-link-list">
+  <li><a href="https://example.com/contact">Contact</a></li>
+  <li><a href="https://example.com/privacy">Privacy</a></li>
+  <li><a href="https://example.com/toegankelijkheid">Toegankelijkheid</a></li>
+</ul>
+````
+
+```css
+.example-link-list a {
+  font-size: 15px;
+  line-height: 18px;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Links die minstens 24 CSS-pixels hoog zijn">
+  ```css
+  .example-link-list a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer maakt elke link minstens 24 CSS-pixels hoog, bijvoorbeeld met `min-height`, `padding` of een grotere regelhoogte. Bij een compacte inhoudsopgave kan ook een tweede manier op dezelfde pagina die wel genoeg ruimte heeft.
+
+Een rij links naast elkaar heeft hetzelfde probleem, zoals een alfabet met een link per letter of de nummers van paginering. Dat gebeurt als elke link smaller is dan 24 CSS-pixels en er geen ruimte tussen zit. Controleer ze ook op smalle schermen, want daar schuiven ze dichter op elkaar.
+
+### Een rij kleine icoonknoppen heeft geen ruimte ertussen
+
+Kleine knoppen met alleen een icoon of een letter staan direct naast elkaar. Voorbeelden zijn de iconen van sociale media, de letters "A" om de tekst groter of kleiner te maken, een taalkeuze "NL" en "EN", of de knoppen van een voorleesfunctie. Elke knop is 13 tot 22 CSS-pixels groot en er zit geen ruimte tussen. Wie de tekst groter wil maken, raakt dan de knop die de tekst kleiner maakt. Wie de opties van de voorleesfunctie wil openen, start het voorlezen.
+
+**Hoe te testen:** inspecteer de knoppen in de DevTools. Is elke knop minstens 24 bij 24 CSS-pixels? Zo niet, zit er dan genoeg ruimte tussen, zodat de denkbeeldige cirkels van 24 CSS-pixels elkaar niet raken?
+
+<Guideline appearance="dont" title="Knoppen van 16 CSS-pixels die tegen elkaar staan">
+  ```html
+  <div class="example-text-size">
+    <button type="button" aria-label="Tekst kleiner">A</button>
+    <button type="button" aria-label="Tekst normaal">A</button>
+    <button type="button" aria-label="Tekst groter">A</button>
+  </div>
+  ```
+
+```css
+.example-text-size button {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Knoppen van minstens 24 CSS-pixels">
+  ```css
+  .example-text-size button {
+    min-width: 24px;
+    min-height: 24px;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer maakt elke knop minstens 24 bij 24 CSS-pixels. Kan de knop niet groter, dan zet de developer er zoveel ruimte tussen dat de cirkels van 24 CSS-pixels elkaar niet raken.
+
+### Een kleine knop staat in of tegen een groter klikbaar onderdeel
+
+Een kleine knop of link staat in een ander onderdeel dat je ook kunt aanklikken, of er direct tegenaan. Voorbeelden zijn het oogje in een invoerveld waarmee je het wachtwoord toont, een link naar een document in een tabelrij die je als geheel kunt aanklikken, en een link naar een bestand direct naast de knop "Verwijder". Wie de kleine knop net mist, bedient het grote onderdeel. In het laatste voorbeeld verwijder je dan het document dat je wilde openen.
+
+**Hoe te testen:** zoek kleine knoppen en links die in of tegen een ander klikbaar onderdeel staan. Inspecteer de kleine knop in de DevTools. Is die minstens 24 bij 24 CSS-pixels?
+
+<Guideline appearance="dont" title="Knop van 20 CSS-pixels in het wachtwoordveld">
+  ```html
+  <div class="example-password">
+    <label for="example-password">Wachtwoord</label>
+    <input id="example-password" type="password" autocomplete="current-password" />
+    <button type="button" class="example-password-toggle" aria-label="Wachtwoord tonen"></button>
+  </div>
+  ```
+
+```css
+.example-password-toggle {
+  position: absolute;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Knop van 24 CSS-pixels in het wachtwoordveld">
+  ```css
+  .example-password-toggle {
+    position: absolute;
+    right: 4px;
+    min-width: 24px;
+    min-height: 24px;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer maakt de kleine knop of link minstens 24 bij 24 CSS-pixels. Blijft de knop kleiner, dan zet de developer hem zo ver van het grote onderdeel af dat de cirkel van 24 CSS-pixels het grote onderdeel niet raakt. Bij een link in een klikbare tabelrij maakt de developer de rij hoger.
+
+### Een kleine knop staat tegen het label van een invoerveld
+
+Naast het label van een invoerveld staat een kleine knop, bijvoorbeeld een rondje met een vraagteken dat uitleg over het veld opent. De knop is 16 of 20 CSS-pixels groot en staat direct tegen de tekst van het label aan. Het label hoort bij het aanwijsgebied van het veld, dus hier staan 2 bedieningselementen tegen elkaar aan. Wie de uitleg wil openen, zet de cursor in het veld. Testers missen dit makkelijk, want op het scherm ziet het label eruit als gewone tekst.
+
+**Hoe te testen:** klik op de tekst van het label. Komt de cursor in het veld of verandert de keuze, dan hoort het label bij het aanwijsgebied. Inspecteer daarna de knop ernaast in de DevTools. Is die minstens 24 bij 24 CSS-pixels? Zo niet, zit er dan zoveel ruimte tussen de knop en de tekst van het label dat de cirkel van 24 CSS-pixels die tekst niet raakt?
+
+<Guideline appearance="dont" title="Knop van 16 CSS-pixels direct tegen het label">
+  ```html
+  <label for="example-bsn">Burgerservicenummer</label>
+  <button type="button" class="example-hint" aria-label="Uitleg over burgerservicenummer">?</button>
+  <input id="example-bsn" type="text" inputmode="numeric" />
+  ```
+
+```css
+.example-hint {
+  width: 16px;
+  height: 16px;
+  margin-left: 2px;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Knop van 24 CSS-pixels met ruimte tot het label">
+  ```css
+  .example-hint {
+    min-width: 24px;
+    min-height: 24px;
+    margin-left: 8px;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer maakt de knop minstens 24 bij 24 CSS-pixels en zet er ruimte tussen. Een designer weet dat de tekst van het label meetelt als bedieningselement, en plaatst kleine knoppen daar niet direct tegenaan.
+
+### Keuzerondjes en selectievakjes staan te dicht onder elkaar
+
+In een lijst met keuzerondjes of selectievakjes is elke regel lager dan 24 CSS-pixels. De rondjes en vakjes zijn 15 tot 20 CSS-pixels groot en de regels sluiten op elkaar aan. Wie een keuze aantikt, vinkt makkelijk de optie erboven of eronder aan. In een formulier merkt iemand dat pas later, of niet.
+
+**Hoe te testen:** inspecteer een regel met een keuzerondje of selectievakje in de DevTools. Is de regel minstens 24 CSS-pixels hoog?
+
+<Guideline appearance="dont" title="Regels van 16 CSS-pixels hoog">
+  ```html
+  <fieldset class="example-choices">
+    <legend>Kies een bestandsformaat</legend>
+    <label><input type="radio" name="format" value="excel" /> Excel-bestand</label>
+    <label><input type="radio" name="format" value="csv" /> CSV-bestand</label>
+  </fieldset>
+  ```
+
+```css
+.example-choices label {
+  display: block;
+  line-height: 16px;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Regels van minstens 24 CSS-pixels hoog">
+  ```css
+  .example-choices label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 24px;
+  }
+  ```
+</Guideline>
+
+**Wie kan dit oplossen:** een developer koppelt het label aan het keuzerondje of selectievakje en maakt elke regel minstens 24 CSS-pixels hoog. Door die koppeling hoort de tekst van het label bij het aanwijsgebied. Het rondje zelf mag dan 16 CSS-pixels blijven.
 
 ## Hoe te testen
 
-Voor elk aanwijsbaar element op de pagina, test het volgende:
+### Voor iedereen
 
-1. Het aanwijsbare gebied moet minimaal 24 bij 24 pixels zijn.
-2. Als het niet 24 bij 24 pixels is, teken dan een cirkel in het midden van het element met een diameter van 24 pixels. Dit mag niet overlappen met het gebied (of een cirkel) van een ander element.
-3. Als het alsnog niet voldoet, beoordeel dan de andere uitzonderingen.
+1. Zoek naar kleine bedieningselementen die dicht bij elkaar staan: bolletjes onder een carrousel, iconen van sociale media, knoppen voor tekstgrootte of taal, lijsten met links, keuzerondjes en selectievakjes.
+2. Zoek naar kleine knoppen die in of tegen een groter klikbaar onderdeel staan, zoals een knop in een invoerveld.
+3. Open de pagina op een telefoon en tik met je vinger op elk van die onderdelen. Raak je een ander onderdeel dan je bedoelde? Laat dat onderdeel dan meten door iemand die met de DevTools van de browser werkt.
+4. Sla links in een zin over. Die hoeven niet 24 CSS-pixels hoog te zijn. Kijk wel of er tekst omheen staat die zelf geen link is. Bestaat een blok alleen uit linktekst, zoals een inhoudsopgave of een lijst met titels, dan test je het wel.
+
+### Voor developers
+
+1. Zet de zoom van je browser op 100%. Inzoomen telt niet mee.
+2. Inspecteer elk bedieningselement in de DevTools. Kijk bij "Computed" naar de breedte en hoogte, inclusief `padding`. Past er een recht vierkant van 24 bij 24 CSS-pixels in het aanwijsgebied? Let op sterk afgeronde hoeken en op iconen waarvan alleen de afbeelding klikbaar is.
+3. Is een onderdeel kleiner, teken dan in gedachten een cirkel van 24 CSS-pixels breed op het midden ervan. Doe dat ook bij kleine onderdelen ernaast. Raakt een cirkel een ander onderdeel of een andere cirkel, dan is er te weinig ruimte.
+4. Geef de knop of link zelf een `min-width` en `min-height` van 24px. Het icoon erin kan kleiner blijven.
+5. Controleer bij formuliervelden of het label gekoppeld is. Klik op de tekst van het label. Reageert het veld, dan meet je het veld en het label samen als 1 aanwijsgebied.
+6. Testgereedschap dat elk element apart meet, rekent een veld en zijn label als 2 losse aanwijsgebieden. Het meldt dan dat die 2 elkaar overlappen. Dat is geen fout onder dit succescriterium. Controleer zo'n melding met de hand voordat je hem overneemt.
+7. Test op verschillende schermbreedtes. Onderdelen die op een breed scherm genoeg ruimte hebben, kunnen op een smal scherm tegen elkaar aan komen.
+8. Ga na of een uitzondering geldt: een link in een zin met tekst eromheen die zelf geen link is, een ander onderdeel op dezelfde pagina dat hetzelfde doet en groot genoeg is, een element met de standaardweergave van de browser, of een weergave die je niet kunt veranderen zonder de informatie te veranderen of die een wet voorschrijft.
+
+## Gerelateerde succescriteria
+
+- [2.5.5 Grootte van het aanwijsgebied (verbeterd)](/wcag/2.5.5/): hetzelfde onderwerp op niveau AAA, met een minimum van 44 bij 44 CSS-pixels en zonder de uitzondering voor ruimte tussen onderdelen. Lees dit als je belangrijke knoppen groter wilt maken dan het minimum.
+- [2.5.1 Aanwijzergebaren](/wcag/2.5.1/): een carrousel die je met vegen bedient, heeft knoppen als alternatief nodig. Die knoppen moeten ook groot genoeg zijn om te raken.
+- [2.5.7 Sleepbewegingen](/wcag/2.5.7/): een schuifregelaar of lijst die je versleept, heeft een bediening met klikken of tikken als alternatief nodig. Ook daarvoor geldt de minimale grootte.
+- [2.5.2 Aanwijzerannulering](/wcag/2.5.2/): wie een verkeerde knop indrukt, kan de actie nog afbreken door weg te schuiven voordat hij loslaat. Samen met een groot genoeg aanwijsgebied voorkomt dat acties die iemand niet bedoelde.
+
+## Relevante bronnen
+
+- [WCAG 2.2: Succescriterium 2.5.8 Grootte van het aanwijsgebied (minimum)](https://www.w3.org/Translations/WCAG22-nl/#target-size-minimum): de officiële Nederlandstalige vertaling van het succescriterium, met de 5 uitzonderingen. Gebruik dit als referentie voor de exacte eisen.
+- [<span lang="en">Understanding SC 2.5.8: Target Size (Minimum)</span>](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html): de W3C-uitleg bij het succescriterium, met tekeningen van de cirkel van 24 CSS-pixels bij verschillende situaties (Engels).
+- [Techniek C42: <span lang="en">Using min-height and min-width on target container</span>](https://www.w3.org/WAI/WCAG22/Techniques/css/C42): lees hoe je met CSS een aanwijsgebied van minstens 24 bij 24 CSS-pixels maakt (Engels).
+- [<span lang="en">24×24 Pixel Cursor Bookmarklet</span> van Adrian Roselli](https://adrianroselli.com/2022/05/24x24-pixel-cursor-bookmarklet.html): een bookmarklet die je cursor 24 bij 24 pixels groot maakt. Gebruik hem om met de muis te zien of een onderdeel groot genoeg is (Engels).
+- [Issue 4540 in de WCAG-repository: 2.5.8 en een inhoudsopgave](https://github.com/w3c/wcag/issues/4540): het antwoord van de werkgroep van 10 augustus 2026 op de vraag of een compacte inhoudsopgave onder de uitzondering voor een link in een zin valt. Het antwoord is nee, met de redenering erbij. Lees dit als je wilt weten waar de grens van die uitzondering ligt (Engels).
+- [Issue 3440 in de WCAG-repository: telt een `<label>` mee voor de grootte van het aanwijsgebied?](https://github.com/w3c/wcag/issues/3440): in deze discussie bevestigt Alastair Campbell, voorzitter van de werkgroep, dat een gekoppeld label onder de definitie van aanwijsgebied valt. Mike Gower laat zien welke valse meldingen testgereedschap daardoor geeft. De <span lang="en">Understanding</span> bij 2.5.8 zegt hier nog niets over en de discussie loopt nog (Engels).
 
 ## Gebruikersonderzoek
 
@@ -66,10 +351,6 @@ Voor elk aanwijsbaar element op de pagina, test het volgende:
 - Nederlandse vertaling van het WCAG-succescriterium: [2.5.8 Grootte van het aanwijsgebied (minimum)](https://www.w3.org/Translations/WCAG22-nl/#target-size-minimum).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.5.8 Target Size (Minimum)</span>](https://www.w3.org/WAI/WCAG22/quickref/#target-size-minimum).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.5.8 Target Size (Minimum)</span>](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headingLevel={3} content={disclaimer} />
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
