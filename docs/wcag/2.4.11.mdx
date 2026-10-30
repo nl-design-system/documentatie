@@ -5,7 +5,7 @@ hide_title: true
 hide_table_of_contents: false
 sidebar_label: 2.4.11 Focus niet bedekt (minimum)
 pagination_label: WCAG-succescriterium 2.4.11 Focus niet bedekt (minimum)
-description: Een onderdeel dat toetsenbordfocus heeft mag niet volledig bedekt zijn.
+description: Als je met de Tab-toets naar een link, knop of veld gaat, zie je dat onderdeel. Een vaste balk, cookiebanner of geopend menu bedekt het nooit helemaal.
 slug: 2.4.11
 conformance_level: Niveau AA
 keywords:
@@ -17,15 +17,25 @@ keywords:
   - navigable
   - focus not obscured (minimum)
   - focus
+  - focus niet bedekt
+  - toetsenbordfocus
+  - sticky header
+  - vaste balk
+  - cookiebanner
+  - hamburgermenu
+  - dialoogvenster
+  - chatvenster
+  - scroll-padding
+  - WCAG 2.4.11
+  - toegankelijkheid
 ---
 
 {/* @license CC0-1.0 */}
 
+import { Guideline } from "@nl-design-system-community/documentation-components/src/components/Guideline";
 import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
 import { WcagHeadingGroup } from "@nl-design-system-community/documentation-components/src/components/WcagHeadingGroup";
-import { SpotlightSection } from "@nl-design-system-community/documentation-components/src/spotlight-section/spotlight-section";
 import CTAGebruikersonderzoek from "./_cta_gebruikersonderzoek.md";
-import disclaimer from "./_wcag-disclaimer.md?raw";
 import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_2.4.11-summary.md";
 
@@ -33,67 +43,230 @@ import Summary from "./summaries/_2.4.11-summary.md";
   {"WCAG-succescriterium 2.4.11 Focus niet bedekt (minimum)"}
 </WcagHeadingGroup>
 
-## In het kort
-
-<dl>
-  <div class="dl__item">
-    <dt class="dl__term">Doel</dt>
-    <dd class="dl__definition">Houd een gefocussed onderdeel zichtbaar.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Wat te doen</dt>
-    <dd class="dl__definition">Zorg ervoor dat een onderdeel met toetsenbordfocus minstens deels zichtbaar is.</dd>
-  </div>
-  <div class="dl__item">
-    <dt class="dl__term">Waarom het belangrijk is</dt>
-    <dd class="dl__definition">
-      Wat toetsenbordfocus heeft moet zichtbaar zijn voor mensen die een toetsenbord gebruiken.
-    </dd>
-  </div>
-</dl>
-
-## Uitleg
-
 <Summary />
 
-Dit criterium kan makkelijk fout gaan als een pagina in een onverwachte vorm is. Een ontwerp houdt niet altijd rekening met alle interacties die plaats kunnen vinden:
+Wie de pagina met het toetsenbord bedient, volgt waar de focus is. Verdwijnt het onderdeel met de focus achter een ander deel van de pagina, dan weet je niet meer waar je bent en wat er gebeurt als je op <kbd>Enter</kbd> drukt. Dat treft iedereen die met het toetsenbord werkt en de pagina ziet. Het treft ook wie spraakbesturing, een schermtoetsenbord of een schakelaar gebruikt. Wie de pagina vergroot, ziet maar een klein deel van de pagina tegelijk. Een vaste balk neemt dan een groot deel van het scherm in.
 
-- Een interactieve footer kan achter een cookie consent modal zitten.
-- Een uitklapmenu kan een link bedekken.
-- Een verandering in resolutie of zoom kan er voor zorgen dat onderdelen die sticky zijn ineens overlappen.
-- Een verplaatstbaar onderdeel kan ergens over of onder geplaatst worden.
+Het onderdeel mag voor een deel bedekt zijn, zolang je er nog iets van ziet. Beter is het als je het hele onderdeel ziet. Dat is de eis van [2.4.12 Focus niet bedekt (uitgebreid)](/wcag/2.4.12/) op niveau AAA.
+
+Het gaat hier om het onderdeel zelf. Zie je het onderdeel wel, maar de rand van de focus niet, lees dan [2.4.7 Focus zichtbaar](/wcag/2.4.7/).
+
+Content die je zelf opent, zoals een menu of een chatvenster, mag het onderdeel met de focus bedekken als je dat onderdeel weer zichtbaar maakt zonder de focus te verplaatsen. Bijvoorbeeld door op <kbd>Escape</kbd> te drukken, waarna het menu of venster sluit. Een lijst met keuzes die vanzelf sluit als je een keuze maakt, is ook in orde. Kun je een paneel zelf over de pagina verplaatsen, dan telt alleen de plek waar het paneel begint.
+
+## Veelgemaakte fouten
+
+### Een vaste balk boven- of onderaan bedekt het onderdeel met de focus
+
+Een balk met het logo en het menu blijft bovenaan staan als je naar beneden scrolt. Of een balk met knoppen blijft onderaan staan. Ga je met de Tab-toets verder, dan komt de focus op een link die achter die balk ligt. Dat gebeurt vooral als je met <kbd>Shift</kbd> + <kbd>Tab</kbd> teruggaat naar boven. Ook een skiplink kan de focus naar een plek sturen die onder de balk ligt. Als je inzoomt, is de balk groter en gebeurt dit vaker.
+
+**Hoe te testen:** zoom in tot 200%. Ga met de Tab-toets naar beneden en daarna met <kbd>Shift</kbd> + <kbd>Tab</kbd> terug naar boven. Verdwijnt het onderdeel met de focus ergens helemaal achter de balk?
+
+<Guideline appearance="dont" title="Vaste balk zonder ruimte voor het onderdeel met de focus">
+  ```css
+  .example-header {
+    position: sticky;
+    top: 0;
+    height: 5rem;
+  }
+  ```
+</Guideline>
+
+<Guideline appearance="do" title="Ruimte bovenaan zo hoog als de vaste balk">
+  Met `scroll-padding-top` scrolt de browser het onderdeel met de focus tot onder de balk.
+
+```css
+.example-header {
+  position: sticky;
+  top: 0;
+  height: 5rem;
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer geeft de pagina een `scroll-padding-top` die even hoog is als de vaste balk bovenaan, of een `scroll-padding-bottom` voor een vaste balk onderaan. Een designer kan de balk ook minder hoog maken, zodat hij bij inzoomen minder van het scherm bedekt.
+
+### Een cookiebanner bedekt links en knoppen
+
+Een cookiebanner staat vast onderaan of bovenaan de pagina tot je een keuze maakt. De focus gaat niet naar de banner, of kan uit de banner weg. Ga je met de Tab-toets verder, dan komt de focus op links en knoppen achter de banner, zoals de links in de footer. Die zie je niet. Als je inzoomt, bedekt de banner een groter deel van de pagina, en bij 400% kan de banner de hele pagina bedekken.
+
+**Hoe te testen:** open de pagina in een privévenster, zodat de cookiebanner verschijnt. Maak geen keuze. Ga met de Tab-toets door de hele pagina en met <kbd>Shift</kbd> + <kbd>Tab</kbd> terug. Doe dat ook bij 200% en 400% zoom. Komt de focus op een onderdeel dat je niet ziet?
+
+<Guideline appearance="dont" title="Cookiebanner die vast onderaan staat en de focus niet vasthoudt">
+  ```html
+  <div class="example-cookie-banner">
+    <p>Deze website gebruikt cookies om bij te houden welke pagina's je bezoekt.</p>
+    <button type="button">Cookies accepteren</button>
+    <button type="button">Cookies weigeren</button>
+  </div>
+  ```
+
+```css
+.example-cookie-banner {
+  position: fixed;
+  bottom: 0;
+}
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Cookiebanner als modaal dialoogvenster">
+  ```html
+  <dialog class="example-cookie-banner" aria-labelledby="example-cookie-title">
+    <h2 id="example-cookie-title">Cookies</h2>
+    <p>Deze website gebruikt cookies om bij te houden welke pagina's je bezoekt.</p>
+    <button type="button">Cookies accepteren</button>
+    <button type="button">Cookies weigeren</button>
+  </dialog>
+  ```
+
+Met `showModal()` blijft de focus in de banner tot je de banner sluit.
+
+```js
+document.querySelector(".example-cookie-banner").showModal();
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer maakt de cookiebanner een modaal dialoogvenster, zodat de focus in de banner blijft tot je die sluit. Een andere oplossing is een `scroll-padding-bottom` die even hoog is als de banner, zodat de browser het onderdeel met de focus boven de banner scrolt. Komt de cookiebanner uit een tool van een andere partij, controleer dan of je die tool zo kunt instellen.
+
+### Een geopend menu blijft open als de focus eruit gaat
+
+Op een klein scherm of bij inzoomen staat het hoofdmenu achter een menuknop. Het menu opent over de pagina. Na het laatste menu-item gaat de focus met de Tab-toets naar links en knoppen op de pagina achter het menu. Het menu blijft open, dus die links zie je niet. Sluit het menu ook niet als je op <kbd>Escape</kbd> drukt, dan weet je niet waar de focus is en hoe je terugkomt.
+
+**Hoe te testen:** zoom in tot 200%, zodat de menuknop verschijnt. Open het menu met <kbd>Enter</kbd> en ga met de Tab-toets voorbij het laatste menu-item. Sluit het menu, of gaat de focus naar onderdelen achter het menu? Sluit het menu als je op <kbd>Escape</kbd> drukt?
+
+<Guideline appearance="dont" title="Menu dat alleen sluit als je opnieuw op de menuknop drukt">
+  ```html
+  <nav class="example-navigation" aria-label="Hoofdmenu">
+    <button type="button" aria-expanded="true" aria-controls="example-menu">Menu</button>
+    <ul id="example-menu">
+      <li><a href="https://example.com/afval">Afval</a></li>
+      <li><a href="https://example.com/belastingen">Belastingen</a></li>
+    </ul>
+  </nav>
+  ```
+
+De volgende code opent en sluit het menu alleen als je op de menuknop drukt.
+
+```js
+menuButton.addEventListener("click", toggleMenu);
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Menu dat sluit als de focus eruit gaat of als je op Escape drukt">
+  De volgende code sluit het menu als de focus buiten het menu komt. Met <kbd>Escape</kbd> sluit het menu en gaat de focus terug naar de menuknop.
+
+```js
+menuButton.addEventListener("click", toggleMenu);
+
+navigation.addEventListener("focusout", (event) => {
+  if (!navigation.contains(event.relatedTarget)) {
+    closeMenu();
+  }
+});
+
+navigation.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeMenu();
+    menuButton.focus();
+  }
+});
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer sluit het menu als de focus eruit gaat, of houdt de focus in het menu tot je het sluit. Met <kbd>Escape</kbd> sluit het menu en gaat de focus terug naar de menuknop.
+
+Hetzelfde geldt voor een uitgeklapt submenu, een profielmenu en een lijst met zoeksuggesties die open blijven als de focus eruit gaat.
+
+### Een dialoogvenster of chatvenster laat de focus naar de pagina eronder gaan
+
+Een venster opent over de pagina, zoals een welkomstmelding, een venster met filters, een chatvenster of een venster om feedback te geven. De focus gaat niet naar het venster, of kan met de Tab-toets uit het venster naar de pagina erachter. De focus komt dan op onderdelen die het venster bedekt. Een chatvenster dat je met het toetsenbord niet kunt sluiten, blijft over de pagina staan.
+
+**Hoe te testen:** open het venster met het toetsenbord. Gaat de focus naar het venster? Ga met de Tab-toets door alle onderdelen in het venster. Blijft de focus in het venster, of sluit het venster als de focus eruit gaat? Sluit het venster als je op <kbd>Escape</kbd> drukt?
+
+<Guideline appearance="dont" title="Venster dat de focus niet vasthoudt">
+  ```html
+  <div class="example-dialog">
+    <h2>Filters</h2>
+    <button type="button">Filters toepassen</button>
+  </div>
+  ```
+
+De volgende code toont het venster, maar verplaatst de focus niet en houdt de focus niet in het venster.
+
+```js
+dialog.hidden = false;
+```
+
+</Guideline>
+
+<Guideline appearance="do" title="Modaal dialoogvenster met het dialog-element">
+  ```html
+  <dialog class="example-dialog" aria-labelledby="example-dialog-title">
+    <h2 id="example-dialog-title">Filters</h2>
+    <button type="button">Filters toepassen</button>
+    <button type="button">Sluiten</button>
+  </dialog>
+  ```
+
+Met `showModal()` gaat de focus naar het venster, blijft de focus erin en sluit het venster met <kbd>Escape</kbd>.
+
+```js
+dialog.showModal();
+```
+
+</Guideline>
+
+**Wie kan dit oplossen:** een developer gebruikt het `<dialog>`-element met `showModal()` voor een venster dat de pagina bedekt. Moet je de pagina kunnen gebruiken terwijl het venster open is, zoals bij een chatvenster, dan sluit het venster met <kbd>Escape</kbd> of als de focus eruit gaat.
 
 ## Hoe te testen
 
-- Ga door een pagina met het toetsenbord.
-- Kijk welke onderdelen de focus krijgen.
-- Controleer of de focus (deels) zichtbaar is.
-- Doe dit ook voor andere vormen van de pagina zoals:
-  - Met een open cookie consent modal.
-  - Met opengeklapte menus.
-  - Op verschillende resoluties.
-  - Met geopende modals of andere overlappende content.
-  - Met foutmeldingen.
+### Voor iedereen
 
-## Tips
+1. Ga met de Tab-toets van boven naar beneden door de pagina, en met <kbd>Shift</kbd> + <kbd>Tab</kbd> weer terug. Zie je bij elke stap het onderdeel met de focus?
+2. Herhaal dit bij 200% en bij 400% zoom. Vaste balken en banners bedekken dan een groter deel van het scherm.
+3. Open de pagina in een privévenster, zodat de cookiebanner verschijnt. Ga met de Tab-toets door de pagina zonder een keuze te maken.
+4. Open elk menu, submenu en venster met het toetsenbord. Ga met de Tab-toets verder dan het laatste onderdeel. Komt de focus op iets dat achter het menu of venster ligt?
+5. Staat een onderdeel met de focus helemaal achter iets anders, druk dan op <kbd>Escape</kbd>. Zie je het onderdeel daarna weer, zonder dat de focus verplaatst is? Dan is het in orde. Zo niet, dan is het onderdeel bedekt.
+6. Zie je nog een deel van het onderdeel met de focus, dan is het niet helemaal bedekt. Het is beter als je het hele onderdeel ziet.
 
-- In plaats van deels zichtbaar kun je beter onderdelen helemaal zichtbaar laten zijn. Je voldoet dan aan [WCAG-succescriterium 2.4.12 Focus niet bedekt (uitgebreid)](/wcag/2.4.12)
-- Zodra je dit criterium test, kun je meteen [WCAG-succescriterium 2.1.1 Toetsenbord](/wcag/2.1.1) en [WCAG-Succescriterium 2.4.7 Focus zichtbaar](/wcag/2.4.7) testen.
+### Voor developers
+
+1. Zoek in de Developer Tools van je browser naar elementen met `position: fixed` of `position: sticky`. Dat zijn de onderdelen die andere content kunnen bedekken.
+2. Geef de pagina een `scroll-padding-top` of `scroll-padding-bottom` die even hoog is als de vaste balk. Test het bij 200% en 400% zoom, want de hoogte van de balk kan dan veranderen.
+3. Controleer de doelen van skiplinks en links naar een plek op dezelfde pagina. Komt het doel onder een vaste balk terecht?
+4. Gebruik voor vensters die de pagina bedekken het `<dialog>`-element met `showModal()`. Dan gaat de focus naar het venster en blijft de focus erin tot je het venster sluit.
+5. Sluit menu's, submenu's en lijsten met suggesties als de focus eruit gaat, met een `focusout`-event. Sluit ze ook met <kbd>Escape</kbd>.
+6. Controleer de instellingen van tools van andere partijen, zoals een cookiebanner, een chatvenster of een voorleestool. Zo'n tool kan een vast element aan de pagina toevoegen dat andere onderdelen bedekt.
+
+## Gerelateerde succescriteria
+
+- [2.4.7 Focus zichtbaar](/wcag/2.4.7/): gaat over de focusindicator zelf. Is het onderdeel zichtbaar maar de rand van de focus niet, dan lees je daar verder.
+- [2.4.12 Focus niet bedekt (uitgebreid)](/wcag/2.4.12/): de eis op niveau AAA. Daar mag het onderdeel met de focus ook niet voor een deel bedekt zijn.
+- [2.4.3 Focus volgorde](/wcag/2.4.3/): een menu of venster dat de focus niet vasthoudt, geeft ook een onlogische volgorde. De focus springt dan van het menu naar de pagina erachter.
+- [1.4.10 Reflow](/wcag/1.4.10/): bij 400% zoom moet de pagina zonder horizontaal scrollen te lezen zijn. Een vaste balk die dan veel ruimte inneemt, bedekt makkelijk het onderdeel met de focus.
+
+## Relevante bronnen
+
+- [Techniek C43: <span lang="en">Using CSS scroll-padding to un-obscure content</span>](https://www.w3.org/WAI/WCAG22/Techniques/css/C43): lees hoe je met `scroll-padding` voorkomt dat een vaste balk het onderdeel met de focus bedekt. Engelstalig.
 
 ## Gebruikersonderzoek
 
 <CTAGebruikersonderzoek />
 
-## W3C referenties
+## W3C-referenties
 
 - Engelse tekst van het WCAG-succescriterium: [<span lang="en">2.4.11 Focus Not Obscured (Minimum)</span>](https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum).
 - Nederlandse vertaling van het WCAG-succescriterium: [2.4.11 Focus niet bedekt (minimum)](https://www.w3.org/Translations/WCAG22-nl/#focus-not-obscured-minimum).
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 2.4.11 Focus Not Obscured (Minimum)</span>](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-minimum).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 2.4.11 Focus Not Obscured (Minimum)</span>](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html).
-
-<SpotlightSection>
-  <Markdown omitH1 headingLevel={3} content={disclaimer} />
-</SpotlightSection>
 
 ## Help richtlijn verbeteren
 
