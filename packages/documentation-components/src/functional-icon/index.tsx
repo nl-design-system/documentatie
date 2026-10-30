@@ -1,6 +1,7 @@
 import {
   IconBold as TablerIconBold,
   IconCalendarEvent as TablerIconCalendarEvent,
+  IconCheck as TablerIconCheck,
   IconChevronDown as TablerIconChevronDown,
   IconChevronLeft as TablerIconChevronLeft,
   IconChevronRight as TablerIconChevronRight,
@@ -36,6 +37,7 @@ const svgProps = {
 
 export const IconBold = () => <TablerIconBold {...svgProps} />;
 export const IconCalendarEvent = () => <TablerIconCalendarEvent {...svgProps} />;
+export const IconCheck = () => <TablerIconCheck {...svgProps} />;
 export const IconChevronDown = () => <TablerIconChevronDown {...svgProps} />;
 export const IconChevronLeft = () => <TablerIconChevronLeft {...svgProps} />;
 export const IconChevronRight = () => <TablerIconChevronRight {...svgProps} />;
