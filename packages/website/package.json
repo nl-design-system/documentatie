@@ -28,7 +28,6 @@
     "lint-todo": "tsc --noEmit",
     "preview": "astro preview",
     "test": "vitest run",
-    "test-a11y": "playwright test test/a11y/axe.test.ts --workers=8",
     "test-a11y:next": "playwright test test/a11y/axe.next.test.ts --workers=8",
     "test-a11y:next-dark": "playwright test test/a11y/axe.next.dark.test.ts --workers=8",
     "test-e2e": "playwright test test/e2e/ --workers=8",
