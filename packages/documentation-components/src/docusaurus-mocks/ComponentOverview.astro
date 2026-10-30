@@ -1,19 +1,20 @@
 ---
-import componentProgress from '@nl-design-system/component-progress/dist/index.json';
 import { CardGroup } from '../components/CardGroup';
 import { ComponentCard } from '../components/ComponentCard';
 import { ComponentOverviewFilter } from './ComponentOverviewFilter';
 import { getCollection } from 'astro:content';
 import { COMPONENT_STATES, getComponentFrameworkNames, type Component } from '../utils';
+import type { ComponentProgressObject } from '@nl-design-system/component-progress/dist/utils';
 
 const components = await getCollection('components');
+const { componentProgress } = Astro.props;
 ---
 
 <ComponentOverviewFilter client:load />
 
 <CardGroup>
   {
-    components.map((item) => {
+    components.map((item: ComponentProgressObject) => {
       const { title, description } = item.data;
 
       const component = (componentProgress as Component[]).find((item) => {
