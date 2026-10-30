@@ -108,6 +108,8 @@ export function removeDuplicates<T>(items: T[]): T[] {
 const sortFrameworkNames = (frameworkNames: string[]): string[] =>
   [...frameworkNames].sort((a, b) => FRAMEWORK_NAME_SORT_ORDER.indexOf(a) - FRAMEWORK_NAME_SORT_ORDER.indexOf(b));
 
+const isValidFrameworkUrl = (value: string): boolean => URL.canParse(value) && new URL(value).protocol === 'https:';
+
 export const getAllFrameworkNames = (components: Component[]): string[] => {
   const allProjects = components.flatMap(({ projects }) => projects);
   const allFrameworkNames = allProjects.flatMap((project) => getProjectFrameworkNames(project));
@@ -125,7 +127,7 @@ export const getProjectFrameworkNames = (project: ComponentProject): string[] =>
   return sortFrameworkNames(
     removeDuplicates(
       project.tasks
-        .filter(({ name, value }) => value !== '' && frameworkRx.test(name))
+        .filter(({ name, value }) => value !== '' && frameworkRx.test(name) && isValidFrameworkUrl(value))
         .map(({ name }) => frameworkRx.exec(name)?.[1]),
     ),
   );
@@ -155,7 +157,7 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
   // { brand:'github', name: 'GitHub URL (CSS)', id: '...', value: '...', description: '...' }
   return frameworkNames.map((frameworkName) => {
     const tasks = project.tasks
-      .filter(({ name, value }) => value !== '' && name.includes(frameworkName))
+      .filter(({ name, value }) => value !== '' && name.includes(frameworkName) && isValidFrameworkUrl(value))
       .map(({ name, id, value }): FrameworkTask => {
         const brand = /^(.+) URL/.exec(name)[1];
         const description =

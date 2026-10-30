@@ -23,6 +23,7 @@
     "start": "pnpm run dev",
     "dev": "pnpm --filter @nl-design-system/website-astro run dev",
     "build": "pnpm run --recursive build",
+    "build:astro": "pnpm --filter @nl-design-system/website-astro run build",
     "clean": "npm-run-all clean:**",
     "clean:playwright": "playwright uninstall",
     "clean:generated": "rimraf .docusaurus/ build/ dist/ tmp/",
