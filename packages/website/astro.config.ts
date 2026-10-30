@@ -9,6 +9,7 @@ import { sharedPlugins } from './src/markdown-plugins.ts';
 import { clientLoadPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-client-load/index.ts';
 import { siteBaseUrl } from './src/seo.config.ts';
 import { appendCSPToHTAccess } from './append-csp-to-htaccess.ts';
+import { deadLinkChecker } from './dead-link-checker.ts';
 import { fileURLToPath } from 'node:url';
 
 const cspDevConfig: AstroUserConfig = {
@@ -152,6 +153,20 @@ export default defineConfig({
         const url = new URL(page);
         return globalThis.unlistedPages.has(url.pathname) === false;
       },
+    }),
+    deadLinkChecker({
+      ignoreTarget: [
+        /.ics$/,
+        /^\/blog/,
+        /^\/miro$/,
+        /^\/css-component-prototype.html$/,
+        /^\/html-component-prototype.html$/,
+        /^\/pre-heading\/$/, // TODO: I think this is a missing page
+      ],
+      ignoreSource: [
+        /^\/toegankelijkheidsverklaring\/rapport-202[34]/,
+        /^\/handboek\/developer\/prototypes\/zonder-front-end-framework\//,
+      ],
     }),
     appendCSPToHTAccess(),
   ],
