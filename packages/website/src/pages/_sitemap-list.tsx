@@ -1,6 +1,10 @@
-import type { NavigationElementResolved } from '../navigation';
-import { Heading } from '@components/heading/heading';
-import { Link } from '@components/link/link';
+import type {
+  NavigationElementResolved,
+  NavigationGroupResolved,
+} from '@nl-design-system-community/documentation-index/src/navigation/index.ts';
+import { Heading } from '@nl-design-system-community/documentation-components/src/heading/heading.tsx';
+import { Link } from '@nl-design-system-community/documentation-components/src/link/link.tsx';
+import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph.tsx';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react/css-module';
 import '@utrecht/unordered-list-css/dist/index.css';
 
@@ -8,18 +12,39 @@ export interface SitemapListProps {
   navigationGroup: NavigationElementResolved;
 }
 
+function getAllSubItems(navigationGroup: NavigationGroupResolved, list: NavigationElementResolved[] = []) {
+  navigationGroup.items.forEach((item) => {
+    if (item.type === 'group') {
+      if (item.index && !item.index.unlisted) {
+        list.push(item.index);
+      }
+      getAllSubItems(item, list);
+    } else {
+      if (!item.unlisted) {
+        list.push(item);
+      }
+    }
+  });
+  return list.flat();
+}
+
 export const SitemapList = ({ navigationGroup }: SitemapListProps) => {
   if (navigationGroup.type !== 'group') throw new Error('navigationGroup is not the proper type');
+
+  const allSubItems = getAllSubItems(navigationGroup);
 
   return (
     <>
       <Heading level={2}>
         {navigationGroup.index?.href ? (
-          <Link href={navigationGroup?.index?.href}>{navigationGroup.label}</Link>
+          <Link href={navigationGroup?.index?.href} lang={navigationGroup?.index?.lang}>
+            {navigationGroup.label}
+          </Link>
         ) : (
-          navigationGroup.label
+          <span lang={navigationGroup.lang}>{navigationGroup.label}</span>
         )}
       </Heading>
+      <Paragraph>{allSubItems.length} pagina's</Paragraph>
       <SitemapListGroup items={navigationGroup.items} />
     </>
   );
@@ -36,7 +61,13 @@ export const SitemapListGroup = ({ items }: SitemapListGroupProps) => {
         (item, index) =>
           !item.unlisted && (
             <UnorderedListItem key={`item-${index}`}>
-              {item.href ? <Link href={item.href}>{item.label}</Link> : item.label}
+              {item.href ? (
+                <Link href={item.href} lang={item.lang}>
+                  {item.label}
+                </Link>
+              ) : (
+                <span lang={item.lang}>{item.label}</span>
+              )}
               {item.type === 'group' && <SitemapListGroup items={item.items} />}
             </UnorderedListItem>
           ),

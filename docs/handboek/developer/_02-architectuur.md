@@ -34,7 +34,7 @@ Wij hebben geluisterd naar alle wensen en dit jaar zijn we begonnen met enkele t
 
 Het uiterlijk van websites wordt geprogrammeerd met CSS, een taal waarin kleuren, lettertypes, witruimte en vlakverdeling van websites worden ingesteld. Met de NL Design System architectuur wordt de CSS opgedeeld in verschillende lagen: de onderste laag gaat over componenten en kan hergebruikt worden voor andere huisstijlen en andere teams. De bovenste laag bevat de kenmerken van de huisstijl van een organisatie: deze laag wordt in software vaak een "thema" genoemd. De laag in het midden is de lijm die het mogelijk maakt: de design tokens van NL Design System.
 
-Een design token is een kleine eigenschap van je visueel ontwerp, zoals een kleur of een lettertype. Elke huisstijl bestaat uit kleurenpalet en één of meerdere lettertypes: dit noemen wij _brand identity design tokens_, maar we korten het vaak af als "_brand tokens_". Deze design tokens zijn er om de herkenbaarheid van je websites te waarborgen. Meestal is het de bedoeling dat geen kleuren of lettertypes worden gebruikt die niet een officiële design token zijn.
+Een design token is een kleine eigenschap van je visueel ontwerp, zoals een kleur of een lettertype. Elke huisstijl bestaat uit kleurenpalet en één of meerdere lettertypes: dit noemen wij <i lang="en">brand identity design tokens</i>, maar we korten het vaak af als "<i lang="en">brand tokens</i>". Deze design tokens zijn er om de herkenbaarheid van je websites te waarborgen. Meestal is het de bedoeling dat geen kleuren of lettertypes worden gebruikt die niet een officiële design token zijn.
 
 Meestal wordt CSS geschreven op een manier dat deze kleuren en lettertypes in elke uithoek van de code voorkomen, zodat elke component aan de huisstijl voldoet. Uit onze rondvraag bleek dat al die huisstijl-specifieke code een belangrijke belemmering is om samen te werken aan code van een andere organisatie. Daarom vervangen onze teams al deze kleuren in hun code door CSS variabelen van NL Design System. De naam "variabele" zegt het al: de kleur of lettertype wordt afhankelijk van de website waarin je de component gebruikt.
 
@@ -60,7 +60,7 @@ Om de code van componenten vrij te houden van huisstijl (en zo hergebruik mogeli
 }
 ```
 
-Elke huisstijl kan op deze manier een eigen invulling geven aan de componenten, door de lijm van de middelste laag waarin de _brand identity design token_ worden gekoppeld aan _component design tokens_:
+Elke huisstijl kan op deze manier een eigen invulling geven aan de componenten, door de lijm van de middelste laag waarin de <i lang="en">brand identity design token</i> worden gekoppeld aan <i lang="en">component design tokens</i>:
 
 ```css
 :root {

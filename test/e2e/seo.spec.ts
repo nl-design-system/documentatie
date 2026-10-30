@@ -38,14 +38,34 @@ const pathnamesSelection = [
 
 test.describe('SEO values', async () => {
   const pathnames =
-    process.env.E2E_SEO_ALL_PAGES === '1'
+    process.env['E2E_SEO_ALL_PAGES'] === '1'
       ? getPathnamesFromSitemap(`${CONFIG.sitemapDir}${CONFIG.sitemap}`)
       : pathnamesSelection;
 
   pathnames.forEach(async (pathname) => {
     test.describe(pathname, async () => {
       let page;
-      let values;
+      let values = {
+        title: '',
+        description: '',
+        canonical: '',
+        viewport: '',
+        charset: '',
+        dir: '',
+        lang: '',
+        robots: '',
+        keywords: '',
+        ogType: '',
+        ogSiteName: '',
+        ogImage: '',
+        ogImageAlt: '',
+        ogDescription: '',
+        ogTitle: '',
+        ogUrl: '',
+        ogLocale: '',
+        twitterCard: '',
+        h1: '',
+      };
 
       test.beforeAll(async ({ browser }) => {
         const context = await browser.newContext();
@@ -128,7 +148,7 @@ test.describe('SEO values', async () => {
             .locator('body h1:not(.nlds-not-accessible h1)')
             .innerText()
             .then((h1) => ({ h1 })),
-        ]).then((values) => Object.assign({}, ...values));
+        ]).then((documentValues) => Object.assign({}, values, ...documentValues));
       });
 
       test('lang is set', async () => {
@@ -227,7 +247,7 @@ test.describe('SEO values', async () => {
 });
 
 function getPathnamesFromSitemap(sitemapPath: string): string[] {
-  const paths = [];
+  const paths: string[] = [];
 
   try {
     const sitemapIndex = readFileSync(sitemapPath, 'utf8');

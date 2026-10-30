@@ -4,17 +4,8 @@
  * It displays the `side-nav` and `breadcrumb-nav`
  */
 .ma-layout-overview {
-  /* Temporary variables until the design is thought through with a designer */
-  --ma-layout-overview-side-nav-min-inline-size: 100px;
-  --ma-layout-overview-side-nav-max-inline-size: 300px;
-  --ma-layout-overview-min-inline-size: 220px;
-  --ma-layout-overview-content-max-inline-size: var(--basis-page-max-inline-size);
-  --ma-layout-overview-content-padding-inline-end: var(--basis-space-inline-xl);
-  --ma-layout-overview-content-padding-inline-start: var(--basis-space-inline-xl);
-  --ma-layout-overview-content-padding-block-end: var(--basis-space-block-6xl);
-  --ma-layout-overview-content-padding-block-start: var(--basis-space-block-xl);
-
   container: ma-layout-overview / inline-size;
+  flex-grow: 1;
   inline-size: 100%;
 }
 
@@ -34,6 +25,7 @@
   padding-block-start: var(--ma-layout-overview-content-padding-block-start);
   padding-inline-end: var(--ma-layout-overview-content-padding-inline-end);
   padding-inline-start: var(--ma-layout-overview-content-padding-inline-start);
+  row-gap: var(--ma-layout-row-gap);
 }
 
 .ma-layout-overview__side-nav {
@@ -92,5 +84,14 @@
       /* page body */
       1fr;
     grid-template-rows: auto auto 1fr;
+  }
+}
+
+@media (forced-colors: active) and (--x-large-down) {
+  /* In forced colors mode, make a clear separation between the table of contents and the main content */
+  .ma-table-of-contents__content {
+    border-color: currentColor;
+    border-style: solid;
+    border-width: 1px;
   }
 }

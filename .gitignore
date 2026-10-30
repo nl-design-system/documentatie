@@ -9,7 +9,9 @@ dist/
 # Generated files
 .docusaurus
 .cache-loader
+.lighthouseci/
 tmp/
+*.tsbuildinfo
 
 # Misc
 .DS_Store

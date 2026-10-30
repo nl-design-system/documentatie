@@ -14,13 +14,14 @@ image: https://raw.githubusercontent.com/nl-design-system/documentatie/assets/co
 image_alt: NL Design System Design Systems Week 2026 26-29 October, online
 ---
 
-import { ButtonLink } from "@site/src/components/ButtonLink";
-import { ActionGroup } from "@components/action-group/action-group";
-import { Paragraph } from "@components/paragraph/paragraph";
+import { ButtonLink } from "@nl-design-system-community/documentation-components/src/components/ButtonLink";
+import { ActionGroup } from "@nl-design-system-community/documentation-components/src/action-group/action-group";
+import { Paragraph } from "@nl-design-system-community/documentation-components/src/paragraph/paragraph";
+import { Icon } from "@nl-design-system-community/documentation-components/src/icon/icon";
 import { IconChevronRight } from "@tabler/icons-react";
 import sessions from "../\_2026/sessions.json";
 import speakers from "../\_2026/speakers.json";
-import { DSWSession } from "@site/src/components/DSWSession";
+import { DSWSession } from "@nl-design-system-community/documentation-components/src/components/DSWSession";
 import settings from "../settings.json";
 
 <div lang="en">
@@ -34,14 +35,18 @@ import settings from "../settings.json";
 </Paragraph>
 
 <ActionGroup>
-  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/timetable`} appearance="primary-action">
+  <ButtonLink href={`/events/design-systems-week-${settings.year}/en/timetable`} purpose="primary">
     {"View the timetable"}
-    <IconChevronRight slot="icon-end" />
+    <Icon slot="icon-end">
+      <IconChevronRight />
+    </Icon>
   </ButtonLink>
   {!!settings.miro && (
-    <ButtonLink href={settings.miro} appearance="secondary-action">
+    <ButtonLink href={settings.miro} purpose="secondary">
       {"Use Miro"}
-      <IconChevronRight slot="icon-end" />
+      <Icon slot="icon-end">
+        <IconChevronRight />
+      </Icon>
     </ButtonLink>
   )}
 </ActionGroup>
@@ -87,6 +92,23 @@ import settings from "../settings.json";
 <DSWSession
   allSpeakers={speakers}
   allSessions={sessions}
+  sessionId="b94a7d82-2641-446d-ad36-eafca20ec7fb"
+  headingLevel={2}
+  lang="en"
+>
+  <Paragraph>
+    Accessibility has been a core focus of Skapa, the digital design system at IKEA, since it was established in 2019.
+  </Paragraph>
+  <Paragraph>
+    In this session, we’ll share how we embedded accessibility into the way our design system is built and maintained,
+    and how that foundation helped foster a broader accessibility culture across the organisation, influencing both
+    product and brand experiences.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
   sessionId="a23217db-b17d-4e97-ad46-1fd7d113c567"
   headingLevel={2}
   lang="en"
@@ -107,6 +129,53 @@ import settings from "../settings.json";
   <Paragraph>
     A practical session packed with lessons learned, pitfalls to avoid, and tips for teams planning a similar
     transition.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="5c426f34-76eb-44c3-a951-277b49e6b442"
+  headingLevel={2}
+  lang="en"
+>
+  <Paragraph>
+    What if you could build exactly the design tools your team needs, instead of adapting your workflow to the tools
+    available?
+  </Paragraph>
+  <Paragraph>
+    Creating custom design tooling has become easier than ever. Instead of relying solely on generic plugins and
+    frameworks, teams can now build small, purpose-made tools that address the specific needs of their projects and
+    design systems.
+  </Paragraph>
+  <Paragraph>
+    In this session, Javier Cuello shares practical examples of how he has been creating and using custom mini plugins
+    and design tools to solve problems that previously seemed difficult to tackle. He’ll show what’s possible, where
+    these tools can add value, and how they can improve everyday design workflows.
+  </Paragraph>
+  <Paragraph>
+    A practical and inspiring session for designers who want to rethink their tooling, with plenty of useful insights
+    for developers too.
+  </Paragraph>
+</DSWSession>
+
+<DSWSession
+  allSpeakers={speakers}
+  allSessions={sessions}
+  sessionId="aec41135-5d58-404d-a427-47dcb6730b20"
+  headingLevel={2}
+  lang="en"
+>
+  <Paragraph>
+    Design systems often solve many of the same problems, over and over again. What if we could share the universal
+    parts? What if sharing could not hinder, but enable uniqueness and identity. This talk covers the Norwegian project
+    "Designsystemet" and its approach to building a framework agnostic, design agnostic, open-source toolkit to enable
+    your design system.
+  </Paragraph>
+  <Paragraph>
+    We also take a deep dive into how prioritising native HTML, CSS and browser behaviour makes components more
+    predictable, flexible and composable, and challenge what parts of a design system you actually need to own and
+    maintain yourself.
   </Paragraph>
 </DSWSession>
 

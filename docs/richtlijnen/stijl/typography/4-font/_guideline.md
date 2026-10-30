@@ -118,15 +118,15 @@ dt {
 }
 ```
 
-Op deze manier ontloop je het risico dat gebruikers minder leesbare teksten krijgen te zien door _faux italic_ of _faux bold_ letters, of nog erger: een vetgedrukt lettertype dat met _faux bold_ nog eens extra vetgedrukt wordt. Bovendien heb je zo duidelijkere code.
+Op deze manier ontloop je het risico dat gebruikers minder leesbare teksten krijgen te zien door <i lang="en">faux italic</i> of <i lang="en">faux bold</i> letters, of nog erger: een vetgedrukt lettertype dat met <i lang="en">faux bold</i> nog eens extra vetgedrukt wordt. Bovendien heb je zo duidelijkere code.
 
 ## Anti-aliasing
 
 Gebruik geen `font-smoothing`. Gebruikers hebben zeer uiteenlopende types beeldschermen, browsers en besturingssystemen. Hoe letters op jouw scherm worden getoond, is anders dan bij veel anderen. Wanneer `font-smoothing` goed werkt voor jouw beeldscherm, betekent het niet automatisch dat dat bij iedereen zo is.
 
-Gebruik `font-smoothing` ook niet om de dikte van de tekst te optimaliseren, vertrouw op de instellingen van de gebruiker en laat `font-smoothing: auto` het werk doen. Wanneer het nodig is om minuscule aanpassingen te doen aan, gebruik dan een modern lettertype dat als _variable font_ geleverd wordt.
+Gebruik `font-smoothing` ook niet om de dikte van de tekst te optimaliseren, vertrouw op de instellingen van de gebruiker en laat `font-smoothing: auto` het werk doen. Wanneer het nodig is om minuscule aanpassingen te doen aan, gebruik dan een modern lettertype dat als <i lang="en">variable font</i> geleverd wordt.
 
-Alleen als je een _pixel font_ gebruikt mag je daar `font-smoothing: none` voor gebruiken.
+Alleen als je een <i lang="en">pixel font</i> gebruikt mag je daar `font-smoothing: none` voor gebruiken.
 
 **Niet doen:**
 
