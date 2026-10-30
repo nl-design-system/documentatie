@@ -9534,8 +9534,8 @@ packages:
     resolution: {integrity: sha512-+QU2zd6OTD8XWIJCbffaiQeH9U73qIqafo1x6V1snCWYGJf6cVE0cDR4D8xRzcEnfI21IFrUPzPGtcPf8AC+Rw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
-  ws@7.5.9:
-    resolution: {integrity: sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==}
+  ws@7.5.13:
+    resolution: {integrity: sha512-rsKI6xDBFVf4r/x8XyChGK04QR/XHroxs/jUcoWvtEZM8TPU/X/uIY9B1CsSzYws9ZJb/6bbBu7dPhFW00CAoA==}
     engines: {node: '>=8.3.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -16145,7 +16145,7 @@ snapshots:
       speedline-core: 1.4.3
       third-party-web: 0.26.7
       tldts-icann: 6.1.86
-      ws: 7.5.9
+      ws: 7.5.13
       yargs: 17.7.3
       yargs-parser: 21.1.1
     transitivePeerDependencies:
@@ -19602,7 +19602,7 @@ snapshots:
       imurmurhash: 0.1.4
       signal-exit: 4.1.0
 
-  ws@7.5.9: {}
+  ws@7.5.13: {}
 
   ws@8.22.0: {}
 
