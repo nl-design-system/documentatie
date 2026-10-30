@@ -137,7 +137,7 @@ const wcag = defineCollection({
 const overviewPages = defineCollection({
   loader: customGlob({
     base: './../../docs',
-    pattern: ['**/index.json'],
+    pattern: ['**/index.json', '!node_modules/**'],
     generateId,
   }),
   schema,
