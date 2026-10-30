@@ -5,7 +5,7 @@ import { exclusionsNext } from './a11y-exclusions';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
-  sitemapDir: './packages/website/dist',
+  sitemapDir: './dist',
   sitemap: '/sitemap-index.xml',
   reportPath: './tmp/axe.next.dark.json',
   failOnImpact: ['critical', 'serious', 'moderate'],
