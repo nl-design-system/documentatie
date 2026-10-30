@@ -19,6 +19,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@prettier/sync": "0.6.1",
     "hast": "1.0.0",
     "hast-util-is-element": "3.0.0",
     "hast-util-select": "6.0.4",
@@ -30,7 +31,8 @@
     "remark": "15.0.1",
     "remark-custom-header-id": "1.0.0",
     "remark-directive": "4.0.0",
-    "unified": "11.0.5"
+    "unified": "11.0.5",
+    "unist-util-visit": "5.1.0"
   },
   "devDependencies": {
     "@astrojs/markdown-remark": "7.3.4",
