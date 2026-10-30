@@ -1,4 +1,5 @@
-import { Heading, Paragraph } from '@utrecht/component-library-react';
+import { Heading, HeadingProps } from '@nl-design-system-community/documentation-components/src/heading/heading.tsx';
+import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph.tsx';
 import clsx from 'clsx';
 import { VideoPlayer } from '@nl-design-system-community/documentation-components/src/components/VideoPlayer';
 import '@nl-design-system-community/documentation-components/src/components/DSWSession.css';
@@ -9,7 +10,7 @@ interface OldSessionProps {
   speakers: DSWSpeaker[];
   organisation: string;
   videoId?: string;
-  headingLevel: number;
+  headingLevel: HeadingProps['level'];
 }
 
 interface DSWSpeaker {
