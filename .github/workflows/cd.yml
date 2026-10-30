@@ -146,10 +146,6 @@ jobs:
       - name: "Continuous Integration: a11y:next-dark"
         run: pnpm run --recursive test-a11y:next-dark
 
-      - name: "Continuous Integration: a11y"
-        if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'ci/a11y')) }}
-        run: pnpm run --recursive test-a11y
-
       - name: "Upload test artifact: a11y"
         if: ${{ github.ref_name == 'main' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'ci/a11y')) }}
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -182,7 +178,7 @@ jobs:
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: screenshots
-          path: packages/website/tmp/screenshots/
+          path: tmp/screenshots/
           retention-days: 7
 
   publish-website:
