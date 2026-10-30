@@ -1,4 +1,4 @@
-import { Link } from '@utrecht/component-library-react/dist/css-module';
+import { Link } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren } from 'react';
 import './CardGroup.css';

@@ -11,8 +11,8 @@ import {
   Icon,
   PageContent,
   Paragraph,
-} from '@utrecht/component-library-react/dist/css-module';
-import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
+} from '@utrecht/component-library-react';
+import { Heading1 } from '@utrecht/component-library-react';
 import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import './contrast-tool.css';

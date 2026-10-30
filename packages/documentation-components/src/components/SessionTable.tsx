@@ -11,7 +11,7 @@ import {
   TableHeader,
   TableHeaderCell,
   TableRow,
-} from '@utrecht/component-library-react/dist/css-module';
+} from '@utrecht/component-library-react';
 import { Heading, type HeadingProps } from '../heading/heading';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';

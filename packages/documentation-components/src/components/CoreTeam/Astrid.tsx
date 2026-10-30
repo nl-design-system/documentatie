@@ -1,4 +1,4 @@
-import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Paragraph } from '@utrecht/component-library-react';
 import type { TeamMember } from './TeamMember';
 
 const Astrid: TeamMember = {

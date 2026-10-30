@@ -1,4 +1,4 @@
-import { DataBadge } from '@utrecht/component-library-react/dist/css-module';
+import { DataBadge } from '@utrecht/component-library-react';
 import type { PropsWithChildren } from 'react';
 import { InlineHeadingGroup, type InlineHeadingGroupProps } from './InlineHeadingGroup';
 import './WcagHeadingGroup.css';

@@ -5,7 +5,7 @@ import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import { useDocById } from '@docusaurus/plugin-content-docs/client';
 import componentProgress from '@nl-design-system/component-progress/dist/index.json';
 import { AccordionProvider, Fieldset, Paragraph, PrimaryActionButton } from '@utrecht/component-library-react';
-import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react/dist/css-module';
+import { Checkbox, FormField, FormLabel } from '@utrecht/component-library-react';
 import { useEffect, useState } from 'react';
 import {
   COMPONENT_STATES,

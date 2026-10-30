@@ -1,5 +1,5 @@
 import { Link } from './Link';
-import { BadgeList, DataBadge } from '@utrecht/component-library-react/dist/css-module';
+import { BadgeList, DataBadge } from '@utrecht/component-library-react';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import clsx from 'clsx';

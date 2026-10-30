@@ -1,15 +1,21 @@
 import { Icon } from '@utrecht/component-library-react';
-import { BrandFigma, BrandGithub, BrandNpm, BrandStorybook, ExternalLink } from 'tabler-icons-react';
+import {
+  IconBrandFigma,
+  IconBrandGithub,
+  IconBrandNpm,
+  IconBrandStorybook,
+  IconExternalLink,
+} from '@tabler/icons-react';
 
 const brandMap = {
-  figma: <BrandFigma />,
-  github: <BrandGithub />,
-  npm: <BrandNpm />,
-  storybook: <BrandStorybook />,
+  figma: <IconBrandFigma />,
+  github: <IconBrandGithub />,
+  npm: <IconBrandNpm />,
+  storybook: <IconBrandStorybook />,
 };
 
 interface BrandIconProps {
   brand: string;
 }
 
-export const BrandIcon = ({ brand }: BrandIconProps) => <Icon>{brandMap[brand] || <ExternalLink />}</Icon>;
+export const BrandIcon = ({ brand }: BrandIconProps) => <Icon>{brandMap[brand] || <IconExternalLink />}</Icon>;

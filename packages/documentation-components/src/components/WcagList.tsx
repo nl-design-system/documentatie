@@ -1,5 +1,6 @@
-import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react/dist/css-module';
-import { UtrechtIconCheckmark } from '@utrecht/web-component-library-react';
+import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react';
+import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon';
+import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index';
 import clsx from 'clsx';
 import { successCriteriaMap } from './wcag22';
 import './TaskList.css';
@@ -23,7 +24,11 @@ export const WcagListItem = ({ sc, checked, description, headingLevel = 3 }: Wca
     <li className={clsx('task-list-item')}>
       <div className={clsx('task-list-item__marker', checked && 'task-list-item__marker--checked')}>
         <span className="task-list-item__marker-label">{checked ? 'Afgevinkt. ' : 'Niet afgevinkt. '}</span>
-        {checked && <UtrechtIconCheckmark aria-hidden={true} className={'utrecht-icon'} />}
+        {checked && (
+          <Icon>
+            <IconCheck />
+          </Icon>
+        )}
       </div>
       <div>
         <Heading appearance="utrecht-heading-3" level={headingLevel}>
