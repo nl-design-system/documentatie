@@ -1,11 +1,16 @@
 import {
   IconBold as TablerIconBold,
+  IconBrandFigma as TablerIconBrandFigma,
+  IconBrandGithub as TablerIconBrandGithub,
+  IconBrandNpm as TablerIconBrandNpm,
+  IconBrandStorybook as TablerIconBrandStorybook,
   IconCalendarEvent as TablerIconCalendarEvent,
   IconCheck as TablerIconCheck,
   IconChevronDown as TablerIconChevronDown,
   IconChevronLeft as TablerIconChevronLeft,
   IconChevronRight as TablerIconChevronRight,
   IconCopy as TablerIconCopy,
+  IconExternalLink as TablerIconExternalLink,
   IconFileTypography as TablerIconFileTypography,
   IconFileUnknown as TablerIconFileUnknown,
   IconLineHeight as TablerIconLineHeight,
@@ -36,12 +41,17 @@ const svgProps = {
 // so they work out of the box.
 
 export const IconBold = () => <TablerIconBold {...svgProps} />;
+export const IconBrandFigma = () => <TablerIconBrandFigma {...svgProps} />;
+export const IconBrandGithub = () => <TablerIconBrandGithub {...svgProps} />;
+export const IconBrandNpm = () => <TablerIconBrandNpm {...svgProps} />;
+export const IconBrandStorybook = () => <TablerIconBrandStorybook {...svgProps} />;
 export const IconCalendarEvent = () => <TablerIconCalendarEvent {...svgProps} />;
 export const IconCheck = () => <TablerIconCheck {...svgProps} />;
 export const IconChevronDown = () => <TablerIconChevronDown {...svgProps} />;
 export const IconChevronLeft = () => <TablerIconChevronLeft {...svgProps} />;
 export const IconChevronRight = () => <TablerIconChevronRight {...svgProps} />;
 export const IconCopy = () => <TablerIconCopy {...svgProps} />;
+export const IconExternalLink = () => <TablerIconExternalLink {...svgProps} />;
 export const IconFileTypography = () => <TablerIconFileTypography {...svgProps} />;
 export const IconFileUnknown = () => <TablerIconFileUnknown {...svgProps} />;
 export const IconLineHeight = () => <TablerIconLineHeight {...svgProps} />;
