@@ -17,7 +17,7 @@ import {
   TableHeader,
   TableHeaderCell,
   TableRow,
-} from '@utrecht/component-library-react/dist/css-module';
+} from '@utrecht/component-library-react';
 import { CopyButton } from './CopyButton';
 import type { IconType } from './TokenIcon';
 import { TokenIcon } from './TokenIcon';

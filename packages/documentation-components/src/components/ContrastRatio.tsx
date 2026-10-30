@@ -1,4 +1,4 @@
-import { Code, ColorSample, NumberData } from '@utrecht/component-library-react/dist/css-module';
+import { Code, ColorSample, NumberData } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import './ContrastRatio.css';
 

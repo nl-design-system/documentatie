@@ -1,5 +1,5 @@
 import { IconCalendarEvent } from '../functional-icon';
-import { ButtonLink, Heading, Icon, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { ButtonLink, Heading, Icon, Paragraph } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 import { VideoPlayer } from './VideoPlayer';
