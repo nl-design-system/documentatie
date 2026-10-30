@@ -42,6 +42,16 @@ import * as Acceptatiecriteria from "./_acceptatiecriteria.tsx";
 import AcComponent from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_component.md";
 import AcImplementatie from "@nl-design-system-unstable/documentation/componenten/ac/\_ac_implementatie.md";
 import IntroGebruik from "@nl-design-system-unstable/documentation/componenten/ac/\_component_gebruiken_intro.md";
+import ContrastMeta from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/contrast/metadata.json";
+import ContrastExplanation from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/contrast/explanation.md";
+import ContrastSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/contrast/solution.md";
+import LanguageMeta from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/language/metadata.json";
+import LanguageExplanation from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/language/explanation.md";
+import LanguageSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/language/solution.md";
+import ListSemanticsMeta from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/list-semantics/metadata.json";
+import ListSemanticsExplanation from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/list-semantics/explanation.md";
+import ListSemanticsSolution from "@nl-design-system-unstable/documentation/componenten/ordered-list/\_rules/list-semantics/solution.md";
+import { Heading } from "@nl-design-system-community/documentation-components/src/heading/heading";
 import {
   DefinitionOfDone,
   HelpImproveComponent,
@@ -90,6 +100,34 @@ export const component = componentProgress.find((item) => item.number === issueN
     </ChecklistItem>
   ))}
 </Checklist>
+
+## Veel gemaakte fouten bij het inzetten van Ordered List
+
+Deze sectie geeft een overzicht van de meest voorkomende fouten en biedt praktische oplossingen.
+
+<Heading level={3}>{ContrastMeta.title}</Heading>
+
+<ContrastExplanation />
+
+#### Oplossing
+
+<ContrastSolution />
+
+<Heading level={3}>{LanguageMeta.title}</Heading>
+
+<LanguageExplanation />
+
+#### Oplossing
+
+<LanguageSolution />
+
+<Heading level={3}>{ListSemanticsMeta.title}</Heading>
+
+<ListSemanticsExplanation />
+
+#### Oplossing
+
+<ListSemanticsSolution />
 
 ## Definition of Done
 
