@@ -49,6 +49,6 @@ jobs:
         run: pnpm run build
 
       - name: Run Lighthouse CI
-        run: pnpm run test-lighthouse
+        run: pnpm run --recursive test-lighthouse
         env:
           LHCI_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
