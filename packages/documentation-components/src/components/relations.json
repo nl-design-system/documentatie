@@ -354,10 +354,6 @@
       "slug": "data-summary"
     },
     {
-      "name": "Form Summary",
-      "slug": "form-summary"
-    },
-    {
       "name": "Table",
       "slug": "table"
     }
@@ -501,12 +497,12 @@
   ],
   "Table": [
     {
-      "name": "Description List",
-      "slug": "description-list"
+      "name": "Data Summary",
+      "slug": "data-summary"
     },
     {
-      "name": "Form Summary",
-      "slug": "form-summary"
+      "name": "Description List",
+      "slug": "description-list"
     }
   ],
   "Login Link": [
@@ -539,20 +535,6 @@
     {
       "name": "Figure",
       "slug": "figure"
-    }
-  ],
-  "Form Summary": [
-    {
-      "name": "Data Summary",
-      "slug": "data-summary"
-    },
-    {
-      "name": "Description List",
-      "slug": "description-list"
-    },
-    {
-      "name": "Table",
-      "slug": "table"
     }
   ],
   "Card as Link": [
@@ -1159,10 +1141,6 @@
     {
       "name": "Description List",
       "slug": "description-list"
-    },
-    {
-      "name": "Form Summary",
-      "slug": "form-summary"
     }
   ],
   "Video": [
