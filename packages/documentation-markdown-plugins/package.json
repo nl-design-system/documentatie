@@ -41,6 +41,7 @@
     "vitest": "4.1.11"
   },
   "scripts": {
-    "lint-todo": "tsc --noEmit"
+    "lint-todo": "tsc --noEmit",
+    "test": "vitest run"
   }
 }

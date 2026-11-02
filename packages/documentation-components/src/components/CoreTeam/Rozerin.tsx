@@ -1,5 +1,5 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
-import { Link } from '../Link';
+import { Link } from '../../link/link';
 import type { TeamMember } from './TeamMember';
 
 const Rozerin: TeamMember = {

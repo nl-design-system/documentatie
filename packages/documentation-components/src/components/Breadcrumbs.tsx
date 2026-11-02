@@ -1,5 +1,5 @@
 /*
-import { Link } from './Link';
+import { Link } from '../link/link';
 import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';

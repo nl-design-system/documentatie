@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from './Link';
+import { Link } from '../link/link';
 import { successCriteriaMap } from './wcag22';
 import { BadgeList, Checkbox, Fieldset, FormField, FormLabel } from '@utrecht/component-library-react';
 import { Paragraph } from '../paragraph/paragraph';
