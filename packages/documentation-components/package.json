@@ -93,7 +93,7 @@
     "@utrecht/textbox-react": "1.0.16",
     "@utrecht/unordered-list-css": "3.1.1",
     "dompurify": "3.4.17",
-    "prettier": "3.8.1",
+    "prettier": "3.9.10",
     "prismjs": "1.30.0"
   },
   "devDependencies": {
