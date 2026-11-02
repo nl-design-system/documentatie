@@ -1,6 +1,6 @@
 import '@utrecht/page-header-css/dist/index.css';
 import { PageHeader as UtrechtPageHeader } from '@utrecht/page-header-react';
-import { Link } from '../components/Link';
+import { Link } from '../link/link';
 import { Logo } from '../logo/logo';
 import { LogoSmall } from '../logo/logo-small';
 import { ToSearchLink } from '../search/to-search-link';

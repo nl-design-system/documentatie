@@ -1,5 +1,5 @@
 /*
-import { Link } from './Link';
+import { Link } from '../link/link';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { IconChevronLeft } from '../functional-icon';

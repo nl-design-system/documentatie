@@ -1,6 +1,6 @@
 import { Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import type { TeamMember } from './TeamMember';
-import { Link } from '../Link';
+import { Link } from '../../link/link';
 
 const Robbert: TeamMember = {
   name: 'Robbert Broersma',

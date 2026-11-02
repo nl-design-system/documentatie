@@ -1,7 +1,7 @@
 export { ButtonLink } from '../button-link/button-link';
 /*
 import type { Props } from '@docusaurus/Link';
-import { BareLink } from './Link';
+import { BareLink } from '../link/link';
 import {
   ButtonLink as AstroButtonLink,
   type ButtonLinkProps as AstroButtonLinkProps,
