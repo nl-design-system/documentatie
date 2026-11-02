@@ -2,7 +2,6 @@
 title: CSS component testen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: CSS component testen
 pagination_label: CSS component testen
 description: Als developer CSS component testen
 keywords:

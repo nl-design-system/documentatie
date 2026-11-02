@@ -2,7 +2,6 @@
 title: GitHub teams en code owners
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: GitHub teams en code owners
 pagination_label: GitHub teams en code owners
 description: Het werken met GitHub teams en code owners binnen NL Design System
 slug: /handboek/developer/github-teams-en-code-owners/

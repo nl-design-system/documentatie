@@ -2,7 +2,6 @@
 title: Architectuur
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Architectuur
 pagination_label: Architectuur
 description: NL Design System architectuur
 slug: /handboek/developer/architectuur/

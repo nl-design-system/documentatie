@@ -2,7 +2,6 @@
 title: API conventie
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: API conventie
 pagination_label: API conventie
 description: Conventies voor het maken van API's
 slug: /handboek/developer/api-conventie/

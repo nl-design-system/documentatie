@@ -2,7 +2,6 @@
 title: Security audit voor npm
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Security audit voor npm
 pagination_label: Security audit voor npm
 description: Hoe voorkom je dat je security vulnerabilities installeert?
 slug: /pnpm-audit

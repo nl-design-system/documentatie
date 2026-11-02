@@ -2,7 +2,6 @@
 title: Vercel
 slug: /vercel
 hide_table_of_contents: false
-sidebar_label: Vercel
 pagination_label: Vercel
 description: Waarom gebruikt NL Design System de tool Vercel?
 keywords:

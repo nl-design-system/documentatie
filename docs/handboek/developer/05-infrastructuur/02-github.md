@@ -2,7 +2,6 @@
 title: GitHub
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: GitHub
 pagination_label: GitHub
 description: Waarom en hoe gebruikt NL Design System de tool Github?
 slug: /github
