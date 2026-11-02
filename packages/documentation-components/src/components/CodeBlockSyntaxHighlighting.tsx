@@ -4,7 +4,6 @@ import { Highlight } from 'prism-react-renderer';
 import { useContext, useId } from 'react';
 import type { PropsWithChildren, ReactNode } from 'react';
 import { CodeExampleContext } from './Guideline';
-import nldsPrismTheme from '../nldsPrism';
 
 export interface CodeBlockSyntaxHighlightingProps extends CodeBlockProps {
   lineNumber?: boolean;
@@ -29,7 +28,7 @@ export function CodeBlockSyntaxHighlighting({
   }
 
   return (
-    <Highlight theme={nldsPrismTheme} code={code} language={syntax || ''}>
+    <Highlight code={code} language={syntax || ''}>
       {({ style, tokens, getLineProps, getTokenProps }) => (
         <>
           <span hidden id={titleId}>
