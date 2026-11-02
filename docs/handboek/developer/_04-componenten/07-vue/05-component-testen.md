@@ -2,7 +2,6 @@
 title: Vue.js component testen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Vue.js component testen
 pagination_label: Vue.js component testen
 description: Als developer Vue.js component testen
 keywords:

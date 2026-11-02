@@ -3,7 +3,6 @@ title: "Nieuwe versies uitbrengen met Changesets"
 title_sm: Changesets
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Changesets
 pagination_label: Changesets
 description: Inzicht in versiebeheer en hoe je semantische versionering (SemVer) toepast voor stabiele releases.
 slug: /handboek/developer/changeset-conventie/

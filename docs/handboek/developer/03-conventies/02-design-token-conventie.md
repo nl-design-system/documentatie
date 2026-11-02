@@ -2,7 +2,6 @@
 title: Design Token conventie
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Design Token conventie
 pagination_label: Design Token conventie
 description: Conventies voor het maken van Design Tokens
 slug: /handboek/developer/design-token-conventie/

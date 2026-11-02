@@ -2,7 +2,6 @@
 title: Angular component testen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Angular component testen
 pagination_label: Angular component testen
 description: Als developer Angular component testen
 keywords:

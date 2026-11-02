@@ -2,7 +2,6 @@
 title: Web Component testen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Web Component testen
 pagination_label: Web Component testen
 description: Als developer Web Component testen
 keywords:

@@ -3,7 +3,6 @@ title: Tips voor het bijdragen aan componenten
 slug: bijdragen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Tips voor het bijdragen aan componenten
 pagination_label: Tips voor het bijdragen aan componenten
 description: Tips voor het bijdragen aan componenten, zodat andere developers er beter op aan kunnen sluiten.
 keywords:

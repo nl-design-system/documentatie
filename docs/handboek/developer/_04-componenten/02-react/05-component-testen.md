@@ -2,7 +2,6 @@
 title: React component testen
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: React component testen
 pagination_label: React component testen
 description: Eigen React component testen
 keywords:
