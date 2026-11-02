@@ -42,7 +42,7 @@
 }
 
 .nlds-canvas__toolbar {
-  background-color: var(--nlds-code-block-background-color);
+  background-color: var(--ma-code-block-background-color);
   text-align: end;
 }
 
