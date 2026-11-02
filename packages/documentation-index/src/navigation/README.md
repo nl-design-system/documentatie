@@ -53,8 +53,9 @@ What label a `NavigationItem` gets is decided the first available condition in
 the following list:
 
 1. The `label` property in the options object passed to `navigationItem()`
-2. The `title_sm` frontmatter field of the markdown file
-3. The `title` frontmatter field of the markdown file
+2. The `sidebar_label` frontmatter field of the markdown file
+3. The `title_sm` frontmatter field of the markdown file
+4. The `title` frontmatter field of the markdown file
 
 When neighter of these fields are available, the string `unknown` is used.
 

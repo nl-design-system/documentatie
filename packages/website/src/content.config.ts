@@ -79,6 +79,7 @@ const schema = z.object({
   title_sm: z.string().max(71).optional(),
   description: z.string().optional(),
   hide_table_of_contents: z.boolean().optional(),
+  sidebar_label: z.union([z.string(), z.number()]).optional(),
   lead: z.string().optional(),
   lang: z.enum(['nl', 'en']).default('nl'),
   translations: z.record(z.string(), z.string()).optional(),

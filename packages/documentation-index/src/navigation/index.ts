@@ -45,6 +45,8 @@ interface DocumentationMetadata {
 
   title_sm?: string;
 
+  sidebar_label?: string;
+
   navigation_order?: number;
 
   /** The description of the markdown frontmatter for this item */
@@ -206,7 +208,7 @@ export async function navigationItem(
 
   if (!entry && _filePath) throw new Error(`Could not find entry with filePath: ${_filePath}`);
 
-  const label = options?.label || entry?.data?.title_sm || entry?.data.title;
+  const label = options?.label || entry?.data?.sidebar_label || entry?.data?.title_sm || entry?.data.title;
   if (!label) throw new Error(`No label provided for ${_filePath}`);
 
   const item: NavigationItem = {
