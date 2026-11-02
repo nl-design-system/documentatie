@@ -1,5 +1,16 @@
 # @nl-design-system-unstable/documentation
 
+## 2.1.0
+
+### Minor Changes
+
+- e02016c: Baseline oktober 2026.
+
+### Patch Changes
+
+- Updated dependencies [8846343]
+  - @nl-design-system-community/documentation-components@1.0.0
+
 ## 2.0.0
 
 ### Major Changes
