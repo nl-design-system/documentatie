@@ -8,7 +8,9 @@
  * Taken from https://piccalil.li/blog/flow-utility/
  * Adds content aware spacing to all children in a container
  */
-.ma-flow > * + * {
+.ma-flow > * + *,
+.ma-flow > astro-island > * {
+  /* Astro Islands are `display: content;` which breaks the ma-flow util */
   margin-block-start: var(--ma-flow-space, var(--ma-space-relative-block-xl)) !important;
 }
 
