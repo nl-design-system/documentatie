@@ -1,4 +1,5 @@
-import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react';
+import { Link } from '@utrecht/component-library-react';
+import { Heading, type HeadingProps } from '../heading/heading';
 import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon';
 import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index';
 import clsx from 'clsx';
@@ -31,7 +32,7 @@ export const WcagListItem = ({ sc, checked, description, headingLevel = 3 }: Wca
         )}
       </div>
       <div>
-        <Heading appearance="utrecht-heading-3" level={headingLevel}>
+        <Heading appearance="level-3" level={headingLevel}>
           <Link href={`/wcag/${sc}`}>{title}</Link>
         </Heading>
         {description}

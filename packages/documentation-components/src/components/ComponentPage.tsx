@@ -1,5 +1,5 @@
-import { Heading, Link, LinkList, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { Heading as NLHeading } from '../heading/heading';
+import { Link, LinkList, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import { Heading, HeadingProps } from '../heading/heading';
 import { Paragraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
 import { BrandIcon } from './BrandIcon';
@@ -38,7 +38,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
             key={project.title}
             className={clsx('ma-definition-of-done', project && `ma-definition-of-done--${toKebabCase(project.title)}`)}
             heading={project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : ''}
-            headingLevel={headingLevel as 1 | 2 | 3 | 4 | 5 | 6}
+            headingLevel={headingLevel}
             headingApperance="level-5"
           >
             <>
@@ -89,7 +89,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
             <RhcCard
               key={project.title}
               heading={project.title.replace(/^Community/i, '')}
-              headingLevel={headingLevel as 1 | 2 | 3 | 4 | 5 | 6}
+              headingLevel={headingLevel}
               description={
                 <div className="ma-flow">
                   <Paragraph>
@@ -102,9 +102,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   </Paragraph>
                   <div>
                     {(links.length > 0 || frameworks.length > 0) && (
-                      <NLHeading level={Math.min(headingLevel + 1, 6) as 1 | 2 | 3 | 4 | 5 | 6}>
-                        Snel aan de slag
-                      </NLHeading>
+                      <Heading level={Math.min(headingLevel + 1, 6) as HeadingProps['level']}>Snel aan de slag</Heading>
                     )}
                     {links.length > 0 && (
                       <LinkList
@@ -124,9 +122,9 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   {frameworks.length > 0 &&
                     frameworks.map(({ frameworkName, tasks }) => (
                       <section key={frameworkName}>
-                        <NLHeading level={Math.min(headingLevel + 2, 6) as 1 | 2 | 3 | 4 | 5 | 6}>
+                        <Heading level={Math.min(headingLevel + 2, 6) as HeadingProps['level']}>
                           {alias} in {frameworkName}
-                        </NLHeading>
+                        </Heading>
                         <LinkList
                           links={tasks.map((frameworkTask) => ({
                             children: frameworkTask.description,
@@ -152,7 +150,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   <Link href={project.url}>{project.title} projectbord</Link>
                 </Paragraph>
                 {(links.length > 0 || frameworks.length > 0) && (
-                  <Heading level={headingLevel + 1}>Snel aan de slag</Heading>
+                  <Heading level={(headingLevel + 1) as HeadingProps['level']}>Snel aan de slag</Heading>
                 )}
                 {links.length > 0 && (
                   <>
@@ -174,7 +172,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                   <>
                     {frameworks.map(({ frameworkName, tasks }) => (
                       <>
-                        <Heading level={headingLevel + 2}>
+                        <Heading level={(headingLevel + 2) as HeadingProps['level']}>
                           {alias} in {frameworkName}
                         </Heading>
                         <LinkList

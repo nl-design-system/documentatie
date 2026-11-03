@@ -1,4 +1,5 @@
 import packageJson from '../../../package.json';
+import { HeadingProps } from './heading/heading';
 
 export const COMPONENT_STATES = {
   UNKNOWN: 'Todo',
@@ -84,7 +85,7 @@ export interface Component {
 
 export interface ComponentPageSectionProps {
   component: Component;
-  headingLevel: number;
+  headingLevel: HeadingProps['level'];
 }
 
 export interface FrameworkTask {

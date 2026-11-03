@@ -14,7 +14,8 @@
  */
 
 import type { PropsWithChildren, ReactElement } from 'react';
-import { Heading, type HeadingProps, Link } from '@utrecht/component-library-react';
+import { Link } from '@utrecht/component-library-react';
+import { Heading, type HeadingProps } from '../heading/heading';
 import { successCriteriaMap } from './wcag22';
 import { AccordionProvider } from '@utrecht/component-library-react';
 import './ComponentCriteriaList.css';
@@ -65,7 +66,7 @@ export const CriteriaListItem = ({
 
   return (
     <div className="ma-component-criteria-section">
-      <Heading appearance="utrecht-heading-4" level={headingLevel} className="ma-component-criteria-section__heading">
+      <Heading appearance="level-4" level={headingLevel} className="ma-component-criteria-section__heading">
         {title}
       </Heading>
       {(sc || status) && (

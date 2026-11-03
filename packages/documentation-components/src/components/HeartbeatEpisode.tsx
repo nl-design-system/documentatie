@@ -1,6 +1,7 @@
 import HeartbeatJSON from '../../../../docs/community/events/heartbeat/heartbeat.json';
 import { VideoPlayer } from './VideoPlayer';
-import { Heading, Link } from '@utrecht/component-library-react';
+import { Link } from '@utrecht/component-library-react';
+import { Heading, type HeadingProps } from '../heading/heading';
 import { Paragraph } from '../paragraph/paragraph';
 import Markdown from 'react-markdown';
 
@@ -14,7 +15,7 @@ interface Heartbeat {
 
 interface HeartbeatEpisodeProps {
   id?: number;
-  headingLevel?: number;
+  headingLevel?: HeadingProps['level'];
 }
 
 export const HeartbeatEpisode = ({ id, headingLevel }: HeartbeatEpisodeProps) => {
