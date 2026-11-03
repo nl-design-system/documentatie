@@ -1,5 +1,6 @@
 import { IconCalendarEvent } from '../functional-icon';
-import { ButtonLink, Heading, Icon, Paragraph } from '@utrecht/component-library-react';
+import { ButtonLink, Heading, Icon } from '@utrecht/component-library-react';
+import { Paragraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 import { VideoPlayer } from './VideoPlayer';
@@ -65,7 +66,7 @@ export const DSWSession = ({
       >
         {session.subject}
       </Heading>
-      <Paragraph className="ma-dsw-session__subtitle" lead>
+      <Paragraph className="ma-dsw-session__subtitle" purpose="lead">
         {speakers &&
           speakers
             .map((speaker) => (speaker?.organisation ? `${speaker.name} - ${speaker.organisation}` : speaker.name))

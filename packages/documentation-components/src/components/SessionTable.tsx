@@ -1,9 +1,9 @@
 import { IconCalendarEvent, IconUser } from '../functional-icon';
+import { Paragraph } from '../paragraph/paragraph';
 import {
   ButtonLink,
   Icon,
   Link,
-  Paragraph,
   Table,
   TableBody,
   TableCaption,

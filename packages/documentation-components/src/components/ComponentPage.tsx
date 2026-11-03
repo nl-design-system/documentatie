@@ -1,6 +1,6 @@
-import { Heading, Link, LinkList, Paragraph, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import { Heading, Link, LinkList, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
 import { Heading as NLHeading } from '../heading/heading';
-import { Paragraph as NLParagraph } from '../paragraph/paragraph';
+import { Paragraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
 import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
@@ -92,14 +92,14 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
               headingLevel={headingLevel as 1 | 2 | 3 | 4 | 5 | 6}
               description={
                 <div className="ma-flow">
-                  <NLParagraph>
+                  <Paragraph>
                     <ComponentProgress
                       checked={project.progress.value}
                       unchecked={project.progress.max - project.progress.value}
                     />
                     {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
                     <Link href={project.url}>{project.title} projectbord</Link>
-                  </NLParagraph>
+                  </Paragraph>
                   <div>
                     {(links.length > 0 || frameworks.length > 0) && (
                       <NLHeading level={Math.min(headingLevel + 1, 6) as 1 | 2 | 3 | 4 | 5 | 6}>
@@ -256,7 +256,7 @@ export const Introduction = ({ component, headingLevel, description }: Introduct
         <InlineHeadingGroup level={headingLevel} suffix={relayStep && <EstafetteBadge state={relayStep} />}>
           {component.title}
         </InlineHeadingGroup>
-        <Paragraph lead>{description}</Paragraph>
+        <Paragraph purpose="lead">{description}</Paragraph>
         {['Help Wanted', 'Community'].includes(relayStep) && (
           <ComponentIllustration
             relayStep={relayStep}

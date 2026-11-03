@@ -1,4 +1,4 @@
-import { Paragraph } from '@nl-design-system-community/documentation-components/src/paragraph/paragraph.tsx';
+import { Paragraph } from '../../paragraph/paragraph';
 import type { TeamMember } from './TeamMember';
 
 const Sandra: TeamMember = {

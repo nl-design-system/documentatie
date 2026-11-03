@@ -1,6 +1,7 @@
 import HeartbeatJSON from '../../../../docs/community/events/heartbeat/heartbeat.json';
 import { VideoPlayer } from './VideoPlayer';
-import { Heading, Link, Paragraph } from '@utrecht/component-library-react';
+import { Heading, Link } from '@utrecht/component-library-react';
+import { Paragraph } from '../paragraph/paragraph';
 import Markdown from 'react-markdown';
 
 interface Heartbeat {
