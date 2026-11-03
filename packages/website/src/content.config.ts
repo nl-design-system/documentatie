@@ -154,7 +154,7 @@ const changelog = defineCollection({
 
 const contentTest = defineCollection({
   loader: customGlob({
-    base: './../../test/docs',
+    base: './test/docs',
     pattern: ['**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId: (options) => `/private/content-test/${generateId(options)}`,
   }),
