@@ -1,5 +1,6 @@
 import { CodeBlockSyntaxHighlighting } from '../CodeBlockSyntaxHighlighting';
-import { Button, Document, Surface } from '@utrecht/component-library-react';
+import { Document, Surface } from '@utrecht/component-library-react';
+import { Button } from '../../button/button.tsx';
 import { Paragraph } from '../../paragraph/paragraph';
 import { HTMLContent } from '@utrecht/component-library-react';
 import clsx from 'clsx';
@@ -124,7 +125,7 @@ export const Canvas = globalThis.isAstro
             <div className={clsx('nlds-canvas__toolbar')}>
               <Button
                 className={clsx('nlds-canvas__button', 'nlds-canvas__toggle-code-button')}
-                appearance="subtle-button"
+                purpose="subtle"
                 onClick={toggleExpanded}
                 aria-expanded={expandedSourceCode}
                 aria-controls={codeBlockId}
@@ -149,7 +150,7 @@ export const Canvas = globalThis.isAstro
                 <div className={clsx('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy')}>
                   <Button
                     className={clsx('nlds-canvas__button', 'nlds-canvas__copy-button')}
-                    appearance="subtle-button"
+                    purpose="subtle"
                     onClick={copyCode}
                   >
                     Kopieer

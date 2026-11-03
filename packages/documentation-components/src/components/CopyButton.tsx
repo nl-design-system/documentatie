@@ -1,6 +1,6 @@
 import { useEffect, useState, type ButtonHTMLAttributes } from 'react';
 import { IconCopy } from '../functional-icon';
-import { Button } from '@utrecht/component-library-react';
+import { Button } from '../button/button';
 import { Icon } from '@utrecht/component-library-react';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -26,7 +26,7 @@ export function CopyButton({ children, content }: Props) {
   return (
     <>
       {canCopy && (
-        <Button type="button" appearance="secondary-action-button" onClick={onClick}>
+        <Button type="button" purpose="secondary" onClick={onClick}>
           {children}
           <Icon>
             <IconCopy />
