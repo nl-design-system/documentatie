@@ -1,7 +1,7 @@
 import { IconCalendarEvent, IconUser } from '../functional-icon';
 import { Paragraph } from '../paragraph/paragraph';
+import { ButtonLink } from '../button-link/button-link';
 import {
-  ButtonLink,
   Icon,
   Link,
   Table,
@@ -129,10 +129,12 @@ export const SessionTable = ({
                 </TableCell>
                 <TableCell className="ma-session-table__time">
                   {icalLink && (
-                    <ButtonLink href={icalLink} download={icalLink} aria-labelledby="ical-description">
-                      <Icon>
-                        <IconCalendarEvent />
-                      </Icon>{' '}
+                    <ButtonLink
+                      href={icalLink}
+                      download={icalLink}
+                      aria-labelledby="ical-description"
+                      iconStart={<IconCalendarEvent />}
+                    >
                       <span id="ical-description" className="sr-only">
                         iCal file for <span lang={language.abbr}>{subject}</span>(download)
                       </span>
