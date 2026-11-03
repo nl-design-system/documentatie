@@ -3,13 +3,13 @@ import type { CanvasContainerType } from './Canvas/Canvas';
 import { ContrastRatio } from './ContrastRatio';
 import { Guideline } from './Guideline';
 import {
-  Button,
   ButtonGroup as ActionGroup,
   Code,
   FormFieldTextbox,
   Icon,
   PageContent,
 } from '@utrecht/component-library-react';
+import { Button } from '../button/button';
 import { Paragraph } from '../paragraph/paragraph';
 import { Heading1, Heading2 } from '../heading/heading';
 import Color from 'color';
@@ -196,6 +196,7 @@ export const ContrastTool = () => {
 
   return (
     <PageContent
+      className="ma-flow"
       style={{
         '--utrecht-space-around': 1,
         maxInlineSize: '600px',
@@ -238,7 +239,7 @@ export const ContrastTool = () => {
           }}
         />
         <ActionGroup>
-          <Button type="submit" appearance="primary-action-button">
+          <Button type="submit" purpose="primary">
             Contrast berekenen
           </Button>
         </ActionGroup>
@@ -248,7 +249,7 @@ export const ContrastTool = () => {
           <Heading2 id="output">Resultaat</Heading2>
           <ContrastRatio {...{ backgroundColor, color, contrastRatio }} />
           <ActionGroup style={{ display: 'none' }}>
-            <Button appearance="secondary-action-button" onClick={() => navigator.clipboard.writeText(shareURL)}>
+            <Button purpose="secondary" onClick={() => navigator.clipboard.writeText(shareURL)}>
               Link kopiëren
             </Button>
           </ActionGroup>
