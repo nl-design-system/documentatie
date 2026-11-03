@@ -48,13 +48,23 @@ import Summary from "./summaries/_2.5.8-summary.md";
 
 Het aanwijsgebied is het deel van het scherm waar je kunt klikken of tikken om iets te bedienen. Is dat gebied klein en staat het dicht bij een ander aanwijsgebied, dan raak je al snel het verkeerde. Dat treft iemand met een tremor, spasticiteit of een andere beperking in de handen. Het treft ook wie een aangepast invoerapparaat gebruikt dat minder precies is dan een muis, wie een telefoon met één hand bedient, en wie in een schokkende trein of bus zit.
 
-Een onderdeel kleiner dan 24 bij 24 CSS-pixels mag, zolang het genoeg ruimte heeft. Dat meet je zo: teken een denkbeeldige cirkel van 24 CSS-pixels breed op het midden van het onderdeel. Doe dat ook bij de kleine onderdelen ernaast. Raakt geen enkele cirkel een ander onderdeel of een andere cirkel, dan is er genoeg ruimte. Knoppen van 20 bij 20 CSS-pixels met 4 CSS-pixels ruimte ertussen zijn dus in orde. Dezelfde knoppen zonder ruimte ertussen zijn te klein.
+Een onderdeel kleiner dan 24 bij 24 CSS-pixels mag, zolang het genoeg ruimte heeft. Dat meet je in de DevTools van je browser:
+
+- Staat er een klein onderdeel naast, meet dan van het midden van het ene onderdeel tot het midden van het andere. Die afstand moet minstens 24 CSS-pixels zijn.
+- Staat er een onderdeel van minstens 24 bij 24 CSS-pixels naast, meet dan van het midden van het kleine onderdeel tot de rand van het grote. Die afstand moet minstens 12 CSS-pixels zijn.
+
+Knoppen van 20 bij 20 CSS-pixels met 4 CSS-pixels ruimte ertussen voldoen dus aan dit succescriterium. Dezelfde knoppen zonder ruimte ertussen voldoen niet.
 
 Bij een formulierveld hoort het gekoppelde label bij het aanwijsgebied. Klik of tik je op de tekst van het label, dan reageert het veld. Een selectievakje van 16 bij 16 CSS-pixels met het label "Ik wil de nieuwsbrief ontvangen" ernaast heeft daardoor een aanwijsgebied dat veel groter is dan het vakje zelf. Dat telt alleen als het label gekoppeld is: met een `for` die naar de `id` van het veld wijst, of doordat het veld in het label staat. Staat de tekst in een los element zonder koppeling, dan gebeurt er niets als je erop tikt. Die tekst telt dan ook niet mee.
 
 Een onderdeel is pas 24 bij 24 CSS-pixels groot als er een recht vierkant van die maat helemaal in past. Bij een knop van precies 24 bij 24 CSS-pixels met afgeronde hoeken past het vierkant er nooit in. Zo'n knop telt dan als klein onderdeel, en voldoet als er genoeg ruimte omheen is. Inzoomen telt niet mee: je meet op de normale grootte van de pagina.
 
-Er zijn nog 4 uitzonderingen. Een link in een zin hoeft niet 24 CSS-pixels hoog te zijn, omdat de regelhoogte van de tekst de grootte bepaalt. Die uitzondering geldt alleen als er tekst omheen staat die zelf geen link is. In een inhoudsopgave waarin elke regel een link is, geldt de uitzondering dus niet. Een klein onderdeel mag ook als er op dezelfde pagina een ander onderdeel is dat hetzelfde doet en wel groot genoeg is. Een bedieningselement met de standaardweergave van de browser valt er ook buiten, zolang je die weergave niet hebt aangepast. De laatste uitzondering is een weergave die je niet kunt veranderen zonder de informatie te veranderen, of een weergave die een wet voorschrijft. Een kaart met veel spelden dicht bij elkaar is daar een voorbeeld van: de plek van een speld is de informatie zelf.
+Er zijn nog 4 uitzonderingen:
+
+- **Een link in een zin.** Die hoeft niet 24 CSS-pixels hoog te zijn, omdat de regelhoogte van de tekst de grootte bepaalt. Dat geldt alleen als er tekst omheen staat die zelf geen link is. In een inhoudsopgave waarin elke regel een link is, geldt de uitzondering dus niet.
+- **Een ander onderdeel dat hetzelfde doet.** Een klein onderdeel mag als er op dezelfde pagina een onderdeel is dat hetzelfde doet en wel groot genoeg is.
+- **De standaardweergave van de browser.** Een bedieningselement dat de browser zelf weergeeft, valt erbuiten, zolang je die weergave niet hebt aangepast.
+- **Een weergave die nodig is.** De grootte of plek van het onderdeel is nodig voor de informatie, of een wet schrijft de weergave voor. Een voorbeeld is een kaart met spelden dicht bij elkaar. Elke speld staat op de plek die hij aanwijst. Verplaats je de spelden om ruimte te maken, dan klopt de kaart niet meer.
 
 ## Veelgemaakte fouten
 
@@ -162,7 +172,7 @@ Een rij links naast elkaar heeft hetzelfde probleem, zoals een alfabet met een l
 
 Kleine knoppen met alleen een icoon of een letter staan direct naast elkaar. Voorbeelden zijn de iconen van sociale media, de letters "A" om de tekst groter of kleiner te maken, een taalkeuze "NL" en "EN", of de knoppen van een voorleesfunctie. Elke knop is 13 tot 22 CSS-pixels groot en er zit geen ruimte tussen. Wie de tekst groter wil maken, raakt dan de knop die de tekst kleiner maakt. Wie de opties van de voorleesfunctie wil openen, start het voorlezen.
 
-**Hoe te testen:** inspecteer de knoppen in de DevTools. Is elke knop minstens 24 bij 24 CSS-pixels? Zo niet, zit er dan genoeg ruimte tussen, zodat de denkbeeldige cirkels van 24 CSS-pixels elkaar niet raken?
+**Hoe te testen:** inspecteer de knoppen in de DevTools. Is elke knop minstens 24 bij 24 CSS-pixels? Zo niet, is de afstand van het midden van de ene knop tot het midden van de volgende dan minstens 24 CSS-pixels?
 
 <Guideline appearance="dont" title="Knoppen van 16 CSS-pixels die tegen elkaar staan">
   ```html
@@ -192,7 +202,7 @@ Kleine knoppen met alleen een icoon of een letter staan direct naast elkaar. Voo
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer maakt elke knop minstens 24 bij 24 CSS-pixels. Kan de knop niet groter, dan zet de developer er zoveel ruimte tussen dat de cirkels van 24 CSS-pixels elkaar niet raken.
+**Wie kan dit oplossen:** een developer maakt elke knop minstens 24 bij 24 CSS-pixels. Kan de knop niet groter, dan zet de developer er zoveel ruimte tussen dat de middens minstens 24 CSS-pixels uit elkaar liggen.
 
 ### Een kleine knop staat in of tegen een groter klikbaar onderdeel
 
@@ -231,13 +241,13 @@ Een kleine knop of link staat in een ander onderdeel dat je ook kunt aanklikken,
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer maakt de kleine knop of link minstens 24 bij 24 CSS-pixels. Blijft de knop kleiner, dan zet de developer hem zo ver van het grote onderdeel af dat de cirkel van 24 CSS-pixels het grote onderdeel niet raakt. Bij een link in een klikbare tabelrij maakt de developer de rij hoger.
+**Wie kan dit oplossen:** een developer maakt de kleine knop of link minstens 24 bij 24 CSS-pixels. Blijft de knop kleiner, dan zet de developer hem zo ver van het grote onderdeel af dat het midden van de knop minstens 12 CSS-pixels van de rand van het grote onderdeel ligt. Bij een link in een klikbare tabelrij maakt de developer de rij hoger.
 
 ### Een kleine knop staat tegen het label van een invoerveld
 
 Naast het label van een invoerveld staat een kleine knop, bijvoorbeeld een rondje met een vraagteken dat uitleg over het veld opent. De knop is 16 of 20 CSS-pixels groot en staat direct tegen de tekst van het label aan. Het label hoort bij het aanwijsgebied van het veld, dus hier staan 2 bedieningselementen tegen elkaar aan. Wie de uitleg wil openen, zet de cursor in het veld. Testers missen dit makkelijk, want op het scherm ziet het label eruit als gewone tekst.
 
-**Hoe te testen:** klik op de tekst van het label. Komt de cursor in het veld of verandert de keuze, dan hoort het label bij het aanwijsgebied. Inspecteer daarna de knop ernaast in de DevTools. Is die minstens 24 bij 24 CSS-pixels? Zo niet, zit er dan zoveel ruimte tussen de knop en de tekst van het label dat de cirkel van 24 CSS-pixels die tekst niet raakt?
+**Hoe te testen:** klik op de tekst van het label. Komt de cursor in het veld of verandert de keuze, dan hoort het label bij het aanwijsgebied. Inspecteer daarna de knop ernaast in de DevTools. Is die minstens 24 bij 24 CSS-pixels? Zo niet, ligt het midden van de knop dan minstens 12 CSS-pixels van de tekst van het label?
 
 <Guideline appearance="dont" title="Knop van 16 CSS-pixels direct tegen het label">
   ```html
@@ -318,7 +328,7 @@ In een lijst met keuzerondjes of selectievakjes is elke regel lager dan 24 CSS-p
 
 1. Zet de zoom van je browser op 100%. Inzoomen telt niet mee.
 2. Inspecteer elk bedieningselement in de DevTools. Kijk bij "Computed" naar de breedte en hoogte, inclusief `padding`. Past er een recht vierkant van 24 bij 24 CSS-pixels in het aanwijsgebied? Let op sterk afgeronde hoeken en op iconen waarvan alleen de afbeelding klikbaar is.
-3. Is een onderdeel kleiner, teken dan in gedachten een cirkel van 24 CSS-pixels breed op het midden ervan. Doe dat ook bij kleine onderdelen ernaast. Raakt een cirkel een ander onderdeel of een andere cirkel, dan is er te weinig ruimte.
+3. Is een onderdeel kleiner, meet dan de afstand van het midden tot het midden van een klein onderdeel ernaast. Die moet minstens 24 CSS-pixels zijn. Tot de rand van een groot onderdeel ernaast moet het minstens 12 CSS-pixels zijn.
 4. Geef de knop of link zelf een `min-width` en `min-height` van 24px. Het icoon erin kan kleiner blijven.
 5. Controleer bij formuliervelden of het label gekoppeld is. Klik op de tekst van het label. Reageert het veld, dan meet je het veld en het label samen als 1 aanwijsgebied.
 6. Testgereedschap dat elk element apart meet, rekent een veld en zijn label als 2 losse aanwijsgebieden. Het meldt dan dat die 2 elkaar overlappen. Dat is geen fout onder dit succescriterium. Controleer zo'n melding met de hand voordat je hem overneemt.
