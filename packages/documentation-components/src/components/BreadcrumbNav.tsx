@@ -6,10 +6,10 @@ import { IconChevronLeft } from '../functional-icon';
 import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  ButtonGroup,
   BreadcrumbNav as UtrechtBreadcrumbNav,
 } from '@utrecht/component-library-react';
 import { Icon } from '../icon/icon';
+import { ActionGroup } from '../action-group/action-group';
 import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import { Fragment } from 'react';
@@ -59,14 +59,14 @@ export const BreadcrumbNav = ({ breadcrumbs, ...restProps }: BreadcrumbNavProps)
       </div>
       {up && (
         <div className={clsx('breadcrumbs', 'breadcrumbs--mobile')}>
-          <ButtonGroup>
+          <ActionGroup>
             <Link href={up.href} rel={up.rel} className="utrecht-link utrecht-link--html-a">
               <Icon>
                 <IconChevronLeft />
               </Icon>
               {up.label}
             </Link>
-          </ButtonGroup>
+          </ActionGroup>
         </div>
       )}
     </>

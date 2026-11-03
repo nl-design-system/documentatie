@@ -1,5 +1,4 @@
 import {
-  ButtonGroup,
   Checkbox,
   Fieldset,
   FieldsetLegend,
@@ -11,6 +10,7 @@ import {
   Textbox,
 } from '@utrecht/component-library-react';
 import { Button } from '../button/button';
+import { ActionGroup } from '../action-group/action-group';
 import { Paragraph } from '../paragraph/paragraph';
 import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
@@ -362,11 +362,11 @@ export const NewsletterSignUp = ({
 
       {language?.id && <input type="hidden" name={language.id} value={language.value} />}
 
-      <ButtonGroup>
+      <ActionGroup>
         <Button type="submit" purpose="primary">
           {submitText ? submitText : IS_ENGLISH ? 'Sign up' : 'Aanmelden'}
         </Button>
-      </ButtonGroup>
+      </ActionGroup>
 
       <input type="hidden" name="next" value={thanksPage} />
       <input type="hidden" name="a" value={laPostaId} />
