@@ -11,7 +11,7 @@ import {
   IconNumber,
   IconShadow,
 } from '../functional-icon';
-import { Icon } from '@utrecht/component-library-react';
+import { Icon } from '../icon/icon';
 import { createElement } from 'react';
 
 // This map contains a mix of DTCG-compliant types and real-world usage of types

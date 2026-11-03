@@ -1,4 +1,4 @@
-import { Icon } from '@utrecht/component-library-react';
+import { Icon } from '../icon/icon';
 import {
   IconBrandFigma,
   IconBrandGithub,
