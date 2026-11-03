@@ -1,5 +1,5 @@
 import { IconCalendarEvent } from '../functional-icon';
-import { ButtonLink, Icon } from '@utrecht/component-library-react';
+import { ButtonLink } from '../button-link/button-link';
 import { Heading } from '../heading/heading';
 import { Paragraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
@@ -141,10 +141,12 @@ export const DSWSession = ({
       </aside>
       {session && session.icalLink && !videoId ? (
         <Paragraph>
-          <ButtonLink href={session.icalLink} download={session.icalLink} appearance="primary-action-button">
-            <Icon>
-              <IconCalendarEvent />
-            </Icon>
+          <ButtonLink
+            href={session.icalLink}
+            download={session.icalLink}
+            purpose="primary"
+            iconStart={<IconCalendarEvent />}
+          >
             <span>
               {lang === 'nl' ? (
                 <>
