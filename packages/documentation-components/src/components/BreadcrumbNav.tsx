@@ -3,14 +3,14 @@ import { Link } from '../link/link';
 import { useLocation } from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { IconChevronLeft } from '../functional-icon';
+import { Icon } from '../icon/icon';
+import { ActionGroup } from '../action-group/action-group';
 import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
   BreadcrumbNav as UtrechtBreadcrumbNav,
-} from '@utrecht/component-library-react';
-import { Icon } from '../icon/icon';
-import { ActionGroup } from '../action-group/action-group';
-import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '@utrecht/component-library-react';
+} from '../breadcrumb-nav/breadcrumb-nav';
+import type { BreadcrumbNavProps as UtrechtBreadcrumbNavProps } from '../breadcrumb-nav/breadcrumb-nav';
 import clsx from 'clsx';
 import { Fragment } from 'react';
 import './Breadcrumbs.css';
