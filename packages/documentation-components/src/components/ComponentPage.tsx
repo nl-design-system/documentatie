@@ -1,4 +1,5 @@
-import { LinkList, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import { LinkList } from '../link-list/link-list';
 import { Link } from '../link/link';
 import { Heading, HeadingProps } from '../heading/heading';
 import { Paragraph } from '../paragraph/paragraph';
