@@ -1,6 +1,7 @@
 import { Button } from '../button/button';
 import { Icon } from '../icon/icon';
-import { FormFieldErrorMessage, Textbox } from '@utrecht/component-library-react';
+import { FormFieldErrorMessage } from '@utrecht/component-library-react';
+import { Textbox } from '../textbox/textbox';
 import { IconSearch } from '../functional-icon';
 import { i18n, type I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index';
 import { useEffect, useState, type ChangeEvent, type FormEvent, type FormEventHandler } from 'react';
