@@ -7,12 +7,11 @@ import {
   ButtonGroup as ActionGroup,
   Code,
   FormFieldTextbox,
-  Heading2,
   Icon,
   PageContent,
 } from '@utrecht/component-library-react';
 import { Paragraph } from '../paragraph/paragraph';
-import { Heading1 } from '@utrecht/component-library-react';
+import { Heading1, Heading2 } from '../heading/heading';
 import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import './contrast-tool.css';
