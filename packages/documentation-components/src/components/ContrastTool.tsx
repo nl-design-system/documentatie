@@ -2,13 +2,8 @@ import { Canvas } from './Canvas/Canvas';
 import type { CanvasContainerType } from './Canvas/Canvas';
 import { ContrastRatio } from './ContrastRatio';
 import { Guideline } from './Guideline';
-import {
-  ButtonGroup as ActionGroup,
-  Code,
-  FormFieldTextbox,
-  Icon,
-  PageContent,
-} from '@utrecht/component-library-react';
+import { ButtonGroup as ActionGroup, Code, FormFieldTextbox, PageContent } from '@utrecht/component-library-react';
+import { Icon } from '../icon/icon';
 import { Button } from '../button/button';
 import { Paragraph } from '../paragraph/paragraph';
 import { Heading1, Heading2 } from '../heading/heading';

@@ -2,7 +2,6 @@ import { IconCalendarEvent, IconUser } from '../functional-icon';
 import { Paragraph } from '../paragraph/paragraph';
 import { ButtonLink } from '../button-link/button-link';
 import {
-  Icon,
   Link,
   Table,
   TableBody,
@@ -12,6 +11,7 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react';
+import { Icon } from '../icon/icon';
 import { Heading, type HeadingProps } from '../heading/heading';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
