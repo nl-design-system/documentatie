@@ -492,7 +492,7 @@ importers:
         version: 1.0.0
       '@rijkshuisstijl-community/card-react':
         specifier: 1.0.0
-        version: 1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+        version: 1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
       '@utrecht/accordion-css':
         specifier: 4.0.1
         version: 4.0.1
@@ -655,7 +655,7 @@ importers:
         version: 10.4.2
       '@testing-library/jest-dom':
         specifier: 7.0.1
-        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
       '@testing-library/react':
         specifier: 16.3.3
         version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -691,7 +691,7 @@ importers:
         version: 11.0.5
       vitest:
         specifier: 4.1.11
-        version: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
+        version: 4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
 
   packages/documentation-i18n: {}
 
@@ -757,7 +757,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 4.1.11
-        version: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
+        version: 4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
 
   packages/nlds-design-tokens:
     dependencies:
@@ -881,7 +881,7 @@ importers:
         version: 1.0.0
       '@rijkshuisstijl-community/card-react':
         specifier: 1.0.0
-        version: 1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+        version: 1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
       '@tabler/icons-react':
         specifier: 3.36.1
         version: 3.36.1(react@18.3.1)
@@ -1054,6 +1054,9 @@ importers:
       '@csstools/postcss-global-data':
         specifier: 4.0.0
         version: 4.0.0(postcss@8.5.6)
+      '@nl-design-system-community/clippy-a11y-validator':
+        specifier: 0.2.0
+        version: 0.2.0(playwright@1.64.1)
       '@nl-design-system-community/documentation-i18n':
         specifier: workspace:*
         version: link:../documentation-i18n
@@ -1074,7 +1077,7 @@ importers:
         version: 10.4.2
       '@testing-library/jest-dom':
         specifier: 7.0.1
-        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
       '@testing-library/react':
         specifier: 16.3.3
         version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1135,6 +1138,9 @@ importers:
       mdast-util-mdx-jsx:
         specifier: 3.2.0
         version: 3.2.0(supports-color@7.2.0)
+      playwright:
+        specifier: 1.64.1
+        version: 1.64.1
       postcss-custom-media:
         specifier: 12.0.1
         version: 12.0.1(postcss@8.5.6)
@@ -1179,7 +1185,7 @@ importers:
         version: 8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
       vitest:
         specifier: 4.1.11
-        version: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
+        version: 4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
 
 packages:
 
@@ -2778,6 +2784,15 @@ packages:
   '@nl-design-system-candidate/skip-link-tokens@1.0.4':
     resolution: {integrity: sha512-MD1+m55nRqkj2eATcBNOLE8N5jWfvjJg2ax+POX8zXm49wJcBGTS6B/kK4kzIPbMuivYnxVtNlmA+Cz/upFBZA==}
 
+  '@nl-design-system-community/clippy-a11y-validator@0.2.0':
+    resolution: {integrity: sha512-JbPMSP+n0F28lUhUrgVArIqupKUKeEpsJnZLbW125Irw8/+2FX5ap4b0Jz1w7S9UFQx0QVsHondm3I5MFINMnw==}
+    hasBin: true
+    peerDependencies:
+      playwright: '>=1.62.1'
+    peerDependenciesMeta:
+      playwright:
+        optional: true
+
   '@nl-design-system-community/design-tokens-schema@2.1.0':
     resolution: {integrity: sha512-CZDR2CNbLxrt8y5kD3YjopszbZyaEd8fgBUsQMEJmaA+248NL4urcWAXSrNlQkc92mWrdhlWP+U0Nsyjb3NNaQ==}
 
@@ -2807,6 +2822,9 @@ packages:
 
   '@nl-design-system-unstable/basis-design-tokens@3.1.1':
     resolution: {integrity: sha512-eENh3scHg7ZXGERZy9SL7wdVi56sg1gqnSEAhC2QpWf60pd5p3FClPoQTI4/hISFnpFKvlHLsl4xJgjT/gLsmg==}
+
+  '@nl-design-system-unstable/documentation@2.0.0':
+    resolution: {integrity: sha512-HSgHnZohAYqlOXnSL0HHQRdEfqa+6ZaskNAR/UQzvtkPvTM55c8fnCxQ7TIedZ6y66yyB2SMfb+LIUSU6+obQw==}
 
   '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2':
     resolution: {integrity: sha512-nIgtDusYF1UpiefHojQCJ7BhT3dlH5xBDGfB0j4MG9WlJaFK4rXuSpZMWlpmxe6KgRotUXL6k5QLbJ6aGCVZxg==}
@@ -9375,6 +9393,7 @@ packages:
       '@vitest/ui': 4.1.11
       happy-dom: '*'
       jsdom: '*'
+      vite: ^6.0.0 || ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       '@edge-runtime/vm':
         optional: true
@@ -11255,6 +11274,12 @@ snapshots:
 
   '@nl-design-system-candidate/skip-link-tokens@1.0.4': {}
 
+  '@nl-design-system-community/clippy-a11y-validator@0.2.0(playwright@1.64.1)':
+    dependencies:
+      '@nl-design-system-unstable/documentation': 2.0.0
+    optionalDependencies:
+      playwright: 1.64.1
+
   '@nl-design-system-community/design-tokens-schema@2.1.0':
     dependencies:
       '@nl-design-system-candidate/button-tokens': 1.0.0
@@ -11315,6 +11340,8 @@ snapshots:
       react: 18.3.1
 
   '@nl-design-system-unstable/basis-design-tokens@3.1.1': {}
+
+  '@nl-design-system-unstable/documentation@2.0.0': {}
 
   '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2': {}
 
@@ -11473,10 +11500,10 @@ snapshots:
 
   '@rijkshuisstijl-community/card-css@1.0.0': {}
 
-  '@rijkshuisstijl-community/card-react@1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))':
+  '@rijkshuisstijl-community/card-react@1.0.0(patch_hash=c81451f5b5c55b13c5034472ed2735eaa7ee7b7ee0969f9c8ae9b845ad991247)(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))':
     dependencies:
       '@rijkshuisstijl-community/card-css': 1.0.0
-      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
       '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -11492,12 +11519,12 @@ snapshots:
 
   '@rijkshuisstijl-community/link-css@1.0.1': {}
 
-  '@rijkshuisstijl-community/link-react@1.0.1(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))':
+  '@rijkshuisstijl-community/link-react@1.0.1(@babel/runtime@7.28.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))':
     dependencies:
       '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.28.6)(react@18.3.1)
       '@rijkshuisstijl-community/link-css': 1.0.1
       '@vitejs/plugin-react': 4.7.0(supports-color@7.2.0)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
-      '@vitest/coverage-v8': 3.2.4(supports-color@7.2.0)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
+      '@vitest/coverage-v8': 3.2.4(supports-color@7.2.0)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -11652,7 +11679,7 @@ snapshots:
       picocolors: 1.1.1
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))':
+  '@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.2)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))':
     dependencies:
       '@adobe/css-tools': 4.5.0
       '@testing-library/dom': 10.4.2
@@ -11662,7 +11689,7 @@ snapshots:
       picocolors: 1.1.1
       redent: 3.0.0
     optionalDependencies:
-      vitest: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
+      vitest: 4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
 
   '@testing-library/react@16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -13046,7 +13073,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.1
       vite: 8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
 
-  '@vitest/coverage-v8@3.2.4(supports-color@7.2.0)(vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))':
+  '@vitest/coverage-v8@3.2.4(supports-color@7.2.0)(vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 1.0.2
@@ -13061,7 +13088,7 @@ snapshots:
       std-env: 3.10.0
       test-exclude: 7.0.2
       tinyrainbow: 2.0.0
-      vitest: 4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
+      vitest: 4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -19389,7 +19416,7 @@ snapshots:
     optionalDependencies:
       vite: 8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
 
-  vitest@4.1.11(@types/node@24.10.9)(esbuild@0.27.4)(jsdom@30.1.2)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1):
+  vitest@4.1.11(@types/node@24.10.9)(jsdom@30.1.2)(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)):
     dependencies:
       '@vitest/expect': 4.1.11
       '@vitest/mocker': 4.1.11(vite@8.3.5(@types/node@24.10.9)(esbuild@0.27.4)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1))
@@ -19415,18 +19442,7 @@ snapshots:
       '@types/node': 24.10.9
       jsdom: 30.1.2
     transitivePeerDependencies:
-      - '@vitejs/devtools'
-      - esbuild
-      - jiti
-      - less
       - msw
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - terser
-      - tsx
-      - yaml
 
   vscode-languageserver-textdocument@1.0.12: {}
 

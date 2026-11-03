@@ -138,7 +138,7 @@ jobs:
           path: packages/website/dist/
 
       - name: "Continuous Integration: end-to-end tests"
-        run: pnpm run --if-present test-e2e
+        run: pnpm run --include-workspace-root --no-bail --recursive --if-present test-e2e
 
       - name: "Continuous Integration: a11y:next"
         run: pnpm run test-a11y:next
