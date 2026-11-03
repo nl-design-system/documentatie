@@ -1,4 +1,4 @@
-import { Paragraph } from '@utrecht/component-library-react';
+import { Paragraph } from '../paragraph/paragraph';
 import type { HTMLAttributes } from 'react';
 import './TermsList.css';
 

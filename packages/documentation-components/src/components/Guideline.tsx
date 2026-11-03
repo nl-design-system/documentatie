@@ -1,5 +1,6 @@
 import { IconMoodHappy, IconMoodSad } from '../functional-icon';
-import { Icon, Paragraph, Link } from '@utrecht/component-library-react';
+import { Icon, Link } from '@utrecht/component-library-react';
+import { Paragraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import Markdown from 'react-markdown';

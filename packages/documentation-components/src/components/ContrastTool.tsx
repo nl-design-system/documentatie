@@ -10,8 +10,8 @@ import {
   Heading2,
   Icon,
   PageContent,
-  Paragraph,
 } from '@utrecht/component-library-react';
+import { Paragraph } from '../paragraph/paragraph';
 import { Heading1 } from '@utrecht/component-library-react';
 import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
@@ -205,7 +205,7 @@ export const ContrastTool = () => {
       }}
     >
       <Heading1>Contrast van kleuren</Heading1>
-      <Paragraph lead>
+      <Paragraph purpose="lead">
         Vul de voorgrondkleur en achtergrondkleur in als CSS-waarden. Controleer dan voor welke toepassingen je de
         combinatie kunt gebruiken. Bijvoorbeeld:
       </Paragraph>

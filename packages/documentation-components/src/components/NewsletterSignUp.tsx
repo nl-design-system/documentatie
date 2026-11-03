@@ -11,7 +11,7 @@ import {
   Textbox,
 } from '@utrecht/component-library-react';
 import { Button } from '../button/button';
-import { Paragraph } from '@nl-design-system-candidate/paragraph-react';
+import { Paragraph } from '../paragraph/paragraph';
 import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
