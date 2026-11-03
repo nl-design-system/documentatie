@@ -7,8 +7,8 @@ import {
   FormFieldErrorMessage,
   FormLabel,
   Textarea,
-  Textbox,
 } from '@utrecht/component-library-react';
+import { Textbox } from '../textbox/textbox';
 import { Button } from '../button/button';
 import { ActionGroup } from '../action-group/action-group';
 import { Paragraph } from '../paragraph/paragraph';
