@@ -21,10 +21,9 @@ export async function getStaticPaths() {
   const components = await getCollection('components');
 
   // Find all modules with aliases for the components
-  const aliasesModules = import.meta.glob(
-    '../../../../node_modules/@nl-design-system-candidate/*-docs/docs/aliases.md',
-    { eager: true },
-  ) as Record<string, { default: any }>;
+  const aliasesModules = import.meta.glob('../../node_modules/@nl-design-system-candidate/*-docs/docs/aliases.md', {
+    eager: true,
+  }) as Record<string, { default: any }>;
 
   return components.map((page) => {
     const aliasModuleKey = Object.keys(aliasesModules).find((key) => key.includes(page.id + '-docs'));
