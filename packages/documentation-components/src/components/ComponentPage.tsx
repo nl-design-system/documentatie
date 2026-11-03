@@ -1,4 +1,5 @@
-import { Link, LinkList, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import { LinkList, UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import { Link } from '../link/link';
 import { Heading, HeadingProps } from '../heading/heading';
 import { Paragraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
