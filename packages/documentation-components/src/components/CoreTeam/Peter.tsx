@@ -10,8 +10,8 @@ const Peter: TeamMember = {
     <>
       <Paragraph>
         Peter is de kracht achter de schermen die de rebuild van{' '}
-        <Link href="gebruikersonderzoeken.nl">gebruikersonderzoeken.nl</Link> en{' '}
-        <Link href="nldesignsystem.nl">nldesignsystem.nl</Link> doorvoert met gebruik van NL Design System.
+        <Link href="https://gebruikersonderzoeken.nl/">gebruikersonderzoeken.nl</Link> en{' '}
+        <Link href="https://nldesignsystem.nl/">nldesignsystem.nl</Link> doorvoert met gebruik van NL Design System.
       </Paragraph>
     </>
   ),
