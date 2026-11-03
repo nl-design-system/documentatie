@@ -42,7 +42,12 @@ import Summary from "./summaries/_3.3.8-summary.md";
 
 <Summary />
 
-Een **geheugen- of denktest** is elke stap waarin je informatie moet onthouden, bewerken of overtypen: een gebruikersnaam, wachtwoord, tekenreeks, afbeelding of patroon onthouden, tekens overtypen, foutloos spellen, een som maken of een puzzel oplossen.
+Een **geheugen- of denktest** is elke stap waarin je informatie moet onthouden, bewerken of overtypen. Bijvoorbeeld:
+
+- een gebruikersnaam, wachtwoord, tekenreeks, afbeelding of patroon onthouden
+- tekens overtypen
+- foutloos spellen
+- een som maken of een puzzel oplossen
 
 Zit er toch zo'n test in een stap, dan moet de bezoeker die stap toch kunnen afronden. Dat kan op 4 manieren:
 
@@ -57,9 +62,9 @@ Wie moeite heeft met onthouden of met concentreren, wie dyslexie heeft, wie het 
 
 ### Je moet tekens uit een afbeelding overtypen
 
-Voor het inloggen of registreren staat een test met de opdracht om de tekens uit een plaatje over te nemen. Dat is een geheugen- en denktest in één: je leest, onthoudt en typt over. Wie het plaatje niet ziet, kan de test niet maken. Wie moeite heeft met spellen of met korte tekenreeksen, ook niet.
+Bij het inloggen staat een test met de opdracht om de tekens uit een plaatje over te nemen. Dat is een geheugen- en denktest in één: je leest, onthoudt en typt over. Wie het plaatje niet ziet, kan de test niet maken. Wie moeite heeft met spellen of met korte tekenreeksen, ook niet.
 
-**Hoe te testen:** doorloop het inloggen en het aanmaken van een account. Kom je een test tegen waarbij je tekens moet overnemen? Staat er een andere manier naast om verder te komen?
+**Hoe te testen:** doorloop het inloggen. Kom je een test tegen waarbij je tekens moet overnemen? Staat er een andere manier naast om verder te komen?
 
 <Guideline appearance="dont" title="Tekens uit een plaatje overtypen, zonder andere weg">
   ```html
@@ -71,11 +76,11 @@ Voor het inloggen of registreren staat een test met de opdracht om de tekens uit
 
 <Guideline appearance="do" title="Een weg zonder geheugen- of denktest">
   ```html
-  <h1>Bevestig je aanmelding</h1>
+  <h1>Inloggen</h1>
   <p>
-    We sturen een link naar jan@voorbeeld.nl. Klik op die link om je account aan te maken. Je hoeft niets over te typen.
+    We sturen een inloglink naar jan@voorbeeld.nl. Klik op die link om in te loggen. Je hoeft niets over te typen.
   </p>
-  <button type="submit">Stuur de link</button>
+  <button type="submit">Stuur de inloglink</button>
   ```
 </Guideline>
 
@@ -89,7 +94,7 @@ Moet er per se een test blijven, laat die dan uit het herkennen van objecten bes
 
 Sommige inlogschermen vragen om een som uit te rekenen of een schuifpuzzel af te maken. Ook dat is een denktest. Bij een rekensom komen mensen met dyscalculie niet verder, bij een puzzel mensen die het scherm niet zien of die de muis niet nauwkeurig kunnen bedienen.
 
-**Hoe te testen:** kijk of het inloggen of registreren om een som, een puzzel of een spelletje vraagt. Kun je die stap ook overslaan via een andere route?
+**Hoe te testen:** kijk of het inloggen om een som, een puzzel of een spelletje vraagt. Kun je die stap ook overslaan via een andere route?
 
 <Guideline appearance="dont" title="Een rekensom voor het inloggen">
   ```html
@@ -110,9 +115,9 @@ Controleer in plaats daarvan aan de serverkant op ongewoon gedrag, bijvoorbeeld 
 
 ### Het alternatief bestaat wel, maar is zelf niet te gebruiken
 
-Er staat een tweede route naast de test, maar de bezoeker komt er niet bij. De knop ernaartoe toont alleen een envelopicoon en heeft geen toegankelijke naam, dus een screenreader kondigt hem niet aan. Of de route loopt via de site van de leverancier van de test, en daar moet je eerst zelf een account aanmaken. Dan staat het probleem alleen op een andere site. Een route die je niet kunt vinden of niet kunt gebruiken, telt niet mee.
+Er staat een tweede route naast de test, maar de bezoeker komt er niet bij. De knop ernaartoe toont alleen een envelopicoon en heeft geen toegankelijke naam, dus een screenreader kondigt hem niet aan. Een route die je niet kunt vinden of niet kunt gebruiken, telt niet mee.
 
-**Hoe te testen:** gebruik het alternatief zelf, met het toetsenbord en met een screenreader. Kom je ermee door de inlogstap heen zonder de site te verlaten en zonder ergens anders een account te maken?
+**Hoe te testen:** gebruik het alternatief zelf, met het toetsenbord en met een screenreader. Kom je ermee door de inlogstap heen?
 
 <Guideline appearance="dont" title="Een knop naar de andere route zonder toegankelijke naam">
   ```html
@@ -122,7 +127,7 @@ Er staat een tweede route naast de test, maar de bezoeker komt er niet bij. De k
   ```
 </Guideline>
 
-<Guideline appearance="do" title="Een route met een duidelijke knoptekst, op de site zelf">
+<Guideline appearance="do" title="Een route met een duidelijke knoptekst">
   ```html
   <button type="button" class="example-alt">
     <svg aria-hidden="true" focusable="false"></svg>
@@ -131,7 +136,7 @@ Er staat een tweede route naast de test, maar de bezoeker komt er niet bij. De k
   ```
 </Guideline>
 
-**Wie kan dit oplossen:** een developer geeft de route een duidelijke knoptekst en zorgt dat die werkt zonder een account bij een andere partij.
+**Wie kan dit oplossen:** een developer geeft de route een duidelijke knoptekst.
 
 ### Plakken is uitgezet in de inlogvelden
 
@@ -159,7 +164,7 @@ Let ook op `user-select: none` in de CSS en op handlers voor `copy` en `contextm
 
 **Wie kan dit oplossen:** een developer haalt de code weg die plakken, kopiëren of het rechtermuisknopmenu blokkeert, op elk veld in het inlogproces.
 
-### Een wachtwoordmanager krijgt zijn gegevens er niet in
+### Een wachtwoordmanager kan het inlogveld niet invullen
 
 Het inlogscherm gebruikt geen gewoon invoerveld. Je klikt de cijfers aan op een toetsenblok op het scherm, of het veld is een zelfgemaakt component dat geen `<input>` is. Een wachtwoordmanager kan er niets in zetten en plakken werkt er ook niet. De bezoeker moet de gegevens dan uit het hoofd weten.
 
@@ -271,12 +276,12 @@ Het inlogscherm vraagt niet om het hele wachtwoord, maar om het 3e en het 7e tek
 
 ### Voor iedereen
 
-1. Doorloop het hele inlogproces: inloggen, een account aanmaken, een tweede factor bevestigen en een wachtwoord herstellen. Noteer elke stap waarin je iets moet onthouden, uitrekenen of overtypen.
+1. Doorloop het hele inlogproces: inloggen, een tweede factor bevestigen en een wachtwoord herstellen. Noteer elke stap waarin je iets moet onthouden, uitrekenen of overtypen.
 2. Kijk per stap of er een andere route naast staat, of iets wat je helpt. Objectherkenning en het herkennen van je eigen content mogen ook.
 3. Kopieer een wachtwoord naar je klembord en plak het in het wachtwoordveld. Verschijnt de tekst?
 4. Sla je gegevens op in de browser of in een wachtwoordmanager, log uit en ga terug. Kun je de velden laten vullen, of anders plakken?
 5. Vraag een code per sms of e-mail aan en probeer die te plakken.
-6. Kom je een test tegen, gebruik dan het alternatief. Werkt dat met het toetsenbord, en blijf je op de site zelf?
+6. Kom je een test tegen, gebruik dan het alternatief. Werkt dat met het toetsenbord?
 
 ### Voor developers
 
