@@ -9,7 +9,6 @@ import {
   tokenPathToDottedTokenPath,
 } from '../utils';
 import {
-  ButtonGroup as ActionGroup,
   PreserveData,
   Table,
   TableBody,
@@ -18,6 +17,7 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react';
+import { ActionGroup } from '../action-group/action-group';
 import { CopyButton } from './CopyButton';
 import type { IconType } from './TokenIcon';
 import { TokenIcon } from './TokenIcon';
