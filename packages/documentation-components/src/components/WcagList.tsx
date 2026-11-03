@@ -1,5 +1,5 @@
-import { Link } from '@utrecht/component-library-react';
 import { Heading, type HeadingProps } from '../heading/heading';
+import { Link } from '../link/link';
 import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon';
 import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index';
 import clsx from 'clsx';

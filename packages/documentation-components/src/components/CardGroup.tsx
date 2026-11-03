@@ -1,4 +1,4 @@
-import { Link } from '@utrecht/component-library-react';
+import { Link } from '../link/link';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren } from 'react';
 import './CardGroup.css';
@@ -73,7 +73,7 @@ export const Card = ({
   );
 
   return href ? (
-    <Link href={href} boxContent className="ma-cardgroup__link">
+    <Link href={href} inlineBox className="ma-cardgroup__link">
       {card}
     </Link>
   ) : (

@@ -1,5 +1,5 @@
 import { Card } from '../../card/card';
-import { Link } from '@utrecht/component-library-react';
+import { Link } from '../../link/link';
 import { Paragraph } from '../../paragraph/paragraph';
 import Ali from './Ali';
 import Astrid from './Astrid';

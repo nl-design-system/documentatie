@@ -14,7 +14,7 @@
  */
 
 import type { PropsWithChildren, ReactElement } from 'react';
-import { Link } from '@utrecht/component-library-react';
+import { Link } from '../link/link';
 import { Heading, type HeadingProps } from '../heading/heading';
 import { successCriteriaMap } from './wcag22';
 import { AccordionProvider } from '@utrecht/component-library-react';

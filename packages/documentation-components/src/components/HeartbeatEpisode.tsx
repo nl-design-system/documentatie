@@ -1,7 +1,7 @@
 import HeartbeatJSON from '../../../../docs/community/events/heartbeat/heartbeat.json';
 import { VideoPlayer } from './VideoPlayer';
-import { Link } from '@utrecht/component-library-react';
 import { Heading, type HeadingProps } from '../heading/heading';
+import { Link } from '../link/link';
 import { Paragraph } from '../paragraph/paragraph';
 import Markdown from 'react-markdown';
 
