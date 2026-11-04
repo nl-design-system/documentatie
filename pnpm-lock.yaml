@@ -37,9 +37,6 @@ importers:
       '@nl-design-system-community/documentation-components':
         specifier: workspace:*
         version: link:packages/documentation-components
-      '@nl-design-system/component-progress':
-        specifier: 1.1.11
-        version: 1.1.11
       '@nl-design-system/eslint-config':
         specifier: 1.0.0
         version: 1.0.0(eslint@9.39.2(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
@@ -224,8 +221,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       '@nl-design-system/component-progress':
-        specifier: 1.1.9
-        version: 1.1.9
+        specifier: 1.1.11
+        version: 1.1.11
       clsx:
         specifier: 2.1.1
         version: 2.1.1

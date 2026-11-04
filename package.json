@@ -57,7 +57,6 @@
     "@eslint/js": "9.39.2",
     "@eslint/json": "0.14.0",
     "@nl-design-system-community/documentation-components": "workspace:*",
-    "@nl-design-system/component-progress": "1.1.11",
     "@nl-design-system/eslint-config": "1.0.0",
     "@nl-design-system/tsconfig": "1.0.5",
     "@types/node": "24.10.9",
