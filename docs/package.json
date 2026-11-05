@@ -27,7 +27,7 @@
     "./*": "./*"
   },
   "dependencies": {
-    "@nl-design-system/component-progress": "1.1.9",
+    "@nl-design-system/component-progress": "1.1.12",
     "@nl-design-system-candidate/code-block-docs": "1.2.1",
     "@nl-design-system-candidate/code-block-tokens": "2.0.3",
     "@nl-design-system-candidate/code-docs": "1.1.2",
