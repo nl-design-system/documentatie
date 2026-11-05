@@ -34,8 +34,8 @@
 <h3 class="nl-heading nl-heading--level-3" id="acties-3">Acties</h3>
 <p class="nl-paragraph">Door met <a href="/handboek/huisstijl/design-tokens/" class="nl-link">design tokens</a> te werken zorgen we ervoor dat meerdere organisaties de component van een eigen huisstijl kunnen voorzien. Minimaal zouden er design tokens beschikbaar moeten zijn om kleur en typografie beslissingen door te voeren.</p>
 <p class="nl-paragraph">Zorg ervoor dat de component gebruik maakt van de minimale design tokens.</p>
-<p class="nl-paragraph"><strong class="ma-strong">Tip!</strong> Om te controleren of er design tokens zijn toegepast, kun je de ‘Inspect’ functie in je browser gebruiken. Wanneer je in de CSS verwijzingen ziet naar CSS-variabelen zoals bijvoorbeeld <code class="nl-code" dir="ltr" translate="no">--{prefix-organisatie}-button-primary-action-background-color</code> of <code class="nl-code" dir="ltr" translate="no">--{prefix-organisatie}-button-font-family</code> kun je ervan uitgaan dat er design tokens zijn gebruikt.</p>
-<p class="nl-paragraph"><strong class="ma-strong">Tip!</strong> Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.</p>
+<div class="utrecht-note utrecht-note--success"><strong class="ma-strong">Tip</strong><p class="nl-paragraph">Om te controleren of er design tokens zijn toegepast, kun je de ‘Inspect’ functie in je browser gebruiken. Wanneer je in de CSS verwijzingen ziet naar CSS-variabelen zoals bijvoorbeeld <code class="nl-code" dir="ltr" translate="no">--{prefix-organisatie}-button-primary-action-background-color</code> of <code class="nl-code" dir="ltr" translate="no">--{prefix-organisatie}-button-font-family</code> kun je ervan uitgaan dat er design tokens zijn gebruikt.</p></div>
+<div class="utrecht-note utrecht-note--success"><strong class="ma-strong">Tip</strong><p class="nl-paragraph">Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.</p></div>
 <p class="nl-paragraph"><strong class="ma-strong">🚩 Checkpoint</strong>: Minimale design tokens</p>
 <h2 class="nl-heading nl-heading--level-2" id="gebruikte-design-tokens-voldoen-aan-naamgeving-conventie-van-nl-design-system">Gebruikte design tokens voldoen aan naamgeving conventie van NL Design System</h2>
 <h3 class="nl-heading nl-heading--level-3" id="doel-4">Doel</h3>
@@ -71,7 +71,7 @@
 <h3 class="nl-heading nl-heading--level-3" id="acties-6">Acties</h3>
 <p class="nl-paragraph">Binnen het NL Design System werken we voor de documentatie met de <a href="/open-source/cc0/" class="nl-link">Creative Commons 0 licentie (CC0)</a>.</p>
 <p class="nl-paragraph">Zorg ervoor dat de organisatie de CC0 licentie benoemt in het README.md bestand van de component in GitHub.</p>
-<p class="nl-paragraph"><strong class="ma-strong">Tip!</strong> Door de ‘Code’ of ‘Raw’ weergave van het README.md bestand te bekijken zou je bovenaan <code class="nl-code" dir="ltr" translate="no">&#x3C;!-- @license CC0-1.0 --></code> moeten zien staan.</p>
+<div class="utrecht-note utrecht-note--success"><strong class="ma-strong">Tip</strong><p class="nl-paragraph">Door de ‘Code’ of ‘Raw’ weergave van het README.md bestand te bekijken zou je bovenaan <code class="nl-code" dir="ltr" translate="no">&#x3C;!-- @license CC0-1.0 --></code> moeten zien staan.</p></div>
 <p class="nl-paragraph"><strong class="ma-strong">🚩 Checkpoint</strong>: Licentie documentatie</p>
 <h2 class="nl-heading nl-heading--level-2" id="component-te-gebruiken-door-designers">Component te gebruiken door designers</h2>
 <h3 class="nl-heading nl-heading--level-3" id="doel-7">Doel</h3>
@@ -126,12 +126,12 @@
 <h3 class="nl-heading nl-heading--level-3" id="doel-12">Doel</h3>
 <p class="nl-paragraph">Doel: makkelijk maken voor developers om de component te vinden in de themes Storybook en eventueel te vergelijken met andere component implementaties.</p>
 <h4 class="nl-heading nl-heading--level-4" id="importeer-de-design-tokens">Importeer de design tokens</h4>
-<p class="nl-paragraph">Tip: Worden de design tokens van de organisatie al geimporteerd in <code class="nl-code" dir="ltr" translate="no">/packages/storybook/config/preview.ts</code>? Ga dan door naar de volgende sectie.</p>
+<div class="utrecht-note utrecht-note--success"><strong class="ma-strong">Tip</strong><p class="nl-paragraph">Worden de design tokens van de organisatie al geimporteerd in <code class="nl-code" dir="ltr" translate="no">/packages/storybook/config/preview.ts</code>? Ga dan door naar de volgende sectie.</p></div>
 <p class="nl-paragraph">Importeer de design tokens van de organisatie in <code class="nl-code" dir="ltr" translate="no">/packages/storybook/config/preview.ts</code>:</p>
 <pre class="language-tsx nl-code-block" data-language="tsx" dir="ltr" translate="no" tabindex="0"><code class="language-tsx nl-code-block__code"><span class="token keyword">import</span> <span class="token string">"@example/organisatie-design-tokens/dist/index.css"</span><span class="token punctuation">;</span>
 </code></pre>
 <h4 class="nl-heading nl-heading--level-4" id="importeer-het-custom-font">Importeer het custom font</h4>
-<p class="nl-paragraph">Tip: Heeft de organisatie geen custom font, gelden er auteursrechten op het font of word het custom font van de organisatie al geimporteerd in <code class="nl-code" dir="ltr" translate="no">/packages/storybook/config/preview.ts</code>? Ga dan door naar de volgende sectie.</p>
+<div class="utrecht-note utrecht-note--success"><strong class="ma-strong">Tip</strong><p class="nl-paragraph">Heeft de organisatie geen custom font, gelden er auteursrechten op het font of word het custom font van de organisatie al geimporteerd in <code class="nl-code" dir="ltr" translate="no">/packages/storybook/config/preview.ts</code>? Ga dan door naar de volgende sectie.</p></div>
 <p class="nl-paragraph">Importeer het custom font van de organisatie in <code class="nl-code" dir="ltr" translate="no">/packages/storybook/config/preview.ts</code>:</p>
 <pre class="language-tsx nl-code-block" data-language="tsx" dir="ltr" translate="no" tabindex="0"><code class="language-tsx nl-code-block__code"><span class="token keyword">import</span> <span class="token string">"@example/organisatie-design-tokens/src/font"</span><span class="token punctuation">;</span>
 </code></pre>
@@ -178,8 +178,7 @@
 <p class="nl-paragraph">Wanneer de huisstijl in de toekomst wordt gemoderniseerd, dan behoud je de waardevolle investeringen in de component voor toegankelijkheid, gebruiksvriendelijkheid en robustheid.</p>
 <p class="nl-paragraph">Organisaties die meerdere huisstijlen gebruiken, kunnen dezelfde component gebruiken in voor alle huisstijlen.</p>
 <h4 class="nl-heading nl-heading--level-4" id="voeg-organisatie-toe-aan-de-theme-toolkit">Voeg organisatie toe aan de theme-toolkit</h4>
-<p class="nl-paragraph"><strong class="ma-strong">Tip!</strong>
-Is er al een bestand genaamd <code class="nl-code" dir="ltr" translate="no">packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx</code> aanwezig? Ga in dat geval direct verder met de volgende sectie: “Voeg een component toe”.</p>
+<div class="utrecht-note utrecht-note--success"><strong class="ma-strong">Tip</strong><p class="nl-paragraph">Is er al een bestand genaamd <code class="nl-code" dir="ltr" translate="no">packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx</code> aanwezig? Ga in dat geval direct verder met de volgende sectie: “Voeg een component toe”.</p></div>
 <pre class="language-tsx nl-code-block" data-language="tsx" dir="ltr" translate="no" tabindex="0"><code class="language-tsx nl-code-block__code"><span class="token comment">// packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token constant">STORY_GROUPS</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./component-stories-util"</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> ComponentNaam <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"{react-component-library-package}"</span><span class="token punctuation">;</span>
