@@ -355,7 +355,7 @@ Voordat je de component progress gaat bijwerken is het handig om te controleren 
 - Publiceer een nieuwe versie van het `component-progress` package: ga naar de [pull requests van de Index repository](https://github.com/nl-design-system/index/pulls) en zoek naar de pull request genaamd `docs(release): design system packages`. Approve en merge de pull request. Deze pull request word automatisch aangemaakt elke keer wanneer de vorige is gemerged.
 - Wacht tot [`@nl-design-system/component-progress` op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
 - Open de [documentatie repository](https://github.com/nl-design-system/documentatie) in Visual Studio Code.
-- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm install @nl-design-system/component-progress@latest --save-dev -w` te draaien. Dit update de devDependency en de lockfile.
+- Update `@nl-design-system/component-progress` in de documentatie repository. Dat doe je door lokaal in de branch `pnpm --filter @nl-design-system-unstable/documentation update @nl-design-system/component-progress --latest` te draaien. Dit update de devDependency en de lockfile.
 - Maak een nieuwe branch aan en gebruik de volgende naam:
 
 **Branch**

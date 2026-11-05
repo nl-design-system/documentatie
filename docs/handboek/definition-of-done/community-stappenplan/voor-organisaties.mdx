@@ -93,9 +93,17 @@ Door met [design tokens](/handboek/huisstijl/design-tokens/) te werken zorgen we
 
 Zorg ervoor dat de component gebruik maakt van de minimale design tokens.
 
-**Tip!** Om te controleren of er design tokens zijn toegepast, kun je de 'Inspect' functie in je browser gebruiken. Wanneer je in de CSS verwijzingen ziet naar CSS-variabelen zoals bijvoorbeeld `--{prefix-organisatie}-button-primary-action-background-color` of `--{prefix-organisatie}-button-font-family` kun je ervan uitgaan dat er design tokens zijn gebruikt.
+:::tip[Tip]
 
-**Tip!** Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
+Om te controleren of er design tokens zijn toegepast, kun je de 'Inspect' functie in je browser gebruiken. Wanneer je in de CSS verwijzingen ziet naar CSS-variabelen zoals bijvoorbeeld `--{prefix-organisatie}-button-primary-action-background-color` of `--{prefix-organisatie}-button-font-family` kun je ervan uitgaan dat er design tokens zijn gebruikt.
+
+:::
+
+:::tip[Tip]
+
+Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
+
+:::
 
 **🚩 Checkpoint**: Minimale design tokens
 
@@ -144,7 +152,11 @@ Binnen het NL Design System werken we voor de documentatie met de [Creative Comm
 
 Zorg ervoor dat de organisatie de CC0 licentie benoemt in het README.md bestand van de component in GitHub.
 
-**Tip!** Door de 'Code' of 'Raw' weergave van het README.md bestand te bekijken zou je bovenaan `<!-- @license CC0-1.0 -->` moeten zien staan.
+:::tip[Tip]
+
+Door de 'Code' of 'Raw' weergave van het README.md bestand te bekijken zou je bovenaan `<!-- @license CC0-1.0 -->` moeten zien staan.
+
+:::
 
 **🚩 Checkpoint**: Licentie documentatie
 
@@ -222,7 +234,11 @@ Doel: makkelijk maken voor developers om de component te vinden in de themes Sto
 
 #### Importeer de design tokens
 
-Tip: Worden de design tokens van de organisatie al geimporteerd in `/packages/storybook/config/preview.ts`? Ga dan door naar de volgende sectie.
+:::tip[Tip]
+
+Worden de design tokens van de organisatie al geimporteerd in `/packages/storybook/config/preview.ts`? Ga dan door naar de volgende sectie.
+
+:::
 
 Importeer de design tokens van de organisatie in `/packages/storybook/config/preview.ts`:
 
@@ -232,7 +248,11 @@ import "@example/organisatie-design-tokens/dist/index.css";
 
 #### Importeer het custom font
 
-Tip: Heeft de organisatie geen custom font, gelden er auteursrechten op het font of word het custom font van de organisatie al geimporteerd in `/packages/storybook/config/preview.ts`? Ga dan door naar de volgende sectie.
+:::tip[Tip]
+
+Heeft de organisatie geen custom font, gelden er auteursrechten op het font of word het custom font van de organisatie al geimporteerd in `/packages/storybook/config/preview.ts`? Ga dan door naar de volgende sectie.
+
+:::
 
 Importeer het custom font van de organisatie in `/packages/storybook/config/preview.ts`:
 
@@ -288,8 +308,11 @@ export const OrganisatieNaamTheme: Story = {
 
 #### Voeg organisatie toe aan de theme-toolkit
 
-**Tip!**
+:::tip[Tip]
+
 Is er al een bestand genaamd `packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx` aanwezig? Ga in dat geval direct verder met de volgende sectie: "Voeg een component toe".
+
+:::
 
 ```tsx
 // packages/theme-toolkit/src/component-stories-{prefix-organisatie}.tsx
