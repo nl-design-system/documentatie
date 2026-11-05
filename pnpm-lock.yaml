@@ -221,8 +221,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       '@nl-design-system/component-progress':
-        specifier: 1.1.9
-        version: 1.1.9
+        specifier: 1.1.11
+        version: 1.1.11
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -2699,6 +2699,9 @@ packages:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@14.0.1':
     resolution: {integrity: sha512-a5HuEqczeXqfg1nR3sVJe/N71EKa77Zvsm9ov8qwGGeAAgAGeKzQMc867XchZ2lrAMa7lY7QrnjwpjOFUmbaDw==}
+
+  '@nl-design-system/component-progress@1.1.11':
+    resolution: {integrity: sha512-HNYF2kLHwmEMrmBg2zcW+cCFSdCZUBtO5gtja11ElpLYWixx33Y609I94x1z3pGh7xpdmugJjIgpPSKshe8sJw==}
 
   '@nl-design-system/component-progress@1.1.9':
     resolution: {integrity: sha512-OYy43tK7s6RF0k5shavZWlnDLiU9S5cCgXmV/0aSuGRPYtpsf4+7jK0eEzpV/Mbhp570uDKhMjxzerJBuASVhg==}
@@ -10776,6 +10779,8 @@ snapshots:
   '@nl-design-system-unstable/postcss-remove-unused-design-tokens@0.0.2': {}
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@14.0.1': {}
+
+  '@nl-design-system/component-progress@1.1.11': {}
 
   '@nl-design-system/component-progress@1.1.9': {}
 
