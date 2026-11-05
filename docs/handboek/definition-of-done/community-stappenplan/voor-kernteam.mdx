@@ -107,7 +107,11 @@ Vervolgens heb je twee opties:
 - Komt de naam van de component overeen met de naam uit de GitHub Discussion? Dan selecteer je 'Done'.
 - Komt de naam niet overeen maar voldoet de implementatie verder wel? Dan selecteer je 'Done met Alias'.
 
-**Tip!** Met implementatie bedoelen we bijvoorbeeld `utrecht-button` of `ams-button`. Een specifiek type van een implementatie, bijvoorbeeld `zonnedael-sparkly-button`, noemen we een variant.
+:::tip[Tip]
+
+Met implementatie bedoelen we bijvoorbeeld `utrecht-button` of `ams-button`. Een specifiek type van een implementatie, bijvoorbeeld `zonnedael-sparkly-button`, noemen we een variant.
+
+:::
 
 **🚩 Checkpoint**: Implementatie voldoet
 
@@ -123,9 +127,17 @@ Door met [design tokens](/handboek/huisstijl/design-tokens/) te werken zorgen we
 
 Check of de implementatie van de gekozen organisatie hieraan voldoet. Dit doe je door de component te bekijken via de 'Storybook URL (CSS)' die in het Communitybord is ingevuld.
 
-**Tip!** Om te controleren of er design tokens zijn toegepast kun je gebruik maken van de 'Inspect' functionaliteit van je browser. Wanneer je in de CSS verwijzingen ziet naar CSS variabelen zoals bijvoorbeeld `--denhaag-button-primary-action-background-color` of `--ams-button-font-family` kun je er vanuit gaan dat er design tokens zijn gebruikt.
+:::tip[Tip]
 
-**Tip!** Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
+Om te controleren of er design tokens zijn toegepast kun je gebruik maken van de 'Inspect' functionaliteit van je browser. Wanneer je in de CSS verwijzingen ziet naar CSS variabelen zoals bijvoorbeeld `--denhaag-button-primary-action-background-color` of `--ams-button-font-family` kun je er vanuit gaan dat er design tokens zijn gebruikt.
+
+:::
+
+:::tip[Tip]
+
+Soms heeft een component geen specifieke design tokens nodig. Denk bijvoorbeeld aan design tokens voor font-family bij componenten zoals Mark of Icon. Gebruik in dit soort gevallen je gezonde verstand.
+
+:::
 
 **🚩 Checkpoint**: Minimale design tokens
 
@@ -192,7 +204,11 @@ Binnen het NL Design System werken we voor de documentatie met de [Creative Comm
 
 Check of de gekozen organisatie de CC0 licentie benoemt in het README.md bestand van de component in GitHub.
 
-**Tip!** Door de 'Code' of 'Raw' weergave van het README.md bestand te bekijken zou je bovenaan `<!-- @license CC0-1.0 -->` moeten zien staan.
+:::tip[Tip]
+
+Door de 'Code' of 'Raw' weergave van het README.md bestand te bekijken zou je bovenaan `<!-- @license CC0-1.0 -->` moeten zien staan.
+
+:::
 
 **🚩 Checkpoint**: Licentie documentatie
 
@@ -322,12 +338,6 @@ Help je mee hem door de Candidate stappen te krijgen?
 
 **🚩 Checkpoint**: Status
 
-## Over promotie
-
-Zet het checkpoint 'Promotie' op 'Done' of 'Scheduled' vóór de promotie heeft plaatsgevonden. Dit doen we omdat de status 'Community' pas zichtbaar wordt nadat alle checkpoint zijn behaald.
-
-**🚩 Checkpoint**: Promotie
-
 ## Informatie van de component bijgewerkt op nldesignsystem.nl
 
 ### Doel
@@ -335,6 +345,12 @@ Zet het checkpoint 'Promotie' op 'Done' of 'Scheduled' vóór de promotie heeft 
 <CommunityComponentWebsiteDoel />
 
 ### Actie
+
+:::tip[Tip]
+
+Voordat je de component progress gaat bijwerken is het handig om te controleren of alle checkpoints op het [Community bord](https://github.com/orgs/nl-design-system/projects/29/views/1) op groen staan. Checkpoints 'nldesignsystem.nl' en 'promotie' mag je nu ook alvast op 'Done' zetten.
+
+:::
 
 - Publiceer een nieuwe versie van het `component-progress` package: ga naar de [pull requests van de Index repository](https://github.com/nl-design-system/index/pulls) en zoek naar de pull request genaamd `docs(release): design system packages`. Approve en merge de pull request. Deze pull request word automatisch aangemaakt elke keer wanneer de vorige is gemerged.
 - Wacht tot [`@nl-design-system/component-progress` op npm](https://www.npmjs.com/package/@nl-design-system/component-progress) is bijgewerkt. Je kunt dit controleren door te kijken naar de datum bij `Last publish`.
