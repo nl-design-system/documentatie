@@ -373,7 +373,7 @@ export const NewsletterSignUp = ({
         <input type="hidden" name="a" value={laPostaId} />
         <input type="hidden" name="l" value={listId} />
         <input name="osnD9cWRI3" autoComplete="on" id="id-osnD9cWRI3" type="hidden" value="NLDS website" />
-        {/* honeypot */}
+        {/* Laposta honeypot, zie https://docs.laposta.org/wat-moet-ik-doen-aan-nep-aanmeldingen#beveiliging-per-soort-formulier en "Aanmeldformulier (kale html) - Spam beveiliging" https://app.laposta.nl/c.listconfig/s.memberforms/t.subscribe/v.raw/ */}
         <input
           autoComplete="new-password"
           type="email"
@@ -383,6 +383,7 @@ export const NewsletterSignUp = ({
           style={{ position: 'absolute', top: '-9999px', left: '-9999px' }}
         />
       </form>
+      {/* Laposta spam beveiliging, zie https://docs.laposta.org/wat-moet-ik-doen-aan-nep-aanmeldingen#beveiliging-per-soort-formulier en "Aanmeldformulier (kale html) - Spam beveiliging" https://app.laposta.nl/c.listconfig/s.memberforms/t.subscribe/v.raw/ */}
       <script src="https://nl-design-system.email-provider.eu/subscribe/check/validate.js"></script>
     </>
   );
