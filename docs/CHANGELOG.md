@@ -1,5 +1,11 @@
 # @nl-design-system-unstable/documentation
 
+## 2.2.0
+
+### Minor Changes
+
+- 9c7ee31: Verwijzing kleurcontrast verwijst naar richtlijnen rondom kleur in plaats van Paragraph component.
+
 ## 2.1.0
 
 ### Minor Changes
