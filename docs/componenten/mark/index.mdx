@@ -53,7 +53,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -66,13 +65,9 @@ import usage from "./_usage.md?raw";
 import tokens from "@nl-design-system-candidate/mark-tokens";
 
 export const title = "Mark";
-export const description =
-  "Markeert tekst, zodat je ernaar kan verwijzen vanuit een andere context of omdat de tekst relevant is voor de huidige activiteit.";
 export const issueNumber = 333;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 <ComponentAliases component={component} />
 

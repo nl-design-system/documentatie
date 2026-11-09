@@ -37,20 +37,16 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
 export const title = "Spinner";
-export const description = "Een animatie die aangeeft dat een proces nog bezig is, waardoor een deel van de pagina nog niet volledig is geladen of buttons niet bedienbaar zijn.";
 export const issueNumber = 75;
 export const relayStep = "help wanted";
 export const componentName = "spinner";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

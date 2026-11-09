@@ -29,7 +29,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -43,14 +42,11 @@ import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
 
 {/* Add name and description for the component */}
 export const title = "Note";
-export const description = "Visueel ondersteunend element dat de aandacht vestigt op aanvullende of belangrijke informatie.";
 export const issueNumber = 409;
 export const relayStep = "help wanted";
 export const componentName = "note";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 ## Checklist voor toegankelijkheid
 

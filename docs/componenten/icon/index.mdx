@@ -37,7 +37,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -50,12 +49,9 @@ import guidelines from "./\_guidelines.md?raw";
 
 {/* Add name and description for the component */}
 export const title = "Icon";
-export const description = "Grafisch symbool dat visueel informatie geeft over een actie, onderwerp of status.";
 export const issueNumber = 275;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 ## Checklist voor toegankelijkheid
 
