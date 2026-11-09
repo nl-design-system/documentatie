@@ -1,5 +1,5 @@
-import { Canvas } from './Canvas/Canvas';
-import type { CanvasContainerType } from './Canvas/Canvas';
+import { CanvasLegacy } from './Canvas/CanvasLegacy';
+import type { CanvasContainerType } from './Canvas/CanvasLegacy';
 import { ContrastRatio } from './ContrastRatio';
 import { Guideline } from './Guideline';
 import { Code, FormFieldTextbox, PageContent } from '@utrecht/component-library-react';
@@ -255,7 +255,7 @@ export const ContrastTool = () => {
               <div>
                 {dos.map(({ container, content, example, positive }, index) => (
                   <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content} figure>
-                    <Canvas
+                    <CanvasLegacy
                       language="html"
                       code={null}
                       displayCode={false}
@@ -273,7 +273,7 @@ export const ContrastTool = () => {
                       }}
                     >
                       {example}
-                    </Canvas>
+                    </CanvasLegacy>
                   </Guideline>
                 ))}
               </div>
@@ -288,7 +288,7 @@ export const ContrastTool = () => {
               <div>
                 {donts.map(({ container, content, example, positive }, index) => (
                   <Guideline key={index} appearance={positive ? 'do' : 'dont'} title={content}>
-                    <Canvas
+                    <CanvasLegacy
                       language="html"
                       code={null}
                       displayCode={false}
@@ -306,7 +306,7 @@ export const ContrastTool = () => {
                       }}
                     >
                       {example}
-                    </Canvas>
+                    </CanvasLegacy>
                   </Guideline>
                 ))}
               </div>

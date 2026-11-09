@@ -1,164 +1,103 @@
-import { CodeBlockSyntaxHighlighting } from '../CodeBlockSyntaxHighlighting';
-import { Document, Surface } from '@utrecht/component-library-react';
-import { Button } from '../../button/button.tsx';
-import { Paragraph } from '../../paragraph/paragraph';
-import { HTMLContent } from '@utrecht/component-library-react';
+import Prism from 'prismjs';
 import clsx from 'clsx';
-import prettierBabel from 'prettier/plugins/babel.mjs';
-import prettierESTree from 'prettier/plugins/estree.mjs';
-import prettierHTML from 'prettier/plugins/html.mjs';
-import prettierPostcss from 'prettier/plugins/postcss.mjs';
-import prettier from 'prettier/standalone';
-import type { CSSProperties, ElementType, PropsWithChildren, ReactNode } from 'react';
-import { isValidElement, useEffect, useId, useState } from 'react';
-import { Fragment } from 'react';
-import * as ReactDOMServer from 'react-dom/server';
+import { Accordion, AccordionSection } from '../../accordion/accordion';
+import { Button } from '../../button/button';
 import './Canvas.css';
-import { CanvasAstro } from './CanvasAstro';
+import '@utrecht/component-library-css/dist/html.css';
+import '@utrecht/root-css/dist/index.css';
+import { HTMLImage } from '../../html-image/html-image';
+import { useId, type CSSProperties, type ReactNode } from 'react';
+import { Root } from '@utrecht/root-react';
 
-export type CanvasContainerType = 'document' | 'paragraph' | 'surface';
-
-const ParagraphContainer = ({ children }: PropsWithChildren<object>) => (
-  <Surface className="nlds-canvas__example-surface">
-    <Document className={clsx('utrecht-document--surface', 'nlds-canvas__example-document')}>
-      <Paragraph className="nlds-canvas__example-paragraph">{children}</Paragraph>
-    </Document>
-  </Surface>
-);
-
-ParagraphContainer.displayName = 'ParagraphContainer';
-
-const DocumentContainer = ({ children }: PropsWithChildren<object>) => (
-  <Surface className="nlds-canvas__example-surface">
-    <Document className={clsx('utrecht-document--surface', 'nlds-canvas__example-document')}>{children}</Document>
-  </Surface>
-);
-DocumentContainer.displayName = 'DocumentContainer';
-
-const SurfaceContainer = ({ children }: PropsWithChildren<object>) => (
-  <Surface className="nlds-canvas__example-surface">{children}</Surface>
-);
-
-SurfaceContainer.displayName = 'SurfaceContainer';
-
+/**
+ * By default the contents of the example are rendered like regular HTML,
+ * following user preferences such as forced colors mode. Tweak this behavior
+ * when the example requires it. For example:
+ *
+ * - `forcedColorsAdjust={false}`
+ * - `colorScheme={light}`
+ * - `colorScheme={dark}`
+ */
 export interface CanvasProps {
-  defaultExpandedCode?: boolean;
-  displayCode?: boolean;
-  code?: string | ReactNode | (() => ReactNode);
-  children: ReactNode | (() => ReactNode);
   language: string;
-  copy?: boolean;
-  container?: string | CanvasContainerType;
-  designTokens?: CSSProperties;
   className?: string;
+  defaultExpandedCode?: boolean;
+  designTokens?: CSSProperties;
+  // Not rendered: `remark-canvas-fix` converts `{() => …}` children in MDX into `code`
+  children?: ReactNode;
+  code?: string;
+  rawCode?: string;
+  copyCode?: 'allow' | 'deny';
+  colorScheme?: 'dark' | 'light';
+  forcedColorsAdjust?: boolean;
+
+  /**
+   * Configure a `label` to render the contents as if it is an image with an alt-text.
+   * This is a great way to render an image of a design system component or pattern,
+   * while supporting dark mode, responsive layout and user preferences.
+   *
+   * The contents no longer be interactive when it is rendered as image.
+   */
+  label?: string;
 }
 
-export const Canvas = globalThis.isAstro
-  ? CanvasAstro
-  : ({
-      code,
-      copy = true,
-      defaultExpandedCode = false,
-      displayCode = true,
-      children,
-      container = 'document',
-      language,
-      designTokens,
-    }: CanvasProps) => {
-      // By default the `children` argument is converted to code.
-      const jsxTree = typeof children === 'function' ? children() : children;
-      // You can override the code from `children` with the `code` argument.
-      // The code argument can be a string, or JSX, or a function that generates JSX.
-      const codeJsxTree = typeof code === 'function' ? code() : isValidElement(code) ? code : undefined;
-      const unformattedCode =
-        typeof code === 'string' ? code : ReactDOMServer.renderToStaticMarkup(codeJsxTree || jsxTree);
-      const [exampleSourceCode, setExampleSourceCode] = useState(unformattedCode);
-      const [expandedSourceCode, setExpandedSourceCode] = useState(defaultExpandedCode);
+export const Canvas = ({
+  language,
+  className,
+  code = '<p>No code provided</p>',
+  rawCode,
+  copyCode,
+  colorScheme,
+  defaultExpandedCode,
+  designTokens,
+  forcedColorsAdjust = true,
+  label,
+}: CanvasProps) => {
+  const _code = typeof code === 'string' ? code : rawCode || '';
 
-      const toggleExpanded = () => {
-        setExpandedSourceCode(!expandedSourceCode);
-      };
+  const highlighed =
+    typeof code === 'string'
+      ? Prism.highlight(code, Prism.languages[language], language)
+      : Prism.highlight(rawCode || '', Prism.languages[language], language);
 
-      useEffect(() => {
-        const formatWithPrettier = async () => {
-          const exampleSourceCode = await prettier.format(unformattedCode, {
-            parser: language,
-            plugins: [prettierBabel, prettierESTree, prettierHTML, prettierPostcss],
-            semi: false,
-            singleAttributePerLine: true,
-            embeddedLanguageFormatting: 'off',
-            htmlWhitespaceSensitivity: 'ignore',
-          });
-          setExampleSourceCode(exampleSourceCode);
-        };
-        formatWithPrettier();
-      }, [unformattedCode]);
+  const example = (
+    <Root
+      Component="div"
+      className={clsx('ma-canvas__example', 'voorbeeld-theme', 'utrecht-html', 'ma-flow', {
+        'ma-canvas__example--color-scheme-dark': colorScheme === 'dark',
+        'ma-canvas__example--color-scheme-light': colorScheme === 'light',
+      })}
+      style={designTokens as CSSProperties}
+      dangerouslySetInnerHTML={{ __html: _code }}
+    ></Root>
+  );
 
-      const codeBlockId = useId();
+  return (
+    <div className={clsx('ma-canvas', className)}>
+      {/* Live preview */}
+      {label ? (
+        <HTMLImage forcedColorsAdjust={forcedColorsAdjust} label={label} labelId={label ? useId() : undefined}>
+          {example}
+        </HTMLImage>
+      ) : (
+        example
+      )}
 
-      const copyCode = () => {
-        navigator.clipboard.writeText(exampleSourceCode).catch((err) => console.error('Copy code failed', err));
-      };
+      {/* Highlighted code example */}
+      <Accordion>
+        <AccordionSection label="Code" open={defaultExpandedCode}>
+          <pre className="language-html nl-code-block" tabIndex={0}>
+            <code className="language-html nl-code-block__code" dangerouslySetInnerHTML={{ __html: highlighed }} />
+          </pre>
 
-      let Container: ElementType = Fragment;
-
-      if (container === 'paragraph') {
-        Container = ParagraphContainer;
-      } else if (container === 'document') {
-        Container = DocumentContainer;
-      } else if (container === 'surface') {
-        Container = SurfaceContainer;
-      }
-
-      return (
-        <div className={clsx('nlds-canvas')}>
-          {jsxTree && (
-            <div className={clsx('nlds-canvas__example')}>
-              <div className="voorbeeld-theme" style={designTokens}>
-                <Container>
-                  <HTMLContent>{jsxTree}</HTMLContent>
-                </Container>
-              </div>
-            </div>
+          {/* Because of the arrow function syntax, the <Canvas> element can not be clientside rendered with client:load. therefore, the javascript allowing to copy the code is included in the `document.astro` file as a <script> element */}
+          {copyCode === 'allow' && (
+            <Button data-copy-code={_code} purpose="secondary">
+              Kopieer code
+            </Button>
           )}
-          {displayCode && (
-            <div className={clsx('nlds-canvas__toolbar')}>
-              <Button
-                className={clsx('nlds-canvas__button', 'nlds-canvas__toggle-code-button')}
-                purpose="subtle"
-                onClick={toggleExpanded}
-                aria-expanded={expandedSourceCode}
-                aria-controls={codeBlockId}
-              >
-                {!expandedSourceCode ? 'Bekijk code' : 'Verberg code'}
-              </Button>
-            </div>
-          )}
-          {displayCode && (
-            <div
-              className={clsx('nlds-canvas__code-block', !copy && 'nlds-canvas__code-block--user-select-none')}
-              id={codeBlockId}
-              hidden={!expandedSourceCode}
-            >
-              <CodeBlockSyntaxHighlighting
-                codeBlockLabel={'Codevoorbeeld'}
-                syntax={language}
-                textContent={exampleSourceCode}
-                trim
-              />
-              {copy && (
-                <div className={clsx('nlds-canvas__toolbar', 'nlds-canvas__toolbar--copy')}>
-                  <Button
-                    className={clsx('nlds-canvas__button', 'nlds-canvas__copy-button')}
-                    purpose="subtle"
-                    onClick={copyCode}
-                  >
-                    Kopieer
-                  </Button>
-                </div>
-              )}
-            </div>
-          )}
-        </div>
-      );
-    };
+        </AccordionSection>
+      </Accordion>
+    </div>
+  );
+};
