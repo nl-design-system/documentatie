@@ -39,7 +39,7 @@ const cspProdConfig: AstroUserConfig = {
         resources: ["'self'", siteBaseUrl],
       },
       scriptDirective: {
-        resources: ["'self'", siteBaseUrl],
+        resources: ["'self'", siteBaseUrl, 'https://nl-design-system.email-provider.eu'],
       },
       directives: [
         `base-uri 'self' ${siteBaseUrl}`,
