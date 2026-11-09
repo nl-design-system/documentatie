@@ -381,6 +381,8 @@ export const NewsletterSignUp = ({
           name="email"
           placeholder="Your e-mail here"
           style={{ position: 'absolute', top: '-9999px', left: '-9999px' }}
+          aria-hidden="true"
+          tabIndex={-1}
         />
       </form>
       {/* Laposta spam beveiliging, zie https://docs.laposta.org/wat-moet-ik-doen-aan-nep-aanmeldingen#beveiliging-per-soort-formulier en "Aanmeldformulier (kale html) - Spam beveiliging" https://app.laposta.nl/c.listconfig/s.memberforms/t.subscribe/v.raw/ */}
