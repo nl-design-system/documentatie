@@ -110,7 +110,6 @@
     "prism-react-renderer": "2.4.1",
     "prismjs": "1.30.0",
     "react-hook-form": "7.71.1",
-    "react-lite-youtube-embed": "3.5.1",
     "react-markdown": "10.1.0",
     "unist-util-visit": "5.1.0"
   },
