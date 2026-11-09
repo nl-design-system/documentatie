@@ -55,7 +55,7 @@ Als enig deel van de Afstandsverklaring onder het toepasselijke recht, om wat vo
 
 ---
 
-<aside class="utrecht-spotlight-section">
+<aside class="utrecht-note">
   <p class="utrecht-paragraph">NL Design System gebruikt de CC0 Universal licentie voor documentatie. Onze bedoeling met deze licentie is dat je onze documentatie overal mag delen, dat je de teksten gratis voor eigen doeleinden mag gebruiken, dat je de documentatie mag doorontwikkelen zonder rekening te houden met copyright, en zodat je niet bij een klein stukje tekst altijd een grote lijst met mensen credit moet geven.</p>
   <p class="utrecht-paragraph">Bovenin Markdown-bestanden is deze licentie aangegeven met:</p>
   <pre class="utrecht-code-block"><code class="utrecht-code-block__content">&lt;!-- @license CC0-1.0 --></code></pre>
