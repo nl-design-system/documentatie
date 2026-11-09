@@ -5,8 +5,8 @@ import { Heading, HeadingProps } from '../heading/heading';
 import { Paragraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
 import { BrandIcon } from './BrandIcon';
-import { Card, CardContent, CardGroup } from './CardGroup';
-import { Card as RhcCard } from '../card/card';
+import { CardGroup } from './CardGroup';
+import { Card } from '../card/card';
 import { ComponentProgress } from './ComponentProgress';
 import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
 import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
@@ -83,8 +83,8 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
             ({ name, value }) => urlMap.has(name) && URL.canParse(value) && new URL(value).protocol === 'https:',
           );
 
-          return globalThis.isAstro ? (
-            <RhcCard
+          return (
+            <Card
               key={project.title}
               heading={project.title.replace(/^Community/i, '')}
               headingLevel={headingLevel}
@@ -135,57 +135,6 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                 </div>
               }
             />
-          ) : (
-            <Card key={project.title} className="ma-implementation-card">
-              <CardContent>
-                <Heading level={headingLevel}>{project.title.replace(/^Community/i, '')}</Heading>
-                <Paragraph>
-                  <ComponentProgress
-                    checked={project.progress.value}
-                    unchecked={project.progress.max - project.progress.value}
-                  />
-                  {project.progress.value} van {project.progress.max} stappen gedocumenteerd op het{' '}
-                  <Link href={project.url}>{project.title} projectbord</Link>
-                </Paragraph>
-                {(links.length > 0 || frameworks.length > 0) && (
-                  <Heading level={(headingLevel + 1) as HeadingProps['level']}>Snel aan de slag</Heading>
-                )}
-                {links.length > 0 && (
-                  <>
-                    <LinkList
-                      links={links
-                        .filter((item) => !!urlMap.get(item.name))
-                        .map((item) => {
-                          const url = urlMap.get(item.name);
-                          return {
-                            children: url.desciption,
-                            icon: <BrandIcon brand={url.brand} />,
-                            href: item.value,
-                          };
-                        })}
-                    />
-                  </>
-                )}
-                {frameworks.length > 0 && (
-                  <>
-                    {frameworks.map(({ frameworkName, tasks }) => (
-                      <>
-                        <Heading level={(headingLevel + 2) as HeadingProps['level']}>
-                          {alias} in {frameworkName}
-                        </Heading>
-                        <LinkList
-                          links={tasks.map((frameworkTask) => ({
-                            children: frameworkTask.description,
-                            icon: <BrandIcon brand={frameworkTask.brand} />,
-                            href: frameworkTask.value,
-                          }))}
-                        />
-                      </>
-                    ))}
-                  </>
-                )}
-              </CardContent>
-            </Card>
           );
         })}
     </CardGroup>
