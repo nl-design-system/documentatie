@@ -53,7 +53,6 @@ import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
 import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
 import Usage from "./\_usage.md";
 
-import { ComponentAliases } from "@nl-design-system-community/documentation-components/src/components/ComponentAliases";
 import { DesignTokens } from "@nl-design-system-community/documentation-components/src/components/DesignTokens";
 
 import tokens from "@nl-design-system-candidate/form-field-description-tokens";
@@ -62,8 +61,6 @@ export const title = "Form Field Description";
 export const issueNumber = 174;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<ComponentAliases component={component} />
 
 <Card className="ma-implementation-card">
   <CardContent>
