@@ -3,7 +3,7 @@
   "installCommand": "pnpm install --frozen-lockfile",
   "buildCommand": "pnpm run build",
   "framework": null,
-  "outputDirectory": "packages/website/dist/",
+  "outputDirectory": "apps/nldesignsystem.nl/dist/",
   "git": {
     "deploymentEnabled": {
       "dependabot/*": false,

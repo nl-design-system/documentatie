@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 
-const sitemapDirAstro = path.resolve('./packages/website/dist');
+const sitemapDirAstro = path.resolve('./apps/nldesignsystem.nl/dist');
 const sitemapDirDocusaurus = path.resolve('./build');
 
 const astroUrls = new Set();

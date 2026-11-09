@@ -125,7 +125,9 @@ export default defineConfig({
         },
         {
           find: '@nl-design-system-community/documentation-components/src/components/Markdown',
-          replacement: fileURLToPath(new URL('../documentation-components/src/markdown/markdown.ts', import.meta.url)),
+          replacement: fileURLToPath(
+            new URL('../../packages/documentation-components/src/markdown/markdown.ts', import.meta.url),
+          ),
         },
       ],
     },
