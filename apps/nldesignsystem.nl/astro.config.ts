@@ -62,8 +62,6 @@ const cspConfig = process.env['NODE_ENV'] === 'development' ? cspDevConfig : csp
 // generation of the content collections.
 globalThis.unlistedPages = new Set();
 
-globalThis.isAstro = true;
-
 const mdxClientLoad = clientLoadPlugin(['Checklist', 'DesignTokens', 'NewsletterSignUp']);
 
 const markdownProcessor = unified({
