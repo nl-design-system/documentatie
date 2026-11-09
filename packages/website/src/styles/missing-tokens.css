@@ -36,38 +36,6 @@
   --ma-layout-overview-content-padding-inline-start: var(--basis-space-inline-xl);
   --ma-layout-overview-content-padding-block-end: var(--basis-space-block-6xl);
   --ma-layout-overview-content-padding-block-start: var(--basis-space-block-xl);
-  --ma-code-block-color: var(--basis-color-default-inverse-color-default);
-  --ma-code-block-background-color: var(--basis-color-default-inverse-bg-subtle);
-  --ma-code-block-atrule-color: rgb(189 139 255);
-  --ma-code-block-attr-color-name: rgb(173 219 103);
-  --ma-code-block-attr-color-value: rgb(255 203 139);
-  --ma-code-block-boolean-color: rgb(255 88 116);
-  --ma-code-block-builtin-color: rgb(130 170 255);
-  --ma-code-block-cdata-color: rgb(130 155 155);
-  --ma-code-block-char-color: rgb(130 170 255);
-  --ma-code-block-class-color-name: rgb(139 214 255);
-  --ma-code-block-comment-color: rgb(130 155 155);
-  --ma-code-block-constant-color: rgb(130 170 255);
-  --ma-code-block-deleted-color: rgb(255 88 116);
-  --ma-code-block-doctype-color: rgb(199 146 234);
-  --ma-code-block-entity-color: rgb(173 219 103);
-  --ma-code-block-function-color: rgb(130 170 255);
-  --ma-code-block-important-color: rgb(214 222 235);
-  --ma-code-block-inserted-color: rgb(173 219 103);
-  --ma-code-block-keyword-color: rgb(214 222 235);
-  --ma-code-block-namespace-color: rgb(178 204 214);
-  --ma-code-block-number-color: rgb(247 140 108);
-  --ma-code-block-operator-color: rgb(127 219 202);
-  --ma-code-block-prolog-color: rgb(130 155 155);
-  --ma-code-block-property-color: rgb(128 203 196);
-  --ma-code-block-punctuation-color: rgb(199 146 234);
-  --ma-code-block-regex-color: rgb(214 222 235);
-  --ma-code-block-selector-color: rgb(199 146 234);
-  --ma-code-block-string-color: rgb(111 211 206);
-  --ma-code-block-symbol-color: rgb(128 203 196);
-  --ma-code-block-tag-color: rgb(127 219 202);
-  --ma-code-block-url-color: rgb(173 219 103);
-  --ma-code-block-variable-color: rgb(214 222 235);
 }
 
 /**
