@@ -4,6 +4,7 @@
   "include": ["test/**/*.ts", "test/**/*.tsx", "test/*.ts"],
   "exclude": ["**/node_modules/*", "**/*.test.ts", "test/docs/ContentTestOverview.tsx"],
   "compilerOptions": {
-    "lib": ["DOM"]
+    "lib": ["DOM", "ESNext"],
+    "noEmit": true
   }
 }
