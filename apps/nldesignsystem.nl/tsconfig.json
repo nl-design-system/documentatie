@@ -1,24 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": ["astro/tsconfigs/strict", "@nl-design-system/tsconfig"],
+  "extends": ["astro/tsconfigs/strict", "../../tsconfig.json"],
   "include": [".astro/types.d.ts", "src/**/*", "scripts/**/*"],
   "exclude": ["dist", "node_modules"],
   "compilerOptions": {
-    "baseUrl": ".",
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
     "paths": {
-      "@docs/*": ["../../docs/*"],
-      "@site/*": ["../../*"],
-      "@theme/*": ["../../src/theme/*"],
-      "@nl-design-system-community/documentation-components/src/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@pages/*": ["src/pages/*"],
-      "@utils/*": ["src/utils/*"]
+      "@layouts/*": ["./src/layouts/*"],
+      "@utils/*": ["./src/utils/*"]
     },
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
-    "checkJs": true,
-    "moduleResolution": "nodenext",
-    "skipLibCheck": true
+    "checkJs": true
   }
 }
