@@ -61,7 +61,7 @@ export const ComponentCard = ({
         </div>
         {href && (
           <Paragraph>
-            <Link className="utrecht-link" href={appendTrailingSlash(href)}>
+            <Link href={appendTrailingSlash(href)}>
               Bekijk <span className="w">{name}</span> component
             </Link>
           </Paragraph>
