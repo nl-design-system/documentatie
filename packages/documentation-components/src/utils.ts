@@ -1,5 +1,5 @@
 import packageJson from '../../../package.json';
-import { HeadingProps } from './heading/heading';
+import { HeadingProps } from './heading/heading.tsx';
 
 export const COMPONENT_STATES = {
   UNKNOWN: 'Todo',

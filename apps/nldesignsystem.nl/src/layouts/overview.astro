@@ -4,15 +4,15 @@ import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-} from '@nl-design-system-community/documentation-components/src/breadcrumb-nav/breadcrumb-nav';
-import { IconChevronRight } from '@nl-design-system-community/documentation-components/src/functional-icon';
+} from '@nl-design-system-community/documentation-components/src/breadcrumb-nav/breadcrumb-nav.tsx';
+import { IconChevronRight } from '@nl-design-system-community/documentation-components/src/functional-icon/index.tsx';
 import { SideNavigation } from '@nl-design-system-community/documentation-components/src/side-navigation/side-navigation.tsx';
 import { navigation } from '../navigation.config.ts';
 import { getBreadcrumbsForElement } from '@nl-design-system-community/documentation-index/src/navigation/get-breadcrumbs-for-element.ts';
 import './overview.css';
-import { withCurrentIndication } from '@nl-design-system-community/documentation-index/src/navigation/with-current-indication';
-import { serialiseNavigationTree } from '@nl-design-system-community/documentation-index/src/navigation/serialise-navigation-tree';
-import { i18n } from '@nl-design-system-community/documentation-i18n/src/index';
+import { withCurrentIndication } from '@nl-design-system-community/documentation-index/src/navigation/with-current-indication.ts';
+import { serialiseNavigationTree } from '@nl-design-system-community/documentation-index/src/navigation/serialise-navigation-tree.ts';
+import { i18n } from '@nl-design-system-community/documentation-i18n/src/index.ts';
 
 export type Props = DocumentProps;
 

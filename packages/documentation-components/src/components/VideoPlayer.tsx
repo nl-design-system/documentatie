@@ -1,5 +1,5 @@
-import { i18n } from '@nl-design-system-community/documentation-i18n/src/index';
-import { Image } from '../image/image';
+import { i18n } from '@nl-design-system-community/documentation-i18n/src/index.ts';
+import { Image } from '../image/image.tsx';
 import './VideoPlayer.css';
 
 interface VideoPlayerProps {

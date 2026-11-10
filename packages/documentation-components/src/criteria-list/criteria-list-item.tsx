@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
-import { Card } from '../card/card';
-import { UnorderedList } from '../unordered-list/unordered-list';
-import { DataBadge } from '../data-badge/data-badge';
-import { Link } from '../link/link';
+import { Card } from '../card/card.tsx';
+import { UnorderedList } from '../unordered-list/unordered-list.tsx';
+import { DataBadge } from '../data-badge/data-badge.tsx';
+import { Link } from '../link/link.tsx';
 
 interface CriteriaListItemProps {
   title: string;

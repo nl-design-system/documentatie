@@ -3,8 +3,8 @@ import '@nl-design-system-candidate/button-css/button.css';
 import clsx from 'clsx';
 import { forwardRef } from 'react';
 import type { HTMLAttributes, ReactNode, ElementType } from 'react';
-import { IconChevronDown } from '../functional-icon';
-import { Icon } from '../icon/icon';
+import { IconChevronDown } from '../functional-icon/index.tsx';
+import { Icon } from '../icon/icon.tsx';
 import { Heading, type HeadingProps } from '@nl-design-system-candidate/heading-react';
 import './accordion.css';
 

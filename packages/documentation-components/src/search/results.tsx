@@ -1,6 +1,6 @@
 import type { SearchResult } from './types.js';
-import { UnorderedList } from '../unordered-list/unordered-list';
-import { Card } from '../card/card';
+import { UnorderedList } from '../unordered-list/unordered-list.tsx';
+import { Card } from '../card/card.tsx';
 import DOMPurify from 'dompurify';
 import { Heading } from '@nl-design-system-candidate/heading-react';
 

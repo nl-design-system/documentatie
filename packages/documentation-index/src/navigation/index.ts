@@ -1,10 +1,10 @@
 import { relative, resolve, sep } from 'node:path';
 import { readdir } from 'node:fs/promises';
 import type { Dirent } from 'node:fs';
-import { sortItems } from './sort-items';
-export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element';
-export { getMainNavigation } from './get-main-navigation';
-export { getNavigationElement } from './get-navigation-element';
+import { sortItems } from './sort-items.ts';
+export { getBreadcrumbsForElement } from './get-breadcrumbs-for-element.ts';
+export { getMainNavigation } from './get-main-navigation.ts';
+export { getNavigationElement } from './get-navigation-element.ts';
 
 interface AstroMetadata {
   [key: string]: unknown;

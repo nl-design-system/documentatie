@@ -1,5 +1,5 @@
 import { Link as CandidateLink, type LinkProps } from '@nl-design-system-candidate/link-react';
-import { hasFileExtension } from '../utils';
+import { hasFileExtension } from '../utils.ts';
 import type { PropsWithChildren } from 'react';
 
 import '@nl-design-system-candidate/link-css/link.css';

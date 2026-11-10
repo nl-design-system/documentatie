@@ -1,13 +1,13 @@
-import { Code } from '../code/code';
-import { DataBadge } from '../data-badge/data-badge';
-import type { TokenNode } from '../utils';
+import { Code } from '../code/code.tsx';
+import { DataBadge } from '../data-badge/data-badge.tsx';
+import type { TokenNode } from '../utils.ts';
 import {
   getTokenPaths,
   sortTokenPaths,
   tokenAtPath,
   tokenPathToCSSCustomProperty,
   tokenPathToDottedTokenPath,
-} from '../utils';
+} from '../utils.ts';
 import {
   PreserveData,
   Table,
@@ -17,10 +17,10 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react';
-import { ActionGroup } from '../action-group/action-group';
-import { CopyButton } from './CopyButton';
-import type { IconType } from './TokenIcon';
-import { TokenIcon } from './TokenIcon';
+import { ActionGroup } from '../action-group/action-group.tsx';
+import { CopyButton } from './CopyButton.tsx';
+import type { IconType } from './TokenIcon.tsx';
+import { TokenIcon } from './TokenIcon.tsx';
 import type { BaseDesignToken } from '@nl-design-system-community/design-tokens-schema';
 import { cloneDeepWith } from 'es-toolkit/object';
 

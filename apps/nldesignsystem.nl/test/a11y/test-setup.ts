@@ -1,6 +1,6 @@
 import { AxeBuilder } from '@axe-core/playwright';
 import { writeFile } from 'fs/promises';
-import { exclusions, exclusionGroups, skippedRoutes, type RouteExclusion } from './a11y-exclusions';
+import { exclusions, exclusionGroups, skippedRoutes, type RouteExclusion } from './a11y-exclusions.ts';
 import type { Page } from '@playwright/test';
 
 export async function analyzeAccessibility(page: Page, disabledRules: string[]) {
@@ -80,7 +80,7 @@ export function getExcludedViolationIds(pathname: string): RegExp[] {
   return excluded;
 }
 
-export { getPathnamesFromSitemap } from '../helpers/sitemap';
+export { getPathnamesFromSitemap } from '../helpers/sitemap.ts';
 
 export function shouldSkipRoute(pathname: string): boolean {
   return skippedRoutes.some((route) => {

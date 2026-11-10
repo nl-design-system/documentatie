@@ -1,5 +1,5 @@
-import { isNavigationGroup, type NavigationGroup, type NavigationRoot } from '.';
-import { getNavigationElement } from './get-navigation-element';
+import { isNavigationGroup, type NavigationGroup, type NavigationRoot } from './index.ts';
+import { getNavigationElement } from './get-navigation-element.ts';
 
 function markExpanded(group: NavigationGroup) {
   if (group.href !== '/') {

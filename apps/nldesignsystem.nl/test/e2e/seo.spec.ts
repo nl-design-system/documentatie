@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { siteBaseUrl, siteTitle, siteName, twitterCard } from '../../src/seo.config.ts';
-import { getPathnamesFromSitemap } from '../helpers/sitemap';
+import { getPathnamesFromSitemap } from '../helpers/sitemap.ts';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',

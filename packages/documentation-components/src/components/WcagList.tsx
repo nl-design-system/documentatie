@@ -1,9 +1,9 @@
-import { Heading, type HeadingProps } from '../heading/heading';
-import { Link } from '../link/link';
-import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon';
-import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
+import { Link } from '../link/link.tsx';
+import { Icon } from '@nl-design-system-community/documentation-components/src/icon/icon.tsx';
+import { IconCheck } from '@nl-design-system-community/documentation-components/src/functional-icon/index.tsx';
 import clsx from 'clsx';
-import { successCriteriaMap } from './wcag22';
+import { successCriteriaMap } from './wcag22.ts';
 import './TaskList.css';
 
 export interface WcagListItemProps {

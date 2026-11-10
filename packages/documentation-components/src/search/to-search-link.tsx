@@ -1,7 +1,7 @@
-import { Icon } from '../icon/icon';
-import { IconSearch } from '../functional-icon';
+import { Icon } from '../icon/icon.tsx';
+import { IconSearch } from '../functional-icon/index.tsx';
 import '@nl-design-system-candidate/button-css/button.css';
-import { i18n, type I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index';
+import { i18n, type I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index.ts';
 
 export interface ToSearchLinkProps {
   lang: I18nLanguages;

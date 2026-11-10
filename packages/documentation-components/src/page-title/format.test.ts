@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { formatTitle } from './format';
+import { formatTitle } from './format.ts';
 
 describe('Formatting of document title', () => {
   test('uses only the website when there is no page title', () => {

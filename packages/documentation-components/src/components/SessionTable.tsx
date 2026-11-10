@@ -1,7 +1,7 @@
-import { IconCalendarEvent, IconUser } from '../functional-icon';
-import { Paragraph } from '../paragraph/paragraph';
-import { ButtonLink } from '../button-link/button-link';
-import { Link } from '../link/link';
+import { IconCalendarEvent, IconUser } from '../functional-icon/index.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { ButtonLink } from '../button-link/button-link.tsx';
+import { Link } from '../link/link.tsx';
 import {
   Table,
   TableBody,
@@ -11,8 +11,8 @@ import {
   TableHeaderCell,
   TableRow,
 } from '@utrecht/component-library-react';
-import { Icon } from '../icon/icon';
-import { Heading, type HeadingProps } from '../heading/heading';
+import { Icon } from '../icon/icon.tsx';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
 import './SessionTable.css';

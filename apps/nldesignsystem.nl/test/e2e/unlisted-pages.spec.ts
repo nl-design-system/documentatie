@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { parseFrontmatter, ParseFrontmatterResult } from '@astrojs/markdown-remark';
 import { globSync } from 'glob';
-import { getPathnamesFromSitemap } from '../helpers/sitemap';
+import { getPathnamesFromSitemap } from '../helpers/sitemap.ts';
 
 const sourcefiles = globSync('docs/**/*.{md,mdx}')
   .filter((sourcefile) => sourcefile.includes('_') === false)

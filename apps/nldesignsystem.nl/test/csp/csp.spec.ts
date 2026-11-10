@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
-import { getPathnamesFromSitemap } from '../helpers/sitemap';
+import { getPathnamesFromSitemap } from '../helpers/sitemap.ts';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',

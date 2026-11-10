@@ -1,12 +1,12 @@
-import { Link } from '../link/link';
+import { Link } from '../link/link.tsx';
 import { BadgeList, DataBadge } from '@utrecht/component-library-react';
-import { Heading } from '../heading/heading';
-import { Paragraph } from '../paragraph/paragraph';
+import { Heading } from '../heading/heading.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
-import { Card, CardContent, CardIllustration } from './CardGroup';
-import { ComponentIllustration } from '../component-illustration/component-illustration';
-import { EstafetteBadge } from './EstafetteBadge';
+import { Card, CardContent, CardIllustration } from './CardGroup.tsx';
+import { ComponentIllustration } from '../component-illustration/component-illustration.tsx';
+import { EstafetteBadge } from './EstafetteBadge.tsx';
 import './ComponentCard.css';
 
 interface ComponentCardProps {

@@ -8,14 +8,14 @@ import {
   FormLabel,
   Textarea,
 } from '@utrecht/component-library-react';
-import { Textbox } from '../textbox/textbox';
-import { Button } from '../button/button';
-import { ActionGroup } from '../action-group/action-group';
-import { Paragraph } from '../paragraph/paragraph';
+import { Textbox } from '../textbox/textbox.tsx';
+import { Button } from '../button/button.tsx';
+import { ActionGroup } from '../action-group/action-group.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import type { PropsWithChildren } from 'react';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import { useIsBrowser } from '../hooks/use-is-browser';
+import { useIsBrowser } from '../hooks/use-is-browser.ts';
 import clsx from 'clsx';
 
 interface NewsletterSignUpProps {

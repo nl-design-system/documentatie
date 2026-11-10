@@ -3,7 +3,7 @@ import type { CodeBlockProps } from '@utrecht/component-library-react';
 import { Highlight } from 'prism-react-renderer';
 import { useContext, useId } from 'react';
 import type { PropsWithChildren, ReactNode } from 'react';
-import { CodeExampleContext } from './Guideline';
+import { CodeExampleContext } from './Guideline.tsx';
 
 export interface CodeBlockSyntaxHighlightingProps extends CodeBlockProps {
   lineNumber?: boolean;
