@@ -25,7 +25,7 @@
     "build": "pnpm run --recursive build",
     "build:astro": "pnpm --filter @nl-design-system/website run build",
     "clean": "npm-run-all clean:**",
-    "clean:generated": "rimraf .docusaurus/ build/ dist/ tmp/",
+    "clean:generated": "rimraf dist/ tmp/",
     "clean:workspaces": "pnpm run --recursive clean",
     "serve": "pnpm --filter @nl-design-system/website run preview",
     "serve:test-report": "pnpm exec playwright show-report tmp/playwright-html-report",
