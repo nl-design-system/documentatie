@@ -9,7 +9,7 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config(
   {
     name: 'nl-design-system/global-ignores',
-    ignores: ['**/dist/', '**/build/', '**/coverage/', '**/.docusaurus/', '**/.astro', '**/src/theme/SearchBar/'],
+    ignores: ['**/dist/', '**/coverage/', '**/.astro'],
   },
   {
     name: 'nl-design-system/plugins-settings',
