@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Voeg een linktekst toe, of verwijder de link.
+Schrijf een linktekst die zegt waar de link naartoe gaat.

@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor dat de linktekst beschrijft waar de bezoeker naartoe gaat.
+Schrijf in de linktekst waar de link naartoe gaat, bijvoorbeeld de naam van de pagina.

@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-Zorg ervoor de link duidelijk herkenbaar is, bijvoorbeeld door de linktekst te onderstrepen.
+Onderstreep de link, zodat bezoekers zien dat ze erop kunnen klikken.

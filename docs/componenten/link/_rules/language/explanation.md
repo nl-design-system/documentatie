@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-De linktekst heeft een andere taal dan de tekst er omheen, maar dat is niet aangegeven. Een screenreader leest de tekst daarom niet voor in de taal van de tekst.
+De linktekst is in een andere taal dan de pagina, maar die taal is niet ingesteld. Een screenreader spreekt de woorden dan uit alsof ze in de taal van de pagina zijn, en dus verkeerd.
