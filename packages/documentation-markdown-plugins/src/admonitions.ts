@@ -1,3 +1,6 @@
+import type { Root } from 'mdast';
+import type {} from 'remark-directive';
+import type {} from 'mdast-util-to-hast';
 import { visit } from 'unist-util-visit';
 
 const TYPES = { tip: 'tip', info: 'info', note: 'note', caution: 'caution', danger: 'danger', warning: 'warning' };
@@ -15,10 +18,10 @@ const MAP = {
  * the admonition into an Utrecht Note
  */
 export function remarkAdmonitions() {
-  return (tree) => {
+  return (tree: Root) => {
     visit(tree, (node) => {
       if (node.type !== 'containerDirective') return;
-      if (!TYPES[node.name]) return;
+      if (!Object.hasOwn(TYPES, node.name)) return;
 
       const data = node.data || (node.data = {});
       data.hName = 'div';
@@ -27,8 +30,9 @@ export function remarkAdmonitions() {
         className: ['utrecht-note', `utrecht-note--${MAP[node.name]}`],
       };
 
-      if (node.children[0]?.data?.directiveLabel) {
-        node.children[0].data.hName = 'strong';
+      const label = node.children[0];
+      if (label?.type === 'paragraph' && label.data?.directiveLabel) {
+        label.data.hName = 'strong';
       }
     });
   };

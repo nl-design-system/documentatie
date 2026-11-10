@@ -1054,6 +1054,12 @@ importers:
       '@types/mdast':
         specifier: 4.0.4
         version: 4.0.4
+      mdast-util-mdx-expression:
+        specifier: 2.0.0
+        version: 2.0.0(supports-color@7.2.0)
+      mdast-util-to-hast:
+        specifier: 13.2.1
+        version: 13.2.1
       vfile:
         specifier: 6.0.3
         version: 6.0.3

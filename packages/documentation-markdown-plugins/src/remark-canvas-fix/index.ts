@@ -2,6 +2,7 @@ import type { Root } from 'mdast';
 import { visit } from 'unist-util-visit';
 import prettierSync from '@prettier/sync';
 import type { MdxJsxAttribute, MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
+import type {} from 'mdast-util-mdx-expression';
 
 /**
  * The Canvas component used in Docusaurus depends on a function providing the
@@ -31,8 +32,8 @@ export function remarkCanvasFix() {
       }
     });
 
-    visit(tree, 'mdxFlowExpression', (node: Root, _, parent) => {
-      if (parent.type !== 'mdxJsxFlowElement' || parent.name !== 'Canvas') return;
+    visit(tree, 'mdxFlowExpression', (node, _, parent) => {
+      if (!parent || parent.type !== 'mdxJsxFlowElement' || parent.name !== 'Canvas') return;
 
       const parentNode = parent;
 
