@@ -27,7 +27,8 @@
     "./*": "./*"
   },
   "dependencies": {
-    "@nl-design-system/component-progress": "1.1.12",
+    "@nl-design-system-candidate/button-docs": "1.0.2",
+    "@nl-design-system-candidate/button-tokens": "1.0.0",
     "@nl-design-system-candidate/code-block-docs": "1.2.1",
     "@nl-design-system-candidate/code-block-tokens": "2.0.3",
     "@nl-design-system-candidate/code-docs": "1.1.2",
@@ -36,8 +37,6 @@
     "@nl-design-system-candidate/color-sample-tokens": "2.0.3",
     "@nl-design-system-candidate/data-badge-docs": "1.2.0",
     "@nl-design-system-candidate/data-badge-tokens": "2.0.3",
-    "@nl-design-system-candidate/button-docs": "1.0.2",
-    "@nl-design-system-candidate/button-tokens": "1.0.0",
     "@nl-design-system-candidate/form-field-description-tokens": "1.0.0",
     "@nl-design-system-candidate/form-field-error-message-tokens": "1.0.0",
     "@nl-design-system-candidate/heading-1-docs": "1.0.2",
@@ -61,6 +60,7 @@
     "@nl-design-system-candidate/skip-link-tokens": "1.0.4",
     "@nl-design-system-community/documentation-components": "workspace:*",
     "@nl-design-system-unstable/basis-design-tokens": "3.1.1",
+    "@nl-design-system/component-progress": "1.1.14",
     "clsx": "2.1.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"

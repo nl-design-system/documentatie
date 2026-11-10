@@ -261,8 +261,8 @@ importers:
         specifier: 14.0.1
         version: 14.0.1
       '@nl-design-system/component-progress':
-        specifier: 1.1.12
-        version: 1.1.12
+        specifier: 1.1.14
+        version: 1.1.14
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
@@ -670,8 +670,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       '@nl-design-system/component-progress':
-        specifier: 1.1.12
-        version: 1.1.12
+        specifier: 1.1.14
+        version: 1.1.14
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -977,8 +977,8 @@ importers:
         specifier: 7.1.1
         version: 7.1.1(@types/node@24.10.9)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(esbuild@0.27.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.97.3)(tsx@4.21.0)(yaml@2.9.1)
       '@nl-design-system/component-progress':
-        specifier: 1.1.12
-        version: 1.1.12
+        specifier: 1.1.14
+        version: 1.1.14
       '@testing-library/dom':
         specifier: 10.4.2
         version: 10.4.2
@@ -2698,8 +2698,8 @@ packages:
   '@nl-design-system-unstable/voorbeeld-design-tokens@14.0.1':
     resolution: {integrity: sha512-a5HuEqczeXqfg1nR3sVJe/N71EKa77Zvsm9ov8qwGGeAAgAGeKzQMc867XchZ2lrAMa7lY7QrnjwpjOFUmbaDw==}
 
-  '@nl-design-system/component-progress@1.1.12':
-    resolution: {integrity: sha512-qz8eH2TyvCeVgEZgFynf9xMy9Oo+TJ54nC6o2MBfpDzfkU0/9VEusuqn2IydMtiopvAlMnClpma93/3i2BALOQ==}
+  '@nl-design-system/component-progress@1.1.14':
+    resolution: {integrity: sha512-+PCZSH6tkRwWO9PCuDwTIkJaz718iV1dRAAVed+/0nOV1nSKVgU7l+isAwP2TdIS12kgTPmCI9r5tWQ/xdCiJg==}
 
   '@nl-design-system/eslint-config@1.0.0':
     resolution: {integrity: sha512-ypsu7zBN26tVLdnbcK2+He2l+QK33qNtHGlBY0CY5x8wWkCQULSH+10E+rUIAf+kBHKdQkgr5+W60qyj97a66Q==}
@@ -10766,7 +10766,7 @@ snapshots:
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@14.0.1': {}
 
-  '@nl-design-system/component-progress@1.1.12': {}
+  '@nl-design-system/component-progress@1.1.14': {}
 
   '@nl-design-system/eslint-config@1.0.0(eslint@9.39.2(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
     dependencies:
