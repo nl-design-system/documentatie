@@ -1,9 +1,18 @@
 [
   {
+    "id": 136,
+    "date": "2026-11-10",
+    "description": [
+      "Baukje Faber en Cigdem de Jongh (InnoValor Advies) delen de resultaten van hun onderzoek naar zowel inwoner- als het overheidsorganisaties perspectief op algoritmetransparantie. Voor het inwoner perspectief: onderzoek naar de kennis, informatiebehoefte en verwachtingen van inwoners rondom algoritmen en de Algoritmewijzer. Organisatieperspectief: onderzoek naar hoe overheidsorganisaties algoritmetransparantie vormgeven en wat zij nodig hebben om dit in de praktijk toe te passen."
+    ],
+    "title": "Heartbeat van 11 november 2026",
+    "youtubeId": "_wLtUZ6vo3M"
+  },
+  {
     "id": 135,
     "date": "2026-10-27",
     "description": [
-      "Design Systems Week editie van de Heartbeat",
+      "Design Systems Week editie van de Heartbeat.",
       "Roel Berends deelt zijn ervaring met het upgraden van Tilburg design system met de nieuwe versies van NL Design System.",
       "Kevin Consen en Eileen Lopes delen hun ervaring om aan de slag te gaan met NL Design System voor CAK."
     ],
