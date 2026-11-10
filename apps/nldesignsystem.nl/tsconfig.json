@@ -9,9 +9,6 @@
     "jsxImportSource": "react",
     "paths": {
       "@docs/*": ["../../docs/*"],
-      "@site/*": ["../../*"],
-      "@theme/*": ["../../src/theme/*"],
-      "@nl-design-system-community/documentation-components/src/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
       "@utils/*": ["src/utils/*"]
