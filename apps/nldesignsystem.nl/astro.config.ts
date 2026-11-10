@@ -10,7 +10,6 @@ import { clientLoadPlugin } from '@nl-design-system-community/documentation-mark
 import { siteBaseUrl } from './src/seo.config.ts';
 import { appendCSPToHTAccess } from './append-csp-to-htaccess.ts';
 import { deadLinkChecker } from './dead-link-checker.ts';
-import { fileURLToPath } from 'node:url';
 import { globSync } from 'node:fs';
 
 const cspDevConfig: AstroUserConfig = {
@@ -120,12 +119,6 @@ export default defineConfig({
         {
           find: /^@nl-design-system-candidate\/(.+)-react\/css$/,
           replacement: '@nl-design-system-candidate/$1-react',
-        },
-        {
-          find: '@nl-design-system-community/documentation-components/src/components/Markdown',
-          replacement: fileURLToPath(
-            new URL('../../packages/documentation-components/src/markdown/markdown.ts', import.meta.url),
-          ),
         },
       ],
     },
