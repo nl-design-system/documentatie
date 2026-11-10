@@ -6,7 +6,7 @@ import { UnorderedList } from '../unordered-list/unordered-list';
 import { useEffect, useState, type SyntheticEvent } from 'react';
 import { COMPONENT_STATES } from '../utils';
 import { EstafetteBadge } from '../components/EstafetteBadge';
-import './ComponentOverviewFilter.css';
+import './component-overview-filter.css';
 import { Button } from '../button/button';
 
 const SEARCH_PARAM_FRAMEWORK = 'framework';
