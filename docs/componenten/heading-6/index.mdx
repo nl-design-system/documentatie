@@ -32,18 +32,14 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
 export const title = "Heading 6";
-export const description = "Koptekst die in de koppenstructuur op het zesde niveau staat.";
 export const issueNumber = 262;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 <ComponentAliases component={component} />
 

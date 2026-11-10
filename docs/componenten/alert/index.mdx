@@ -51,7 +51,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -62,12 +61,9 @@ import * as Acceptatiecriteria from "./\_acceptatiecriteria.tsx";
 
 {/* Add name and description for the component */}
 export const title = "Alert";
-export const description = "Belangrijk bericht dat informeert over de huidige activiteit van de gebruiker.";
 export const issueNumber = 9;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 ## Checklist voor toegankelijkheid
 

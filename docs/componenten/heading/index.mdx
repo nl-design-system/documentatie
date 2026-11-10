@@ -88,7 +88,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -102,12 +101,9 @@ import usage from "./\_usage.md?raw";
 import tokens from "@nl-design-system-candidate/heading-tokens";
 
 export const title = "Heading";
-export const description = "Koptekst die in de koppenstructuur ingesteld kan worden op het juiste niveau.";
 export const issueNumber = 114;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 <ComponentAliases component={component} />
 

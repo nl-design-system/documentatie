@@ -53,7 +53,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -71,12 +70,9 @@ import { DesignTokens } from "@nl-design-system-community/documentation-componen
 {/* // import tokens from "@nl-design-system-candidate/ordered-list-tokens"; */}
 
 export const title = "Ordered List";
-export const description = "Lijst waarvan de volgorde van items betekenis heeft.";
 export const issueNumber = 117;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 <ComponentAliases component={component} />
 

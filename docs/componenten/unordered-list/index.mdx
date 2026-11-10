@@ -57,7 +57,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -75,12 +74,9 @@ import { DesignTokens } from "@nl-design-system-community/documentation-componen
 {/* // import tokens from "@nl-design-system-candidate/unordered-list-tokens"; */}
 
 export const title = "Unordered List";
-export const description = "Opsomming waar de volgorde van items in de lijst niet van belang is.";
 export const issueNumber = 116;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 <ComponentAliases component={component} />
 

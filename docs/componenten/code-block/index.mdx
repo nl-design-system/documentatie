@@ -59,7 +59,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -73,12 +72,9 @@ import tokens from "@nl-design-system-candidate/code-block-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Code Block";
-export const description = "Blok met één of meerdere regels computercode.";
 export const issueNumber = 329;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 <ComponentAliases component={component} />
 

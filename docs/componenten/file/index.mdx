@@ -39,20 +39,16 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
 export const title = "File";
-export const description = "Toont meta-informatie over een bestand en biedt één of meer acties, zoals bekijken, downloaden of verwijderen.";
 export const issueNumber = 348;
 export const relayStep = "help wanted";
 export const componentName = "file";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

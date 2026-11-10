@@ -88,7 +88,6 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 import {
@@ -102,12 +101,9 @@ import tokens from "@nl-design-system-candidate/paragraph-tokens";
 
 {/* Add name and description for the component */}
 export const title = "Paragraph";
-export const description = "De paragraph gebruik je voor een alinea met lopende tekst, instructies van formulieren en voor overige losstaande tekstfragmenten.";
 export const issueNumber = 115;
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 <ComponentAliases component={component} />
 

@@ -8,13 +8,10 @@ import { BrandIcon } from './BrandIcon';
 import { Card, CardContent, CardGroup } from './CardGroup';
 import { Card as RhcCard } from '../card/card';
 import { ComponentProgress } from './ComponentProgress';
-import { EstafetteBadge } from './EstafetteBadge';
-import { InlineHeadingGroup } from './InlineHeadingGroup';
 import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
 import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
 import '@nl-design-system-candidate/heading-css/heading.css';
 import {
-  COMPONENT_STATES,
   getProjectFrameworks,
   getRelayBoardDescription,
   relayProjectIds,
@@ -25,7 +22,6 @@ import './ComponentPage.css';
 import relationMap from './relations.json';
 import { Accordion, AccordionSection } from '../accordion/accordion';
 import '../accordion/accordion.css';
-import { ComponentIllustration } from '../component-illustration/component-illustration';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
@@ -232,38 +228,6 @@ export const HelpImproveComponent = ({ component, headingLevel }: ComponentPageS
             bij de <Link href={component.backlog}>publieke GitHub Backlog</Link>.{' '}
           </UnorderedListItem>
         </UnorderedList>
-      </>
-    )
-  );
-};
-
-interface IntroductionProps extends ComponentPageSectionProps {
-  description?: string;
-  illustration?: string;
-}
-
-export const Introduction = ({ component, headingLevel, description }: IntroductionProps) => {
-  const relayStep = component && COMPONENT_STATES[component.relayStep];
-
-  // This component should not be rendered with Astro since the Astro layout
-  // renders the `h1` in the template. That allows us to inject frontmatter
-  // data between the page title and the rest of the document's markdown
-  if (globalThis.isAstro) return null;
-
-  return (
-    component && (
-      <>
-        <InlineHeadingGroup level={headingLevel} suffix={relayStep && <EstafetteBadge state={relayStep} />}>
-          {component.title}
-        </InlineHeadingGroup>
-        <Paragraph purpose="lead">{description}</Paragraph>
-        {['Help Wanted', 'Community'].includes(relayStep) && (
-          <ComponentIllustration
-            relayStep={relayStep}
-            description={`Schets van de ${component.title} component`}
-            name={component.title}
-          />
-        )}
       </>
     )
   );

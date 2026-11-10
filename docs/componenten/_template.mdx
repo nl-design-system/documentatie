@@ -17,18 +17,14 @@ import {
   DefinitionOfDone,
   HelpImproveComponent,
   Implementations,
-  Introduction,
   Related,
 } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
 export const title = "{naam-component}";
-export const description = "{beschrijving-component}";
 export const issueNumber = {github-issue-nummer};
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 

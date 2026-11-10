@@ -34,18 +34,15 @@ keywords:
 
 {/* @license CC0-1.0 */}
 import componentProgress from "@nl-design-system/component-progress/dist/index.json";
-import { DefinitionOfDone, HelpImproveComponent, Implementations, Introduction, Related } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
+import { DefinitionOfDone, HelpImproveComponent, Implementations, Related } from "@nl-design-system-community/documentation-components/src/components/ComponentPage";
 
 {/* Add name and description for the component */}
 export const title = "Calendar";
-export const description = "Een kalender waarin je een beschikbare datum kan kiezen.";
 export const issueNumber = 199;
 export const relayStep = "help wanted";
 export const componentName = "calendar";
 
 export const component = componentProgress.find((item) => item.number === issueNumber);
-
-<Introduction component={component} headingLevel={1} description={description} />
 
 ## Definition of Done
 
