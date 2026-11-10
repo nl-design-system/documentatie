@@ -22,7 +22,7 @@ import { isElement } from 'hast-util-is-element';
  *
  * Rehype does not parse HTML markup in markdown files. For HTML elements in
  * Markdown that need transformation (like `<figure>`), trigger this plugin
- * in `apps/nldesignsystem.nl/markdown-plugins/remark-nlds-components/index.ts` also
+ * in `../remark-nlds-components/index.ts` also
  */
 export function nldsComponentsPlugin() {
   return function transform(tree: Root): void {

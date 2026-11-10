@@ -5,12 +5,14 @@ import { unified } from '@astrojs/markdown-remark';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import { remarkCanvasFix } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-canvas-fix/index.ts';
-import { sharedPlugins } from './src/markdown-plugins.ts';
+import { createSharedPlugins } from '@nl-design-system-community/documentation-markdown-plugins/src/shared-plugins.ts';
 import { clientLoadPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-client-load/index.ts';
 import { siteBaseUrl } from './src/seo.config.ts';
 import { appendCSPToHTAccess } from './append-csp-to-htaccess.ts';
 import { deadLinkChecker } from './dead-link-checker.ts';
 import { globSync } from 'node:fs';
+
+const sharedPlugins = createSharedPlugins({ siteUrl: siteBaseUrl });
 
 const cspDevConfig: AstroUserConfig = {
   security: {
