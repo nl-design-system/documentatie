@@ -1,0 +1,1 @@
+var e=document.querySelector(`ma-table-of-contents`),t=new Set(document.querySelectorAll(`.ma-canvas h1, .ma-canvas h2, .ma-canvas h3, .ma-canvas h4, .ma-canvas h5,.ma-canvas h6`));e.headingsToIgnore=e.headingsToIgnore.union(t);
