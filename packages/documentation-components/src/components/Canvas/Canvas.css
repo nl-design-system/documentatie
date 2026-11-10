@@ -1,66 +1,23 @@
-.nlds-canvas {
-  --nlds-container-border-color: hsl(193 24% 85%);
-
-  border: 1px solid var(--nlds-container-border-color);
+/* stylelint-disable-next-line selector-class-pattern */
+.voorbeeld-theme {
+  color-scheme: light;
 }
 
-.nlds-canvas--distanced {
-  margin-block-end: 8px;
-  margin-block-start: 16px;
+.ma-canvas__example {
+  padding-block-end: var(--basis-space-block-xl);
+  padding-block-start: var(--basis-space-block-xl);
+  padding-inline-end: var(--basis-space-inline-3xl);
+  padding-inline-start: var(--basis-space-inline-3xl);
+
+  img {
+    max-inline-size: 100%;
+  }
 }
 
-.nlds-canvas__example {
-  --utrecht-surface-background-color: hsl(30 33% 96%);
-  --utrecht-document-background-color: white;
-
-  overflow: hidden;
-
-  /* Contain example code within this elements boundaries */
-  position: relative;
+.ma-canvas__example--color-scheme-dark {
+  color-scheme: only dark;
 }
 
-.nlds-canvas__example-document {
-  padding-block-end: 16px;
-  padding-block-start: 16px;
-  padding-inline-end: 16px;
-  padding-inline-start: 16px;
-}
-
-.nlds-canvas__example:empty {
-  padding-block: 0;
-  padding-inline: 0;
-}
-
-.nlds-canvas__code-block {
-  cursor: var(--nlds-canvas-code-block-cursor, default);
-  user-select: var(--nlds-canvas-code-block-user-select, inherit);
-}
-
-.nlds-canvas__code-block--user-select-none {
-  --nlds-canvas-code-block-cursor: not-allowed;
-  --nlds-canvas-code-block-user-select: none;
-}
-
-.nlds-canvas__toolbar {
-  background-color: var(--ma-code-block-background-color);
-  text-align: end;
-}
-
-.nlds-canvas__toolbar--copy {
-  display: var(--nlds-canvas-toolbar-copy-display, block);
-}
-
-.nlds-canvas__button {
-  --utrecht-button-subtle-background-color: hsl(0 0% 100% / 10%);
-  --utrecht-button-subtle-color: #fff;
-  --utrecht-button-subtle-font-weight: normal;
-  --utrecht-button-subtle-hover-background-color: hsl(0 0% 100% / 20%);
-  --utrecht-button-subtle-hover-color: #fff;
-  --utrecht-button-subtle-hover-font-weight: normal;
-  --utrecht-button-subtle-active-background-color: hsl(0 0% 100% / 10%);
-  --utrecht-button-subtle-active-color: #fff;
-  --utrecht-button-subtle-active-font-weight: normal;
-  --utrecht-button-subtle-focus-background-color: var(--nlds-focus-background-color);
-  --utrecht-button-subtle-focus-color: var(--nlds-focus-color);
-  --utrecht-button-subtle-focus-font-weight: normal;
+.ma-canvas__example--color-scheme-light {
+  color-scheme: only light;
 }
