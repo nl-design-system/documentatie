@@ -12,7 +12,7 @@ const MAP = {
 
 /**
  * Remark plugin to be used in combination with `remark-directive`. Transforms
- * the admonition into an Utrecht Spotlight Section
+ * the admonition into an Utrecht Note
  */
 export function remarkAdmonitions() {
   return (tree) => {

@@ -371,9 +371,6 @@ importers:
       '@utrecht/separator-css':
         specifier: 3.0.1
         version: 3.0.1
-      '@utrecht/spotlight-section-css':
-        specifier: 3.0.2
-        version: 3.0.2
       '@utrecht/table-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -927,9 +924,6 @@ importers:
       '@utrecht/separator-css':
         specifier: 3.0.1
         version: 3.0.1
-      '@utrecht/spotlight-section-css':
-        specifier: 3.0.2
-        version: 3.0.2
       '@utrecht/table-css':
         specifier: 3.0.1
         version: 3.0.1
@@ -4029,9 +4023,6 @@ packages:
 
   '@utrecht/spotlight-section-css@2.0.1':
     resolution: {integrity: sha512-BzymCAj6Im0OAzpHs3iSqX+5lNIVD9EbElC9RCeFASTlp5Yc9iO2hj9CCeQD6yPuVuZBD84vND6p4JeMgeLPJg==}
-
-  '@utrecht/spotlight-section-css@3.0.2':
-    resolution: {integrity: sha512-OLMz4DKIUqG0pYoQqqMVfslaFkF2ncTec8IbNB+4Qn0gBYusA6d+Sklg59c1P/4cJmsvrL/izdOAt35ETw4Cxw==}
 
   '@utrecht/status-badge-css@1.0.0':
     resolution: {integrity: sha512-rkbK0l+DdXMApss6WJWKPzRk0/5k3q0Q+UB0Uzc0YdhZJG7iUS/RzmygDDcv346HfI5Ki8nZT3HG7Wjw2rIWMQ==}
@@ -12853,8 +12844,6 @@ snapshots:
   '@utrecht/skip-link-css@2.0.1': {}
 
   '@utrecht/spotlight-section-css@2.0.1': {}
-
-  '@utrecht/spotlight-section-css@3.0.2': {}
 
   '@utrecht/status-badge-css@1.0.0': {}
 

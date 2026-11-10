@@ -20,15 +20,15 @@ keywords:
 {/* @license CC0-1.0 */}
 
 import { Markdown } from "@nl-design-system-community/documentation-components/src/components/Markdown";
-import { SpotlightSection } from "@nl-design-system-community/documentation-components/src/spotlight-section/spotlight-section";
+import { Note } from "@nl-design-system-community/documentation-components/src/note/note";
 import aaaMessage from "./_wcag-aaa-message.md?raw";
 import disclaimer from "./_wcag-disclaimer.md?raw";
 import wcagFooterInfo from "./_wcag_footer_info.md?raw";
 import Summary from "./summaries/_3.3.6-summary.md";
 
-<SpotlightSection>
+<Note>
   <Markdown omitH1 headingLevel={3} content={aaaMessage} />
-</SpotlightSection>
+</Note>
 
 ## Uitleg
 
@@ -43,9 +43,9 @@ Informatie over bronnen, gebruikersonderzoek en hoe te testen kun je vinden op d
 - Engelstalige informatie op <span lang="en">How to Meet WCAG</span>: [<span lang="en">Quick Reference 3.3.6 Error Prevention (All)</span>](https://www.w3.org/WAI/WCAG22/quickref/#error-prevention-all).
 - Engelstalige toelichting: [<span lang="en">Understanding SC 3.3.6: Error Prevention (All)</span>](https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-all.html).
 
-<SpotlightSection>
+<Note>
   <Markdown omitH1 headingLevel={3} content={disclaimer} />
-</SpotlightSection>
+</Note>
 
 ## Help richtlijn verbeteren
 
