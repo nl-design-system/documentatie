@@ -1,5 +1,5 @@
-import { Code } from '@nl-design-system-candidate/code-react/css';
-import { DataBadge } from '@nl-design-system-candidate/data-badge-react/css';
+import { Code } from '../code/code';
+import { DataBadge } from '../data-badge/data-badge';
 import type { TokenNode } from '../utils';
 import {
   getTokenPaths,

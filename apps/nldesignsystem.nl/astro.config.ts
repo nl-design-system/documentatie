@@ -110,18 +110,6 @@ export default defineConfig({
           replacement: '@babel/runtime/helpers/esm/',
         },
         {
-          find: '@utrecht/component-library-react/dist/css-module',
-          replacement: '@utrecht/component-library-react',
-        },
-        {
-          find: '@utrecht/component-library-react/css-module',
-          replacement: '@utrecht/component-library-react',
-        },
-        {
-          find: /^@nl-design-system-candidate\/(.+)-react\/css$/,
-          replacement: '@nl-design-system-candidate/$1-react',
-        },
-        {
           find: '@nl-design-system-community/documentation-components/src/components/Markdown',
           replacement: fileURLToPath(
             new URL('../../packages/documentation-components/src/markdown/markdown.ts', import.meta.url),
