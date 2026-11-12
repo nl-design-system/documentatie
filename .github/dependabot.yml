@@ -48,10 +48,6 @@ updates:
         patterns:
           - "@storybook/*"
           - "storybook"
-      docusaurus:
-        applies-to: "version-updates"
-        patterns:
-          - "@docusaurus/*"
       i18next:
         applies-to: "version-updates"
         patterns:

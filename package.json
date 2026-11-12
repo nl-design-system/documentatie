@@ -10,7 +10,7 @@
   "packageManager": "pnpm@11.28.2+sha512.755ce2fe3c05bfd7bb412b42aff3c5c55cd38c529c6eca810475497ae36746c571e4b6e1814e6e7e4b97d7ee864b8a0e44673c3b297a50e0ac28771c5ce15d27",
   "engines": {
     "//": "Update @types/node to match the highest node version here",
-    "node": ">=24 <=25",
+    "node": "^24.22.3 || ^26.13.1",
     "pnpm": "^11.4.0"
   },
   "repository": {
@@ -25,10 +25,9 @@
     "build": "pnpm run --recursive build",
     "build:astro": "pnpm --filter @nl-design-system/website run build",
     "clean": "npm-run-all clean:**",
-    "clean:generated": "rimraf .docusaurus/ build/ dist/ tmp/",
+    "clean:generated": "rimraf dist/ tmp/",
     "clean:workspaces": "pnpm run --recursive clean",
-    "serve": "http-server --port 3000 build/",
-    "serve:astro": "pnpm --filter @nl-design-system/website run preview",
+    "serve": "pnpm --filter @nl-design-system/website run preview",
     "serve:test-report": "pnpm exec playwright show-report tmp/playwright-html-report",
     "lint": "npm-run-all --continue-on-error lint:**",
     "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
@@ -69,7 +68,6 @@
     "eslint-plugin-react": "7.37.5",
     "glob": "11.1.0",
     "globals": "15.15.0",
-    "http-server": "14.1.1",
     "husky": "9.1.7",
     "lint-staged": "15.5.2",
     "npm-check-updates": "22.2.9",

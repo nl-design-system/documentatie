@@ -1,6 +1,6 @@
 import { Link } from '../link/link';
 import { BadgeList, DataBadge } from '@utrecht/component-library-react';
-import { Heading } from '@nl-design-system-candidate/heading-react/css';
+import { Heading } from '../heading/heading';
 import { Paragraph } from '../paragraph/paragraph';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
