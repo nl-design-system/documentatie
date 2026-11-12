@@ -134,7 +134,7 @@
     "vitest": "4.1.11"
   },
   "scripts": {
-    "lint-todo": "tsc --noEmit",
+    "lint": "tsc --noEmit",
     "test": "vitest run --config ./vitest-jsdom.config.ts"
   }
 }

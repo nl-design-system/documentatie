@@ -1,6 +1,7 @@
 import { i18n } from '@nl-design-system-community/documentation-i18n/src/index.ts';
 import { Image } from '../image/image.tsx';
 import './VideoPlayer.css';
+import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 interface VideoPlayerProps {
   id: string;
@@ -10,11 +11,13 @@ interface VideoPlayerProps {
   playlist?: boolean;
 }
 
+type LiteYoutubeBaseProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+
 declare module 'react' {
   // eslint-disable-next-line @typescript-eslint/no-namespace -- JSX augmentation requires a namespace
   namespace JSX {
     interface IntrinsicElements {
-      'lite-youtube': DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
+      'lite-youtube': LiteYoutubeBaseProps & {
         videoid?: string;
         videotitle?: string;
         videoplay?: string;

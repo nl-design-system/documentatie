@@ -23,8 +23,8 @@ export const ComponentOverviewFilter = () => {
   useEffect(() => {
     const cards: HTMLDivElement[] = [];
     const frameworkNames = new Set<string>();
-    document.querySelectorAll('.ma-cardgroup .ma-component-overview-list-item').forEach((item: HTMLDivElement) => {
-      item.dataset.frameworkNames?.split(',')?.forEach((framework) => frameworkNames.add(framework));
+    document.querySelectorAll<HTMLDivElement>('.ma-cardgroup .ma-component-overview-list-item').forEach((item) => {
+      item.dataset['frameworkNames']?.split(',')?.forEach((framework) => frameworkNames.add(framework));
       cards.push(item);
     });
     setFrameworkNames([...frameworkNames].filter(Boolean));

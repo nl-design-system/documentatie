@@ -19,7 +19,7 @@ interface HeartbeatEpisodeProps {
 }
 
 export const HeartbeatEpisode = ({ id, headingLevel }: HeartbeatEpisodeProps) => {
-  const episode: Heartbeat = id ? HeartbeatJSON.find((h) => h.id === id) : HeartbeatJSON[0];
+  const episode: Heartbeat | undefined = id ? HeartbeatJSON.find((h) => h.id === id) : HeartbeatJSON[0];
 
   return episode ? (
     <>

@@ -44,7 +44,7 @@ export const WcagListItem = ({ sc, checked, description, headingLevel = 3 }: Wca
 export const WcagList = ({ headingLevel, items }: WcagListProps) => (
   <ul className="task-list">
     {items.map((item, index) => (
-      <WcagListItem key={index} headingLevel={headingLevel} {...item} />
+      <WcagListItem key={index} {...item} headingLevel={headingLevel} />
     ))}
   </ul>
 );

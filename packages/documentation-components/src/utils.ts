@@ -1,5 +1,5 @@
-import packageJson from '../../../package.json';
-import { HeadingProps } from './heading/heading.tsx';
+import packageJson from '../../../package.json' with { type: 'json' };
+import type { HeadingProps } from './heading/heading.tsx';
 
 export const COMPONENT_STATES = {
   UNKNOWN: 'Todo',
@@ -9,10 +9,10 @@ export const COMPONENT_STATES = {
   HALL_OF_FAME: 'Hall of fame',
 };
 
-export const toKebabCase = (string: string) => string?.toLowerCase().replace(/\s+/gi, '-');
+export const toKebabCase = (string?: string) => string?.toLowerCase().replace(/\s+/gi, '-');
 
 export const getRelayBoardDescription = (id: string): string => {
-  const descriptions = {
+  const descriptions: Record<string, string> = {
     PVTSSF_lADOBGdlVM4AdX8lzgasA5I: 'Naam bepaald op basis van NL Design System naamgeving.',
     PVTSSF_lADOBGdlVM4AdX8lzgTC4tM: 'Doel van component is in één zin beschreven.',
     PVTSSF_lADOBGdlVM4AdX8lzgasBXs: 'Afbeelding gemaakt om de component visueel duidelijk te maken.',
@@ -129,7 +129,8 @@ export const getProjectFrameworkNames = (project: ComponentProject): string[] =>
     removeDuplicates(
       project.tasks
         .filter(({ name, value }) => value !== '' && frameworkRx.test(name) && isHttpsUrl(value))
-        .map(({ name }) => frameworkRx.exec(name)?.[1]),
+        .map(({ name }) => frameworkRx.exec(name)?.[1])
+        .filter((name): name is string => name !== undefined),
     ),
   );
 };
@@ -160,7 +161,11 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
     const tasks = project.tasks
       .filter(({ name, value }) => value !== '' && name.includes(frameworkName) && isHttpsUrl(value))
       .map(({ name, id, value }): FrameworkTask => {
-        const brand = /^(.+) URL/.exec(name)[1];
+        const brandMatch = /^(.+) URL/.exec(name);
+        if (!brandMatch) {
+          throw new TypeError(`Expected task name "${name}" to match "<brand> URL"`);
+        }
+        const brand = brandMatch[1];
         const description =
           brand === 'Storybook'
             ? `${alias} (${frameworkName}) in Storybook van ${project.title}`
@@ -181,17 +186,20 @@ export const getProjectFrameworks = (project: ComponentProject): ProjectFramewor
   });
 };
 export type TokenNode = { [key: string]: TokenNode } | { $type: unknown };
+export type TokenGroup = { [key: string]: TokenNode };
 export type TokenPath = string[];
 
 export const tokenPathToDottedTokenPath = (tokenPath: TokenPath): string => tokenPath.join('.');
 export const tokenPathToCSSCustomProperty = (tokenPath: TokenPath): string => '--' + tokenPath.join('-');
-export const tokenAtPath = (obj: TokenNode, path: TokenPath): TokenNode => path.reduce((acc, key) => acc?.[key], obj);
+export const tokenAtPath = (obj: TokenNode, path: TokenPath): TokenNode =>
+  path.reduce((acc, key) => (acc as TokenGroup)?.[key], obj);
 
 export function getTokenPaths(obj: TokenNode, partialTokenPath: TokenPath = []): TokenPath[] {
   if (Object.hasOwn(obj, '$type')) return [partialTokenPath];
+  const group = obj as TokenGroup;
 
-  return Object.keys(obj).flatMap((key) =>
-    typeof obj[key] === 'object' && obj[key] !== null ? getTokenPaths(obj[key], [...partialTokenPath, key]) : [],
+  return Object.keys(group).flatMap((key) =>
+    typeof group[key] === 'object' && group[key] !== null ? getTokenPaths(group[key], [...partialTokenPath, key]) : [],
   );
 }
 
@@ -199,17 +207,20 @@ export function sortTokenPaths(tokenPaths: TokenPath[]): TokenPath[] {
   const memo = new Map<TokenPath, string>();
 
   function getKey(tokenPath: TokenPath): string {
-    if (!memo.has(tokenPath)) {
-      memo.set(tokenPath, tokenPathToDottedTokenPath(tokenPath));
+    let key = memo.get(tokenPath);
+    if (key === undefined) {
+      key = tokenPathToDottedTokenPath(tokenPath);
+      memo.set(tokenPath, key);
     }
-    return memo.get(tokenPath);
+    return key;
   }
 
   return tokenPaths.sort((a, b) => a.length - b.length || getKey(a).localeCompare(getKey(b)));
 }
 
+type EmptyTokenTree = { [key: string]: EmptyTokenTree };
 export function tokenPathsToEmptyTokenTree(tokenPaths: TokenPath[]): TokenNode {
-  const root = {};
+  const root: EmptyTokenTree = {};
   for (const tokenPath of tokenPaths) {
     let node = root;
     for (const key of tokenPath) {

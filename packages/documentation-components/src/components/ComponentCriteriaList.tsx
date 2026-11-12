@@ -61,7 +61,7 @@ export const CriteriaListItem = ({
   children,
   headingLevel = 4,
 }: PropsWithChildren<CriteriaListItemProps>) => {
-  const data = successCriteriaMap.get(sc);
+  const data = sc ? successCriteriaMap.get(sc) : undefined;
   const scTitle = data ? `${sc} ${data.nl?.title}` : sc;
 
   return (

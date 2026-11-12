@@ -38,7 +38,6 @@
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
     "lint-fix:js": "eslint --fix",
     "lint-fix:prettier": "prettier --write .",
-    "lint-todo": "pnpm run --no-bail --recursive lint-todo",
     "changeset": "changeset add",
     "changeset:empty": "changeset --empty",
     "changeset:publish": "changeset publish",

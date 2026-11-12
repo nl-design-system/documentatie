@@ -26,7 +26,10 @@ import '../accordion/accordion.css';
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
   const relayProjects = component && component.projects.filter((project) => relayProjectIds.includes(project.id));
   const relayOrderedProjects =
-    relayProjects && relayProjectIds.map((id) => relayProjects.find((project) => project.id === id)).filter(Boolean);
+    relayProjects &&
+    relayProjectIds
+      .map((id) => relayProjects.find((project) => project.id === id))
+      .filter((project) => project !== undefined);
 
   return (
     component && (
@@ -34,8 +37,8 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
         {relayOrderedProjects.map((project) => (
           <AccordionSection
             key={project.title}
-            className={clsx('ma-definition-of-done', project && `ma-definition-of-done--${toKebabCase(project.title)}`)}
-            heading={project ? `${project.title} - ${project.progress.value} van ${project.progress.max}` : ''}
+            className={clsx('ma-definition-of-done', `ma-definition-of-done--${toKebabCase(project.title)}`)}
+            heading={`${project.title} - ${project.progress.value} van ${project.progress.max}`}
             headingLevel={headingLevel}
             headingApperance="level-5"
           >
@@ -104,16 +107,12 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                     )}
                     {links.length > 0 && (
                       <LinkList
-                        links={links
-                          .filter((item) => !!urlMap.get(item.name))
-                          .map((item) => {
-                            const url = urlMap.get(item.name);
-                            return {
-                              children: url.desciption,
-                              icon: <BrandIcon brand={url.brand} />,
-                              href: item.value,
-                            };
-                          })}
+                        links={links.flatMap((item) => {
+                          const url = urlMap.get(item.name);
+                          return url
+                            ? [{ children: url.desciption, icon: <BrandIcon brand={url.brand} />, href: item.value }]
+                            : [];
+                        })}
                       />
                     )}
                   </div>
@@ -126,7 +125,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                         <LinkList
                           links={tasks.map((frameworkTask) => ({
                             children: frameworkTask.description,
-                            icon: <BrandIcon brand={frameworkTask.brand} />,
+                            icon: <BrandIcon brand={frameworkTask.brand ?? ''} />,
                             href: frameworkTask.value,
                           }))}
                         />
@@ -183,7 +182,7 @@ export const HelpImproveComponent = ({ component, headingLevel }: ComponentPageS
 };
 
 export const Related = ({ component }: ComponentPageSectionProps) => {
-  const relatedComponents = (component && relationMap[component.title]) || [];
+  const relatedComponents = (component && relationMap[component.title as keyof typeof relationMap]) || [];
   return (
     relatedComponents.length > 0 && (
       <Paragraph>

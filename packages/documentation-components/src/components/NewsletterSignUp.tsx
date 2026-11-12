@@ -91,15 +91,15 @@ export const NewsletterSignUp = ({
     handleSubmit,
     formState: { errors },
   } = useForm<{ [key: string]: string }>({ mode: 'onBlur' });
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement>(null);
   const IS_ENGLISH = language?.value === '2';
   const isBrowser = useIsBrowser();
   const search = isBrowser ? window.location.search : '';
   const params = new URLSearchParams(search);
   const prefillEmail = params.get('prefillEmail');
   const prefillName = params.get('prefillName');
-  const interestsValues: number[] | false =
-    interestsId && interests.length > 0 ? generateInterestsValues(interests, disallowedInterestValues) : false;
+  const interestsValues: number[] =
+    interestsId && interests.length > 0 ? generateInterestsValues(interests, disallowedInterestValues) : [];
 
   return (
     <form
@@ -110,7 +110,7 @@ export const NewsletterSignUp = ({
       acceptCharset="utf-8"
       ref={form}
       onSubmit={handleSubmit(() => {
-        form.current.submit();
+        form.current?.submit();
       })}
     >
       <FormField type="email">
@@ -125,10 +125,9 @@ export const NewsletterSignUp = ({
         <Paragraph>
           <Textbox
             id={`id-${emailFieldId}`}
-            name={emailFieldId}
             type="email"
             autoComplete="email"
-            defaultValue={prefillEmail}
+            defaultValue={prefillEmail ?? undefined}
             aria-required="true"
             aria-describedby={errors[emailFieldId] && `${emailFieldId}-error`}
             {...register(`${emailFieldId}`, {
@@ -160,9 +159,8 @@ export const NewsletterSignUp = ({
         <Paragraph>
           <Textbox
             id={firstNameFieldId}
-            name={firstNameFieldId}
             type="text"
-            defaultValue={prefillName}
+            defaultValue={prefillName ?? undefined}
             autoComplete="given-name"
             aria-required="true"
             aria-describedby={errors[firstNameFieldId] && `${firstNameFieldId}-error`}
@@ -192,7 +190,6 @@ export const NewsletterSignUp = ({
           <Paragraph>
             <Textbox
               id={talkTitleId}
-              name={talkTitleId}
               aria-describedby={`${talkTitleId}-description`}
               {...register(talkTitleId, {
                 required: {
@@ -222,7 +219,6 @@ export const NewsletterSignUp = ({
           <Paragraph>
             <Textarea
               id={talkDescriptionId}
-              name={talkDescriptionId}
               rows={12}
               aria-describedby={`${talkDescriptionId}-description`}
               {...register(talkDescriptionId, {
@@ -354,7 +350,7 @@ export const NewsletterSignUp = ({
           </FormField>
           {errors[`${privacyPolicyId}`] && (
             <FormFieldErrorMessage role="alert" id={`${privacyPolicyId}-error`}>
-              {errors[`${privacyPolicyId}`].message}
+              {errors[`${privacyPolicyId}`]?.message}
             </FormFieldErrorMessage>
           )}
         </FormField>

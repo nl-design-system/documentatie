@@ -80,14 +80,14 @@ export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChil
 
               const isSuccessCriterium = (str: string) => /^[0-9]+\.[0-9]+\.[0-9]+$/.test(str);
 
-              if (isSuccessCriterium(tag)) {
-                const data = successCriteriaMap.get(tag);
+              const data = isSuccessCriterium(tag) ? successCriteriaMap.get(tag) : undefined;
 
+              if (data) {
                 badge = (
                   <Link
                     key={index}
                     href={`/wcag/${tag}`}
-                    aria-label={`WCAG ${tag} ${data.nl.title}`}
+                    aria-label={`WCAG ${tag} ${data?.nl.title}`}
                     style={{ lineHeight: 1 }}
                   >
                     <DataBadge>{`WCAG ${tag}`}</DataBadge>
@@ -131,7 +131,7 @@ export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
     const tags = new Set<string>();
     const items = Array.from(list.querySelectorAll<HTMLLIElement>('[data-tags]'));
     items.forEach((li) => {
-      li.dataset.tags?.split(',')?.forEach((tag) => tag && tags.add(tag));
+      li.dataset['tags']?.split(',')?.forEach((tag) => tag && tags.add(tag));
     });
     setAllChildren(items);
     setAllTheTags([...tags]);
@@ -141,11 +141,11 @@ export const Checklist = ({ children, headingLevel }: ChecklistProps) => {
 
   React.useEffect(() => {
     const tagsToTest = selectedTags;
-    const childrenToShow = [];
-    const childrenToHide = [];
+    const childrenToShow: HTMLLIElement[] = [];
+    const childrenToHide: HTMLLIElement[] = [];
 
     allChildren.forEach((child) => {
-      const tags = child.dataset.tags?.split(',') || [];
+      const tags = child.dataset['tags']?.split(',') || [];
       if (tags.some((tag) => tagsToTest.includes(tag))) {
         childrenToShow.push(child);
       } else {

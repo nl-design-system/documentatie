@@ -1,10 +1,13 @@
-import { Link as CandidateLink, type LinkProps } from '@nl-design-system-candidate/link-react';
+import { Link as CandidateLink, type LinkProps as CandidateLinkProps } from '@nl-design-system-candidate/link-react';
 import { hasFileExtension } from '../utils.ts';
 import type { PropsWithChildren } from 'react';
 
 import '@nl-design-system-candidate/link-css/link.css';
 
-export { type LinkProps } from '@nl-design-system-candidate/link-react';
+// `href` is optional on `<a>` elements. This change allows us to use Link
+// as override component on markdown rendered content. (`components={{ a: Link }}`).
+// which otherwise would throw a type error
+export type LinkProps = Omit<CandidateLinkProps, 'href'> & { href?: CandidateLinkProps['href'] };
 
 export const improveLinkProps = ({ href }: Partial<LinkProps>) => {
   const _props: Partial<LinkProps> = {};
@@ -36,6 +39,6 @@ export const improveLinkProps = ({ href }: Partial<LinkProps>) => {
   return _props;
 };
 
-export const Link = (props: PropsWithChildren<LinkProps>) => {
-  return <CandidateLink {...props} {...improveLinkProps(props)} />;
+export const Link = ({ href, ...props }: PropsWithChildren<LinkProps>) => {
+  return <CandidateLink href={href} {...props} {...improveLinkProps({ href })} />;
 };

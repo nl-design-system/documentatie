@@ -5,7 +5,7 @@ import { toKebabCase } from '../utils.ts';
 import './component-illustration.css';
 
 interface ComponentIllustrationProps extends HTMLAttributes<HTMLElement> {
-  relayStep: string;
+  relayStep?: string;
   description: string;
   name: string;
 }

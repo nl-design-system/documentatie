@@ -101,8 +101,8 @@ export const ContrastTool = () => {
 
   const search = isBrowser ? window.location.search : '';
   const params = new URLSearchParams(search);
-  let backgroundColor = params.get('background-color');
-  let color = params.get('color');
+  let backgroundColor = params.get('background-color') ?? '';
+  let color = params.get('color') ?? '';
 
   if (!backgroundColor && !color) {
     backgroundColor = 'white';
@@ -116,7 +116,8 @@ export const ContrastTool = () => {
     ['background-color']: backgroundColor,
     ['color']: color,
   }).toString()}`;
-  const contrastRatio = !!parsedBackgroundColor && !!parsedColor ? parsedBackgroundColor.contrast(parsedColor) : null;
+  const hasValidColors = !!parsedBackgroundColor && !!parsedColor;
+  const contrastRatio = hasValidColors ? parsedBackgroundColor.contrast(parsedColor) : 0;
 
   interface Recommendation {
     positive: boolean;
@@ -240,7 +241,7 @@ export const ContrastTool = () => {
           </Button>
         </ActionGroup>
       </form>
-      {typeof contrastRatio === 'number' && (
+      {hasValidColors && (
         <div>
           <Heading2 id="output">Resultaat</Heading2>
           <ContrastRatio {...{ backgroundColor, color, contrastRatio }} />

@@ -45,7 +45,7 @@ export function DesignTokens({ tokens }: Props) {
   const cleanTokens = cloneDeepWith(tokens, (obj) =>
     isTokenDefinition(obj)
       ? {
-          $type: obj.$type,
+          $type: obj['$type'],
           $value: '',
         }
       : undefined,
