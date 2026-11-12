@@ -14,7 +14,7 @@ const { ...props } = Astro.props;
 ---
 
 <Document {...props}>
-  <PageBodyWrapper Component="main" id="main" class="ma-flow" lang={props.lang === 'en' ? 'en' : null}>
+  <PageBodyWrapper Component="main" id="main" lang={props.lang === 'en' ? 'en' : undefined}>
     <PageBodyContent>
       <slot />
     </PageBodyContent>

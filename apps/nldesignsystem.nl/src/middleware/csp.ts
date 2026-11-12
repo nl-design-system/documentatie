@@ -4,9 +4,6 @@ import * as cheerio from 'cheerio';
 
 /**
  * Returns a SHA256 hash using SHA-2 for the given `content`.
- *
- * @param {String} content
- * @returns {String}
  */
 function sha256(content: string) {
   return createHash('sha256').update(content).digest('base64');
