@@ -141,7 +141,10 @@ const wcag = defineCollection({
     pattern: ['wcag/**/*.{md,mdx}', '!**/_*/**', '!**/_*.{md,mdx}'],
     generateId,
   }),
-  schema: schema.extend({ conformance_level: z.string().optional() }),
+  schema: schema.extend({
+    page_layout: z.enum(['overview', 'detail']).optional(),
+    conformance_level: z.string().optional(),
+  }),
 });
 
 const overviewPages = defineCollection({
