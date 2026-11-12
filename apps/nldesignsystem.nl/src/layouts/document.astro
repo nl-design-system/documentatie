@@ -134,7 +134,7 @@ if (translations) {
     pageAlternates.set(altLang, new URL(normalized, `${siteBaseUrl}/`).toString());
   }
 }
-const xDefault = pageAlternates.get('nl') ?? canonicalUrl.toString();
+const xDefault = pageAlternates.get(siteLang) ?? canonicalUrl.toString();
 const _seoImage = new URL(seoImage || fallbackSeoImage, Astro.url.origin);
 const _seoImageAlt = seoImage ? seoImageAlt : fallbackSeoImageAlt;
 const _keywords = new Set([...siteKeywords, ...(keywords || [])]);

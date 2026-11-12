@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { defineCollection } from 'astro/content/config';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { siteLang } from './seo.config.ts';
 
 type GlobOptions = Parameters<typeof glob>[0];
 
@@ -89,7 +90,7 @@ const schema = z.object({
   hide_table_of_contents: z.boolean().optional(),
   sidebar_label: z.union([z.string(), z.number()]).optional(),
   lead: z.string().optional(),
-  lang: z.enum(['nl', 'en']).default('nl'),
+  lang: z.enum(['nl', 'en']).default(siteLang),
   translations: z.record(z.string(), z.string()).optional(),
   slug: z.string().optional(),
   unlisted: z.boolean().optional(),
