@@ -35,6 +35,7 @@
     "lint:package-json": "npmPkgJsonLint '**/package.json'",
     "lint:prettier": "prettier --check .",
     "lint:types": "pnpm run --recursive lint",
+    "lint:astro": "pnpm --filter @nl-design-system/website run lint:astro",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:**",
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
     "lint-fix:js": "eslint --fix",
