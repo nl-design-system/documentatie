@@ -9,12 +9,20 @@ import {
 export interface DocCardListProps {
   cardHeadingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
   items: (NavigationElement & { labelLang?: string; descriptionLang?: string })[];
+  excludeDocIDs?: string[];
 }
 
 export const DocCardList = (props: DocCardListProps) => {
+  const docIDs = props.excludeDocIDs || [];
+
+  const filteredItems = (props.items || []).filter((page) => {
+    const filePath = page?.filePath?.replace('../../docs/', '')?.replace(/\.mdx?$/, '');
+    return Boolean(docIDs.includes(filePath)) === false;
+  });
+
   return (
     <UnorderedList markers={false}>
-      {(props.items || []).map((page) => {
+      {filteredItems.map((page) => {
         let heading, description, href, lang;
 
         if (isNavigationItem(page)) {
