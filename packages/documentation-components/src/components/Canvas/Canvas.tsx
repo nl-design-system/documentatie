@@ -42,7 +42,6 @@ export const Canvas = ({
   className,
   code = '<p>No code provided</p>',
   colorScheme,
-  copyCode,
   defaultExpandedCode,
   designTokens,
   forcedColorsAdjust = true,

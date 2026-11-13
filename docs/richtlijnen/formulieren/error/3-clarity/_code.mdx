@@ -4,65 +4,63 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Leg uit waarom een datum wordt afgekeurd.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="passport-validity">Geldig tot</label>
-        </p>
-        <p id="description-passport-validity">
-          Invoerfout: De geldigheidsdatum van uw paspoort moet in de toekomst liggen.
-        </p>
-        <p>
-          <input
-            id="passport-validity"
-            type="text"
-            name="passport-validity"
-            aria-describedby="description-passport-validity"
-          />
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p><label for="passport-validity">Geldig tot</label></p>
+      <p id="description-passport-validity">
+        Invoerfout: De geldigheidsdatum van uw paspoort moet in de toekomst liggen.
+      </p>
+      <p>
+        <input
+          id="passport-validity"
+          type="text"
+          name="passport-validity"
+          aria-describedby="description-passport-validity"
+        />
+      </p>
+    `}
+  />
 </Guideline>
 
 <Guideline appearance="do" title="Geef een voorbeeld van wat er verwacht wordt.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="email">E-mail</label>
-        </p>
-        <p id="description-email">Invoerfout: Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.</p>
-        <p>
-          <input id="email" type="email" name="email" aria-describedby="description-email" />
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p><label for="email">E-mail</label></p>
+      <p id="description-email">
+        Invoerfout: Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.
+      </p>
+      <p>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          aria-describedby="description-email"
+        />
+      </p>
+    `}
+  />
 </Guideline>
 
 <Guideline
   appearance="dont"
   title="Alleen beschrijven dat het veld verplicht is, zonder toelichting dat er informatie mist of aan welke voorwaarde niet is voldaan."
 >
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="passport-validity-2">Geldig tot</label>
-        </p>
-        <p id="description-passport-validity-2">Invoerfout: Dit veld is verplicht.</p>
-        <p>
-          <input
-            id="passport-validity-2"
-            aria-invalid="false"
-            type="text"
-            name="passport-validity-2"
-            aria-describedby="description-passport-validity-2"
-          />
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p><label for="passport-validity-2">Geldig tot</label></p>
+      <p id="description-passport-validity-2">Invoerfout: Dit veld is verplicht.</p>
+      <p>
+        <input
+          id="passport-validity-2"
+          aria-invalid="false"
+          type="text"
+          name="passport-validity-2"
+          aria-describedby="description-passport-validity-2"
+        />
+      </p>
+    `}
+  />
 </Guideline>

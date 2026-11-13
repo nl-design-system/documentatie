@@ -6,9 +6,19 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Gebruik een button, zodat de toetsenbordinteractie vanzelf goed gaat.">
-  <Canvas language="html">{() => <button className="doFancyStuff button">Geef je op</button>}</Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <button class="doFancyStuff button">Geef je op</button>
+    `}
+  />
 </Guideline>
 
 <Guideline appearance="dont" title="Een div gebruiken die alleen met de muis aanklikbaar is.">
-  <Canvas language="html">{() => <div className="doFancyStuff button">Geef je op</div>}</Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <div class="doFancyStuff button">Geef je op</div>
+    `}
+  />
 </Guideline>
