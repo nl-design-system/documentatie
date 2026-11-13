@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { UnorderedList } from '@amsterdam/design-system-react';
-import { Accordion, AccordionSection, type AccordionSectionProps } from '../accordion/accordion';
+import { Accordion, AccordionSection, type AccordionSectionProps } from '../accordion/accordion.tsx';
 
 interface CriteriaListProps {
   testCategory: string;

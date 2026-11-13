@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserOnly } from './BrowserOnly';
+import { BrowserOnly } from './BrowserOnly.tsx';
 
 const Editor = lazy(() =>
   import('@nl-design-system-community/editor-react').then(({ ClippyEditor }) => ({

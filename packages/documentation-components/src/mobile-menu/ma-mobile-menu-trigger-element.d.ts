@@ -1,5 +1,5 @@
 import type { DetailedHTMLProps, HTMLAttributes } from 'react';
-import type { MaMobileMenuTrigger } from './mobile-menu-trigger-element';
+import type { MaMobileMenuTrigger } from './mobile-menu-trigger-element.ts';
 
 declare module 'react/jsx-runtime' {
   namespace JSX {

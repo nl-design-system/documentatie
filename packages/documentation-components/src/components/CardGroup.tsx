@@ -1,4 +1,4 @@
-import { Link } from '../link/link';
+import { Link } from '../link/link.tsx';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren } from 'react';
 import './CardGroup.css';

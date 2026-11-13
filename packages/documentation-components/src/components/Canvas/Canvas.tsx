@@ -1,11 +1,11 @@
 import Prism from 'prismjs';
 import clsx from 'clsx';
-import { Accordion, AccordionSection } from '../../accordion/accordion';
-import { Button } from '../../button/button';
+import { Accordion, AccordionSection } from '../../accordion/accordion.tsx';
+import { Button } from '../../button/button.tsx';
 import './Canvas.css';
 import '@utrecht/component-library-css/dist/html.css';
 import '@utrecht/root-css/dist/index.css';
-import { HTMLImage } from '../../html-image/html-image';
+import { HTMLImage } from '../../html-image/html-image.tsx';
 import { useId, type CSSProperties, type ReactNode } from 'react';
 import { Root } from '@utrecht/root-react';
 

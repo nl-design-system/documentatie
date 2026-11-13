@@ -14,9 +14,9 @@
  */
 
 import type { PropsWithChildren, ReactElement } from 'react';
-import { Link } from '../link/link';
-import { Heading, type HeadingProps } from '../heading/heading';
-import { successCriteriaMap } from './wcag22';
+import { Link } from '../link/link.tsx';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
+import { successCriteriaMap } from './wcag22.ts';
 import { AccordionProvider } from '@utrecht/component-library-react';
 import './ComponentCriteriaList.css';
 

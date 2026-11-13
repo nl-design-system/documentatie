@@ -10,8 +10,8 @@ import {
   IconPointer,
   IconNumber,
   IconShadow,
-} from '../functional-icon';
-import { Icon } from '../icon/icon';
+} from '../functional-icon/index.tsx';
+import { Icon } from '../icon/icon.tsx';
 import { createElement } from 'react';
 
 // This map contains a mix of DTCG-compliant types and real-world usage of types

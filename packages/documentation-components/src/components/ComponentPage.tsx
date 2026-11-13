@@ -1,13 +1,13 @@
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { LinkList } from '../link-list/link-list';
-import { Link } from '../link/link';
-import { Heading, HeadingProps } from '../heading/heading';
-import { Paragraph } from '../paragraph/paragraph';
+import { LinkList } from '../link-list/link-list.tsx';
+import { Link } from '../link/link.tsx';
+import { Heading, HeadingProps } from '../heading/heading.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import clsx from 'clsx';
-import { BrandIcon } from './BrandIcon';
-import { CardGroup } from './CardGroup';
-import { Card } from '../card/card';
-import { ComponentProgress } from './ComponentProgress';
+import { BrandIcon } from './BrandIcon.tsx';
+import { CardGroup } from './CardGroup.tsx';
+import { Card } from '../card/card.tsx';
+import { ComponentProgress } from './ComponentProgress.tsx';
 import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
 import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
 import '@nl-design-system-candidate/heading-css/heading.css';
@@ -17,10 +17,10 @@ import {
   relayProjectIds,
   toKebabCase,
   type ComponentPageSectionProps,
-} from '../utils';
+} from '../utils.ts';
 import './ComponentPage.css';
 import relationMap from './relations.json';
-import { Accordion, AccordionSection } from '../accordion/accordion';
+import { Accordion, AccordionSection } from '../accordion/accordion.tsx';
 import '../accordion/accordion.css';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {

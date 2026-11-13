@@ -1,6 +1,6 @@
-import { Paragraph } from '../../paragraph/paragraph';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
 import type { TeamMember } from './TeamMember';
-import { Link } from '../../link/link';
+import { Link } from '../../link/link.tsx';
 
 const Renate: TeamMember = {
   name: 'Renate Roke',

@@ -1,7 +1,7 @@
-import { IconMoodHappy, IconMoodSad } from '../functional-icon';
-import { Icon } from '../icon/icon';
-import { Link } from '../link/link';
-import { Paragraph } from '../paragraph/paragraph';
+import { IconMoodHappy, IconMoodSad } from '../functional-icon/index.tsx';
+import { Icon } from '../icon/icon.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import clsx from 'clsx';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import Markdown from 'react-markdown';

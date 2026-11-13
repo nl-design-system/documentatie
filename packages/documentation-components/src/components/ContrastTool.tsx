@@ -1,18 +1,18 @@
-import { CanvasLegacy } from './Canvas/CanvasLegacy';
-import type { CanvasContainerType } from './Canvas/CanvasLegacy';
-import { ContrastRatio } from './ContrastRatio';
-import { Guideline } from './Guideline';
+import { CanvasLegacy } from './Canvas/CanvasLegacy.tsx';
+import type { CanvasContainerType } from './Canvas/CanvasLegacy.tsx';
+import { ContrastRatio } from './ContrastRatio.tsx';
+import { Guideline } from './Guideline.tsx';
 import { Code, FormFieldTextbox, PageContent } from '@utrecht/component-library-react';
-import { ActionGroup } from '../action-group/action-group';
-import { Icon } from '../icon/icon';
-import { Button } from '../button/button';
-import { Paragraph } from '../paragraph/paragraph';
-import { Heading1, Heading2 } from '../heading/heading';
+import { ActionGroup } from '../action-group/action-group.tsx';
+import { Icon } from '../icon/icon.tsx';
+import { Button } from '../button/button.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { Heading1, Heading2 } from '../heading/heading.tsx';
 import Color from 'color';
 import type { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
 import './contrast-tool.css';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
-import { useIsBrowser } from '../hooks/use-is-browser';
+import { useIsBrowser } from '../hooks/use-is-browser.ts';
 
 const ExampleIcon = () => (
   <Icon style={{ '--utrecht-icon-size': '128px' }}>

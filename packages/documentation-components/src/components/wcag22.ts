@@ -1,6 +1,6 @@
 // TODO: Reorder WCAG 2.2 data so it shows in between WCAG 2.1 issues
 
-import { successCriteria as wcag21 } from './wcag21';
+import { successCriteria as wcag21 } from './wcag21.ts';
 
 export interface SuccessCriterium {
   sc: string;

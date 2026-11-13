@@ -18,7 +18,7 @@ import rehypeStringify from 'rehype-stringify';
 import rehypeRaw from 'rehype-raw';
 import { rehypePrism, rehypeHeadingIds } from '@astrojs/markdown-remark';
 
-import { shiftHeadings } from './shift-headings';
+import { shiftHeadings } from './shift-headings.ts';
 import { createSharedPlugins } from '@nl-design-system-community/documentation-markdown-plugins/src/shared-plugins.ts';
 
 export interface MarkdownProps {

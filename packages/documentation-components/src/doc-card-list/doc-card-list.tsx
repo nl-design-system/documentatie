@@ -1,10 +1,10 @@
-import { UnorderedList } from '../unordered-list/unordered-list';
-import { Card } from '../card/card';
+import { UnorderedList } from '../unordered-list/unordered-list.tsx';
+import { Card } from '../card/card.tsx';
 import {
   isNavigationGroup,
   isNavigationItem,
   type NavigationElement,
-} from '@nl-design-system-community/documentation-index/src/navigation';
+} from '@nl-design-system-community/documentation-index/src/navigation/index.ts';
 
 export interface DocCardListProps {
   cardHeadingLevel?: 1 | 2 | 3 | 4 | 5 | 6;

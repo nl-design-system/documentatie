@@ -1,9 +1,9 @@
 ---
-import { CardGroup } from '../components/CardGroup';
-import { ComponentCard } from '../components/ComponentCard';
-import { ComponentOverviewFilter } from './component-overview-filter';
+import { CardGroup } from '../components/CardGroup.tsx';
+import { ComponentCard } from '../components/ComponentCard.tsx';
+import { ComponentOverviewFilter } from './component-overview-filter.tsx';
 import { getCollection } from 'astro:content';
-import { COMPONENT_STATES, getComponentFrameworkNames, type Component } from '../utils';
+import { COMPONENT_STATES, getComponentFrameworkNames, type Component } from '../utils.ts';
 import type { ComponentProgressObject } from '@nl-design-system/component-progress/dist/utils';
 
 const components = await getCollection('components');

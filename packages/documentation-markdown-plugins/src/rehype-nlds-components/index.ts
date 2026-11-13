@@ -1,19 +1,19 @@
 import type { Root, Element } from 'hast';
 import { visit } from 'unist-util-visit';
-import { blockquote } from './blockquote';
-import { code } from './code';
-import { emphasis } from './emphasis';
-import { figure } from './figure';
-import { heading } from './heading';
-import { hr } from './hr';
-import { image } from './image';
-import { link } from './link';
-import { orderedList } from './ordered-list';
-import { paragraph } from './paragraph';
-import { pre } from './pre';
-import { strong } from './strong';
-import { unorderedList } from './unordered-list';
-import { table } from './table';
+import { blockquote } from './blockquote.ts';
+import { code } from './code.ts';
+import { emphasis } from './emphasis.ts';
+import { figure } from './figure.ts';
+import { heading } from './heading.ts';
+import { hr } from './hr.ts';
+import { image } from './image.ts';
+import { link } from './link.ts';
+import { orderedList } from './ordered-list.ts';
+import { paragraph } from './paragraph.ts';
+import { pre } from './pre.ts';
+import { strong } from './strong.ts';
+import { unorderedList } from './unordered-list.ts';
+import { table } from './table.ts';
 import { isElement } from 'hast-util-is-element';
 
 /**

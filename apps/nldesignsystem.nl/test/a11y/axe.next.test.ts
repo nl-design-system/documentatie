@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import { AxeResults } from 'axe-core';
-import { analyzeAccessibility, getPathnamesFromSitemap, getDisabledRules, saveViolationsReport } from './test-setup';
-import { exclusionsNext } from './a11y-exclusions';
+import { analyzeAccessibility, getPathnamesFromSitemap, getDisabledRules, saveViolationsReport } from './test-setup.ts';
+import { exclusionsNext } from './a11y-exclusions.ts';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',

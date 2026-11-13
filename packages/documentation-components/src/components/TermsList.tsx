@@ -1,4 +1,4 @@
-import { Paragraph } from '../paragraph/paragraph';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import type { HTMLAttributes } from 'react';
 import './TermsList.css';
 

@@ -1,6 +1,6 @@
 import type { Element } from 'hast';
 import { isElement } from 'hast-util-is-element';
-import { addClassName } from './_add-class-name';
+import { addClassName } from './_add-class-name.ts';
 
 export function heading(element: Element) {
   if (isElement(element, ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']) === false) return;

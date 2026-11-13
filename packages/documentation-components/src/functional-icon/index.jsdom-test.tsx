@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import * as functionalIcons from './index';
+import * as functionalIcons from './index.tsx';
 
 import '@testing-library/jest-dom/vitest';
 import { render } from '@testing-library/react';

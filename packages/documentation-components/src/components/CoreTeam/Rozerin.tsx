@@ -1,5 +1,5 @@
-import { Paragraph } from '../../paragraph/paragraph';
-import { Link } from '../../link/link';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
+import { Link } from '../../link/link.tsx';
 import type { TeamMember } from './TeamMember';
 
 const Rozerin: TeamMember = {

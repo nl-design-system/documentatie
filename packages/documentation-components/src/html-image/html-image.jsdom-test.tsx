@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, test, vi } from 'vitest';
 import { render, screen, cleanup } from '@testing-library/react';
-import { HTMLImage } from './html-image';
+import { HTMLImage } from './html-image.tsx';
 import '@testing-library/jest-dom/vitest';
 
 afterEach(() => {

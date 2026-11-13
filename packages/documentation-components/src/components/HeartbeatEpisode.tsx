@@ -1,8 +1,8 @@
 import HeartbeatJSON from '../../../../docs/community/events/heartbeat/heartbeat.json';
-import { VideoPlayer } from './VideoPlayer';
-import { Heading, type HeadingProps } from '../heading/heading';
-import { Link } from '../link/link';
-import { Paragraph } from '../paragraph/paragraph';
+import { VideoPlayer } from './VideoPlayer.tsx';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import Markdown from 'react-markdown';
 
 interface Heartbeat {

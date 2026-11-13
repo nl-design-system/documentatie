@@ -1,13 +1,13 @@
-import { Accordion, AccordionSection } from '../accordion/accordion';
+import { Accordion, AccordionSection } from '../accordion/accordion.tsx';
 import { Checkbox, FormField, FormLabel, Fieldset } from '@utrecht/component-library-react';
-import { Heading } from '../heading/heading';
-import { Paragraph } from '../paragraph/paragraph';
-import { UnorderedList } from '../unordered-list/unordered-list';
+import { Heading } from '../heading/heading.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { UnorderedList } from '../unordered-list/unordered-list.tsx';
 import { useEffect, useState, type SyntheticEvent } from 'react';
-import { COMPONENT_STATES } from '../utils';
-import { EstafetteBadge } from '../components/EstafetteBadge';
+import { COMPONENT_STATES } from '../utils.ts';
+import { EstafetteBadge } from '../components/EstafetteBadge.tsx';
 import './component-overview-filter.css';
-import { Button } from '../button/button';
+import { Button } from '../button/button.tsx';
 
 const SEARCH_PARAM_FRAMEWORK = 'framework';
 const SEARCH_PARAM_STATUS = 'status';

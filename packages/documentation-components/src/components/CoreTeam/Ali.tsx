@@ -1,4 +1,4 @@
-import { Paragraph } from '../../paragraph/paragraph';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
 import type { TeamMember } from './TeamMember';
 
 const Ali: TeamMember = {

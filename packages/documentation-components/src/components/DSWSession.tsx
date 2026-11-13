@@ -1,10 +1,10 @@
-import { IconCalendarEvent } from '../functional-icon';
-import { ButtonLink } from '../button-link/button-link';
-import { Heading } from '../heading/heading';
-import { Paragraph } from '../paragraph/paragraph';
+import { IconCalendarEvent } from '../functional-icon/index.tsx';
+import { ButtonLink } from '../button-link/button-link.tsx';
+import { Heading } from '../heading/heading.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
-import { VideoPlayer } from './VideoPlayer';
+import { VideoPlayer } from './VideoPlayer.tsx';
 import './DSWSession.css';
 
 const date = new Date();

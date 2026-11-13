@@ -1,4 +1,4 @@
-import { formatTitle } from '../page-title/format';
+import { formatTitle } from '../page-title/format.ts';
 
 /**
  * Dispatch an `update-document-title` event. Once dispatched, the document
