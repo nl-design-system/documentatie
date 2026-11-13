@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-De link heeft geen inhoud en daardoor is er geen linktekst aanwezig voor hulpsoftware. Hierdoor weten gebruikers die gebruik maken van een screenreader niet waar de link naartoe gaat.
+Een screenreader heeft voor deze link geen tekst om voor te lezen. Screenreadergebruikers weten dan niet waar de link naartoe gaat.
