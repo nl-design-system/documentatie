@@ -25,7 +25,6 @@ export interface CanvasProps {
   defaultExpandedCode?: boolean;
   designTokens?: CSSProperties;
   code?: string;
-  copyCode?: 'allow' | 'deny';
   colorScheme?: 'dark' | 'light';
   forcedColorsAdjust?: boolean;
 
@@ -89,12 +88,10 @@ export const Canvas = ({
             <code className="language-html nl-code-block__code" dangerouslySetInnerHTML={{ __html: highlighed }} />
           </pre>
 
-          {/* Because of the arrow function syntax, the <Canvas> element can not be clientside rendered with client:load. therefore, the javascript allowing to copy the code is included in the `document.astro` file as a <script> element */}
-          {copyCode === 'allow' && (
-            <Button data-copy-code={_code} purpose="secondary">
-              Kopieer code
-            </Button>
-          )}
+          {/* <Canvas> is server-only, so copying is handled by a <script> in `document.astro`; `Guideline.css` hides the button in "dont" examples */}
+          <Button className="ma-canvas__copy-button" data-copy-code={_code} purpose="secondary">
+            Kopieer code
+          </Button>
         </AccordionSection>
       </Accordion>
     </div>
