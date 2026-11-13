@@ -1,5 +1,13 @@
 # @nl-design-system-unstable/documentation
 
+## 2.2.0
+
+### Minor Changes
+
+- e720888: Link naar Vlaanderen Design System geüpdatet.
+- 9c7ee31: Verwijzing kleurcontrast verwijst naar richtlijnen rondom kleur in plaats van Paragraph component.
+- e720888: NL Design System Baseline van november 2026.
+
 ## 2.1.0
 
 ### Minor Changes
