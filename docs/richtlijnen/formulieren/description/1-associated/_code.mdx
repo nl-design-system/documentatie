@@ -6,38 +6,40 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Koppel een description aan het formulierveld, met aria-describedby.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="wachtwoord">Nieuw wachtwoord</label></p>
-      <p id="description-wachtwoord">
-        Kies een wachtwoord van minimaal 8 karakters lang.
-      </p>
-      <p>
-        <input
-          id="wachtwoord"
-          type="password"
-          name="nieuw-wachtwoord"
-          aria-describedby="description-wachtwoord"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="wachtwoord">Nieuw wachtwoord</label></p>
+    <p id="description-wachtwoord">
+      Kies een wachtwoord van minimaal 8 karakters lang.
+    </p>
+    <p>
+      <input
+        id="wachtwoord"
+        type="password"
+        name="nieuw-wachtwoord"
+        aria-describedby="description-wachtwoord"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Koppeling weglaten.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="wachtwoord0">Nieuw wachtwoord</label></p>
-      <p>Kies een wachtwoord van minimaal 8 karakters lang.</p>
-      <p>
-        <input
-          id="wachtwoord0"
-          type="password"
-          name="nieuw-wachtwoord"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="wachtwoord0">Nieuw wachtwoord</label></p>
+    <p>Kies een wachtwoord van minimaal 8 karakters lang.</p>
+    <p>
+      <input
+        id="wachtwoord0"
+        type="password"
+        name="nieuw-wachtwoord"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

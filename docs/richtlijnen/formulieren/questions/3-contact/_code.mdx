@@ -6,45 +6,47 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Naast een telefoonnummer ook een e-mailadres uitvragen.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="telefoon1">Uw telefoonnummer</label></p>
-      <p>
-        <input
-          id="telefoon1"
-          type="tel"
-          name="telefoon"
-          autocomplete="tel"
-        />
-      </p>
-      <p><label for="email1">Uw e-mailadres</label></p>
-      <p>
-        <input
-          id="email1"
-          type="email"
-          name="email"
-          autocomplete="email"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="telefoon1">Uw telefoonnummer</label></p>
+    <p>
+      <input
+        id="telefoon1"
+        type="tel"
+        name="telefoon"
+        autocomplete="tel"
+      />
+    </p>
+    <p><label for="email1">Uw e-mailadres</label></p>
+    <p>
+      <input
+        id="email1"
+        type="email"
+        name="email"
+        autocomplete="email"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Alleen een telefoonnummer uitvragen.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="telefoon2">Uw telefoonnummer (verplicht)</label></p>
-      <p>
-        <input
-          id="telefoon2"
-          type="tel"
-          name="telefoon"
-          autocomplete="tel"
-          aria-required="true"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="telefoon2">Uw telefoonnummer (verplicht)</label></p>
+    <p>
+      <input
+        id="telefoon2"
+        type="tel"
+        name="telefoon"
+        autocomplete="tel"
+        aria-required="true"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

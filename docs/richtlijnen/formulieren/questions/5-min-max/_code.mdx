@@ -6,20 +6,21 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Geef de mogelijkheid korte en lange teksten in te vullen.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="woonplaats1">Uw woonplaats</label></p>
-      <p>
-        <input
-          id="woonplaats1"
-          type="text"
-          name="woonplaats"
-          autocomplete="address-level2"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="woonplaats1">Uw woonplaats</label></p>
+    <p>
+      <input
+        id="woonplaats1"
+        type="text"
+        name="woonplaats"
+        autocomplete="address-level2"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -27,21 +28,22 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Limiteer het maximaal aantal in te voeren tekens."
   description="Mensen uit Gasselterboerveenschemond of Westerhaar-Vriezenveensewijk willen ook graag hun woonplaats invoeren."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="woonplaats2">Uw woonplaats</label></p>
-      <p>
-        <input
-          id="woonplaats2"
-          type="text"
-          name="email"
-          maxlength="20"
-          autocomplete="address-level2"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="woonplaats2">Uw woonplaats</label></p>
+    <p>
+      <input
+        id="woonplaats2"
+        type="text"
+        name="email"
+        maxlength="20"
+        autocomplete="address-level2"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -49,19 +51,20 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Limiteer het minimaal aantal in te voeren tekens."
   description="Jo, Bo en X willen ook graag hun voornaam invullen."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="voornaam1">Je voornaam</label></p>
-      <p>
-        <input
-          id="voornaam1"
-          type="text"
-          name="voornaam"
-          minlength="3"
-          autocomplete="given-name"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="voornaam1">Je voornaam</label></p>
+    <p>
+      <input
+        id="voornaam1"
+        type="text"
+        name="voornaam"
+        minlength="3"
+        autocomplete="given-name"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

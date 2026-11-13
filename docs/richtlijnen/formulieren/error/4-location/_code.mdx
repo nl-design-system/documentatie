@@ -5,43 +5,45 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   appearance="do"
   title="Plaats alle descriptions, ook de foutmeldingen, op een consistente plek, liefst tussen het label en het formulierveld."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="wachtwoord2">Nieuw wachtwoord</label></p>
-      <p id="description-wachtwoord2">
-        Kies een wachtwoord van minimaal 8 karakters lang.
-      </p>
-      <p id="error-wachtwoord2">Invoerfout: Je gekozen wachtwoord is te kort.</p>
-      <p>
-        <input
-          id="wachtwoord2"
-          type="password"
-          name="nieuw-wachtwoord"
-          aria-describedby="description-wachtwoord2 error-wachtwoord2"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="wachtwoord2">Nieuw wachtwoord</label></p>
+    <p id="description-wachtwoord2">
+      Kies een wachtwoord van minimaal 8 karakters lang.
+    </p>
+    <p id="error-wachtwoord2">Invoerfout: Je gekozen wachtwoord is te kort.</p>
+    <p>
+      <input
+        id="wachtwoord2"
+        type="password"
+        name="nieuw-wachtwoord"
+        aria-describedby="description-wachtwoord2 error-wachtwoord2"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Description boven het formulierveld en foutmelding eronder plaatsen.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="wachtwoord4">Nieuw wachtwoord</label></p>
-      <p id="description-wachtwoord4">
-        Kies een wachtwoord van minimaal 8 karakters lang.
-      </p>
-      <p>
-        <input
-          id="wachtwoord4"
-          type="password"
-          name="nieuw-wachtwoord"
-          aria-describedby="description-wachtwoord4 error-wachtwoord4"
-        />
-      </p>
-      <p id="error-wachtwoord4">Invoerfout: Je gekozen wachtwoord is te kort.</p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="wachtwoord4">Nieuw wachtwoord</label></p>
+    <p id="description-wachtwoord4">
+      Kies een wachtwoord van minimaal 8 karakters lang.
+    </p>
+    <p>
+      <input
+        id="wachtwoord4"
+        type="password"
+        name="nieuw-wachtwoord"
+        aria-describedby="description-wachtwoord4 error-wachtwoord4"
+      />
+    </p>
+    <p id="error-wachtwoord4">Invoerfout: Je gekozen wachtwoord is te kort.</p>
+    ```
+
+  </Canvas>
 </Guideline>

@@ -6,19 +6,20 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Het autocomplete-attribuut gebruiken.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="voornaam">Je voornaam</label></p>
-      <p>
-        <input
-          id="voornaam"
-          type="text"
-          autocomplete="given-name"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="voornaam">Je voornaam</label></p>
+    <p>
+      <input
+        id="voornaam"
+        type="text"
+        autocomplete="given-name"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -26,16 +27,17 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Het autocomplete-attribuut niet gebruiken."
   description="Het input type alleen is hier niet voldoende om te voldoen aan WCAG."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="telefoon">Uw telefoonnummer</label></p>
-      <p>
-        <input
-          id="telefoon"
-          type="tel"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="telefoon">Uw telefoonnummer</label></p>
+    <p>
+      <input
+        id="telefoon"
+        type="tel"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

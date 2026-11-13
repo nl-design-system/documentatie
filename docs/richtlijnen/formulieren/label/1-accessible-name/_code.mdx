@@ -6,38 +6,40 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Koppel het label aan het formulierveld.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="kleur3">Wat is je lievelingskleur?</label></p>
-      <p>
-        <input
-          type="text"
-          id="kleur3"
-          name="lievelingskleur"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="kleur3">Wat is je lievelingskleur?</label></p>
+    <p>
+      <input
+        type="text"
+        id="kleur3"
+        name="lievelingskleur"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="do" title="Koppel het label aan het formulierveld (select).">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="kleur4">Wat is je lievelingskleur?</label></p>
-      <p>
-        <select
-          id="kleur4"
-          name="lievelingskleur"
-        >
-          <option>Rood</option>
-          <option>Blauw</option>
-          <option>Wit</option>
-        </select>
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="kleur4">Wat is je lievelingskleur?</label></p>
+    <p>
+      <select
+        id="kleur4"
+        name="lievelingskleur"
+      >
+        <option>Rood</option>
+        <option>Blauw</option>
+        <option>Wit</option>
+      </select>
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -46,20 +48,21 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   description="De for en id koppeling werkt alleen met een label-element."
 >
   {/* Only the double data-test-axe="false" seems to work */}
-  <Canvas
-    language="html"
-    code={`
-      <div data-test-axe="false">
-        <div for="kleur5">Wat is je lievelingskleur?</div>
-        <input
-          type="text"
-          id="kleur5"
-          name="lievelingskleur"
-          data-test-axe="false"
-        />
-      </div>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <div data-test-axe="false">
+      <div for="kleur5">Wat is je lievelingskleur?</div>
+      <input
+        type="text"
+        id="kleur5"
+        name="lievelingskleur"
+        data-test-axe="false"
+      />
+    </div>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -67,22 +70,23 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Een label zonder gekoppelde input. Door het label-element te gebruiken zonder for mis je de koppeling tussen het label en de input voor mensen die de visuele context niet waarnemen."
 >
   {/* Only the double data-test-axe="false" seems to work */}
-  <Canvas
-    language="html"
-    code={`
-      <div data-test-axe="false">
-        <p><label>Wat is je lievelingskleur?</label></p>
-        <p>
-          <select
-            data-test-axe="false"
-            name="lievelingskleur"
-          >
-            <option>Rood</option>
-            <option>Blauw</option>
-            <option>Wit</option>
-          </select>
-        </p>
-      </div>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <div data-test-axe="false">
+      <p><label>Wat is je lievelingskleur?</label></p>
+      <p>
+        <select
+          data-test-axe="false"
+          name="lievelingskleur"
+        >
+          <option>Rood</option>
+          <option>Blauw</option>
+          <option>Wit</option>
+        </select>
+      </p>
+    </div>
+    ```
+
+  </Canvas>
 </Guideline>

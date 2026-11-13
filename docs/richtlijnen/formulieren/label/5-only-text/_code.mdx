@@ -6,35 +6,37 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="De link buiten het label plaatsen.">
-  <Canvas
-    language="html"
-    code={`
-      <p><a href="#">Onze algemene leveringsvoorwaarden</a></p>
-      <p>
-        <input
-          id="alv1"
-          type="checkbox"
-        />
-        <label for="alv1">Ik ga akkoord met de algemene leveringsvoorwaarden</label>
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><a href="#">Onze algemene leveringsvoorwaarden</a></p>
+    <p>
+      <input
+        id="alv1"
+        type="checkbox"
+      />
+      <label for="alv1">Ik ga akkoord met de algemene leveringsvoorwaarden</label>
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="De link binnen het label plaatsen.">
-  <Canvas
-    language="html"
-    code={`
-      <p>
-        <input
-          id="alv2"
-          type="checkbox"
-        />
-        <label for="alv2">
-          Ik ga akkoord met de
-          <a href="#">algemene leveringsvoorwaarden</a>
-        </label>
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p>
+      <input
+        id="alv2"
+        type="checkbox"
+      />
+      <label for="alv2">
+        Ik ga akkoord met de
+        <a href="#">algemene leveringsvoorwaarden</a>
+      </label>
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

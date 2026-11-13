@@ -6,23 +6,24 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Leg uit hoe een veld in te vullen." description="Bijvoorbeeld in de description.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="ww">Nieuw wachtwoord</label></p>
-      <p id="ww_description">
-        Minimaal 8 karakters, waarvan 2 cijfers en 1 hoofdletter.
-      </p>
-      <p>
-        <input
-          type="password"
-          id="ww"
-          name="wachtwoord"
-          aria-describedby="ww_description"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="ww">Nieuw wachtwoord</label></p>
+    <p id="ww_description">
+      Minimaal 8 karakters, waarvan 2 cijfers en 1 hoofdletter.
+    </p>
+    <p>
+      <input
+        type="password"
+        id="ww"
+        name="wachtwoord"
+        aria-describedby="ww_description"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -30,19 +31,20 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Wijze van invullen weglaten."
   description="Laat de gebruiker niet raden of pas bij de foutmeldingen ontdekken wat er mis is."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="ww2">Nieuw wachtwoord</label></p>
-      <p>
-        <input
-          type="password"
-          id="ww2"
-          name="wachtwoord"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="ww2">Nieuw wachtwoord</label></p>
+    <p>
+      <input
+        type="password"
+        id="ww2"
+        name="wachtwoord"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -50,18 +52,19 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Wijze van invullen alleen in de placeholder zetten."
   description="Zeker als de wijze van invullen precies goed moet zijn."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="geboortedatum2">Geboortedatum</label></p>
-      <p>
-        <input
-          type="text"
-          id="geboortedatum2"
-          name="geboortedatum"
-          placeholder="dd/mm/jjjj"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="geboortedatum2">Geboortedatum</label></p>
+    <p>
+      <input
+        type="text"
+        id="geboortedatum2"
+        name="geboortedatum"
+        placeholder="dd/mm/jjjj"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

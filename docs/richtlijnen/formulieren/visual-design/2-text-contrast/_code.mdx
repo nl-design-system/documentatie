@@ -9,21 +9,23 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   description="Dit voorbeeld heeft [een contrast van 5.54:1](/contrast/?color=%23006FA1&background-color=%23ffffff)"
 >
   <Canvas
-    language="html"
     designTokens={{
       "--utrecht-form-label-color": "#006FA1",
     }}
-    code={`
-      <p><label for="naam1">Uw naam</label></p>
-      <p>
-        <input
-          type="text"
-          id="naam1"
-          autocomplete="name"
-        />
-      </p>
-    `}
-  />
+  >
+
+    ```html
+    <p><label for="naam1">Uw naam</label></p>
+    <p>
+      <input
+        type="text"
+        id="naam1"
+        autocomplete="name"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -32,26 +34,28 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   description="Dit voorbeeld heeft [een contrast van 2.62:1](/contrast/?color=%23999999&background-color=%23f8f5f1)"
 >
   <Canvas
-    language="html"
     designTokens={{
       "--utrecht-form-label-color": "#999999",
     }}
-    code={`
-      <p>
-        <label
-          data-test-axe="false"
-          for="naam2"
-        >
-          Uw naam
-        </label>
-      </p>
-      <p>
-        <input
-          type="text"
-          id="naam2"
-          autocomplete="name"
-        />
-      </p>
-    `}
-  />
+  >
+
+    ```html
+    <p>
+      <label
+        data-test-axe="false"
+        for="naam2"
+      >
+        Uw naam
+      </label>
+    </p>
+    <p>
+      <input
+        type="text"
+        id="naam2"
+        autocomplete="name"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
