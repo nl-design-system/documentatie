@@ -1,7 +1,7 @@
 ---
 title: Tips voor NL Design System in aanbestedingen
 title_sm: Aanbestedingen
-hide_table_of_contents: true
+page_layout: overview
 navigation_order: 2
 description: Hoe kun je NL Design System opnemen, welke niveaus kun je kiezen en hoe krijg je de juiste expertise?
 keywords:

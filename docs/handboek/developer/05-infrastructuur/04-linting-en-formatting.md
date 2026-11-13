@@ -1,6 +1,5 @@
 ---
 title: Linting en code formatting
-hide_table_of_contents: false
 description: Linting en formatting van code
 slug: /linting-en-code-formatting/
 keywords:

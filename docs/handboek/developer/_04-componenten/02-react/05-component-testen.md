@@ -1,6 +1,5 @@
 ---
 title: React component testen
-hide_table_of_contents: false
 description: Eigen React component testen
 keywords:
   - developer

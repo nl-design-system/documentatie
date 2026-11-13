@@ -1,7 +1,7 @@
 ---
 title: Meedoen als organisatie
 title_sm: Meedoen
-hide_table_of_contents: true
+page_layout: overview
 navigation_order: 2
 description: Meedoen als organisatie
 keywords:

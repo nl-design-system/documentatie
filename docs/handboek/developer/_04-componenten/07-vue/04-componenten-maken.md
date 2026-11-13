@@ -1,6 +1,5 @@
 ---
 title: Vue.js component maken
-hide_table_of_contents: false
 description: Hoe kun je een Vue.js component maken voor NL Design System
 keywords:
   - developer

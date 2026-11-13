@@ -1,6 +1,5 @@
 ---
 title: Architectuur
-hide_table_of_contents: false
 description: NL Design System architectuur
 slug: /handboek/developer/architectuur/
 ---

@@ -1,6 +1,6 @@
 ---
 title: Code of Conduct - Nederlands
-hide_table_of_contents: true
+page_layout: overview
 slug: /coc
 translations:
   en: /coc-en/

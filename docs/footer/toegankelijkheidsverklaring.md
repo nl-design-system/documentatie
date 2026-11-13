@@ -1,7 +1,6 @@
 ---
 title: Toegankelijkheid
 description: Toegankelijkheidsverklaring van nldesignsystem.nl
-hide_table_of_contents: false
 slug: /toegankelijkheidsverklaring
 ---
 

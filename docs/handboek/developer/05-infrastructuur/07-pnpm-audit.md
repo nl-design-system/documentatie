@@ -1,6 +1,5 @@
 ---
 title: Security audit voor npm
-hide_table_of_contents: false
 description: Hoe voorkom je dat je security vulnerabilities installeert?
 slug: /pnpm-audit
 keywords:

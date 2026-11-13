@@ -1,6 +1,5 @@
 ---
 title: GitHub teams en code owners
-hide_table_of_contents: false
 description: Het werken met GitHub teams en code owners binnen NL Design System
 slug: /handboek/developer/github-teams-en-code-owners/
 keywords:

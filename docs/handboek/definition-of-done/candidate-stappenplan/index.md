@@ -1,7 +1,6 @@
 ---
 title: Overzicht van de Candidate Definition of Done voor componenten
 title_sm: Candidate
-hide_table_of_contents: false
 navigation_order: 3
 description: Overzicht van de Definition of Done voor componenten
 slug: /handboek/estafettemodel/componenten/candidate

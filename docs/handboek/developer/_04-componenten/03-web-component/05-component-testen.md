@@ -1,6 +1,5 @@
 ---
 title: Web Component testen
-hide_table_of_contents: false
 description: Als developer Web Component testen
 keywords:
   - developer

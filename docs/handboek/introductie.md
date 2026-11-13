@@ -1,6 +1,5 @@
 ---
 title: NL Design System introductie
-hide_table_of_contents: false
 navigation_order: 1
 description: NL Design System bevat componenten, patronen en richtlijnen, aangevuld met vele huisstijlen van organisaties die meedoen. Allemaal basisonderdelen waarover je afspraken kunt maken, gebruikersonderzoek kunt doen en van elkaar kunt leren.
 keywords:

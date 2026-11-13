@@ -1,6 +1,5 @@
 ---
 title: Deprecation
-hide_table_of_contents: false
 description: Hoe en waarom je een package of specifieke versie als verouderd (deprecated) markeert op npm, zonder deze te verwijderen.
 slug: /handboek/developer/deprecation-conventie/
 keywords:

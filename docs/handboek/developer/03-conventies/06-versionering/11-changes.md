@@ -1,6 +1,5 @@
 ---
 title: "Semantic Versioning"
-hide_table_of_contents: false
 description: "Aanpak voor versiebeheer volgens SemVer: wanneer kies je voor een major, minor of patch release?"
 slug: /handboek/developer/semver-conventie/
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Vue.js component testen
-hide_table_of_contents: false
 description: Als developer Vue.js component testen
 keywords:
   - developer

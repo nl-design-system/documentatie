@@ -1,7 +1,6 @@
 ---
 title: EUPL 1.2 licentie
 title_sm: EUPL 1.2
-hide_table_of_contents: false
 navigation_order: 1
 description: NL Design System gebruikt de EUPL-1.2 licentie voor code en design.
 keywords:

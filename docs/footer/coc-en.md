@@ -1,7 +1,7 @@
 ---
 title: Code of Conduct - English
 lang: en
-hide_table_of_contents: true
+page_layout: overview
 slug: /coc-en
 translations:
   nl: /coc/

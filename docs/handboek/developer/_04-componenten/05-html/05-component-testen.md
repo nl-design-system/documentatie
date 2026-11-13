@@ -1,6 +1,5 @@
 ---
 title: HTML component testen
-hide_table_of_contents: false
 description: Als developer HTML component testen
 keywords:
   - developer

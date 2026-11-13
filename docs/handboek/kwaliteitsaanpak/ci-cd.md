@@ -1,6 +1,5 @@
 ---
 title: CI/CD
-hide_table_of_contents: false
 description: Uitleg over de CI/CD pipelines van NL Design System
 keywords:
   - ci

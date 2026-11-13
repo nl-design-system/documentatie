@@ -1,6 +1,5 @@
 ---
 title: Design Token conventie
-hide_table_of_contents: false
 description: Conventies voor het maken van Design Tokens
 slug: /handboek/developer/design-token-conventie/
 keywords:

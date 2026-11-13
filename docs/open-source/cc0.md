@@ -1,7 +1,6 @@
 ---
 title: Creative Commons 0 Universal licentie
 title_sm: Creative Commons 0
-hide_table_of_contents: false
 navigation_order: 1
 description: NL Design System gebruikt de CC0-1.0 licentie voor documentatie.
 keywords:

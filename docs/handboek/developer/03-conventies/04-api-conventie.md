@@ -1,6 +1,5 @@
 ---
 title: API conventie
-hide_table_of_contents: false
 description: Conventies voor het maken van API's
 slug: /handboek/developer/api-conventie/
 keywords:

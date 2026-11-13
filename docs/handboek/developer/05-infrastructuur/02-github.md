@@ -1,6 +1,5 @@
 ---
 title: GitHub
-hide_table_of_contents: false
 description: Waarom en hoe gebruikt NL Design System de tool Github?
 slug: /github
 keywords:

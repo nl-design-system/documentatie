@@ -1,6 +1,5 @@
 ---
 title: Componenten
-hide_table_of_contents: false
 description: NL Design System Componenten
 ---
 

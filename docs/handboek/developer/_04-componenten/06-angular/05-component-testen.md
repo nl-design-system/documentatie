@@ -1,6 +1,5 @@
 ---
 title: Angular component testen
-hide_table_of_contents: false
 description: Als developer Angular component testen
 keywords:
   - developer
