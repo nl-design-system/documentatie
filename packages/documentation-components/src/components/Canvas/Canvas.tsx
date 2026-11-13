@@ -1,7 +1,8 @@
+import prettierSync from '@prettier/sync';
 import { Root } from '@utrecht/root-react';
 import clsx from 'clsx';
 import Prism from 'prismjs';
-import { useId, type CSSProperties, type ReactNode } from 'react';
+import { useId, type CSSProperties } from 'react';
 import './Canvas.css';
 import '@utrecht/component-library-css/dist/html.css';
 import '@utrecht/root-css/dist/index.css';
@@ -23,11 +24,7 @@ export interface CanvasProps {
   className?: string;
   defaultExpandedCode?: boolean;
   designTokens?: CSSProperties;
-  // Not rendered: `remark-canvas-fix` converts `{() => …}` children in MDX into `code`
-  children?: ReactNode;
   code?: string;
-  rawCode?: string;
-  copyCode?: 'allow' | 'deny';
   colorScheme?: 'dark' | 'light';
   forcedColorsAdjust?: boolean;
 
@@ -45,20 +42,20 @@ export const Canvas = ({
   className,
   code = '<p>No code provided</p>',
   colorScheme,
-  copyCode,
   defaultExpandedCode,
   designTokens,
   forcedColorsAdjust = true,
   label,
   language,
-  rawCode,
 }: CanvasProps) => {
-  const _code = typeof code === 'string' ? code : rawCode || '';
-
-  const highlighed =
-    typeof code === 'string'
-      ? Prism.highlight(code, Prism.languages[language], language)
-      : Prism.highlight(rawCode || '', Prism.languages[language], language);
+  // Server-only: `@prettier/sync` runs prettier in a Node worker thread
+  const _code = prettierSync.format(code, {
+    embeddedLanguageFormatting: 'off',
+    htmlWhitespaceSensitivity: 'ignore',
+    parser: 'html',
+    singleAttributePerLine: true,
+  });
+  const highlighed = Prism.highlight(_code, Prism.languages[language], language);
 
   const example = (
     <Root
@@ -90,12 +87,10 @@ export const Canvas = ({
             <code className="language-html nl-code-block__code" dangerouslySetInnerHTML={{ __html: highlighed }} />
           </pre>
 
-          {/* Because of the arrow function syntax, the <Canvas> element can not be clientside rendered with client:load. therefore, the javascript allowing to copy the code is included in the `document.astro` file as a <script> element */}
-          {copyCode === 'allow' && (
-            <Button data-copy-code={_code} purpose="secondary">
-              Kopieer code
-            </Button>
-          )}
+          {/* <Canvas> is server-only, so copying is handled by a <script> in `document.astro`; `Guideline.css` hides the button in "dont" examples */}
+          <Button className="ma-canvas__copy-button" data-copy-code={_code} purpose="secondary">
+            Kopieer code
+          </Button>
         </AccordionSection>
       </Accordion>
     </div>

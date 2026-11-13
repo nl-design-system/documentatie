@@ -6,53 +6,52 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Formulier zonder tabindex.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <form>
-          <p>
-            <label htmlFor="naam1">Uw naam</label>
-          </p>
-          <p>
-            <input id="naam1" autoComplete="name" />
-          </p>
-          <p>
-            <label htmlFor="email1">Uw e-mailadres</label>
-          </p>
-          <p>
-            <input id="email1" autoComplete="email" />
-          </p>
-          <p>
-            <button>Stuur mij de nieuwsbrief!</button>
-          </p>
-        </form>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <form>
+        <p><label for="naam1">Uw naam</label></p>
+        <p>
+          <input
+            id="naam1"
+            autocomplete="name"
+          />
+        </p>
+        <p><label for="email1">Uw e-mailadres</label></p>
+        <p>
+          <input
+            id="email1"
+            autocomplete="email"
+          />
+        </p>
+        <p><button>Stuur mij de nieuwsbrief!</button></p>
+      </form>
+    `}
+  />
 </Guideline>
 
 <Guideline appearance="dont" title="Formulier met gebruik van een positieve tabindex.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <form>
-          <p>
-            <label htmlFor="naam2">Uw naam</label>
-          </p>
-          <p>
-            <input id="naam2" autoComplete="name" tabIndex="1" />
-          </p>
-          <p>
-            <label htmlFor="email2">Uw e-mailadres</label>
-          </p>
-          <p>
-            <input id="email2" autoComplete="email" />
-          </p>
-          <p>
-            <button>Stuur mij de nieuwsbrief!</button>
-          </p>
-        </form>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <form>
+        <p><label for="naam2">Uw naam</label></p>
+        <p>
+          <input
+            id="naam2"
+            autocomplete="name"
+            tabindex="1"
+          />
+        </p>
+        <p><label for="email2">Uw e-mailadres</label></p>
+        <p>
+          <input
+            id="email2"
+            autocomplete="email"
+          />
+        </p>
+        <p><button>Stuur mij de nieuwsbrief!</button></p>
+      </form>
+    `}
+  />
 </Guideline>

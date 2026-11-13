@@ -7,21 +7,25 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   appearance="do"
   title="De placeholder samen met tekst van de submitbutton gebruiken zichtbaar label in een kort zoekformulier."
 >
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label className="sr-only" htmlFor="header-search">
-            Zoek
-          </label>
-        </p>
-        <p>
-          <input id="header-search" placeholder="Zoek" type="search" />
-        </p>
-        <p>
-          <button>Zoek</button>
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p>
+        <label
+          class="sr-only"
+          for="header-search"
+        >
+          Zoek
+        </label>
+      </p>
+      <p>
+        <input
+          id="header-search"
+          placeholder="Zoek"
+          type="search"
+        />
+      </p>
+      <p><button>Zoek</button></p>
+    `}
+  />
 </Guideline>

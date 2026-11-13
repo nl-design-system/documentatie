@@ -242,6 +242,9 @@ importers:
       '@nl-design-system/component-progress':
         specifier: 1.1.16
         version: 1.1.16
+      '@prettier/sync':
+        specifier: 0.6.1
+        version: 0.6.1(prettier@3.8.1)
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
@@ -744,6 +747,9 @@ importers:
       '@nl-design-system-community/ma-task-list-react':
         specifier: 0.1.0
         version: 0.1.0(@babel/runtime@7.29.7)(react@18.3.1)
+      '@prettier/sync':
+        specifier: 0.6.1
+        version: 0.6.1(prettier@3.8.1)
       '@rijkshuisstijl-community/card-css':
         specifier: 1.0.0
         version: 1.0.0
@@ -1011,9 +1017,6 @@ importers:
 
   packages/documentation-markdown-plugins:
     dependencies:
-      '@prettier/sync':
-        specifier: 0.6.1
-        version: 0.6.1(prettier@3.8.1)
       hast:
         specifier: 1.0.0
         version: 1.0.0

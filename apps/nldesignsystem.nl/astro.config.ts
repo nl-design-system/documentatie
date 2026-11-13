@@ -3,7 +3,6 @@ import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import { remarkCanvasFix } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-canvas-fix/index.ts';
 import { clientLoadPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-client-load/index.ts';
 import { createSharedPlugins } from '@nl-design-system-community/documentation-markdown-plugins/src/shared-plugins.ts';
 import { defineConfig } from 'astro/config';
@@ -72,7 +71,7 @@ const markdownProcessor = unified({
 
 const mdxProcessor = unified({
   rehypePlugins: sharedPlugins.rehypePlugins,
-  remarkPlugins: [...sharedPlugins.remarkPlugins, remarkCanvasFix, mdxClientLoad],
+  remarkPlugins: [...sharedPlugins.remarkPlugins, mdxClientLoad],
 });
 
 // https://astro.build/config
@@ -133,6 +132,8 @@ export default defineConfig({
       noExternal: [/@rijkshuisstijl-community\/.*/],
     },
     ssr: {
+      // `@prettier/sync` (used by `Canvas`) uses a worker and should be external
+      external: ['@prettier/sync'],
       noExternal: [/@rijkshuisstijl-community\/.*/],
     },
   },

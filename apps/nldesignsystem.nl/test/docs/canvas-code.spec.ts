@@ -1,8 +1,8 @@
 import { expect, test } from '@playwright/test';
 
-const websiteURL = 'http://localhost:4321/private/content-test/canvas-arrow-function';
+const websiteURL = 'http://localhost:4321/private/content-test/canvas-code';
 
-test('renders Canvas preview from arrow function children', async ({ page }) => {
+test('renders Canvas preview from the code template string', async ({ page }) => {
   await page.goto(websiteURL);
 
   const example = page.locator('.ma-canvas__example').first();

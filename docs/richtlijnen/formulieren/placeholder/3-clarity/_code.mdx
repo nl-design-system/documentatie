@@ -6,31 +6,36 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Geen placeholder gebruiken als het label duidelijk genoeg is.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="voornaam1">Je voornaam</label>
-        </p>
-        <p>
-          <input autoComplete="given-name" id="voornaam1" name="voornaam" type="text" />
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p><label for="voornaam1">Je voornaam</label></p>
+      <p>
+        <input
+          autocomplete="given-name"
+          id="voornaam1"
+          name="voornaam"
+          type="text"
+        />
+      </p>
+    `}
+  />
 </Guideline>
 
 <Guideline appearance="dont" title="De labeltekst herhalen in de placeholder.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="voornaam2">Voornaam</label>
-        </p>
-        <p>
-          <input autoComplete="given-name" id="voornaam2" name="voornaam" placeholder="Voornaam" type="text" />
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p><label for="voornaam2">Voornaam</label></p>
+      <p>
+        <input
+          autocomplete="given-name"
+          id="voornaam2"
+          name="voornaam"
+          placeholder="Voornaam"
+          type="text"
+        />
+      </p>
+    `}
+  />
 </Guideline>

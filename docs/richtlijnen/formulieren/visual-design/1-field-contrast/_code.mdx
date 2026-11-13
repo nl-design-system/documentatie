@@ -14,14 +14,14 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
       "--utrecht-textbox-background-color": "#ffffff",
       "--utrecht-textbox-border-color": "#006FA1",
     }}
-  >
-    {() => (
-      <>
-        <label htmlFor="contrast-input-goed">Voorbeeld invoerveld met goed contrast</label>
-        <input type="text" id="contrast-input-goed" />
-      </>
-    )}
-  </Canvas>
+    code={`
+      <label for="contrast-input-goed">Voorbeeld invoerveld met goed contrast</label>
+      <input
+        type="text"
+        id="contrast-input-goed"
+      />
+    `}
+  />
 </Guideline>
 
 <Guideline
@@ -35,27 +35,36 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
       "--utrecht-radio-button-background-color": "#FFFFFF",
       "--utrecht-radio-button-border-color": "#006FA1",
     }}
-  >
-    {() => (
-      <>
-        <fieldset>
-          <legend>Kies je kleur</legend>
-          <div>
-            <input type="radio" id="radio1" name="kleur" />
-            <label htmlFor="radio1">Blauw</label>
-          </div>
-          <div>
-            <input type="radio" id="radio2" name="kleur" />
-            <label htmlFor="radio2">Groen</label>
-          </div>
-          <div>
-            <input type="radio" id="radio3" name="kleur" />
-            <label htmlFor="radio3">Rood</label>
-          </div>
-        </fieldset>
-      </>
-    )}
-  </Canvas>
+    code={`
+      <fieldset>
+        <legend>Kies je kleur</legend>
+        <div>
+          <input
+            type="radio"
+            id="radio1"
+            name="kleur"
+          />
+          <label for="radio1">Blauw</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="radio2"
+            name="kleur"
+          />
+          <label for="radio2">Groen</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="radio3"
+            name="kleur"
+          />
+          <label for="radio3">Rood</label>
+        </div>
+      </fieldset>
+    `}
+  />
 </Guideline>
 
 <Guideline
@@ -69,12 +78,14 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
       "--utrecht-textbox-background-color": "#ffffff",
       "--utrecht-textbox-border-color": "#f8f4f1",
     }}
-  >
-    {() => (
-      <>
-        <label htmlFor="contrast-input-slecht">Voorbeeld invoerveld met slecht contrast</label>
-        <input type="text" id="contrast-input-slecht" />
-      </>
-    )}
-  </Canvas>
+    code={`
+      <label for="contrast-input-slecht">
+        Voorbeeld invoerveld met slecht contrast
+      </label>
+      <input
+        type="text"
+        id="contrast-input-slecht"
+      />
+    `}
+  />
 </Guideline>

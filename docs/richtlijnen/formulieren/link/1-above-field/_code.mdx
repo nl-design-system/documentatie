@@ -6,35 +6,41 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="De link boven het gerelateerde invoerveld plaatsen.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <a href="#">Voorwaarden vrijwilligerswerk</a>
-          {"."}
-        </p>
-        <p>
-          <input type="checkbox" name="vrijwilliger" id="vrijwilliger" />
-          <label htmlFor="vrijwilliger">Ik wil vrijwilliger worden</label>
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p>
+        <a href="#">Voorwaarden vrijwilligerswerk</a>
+        .
+      </p>
+      <p>
+        <input
+          type="checkbox"
+          name="vrijwilliger"
+          id="vrijwilliger"
+        />
+        <label for="vrijwilliger">Ik wil vrijwilliger worden</label>
+      </p>
+    `}
+  />
 </Guideline>
 
 <Guideline appearance="dont" title="De link onder het gerelateerde invoerveld plaatsen.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <input type="checkbox" name="vrijwilliger" id="vrijwilliger" />
-          <label htmlFor="vrijwilliger">Ik wil vrijwilliger worden</label>
-        </p>
-        <p>
-          <a href="#">Voorwaarden vrijwilligerswerk</a>
-          {"."}
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p>
+        <input
+          type="checkbox"
+          name="vrijwilliger"
+          id="vrijwilliger"
+        />
+        <label for="vrijwilliger">Ik wil vrijwilliger worden</label>
+      </p>
+      <p>
+        <a href="#">Voorwaarden vrijwilligerswerk</a>
+        .
+      </p>
+    `}
+  />
 </Guideline>

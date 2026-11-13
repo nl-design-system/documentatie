@@ -6,18 +6,19 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Het zichtbare label is de toegankelijke naam.">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="hond">Hoe heet je hond</label>
-        </p>
-        <p>
-          <input type="text" id="hond" name="hond" />
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p><label for="hond">Hoe heet je hond</label></p>
+      <p>
+        <input
+          type="text"
+          id="hond"
+          name="hond"
+        />
+      </p>
+    `}
+  />
 </Guideline>
 
 <Guideline
@@ -25,8 +26,9 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Alleen een placeholder gebruiken om te laten zien wat de gebruiker moet invullen,"
   description="terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft."
 >
-  <Canvas language="html">
-    {() => (
+  <Canvas
+    language="html"
+    code={`
       <p>
         <input
           type="text"
@@ -35,8 +37,8 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
           placeholder="Wat is je lievelingskleur"
         />
       </p>
-    )}
-  </Canvas>
+    `}
+  />
 </Guideline>
 
 <Guideline
@@ -44,12 +46,15 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Alleen losse tekst gebruiken om te laten zien wat de gebruiker moet invullen,"
   description="terwijl de onzichtbare toegankelijke naam een hele andere inhoud heeft."
 >
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>Zoek</p>
-        <input type="search" name="trefwoord" aria-label="Trefwoord" />
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p>Zoek</p>
+      <input
+        type="search"
+        name="trefwoord"
+        aria-label="Trefwoord"
+      />
+    `}
+  />
 </Guideline>

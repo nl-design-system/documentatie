@@ -78,3 +78,7 @@ p + .nlds-guideline {
   --nlds-canvas-code-block-cursor: not-allowed;
   --nlds-canvas-code-block-user-select: none;
 }
+
+.nlds-guideline--dont .ma-canvas__copy-button {
+  display: none;
+}

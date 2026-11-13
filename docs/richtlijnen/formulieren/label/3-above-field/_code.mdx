@@ -6,26 +6,28 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="dont" title="Het label inconsequent plaatsen in een formulier (visueel en in code).">
-  <Canvas language="html">
-    {() => (
-      <>
-        <p>
-          <label htmlFor="lievelingskleur">Wat is je lievelingskleur?</label>
-        </p>
-        <p>
-          <select name="lievelingskleur" id="lievelingskleur">
-            <option>Rood</option>
-            <option>Blauw</option>
-            <option>Wit</option>
-          </select>
-        </p>
-        <p>
-          <input type="text" id="dier" name="lievelingsdier" />
-        </p>
-        <p>
-          <label htmlFor="dier">Wat is je lievelingsdier?</label>
-        </p>
-      </>
-    )}
-  </Canvas>
+  <Canvas
+    language="html"
+    code={`
+      <p><label for="lievelingskleur">Wat is je lievelingskleur?</label></p>
+      <p>
+        <select
+          name="lievelingskleur"
+          id="lievelingskleur"
+        >
+          <option>Rood</option>
+          <option>Blauw</option>
+          <option>Wit</option>
+        </select>
+      </p>
+      <p>
+        <input
+          type="text"
+          id="dier"
+          name="lievelingsdier"
+        />
+      </p>
+      <p><label for="dier">Wat is je lievelingsdier?</label></p>
+    `}
+  />
 </Guideline>
