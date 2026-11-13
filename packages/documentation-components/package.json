@@ -44,6 +44,7 @@
     "@nl-design-system-community/design-tokens-schema": "2.1.0",
     "@nl-design-system-community/documentation-i18n": "workspace:*",
     "@nl-design-system-community/documentation-index": "workspace:*",
+    "@nl-design-system-community/documentation-markdown-plugins": "workspace:*",
     "@nl-design-system-community/editor-react": "1.2.0",
     "@nl-design-system-community/ma-task-list-css": "0.1.0",
     "@nl-design-system-community/ma-task-list-react": "0.1.0",

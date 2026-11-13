@@ -729,6 +729,9 @@ importers:
       '@nl-design-system-community/documentation-index':
         specifier: workspace:*
         version: link:../documentation-index
+      '@nl-design-system-community/documentation-markdown-plugins':
+        specifier: workspace:*
+        version: link:../documentation-markdown-plugins
       '@nl-design-system-community/editor-react':
         specifier: 1.2.0
         version: 1.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
