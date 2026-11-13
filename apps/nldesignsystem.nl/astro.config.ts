@@ -3,6 +3,7 @@ import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
+import { remarkCanvasCode } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-canvas-code/index.ts';
 import { clientLoadPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-client-load/index.ts';
 import { createSharedPlugins } from '@nl-design-system-community/documentation-markdown-plugins/src/shared-plugins.ts';
 import { defineConfig } from 'astro/config';
@@ -71,7 +72,7 @@ const markdownProcessor = unified({
 
 const mdxProcessor = unified({
   rehypePlugins: sharedPlugins.rehypePlugins,
-  remarkPlugins: [...sharedPlugins.remarkPlugins, mdxClientLoad],
+  remarkPlugins: [...sharedPlugins.remarkPlugins, remarkCanvasCode, mdxClientLoad],
 });
 
 // https://astro.build/config

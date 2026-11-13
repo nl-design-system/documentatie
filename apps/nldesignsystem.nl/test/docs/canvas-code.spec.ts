@@ -9,3 +9,9 @@ test('renders Canvas preview from the code template string', async ({ page }) =>
   await expect(example).toBeVisible();
   await expect(example).toContainText('Hello from Canvas');
 });
+
+test('renders Canvas preview from a code block child', async ({ page }) => {
+  await page.goto(websiteURL);
+
+  await expect(page.locator('.ma-canvas__example', { hasText: 'Hello from a code block' })).toBeVisible();
+});
