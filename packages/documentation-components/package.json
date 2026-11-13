@@ -48,6 +48,7 @@
     "@nl-design-system-community/editor-react": "1.2.0",
     "@nl-design-system-community/ma-task-list-css": "0.1.0",
     "@nl-design-system-community/ma-task-list-react": "0.1.0",
+    "@prettier/sync": "0.6.1",
     "@rijkshuisstijl-community/card-css": "1.0.0",
     "@rijkshuisstijl-community/card-react": "1.0.0",
     "@tabler/icons-react": "3.36.1",

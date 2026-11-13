@@ -1,7 +1,8 @@
+import prettierSync from '@prettier/sync';
 import { Root } from '@utrecht/root-react';
 import clsx from 'clsx';
 import Prism from 'prismjs';
-import { useId, type CSSProperties, type ReactNode } from 'react';
+import { useId, type CSSProperties } from 'react';
 import './Canvas.css';
 import '@utrecht/component-library-css/dist/html.css';
 import '@utrecht/root-css/dist/index.css';
@@ -23,10 +24,7 @@ export interface CanvasProps {
   className?: string;
   defaultExpandedCode?: boolean;
   designTokens?: CSSProperties;
-  // Not rendered: `remark-canvas-fix` converts `{() => …}` children in MDX into `code`
-  children?: ReactNode;
   code?: string;
-  rawCode?: string;
   copyCode?: 'allow' | 'deny';
   colorScheme?: 'dark' | 'light';
   forcedColorsAdjust?: boolean;
@@ -51,14 +49,15 @@ export const Canvas = ({
   forcedColorsAdjust = true,
   label,
   language,
-  rawCode,
 }: CanvasProps) => {
-  const _code = typeof code === 'string' ? code : rawCode || '';
-
-  const highlighed =
-    typeof code === 'string'
-      ? Prism.highlight(code, Prism.languages[language], language)
-      : Prism.highlight(rawCode || '', Prism.languages[language], language);
+  // Server-only: `@prettier/sync` runs prettier in a Node worker thread
+  const _code = prettierSync.format(code, {
+    embeddedLanguageFormatting: 'off',
+    htmlWhitespaceSensitivity: 'ignore',
+    parser: 'html',
+    singleAttributePerLine: true,
+  });
+  const highlighed = Prism.highlight(_code, Prism.languages[language], language);
 
   const example = (
     <Root

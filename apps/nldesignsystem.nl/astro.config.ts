@@ -133,6 +133,8 @@ export default defineConfig({
       noExternal: [/@rijkshuisstijl-community\/.*/],
     },
     ssr: {
+      // `@prettier/sync` (used by `Canvas`) uses a worker and should be external
+      external: ['@prettier/sync'],
       noExternal: [/@rijkshuisstijl-community\/.*/],
     },
   },
