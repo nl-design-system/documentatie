@@ -1017,9 +1017,6 @@ importers:
 
   packages/documentation-markdown-plugins:
     dependencies:
-      '@prettier/sync':
-        specifier: 0.6.1
-        version: 0.6.1(prettier@3.8.1)
       hast:
         specifier: 1.0.0
         version: 1.0.0
