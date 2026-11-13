@@ -1,8 +1,8 @@
 import { IconCalendarEvent, IconUser } from '../functional-icon';
 import { Paragraph } from '../paragraph/paragraph';
 import { ButtonLink } from '../button-link/button-link';
+import { Link } from '../link/link';
 import {
-  Link,
   Table,
   TableBody,
   TableCaption,
