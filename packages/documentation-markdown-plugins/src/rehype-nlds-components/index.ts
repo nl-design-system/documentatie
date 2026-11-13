@@ -1,4 +1,5 @@
 import type { Root, Element } from 'hast';
+import { isElement } from 'hast-util-is-element';
 import { visit } from 'unist-util-visit';
 import { blockquote } from './blockquote.ts';
 import { code } from './code.ts';
@@ -12,9 +13,8 @@ import { orderedList } from './ordered-list.ts';
 import { paragraph } from './paragraph.ts';
 import { pre } from './pre.ts';
 import { strong } from './strong.ts';
-import { unorderedList } from './unordered-list.ts';
 import { table } from './table.ts';
-import { isElement } from 'hast-util-is-element';
+import { unorderedList } from './unordered-list.ts';
 
 /**
  * A rehype plugin to transform HTML generated from Markdown so that it uses

@@ -1,16 +1,12 @@
+import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
 import { UnorderedList, UnorderedListItem } from '@utrecht/component-library-react';
+import clsx from 'clsx';
+import { Accordion, AccordionSection } from '../accordion/accordion.tsx';
+import { Card } from '../card/card.tsx';
+import { Heading, HeadingProps } from '../heading/heading.tsx';
 import { LinkList } from '../link-list/link-list.tsx';
 import { Link } from '../link/link.tsx';
-import { Heading, HeadingProps } from '../heading/heading.tsx';
 import { Paragraph } from '../paragraph/paragraph.tsx';
-import clsx from 'clsx';
-import { BrandIcon } from './BrandIcon.tsx';
-import { CardGroup } from './CardGroup.tsx';
-import { Card } from '../card/card.tsx';
-import { ComponentProgress } from './ComponentProgress.tsx';
-import { TaskList, TaskListItem } from '@nl-design-system-community/ma-task-list-react/dist/ma-task-list.mjs';
-import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
-import '@nl-design-system-candidate/heading-css/heading.css';
 import {
   getProjectFrameworks,
   getRelayBoardDescription,
@@ -18,9 +14,13 @@ import {
   toKebabCase,
   type ComponentPageSectionProps,
 } from '../utils.ts';
+import { BrandIcon } from './BrandIcon.tsx';
+import '@nl-design-system-community/ma-task-list-css/dist/ma-task-list.css';
+import '@nl-design-system-candidate/heading-css/heading.css';
+import { CardGroup } from './CardGroup.tsx';
 import './ComponentPage.css';
+import { ComponentProgress } from './ComponentProgress.tsx';
 import relationMap from './relations.json';
-import { Accordion, AccordionSection } from '../accordion/accordion.tsx';
 import '../accordion/accordion.css';
 
 export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSectionProps) => {
@@ -44,7 +44,7 @@ export const DefinitionOfDone = ({ component, headingLevel }: ComponentPageSecti
           >
             <>
               <TaskList>
-                {project.tasks.map(({ checked, name, id }) => (
+                {project.tasks.map(({ id, name, checked }) => (
                   <TaskListItem checked={checked} title={name} key={id} description={getRelayBoardDescription(id)} />
                 ))}
               </TaskList>
@@ -110,7 +110,7 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                         links={links.flatMap((item) => {
                           const url = urlMap.get(item.name);
                           return url
-                            ? [{ children: url.desciption, icon: <BrandIcon brand={url.brand} />, href: item.value }]
+                            ? [{ children: url.desciption, href: item.value, icon: <BrandIcon brand={url.brand} /> }]
                             : [];
                         })}
                       />
@@ -125,8 +125,8 @@ export const Implementations = ({ component, headingLevel }: ComponentPageSectio
                         <LinkList
                           links={tasks.map((frameworkTask) => ({
                             children: frameworkTask.description,
-                            icon: <BrandIcon brand={frameworkTask.brand ?? ''} />,
                             href: frameworkTask.value,
+                            icon: <BrandIcon brand={frameworkTask.brand ?? ''} />,
                           }))}
                         />
                       </section>

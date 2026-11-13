@@ -1,8 +1,8 @@
-import { readFile } from 'node:fs/promises';
 import { createMarkdownProcessor, type MarkdownRenderer } from '@astrojs/markdown-remark';
 import { rehypeAbsoluteUrls } from '@nl-design-system-community/documentation-markdown-plugins/src/rehype-absolute-urls/index.ts';
 import { nldsComponentsPlugin } from '@nl-design-system-community/documentation-markdown-plugins/src/rehype-nlds-components/index.ts';
 import { remarkStripHtmlComments } from '@nl-design-system-community/documentation-markdown-plugins/src/remark-strip-html-comments/index.ts';
+import { readFile } from 'node:fs/promises';
 
 const siteUrl = 'https://nldesignsystem.nl/';
 
@@ -30,8 +30,8 @@ const siteUrl = 'https://nldesignsystem.nl/';
  */
 async function createProcessor(): Promise<MarkdownRenderer> {
   return createMarkdownProcessor({
-    remarkPlugins: [remarkStripHtmlComments],
     rehypePlugins: [nldsComponentsPlugin, rehypeAbsoluteUrls({ siteUrl })],
+    remarkPlugins: [remarkStripHtmlComments],
     syntaxHighlight: false,
   });
 }

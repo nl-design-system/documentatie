@@ -14,9 +14,9 @@ export type RouteExclusion = {
 
 export const exclusionGroups: Record<string, string[]> = {
   contrast: ['color-contrast'],
-  images: ['image-alt', 'image-redundant-alt'],
-  headings: ['heading-order', 'page-has-heading-one'],
   forms: ['label', 'select-name'],
+  headings: ['heading-order', 'page-has-heading-one'],
+  images: ['image-alt', 'image-redundant-alt'],
 };
 
 export const skippedRoutes: (string | RegExp)[] = ['/search/', '/handboek/designer/figma-changelog/'];
@@ -26,16 +26,16 @@ export const AXE_VIOLATION_IDS_NEXT: string[] = ['target-size', 'scrollable-regi
 
 export const exclusions: RouteExclusion[] = [
   {
-    routes: ['*'],
-    excludeIds: AXE_VIOLATION_IDS,
     description: 'Filter out axe-core violations not relevant to content or tested routes',
+    excludeIds: AXE_VIOLATION_IDS,
+    routes: ['*'],
   },
 ];
 
 export const exclusionsNext: RouteExclusion[] = [
   {
-    routes: [/zonder-front-end-framework/],
-    excludeIds: AXE_VIOLATION_IDS_NEXT,
     description: 'Filter out axe-core violations not relevant to content or tested routes',
+    excludeIds: AXE_VIOLATION_IDS_NEXT,
+    routes: [/zonder-front-end-framework/],
   },
 ];

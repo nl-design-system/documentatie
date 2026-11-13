@@ -1,10 +1,8 @@
-import { Paragraph } from '../../paragraph/paragraph.tsx';
 import type { TeamMember } from './TeamMember';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
 
 const Yolijn: TeamMember = {
   name: 'Yolijn van der Kolk',
-  role: 'Productmanager',
-  slack: { mention: '@Yolijn', id: 'U01B7T1F24S' },
   Description: () => (
     <>
       <Paragraph>
@@ -17,11 +15,13 @@ const Yolijn: TeamMember = {
       </Paragraph>
       <Paragraph>
         Ze verbindt verschillende organisaties en initiatieven aan elkaar en stimuleert samenwerking en kennisdeling
-        binnen de community. Risico's, escalaties, feedback en zaken rondom de Code of Conduct kunnen bij haar worden
-        gemeld.
+        binnen de community. Risico&apos;s, escalaties, feedback en zaken rondom de Code of Conduct kunnen bij haar
+        worden gemeld.
       </Paragraph>
     </>
   ),
+  role: 'Productmanager',
+  slack: { id: 'U01B7T1F24S', mention: '@Yolijn' },
 };
 
 export default Yolijn;

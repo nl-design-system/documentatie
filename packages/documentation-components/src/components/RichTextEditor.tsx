@@ -15,7 +15,7 @@ export const RichTextEditor = () => {
           <Editor>
             <div slot="content" hidden>
               <h1>Kopniveau 1</h1>
-              <p>Dit is een voorbeeld van de Clippy Editor met een Lit's React wrapper.</p>
+              <p>Dit is een voorbeeld van de Clippy Editor met een Lit&apos;s React wrapper.</p>
               <h3>Kopniveau 3</h3>
               <h3>Lijst zonder HTML-lijstopmaak</h3>
               <p>

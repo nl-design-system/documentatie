@@ -1,10 +1,10 @@
-import { Button } from '../button/button.tsx';
-import { Icon } from '../icon/icon.tsx';
-import { FormFieldErrorMessage } from '@utrecht/component-library-react';
-import { Textbox } from '../textbox/textbox.tsx';
-import { IconSearch } from '../functional-icon/index.tsx';
 import { i18n, type I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index.ts';
+import { FormFieldErrorMessage } from '@utrecht/component-library-react';
 import { useEffect, useState, type ChangeEvent, type FormEvent, type FormEventHandler } from 'react';
+import { Button } from '../button/button.tsx';
+import { IconSearch } from '../functional-icon/index.tsx';
+import { Icon } from '../icon/icon.tsx';
+import { Textbox } from '../textbox/textbox.tsx';
 import '@utrecht/textbox-css/dist/index.css';
 import './form.css';
 

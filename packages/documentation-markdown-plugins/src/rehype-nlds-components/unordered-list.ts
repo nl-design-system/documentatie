@@ -63,10 +63,10 @@ function whenTaskList(element: Element) {
         {
           children: [
             {
+              children: [],
               properties: {
                 d: 'M5 10c-.26 0-.51-.1-.71-.29l-4-4A.996.996 0 1 1 1.7 4.3l3.29 3.29 7.3-7.3A.996.996 0 1 1 13.7 1.7L5.71 9.71c-.2.2-.45.29-.71.29',
               },
-              children: [],
               tagName: 'path',
               type: 'element',
             },
@@ -86,12 +86,12 @@ function whenTaskList(element: Element) {
         {
           children: [
             {
+              children: [],
               properties: {
                 strokeWidth: '2',
                 d: 'M 0 2 H 14 M 1 2 V 14 M 0 13 H 14 M 3 15 H 14 M 13 2 V 14 M 15 4 V 16',
                 stroke: 'currentColor',
               },
-              children: [],
               tagName: 'path',
               type: 'element',
             },

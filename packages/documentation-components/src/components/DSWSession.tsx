@@ -1,9 +1,9 @@
-import { IconCalendarEvent } from '../functional-icon/index.tsx';
+import type { PropsWithChildren } from 'react';
+import clsx from 'clsx';
 import { ButtonLink } from '../button-link/button-link.tsx';
+import { IconCalendarEvent } from '../functional-icon/index.tsx';
 import { Heading } from '../heading/heading.tsx';
 import { Paragraph } from '../paragraph/paragraph.tsx';
-import clsx from 'clsx';
-import type { PropsWithChildren } from 'react';
 import { VideoPlayer } from './VideoPlayer.tsx';
 import './DSWSession.css';
 
@@ -46,12 +46,12 @@ interface Session {
 }
 
 export const DSWSession = ({
-  lang = 'nl',
-  headingLevel = 3,
-  allSpeakers,
   videoId,
-  children,
   allSessions,
+  allSpeakers,
+  children,
+  headingLevel = 3,
+  lang = 'nl',
   sessionId,
 }: PropsWithChildren<DSWSessionProps>) => {
   const session = allSessions?.find(({ uuid }) => sessionId === uuid);

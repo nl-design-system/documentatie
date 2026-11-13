@@ -1,14 +1,14 @@
 import { expect, test, type Page } from '@playwright/test';
 import { AxeResults } from 'axe-core';
-import { analyzeAccessibility, getPathnamesFromSitemap, getDisabledRules, saveViolationsReport } from './test-setup.ts';
 import { exclusionsNext } from './a11y-exclusions.ts';
+import { analyzeAccessibility, getPathnamesFromSitemap, getDisabledRules, saveViolationsReport } from './test-setup.ts';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
-  sitemapDir: './dist',
-  sitemap: '/sitemap-index.xml',
-  reportPath: './tmp/axe.next.dark.json',
   failOnImpact: ['critical', 'serious', 'moderate'],
+  reportPath: './tmp/axe.next.dark.json',
+  sitemap: '/sitemap-index.xml',
+  sitemapDir: './dist',
 };
 
 const violations: AxeResults[] = [];

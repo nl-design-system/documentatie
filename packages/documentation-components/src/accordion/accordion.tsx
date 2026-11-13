@@ -1,11 +1,11 @@
 import '@utrecht/accordion-css/dist/index.css';
 import '@nl-design-system-candidate/button-css/button.css';
+import type { HTMLAttributes, ReactNode, ElementType } from 'react';
+import { Heading, type HeadingProps } from '@nl-design-system-candidate/heading-react';
 import clsx from 'clsx';
 import { forwardRef } from 'react';
-import type { HTMLAttributes, ReactNode, ElementType } from 'react';
 import { IconChevronDown } from '../functional-icon/index.tsx';
 import { Icon } from '../icon/icon.tsx';
-import { Heading, type HeadingProps } from '@nl-design-system-candidate/heading-react';
 import './accordion.css';
 
 export interface AccordionProps extends HTMLAttributes<HTMLDivElement> {
@@ -30,7 +30,7 @@ export type AccordionLabelProps =
 export type AccordionSectionProps = HTMLAttributes<HTMLDetailsElement> &
   AccordionLabelProps & { classNamePanel?: string; open?: boolean };
 
-export const Accordion = forwardRef<HTMLDivElement, AccordionProps>(({ as, className, children, ...props }, ref) => {
+export const Accordion = forwardRef<HTMLDivElement, AccordionProps>(({ as, children, className, ...props }, ref) => {
   const Component = (as || 'div') as ElementType;
   const _className = clsx('ma-utrecht-accordion', 'utrecht-accordion', className);
 
@@ -41,13 +41,15 @@ export const Accordion = forwardRef<HTMLDivElement, AccordionProps>(({ as, class
   );
 });
 
+Accordion.displayName = 'Accordion';
+
 export const AccordionSection = ({
   className,
   classNamePanel,
-  label,
   heading,
-  headingLevel,
   headingApperance,
+  headingLevel,
+  label,
   ...props
 }: AccordionSectionProps) => {
   const _className = clsx('utrecht-accordion__section', className);

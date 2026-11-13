@@ -1,8 +1,8 @@
-import type { SearchResult } from './types.js';
-import { UnorderedList } from '../unordered-list/unordered-list.tsx';
-import { Card } from '../card/card.tsx';
-import DOMPurify from 'dompurify';
 import { Heading } from '@nl-design-system-candidate/heading-react';
+import DOMPurify from 'dompurify';
+import type { SearchResult } from './types.js';
+import { Card } from '../card/card.tsx';
+import { UnorderedList } from '../unordered-list/unordered-list.tsx';
 
 export interface SearchResultsProps {
   results: SearchResult;
@@ -34,11 +34,11 @@ export function SearchResults({ results, siteBaseUrl = '' }: SearchResultsProps)
             const href = new URL(hit.url, siteBaseUrl);
             const url = hit.url;
 
-            const item: Partial<SearchResultItem> = { heading, description, href, linkLabel, url };
+            const item: Partial<SearchResultItem> = { description, heading, href, linkLabel, url };
             return item;
           })
           .filter((item): item is SearchResultItem => item.heading !== undefined)
-          .map(({ heading, description, href, linkLabel, url }) => (
+          .map(({ description, heading, href, linkLabel, url }) => (
             <UnorderedList.Item key={url}>
               <>
                 <Card

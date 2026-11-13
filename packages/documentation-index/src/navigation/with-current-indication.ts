@@ -1,5 +1,5 @@
-import { isNavigationGroup, type NavigationGroup, type NavigationRoot } from './index.ts';
 import { getNavigationElement } from './get-navigation-element.ts';
+import { isNavigationGroup, type NavigationGroup, type NavigationRoot } from './index.ts';
 
 function markExpanded(group: NavigationGroup) {
   if (group.href !== '/') {
@@ -16,7 +16,7 @@ function markExpanded(group: NavigationGroup) {
  * Helper fuction that mark `NavigationElement`s with a `current` status based on the provided `pathname`
  */
 export async function withCurrentIndication(navigationRoot: Promise<NavigationRoot>, pathname: string) {
-  const { navigationTree, navigationList } = (await navigationRoot)();
+  const { navigationList, navigationTree } = (await navigationRoot)();
 
   const currentElement = getNavigationElement(navigationList, pathname);
   if (currentElement) {
@@ -36,5 +36,5 @@ export async function withCurrentIndication(navigationRoot: Promise<NavigationRo
     navigationTree.current = true;
   }
 
-  return { navigationTree, navigationList };
+  return { navigationList, navigationTree };
 }

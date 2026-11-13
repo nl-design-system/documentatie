@@ -10,10 +10,10 @@ interface CriteriaListProps {
 }
 
 export const CriteriaList = ({
-  testCategory,
   children,
-  headingLevel = 4,
   headingApperance = 'level-5',
+  headingLevel = 4,
+  testCategory,
 }: CriteriaListProps) => {
   return (
     <div className="ma-criteria-list">

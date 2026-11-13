@@ -1,6 +1,6 @@
 import type { APIContext, MiddlewareNext } from 'astro';
-import { createHash } from 'node:crypto';
 import * as cheerio from 'cheerio';
+import { createHash } from 'node:crypto';
 
 /**
  * Returns a SHA256 hash using SHA-2 for the given `content`.
@@ -44,7 +44,7 @@ export async function onRequest(_context: APIContext, next: MiddlewareNext) {
   }
 
   return new Response($.html(), {
-    status: 200,
     headers: response.headers,
+    status: 200,
   });
 }

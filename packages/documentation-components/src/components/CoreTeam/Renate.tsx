@@ -1,11 +1,9 @@
-import { Paragraph } from '../../paragraph/paragraph.tsx';
 import type { TeamMember } from './TeamMember';
 import { Link } from '../../link/link.tsx';
+import { Paragraph } from '../../paragraph/paragraph.tsx';
 
 const Renate: TeamMember = {
   name: 'Renate Roke',
-  role: 'Specialist webtoegankelijkheid',
-  slack: { mention: '@Renate Roke', id: 'U08BJAEAEUU' },
   Description: () => (
     <>
       <Paragraph>
@@ -17,6 +15,8 @@ const Renate: TeamMember = {
       </Paragraph>
     </>
   ),
+  role: 'Specialist webtoegankelijkheid',
+  slack: { id: 'U08BJAEAEUU', mention: '@Renate Roke' },
 };
 
 export default Renate;

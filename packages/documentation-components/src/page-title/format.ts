@@ -9,7 +9,7 @@ export interface PageTitleProps {
  * Generate a document title. The `siteTitle` will be appended to
  * the title. If no title is present, it will default to the website name.
  */
-export const formatTitle = ({ title, titleSm, siteTitleSeparator = ' - ', siteTitle }: PageTitleProps): string => {
+export const formatTitle = ({ siteTitle, siteTitleSeparator = ' - ', title, titleSm }: PageTitleProps): string => {
   const pageTitle = titleSm || title;
   const separator = siteTitleSeparator.trim();
 

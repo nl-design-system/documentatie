@@ -20,7 +20,6 @@ export const navigation = navigationRoot(
     index: navigationItem({ href: '/', label: 'Home' }),
     items: [
       navigationGroup({
-        label: 'Handboek',
         index: navigationItem('docs/handboek/index.json'),
         items: [
           navigationItem('docs/handboek/introductie.md'),
@@ -34,6 +33,7 @@ export const navigation = navigationRoot(
           navigationGroup({ filePath: 'docs/baseline' }),
           navigationItem('docs/woordenlijst/index.mdx'),
         ],
+        label: 'Handboek',
       }),
       navigationGroup({
         index: navigationItem('docs/richtlijnen/index.mdx'),
@@ -48,7 +48,6 @@ export const navigation = navigationRoot(
       navigationGroup({ filePath: 'docs/componenten' }),
       navigationGroup({ filePath: 'docs/voorbeelden' }),
       navigationGroup({
-        label: 'Community',
         index: navigationItem('docs/community/index.json'),
         items: [
           navigationItem('docs/community/sluit-je-aan.mdx'),
@@ -58,9 +57,9 @@ export const navigation = navigationRoot(
           navigationGroup({ filePath: 'docs/community/community-sprints/rijkshuisstijl-community' }),
           navigationGroup({ filePath: 'docs/community/expertteam-digitale-toegankelijkheid' }),
           navigationGroup({
-            label: 'Bijeenkomsten',
             filePath: 'docs/community/events',
             ignoredFiles: ['design-systems-week'],
+            label: 'Bijeenkomsten',
           }),
           navigationGroup({
             index: navigationItem('docs/community/events/design-systems-week/index.mdx'),
@@ -68,16 +67,16 @@ export const navigation = navigationRoot(
               navigationItem('docs/community/events/design-systems-week/programma.mdx'),
               navigationItem('docs/community/events/design-systems-week/tijdschema.mdx'),
               navigationGroup({
-                label: 'English',
                 index: navigationItem('docs/community/events/design-systems-week/en/index.mdx'),
                 items: [
                   navigationItem('docs/community/events/design-systems-week/en/program.mdx'),
                   navigationItem('docs/community/events/design-systems-week/en/timetable.mdx'),
                   navigationGroup({
-                    lang: 'en',
                     filePath: 'docs/community/events/design-systems-week/en/previous-editions',
+                    lang: 'en',
                   }),
                 ],
+                label: 'English',
               }),
               navigationGroup({
                 filePath: 'docs/community/events/design-systems-week/eerdere-edities',
@@ -89,6 +88,7 @@ export const navigation = navigationRoot(
           navigationItem('docs/community/belangenorganisaties/aanmelden.mdx'),
           navigationItem('docs/community/slack.mdx'),
         ],
+        label: 'Community',
       }),
       navigationGroup({ filePath: 'docs/project' }),
     ],

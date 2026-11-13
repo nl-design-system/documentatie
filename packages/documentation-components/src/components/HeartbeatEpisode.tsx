@@ -1,9 +1,9 @@
+import Markdown from 'react-markdown';
 import HeartbeatJSON from '../../../../docs/community/events/heartbeat/heartbeat.json';
-import { VideoPlayer } from './VideoPlayer.tsx';
 import { Heading, type HeadingProps } from '../heading/heading.tsx';
 import { Link } from '../link/link.tsx';
 import { Paragraph } from '../paragraph/paragraph.tsx';
-import Markdown from 'react-markdown';
+import { VideoPlayer } from './VideoPlayer.tsx';
 
 interface Heartbeat {
   id: number;
@@ -26,7 +26,7 @@ export const HeartbeatEpisode = ({ id, headingLevel }: HeartbeatEpisodeProps) =>
       {!!headingLevel && (
         <Heading level={headingLevel}>
           Heartbeat van{' '}
-          {new Date(episode.date).toLocaleDateString('NL-nl', { year: 'numeric', month: 'long', day: 'numeric' })}
+          {new Date(episode.date).toLocaleDateString('NL-nl', { day: 'numeric', month: 'long', year: 'numeric' })}
         </Heading>
       )}
       {episode.description.map((description) => (

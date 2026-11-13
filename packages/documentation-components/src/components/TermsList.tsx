@@ -1,5 +1,5 @@
-import { Paragraph } from '../paragraph/paragraph.tsx';
 import type { HTMLAttributes } from 'react';
+import { Paragraph } from '../paragraph/paragraph.tsx';
 import './TermsList.css';
 
 interface SynonymProps {
@@ -43,7 +43,7 @@ export const TermsList = ({ terms }: TermsListProps) => {
   return (
     <div>
       <dl>
-        {terms.map(({ term, slug, synonyms, definitions, sources }, index) => (
+        {terms.map(({ definitions, slug, sources, synonyms, term }, index) => (
           <div className="ma-terms-list__item" key={index}>
             <dt id={slug}>
               <h3>{term}</h3>

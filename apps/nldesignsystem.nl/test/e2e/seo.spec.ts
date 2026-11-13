@@ -4,8 +4,8 @@ import { getPathnamesFromSitemap } from '../helpers/sitemap.ts';
 
 const CONFIG = {
   baseUrl: 'http://localhost:4321',
-  sitemapDir: './dist',
   sitemap: '/sitemap-index.xml',
+  sitemapDir: './dist',
 };
 
 // A selection of urls covering all different templates configurations. A minimal set of paths to cover all template paths so all combinations are testable without testing every single page
@@ -45,25 +45,25 @@ test.describe('SEO values', async () => {
     test.describe(pathname, async () => {
       let page;
       let values = {
-        title: '',
-        description: '',
         canonical: '',
-        viewport: '',
         charset: '',
+        description: '',
         dir: '',
-        lang: '',
-        robots: '',
+        h1: '',
         keywords: '',
-        ogType: '',
-        ogSiteName: '',
+        lang: '',
+        ogDescription: '',
         ogImage: '',
         ogImageAlt: '',
-        ogDescription: '',
-        ogTitle: '',
-        ogUrl: '',
         ogLocale: '',
+        ogSiteName: '',
+        ogTitle: '',
+        ogType: '',
+        ogUrl: '',
+        robots: '',
+        title: '',
         twitterCard: '',
-        h1: '',
+        viewport: '',
       };
 
       test.beforeAll(async ({ browser }) => {

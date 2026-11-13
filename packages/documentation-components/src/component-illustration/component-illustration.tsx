@@ -1,6 +1,6 @@
+import type { HTMLAttributes } from 'react';
 import { Figure, FigureCaption } from '@utrecht/component-library-react';
 import clsx from 'clsx';
-import type { HTMLAttributes } from 'react';
 import { toKebabCase } from '../utils.ts';
 import './component-illustration.css';
 
@@ -19,7 +19,7 @@ const COMPONENT_ILLUSTRATION_NAME_MAPPING: Record<string, string> = {
   'Heading 6': 'Heading',
 };
 
-export const ComponentIllustration = ({ name, relayStep, description }: ComponentIllustrationProps) => {
+export const ComponentIllustration = ({ name, description, relayStep }: ComponentIllustrationProps) => {
   const stateModifier = toKebabCase(relayStep);
   const illustrationName = COMPONENT_ILLUSTRATION_NAME_MAPPING[name] ?? name;
 

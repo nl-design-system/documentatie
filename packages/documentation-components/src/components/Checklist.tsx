@@ -1,14 +1,14 @@
-import * as React from 'react';
-import { Link } from '../link/link.tsx';
-import { successCriteriaMap } from './wcag22.ts';
-import { BadgeList, Checkbox, Fieldset, FormField, FormLabel } from '@utrecht/component-library-react';
-import { Paragraph } from '../paragraph/paragraph.tsx';
-import { Button } from '../button/button.tsx';
-import { Accordion, AccordionSection } from '../accordion/accordion.tsx';
-import { Heading, type HeadingProps } from '../heading/heading.tsx';
 import { DataBadge } from '@nl-design-system-candidate/data-badge-react';
+import { BadgeList, Checkbox, Fieldset, FormField, FormLabel } from '@utrecht/component-library-react';
 import clsx from 'clsx';
+import * as React from 'react';
 import { useId, useState } from 'react';
+import { Accordion, AccordionSection } from '../accordion/accordion.tsx';
+import { Button } from '../button/button.tsx';
+import { Heading, type HeadingProps } from '../heading/heading.tsx';
+import { Link } from '../link/link.tsx';
+import { Paragraph } from '../paragraph/paragraph.tsx';
+import { successCriteriaMap } from './wcag22.ts';
 
 /**
  * ChecklistItemProps defines expected variables for the item to test.
@@ -42,7 +42,7 @@ export interface ChecklistProps {
  * sc is optional.
  *
  */
-export const ChecklistItem = ({ title, sc, children, tags }: React.PropsWithChildren<ChecklistItemProps>) => {
+export const ChecklistItem = ({ children, sc, tags, title }: React.PropsWithChildren<ChecklistItemProps>) => {
   const labelId = useId();
 
   const badgeTags = [...tags];

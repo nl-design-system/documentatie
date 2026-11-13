@@ -1,12 +1,12 @@
 export { type PageTitleProps } from './format.ts';
 import { formatTitle, type PageTitleProps } from './format.ts';
 
-export const PageTitle = ({ title, titleSm, siteTitleSeparator, siteTitle }: PageTitleProps) => {
+export const PageTitle = ({ siteTitle, siteTitleSeparator, title, titleSm }: PageTitleProps) => {
   const titleText = formatTitle({
-    titleSm,
-    title,
-    siteTitleSeparator,
     siteTitle,
+    siteTitleSeparator,
+    title,
+    titleSm,
   });
 
   return <title>{titleText}</title>;

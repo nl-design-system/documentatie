@@ -1,12 +1,12 @@
 import '@utrecht/page-header-css/dist/index.css';
+import { i18n, type I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index.ts';
 import { PageHeader as UtrechtPageHeader } from '@utrecht/page-header-react';
 import { Link } from '../link/link.tsx';
-import { Logo } from '../logo/logo.tsx';
 import { LogoSmall } from '../logo/logo-small.tsx';
-import { ToSearchLink } from '../search/to-search-link.tsx';
-import { SearchForm } from '../search/form.tsx';
+import { Logo } from '../logo/logo.tsx';
 import { MobileMenuTrigger } from '../mobile-menu/mobile-menu.tsx';
-import { i18n, type I18nLanguages } from '@nl-design-system-community/documentation-i18n/src/index.ts';
+import { SearchForm } from '../search/form.tsx';
+import { ToSearchLink } from '../search/to-search-link.tsx';
 import './page-header.css';
 
 export interface PageHeaderProps {

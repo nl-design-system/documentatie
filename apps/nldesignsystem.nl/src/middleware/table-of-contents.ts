@@ -30,7 +30,7 @@ export const onRequest: MiddlewareHandler = async (_context, next) => {
       const label = $(element).text();
       const id = $(element).attr('id');
       if (label.toLowerCase() !== 'inhoudsopgave') {
-        h2List.push({ label, id });
+        h2List.push({ id, label });
       }
     });
 
@@ -38,7 +38,7 @@ export const onRequest: MiddlewareHandler = async (_context, next) => {
   }
 
   return new Response($.html(), {
-    status: 200,
     headers: response.headers,
+    status: 200,
   });
 };

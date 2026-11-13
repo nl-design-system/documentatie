@@ -77,8 +77,8 @@ async function readRule(ruleDir: string, subject: string): Promise<Record<string
   );
 
   return {
-    subject,
     id: metadata.id,
+    subject,
     title: metadata.title,
     ...Object.fromEntries(rendered),
   };
@@ -98,16 +98,16 @@ const subjectGroups = (
       }
       const rules = await Promise.all(slugs.map((slug) => readRule(join(rulesDir, slug), component)));
       return {
-        subject: { id: component, label: humanize(component), type: 'component' },
         rules,
+        subject: { id: component, label: humanize(component), type: 'component' },
       };
     }),
   )
 ).filter((group) => group !== null);
 
 const output = {
-  subjects: subjectGroups.map((group) => group.subject),
   rules: subjectGroups.flatMap((group) => group.rules),
+  subjects: subjectGroups.map((group) => group.subject),
 };
 
 const outFile = join(docsDistDir, 'component-rules.json');
