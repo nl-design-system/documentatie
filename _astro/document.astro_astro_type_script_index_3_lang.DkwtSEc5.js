@@ -1,0 +1,1 @@
+import{t as e}from"./document-title.Dais7hgT.js";document.addEventListener(e.eventName,t=>{t instanceof e&&(document.title=t.newTitle)});
