@@ -7,39 +7,41 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   appearance="do"
   title="Simpel label met extra beschrijving. Gebruik waar nodig een losse description om meer uitleg te geven."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="first-name">Voornaam (een of meerdere)</label></p>
-      <p id="first-name-description">
-        Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.
-      </p>
-      <p>
-        <input
-          autocomplete="given-name"
-          type="text"
-          name="first_name"
-          id="first-name"
-          aria-describedby="first-name-description"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="first-name">Voornaam (een of meerdere)</label></p>
+    <p id="first-name-description">
+      Vul de voornaam of voornamen in zoals deze op je id-kaart of paspoort staan.
+    </p>
+    <p>
+      <input
+        autocomplete="given-name"
+        type="text"
+        name="first_name"
+        id="first-name"
+        aria-describedby="first-name-description"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Ingewikkeld label. Door veel informatie in te korten wordt het label onduidelijk">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="first-name2">Voornaam(en)</label></p>
-      <p>
-        <input
-          autocomplete="given-name"
-          type="text"
-          name="first_name"
-          id="first-name2"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="first-name2">Voornaam(en)</label></p>
+    <p>
+      <input
+        autocomplete="given-name"
+        type="text"
+        name="first_name"
+        id="first-name2"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

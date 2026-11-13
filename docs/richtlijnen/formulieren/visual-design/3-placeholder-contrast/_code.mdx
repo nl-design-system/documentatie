@@ -11,17 +11,19 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   description="Dit voorbeeld heeft [een contrast van 6.28:1](/contrast/?color=%23606060&background-color=%23ffffff)"
 >
   <Canvas
-    language="html"
     designTokens={{
       "--utrecht-textbox-background-color": "#ffffff",
       "--utrecht-textbox-placeholder-color": "#606060",
     }}
     forcedColorsAdjust={false}
     label="Text Input met een Placeholder die voldoende contrast heeft"
-    code={`
-      <input placeholder="Zoeken" />
-    `}
-  />
+  >
+
+    ```html
+    <input placeholder="Zoeken" />
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -30,15 +32,17 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   description="Dit voorbeeld heeft [een contrast van 3.54:1](/contrast/?color=%23888888&background-color=%23ffffff)"
 >
   <Canvas
-    language="html"
     designTokens={{
       "--utrecht-textbox-background-color": "#ffffff",
       "--utrecht-textbox-placeholder-color": "#888888",
     }}
     forcedColorsAdjust={false}
     label="Text Input met een Placeholder die niet goed zichtbaar is, door onvoldoende contrast"
-    code={`
-      <input placeholder="Zoeken" />
-    `}
-  />
+  >
+
+    ```html
+    <input placeholder="Zoeken" />
+    ```
+
+  </Canvas>
 </Guideline>

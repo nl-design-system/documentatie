@@ -51,27 +51,29 @@ Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebr
 {/* Dit omzetten naar Do's en Dont's */}
 
 <Guideline appearance="do" title="Vette tekst gebruiken om tekst nadruk te geven">
-  <Canvas
-    language="html"
-    code={`
-      Je kunt op eigen gelegenheid oversteken.
-      <strong>Pas op!</strong>
-      Dit is
-      <strong>erg gevaarlijk</strong>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    Je kunt op eigen gelegenheid oversteken.
+    <strong>Pas op!</strong>
+    Dit is
+    <strong>erg gevaarlijk</strong>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Kleur gebruiken om tekst nadruk te geven">
-  <Canvas
-    language="html"
-    code={`
-      Je kunt op eigen gelegenheid oversteken. 
-      <span style=" color: #ce2c31 ">Pas op!</span>
-        Dit is 
-      <span style=" color: #ce2c31 ">erg gevaarlijk</span>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    Je kunt op eigen gelegenheid oversteken.
+    <span style=" color: #ce2c31 ">Pas op!</span>
+      Dit is
+    <span style=" color: #ce2c31 ">erg gevaarlijk</span>
+    ```
+
+  </Canvas>
 </Guideline>
 
 ## Tekst op afbeeldingen
@@ -79,31 +81,33 @@ Sommige CMS’en bieden de mogelijkheid om zelf tekstkleuren aan te passen. Gebr
 Gebruik geen complexe of drukke achtergrondafbeeldingen met tekst eroverheen. Is dat toch nodig? Controleer dan extra goed of de tekst nog leesbaar is.
 
 <Guideline appearance="dont" title="Tekst over een complexe afbeelding of achtergrond plaatsen">
-  <Canvas
-    language="html"
-    code={`
-      <div
-        style=" background: center center no-repeat url('https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg'); "
-      >
-        <h2 style=" padding: 50px; color: white ">Kaarten van Nederland</h2>
-      </div>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <div
+      style=" background: center center no-repeat url('https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg'); "
+    >
+      <h2 style=" padding: 50px; color: white ">Kaarten van Nederland</h2>
+    </div>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="do" title="Kies een achtergrond die voldoende contrast biedt met de tekst">
-  <Canvas
-    language="html"
-    code={`
-      <div
-        style=" background: center center no-repeat url('https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg'); "
-      >
-        <h2 style=" padding: 50px; color: white; background-color: #00000088 ">
-          Kaarten van Nederland
-        </h2>
-      </div>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <div
+      style=" background: center center no-repeat url('https://raw.githubusercontent.com/nl-design-system/documentatie/assets/richtlijnen_content_afbeeldingen-Kaart.jpg'); "
+    >
+      <h2 style=" padding: 50px; color: white; background-color: #00000088 ">
+        Kaarten van Nederland
+      </h2>
+    </div>
+    ```
+
+  </Canvas>
 </Guideline>
 
 ## Meer over kleurgebruik in grafieken

@@ -6,89 +6,92 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Geef boven het formulier aan hoe verplichte velden worden aangegeven.">
-  <Canvas
-    language="html"
-    code={`
-      <p>Als iets verplicht is, staat dit erbij.</p>
-      <form>
-        <p><label for="kleur3">Wat is je lievelingskleur (verplicht)</label></p>
-        <p>
-          <input
-            type="text"
-            id="kleur3"
-            name="lievelingskleur"
-            aria-required="true"
-            aria-invalid="false"
-          />
-        </p>
-        <p><label for="dier3">Wat is je lievelingsdier</label></p>
-        <p>
-          <input
-            type="text"
-            id="dier3"
-            name="lievelingsdier"
-          />
-        </p>
-        <p><button>Verstuur</button></p>
-      </form>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p>Als iets verplicht is, staat dit erbij.</p>
+    <form>
+      <p><label for="kleur3">Wat is je lievelingskleur (verplicht)</label></p>
+      <p>
+        <input
+          type="text"
+          id="kleur3"
+          name="lievelingskleur"
+          aria-required="true"
+          aria-invalid="false"
+        />
+      </p>
+      <p><label for="dier3">Wat is je lievelingsdier</label></p>
+      <p>
+        <input
+          type="text"
+          id="dier3"
+          name="lievelingsdier"
+        />
+      </p>
+      <p><button>Verstuur</button></p>
+    </form>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
   appearance="do"
   title="Geef boven het formulier aan hoe verplichte velden worden aangegeven en leg uit wat asterisk betekent."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p>Als iets verplicht is, staat er een * bij.</p>
-      <form>
-        <label for="kleur4">Wat is je lievelingskleur *</label>
+  <Canvas>
+
+    ```html
+    <p>Als iets verplicht is, staat er een * bij.</p>
+    <form>
+      <label for="kleur4">Wat is je lievelingskleur *</label>
+      <input
+        type="text"
+        id="kleur4"
+        name="lievelingskleur"
+        aria-required="true"
+        aria-invalid="false"
+      />
+      <label for="dier4">Wat is je lievelingsdier</label>
+      <input
+        type="text"
+        id="dier4"
+        name="lievelingsdier"
+      />
+      <button>Verstuur</button>
+    </form>
+    ```
+
+  </Canvas>
+</Guideline>
+
+<Guideline appearance="dont" title="Bij alle velden aangeven of het al dan niet verplicht is.">
+  <Canvas>
+
+    ```html
+    <form>
+      <p><label for="kleur5">Wat is je lievelingskleur (verplicht)</label></p>
+      <p>
         <input
           type="text"
-          id="kleur4"
+          id="kleur5"
           name="lievelingskleur"
           aria-required="true"
           aria-invalid="false"
         />
-        <label for="dier4">Wat is je lievelingsdier</label>
+      </p>
+      <p><label for="dier5">Wat is je lievelingsdier (niet verplicht)</label></p>
+      <p>
         <input
           type="text"
-          id="dier4"
+          id="dier5"
           name="lievelingsdier"
         />
-        <button>Verstuur</button>
-      </form>
-    `}
-  />
-</Guideline>
+      </p>
+      <p><button>Verstuur</button></p>
+    </form>
+    ```
 
-<Guideline appearance="dont" title="Bij alle velden aangeven of het al dan niet verplicht is.">
-  <Canvas
-    language="html"
-    code={`
-      <form>
-        <p><label for="kleur5">Wat is je lievelingskleur (verplicht)</label></p>
-        <p>
-          <input
-            type="text"
-            id="kleur5"
-            name="lievelingskleur"
-            aria-required="true"
-            aria-invalid="false"
-          />
-        </p>
-        <p><label for="dier5">Wat is je lievelingsdier (niet verplicht)</label></p>
-        <p>
-          <input
-            type="text"
-            id="dier5"
-            name="lievelingsdier"
-          />
-        </p>
-        <p><button>Verstuur</button></p>
-      </form>
-    `}
-  />
+  </Canvas>
 </Guideline>

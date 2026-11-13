@@ -6,36 +6,38 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Leg het doel uit." description="Met uitleg weet de gebruiker waar die aan toe is.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="email">E-mailadres</label></p>
-      <p id="email-description">
-        We hebben uw e-mailadres nodig om een afspraakbevestiging te kunnen sturen.
-      </p>
-      <p>
-        <input
-          aria-describedby="email-description"
-          autocomplete="email"
-          id="email"
-          type="email"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="email">E-mailadres</label></p>
+    <p id="email-description">
+      We hebben uw e-mailadres nodig om een afspraakbevestiging te kunnen sturen.
+    </p>
+    <p>
+      <input
+        aria-describedby="email-description"
+        autocomplete="email"
+        id="email"
+        type="email"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Privacygevoelige informatie vragen zonder uitleg waarom deze gegevens nodig zijn.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="bsn">Burgerservicenummer</label></p>
-      <p>
-        <input
-          id="bsn"
-          type="text"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="bsn">Burgerservicenummer</label></p>
+    <p>
+      <input
+        id="bsn"
+        type="text"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

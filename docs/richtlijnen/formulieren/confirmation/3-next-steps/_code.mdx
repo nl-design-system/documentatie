@@ -6,30 +6,32 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Informeren dat het formulier is verzonden en wat de vervolgacties zijn.">
-  <Canvas
-    language="html"
-    code={`
-      <div>
-        <p>Uw vraag is met succes verstuurd. Zaaknummer 123456789.</p>
-        <p>Wat gaat er nu gebeuren?</p>
-        <ul>
-          <li>U ontvangt een bevestigingsmail op gebruiker@voorbeeld.com</li>
-          <li>De afdeling Vraagbaak gaat met uw vraag aan de slag.</li>
-          <li>
-            U wordt per e-mail op de hoogte gehouden maar kunt de voortgang ook inzien
-            binnen uw Mijn omgeving.
-          </li>
-        </ul>
-      </div>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <div>
+      <p>Uw vraag is met succes verstuurd. Zaaknummer 123456789.</p>
+      <p>Wat gaat er nu gebeuren?</p>
+      <ul>
+        <li>U ontvangt een bevestigingsmail op gebruiker@voorbeeld.com</li>
+        <li>De afdeling Vraagbaak gaat met uw vraag aan de slag.</li>
+        <li>
+          U wordt per e-mail op de hoogte gehouden maar kunt de voortgang ook inzien
+          binnen uw Mijn omgeving.
+        </li>
+      </ul>
+    </div>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Vervolgstappen weglaten.">
-  <Canvas
-    language="html"
-    code={`
-      <p>Uw vraag is verstuurd.</p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p>Uw vraag is verstuurd.</p>
+    ```
+
+  </Canvas>
 </Guideline>

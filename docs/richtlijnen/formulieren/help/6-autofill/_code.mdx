@@ -6,68 +6,70 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Voeg autocomplete waarden toe aan adresgegevens.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="adres1">Straat en huisnummer</label></p>
-      <p>
-        <input
-          type="text"
-          id="adres1"
-          autocomplete="street-address"
-          name="adres"
-        />
-      </p>
-      <p><label for="postcode1">Postcode</label></p>
-      <p>
-        <input
-          type="text"
-          id="postcode1"
-          autocomplete="postal-code"
-          name="postcode"
-        />
-      </p>
-      <p><label for="woonplaats1">Woonplaats</label></p>
-      <p>
-        <input
-          type="text"
-          id="woonplaats1"
-          autocomplete="address-level2"
-          name="woonplaats"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="adres1">Straat en huisnummer</label></p>
+    <p>
+      <input
+        type="text"
+        id="adres1"
+        autocomplete="street-address"
+        name="adres"
+      />
+    </p>
+    <p><label for="postcode1">Postcode</label></p>
+    <p>
+      <input
+        type="text"
+        id="postcode1"
+        autocomplete="postal-code"
+        name="postcode"
+      />
+    </p>
+    <p><label for="woonplaats1">Woonplaats</label></p>
+    <p>
+      <input
+        type="text"
+        id="woonplaats1"
+        autocomplete="address-level2"
+        name="woonplaats"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Laat autocomplete waarden weg bij adresgegevens.">
-  <Canvas
-    language="html"
-    code={`
-      <p><label for="adres2">Straat en huisnummer</label></p>
-      <p>
-        <input
-          type="text"
-          id="adres2"
-          name="adres"
-        />
-      </p>
-      <p><label for="postcode2">Postcode</label></p>
-      <p>
-        <input
-          type="text"
-          id="postcode2"
-          name="postcode"
-        />
-      </p>
-      <p><label for="woonplaats2">Woonplaats</label></p>
-      <p>
-        <input
-          type="text"
-          id="woonplaats2"
-          name="woonplaats"
-        />
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p><label for="adres2">Straat en huisnummer</label></p>
+    <p>
+      <input
+        type="text"
+        id="adres2"
+        name="adres"
+      />
+    </p>
+    <p><label for="postcode2">Postcode</label></p>
+    <p>
+      <input
+        type="text"
+        id="postcode2"
+        name="postcode"
+      />
+    </p>
+    <p><label for="woonplaats2">Woonplaats</label></p>
+    <p>
+      <input
+        type="text"
+        id="woonplaats2"
+        name="woonplaats"
+      />
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

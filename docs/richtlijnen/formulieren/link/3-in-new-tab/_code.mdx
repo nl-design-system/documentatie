@@ -6,93 +6,98 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Alle informatie als zichtbare tekst in de link plaatsen.">
-  <Canvas
-    language="html"
-    code={`
-      <p>
-        <a
-          href="#"
-          target="_blank"
-        >
-          Lees het privacybeleid (opent in een nieuwe tab)
-        </a>
-        .
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p>
+      <a
+        href="#"
+        target="_blank"
+      >
+        Lees het privacybeleid (opent in een nieuwe tab)
+      </a>
+      .
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="do" title="Zichtbaar icoontje plus onzichtbare, maar uitgesproken tekst voor screenreaders.">
-  <Canvas
-    language="html"
-    code={`
-      <p>
-        <a
-          href="#"
-          target="_blank"
-          class="nlds-icon-ext"
-        >
-          Lees het privacybeleid
-          <span class="sr-only">, opent in een nieuwe tab</span>
-        </a>
-        .
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p>
+      <a
+        href="#"
+        target="_blank"
+        class="nlds-icon-ext"
+      >
+        Lees het privacybeleid
+        <span class="sr-only">, opent in een nieuwe tab</span>
+      </a>
+      .
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="do" title="Zichtbaar icoontje plus een aria-label voor screenreaders.">
-  <Canvas
-    language="html"
-    code={`
-      <p>
-        <a
-          href="#"
-          target="_blank"
-          class="nlds-icon-ext"
-          aria-label="Lees het privacybeleid (opent in een nieuwe tab)"
-        >
-          Lees het privacybeleid
-        </a>
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p>
+      <a
+        href="#"
+        target="_blank"
+        class="nlds-icon-ext"
+        aria-label="Lees het privacybeleid (opent in een nieuwe tab)"
+      >
+        Lees het privacybeleid
+      </a>
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
   appearance="dont"
   title="Informatie over het openen in een nieuwe tab alleen aan screenreadergebruikers geven."
 >
-  <Canvas
-    language="html"
-    code={`
-      <p>
-        <a
-          href="#"
-          target="_blank"
-          aria-label="Lees het privacybeleid (opent in een nieuwe tab)"
-        >
-          Lees het privacybeleid
-        </a>
-        .
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p>
+      <a
+        href="#"
+        target="_blank"
+        aria-label="Lees het privacybeleid (opent in een nieuwe tab)"
+      >
+        Lees het privacybeleid
+      </a>
+      .
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline appearance="dont" title="Informatie over het openen in een nieuwe tab voor iedereen weglaten.">
-  <Canvas
-    language="html"
-    code={`
-      <p>
-        <a
-          href="#"
-          target="_blank"
-        >
-          Lees het privacybeleid
-        </a>
-        .
-      </p>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <p>
+      <a
+        href="#"
+        target="_blank"
+      >
+        Lees het privacybeleid
+      </a>
+      .
+    </p>
+    ```
+
+  </Canvas>
 </Guideline>

@@ -6,22 +6,23 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
 ## Voorbeelden
 
 <Guideline appearance="do" title="Het formulier wordt verzonden na het kiezen van de submitbutton.">
-  <Canvas
-    language="html"
-    code={`
-      <form>
-        <p><label for="kleur1">Kies een kleur</label></p>
-        <p>
-          <select id="kleur1">
-            <option name="groen">Groen</option>
-            <option name="blauw">Blauw</option>
-            <option name="rood">Rood</option>
-          </select>
-        </p>
-        <p><button>Verstuur</button></p>
-      </form>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <form>
+      <p><label for="kleur1">Kies een kleur</label></p>
+      <p>
+        <select id="kleur1">
+          <option name="groen">Groen</option>
+          <option name="blauw">Blauw</option>
+          <option name="rood">Rood</option>
+        </select>
+      </p>
+      <p><button>Verstuur</button></p>
+    </form>
+    ```
+
+  </Canvas>
 </Guideline>
 
 <Guideline
@@ -29,19 +30,20 @@ import { Guideline } from "@nl-design-system-community/documentation-components/
   title="Het formulier wordt automatisch verzonden na het kiezen van van een kleur."
   description="In dit voorbeeld ontbreekt de submitbutton en wordt het formulier direct verstuurd na het kiezen van een kleur"
 >
-  <Canvas
-    language="html"
-    code={`
-      <form>
-        <p><label for="kleur2">Kies een kleur</label></p>
-        <p>
-          <select id="kleur2">
-            <option name="groen">Groen</option>
-            <option name="blauw">Blauw</option>
-            <option name="rood">Rood</option>
-          </select>
-        </p>
-      </form>
-    `}
-  />
+  <Canvas>
+
+    ```html
+    <form>
+      <p><label for="kleur2">Kies een kleur</label></p>
+      <p>
+        <select id="kleur2">
+          <option name="groen">Groen</option>
+          <option name="blauw">Blauw</option>
+          <option name="rood">Rood</option>
+        </select>
+      </p>
+    </form>
+    ```
+
+  </Canvas>
 </Guideline>
