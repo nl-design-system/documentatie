@@ -1,8 +1,5 @@
 ---
 title: CSS component maken
-hide_title: true
-hide_table_of_contents: false
-pagination_label: CSS component maken
 description: Hoe kun je een CSS component maken voor NL Design System
 keywords:
   - developer

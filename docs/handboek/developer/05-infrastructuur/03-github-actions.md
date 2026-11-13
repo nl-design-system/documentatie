@@ -1,8 +1,5 @@
 ---
 title: GitHub Actions
-hide_title: true
-hide_table_of_contents: false
-pagination_label: GitHub Actions
 description: Het werken met GitHub Actions binnen NL Design System
 slug: /handboek/developer/github-actions/
 keywords:

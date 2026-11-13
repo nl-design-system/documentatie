@@ -1,9 +1,6 @@
 ---
 title: Design Systems maken met NL Design System
 title_sm: Design Systems
-hide_title: true
-hide_table_of_contents: false
-pagination_label: Design Systems
 description: Als developer Design Systems maken met NL Design System
 slug: /handboek/developer/design-systems/
 ---

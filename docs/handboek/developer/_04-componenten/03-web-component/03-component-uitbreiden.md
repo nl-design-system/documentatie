@@ -1,8 +1,5 @@
 ---
 title: Web Component uitbreiden
-hide_title: true
-hide_table_of_contents: false
-pagination_label: Web Component uitbreiden
 description: Hoe kun je een Web component uitbreiden
 keywords:
   - developer

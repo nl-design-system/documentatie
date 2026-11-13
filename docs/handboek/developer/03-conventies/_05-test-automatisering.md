@@ -1,8 +1,5 @@
 ---
 title: Testautomatisering
-hide_title: true
-hide_table_of_contents: false
-pagination_label: Testautomatisering
 description: Aanpak voor testautomatisering van NL Design System
 slug: /handboek/developer/test-automatisering-conventie/
 keywords:

@@ -1,8 +1,5 @@
 ---
 title: CSS component testen
-hide_title: true
-hide_table_of_contents: false
-pagination_label: CSS component testen
 description: Als developer CSS component testen
 keywords:
   - developer

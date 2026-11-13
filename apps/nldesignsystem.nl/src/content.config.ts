@@ -84,7 +84,6 @@ function generateId(options: GenerateIdOptions) {
 }
 
 const schema = z.object({
-  hide_table_of_contents: z.boolean().optional(),
   sidebar_label: z.union([z.string(), z.number()]).optional(),
   description: z.string().optional(),
   image: z.httpUrl().optional(),
