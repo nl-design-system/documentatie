@@ -13,6 +13,8 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   timeout: Number(process.env['E2E_TEST_TIMEOUT_S'] ?? 30) * 1000,
   testDir: './test',
+  // Vitest unit tests, see `vitest.config.ts`
+  testIgnore: 'unit/**',
   outputDir: './tmp/playwright-results/',
   /* Run tests in files in parallel */
   fullyParallel: true,

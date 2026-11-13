@@ -1,3 +1,4 @@
+import type { APIContext, MiddlewareNext } from 'astro';
 import { createHash } from 'node:crypto';
 import * as cheerio from 'cheerio';
 
@@ -15,7 +16,7 @@ function sha256(content: string) {
  * This middleware calculates a sha256 hash of style attributes and adds them
  * to the csp header, allowing for inline styles within the source code
  */
-export async function onRequest(_context, next) {
+export async function onRequest(_context: APIContext, next: MiddlewareNext) {
   const response = await next();
   const html = await response.text();
   const $ = cheerio.load(html);
@@ -32,9 +33,10 @@ export async function onRequest(_context, next) {
       }),
   );
 
-  if (cspRuleElement.length > 0 && hashes.size) {
-    const cspRules = cspRuleElement
-      .attr('content')
+  const cspContent = cspRuleElement.attr('content');
+
+  if (cspContent && hashes.size) {
+    const cspRules = cspContent
       .split(';')
       .map((rule) => rule.trim())
       .map((cspRule) =>

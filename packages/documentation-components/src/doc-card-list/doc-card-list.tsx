@@ -17,7 +17,7 @@ export const DocCardList = (props: DocCardListProps) => {
 
   const filteredItems = (props.items || []).filter((page) => {
     const filePath = page?.filePath?.replace('../../docs/', '')?.replace(/\.mdx?$/, '');
-    return Boolean(docIDs.includes(filePath)) === false;
+    return Boolean(filePath && docIDs.includes(filePath)) === false;
   });
 
   return (

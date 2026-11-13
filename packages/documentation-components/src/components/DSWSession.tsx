@@ -55,8 +55,8 @@ export const DSWSession = ({
   sessionId,
 }: PropsWithChildren<DSWSessionProps>) => {
   const session = allSessions?.find(({ uuid }) => sessionId === uuid);
-  const speakers = session && session.speakers.map((fullName) => allSpeakers[fullName]).filter(Boolean);
-  const videoIds = [videoId, session?.videoId, ...(session?.videoIds ?? [])].filter(Boolean);
+  const speakers = session?.speakers.map((fullName) => allSpeakers[fullName]).filter(Boolean) ?? [];
+  const videoIds = [videoId, session?.videoId, ...(session?.videoIds ?? [])].filter((id): id is string => Boolean(id));
 
   return session ? (
     <article className={clsx('ma-dsw-session')}>

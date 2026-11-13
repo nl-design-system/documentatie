@@ -35,17 +35,25 @@ export function customGlob(options: GlobOptions): Loader {
   };
 }
 
+// Not exported by `astro/loaders`
+interface GenerateIdOptions {
+  entry: string;
+  data: Record<string, unknown>;
+}
+
 /**
  * Get the slug from the frontmatter.
  */
-function getSlug(options): string | null {
-  if (options.data.slug) {
-    return options.data.slug.startsWith('/')
-      ? options.data.slug // if the slug starts with a `/` use it as is
+function getSlug(options: GenerateIdOptions): string | null {
+  const slug = options.data['slug'];
+
+  if (typeof slug === 'string' && slug) {
+    return slug.startsWith('/')
+      ? slug // if the slug starts with a `/` use it as is
       : options.entry // else replace the last segment of the path with the slug
           .split('/')
           .reverse()
-          .toSpliced(0, 1, options.data.slug)
+          .toSpliced(0, 1, slug)
           .reverse()
           .join('/');
   }
@@ -53,7 +61,7 @@ function getSlug(options): string | null {
   return null;
 }
 
-function generateId(options) {
+function generateId(options: GenerateIdOptions) {
   let filename = options.entry;
 
   // remove file extensions

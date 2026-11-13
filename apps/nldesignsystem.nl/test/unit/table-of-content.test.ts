@@ -2,7 +2,7 @@ import { getContainerRenderer as reactContainerRenderer } from '@astrojs/react';
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';
 import { loadRenderers } from 'astro:container';
 import { beforeAll, describe, expect, test } from 'vitest';
-import TableOfContent from './table-of-content.astro';
+import TableOfContent from '@nl-design-system-community/documentation-components/src/table-of-content/table-of-content.astro';
 
 describe('table-of-content.astro', () => {
   let container: AstroContainer;

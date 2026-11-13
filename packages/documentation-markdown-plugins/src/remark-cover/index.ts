@@ -1,5 +1,6 @@
 import type { Root, Paragraph, Image } from 'mdast';
 import type { VFile } from 'vfile';
+import type {} from '@astrojs/markdown-remark';
 
 /**
  * Type guard to check if an object is a Paragraph

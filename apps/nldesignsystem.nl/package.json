@@ -24,7 +24,7 @@
     "build:component-rules": "tsx scripts/generate-component-rules.ts",
     "build:guideline-pages": "node scripts/generate-guideline-pages.mjs",
     "install-test-browsers": "playwright install",
-    "lint-todo": "tsc --noEmit && tsc --noEmit --project tsconfig.test.json",
+    "lint": "tsc --noEmit && tsc --noEmit --project tsconfig.test.json",
     "preview": "astro preview",
     "test": "vitest run",
     "test-a11y:next": "playwright test test/a11y/axe.next.test.ts --workers=8",

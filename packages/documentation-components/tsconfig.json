@@ -3,6 +3,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
     "composite": true,
     "emitDeclarationOnly": true,
     "lib": ["DOM", "ESNext"],

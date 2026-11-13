@@ -1,3 +1,5 @@
+import type { Parents, Root } from 'mdast';
+import type {} from 'mdast-util-mdx-jsx';
 import { visit, SKIP } from 'unist-util-visit';
 
 /**
@@ -10,15 +12,17 @@ import { visit, SKIP } from 'unist-util-visit';
 export function remarkUnwrapParagraph() {
   const tagNames = ['Paragraph', 'Link'];
 
-  function matchesParent(parent) {
+  function matchesParent(parent: Parents) {
     return (
-      (parent.type === 'mdxJsxFlowElement' || parent.type === 'mdxJsxTextElement') && tagNames.includes(parent.name)
+      (parent.type === 'mdxJsxFlowElement' || parent.type === 'mdxJsxTextElement') &&
+      parent.name !== null &&
+      tagNames.includes(parent.name)
     );
   }
 
-  return (tree) => {
+  return (tree: Root) => {
     visit(tree, (node, index, parent) => {
-      if (!parent || index === null) {
+      if (!parent || index === undefined) {
         return undefined;
       }
 

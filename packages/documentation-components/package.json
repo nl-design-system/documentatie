@@ -120,6 +120,9 @@
     "@testing-library/jest-dom": "7.0.1",
     "@testing-library/react": "16.3.3",
     "@types/mdast": "4.0.4",
+    "@types/prismjs": "1.26.3",
+    "@types/react": "18.3.27",
+    "@types/react-dom": "18.3.7",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "rehype": "13.0.2",
@@ -134,7 +137,7 @@
     "vitest": "4.1.11"
   },
   "scripts": {
-    "lint-todo": "tsc --noEmit",
+    "lint": "tsc --noEmit",
     "test": "vitest run --config ./vitest-jsdom.config.ts"
   }
 }

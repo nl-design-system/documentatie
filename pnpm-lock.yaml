@@ -952,6 +952,15 @@ importers:
       '@types/mdast':
         specifier: 4.0.4
         version: 4.0.4
+      '@types/prismjs':
+        specifier: 1.26.3
+        version: 1.26.3
+      '@types/react':
+        specifier: 18.3.27
+        version: 18.3.27
+      '@types/react-dom':
+        specifier: 18.3.7
+        version: 18.3.7(@types/react@18.3.27)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1054,6 +1063,12 @@ importers:
       '@types/mdast':
         specifier: 4.0.4
         version: 4.0.4
+      mdast-util-mdx-expression:
+        specifier: 2.0.0
+        version: 2.0.0(supports-color@7.2.0)
+      mdast-util-to-hast:
+        specifier: 13.2.1
+        version: 13.2.1
       vfile:
         specifier: 6.0.3
         version: 6.0.3
