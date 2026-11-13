@@ -9,6 +9,7 @@
       "@utils/*": ["./src/utils/*"]
     },
     "plugins": [{ "name": "@astrojs/ts-plugin" }],
-    "checkJs": true
+    "checkJs": true,
+    "allowSyntheticDefaultImports": true
   }
 }

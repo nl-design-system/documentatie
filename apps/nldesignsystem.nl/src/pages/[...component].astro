@@ -42,13 +42,14 @@ const { navigationList } = (await navigation)();
 const { page, Aliases } = Astro.props;
 const { Content } = await render(page);
 
-const selectedStatusOptions = {
+const selectedStatusOptions: Record<string, string | undefined> = {
   HELP_WANTED: 'Help Wanted',
   COMMUNITY: 'Community',
   CANDIDATE: 'Candidate',
   HALL_OF_FAME: 'Hall of Fame',
 };
 const component = componentProgress.find((item) => item.number === page.data.issue_number);
+if (!component) throw new Error(`No component-progress entry for issue ${page.data.issue_number}`);
 const status = selectedStatusOptions[component.relayStep];
 
 const description =
@@ -96,7 +97,7 @@ const components = await MDXComponents({ navigationList });
     }
 
     {
-      ['Help Wanted', 'Community'].includes(status) && (
+      status && ['Help Wanted', 'Community'].includes(status) && (
         <Grid.Cell span="all">
           <ComponentIllustration
             relayStep={status}

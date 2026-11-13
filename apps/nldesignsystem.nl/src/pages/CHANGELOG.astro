@@ -7,6 +7,7 @@ import { Paragraph } from '@nl-design-system-community/documentation-components/
 import { getEntry, render } from 'astro:content';
 
 const page = await getEntry('changelog', 'CHANGELOG');
+if (!page) throw new Error('Changelog entry not found');
 const { Content } = await render(page);
 const components = await MDXComponents();
 

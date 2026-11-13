@@ -9,6 +9,7 @@ import { IconChevronRight } from '@nl-design-system-community/documentation-comp
 import TableOfContents from '@nl-design-system-community/documentation-components/src/table-of-content/table-of-content.astro';
 import { SideNavigation } from '@nl-design-system-community/documentation-components/src/side-navigation/side-navigation.tsx';
 import { navigation } from '../navigation.config.ts';
+import { siteLang } from '../seo.config.ts';
 import { getBreadcrumbsForElement } from '@nl-design-system-community/documentation-index/src/navigation/get-breadcrumbs-for-element.ts';
 import { withCurrentIndication } from '@nl-design-system-community/documentation-index/src/navigation/with-current-indication.ts';
 import { serialiseNavigationTree } from '@nl-design-system-community/documentation-index/src/navigation/serialise-navigation-tree.ts';
@@ -28,18 +29,21 @@ const { ...props } = Astro.props;
   <div class="ma-layout-detail">
     <div class="ma-layout-detail__content">
       <div class="ma-layout-detail__side-nav">
-        <h2 id="side-navigation-label" class="sr-only">{items.label} {i18n[props.lang].subnavigation}</h2>
+        <h2 id="side-navigation-label" class="sr-only">{items.label} {i18n[props.lang || siteLang].subnavigation}</h2>
         <SideNavigation
           aria-labelledby="side-navigation-label"
           items={[items.items || []]}
-          closeLabel={i18n[props.lang || 'nl'].close}
+          closeLabel={i18n[props.lang || siteLang].close}
           client:load
         />
       </div>
 
       {
         breadcrumbPath.length > 0 && (
-          <BreadcrumbNav className="ma-layout-detail__breadcrumb-nav" label={i18n[props.lang].breadcrumbLabel}>
+          <BreadcrumbNav
+            className="ma-layout-detail__breadcrumb-nav"
+            label={i18n[props.lang || siteLang].breadcrumbLabel}
+          >
             {breadcrumbPath.map((item, index, list) => (
               <>
                 <BreadcrumbNavLink

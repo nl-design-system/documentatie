@@ -81,7 +81,7 @@ export interface NavigationItem extends DocumentationMetadata {
   filePath?: string;
 
   /** The parent `NavigationGroup` this item is nested under. */
-  parent?: NavigationGroup;
+  parent?: NavigationGroupResolved;
 
   /** The href to the rendered page */
   href?: string;
@@ -91,6 +91,9 @@ export interface NavigationItem extends DocumentationMetadata {
 
   /** Indicating that this item is the current page */
   current?: boolean;
+
+  /** Items cannot be expanded, only groups can. Declared so `expanded` can be read on any `NavigationElement` */
+  expanded?: never;
 
   metadata?: string;
 }
@@ -128,7 +131,7 @@ export interface NavigationGroup {
   ignoredFiles?: string[];
 
   /** The parent `NavigationGroup` this group is nested under. */
-  parent?: NavigationGroup;
+  parent?: NavigationGroupResolved;
 
   /** The position this group should take within a NavigationGroup items list */
   order?: number;
@@ -354,14 +357,16 @@ export async function navigationGroup(
     lang: options?.lang || index?.lang || 'nl',
   };
 
-  // Add the resulting NavigationGroup to each item as a parent
+  // Add the resulting NavigationGroup to each item as a parent.
+  // Its items are resolved by `navigationRoot` before anyone reads `parent`.
+  const parent = group as NavigationGroupResolved;
   group.items.forEach(async (item) => {
     const _item = await item;
-    _item.parent = group;
+    _item.parent = parent;
   });
 
   if (index) {
-    index.parent = group;
+    index.parent = parent;
   }
 
   // Return the group for consumption
@@ -375,7 +380,7 @@ export async function navigationGroup(
  */
 export async function navigationRoot(group: Promise<NavigationGroup>) {
   const navigationTree = (await group) as NavigationGroupResolved;
-  const navigationList = new Set<NavigationElement>();
+  const navigationList = new Set<NavigationElementResolved>();
 
   const walkTree = (
     item: NavigationGroupResolved | NavigationItem,
